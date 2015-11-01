@@ -1,6 +1,6 @@
 ---
 layout : layout
-title : SiteName
+title : Igor's Blog
 ---
 
 <ul class="posts">

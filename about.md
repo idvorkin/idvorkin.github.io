@@ -4,8 +4,4 @@ title: About
 comments: false
 ---
 
-New Site
-
-##To Do
-
-Edit this Markdown to add an about page
+This is Igor's stab at creating a git/markdown based website. Hopefuly, it's more bearable.

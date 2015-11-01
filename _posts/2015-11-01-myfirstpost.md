@@ -1,10 +1,7 @@
 --- 
 layout: post
-title: "My First Post"
-author: "Author"
+title: "Pounding Pretzels"
+author: "Igor Dvorkin"
 comments: true
 ---
-
-## Hello world...
-
-This is my first post on the site!
+This is my first post, and it was created using pretzel - which is cool.
