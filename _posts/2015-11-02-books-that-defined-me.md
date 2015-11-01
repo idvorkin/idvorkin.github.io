@@ -8,9 +8,9 @@ comments: true
 
 Each of us is defined by the books we ride. Here are some of mine.
 
-## Overall
+### Overall
 
-**Seven Habits of Highly Effective People** - The missing [manual for your life](http://ig2600.blogspot.com/2013/11/soft-skills-your-life-missing-manual.html).
+**Seven Habits of Highly Effective People** - How to [live your life](http://ig2600.blogspot.com/2013/11/soft-skills-your-life-missing-manual.html)'.'
 
 > 1) Be Proactive
 
@@ -26,9 +26,9 @@ Each of us is defined by the books we ride. Here are some of mine.
 
 > 7) Sharpen the saw
 
-## On doing the things you want to do.
+### On doing the things you want to do.
 
-**The Big Orange Splot** - A treatise on being the person [you want to be](https://www.youtube.com/watch?v=5cPfjzYJcok). 
+**The Big Orange Splot** - Live [your dreams](https://www.youtube.com/watch?v=5cPfjzYJcok). 
 
 > "He's just like Plumbean!" the people said. "He's got bees in his bonnet, bats in his belfry, and knots in his
 noodle!"
@@ -39,12 +39,15 @@ drink lemonade and talk about their dreams.
 > And whenever anybody visited Mr. Plumbean's house, the very
 next day that person would set about changing his own house to fit his dreams. 
 
-** The Flinch ** The resistance is the voice in your head that makes you afraid.  F#$ the resistance.
+**The Flinch** The resistance is the voice in your head that makes you afraid.  F#$ the resistance!
 
-** The Dip ** Quit everything that doesn't get you were you want to be.
+**The Dip** Quit everything that doesn't get you were you want to be.
 
-** V is for Vulnerable **  A picture book reminding you to get out there.
+**V is for Vulnerable**  Life is scary, hard, and totally worth it.
 
-## On being a technologist
-## On being an entrepreneur
-## On thinking and presenting
+### On being a technologist
+    TBD
+### On being an entrepreneur
+    TBD
+### On thinking and presenting
+    TBD
