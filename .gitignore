@@ -1,0 +1,8 @@
+
+# Ignore the statically generated site.
+_site
+
+#Ignore vim junk
+*.swp
+*.swo
+*~
