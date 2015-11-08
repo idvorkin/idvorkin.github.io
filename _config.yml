@@ -1,30 +1,28 @@
 pretzel: 
     engine: liquid
-title:            Notepad
-description:      "Blogging is fun"
+title:            "Imagination Executed Brillinatly"
+description:      "Ramble, Rinse, Repeat"
 logo:             logo.png
-disqus_shortname: hmfaysal
+disqus_shortname: idvorkinblog
 share:            true
 dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	  /Notepad
+#url:        	  /Notepad
 
 # Owner/author information
 owner:
-  name:           Hossain Mohd Faysal
+  name:           Igor Dvorkin
   avatar:         hmfaysal.jpg
-  email:          hmfaysal@alum.mit.edu
+  email:          idvorkin@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Awesome Dude, Awesome Life
+  description:    Living the good life
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        hmfaysal
-  facebook:       hmfaysal
-  github:         hmfaysal      
-  instagram:      hmfaysal
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/102602916593522619858
+  twitter:        idvorkin
+  facebook:       idvorkin
+  github:         idvorkin      
+  instagram:      idvorkin
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-39365944-7
@@ -49,7 +47,7 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Dhaka
 future:      true
-highlighter: pygments
+# highlighter: pygments
 markdown:    kramdown
 paginate:    5
 paginate_path: "page:num"
