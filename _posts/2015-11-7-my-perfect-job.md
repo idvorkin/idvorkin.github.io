@@ -1,15 +1,16 @@
 --- 
 layout: post
-title: "My perfect job - Dimensions"
+title: "My dream job"
 author: "Igor Dvorkin"
 comments: true
 ---
 
-_This post is me trying to figure out what matters most to me and is still a work in progres_
+Knowing what I care about is essential for me to make the best choices for my career.
 
-No one can have thier perfect job, but if you don't know what makes your perfect job, you won't be able to get closer. 
+    THIS POST IS STILL IN DRAFT
 
-The below listicle is the dimensions my job can fall under, so I can reflect on and rank my position on the dimensions and the relative importance of these dimensions.
+The below listicle are the dimensions in which I think of my jobs.  The listicle will let me, and hopefully others, reflect on the essence of the job I want.
+
 
 ### B2C, B2B, Infrastructure? B2C!
 
