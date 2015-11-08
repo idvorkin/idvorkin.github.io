@@ -1,5 +1,5 @@
-pretzel: 
-    engine: liquid
+# pretzel: 
+# engine: liquid
 title:            "Imagination Executed Brillinatly"
 description:      "Ramble. Rinse. Repeat."
 logo:             logo.png
