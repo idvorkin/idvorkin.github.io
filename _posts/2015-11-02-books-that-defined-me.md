@@ -6,7 +6,7 @@ comments: true
 ---
 
 
-Each of us is defined by the books we ride. Here are some of mine.
+Each of us is defined by the books we read. Here are some that defined me.
 
 ### Overall
 
