@@ -1,7 +1,7 @@
 pretzel: 
     engine: liquid
 title:            "Imagination Executed Brillinatly"
-description:      "Ramble, Rinse, Repeat"
+description:      "Ramble. Rinse. Repeat."
 logo:             logo.png
 disqus_shortname: idvorkinblog
 share:            true
@@ -14,7 +14,7 @@ dropcap:			true
 # Owner/author information
 owner:
   name:           Igor Dvorkin
-  avatar:         hmfaysal.jpg
+  avatar:         igordvorkin.jpg
   email:          idvorkin@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Living the good life
