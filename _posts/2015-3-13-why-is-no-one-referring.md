@@ -6,7 +6,7 @@ category: "Startupville"
 comments: true
 ---
 
-_TL;DR - Your customers don't provide referrals because it's a risk to their credibility. Remove the credibility risk, and your referrals will follow._
+Your customers don't provide referrals because it's a risk to their credibility. Remove the credibility risk, and your referrals will follow.
 
 As an entrepreneur I imagined my user count would grow by leaps and bounds as soon as my happy customers started providing referrals. However, when it came time to start providing referrals, my customers kept saying they would, but didn't follow through.
 
