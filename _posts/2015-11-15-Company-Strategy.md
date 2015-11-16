@@ -6,7 +6,7 @@ comments: true
 inprogress: true
 ---
 
-I'm trying to learn strategies, so I'm going to enumerate company strategies I've observed: 
+I'm trying to learn strategies, so I'm going to enumerate strategies I've observed: 
 
 #### Tablets
 
