@@ -3,6 +3,7 @@ layout: post
 title: "Books that defined me"
 author: "Igor Dvorkin"
 comments: true
+inprogress: true
 ---
 
 

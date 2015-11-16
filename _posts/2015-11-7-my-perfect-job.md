@@ -2,6 +2,7 @@
 layout: post
 title: "My dream job"
 author: "Igor Dvorkin"
+inprogress: true
 comments: true
 ---
 
