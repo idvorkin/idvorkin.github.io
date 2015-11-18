@@ -8,8 +8,6 @@ comments: true
 
 Knowing what I care about is essential for me to make the best choices for my career.
 
-    THIS POST IS STILL IN DRAFT
-
 The below listicle are the dimensions in which I think of my jobs.  The listicle will let me, and hopefully others, reflect on the essence of the job I want.
 
 
