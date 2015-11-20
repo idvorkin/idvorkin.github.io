@@ -1,16 +1,13 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Igor Dvorkin
+title: "Igor Says ..."
 tags: 
-imagefeature: fourseasons.jpg
-chart: true
 ---
-<figure>
-  <img src="{{ site.url }}/images/igordvorkin.jpg" alt="Igor Dvorkin">
-  <figcaption>Igor Dvorkin</figcaption>
-</figure>
+<iframe src="https://www.youtube.com/embed/GwHVOP61nq4" frameborder="0" allowfullscreen></iframe>
 
+<br/>
+<br/>
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
 {% assign featuredcount = 0 %}
