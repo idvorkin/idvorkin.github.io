@@ -1,28 +1,24 @@
 ---
 layout: post
-title: "Emotional Health Practicies"
+title: "Emotional Health Practices"
 author: "Igor Dvorkin"
 category: How Igor Ticks
 comments: true
 inprogress: true
 
 ---
+Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night.
 
-Emotional Health predicts if you can sleep at night, if you can let it go, and if you can empathize. 
+Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I've been exploring.
 
-Analogy Physical Health
-
-## Practices
-
-Here are the practices I do, and my level of succcess
 
 ### Daily Stream of Conciousness Journalling 
 
-__Why?__ I'm a ruminator. Both positive and negative thoughts get stuck in a loop in my head, creating cognative load, and distracting me from the present. By taking a few minutes to "drain" the ideas in my head, many of the ideas will go away, or atleast be much less interupting
+__Why?__ I'm a ruminator. Both positive and negative thoughts get stuck in a loop in my head, creating cognitive load, and distracting me from the present. By taking a few minutes to "drain" the ideas in my head, many of the ideas will go away, or at least be much less interrupting
 
 __How?__  Every day I take 10 minutes to write about 750 words as quickly as I can on the ideas sloshing around in my head. I do it on [750words](http://www.750words.com) which is optimized for this practice.
 
-__How's that working out for you?__ Really well, this is my most consistent practcice. Since [September 2011][http://ighealth.blogspot.com/2012/01/750wordscom.html], I've written over a million words on more then 1300 days.
+__How's that working out for you?__ Really well, this is my most consistent practice. Since [September 2011][http://ighealth.blogspot.com/2012/01/750wordscom.html], I've written over a million words on more then 1300 days.
 
 ### Daily Gratefulness Journal
 
@@ -46,14 +42,10 @@ __How?__
 
 __How's that working out for you?__
 
-## Inconsisten/Future practices
+## Inconsistent/Future practices
 
 * Process it once list
 * Why is someone behaving inconsistently
 * Poll the people in my head
-* FOrced wake up time.
-
-
-
-
+* Forced wake up time.
 
