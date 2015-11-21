@@ -9,7 +9,7 @@ inprogress: true
 
 What is Strategy is a summary of Porter's HBR article.
 
-What is strategy?  Strategy is creating fit among a company’s activities. The success of a strategy depends on doing many things well—not just a few—and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and operational effectiveness determines an organization’s relative performance.
+What is strategy?  Strategy is creating fit among a company's activities. The success of a strategy depends on doing many things well-not just a few-and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and operational effectiveness determines an organization's relative performance.
 
 ### Take Aways
 
@@ -137,11 +137,11 @@ Operational Effectiveness over a big activity map is really hard to copy. And le
 
 * Which activities, features, or forms of competition are feasible or less costly to them because of complementary activities that their company performs.
 
-* Deepening a position involves making the company’s activities more distinctive, strengthening fit, and communicating the strategy better to those customers who should value it. 
+* Deepening a position involves making the company's activities more distinctive, strengthening fit, and communicating the strategy better to those customers who should value it. 
 
-> During such periods in an industry’s development, its basic productivity frontier is being established or reestablished. Explosive growth can make such times profitable for many companies, but profits will be temporary because imitation and strategic convergence will ultimately destroy industry profitability. The companies that are enduringly successful will be those that begin as early as possible to define and embody in their activities a unique competitive position. A period of imitation may be inevitable in emerging industries, but that period reflects the level of uncertainty rather than a desired state of affairs.
+> During such periods in an industry's development, its basic productivity frontier is being established or reestablished. Explosive growth can make such times profitable for many companies, but profits will be temporary because imitation and strategic convergence will ultimately destroy industry profitability. The companies that are enduringly successful will be those that begin as early as possible to define and embody in their activities a unique competitive position. A period of imitation may be inevitable in emerging industries, but that period reflects the level of uncertainty rather than a desired state of affairs.
 
-> In high-tech industries, this imitation phase often continues much longer than it should. Enraptured by technological change itself, companies pack more features—most of which are never used—into their products while slashing prices across the board. Rarely are trade-offs even considered. The drive for growth to satisfy market pressures leads companies into every product area. Although a few companies with fundamental advantages prosper, the majority are doomed to a rat race no one can win.
+> In high-tech industries, this imitation phase often continues much longer than it should. Enraptured by technological change itself, companies pack more features-most of which are never used-into their products while slashing prices across the board. Rarely are trade-offs even considered. The drive for growth to satisfy market pressures leads companies into every product area. Although a few companies with fundamental advantages prosper, the majority are doomed to a rat race no one can win.
 
 > Ironically, the popular business press, focused on hot, emerging industries, is prone to presenting these special cases as proof that we have entered a new era of competition in which none of the old rules are valid. In fact, the opposite is true."
 
@@ -150,11 +150,11 @@ Operational Effectiveness over a big activity map is really hard to copy. And le
 
 With so many forces at work against making choices and tradeoffs in organizations, a clear intellectual framework to guide strategy is a necessary counterweight. Moreover, strong leaders willing to make choices are essential.
 
-General management is more than the stewardship of individual functions. Its core is strategy: defining and communicating the company’s unique position, making trade-offs, and forging fit among activities. 
+General management is more than the stewardship of individual functions. Its core is strategy: defining and communicating the company's unique position, making trade-offs, and forging fit among activities. 
 
-The leader must provide the discipline to decide which industry changes and customer needs the company will respond to, while avoiding organizational distractions and maintaining the company’s distinctiveness. 
+The leader must provide the discipline to decide which industry changes and customer needs the company will respond to, while avoiding organizational distractions and maintaining the company's distinctiveness. 
 
-There will be constant pressures to compromise, relax trade-offs, and emulate rivals. One of the leader’s jobs is to teach others in the organization about strategy—and to say no.
+There will be constant pressures to compromise, relax trade-offs, and emulate rivals. One of the leader's jobs is to teach others in the organization about strategy-and to say no.
 
 Strategy renders choices about what not to do as important as choices about what to do. Indeed, setting limits is another function of leadership. Deciding which target group of customers, varieties, and needs the company should serve is fundamental to developing a strategy. 
 
