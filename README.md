@@ -25,3 +25,5 @@ If you'd like to give me credit somewhere on your blog or tweet a shout out to [
 
 Warm Regards and Stay Creative,  
 Hossain Mohd. Faysal
+
+[![Join the chat at https://gitter.im/idvorkin/idvorkin.github.io](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/idvorkin/idvorkin.github.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
