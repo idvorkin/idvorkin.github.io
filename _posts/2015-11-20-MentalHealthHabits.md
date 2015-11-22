@@ -22,11 +22,11 @@ __How's that working out for you?__ Really well, this is my most consistent prac
 
 ### Daily Gratefulness Journal
 
-__Why?__ 
+__Why?__  It's easy to focus on what we don't have and what goes wrong, and forget all the things that go right, and that we shoudl be thankful for.  By taking a few minutes each day to remember what went well and what I'm grateful for, I'm remindeded why my life is awesome.
 
-__How?__ 
+__How?__  I use a physical journal called [FiveMinuteJournal](http://www.FiveMinuteJournal.com), it has you list the 3 things your'e grateful for in the morning, and 3 things that went well in the evening.
 
-__How's that working out for you?__
+__How's that working out for you?__ Really well. Because I can fill this out in less then 2 minutes, I tend to do it daily. It's hard to be objective, but since I've started this practice, I have been much more likely to think about how lucky I am.
 
 ### Formal 8-12 minute meditation 
 __Why?__ 
@@ -48,4 +48,5 @@ __How's that working out for you?__
 * Why is someone behaving inconsistently
 * Poll the people in my head
 * Forced wake up time.
+* GratTweeting (very similuar to daily gratefulness journal.)
 
