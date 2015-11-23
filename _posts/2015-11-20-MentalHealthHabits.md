@@ -19,7 +19,7 @@ __Why?__ I'm a ruminator. Both positive and negative thoughts get stuck in a loo
 
 __How?__  Every day I take 10 minutes to write about 750 words as quickly as I can on the ideas sloshing around in my head. I do it on [750words](http://www.750words.com) which is optimized for this practice.
 
-__How's that working out for you?__ Really well, this is my most consistent practice. Since [September 2011][http://ighealth.blogspot.com/2012/01/750wordscom.html], I've written over a million words on more then 1300 days.
+__How's that working out for you?__ Really well, this is my most consistent practice. Since [September 2011](http://ighealth.blogspot.com/2012/01/750wordscom.html), I've written over a million words on more then 1300 days.
 
 ### Daily Gratefulness Journal
 
