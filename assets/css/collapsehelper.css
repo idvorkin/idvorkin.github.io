@@ -8,12 +8,25 @@
 {
     display:none
 }
+/*
+Unicode in CSS  
+     http://stackoverflow.com/questions/10393462/placing-unicode-character-in-css-content-value?
+Nice unicode charectors
+     http://www.fileformat.info/info/unicode/category/Sm/list.htm
+*/
+/* Let close be a Unicode plus with a circle */
 .ui-closed:before {
   font-family:monospace;
-  content:"+ ";
+  content:"\2295         ";
+  font-size:1.5em;
+  color:darkgrey
 }
 
+/* Let open be a Unicode plus with a circle */
 .ui-open:before {
   font-family:monospace;
-  content:"- ";
+  content:"\229D     ";
+  font-size:1.5em;
+  font-weight: none;
+  color:darkgrey
 }
