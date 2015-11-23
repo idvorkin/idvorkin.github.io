@@ -5,13 +5,12 @@ author: "Igor Dvorkin"
 comments: true
 category: hbr
 inprogress: true
+collapsable: true
+
 ---
 
-What is Strategy is a summary of Porter's HBR article.
+Strategy is creating fit among a company's activities. The success of a strategy depends on doing many things well and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and improving operational effectiveness, a race to the bottom.
 
-What is strategy?  Strategy is creating fit among a company's activities. The success of a strategy depends on doing many things well-not just a few-and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and operational effectiveness determines an organization's relative performance.
-
-### Take Aways
 
 ### I. How to compete?
 _Operational Effectivness (Going Faster) Is Not Strategy_
@@ -86,23 +85,26 @@ _Strategic Positioning Requires Trade Offs_
 **Strategy requires deciding what not to do**
 
 Three types of trade offs: 
-1) Inconsistent brand or reputation.
-1) Inconsistent activities
-1) Limits on internal coordination and control.
+
+1. Inconsistent brand or reputation.
+1. Inconsistent activities
+1. Limits on internal coordination and control.
 
 You can straddle, but there's a huge penalty.
 Avoid False Trade Offs.
 No trade off -> No competitive advantage.
 
-### IV. Fit gives you competitive advantage and sustainability
+### IV. Fit and sustainable competitive advantage.
+
 
 * How do the unique activities interrelate and reinforce each other.
 * Fit is as strong as the strongest link? 
 
 #### Types of Fit
-1) First order - simple consistency. All activities accumulate.
-2) Second orders - activities reinforce each other.
-2) Third orders - optimization effort
+
+1. First order - simple consistency. All activities accumulate.
+2. Second orders - activities reinforce each other.
+2. Third orders - optimization effort
 
 Activity Maps: 
     List out critical activities. Strong positions have High order strategic themes as high fan out nodes in the middle.
@@ -117,7 +119,7 @@ Since there's little value in copying a single activity, need to copy all activi
 
 Operational Effectiveness over a big activity map is really hard to copy. And leaders can really pull ahead.
 
-### V. Rediscovering Strategy
+### V. How to Rediscover Strategy?
 
 #### The failure to choose
 
@@ -126,7 +128,7 @@ Operational Effectiveness over a big activity map is really hard to copy. And le
 * Think Customer Focus == All needs of all customers
 * Trade offs scary to big bosses, don't make trade offs since dont' want to look bad or make the wrong call.
 
-#### The growth trap
+#### The Growth trap
 
 * Looks like trade offs can limit growth.
 * Profits fall, so go after more market share, but eventually rivals come in and eat the profit in the race to the bottom.
@@ -134,9 +136,7 @@ Operational Effectiveness over a big activity map is really hard to copy. And le
 #### Profitable Growth
 
 * Make a position deeper, not broader.
-
 * Which activities, features, or forms of competition are feasible or less costly to them because of complementary activities that their company performs.
-
 * Deepening a position involves making the company's activities more distinctive, strengthening fit, and communicating the strategy better to those customers who should value it. 
 
 > During such periods in an industry's development, its basic productivity frontier is being established or reestablished. Explosive growth can make such times profitable for many companies, but profits will be temporary because imitation and strategic convergence will ultimately destroy industry profitability. The companies that are enduringly successful will be those that begin as early as possible to define and embody in their activities a unique competitive position. A period of imitation may be inevitable in emerging industries, but that period reflects the level of uncertainty rather than a desired state of affairs.
