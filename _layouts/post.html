@@ -17,6 +17,11 @@ Description: Awesome dude, awesome life
 -->
 <head>
 {% include head.html %}
+
+{% if page.collapsable %}
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/collapsehelper.css">
+{% endif %}
+
 {% if site.dropcap %}<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>{% endif %}
 </head>
 <body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
@@ -105,5 +110,26 @@ Description: Awesome dude, awesome life
     {% include footer.html %} 
 </main>    
 {% include scripts.html %} 
+
+{% if page.collapsable %}
+<script>
+    // TODO: Move to own file with collapse gaurd 
+    // End collapse by using a 
+    // #hide end collapse
+    // css in collapseHelper 
+    $(document).ready(function(){
+    var openingTags = "h3";
+    var closingTags = openingTags+",h3,h2,#hide-end-collapse"
+
+            
+    $(openingTags).addClass('ui-closed').css('cursor','pointer');
+    $(openingTags).nextUntil(closingTags).slideToggle();
+    $(openingTags).click(function() {
+      $(this).nextUntil(closingTags).slideToggle();
+      $(this).toggleClass('ui-closed ui-open');
+      });
+    });
+</script>
+{% endif %}
 </body>
 </html>

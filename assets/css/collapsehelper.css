@@ -1,0 +1,19 @@
+/*
+ *  Collapsable CSS.
+ *  Add collapse helper by adding +/- 
+ *  Clever idea from: 
+ *       http://www.silvabokis.com/squarespace-tips/how-to-create-hideshow-faqs-in-squarespace
+ */
+#hide-end-collapse
+{
+    display:none
+}
+.ui-closed:before {
+  font-family:monospace;
+  content:"+ ";
+}
+
+.ui-open:before {
+  font-family:monospace;
+  content:"- ";
+}

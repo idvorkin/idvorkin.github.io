@@ -5,6 +5,7 @@ author: "Igor Dvorkin"
 category: How Igor Ticks
 comments: true
 inprogress: true
+collapsable: true
 
 ---
 Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night.
@@ -42,11 +43,13 @@ __How?__
 
 __How's that working out for you?__
 
-## Inconsistent/Future practices
+### Inconsistent/Future practices
 
 * Process it once list
 * Why is someone behaving inconsistently
 * Poll the people in my head
 * Forced wake up time.
 * GratTweeting (very similuar to daily gratefulness journal.)
+
+#hide end collapse
 
