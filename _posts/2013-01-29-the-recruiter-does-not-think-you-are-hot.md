@@ -4,7 +4,7 @@ title: "The recruiter does not think you're hot"
 author: "Igor Dvorkin"
 comments: true
 featured: true
-category: Software as a Service
+tag: Software as a Service
 ---
 I've only had one truly unbearable job.  It was awful - The code base sucked, the boss had pointed hair, and to top it off I got a terrible review. 
 
