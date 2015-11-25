@@ -3,10 +3,8 @@ layout: post
 title: "What makes a leader"
 author: "Igor Dvorkin"
 comments: true
-tag: hbr
-inprogress: true
-collapsable: true
 
+tag: hbr
 ---
 
 Emotional intelligence (EI) is the crux of leadership. EI is comprised of Self-Awareness, Self-Regulation, Motivation, Empathy and Social Skills
