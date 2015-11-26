@@ -30,7 +30,17 @@ _Even engineers can use empathy_
 ### 2) Theory and practice of mindfulness
 _Breathing as if your life depends on it._
 
-* Meditation is .. *
+* Relaxed and Alert at the same time
+* Happiness is the default state of mind
+* Meditation is like exercise
+* Practice of Mindfulness meditation
+    * Process Model of Mindfulness Meditation
+    * Posture and stuff
+    * Experience without judging or reacting
+    * If you need to react, continue being mindful
+    * Let it go
+    * Sitting Time
+* Dude where is the science.
 
 ### 3) Keeping mindfulness beyond formal practice
 _Mindfulness without butt on cushion_
