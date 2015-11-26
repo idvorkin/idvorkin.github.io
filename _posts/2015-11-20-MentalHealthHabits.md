@@ -2,7 +2,10 @@
 layout: post
 title: "Emotional Health Practices"
 author: "Igor Dvorkin"
-tag: How Igor Ticks
+tags: 
+    - How Igor Ticks
+    - emotional intelligence
+
 comments: true
 inprogress: true
 collapsable: true
