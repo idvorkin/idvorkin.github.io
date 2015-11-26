@@ -11,26 +11,46 @@ tags:
     - emotional intelligence
 ---
 
-Mindfulness for Engineers, is what I'd call this books. It describes, the why, how and what of mindfulness and empathy in a way that's easy for engineers to digest.
+Mindfulness, or emotional intelligence (EI), for Engineers, is what I'd call this book. It describes how to build EI.
 
 This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
-### Even engineers can use empathy
+### 1) What is Emotional Intelligence (EI)? How to train it? 
+_Even engineers can use empathy_
 
-### Breathing as if your life depends on it.
+* Define IE: Ability to monitor your, and others, feelings, and use the info to guide your own thinking and actions.
+* Background on EI:  [What makes a leader](/what-makes-a-leader-great) article.
+* The Point: EI is a collection of trainable skills, this book teaches them.
+* Foundational Skill 1: Focus attention
+* Foundational Skill 2: Perceive feelings in the body since body manifests A) feeling before 'mind realizes it, B)  feelings with more granularity.
+* Mindfulness is THE WAY to build those foundational skills.
+* Once have the mindfulness can use to build the components of EI.
+* Easy and Easier Mindfulness Methods. __Easy__ follow the breath.  __Easier__ have no thoughts.
+ 
+### 2) Theory and practice of mindfulness
+_Breathing as if your life depends on it._
 
-### Mindfulness without butt on cushion
+* Meditation is .. *
 
-### All natural organic Self-Confidence
+### 3) Keeping mindfulness beyond formal practice
+_Mindfulness without butt on cushion_
 
-### Riding your emotions like a horse
+### 4) Self awareness leading to self confidence
+_All natural organic Self-Confidence_
 
-### Making Profits, Rowing Accross Oceans, and Changing The World
+### 5) Developing Self Mastery
+_Riding your emotions like a horse_
 
-### Empathy and the Monkey bussiness of brain tangos
+### 6) Art of self motivation
+_Making Profits, Rowing Accross Oceans, and Changing The World_
 
-### Being Effective and Loved at the same time
+### 7) Developing Empathy by connecting to others
+_Empathy and the Monkey business of brain tangos_
 
-### Three easy steps to world peace
+### 8) Leadership and Social Skills
+_Being Effective and Loved at the same time_
+
+### 9) The story behind Search Inside Yourself.
+_Three easy steps to world peace_
 
 ### Save the world in your free time.
