@@ -7,7 +7,6 @@ inprogress: true
 collapsable: true
 
 tags: 
-    - hbr 
     - emotional intelligence
 ---
 
