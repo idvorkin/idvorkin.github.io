@@ -17,11 +17,13 @@ This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B
 ### 1) What is Emotional Intelligence (EI)? How to train it? 
 _Even engineers can use empathy_
 
-* Define IE: Ability to monitor your, and others, feelings, and use the info to guide your own thinking and actions.
+* __GOAL:EI is a collection of trainable skills, this book teaches them.__
+* IE is Ability to monitor your, and others, feelings, and use the info to guide your own thinking and actions.
 * Background on EI:  [What makes a leader](/what-makes-a-leader-great) article.
-* The Point: EI is a collection of trainable skills, this book teaches them.
 * Foundational Skill 1: Focus attention
-* Foundational Skill 2: Perceive feelings in the body since body manifests A) feeling before 'mind realizes it, B)  feelings with more granularity.
+* Foundational Skill 2: Perceive feelings in the body since body manifests feelings
+    1. before mind realizes it
+    2. with more granularity.
 * Mindfulness is THE WAY to build those foundational skills.
 * Once have the mindfulness can use to build the components of EI.
 * Easy and Easier Mindfulness Methods. __Easy__ follow the breath.  __Easier__ have no thoughts.
@@ -29,9 +31,9 @@ _Even engineers can use empathy_
 ### 2) Theory and practice of mindfulness
 _Breathing as if your life depends on it._
 
-* Relaxed and Alert at the same time.
+* __GOAL: Be Relaxed and Alert at the same time.__
 * Meditation trains Attention(ability to concentrate), Meta-Attention(notice not paying attention).
-* Attention + Meta-Attention, like bike balancing. Constantly re-balancing till seems like always balanced.
+    * Like bike balancing. Constantly re-balancing so seems like rider always balanced.
 * Meditation is like exercise 
     * Work out, tough work out, much better then no workout. 
     * More you practice stronger you become.
@@ -50,8 +52,23 @@ _Breathing as if your life depends on it._
     * Dude where is the science.
     * Happiness default state of mind.
 
-### 3) Keeping mindfulness beyond formal practice
+### 3) Extend mindfulness beyond formal practice.
 _Mindfulness without butt on cushion_
+
+* __Goal: Extend from formal to informal situations (rest to activity) and from self to others.__
+* Mindfulness in activity
+* Walking Meditation
+* Other Directed Mindfulness
+* Formal Practice of Mindful Listening
+* Informal Practice of Mindful Listening
+* Mindful Conversation
+* Formal Mindful Conversation
+* Informal Mindful Conversation
+* Sustaining your practice
+* Lightness and Joy in Mediation
+* Mastering open and closed meditation
+* Meditation Circuit Training
+* Stay motivated - you're going to suck till you don't
 
 ### 4) Self awareness leading to self confidence
 _All natural organic Self-Confidence_
