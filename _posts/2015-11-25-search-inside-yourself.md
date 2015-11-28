@@ -29,17 +29,26 @@ _Even engineers can use empathy_
 ### 2) Theory and practice of mindfulness
 _Breathing as if your life depends on it._
 
-* Relaxed and Alert at the same time
-* Happiness is the default state of mind
-* Meditation is like exercise
-* Practice of Mindfulness meditation
-    * Process Model of Mindfulness Meditation
-    * Posture and stuff
+* Relaxed and Alert at the same time.
+* Meditation trains Attention(ability to concentrate), Meta-Attention(notice not paying attention).
+* Attention + Meta-Attention, like bike balancing. Constantly re-balancing till seems like always balanced.
+* Meditation is like exercise 
+    * Work out, tough work out, much better then no workout. 
+    * More you practice stronger you become.
+    * After a while, you just feel better and not sure why.
+* Intention - Intention == Affirmation == mental habit == good.
+* Grand mother mind - be gentle with yourself, the more you do it, the more of a habit it becomes.
+* Process Model: 
+    * External Observer: Follow Breath, Distracted, Regain Focus
+* Dealing with distraction
     * Experience without judging or reacting
     * If you need to react, continue being mindful
     * Let it go
     * Sitting Time
-* Dude where is the science.
+* Concepts I'm not summarizing
+    * Proper meditation posture
+    * Dude where is the science.
+    * Happiness default state of mind.
 
 ### 3) Keeping mindfulness beyond formal practice
 _Mindfulness without butt on cushion_
