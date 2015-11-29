@@ -74,7 +74,20 @@ Description: Awesome dude, awesome life
                     <div class="small-12 columns">
                         <div class="notepad-post-meta-simple">
                             <h1>{{ page.title }}</h1>
-                            <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
+                            <p>by <strong>{{ site.owner.name }}</strong> 
+                            &#8212; {% assign tagsize = page.tags.size %}
+                            {% if tagsize != 0 %} tagged {% for tag in page.tags %}
+                            <!-- HACK: CSS TEMPLATE force ahref to red in title, will fix in CSS template later. --> 
+                            <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" 
+                               data-toggle="tooltip" title="Posts tagged with {{ tag }}" 
+                                style="color:red;font-size:1.25em"
+                               >
+                                {{ tag }}
+                            </a>
+                            {% unless forloop.last %}&nbsp;&comma;&nbsp;
+                            {% endunless %}{% endfor %}{% endif %} 
+                            <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -118,6 +131,10 @@ Description: Awesome dude, awesome life
     // #hide end collapse
     // css in collapseHelper 
     $(document).ready(function(){
+
+
+    // For, HN:  until we get a peer, or explicit end mark.
+    // For LI/OL, if have children, till closed.
     var openingTags = "h3";
     var closingTags = openingTags+",h3,h2,#hide-end-collapse"
 
