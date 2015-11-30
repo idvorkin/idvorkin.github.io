@@ -140,15 +140,40 @@ _All natural organic Self-Confidence_
         * More we study ourselves, more objective we can become.
         * We know all the skeletons in our closets, and can deal with them.
         * Pep talk give transient boost, but it's NOT sustainable.
-* Body Scan
-    * Scan for Emotion
-    * Return to grounding
-* Journalling
+* Body Scan 13m
+    * General
+        * Every time you scan, you build mental habit of polling your body.
+        * Attention, not sensation matters.
+        * SIY Body scan less intense then MBSR body scan.
+    * 1m Warm up  mindful breathing
+    * 6m Scan Body 1 m per region, 6m total.
+        * Head - top, ears, back
+        * Face - Forehead, eyes, cheeks nose, lips, gums/tongue.
+        * Neck+Shoulders - neck, throat, shoulders
+        * Back - low, mid, upper back.
+        * Front - Chest and stomach
+        * Whole Body
+    * 2m Scan for Emotion - for an emotion, ok if none found.
+    * 3m Experiance Positive Emotion - think of something awesome, and see how it feels in your body/face/shoulders/tension.
+    * 1m Cool Down mindful breathing.
 * Journalling For Self Assessment
-    * Prime
     * Journal
-    * Prime
-    * Journal
+        * Prompt, then free association on paper. (I use [750words](http://www.750word.com))
+        * Prompts to try: 
+            *   What I am feeling now
+            *   I am aware that
+            *   What motivates me is
+            *   I am inspired by
+            *   Today, I aspire to
+            *   What hurts me is 
+            *   I wish
+            *   Others are
+            *   I made a happy mistake
+            *   Love is
+    * 2m Positive Prime - Times when you did great, and are satisified. 
+    * 2m per Prompt/Free Associate - __1.__ Things that give me pleasure are. __2.__ My strengths are.
+    * 2m Negative Prime - Times when you responded negatively, where you weren't satisified.
+    * 2m per Prompt/Free Associate - __1.__Things that annoy me are.  __2.__ My weaknesses are.
 * My emotions are not me.
     * Emotions go from exististential ->  experiential -> physiological 
     * I am happy ->  I feel happy ->  I experiance happy in my body 
