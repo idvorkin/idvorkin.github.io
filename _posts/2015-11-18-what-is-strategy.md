@@ -3,7 +3,9 @@ layout: post
 title: "On strategy"
 author: "Igor Dvorkin"
 comments: true
-tag: hbr
+tags:
+    - hbr
+    - strategy
 inprogress: true
 collapsable: true
 
