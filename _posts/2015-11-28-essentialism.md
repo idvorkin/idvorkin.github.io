@@ -11,7 +11,7 @@ tags:
     - strategy
 ---
 
-Time is my precious resource - I have a limited number of hours in my life, and once I’ve used them, I never get them back. Essentialisim describes how to make sure I'm getting the most out of time.  
+Time is my precious resource - I have a limited number of hours in my life, and once I've used them, I never get them back. Essentialisim describes how to make sure I'm getting the most out of time.  
 
 _Essentialisim is similar to strategy, as well as outsourcing_ 
 
