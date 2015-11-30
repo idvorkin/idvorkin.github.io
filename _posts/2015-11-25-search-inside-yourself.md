@@ -116,13 +116,33 @@ _Mindfulness without butt on cushion_
 ### 4) Self awareness leading to self confidence
 _All natural organic Self-Confidence_
 
-* About self awareness
-* Self Awareness Competencies
+* __GOAL:  Emotional Awareness -> Self Assessment -> Self Confidence__
+* Self Awareness - The basis of EI - Your internal state, preferences, resources, and intuitions.
+    * Emotional Awareness 
+        * Resolution - See subtle differences between emotions.
+        * Vividness - Turn up the contrast, so we can see easily see the additional resolution.
+        * (Am Happy -> Feel Happy -> Experiance Happy in my Body)
+        * The moment you observe an emotion, it's already less powerful.
+    * Accurate Self Assement - Strengths and Weakness
+        * Essential for managers. 
+        * We're not perfect, but how can we succeed despite these gaps.
+    * Self Confidence - Ego as big as Mt Fugi, or as small as grain of sand as needed.
+        * Ego gets in the way of listening, need to let it go to be open.
+        * Ego required when doing hard tasks like leading, need it to grow to take on the challenge
+        * You can admit weakness, without self-blaming 
+        * Grandma Mind requires huge confidence
 * From Emotional Awareness to Self Confidence
-* Developing Self Awareness
+    * Emotional Awareness -> Self Assessment -> Self Confidence
+        * Engineers confident in systems when understand operational, failure, and error recovery behaviors.
+        * Understand operational, failure, and error recovery behaviors -> Self Assessment.
+        * Self Assement has low SNR because of emotions . Boost Emotional Awareness -> Boost Self Assessment SNR
+    * Misc
+        * More we study ourselves, more objective we can become.
+        * We know all the skeletons in our closets, and can deal with them.
+        * Pep talk give transient boost, but it's NOT sustainable.
 * Body Scan
-* Scan for Emotion
-* Return to grounding
+    * Scan for Emotion
+    * Return to grounding
 * Journalling
 * Journalling For Self Assessment
     * Prime

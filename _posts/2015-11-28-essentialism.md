@@ -11,7 +11,7 @@ tags:
     - strategy
 ---
 
-Time is my precious resource - I have a limited number of hours in my life, and once I've used them, I never get them back. Essentialisim describes how to make sure I'm getting the most out of time.  
+Ask yourself - What is most essential? Cut everything else.
 
 _Essentialisim is similar to strategy, as well as outsourcing_ 
 
@@ -75,7 +75,22 @@ tbd
 tbd
 
 ### 20) Be 
-tbd
+* Always ask what is most essential, cut everything else
+* Choosing and your todo list:
+    * Life is about what you decide to put on your todo list, not how efficiently you cross things off.
+    * Focus on essential is a choice, make it, or someone else will make your choices, and it'll suck.
+* Regressions:
+    * You'll forget that you can't do both, you can't.
+    * They'll happen, keep grandmother mind, and try again.
+* Living a life that matters: 
+    * Family most important thing in your life, everything else will fade over time.
+    * You have so little time -- go look at cemeteries to see how little you have. 
+    * Remove fear of choosing the wrong thing, just choose and move on.
+    * By deciding what is most important and doing it, you'll have no regrets.
+        
+
+
+
 
 ### Appendix) Essentialist Leadership Principles
 tbd
