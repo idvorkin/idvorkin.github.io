@@ -4,6 +4,8 @@ title: "Strategies"
 author: "Igor Dvorkin"
 comments: true
 inprogress: true
+tags: 
+    - strategy
 ---
 
 I'm trying to learn strategies, so I'm going to enumerate strategies I've observed: 
