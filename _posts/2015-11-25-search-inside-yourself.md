@@ -180,6 +180,22 @@ _All natural organic Self-Confidence_
 
 ### 5) Developing Self Mastery
 _Riding your emotions like a horse_
+* __GOAL:  Compulsion -> Choice (7H: Choose your response)
+*  About Self Regulation
+* NOT Avoiding or Surpressing Emotions
+* Like WRiting on Water
+* Practice of Letting go
+* Know when you are not in pain
+* Do not feel bad about feeling bad
+* Do not feed the monsters
+* Neural Model of Emotional Regulation
+* Dealing with Triggers
+* Siberinan northern railroad
+* Managing Negative Emotions
+* How to not strangle your mother in law
+* Other ways to handle triggers
+* From self regulation to self confidence.
+* Making Friends with emtions
 
 ### 6) Art of self motivation
 _Making Profits, Rowing Accross Oceans, and Changing The World_
