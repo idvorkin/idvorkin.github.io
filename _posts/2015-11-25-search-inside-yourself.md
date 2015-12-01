@@ -242,6 +242,22 @@ _Riding your emotions like a horse_
 ### 6) Art of self motivation
 _Making Profits, Rowing Accross Oceans, and Changing The World_
 
+* Pleasure, Passion and Higher Purpose
+* Motivation in 3 easy steps
+* Alignment - Having fun for a living
+* Flow
+* Autonomy, Mastery, Purpose
+* Know and align yourself
+* Discovering values and higher purpose
+* Envisioning
+* Discover your ideal future
+* Talk about your ideal future alot
+* INner calm
+* Emotional Resilliance
+* Resilliance meditation 
+* Cognative Resilliance
+* Leanring Optimisim, Unlearning Pessismism
+* Great Waves
 ### 7) Developing Empathy by connecting to others
 _Empathy and the Monkey business of brain tangos_
 
