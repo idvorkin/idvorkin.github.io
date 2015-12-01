@@ -158,7 +158,7 @@ _All natural organic Self-Confidence_
     * 1m Cool Down mindful breathing.
 * Journalling For Self Assessment
     * Journal
-        * Prompt, then free association on paper. (I use [750words](http://www.750word.com))
+        * Prompt, then free association on paper. (I use [750words](http://www.750words.com))
         * Prompts to try: 
             *   What I am feeling now
             *   I am aware that
@@ -173,30 +173,72 @@ _All natural organic Self-Confidence_
     * 2m Positive Prime - Times when you did great, and are satisified. 
     * 2m per Prompt/Free Associate - __1.__ Things that give me pleasure are. __2.__ My strengths are.
     * 2m Negative Prime - Times when you responded negatively, where you weren't satisified.
-    * 2m per Prompt/Free Associate - __1.__Things that annoy me are.  __2.__ My weaknesses are.
+    * 2m per Prompt/Free Associate - __1.__ Things that annoy me are.  __2.__ My weaknesses are.
 * My emotions are not me.
     * Emotions go from exististential ->  experiential -> physiological 
     * I am happy ->  I feel happy ->  I experiance happy in my body 
 
 ### 5) Developing Self Mastery
 _Riding your emotions like a horse_
-* __GOAL:  Compulsion -> Choice (7H: Choose your response)
-*  About Self Regulation
-* NOT Avoiding or Surpressing Emotions
-* Like WRiting on Water
-* Practice of Letting go
-* Know when you are not in pain
-* Do not feel bad about feeling bad
-* Do not feed the monsters
-* Neural Model of Emotional Regulation
-* Dealing with Triggers
-* Siberinan northern railroad
-* Managing Negative Emotions
-* How to not strangle your mother in law
-* Other ways to handle triggers
-* From self regulation to self confidence.
-* Making Friends with emtions
 
+* __GOAL:  Compulsion -> Choice (7H: Choose your response)__
+* About Self Regulation
+    * Self-Control: Disruptive emotions under control
+    * Trustworthiness: Maintain honesty and integrity
+    * Concsientiousness: Responsibilty for personal performance
+    * Adapatiblity: Flexibility in handling change
+    * Innovation: Being comfortable with novel ideas
+* NOT Avoiding or Surpressing Emotions
+    * It's about being skillful with emotions.
+    * Anger vs Indignation, anger powerless, but indignation a source of calm power.
+    * Negative emotions are at time appropriate, like for feeling empathy.
+* __Letting go WHILE STILL appreciating the ups and downs.__
+    * Emotions going to happen, BUT we have the power to let it go.
+    * PAIN is short, but SUFFERING is grasping and aversion.
+    * Grasping - holding on to something and not letting it go.
+    * _Wilting flowers don't cause suffering, it's the unrealistic desire for them to last forever._
+    * Aversion - avoiding something and refusing to think about it.
+    * _Pain doesn't cause suffering, it's the desire not to experiance it that causes suffering._
+* Dealing with distress
+    * Know when you are not in pain - have a habit of enjoying when not in pain, this gives strength.
+    * Do not feel bad about feeling bad - (Meta distress) is not helpful, have grandmother mind on distress.
+    * Do not feed the [monsters](http://ig66.blogspot.com/2005/01/do-you-believe-in-mind-monsters.html) - distress needs fuel, stop retelling the same story.
+        * Personal story - freak out over screwed up basement.
+    * Start every thought with kindness and humor - It's nicer that way, gives us reserve to deal with hardship.
+* Triggers - A small event results in an objectively too big response. 
+    *   Often have a repeated 'emotional' injury. 
+    *   Need to respond quickly in the moment (SBNRR), but do a SBNRR meditation afterwards to proces and get better.
+    * More time you practive long form, better you get in short form.
+* Identify triggers:
+    *   Body - shalllow breathing, rapid heartbeat, sick to stomach.
+    *   Emotions - Amydala hijack, fight or flight, frozen
+    *   Thoughts - Victim, blame, jdudgment, trouble focusing, outrage
+* __S__i__B__erinan __N__orthern __R__ail__R__oad:
+    * Stop, Breathe, Notice, Reflect, Respond.
+    * __Stop__ is sacred, even for a few seconds. __Breathing__ extends the pause.
+    * __Notice__ to realize and calm the is a physiological response, 
+        * I am angry -> I feel angry -> my body is experiancing anger.
+    * __Reflect__ to calm the psychological response, and engage cognative process [cognative reframe].
+        * Every one wants to be happy, and act in a rationale way. 
+    * __Respond__ think of most helpful/appropriate response you can think of.
+        * Triggering the other person, will make situation escalate. Be calm.
+        * People will feel bad on own if needed.
+* Siberian northern railroad Meditation.
+    * 0.5m of mindful breathing: Warm up
+    * 2m: Priming/Focus negative emotions
+        * What was the emotion, the first emotion, where did you feel it, how do you feel now.
+        * Relive the negative emotion
+    * 0.5m: Stop/Breathe
+    * 1m: Notice and Experiance
+    * 1m: Reflect on Origin
+    * 1m :Imagine Response
+    * 2m: Return to grounding: Tight fist, open to release emotion, 60s mindfulness breathing.
+* From self regulation to self confidence.
+    * Aversion operates by distracting. Instead of feeling vulnerable, we focus on other person being a dick.
+* Making Friends with emtions
+    * Blindly reacting to emotion or fighting hard, makese it worse. 
+    * Instead, just observe, and reflect on the emotions, befriend them and they go away.
+    * See Getting to yes with yourself.   
 ### 6) Art of self motivation
 _Making Profits, Rowing Accross Oceans, and Changing The World_
 
