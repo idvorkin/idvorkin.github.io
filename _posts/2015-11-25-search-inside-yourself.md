@@ -15,7 +15,7 @@ Mindfulness, or emotional intelligence (EI), for Engineers, is what I'd call thi
 
 This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
-### 1) What is Emotional Intelligence (EI)? How to train it? 
+### 1) What is Emotional Intelligence (EI)? How to train it? &#x2611; 
 _Even engineers can use empathy_
 
 * __GOAL:EI is a collection of trainable skills, this book teaches them.__
@@ -29,7 +29,7 @@ _Even engineers can use empathy_
 * Once have the mindfulness can use to build the components of EI.
 * Easy and Easier Mindfulness Methods. __Easy__ follow the breath.  __Easier__ have no thoughts.
  
-### 2) Theory and practice of mindfulness
+### 2) Theory and practice of mindfulness &#x2611;
 _Breathing as if your life depends on it._
 
 * __GOAL: Be Relaxed, Non Judgmental, and Alert at the same time.__
@@ -53,7 +53,7 @@ _Breathing as if your life depends on it._
     * Dude where is the science.
     * Happiness default state of mind.
 
-### 3) Extend mindfulness beyond formal practice.
+### 3) Extend mindfulness beyond formal practice. &#x2611; 
 _Mindfulness without butt on cushion_
 
 * __Goal: Extend from formal to informal situations (rest to activity) and from self to others.__
@@ -113,7 +113,7 @@ _Mindfulness without butt on cushion_
     * Feel your feet touching the ground
     * Don't take anything forgranted.
 
-### 4) Self awareness leading to self confidence
+### 4) Self awareness leading to self confidence &#x2611; 
 _All natural organic Self-Confidence_
 
 * __GOAL:  Emotional Awareness -> Self Assessment -> Self Confidence__
@@ -178,7 +178,7 @@ _All natural organic Self-Confidence_
     * Emotions go from exististential ->  experiential -> physiological 
     * I am happy ->  I feel happy ->  I experiance happy in my body 
 
-### 5) Developing Self Mastery
+### 5) Developing Self Mastery &#x2611; 
 _Riding your emotions like a horse_
 
 * __GOAL:  Compulsion -> Choice (7H: Choose your response)__
@@ -239,7 +239,8 @@ _Riding your emotions like a horse_
     * Blindly reacting to emotion or fighting hard, makese it worse. 
     * Instead, just observe, and reflect on the emotions, befriend them and they go away.
     * See Getting to yes with yourself.   
-### 6) Art of self motivation
+
+### 6) Art of self motivation &#x2610; 
 _Making Profits, Rowing Accross Oceans, and Changing The World_
 
 * Pleasure, Passion and Higher Purpose
