@@ -240,27 +240,111 @@ _Riding your emotions like a horse_
     * Instead, just observe, and reflect on the emotions, befriend them and they go away.
     * See Getting to yes with yourself.   
 
-### 6) Art of self motivation &#x2610; 
+### 6) Art of self motivation &#x2611; 
 _Making Profits, Rowing Accross Oceans, and Changing The World_
 
-* Pleasure, Passion and Higher Purpose
-* Motivation in 3 easy steps
-* Alignment - Having fun for a living
-* Flow
+* __GOAL: Find your purose then be resilliant to failure.__
+* Learn your __Purpose__, as you get good you hit __flow__, and then you get recognition and __pleasure__.
+    * Defined in my (blog) [http://ig2600.blogspot.com/2015/07/a-richer-model-of-happiness.html]
+    * Prioirity order: Satisifaction, Flow, and Pleasure.
+* Motivation: __Align__ work with purpose. __Envision__ future we desire. __Overcome__  obstacles through resiliance.
+* Alignment - Work is _meaningful_ for you, you frequently hit _flow_.
+* Flow - focused attention. Meditation helps.
 * Autonomy, Mastery, Purpose
+    * Pink's candle attach candle to wall experiment 
+    * AMP provides creativity, rewards do not.
+    * Give employees why and outcome, let them figure out the how.
 * Know and align yourself
+    * Mindfulness -> Self Awareness -> You can figure out the opportunities to AMP.
+    * Abstract concepts, need to verbalize or write down to find them.
+    * 7H: Personal mission statement, funeral exercise. 
 * Discovering values and higher purpose
-* Envisioning
-* Discover your ideal future
-* Talk about your ideal future alot
-* INner calm
+    * Prompts: My core values are, I stand for.
+    * Alone: Journal
+    * Group Mindful Listening: Speaker describes, group mindful listening, then free discussion afterwards to clarify.
+    * End meta.
+* Envisioning: Begin with the end in mind.
+    * Visualize it makes it much easier.
+    * Doing your mission exhausting at first (discovering your values) then energizing (figuring out how to achieve it).
+    * Prompt: If everything goes well, what will I be doing in 5 years. 
+        * Who are you and what are you doing
+        * How do you feel
+        * What do people say about you
+        * Open mindfulness for a minute
+    * Write for 7 minutes.
+* Alternate Envisioning:
+    * You're at your own Obituary
+    * You're at a talk that is deeply touching and insipiring. 
+        *   What did the speaker saying why is it touching you.
+        *   What makes you look up to the speaker, what do you envy.
+        *   Imagine the speaker is you.
+* Share your ideal future LOTS. Because: 1) Inspire you. 2) Find Allies
+    * More you talk, more real it becomes for you, more you flesh it out.
+    * __People want to be inspired__ 
+    * People want to help.
+    * Sharing with others, will inspire others, and some will help.
+* Resilliance - ability to remove obstacles, and return to baseline when troubles.
+    * Inner Calm - Foundation of optimisim and resilliance
+    * Emotional Resilliance - Success/Failure are emotional experiances, build this, and can always celebrate progress.
+    * Cognative Resilliance - How to explain setbacks to ourselves and others, to develop optimism.
+    * __Leaders provide this service to thier organization and teams__
+* Inner calm
+    * Day to day things go wrong, but have a deep well of calmness, and can always return to it. 
+    * Mindfulness key training.
 * Emotional Resilliance
-* Resilliance meditation 
+    * Success/Failure emotional experiances -> Grasping/Aversion 
+* Resilliance Meditation 
+    * Aversion is an emotion in the body. Get used to it, invite it as a friend.
+    * 3 deep breaths to calm the mind.
+    * Focus on breathing
+    * Quick Body Scan
+    * 4m - Experiance failure - observe emotions/body
+    * Recall these are physioligcal experiances in the body, not you. Get used to feeling aversion.
+    * 30s pause.
+    * 4m - Experiance success - observe emotions/body
+    * Recall these are physioligcal experiances in the body, not you. Get used to not feeling grasping.
+    * Back to mindfulness
 * Cognative Resilliance
-* Leanring Optimisim, Unlearning Pessismism
-* Great Waves
-### 7) Developing Empathy by connecting to others
+    * Success is 99% failure. 
+    * You'll suck until youd don't
+    * Best explorers lost most of the time'.'
+    * Bill gates/brinn have no idea where they are going till they land it.
+    * Optimists: Setbacks are temporary and circumstaintial. Overcome by effort and activity, how to overcome.
+    * Pessimists: Setbacks make me helpless, I am a failure . Thinks nothing can be done, gives up.
+    * Default, negative emotion 3:1 ratio.
+    * Imagine you get 2$ for every 1$ lost. Objective HUGE win, but subjective feel like a loser.
+    * __Realize you have a huge negative bias.__
+* Reducing cognative negative bias -> Becoming an optimisit
+    * Don't worry you'll overdue this, your negative bias so string, you'll be lucky if you get to objective.
+    * Focus on positive - gratefulness journal.
+    * Become objective and transform thinking on Success/Failure:
+        * How does your body feel?
+        * What story are you telling yourself?
+        * Positive, notice if you're downplaying, and take credit
+        * Negative, notice you're uplaying: 
+            *  Find evidence temporary. 
+            *  Feeling inadequate, focus on past succcess.
+### 7) Developing Empathy by connecting to others &#x2610; 
 _Empathy and the Monkey business of brain tangos_
+* Empathy, the brain and monkey business
+* Brain tango
+* Empathy not pschyology or agreeing
+* How to increase empathy
+* Creating Desire mental habits
+* Like me/Loving kindess practive
+* How to save your marriage and relationships
+* Traditional practice of loving kindness
+* Bring out the best in people
+* Establishing Trust is good for you
+* start with Sincerity, Kindness and openingess.
+* Three assumptions
+* Empathic Listening
+* Formal practive of empathic listening
+* Informal practice of empathic listening
+* Praising people skillfully
+* Practices for political awareness
+* Political awareness exercises
+* Mental habits for highly empathic people
 
 ### 8) Leadership and Social Skills
 _Being Effective and Loved at the same time_
