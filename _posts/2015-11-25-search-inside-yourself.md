@@ -325,34 +325,109 @@ _Making Profits, Rowing Accross Oceans, and Changing The World_
             *  Find evidence temporary. 
             *  Feeling inadequate, focus on past succcess.
 
-### 7) Developing Empathy by connecting to others &#x2610; 
+### 7) Developing Empathy by connecting to others &#x2611; 
 _Empathy and the Monkey business of brain tangos_
-* Empathy, the brain and monkey business
-* Brain tango
-* Empathy not pschyology or agreeing
+* Empathy is feeling how others feel.
 * How to increase empathy
-* Creating Desire mental habits
+    * Kindness Up => Empathy Up.
+    * Similarity Up => Empathy Up.
+    * What we think, We Become (why affirmations work)
+    * See people and think "they're just like me", and "I want to be kind to them".
 * Like me/Loving kindess practive
-* How to save your marriage and relationships
+    * Think about the person is like you (to do record script)
+    * Think about the person want loving kindness (todo record script)
+* When you get in a fight, go off in corner and do sameness/loving kindness meditation.
 * Traditional practice of loving kindness
-* Bring out the best in people
-* Establishing Trust is good for you
-* start with Sincerity, Kindness and openingess.
-* Three assumptions
-* Empathic Listening
-* Formal practive of empathic listening
+    * 2M: May I be well, May I be happy, May I be free from suffering
+    * 2M: Neutral Person: Be well, Be happy, Be free from suffering
+    * 2M: Negative Person: Be well, Be happy, Be free from suffering
+* Start with Sincerity, Kindness and Openess
+    * Easy for emotional brain to think someone is "bad"
+    * Easy for your cognative brain to see someone is good, but hard to convince your emotionals.
+* When a new relationship, or things go south
+    1. Give people benefit of the doubt.
+    1. Trust begins with Trust
+* When chairing a meeting: some assumptions
+    1. Everyone here to serve a greater good, till proven otherwise
+    1. Thus assume, None of us have hidden agendas, until proven otherwise.
+    1. Thus assume, Reasonable, even when disagree, until proven otherwhise.
+* Empathic Listening:
+    * Mindful Listening. BUT: answer "I heard you feel", instead of "I heard you say".
+    * Prompts: 
+        * A difficult work situation, 
+        * Time when you felt pain, but couldn't do anything, 
+        * Other emotional juice.
+* Strengthing empathic listening:
+    1. Mindfulness: makes us more perceptive
+    1. Kindness: lets us listen better to feeling
+    1. Curiosity: wonder at what people might be experiances
+    1. Practice: Causes more of mindfulness, kindness, curiosity.
 * Informal practice of empathic listening
-* Praising people skillfully
-* Practices for political awareness
-* Political awareness exercises
-* Mental habits for highly empathic people
+    * Harder: people don't like to hear 'I hear you feeling ...'
+    * PRIME: Mindful Breathing, Loving Kindness/Like Me, 
+    * START: Remind to be curious, give lots of time. 
+    * If possilbe ask how they feel.
+    * Interesting you say that, listening to you, I'm hearing....
+    * END: Make lots of time to listen and give them lots of air time.
+    * META: Was this conversation helpful to you?
+* __Political Awareness:__ Empathy at the organization level, instead of personal level.
+* Political awareness practices:
+    * Empathy practices, but on steriods.
+    * Have a cross organization network of people you care about and trust and nurture them.
+    * Read the currents: How are decisions made?  Authority/Concensous? Who is influencer?
+    * Distinguish: Your/Team/Organization's interests.
+    * Use Self awareness to understand your role. 
+    * Use Empathic listening to undresatnd how people feel about situation and each other.
+* __Political awareness execrise__:
+    * Journal, or tell a friend
+    * PRIME: Think of a big, real conflict with lots of potency to you.
+    * Describe the situation as if you're right for 3m.
+    * Describe the situation as if other person right for 3m.
+    * Meta conversation.
+* Good news
+    * Empathy is feeling what other feels. Better Self Awareness, Better Empathy.
+    * XRef: Trust is basis of Mentoring 
+    * XRef: Lack of Trust basis of 5 dysfunctions of a team.
+    * Kindness is a sustainable source of happiness
+* Not summarized 
+    * Empathy, the brain and monkey business
+    * Praising people for working hard, not for being smart.
+        * TODO: Get Sean/Ammon's help on these.
+        * Your super power is someone can bring you a rough story, and you will make it great.
+        * NOT:Your super power is you're a great story teller.
 
-### 8) Leadership and Social Skills
+### 8) Leadership and Social Skills &#x2610;
 _Being Effective and Loved at the same time_
+* Being loved is good for you career
+* Using Kindness to grow friendship from an ugly situation
+* Lead with Compassion
+* Compassion is the Happiest state
+* Compassionate leasership is the most effective leadership
+* Training compassion by multiplying goodness
+* Multiply Goodness Meditation
+* Compassion Training For the brave: 
+   * Pre meditation script
+   * Settling in
+   * Tonglen
+   * Closing 
+* Influencing wiht goodness
+* The SCARF MODEL for social brain
+* Expand your influence
+* How goodness can change a man's life in 10 minutes
+* Communicate with insight
+* Difficult conversations
+    *   Prepare by walking through the 3 conversations
+    *   Decide whether to raise the isseu
+    *   Start from the objective 3rd story
+    *   Explore thier story and yours
+    *   Problem solve.
+* Insight and exercise for difficult conversations
+* Prepare for difficult conversation
+* Mindful E-mailing + Practice
+* Magic Mushroom Mantra:
+    * Love them. Understand them. Forgive Them. Grow with them.
 
 ### 9) The story behind Search Inside Yourself.
 _Three easy steps to world peace_
-
-
 
 ### Save the world in your free time.

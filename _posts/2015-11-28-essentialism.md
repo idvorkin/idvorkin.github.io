@@ -103,19 +103,52 @@ tbd
     * Apply to all aspects of your life. 
     * It's hard, but worth it.
 
-### 11) How to say No &#x2610;
-
-* Essentially Ackward
-* seperate decision from relationship
-* Saying no gracefully doesn't need the word no
+### 11) DARE: How to say No &#x2611;
+* __SAYING NO IS A CRITICAL LEADERSHIP SKILL__ 
+* __Say no firmly, resoloutely, and gracefully__
+* __LIFELONG MEMORY FOR KID:__
+    * Covery, Plan to spend time with his daughter, ran into friend asking over for dinner. 
+    * Daughter sad, since she was so excited about date with daD.
+    * But, Covey said yes, but not today. I Have a date with my daughter.
+    * Daughter recalled this story at Covey's funeral.
+* Good ways to say no.
+    * I'm flattered you thought of me, but I'm overcommitted
+    * I'd love to, but I don't have the bandwidth
+    * __Use the pause__, count to 5, or let the person fill the void.
+    * __No but__ - I am currently writing a book, but I'd love together once this has happened, reach out then
+    * __Let me check my calendar__ Gives you time to come up with a good answer.
+    * __E-mail bounce__ Set a local OOF to give you the time to break through
+    * __Yes, what should I deprioritize__ 
+        * What would you like me to deprioritize to make this a prioirty?
+        * I want to do a good job, and I won't be able to do a job I'm proud of if I take this on.
+    * __You are welcome to X, I'll do Y__: I won't write the deck, but I'm happy to give you feedback.
+    * __I can't, you can try X__
+* Ackward, but eventually you get respect/admiration.
+    * See Drucker's answer to Csikszentmihalyi
 * Focus on the trade off
+    * Think about what you're giving up, know this, and you'll find the courage.
+    * You can't say yes, without saying no to something else.
 * Remind yourself that everyone is selling something
-* saying no requires trading popularity for respect
-* Clear no is more gracerful than a vague or non-commital yes
-* The no repitoire
+    * When you say yes, you're buying something, make that thing essential.
 
-### 12) Uncommit
-tbd
+### 12) Uncommit - cut your losses. &#x2610;
+
+* __If  wasn't already invested, how much would I invest?__
+* __What else would I do with this time or money if I walked away now__
+* Sunk cost bias
+* Avoid Commitment Trap
+* Beware commitment trap
+* Pretend you don't own it yet
+* Get over the fear of waste
+* Admit failure to begin success
+* Stop trying to force a fit
+* Get an objective second opinion
+* Be aware of the status quo bias
+* Apply zero based budgetting
+* Stop making casual commitments
+* Pause before you speak
+* Get over fear of missing out
+* To fight the fear, run a reverse pilot
 
 ### 13) Edit
 tbd
