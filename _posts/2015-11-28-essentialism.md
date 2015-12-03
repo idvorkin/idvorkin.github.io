@@ -13,9 +13,13 @@ tags:
 
 Essentialism is deciding what goes on your todo list, not how many things you can cross off.
 
-_Essentialisim is similar to strategy, as well as outsourcing_ 
 
 This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
+
+* Essential Intent is a strategy that is Concrete, Inspiring, Memorable and clarifies what not to do.
+* How do I know when I'm done? 
+* If I didn't own this, would I buy it? 
+* If I didn't have this opportunity what would I do to aquire it? 
 
 ### 1) Essence
 tbd
@@ -37,8 +41,7 @@ tbd
 * Space to concentrate
 * Space to read
 
-### 6) Look
-tbd
+### 6) Look &#x2610;  
 * The big picture
 * Filtering For Fascinating
 * Keep a journal
@@ -57,11 +60,58 @@ tbd
 ### 9) Select
 tbd
 
-### 10) Clarify
-tbd
+### 10) Clarify: How will we know we're done? &#x2611;
 
-### 11) Dare
-tbd
+* __How will we know we're done?__
+* __Specific enough to know what NOT to do.__
+* Intent __Strategy that is Concrete, Inspiring, Memorable and clarifies what NOT to do!__
+* Pretty Clear -> Really Clear
+    * __Pretty clear is ambigious__
+    * __Ambiguity:__  stress, confusion, frustration.
+    * __Clarity:__   shared purpose, motiviation, collaboriation.
+* Ambiguity Pattern 1: Playing Politics
+    * At work, when no idea what matters, you'll try to look good to the boss.
+        * Don't know what matters? Try to show yourself better then peers, since it's arbitrary.
+        * Probably provides no value to the company.
+    * At home, when no idea what matters, try to look good to peers.
+        * Don't know what matters? Try to show better then your peers since it's arbitrary.
+        * But it probably doesn't matter to you.
+* Ambiguity Pattern 2: It's all good (aka. bad) 
+    * TEAM: Everyone does what's best for them in the moment, but it doesn't add up to anything.
+    * Personal: Do what's best for you in the momember, but it doesn't add up to anything.
+    * See picture of magnetic by poles.
+* Essential Intent:
+
+        |---------------+----------------+---------------------|
+        | 2x2 Grid      |  Vague         | Concrete            |
+        |---------------+----------------+---------------------|
+        | Inspirational | Vision/Mission | Essential Intent    |
+        | Bland         | Values         | Quarterly Objective |
+        |---------------+----------------+---------------------|
+    * Vision/Mission - Sounds like inspiration, but so vague ignored.
+    * Values - So generic, doesn't inspire passion 
+    * Quartely Objectives - a specific tactic/how, not inspiring.
+    * Intent - Strategy that is Concrete, Inspiring, Memorable and says what NOT doing.
+
+* Stop wordsmitthing, and start deciding
+    * Focus on the intent, not words
+    * Answer: If we were great at one thing, what would it be?
+    * Answer: If we succeeded, how would our accomplishemnt be described?
+    * Answer: How do we know if we're done?
+* Living with Intent
+    * Apply to all aspects of your life. 
+    * It's hard, but worth it.
+
+### 11) How to say No &#x2610;
+
+* Essentially Ackward
+* seperate decision from relationship
+* Saying no gracefully doesn't need the word no
+* Focus on the trade off
+* Remind yourself that everyone is selling something
+* saying no requires trading popularity for respect
+* Clear no is more gracerful than a vague or non-commital yes
+* The no repitoire
 
 ### 12) Uncommit
 tbd
