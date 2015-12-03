@@ -88,13 +88,14 @@ tbd
         | Inspirational | Vision/Mission | Essential Intent    |
         | Bland         | Values         | Quarterly Objective |
         |---------------+----------------+---------------------|
+
     * Vision/Mission - Sounds like inspiration, but so vague ignored.
     * Values - So generic, doesn't inspire passion 
     * Quartely Objectives - a specific tactic/how, not inspiring.
     * Intent - Strategy that is Concrete, Inspiring, Memorable and says what NOT doing.
 
-* Stop wordsmitthing, and start deciding
-    * Focus on the intent, not words
+* Answer the question, do not wordsmith.
+    * Stop rearranging words, only answer the questions ...
     * Answer: If we were great at one thing, what would it be?
     * Answer: If we succeeded, how would our accomplishemnt be described?
     * Answer: How do we know if we're done?
