@@ -324,6 +324,7 @@ _Making Profits, Rowing Accross Oceans, and Changing The World_
         * Negative, notice you're uplaying: 
             *  Find evidence temporary. 
             *  Feeling inadequate, focus on past succcess.
+
 ### 7) Developing Empathy by connecting to others &#x2610; 
 _Empathy and the Monkey business of brain tangos_
 * Empathy, the brain and monkey business
