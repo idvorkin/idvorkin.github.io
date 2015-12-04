@@ -327,6 +327,7 @@ _Making Profits, Rowing Accross Oceans, and Changing The World_
 
 ### 7) Developing Empathy by connecting to others &#x2611; 
 _Empathy and the Monkey business of brain tangos_
+
 * Empathy is feeling how others feel.
 * How to increase empathy
     * Kindness Up => Empathy Up.
@@ -398,6 +399,7 @@ _Empathy and the Monkey business of brain tangos_
 
 ### 8) Leadership and Social Skills &#x2610;
 _Being Effective and Loved at the same time_
+
 * Being loved is good for you career
 * Using Kindness to grow friendship from an ugly situation
 * Lead with Compassion
