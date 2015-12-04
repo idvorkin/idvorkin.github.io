@@ -522,9 +522,8 @@ _Being Effective and Loved at the same time_
 * Not summarized
 
 ### 9) The story behind Search Inside Yourself. &#x2611; 
+
 _Three easy steps to world peace_
 * Start with Me
 * Make meditation a field of science
 * Make meditation like exercise
-
-### Save the world in your free time.
