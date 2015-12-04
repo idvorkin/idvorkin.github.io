@@ -11,7 +11,7 @@ tags:
     - book-notes
 ---
 
-Mindfulness, or emotional intelligence (EI), for Engineers, is what I'd call this book. It describes how to build EI.
+Training Emotional Intelligence through mindfulness.
 
 This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
@@ -240,7 +240,7 @@ _Riding your emotions like a horse_
     * Instead, just observe, and reflect on the emotions, befriend them and they go away.
     * See Getting to yes with yourself.   
 
-### 6) Art of self motivation &#x2611; 
+### 6) Art of self motivation and building resilliance &#x2611; 
 _Making Profits, Rowing Accross Oceans, and Changing The World_
 
 * __GOAL: Find your purose then be resilliant to failure.__
@@ -397,39 +397,134 @@ _Empathy and the Monkey business of brain tangos_
         * Your super power is someone can bring you a rough story, and you will make it great.
         * NOT:Your super power is you're a great story teller.
 
-### 8) Leadership and Social Skills &#x2610;
+### 8) Leadership and Social Skills &#x2611;
 _Being Effective and Loved at the same time_
 
-* Being loved is good for you career
+* Lead with compassion, influence with goodness, communicate with goodness. 
+* __Mantra: Love them. Understand them. Forgive Them. Grow with them.__
+* Most effective commanders are liked by thier crews.
+* Talking about personal stuff, helps both of you build empathy.
 * Using Kindness to grow friendship from an ugly situation
-* Lead with Compassion
-* Compassion is the Happiest state
-* Compassionate leasership is the most effective leadership
+    * When something goes wrong, you can usually help each other, and through that build respect, trust and friendship.
+* Compassion: Mental state with concern for suffereing of others and aspiration to see suffering relieved.
+    * Cognitive Compassion - I understand you 
+    * Emotional Component - I feel for you
+    * Motivational Component - I want to help you.
+* Compassionate leadership is the most effective leadership
+    * Go from "I" to "We" to unlock the team. I is personal ego and doesn't allow others to participate and engage.
+    * Good to Great best business book ever, Defines Level 5 leaders.
+    * L5 leaders highly ambitious, but focused on greater good.
+        * Removes the self, and thus, allows others to inspire and contribute.
+        * Compassion (I understand you) and (I feel for you), remove the I, and (I want to help you) causes greater good.
 * Training compassion by multiplying goodness
+    * Build mental habits - more you think about it, more often you do it.
+    * Compassion mental habit is goodness.
+    * Use visualization to help us, since visualizing it helps.
 * Multiply Goodness Meditation
-* Compassion Training For the brave: 
-   * Pre meditation script
-   * Settling in
-   * Tonglen
-   * Closing 
-* Influencing wiht goodness
+    * Visualize breathing in goodness, it multiplying 10 fold, breathing out goodness.
+    * 2M pause
+    * Visualize each in breath bringing in goodness, it multiplying 10x in heart, breath out and white light expands
+    * 2m pause
+    * Visualize goodness in those we know.  Visualize goodness radiating from their bodies, when you breathe in, bring it int o your heart.
+    * 2m pause
+    * Visualize goodness in everyone on the planet, breathe in all the goodness into your heart.
+    * 2m pause
+    * 1m mindfulness
+* Why multiply goodness works - it trains
+    * Seeing goodness in others - Builds (I understand you, and feel for you) 
+    * Giving goodness to all - Builds I want to help you.
+    * Confidence that you can do it - Become comfortable doing it more and more.
+
+* Compassion Training For the brave - Tonglen: 
+   * Advanced practice, come back when you've mastered more exercises.
+   * Like multiplying goodness, but you breathe in suffering, transform it to suffering, and radiate it out.
+   * Dali Lama main practice
+   * Trains you that you can transform suffering into goodness.
+   * Powerful since teaches you you can avoid aversion because you can remove suffering.
+* Influencing with goodness
+    * Already influencing, GOAL: Expand, and use it for good of all.
+    * People want to minimize danger (HUGE energy) , maximize reward (small energy).
+    * Negative Interaction have huge impact, vs Positive Interactions have small impact.
+    * Marriage needs 5:1 positive to negative to avoid divorce.
 * The SCARF MODEL for social brain
+    * __Status:__ Where am I in the pecking order
+        * __BUILD:__ Give credit, and feedback, ups peoples status
+        * Predicts longevity
+        * Threats triggered very easily
+        * Feel good about our status by compare ourselves to former self improving.
+    * __Certainty:__ Do I know what what's going on.
+        * __Build:__ removing ambiguity, and giving people certainy on things that matter.
+        * Uncertainity causes rumination, and can be debiliting
+        * Worried about your job, can't do anything cuz sucks up all brain power.
+    * __Autonomy:__ Do I have control over the situation?
+        * __Build:__ making clear it's people's choice, not yours.
+        * Not having control causes the stress, not the "experience".
+    * __Relatedness:__ Is other person friend or foe.
+        * __Build:__ by taking time to know people.
+        * Easy to make friends by saying hi, shaking hands, etc.
+    * __Fairness:__
+        * __Build:__ making clear that you're being fair.
+        * Voluntarily injure themselves to fight injustice.
+        * Doesn't make sense but happens - see ultimatim experiment.
+        * Never underestimate sense of fairness, causes people self sacrifice.
 * Expand your influence
+    * Know you have influence
+    * Build confidence (removes ego) in lets you do this.
+    * Understand people and help them succeed - 
 * How goodness can change a man's life in 10 minutes
+    * Paul eckmen, 10 minutes holding dali lama's hand experinaced goodness, stopped being angry, and decided he wnated to change the world.
+    * Goodness exteremly powerful.
+    
 * Communicate with insight
+    * Empathy not enough for conversation, also need insight into what is going on.
 * Difficult conversations
     *   Prepare by walking through the 3 conversations
-    *   Decide whether to raise the isseu
+        * Content: What happened? 
+            * Be as objective as possible
+        * Feeling: What emotions are involved (see SCARF)?
+            * Understand emotion impact for you and them.
+        * Identity: What does this say about me (am I competent, am I a good person, am I worthy of love)?
+            * What is at stake for you about you, and for them about them.
+    *   Decide whether to raise the issue
+        * Is it to make them feel bad? Or to learn something? 
     *   Start from the objective 3rd story
-    *   Explore thier story and yours
+        * I and You have different perspectives, focus on what a third party will see.
+        * Best way to find a common ground.
+    *   Explore their story and yours
+        * Listen to their stories, 
+        * Reframe from blame/accusation to learning how both contributed, and emotions involved.
     *   Problem solve.
+        * Figure out a win/win.
 * Insight and exercise for difficult conversations
+    * Impact was not intention - Clarify her impact on you.
+    * Beyond content and emotion, there is identity issues - Hardest thing to talk about, but should be addressed.
+        * Boss gives critical feedback, threatens my competence as employee. 
+        * Wise boss opens with I'm confident with your work. But this thing went wrong, lets talk about it. 
 * Prepare for difficult conversation
+    * Talk to friend or journal
+    * 3 conversations from your point of you, including identity (competent/good/love worthy).
+    * 3 conversations from their point of you, including identity (competent/good/love worthy).
 * Mindful E-mailing + Practice
-* Magic Mushroom Mantra:
-    * Love them. Understand them. Forgive Them. Grow with them.
+    * In person get lots of emotional queues non-verbally.
+    * Worse, lack of information makes us assume the worst AND believe it to be true.
+    * Remember human on other end, just like me. Will make up missing information.
+* Practice Difficult E-mail.
+    * Deep breath.
+    * Reflect what the other person will read, think about 3 conversations.
+    * Write e-mail.
+    * Don't send, wait some time, and think through what reader will read. Assume already threatened by you.
 
-### 9) The story behind Search Inside Yourself.
+
+* Compassion leads to happiness: 
+    * Happiest state is compassion.
+    * Zen monks sending happiness off the fMRI chart, say compassion is what puts them in happiest state.
+    * Second happiest state is open attention.
+* Not summarized
+
+### 9) The story behind Search Inside Yourself. &#x2611; 
 _Three easy steps to world peace_
+* Start with Me
+* Make meditation a field of science
+* Make meditation like exercise
 
 ### Save the world in your free time.
