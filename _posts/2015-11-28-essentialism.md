@@ -242,11 +242,51 @@ tbd
     * Feel guilt to reneg - but it's worth it.
     * Grandmother mind on this.
 
-### 13) Edit: Invisible Art
-tbd
+### 13) Edit: Invisible Art - Cut Early, Cut Often. &#x2611; 
+* Making better is through subtracting
+* Best picture, usually nominited or wins best editting.
+* Editting is hard to see, since it's been removed. 
+* A great editor provides clarity by removing the non-essential.
+* Removes annoying distractions
+* Eliminate everything distracting (words/images/details)
+* Cut out options
+    * Painful, but in long run joyful, since no wasted energy and bad decision.
+    * To write is human, to edit is divine.
+* Condense
+    * Increase signal to noise, by removing noise.
+        * Meaning to activity ratio.
+    * In Words: 
+        * Are you saying what you want to say? 
+        * Can you say it as clear and concisely as possible.
+    * In Life: 
+        * Are you doing what you want to do? 
+        * Can you do it simpler, and with minimal activity?
+    * Can activities/assets have double duty? (Bike riding with kids) 
+    * Less waste.
+    * Would have written something shorter, but didn't have the time.
+* Correct 
+    * Are we in alignment with our overarching purpose? 
+    * If not correct it.
+    * Need to check regularly. Review scorecard and mission statement.
+* Edit Less
+    * Best surgeon cuts the least, not the most.
+    * Don't step in if don't have to. 
+    * Don't argue laws of physics. 
+    * Talk last, and only if needed
+    * Minimize times of change.
+* Edit continuously - Avoid big bangs
+    * Make more, but smaller correction
+    * Frequent feedback.
+    * Make cut/condense/correct a common part of our lives.
 
-### 14) Limit
-tbd
+### 14) Limit: Set boundaries &#x2611; 
+* If you don't set your boundaries someone will in advance.
+* Make boundaries clear before hand so people don't feel jilted.
+* Don't defend your boundaries and you'll not be able to maintain them.
+* Boundaries are liberating
+    * Anecdote: School on busy road. Kids afraid to play near road. Add fence, now can get close to road.
+* Don't let them put their monkeys on your back. 
+* Tell other your boundaries so they can respect them.
 
 ### 15) Buffer: Because, it'll go wrong &#x2611; 
 * REALITY: You just can't predict, add buffer.
@@ -297,17 +337,35 @@ tbd
    * Scrum and Kanban.
    * Bug Burn down charts.
 
-### 18) Flow: Genius of Routine &#x2610;
+### 18) Flow (Habit): Genius of Routine &#x2611;
+* Design a routine that focuses on essential, and makes execution effortless. 
+* Make the essential the default routine.
 * Making it look easy
-* The power of the right routine
-    *   Overhaul your triggers
-    *   Create new triggers
-    *   Do the most difficult thing first
-    *   Mix up your routines
-    *   Takle your routines one by one.
+    * Routines lets us avoid distraction on fluff.
+    * Routine cuts decision fatigue since decisions/willpower not required.
+    * Repetition makes it autopilot
+    * Autopilot mode gives us back cognitive capacity to work on hard stuff.
+* Routines are usually automatic.
+* A routine is; Trigger -> Routine -> Reward. After a while trigger/reward mingle.
+* Remove negative routines: change response on trigger.
+* New routine, create new triggers
+* Do the most difficult thing first - hard stuff done while we have will power.
+* Mix up your routines - each day different?
+* Tackle your routines one by one - it's hard, use grandmother mind.
 
-### 19) Focus: What's important now? 
-tbd
+### 19) Focus: What's important now? &#x2610; 
+* Now - be present.
+* Lose vs Beaten:
+    * Beaten - external factors outside your control (better competition/external forces) 
+    * Lose - Lost focus, didn't do the best you could given the situation.
+* Tune into what is important now
+* Enjoys the moment
+* There is only now
+* Multitasking vs MultiFocusing - can do two things at once (walk and chew gum), can't focus on two things at once.
+* Figure out what is important now
+* Get the future out of your head
+* Prioritize
+* Pause and Refresh - a breath brings you back to the present instead of monkey mind.
 
 ### 20) Be: Summary  &#x2611; 
 * Always ask what is most essential, cut everything else
