@@ -25,40 +25,83 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
 ### 1) Essence
 tbd
 
-### 2) Choose
+### 2) Choose: Power of choice
 tbd
 
-### 3) Discern
+### 3) Discern: Unimportance of almost everything
 tbd
 
-### 4) Trade off &#x2611; 
+### 4) Trade off: Which problem do I want &#x2611; 
 * Try to avoid reality of trade-offs, but in reality they can't be ignored.
 * Trade offs exist, can't be ignored. 
 * Embrace the trade off, 
 
-### 5) Escape &#x2611; 
+### 5) Escape: Be unavailable &#x2611; 
 * Need to make space to think
 * To have focus, need to escape, to be able TO FOCUS.
 * Space to concentrate
 * Space to read
 
-### 6) Look &#x2610;  
+### 6) Look: See what matters &#x2611;
+* Lead - The essence of the story.
+    * Journalism Concept
+    * Anecdote: Find the lead in high school:
+        * Mr Black, principal of school announced all teachers will go to a conference on new topic, by famed anthropologist, blah blah blah.
+        * THE LEAD IS: NO school on Thursday.
+    * Figure out what matters, don't relay facts.
+    * Start with the 5 W's 
+    * Then find the relationship between them.
+    * What is the  whole from the sum of the parts?
+    * Overwhelmed, Confused, can't find what's important?  __You're missing the LEAD!__
+
+* With so much distraction, need to find the headlines. 
+    * ASK: What is the headline? What is the most critical thing here? 
+    * Lead is usually missed by others.
+    * Find what is not being said.
+    * Focus on what you think is critical, but listen to everything.
 * The big picture
-* Filtering For Fascinating
+    * Stop focusing on the small details and look at the big picture.
+    * Train to look for the lead then ...
+    * See what you and others have missed ...
+    * Connect the dots into trends ...
+    * Focus on what matters instead of reacting to minutia.
 * Keep a journal
+    * Faintest pencil better then strongest memory
+    * Every 90 days review journal entries. 
+    * Look for the headlines in your journal, what matters most.
+    * Daily view, very different from monthly view.
 * Get out into the field
+    * The problem often isn't the first order problem.
+    * Need to immerse yourself in the problem see it in action 
+    * E.g. Customer Development/Self Awareness/Customer Visits/Amazon time on factory.
+    * Story 20K electric incubator, Nepal can't afford:
+        * Goal: 1% of cost
+        * First blush, 200$ electric incubator.
+        * Team went to Nepal, saw home birth no electricity.
+        * Built wax that could be warmed in boiling water and put in sleeping bags.
 * Key your eyes peeled for abnormal or weird
+    * Find the key that has been missed.
+    * See story as a spider web you can jump around to find the key.
+    * See the problem from others perspectives
 * Clarify the question
-    * Easy to answer something else.
-    * Instead, understand the importance and essence of the question, and come back and answer it.
+    * Figure out the right question.
+    * It's easier to avoid it. But find it, and keep focused on it.
+    * Only when you see the question clearly, can you answer it.
 
-### 7) Play
-tbd
-
-### 8) Sleep &#x2611; 
+### 7) Play: Embrace your inner child &#x2611;
+* Play doesn't help us explore essential, it is the essential.
+* Anything we do simply for the joy of doing it, rather then a means to the end (xref: hobbies)
+* A mind invited to play
+    * Nothing fires up the brain like play.
+    * Don't forget to do at work as well as home
+* Play makes us flexible and creative because:
+    * 1) Broadens options
+    * 2) Reduces stress
+    * 3) Positive effect on executive function
+### 8) Sleep: Protect it &#x2611; 
 * Don't sleep, don't think. Don't think, can't choose well.
 
-### 9) Select  - Hell Yes" or "No".&#x2611; 
+### 9) Select: Hell Yes" or "No".&#x2611; 
 * Rule out pretty good, and only settle for "Hell Yes"
 * Ask: Do I absolutely love this (as opposed to, would this be useful one day).
 * The 90% rule
@@ -123,7 +166,7 @@ tbd
     * Apply to all aspects of your life. 
     * It's hard, but worth it.
 
-### 11) DARE: How to say No &#x2611;
+### 11) DARE: Say No gracefully &#x2611;
 * __SAYING NO IS A CRITICAL LEADERSHIP SKILL__ 
 * __Say no firmly, resoloutely, and gracefully__
 * __LIFELONG MEMORY FOR KID:__
@@ -151,32 +194,61 @@ tbd
 * Remind yourself that everyone is selling something
     * When you say yes, you're buying something, make that thing essential.
 
-### 12) Uncommit - cut your losses. &#x2610;
-
+### 12) Uncommit: Cut your losses. &#x2611;
 * __If  wasn't already invested, how much would I invest?__
 * __What else would I do with this time or money if I walked away now__
-* Sunk cost bias
-* Avoid Commitment Trap
-* Beware commitment trap
-* Pretend you don't own it yet
-* Get over the fear of waste
-* Admit failure to begin success
-* Stop trying to force a fit
-* Get an objective second opinion
-* Be aware of the status quo bias
-* Apply zero based budgetting
-* Stop making casual commitments
-* Pause before you speak
-* Get over fear of missing out
-* To fight the fear, run a reverse pilot
+* Sunk Cost bias
+    * Already put so much in, will be a win with just a bit more.
+    * Antidote: Realize waste is OK (especially since it's already happened).
+    * Anecdote: 
+        * Realize waste is OK.  Remember this story.
+        * Buy ticket A for 100$, 2 weeks later ticket B for 50$
+        * Expect concert B will be better
+        * A and B on same day, need to choose which to go to.
+        * Many pick A, because they'd waste less money.
+        * BUT WRONG CHOICE.
+* Endowment affect (divestiture aversion) bias
+    * Over value what you own. 
+    * No one washed a rental car. 
+    * Can't get rid of a book you don't read.
+    * Can't get rid of clothes you don't fit into.
+    * Antidote: Pretend you don't own it yet
+    * __ITEM__: If I didn't own it, how much would I pay?
+    * __OPPORTUNITY__: If I don't have this opportunity, how hard will I work to get it? 
+    * __INVOLVEMENT__: If I wasn't involved, how hard would I work to get involved?
 
-### 13) Edit
+* Need to admit failure to begin success.
+    * Until we admit failure, we'll keep going in the wrong direction.
+* Stop trying to force a fit
+    * Sometimes it's the wrong job/opportunity/product for us. Need to let it go.
+    * Antidote: Get an objective second opinion. 
+        * They can see clearly without sunk cost, or emotional investment.
+        * It'll give you "permission" to let it go.
+* Status quo bias
+    * Do something just because you've always done it.
+    * Antidote: Apply zero based budgetting
+        * Don't re-evaluate from history.
+        * Re-evaluate from history
+        * What would you pay for TODAY, not delta from yesterday.
+        * Hard, but worth it.
+* Stop making casual commitments
+    * Take 5s to ask if this is essential before you commit.
+* Get over fear of missing out
+    * Loss averse, don't want to miss out.
+    * Antidote: Reverse Pilot
+        * Try to stop doing it for a while, and see if anyone notices.
+* Meta: It's hard
+    *  Uncommitting harder then not commiting but worth it.
+    * Feel guilt to reneg - but it's worth it.
+    * Grandmother mind on this.
+
+### 13) Edit: Invisible Art
 tbd
 
 ### 14) Limit
 tbd
 
-### 15) Buffer &#x2611; 
+### 15) Buffer: Because, it'll go wrong &#x2611; 
 * REALITY: You just can't predict, add buffer.
 * Your estimate is wrong, add 50% buffer.
 * IF you don't need your buffer, you'll get free time and feel great.
@@ -188,7 +260,7 @@ tbd
     * What would the financial impacts be
     * How can you invest to reduce risks or strengthen resilliance
 
-### 16) Subtact &#x2611; 
+### 16) Subtract: Can only ship by cutting &#x2611; 
 * Shipping is blocked by constraints/obstacles on the long pole.
 * Produce by removing constraints/obstacles on the long pole, not be doing more work on other things.
 * __You ship by cutting features, not by adding features__
@@ -204,7 +276,7 @@ tbd
         * Too high a quality? Change perspective - done is better then perfect.
         * Blocked on person? Ask them slowest hiker, and what you can do to help.
 * Grandmother mind again - it's hard, but the first step makes a difference.
-### 17) Progress &#x2611; 
+### 17) Progress: Drip, Drip, Drip, Done &#x2611; 
 * __Drip, Drip, Drip, Done.__
 * Progress most motivating because 1) momentum 2) reminds future success.
 * Create small wins, celebrate progress
@@ -225,7 +297,7 @@ tbd
    * Scrum and Kanban.
    * Bug Burn down charts.
 
-### 18) Flow &#x2610;
+### 18) Flow: Genius of Routine &#x2610;
 * Making it look easy
 * The power of the right routine
     *   Overhaul your triggers
@@ -234,10 +306,10 @@ tbd
     *   Mix up your routines
     *   Takle your routines one by one.
 
-### 19) Focus
+### 19) Focus: What's important now? 
 tbd
 
-### 20) Be &#x2611; 
+### 20) Be: Summary  &#x2611; 
 * Always ask what is most essential, cut everything else
 * Choosing and your todo list:
     * Life is about what you decide to put on your todo list, not how efficiently you cross things off.
