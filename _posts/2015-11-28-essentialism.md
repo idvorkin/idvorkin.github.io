@@ -20,6 +20,7 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
 * How do I know when I'm done? 
 * If I didn't own this, would I buy it? 
 * If I didn't have this opportunity what would I do to aquire it? 
+* Less but better
 
 ### 1) Essence
 tbd
@@ -32,8 +33,8 @@ tbd
 
 ### 4) Trade off &#x2611; 
 * Try to avoid reality of trade-offs, but in reality they can't be ignored.
-* Exist, can't be ignored. 
-* Embrace them 
+* Trade offs exist, can't be ignored. 
+* Embrace the trade off, 
 
 ### 5) Escape &#x2611; 
 * Need to make space to think
@@ -57,18 +58,37 @@ tbd
 ### 8) Sleep &#x2611; 
 * Don't sleep, don't think. Don't think, can't choose well.
 
-### 9) Select
-tbd
+### 9) Select  - Hell Yes" or "No".&#x2611; 
+* Rule out pretty good, and only settle for "Hell Yes"
+* Ask: Do I absolutely love this (as opposed to, would this be useful one day).
+* The 90% rule
+    * Find most essential criteria, score 0 to 100, and if it's not over 90, drop it. 
+    * Also, make criteria explicit so anyone can call your bluff, especially in a team.
+    * Decisions are trade-offs, and sometimes you'll lose, but it's worth it.
+* Opportunity Knocks
+    * Easy to get drawn to an OK opportunity thinking it's a great deal. 
+    * But, don't since it takes away your opportunity to do something awesome.
+* Should I take an opportunity meditation?
+    * Write down opportunity
+    * 3 minimum criteria the opportunity MUST pass to be considered.
+    * 3 ideal/extreme criteria for opportunity for opportunity to be approved [Examples?].
+    * 2 of 3 extreme criteria MUST pass
+* Explicit Validated Criteria:
+    * Choosing criteria is hard, get reflection/coaching on it.
+    * Make explicit, provides you clarity, and lets others help you.
+* Finding a new opportunity?
+    * Tighter the criteria, better our brain/mentors can help us.
+    * Vague: What's a good opportunity? 
+    * Specific: What am I passionate about AND uses my talent AND meets a real need in the world?
 
 ### 10) Clarify: How will we know we're done? &#x2611;
-
 * __How will we know we're done?__
 * __Specific enough to know what NOT to do.__
 * Intent __Strategy that is Concrete, Inspiring, Memorable and clarifies what NOT to do!__
 * Pretty Clear -> Really Clear
     * __Pretty clear is ambigious__
     * __Ambiguity:__  stress, confusion, frustration.
-    * __Clarity:__   shared purpose, motiviation, collaboriation.
+    * __Clarity:__   shared purpose, motivation, collaboration.
 * Ambiguity Pattern 1: Playing Politics
     * At work, when no idea what matters, you'll try to look good to the boss.
         * Don't know what matters? Try to show yourself better then peers, since it's arbitrary.
