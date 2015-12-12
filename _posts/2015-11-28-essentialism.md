@@ -22,19 +22,23 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
 * If I didn't have this opportunity what would I do to aquire it? 
 * Less but better
 
-### 1) Essence
-tbd
+### 1) Essence &#x2610; 
+* The way of the essentialist
+* If you don't prioritize yourlife someone else will
+* 3 Differences
+    * I choose to vs I have to
+    * Only a few things matter vs it's all important
+    * I can do anything, but not everything vs I can do both.
+* 1) Explore and Evaluate
+* 2) Eliminate 
+* 3) Execute
 
-### 2) Choose: Power of choice
-tbd
-
-### 3) Discern: Unimportance of almost everything
-tbd
-
+### 2) Choose: You need to choose _&#x2611_
+### 3) Discern: Only a few things matter, the are fluff. &#x2611; 
 ### 4) Trade off: Which problem do I want &#x2611; 
 * Try to avoid reality of trade-offs, but in reality they can't be ignored.
 * Trade offs exist, can't be ignored. 
-* Embrace the trade off, 
+* Embrace the trade off
 
 ### 5) Escape: Be unavailable &#x2611; 
 * Need to make space to think
@@ -353,18 +357,18 @@ tbd
 * Mix up your routines - each day different?
 * Tackle your routines one by one - it's hard, use grandmother mind.
 
-### 19) Focus: What's important now? &#x2610; 
-* Now - be present.
+### 19) Focus: What's important now? Be present. &#x2611; 
+* There is only now - be present.
 * Lose vs Beaten:
     * Beaten - external factors outside your control (better competition/external forces) 
     * Lose - Lost focus, didn't do the best you could given the situation.
-* Tune into what is important now
-* Enjoys the moment
-* There is only now
-* Multitasking vs MultiFocusing - can do two things at once (walk and chew gum), can't focus on two things at once.
 * Figure out what is important now
+    * List 1) What do I need to do know so I can sleep well tonight
+    * When stressed, ask what is important now. 
 * Get the future out of your head
-* Prioritize
+    * List 2) What will I do  someday (get it out of your head so you don't stress or forget it).
+    * Gets open loops out of your head.
+* Prioritize: Work through lists in priority order
 * Pause and Refresh - a breath brings you back to the present instead of monkey mind.
 
 ### 20) Be: Summary  &#x2611; 
@@ -383,5 +387,10 @@ tbd
 
 
 ### A1) Essentialist Leadership Principles
-tbd
-
+* Essentialist teams
+* Leading as an essentialist
+* Ridciously selective
+* Debate until you have a crystal clear intent
+* Go for extreme empowerment
+* Communicate right things, to right people, at right time
+* Check in often to make sure meaningful progress.
