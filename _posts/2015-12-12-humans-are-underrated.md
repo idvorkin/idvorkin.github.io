@@ -12,7 +12,7 @@ tags:
 
 ---
 
-As robots become better then humans at most things, what roles will be left for humans? Thes kills for those roles will be: Empathizing, collaborating, leading,and building relationships.
+As robots become better then humans at most things, what roles will be left for humans? What skills are required for those roles? Empathizing, collaborating, leading,and building relationships.
 
 The top roles for humans will be:
     * Places we want a human to be accountable (judge, lawyer, politician).
