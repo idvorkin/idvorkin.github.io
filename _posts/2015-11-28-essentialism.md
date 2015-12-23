@@ -24,7 +24,7 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
 
 ### 1) Essence &#x2610; 
 * The way of the essentialist
-* If you don't prioritize yourlife someone else will
+* If you don't prioritize your life someone else will
 * 3 Differences
     * I choose to vs I have to
     * Only a few things matter vs it's all important
@@ -33,8 +33,12 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
 * 2) Eliminate 
 * 3) Execute
 
-### 2) Choose: You need to choose _&#x2611_
-### 3) Discern: Only a few things matter, the are fluff. &#x2611; 
+### 2) Choose: You need to choose &#x2610;
+tbd
+
+### 3) Discern: Only a few things matter, the rest are fluff. &#x2610; 
+tbd 
+
 ### 4) Trade off: Which problem do I want &#x2611; 
 * Try to avoid reality of trade-offs, but in reality they can't be ignored.
 * Trade offs exist, can't be ignored. 
@@ -102,10 +106,11 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
     * 1) Broadens options
     * 2) Reduces stress
     * 3) Positive effect on executive function
+
 ### 8) Sleep: Protect it &#x2611; 
 * Don't sleep, don't think. Don't think, can't choose well.
 
-### 9) Select: Hell Yes" or "No".&#x2611; 
+### 9) Select: Hell Yes" or "No". &#x2611; 
 * Rule out pretty good, and only settle for "Hell Yes"
 * Ask: Do I absolutely love this (as opposed to, would this be useful one day).
 * The 90% rule
@@ -320,6 +325,7 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
         * Too high a quality? Change perspective - done is better then perfect.
         * Blocked on person? Ask them slowest hiker, and what you can do to help.
 * Grandmother mind again - it's hard, but the first step makes a difference.
+
 ### 17) Progress: Drip, Drip, Drip, Done &#x2611; 
 * __Drip, Drip, Drip, Done.__
 * Progress most motivating because 1) momentum 2) reminds future success.
