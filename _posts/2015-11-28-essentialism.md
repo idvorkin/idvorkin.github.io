@@ -16,25 +16,31 @@ Essentialism is deciding what goes on your todo list, not how many things you ca
 
 This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
-* Essential Intent is a strategy that is Concrete, Inspiring, Memorable and clarifies what not to do.
-* How do I know when I'm done? 
-* If I didn't own this, would I buy it? 
-* If I didn't have this opportunity what would I do to aquire it? 
+## Essence
+* Essential Intent is a Strategy that is Concrete, Inspiring, Memorable and Clarifies what __not__ to do.
+* Three critical questions:
+    * How do I know when I'm done? 
+    * If I didn't own this, would I buy it? 
+    * If I didn't have this opportunity what would I do to aquire it? 
+* Three key differences between essentialisim and most people.
+    * I choose to __NOT__ I have to
+    * Only a few things matter __NOT__ it's all important
+    * I can do any one thing __NOT__ I can do both.
+* Three steps essentialists take:
+    * Explore and Evaluate
+    * Eliminate 
+    * Execute
+* If you don't choose, someone else will.
 * Less but better
 
-### 1) Essence &#x2610; 
-* The way of the essentialist
-* If you don't prioritize yourlife someone else will
-* 3 Differences
-    * I choose to vs I have to
-    * Only a few things matter vs it's all important
-    * I can do anything, but not everything vs I can do both.
-* 1) Explore and Evaluate
-* 2) Eliminate 
-* 3) Execute
+##  Explore and Evaluate
 
-### 2) Choose: You need to choose _&#x2611_
-### 3) Discern: Only a few things matter, the are fluff. &#x2611; 
+### 2) Choose: You need to choose &#x2610;
+tbd
+
+### 3) Discern: Only a few things matter, the rest are fluff. &#x2610; 
+tbd 
+
 ### 4) Trade off: Which problem do I want &#x2611; 
 * Try to avoid reality of trade-offs, but in reality they can't be ignored.
 * Trade offs exist, can't be ignored. 
@@ -102,10 +108,13 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
     * 1) Broadens options
     * 2) Reduces stress
     * 3) Positive effect on executive function
+
 ### 8) Sleep: Protect it &#x2611; 
 * Don't sleep, don't think. Don't think, can't choose well.
 
-### 9) Select: Hell Yes" or "No".&#x2611; 
+## Eliminate
+
+### 9) Select: Hell Yes" or "No". &#x2611; 
 * Rule out pretty good, and only settle for "Hell Yes"
 * Ask: Do I absolutely love this (as opposed to, would this be useful one day).
 * The 90% rule
@@ -320,6 +329,9 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
         * Too high a quality? Change perspective - done is better then perfect.
         * Blocked on person? Ask them slowest hiker, and what you can do to help.
 * Grandmother mind again - it's hard, but the first step makes a difference.
+
+## Execute
+
 ### 17) Progress: Drip, Drip, Drip, Done &#x2611; 
 * __Drip, Drip, Drip, Done.__
 * Progress most motivating because 1) momentum 2) reminds future success.

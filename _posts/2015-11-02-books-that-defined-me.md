@@ -1,44 +1,43 @@
 --- 
 layout: post
 title: "Books that defined me"
-author: "Igor Dvorkin"
 comments: true
 inprogress: true
+tags: 
+    - How Igor Ticks
+    - book-notes
+collapsable: true
+author: "Igor Dvorkin"
 ---
 
-
-Each of us is defined by the books we read. Here are some that defined me.
+Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.
 
 ### Overall
 
-**Seven Habits of Highly Effective People** - How to [live your life](http://ig2600.blogspot.com/2013/11/soft-skills-your-life-missing-manual.html)'.'
+**[Seven Habits of Highly Effective People (7H)](http://ig2600.blogspot.com/2013/11/soft-skills-your-life-missing-manual.html)** - How to live your life__'.'__
 
-> 1) Be Proactive
+**[Essentialisim](/essentialism)** A life is well lived by picking what goes on your todo list, not by how many things you can check off your todo list.
 
-> 2) Being with the end in mind
+**The checklist manifesto** Why checklists free you to be creative, and models allow you to better explore the world.
 
-> 3) First things first
+**Getting things done** Stress free productivity through getting things out of your head and bottom up planning.
 
-> 4) Seek win, win
+### On emotional health and intelligence
 
-> 5) Seek First To Understand, then to be understood.
+**[Humans are underrated](/humans-are-underrated)** The skills that will be most valuable when robots take over the world.
 
-> 6) Synergize
+**[Seach Inside Yourself (SIY)](/search-inside-yourself)** How to train emotional intelligence through mindfulness
 
-> 7) Sharpen the saw
 
 ### On doing the things you want to do.
 
 **The Big Orange Splot** - Live [your dreams](https://www.youtube.com/watch?v=5cPfjzYJcok). 
 
-> "He's just like Plumbean!" the people said. "He's got bees in his bonnet, bats in his belfry, and knots in his
-noodle!"
+_"He's just like Plumbean!" the people said. "He's got bees in his bonnet, bats in his belfry, and knots in his noodle!"_
 
-> Then, one by one, they went to see Mr. Plumbean, late at night.  They would sit under the palm trees and
-drink lemonade and talk about their dreams.
+_Then, one by one, they went to see Mr. Plumbean, late at night.  They would sit under the palm trees and drink lemonade and talk about their dreams._
 
-> And whenever anybody visited Mr. Plumbean's house, the very
-next day that person would set about changing his own house to fit his dreams. 
+_And whenever anybody visited Mr. Plumbean's house, the very next day that person would set about changing his own house to fit his dreams._
 
 **The Flinch** The resistance is the voice in your head that makes you afraid.  F#$ the resistance!
 
@@ -46,9 +45,15 @@ next day that person would set about changing his own house to fit his dreams.
 
 **V is for Vulnerable**  Life is scary, hard, and totally worth it.
 
+### On strategy
+
+**Essentialism** You must trade-off. You can do one thing. What is most important? If you didn't have this thing would you buy it? If you didn't have this opportunity, what would you give up for it?
+
 ### On being a technologist
     TBD
+
 ### On being an entrepreneur
     TBD
-### On thinking and presenting
-    TBD
+
+### On thinking, storytelling, and  presenting
+**Ed Emberly's Make a world** The hard part of drawing is seeing, and this book lets you "see" how simple many objects are.

@@ -125,28 +125,7 @@ Description: Awesome dude, awesome life
 {% include scripts.html %} 
 
 {% if page.collapsable %}
-<script>
-    // TODO: Move to own file with collapse gaurd 
-    // End collapse by using a 
-    // #hide end collapse
-    // css in collapseHelper 
-    $(document).ready(function(){
-
-
-    // For, HN:  until we get a peer, or explicit end mark.
-    // For LI/OL, if have children, till closed.
-    var openingTags = "h3";
-    var closingTags = openingTags+",h3,h2,#hide-end-collapse"
-
-            
-    $(openingTags).addClass('ui-closed').css('cursor','pointer');
-    $(openingTags).nextUntil(closingTags).slideToggle();
-    $(openingTags).click(function() {
-      $(this).nextUntil(closingTags).slideToggle();
-      $(this).toggleClass('ui-closed ui-open');
-      });
-    });
-</script>
+{% include collapse.html %} 
 {% endif %}
 </body>
 </html>
