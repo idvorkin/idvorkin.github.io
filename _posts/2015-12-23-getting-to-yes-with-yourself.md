@@ -81,7 +81,7 @@ tbd
     * __I will give myself the most trouble today. I stand in the way of my goals.__
     * __Do the practices in this book, to be satisified with yourself__ 
 * A win with others
-    * __Every thing you do to get to yes with yourself, makes it easier to do with others__
+    * __Every thing you do to get to yes with yourself, makes it easier to get to yes with others__
 * A win for the whole
     * When you succeed with yourself, and with others, then the whole world benefits
 * Winning the game of life
