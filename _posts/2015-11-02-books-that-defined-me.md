@@ -5,24 +5,26 @@ comments: true
 inprogress: true
 tags: 
     - How Igor Ticks
-    - book-summary
+    - book-notes
 collapsable: true
 author: "Igor Dvorkin"
 ---
 
-Books allow great thoughts to enter our mind and mold us into who we want to become. These are books that have molded me.
+Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.
 
 ### Overall
 
-**Seven Habits of Highly Effective People (7H)** - How to [live your life](http://ig2600.blogspot.com/2013/11/soft-skills-your-life-missing-manual.html)'.'
+**[Seven Habits of Highly Effective People (7H)](http://ig2600.blogspot.com/2013/11/soft-skills-your-life-missing-manual.html)** - How to live your life__'.'__
 
-**[Essentialisim](/essentialisim)** A life is well lived by picking what goes on your todo list, not by how many things you can check off your todo list.
+**[Essentialisim](/essentialism)** A life is well lived by picking what goes on your todo list, not by how many things you can check off your todo list.
 
 **The checklist manifesto** Why checklists free you to be creative, and models allow you to better explore the world.
 
 **Getting things done** Stress free productivity through getting things out of your head and bottom up planning.
 
 ### On emotional health and intelligence
+
+**[Humans are underrated](/humans-are-underrated)** The skills that will be most valuable when robots take over the world.
 
 **[Seach Inside Yourself (SIY)](/search-inside-yourself)** How to train emotional intelligence through mindfulness
 
