@@ -98,10 +98,17 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
 * From unfriendly to friendly.
 
 ### 4) Stay in the zone &#x2610; 
-tbd
+* Learn to let go
+* Accept the past
+* Trust the future
+* Embrace the present
+* From resistance to acceptance
 
 ### 5) Respect them even if &#x2610; 
-tbd
+* Put yourself in thier shoes
+* Expand your circle of respect
+* Respect them even if they reject you
+* From exclusion to inclusion
 
 ### 6) Give and Recieve &#x2610; 
 * Give for mutual gain
