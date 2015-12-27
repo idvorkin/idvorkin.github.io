@@ -52,14 +52,50 @@ This is a summary of [Getting to yes with yourself](http://www.amazon.com/gp/pro
     * Before fighting with others, need to make sure you TRUELY know what you want.
     * Accepting yourself for who you are is NOT a cop out. Acceptance produces safety, which lets us digg deater. 
 
-### 2) Develop your inner BATNA &#x2610; 
-    * Own your life
-    * Own your relations
-    * Own your needs
-    * From blame to responsibility
+### 2) Develop your inner BATNA &#x2611; 
+_The ideas in this chapter are great, but I think connecting the concepts to inner BATNA is ackward. Thus my summary doesn't track well with the books_
+
+* A cross between 7H: Be Proactive, AND take responsibility for meeting your own needs.
+* When you COMMIT to unconditionally take care of your needs, you have all the power.
+    * SWITCH: Your elephant can rest assured it will be fed and cared for regardless of what's going on externally.
+    * This gives you much more psychic space in your relationships, making them better relationships.
+    * SIY: Grandmother mind - you are your own best grandma.
+* Responsibility holds Power VS blame gives it away.
+* Take responsibility for what you've got, and make the most of it - DO NOT BLAME Life ([welcome to Holland](/welcome-to-holland)).
+* Focus on what you can do to make things better, NOT the fact that you screwed something up in the past.
+* In a relationship, focus on what YOU CAN DO going forward in the relationship, not on blaming the other person. Doing this:
+    * Gives clarity to your needs in the relationships.
+    * Gives "psychic space" for other party in relationship
+    * Lets you be objectives about your needs, and your expectations from other party.
+
+* Own your life
+    * Need self-understanding and self-responsibility
+        * Just self-understanding => self-pity
+        * Just self-responsibility => self-blame.
+    * Self blame => Past looking, I WAS a failure.
+    * Self responsibility => Forward looking what CAN I do to make this successful?
+    * (really it's the next section, where 'self/life' is the relationship) 
+* Own your relations
+    * When you point a finger at someone, 3 fingers point back at you. 
+    * All relationships are two ways streets, if there's a problem, you own a CHUNK.
+    * Leave the blame territory, and enter the how do we improve this in the future territory.
+    * Know what you bring to the relationship, and what is negotiable and non-negotiable from the other party 
+    * Great Anecdote on divorce requirements.
+* Own your needs
+    * BATNA, how you satisfy your needs in case you can't get a WIN/WIN?
+    * Inner BATNA - know YOU WILL ALWAYS meet your needs, so don't have to worry.
+    * Gives you confidence that you don't need to be desperate.
+* From blame to responsibility
+    * Touching story about author's dying daughter Gabi, and how hard it was to deal with doctors.
+    * Two top changes:
+        * Needed to stop expecting things from doctor's they could provide for themselves, and let dr's bring only what they needed to bring, their expertise.
+        * Needed to stop blaming life for a bum deal, and instead take responsibility for making the most out of what they had.
 
 ### 3) Reframe your picture &#x2610; 
-tbd
+* Remember your connection to life
+* Make your own happiness
+* Appreciate life's lessons
+* From unfriendly to friendly.
 
 ### 4) Stay in the zone &#x2610; 
 tbd
@@ -86,3 +122,4 @@ tbd
     * When you succeed with yourself, and with others, then the whole world benefits
 * Winning the game of life
     * It's about creating inner satisfaction, which makes your life and relationships better. It's hard but worth it.
+
