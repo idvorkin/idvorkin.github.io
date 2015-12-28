@@ -4,6 +4,7 @@ title: "Igor's Eulogy"
 author: "Igor Dvorkin"
 inprogress: true
 collapsable: true
+featured: true
 comments: true
 tags:
     - How Igor Ticks
