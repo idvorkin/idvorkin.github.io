@@ -41,7 +41,7 @@ Igor loved living in the city so he could walk Zach and Amelia to their school a
 Igor was especially fond of his folding bicycle which let him look goofy, be incredibly practical, and carry around the things he loved.  Nothing made Igor happier then having the kids on the folding bike.
 
 * To File
-    * [Produced Song: Two wheels full of grace] (http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)
+    * [Produced Song: Two wheels full of grace](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)
     * Igor had a tendency not to lock his bikes, and till he was 37 all of his bikes were stolen.
     * Carried to 1970's bikes everywhere he went on 2 internships (biking 
     * Biking to work 30 miles @ 6am 
@@ -125,19 +125,8 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 ### As a husband
 * To File
 * Archived links
-    * First date
-        * Redheads on line
-        * Mouse
-        * Stepping in cat food
-        * First kiss, stepping in cat food, sebastion clawing my eyes out.
-    * Marriage:
-        * Yes, I'll marry you video.
-        * The actual wedding process, 10 years later.
-    * Demonstration of Love - Which tori never enjoyed.
-        * Poem
-        * Hefer International.
-        * Rice
-
+    * [When Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor)
+    * [The Marriage Journey](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor)
 * To live
 
 
@@ -187,8 +176,8 @@ tbd
 
 ### Notes.
 * Super charged by being weird.
-* [Poetry] (http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html?q=poem)
-* [Poetry Slam] (http://ig66.blogspot.com/2013/03/poetry-slam-1-last-place.html?q=poem)
+* [Smiling at you](http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html)
+* [Poetry Slam](http://ig66.blogspot.com/2013/03/poetry-slam-1-last-place.html)
 ### Template
 
 * To File
