@@ -7,13 +7,14 @@ collapsable: true
 comments: true
 tags:
     - How Igor Ticks
+    - strategy
 ---
 
 Wearing a silly hat, his trusty folding bike at his side, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" penning this eulogy at 5am.   Igor wanted this life, so wrote it, reviewed it, lived it, rinsed and repeated, with his family, friends, and multitude of mentors. 
 
 _Currenty this post is optimized to guide me in living my life. As I'm closer to death, it's puprose will transform into enteraining others at my funeral, via more 'show don't tell'._ 
 
-_For many of my roles I'm still figuring out who I want to be, and how I achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones, as they are well easy :)_ 
+_For many of my roles I'm still figuring out who I want to be, and how I achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_ 
 
 ### As an entertainer
 
@@ -25,6 +26,7 @@ Juggling Fire, making cards change colors in front of people's eyes, or passing 
     * Silly hats/clothes
     * Constantly had props with him and practicing.
 * Archived links
+    * [Juggling Fire](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
 * To live
     * Juggle passing with fire
     * tory telling voices
@@ -39,6 +41,7 @@ Igor loved living in the city so he could walk Zach and Amelia to their school a
 Igor was especially fond of his folding bicycle which let him look goofy, be incredibly practical, and carry around the things he loved.  Nothing made Igor happier then having the kids on the folding bike.
 
 * To File
+    * [Produced Song: Two wheels full of grace] (http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)
     * Igor had a tendency not to lock his bikes, and till he was 37 all of his bikes were stolen.
     * Carried to 1970's bikes everywhere he went on 2 internships (biking 
     * Biking to work 30 miles @ 6am 
@@ -49,14 +52,53 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 * To live
     * Bike touring with Family.
 
+## Totally In progress 
 
-### As a friend
-tbd
+### As a Friend, Mentee, and Mentor
+* To File
+    * Treasured Friendships
+    * In person and over skype
+    * Mentee, Mentor
+* Archived links
+* To live
+    * An awesome listener
+    * Psychic - understood, but didn't need to speak.
+    * Could ask the "right question"
+    * Socratic Method
+    * Cultivated and nurtured 
+        * Scheduled
+        * Topics
+        * Mentors by role
+        * Activity
+    * Deep conversations, no fluff, by being vulnerable and open
+    * Always welcome, since showed grandmother mind, gave the gift of attention, and psychic space.
+    * Built mentor network
+        * Helped him flesh out the eulogy
+        * All walks of life
+        * Saw value in each of them
+    * Dropped in on the neighbors for fun - just hung out for coffee/bear
+    * Everyone had a story, and Igor wanted to hear, and understand them.
 
-### As a dad
-tbd
 
-## In progress 
+### As a father of a wonderful boy, and incredible girl.
+* To File
+    * Seeing Kids Play Together
+    * Teaching 7h/eq values to kids 
+    * School events
+    * Public transit together
+    * teaching kids to be active
+    * Document thier adventures to savor later, and educate them
+    * Teaching them to program
+    * Seeing "raw humanity"
+    * Being cool for other kids
+* Archived links
+    * Birth stories
+    * When I'm dead poem.
+
+* To live
+    * Being with kids recharged him
+    * Being with kids inspired him
+
 
 ### As an enjoyer of the great outdoors.
 * To File
@@ -80,11 +122,26 @@ tbd
     * Appalachian  Trail
     * The El Camino de Santiago 
 
-
-## To be stared
-
 ### As a husband
-tbd
+* To File
+* Archived links
+    * First date
+        * Redheads on line
+        * Mouse
+        * Stepping in cat food
+        * First kiss, stepping in cat food, sebastion clawing my eyes out.
+    * Marriage:
+        * Yes, I'll marry you video.
+        * The actual wedding process, 10 years later.
+    * Demonstration of Love - Which tori never enjoyed.
+        * Poem
+        * Hefer International.
+        * Rice
+
+* To live
+
+
+## To be started
 
 ### Disciplined, Deliberate, Daily
 tbd
@@ -107,12 +164,36 @@ tbd
 ### As someone who made others happy through pleasure, flow and purpose.
 tbd
 
+### As a coder
+tbd
 
-### Assorted Foibles
+### How he treated homeless and strangers in passing
+tbd
 
-## Notes.
+## Igor's helper section
 
+### Writing Prompts
+* For each - split by common vs unique w/others:
+* How do I know when done this section
+* What am I most proud of 
+* What stuff gives me the most pleasure
+* What activities give me the most pleasure
+* Changing I've incurred as I went through life
+* Big Ideas To Digest
+    * Grand mother mind
+    * Non-judgemental
+    * Growth Mindset
+    * Realize everyone is trying as hard as they can.
+
+### Notes.
 * Super charged by being weird.
+* [Poetry] (http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html?q=poem)
+* [Poetry Slam] (http://ig66.blogspot.com/2013/03/poetry-slam-1-last-place.html?q=poem)
+### Template
+
+* To File
+* Archived links
+* To live
 
 
 
