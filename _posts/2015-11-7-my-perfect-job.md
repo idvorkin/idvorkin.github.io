@@ -4,6 +4,8 @@ title: "My dream job"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
+tags:
+    - How Igor Ticks
 ---
 
 Knowing what I care about is essential for me to make the best choices for my career.
