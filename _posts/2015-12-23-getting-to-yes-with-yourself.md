@@ -92,6 +92,8 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
         * Needed to stop blaming life for a bum deal, and instead take responsibility for making the most out of what they had.
 
 ### 3) Reframe your picture &#x2610; 
+__Abundance not Scarcity: A rising tide raises all boats__
+__Expecations are a self fulling prophecy. Believe the world good or bad, and that's how you'll interpret it, and that's how it will become__
 * Remember your connection to life
 * Make your own happiness
 * Appreciate life's lessons
