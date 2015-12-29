@@ -11,15 +11,15 @@ tags:
     - strategy
 ---
 
-Wearing a silly hat, his trusty folding bike at his side, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" penning this eulogy at 5am.   Igor wanted this life, so wrote it, reviewed it, lived it, rinsed and repeated, with his family, friends, and multitude of mentors. 
+Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am.   Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 
-_Currenty this post is optimized to guide me in living my life. As I'm closer to death, it's puprose will transform into enteraining others at my funeral, via more 'show don't tell'._ 
+_Currenty the purpose of my eulogy is to guide me in living my life. As I'm closer to death, the purpose of this eulogy will transform into enteraining others at my funeral_ 
 
-_For many of my roles I'm still figuring out who I want to be, and how I achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_ 
+_For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_ 
 
 ### As an entertainer
 
-Juggling Fire, making cards change colors in front of people's eyes, or passing coins through people's hands -- Igor lived to see strangers eye's go wide with wonder.  Igor especially loved it when people couldn't stop themselves from being draw in, or when he could turn around someone's day - a kid having a meltdown, a grown up looking miserable.
+Juggling fire, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment.  Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their misery replaced with a smile.
 
 * To File
     * Handing out bells 
@@ -32,10 +32,14 @@ Juggling Fire, making cards change colors in front of people's eyes, or passing 
     * Juggle passing with fire
     * tory telling voices
     * Smile Box Art Installation
+    * Putting on a show
+    * Being a master of ceremonies
+    * Going to random juggling/side show/magic convention.
+    * Volunteering for sick kids.
 
-### As a biker, bus rider, and general alternate transportation nut.
+### As an alternate transportation advocate.
 
-Igor took a strange pleasure in not driving. Riding his folding bike, or making a long day of public transit quality time with Zach and Amelia. Igor would take the kids on the bus, to the train, to the airport, to ride the airport elevators, just to reverse the process and head home so he could enjoy his kids, and the bus, without spending a dime.
+Igor took a strange pleasure in not driving. Riding his folding bike, or making a long day of public transit with Zach and Amelia. Igor would take the kids on the bus, to the train, to the airport, to ride the airport elevators, just to reverse the process and head home so he could enjoy his kids, and the bus, without spending a dime.
 
 Igor loved living in the city so he could walk Zach and Amelia to their school and local library. Igor also loved the subway station 10 minutes from his home, which when combined with his folding bicycle let him get anywhere in the city car free.
 
@@ -53,7 +57,7 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 * To live
     * Bike touring with Family.
 
-## Totally In progress 
+## Roles that are still in point form.
 
 ### As a Friend, Mentee, and Mentor
 * To File
@@ -130,8 +134,7 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
     * [The Marriage Journey](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor)
 * To live
 
-
-## To be started
+## Roles I haven't started writing yet
 
 ### Disciplined, Deliberate, Daily
 tbd
@@ -148,17 +151,12 @@ tbd
 ### As a worker
 tbd
 
-### As an entertainer
-tbd
-
 ### As someone who made others happy through pleasure, flow and purpose.
+* How he treated homeless and strangers in passing
+
+### As a coder/technologist
 tbd
 
-### As a coder
-tbd
-
-### How he treated homeless and strangers in passing
-tbd
 
 ## Igor's helper section
 
@@ -174,6 +172,9 @@ tbd
     * Non-judgemental
     * Growth Mindset
     * Realize everyone is trying as hard as they can.
+
+### Unfiled ideas:
+tbd
 
 ### Notes.
 * Super charged by being weird.
