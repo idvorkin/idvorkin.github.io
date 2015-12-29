@@ -18,13 +18,9 @@ Strategy is creating fit among a company's activities. The success of a strategy
 _Operational Effectivness (Going Faster) Is Not Strategy_
 
 * If there is one carrot farmer at themarket, the farmer can charge whatever the buyer is willing to pay. BUT - if there are two carrot farmers, the farmers compete with each other to the get the buyers money.
-
 * The QUESTION is how can the farmers compete? 
-
 * Being as efficient as possible, Operational Effectivness, is important. For short periods of time, one carrot farmer can get more profit then the other carrot farmer, by being more efficient.  But the other carrot farmer will soon be able to emulate the tactics of the first farmer, and before you know it the competitive advantage will disappear. __Operational efficiency is not a sustailable competive strategy.__
-
 * Strategy positioning is defining how your company is different.  By providing a different value, or providing the same value using different activities.  For example, instead of selling carrots, the farmer can sell carrot jam.  __Strategic positining, is the only way to get a competive advantage__.
-
 
 ### II. What is a strategy?
 _Strategy rests on unique activities_
