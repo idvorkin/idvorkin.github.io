@@ -9,7 +9,7 @@ tags:
 author: "Igor Dvorkin"
 ---
 
-Fit in my head, isn't fit in reality.  In the last few years I've learned this lesson for physical health, and now I’m learning it for emotional health.
+Fit in my head, isn't fit in reality.  In the last few years I've learned this lesson for physical health, and now I'm learning it for emotional health.
 
 In physical health, I used to be 230 pounds and refused to diet.   in "my head" I thought I was healthy because I could run a fast 5 miles. BUT in reality, even though I had the building blocks of good physical health, I was physically unhealthy.  Later,  I realized dieting was critical to my physical health.  It took a while,  but I learned to diet sustainably, and now I'm 160 lbs.    I still run the same 5 miles, BUT now I diet as well, so now i not only look healthy, but am healthy.
 
