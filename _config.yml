@@ -3,6 +3,7 @@
 title:            "Imagination Executed Brilliantly"
 description:      "Ramble. Rinse. Repeat."
 logo:             logo.png
+logo-url:   /
 disqus_shortname: idvorkinblog
 share:            true
 dropcap:			true
