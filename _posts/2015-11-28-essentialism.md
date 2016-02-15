@@ -405,5 +405,5 @@ tbd
 * Debate until you have a crystal clear intent
 * Go for extreme empowerment
 * Communicate right things, to right people, at right time
-* Check in often to make sure meaningful progress.
+* Check often to make sure meaningful progress.
 
