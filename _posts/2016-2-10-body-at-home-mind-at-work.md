@@ -5,7 +5,7 @@ comments: true
 inprogress: true
 tags: 
     - How Igor Ticks
-    - book-notes
+    - Emotional intelligence
 comments: true
 inprogress: true
 ---

@@ -4,7 +4,7 @@ title: "Random uncategorized Notes"
 comments: true
 inprogress: true
 tags: 
-    - how igor ticks
+    - How Igor Ticks
 author: "Igor Dvorkin"
 ---
 
@@ -22,7 +22,6 @@ Magic: Great example of Seth Godin principles
            * Signed card ambitious card
            * In hands card routine.
       * Q: How do I build MORE connection to audience.
-
 
 
 Class Act:
@@ -55,7 +54,3 @@ Igor's Key Activites:
 
 Quotes:
     * Half the pressure, twice the speed - do it without stress/pressure, but do it quickly. 
-
-
-
-

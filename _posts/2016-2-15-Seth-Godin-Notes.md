@@ -1,7 +1,8 @@
 --- 
 layout: post
-title: "Seth Godin- Tribes/Trust/Connection/Choose yourself"
+title: "Seth Godin- Ideas"
 comments: true
+collapsable: true
 inprogress: true
 tags: 
     - book notes
@@ -9,13 +10,12 @@ tags:
 author: "Igor Dvorkin"
 ---
 
-I'm a big fan of Seth Godin, this is a summary of his ideas from various sources: 
-    * [Live at Carnagie Hall](https://vimeo.com/155069902) 
+Seth godin has many ideas that are critical in the new world. Ideas include: Choosing yourself, Tribes, The limited value of cogs, connection, and the dip.
 
-Tribes
+Sources: 
+    [Live at Carnagie Hall](https://vimeo.com/155069902) 
 
-
-Choose yourself:
+### Choose yourself:
     
     * Old world: 
             * huge barriers to distribution (shelf space, book publishers)
@@ -27,7 +27,7 @@ Choose yourself:
     * If you can be chosen by legacy distribution channel - GREAT. 
     * Alternate, do your thing, and your tribe will find you. 
 
-Your Value: Execution (Cog) vs Tribe Building:
+### Your Value: Execution (Cog) vs Tribe Building:
 
     * Industry/Corporations designed to survive loss of a cog.  Choose folks who are best cogs.
     * Cogs by definition are replacable. 
@@ -40,7 +40,7 @@ Your Value: Execution (Cog) vs Tribe Building:
     * Tribe Leader - Strategy: Do what only you can do, really reduces competition for possible tribe leader.
 
 
-Your tribe:
+### Your tribe:
 
     * Who is your tribe? 
     * Chooses you because you earn thier trust, and are worthy of thier attention. 
@@ -55,7 +55,7 @@ Your tribe:
     * Once you've found your tribe, give them art they'll tell thier friends/family about.
     * Wants personal attention - wants to feel special.
 
-Connection:
+### Connection:
 
     * People prefer selfies to signed books
     * Make experiances people want to tell thier friends/families about. 
@@ -64,14 +64,14 @@ Connection:
     * Perfection blocks connection, as not accessible. Rough feels good, and accessible.
     * Enjoyment of amateur vs pro - there is tension that can be failure. 
 
-Tourists vs Tribe:
+### Tourists vs Tribe:
 
     * Funnel - Tourists at top, tribe at bottom.
     * Reduce enrollment cost for tourists - low cost, bite size nuggets.
     * Increase value for tribe - longer/more expensive. 
     * Enrollment: Need to invest into enrollment - funnel optimization Tourist -> Tribe Member
 
-Anchoring/Postioning: 
+        ### Anchoring/Postioning: 
 
     * Careful how you ask for feedback/position yoruself.
     * Give me feedback on my ppt -> feedback on ppt.
@@ -80,15 +80,23 @@ Anchoring/Postioning:
     * DON'T START WITH SOLUTION, START WITH PROBLEM.
     * PROVIDE CONTEXT, problem statement.
 
+### Expectations:
 
-The DIP:
+    * Questions:
+        * What industry expections are blocking your art? 
+        * What expectations does your tribe have of you? 
+    * What makes your tribe your tribe vs What protects the industry.
+        * Your tribe: expect you to swear
+        * Industry: Taxi's should be regulated, full time, and a monopoly.
+        * If industry expectation is a problem shatter it.
+
+### The DIP:
 
     * TBD: Book report
     * Questions:
         * Should I quit, or lean in?
         * Am I in a Dip vs Cul DeSac?
         * What do I need to get through the DIP? 
-
     * Dips vs cull desac. 
         * DIP prevents others from doing your thing.
         * Cul de'sac is a dead end. 
@@ -98,26 +106,9 @@ The DIP:
     * Quitting:
          * You only get 1000 units of energy in your life. 
          * You'll need 600 units to break through a dip, quit things that aren't moving you forward.
-
-
-
-            
     * Quit before the DIP, but not in the DIP, too expensive
     * Need to quit lots of things, 
     * To get through the DIP, need to lean in.
-
-
-
-Expectations:
-    
-
-
-
-            
-
-Mental Health
-    * Anxiety - practice worrying
-
 
 
 
