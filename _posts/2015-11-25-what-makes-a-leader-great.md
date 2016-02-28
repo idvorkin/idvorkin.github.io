@@ -16,10 +16,10 @@ This is a summary of Dan Goleman's [What makes a leader](https://hbr.org/2004/01
 __Quadrant Model__:
 
      |    ---        | Awareness   |    Motivation        |
-     | ---------------------------------------------------|
+     | ------------- |------------ | -------------------- |
      | Self          |             |                      |
-     | ---------------------------------------------------|
-     | Other/Group   |             |					  |
+     | ------------- |------------ | -------------------- |
+     | Other/Group   |             |                      |
 
 __Self-awareness:__	Knowing one’s emotions, strengths, weaknesses, drives, values, and goals—and their impact on others
 
