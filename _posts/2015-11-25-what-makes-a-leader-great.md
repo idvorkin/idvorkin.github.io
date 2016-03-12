@@ -21,7 +21,7 @@ __Quadrant Model__:
 |---
 | Other/Group   |             |                      |
 
-__Self-awareness:__	Knowing one’s emotions, strengths, weaknesses, drives, values, and goals—and their impact on others
+__Self-awareness:__ Knowing one's emotions, strengths, weaknesses, drives, values, and goals—and their impact on others
 
 * Realistic self-assessment
 * Self-confidence

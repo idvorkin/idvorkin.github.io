@@ -90,3 +90,12 @@ place to store them.
         * I offer/not needed/Appreciate - Someone feels loved, I feel great - WIN!
         * I offer/not needed/grumpy - Someone feels angry, I feel sad - LOSS! (how often?)
 
+## Journalling Prompt:
+
+__Make this it's own blogpost__
+
+    * What do I want for Zach? 
+    * Empathy Exercise
+    * Understanding Exercise? 
+    * Someone has been kind to me exercise. 
+    * Someone has been positive 
