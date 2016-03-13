@@ -3,6 +3,7 @@ layout: post
 title: "Sleight Of Mouth"
 comments: true
 inprogress: true
+collapsable: true
 tags: 
     - book-notes
     - emotional intelligence
@@ -139,13 +140,52 @@ Models of the world - Seek first to understand. Three perspectives
 
 ### 3: Chunking
 
+Changing the specificity of a thought, 
+
+* Down -> More Specific
+* Up -> More abstract
+* Lateral -> Analogy
+
 #### Chunking Down
+
+I'm Ugly;
+* I -> Nostral, arm, legs?
+* Ugly -> to mom? to self? to indian women?
+
+Learning Disabled? 
+Learning -> Inputting, Storing, Repredocing
+
+Failure -> Goal Setting, Planning, Execution
+
+
 #### Chunking Up
+* By going up, we see if it's as bad and, if we can find something better to chunk down to.
 #### Chunking Laterally
+
+* By finding an analogy, we compare to the new analogy, to better understand the current statement.
 #### Finding Iso Morphisims
-#### Puncuation and Reprucusion
+* 3 folks A,B,C
+* A tells B, C a problem where they want help
+* B and C try to find the critical elements
+* B and C come up with a metaphor for the critical element and B tells A.
+    * Sample metaphors: Fantasy, Sports, War, Folks Tales, star trek.
+#### Puncuation and Repruncutation
+* Framing is the puctuation of objective reality into our subjective reality.
+* See great examples from book that,that,is  - with comma's periods and question marks
 
 ### 4: Values and Criteria
+
+Structure of meaning
+Values and motivation
+Criteria and Judgement
+Chaining value and Criteria by
+Criteria Equivelance
+Chunking Down to Define
+Reality Strategies
+Reality Startegy Exercise
+Chunk up to identify and utilize
+Heirarchy of value and criteria
+Heirarchy of criteria technique
 ### 5: Belief and Expectations
 ### 6: Basic Structure of Beliefs
 ### 7: Internal States and Natural Belief change
