@@ -34,9 +34,9 @@ People ask me __why__ this meeting works, here's my current theory:
     * We release the tension in other ways - Telling dismissive jokes, fidgeting, thinking.
     * Distract: Watch TV, Eat Junk food
     * We mute: Booze, Drugs, 
-* Feelings meeting is different:
+* Feelings meetings are different:
     * We are encouraged to express emotions
     * Those around us are expressing emotions, which stirs ours.
-    * Force tension, try to block tension release.
+    * Tension is forced, through deliberate activities, and blocking normal tension relief valves.
     * As tension goes up, the more you need to express your emotions.
 
