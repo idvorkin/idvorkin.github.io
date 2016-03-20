@@ -61,8 +61,7 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 ## Roles that are still in point form.
 
 ### As a Friend, Mentee, and Mentor
-* Human/Feelings Meetings - a forum to have your emotions heard.
-
+* [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum to have your emotions heard.
 
 * To File
     * Treasured Friendships
