@@ -175,17 +175,25 @@ Failure -> Goal Setting, Planning, Execution
 
 ### 4: Values and Criteria
 
-Structure of meaning
-Values and motivation
-Criteria and Judgement
-Chaining value and Criteria by
-Criteria Equivelance
-Chunking Down to Define
-Reality Strategies
-Reality Startegy Exercise
-Chunk up to identify and utilize
-Heirarchy of value and criteria
-Heirarchy of criteria technique
+#### Structure of meaning
+Story of castle under seige, in defiance, the folks in the castle starving catupult all thier food out. People seiging, already demoralized since out of supplies interpertt food as a taunt that they can last forever and go home.
+
+#### Values and motivation
+
+Values - the reasons you get out of bed. Filter over which you see objective reality. People who value fun, ask how much fun is in something. Also, goals usually indicate values. Goal is build product, probably value creating new things.
+
+#### Criteria and Judgement
+Value -> what we desire and want
+Criteria -> standard/evidence we use to make decisions.
+#### Chaining value and Criteria by
+#### Criteria Equivelance
+#### Chunking Down to Define
+#### Reality Strategies
+#### Reality Startegy Exercise
+#### Chunk up to identify and utilize
+#### Heirarchy of value and criteria
+#### Heirarchy of criteria technique
+
 ### 5: Belief and Expectations
 ### 6: Basic Structure of Beliefs
 ### 7: Internal States and Natural Belief change

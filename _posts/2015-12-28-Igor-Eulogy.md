@@ -8,18 +8,18 @@ featured: true
 comments: true
 tags:
     - How Igor Ticks
-    - strategy
+    - Emotional Intellignce
 ---
 
 Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am.   Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 
-_Currenty the purpose of my eulogy is to guide me in living my life. As I'm closer to death, the purpose of this eulogy will transform into enteraining others at my funeral_ 
+_Currenty the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into enteraining others at my funeral_ 
 
 _For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_ 
 
 ### As an entertainer
 
-Juggling fire, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment.  Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their misery replaced with a smile.
+Juggling fire, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment.  Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their negative experience replaced with wonder.
 
 * To File
     * Handing out bells 
@@ -28,9 +28,10 @@ Juggling fire, making cards change colors at a spectators command, or passing co
     * Constantly had props with him and practicing.
 * Archived links
     * [Juggling Fire](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
+    * The pass
 * To live
     * Juggle passing with fire
-    * tory telling voices
+    * Story telling voices
     * Smile Box Art Installation
     * Putting on a show
     * Being a master of ceremonies
@@ -60,6 +61,9 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 ## Roles that are still in point form.
 
 ### As a Friend, Mentee, and Mentor
+* Human/Feelings Meetings - a forum to have your emotions heard.
+
+
 * To File
     * Treasured Friendships
     * In person and over skype
