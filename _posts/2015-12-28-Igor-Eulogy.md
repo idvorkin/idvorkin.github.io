@@ -68,12 +68,18 @@ It took Igor almost 40 years to get his weight under control sustainably. At his
 Igor was incredibly grateful to his friend Ammon for teaching him about the weight pledge, and for being a weight pledge partner for over 30 years.
 
 * To File:
-    * Biking to work 30 miles @ 6am 
-
-* Archived links
+    * How hard it was to stay warm.
+    * Go to gym, even if it meant just going to the sauna
     * Toe Shoes
     * Squash/Fencing
+    * Biking to work 30 miles @ 6am 
+    * Going to the gym and just going to the sauna if that's all had energy for
+
+* Archived links
 * To live
+    * Swimming
+    * Exercising with Tori and The Kids.
+    * Teaching Zach the importance of physical fitness.
     * 140 lbs sustainable.
     * Ad hoc Pushups and pullups 
     * Flexibility 
