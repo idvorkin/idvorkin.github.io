@@ -164,9 +164,6 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 ### Disciplined, Deliberate, Daily
 tbd
 
-### As someone with physical health 
-tbd
-
 ### As someone with emotional health
 tbd
 
