@@ -58,6 +58,35 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 * To live
     * Bike touring with Family.
 
+
+### As a physical healthy human
+
+Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffiene to make sure his body forced him to get the sleep he needed. 
+
+It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, Igor weighted 230 lbs, and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
+
+Igor was incredibly grateful to his friend Ammon for teaching him about the weight pledge, and for being a weight pledge partner for over 30 years.
+
+* To File:
+    * How hard it was to stay warm.
+    * Go to gym, even if it meant just going to the sauna
+    * Toe Shoes
+    * Squash/Fencing
+    * Biking to work 30 miles @ 6am 
+    * Going to the gym and just going to the sauna if that's all had energy for
+
+* Archived links
+* To live
+    * Swimming
+    * Exercising with Tori and The Kids.
+    * Teaching Zach the importance of physical fitness.
+    * 140 lbs sustainable.
+    * Ad hoc Pushups and pullups 
+    * Flexibility 
+    * Massages
+    * Yoga
+
+
 ## Roles that are still in point form.
 
 ### As a Friend, Mentee, and Mentor
@@ -139,9 +168,6 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 ## Roles I haven't started writing yet
 
 ### Disciplined, Deliberate, Daily
-tbd
-
-### As someone with physical health 
 tbd
 
 ### As someone with emotional health
