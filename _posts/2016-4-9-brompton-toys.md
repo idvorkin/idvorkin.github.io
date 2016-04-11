@@ -27,6 +27,3 @@ I *LOVE* my Brompton, and have spent much time researching accessories for it. H
 _If you have other acessories I should add to the list, leave a comment._
 
 Good Riding!
-
-
-
