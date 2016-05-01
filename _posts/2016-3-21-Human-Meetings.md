@@ -5,7 +5,7 @@ author: "Igor Dvorkin"
 inprogress: true
 comments: true
 tags:
-    - Emotional intelligence
+    - emotional intelligence
 ---
 
 Having our emotions heard is a fundamental human need. The modern world denies this, but this doesn't make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions.  Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.
@@ -40,3 +40,4 @@ People ask me __why__ this meeting works, here's my current theory:
     * Tension is forced, through deliberate activities, and blocking normal tension relief valves.
     * As tension goes up, the more you need to express your emotions.
 
+        
