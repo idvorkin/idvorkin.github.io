@@ -19,7 +19,7 @@ _For many of my roles, I'm still figuring out who I want to be, and how I will a
 
 ### As an entertainer
 
-Juggling fire, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment.  Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their negative experience replaced with wonder.
+Juggling fire, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment.  Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their frown turned upside down.
 
 * To File
     * Handing out bells 
