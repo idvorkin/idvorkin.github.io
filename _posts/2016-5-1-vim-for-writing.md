@@ -1,4 +1,4 @@
-i-- 
+-- 
 layout: post
 title: "Vim For Writing"
 author: "Igor Dvorkin"
