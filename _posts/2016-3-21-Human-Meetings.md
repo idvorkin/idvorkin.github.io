@@ -5,7 +5,7 @@ author: "Igor Dvorkin"
 inprogress: true
 comments: true
 tags:
-    - emotional Intelligence
+    - Emotional intelligence
 ---
 
 Having our emotions heard is a fundamental human need. The modern world denies this, but this doesn't make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions.  Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.
