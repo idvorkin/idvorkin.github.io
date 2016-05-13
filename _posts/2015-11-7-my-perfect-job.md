@@ -27,9 +27,11 @@ As a human, I'm increbily passionate about the related fields of productivity an
 As I get older, I'm finding more satisfaction in solving a customers problem then in making the most out of technology.
 That said, I'm a technologist at heart, so I place a deep influence on the architecture as technology is the tool with which the entrprenuer meets the customer and business needs.
 
-### Product Market Risk vs Technical Risk: Product Market Risk Fit.
+### Product/Market Risk vs Technical Risk: Product/Market Risk Fit.
 
-tbd
+Incubations need to prove a risk can be over come, either product/market or techincal.  Product/market risk is about do customers actually want your product, and technical is about can the techincal feasiblity be over come.
+
+I'm most interested in closing product/market fit, even though my many years as a technogist makes me well versed in resolving technical risk.
 
 ### Signals, Infrences, Experiances? Experiances
 
