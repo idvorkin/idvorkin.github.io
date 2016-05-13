@@ -47,5 +47,10 @@ I'm most interested in closing product/market fit, even though my many years as 
 
 ### The cultural aspects that appeal to me.
 
-  tbd
+Team culture is important
 
+    * Continous Improvement Process
+    * Frequent Inter Team feedback
+    * Going to work is like hanging out with friends.
+    * Data Driven Decision Making and Engineering
+    * High quality
