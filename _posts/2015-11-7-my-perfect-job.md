@@ -49,8 +49,10 @@ I'm most interested in closing product/market fit, even though my many years as 
 
 Team culture is important
 
+    * Feelings meetings
     * Continous Improvement Process
     * Frequent Inter Team feedback
     * Going to work is like hanging out with friends.
     * Data Driven Decision Making and Engineering
-    * High quality
+    * Gelled team, rallying behind the projects.
+    * Mentoring
