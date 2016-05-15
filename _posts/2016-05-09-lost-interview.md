@@ -5,6 +5,7 @@ comments: true
 inprogress: true
 tags: 
 author: "Igor Dvorkin"
+--- 
 
 Uneditted notes on a Q+A with Steve Jobs.
 
