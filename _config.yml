@@ -33,11 +33,9 @@ bing_verify:
 # Links to include in footer navigation
 # For external links add external: true
 links:
-  - title: Home
-    url: /
-    external: false
-    icon: home
-  - title: Featured Posts
+  - title: Search
+    url: /search
+  - title: Featured
     url: /featured
   - title: Tags
     url: /tags
