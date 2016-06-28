@@ -10,7 +10,7 @@ tags:
     - strategy
 ---
 
-The business model is a tool for understanding how a company makes money. We can apply the same canvas to a person, here's me applying it to mine. 
+The business model canvas is a tool for understanding how a company makes money. We can apply the same canvas to a person, in this article, it'll be me.
 
 ### Essential Concepts:
 
@@ -22,15 +22,56 @@ The business model is a tool for understanding how a company makes money. We can
 ### Key Resources - Who you are/What you have:
 
 * Interests - Things that excite you
-* Abilites - Things that are effortless
-* Skills - Learned or Aquired Talents
+    * Personal Productivity
+    * Self Development
+    * Making people Smile
+    * Growing People
+
+* Abilites _(Things that are effortless)_
+
+    * Motivating Others
+    * Creative
+    * Moving peoples emotions
+    * Hustling
+    * Emotional Analysis
+    * Presenting in front of large groups
+    * Being Comfortable
+
+* Skills _(Learned or Aquired Talents)_
+
+    * Rapid Prototyping
+    * Leading People
+    * Recruiting
+    * Data Driven Engineering
+    * Security/Performance
+
 * Personality - How people describe 'you'
+    * Passionate
+    * Quirky, Whimisical.
+    * Gregarious
+    * Tenacious
+    * Confident
+
+
 * Intangible Assets - IP/Goodwill/Brand Recogintion
 * Physical Assets - N/A for computer people.
 
 ### Key Activities - What you do:
 
+* Clarify Needs of Business
+* Convert Business needs into team activity
+* Understand each team members goals, and build plan to achieve them.
+* Balance short term delivery with investments in people, culture, and technology.
+* Build relationships with partners to ensure when stuff goes south, can get it back with minimal suffering.
+* Feelings Meetings
+
 ### Customers - Who you help:
+
+* My Product's Customer
+* My Dev Team
+* My L2 Lead
+* My Product Manager
+* Feeling Meetings Members
 
 ### Value Provided - How you help:
 
@@ -61,7 +102,18 @@ More complex then it sounds:
 ### Revenue - What you get?
 
 * Tangible
+    * Salary
+    * Expected Value of Bonuses
+    * Health Insurance
+    * Orca Pass - 1680
+    * Vacation - 5 weeks
+    * Cell Phone
+    * MacBook
+
 * Intangible
+    * Commute time.
+    * Accesst to good people
+    * Nice places to go for lunch
 
 ### Costs - What you give?
 
