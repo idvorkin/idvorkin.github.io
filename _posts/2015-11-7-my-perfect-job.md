@@ -8,7 +8,14 @@ tags:
     - How Igor Ticks
 ---
 
+I learn the needs of the business, and help focus the team on performing the activities required to deliver that need in a sustainable manner. At the same time, I help the team develop our most valuable assets - people, culture, and technology.
+
+When talking to others, I prefer a couch to a table, and when I need a break, you might see me juggling, practicing magic, or riding my folding bike - often in the office.
+
+Oh yeah, take a second to smile, you deserve it!
 Knowing what I care about is essential for me to make the best choices for my career.
+
+--- 
 
 The below listicle are the dimensions in which I think of my jobs.  The listicle will let me, and hopefully others, reflect on the essence of the job I want.
 
