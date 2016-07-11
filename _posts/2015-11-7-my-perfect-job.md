@@ -8,12 +8,14 @@ tags:
     - How Igor Ticks
 ---
 
-I learn the needs of the business, and help focus the team on performing the activities required to deliver that need in a sustainable manner. At the same time, I help the team develop our most valuable assets - people, culture, and technology.
 
-When talking to others, I prefer a couch to a table, and when I need a break, you might see me juggling, practicing magic, or riding my folding bike - often in the office.
+I learn the needs of the business, and focus the team on delivering in a sustainable manner. At the same time, I help the team members grow, develop our culture, and build valuable tech.
 
-Oh yeah, take a second to smile, you deserve it!
-Knowing what I care about is essential for me to make the best choices for my career.
+When talking to others, I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.
+
+I'm interested in a wide variety of roles, but a team figuring out how to make users happier in support of a business need gets a **tonne** of points in my job evaluation criteria.
+
+You can find my resume @ [http://yaythis.me/29yDB6l](http://yaythis.me/29yDB6l)
 
 --- 
 
