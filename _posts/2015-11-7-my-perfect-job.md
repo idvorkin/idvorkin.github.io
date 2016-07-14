@@ -15,7 +15,7 @@ When talking to others, I prefer a couch to a table, and when I need a break you
 
 I'm interested in a wide variety of roles, but a team figuring out how to make users happier in support of a business need gets a **tonne** of points in my job evaluation criteria.
 
-You can find my resume @ [http://yaythis.me/29yDB6l](http://yaythis.me/29yDB6l)
+You can find my resume @ [http://stackoverflow.com/cv/idvorkin](http://stackoverflow.com/cv/idvorkin)
 
 --- 
 
