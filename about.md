@@ -1,11 +1,11 @@
 ---
 layout: page
 permalink: /about/index.html
-title: "Igor Says ..."
+title: "Why?"
 tags: 
 ---
 
-Ira Glass, the host of This American Life, eloquently explains this blog's Raison d'Etre.
+Ira Glass, the host of This American Life, eloquently explains this blog's Raison d'Etre in the video below.
 
 <br/>
 
