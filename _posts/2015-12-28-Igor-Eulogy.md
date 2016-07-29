@@ -63,7 +63,7 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 
 Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffiene to make sure his body forced him to get the sleep he needed. 
 
-It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, Igor weighted 230 lbs, and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
+It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, [Igor weighted 230 lbs](https://www.flickr.com/photos/idvorkin/4590579760/in/datetaken/), and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
 
 Igor was incredibly grateful to his friend Ammon for teaching him about the weight pledge, and for being a weight pledge partner for over 30 years.
 
@@ -85,6 +85,25 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
     * Flexibility 
     * Massages
     * Yoga
+
+### As an emotionally healhty human
+
+Igor understood emotional health is the basis of his stability, and invested accordingly. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 20 minutes of meditation and writing out what made the day great in his gratefulness journal. 
+
+Igor prided himself in being able to ride his 
+
+* To File:
+    * Able to understand and influence the emotions of others
+    * Knew his triggers, and quick sands, and had effective strategies for dealing with them.
+    * Able to contorl his emotionals
+    * Non-judgemental, compassionate, 
+    * NLP - Reframing ideas.
+    * Getting to Yes with Self.
+* Archived links
+
+* To live
+    * Meditation retreats?
+    * 
 
 
 ## Roles that are still in point form.
@@ -170,8 +189,6 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 ### Disciplined, Deliberate, Daily
 tbd
 
-### As someone with emotional health
-tbd
 
 ### As someone with cognative health
 tbd
