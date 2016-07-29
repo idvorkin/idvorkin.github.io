@@ -33,11 +33,9 @@ bing_verify:
 # Links to include in footer navigation
 # For external links add external: true
 links:
-  - title: Home
-    url: /
-    external: false
-    icon: home
-  - title: Featured Posts
+  - title: Search
+    url: /search
+  - title: Featured
     url: /featured
   - title: Tags
     url: /tags
@@ -153,6 +151,6 @@ prose:
           value: false
 
 
-gems: ["jekyll-paginate"]
+gems: ["jekyll-paginate", "jekyll-sitemap"]
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

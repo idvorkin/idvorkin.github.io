@@ -1,13 +1,22 @@
 ---
 layout: page
 permalink: /about/index.html
-title: "Igor Says ..."
+title: "Why?"
 tags: 
 ---
-<iframe src="https://www.youtube.com/embed/GwHVOP61nq4" frameborder="0" allowfullscreen></iframe>
+
+Ira Glass, the host of This American Life, eloquently explains this blog's Raison d'Etre in the video below.
 
 <br/>
-<br/>
+
+<iframe src="https://player.vimeo.com/video/176325518?color=1fc9a2&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Expressed plainly - getting good at hard stuff takes LOTS of practice and LOTS of feedback, during which time the stuff you do will suck.
+
+I want to get great at understanding, reasoning, and presenting ideas, and have no fear of sucking, so I'll use this blog to collect, massage, and present ideas.
+
+A few of the posts here will be finished, but most posts will be incomplete, and many will be incoherent. If anything strikes your fancy holler, I'd love to riff on the ideas.
+
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
 {% assign featuredcount = 0 %}
@@ -24,7 +33,5 @@ tags:
 {% endfor %}
 
 
-My name is **Igor Dvorkin**, and this is my personal blog. It currently has {{ site.posts | size }} posts in {{ site.categories | size }} categories which combinedly have {{ total_words }} words, which will take an average reader  approximately <span class="time">{{ total_readtime }}</span> minutes to read. {% if featuredcount != 0 %}There are <a href="{{ site.url }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out.{% endif %} The most recent post is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} which was published on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}. The last commit was on {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné").
+My name is **Igor Dvorkin**, and this is my personal blog. It currently has {{ site.posts | size }} posts. There are <a href="{{ site.url }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out. The most recent post is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} which was published on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}. The last commit was on {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné").
 
-
-***This is the space to create.***

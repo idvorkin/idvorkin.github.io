@@ -5,7 +5,7 @@ comments: true
 collapsable: true
 inprogress: true
 tags: 
-    - book notes
+    - book-notes
     - strategy
 author: "Igor Dvorkin"
 ---
