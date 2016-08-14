@@ -170,7 +170,50 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 
 
 ### Screening - Reading 2.0
-tbd
+
+### People of the word, the book, and screen
+* The Word - Ancient Times
+    * Copy Tech: Human Memory
+    * Top Skills: memorization, recitation and rhetoric 
+    * Audience Valued: Reverence for the past, ambiguuius, ornate and subjective.
+    * Truth: The thing you remember (likely the best story)
+* The Book - Uptil we got screens
+    * Copy Tech: Cheap mass copies of words on paper
+    * Top Skills: Precision (ink on paper), Linear Logic (sentances), objectivity (printed fact), authoriity (fixed in a book).
+    * Societal Impacts - 50K - 1M english words. Culture of experts. Roots are the written document  (lawg
+    * Truth: What is written down by the authority.
+    * Solve problems by applying laws ( Process)
+
+* The screen
+    * Copy Tech: Cheap Dynamic copies of everything on screens
+    * Top Skills: 
+    * Audience Valued: Attention Grabbing, Concise
+    * Truth: What we assemble in real time from scanning
+    * Solve problems by applying technology ( code solutions )
+
+### People of the screen
+* Make their own content, and their own truth
+* Fast - constant 30 second snippets, liquid - like a walk through wikipedia
+* Not about words - but about pictures/videos/infographics
+* WORDS are replaced by the power of coded tools + user genearted content. [ Power here, but not yet grocked ] 
+
+### Will screens make us stupid? 
+
+* Argument started in the 50s saying TVs will make illiterate, 
+    * For short time, no one read, and reading scores where way down.
+    * but NOW, more people write then ever before.
+    * People 3x as much now since the 80s
+
+### Screening (Reading 2.0)
+
+* In theory, we're still reading, but now it's much more dynamic. 
+    * Video augmented, interactive (words on images), hyperlinks.
+    * Books we watch + television we read
+
+### Case Study Books:
+* Start with books, then libraries of books, videos, games, education, all.
+* 
+
 
 ### Accessing - From Ownership to Just in Time Rental
 tbd
