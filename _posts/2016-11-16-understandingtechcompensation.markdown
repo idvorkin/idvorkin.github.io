@@ -38,4 +38,5 @@ Continuing the math, you'll actually need a signing bonus of 100$ to just cover 
 Suddenly your 100% of salary signing bonus of 100$ doesn't seem nearly as awesome.
 
 ----------------------------------------------------
-* Cash bonus and equity often vary based on performance. This article assumes you always perform to the same target performance.  However when you are negotiating your signing bonus, you need to take your variable performance into account.
+**NOTE**: Cash bonus and equity often vary based on performance. This article assumes you always perform to the same target performance.  However when you are negotiating your signing bonus, you need to take your variable performance into account.
+
