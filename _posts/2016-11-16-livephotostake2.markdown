@@ -6,7 +6,7 @@ date: "2016-11-16 16:01:05 Pacific Standard Time"
 
 The reason I own an iPhone is Live Photos. When you take a picture, it adds a bit of video to make it live. When ever you see a picture you can click on it to make it live. Laphs is a javascript library which makes it easy to implement live photos on the web. 
 
-Below is a simple example - press the photo to see it live.
+Below is a simple example - press the photo to see it live. 
 
 <img src="assets/livephotos/tori_wings/photo.jpg" data-live-photo="assets/livephotos/tori_wings/photo.mov" data-live-photo-still-image-time="1.71"/>
 
