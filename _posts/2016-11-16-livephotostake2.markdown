@@ -8,7 +8,10 @@ The reason I own an iPhone is Live Photos. When you take a picture, it adds a bi
 
 Below is a simple example - press the photo to see it live. 
 
-<img src="assets/livephotos/tori_wings/photo.jpg" data-live-photo="assets/livephotos/tori_wings/photo.mov" data-live-photo-still-image-time="1.71"/>
+<img 
+src="https://idvorkin.s3.amazonaws.com/livephotos/tori_wings/photo.jpg"
+data-live-photo="https://idvorkin.s3.amazonaws.com/livephotos/tori_wings/photo.mov"
+data-live-photo-still-image-time="1.71"/>
 
 If you want to implement this yourself check out -  [laphs](https://github.com/tumblr/laphs).
 
