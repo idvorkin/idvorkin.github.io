@@ -17,6 +17,8 @@ I want to get great at understanding, reasoning, and presenting ideas, and have 
 
 A few of the posts here will be finished, but most posts will be incomplete, and many will be incoherent. If anything strikes your fancy holler, I'd love to riff on the ideas.
 
+Finally the metaphorical small print: These are my personal opinions, not those of my employer. 
+
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
 {% assign featuredcount = 0 %}
