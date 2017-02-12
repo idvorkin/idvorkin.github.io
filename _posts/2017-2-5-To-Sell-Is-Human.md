@@ -48,7 +48,53 @@ tbd
 
 ### Pitch
 
+As you prepare your pitch, whichever variety you choose, clarify your purpose and strategy by making sure you can answer these three questions: After someone hears your pitch . . . 
+* What do you want them to know? 
+* What do you want them to feel? 
+* What do you want them to do? 
+
+1. The One-Word Pitch Pro tip: Write a fifty-word pitch. Reduce it to twenty-five words. Then to six words. One of those remaining half-dozen is almost certainly your one-word pitch. Your try: _____________________. 
+
+2. The Question Pitch Pro tip: Use this if your arguments are strong. If they’re weak, make a statement. Or better yet, find some new arguments. Your try: _____________________? 
+
+3. The Rhyming Pitch Pro tip: Don’t rack your brain for rhymes. Go online and find a rhyming dictionary. I’m partial to RhymeZone (http:// www.rhymezone.com). Your try: _____________________. 
+
+4. The Subject Line Pitch Pro tip: Review the subject lines of the last twenty e-mail messages you’ve sent. Note how many of them appeal to either utility or curiosity. If that number is less than ten, rewrite each one that fails the test. Your try: _____________________. 
+
+5. The Twitter Pitch Pro tip: Even though Twitter allows 140 characters, limit your pitch to 120 characters so that others can pass it on. Remember: The best pitches are short, sweet, and easy to retweet. Your try: _____________________. 
+
+6. The Pixar Pitch Pro tip: Read all twenty-two of former Pixar story artist Emma Coats’s story rules: http:// bit.ly/ jlVWrG Your try: Once upon a time __________________. Every day, ______________. One day _______________. Because of that, _______________________. Because of that, _____________. Until finally ________________. 
+
 ### Improvise
+Improv teaches valuable skills for sales
+
+* Hear Offers (See First to Understand)
+* Yes And 
+* Make your partner look good (Think win/win?)
 
 ### Serve
+Service is about improving others lives, and in the process improving the world.
+
+* Make it personal
+    * Radiologists seeing a picture of a person, do a better job
+    * See patients as people instead of bundles of symptoms.
+    * Professionalism *does not mean* cold and distant, it means human connection.
+    * Put your personal brand behind what you're doing (put your phone number on your product)
+* Make it purposeful
+    * People aren't just selfish, they feel great when they help others. 
+    * Washing helps stops patients from getting sick, much more effective then washing hands kills germs.
+* Upserve don't upsell.
+    * How can I provide even more value in this expereince? 
+    * Always imagine the other guy is doing you a favor.
+* Empotianlly Intelligent signs:
+    * Don't worry - the line moves quickly. (give empathy)
+    * Children play here - pick up after your dog (provide purpose)
+
+
+### Conclusion
+Finally, at every opportunity you have to move someone — answer the two questions at the core of genuine service: 
+
+    If the person you’re selling to agrees to buy, will his or her life improve? 
+    When your interaction is over, will the world be a better place than when you began?
+
 
