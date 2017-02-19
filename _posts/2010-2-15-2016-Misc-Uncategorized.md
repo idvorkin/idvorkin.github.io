@@ -90,6 +90,39 @@ place to store them.
         * I offer/not needed/Appreciate - Someone feels loved, I feel great - WIN!
         * I offer/not needed/grumpy - Someone feels angry, I feel sad - LOSS! (how often?)
 
+_suprise: these are my dail affirmations_
+
+* Deliberate, Disciplined, Daily
+* Essentialism (I choose to do the most important thing)
+* Appreciate
+* First Understand, then be understated
+* Provide Context 
+
+
+Focusing on quality of life
+
+* Climbing the steps again and again at work
+* Getting the gym that was closest to work
+* Optimize for the most enjoyable commute (not necassarily the shortest)
+
+Blog posts for this week? 
+
+* Carrying my own cultural bubble (atmosphere) 
+* Chop chop vs people first
+  * Efficiency is the wrong metric for people first. 
+* Count books is the wrong metric for libraries
+  * Right metric is customer engagement
+
+Igor's Work Advantage
+_Some of these are extra valuable depending on your teams culture_
+
+* Very good at tools, and grunging data.
+* Dive deep vs level up 
+* Relationships first (vs efficiency)
+* Ideas or the week
+  * I CHOOSE TO
+* Listening to books on tape that are low SNR but high in inspiration. 
+
 ## Journalling Prompt:
 
 __Make this it's own blogpost__
