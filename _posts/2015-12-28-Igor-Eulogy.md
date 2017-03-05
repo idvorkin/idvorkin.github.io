@@ -10,19 +10,22 @@ tags:
     - How Igor Ticks
     - emotional intelligence
 ---
+<!-- markdownlint-disable MD003 -->
+<!-- markdownlint-disable MD036 -->
+
 
 Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am.   Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 
-_Currenty the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into enteraining others at my funeral_ 
+_Currenty the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into enteraining others at my funeral_
 
-_For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_ 
+_For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
 
 ### As an entertainer
 
 Juggling fire, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment.  Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their frown turned upside down.
 
 * To File
-    * Handing out bells 
+    * Handing out bells
     * Original Smile Service
     * Silly hats/clothes
     * Constantly had props with him and practicing.
@@ -38,7 +41,7 @@ Juggling fire, making cards change colors at a spectators command, or passing co
     * Going to random juggling/side show/magic convention.
     * Volunteering for sick kids.
 
-### As an alternate transportation advocate.
+### As an alternate transportation advocate
 
 Igor took a strange pleasure in not driving. Riding his folding bike, or making a long day of public transit with Zach and Amelia. Igor would take the kids on the bus, to the train, to the airport, to ride the airport elevators, just to reverse the process and head home so he could enjoy his kids, and the bus, without spending a dime.
 
@@ -106,9 +109,10 @@ Igor prided himself in being able to ride his
     * 
 
 
-## Roles that are still in point form.
+## Roles that are still in point form
 
 ### As a Friend, Mentee, and Mentor
+
 * To File
     * [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum for expressing emotions.
     * Treasured Friendships
@@ -136,6 +140,7 @@ Igor prided himself in being able to ride his
 
 
 ### As a father of a wonderful boy, and incredible girl.
+
 * To File
     * Seeing Kids Play Together
     * Teaching 7h/eq values to kids 
@@ -156,6 +161,7 @@ Igor prided himself in being able to ride his
 
 
 ### As an enjoyer of the great outdoors.
+
 * To File
     * Small house, forced them out of it.
     * Canoe, Kayak 
@@ -178,6 +184,7 @@ Igor prided himself in being able to ride his
     * The El Camino de Santiago 
 
 ### As a husband
+
 * To File
 * Archived links
     * [When Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor)
@@ -186,26 +193,40 @@ Igor prided himself in being able to ride his
 
 ## Roles I haven't started writing yet
 
-### Disciplined, Deliberate, Daily
 tbd
 
+### Disciplined, Deliberate, Daily
+
+Discipline is hard. Frequently Igor's discipline started strong at the beginning of the day/week/month but he'd fall of the wagon.  Igor realized that was OK, and started his discipline again the next day. This embodied grandmother mind and being compassionate.
 
 ### As someone with cognative health
+
 tbd
 
 ### As a worker
+
 tbd
 
 ### As someone who made others happy through pleasure, flow and purpose.
+
 * How he treated homeless and strangers in passing
 
 ### As a coder/technologist
-tbd
+
+* Igor believed the perfect programmer was Anal retentive and lazy. While Igor was a 10/10 on lazy, he was only a 1/10 for being Anal. As a result, he relied heavily on automated tests, and very little on human process.
+* To empower his laziness Igor focused on tools that are easy to read, mutate and have excellent libraries. Python, and C# being some of his favorites.
+* Igor is a huge beleive in static typing, especially implict static typing.
+* Today, these have become the industry norms, which is great for Igor, because he can stop arguing about it.
+* Igor loved VIM, using it in as many programs as he could. Interestingly, as his career progressed he was able to use vim key bindings in every tool he used.
+* Igor's coding principles - No duplicate code; Trust tests not experts; Log Bug then Whine;
+* Igor tried to develop in such a way that you could bottom up a design via excellent refactoring of implementation.
+* Igor read books on other languages just to see what better implementation patterns looked like.
 
 
 ## Igor's helper section
 
 ### Writing Prompts
+
 * For each - split by common vs unique w/others:
 * How do I know when done this section
 * What am I most proud of 
@@ -218,18 +239,18 @@ tbd
     * Growth Mindset
     * Realize everyone is trying as hard as they can.
 
-### Unfiled ideas:
+### Unfiled ideas
+
 tbd
 
-### Notes.
+### Notes
+
 * Super charged by being weird.
 * [Smiling at you](http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html)
 * [Poetry Slam](http://ig66.blogspot.com/2013/03/poetry-slam-1-last-place.html)
+
 ### Template
 
 * To File
 * Archived links
 * To live
-
-
-
