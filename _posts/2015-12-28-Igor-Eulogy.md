@@ -151,9 +151,11 @@ Igor prided himself in being able to ride his
     * Teaching them to program
     * Seeing "raw humanity"
     * Being cool for other kids
+    * I choose ...
+    * Enjoying family wasn't easy - it's a muscle to be built, and he built it.
 * Archived links
     * Birth stories
-    * When I'm dead poem.
+    * [Poem for Zach - Tomorrow smiling at me](http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html?q=dead).
 
 * To live
     * Being with kids recharged him
