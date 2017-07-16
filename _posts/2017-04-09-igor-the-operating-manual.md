@@ -99,9 +99,10 @@ Top priorities:
 
 Health - physical, emotional, cognitive and spiritual, is easy to understand but hard to maintain. My strategy to maintain health is habits, but thanks to the [immutable laws of hard things](http://~/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
 
-I spend lots of time thinking about how I should be working my habits, but not actually doing it.
+I spend lots of time thinking about how I should be working my habits, but often end up not doing them.  In this case, the key is to stop moaning and restart 'em. 
 
 ### Physical
+My summary of [physical health habits](https://medium.com/being-healthy/physical-health-a2f648e7574c).
 
 ### Emotional
 
