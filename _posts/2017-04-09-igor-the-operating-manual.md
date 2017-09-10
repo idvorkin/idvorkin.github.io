@@ -17,7 +17,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 - [Work](#work)
     - [Individual Contributor](#individual-contributor)
-        - [Functional Skills to developer](#functional-skills-to-developer)
+        - [Functional Skills to develop](#functional-skills-to-develop)
     - [Realistic expectations for a new leader](#realistic-expectations-for-a-new-leader)
     - [Manager](#manager)
     - [My super powers](#my-super-powers)
@@ -40,9 +40,11 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 - [Family](#family)
     - [Husband](#husband)
     - [Father](#father)
-- [Financial Security and Retirement](#financial-security-and-retirement)
-    - [The point of money](#the-point-of-money)
-    - [What would I do for less money](#what-would-i-do-for-less-money)
+- [Triggers and Mental Quick Sand](#triggers-and-mental-quick-sand)
+    - [Stress and Anxiety](#stress-and-anxiety)
+    - [Financial Security and Retirement](#financial-security-and-retirement)
+        - [The point of money](#the-point-of-money)
+        - [What would I do for less money](#what-would-i-do-for-less-money)
 
 <!-- /TOC -->
 
@@ -53,7 +55,7 @@ At the end of 2016, I joined Amazon to learn the business of software, to learn 
 
 ### Individual Contributor
 
-#### Functional Skills to developer
+#### Functional Skills to develop
 
 * Business Writing
 * Design
@@ -97,9 +99,10 @@ Top priorities:
 
 Health - physical, emotional, cognitive and spiritual, is easy to understand but hard to maintain. My strategy to maintain health is habits, but thanks to the [immutable laws of hard things](http://~/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
 
-I spend lots of time thinking about how I should be working my habits, but not actually doing it.
+I spend lots of time thinking about how I should be working my habits, but often end up not doing them.  In this case, the key is to stop moaning and restart 'em. 
 
 ### Physical
+My summary of [physical health habits](https://medium.com/being-healthy/physical-health-a2f648e7574c).
 
 ### Emotional
 
@@ -126,8 +129,23 @@ I've already got enough hobbies - biking, magic, juggling.  I get my biking fix 
 ### Father
 
 
-## Financial Security and Retirement
+## Triggers and Mental Quick Sand
 
-### The point of money
+Like most folks I have triggers and mental quick sand which I can get trapped in. Here's some of mine, and things I need to remember.
 
-### What would I do for less money
+### Stress and Anxiety
+
+Being human, I spend a bunch of time stressed and anxious. Here are some of my favorite sound bites on the topic: 
+
+* Stress is the difference between expectations and reality
+* Laws of physics always win.
+* Anxiety is experiencing a possible failure in advance.
+* Worry is not preperation, nor does it make you better.
+
+### Financial Security and Retirement
+
+#### The point of money
+
+#### What would I do for less money
+
+
