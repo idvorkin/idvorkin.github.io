@@ -3,11 +3,9 @@ layout: post
 title: "Staying warm on and off the bike"
 author: "Igor Dvorkin"
 comments: true
-inprogress: true
+
 
 tags: 
-    - vim
-    - writing
 
 ---
 
