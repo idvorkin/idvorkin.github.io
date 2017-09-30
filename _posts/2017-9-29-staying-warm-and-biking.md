@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Staying warm on and off the bike"
+title: "Staying warm and  biking"
 author: "Igor Dvorkin"
 comments: true
 
@@ -35,7 +35,7 @@ I keep getting asked for winter bike gear recommendations so here is my list.  
 
 **Waterproof Jacket** - If you're feeling poor the [REI Stratos Jacket](http://www.rei.com/product/819019/novara-stratos-20-bike-jacket-mens). If you're feeling rich the [Shower Pass Elite](http://www.rei.com/product/838526/showers-pass-elite-21-bike-jacket-mens).  If you're feeling rich and want a jacket to use while off the bike, check out the [Shower's Pass Refuge](https://www.westernbikeworks.com/product/showers-pass-mens-refuge-rain-jacket?v=negr00m&adl=1&utm_campaign=products&utm_source=google&utm_medium=base&adl=1&gclid=Cj0KEQiAhZPDBRCz642XqYOCpb8BEiQANUcwT1pLi3iADk1YOcEnX6TBH6TpazZKSzZARkrjIbfjgUEaAuuh8P8HAQ).  
 
-**Bike Tights**[Pearl iZUMi Men's AmFIB Cycling Tight](http://www.amazon.com/gp/product/B003BLOS4Y/ref=as_li_ss_tl?ie=UTF8&tag=ighe-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003BLOS4Y)  - sure you look a little fruity, but I guarantee you, everyone who's serious is wearing these.  
+**Bike Tights** -[Pearl iZUMi Men's AmFIB Cycling Tight](http://www.amazon.com/gp/product/B003BLOS4Y/ref=as_li_ss_tl?ie=UTF8&tag=ighe-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B003BLOS4Y)  - sure you look a little fruity, but I guarantee you, everyone who's serious is wearing these.  
 
 **Bike Rain Pants** - If I don't want to wear tights and it's raining I've got the [shower pass club convertible](https://www.showerspass.com/products/mens-club-convertible-2-pant), they're the best I've found, but I don't love them since the length doesn't work for me.  
 
