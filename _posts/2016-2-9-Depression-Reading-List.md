@@ -4,6 +4,7 @@ title: "Depression Reading List"
 comments: true
 tags: 
     - book-notes
+    - emotional intelligence
 author: "Igor Dvorkin"
 ---
 I've had multiple people ask for my book recommendations on depression and bipolar disorder.  Here's the list:

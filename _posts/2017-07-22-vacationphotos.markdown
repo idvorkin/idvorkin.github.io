@@ -4,6 +4,7 @@ title: "Vacation Photos"
 date: "2017-07-22 07:39:01 -0700"
 tags:
     - tech
+    - toys
 ---
 
 Vacation photos are great, they remind you of the good times you've had, the people you've had them with and the places you've had them at. Here are my tips for vacation photos, and "reminiscing" type photos in general.
