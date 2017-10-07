@@ -19,49 +19,49 @@ You can find my resume @ [http://stackoverflow.com/cv/idvorkin](http://stackover
 
 --- 
 
-The below listicle are the dimensions in which I think of my jobs.  The listicle will let me, and hopefully others, reflect on the essence of the job I want.
+Below are the dimensions in which I think of my jobs.  The lets me, and others, reflect on the essence of the job I want.
 
 
 ### B2C, B2B, Infrastructure? B2C!
 
-At his point in my career I'm interested in making the lives of others better. Right now, I'd like to do this via end user software.
+At this point in my career I'm interested in making the lives of others better. Right now, I'd like to do this via consumer software.
 
-### Product Domain? Productivity and Positive Computing
+### Product Domain? Productivity and Positive Computing!
 
-As a human, I'm increbily passionate about the related fields of productivity and positive phychology. I'd like to harness this passion to make the world a better place.
+As a human, I'm incredibly passionate about the related fields of productivity and positive psychology. I'd like to harness this passion to make the world a better place.
 
 
-### Technologist or Entreprenuer: Entreprenur
+### Technologist or Entrepreneur: Entrepreneur!
 
 As I get older, I'm finding more satisfaction in solving a customers problem then in making the most out of technology.
-That said, I'm a technologist at heart, so I place a deep influence on the architecture as technology is the tool with which the entrprenuer meets the customer and business needs.
+That said, I'm a technologist at heart, so I place a deep influence on the architecture as technology is the tool with which the entrepreneur meets the customer and business needs.
 
-### Product/Market Risk vs Technical Risk: Product/Market Risk Fit.
+### Product/Market Risk vs Technical Risk: Product/Market Risk!
 
-Incubations need to prove a risk can be over come, either product/market or techincal.  Product/market risk is about do customers actually want your product, and technical is about can the techincal feasiblity be over come.
+Incubations need to prove a risk can be overcome, either product/market or technical.  Product/market risk is "Do customers want your product", while  technical risk is "Can we build the tech to deliver it".
 
-I'm most interested in closing product/market fit, even though my many years as a technogist makes me well versed in resolving technical risk.
+I'm most interested in proving product/market fit. That said, with over 15 years experience as a software engineer, I'm well versed in resolving technical risk, an expert at system design, code, and mentoring developers.
 
-### Signals, Infrences, Experiances? Experiances
+### Signals, Inferences, Experiences? Experiences!
 
-  tbd
+A lot of modern software can be decomposed in three layers: signals, inferences and experiences. Signals are the raw the input in the system, both static, and dynamic. Inferences are the computations performed over the signal to determine something meaningful, this often involves big data and ML. Experiences are the way inferences and signal are presented to the user, this is often an app and the services which power the app. Inferences and experiences often become new signal to drive the system.
 
-### Business, Experiance, Technology
+I'm most interested in building the experiences, but that requires me to deeply understand and drive signals and inferences.
+### Business, Experience, Technology: Business and Experience!
 
-  tbd
+Technology leaders need to divide their time among the business, experiences, and technology. While each of these are interesting at this point in my career Im most interested in the business and experiences.
 
 ### The types of people I want to work with
 
   tbd
 
-### The cultural aspects that appeal to me.
+### The team culture I want to nurture.
 
-Team culture is important
 
-    * Feelings meetings
-    * Continous Improvement Process
-    * Frequent Inter Team feedback
-    * Going to work is like hanging out with friends.
-    * Data Driven Decision Making and Engineering
-    * Gelled team, rallying behind the projects.
-    * Mentoring
+* [Feelings meetings]({% post_url 2016-3-21-Human-Meetings %})
+* Continuous improvement process
+* Frequent inter and intra team feedback
+* Going to work is like hanging out with friends.
+* Data driven decision making and engineering
+* Gelled team, rallying behind the projects.
+* I get to do lots of mentoring.
