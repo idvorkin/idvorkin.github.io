@@ -1,10 +1,13 @@
 ---
 layout: post
 title: "Tech for health"
-tags: Tech 
+tags: 
+    - tech 
+    - health
+    - toys
 ---
 
-Physical health is the basis of my energy, so it's a place I'm happy spending money and energy. I've been buying lots of technology to help me understand and measure my health and fitness and this post will track my favorite toys. 
+Physical health is the basis of my [energy]({% post_url 2017-10-07-physical-health %}), so it's a place I'm happy spending money and energy. I've been buying lots of technology to help me understand and measure my health and fitness and this post will track my favorite toys. 
 
 To help my measure my heart rate, paths run, and control my music, I have an apple watch - which is expensive but worth it.  
 

@@ -4,6 +4,8 @@ title: "My Brompton and its accoutrements"
 author: "Igor Dvorkin"
 comments: true
 tags: 
+    - biking 
+    - toys
 ---
 
 I *LOVE* my Brompton, and have spent much time researching accessories for it. Here are the accoutraments I've bought for my Brompton, and hopefully it'll save other Brompton owners time, and/or make them aware of accessories they don't known about. 
