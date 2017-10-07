@@ -5,7 +5,7 @@ author: "Igor Dvorkin"
 inprogress: true
 comments: true
 tags:
-    - How Igor Ticks
+    - how igor ticks
 ---
 
 

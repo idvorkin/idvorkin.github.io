@@ -4,7 +4,7 @@ title: "Body at home, mind at work"
 comments: true
 inprogress: true
 tags: 
-    - How Igor Ticks
+    - how igor ticks
     - emotional intelligence
 comments: true
 inprogress: true

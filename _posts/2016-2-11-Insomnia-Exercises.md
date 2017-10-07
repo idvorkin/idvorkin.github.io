@@ -3,7 +3,7 @@ layout: post
 title: "What I should do when I can't sleep"
 author: "Igor Dvorkin"
 tags: 
-    - How Igor Ticks
+    - how igor ticks
     - emotional intelligence
 
 comments: true

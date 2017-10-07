@@ -3,7 +3,7 @@ layout: post
 title: "Emotional Health Practices"
 author: "Igor Dvorkin"
 tags: 
-    - How Igor Ticks
+    - health
     - emotional intelligence
 
 comments: true
@@ -78,5 +78,4 @@ __How's that working out for you?__
 ### Discontinued Practices
 
 * GratTweeting (very similuar to daily gratefulness journal.)
-
 

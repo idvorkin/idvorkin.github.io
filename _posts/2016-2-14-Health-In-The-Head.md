@@ -4,8 +4,8 @@ title: "Emotional Health In My Head"
 comments: true
 inprogress: true
 tags: 
-    - How Igor Ticks
     - emotional intelligence
+    - health
 author: "Igor Dvorkin"
 ---
 

@@ -6,7 +6,7 @@ comments: true
 inprogress: true
 collapsable: true
 tags: 
- - How Igor Ticks
+ - how igor ticks
 
 author: "Igor Dvorkin"
 ---

@@ -7,7 +7,7 @@ collapsable: true
 featured: true
 comments: true
 tags:
-    - How Igor Ticks
+    - how igor ticks
     - emotional intelligence
 ---
 <!-- markdownlint-disable MD003 -->

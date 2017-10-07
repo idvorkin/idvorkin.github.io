@@ -4,8 +4,6 @@ title: "The Immutable Laws of Hard Things"
 author: "Igor Dvorkin"
 comments: true
 
-tags: 
-    - How Igor Ticks
 ---
 
 

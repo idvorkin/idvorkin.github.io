@@ -4,7 +4,7 @@ title: "Random uncategorized Notes"
 comments: true
 inprogress: true
 tags: 
-    - How Igor Ticks
+    - how igor ticks
 author: "Igor Dvorkin"
 ---
 

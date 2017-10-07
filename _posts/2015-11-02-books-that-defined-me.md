@@ -4,7 +4,7 @@ title: "Books that defined me"
 comments: true
 inprogress: true
 tags: 
-    - How Igor Ticks
+    - how igor ticks
     - book-notes
 collapsable: true
 author: "Igor Dvorkin"
