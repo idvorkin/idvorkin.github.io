@@ -5,6 +5,7 @@ REM
 REM 10/1/2017 -- What a hassle - followed the instructions here
 REM https://stackoverflow.com/questions/31780185/how-to-install-ruby-on-rails
 REM gem install github-pages
+REM ridk install 
 @ECHO OFF
 
 
