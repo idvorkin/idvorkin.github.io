@@ -4,7 +4,7 @@ title: "The Genesis Node"
 author: "Igor Dvorkin"
 comments: true
 featured: false
-tag: "Software as a Service"
+tag: "Software as a Story"
 ---
 Igor, you know the odds of shipping Reddog on time are slim to none." 
 
