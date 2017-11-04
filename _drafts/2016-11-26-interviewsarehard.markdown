@@ -10,7 +10,7 @@ inprogress: true
 
 ---
 
-I've been pretty hard on myself these last few months, as I haven't made a lot of progress on my habits, or goals. Reflecting, that shouldn't be a surprise as I've been putting a tonne of energy into interviews. For the next time this happens here's some notes to remind me to remind me of the required effort, and perhaps a place to reflect on how I could have made this process more efficient.
+I've been pretty hard on myself these last few months, as I haven't made a lot of progress on my habits, or goals. Reflecting, that shouldn't be a surprise as I've been putting a tonne of energy into interviews. For the next time this happens here's some notes to remind of the required effort, and perhaps a place to reflect on how I could have made this process more efficient.
 
 Don't forget all this time is above and beyond existing commitments like work, health and family.
 
@@ -27,7 +27,7 @@ Time to practice behavioral stories:
 
 Energy to deal with the phycic Weight:
 
-* The fear that while there are lots of jobs, you only get "one shot" to interview with each company, and it's easy to blow.
+* The fear that while there are lots of jobs, you only get "one shot" to interview with each company, and it's easy to blow it.
 * The fear that your career hasn't been as successful as you want, and that you're an imposter 
 * The fear that you won't be able to impress the interivewers.
 * The fear that you won't be able to remember the techincal questions.
