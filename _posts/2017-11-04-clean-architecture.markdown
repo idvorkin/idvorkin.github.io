@@ -3,11 +3,11 @@ layout: post
 title: "Clean Architecture"
 date: "2017-11-04 10:28:05 Pacific Daylight Time"
 tags:
-    - book
+    - book-notes
     - software engineering
 ---
 
-Architecture is the highest level of abstraction that models a software system. The architecture is composed from modules, which are composed from code.  Design is applied to each of these layers, and when executed successfully results in a system that is easy to build and maintain. Clean architecture discusses designs at a high level, which like architecture is highly useful. On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
+Architecture is the highest level of abstraction that models a software system. The architecture is composed from modules, which are composed of objects, which are composed of functions.  Design is applied to each of these layers, and when executed successfully results in a system that is easy to build and maintain. Clean architecture discusses designs at a high level, which like architecture is highly useful. On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
 
 Get (Clean architecture)[https://www.amazon.com/dp/0134494164/] on Amazon.
 <!-- TOC -->
@@ -291,7 +291,7 @@ Polymorphism gives programmers the most power, decoupling the source code depend
 
 The value of the functional paradigm is functions with no side effects and functional composition and currying. With this tool we reduce error, remove concurrency errors, and transform problems to be embarrassingly parallel.  Some mutation is always required, but it should be isolated as much as possible. However, less mutation is required then you think. In [event sourcing](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing) use store transaction records instead of updates and compute current state from the sum of previous updates we can remove mutation even from storage (e.g. CRUD becomes CR). If this sounds crazy you already use it daily when using source control, and is becoming very popular in react-redux applications and time travel debugging.
 
-### Iiidesign principles
+## II.Object Oriented design principles
 
 ### 7. srp: the single responsibility principle
 
@@ -343,7 +343,7 @@ The value of the functional paradigm is functions with no side effects and funct
 
 #### Conclusion
 
-### Ivcomponent principles
+### IV Component principles
 
 ### 12. components
 
@@ -417,7 +417,7 @@ The value of the functional paradigm is functions with no side effects and funct
 
 #### Conclusion
 
-### Varchitecture
+## Architecture Principles
 
 ### 15. what is architecture?
 
