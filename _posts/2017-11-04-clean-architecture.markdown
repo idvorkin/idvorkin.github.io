@@ -7,7 +7,7 @@ tags:
     - software engineering
 ---
 
-Architecture is the highest level of abstraction that models the software system. The architecture is composed of modules, which are in turn composed of code.  Design, is applied to each of these layers of abstraction, and its success is measured by the cost of building and maintaining the system. This book describes how to design each layer of abstraction.
+Architecture is the highest level of abstraction that models a software system. The architecture is composed from modules, which are composed from code.  Design is applied to each of these layers, and when executed successful results in a system that is easy to build and maintain. On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
 
 <!-- TOC -->
 
@@ -309,19 +309,15 @@ Architecture is the highest level of abstraction that models the software system
 
 <!-- /TOC -->
 
-### 2. a tale of two values
+### 2. A tale of two values (User Behavior and Malleability)
 
-#### Behavior
+Software is measured in two dimensions: end user behavior and malleability. End user behavior is the delivery of use cases, while malleability is the ease with which the software can modify the existing use cases, or add new ones.  Software malleability is the evaluation function for an architecture. Malleability is the more important of these dimensions because over time there will be far more changes to the software then the original use case (e.g. the cost of maintenance far exceeds the software writing cost).
 
-#### Architecture
+Product managers don't understand software enough to understand the notion of malleability, and thus don't have the ability to prioritize architecture. It's the role of the software engineers (and software architects) to continually prioritize the architecture.
 
-#### The greater value
 
-#### Eisenhower&#8217;s matrix
+> On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
 
-#### Fight for the architecture
-
-### Iistarting with the bricks: programming paradigms
 
 ### 3. paradigm overview
 
@@ -879,25 +875,4 @@ Architecture is the highest level of abstraction that models the software system
 
 #### Conclusion
 
-### Index
-
-### Code snippets
-
-### Code snippets
-
-### Code snippets
-
-### Code snippets
-
-### Code snippets
-
-### Code snippets
-
-### Code snippets
-
-### Code snippets
-
-### Code snippets
-
-c:\gits\igor2\kindle-fetch\Clean-Architecture--A-Craftsman-s-Guide--out.html
 
