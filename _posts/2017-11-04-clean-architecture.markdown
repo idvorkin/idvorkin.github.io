@@ -1,76 +1,50 @@
 ---
 layout: post
-title: "Clean Software Architecture"
+title: "Clean Architecture"
 date: "2017-11-04 10:28:05 Pacific Daylight Time"
 tags:
     - book
     - software engineering
 ---
 
-Architecture is the highest level of abstraction that models a software system. The architecture is composed from modules, which are composed from code.  Design is applied to each of these layers, and when executed successful results in a system that is easy to build and maintain. On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
+Architecture is the highest level of abstraction that models a software system. The architecture is composed from modules, which are composed from code.  Design is applied to each of these layers, and when executed successfully results in a system that is easy to build and maintain. (Clean architecture)[https://www.amazon.com/dp/0134494164/] discusses designs at a high level, which like architecture is highly useful. On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
 
 <!-- TOC -->
 
-- [2. A tale of two values (User Behavior and Malleability)](#2-a-tale-of-two-values-user-behavior-and-malleability)
-- [3. paradigm overview](#3-paradigm-overview)
-    - [Structured programming](#structured-programming)
-    - [Object-oriented programming](#object-oriented-programming)
-    - [Functional programming](#functional-programming)
-    - [Food for thought](#food-for-thought)
-    - [Conclusion](#conclusion)
-- [4. structured programming](#4-structured-programming)
-    - [Proof](#proof)
-    - [A harmful proclamation](#a-harmful-proclamation)
-    - [Functional decomposition](#functional-decomposition)
-    - [No formal proofs](#no-formal-proofs)
-    - [Science to the rescue](#science-to-the-rescue)
-    - [Tests](#tests)
-    - [Conclusion](#conclusion-1)
-- [5. object-oriented programming](#5-object-oriented-programming)
-    - [Encapsulation?](#encapsulation)
-    - [Inheritance?](#inheritance)
-    - [Polymorphism?](#polymorphism)
-        - [The power of polymorphism](#the-power-of-polymorphism)
-        - [Dependency inversion](#dependency-inversion)
-    - [Conclusion](#conclusion-2)
-- [6. functional programming](#6-functional-programming)
-    - [Squares of integers](#squares-of-integers)
-    - [Immutability and architecture](#immutability-and-architecture)
-    - [Segregation of mutability](#segregation-of-mutability)
-    - [Event sourcing](#event-sourcing)
-    - [Conclusion](#conclusion-3)
+- [User Behavior and Malleability](#user-behavior-and-malleability)
+- [Software Paradigms](#software-paradigms)
 - [Iiidesign principles](#iiidesign-principles)
 - [7. srp: the single responsibility principle](#7-srp-the-single-responsibility-principle)
     - [Symptom 1: accidental duplication](#symptom-1-accidental-duplication)
     - [Symptom 2: merges](#symptom-2-merges)
     - [Solutions](#solutions)
-    - [Conclusion](#conclusion-4)
+    - [Conclusion](#conclusion)
 - [8. ocp: the open-closed principle](#8-ocp-the-open-closed-principle)
     - [A thought experiment](#a-thought-experiment)
     - [Directional control](#directional-control)
     - [Information hiding](#information-hiding)
-    - [Conclusion](#conclusion-5)
+    - [Conclusion](#conclusion-1)
 - [9. lsp: the liskov substitution principle](#9-lsp-the-liskov-substitution-principle)
     - [Guiding the use of inheritance](#guiding-the-use-of-inheritance)
     - [The square/rectangle problem](#the-squarerectangle-problem)
     - [Lsp and architecture](#lsp-and-architecture)
     - [Example lsp violation](#example-lsp-violation)
-    - [Conclusion](#conclusion-6)
+    - [Conclusion](#conclusion-2)
 - [10. isp: the interface segregation principle](#10-isp-the-interface-segregation-principle)
     - [Isp and language](#isp-and-language)
     - [Isp and architecture](#isp-and-architecture)
-    - [Conclusion](#conclusion-7)
+    - [Conclusion](#conclusion-3)
 - [11. dip: the dependency inversion principle](#11-dip-the-dependency-inversion-principle)
     - [Stable abstractions](#stable-abstractions)
     - [Factories](#factories)
     - [Concrete components](#concrete-components)
-    - [Conclusion](#conclusion-8)
+    - [Conclusion](#conclusion-4)
 - [Ivcomponent principles](#ivcomponent-principles)
 - [12. components](#12-components)
     - [A brief history of components](#a-brief-history-of-components)
     - [Relocatability](#relocatability)
     - [Linkers](#linkers)
-    - [Conclusion](#conclusion-9)
+    - [Conclusion](#conclusion-5)
 - [13. component cohesion](#13-component-cohesion)
     - [The reuse/release equivalence principle](#the-reuserelease-equivalence-principle)
     - [The common closure principle](#the-common-closure-principle)
@@ -78,14 +52,14 @@ Architecture is the highest level of abstraction that models a software system. 
     - [The common reuse principle](#the-common-reuse-principle)
         - [Relation to isp](#relation-to-isp)
     - [The tension diagram for component cohesion](#the-tension-diagram-for-component-cohesion)
-    - [Conclusion](#conclusion-10)
+    - [Conclusion](#conclusion-6)
 - [14. component coupling](#14-component-coupling)
     - [The acyclic dependencies principle](#the-acyclic-dependencies-principle)
         - [The weekly build](#the-weekly-build)
         - [Eliminating dependency cycles](#eliminating-dependency-cycles)
         - [The effect of a cycle in the component dependency graph](#the-effect-of-a-cycle-in-the-component-dependency-graph)
         - [Breaking the cycle](#breaking-the-cycle)
-        - [The &#8220;jitters&#8221;](#the-8220jitters8221)
+        - [The 'jitters'](#the-jitters)
     - [Top-down design](#top-down-design)
     - [The stable dependencies principle](#the-stable-dependencies-principle)
         - [Stability](#stability)
@@ -101,7 +75,7 @@ Architecture is the highest level of abstraction that models a software system. 
             - [The zone of uselessness](#the-zone-of-uselessness)
         - [Avoiding the zones of exclusion](#avoiding-the-zones-of-exclusion)
         - [Distance from the main sequence](#distance-from-the-main-sequence)
-    - [Conclusion](#conclusion-11)
+    - [Conclusion](#conclusion-7)
 - [Varchitecture](#varchitecture)
 - [15. what is architecture?](#15-what-is-architecture)
     - [Development](#development)
@@ -112,7 +86,7 @@ Architecture is the highest level of abstraction that models a software system. 
     - [Device independence](#device-independence)
     - [Junk mail](#junk-mail)
     - [Physical addressing](#physical-addressing)
-    - [Conclusion](#conclusion-12)
+    - [Conclusion](#conclusion-8)
 - [16. independence](#16-independence)
     - [Use cases](#use-cases)
     - [Operation](#operation-1)
@@ -126,7 +100,7 @@ Architecture is the highest level of abstraction that models a software system. 
     - [Independent deployability](#independent-deployability)
     - [Duplication](#duplication)
     - [Decoupling modes (again)](#decoupling-modes-again)
-    - [Conclusion](#conclusion-13)
+    - [Conclusion](#conclusion-9)
 - [17. boundaries: drawing lines](#17-boundaries-drawing-lines)
     - [A couple of sad stories](#a-couple-of-sad-stories)
     - [Fitnesse](#fitnesse)
@@ -134,7 +108,7 @@ Architecture is the highest level of abstraction that models a software system. 
     - [What about input and output?](#what-about-input-and-output)
     - [Plugin architecture](#plugin-architecture)
     - [The plugin argument](#the-plugin-argument)
-    - [Conclusion](#conclusion-14)
+    - [Conclusion](#conclusion-10)
 - [18. boundary anatomy](#18-boundary-anatomy)
     - [Boundary crossing](#boundary-crossing)
     - [The dreaded monolith](#the-dreaded-monolith)
@@ -142,22 +116,22 @@ Architecture is the highest level of abstraction that models a software system. 
     - [Threads](#threads)
     - [Local processes](#local-processes)
     - [Services](#services)
-    - [Conclusion](#conclusion-15)
+    - [Conclusion](#conclusion-11)
 - [19. policy and level](#19-policy-and-level)
     - [Level](#level)
-    - [Conclusion](#conclusion-16)
+    - [Conclusion](#conclusion-12)
 - [20. business rules](#20-business-rules)
     - [Entities](#entities)
     - [Use cases](#use-cases-1)
     - [Request and response models](#request-and-response-models)
-    - [Conclusion](#conclusion-17)
+    - [Conclusion](#conclusion-13)
 - [21. screaming architecture](#21-screaming-architecture)
     - [The theme of an architecture](#the-theme-of-an-architecture)
     - [The purpose of an architecture](#the-purpose-of-an-architecture)
     - [But what about the web?](#but-what-about-the-web)
     - [Frameworks are tools, not ways of life](#frameworks-are-tools-not-ways-of-life)
     - [Testable architectures](#testable-architectures)
-    - [Conclusion](#conclusion-18)
+    - [Conclusion](#conclusion-14)
 - [22. the clean architecture](#22-the-clean-architecture)
     - [The dependency rule](#the-dependency-rule)
         - [Entities](#entities-1)
@@ -168,7 +142,7 @@ Architecture is the highest level of abstraction that models a software system. 
         - [Crossing boundaries](#crossing-boundaries)
         - [Which data crosses the boundaries](#which-data-crosses-the-boundaries)
     - [A typical scenario](#a-typical-scenario)
-    - [Conclusion](#conclusion-19)
+    - [Conclusion](#conclusion-15)
 - [23. presenters and humble objects](#23-presenters-and-humble-objects)
     - [The humble object pattern](#the-humble-object-pattern)
     - [Presenters and views](#presenters-and-views)
@@ -176,21 +150,21 @@ Architecture is the highest level of abstraction that models a software system. 
     - [Database gateways](#database-gateways)
     - [Data mappers](#data-mappers)
     - [Service listeners](#service-listeners)
-    - [Conclusion](#conclusion-20)
+    - [Conclusion](#conclusion-16)
 - [24. partial boundaries](#24-partial-boundaries)
     - [Skip the last step](#skip-the-last-step)
     - [One-dimensional boundaries](#one-dimensional-boundaries)
     - [Facades](#facades)
-    - [Conclusion](#conclusion-21)
+    - [Conclusion](#conclusion-17)
 - [25. layers and boundaries](#25-layers-and-boundaries)
     - [Hunt the wumpus](#hunt-the-wumpus)
     - [Clean architecture?](#clean-architecture)
     - [Crossing the streams](#crossing-the-streams)
     - [Splitting the streams](#splitting-the-streams)
-    - [Conclusion](#conclusion-22)
+    - [Conclusion](#conclusion-18)
 - [26. the main component](#26-the-main-component)
     - [The ultimate detail](#the-ultimate-detail)
-    - [Conclusion](#conclusion-23)
+    - [Conclusion](#conclusion-19)
 - [27. services: great and small](#27-services-great-and-small)
     - [Service architecture?](#service-architecture)
     - [Service benefits?](#service-benefits)
@@ -200,14 +174,14 @@ Architecture is the highest level of abstraction that models a software system. 
     - [Objects to the rescue](#objects-to-the-rescue)
     - [Component-based services](#component-based-services)
     - [Cross-cutting concerns](#cross-cutting-concerns)
-    - [Conclusion](#conclusion-24)
+    - [Conclusion](#conclusion-20)
 - [28. the test boundary](#28-the-test-boundary)
     - [Tests as system components](#tests-as-system-components)
     - [Design for testability](#design-for-testability)
     - [The testing api](#the-testing-api)
         - [Structural coupling](#structural-coupling)
         - [Security](#security)
-    - [Conclusion](#conclusion-25)
+    - [Conclusion](#conclusion-21)
 - [29. clean embedded architecture](#29-clean-embedded-architecture)
     - [App-titude test](#app-titude-test)
     - [The target-hardware bottleneck](#the-target-hardware-bottleneck)
@@ -219,7 +193,7 @@ Architecture is the highest level of abstraction that models a software system. 
             - [The operating system is a detail](#the-operating-system-is-a-detail)
         - [Programming to interfaces and substitutability](#programming-to-interfaces-and-substitutability)
         - [Dry conditional compilation directives](#dry-conditional-compilation-directives)
-    - [Conclusion](#conclusion-26)
+    - [Conclusion](#conclusion-22)
 - [Videtails](#videtails)
 - [30. the database is a detail](#30-the-database-is-a-detail)
     - [Relational databases](#relational-databases)
@@ -228,24 +202,24 @@ Architecture is the highest level of abstraction that models a software system. 
     - [Details](#details)
     - [But what about performance?](#but-what-about-performance)
     - [Anecdote](#anecdote)
-    - [Conclusion](#conclusion-27)
+    - [Conclusion](#conclusion-23)
 - [31. the web is a detail](#31-the-web-is-a-detail)
     - [The endless pendulum](#the-endless-pendulum)
     - [The upshot](#the-upshot)
-    - [Conclusion](#conclusion-28)
+    - [Conclusion](#conclusion-24)
 - [32. frameworks are details](#32-frameworks-are-details)
     - [Framework authors](#framework-authors)
     - [Asymmetric marriage](#asymmetric-marriage)
     - [The risks](#the-risks)
     - [The solution](#the-solution)
     - [I now pronounce you &#8230;](#i-now-pronounce-you-8230)
-    - [Conclusion](#conclusion-29)
+    - [Conclusion](#conclusion-25)
 - [33. case study: video sales](#33-case-study-video-sales)
     - [The product](#the-product)
     - [Use case analysis](#use-case-analysis)
     - [Component architecture](#component-architecture)
     - [Dependency management](#dependency-management)
-    - [Conclusion](#conclusion-30)
+    - [Conclusion](#conclusion-26)
 - [34. the missing chapter](#34-the-missing-chapter)
     - [Package by layer](#package-by-layer)
     - [Package by feature](#package-by-feature)
@@ -289,11 +263,12 @@ Architecture is the highest level of abstraction that models a software system. 
         - [The debates continued](#the-debates-continued)
         - [... by any other name](#-by-any-other-name)
     - [Architects registry exam](#architects-registry-exam)
-    - [Conclusion](#conclusion-31)
+    - [Conclusion](#conclusion-27)
+- [Stuff that didn't fit nicely elsewhere:](#stuff-that-didnt-fit-nicely-elsewhere)
 
 <!-- /TOC -->
 
-### 2. A tale of two values (User Behavior and Malleability)
+### User Behavior and Malleability
 
 Software is measured in two dimensions: end user behavior and malleability. End user behavior is the delivery of use cases, while malleability is the ease with which the software can modify the existing use cases, or add new ones.  Software malleability is the evaluation function for an architecture. Malleability is the more important of these dimensions because over time there will be far more changes to the software then the original use case (e.g. the cost of maintenance far exceeds the software writing cost).
 
@@ -303,59 +278,17 @@ Product managers don't understand software enough to understand the notion of ma
 > On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
 
 
-### 3. paradigm overview
+### Software Paradigms
 
-#### Structured programming
+Software has evolved from unstructured, to structured, to object-oriented to functional paradigms. With each paradigm, additional constraints are placed on the programmers, which improves their productivity. These paradigms are a programming model more then a technical constraints as each paradigm can be implemented in assembly code (which is what compilers do)
 
-#### Object-oriented programming
+The value of the structured program is functional decomposition and constrained flow control, e.g. decomposable functions with constrained flow control (if/for/foreach) are the lowest level of our software systems. A key value of functions is 1) Letting the programmer understand the program a high level without knowing all the details  a 2) allowing a small unit which can be tested independently.
 
-#### Functional programming
+The value of the object oriented paradigm is encapsulation (bundling data with functions - e.g. classes and objects), and polymorphism (interfaces which can be instantiated with various types). 
 
-#### Food for thought
+Polymorphism gives programmers the most power, decoupling the source code dependency from the flow of control dependency. E.g. main only depends on the plugin interfaces, where modules must implement those interfaces (often with a simple adapter or facade). This is such a powerful difference from structured programming that it's called the dependency inversion principle (DIP).  This power enables the programmer to understand much more complex programs at a high level without knowing all the details. These low level details can be developed and deployed individually.
 
-#### Conclusion
-
-### 4. structured programming
-
-#### Proof
-
-#### A harmful proclamation
-
-#### Functional decomposition
-
-#### No formal proofs
-
-#### Science to the rescue
-
-#### Tests
-
-#### Conclusion
-
-### 5. object-oriented programming
-
-#### Encapsulation?
-
-#### Inheritance?
-
-#### Polymorphism?
-
-##### The power of polymorphism
-
-##### Dependency inversion
-
-#### Conclusion
-
-### 6. functional programming
-
-#### Squares of integers
-
-#### Immutability and architecture
-
-#### Segregation of mutability
-
-#### Event sourcing
-
-#### Conclusion
+The value of the functional paradigm is functions with no side effects and functional composition and currying. With this tool we reduce error, remove concurrency errors, and transform problems to be embarrassingly parallel.  Some mutation is always required, but it should be isolated as much as possible. However, less mutation is required then you think. In [event sourcing](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing) use store transaction records instead of updates and compute current state from the sum of previous updates we can remove mutation even from storage (e.g. CRUD becomes CR). If this sounds crazy you already use it daily when using source control, and is becoming very popular in react-redux applications and time travel debugging.
 
 ### Iiidesign principles
 
@@ -449,7 +382,7 @@ Product managers don't understand software enough to understand the notion of ma
 
 ##### Breaking the cycle
 
-##### The &#8220;jitters&#8221;
+##### The 'jitters'
 
 #### Top-down design
 
@@ -860,3 +793,8 @@ Product managers don't understand software enough to understand the notion of ma
 #### Conclusion
 
 
+
+### Stuff that didn't fit nicely elsewhere: 
+
+
+Notice that software is like physical laws in that they can not be proven, but can be falsified. Thus, tests can't prove software is correct, they can only prove it is broken. The best approximation of correctness is failing to prove software is broken.
