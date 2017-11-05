@@ -11,13 +11,7 @@ Architecture is the highest level of abstraction that models a software system. 
 
 <!-- TOC -->
 
-- [2. a tale of two values](#2-a-tale-of-two-values)
-    - [Behavior](#behavior)
-    - [Architecture](#architecture)
-    - [The greater value](#the-greater-value)
-    - [Eisenhower&#8217;s matrix](#eisenhower8217s-matrix)
-    - [Fight for the architecture](#fight-for-the-architecture)
-- [Iistarting with the bricks: programming paradigms](#iistarting-with-the-bricks-programming-paradigms)
+- [2. A tale of two values (User Behavior and Malleability)](#2-a-tale-of-two-values-user-behavior-and-malleability)
 - [3. paradigm overview](#3-paradigm-overview)
     - [Structured programming](#structured-programming)
     - [Object-oriented programming](#object-oriented-programming)
@@ -269,7 +263,7 @@ Architecture is the highest level of abstraction that models a software system. 
     - [4-tel](#4-tel)
     - [The service area computer](#the-service-area-computer)
         - [Dispatch determination](#dispatch-determination)
-        - [Architecture](#architecture-1)
+        - [Architecture](#architecture)
         - [The grand redesign in the sky](#the-grand-redesign-in-the-sky)
         - [Europe](#europe)
         - [Sac conclusion](#sac-conclusion)
@@ -279,10 +273,10 @@ Architecture is the highest level of abstraction that models a software system. 
     - [Pccu](#pccu)
         - [The schedule trap](#the-schedule-trap)
     - [Dlu/dru](#dludru)
-        - [Architecture](#architecture-2)
+        - [Architecture](#architecture-1)
     - [Vrs](#vrs)
         - [The name](#the-name)
-        - [Architecture](#architecture-3)
+        - [Architecture](#architecture-2)
         - [Vrs conclusion](#vrs-conclusion)
     - [The electronic receptionist](#the-electronic-receptionist)
         - [Er demise](#er-demise)
@@ -296,16 +290,6 @@ Architecture is the highest level of abstraction that models a software system. 
         - [... by any other name](#-by-any-other-name)
     - [Architects registry exam](#architects-registry-exam)
     - [Conclusion](#conclusion-31)
-- [Index](#index)
-- [Code snippets](#code-snippets)
-- [Code snippets](#code-snippets-1)
-- [Code snippets](#code-snippets-2)
-- [Code snippets](#code-snippets-3)
-- [Code snippets](#code-snippets-4)
-- [Code snippets](#code-snippets-5)
-- [Code snippets](#code-snippets-6)
-- [Code snippets](#code-snippets-7)
-- [Code snippets](#code-snippets-8)
 
 <!-- /TOC -->
 
