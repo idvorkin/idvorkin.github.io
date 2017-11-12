@@ -1,22 +1,21 @@
 ---
 layout: post
-title: "TheDip"
+title: "The Dip"
 date: "2017-11-12 06:45:30 Pacific Standard Time"
 inprogress: true
 tags:
     - book-notes
 ---
 
+Much of our failure comes from being distracted by tasks we don’t have the guts to quit.  Winners quit all the time. They quit the right stuff, so their energy can be saved to cross the Dip.
 
-Winners quit all the time. They quit the right stuff at the right time. Most of our failures come when we're distracted by tasks we don't have the guts to quit, or when we quit on the things that matter.
-
-Get [The Dip](https://www.amazon.com/dp/B000QCSA54/) on Amazon.
+Get [The Dip](https://www.amazon.com/dp/B000QCSA54/) to learn if you should be doubling down, or looking around.
 
 
 <!-- TOC -->
 <!-- /TOC -->
 
-### Notes beyond here are a mess, please ignore.
+## Notes beyond here are a mess, please ignore.
 
 ### Being well rounded is bad
 - Average is invisible is replacable
