@@ -2,6 +2,7 @@
 layout: post
 title: "Clean Architecture"
 date: "2017-11-04 10:28:05 Pacific Daylight Time"
+inprogress: true
 tags:
     - book-notes
     - software engineering
@@ -9,7 +10,7 @@ tags:
 
 Architecture is the highest level of abstraction that models a software system. The architecture is composed from modules, which are composed of objects, which are composed of functions.  Design is applied to each of these layers, and when executed successfully results in a system that is easy to build and maintain. Clean architecture discusses designs at a high level, which like architecture is highly useful. On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
 
-Get (Clean architecture)[https://www.amazon.com/dp/0134494164/] on Amazon.
+Get [Clean architecture](https://www.amazon.com/dp/0134494164/) on Amazon.
 <!-- TOC -->
 
 - [User Behavior and Malleability](#user-behavior-and-malleability)
