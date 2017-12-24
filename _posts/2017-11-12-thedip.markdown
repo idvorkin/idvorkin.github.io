@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post 
 title: "The Dip"
 date: "2017-11-12 06:45:30 Pacific Standard Time"
 inprogress: true
@@ -7,7 +7,7 @@ tags:
     - book-notes
 ---
 
-Much of our failure comes from being distracted by tasks we don�t have the guts to quit.  Winners quit all the time. They quit the right stuff, so their energy can be saved to cross the Dip.
+Much of our failure comes from being distracted by tasks we don't have the guts to quit.  Winners quit all the time. They quit the right stuff, so their energy can be saved to cross the Dip.
 
 Get [The Dip](https://www.amazon.com/dp/B000QCSA54/) to learn if you should be doubling down, or looking around.
 
@@ -89,7 +89,7 @@ WHAT SORT OF MEASURABLE PROGRESS AM I MAKING?
 ---
 Quitting Before You Start 
 Deciding in Advance When to Quit 
-Soft TiresPick Your Dip 
+Soft Tires Pick Your Dip 
 You're Astonishing 
 The Best in the World? 
 It's Almost Impossible to Overinvest in Becoming the Market Leader. 
@@ -110,7 +110,7 @@ When should I quit? I need to decide now, not when I'm in the middle of it, and 
 
 **I think I'm in a DIP**
 Should I really be calling on IBM? Should I really be trying to get on Oprah?
-Does it make sense to submit a résumé to every single ad on Craigslist, just to see what happens?
+Does it make sense to submit a resume to every single ad on Craigslist, just to see what happens?
 Can we make the world smaller?
 
 **I think I'm in a Cul-deSac:**
