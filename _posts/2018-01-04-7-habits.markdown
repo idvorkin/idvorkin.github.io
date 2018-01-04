@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Life the missing manual"
+date: "2018-01-04 05:46:41 Pacific Standard Time"
+comments: true
+inprogress: true
+collapsable: true
+
+tags: 
+    - emotional intelligence
+    - book-notes
+    - how igor ticks
+---
+Ever wish you had a user manual for your life?  Imagine how reassuring it would be to know you can look up your difficulties in the table of contents, and read the chapter on how to solve your problem.  For me, that manual is the The 7 Habits of Highly Effective People  and it contains a model which I apply to many of my personal and professional problems and goals.
+
+![igor_life_infographic](/images/igor-life-infographic.jpg)
+
+
+I use the concepts in this book as the basis of my self improvement and coaching.  To help me internalize the 7 habits, I'm creating [video summaries](https://www.youtube.com/watch?v=_1J7GM3GLzw&list=PLJveOxX-mxxCl4YDfHMyNzMmWUMFxgC1n) of the key concepts. 
+
+The habits in all their glory:
+
+1. Be Proactive
+1. Being with the end in mind
+1. First things first
+1. Seek win, win
+1. Seek First To Understand, then to be understood.
+1. Synergize
+1. Sharpen the saw
+
+
