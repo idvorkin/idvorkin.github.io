@@ -13,10 +13,9 @@ tags:
 <!-- markdownlint-disable MD003 -->
 <!-- markdownlint-disable MD036 -->
 
-
 Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am.   Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 
-_Currenty the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into enteraining others at my funeral_
+_Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into enteraining others at my funeral_
 
 _For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
 
@@ -61,21 +60,24 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 * To live
     * Bike touring with Family.
 
+### As a disciple of the 7 habits of highly effective people
+
+Igor became enthralled by the [7 habits of highly effective people](/2018-01-04-7-habits), and used it as his personal life guide. To help him learn the 7 habits better, he even created a [video series](https://www.youtube.com/watch?v=_1J7GM3GLzw&list=PLJveOxX-mxxCl4YDfHMyNzMmWUMFxgC1n).
 
 ### As a physical healthy human
 
-Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffiene to make sure his body forced him to get the sleep he needed. 
+Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed. 
 
 It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, [Igor weighted 230 lbs](https://www.flickr.com/photos/idvorkin/4590579760/in/datetaken/), and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
 
 Igor was incredibly grateful to his friend Ammon for teaching him about the weight pledge, and for being a weight pledge partner for over 30 years.
 
 * To File:
-    * How hard it was to stay warm.
+    * How hard it was to stay [warm](/staying-warm-and-biking).
     * Go to gym, even if it meant just going to the sauna
     * Toe Shoes
     * Squash/Fencing
-    * Biking to work 30 miles @ 6am 
+    * Biking to work 30 miles @ 6am
     * Going to the gym and just going to the sauna if that's all had energy for
 
 * Archived links
@@ -84,32 +86,43 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
     * Exercising with Tori and The Kids.
     * Teaching Zach the importance of physical fitness.
     * 140 lbs sustainable.
-    * Ad hoc Pushups and pullups 
-    * Flexibility 
+    * Ad hoc Pushups and pull ups
+    * Flexibility
     * Massages
     * Yoga
 
-### As an emotionally healhty human
+### As an emotionally healthy human
 
-Igor understood emotional health is the basis of his stability, and invested accordingly. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 20 minutes of meditation and writing out what made the day great in his gratefulness journal. 
+Igor understood emotional health is the basis of his stability, and [invested](http://idvorkin.github.io/search-inside-yourself) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
-Igor prided himself in being able to ride his 
+Igor prided himself in being calm like water, and have a grand-mother mind he could apply to [himself](https://www.amazon.com/Getting-Yes-Yourself-Worthy-Opponents-ebook/dp/B00OP1FIUM/ref=sr_1_3?ie=UTF8&qid=1515073110&sr=8-3&keywords=getting+to+yes+with+self), and to others.
 
 * To File:
     * Able to understand and influence the emotions of others
     * Knew his triggers, and quick sands, and had effective strategies for dealing with them.
-    * Able to contorl his emotionals
-    * Non-judgemental, compassionate, 
+    * Able to control his emotions
     * NLP - Reframing ideas.
-    * Getting to Yes with Self.
 * Archived links
 
 * To live
     * Meditation retreats?
-    * 
 
+
+### As a husband
+
+Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor).  Tori really values her privacy so expect this section to be Tori light, and Igor heavy.
+
+* To File
+    * Putting Tori's creativity in the fore front without putting Tori there.
+    * Tori being the man in the relationship - the wrench story, porch story, patio.
+    * Incredible costumes
+    * Incredible Chocolatiers
+    * Zach's+Tori about Mom being a job you can't stop at 4pm.
+* Archived links
+* To live
 
 ## Roles that are still in point form
+
 
 ### As a Friend, Mentee, and Mentor
 
@@ -143,7 +156,7 @@ Igor prided himself in being able to ride his
 
 * To File
     * Seeing Kids Play Together
-    * Teaching 7h/eq values to kids 
+    * Teaching 7h/eq values to kids
     * School events
     * Public transit together
     * teaching kids to be active
@@ -153,14 +166,17 @@ Igor prided himself in being able to ride his
     * Being cool for other kids
     * I choose ...
     * Enjoying family wasn't easy - it's a muscle to be built, and he built it.
+    * How relationship improved when I started walking Zach to school.
+    * Bragging about kids section.
+    * Weekly Swimming 
+    * Weekly Dates
 * Archived links
     * Birth stories
-    * [Poem for Zach - Tomorrow smiling at me](http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html?q=dead).
+    * [Poem for Kids - Tomorrow smiling at me](http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html?q=dead).
 
 * To live
     * Being with kids recharged him
     * Being with kids inspired him
-
 
 ### As an enjoyer of the great outdoors.
 
@@ -184,14 +200,6 @@ Igor prided himself in being able to ride his
     * Bike touring with Family.
     * Appalachian  Trail
     * The El Camino de Santiago 
-
-### As a husband
-
-* To File
-* Archived links
-    * [When Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor)
-    * [The Marriage Journey](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor)
-* To live
 
 ## Roles I haven't started writing yet
 
