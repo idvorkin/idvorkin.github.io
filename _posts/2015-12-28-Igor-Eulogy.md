@@ -6,6 +6,8 @@ inprogress: true
 collapsable: true
 featured: true
 comments: true
+redirect_from: "/Igor-Eulogy"
+permalink: "/eulogy"
 tags:
     - how igor ticks
     - emotional intelligence

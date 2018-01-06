@@ -153,7 +153,12 @@ prose:
           value: false
 
 
-gems: ["jekyll-paginate"]
-plugins_dir: ["jekyll-paginate", "jekyll-sitemap"]
+plugins_dir: ["jekyll-paginate", "jekyll-sitemap","jekyll-redirect-from"]
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+plugins:
+  - jekyll-redirect-from
+  - jekyll-paginate
+
+# Allow multiple permalinks for the same post
+# https://help.github.com/articles/redirects-on-github-pages/
