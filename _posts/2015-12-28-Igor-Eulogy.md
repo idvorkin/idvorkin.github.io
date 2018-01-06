@@ -21,7 +21,7 @@ _Currently the purpose of my eulogy is to guide me in living my life. As death g
 
 _For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
 
-### As an entertainer
+### As a dealer of smiles and wonder
 
 Juggling fire, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment.  Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their frown turned upside down.
 
@@ -42,7 +42,7 @@ Juggling fire, making cards change colors at a spectators command, or passing co
     * Going to random juggling/side show/magic convention.
     * Volunteering for sick kids.
 
-### As an alternate transportation advocate
+### As a guy who loved living car free.
 
 Igor took a strange pleasure in not driving. Riding his folding bike, or making a long day of public transit with Zach and Amelia. Igor would take the kids on the bus, to the train, to the airport, to ride the airport elevators, just to reverse the process and head home so he could enjoy his kids, and the bus, without spending a dime.
 
@@ -62,11 +62,11 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 * To live
     * Bike touring with Family.
 
-### As a disciple of the 7 habits of highly effective people
+### As a guy who lived the 7 habits of highly effective people.
 
-Igor became enthralled by the [7 habits of highly effective people](/2018-01-04-7-habits), and used it as his personal life guide. To help him learn the 7 habits better, he even created a [video series](https://www.youtube.com/watch?v=_1J7GM3GLzw&list=PLJveOxX-mxxCl4YDfHMyNzMmWUMFxgC1n).
+Igor became enthralled by the [7 habits of highly effective people](/7-habits), and used it as his personal life guide. He created a [7 habits video series](https://www.youtube.com/watch?v=_1J7GM3GLzw&list=PLJveOxX-mxxCl4YDfHMyNzMmWUMFxgC1n) so he could better understand the concepts and teach them to others.
 
-### As a physical healthy human
+### As a fit guy.
 
 Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed. 
 
