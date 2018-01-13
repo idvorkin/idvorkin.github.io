@@ -1,26 +1,29 @@
---- 
+---
 layout: post
 title: "My dream job"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
+permalink: "/job"
+
 tags:
+
     - how igor ticks
 ---
 
+Dream jobs have many dimensions so I'll describe my preferences in several of them dimensions. If you're deciding if you'll like working with me you should know I learn the needs of the business, and focus the team on delivering in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech.  When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office. 
 
-I learn the needs of the business, and focus the team on delivering in a sustainable manner. At the same time, I help the team members grow, develop our culture, and build valuable tech.
+---
 
-When talking to others, I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.
+### Startup, Turn Around, Accelerated Growth, Realignment, Sustaining Success: Startup and Turn around
 
-I'm interested in a wide variety of roles, but a team figuring out how to make users happier in support of a business need gets a **tonne** of points in my job evaluation criteria.
+*If you don't know those words, read about [STARS](https://hbr.org/2009/01/picking-the-right-transition-strategy)*
 
-You can find my resume @ [http://stackoverflow.com/cv/idvorkin](http://stackoverflow.com/cv/idvorkin)
+At this point in my career, my favorite situation is startup because it allows me to build a high performing team that can use ingenuity to get a solution out the door as quickly as possible. 
 
---- 
+Turn around situations can be much like startups, except instead of going from "0 to 1000", you need to go from "-100 to 100" with the existing team.  Because at the start of a turn around includes lots of demoralized players it is both incredibly difficult and also intensely satisfying for me once progress is made. 
 
-Below are the dimensions in which I think of my jobs.  The lets me, and others, reflect on the essence of the job I want.
-
+Accelerated Growth, Realignment, Sustaining Success aren't yet exciting to me, but I suspect as I continue my career  I'll find them appealing in that order. 
 
 ### B2C, B2B, Infrastructure? B2C!
 
@@ -33,31 +36,28 @@ As a human, I'm incredibly passionate about the related fields of productivity a
 
 ### Technologist or Entrepreneur: Entrepreneur!
 
-As I get older, I'm finding more satisfaction in solving a customers problem then in making the most out of technology.
-That said, I'm a technologist at heart, so I place a deep influence on the architecture as technology is the tool with which the entrepreneur meets the customer and business needs.
+As I get older, I'm finding more satisfaction in solving a customer's problem then extending the limits of technology.
+That said, I've built bad ass complex technical systems for the first 20 years of my career so I make sure we build and use the right architecture and technology to effectively meet the customers need.
 
 ### Product/Market Risk vs Technical Risk: Product/Market Risk!
 
 Incubations need to prove a risk can be overcome, either product/market or technical.  Product/market risk is "Do customers want your product", while  technical risk is "Can we build the tech to deliver it".
 
-I'm most interested in proving product/market fit. That said, with over 15 years experience as a software engineer, I'm well versed in resolving technical risk, an expert at system design, code, and mentoring developers.
+I'm most interested in proving product/market fit. That said, with over 20 years experience as a software engineer, I'm well versed in resolving technical risk, an expert at system design, code, and mentoring developers.
 
 ### Signals, Inferences, Experiences? Experiences!
 
-A lot of modern software can be decomposed in three layers: signals, inferences and experiences. Signals are the raw the input in the system, both static, and dynamic. Inferences are the computations performed over the signal to determine something meaningful, this often involves big data and ML. Experiences are the way inferences and signal are presented to the user, this is often an app and the services which power the app. Inferences and experiences often become new signal to drive the system.
+A lot of modern software can be decomposed in three layers: signals, inferences and experiences. Signals are the raw input in the system, both static, and dynamic. Inferences are the computations performed over the signal to determine something meaningful, this often involves big data and ML. Experiences are the way inferences and signal are presented to the user, this is often an app and the services which power the app. Inferences and experiences often become new signal to drive the system.
 
 I'm most interested in building the experiences, but that requires me to deeply understand and drive signals and inferences.
 ### Business, Experience, Technology: Business and Experience!
 
-Technology leaders need to divide their time among the business, experiences, and technology. While each of these are interesting at this point in my career Im most interested in the business and experiences.
-
-### The types of people I want to work with
-
-  tbd
+Technology leaders need to divide their time among the business, experiences, and technology. While each of these are interesting at this point in my career, my technology skill is well developed and now I want to focus on building my business and experiences muscles.
 
 ### The team culture I want to nurture.
 
-
+* Build high performing teams from scratch
+* Turn around teams in trouble.
 * [Feelings meetings]({% post_url 2016-3-21-Human-Meetings %})
 * Continuous improvement process
 * Frequent inter and intra team feedback

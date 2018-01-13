@@ -203,6 +203,22 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
     * Appalachian  Trail
     * The El Camino de Santiago 
 
+
+### As a guy who goes to work every day 
+
+Igor didn't finish writhing this section, but he did think alot about his [dream job](/job).
+
+To file:
+
+    * Holstien Canada High School Drop Out
+    * Bad ass Java Compiler Team
+    * Making router run 802.11 G
+    * Implementing Bit Locker for the phone
+    * Staring Cloud Computing 
+    * Smile
+    * Cache
+    * [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum for expressing emotions.
+
 ## Roles I haven't started writing yet
 
 tbd
@@ -215,9 +231,6 @@ Discipline is hard. Frequently Igor's discipline started strong at the beginning
 
 tbd
 
-### As a worker
-
-tbd
 
 ### As someone who made others happy through pleasure, flow and purpose.
 
