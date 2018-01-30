@@ -28,6 +28,8 @@ Books allow great thoughts to enter our mind and mold us into who we want to bec
 
 **[Seach Inside Yourself (SIY)](/search-inside-yourself)** How to train emotional intelligence through mindfulness
 
+**[Gettign To Yes with yourself](/getting-to-yes-with-yourself)** Handing the hardest negotiating oppoent - yourself. A constant reminder of being gentle on yourself.
+
 
 ### On doing the things you want to do.
 
