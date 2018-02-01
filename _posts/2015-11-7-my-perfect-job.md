@@ -19,9 +19,9 @@ Dream jobs have many dimensions so I'll describe my preferences in several of th
 
 *If you don't know those words, read about [STARS](https://hbr.org/2009/01/picking-the-right-transition-strategy)*
 
-At this point in my career, my favorite situation is startup because it allows me to build a high performing team that can use ingenuity to get a solution out the door as quickly as possible. 
+At this point in my career, my favorite situation is startup (e.g. [Smile](http://igsmilebox.blogspot.com), Amazon Video Shopping, Employee #50 at Azure) because it allows me to build a high performing team that can use ingenuity to get a solution out the door as quickly as possible. 
 
-Turn around situations can be much like startups, except instead of going from "0 to 1000", you need to go from "-100 to 100" with the existing team.  Because at the start of a turn around includes lots of demoralized players it is both incredibly difficult and also intensely satisfying for me once progress is made. 
+Turn around situations(e.g. [Cache](/cache)) can be much like startups, except instead of going from "0 to 1000", you need to go from "-100 to 100" with the existing team.  Because the start of a turn around includes lots of demoralized players it is both incredibly difficult and also intensely satisfying for me once progress is made. 
 
 Accelerated Growth, Realignment, Sustaining Success aren't yet exciting to me, but I suspect as I continue my career  I'll find them appealing in that order. 
 

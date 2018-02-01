@@ -210,14 +210,15 @@ Igor didn't finish writhing this section, but he did think alot about his [dream
 
 To file:
 
-    * Holstien Canada High School Drop Out
-    * Bad ass Java Compiler Team
-    * Making router run 802.11 G
-    * Implementing Bit Locker for the phone
-    * Staring Cloud Computing 
-    * Smile
-    * Cache
-    * [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum for expressing emotions.
+* Holstien Canada High School Drop Out
+* Bad ass Java Compiler Team
+* Making router run 802.11 G
+* Implementing Bit Locker for the phone
+* [Software as a Story](/tags/index.html#Software as a Story) 
+* [Staring Cloud Computing](/The-Genesis-Node)
+* [Smile](http://igsmilebox.blogspot.com)
+* [Cache](/cache)
+* [Human/Feelings Meetings](/Human-Meetings) a forum for expressing emotions.
 
 ## Roles I haven't started writing yet
 
