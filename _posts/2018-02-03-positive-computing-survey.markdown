@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A whirlwind tour of of positive computing"
+title: "Positive computing a whirlwind tour"
 date: "2018-02-03 10:41:29 Pacific Standard Time"
 comments: true
 inprogress: true

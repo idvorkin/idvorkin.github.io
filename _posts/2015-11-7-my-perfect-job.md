@@ -31,7 +31,8 @@ At this point in my career I'm interested in making the lives of others better. 
 
 ### Product Domain? Productivity and Positive Computing!
 
-As a human, I'm incredibly passionate about the related fields of productivity and positive psychology. I'd like to harness this passion to make the world a better place.
+As a human, I'm incredibly passionate about well being. Well being is explored in the nascent field of [positive computing](/positive-computing-survey), the computing analog to positive psychology. Computing jobs focused on well being are rare, but if that's something you need help working on, I might jump at the chance to join you, so reach out.
+
 
 
 ### Technologist or Entrepreneur: Entrepreneur!
