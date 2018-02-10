@@ -14,21 +14,21 @@ Books allow great thoughts to enter our mind and mold us into who we want to bec
 
 ### Overall
 
-**[Seven Habits of Highly Effective People (7H)](http://ig2600.blogspot.com/2013/11/soft-skills-your-life-missing-manual.html)** - How to live your life__'.'__
+**[Seven Habits of Highly Effective People (7H)](/7-habits)** - How to live your life__'.'__
 
-**[Essentialisim](/essentialism)** A life is well lived by picking what goes on your todo list, not by how many things you can check off your todo list.
+**[Essentialisim](/essentialism)** A deep dive into habit #2 - begin with the end in mind: You must trade-off. You can do one thing. What is most important? If you didn't have this thing would you buy it? If you didn't have this opportunity, what would you give up for it? 
 
-**The checklist manifesto** Why checklists free you to be creative, and models allow you to better explore the world.
+**Getting things done** A deep dive into habits #1 and #3 - be proactive, and do first things first:  Stress free productivity through getting things out of your head and bottom up planning.
 
-**Getting things done** Stress free productivity through getting things out of your head and bottom up planning.
+**The checklist manifesto** You waste lots of time re-thinking what you know. Create checklists to free you to be creative, and models to better explore the world.
 
 ### On emotional health and intelligence
 
 **[Humans are underrated](/humans-are-underrated)** The skills that will be most valuable when robots take over the world.
 
-**[Seach Inside Yourself (SIY)](/search-inside-yourself)** How to train emotional intelligence through mindfulness
+**[Search Inside Yourself (SIY)](/search-inside-yourself)** How to train emotional intelligence through mindfulness
 
-**[Getting To Yes with yourself](/getting-to-yes-with-yourself)** Handling the hardest negotiating oppoent - yourself. I didn't enjoy the presentation of the book, but the essence is excellent.
+**[Getting To Yes with yourself](/getting-to-yes-with-yourself)** Handling the hardest negotiating opponent - yourself. I didn't enjoy the presentation of the book, but the essence is excellent.
 
 
 ### On doing the things you want to do.
@@ -41,7 +41,7 @@ _Then, one by one, they went to see Mr. Plumbean, late at night.  They would sit
 
 _And whenever anybody visited Mr. Plumbean's house, the very next day that person would set about changing his own house to fit his dreams._
 
-**The Flinch** The resistance is the voice in your head that makes you afraid.  F#$ the resistance!
+**The Flinch** The resistance is the voice in your head that makes you afraid.  F#$ the resistance! This is such an important lesson, I invented, and annually celebrate [jump in the lake day](https://ig66.blogspot.com/search/label/jump_in_lake_day)!
 
 **The Dip** Quit everything that doesn't get you were you want to be.
 
