@@ -13,9 +13,16 @@ Positive computing is the software branch focused on increasing human well being
 
 [Cognitive Behavior Therapy](https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy) (CBT) is a form of psychotherapy that treats problems and boosts happiness by modifying dysfunctional emotions, behaviors, and thoughts. Unlike traditional Freudian psychoanalysis, which probes childhood wounds to get at the root causes of conflict, CBT focuses on solutions, encouraging patients to challenge distorted cognitions and change destructive patterns of behavior. Because of it's 'shallow' depth, CBT is the basis of many of the positive psychology apps.
 
+#### Frequent Features
 
+Many positive computing apps mix and match the following features. Some apps focus only on one of these, but usually it's a combination.
+
+__Mood tracking__ Record your mood and graph it over time (similar to tracking weight)
+**Meditation Timer**  Set a timer to track meditation.
+**Paid meditation courses**  Buy a meditation course - great way to monetize.
 
 #### CBT Activity/Apps:
+
 [Happify](https://www.happify.com)([CrunchBase](https://www.crunchbase.com/organization/happify)): Analytical, gamified activities to improve wellbeing (e.g. click balloons with positive words).
 
 * I find this app very analytical, feels too data-driven for average folks.
@@ -25,6 +32,8 @@ Positive computing is the software branch focused on increasing human well being
 
 * This looks like it's targetting clinical support.
 
+[Mood Notes](http://moodnotes.thriveport.com/)([Crunchase](https://www.crunchbase.com/organization/thriveport)) - Basic mood tracking + CBT exercise like  self reflection and common distortion evaluation. 
+* Very cool mood entering by doing an up/down on a face - very cool.
 
 #### CBT Chat Bots
 
