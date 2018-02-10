@@ -8,7 +8,7 @@ tags:
     - positive-computing
 
 ---
-Positive computing is the software branch focused on increasing human well being.  Similar to positive psychology, it is a brand new field and our industry has barely begun. I'll use this post to gather my half baked thoughts on the various applications I've seen.  For now it'll be confusing as I'm brain dumping to various audiences with various knowledge.
+Posi tive computing is the software branch focused on increasing human well being.  Similar to positive psychology, it is a brand new field and our industry has barely begun. I'll use this post to gather my half baked thoughts on the various applications I've seen.  For now it'll be confusing as I'm brain dumping to various audiences with various knowledge.
 
 
 [Cognitive Behavior Therapy](https://en.wikipedia.org/wiki/Cognitive_behavioral_therapy) (CBT) is a form of psychotherapy that treats problems and boosts happiness by modifying dysfunctional emotions, behaviors, and thoughts. Unlike traditional Freudian psychoanalysis, which probes childhood wounds to get at the root causes of conflict, CBT focuses on solutions, encouraging patients to challenge distorted cognitions and change destructive patterns of behavior. Because of it's 'shallow' depth, CBT is the basis of many of the positive psychology apps.
@@ -17,9 +17,9 @@ Positive computing is the software branch focused on increasing human well being
 
 Many positive computing apps mix and match the following features. Some apps focus only on one of these, but usually it's a combination.
 
-__Mood tracking__ Record your mood and graph it over time (similar to tracking weight)
-**Meditation Timer**  Set a timer to track meditation.
-**Paid meditation courses**  Buy a meditation course - great way to monetize.
+* __Mood tracking__ Record your mood and graph it over time (similar to tracking weight)
+* **Meditation Timer**  Set a timer to track meditation.
+* **Paid meditation courses**  Buy a meditation course - great way to monetize.
 
 #### CBT Activity/Apps:
 
