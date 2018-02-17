@@ -19,7 +19,7 @@ description: "An archive of posts sorted by tag."
 {% for tag in tag_words %} 
 	<h2 id="{{ tag }}">{{ tag | capitalize }}</h2>
 	<ul class="post-list">
-		{% assign pages_list = site.tags[tag]] %}  
+		{% assign pages_list = site.tags[tag] %}  
 		{% for post in pages_list %}
 			{% if post.title != null %}
 			{% if group == null or group == post.group %}
