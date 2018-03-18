@@ -9,6 +9,7 @@ permalink: "/job"
 tags:
 
     - how igor ticks
+    - software engineering
 ---
 
 Dream jobs have many dimensions so I'll describe my preferences in several of them dimensions. If you're deciding if you'll like working with me you should know I learn the needs of the business, and focus the team on delivering in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech.  When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office. 
