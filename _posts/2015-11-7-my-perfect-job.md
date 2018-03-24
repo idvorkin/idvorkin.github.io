@@ -4,17 +4,24 @@ title: "My dream job"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
+redirect_from: 
+    - "/dream-job"
+    - "/perfect-job"
 permalink: "/job"
 
 tags:
-
     - how igor ticks
     - software engineering
+    - strategy
 ---
 
 Dream jobs have many dimensions so I'll describe my preferences in several of them dimensions. If you're deciding if you'll like working with me you should know I learn the needs of the business, and focus the team on delivering in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech.  When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office. 
 
 ---
+
+### Engineering Manager or Tech lead: Engineering Manager
+
+I'm passionate about tech, but I'm even more passionate about aspiring to be the [best boss my team will ever have](being-a-great-manager).  Part of being the best is having deep understanding of the tech, so I always have some [small projects on the side](https://github.com/idvorkin), and every few years I'll do a rotation as a [tech lead](/software-leadership-roles).
 
 ### Startup, Turn Around, Accelerated Growth, Realignment, Sustaining Success: Startup and Turn around
 

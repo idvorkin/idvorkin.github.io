@@ -14,11 +14,11 @@ Logically in a software organization needs to fill 4 roles. These roles are ofte
 
 **The tech lead:** The person who leads the team that actually builds it.
 
-**The product manager:** The person who figures out what to build to satisfy customers.
-
 **The architect:** The person who translates a ideas that a product manager wants into ideas that can be implemented.
 
-**The engineering manager:** The person who keeps engineers happy.
+**The product manager:** The person who figures out what to build to satisfy customers.
+
+**The engineering manager:** The person who makes sure the organization is [getting the most out of the team](/being-a-great-manager) and fills in the gaps.
 
 **Lets dive deep into the differences between architect and technical lead**
 
@@ -56,7 +56,7 @@ In general the architect needs to be an excellent communicator given their prima
 
 At the end of the day what really matters in both cases is the individuals in both roles are technically sound and work on tasks that they are good at. I've seen individuals who are exceptionally good at one of the spectrum who probably would be underutilized in the other role.
 
-In the past, I've sometimes seen an engineering manager take on all of the aforementioned roles when the team was small at the start of a project. 
+I've seen engineering manager take on all of the aforementioned roles depending on the gaps in the team. 
 
 Given that there is often enough of an overlap in the core technical competencies, many organizations don't formalize the distinction between the two roles in terms of an actual title and just let individuals gravitate towards what they do best.
 

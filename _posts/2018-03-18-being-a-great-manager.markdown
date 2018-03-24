@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "being-a-great-manager"
+title: "Being a great manager"
 date: "2018-03-18 06:24:17 -0700"
 comments: true
 inprogress: true
