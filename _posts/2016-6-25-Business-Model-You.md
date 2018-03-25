@@ -8,6 +8,7 @@ collapsable: true
 
 tags: 
     - strategy
+    - how igor ticks
 ---
 
 The business model canvas is a tool for understanding how a company makes money. We can apply the same canvas to a person, in this article, it'll be me.
@@ -26,6 +27,8 @@ The business model canvas is a tool for understanding how a company makes money.
     * Self Development
     * Making people Smile
     * Growing People
+    * Shipping
+    * Hiring and Retaining
 
 * Abilites _(Things that are effortless)_
 
@@ -33,6 +36,8 @@ The business model canvas is a tool for understanding how a company makes money.
     * Creative
     * Moving peoples emotions
     * Hustling
+    * Hiring
+    * Appreciating the team
     * Emotional Analysis
     * Presenting in front of large groups
     * Being Comfortable
@@ -63,21 +68,26 @@ The business model canvas is a tool for understanding how a company makes money.
 * Understand each team members goals, and build plan to achieve them.
 * Balance short term delivery with investments in people, culture, and technology.
 * Build relationships with partners to ensure when stuff goes south, can get it back with minimal suffering.
+* Hire and retain teams
 * Feelings Meetings
+
 
 ### Customers - Who you help:
 
 * My Product's Customer
-* My Dev Team
-* My L2 Lead
+* My Engineering Team
 * My Product Manager
+* My Boss
+* My Grand Boss
 * Feeling Meetings Members
+
+## Per customer boxes:
 
 ### Value Provided - How you help:
 
 ### Channels - How they know you, how you deliver
 
-More complex then it sounds:
+More complex then it sounds, need to do this per customer segment:
 
 * How will potential customers discover how you help them?
 * How will they decide whether to buy your product or services?
@@ -91,6 +101,26 @@ More complex then it sounds:
 * What is the frequency?
 * Is the goal retention or Aquisition?
 
+## Customer Segment Specific Interaction
+
+### Customer: Engineering Team
+
+**Value Provided** - tbd
+
+**Channel** - tbd
+
+**Relationship** - tbd
+
+
+### Customer: Product Manager
+### Customer: Boss
+### Customer: Grand Boss
+### Customer: mentees
+### Customer: Feeling Meetings Members
+
+
+
+## Partner/Revenues/Cost
 
 ### Key Partners - Who helps you?
 
@@ -111,8 +141,14 @@ More complex then it sounds:
     * MacBook
 
 * Intangible
+    * Autonomy
+    * Mastery
+    * Purpose
+    * Pride
+    * Satisfaction
+    * Training
     * Commute time.
-    * Accesst to good people
+    * Access to good people
     * Nice places to go for lunch
 
 ### Costs - What you give?
@@ -120,7 +156,6 @@ More complex then it sounds:
 * Tangible
 
     * Time 
-    * Training
 
 * Intangible
 
