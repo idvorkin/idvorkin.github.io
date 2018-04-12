@@ -41,8 +41,6 @@ At this point in my career I'm interested in making the lives of others better. 
 
 As a human, I'm incredibly passionate about well being. Well being is explored in the nascent field of [positive computing](/positive-computing-survey), the computing analog to positive psychology. Computing jobs focused on well being are rare, but if that's something you need help working on, I might jump at the chance to join you, so reach out.
 
-
-
 ### Technologist or Entrepreneur: Entrepreneur!
 
 As I get older, I'm finding more satisfaction in solving a customer's problem then extending the limits of technology.
@@ -67,10 +65,10 @@ Technology leaders need to divide their time among the business, experiences, an
 
 * Build high performing teams from scratch
 * Turn around teams in trouble.
-* [Feelings meetings]({% post_url 2016-3-21-Human-Meetings %})
-* Continuous improvement process
+* Continuous improvement to process
 * Frequent inter and intra team feedback
-* Going to work is like hanging out with friends.
 * Data driven decision making and engineering
-* Gelled team, rallying behind the projects.
-* I get to do lots of mentoring.
+* Gelled team, rallying to support each other while delivering the projects.
+* Continuously building insights through [coaching](/Coaching-Questions)
+* Going to work is like hanging out with friends.
+* [Feelings meetings]({% post_url 2016-3-21-Human-Meetings %})

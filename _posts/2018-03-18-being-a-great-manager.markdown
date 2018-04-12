@@ -67,9 +67,13 @@ All of Amazon's (leadership principle)[https://www.amazon.jobs/principles] are s
 
 
 
-## Management situtations
+## Management situations
 
 As a manager, you'll run into these situations. Each company and team has their own culture around these situtations, and I'll enumerate things I've learned for them.
+
+### Coaching Strategies
+
+Coaching is critical to being a great manager - an excellent primer is [The 7 coaching questions](/Coaching-Questions)
 
 ### Performance Review Strategies
 ### Career Planning
