@@ -21,21 +21,19 @@ Most managers focus on solving problems, making sure employees and customers are
 
 #### Elevation: Plan for peak moments
 
-* Lots of opportunities for peak moments - go!
-* They need to be personal, not programmatic, and this will be hard, prepare yourself:
-    * Channel - how to do quicker, faster, cheaper. [CALL OUT]
-    * No bandwidth, do something easier.
-    * Org focus on scaling, but that's not what people want.
-    * Reasonable squeaks out the magic for moments
+* There are lots of opportunities for peak moments - find them!
+* Moments need to be personal, not programmatic. Expect resistance, prepare yourself:
+    * Constant pressure to do it faster, cheaper, more scalable. 
+    * Organizations naturally focus on scaling, but that's not what employees want.
+    * You always have limited bandwidth, do not do something easier.
+    * Doing a "reasonable moment" kills the magical moments
     * You need to fight the reasonable solutions, and go for the extraordinary.
-* Break the script, get creative to make it personal:
-    * Birthday:
-        * 100$ for each persons birthday for someone else to plan.
-        * Spend it for you as needed.
-        * Random person celebrates birthday and plans
-    * Give a tonne of Zimbabwe money.
-    *  Run across office in a gorilla solution.
-* Transitions
+* Break the script, get creative to make it memorable:
+    * Each birthday is planned by a randomly selected other team mate - give 'em 100$ and say go. 
+    * Give a tonne of Zimbabwe money (100 Trillion currency).
+    * Run across office in a gorilla solution.
+    * Managers makes breakfast for team (include homemade dishes - yummy Indian food)
+* Opportunities for  abound: Transitions
     * First day of work - John Deer example
     * South west air lines - on intercom, someone getting married.  Hand out napkins for advice to marriage. 
     * Promotions
@@ -66,33 +64,24 @@ Most managers focus on solving problems, making sure employees and customers are
 #### Insights: Deliberate stretching -- helping folks do it.
 
 * See [7 coaching questions](~/Coaching-questions)
-* Stretch for insights.
-* Run risk of failure to grow. 
-* Pastor give intern chance to do Easter Sunday.
-* Make a development plan have concrete milestones, not just courses:
-    * Learn project management to be able to do a product release
-    * Speech at conference - to support story telling training.
-* Usually supply side training E.g. Story telling as capability at 3 year mark vs seek it out so you can do  a big conference speech.
+* Help employees stretch to find insights. If you don't employees will fail to grow, and that sucks.
+* Don't just have a 'here is how to get better", ask for a "what". E.g. 
+    * Own a product release - get a project management mentor
+    * Speech at conference - take story telling training.
+* E.g. Pastor give intern chance to do Easter Sunday, huge growth by employee.
 
 #### Pride: Pay attention to recognition
 
-* Great recognition - I saw what you did and appreciated it.
-* Attention to recognition
-* MAKe RECOGNITION PART OF YOUR CULTURE
-* Managers - (Praise your employeeds? 80%) Employees (20%)
-* Do not make a program - systemic response but that breaks it. 
-* Use personal, not programatic. 
-* Managers behavior change. 
-* (SWITCH think through these) 
-* [TODO: Yup brands recognition]
-    * Making it easier - cards for giving recognition. Write out hand written note to give it publicly. 
-        *  Public is good.
-         * Social.
-    * Each leader gives out thier own type of report.
-    * Huge piles of money (Zimbabwee) Get 3 Million Zimbabwee dollars. 
-    * (Some programattic elements) - not a program, just making it easier to happen spontanious and personal. 
-* Employeeds feel noticed. 
-* Client write something nice -- print customer comments framed, add his, and bring to an employees. 
-* Free, powerful, givers and receivers feel great. 
-
-
+* At the core - I saw what you did and appreciated it!
+* Make recognition a part of your culture (employees copy managers)
+* Do it more then you think - managers think they get an 8/10 for recognition, but employees report 4/10.
+* This makes employees feel noticed and valued - it's catching people doing this right which will reinforce behavior.
+* Free to do, it's very powerful, and both the givers and receivers feel great. 
+* Can't be a scalable program, needs to personal.
+* But can make it easier on yourself - Have a stack of coffee cards for giving recognition. Write out hand written note to give it publicly. 
+    *  Public is good.
+     * Social.
+* Examples:
+    * Each leader gives out their own type of recognition.
+    * Huge piles of money (Zimbabwe) Get 3 Million Zimbabwe dollars. 
+    * Client write something nice -- print customer comments, and your own comments get it framed and give it to the employee.
