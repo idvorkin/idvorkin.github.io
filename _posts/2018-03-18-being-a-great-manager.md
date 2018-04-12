@@ -15,7 +15,64 @@ tags:
 
 I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incrediblely stiff competition at the the top, and I'll often fall short, but only by trying will I get closer. This post will gather some research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
 
-## Attributes of great managers
+## Management situations
+
+As a manager, you'll run into these situations. Each company and team has their own culture around these situations, and I'll enumerate things I've learned for them.
+
+* Determining compensation - Stack ranking/OLR
+* Delivering Performance reviews
+    * Amazon Forte
+    * Microsoft Connects
+* Career Planning
+* Strategic Planning
+* Promotions
+    * Amazon promo trackers
+* Interviewing best practices - External
+    * Feed forward interview loops
+    * Feedback interviewers
+    * Bar raiser, as appropriate
+* Interviewing best practices - Internal
+* Managing out
+* Building culture
+* Recruiting
+
+## Behaviors I do that I'm proud of: 
+
+* Coaching is critical to being a great manager - an excellent primer is [The 7 coaching questions](/Coaching-Questions).
+* When we remember work, we think about our [peak moments](/moments-at-work).
+* [Human Meetings](/human-meetings)
+* The team members are my most important customer, and will be treated as such.
+* Building high performance teams
+* Team wide appreciation
+    * Weekly linked in posts celebrating the team
+    * Cook the team breakfast
+* Individual specific recognition
+    * Continuous on the spot recognition.
+    * [Pending] Hand written notes
+* Keeping everyone informed and proud
+    * Monthly newsletters 
+    * Draw pictures/pen casts
+* Hiring Strategies
+    * Weekly linked in posts celebrating the team
+* Ease at which my team can collaborate across the larger organization.
+* Leadership card experience
+* Team wide engagement through clustering [exercises](https://www.oxfordhomeschooling.co.uk/blog/brainstorming-clustering/).
+* Self-service management through fortune cookies.
+* Some behaviors I'm just starting, these include
+    * Team music videos
+    * Engineering peak moments
+
+
+## How will I measure my success as a manager
+
+* Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon forte)
+* Employee career velocity. 
+* Employee feedback (Linked recommendations)
+* Employee referrals
+* Delivery velocity
+* Business success
+
+## Per company principles for being a great manager
 
 ### Google's Project Oxygen
 
@@ -25,7 +82,7 @@ Google is a very data driven, willing to challenge the status quo company.  One 
 1. Empowers team and does not micromanage
 1. Creates an inclusive team environment, showing concern for success and well-being
 1. Is productive and results-oriented
-1. Is a good communicator — listens and shares information
+1. Is a good communicator - listens and shares information
 1. Supports career development and discusses performance
 1. Has a clear vision/strategy for the team
 1. Has key technical skills to help advise the team
@@ -64,46 +121,3 @@ All of Amazon's (leadership principle)[https://www.amazon.jobs/principles] are s
 **Dive Deep** - Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and anecdote differ. No task is beneath them.
 
 **Have Backbone; Disagree and Commit** - Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.
-
-
-
-## Management situations
-
-As a manager, you'll run into these situations. Each company and team has their own culture around these situtations, and I'll enumerate things I've learned for them.
-
-### Coaching Strategies
-
-Coaching is critical to being a great manager - an excellent primer is [The 7 coaching questions](/Coaching-Questions)
-
-### Performance Review Strategies
-### Career Planning
-### Promotions
-### Strategic Planning
-### Interviewing best practices - External
-### Interviewing best practices - Internal
-### Managing out
-
-## Making me a great manager
-
-## How will I measure my success as a manager
-
-* Employee Surveys (MS Poll, Amazon Connnections, Amazon Tech Survey, Amazon Forte)
-* Employee Career Velocity. 
-* Employee Feedback
-* Employee Referals
-
-## What behavior do I have that make me unique.
-
-* Human Meetings
-* Making moments
-* The team members are my most important customer, and will be treated as such.
-* Building high performance teams
-* Draw pictures/pen casts
-* Weekly linked in posts celebrating the team
-* Team appreciation
-    * Cook the team breakfast
-* Monthly newsletters 
-* Hiring Strategies
-
-### What behavior do I want to do:
-* Team music videos
