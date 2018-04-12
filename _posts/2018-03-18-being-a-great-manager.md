@@ -13,7 +13,7 @@ tags:
     - how igor ticks
 ---
 
-I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incrediblely stiff competition at the the top, and I'll often fall short, but only by trying will I get closer. This post will gather some research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
+I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short, but only by trying will I get closer. This post will gather some research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
 
 ## Management situations
 
@@ -95,7 +95,7 @@ All of Amazon's (leadership principle)[https://www.amazon.jobs/principles] are s
 
 **Hire and Develop the Best** - Leaders raise the performance bar with every hire and promotion. They recognize exceptional talent, and willingly move them throughout the organization. Leaders develop leaders and take seriously their role in coaching others. We work on behalf of our people to invent mechanisms for development like Career Choice.
 
-**Earn Trust** - Leaders listen attentively, speak candidly, and treat others respectfully. They are vocally self-critical, even when doing so is awkward or embarrassing. Leaders do not believe their or their team’s body odor smells of perfume. They benchmark themselves and their teams against the best.
+**Earn Trust** - Leaders listen attentively, speak candidly, and treat others respectfully. They are vocally self-critical, even when doing so is awkward or embarrassing. Leaders do not believe their or their team's body odor smells of perfume. They benchmark themselves and their teams against the best.
 
 **Deliver Results** - Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion. Despite setbacks, they rise to the occasion and never settle.
 
@@ -103,11 +103,11 @@ All of Amazon's (leadership principle)[https://www.amazon.jobs/principles] are s
 
 **Customer Obsession** Leaders start with the customer and work backwards. They work vigorously to earn and keep customer trust. Although leaders pay attention to competitors, they obsess over customers.
 
-**Are Right, A Lot** - Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to disconfirm their beliefs.
+**Are Right, A Lot** - Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to dis confirm their beliefs.
 
-**Ownership** Leaders are owners. They think long term and don’t sacrifice long-term value for short-term results. They act on behalf of the entire company, beyond just their own team. They never say “that’s not my job". 
+**Ownership** Leaders are owners. They think long term and don't sacrifice long-term value for short-term results. They act on behalf of the entire company, beyond just their own team. They never say "that's not my job". 
 
-**Invent and Simplify** - Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by “not invented here". As we do new things, we accept that we may be misunderstood for long periods of time.
+**Invent and Simplify** - Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by "not invented here". As we do new things, we accept that we may be misunderstood for long periods of time.
 
 
 **Learn and Be Curious** - Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and act to explore them.
