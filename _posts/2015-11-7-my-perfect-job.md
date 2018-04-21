@@ -11,6 +11,7 @@ permalink: "/job"
 
 tags:
     - how igor ticks
+    - manager
     - software engineering
     - strategy
 ---
@@ -61,14 +62,10 @@ I'm most interested in building the experiences, but that requires me to deeply 
 
 Technology leaders need to divide their time among the business, experiences, and technology. While each of these are interesting at this point in my career, my technology skill is well developed and now I want to focus on building my business and experiences muscles.
 
-### The team culture I want to nurture.
+### Regardless of my job I will be successful when: 
 
-* Build high performing teams from scratch
-* Turn around teams in trouble.
-* Continuous improvement to process
-* Frequent inter and intra team feedback
-* Data driven decision making and engineering
-* Gelled team, rallying to support each other while delivering the projects.
-* Continuously building insights through [coaching](/Coaching-Questions)
+* The team is high performing (even if they start off in trouble)
 * Going to work is like hanging out with friends.
-* [Feelings meetings]({% post_url 2016-3-21-Human-Meetings %})
+* Work is filled with [peak moments](/moments-at-work)
+* Everyone gets value from personalized [coaching](/Coaching-Questions)
+* (In very special places ...) I run [Feelings meetings](/Human-Meeting)

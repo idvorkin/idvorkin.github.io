@@ -7,18 +7,18 @@ inprogress: true
 collapsable: true
 
 tags: 
-    - book-notes
-    - strategy
     - software engineering
     - how igor ticks
+    - manager
 ---
 
-I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short, but only by trying will I get closer. This post will gather some research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
+I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but by trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
 
 ## Management situations
 
 As a manager, you'll run into these situations. Each company and team has their own culture around these situations, and I'll enumerate things I've learned for them.
 
+* Preparing folks for [job hunting stress](/job-hunt-stress)
 * Determining compensation - Stack ranking/OLR
 * Delivering Performance reviews
     * Amazon Forte
@@ -61,7 +61,6 @@ As a manager, you'll run into these situations. Each company and team has their 
 * Some behaviors I'm just starting, these include
     * Team music videos
     * Engineering peak moments
-
 
 ## How will I measure my success as a manager
 
