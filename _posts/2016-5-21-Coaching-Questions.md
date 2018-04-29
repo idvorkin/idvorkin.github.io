@@ -3,18 +3,30 @@ layout: post
 title: "7 Coaching Questions"
 author: "Igor Dvorkin"
 comments: true
-inprogress: true
-collapsable: true
 
 tags: 
     - book-notes
     - emotional intelligence
+    - manager
 
 ---
 
-Coaching is not giving advice, it's helping others solve their own problems. 
+Coaching is not giving advice, it's helping others solve their own problems.  Use the following questions and approaches to help folks find their own solutions and insights.
 
-### 7 Questions To Coach: 
+<!-- vim-markdown-toc Redcarpet -->
+
+* [Ask these 7 questions to coach](#ask-these-7-questions-to-coach)
+* [How to coaching for task completion vs insight](#how-to-coaching-for-task-completion-vs-insight)
+* [How to coach to build strategic insight](#how-to-coach-to-build-strategic-insight)
+* [How to keep people safe while coaching using human safety models](#how-to-keep-people-safe-while-coaching-using-human-safety-models)
+* [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
+* [Deflecting the desire for you to solve their problem: How would you handle this](#deflecting-the-desire-for-you-to-solve-their-problem-how-would-you-handle-this)
+* [Saying No: Say yes slowly](#saying-no-say-yes-slowly)
+
+<!-- vim-markdown-toc -->
+
+
+#### Ask these 7 questions to coach 
 
 * Open: What's on your mind?
 * Expand: What Else?
@@ -28,13 +40,14 @@ Coaching is not giving advice, it's helping others solve their own problems.
     * Commission - what you must deliberately give up to make it happen (relationships/projects/)
 * Close the loop: What was most useful for you in this conversation?
 
-### Depth of coaching - Performance vs Development (P vs PC)
+#### How to coaching for task completion vs insight
 
 * P: Project - Immediate task
 * P: People - Relationship
 * PC: Pattern - Help person get better.
 
-### Coaching Strategy
+
+#### How to coach to build strategic insight
 
 * What does success mean?
 * What is our scope (who/where)
@@ -42,39 +55,51 @@ Coaching is not giving advice, it's helping others solve their own problems.
 * What capabilities/assets will need to achieve this?
 * How do we measure success and provide feedback?
 
-### Keeping people safe:
+#### How to keep people safe while coaching using human safety models
 
 TERA - 
 
-* *Tribe:* Tribe, 'us' vs 'them' - be us.
-* *Certainty* People dislike ambiguity/uncertainty.
-* *Rank*  Do I move up or down the social ladder
-* *Autonomy* I have control
+* **Tribe:** Tribe, 'us' vs 'them' - be us.
+* **Certainty:** People dislike ambiguity/uncertainty.
+* **Rank:**  Do I move up or down the social ladder
+* **Autonomy:** I have control
 
+SCARF - 
+*More details in  [Search inside yourself - Leadership and social skills](/search-inside-yourself)*
 
-### Soften How Can I help.
+* __Status:__ Where am I in the pecking order
+    * __BUILD:__ Give credit, and feedback, ups peoples status
+* __Certainty:__ Do I know what what's going on.
+    * __Build:__ removing ambiguity, and giving people certainty on things that matter.
+* __Autonomy:__ Do I have control over the situation?
+    * __Build:__ making clear it's people's choice, not yours.
+* __Relatedness:__ Is other person friend or foe.
+    * __Build:__ by taking time to know people.
+* __Fairness:__
+    * __Build:__ making clear that you're being fair.
+
+#### Soften your coaching: How Can I help
 
 * Out of curiosity
 * Just so I know
 * To help my understand better
 * To make sure I'm clear
 
-
 SCARF Model:
 *Fairness* People will injure themselves to ensure fairness.
 
 
-### Handling: How would you handle this: 
+#### Deflecting the desire for you to solve their problem: How would you handle this
 
 Great question, I have some ideas, but first, how would you tackle this? What else?
 
-### Saying No: Say Yes Slowly:
+#### Saying No: Say yes slowly
+
 * Why are you asking me?
 * Whom else have you asked?
 * What you say urgent what do you mean?
 * What does done mean?
 * If I could only do one part, what part would you have me do?
 * What do you recommend I take off my plate to get this done?want done?
-
-*If you still have to say no*  Make sure you're saying no to task, no to person. Just writing it down will help.
+*If you still have to say no*  Make sure you're saying no to task, no to person. Just writing it down will help.*
 

@@ -4,16 +4,25 @@ title: "My dream job"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
+redirect_from: 
+    - "/dream-job"
+    - "/perfect-job"
 permalink: "/job"
 
 tags:
-
     - how igor ticks
+    - manager
+    - software engineering
+    - strategy
 ---
 
-Dream jobs have many dimensions so I'll describe my preferences in several of them dimensions. If you're deciding if you'll like working with me you should know I learn the needs of the business, and focus the team on delivering in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech.  When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office. 
+Dream jobs have many dimensions and I'll describe preferences in several. I strive to learn the needs of the business and focus the team on delivering in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech.  When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office. 
 
 ---
+
+### Engineering Manager or Tech lead: Engineering Manager
+
+I'm passionate about tech, but I'm even more passionate about aspiring to be the [best boss my team will ever have](being-a-great-manager).  Part of being the best is having deep understanding of the tech, so I always have some [small projects on the side](https://github.com/idvorkin), and every few years I'll do a rotation as a [tech lead](/software-leadership-roles).
 
 ### Startup, Turn Around, Accelerated Growth, Realignment, Sustaining Success: Startup and Turn around
 
@@ -32,8 +41,6 @@ At this point in my career I'm interested in making the lives of others better. 
 ### Product Domain? Productivity and Positive Computing!
 
 As a human, I'm incredibly passionate about well being. Well being is explored in the nascent field of [positive computing](/positive-computing-survey), the computing analog to positive psychology. Computing jobs focused on well being are rare, but if that's something you need help working on, I might jump at the chance to join you, so reach out.
-
-
 
 ### Technologist or Entrepreneur: Entrepreneur!
 
@@ -55,14 +62,10 @@ I'm most interested in building the experiences, but that requires me to deeply 
 
 Technology leaders need to divide their time among the business, experiences, and technology. While each of these are interesting at this point in my career, my technology skill is well developed and now I want to focus on building my business and experiences muscles.
 
-### The team culture I want to nurture.
+### Regardless of my job I will be successful when: 
 
-* Build high performing teams from scratch
-* Turn around teams in trouble.
-* [Feelings meetings]({% post_url 2016-3-21-Human-Meetings %})
-* Continuous improvement process
-* Frequent inter and intra team feedback
+* The team is high performing (even if they start off in trouble)
 * Going to work is like hanging out with friends.
-* Data driven decision making and engineering
-* Gelled team, rallying behind the projects.
-* I get to do lots of mentoring.
+* Work is filled with [peak moments](/moments-at-work)
+* Everyone gets value from personalized [coaching](/Coaching-Questions)
+* (In very special places ...) I run [Feelings meetings](/Human-Meeting)
