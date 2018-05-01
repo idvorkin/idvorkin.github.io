@@ -16,7 +16,7 @@ tags:
     - strategy
 ---
 
-Dream jobs have many dimensions and I'll describe preferences in several. I strive to learn the needs of the business and focus the team on delivering in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech.  When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office. 
+Jobs have many dimensions and I'll describe my dream job in several dimensions. In my dream job I learn the needs of the business and focus the team on delivering in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech.  When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office. 
 
 ---
 
