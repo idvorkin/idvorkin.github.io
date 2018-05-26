@@ -7,7 +7,9 @@ comments: true
 
 Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Restorative (problem solving) Adaptability, and Ideation.
 
-The short version of these skills is:
+*You can take strengh finder yourself [here](https://www.gallupstrengthscenter.com/).*
+
+more The short version of these skills is:
 
 **Activator** - People who are especially talented in the Activator theme can
 make things happen by turning thoughts into action. They are
@@ -28,7 +30,7 @@ time.
 
 **Ideation** - People who are especially talented in the Ideation theme are
 fascinated by ideas. They are able to find connections between
-seemingly disparate phenomena.
+seemingly disparate phenomena.
 
 
 The long version is:
@@ -90,4 +92,6 @@ strange but strangely enlightening angle. You love all these ideas because they 
 because they are novel, because they are clarifying, because they are contrary, because they are
 bizarre. For all these reasons you derive a jolt of energy whenever a new idea occurs to you. Others
 may label you creative or original or conceptual or even smart. Perhaps you are all of these. Who can
-be sure? What you are sure of is that ideas are thrilling. And on most days this is enough.
+be sure? What you are sure of is that ideas are thrilling. And on most days this is enough.
+
+The really long version is in this [pdf](/static/StrengthFinderIgor.pdf).
