@@ -2,28 +2,30 @@
 layout: post
 title: "Feelings/Human Meetings"
 author: "Igor Dvorkin"
-inprogress: true
 comments: true
+redirect_from: 
+    - "/human-meetings"
+    - "/feeling-meetings"
 tags:
     - emotional intelligence
 ---
 
-Having our emotions heard is a fundamental human need. The modern world denies this, but this doesn't make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions.  Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.
+Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn't make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions.  Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.
 
 Each meeting opens with with a standard spiel.
 
-* This meeting is forum to have our emotions heard.
+* This meeting is a forum to have our emotions heard.
 * What we say is strictly confidential, if you can't honor that, please leave.
 * We must be uncomfortable, if not, we're doing it wrong. 
-* Try not to break tension through jokes or fidgeting.
-* Listen to the emotions, not the words - if you want to clarify, or problem solve, listen to the emotions instead.
+* Do not break the tension through jokes or fidgeting.
+* Listen to the emotions, not the words. When you want to clarify, or problem solve, stop yourself, and listen to the emotions instead.
 
 Rituals let us get into the "spirit" of the feeling meeting faster. Some of our rituals:
 
 * Remove the table, and sit in the smallest circle we can.
 * Bring a box, place all of our electronics into it. 
-* Begin the meeting with the standard spiel.
 * Set a timer for the end of the meeting, so no one is aware of the time.
+* Begin the meeting with the standard spiel.
 
 People ask me __why__ this meeting works, here's my current theory:
 
@@ -40,4 +42,3 @@ People ask me __why__ this meeting works, here's my current theory:
     * Tension is forced, through deliberate activities, and blocking normal tension relief valves.
     * As tension goes up, the more you need to express your emotions.
 
-        
