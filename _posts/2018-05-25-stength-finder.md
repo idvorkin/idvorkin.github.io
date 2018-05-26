@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Strength Finder"
+title: "My Strengths from  Strength Finder"
 date: "2018-05-24 06:49:58 Pacific Standard Time"
 comments: true
 ---
@@ -9,7 +9,7 @@ Developing you strengths is 3 times as effective as improving your weakness, so 
 
 *You can take strengh finder yourself [here](https://www.gallupstrengthscenter.com/).*
 
-more The short version of these skills is:
+### The short version of my strengths
 
 **Activator** - People who are especially talented in the Activator theme can
 make things happen by turning thoughts into action. They are
@@ -33,7 +33,8 @@ fascinated by ideas. They are able to find connections between
 seemingly disparate phenomena.
 
 
-The long version is:
+
+### The long version of my strengths
 
 **Activator** - "When can we start?" This is a recurring question in your life. You are impatient for action. You may
 concede that analysis has its uses or that debate and discussion can occasionally yield some
@@ -94,4 +95,5 @@ bizarre. For all these reasons you derive a jolt of energy whenever a new idea o
 may label you creative or original or conceptual or even smart. Perhaps you are all of these. Who can
 be sure? What you are sure of is that ideas are thrilling. And on most days this is enough.
 
-The really long version is in this [pdf](/static/StrengthFinderIgor.pdf).
+### The really long version of my strengths
+Is in this [pdf](/static/StrengthFinderIgor.pdf).
