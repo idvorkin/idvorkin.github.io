@@ -3,6 +3,8 @@ layout: post
 title: "My Strengths from  Strength Finder"
 date: "2018-05-24 06:49:58 Pacific Standard Time"
 comments: true
+tags:
+    - how igor ticks
 ---
 
 Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.
