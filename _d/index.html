@@ -1,0 +1,11 @@
+---
+layout: home
+title: Homepage
+tags: []
+paginate: 5
+---
+<h1> Very rough drafts </h1>
+{% for item in site.d %}
+  <p>{{ item.description }}</p>
+  <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+{% endfor %}
