@@ -165,6 +165,7 @@ algolia:
   application_id: RY6D0RNCA3
   search_only_api_key: d4bae7d1d6328352ce13c0978ca620e9
   index_name: jekyll
+  files_to_exclude:
       - '_d'
       - 'd'
 
