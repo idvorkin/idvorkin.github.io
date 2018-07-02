@@ -5,10 +5,6 @@ date: "2018-06-09 16:21:17 Pacific Daylight Time"
 tags:
 ---
 
-# Sustainable work
-
-## Why
-
 Close your eyes - Imagine knowing you're about to die within a few days and sharing your regrets with your grown up child. Do you want to tell them: "I wished I hadn't worked so much", "I wish I'd spent more time with my family", "I wished I'd taken care of my health"? I don't, and I bet you don't either.
 
 Great Leaders begin with the end in mind, prioritize ruthlessly, and seek sustainable solutions. This means building a culture where people don't need to sacrifice their family, health, and lives for work. In modern management speak - work life balance.
@@ -19,7 +15,7 @@ Conversely, unsustainable team culture, results in resentment, burnout, and your
 
 ## How
 
-Each person will have their own path to sustainability. I wil share how I role model sustainability, and what structural mechanisms I build to help it permiate into my organizations.
+Each person will have their own path to sustainability. I will share how I role model sustainability, and what structural mechanisms I build to help it permeate into my organizations.
 
 Sustainable organizations require structural processes to support the culture. Here are some structures I put in place into my teams:
 
@@ -29,7 +25,7 @@ Sustainable organizations require structural processes to support the culture. H
 
 Skeptical people expect these processes will be abused, but in all the teams I've instituted it's never been a problem. If anything, it encourages a high performing team by encouraging the team to cover each other when folks want time off.
 
-Organizations reflect their leaders, and I try my best to model sustianabilty. Of course there are times where I miss Some of my personal behaviors:
+Organizations reflect their leaders, and I try my best to model sustainability. Of course there are times where I miss Some of my personal behaviors:
 
 -   Leave every day at 4, and don't touch work evenings and weekends.
 -   I don't have work e-mail on my phone.
@@ -56,7 +52,7 @@ When I joined a new organization, I was amazed that at noon Friday a director ca
 
 #### Your time off policy sounds great, but I want to write code
 
-Building code muscles is great - I highly recomend it. I believe the best way to do that is to work on a side project or to take courses, and read a great programming book.
+Building code muscles is great - I highly recommend it. I believe the best way to do that is to work on a side project or to take courses, and read a great programming book.
 
 #### Really, you do this
 
@@ -72,7 +68,7 @@ I'm a morning person, and like to roll out of bed at 5am and start working by 5:
 
 #### Have you ever burned out
 
-Yes. I've burned out 3 times in my career. The first time, I just became a senior developor, just had my first child, and just bought my first house. The second time, I put my team in a position where they were setup for failure, and I didn't know how to declare success and move on. The third time, I didn't realize I was operating under extremly unrealistic expecations and didn't have support structure I needed.
+Yes. I've burned out 3 times in my career. The first time, I just became a senior developer, just had my first child, and just bought my first house. The second time, I put my team in a position where they were setup for failure, and I didn't know how to declare success and move on. The third time, I didn't realize I was operating under extremely unrealistic expectations and didn't have support structure I needed.
 
 #### Man this sounds awesome, but my boss has me completely overloaded
 
@@ -80,7 +76,7 @@ That's a hard position. My thoughts on task overload are [here](http://ig2600.bl
 
 #### Did you always do this
 
-No, when I was young and single, I wanted to build my tech muslces as fast as I could and often worked 50-60 hours a week. When I started Azure, I and the entire team worked 60 hours a week, and it was one of the funest times in my career.
+No, when I was young and single, I wanted to build my tech muscles as fast as I could and often worked 50-60 hours a week. When I started Azure, I and the entire team worked 60 hours a week, and it was one of the most fun times in my career.
 
 #### I'm young and single - I want to work like a dog - should I
 
