@@ -5,7 +5,41 @@ date: "2018-06-09 16:21:17 Pacific Daylight Time"
 tags:
 ---
 
-Close your eyes - Imagine knowing you're about to die within a few days and sharing your regrets with your grown up child. Do you want to tell them: "I wished I hadn't worked so much", "I wish I'd spent more time with my family", "I wished I'd taken care of my health"? I don't, and I bet you don't either.
+<!--
+Who is the audience?
+    - Igor
+    - People I'm looking to recruit to my team.
+    - People on my team who can hold me accountable to my aspirations
+
+What are the 3 thing they should remember
+    - Work life balance is crucial
+    - Work life balance takes work.
+    - Igor will prioritize and model good work life balance
+
+Why does Igor need a reminder?
+    - Work centered
+    - If don't put in mechanisms, will just work like a dog.
+    - If working in an unsustainable manner will burn out
+    - Need to set and remember my boundaries
+
+-->
+
+<!-- Why? On your death bed -->
+
+Imagine knowing you'll die tomorrow. Imagine your last chance to speak to your grown up child before your eyes close for the final time. When they ask do you have any regrets do you want to answer: "I wished I hadn't worked so much", "I wish I'd spent more time with my family", "I wish I'd taken care of my health"?
+
+I don't, and I bet you don't either.
+
+<!-- How? -->
+
+<!-- In the month to month, quarter to quarter?-->
+
+To avoid this we need to X, Y, Z
+
+<!-- How? -->
+<!-- Call to action? -->
+
+_The first part of this essay targets ICs, and explains how I achieve sustainable work, and the mechnisims I put in place to help my team to do the same. The second part of this essay targets leaders and teaches them the value of sustainable organizations_
 
 Great Leaders begin with the end in mind, prioritize ruthlessly, and seek sustainable solutions. This means building a culture where people don't need to sacrifice their family, health, and lives for work. In modern management speak - work life balance.
 
