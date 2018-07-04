@@ -31,28 +31,52 @@ XXX: What is the call to action?
 
 <!-- Why? On your death bed -->
 
-Imagine being on your deathbed, having one of your last conversations with your grown up child before your eyes close for the final time. When they ask you what are the greatest regrets do you want to answer: "I wished I spent less time at work ", "I wish I'd spent more time with my family", "I wish I'd taken care of my health"?
+Imagine being on your deathbed, having one of your final conversations with your grown up child before your eyes close for the last time. When they ask you about your biggest greatest regrets do you want to answer: "I wished I spent less time at work ", "I wish I'd spent more time with my family", "I wish I'd taken care of my health"?
 
 I don't, and I bet you don't either.
 
-The people I want to work with value a work culture encouraging them to balance their family, health, hobbies and work. In management speak work life balance. For a culture to be real the leadership team needs walk the talk, and I'll describe how I role model work life balance, and the mechanisms I put in place to encourage a balanced culture in my teams.
+The people I want to work with value a culture encouraging them to balance their family, health, hobbies and work - aka work life balance. For a culture to be real, the leadership team needs walk the talk, and I'll describe how I role model work life balance, and the mechanisms I put in place to encourage balance in my teams.
 
 In a future post, I'll describe how you can build a culture of work life balance into an organization that only gives it lip service.
 
-## How do I achieve work life balance
 
-Skeptical people expect these processes will be abused, but in all the teams I've instituted it's never been a problem. If anything, it encourages a high performing team by encouraging the team to cover each other when folks want time off.
+<!-- vim-markdown-toc GFM -->
 
-Organizations reflect their leaders, and I try my best to model sustainability. Of course there are times where I miss Some of my personal behaviors:
+    * [How do I achieve work life balance](#how-do-i-achieve-work-life-balance)
+    * [What mechanisms do I put in place to enable a culture of work life balance.](#what-mechanisms-do-i-put-in-place-to-enable-a-culture-of-work-life-balance.)
+    * [The fine print](#the-fine-print)
+* [Organizational change (Sneak peek of post #2)](#organizational-change-(sneak-peek-of-post-#2))
+        * [Telling boss to stop having meetings after 4](#telling-boss-to-stop-having-meetings-after-4)
+    * [Erica - Boat day at Sean's time off](#erica---boat-day-at-sean's-time-off)
+    * [Team breakfasts -- too long, too often](#team-breakfasts----too-long,-too-often)
+    * [Don't want to go, I do it anyways](#don't-want-to-go,-i-do-it-anyways)
+    * [Less capacity on holiday weekends](#less-capacity-on-holiday-weekends)
+* [FAQ](#faq)
+        * [Your time off policy sounds great, but I want to write code](#your-time-off-policy-sounds-great,-but-i-want-to-write-code)
+        * [Sounds like I'm working less, how will this impact my career](#sounds-like-i'm-working-less,-how-will-this-impact-my-career)
+        * [Really, you do this](#really,-you-do-this)
+        * [How many hours do you work a week](#how-many-hours-do-you-work-a-week)
+        * [What's a typical work day](#what's-a-typical-work-day)
+        * [Have you ever burned out](#have-you-ever-burned-out)
+        * [Man this sounds awesome, but my boss has me completely overloaded](#man-this-sounds-awesome,-but-my-boss-has-me-completely-overloaded)
+        * [Did you always do this](#did-you-always-do-this)
+        * [I'm young and single - I want to work like a dog - should I](#i'm-young-and-single---i-want-to-work-like-a-dog---should-i)
+
+<!-- vim-markdown-toc -->
+
+### How do I achieve work life balance
+
+Organizations reflect their leaders, and I try my best to model sustainability. Here are some of my personal behaviors:
 
 -   Leave every day at 4, and don't touch work evenings and weekends.
 -   I don't have work e-mail on my phone.
 -   Sneak out mid day to get to events that are important to my children.
--   Take lieu time if I've needed to work too much recently.
+-   Take lieu time if I've been putting in too many hours at work in the short term.
+-   (Use planning to know if there will be work spikes ahead of time to let my family know)
 
 ### What mechanisms do I put in place to enable a culture of work life balance.
 
-Sustainable organizations require structural processes to support the culture. Here are some structures I put in place into my teams:
+High performing organizations use structural mechanisms to support the culture. Here are some mechanisms I put in place :
 
 -   To support working remotely, have chat rooms, high quality microphones, and meetings with video conferencing capabilities.
 -   To ensure people can go home guilt free, have no meetings after 4.
@@ -74,6 +98,8 @@ To flesh out:
 -   Changing culture is a slow process so if I'm new to an organization expect a while for it to kick in.
 
 ## Organizational change (Sneak peek of post #2)
+
+Skeptical people expect these processes will be abused, but in all the teams I've instituted it's never been a problem. If anything, it encourages a high performing team by encouraging the team to cover each other when folks want time off.
 
 #### Telling boss to stop having meetings after 4
 
