@@ -39,34 +39,33 @@ The people I want to work with value a culture encouraging them to balance their
 
 In a future post, I'll describe how you can build a culture of work life balance into an organization that only gives it lip service.
 
+<!-- TOC -->
 
-<!-- vim-markdown-toc GFM -->
+- [How do I achieve work life balance](#how-do-i-achieve-work-life-balance)
+- [What mechanisms do I put in place to enable a culture of work life balance.](#what-mechanisms-do-i-put-in-place-to-enable-a-culture-of-work-life-balance)
+- [The fine print](#the-fine-print)
+- [Organizational change (Sneak peek of post #2)](#organizational-change-sneak-peek-of-post-2)
+    - [Telling boss to stop having meetings after 4](#telling-boss-to-stop-having-meetings-after-4)
+    - [Erica - Boat day at Sean's time off](#erica---boat-day-at-seans-time-off)
+    - [Team breakfasts -- too long, too often](#team-breakfasts----too-long-too-often)
+    - [Don't want to go, I do it anyways](#dont-want-to-go-i-do-it-anyways)
+    - [Less capacity on holiday weekends](#less-capacity-on-holiday-weekends)
+    - [Too much ambiguity for top down planning. Rebuild roadmap on fly](#too-much-ambiguity-for-top-down-planning-rebuild-roadmap-on-fly)
+    - [Shipping is a feature](#shipping-is-a-feature)
+    - [9 Woman in 1 month do not a baby make](#9-woman-in-1-month-do-not-a-baby-make)
+    - [Real schedule, management schedule, happy to do both](#real-schedule-management-schedule-happy-to-do-both)
+- [FAQ](#faq)
+    - [Your time off policy sounds great, but I want to write code](#your-time-off-policy-sounds-great-but-i-want-to-write-code)
+    - [Sounds like I'm working less, how will this impact my career](#sounds-like-im-working-less-how-will-this-impact-my-career)
+    - [Really, you do this](#really-you-do-this)
+    - [How many hours do you work a week](#how-many-hours-do-you-work-a-week)
+    - [What's a typical work day](#whats-a-typical-work-day)
+    - [Have you ever burned out](#have-you-ever-burned-out)
+    - [Man this sounds awesome, but my boss has me completely overloaded](#man-this-sounds-awesome-but-my-boss-has-me-completely-overloaded)
+    - [Did you always do this](#did-you-always-do-this)
+    - [I'm young and single - I want to work like a dog - should I](#im-young-and-single---i-want-to-work-like-a-dog---should-i)
 
-* [How do I achieve work life balance](#how-do-i-achieve-work-life-balance)
-* [What mechanisms do I put in place to enable a culture of work life balance.](#what-mechanisms-do-i-put-in-place-to-enable-a-culture-of-work-life-balance.)
-* [The fine print](#the-fine-print)
-* [Organizational change (Sneak peek of post #2)](#organizational-change-(sneak-peek-of-post-#2))
-    * [Telling boss to stop having meetings after 4](#telling-boss-to-stop-having-meetings-after-4)
-    * [Erica - Boat day at Sean's time off](#erica---boat-day-at-sean's-time-off)
-    * [Team breakfasts -- too long, too often](#team-breakfasts----too-long,-too-often)
-    * [Don't want to go, I do it anyways](#don't-want-to-go,-i-do-it-anyways)
-    * [Less capacity on holiday weekends](#less-capacity-on-holiday-weekends)
-    * [Too much ambiguity for top down planning. Rebuild roadmap on fly](#too-much-ambiguity-for-top-down-planning.-rebuild-roadmap-on-fly)
-    * [Shipping is a feature](#shipping-is-a-feature)
-    * [9 Woman in 1 month do not a baby make](#9-woman-in-1-month-do-not-a-baby-make)
-    * [Real schedule, management schedule, happy to do both](#real-schedule,-management-schedule,-happy-to-do-both)
-* [FAQ](#faq)
-    * [Your time off policy sounds great, but I want to write code](#your-time-off-policy-sounds-great,-but-i-want-to-write-code)
-    * [Sounds like I'm working less, how will this impact my career](#sounds-like-i'm-working-less,-how-will-this-impact-my-career)
-    * [Really, you do this](#really,-you-do-this)
-    * [How many hours do you work a week](#how-many-hours-do-you-work-a-week)
-    * [What's a typical work day](#what's-a-typical-work-day)
-    * [Have you ever burned out](#have-you-ever-burned-out)
-    * [Man this sounds awesome, but my boss has me completely overloaded](#man-this-sounds-awesome,-but-my-boss-has-me-completely-overloaded)
-    * [Did you always do this](#did-you-always-do-this)
-    * [I'm young and single - I want to work like a dog - should I](#i'm-young-and-single---i-want-to-work-like-a-dog---should-i)
-
-<!-- vim-markdown-toc -->
+<!-- /TOC -->
 
 ### How do I achieve work life balance
 
