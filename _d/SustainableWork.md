@@ -42,25 +42,29 @@ In a future post, I'll describe how you can build a culture of work life balance
 
 <!-- vim-markdown-toc GFM -->
 
-    * [How do I achieve work life balance](#how-do-i-achieve-work-life-balance)
-    * [What mechanisms do I put in place to enable a culture of work life balance.](#what-mechanisms-do-i-put-in-place-to-enable-a-culture-of-work-life-balance.)
-    * [The fine print](#the-fine-print)
+* [How do I achieve work life balance](#how-do-i-achieve-work-life-balance)
+* [What mechanisms do I put in place to enable a culture of work life balance.](#what-mechanisms-do-i-put-in-place-to-enable-a-culture-of-work-life-balance.)
+* [The fine print](#the-fine-print)
 * [Organizational change (Sneak peek of post #2)](#organizational-change-(sneak-peek-of-post-#2))
-        * [Telling boss to stop having meetings after 4](#telling-boss-to-stop-having-meetings-after-4)
+    * [Telling boss to stop having meetings after 4](#telling-boss-to-stop-having-meetings-after-4)
     * [Erica - Boat day at Sean's time off](#erica---boat-day-at-sean's-time-off)
     * [Team breakfasts -- too long, too often](#team-breakfasts----too-long,-too-often)
     * [Don't want to go, I do it anyways](#don't-want-to-go,-i-do-it-anyways)
     * [Less capacity on holiday weekends](#less-capacity-on-holiday-weekends)
+    * [Too much ambiguity for top down planning. Rebuild roadmap on fly](#too-much-ambiguity-for-top-down-planning.-rebuild-roadmap-on-fly)
+    * [Shipping is a feature](#shipping-is-a-feature)
+    * [9 Woman in 1 month do not a baby make](#9-woman-in-1-month-do-not-a-baby-make)
+    * [Real schedule, management schedule, happy to do both](#real-schedule,-management-schedule,-happy-to-do-both)
 * [FAQ](#faq)
-        * [Your time off policy sounds great, but I want to write code](#your-time-off-policy-sounds-great,-but-i-want-to-write-code)
-        * [Sounds like I'm working less, how will this impact my career](#sounds-like-i'm-working-less,-how-will-this-impact-my-career)
-        * [Really, you do this](#really,-you-do-this)
-        * [How many hours do you work a week](#how-many-hours-do-you-work-a-week)
-        * [What's a typical work day](#what's-a-typical-work-day)
-        * [Have you ever burned out](#have-you-ever-burned-out)
-        * [Man this sounds awesome, but my boss has me completely overloaded](#man-this-sounds-awesome,-but-my-boss-has-me-completely-overloaded)
-        * [Did you always do this](#did-you-always-do-this)
-        * [I'm young and single - I want to work like a dog - should I](#i'm-young-and-single---i-want-to-work-like-a-dog---should-i)
+    * [Your time off policy sounds great, but I want to write code](#your-time-off-policy-sounds-great,-but-i-want-to-write-code)
+    * [Sounds like I'm working less, how will this impact my career](#sounds-like-i'm-working-less,-how-will-this-impact-my-career)
+    * [Really, you do this](#really,-you-do-this)
+    * [How many hours do you work a week](#how-many-hours-do-you-work-a-week)
+    * [What's a typical work day](#what's-a-typical-work-day)
+    * [Have you ever burned out](#have-you-ever-burned-out)
+    * [Man this sounds awesome, but my boss has me completely overloaded](#man-this-sounds-awesome,-but-my-boss-has-me-completely-overloaded)
+    * [Did you always do this](#did-you-always-do-this)
+    * [I'm young and single - I want to work like a dog - should I](#i'm-young-and-single---i-want-to-work-like-a-dog---should-i)
 
 <!-- vim-markdown-toc -->
 
@@ -97,7 +101,7 @@ To flesh out:
 -   There are times when we need to swing work life balance to work. But they should be rare, clear ahead of time, and followed or proceeded by times where you can focus on your life.
 -   Changing culture is a slow process so if I'm new to an organization expect a while for it to kick in.
 
-## Organizational change (Sneak peek of post #2)
+### Organizational change (Sneak peek of post #2)
 
 Skeptical people expect these processes will be abused, but in all the teams I've instituted it's never been a problem. If anything, it encourages a high performing team by encouraging the team to cover each other when folks want time off.
 
@@ -105,15 +109,23 @@ Skeptical people expect these processes will be abused, but in all the teams I'v
 
 When I joined a new organization, I was amazed that at noon Friday a director called a meeting for 4pm-5pm on the same Friday. The next Monday, I walked into the director's office and said "How much will I need to pay you to not have meetings after 4?" The director asked "Why?". I explained that I come in early, and like to leave by 4. The director then asked "Hymn, should we have no meetings after 3?". I replied 4 should be fine, and that was that. No meetings after 4.
 
-### Erica - Boat day at Sean's time off
+#### Erica - Boat day at Sean's time off
 
-### Team breakfasts -- too long, too often
+#### Team breakfasts -- too long, too often
 
-### Don't want to go, I do it anyways
+#### Don't want to go, I do it anyways
 
-### Less capacity on holiday weekends
+#### Less capacity on holiday weekends
 
-## FAQ
+#### Too much ambiguity for top down planning. Rebuild roadmap on fly
+
+#### Shipping is a feature
+
+#### 9 Woman in 1 month do not a baby make
+
+#### Real schedule, management schedule, happy to do both
+
+### FAQ
 
 #### Your time off policy sounds great, but I want to write code
 
