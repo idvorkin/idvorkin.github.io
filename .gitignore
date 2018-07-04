@@ -7,3 +7,7 @@ _site
 *.swo
 *~
 tags
+
+# Ignore jekyll stuff
+.jekyll-metadata*
+Gemfile.lock
