@@ -10,6 +10,9 @@ Who is the audience?
     - Igor
     - People I'm looking to recruit to my team.
     - People on my team who can hold me accountable to my aspirations
+    - My future employers who want to build this culture
+    - My current boss who is trying ot figure out what is going on.
+    - PART 2: My future employers that want to know why I'm doing this, and my strategies.
 
 What are the 3 thing they should remember
     - Work life balance is crucial
@@ -22,40 +25,21 @@ Why does Igor need a reminder?
     - If working in an unsustainable manner will burn out
     - Need to set and remember my boundaries
 
+XXX: What is the call to action?
+
 -->
 
 <!-- Why? On your death bed -->
 
-Imagine knowing you'll die tomorrow. Imagine your last chance to speak to your grown up child before your eyes close for the final time. When they ask do you have any regrets do you want to answer: "I wished I hadn't worked so much", "I wish I'd spent more time with my family", "I wish I'd taken care of my health"?
+Imagine being on your deathbed, having one of your last conversations with your grown up child before your eyes close for the final time. When they ask you what are the greatest regrets do you want to answer: "I wished I spent less time at work ", "I wish I'd spent more time with my family", "I wish I'd taken care of my health"?
 
 I don't, and I bet you don't either.
 
-<!-- How? -->
+The people I want to work with value a work culture encouraging them to balance their family, health, hobbies and work. In management speak work life balance. For a culture to be real the leadership team needs walk the talk, and I'll describe how I role model work life balance, and the mechanisms I put in place to encourage a balanced culture in my teams.
 
-<!-- In the month to month, quarter to quarter?-->
+In a future post, I'll describe how you can build a culture of work life balance into an organization that only gives it lip service.
 
-To avoid this we need to X, Y, Z
-
-<!-- How? -->
-<!-- Call to action? -->
-
-_The first part of this essay targets ICs, and explains how I achieve sustainable work, and the mechnisims I put in place to help my team to do the same. The second part of this essay targets leaders and teaches them the value of sustainable organizations_
-
-Great Leaders begin with the end in mind, prioritize ruthlessly, and seek sustainable solutions. This means building a culture where people don't need to sacrifice their family, health, and lives for work. In modern management speak - work life balance.
-
-Conveniently, a sustainable work culture attracts the best people, which builds high performing team, which delivers superb business results.
-
-Conversely, unsustainable team culture, results in resentment, burnout, and your best people leaving.
-
-## How
-
-Each person will have their own path to sustainability. I will share how I role model sustainability, and what structural mechanisms I build to help it permeate into my organizations.
-
-Sustainable organizations require structural processes to support the culture. Here are some structures I put in place into my teams:
-
--   To support working remotely, have chat rooms, high quality microphones, and meetings with video conferencing capabilities.
--   To ensure people can go home guilt free, have no meetings after 4.
--   To encourage people to take care of themselves, have an [unlimited vacation policy](https://www.entrepreneur.com/article/269989) including taking extra days off during the holidays.
+## How do I achieve work life balance
 
 Skeptical people expect these processes will be abused, but in all the teams I've instituted it's never been a problem. If anything, it encourages a high performing team by encouraging the team to cover each other when folks want time off.
 
@@ -66,27 +50,53 @@ Organizations reflect their leaders, and I try my best to model sustainability. 
 -   Sneak out mid day to get to events that are important to my children.
 -   Take lieu time if I've needed to work too much recently.
 
-### Planning
+### What mechanisms do I put in place to enable a culture of work life balance.
 
-### Defending Boundaries
+Sustainable organizations require structural processes to support the culture. Here are some structures I put in place into my teams:
 
-## Managing up
+-   To support working remotely, have chat rooms, high quality microphones, and meetings with video conferencing capabilities.
+-   To ensure people can go home guilt free, have no meetings after 4.
+-   To encourage people to take care of themselves, have an [unlimited vacation policy](https://www.entrepreneur.com/article/269989) including taking extra days off during the holidays.
+-   To avoid people getting stressed out by a mail from their boss, I don't send e-mails on weekends or evenings.
+-   To teach the behavior, I make work life balance a top priority.
 
-### No meetings after 4
+To flesh out:
 
-### TBD: Don't send mails on the weekends
+-   Planning
+-   Defending Boundaries
+-   Managing up
+-   No meetings after 4
 
-## Organizational change
+### The fine print
+
+-   Like all hard goals, there are times where I slip up, and don't live up to my standards. If you see me doing this, call me out, and I'll do my best to course correct.
+-   There are times when we need to swing work life balance to work. But they should be rare, clear ahead of time, and followed or proceeded by times where you can focus on your life.
+-   Changing culture is a slow process so if I'm new to an organization expect a while for it to kick in.
+
+## Organizational change (Sneak peek of post #2)
+
+#### Telling boss to stop having meetings after 4
 
 When I joined a new organization, I was amazed that at noon Friday a director called a meeting for 4pm-5pm on the same Friday. The next Monday, I walked into the director's office and said "How much will I need to pay you to not have meetings after 4?" The director asked "Why?". I explained that I come in early, and like to leave by 4. The director then asked "Hymn, should we have no meetings after 3?". I replied 4 should be fine, and that was that. No meetings after 4.
 
-#### Telling boss to stop having meetings after 4
+### Erica - Boat day at Sean's time off
+
+### Team breakfasts -- too long, too often
+
+### Don't want to go, I do it anyways
+
+### Less capacity on holiday weekends
 
 ## FAQ
 
 #### Your time off policy sounds great, but I want to write code
 
 Building code muscles is great - I highly recommend it. I believe the best way to do that is to work on a side project or to take courses, and read a great programming book.
+
+#### Sounds like I'm working less, how will this impact my career
+
+80/20 rule
+But, if someone is equally efficient and working more hours, their career might go faster, but in my experience unsustaible, miserable, burn out.
 
 #### Really, you do this
 
