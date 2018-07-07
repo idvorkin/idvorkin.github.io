@@ -7,11 +7,11 @@ tags:
 
 <!--
 Who is the audience?
-    - Igor
     - People I'm looking to recruit to my team.
     - People on my team who can hold me accountable to my aspirations
+    - Igor
     - My future employers who want to build this culture
-    - My current boss who is trying ot figure out what is going on.
+    - My current boss who is trying to figure out what is going on.
     - PART 2: My future employers that want to know why I'm doing this, and my strategies.
 
 What are the 3 thing they should remember
@@ -31,7 +31,7 @@ XXX: What is the call to action?
 
 <!-- Why? On your death bed -->
 
-Imagine being on your deathbed, having one of your final conversations with your grown up child before your eyes close for the last time. When they ask you about your biggest greatest regrets do you want to answer: "I wished I spent less time at work ", "I wish I'd spent more time with my family", "I wish I'd taken care of my health"?
+Imagine being on your deathbed, in one of the last conversations you'll ever have with your grown up child. Notice the heaviness in your heart as you describe your regrets. Do you want those regrets to include "I wish I spent less time at work ", "I wish I spent more time with my family", "I wish I made time to take care of my health"?
 
 I don't, and I bet you don't either.
 
@@ -39,21 +39,14 @@ The people I want to work with value a culture encouraging them to balance their
 
 In a future post, I'll describe how you can build a culture of work life balance into an organization that only gives it lip service.
 
+**Table of contents**
+
 <!-- TOC -->
 
-- [How do I achieve work life balance](#how-do-i-achieve-work-life-balance)
-- [What mechanisms do I put in place to enable a culture of work life balance.](#what-mechanisms-do-i-put-in-place-to-enable-a-culture-of-work-life-balance)
+- [How do I model work life balance](#how-do-i-model-work-life-balance)
+- [What mechanisms do I put in place to enable a culture of work life balance](#what-mechanisms-do-i-put-in-place-to-enable-a-culture-of-work-life-balance)
 - [The fine print](#the-fine-print)
 - [Organizational change (Sneak peek of post #2)](#organizational-change-sneak-peek-of-post-2)
-    - [Telling boss to stop having meetings after 4](#telling-boss-to-stop-having-meetings-after-4)
-    - [Erica - Boat day at Sean's time off](#erica---boat-day-at-seans-time-off)
-    - [Team breakfasts -- too long, too often](#team-breakfasts----too-long-too-often)
-    - [Don't want to go, I do it anyways](#dont-want-to-go-i-do-it-anyways)
-    - [Less capacity on holiday weekends](#less-capacity-on-holiday-weekends)
-    - [Too much ambiguity for top down planning. Rebuild roadmap on fly](#too-much-ambiguity-for-top-down-planning-rebuild-roadmap-on-fly)
-    - [Shipping is a feature](#shipping-is-a-feature)
-    - [9 Woman in 1 month do not a baby make](#9-woman-in-1-month-do-not-a-baby-make)
-    - [Real schedule, management schedule, happy to do both](#real-schedule-management-schedule-happy-to-do-both)
 - [FAQ](#faq)
     - [Your time off policy sounds great, but I want to write code](#your-time-off-policy-sounds-great-but-i-want-to-write-code)
     - [Sounds like I'm working less, how will this impact my career](#sounds-like-im-working-less-how-will-this-impact-my-career)
@@ -67,19 +60,28 @@ In a future post, I'll describe how you can build a culture of work life balance
 
 <!-- /TOC -->
 
-### How do I achieve work life balance
+### How do I model work life balance
 
 Organizations reflect their leaders, and I try my best to model sustainability. Here are some of my personal behaviors:
 
--   Leave every day at 4, and don't touch work evenings and weekends.
--   I don't have work e-mail on my phone.
--   Sneak out mid day to get to events that are important to my children.
--   Take lieu time if I've been putting in too many hours at work in the short term.
--   (Use planning to know if there will be work spikes ahead of time to let my family know)
+**I leave at 4 pm, 4 days a week** My watch alarm goes off every day at 3:45pm, reminding me to wrap up for the day. It goes off a second time at 4:05, at which point I drop what I'm doing, grab my bag, and leave. I do this 4 days a week like clockwork. One day a week I'll stay late, usually with an open schedule. I do this because many people prefer to socialize around 4-6, and I want to be around for that - aka happy hour!
 
-### What mechanisms do I put in place to enable a culture of work life balance.
+**I don't work evenings and weekends** I love my job when it's going well, and I have a huge sense of responsibility when it's going poorly. If I don't force myself to stop working, I won't. Thus, I have a simple rule which I stick to most of the time - don't work evening and weekends. There are exceptions when I want/need to work an evening or weekend, when that happens I'm religious about using delayed send to avoid my employees getting mails from me out of business hours.
 
-High performing organizations use structural mechanisms to support the culture. Here are some mechanisms I put in place :
+**I don't have work e-mail on my phone** When I say I don't work on evenings and weekends I mean I don't work evenings and weekends and e-mail is work. If I had work e-mail on my phone I'd check it when I'm idle, so I can't have work e-mail from my phone. I do have chime (aka Skype/Slack/Teams)) in case something is urgent and folks want to get a hold of me.
+
+**I proudly go to kids events during the day** My daughter is 4, the highlight of her life is her "ballet recital" it's the 3rd Wednesday every 4 months @ 11am. I won't miss it for the world.
+
+**I book my vacations in advance, I take them, and I keep my work laptop off** Every year my mom comes for spring break, we visit my wife's family for a week around thanksgiving, we take a week in the summer to visit my sister in Canada, and we take some time to enjoy the kids being off school for winter break. As hard as it is to let go of work (and trust me it's way hard), I say sorry - this vacation is booked, I won't be available till I'm back from vacation.
+
+### What mechanisms do I put in place to enable a culture of work life balance
+
+High performing organizations use structural mechanisms to support the culture. Here are some mechanisms I put in place:
+
+BIG IDEAS:
+
+-   Work where/when you want to -- remote work/results vs time oriented
+-   We work out priority, you figure out cost and we agree on cut line.
 
 -   To support working remotely, have chat rooms, high quality microphones, and meetings with video conferencing capabilities.
 -   To ensure people can go home guilt free, have no meetings after 4.
@@ -104,25 +106,20 @@ To flesh out:
 
 Skeptical people expect these processes will be abused, but in all the teams I've instituted it's never been a problem. If anything, it encourages a high performing team by encouraging the team to cover each other when folks want time off.
 
-#### Telling boss to stop having meetings after 4
+Stories:
+
+-   Telling boss to stop having meetings after 4
 
 When I joined a new organization, I was amazed that at noon Friday a director called a meeting for 4pm-5pm on the same Friday. The next Monday, I walked into the director's office and said "How much will I need to pay you to not have meetings after 4?" The director asked "Why?". I explained that I come in early, and like to leave by 4. The director then asked "Hymn, should we have no meetings after 3?". I replied 4 should be fine, and that was that. No meetings after 4.
 
-#### Erica - Boat day at Sean's time off
-
-#### Team breakfasts -- too long, too often
-
-#### Don't want to go, I do it anyways
-
-#### Less capacity on holiday weekends
-
-#### Too much ambiguity for top down planning. Rebuild roadmap on fly
-
-#### Shipping is a feature
-
-#### 9 Woman in 1 month do not a baby make
-
-#### Real schedule, management schedule, happy to do both
+-   Erica - Boat day at Sean's time off
+-   Team breakfasts -- too long, too often
+-   Don't want to go, I do it anyways
+-   Less capacity on holiday weekends
+-   Too much ambiguity for top down planning. Rebuild roadmap on fly
+-   Shipping is a feature
+-   9 Woman in 1 month do not a baby make
+-   Real schedule, management schedule, happy to do both
 
 ### FAQ
 
