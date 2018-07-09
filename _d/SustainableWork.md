@@ -19,11 +19,19 @@ What are the 3 thing they should remember
     - Work life balance takes work.
     - Igor will prioritize and model good work life balance
 
+How do I prove it?
+    - Everyone says they do it - but how to prove?
+    - Give examples of people doing it.
+    - Show mechanisms of how.
+
+
 Why does Igor need a reminder?
     - Work centered
     - If don't put in mechanisms, will just work like a dog.
     - If working in an unsustainable manner will burn out
     - Need to set and remember my boundaries
+
+
 
 XXX: What is the call to action?
 
@@ -44,9 +52,9 @@ In a future post, I'll describe how you can build a culture of work life balance
 <!-- TOC -->
 
 - [How do I model work life balance](#how-do-i-model-work-life-balance)
-- [What mechanisms do I put in place to enable a culture of work life balance](#what-mechanisms-do-i-put-in-place-to-enable-a-culture-of-work-life-balance)
+- [How do we make it easier to to achieve work life balance on this team](#how-do-we-make-it-easier-to-to-achieve-work-life-balance-on-this-team)
 - [The fine print](#the-fine-print)
-- [Organizational change (Sneak peek of post #2)](#organizational-change-sneak-peek-of-post-2)
+- [How do I manage up to enable work life balance (Sneak peek of post #2)](#how-do-i-manage-up-to-enable-work-life-balance-sneak-peek-of-post-2)
 - [FAQ](#faq)
     - [Your time off policy sounds great, but I want to write code](#your-time-off-policy-sounds-great-but-i-want-to-write-code)
     - [Sounds like I'm working less, how will this impact my career](#sounds-like-im-working-less-how-will-this-impact-my-career)
@@ -74,27 +82,41 @@ Organizations reflect their leaders, and I try my best to model sustainability. 
 
 **I book my vacations in advance, I take them, and I keep my work laptop off** Every year my mom comes for spring break, we visit my wife's family for a week around thanksgiving, we take a week in the summer to visit my sister in Canada, and we take some time to enjoy the kids being off school for winter break. As hard as it is to let go of work (and trust me it's way hard), I say sorry - this vacation is booked, I won't be available till I'm back from vacation.
 
-### What mechanisms do I put in place to enable a culture of work life balance
+### How do we make it easier to to achieve work life balance on this team
+
+Work life balance requires organizational mechanisms, and here are some of ours.
+
+_Still rough_
+
+**Realistic Expectations** Anxiety is the difference between expectations and reality, and to leave work you need to have realistic expectations. We achieve this by continuously adjusting what is realistic, rebalancing resources,
+
+-   Laws of physics win
+-   Continuous assessment of realistic.
+-   We work out priority, you figure out cost and we agree on cut line.
+-   Golden triangle
+-   Re-prioritize, re-assign resources
+-   Examples slipping
+
+**Flexible work hours** Everyone achieves work life balance differently, so we allow you to have flexible hours. But everyone says this, so here are some mechanisms we apply :
+
+-   Work where/when you want to -- remote work/results vs time oriented
+-   To ensure people can go home guilt free, have no meetings after 4.
+    E.g. Sarah taking care of her child.
+
+**Remote work** Who wants to work from the office? Everyone says this but, we have high quality microphones in our scrum area, we use slack,
+
+_This could merge, but explicitly not merging to enable a quick skim as folks want this_
+E.g. Sarah work remotely
+
+-   To support working remotely, have chat rooms, high quality microphones, and meetings with video conferencing capabilities.
+
+**Unlimited Time off**
 
 High performing organizations use structural mechanisms to support the culture. Here are some mechanisms I put in place:
 
-BIG IDEAS:
-
--   Work where/when you want to -- remote work/results vs time oriented
--   We work out priority, you figure out cost and we agree on cut line.
-
--   To support working remotely, have chat rooms, high quality microphones, and meetings with video conferencing capabilities.
--   To ensure people can go home guilt free, have no meetings after 4.
 -   To encourage people to take care of themselves, have an [unlimited vacation policy](https://www.entrepreneur.com/article/269989) including taking extra days off during the holidays.
--   To avoid people getting stressed out by a mail from their boss, I don't send e-mails on weekends or evenings.
--   To teach the behavior, I make work life balance a top priority.
 
-To flesh out:
-
--   Planning
--   Defending Boundaries
--   Managing up
--   No meetings after 4
+**Team events** (Feedback on if this should be in a separate blog post) Work life balance shouldn't be limited to outside of work, we do team breakfasts, Friday afternoon beers and folks eat lunch together? (This is a place I need to get stronger)
 
 ### The fine print
 
@@ -102,9 +124,17 @@ To flesh out:
 -   There are times when we need to swing work life balance to work. But they should be rare, clear ahead of time, and followed or proceeded by times where you can focus on your life.
 -   Changing culture is a slow process so if I'm new to an organization expect a while for it to kick in.
 
-### Organizational change (Sneak peek of post #2)
+### How do I manage up to enable work life balance (Sneak peek of post #2)
 
-Skeptical people expect these processes will be abused, but in all the teams I've instituted it's never been a problem. If anything, it encourages a high performing team by encouraging the team to cover each other when folks want time off.
+This topic is worthy of its own blog post, and it will get it. In the interim, here are a few examples of me going to bat for work life balance.
+
+**The Friday at 4 meetings**
+
+**The team event**
+
+**The mandatory vacation**
+
+**Blocking shipping**
 
 Stories:
 
@@ -130,7 +160,7 @@ Building code muscles is great - I highly recommend it. I believe the best way t
 #### Sounds like I'm working less, how will this impact my career
 
 80/20 rule
-But, if someone is equally efficient and working more hours, their career might go faster, but in my experience unsustaible, miserable, burn out.
+But, if someone is equally efficient and working more hours, their career might go faster, but in my experience unsustainable, miserable, burn out.
 
 #### Really, you do this
 
@@ -159,3 +189,11 @@ No, when I was young and single, I wanted to build my tech muscles as fast as I 
 #### I'm young and single - I want to work like a dog - should I
 
 Sure! That's what I did. If you want to do this, you're welcome in my team, but I'd recommend doing it in a team that is all working like a dog, you'll have more fun!
+
+<!--
+### References for part 2:
+
+https://www.forbes.com/sites/forbesbusinessdevelopmentcouncil/2018/04/17/three-most-in-demand-employee-benefits-of-2018/#3211690e5510
+https://hbr.org/2017/02/the-most-desirable-employee-benefits
+https://www.nytimes.com/2017/02/15/us/remote-workers-work-from-home.html
+-->
