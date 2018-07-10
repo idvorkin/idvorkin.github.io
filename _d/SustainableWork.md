@@ -31,15 +31,12 @@ Why does Igor need a reminder?
     - If working in an unsustainable manner will burn out
     - Need to set and remember my boundaries
 
-
-
 XXX: What is the call to action?
-
 -->
 
 <!-- Why? On your death bed -->
 
-Imagine being on your deathbed, in one of the last conversations you'll ever have with your grown up child. Notice the heaviness in your heart as you describe your regrets. Do you want those regrets to include "I wish I spent less time at work ", "I wish I spent more time with my family", "I wish I made time to take care of my health"?
+Imagine being on your deathbed, having one of your final conversations with your grown up child. Feel your shoulders tense as you describe your regrets. Do you want to be saying "I wish I spent less time at work ", "I wish I spent more time with my family", "I wish I made time to take care of my health"?
 
 I don't, and I bet you don't either.
 
@@ -84,11 +81,19 @@ Organizations reflect their leaders, and I try my best to model sustainability. 
 
 ### How do we make it easier to to achieve work life balance on this team
 
-Work life balance requires organizational mechanisms, and here are some of ours.
+Work life balance requires organizational mechanisms and care, and here are some of ours. I'll use some real examples from the last few months, with names and events changed to protect the innocent.
 
-_Still rough_
+**Realistic Expectations** Anxiety is the difference between expectations and reality, and to leave work at work, you need to walk out the door stress free. This has two dimensions: 1) The business has realistic expectations that are updated as soon as facts on the ground change 2) individuals having assignments that are challenging but still within their ability and knowing the team has their back.
 
-**Realistic Expectations** Anxiety is the difference between expectations and reality, and to leave work you need to have realistic expectations. We achieve this by continuously adjusting what is realistic, rebalancing resources,
+The business will never be surprised because it expects a continuous refinement of estimates based on our knowledge at the time. For example, my team was slated to implement video compression, and we assigned Jeb to work on the feature. His initial estimate was based on the fact a library existed that should allow us
+
+We expected to be a small task given a video compression plugin already existed for our platform. After our initial investigation <blah>
+
+Individuals will have assignments that are within their reach. We don't have a specific mechanism for this, but let me tell a story that illustrates a common situation.
+
+For example, we found a bug in video upload that only affected Android devices. We thought it should be trivial, so I assigned Jeff an SDE I on the team to figure it out and fix it.  Four days in I was tipped off that Jeff had been working 14 hours since the start trying to figure it out, and in chatting with him it was clear the bug was much harder then we expected, and
+
+fix what we thought was a simple  Android specific bug that would take a few days.  Because the bug was much harder then expected, the team member was working long hours trying to fix it, but it was outside of their ability. I explained to the employee the problem wasn't the employee but the complexity of the bug.  I re-assigned someone from a lower priority project to help the first engineer fix the problem
 
 -   Laws of physics win
 -   Continuous assessment of realistic.
@@ -97,26 +102,20 @@ _Still rough_
 -   Re-prioritize, re-assign resources
 -   Examples slipping
 
-**Flexible work hours** Everyone achieves work life balance differently, so we allow you to have flexible hours. But everyone says this, so here are some mechanisms we apply :
+**Flexible work hours** Everyone achieves work life balance differently, so we allow you to have flexible hours.
 
+An example of people working flexible hours was Sally, who had a 1 year old child, and wanted to work from home to be able  (blah)
+
+- No meetings after 4.
 -   Work where/when you want to -- remote work/results vs time oriented
 -   To ensure people can go home guilt free, have no meetings after 4.
     E.g. Sarah taking care of her child.
 
-**Remote work** Who wants to work from the office? Everyone says this but, we have high quality microphones in our scrum area, we use slack,
+**Remote work** Why be limited to working in the office?  Many folks want to work from home, or a plane, or from another country, and I'm all for it! A few examples of things we do to enable this are, heavy use of group messenger (Slack/Chime/etc), meetings in rooms with Video conferencing, having high quality microphones for ad-hoc group conversations. I tend to work from home a day or so every few weeks, so I get to experience the pain if our working from home experience isn't good enough.
 
-_This could merge, but explicitly not merging to enable a quick skim as folks want this_
-E.g. Sarah work remotely
+**Unlimited Time off** To encourage people to take care of themselves, we have [unlimited time off](https://www.entrepreneur.com/article/269989). Some people are willing to take advantage of this on their own, but many folks require encouragement :) For example, this year July 4th was a Wednesday, so I told folks I expected them to be "sick" either Monday and Tuesday or Thursday and Friday. As another example, when folks transfer internally into the team I encourage them to take a few weeks off as there are so few opportunities to take time off with a completely clear head.
 
--   To support working remotely, have chat rooms, high quality microphones, and meetings with video conferencing capabilities.
-
-**Unlimited Time off**
-
-High performing organizations use structural mechanisms to support the culture. Here are some mechanisms I put in place:
-
--   To encourage people to take care of themselves, have an [unlimited vacation policy](https://www.entrepreneur.com/article/269989) including taking extra days off during the holidays.
-
-**Team events** (Feedback on if this should be in a separate blog post) Work life balance shouldn't be limited to outside of work, we do team breakfasts, Friday afternoon beers and folks eat lunch together? (This is a place I need to get stronger)
+**Team events (aka soul)** Building a team with soul is a huge part of my job, and I'll have a separate post on the topic, but as a preview, here's me the day I came to work in a rainbow suit.
 
 ### The fine print
 
@@ -136,20 +135,18 @@ This topic is worthy of its own blog post, and it will get it. In the interim, h
 
 **Blocking shipping**
 
-Stories:
-
--   Telling boss to stop having meetings after 4
-
+<!--
 When I joined a new organization, I was amazed that at noon Friday a director called a meeting for 4pm-5pm on the same Friday. The next Monday, I walked into the director's office and said "How much will I need to pay you to not have meetings after 4?" The director asked "Why?". I explained that I come in early, and like to leave by 4. The director then asked "Hymn, should we have no meetings after 3?". I replied 4 should be fine, and that was that. No meetings after 4.
 
 -   Erica - Boat day at Sean's time off
--   Team breakfasts -- too long, too often
+-   Team breakfasts too long, too often
 -   Don't want to go, I do it anyways
 -   Less capacity on holiday weekends
 -   Too much ambiguity for top down planning. Rebuild roadmap on fly
 -   Shipping is a feature
 -   9 Woman in 1 month do not a baby make
 -   Real schedule, management schedule, happy to do both
+-->
 
 ### FAQ
 
