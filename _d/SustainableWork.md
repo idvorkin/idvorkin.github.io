@@ -42,28 +42,7 @@ I don't, and I bet you don't either.
 
 The people I want to work with value a culture encouraging them to balance their family, health, hobbies and work - aka work life balance. For a culture to be real, the leadership team needs walk the talk, and I'll describe how I role model work life balance, and the mechanisms I put in place to encourage balance in my teams.
 
-In a future post, I'll describe how you can build a culture of work life balance into an organization that only gives it lip service.
-
-**Table of contents**
-
-<!-- TOC -->
-
-- [How do I model work life balance](#how-do-i-model-work-life-balance)
-- [How do we make it easier to to achieve work life balance on this team](#how-do-we-make-it-easier-to-to-achieve-work-life-balance-on-this-team)
-- [The fine print](#the-fine-print)
-- [How do I manage up to enable work life balance (Sneak peek of post #2)](#how-do-i-manage-up-to-enable-work-life-balance-sneak-peek-of-post-2)
-- [FAQ](#faq)
-    - [Your time off policy sounds great, but I want to write code](#your-time-off-policy-sounds-great-but-i-want-to-write-code)
-    - [Sounds like I'm working less, how will this impact my career](#sounds-like-im-working-less-how-will-this-impact-my-career)
-    - [Really, you do this](#really-you-do-this)
-    - [How many hours do you work a week](#how-many-hours-do-you-work-a-week)
-    - [What's a typical work day](#whats-a-typical-work-day)
-    - [Have you ever burned out](#have-you-ever-burned-out)
-    - [Man this sounds awesome, but my boss has me completely overloaded](#man-this-sounds-awesome-but-my-boss-has-me-completely-overloaded)
-    - [Did you always do this](#did-you-always-do-this)
-    - [I'm young and single - I want to work like a dog - should I](#im-young-and-single---i-want-to-work-like-a-dog---should-i)
-
-<!-- /TOC -->
+In future posts, I'll describe how leaders can build a culture of work life balance into organizations that haven't embraced it yet.
 
 ### How do I model work life balance
 
@@ -81,61 +60,61 @@ Organizations reflect their leaders, and I try my best to model sustainability. 
 
 ### How do we make it easier to to achieve work life balance on this team
 
-Work life balance requires organizational mechanisms and care, and here are some of ours. I'll use some real examples from the last few months, with names and events changed to protect the innocent.
+Work life balance requires organizational mechanisms and care, and here are some of ours. After describing our mechanisms, I'll I'll describe Veronica's (not her real name) experience, which highlights many of the thing my organizations do to support work life balance.
 
 **Realistic Expectations** Anxiety is the difference between expectations and reality, and to leave work at work, you need to walk out the door stress free. This has two dimensions: 1) The business has realistic expectations that are updated as soon as facts on the ground change 2) individuals having assignments that are challenging but still within their ability and knowing the team has their back.
 
-The business will never be surprised because it expects a continuous refinement of estimates based on our knowledge at the time. For example, my team was slated to implement video compression, and we assigned Jeb to work on the feature. His initial estimate was based on the fact a library existed that should allow us
+The business will never be surprised because it expects a continuous refinement of estimates based on our knowledge at the time. I'll go into more details on this in my blog post on bringing work life balance to a business.
 
-We expected to be a small task given a video compression plugin already existed for our platform. After our initial investigation <blah>
+Individuals will have assignments that are within their reach. When there tasks are bigger then they can handle, or when they need to help with their tasks for personal reasons, the team will re prioritize other work and cover - in a nutshell, the team has your back.
 
-Individuals will have assignments that are within their reach. We don't have a specific mechanism for this, but let me tell a story that illustrates a common situation.
+_This section feels weakest, give me lots of feedback here Other things I can go into_
 
-For example, we found a bug in video upload that only affected Android devices. We thought it should be trivial, so I assigned Jeff an SDE I on the team to figure it out and fix it.  Four days in I was tipped off that Jeff had been working 14 hours since the start trying to figure it out, and in chatting with him it was clear the bug was much harder then we expected, and
+- Continuous assessment of realistic.
+- We work out priority, you figure out cost and we agree on cut line.
+- Date, Quality, Scope - Pick 2.
+- Re-prioritize, re-assign resources
+- Examples of slipping
 
-fix what we thought was a simple  Android specific bug that would take a few days.  Because the bug was much harder then expected, the team member was working long hours trying to fix it, but it was outside of their ability. I explained to the employee the problem wasn't the employee but the complexity of the bug.  I re-assigned someone from a lower priority project to help the first engineer fix the problem
+**Flexible hours** Everyone achieves work life balance differently, so we have flexible hours. Most of the mechanisms we use for this are the same as for remote work, adding no meetings after 4.
 
--   Laws of physics win
--   Continuous assessment of realistic.
--   We work out priority, you figure out cost and we agree on cut line.
--   Golden triangle
--   Re-prioritize, re-assign resources
--   Examples slipping
+**Remote work** Why be limited to working in the office? Many folks want to work from home, a plane, or even another country. I'm all for it and do everything I can to make it easier. For example, we use group messenger (Slack/Chime/etc) heavily, have meetings in rooms with Video conferencing, and have high quality microphones for ad-hoc conversations like stand up. I personally work remotely every few weeks, so I get to experience the pain if our remote work experience isn't good enough and encourage us to fix it.
 
-**Flexible work hours** Everyone achieves work life balance differently, so we allow you to have flexible hours.
+**Unlimited paid time off** To encourage people to take care of themselves, we have [unlimited time off](https://www.entrepreneur.com/article/269989). Some people take advantage of this naturally, but others require encouragement :) For example, this year July 4th was a Wednesday, so I encouraged folks to be "sick" either Monday/Tuesday or Thursday/Friday. As another example, when folks do an internal transfer into the team I encourage them to take a few weeks off as there are so few opportunities to take time off with a completely clear head.
 
-An example of people working flexible hours was Sally, who had a 1 year old child, and wanted to work from home to be able  (blah)
+**No emails from me on evenings and weekends** To avoid people getting that jolt of stress when they get a mail from their boss when they're checking their e-mail on the weekend (which would be rare as I reserve evenings and weekends for my family) I queue up sending my mails for mornings on working days.
 
-- No meetings after 4.
--   Work where/when you want to -- remote work/results vs time oriented
--   To ensure people can go home guilt free, have no meetings after 4.
-    E.g. Sarah taking care of her child.
+**Making work time like hanging out with your friends** Having work be a blast is so important to me, I'll have a separate post on the topic (tbd)
 
-**Remote work** Why be limited to working in the office?  Many folks want to work from home, or a plane, or from another country, and I'm all for it! A few examples of things we do to enable this are, heavy use of group messenger (Slack/Chime/etc), meetings in rooms with Video conferencing, having high quality microphones for ad-hoc group conversations. I tend to work from home a day or so every few weeks, so I get to experience the pain if our working from home experience isn't good enough.
+### Veronica's Story
 
-**Unlimited Time off** To encourage people to take care of themselves, we have [unlimited time off](https://www.entrepreneur.com/article/269989). Some people are willing to take advantage of this on their own, but many folks require encouragement :) For example, this year July 4th was a Wednesday, so I told folks I expected them to be "sick" either Monday and Tuesday or Thursday and Friday. As another example, when folks transfer internally into the team I encourage them to take a few weeks off as there are so few opportunities to take time off with a completely clear head.
+Veronica was a new mom on our team who realized she wanted to spend more time with her infant. Her experience exemplifies many of my beliefs and strategies for achieving work life balance.
 
-**Team events (aka soul)** Building a team with soul is a huge part of my job, and I'll have a separate post on the topic, but as a preview, here's me the day I came to work in a rainbow suit.
+- Worked from home full time.
+- Bought mics when stand up sounds quality sucked.
+- Made sure everyone dialed her into meetings
+- Became overwhelmed, helped set expectations, change business and update work.
+- She said she was deciding if she wanted to stay at work, or take a few years off.
+- Connected her to other women I knew in tech who stayed at worked and left the work force to
+- While she was decided, recommended she try reduced hours to see if that was a good deal for her.
+- Encouraged her to take time off as she was having a rough time.
 
 ### The fine print
 
--   Like all hard goals, there are times where I slip up, and don't live up to my standards. If you see me doing this, call me out, and I'll do my best to course correct.
--   There are times when we need to swing work life balance to work. But they should be rare, clear ahead of time, and followed or proceeded by times where you can focus on your life.
--   Changing culture is a slow process so if I'm new to an organization expect a while for it to kick in.
+- Like all hard goals, there are times where I slip up, and don't live up to my standards. If you see me doing this, call me out, and I'll do my best to course correct.
+- There are times when we need to swing work life balance to work. But they should be rare, clear ahead of time, and followed or proceeded by times where you can focus on your life.
+- Changing culture is a slow process so if I'm new to an organization expect a while for it to kick in.
 
+<!--
 ### How do I manage up to enable work life balance (Sneak peek of post #2)
 
 This topic is worthy of its own blog post, and it will get it. In the interim, here are a few examples of me going to bat for work life balance.
 
 **The Friday at 4 meetings**
-
 **The team event**
-
 **The mandatory vacation**
-
 **Blocking shipping**
 
-<!--
 When I joined a new organization, I was amazed that at noon Friday a director called a meeting for 4pm-5pm on the same Friday. The next Monday, I walked into the director's office and said "How much will I need to pay you to not have meetings after 4?" The director asked "Why?". I explained that I come in early, and like to leave by 4. The director then asked "Hymn, should we have no meetings after 3?". I replied 4 should be fine, and that was that. No meetings after 4.
 
 -   Erica - Boat day at Sean's time off
@@ -150,42 +129,24 @@ When I joined a new organization, I was amazed that at noon Friday a director ca
 
 ### FAQ
 
-#### Your time off policy sounds great, but I want to write code
+**Really, you do this?** Like everyone else, my goals are aspirational and sometimes I miss. But I highly value feedback and expect my co-workers to hold me accountable when I'm not doing it.
 
-Building code muscles is great - I highly recommend it. I believe the best way to do that is to work on a side project or to take courses, and read a great programming book.
+**How many hours do you work a week?** My goal is to work 40-50 hours. I will not check e-mail on the evenings or weekends, but I do spend a bunch of time on professional development like coding side projects and reading books on emotional intelligence.
 
-#### Sounds like I'm working less, how will this impact my career
+**What's a typical work day?** I'm a morning person, and like to roll out of bed at 5am and start working by 5:30. I try to get in 2 hour block from 5:30-7:30am. At 7:30 I walk my son to school, then bike to work. I'm at work by 9am, and then work till 4pm. Once I leave, I'm strict about unplugging. Unless there's a fire, I will not check e-mail or work from home. Because this has me working 45 hours/week, I have no guilt leaving in the middle of the day for my daughters dance performances, or to catch up with a friend who's visiting town.
 
-80/20 rule
-But, if someone is equally efficient and working more hours, their career might go faster, but in my experience unsustainable, miserable, burn out.
 
-#### Really, you do this
+**Have you ever burned out?** Yes. I've burned out 3 times in my career. The first time, I just became a senior developer, just had my first child, and just bought my first house. The second time, I put my team in a position where they were setup for failure, and I didn't know how to declare success and move on. The third time, I didn't realize I was operating under extremely unrealistic expectations and didn't have support structure I needed. I'll go into details on these situations in a future blog post(tbd).
 
-Like everyone else, my goals are aspirational and sometimes I miss. But I highly value feedback and expect my co-workers to hold me accountable when I'm not doing it.
+**Your time off policy sounds great, but I want to write code non stop!** Building code muscles (or any skill) is great - I highly recommend it. I believe the best way to do that is to work on a side project or to take courses, and read a great programming book, you'll get to code, and learn about a whole different environment.
 
-#### How many hours do you work a week
+**I'm young and single - I want to work like a dog - should I?** You can, that's what I did at the start of my career. If you want to do this, choose your team carefully and make sure the folks working like a dog are actually getting more work done and not on a path to burn out.
 
-My goal is to work 40-50 hours. I will not check e-mail on the evenings or weekends, but I do spend a bunch of time on professional development like coding side projects and reading books on emotional intelligence.
+**Sounds like I'm working less, how will this impact my career?** If someone works as effectively as you for 60 hours a week,  when you're working 40 hours a week, they'll get ahead. However, what I often see happen is the folks working 60 hours, are less effective with their time, and burn out after stretches of long hours.
 
-#### What's a typical work day
+**Did you always do this?** No, when I was young and single, I wanted to build my tech muscles as fast as I could and often worked 50-60 hours a week. When I started Azure, I and the entire team worked 60 hours a week, and it was one of the most fun times in my career.
+**Man this sounds awesome, but my boss has me completely overloaded!** That's a hard position. My thoughts on task overload are [here](http://ig2600.blogspot.com/search?q=overload).
 
-I'm a morning person, and like to roll out of bed at 5am and start working by 5:30. I try to get in 2 hour block from 5:30-7:30am. At 7:30 I walk my son to school, then bike to work. I'm at work by 9am, and then work till 4pm. Once I leave, I'm strict about unplugging. Unless there's a fire, I will not check e-mail or work from home. Because this has me working 45 hours/week, I have no guilt leaving in the middle of the day for my daughters dance performances, or to catch up with a friend who's visiting town.
-
-#### Have you ever burned out
-
-Yes. I've burned out 3 times in my career. The first time, I just became a senior developer, just had my first child, and just bought my first house. The second time, I put my team in a position where they were setup for failure, and I didn't know how to declare success and move on. The third time, I didn't realize I was operating under extremely unrealistic expectations and didn't have support structure I needed.
-
-#### Man this sounds awesome, but my boss has me completely overloaded
-
-That's a hard position. My thoughts on task overload are [here](http://ig2600.blogspot.com/search?q=overload).
-
-#### Did you always do this
-
-No, when I was young and single, I wanted to build my tech muscles as fast as I could and often worked 50-60 hours a week. When I started Azure, I and the entire team worked 60 hours a week, and it was one of the most fun times in my career.
-
-#### I'm young and single - I want to work like a dog - should I
-
-Sure! That's what I did. If you want to do this, you're welcome in my team, but I'd recommend doing it in a team that is all working like a dog, you'll have more fun!
 
 <!--
 ### References for part 2:
