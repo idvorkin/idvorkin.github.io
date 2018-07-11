@@ -145,6 +145,7 @@ When I joined a new organization, I was amazed that at noon Friday a director ca
 **Sounds like I'm working less, how will this impact my career?** If someone works as effectively as you for 60 hours a week,  when you're working 40 hours a week, they'll get ahead. However, what I often see happen is the folks working 60 hours, are less effective with their time, and burn out after stretches of long hours.
 
 **Did you always do this?** No, when I was young and single, I wanted to build my tech muscles as fast as I could and often worked 50-60 hours a week. When I started Azure, I and the entire team worked 60 hours a week, and it was one of the most fun times in my career.
+
 **Man this sounds awesome, but my boss has me completely overloaded!** That's a hard position. My thoughts on task overload are [here](http://ig2600.blogspot.com/search?q=overload).
 
 
