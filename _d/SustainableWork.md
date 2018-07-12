@@ -94,7 +94,7 @@ Success doesn't need to be a promo - could be having a sick mom so wanting stabi
 
 No emails from me on evenings and weekends - To avoid people getting that jolt of stress when they get a mail from their boss when they're checking their e-mail on the weekend (which would be rare as I reserve evenings and weekends for my family) I queue up sending my mails for mornings on working days.
 
-You should talk more about, you’re there to get people where they want to be; the next level, an industry change, building skills to move somewhere else, etc. You enjoy helping people grow and become happier.
+You should talk more about, you're there to get people where they want to be; the next level, an industry change, building skills to move somewhere else, etc. You enjoy helping people grow and become happier.
 
 **Making work like having a blast with your friends** Having work be a blast is so important to me, I'll have a separate post on the topic - stay tuned (tbd - link moments @ work).
 
