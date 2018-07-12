@@ -77,10 +77,11 @@ Work life balance requires organizational mechanisms and care, and here are some
 
 **Flexible hours from wherever want to be** Everyone achieves work life balance differently, so the team does everything it can think of to make it easier to watch your daughter's soccer game, get your car to the mechanic, or work from another country. For example, all our meeting are between 10 and 4, we use group messenger (Slack/Chime) heavily, we have meetings in rooms with video conferencing, and we have high quality microphones for ad-hoc conversations like stand up. I work remotely all the time, so if the experience sucks, I'm very incentivized to fix it.
 
-**Humans are not resources/fungible** Everyone on my team is a 3-dimensional human with different wants, needs strengths and weaknesses.
+**Humans are not resources/fungible/the sum of thier deliverables** Everyone on my team is a 3-dimensional human with different wants, needs strengths and weaknesses.
 
 *Hymn, this one also needs work but here's some of the ideas*
 
+When you say "I need to" ... the answer is YES.
 One on ones are not status reports - they are your time to spend as you wish. We build relationships as people (if you want).
 
 Appreciation.
