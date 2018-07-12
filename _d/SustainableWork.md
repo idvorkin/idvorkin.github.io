@@ -33,6 +33,13 @@ Why does Igor need a reminder?
 
 XXX: What is the call to action?
 -->
+<!--
+
+Sean's alternate intro:
+
+Work life balance is a spectrum from working all of your waking hours to working the minimum you can get away with. You'll be happiest when you find a team who lands on the spectrum where you want to.  I love my job, but want to limit my work to 45 hours/week.  I don't want regrets like "X", "Y", "Z"
+
+-->
 
 <!-- Why? On your death bed -->
 
@@ -46,7 +53,7 @@ In future posts, I'll describe how leaders can build a culture of work life bala
 
 ### How do I model work life balance
 
-Organizations reflect their leaders, and I try my best to model sustainability. Here are some of my personal behaviors:
+Organizations reflect their leaders, and I try my best to model work life balance. Here are some of my personal behaviors:
 
 **I leave at 4 pm, 4 days a week** My watch alarm goes off every day at 3:45pm, reminding me to wrap up for the day. It goes off a second time at 4:05, at which point I drop what I'm doing, grab my bag, and leave. I do this 4 days a week like clockwork. One day a week I'll stay late, usually with an open schedule. I do this because many people prefer to socialize around 4-6, and I want to be around for that - aka happy hour!
 
@@ -58,42 +65,43 @@ Organizations reflect their leaders, and I try my best to model sustainability. 
 
 **I book my vacations in advance, I take them, and I keep my work laptop off** Every year my mom comes for spring break, we visit my wife's family for a week around thanksgiving, we take a week in the summer to visit my sister in Canada, and we take some time to enjoy the kids being off school for winter break. As hard as it is to let go of work (and trust me it's way hard), I say sorry - this vacation is booked, I won't be available till I'm back from vacation.
 
-### How do we make it easier to to achieve work life balance on this team
+### How do we make it easier to to achieve work life balance on my team
 
 Work life balance requires organizational mechanisms and care, and here are some of ours. After describing our mechanisms, I'll I'll describe Veronica's (not her real name) experience, which highlights many of the thing my organizations do to support work life balance.
 
-**Realistic Expectations** Anxiety is the difference between expectations and reality, and to leave work at work, you need to walk out the door stress free. This has two dimensions: 1) The business has realistic expectations that are updated as soon as facts on the ground change 2) individuals having assignments that are challenging but still within their ability and knowing the team has their back.
+**Unlimited paid time off** To encourage people to take care of themselves, we have [unlimited time off](https://www.entrepreneur.com/article/269989). Some people take advantage of this naturally, but others require encouragement :) For example, this year July 4th was a Wednesday, so I encouraged folks to be "sick" either Monday/Tuesday or Thursday/Friday. As another example, when folks do an internal transfer into my team I encourage them to take a few weeks off as there are so few opportunities to take time off with a completely clear head.
 
-The business will never be surprised because it expects a continuous refinement of estimates based on our knowledge at the time. I'll go into more details on this in my blog post on bringing work life balance to a business.
+**Realistic expectations for work deliverables** Anxiety is the difference between expectations and reality. To leave work at work, you need to feel good about the work you're doing.  Everyone gets work assignments that they won't be able to deliver. Regardless of if it happens because of a skill gap, the assignment being harder then expected, or unexpected life events, we'll quickly figure out what is realistic for you to deliver and what help you need to feel good. If the assignment needs to get done before you can do it,  we'll re-prioritize work others are doing to get you the help you need to succeed. In a nutshell, I know you're doing your best, and the team's got your back.
 
-Individuals will have assignments that are within their reach. When there tasks are bigger then they can handle, or when they need to help with their tasks for personal reasons, the team will re prioritize other work and cover - in a nutshell, the team has your back.
+*I'm getting closer on this section, but something still isn't fitting right - does this need a concrete example? A better description, ponder. Is this just important to me?*
 
-_This section feels weakest, give me lots of feedback here Other things I can go into_
+**Flexible hours from wherever want to be** Everyone achieves work life balance differently, so the team does everything it can think of to make it easier to watch your daughter's soccer game, get your car to the mechanic, or work from another country. For example, all our meeting are between 10 and 4, we use group messenger (Slack/Chime) heavily, we have meetings in rooms with video conferencing, and we have high quality microphones for ad-hoc conversations like stand up. I work remotely all the time, so if the experience sucks, I'm very incentivized to fix it.
 
-- Continuous assessment of realistic.
-- We work out priority, you figure out cost and we agree on cut line.
-- Date, Quality, Scope - Pick 2.
-- Re-prioritize, re-assign resources
-- Examples of slipping
+**Humans are not resources/fungible** Everyone on my team is a 3-dimensional human with different wants, needs strengths and weaknesses.
 
-**Flexible hours** Everyone achieves work life balance differently, so we have flexible hours. Most of the mechanisms we use for this are the same as for remote work, adding no meetings after 4.
+*Hymn, this one also needs work but here's some of the ideas*
 
-**Remote work** Why be limited to working in the office? Many folks want to work from home, a plane, or even another country. I'm all for it and do everything I can to make it easier. For example, we use group messenger (Slack/Chime/etc) heavily, have meetings in rooms with Video conferencing, and have high quality microphones for ad-hoc conversations like stand up. I personally work remotely every few weeks, so I get to experience the pain if our remote work experience isn't good enough and encourage us to fix it.
+One on ones are not status reports - they are your time to spend as you wish. We build relationships as people (if you want).
 
-**Unlimited paid time off** To encourage people to take care of themselves, we have [unlimited time off](https://www.entrepreneur.com/article/269989). Some people take advantage of this naturally, but others require encouragement :) For example, this year July 4th was a Wednesday, so I encouraged folks to be "sick" either Monday/Tuesday or Thursday/Friday. As another example, when folks do an internal transfer into the team I encourage them to take a few weeks off as there are so few opportunities to take time off with a completely clear head.
+Appreciation.
 
-**No emails from me on evenings and weekends** To avoid people getting that jolt of stress when they get a mail from their boss when they're checking their e-mail on the weekend (which would be rare as I reserve evenings and weekends for my family) I queue up sending my mails for mornings on working days.
+Praise.
 
-**Making work time like hanging out with your friends** Having work be a blast is so important to me, I'll have a separate post on the topic (tbd)
+Success doesn't need to be a promo - could be having a sick mom so wanting stability to take care of her.
+
+No emails from me on evenings and weekends - To avoid people getting that jolt of stress when they get a mail from their boss when they're checking their e-mail on the weekend (which would be rare as I reserve evenings and weekends for my family) I queue up sending my mails for mornings on working days.
+
+
+**Making work like having a blast with your friends** Having work be a blast is so important to me, I'll have a separate post on the topic - stay tuned (tbd - link moments @ work).
 
 ### Veronica's Story
 
-Veronica was a new mom on our team who realized she wanted to spend more time with her infant. Her experience exemplifies many of my beliefs and strategies for achieving work life balance.
+To illustrate these commitments I want to tell you about Veronica's recent experience.   Veronica, not her real name, was a new mom on our team who realized she wanted to spend more time with her infant....
 
-- Worked from home full time.
+- She Worked from home full time.
 - Bought mics when stand up sounds quality sucked.
 - Made sure everyone dialed her into meetings
-- Became overwhelmed, helped set expectations, change business and update work.
+- She Became overwhelmed, helped set expectations, change business and update work.
 - She said she was deciding if she wanted to stay at work, or take a few years off.
 - Connected her to other women I knew in tech who stayed at worked and left the work force to
 - While she was decided, recommended she try reduced hours to see if that was a good deal for her.
@@ -101,9 +109,9 @@ Veronica was a new mom on our team who realized she wanted to spend more time wi
 
 ### The fine print
 
-- Like all hard goals, there are times where I slip up, and don't live up to my standards. If you see me doing this, call me out, and I'll do my best to course correct.
-- There are times when we need to swing work life balance to work. But they should be rare, clear ahead of time, and followed or proceeded by times where you can focus on your life.
-- Changing culture is a slow process so if I'm new to an organization expect a while for it to kick in.
+- Like all hard things, there are times where I slip up, and don't live up to my standards. If you see me doing this, call me out, and I'll do my best to course correct.
+- There are times when we need to swing work life balance to work. They should be rare, clear ahead of time, and followed or proceeded by times where we can focus on our lives.
+- Changing culture is a slow process so when I'm new to an organization expect a while for it to kick in.
 
 <!--
 ### How do I manage up to enable work life balance (Sneak peek of post #2)
