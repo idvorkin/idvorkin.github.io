@@ -47,7 +47,7 @@ Imagine being on your deathbed, having one of your last conversations with your 
 
 I don't, and I bet you don't either.
 
-The people I want to work with value a culture encouraging them to balance their family, health, hobbies and work - aka work life balance. For a culture to be real, the leadership team needs walk the talk, and I'll describe how I role model work life balance, and the mechanisms I put in place to encourage balance in my teams.
+The people I want to work with value a culture encouraging them to balance their family, health, hobbies and work - aka work life balance. For a culture to be real, the leadership team needs walk the talk, and I'll describe how I role model work life balance, and the mechanisms I use to help the team achieve balance.
 
 
 ### How do I model work life balance
@@ -56,12 +56,9 @@ Organizations reflect their leaders, and I strive to model work life balance.
 
 **I leave at 4 pm, 4 days a week** My watch alarm goes off every day at 3:45pm, reminding me to wrap up for the day. It goes off a second time at 4:05, at which point I drop what I'm doing, grab my bag, and leave. I do this 4 days a week like clockwork. One day a week I'll stay late, usually with an open schedule. I do this because many people prefer to socialize around 4-6, and I want to be around for that - aka happy hour!
 
-*(FEEDBACK: Any concern that it sounds like I'm abandoning my team if they need help after 4?)*
-
 **I don't work evenings and weekends** I love my job when it's going well, and I have a huge sense of responsibility when it's going poorly. If I don't force myself to stop working, I won't. Thus, I have a simple rule which I stick to most of the time - don't work evening and weekends. There are exceptions when I want/need to work an evening or weekend, when that happens I'm religious about using delayed send to avoid my employees getting mails from me out of business hours.
 
 **I don't have work e-mail on my phone** When I say I don't work on evenings and weekends I mean I don't work evenings and weekends and e-mail is work. If I had work e-mail on my phone I'd check it when I'm idle, so I can't have work e-mail from my phone. I do have chime (aka Skype/Slack/Teams)) in case something is urgent and folks want to get a hold of me.
-*(FEEDBACK: Any concern that it sounds like I'm abandoning my team if they need help after 4?)*
 
 **I proudly go to kids events during the day** My daughter is 4, the highlight of her life is her "ballet recital" it's the 3rd Wednesday every 4 months @ 11am. I won't miss it for the world.
 
@@ -69,12 +66,17 @@ Organizations reflect their leaders, and I strive to model work life balance.
 
 ### How do we make it easier to to achieve work life balance on my team
 
-Work life balance requires organizational mechanisms and care, and here are some of ours. After describing our mechanisms, I'll I'll describe Veronica's experience, which highlights many of the things that my teams do to support work life balance.
+Work life balance requires organizational mechanisms and care, and here are some of ours. After describing our mechanisms, I'll describe Veronica's experience, which demonstares how we achieve work life balance.
 
 **Unlimited paid time off** To encourage people to take care of themselves, we have [unlimited time off](https://www.entrepreneur.com/article/269989). Some people take advantage of this naturally, but others require encouragement :) For example, this year July 4th was a Wednesday, so I removed two days of capacity from everyone's sprint and told them to be "sick" either Monday/Tuesday or Thursday/Friday. As another example, when folks do an internal transfer into my team I encourage them to take a few weeks off to refresh and reset.
 
 **Realistic expectations for work deliverables** Anxiety is the difference between expectations and reality. To leave work at work, you need to feel good about the work you're doing.  Everyone gets work assignments that they won't be able to deliver. Regardless of if it happens because of a skill gap, the assignment being harder then expected, or unexpected life events, we'll quickly figure out what is realistic for you to deliver and what help you need to feel good. If the assignment needs to get done before you can do it,  we'll re-prioritize work others are doing to get you the help you need to succeed. In a nutshell, I know you're doing your best, and the team's got your back.
 
+<!--
+Go into the different reasons people get unrealistic expectations. Talk about what you do when it happens,
+    - It's on 'only you' to deliver
+    - You're letting the team down.
+-->
 *I'm getting closer on this section, but something still isn't fitting right - does this need a concrete example? A better description, ponder. Is this just important to me?*
 
 **Flexible hours from wherever want to be** Everyone achieves work life balance differently, so the team does everything it can think of to make it easier to watch your daughter's soccer game, get your car to the mechanic, or go for an afternoon jog. For example, all our meetings are between 10 and 4, we use group messenger (Slack/Chime) heavily, we have meetings in rooms with video conferencing, and we have high quality microphones for ad-hoc conversations like stand up. I work remotely at least once a month, so if the experience sucks, I'm very incentivized to fix it.
@@ -96,7 +98,7 @@ No emails from me on evenings and weekends - To avoid people getting that jolt o
 
 You should talk more about, you're there to get people where they want to be; the next level, an industry change, building skills to move somewhere else, etc. You enjoy helping people grow and become happier.
 
-**Making work like having a blast with your friends** Having work be a blast is so important to me, I'll have a separate post on the topic - stay tuned (tbd - link moments @ work).
+**Making work like having a blast with your friends** Having work be something you look forward to is so important to me, I'll have several posts on the topic. The first post, making memorable moments at work, is in [progress](moments-at-work).
 
 ### Veronica's Story
 
@@ -146,10 +148,7 @@ When I joined a new organization, I was amazed that at noon Friday a director ca
 
 **Really, you do this?** Like everyone else, my goals are aspirational and sometimes I miss. But I highly value feedback and expect my co-workers to hold me accountable when I'm not doing it.
 
-**How many hours do you work a week?** My goal is to work 40-50 hours. I will not check e-mail on the evenings or weekends, but I do spend a bunch of time on professional development like coding side projects and reading books on emotional intelligence.
-
-**What's a typical work day?** I'm a morning person, and like to roll out of bed at 5am and start working by 5:30. I try to get in 2 hour block from 5:30-7:30am. At 7:30 I walk my son to school, then bike to work. I'm at work by 9am, and then work till 4pm. Once I leave, I'm strict about unplugging. Unless there's a fire, I will not check e-mail or work from home. Because this has me working 45 hours/week, I have no guilt leaving in the middle of the day for my daughters dance performances, or to catch up with a friend who's visiting town.
-
+**How many hours do you work a week?** My goal is to work 40-50 hours. I will not check e-mail on the evenings or weekends, but I do spend time on professional development like coding side projects and reading books on leadership. An important note - I don't ask my team how much they work, I ask them what did they accomplished.
 
 **Have you ever burned out?** Yes. I've burned out 3 times in my career. The first time, I just became a senior developer, just had my first child, and just bought my first house. The second time, I put my team in a position where they were setup for failure, and I didn't know how to declare success and move on. The third time, I didn't realize I was operating under extremely unrealistic expectations and didn't have support structure I needed. I'll go into details on these situations in a future blog post(tbd).
 
@@ -157,14 +156,20 @@ When I joined a new organization, I was amazed that at noon Friday a director ca
 
 **I'm young and single - I want to work like a dog - should I?** You can, that's what I did at the start of my career. If you want to do this, choose your team carefully and make sure the folks working like a dog are actually getting more work done and not on a path to burn out.
 
-**Sounds like I'm working less, how will this impact my career?** If someone works as effectively as you for 60 hours a week,  when you're working 40 hours a week, they'll get ahead. However, what I often see happen is the folks working 60 hours, are less effective with their time, and burn out after stretches of long hours.
+**Sounds like I'm working less, how will this impact my career?** If someone works as effectively as you for 60 hours a week,  when you're working 40 hours a week, they'll get ahead. However, what I often see is the folks working 60 hours, are less effective with their time, and burn out after stretches of long hours.
 
 **Did you always do this?** No, when I was young and single, I wanted to build my tech muscles as fast as I could and often worked 50-60 hours a week. When I started Azure, I and the entire team worked 60 hours a week, and it was one of the most fun times in my career.
 
-**Man this sounds awesome, but my boss has me completely overloaded!** That's a hard position. My thoughts on task overload are [here](http://ig2600.blogspot.com/search?q=overload).
-
+**Man this sounds awesome, but my boss has me completely overloaded!** That's a hard position. My thoughts on task overload are in [draft](http://ig2600.blogspot.com/search?q=overload).
 
 <!--
+NOTES Ganeshan:
+    - Length is right
+    - How do I make sure the team is actually keeping work life balance?
+    - Is there a penalty for only wokring 40 hours?
+    - Human stuff: Pride in work, Team over individual, Each has own powers and abilities
+
+
 ### References for part 2:
 
 https://www.forbes.com/sites/forbesbusinessdevelopmentcouncil/2018/04/17/three-most-in-demand-employee-benefits-of-2018/#3211690e5510
