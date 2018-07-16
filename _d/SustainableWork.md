@@ -70,40 +70,33 @@ Work life balance requires organizational mechanisms and care, and here are some
 
 **Unlimited paid time off** To encourage people to take care of themselves, we have [unlimited time off](https://www.entrepreneur.com/article/269989). Some people take advantage of this naturally, but others require encouragement :) For example, this year July 4th was a Wednesday, so I removed two days of capacity from everyone's sprint and told them to be "sick" either Monday/Tuesday or Thursday/Friday. As another example, when folks do an internal transfer into my team I encourage them to take a few weeks off to refresh and reset.
 
-**Realistic expectations for work deliverables** Anxiety is the difference between expectations and reality. To leave work at work, you need to feel good about the work you're doing.  Everyone gets work assignments that they won't be able to deliver. Regardless of if it happens because of a skill gap, the assignment being harder then expected, or unexpected life events, we'll quickly figure out what is realistic for you to deliver and what help you need to feel good. If the assignment needs to get done before you can do it,  we'll re-prioritize work others are doing to get you the help you need to succeed. In a nutshell, I know you're doing your best, and the team's got your back.
+**Realistic expectations for work deliverables** To enjoy your time off work you need to be free of anxiety. Because anxiety is the difference between expectations and reality my top priority is making sure everyone is thinking realistically.  This is a huge topic, so I'll only skim the surface in a single dimension - unrealistic thoughts people have in their mind.
 
-<!--
-Go into the different reasons people get unrealistic expectations. Talk about what you do when it happens,
-    - It's on 'only you' to deliver
-    - You're letting the team down.
--->
-*I'm getting closer on this section, but something still isn't fitting right - does this need a concrete example? A better description, ponder. Is this just important to me?*
+When folks develop unrealistic expectations around tasks they can't deliver they often have spiralling negative thoughts like "I should be able to do this", "Any one else can do this", "I need to work more hours",  "I'm letting the team down", "my project will fail", "My team will fail", "I'm failing", or worst of all "I'm a failure".
+
+As the manager, I have a better view of reality, some common realities include:  your deliverables are harder then expected, you haven't yet built the skills to complete the tasks or you're having some unexpected life events that you should deal with.
+
+Because folks tend to be embarrassed about these thoughts I keep my eye open for employees being stressed, working lots of hours, and not operating at their normal performance.
+
+When I see these things happening I jump in remind the person that I know they're good, they're doing the best they can, and we'll get this under control. I also remind them, that if anyone on the team needed help, they'd jump in, and likewise, the team will do the same for them.  Once we've got the employees expectations corrected, we figure out the write way to get the project back on track.
+
+*TBD: Figure out how to add disclaimers and edit to make this section smooth*
+*Reviewers - I know this section is long, but I think it's **SO IMPORTANT** I want to keep its essence*
 
 **Flexible hours from wherever want to be** Everyone achieves work life balance differently, so the team does everything it can think of to make it easier to watch your daughter's soccer game, get your car to the mechanic, or go for an afternoon jog. For example, all our meetings are between 10 and 4, we use group messenger (Slack/Chime) heavily, we have meetings in rooms with video conferencing, and we have high quality microphones for ad-hoc conversations like stand up. I work remotely at least once a month, so if the experience sucks, I'm very incentivized to fix it.
 
-**Humans are not resources/fungible/the sum of their deliverables** Everyone on my team is a 3-dimensional human with different wants, needs strengths and weaknesses.
-
-*This section is really rough, brain dumping*
-
-When you say "I need to" ... the answer is YES.
-One on ones are not status reports - they are your time to spend as you wish. We build relationships as people (if you want).
-
-Appreciation.
-
-Praise.
-
-Success doesn't need to be a promo - could be having a sick mom so wanting stability to take care of her.
-
-No emails from me on evenings and weekends - To avoid people getting that jolt of stress when they get a mail from their boss when they're checking their e-mail on the weekend (which would be rare as I reserve evenings and weekends for my family) I queue up sending my mails for mornings on working days.
-
-You should talk more about, you're there to get people where they want to be; the next level, an industry change, building skills to move somewhere else, etc. You enjoy helping people grow and become happier.
-
 **Making work like having a blast with your friends** Having work be something you look forward to is so important to me, I'll have several posts on the topic. The first post, making memorable moments at work, is in [progress](moments-at-work).
+
+**Treating you like the human you are** I'm deeply offended when managers think developers are fungible resources assessed as the sum of their deliverables. I fundamentally believe developers are people first and need to be treated as such.  I genuinely appreciate their contributions,  and share my appreciation often.  I know mails from bosses are stressful so I don't send e-mails evenings and weekends. I know life comes first, and any time an employee says "I need to", I cut them off and say "Yes". Then I hear them, remind them the team has their back. (and now I can tell if they don't believe me they should read this post).
+
+I experience deep satisfaction knowing I'm helping you achieve your goals, be they getting a promotion, getting a job in another team, or dialing back your work contributions so you can focus on a house remodel. To learn each team members unique aspirations, goals, skills, and preferences I make sure 1:1's are not status reports but opportunities to build our trust and relationship through valuable discussions.
+
+*This section still feels weak, but is getting closer - reviews thoughts on if this section is out of place, and if it can be made stronger*
 
 ### Veronica's Story
 
 To illustrate these commitments I want to tell you about Veronica's recent experience.   Veronica, was a new mom on our team who realized she wanted to spend more time with her infant....
-*flesh out these points*
+*Veronica will share her story in her own words - w00t!*
 
 - She Worked from home full time.
 - Bought mics when stand up sounds quality sucked.
@@ -120,7 +113,14 @@ To illustrate these commitments I want to tell you about Veronica's recent exper
 - There are times when we need to swing work life balance to work. They should be rare, clear ahead of time, and followed or proceeded by times where we can focus on our lives.
 - Changing culture is a slow process so when I'm new to an organization expect a while for it to kick in.
 
+### Tell me more
+
 In future posts, I'll describe how leaders can build a culture of work life balance into organizations that haven't embraced it yet.
+
+I'm always looking for folks passionate about software engineering leadership and management so reach out for virtual coffee if you share my passion!
+
+I'm hiring, so if you're a principal developer, senior developer or SDE-II reach out.
+
 
 <!--
 ### How do I manage up to enable work life balance (Sneak peek of post #2)
