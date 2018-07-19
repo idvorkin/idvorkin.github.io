@@ -11,3 +11,7 @@ tags
 # Ignore jekyll stuff
 .jekyll-metadata*
 Gemfile.lock
+
+
+# don't check in algolia password
+_algolia_api_key

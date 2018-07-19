@@ -168,6 +168,8 @@ algolia:
   files_to_exclude:
       - '_d/*'
       - 'd/*'
+      - 'search.html'
+      - 'index.html'
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap","jekyll-redirect-from"]
 include: [".htaccess"]
