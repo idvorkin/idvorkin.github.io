@@ -1,4 +1,4 @@
-# pretzel: 
+# pretzel:
 # engine: liquid
 title:            "Imagination Executed Brilliantly"
 description:      "Ramble. Rinse. Repeat."
@@ -8,9 +8,9 @@ disqus_shortname: idvorkinblog
 share:            true
 dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.
-# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same 
+# or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-#url:        	  
+#url:
 
 # Owner/author information
 owner:
@@ -22,13 +22,13 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        idvorkin
   facebook:       idvorkin
-  github:         idvorkin      
+  github:         idvorkin
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-73602282-1
-google_verify:      
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # Links to include in footer navigation
 # For external links add external: true
@@ -39,12 +39,16 @@ links:
     url: /featured
   - title: Tags
     url: /tags
-  - title: Office Hours 
+  - title: Office Hours
     url: /bookme
   - title: About
     url: /about
   - title: Surprise me
     url: /random
+
+collections:
+    d:
+        output: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Los_Angeles
@@ -65,7 +69,7 @@ kramdown:
   enable_coderay: false
 
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
@@ -154,6 +158,16 @@ prose:
           label: "Comments"
           value: false
 
+# See directions @
+# https://community.algolia.com/jekyll-algolia/getting-started.html
+
+algolia:
+  application_id: RY6D0RNCA3
+  search_only_api_key: d4bae7d1d6328352ce13c0978ca620e9
+  index_name: jekyll
+  files_to_exclude:
+      - '_d/*'
+      - 'd/*'
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap","jekyll-redirect-from"]
 include: [".htaccess"]
