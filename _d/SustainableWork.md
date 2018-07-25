@@ -70,7 +70,7 @@ Work life balance requires organizational mechanisms and care, here are some of 
 
 **Unlimited paid time off** To encourage people to take care of themselves, we have [unlimited time off](https://www.entrepreneur.com/article/269989). Some people take advantage of this naturally, but others require encouragement. For example, this year July 4th was a Wednesday, so I removed two days of capacity from everyone's sprint and told them to be "sick" either Monday/Tuesday or Thursday/Friday. As another example, when folks do an internal transfer into my team I encourage them to take a few weeks off to refresh and reset.
 
-**Realistic expectations for work deliverables** To enjoy your time off work you need to be free of anxiety. Because anxiety is the difference between expectations and reality my top priority is making sure everyone is thinking realistically.  This is a huge topic, so I'only skim the surface in a single dimension - unrealistic thoughts people have in their mind.
+**Realistic expectations for work deliverables** To enjoy your time off work you need to be free of anxiety. Because anxiety is the difference between expectations and reality my top priority is making sure everyone is thinking realistically.  This is a huge topic, so I'll only skim the surface in a single dimension - unrealistic thoughts people have in their mind.
 
 Folks develop unrealistic expectations around tasks they can't deliver and they can spiral into negative thoughts like "I should be able to do this", "Any one else can do this", "I need to work more hours",  "I'm letting the team down", "my project will fail", "I'm failing", or worst of all "I'm a failure".
 
@@ -111,8 +111,6 @@ While we had a great short-term solution, my son wasn't becoming any less demand
 
 **Changing culture is a slow process** so when I'm new to an organization expect a while for it to kick in.
 
-**Changing culture is a slow process** so when I'm new to an organization expect a while for it to kick in.
-
 ### Tell me more
 
 In future posts, I'll describe how leaders can build a culture of work life balance into organizations that haven't embraced it yet.
@@ -149,7 +147,7 @@ When I joined a new organization, I was amazed that at noon Friday a director ca
 
 **Have you ever burned out?** Yes. I've burned out 3 times in my career. The first time, I just became a senior developer, just had my first child, and just bought my first house. The second time, I put my team in a position where they were setup for failure, and I didn't know how to declare success and move on. The third time, I didn't realize I was operating under extremely unrealistic expectations and didn't have support structure I needed. I'll go into details on these situations in future blog posts.
 
-**Your time off policy sounds great, but I want to write code non stop!** Building code muscles (or any skill) is great - I highly recommend it. I believe the best way to do that is to work on a side project, take courses, or read great programming books. You'll still get to code, but you'll do so and  broadenen your horizons.
+**Your time off policy sounds great, but I want to write code non stop!** Building code muscles (or any skill) is great - I highly recommend it. I believe the best way to do that is to work on a side project, take courses, or read great programming books. You'll still get to code, but you'll do so and  broaden your horizons.
 
 **I'm young and single - I want to work like a dog - should I?** You can, that's what I did at the start of my career. If you want to do this, choose your team carefully and make sure the folks working like a dog are actually getting more work done and not on a path to burn out.
 
