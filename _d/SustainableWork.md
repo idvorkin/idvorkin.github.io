@@ -107,7 +107,7 @@ While we had a great short-term solution, my son wasn't becoming any less demand
 ### The fine print
 **There are times where I slip up, and don't live up to my standards** If you see me doing this, call me out, and I'll do my best to course correct.
 
-**There are times when work life balance swings to work**. They should be rare, clear ahead of time, and followed or proceeded by times where we can focus on our lives.
+**There are times when work life balance swings to work**. They should be rare, clear ahead of time, and followed or preceded by times where we can focus on our lives.
 
 **Changing culture is a slow process** so when I'm new to an organization expect a while for it to kick in.
 
