@@ -2,12 +2,12 @@
 <html>
 <!--
 ====================================================
-    __  ____  ______________  _______ ___    __ 
-   / / / /  |/  / ____/   \ \/ / ___//   |  / / 
-  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /  
+    __  ____  ______________  _______ ___    __
+   / / / /  |/  / ____/   \ \/ / ___//   |  / /
+  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /
  / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
 /_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
-                                                     
+
 ====================================================
 Author: Hossain Mohammad Faysal
 Profile: https://www.facebook.com/hmfaysal
@@ -24,12 +24,12 @@ Description: Awesome dude, awesome life
 
 {% if site.dropcap %}<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>{% endif %}
 </head>
-<body class="post-template" itemscope itemtype="http://schema.org/WebPage">  
+<body class="post-template" itemscope itemtype="http://schema.org/WebPage">
 {% if page.imagefeature %}
         <main id="notepad-post-container" class="notepad-post-container intro-effect-sliced" role="main">
             <header class="notepad-post-header">
                 <div class="bg-img"></div>
-                
+
                 <div class="notepad-post-menu-header">
 {% else %}
         <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
@@ -40,7 +40,7 @@ Description: Awesome dude, awesome life
                         <img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" />
                     </a>
 
-                <div class="notepad-blog-menu">      
+                <div class="notepad-blog-menu">
     <div class="notepad-mobile-menu show-for-small">
         <a href="#"><i class="fa fa-bars"></i></a>
     </div>
@@ -54,7 +54,7 @@ Description: Awesome dude, awesome life
                 {% else %}
                     <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
                 {% endif %} </li>
-{% endfor %}            
+{% endfor %}
            <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
     </ul>
 
@@ -63,7 +63,7 @@ Description: Awesome dude, awesome life
 {% if page.imagefeature %}
             <div class="notepad-post-title bg-check">
                 <h1>{{ page.title }}</h1>
-                <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %} <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong></p>
+                <p>by <strong>{{ site.owner.name }}</strong> &#8212; {% assign tagsize = page.tags.size %}{% if tagsize != 0 %}on {% for tag in page.tags %}<a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip" title="Posts tagged with {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}&nbsp;&comma;&nbsp;{% endunless %}{% endfor %}{% endif %}</p>
             </div>
             <div class="bg-img"></div>
         </header>
@@ -74,19 +74,17 @@ Description: Awesome dude, awesome life
                     <div class="small-12 columns">
                         <div class="notepad-post-meta-simple">
                             <h1>{{ page.title }}</h1>
-                            <p>by <strong>{{ site.owner.name }}</strong> 
-                            &#8212; {% assign tagsize = page.tags.size %}
+                            {% assign tagsize = page.tags.size %}
                             {% if tagsize != 0 %} tagged {% for tag in page.tags %}
-                            <!-- HACK: CSS TEMPLATE force ahref to red in title, will fix in CSS template later. --> 
-                            <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" 
-                               data-toggle="tooltip" title="Posts tagged with {{ tag }}" 
+                            <!-- HACK: CSS TEMPLATE force ahref to red in title, will fix in CSS template later. -->
+                            <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}"
+                               data-toggle="tooltip" title="Posts tagged with {{ tag }}"
                                 style="color:red;font-size:1.25em"
                                >
                                 {{ tag }}
                             </a>
                             {% unless forloop.last %}&nbsp;&comma;&nbsp;
-                            {% endunless %}{% endfor %}{% endif %} 
-                            <strong><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time></strong>
+                            {% endunless %}{% endfor %}{% endif %}
                             </p>
                         </div>
                     </div>
@@ -94,10 +92,10 @@ Description: Awesome dude, awesome life
             </header>
 {% endif %}
         {% if page.imagefeature %}<article class="notepad-post-content post">{% else %}<article class="notepad-post-content post tag-simple">{% endif %}
-                {% if page.inprogress %} 
-                <div style="font-size:1.5em;line-height:2em;  border: 3px solid red;text-align:center;"> 
+                {% if page.inprogress %}
+                <div style="font-size:1.5em;line-height:2em;  border: 3px solid red;text-align:center;">
                     This post is in progress. Comment if you're interested.
-                        </div> 
+                        </div>
                 {% endif %}
             <div>{{ content }}
             </div>
@@ -105,9 +103,9 @@ Description: Awesome dude, awesome life
         <div class="cf"></div>
 {% if site.share %}{% include share.html %}{% endif %}
         <div class="cf"></div>
-        
-{% include signoff.html %} 
-        
+
+{% include signoff.html %}
+
         <div class="cf"></div>
         {% if site.disqus_shortname and page.comments == true %}
         <section class="notepad-disqus row">
@@ -120,12 +118,12 @@ Description: Awesome dude, awesome life
 {% endif %}
         <div class="cf"></div>
 
-    {% include footer.html %} 
-</main>    
-{% include scripts.html %} 
+    {% include footer.html %}
+</main>
+{% include scripts.html %}
 
 {% if page.collapsable %}
-{% include collapse.html %} 
+{% include collapse.html %}
 {% endif %}
 </body>
 </html>
