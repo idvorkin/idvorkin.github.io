@@ -3,7 +3,12 @@ layout: post
 title: "I don't want to die knowing I spent too much time at work, and I bet you don't either"
 
 date: "2018-06-09 16:21:17 Pacific Daylight Time"
+featured: true
 tags:
+    - manager
+    - how igor ticks
+    - emotional intelligence
+    - health
 ---
 
 <!--
