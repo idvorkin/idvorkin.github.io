@@ -37,10 +37,14 @@ title: Igor's Blog
       }
 
       const content = hit._highlightResult.html.value;
+      const render_tags=hit.tags.map(tag=> `<a href="/tags/index.html#${tag}">${tag}</a>`).join(' ')
 
       return `
         <h3><a href="${url}">${title}</a></h3>
         <section class="notepad-post-excerpt"><p>${content}</p></section>
+        <div class="notepad-index-post-tags">
+            ${render_tags}
+        </div>
   `;
     }
     // Instanciating InstantSearch.js with Algolia credentials
