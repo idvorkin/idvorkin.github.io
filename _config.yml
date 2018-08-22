@@ -35,8 +35,6 @@ bing_verify:
 links:
   - title: Search
     url: /
-  - title: Featured
-    url: /featured
   - title: Tags
     url: /tags
   - title: Office Hours
