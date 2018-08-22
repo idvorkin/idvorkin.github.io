@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reducing Job Hunt Stress"
+title: "Reducing job hunt stress"
 date: "2017-02-17 05:32:01 Pacific Standard Time"
 tags:
     - emotional intelligence
@@ -8,7 +8,7 @@ tags:
     - job-hunt
 ---
 
-Job hunts are stressful, and my goal for job hunts is getting the job I want while minimizing my stress.  My job hunting stresses come from: lack of confidence, being rushed, not having options, disappointing others and the pressure from my current job responsibilities. By expecting and mitigating each of these stressors I greatly reduce stress during my job hunt.
+Job hunts are stressful, and my goal for job hunts is getting the job I want while minimizing my stress.  The stress comes from: lack of confidence, being rushed, not having options, disappointing others and the pressure from current job responsibilities. By expecting and mitigating each of these stressors I greatly reduce stress during my job hunt.
 
 *This post targets currently employed developers who want to switch jobs*
 
@@ -44,7 +44,7 @@ Below are my stressors and mitigations:
 - Negotiate with your current boss for time to work on job hunt.
 - Recall your highest priority is the next job, but you have existing commitments.
 
-Even when you know about the common stressors, the job hunt is still an emotional roller coaster. Expect to have "ups" and "downs". Have a support network with whom you can vent, share disappointments and gloat.
+Even when you know about the stressors, the job hunt is still an emotional roller coaster. Expect to have "ups" and "downs". Have a support network with whom you can vent, share disappointments, and gloat.
 
 Good luck on your next adventure and checkout [HBR's Setting the record strait on switching jobs](https://hbr.org/2015/07/setting-the-record-straight-on-switching-jobs).
 
