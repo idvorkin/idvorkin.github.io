@@ -5,9 +5,10 @@ date: "2017-02-17 05:32:01 Pacific Standard Time"
 tags:
     - emotional intelligence
     - software engineering
+    - job-hunt
 ---
 
-Job hunts are stressful, and my goal for job hunts is getting the job I want while minimizing my stress.  My job hunting stresses come from: lack of confidence, being rushed, not having options, disappointing others and the pressure from my current job responsibilities. By expecting and mitigating each of these stressors I greatly reduce stress during my job hunt. 
+Job hunts are stressful, and my goal for job hunts is getting the job I want while minimizing my stress.  My job hunting stresses come from: lack of confidence, being rushed, not having options, disappointing others and the pressure from my current job responsibilities. By expecting and mitigating each of these stressors I greatly reduce stress during my job hunt.
 
 *This post targets currently employed developers who want to switch jobs*
 
@@ -18,12 +19,12 @@ Below are my stressors and mitigations:
 - Study for technical interviews - Study Cracking the Coding Interview and [system design questions](https://github.com/donnemartin/system-design-primer). Expect to spend 4-8 hours a week for 4 to 8 weeks.  The longer it's been since you've interviewed last, the longer this will take.
 - Prepare for behavioral questions - Think through your previous projects for situations that demonstrate leadership, confidence, team building and be prepared to discuss them.
 - Do mock interviews - ask your friends and colleagues to interview you.  You should fail the first few mock interviews it's normal.
-- Remember interviews are optimized to reduce false positives, not false negatives, so expect to fail some. It's normal. 
+- Remember interviews are optimized to reduce false positives, not false negatives, so expect to fail some. It's normal.
 
 **Being rushed**
 
 - Know your "must be done by" date -  don't get stressed over your own fake deadlines.
-- Your "must be done by" date is usually much farther in the future then you think. 
+- Your "must be done by" date is usually much farther in the future then you think.
 
 **Lack of options for next jobs**
 
