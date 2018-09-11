@@ -6,7 +6,7 @@ comments: true
 inprogress: true
 collapsable: true
 
-tags: 
+tags:
     - software engineering
     - how igor ticks
     - manager
@@ -36,13 +36,16 @@ As a manager, you'll run into these situations. Each company and team has their 
 * Building culture
 * Recruiting
 
-## Behaviors I do that I'm proud of: 
+## Behaviors I do that I'm proud of:
 
 * Coaching is critical to being a great manager - an excellent primer is [The 7 coaching questions](/Coaching-Questions).
 * When we remember work, we think about our [peak moments](/moments-at-work).
 * [Human Meetings](/human-meetings)
 * The team members are my most important customer, and will be treated as such.
 * Building high performance teams
+    * Encouraging team to eat lunch together
+    * Encouraging team to share their out side of work passions.
+    * Building team ownership over individual ownership.
 * Team wide appreciation
     * Weekly linked in posts celebrating the team
     * Cook the team breakfast
@@ -50,9 +53,10 @@ As a manager, you'll run into these situations. Each company and team has their 
     * Continuous on the spot recognition.
     * [Pending] Hand written notes
 * Keeping everyone informed and proud
-    * Monthly newsletters 
+    * Monthly newsletters
     * Draw pictures/pen casts
 * Hiring Strategies
+    * Posts on management philosophy like [Work Life Balance](/sustainable-work)
     * Weekly linked in posts celebrating the team
 * Ease at which my team can collaborate across the larger organization.
 * Leadership card experience
@@ -65,9 +69,9 @@ As a manager, you'll run into these situations. Each company and team has their 
 ## How will I measure my success as a manager
 
 * Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon forte)
-* Employee career velocity. 
-* Employee feedback (Linked recommendations)
+* Employee career velocity.
 * Employee referrals
+* Employee feedback (Linked recommendations)
 * Delivery velocity
 * Business success
 
@@ -75,7 +79,7 @@ As a manager, you'll run into these situations. Each company and team has their 
 
 ### Google's Project Oxygen
 
-Google is a very data driven, willing to challenge the status quo company.  One of their ideas  was getting rid of managers all together, and that was a fa [failure]().  Given then conclusion managers were necessary, they formed Project Oxygen, a data driven approach to understanding the attributes of successful managers. Here is there list of management [attributes](https://rework.withgoogle.com/blog/the-evolution-of-project-oxygen/): 
+Google is a very data driven, willing to challenge the status quo company.  One of their ideas  was getting rid of managers all together, and that was a fa [failure]().  Given then conclusion managers were necessary, they formed Project Oxygen, a data driven approach to understanding the attributes of successful managers. Here is there list of management [attributes](https://rework.withgoogle.com/blog/the-evolution-of-project-oxygen/):
 
 1. Is a good coach
 1. Empowers team and does not micromanage
@@ -104,7 +108,7 @@ All of Amazon's (leadership principle)[https://www.amazon.jobs/principles] are s
 
 **Are Right, A Lot** - Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to dis confirm their beliefs.
 
-**Ownership** Leaders are owners. They think long term and don't sacrifice long-term value for short-term results. They act on behalf of the entire company, beyond just their own team. They never say "that's not my job". 
+**Ownership** Leaders are owners. They think long term and don't sacrifice long-term value for short-term results. They act on behalf of the entire company, beyond just their own team. They never say "that's not my job".
 
 **Invent and Simplify** - Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by "not invented here". As we do new things, we accept that we may be misunderstood for long periods of time.
 
@@ -113,7 +117,7 @@ All of Amazon's (leadership principle)[https://www.amazon.jobs/principles] are s
 
 **Insist on the Highest Standards** - Leaders have relentlessly high standards - many people may think these standards are unreasonably high. Leaders are continually raising the bar and drive their teams to deliver high quality products, services and processes. Leaders ensure that defects do not get sent down the line and that problems are fixed so they stay fixed.
 
-**Bias for Action** - Speed matters in business. Many decisions and actions are reversible and do not need extensive study. We value calculated risk taking. 
+**Bias for Action** - Speed matters in business. Many decisions and actions are reversible and do not need extensive study. We value calculated risk taking.
 
 **Frugality** - Accomplish more with less. Constraints breed resourcefulness, self-sufficiency and invention. There are no extra points for growing headcount, budget size or fixed expense.
 
