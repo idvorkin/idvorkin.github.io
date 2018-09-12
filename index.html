@@ -19,6 +19,16 @@ title: Igor's Blog
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
 
   <script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
     const hitTemplate = function (hit) {
       let date = '';
       if (hit.date) {
@@ -70,6 +80,19 @@ title: Igor's Blog
 
     // Starting the search
     search.start();
+
+    // Adding a query paramater.
+    const query = getParameterByName('q')
+    if (query)
+    {
+        // hack from:
+        //  https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+
+        const input = document.querySelector('.ais-search-box--input');
+        input.value = query;
+        input.dispatchEvent(new Event('input'))
+    }
+
   </script>
   <style>
     .ais-search-box {
