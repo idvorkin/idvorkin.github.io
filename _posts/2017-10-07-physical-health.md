@@ -17,7 +17,7 @@ Personally, I set a weight pledge every month, and never exceed that weight. Man
 
 **Fitness is essential** because it's the limiting factor to what you can accomplish.
 
-Fitness can be endurance or strength. For the majority of activities, endurance dominates, but some minimal strength is also required. For example, being able to run 30 minutes ensures you won't be out of breath when you need to hustle to catch the bus, but being able to lift 100lbs doesn't help you in many situations. Being able to lift 10 lbs is important though, so don't' completely ignore strength.
+Fitness can be endurance or strength. For the majority of activities, endurance dominates, but some minimal strength is also required. For example, being able to run 30 minutes ensures you won't be out of breath when you need to hustle to catch the bus, but being able to lift 100lbs doesn't help you in many situations. Being able to lift 10 lbs is important though, so don't completely ignore strength.
 
 I recommend doing the most vigorous cardio activity you can comfortably do multiple times a week. It's easy to skip your activity, so try to set it up so you don' have excuses to skip.
 
@@ -33,3 +33,10 @@ Personally I set an alarm and always wake up at the same, regardless of how tire
 ps. Being a nerd I use a bunch of [toys]({% post_url 2017-10-06-tech-health-toys %}) to help with my health.
 
 
+### FAQ
+
+**My health is in the shitter - and I'm doing none of these. How should I start?**
+
+First good for you! Realizing you need to take action is a huge first step. Realizing you need to start small and deliberate is the next huge step.
+
+I'd start with cardio exercise (e.g. endurance fitness). That will give you the most energy, which you'll require to boost strap the other disciplines. After youve been doing that for a month or so, I'd tackle sleep and when that feels stable I'd add weight loss.
