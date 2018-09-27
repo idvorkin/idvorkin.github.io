@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: "Igor's Eulogy"
 author: "Igor Dvorkin"
@@ -53,12 +53,12 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
 * To File
     * [Produced Song: Two wheels full of grace](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)
     * Igor had a tendency not to lock his bikes, and till he was 37 all of his bikes were stolen.
-    * Carried to 1970's bikes everywhere he went on 2 internships (biking 
-    * Biking to work 30 miles @ 6am 
+    * Carried to 1970's bikes everywhere he went on 2 internships (biking
+    * Biking to work 30 miles @ 6am
     * Enjoyed biking so much, even when didn't do it for year, still thought was doing miles per day.
 * Archived links
     * Long Touring Bike Trips
-    * Keep forgetting how much I enjoy my bike riding 
+    * Keep forgetting how much I enjoy my bike riding
 * To live
     * Bike touring with Family.
 
@@ -68,7 +68,7 @@ Igor became enthralled by the [7 habits of highly effective people](/7-habits), 
 
 ### As a fit guy.
 
-Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed. 
+Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
 
 It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, [Igor weighted 230 lbs](https://www.flickr.com/photos/idvorkin/4590579760/in/datetaken/), and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
 
@@ -139,7 +139,7 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
     * Psychic - understood, but didn't need to speak.
     * Could ask the "right question"
     * Socratic Method
-    * Cultivated and nurtured 
+    * Cultivated and nurtured
         * Scheduled
         * Topics
         * Mentors by role
@@ -170,7 +170,7 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
     * Enjoying family wasn't easy - it's a muscle to be built, and he built it.
     * How relationship improved when I started walking Zach to school.
     * Bragging about kids section.
-    * Weekly Swimming 
+    * Weekly Swimming
     * Weekly Dates
 * Archived links
     * Birth stories
@@ -184,7 +184,7 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 
 * To File
     * Small house, forced them out of it.
-    * Canoe, Kayak 
+    * Canoe, Kayak
     * Lived by lake and water.
 * Archived links
     * Scuba diver
@@ -201,10 +201,10 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
     * Class C Motor Home
     * Bike touring with Family.
     * Appalachian  Trail
-    * The El Camino de Santiago 
+    * The El Camino de Santiago
 
 
-### As a guy who goes to work every day 
+### As a guy who goes to work every day
 
 Igor didn't finish writhing this section, but he did think alot about his [dream job](/job).
 
@@ -214,7 +214,7 @@ To file:
 * Bad ass Java Compiler Team
 * Making router run 802.11 G
 * Implementing Bit Locker for the phone
-* [Software as a Story](/tags/index.html#Software as a Story) 
+* [Software as a Story](/tags/index.html#Software as a Story)
 * [Staring Cloud Computing](/The-Genesis-Node)
 * [Smile](http://igsmilebox.blogspot.com)
 * [Cache](/cache)
@@ -249,13 +249,14 @@ tbd
 * Igor read books on other languages just to see what better implementation patterns looked like.
 
 
+<!--
 ## Igor's helper section
 
 ### Writing Prompts
 
 * For each - split by common vs unique w/others:
 * How do I know when done this section
-* What am I most proud of 
+* What am I most proud of
 * What stuff gives me the most pleasure
 * What activities give me the most pleasure
 * Changing I've incurred as I went through life
@@ -280,3 +281,4 @@ tbd
 * To File
 * Archived links
 * To live
+-->
