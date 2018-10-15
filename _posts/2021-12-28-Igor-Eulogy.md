@@ -21,18 +21,19 @@ _Currently the purpose of my eulogy is to guide me in living my life. As death g
 
 _For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
 
-### As a dealer of smiles and wonder
+#### As a dealer of smiles and wonder
 
-Juggling fire, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment.  Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their frown turned upside down.
+[Juggling fire](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
+, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment.  Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their frown turned upside down.
 
+<!--
 * To File
     * Handing out bells
     * Original Smile Service
     * Silly hats/clothes
     * Constantly had props with him and practicing.
 * Archived links
-    * [Juggling Fire](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
-    * The pass
+    * [Juggling Fire]    * The pass
 * To live
     * Juggle passing with fire
     * Story telling voices
@@ -42,14 +43,17 @@ Juggling fire, making cards change colors at a spectators command, or passing co
     * Going to random juggling/side show/magic convention.
     * Volunteering for sick kids.
 
-### As a guy who loved living car free.
+    -->
+
+#### As a mostly car free spirit
 
 Igor took a strange pleasure in not driving. Riding his folding bike, or making a long day of public transit with Zach and Amelia. Igor would take the kids on the bus, to the train, to the airport, to ride the airport elevators, just to reverse the process and head home so he could enjoy his kids, and the bus, without spending a dime.
 
 Igor loved living in the city so he could walk Zach and Amelia to their school and local library. Igor also loved the subway station 10 minutes from his home, which when combined with his folding bicycle let him get anywhere in the city car free.
 
-Igor was especially fond of his folding bicycle which let him look goofy, be incredibly practical, and carry around the things he loved.  Nothing made Igor happier then having the kids on the folding bike.
+Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)) which let him look goofy, be incredibly practical, and carry around the things he loved.  Nothing made Igor happier then having the kids on the folding bike.
 
+<!--
 * To File
     * [Produced Song: Two wheels full of grace](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)
     * Igor had a tendency not to lock his bikes, and till he was 37 all of his bikes were stolen.
@@ -61,12 +65,14 @@ Igor was especially fond of his folding bicycle which let him look goofy, be inc
     * Keep forgetting how much I enjoy my bike riding
 * To live
     * Bike touring with Family.
+-->
 
-### As a guy who lived the 7 habits of highly effective people.
+#### As a disciple of the 7 habits of highly effective people.
 
 Igor became enthralled by the [7 habits of highly effective people](/7-habits), and used it as his personal life guide. He created a [7 habits video series](https://www.youtube.com/watch?v=_1J7GM3GLzw&list=PLJveOxX-mxxCl4YDfHMyNzMmWUMFxgC1n) so he could better understand the concepts and teach them to others.
 
-### As a fit guy.
+
+#### As a fit fellow.
 
 Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
 
@@ -74,6 +80,7 @@ It took Igor almost 40 years to get his weight under control sustainably. At his
 
 Igor was incredibly grateful to his friend Ammon for teaching him about the weight pledge, and for being a weight pledge partner for over 30 years.
 
+<!--
 * To File:
     * How hard it was to stay [warm](/staying-warm-and-biking).
     * Go to gym, even if it meant just going to the sauna
@@ -92,13 +99,15 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
     * Flexibility
     * Massages
     * Yoga
+-->
 
-### As an emotionally healthy human
+#### As an emotionally healthy human
 
 Igor understood emotional health is the basis of his stability, and [invested](http://idvorkin.github.io/search-inside-yourself) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
 Igor prided himself in being calm like water, and have a grand-mother mind he could apply to [himself](https://www.amazon.com/Getting-Yes-Yourself-Worthy-Opponents-ebook/dp/B00OP1FIUM/ref=sr_1_3?ie=UTF8&qid=1515073110&sr=8-3&keywords=getting+to+yes+with+self), and to others.
 
+<!--
 * To File:
     * Able to understand and influence the emotions of others
     * Knew his triggers, and quick sands, and had effective strategies for dealing with them.
@@ -108,11 +117,14 @@ Igor prided himself in being calm like water, and have a grand-mother mind he co
 
 * To live
     * Meditation retreats?
+-->
 
 
-### As a husband
+#### As a husband
 
 Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor).  Tori really values her privacy so expect this section to be Tori light, and Igor heavy.
+
+<!--
 
 * To File
     * Putting Tori's creativity in the fore front without putting Tori there.
@@ -122,6 +134,25 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
     * Zach's+Tori about Mom being a job you can't stop at 4pm.
 * Archived links
 * To live
+-->
+
+#### As a professional
+
+Igor didn't write this section - but he did describe his [dream job](/job).  He also wrote up several cool things he's proud of at work:
+[Software as a Story](/tags/index.html#Software as a Story),
+[Staring Cloud Computing](/The-Genesis-Node),
+[Smile](http://igsmilebox.blogspot.com),
+[Cache](/cache), and
+[Human meetings](/Human-Meetings).
+
+
+<!--
+To file:
+* Holstien Canada High School Drop Out
+* Bad ass Java Compiler Team
+* Making router run 802.11 G
+* Implementing Bit Locker for the phone
+-->
 
 ## Roles that are still in point form
 
@@ -180,6 +211,7 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
     * Being with kids recharged him
     * Being with kids inspired him
 
+<!--
 ### As an enjoyer of the great outdoors.
 
 * To File
@@ -204,25 +236,9 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
     * The El Camino de Santiago
 
 
-### As a guy who goes to work every day
-
-Igor didn't finish writhing this section, but he did think alot about his [dream job](/job).
-
-To file:
-
-* Holstien Canada High School Drop Out
-* Bad ass Java Compiler Team
-* Making router run 802.11 G
-* Implementing Bit Locker for the phone
-* [Software as a Story](/tags/index.html#Software as a Story)
-* [Staring Cloud Computing](/The-Genesis-Node)
-* [Smile](http://igsmilebox.blogspot.com)
-* [Cache](/cache)
-* [Human/Feelings Meetings](/Human-Meetings) a forum for expressing emotions.
 
 ## Roles I haven't started writing yet
 
-tbd
 
 ### Disciplined, Deliberate, Daily
 
@@ -247,6 +263,7 @@ tbd
 * Igor's coding principles - No duplicate code; Trust tests not experts; Log Bug then Whine;
 * Igor tried to develop in such a way that you could bottom up a design via excellent refactoring of implementation.
 * Igor read books on other languages just to see what better implementation patterns looked like.
+-->
 
 
 <!--
