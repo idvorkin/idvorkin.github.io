@@ -14,72 +14,50 @@ tags:
 
 I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but by trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
 
-## Management situations
-
-As a manager, you'll run into these situations. Each company and team has their own culture around these situations, and I'll enumerate things I've learned for them.
-
-* Preparing folks for [job hunting stress](/job-hunt-stress)
-* Determining compensation - Stack ranking/OLR
-* Delivering Performance reviews
-    * Amazon Forte
-    * Microsoft Connects
-* Career Planning
-* Strategic Planning
-* Promotions
-    * Amazon promo trackers
-* Interviewing best practices - External
-    * Feed forward interview loops
-    * Feedback interviewers
-    * Bar raiser, as appropriate
-* Interviewing best practices - Internal
-* Managing out
-* Building culture
-* Recruiting
-
 ## Behaviors I do that I'm proud of:
 
-* Coaching is critical to being a great manager - an excellent primer is [The 7 coaching questions](/Coaching-Questions).
-* When we remember work, we think about our [peak moments](/moments-at-work).
-* [Human Meetings](/human-meetings)
-* The team members are my most important customer, and will be treated as such.
-* Building high performance teams
-    * Encouraging team to eat lunch together
-    * Encouraging team to share their out side of work passions.
-    * Building team ownership over individual ownership.
-* Team wide appreciation
-    * Weekly linked in posts celebrating the team
-    * Cook the team breakfast
-* Individual specific recognition
-    * Continuous on the spot recognition.
-    * [Pending] Hand written notes
-* Keeping everyone informed and proud
-    * Monthly newsletters
-    * Draw pictures/pen casts
-* Hiring Strategies
-    * Posts on management philosophy like [Work Life Balance](/sustainable-work)
-    * Weekly linked in posts celebrating the team
-* Ease at which my team can collaborate across the larger organization.
-* Leadership card experience
-* Team wide engagement through clustering [exercises](https://www.oxfordhomeschooling.co.uk/blog/brainstorming-clustering/).
-* Self-service management through fortune cookies.
-* Some behaviors I'm just starting, these include
-    * Team music videos
-    * Engineering peak moments
+-   Coaching is critical to being a great manager - an excellent primer is [The 7 coaching questions](/Coaching-Questions).
+-   When we remember work, we think about our [peak moments](/moments-at-work).
+-   [Human Meetings](/human-meetings)
+-   The team members are my most important customer, and will be treated as such.
+-   Building high performance teams
+    -   Encouraging team to eat lunch together
+    -   Encouraging team to share their out side of work passions.
+    -   Building team ownership over individual ownership.
+-   Team wide appreciation
+    -   Weekly linked in posts celebrating the team
+    -   Cook the team breakfast
+-   Individual specific recognition
+    -   Continuous on the spot recognition.
+    -   [Pending] Hand written notes
+-   Keeping everyone informed and proud
+    -   Monthly newsletters
+    -   Draw pictures/pen casts
+-   Hiring Strategies
+    -   Posts on management philosophy like [Work Life Balance](/sustainable-work)
+    -   Weekly linked in posts celebrating the team
+-   Ease at which my team can collaborate across the larger organization.
+-   Leadership card experience
+-   Team wide engagement through clustering [exercises](https://www.oxfordhomeschooling.co.uk/blog/brainstorming-clustering/).
+-   Self-service management through fortune cookies.
+-   Some behaviors I'm just starting, these include
+    -   Team music videos
+    -   Engineering peak moments
 
 ## How will I measure my success as a manager
 
-* Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon forte)
-* Employee career velocity.
-* Employee referrals
-* Employee feedback (Linked recommendations)
-* Delivery velocity
-* Business success
+-   Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon forte)
+-   Employee career velocity.
+-   Employee referrals
+-   Employee feedback (Linked recommendations)
+-   Delivery velocity
+-   Business success
 
 ## Per company principles for being a great manager
 
 ### Google's Project Oxygen
 
-Google is a very data driven, willing to challenge the status quo company.  One of their ideas  was getting rid of managers all together, and that was a fa [failure]().  Given then conclusion managers were necessary, they formed Project Oxygen, a data driven approach to understanding the attributes of successful managers. Here is there list of management [attributes](https://rework.withgoogle.com/blog/the-evolution-of-project-oxygen/):
+Google is a very data driven, willing to challenge the status quo company. One of their ideas was getting rid of managers all together, and that was a fa [failure](). Given then conclusion managers were necessary, they formed Project Oxygen, a data driven approach to understanding the attributes of successful managers. Here is there list of management [attributes](https://rework.withgoogle.com/blog/the-evolution-of-project-oxygen/):
 
 1. Is a good coach
 1. Empowers team and does not micromanage
@@ -112,7 +90,6 @@ All of Amazon's (leadership principle)[https://www.amazon.jobs/principles] are s
 
 **Invent and Simplify** - Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by "not invented here". As we do new things, we accept that we may be misunderstood for long periods of time.
 
-
 **Learn and Be Curious** - Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and act to explore them.
 
 **Insist on the Highest Standards** - Leaders have relentlessly high standards - many people may think these standards are unreasonably high. Leaders are continually raising the bar and drive their teams to deliver high quality products, services and processes. Leaders ensure that defects do not get sent down the line and that problems are fixed so they stay fixed.
@@ -124,3 +101,25 @@ All of Amazon's (leadership principle)[https://www.amazon.jobs/principles] are s
 **Dive Deep** - Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and anecdote differ. No task is beneath them.
 
 **Have Backbone; Disagree and Commit** - Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.
+
+### Management situations
+
+As a manager, you'll run into these situations. Each company and team has their own culture around these situations, and I'll enumerate things I've learned for them.
+
+-   Preparing folks for [job hunting stress](/job-hunt-stress)
+-   Determining compensation - Stack ranking/OLR
+-   Delivering Performance reviews
+    -   Amazon Forte
+    -   Microsoft Connects
+-   Career Planning
+-   Strategic Planning
+-   Promotions
+    -   Amazon promo trackers
+-   Interviewing best practices - External
+    -   Feed forward interview loops
+    -   Feedback interviewers
+    -   Bar raiser, as appropriate
+-   Interviewing best practices - Internal
+-   Managing out
+-   Building culture
+-   Recruiting
