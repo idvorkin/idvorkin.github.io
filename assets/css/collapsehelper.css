@@ -1,18 +1,18 @@
 /*
  *  Collapsable CSS.
- *  Add collapse helper by adding +/- 
- *  Clever idea from: 
- *       http://www.silvabokis.com/squarespace-tips/how-to-create-hideshow-faqs-in-squarespace
+ *  Add collapse helper by adding +/-
+ *  Clever idea from:
+ *       https://www.silvabokis.com/squarespace-tips/how-to-create-hideshow-faqs-in-squarespace
  */
 #hide-end-collapse
 {
     display:none
 }
 /*
-Unicode in CSS  
-     http://stackoverflow.com/questions/10393462/placing-unicode-character-in-css-content-value?
+Unicode in CSS
+     https://stackoverflow.com/questions/10393462/placing-unicode-character-in-css-content-value?
 Nice unicode charectors
-     http://www.fileformat.info/info/unicode/category/Sm/list.htm
+     https://www.fileformat.info/info/unicode/category/Sm/list.htm
 */
 /* Let close be a Unicode plus with a circle */
 .ui-closed:before {

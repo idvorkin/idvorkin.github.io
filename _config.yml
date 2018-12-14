@@ -76,7 +76,7 @@ kramdown:
 prose:
   rooturl: '_posts'
   #siteurl: 'http://idvorkin.github.io/'
-  relativeLinks: 'http://idvorkin.github.io/links.jsonp'
+  relativeLinks: 'https://idvorkin.github.io/links.jsonp'
   media: 'images'
   metadata:
     _posts:

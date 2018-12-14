@@ -1,11 +1,11 @@
 
-// based on: http://tympanus.net/Development/ArticleIntroEffects/index3.html
+// based on: https://tympanus.net/Development/ArticleIntroEffects/index3.html
 
 (function() {
 
     if ($('.post-template:not(.page)').length) {
 
-        // detect if IE : from http://stackoverflow.com/a/16657946      
+        // detect if IE : from https://stackoverflow.com/a/16657946
         var ie = (function(){
             var undef,rv = -1; // Return value assumes failure.
             var ua = window.navigator.userAgent;
@@ -25,7 +25,7 @@
         }());
 
 
-        // disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179                  
+        // disable/enable scroll (mousewheel and keys) from https://stackoverflow.com/a/4770179
         // left: 37, up: 38, right: 39, down: 40,
         // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
         var keys = [32, 37, 38, 39, 40], wheelIter = 0;
@@ -34,7 +34,7 @@
             e = e || window.event;
             if (e.preventDefault)
             e.preventDefault();
-            e.returnValue = false;  
+            e.returnValue = false;
         }
 
         function keydown(e) {
@@ -51,7 +51,7 @@
         }
 
         function wheel(e) {
-            // for IE 
+            // for IE
             //if( ie ) {
                 //preventDefault(e);
             //}
@@ -64,12 +64,12 @@
         }
 
         function enable_scroll() {
-            window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+            window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;
         }
 
         var docElem = window.document.documentElement,
             scrollVal,
-            isRevealed, 
+            isRevealed,
             noscroll,
             isAnimating,
             container = document.getElementById( 'notepad-post-container' ) || document,
@@ -81,7 +81,7 @@
 
         function scrollPage() {
             scrollVal = scrollY();
-            
+
             if( noscroll && !ie ) {
                 if( scrollVal < 0 ) return false;
                 // keep it that way
@@ -96,7 +96,7 @@
             if( isAnimating ) {
                 return false;
             }
-            
+
             if( scrollVal <= 0 && isRevealed ) {
                 toggle(0);
             }
@@ -107,7 +107,7 @@
 
         function toggle( reveal ) {
             isAnimating = true;
-            
+
             if( reveal ) {
                 $(container).addClass('modify');
             }
@@ -144,7 +144,7 @@
         window.addEventListener( 'scroll', scrollPage );
 
         trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
-    
+
     }
 
 })();
