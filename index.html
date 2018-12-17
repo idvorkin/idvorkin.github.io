@@ -19,6 +19,9 @@ title: Igor's Blog
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
 
   <script>
+    // Adding a query paramater.
+    const query = getParameterByName('q')
+
     function getParameterByName(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, '\\$&');
@@ -57,7 +60,10 @@ title: Igor's Blog
     const search = instantsearch({
       appId: '{{ site.algolia.application_id }}',
       indexName: '{{ site.algolia.index_name }}',
-      apiKey: '{{ site.algolia.search_only_api_key }}'
+      apiKey: '{{ site.algolia.search_only_api_key }}',
+      searchParameters: {
+        query: query
+      }
     });
 
     // Adding searchbar and results widgets
@@ -81,23 +87,20 @@ title: Igor's Blog
     // Starting the search
     search.start();
 
-    // Adding a query paramater.
-    const query = getParameterByName('q')
-    if (query)
-    {
-        // hack from:
-        //  https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
-
-        const input = document.querySelector('.ais-search-box--input');
-        input.value = query;
-        input.dispatchEvent(new Event('input'))
-    }
 
   </script>
   <style>
     .ais-search-box {
       max-width: 100%;
       margin-bottom: 15px;
+    }
+
+    .ais-search-box--input[type="text"] {
+      padding: 10px 10px 10px 35px;
+    }
+
+    .ais-search-box--magnifier {
+      top: calc(50% - 12px);
     }
 
     .post-item {
