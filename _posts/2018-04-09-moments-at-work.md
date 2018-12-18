@@ -63,7 +63,7 @@ Most managers focus on solving problems, making sure employees and customers are
 
 #### Insights: Deliberate stretching -- helping folks do it.
 
-* See [7 coaching questions](/Coaching-questions)
+* See [7 coaching questions](/Coaching-Questions)
 * Help employees stretch to find insights. If you don't employees will fail to grow, and that sucks.
 * Don't just have a 'here is how to get better", ask for a "what". E.g.
     * Own a product release - get a project management mentor
