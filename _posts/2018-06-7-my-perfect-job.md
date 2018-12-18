@@ -4,7 +4,7 @@ title: "My dream job"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
-redirect_from: 
+redirect_from:
     - "/dream-job"
     - "/perfect-job"
 permalink: "/job"
@@ -16,7 +16,7 @@ tags:
     - strategy
 ---
 
-Jobs have many dimensions and I'll describe my dream job in several dimensions. In my dream job I learn the needs of the business and focus the team on delivering in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech.  When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office. 
+Jobs have many dimensions and I'll describe my dream job in several dimensions. In my dream job I learn the needs of the business and focus the team on delivering in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech.  When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.
 
 ---
 
@@ -28,11 +28,11 @@ I'm passionate about tech, but I'm even more passionate about aspiring to be the
 
 *If you don't know those words, read about [STARS](https://hbr.org/2009/01/picking-the-right-transition-strategy)*
 
-At this point in my career, my favorite situation is startup (e.g. [Smile](http://igsmilebox.blogspot.com), Amazon Video Shopping, Employee #50 at Azure) because it allows me to build a high performing team that can use ingenuity to get a solution out the door as quickly as possible. 
+At this point in my career, my favorite situation is startup (e.g. [Smile](http://igsmilebox.blogspot.com), Amazon Video Shopping, Employee #50 at Azure) because it allows me to build a high performing team that can use ingenuity to get a solution out the door as quickly as possible.
 
-Turn around situations(e.g. [Cache](/cache)) can be much like startups, except instead of going from "0 to 1000", you need to go from "-100 to 100" with the existing team.  Because the start of a turn around includes lots of demoralized players it is both incredibly difficult and also intensely satisfying for me once progress is made. 
+Turn around situations(e.g. [Cache](/cache)) can be much like startups, except instead of going from "0 to 1000", you need to go from "-100 to 100" with the existing team.  Because the start of a turn around includes lots of demoralized players it is both incredibly difficult and also intensely satisfying for me once progress is made.
 
-Accelerated Growth, Realignment, Sustaining Success aren't yet exciting to me, but I suspect as I continue my career  I'll find them appealing in that order. 
+Accelerated Growth, Realignment, Sustaining Success aren't yet exciting to me, but I suspect as I continue my career  I'll find them appealing in that order.
 
 ### B2C, B2B, Infrastructure? B2C!
 
@@ -40,7 +40,7 @@ At this point in my career I'm interested in making the lives of others better. 
 
 ### Product Domain? Productivity and Positive Computing!
 
-As a human, I'm incredibly passionate about well being. Well being is explored in the nascent field of [positive computing](/positive-computing-survey), the computing analog to positive psychology. Computing jobs focused on well being are rare, but if that's something you need help working on, I might jump at the chance to join you, so reach out.
+As a human, I'm incredibly passionate about well being. Well being is explored in the nascent field of [positive computing](https://www.positivecomputing.com), the computing analog to positive psychology. Computing jobs focused on well being are rare, but if that's something you need help working on, I might jump at the chance to join you, so reach out.
 
 ### Technologist or Entrepreneur: Entrepreneur!
 
@@ -62,10 +62,10 @@ I'm most interested in building the experiences, but that requires me to deeply 
 
 Technology leaders need to divide their time among the business, experiences, and technology. While each of these are interesting at this point in my career, my technology skill is well developed and now I want to focus on building my business and experiences muscles.
 
-### Regardless of my job I will be successful when: 
+### Regardless of my job I will be successful when:
 
 * The team is high performing (even if they start off in trouble)
 * Going to work is like hanging out with friends.
 * Work is filled with [peak moments](/moments-at-work)
 * Everyone gets value from personalized [coaching](/Coaching-Questions)
-* (In very special places ...) I run [Feelings meetings](/Human-Meeting)
+* (In very special places ...) I run [Feelings meetings](/Human-Meetings)
