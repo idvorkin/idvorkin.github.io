@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: "Why am I blogging?"
 author: "Igor Dvorkin"
@@ -14,8 +14,6 @@ To effectively share my thinking. I'll build my idea sharing muscle by:
 
 My non goals in blogging:
 
-* Build a personal brand
-* Have a blog that can be read front to back
-* Generate revenue from my blog.
-
-
+- Build a personal brand
+- Have a blog that can be read front to back
+- Generate revenue from my blog.
