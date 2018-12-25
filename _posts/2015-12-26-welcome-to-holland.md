@@ -1,11 +1,11 @@
---- 
+---
 layout: post
 title: "Welcome to Holland"
 author: "Igor Dvorkin"
 comments: true
-tags: 
-    - emotional intelligence
-    - wisdom 
+tags:
+  - emotional intelligence
+  - wisdom
 ---
 
 "Welcome to Holland" articulates expectation, blame, and acceptance in a heart warming easy to read story.
@@ -33,5 +33,3 @@ But everyone you know is busy coming and going from Italy... and they're all bra
 And the pain of that will never, ever, ever, ever go away... because the loss of that dream is a very very significant loss.
 
 But... if you spend your life mourning the fact that you didn't get to Italy, you may never be free to enjoy the very special, the very lovely things ... about Holland.
-
- 

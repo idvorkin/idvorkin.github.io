@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: "The Genesis Node"
 author: "Igor Dvorkin"
@@ -6,7 +6,8 @@ comments: true
 featured: false
 tag: "Software as a Story"
 ---
-Igor, you know the odds of shipping Reddog on time are slim to none." 
+
+Igor, you know the odds of shipping Reddog on time are slim to none."
 
 My boss and I nodded our agreement as the director of OS development for Reddog continued.
 
@@ -16,9 +17,9 @@ I'm a sucker for hard problems - building all new software, powering-up a brand 
 
 "I'm in," I said with pride.
 
-The full impact of those two words sank in that evening as Jay, my OS team mentor, briefed me on my new role. "You'll need to respond rapidly and decisively. The more you know, the more successful you'll be - for example just today we finished our destructive testing, a node will fail after 10,000 formats."  "Here ya go Hun" interrupted our waitress as she gave Jay his usual wink and IPAs.  Jay and I finished up quickly so I could get a good night's rest before my life in DevOps began.
+The full impact of those two words sank in that evening as Jay, my OS team mentor, briefed me on my new role. "You'll need to respond rapidly and decisively. The more you know, the more successful you'll be - for example just today we finished our destructive testing, a node will fail after 10,000 formats." "Here ya go Hun" interrupted our waitress as she gave Jay his usual wink and IPAs. Jay and I finished up quickly so I could get a good night's rest before my life in DevOps began.
 
-The air was charged and a half dozen voices were raised as I entered the DevOps command center the next morning. 
+The air was charged and a half dozen voices were raised as I entered the DevOps command center the next morning.
 
 "Holy shit, someone stole the genesis node!"
 
@@ -36,13 +37,13 @@ I might be new to DevOps, but I know Azure - it is built to handle disaster. At 
 
 Annoyed, I cut him off "So, reinstall the genesis node."
 
- He glared at me while throwing the final, deadly punch, "The person that stole this was brilliant. This is our weakest link, a single point of failure. The genesis node is hand-built; it will take us days to rebuild it, assuming we can. We might have to wipe out the datacenter and start again - this could cost us weeks."
+He glared at me while throwing the final, deadly punch, "The person that stole this was brilliant. This is our weakest link, a single point of failure. The genesis node is hand-built; it will take us days to rebuild it, assuming we can. We might have to wipe out the datacenter and start again - this could cost us weeks."
 
-Humbled, I gulped my assent, "How can I help?" 
+Humbled, I gulped my assent, "How can I help?"
 
 Two weeks later, I was on my third cup of coffee trying to keep my eyes open on the midnight shift.
 
-"Igor, you're the OS guy - where did the OS team get a node for destructive testing?"  Bellowed the director of DevOps.
+"Igor, you're the OS guy - where did the OS team get a node for destructive testing?" Bellowed the director of DevOps.
 
 "Uh, I don't know - let me find out."
 

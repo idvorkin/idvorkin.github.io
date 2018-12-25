@@ -9,13 +9,14 @@ comments: true
 redirect_from: "/Igor-Eulogy"
 permalink: "/eulogy"
 tags:
-    - how igor ticks
-    - emotional intelligence
+  - how igor ticks
+  - emotional intelligence
 ---
+
 <!-- markdownlint-disable MD003 -->
 <!-- markdownlint-disable MD036 -->
 
-Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am.   Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
+Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 
 _Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into enteraining others at my funeral_
 
@@ -24,7 +25,7 @@ _For many of my roles, I'm still figuring out who I want to be, and how I will a
 #### As a dealer of smiles and wonder
 
 [Juggling fire](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
-, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment.  Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their frown turned upside down.
+, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their frown turned upside down.
 
 <!--
 * To File
@@ -51,7 +52,7 @@ Igor took a strange pleasure in not driving. Riding his folding bike, or making 
 
 Igor loved living in the city so he could walk Zach and Amelia to their school and local library. Igor also loved the subway station 10 minutes from his home, which when combined with his folding bicycle let him get anywhere in the city car free.
 
-Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)) which let him look goofy, be incredibly practical, and carry around the things he loved.  Nothing made Igor happier then having the kids on the folding bike.
+Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)) which let him look goofy, be incredibly practical, and carry around the things he loved. Nothing made Igor happier then having the kids on the folding bike.
 
 <!--
 * To File
@@ -71,10 +72,9 @@ Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66
 
 Igor became enthralled by the [7 habits of highly effective people](/7-habits), and used it as his personal life guide. He created a [7 habits video series](https://www.youtube.com/watch?v=_1J7GM3GLzw&list=PLJveOxX-mxxCl4YDfHMyNzMmWUMFxgC1n) so he could better understand the concepts and teach them to others.
 
-
 #### As a fit fellow.
 
-Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
+Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000\$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
 
 It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, [Igor weighted 230 lbs](https://www.flickr.com/photos/idvorkin/4590579760/in/datetaken/), and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
 
@@ -119,10 +119,9 @@ Igor prided himself in being calm like water, and have a grand-mother mind he co
     * Meditation retreats?
 -->
 
-
 #### As a husband
 
-Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor).  Tori really values her privacy so expect this section to be Tori light, and Igor heavy.
+Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor). Tori really values her privacy so expect this section to be Tori light, and Igor heavy.
 
 <!--
 
@@ -138,13 +137,12 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 
 #### As a professional
 
-Igor didn't write this section - but he did describe his [dream job](/job).  He also wrote up several cool things he's proud of at work:
+Igor didn't write this section - but he did describe his [dream job](/job). He also wrote up several cool things he's proud of at work:
 [Software as a Story](/tags/index.html#Software as a Story),
 [Staring Cloud Computing](/The-Genesis-Node),
 [Smile](http://igsmilebox.blogspot.com),
 [Cache](/cache), and
 [Human meetings](/Human-Meetings).
-
 
 <!--
 To file:
@@ -156,60 +154,59 @@ To file:
 
 ## Roles that are still in point form
 
-
 ### As a Friend, Mentee, and Mentor
 
-* To File
-    * [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum for expressing emotions.
-    * Treasured Friendships
-    * In person and over skype
-    * Mentee, Mentor
-* Archived links
-* To live
-    * An awesome listener
-    * Psychic - understood, but didn't need to speak.
-    * Could ask the "right question"
-    * Socratic Method
-    * Cultivated and nurtured
-        * Scheduled
-        * Topics
-        * Mentors by role
-        * Activity
-    * Deep conversations, no fluff, by being vulnerable and open
-    * Always welcome, since showed grandmother mind, gave the gift of attention, and psychic space.
-    * Built mentor network
-        * Helped him flesh out the eulogy
-        * All walks of life
-        * Saw value in each of them
-    * Dropped in on the neighbors for fun - just hung out for coffee/bear
-    * Everyone had a story, and Igor wanted to hear, and understand them.
-
+- To File
+  - [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum for expressing emotions.
+  - Treasured Friendships
+  - In person and over skype
+  - Mentee, Mentor
+- Archived links
+- To live
+  - An awesome listener
+  - Psychic - understood, but didn't need to speak.
+  - Could ask the "right question"
+  - Socratic Method
+  - Cultivated and nurtured
+    - Scheduled
+    - Topics
+    - Mentors by role
+    - Activity
+  - Deep conversations, no fluff, by being vulnerable and open
+  - Always welcome, since showed grandmother mind, gave the gift of attention, and psychic space.
+  - Built mentor network
+    - Helped him flesh out the eulogy
+    - All walks of life
+    - Saw value in each of them
+  - Dropped in on the neighbors for fun - just hung out for coffee/bear
+  - Everyone had a story, and Igor wanted to hear, and understand them.
 
 ### As a father of a wonderful boy, and incredible girl.
 
-* To File
-    * Seeing Kids Play Together
-    * Teaching 7h/eq values to kids
-    * School events
-    * Public transit together
-    * teaching kids to be active
-    * Document thier adventures to savor later, and educate them
-    * Teaching them to program
-    * Seeing "raw humanity"
-    * Being cool for other kids
-    * I choose ...
-    * Enjoying family wasn't easy - it's a muscle to be built, and he built it.
-    * How relationship improved when I started walking Zach to school.
-    * Bragging about kids section.
-    * Weekly Swimming
-    * Weekly Dates
-* Archived links
-    * Birth stories
-    * [Poem for Kids - Tomorrow smiling at me](http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html?q=dead).
+- To File
+  - Seeing Kids Play Together
+  - Teaching 7h/eq values to kids
+  - School events
+  - Public transit together
+  - teaching kids to be active
+  - Document thier adventures to savor later, and educate them
+  - Teaching them to program
+  - Seeing "raw humanity"
+  - Being cool for other kids
+  - I choose ...
+  - Enjoying family wasn't easy - it's a muscle to be built, and he built it.
+  - How relationship improved when I started walking Zach to school.
+  - Bragging about kids section.
+  - Weekly Swimming
+  - Weekly Dates
+- Archived links
 
-* To live
-    * Being with kids recharged him
-    * Being with kids inspired him
+  - Birth stories
+  - [Poem for Kids - Tomorrow smiling at me](http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html?q=dead).
+
+- To live
+  - Being with kids recharged him
+  - Being with kids inspired him
 
 <!--
 ### As an enjoyer of the great outdoors.
@@ -264,7 +261,6 @@ tbd
 * Igor tried to develop in such a way that you could bottom up a design via excellent refactoring of implementation.
 * Igor read books on other languages just to see what better implementation patterns looked like.
 -->
-
 
 <!--
 ## Igor's helper section

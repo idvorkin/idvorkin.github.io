@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: "Why is noone referring my project"
 author: "Igor Dvorkin"
@@ -18,8 +18,8 @@ Then I got wise and asked one of my favorite customers why he wouldn't refer me 
 
 So there it is. The three reasons your customers aren't referring you are:
 
-A.	The work of doing the referral
-B.	The message to give to the person to be referred
-C.	The risk to the credibility of the person providing the referral.
+A. The work of doing the referral
+B. The message to give to the person to be referred
+C. The risk to the credibility of the person providing the referral.
 
 And in case you're confused, the order in which to tackle these problems is C, B, A. Future posts will talk about how to minimize credibility risk.

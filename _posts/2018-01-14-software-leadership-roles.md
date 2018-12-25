@@ -3,9 +3,8 @@ layout: post
 title: "Tech leads, software architects and engineering managers - oh my!"
 date: "2018-01-14 05:14:37 Pacific Standard Time"
 tags:
-    - software engineering
+  - software engineering
 ---
-
 
 The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of difference I've found is below copied from Quora. In this classification I like to run a team small enough that I have time to be both an engineering manager and software architect.
 
@@ -42,7 +41,7 @@ Both architects and tech leads lead, though in slightly different ways.
 
 The lead engineer leads by inspiring and setting the bar for code quality for the engineering team, and cracking the hard problems.
 
-The architect leads by building consensus, particularly in the face of competing design requirements. It is typically up to the architect to make  good solid judgement calls around figuring out things like "Okay, these 4 code paths are really the ones to typically optimize around and must run in constant time, and everything else isn't something we need to worry about too much.", and so on.
+The architect leads by building consensus, particularly in the face of competing design requirements. It is typically up to the architect to make good solid judgement calls around figuring out things like "Okay, these 4 code paths are really the ones to typically optimize around and must run in constant time, and everything else isn't something we need to worry about too much.", and so on.
 
 **Communication skills:**
 
@@ -55,4 +54,3 @@ At the end of the day what really matters is the architect and tech lead are tec
 Many organizations don't formalize the distinction between tech lead and architect through title and let the individuals gravitate towards what they do best.
 
 I've also seen engineering managers take on all of the aforementioned roles depending on the gaps in the team.
-

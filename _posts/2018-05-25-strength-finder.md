@@ -4,12 +4,12 @@ title: "My Strengths from  Strength Finder"
 date: "2018-05-24 06:49:58 Pacific Standard Time"
 comments: true
 tags:
-    - how igor ticks
+  - how igor ticks
 ---
 
 Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.
 
-*You can take strength finder test yourself [here](https://www.gallupstrengthscenter.com/) by buying the Strength Finder 2.0 book, which comes with a code for taking the Strength Finder online assessment.*
+_You can take strength finder test yourself [here](https://www.gallupstrengthscenter.com/) by buying the Strength Finder 2.0 book, which comes with a code for taking the Strength Finder online assessment._
 
 ### The short version of my strengths
 
@@ -33,8 +33,6 @@ time.
 **Ideation** - People who are especially talented in the Ideation theme are
 fascinated by ideas. They are able to find connections between
 seemingly disparate phenomena.
-
-
 
 ### The long version of my strengths
 
@@ -98,4 +96,5 @@ may label you creative or original or conceptual or even smart. Perhaps you are 
 be sure? What you are sure of is that ideas are thrilling. And on most days this is enough.
 
 ### The really long version of my strengths
+
 Is in this [pdf](/static/StrengthFinderIgor.pdf).

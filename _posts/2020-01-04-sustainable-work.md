@@ -3,10 +3,10 @@ layout: post
 title: "I don't want to die knowing I spent too much time at work, and I bet you don't either"
 featured: true
 tags:
-    - manager
-    - how igor ticks
-    - emotional intelligence
-    - health
+  - manager
+  - how igor ticks
+  - emotional intelligence
+  - health
 ---
 
 <!--
@@ -137,4 +137,4 @@ I'm hiring, so if you're a principal developer, senior developer or SDE-II reach
 
 **Did you always do this?** No, when I was young and single, I wanted to build my tech muscles as fast as I could and often worked 50-60 hours a week. When I was employee number 50 in Azure, the entire team worked 60+ hours a week, and it was one of the most fun times of my career.
 
-*Thanks to the following peeps for all their input: Sarah (Rybarczyk) Nahmias, Sean Selitrennikoff, Kevin Frei, Ganeshan Jayaraman, David Driver and Vasu Devulapalli*
+_Thanks to the following peeps for all their input: Sarah (Rybarczyk) Nahmias, Sean Selitrennikoff, Kevin Frei, Ganeshan Jayaraman, David Driver and Vasu Devulapalli_

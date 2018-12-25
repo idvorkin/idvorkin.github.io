@@ -1,11 +1,9 @@
---- 
+---
 layout: post
 title: "The Immutable Laws of Hard Things"
 author: "Igor Dvorkin"
 comments: true
-
 ---
-
 
 Exercise, Diet, Personal Development, each of these is governed by the immutable laws of hard things. It's possible these laws don't apply to you, but I doubt it.
 

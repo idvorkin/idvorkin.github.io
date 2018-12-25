@@ -2,7 +2,7 @@
 layout: post
 title: "Physical Health"
 tags:
-    - health
+  - health
 ---
 
 Physical health is the basis of energy, and thus the source of success. Physical health is about weight, fitness and sleep.
@@ -31,7 +31,6 @@ I recommend getting as much sleep as you need.
 Personally I set an alarm and always wake up at the same, regardless of how tired I am. When I'm not getting enough sleep I actually reduce my caffeine to make sure I'm so tired, I fall asleep early. Many people feel they don't have enough time for sleep, but I couldn't disagree more. Not sleeping makes everything worse, resulting in you getting less done. Getting enough sleep show you want to get the most done in your waking hours.
 
 ps. Being a nerd I use a bunch of [toys]({% post_url 2017-10-06-tech-health-toys %}) to help with my health.
-
 
 ### FAQ
 

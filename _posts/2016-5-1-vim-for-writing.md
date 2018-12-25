@@ -1,13 +1,13 @@
---- 
+---
 layout: post
 title: "Vim For Writing"
 author: "Igor Dvorkin"
 comments: true
 inprogress: true
 
-tags: 
-    - vim
-    - writing
+tags:
+  - vim
+  - writing
 ---
 
 VIM is great at lots of things, but free form writing has a few gaps in 'line wrapping' and 'distraction free visual beauty'. These gaps can be closed with the plugins Pencil, Goyo and LimeLight.
@@ -31,25 +31,24 @@ Goyo makes your buffer pretty by centering the writing and getting rid of the st
 
 Lime light fades out the background paragraphs. For me, a much more focused experience.
 
-
     :LimeLight
     :LimeLight 0.9 "0.9 -> Make foreground contrast 90%
 
 ### Spelling and Thesaurus.
 
-You can run the spell checker with: 
+You can run the spell checker with:
 
     :spell
     " ]s,  [s  to jump to next,prev mispelling.
     " z= Fix word.
 
-You can run the thesaurus with: 
+You can run the thesaurus with:
 
     \ts (normally \cs if you dont' have nerd commenter)
 
-
 ### Installation
-Add the following to your _vimrc:
+
+Add the following to your \_vimrc:
 
     Bundle 'reedes/vim-pencil'
     Bundle 'junegunn/goyo.vim'
