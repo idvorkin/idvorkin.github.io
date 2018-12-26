@@ -15,3 +15,8 @@ Gemfile.lock
 
 # don't check in algolia password
 _algolia_api_key
+
+# Ignore node stuff
+node_modules/
+package-lock.json
+yarn.lock
