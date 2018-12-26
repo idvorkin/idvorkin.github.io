@@ -35,8 +35,14 @@ I've recently begun my selfie-stick journey so I expect more updates here. So fa
 
 ### 360 degree cameras
 
-      360 degree cameras are an interesting idea that I wanted to try out. Essentially they let the viewer look around all 360 degrees in a photo or video. 360 photos and videos are a nice way to let a viewer look around a place (vacation rental, scenery) themselves. Viewers can look around on their phone by putting the phone in front of their eyes and moving the phone around.
+360 degree cameras are an interesting idea that I wanted to try out. Essentially they let the viewer look around all 360 degrees in a photo or video. 360 photos and videos are a nice way to let a viewer look around a place (vacation rental, scenery) themselves. Viewers can look around on their phone by putting the phone in front of their eyes and moving the phone around.
 
 While an interesting idea, recording and viewing software is still lacking. You can only view on YouTube and Facebook, and recording software requires manual post processing. I think being able to make video calls using 360 video will be incredibly interesting, but that isn't supported yet.
 
 360 cameras are an interesting technology to watch, but I'll give it another 6 months before trying again.
+
+Playing with a list to erase
+
+- One
+- Two
+- Three
