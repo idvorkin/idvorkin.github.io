@@ -37,15 +37,13 @@ Knitting has great accessibility. You can do it anywhere, all you need is your n
 
 Chess has legs. When you start playing chess you barely know the rules, and the more you study and play, the better you get. Even better, you can keep playing chess till you're pretty darn old.  Watching TV does not have legs.  Watch as much as you want, your just as bad (or good, if you're a glass half full person) as the day you started.
 
-**Reinforcing identity and creating connections**
+**Reinforcing identity and creating connections** The best hobbies can represent who you are, and allow you form connections with other members of the hobbies community, and with strangers. Without identity and connection, you miss out on some of the highest benefits of your hobby.
 
-**Creating Connection** You want to share it with others
+Performing music reinforces identity. You are a musician. If you're in a band you build a bond with the other band members, and if you play for an audience you've got a thrill of connection. Playing solitaire has minimal identity and connection. There's no such thing as a Solitairian and while you could play group solitaire, it almost defeats the purpose, and rarely will you share solitaire with others.
 
-- Share with other practitioners
-- Share by doing it for others
+### Go find a hobby.
 
-GOOD: Muscian
-BAD: Watching#TV (better example).
+You know why you need a hobby, and what makes a good one, now get out there and start looking for your ideal hobby.
 
 ### FAQ
 
@@ -57,6 +55,6 @@ BAD: Watching#TV (better example).
 
 **What's your hobby** My current hobby is magic. All I need is a coin or a deck of cards and I can do it anywhere. Magic has incredible technical depth, and every few months I learn a new technique or presentation. Magic lets me be a "Maker of smiles and wonder" which is core to my identity, and lets me connect to magicians to tune my craft, and strangers for brief interactions of smiles and wonder.
 
-**Did you change your hobby**  Yes. One of my early hobbies was scuba diving.  Going scuba diving take a lot of gear and preparation. Even worse you need a dive buddy who has the matching will to make it happen. My scuba gear has been gathering dust for a long while, and my wife keep threatening to sell it. After scuba diving,  I loved squash and fencing, both fantastic hobbies, but as I crossed into my late thirties, those caused my tendentious to flair, and the pain was too much so I had to give them up.
+**Did you find your hobby on the first try?**  No. One of my early hobbies was scuba diving.  Going scuba diving take a lot of gear and preparation. Even worse you need a dive buddy who has the matching gear, will, and schedule. Needless to say, my scuba gear has been gathering dust for a long while, and my wife keep threatening to sell it. After scuba diving,  I loved squash and fencing, both fantastic hobbies, but as I crossed into my late thirties, repetitive motion caused tendentious in my forearm, and I had to give them up.
 
-Next up was juggling, which for me is a fantastic hobby. It meets all my criteria, except it's less accessible then magic and harder to form a connection. For example, juggling clubs don't fit in my back pocket, and I get strange looks juggling at the bar, and don't get me started on security guards reaction to [flaming torches](https://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html).  While juggling let me connect with folks, it's not an intimate connection and it's rarely remembered. By contrast with magic I can strike up a conversation, personalize the magic for the audience, and often give a souvenir which when I've formed my best connection, the audience will take home and cherish for years.
+Next up was juggling, which for me is a fantastic hobby. Even though it meets all my criteria, it's not as accessible as magic and it's harder to form a connection juggling. For example, juggling clubs don't fit in my back pocket, and I get strange looks juggling at the bar, and don't get me started on security guards reaction to [flaming torches](https://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html).  While juggling let me connect with folks, it's not an intimate connection and it's rarely remembered. By contrast with magic I can strike up a conversation, personalize the magic for the audience, and often give a souvenir which when I've formed my best connection, the audience will take home and cherish for years.
