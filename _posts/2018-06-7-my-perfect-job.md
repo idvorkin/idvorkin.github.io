@@ -57,7 +57,10 @@ I'm most interested in proving product/market fit. That said, with over 20 years
 
 A lot of modern software can be decomposed in three layers: signals, inferences and experiences. Signals are the raw input in the system, both static, and dynamic. Inferences are the computations performed over the signal to determine something meaningful, this often involves big data and ML. Experiences are the way inferences and signal are presented to the user, this is often an app and the services which power the app. Inferences and experiences often become new signal to drive the system.
 
-I'm most interested in building the experiences, but that requires me to deeply understand and drive signals and inferences.
+I'm most interested in building the experiences, but that requires me to deeply understand and drive signals and inferences. Steve Jobs says it well:
+
+*One of the things I’ve always found is that you’ve got to start with the customer experience and work backwards to the technology. You can’t start with the technology and try to figure out where you’re going to try to sell it. And I’ve made this mistake probably more than anybody else in this room. And I got the scar tissue to prove it.*
+
 
 ### Business, Experience, Technology: Business and Experience!
 
@@ -65,8 +68,9 @@ Technology leaders need to divide their time among the business, experiences, an
 
 ### Regardless of my job I will be successful when:
 
-- The team is high performing (even if they start off in trouble)
-- Going to work is like hanging out with friends.
-- Work is filled with [peak moments](/moments-at-work)
+- I am the [best boss my team has ever had](/being-a-great-manager).
 - Everyone gets value from personalized [coaching](/Coaching-Questions)
+- The team is high performing (even if they start off in trouble)
+- Work is filled with [peak moments](/moments-at-work)
+- Going to work is like hanging out with friends.
 - (In very special places ...) I run [Feelings meetings](/Human-Meetings)
