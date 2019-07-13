@@ -100,7 +100,7 @@ Great question, I have some ideas, but first, how would you tackle this? What el
 - What does done mean?
 - If I could only do one part, what part would you have me do?
 - What do you recommend I take off my plate to get this done?want done?
-  _If you still have to say no_ Make sure you're saying no to task, no to person. Just writing it down will help.\*
+-  _If you still have to say no_ Make sure you're saying no to task, no to person.
 
 #### Fantastic video on coaching, improvement, and discomfort
 
