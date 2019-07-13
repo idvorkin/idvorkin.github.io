@@ -12,17 +12,20 @@ tags:
 
 Coaching is not giving advice, it's helping others solve their own problems. Use the following questions and approaches to help folks find their own solutions and insights.
 
-<!-- vim-markdown-toc Redcarpet -->
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
 
 - [Ask these 7 questions to coach](#ask-these-7-questions-to-coach)
-- [How to coaching for task completion vs insight](#how-to-coaching-for-task-completion-vs-insight)
+- [How to coach for task completion vs insight](#how-to-coach-for-task-completion-vs-insight)
 - [How to coach to build strategic insight](#how-to-coach-to-build-strategic-insight)
 - [How to keep people safe while coaching using human safety models](#how-to-keep-people-safe-while-coaching-using-human-safety-models)
 - [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
 - [Deflecting the desire for you to solve their problem: How would you handle this](#deflecting-the-desire-for-you-to-solve-their-problem-how-would-you-handle-this)
 - [Saying No: Say yes slowly](#saying-no-say-yes-slowly)
+- [Fantastic video on coaching, improvement, and discomfort](#fantastic-video-on-coaching-improvement-and-discomfort)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 #### Ask these 7 questions to coach
 
@@ -38,7 +41,7 @@ Coaching is not giving advice, it's helping others solve their own problems. Use
   - Commission - what you must deliberately give up to make it happen (relationships/projects/)
 - Close the loop: What was most useful for you in this conversation?
 
-#### How to coaching for task completion vs insight
+#### How to coach for task completion vs insight
 
 - P: Project - Immediate task
 - P: People - Relationship
@@ -98,3 +101,12 @@ Great question, I have some ideas, but first, how would you tackle this? What el
 - If I could only do one part, what part would you have me do?
 - What do you recommend I take off my plate to get this done?want done?
   _If you still have to say no_ Make sure you're saying no to task, no to person. Just writing it down will help.\*
+
+#### Fantastic video on coaching, improvement, and discomfort
+
+[![Coaching](/images/coaching-video.png)](https://youtu.be/oHDq1PcYkT4?t=431)
+
+
+
+
+
