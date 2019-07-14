@@ -1,0 +1,83 @@
+---
+title: Igor's Linked In
+---
+<!--
+
+    Intent of this page is to redirect to linked in based via web or applink, and to capture that in google analytics.
+
+    #1 Use google analytics
+    #2 Use jS to determine redirect.
+<meta http-equiv="refresh" content="0; url=https://linkedin.com/in/idvorkin" />
+TODO:
+    Consider merging wiht scripts.html
+-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<head>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+<script>
+function gotoAppIfInstalled(app_url, web_url)
+{
+
+    // Must be a better way to do mobile detection but this is good enough for now.
+    const ios = (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
+    const android = (/android/i.test(navigator.userAgent.toLowerCase()));
+
+    const web_only = !(ios || android);
+
+    console.log(` ios: ${ios} android: ${android} web_only: ${web_only}`)
+
+    if (web_only)
+    {
+        window.location =  web_url
+        return
+    }
+
+    //  Can't tell if app is installed, so try to launch the app. If nothing happens then
+    //  go to web_url after a timeout.
+    // https://stackoverflow.com/questions/13044805/how-to-check-if-an-app-is-installed-from-a-web-page-on-an-iphone
+
+    const set_window_location_time = new Date().valueOf();
+    const max_duration_till_app_launched_ms = 25;
+    const max_duration_till_callback_runs_ms = 100
+
+    setTimeout(() => {
+            console.log('timed out going to web url')
+
+            const now =  new Date().valueOf()
+            const isTookToLongForCallbackToRun = now - set_window_location_time > max_duration_till_callback_runs_ms;
+            if (isTookToLongForCallbackToRun) {
+                // If callback hasn't run till much after it should have, something odd going on. E.g.
+                // App crashed, user hit back, etc.
+                // In that case don't force them back to the app.
+               return;
+            }
+
+            window.location = web_url;
+
+    }, max_duration_till_app_launched_ms);
+
+    console.log(`attempt to go to ${app_url}`)
+    window.location = app_url;
+}
+
+const profile = 'idvorkin';
+const app_url = `linkedin://profile/${profile}`;
+const web_url = `https://linkedin.com/in/${profile}`;
+gotoAppIfInstalled(app_url, web_url)
+
+</script>
+</head>
