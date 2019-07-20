@@ -134,3 +134,9 @@ As a manager, you'll run into these situations. Each company and team has their 
 - Managing out
 - Building culture
 - Recruiting
+
+### Great Vidoes
+
+* Leaders make people feel [safe](https://www.ted.com/talks/simon_sinek_why_good_leaders_make_you_feel_safe/discussionManagement situations)
+*
+
