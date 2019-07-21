@@ -17,6 +17,7 @@ Below are my stressors and mitigations:
 **Lack of confidence**
 
 - Study for technical interviews - Study Cracking the Coding Interview, [system design questions](https://github.com/donnemartin/system-design-primer) and [modern developer tools](https://github.com/kamranahmedse/developer-roadmap). Expect to spend 4-8 hours a week for 4 to 8 weeks. The longer it's been since you've interviewed last, the longer this will take.
+- Buy a full size whiteboard. Practice answering questions on it. I'm not kidding.
 - Prepare for behavioral questions - Think through your previous projects for situations that demonstrate leadership, confidence, team building and be prepared to discuss them.
 - Do mock interviews - ask your friends and colleagues to interview you. You should fail the first few mock interviews it's normal.
 - Remember interviews are optimized to reduce false positives, not false negatives, so expect to fail some. It's normal.
