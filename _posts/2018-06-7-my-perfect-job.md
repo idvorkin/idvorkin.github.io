@@ -74,3 +74,37 @@ Technology leaders need to divide their time among the business, experiences, an
 - Work is filled with [peak moments](/moments-at-work)
 - Going to work is like hanging out with friends.
 - (In very special places ...) I run [Feelings meetings](/Human-Meetings)
+
+### Very entertaining references on engineering jobs in the industry.
+
+*I'll need to create a seperate post from this, but for now I'll just hold these references*
+
+If you're thinking of your engineering job, check out the following post from a fantastic writer
+
+**[The 10x engineer](https://vas3k.com/notes/10x/)** - A post describing the need for different engineers at different times in the company life cycle:
+
+*We need charismatic leaders. They are the ones to beat the shit out and launch a project. At a later stage, they can't do much. But that's why they form a team which wraps it all up in a cozy bureaucracy and thus survive the valley of death. Eventually, we need everyone, yet at different times and places. Ilon Mask can invent and set up the Falcon X, but his team will assemble the rocket while he's shitstorming Twitter.*
+
+
+Or in more smart words:
+
+
+*Procedural legitimacy is always better than charismatic legitimacy, because charisma is just an appeal to transcendental values, while procedure is rational. But one thing will never replace the other, because procedural legitimacy turns into bureaucracy over time, bureaucracy becomes a new class, innovation stagnates, and then a new charismatic leader appears, who breaks the old procedure and offers a new, perhaps more optimal one. And then everything goes on to Hegel's old man.*
+
+**[How to hire sane teams](https://vas3k.com/notes/hiring/)** - A post describing the difficulty in hiring.
+
+*There is no ruler to properly measure engineers. Standard grades "Junior-Middle-Senior-Lead" helps not more than a stick from the forest helps us measure the speed of light*
+
+--
+
+*At the beginning, it's more profitable to hire those with "fire in their eyes", while in the years of stability and good revenue, howling engineers are too dangerous. It’s time for a company to hire 9000 bureaucrats and surround them with "processes".*
+
+*After that, early employers will run away in horror, writing unveiling posts on Medium, while the company can continue to grow steadily. That's absolutely normal.*
+
+--
+
+*The ability to get things done has one unpleasant feature: it reduces with the growth of wisdom. And there's nothing you can do about it. "I'm too old for this shit" mode on.*
+
+
+
+
