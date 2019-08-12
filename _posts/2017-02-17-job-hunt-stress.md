@@ -26,6 +26,7 @@ Below are my stressors and mitigations:
 
 - Know your "must be done by" date - don't get stressed over your own fake deadlines.
 - Your "must be done by" date is usually much farther in the future then you think.
+- Space your early interviews wider apart so you have time to correct major interviewing gaps.
 
 **Lack of options for next jobs**
 
@@ -33,6 +34,7 @@ Below are my stressors and mitigations:
 - Look around for who is hiring
 - Start and maintain a list of candidate jobs
 - Have a worst case scenario job
+- Start with non-prestigious companies and leave the best ones the last, this builds your skills and confidence, while not wasting the best companies.
 
 **Disappointing others**
 
@@ -46,5 +48,3 @@ Below are my stressors and mitigations:
 - Recall your highest priority is the next job, but you have existing commitments.
 
 Even when you know about the stressors, the job hunt is still an emotional roller coaster. Expect to have "ups" and "downs". Have a support network with whom you can vent, share disappointments, and gloat.
-
-Good luck on your next adventure and checkout [HBR's Setting the record strait on switching jobs](https://hbr.org/2015/07/setting-the-record-straight-on-switching-jobs).
