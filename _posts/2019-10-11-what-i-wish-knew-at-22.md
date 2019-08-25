@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What I wish I knew at 22. Aka. Job hunting for early in your career"
+title: "What I wish I knew at 22 and so might you"
 author: "Igor Dvorkin"
 comments: true
 
