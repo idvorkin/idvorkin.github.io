@@ -22,6 +22,12 @@ Meeting the emerald city wizards, adn the first night with professional magician
 
 Meeting Felix, and then Jarrod.
 
+Meeting Clive
+
+First Magic Conference - 3 of clubs
+
+Second Magic Conference - MagiFest
+
 I was at a restuarant that did table magic (which I LOVED), and the magician did trick after trick, finally with card to ceiling.
 
 Highlights:
@@ -32,5 +38,13 @@ Highlights:
   - Girl on the bus that loved my magic trick.
   - Girl at ice cream store who loved the trick, and jump up and down in a circle cuz it was so awesome.
   - Ben's son who carried the card around in his back pack for years.
+  - Card to blouse for intern
+  - Card accross where thought I messed up with audiance, but card stuck to guys ass
+  - Giving out unicorn coins
+  - Performing at Pike Place
+
+Amelia - Amelia starting to do brause reverse with card turning over.
+
+Zach - Making up his own card trick for woman waiting on the bus. -
 
 - Failure at park where 10 yera old told me I got in wrong, but in fact I had done it correctly.
