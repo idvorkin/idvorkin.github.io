@@ -39,3 +39,13 @@ ps. Being a nerd I use a bunch of [toys]({% post_url 2017-10-06-tech-health-toys
 First good for you! Realizing you need to take action is a huge first step. Realizing you need to start small and deliberate is the next huge step.
 
 I'd start with cardio exercise (e.g. endurance fitness). That will give you the most energy, which you'll require to boost strap the other disciplines. After youve been doing that for a month or so, I'd tackle sleep and when that feels stable I'd add weight loss.
+
+**I'm in for cardio - How should I start, how long should I go?**
+
+First rule of starting new habits - make it easier then you can accomplish. To that end I'd start at an easy pace for as long as you can (upto 30 minutes) then gradually increase the duration  till you can do 30 minutes comfortably.  Once you're at 30 minutes gradualy raise the intensity (no more then 10% / week) so that you're continuing to push at an easy pace without feeling like you're pushing too hard.
+
+**Why 30 minutes?**
+
+I don't know if there's any science here, but my target is 30 minutes of cardio.
+
+For me, it's long enough to work up a sweat, but short enough to not eat up my day. I've read that you should either do 30 minutes of low to medium intensity exercise daily or 20 minutes of high intensity exercise 3 times a week. When starting out or when old, I'd recommend low weights high reps to reduce the risk of quitting and injury.
