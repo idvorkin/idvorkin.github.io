@@ -14,34 +14,33 @@ tags:
 
 I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but by trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
  
-## How will I measure my success as a manager (Outputs)
+## How will I measure my success?
 
 ### Coach, empower, build inclusive and supportive culture
 
-- Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon forte)
-- Employee referrals and feedback (Linked in, 360, etc).
-- Employee career velocity.
+- Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon Forte)
+- Employee referrals and feedback ([LinkedIn recommendations](https://idvorkin.github.io/linkedin), [Direct Feedback](https://www.linkedin.com/feed/update/urn:li:activity:6575042153284796416/), etc).
+- Employee career velocity relative to median (you can ask me the ratio in person).
 
 ### Productive and results-oriented
 
 - Trains run on time and frequently.
 - Ruthless prioritization (Shipping is a feature)
-- Define and deliver business priorities. 
+- Define and deliver business priorities.
 
 ### Great partner to other teams and non-tech partners
 - Biz functions understands team and tech constraints
-- My team understand constraints and needs of partner teams and biz functions. 
+- My team understand constraints and needs of partner teams and biz functions.
 - Team not blocked on other teams or biz functions.
 
-## Behaviors I do that I'm proud of (Inputs):
+## How will I behave to be successful?
 
- ### Being a great coach
- 
+### Being a great coach
+
+- The team members are my most important customer, and will be treated as such.
 - Coaching is critical to being a great manager - an excellent primer is [The 7 coaching questions](/Coaching-Questions).
-
 - When we remember work, we think about our [peak moments](/moments-at-work).
 - [Human Meetings](/human-meetings)
-- The team members are my most important customer, and will be treated as such.
 - Building high performance teams
   - Encouraging team to eat lunch together
   - Encouraging team to share their out side of work passions.
@@ -52,21 +51,33 @@ I aspire not only to be a great manager, but to be the best manager my team memb
 - Individual specific recognition
   - Continuous on the spot recognition.
   - [Pending] Hand written notes
+- Self-service management through fortune cookies.
+
+### Communicating clearly
+
 - Keeping everyone informed and proud
-  - Monthly newsletters
-  - Draw pictures/pen casts
-- Hiring Strategies
-  - Posts on management philosophy like [Work Life Balance](/sustainable-work)
-  - Weekly linked in posts celebrating the team
+- Monthly newsletters
+- Draw pictures/pen casts
+
+### Hiring
+- Posts on management philosophy like [Work Life Balance](/sustainable-work) and [Job Hunting](https://idvorkin.github.io/?q=job-hunt).
+- Weekly linked in posts celebrating the team
+- Memorable [job descriptions](https://www.linkedin.com/posts/idvorkin_happyabrdance-activity-6461383015967920128-np6b)
+- Magic tricks during interviews and informationals
+
+# Working accross teams
 - Ease at which my team can collaborate across the larger organization.
 - Leadership card experience
 - Team wide engagement through clustering [exercises](https://www.oxfordhomeschooling.co.uk/blog/brainstorming-clustering/).
-- Self-service management through fortune cookies.
-- Some behaviors I'm just starting, these include
+
+
+###  Some behaviors I'm just starting, these include
   - Team music videos
   - Engineering peak moments
 
-## Per company principles for being a great manager
+## How others define great managers
+
+Each company has its own culture, and part of that culture is articulating what makes great managers.
 
 ### Google's Project Oxygen
 
@@ -126,30 +137,46 @@ If you're not from Amazon the LPs can be overwhelming, and are worthy of a seper
 **Are Right, A Lot** - Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to dis confirm their beliefs.
 
 
-### Management situations
+
+## Management situations
 
 As a manager, you'll run into these situations. Each company and team has their own culture around these situations, and I'll enumerate things I've learned for them.
 
-- Preparing folks for [job hunting stress](/job-hunt-stress)
-- Determining [compensation](/understandingtechcompensation)
+### Performance Management and Career Planning
+
 - Stack ranking/OLR
+- Managing out
 - Delivering Performance reviews (Amazon Forte/Microsoft Connect)
 - Career Planning
 - Strategic Planning
 - Promotions
   - Amazon promo trackers
+
+### Coaching for job changes
+
+- Preparing folks for [job hunting stress](/job-hunt-stress)
+- Determining [compensation](/understandingtechcompensation)
+
+### Hiring and Recruiting
 - Interviewing best practices - External
   - Feed forward interview loops
   - Feedback interviewers
   - Bar raiser, as appropriate
   - Initial [compensation](/understandingtechcompensation) reasoning.
 - Interviewing best practices - Internal
-- Managing out
 - Building culture
-- Recruiting
 
-### Great Vidoes
+### Goal setting
+
+tbd
+
+### Execution tracking
+
+tbd
+
+## References
+
+### Great Videos
 
 * Leaders make people feel [safe](https://www.ted.com/talks/simon_sinek_why_good_leaders_make_you_feel_safe/discussionManagement situations)
-*
 
