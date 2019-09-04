@@ -13,10 +13,32 @@ tags:
 ---
 
 I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but by trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
+ 
+## How will I measure my success as a manager (Outputs)
 
-## Behaviors I do that I'm proud of:
+### Coach, empower, build inclusive and supportive culture
 
+- Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon forte)
+- Employee referrals and feedback (Linked in, 360, etc).
+- Employee career velocity.
+
+### Productive and results-oriented
+
+- Trains run on time and frequently.
+- Ruthless prioritization (Shipping is a feature)
+- Define and deliver business priorities. 
+
+### Great partner to other teams and non-tech partners
+- Biz functions understands team and tech constraints
+- My team understand constraints and needs of partner teams and biz functions. 
+- Team not blocked on other teams or biz functions.
+
+## Behaviors I do that I'm proud of (Inputs):
+
+ ### Being a great coach
+ 
 - Coaching is critical to being a great manager - an excellent primer is [The 7 coaching questions](/Coaching-Questions).
+
 - When we remember work, we think about our [peak moments](/moments-at-work).
 - [Human Meetings](/human-meetings)
 - The team members are my most important customer, and will be treated as such.
@@ -43,15 +65,6 @@ I aspire not only to be a great manager, but to be the best manager my team memb
 - Some behaviors I'm just starting, these include
   - Team music videos
   - Engineering peak moments
-
-## How will I measure my success as a manager
-
-- Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon forte)
-- Employee career velocity.
-- Employee referrals
-- Employee feedback (Linked recommendations)
-- Delivery velocity
-- Business success
 
 ## Per company principles for being a great manager
 

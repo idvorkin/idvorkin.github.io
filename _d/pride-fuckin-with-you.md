@@ -1,22 +1,39 @@
----
 layout: post
-title: "That's pride fucking with you"
+title: "That's pride fucking with you”
 author: "Igor Dvorkin"
 category: "Intent"
 comments: true
 ---
 
-
 [That's pride fucking with you](https://youtu.be/ruhFmBrl4GM)
 
+So many bad decisions happen because we’re proud.
+Accept Reality
+---
+Judge Yourself
+Cognitive Distortions - Someone cares about you.
 
 
-1. Practicing thinking by writing.
-1. Remembering, developing and sharing, my past thinking
-1. Defining, and holding my self accountable to "Why" I'm doing things.
+# Goeth before the pride
+* Pride goeth before the fall
+* Triumph - Roman empower has someone whispering in their ear
+* An emporer Triumph has a slave whispering in [his ear](https://www.quora.com/What-is-the-historical-evidence-of-the-story-about-the-slave-named-Auriga-who-was-whispering-Memento-Mori-to-the-military-commanders-during-Roman-triumphs)
 
-My non goals in blogging:
+# Situations where Pride Impacted me
+* Not willing to apologize
+* Being Right vs Being Effective
+* Promotion more important then pay
+* Title
 
-- Build a personal brand
-- Have a blog that can be read front to back
-- Generate revenue from my blog.
+
+# Comparing yourself to others
+
+Friends who’s careers accelerated beyond mine.
+
+
+
+# Promotion for title vs compensation or anything else.
+
+# Need to be acknowledged by others
+
+# Judge yourself
