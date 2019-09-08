@@ -65,15 +65,66 @@ I aspire not only to be a great manager, but to be the best manager my team memb
 - Memorable [job descriptions](https://www.linkedin.com/posts/idvorkin_happyabrdance-activity-6461383015967920128-np6b)
 - Magic tricks during interviews and informationals
 
-# Working accross teams
+### Working accross teams
 - Ease at which my team can collaborate across the larger organization.
 - Leadership card experience
 - Team wide engagement through clustering [exercises](https://www.oxfordhomeschooling.co.uk/blog/brainstorming-clustering/).
+
+### Staying technical
+
+Before the how,  lets start with why.
+
+Why do great managers need to stay technical?  Because they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team to continously:
+
+1. Make correct architectural decisions
+2. Increase engineering excellence through best practices
+
+Because they often represent teams in forums without their team the need to:
+
+1. Making sure you can represent your team in technical forums,  and you can bringing back best practices, or catch upcoming mistakes.
+
+1. Make swags on costings
+1. Represent laws of phyiscs
+
+How?
+
+* Architecture and design reviews
+* Try to ship software to
+* Be on every page the team getsS
+* Hang w/Principal Engineers
+* Follow major tech launches
+* Side projects in disparate tech
+
+
+Pre-Reqs?
+* Be an expereinced engineer before switching to management
+* Be an expert in a particular platform and language
+* Be a SME in multiple topics (for me networking and security).
+
+### Team Meetings
+ - Design Meetings
+ - Weekly Engineer Review (Status Reports)
+ - Design Meetings
+ - Weekly Leadership team Meetings
+ - Weekly Operations/Engineering Excellence Review
+ - Bi-Weekly Team Meetings
+
+ - Agile Ceremonies:
+	 -  The standard -  Standups/Backlog Grooming/Sprint Planning/Retro
+
+ - Project LifeCycle Documents/Meetings
+    - Requirements Review
+	 -  Design (p)review
+		- Test Plan Review
+		- Operations/Launch Review/Pre-Morten
+		- Bug Bash
 
 
 ###  Some behaviors I'm just starting, these include
   - Team music videos
   - Engineering peak moments
+
+### Hack-a-thins
 
 ## How others define great managers
 
