@@ -16,6 +16,8 @@ I aspire not only to be a great manager, but to be the best manager my team memb
  
 ## How will I measure my success?
 
+Acting is easy, but results are hard. Here are the results I measure.
+
 ### Coach, empower, build inclusive and supportive culture
 
 - Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon Forte)
@@ -35,13 +37,15 @@ I aspire not only to be a great manager, but to be the best manager my team memb
 
 ## How will I behave to be successful?
 
+As I tell my teams, the what lags the how, here's my how.
+
 ### Being a great coach
 
 - The team members are my most important customer, and will be treated as such.
 - Coaching is critical to being a great manager - an excellent primer is [The 7 coaching questions](/Coaching-Questions).
 - When we remember work, we think about our [peak moments](/moments-at-work).
 - [Human Meetings](/human-meetings)
-- Building high performance teams
+- Building intra-team cohesion
   - Encouraging team to eat lunch together
   - Encouraging team to share their out side of work passions.
   - Building team ownership over individual ownership.
@@ -60,7 +64,7 @@ I aspire not only to be a great manager, but to be the best manager my team memb
 - Draw pictures/pen casts
 
 ### Hiring
-- Posts on management philosophy like [Work Life Balance](/sustainable-work) and [Job Hunting](https://idvorkin.github.io/?q=job-hunt).
+- Public posts on career, management and life [Work Life Balance](/sustainable-work) and [Job Hunting](https://idvorkin.github.io/?q=job-hunt).
 - Weekly linked in posts celebrating the team
 - Memorable [job descriptions](https://www.linkedin.com/posts/idvorkin_happyabrdance-activity-6461383015967920128-np6b)
 - Magic tricks during interviews and informationals
@@ -72,6 +76,8 @@ I aspire not only to be a great manager, but to be the best manager my team memb
 
 ### Staying technical
 
+*This is worthy of it's own blog post. Here's some brain dumping.*
+
 Before the how,  lets start with why.
 
 Why do great managers need to stay technical?  Because they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team to continously:
@@ -82,7 +88,6 @@ Why do great managers need to stay technical?  Because they are ultimately respo
 Because they often represent teams in forums without their team the need to:
 
 1. Making sure you can represent your team in technical forums,  and you can bringing back best practices, or catch upcoming mistakes.
-
 1. Make swags on costings
 1. Represent laws of phyiscs
 
@@ -101,30 +106,15 @@ Pre-Reqs?
 * Be an expert in a particular platform and language
 * Be a SME in multiple topics (for me networking and security).
 
-### Team Meetings
- - Design Meetings
- - Weekly Engineer Review (Status Reports)
- - Design Meetings
- - Weekly Leadership team Meetings
- - Weekly Operations/Engineering Excellence Review
- - Bi-Weekly Team Meetings
 
- - Agile Ceremonies:
-	 -  The standard -  Standups/Backlog Grooming/Sprint Planning/Retro
+### Hack-a-thons
 
- - Project LifeCycle Documents/Meetings
-    - Requirements Review
-	 -  Design (p)review
-		- Test Plan Review
-		- Operations/Launch Review/Pre-Morten
-		- Bug Bash
-
+- I finally hosted a hack-a-thon for my parent team. Here is my advice for folks setting this up.
 
 ###  Some behaviors I'm just starting, these include
   - Team music videos
   - Engineering peak moments
 
-### Hack-a-thins
 
 ## How others define great managers
 
@@ -221,6 +211,27 @@ As a manager, you'll run into these situations. Each company and team has their 
 
 tbd
 
+### Establishing Process, Project Lifecycle, and Artifacts
+
+Some teams have these things well defined and running smoothly, other teams (seems to be most) need help building out these mechanisims
+
+ - Design Meetings
+ - Weekly Engineer Review (Status Reports)
+ - Design Meetings
+ - Weekly Leadership team Meetings
+ - Weekly Operations/Engineering Excellence Review
+ - Bi-Weekly Team Meetings
+
+ - Agile Ceremonies:
+	 -  The standard -  Standups/Backlog Grooming/Sprint Planning/Retro
+
+ - Project LifeCycle Documents/Meetings
+    - Requirements Review
+	-  Design (p)review
+    	- Test Plan Review
+		- Operations/Launch Review/Pre-Morten
+		- Bug Bash
+
 ### Execution tracking
 
 tbd
@@ -229,5 +240,22 @@ tbd
 
 ### Great Videos
 
+* [On Coaching](https://youtu.be/oHDq1PcYkT4?t=431)
+* [On making people feeling safe](https://www.youtube.com/watch?v=lmyZMtPVodo)
+
+
+
+### Great Posts and Blogs
+
 * Leaders make people feel [safe](https://www.ted.com/talks/simon_sinek_why_good_leaders_make_you_feel_safe/discussionManagement situations)
+
+### Great books
+
+* [Igor's tech reading list](http://ig2600.blogspot.com/)
+* [Igor's startup reading list](https://ig2600.blogspot.com/2015/06/startupville-reading-list.html)
+* [Igor's general reading list](http://idvorkin.github.io/books-that-defined-me#undefined)
+* Lots more coming
+
+
+
 
