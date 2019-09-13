@@ -251,9 +251,11 @@ tbd
 
 ### Great books
 
-* [Igor's tech reading list](http://ig2600.blogspot.com/)
 * [Igor's startup reading list](https://ig2600.blogspot.com/2015/06/startupville-reading-list.html)
 * [Igor's general reading list](http://idvorkin.github.io/books-that-defined-me#undefined)
+* [Igor's ML reading list](https://github.com/idvorkin/techdiary/blob/master/notes/cloud-first-applications.md#references)
+* [Igor's cloud first  reading list](https://github.com/idvorkin/techdiary/blob/master/notes/machine-learning.md#what-should-i-read-to-learn-more)
+* [Igor's tech reading list](http://ig2600.blogspot.com/)
 * Lots more coming
 
 
