@@ -12,6 +12,8 @@ Job hunts are stressful, and my goal for job hunts is getting the job I want whi
 
 _This post targets currently employed developers who want to switch jobs_
 
+**Before we get started, you should listen to this decision making framework for [switching jobs or staying where you are](https://heathbrothers.com/member-content/decisive-for-job-decisions/decisive-for-job-decisions-2/). It takes 30 minutes, but given how hard job changes are, I strongly recommend it**.
+
 Below are my stressors and mitigations:
 
 **Lack of confidence**
@@ -41,6 +43,7 @@ Below are my stressors and mitigations:
 - Be honest with yourself about what you can control and share.
 - Think about what you can do to reduce the impact to your customers, partners, subordinates and bosses.
 - You might think telling others early is the ethical thing to do, but the ambiguity will cause them unnecessary stress.
+- Think of your team as a river not a lake. I know, this makes no sense - until you [read this](https://imwrightshardcode.com/2019/09/everybody-leaves/).
 
 **Pressure from current job**
 
