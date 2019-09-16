@@ -32,7 +32,7 @@ At this point in my career, my favorite situation is startup (e.g. [Smile](http:
 
 Turn around situations(e.g. [Cache](/cache)) can be much like startups, except instead of going from "0 to 1000", you need to go from "-100 to 100" with the existing team. Because the start of a turn around includes lots of demoralized players it is both incredibly difficult and also intensely satisfying for me once progress is made.
 
-Accelerated Growth, Realignment, Sustaining Success aren't yet exciting to me, but I suspect as I continue my career I'll find them appealing in that order.
+Accelerated Growth, Realignment, Sustaining Success aren't things I've tried yet. I'm looking forward to trying them to both round out my skills and to learn how much I enjoy them.
 
 ### B2C, B2B, Infrastructure? B2C!
 
