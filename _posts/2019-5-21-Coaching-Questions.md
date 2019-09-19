@@ -16,18 +16,19 @@ Coaching is not giving advice, it's helping others solve their own problems. Use
 <!-- vim-markdown-toc GFM -->
 
 - [Ask these 7 questions to coach](#ask-these-7-questions-to-coach)
-- [How to coach for task completion vs insight](#how-to-coach-for-task-completion-vs-insight)
-- [How to coach to build strategic insight](#how-to-coach-to-build-strategic-insight)
-- [How to keep people safe while coaching using human safety models](#how-to-keep-people-safe-while-coaching-using-human-safety-models)
-- [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
-- [Deflecting the desire for you to solve their problem: How would you handle this](#deflecting-the-desire-for-you-to-solve-their-problem-how-would-you-handle-this)
-- [Saying No: Say yes slowly](#saying-no-say-yes-slowly)
+    - [How to coach for task completion vs insight](#how-to-coach-for-task-completion-vs-insight)
+    - [How to coach to build strategic insight](#how-to-coach-to-build-strategic-insight)
+    - [How to keep people safe while coaching using human safety models](#how-to-keep-people-safe-while-coaching-using-human-safety-models)
+    - [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
+    - [Deflecting the desire for you to solve their problem: How would you handle this](#deflecting-the-desire-for-you-to-solve-their-problem-how-would-you-handle-this)
+    - [Saying No: Say yes slowly](#saying-no-say-yes-slowly)
+- [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
 - [Fantastic video on coaching, improvement, and discomfort](#fantastic-video-on-coaching-improvement-and-discomfort)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-#### Ask these 7 questions to coach
+### Ask these 7 questions to coach
 
 - Open: What's on your mind?
 - Expand: What Else?
@@ -102,8 +103,26 @@ Great question, I have some ideas, but first, how would you tackle this? What el
 - What do you recommend I take off my plate to get this done?want done?
 -  _If you still have to say no_ Make sure you're saying no to task, no to person.
 
-#### Fantastic video on coaching, improvement, and discomfort
 
+### Focus feedback on "you", not them.
+
+From the superb HBR article: [The feedback fallacy](https://hbr.org/2019/03/the-feedback-fallacy). If you don't read the article (which I'll also summarize)
+take this high order bit of focusing the feedback on "you" not on them. E.g. feedback should be "I expereinced X", instead of you screwed up X.
+
+| Easy way | Effective Way |
+|-------|--------|
+| Can I give you some feedback?| Here’s my reaction |
+| Good job! | Here are three things that really worked for me. What was going through your mind when you did them? |
+|  Here’s what you should do. | Here’s what I would do. |
+| Here’s where you need to improve| Here’s what worked best for me, and here’s why|
+| That didn’t really work. | When you did x, I felt y or I didn’t get that.|
+| You need to improve your communication skills. | Here’s exactly where you started to lose me.|
+| You need to be more responsive.| When I don’t hear from you, I worry that we’re not on the same page.|
+| You lack strategic thinking.| I’m struggling to understand your plan.|
+| You should do x [in response to a request for advice]. | What do you feel you’re struggling with, and what have you done in the past that’s worked in a similar situation? |
+
+
+### Fantastic video on coaching, improvement, and discomfort
 [![Coaching](/images/coaching-video.png)](https://youtu.be/oHDq1PcYkT4?t=431)
 
 
