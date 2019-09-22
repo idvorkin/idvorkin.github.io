@@ -5,7 +5,7 @@ author: "Igor Dvorkin"
 category: "Intent"
 comments: true
 inprogress: true
-tags
+tags:
   - how igor ticks
   - emotional intelligence
 ---
