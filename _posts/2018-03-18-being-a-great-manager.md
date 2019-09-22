@@ -258,7 +258,3 @@ tbd
 * [Igor's cloud first  reading list](https://github.com/idvorkin/techdiary/blob/master/notes/machine-learning.md#what-should-i-read-to-learn-more)
 * [Igor's tech reading list](http://ig2600.blogspot.com/)
 * Lots more coming
-
-
-
-
