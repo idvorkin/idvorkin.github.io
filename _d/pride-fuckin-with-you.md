@@ -1,5 +1,6 @@
+---
 layout: post
-title: "That's pride fucking with you”
+title: "That's pride fucking with you
 author: "Igor Dvorkin"
 category: "Intent"
 comments: true
@@ -7,7 +8,8 @@ comments: true
 
 [That's pride fucking with you](https://youtu.be/ruhFmBrl4GM)
 
-So many bad decisions happen because we’re proud.
+So many bad decisions happen because we're proud. In fact, pride exasperates the four villians of bad decision making. If pride is fucking with your decision go read [decisive](/decisive)
+
 Accept Reality
 ---
 Judge Yourself
