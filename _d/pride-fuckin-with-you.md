@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "That's pride fucking with you
+title: "That is pride fucking with you"
 author: "Igor Dvorkin"
 category: "Intent"
 comments: true
@@ -30,7 +30,7 @@ Cognitive Distortions - Someone cares about you.
 
 # Comparing yourself to others
 
-Friends who’s careers accelerated beyond mine.
+Friends who's careers accelerated beyond mine.
 
 
 
