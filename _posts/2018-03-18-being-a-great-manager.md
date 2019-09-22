@@ -243,11 +243,12 @@ tbd
 * [On Coaching](https://youtu.be/oHDq1PcYkT4?t=431)
 * [On making people feeling safe](https://www.youtube.com/watch?v=lmyZMtPVodo)
 
-
-
 ### Great Posts and Blogs
 
-* Leaders make people feel [safe](https://www.ted.com/talks/simon_sinek_why_good_leaders_make_you_feel_safe/discussionManagement situations)
+* [How managers get stuck](https://medium.com/@skamille/how-do-managers-get-stuck-b6ec9ecd1da1)
+* [The managers path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897) - This book feels like it lacks "complete" mental models, but it's the only book of it's kind - so it's the best there is!
+* [Elided Branches](http://www.elidedbranches.com/) - Blog on engineering management.
+* [I.M Wright's Harde Code](https://imwrightshardcode.com) - Engineering Managment from Microsoft, covers most topics.
 
 ### Great books
 
