@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "That is pride fucking with you"
-author: "Igor Dvorkin"
 category: "Intent"
 comments: true
 inprogress: true
