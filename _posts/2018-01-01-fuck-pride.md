@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "That is pride fucking with you"
-category: "Intent"
 comments: true
 inprogress: true
 tags:
