@@ -38,7 +38,7 @@ Meanwhile, my team was still only 10 people, and I felt like a failure.  Feeling
 
 #### Feeling cheated that I was not evaluated fairly by my management.
 
-**Antitdote:**  Don't let your friend/boss/society's assessment of you outweight your own.
+**Antitdote:**  Don't let your friend/boss/society's assessment of you outweight your own. Take the assessment in stride, decide if you need to find a new friend/boss/society and act appropriatly.
 
 Here I was lucky, I was able to learn from a mentor. My management mentor, Beth, was someone who I  respected so much I joined her team to get "my PhD in management". This manager was a huge role model, but he was essentially pushed out of his organization. I remember asking him, wait if you're so good at why you do, why is it that these guys pushed you out.  His answer is burned into my mind:
 
