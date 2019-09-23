@@ -26,8 +26,6 @@ Hopefully all this talk about pride prepared you for the thing I want you to kno
 
 **Decisions are hard "period"** Add pride to the mix, and the odds that you'll make the right decision drops to near zero. If you're mixing pride and decisions read [decisive](/decisive).
 
-*I'm not sure how best to write this post, so as you have ideas - share them. For now, I think the best approach is sharing times when Pride fucked with me, the consequences, and the antidote.*
-
 #### Judging my career relative to my peers.
 
 **Antitdote:**  Don't compare yourself to others, compare to what you want.
@@ -52,24 +50,15 @@ Here I was lucky, I was able to learn from a mentor. My management mentor, Beth,
 
 TBD
 
-*The rest of this post is just very rough notes*
+*The rest of this post is just very rough notes. This was a hard post to write so share ideas on how to make it better.*
 
-
-
-Accept Reality
-Judge Yourself
-Cognitive Distortions - Someone cares about you.
-Only switch jobs if you're willing to take a pay cut.
-
-Situations where Pride Impacted me
-####  Not willing to apologize
-#### Being Right vs Being Effective
-#### Promotion more important then pay
-#### Job Title vs responsiblity
-
-#### Promotion for title vs compensation or anything else.
-
-#### Need to be acknowledged by others
-
-#### Need to be praised by others
+Other situations where pride impacted me and I want to flesh out:
+* Not willing to apologize
+* Promotion more important then pay
+* Job Title vs responsiblity
+* Need to be acknowledged by others
+* Need to be praised by others
+* Accept Reality
+* Cognitive Distortions - Someone cares about you.
+* Only switch jobs if you're willing to take a pay cut.
 
