@@ -18,14 +18,14 @@ tags:
     - [Why is management attractive to you?](#why-is-management-attractive-to-you)
     - [What in your mind are the responsibilities of a manager?](#what-in-your-mind-are-the-responsibilities-of-a-manager)
     - [What specific types of duties would you like to do help with at this company?](#what-specific-types-of-duties-would-you-like-to-do-help-with-at-this-company)
-- [Managing and Developering People](#managing-and-developering-people)
+- [Managing and Developing People](#managing-and-developing-people)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [What is the point of a 1:1?](#what-is-the-point-of-a-11)
     - [How do you identify engineers who could make good managers? How do you help them develop?](#how-do-you-identify-engineers-who-could-make-good-managers-how-do-you-help-them-develop)
     - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
     - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
     - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
-- [Business Accumen](#business-accumen)
+- [Business Acumen](#business-acumen)
     - [Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?](#discuss-this-companies-trajectory-as-you-see-it-what-choices-do-they-think-theyre-good-and-bad-at-would-you-have-done-things-differently-what-problems-do-you-see-coming-up-in-the-future)
 - [Self Assessment](#self-assessment)
     - [Think of a mistake or failure you’ve made in the past two years. What did you learn from it and/or do differently in the future?](#think-of-a-mistake-or-failure-youve-made-in-the-past-two-years-what-did-you-learn-from-it-andor-do-differently-in-the-future)
@@ -123,7 +123,7 @@ In the real world:
 
 ### What specific types of duties would you like to do help with at this company?
 
-## Managing and Developering People
+## Managing and Developing People
 
 ### How do you keep people motivated?
 
@@ -142,14 +142,14 @@ In the real world:
   - Focus on the why
   - Call out the impact
   - Share the success with the team
-  - Share suceess with partners and boss
+  - Share success with partners and boss
 - Coaching + Career Growth
   - Catching people doing things right.
   - 110% of capability but clarify doing 110% vs 80%
 
 ### What is the point of a 1:1?
 
-I produce nothing, my output is the output of the team, and the team is the sum of the people. My ability to get the most value from my people is through my relationship with the people. If they trust me whole heartidly, they'll tell me stuff I need to know, and I'll be able to understand how best to use them/influence them/inspire them. So, all my 1:1's start with What's on your mind - what ever they have we talk through. based on time and place we'll do X, Y.
+I produce nothing, my output is the output of the team, and the team is the sum of the people. My ability to get the most value from my people is through my relationship with the people. If they trust me whole heartily, they'll tell me stuff I need to know, and I'll be able to understand how best to use them/influence them/inspire them. So, all my 1:1's start with What's on your mind - what ever they have we talk through. based on time and place we'll do X, Y.
 
 For 1:1's for my team, the employees owns the Agenda, however I will nudge them. I like to spend time
 
@@ -196,7 +196,7 @@ I also have some special 1:1s:
   - Engineer comes to conclusion himself
   - Engineers feels on track
   - Engineer aspires to get to that level
-  - Engineer doesn't want to be overlevelled
+  - Engineer doesn't want to be over levelled
   - Engineer is self aware
   - Engineer gets new opportunities/support required.
 
@@ -215,7 +215,7 @@ I also have some special 1:1s:
 
 ### What do you do when a team completely disagrees with the founder/VP on the direction of a product?
 
-## Business Accumen
+## Business Acumen
 
 ### Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?
 
@@ -465,7 +465,7 @@ Ratio Senior: SDE-II: SDE-I (1,2,2) => ten person team: 2, 4, 4.
 Everyone grows by learning and teaching. Lots of rules
 A crappy job for SDE-K is a growth opportunity for SDE-(K-1)
 SDE-IIIs want to think hard and lead
-SDE-I bring energy and excitment, but still dependant.
+SDE-I bring energy and excitement, but still dependant.
 SDE-IIs do the bulk of the work.
 
 Ideally, people grow from SDE-I -> SDE-III on a team, so much knowledge transfer and opportunity.
@@ -544,10 +544,10 @@ Multiple:
 - Best discussion on the topic [Tech Lead vs Architect](/software-leadership-roles)
 - Physical world vs Software:
   - Structural Engineer
-    - MSFT Software Archtiect
+    - MSFT Software Architect
     - Though shall not pass.
     - Enforce "Building Code" - Beam must be 1 foot thick. No variance, no pass. Built for the average.
-  - Physical Architect == Convert Customer Desire (Product Owner) into a maintable buildable system (tech lead, engineering manger).
+  - Physical Architect == Convert Customer Desire (Product Owner) into a maintainable buildable system (tech lead, engineering manger).
     - Should be owned by the team.
     - Knows the reality of the system better then Structural Engineer.
 - The gaps - inexperienced, (or lazy) teams
