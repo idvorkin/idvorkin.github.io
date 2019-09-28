@@ -26,9 +26,13 @@ Below are my stressors and mitigations:
 
 **Being rushed**
 
+The job hunting process is slow, with lots of unexpected and uncontrollable wait times. It takes time to schedule informational, then interviews, then getting news on the offer then negotiating with multiple companies. At each of these steps managers and recruiters are busy, on vacation,  etc, etc. If you're being thorough from your first informational to your final offer I'd allocate 3 months.
+
 - Know your "must be done by" date - don't get stressed over your own fake deadlines.
 - Your "must be done by" date is usually much farther in the future then you think.
+- Your time it takes to get through the process is usually longer then you think (expect 3 months)
 - Space your early interviews wider apart so you have time to correct major interviewing gaps.
+- To speed things up study, and get through your informationals in parallel.
 
 **Lack of options for next jobs**
 
