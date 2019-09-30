@@ -69,7 +69,7 @@ As I tell my teams, the what lags the how, here's my how.
 - Memorable [job descriptions](https://www.linkedin.com/posts/idvorkin_happyabrdance-activity-6461383015967920128-np6b)
 - Magic tricks during interviews and informationals
 
-### Working accross teams
+### Working across teams
 - Ease at which my team can collaborate across the larger organization.
 - Leadership card experience
 - Team wide engagement through clustering [exercises](https://www.oxfordhomeschooling.co.uk/blog/brainstorming-clustering/).
@@ -78,9 +78,9 @@ As I tell my teams, the what lags the how, here's my how.
 
 *This is worthy of it's own blog post. Here's some brain dumping.*
 
-Before the how,  lets start with why.
+Before the how, lets start with why.
 
-Why do great managers need to stay technical?  Because they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team to continously:
+Why do great managers need to stay technical?  Because they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team to continuously:
 
 1. Make correct architectural decisions
 2. Increase engineering excellence through best practices
@@ -89,16 +89,17 @@ Because they often represent teams in forums without their team the need to:
 
 1. Making sure you can represent your team in technical forums,  and you can bringing back best practices, or catch upcoming mistakes.
 1. Make swags on costings
-1. Represent laws of phyiscs
+1. Represent laws of physics
 
 How?
 
 * Architecture and design reviews
 * Try to ship software to
-* Be on every page the team getsS
+* Be on every page the team gets
 * Hang w/Principal Engineers
-* Follow major tech launches
-* Side projects in disparate tech
+* Follow major tech trends and product launches (keynotes, major tech blog posts)
+* Reading seminal books on topics (ML, CLoud Native Apps, Programming Language Design, Architecture)
+* Side projects  in assorted tech and ideas (ML, PWA, FaaS)
 
 
 Pre-Reqs?
