@@ -76,44 +76,38 @@ function gotoAppIfInstalled(app_url, web_url)
 
 // copied from:  https://stackoverflow.com/questions/2090551/parse-query-string-in-javascript
 
-function getQueryVariable(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split('&');
-    for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split('=');
-        if (decodeURIComponent(pair[0]) == variable) {
-            return decodeURIComponent(pair[1]);
-        }
-    }
-    return ""
+function getRedirect(pathname) {
+    before_after = pathname.split("/linkedin/")
+    if (before_after.length == 1) return ""
+    if (before_after.length == 2 && before_after[0] == "") return before_after[1]
+    console.log(`unexpected input ${pathname}`)
 } 
 
+console.log(window.location)
+const redirect_path = getRedirect(window.location.pathname+window.location.search)
+const isNoRedirect = redirect_path == ""
 
-const isNoRedirect = getQueryVariable("redirect") == "";
-
+app_url = ""
+web_url = ""
 if (isNoRedirect)
 {
-    // when no redirect goto profile
+    // When no redirect goto profile
+    // (NOTE: Can't share code with else block as need different paths for profiles- groan)
     const profile = 'idvorkin';
-    const app_url = `linkedin://profile/${profile}`;
-    const web_url = `https://linkedin.com/in/${profile}`;
+    app_url = `linkedin://profile/${profile}`;
+    web_url = `https://linkedin.com/in/${profile}`;
     gotoAppIfInstalled(app_url, web_url)
 }
 else
 {
-
     // When redirect try the redirect
-    redirect_path = getQueryVariable("redirect");
-
-    // help me debug.
-    console.log(`redirectPath: ${redirect_path}`)
-
-    // strip linked in.com
-
-    const app_url = `linkedin://${redirect_path}`;
-    const web_url = `https://linkedin.com/${redirect_path}`;
-    gotoAppIfInstalled(app_url, web_url)
+    app_url = `linkedin://${redirect_path}`;
+    web_url = `https://linkedin.com/${redirect_path}`;
 }
+console.log(`redirectPath: ${redirect_path}`)
+console.log(`app_url: ${app_url}`)
+console.log(`web_url: ${web_url}`)
+gotoAppIfInstalled(app_url, web_url)
 
 </script>
 </head>
