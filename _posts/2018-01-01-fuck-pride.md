@@ -6,6 +6,10 @@ inprogress: true
 tags:
   - how igor ticks
   - emotional intelligence
+redirect_from: 
+  - /pride
+  - /duck-pride
+
 ---
 
 "That is Pride Fucking With You" is the only scene I can quote from any movie. It's a powerful scene, and the advice is timeless. Two thousand years ago when a Roman emperor had a victory parade, he was required to have a slave standing behind him holding his helmet high in the air and whispering continuously: "You are mortal. You are mortal". Pride and ego are serious foes that must be kept in check.
