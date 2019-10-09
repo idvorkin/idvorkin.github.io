@@ -29,16 +29,19 @@ tags:
     - [Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?](#discuss-this-companies-trajectory-as-you-see-it-what-choices-do-they-think-theyre-good-and-bad-at-would-you-have-done-things-differently-what-problems-do-you-see-coming-up-in-the-future)
 - [Self Assessment](#self-assessment)
     - [Think of a mistake or failure you’ve made in the past two years. What did you learn from it and/or do differently in the future?](#think-of-a-mistake-or-failure-youve-made-in-the-past-two-years-what-did-you-learn-from-it-andor-do-differently-in-the-future)
+        - [Launching Creator Portal](#launching-creator-portal)
+        - [Over commiting my team](#over-commiting-my-team)
     - [What would a report/peer/manager feedback on you be? Strengths, areas for development, etc.](#what-would-a-reportpeermanager-feedback-on-you-be-strengths-areas-for-development-etc)
     - [How would you assess if someone is a good manager?](#how-would-you-assess-if-someone-is-a-good-manager)
 - [Process and Mechanism](#process-and-mechanism)
+    - [Notes](#notes)
     - [What kind of process have you followed in the past and what has worked well for you?](#what-kind-of-process-have-you-followed-in-the-past-and-what-has-worked-well-for-you)
     - [What process hasn't worked?](#what-process-hasnt-worked)
     - [How do you institute the right process at the right time? How do you know when you need something more formal?](#how-do-you-institute-the-right-process-at-the-right-time-how-do-you-know-when-you-need-something-more-formal)
     - [Have they ever removed process? Why or why not?](#have-they-ever-removed-process-why-or-why-not)
 - [Hiring](#hiring)
     - [What are you looking for in an engineer when you recruit?](#what-are-you-looking-for-in-an-engineer-when-you-recruit)
-        - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
+    - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
     - [Are they more comfortable with generalists or specialists?](#are-they-more-comfortable-with-generalists-or-specialists)
     - [How have you optimized the recruiting process in the past? Have they thought about the recruiting funnel and how you can optimize different parts of it?](#how-have-you-optimized-the-recruiting-process-in-the-past-have-they-thought-about-the-recruiting-funnel-and-how-you-can-optimize-different-parts-of-it)
     - [What are their thoughts on structured interview loops vs. non-structured free-form loops?](#what-are-their-thoughts-on-structured-interview-loops-vs-non-structured-free-form-loops)
@@ -235,106 +238,106 @@ I also have some special 1:1s:
 
 ### Think of a mistake or failure you’ve made in the past two years. What did you learn from it and/or do differently in the future?
 
-#### Launching Creator Portal 
- 
+#### Launching Creator Portal
+
 * Major Feature (still hadn’t established full trust)
     * Upload *heavily tested*
     * No Marketing
     * Easy Turn Off
     * New to Amazon team, all external, no process
     * Super low TPS
-    * Launch and Learn 
+    * Launch and Learn
     * OE
-    * Complete alignment with my PM 
+    * Complete alignment with my PM
     * Took on tech debt around alarms (Plan to resolve post launch)
     * Deep Understanding of the system,  super low TPS
 
 * Frustrated
     * Pushing my team to launch for weeks, always stressing never be blocked
-    
+
 
 * 2 problems
 
-* How I got into the situation 
-    * Didn’t realize what I didn’t know. 
-    * 15 years at MSFT, 1) very high trust 2) very clear on what tech debt org can take 3) operate much slower, more reporting, less surprises. 
-    
+* How I got into the situation
+    * Didn’t realize what I didn’t know.
+    * 15 years at MSFT, 1) very high trust 2) very clear on what tech debt org can take 3) operate much slower, more reporting, less surprises.
+
 * How I handled
     * Expect to be blocked/delayed with partner teams because they have less skin in the game.
-    * **Felt** like my mgmt chain didn’t have my back, and  didn’t trust my judgement.  
-    * Spent a few days whining at my PM and at others. 
-    * I pushed back on my boss - telling him how I felt and why “I was right”. 
-    * Saying look this is inconsistent with Amazon, you made mistakes (as did I) lets proceed with launch. 
+    * **Felt** like my mgmt chain didn’t have my back, and  didn’t trust my judgement.
+    * Spent a few days whining at my PM and at others.
+    * I pushed back on my boss - telling him how I felt and why “I was right”.
+    * Saying look this is inconsistent with Amazon, you made mistakes (as did I) lets proceed with launch.
 
 * A few days in bregrudingly
     * Went thought the critisicims
     * Got self audited
     * Came up with a moderation plan
-        * We’d watch videos as they come in through manual rotation till could get system up. 
+        * We’d watch videos as they come in through manual rotation till could get system up.
 
 * Consequences
-    *  Not being late, but positioning that I don’t “own my mistakes,  and blame others” 
-    *  Had to work three times as hard to get that back,  but that smell was on me for months.  
+    *  Not being late, but positioning that I don’t “own my mistakes,  and blame others”
+    *  Had to work three times as hard to get that back,  but that smell was on me for months.
     *  Burned trust took months to get it back
 
 
-    
+
 
 **Learnings - How I got into he situation **
 * Even in “bottom up” orgs - test for what your technical freedom is
 * When going into “trust me” situations, make sure to advertise more
-       * In new org, assume I don’t know. 
+       * In new org, assume I don’t know.
         * No more “Trust Me”
-        * For risks/tech debt, even ones I think are safe,  vet with senior folks, then vet with my boss, and really stress consequences of getting wrong, but why. 
-* Launching of WAMD by keyword - precision and recall hard. 
-    * Testing w/None prime traffic, precision high, recall low. Happy with that. 
-    * Late brought up could have very different traffic pattern for Prime Day (couldn’t pre-test) 
-    * Came up with Plan 
-        * Hourly monitoring for gaps 
-        * 3 types of shutdown switches (all off, blacklist bad, whitelist good) 
+        * For risks/tech debt, even ones I think are safe,  vet with senior folks, then vet with my boss, and really stress consequences of getting wrong, but why.
+* Launching of WAMD by keyword - precision and recall hard.
+    * Testing w/None prime traffic, precision high, recall low. Happy with that.
+    * Late brought up could have very different traffic pattern for Prime Day (couldn’t pre-test)
+    * Came up with Plan
+        * Hourly monitoring for gaps
+        * 3 types of shutdown switches (all off, blacklist bad, whitelist good)
         * 99% latency.
 * Next time
-    * Will run same protocol again this year. 
-    * Come up with an offline computation model for next prime day. 
+    * Will run same protocol again this year.
+    * Come up with an offline computation model for next prime day.
 
-**Learnings - How I handled the “Though shalt not pass” conversation from my VP** 
+**Learnings - How I handled the “Though shalt not pass” conversation from my VP**
 
-* Launching Charity Giving 
+* Launching Charity Giving
     * VP decided we’ll need to do video sharing to FB/Twitter
-    * Boss didn’t push back, just pass through. 
-    * Yup, my mistake. How can we get this working. 
-    * Decent idea,  but My team was 100% booked, and no experience. 
+    * Boss didn’t push back, just pass through.
+    * Yup, my mistake. How can we get this working.
+    * Decent idea,  but My team was 100% booked, and no experience.
     * Begged other leads for an expert in this area. Spent 2 days to see if it was possible, found out it wasn’t possible for 2 days, then got sign off from a VP,  made a nice package for my boss, who brought it up the tree.
 
 #### Over commiting my team
 
 * Q4 2018 - Wanted to do charity
-    * Committed team to deliver - “Lets take 2 weeks and make sure we can do this” ,  team agreed. Then we pushed hard, and hot but we’d make it and start converging. 
+    * Committed team to deliver - “Lets take 2 weeks and make sure we can do this” ,  team agreed. Then we pushed hard, and hot but we’d make it and start converging.
     * As got closer,  standard cut stuff.
     * New, requests from other parts of the organization - must do I18N,  can’t get it off our plate
-    * Must do a new time of coupon (which was already cut) 
-    * Load testing want completely wrong. 
+    * Must do a new time of coupon (which was already cut)
+    * Load testing want completely wrong.
     * **Everything** went wrong
 * Team killed themselves till thanksgiving
-    * Which they didn’t mind because of the purpose off the launch. 
-    * HOWEVER: Said we’d get a break post Thanksgiving. And we didn’t, get more stuff put on us I18N and another coupon type. 
-    * Couldn’t get it negotiated off my team (Amazon — Grr!!) 
+    * Which they didn’t mind because of the purpose off the launch.
+    * HOWEVER: Said we’d get a break post Thanksgiving. And we didn’t, get more stuff put on us I18N and another coupon type.
+    * Couldn’t get it negotiated off my team (Amazon — Grr!!)
 
 **Learnings for next time**
 
 * Target done 1.5 months early
 * Agreement on what features we’d cut if required when we got closer.
 * Left in more slack so didn’t get pushed over
-* Shared data up with what happened last time w/data and wouldn’t over commit. 
-* Stopped other teams from over committing. 
-* Done with 2 weeks to spare. 
+* Shared data up with what happened last time w/data and wouldn’t over commit.
+* Stopped other teams from over committing.
+* Done with 2 weeks to spare.
 
-#### What would a report/peer/manager feedback on you be? Strengths, areas for development, etc.
+### What would a report/peer/manager feedback on you be? Strengths, areas for development, etc.
 
 * Report
     * Care, Great Advice, People First, Strong People chops
-    * Gaps: 
-        * Organization - my desk is a mess, and I miss stuff (Mitigate: Push my whole team to audit, constant list of top risks) 
+    * Gaps:
+        * Organization - my desk is a mess, and I miss stuff (Mitigate: Push my whole team to audit, constant list of top risks)
 * Boss
     * Same as reports
     * Hiring - Wow
@@ -343,22 +346,22 @@ I also have some special 1:1s:
         * Customer -> Team > Business vs Customer > Team > Business
     * Start by assuming I’m right,  instead of me being wrong
         * Exact oppposite o what I tell me, I need them to assume I”m wrong due to positional authority
-    * Don’t be so harsh and “weak” partners. 
-        * I stay don’t get blocked and want to ship,  people who are in agreement love me. People that don’t I’ll Figure out how to get around. 
-    * (Less experienced) Be less autonomous. 
-        * Lots of ideas, change fast, check with me more often. 
+    * Don’t be so harsh and “weak” partners.
+        * I stay don’t get blocked and want to ship,  people who are in agreement love me. People that don’t I’ll Figure out how to get around.
+    * (Less experienced) Be less autonomous.
+        * Lots of ideas, change fast, check with me more often.
 
     * Peer
         * Want to ship
         * How do you pull that offf
     * Good
-        * Team loves you 
-        * Creative 
+        * Team loves you
+        * Creative
     * Gaps
-        * Going to Fast. 
-        * Keep me in the loop 
-        * Be more risk averse 
-    
+        * Going to Fast.
+        * Keep me in the loop
+        * Be more risk averse
+
 
 ### How would you assess if someone is a good manager?
 
@@ -375,85 +378,85 @@ Using the same metrics I apply to myself. For the how I'd:
 
 ### Notes
 
-* Nothing more powerful then a motivated engineer, don’t let process take that away. 
+* Nothing more powerful then a motivated engineer, don’t let process take that away.
 * Free up developers to not solve known issues - freedom for more stuff
 * Push as much down to tech as possible (style cop, auto testing, static typing)
-* Coalsce as much as possible. 
+* Coalsce as much as possible.
 * Turn input  into outputs (with audit) need to iterate over
-* Someone **owns** a process for a quarter so they can own it and make it better. 
+* Someone **owns** a process for a quarter so they can own it and make it better.
 
 ### What kind of process have you followed in the past and what has worked well for you?
 
 * Standard Agile Process - High Owner
-* Get a 
+* Get a
 * Retrospectives
-* Team meetings 
+* Team meetings
 * Operations Meetings
     * I”m on all the pages
 * PM alignment critical
     * Daily interactions
     * Drag PM desk close to mine
 * Leadership weekly priority
-    * Are we in sync with PM, and  
+    * Are we in sync with PM, and
 * Design Reviews
     * Catch stuff as early as possible
     * Talk on the whiteboard
     * Team knowledge sessions
 * Team having lunch together and becoming friends
     * Eat lunch together even if on laptop
-    * Share your stuff 
+    * Share your stuff
 * Internal Project Status Meeting
-    * Everyone knows what is going on, and can audit and help it track. 
+    * Everyone knows what is going on, and can audit and help it track.
 
 ### What process hasn't worked?
 
 * Leadership all int the room audit mechanism.
-    * People want to look good. 
+    * People want to look good.
     * Can’t guess what leaders want to see
-    * Everyone not paying attention unless it’s their turn. 
-* Web lab Removal 
-    * You put something in yourself, and it falls apart. 
+    * Everyone not paying attention unless it’s their turn.
+* Web lab Removal
+    * You put something in yourself, and it falls apart.
 * Cross team design review
-    * Too many people in the room. 
-    * Not clear if the goal is sign off, or if the goal is education. 
-    * Too many rat holes 
+    * Too many people in the room.
+    * Not clear if the goal is sign off, or if the goal is education.
+    * Too many rat holes
     * **Goal is update the bosses**
-* Volunteer, distributed ownership on a painful fix: 
+* Volunteer, distributed ownership on a painful fix:
     * Missing metrics
     * Weblabs
-    * No,  generate a table and track monthly. 
-    * Letting tasks not be in our bug tracker - often drop. 
-    * “I’ll just do it” — no need to get it the past. 
+    * No,  generate a table and track monthly.
+    * Letting tasks not be in our bug tracker - often drop.
+    * “I’ll just do it” — no need to get it the past.
 
 ### How do you institute the right process at the right time? How do you know when you need something more formal?
 
-I’m usually error on the lack of process. E.g. the story with let people volunteer to fix and drive. And it doesn’t happen “Best Intentions Don’t Work” 
+I’m usually error on the lack of process. E.g. the story with let people volunteer to fix and drive. And it doesn’t happen “Best Intentions Don’t Work”
 
-* I try to figure out how to keep it on high ownership, not on letting it drop on the floor. 
-* When I expect it to work, and it isn’t. 
-* Force the usage of the bar when not present. E.g. push on that. 
+* I try to figure out how to keep it on high ownership, not on letting it drop on the floor.
+* When I expect it to work, and it isn’t.
+* Force the usage of the bar when not present. E.g. push on that.
 
 ### Have they ever removed process? Why or why not?
 
-* Yes, group retros - team hated it, it was too big, and it didn’t make sense to teams were too different. 
-* IC’s coming to a group status meeting. Reduced to just seniors of the teams, and focused on them. 
-* Switch from “group status report” to rotating meetings, but that made it worse as they never showed up. 
+* Yes, group retros - team hated it, it was too big, and it didn’t make sense to teams were too different.
+* IC’s coming to a group status meeting. Reduced to just seniors of the teams, and focused on them.
+* Switch from “group status report” to rotating meetings, but that made it worse as they never showed up.
 
 ## Hiring
 
 ### What are you looking for in an engineer when you recruit?
 
-Most  companies have their “competncies” they test for. But I abstract it down to: 
+Most  companies have their “competncies” they test for. But I abstract it down to:
 
 * Smart (Can code, understands)
-    * Teach me something 
-    * Walk through X, and Y, how do you, explain me the trade offs.  
+    * Teach me something
+    * Walk through X, and Y, how do you, explain me the trade offs.
 * Get things done (wants to ship, owns it):
-    * What matters to them 
-    * Tell me something hard you did. 
+    * What matters to them
+    * Tell me something hard you did.
 * EQ: (Not an asshole, Continous Learning, Sees impact off his action, self aware o how eels)
     * Tell me a time you got in a fight
-    * Tell me the hardest feedback you received. 
+    * Tell me the hardest feedback you received.
 
 ### Do they prefer to hire only experienced folks?
 
@@ -490,37 +493,37 @@ BE -> Learn the tech chops of complex system.
 
 ### How have you optimized the recruiting process in the past? Have they thought about the recruiting funnel and how you can optimize different parts of it?
 
-* Top of Funnel 
+* Top of Funnel
     * Interview events
     * Internal Talks
     * Linked in Posts
-    * Linked in Appreciation 
+    * Linked in Appreciation
     * Linked in Articles
     * Always help recruiting
     * Connect to warm candidates
-    * Go grab coffee with them. 
+    * Go grab coffee with them.
     * Mentorship of folks, volunteer for mentorship
-    * Intern Talk 
-* Mid Funnel 
+    * Intern Talk
+* Mid Funnel
     * Post interview - magic trick, after interview lets make time to chat
     * Push to get interview done ASAP
     * Push to get results to candidate ASAP
-    * Walk out of interview connect on linked in and chat with them. 
-* Bottom of the Funnel 
+    * Walk out of interview connect on linked in and chat with them.
+* Bottom of the Funnel
    * Beer/Coffee/Call
     * Share what I have
     * Talk to my team.
-    * Come out and have lunch with my team. 
+    * Come out and have lunch with my team.
     * Multi Sell job come to my
-    * Focus on 
+    * Focus on
 
 ### What are their thoughts on structured interview loops vs. non-structured free-form loops?
 
 * External Structured
-    * Coding 
-    * Design 
+    * Coding
+    * Design
     * Leadership skills - most important
-    * Self aware - earns trust. 
+    * Self aware - earns trust.
 
 ## Firing
 
@@ -532,9 +535,9 @@ Multiple:
 
 - In general, if you're on PIP, you've been going home and feeling like shit, who wants to do that?
 -  Get into right role, almost always feels better
--  Shouldn’t be a surprise, see it coming from a mile away. 
+-  Shouldn’t be a surprise, see it coming from a mile away.
 -  Help them get a job
--  Lay out process, and help w/mock interviews and general interviewing advice. 
+-  Lay out process, and help w/mock interviews and general interviewing advice.
 -  Help understand strengths.
 
 ## Random topics
@@ -566,17 +569,17 @@ Multiple:
 
 ### What are the pros/cons of public vs. private titles?
 
-* MSFT went through this 
-* World better w/o title
+* MSFT went through this
+    * World better w/o title
 
-Public Pro 
+Public Pro
     * Pride for promotions
     * Signal of organization influence (although you can kind of figure it out)
-    * Shortcut to find senior folks when don’t know the team. 
- 
+    * Shortcut to find senior folks when don’t know the team.
+
 * Cons
     * When “title” doesn’t match reality.
     * Folks get positional authority
-    * Jockying for Promo when doesn’t matter. 
-    * Frustration in thinking problem is title not blah. 
-    * Being right, but ignored 
+    * Jockying for Promo when doesn’t matter.
+    * Frustration in thinking problem is title not blah.
+    * Being right, but ignored
