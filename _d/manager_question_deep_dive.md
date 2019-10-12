@@ -8,7 +8,7 @@ tags:
   - job-hunt
 ---
 
-Managing is hard. Lessons are hard earned, and should be remembered. This post is designed to helpful for folks who are trying to be great managers, which is both me, and folks who are learning to be a great manager.
+Managing is hard. Lessons are hard earned, and should be cherished. This post is designed to draw out my opinions on management, reminding me how best to manage and help me converge on good anecdotes.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
