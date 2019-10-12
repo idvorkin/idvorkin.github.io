@@ -24,11 +24,28 @@ tags:
     - [How do you identify engineers who could make good managers? How do you help them develop?](#how-do-you-identify-engineers-who-could-make-good-managers-how-do-you-help-them-develop)
     - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
     - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
+    - [Best hire of your career](#best-hire-of-your-career)
+    - [How did you grow top talent](#how-did-you-grow-top-talent)
+    - [General process](#general-process)
     - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
 - [Business Acumen](#business-acumen)
     - [Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?](#discuss-this-companies-trajectory-as-you-see-it-what-choices-do-they-think-theyre-good-and-bad-at-would-you-have-done-things-differently-what-problems-do-you-see-coming-up-in-the-future)
-- [Self Assessment](#self-assessment)
+- [Self Assessment and Weakness](#self-assessment-and-weakness)
+    - [Top Weakness](#top-weakness)
+    - [Get in a fight with your boss](#get-in-a-fight-with-your-boss)
+        - [Co boss](#co-boss)
+        - [Shutdown alternate platforms](#shutdown-alternate-platforms)
+        - [Break big bang creator studio down into](#break-big-bang-creator-studio-down-into)
+    - [Get in a fight technical](#get-in-a-fight-technical)
+        - [Service split and shared component](#service-split-and-shared-component)
+        - [Need SDE-III to do work that was below him.](#need-sde-iii-to-do-work-that-was-below-him)
+        - [Architect won't let us launch without commiting to next release.](#architect-wont-let-us-launch-without-commiting-to-next-release)
+    - [Get in a fight PM](#get-in-a-fight-pm)
+        - [Creator Portal initial launch - We're acceptable to ship with several gaps.](#creator-portal-initial-launch---were-acceptable-to-ship-with-several-gaps)
+    - [Get in a fight with other](#get-in-a-fight-with-other)
+        - [Smile w/Legal.](#smile-wlegal)
     - [Think of a mistake or failure you’ve made in the past two years. What did you learn from it and/or do differently in the future?](#think-of-a-mistake-or-failure-youve-made-in-the-past-two-years-what-did-you-learn-from-it-andor-do-differently-in-the-future)
+        - [Push GSAT when parent team though it was a bad idea.](#push-gsat-when-parent-team-though-it-was-a-bad-idea)
         - [Launching Creator Portal](#launching-creator-portal)
         - [Over commiting my team](#over-commiting-my-team)
     - [What would a report/peer/manager feedback on you be? Strengths, areas for development, etc.](#what-would-a-reportpeermanager-feedback-on-you-be-strengths-areas-for-development-etc)
@@ -45,8 +62,9 @@ tags:
     - [Are they more comfortable with generalists or specialists?](#are-they-more-comfortable-with-generalists-or-specialists)
     - [How have you optimized the recruiting process in the past? Have they thought about the recruiting funnel and how you can optimize different parts of it?](#how-have-you-optimized-the-recruiting-process-in-the-past-have-they-thought-about-the-recruiting-funnel-and-how-you-can-optimize-different-parts-of-it)
     - [What are their thoughts on structured interview loops vs. non-structured free-form loops?](#what-are-their-thoughts-on-structured-interview-loops-vs-non-structured-free-form-loops)
-- [Firing](#firing)
+- [Firing and Performance Management](#firing-and-performance-management)
     - [How do you deal with people performance issues?](#how-do-you-deal-with-people-performance-issues)
+    - [Coach employee back to success](#coach-employee-back-to-success)
     - [Have you ever had to implement a PIP (performance improvement plan)? What are your thoughts on it?](#have-you-ever-had-to-implement-a-pip-performance-improvement-plan-what-are-your-thoughts-on-it)
 - [Random topics](#random-topics)
     - [Should industry have architects](#should-industry-have-architects)
@@ -149,6 +167,11 @@ In the real world:
 - Coaching + Career Growth
   - Catching people doing things right.
   - 110% of capability but clarify doing 110% vs 80%
+- Moments
+    - Contant celebrating people doing stuff fun
+    - Hack-a-thons
+    - Playing cards for appreciation
+    - Managers making breakfast
 
 ### What is the point of a 1:1?
 
@@ -216,6 +239,10 @@ I also have some special 1:1s:
 
 - Call out positive examples from engineers @ Level + 1
 
+### Best hire of your career
+### How did you grow top talent
+### General process
+
 ### What do you do when a team completely disagrees with the founder/VP on the direction of a product?
 
 ## Business Acumen
@@ -234,9 +261,39 @@ I also have some special 1:1s:
 
 **Linked In**
 
-## Self Assessment
+## Self Assessment and Weakness
+
+### Top Weakness
+
+### Get in a fight with your boss
+
+#### Co boss
+
+#### Shutdown alternate platforms
+
+#### Break big bang creator studio down into
+
+### Get in a fight technical
+
+#### Service split and shared component
+#### Need SDE-III to do work that was below him.
+#### Architect won't let us launch without commiting to next release.
+
+    * Architect need to save face.
+    * Still doing the change, but add a "design" for next release, and we both knew it was dumb.
+
+### Get in a fight PM
+
+#### Creator Portal initial launch - We're acceptable to ship with several gaps.
+
+### Get in a fight with other
+
+#### Smile w/Legal.
+
 
 ### Think of a mistake or failure you’ve made in the past two years. What did you learn from it and/or do differently in the future?
+
+#### Push GSAT when parent team though it was a bad idea.
 
 #### Launching Creator Portal
 
@@ -279,9 +336,6 @@ I also have some special 1:1s:
     *  Not being late, but positioning that I don’t “own my mistakes,  and blame others”
     *  Had to work three times as hard to get that back,  but that smell was on me for months.
     *  Burned trust took months to get it back
-
-
-
 
 **Learnings - How I got into he situation **
 * Even in “bottom up” orgs - test for what your technical freedom is
@@ -525,20 +579,41 @@ BE -> Learn the tech chops of complex system.
     * Leadership skills - most important
     * Self aware - earns trust.
 
-## Firing
+
+## Firing and Performance Management
 
 ### How do you deal with people performance issues?
 
+### Coach employee back to success
+
+* Private
+
 ### Have you ever had to implement a PIP (performance improvement plan)? What are your thoughts on it?
 
-Multiple:
+Three "Players" in this situation:
 
-- In general, if you're on PIP, you've been going home and feeling like shit, who wants to do that?
--  Get into right role, almost always feels better
--  Shouldn’t be a surprise, see it coming from a mile away.
--  Help them get a job
--  Lay out process, and help w/mock interviews and general interviewing advice.
--  Help understand strengths.
+* The team
+    - Weak performer means others on team have to cover both in mentoring, and picking up dropped ball.
+    - Sets a bad example for the team
+    - Team knows the weak, and dislikes it.
+    - Need to mitigate impact of week employee.
+* The struggling employee
+    - Should not be a surprise from manager. Should have already gone through role guidelines and gaps.
+    - Clear set of gaps, and expectation for required improvement.
+    - Let employee 'self discover' gaps and judge, but you must set down the truth.
+    - Progressively lay out process, so they know where they're at and what happens next.
+    - Remember being in the wrong role SUCKS. Employee is going  home after long day, and feeling like shit (rinse and repeat)
+    - One in right role - will feel great. Seen lots of times this happens.
+    -  Help them know it's the wrong role, but they have lots of strengths (look we hired you), and you'll be well loved elsewhere.
+    - Help them with how to find change.
+* The manager.
+    - Emotionally draining. But you own giving them an opportunity not their success.
+    - When they're in the wrong role, best thing that happen is getting them to a place where they are successful.
+    - Can be time and energy intensive, robs the team and good employees of your energy.
+    - Ensure criteria for demonstrating employees recover is sufficient. Get pre-agreement on criteria with your organizational leaders.
+    - Remember, all employee's getting into this process will improve because they are being chased. Ensure it's not temporary.
+
+
 
 ## Random topics
 
