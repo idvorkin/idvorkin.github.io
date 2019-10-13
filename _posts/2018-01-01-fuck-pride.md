@@ -63,6 +63,14 @@ Example: TBD
 
 *Important Side Bar: Being effective often requires negotiation. The bible for negotiation is [Getting to Yes](https://www.google.com/search?q=getting+to+yes) which I highly recommend*
 
+#### Feeling life isn't fair because a low probability random event occurred to me.
+
+**Antidote:**  Remember, the only fair thing in life is that it is completely unfair.  Compare your "life is unfair" narrative to folks with bigger problems. Getting a fast acting random cancer, beating it, and getting it again ([founder of apple](https://en.wikipedia.org/wiki/Steve_Jobs#Death)), freak accidents ( [Super Man Actor](https://en.wikipedia.org/wiki/Christopher_Reeve) )  and crippling diseases ([Smartest guy on earth](http://www.hawking.org.uk/)).  Even better - if you're a parent imagine any of those things happening to your kids. Yeah, maybe be glad something worse didn't happen.
+
+*Important Side Bar: Don't let "life being unfair" be an excuse to avoid learning or skirt responsibility. Each challenge we get is a precious learning opportunity - make this most of it*
+
+#### Other examples
+
 I'll continue to add examples to this post over time (likely when I need to remind myself or someone else of the perils of pride). Here are other examples where pride has fucked me up:
 
 * Not willing to apologize
@@ -71,4 +79,3 @@ I'll continue to add examples to this post over time (likely when I need to remi
 * Not accepting the reality of the situation/laws of physics.
 * Cognitive Distortions - Someone cares about what happens to you.
 * Not taking a "better" job for a pay cut
-
