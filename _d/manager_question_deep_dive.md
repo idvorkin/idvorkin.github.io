@@ -296,7 +296,6 @@ I also have some special 1:1s:
 ### Think of a mistake or failure you’ve made in the past two years. What did you learn from it and/or do differently in the future?
 
 #### Push GSAT when parent team though it was a bad idea.
-
 #### Launching Creator Portal
 
 * Major Feature (still hadn’t established full trust)
@@ -310,10 +309,7 @@ I also have some special 1:1s:
     * Complete alignment with my PM
     * Took on tech debt around alarms (Plan to resolve post launch)
     * Deep Understanding of the system,  super low TPS
-
-* Frustrated
-    * Pushing my team to launch for weeks, always stressing never be blocked
-
+    * Pushing my team to launch for weeks, always coached team to  never be blocked
 
 * 2 problems
 
@@ -330,7 +326,7 @@ I also have some special 1:1s:
 
 * A few days in bregrudingly
     * Went thought the critisicims
-    * Got self audited
+    * Did a self audit with my self and Senior Engineer.
     * Came up with a moderation plan
         * We’d watch videos as they come in through manual rotation till could get system up.
 
@@ -345,6 +341,7 @@ I also have some special 1:1s:
        * In new org, assume I don’t know.
         * No more “Trust Me”
         * For risks/tech debt, even ones I think are safe,  vet with senior folks, then vet with my boss, and really stress consequences of getting wrong, but why.
+
 * Launching of WAMD by keyword - precision and recall hard.
     * Testing w/None prime traffic, precision high, recall low. Happy with that.
     * Late brought up could have very different traffic pattern for Prime Day (couldn’t pre-test)
@@ -381,7 +378,7 @@ I also have some special 1:1s:
 
 **Learnings for next time**
 
-* Target done 1.5 months early
+* Target done 1.5 months early (will slip to 1 months, and then need the E2E time, or bring new features in)
 * Agreement on what features we’d cut if required when we got closer.
 * Left in more slack so didn’t get pushed over
 * Shared data up with what happened last time w/data and wouldn’t over commit.
@@ -581,7 +578,6 @@ BE -> Learn the tech chops of complex system.
     * Leadership skills - most important
     * Self aware - earns trust.
 
-
 ## Firing and Performance Management
 
 ### How do you deal with people performance issues?
@@ -616,6 +612,12 @@ Three "Players" in this situation:
     - Remember, all employee's getting into this process will improve because they are being chased. Ensure it's not temporary.
 
 
+- In general, if you're on PIP, you've been going home and feeling like shit, who wants to do that?
+-  Get into right role, almost always feels better
+-  Shouldn’t be a surprise, see it coming from a mile away.
+-  Help them get a job
+-  Lay out process, and help w/mock interviews and general interviewing advice.
+-  Help understand strengths.
 
 ## Random topics
 
@@ -647,7 +649,7 @@ Three "Players" in this situation:
 ### What are the pros/cons of public vs. private titles?
 
 * MSFT went through this
-    * World better w/o title
+* World better w/o title
 
 Public Pro
     * Pride for promotions

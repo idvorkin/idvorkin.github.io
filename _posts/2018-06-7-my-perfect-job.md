@@ -75,6 +75,7 @@ Technology leaders need to divide their time among the business, experiences, an
 - Going to work is like hanging out with friends.
 - (In very special places ...) I run [Feelings meetings](/Human-Meetings)
 
+<!--
 ### Very entertaining references on engineering jobs in the industry.
 
 *I'll need to create a seperate post from this, but for now I'll just hold these references*
@@ -104,6 +105,7 @@ Or in more smart words:
 --
 
 *The ability to get things done has one unpleasant feature: it reduces with the growth of wisdom. And there's nothing you can do about it. "I'm too old for this shit" mode on.*
+-->
 
 
 
