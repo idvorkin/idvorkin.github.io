@@ -13,40 +13,46 @@ author: "Igor Dvorkin"
 
 I've learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I've learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.
 
-<!-- TOC -->
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
 
 - [Work](#work)
-  - [Individual Contributor](#individual-contributor)
-    - [Functional Skills to develop](#functional-skills-to-develop)
-  - [Realistic expectations for a new leader](#realistic-expectations-for-a-new-leader)
-  - [Manager](#manager)
-  - [My super powers](#my-super-powers)
-    - [Relationships](#relationships)
-  - [My kryptonite](#my-kryptonite)
-    - [Bean counting](#bean-counting)
-    - [Committing and describing relative to ideal, not relative to reality.](#committing-and-describing-relative-to-ideal-not-relative-to-reality)
-    - [Under estimating technical complexity](#under-estimating-technical-complexity)
-  - [Raw](#raw)
+    - [Individual Contributor](#individual-contributor)
+        - [Functional Skills to develop](#functional-skills-to-develop)
+    - [Realistic expectations for a new leader](#realistic-expectations-for-a-new-leader)
+    - [Manager](#manager)
+    - [My super powers](#my-super-powers)
+        - [Relationships](#relationships)
+        - [Technical Depth and Breadth](#technical-depth-and-breadth)
+        - [Technical Best Practice](#technical-best-practice)
+        - [Ability to sanity test all tech stuff.](#ability-to-sanity-test-all-tech-stuff)
+    - [My kryptonite](#my-kryptonite)
+        - [Bean counting](#bean-counting)
+        - [Committing and describing relative to ideal, not relative to reality.](#committing-and-describing-relative-to-ideal-not-relative-to-reality)
+        - [Under estimating technical complexity](#under-estimating-technical-complexity)
+    - [Raw](#raw)
 - [Health and habits](#health-and-habits)
-  - [Physical](#physical)
-  - [Emotional](#emotional)
-  - [Cognitive](#cognitive)
-    - [Think it through, write it out, read it again and again](#think-it-through-write-it-out-read-it-again-and-again)
-  - [Identity](#identity)
+    - [Physical](#physical)
+    - [Emotional](#emotional)
+    - [Cognitive](#cognitive)
+        - [Think it through, write it out, read it again and again](#think-it-through-write-it-out-read-it-again-and-again)
+    - [Identity](#identity)
 - [Hobbies](#hobbies)
-  - [Biking](#biking)
-  - [Magic](#magic)
-  - [Jugging](#jugging)
+    - [Biking](#biking)
+    - [Magic](#magic)
+    - [Jugging](#jugging)
 - [Family](#family)
-  - [Husband](#husband)
-  - [Father](#father)
+    - [Husband](#husband)
+    - [Father](#father)
 - [Triggers and Mental Quick Sand](#triggers-and-mental-quick-sand)
-  - [Stress and Anxiety](#stress-and-anxiety)
-  - [Financial Security and Retirement](#financial-security-and-retirement)
-    - [The point of money](#the-point-of-money)
-    - [What would I do for less money](#what-would-i-do-for-less-money)
+    - [Stress and Anxiety](#stress-and-anxiety)
+    - [Financial Security and Retirement](#financial-security-and-retirement)
+        - [The point of money](#the-point-of-money)
+        - [What would I do for less money](#what-would-i-do-for-less-money)
+        - [Making more vs spending more](#making-more-vs-spending-more)
 
-<!-- /TOC -->
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## Work
 
@@ -82,6 +88,12 @@ Top priorities:
 #### Relationships
 
 - Investing time in relationships always pays out. It can feel expensive, but it's always worth it.
+
+#### Technical Depth and Breadth
+
+#### Technical Best Practice
+
+#### Ability to sanity test all tech stuff.
 
 ### My kryptonite
 
@@ -137,11 +149,20 @@ Being human, I spend a bunch of time stressed and anxious. Here are some of my f
 
 - Stress is the difference between expectations and reality
 - Laws of physics always win.
-- Anxiety is experiencing a possible failure in advance.
+- Anxiety is practicing failure in advance.
 - Worry is not preperation, nor does it make you better.
+- Anxiety is "keeping a problem in the foreground". This sucks up your CPU, and means you can't spin down your CPU. The write answer is commit to disk all open decisions, and then kick it out of the foreground till ready (this is the GTD solution).
 
 ### Financial Security and Retirement
 
 #### The point of money
 
+Money isn;t just to make piles, it's to enable you to do stuff. Stuff does not equal stuff you don't use, stuff is actually often experiences. And most of the best stuff you can't buy. Yup, it's doing and it's with whom you are doing it.
+
 #### What would I do for less money
+
+If you wouldn't take a job for a pay cut, you probably shouldn't tak ethe job.
+
+#### Making more vs spending more
+
+See Parkinson's law, applies to both tim and Money.
