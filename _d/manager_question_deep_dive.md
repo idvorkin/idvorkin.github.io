@@ -28,7 +28,6 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
     - [Best hire of your career](#best-hire-of-your-career)
     - [How did you grow top talent](#how-did-you-grow-top-talent)
-    - [General process](#general-process)
     - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
 - [Business Acumen](#business-acumen)
     - [Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?](#discuss-this-companies-trajectory-as-you-see-it-what-choices-do-they-think-theyre-good-and-bad-at-would-you-have-done-things-differently-what-problems-do-you-see-coming-up-in-the-future)
@@ -53,8 +52,13 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [What would a report/peer/manager feedback on you be? Strengths, areas for development, etc.](#what-would-a-reportpeermanager-feedback-on-you-be-strengths-areas-for-development-etc)
     - [How would you assess if someone is a good manager?](#how-would-you-assess-if-someone-is-a-good-manager)
 - [Process and Mechanism](#process-and-mechanism)
-    - [Notes](#notes)
+    - [Process Playbook](#process-playbook)
+        - [Process Anti-Patterns:](#process-anti-patterns)
     - [What kind of process have you followed in the past and what has worked well for you?](#what-kind-of-process-have-you-followed-in-the-past-and-what-has-worked-well-for-you)
+        - [Design+ Arch Reviews: Minimal rework, high quality assets](#design-arch-reviews-minimal-rework-high-quality-assets)
+        - [Team gelling](#team-gelling)
+        - [Engineering/Operational Excellence](#engineeringoperational-excellence)
+        - [Strategic group alignment](#strategic-group-alignment)
     - [What process hasn't worked?](#what-process-hasnt-worked)
     - [How do you institute the right process at the right time? How do you know when you need something more formal?](#how-do-you-institute-the-right-process-at-the-right-time-how-do-you-know-when-you-need-something-more-formal)
     - [Have they ever removed process? Why or why not?](#have-they-ever-removed-process-why-or-why-not)
@@ -243,7 +247,6 @@ I also have some special 1:1s:
 
 ### Best hire of your career
 ### How did you grow top talent
-### General process
 
 ### What do you do when a team completely disagrees with the founder/VP on the direction of a product?
 
@@ -429,35 +432,74 @@ Using the same metrics I apply to myself. For the how I'd:
 
 ## Process and Mechanism
 
-### Notes
+### Process Playbook
+* Turn input into outputs
 
-* Nothing more powerful then a motivated engineer, don’t let process take that away.
+* How to measure success of the process, what will you inspect, when will you adjust,
+* Who is the owner?
+* What other process is this similar to, can we co-alsce with something else?
+* How will you get buy in
+* How to get team to accept
+* (Bright spot, then land and expand)
+
+#### Process Anti-Patterns:
+* TODO: Invert this*
+* Disenfrancing ownership
+    * Nothing more powerful then a motivated engineer, don’t let process take that away.
+
+* Having humans do what computers can do
+    * Only have so much "process execution budget" don't waste it
+        * Use auto style for code review styles
+        * Gather data from bug systems instead of having humans do it.
+        * Automated tests vs human execution
+        * Multiple copies of the same data
+
 * Free up developers to not solve known issues - freedom for more stuff
-* Push as much down to tech as possible (style cop, auto testing, static typing)
-* Coalsce as much as possible.
-* Turn input  into outputs (with audit) need to iterate over
 * Someone **owns** a process for a quarter so they can own it and make it better.
 
 ### What kind of process have you followed in the past and what has worked well for you?
 
-* Standard Agile Process - High Owner
-* Get a
+Process per "output desired"
+
+#### Design+ Arch Reviews: Minimal rework, high quality assets
+
+* Ensure that tech assets are high quality and require minimal re-work.
+* Ensure team gets cross trained.
+* Catch stuff as early as possible
+* Get developers used to being on the whiteboard
+* Really a preview, not a review.
+
+#### Team gelling
+
+* Team meetings,
+    * Focus on reflection.
+    * Focus on what ever is the "mood" of the team.
+    * Reflect as people.
+    * Someone talks about themselves every time (5m)
+* Team lunches.
+    * Eat lunch together even if on laptop
+    * Share your stuff
+    * Have a room booked, and encourage it to happen.
+
+* Include PM and other functions in team meeting.
+* Keep calling out peoples strengths (team will copy)
+
+#### Engineering/Operational Excellence
+
+* I”m on all the pages
+* For all customer impacting event, review w/Customer Impact, root cause understood, and committment when to address.
+* Testing systems.
+* Deep dive to do a check-in
+* Do it all myself to see what's broken and understand where to invest.
+
+#### Strategic group alignment
+
 * Retrospectives
-* Team meetings
-* Operations Meetings
-    * I”m on all the pages
 * PM alignment critical
     * Daily interactions
     * Drag PM desk close to mine
 * Leadership weekly priority
     * Are we in sync with PM, and
-* Design Reviews
-    * Catch stuff as early as possible
-    * Talk on the whiteboard
-    * Team knowledge sessions
-* Team having lunch together and becoming friends
-    * Eat lunch together even if on laptop
-    * Share your stuff
 * Internal Project Status Meeting
     * Everyone knows what is going on, and can audit and help it track.
 
@@ -477,13 +519,13 @@ Using the same metrics I apply to myself. For the how I'd:
 * Volunteer, distributed ownership on a painful fix:
     * Missing metrics
     * Weblabs
-    * No,  generate a table and track monthly.
+    * No, generate a table and track monthly.
     * Letting tasks not be in our bug tracker - often drop.
     * “I’ll just do it” — no need to get it the past.
 
 ### How do you institute the right process at the right time? How do you know when you need something more formal?
 
-I’m usually error on the lack of process. E.g. the story with let people volunteer to fix and drive. And it doesn’t happen “Best Intentions Don’t Work”
+I’m usually error on the lack of process. E.g. Let people volunteer to fix and drive. And it doesn’t happen “Best Intentions Don’t Work”
 
 * I try to figure out how to keep it on high ownership, not on letting it drop on the floor.
 * When I expect it to work, and it isn’t.
