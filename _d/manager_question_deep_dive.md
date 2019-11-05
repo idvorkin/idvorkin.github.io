@@ -52,8 +52,8 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [What would a report/peer/manager feedback on you be? Strengths, areas for development, etc.](#what-would-a-reportpeermanager-feedback-on-you-be-strengths-areas-for-development-etc)
     - [How would you assess if someone is a good manager?](#how-would-you-assess-if-someone-is-a-good-manager)
 - [Process and Mechanism](#process-and-mechanism)
-    - [Process Playbook](#process-playbook)
-        - [Process Anti-Patterns:](#process-anti-patterns)
+    - [Process Patterns](#process-patterns)
+    - [Process Anti-Patterns:](#process-anti-patterns)
     - [What kind of process have you followed in the past and what has worked well for you?](#what-kind-of-process-have-you-followed-in-the-past-and-what-has-worked-well-for-you)
         - [Design+ Arch Reviews: Minimal rework, high quality assets](#design-arch-reviews-minimal-rework-high-quality-assets)
         - [Team gelling](#team-gelling)
@@ -432,17 +432,19 @@ Using the same metrics I apply to myself. For the how I'd:
 
 ## Process and Mechanism
 
-### Process Playbook
-* Turn input into outputs
+### Process Patterns
 
+* Turn input into outputs
 * How to measure success of the process, what will you inspect, when will you adjust,
 * Who is the owner?
 * What other process is this similar to, can we co-alsce with something else?
 * How will you get buy in
 * How to get team to accept
 * (Bright spot, then land and expand)
+* Sounds like good intentions
+* Culture vs Process
 
-#### Process Anti-Patterns:
+### Process Anti-Patterns:
 * TODO: Invert this*
 * Disenfrancing ownership
     * Nothing more powerful then a motivated engineer, don’t let process take that away.
