@@ -23,6 +23,7 @@ Coaching is not giving advice, it's helping others solve their own problems. Use
     - [Deflecting the desire for you to solve their problem: How would you handle this](#deflecting-the-desire-for-you-to-solve-their-problem-how-would-you-handle-this)
     - [Saying No: Say yes slowly](#saying-no-say-yes-slowly)
 - [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
+- [Other coaching tools](#other-coaching-tools)
 - [Fantastic video on coaching, improvement, and discomfort](#fantastic-video-on-coaching-improvement-and-discomfort)
 
 <!-- vim-markdown-toc -->
@@ -121,11 +122,14 @@ take this high order bit of focusing the feedback on "you" not on them. E.g. fee
 | You lack strategic thinking.| I’m struggling to understand your plan.|
 | You should do x [in response to a request for advice]. | What do you feel you’re struggling with, and what have you done in the past that’s worked in a similar situation? |
 
+### Other coaching tools
+
+*  Using a scale question for relative improvement not for calibration.
+    * E.g. on a scale of 1 to 10, how do you rank yourself on X. Great, why do you say that?, Great - what would you need to do to move up a point on the scale.
+<!--
+*  Situational leadership.  Manage differently based on how someone is doing.
+*  Imagary cards
+-->
 
 ### Fantastic video on coaching, improvement, and discomfort
 [![Coaching](/images/coaching-video.png)](https://youtu.be/oHDq1PcYkT4?t=431)
-
-
-
-
-
