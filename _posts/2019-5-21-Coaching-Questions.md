@@ -3,6 +3,9 @@ layout: post
 title: "Coaching Playbook and Theory"
 author: "Igor Dvorkin"
 comments: true
+redirect_from:
+  - /coach
+  - /coaching
 
 tags:
   - book-notes
@@ -16,7 +19,8 @@ Coaching is not giving advice, it's helping others solve their own problems. Use
 <!-- vim-markdown-toc GFM -->
 
 - [Coaching Mindset](#coaching-mindset)
-- [7 questions for on the spot coaching](#7-questions-for-on-the-spot-coaching)
+- [Special Coaching Situations](#special-coaching-situations)
+- [7 questions to start your coaching](#7-questions-to-start-your-coaching)
     - [How to coach for task completion vs insight](#how-to-coach-for-task-completion-vs-insight)
     - [How to coach to build strategic insight](#how-to-coach-to-build-strategic-insight)
     - [How to keep people safe while coaching using human safety models](#how-to-keep-people-safe-while-coaching-using-human-safety-models)
@@ -43,7 +47,15 @@ Coaching is a mindset and inner discipline. While coaching try to do the followi
 - Test your understanding (do not assume you understand)
 - Be compassionate and curious (do not judge the coachee or think they are wrong)
 
-### 7 questions for on the spot coaching
+### Special Coaching Situations
+
+Some coaching situations are common, so I have deep dived into them.
+
+- [Major Decision making](/decisive) - A deep dive on how to improve high impact decision making.
+- [Dealing with pride](/fuck-pride) - A deep dive on dealing with pride.
+- [Job hunting](job-hunt-stress) - A deep dive on job changes
+
+### 7 questions to start your coaching
 
 When folks come to you questions or are stuck, that's a great time to provide rapid in the moment coaching. The 7 questions are a great starting point to help coachee build the required insights for coaching:
 
@@ -159,10 +171,9 @@ In each of these stages different support is required.
 
 ### Other coaching tools
 
-- Using a scale question for relative improvement not for calibration. \* E.g. on a scale of 1 to 10, how do you rank yourself on X! Great, why do you say that?, Great - what would you need to do to move up a point on the scale?
-  <!--
-- Imagary cards
-  -->
+- Using a scale question for relative improvement not for calibration. E.g. on a scale of 1 to 10, how do you rank yourself on X! Great, why do you say that?, Great - what would you need to do to move up a point on the scale?
+
+- Imagery cards - Use cards with images on them to illicit from people what picture represents what concept, then have a discussion. E.g. which of these pictures represents leadership to you? OK, help me see how that shows a leader to you.
 
 ### Fantastic video on coaching, improvement, and discomfort
 
