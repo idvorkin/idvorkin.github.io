@@ -12,7 +12,7 @@ Job hunts are stressful, and my goal for job hunts is getting the job I want whi
 
 _This post targets currently employed developers who want to switch jobs_
 
-**Before we get started, you should listen to this decision making framework for [switching jobs or staying where you are](https://heathbrothers.com/member-content/decisive-for-job-decisions/decisive-for-job-decisions-2/). It takes 30 minutes, but given how hard job changes are, I strongly recommend it**.
+**Before we get started, skim [decisive](/decisive) and listen to [switching jobs or staying where you are](https://heathbrothers.com/member-content/decisive-for-job-decisions/decisive-for-job-decisions-2/). It takes 30 minutes, but given how hard job changes are, I strongly recommend it**.
 
 Below are my stressors and mitigations:
 

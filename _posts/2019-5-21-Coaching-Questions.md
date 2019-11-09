@@ -51,9 +51,9 @@ Coaching is a mindset and inner discipline. While coaching try to do the followi
 
 Some coaching situations are common, so I have deep dived into them.
 
-- [Major Decision making](/decisive) - A deep dive on how to improve high impact decision making.
-- [Dealing with pride](/fuck-pride) - A deep dive on dealing with pride.
-- [Job hunting](job-hunt-stress) - A deep dive on job changes
+- [Making Major Decisions](/decisive) - A deep dive on how to improve high impact decision making.
+- [Dealing with Pride](/fuck-pride) - A deep dive on dealing with pride.
+- [Job Hunting](job-hunt-stress) - A deep dive on job changes
 
 ### 7 questions to start your coaching
 
