@@ -13,7 +13,7 @@ tags:
   - manager
 ---
 
-Coaching is not giving advice, it's helping others solve their own problems. Use the following questions and approaches to help folks find their own solutions and insights.
+Coaching is not giving advice, it's helping others solve their own problems. Use the following approaches and questions to help folks find their own solutions and insights.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -28,6 +28,7 @@ Coaching is not giving advice, it's helping others solve their own problems. Use
     - [Deflecting the desire for you to solve their problem: How would you handle this](#deflecting-the-desire-for-you-to-solve-their-problem-how-would-you-handle-this)
     - [Saying No: Say yes slowly](#saying-no-say-yes-slowly)
 - [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
+- [Socratic questions](#socratic-questions)
 - [Situational coaching](#situational-coaching)
 - [Other coaching tools](#other-coaching-tools)
 - [Fantastic video on coaching, improvement, and discomfort](#fantastic-video-on-coaching-improvement-and-discomfort)
@@ -153,6 +154,31 @@ take this high order bit of focusing the feedback on "you" not on them. E.g. fee
 | You lack strategic thinking.                           | I’m struggling to understand your plan.                                                                           |
 | You should do x [in response to a request for advice]. | What do you feel you’re struggling with, and what have you done in the past that’s worked in a similar situation? |
 
+### Socratic questions
+
+Socrates' Mom was a midwife and he used to say: A coach is like a midwife, they can not deliver the baby, only facilitate its birth.  Real understanding comes from within, and can not be imparted by someone else. So, as a coach, ask questions, guide and faciliate, but don't try to answer, because at best it will be forgotten, at worst it will offend and shutdown the coachee damaging the relationship. Some powerful questions:
+
+To clarify thinking:
+
+- Help me understand that?
+- Tell me more?
+- Unpack that for me?
+- How did you come to that realization?
+- I'm having a hard time understanding, can you give some examples?
+
+To challenge assumptions:
+
+- Is that alaways the case?
+- What would it look like if that was false?
+
+Seeking evidence:
+
+- What makes you say that?
+
+Seeing alternatives
+
+- What is the counter argument?
+
 ### Situational coaching
 
 As people learn new skills they experience a learning curve, which requires different support at different points on the curve. [Situational leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory) describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.
@@ -166,8 +192,8 @@ In each of these stages different support is required.
 
 | Competent/Confident | Confident                                                   | Scared                                                                                  |
 | ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Incompetent         | 1. Directive - Prescriptive; lots of monitoring             | 2. Coaching - Half prescriptive, Explain reasoning, lots of checkin to answer questions |
-| Competent           | 4. Delegate - Give them the success criteria let them drive | 3. Support - Descriptive, help them tune, occasional check in                           |
+| Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it|
+| Competent           | 4. Empower - Explain Why Not | 3. Facilitate - Explain Why. |
 
 ### Other coaching tools
 
