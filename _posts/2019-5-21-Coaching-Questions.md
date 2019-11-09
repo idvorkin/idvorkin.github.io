@@ -197,6 +197,8 @@ In each of these stages different support is required.
 
 ### Other coaching tools
 
+Other coaching ideas to develop.
+
 - Using a scale question for relative improvement not for calibration. E.g. on a scale of 1 to 10, how do you rank yourself on X! Great, why do you say that?, Great - what would you need to do to move up a point on the scale?
 
 - Imagery cards - Use cards with images on them to illicit from people what picture represents what concept, then have a discussion. E.g. which of these pictures represents leadership to you? OK, help me see how that shows a leader to you.
