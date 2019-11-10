@@ -13,7 +13,7 @@ tags:
   - manager
 ---
 
-Coaching is like midwifery. A midwife can not give birth to the baby, she facilitate the birth. Similarly, a coach can not give a solution, they must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding.
+Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
