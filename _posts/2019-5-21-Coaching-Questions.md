@@ -13,20 +13,20 @@ tags:
   - manager
 ---
 
-Coaching is not giving advice, it's helping others solve their own problems. Use the following approaches and questions to help folks find their own solutions and insights.
+Coaching is like midwifery. A midwife can not give birth to the baby, she facilitate the birth. Similarly, a coach can not give a solution, they must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Coaching Mindset](#coaching-mindset)
-- [Special Coaching Situations](#special-coaching-situations)
-- [The big 7 questions](#the-big-7-questions)
+- [The coaching mindset](#the-coaching-mindset)
+- [Frequent coaching situations](#frequent-coaching-situations)
+- [The 7 goto coaching questions](#the-7-goto-coaching-questions)
 - [Questions for specific situations](#questions-for-specific-situations)
-    - [To clarify thinking:](#to-clarify-thinking)
-    - [To challenge assumptions:](#to-challenge-assumptions)
-    - [To gatther more evidence:](#to-gatther-more-evidence)
-    - [To find more alternatives:](#to-find-more-alternatives)
-    - [To build strategic insight:](#to-build-strategic-insight)
+    - [To clarify thinking](#to-clarify-thinking)
+    - [To challenge assumptions](#to-challenge-assumptions)
+    - [To gather more evidence](#to-gather-more-evidence)
+    - [To find more alternatives](#to-find-more-alternatives)
+    - [To build strategic insight](#to-build-strategic-insight)
 - [The hows of coaching](#the-hows-of-coaching)
     - [Coach for task completion vs insight](#coach-for-task-completion-vs-insight)
     - [Keep people safe while coaching using human safety models](#keep-people-safe-while-coaching-using-human-safety-models)
@@ -41,13 +41,11 @@ Coaching is not giving advice, it's helping others solve their own problems. Use
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-### Coaching Mindset
+### The coaching mindset
 
-Real understanding comes from within, and can not be imparted by someone else. Ask questions, guide, and faciliate. When you 'tell the solution' at best the solution will be forgotten, at worst it will offend and shutdown the coachee damaging the relationship.
+Real understanding comes from within, and can not be imparted by someone else. Ask questions, guide, and facilitate. When you 'tell the solution' at best the solution will be forgotten, at worst it will offend and shutdown the coachee damaging the relationship.
 
-Socrates' used to say: A coach is like a midwife, she can not deliver the baby, only facilitate its birth.
-
-Some helpful advice:
+When being a coach maintain the following mindset.
 
 - Ask permission to be a coach. (Avoid forcing them)
 - Check-in with yourself to maintain the coaching mindset (Avoid forgetting your role)
@@ -56,7 +54,7 @@ Some helpful advice:
 - Test your understanding (Avoid assuming you understand)
 - Be accepting, compassionate, and curious (Avoid judging and evaluating)
 
-### Special Coaching Situations
+### Frequent coaching situations
 
 Some coaching situations are common, so I have deep dived into them.
 
@@ -64,9 +62,9 @@ Some coaching situations are common, so I have deep dived into them.
 - [Dealing with Pride](/fuck-pride) - A deep dive on dealing with pride.
 - [Job Hunting](job-hunt-stress) - A deep dive on job changes
 
-### The big 7 questions
+### The 7 goto coaching questions
 
-When folks come to you questions or are stuck, that's a great time to provide rapid in the moment coaching. The 7 questions are a great starting point to help coachee build the required insights for coaching:
+When folks come to you questions or are stuck, that's a great time to provide rapid in the moment coaching. These 7 questions are a great starting point to help coachee build the required insights for solving their own problem:
 
 - Open: What's on your mind?
 - Expand: What Else?
@@ -84,7 +82,7 @@ When folks come to you questions or are stuck, that's a great time to provide ra
 
 Depending on what insights you want to provide, you need to use different questions. Below are some questions, the book [Decisive](/decisive) has many more.
 
-#### To clarify thinking:
+#### To clarify thinking
 
 - Help me understand that?
 - Tell me more?
@@ -92,16 +90,16 @@ Depending on what insights you want to provide, you need to use different questi
 - How did you come to that realization?
 - I'm having a hard time understanding, can you give some examples?
 
-#### To challenge assumptions:
+#### To challenge assumptions
 
 - Is that always the case?
 - What would it look like if that was false?
 
-#### To gatther more evidence:
+#### To gather more evidence
 
 - What makes you say that?
 
-#### To find more alternatives:
+#### To find more alternatives
 
 - What is the counter argument?
 - What other options have you considered?
@@ -111,7 +109,7 @@ Depending on what insights you want to provide, you need to use different questi
 - How would you decide if you had double the resources?
 - How would you decide if you had half the resources?
 
-#### To build strategic insight:
+#### To build strategic insight
 
 - What does success mean?
 - What is our scope (who/where)
