@@ -20,15 +20,20 @@ Coaching is not giving advice, it's helping others solve their own problems. Use
 
 - [Coaching Mindset](#coaching-mindset)
 - [Special Coaching Situations](#special-coaching-situations)
-- [7 questions to start your coaching](#7-questions-to-start-your-coaching)
-    - [How to coach for task completion vs insight](#how-to-coach-for-task-completion-vs-insight)
-    - [How to coach to build strategic insight](#how-to-coach-to-build-strategic-insight)
-    - [How to keep people safe while coaching using human safety models](#how-to-keep-people-safe-while-coaching-using-human-safety-models)
+- [The big 7 questions](#the-big-7-questions)
+- [Questions for specific situations](#questions-for-specific-situations)
+    - [To clarify thinking:](#to-clarify-thinking)
+    - [To challenge assumptions:](#to-challenge-assumptions)
+    - [To gatther more evidence:](#to-gatther-more-evidence)
+    - [To find more alternatives:](#to-find-more-alternatives)
+    - [To build strategic insight:](#to-build-strategic-insight)
+- [The hows of coaching](#the-hows-of-coaching)
+    - [Coach for task completion vs insight](#coach-for-task-completion-vs-insight)
+    - [Keep people safe while coaching using human safety models](#keep-people-safe-while-coaching-using-human-safety-models)
     - [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
-    - [Deflecting the desire for you to solve their problem: How would you handle this](#deflecting-the-desire-for-you-to-solve-their-problem-how-would-you-handle-this)
-    - [Saying No: Say yes slowly](#saying-no-say-yes-slowly)
-- [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
-- [Socratic questions](#socratic-questions)
+    - [Deflect the desire for you to solve their problem: How would you handle this](#deflect-the-desire-for-you-to-solve-their-problem-how-would-you-handle-this)
+    - [Say No: Say yes slowly](#say-no-say-yes-slowly)
+    - [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
 - [Situational coaching](#situational-coaching)
 - [Other coaching tools](#other-coaching-tools)
 - [Fantastic video on coaching, improvement, and discomfort](#fantastic-video-on-coaching-improvement-and-discomfort)
@@ -38,15 +43,18 @@ Coaching is not giving advice, it's helping others solve their own problems. Use
 
 ### Coaching Mindset
 
-Coaching is a mindset and inner discipline. While coaching try to do the following
+Real understanding comes from within, and can not be imparted by someone else. Ask questions, guide, and faciliate. When you 'tell the solution' at best the solution will be forgotten, at worst it will offend and shutdown the coachee damaging the relationship.
 
-- Ask permission to be a coach.
-- Check-in with your inner self to make sure you're maintaining the coaching mindset
-- Let your coachee speak their piece. (Avoid cutting them off)
+Socrates' used to say: A coach is like a midwife, she can not deliver the baby, only facilitate its birth.
+
+Some helpful advice:
+
+- Ask permission to be a coach. (Avoid forcing them)
+- Check-in with yourself to maintain the coaching mindset (Avoid forgetting your role)
+- Let your coachee do most of the talking. (Avoid cutting them off)
 - Keep questions open ended. (Avoid Yes/No questions)
-- Be accepting (do not judge)
-- Test your understanding (do not assume you understand)
-- Be compassionate and curious (do not judge the coachee or think they are wrong)
+- Test your understanding (Avoid assuming you understand)
+- Be accepting, compassionate, and curious (Avoid judging and evaluating)
 
 ### Special Coaching Situations
 
@@ -56,7 +64,7 @@ Some coaching situations are common, so I have deep dived into them.
 - [Dealing with Pride](/fuck-pride) - A deep dive on dealing with pride.
 - [Job Hunting](job-hunt-stress) - A deep dive on job changes
 
-### 7 questions to start your coaching
+### The big 7 questions
 
 When folks come to you questions or are stuck, that's a great time to provide rapid in the moment coaching. The 7 questions are a great starting point to help coachee build the required insights for coaching:
 
@@ -72,15 +80,38 @@ When folks come to you questions or are stuck, that's a great time to provide ra
   - Commission - what you must deliberately give up to make it happen (relationships/projects/)
 - Close the loop: What was most useful for you in this conversation?
 
-#### How to coach for task completion vs insight
+### Questions for specific situations
 
-Coaching applies to different time frames, keep them separate:
+Depending on what insights you want to provide, you need to use different questions. Below are some questions, the book [Decisive](/decisive) has many more.
 
-- P: Project - Immediate task
-- P: People - Relationship
-- PC: Pattern - Help person get better.
+#### To clarify thinking:
 
-#### How to coach to build strategic insight
+- Help me understand that?
+- Tell me more?
+- Unpack that for me?
+- How did you come to that realization?
+- I'm having a hard time understanding, can you give some examples?
+
+#### To challenge assumptions:
+
+- Is that always the case?
+- What would it look like if that was false?
+
+#### To gatther more evidence:
+
+- What makes you say that?
+
+#### To find more alternatives:
+
+- What is the counter argument?
+- What other options have you considered?
+- What would happen i this option dissapeared?
+- What is the next best use of resources?
+- How can you do A and B?
+- How would you decide if you had double the resources?
+- How would you decide if you had half the resources?
+
+#### To build strategic insight:
 
 - What does success mean?
 - What is our scope (who/where)
@@ -88,7 +119,17 @@ Coaching applies to different time frames, keep them separate:
 - What capabilities/assets will need to achieve this?
 - How do we measure success and provide feedback?
 
-#### How to keep people safe while coaching using human safety models
+### The hows of coaching
+
+#### Coach for task completion vs insight
+
+Coaching applies to different time frames, keep them separate:
+
+- P: Project - Immediate task and new skill
+- P: People - Relationship
+- PC: Pattern - Help person get better.
+
+#### Keep people safe while coaching using human safety models
 
 TERA -
 
@@ -120,14 +161,11 @@ _More details in [Search inside yourself - Leadership and social skills](/search
 - That is a hard problem
 - Not alone, lots of people struggle with this.
 
-SCARF Model:
-_Fairness_ People will injure themselves to ensure fairness.
-
-#### Deflecting the desire for you to solve their problem: How would you handle this
+#### Deflect the desire for you to solve their problem: How would you handle this
 
 Great question, I have some ideas, but first, how would you tackle this? What else?
 
-#### Saying No: Say yes slowly
+#### Say No: Say yes slowly
 
 - Why are you asking me?
 - Whom else have you asked?
@@ -137,7 +175,7 @@ Great question, I have some ideas, but first, how would you tackle this? What el
 - What do you recommend I take off my plate to get this done?want done?
 - _If you still have to say no_ Make sure you're saying no to task, no to person.
 
-### Focus feedback on "you", not them.
+#### Focus feedback on "you", not them.
 
 From the superb HBR article: [The feedback fallacy](https://hbr.org/2019/03/the-feedback-fallacy). If you don't read the article (which I'll also summarize)
 take this high order bit of focusing the feedback on "you" not on them. E.g. feedback should be "I expereinced X", instead of you screwed up X.
@@ -154,31 +192,6 @@ take this high order bit of focusing the feedback on "you" not on them. E.g. fee
 | You lack strategic thinking.                           | I’m struggling to understand your plan.                                                                           |
 | You should do x [in response to a request for advice]. | What do you feel you’re struggling with, and what have you done in the past that’s worked in a similar situation? |
 
-### Socratic questions
-
-Socrates' Mom was a midwife and he used to say: A coach is like a midwife, they can not deliver the baby, only facilitate its birth.  Real understanding comes from within, and can not be imparted by someone else. So, as a coach, ask questions, guide and faciliate, but don't try to answer, because at best it will be forgotten, at worst it will offend and shutdown the coachee damaging the relationship. Some powerful questions:
-
-To clarify thinking:
-
-- Help me understand that?
-- Tell me more?
-- Unpack that for me?
-- How did you come to that realization?
-- I'm having a hard time understanding, can you give some examples?
-
-To challenge assumptions:
-
-- Is that alaways the case?
-- What would it look like if that was false?
-
-Seeking evidence:
-
-- What makes you say that?
-
-Seeing alternatives
-
-- What is the counter argument?
-
 ### Situational coaching
 
 As people learn new skills they experience a learning curve, which requires different support at different points on the curve. [Situational leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory) describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.
@@ -190,10 +203,10 @@ As people learn new skills they experience a learning curve, which requires diff
 
 In each of these stages different support is required.
 
-| Competent/Confident | Confident                                                   | Scared                                                                                  |
-| ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it|
-| Competent           | 4. Empower - Explain Why Not | 3. Facilitate - Explain Why. |
+| Competent/Confident | Confident                                      | Scared                                          |
+| ------------------- | ---------------------------------------------- | ----------------------------------------------- |
+| Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
+| Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
 
 ### Other coaching tools
 
