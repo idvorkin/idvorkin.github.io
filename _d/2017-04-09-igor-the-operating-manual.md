@@ -46,6 +46,10 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Father](#father)
 - [Triggers and Mental Quick Sand](#triggers-and-mental-quick-sand)
     - [Stress and Anxiety](#stress-and-anxiety)
+    - [Raising kids](#raising-kids)
+        - [Physical activity](#physical-activity)
+        - [Not spending enough time with them](#not-spending-enough-time-with-them)
+        - [Diet and Weight](#diet-and-weight)
     - [Financial Security and Retirement](#financial-security-and-retirement)
         - [The point of money](#the-point-of-money)
         - [What would I do for less money](#what-would-i-do-for-less-money)
@@ -152,6 +156,14 @@ Being human, I spend a bunch of time stressed and anxious. Here are some of my f
 - Anxiety is practicing failure in advance.
 - Worry is not preperation, nor does it make you better.
 - Anxiety is "keeping a problem in the foreground". This sucks up your CPU, and means you can't spin down your CPU. The write answer is commit to disk all open decisions, and then kick it out of the foreground till ready (this is the GTD solution).
+
+### Raising kids
+
+#### Physical activity
+
+#### Not spending enough time with them
+
+#### Diet and Weight
 
 ### Financial Security and Retirement
 
