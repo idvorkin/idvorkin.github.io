@@ -6,6 +6,7 @@ comments: true
 redirect_from:
   - /Coaching-Questions
   - /coaching
+  - /coach
 
 tags:
   - book-notes
