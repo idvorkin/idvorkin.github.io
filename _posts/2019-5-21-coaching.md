@@ -4,7 +4,7 @@ title: "Coaching Playbook and Theory"
 author: "Igor Dvorkin"
 comments: true
 redirect_from:
-  - /coach
+  - /Coaching-Questions
   - /coaching
 
 tags:
