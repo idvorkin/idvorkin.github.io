@@ -21,6 +21,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
         - [Charter/Execution boot strap](#charterexecution-boot-strap)
     - [Why is management attractive to you?](#why-is-management-attractive-to-you)
     - [What in your mind are the responsibilities of a manager?](#what-in-your-mind-are-the-responsibilities-of-a-manager)
+    - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
     - [What specific types of duties would you like to do help with at this company?](#what-specific-types-of-duties-would-you-like-to-do-help-with-at-this-company)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
@@ -34,6 +35,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
 - [Business Acumen](#business-acumen)
     - [Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?](#discuss-this-companies-trajectory-as-you-see-it-what-choices-do-they-think-theyre-good-and-bad-at-would-you-have-done-things-differently-what-problems-do-you-see-coming-up-in-the-future)
 - [Self Assessment and Weakness](#self-assessment-and-weakness)
+    - [What was the biggest 'mental model' shift you had from IC to manager?](#what-was-the-biggest-mental-model-shift-you-had-from-ic-to-manager)
     - [Top Weakness](#top-weakness)
     - [Get in a fight with your boss](#get-in-a-fight-with-your-boss)
         - [Co boss](#co-boss)
@@ -158,6 +160,8 @@ In the real world:
 
 ### What in your mind are the responsibilities of a manager?
 
+### What do you do in the first 90 days?
+
 ### What specific types of duties would you like to do help with at this company?
 
 ## Managing and Developing People
@@ -278,6 +282,8 @@ I also have some special 1:1s:
 **Linked In**
 
 ## Self Assessment and Weakness
+
+### What was the biggest 'mental model' shift you had from IC to manager?
 
 ### Top Weakness
 
