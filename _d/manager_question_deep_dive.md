@@ -162,6 +162,36 @@ In the real world:
 
 ### What do you do in the first 90 days?
 
+*First 90 days is the book*
+
+Outputs:
+
+- Early Win: Figure out the situation, and deliver a win.
+- Trust: Relationships with team, and peers, and partners.
+- Knowledge: Know critical parts of business, tech, org.
+
+**Learn**
+
+Learning as an investment process. Planning to learn. Figuring out the best sources of insight. Using structured methods to accelerate learning.
+
+
+**Build Trust and Relationship**
+
+ Build Your Team Inheriting a team and changing it. Managing the tension between short-term and long-term goals. Working team restructuring and organizational architecture issues in parallel. Putting in place new team processes.
+
+ Create Alliances The trap of thinking that authority is enough. Identifying whose support is critical. Mapping networks of influence and patterns of deference. Altering perceptions of interests and alternatives.
+
+**Diagnose, agree, and find 90 day win**
+
+Match Strategy to Situation The dangers of “one-best-way” thinking. Diagnosing the situation to develop the right strategy. The STARS model of types of transitions. Using the model to analyze portfolios, and lead change.
+
+Negotiate Success Building a productive working relationship with a new boss. The five-conversations framework. Defining expectations. Agreeing on a diagnosis of the situation. Figuring out how to work together. Negotiating for resources. Putting together your 90-day plan.
+
+Achieve Alignment The role of the leader as organizational architect. Identifying the root causes of poor performance. Aligning strategy, structure, systems, skills, and culture.
+
+Secure Early Wins Avoiding common traps. Figuring out A-item priorities. Creating a compelling vision. Building personal credibility. Getting started on improving organizational performance. Plan-then-implement change versus collective learning.
+
+
 ### What specific types of duties would you like to do help with at this company?
 
 ## Managing and Developing People
@@ -284,6 +314,10 @@ I also have some special 1:1s:
 ## Self Assessment and Weakness
 
 ### What was the biggest 'mental model' shift you had from IC to manager?
+
+* Auditing
+* Value of process and checklists
+* Team being the peer leads.
 
 ### Top Weakness
 
