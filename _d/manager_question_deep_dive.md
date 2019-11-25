@@ -123,6 +123,7 @@ Top metrics:
 ### How do you build a team?
 
 #### People boot strap.
+
 In the ideal world:
 
 - Start with a high level view of the business
@@ -162,7 +163,7 @@ In the real world:
 
 ### What do you do in the first 90 days?
 
-*First 90 days is the book*
+_First 90 days is the book_
 
 Outputs:
 
@@ -174,12 +175,11 @@ Outputs:
 
 Learning as an investment process. Planning to learn. Figuring out the best sources of insight. Using structured methods to accelerate learning.
 
-
 **Build Trust and Relationship**
 
- Build Your Team Inheriting a team and changing it. Managing the tension between short-term and long-term goals. Working team restructuring and organizational architecture issues in parallel. Putting in place new team processes.
+Build Your Team Inheriting a team and changing it. Managing the tension between short-term and long-term goals. Working team restructuring and organizational architecture issues in parallel. Putting in place new team processes.
 
- Create Alliances The trap of thinking that authority is enough. Identifying whose support is critical. Mapping networks of influence and patterns of deference. Altering perceptions of interests and alternatives.
+Create Alliances The trap of thinking that authority is enough. Identifying whose support is critical. Mapping networks of influence and patterns of deference. Altering perceptions of interests and alternatives.
 
 **Diagnose, agree, and find 90 day win**
 
@@ -191,8 +191,9 @@ Achieve Alignment The role of the leader as organizational architect. Identifyin
 
 Secure Early Wins Avoiding common traps. Figuring out A-item priorities. Creating a compelling vision. Building personal credibility. Getting started on improving organizational performance. Plan-then-implement change versus collective learning.
 
+### Horizontal vs Vertical: What specific types of duties would you like to do help with at this company?
 
-### What specific types of duties would you like to do help with at this company?
+Beyond "My team", there are several initiatives I like to drive, 1) recruiting 2) interns 3) inclusion and diversity. Tech: Iterative, Metrics Driven, Full CD.
 
 ## Managing and Developing People
 
@@ -223,7 +224,22 @@ Secure Early Wins Avoiding common traps. Figuring out A-item priorities. Creatin
   - Playing cards for appreciation
   - Managers making breakfast
 
+### Challenging feedback?
+
+Why is feedback challenging? 1) It's a surprise 2) They don't want to hear it 3) They don't think you have their best interests in mind.
+
+Types of tough conversations:
+
+Performance, Charter, Re-org (me leaving), Lay Offs.
+
+1. Surprise - see around corners, and bring up anything I see ASAP, and foreshadow. Meet frequently, know what people care about.
+2. Attack the messenger - High Trust, Know how the person likes to hear stuff. Address what they care about.
+3. Don't want to hear it - Self Aware, Think I have their best interest in mind, Put it in terms they want to hear it.
+4. Over dramatize - Anticipate what they'll care about, pre-address.
+
 ### What is the point of a 1:1?
+
+Computers produce nothing, developers produce code. Business produce nothign PMs, other functions produce stuff.
 
 I produce nothing, my output is the output of the team, and the team is the sum of the people. My ability to get the most value from my people is through my relationship with the people. If they trust me whole heartily, they'll tell me stuff I need to know, and I'll be able to understand how best to use them/influence them/inspire them. So, all my 1:1's start with What's on your mind - what ever they have we talk through. based on time and place we'll do X, Y.
 
@@ -315,9 +331,9 @@ I also have some special 1:1s:
 
 ### What was the biggest 'mental model' shift you had from IC to manager?
 
-* Auditing
-* Value of process and checklists
-* Team being the peer leads.
+- Auditing
+- Value of process and checklists
+- Team being the peer leads.
 
 ### Top Weakness
 
@@ -504,7 +520,7 @@ Using the same metrics I apply to myself. For the how I'd:
 
 ### Process Anti-Patterns:
 
-- TODO: Invert this\*
+- TODO: Invert this
 - Disenfrancing ownership
 
   - Nothing more powerful then a motivated engineer, don’t let process take that away.
@@ -550,9 +566,17 @@ Process per "output desired"
 
 #### Engineering/Operational Excellence
 
-- I”m on all the pages
-- For all customer impacting event, review w/Customer Impact, root cause understood, and committment when to address.
+ 1) How do we know our customer is having a good day? 2) How do we maximize our velocity 3) How do we keep our developers happy.
+
+- Know what's going on:
+- On all the pages - Strong apprecitation for boots on the ground reality.
+- Write up for all outages, COE for major outages - Maximize value of mistakes, don't make them twice.
+    - For all customer impacting event, review w/Customer Impact, root cause understood, and committment when to address.
+- Observability
+    - How do we get a page next time.
+    - How do we see what's going on.
 - Testing systems.
+    - Very high leverage active
 - Deep dive to do a check-in
 - Do it all myself to see what's broken and understand where to invest.
 
@@ -692,10 +716,17 @@ Most important part of sales:
 ### What are their thoughts on structured interview loops vs. non-structured free-form loops?
 
 - External Structured
+
   - Coding
   - Design
   - Leadership skills - most important
   - Self aware - earns trust.
+
+- Internal, Structured but Different
+
+- Novel ideas
+  - Do code reviews
+  - Do a mock interview + debrief
 
 ## Firing and Performance Management
 
