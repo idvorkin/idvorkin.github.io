@@ -66,6 +66,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [What process hasn't worked?](#what-process-hasnt-worked)
     - [How do you institute the right process at the right time? How do you know when you need something more formal?](#how-do-you-institute-the-right-process-at-the-right-time-how-do-you-know-when-you-need-something-more-formal)
     - [Have they ever removed process? Why or why not?](#have-they-ever-removed-process-why-or-why-not)
+    - [Observability + Metrics](#observability--metrics)
 - [Hiring](#hiring)
     - [What are you looking for in an engineer when you recruit?](#what-are-you-looking-for-in-an-engineer-when-you-recruit)
     - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
@@ -123,6 +124,7 @@ Top metrics:
 ### How do you build a team?
 
 #### People boot strap.
+
 In the ideal world:
 
 - Start with a high level view of the business
@@ -162,7 +164,7 @@ In the real world:
 
 ### What do you do in the first 90 days?
 
-*First 90 days is the book*
+_First 90 days is the book_
 
 Outputs:
 
@@ -174,12 +176,11 @@ Outputs:
 
 Learning as an investment process. Planning to learn. Figuring out the best sources of insight. Using structured methods to accelerate learning.
 
-
 **Build Trust and Relationship**
 
- Build Your Team Inheriting a team and changing it. Managing the tension between short-term and long-term goals. Working team restructuring and organizational architecture issues in parallel. Putting in place new team processes.
+Build Your Team Inheriting a team and changing it. Managing the tension between short-term and long-term goals. Working team restructuring and organizational architecture issues in parallel. Putting in place new team processes.
 
- Create Alliances The trap of thinking that authority is enough. Identifying whose support is critical. Mapping networks of influence and patterns of deference. Altering perceptions of interests and alternatives.
+Create Alliances The trap of thinking that authority is enough. Identifying whose support is critical. Mapping networks of influence and patterns of deference. Altering perceptions of interests and alternatives.
 
 **Diagnose, agree, and find 90 day win**
 
@@ -190,7 +191,6 @@ Negotiate Success Building a productive working relationship with a new boss. Th
 Achieve Alignment The role of the leader as organizational architect. Identifying the root causes of poor performance. Aligning strategy, structure, systems, skills, and culture.
 
 Secure Early Wins Avoiding common traps. Figuring out A-item priorities. Creating a compelling vision. Building personal credibility. Getting started on improving organizational performance. Plan-then-implement change versus collective learning.
-
 
 ### What specific types of duties would you like to do help with at this company?
 
@@ -315,9 +315,9 @@ I also have some special 1:1s:
 
 ### What was the biggest 'mental model' shift you had from IC to manager?
 
-* Auditing
-* Value of process and checklists
-* Team being the peer leads.
+- Auditing
+- Value of process and checklists
+- Team being the peer leads.
 
 ### Top Weakness
 
@@ -600,6 +600,26 @@ I’m usually error on the lack of process. E.g. Let people volunteer to fix and
 - Yes, group retros - team hated it, it was too big, and it didn’t make sense to teams were too different.
 - IC’s coming to a group status meeting. Reduced to just seniors of the teams, and focused on them.
 - Switch from “group status report” to rotating meetings, but that made it worse as they never showed up.
+
+### Observability + Metrics
+
+Quant and Qual:
+
+Qual:
+
+- Qual to put texture and quant and sanity test not broken.
+- Verbatims
+- Talk to Folks
+- Try it yourself
+- Watch new users use the product.
+- UserTesting.com
+
+Quant:
+
+- Operational metrics
+- Business metrics
+- Raw Debug Logs
+- Alarms
 
 ## Hiring
 
