@@ -200,17 +200,23 @@ Recruiting
 
 - Hiring Event
 - Weekly posts
-  Moments
+
+Moments
+
 - Team Breakfasts
 - Celebrations
-  Interns
+
+Interns
+
 - Team allocation
 - Events
 - Ship Gifts
 - Help w/weak manager w/perf management.
 - Checkin
 - Major Talk
-  Culture
+
+Culture
+
 - Inclusion
 - Alays improving.
 
