@@ -22,7 +22,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [Why is management attractive to you?](#why-is-management-attractive-to-you)
     - [What in your mind are the responsibilities of a manager?](#what-in-your-mind-are-the-responsibilities-of-a-manager)
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
-    - [What specific types of duties would you like to do help with at this company?](#what-specific-types-of-duties-would-you-like-to-do-help-with-at-this-company)
+    - [What will you do outside of your job.](#what-will-you-do-outside-of-your-job)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [What is the point of a 1:1?](#what-is-the-point-of-a-11)
@@ -32,6 +32,8 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [Best hire of your career](#best-hire-of-your-career)
     - [How did you grow top talent](#how-did-you-grow-top-talent)
     - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
+    - [What is your ideal culture?](#what-is-your-ideal-culture)
+    - [How do you make a good culture?](#how-do-you-make-a-good-culture)
 - [Business Acumen](#business-acumen)
     - [Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?](#discuss-this-companies-trajectory-as-you-see-it-what-choices-do-they-think-theyre-good-and-bad-at-would-you-have-done-things-differently-what-problems-do-you-see-coming-up-in-the-future)
 - [Self Assessment and Weakness](#self-assessment-and-weakness)
@@ -66,7 +68,6 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [What process hasn't worked?](#what-process-hasnt-worked)
     - [How do you institute the right process at the right time? How do you know when you need something more formal?](#how-do-you-institute-the-right-process-at-the-right-time-how-do-you-know-when-you-need-something-more-formal)
     - [Have they ever removed process? Why or why not?](#have-they-ever-removed-process-why-or-why-not)
-    - [Observability + Metrics](#observability--metrics)
 - [Hiring](#hiring)
     - [What are you looking for in an engineer when you recruit?](#what-are-you-looking-for-in-an-engineer-when-you-recruit)
     - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
@@ -82,6 +83,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [Should industry have architects](#should-industry-have-architects)
     - [How do you bootstrap technical leadership in an organization that has no public titles?](#how-do-you-bootstrap-technical-leadership-in-an-organization-that-has-no-public-titles)
     - [What are the pros/cons of public vs. private titles?](#what-are-the-proscons-of-public-vs-private-titles)
+    - [Observability + Metrics](#observability--metrics)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -192,7 +194,25 @@ Achieve Alignment The role of the leader as organizational architect. Identifyin
 
 Secure Early Wins Avoiding common traps. Figuring out A-item priorities. Creating a compelling vision. Building personal credibility. Getting started on improving organizational performance. Plan-then-implement change versus collective learning.
 
-### What specific types of duties would you like to do help with at this company?
+### What will you do outside of your job.
+
+Recruiting
+
+- Hiring Event
+- Weekly posts
+  Moments
+- Team Breakfasts
+- Celebrations
+  Interns
+- Team allocation
+- Events
+- Ship Gifts
+- Help w/weak manager w/perf management.
+- Checkin
+- Major Talk
+  Culture
+- Inclusion
+- Alays improving.
 
 ## Managing and Developing People
 
@@ -294,6 +314,23 @@ I also have some special 1:1s:
 ### How did you grow top talent
 
 ### What do you do when a team completely disagrees with the founder/VP on the direction of a product?
+
+### What is your ideal culture?
+
+### How do you make a good culture?
+
+- Model myself
+  - On All the Pages
+  - If tema is workign Im working
+  - When I make mistakes I apologise
+  - If I drop the ball I make it clear.
+  - When someone does well I celebrate and call out.
+- Catch people doings things right
+  - Coaching stuff
+- Put it front and center
+- Let team take ownership of it.
+- Incite pride and purpose
+- Repeat/Repeat/Repeat
 
 ## Business Acumen
 
@@ -601,26 +638,6 @@ I’m usually error on the lack of process. E.g. Let people volunteer to fix and
 - IC’s coming to a group status meeting. Reduced to just seniors of the teams, and focused on them.
 - Switch from “group status report” to rotating meetings, but that made it worse as they never showed up.
 
-### Observability + Metrics
-
-Quant and Qual:
-
-Qual:
-
-- Qual to put texture and quant and sanity test not broken.
-- Verbatims
-- Talk to Folks
-- Try it yourself
-- Watch new users use the product.
-- UserTesting.com
-
-Quant:
-
-- Operational metrics
-- Business metrics
-- Raw Debug Logs
-- Alarms
-
 ## Hiring
 
 ### What are you looking for in an engineer when you recruit?
@@ -798,3 +815,23 @@ _ Signal of organization influence (although you can kind of figure it out) \* S
   - Jockying for Promo when doesn’t matter.
   - Frustration in thinking problem is title not blah.
   - Being right, but ignored
+
+### Observability + Metrics
+
+Quant and Qual:
+
+Qual:
+
+- Qual to put texture and quant and sanity test not broken.
+- Verbatims
+- Talk to Folks
+- Try it yourself
+- Watch new users use the product.
+- UserTesting.com
+
+Quant:
+
+- Operational metrics
+- Business metrics
+- Raw Debug Logs
+- Alarms
