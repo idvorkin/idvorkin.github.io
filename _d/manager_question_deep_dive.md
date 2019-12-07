@@ -22,9 +22,10 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [Why is management attractive to you?](#why-is-management-attractive-to-you)
     - [What in your mind are the responsibilities of a manager?](#what-in-your-mind-are-the-responsibilities-of-a-manager)
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
-    - [What specific types of duties would you like to do help with at this company?](#what-specific-types-of-duties-would-you-like-to-do-help-with-at-this-company)
+    - [Horizontal vs Vertical: What specific types of duties would you like to do help with at this company?](#horizontal-vs-vertical-what-specific-types-of-duties-would-you-like-to-do-help-with-at-this-company)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
+    - [Challenging feedback?](#challenging-feedback)
     - [What is the point of a 1:1?](#what-is-the-point-of-a-11)
     - [How do you identify engineers who could make good managers? How do you help them develop?](#how-do-you-identify-engineers-who-could-make-good-managers-how-do-you-help-them-develop)
     - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
@@ -32,6 +33,8 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [Best hire of your career](#best-hire-of-your-career)
     - [How did you grow top talent](#how-did-you-grow-top-talent)
     - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
+    - [What is your ideal culture?](#what-is-your-ideal-culture)
+    - [How do you make a good culture?](#how-do-you-make-a-good-culture)
 - [Business Acumen](#business-acumen)
     - [Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?](#discuss-this-companies-trajectory-as-you-see-it-what-choices-do-they-think-theyre-good-and-bad-at-would-you-have-done-things-differently-what-problems-do-you-see-coming-up-in-the-future)
 - [Self Assessment and Weakness](#self-assessment-and-weakness)
@@ -81,6 +84,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [Should industry have architects](#should-industry-have-architects)
     - [How do you bootstrap technical leadership in an organization that has no public titles?](#how-do-you-bootstrap-technical-leadership-in-an-organization-that-has-no-public-titles)
     - [What are the pros/cons of public vs. private titles?](#what-are-the-proscons-of-public-vs-private-titles)
+    - [Observability + Metrics](#observability--metrics)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -194,6 +198,30 @@ Secure Early Wins Avoiding common traps. Figuring out A-item priorities. Creatin
 ### Horizontal vs Vertical: What specific types of duties would you like to do help with at this company?
 
 Beyond "My team", there are several initiatives I like to drive, 1) recruiting 2) interns 3) inclusion and diversity. Tech: Iterative, Metrics Driven, Full CD.
+
+Recruiting
+
+- Hiring Event
+- Weekly posts
+
+Moments
+
+- Team Breakfasts
+- Celebrations
+
+Interns
+
+- Team allocation
+- Events
+- Ship Gifts
+- Help w/weak manager w/perf management.
+- Checkin
+- Major Talk
+
+Culture
+
+- Inclusion
+- Alays improving.
 
 ## Managing and Developing People
 
@@ -310,6 +338,23 @@ I also have some special 1:1s:
 ### How did you grow top talent
 
 ### What do you do when a team completely disagrees with the founder/VP on the direction of a product?
+
+### What is your ideal culture?
+
+### How do you make a good culture?
+
+- Model myself
+  - On All the Pages
+  - If tema is workign Im working
+  - When I make mistakes I apologise
+  - If I drop the ball I make it clear.
+  - When someone does well I celebrate and call out.
+- Catch people doings things right
+  - Coaching stuff
+- Put it front and center
+- Let team take ownership of it.
+- Incite pride and purpose
+- Repeat/Repeat/Repeat
 
 ## Business Acumen
 
@@ -809,3 +854,23 @@ _ Signal of organization influence (although you can kind of figure it out) \* S
   - Jockying for Promo when doesn’t matter.
   - Frustration in thinking problem is title not blah.
   - Being right, but ignored
+
+### Observability + Metrics
+
+Quant and Qual:
+
+Qual:
+
+- Qual to put texture and quant and sanity test not broken.
+- Verbatims
+- Talk to Folks
+- Try it yourself
+- Watch new users use the product.
+- UserTesting.com
+
+Quant:
+
+- Operational metrics
+- Business metrics
+- Raw Debug Logs
+- Alarms
