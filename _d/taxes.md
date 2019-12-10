@@ -25,6 +25,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [No load index funds](#no-load-index-funds)
     - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
     - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
+    - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
     - [529s](#529s)
     - [Unexpected expenses](#unexpected-expenses)
 - [Philosophy](#philosophy)
@@ -112,6 +113,11 @@ Mutual funds with zero fees. Usually a broad index fund like Fidelity Zero or TK
 Taxes are like a step function. From 0 - K1 you pay rate t1, From K1 - K2 you pay rate t2, etc. The marginal tax rate is how much tax you pay on every extra dollar make, E.g. the tax rate in the maximum step. By contrast, your average tax rate is the total taxes/total income, which can be significantly less then the marginal tax rate depending on how far over the step function you are.
 
 ### Short vs Long term capital gains
+
+### Cash positions and high yield savings.
+
+Often, we think about holding cash, and think about holding it in a place with no interest. Keep this money in high yield bank accounts, which can give [close to 2% (as of  Dec '19)](https://www.nerdwallet.com/best/banking/high-yield-online-savings-accounts)
+At Fidelity you can keep your core cash in a liquid low risk mutual fund [SPAXX](https://fundresearch.fidelity.com/mutual-funds/summary/31617H102), however this has a 0.42% expense ratio, which will eat 25% - 50% of your earned interest.
 
 ### 529s
 
