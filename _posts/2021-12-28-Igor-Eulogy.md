@@ -7,7 +7,6 @@ collapsable: true
 featured: true
 comments: true
 redirect_from:
-    /Igor-Eulogy
     /eulogy
 tags:
   - how igor ticks
