@@ -48,6 +48,13 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 
 Usually I just get to watch clive perform, but I'll get my own videos here eventually:
 
+### Inteview magic
+
+Guy doing Full-CD said snap your fingers find the bug
+Recruiters - Dream candidate and linked in
+Best ever - Interviewer was WFH over video. Daughter crawls in, Mom trys to shew her away. I say, stop, watch. Daughter stand up, only mouth and nose in frame. I get up and back palm. Jaw drops.
+Good candidate - Dream Job
+
 [Video Album](https://photos.app.goo.gl/HPrGV2Uum5EBgo8NA)
 
 
