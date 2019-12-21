@@ -6,15 +6,13 @@ inprogress: true
 collapsable: true
 featured: true
 comments: true
-redirect_from: "/Igor-Eulogy"
-permalink: "/eulogy"
+redirect_from:
+    /Igor-Eulogy
+    /eulogy
 tags:
   - how igor ticks
   - emotional intelligence
 ---
-
-<!-- markdownlint-disable MD003 -->
-<!-- markdownlint-disable MD036 -->
 
 Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 
