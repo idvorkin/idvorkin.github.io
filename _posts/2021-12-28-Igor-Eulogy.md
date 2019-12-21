@@ -6,8 +6,7 @@ inprogress: true
 collapsable: true
 featured: true
 comments: true
-redirect_from:
-    /eulogy
+permalink: /eulogy
 tags:
   - how igor ticks
   - emotional intelligence

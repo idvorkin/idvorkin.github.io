@@ -6,7 +6,8 @@ inprogress: true
 tags:
   - how igor ticks
   - emotional intelligence
-redirect_from: 
+permalink: /pride
+redirect_from:
   - /pride
   - /duck-pride
 
@@ -42,7 +43,7 @@ To help me remember places where pride has fucked with me, I'll write out some o
 
 I was an intern at Microsoft in 2001. I started my career at Microsoft with Sally (not her real name), a fellow intern and one of my best friends. Our careers tracked closely till she became a principal development manager, and then went to Amazon. Sally and I went for beers every few months, and as my career grew linearly, hers grew exponentially.  A few years back at our January beer she added a QA team to her development team, and by March she had  taken over teams in India and Ireland, and by September, she had an organization of 50, and got to travel to every continent quarterly.
 
-Meanwhile, my team was still only 10 people, and I felt like a failure.  Having failure rubbed in your face sucks, so I avoided our monthly beers with lame excuses. One day, while talking to my mentor, it clicked. I shouldn't evaluate myself relative to Sally's life. I should evaluate myself based on me. 
+Meanwhile, my team was still only 10 people, and I felt like a failure.  Having failure rubbed in your face sucks, so I avoided our monthly beers with lame excuses. One day, while talking to my mentor, it clicked. I shouldn't evaluate myself relative to Sally's life. I should evaluate myself based on me.
 
 
 #### Feeling cheated that because my management treated me unfairly, or didn't appreciate the good I bring to my organization.
