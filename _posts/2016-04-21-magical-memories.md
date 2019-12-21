@@ -50,10 +50,17 @@ Usually I just get to watch clive perform, but I'll get my own videos here event
 
 ### Inteview magic
 
-Guy doing Full-CD said snap your fingers find the bug
-Recruiters - Dream candidate and linked in
-Best ever - Interviewer was WFH over video. Daughter crawls in, Mom trys to shew her away. I say, stop, watch. Daughter stand up, only mouth and nose in frame. I get up and back palm. Jaw drops.
-Good candidate - Dream Job
+* Best ever - Interviewer was WFH over video.
+    * Daughter crawls in, Mom trys to shew her away.
+    * I say, stop, watch.
+    * Daughter stand ups, only mouth and nose in frame.
+    * I get up and back palm.
+    * Jaw drops.
+    * Hard to beat that
+* Guy doing Full-CD said snap your fingers find the bug
+* Recruiters - Dream candidate and linked in
+* Good candidate - Dream Job
+* TODO something with distraction, or setup card to ceiling
 
 [Video Album](https://photos.app.goo.gl/HPrGV2Uum5EBgo8NA)
 
