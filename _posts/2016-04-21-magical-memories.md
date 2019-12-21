@@ -14,7 +14,7 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 ### Early magic memories
 
 * Never really saw magic as a kid, but love to be "amazed". At a french bistro in Fremont, there was a roving magician. His finally was card to ceiling. Looked up and saw cards all over the ceiling.
-* At the table when Hanninbal did [Roadhouse](https://www.youtube.com/watch?v=G1iaCcL9UDw) and his perfect classic force.
+* At the table when Hannibal did [Roadhouse](https://www.youtube.com/watch?v=G1iaCcL9UDw) and his perfect classic force.
 
 
 ### How I started:
@@ -26,7 +26,7 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 * Meeting Clive
 
 
-### Magic Get Togethers
+### Magic Get Together
 
 * First Magic Conference - 3 of clubs
 * Second Magic Conference - MagiFest
@@ -36,22 +36,22 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 
 - Doing card to ceiling and the card still being on the ceiling at Microsoft a year later
 - Girl on the bus that loved my magic trick.
-- Girl at ice cream store who loved the trick, and jump up and down in a circle cuz it was so awesome.
-- Failure at park where 10 yera old told me I got in wrong, but in fact I had done it correctly.
+- Girl at ice cream store who loved the trick, and jump up and down in a circle because it was so awesome.
+- Failure at park where 10 year old told me I got in wrong, but in fact I had done it correctly.
 - Ben's son who carried the card around in his back pack for years.
 - Card to blouse for intern
-- Card accross where thought I messed up with audiance, but card stuck to guys ass
+- Card across where thought I messed up with audience, but card stuck to guys ass
 - Giving out unicorn coins
 - Performing at Pike Place
 
 ### Bar Magic
 
-Usually I just get to watch clive perform, but I'll get my own videos here eventually:
+Usually I just get to watch Clive perform, but I'll get my own videos here eventually:
 
-### Inteview magic
+### Interview magic
 
 * Best ever - Interviewer was WFH over video.
-    * Daughter crawls in, Mom trys to shew her away.
+    * Daughter crawls in, Mom try's to shew her away.
     * I say, stop, watch.
     * Daughter stand ups, only mouth and nose in frame.
     * I get up and back palm.
@@ -67,7 +67,7 @@ Usually I just get to watch clive perform, but I'll get my own videos here event
 
 ### Family Magic
 
-Amelia - Amelia starting to do brause reverse with card turning over.
+Amelia - Amelia starting to do braue reverse with card turning over.
 
 Zach - Making up his own card trick for woman waiting on the bus. -
 
