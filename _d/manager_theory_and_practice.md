@@ -21,6 +21,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
         - [Charter/Execution boot strap](#charterexecution-boot-strap)
     - [Why is management attractive to you?](#why-is-management-attractive-to-you)
     - [What in your mind are the responsibilities of a manager?](#what-in-your-mind-are-the-responsibilities-of-a-manager)
+    - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
     - [Horizontal vs Vertical: What specific types of duties would you like to do help with at this company?](#horizontal-vs-vertical-what-specific-types-of-duties-would-you-like-to-do-help-with-at-this-company)
 - [Managing and Developing People](#managing-and-developing-people)
@@ -38,24 +39,30 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
 - [Business Acumen](#business-acumen)
     - [Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?](#discuss-this-companies-trajectory-as-you-see-it-what-choices-do-they-think-theyre-good-and-bad-at-would-you-have-done-things-differently-what-problems-do-you-see-coming-up-in-the-future)
 - [Self Assessment and Weakness](#self-assessment-and-weakness)
+    - [Disagreement answer format](#disagreement-answer-format)
     - [What was the biggest 'mental model' shift you had from IC to manager?](#what-was-the-biggest-mental-model-shift-you-had-from-ic-to-manager)
     - [Top Weakness](#top-weakness)
     - [Get in a fight with your boss](#get-in-a-fight-with-your-boss)
+        - [Music Video](#music-video)
+        - [Moderation Reactive vs Proactive](#moderation-reactive-vs-proactive)
         - [Co boss](#co-boss)
         - [Shutdown alternate platforms](#shutdown-alternate-platforms)
         - [Break big bang creator studio down into](#break-big-bang-creator-studio-down-into)
     - [Get in a fight technical](#get-in-a-fight-technical)
         - [Service split and shared component](#service-split-and-shared-component)
         - [Need SDE-III to do work that was below him.](#need-sde-iii-to-do-work-that-was-below-him)
-        - [Architect won't let us launch without commiting to next release.](#architect-wont-let-us-launch-without-commiting-to-next-release)
+        - [Architect won't let us launch without committing to next release.](#architect-wont-let-us-launch-without-committing-to-next-release)
+        - [Variable Heart Beat](#variable-heart-beat)
     - [Get in a fight PM](#get-in-a-fight-pm)
         - [Creator Portal initial launch - We're acceptable to ship with several gaps.](#creator-portal-initial-launch---were-acceptable-to-ship-with-several-gaps)
+        - [Who needs file compression for video upload.](#who-needs-file-compression-for-video-upload)
+        - [Brands](#brands)
     - [Get in a fight with other](#get-in-a-fight-with-other)
         - [Smile w/Legal.](#smile-wlegal)
     - [Think of a mistake or failure you’ve made in the past two years. What did you learn from it and/or do differently in the future?](#think-of-a-mistake-or-failure-youve-made-in-the-past-two-years-what-did-you-learn-from-it-andor-do-differently-in-the-future)
         - [Push GSAT when parent team though it was a bad idea.](#push-gsat-when-parent-team-though-it-was-a-bad-idea)
         - [Launching Creator Portal](#launching-creator-portal)
-        - [Over commiting my team](#over-commiting-my-team)
+        - [Over committing my team](#over-committing-my-team)
     - [What would a report/peer/manager feedback on you be? Strengths, areas for development, etc.](#what-would-a-reportpeermanager-feedback-on-you-be-strengths-areas-for-development-etc)
     - [How would you assess if someone is a good manager?](#how-would-you-assess-if-someone-is-a-good-manager)
 - [Process and Mechanism](#process-and-mechanism)
@@ -110,7 +117,7 @@ I run a factory which produces widgets and has employees. For those in the indus
 
 - Widget == Business Results
 - Factory Workers == Team health and growing, leaders who make software
-- Factory and Operating procedures == Software Design LifeCycle, Architecture, Tech Assets
+- Factory and Operating procedures == Software Design Life Cycle, Architecture, Tech Assets
 
 My role:
 
@@ -147,7 +154,7 @@ In the real world:
 - First experiments in tech and market
 - Find the first wins to tune
 - Build out early roadmap and product.
-- Continous improvement as people join.
+- Continuous improvement as people join.
 
 ### Why is management attractive to you?
 
@@ -157,13 +164,20 @@ In the real world:
 - Get shit done
   - Clear roadblocks
   - Ship
-- Skill, clarifying, building concensous, sharing the story and meaning.
+- Skill, clarifying, building consensus, sharing the story and meaning.
 - Leader Ownership, but not a good enough PM, and very strong tech
 - Lead and inspire
 - Servant leadership
 - On top of best practices
 
 ### What in your mind are the responsibilities of a manager?
+
+### Hardest part about being a manager
+
+- Surprisingly: People think firing it's not.
+- Greedy: telling team I'm quitting, tears, ride bike, etc.
+- Actual: When need to surprise folks, abrupt direction change killing projects.
+- Expected: Layoffs, when know and can't tell.
 
 ### What do you do in the first 90 days?
 
@@ -221,7 +235,7 @@ Interns
 Culture
 
 - Inclusion
-- Alays improving.
+- Always improving.
 
 ## Managing and Developing People
 
@@ -247,7 +261,7 @@ Culture
   - Catching people doing things right.
   - 110% of capability but clarify doing 110% vs 80%
 - Moments
-  - Contant celebrating people doing stuff fun
+  - Constant celebrating people doing stuff fun
   - Hack-a-thons
   - Playing cards for appreciation
   - Managers making breakfast
@@ -267,7 +281,7 @@ Performance, Charter, Re-org (me leaving), Lay Offs.
 
 ### What is the point of a 1:1?
 
-Computers produce nothing, developers produce code. Business produce nothign PMs, other functions produce stuff.
+Computers produce nothing, developers produce code. Business produce nothing PMs, other functions produce stuff.
 
 I produce nothing, my output is the output of the team, and the team is the sum of the people. My ability to get the most value from my people is through my relationship with the people. If they trust me whole heartily, they'll tell me stuff I need to know, and I'll be able to understand how best to use them/influence them/inspire them. So, all my 1:1's start with What's on your mind - what ever they have we talk through. based on time and place we'll do X, Y.
 
@@ -316,7 +330,7 @@ I also have some special 1:1s:
   - Engineer comes to conclusion himself
   - Engineers feels on track
   - Engineer aspires to get to that level
-  - Engineer doesn't want to be over levelled
+  - Engineer doesn't want to be over leveled
   - Engineer is self aware
   - Engineer gets new opportunities/support required.
 
@@ -328,7 +342,7 @@ I also have some special 1:1s:
 
   - Ask for self evaluation
   - Go over with examples together
-  - Ask "How would you describe your behavior vs someone elses"
+  - Ask "How would you describe your behavior vs someone else's"
   - Ask what gaps do you see
 
 - Call out positive examples from engineers @ Level + 1
@@ -345,8 +359,8 @@ I also have some special 1:1s:
 
 - Model myself
   - On All the Pages
-  - If tema is workign Im working
-  - When I make mistakes I apologise
+  - If team is working I'm working
+  - When I make mistakes I apologies
   - If I drop the ball I make it clear.
   - When someone does well I celebrate and call out.
 - Catch people doings things right
@@ -374,6 +388,16 @@ I also have some special 1:1s:
 
 ## Self Assessment and Weakness
 
+### Disagreement answer format
+
+- Push back good because of blind spots
+- They thought
+- I thought
+- So I
+- And this happened
+- Leanings
+- Afterwords I circled back and they thought
+
 ### What was the biggest 'mental model' shift you had from IC to manager?
 
 - Auditing
@@ -383,6 +407,10 @@ I also have some special 1:1s:
 ### Top Weakness
 
 ### Get in a fight with your boss
+
+#### Music Video
+
+#### Moderation Reactive vs Proactive
 
 #### Co boss
 
@@ -396,14 +424,25 @@ I also have some special 1:1s:
 
 #### Need SDE-III to do work that was below him.
 
-#### Architect won't let us launch without commiting to next release.
+#### Architect won't let us launch without committing to next release.
 
     * Architect need to save face.
     * Still doing the change, but add a "design" for next release, and we both knew it was dumb.
 
+#### Variable Heart Beat
+
 ### Get in a fight PM
 
 #### Creator Portal initial launch - We're acceptable to ship with several gaps.
+
+#### Who needs file compression for video upload.
+
+#### Brands
+
+- Need to have experiment and hypothesis.
+- stop doing tech sales pitch,
+- never commit my team without my explicit sign off
+- don't bully my people
 
 ### Get in a fight with other
 
@@ -417,55 +456,9 @@ I also have some special 1:1s:
 
 - Major Feature (still hadn’t established full trust)
 
-  - Upload _heavily tested_
-  - No Marketing
-  - Easy Turn Off
-  - New to Amazon team, all external, no process
-  - Super low TPS
-  - Launch and Learn
-  - OE
-  - Complete alignment with my PM
-  - Took on tech debt around alarms (Plan to resolve post launch)
-  - Deep Understanding of the system, super low TPS
-  - Pushing my team to launch for weeks, always coached team to never be blocked
-
-- 2 problems
-
-- How I got into the situation
-
-  - Didn’t realize what I didn’t know.
-  - 15 years at MSFT, 1) very high trust 2) very clear on what tech debt org can take 3) operate much slower, more reporting, less surprises.
-
-- How I handled
-
-  - Expect to be blocked/delayed with partner teams because they have less skin in the game.
-  - **Felt** like my mgmt chain didn’t have my back, and didn’t trust my judgement.
-  - Spent a few days whining at my PM and at others.
-  - I pushed back on my boss - telling him how I felt and why “I was right”.
-  - Saying look this is inconsistent with Amazon, you made mistakes (as did I) lets proceed with launch.
-
-- A few days in bregrudingly
-
-  - Went thought the critisicims
-  - Did a self audit with my self and Senior Engineer.
-  - Came up with a moderation plan
-    - We’d watch videos as they come in through manual rotation till could get system up.
-
-- Consequences
-  - Not being late, but positioning that I don’t “own my mistakes, and blame others”
-  - Had to work three times as hard to get that back, but that smell was on me for months.
-  - Burned trust took months to get it back
-
-**Learnings - How I got into he situation **
-
-- Even in “bottom up” orgs - test for what your technical freedom is
-- When going into “trust me” situations, make sure to advertise more
-  _ In new org, assume I don’t know.
-  _ No more “Trust Me” \* For risks/tech debt, even ones I think are safe, vet with senior folks, then vet with my boss, and really stress consequences of getting wrong, but why.
-
 - Launching of WAMD by keyword - precision and recall hard.
-  - Testing w/None prime traffic, precision high, recall low. Happy with that.
-  - Late brought up could have very different traffic pattern for Prime Day (couldn’t pre-test)
+  - Testing w/Non peak traffic, precision high, recall low. Happy with that.
+  - Late brought up could have very different traffic pattern for peak (couldn’t pre-test)
   - Came up with Plan
     - Hourly monitoring for gaps
     - 3 types of shutdown switches (all off, blacklist bad, whitelist good)
@@ -474,7 +467,7 @@ I also have some special 1:1s:
   - Will run same protocol again this year.
   - Come up with an offline computation model for next prime day.
 
-**Learnings - How I handled the “Though shalt not pass” conversation from my VP**
+**Leanings - How I handled the “Though shalt not pass” conversation from my VP**
 
 - Launching Charity Giving
   - VP decided we’ll need to do video sharing to FB/Twitter
@@ -483,7 +476,7 @@ I also have some special 1:1s:
   - Decent idea, but My team was 100% booked, and no experience.
   - Begged other leads for an expert in this area. Spent 2 days to see if it was possible, found out it wasn’t possible for 2 days, then got sign off from a VP, made a nice package for my boss, who brought it up the tree.
 
-#### Over commiting my team
+#### Over committing my team
 
 - Q4 2018 - Wanted to do charity
   - Committed team to deliver - “Lets take 2 weeks and make sure we can do this” , team agreed. Then we pushed hard, and hot but we’d make it and start converging.
@@ -497,7 +490,7 @@ I also have some special 1:1s:
   - HOWEVER: Said we’d get a break post Thanksgiving. And we didn’t, get more stuff put on us I18N and another coupon type.
   - Couldn’t get it negotiated off my team (Amazon — Grr!!)
 
-**Learnings for next time**
+**Learning for next time**
 
 - Target done 1.5 months early (will slip to 1 months, and then need the E2E time, or bring new features in)
 - Agreement on what features we’d cut if required when we got closer.
@@ -520,8 +513,8 @@ I also have some special 1:1s:
   - Commit Faster when you aren’t in agreement
     - Customer -> Team > Business vs Customer > Team > Business
   - Start by assuming I’m right, instead of me being wrong
-    - Exact oppposite o what I tell me, I need them to assume I”m wrong due to positional authority
-  - Don’t be so harsh and “weak” partners.
+    - Exact opposite o what I tell me, I need them to assume I”m wrong due to positional authority
+  - Don’t be so harsh on “slow” partners.
     - I stay don’t get blocked and want to ship, people who are in agreement love me. People that don’t I’ll Figure out how to get around.
   - (Less experienced) Be less autonomous.
 
@@ -529,12 +522,12 @@ I also have some special 1:1s:
 
   - Peer
     - Want to ship
-    - How do you pull that offf
+    - How do you pull that off
   - Good
     - Team loves you
     - Creative
   - Gaps
-    - Going to Fast.
+    - Going too Fast.
     - Keep me in the loop
     - Be more risk averse
 
@@ -543,7 +536,7 @@ I also have some special 1:1s:
 Using the same metrics I apply to myself. For the how I'd:
 
 - Look at "employee surveys"
-- Look at their business results (scorecards and KPIs)
+- Look at their business results (scorecards and KPI)
 - Look at their operational load and tickets/pages/etc
 - Interview their employees, PMs, and business partners, and partner teams
 - Ask them about their architecture
@@ -556,7 +549,7 @@ Using the same metrics I apply to myself. For the how I'd:
 - Turn input into outputs
 - How to measure success of the process, what will you inspect, when will you adjust,
 - Who is the owner?
-- What other process is this similar to, can we co-alsce with something else?
+- What other process is this similar to, can we co-coalesce with something else?
 - How will you get buy in
 - How to get team to accept
 - (Bright spot, then land and expand)
@@ -566,7 +559,7 @@ Using the same metrics I apply to myself. For the how I'd:
 ### Process Anti-Patterns:
 
 - TODO: Invert this
-- Disenfrancing ownership
+- Disenfranchising ownership
 
   - Nothing more powerful then a motivated engineer, don’t let process take that away.
 
@@ -611,17 +604,17 @@ Process per "output desired"
 
 #### Engineering/Operational Excellence
 
- 1) How do we know our customer is having a good day? 2) How do we maximize our velocity 3) How do we keep our developers happy.
+1.  How do we know our customer is having a good day? 2) How do we maximize our velocity 3) How do we keep our developers happy.
 
 - Know what's going on:
-- On all the pages - Strong apprecitation for boots on the ground reality.
+- On all the pages - Strong appreciation for boots on the ground reality.
 - Write up for all outages, COE for major outages - Maximize value of mistakes, don't make them twice.
-    - For all customer impacting event, review w/Customer Impact, root cause understood, and committment when to address.
+  - For all customer impacting event, review w/Customer Impact, root cause understood, and commitment when to address.
 - Observability
-    - How do we get a page next time.
-    - How do we see what's going on.
+  - How do we get a page next time.
+  - How do we see what's going on.
 - Testing systems.
-    - Very high leverage active
+  - Very high leverage active
 - Deep dive to do a check-in
 - Do it all myself to see what's broken and understand where to invest.
 
@@ -674,7 +667,7 @@ I’m usually error on the lack of process. E.g. Let people volunteer to fix and
 
 ### What are you looking for in an engineer when you recruit?
 
-Most companies have their “competncies” they test for. But I abstract it down to:
+Most companies have their “competencies” they test for. But I abstract it down to:
 
 - Smart (Can code, understands)
   - Teach me something
@@ -682,7 +675,7 @@ Most companies have their “competncies” they test for. But I abstract it dow
 - Get things done (wants to ship, owns it):
   - What matters to them
   - Tell me something hard you did.
-- EQ: (Not an asshole, Continous Learning, Sees impact off his action, self aware o how eels)
+- EQ: (Not an asshole, Continuous Learning, Sees impact off his action, self aware o how eels)
   - Tell me a time you got in a fight
   - Tell me the hardest feedback you received.
 
@@ -696,7 +689,7 @@ Ratio Senior: SDE-II: SDE-I (1,2,2) => ten person team: 2, 4, 4.
 Everyone grows by learning and teaching. Lots of rules
 A crappy job for SDE-K is a growth opportunity for SDE-(K-1)
 SDE-IIIs want to think hard and lead
-SDE-I bring energy and excitement, but still dependant.
+SDE-I bring energy and excitement, but still dependent.
 SDE-IIs do the bulk of the work.
 
 Ideally, people grow from SDE-I -> SDE-III on a team, so much knowledge transfer and opportunity.
@@ -721,15 +714,15 @@ BE -> Learn the tech chops of complex system.
 
 ### How do you think about hiring?
 
-Priority list 1) Fullblown Site Outage 2) Recruiting 3) Everything else.
+Priority list 1) Full blown Site Outage 2) Recruiting 3) Everything else.
 
-Recruiting is ultimetely product sales, where you're selling your team.
+Recruiting is ultimately product sales, where you're selling your team.
 
 Most important part of sales:
 
 1. The product: Product you're building, team (culture and people), yourself.
 
-2. Funnel: Inbound Marketting, Referrels, high touch, post sales support.
+2. Funnel: Inbound Marketing, Referrals, high touch, post sales support.
 
 ### How have you optimized the recruiting process in the past? Have they thought about the recruiting funnel and how you can optimize different parts of it?
 
@@ -851,7 +844,7 @@ _ Signal of organization influence (although you can kind of figure it out) \* S
 - Cons
   - When “title” doesn’t match reality.
   - Folks get positional authority
-  - Jockying for Promo when doesn’t matter.
+  - Jockeying for Promo when doesn’t matter.
   - Frustration in thinking problem is title not blah.
   - Being right, but ignored
 
