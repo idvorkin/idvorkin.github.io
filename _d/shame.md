@@ -6,8 +6,8 @@ inprogress: true
 tags:
 permalink: /shame
 redirect_from:
-  - /shame
-  - /shame
+  - /fuck-shame
+  - /guilt
 ---
 
 Shame derives its power from being unspeakable.
