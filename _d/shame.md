@@ -10,6 +10,10 @@ redirect_from:
   - /guilt
 ---
 
+Unrealistic expectations cause into failure
+Unmet commitments harden into failure
+Failure hardens into guilt.
+Guilt hardens into shame.
 Shame derives its power from being unspeakable.
 
 Shame - I am bad
