@@ -15,6 +15,7 @@ Unmet commitments harden into failure
 Failure hardens into guilt.
 Guilt hardens into shame.
 Shame derives its power from being unspeakable.
+Shame reinforces itself through rumination.
 
 Shame - I am bad
 Guilt - I did something bad
