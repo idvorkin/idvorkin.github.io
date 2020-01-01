@@ -21,6 +21,7 @@ table {
   margin-left: inherit;
   margin-right: inherit;
   max-width: 56.25rem;
+  width: 100%;
 }
 
 .notepad-post-header-title {
