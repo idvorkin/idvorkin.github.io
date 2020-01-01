@@ -22,11 +22,11 @@ Hi reps, low weight.
 Habit stacking
 Systems drive input KPIs.
 Output KPIs lag input KPIs.
-A easy way to say this is "Compensation lags competance"
+A easy way to say this is "Compensation lags competence"
 
 #### Habits in context
 
-Your identity re-inforces your habits, which intern creates your outcomes.
+Your identity re-enforces your habits, which intern creates your outcomes.
 
 - Identity
 - Habits
@@ -36,29 +36,34 @@ Your identity re-inforces your habits, which intern creates your outcomes.
 
 Lets go back to that other idea: How a habit is formed.
 
-Cue, Craving, Response, Reward.
+| State    | Description                      | Negative          | Positive                            |
+| -------- | -------------------------------- | ----------------- | ----------------------------------- |
+| Cue      | Thing that kicks off the thought | Hang with friends | Sit on Mediation Bench              |
+| Craving  | The desired state                | Relaxed Buzz      | Calm mind/being a meditator         |
+| Response | The action, aka habit            | Drinking the beer | Meditating                          |
+| Reward   | Achieving the desired state      | Being Buzzed      | Being Calm/Feeling like a meditator |
 
-Positive:
+Another habit I have is playing on the command line (both writing and updating my shell)
 
-Cue: Make obvious (Hey look)
-Craving: Make it attractive (I want tot do it)
-Response: Make it easy (remove all friction)
-Reward: Make it satisfying (feel good one done - savor it)
+| State    | Actions                                 |
+| -------- | --------------------------------------- |
+| Cue      | Opening blink                           |
+| Craving  | Be a command line guru/writer           |
+| Response | Playing with command line/blog          |
+| Reward   | Feeling like a command line guru/writer |
 
-Negative:
+### Changing habits
 
-Cue: Make it invisible (Stay out of the trap)
-Craving: Make it painful (I know I feel bad doing)
-Response: Make it painful (make it painful to do)
-Reward: Make it unhappy (be unsatisfied, but still be gentle and don’t ruin your identity. Isn’t that curious)
+| State    | Adding                      | Removing             |
+| -------- | --------------------------- | -------------------- |
+| Cue      | Make it obvious and visible | Make it invisible    |
+| Craving  | Make it attractive          | Make it displeasing  |
+| Response | Make it easy                | Make it hard         |
+| Reward   | Make it satisfying          | Make it unsatisfying |
 
-Examples - Negative
+### Creating new Cues
 
-Cue: Get my coffee
-Craving: Sit in my chair
-Response: Feels Nice
-Reward: Rested.
+You need to make the cue obvious, and there are two ways:
 
-### Habit Stacking
-
-I think when it comes to compound interest, there is no better positive example for me then my command-line foo. I can truly do everything, on all computers, with almost no effort. As soon as a stronger tool comes a long I’m ready to consume it. Now, also because it’s not just the tool, but the thing I do with the tool I’m ready to go.
+1. Set a date and time intention
+1. Tie it to another habit.
