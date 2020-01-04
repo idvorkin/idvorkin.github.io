@@ -106,7 +106,7 @@ Even though you are using after tax dollars to transfer money to the roth IRA, y
 
 ### No load index funds
 
-Mutual funds with zero fees. Usually a broad index fund like Fidelity Zero or TK.
+Funds ith zero fees. Usually a broad index fund like Fidelity Zero FZROX and FZILX. Could be a Mutual Fund or ETF (but you don't care so long as it's no load and no fees).
 
 ### Marginal vs Average Tax Rate
 
@@ -116,7 +116,7 @@ Taxes are like a step function. From 0 - K1 you pay rate t1, From K1 - K2 you pa
 
 ### Cash positions and high yield savings.
 
-Often, we think about holding cash, and think about holding it in a place with no interest. Keep this money in high yield bank accounts, which can give [close to 2% (as of  Dec '19)](https://www.nerdwallet.com/best/banking/high-yield-online-savings-accounts)
+Often, we think about holding cash, and think about holding it in a place with no interest. Keep this money in high yield bank accounts, which can give [close to 2% (as of Dec '19)](https://www.nerdwallet.com/best/banking/high-yield-online-savings-accounts)
 At Fidelity you can keep your core cash in a liquid low risk mutual fund [SPAXX](https://fundresearch.fidelity.com/mutual-funds/summary/31617H102), however this has a 0.42% expense ratio, which will eat 25% - 50% of your earned interest.
 
 ### 529s
