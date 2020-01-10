@@ -24,6 +24,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
     - [Horizontal vs Vertical: What specific types of duties would you like to do help with at this company?](#horizontal-vs-vertical-what-specific-types-of-duties-would-you-like-to-do-help-with-at-this-company)
+    - [Should managers code?](#should-managers-code)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [Challenging feedback?](#challenging-feedback)
@@ -236,6 +237,18 @@ Culture
 
 - Inclusion
 - Always improving.
+
+### Should managers code?
+
+Managers should read code on specific occasions, but they can't be on critical path because their time is often needed to deal with urgent situations. Thus, they can only write low importance code usually something you'd assign to an SDE-I. At that point, you have a very expensive priority inversion.
+
+That said, SDMs need to use their product just like their customers do to be able to better understand and meet the customer need. Like wise, SDMs need to use their development tools periodically, which should include the code/test/deploy cycle, so they are better able to understand and meet their team's (aka other big customer) need.
+
+SDMs should be reading code occasionally:
+
+1. Spot checking - SDMs should have a good "something is fishy" intuition, and should be able to independently and discreetly prove or disprove their intuition.
+1. Assessing people - Code is a major deliverable for developers and should be inspected as part of people assessment.
+1. Deep dive during major outages - In high risk, time critical situations like outages, you want your best people reviewing the changes, and this includes SDMs. If an SDM can't understand a high risk time sensitive code change, it can be, and should be simplified.
 
 ## Managing and Developing People
 
