@@ -30,6 +30,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [Challenging feedback?](#challenging-feedback)
     - [What is the point of a 1:1?](#what-is-the-point-of-a-11)
     - [How do you identify engineers who could make good managers? How do you help them develop?](#how-do-you-identify-engineers-who-could-make-good-managers-how-do-you-help-them-develop)
+    - [How do you think of developing people?](#how-do-you-think-of-developing-people)
     - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
     - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
     - [Best hire of your career](#best-hire-of-your-career)
@@ -313,6 +314,30 @@ I also have some special 1:1s:
 - Reviewing role guidelines - to help ensure we're on the same page about tactical gaps.
 
 ### How do you identify engineers who could make good managers? How do you help them develop?
+
+### How do you think of developing people?
+
+SDE-I:
+
+Not a lot of variance, Make sure they have a solid mentor, and opportunity after opportunity to round out their knowledge. Big focus:
+
+- We hired you because you're smart+really good. I you can't understand something, it's probably the presenter doesn't understand it well, as opposed to you not understanding"
+- You help them close gaps, sharpen their understanding by teaching it to you
+- You are new, and need to learn and need to spend a bunch of time asking for help and guidance. I have one rule - you must come with a bad idea (which will start becoming good ideas). You fail when you bring nothing, you ace it when you bring a bad idea. We'll help you develop that bad idea, and help sharpen your thinking skill.
+- "You have a fresh perspective - If something doesn't make sense ask, for us, we're like fish in water, so challenge our assumptions".
+
+SDE-II:
+
+Now it's about how are you helping the team, growing your contributions. Bigger experiences, maybe out side the org, both to build your skills, and increase your org visibility. Double down on super powers, close red flags and blockers. Very satisfying to watch people "blossom" into leaders.
+
+- How do you make the team better?
+- What are you gonna be known for?
+- You're the owner, you'll do everything and I work for you. What help do you need
+- Do shadow coaching, where I might be writing/pr-doing work but they do the send/take the credit
+
+SDE-III:
+
+Here you're getting people are at a career level and are happy with a lot of what they're doing. Here they're deciding how much they want to grow, and where they want to improve. Here it's discussing with mentors, and how we want to split responsibility and cover each other. Also opportunities for what they own for the group (30-60+) e.g. security or process or etc.
 
 ### How do you handle a great engineer with communication problems?
 
