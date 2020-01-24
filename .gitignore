@@ -12,6 +12,9 @@ tags
 .jekyll-metadata*
 Gemfile.lock
 
+#aspell junk
+*.bak
+
 
 # don't check in algolia password
 _algolia_api_key
