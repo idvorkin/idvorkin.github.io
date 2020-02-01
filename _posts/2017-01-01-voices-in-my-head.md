@@ -7,6 +7,7 @@ tags:
   - how igor ticks
   - emotional intelligence
 collapsable: true
+
 author: "Igor Dvorkin"
 ---
 
@@ -18,23 +19,23 @@ Here are my voices, I'm trying to teach myself to spend some time talking to all
 
 **Anxieties**
 
-**Mo** , my anxiety about money (retired since the the stock market went through roof).
-**Walter** my anxiety that I'm wasting my life.
-**Ina**, my insecurity that I'm a failure, only around when Carl gets sick
-**Dianna** - my end end of month anxiety around hitting my weight goals.
-**Terrance** - my frustrations with my wife
+- **Mo** , my anxiety about money (retired since the the stock market went through roof).
+- **Walter** my anxiety that I'm wasting my life.
+- **Ina**, my insecurity that I'm a failure, only around when Carl gets sick
+- **Dianna** - my end end of month anxiety around hitting my weight goals.
+- **Terrance** - my frustrations with my wife
 
 **Negative Habits**
 
-**Vern** my desire to vegetate and not exercise
-**Gary** my desire to gorge instead of eating healthy.
-**Prashant** my desire to procrastinate
+- **Vern** my desire to vegetate and not exercise
+- **Gary** my desire to gorge instead of eating healthy.
+- **Prashant** my desire to procrastinate
 
 **Positive Players:**
 
-**Harry**, my habits coach. Always pushing for more habits
-**Carl**, my confidence
-**Peter** the performer, loves to juggle and do magic.
-**Willy** the whimsical. Twin brother of peter the performer.
-**David** The Dad
-**Gertrude** My grandmother mind reassuring me that I can take it easy, and I'm doing the best I can.
+- **Harry**, my habits coach. Always pushing for more habits
+- **Carl**, my confidence
+- **Peter** the performer, loves to juggle and do magic.
+- **Willy** the whimsical. Twin brother of peter the performer.
+- **David** The Dad
+- **Gertrude** My grandmother mind reassuring me that I can take it easy, and I'm doing the best I can.
