@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Books that defined me"
+title: "Voices in my head"
 comments: true
 inprogress: true
 tags:
   - how igor ticks
-  - book-notes
+  - emotional intelligence
 collapsable: true
 author: "Igor Dvorkin"
 ---
