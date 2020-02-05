@@ -62,7 +62,7 @@ Usually I just get to watch Clive perform, but I'll get my own videos here event
 
 ### Family Magic
 
-Amelia - Amelia starting to do braue reverse with card turning over.
+Amelia - Amelia starting to do brauve reverse with card turning over.
 
 Zach - Making up his own card trick for woman waiting on the bus. -
 
