@@ -8,29 +8,25 @@ tags:
   - how igor ticks
 ---
 
-
 Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights
 
 ### Early magic memories
 
-* Never really saw magic as a kid, but love to be "amazed". At a french bistro in Fremont, there was a roving magician. His finally was card to ceiling. Looked up and saw cards all over the ceiling.
-* At the table when Hannibal did [Roadhouse](https://www.youtube.com/watch?v=G1iaCcL9UDw) and his perfect classic force.
-
+- Never really saw magic as a kid, but love to be "amazed". At a french bistro in Fremont, there was a roving magician. His finally was card to ceiling. Looked up and saw cards all over the ceiling.
+- At the table when Hannibal did [Roadhouse](https://www.youtube.com/watch?v=G1iaCcL9UDw) and his perfect classic force.
 
 ### How I started:
 
-* Carl Bystrom's class at magic with a french drop jacket routine (great intro Carl - thanks!)
-* Not knowing how to shuffle and thus having to learn to shuffle till my fingers bled.
-* Meeting the emerald city wizards, and the first night with professional magicians.
-* Meeting Felix, and then Jarrod.
-* Meeting Clive
-
+- Carl Bystrom's class at magic with a french drop jacket routine (great intro Carl - thanks!)
+- Not knowing how to shuffle and thus having to learn to shuffle till my fingers bled.
+- Meeting the emerald city wizards, and the first night with professional magicians.
+- Meeting Felix, and then Jarrod.
+- Meeting Clive
 
 ### Magic Get Together
 
-* First Magic Conference - 3 of clubs
-* Second Magic Conference - MagiFest
-
+- First Magic Conference - 3 of clubs
+- Second Magic Conference - MagiFest
 
 ### Highlights:
 
@@ -50,20 +46,19 @@ Usually I just get to watch Clive perform, but I'll get my own videos here event
 
 ### Interview magic
 
-* Best ever - Interviewer was WFH over video.
-    * Daughter crawls in, Mom try's to shew her away.
-    * I say, stop, watch.
-    * Daughter stand ups, only mouth and nose in frame.
-    * I get up and back palm.
-    * Jaw drops.
-    * Hard to beat that
-* Guy doing Full-CD said snap your fingers find the bug
-* Recruiters - Dream candidate and linked in
-* Good candidate - Dream Job
-* TODO something with distraction, or setup card to ceiling
+- Best ever - Interviewer was WFH over video.
+  - Daughter crawls in, Mom try's to shew her away.
+  - I say, stop, watch.
+  - Daughter stand ups, only mouth and nose in frame.
+  - I get up and back palm.
+  - Jaw drops.
+  - Hard to beat that
+- Guy doing Full-CD said snap your fingers find the bug
+- Recruiters - Dream candidate and linked in
+- Good candidate - Dream Job
+- TODO something with distraction, or setup card to ceiling
 
 [Video Album](https://photos.app.goo.gl/HPrGV2Uum5EBgo8NA)
-
 
 ### Family Magic
 
@@ -71,3 +66,10 @@ Amelia - Amelia starting to do braue reverse with card turning over.
 
 Zach - Making up his own card trick for woman waiting on the bus. -
 
+### Training
+
+- Carl: How do you fix it? You fix it by doing it right!
+- Carl: Stop - practice does not make perfect. It makes permanent.
+- Carl: That's great, except for the part you're flailing.
+- Felix: Uhm, that's OK, just practice another 9,997 times.
+- Felix, Oh, are you new at magic, maybe try a double lift.
