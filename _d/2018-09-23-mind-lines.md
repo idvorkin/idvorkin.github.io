@@ -2,7 +2,7 @@
 layout: post
 title: "mind-lines"
 date: "2018-09-23 17:50:41 +0000"
-tags: -
+tags:
 ---
 
 # Mind Lines
