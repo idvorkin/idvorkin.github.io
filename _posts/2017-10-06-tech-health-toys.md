@@ -21,7 +21,9 @@ To help me wake up in the morning, I have lights which [turn on automatically](h
 
 To help me measure my weight, I have an [bluetooth scale](https://www.amazon.com/RENPHO-Bluetooth-Body-Fat-Scale/dp/B01N1UX8RW/). Every time I measure myself it loads my weight into Apple Health.
 
-All of my health data is stored in Apple health, which I have the ability to export and analyze with my favorite [data analysis](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/pandas_weight.py) tools.
+For fun, I monitor my blood glucose with a continous glucose monitor (GCM). You need a prescriptoin to get it, but it's pretty fun. I use the [Freestyle Libra](https://www.freestylelibre.us/system-overview/continous-glucose-monitor-app.html)
+
+All of my health data is stored in Apple health, which I have the ability to export and analyze with my favorite [data analysis](https://github.com/idvorkin/jupyter/blob/master/Weight%20Analysis.ipynb) tools.
 
 ### Products that didn't work for me.
 
