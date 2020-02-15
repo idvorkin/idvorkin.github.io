@@ -44,6 +44,10 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 
 Usually I just get to watch Clive perform, but I'll get my own videos here eventually:
 
+### School magic
+
+Amelia's always proud I do magic. I was at her Kindergarden party, and suddenly they let the kids out and I was sorrouned by 15 Kindergardeners who wanted to see magic. It was awesome! I did tricks for lots to them, had them write their names on cards, gave out rubber bands -- was a wonderful experience.
+
 ### Interview magic
 
 - Best ever - Interviewer was WFH over video.
