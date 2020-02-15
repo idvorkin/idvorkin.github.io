@@ -9,6 +9,9 @@ tags:
 The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of difference I've found is below copied from Quora. In this classification I like to run a team small enough that I have time to be both an engineering manager and software architect.
 
 Copied (with slight editing) from [Kartik Ayya's](https://www.quora.com/profile/Kartik-Ayya) excellent [answer](https://www.quora.com/What-are-the-key-differences-between-a-technical-architect-and-a-lead-software-engineer)
+
+### The four software leadership roles
+
 A software organization needs to fill 4 leadership roles. These roles are often "physically implemented" by various degrees in different team members.
 
 **The tech lead:** The person who leads the team that actually builds it.
@@ -19,7 +22,7 @@ A software organization needs to fill 4 leadership roles. These roles are often 
 
 **The engineering manager:** The person who makes sure the organization is [getting the most out of the team](/being-a-great-manager) and filling any gaps.
 
-**Lets dive deep into the differences between architect and technical lead**
+### The Tech Lead vs the Architect
 
 The architect's primary value is they design a cohesively implementable system in the face of many competing demands.
 
@@ -29,28 +32,37 @@ The tech lead's primary value is ensuring that things get built with high qualit
 
 They focus on delivering projects, and a large part of their job is executing and overseeing the planning, design, and implementation of the project.
 
-**Technical skills:**
+### The 3 skills
+
+#### Technical skills
 
 The lead engineer needs to be highly detail oriented, has to be able to write high quality code, review the code of engineers and is in general ultimately responsible for shipping code. They spend part of their time coding, and the rest of their time guiding other engineers to write code.
 
-An architect, on a day to day basis, will typically neither write or debug code. However, they must have an intimate understanding of software to do their job. Having an architect who isn't technically strong will result in suboptimal solutions which will result in a loss of trust from the engineers working on the implementation.
+An architect, on a day to day basis, will typically neither write or debug code. However, they must have an intimate understanding of software to do their job. Having an architect who isn't technically strong will result in sub optimal solutions which will result in a loss of trust from the engineers working on the implementation.
 
-**Leadership skills**
+#### Leadership skills
 
 Both architects and tech leads lead, though in slightly different ways.
 
 The lead engineer leads by inspiring and setting the bar for code quality for the engineering team, and cracking the hard problems.
 
-The architect leads by building consensus, particularly in the face of competing design requirements. It is typically up to the architect to make good solid judgement calls around figuring out things like "Okay, these 4 code paths are really the ones to typically optimize around and must run in constant time, and everything else isn't something we need to worry about too much.", and so on.
+The architect leads by building consensus, particularly in the face of competing design requirements. It is typically up to the architect to make good solid judgment calls around figuring out things like "Okay, these 4 code paths are really the ones to typically optimize around and must run in constant time, and everything else isn't something we need to worry about too much.", and so on.
 
-**Communication skills:**
+#### Communication skills
 
 In general the architect needs to be an excellent communicator given their primary role of bringing otherwise sound though perhaps disjoint ideas together. The same isn't necessarily true of lead engineers. You can be a relatively good lead engineer despite having average communication skills.
 
-**Summary:**
+### Summary
 
 At the end of the day what really matters is the architect and tech lead are technically sound and work on tasks that they are good at. I've seen individuals who are exceptionally good at one role who would be underutilized in the other role.
 
 Many organizations don't formalize the distinction between tech lead and architect through title and let the individuals gravitate towards what they do best.
 
 I've also seen engineering managers take on all of the aforementioned roles depending on the gaps in the team.
+
+### The hard to handle cases
+
+(Thanks to Chris Gray for bringing up these questions, looking forward to getting folks opinions on the answers)
+
+- People are filling the same role, and keep stepping on each others toes
+- People think they are filling a role but they are not, or can not
