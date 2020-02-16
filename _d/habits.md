@@ -67,3 +67,9 @@ You need to make the cue obvious, and there are two ways:
 
 1. Set a date and time intention
 1. Tie it to another habit.
+
+### Working backwards - Who do you want to be.
+
+Think about the habits that the person you want to be. What habits will they have? What habits will they not have, then tackle that.
+
+### The change cycle: Plan; Execute; Audit; Adjust
