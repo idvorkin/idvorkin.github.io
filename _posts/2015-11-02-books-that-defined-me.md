@@ -16,6 +16,8 @@ Books allow great thoughts to enter our mind and mold us into who we want to bec
 
 **[Seven Habits of Highly Effective People (7H)](/7-habits)** - How to live your life**'.'**
 
+That post has lots of call outs to good books - check them out.
+
 **[Essentialisim](/essentialism)** A deep dive into habit #2 - begin with the end in mind: You must trade-off. You can do one thing. What is most important? If you didn't have this thing would you buy it? If you didn't have this opportunity, what would you give up for it?
 
 **Getting things done** A deep dive into habits #1 and #3 - be proactive, and do first things first: Stress free productivity through getting things out of your head and bottom up planning.
@@ -56,7 +58,13 @@ _And whenever anybody visited Mr. Plumbean's house, the very next day that perso
 
 ### On being an entrepreneur
 
-    TBD
+Start Small Stay Small - Maybe you don't want to be a unicorn.
+
+Lean startup - the bible for software startups
+
+Business Model Canvas - Customers, the value you provide them and your strategy.
+
+Traction - Strategies for customer acquisition
 
 ### On thinking, storytelling, and presenting
 
