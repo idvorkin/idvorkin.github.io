@@ -66,3 +66,4 @@ I've also seen engineering managers take on all of the aforementioned roles depe
 
 - People are filling the same role, and keep stepping on each others toes
 - People think they are filling a role but they are not, or can not
+- The power imbalance between manager and other roles due to positional authority.
