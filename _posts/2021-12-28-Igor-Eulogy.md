@@ -20,8 +20,9 @@ _For many of my roles, I'm still figuring out who I want to be, and how I will a
 
 #### As a dealer of smiles and wonder
 
-[Juggling fire](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
-, making cards change colors at a spectators command, or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonderment. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, had their frown turned upside down.
+Making cards change colors at a spectators command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. Once Igor learned [magic](/magic), that consumed his free time and became his favorite tool.
+
+Back in his 30s he used to juggle lots of things, the coolest of which being [juggle fire](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches).
 
 <!--
 * To File
@@ -52,7 +53,6 @@ Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66
 
 <!--
 * To File
-    * [Produced Song: Two wheels full of grace](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)
     * Igor had a tendency not to lock his bikes, and till he was 37 all of his bikes were stolen.
     * Carried to 1970's bikes everywhere he went on 2 internships (biking
     * Biking to work 30 miles @ 6am
@@ -117,7 +117,7 @@ Igor prided himself in being calm like water, and have a grand-mother mind he co
 
 #### As a husband
 
-Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor). Tori really values her privacy so expect this section to be Tori light, and Igor heavy.
+Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor). Tori values her privacy so this section will be Tori light, and Igor heavy.
 
 <!--
 
@@ -133,7 +133,8 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 
 #### As a professional
 
-Igor didn't write this section - but he did describe his [dream job](/job). He also wrote up several cool things he's proud of at work:
+Igor didn't write this section - but he did describe his [dream job](/job) and his thoughts on being a good [manager](/manager). He also wrote up several cool things he's proud of at work:
+
 [Software as a Story](/tags/index.html#Software as a Story),
 [Staring Cloud Computing](/The-Genesis-Node),
 [Smile](http://igsmilebox.blogspot.com),
