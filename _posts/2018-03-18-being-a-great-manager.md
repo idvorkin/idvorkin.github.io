@@ -4,7 +4,6 @@ title: "Being a great manager"
 date: "2018-03-18 06:24:17 -0700"
 comments: true
 inprogress: true
-collapsable: true
 
 tags:
   - software engineering
@@ -12,8 +11,43 @@ tags:
   - manager
 ---
 
-I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but by trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
- 
+I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
+
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [How will I measure my success?](#how-will-i-measure-my-success)
+    - [Coach, empower, build inclusive and supportive culture](#coach-empower-build-inclusive-and-supportive-culture)
+    - [Productive and results-oriented](#productive-and-results-oriented)
+    - [Great partner to other teams and non-tech partners](#great-partner-to-other-teams-and-non-tech-partners)
+- [How will I behave to be successful?](#how-will-i-behave-to-be-successful)
+    - [Being a great coach](#being-a-great-coach)
+    - [Communicating clearly](#communicating-clearly)
+    - [Hiring](#hiring)
+    - [Working across teams](#working-across-teams)
+    - [Staying technical](#staying-technical)
+    - [Hack-a-thons](#hack-a-thons)
+    - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
+- [How others define great managers](#how-others-define-great-managers)
+    - [Google's Project Oxygen](#googles-project-oxygen)
+    - [Amazon's leadership principles](#amazons-leadership-principles)
+- [Management situations](#management-situations)
+    - [Performance Management and Career Planning](#performance-management-and-career-planning)
+    - [Coaching for job changes](#coaching-for-job-changes)
+    - [Hiring and Recruiting](#hiring-and-recruiting)
+    - [Goal setting](#goal-setting)
+    - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
+    - [Execution tracking](#execution-tracking)
+- [Igors Super Powers](#igors-super-powers)
+    - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
+- [References](#references)
+    - [Great Videos](#great-videos)
+    - [Great Posts and Blogs](#great-posts-and-blogs)
+    - [Great books](#great-books)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 ## How will I measure my success?
 
 Acting is easy, but results are hard. Here are the results I measure.
@@ -31,6 +65,7 @@ Acting is easy, but results are hard. Here are the results I measure.
 - Define and deliver business priorities.
 
 ### Great partner to other teams and non-tech partners
+
 - Biz functions understands team and tech constraints
 - My team understand constraints and needs of partner teams and biz functions.
 - Team not blocked on other teams or biz functions.
@@ -64,58 +99,59 @@ As I tell my teams, the what lags the how, here's my how.
 - Draw pictures/pen casts
 
 ### Hiring
+
 - Public posts on career, management and life [Work Life Balance](/sustainable-work) and [Job Hunting](https://idvorkin.github.io/?q=job-hunt).
 - Weekly linked in posts celebrating the team
 - Memorable [job descriptions](https://www.linkedin.com/posts/idvorkin_happyabrdance-activity-6461383015967920128-np6b)
 - Magic tricks during interviews and informationals
 
 ### Working across teams
+
 - Ease at which my team can collaborate across the larger organization.
 - Leadership card experience
 - Team wide engagement through clustering [exercises](https://www.oxfordhomeschooling.co.uk/blog/brainstorming-clustering/).
 
 ### Staying technical
 
-*This is worthy of it's own blog post. Here's some brain dumping.*
+_This is worthy of it's own blog post. Here's some brain dumping._
 
 Before the how, lets start with why.
 
-Why do great managers need to stay technical?  Because they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team to continuously:
+Why do great managers need to stay technical? Because they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team to continuously:
 
 1. Make correct architectural decisions
 2. Increase engineering excellence through best practices
 
 Because they often represent teams in forums without their team the need to:
 
-1. Making sure you can represent your team in technical forums,  and you can bringing back best practices, or catch upcoming mistakes.
+1. Making sure you can represent your team in technical forums, and you can bringing back best practices, or catch upcoming mistakes.
 1. Make swags on costings
 1. Represent laws of physics
 
 How?
 
-* Architecture and design reviews
-* Try to ship software to
-* Be on every page the team gets
-* Hang w/Principal Engineers
-* Follow major tech trends and product launches (keynotes, major tech blog posts)
-* Reading seminal books on topics (ML, CLoud Native Apps, Programming Language Design, Architecture)
-* Side projects  in assorted tech and ideas (ML, PWA, FaaS)
-
+- Architecture and design reviews
+- Try to ship software to
+- Be on every page the team gets
+- Hang w/Principal Engineers
+- Follow major tech trends and product launches (keynotes, major tech blog posts)
+- Reading seminal books on topics (ML, CLoud Native Apps, Programming Language Design, Architecture)
+- Side projects in assorted tech and ideas (ML, PWA, FaaS)
 
 Pre-Reqs?
-* Be an expereinced engineer before switching to management
-* Be an expert in a particular platform and language
-* Be a SME in multiple topics (for me networking and security).
 
+- Be an expereinced engineer before switching to management
+- Be an expert in a particular platform and language
+- Be a SME in multiple topics (for me networking and security).
 
 ### Hack-a-thons
 
 - I finally hosted a hack-a-thon for my parent team. Here is my advice for folks setting this up.
 
-###  Some behaviors I'm just starting, these include
-  - Team music videos
-  - Engineering peak moments
+### Some behaviors I'm just starting, these include
 
+- Team music videos
+- Engineering peak moments
 
 ## How others define great managers
 
@@ -142,7 +178,7 @@ All of Amazon's [leadership principles](https://www.amazon.jobs/principles) (LPs
 
 If you're not from Amazon the LPs can be overwhelming, and are worthy of a seperate post. To help remember the principles, I think of 3 buckets: 1) Grow yourself and your team 2) Get it Done 3) Be the owner.
 
-*You'll also notice the principles are deliberatly not ranked, and have tension between them (e.g. Insist on High Standards vs Bias For Action) as they're all important and require high judgement to balance between. Alright there is definetly a post coming on this topic*
+_You'll also notice the principles are deliberatly not ranked, and have tension between them (e.g. Insist on High Standards vs Bias For Action) as they're all important and require high judgement to balance between. Alright there is definetly a post coming on this topic_
 
 **Grow yourself and the team:**
 
@@ -178,8 +214,6 @@ If you're not from Amazon the LPs can be overwhelming, and are worthy of a seper
 
 **Are Right, A Lot** - Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to dis confirm their beliefs.
 
-
-
 ## Management situations
 
 As a manager, you'll run into these situations. Each company and team has their own culture around these situations, and I'll enumerate things I've learned for them.
@@ -200,6 +234,7 @@ As a manager, you'll run into these situations. Each company and team has their 
 - Determining [compensation](/understandingtechcompensation)
 
 ### Hiring and Recruiting
+
 - Interviewing best practices - External
   - Feed forward interview loops
   - Feedback interviewers
@@ -216,46 +251,49 @@ tbd
 
 Some teams have these things well defined and running smoothly, other teams (seems to be most) need help building out these mechanisims
 
- - Design Meetings
- - Weekly Engineer Review (Status Reports)
- - Design Meetings
- - Weekly Leadership team Meetings
- - Weekly Operations/Engineering Excellence Review
- - Bi-Weekly Team Meetings
+- Design Meetings
+- Weekly Engineer Review (Status Reports)
+- Design Meetings
+- Weekly Leadership team Meetings
+- Weekly Operations/Engineering Excellence Review
+- Bi-Weekly Team Meetings
 
- - Agile Ceremonies:
-	 -  The standard -  Standups/Backlog Grooming/Sprint Planning/Retro
+- Agile Ceremonies: - The standard - Standups/Backlog Grooming/Sprint Planning/Retro
 
- - Project LifeCycle Documents/Meetings
-    - Requirements Review
-	-  Design (p)review
-    	- Test Plan Review
-		- Operations/Launch Review/Pre-Morten
-		- Bug Bash
+- Project LifeCycle Documents/Meetings
+  - Requirements Review - Design (p)review - Test Plan Review - Operations/Launch Review/Pre-Morten - Bug Bash
 
 ### Execution tracking
 
 tbd
 
+## Igors Super Powers
+
+### Why do people think Igor is a good coach?
+
+Someone once asked my why I'm a good coach, took me a while, here's what I came up with.
+
+- I believe you can't be efficient with people, you can only be effective. And it always pays off.
+- People are not 'resources', they are 3 dimensional humans, with [lives outside work](https://bit.ly/igor-wlb-manifesto), emotions(like [pride](/pride)), and desires.
+- I've read and digested slews of [self help books](/books) which while often mocked, are filled with great models.
+- I actively study and practice [coaching](/coach) and effective [decision making](/decide)
+
 ## References
 
 ### Great Videos
 
-* [On Coaching](https://youtu.be/oHDq1PcYkT4?t=431)
-* [On making people feeling safe](https://www.youtube.com/watch?v=lmyZMtPVodo)
+- [On Coaching](https://youtu.be/oHDq1PcYkT4?t=431)
+- [On making people feeling safe](https://www.youtube.com/watch?v=lmyZMtPVodo)
 
 ### Great Posts and Blogs
 
-* [How managers get stuck](https://medium.com/@skamille/how-do-managers-get-stuck-b6ec9ecd1da1)
-* [The managers path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897) - This book feels like it lacks "complete" mental models, but it's the only book of it's kind - so it's the best there is!
-* [Elided Branches](http://www.elidedbranches.com/) - Blog on engineering management.
-* [I.M Wright's Harde Code](https://imwrightshardcode.com) - Engineering Managment from Microsoft, covers most topics.
+- [How managers get stuck](https://medium.com/@skamille/how-do-managers-get-stuck-b6ec9ecd1da1)
+- [The managers path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897) - This book feels like it lacks "complete" mental models, but it's the only book of it's kind - so it's the best there is!
+- [Elided Branches](http://www.elidedbranches.com/) - Blog on engineering management.
+- [I.M Wright's Harde Code](https://imwrightshardcode.com) - Engineering Managment from Microsoft, covers most topics.
 
 ### Great books
 
-* [Igor's startup reading list](https://ig2600.blogspot.com/2015/06/startupville-reading-list.html)
-* [Igor's general reading list](http://idvorkin.github.io/books-that-defined-me#undefined)
-* [Igor's ML reading list](https://github.com/idvorkin/techdiary/blob/master/notes/cloud-first-applications.md#references)
-* [Igor's cloud first  reading list](https://github.com/idvorkin/techdiary/blob/master/notes/machine-learning.md#what-should-i-read-to-learn-more)
-* [Igor's tech reading list](http://ig2600.blogspot.com/)
-* Lots more coming
+- [Technical Recruiting And Hiring](https://www.holloway.com/g/technical-recruiting-hiring/about)
+- [Igor's general reading list](/books)
+- Lots more coming

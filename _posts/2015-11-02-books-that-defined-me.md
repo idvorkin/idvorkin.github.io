@@ -6,6 +6,8 @@ inprogress: true
 tags:
   - how igor ticks
   - book-notes
+redirect_from:
+  - /books
 collapsable: true
 author: "Igor Dvorkin"
 ---
