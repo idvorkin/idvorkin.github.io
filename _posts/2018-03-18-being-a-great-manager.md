@@ -4,6 +4,9 @@ title: "Being a great manager"
 date: "2018-03-18 06:24:17 -0700"
 comments: true
 inprogress: true
+redirect_from:
+  - /boss
+  - /manager
 
 tags:
   - software engineering
@@ -14,39 +17,40 @@ tags:
 I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [How will I measure my success?](#how-will-i-measure-my-success)
-    - [Coach, empower, build inclusive and supportive culture](#coach-empower-build-inclusive-and-supportive-culture)
-    - [Productive and results-oriented](#productive-and-results-oriented)
-    - [Great partner to other teams and non-tech partners](#great-partner-to-other-teams-and-non-tech-partners)
+  - [Coach, empower, build inclusive and supportive culture](#coach-empower-build-inclusive-and-supportive-culture)
+  - [Productive and results-oriented](#productive-and-results-oriented)
+  - [Great partner to other teams and non-tech partners](#great-partner-to-other-teams-and-non-tech-partners)
 - [How will I behave to be successful?](#how-will-i-behave-to-be-successful)
-    - [Being a great coach](#being-a-great-coach)
-    - [Communicating clearly](#communicating-clearly)
-    - [Hiring](#hiring)
-    - [Working across teams](#working-across-teams)
-    - [Staying technical](#staying-technical)
-    - [Hack-a-thons](#hack-a-thons)
-    - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
+  - [Being a great coach](#being-a-great-coach)
+  - [Communicating clearly](#communicating-clearly)
+  - [Hiring](#hiring)
+  - [Working across teams](#working-across-teams)
+  - [Staying technical](#staying-technical)
+  - [Hack-a-thons](#hack-a-thons)
+  - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
 - [How others define great managers](#how-others-define-great-managers)
-    - [Google's Project Oxygen](#googles-project-oxygen)
-    - [Amazon's leadership principles](#amazons-leadership-principles)
+  - [Google's Project Oxygen](#googles-project-oxygen)
+  - [Amazon's leadership principles](#amazons-leadership-principles)
 - [Management situations](#management-situations)
-    - [Performance Management and Career Planning](#performance-management-and-career-planning)
-    - [Coaching for job changes](#coaching-for-job-changes)
-    - [Hiring and Recruiting](#hiring-and-recruiting)
-    - [Goal setting](#goal-setting)
-    - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
-    - [Execution tracking](#execution-tracking)
+  - [Performance Management and Career Planning](#performance-management-and-career-planning)
+  - [Coaching for job changes](#coaching-for-job-changes)
+  - [Hiring and Recruiting](#hiring-and-recruiting)
+  - [Goal setting](#goal-setting)
+  - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
+  - [Execution tracking](#execution-tracking)
 - [Igors Super Powers](#igors-super-powers)
-    - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
+  - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
 - [References](#references)
-    - [Great Videos](#great-videos)
-    - [Great Posts and Blogs](#great-posts-and-blogs)
-    - [Great books](#great-books)
+  - [Great Videos](#great-videos)
+  - [Great Posts and Blogs](#great-posts-and-blogs)
+  - [Great books](#great-books)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## How will I measure my success?
 
