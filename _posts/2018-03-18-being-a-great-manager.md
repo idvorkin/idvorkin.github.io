@@ -16,6 +16,8 @@ tags:
 
 I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
 
+ASIDE: Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years.
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
@@ -58,7 +60,7 @@ Acting is easy, but results are hard. Here are the results I measure.
 ### Coach, empower, build inclusive and supportive culture
 
 - Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon Forte)
-- Employee referrals and feedback ([LinkedIn recommendations](https://idvorkin.github.io/linkedin), [Direct Feedback](https://www.linkedin.com/feed/update/urn:li:activity:6575042153284796416/), etc).
+- Employee referrals and [public feedback (from LinkedIn)](/static/igor-feedback-LinkedIn.pdf)
 - Employee career velocity relative to median (you can ask me the ratio in person).
 
 ### Productive and results-oriented
