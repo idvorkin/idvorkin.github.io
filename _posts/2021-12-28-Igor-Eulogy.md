@@ -3,7 +3,6 @@ layout: post
 title: "Igor's Eulogy"
 author: "Igor Dvorkin"
 inprogress: true
-collapsable: true
 featured: true
 comments: true
 permalink: /eulogy
@@ -18,7 +17,29 @@ _Currently the purpose of my eulogy is to guide me in living my life. As death g
 
 _For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
 
-#### As a dealer of smiles and wonder
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [Igor is a ...](#igor-is-a-)
+    - [Dealer of smiles and wonder](#dealer-of-smiles-and-wonder)
+    - [Mostly car free spirit](#mostly-car-free-spirit)
+    - [Disciple of the 7 habits of highly effective people.](#disciple-of-the-7-habits-of-highly-effective-people)
+    - [Fit fellow.](#fit-fellow)
+    - [Emotionally healthy human](#emotionally-healthy-human)
+    - [A husband](#a-husband)
+    - [A coder/technologist](#a-codertechnologist)
+    - [Professional](#professional)
+- [Igor is still writing about being a ...](#igor-is-still-writing-about-being-a-)
+    - [Friend, Mentee, and Mentor](#friend-mentee-and-mentor)
+    - [Father of a wonderful boy, and incredible girl.](#father-of-a-wonderful-boy-and-incredible-girl)
+    - [As an enjoyer of the great outdoors.](#as-an-enjoyer-of-the-great-outdoors)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
+## Igor is a ...
+
+### Dealer of smiles and wonder
 
 Making cards change colors at a spectators command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. Once Igor learned [magic](/magic), that consumed his free time and became his favorite tool.
 
@@ -43,7 +64,7 @@ Back in his 30s he used to juggle lots of things, the coolest of which being [ju
 
     -->
 
-#### As a mostly car free spirit
+### Mostly car free spirit
 
 Igor took a strange pleasure in not driving. Riding his folding bike, or making a long day of public transit with Zach and Amelia. Igor would take the kids on the bus, to the train, to the airport, to ride the airport elevators, just to reverse the process and head home so he could enjoy his kids, and the bus, without spending a dime.
 
@@ -64,11 +85,11 @@ Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66
     * Bike touring with Family.
 -->
 
-#### As a disciple of the 7 habits of highly effective people.
+### Disciple of the 7 habits of highly effective people.
 
 Igor became enthralled by the [7 habits of highly effective people](/7-habits), and used it as his personal life guide. He created a [7 habits video series](https://www.youtube.com/watch?v=_1J7GM3GLzw&list=PLJveOxX-mxxCl4YDfHMyNzMmWUMFxgC1n) so he could better understand the concepts and teach them to others.
 
-#### As a fit fellow.
+### Fit fellow.
 
 Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000\$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never reneged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
 
@@ -97,7 +118,7 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
     * Yoga
 -->
 
-#### As an emotionally healthy human
+### Emotionally healthy human
 
 Igor understood emotional health is the basis of his stability, and [invested](http://idvorkin.github.io/search-inside-yourself) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
@@ -115,7 +136,7 @@ Igor prided himself in being calm like water, and have a grand-mother mind he co
     * Meditation retreats?
 -->
 
-#### As a husband
+### A husband
 
 Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor). Tori values her privacy so this section will be Tori light, and Igor heavy.
 
@@ -131,7 +152,7 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 * To live
 -->
 
-#### As a coder/technologist
+### A coder/technologist
 
 Igor loved technology - taking copious [notes](https://github.com/idvorkin/techdiary) through his technical journeys, putzing with his [blog](https://github.com/idvorkin/idvorkin.github.io) and many small [projects](https://github.com/idvorkin). Igor was REALLY proud when Zach got his own [website](https://www.zacookiegames.com), and when Zach made his first [pull request](https://github.com/idvorkin/zdvorkinweb/pull/5). Igor was also very proud of his first open source [pull request](https://github.com/Homebrew/homebrew-core/pull/48163) for a command line spell checking installer.
 
@@ -148,7 +169,7 @@ Programmer:
 * Igor read books on other languages just to see what better implementation patterns looked like.
 -->
 
-#### As a professional
+### Professional
 
 Igor didn't write this section - but he did describe his [dream job](/job) and his thoughts on being a good [manager](/manager). He also wrote up several cool things he's proud of at work:
 
@@ -166,9 +187,9 @@ To file:
 * Implementing Bit Locker for the phone
 -->
 
-## Roles that are still in point form
+## Igor is still writing about being a ...
 
-### As a Friend, Mentee, and Mentor
+### Friend, Mentee, and Mentor
 
 - To File
   - [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum for expressing emotions.
@@ -195,7 +216,7 @@ To file:
   - Dropped in on the neighbors for fun - just hung out for coffee/bear
   - Everyone had a story, and Igor wanted to hear, and understand them.
 
-### As a father of a wonderful boy, and incredible girl.
+### Father of a wonderful boy, and incredible girl.
 
 - To File
   - Seeing Kids Play Together
@@ -248,19 +269,19 @@ To file:
 
 
 
-## Roles I haven't started writing yet
+-## Roles I haven't started writing yet
 
 
-### Disciplined, Deliberate, Daily
+-### Disciplined, Deliberate, Daily
 
 Discipline is hard. Frequently Igor's discipline started strong at the beginning of the day/week/month but he'd fall of the wagon.  Igor realized that was OK, and started his discipline again the next day. This embodied grandmother mind and being compassionate.
 
-### As someone with cognative health
+-### As someone with cognative health
 
 tbd
 
 
-### As someone who made others happy through pleasure, flow and purpose.
+-### As someone who made others happy through pleasure, flow and purpose.
 
 * How he treated homeless and strangers in passing
 
@@ -268,9 +289,9 @@ tbd
 -->
 
 <!--
-## Igor's helper section
+-## Igor's helper section
 
-### Writing Prompts
+-### Writing Prompts
 
 * For each - split by common vs unique w/others:
 * How do I know when done this section
@@ -284,17 +305,17 @@ tbd
     * Growth Mindset
     * Realize everyone is trying as hard as they can.
 
-### Unfiled ideas
+-### Unfiled ideas
 
 tbd
 
-### Notes
+-### Notes
 
 * Super charged by being weird.
 * [Smiling at you](http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html)
 * [Poetry Slam](http://ig66.blogspot.com/2013/03/poetry-slam-1-last-place.html)
 
-### Template
+-### Template
 
 * To File
 * Archived links
