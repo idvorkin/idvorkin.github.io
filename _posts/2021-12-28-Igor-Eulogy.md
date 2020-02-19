@@ -19,16 +19,17 @@ Wearing a silly hat, his trusty folding bike at his feet, and using a purple fou
 - [Igor is a ...](#igor-is-a-)
     - [Dealer of smiles and wonder](#dealer-of-smiles-and-wonder)
     - [Mostly car free spirit](#mostly-car-free-spirit)
-    - [Disciple of the 7 habits of highly effective people.](#disciple-of-the-7-habits-of-highly-effective-people)
-    - [Fit fellow.](#fit-fellow)
+    - [Disciple of the 7 habits of highly effective people](#disciple-of-the-7-habits-of-highly-effective-people)
+    - [Fit fellow](#fit-fellow)
     - [Emotionally healthy human](#emotionally-healthy-human)
-    - [A husband](#a-husband)
-    - [A coder/technologist](#a-codertechnologist)
+    - [Husband to Tori - his life long partner.](#husband-to-tori---his-life-long-partner)
+    - [Technologist](#technologist)
     - [Professional](#professional)
 - [Igor is still writing about being a ...](#igor-is-still-writing-about-being-a-)
     - [Friend, Mentee, and Mentor](#friend-mentee-and-mentor)
-    - [Father of a wonderful boy, and incredible girl.](#father-of-a-wonderful-boy-and-incredible-girl)
-    - [As an enjoyer of the great outdoors.](#as-an-enjoyer-of-the-great-outdoors)
+    - [Family man](#family-man)
+    - [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
+    - [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -51,6 +52,7 @@ Back in his 30s he used to juggle lots of things, the coolest of which being [ju
     * Original Smile Service
     * Silly hats/clothes
     * Constantly had props with him and practicing.
+    * How he treated homeless and strangers in passing
 * Archived links
     * [Juggling Fire]    * The pass
 * To live
@@ -85,11 +87,13 @@ Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66
     * Bike touring with Family.
 -->
 
-### Disciple of the 7 habits of highly effective people.
+### Disciple of the 7 habits of highly effective people
 
 Igor became enthralled by the [7 habits of highly effective people](/7-habits), and used it as his personal life guide. He created a [7 habits video series](https://www.youtube.com/watch?v=_1J7GM3GLzw&list=PLJveOxX-mxxCl4YDfHMyNzMmWUMFxgC1n) so he could better understand the concepts and teach them to others.
 
-### Fit fellow.
+Discipline is a core concept of "Begin with the end in mind" (Habit 1), and Igor's discipline started strong at the beginning of the day/week/month but he'd often fall of the wagon. Igor realized that was OK, and started his discipline again the next day. This embodied compassion and having grand mother mind.
+
+### Fit fellow
 
 Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000\$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never reneged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
 
@@ -136,7 +140,7 @@ Igor prided himself in being calm like water, and have a grand-mother mind he co
     * Meditation retreats?
 -->
 
-### A husband
+### Husband to Tori - his life long partner.
 
 Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html?q=when+tori+met+igor), and then took several twists and turns to get [married](http://ig66.blogspot.com/2015/01/married-check.html?q=when+tori+met+igor). Tori values her privacy so this section will be Tori light, and Igor heavy.
 
@@ -152,7 +156,7 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 * To live
 -->
 
-### A coder/technologist
+### Technologist
 
 Igor loved technology - taking copious [notes](https://github.com/idvorkin/techdiary) through his technical journeys, putzing with his [blog](https://github.com/idvorkin/idvorkin.github.io) and many small [projects](https://github.com/idvorkin). Igor was REALLY proud when Zach got his own [website](https://www.zacookiegames.com), and when Zach made his first [pull request](https://github.com/idvorkin/zdvorkinweb/pull/5). Igor was also very proud of his first open source [pull request](https://github.com/Homebrew/homebrew-core/pull/48163) for a command line spell checking installer.
 
@@ -216,7 +220,25 @@ To file:
   - Dropped in on the neighbors for fun - just hung out for coffee/bear
   - Everyone had a story, and Igor wanted to hear, and understand them.
 
-### Father of a wonderful boy, and incredible girl.
+### Family man
+
+People think family should be easy to enjoy. That's a lie, enjoying your family is a life long investment, and a muscle to built. Igor built it.
+
+### Father to Amelia - an incredible girl
+
+So TBD:
+
+- To File
+  - Roller Skating
+  - Swimming
+  - Taking for bike rides
+
+Need to split apart Zach and Amelia section.
+
+- To File
+  - Web Site
+
+### Father to Zach - a wonderful boy
 
 - To File
   - Seeing Kids Play Together
@@ -229,7 +251,6 @@ To file:
   - Seeing "raw humanity"
   - Being cool for other kids
   - I choose ...
-  - Enjoying family wasn't easy - it's a muscle to be built, and he built it.
   - How relationship improved when I started walking Zach to school.
   - Bragging about kids section.
   - Weekly Swimming
@@ -244,7 +265,7 @@ To file:
   - Being with kids inspired him
 
 <!--
-### As an enjoyer of the great outdoors.
+- ### Enjoyer of the great outdoors.
 
 * To File
     * Small house, forced them out of it.
@@ -268,27 +289,6 @@ To file:
     * The El Camino de Santiago
 
 
-
--## Roles I haven't started writing yet
-
-
--### Disciplined, Deliberate, Daily
-
-Discipline is hard. Frequently Igor's discipline started strong at the beginning of the day/week/month but he'd fall of the wagon.  Igor realized that was OK, and started his discipline again the next day. This embodied grandmother mind and being compassionate.
-
--### As someone with cognative health
-
-tbd
-
-
--### As someone who made others happy through pleasure, flow and purpose.
-
-* How he treated homeless and strangers in passing
-
-
--->
-
-<!--
 -## Igor's helper section
 
 -### Writing Prompts
