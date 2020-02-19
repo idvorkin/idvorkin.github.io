@@ -14,7 +14,7 @@ tags:
 
 Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 
-_Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into enteraining others at my funeral_
+_Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into entertaining others at my funeral_
 
 _For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
 
@@ -70,7 +70,7 @@ Igor became enthralled by the [7 habits of highly effective people](/7-habits), 
 
 #### As a fit fellow.
 
-Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000\$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never renegged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
+Igor knew physical health was the [source of his energy](https://medium.com/being-healthy/physical-health-a2f648e7574c#.g30t2werl) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000\$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never reneged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
 
 It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, [Igor weighted 230 lbs](https://www.flickr.com/photos/idvorkin/4590579760/in/datetaken/), and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
 
@@ -131,7 +131,24 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 * To live
 -->
 
-#### As a professional
+### As a coder/technologist
+
+Igor loved technology - taking copious [notes](https://github.com/idvorkin/techdiary) through his technical journeys, putzing with his [blog](https://github.com/idvorkin/idvorkin.github.io) and many small [projects](https://github.com/idvorkin). Igor was REALLY proud when Zach got his own [website](https://www.zacookiegames.com), and when Zach made his first [pull request](https://github.com/idvorkin/zdvorkinweb/pull/5). Igor was also very proud of his first open source [pull request](https://github.com/Homebrew/homebrew-core/pull/48163) for a command line spell checking installer.
+
+Igor loved VIM, the command line and TMUX. His dotfile [collection](https://github.com/idvorkin/settings) was impressive, and he even made a [VIM plugin for Onenote](https://github.com/idvorkin/Vim-Keybindings-For-Onenote). Perhaps the command line usage was about minimalism, and as a result Igor loved being able to do everything on his iPad using an external keyboard, a makeshift stand and ssh'ing to a cloud based EC2 instance.
+
+<!--
+Programmer:
+* Igor believed the perfect programmer was Anal retentive and lazy. While Igor was a 10/10 on lazy, he was only a 1/10 for being Anal. As a result, he relied heavily on automated tests, and very little on human process.
+* To empower his laziness Igor focused on tools that are easy to read, mutate and have excellent libraries. Python, and C# being some of his favorites.
+* Igor is a huge beleive in static typing, especially implict static typing.
+* Today, these have become the industry norms, which is great for Igor, because he can stop arguing about it.
+* Igor's coding principles - No duplicate code; Trust tests not experts; Log Bug then Whine;
+* Igor tried to develop in such a way that you could bottom up a design via excellent refactoring of implementation.
+* Igor read books on other languages just to see what better implementation patterns looked like.
+-->
+
+### As a professional
 
 Igor didn't write this section - but he did describe his [dream job](/job) and his thoughts on being a good [manager](/manager). He also wrote up several cool things he's proud of at work:
 
@@ -156,7 +173,7 @@ To file:
 - To File
   - [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum for expressing emotions.
   - Treasured Friendships
-  - In person and over skype
+  - In person and over Skype
   - Mentee, Mentor
 - Archived links
 - To live
@@ -182,11 +199,11 @@ To file:
 
 - To File
   - Seeing Kids Play Together
-  - Teaching 7h/eq values to kids
+  - Teaching 7h/EQ values to kids
   - School events
   - Public transit together
   - teaching kids to be active
-  - Document thier adventures to savor later, and educate them
+  - Document their adventures to savor later, and educate them
   - Teaching them to program
   - Seeing "raw humanity"
   - Being cool for other kids
@@ -247,16 +264,7 @@ tbd
 
 * How he treated homeless and strangers in passing
 
-### As a coder/technologist
 
-* Igor believed the perfect programmer was Anal retentive and lazy. While Igor was a 10/10 on lazy, he was only a 1/10 for being Anal. As a result, he relied heavily on automated tests, and very little on human process.
-* To empower his laziness Igor focused on tools that are easy to read, mutate and have excellent libraries. Python, and C# being some of his favorites.
-* Igor is a huge beleive in static typing, especially implict static typing.
-* Today, these have become the industry norms, which is great for Igor, because he can stop arguing about it.
-* Igor loved VIM, using it in as many programs as he could. Interestingly, as his career progressed he was able to use vim key bindings in every tool he used.
-* Igor's coding principles - No duplicate code; Trust tests not experts; Log Bug then Whine;
-* Igor tried to develop in such a way that you could bottom up a design via excellent refactoring of implementation.
-* Igor read books on other languages just to see what better implementation patterns looked like.
 -->
 
 <!--
