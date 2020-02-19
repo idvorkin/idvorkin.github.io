@@ -131,7 +131,7 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 * To live
 -->
 
-### As a coder/technologist
+#### As a coder/technologist
 
 Igor loved technology - taking copious [notes](https://github.com/idvorkin/techdiary) through his technical journeys, putzing with his [blog](https://github.com/idvorkin/idvorkin.github.io) and many small [projects](https://github.com/idvorkin). Igor was REALLY proud when Zach got his own [website](https://www.zacookiegames.com), and when Zach made his first [pull request](https://github.com/idvorkin/zdvorkinweb/pull/5). Igor was also very proud of his first open source [pull request](https://github.com/Homebrew/homebrew-core/pull/48163) for a command line spell checking installer.
 
