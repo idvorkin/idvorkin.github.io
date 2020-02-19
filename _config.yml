@@ -1,12 +1,12 @@
 # pretzel:
 # engine: liquid
-title:            ""
-description:      "Ramble. Rinse. Repeat."
-logo:             logo.png
-logo-url:   /
+title: ""
+description: "Ramble. Rinse. Repeat."
+logo: logo.png
+logo-url: /
 disqus_shortname: idvorkinblog
-share:            true
-dropcap:			true
+share: true
+dropcap: true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
@@ -14,18 +14,18 @@ url: https://www.idvork.in
 
 # Owner/author information
 owner:
-  name:           Igor Dvorkin
-  avatar:         igordvorkin.jpg
-  email:          idvorkin@gmail.com
+  name: Igor Dvorkin
+  avatar: igordvorkin.jpg
+  email: idvorkin@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Living the good life
+  description: Living the good life
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        idvorkin
-  facebook:       idvorkin
-  github:         idvorkin
+  twitter: idvorkin
+  facebook: idvorkin
+  github: idvorkin
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   UA-73602282-1
+google_analytics: UA-73602282-1
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
@@ -45,19 +45,19 @@ links:
     url: /random
 
 collections:
-    d:
-        output: true
+  d:
+    output: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/Los_Angeles
-future:      true
+timezone: America/Los_Angeles
+future: true
 # highlighter: pygments
-markdown:    kramdown
-paginate:    5
+markdown: kramdown
+paginate: 5
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
+permalink: /:categories/:title
 
 kramdown:
   auto_ids: true
@@ -74,10 +74,10 @@ kramdown:
     coderay_css: class
 
 prose:
-  rooturl: '_posts'
+  rooturl: "_posts"
   #siteurl: 'http://idvorkin.github.io/'
-  relativeLinks: 'https://idvorkin.github.io/links.jsonp'
-  media: 'images'
+  relativeLinks: "https://idvorkin.github.io/links.jsonp"
+  media: "images"
   metadata:
     _posts:
       - name: "published"
@@ -166,17 +166,37 @@ algolia:
   search_only_api_key: d4bae7d1d6328352ce13c0978ca620e9
   index_name: jekyll
   files_to_exclude:
-      - '_d/*'
-      - 'd/*'
-      - 'search.html'
-      - 'index.html'
+    - "_d/*"
+    - "d/*"
+    - "search.html"
+    - "index.html"
+    - "all-posts.html"
 
-plugins_dir: ["jekyll-paginate", "jekyll-sitemap","jekyll-redirect-from"]
+plugins_dir: ["jekyll-paginate", "jekyll-sitemap", "jekyll-redirect-from"]
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+exclude:
+  [
+    "lib",
+    "config.rb",
+    "Gemfile",
+    "Capfile",
+    "Gemfile.lock",
+    "config",
+    "log",
+    "Rakefile",
+    "Rakefile.rb",
+    "tmp",
+    "less",
+    "*.sublime-project",
+    "*.sublime-workspace",
+    "test",
+    "spec",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules",
+  ]
 plugins:
   - jekyll-redirect-from
   - jekyll-paginate
-
 # Allow multiple permalinks for the same post
 # https://help.github.com/articles/redirects-on-github-pages/
