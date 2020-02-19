@@ -13,10 +13,6 @@ tags:
 
 Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 
-_Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into entertaining others at my funeral_
-
-_For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
@@ -36,6 +32,10 @@ _For many of my roles, I'm still figuring out who I want to be, and how I will a
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+_Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into entertaining others at my funeral_
+
+_For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
 
 ## Igor is a ...
 
