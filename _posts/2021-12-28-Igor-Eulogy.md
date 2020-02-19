@@ -148,7 +148,7 @@ Programmer:
 * Igor read books on other languages just to see what better implementation patterns looked like.
 -->
 
-### As a professional
+#### As a professional
 
 Igor didn't write this section - but he did describe his [dream job](/job) and his thoughts on being a good [manager](/manager). He also wrote up several cool things he's proud of at work:
 
