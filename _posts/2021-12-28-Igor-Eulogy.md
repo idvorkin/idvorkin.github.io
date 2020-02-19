@@ -26,10 +26,10 @@ Wearing a silly hat, his trusty folding bike at his feet, and using a purple fou
     - [Technologist](#technologist)
     - [Professional](#professional)
 - [Igor is still writing about being a ...](#igor-is-still-writing-about-being-a-)
-    - [Friend, Mentee, and Mentor](#friend-mentee-and-mentor)
     - [Family man](#family-man)
     - [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
     - [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
+    - [Friend, Mentee, and Mentor](#friend-mentee-and-mentor)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -193,36 +193,9 @@ To file:
 
 ## Igor is still writing about being a ...
 
-### Friend, Mentee, and Mentor
-
-- To File
-  - [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum for expressing emotions.
-  - Treasured Friendships
-  - In person and over Skype
-  - Mentee, Mentor
-- Archived links
-- To live
-  - An awesome listener
-  - Psychic - understood, but didn't need to speak.
-  - Could ask the "right question"
-  - Socratic Method
-  - Cultivated and nurtured
-    - Scheduled
-    - Topics
-    - Mentors by role
-    - Activity
-  - Deep conversations, no fluff, by being vulnerable and open
-  - Always welcome, since showed grandmother mind, gave the gift of attention, and psychic space.
-  - Built mentor network
-    - Helped him flesh out the eulogy
-    - All walks of life
-    - Saw value in each of them
-  - Dropped in on the neighbors for fun - just hung out for coffee/bear
-  - Everyone had a story, and Igor wanted to hear, and understand them.
-
 ### Family man
 
-People think family should be easy to enjoy. That's a lie, enjoying your family is a life long investment, and a muscle to built. Igor built it.
+Igor used to think being a family man would be easy. Being proud of his family, looking back fondly on time with them was easy, but making the time for them, supporting them, teaching them - that was all really hard. Hard yes, but totally worth it.
 
 ### Father to Amelia - an incredible girl
 
@@ -263,6 +236,33 @@ Need to split apart Zach and Amelia section.
 - To live
   - Being with kids recharged him
   - Being with kids inspired him
+
+### Friend, Mentee, and Mentor
+
+- To File
+  - [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum for expressing emotions.
+  - Treasured Friendships
+  - In person and over Skype
+  - Mentee, Mentor
+- Archived links
+- To live
+  - An awesome listener
+  - Psychic - understood, but didn't need to speak.
+  - Could ask the "right question"
+  - Socratic Method
+  - Cultivated and nurtured
+    - Scheduled
+    - Topics
+    - Mentors by role
+    - Activity
+  - Deep conversations, no fluff, by being vulnerable and open
+  - Always welcome, since showed grandmother mind, gave the gift of attention, and psychic space.
+  - Built mentor network
+    - Helped him flesh out the eulogy
+    - All walks of life
+    - Saw value in each of them
+  - Dropped in on the neighbors for fun - just hung out for coffee/bear
+  - Everyone had a story, and Igor wanted to hear, and understand them.
 
 <!--
 - ### Enjoyer of the great outdoors.
