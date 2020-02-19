@@ -1,0 +1,18 @@
+---
+layout: home
+title: Homepage
+tags: []
+---
+<h1> All items </h1>
+
+{% for item in site.posts | sort:title %}
+<p><a href="{{ item.url }}">{{ item.title }}</a>[<a href="{{ item.url }}">{{ item.url }}</a>]</p>
+</p>{{ item.path}}</p>
+{% endfor %}
+
+<h1> Drafts </h1>
+
+{% for item in site.d | sort:title  %}
+<p><a href="{{ item.url }}">{{ item.title }}</a>[<a href="{{ item.url }}">{{ item.url }}</a>]</p>
+</p>{{ item.path}}</p>
+{% endfor %}
