@@ -13,7 +13,7 @@ collapsable: true
 
 Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I've been exploring.
 
-I picked up, and also execute, these habits semi-randomly today. However, as I do with physical health, I'll try to build up a more deliberate system. If you're interseted in building up your emotional intelligence, my "bible" for emotional health practices is currently [SIY](2015-11-25-search-inside-yourself.md)
+I picked up, and also execute, these habits semi-randomly today. However, as I do with physical health, I'll try to build up a more deliberate system. If you're interseted in building up your emotional intelligence, my "bible" for emotional health practices is currently [SIY](/search-inside-yourself)
 
 ### Daily Stream of Conciousness Journalling
 

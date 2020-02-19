@@ -60,7 +60,7 @@ When being a coach maintain the following mindset.
 Some coaching situations are common, so I have deep dived into them.
 
 - [Making Major Decisions](/decisive) - A deep dive on how to improve high impact decision making.
-- [Dealing with Pride](/fuck-pride) - A deep dive on dealing with pride.
+- [Dealing with Pride](/pride) - A deep dive on dealing with pride.
 - [Job Hunting](job-hunt-stress) - A deep dive on job changes
 
 ### The 7 goto coaching questions
