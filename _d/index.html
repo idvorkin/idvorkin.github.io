@@ -4,8 +4,20 @@ title: Homepage
 tags: []
 paginate: 5
 ---
-<h1> Very rough drafts </h1>
-{% for item in site.d %}
-  <p>{{ item.description }}</p>
-  <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+<h1> My drafts </h1>
+{% assign sorted = site.d | sort:"title" %}
+
+{% for item in sorted %}
+<p><a href="{{ item.url }}">{{ item.title }}</a>[<a href="{{ item.url }}">{{ item.url }}</a>]</p>
+</p>{{ item.path}}</p>
+</p>{{ item.title}}</p>
+{% endfor %}
+
+<h1> My Posts </h1>
+{% assign sorted = site.posts | sort:"title" %}
+
+{% for item in sorted %}
+<p><a href="{{ item.url }}">{{ item.title }}</a>[<a href="{{ item.url }}">{{ item.url }}</a>]</p>
+</p>{{ item.path}}</p>
+</p>{{ item.title}}</p>
 {% endfor %}
