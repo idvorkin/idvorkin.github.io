@@ -168,6 +168,7 @@ algolia:
   files_to_exclude:
     - "_d/*"
     - "d/*"
+    - "_posts/*bak"
     - "search.html"
     - "index.html"
     - "all-posts.html"
