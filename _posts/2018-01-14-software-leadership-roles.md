@@ -62,7 +62,7 @@ I've also seen engineering managers take on all of the aforementioned roles depe
 
 ### The hard to handle cases
 
-(Thanks to Chris Gray for bringing up these questions, looking forward to getting folks opinions on the answers)
+(Thanks to my wise colleagues for bringing up these questions, looking forward to getting folks opinions on the answers)
 
 - People are filling the same role, and keep stepping on each others toes
 - People think they are filling a role but they are not, or can not
