@@ -10,6 +10,8 @@ redirect_from:
   - /guilt
 ---
 
+Shame and guilt are similar emotions that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt drives people to amend their mistakes.
+
 Unrealistic expectations cause into failure
 Unmet commitments harden into failure
 Failure hardens into guilt.

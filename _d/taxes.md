@@ -30,6 +30,8 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [Unexpected expenses](#unexpected-expenses)
 - [Philosophy](#philosophy)
     - [The point of money](#the-point-of-money)
+        - [What would you do for less money?](#what-would-you-do-for-less-money)
+        - [Making more vs spending more](#making-more-vs-spending-more)
     - [Believing the market only goes up](#believing-the-market-only-goes-up)
     - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
     - [Timing the markets](#timing-the-markets)
@@ -129,9 +131,17 @@ An education only after tax savings account. You put in money after tax, get tax
 
 ### The point of money
 
-When talking about money, a financial planner asked me, what is the point of your savings? I said the point was making a big pile so I'd feel good.
+When seeing a financial planner, they asked me - what is the point of your savings? I said the point was making a big pile of money so I'd feel safe.
 
-Yeah that was a mistake. Money is a tool.
+Yeah that was a mistake. Money is a tool. Use it to make your life better. Great uses are experiences with your children, investments in your health, and things that avoid a fight.
+
+#### What would you do for less money?
+
+If you wouldn't take a job for a pay cut, you probably shouldn't take the job.
+
+#### Making more vs spending more
+
+See Parkinson's law, which applies to both time and money. The task you have will expand to all the money (or time) available to it.
 
 ### Believing the market only goes up
 
