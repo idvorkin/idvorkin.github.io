@@ -9,7 +9,7 @@ comments: true
 To effectively share my thinking. I'll build my idea sharing muscle by:
 
 1. Practicing thinking by writing.
-1. Remembering, developing and sharing, my past thinking
+1. Remembering, developing and sharing, my past thinking.
 1. Defining, and holding my self accountable to "Why" I'm doing things.
 
 My non goals in blogging:
