@@ -24,7 +24,7 @@ Here are my voices, I'm trying to teach myself to spend some time talking to all
 - **Terrance** - my frustrations with my wife
 - **Frank** - my guilt I'm not doing enough as a father.
 
-**Anxieties (Retired) **
+**Anxieties (Retired)**
 
 - **Mo** - my anxiety about money (retired since the the stock market went through roof).
 - **Wilma** - my end end of month anxiety around hitting my weight goals.
