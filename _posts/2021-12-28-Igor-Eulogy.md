@@ -160,7 +160,7 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 
 Igor loved technology - taking copious [notes](https://github.com/idvorkin/techdiary) through his technical journeys, putzing with his [blog](https://github.com/idvorkin/idvorkin.github.io) and many small [projects](https://github.com/idvorkin). Igor was REALLY proud when Zach got his own [website](https://www.zacookiegames.com), and when Zach made his first [pull request](https://github.com/idvorkin/zdvorkinweb/pull/5). Igor was also very proud of his first open source [pull request](https://github.com/Homebrew/homebrew-core/pull/48163) for a command line spell checking installer.
 
-Igor loved VIM, the command line and TMUX. His dotfile [collection](https://github.com/idvorkin/settings) was impressive, and he even made a [VIM plugin for Onenote](https://github.com/idvorkin/Vim-Keybindings-For-Onenote). Perhaps the command line usage was about minimalism, and as a result Igor loved being able to do everything on his iPad using an external keyboard, a makeshift stand and ssh'ing to a cloud based EC2 instance.
+Igor loved VIM, the command line and TMUX. His dotfile [collection](https://github.com/idvorkin/settings) was impressive, and he even made a [VIM plugin for Onenote](https://github.com/idvorkin/Vim-Keybindings-For-Onenote). Perhaps the command line usage was about minimalism, and as a result Igor loved being able to do everything on his [iPad](https://github.com/idvorkin/techdiary/blob/master/notes/ios-nomad.md) using an external keyboard, a makeshift stand and ssh'ing to a cloud based EC2 instance.
 
 <!--
 Programmer:
