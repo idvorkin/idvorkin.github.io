@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Staying warm and  biking"
+title: "Staying warm"
 author: "Igor Dvorkin"
 comments: true
 
@@ -8,9 +8,13 @@ tags:
   - toys
   - biking
   - health
+permalink: /warm
+redirect_from:
+  - /warmth
+  - /cold
 ---
 
-Warmth and biking, both things that make my very happy. Here are the products that allow me to do both.
+Staying warm is important, here's the gear I use on and off the bike
 
 ### Staying warm in general
 
@@ -40,16 +44,4 @@ I keep getting asked for winter bike gear recommendations so here is my list.  
 
 **Bike Rain Pants** - If I don't want to wear tights and it's raining I've got the [shower pass club convertible](https://www.showerspass.com/products/mens-club-convertible-2-pant), they're the best I've found, but I don't love them since the length doesn't work for me.
 
-**Panniers** - [Orltieb](http://www.rei.com/search?query=orltieb+pannier) - I couldn't believe I spent 200$ on a set of saddle bags, but true story, I bought the 50$ kind, then the 100\$ kind then finally these, and I've used them for 8 years with a single problem.
-
 **Toe Covers** - [These](http://www.amazon.com/Meister-Thermal-Neoprene-Booties-Cycling/dp/B00QW10ZHO/ref=sr_1_7?ie=UTF8&qid=1448076697&sr=8-7&keywords=toe+warmers) work pretty well to keep your feet warm. They're easy to lose track of though.
-
-### Bike accoutrements
-
-**Head Phones** - [Aftershokz Air](https://aftershokz.com/products/trekz-air) are bone conduction headphones that let you listen to music without blocking the street noise. Fantastic product.
-
-**Light** - I'd recommend a minimum of  600 lumens, and make sure it can charge over USB.   I currently use the [urban 800](http://www.lightandmotion.com/the-perfect-light/on-bike/road/urban-800-fast-charge).  I used to use the  [Taz 1200](http://www.amazon.com/gp/product/B008KKNPCM/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B008KKNPCM&linkCode=as2&tag=ighe-20), but it was too bulky, and I don't need that many lumens
-
-### Brompton specific accoutrements
-
-As you know, I love my Brompton, here's a my recommended [accoutrements.](http://idvorkin.github.io/brompton-toys)
