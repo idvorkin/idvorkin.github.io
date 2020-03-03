@@ -15,7 +15,6 @@ redirect_from:
 Goal are critcal, there are multiple goal systems and they have consequences. They are mechansims to deliver without micro managements.
 
 <!-- prettier-ignore-start -->
-<!-- prettier-ignore-end -->
 
 <!-- vim-markdown-toc GFM -->
 
@@ -23,15 +22,16 @@ Goal are critcal, there are multiple goal systems and they have consequences. Th
 - [Mission, Vision, Tenants, Goals](#mission-vision-tenants-goals)
 - [What vs How](#what-vs-how)
 - [Goal systems OKR vs SMART](#goal-systems-okr-vs-smart)
-  - [SMART Goals](#smart-goals)
-  - [OKR](#okr)
-  - [Measuring goals](#measuring-goals)
-  - [Extrinsic vs Intrinsic Motivations.](#extrinsic-vs-intrinsic-motivations)
-  - [Transparent Goals](#transparent-goals)
-  - [Philosphy](#philosphy)
+    - [SMART Goals](#smart-goals)
+    - [OKR](#okr)
+    - [Measuring goals](#measuring-goals)
+    - [Extrinsic vs Intrinsic Motivations.](#extrinsic-vs-intrinsic-motivations)
+    - [Transparent Goals](#transparent-goals)
+    - [Philosphy](#philosphy)
 - [Culture vs Strategy](#culture-vs-strategy)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## Why goals
 
