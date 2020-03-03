@@ -32,7 +32,7 @@ Everyone can make a mistake once, that's totally fine. Repeating mistakes is una
     - [How to ensure they are happening?](#how-to-ensure-they-are-happening)
     - [Per company differences?](#per-company-differences)
     - [Should I use this beyond service outages?](#should-i-use-this-beyond-service-outages)
-- [Reference](#reference)
+- [Related Reading](#related-reading)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -67,7 +67,7 @@ Everyone can make a mistake once, that's totally fine. Repeating mistakes is una
 
 ### Should I use this beyond service outages?
 
-## Reference
+## Related Reading
 
 - [I.M. Wright](https://imwrightshardcode.com/2019/10/tell-me-why-incident-rcas/) equivelant post
 - [COE Template](https://medium.com/@josh_70523/postmortem-correction-of-error-coe-template-db69481da31d)
