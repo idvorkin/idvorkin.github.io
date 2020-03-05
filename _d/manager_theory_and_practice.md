@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Manager Theory and Practice"
+title: "Igor's Book of Management Practice"
 comments: true
 inprogress: true
 tags:
@@ -8,24 +8,14 @@ tags:
   - job-hunt
 ---
 
-Managing is hard. Lessons are hard earned, and should be cherished. This post is designed to draw out my opinions on management, reminding me how best to manage and help me converge on good anecdotes.
+This is the draft post being migrated to [here](/the-manager-book). Managing is hard. Lessons are hard earned, and should be cherished. This series of posts is designed to draw out my opinions on management. It reminds me how to behave, and encourages others to poke into my reasoning and help me improve. I'm using an interview format for this post, as that's an easy way to start.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [What does a manager do](#what-does-a-manager-do)
-    - [How do you measure your success?](#how-do-you-measure-your-success)
-    - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
-    - [How do you build a team?](#how-do-you-build-a-team)
-        - [People boot strap.](#people-boot-strap)
-        - [Charter/Execution boot strap](#charterexecution-boot-strap)
-    - [Why is management attractive to you?](#why-is-management-attractive-to-you)
-    - [What in your mind are the responsibilities of a manager?](#what-in-your-mind-are-the-responsibilities-of-a-manager)
-    - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
-    - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
+- [Part #1: What does a manager do](#part-1-what-does-a-manager-do)
     - [Horizontal vs Vertical: What specific types of duties would you like to do help with at this company?](#horizontal-vs-vertical-what-specific-types-of-duties-would-you-like-to-do-help-with-at-this-company)
-    - [Should managers code?](#should-managers-code)
-- [Managing and Developing People](#managing-and-developing-people)
+- [Part 2: Managing and Developing People](#part-2-managing-and-developing-people)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [Challenging feedback?](#challenging-feedback)
     - [What is the point of a 1:1?](#what-is-the-point-of-a-11)
@@ -38,9 +28,9 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
     - [What is your ideal culture?](#what-is-your-ideal-culture)
     - [How do you make a good culture?](#how-do-you-make-a-good-culture)
-- [Business Acumen](#business-acumen)
+- [Part 3: Business Acumen](#part-3-business-acumen)
     - [Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?](#discuss-this-companies-trajectory-as-you-see-it-what-choices-do-they-think-theyre-good-and-bad-at-would-you-have-done-things-differently-what-problems-do-you-see-coming-up-in-the-future)
-- [Self Assessment and Weakness](#self-assessment-and-weakness)
+- [Part 4: Self Assessment and Weakness](#part-4-self-assessment-and-weakness)
     - [Disagreement answer format](#disagreement-answer-format)
     - [What was the biggest 'mental model' shift you had from IC to manager?](#what-was-the-biggest-mental-model-shift-you-had-from-ic-to-manager)
     - [Top Weakness](#top-weakness)
@@ -67,7 +57,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
         - [Over committing my team](#over-committing-my-team)
     - [What would a report/peer/manager feedback on you be? Strengths, areas for development, etc.](#what-would-a-reportpeermanager-feedback-on-you-be-strengths-areas-for-development-etc)
     - [How would you assess if someone is a good manager?](#how-would-you-assess-if-someone-is-a-good-manager)
-- [Process and Mechanism](#process-and-mechanism)
+- [Part 5: Process and Mechanism](#part-5-process-and-mechanism)
     - [Process Patterns](#process-patterns)
     - [Process Anti-Patterns:](#process-anti-patterns)
     - [What kind of process have you followed in the past and what has worked well for you?](#what-kind-of-process-have-you-followed-in-the-past-and-what-has-worked-well-for-you)
@@ -78,14 +68,14 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
     - [What process hasn't worked?](#what-process-hasnt-worked)
     - [How do you institute the right process at the right time? How do you know when you need something more formal?](#how-do-you-institute-the-right-process-at-the-right-time-how-do-you-know-when-you-need-something-more-formal)
     - [Have they ever removed process? Why or why not?](#have-they-ever-removed-process-why-or-why-not)
-- [Hiring](#hiring)
+- [Part 6: Hiring](#part-6-hiring)
     - [What are you looking for in an engineer when you recruit?](#what-are-you-looking-for-in-an-engineer-when-you-recruit)
     - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
     - [Are they more comfortable with generalists or specialists?](#are-they-more-comfortable-with-generalists-or-specialists)
     - [How do you think about hiring?](#how-do-you-think-about-hiring)
     - [How have you optimized the recruiting process in the past? Have they thought about the recruiting funnel and how you can optimize different parts of it?](#how-have-you-optimized-the-recruiting-process-in-the-past-have-they-thought-about-the-recruiting-funnel-and-how-you-can-optimize-different-parts-of-it)
     - [What are their thoughts on structured interview loops vs. non-structured free-form loops?](#what-are-their-thoughts-on-structured-interview-loops-vs-non-structured-free-form-loops)
-- [Firing and Performance Management](#firing-and-performance-management)
+- [Part 7: Firing and Performance Management](#part-7-firing-and-performance-management)
     - [How do you deal with people performance issues?](#how-do-you-deal-with-people-performance-issues)
     - [Coach employee back to success](#coach-employee-back-to-success)
     - [Have you ever had to implement a PIP (performance improvement plan)? What are your thoughts on it?](#have-you-ever-had-to-implement-a-pip-performance-improvement-plan-what-are-your-thoughts-on-it)
@@ -98,122 +88,12 @@ Managing is hard. Lessons are hard earned, and should be cherished. This post is
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## What does a manager do
-
-### How do you measure your success?
-
-Success of my team: - People love their team. - People have clear understanding of career growth/progression and how their work supports it.
-
-Inputs and Outputs:
-
-4 Dimensions:
-
-- Business Results: Ultimately the team delivers business value for our customers and organization. Define success (KPI), and help team understand and break it down.
-- People Growing in a high performance team: The team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.
-- Engineering Efficiency and Process: Our engineering systems ensure a pit of success where things which can be automated have been, and we have high velocity releases with minimal risk.
-- Technical Assets: Are systems are extensible in the ways that support the business. Our operational burden is minimal (side bar: to help me prioritize I'm on the pages), and our technical debt is applied judiciously (like take debt if you might be able to write off the asset)
-
-### How do you describe your job to people outside the industry?
-
-I run a factory which produces widgets and has employees. For those in the industry this translates to:
-
-- Widget == Business Results
-- Factory Workers == Team health and growing, leaders who make software
-- Factory and Operating procedures == Software Design Life Cycle, Architecture, Tech Assets
-
-My role:
-
-- I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.
-- I Am Responsible the workers in the factory, are they healthy, learning, wanting to come to work every day, getting along with co-workers.
-- I'm also responsible for the efficiency of the factory. Is production good and improving, Can the factory re-tool quickly. Have we built the right scaffolding in the factory to easily change the kinds of widgets we make.
-
-Top metrics:
-
-- Did we make the right widgets on time and budget
-- Are the works happy based on surveys
-- Is our factory solid and able to make new stuff quickly and maintain production.
-
-### How do you build a team?
-
-#### People boot strap.
-
-In the ideal world:
-
-- Start with a high level view of the business
-- Put in places the senior developers to build out the architecture and process
-- Start working by getting your SDE-IIs and SDE-Is
-
-In the real world:
-
-- Vague Idea
-- Add people as you find them (however, hard stop when too many juniors)
-- Pick some easy wins, and get those started, ready to pick up debt to see what we can do.
-- As you wait to hire more experienced folks try to borrow folks from other teams ideally for a rotation or at least for bar raising designs, architecture and mentorship
-
-#### Charter/Execution boot strap
-
-- North star vision
-- First experiments in tech and market
-- Find the first wins to tune
-- Build out early roadmap and product.
-- Continuous improvement as people join.
-
-### Why is management attractive to you?
-
-- On deathbed, the product I want is people who grew
-  - Cliche: Love your people, want to see them thrive and grow
-  - Want to save folks from unsustainable, and treat folks as people
-- Get shit done
-  - Clear roadblocks
-  - Ship
-- Skill, clarifying, building consensus, sharing the story and meaning.
-- Leader Ownership, but not a good enough PM, and very strong tech
-- Lead and inspire
-- Servant leadership
-- On top of best practices
-
-### What in your mind are the responsibilities of a manager?
-
-### Hardest part about being a manager
-
-- Surprisingly: People think firing it's not.
-- Greedy: telling team I'm quitting, tears, ride bike, etc.
-- Actual: When need to surprise folks, abrupt direction change killing projects.
-- Expected: Layoffs, when know and can't tell.
-
-### What do you do in the first 90 days?
-
-_First 90 days is the book_
-
-Outputs:
-
-- Early Win: Figure out the situation, and deliver a win.
-- Trust: Relationships with team, and peers, and partners.
-- Knowledge: Know critical parts of business, tech, org.
-
-**Learn**
-
-Learning as an investment process. Planning to learn. Figuring out the best sources of insight. Using structured methods to accelerate learning.
-
-**Build Trust and Relationship**
-
-Build Your Team Inheriting a team and changing it. Managing the tension between short-term and long-term goals. Working team restructuring and organizational architecture issues in parallel. Putting in place new team processes.
-
-Create Alliances The trap of thinking that authority is enough. Identifying whose support is critical. Mapping networks of influence and patterns of deference. Altering perceptions of interests and alternatives.
-
-**Diagnose, agree, and find 90 day win**
-
-Match Strategy to Situation The dangers of “one-best-way” thinking. Diagnosing the situation to develop the right strategy. The STARS model of types of transitions. Using the model to analyze portfolios, and lead change.
-
-Negotiate Success Building a productive working relationship with a new boss. The five-conversations framework. Defining expectations. Agreeing on a diagnosis of the situation. Figuring out how to work together. Negotiating for resources. Putting together your 90-day plan.
-
-Achieve Alignment The role of the leader as organizational architect. Identifying the root causes of poor performance. Aligning strategy, structure, systems, skills, and culture.
-
-Secure Early Wins Avoiding common traps. Figuring out A-item priorities. Creating a compelling vision. Building personal credibility. Getting started on improving organizational performance. Plan-then-implement change versus collective learning.
+## Part #1: What does a manager do
 
 ### Horizontal vs Vertical: What specific types of duties would you like to do help with at this company?
 
-Beyond "My team", there are several initiatives I like to drive, 1) recruiting 2) interns 3) inclusion and diversity. Tech: Iterative, Metrics Driven, Full CD.
+Beyond "My team", there are several non-tech initiatives I like to drive, 1) recruiting 2) interns 3) inclusion and diversity.
+On the tech side: Iterative, Metrics Driven, Hard off the wheel automation.
 
 Recruiting
 
@@ -239,19 +119,7 @@ Culture
 - Inclusion
 - Always improving.
 
-### Should managers code?
-
-Managers should read code on specific occasions, but they can't be on critical path because their time is often needed to deal with urgent situations. Thus, they can only write low importance code usually something you'd assign to an SDE-I. At that point, you have a very expensive priority inversion.
-
-That said, SDMs need to use their product just like their customers do to be able to better understand and meet the customer need. Like wise, SDMs need to use their development tools periodically, which should include the code/test/deploy cycle, so they are better able to understand and meet their team's (aka other big customer) need.
-
-SDMs should be reading code occasionally:
-
-1. Spot checking - SDMs should have a good "something is fishy" intuition, and should be able to independently and discreetly prove or disprove their intuition.
-1. Assessing people - Code is a major deliverable for developers and should be inspected as part of people assessment.
-1. Deep dive during major outages - In high risk, time critical situations like outages, you want your best people reviewing the changes, and this includes SDMs. If an SDM can't understand a high risk time sensitive code change, it can be, and should be simplified.
-
-## Managing and Developing People
+## Part 2: Managing and Developing People
 
 ### How do you keep people motivated?
 
@@ -408,7 +276,7 @@ Here you're getting people are at a career level and are happy with a lot of wha
 - Incite pride and purpose
 - Repeat/Repeat/Repeat
 
-## Business Acumen
+## Part 3: Business Acumen
 
 ### Discuss this companies trajectory as you see it. What choices do they think they're good and bad at? Would you have done things differently? What problems do you see coming up in the future?
 
@@ -424,7 +292,7 @@ Here you're getting people are at a career level and are happy with a lot of wha
 
 **Linked In**
 
-## Self Assessment and Weakness
+## Part 4: Self Assessment and Weakness
 
 ### Disagreement answer format
 
@@ -580,7 +448,7 @@ Using the same metrics I apply to myself. For the how I'd:
 - Ask them about their architecture
 - Ask them the interview questions
 
-## Process and Mechanism
+## Part 5: Process and Mechanism
 
 ### Process Patterns
 
@@ -701,7 +569,7 @@ I’m usually error on the lack of process. E.g. Let people volunteer to fix and
 - IC’s coming to a group status meeting. Reduced to just seniors of the teams, and focused on them.
 - Switch from “group status report” to rotating meetings, but that made it worse as they never showed up.
 
-## Hiring
+## Part 6: Hiring
 
 ### What are you looking for in an engineer when you recruit?
 
@@ -804,7 +672,7 @@ Most important part of sales:
   - Do code reviews
   - Do a mock interview + debrief
 
-## Firing and Performance Management
+## Part 7: Firing and Performance Management
 
 ### How do you deal with people performance issues?
 
