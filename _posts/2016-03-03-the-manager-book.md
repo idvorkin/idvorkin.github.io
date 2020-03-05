@@ -4,7 +4,8 @@ title: "Igor's book of manager"
 date: "2020-03-05 00:56:07 +0000"
 tags:
   - manager
-  - job-hunt
+redirect_from:
+  - /manager-book
 ---
 
 Managing is hard. Lessons are hard earned, and should be cherished. This series of posts is designed to draw out my opinions on management. It reminds me how to behave, and encourages others to poke into my reasoning and help me improve. I'm using an interview format for this post, as that's an easy way to start.
