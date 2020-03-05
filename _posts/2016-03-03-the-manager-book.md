@@ -24,6 +24,12 @@ Managing is hard. Lessons are hard earned, and should be cherished. This series 
     - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
     - [Should managers code?](#should-managers-code)
+- [Part 2: Managing and Developing People](#part-2-managing-and-developing-people)
+- [Part 3: Business Acumen](#part-3-business-acumen)
+- [Part 4: Process and Mechanism](#part-4-process-and-mechanism)
+- [Part 5: Hiring](#part-5-hiring)
+- [Part 6: Firing and Performance Management](#part-6-firing-and-performance-management)
+- [Part 7: Further reading](#part-7-further-reading)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -161,3 +167,18 @@ SDMs should be reading code occasionally:
 1. Spot checking - SDMs should have a good "something is fishy" intuition, and should be able to independently and discreetly prove or disprove their intuition.
 1. Assessing people - Code is a major deliverable for developers and should be inspected as part of people assessment.
 1. Deep dive during major outages - In high risk, time critical situations like outages, you want your best people reviewing the changes, and this includes SDMs. If an SDM can't understand a high risk time sensitive code change, it can be, and should be simplified.
+
+## Part 2: Managing and Developing People
+
+## Part 3: Business Acumen
+
+## Part 4: Process and Mechanism
+
+## Part 5: Hiring
+
+## Part 6: Firing and Performance Management
+
+## Part 7: Further reading
+
+- A related/to be merged post on my aspirations as a [manager](/boss).
+- A related/to be merged post showing [references](/boss#references).
