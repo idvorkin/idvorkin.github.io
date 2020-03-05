@@ -8,7 +8,7 @@ redirect_from:
   - /manager-book
 ---
 
-Managing is hard. Lessons are hard earned, and should be cherished. This series of posts is designed to draw out my opinions on management. It reminds me how to behave, and encourages others to poke into my reasoning and help me improve. I'm using an interview format for this post, as that's an easy way to start.
+Managing is hard. Lessons are hard earned and should be cherished. This series of posts is designed to draw out my opinions on management. It reminds me how to behave, and encourages others to poke into my reasoning and help me improve. I'm using an interview format for this post, as that's an easy way to start.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -17,10 +17,9 @@ Managing is hard. Lessons are hard earned, and should be cherished. This series 
     - [What are a managers responsibilities?](#what-are-a-managers-responsibilities)
     - [How do you measure their success?](#how-do-you-measure-their-success)
     - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
-    - [How do you build a team?](#how-do-you-build-a-team)
+    - [How do you build a new team?](#how-do-you-build-a-new-team)
         - [People boot strap.](#people-boot-strap)
         - [Charter/Execution boot strap](#charterexecution-boot-strap)
-    - [Why is management attractive to you?](#why-is-management-attractive-to-you)
     - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
     - [Should managers code?](#should-managers-code)
@@ -30,6 +29,8 @@ Managing is hard. Lessons are hard earned, and should be cherished. This series 
 - [Part 5: Hiring](#part-5-hiring)
 - [Part 6: Firing and Performance Management](#part-6-firing-and-performance-management)
 - [Part 7: Other resources](#part-7-other-resources)
+- [Part 8: Personal Questions](#part-8-personal-questions)
+    - [Why is management attractive to you?](#why-is-management-attractive-to-you)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -49,10 +50,10 @@ An acid test:
 - People have clear understanding of career growth/progression and how their work supports it.
 -->
 
-- Business Results: Ultimately the team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.
-- People Growing in a high performance team: The team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.
-- Engineering Efficiency and Process: Our engineering systems ensure a pit of success where things which can be automated have been, and we have high velocity releases with minimal risk.
-- Technical Assets: Are systems are extensible in the ways that support the business. Our operational burden is minimal (side bar: to help me prioritize I'm on the pages), and our technical debt is applied judiciously (like take debt if you might be able to write off the asset)
+- **Business Results**: Ultimately the team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.
+- **People Growing in a high performance team**: The team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.
+- **Engineering Efficiency and Process**: Our engineering systems ensure a pit of success where things which can be automated have been, and we have high velocity releases with minimal risk.
+- **Technical Assets**: Are systems are extensible in the ways that support the business. Our operational burden is minimal (side bar: to help me prioritize I'm on the pages), and our technical debt is applied judiciously (like take debt if you might be able to write off the asset)
 
 ### How do you describe your job to people outside the industry?
 
@@ -65,18 +66,18 @@ I run a factory which produces widgets and has employees. For those in the indus
 
 My role:
 
-- Business Results: I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.
-- People growing in a high performing team: I am responsible for the workers in the factory: Are they healthy, learning, wanting to come to work every day, getting along with co-workers.
-- Engineering Efficiency and Process: I am responsible for the efficiency of the factory: Is production good and improving? Are widgets coming out consistently and on schedule? Do new employees know what to do? Does everyone know what to do if there's an emergency?
-- Technical Assets I am responsible for the machines we build and maintain: Can the machines in the factory be adjusted for the different types of widets we need to build? Do the machines mostly work or do they need constant adjustment? Are the machines we bought used to high efficiency?
+- **Business Results:** I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.
+- **People growing in a high performing team:** I am responsible for the workers in the factory: Are they healthy, learning, wanting to come to work every day, getting along with co-workers.
+- **Engineering Efficiency and Process:** I am responsible for the efficiency of the factory: Is production good and improving? Are widgets coming out consistently and on schedule? Do new employees know what to do? Does everyone know what to do if there's an emergency?
+- **Technical Assets:** I am responsible for the machines we build and maintain: Can the machines in the factory be adjusted for the different types of widets we need to build? Do the machines mostly work or do they need constant adjustment? Are the machines we bought used to high efficiency?
 
 Top metrics:
 
-- Business Resutls: Did we make the right widgets on time and budget?
-- People Growing: Are the works happy based on surveys
-- Egineering Efficiency and Technical Assets: Is our factory solid and able to make new stuff quickly and maintain production?
+- **Business Results**: Did we make the right widgets on time and budget?
+- **People Growing**: Are the works happy based on surveys
+- **Egineering Efficiency and Technical Assets**: Is our factory solid and able to make new stuff quickly and maintain production?
 
-### How do you build a team?
+### How do you build a new team?
 
 #### People boot strap.
 
@@ -100,20 +101,6 @@ In the real world:
 - Find the first wins to tune
 - Build out early roadmap and product.
 - Continuous improvement as people join.
-
-### Why is management attractive to you?
-
-- On deathbed, the product I want is people who grew
-  - Cliche: Love your people, want to see them thrive and grow
-  - Want to save folks from unsustainable jobs, and treat folks as people not resources.
-- Get shit done
-  - Clear roadblocks
-  - Ship
-- Skill, clarifying, building consensus, sharing the story and meaning.
-- Leader Ownership, but not a good enough PM, and very strong tech
-- Lead and inspire
-- Servant leadership
-- On top of best practices
 
 ### Hardest part about being a manager
 
@@ -179,3 +166,26 @@ SDMs should be reading code occasionally:
 ## Part 7: Other resources
 
 - A related post which is to be merged, is my aspirations as a [manager](/boss). It has a good collection of related material section there for other resources
+
+## Part 8: Personal Questions
+
+### Why is management attractive to you?
+
+On my deathbed, the product I will be most proud of is the people who I watched blossom and grow. It's cliche, but when you love your people they know it, they thrive, and do their best work. It's not just about the work, I want to make sure people think of thier lives as well, because, well, that's even more important.
+
+I'm energized by getting shit done. The though of shipping, clearing roadblocks, and never being blocked puts a smile on face.
+
+Lastly, I love understanding what is going on, coming up with win/win solutions, and transforming those solutions into a meaningful story that people rally behind.
+
+I thrive on this feedback I got when I left a team:
+
+_"Goodbye Igor! Thank you for helping me achieve to the next level both physically and mentally 😜 I cherish the moment when we grind through challenges during peak days, when I’m in trouble and you say “Just escalate, I will handle it”, and when you show your magic treat in happy hour! You are a great boss and great teacher."_
+
+<!--
+
+- Skill, clarifying, building consensus, sharing the story and meaning.
+- Leader Ownership, but not a good enough PM, and very strong tech
+- Lead and inspire
+- Servant leadership
+- On top of best practices
+-->
