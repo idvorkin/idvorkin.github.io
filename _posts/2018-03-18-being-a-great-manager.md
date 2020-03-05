@@ -45,7 +45,7 @@ ASIDE: Few things make me prouder then this [public feedback on LinkedIn](/stati
     - [Execution tracking](#execution-tracking)
 - [Igors Super Powers](#igors-super-powers)
     - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
-- [References](#references)
+- [Other Resources](#other-resources)
     - [Great Videos](#great-videos)
     - [Great Posts and Blogs](#great-posts-and-blogs)
     - [Great books](#great-books)
@@ -283,7 +283,7 @@ Someone once asked my why I'm a good coach, took me a while, here's what I came 
 - I've read and digested slews of [self help books](/books) which while often mocked, are filled with great models.
 - I actively study and practice [coaching](/coach) and effective [decision making](/decide)
 
-## References
+## Other Resources
 
 ### Great Videos
 

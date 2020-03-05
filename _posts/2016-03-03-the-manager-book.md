@@ -13,9 +13,9 @@ Managing is hard. Lessons are hard earned, and should be cherished. This series 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Part #1: What does a manager do](#part-1-what-does-a-manager-do)
-    - [What are a managers responsibilities](#what-are-a-managers-responsibilities)
-    - [How do you measure your success?](#how-do-you-measure-your-success)
+- [Part 1: What does a manager do?](#part-1-what-does-a-manager-do)
+    - [What are a managers responsibilities?](#what-are-a-managers-responsibilities)
+    - [How do you measure their success?](#how-do-you-measure-their-success)
     - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
     - [How do you build a team?](#how-do-you-build-a-team)
         - [People boot strap.](#people-boot-strap)
@@ -29,18 +29,18 @@ Managing is hard. Lessons are hard earned, and should be cherished. This series 
 - [Part 4: Process and Mechanism](#part-4-process-and-mechanism)
 - [Part 5: Hiring](#part-5-hiring)
 - [Part 6: Firing and Performance Management](#part-6-firing-and-performance-management)
-- [Part 7: Further reading](#part-7-further-reading)
+- [Part 7: Other resources](#part-7-other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Part #1: What does a manager do
+## Part 1: What does a manager do?
 
-### What are a managers responsibilities
+### What are a managers responsibilities?
 
-### How do you measure your success?
+### How do you measure their success?
 
-Success of a manager is the success of the team. This manifest in 4 dimensions:
+The success of a manager is the success of the team. This manifest in 4 dimensions:
 
 <!--
 An acid test:
@@ -48,8 +48,6 @@ An acid test:
 - People love their team.
 - People have clear understanding of career growth/progression and how their work supports it.
 -->
-
-4 Dimensions:
 
 - Business Results: Ultimately the team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.
 - People Growing in a high performance team: The team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.
@@ -178,7 +176,6 @@ SDMs should be reading code occasionally:
 
 ## Part 6: Firing and Performance Management
 
-## Part 7: Further reading
+## Part 7: Other resources
 
-- A related/to be merged post on my aspirations as a [manager](/boss).
-- A related/to be merged post showing [references](/boss#references).
+- A related post which is to be merged, is my aspirations as a [manager](/boss). It has a good collection of related material section there for other resources
