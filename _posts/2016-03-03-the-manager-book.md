@@ -177,9 +177,9 @@ I'm energized by getting shit done. The though of shipping, clearing roadblocks,
 
 Lastly, I love understanding what is going on, coming up with win/win solutions, and transforming those solutions into a meaningful story that people rally behind.
 
-I thrive on this feedback I got when I left a team:
+When I'm having a rough day, nothing brings me back up like reading this kind of feedback that I got when I left a team.
 
-_"Goodbye Igor! Thank you for helping me achieve to the next level both physically and mentally 😜 I cherish the moment when we grind through challenges during peak days, when I’m in trouble and you say “Just escalate, I will handle it”, and when you show your magic treat in happy hour! You are a great boss and great teacher."_
+_Goodbye Igor! Thank you for helping me achieve to the next level both physically and mentally I cherish the moment when we grind through challenges during peak days, when I’m in trouble and you say "Just escalate, I will handle it", and when you show your magic treat in happy hour! You are a great boss and great teacher._
 
 <!--
 
