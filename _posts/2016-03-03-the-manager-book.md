@@ -13,7 +13,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This series 
 <!-- vim-markdown-toc GFM -->
 
 - [Part #1: What does a manager do](#part-1-what-does-a-manager-do)
-    - [What are a managers responsiblities](#what-are-a-managers-responsiblities)
+    - [What are a managers responsibilities](#what-are-a-managers-responsibilities)
     - [How do you measure your success?](#how-do-you-measure-your-success)
     - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
     - [How do you build a team?](#how-do-you-build-a-team)
@@ -29,7 +29,7 @@ Managing is hard. Lessons are hard earned, and should be cherished. This series 
 
 ## Part #1: What does a manager do
 
-### What are a managers responsiblities
+### What are a managers responsibilities
 
 ### How do you measure your success?
 
