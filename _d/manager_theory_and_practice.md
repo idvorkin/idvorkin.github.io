@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Igor's Book of Management Practice"
+title: "DRAFT: Book of Management Practice"
 comments: true
 inprogress: true
 tags:

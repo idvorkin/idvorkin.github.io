@@ -173,13 +173,15 @@ SDMs should be reading code occasionally:
 
 On my deathbed, the product I will be most proud of is the people who I watched blossom and grow. It's cliche, but when you love your people they know it, they thrive, and do their best work. It's not just about the work, I want to make sure people think of thier lives as well, because, well, that's even more important.
 
-I'm energized by getting shit done. The though of shipping, clearing roadblocks, and never being blocked puts a smile on face.
+I'm also energized by getting shit done. The though of shipping, clearing roadblocks, and never being blocked puts a smile on face.
 
-Lastly, I love understanding what is going on, coming up with win/win solutions, and transforming those solutions into a meaningful story that people rally behind.
+Speaking of smiling, nothing brings me back up like reading this kind of feedback that I got when I left a team:
 
-When I'm having a rough day, nothing brings me back up like reading this kind of feedback that I got when I left a team.
+_Goodbye Igor! Thank you for helping me reach the next level both physically and mentally. I cherish the moments when we ground through challenges like peak days, when I was in trouble and you said "That's why I'm here, give it to me I'll make it happen", and of course, when you show your magic at happy hour! You are a great boss and great teacher._
 
-_Goodbye Igor! Thank you for helping me achieve to the next level both physically and mentally I cherish the moment when we grind through challenges during peak days, when I’m in trouble and you say "Just escalate, I will handle it", and when you show your magic treat in happy hour! You are a great boss and great teacher._
+Lastly, I love understanding what is going on, coming up with win/win solutions, and framing those solutions into a meaningful story that people rally behind and deliver. Some more words that bring me up:
+
+_Igor - Your passion, energy, intellect, and sheer force of will -- so intense, so inspiring, so powerful we still feel it 3 years after you left the team._
 
 <!--
 
