@@ -25,14 +25,14 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
 - [Part 4: Process and Mechanism](#part-4-process-and-mechanism)
 - [Part 5: Hiring](#part-5-hiring)
 - [Part 6: Firing and Performance Management](#part-6-firing-and-performance-management)
-- [Part 7: Other resources](#part-7-other-resources)
-- [Part 8: Charters, Re-orgs and Bootstrapping](#part-8-charters-re-orgs-and-bootstrapping)
+- [Part 7: Charters, Re-orgs and Bootstrapping](#part-7-charters-re-orgs-and-bootstrapping)
     - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
     - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
     - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
     - [Aside: Agency and Physchological Saftey:](#aside-agency-and-physchological-saftey)
-- [Part 9: Personal Motivations](#part-9-personal-motivations)
+- [Part 8: Personal Motivations](#part-8-personal-motivations)
     - [Why is management attractive to you?](#why-is-management-attractive-to-you)
+- [Part 9: Other resources](#part-9-other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -140,11 +140,7 @@ SDMs should be reading code occasionally:
 
 ## Part 6: Firing and Performance Management
 
-## Part 7: Other resources
-
-- A related post which is to be merged, is my aspirations as a [manager](/boss). It has a good collection of related material section there for other resources
-
-## Part 8: Charters, Re-orgs and Bootstrapping
+## Part 7: Charters, Re-orgs and Bootstrapping
 
 Reorgs have two dimensions, staffing and charter, both of these need to be addressed.
 
@@ -182,7 +178,7 @@ Hopefully, early in your hiring process you've been thinking about your charter.
 
 ### Aside: Agency and Physchological Saftey:
 
-## Part 9: Personal Motivations
+## Part 8: Personal Motivations
 
 I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are truely my motivations, and if I"m being consistent between my actions and motivations.
 
@@ -208,3 +204,7 @@ _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, 
 - Servant leadership
 - On top of best practices
 -->
+
+## Part 9: Other resources
+
+- A related post which is to be merged, is my aspirations as a [manager](/boss). It has a good collection of related material section there for other resources
