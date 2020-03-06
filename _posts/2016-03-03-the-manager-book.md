@@ -17,9 +17,6 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [What are a managers responsibilities?](#what-are-a-managers-responsibilities)
     - [How do you measure their success?](#how-do-you-measure-their-success)
     - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
-    - [How do you build a new team?](#how-do-you-build-a-new-team)
-        - [People boot strap.](#people-boot-strap)
-        - [Charter/Execution boot strap](#charterexecution-boot-strap)
     - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
     - [Should managers code?](#should-managers-code)
@@ -29,7 +26,12 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
 - [Part 5: Hiring](#part-5-hiring)
 - [Part 6: Firing and Performance Management](#part-6-firing-and-performance-management)
 - [Part 7: Other resources](#part-7-other-resources)
-- [Part 8: Personal Questions](#part-8-personal-questions)
+- [Part 8: Charters, Re-orgs and Bootstrapping](#part-8-charters-re-orgs-and-bootstrapping)
+    - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
+    - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
+    - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
+    - [Aside: Agency and Physchological Saftey:](#aside-agency-and-physchological-saftey)
+- [Part 9: Personal Motivations](#part-9-personal-motivations)
     - [Why is management attractive to you?](#why-is-management-attractive-to-you)
 
 <!-- vim-markdown-toc -->
@@ -76,31 +78,6 @@ Top metrics:
 - **Business Results**: Did we make the right widgets on time and budget?
 - **People Growing**: Are the works happy based on surveys
 - **Egineering Efficiency and Technical Assets**: Is our factory solid and able to make new stuff quickly and maintain production?
-
-### How do you build a new team?
-
-#### People boot strap.
-
-In the ideal world:
-
-- Start with a high level view of the business
-- Put in places the senior developers to build out the architecture and process
-- Start working by getting your SDE-IIs and SDE-Is
-
-In the real world:
-
-- Vague Idea
-- Add people as you find them (however, hard stop when too many juniors)
-- Pick some easy wins, and get those started, ready to pick up debt to see what we can do.
-- As you wait to hire more experienced folks try to borrow folks from other teams ideally for a rotation or at least for bar raising designs, architecture and mentorship
-
-#### Charter/Execution boot strap
-
-- North star vision
-- First experiments in tech and market
-- Find the first wins to tune
-- Build out early roadmap and product.
-- Continuous improvement as people join.
 
 ### Hardest part about being a manager
 
@@ -167,7 +144,47 @@ SDMs should be reading code occasionally:
 
 - A related post which is to be merged, is my aspirations as a [manager](/boss). It has a good collection of related material section there for other resources
 
-## Part 8: Personal Questions
+## Part 8: Charters, Re-orgs and Bootstrapping
+
+Reorgs have two dimensions, staffing and charter, both of these need to be addressed.
+
+There are several types of re-orgs. Here are some of the ones I've executed:
+
+### The genesis: When you start from scratch
+
+Building a team has two aspects, hiring from 0 to staffed, and building out a new charter and vision.
+
+In an ideal world, you'd execute the following hiring plan:
+
+- Start with a high level view of the business
+- Put in places the senior developers to build out the architecture and process
+- Start working by getting your SDE-IIs and SDE-Is
+
+In the real world, you'll likely:
+
+- Have a vague idea
+- Add people as you find them (hard stop when too many juniors - see below)
+- Pick some easy wins, and get those started, ready to pick up debt to see what we can do.
+
+Note: It's usually easy to hire junior people, and when there's pressure to start, you'll be tempted to just keep adding junior folks. However, there's a world of hurt here. If you're planning on starting with too many junior folks (or getting pressured to) borrow more experiened folks from other teams. Ideally borrow them full time for a few quarters, but at least borrow them for brainstoring, design, architecture and mentorship.
+
+Hopefully, early in your hiring process you've been thinking about your charter. Charters and such are hard, here's the startegy I tackle:
+
+- Come up with a north star vision
+- Start your first experiments in tech and market
+- Find the first wins to be able to inspire the team, excite the investors, and really partners.
+- Build out an early roadmap and product.
+- Keep learning and improving as people join.
+
+### The split: When a team outgrows a manager
+
+### The merge: When a manager leaves
+
+### Aside: Agency and Physchological Saftey:
+
+## Part 9: Personal Motivations
+
+I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are truely my motivations, and if I"m being consistent between my actions and motivations.
 
 ### Why is management attractive to you?
 
