@@ -5,6 +5,10 @@ date: "2018-01-04 05:46:41 Pacific Standard Time"
 comments: true
 inprogress: true
 
+redirect_from:
+  - /habit
+  - /atomic-habits
+
 tags:
   - emotional intelligence
   - book-notes
@@ -60,6 +64,15 @@ Another habit I have is playing on the command line (both writing and updating m
 | Craving  | Make it attractive          | Make it displeasing  |
 | Response | Make it easy                | Make it hard         |
 | Reward   | Make it satisfying          | Make it unsatisfying |
+
+#### Encouraging more magic
+
+| State    | Actions                                   |
+| -------- | ----------------------------------------- |
+| Cue      | Seeing kids/being bored                   |
+| Craving  | The feeling of smoothness of magic        |
+| Response | Carry a fanny pack with everything in it  |
+| Reward   | Thinking how much people will enjoy magic |
 
 ### Creating new Cues
 
