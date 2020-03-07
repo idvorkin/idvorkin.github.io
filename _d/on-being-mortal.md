@@ -1,8 +1,6 @@
 ---
 layout: post
-title: "Upstream"
-comments: true
-inprogress: true
+title: "On being mortal"
 tags:
   - book-notes
 permalink: /death
