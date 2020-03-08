@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Coaching Playbook and Theory"
+title: "Coaching - How to help others find insights "
 author: "Igor Dvorkin"
 comments: true
 redirect_from:

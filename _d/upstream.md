@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Upstream"
+title: "Upstream - How to solve problems before they happen"
 comments: true
 inprogress: true
 tags:

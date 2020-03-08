@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Igor's Eulogy"
+title: "Igor's Eulogy - How I want to live"
 author: "Igor Dvorkin"
 inprogress: true
 featured: true

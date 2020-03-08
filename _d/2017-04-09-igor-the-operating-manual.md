@@ -46,6 +46,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Father](#father)
 - [Triggers and Mental Quick Sand](#triggers-and-mental-quick-sand)
     - [Stress and Anxiety](#stress-and-anxiety)
+    - [Corona Virus](#corona-virus)
     - [Raising kids](#raising-kids)
         - [Physical activity](#physical-activity)
         - [Not spending enough time with them](#not-spending-enough-time-with-them)
@@ -156,6 +157,10 @@ Being human, I spend a bunch of time stressed and anxious. Here are some of my f
 - Anxiety is practicing failure in advance.
 - Worry is not preperation, nor does it make you better.
 - Anxiety is "keeping a problem in the foreground". This sucks up your CPU, and means you can't spin down your CPU. The write answer is commit to disk all open decisions, and then kick it out of the foreground till ready (this is the GTD solution).
+
+### Corona Virus
+
+- My gosh this is sucking up lots of brain power. I don't think I get value thinking about htis. I have two choices, stop thinking about this,_OR_ write a post on all my thoughts on this.
 
 ### Raising kids
 

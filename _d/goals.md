@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Goal Systems"
+title: "Goals - How to define and ensure success"
 comments: true
 inprogress: true
 tags:

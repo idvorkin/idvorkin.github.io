@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "On being mortal"
+title: "On being Mortal - Guess what? You're dying"
 tags:
   - book-notes
 permalink: /death

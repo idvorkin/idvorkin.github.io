@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Igor's book of manager"
+title: "Igor's Book of Management"
 date: "2020-03-05 00:56:07 +0000"
 tags:
   - manager
