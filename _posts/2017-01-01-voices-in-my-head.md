@@ -17,23 +17,7 @@ I'm not smart (or wacky) enough to come up with this technique on my own. It com
 
 Here are my voices, I'm trying to teach myself to spend some time talking to all of them so they are better behaved.
 
-**Anxieties**
-
-- **Walter** - my anxiety that I'm wasting my life.
-- **Ina** - my insecurity that I'm a failure, only around when Carl gets sick
-- **Terrance** - my frustrations with my wife
-- **Frank** - my guilt I'm not doing enough as a father.
-
-**Anxieties (Retired)**
-
-- **Mo** - my anxiety about money (retired since the the stock market went through roof).
-- **Wilma** - my end end of month anxiety around hitting my weight goals.
-
-**Negative Habits**
-
-- **Vern** my desire to vegetate and not exercise
-- **Gary** my desire to gorge instead of eating healthy.
-- **Prashant** my desire to procrastinate
+_(BTW the order below is deliberate,it's the order of the voices i want to talk to. I want to give more air time to the positive players)_
 
 **Positive Players:**
 
@@ -47,3 +31,21 @@ Here are my voices, I'm trying to teach myself to spend some time talking to all
 **Positive Players (Too be hired)**
 
 - **Harold** - the Husband. Treating Love like a verb not a noun.
+
+**Negative Habits**
+
+- **Vern** my desire to vegetate and not exercise
+- **Gary** my desire to gorge instead of eating healthy.
+- **Prashant** my desire to procrastinate
+
+**Anxieties**
+
+- **Walter** - my anxiety that I'm wasting my life.
+- **Ina** - my insecurity that I'm a failure, only around when Carl gets sick
+- **Terrance** - my frustrations with my wife
+- **Frank** - my guilt I'm not doing enough as a father.
+
+**Anxieties (Retired)**
+
+- **Mo** - my anxiety about money (retired since the the stock market went through roof).
+- **Wilma** - my end end of month anxiety around hitting my weight goals.
