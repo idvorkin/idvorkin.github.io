@@ -5,48 +5,59 @@ title: Igor's Blog
 
 <!-- Mostly copied from https://community.algolia.com/jekyll-algolia/blog.html -->
 <div id="home-search" class="home">
-  <div id="search-box">
-    <!-- SearchBox widget will appear here -->
-  </div>
-  <div id="search-hits">
-    <!-- Hits widget will appear here -->
-  </div>
+  <div id="search-box"><!-- SearchBox widget will appear here --></div>
+  <div id="search-hits"><!-- Hits widget will appear here --></div>
 
   <!-- Including InstantSearch.js library and styling -->
   <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css"
+  />
 
   <script>
     // Adding a query paramater.
-    const query = getParameterByName('q')
+    const query = getParameterByName("q");
 
     function getParameterByName(name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return "";
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
 
-    const hitTemplate = function (hit) {
-      let date = '';
+    const hitTemplate = function(hit) {
+      let date = "";
       if (hit.date) {
-        date = moment.unix(hit.date).format('MMM D, YYYY');
+        date = moment.unix(hit.date).format("MMM D, YYYY");
       }
 
-      let url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
+      let url = "";
+      if (hit.anchor) {
+        url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
+      } else {
+        url = `{{ site.baseurl }}${hit.url}`;
+      }
 
       const title = hit._highlightResult.title.value;
 
-      let breadcrumbs = '';
+      let breadcrumbs = "";
       if (hit._highlightResult.headings) {
-        breadcrumbs = hit._highlightResult.headings.map(match => {
-          return `<span class="post-breadcrumb">${match.value}</span>`
-        }).join(' > ')
+        breadcrumbs = hit._highlightResult.headings
+          .map(match => {
+            return `<span class="post-breadcrumb">${match.value}</span>`;
+          })
+          .join(" > ");
       }
 
       const content = hit._highlightResult.html.value;
@@ -55,12 +66,12 @@ title: Igor's Blog
         <h3><a href="${url}">${title}</a></h3>
         <section class="notepad-post-excerpt"><p>${content}</p></section>
   `;
-    }
+    };
     // Instanciating InstantSearch.js with Algolia credentials
     const search = instantsearch({
-      appId: '{{ site.algolia.application_id }}',
-      indexName: '{{ site.algolia.index_name }}',
-      apiKey: '{{ site.algolia.search_only_api_key }}',
+      appId: "{{ site.algolia.application_id }}",
+      indexName: "{{ site.algolia.index_name }}",
+      apiKey: "{{ site.algolia.search_only_api_key }}",
       searchParameters: {
         query: query
       }
@@ -69,15 +80,15 @@ title: Igor's Blog
     // Adding searchbar and results widgets
     search.addWidget(
       instantsearch.widgets.searchBox({
-        container: '#search-box',
-        placeholder: 'Search into posts...',
+        container: "#search-box",
+        placeholder: "Search into posts...",
         poweredBy: true // This is required if you're on the free Community plan
       })
     );
 
     search.addWidget(
       instantsearch.widgets.infiniteHits({
-        container: '#search-hits',
+        container: "#search-hits",
         templates: {
           item: hitTemplate
         }
@@ -86,8 +97,6 @@ title: Igor's Blog
 
     // Starting the search
     search.start();
-
-
   </script>
   <style>
     .ais-search-box {
@@ -138,5 +147,4 @@ title: Igor's Blog
       display: none;
     }
   </style>
-
 </div>
