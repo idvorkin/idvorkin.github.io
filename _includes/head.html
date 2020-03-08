@@ -22,7 +22,7 @@
 />{% endif %}
 <meta
   name="twitter:title"
-  content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+  content="{% if page.ogtitle %}{{ page.ogtitle }}{{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
 />
 <meta name="twitter:creator" content="@{{ site.owner.twitter }}" />{% endif %}
 
@@ -33,7 +33,7 @@
 <meta property="og:type" content="article" />
 <meta
   property="og:title"
-  content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+  content="{% if page.ogtitle %}{{ page.ogtitle }}{{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
 />
 {% if page.excerpt %}
 <meta property="og:description" content="{{ page.excerpt | strip_html }}" /> {%

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Voices in my head - A survey of my personalities"
+title: "Voices in my head"
+ogtitle: "Voices in my head - A survey of my personalities"
 comments: true
 inprogress: true
 tags:

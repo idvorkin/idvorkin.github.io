@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Atomic habits - How to add and remove habits"
+title: "Atomic habits"
+ogtitle: "Atomic habits - How to add and remove habits"
 date: "2018-01-04 05:46:41 Pacific Standard Time"
 comments: true
 inprogress: true
