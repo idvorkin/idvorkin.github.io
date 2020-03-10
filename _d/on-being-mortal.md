@@ -42,9 +42,11 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 
 ### Things Fall Apart
 
-This is the most depressing chapter of any book I've ever read. It's the only attempt I've ever seen to describe the act of body falling apart in death.
+This is the most depressing chapter of any book I've ever read. It's the only attempt I've ever seen to describe the act of body falling apart in death. Here's the opening paragraph - and it gets more and more engaging and believable for the next 30 pages:
 
 ### Dependence
+
+_It is not death that the very old tell me they fear. It is what happens short of death—losing their hearing, their memory, their best friends, their way of life. As Felix put it to me, “Old age is a continuous series of losses.” Philip Roth put it more bitterly in his novel Everyman: “Old age is not a battle. Old age is a massacre.” With luck and fastidiousness—eating well, exercising, keeping our blood pressure under control, getting medical help when we need it—people can often live and manage a very long time. But eventually the losses accumulate to the point where life’s daily requirements become more than we can physically or mentally manage on our own. As fewer of us are struck dead out of the blue, most of us will spend significant periods of our lives too reduced and debilitated to live independently. We do not like to think about this eventuality. As a result, most of us are unprepared for it. We rarely pay more than glancing attention to how we will live when we need help until it’s too late to do much about it._
 
 ### Assistance
 
@@ -55,6 +57,8 @@ This is the most depressing chapter of any book I've ever read. It's the only at
 ### Hard Conversations
 
 ### Courage
+
+Courage is strength in the face of knowledge of what is to be feared or hoped. Wisdom is prudent strength. At least two kinds of courage are required in aging and sickness. The first is the courage to confront the reality of mortality—the courage to seek out the truth of what is to be feared and what is to be hoped. Such courage is difficult enough. We have many reasons to shrink from it. But even more daunting is the second kind of courage—the courage to act on the truth we find. The problem is that the wise course is so frequently unclear. For a long while, I thought that this was simply because of uncertainty. When it is hard to know what will happen, it is hard to know what to do. But the challenge, I’ve come to see, is more fundamental than that. One has to decide whether one’s fears or one’s hopes are what should matter most.
 
 ## Statistics
 
