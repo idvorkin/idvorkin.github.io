@@ -39,8 +39,13 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 - You can download the excel yourself, and play with it as you wish.
 
 <p>
-<iframe width="800" height="600" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=922579950926BF9E%21111490&authkey=%21AL5jdCnJaEiXwek&em=2&AllowTyping=True&ActiveCell='Death%20Percent'!A5&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml?widget=true&amp;headers=false"
+style="position: relative; height: 600px; width: 100%;"
+></iframe>
 </p>
+
+Download [Googel Sheets](https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml)
+Download [Excel](https://1drv.ms/x/s!Ap6_JgmVeSWShucCfjXvgzVyAeRA8A?e=QXhv3o)
 
 ![Table By Age](https://www.cdc.gov/injury/images/lc-charts/leading_causes_of_death_by_age_group_2017_1100w850h.jpg)
 
