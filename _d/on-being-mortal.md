@@ -95,4 +95,4 @@ style="position: relative; height: 600px; width: 100%;"
 
 ## Further reading
 
-The prophen [on death](http://www.katsandogz.com/gibran/ondeath.php)
+The prophet [on death](http://www.katsandogz.com/gibran/ondeath.php)
