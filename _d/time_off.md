@@ -19,6 +19,7 @@ Time off is super important, it's how we recharge, find our creativite, etc. Man
         - [Managing family expectations](#managing-family-expectations)
         - [Professional Development Life Balance](#professional-development-life-balance)
 - [Optimizing for happiness](#optimizing-for-happiness)
+    - [Types of happiness: Pleasure, Flow and Identity](#types-of-happiness-pleasure-flow-and-identity)
     - [The experiencing and remembering self - the peak end rule.](#the-experiencing-and-remembering-self---the-peak-end-rule)
     - [Moments](#moments)
     - [Pre enjoying: Savoring](#pre-enjoying-savoring)
@@ -52,6 +53,8 @@ PD is essentially working from home, but working for your future self. Just like
 Even though getting to do what you love is awesome, you still want to love your family. You've got an opportunity to spend more energy on them, so do.
 
 ## Optimizing for happiness
+
+### Types of happiness: Pleasure, Flow and Identity
 
 ### The experiencing and remembering self - the peak end rule.
 
