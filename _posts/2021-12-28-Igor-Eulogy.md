@@ -180,6 +180,7 @@ Programmer:
 
 Igor didn't write this section - but he did describe his [dream job](/job) and his thoughts on being a good [manager](/manager). He also wrote up several cool things he's proud of at work:
 
+[Charity Gifting On Alexa](/alexa-charity),
 [Software as a Story](/tags/index.html#Software as a Story),
 [Staring Cloud Computing](/The-Genesis-Node),
 [Smile](http://igsmilebox.blogspot.com),

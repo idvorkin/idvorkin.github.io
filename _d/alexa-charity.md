@@ -10,7 +10,7 @@ redirect_from:
 
 One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations
 
-_Add comments [here](https://hackmd.io/@idvorkin/Hkc05NBSI/)_
+\*Add comments soon (for now, edit from github).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -60,3 +60,5 @@ The details are amazon specific, but a few things I can mention
 - Sean Xu
 - Haohan Tang
 - Ivan Okhin
+- Matt Hall
+- tbd everyone who worked on it.
