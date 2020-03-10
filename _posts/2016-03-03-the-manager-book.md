@@ -37,7 +37,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-_Add comments [here](https://hackmd.io/@idvorkin/SJZZeBHrI)_
+\_Add comments [here](https://hackmd.io/nBT2vHq0RqSRKM-KOeBhEA)\*
 
 ## Part 1: What does a manager do?
 
