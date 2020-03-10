@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gettign the most out of time off"
+title: "Getting the most out of time off"
 tags:
 permalink: /timeoff
 redirect_from:
