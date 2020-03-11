@@ -51,7 +51,7 @@ Description: Awesome dude, awesome life
     </ul>
 
 </div>
-                </div>
+            </div>
                 <div class="notepad-post-title-simple row">
                     <div class="small-12 columns">
                         <div class="notepad-post-meta-simple">
@@ -61,17 +61,18 @@ Description: Awesome dude, awesome life
                             <!-- HACK: CSS TEMPLATE force ahref to red in title, will fix in CSS template later. -->
                             <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}"
                                data-toggle="tooltip" title="Posts tagged with {{ tag }}"
-                                                     style="color:red;font-size:1.25em"
-                                                     >
-                                                     {{ tag }}
+                                style="color:red;font-size:1.25em"
+                               >
+                                {{ tag }}
                             </a>
-                                {% unless forloop.last %}&nbsp;&comma;&nbsp;
-                                {% endunless %}{% endfor %}{% endif %}
-                                </p>
+                            {% unless forloop.last %}&nbsp;&comma;&nbsp;
+                            {% endunless %}{% endfor %}{% endif %}
+                            </p>
                         </div>
                     </div>
                 </div>
             </header>
+<article class="notepad-post-content post tag-simple">
                 {% if page.inprogress %}
                 <!-- This breaks page summaries in OG, so excluding it. All posts are in progress.
                 <div style="font-size:1.5em;line-height:2em;  border: 3px solid red;text-align:center;">
