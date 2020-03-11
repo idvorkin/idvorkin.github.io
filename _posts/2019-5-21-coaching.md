@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Coaching - How to help others find insights "
+title: "Coaching - helping others find insight"
+ogtitle: "Coaching - How to help others find insight"
 author: "Igor Dvorkin"
 comments: true
 redirect_from:
