@@ -4,10 +4,13 @@ title: "Understanding tech compensation and signing bonuses"
 date: "2016-11-16 07:00:35 Pacific Standard Time"
 tags:
   - job-hunt
+permalink: /comp
 redirect_from:
   - /compensation
   - /comp
   - /pay
+  - /understandingtechcompensation
+imagefeature: https://strikedeck.com/wp-content/uploads/2017/12/AdobeStock_77490502.png
 ---
 
 Different companies use different compensation models. To compare between them only compare total compensation, not salary. Also, signing bonuses of 100% of salary aren't uncommon in the tech industry. While this sounds amazing, it's often nothing more then replacement for the otherwise lost income from unvested equity.
@@ -15,19 +18,21 @@ Different companies use different compensation models. To compare between them o
 _You can add comments to this post [here](https://hackmd.io/AyBTMcncRweMVZEVUWUFCA)_
 
 <!-- prettier-ignore-start -->
+
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Signing Bonus](#signing-bonus)
 - [Per company comp models](#per-company-comp-models)
-    - [Initial Grant](#initial-grant)
-    - [Steady state - Total Comp vs Independent comp](#steady-state---total-comp-vs-independent-comp)
+  - [Initial Grant](#initial-grant)
+  - [Steady state - Total Comp vs Independent comp](#steady-state---total-comp-vs-independent-comp)
 - [Negotiating](#negotiating)
 - [Assumptions](#assumptions)
 - [Should you include stock appreciation in total compensation?](#should-you-include-stock-appreciation-in-total-compensation)
 - [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ### Signing Bonus
 
