@@ -51,11 +51,7 @@ else %}
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 
 {% if page.imagefeature %}
-<meta
-  property="og:image"
-  content="{{ site.url }}/images/{{ page.imagefeature }}"
-/>
-{% else %}
+<meta property="og:image" content="{{ page.imagefeature }}" /> {% else %}
 <meta
   property="og:image"
   content="https://github.com/idvorkin/blob/raw/master/idvorkin-bunny-ears-ar-2020.png"
