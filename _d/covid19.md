@@ -36,6 +36,9 @@ I'm tired of people talking non stop about Corona Virus, but there's lots of int
         - [Nose filters](#nose-filters)
         - [UV blasters](#uv-blasters)
         - [Goves that keep you from wiping your eyes](#goves-that-keep-you-from-wiping-your-eyes)
+- [Quarantines](#quarantines)
+        - [Italy - Free Wifi](#italy---free-wifi)
+        - [Italy - Mortgage Releif](#italy---mortgage-releif)
 - [Solutions](#solutions)
 
 <!-- vim-markdown-toc -->
@@ -84,5 +87,15 @@ Best, we have a mild outbreak to which we are over reacting, which gives us a wa
 #### UV blasters
 
 #### Goves that keep you from wiping your eyes
+
+## Quarantines
+
+#### Italy - Free Wifi
+
+http://alugy.com/europe/amazon-microsoft-joins-italys-initiative-to-offer-free-wi-fi-ebooks-unlimited-mobile-data/
+
+#### Italy - Mortgage Releif
+
+https://in.reuters.com/article/health-coronavirus-italy-mortgages/payments-on-mortgages-to-be-suspended-across-italy-after-coronavirus-outbreak-idINR1N2A900G
 
 ## Solutions

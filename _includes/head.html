@@ -56,8 +56,11 @@ else %}
   content="{{ site.url }}/images/{{ page.imagefeature }}"
 />
 {% else %}
-<meta property="og:image" content="{{ site.url }}/images/site-image.png" /> {%
-endif %} {% if site.google_verify %}<meta
+<meta
+  property="og:image"
+  content="https://github.com/idvorkin/blob/raw/master/idvorkin-bunny-ears-ar-2020.png"
+/>
+{% endif %} {% if site.google_verify %}<meta
   name="google-site-verification"
   content="{{ site.google_verify }}"
 />{% endif %} {% if site.bing_verify %}<meta
