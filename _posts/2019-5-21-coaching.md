@@ -8,6 +8,8 @@ redirect_from:
   - /coaching
   - /coach
 
+imagefeature: https://github.com/idvorkin/blob/raw/master/icon-birth.png
+
 tags:
   - book-notes
   - emotional intelligence
@@ -17,6 +19,7 @@ tags:
 Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [The coaching mindset](#the-coaching-mindset)
