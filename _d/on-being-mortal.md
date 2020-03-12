@@ -30,7 +30,7 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
     - [Courage](#courage)
 - [Statistics](#statistics)
 - [Quotes](#quotes)
-- [Further reading](#further-reading)
+- [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -64,8 +64,11 @@ Courage is strength in the face of knowledge of what is to be feared or hoped. W
 ## Statistics
 
 - Baseline morality rate [0.9%](https://www.macrotrends.net/countries/USA/united-states/death-rate)
-- Total [2.8M](https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_06-508.pdf) Heart: 23%, Cancer: 22%, Accident: 6%, Suicide: 1.5%
+- US deaths/year [2.8M](https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_06-508.pdf) Heart: 23%, Cancer: 22%, Accident: 6%, Suicide: 1.5%
+- US deaths/day: 8,000
 - Rating From 25-35: Accidents; Homicide; Suicide
+- Global deaths/year: 56M
+- Global deaths/day: 150K
 
 <!-- paragraph is styled correctly-->
 
@@ -92,6 +95,7 @@ style="position: relative; height: 600px; width: 100%;"
 - Grandfather dies, Father dies, Son dies - A very true blessing.
 - "Saving your money for retirement" is like saying "save your sex for retirement".
 
-## Further reading
+## Other resources
 
 The prophet [on death](http://www.katsandogz.com/gibran/ondeath.php)
+Very pretty [graphs](https://ourworldindata.org/births-and-deaths)
