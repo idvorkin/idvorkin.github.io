@@ -17,32 +17,32 @@ I'm tired of people talking non stop about Corona Virus, but there's lots of int
 
 
 
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Unexpected Consequences](#unexpected-consequences)
-    - [Glut of lobsters](#glut-of-lobsters)
-    - [Prisoners making hand sanitizer.](#prisoners-making-hand-sanitizer)
+  - [Glut of lobsters](#glut-of-lobsters)
+  - [Prisoners making hand sanitizer.](#prisoners-making-hand-sanitizer)
 - [Bad data](#bad-data)
 - [The non-health actual problems](#the-non-health-actual-problems)
 - [Economic impact](#economic-impact)
-    - [Cruise ships](#cruise-ships)
+  - [Cruise ships](#cruise-ships)
 - [Working from home](#working-from-home)
-    - [Door dash thinks FB is a DDoS since all employees signed in at once.](#door-dash-thinks-fb-is-a-ddos-since-all-employees-signed-in-at-once)
-    - [Big Tech still pays hourly workers.](#big-tech-still-pays-hourly-workers)
-    - [Restaurants and coffee shops empty when folks working from home.](#restaurants-and-coffee-shops-empty-when-folks-working-from-home)
+  - [Door dash thinks FB is a DDoS since all employees signed in at once.](#door-dash-thinks-fb-is-a-ddos-since-all-employees-signed-in-at-once)
+  - [Big Tech still pays hourly workers.](#big-tech-still-pays-hourly-workers)
+  - [Restaurants and coffee shops empty when folks working from home.](#restaurants-and-coffee-shops-empty-when-folks-working-from-home)
 - [The best news - a false alarm.](#the-best-news---a-false-alarm)
-    - [What about big pharma](#what-about-big-pharma)
-    - [Tech invoations](#tech-invoations)
-        - [Nose filters](#nose-filters)
-        - [UV blasters](#uv-blasters)
-        - [Goves that keep you from wiping your eyes](#goves-that-keep-you-from-wiping-your-eyes)
-- [Quarantines](#quarantines)
-        - [Italy - Free Wifi](#italy---free-wifi)
-        - [Italy - Mortgage Releif](#italy---mortgage-releif)
+  - [What about big pharma](#what-about-big-pharma)
+  - [Tech invoations](#tech-invoations)
+    - [Nose filters](#nose-filters)
+    - [UV blasters](#uv-blasters)
+    - [Goves that keep you from wiping your eyes](#goves-that-keep-you-from-wiping-your-eyes)
+- [Quarantines](#quarantines) - [Italy - Free Wifi](#italy---free-wifi) - [Italy - Mortgage Releif](#italy---mortgage-releif)
 - [Solutions](#solutions)
+  - [Data Links](#data-links)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## Unexpected Consequences
 
@@ -99,3 +99,7 @@ http://alugy.com/europe/amazon-microsoft-joins-italys-initiative-to-offer-free-w
 https://in.reuters.com/article/health-coronavirus-italy-mortgages/payments-on-mortgages-to-be-suspended-across-italy-after-coronavirus-outbreak-idINR1N2A900G
 
 ## Solutions
+
+### Data Links
+
+https://community.wolfram.com/groups/-/m/t/1872608

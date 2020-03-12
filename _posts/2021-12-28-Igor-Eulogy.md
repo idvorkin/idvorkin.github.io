@@ -7,7 +7,7 @@ inprogress: true
 featured: true
 comments: true
 permalink: /eulogy
-imagefeature: https://github.com/idvorkin/blob/raw/master/icon-eulogy.png
+imagefeature: https://github.com/idvorkin/blob/raw/master/icon_eulogy_1200_628.png
 tags:
   - how igor ticks
   - emotional intelligence
