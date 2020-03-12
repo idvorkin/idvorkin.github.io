@@ -8,6 +8,7 @@ redirect_from:
   - /on-being-mortal
   - /mortality
   - /fatality
+imagefeature: https://github.com/idvorkin/blob/raw/master/icon_eulogy_1200_628.png
 ---
 
 Bad news, you're dying, so is everyone else. Good news, if we didn't die we'd run out of resources, and our kids would be screwed. Bad news, our health care system is optimized for keeping you alive, not for maximizing the enjoyable time you have on earth. Good news, knowing is half the battle - armed with this knowledge you can decide how you want to die, which is ultimately how you want to live.
@@ -42,9 +43,9 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 
 ### Things Fall Apart
 
-This is the most depressing chapter of any book I've ever read. It's the only attempt I've ever seen to describe the act of body falling apart in death. Here's the opening paragraph - and it gets more and more engaging and believable for the next 30 pages:
-
 ### Dependence
+
+This is the most depressing chapter of any book I've ever read. It's the only attempt I've ever seen to describe the act of body falling apart in death. Here's the opening paragraph - and it gets more and more engaging and believable for the next 30 pages:
 
 _It is not death that the very old tell me they fear. It is what happens short of death—losing their hearing, their memory, their best friends, their way of life. As Felix put it to me, “Old age is a continuous series of losses.” Philip Roth put it more bitterly in his novel Everyman: “Old age is not a battle. Old age is a massacre.” With luck and fastidiousness—eating well, exercising, keeping our blood pressure under control, getting medical help when we need it—people can often live and manage a very long time. But eventually the losses accumulate to the point where life’s daily requirements become more than we can physically or mentally manage on our own. As fewer of us are struck dead out of the blue, most of us will spend significant periods of our lives too reduced and debilitated to live independently. We do not like to think about this eventuality. As a result, most of us are unprepared for it. We rarely pay more than glancing attention to how we will live when we need help until it’s too late to do much about it._
 
@@ -84,9 +85,7 @@ style="position: relative; height: 600px; width: 100%;"
 - Download [Googel Sheets](https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml)
 - Download [Excel](https://1drv.ms/x/s!Ap6_JgmVeSWShucCfjXvgzVyAeRA8A?e=QXhv3o)
 
-- The graph from the CDC
-
-![Table By Age](https://www.cdc.gov/injury/images/lc-charts/leading_causes_of_death_by_age_group_2017_1100w850h.jpg)
+- A similar graph from the[CDC](https://www.cdc.gov/injury/images/lc-charts/leading_causes_of_death_by_age_group_2017_1100w850h.jpg)
 
 ## Quotes
 
