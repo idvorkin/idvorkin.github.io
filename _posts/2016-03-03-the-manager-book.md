@@ -69,10 +69,12 @@ An acid test:
 - People have clear understanding of career growth/progression and how their work supports it.
 -->
 
-- **Business Results**: Ultimately the team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.
-- **People Growing in a high performance team**: The team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.
-- **Engineering Efficiency and Process**: Our engineering systems ensure a pit of success where things which can be automated have been, and we have high velocity releases with minimal risk.
-- **Technical Assets**: Are systems are extensible in the ways that support the business. Our operational burden is minimal (side bar: to help me prioritize I'm on the pages), and our technical debt is applied judiciously (like take debt if you might be able to write off the asset)
+| Dimension                                 |                                                                                                                                                                                                                                                        |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Business Results                          | Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.                                                                                                                      |
+| People Growing in a high performance team | team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.                                                                                                                 |
+| Engineering Efficiency and Process        | Engineering systems ensure a pit of success where things which can be automated have been, and we have high velocity releases with minimal risk.                                                                                                       |
+| Technical Assets                          | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (like take debt if you might be able to write off the asset) |
 
 ### How do you describe your job to people outside the industry?
 
@@ -241,27 +243,28 @@ Depends on the skill level: SDE-I is a junior developer, SDE-II intermediate, an
 | Intermediate | Now it's about how are you helping the team, growing your contributions. Bigger experiences, maybe out side the org, both to build your skills, and increase your org visibility. Double down on super powers, close red flags and blockers. Very satisfying to watch people "blossom" into leaders.                                                                             |
 | Senior/Staff | Here you're getting people are at a career level and are happy with a lot of what they're doing. Here they're deciding how much they want to grow, and where they want to improve. Here it's discussing with mentors, and how we want to split responsibility and cover each other. Also opportunities for what they own for the group (30-60+) e.g. security or process or etc. |
 
-SDE-I:
+Some questions and things to tell these folks
 
-Not a lot of variance, Make sure they have a solid mentor, and opportunity after opportunity to round out their knowledge. Big focus:
+Junior (SDE-I):
 
-- We hired you because you're smart+really good. I you can't understand something, it's probably the presenter doesn't understand it well, as opposed to you not understanding"
 - You help them close gaps, sharpen their understanding by teaching it to you
+- We hired you because you're smart+really good. If you can't understand something, it's probably the presenter doesn't understand it well, as opposed to you not understanding.
 - You are new, and need to learn and need to spend a bunch of time asking for help and guidance. I have one rule - you must come with a bad idea (which will start becoming good ideas). You fail when you bring nothing, you ace it when you bring a bad idea. We'll help you develop that bad idea, and help sharpen your thinking skill.
 - "You have a fresh perspective - If something doesn't make sense ask, for us, we're like fish in water, so challenge our assumptions".
 
-SDE-II:
-
-Now it's about how are you helping the team, growing your contributions. Bigger experiences, maybe out side the org, both to build your skills, and increase your org visibility. Double down on super powers, close red flags and blockers. Very satisfying to watch people "blossom" into leaders.
+Intermediate(SDE-II):
 
 - How do you make the team better?
 - What are you gonna be known for?
 - You're the owner, you'll do everything and I work for you. What help do you need
 - Do shadow coaching, where I might be writing/pr-doing work but they do the send/take the credit
 
-SDE-III:
+Senior(SDE-III):
 
-Here you're getting people are at a career level and are happy with a lot of what they're doing. Here they're deciding how much they want to grow, and where they want to improve. Here it's discussing with mentors, and how we want to split responsibility and cover each other. Also opportunities for what they own for the group (30-60+) e.g. security or process or etc.
+- Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
+- What are you driving for our larger organization?
+- How are you maximizing our benefit?
+- How do we make sure we compliment each other?
 
 ### How do you handle a great engineer with communication problems?
 
