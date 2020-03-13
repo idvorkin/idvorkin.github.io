@@ -69,12 +69,12 @@ An acid test:
 - People have clear understanding of career growth/progression and how their work supports it.
 -->
 
-| Dimension                                 |                                                                                                                                                                                                                                                                    |
-|-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Business Results| Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.
-| People Growing in a high performance team | team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.
-| Engineering Efficiency and Process        | Engineering systems ensure a pit of success where things which can be automated have been, and we have high velocity releases with minimal risk.
-| Technical Assets                          | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (like take debt if you might be able to write off the asset)
+| Dimension                                 |                                                                                                                                                                                                                                                        |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Business Results                          | Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.                                                                                                                      |
+| People Growing in a high performance team | team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.                                                                                                                 |
+| Engineering Efficiency and Process        | Engineering systems ensure a pit of success where things which can be automated have been, and we have high velocity releases with minimal risk.                                                                                                       |
+| Technical Assets                          | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (like take debt if you might be able to write off the asset) |
 
 ### How do you describe your job to people outside the industry?
 
