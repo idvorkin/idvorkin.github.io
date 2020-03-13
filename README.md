@@ -1,3 +1,8 @@
+My gosh FavIcon's are a pain. Some links:
+
+- https://realfavicongenerator.net/favicon_checker?protocol=http&site=idvork.in
+
+
 Notepad is a Jekyll theme which is very simple, clean and beautiful. This theme is good for any blog.
   
 Main Features:
