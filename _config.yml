@@ -2,7 +2,7 @@
 # engine: liquid
 title: ""
 description: "Ramble. Rinse. Repeat."
-logo: logo.png
+logo-png: https://github.com/idvorkin/blob/raw/master/idvorkin-bunny-ears-ar-2020-547x400.png
 logo-url: /
 disqus_shortname: idvorkinblog
 share: true
