@@ -85,7 +85,7 @@ style="position: relative; height: 600px; width: 100%;"
 ></iframe>
 </p>
 
-- Download [Googel Sheets](https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml)
+- Download [Google Sheets](https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml)
 - Download [Excel](https://1drv.ms/x/s!Ap6_JgmVeSWShucCfjXvgzVyAeRA8A?e=QXhv3o)
 
 - A similar graph from the[CDC](https://www.cdc.gov/injury/images/lc-charts/leading_causes_of_death_by_age_group_2017_1100w850h.jpg)
