@@ -3,6 +3,7 @@ layout: post
 title: "Notes from Covid 19"
 comments: true
 inprogress: true
+imagefeature: https://github.com/idvorkin/blob/raw/master/youcantouchyourself.png
 tags:
   - manager
 permalink: /covid
