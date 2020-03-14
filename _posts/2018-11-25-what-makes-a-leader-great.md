@@ -48,3 +48,7 @@ Emotional intelligence (EI) is the crux of leadership. EI is comprised of Self-A
 - Persuasiveness
 - Extensive networking
 - Expertise in building and leading teams
+
+## Credits
+
+Samantha Potts - Technical Super Star
