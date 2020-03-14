@@ -202,25 +202,12 @@ To file:
 
 Igor used to think being a family man would be easy. Being proud of his family, looking back fondly on time with them was easy, but making the time for them, supporting them, teaching them - that was all really hard. Hard yes, but totally worth it.
 
-### Father to Amelia - an incredible girl
-
-So TBD:
+Igor realized that when it comes to family, like all things, it's easy to confuse hours for quality. Being at home playing on his tablet, while the kids played wasn't family time. Instead Igor realized the key is having dates, a chance were he coul focus whole heartidly on his kids. Date nights were sacred and could be whatever the kid wanted.
 
 - To File
-  - Roller Skating
-  - Swimming
-  - Taking for bike rides
 
-Need to split apart Zach and Amelia section.
-
-- To File
-  - Web Site
-
-### Father to Zach - a wonderful boy
-
-- To File
-  - Seeing Kids Play Together
   - Teaching 7h/EQ values to kids
+  - Seeing Kids Play Together
   - School events
   - Public transit together
   - teaching kids to be active
@@ -233,14 +220,29 @@ Need to split apart Zach and Amelia section.
   - Bragging about kids section.
   - Weekly Swimming
   - Weekly Dates
-- Archived links
-
   - Birth stories
   - [Poem for Kids - Tomorrow smiling at me](http://ig66.blogspot.com/2013/03/when-color-blue-was-born-favorites.html?q=dead).
 
 - To live
   - Being with kids recharged him
   - Being with kids inspired him
+
+### Father to Amelia - an incredible girl
+
+So TBD:
+
+- To File
+  - Roller Skating
+  - Swimming
+  - Taking for bike rides
+
+### Father to Zach - a wonderful boy
+
+- To File
+- Archived links
+- Website
+- First to monetize with Patreon
+- Loved to setup his discord services, including bots
 
 ### Friend, Mentee, and Mentor
 
