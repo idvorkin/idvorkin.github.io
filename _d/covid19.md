@@ -23,6 +23,7 @@ I'm tired of people talking non stop about Corona Virus, but there's lots of int
 <!-- vim-markdown-toc GFM -->
 
 - [Unexpected Consequences](#unexpected-consequences)
+  - [Shortages caused by retail arbitrage.](#shortages-caused-by-retail-arbitrage)
   - [Glut of lobsters](#glut-of-lobsters)
   - [Prisoners making hand sanitizer.](#prisoners-making-hand-sanitizer)
 - [Bad data](#bad-data)
@@ -46,6 +47,10 @@ I'm tired of people talking non stop about Corona Virus, but there's lots of int
 <!-- vim-markdown-toc -->
 
 ## Unexpected Consequences
+
+### Shortages caused by retail arbitrage.
+
+I didn't realize this was a thing, but people buy stuff locally (often at thrift stores and garage sales and discount) and then sell it on Amazon. This is a big cause of shortages. Great story in the NYT about something that bought 10K items of sanitizer and masks. Intersting since needs to be sold on Amazon or E-Bay pretty easy to find. Also, E-bay makes 10%, and Amazon 15% so it's a great business for them.
 
 ### Glut of lobsters
 
