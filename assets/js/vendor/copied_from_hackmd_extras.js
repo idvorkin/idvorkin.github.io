@@ -13,11 +13,11 @@ function checkExpandToggle() {
 }
 
 // toc
-export function generateToc(id) {
+function generateToc(id = "toc-slot") {
   const target = $(`#${id}`);
   target.html("");
   /* eslint-disable no-unused-vars */
-  var toc = new window.Toc("doc", {
+  var toc = new window.Toc("content-holder", {
     level: 3,
     top: -1,
     class: "toc",
@@ -46,7 +46,7 @@ export function generateToc(id) {
     if (window.scrollToTop) {
       window.scrollToTop();
     }
-    removeHash();
+    // removeHash();
   });
   gotobottom.click(e => {
     e.preventDefault();
@@ -54,7 +54,7 @@ export function generateToc(id) {
     if (window.scrollToBottom) {
       window.scrollToBottom();
     }
-    removeHash();
+    // removeHash();
   });
   tocMenu
     .append(toggle)
@@ -62,3 +62,30 @@ export function generateToc(id) {
     .append(gotobottom);
   target.append(tocMenu);
 }
+
+function scrollToTop() {
+  $("body, html")
+    .stop(true, true)
+    .animate(
+      {
+        scrollTop: 0
+      },
+      100,
+      "linear"
+    );
+}
+
+function scrollToBottom() {
+  $("body, html")
+    .stop(true, true)
+    .animate(
+      {
+        scrollTop: $(document.body)[0].scrollHeight
+      },
+      100,
+      "linear"
+    );
+}
+
+window.scrollToTop = scrollToTop;
+window.scrollToBottom = scrollToBottom;
