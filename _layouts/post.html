@@ -72,18 +72,18 @@ Description: Awesome dude, awesome life
                     </div>
                 </div>
             </header>
-<article class="notepad-post-content post tag-simple">
+            <article class="notepad-post-content post tag-simple">
                 {% if page.inprogress %}
                 <!-- This breaks page summaries in OG, so excluding it. All posts are in progress.
-                <div style="font-size:1.5em;line-height:2em;  border: 3px solid red;text-align:center;">
+                    <div style="font-size:1.5em;line-height:2em;  border: 3px solid red;text-align:center;">
                     This post is in progress. Comment if you're interested.
-                        </div>
+                    </div>
                 -->
                 {% endif %}
 
-            <div>{{ content }}
-            </div>
-        </article>
+                <div id='content-holder'>{{ content }}
+                </div>
+            </article>
         <div class="cf"></div>
 {% if site.share %}{% include share.html %}{% endif %}
         <div class="cf"></div>
@@ -97,5 +97,6 @@ Description: Awesome dude, awesome life
 {% if page.collapsable %}
 {% include collapse.html %}
 {% endif %}
+<div id="toc-slot" ></div>
 </body>
 </html>
