@@ -15,88 +15,111 @@ Version: 1.0
 Description: Awesome dude, awesome life
 ====================================================
 -->
+
 <head>
-{% include head.html %}
+    {% include head.html %}
 
-{% if page.collapsable %}
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/copied_from_hackmd_extras.css">
+
+    {% if page.collapsable %}
     <link rel="stylesheet" href="{{ site.url }}/assets/css/collapsehelper.css">
-{% endif %}
+    {% endif %}
 
-{% if site.dropcap %}<style type="text/css">@media only screen and (min-width:43.75em){.notepad-post-content div>p:first-child:first-letter{float:left;font-size:4.688rem;line-height:4.375rem;padding-top:.25rem;padding-right:.5rem;padding-left:.188rem;font-family:serif}}</style>{% endif %}
+    {% if site.dropcap %}<style type="text/css">
+        @media only screen and (min-width:43.75em) {
+            .notepad-post-content div>p:first-child:first-letter {
+                float: left;
+                font-size: 4.688rem;
+                line-height: 4.375rem;
+                padding-top: .25rem;
+                padding-right: .5rem;
+                padding-left: .188rem;
+                font-family: serif
+            }
+        }
+    </style>{% endif %}
 </head>
+
 <body class="post-template" itemscope itemtype="http://schema.org/WebPage">
-        <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
-            <header class="notepad-post-header-simple">
-                <div class="notepad-post-menu-header-simple">
-                    <a class="notepad-blog-logo" href="{{ site.logo-url }}">
-                        <img src="{{ site.logo-png }}" />
-                    </a>
+    <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
+        <header class="notepad-post-header-simple">
+            <div class="notepad-post-menu-header-simple">
+                <a class="notepad-blog-logo" href="{{ site.logo-url }}">
+                    <img src="{{ site.logo-png }}" />
+                </a>
 
                 <div class="notepad-blog-menu">
-    <div class="notepad-mobile-menu show-for-small">
-        <a href="#"><i class="fa fa-bars"></i></a>
-    </div>
-    <ul class="notepad-menu">
-        <li class="notepad-mobile-close-btn show-for-small text-right">
-            <a href="#"><i class="fa fa-times"></i></a>
-        </li>
-{% for link in site.links %}
-            <li>{% if link.external %}
-                    <a href="{{ link.url }}">{{ link.title }}</a>
-                {% else %}
-                    <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-                {% endif %} </li>
-{% endfor %}
-           <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a></li>
-    </ul>
+                    <div class="notepad-mobile-menu show-for-small">
+                        <a href="#"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <ul class="notepad-menu">
+                        <li class="notepad-mobile-close-btn show-for-small text-right">
+                            <a href="#"><i class="fa fa-times"></i></a>
+                        </li>
+                        {% for link in site.links %}
+                        <li>{% if link.external %}
+                            <a href="{{ link.url }}">{{ link.title }}</a>
+                            {% else %}
+                            <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
+                            {% endif %} </li>
+                        {% endfor %}
+                        <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a>
+                        </li>
+                    </ul>
 
-</div>
+                </div>
             </div>
-                <div class="notepad-post-title-simple row">
-                    <div class="small-12 columns">
-                        <div class="notepad-post-meta-simple">
-                            <h1>{{ page.title }}</h1>
-                            {% assign tagsize = page.tags.size %}
-                            {% if tagsize != 0 %} tagged {% for tag in page.tags %}
-                            <!-- HACK: CSS TEMPLATE force ahref to red in title, will fix in CSS template later. -->
-                            <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}"
-                               data-toggle="tooltip" title="Posts tagged with {{ tag }}"
-                                style="color:red;font-size:1.25em"
-                               >
-                                {{ tag }}
-                            </a>
-                            {% unless forloop.last %}&nbsp;&comma;&nbsp;
-                            {% endunless %}{% endfor %}{% endif %}
-                            </p>
-                        </div>
+            <div class="notepad-post-title-simple row">
+                <div class="small-12 columns">
+                    <div class="notepad-post-meta-simple">
+                        <h1>{{ page.title }}</h1>
+                        {% assign tagsize = page.tags.size %}
+                        {% if tagsize != 0 %} tagged {% for tag in page.tags %}
+                        <!-- HACK: CSS TEMPLATE force ahref to red in title, will fix in CSS template later. -->
+                        <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip"
+                            title="Posts tagged with {{ tag }}" style="color:red;font-size:1.25em">
+                            {{ tag }}
+                        </a>
+                        {% unless forloop.last %}&nbsp;&comma;&nbsp;
+                        {% endunless %}{% endfor %}{% endif %}
+                        </p>
                     </div>
                 </div>
-            </header>
-            <article class="notepad-post-content post tag-simple">
-                {% if page.inprogress %}
-                <!-- This breaks page summaries in OG, so excluding it. All posts are in progress.
+            </div>
+        </header>
+        <article class="notepad-post-content post tag-simple">
+            {% if page.inprogress %}
+            <!-- This breaks page summaries in OG, so excluding it. All posts are in progress.
                     <div style="font-size:1.5em;line-height:2em;  border: 3px solid red;text-align:center;">
                     This post is in progress. Comment if you're interested.
                     </div>
                 -->
-                {% endif %}
+            {% endif %}
 
-                <div id='content-holder'>{{ content }}
+            <div id='content-holder'>
+                <!--TODO: Refactor into TOC include-->
+                <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix"
+                    style="top:17px;display:none;" {{{lang}}} {{{dir}}}>
                 </div>
-            </article>
+                {{ content }}
+            </div>
+        </article>
         <div class="cf"></div>
-{% if site.share %}{% include share.html %}{% endif %}
+        {% if site.share %}{% include share.html %}{% endif %}
         <div class="cf"></div>
 
-{% include signoff.html %}
-{% include footer.html %}
+        {% include signoff.html %}
+        {% include footer.html %}
 
-</main>
-{% include scripts.html %}
+    </main>
+    {% include scripts.html %}
 
-{% if page.collapsable %}
-{% include collapse.html %}
-{% endif %}
-<div id="toc-slot" ></div>
+    {% if page.collapsable %}
+    {% include collapse.html %}
+    {% endif %}
+
+
+
 </body>
+
 </html>
