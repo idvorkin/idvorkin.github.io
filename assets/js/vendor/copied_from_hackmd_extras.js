@@ -61,6 +61,7 @@ function generateToc(id = "toc-slot") {
     .append(backtotop)
     .append(gotobottom);
   target.append(tocMenu);
+  console.log(`toc generate for ${id}`)
 }
 
 function scrollToTop() {
@@ -89,5 +90,5 @@ function scrollToBottom() {
 
 window.scrollToTop = scrollToTop;
 window.scrollToBottom = scrollToBottom;
-// generateToc('ui-toc')
+generateToc('ui-toc')
 generateToc('ui-toc-affix')
