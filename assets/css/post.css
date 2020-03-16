@@ -130,12 +130,6 @@ table {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-.post-template .notepad-post-title a {
-  color: black;
-}
-.post-template .notepad-post-title a:hover {
-  color: #e51843;
-}
 .post-template .notepad-post-title h1 {
   color: black;
   font-weight: 800;
@@ -545,14 +539,7 @@ table {
   margin: 0 auto;
   width: 100%;
 }
-.notepad-page-title a,
-.notepad-post-title-simple a {
-  color: black;
-}
-.notepad-page-title a:hover,
-.notepad-post-title-simple a:hover {
-  color: #e51843;
-}
+
 .notepad-page-title h1,
 .notepad-post-title-simple h1 {
   color: black;
