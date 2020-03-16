@@ -258,8 +258,8 @@ table {
     margin: -10% auto 0;
   }
 }
-.post-template .notepad-post-content > div:not(.notepad-post-title) a,
-.post-template .notepad-post-content > div:not(.notepad-post-title) code {
+.post-template .notepad-post-content > div:not(.notepad-post-title, .toc) a,
+.post-template .notepad-post-content > div:not(.notepad-post-title, .toc) code {
   color: #e51843;
 }
 .post-template .notepad-post-content > div:not(.notepad-post-title) ul,

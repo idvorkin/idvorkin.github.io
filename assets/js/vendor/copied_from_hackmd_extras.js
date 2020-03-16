@@ -89,3 +89,5 @@ function scrollToBottom() {
 
 window.scrollToTop = scrollToTop;
 window.scrollToBottom = scrollToBottom;
+// generateToc('ui-toc')
+generateToc('ui-toc-affix')
