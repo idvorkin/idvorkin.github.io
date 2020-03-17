@@ -5,7 +5,7 @@
     {% include head.html %}
 </head>
 
-<body class="post-template" itemscope itemtype="http://schema.org/WebPage">
+<body class="container" itemscope itemtype="http://schema.org/WebPage">
     <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
         {% include site-menu.html %}
 
@@ -21,27 +21,6 @@
             {% unless forloop.last %}&nbsp;&comma;&nbsp;
             {% endunless %}{% endfor %}{% endif %}
         </div>
-
-        <!--
-        <header class="notepad-post-header-simple">
-            <div class="notepad-post-title-simple row">
-                <div class="small-12 columns">
-                    <div class="notepad-post-meta-simple">
-                        <h1>{{ page.title }}</h1>
-                        {% assign tagsize = page.tags.size %}
-                        {% if tagsize != 0 %} tagged {% for tag in page.tags %}
-                        <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip"
-                            title="Posts tagged with {{ tag }}">
-                            {{ tag }}
-                        </a>
-                        {% unless forloop.last %}&nbsp;&comma;&nbsp;
-                        {% endunless %}{% endfor %}{% endif %}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </header>
-    -->
         <article class="article">
             <div id="content-holder" class="pretty-first-para">
                 {% include toc.html %}
@@ -54,7 +33,6 @@
     <span id="hold-scripts-so-looks-nice-debugging">
         {% include scripts.html %}
     </span>
-
     {% if page.collapsable %}
     {% include collapse.html %}
     {% endif %}
