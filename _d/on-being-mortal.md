@@ -19,15 +19,15 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 <!-- vim-markdown-toc GFM -->
 
 - [The book](#the-book)
-    - [Introduction](#introduction)
-    - [The Independent Self](#the-independent-self)
-    - [Things Fall Apart](#things-fall-apart)
-    - [Dependence](#dependence)
-    - [Assistance](#assistance)
-    - [A Better Life](#a-better-life)
-    - [Letting Go](#letting-go)
-    - [Hard Conversations](#hard-conversations)
-    - [Courage](#courage)
+  - [Introduction](#introduction)
+  - [The Independent Self](#the-independent-self)
+  - [Things Fall Apart](#things-fall-apart)
+  - [Dependence](#dependence)
+  - [Assistance](#assistance)
+  - [A Better Life](#a-better-life)
+  - [Letting Go](#letting-go)
+  - [Hard Conversations](#hard-conversations)
+  - [Courage](#courage)
 - [Statistics](#statistics)
 - [Quotes](#quotes)
 - [Other resources](#other-resources)
@@ -79,16 +79,15 @@ Courage is strength in the face of knowledge of what is to be feared or hoped. W
 - Age is range between previous and current e.g. 24 implies 15-24
 - You can download the excel yourself, and play with it as you wish.
 
-<p>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml?widget=true&amp;headers=false"
-style="position: relative; height: 600px; width: 100%;"
+style="width: 100%;height:400px"
 ></iframe>
-</p>
+
+Get the raw data from:
 
 - Download [Google Sheets](https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml)
 - Download [Excel](https://1drv.ms/x/s!Ap6_JgmVeSWShucCfjXvgzVyAeRA8A?e=QXhv3o)
-
-- A similar graph from the[CDC](https://www.cdc.gov/injury/images/lc-charts/leading_causes_of_death_by_age_group_2017_1100w850h.jpg)
+- A similar graph from the [CDC](https://www.cdc.gov/injury/images/lc-charts/leading_causes_of_death_by_age_group_2017_1100w850h.jpg)
 
 ## Quotes
 

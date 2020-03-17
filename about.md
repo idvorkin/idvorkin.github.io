@@ -6,11 +6,7 @@ tags:
 ---
 
 Ira Glass, the host of This American Life, eloquently explains this blog's Raison d'Etre in the video below.
-
-<br/>
-
-<iframe src="https://player.vimeo.com/video/176325518?color=1fc9a2&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
+<iframe src="https://player.vimeo.com/video/176325518?color=1fc9a2&portrait=0" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 Expressed plainly - getting good at hard stuff takes LOTS of practice and LOTS of feedback, during which time the stuff you do will suck.
 
 I want to get great at understanding, reasoning, and presenting ideas, and have no fear of sucking, so I'll use this blog to collect, massage, and present ideas.
