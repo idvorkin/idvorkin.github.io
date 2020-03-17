@@ -4,7 +4,11 @@
         <a class="navbar-brand" href="/">
             <img src="{{ site.logo-png}}" height="40" alt="">
         </a>
-        <div class="navbar-collapse" id="navbarNavAltMarkup">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToCollapse"
+            aria-controls="navbarToCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToCollapse">
             <div class="navbar-nav">
                 {% for link in site.links %}
                 <a class="nav-link nav-item" {% if link.external %} href="{{ link.url }}" {% else %}
@@ -14,14 +18,5 @@
                 {% endfor %}
             </div>
         </div>
-        <!--
-        <ul class="navbar-nav">
-        </ul>
-        -->
-    </nav>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
     </nav>
 </header>

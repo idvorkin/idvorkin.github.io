@@ -5,28 +5,29 @@
     {% include head.html %}
 </head>
 
-<body class="container" itemscope itemtype="http://schema.org/WebPage">
+<body itemscope itemtype="http://schema.org/WebPage">
     <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
         {% include site-menu.html %}
 
-
-        <h1 style="text-align:center;">{{ page.title }}</h1>
-        <div style="text-align:center">
-            {% assign tagsize = page.tags.size %}
-            {% if tagsize != 0 %} tagged {% for tag in page.tags %}
-            <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip"
-                title="Posts tagged with {{ tag }}">
-                {{ tag }}
-            </a>
-            {% unless forloop.last %}&nbsp;&comma;&nbsp;
-            {% endunless %}{% endfor %}{% endif %}
-        </div>
-        <article class="article">
-            <div id="content-holder" class="pretty-first-para">
-                {% include toc.html %}
-                {{ content }}
+        <div class="container">
+            <h1 style="text-align:center;">{{ page.title }}</h1>
+            <div style="text-align:center">
+                {% assign tagsize = page.tags.size %}
+                {% if tagsize != 0 %} tagged {% for tag in page.tags %}
+                <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip"
+                    title="Posts tagged with {{ tag }}">
+                    {{ tag }}
+                </a>
+                {% unless forloop.last %}&nbsp;&comma;&nbsp;
+                {% endunless %}{% endfor %}{% endif %}
             </div>
-        </article>
+            <article class="article">
+                <div id="content-holder" class="pretty-first-para">
+                    {% include toc.html %}
+                    {{ content }}
+                </div>
+            </article>
+        </div>
 
     </main>
 
