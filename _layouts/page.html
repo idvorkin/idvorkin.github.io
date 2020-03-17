@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <!--
+<!--
 ====================================================
     __  ____  ______________  _______ ___    __
    / / / /  |/  / ____/   \ \/ / ___//   |  / /
@@ -15,59 +15,54 @@ Version: 1.1
 Description: Awesome dude, awesome life
 ====================================================
 -->
-  <head>
-    {% include head.html %}
-  </head>
-  <body
-    class="post-template page"
-    itemscope
-    itemtype="http://schema.org/WebPage"
-  >
-    <main
-      id="notepad-page-container"
-      class="notepad-page-container"
-      role="main"
-    >
-      <header class="notepad-page-header">
-        <div class="notepad-page-menu-header">
-          <a class="notepad-blog-logo" href="{{ site.logo-url }}">
-            <img src="{{ site.logo-png }}" />
-          </a>
 
-          <div class="notepad-blog-menu">
-            <div class="notepad-mobile-menu show-for-small">
-              <a href="#"><i class="fa fa-bars"></i></a>
-            </div>
-            <ul class="notepad-menu">
-              <li class="notepad-mobile-close-btn show-for-small text-right">
-                <a href="#"><i class="fa fa-times"></i></a>
-              </li>
-              {% for link in site.links %}
-              <li>
-                {% if link.external %}
-                <a href="{{ link.url }}">{{ link.title }}</a> {% else %}
-                <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a> {%
-                endif %}
-              </li>
-              {% endfor %}
-              <li>
-                <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"
-                  ><i class="icon-rss"></i> Feed</a
-                >
-              </li>
-            </ul>
+<head>
+  {% include head.html %}
+</head>
+
+<body class="post-template page" itemscope itemtype="http://schema.org/WebPage">
+  <main id="notepad-page-container" class="notepad-page-container" role="main">
+    <header class="notepad-page-header">
+      <div class="notepad-page-menu-header">
+        <a class="notepad-blog-logo" href="{{ site.logo-url }}">
+          <img src="{{ site.logo-png }}" />
+        </a>
+
+        <div class="notepad-blog-menu">
+          <div class="notepad-mobile-menu show-for-small">
+            <a href="#"><i class="fa fa-bars"></i></a>
           </div>
+          <ul class="notepad-menu">
+            <li class="notepad-mobile-close-btn show-for-small text-right">
+              <a href="#"><i class="fa fa-times"></i></a>
+            </li>
+            {% for link in site.links %}
+            <li>
+              {% if link.external %}
+              <a href="{{ link.url }}">{{ link.title }}</a> {% else %}
+              <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a> {%
+                endif %}
+            </li>
+            {% endfor %}
+            <li>
+              <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a>
+            </li>
+          </ul>
         </div>
-        <div class="notepad-page-title row">
-          <div class="small-12 columns"><h1>{{ page.title }}</h1></div>
+      </div>
+      <div class="notepad-page-title row">
+        <div class="small-12 columns">
+          <h1>{{ page.title }}</h1>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <article class="notepad-page-content"><div>{{ content }}</div></article>
-      <div class="cf"></div>
-      {% include footer.html %}
-    </main>
+    <article class="notepad-page-content">
+      <div>{{ content }}</div>
+    </article>
+  </main>
 
-    {% include scripts.html %}
-  </body>
+  {% include scripts.html %}
+</body>
+
 </html>

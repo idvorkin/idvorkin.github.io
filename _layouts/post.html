@@ -20,24 +20,7 @@ Description: Awesome dude, awesome life
     {% include head.html %}
 
     <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/copied_from_hackmd_extras.css">
-
-    {% if page.collapsable %}
     <link rel="stylesheet" href="{{ site.url }}/assets/css/collapsehelper.css">
-    {% endif %}
-
-    {% if site.dropcap %}<style type="text/css">
-        @media only screen and (min-width:43.75em) {
-            .notepad-post-content div>p:first-child:first-letter {
-                float: left;
-                font-size: 4.688rem;
-                line-height: 4.375rem;
-                padding-top: .25rem;
-                padding-right: .5rem;
-                padding-left: .188rem;
-                font-family: serif
-            }
-        }
-    </style>{% endif %}
 </head>
 
 <body class="post-template" itemscope itemtype="http://schema.org/WebPage">
@@ -92,12 +75,6 @@ Description: Awesome dude, awesome life
                 {{ content }}
             </div>
         </article>
-        <div class="cf"></div>
-        {% if site.share %}{% include share.html %}{% endif %}
-        <div class="cf"></div>
-
-        {% include signoff.html %}
-        {% include footer.html %}
 
     </main>
 
