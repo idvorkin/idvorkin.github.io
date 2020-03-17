@@ -1,20 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!--
-====================================================
-    __  ____  ______________  _______ ___    __
-   / / / /  |/  / ____/   \ \/ / ___//   |  / /
-  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /
- / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
-/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
-
-====================================================
-Owner Name: Hossain Mohammad Faysal
-Profile: https://www.facebook.com/hmfaysal
-Version: 1.1
-Description: Awesome dude, awesome life
-====================================================
--->
 
 <head>
     {% include head.html %}
@@ -24,38 +9,7 @@ Description: Awesome dude, awesome life
 
     <main id="notepad-page-container" class="notepad-page-container" role="main">
 
-
-        <header class="notepad-page-header">
-            <div class="notepad-page-menu-header">
-
-                <a class="notepad-blog-logo" href="{{ site.logo-url }}">
-                    <img src={{ site.logo-png }}>
-                </a>
-
-
-
-                <div class="notepad-blog-menu">
-                    <div class="notepad-mobile-menu show-for-small">
-                        <a href="#"><i class="fa fa-bars"></i></a>
-                    </div>
-                    <ul class="notepad-menu">
-                        <li class="notepad-mobile-close-btn show-for-small text-right">
-                            <a href="#"><i class="fa fa-times"></i></a>
-                        </li>
-                        {% for link in site.links %}
-                        <li>{% if link.external %}
-                            <a href="{{ link.url }}">{{ link.title }}</a>
-                            {% else %}
-                            <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-                            {% endif %} </li>
-                        {% endfor %}
-                        <li><a href="{{ site.url }}/feed.xml" title="Atom/RSS feed"><i class="icon-rss"></i> Feed</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-        </header>
+        {% include site-menu.html %}
 
         <article class="notepad-page-content">
             <div>{{ content }}</div>

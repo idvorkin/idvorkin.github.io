@@ -1,7 +1,16 @@
-<meta charset="utf-8" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+  integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+  integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+
 <title>
   {% if page.title %}{{ page.title | upcase }} {% endif %}{{ site.title | upcase }}
 </title>
+
 {% if page.tags %}
 <meta name="keywords" content="{{ page.tags | join: ', ' }}" />{% endif %} {% if site.owner.twitter %}
 
@@ -61,9 +70,6 @@ strip_slash }}{% endif %}{% endcapture %}
 <meta name="MobileOptimized" content="320" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700" rel="stylesheet"
-  type="text/css" />
-
 <!-- Icons -->
 <link rel="apple-touch-icon" sizes="180x180"
   href="https://github.com/idvorkin/blob/raw/master/idvorkin-bunny-ears-ar-2020-180-180.png" />
@@ -72,3 +78,7 @@ strip_slash }}{% endif %}{% endcapture %}
 <!-- Add this back
 <link rel="manifest" href="/site.webmanifest" />
 -->
+
+<!-- TODO CSS Should probably go elsewhere, but whatever -->
+<link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/copied_from_hackmd_extras.css">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/collapsehelper.css">
