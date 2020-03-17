@@ -4,6 +4,7 @@ title: Tag Index
 permalink: /tags/index.html
 description: "An archive of posts sorted by tag."
 ---
+<h1 style="text-align: center;"> Tags </h1>
 <!-- DEBUG MARK -->
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 <!-- site_tags: {{ site_tags }} -->
@@ -12,7 +13,7 @@ description: "An archive of posts sorted by tag."
 
 <ul class="tag-box inline">
 	{% for tag in tag_words %}
-	<li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
+	<li><a href="#{{ tag }}">{{ tag | capitalize }} [<span>{{ site.tags[tag].size }}</span>]</a></li>
 	{% endfor %}
 </ul>
 
@@ -31,13 +32,3 @@ description: "An archive of posts sorted by tag."
 	{% assign group = nil %}
 </ul>
 {% endfor %}
-
-
-
-<div id="tags">
-	<ul class="tag-box inline">
-		{% for tag in tag_words %}
-		<li><a href="#{{ tag }}">{{ tag | capitalize }}<span>{{ site.tags[tag] | size }}</span></a></li>
-		{% endfor %}
-	</ul>
-</div>
