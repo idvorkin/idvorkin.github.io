@@ -37,6 +37,11 @@
     {% if page.collapsable %}
     {% include collapse.html %}
     {% endif %}
+    <script>
+        //  Bootstrap tables are optin, so set their class
+        // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
+        $("table").addClass("table table-striped")
+    </script>
 
 </body>
 
