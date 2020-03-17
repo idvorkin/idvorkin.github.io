@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: search_base
 title: Drafts
 tags: []
 paginate: 5
@@ -8,17 +8,13 @@ paginate: 5
 <h1>My drafts</h1>
 {% assign sorted = site.d | sort:"title" %} {% for item in sorted %}
 <p>
-  <a href="{{ item.url }}">{{ item.title }}</a>[<a href="{{ item.url }}"
-    >{{ item.url }}</a
-  >] [{{ item.path}}]
+  <a href="{{ item.url }}">{{ item.title }}</a>[<a href="{{ item.url }}">{{ item.url }}</a>] [{{ item.path}}]
 </p>
 {% endfor %}
 
 <h1>My Posts</h1>
 {% assign sorted = site.posts | sort:"title" %} {% for item in sorted %}
 <p>
-  <a href="{{ item.url }}">{{ item.title }}</a>[<a href="{{ item.url }}"
-    >{{ item.url }}</a
-  >] [{{ item.path}}]
+  <a href="{{ item.url }}">{{ item.title }}</a>[<a href="{{ item.url }}">{{ item.url }}</a>] [{{ item.path}}]
 </p>
 {% endfor %}
