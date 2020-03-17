@@ -10,8 +10,12 @@
 /* https://github.com/idvorkin/idvorkin.github.io/blob/dc1c29e4dfa89b9e3ba79a4abb40507d8ddab808/assets/css/post.css#L291*/
   p:first-of-type {
   font-size: 1.375rem;
-  font-weight: 300;
   }
+
+    p:first-of-type:first-letter {
+        font-size: 2.6em;
+        font-weight: 600;
+    }
   /*
   p:first-of-type::first-letter {
     font-size: 4.5em;
