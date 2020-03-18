@@ -1,4 +1,4 @@
-let tocExpand = false;
+let tocExpand = true;
 
 function checkExpandToggle() {
   const toc = $(".ui-toc-dropdown .toc");
