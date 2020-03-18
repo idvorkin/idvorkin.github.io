@@ -23,3 +23,10 @@
     margin-top: .15em;
   }
   */
+
+  /*
+All images in the container, should be full width. Can learn more markdown and re-style it
+  */
+  .container img{
+    width:100%
+  }
