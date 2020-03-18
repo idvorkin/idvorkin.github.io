@@ -30,3 +30,19 @@ All images in the container, should be full width. Can learn more markdown and r
   .container img{
     width:100%
   }
+  /*
+    If you have normal wrapping rules, you'll end up extending page width which you don't want as it 
+    enables scrolling
+    https://stackoverflow.com/questions/6666532/how-to-force-table-cell-td-content-to-wrap
+    https://github.com/w3c/csswg-drafts/issues/121
+    https://stackoverflow.com/questions/6601148/100-width-table-overflowing-div-container
+
+  .container table {
+    width:fixed; // not ideal since columns are equal width
+  }
+
+  */
+
+  .container td{
+  overflow-wrap: break-word;
+  }
