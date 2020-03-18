@@ -1,15 +1,6 @@
 /* for extra features should include this */
 
 
-.ui-infobar {
-    position: relative;
-    z-index: 2;
-    max-width: 758px;
-    margin-top: 25px;
-    margin-bottom: -25px;
-    color: #777;
-}
-
 .toc .invisable-node {
   list-style-type: none;
 }
@@ -30,8 +21,6 @@
 .ui-toc .open .ui-toc-label {
     opacity: 1;
     color: #5f5f5f;
-    -webkit-transition: opacity 0.2s; /* Safari */
-    transition: opacity 0.2s;
 }
 
 .ui-toc-label:focus {
@@ -60,10 +49,6 @@
     overflow: auto;
 }
 
-.ui-toc-dropdown[dir='rtl'] .nav {
-    padding-right: 0;
-    letter-spacing: 0.0029em;
-}
 
 .ui-toc-dropdown a {
     overflow: hidden;
@@ -95,11 +80,6 @@
     border-left: 1px solid black;
 }
 
-.ui-toc-dropdown[dir='rtl'] .nav>li>a:focus,.ui-toc-dropdown[dir='rtl'] .nav>li>a:hover {
-    padding-right: 19px;
-    border-left: none;
-    border-right: 1px solid black;
-}
 
 .ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a {
     padding-left: 18px;
@@ -109,11 +89,6 @@
     border-left: 2px solid black;
 }
 
-.ui-toc-dropdown[dir='rtl'] .nav>.active:focus>a,.ui-toc-dropdown[dir='rtl'] .nav>.active:hover>a,.ui-toc-dropdown[dir='rtl'] .nav>.active>a {
-    padding-right: 18px;
-    border-left: none;
-    border-right: 2px solid black;
-}
 
 .ui-toc-dropdown .nav .nav {
     display: none;
@@ -133,9 +108,6 @@
 }
 
 
-.ui-toc-dropdown[dir='rtl'] .nav .nav>li>a {
-    padding-right: 30px;
-}
 
 .ui-toc-dropdown .nav .nav>li>ul>li>a {
     padding-top: 1px;
@@ -145,50 +117,26 @@
     font-weight: 400;
 }
 
-.ui-toc-dropdown[dir='rtl'] .nav .nav>li>ul>li>a {
-    padding-right: 40px;
-}
 
 .ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover {
     padding-left: 29px;
 }
 
-.ui-toc-dropdown[dir='rtl'] .nav .nav>li>a:focus,.ui-toc-dropdown[dir='rtl'] .nav .nav>li>a:hover {
-    padding-right: 29px;
-}
 
 .ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover {
     padding-left: 39px;
 }
 
-.ui-toc-dropdown[dir='rtl'] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir='rtl'] .nav .nav>li>ul>li>a:hover {
-    padding-right: 39px;
-}
 
 .ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a {
     padding-left: 28px;
     font-weight: 500;
 }
 
-.ui-toc-dropdown[dir='rtl'] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir='rtl'] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir='rtl'] .nav .nav>.active>a {
-    padding-right: 28px;
-}
 
 .ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a {
     padding-left: 38px;
     font-weight: 500;
-}
-
-.ui-toc-dropdown[dir='rtl'] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir='rtl'] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir='rtl'] .nav .nav>.active>.nav>.active>a {
-    padding-right: 38px;
-}
-
-.ui-affix-toc {
-    position: fixed;
-    top: 0;
-    max-width: 15vw;
-    max-height: 70vh;
-    overflow: auto;
 }
 
 .expand-toggle, .back-to-top, .go-to-bottom {
@@ -209,27 +157,6 @@
 .back-to-top, .go-to-bottom {
     margin-top: 0;
 }
-
-.ui-user-icon {
-    width: 20px;
-    height: 20px;
-    display: block;
-    border-radius: 3px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-right: 5px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.ui-user-icon.small {
-	width: 18px;
-	height: 18px;
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0 0 0.2em 0;
-}
-
 
 .unselectable {
     -moz-user-select: none;
