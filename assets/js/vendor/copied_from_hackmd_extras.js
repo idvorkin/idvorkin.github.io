@@ -65,27 +65,11 @@ function generateToc(id = "toc-slot") {
 }
 
 function scrollToTop() {
-  $("body, html")
-    .stop(true, true)
-    .animate(
-      {
-        scrollTop: 0
-      },
-      100,
-      "linear"
-    );
+  window.scrollTo(0, 0)
 }
 
 function scrollToBottom() {
-  $("body, html")
-    .stop(true, true)
-    .animate(
-      {
-        scrollTop: $(document.body)[0].scrollHeight
-      },
-      100,
-      "linear"
-    );
+  window.scrollTo(0, document.body.scrollHeight);
 }
 
 window.scrollToTop = scrollToTop;
