@@ -17,15 +17,14 @@
 .ui-toc {
     position: fixed;
     bottom: 20px;
+    right:20px;
     z-index: 10000;
 }
 
 .ui-toc-label {
-    opacity: 0.9;
     background-color: #ccc;
     border: none;
-    -webkit-transition: opacity 0.2s; /* Safari */
-    transition: opacity 0.2s;
+    opacity: 0.2;
 }
 
 .ui-toc .open .ui-toc-label {
@@ -42,10 +41,8 @@
 }
 
 .ui-toc-label:hover {
-    opacity: 1;
+    opacity: 0.9;
     background-color: #ccc;
-    -webkit-transition: opacity 0.2s; /* Safari */
-    transition: opacity 0.2s;
 }
 
 .ui-toc-dropdown {
