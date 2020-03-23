@@ -3,16 +3,17 @@ title: Debug the page
 layout: empty
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <!-- pre head -->
 
-  <head>
+<!-- pre head -->
+
+<head>
     <!-- pre include -->
     {% include head.html %}
-  </head>
+</head>
 
-  <!--
+<!--
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,93 +26,90 @@ layout: empty
 </head>
 -->
 
-  <body
-    data-spy="scroll"
-    data-target=".nav-scroll-spy"
-    style="position:relative"
-  >
+<body data-spy="scroll" data-target=".nav-scroll-spy" style="position:relative">
     {% include site-menu.html %}
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <article class="article">
-      <div id="content-holder" class="pretty-first-para">
-        {% include toc.html %}
+        <div id="content-holder" class="pretty-first-para">
+            {% include toc.html %}
 
-        <div
-          id="debug-page-scroll-spy"
-          class="nav-scroll-spy"
-          style="position:fixed;offset-top:100px"
-        ></div>
+            <div id="debug-page-scroll-spy" class="nav-scroll-spy" style="position:fixed;offset-top:100px">
+            </div>
 
-        <h1>Outer 1</h1>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <h1>Inner 4</h1>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
-        <p>hello world</p>
+            <h1> Outer 1</h1>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <h1> Inner 4</h1>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
+            <p> hello world </p>
 
-        <h1>Inner 3</h1>
-        <h1>Outer 2</h1>
-        <h1>Inner 2</h1>
-      </div>
+            <h1> Inner 3</h1>
+            <h1> Outer 2</h1>
+            <h1> Inner 2</h1>
+        </div>
     </article>
     <span id="hold-scripts-so-looks-nice-debugging">
-      {% include scripts.html %}
-      <script>
-        //  Bootstrap tables are optin, so set their class
-        // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
-        $("table").addClass("table");
-      </script>
+        {% include scripts.html %}
+        <script>
+            //  Bootstrap tables are optin, so set their class
+            // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
+            $("table").addClass("table")
+            generateToc('debug-page-scroll-spy')
+        </script>
     </span>
-  </body>
+
+</body>
+
 </html>
 
 <!--
