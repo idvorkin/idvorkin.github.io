@@ -11,34 +11,40 @@ author: "Igor Dvorkin"
 Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it of, and getting now relief regardless of when you sit or sleep. Now imagine that's not a physical weight, but instead a mental weight, a psyhcic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Types of psychic weight](#types-of-psychic-weight)
-    - [Grasping](#grasping)
-    - [Aversion](#aversion)
-    - [Mind Monsters](#mind-monsters)
-    - [Triggers](#triggers)
-    - [Emotional First Aid](#emotional-first-aid)
-    - [Shame](#shame)
-    - [Pride](#pride)
-    - [Ruminating](#ruminating)
-    - [Scarring](#scarring)
-- [What should you do to reduce pshycic weight.](#what-should-you-do-to-reduce-pshycic-weight)
-    - [Pain and suffering](#pain-and-suffering)
-- [Avoidance Startegies](#avoidance-startegies)
-    - [Addiction](#addiction)
-    - [Resistance](#resistance)
+  - [Grasping](#grasping)
+  - [Aversion](#aversion)
+  - [Mind Monsters](#mind-monsters)
+  - [Triggers](#triggers)
+  - [Emotional First Aid](#emotional-first-aid)
+  - [Shame](#shame)
+  - [Pride](#pride)
+  - [Ruminating](#ruminating)
+  - [Scarring](#scarring)
+- [Antidotes](#antidotes)
+  - [Seperate Pain and suffering](#seperate-pain-and-suffering)
+  - [GTD (Getting Things Done)](#gtd-getting-things-done)
+  - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
+  - [Talk it through](#talk-it-through)
+  - [Meditation](#meditation)
+  - [This too shall pass](#this-too-shall-pass)
+- [False Avoidance Startegies](#false-avoidance-startegies)
+  - [Addiction](#addiction)
+  - [Resistance](#resistance)
 - [Examples from my own life](#examples-from-my-own-life)
-    - [Bathroom remodel feeling "f@#$" over](#bathroom-remodel-feeling-f-over)
-    - [Insecurity around money](#insecurity-around-money)
-    - [Needing to finish a self evaluation](#needing-to-finish-a-self-evaluation)
-    - [Needing to finish a document at work](#needing-to-finish-a-document-at-work)
-    - [Small things that got really big](#small-things-that-got-really-big)
-    - [Examples of Pride](#examples-of-pride)
+  - [Bathroom remodel feeling "f@#\$" over](#bathroom-remodel-feeling-f-over)
+  - [Insecurity around money](#insecurity-around-money)
+  - [Needing to finish a self evaluation](#needing-to-finish-a-self-evaluation)
+  - [Needing to finish a document at work](#needing-to-finish-a-document-at-work)
+  - [Small things that got really big](#small-things-that-got-really-big)
+  - [Examples of Pride](#examples-of-pride)
 - [Useful thoughts.](#useful-thoughts)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## Types of psychic weight
 
@@ -60,11 +66,21 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 
 ### Scarring
 
-## What should you do to reduce pshycic weight.
+## Antidotes
 
-### Pain and suffering
+### Seperate Pain and suffering
 
-## Avoidance Startegies
+### GTD (Getting Things Done)
+
+### CI/CC (Circle of Influence, Circle of Concern)
+
+### Talk it through
+
+### Meditation
+
+### This too shall pass
+
+## False Avoidance Startegies
 
 ### Addiction
 
