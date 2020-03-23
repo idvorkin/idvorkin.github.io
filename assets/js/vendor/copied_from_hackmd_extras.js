@@ -56,16 +56,14 @@ function generateToc(id = "toc-slot") {
     }
     // removeHash();
   });
-  tocMenu
-    .append(toggle)
-    .append(backtotop)
-    .append(gotobottom);
+  // .append(toggle) remove toggle for now.
+  tocMenu.append(backtotop).append(gotobottom);
   target.append(tocMenu);
-  console.log(`toc generate for ${id}`)
+  console.log(`toc generate for ${id}`);
 }
 
 function scrollToTop() {
-  window.scrollTo(0, 0)
+  window.scrollTo(0, 0);
 }
 
 function scrollToBottom() {
@@ -74,4 +72,4 @@ function scrollToBottom() {
 
 window.scrollToTop = scrollToTop;
 window.scrollToBottom = scrollToBottom;
-generateToc('ui-toc')
+generateToc("ui-toc");
