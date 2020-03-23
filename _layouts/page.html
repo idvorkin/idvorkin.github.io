@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!--
+  <!--
 ====================================================
     __  ____  ______________  _______ ___    __
    / / / /  |/  / ____/   \ \/ / ___//   |  / /
@@ -16,19 +16,28 @@ Description: Awesome dude, awesome life
 ====================================================
 -->
 
-<head>
-  {% include head.html %}
-</head>
+  <head>
+    {% include head.html %}
+  </head>
 
-<body class="post-template page" itemscope itemtype="http://schema.org/WebPage">
-  {% include site-menu.html %}
-  <main id="notepad-page-container" class="notepad-page-container" role="main">
-    <article class="container">
-      <div>{{ content }}</div>
-    </article>
-  </main>
+  <body
+    data-spy="scroll"
+    data-target=".nav-scroll-spy"
+    style="position:relative"
+  >
+    {% include site-menu.html %}
+    <main
+      id="notepad-page-container"
+      class="notepad-page-container"
+      role="main"
+    >
+      <article class="container">
+        <div id="content-holder">
+          {% if page.has-toc %} {% include toc.html %} {% endif %} {{ content }}
+        </div>
+      </article>
+    </main>
 
-  {% include scripts.html %}
-</body>
-
+    {% include scripts.html %}
+  </body>
 </html>
