@@ -8,7 +8,6 @@ tags:
   - emotional intelligence
 permalink: /pride
 redirect_from:
-  - /pride
   - /duck-pride
 ---
 
