@@ -51,7 +51,7 @@
     level = 0,
     titleElements = [],
     titleNames = [],
-    ulClass = undefined,
+    ulClass = "class-not-specified",
     index = 0
   ) {
     // Inititalize our elements from the toc object
@@ -64,11 +64,7 @@
     // No need to do anything for an empty ToC
     if (!titleElements.length) return;
 
-    var content = "<ul";
-    if (ulClass) {
-      content += ' class="' + ulClass + '"';
-    }
-    content += ">\n";
+    var content = `<ul class='${ulClass}'>\n`;
     var iterTag = titleNames[level];
     var recurse = false;
     var openTag = false;
@@ -95,14 +91,8 @@
           content += "</li>\n";
           openTag = false;
         }
-        content +=
-          '<li><a href="' +
-          id +
-          '" title="' +
-          elementTitle +
-          '">' +
-          elementText +
-          "</a>";
+
+        content += `<li><a href="${id}" title="${elementTitle}">${elementText}</a>`;
         // Reset recursion. We need it for the next subsections
         recurse = false;
         openTag = true;
