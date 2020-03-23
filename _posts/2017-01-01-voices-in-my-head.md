@@ -7,7 +7,6 @@ inprogress: true
 tags:
   - how igor ticks
   - emotional intelligence
-collapsable: true
 
 author: "Igor Dvorkin"
 ---
@@ -20,7 +19,7 @@ Here are my voices, I'm trying to teach myself to spend some time talking to all
 
 _(BTW the order below is deliberate,it's the order of the voices i want to talk to. I want to give more air time to the positive players)_
 
-**Positive Players:**
+### Positive Players
 
 - **Harry** - my habits coach. Always pushing for more habits
 - **Carl** - my confidence. Champion of success
@@ -29,24 +28,24 @@ _(BTW the order below is deliberate,it's the order of the voices i want to talk 
 - **David** - the Dad. Proud like a MoFo
 - **Gertrude** My grandmother mind reassuring me that I can take it easy, and I'm doing the best I can.
 
-**Positive Players (Too be hired)**
+### Positive Players (Too be hired)
 
 - **Harold** - the Husband. Treating Love like a verb not a noun.
 
-**Negative Habits**
+### Negative Habits
 
 - **Vern** my desire to vegetate and not exercise
 - **Gary** my desire to gorge instead of eating healthy.
 - **Prashant** my desire to procrastinate
 
-**Anxieties**
+### Anxieties
 
 - **Walter** - my anxiety that I'm wasting my life.
 - **Ina** - my insecurity that I'm a failure, only around when Carl gets sick
 - **Terrance** - my frustrations with my wife
 - **Frank** - my guilt I'm not doing enough as a father.
 
-**Anxieties (Retired)**
+### Anxieties (Retired)
 
 - **Mo** - my anxiety about money (retired since the the stock market went through roof).
 - **Wilma** - my end end of month anxiety around hitting my weight goals.
