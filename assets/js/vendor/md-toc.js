@@ -92,7 +92,7 @@
           openTag = false;
         }
 
-        content += `<li><a href="${id}" title="${elementTitle}">${elementText}</a>`;
+        content += `<li><a class="nav-link" href="${id}" title="${elementTitle}">${elementText}</a>`;
         // Reset recursion. We need it for the next subsections
         recurse = false;
         openTag = true;
