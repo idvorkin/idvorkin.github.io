@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    {% include head.html %}
-</head>
+    <head>
+        {% include head.html %}
+    </head>
 
-<body data-spy="scroll" data-target=".nav-scoll-spy" style="position:relative">
+    <body data-spy="scroll" data-target=".nav-scroll-spy" style="position:relative">
 
-    <main id="notepad-post-container-simple" class="notepad-post-container-simple" role="main">
         {% include site-menu.html %}
 
         <div class="container">
@@ -16,7 +15,7 @@
                 {% assign tagsize = page.tags.size %}
                 {% if tagsize != 0 %} {% for tag in page.tags %}
                 <a href="{{ site.url }}/tags/index.html#{{ tag | cgi_encode }}" data-toggle="tooltip"
-                    title="Posts tagged with {{ tag }}">
+                                                                                title="Posts tagged with {{ tag }}">
                     {{ tag }}
                 </a>
                 {% unless forloop.last %}&comma;
@@ -30,23 +29,21 @@
             </article>
         </div>
 
-    </main>
+        <span id="hold-scripts-so-looks-nice-debugging">
+            {% include scripts.html %}
+            <script>
+                //  Bootstrap tables are optin, so set their class
+                // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
+                $("table").addClass("table table-striped")
+            </script>
 
-    <span id="hold-scripts-so-looks-nice-debugging">
-        {% include scripts.html %}
-    </span>
-<!--
-    Remove wonky collapsable idea.
-    {% if page.collapsable %}
-    {% include collapse.html %}
-    {% endif %}
--->
-    <script>
-        //  Bootstrap tables are optin, so set their class
-        // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
-        $("table").addClass("table table-striped")
-    </script>
-
-</body>
+        </span>
+        <!--
+            Remove wonky collapsable idea.
+            {% if page.collapsable %}
+            {% include collapse.html %}
+            {% endif %}
+        -->
+    </body>
 
 </html>
