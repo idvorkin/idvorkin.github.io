@@ -3,17 +3,16 @@ title: Debug the page
 layout: empty
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <!-- pre head -->
 
-<!-- pre head -->
-
-<head>
+  <head>
     <!-- pre include -->
     {% include head.html %}
-</head>
+  </head>
 
-<!--
+  <!--
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,16 +25,96 @@ layout: empty
 </head>
 -->
 
-<body>
+  <body
+    data-spy="scroll"
+    data-target=".nav-scroll-spy"
+    style="position:relative"
+  >
     {% include site-menu.html %}
-
-
-    <h1> H1 in in the body!</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    {% include scripts.html %}
+    <article class="article">
+      <div id="content-holder" class="pretty-first-para">
+        {% include toc.html %}
 
+        <nav
+          id="debug-page-scroll-spy"
+          class="nav-scroll-spy"
+          style="position:fixed"
+        ></nav>
+
+        <h1>Outer 1</h1>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <h1>Inner 4</h1>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+        <p>hello world</p>
+
+        <h1>Inner 3</h1>
+        <h1>Outer 2</h1>
+        <h1>Inner 2</h1>
+      </div>
+    </article>
+    <span id="hold-scripts-so-looks-nice-debugging">
+      {% include scripts.html %}
+      <script>
+        //  Bootstrap tables are optin, so set their class
+        // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
+        $("table").addClass("table");
+      </script>
+    </span>
+  </body>
+</html>
+
+<!--
     <table>
         <thead>
             <tr>
@@ -50,12 +129,4 @@ layout: empty
             </tr>
         </tbody>
     </table>
-    <script>
-        //  Bootstrap tables are optin, so set their class
-        // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
-        $("table").addClass("table")
-    </script>
-
-</body>
-
-</html>
+-->
