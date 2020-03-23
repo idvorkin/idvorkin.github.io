@@ -62,8 +62,7 @@
   color: #767676;
 }
 
-<!-- ACTIVE element,
-TADA -- > .ui-toc-dropdown .nav-link.active {
+<!-- ACTIVE element TADA -- > .ui-toc-dropdown .nav-link.active {
   display: block;
   padding: 4px 20px;
   font-size: 13px;
