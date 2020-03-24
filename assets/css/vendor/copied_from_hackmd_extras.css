@@ -39,6 +39,7 @@
   padding-left: 10px;
   padding-right: 10px;
   max-height: 70vh;
+  max-width: 90vw;
   overflow: auto;
   text-align: inherit;
 }
@@ -47,6 +48,12 @@
   max-height: calc(70vh - 100px);
   overflow: auto;
 }
+
+/*
+    Preserve whitespace in the NAV. 
+    However, when whitespace is preserved, and the item is long, things get long
+    so need to have a maximum width set on the .toc
+*/
 
 .ui-toc-dropdown a {
   overflow: hidden;
