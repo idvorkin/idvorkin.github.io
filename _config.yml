@@ -47,6 +47,8 @@ links:
 collections:
   d:
     output: true
+  td:
+    output: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: America/Los_Angeles
@@ -166,6 +168,8 @@ algolia:
   search_only_api_key: d4bae7d1d6328352ce13c0978ca620e9
   index_name: jekyll
   files_to_exclude:
+    - "_td/*"
+    - "td/*"
     - "_d/*"
     - "d/*"
     - "_posts/*bak"
@@ -178,6 +182,7 @@ include: [".htaccess"]
 exclude:
   [
     "lib",
+    "tags",
     "config.rb",
     "Gemfile",
     "Capfile",
