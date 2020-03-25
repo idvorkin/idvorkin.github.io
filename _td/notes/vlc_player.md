@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/vlc_player.md)_
+
 Now a day it's all about video. What tools do we have to watch videos? So far VLC Media Player.
 Lets figure out how to use it:
 

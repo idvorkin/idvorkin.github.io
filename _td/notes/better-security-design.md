@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/better-security-design.md)_
+
 I used to do security in a former life, and here are some musings on the topic, which will eventually be dissected into various essays.
 
 For now it’ll be confusing as I’m brain dumping to various audiences with various knowledge (end users, architects, CEOs, designers)

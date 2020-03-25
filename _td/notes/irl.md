@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/irl.md)_
+
 # Igor's In Real Life Diary
 
 <!-- prettier-ignore-start -->

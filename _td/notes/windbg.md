@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/windbg.md)_
+
 Set breakpoint when runtime loads (e.g exception when loading clr)
 
     sxe ld:clr

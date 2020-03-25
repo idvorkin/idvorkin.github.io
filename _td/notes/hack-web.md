@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/hack-web.md)_
+
 # Hacking the web for fun and profit`
 
 Now a days javascript and HTML are the assembly language of the web (I first [said this in 2012](http://ig2600.blogspot.com/2012/05/assembly-to-javascript-tsrs-to.html)). While still stuff is fun, it's very brittle because 1) the approach is brittle, and 2) everytime the code changes, which it will everything will break.

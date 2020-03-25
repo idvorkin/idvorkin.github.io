@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/mosh.md)_
+
 **I no longer recommend mosh. It hasn't been updated in years, and it still doesn't support true color. I use ssh with tmux and an auto tmux reconnection script instead**
 
 I want to do remote development on linux, the best way to do this is mosh (instead of ssh). It's better because:

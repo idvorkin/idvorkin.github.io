@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/sqlalchemy-redshift.md)_
+
 SQLAlchemy Docs:
 
 - http://docs.sqlalchemy.org/en/latest/orm/tutorial.html

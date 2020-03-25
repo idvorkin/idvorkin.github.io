@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/ios-nomad.md)_
+
 # iOS Software engineer nomad howto
 
 _Please add comments [here](https://hackmd.io/Z_2EucqOQnaoHq2KxRwlEw)_

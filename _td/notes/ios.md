@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/ios.md)_
+
 I spent a **LOT** of time on my iPhone/iPad - here are some of the tools/tips I use.
 
 <!-- prettier-ignore-start -->

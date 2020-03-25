@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
+
 # Igor's Technical Diary
 
 ## Projects

@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/usbtech.md)_
+
 I'll admit it, I have a USB charging fetish. Here's my brain dump:
 
 ## It just works USB charging (but kinda slow - 5W and 12.5W)

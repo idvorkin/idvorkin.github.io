@@ -2,24 +2,20 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/time-off-3-2020.md)_
+
 # Igor's Adventures March and April 2020
-
-### Blog Tech
-
-#### Misc
-
-#### Better broken link checker
-
-#### ☑ Serve images off of blob repository
-
-#### ☑ New logo
-
-https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180.png
-
-#### ☑ Redo CSS to be foundation based
 
 <!-- vim-markdown-toc GFM -->
 
+    - [Misc](#misc)
+
+- [Blog Tech](#blog-tech)
+  - [☑ Clone tech diary into tech blog](#-clone-tech-diary-into-tech-blog)
+  - [Better broken link checker](#better-broken-link-checker)
+  - [☑ Serve images off of blob repository](#-serve-images-off-of-blob-repository)
+  - [☑ New logo](#-new-logo)
+  - [☑ Redo CSS to be foundation based](#-redo-css-to-be-foundation-based)
 - [CSS](#css)
   - [☑ Blog ToC Drop Up Menu Mobile](#-blog-toc-drop-up-menu-mobile)
   - [☐ Blog ToC Side Bar Desktop](#-blog-toc-side-bar-desktop)
@@ -50,6 +46,24 @@ https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180
 - [Inspirations](#inspirations)
 
 <!-- vim-markdown-toc -->
+
+#### Misc
+
+### Blog Tech
+
+#### ☑ Clone tech diary into tech blog
+
+[Some super cool shell-fu](https://github.com/idvorkin/idvorkin.github.io/blob/master/clone_td.sh)
+
+#### Better broken link checker
+
+#### ☑ Serve images off of blob repository
+
+#### ☑ New logo
+
+https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180.png
+
+#### ☑ Redo CSS to be foundation based
 
 ### CSS
 

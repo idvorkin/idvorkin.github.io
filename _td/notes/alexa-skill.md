@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/alexa-skill.md)_
+
 ## Success Criteria
 
 - Able to run hello world alexa skill

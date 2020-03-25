@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/advertising.md)_
+
 # Advertising
 
 <!-- vim-markdown-toc GFM -->

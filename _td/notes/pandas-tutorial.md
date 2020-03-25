@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/pandas-tutorial.md)_
+
 # Pandas + IPython + Jupyter Incantations
 
 A place to store my hard earned pandas learnings.

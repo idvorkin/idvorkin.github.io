@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/design.md)_
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 

@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/virtual-desktops.md)_
+
 ## Success Criteria
 
 - Able to switch virtual desktops from WoX

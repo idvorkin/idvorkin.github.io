@@ -2,6 +2,8 @@
 layout: post
 ---
 
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/ring-video-download.md)_
+
 ## Success Critera
 
 - [x] Have an archive of all my ring videos.
