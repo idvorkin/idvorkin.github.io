@@ -1,30 +1,34 @@
+---
+layout: post
+---
+
 # Igor's Technical Diary
 
 ## Projects
 
 - Major Research Areas and Musing
-  - [Cloud first applications](notes/cloud-first-applications.md)
-  - [Machine Learning](notes/machine-learning.md)
-  - [Security](notes/better-security-design.md)
-  - [Data Systems](notes/data-systems.md)
-  - [In Real Life](notes/irl.md)
-  - [Design and Architecture](notes/design.md)
-  - [How to be an iOS only developer](notes/ios-nomad.md)
-  - [Hacking the web for fun and profit](notes/hack-web.md)
+  - [Cloud first applications](notes/cloud-first-applications)
+  - [Machine Learning](notes/machine-learning)
+  - [Security](notes/better-security-design)
+  - [Data Systems](notes/data-systems)
+  - [In Real Life](notes/irl)
+  - [Design and Architecture](notes/design)
+  - [How to be an iOS only developer](notes/ios-nomad)
+  - [Hacking the web for fun and profit](notes/hack-web)
 - Minor Tips
-  - [VLC Player](notes/vlc_player.md)
-  - [Pandas](notes/pandas-tutorial.md)
-  - [iOS Usage](notes/ios.md)
-  - [Mosh](notes/mosh.md)
-  - [USB Tech](notes/usbtech.md)
-  - [Visual Vocabulary](notes/visual-vocabulary.md)
+  - [VLC Player](notes/vlc_player)
+  - [Pandas](notes/pandas-tutorial)
+  - [iOS Usage](notes/ios)
+  - [Mosh](notes/mosh)
+  - [USB Tech](notes/usbtech)
+  - [Visual Vocabulary](notes/visual-vocabulary)
 - Complete Projects
-  - [Ring Video Downloader](notes/ring-video-download.md)
-  - [Extract message history on OSX](notes/dump_imessage_history.md)
+  - [Ring Video Downloader](notes/ring-video-download)
+  - [Extract message history on OSX](notes/dump_imessage_history)
 - In Progress Projects
-  - [Deploy a private web site](notes/private_web_site.md)
-  - [Windows Virtual Desktop](notes/virtual-desktops.md)
-  - [Alexa Skill](notes/alexa-skill.md)
+  - [Deploy a private web site](notes/private_web_site)
+  - [Windows Virtual Desktop](notes/virtual-desktops)
+  - [Alexa Skill](notes/alexa-skill)
   - [ManageMe](https://github.com/idvorkin/manage-me)
 
 ## Awesome Lists
@@ -179,7 +183,7 @@ Decent blog posts:
 - Rant - a cool c# human [language generator](http://berkin.me/rant/)
 - Rhymebrain -
 - Tranquil
-- [Sentiment Analysis](notes/sentiment_analysis.md)
+- [Sentiment Analysis](notes/sentiment_analysis)
 
 ### Azure One Liners
 
