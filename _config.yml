@@ -176,13 +176,13 @@ algolia:
     - "search.html"
     - "index.html"
     - "all-posts.html"
+    - "tags.html"
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap", "jekyll-redirect-from"]
 include: [".htaccess"]
 exclude:
   [
     "lib",
-    "tags",
     "config.rb",
     "Gemfile",
     "Capfile",
