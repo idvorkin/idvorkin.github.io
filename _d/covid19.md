@@ -12,39 +12,48 @@ redirect_from:
   - /virus
 ---
 
-I'm tired of people talking non stop about Corona Virus, but there's lots of interesting things happening as a middle ground I'll write out my notes and just repeat them.
+From James Altchur: Media companies make money scaring you. Politicians stay in office (or get office) by assuming the worst case and hoping for the best so they can say, "Look, we did everything we could."  So ignore that. Also ignore the market. As I said the other day, as long as it's going up or down 5-10% a day, don't invest. There will be opportunities later.  Is the market cheap? It sure is. \$5,000,000,000,000 in stimulus is going to hit the economy, which is already assuming a worst-case scenario Depression which is not going to happen.
 
 <!-- prettier-ignore-start -->
-
-
-
-<!-- prettier-ignore-end -->
-
 <!-- vim-markdown-toc GFM -->
 
+- [Circle of concern and circle of influence from a class act leader](#circle-of-concern-and-circle-of-influence-from-a-class-act-leader)
 - [Unexpected Consequences](#unexpected-consequences)
-  - [Shortages caused by retail arbitrage.](#shortages-caused-by-retail-arbitrage)
-  - [Glut of lobsters](#glut-of-lobsters)
-  - [Prisoners making hand sanitizer.](#prisoners-making-hand-sanitizer)
+    - [Shortages caused by retail arbitrage.](#shortages-caused-by-retail-arbitrage)
+    - [Glut of lobsters](#glut-of-lobsters)
+    - [Prisoners making hand sanitizer.](#prisoners-making-hand-sanitizer)
 - [Bad data](#bad-data)
 - [The non-health actual problems](#the-non-health-actual-problems)
 - [Economic impact](#economic-impact)
-  - [Cruise ships](#cruise-ships)
+    - [Cruise ships](#cruise-ships)
 - [Working from home](#working-from-home)
-  - [Door dash thinks FB is a DDoS since all employees signed in at once.](#door-dash-thinks-fb-is-a-ddos-since-all-employees-signed-in-at-once)
-  - [Big Tech still pays hourly workers.](#big-tech-still-pays-hourly-workers)
-  - [Restaurants and coffee shops empty when folks working from home.](#restaurants-and-coffee-shops-empty-when-folks-working-from-home)
+    - [Door dash thinks FB is a DDoS since all employees signed in at once.](#door-dash-thinks-fb-is-a-ddos-since-all-employees-signed-in-at-once)
+    - [Big Tech still pays hourly workers.](#big-tech-still-pays-hourly-workers)
+    - [Restaurants and coffee shops empty when folks working from home.](#restaurants-and-coffee-shops-empty-when-folks-working-from-home)
 - [The best news - a false alarm.](#the-best-news---a-false-alarm)
-  - [What about big pharma](#what-about-big-pharma)
-  - [Tech invoations](#tech-invoations)
-    - [Nose filters](#nose-filters)
-    - [UV blasters](#uv-blasters)
-    - [Goves that keep you from wiping your eyes](#goves-that-keep-you-from-wiping-your-eyes)
-- [Quarantines](#quarantines) - [Italy - Free Wifi](#italy---free-wifi) - [Italy - Mortgage Releif](#italy---mortgage-releif)
+    - [What about big pharma](#what-about-big-pharma)
+    - [Tech invoations](#tech-invoations)
+        - [Nose filters](#nose-filters)
+        - [UV blasters](#uv-blasters)
+        - [Goves that keep you from wiping your eyes](#goves-that-keep-you-from-wiping-your-eyes)
+- [Quarantines](#quarantines)
+        - [Italy - Free Wifi](#italy---free-wifi)
+        - [Italy - Mortgage Releif](#italy---mortgage-releif)
 - [Solutions](#solutions)
-  - [Data Links](#data-links)
+    - [Data Links](#data-links)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
+## Circle of concern and circle of influence from a class act leader
+
+Go watch how Bill Gates answers questions around how the goverment did nothing in February (the past is always outside the circle of influence). He ignores the bait on what we got wrong yesterday, and focuses on what we need to do today (core to the circle of influence) That's a class act leader:
+
+- Interviewer: Trying to Stir a rage answer on why wasted on February
+- Bill Gates: OK, we didn't act, but the good news is "focus on productive action"
+
+<iframe id="ytplayer" type="text/html" width="100%" height="360"
+  src=" https://www.youtube.com/embed/Xe8fIjxicoo?start=643" frameborder="0"></iframe>
 
 ## Unexpected Consequences
 
