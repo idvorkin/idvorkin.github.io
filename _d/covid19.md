@@ -117,4 +117,8 @@ https://in.reuters.com/article/health-coronavirus-italy-mortgages/payments-on-mo
 
 ### Data Links
 
-https://community.wolfram.com/groups/-/m/t/1872608
+[NY Times Viz](https://github.com/nytimes/covid-19-data)
+[Great Data Source Visualization](https://ourworldindata.org/coronavirus)
+[Testing By US State](https://github.com/COVID19Tracking/covid-tracking-data/tree/master/data)
+[Death by US State](https://github.com/nytimes/covid-19-data)
+[Wolfram Dataset](https://community.wolfram.com/groups/-/m/t/1872608)
