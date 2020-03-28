@@ -109,7 +109,7 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - Pendulum: The best datetime library (better then arrow).
 - PipEnv - Finally sane dependency management for python!
 - [Datalore](https://datalore.io/) - Jetbrain's version of Jupyter
-- [Requests](http://docs.python-requests.org/en/master/) Http requests for humans
+- [Requests](https://docs.python-requests.org/en/master/) Http requests for humans
 - [Requests-HTML](https://github.com/kennethreitz/requests-html) Web Parsing for humans
 - [Scapy](https://scrapy.org/) Web crawling for humans.
 - [Records](https://github.com/kennethreitz/records) Raw SQL for humans
@@ -172,7 +172,7 @@ Decent blog posts:
 - w3m - Text based web browser
 - fzf - Fuzzy file finder (Try C-R and C-T)
 - Rg - RipGrep (like ag)
-- [linuxbrew](http://linuxbrew.sh/) - Brew for Linux
+- [linuxbrew](https://linuxbrew.sh/) - Brew for Linux
 - Ngrok - Pipe ports to the internet web site (great for local host development on iOS)
 - [Bat](https://github.com/sharkdp/bat) - cat but with paging/git integration.
 - Pretty ping - Graphical Ping
@@ -183,7 +183,7 @@ Decent blog posts:
 
 ### Natural Language Processing
 
-- Rant - a cool c# human [language generator](http://berkin.me/rant/)
+- Rant - a cool c# human [language generator](https://berkin.me/rant/)
 - Rhymebrain -
 - Tranquil
 - [Sentiment Analysis](notes/sentiment_analysis)
@@ -325,7 +325,7 @@ zsh path append
 
 #### http-prompt
 
-An interactive [http prompt](http://http-prompt.com/)
+An interactive [http prompt](https://http-prompt.com/)
 
 #### httpie
 
@@ -341,7 +341,7 @@ You'd think there would be a slew of these, but all the ones I tried weren't gre
 
 Using BLC I crawl my website using (-r recurse ; -o group output; -e skip external):
 
-        blc http://idvork.in/d -roe
+        blc https://idvork.in/d -roe
 
 ### Video Manipulation Tools
 
@@ -455,7 +455,7 @@ https://hackmd.io/features#UML-Diagrams
 
 You can't directly render PlantUML in Markdown, but you can render images, and get PlantUML to load content from file. E.g:
 
-    http://www.plantuml.com/plantuml/proxy?idx=0&format=svg&src=**URL_with_uml_file**&cache_buster=**increment_to_avoid_caching**
+    https://www.plantuml.com/plantuml/proxy?idx=0&format=svg&src=**URL_with_uml_file**&cache_buster=**increment_to_avoid_caching**
 
 Store your PlantUML file somewhere - e.g.
 
@@ -463,9 +463,9 @@ Store your PlantUML file somewhere - e.g.
 
 Then render it like an image e.g.
 
-    ![UML rendered](http://www.plantuml.com/plantuml/proxy?idx=0&format=svg&src=https://raw.githubusercontent.com/idvorkin/techdiary/master/sample_diagrams.puml&c=1)
+    ![UML rendered](https://www.plantuml.com/plantuml/proxy?idx=0&format=svg&src=https://raw.githubusercontent.com/idvorkin/techdiary/master/sample_diagrams.puml&c=1)
 
-![UML rendered](http://www.plantuml.com/plantuml/proxy?idx=0&format=svg&c=4&src=https://raw.githubusercontent.com/idvorkin/techdiary/master/sample_diagrams.puml)
+![UML rendered](https://www.plantuml.com/plantuml/proxy?idx=0&format=svg&c=4&src=https://raw.githubusercontent.com/idvorkin/techdiary/master/sample_diagrams.puml)
 
 #### Quirks
 
