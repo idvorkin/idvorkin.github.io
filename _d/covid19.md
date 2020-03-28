@@ -39,8 +39,7 @@ From James Altchur: Media companies make money scaring you. Politicians stay in 
 - [Quarantines](#quarantines)
         - [Italy - Free Wifi](#italy---free-wifi)
         - [Italy - Mortgage Releif](#italy---mortgage-releif)
-- [Solutions](#solutions)
-    - [Data Links](#data-links)
+- [Data Sets](#data-sets)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -113,12 +112,13 @@ http://alugy.com/europe/amazon-microsoft-joins-italys-initiative-to-offer-free-w
 
 https://in.reuters.com/article/health-coronavirus-italy-mortgages/payments-on-mortgages-to-be-suspended-across-italy-after-coronavirus-outbreak-idINR1N2A900G
 
-## Solutions
+## Data Sets
 
-### Data Links
+Getting useful data from the news is now hard. Three goals here 1) Get accurate data 2) See cool viz 3) Learn new viz tech
 
 [NY Times Viz](https://github.com/nytimes/covid-19-data)
 [Great Data Source Visualization](https://ourworldindata.org/coronavirus)
 [Testing By US State](https://github.com/COVID19Tracking/covid-tracking-data/tree/master/data)
 [Death by US State](https://github.com/nytimes/covid-19-data)
 [Wolfram Dataset](https://community.wolfram.com/groups/-/m/t/1872608)
+[Tableau Viz](https://public.tableau.com/profile/bkreinb#!/vizhome/CoronaVirus/TrackingCoronaVirus) - Pretty but stale
