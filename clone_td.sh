@@ -11,7 +11,7 @@ cp   -R ~/gits/techdiary/images _td
 cd _td
 
 # For each markdown file, prepend the corret header
-fd  -e md  -exec sed -i '1s;^;---\nlayout: post\n---\n\n*[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/{})*\n\n;' {}
+fd  -e md  -exec sed -i '1s;^;---\nlayout: post\nno-render-title: true\n---\n\n_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/{})_\n\n;' {}
 # Remove the trailing md
 fd  -e md  -exec sed -i 's;](\(notes/.*\)\.md;](\1;' {}
 # Really Hacky (Ha), index is copied from readme, so put that back.
