@@ -6,36 +6,39 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 # Advertising
 
+<!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Why?](#why)
-  - [Success Criteria for this post](#success-criteria-for-this-post)
-  - [Performance vs Display](#performance-vs-display)
-  - [Useful terms](#useful-terms)
-    - [Ad inventory](#ad-inventory)
-    - [Ad Supply](#ad-supply)
-    - [Ad inventory](#ad-inventory-1)
-    - [Retargetting](#retargetting)
-  - [Entities](#entities)
-    - [Data Mining](#data-mining)
-    - [MCN](#mcn)
-  - [Metrics](#metrics)
-    - [CPM Cost per thousand views](#cpm-cost-per-thousand-views)
-    - [ECPM Effective CPM](#ecpm-effective-cpm)
-    - [CPC - Cost per click](#cpc---cost-per-click)
-    - [ROAS - Return on ads Spend](#roas----return-on-ads-spend)
-    - [CTR - Call to action (click) by views](#ctr---call-to-action-click-by-views)
-    - [Video CTR](#video-ctr)
-    - [Evergreen content](#evergreen-content)
-  - [Other concept](#other-concept)
-    - [Why video](#why-video)
-  - [How much can a creator make](#how-much-can-a-creator-make)
-    - [Ad revenue sharing.](#ad-revenue-sharing)
-    - [Brand sponsorship.](#brand-sponsorship)
-    - [Consumer Payment + Tips](#consumer-payment--tips)
-    - [Bootstraping - Crowd funding](#bootstraping---crowd-funding)
+    - [Success Criteria for this post](#success-criteria-for-this-post)
+    - [Performance vs Display](#performance-vs-display)
+    - [Useful terms](#useful-terms)
+        - [Ad inventory](#ad-inventory)
+        - [Ad Supply](#ad-supply)
+        - [Ad inventory](#ad-inventory-1)
+        - [Retargetting](#retargetting)
+    - [Entities](#entities)
+        - [Data Mining](#data-mining)
+        - [MCN](#mcn)
+    - [Metrics](#metrics)
+        - [CPM Cost per thousand views](#cpm-cost-per-thousand-views)
+        - [ECPM Effective CPM](#ecpm-effective-cpm)
+        - [CPC - Cost per click](#cpc---cost-per-click)
+        - [ROAS - Return on ads Spend](#roas---return-on-ads-spend)
+        - [CTR - Call to action (click) by views](#ctr---call-to-action-click-by-views)
+        - [Video CTR](#video-ctr)
+        - [Evergreen content](#evergreen-content)
+    - [Other concept](#other-concept)
+        - [Why video](#why-video)
+    - [How much can a creator make](#how-much-can-a-creator-make)
+        - [Ad revenue sharing.](#ad-revenue-sharing)
+        - [Brand sponsorship.](#brand-sponsorship)
+        - [Consumer Payment + Tips](#consumer-payment--tips)
+        - [Merch](#merch)
+        - [Bootstraping - Crowd funding](#bootstraping---crowd-funding)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 # Why?
 
@@ -111,6 +114,8 @@ Not quite related to advertising, but a related concept is how much can creators
 
 Youtube gives revenue of ~ 7.50\$ per 1000 views. If you go viral and get a million videos that's 7500K views.
 
+Here's a tool to show how much people make estimated: https://influencermarketinghub.com/youtube-money-calculator/
+
 ### Brand sponsorship.
 
 The better deal is to get sponsor ship. E.g. a brand pays you to show their content.
@@ -118,6 +123,10 @@ The better deal is to get sponsor ship. E.g. a brand pays you to show their cont
 ### Consumer Payment + Tips
 
 Creators can skip the need for brand influence, and be paid by advertisers directly. Examples of doing this are patreon and tipping jars.
+
+### Merch
+
+That's what those t-shirts and hats are about.
 
 ### Bootstraping - Crowd funding
 

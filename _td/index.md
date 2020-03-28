@@ -18,6 +18,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
   - [How to be an iOS only developer](notes/ios-nomad)
   - [Hacking the web for fun and profit](notes/hack-web)
 - Minor Tips
+  - [Time off 2020](notes/time-off-3-2020)
   - [VLC Player](notes/vlc_player)
   - [Pandas](notes/pandas-tutorial)
   - [iOS Usage](notes/ios)
