@@ -21,30 +21,31 @@ Coaching is like midwifery. A midwife can not give birth to the baby, she facili
 
 <!-- prettier-ignore-start -->
 
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [The coaching mindset](#the-coaching-mindset)
 - [Frequent coaching situations](#frequent-coaching-situations)
 - [The 7 goto coaching questions](#the-7-goto-coaching-questions)
 - [Questions for specific situations](#questions-for-specific-situations)
-    - [To clarify thinking](#to-clarify-thinking)
-    - [To challenge assumptions](#to-challenge-assumptions)
-    - [To gather more evidence](#to-gather-more-evidence)
-    - [To find more alternatives](#to-find-more-alternatives)
-    - [To build strategic insight](#to-build-strategic-insight)
+  - [To clarify thinking](#to-clarify-thinking)
+  - [To challenge assumptions](#to-challenge-assumptions)
+  - [To gather more evidence](#to-gather-more-evidence)
+  - [To find more alternatives](#to-find-more-alternatives)
+  - [To build strategic insight](#to-build-strategic-insight)
 - [The hows of coaching](#the-hows-of-coaching)
-    - [Coach for task completion vs insight](#coach-for-task-completion-vs-insight)
-    - [Keep people safe while coaching using human safety models](#keep-people-safe-while-coaching-using-human-safety-models)
-    - [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
-    - [Deflect the desire for you to solve their problem: How would you handle this](#deflect-the-desire-for-you-to-solve-their-problem-how-would-you-handle-this)
-    - [Say No: Say yes slowly](#say-no-say-yes-slowly)
-    - [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
+  - [Coach for task completion vs insight](#coach-for-task-completion-vs-insight)
+  - [Keep people safe while coaching using human safety models](#keep-people-safe-while-coaching-using-human-safety-models)
+  - [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
+  - [Encourange trying to solve own problem: How would you handle this?](#encourange-trying-to-solve-own-problem-how-would-you-handle-this)
+  - [Say No: Say yes slowly](#say-no-say-yes-slowly)
+  - [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
 - [Situational coaching](#situational-coaching)
 - [Other coaching tools](#other-coaching-tools)
 - [Fantastic video on coaching, improvement, and discomfort](#fantastic-video-on-coaching-improvement-and-discomfort)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ### The coaching mindset
 
@@ -164,7 +165,7 @@ _More details in [Search inside yourself - Leadership and social skills](/search
 - That is a hard problem
 - Not alone, lots of people struggle with this.
 
-#### Deflect the desire for you to solve their problem: How would you handle this
+#### Encourange trying to solve own problem: How would you handle this?
 
 Great question, I have some ideas, but first, how would you tackle this? What else?
 
