@@ -9,7 +9,16 @@
 
         {% include site-menu.html %}
 
-        <div class="container">
+        <div class="container-fluid">
+            <div class="row flex-xl-nowrap">
+
+
+
+            <div id="right-sidebar" class="d-none d-xl-block col-xl-2" >
+                    {% include toc.html %}
+            </div>
+
+            <div id="main content" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
             <div style="text-align:center">
 
             {% if page.no-render-title %}
@@ -29,11 +38,12 @@
             </div>
             <article class="article">
                 <div id="content-holder" class="pretty-first-para">
-                    {% include toc.html %}
                     {{ content }}
                 </div>
             </article>
-        </div>
+            </div> <!-- center column -->
+            </div>  <!-- row -->
+        </div> <!-- container -->
 
         <span id="hold-scripts-so-looks-nice-debugging">
             {% include scripts.html %}
