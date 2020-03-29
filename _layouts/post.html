@@ -1,67 +1,57 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    {% include head.html %}
+  </head>
 
-    <head>
-        {% include head.html %}
-    </head>
+  <body
+    data-spy="scroll"
+    data-target=".nav-scroll-spy"
+    style="position:relative"
+  >
+    {% include site-menu.html %}
 
-    <body data-spy="scroll" data-target=".nav-scroll-spy" style="position:relative">
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div
+          id="main-content"
+          class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content"
+        >
+          <div style="text-align:center">
+            {% if page.no-render-title %} {% else %}
+            <h1 class="text-center">{{ page.title }}</h1>
+            {% endif%} {% include tags.html %}
+          </div>
+          <div id="content-holder" class="pretty-first-para">
+            {% include toc.html %} {{ content }}
+          </div>
+        </div>
+        <!-- center column -->
+        <div id="right-sidebar" class="d-none d-xl-block col-xl-2">
+          <div
+            id="ui-toc-affix"
+            class="nav-scroll-spy ui-affix-toc ui-toc-dropdown unselectable hidden-print sticky-top"
+          >
+            <ul
+              id="ui-toc-2"
+              class="nav-scroll-spy ui-toc-dropdown dropdown-menu"
+              aria-labelledby="tocLabel"
+            ></ul>
+          </div>
+          <!-- right sidebar -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
 
-        {% include site-menu.html %}
-
-        <div class="container-fluid">
-            <div class="row flex-xl-nowrap">
-
-                <div id="main content" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
-                    <div style="text-align:center">
-
-                        {% if page.no-render-title %}
-                        {% else %}
-                        <h1 style="text-align:center;">{{ page.title }}</h1>
-                        {% endif%}
-
-                        {% include tags.html %}
-
-                    </div>
-                    <article class="article">
-                        <div id="content-holder" class="pretty-first-para">
-                            {% include toc.html %}
-                            {{ content }}
-                        </div>
-                    </article>
-                </div> <!-- center column -->
-                <div id="right-sidebar" class="d-none d-xl-block col-xl-2">
-                    <div
-                        id="ui-toc-affix"
-                        class="nav-scroll-spy ui-affix-toc ui-toc-dropdown unselectable hidden-print"
-                        style="position:fixed"
-                        >
-                        <ul
-                            id="ui-toc-2"
-                            class="nav-scroll-spy ui-toc-dropdown dropdown-menu"
-                            aria-labelledby="tocLabel"
-                            ></ul>
-                    </div>
-                </div>
-
-            </div>  <!-- row -->
-        </div> <!-- container -->
-
-        <span id="hold-scripts-so-looks-nice-debugging">
-            {% include scripts.html %}
-            <script>
-                //  Bootstrap tables are optin, so set their class
-                // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
-                $("table").addClass("table table-striped")
-            </script>
-
-        </span>
-        <!--
-            Remove wonky collapsable idea.
-            {% if page.collapsable %}
-            {% include collapse.html %}
-            {% endif %}
-        -->
-    </body>
-
+    <span id="hold-scripts-so-looks-nice-debugging">
+      {% include scripts.html %}
+      <script>
+        //  Bootstrap tables are optin, so set their class
+        // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
+        $("table").addClass("table table-striped");
+      </script>
+    </span>
+  </body>
 </html>
