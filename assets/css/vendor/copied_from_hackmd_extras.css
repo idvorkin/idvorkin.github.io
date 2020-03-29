@@ -4,6 +4,11 @@
   list-style-type: none;
 }
 
+.ui-affix-toc {
+  overflow: auto;
+  position: sticky;
+}
+
 .ui-toc {
   position: fixed;
   bottom: 20px;
@@ -50,7 +55,7 @@
 }
 
 /*
-    Preserve whitespace in the NAV. 
+    Preserve whitespace in the NAV.
     However, when whitespace is preserved, and the item is long, things get long
     so need to have a maximum width set on the .toc
 */
@@ -69,6 +74,7 @@
   color: #767676;
 }
 
+.ui-toc-affix .nav-link.active,
 .ui-toc-dropdown .nav-link.active {
   display: block;
   padding: 4px 20px;
