@@ -13,10 +13,11 @@
 
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <div
-          id="main-content"
-          class="col-12 col-xl-8 py-md-3 pl-md-5 bd-content"
-        >
+        <!--
+               Default is full width
+               When XL, make it 2/3, right sidebar will be other 3rd.
+        -->
+        <div id="main-content" class="col-12 col-xl-8">
           <div style="text-align:center">
             {% if page.no-render-title %} {% else %}
             <h1 class="text-center">{{ page.title }}</h1>
@@ -27,6 +28,11 @@
           </div>
         </div>
         <!-- center column -->
+
+        <!--
+           Don't display unless XL (d-*)
+           When XL, make it 1/3 of screen (col-*), bootstrap is 12 'units'
+        -->
         <div id="right-sidebar" class="d-none d-xl-block col-xl-4">
           <div
             id="ui-toc-affix"
