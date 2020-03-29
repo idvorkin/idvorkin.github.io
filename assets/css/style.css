@@ -43,6 +43,11 @@ If you have normal wrapping rules, you'll end up extending page width which you 
 
   */
 
+/* Make code blocks look more like github */
+pre {
+  background-color: #f6f8fa;
+}
+
 .container td {
   overflow-wrap: break-word;
 }
