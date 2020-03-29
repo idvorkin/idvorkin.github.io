@@ -1,12 +1,10 @@
 ---
-layout: page
-title: Tag Index
+layout: post
+title: Tags
 permalink: /tags/index.html
 description: "An archive of posts sorted by tag."
-has-toc: true
 ---
 
-<h1 style="text-align: center;">Tags</h1>
 <!-- DEBUG MARK -->
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless
 forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
