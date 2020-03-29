@@ -12,12 +12,6 @@
         <div class="container-fluid">
             <div class="row flex-xl-nowrap">
 
-
-
-            <div id="right-sidebar" class="d-none d-xl-block col-xl-2" >
-                    {% include toc.html %}
-            </div>
-
             <div id="main content" class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content">
             <div style="text-align:center">
 
@@ -38,10 +32,25 @@
             </div>
             <article class="article">
                 <div id="content-holder" class="pretty-first-para">
+                    {% include toc.html %}
                     {{ content }}
                 </div>
             </article>
             </div> <!-- center column -->
+            <div id="right-sidebar" class="d-none d-xl-block col-xl-2">
+                <div
+                    id="ui-toc-affix"
+                    class="nav-scroll-spy ui-affix-toc ui-toc-dropdown unselectable hidden-print"
+                    style="position:fixed"
+                    >
+                    <ul
+                        id="ui-toc-2"
+                        class="nav-scroll-spy ui-toc-dropdown dropdown-menu"
+                        aria-labelledby="tocLabel"
+                        ></ul>
+                </div>
+            </div>
+
             </div>  <!-- row -->
         </div> <!-- container -->
 
