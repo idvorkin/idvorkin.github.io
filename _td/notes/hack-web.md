@@ -5,7 +5,7 @@ no-render-title: true
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/hack-web.md)_
 
-# Hacking the web for fun and profit`
+# Hacking the web for fun and profit
 
 Now a days javascript and HTML are the assembly language of the web (I first [said this in 2012](http://ig2600.blogspot.com/2012/05/assembly-to-javascript-tsrs-to.html)). While still stuff is fun, it's very brittle because 1) the approach is brittle, and 2) everytime the code changes, which it will everything will break.
 
@@ -16,7 +16,6 @@ Now a days javascript and HTML are the assembly language of the web (I first [sa
   - [Grease Monkey](#grease-monkey)
 - [Console Tricks](#console-tricks)
   - [Load Jquery](#load-jquery)
-  - [CSS selectors](#css-selectors)
 - [Debugging 101](#debugging-101)
   - [Chrome Keyboard shortcuts](#chrome-keyboard-shortcuts)
   - [Force reloading](#force-reloading)
@@ -28,6 +27,9 @@ Now a days javascript and HTML are the assembly language of the web (I first [sa
 - [Fly out TOC](#fly-out-toc)
   - [CSS](#css)
   - [Javscript Reverse Engineering Fly out TOC](#javscript-reverse-engineering-fly-out-toc)
+- [CSS - Styling a web page low level abstraction.](#css---styling-a-web-page-low-level-abstraction)
+  - [CSS selectors](#css-selectors)
+- [Bootstrap - A higher level abstraction over css.](#bootstrap---a-higher-level-abstraction-over-css)
 - [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -45,23 +47,6 @@ Called Taper Monkey for chrome, it autoloads a script when you enter a webpage. 
 ## Console Tricks
 
 ### Load Jquery
-
-### CSS selectors
-
-I always forget these, but it matters as that's how you select elements in jquery
-
-A full [summary](https://www.w3schools.com/cssref/css_selectors.asp), below are some I often use.
-
-- \$(.class)
-- \$(#id)
-- \$(element) #e.g. h1
-
-When nesting selectors here are the [operators](https://techbrij.com/css-selector-adjacent-child-sibling)
-
-- space - decendant at any level
-- > - immediate decendant
-- - - Adjecent (e.g. sibling)
-- ~ - Not Adjecent (e.g. not sibling)
 
 ## Debugging 101
 
@@ -119,5 +104,31 @@ I started by trying to create this myself, but as with most "build" vs "buy", yo
 ### Javscript Reverse Engineering Fly out TOC
 
 Looks like the CSS needs to have the data setup correctly. I found some javascript to do this in [hackmd](https://github.com/hackmdio/codimd/search?q=generateToc&unscoped_q=generateToc), and started putzing with it. Looks like that gets me the DOM in the form I need.
+
+## CSS - Styling a web page low level abstraction.
+
+CSS is stying for the web. CSS is very complex. I recommend using a higher level framework like Bootstrap in general, however abstractions are leaky so you also need to understand some core CSS concepts.
+
+### CSS selectors
+
+I always forget these, but it matters as that's how you select elements in jquery
+
+A full [summary](https://www.w3schools.com/cssref/css_selectors.asp), below are some I often use.
+
+- \$(.class)
+- \$(#id)
+- \$(element) #e.g. h1
+
+When nesting selectors here are the [operators](https://techbrij.com/css-selector-adjacent-child-sibling)
+
+- space - decendant at any level
+- > - immediate decendant
+- - - Adjecent (e.g. sibling)
+- ~ - Not Adjecent (e.g. not sibling)
+
+## Bootstrap - A higher level abstraction over css.
+
+If you're using styles directly, you're probably doing it wrong. Bootstrap is designed to handle different operations at different view ports, very helpful.
+For example, you can hide an element if you're not on an extra large screen.
 
 ## Other resources

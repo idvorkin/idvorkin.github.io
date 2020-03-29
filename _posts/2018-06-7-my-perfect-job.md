@@ -18,8 +18,6 @@ tags:
 
 Jobs have many dimensions and I'll describe my dream job in several dimensions. In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.
 
----
-
 ### Engineering Manager or Tech lead: Engineering Manager
 
 I'm passionate about tech, but I'm even more passionate about aspiring to be the [best boss my team will ever have](being-a-great-manager). Part of being the best is having deep understanding of the tech, so I always have some [small projects on the side](https://github.com/idvorkin), and every few years I'll do a rotation as a [tech lead](/software-leadership-roles).
@@ -59,8 +57,7 @@ A lot of modern software can be decomposed in three layers: signals, inferences 
 
 I'm most interested in building the experiences, but that requires me to deeply understand and drive signals and inferences. Steve Jobs says it well:
 
-*One of the things I’ve always found is that you’ve got to start with the customer experience and work backwards to the technology. You can’t start with the technology and try to figure out where you’re going to try to sell it. And I’ve made this mistake probably more than anybody else in this room. And I got the scar tissue to prove it.*
-
+_One of the things I’ve always found is that you’ve got to start with the customer experience and work backwards to the technology. You can’t start with the technology and try to figure out where you’re going to try to sell it. And I’ve made this mistake probably more than anybody else in this room. And I got the scar tissue to prove it._
 
 ### Business, Experience, Technology: Business and Experience!
 
@@ -106,7 +103,3 @@ Or in more smart words:
 
 *The ability to get things done has one unpleasant feature: it reduces with the growth of wisdom. And there's nothing you can do about it. "I'm too old for this shit" mode on.*
 -->
-
-
-
-

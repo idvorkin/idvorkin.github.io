@@ -471,8 +471,6 @@ Then render it like an image e.g.
 #### Quirks
 
 - GitHub caches, so increment the c parameter
-- PlantUML doesn't support https (really??) so the PlantUML server URL needs to be **http** (not https).
-- The image URL uses http, and VS Code preview doesn't allow loading things over http by default, so click that 'insecure content' button to allow rendering in unsafe mode (ugh)
 
 ### Windows Managers
 
@@ -491,6 +489,8 @@ asciinema rec foo.cast
 cat foo.cast | svg-term --out foo.svg
 # Copy out your svg file
 ```
+
+_If on iOS then you need to click to open the image in a new tag_
 
 ![inamged image](https://raw.githubusercontent.com/idvorkin/techdiary/master/images/demo-cli-screen-recording.svg?sanitize=true)
 
