@@ -43,6 +43,8 @@ links:
     url: /about
   - title: Surprise me
     url: /random
+  - title: Tech Diary
+    url: /td
 
 collections:
   d:
