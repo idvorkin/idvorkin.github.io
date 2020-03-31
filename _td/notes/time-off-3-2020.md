@@ -10,9 +10,9 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 <!-- vim-markdown-toc GFM -->
 
 - [Priorities](#priorities)
-- [Physical because my body is the only one I've got.](#physical-because-my-body-is-the-only-one-ive-got)
-- [Emotional health because that's how I experience the world.](#emotional-health-because-thats-how-i-experience-the-world)
-- [Living the 7 habits, because that's my bible.](#living-the-7-habits-because-thats-my-bible)
+  - [Physical because my body is the only one I've got.](#physical-because-my-body-is-the-only-one-ive-got)
+  - [Emotional health because that's how I experience the world.](#emotional-health-because-thats-how-i-experience-the-world)
+  - [Living the 7 habits, because that's my bible.](#living-the-7-habits-because-thats-my-bible)
 - [Blog Content](#blog-content)
   - [☑ New logo](#-new-logo)
   - [☐ The manager book](#-the-manager-book)
@@ -20,21 +20,6 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
   - [☐ Job Hunt Rollercoaster Post](#-job-hunt-rollercoaster-post)
   - [☐ Emotional Health Posts](#-emotional-health-posts)
   - [☐ Money Ideas](#-money-ideas)
-- [Blog Tech](#blog-tech)
-  - [☑ Clone tech diary into tech blog](#-clone-tech-diary-into-tech-blog)
-  - [☐ Better broken link checker](#-better-broken-link-checker)
-  - [☑ Serve images off of blob repository](#-serve-images-off-of-blob-repository)
-  - [☑ New logo](#-new-logo-1)
-  - [☑ Deep dive into CSS and bootstrap (great idea)](#-deep-dive-into-css-and-bootstrap-great-idea)
-  - [☑ Redo CSS to be bootstrapped base](#-redo-css-to-be-bootstrapped-base)
-  - [☑ Blog ToC Drop Up Menu Mobile](#-blog-toc-drop-up-menu-mobile)
-  - [☑ Blog ToC Side Bar Desktop](#-blog-toc-side-bar-desktop)
-- [vim](#vim)
-  - [☑ Digraphs to support TODO and not-TODO](#-digraphs-to-support-todo-and-not-todo)
-  - [☑ FZF super powers](#-fzf-super-powers)
-  - [☑ tags](#-tags)
-  - [☐ Community](#-community)
-  - [☐ Screen cast of my cool setup](#-screen-cast-of-my-cool-setup)
 - [Minecraft](#minecraft)
   - [☑ Bedrock Server](#-bedrock-server)
   - [☐ EC2 Updating](#-ec2-updating)
@@ -42,6 +27,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [NLP](#nlp)
   - [☑ Building 'generative text' from my chat logs](#-building-generative-text-from-my-chat-logs)
   - [☑ 'generative text' from my journal entries](#-generative-text-from-my-journal-entries)
+  - [☐ 'generative text' using gpt-2](#--generative-text-using-gpt-2)
 - [Windows](#windows)
   - [☑ Remote access to a mac - Teamviewer](#-remote-access-to-a-mac---teamviewer)
 - [Vision systems - OpenCV](#vision-systems---opencv)
@@ -52,11 +38,13 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
   - [☐ Write my magic homework](#-write-my-magic-homework)
   - [☐ Carl's Unicorns](#-carls-unicorns)
 - [Kids Show - I can do a 15 minute parlor show](#kids-show---i-can-do-a-15-minute-parlor-show)
-- [☐ Book Learning](#-book-learning)
+  - [☐ Chris. T. Magician](#-chris-t-magician)
+  - [☐ Silly Billy](#-silly-billy)
+  - [☐ White board](#-white-board)
+  - [☐ Silk Changing color](#-silk-changing-color)
+  - [☐ Unexpected dots](#-unexpected-dots)
   - [☐ Remote Setup - Considering Zoom](#-remote-setup---considering-zoom)
   - [☐ Better webcam - ivCam](#-better-webcam---ivcam)
-  - [☐ Unexpected dots](#-unexpected-dots)
-  - [☐ Silk Changing color](#-silk-changing-color)
 - [Biking](#biking)
   - [☑ Got my e-bikes](#-got-my-e-bikes)
   - [☑ Kids biking](#-kids-biking)
@@ -73,6 +61,14 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
   - [Amelia](#amelia)
   - [Zach](#zach)
   - [☐ Tori](#-tori)
+- [Blog Tech](#blog-tech)
+  - [☑ Clone tech diary into tech blog](#-clone-tech-diary-into-tech-blog)
+  - [☐ Better broken link checker](#-better-broken-link-checker)
+  - [☑ Deep dive into CSS and bootstrap (great idea)](#-deep-dive-into-css-and-bootstrap-great-idea)
+  - [☑ Redo CSS to be bootstrapped base](#-redo-css-to-be-bootstrapped-base)
+  - [☑ Create ToC](#-create-toc)
+- [vim](#vim)
+  - [☐ Screen cast of my cool setup](#-screen-cast-of-my-cool-setup)
 - [Cut](#cut)
   - [Trip to Canada](#trip-to-canada)
 
@@ -80,7 +76,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 ### Priorities
 
-### Physical because my body is the only one I've got.
+#### Physical because my body is the only one I've got.
 
 - I will weight 200 by May 1st (205 by April 1st).
 - I go to a personal trainer once a week.
@@ -88,12 +84,12 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - I wake up daily at 5 am.
 - I close my rings daily.
 
-### Emotional health because that's how I experience the world.
+#### Emotional health because that's how I experience the world.
 
 - I medtate daily.
 - I do a mental wind down befor bed daily.
 
-### Living the 7 habits, because that's my bible.
+#### Living the 7 habits, because that's my bible.
 
 - Eating the frog [TK]
 - Quarter/Month/Week/Day Habits
@@ -101,6 +97,8 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 ### Blog Content
 
 #### ☑ New logo
+
+https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180.png
 
 #### ☐ The manager book
 
@@ -118,57 +116,6 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 #### ☐ Money Ideas
 
 [Money](/money)
-
-### Blog Tech
-
-#### ☑ Clone tech diary into tech blog
-
-[Some super cool shell-fu](https://github.com/idvorkin/idvorkin.github.io/blob/master/clone_td.sh)
-
-#### ☐ Better broken link checker
-
-#### ☑ Serve images off of blob repository
-
-#### ☑ New logo
-
-https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180.png
-
-#### ☑ Deep dive into CSS and bootstrap (great idea)
-
-Quick notes [here](https://github.com/idvorkin/techdiary/blob/9e8e206a80219db32277459b00ae6773e3b61e62/notes/hack-web.md#fly-out-toc)
-
-#### ☑ Redo CSS to be bootstrapped base
-
-#### ☑ Blog ToC Drop Up Menu Mobile
-
-#### ☑ Blog ToC Side Bar Desktop
-
-### vim
-
-#### ☑ Digraphs to support TODO and not-TODO
-
-Digraphs let you use completion without needing GHFM which only works in lists.
-
-#### ☑ FZF super powers
-
-Have C-O open interesting files across my repros and move there
-
-#### ☑ tags
-
-Turns out there's a new version of [ctags](https://github.com/universal-ctags/homebrew-universal-ctags), that support markdown, which you want for fzf :Tags
-
-Also build interesting tag files for a markdown repo, by only using fd, which honors .gitignore
-
-    ctags `fd md$`
-
-#### ☐ Community
-
-Find the community:
-
-1. Subscribed to rss feed for reddit via https://reddit/r/subreddit.rss
-2. Find interesting discord
-
-#### ☐ Screen cast of my cool setup
 
 ### Minecraft
 
@@ -194,6 +141,10 @@ However, try as I might I get few insights beyond the fact I generate lots of ty
 https://github.com/minimaxir/textgenrnn
 https://colab.research.google.com/notebooks/intro.ipynb#recent=true
 
+#### ☐ 'generative text' using gpt-2
+
+Too early, waiting for someone to make fine tuning easier/web service
+
 ### Windows
 
 #### ☑ Remote access to a mac - Teamviewer
@@ -217,21 +168,29 @@ https://colab.research.google.com/notebooks/intro.ipynb#recent=true
 
 ### Kids Show - I can do a 15 minute parlor show
 
-### ☐ Book Learning
+#### ☐ Chris. T. Magician
 
 - ☐ Read Chris T Magic Book
-- ☐ Skim Silly Billy
 - ☐ Track Christopher T Magician
 - ☐ Listen to Chris. T. Magician Show and Notes form Last conference
-- ☐ Watch Silly Billy Show
+
+#### ☐ Silly Billy
+
+- ☐ Skim Silly Billy
+- ☐ Watch Silly Billy Lecture
+
+#### ☐ White board
+
+- ☐ Learn cake routine
+- ☐ Practice Drawing Eye Balls
+
+#### ☐ Silk Changing color
+
+#### ☐ Unexpected dots
 
 #### ☐ Remote Setup - Considering Zoom
 
 #### ☐ Better webcam - ivCam
-
-#### ☐ Unexpected dots
-
-#### ☐ Silk Changing color
 
 ### Biking
 
@@ -313,6 +272,49 @@ I think in modern terms:
 #### ☐ Tori
 
 Don't worry, Tori is a big part of my energy, but she's private so we won't talk about that.
+
+### Blog Tech
+
+#### ☑ Clone tech diary into tech blog
+
+[Some super cool shell-fu](https://github.com/idvorkin/idvorkin.github.io/blob/master/clone_td.sh)
+
+#### ☐ Better broken link checker
+
+#### ☑ Deep dive into CSS and bootstrap (great idea)
+
+Quick notes [here](https://github.com/idvorkin/techdiary/blob/9e8e206a80219db32277459b00ae6773e3b61e62/notes/hack-web.md#fly-out-toc)
+
+#### ☑ Redo CSS to be bootstrapped base
+
+#### ☑ Create ToC
+
+### vim
+
+☑ Digraphs to support TODO and not-TODO
+
+Digraphs let you use completion without needing GHFM which only works in lists.
+
+☑ FZF super powers
+
+Have C-O open interesting files across my repros and move there
+
+☑ tags
+
+Turns out there's a new version of [ctags](https://github.com/universal-ctags/homebrew-universal-ctags), that support markdown, which you want for fzf :Tags
+
+Also build interesting tag files for a markdown repo, by only using fd, which honors .gitignore
+
+    ctags `fd md$`
+
+☐ Community
+
+Find the community:
+
+1. Subscribed to rss feed for reddit via https://reddit/r/subreddit.rss
+2. Find interesting discord
+
+#### ☐ Screen cast of my cool setup
 
 ### Cut
 

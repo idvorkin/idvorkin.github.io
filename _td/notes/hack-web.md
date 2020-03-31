@@ -24,6 +24,9 @@ Now a days javascript and HTML are the assembly language of the web (I first [sa
   - [Event Handlers](#event-handlers)
 - [Real life examples](#real-life-examples)
   - [Automating todo item creation in omnifocus for web](#automating-todo-item-creation-in-omnifocus-for-web)
+  - [Screen Size Previews](#screen-size-previews)
+  - [Open graph preview Facebook](#open-graph-preview-facebook)
+  - [Web Site Preview Debugger](#web-site-preview-debugger)
 - [Fly out TOC](#fly-out-toc)
   - [CSS](#css)
   - [Javscript Reverse Engineering Fly out TOC](#javscript-reverse-engineering-fly-out-toc)
@@ -91,6 +94,18 @@ Ominfocus doesn't supprot APIs, so we need to automate the web.
 In omnifocus, you can add a task by pressing the 'c' key, which brings up a dialog. We can "hook that", by setting a breakpoing on global keypress events.
 
 From there, we get into a closure that has an interesting object. Copy that to global scope.
+
+### Screen Size Previews
+
+https://www.duplichecker.com/screen-resolution-simulator.php#
+
+### Open graph preview Facebook
+
+https://developers.facebook.com/tools/debug/
+
+### Web Site Preview Debugger
+
+https://metatags.io/
 
 ## Fly out TOC
 
