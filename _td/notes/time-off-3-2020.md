@@ -9,12 +9,17 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 <!-- vim-markdown-toc GFM -->
 
-- [Misc](#misc)
+- [Priorities](#priorities)
+- [Physical because my body is the only one I've got.](#physical-because-my-body-is-the-only-one-ive-got)
+- [Emotional health because that's how I experience the world.](#emotional-health-because-thats-how-i-experience-the-world)
+- [Living the 7 habits, because that's my bible.](#living-the-7-habits-because-thats-my-bible)
 - [Blog Content](#blog-content)
-  - [☐ New logo](#-new-logo)
+  - [☑ New logo](#-new-logo)
   - [☐ The manager book](#-the-manager-book)
   - [☐ Eulogy](#-eulogy)
   - [☐ Job Hunt Rollercoaster Post](#-job-hunt-rollercoaster-post)
+  - [☐ Emotional Health Posts](#-emotional-health-posts)
+  - [☐ Money Ideas](#-money-ideas)
 - [Blog Tech](#blog-tech)
   - [☑ Clone tech diary into tech blog](#-clone-tech-diary-into-tech-blog)
   - [☐ Better broken link checker](#-better-broken-link-checker)
@@ -41,38 +46,78 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
   - [☑ Remote access to a mac - Teamviewer](#-remote-access-to-a-mac---teamviewer)
 - [Vision systems - OpenCV](#vision-systems---opencv)
   - [☐ Remove 'non-changing' images from ring doorbell library](#-remove-non-changing-images-from-ring-doorbell-library)
-- [Magic](#magic)
-  - [☐ Card Appear and Disappear](#-card-appear-and-disappear)
-- [Kids Show](#kids-show)
+- [Magic - Sleight of Hand](#magic---sleight-of-hand)
+  - [☐ Hannibal Road Show](#-hannibal-road-show)
+  - [☐ Multi Card Appear and Disappear](#-multi-card-appear-and-disappear)
+  - [☐ Write my magic homework](#-write-my-magic-homework)
+  - [☐ Carl's Unicorns](#-carls-unicorns)
+- [Kids Show - I can do a 15 minute parlor show](#kids-show---i-can-do-a-15-minute-parlor-show)
+- [☐ Book Learning](#-book-learning)
   - [☐ Remote Setup - Considering Zoom](#-remote-setup---considering-zoom)
   - [☐ Better webcam - ivCam](#-better-webcam---ivcam)
   - [☐ Unexpected dots](#-unexpected-dots)
   - [☐ Silk Changing color](#-silk-changing-color)
 - [Biking](#biking)
   - [☑ Got my e-bikes](#-got-my-e-bikes)
+  - [☑ Kids biking](#-kids-biking)
 - [Inspirations](#inspirations)
 - [iOS](#ios)
-  - [☐ Video Editting](#-video-editting)
+  - [☐ Video Editting - Luma Fusion](#-video-editting---luma-fusion)
 - [Books](#books)
   - [☐ Upstream Thinking Upstream](#-upstream-thinking-upstream)
   - [☐ Inspired Product Management](#-inspired-product-management)
   - [☐ HBR Thinking Strategically](#-hbr-thinking-strategically)
   - [☐ Joy on Demand](#-joy-on-demand)
   - [☑ 5 Dysfunctions of a team](#-5-dysfunctions-of-a-team)
+- [Family](#family)
+  - [Amelia](#amelia)
+  - [Zach](#zach)
+  - [☐ Tori](#-tori)
+- [Cut](#cut)
+  - [Trip to Canada](#trip-to-canada)
 
 <!-- vim-markdown-toc -->
 
-### Misc
+### Priorities
+
+### Physical because my body is the only one I've got.
+
+- I will weight 200 by May 1st (205 by April 1st).
+- I go to a personal trainer once a week.
+- I go to gym 5 days a week.
+- I wake up daily at 5 am.
+- I close my rings daily.
+
+### Emotional health because that's how I experience the world.
+
+- I medtate daily.
+- I do a mental wind down befor bed daily.
+
+### Living the 7 habits, because that's my bible.
+
+- Eating the frog [TK]
+- Quarter/Month/Week/Day Habits
 
 ### Blog Content
 
-#### ☐ New logo
+#### ☑ New logo
 
 #### ☐ The manager book
 
+- ☑ Chapter #1 - What is a manager
+
 #### ☐ Eulogy
 
+- ☑ Refresh
+- ☐ Update family section
+
 #### ☐ Job Hunt Rollercoaster Post
+
+#### ☐ Emotional Health Posts
+
+#### ☐ Money Ideas
+
+[Money](/money)
 
 ### Blog Tech
 
@@ -157,11 +202,28 @@ https://colab.research.google.com/notebooks/intro.ipynb#recent=true
 
 #### ☐ Remove 'non-changing' images from ring doorbell library
 
-### Magic
+### Magic - Sleight of Hand
 
-#### ☐ Card Appear and Disappear
+#### ☐ Hannibal Road Show
 
-### Kids Show
+- Review the Roadshow trick by Hannibal
+- Practice Palms
+
+#### ☐ Multi Card Appear and Disappear
+
+#### ☐ Write my magic homework
+
+#### ☐ Carl's Unicorns
+
+### Kids Show - I can do a 15 minute parlor show
+
+### ☐ Book Learning
+
+- ☐ Read Chris T Magic Book
+- ☐ Skim Silly Billy
+- ☐ Track Christopher T Magician
+- ☐ Listen to Chris. T. Magician Show and Notes form Last conference
+- ☐ Watch Silly Billy Show
 
 #### ☐ Remote Setup - Considering Zoom
 
@@ -173,9 +235,21 @@ https://colab.research.google.com/notebooks/intro.ipynb#recent=true
 
 ### Biking
 
+☐ Daily bike ride - bottleneck is calfs locking up.
+
 #### ☑ Got my e-bikes
 
 https://github.com/idvorkin/techdiary/blob/master/notes/irl.md#bikes
+
+- ☐ Get Hydraulic Brakes
+- ☑ Buy a cargo-ebike
+- ☑ Buy another e-bike
+- ☑ Buy suspension seat posts.
+
+#### ☑ Kids biking
+
+- ☐ Amelia can ride at school playground by herself
+- ☐ Zach can use gears
 
 ### Inspirations
 
@@ -184,7 +258,7 @@ https://github.com/idvorkin/techdiary/blob/master/notes/irl.md#bikes
 
 ### iOS
 
-#### ☐ Video Editting
+#### ☐ Video Editting - Luma Fusion
 
 ### Books
 
@@ -215,3 +289,31 @@ I think in modern terms:
 1. Disagree and Commit
 1. Hold each othe accountable
 1. Deliver value
+
+### Family
+
+#### Amelia
+
+- ☑ Reading Matilda daily
+- ☐ Roller Skating
+- ☐ Bike Dates
+- ☐ Somethign computer based(??)
+- ☐ Daily Writing
+
+#### Zach
+
+- ☑ Watch Star Wars
+- ☑ Work on website.
+- ☐ Man dates
+- ☐ Teach him to update his own games.
+- ☐ Come up with test framework for games
+- ☐ Figure out how to change things to markdown for him
+- ☐ Code Combat
+
+#### ☐ Tori
+
+Don't worry, Tori is a big part of my energy, but she's private so we won't talk about that.
+
+### Cut
+
+#### Trip to Canada
