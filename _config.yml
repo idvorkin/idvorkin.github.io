@@ -170,8 +170,6 @@ algolia:
   search_only_api_key: d4bae7d1d6328352ce13c0978ca620e9
   index_name: jekyll
   files_to_exclude:
-    - "_td/*"
-    - "td/*"
     - "_d/*"
     - "d/*"
     - "_posts/*bak"
