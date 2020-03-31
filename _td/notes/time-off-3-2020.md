@@ -10,13 +10,18 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 <!-- vim-markdown-toc GFM -->
 
 - [Misc](#misc)
+- [Blog Content](#blog-content)
+  - [☐ New logo](#-new-logo)
+  - [☐ The manager book](#-the-manager-book)
+  - [☐ Eulogy](#-eulogy)
+  - [☐ Job Hunt Rollercoaster Post](#-job-hunt-rollercoaster-post)
 - [Blog Tech](#blog-tech)
   - [☑ Clone tech diary into tech blog](#-clone-tech-diary-into-tech-blog)
   - [☐ Better broken link checker](#-better-broken-link-checker)
   - [☑ Serve images off of blob repository](#-serve-images-off-of-blob-repository)
-  - [☑ New logo](#-new-logo)
-  - [☑ Redo CSS to be foundation based](#-redo-css-to-be-foundation-based)
-- [CSS](#css)
+  - [☑ New logo](#-new-logo-1)
+  - [☑ Deep dive into CSS and bootstrap (great idea)](#-deep-dive-into-css-and-bootstrap-great-idea)
+  - [☑ Redo CSS to be bootstrapped base](#-redo-css-to-be-bootstrapped-base)
   - [☑ Blog ToC Drop Up Menu Mobile](#-blog-toc-drop-up-menu-mobile)
   - [☑ Blog ToC Side Bar Desktop](#-blog-toc-side-bar-desktop)
 - [vim](#vim)
@@ -51,10 +56,23 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [Books](#books)
   - [☐ Upstream Thinking Upstream](#-upstream-thinking-upstream)
   - [☐ Inspired Product Management](#-inspired-product-management)
+  - [☐ HBR Thinking Strategically](#-hbr-thinking-strategically)
+  - [☐ Joy on Demand](#-joy-on-demand)
+  - [☑ 5 Dysfunctions of a team](#-5-dysfunctions-of-a-team)
 
 <!-- vim-markdown-toc -->
 
 ### Misc
+
+### Blog Content
+
+#### ☐ New logo
+
+#### ☐ The manager book
+
+#### ☐ Eulogy
+
+#### ☐ Job Hunt Rollercoaster Post
 
 ### Blog Tech
 
@@ -70,9 +88,11 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180.png
 
-#### ☑ Redo CSS to be foundation based
+#### ☑ Deep dive into CSS and bootstrap (great idea)
 
-### CSS
+Quick notes [here](https://github.com/idvorkin/techdiary/blob/9e8e206a80219db32277459b00ae6773e3b61e62/notes/hack-web.md#fly-out-toc)
+
+#### ☑ Redo CSS to be bootstrapped base
 
 #### ☑ Blog ToC Drop Up Menu Mobile
 
@@ -171,3 +191,27 @@ https://github.com/idvorkin/techdiary/blob/master/notes/irl.md#bikes
 #### ☐ Upstream Thinking Upstream
 
 #### ☐ Inspired Product Management
+
+#### ☐ HBR Thinking Strategically
+
+#### ☐ Joy on Demand
+
+[Seach inside yourself](https://idvork.in/search-inside-yourself) v2, focused on Joy.
+
+#### ☑ 5 Dysfunctions of a team
+
+Fast read:
+
+- Lack of Trust
+- Lack of Debate
+- Lack of Commitment
+- Lack of Accountability
+- Lack of Delivering results
+
+I think in modern terms:
+
+1. Pyschological Safety
+1. Healthy Debate
+1. Disagree and Commit
+1. Hold each othe accountable
+1. Deliver value

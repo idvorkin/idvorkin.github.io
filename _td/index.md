@@ -82,6 +82,7 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
   - [Quirks](#quirks)
 - [Windows Managers](#windows-managers)
 - [CLI Screen Recoding](#cli-screen-recoding)
+  - [Show pressed keys](#show-pressed-keys)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -495,6 +496,10 @@ _If on iOS then you need to click to open the image in a new tag_
 ![inamged image](https://raw.githubusercontent.com/idvorkin/techdiary/master/images/demo-cli-screen-recording.svg?sanitize=true)
 
 _(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to add blah.svg?sanatize=true)_
+
+#### Show pressed keys
+
+[Carnac](https://github.com/bfritscher/carnac)
 
 ### Other Resources
 
