@@ -15,7 +15,7 @@ Training Emotional Intelligence through mindfulness.
 
 This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
-### 1) What is Emotional Intelligence (EI)? How to train it? &#x2611;
+### 1) What is Emotional Intelligence (EI)? How to train it?
 
 _Even engineers can use empathy_
 
@@ -30,7 +30,7 @@ _Even engineers can use empathy_
 - Once have the mindfulness can use to build the components of EI.
 - Easy and Easier Mindfulness Methods. **Easy** follow the breath. **Easier** have no thoughts.
 
-### 2) Theory and practice of mindfulness &#x2611;
+### 2) Theory and practice of mindfulness
 
 _Breathing as if your life depends on it._
 
@@ -55,7 +55,7 @@ _Breathing as if your life depends on it._
   - Dude where is the science.
   - Happiness default state of mind.
 
-### 3) Extend mindfulness beyond formal practice. &#x2611;
+### 3) Extend mindfulness beyond formal practice.
 
 _Mindfulness without butt on cushion_
 
@@ -116,7 +116,7 @@ _Mindfulness without butt on cushion_
   - Feel your feet touching the ground
   - Don't take anything forgranted.
 
-### 4) Self awareness leading to self confidence &#x2611;
+### 4) Self awareness leading to self confidence
 
 _All natural organic Self-Confidence_
 
@@ -182,7 +182,7 @@ _All natural organic Self-Confidence_
   - Emotions go from exististential -> experiential -> physiological
   - I am happy -> I feel happy -> I experiance happy in my body
 
-### 5) Developing Self Mastery &#x2611;
+### 5) Developing Self Mastery
 
 _Riding your emotions like a horse_
 
@@ -245,7 +245,7 @@ _Riding your emotions like a horse_
   - Instead, just observe, and reflect on the emotions, befriend them and they go away.
   - See Getting to yes with yourself.
 
-### 6) Art of self motivation and building resilliance &#x2611;
+### 6) Art of self motivation and building resilliance
 
 _Making Profits, Rowing Accross Oceans, and Changing The World_
 
@@ -331,7 +331,7 @@ _Making Profits, Rowing Accross Oceans, and Changing The World_
       - Find evidence temporary.
       - Feeling inadequate, focus on past succcess.
 
-### 7) Developing Empathy by connecting to others &#x2611;
+### 7) Developing Empathy by connecting to others
 
 _Empathy and the Monkey business of brain tangos_
 
@@ -404,7 +404,7 @@ _Empathy and the Monkey business of brain tangos_
     - Your super power is someone can bring you a rough story, and you will make it great.
     - NOT:Your super power is you're a great story teller.
 
-### 8) Leadership and Social Skills &#x2611;
+### 8) Leadership and Social Skills
 
 _Being Effective and Loved at the same time_
 
@@ -528,7 +528,7 @@ _Being Effective and Loved at the same time_
   - Second happiest state is open attention.
 * Not summarized
 
-### 9) The story behind Search Inside Yourself. &#x2611;
+### 9) The story behind Search Inside Yourself.
 
 _Three easy steps to world peace_
 
