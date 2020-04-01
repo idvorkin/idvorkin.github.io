@@ -7,6 +7,9 @@ inprogress: true
 tags:
   - how igor ticks
   - emotional intelligence
+redirect:
+  - voices
+  - voices-in-my-head
 
 author: "Igor Dvorkin"
 ---
@@ -26,7 +29,7 @@ _(BTW the order below is deliberate,it's the order of the voices i want to talk 
 - **Peter** - the performer, loves to juggle and do magic.
 - **Willy** - the whimsical. Twin brother of peter the performer.
 - **David** - the Dad. Proud like a MoFo
-- **Gertrude** My grandmother mind reassuring me that I can take it easy, and I'm doing the best I can.
+- **Gertrude** - My grandmother mind reassuring me that I can take it easy, and I'm doing the best I can.
 
 ### Positive Players (Too be hired)
 
@@ -34,8 +37,8 @@ _(BTW the order below is deliberate,it's the order of the voices i want to talk 
 
 ### Negative Habits
 
-- **Vern** my desire to vegetate and not exercise
 - **Gary** my desire to gorge instead of eating healthy.
+- **Vern** my desire to vegetate and not exercise
 - **Prashant** my desire to procrastinate
 
 ### Anxieties

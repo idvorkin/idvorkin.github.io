@@ -29,11 +29,9 @@ _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
     - [Husband to Tori - his life long partner.](#husband-to-tori---his-life-long-partner)
     - [Technologist](#technologist)
     - [Professional](#professional)
-- [Igor is still writing about being a ...](#igor-is-still-writing-about-being-a-)
     - [Family man](#family-man)
     - [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
     - [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
-    - [Friend, Mentee, and Mentor](#friend-mentee-and-mentor)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -130,7 +128,7 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 
 Igor understood emotional health is the basis of his stability, and [invested](http://idvorkin.github.io/search-inside-yourself) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
-Igor prided himself in being calm like water, and have a grand-mother mind he could apply to [himself](https://www.amazon.com/Getting-Yes-Yourself-Worthy-Opponents-ebook/dp/B00OP1FIUM/ref=sr_1_3?ie=UTF8&qid=1515073110&sr=8-3&keywords=getting+to+yes+with+self), and to others.
+Igor strived for grand-mother mind, which he applied to [himself](https://www.amazon.com/dp/B00OP1FIUM/), and others. A grand mother doesn't judge, she believes people grow, listen whole heartily, encourages, and remains calm like water.
 
 <!--
 * To File:
@@ -196,19 +194,24 @@ To file:
 * Implementing Bit Locker for the phone
 -->
 
-## Igor is still writing about being a ...
-
 ### Family man
 
 Igor used to think being a family man would be easy. Being proud of his family, looking back fondly on time with them was easy, but making the time for them, supporting them, teaching them - that was all really hard. Hard yes, but totally worth it.
 
-Igor realized that when it comes to family, like all things, it's easy to confuse hours for quality. Being at home playing on his tablet, while the kids played wasn't family time. Instead Igor realized the key is having dates, a chance were he coul focus whole heartidly on his kids. Date nights were sacred and could be whatever the kid wanted.
+Igor realized that when it comes to family, like all things, it's easy to confuse hours for quality. Being at home playing on his tablet, while the kids played on theirs wasn't family time. Instead Igor realized the key is having dates, a time he gave the gift of his complete attention to Amelia, Zach and Tori. Date nights were sacred and could be whatever the kid wanted.
 
+Igor also realized that writing about kids in an eulogy is hard as kids are constantly growing and evolving and what you do at 5, is so different at 7 and so different at 10. Here are some things which he totally loved:
+
+- Enjoying them growing up: Seeing as they learned new skills, came up with clever thoughts
+- Watching them do things together: There is no feeling better then seeing your kids do things together. When Amelia is scared and Zach lets her sleep in his bed, melts Igor's heart.
+- School: Walking the kids to school daily, going to all the field trips, doing magic for kids.
+- Enjoying them being proud of their dad: Greedy yes, but true none the less.
+
+<!--
 - To File
 
   - Teaching 7h/EQ values to kids
   - Seeing Kids Play Together
-  - School events
   - Public transit together
   - teaching kids to be active
   - Document their adventures to savor later, and educate them
@@ -216,7 +219,6 @@ Igor realized that when it comes to family, like all things, it's easy to confus
   - Seeing "raw humanity"
   - Being cool for other kids
   - I choose ...
-  - How relationship improved when I started walking Zach to school.
   - Bragging about kids section.
   - Weekly Swimming
   - Weekly Dates
@@ -226,25 +228,29 @@ Igor realized that when it comes to family, like all things, it's easy to confus
 - To live
   - Being with kids recharged him
   - Being with kids inspired him
+-->
 
 ### Father to Amelia - an incredible girl
 
-So TBD:
+Things I cherish with Amelia @ 6:
 
-- To File
-  - Roller Skating
-  - Swimming
-  - Taking for bike rides
+- Roller Skating
+- Swimming
+- Taking for bike rides
+- Reading her Matilda
+- Helping her Spell
 
 ### Father to Zach - a wonderful boy
 
-- To File
-- Archived links
-- Website
-- First to monetize with Patreon
-- Loved to setup his discord services, including bots
+Things I cherish with Zach @ 10:
 
-### Friend, Mentee, and Mentor
+- Working on his website together.
+- Setting up Patreon. Zach was the first to monetize, and makes more on Patreon then he does on his allowance.
+- Seeing how Zach would setup his discord services and stream
+- Seeing Zach use GitHub
+
+<!--
+-### Friend, Mentee, and Mentor
 
 - To File
   - [Human/Feelings Meetings](http://idvorkin.github.io/Human-Meetings) a forum for expressing emotions.
@@ -270,6 +276,8 @@ So TBD:
     - Saw value in each of them
   - Dropped in on the neighbors for fun - just hung out for coffee/bear
   - Everyone had a story, and Igor wanted to hear, and understand them.
+
+-->
 
 <!--
 - ### Enjoyer of the great outdoors.
@@ -307,7 +315,6 @@ So TBD:
 * What activities give me the most pleasure
 * Changing I've incurred as I went through life
 * Big Ideas To Digest
-    * Grand mother mind
     * Non-judgemental
     * Growth Mindset
     * Realize everyone is trying as hard as they can.
