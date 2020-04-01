@@ -6,6 +6,7 @@ permalink: /timeoff
 redirect_from:
   - /vacation
   - /professional-development
+  - /pd
 ---
 
 Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, but I think there are 2 kinds of time off. Vacation, and professional development.
@@ -26,6 +27,8 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Moments](#moments)
     - [Pre enjoying: Savoring](#pre-enjoying-savoring)
     - [Post enjoyment: Reminiscing](#post-enjoyment-reminiscing)
+    - [Joy on Demand](#joy-on-demand)
+- [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -64,7 +67,15 @@ Even though getting to do what you love is awesome, you still want to love your 
 
 ## Optimizing for happiness
 
+_This should probalby be it's open post - expect a refactor_
+
 ### Types of happiness: Pleasure, Flow and Identity
+
+**Pleasure\*** - The joy of consumption. Eating chocolate, watching tv, procrastinating. These joys are like sweet food, they have a jolt of pleasure, but they go quickly, and leave you wanting more.
+
+**Flow** - The joy of production. This happens when you are doing something challenging enough to keep you engaged, but easy enough to support continued progress. These joy is sustained for hours, and you know you're there when you look up and realize you've just spent 4 hours (QQ: Is binge watching joy?)
+
+**Identity** - The joy of identity, purpose, and acqualization. This happens when you are supporting your identity. The doing can be miserable, but the satisfication of being who you want to be is powerful, and lasts and lasts. Even thinking about your identity can sustain you.
 
 ### The experiencing and remembering self - the peak end rule.
 
@@ -77,5 +88,13 @@ Most of life is auto-pilot (think about how movies are 2 hours, and cover years)
 ### Pre enjoying: Savoring
 
 ### Post enjoyment: Reminiscing
+
+### Joy on Demand
+
+A great book about how to savor things. I need to summarize seperatly, but it contains many exercises to feel good.
+
+## Examples of how I spent my time off
+
+- [April 2020 - Time between leaving Amazon and Joining Facebook](td/notes/time-off-3-2020)
 
 ## Other Resources
