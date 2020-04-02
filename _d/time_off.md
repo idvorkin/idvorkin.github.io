@@ -71,7 +71,7 @@ _This should probalby be it's open post - expect a refactor_
 
 ### Types of happiness: Pleasure, Flow and Identity
 
-**Pleasure\*** - The joy of consumption. Eating chocolate, watching tv, procrastinating. These joys are like sweet food, they have a jolt of pleasure, but they go quickly, and leave you wanting more.
+**Pleasure** - The joy of consumption. Eating chocolate, watching tv, procrastinating. These joys are like sweet food, they have a jolt of pleasure, but they go quickly, and leave you wanting more.
 
 **Flow** - The joy of production. This happens when you are doing something challenging enough to keep you engaged, but easy enough to support continued progress. These joy is sustained for hours, and you know you're there when you look up and realize you've just spent 4 hours (QQ: Is binge watching joy?)
 
