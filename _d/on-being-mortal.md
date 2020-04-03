@@ -19,16 +19,18 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 <!-- vim-markdown-toc GFM -->
 
 - [The book](#the-book)
-  - [Introduction](#introduction)
-  - [The Independent Self](#the-independent-self)
-  - [Things Fall Apart](#things-fall-apart)
-  - [Dependence](#dependence)
-  - [Assistance](#assistance)
-  - [A Better Life](#a-better-life)
-  - [Letting Go](#letting-go)
-  - [Hard Conversations](#hard-conversations)
-  - [Courage](#courage)
+    - [Introduction](#introduction)
+    - [The Independent Self](#the-independent-self)
+    - [Things Fall Apart](#things-fall-apart)
+    - [Dependence](#dependence)
+    - [Assistance](#assistance)
+    - [A Better Life](#a-better-life)
+    - [Letting Go](#letting-go)
+    - [Hard Conversations](#hard-conversations)
+    - [Courage](#courage)
 - [Statistics](#statistics)
+    - [Death Rates by Cause](#death-rates-by-cause)
+    - [Probabily of death given current age](#probabily-of-death-given-current-age)
 - [Quotes](#quotes)
 - [Other resources](#other-resources)
 
@@ -63,6 +65,8 @@ Courage is strength in the face of knowledge of what is to be feared or hoped. W
 
 ## Statistics
 
+### Death Rates by Cause
+
 - Baseline morality rate [0.9%](https://www.macrotrends.net/countries/USA/united-states/death-rate)
 - US deaths/year [2.8M](https://www.cdc.gov/nchs/data/nvsr/nvsr68/nvsr68_06-508.pdf) Heart: 23%, Cancer: 22%, Accident: 6%, Suicide: 1.5%
 - US deaths/day: 8,000
@@ -79,8 +83,8 @@ Courage is strength in the face of knowledge of what is to be feared or hoped. W
 - Age is range between previous and current e.g. 24 implies 15-24
 - You can download the excel yourself, and play with it as you wish.
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml?widget=true&amp;headers=false"
-style="width: 100%;height:400px"
+<iframe class="embed-responsive" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml?widget=true&amp;headers=false"
+style="height:400px"
 ></iframe>
 
 Get the raw data from:
@@ -88,6 +92,12 @@ Get the raw data from:
 - Download [Google Sheets](https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml)
 - Download [Excel](https://1drv.ms/x/s!Ap6_JgmVeSWShucCfjXvgzVyAeRA8A?e=QXhv3o)
 - A similar graph from the [CDC](https://www.cdc.gov/injury/images/lc-charts/leading_causes_of_death_by_age_group_2017_1100w850h.jpg)
+
+### Probabily of death given current age
+
+Death://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/68_07/Table01.xlsx
+
+<iframe class="embed-responsive" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIOa5Jwg06iWzeKodwg3SMs5O1xI21GsSCEV5WB1_kLPvZTaQCOti8hgObhqgV4w/pubhtml?gid=881982232&amp;single=true&amp;widget=true&amp;headers=false" style="height:400px"></iframe>
 
 ## Quotes
 
