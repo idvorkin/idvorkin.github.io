@@ -137,6 +137,7 @@ Getting useful data from the news is now hard. Three goals here
 
 ### The data
 
+- [Death by Age Factor](https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/)
 - [NY Times Viz](https://github.com/nytimes/covid-19-data)
 - [Great Data Source Visualization](https://ourworldindata.org/coronavirus)
 - [Testing By US State](https://github.com/COVID19Tracking/covid-tracking-data/tree/master/data)
