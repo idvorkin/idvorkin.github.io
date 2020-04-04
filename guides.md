@@ -12,7 +12,7 @@ tags:
   - emotional intelligence
 ---
 
-Satisifaction is our most sustainable source of happiness. To find satisfcaction, we need to live in accordance with the person we want to be. Unless we know who we want to be, and act deliberately to achieve it, our satisfaction will be infrequent, and often accidental.
+Satisfaction is our most sustainable source of happiness. To find satisfaction, we need to live in accordance with the person we want to be. Unless we know who we want to be, and act deliberately to achieve it, our satisfaction will be infrequent, and often accidental.
 
 This series of guides is the basis of mortality software helps you understand who you want to be, and supports you in being that person. In a nutshell, making your satisfied.
 
@@ -22,7 +22,7 @@ The first step for mortality software is helping you figure out the person you w
 
 # What and How
 
-## Spirtual Identity and Purpose Needs
+## Spiritual Identity and Purpose Needs
 
 ### Role Finder
 
@@ -32,6 +32,8 @@ The first step for mortality software is helping you figure out the person you w
 
 ## Mental Needs
 
+[]
+
 ### Emotional Health
 
 ### Mindfulness Training
@@ -40,7 +42,7 @@ The first step for mortality software is helping you figure out the person you w
 
 ### Gratefulness and Joy
 
-### Cognative Health
+### Cognitive Health
 
 [Getting Coached](/coach)
 [Changing Jobs](https://idvork.in/tags/#job-hunt)
