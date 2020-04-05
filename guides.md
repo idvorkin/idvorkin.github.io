@@ -20,6 +20,8 @@ The first step for mortality software is helping you figure out the person you w
 
 # Why: Because you're going to die
 
+- [On Being Mortal](/death)
+
 # What and How
 
 ## Spiritual Identity and Purpose Needs
@@ -46,7 +48,7 @@ The first step for mortality software is helping you figure out the person you w
 - [Changing Jobs](https://idvork.in/tags/#job-hunt)
 - [Goal Settings](/goals)
 
-## Building blocks
+## Foundational Building blocks
 
 ### Physical Health
 
@@ -57,10 +59,4 @@ The first step for mortality software is helping you figure out the person you w
 
 - [Savings and Taxes](/money)
 
-# Uncatgorized
-
 ### Hobbies
-
-### Death
-
-- [On Being Mortal](/death)
