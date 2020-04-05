@@ -17,21 +17,21 @@ There are three paths - remote development, local development, and hybrid. For a
 <!-- vim-markdown-toc GFM -->
 
 - [Remote Development - Blink](#remote-development---blink)
-    - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
+  - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
 - [Local Development - iSh, iVIM, Working Copy, etc](#local-development---ish-ivim-working-copy-etc)
-    - [Run Linux - iSH](#run-linux---ish)
-    - [Run git - Working copy](#run-git---working-copy)
-    - [Run Vim - iVIM](#run-vim---ivim)
-    - [Run python - Pythonista](#run-python---pythonista)
-    - [Run Jupyter - Carnets](#run-jupyter---carnets)
-    - [Edit markdown](#edit-markdown)
+  - [Run Linux - iSH](#run-linux---ish)
+  - [Run git - Working copy](#run-git---working-copy)
+  - [Run Vim - iVIM](#run-vim---ivim)
+  - [Run python - Pythonista](#run-python---pythonista)
+  - [Run Jupyter - Carnets](#run-jupyter---carnets)
+  - [Edit markdown](#edit-markdown)
 - [Hybrid development - Consistency](#hybrid-development---consistency)
 - [The external keyboard.](#the-external-keyboard)
-    - [The keyboard I use](#the-keyboard-i-use)
-    - [The iPad stand I use](#the-ipad-stand-i-use)
-    - [Caps to Control](#caps-to-control)
-    - [Back tick to escape.](#back-tick-to-escape)
-    - [Carrying bags](#carrying-bags)
+  - [The keyboard I use](#the-keyboard-i-use)
+  - [The iPad stand I use](#the-ipad-stand-i-use)
+  - [Caps to Control](#caps-to-control)
+  - [Back tick to escape.](#back-tick-to-escape)
+  - [Carrying bags](#carrying-bags)
 - [Related links](#related-links)
 
 <!-- vim-markdown-toc -->
@@ -76,6 +76,11 @@ The holy grail. [iSH](https://iSH.app) takes a very impressive approach. And [tb
 iSH Creates an x86 emulated machine (e.g. simulate execution), and run alpine Linux in it. I love this but it has two big gaps. A) Compatibility B) Speed. There are still CPU instructions and system calls that aren't supported so large swaths of applications don't work - E.g. NPM, Rust. B) Because it's emulated it's slow, so I need to use trimmed down versions of all my configurations.
 
 When your software can run iSH, and is fast enough, you're done. However because of the compatibility and speed concerns, you'll often need other solutions to augment iSH. Here are the ones I use
+
+Useful ish tips:
+
+1. Run ssh-keygen then you can ssh into your other machines
+1. You can access clipboard by cat or pipe-in to /dev/clipboard
 
 #### Run git - Working copy
 

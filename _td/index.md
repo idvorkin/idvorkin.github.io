@@ -97,6 +97,7 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 
 - Denite
 - Fugitive
+- Support [italics in vim in Tmux](https://rsapkf.netlify.com/blog/enabling-italics-vim-tmux)
 
 ### C Sharp
 

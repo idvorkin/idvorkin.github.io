@@ -9,7 +9,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 ## Why?
 
-Kids love minecraft, dad loves tech. Here's my experineces in the world of minecraft
+Kids love Minecraft, dad loves tech. Here's my experiences in the world of Minecraft
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -23,11 +23,12 @@ Kids love minecraft, dad loves tech. Here's my experineces in the world of minec
     - [Functions](#functions)
     - [Resource Packs](#resource-packs)
     - [Behavior Packs](#behavior-packs)
-    - [Connecting to a javascript 'script'](#connecting-to-a-javascript-script)
+    - [Connecting to a JavaScript 'script'](#connecting-to-a-javascript-script)
 - [Meta Stuff](#meta-stuff)
     - [Copying worlds between servers and stand alone](#copying-worlds-between-servers-and-stand-alone)
     - [World Editors](#world-editors)
 - [Minecraft Education Edition](#minecraft-education-edition)
+- [Making resource packs](#making-resource-packs)
 - [Cool Stuff](#cool-stuff)
     - [Fany worlds](#fany-worlds)
 - [Other Resources](#other-resources)
@@ -39,7 +40,7 @@ Kids love minecraft, dad loves tech. Here's my experineces in the world of minec
 
 There are two branches of Minecraft, Java, which is the old version, and bedrock which runs on all modern systems, e.g. iOS, Android, Windows 10, XBox. Because my goal is entertaining modern kids, I'm focused on Bedrock. There is no interoperability between Bedrock and Java, which is pretty frustrating.
 
-As best I can tell, most of the mods and servers refer to the java version. I don't know why, but my hunch is that was back in Minecrafts hayday, and they switched to Bedrock, and people have been less interested in hacking around on it.
+As best I can tell, most of the mods and servers refer to the java version. I don't know why, but my hunch is that was back in Minecraft heyday, and they switched to Bedrock, and people have been less interested in hacking around on it.
 
 Because most of what you find doesn't say if it's bedrock or java, start by checking for that, otherwise you'll waste a bunch of time realizing it's for the java version.
 
@@ -63,7 +64,7 @@ CheckNetIsolation.exe LoopbackExempt –a –p=S-1-15-2-1958404141-86561845-1752
 
 ### The X-Box Proxy Hack
 
-So, x-box doesnt' allo you to connect to 'remote servers', however you can connect to local ones on your LAN. So you need to setup a UDP proxy to make it work. I'm using the below with no issues.
+So, x-box doesn't' allow you to connect to 'remote servers', however you can connect to local ones on your LAN. So you need to setup a UDP proxy to make it work. I'm using the below with no issues.
 
 https://github.com/jhead/phantom
 
@@ -85,7 +86,7 @@ https://github.com/jhead/phantom
 
 ### Behavior Packs
 
-### Connecting to a javascript 'script'
+### Connecting to a JavaScript 'script'
 
 ## Meta Stuff
 
@@ -103,10 +104,15 @@ http://www.mcctoolchest.com/Download
 
 ## Minecraft Education Edition
 
-Not sure what this is as you need an education account. Looks like you have an 'agent' that you can brogram using blockly. That's pretty cool.
+Not sure what this is as you need an education account. Looks like you have an 'agent' that you can program using blockly. That's pretty cool.
+
+## Making resource packs
+
+[Bridge](https://github.com/bridge-core/bridge)
+[Resource Pack Tutorial](https://minecraft.gamepedia.com/Tutorials/Creating_resource_pack_add-ons)
 
 ## Cool Stuff
 
-### Fany worlds
+### Fancy worlds
 
 ## Other Resources

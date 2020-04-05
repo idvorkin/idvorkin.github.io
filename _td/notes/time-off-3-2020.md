@@ -9,6 +9,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 <!-- vim-markdown-toc GFM -->
 
+- [A note on Corona Virus](#a-note-on-corona-virus)
 - [Priorities](#priorities)
   - [Physical because my body is the only one I've got.](#physical-because-my-body-is-the-only-one-ive-got)
   - [Emotional health because that's how I experience the world.](#emotional-health-because-thats-how-i-experience-the-world)
@@ -27,7 +28,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [NLP](#nlp)
   - [☑ Building 'generative text' from my chat logs](#-building-generative-text-from-my-chat-logs)
   - [☑ 'generative text' from my journal entries](#-generative-text-from-my-journal-entries)
-  - [☐ 'generative text' using gpt-2](#--generative-text-using-gpt-2)
+  - [☐ 'generative text' using gpt-2](#-generative-text-using-gpt-2)
 - [Windows](#windows)
   - [☑ Remote access to a mac - Teamviewer](#-remote-access-to-a-mac---teamviewer)
 - [Vision systems - OpenCV](#vision-systems---opencv)
@@ -52,11 +53,13 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [iOS](#ios)
   - [☐ Video Editting - Luma Fusion](#-video-editting---luma-fusion)
 - [Books](#books)
+  - [☑ StoryBrand](#--storybrand)
   - [☐ Upstream Thinking Upstream](#-upstream-thinking-upstream)
   - [☐ Inspired Product Management](#-inspired-product-management)
   - [☐ HBR Thinking Strategically](#-hbr-thinking-strategically)
   - [☐ Joy on Demand](#-joy-on-demand)
   - [☑ 5 Dysfunctions of a team](#-5-dysfunctions-of-a-team)
+  - [☐ Creativity](#-creativity)
 - [Family](#family)
   - [Amelia](#amelia)
   - [Zach](#zach)
@@ -73,6 +76,10 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
   - [Trip to Canada](#trip-to-canada)
 
 <!-- vim-markdown-toc -->
+
+### A note on Corona Virus
+
+My time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized i should ignore it, or at least minimize my time thinking about it.
 
 ### Priorities
 
@@ -221,6 +228,43 @@ https://github.com/idvorkin/techdiary/blob/master/notes/irl.md#bikes
 
 ### Books
 
+#### ☑ StoryBrand
+
+Using the hero's path to createa marketting plan. Also, helpful to clarify what your "business" really is.
+
+Superb book. Very well written, and really speaks to the many, many, websites you see now a days.
+
+Use their awesome [online companion tool](tool://www.mystorybrand.com/)
+
+1. A charector (your customer **not** your business)
+2. Has a problem (external, interal, philisophical)
+3. Meets a guide (**your business**, empathy, authority)
+4. Who gives them a plan (process, agreement)
+5. And call them to action (direct, transitional)
+6. That ends in success
+7. And helps them avoid failure
+8. Which results in a transformation (from, to)
+
+Book well layed out:
+
+- Why you need it
+- SummaryWhat it is
+- Combo What and How of doing it.
+- How to do the nitty gritty on your web and org and etc.
+
+Business Model of the company well layed out (customer value, franchises), and a great model of using this framework.
+
+1. SMB owners
+   1. Web Seminars
+   1. Peronal Coaching
+   1. IN person seminars
+1. Medium Business owners
+   1. Internal culture, business problems.
+1. Coaches as franchises
+   1. Training Selling to independnat franchisees who sell the method
+
+Also an interesting business model for the book
+
 #### ☐ Upstream Thinking Upstream
 
 #### ☐ Inspired Product Management
@@ -248,6 +292,10 @@ I think in modern terms:
 1. Disagree and Commit
 1. Hold each othe accountable
 1. Deliver value
+
+#### ☐ Creativity
+
+Meh book from the Phillipe Petit who walked the tightrope accross the world trade center and had other great adventures. Pretty meh book designed to inspire through "poetry", pretty meh.
 
 ### Family
 
