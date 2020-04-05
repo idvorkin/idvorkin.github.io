@@ -36,7 +36,7 @@ The first step for mortality software is helping you figure out the person you w
 
 ### Mindfulness Training
 
-- [Meditation]
+- [Meditation](/search-inside-yourself)
 
 ### Gratefulness and Joy
 
