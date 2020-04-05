@@ -32,8 +32,6 @@ The first step for mortality software is helping you figure out the person you w
 
 ## Mental Needs
 
-[]
-
 ### Emotional Health
 
 ### Mindfulness Training
@@ -44,11 +42,11 @@ The first step for mortality software is helping you figure out the person you w
 
 ### Cognitive Health
 
-[Getting Coached](/coach)
-[Changing Jobs](https://idvork.in/tags/#job-hunt)
-[Goal Settings](/goals)
+- [Getting Coached](/coach)
+- [Changing Jobs](https://idvork.in/tags/#job-hunt)
+- [Goal Settings](/goals)
 
-## Basic Needs
+## Building blocks
 
 ### Physical Health
 
@@ -57,10 +55,12 @@ The first step for mortality software is helping you figure out the person you w
 
 ### Financial Health
 
-- Saving for retirement
+- [Savings and Taxes](/money)
 
 # Uncatgorized
 
 ### Hobbies
 
 ### Death
+
+- [On Being Mortal](/death)
