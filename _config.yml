@@ -47,7 +47,6 @@ collections:
   td:
     output: true
 
-
 # See directions @
 # https://community.algolia.com/jekyll-algolia/getting-started.html
 # Create algolia key via cat
@@ -89,6 +88,10 @@ exclude:
     "package.json",
     "node_modules",
   ]
+
+permalink: /:title
+siteurl: "https://idvork.in/"
+
 plugins:
   - jekyll-redirect-from
   - jekyll-paginate
