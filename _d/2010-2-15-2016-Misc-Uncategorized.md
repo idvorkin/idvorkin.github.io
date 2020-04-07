@@ -11,6 +11,34 @@ author: "Igor Dvorkin"
 There are lots of rough ideas I have that are not yet categorized, or good enough to be a thought. This will be a
 place to store them.
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+    - [Magic: Great example of Seth Godin principles](#magic-great-example-of-seth-godin-principles)
+    - [Igor's UVP:](#igors-uvp)
+    - [Igor's Key Activities:](#igors-key-activities)
+    - [Quotes:](#quotes)
+    - [Grandmother mind](#grandmother-mind)
+    - [Knowledge vs Wisdom](#knowledge-vs-wisdom)
+    - [Curiosity](#curiosity)
+    - [Cognitive vs Curiosity based improvement.](#cognitive-vs-curiosity-based-improvement)
+    - [Love and rejection.](#love-and-rejection)
+- [Journaling Prompt:](#journaling-prompt)
+- [Wisdom](#wisdom)
+- [Intamacy Questions](#intamacy-questions)
+- [Models](#models)
+    - [Marginal costs - just this once.](#marginal-costs---just-this-once)
+    - [Strategy : Defined vs Emmergent](#strategy--defined-vs-emmergent)
+    - [Types of capabilities - Resources, Process, Values](#types-of-capabilities---resources-process-values)
+- [Progressions](#progressions)
+    - [Career: Learn, Scale Out, Reap rewards](#career-learn-scale-out-reap-rewards)
+    - [Life Stages; 20-Exploring; 30 - Stopping what don't like; 40 - Doing what do like; 50 - Unknown (being selfless??)](#life-stages-20-exploring-30---stopping-what-dont-like-40---doing-what-do-like-50---unknown-being-selfless)
+    - [Best Friend Conversation: Getting Drunk; Getting Married, Kid Did X; Did you know bob, he's dead](#best-friend-conversation-getting-drunk-getting-married-kid-did-x-did-you-know-bob-hes-dead)
+    - [Class Act:](#class-act)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 ### Magic: Great example of Seth Godin principles
 
 - Choosing myself, hard work, building trust, and deserving attention.
@@ -22,13 +50,6 @@ place to store them.
   - Signed card ambitious card
   - In hands card routine.
 - Q: How do I build MORE connection to audience.
-
-### Class Act:
-
-- NEVER speak badly of anyone
-- Only say what you'd say to their face.
-- Take full responsiblity
-- Give all credit to others.
 
 ### Igor's UVP:
 
@@ -188,6 +209,18 @@ _Some of these are extra valuable depending on your teams culture_
 - How close and warm is your family? Do you feel your childhood was happier than most other people’s?
 - How do you feel about your relationship with your mother?
 
+## Models
+
+### Marginal costs - just this once.
+
+Never assume just this once, assume it'll happen forever, because it will. Standard story:
+
+Skipping church or skipping meditation.
+
+### Strategy : Defined vs Emmergent
+
+### Types of capabilities - Resources, Process, Values
+
 ## Progressions
 
 ### Career: Learn, Scale Out, Reap rewards
@@ -195,3 +228,10 @@ _Some of these are extra valuable depending on your teams culture_
 ### Life Stages; 20-Exploring; 30 - Stopping what don't like; 40 - Doing what do like; 50 - Unknown (being selfless??)
 
 ### Best Friend Conversation: Getting Drunk; Getting Married, Kid Did X; Did you know bob, he's dead
+
+### Class Act:
+
+- NEVER speak badly of anyone
+- Only say what you'd say to their face.
+- Take full responsiblity
+- Give all credit to others.
