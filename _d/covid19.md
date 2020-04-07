@@ -11,7 +11,7 @@ redirect_from:
   - /cv
 ---
 
-Corona Virus (CV) may be the defining moment in our lives. In such times, lets remember three things 1) Keep your circle of concern within your circle of influence 2) Don't feed mind mosters - see the positive 3) In crisis, you see both the best and worse. Focus on the best.
+Corona Virus (CV) may be the defining moment in our lives. In such times, lets remember three things 1) Keep your circle of concern within your circle of influence 2) Don't feed mind monsters - see the positive 3) In crisis, you see both the best and worse. Focus on the best.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -26,8 +26,8 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
 - [Circle of concern and circle of influence.](#circle-of-concern-and-circle-of-influence)
     - [Model good behavior](#model-good-behavior)
     - [Teddy bear brigade](#teddy-bear-brigade)
-    - [Virtual Playdates](#virtual-playdates)
-    - [Setting up a minecraft server](#setting-up-a-minecraft-server)
+    - [Virtual Play dates](#virtual-play-dates)
+    - [Setting up a Minecraft server](#setting-up-a-minecraft-server)
 - [Some bizarre consequences](#some-bizarre-consequences)
     - [Shortages caused by retail arbitrage.](#shortages-caused-by-retail-arbitrage)
     - [Glut of lobsters](#glut-of-lobsters)
@@ -36,7 +36,7 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
     - [Expected Tech innovations](#expected-tech-innovations)
         - [Nose filters](#nose-filters)
         - [UV blasters](#uv-blasters)
-        - [Goves that keep you from wiping your eyes](#goves-that-keep-you-from-wiping-your-eyes)
+        - [Gloves that keep you from wiping your eyes](#gloves-that-keep-you-from-wiping-your-eyes)
 - [My optimizations](#my-optimizations)
     - [Meet people for virtual coffees](#meet-people-for-virtual-coffees)
     - [Get a home exercise routine](#get-a-home-exercise-routine)
@@ -59,7 +59,7 @@ From James Altchur: Media companies make money scaring you. Politicians stay in 
 
 ### Humanity has prioritize lives over profits
 
-From [Mr. Money Moustache](https://www.mrmoneymustache.com/)
+From [Mr. Money Mustache](https://www.mrmoneymustache.com/)
 
 Assuming we are preventing 3 million early deaths, **this means our society is foregoing about one million dollars of economic activity for each person’s life that we extend and frankly, it makes me happy to know we are capable of that**.
 
@@ -67,7 +67,7 @@ In the more compassionate case which we are currently following, we drastically 
 
 ### Bill gates models being a class act.
 
-Go watch how Bill Gates answers questions around how the goverment did nothing in February (the past is always outside the circle of influence). He ignores the bait on what we got wrong yesterday, and focuses on what we need to do today (core to the circle of influence) That's a class act leader:
+Go watch how Bill Gates answers questions around how the government did nothing in February (the past is always outside the circle of influence). He ignores the bait on what we got wrong yesterday, and focuses on what we need to do today (core to the circle of influence) That's a class act leader:
 
 - Interviewer: Trying to Stir a rage answer on why wasted on February
 - Bill Gates: OK, we didn't act, but the good news is "focus on productive action"
@@ -87,19 +87,19 @@ Go watch how Bill Gates answers questions around how the goverment did nothing i
 
 ### Teddy bear brigade
 
-### Virtual Playdates
+### Virtual Play dates
 
-### Setting up a minecraft server
+### Setting up a Minecraft server
 
 ## Some bizarre consequences
 
 ### Shortages caused by retail arbitrage.
 
-I didn't realize this was a thing, but people buy stuff locally (often at thrift stores and garage sales and discount) and then sell it on Amazon. This is a big cause of shortages. Great story in the NYT about something that bought 10K items of sanitizer and masks. Intersting since needs to be sold on Amazon or E-Bay pretty easy to find. Also, E-bay makes 10%, and Amazon 15% so it's a great business for them.
+I didn't realize this was a thing, but people buy stuff locally (often at thrift stores and garage sales and discount) and then sell it on Amazon. This is a big cause of shortages. Great story in the NYT about something that bought 10K items of sanitizer and masks. Interesting since needs to be sold on Amazon or E-Bay pretty easy to find. Also, E-bay makes 10%, and Amazon 15% so it's a great business for them.
 
 ### Glut of lobsters
 
-Because no one can celebrate chinese new years which is a major consumer of lobsters, and lobster production was done pre-corona virus, lobsters are no dirt cheap.
+Because no one can celebrate Chinese new years which is a major consumer of lobsters, and lobster production was done pre-corona virus, lobsters are no dirt cheap.
 
 ### Prisoners making hand sanitizer.
 
@@ -113,7 +113,7 @@ The New York prison system is making inmates create hand sanitizer - that is awe
 
 #### UV blasters
 
-#### Goves that keep you from wiping your eyes
+#### Gloves that keep you from wiping your eyes
 
 ## My optimizations
 
@@ -131,7 +131,7 @@ The New York prison system is making inmates create hand sanitizer - that is awe
 
 The data analysis during this defining event has been terrible. However, focusing on the positive, the gives me a chance to see how "good data is presented" and to build some of my own data visualization skills.
 
-I've also got some realitve data on my [mortality post](/death), however I don't think the problem is mortality, it's the health system being overwhelmed and the economy, neither of which is reported.
+I've also got some relative data on my [mortality post](/death), however I don't think the problem is mortality, it's the health system being overwhelmed and the economy, neither of which is reported.
 
 ### My personal dashboard
 
