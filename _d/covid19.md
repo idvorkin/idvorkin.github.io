@@ -23,6 +23,7 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
     - [Tesla and Dyson making incubators](#tesla-and-dyson-making-incubators)
     - [3M Refusing to ignore order to stop shipping PPE to other countries](#3m-refusing-to-ignore-order-to-stop-shipping-ppe-to-other-countries)
     - [Big Tech still pays hourly workers.](#big-tech-still-pays-hourly-workers)
+    - [Zoo Pandas mate for first time](#zoo-pandas-mate-for-first-time)
 - [Circle of concern and circle of influence.](#circle-of-concern-and-circle-of-influence)
     - [Model good behavior](#model-good-behavior)
     - [Teddy bear brigade](#teddy-bear-brigade)
@@ -80,6 +81,22 @@ Go watch how Bill Gates answers questions around how the government did nothing 
 ### 3M Refusing to ignore order to stop shipping PPE to other countries
 
 ### Big Tech still pays hourly workers.
+
+### Zoo Pandas mate for first time
+
+https://www.theguardian.com/world/2020/apr/07/in-the-mood-for-love-hong-kongs-middle-aged-pandas-rediscover-their-mojo
+
+Middle-aged couple of giant pandas in a Hong Kong theme park have mated for the first time in more than 10 years, after finally enjoying a period of privacy thanks to the coronavirus lockdown.
+
+Ying Ying and Le Le have been at Ocean Park since 2007 but, despite the encouragement of zookeepers, they had shown little inclination to have sex while daily hordes of visitors were watching their every move.
+
+Chinese scientists, after losing patience with natural breeding, extracted sperm from Le Le and artificially inseminated Ying Ying, but this resulted in miscarriages. When the pandemic forced the closure of the park on 26 January, the 14-year-olds were halfway through the panda’s average lifespan and almost a decade past the start of sexual maturity.
+
+But, after more than two months of being alone together, the couple have recently shown signs they were in the mood for love. Local reports say Ying Ying – in her oestrogen cycle – spent more time in the water and Le Le left more scent markings around the enclosure.
+
+On Monday morning, the pair were seen cuddling more intensely than usual and then finally did what comes naturally, much to the delight of park managers.
+
+“The successful natural mating process today is extremely exciting for all of us, as the chance of pregnancy via natural mating is higher than by artificial insemination,” Michael Boos, executive director for zoological operations and conservation at Ocean Park, noted in a press release.
 
 ## Circle of concern and circle of influence.
 
