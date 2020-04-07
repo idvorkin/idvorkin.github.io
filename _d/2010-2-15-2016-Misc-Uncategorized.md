@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "random uncategorized notes"
+title: "random un categorized notes"
 comments: true
 inprogress: true
 tags:
@@ -14,32 +14,63 @@ place to store them.
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-    - [Magic: Great example of Seth Godin principles](#magic-great-example-of-seth-godin-principles)
+- [Igor as a business model](#igor-as-a-business-model)
     - [Igor's UVP:](#igors-uvp)
     - [Igor's Key Activities:](#igors-key-activities)
-    - [Quotes:](#quotes)
+- [Magic: Great example of Seth Godin principles](#magic-great-example-of-seth-godin-principles)
+- [Quotes:](#quotes)
     - [Grandmother mind](#grandmother-mind)
-    - [Knowledge vs Wisdom](#knowledge-vs-wisdom)
-    - [Curiosity](#curiosity)
-    - [Cognitive vs Curiosity based improvement.](#cognitive-vs-curiosity-based-improvement)
-    - [Love and rejection.](#love-and-rejection)
 - [Journaling Prompt:](#journaling-prompt)
 - [Wisdom](#wisdom)
 - [Intamacy Questions](#intamacy-questions)
+- [Progressions](#progressions)
+    - [7H: Dependant, Independnat, Interdependant](#7h-dependant-independnat-interdependant)
+    - [Career: Learn, Scale Out, Reap rewards](#career-learn-scale-out-reap-rewards)
+    - [Life Stages; 20-Exploring; 30 - Stopping what don't like; 40 - Doing what do like; 50 - Unknown (being selfless??)](#life-stages-20-exploring-30---stopping-what-dont-like-40---doing-what-do-like-50---unknown-being-selfless)
+    - [Best Friend Conversation: Getting Drunk; Getting Married, Kid Did X; Did you know bob, he's dead](#best-friend-conversation-getting-drunk-getting-married-kid-did-x-did-you-know-bob-hes-dead)
 - [Models](#models)
     - [Marginal costs - just this once.](#marginal-costs---just-this-once)
     - [Strategy : Defined vs Emmergent](#strategy--defined-vs-emmergent)
     - [Types of capabilities - Resources, Process, Values](#types-of-capabilities---resources-process-values)
-- [Progressions](#progressions)
-    - [Career: Learn, Scale Out, Reap rewards](#career-learn-scale-out-reap-rewards)
-    - [Life Stages; 20-Exploring; 30 - Stopping what don't like; 40 - Doing what do like; 50 - Unknown (being selfless??)](#life-stages-20-exploring-30---stopping-what-dont-like-40---doing-what-do-like-50---unknown-being-selfless)
-    - [Best Friend Conversation: Getting Drunk; Getting Married, Kid Did X; Did you know bob, he's dead](#best-friend-conversation-getting-drunk-getting-married-kid-did-x-did-you-know-bob-hes-dead)
-    - [Class Act:](#class-act)
+    - [Being a  class act](#being-a--class-act)
+    - [Knowledge vs Wisdom](#knowledge-vs-wisdom)
+    - [Curiosity](#curiosity)
+    - [Cognitive vs Curiosity based improvement.](#cognitive-vs-curiosity-based-improvement)
+    - [Love and rejection.](#love-and-rejection)
+- [Heath brothers](#heath-brothers)
+    - [Made to stick](#made-to-stick)
+    - [Switch](#switch)
+    - [Moments](#moments)
+    - [Decisive](#decisive)
+    - [Elephant Rider Path](#elephant-rider-path)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-### Magic: Great example of Seth Godin principles
+## Igor as a business model
+
+### Igor's UVP:
+
+- Mantra: People cry when I move on.
+- Ideas Executed Brilliantly.
+- Growing teams
+
+### Igor's Key Activities:
+
+- Free Association Journaling
+- Prototyping Software
+- Cognitive Health
+- Blogging Everything
+
+Post mortems
+
+- Emotional Health
+  - Link to site.
+- Physical Health
+  - Link to blog post.
+  - Intermittent Fasting
+
+## Magic: Great example of Seth Godin principles
 
 - Choosing myself, hard work, building trust, and deserving attention.
 - NOT: Building a tribe, because there is no scale out/distribution.
@@ -51,72 +82,13 @@ place to store them.
   - In hands card routine.
 - Q: How do I build MORE connection to audience.
 
-### Igor's UVP:
-
-- Mantra: People cry when I move on.
-- Ideas Executed Brilliantly.
-- Growing teams
-
-### Igor's Key Activities:
-
-- Free Association Journallying
-- Protoyping Software
-- Cognative Health
-
-  - Professional Blogging
-  - Post mortems
-
-- Emotional Health
-  - Link to site.
-- Physical Health
-  - Link to blog post.
-  - Intermittent Fasting
-
-### Quotes:
+## Quotes:
 
 - Half the pressure, twice the speed - do it without stress/pressure, but do it quickly.
 
 ### Grandmother mind
 
-- From Cognative Control to Curiosity.
-
-### Knowledge vs Wisdom
-
-- Knowledge - The rider knows it.
-- Wisdom - The elphent knows it.
-- How to train the elphant? Curiosity
-
-### Curiosity
-
-- Feels good
-- Self Awareness, focus on 'how curious' instead of congnative
-- How curious, is less judgmental
-
-### Cognitive vs Curiosity based improvement.
-
-- Reframe
-- Cognative Control (rider) is hard, BUT curiosity is much easier.
-- Curiosity does not take discipline, just awareness.
-- From Curiosity, can make progress.
-
-### Love and rejection.
-
-- Afraid to love because fear of rejection
-- Very common statement, in the grand, but happens in the small too.
-- Someone needed a charger, I could give it to them, but i didn't.
-- Why? fear of rejection.
-- Win/Win
-  - I offer/needed - Someone feels loved, and I feel great - WIN!
-  - I offer/not needed/Appreciate - Someone feels loved, I feel great - WIN!
-  - I offer/not needed/grumpy - Someone feels angry, I feel sad - LOSS! (how often?)
-
-_surprise: these are my daily affirmations_
-
-- Deliberate, Disciplined, Daily
-- Essentialism (I choose to do the most important thing)
-- Appreciate
-- First Understand, then be understated
-- Provide Context
+- From mortems Control to Curiosity.
 
 Focusing on quality of life
 
@@ -151,7 +123,7 @@ _Some of these are extra valuable depending on your teams culture_
 - Someone has been positive
 - What is my thought on rituals?
 - What is my thought on making things sacred?
-- What do I want to teach zach?
+- What do I want to teach Zach?
 - What does being a successful father mean to me?
 - What do I enjoy doing?
 - Why do I procrastinate?
@@ -182,7 +154,7 @@ _Some of these are extra valuable depending on your teams culture_
 - This too shall pass
 - Appreciate
 
-## Intamacy Questions
+## Intimacy Questions
 
 - Given the choice of anyone in the world, whom would you want as a dinner guest?
 - Would you like to be famous? In what way?
@@ -209,6 +181,16 @@ _Some of these are extra valuable depending on your teams culture_
 - How close and warm is your family? Do you feel your childhood was happier than most other people’s?
 - How do you feel about your relationship with your mother?
 
+## Progressions
+
+### 7H: Dependent, Independent, Interdependent
+
+### Career: Learn, Scale Out, Reap rewards
+
+### Life Stages; 20-Exploring; 30 - Stopping what don't like; 40 - Doing what do like; 50 - Unknown (being selfless??)
+
+### Best Friend Conversation: Getting Drunk; Getting Married, Kid Did X; Did you know bob, he's dead
+
 ## Models
 
 ### Marginal costs - just this once.
@@ -217,21 +199,63 @@ Never assume just this once, assume it'll happen forever, because it will. Stand
 
 Skipping church or skipping meditation.
 
-### Strategy : Defined vs Emmergent
+### Strategy : Defined vs Emergent
 
 ### Types of capabilities - Resources, Process, Values
 
-## Progressions
-
-### Career: Learn, Scale Out, Reap rewards
-
-### Life Stages; 20-Exploring; 30 - Stopping what don't like; 40 - Doing what do like; 50 - Unknown (being selfless??)
-
-### Best Friend Conversation: Getting Drunk; Getting Married, Kid Did X; Did you know bob, he's dead
-
-### Class Act:
+### Being a class act
 
 - NEVER speak badly of anyone
-- Only say what you'd say to their face.
-- Take full responsiblity
+- Only what you'd say to their face.
+- Take full responsibility
 - Give all credit to others.
+
+### Knowledge vs Wisdom
+
+- Knowledge - The rider knows it.
+- Wisdom - The elephant knows it.
+- How to train the elephant? Curiosity
+
+### Curiosity
+
+- Feels good
+- Self Awareness, focus on 'how curious' instead of cognitive
+- How curious, is less judgmental
+
+### Cognitive vs Curiosity based improvement.
+
+- Reframe
+- Cognitive Control (rider) is hard, BUT curiosity is much easier.
+- Curiosity does not take discipline, just awareness.
+- From Curiosity, can make progress.
+
+### Love and rejection.
+
+- Afraid to love because fear of rejection
+- Very common statement, in the grand, but happens in the small too.
+- Someone needed a charger, I could give it to them, but i didn't.
+- Why? fear of rejection.
+- Win/Win
+  - I offer/needed - Someone feels loved, and I feel great - WIN!
+  - I offer/not needed/Appreciate - Someone feels loved, I feel great - WIN!
+  - I offer/not needed/grumpy - Someone feels angry, I feel sad - LOSS! (how often?)
+
+_surprise: these are my daily affirmations_
+
+- Deliberate, Disciplined, Daily
+- Essentialism (I choose to do the most important thing)
+- Appreciate
+- First Understand, then be understated
+- Provide Context
+
+## Heath brothers
+
+### Made to stick
+
+### Switch
+
+### Moments
+
+### Decisive
+
+### Elephant Rider Path
