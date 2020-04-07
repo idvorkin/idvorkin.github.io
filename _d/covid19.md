@@ -4,12 +4,11 @@ title: "Notes from Covid 19"
 comments: true
 inprogress: true
 imagefeature: https://github.com/idvorkin/blob/raw/master/youcantouchyourself.png
-tags:
-  - manager
 permalink: /covid
 redirect_from:
   - /corona
   - /virus
+  - /cv
 ---
 
 Corona Virus (CV) may be the defining moment in our lives. In such times, lets remember three things 1) Keep your circle of concern within your circle of influence 2) Don't feed mind mosters - see the positive 3) In crisis, you see both the best and worse. Focus on the best.
