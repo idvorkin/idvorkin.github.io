@@ -53,7 +53,8 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [iOS](#ios)
   - [☐ Video Editting - Luma Fusion](#-video-editting---luma-fusion)
 - [Books](#books)
-  - [☑ StoryBrand](#--storybrand)
+  - [☐ How will you measure your life](#-how-will-you-measure-your-life)
+  - [☑ StoryBrand](#-storybrand)
   - [☐ Upstream Thinking Upstream](#-upstream-thinking-upstream)
   - [☐ Inspired Product Management](#-inspired-product-management)
   - [☐ HBR Thinking Strategically](#-hbr-thinking-strategically)
@@ -227,6 +228,61 @@ https://github.com/idvorkin/techdiary/blob/master/notes/irl.md#bikes
 #### ☐ Video Editting - Luma Fusion
 
 ### Books
+
+#### ☐ How will you measure your life
+
+Ideas:
+
+Chapter 1:
+
+Don't solve a problem, share a theory and give an example.
+Theory is more important then data, as theory is predictive (Assuming correct theory), test of theory is its predictive power.
+
+Funny story about data "everything that flies has wings", not predictive power.
+
+Chapter 2:
+
+Work Sat is two independant axis 1) Sat and 2) Hygiene
+
+1. Sat is AMP
+2. DSat is the extrinsic motivators
+
+Money, annoying boss, nice office. !Hygiene does not equals Sat.
+
+Chapter 3:
+
+Strategy is deliberate and emmirgent, e.g. what you discover is more important then what you think. Flexibility and seeing what's most importan matters.
+
+- Test core strategies assumptions (Irridium cell phone)
+
+Chapter 4: How you spend your enegy is your actual strategy, and invest early.
+
+Elilogue:
+
+Being 100% committed easier then 98%.
+
+98% means always need to think about it, and easy to give in. Juicing vs dieting
+
+Chapter 5
+
+- Too late to invest in family after it catches on fire
+- Best time to invest is 100 years ago, next is today.
+- Seems like don't need investments, but when need them you're screwed.
+- Family, Health, Career all lines of business, and when one fails, needs all your attention, and you're screwed.
+
+Chapter 6
+
+- Focus on the job to be solved (Milkshakes)
+
+You "hire" a product to solve a problem you have.
+
+Crappy game company, but focused on problem - 12 minutes to play game.
+
+Milkshake purpose 1) fun get to work snack - slow == good2) way to reward kids - fast == good. Diff products for diff time.
+
+Chapter 7
+Chapter 8
+Chapter 9
 
 #### ☑ StoryBrand
 

@@ -11,38 +11,39 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 <!-- vim-markdown-toc GFM -->
 
 - [Physical Health](#physical-health)
-    - [Calf Health](#calf-health)
-    - [Knee Health](#knee-health)
-    - [Booger Health](#booger-health)
-    - [Skin Health](#skin-health)
-    - [Standing Desks](#standing-desks)
-    - [Gym Stuff](#gym-stuff)
-    - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
+  - [Calf Health](#calf-health)
+  - [Knee Health](#knee-health)
+  - [Booger Health](#booger-health)
+  - [Skin Health](#skin-health)
+  - [Wrist Health](#wrist-health)
+  - [Standing Desks](#standing-desks)
+  - [Gym Stuff](#gym-stuff)
+  - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
 - [Emotional Health](#emotional-health)
-    - [Meditation](#meditation)
+  - [Meditation](#meditation)
 - [Cognitive Health](#cognitive-health)
 - [Identity Health](#identity-health)
 - [Personal Carry](#personal-carry)
-    - [Fanny Pack](#fanny-pack)
-    - [Gym Bag](#gym-bag)
-    - [Work Bag](#work-bag)
+  - [Fanny Pack](#fanny-pack)
+  - [Gym Bag](#gym-bag)
+  - [Work Bag](#work-bag)
 - [Bikes](#bikes)
-    - [Bike accouterments](#bike-accouterments)
-    - [Folding Bike - The Brompton](#folding-bike---the-brompton)
-    - [E-bike theory](#e-bike-theory)
-        - [Mid vs Rear drive](#mid-vs-rear-drive)
-        - [Throttles and Pedal Assist](#throttles-and-pedal-assist)
-        - [Torque vs Power vs Watts](#torque-vs-power-vs-watts)
-    - [E-Cargo Bike - The kid carrier - Rad Wagon](#e-cargo-bike---the-kid-carrier---rad-wagon)
-    - [E-Every Day Bike - Rad mini step through](#e-every-day-bike---rad-mini-step-through)
+  - [Bike accouterments](#bike-accouterments)
+  - [Folding Bike - The Brompton](#folding-bike---the-brompton)
+  - [E-bike theory](#e-bike-theory)
+    - [Mid vs Rear drive](#mid-vs-rear-drive)
+    - [Throttles and Pedal Assist](#throttles-and-pedal-assist)
+    - [Torque vs Power vs Watts](#torque-vs-power-vs-watts)
+  - [E-Cargo Bike - The kid carrier - Rad Wagon](#e-cargo-bike---the-kid-carrier---rad-wagon)
+  - [E-Every Day Bike - Rad mini step through](#e-every-day-bike---rad-mini-step-through)
 - [Car Tech](#car-tech)
 - [Morning Routine](#morning-routine)
-    - [Weekend morning routine](#weekend-morning-routine)
-    - [Weekday morning routine](#weekday-morning-routine)
-    - [Morning Kryptonite](#morning-kryptonite)
+  - [Weekend morning routine](#weekend-morning-routine)
+  - [Weekday morning routine](#weekday-morning-routine)
+  - [Morning Kryptonite](#morning-kryptonite)
 - [Tech Stuff](#tech-stuff)
-    - [Computers](#computers)
-    - [Monitors](#monitors)
+  - [Computers](#computers)
+  - [Monitors](#monitors)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -76,6 +77,15 @@ For much of my 30's I had a brutal hacking cough. At 41, those coughs were causi
 I suffer from Eczema, which I normally ignore. I took some of my son's topical steroids, and I kid you not, it cleared up in 2 days.
 
 I also have dry skin, so use O'Keeffe's which is awesome.
+
+### Wrist Health
+
+Several braces for different times
+
+- [Full Imobilization Sleeping](https://www.amazon.com/gp/product/B004YIFA04/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+- [Heavy support during the day](https://www.amazon.com/gp/product/B002NLGNW8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+- [Light support during the day](https://www.amazon.com/gp/product/B072392YGD/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+- [Tight Warm Fingerless Gloves](https://www.amazon.com/gp/product/B00VTR6MDM/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 
 ### Standing Desks
 
