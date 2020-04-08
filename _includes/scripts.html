@@ -20,6 +20,24 @@
   LivePhotos.initialize();
 </script>
 
+<!-- https://craig.is/killing/mice -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>
+
+<script>
+  Mousetrap.bind('s', e => {
+    console.log("search");
+    location.href="/"
+  });
+  Mousetrap.bind('t', e => {
+    toc = $("#id-ui-toc-dropdown")
+    toc.css("position", "fixed")
+    toc.css("top","10px")
+    toc.css("right","10px")
+  });
+  Mousetrap.bind('?', e =>  alert('Keyboard Shortcuts: \n s - search\n t - toc to top'));
+</script>
+
+
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
