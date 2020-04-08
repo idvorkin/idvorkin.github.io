@@ -50,7 +50,7 @@ collections:
 # See directions @
 # https://community.algolia.com/jekyll-algolia/getting-started.html
 # Create algolia key via cat
-# ~/gits/igor2/secretBox.json | jq -r ."AlgoliaKey" > _algolia_api_key
+# cat ~/gits/igor2/secretBox.json | jq -r ."AlgoliaKey" > _algolia_api_key
 
 algolia:
   application_id: RY6D0RNCA3
