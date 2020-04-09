@@ -37,8 +37,9 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Unexpected expenses](#unexpected-expenses)
   - [Stock options](#stock-options)
     - [Buy a Put Option](#buy-a-put-option)
-    - [Buy a Call Option](#buy-a-call-option)
-    - [Uncovered vs Covered Calls](#uncovered-vs-covered-calls)
+    - [Sell a Put Option](#sell-a-put-option)
+    - [Uncovered vs Covered](#uncovered-vs-covered)
+    - [Put vs Call](#put-vs-call)
     - [Selling your options early](#selling-your-options-early)
 - [Philosophy](#philosophy)
   - [The point of money](#the-point-of-money)
@@ -156,19 +157,26 @@ If the stock goes up to 110$, you don't want to sell at 100$ (you'd lose 10$), s
 
 NOTE: You don't need to own the stock to be able to make money in a put, in our example where the stock drops to 90$, you'd buy the stock at 90 for market price, and sell it for 100$, again **netting you 9$**
 
-#### Buy a Call Option
+#### Sell a Put Option
 
 You guarantee to "buy at a particular price".  You will be given a low amount of money to guarantee you'll buy at a particular price. This lets you make money if a stock rises.
 
-Imagine you buy a call for 1$, for a strike price of 100$.
+Imagine you buy a put for 1$, for a strike price of 100$.
 
-If the stock goes to 90$ in 30 days, the  "call will be exercised", and you'll pay  10$, for a price of 1$, **costing you 9$**.
+If the stock goes to 90$ in 30 days, the  "call put will be exercised", and you'll pay  10$, for a price of 1$, **costing you 9$**.
 
 If the stock goes up to 110$, the buyer don't want to sell you the stock at 100$ (they'd lose 10$), so they let the put expire. This lets you make extra money:  10$ from stock appreciation and 1$ from selling the put, **netting you 11$**
 
-#### Uncovered vs Covered Calls
+#### Uncovered vs Covered
 
-As with a put option, you don't need to own the stock, however this can cost you a lot of money.  Imagine you bought a call option for 100$, but the stock drops to 10, at this point you need to buy the stock for 10$, and then sell it for 100$, when this happens you'll lose 90$, and gain 1$, giving a **net loss of 89$**.
+As with buying a  put option, you don't need to own the stock to sell the option (this is called uncovered), however this can cost you a lot of money.  Imagine you sold a put option for 1$, but the stock drops to 10$, at this point you need to buy the stock for 10$, and then sell it for 100$, when this happens you'll lose 90$, and gain 1$, giving a **net loss of 89$**.
+
+#### Put vs Call
+
+
+TODO
+
+
 
 
 #### Selling your options early
