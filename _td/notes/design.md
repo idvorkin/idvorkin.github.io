@@ -1,19 +1,21 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Design
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/design.md)_
+
+# Design
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Design and architecture](#design-and-architecture)
-    - [Business Logic, Platforms and Goop](#business-logic-platforms-and-goop)
-    - [Minimize your investment in goop.](#minimize-your-investment-in-goop)
-    - [Picking the right level of abstraction for your business logic.](#picking-the-right-level-of-abstraction-for-your-business-logic)
-    - [Is Fault Free possible](#is-fault-free-possible)
+  - [Business Logic, Platforms and Goop](#business-logic-platforms-and-goop)
+  - [Minimize your investment in goop.](#minimize-your-investment-in-goop)
+  - [Picking the right level of abstraction for your business logic.](#picking-the-right-level-of-abstraction-for-your-business-logic)
+  - [Is Fault Free possible](#is-fault-free-possible)
 - [Design Patterns](#design-patterns)
 - [Architecture Patterns](#architecture-patterns)
 - [Other Resources](#other-resources)

@@ -1,10 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Security Notes
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/better-security-design.md)_
+
+# Security Notes
 
 I used to do security in a former life, and here are some musings on the topic, which will eventually be dissected into various essays.
 
@@ -14,44 +16,44 @@ For now it’ll be confusing as I’m brain dumping to various audiences with va
 <!-- vim-markdown-toc GFM -->
 
 - [Good Security](#good-security)
-    - [Single Sign On: One account to rule them all.](#single-sign-on-one-account-to-rule-them-all)
-    - [Great design: Microsoft Authenticator](#great-design-microsoft-authenticator)
-    - [Great design: Whatsapp add accounts](#great-design-whatsapp-add-accounts)
-    - [Git tools, personal access tokens](#git-tools-personal-access-tokens)
-    - [Googles OTP reset codes](#googles-otp-reset-codes)
-    - [Password managers](#password-managers)
-    - [Multi Factor Authentication](#multi-factor-authentication)
-    - [Full Device Encryption (Bitlocker, TPM, Truecrypt)](#full-device-encryption-bitlocker-tpm-truecrypt)
-    - [Public Key sign in via SSH](#public-key-sign-in-via-ssh)
-    - [Live sign in for windows](#live-sign-in-for-windows)
-    - [Single Payment System: Paypal, Amazon, Google Express](#single-payment-system-paypal-amazon-google-express)
+  - [Single Sign On: One account to rule them all.](#single-sign-on-one-account-to-rule-them-all)
+  - [Great design: Microsoft Authenticator](#great-design-microsoft-authenticator)
+  - [Great design: Whatsapp add accounts](#great-design-whatsapp-add-accounts)
+  - [Git tools, personal access tokens](#git-tools-personal-access-tokens)
+  - [Googles OTP reset codes](#googles-otp-reset-codes)
+  - [Password managers](#password-managers)
+  - [Multi Factor Authentication](#multi-factor-authentication)
+  - [Full Device Encryption (Bitlocker, TPM, Truecrypt)](#full-device-encryption-bitlocker-tpm-truecrypt)
+  - [Public Key sign in via SSH](#public-key-sign-in-via-ssh)
+  - [Live sign in for windows](#live-sign-in-for-windows)
+  - [Single Payment System: Paypal, Amazon, Google Express](#single-payment-system-paypal-amazon-google-express)
 - [Bad Security](#bad-security)
-    - [E-mail password resets](#e-mail-password-resets)
-    - [SMS Password reset tools weakness](#sms-password-reset-tools-weakness)
+  - [E-mail password resets](#e-mail-password-resets)
+  - [SMS Password reset tools weakness](#sms-password-reset-tools-weakness)
 - [Funny](#funny)
-    - [Can’t unlock the door w/Amazon Alexa](#cant-unlock-the-door-wamazon-alexa)
+  - [Can’t unlock the door w/Amazon Alexa](#cant-unlock-the-door-wamazon-alexa)
 - [Security Assessments](#security-assessments)
-    - [Threat Modeling](#threat-modeling)
-    - [STRIDE](#stride)
-    - [Trust Boundaries](#trust-boundaries)
-    - [Data flow diagrams](#data-flow-diagrams)
-    - [Automated Code reviews](#automated-code-reviews)
-    - [Manual Code reviews](#manual-code-reviews)
-    - [Penetration testing](#penetration-testing)
-    - [Compliance vs Security](#compliance-vs-security)
-    - [Social engineering](#social-engineering)
-    - [Physical security.](#physical-security)
-    - [The dirty little secret of security reviews](#the-dirty-little-secret-of-security-reviews)
+  - [Threat Modeling](#threat-modeling)
+  - [STRIDE](#stride)
+  - [Trust Boundaries](#trust-boundaries)
+  - [Data flow diagrams](#data-flow-diagrams)
+  - [Automated Code reviews](#automated-code-reviews)
+  - [Manual Code reviews](#manual-code-reviews)
+  - [Penetration testing](#penetration-testing)
+  - [Compliance vs Security](#compliance-vs-security)
+  - [Social engineering](#social-engineering)
+  - [Physical security.](#physical-security)
+  - [The dirty little secret of security reviews](#the-dirty-little-secret-of-security-reviews)
 - [Uncategorized](#uncategorized)
-    - [Apple Pay](#apple-pay)
-    - [Chip and PIN and tap in rest of world](#chip-and-pin-and-tap-in-rest-of-world)
-    - [Credit card vs Debit Card security](#credit-card-vs-debit-card-security)
-    - [Account vs Identity](#account-vs-identity)
-    - [The end of privacy](#the-end-of-privacy)
-    - [ICloud vs OneDrive: Why do I need to login](#icloud-vs-onedrive-why-do-i-need-to-login)
-    - [YubiKey: Proof of human](#yubikey-proof-of-human)
-    - [RSA Secure ID](#rsa-secure-id)
-    - [Secure Boot](#secure-boot)
+  - [Apple Pay](#apple-pay)
+  - [Chip and PIN and tap in rest of world](#chip-and-pin-and-tap-in-rest-of-world)
+  - [Credit card vs Debit Card security](#credit-card-vs-debit-card-security)
+  - [Account vs Identity](#account-vs-identity)
+  - [The end of privacy](#the-end-of-privacy)
+  - [ICloud vs OneDrive: Why do I need to login](#icloud-vs-onedrive-why-do-i-need-to-login)
+  - [YubiKey: Proof of human](#yubikey-proof-of-human)
+  - [RSA Secure ID](#rsa-secure-id)
+  - [Secure Boot](#secure-boot)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->

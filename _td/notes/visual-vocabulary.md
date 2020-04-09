@@ -1,10 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Visual Thinking Notes
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/visual-vocabulary.md)_
+
+# Visual Thinking Notes
 
 I'm a visual thinker and here are some notes that help me with drawing/visualizing and having a visual vocabulary:
 

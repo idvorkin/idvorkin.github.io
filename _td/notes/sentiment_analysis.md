@@ -1,10 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Sentiment Analysis and NLP
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/sentiment_analysis.md)_
+
+# Sentiment Analysis and NLP
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -12,32 +14,32 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [Success Criteria](#success-criteria)
 - [Abstract](#abstract)
 - [Corpus](#corpus)
-    - [Convert exported 750words data to per day files](#convert-exported-750words-data-to-per-day-files)
-    - [Remove custom stop words](#remove-custom-stop-words)
+  - [Convert exported 750words data to per day files](#convert-exported-750words-data-to-per-day-files)
+  - [Remove custom stop words](#remove-custom-stop-words)
 - [Analysis: What is on my mind?](#analysis-what-is-on-my-mind)
-    - [Focus on Proper Nouns](#focus-on-proper-nouns)
-    - [Focus on Verbs/Nouns](#focus-on-verbsnouns)
+  - [Focus on Proper Nouns](#focus-on-proper-nouns)
+  - [Focus on Verbs/Nouns](#focus-on-verbsnouns)
 - [Sentiment Analysis From Cloud Vendors](#sentiment-analysis-from-cloud-vendors)
-    - [Call Google NLP from C sharp](#call-google-nlp-from-c-sharp)
-    - [Put google NLP output into pandas](#put-google-nlp-output-into-pandas)
-    - [Evaluate NLP Solutions from various vendors](#evaluate-nlp-solutions-from-various-vendors)
-        - [Google NLP](#google-nlp)
-        - [AWS Comprehend](#aws-comprehend)
-        - [IBM Watson.](#ibm-watson)
-        - [Azure NLP service](#azure-nlp-service)
+  - [Call Google NLP from C sharp](#call-google-nlp-from-c-sharp)
+  - [Put google NLP output into pandas](#put-google-nlp-output-into-pandas)
+  - [Evaluate NLP Solutions from various vendors](#evaluate-nlp-solutions-from-various-vendors)
+    - [Google NLP](#google-nlp)
+    - [AWS Comprehend](#aws-comprehend)
+    - [IBM Watson.](#ibm-watson)
+    - [Azure NLP service](#azure-nlp-service)
 - [Use cases - Functional](#use-cases---functional)
-        - [I can see what I'm thinking about on a single day.](#i-can-see-what-im-thinking-about-on-a-single-day)
-        - [I can see what I'm thinking about over a time period.](#i-can-see-what-im-thinking-about-over-a-time-period)
-        - [I can graph my mood over time.](#i-can-graph-my-mood-over-time)
-        - [I can see when my mood goes south.](#i-can-see-when-my-mood-goes-south)
+    - [I can see what I'm thinking about on a single day.](#i-can-see-what-im-thinking-about-on-a-single-day)
+    - [I can see what I'm thinking about over a time period.](#i-can-see-what-im-thinking-about-over-a-time-period)
+    - [I can graph my mood over time.](#i-can-graph-my-mood-over-time)
+    - [I can see when my mood goes south.](#i-can-see-when-my-mood-goes-south)
 - [Up next](#up-next)
 - [Analysis Approaches](#analysis-approaches)
-    - [Bag of words.](#bag-of-words)
+  - [Bag of words.](#bag-of-words)
 - [Useful stuff](#useful-stuff)
-    - [Lemmatization vs Stemming](#lemmatization-vs-stemming)
-    - [TF/IDF](#tfidf)
-    - [Word Embeddings](#word-embeddings)
-    - [Bag of words analysis.](#bag-of-words-analysis)
+  - [Lemmatization vs Stemming](#lemmatization-vs-stemming)
+  - [TF/IDF](#tfidf)
+  - [Word Embeddings](#word-embeddings)
+  - [Bag of words analysis.](#bag-of-words-analysis)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->

@@ -1,10 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Ring Video Doorbell
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/ring-video-download.md)_
+
+# Ring Video Doorbell
 
 ## Success Critera
 

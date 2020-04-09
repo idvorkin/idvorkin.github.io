@@ -1,10 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Make an Alexa Skill
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/alexa-skill.md)_
+
+# Make an Alexa Skill
 
 ## Success Criteria
 

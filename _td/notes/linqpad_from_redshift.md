@@ -1,12 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Make linqpad work with redshift.
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/linqpad_from_redshift.md)_
 
-## Make linqpad work with redshift.
+# Make linqpad work with redshift.
 
 Sounds easy there is already a [linqpad driver for postrgres SQL](https://github.com/fknx/linqpad-postgresql-driver) which wraps a C# driver for postrgres SQL which support redshift [ngpsql](https://blog.rthand.com/post/2016/09/19/linqpad-llblgenpro-and-npgsql.aspx).
 

@@ -1,10 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Virtual desktops in Wox
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/virtual-desktops.md)_
+
+# Virtual desktops in Wox
 
 ## Success Criteria
 

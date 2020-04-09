@@ -1,12 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Accessing iMessage history
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/dump_imessage_history.md)_
 
-## Accessing iMessage history
+# Accessing iMessage history
 
 iMessage is just a sqllite file located @
 

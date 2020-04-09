@@ -1,10 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: SQL Alchemy with Redshift
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/sqlalchemy-redshift.md)_
+
+# SQL Alchemy with Redshift
 
 SQLAlchemy Docs:
 

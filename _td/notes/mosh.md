@@ -1,10 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Mosh
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/mosh.md)_
+
+# Mosh
 
 **I no longer recommend mosh. It hasn't been updated in years, and it still doesn't support true color. I use ssh with tmux and an auto tmux reconnection script instead**
 

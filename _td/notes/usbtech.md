@@ -1,10 +1,12 @@
 ---
 layout: post
 no-render-title: true
-REPLACETITLE
+title: Usb Tech
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/usbtech.md)_
+
+# Usb Tech
 
 I'll admit it, I have a USB charging fetish. Here's my brain dump:
 
