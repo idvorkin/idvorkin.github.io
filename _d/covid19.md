@@ -18,6 +18,7 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
 
 - [Don't feed mind monsters, focus on the positive.](#dont-feed-mind-monsters-focus-on-the-positive)
     - [Media's incentive is scaring you](#medias-incentive-is-scaring-you)
+- [Crisis Porn](#crisis-porn)
     - [Humanity has prioritize lives over profits](#humanity-has-prioritize-lives-over-profits)
     - [Bill gates models being a class act.](#bill-gates-models-being-a-class-act)
     - [Tesla and Dyson making incubators](#tesla-and-dyson-making-incubators)
@@ -39,6 +40,7 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
         - [UV blasters](#uv-blasters)
         - [Gloves that keep you from wiping your eyes](#gloves-that-keep-you-from-wiping-your-eyes)
 - [My optimizations](#my-optimizations)
+    - [Stop watching the news.](#stop-watching-the-news)
     - [Meet people for virtual coffees](#meet-people-for-virtual-coffees)
     - [Get a home exercise routine](#get-a-home-exercise-routine)
     - [Get dedicated electronics for the kids](#get-dedicated-electronics-for-the-kids)
@@ -57,6 +59,17 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
 ### Media's incentive is scaring you
 
 From James Altchur: Media companies make money scaring you. Politicians stay in office (or get office) by assuming the worst case and hoping for the best so they can say, "Look, we did everything we could."  So ignore that. Also ignore the market. As I said the other day, as long as it's going up or down 5-10% a day, don't invest. There will be opportunities later.  Is the market cheap? It sure is. \$5,000,000,000,000 in stimulus is going to hit the economy, which is already assuming a worst-case scenario Depression which is not going to happen.
+
+## Crisis Porn
+
+"Hold on I need to check the latest news to make sure I don't miss something."
+
+Really? Do you? Do you think the Govenor is going to call and ask your opinion? Do you think anyone cares about your opinion? Do you think you have an ability to influence the pandemic that requires you to check the news hourly, daily or maybe twice a week? I doubt it.
+
+
+A great line from aa fantastic youtube video that described much of my early behavior during the pandemic
+
+https://youtu.be/jCHTFClfj5k
 
 ### Humanity has prioritize lives over profits
 
@@ -133,6 +146,10 @@ The New York prison system is making inmates create hand sanitizer - that is awe
 #### Gloves that keep you from wiping your eyes
 
 ## My optimizations
+
+### Stop watching the news.
+
+It's a waste of your time, and your energy. Remember no one wants your opion.
 
 ### Meet people for virtual coffees
 
