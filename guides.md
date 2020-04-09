@@ -10,6 +10,34 @@ tags:
 
 Satisfaction is our most sustainable source of happiness. To find satisfaction, we need to live in accordance with the person we want to be. Unless we know who we want to be, and act deliberately to achieve it, our satisfaction will be infrequent, and often accidental.
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [You are dying](#you-are-dying)
+- [Find your authentic self](#find-your-authentic-self)
+    - [Role Finder](#role-finder)
+    - [Eulogy Writer](#eulogy-writer)
+    - [Goals](#goals)
+    - [Hobbies](#hobbies)
+- [Maximize your sanity](#maximize-your-sanity)
+    - [Emotional Intelligence](#emotional-intelligence)
+    - [Mindfulness Training](#mindfulness-training)
+    - [Time off](#time-off)
+- [Your Health is your wealth](#your-health-is-your-wealth)
+    - [Physical Health](#physical-health)
+    - [Cognitive Health](#cognitive-health)
+    - [Financial Health](#financial-health)
+- [Life Events](#life-events)
+    - [Changing Jobs](#changing-jobs)
+    - [Having a kid](#having-a-kid)
+    - [A sick parent](#a-sick-parent)
+    - [Depression](#depression)
+    - [Mental Breakdown](#mental-breakdown)
+    - [Cancer](#cancer)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 This series of guides is the basis of mortality software helps you understand who you want to be, and supports you in being that person. In a nutshell, making your satisfied.
 
 The first step for mortality software is helping you figure out the person you want to be and your values.
@@ -25,26 +53,32 @@ The first step for mortality software is helping you figure out the person you w
 
 ### Eulogy Writer
 
-### Goals
+- [My Eulogy](/eulogy)
 
+### Goals
 - [Goal Settings](/goals)
 
 ### Hobbies
 
-[Eulogy Writer](/eulogy)
+-  [My hobby - magic](/magic)
+-  What makes a good hobby
 
 ## Maximize your sanity
 
-### Emotional Health and Intelligence
+### Emotional Intelligence
+
+- Negotiating
+- What makes a leader
+- Mind Monsters
 
 ### Mindfulness Training
 
 - [Meditation](/search-inside-yourself)
-
-### Gratefulness and Joy
+- Gratefulness and Joy
 
 ### Time off
 
+- [How to spend time off](/timeoff)
 
 ## Your Health is your wealth
 
@@ -54,14 +88,12 @@ The first step for mortality software is helping you figure out the person you w
 - [Using tech gadgets to help](/tech-health-toys)
 
 ### Cognitive Health
+
 - [Getting Coached](/coach)
 
 ### Financial Health
 
 - [Savings and Taxes](/money)
-
-
-
 
 
 ## Life Events
