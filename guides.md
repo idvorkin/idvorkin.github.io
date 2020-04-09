@@ -1,11 +1,7 @@
 ---
 layout: post
-title: "Life Guides"
-ogtitle: "Igor's Eulogy - How I want to live"
-author: "Igor Dvorkin"
+title: "Life milestones"
 inprogress: true
-featured: true
-comments: true
 permalink: /guides
 tags:
   - how igor ticks
@@ -18,21 +14,28 @@ This series of guides is the basis of mortality software helps you understand wh
 
 The first step for mortality software is helping you figure out the person you want to be and your values.
 
-# Why: Because you're going to die
+## You are dying
 
 - [On Being Mortal](/death)
 
-# What and How
 
-## Spiritual Identity and Purpose Needs
+## Find your authentic self
 
 ### Role Finder
 
 ### Eulogy Writer
 
+### Goals
+
+- [Goal Settings](/goals)
+
+### Hobbies
+
 [Eulogy Writer](/eulogy)
 
-## Mental Needs
+## Maximize your sanity
+
+### Emotional Intelligence
 
 ### Emotional Health
 
@@ -42,21 +45,40 @@ The first step for mortality software is helping you figure out the person you w
 
 ### Gratefulness and Joy
 
-### Cognitive Health
 
-- [Getting Coached](/coach)
-- [Changing Jobs](https://idvork.in/tags/#job-hunt)
-- [Goal Settings](/goals)
-
-## Foundational Building blocks
+## Your Health is your wealth
 
 ### Physical Health
 
 - [A guide to physical health](/physical-health)
 - [Using tech gadgets to help](/tech-health-toys)
 
+### Cognitive Health
+- [Getting Coached](/coach)
+
 ### Financial Health
 
 - [Savings and Taxes](/money)
 
-### Hobbies
+
+
+
+
+## Life Events
+
+Major Life events have their own module
+
+### Changing Jobs
+
+- [Changing Jobs](https://idvork.in/tags/#job-hunt)
+
+### Having a kid
+
+### A sick parent
+
+### Depression
+
+### Mental Breakdown
+
+### Cancer
+
