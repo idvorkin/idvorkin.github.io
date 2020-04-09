@@ -76,6 +76,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
   - [Aside: Agency and Psychological Safety:](#aside-agency-and-psychological-safety)
 - [Part 8: Personal Motivations](#part-8-personal-motivations)
   - [Why is management attractive to you?](#why-is-management-attractive-to-you)
+  - [What are your thoughts on managers memorizing these answers for interviews.](#what-are-your-thoughts-on-managers-memorizing-these-answers-for-interviews)
 - [Part 9: Other resources](#part-9-other-resources)
 
 <!-- vim-markdown-toc -->
@@ -597,6 +598,18 @@ _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, 
 - Servant leadership
 - On top of best practices
 -->
+
+### What are your thoughts on managers memorizing these answers for interviews.
+
+Good interviewees prepare as much as possible, thinking through their experiences and philosphies.  If this post helps them, that is fantastic. I'm skeptical that a bad manager will be able to interalize these answers to the point they can provide rich answers.
+
+Good interviewers (and manager interviews better be good) need to be able to differentiate "theoretical knowledge" from "practical experience". They do this with situational questions like  "Tell me a time when", and probing questions like "What happened then? What were the unexpected consequences? When did you have the opposite outcome?".
+
+
+
+
+
+
 
 ## Part 9: Other resources
 
