@@ -41,6 +41,8 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
         - [Uncovered vs Covered](#uncovered-vs-covered)
         - [Selling your options early](#selling-your-options-early)
         - [Put vs Call](#put-vs-call)
+        - [Play safe - Guaranteed minimum value of unvested stock awards - buy a put](#play-safe---guaranteed-minimum-value-of-unvested-stock-awards---buy-a-put)
+        - [The company can't go up that high - sell a put](#the-company-cant-go-up-that-high---sell-a-put)
         - [Summary](#summary)
 - [Philosophy](#philosophy)
     - [The point of money](#the-point-of-money)
@@ -180,17 +182,24 @@ You don't need hold a put or call option for the entire duration, you can sell i
 
 Call is the inverse of puts, where you buy the right to "buy", and sell the right to "sell". see the table below.
 
+#### Play safe - Guaranteed minimum value of unvested stock awards - buy a put
+
+Imagine you have an grant of 100 stock awards, vesting in a year, for which you had a 10$ strike price - you then have 1000$ in paper money.   You'll need that money for your kids education, so you need to guarantee you don't lose money, in that case, but a put.
+
+#### The company can't go up that high - sell a put
+
+Imagine you have an grant of 100 stock awards, vesting in a year, for which you had a 10$ strike price - you then have 1000$ in paper money.   You know the CEO and even though you think the stock will go up, you're sure it won't go up above 15$, in that case you can sell a put at 15$, and take some profit.
+
 #### Summary
 
 Imagine a 100$ stock, for which you buy/sell a put/call for 1$ with a strike price of 100$.
 
-
 | Type | Direction | You       | Price = 110 | Price = 90 |
 |------|-----------|-----------|-------------|------------|
-| Sell | Put       | Must buy  | Gain 1$     | Lose 9$*   |
-| Buy  | Put       | Can sell  | Lose 1$     | Gain 9$*   |
-| Buy  | Call      | Can buy   | Gain 9$     | Lose 1$    |
-| Sell | Call      | Must sell | Lose 10$    | Gain 1$    |
+| Sell | Put       | Must Sell | Gain 1$     | Lose 9$*   |
+| Buy  | Put       | Can Sell  | Lose 1$     | Gain 9$*   |
+| Sell | Call      | Must Buy  | Lose 9$     | Gain 1$    |
+| Buy  | Call      | Can Buy   | Gain 9$     | Lose 1$    |
 
 
 (*) Even though these are listed at 10$, the loss/gain is unbounded, so if the stock went up 99$ or down 99$ that would be what you need to pay.
