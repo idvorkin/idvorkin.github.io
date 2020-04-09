@@ -14,39 +14,68 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
 <!-- vim-markdown-toc GFM -->
 
 - [Part 1: What does a manager do?](#part-1-what-does-a-manager-do)
-    - [What are a managers responsibilities?](#what-are-a-managers-responsibilities)
-    - [How do you measure their success?](#how-do-you-measure-their-success)
-    - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
-    - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
-    - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
-    - [Should managers code?](#should-managers-code)
+  - [What are a managers responsibilities?](#what-are-a-managers-responsibilities)
+  - [How do you measure their success?](#how-do-you-measure-their-success)
+  - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
+  - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
+  - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
+  - [Should managers code?](#should-managers-code)
 - [Part 2: Managing and Developing People](#part-2-managing-and-developing-people)
-    - [How do you coach people](#how-do-you-coach-people)
-        - [Coaching](#coaching)
-        - [Career Development](#career-development)
-    - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
-    - [How do you give challenging feedback:](#how-do-you-give-challenging-feedback)
-    - [What is the point of a 1:1?](#what-is-the-point-of-a-11)
-    - [How do you think of developing people?](#how-do-you-think-of-developing-people)
-    - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
-    - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
-    - [How do you identify engineers who could make good managers? How do you help them develop?](#how-do-you-identify-engineers-who-could-make-good-managers-how-do-you-help-them-develop)
-    - [Best hire of your career](#best-hire-of-your-career)
-    - [How did you grow top talent](#how-did-you-grow-top-talent)
-    - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
-    - [What is your ideal culture?](#what-is-your-ideal-culture)
-    - [How do you make a good culture?](#how-do-you-make-a-good-culture)
-- [Part 3: Business Acumen](#part-3-business-acumen)
+  - [How do you coach people](#how-do-you-coach-people)
+    - [Coaching](#coaching)
+    - [Career Development](#career-development)
+  - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
+  - [How do you give challenging feedback:](#how-do-you-give-challenging-feedback)
+  - [What is the point of a 1:1?](#what-is-the-point-of-a-11)
+  - [How do you think of developing people?](#how-do-you-think-of-developing-people)
+  - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
+  - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
+  - [How do you identify engineers who could make good managers? How do you help them develop?](#how-do-you-identify-engineers-who-could-make-good-managers-how-do-you-help-them-develop)
+  - [Best hire of your career](#best-hire-of-your-career)
+  - [How did you grow top talent](#how-did-you-grow-top-talent)
+  - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
+  - [What is your ideal culture?](#what-is-your-ideal-culture)
+  - [How do you make a good culture?](#how-do-you-make-a-good-culture)
+- [Part 3: Business Acumen and Strategy](#part-3-business-acumen-and-strategy)
+  - [The Four](#the-four)
+  - [Stratechary](#stratechary)
+    - [Aggregator theory](#aggregator-theory)
+    - [Disruption theory](#disruption-theory)
+    - [Horizontal vs Vertical Integration](#horizontal-vs-vertical-integration)
+  - [American Express](#american-express)
+  - [Zillow](#zillow)
+  - [Facebook](#facebook)
+    - [Messengers](#messengers)
+    - [Portal](#portal)
+    - [AR/VR](#arvr)
+  - [Google](#google)
+    - [Linked In](#linked-in)
+    - [YouTube](#youtube)
+  - [Amazon](#amazon)
+    - [AWS](#aws)
+    - [The amazon.com marketplace](#the-amazoncom-marketplace)
+    - [Alexa](#alexa)
+  - [Microsoft](#microsoft)
+  - [Linked In](#linked-in-1)
+  - [Apple](#apple)
+    - [Hardware or Services](#hardware-or-services)
+    - [The app store](#the-app-store)
 - [Part 4: Process and Mechanism](#part-4-process-and-mechanism)
 - [Part 5: Hiring](#part-5-hiring)
+  - [What are you looking for in an engineer when you recruit?](#what-are-you-looking-for-in-an-engineer-when-you-recruit)
+  - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
+  - [Are they more comfortable with generalists or specialists?](#are-they-more-comfortable-with-generalists-or-specialists)
+  - [How do you think about hiring?](#how-do-you-think-about-hiring)
+  - [How do you thiknk about the hiring funnel.](#how-do-you-thiknk-about-the-hiring-funnel)
+  - [What are their thoughts on structured interview loops vs. non-structured free-form loops?](#what-are-their-thoughts-on-structured-interview-loops-vs-non-structured-free-form-loops)
 - [Part 6: Firing and Performance Management](#part-6-firing-and-performance-management)
 - [Part 7: Charters, Re-orgs and Bootstrapping](#part-7-charters-re-orgs-and-bootstrapping)
-    - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
-    - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
-    - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
-    - [Aside: Agency and Psychological Safety:](#aside-agency-and-psychological-safety)
+  - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
+  - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
+  - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
+  - [Aside: Agency and Psychological Safety:](#aside-agency-and-psychological-safety)
 - [Part 8: Personal Motivations](#part-8-personal-motivations)
-    - [Why is management attractive to you?](#why-is-management-attractive-to-you)
+  - [Why is management attractive to you?](#why-is-management-attractive-to-you)
 - [Part 9: Other resources](#part-9-other-resources)
 
 <!-- vim-markdown-toc -->
@@ -195,6 +224,8 @@ And I spend a lot of time on generating [Moments](/moments-at-work):
 
 _Of all the places we spend our time, work is the one that dominates. However, when we look back on our lives, work is often the thing we remember least. Why? Because we remember our lives through peak moments, and there are few of those, especially positive peak moments, at work. Luckily, peak moments can be created and managers can be taught how to create them. This post explores opportunities and techniques to create these moments._
 
+Some moments like:
+
 - Constant celebrating people doing stuff fun
 - Hack-a-thons
 - Playing cards for appreciation
@@ -204,20 +235,22 @@ _Of all the places we spend our time, work is the one that dominates. However, w
 
 Why is feedback challenging? 1) It's a surprise 2) They don't want to hear it 3) They don't think you have their best interests in mind.
 
-Types of tough conversations:
-
-Performance, Charter, Re-org (me leaving), Lay Offs.
+Deep diving on what makes conversations hard:
 
 1. Surprise - see around corners, and bring up anything I see ASAP, and foreshadow. Meet frequently, know what people care about.
 2. Attack the messenger - High Trust, Know how the person likes to hear stuff. Address what they care about.
 3. Don't want to hear it - Self Aware, Think I have their best interest in mind, Put it in terms they want to hear it.
 4. Over dramatize - Anticipate what they'll care about, pre-address.
 
+Types of tough conversations:
+
+Performance, Charter, Re-org (me leaving), Lay Offs.
+
 ### What is the point of a 1:1?
 
 Computers produce nothing, developers produce code. Business produce nothing PMs, other functions produce stuff.
 
-I produce nothing, my output is the output of the team, and the team is the sum of the people. My ability to get the most value from my people is through my relationship with the people. If they trust me whole heartily, they'll tell me stuff I need to know, and I'll be able to understand how best to use them/influence them/inspire them. So, all my 1:1's start with What's on your mind - what ever they have we talk through. based on time and place we'll do X, Y.
+I produce nothing, my output is the output of the team, and the team is the sum of the people. My ability to get the most value from my people is through my relationship with the people. If they trust me whole heartily, they'll tell me stuff I need to know, and I'll be able to understand how to give roles that grow them/influence them/inspire them. So, all my 1:1's start with What's on your mind - what ever they have we talk through. based on time and place we'll do X, Y.
 
 For 1:1's for my team, the employees owns the Agenda, however I will nudge them. I like to spend time
 
@@ -322,6 +355,12 @@ Engineers that are interested in reading this post :)
 
 ### What do you do when a team completely disagrees with the founder/VP on the direction of a product?
 
+Step 1: Believe and deeply understand it. Either I believe in it, or I deeply understand the decision and have disagreed and commited. As part of commiting, I'm all in, and will share that.
+
+Step 2: Listen to the team. The team has concerns, hopefully I can predict the, ahead of time and be prepared for the easy ones, then truely listen to new concerns, and address them.
+
+Step 3: Focus on the win/win, and talk through a ripchord.
+
 ### What is your ideal culture?
 
 ### How do you make a good culture?
@@ -334,16 +373,163 @@ Engineers that are interested in reading this post :)
   - When someone does well I celebrate and call out.
 - Catch people doings things right
   - Coaching stuff
-- Put it front and center
-- Let team take ownership of it.
-- Incite pride and purpose
+  - Put it front and center
+  - Let team take ownership of it.
+  - Incite pride and purpose
 - Repeat/Repeat/Repeat
 
-## Part 3: Business Acumen
+## Part 3: Business Acumen and Strategy
+
+### The Four
+
+The four is a fantastic book describing the value of the FAAG companies.
+
+- Google is the brain
+- Amazon is the belly
+- Facebook is the heart
+- Apple is the sex drive
+
+### Stratechary
+
+#### Aggregator theory
+#### Disruption theory
+#### Horizontal vs Vertical Integration
+
+
+### American Express
+### Zillow
+### Facebook
+
+#### Messengers
+#### Portal
+#### AR/VR
+
+### Google
+
+#### Linked In
+#### YouTube
+
+### Amazon
+
+#### AWS
+#### The amazon.com marketplace
+#### Alexa
+
+### Microsoft
+### Linked In
+### Apple
+#### Hardware or Services
+#### The app store
 
 ## Part 4: Process and Mechanism
 
 ## Part 5: Hiring
+
+### What are you looking for in an engineer when you recruit?
+
+Most companies have their “competencies” they test for. But I abstract it down to:
+
+- Smart (Can code, understands)
+  - Teach me something
+  - Walk through X, and Y, how do you, explain me the trade offs.
+- Get things done (wants to ship, owns it):
+  - What matters to them
+  - Tell me something hard you did.
+- EQ: (Not an asshole, Continuous Learning, Sees impact off his action, self aware o how eels)
+  - Tell me a time you got in a fight
+  - Tell me the hardest feedback you received.
+
+### Do they prefer to hire only experienced folks?
+
+I need a pipeline of developers for mentorship, fan out and succession planning.
+
+Need a Principal per 30 people.
+
+Ratio Senior: SDE-II: SDE-I (1,2,2) => ten person team: 2, 4, 4.
+
+- Everyone grows by learning and teaching. Lots of rules
+- A crappy job for an SDE-II is a growth opportunity for SDE-I.
+- SDE-IIIs want to think hard and lead.
+- SDE-IIs do the bulk of the work, and are fully independant.
+- SDE-I bring energy and excitement, but still dependent.
+
+Ideally, people grow from SDE-I -> SDE-III on a team, so much knowledge transfer and opportunity.
+
+### Are they more comfortable with generalists or specialists?
+
+Generalists - 99% of time
+
+1. Industry changes to much.
+2. Mostly about Architecture/Design and SDL and coding, domain and language easy to learn.
+
+Specialist - 1% on very specific teams.
+
+1. File system
+2. Distributed system transaction processing.
+3. Firmware engineers
+
+Want full stack teams:
+
+FE -> Learn the customer empathy through user interactions
+BE -> Learn the tech chops of complex system.
+
+### How do you think about hiring?
+
+Priority list 1) Full blown Site Outage 2) Recruiting 3) Everything else.
+
+Recruiting is ultimately product sales, where you're selling your team.
+
+Most important part of sales:
+
+1. The product: Product you're building, team (culture and people), yourself.
+
+2. Funnel: Inbound Marketing, Referrals, high touch, post sales support.
+
+### How do you thiknk about the hiring funnel.
+
+- Top of Funnel
+  - Interview events
+  - Internal Talks
+  - Linked in Posts
+  - Linked in Appreciation
+  - Linked in Articles
+  - Always help recruiting
+  - Connect to warm candidates
+  - Go grab coffee with them.
+  - Mentorship of folks, volunteer for mentorship
+  - Intern Talk
+- Mid Funnel
+  - Post interview - magic trick, after interview lets make time to chat
+  - Push to get interview done ASAP
+  - Push to get results to candidate ASAP
+  - Walk out of interview connect on linked in and chat with them.
+- Bottom of the Funnel
+  - Focus on the needs of the candidate, then talk about how job can solve their needs.
+  - Beer/Coffee/Call
+  - Share what I have
+  - Talk to my team.
+  - Come out and have lunch with my team.
+  - Multi Sell job come to my
+  - Focus on
+
+### What are their thoughts on structured interview loops vs. non-structured free-form loops?
+
+- External Structured
+
+  - Coding
+  - Design
+  - Leadership skills - most important
+  - Self aware - earns trust.
+
+- Internal, Structured but Different
+  - You better have enough internal code/design/documentation artificats. Ask candidate for artificats they're proud of.
+  - Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them do ing their day job.
+  - Talk about hard situations they've had. Listen for the criteria smart/gets shit done/emotionally intelligent
+
+- Novel ideas for interviews (from indeed)
+  - Do code reviews
+  - Do a mock interview + debrief
+
 
 ## Part 6: Firing and Performance Management
 
