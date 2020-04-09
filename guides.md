@@ -35,15 +35,15 @@ The first step for mortality software is helping you figure out the person you w
 
 ## Maximize your sanity
 
-### Emotional Intelligence
-
-### Emotional Health
+### Emotional Health and Intelligence
 
 ### Mindfulness Training
 
 - [Meditation](/search-inside-yourself)
 
 ### Gratefulness and Joy
+
+### Time off
 
 
 ## Your Health is your wealth
