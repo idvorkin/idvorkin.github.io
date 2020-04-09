@@ -20,34 +20,35 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
 
 - [Assumptions and Hannah](#assumptions-and-hannah)
 - [IRAs Non-Taxable Saving Accounts](#iras-non-taxable-saving-accounts)
-  - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
-  - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
-  - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
-  - [IRAs vs 401Ks](#iras-vs-401ks)
-  - [IRA vs Roth IRA](#ira-vs-roth-ira)
-  - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
-  - [Back door Roth.](#back-door-roth)
-  - [The pro-Rata rule.](#the-pro-rata-rule)
+    - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
+    - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
+    - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
+    - [IRAs vs 401Ks](#iras-vs-401ks)
+    - [IRA vs Roth IRA](#ira-vs-roth-ira)
+    - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
+    - [Back door Roth.](#back-door-roth)
+    - [The pro-Rata rule.](#the-pro-rata-rule)
 - [Useful topics](#useful-topics)
-  - [No load index funds](#no-load-index-funds)
-  - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
-  - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
-  - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
-  - [529s](#529s)
-  - [Unexpected expenses](#unexpected-expenses)
-  - [Stock options](#stock-options)
-    - [Buy a Put Option](#buy-a-put-option)
-    - [Sell a Put Option](#sell-a-put-option)
-    - [Uncovered vs Covered](#uncovered-vs-covered)
-    - [Put vs Call](#put-vs-call)
-    - [Selling your options early](#selling-your-options-early)
+    - [No load index funds](#no-load-index-funds)
+    - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
+    - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
+    - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
+    - [529s](#529s)
+    - [Unexpected expenses](#unexpected-expenses)
+    - [Stock options](#stock-options)
+        - [Buy a Put Option](#buy-a-put-option)
+        - [Sell a Put Option](#sell-a-put-option)
+        - [Uncovered vs Covered](#uncovered-vs-covered)
+        - [Selling your options early](#selling-your-options-early)
+        - [Put vs Call](#put-vs-call)
+        - [Summary](#summary)
 - [Philosophy](#philosophy)
-  - [The point of money](#the-point-of-money)
-    - [What would you do for less money?](#what-would-you-do-for-less-money)
-    - [Making more vs spending more](#making-more-vs-spending-more)
-  - [Believing the market only goes up](#believing-the-market-only-goes-up)
-  - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
-  - [Timing the markets](#timing-the-markets)
+    - [The point of money](#the-point-of-money)
+        - [What would you do for less money?](#what-would-you-do-for-less-money)
+        - [Making more vs spending more](#making-more-vs-spending-more)
+    - [Believing the market only goes up](#believing-the-market-only-goes-up)
+    - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
+    - [Timing the markets](#timing-the-markets)
 - [Other questions](#other-questions)
 
 <!-- vim-markdown-toc -->
@@ -171,17 +172,27 @@ If the stock goes up to 110$, the buyer don't want to sell you the stock at 100$
 
 As with buying a  put option, you don't need to own the stock to sell the option (this is called uncovered), however this can cost you a lot of money.  Imagine you sold a put option for 1$, but the stock drops to 10$, at this point you need to buy the stock for 10$, and then sell it for 100$, when this happens you'll lose 90$, and gain 1$, giving a **net loss of 89$**.
 
-#### Put vs Call
-
-
-TODO
-
-
-
-
 #### Selling your options early
 
 You don't need hold a put or call option for the entire duration, you can sell it early. This lets you tune your risk for reward early.
+
+#### Put vs Call
+
+Call is the inverse of puts, where you buy the right to "buy", and sell the right to "sell". see the table below.
+
+#### Summary
+
+Imagine a 100$ stock, for which you buy/sell a put/call for 1$, for a strike price of 100$.
+
+
+| Type | Direction | You       | Big Go Up  | Big Go Down |
+|------|-----------|-----------|------------|-------------|
+| Buy  | Put       | can sell  | Small loss | High gain   |
+| Sell | Put       | must buy  | Small gain | High loss   |
+| Buy  | Call      | can buy   | Big gain   | Small Loss  |
+| Sell | Call      | must sell | Big loss   | Small Gain  |
+
+
 
 ## Philosophy
 
