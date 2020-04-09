@@ -160,9 +160,9 @@ NOTE: You don't need to own the stock to be able to make money in a put, in our 
 
 You guarantee to "buy at a particular price".  You will be given a low amount of money to guarantee you'll buy at a particular price. This lets you make money if a stock rises.
 
-Imagine you sell a put for 1$, for a strike price of 100$.
+Imagine you buy a call for 1$, for a strike price of 100$.
 
-If the stock goes to 90$ in 30 days, the buyer will "exercise the put", and you'll pay  10$, for a price of 1$, **costing you 9$**.
+If the stock goes to 90$ in 30 days, the  "call will be exercised", and you'll pay  10$, for a price of 1$, **costing you 9$**.
 
 If the stock goes up to 110$, the buyer don't want to sell you the stock at 100$ (they'd lose 10$), so they let the put expire. This lets you make extra money:  10$ from stock appreciation and 1$ from selling the put, **netting you 11$**
 
