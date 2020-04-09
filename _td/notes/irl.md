@@ -1,6 +1,7 @@
 ---
 layout: post
 no-render-title: true
+title: Igor's In Real Life Diary
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/irl.md)_

@@ -1,6 +1,7 @@
 ---
 layout: post
 no-render-title: true
+title: Pandas + IPython + Jupyter Incantations
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/pandas-tutorial.md)_

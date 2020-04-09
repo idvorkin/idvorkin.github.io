@@ -1,6 +1,7 @@
 ---
 layout: post
 no-render-title: true
+title: Igor's Adventures March and April 2020
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/time-off-3-2020.md)_

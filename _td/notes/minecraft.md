@@ -1,6 +1,7 @@
 ---
 layout: post
 no-render-title: true
+title: Minecraft Notes
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/minecraft.md)_

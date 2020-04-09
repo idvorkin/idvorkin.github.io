@@ -1,6 +1,7 @@
 ---
 layout: post
 no-render-title: true
+title: Hacking the web for fun and profit
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/hack-web.md)_

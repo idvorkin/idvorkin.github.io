@@ -1,6 +1,7 @@
 ---
 layout: post
 no-render-title: true
+REPLACETITLE
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/virtual-desktops.md)_

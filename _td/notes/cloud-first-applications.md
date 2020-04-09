@@ -1,6 +1,7 @@
 ---
 layout: post
 no-render-title: true
+title: Cloud First Applications
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/cloud-first-applications.md)_

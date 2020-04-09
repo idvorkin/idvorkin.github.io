@@ -1,6 +1,7 @@
 ---
 layout: post
 no-render-title: true
+title: iOS Software engineer nomad howto
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/ios-nomad.md)_
