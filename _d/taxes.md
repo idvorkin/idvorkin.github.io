@@ -36,8 +36,8 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [529s](#529s)
     - [Unexpected expenses](#unexpected-expenses)
     - [Stock options](#stock-options)
-        - [Buy a Put Option](#buy-a-put-option)
         - [Sell a Put Option](#sell-a-put-option)
+        - [Buy a Put Option](#buy-a-put-option)
         - [Uncovered vs Covered](#uncovered-vs-covered)
         - [Selling your options early](#selling-your-options-early)
         - [Put vs Call](#put-vs-call)
@@ -144,7 +144,17 @@ An education only after tax savings account. You put in money after tax, get tax
 
 ### Stock options
 
-I keep getting these words confused, here are my notes in case they are helpful to others. For these examples assume today a stock is 100$, and your options are for 30 days.
+I keep getting these words confused, here are my notes in case they are helpful to others. For these examples assume today a stock is 100$, and your options are for 30 days. In our example we'll buy 1 option, but the standard size is 100 options.
+
+#### Sell a Put Option
+
+You guarantee to "buy at a particular price".  You will be given a low amount of money to guarantee you'll buy at a particular price. This lets you make money if a stock rises.
+
+Imagine you sell a put for 1$, for a strike price of 100$.
+
+If the stock goes to 90$ in 30 days, the "put will be exercised", and you'll need to buy the stock for 100$.  As a result, you'll end buying  the stock for 100$ instead of 90$ which is the market price.  This means you bought stock for an extra 10$ (recall the stock is worth 90$ today), but since you were paid 1$ for the put it ended up **costing you 9$**.
+
+If the stock goes up to 120$, the buyer don't want to sell you the stock at 100$ (they'd lose 20$), so they let the put expire. This lets you **gain 1$** over the price of the stock.
 
 #### Buy a Put Option
 
@@ -157,16 +167,6 @@ If the stock goes to 90$ in 30 days, you can "exercise the put" and sell the sto
 If the stock goes up to 110$, you don't want to sell at 100$ (you'd lose 10$), so you let the put expire. This lets you ensure you won't lose any money (recall the option was at the strike price) **costing you 1$**
 
 NOTE: You don't need to own the stock to be able to make money in a put, in our example where the stock drops to 90$, you'd buy the stock at 90 for market price, and sell it for 100$, again **netting you 9$**
-
-#### Sell a Put Option
-
-You guarantee to "buy at a particular price".  You will be given a low amount of money to guarantee you'll buy at a particular price. This lets you make money if a stock rises.
-
-Imagine you buy a put for 1$, for a strike price of 100$.
-
-If the stock goes to 90$ in 30 days, the  "call put will be exercised", and you'll pay  10$, for a price of 1$, **costing you 9$**.
-
-If the stock goes up to 110$, the buyer don't want to sell you the stock at 100$ (they'd lose 10$), so they let the put expire. This lets you make extra money:  10$ from stock appreciation and 1$ from selling the put, **netting you 11$**
 
 #### Uncovered vs Covered
 
@@ -182,17 +182,18 @@ Call is the inverse of puts, where you buy the right to "buy", and sell the righ
 
 #### Summary
 
-Imagine a 100$ stock, for which you buy/sell a put/call for 1$, for a strike price of 100$.
+Imagine a 100$ stock, for which you buy/sell a put/call for 1$ with a strike price of 100$.
 
 
-| Type | Direction | You       | Big Go Up  | Big Go Down |
-|------|-----------|-----------|------------|-------------|
-| Buy  | Put       | can sell  | Small loss | High gain   |
-| Sell | Put       | must buy  | Small gain | High loss   |
-| Buy  | Call      | can buy   | Big gain   | Small Loss  |
-| Sell | Call      | must sell | Big loss   | Small Gain  |
+| Type | Direction | You       | Price = 110 | Price = 90 |
+|------|-----------|-----------|-------------|------------|
+| Buy  | Put       | Can sell  | Lose 1$     | Gain 9$*   |
+| Sell | Put       | Must buy  | Gain 1$     | Lose 9$*   |
+| Buy  | Call      | Can buy   | Gain 9$     | Lose 1$    |
+| Sell | Call      | Must sell | Lose 10$    | Gain 1$    |
 
 
+(*) Even though these are listed at 10$, the loss/gain is unbounded, so if the stock went up 99$ or down 99$ that would be what you need to pay.
 
 ## Philosophy
 
