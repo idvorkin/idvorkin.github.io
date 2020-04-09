@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Reducing job hunt stress"
-date: "2017-02-17 05:32:01 Pacific Standard Time"
 tags:
   - emotional intelligence
   - software engineering
