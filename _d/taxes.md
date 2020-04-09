@@ -35,6 +35,11 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
   - [529s](#529s)
   - [Unexpected expenses](#unexpected-expenses)
+  - [Stock options](#stock-options)
+    - [Buy a Put Option](#buy-a-put-option)
+    - [Buy a Call Option](#buy-a-call-option)
+    - [Uncovered vs Covered Calls](#uncovered-vs-covered-calls)
+    - [Selling your options early](#selling-your-options-early)
 - [Philosophy](#philosophy)
   - [The point of money](#the-point-of-money)
     - [What would you do for less money?](#what-would-you-do-for-less-money)
@@ -42,11 +47,6 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Believing the market only goes up](#believing-the-market-only-goes-up)
   - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
   - [Timing the markets](#timing-the-markets)
-  - [Stock options](#stock-options)
-    - [Buy a Put Option](#buy-a-put-option)
-    - [Buy a Call Option](#buy-a-call-option)
-    - [Uncovered vs Covered Calls](#uncovered-vs-covered-calls)
-    - [Selling early](#selling-early)
 - [Other questions](#other-questions)
 
 <!-- vim-markdown-toc -->
@@ -140,39 +140,9 @@ An education only after tax savings account. You put in money after tax, get tax
 
 ### Unexpected expenses
 
-## Philosophy
-
-### The point of money
-
-When seeing a financial planner, they asked me - what is the point of your savings? I said the point was making a big pile of money so I'd feel safe.
-
-Yeah that was a mistake. Money is a tool. Use it to make your life better. Great uses are experiences with your children, investments in your health, and things that avoid a fight.
-
-#### What would you do for less money?
-
-If you wouldn't take a job for a pay cut, you probably shouldn't take the job.
-
-#### Making more vs spending more
-
-See Parkinson's law, which applies to both time and money. The task you have will expand to all the money (or time) available to it.
-
-### Believing the market only goes up
-
-### Keeping a mortgage you can pay of since interest rates are low
-
-### Timing the markets
-
-Think you have a strategy or know something professional traders don't? I'm skeptical, and the base rates are against you. This is especially confusing when the markets are out performing.
-
-The correct strategy is buying no load broad spectrum index funds.
-
-Remember:
-
-> Time in market beats timing the market.
-
 ### Stock options
 
-Confusing concept, let me take notes. Assume today a stock is 100$, and your options are for 30 days.
+I keep getting these words confused, here are my notes in case they are helpful to others. For these examples assume today a stock is 100$, and your options are for 30 days.
 
 #### Buy a Put Option
 
@@ -206,9 +176,40 @@ If you don't own the stock on which you have a buy option, you have an uncovered
 
 which is very dangerous. You can use this with a covered position if you own the stock, often the case when you have un vested shares
 
-#### Selling early
+#### Selling your options early
 
-You don't need hold a put or call option
+You don't need hold a put or call option for the entire duration, you can sell it early. This lets you tune your risk for reward early.
+
+## Philosophy
+
+### The point of money
+
+When seeing a financial planner, they asked me - what is the point of your savings? I said the point was making a big pile of money so I'd feel safe.
+
+Yeah that was a mistake. Money is a tool. Use it to make your life better. Great uses are experiences with your children, investments in your health, and things that avoid a fight.
+
+#### What would you do for less money?
+
+If you wouldn't take a job for a pay cut, you probably shouldn't take the job.
+
+#### Making more vs spending more
+
+See Parkinson's law, which applies to both time and money. The task you have will expand to all the money (or time) available to it.
+
+### Believing the market only goes up
+
+### Keeping a mortgage you can pay of since interest rates are low
+
+### Timing the markets
+
+Think you have a strategy or know something professional traders don't? I'm skeptical, and the base rates are against you. This is especially confusing when the markets are out performing.
+
+The correct strategy is buying no load broad spectrum index funds.
+
+Remember:
+
+> Time in market beats timing the market.
+
 
 
 
