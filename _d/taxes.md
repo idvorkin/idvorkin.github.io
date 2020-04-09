@@ -152,9 +152,9 @@ Imagine you buy a put for 1$, for a strike price of 100$.
 
 If the stock goes to 90$ in 30 days, you can "exercise the put" and sell the stock for 100$, making you 10$, for a price of 1$, **netting you 9$**.
 
-If the stock goes up to 110$, you don't want to sell at 100$ (you'd lose 10$), so you let the put expire. This lets you ensure you won't lose any money (recall the option was at the strike price) for 1$
+If the stock goes up to 110$, you don't want to sell at 100$ (you'd lose 10$), so you let the put expire. This lets you ensure you won't lose any money (recall the option was at the strike price) **costing you 1$**
 
-NOTE: You don't need to own the stock to be able to make money in a put, in our example where the stock drops to 90$, you'd buy the stock at 90 for market price, and sell it for 100$, again netting 10$
+NOTE: You don't need to own the stock to be able to make money in a put, in our example where the stock drops to 90$, you'd buy the stock at 90 for market price, and sell it for 100$, again **netting you 9$**
 
 #### Buy a Call Option
 
@@ -168,13 +168,8 @@ If the stock goes up to 110$, the buyer don't want to sell you the stock at 100$
 
 #### Uncovered vs Covered Calls
 
-As with a put option, you don't need to own the stock, however this can cost you a lot of money.  Imagine you bought a call option for 100$, but the stock drops to 10, at this point you need to buy the stock for 10$, and then sell it for 100$, when this happens you'll lose 90$, and gain 1$, giving a net loss of 89$.
+As with a put option, you don't need to own the stock, however this can cost you a lot of money.  Imagine you bought a call option for 100$, but the stock drops to 10, at this point you need to buy the stock for 10$, and then sell it for 100$, when this happens you'll lose 90$, and gain 1$, giving a **net loss of 89$**.
 
-
-
-If you don't own the stock on which you have a buy option, you have an uncovered position, e.g. you may have to pay infinite money to cover the buy.
-
-which is very dangerous. You can use this with a covered position if you own the stock, often the case when you have un vested shares
 
 #### Selling your options early
 
