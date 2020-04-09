@@ -170,7 +170,7 @@ NOTE: You don't need to own the stock to be able to make money in a put, in our 
 
 #### Uncovered vs Covered
 
-As with buying a  put option, you don't need to own the stock to sell the option (this is called uncovered), however this can cost you a lot of money.  Imagine you sold a put option for 1$, but the stock drops to 10$, at this point you need to buy the stock for 10$, and then sell it for 100$, when this happens you'll lose 90$, and gain 1$, giving a **net loss of 89$**.
+As with buying a put option, you don't need to own the stock to sell the option (this is an uncovered put), however this can cost you a lot of money.  Imagine you sold a put option for 1$, but the stock drops 85$ to 15$, at this point you need to buy the stock for 15$, and then sell it for 100$, when this happens you'll lose 85, and gain 1$, giving a **net loss of 84$**.
 
 #### Selling your options early
 
@@ -187,8 +187,8 @@ Imagine a 100$ stock, for which you buy/sell a put/call for 1$ with a strike pri
 
 | Type | Direction | You       | Price = 110 | Price = 90 |
 |------|-----------|-----------|-------------|------------|
-| Buy  | Put       | Can sell  | Lose 1$     | Gain 9$*   |
 | Sell | Put       | Must buy  | Gain 1$     | Lose 9$*   |
+| Buy  | Put       | Can sell  | Lose 1$     | Gain 9$*   |
 | Buy  | Call      | Can buy   | Gain 9$     | Lose 1$    |
 | Sell | Call      | Must sell | Lose 10$    | Gain 1$    |
 
