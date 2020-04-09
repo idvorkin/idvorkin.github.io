@@ -20,28 +20,34 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
 
 - [Assumptions and Hannah](#assumptions-and-hannah)
 - [IRAs Non-Taxable Saving Accounts](#iras-non-taxable-saving-accounts)
-    - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
-    - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
-    - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
-    - [IRAs vs 401Ks](#iras-vs-401ks)
-    - [IRA vs Roth IRA](#ira-vs-roth-ira)
-    - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
-    - [Back door Roth.](#back-door-roth)
-    - [The pro-Rata rule.](#the-pro-rata-rule)
+  - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
+  - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
+  - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
+  - [IRAs vs 401Ks](#iras-vs-401ks)
+  - [IRA vs Roth IRA](#ira-vs-roth-ira)
+  - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
+  - [Back door Roth.](#back-door-roth)
+  - [The pro-Rata rule.](#the-pro-rata-rule)
 - [Useful topics](#useful-topics)
-    - [No load index funds](#no-load-index-funds)
-    - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
-    - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
-    - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
-    - [529s](#529s)
-    - [Unexpected expenses](#unexpected-expenses)
+  - [No load index funds](#no-load-index-funds)
+  - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
+  - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
+  - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
+  - [529s](#529s)
+  - [Unexpected expenses](#unexpected-expenses)
 - [Philosophy](#philosophy)
-    - [The point of money](#the-point-of-money)
-        - [What would you do for less money?](#what-would-you-do-for-less-money)
-        - [Making more vs spending more](#making-more-vs-spending-more)
-    - [Believing the market only goes up](#believing-the-market-only-goes-up)
-    - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
-    - [Timing the markets](#timing-the-markets)
+  - [The point of money](#the-point-of-money)
+    - [What would you do for less money?](#what-would-you-do-for-less-money)
+    - [Making more vs spending more](#making-more-vs-spending-more)
+  - [Believing the market only goes up](#believing-the-market-only-goes-up)
+  - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
+  - [Timing the markets](#timing-the-markets)
+  - [Stock options](#stock-options)
+    - [Buy a Put Option](#buy-a-put-option)
+    - [Buy a Call Option](#buy-a-call-option)
+    - [Uncovered vs Covered Calls](#uncovered-vs-covered-calls)
+    - [Selling early](#selling-early)
+- [Other questions](#other-questions)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -163,3 +169,52 @@ The correct strategy is buying no load broad spectrum index funds.
 Remember:
 
 > Time in market beats timing the market.
+
+### Stock options
+
+Confusing concept, let me take notes. Assume today a stock is 100$, and your options are for 30 days.
+
+#### Buy a Put Option
+
+Allow you to "sell at a particular price".  You spend a low amount of money to be able to sell at a price. This protects you from a price drop.
+
+Imagine you buy a put for 1$, for a strike price of 100$.
+
+If the stock goes to 90$ in 30 days, you can "exercise the put" and sell the stock for 100$, making you 10$, for a price of 1$, **netting you 9$**.
+
+If the stock goes up to 110$, you don't want to sell at 100$ (you'd lose 10$), so you let the put expire. This lets you ensure you won't lose any money (recall the option was at the strike price) for 1$
+
+NOTE: You don't need to own the stock to be able to make money in a put, in our example where the stock drops to 90$, you'd buy the stock at 90 for market price, and sell it for 100$, again netting 10$
+
+#### Buy a Call Option
+
+You guarantee to "buy at a particular price".  You will be given a low amount of money to guarantee you'll buy at a particular price. This lets you make money if a stock rises.
+
+Imagine you sell a put for 1$, for a strike price of 100$.
+
+If the stock goes to 90$ in 30 days, the buyer will "exercise the put", and you'll pay  10$, for a price of 1$, **costing you 9$**.
+
+If the stock goes up to 110$, the buyer don't want to sell you the stock at 100$ (they'd lose 10$), so they let the put expire. This lets you make extra money:  10$ from stock appreciation and 1$ from selling the put, **netting you 11$**
+
+#### Uncovered vs Covered Calls
+
+As with a put option, you don't need to own the stock, however this can cost you a lot of money.  Imagine you bought a call option for 100$, but the stock drops to 10, at this point you need to buy the stock for 10$, and then sell it for 100$, when this happens you'll lose 90$, and gain 1$, giving a net loss of 89$.
+
+
+
+If you don't own the stock on which you have a buy option, you have an uncovered position, e.g. you may have to pay infinite money to cover the buy.
+
+which is very dangerous. You can use this with a covered position if you own the stock, often the case when you have un vested shares
+
+#### Selling early
+
+You don't need hold a put or call option
+
+
+
+##  Other questions
+
+- How long should I hold my RSUs before selling?
+- If I have a pile of cash from selling RSUs, do I invest immediately or dollar cost average?  -
+- Should I hold any bonds?
+- Where should I keep my emergency fund and how much?
