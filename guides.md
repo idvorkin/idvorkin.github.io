@@ -105,6 +105,7 @@ Your health is your most valuable asset. It's so easy to ignore your
 
 - [A guide to physical health](/physical-health)
 - [Using tech gadgets to help](/tech-health-toys)
+- [Real world products I use](/td/notes/irl#physical-health)
 
 ### Financial Health
 
@@ -117,8 +118,6 @@ Your health is your most valuable asset. It's so easy to ignore your
 
 #### Being coached
 - [Getting Coached](/coach)
-
-
 
 ## Life Events
 
