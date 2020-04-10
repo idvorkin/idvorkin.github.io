@@ -1,6 +1,4 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="{{ site.url }}/assets/js/vendor/md-toc.js"></script>
-<script src="{{ site.url }}/assets/js/vendor/copied_from_hackmd_extras.js"></script>
 <script src="//s3.amazonaws.com/idvorkin/laphs.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript for bootstrap-->
@@ -17,47 +15,8 @@
 <!-- https://craig.is/killing/mice -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>
 
-<script>
-  function ForceShowRightSideBar() {
-    let toc = $("#right-sidebar")
-    let mainContent = $("#main-content")
-    toc.removeClass()
-    toc.addClass("col-4 pl-0")
-
-    mainContent.removeClass()
-    mainContent.addClass("col-8 pr-0")
-
-    // Hide DropUp
-    tocDropUp = $("#id-ui-toc-dropdown")
-    tocDropUp.removeClass()
-    tocDropUp.addClass("d-none")
-  }
-  Mousetrap.bind('s', e => {
-    console.log("search");
-    location.href = "/"
-  });
-  Mousetrap.bind('l', e => ForceShowRightSideBar());
-
-  Mousetrap.bind('t', e => {
-    toc = $("#id-ui-toc-dropdown")
-    toc.css("position", "fixed")
-    toc.css("top", "10px")
-    toc.css("right", "10px")
-  });
-
-  let shortcutHelp = `
-Keyboard Shortcuts: 
-  s - search
-  l - latch sidebar
-  t - toc to top
-  `
-  Mousetrap.bind('?', e => alert(shortcutHelp));
-
-  // NOTE: This should really be in post.md
-  generateToc("ui-toc", showPinToc = true);
-  generateToc("ui-toc-affix", showPinToc = false);
-</script>
-
+<script src="{{ site.url }}/assets/js/vendor/md-toc.js"></script>
+<script src="{{ site.url }}/assets/js/main.js"></script>
 
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
