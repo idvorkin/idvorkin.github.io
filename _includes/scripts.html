@@ -5,16 +5,10 @@
 
 <!-- Latest compiled and minified JavaScript for bootstrap-->
 
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-  crossorigin="anonymous"
-></script>
-<script
-  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-  crossorigin="anonymous"
-></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <script>
   LivePhotos.initialize();
@@ -24,28 +18,54 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>
 
 <script>
+  function ForceShowRightSideBar() {
+    let toc = $("#right-sidebar")
+    let mainContent = $("#main-content")
+    toc.removeClass()
+    toc.addClass("col-4")
+    mainContent.removeClass()
+    mainContent.addClass("col-8")
+
+    // Hide DropUp
+    tocDropUp = $("#id-ui-toc-dropdown")
+    tocDropUp.removeClass()
+    tocDropUp.addClass("d-none")
+  }
   Mousetrap.bind('s', e => {
     console.log("search");
-    location.href="/"
+    location.href = "/"
   });
+  Mousetrap.bind('l', e => ForceShowRightSideBar());
+
   Mousetrap.bind('t', e => {
     toc = $("#id-ui-toc-dropdown")
     toc.css("position", "fixed")
-    toc.css("top","10px")
-    toc.css("right","10px")
+    toc.css("top", "10px")
+    toc.css("right", "10px")
   });
-  Mousetrap.bind('?', e =>  alert('Keyboard Shortcuts: \n s - search\n t - toc to top'));
+
+  let shortcutHelp = `
+Keyboard Shortcuts: 
+  s - search
+  l - latch sidebar
+  t - toc to top
+  `
+  Mousetrap.bind('?', e => alert(shortcutHelp));
+
+  // NOTE: This should really be in post.md
+  generateToc("ui-toc", showPinToc = true);
+  generateToc("ui-toc-affix", showPinToc = false);
 </script>
 
 
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
-  (function(i, s, o, g, r, a, m) {
+  (function (i, s, o, g, r, a, m) {
     i["GoogleAnalyticsObject"] = r;
     (i[r] =
       i[r] ||
-      function() {
+      function () {
         (i[r].q = i[r].q || []).push(arguments);
       }),
       (i[r].l = 1 * new Date());

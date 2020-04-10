@@ -13,7 +13,7 @@ function checkExpandToggle() {
 }
 
 // toc
-function generateToc(id = "toc-slot") {
+function generateToc(id, showPinToc) {
   const target = $(`#${id}`);
   target.html("");
   /* eslint-disable no-unused-vars */
@@ -33,6 +33,7 @@ function generateToc(id = "toc-slot") {
   const toggle = $('<a class="expand-toggle" href="#">Expand all</a>');
   const backtotop = $('<a class="back-to-top" href="#">Back to top</a>');
   const gotobottom = $('<a class="go-to-bottom" href="#">Go to bottom</a>');
+  const forceSideBar = $('<a class="go-to-bottom" href="#">Pin ToC</a>');
   checkExpandToggle();
   toggle.click(e => {
     e.preventDefault();
@@ -56,8 +57,12 @@ function generateToc(id = "toc-slot") {
     }
     // removeHash();
   });
+  forceSideBar.click(e => ForceShowRightSideBar())
   // .append(toggle) remove toggle for now.
   tocMenu.append(backtotop).append(gotobottom);
+  if (showPinToc) {
+    tocMenu.append(forceSideBar)
+  }
   target.append(tocMenu);
   console.log(`toc generate for ${id}`);
 }
@@ -72,5 +77,3 @@ function scrollToBottom() {
 
 window.scrollToTop = scrollToTop;
 window.scrollToBottom = scrollToBottom;
-generateToc("ui-toc");
-generateToc("ui-toc-affix");
