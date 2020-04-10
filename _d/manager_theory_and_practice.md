@@ -328,7 +328,7 @@ Here you're getting people are at a career level and are happy with a lot of wha
 
 #### Service split and shared component
 
-#### Need SDE-III to do work that was below him.
+  #### Need SDE-III to do work that was below him.
 
 #### Architect won't let us launch without committing to next release.
 

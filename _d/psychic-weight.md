@@ -26,17 +26,17 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
   - [Ruminating](#ruminating)
   - [Scarring](#scarring)
 - [Antidotes](#antidotes)
-  - [Seperate Pain and suffering](#seperate-pain-and-suffering)
+  - [Separate Pain and suffering](#separate-pain-and-suffering)
   - [GTD (Getting Things Done)](#gtd-getting-things-done)
   - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
   - [Talk it through](#talk-it-through)
   - [Meditation](#meditation)
   - [This too shall pass](#this-too-shall-pass)
-- [False Avoidance Startegies](#false-avoidance-startegies)
+- [False Avoidance Strategies](#false-avoidance-strategies)
   - [Addiction](#addiction)
   - [Resistance](#resistance)
 - [Examples from my own life](#examples-from-my-own-life)
-  - [Bathroom remodel feeling "f@#\$" over](#bathroom-remodel-feeling-f-over)
+  - [Bathroom remodel feeling "f@#\$" over](#bathroom-remodel-feeling-%22f%22-over)
   - [Insecurity around money](#insecurity-around-money)
   - [Needing to finish a self evaluation](#needing-to-finish-a-self-evaluation)
   - [Needing to finish a document at work](#needing-to-finish-a-document-at-work)
@@ -68,7 +68,7 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 
 ## Antidotes
 
-### Seperate Pain and suffering
+### Separate Pain and suffering
 
 ### GTD (Getting Things Done)
 
@@ -80,7 +80,7 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 
 ### This too shall pass
 
-## False Avoidance Startegies
+## False Avoidance Strategies
 
 ### Addiction
 
@@ -112,4 +112,4 @@ See [pride](/pride)
 
 As usual, the 7 habits helps
 Eat the frog
-Habits make phycic weight get handled.
+Habits make psychic weight get handled.

@@ -30,7 +30,7 @@ function generateToc(id, showPinToc) {
     target.html("");
   }
   const tocMenu = $('<div class="toc-menu"></div');
-  const toggle = $('<a class="expand-toggle" href="#">Expand all</a>');
+  const toggle = $('<a class="expand-toggle" href="#">Collapse all</a>');
   const backtotop = $('<a class="back-to-top" href="#">Back to top</a>');
   const gotobottom = $('<a class="go-to-bottom" href="#">Go to bottom</a>');
   const forceSideBar = $('<a class="go-to-bottom" href="#">Pin ToC</a>');
@@ -58,8 +58,7 @@ function generateToc(id, showPinToc) {
     // removeHash();
   });
   forceSideBar.click(e => ForceShowRightSideBar())
-  // .append(toggle) remove toggle for now.
-  tocMenu.append(backtotop).append(gotobottom);
+  tocMenu.append(toggle).append(backtotop).append(gotobottom);
   if (showPinToc) {
     tocMenu.append(forceSideBar)
   }
