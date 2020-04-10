@@ -12,6 +12,24 @@ function checkExpandToggle() {
     }
 }
 
+
+function SwapProdAndTest() {
+    /* Find page title. */
+    const url = window.location.href;
+    const prodPrefix = "https://idvork.in"
+    const testPrefix = "http://localhost:4000"
+    const isProd = url.includes(prodPrefix)
+    let newURL = url
+    if (isProd) {
+        newURL = url.replace(prodPrefix, testPrefix)
+    }
+    else {
+        newURL = url.replace(testPrefix, prodPrefix)
+    }
+
+    window.location = newURL
+}
+
 // <!-- Copied from hackmd-extras.js -->
 function generateToc(id, showPinToc) {
     const target = $(`#${id}`);
@@ -71,24 +89,17 @@ function generateToc(id, showPinToc) {
         tocDropUp.removeClass()
         tocDropUp.addClass("d-none")
     }
-    Mousetrap.bind('s', e => {
-        console.log("search");
-        location.href = "/"
-    });
-    Mousetrap.bind('l', e => ForceShowRightSideBar());
-
-    Mousetrap.bind('t', e => {
-        toc = $("#id-ui-toc-dropdown")
-        toc.css("position", "fixed")
-        toc.css("top", "10px")
-        toc.css("right", "10px")
-    });
+    Mousetrap.bind('s', e => location.href = "/");
+    Mousetrap.bind('t', e => ForceShowRightSideBar());
+    Mousetrap.bind('p', e => SwapProdAndTest());
+    Mousetrap.bind('z', e => location.href = "/random");
 
     let shortcutHelp = `
 Keyboard Shortcuts: 
   s - search
-  l - latch sidebar
-  t - toc to top
+  t - force sidebar
+  p - swap prod and test
+  z - surprise me
   `
     Mousetrap.bind('?', e => alert(shortcutHelp));
 
@@ -96,4 +107,3 @@ Keyboard Shortcuts:
 // NOTE: This should really be in post.md
 generateToc("ui-toc", showPinToc = true);
 generateToc("ui-toc-affix", showPinToc = false);
-console.log(`toc generate for ${id}`);
