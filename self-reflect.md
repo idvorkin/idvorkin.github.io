@@ -17,30 +17,17 @@ I like the idea of providing self reflection tools via prompt questions. Story b
 
 
 <div class="card">
-  <div class="card-header" style="background-image: url();">On the spot coach</div>
+  <div class="card-header" style="background-image: url();">Ten minute coaching</div>
   <div class="card-body">
     <div class="card-text">
       What's on your mind?
     </div>
-  <svg viewBox="0 0 100 15" xmlns="http://www.w3.org/2000/svg" style="border:solid;color=gray">
-    <line x1="0" x2="100" y1="3" y2="3" stroke="black" stroke-width="0.1" />
-    <line x1="0" x2="100" y1="6" y2="6" stroke="black" stroke-width="0.1"/>
-    <line x1="0" x2="100" y1="9" y2="9" stroke="black" stroke-width="0.1"/>
-    <line x1="0" x2="100" y1="12" y2="12" stroke="black" stroke-width="0.1"/>
-    <!-- If you do not specify the stroke
-        color the line will not be visible -->
-  </svg>
+    <img style="border:1px solid #ced4da;color=gray" src="/images/horiz-lines.svg"/>
     <div class="card-text">
       What else?
-<!-- min-x, min-y, width height-->
-<svg viewBox="0 0 100 15" xmlns="http://www.w3.org/2000/svg" style="border:solid;color=gray">
-  <line x1="0" x2="100" y1="3" y2="3" stroke="black" stroke-width="0.1" />
-  <line x1="0" x2="100" y1="6" y2="6" stroke="black" stroke-width="0.1"/>
-  <line x1="0" x2="100" y1="9" y2="9" stroke="black" stroke-width="0.1"/>
-  <line x1="0" x2="100" y1="12" y2="12" stroke="black" stroke-width="0.1"/>
-  <!-- If you do not specify the stroke
-       color the line will not be visible -->
-</svg>
+    <div />
+    <img style="border:1px solid #ced4da;color=gray" src="/images/horiz-lines.svg"/>
+    <div class="card-text">
       What's real challenge for you here?
     </div>
     <input type="text" class="form-control" 
