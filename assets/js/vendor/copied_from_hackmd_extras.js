@@ -23,7 +23,6 @@ function generateToc(id, showPinToc) {
     class: "toc",
     ulClass: "nav",
     targetId: id
-    //    process: getHeaderContent
   });
   /* eslint-enable no-unused-vars */
   if (target.text() === "undefined") {
@@ -31,8 +30,8 @@ function generateToc(id, showPinToc) {
   }
   const tocMenu = $('<div class="toc-menu"></div');
   const toggle = $('<a class="expand-toggle" href="#">Collapse all</a>');
-  const backtotop = $('<a class="back-to-top" href="#">Back to top</a>');
-  const gotobottom = $('<a class="go-to-bottom" href="#">Go to bottom</a>');
+  const backToTop = $('<a class="back-to-top" href="#">Back to top</a>');
+  const gotoBottom = $('<a class="go-to-bottom" href="#">Go to bottom</a>');
   const forceSideBar = $('<a class="go-to-bottom" href="#">Pin ToC</a>');
   checkExpandToggle();
   toggle.click(e => {
@@ -41,38 +40,21 @@ function generateToc(id, showPinToc) {
     tocExpand = !tocExpand;
     checkExpandToggle();
   });
-  backtotop.click(e => {
+  backToTop.click(e => {
     e.preventDefault();
     e.stopPropagation();
-    if (window.scrollToTop) {
-      window.scrollToTop();
-    }
-    // removeHash();
+    window.scrollTo(0, 0)
   });
-  gotobottom.click(e => {
+  gotoBottom.click(e => {
     e.preventDefault();
     e.stopPropagation();
-    if (window.scrollToBottom) {
-      window.scrollToBottom();
-    }
-    // removeHash();
+    window.scrollTo(0, document.body.scrollHeight)
   });
   forceSideBar.click(e => ForceShowRightSideBar())
-  tocMenu.append(toggle).append(backtotop).append(gotobottom);
+  tocMenu.append(toggle).append(backToTop).append(gotoBottom);
   if (showPinToc) {
     tocMenu.append(forceSideBar)
   }
   target.append(tocMenu);
   console.log(`toc generate for ${id}`);
 }
-
-function scrollToTop() {
-  window.scrollTo(0, 0);
-}
-
-function scrollToBottom() {
-  window.scrollTo(0, document.body.scrollHeight);
-}
-
-window.scrollToTop = scrollToTop;
-window.scrollToBottom = scrollToBottom;
