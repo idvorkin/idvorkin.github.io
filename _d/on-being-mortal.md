@@ -19,18 +19,18 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 <!-- vim-markdown-toc GFM -->
 
 - [The book](#the-book)
-    - [Introduction](#introduction)
-    - [The Independent Self](#the-independent-self)
-    - [Things Fall Apart](#things-fall-apart)
-    - [Dependence](#dependence)
-    - [Assistance](#assistance)
-    - [A Better Life](#a-better-life)
-    - [Letting Go](#letting-go)
-    - [Hard Conversations](#hard-conversations)
-    - [Courage](#courage)
+  - [Introduction](#introduction)
+  - [The Independent Self](#the-independent-self)
+  - [Things Fall Apart](#things-fall-apart)
+  - [Dependence](#dependence)
+  - [Assistance](#assistance)
+  - [A Better Life](#a-better-life)
+  - [Letting Go](#letting-go)
+  - [Hard Conversations](#hard-conversations)
+  - [Courage](#courage)
 - [Statistics](#statistics)
-    - [Death Rates by Cause](#death-rates-by-cause)
-    - [Probabily of death given current age](#probabily-of-death-given-current-age)
+  - [Death Rates by Cause](#death-rates-by-cause)
+  - [Probabily of death given current age](#probabily-of-death-given-current-age)
 - [Quotes](#quotes)
 - [Other resources](#other-resources)
 
@@ -106,5 +106,5 @@ Death://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/68_07/Table01.x
 
 ## Other resources
 
-The prophet [on death](http://www.katsandogz.com/gibran/ondeath.php)
-Very pretty [graphs](https://ourworldindata.org/births-and-deaths)
+- The prophet [on death](http://www.katsandogz.com/gibran/ondeath.php)
+- [Mortality Infographics](https://ourworldindata.org/births-and-deaths)

@@ -11,8 +11,6 @@ author: "Igor Dvorkin"
 Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it of, and getting now relief regardless of when you sit or sleep. Now imagine that's not a physical weight, but instead a mental weight, a psyhcic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.
 
 <!-- prettier-ignore-start -->
-<!-- prettier-ignore-end -->
-
 <!-- vim-markdown-toc GFM -->
 
 - [Types of psychic weight](#types-of-psychic-weight)
@@ -45,6 +43,7 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 - [Useful thoughts.](#useful-thoughts)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## Types of psychic weight
 
