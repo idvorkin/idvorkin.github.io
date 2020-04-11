@@ -18,21 +18,21 @@ There are three paths - remote development, local development, and hybrid. For a
 <!-- vim-markdown-toc GFM -->
 
 - [Remote Development - Blink](#remote-development---blink)
-  - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
+    - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
 - [Local Development - iSh, iVIM, Working Copy, etc](#local-development---ish-ivim-working-copy-etc)
-  - [Run Linux - iSH](#run-linux---ish)
-  - [Run git - Working copy](#run-git---working-copy)
-  - [Run Vim - iVIM](#run-vim---ivim)
-  - [Run python - Pythonista](#run-python---pythonista)
-  - [Run Jupyter - Carnets](#run-jupyter---carnets)
-  - [Edit markdown](#edit-markdown)
+    - [Run Linux - iSH](#run-linux---ish)
+    - [Run git - Working copy](#run-git---working-copy)
+    - [Run Vim - iVIM](#run-vim---ivim)
+    - [Run python - Pythonista](#run-python---pythonista)
+    - [Run Jupyter - Carnets](#run-jupyter---carnets)
+    - [Edit markdown](#edit-markdown)
 - [Hybrid development - Consistency](#hybrid-development---consistency)
 - [The external keyboard.](#the-external-keyboard)
-  - [The keyboard I use](#the-keyboard-i-use)
-  - [The iPad stand I use](#the-ipad-stand-i-use)
-  - [Caps to Control](#caps-to-control)
-  - [Back tick to escape.](#back-tick-to-escape)
-  - [Carrying bags](#carrying-bags)
+    - [The keyboard I use](#the-keyboard-i-use)
+    - [The iPad stand I use](#the-ipad-stand-i-use)
+    - [Caps to Control](#caps-to-control)
+    - [Back tick to escape.](#back-tick-to-escape)
+    - [Carrying bags](#carrying-bags)
 - [Related links](#related-links)
 
 <!-- vim-markdown-toc -->
@@ -180,7 +180,7 @@ The keyboard I use has backtick where escape should be. In VIM this is super pai
 
 Slightly off topic, but if you made it this far, you probably care about small bags as well.
 
-It's taken me several tries, but [I've concluded](/notes/irl.md#work-bag) I like the smallest bag possible. I use a 13" macbook pro laptop and an iPad Pro 10" and this is the perfect bag for me:
+It's taken me several tries, but [I've concluded](notes/irl#work-bag) I like the smallest bag possible. I use a 13" macbook pro laptop and an iPad Pro 10" and this is the perfect bag for me:
 
 https://www.amazon.com/gp/product/B07WNPPF72
 

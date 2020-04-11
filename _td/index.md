@@ -51,7 +51,6 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [Typescript](#typescript)
 - [Apple](#apple)
 - [Home Automation](#home-automation)
-- [Powershell](#powershell)
 - [Text manipulation tools](#text-manipulation-tools)
   - [jq](#jq)
 - [Cool shell tools](#cool-shell-tools)
@@ -59,6 +58,11 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [Azure One Liners](#azure-one-liners)
   - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
 - [git](#git)
+  - [Diff-So-Fancy](#diff-so-fancy)
+  - [Git Stats](#git-stats)
+  - [Tig](#tig)
+  - [lazygit](#lazygit)
+  - [fac](#fac)
 - [GitHub](#github)
 - [SSH](#ssh)
 - [TMUX](#tmux)
@@ -66,9 +70,13 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [App Launchers](#app-launchers)
 - [Chrome extensions](#chrome-extensions)
 - [Web tools (http)](#web-tools-http)
-  - [http-prompt](#http-prompt)
+  - [wuzz](#wuzz)
+  - [httplab](#httplab)
   - [httpie](#httpie)
+  - [httpprompt](#httpprompt)
   - [Link Checkers](#link-checkers)
+  - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
+  - [w3m - Text based web browser](#w3m---text-based-web-browser)
 - [Video Manipulation Tools](#video-manipulation-tools)
 - [Linters and formatters](#linters-and-formatters)
 - [Switching between Unix and DOS file ending](#switching-between-unix-and-dos-file-ending)
@@ -127,12 +135,12 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 ### Apple
 
 - Copy files **without** iTunes - [CopyTrans Manager](https://www.copytrans.net/copytransmanager/)
+- Tips and tricks for [iOS](https://idvork.in/td/notes/ios)
+- How to be an [iPad nomad](https://idvork.in/td/notes/ios-nomad)
 
 ### Home Automation
 
 - Bridge from HomeKit to Wink - [Homebridge-wink3](https://github.com/sibartlett/homebridge-wink3)
-
-### Powershell
 
 ### Text manipulation tools
 
@@ -171,9 +179,7 @@ Decent blog posts:
 
     https://remysharp.com/2018/08/23/cli-improved
 
-- Tig - TUI git like git GUI/gitk (Try tig status)
-- Mosh - A better ssh
-- w3m - Text based web browser
+- Mosh - A better ssh (I no longer recommend)
 - fzf - Fuzzy file finder (Try C-R and C-T)
 - Rg - RipGrep (like ag)
 - [linuxbrew](https://linuxbrew.sh/) - Brew for Linux
@@ -213,11 +219,27 @@ Find when text is [deleted](https://stackoverflow.com/questions/12591247/find-wh
 git log -c -S'missingtext' /path/to/file
 ```
 
+#### Diff-So-Fancy
+
 [Diff so fancy](https://github.com/so-fancy/diff-so-fancy) - a very nice diff
 
 My original [git tricks](https://ig2600.blogspot.com/2014/10/cool-tools-git-helpers.html) from 2014 :)
 
+#### Git Stats
+
 [Git stats](https://github.com/arzzen/git-quick-stats)
+
+#### Tig
+
+The TUI clone of git gui - my day to day [git interface](https://jonas.github.io/tig/).
+
+#### lazygit
+
+Alternate [TUI to tig](https://github.com/jesseduffield/lazygit)
+
+#### fac
+
+TUI (merge tool)[https://github.com/mkchoi212/fac]
 
 ### GitHub
 
@@ -327,17 +349,25 @@ zsh path append
 
 ### Web tools (http)
 
-#### http-prompt
+#### wuzz
 
-An interactive [http prompt](https://http-prompt.com/)
+TUI http [debugger](https://github.com/asciimoo/wuzz)
+
+#### httplab
+
+A TUI [http server](https://github.com/gchaincl/httplab) - The oppositve of wuzz.
 
 #### httpie
 
-httpie is like wget and curl, but easier to use.
+[httpie](https://httpie.org/) is like wget and curl, but easier to use.
 
 Here's an example of sending content to a web hook which would send a message to chime. Notice -pHBhb prints request response, and Content is a JSON field.
 
     http -pHBhb POST https://hooks.chime.aws/incomingwebhooks/botaddress -- Content=We love PMs
+
+#### httpprompt
+
+Graphical httpie with [tab completion](https://github.com/eliangcs/http-prompt). It's actually built on httpie
 
 #### Link Checkers
 
@@ -346,6 +376,18 @@ You'd think there would be a slew of these, but all the ones I tried weren't gre
 Using BLC I crawl my website using (-r recurse ; -o group output; -e skip external):
 
         blc https://idvork.in/d -roe
+
+#### brow.sh - Text based web browser
+
+This looks [pretty cool](https://www.brow.sh/). I had to run it in a container:
+
+    docker run --rm -it browsh/browsh
+
+The keybindings are desktop-esk, which is too bad as they conflict with my terminal bindings. If you try it C-Q gets you out of it, can also run extensions, so I bet you could run vimium in there. Although, your'e going a little crazy at this point
+
+#### w3m - Text based web browser
+
+A text based browser [better then lynx](http://w3m.sourceforge.net/). But,
 
 ### Video Manipulation Tools
 
