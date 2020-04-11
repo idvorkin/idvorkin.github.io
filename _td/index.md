@@ -11,29 +11,29 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
 ## Projects
 
 - Major Research Areas and Musing
-  - [Cloud first applications](cloud-first-applications.md)
-  - [Machine Learning](machine-learning.md)
-  - [Security](better-security-design.md)
-  - [Data Systems](data-systems.md)
-  - [In Real Life](irl.md)
-  - [Design and Architecture](design.md)
-  - [How to be an iOS only developer](ios-nomad.md)
-  - [Hacking the web for fun and profit](hack-web.md)
+  - [Cloud first applications](cloud-first-applications)
+  - [Machine Learning](machine-learning)
+  - [Security](better-security-design)
+  - [Data Systems](data-systems)
+  - [In Real Life](irl)
+  - [Design and Architecture](design)
+  - [How to be an iOS only developer](ios-nomad)
+  - [Hacking the web for fun and profit](hack-web)
 - Minor Tips
-  - [Time off 2020](time-off-3-2020.md)
-  - [VLC Player](vlc_player.md)
-  - [Pandas](pandas-tutorial.md)
-  - [iOS Usage](ios.md)
-  - [Mosh](mosh.md)
-  - [USB Tech](usbtech.md)
-  - [Visual Vocabulary](visual-vocabulary.md)
+  - [Time off 2020](time-off-3-2020)
+  - [VLC Player](vlc_player)
+  - [Pandas](pandas-tutorial)
+  - [iOS Usage](ios)
+  - [Mosh](mosh)
+  - [USB Tech](usbtech)
+  - [Visual Vocabulary](visual-vocabulary)
 - Complete Projects
-  - [Ring Video Downloader](ring-video-download.md)
-  - [Extract message history on OSX](dump_imessage_history.md)
+  - [Ring Video Downloader](ring-video-download)
+  - [Extract message history on OSX](dump_imessage_history)
 - In Progress Projects
-  - [Deploy a private web site](private_web_site.md)
-  - [Windows Virtual Desktop](virtual-desktops.md)
-  - [Alexa Skill](alexa-skill.md)
+  - [Deploy a private web site](private_web_site)
+  - [Windows Virtual Desktop](virtual-desktops)
+  - [Alexa Skill](alexa-skill)
   - [ManageMe](https://github.com/idvorkin/manage-me)
 
 ## Awesome Lists
@@ -135,8 +135,8 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 ### Apple
 
 - Copy files **without** iTunes - [CopyTrans Manager](https://www.copytrans.net/copytransmanager/)
-- Tips and tricks for [iOS](ios.md)
-- How to be an [iPad nomad](ios-nomad.md)
+- Tips and tricks for [iOS](ios)
+- How to be an [iPad nomad](ios-nomad)
 
 ### Home Automation
 
@@ -196,7 +196,7 @@ Decent blog posts:
 - Rant - a cool c# human [language generator](https://berkin.me/rant/)
 - Rhymebrain -
 - Tranquil
-- [Sentiment Analysis](sentiment_analysis.md)
+- [Sentiment Analysis](sentiment_analysis)
 
 ### Azure One Liners
 
@@ -547,4 +547,4 @@ _(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to
 
 ### Other Resources
 
-Good list of [tools](https://github.com/Kikobeats/awesome-cli/blob/master/README.md)
+Good list of [tools](https://github.com/Kikobeats/awesome-cli/blob/master/README)

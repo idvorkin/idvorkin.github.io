@@ -128,7 +128,7 @@ https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180
 
 ### Minecraft
 
-See detailed [notes](minecraft.md)
+See detailed [notes](minecraft)
 
 #### ☑ Bedrock Server
 
