@@ -78,6 +78,10 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
   - [Why is management attractive to you?](#why-is-management-attractive-to-you)
   - [What are your thoughts on managers memorizing these answers for interviews.](#what-are-your-thoughts-on-managers-memorizing-these-answers-for-interviews)
 - [Part 9: Other resources](#part-9-other-resources)
+  - [Great Videos](#great-videos)
+  - [Great Posts and Blogs](#great-posts-and-blogs)
+  - [Great books](#great-books)
+  - [My aspirations as a manager](#my-aspirations-as-a-manager)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -606,11 +610,26 @@ Good interviewees prepare as much as possible, thinking through their experience
 Good interviewers (and manager interviews better be good) need to be able to differentiate "theoretical knowledge" from "practical experience". They do this with situational questions like  "Tell me a time when", and probing questions like "What happened then? What were the unexpected consequences? When did you have the opposite outcome?".
 
 
-
-
-
-
-
 ## Part 9: Other resources
 
-- A related post which is to be merged, is my aspirations as a [manager](/boss). It has a good collection of related material section there for other resources
+### Great Videos
+
+- [On Coaching](https://youtu.be/oHDq1PcYkT4?t=431)
+- [On making people feeling safe](https://www.youtube.com/watch?v=lmyZMtPVodo)
+
+### Great Posts and Blogs
+
+- [How managers get stuck](https://medium.com/@skamille/how-do-managers-get-stuck-b6ec9ecd1da1)
+- [The managers path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897) - This book feels like it lacks "complete" mental models, but it's the only book of it's kind - so it's the best there is!
+- [Elided Branches](http://www.elidedbranches.com/) - Blog on engineering management.
+- [I.M Wright's Hard Code](https://imwrightshardcode.com) - Engineering Managment from Microsoft, covers most topics.
+
+### Great books
+
+- [Technical Recruiting And Hiring](https://www.holloway.com/g/technical-recruiting-hiring/about)
+- [Igor's general reading list](/books)
+- Lots more coming
+
+### My aspirations as a manager
+
+- A related post which is to be merged, is my aspirations as a [manager](/boss). 
