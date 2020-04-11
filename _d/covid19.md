@@ -165,6 +165,8 @@ It's a waste of your time, and your energy. Remember no one wants your opion.
 
 The data analysis during this defining event has been terrible. However, focusing on the positive, the gives me a chance to see how "good data is presented" and to build some of my own data visualization skills.
 
+Here is [the best](https://ourworldindata.org/coronavirus#growth-in-covid-19-deaths-by-country) visualizer. Its good for may reasons, I should study it in the future.
+
 I've also got some relative data on my [mortality post](/death), however I don't think the problem is mortality, it's the health system being overwhelmed and the economy, neither of which is reported.
 
 ### My personal dashboard
