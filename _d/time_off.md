@@ -15,18 +15,18 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 <!-- vim-markdown-toc GFM -->
 
 - [The phases of time off](#the-phases-of-time-off)
-  - [Vegetation](#vegetation)
-  - [TODO list](#todo-list)
-  - [Professional Development (PD)](#professional-development-pd)
+    - [Vegetation](#vegetation)
+    - [TODO list](#todo-list)
+    - [Professional Development (PD)](#professional-development-pd)
 - [Zooming in on PD](#zooming-in-on-pd)
-  - [Managing family expectations](#managing-family-expectations)
-  - [PD vs Life Balance](#pd-vs-life-balance)
+    - [Managing family expectations](#managing-family-expectations)
+    - [PD vs Life Balance](#pd-vs-life-balance)
 - [Optimizing for happiness](#optimizing-for-happiness)
-  - [Types of happiness: Pleasure, Flow and Identity](#types-of-happiness-pleasure-flow-and-identity)
-  - [The 3 selves](#the-3-selves)
-  - [Peak end rule](#peak-end-rule)
-  - [Moments](#moments)
-  - [Joy on Demand](#joy-on-demand)
+    - [Types of happiness: Pleasure, Flow and Identity](#types-of-happiness-pleasure-flow-and-identity)
+    - [The 3 selves](#the-3-selves)
+    - [Peak end rule](#peak-end-rule)
+    - [Moments](#moments)
+    - [Joy on Demand](#joy-on-demand)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Other Resources](#other-resources)
 
@@ -101,6 +101,6 @@ A great book about how to savor things. I need to summarize seperatly, but it co
 
 ## Examples of how I spent my time off
 
-- [April 2020 - Time between leaving Amazon and Joining Facebook](td/notes/time-off-3-2020)
+- [April 2020 - Time between leaving Amazon and Joining Facebook](td/time-off-3-2020)
 
 ## Other Resources
