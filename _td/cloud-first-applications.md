@@ -179,7 +179,7 @@ Package functionality into a seperately injected application: https://docs.micro
 
 ## Data Systems
 
-Huge topic, see [Data Systems](notes/data-systems).
+Huge topic, see [Data Systems](data-systems).
 
 ## Challenges
 

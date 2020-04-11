@@ -8,6 +8,26 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 # iOS Software engineer nomad howto
 
+<!-- vim-markdown-toc GFM -->
+
+- [Remote Development - Blink](#remote-development---blink)
+  - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
+  - [Run git - Working copy](#run-git---working-copy)
+  - [Run Vim - iVIM](#run-vim---ivim)
+  - [Run python - Pythonista](#run-python---pythonista)
+  - [Run Jupyter - Carnets](#run-jupyter---carnets)
+  - [Edit markdown](#edit-markdown)
+- [Hybrid development - Consistency](#hybrid-development---consistency)
+- [The external keyboard.](#the-external-keyboard)
+  - [The keyboard I use](#the-keyboard-i-use)
+  - [The iPad stand I use](#the-ipad-stand-i-use)
+  - [Caps to Control](#caps-to-control)
+  - [Back tick to escape.](#back-tick-to-escape)
+  - [Carrying bags](#carrying-bags)
+- [Related links](#related-links)
+
+<!-- vim-markdown-toc -->
+
 ### Remote Development - Blink
 
 This is the easy way, but you're going to need a good low latency network.
@@ -61,23 +81,6 @@ This works very well, use the share to and you're done.
 While not apple UI friendly it's supported use the :ifont command, e.g.:
 
     :ifont 0 4
-
-<!-- vim-markdown-toc GFM -->
-
-    - [Run python - Pythonista](#run-python---pythonista)
-    - [Run Jupyter - Carnets](#run-jupyter---carnets)
-    - [Edit markdown](#edit-markdown)
-
-- [Hybrid development - Consistency](#hybrid-development---consistency)
-- [The external keyboard.](#the-external-keyboard)
-  - [The keyboard I use](#the-keyboard-i-use)
-  - [The iPad stand I use](#the-ipad-stand-i-use)
-  - [Caps to Control](#caps-to-control)
-  - [Back tick to escape.](#back-tick-to-escape)
-  - [Carrying bags](#carrying-bags)
-- [Related links](#related-links)
-
-<!-- vim-markdown-toc -->
 
 #### Run python - Pythonista
 

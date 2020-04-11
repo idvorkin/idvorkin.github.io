@@ -174,4 +174,4 @@ Long press W - See supported key strokes (varies per app)
 
 ## Doing development including markdown
 
-Read my post on being an [iPad developer nomad](notes/ios-nomad)
+Read my post on being an [iPad developer nomad](ios-nomad)
