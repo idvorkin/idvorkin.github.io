@@ -8,25 +8,35 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 # iOS Software engineer nomad howto
 
+_Please add comments [here](https://hackmd.io/Z_2EucqOQnaoHq2KxRwlEw)_
+
+So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I'm not sure why you'd want to be such a character, in fact, I'm not sure why I want to be such a character, but I do, and here's how I do it. To be a developer nomad, you better already be a command line wiz. If you're not at an expert at the terminal, vim or Emacs and TMUX - don't even try.
+
+There are three paths - remote development, local development, and hybrid. For all of these you'll need an external keyboard, which I'll also discuss.
+
+<!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Remote Development - Blink](#remote-development---blink)
-  - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
-  - [Run git - Working copy](#run-git---working-copy)
-  - [Run Vim - iVIM](#run-vim---ivim)
-  - [Run python - Pythonista](#run-python---pythonista)
-  - [Run Jupyter - Carnets](#run-jupyter---carnets)
-  - [Edit markdown](#edit-markdown)
+    - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
+- [Local Development - iSh, iVIM, Working Copy, etc](#local-development---ish-ivim-working-copy-etc)
+    - [Run Linux - iSH](#run-linux---ish)
+    - [Run git - Working copy](#run-git---working-copy)
+    - [Run Vim - iVIM](#run-vim---ivim)
+    - [Run python - Pythonista](#run-python---pythonista)
+    - [Run Jupyter - Carnets](#run-jupyter---carnets)
+    - [Edit markdown](#edit-markdown)
 - [Hybrid development - Consistency](#hybrid-development---consistency)
 - [The external keyboard.](#the-external-keyboard)
-  - [The keyboard I use](#the-keyboard-i-use)
-  - [The iPad stand I use](#the-ipad-stand-i-use)
-  - [Caps to Control](#caps-to-control)
-  - [Back tick to escape.](#back-tick-to-escape)
-  - [Carrying bags](#carrying-bags)
+    - [The keyboard I use](#the-keyboard-i-use)
+    - [The iPad stand I use](#the-ipad-stand-i-use)
+    - [Caps to Control](#caps-to-control)
+    - [Back tick to escape.](#back-tick-to-escape)
+    - [Carrying bags](#carrying-bags)
 - [Related links](#related-links)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ### Remote Development - Blink
 
@@ -35,6 +45,43 @@ This is the easy way, but you're going to need a good low latency network.
 First you need a remote box, I use lightsail. For 10\$ a month I've never run out of CPU or disk. Next you need to be able to connect to the box using SSH, and that requires an ssh client. I use [blink](https://blink.sh/) and couldn't be happier. Great product, great support.
 
 #### ssh super powers - port forwarding and TMUX auto-attach.
+
+Because ssh doesn't keep persistent sessions, I use TMUX with an auto reattach script. If you're not doing this, go learn how it's awesome. You should also know about ssh [port forwarding](https://github.com/idvorkin/techdiary#ssh)
+
+My [dot files](https://github.com/idvorkin/settings) should provide some insights on powerful command line tricks. For inspiration, here's what my TMUX sessions look like (press [C-B w](https://github.com/idvorkin/Settings/blob/master/shared/.tmux.conf) to get this view)
+
+```
+(0)   - main: 6 windows (attached)
+(1)   ├>   0: vim* (1 panes) "ip-172-26-8-55"
+(2)   ├>   1: zsh- (1 panes) "ip-172-26-8-55"
+(3)   ├>   2: glances (1 panes) "ip-172-26-8-55"
+(4)   ├> + 3: ntop (2 panes)
+(5)   ├>   7: zsh (1 panes) "ip-172-26-8-55"
+(6)   - servers: 3 windows
+(7)   ├> 0: jekyll blog* (1 panes) "ip-172-26-8-55"
+(8)   ├> 1: techdiary grip- (1 panes) "ip-172-26-8-55"
+(9)   └> 2: jupyter serve (1 panes) "ip-172-26-8-55"
+
+```
+
+(For folks that are considering [MOSH](https://mosh.org/), MOSH has great promise, but the project hasn't been updated in years, and still doesn't support true color. For my needs ssh+TMUX+auto-reconnect is perfect.)
+
+### Local Development - iSh, iVIM, Working Copy, etc
+
+Remote development is perfect, except of course when you have no and or slow network. At this point you need to get creative. Luckily, there has been lots of improvement in this space.
+
+#### Run Linux - iSH
+
+The holy grail. [iSH](https://iSH.app) takes a very impressive approach. And [tbodt](https://github.com/tbodt/) the author of iSH is incredibly cool, I have the utmost respect for his project and his style, and I even have his user name memorized.
+
+iSH Creates an x86 emulated machine (e.g. simulate execution), and run alpine Linux in it. I love this but it has two big gaps. A) Compatibility B) Speed. There are still CPU instructions and system calls that aren't supported so large swaths of applications don't work - E.g. NPM, Rust. B) Because it's emulated it's slow, so I need to use trimmed down versions of all my configurations.
+
+When your software can run iSH, and is fast enough, you're done. However because of the compatibility and speed concerns, you'll often need other solutions to augment iSH. Here are the ones I use
+
+Useful ish tips:
+
+1. Run ssh-keygen then you can ssh into your other machines
+1. You can access clipboard by cat or pipe-in to /dev/clipboard
 
 #### Run git - Working copy
 
@@ -133,7 +180,7 @@ The keyboard I use has backtick where escape should be. In VIM this is super pai
 
 Slightly off topic, but if you made it this far, you probably care about small bags as well.
 
-It's taken me several tries, but [I've concluded](irl.md#work-bag) I like the smallest bag possible. I use a 13" macbook pro laptop and an iPad Pro 10" and this is the perfect bag for me:
+It's taken me several tries, but [I've concluded](https://idvork.in/td/irl.md#work-bag) I like the smallest bag possible. I use a 13" macbook pro laptop and an iPad Pro 10" and this is the perfect bag for me:
 
 https://www.amazon.com/gp/product/B07WNPPF72
 
