@@ -4,7 +4,7 @@ no-render-title: true
 title: VLC Play Notes
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/vlc_player.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/vlc_player.md)_
 
 # VLC Play Notes
 

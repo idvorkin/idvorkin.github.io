@@ -4,7 +4,7 @@ no-render-title: true
 title: Visual Thinking Notes
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/visual-vocabulary.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/visual-vocabulary.md)_
 
 # Visual Thinking Notes
 

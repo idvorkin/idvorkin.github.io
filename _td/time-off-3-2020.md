@@ -4,7 +4,7 @@ no-render-title: true
 title: Adventures March and April 2020
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/time-off-3-2020.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/time-off-3-2020.md)_
 
 # Adventures March and April 2020
 
@@ -128,7 +128,7 @@ https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180
 
 ### Minecraft
 
-See detailed notes @ https://github.com/idvorkin/techdiary/blob/master/notes/minecraft.md
+See detailed [notes](minecraft.md)
 
 #### ☑ Bedrock Server
 
@@ -207,8 +207,7 @@ Too early, waiting for someone to make fine tuning easier/web service
 
 #### ☑ Got my e-bikes
 
-https://github.com/idvorkin/techdiary/blob/master/notes/irl.md#bikes
-
+- Got my ebikes
 - ☐ Get Hydraulic Brakes
 - ☑ Buy a cargo-ebike
 - ☑ Buy another e-bike

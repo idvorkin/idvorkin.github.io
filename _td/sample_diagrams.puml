@@ -1,0 +1,14 @@
+This file contains 2 UML diagrams description.
+
+@startuml
+TechDiary -> PlantUML : Render PUML File
+PlantUML -> PlantUMLProxy: Fetch File 
+PlantUMLProxy -> GitHub : Fetch File
+GitHub -> PlantUMLProxy : File Contents
+PlantUMLProxy -> PlantUML: File Contents
+PlantUML -> TechDiary: PUML File as Image
+@enduml
+
+@startuml
+version
+@enduml

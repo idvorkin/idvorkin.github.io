@@ -4,7 +4,7 @@ no-render-title: true
 title: iOS and iPadOS tips
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/ios.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/ios.md)_
 
 # iOS and iPadOS tips
 
@@ -174,4 +174,4 @@ Long press W - See supported key strokes (varies per app)
 
 ## Doing development including markdown
 
-Read my post on being an [iPad developer nomad](notes/ios-nomad)
+Read my post on being an [iPad developer nomad](notes/ios-nomad.md)

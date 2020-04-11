@@ -4,7 +4,7 @@ no-render-title: true
 title: Mosh
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/mosh.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/mosh.md)_
 
 # Mosh
 

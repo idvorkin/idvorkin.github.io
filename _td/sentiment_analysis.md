@@ -4,7 +4,7 @@ no-render-title: true
 title: Sentiment Analysis and NLP
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/sentiment_analysis.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/sentiment_analysis.md)_
 
 # Sentiment Analysis and NLP
 

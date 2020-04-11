@@ -4,7 +4,7 @@ no-render-title: true
 title: Advertising
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/advertising.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/advertising.md)_
 
 # Advertising
 

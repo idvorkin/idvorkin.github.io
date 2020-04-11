@@ -4,7 +4,7 @@ no-render-title: true
 title: Make linqpad work with redshift.
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/linqpad_from_redshift.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/linqpad_from_redshift.md)_
 
 # Make linqpad work with redshift.
 

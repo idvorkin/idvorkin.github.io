@@ -4,7 +4,7 @@ no-render-title: true
 title: Virtual desktops in Wox
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/virtual-desktops.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/virtual-desktops.md)_
 
 # Virtual desktops in Wox
 

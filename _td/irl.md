@@ -4,7 +4,7 @@ no-render-title: true
 title: In Real Life Diary
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/irl.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/irl.md)_
 
 # In Real Life Diary
 

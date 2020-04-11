@@ -4,7 +4,7 @@ no-render-title: true
 title: Machine learning for regular programmers.
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/machine-learning.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/machine-learning.md)_
 
 # Machine learning for regular programmers.
 

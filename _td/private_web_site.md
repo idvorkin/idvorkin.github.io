@@ -4,7 +4,7 @@ no-render-title: true
 title: Private Web Site
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/private_web_site.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/private_web_site.md)_
 
 # Private Web Site
 

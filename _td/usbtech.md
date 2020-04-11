@@ -4,7 +4,7 @@ no-render-title: true
 title: Usb Tech
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/usbtech.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/usbtech.md)_
 
 # Usb Tech
 

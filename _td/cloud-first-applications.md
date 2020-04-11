@@ -4,7 +4,7 @@ no-render-title: true
 title: Cloud First Applications
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/cloud-first-applications.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/cloud-first-applications.md)_
 
 # Cloud First Applications
 
@@ -179,7 +179,7 @@ Package functionality into a seperately injected application: https://docs.micro
 
 ## Data Systems
 
-Huge topic, see [Data Systems](notes/data-systems).
+Huge topic, see [Data Systems](notes/data-systems.md).
 
 ## Challenges
 

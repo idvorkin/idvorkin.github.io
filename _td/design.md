@@ -4,7 +4,7 @@ no-render-title: true
 title: Design
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/design.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/design.md)_
 
 # Design
 

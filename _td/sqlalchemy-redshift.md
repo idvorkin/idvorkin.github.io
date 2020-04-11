@@ -4,7 +4,7 @@ no-render-title: true
 title: SQL Alchemy with Redshift
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/sqlalchemy-redshift.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/sqlalchemy-redshift.md)_
 
 # SQL Alchemy with Redshift
 

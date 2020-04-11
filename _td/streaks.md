@@ -4,7 +4,7 @@ no-render-title: true
 title: Habit tracking app
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/streaks.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/streaks.md)_
 
 # Habit tracking app
 

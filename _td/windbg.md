@@ -4,7 +4,7 @@ no-render-title: true
 title: WinDBG notes
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/notes/windbg.md)_
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/windbg.md)_
 
 # WinDBG notes
 
