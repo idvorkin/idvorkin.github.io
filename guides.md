@@ -64,7 +64,7 @@ The first step for mortality software is helping you figure out the person you w
 ### Hobbies
 
 -  [My hobby - magic](/magic)
--  What makes a good hobby
+-  [What makes a good hobby](/hobby)
 
 ## Maximize your sanity
 
