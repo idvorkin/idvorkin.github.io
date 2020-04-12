@@ -62,8 +62,9 @@ algolia:
     - "_posts/*bak"
     - "search.html"
     - "index.html"
-    - "all-posts.html"
+    - "all.html"
     - "tags.html"
+    - "tags"
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap", "jekyll-redirect-from"]
 include: [".htaccess"]

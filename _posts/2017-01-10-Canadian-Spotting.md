@@ -6,7 +6,7 @@ tag: "software as a story"
 
 "I bet you the bill that dude by the window is Canadian," I challenged.
 
-_This is part of the [SaaS series](tags/index.html#Software%20as%20a%20Story). Any connection to reality will be strictly denied_
+_This is part of the [SaaS series](tags#Software%20as%20a%20Story). Any connection to reality will be strictly denied_
 
 Sam, my favorite architect, glanced over the top of his menu and nodded his acceptance. Sam was over-confident given I'd lost our last two design debates.
 

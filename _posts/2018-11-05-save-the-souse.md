@@ -8,7 +8,7 @@ tag:
 
 Internships are best approached as a long-term field trip. You should plan to be exposed to new things, spend some time out of your comfort zone, and, by all means – use the buddy system.
 
-_This is part of the [SaaS series](tags/index.html#Software%20as%20a%20Story). Any connection to reality will be strictly denied_
+_This is part of the [SaaS series](tags0as%20a%20Story). Any connection to reality will be strictly denied_
 
 My buddy’s name is Biff.
 
