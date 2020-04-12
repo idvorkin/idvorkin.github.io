@@ -2,8 +2,8 @@
 layout: post
 title: "Sleeping bag sacrifices"
 tag:
-  - "Software as a Story"
-  - "Early Career"
+  - "software as a story"
+  - "early career"
 ---
 
 I started in Windows Azure in 2007. Back then, the name “Azure” wasn't invented, and Azure was still called “Reddog.” I started on the OS team, drawn in by my dream of changing the world, and getting to be Dave Cutler's lackey. I didn't get to work with Cutler, but I still may change the world - now that I’ve learned it’s OK to wake sleeping giants. My giant was named Jay.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Canadian Spotting"
-tag: "Software as a Story"
+tag: "software as a story"
 ---
 
 "I bet you the bill that dude by the window is Canadian," I challenged.

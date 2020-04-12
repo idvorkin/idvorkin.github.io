@@ -6,7 +6,7 @@ comments: true
 
 tags:
   - job-hunt
-  - Early Career
+  - early career
 
 imagefeature: https://www.idvork.in/images/what-i-wish-i-knew.png
 

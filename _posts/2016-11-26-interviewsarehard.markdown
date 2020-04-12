@@ -3,11 +3,14 @@ layout: post
 title: "Be easy on yourself, job hunts are hard"
 date: "2016-11-26 07:27:41 Pacific Standard Time"
 tags:
-    - How Igor Ticks
+    - how igor ticks
     - emotional intelligence
     - job-hunt
 comments: true
 inprogress: true
+redirect:
+    - jobhunt
+    - interviewprep
 ---
 
 I've been hard on myself these last few months as I haven't made a lot of progress on my habits or goals. Reflecting, that shouldn't be a surprise as I've been putting a tonne of energy into my job hunt. Here is a reminder of the effort required, which will aid setting realistic expectations during the job hunt.

@@ -2,7 +2,7 @@
 layout: post
 title: "Why is noone referring my project"
 author: "Igor Dvorkin"
-tag: "Startupville"
+tag: "startupville"
 comments: true
 ---
 

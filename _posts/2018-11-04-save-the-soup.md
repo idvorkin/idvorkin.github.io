@@ -2,8 +2,8 @@
 layout: post
 title: "Save the Soup"
 tag: 
-- "Software as a Story"
-- "Early Career"
+- "software as a story"
+- "early career"
 ---
 
 "Are you insane?" I half shouted at Biff, my college roommate. We had just finished our Operating Systems midterm and were lounging at “The Bomber,” our college pub. Biff suggested we both do our last internship at Microsoft.

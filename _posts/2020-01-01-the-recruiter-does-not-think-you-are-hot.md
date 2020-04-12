@@ -5,8 +5,8 @@ author: "Igor Dvorkin"
 comments: true
 featured: true
 tag:
-  - Software as a Story
-  - Early Career
+  - software as a story
+  - early career
 ---
 
 I've only had one truly unbearable job. It was awful - The code base sucked, the boss had pointed hair, and to top it off I got a terrible review.
