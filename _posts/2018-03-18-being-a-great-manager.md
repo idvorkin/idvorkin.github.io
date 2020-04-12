@@ -243,7 +243,7 @@ As a manager, you'll run into these situations. Each company and team has their 
   - Feed forward interview loops
   - Feedback interviewers
   - Bar raiser, as appropriate
-  - Initial [compensation](/understandingtechcompensation) reasoning.
+  - Initial [compensation](/comp) reasoning.
 - Interviewing best practices - Internal
 - Building culture
 
