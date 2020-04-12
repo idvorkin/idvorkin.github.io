@@ -17,38 +17,39 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
 <!-- vim-markdown-toc GFM -->
 
 - [Don't feed mind monsters, focus on the positive.](#dont-feed-mind-monsters-focus-on-the-positive)
-    - [Media's incentive is scaring you](#medias-incentive-is-scaring-you)
+  - [Media's incentive is scaring you](#medias-incentive-is-scaring-you)
 - [Crisis Porn](#crisis-porn)
-    - [Humanity has prioritize lives over profits](#humanity-has-prioritize-lives-over-profits)
-    - [Bill gates models being a class act.](#bill-gates-models-being-a-class-act)
-    - [Tesla and Dyson making incubators](#tesla-and-dyson-making-incubators)
-    - [3M Refusing to ignore order to stop shipping PPE to other countries](#3m-refusing-to-ignore-order-to-stop-shipping-ppe-to-other-countries)
-    - [Big Tech still pays hourly workers.](#big-tech-still-pays-hourly-workers)
-    - [Zoo Pandas mate for first time](#zoo-pandas-mate-for-first-time)
+  - [Humanity has prioritize lives over profits](#humanity-has-prioritize-lives-over-profits)
+  - [Bill gates models being a class act.](#bill-gates-models-being-a-class-act)
+  - [Tesla and Dyson making incubators](#tesla-and-dyson-making-incubators)
+  - [3M Refusing to ignore order to stop shipping PPE to other countries](#3m-refusing-to-ignore-order-to-stop-shipping-ppe-to-other-countries)
+  - [Big Tech still pays hourly workers.](#big-tech-still-pays-hourly-workers)
+  - [Zoo Pandas mate for first time](#zoo-pandas-mate-for-first-time)
+  - [First Zonkey Born](#first-zonkey-born)
 - [Circle of concern and circle of influence.](#circle-of-concern-and-circle-of-influence)
-    - [Model good behavior](#model-good-behavior)
-    - [Teddy bear brigade](#teddy-bear-brigade)
-    - [Virtual Play dates](#virtual-play-dates)
-    - [Setting up a Minecraft server](#setting-up-a-minecraft-server)
+  - [Model good behavior](#model-good-behavior)
+  - [Teddy bear brigade](#teddy-bear-brigade)
+  - [Virtual Play dates](#virtual-play-dates)
+  - [Setting up a Minecraft server](#setting-up-a-minecraft-server)
 - [Some bizarre consequences](#some-bizarre-consequences)
-    - [Shortages caused by retail arbitrage.](#shortages-caused-by-retail-arbitrage)
-    - [Glut of lobsters](#glut-of-lobsters)
-    - [Prisoners making hand sanitizer.](#prisoners-making-hand-sanitizer)
-    - [Door dash thinks FB is a DDoS since all employees signed in at once.](#door-dash-thinks-fb-is-a-ddos-since-all-employees-signed-in-at-once)
-    - [Expected Tech innovations](#expected-tech-innovations)
-        - [Nose filters](#nose-filters)
-        - [UV blasters](#uv-blasters)
-        - [Gloves that keep you from wiping your eyes](#gloves-that-keep-you-from-wiping-your-eyes)
+  - [Shortages caused by retail arbitrage.](#shortages-caused-by-retail-arbitrage)
+  - [Glut of lobsters](#glut-of-lobsters)
+  - [Prisoners making hand sanitizer.](#prisoners-making-hand-sanitizer)
+  - [Door dash thinks FB is a DDoS since all employees signed in at once.](#door-dash-thinks-fb-is-a-ddos-since-all-employees-signed-in-at-once)
+  - [Expected Tech innovations](#expected-tech-innovations)
+    - [Nose filters](#nose-filters)
+    - [UV blasters](#uv-blasters)
+    - [Gloves that keep you from wiping your eyes](#gloves-that-keep-you-from-wiping-your-eyes)
 - [My optimizations](#my-optimizations)
-    - [Stop watching the news.](#stop-watching-the-news)
-    - [Meet people for virtual coffees](#meet-people-for-virtual-coffees)
-    - [Get a home exercise routine](#get-a-home-exercise-routine)
-    - [Get dedicated electronics for the kids](#get-dedicated-electronics-for-the-kids)
-    - [Figure our remote magic and lighting.](#figure-our-remote-magic-and-lighting)
-    - [Make a schedule when working from home](#make-a-schedule-when-working-from-home)
+  - [Stop watching the news.](#stop-watching-the-news)
+  - [Meet people for virtual coffees](#meet-people-for-virtual-coffees)
+  - [Get a home exercise routine](#get-a-home-exercise-routine)
+  - [Get dedicated electronics for the kids](#get-dedicated-electronics-for-the-kids)
+  - [Figure our remote magic and lighting.](#figure-our-remote-magic-and-lighting)
+  - [Make a schedule when working from home](#make-a-schedule-when-working-from-home)
 - [Data](#data)
-    - [My personal dashboard](#my-personal-dashboard)
-    - [Other good data sources](#other-good-data-sources)
+  - [My personal dashboard](#my-personal-dashboard)
+  - [Other good data sources](#other-good-data-sources)
 - [The best news of all - a dry run of something fatal for the human race.](#the-best-news-of-all---a-dry-run-of-something-fatal-for-the-human-race)
 
 <!-- vim-markdown-toc -->
@@ -110,6 +111,11 @@ But, after more than two months of being alone together, the couple have recentl
 On Monday morning, the pair were seen cuddling more intensely than usual and then finally did what comes naturally, much to the delight of park managers.
 
 “The successful natural mating process today is extremely exciting for all of us, as the chance of pregnancy via natural mating is higher than by artificial insemination,” Michael Boos, executive director for zoological operations and conservation at Ocean Park, noted in a press release.
+
+### First Zonkey Born
+
+OK this has nothing to do with CV-19, but a cross between a [zebra and donkey](https://www.cnn.com/2020/04/11/world/zebra-donkey-zonkey-kenya-trnd/index.html) is wild!
+
 
 ## Circle of concern and circle of influence.
 
