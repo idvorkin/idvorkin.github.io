@@ -235,7 +235,7 @@ As a manager, you'll run into these situations. Each company and team has their 
 ### Coaching for job changes
 
 - Preparing folks for [job hunting stress](/job-hunt-stress)
-- Determining [compensation](/understandingtechcompensation)
+- Determining [compensation](/comp)
 
 ### Hiring and Recruiting
 
@@ -291,7 +291,3 @@ To collect my thoughts, I'm writing a [book of manager](/the-manager-book).
 ### Everything else
 
 Check out the resources in the [book of manager](the-manager-book#part-9-other-resources)
-
-
-
-
