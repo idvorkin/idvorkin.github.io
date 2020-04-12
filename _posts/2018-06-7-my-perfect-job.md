@@ -1,9 +1,6 @@
 ---
 layout: post
-title: "My dream job"
-author: "Igor Dvorkin"
-inprogress: true
-comments: true
+title: "My Dream job"
 redirect_from:
   - "/dream-job"
   - "/perfect-job"

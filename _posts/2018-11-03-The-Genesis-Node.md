@@ -9,6 +9,8 @@ tag: "Software as a Story"
 
 Igor, you know the odds of shipping Reddog on time are slim to none."
 
+_This is part of the [SaaS series](tags/index.html#Software%20as%20a%20Story). Any connection to reality will be strictly denied_
+
 My boss and I nodded our agreement as the director of OS development for Reddog continued.
 
 "Every team is sending a volunteer to the newly formed DevOps team. With an expert from each team, DevOps will be an elite, rapid-response team, able to deal with every type of problem in short order. The budget will be wide open, and the DevOps team is authorized to take any action required - are you the man for this?"

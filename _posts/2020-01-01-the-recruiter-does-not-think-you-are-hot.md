@@ -6,12 +6,15 @@ comments: true
 featured: true
 tag:
   - Software as a Story
-  - job-hunt
+  - Early Career
 ---
 
 I've only had one truly unbearable job. It was awful - The code base sucked, the boss had pointed hair, and to top it off I got a terrible review.
 
+_This is part of the [SaaS series](tags/index.html#Software%20as%20a%20Story). Any connection to reality will be strictly denied_
+
 Let’s rewind. Four months prior I’d just aced a job interview with HappySoft. I nailed the questions, and the job was a nice fit for my career. But, I wasn't ready to sign on the dotted line until I evaluated all my options, namely my next interview with EbolaSoft.
+
 
 My EbolaSoft interview was at 9am and it started off on the wrong foot. The interviewer didn't know the answers to his own questions, and couldn't tell me what I’d be working on. With 15 minutes left in the interview I’d given up on EbolaSoft. At that point the interviewer excused himself and Rene entered the room. Rene was the recruiter for EbolaSoft, and my heart skipped a beat when she smiled at me. As she discussed the company, she twisted a long strand of brown hair around her fingers and I forgot how the interview began.
 

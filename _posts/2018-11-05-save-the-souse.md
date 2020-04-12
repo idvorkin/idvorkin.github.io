@@ -3,7 +3,7 @@ layout: post
 title: "Save the Souse"
 tag:
   - "Software as a Story"
-  - "early career"
+  - "Early Career"
 ---
 
 Internships are best approached as a long-term field trip. You should plan to be exposed to new things, spend some time out of your comfort zone, and, by all means – use the buddy system.
