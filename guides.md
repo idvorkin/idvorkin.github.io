@@ -14,12 +14,12 @@ Satisfaction is our most sustainable source of happiness. To find satisfaction, 
 <!-- vim-markdown-toc GFM -->
 
 - [You are dying](#you-are-dying)
-  - [And want to be happy](#and-want-to-be-happy)
-- [Find your authentic self](#find-your-authentic-self)
-  - [Role Finder](#role-finder)
-  - [Eulogy Writer](#eulogy-writer)
-  - [Goals](#goals)
-  - [Hobbies](#hobbies)
+  - [So strive for Happy](#so-strive-for-happy)
+- [Discover your authentic self](#discover-your-authentic-self)
+  - [Find your roles](#find-your-roles)
+  - [Write your Eulogy](#write-your-eulogy)
+  - [Set your goals](#set-your-goals)
+  - [Enjoy your Hobbies](#enjoy-your-hobbies)
 - [Maximize your sanity](#maximize-your-sanity)
   - [Handling Pride](#handling-pride)
   - [Emotional Intelligence](#emotional-intelligence)
@@ -49,24 +49,22 @@ The first step for mortality software is helping you figure out the person you w
 
 - [On Being Mortal](/death)
 
-### And want to be happy
+### So strive for Happy
 
-- [All about Happy](/happy)
+- [Happiness 101](/happy)
 
+## Discover your authentic self
 
+### Find your roles
 
-## Find your authentic self
-
-### Role Finder
-
-### Eulogy Writer
+### Write your Eulogy
 
 - [My Eulogy](/eulogy)
 
-### Goals
+### Set your goals
 - [Goal Settings](/goals)
 
-### Hobbies
+### Enjoy your Hobbies
 
 -  [My hobby - magic](/magic)
 -  [What makes a good hobby](/hobby)
