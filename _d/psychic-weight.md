@@ -53,6 +53,8 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 
 ### Mind Monsters
 
+[Mind monsters](/mind-monsters)
+
 ### Triggers
 
 ### Emotional First Aid

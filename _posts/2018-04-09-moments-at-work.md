@@ -3,8 +3,7 @@ layout: post
 title: "Moments at work"
 date: "2018-04-09 07:25:17 Pacific Daylight Time"
 tags:
-comments: true
-inprogress: true
+permalink: moments-at-work
 tags:
     - book-notes
 collapsable: true

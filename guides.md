@@ -14,28 +14,29 @@ Satisfaction is our most sustainable source of happiness. To find satisfaction, 
 <!-- vim-markdown-toc GFM -->
 
 - [You are dying](#you-are-dying)
+  - [And want to be happy](#and-want-to-be-happy)
 - [Find your authentic self](#find-your-authentic-self)
-    - [Role Finder](#role-finder)
-    - [Eulogy Writer](#eulogy-writer)
-    - [Goals](#goals)
-    - [Hobbies](#hobbies)
+  - [Role Finder](#role-finder)
+  - [Eulogy Writer](#eulogy-writer)
+  - [Goals](#goals)
+  - [Hobbies](#hobbies)
 - [Maximize your sanity](#maximize-your-sanity)
-    - [Handling Pride](#handling-pride)
-    - [Emotional Intelligence](#emotional-intelligence)
-    - [Mindfulness Training](#mindfulness-training)
-    - [Time off](#time-off)
+  - [Handling Pride](#handling-pride)
+  - [Emotional Intelligence](#emotional-intelligence)
+  - [Mindfulness Training](#mindfulness-training)
+  - [Time off](#time-off)
 - [Invest in your health](#invest-in-your-health)
-    - [Physical Health](#physical-health)
-    - [Financial Health](#financial-health)
-    - [Cognitive Health](#cognitive-health)
-        - [Making hard decisions](#making-hard-decisions)
-        - [Being coached](#being-coached)
+  - [Physical Health](#physical-health)
+  - [Financial Health](#financial-health)
+  - [Cognitive Health](#cognitive-health)
+    - [Making hard decisions](#making-hard-decisions)
+    - [Being coached](#being-coached)
 - [Life Events](#life-events)
-    - [Changing Jobs](#changing-jobs)
-    - [Having a kid](#having-a-kid)
-    - [A sick parent](#a-sick-parent)
-    - [Mental Breakdowns](#mental-breakdowns)
-    - [Cancer](#cancer)
+  - [Changing Jobs](#changing-jobs)
+  - [Having a kid](#having-a-kid)
+  - [A sick parent](#a-sick-parent)
+  - [Mental Breakdowns](#mental-breakdowns)
+  - [Cancer](#cancer)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -47,6 +48,11 @@ The first step for mortality software is helping you figure out the person you w
 ## You are dying
 
 - [On Being Mortal](/death)
+
+### And want to be happy
+
+- [All about Happy](/happy)
+
 
 
 ## Find your authentic self
