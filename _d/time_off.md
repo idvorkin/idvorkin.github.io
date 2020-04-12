@@ -22,11 +22,6 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Managing family expectations](#managing-family-expectations)
     - [PD vs Life Balance](#pd-vs-life-balance)
 - [Optimizing for happiness](#optimizing-for-happiness)
-    - [Types of happiness: Pleasure, Flow and Identity](#types-of-happiness-pleasure-flow-and-identity)
-    - [The 3 selves](#the-3-selves)
-    - [Peak end rule](#peak-end-rule)
-    - [Moments](#moments)
-    - [Joy on Demand](#joy-on-demand)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Other Resources](#other-resources)
 
@@ -66,38 +61,7 @@ Even though getting to do what you love is awesome, you still want to love your 
 
 ## Optimizing for happiness
 
-_This should probalby be it's open post - expect a refactor_
-
-### Types of happiness: Pleasure, Flow and Identity
-
-**Pleasure** - The joy of consumption. Eating chocolate, watching tv, procrastinating. These joys are like sweet food, they have a jolt of pleasure, but they go quickly, and leave you wanting more.
-
-**Flow** - The joy of production. This happens when you are doing something challenging enough to keep you engaged, but easy enough to support continued progress. These joy is sustained for hours, and you know you're there when you look up and realize you've just spent 4 hours (QQ: Is binge watching joy?)
-
-**Identity** - The joy of identity, purpose, and acqualization. This happens when you are supporting your identity. The doing can be miserable, but the satisfication of being who you want to be is powerful, and lasts and lasts. Even thinking about your identity can sustain you.
-
-
-### The 3 selves
-
-A week ago, I was at a gala, and I ate a few chocolate truffles because they made me happy. I suspect it was wonderful, but honestly I don't remember if that was the case. Even worse, as I try to button up my pants and the pants are too tight, I'm feeling quite unhappy about eating the truffles.
-
-In the above paragraph there were three "I"'s or "selves" being referenced. The present experiencing self, the future remembering self, and the future experiencing self. To concisely refer to these three selves we'll call them the experiencing self, the remembering self, and the future self.
-
-As you think of three different selves there are two big questions. First, when you thinking about the costs and benefits of an action, think through the cost and benefits for the different selves. Second, decide which of the three selves you want to optimize for.
-
- With luck your present self enjoys this post, your future self remembers enjoying the post, and this prompts your future self to re-read and enjoy the post again.
-
-### Peak end rule
-
-We remember according to the peak end rule, the average of the peak event and the last event. This is why you should end your vacations with something awesome (as opposed to fighting with your family). The funniest version of the peak end rule comes from the world of colonoscopies. Normally the colonoscopy ends with the 'peak pain', if you artificially extend your colonoscopy with some less painful experiences, you'll remember your colonoscopy as less painful, even though it was longer, and started with the exact same pain.
-
-### Moments
-
-Most of life is auto-pilot (think about how movies are 2 hours, and cover years), what you remember, are moments. Optimize for them.
-
-### Joy on Demand
-
-A great book about how to savor things. I need to summarize seperatly, but it contains many exercises to feel good.
+- Being [Happy](/happy)
 
 ## Examples of how I spent my time off
 
