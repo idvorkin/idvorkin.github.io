@@ -7,6 +7,8 @@ tags:
 
 Physical health is the basis of energy, and thus the source of success. Physical health is about weight, fitness and sleep.
 
+### Weight Yourself
+
 **Weight is essential** because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases.
 
 Weight is "calories in" minus "calories out". Calories in is dominated by diet with a minor contribution from exercise. A great way to see this is comparing what you eat to physical Activity. A box of French fries adds 400 calories to your day, but running for 30 minutes only burns 300 calories.
@@ -15,6 +17,8 @@ I recommend setting a weight goal, and checking that goal is constantly being me
 
 Personally, I set a weight pledge every month, and never exceed that weight. Many people feel dieting is shameful. I couldn't disagree more. Dieting shows you care about health and are doing something about it.
 
+### Strength and Cardio Training
+
 **Fitness is essential** because it's the limiting factor to what you can accomplish.
 
 Fitness can be endurance or strength. For the majority of activities, endurance dominates, but some minimal strength is also required. For example, being able to run 30 minutes ensures you won't be out of breath when you need to hustle to catch the bus, but being able to lift 100lbs doesn't help you in many situations. Being able to lift 10 lbs is important though, so don't completely ignore strength.
@@ -22,6 +26,8 @@ Fitness can be endurance or strength. For the majority of activities, endurance 
 I recommend doing the most vigorous cardio activity you can comfortably do multiple times a week. It's easy to skip your activity, so try to set it up so you don' have excuses to skip.
 
 Personally, I run 4 miles on a tread mill multiple times a week at the gym. I run inside so weather can't keep me from running, and I keep gym clothes in a locker at the gym so I can't have the "I forgot my gym shoes" excuse either.
+
+### Sleeping soundly
 
 **Sleep is essential** because it allows your body to heal, your brain to think clearly, and you to perform well throughout the day.
 
@@ -34,18 +40,26 @@ ps. Being a nerd I use a bunch of [toys]({% post_url 2017-10-06-tech-health-toys
 
 ### FAQ
 
+#### How should I start?
+
 **My health is in the shitter - and I'm doing none of these. How should I start?**
 
 First good for you! Realizing you need to take action is a huge first step. Realizing you need to start small and deliberate is the next huge step.
 
-I'd start with cardio exercise (e.g. endurance fitness). That will give you the most energy, which you'll require to boost strap the other disciplines. After youve been doing that for a month or so, I'd tackle sleep and when that feels stable I'd add weight loss.
+I'd start with cardio exercise (e.g. endurance fitness). That will give you the most energy, which you'll require to boost strap the other disciplines. After you've been doing that for a month or so, I'd tackle sleep and when that feels stable I'd add weight loss.
+
+#### How long should I exercise? 
 
 **I'm in for cardio - How should I start, how long should I go?**
 
-First rule of starting new habits - make it easier then you can accomplish. To that end I'd start at an easy pace for as long as you can (upto 30 minutes) then gradually increase the duration  till you can do 30 minutes comfortably.  Once you're at 30 minutes gradualy raise the intensity (no more then 10% / week) so that you're continuing to push at an easy pace without feeling like you're pushing too hard.
+First rule of starting new habits - make it easier then you can accomplish. To that end I'd start at an easy pace for as long as you can (upto 30 minutes) then gradually increase the duration  till you can do 30 minutes comfortably.  Once you're at 30 minutes gradually raise the intensity (no more then 10% / week) so that you're continuing to push at an easy pace without feeling like you're pushing too hard.
 
 **Why 30 minutes?**
 
 I don't know if there's any science here, but my target is 30 minutes of cardio.
 
 For me, it's long enough to work up a sweat, but short enough to not eat up my day. I've read that you should either do 30 minutes of low to medium intensity exercise daily or 20 minutes of high intensity exercise 3 times a week. When starting out or when old, I'd recommend low weights high reps to reduce the risk of quitting and injury.
+
+#### My body part really hurts, what should I do? 
+
+I've had lots of injuries, here's my various [braces](/td/irl#physical-health)
