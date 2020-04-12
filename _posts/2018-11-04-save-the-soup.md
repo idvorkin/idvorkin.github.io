@@ -8,7 +8,7 @@ tag:
 
 "Are you insane?" I half shouted at Biff, my college roommate. We had just finished our Operating Systems midterm and were lounging at “The Bomber,” our college pub. Biff suggested we both do our last internship at Microsoft.
 
-_This is part of the [SaaS series](tags#Software%20as%20a%20Story). Any connection to reality will be strictly denied_
+{% include this_is_part_of_saas.md %}
 
 I had no desire to work at Microsoft, the largest software company in the world back then. At that point in my career the largest company I’d worked for had 200 employees, and my idea of process was running down the hall asking everyone if they agreed. But, Biff sold me with his pitch “Look, MS will give us an apartment, a rental car, hell – they will even pay for our gym membership. We can cook awesome meals and get drunk whenever we want. Plus, Seattle has oceans, mountains, world class fencing and bikes everywhere – you’ll love it”. Biff knew how to convince me, so he paid for my IPA and we stumbled out of the pub with our next adventure glittering in our eyes. Seven short weeks later, we’d arrived in Seattle. Even the trip from the airport to our intern apartment was awesome. You could see the mountains as you drove across lakes, and bike riders were everywhere.
 

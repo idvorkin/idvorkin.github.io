@@ -8,7 +8,7 @@ tag:
 
 I started in Windows Azure in 2007. Back then, the name “Azure” wasn't invented, and Azure was still called “Reddog.” I started on the OS team, drawn in by my dream of changing the world, and getting to be Dave Cutler's lackey. I didn't get to work with Cutler, but I still may change the world - now that I’ve learned it’s OK to wake sleeping giants. My giant was named Jay.
 
-_This is part of the [SaaS series](tags0as%20a%20Story). Any connection to reality will be strictly denied_
+{% include this_is_part_of_saas.md %}
 
 See, when you join a team at Microsoft, you're assigned a mentor and I was assigned Jay. Jay is a technical wiz. He knows nine flavors of assembly, and has every machine type back to the PDP-11. Jay's also a little odd.
 

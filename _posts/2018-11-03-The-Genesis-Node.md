@@ -9,7 +9,7 @@ tag: "software as a story"
 
 Igor, you know the odds of shipping Reddog on time are slim to none."
 
-_This is part of the [SaaS series](tags#Software%20as%20a%20Story). Any connection to reality will be strictly denied_
+{% include this_is_part_of_saas.md %}
 
 My boss and I nodded our agreement as the director of OS development for Reddog continued.
 
