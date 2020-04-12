@@ -15,34 +15,35 @@ place to store them.
 <!-- vim-markdown-toc GFM -->
 
 - [Igor as a business model](#igor-as-a-business-model)
-    - [Igor's UVP:](#igors-uvp)
-    - [Igor's Key Activities:](#igors-key-activities)
+  - [Igor's UVP:](#igors-uvp)
+  - [Igor's Key Activities:](#igors-key-activities)
 - [Magic: Great example of Seth Godin principles](#magic-great-example-of-seth-godin-principles)
 - [Quotes:](#quotes)
-    - [Grandmother mind](#grandmother-mind)
+  - [Grandmother mind](#grandmother-mind)
 - [Journaling Prompt:](#journaling-prompt)
 - [Wisdom](#wisdom)
-- [Intamacy Questions](#intamacy-questions)
+- [Intimacy Questions](#intimacy-questions)
 - [Progressions](#progressions)
-    - [7H: Dependant, Independnat, Interdependant](#7h-dependant-independnat-interdependant)
-    - [Career: Learn, Scale Out, Reap rewards](#career-learn-scale-out-reap-rewards)
-    - [Life Stages; 20-Exploring; 30 - Stopping what don't like; 40 - Doing what do like; 50 - Unknown (being selfless??)](#life-stages-20-exploring-30---stopping-what-dont-like-40---doing-what-do-like-50---unknown-being-selfless)
-    - [Best Friend Conversation: Getting Drunk; Getting Married, Kid Did X; Did you know bob, he's dead](#best-friend-conversation-getting-drunk-getting-married-kid-did-x-did-you-know-bob-hes-dead)
+  - [7H: Dependent, Independent, Interdependent](#7h-dependent-independent-interdependent)
+  - [Career: Learn, Scale Out, Reap rewards](#career-learn-scale-out-reap-rewards)
+  - [Life Stages; 20-Exploring; 30 - Stopping what don't like; 40 - Doing what do like; 50 - Unknown (being selfless??)](#life-stages-20-exploring-30---stopping-what-dont-like-40---doing-what-do-like-50---unknown-being-selfless)
+  - [Best Friend Conversation: Getting Drunk; Getting Married, Kid Did X; Did you know bob, he's dead](#best-friend-conversation-getting-drunk-getting-married-kid-did-x-did-you-know-bob-hes-dead)
 - [Models](#models)
-    - [Marginal costs - just this once.](#marginal-costs---just-this-once)
-    - [Strategy : Defined vs Emmergent](#strategy--defined-vs-emmergent)
-    - [Types of capabilities - Resources, Process, Values](#types-of-capabilities---resources-process-values)
-    - [Being a  class act](#being-a--class-act)
-    - [Knowledge vs Wisdom](#knowledge-vs-wisdom)
-    - [Curiosity](#curiosity)
-    - [Cognitive vs Curiosity based improvement.](#cognitive-vs-curiosity-based-improvement)
-    - [Love and rejection.](#love-and-rejection)
+  - [Marginal costs - just this once.](#marginal-costs---just-this-once)
+  - [Strategy : Defined vs Emergent](#strategy--defined-vs-emergent)
+  - [Types of capabilities - Resources, Process, Values](#types-of-capabilities---resources-process-values)
+  - [Being a class act](#being-a-class-act)
+  - [Knowledge vs Wisdom](#knowledge-vs-wisdom)
+  - [Curiosity](#curiosity)
+  - [Cognitive vs Curiosity based improvement.](#cognitive-vs-curiosity-based-improvement)
+  - [Love and rejection.](#love-and-rejection)
 - [Heath brothers](#heath-brothers)
-    - [Made to stick](#made-to-stick)
-    - [Switch](#switch)
-    - [Moments](#moments)
-    - [Decisive](#decisive)
-    - [Elephant Rider Path](#elephant-rider-path)
+  - [Made to stick](#made-to-stick)
+  - [Switch](#switch)
+  - [Moments](#moments)
+  - [Decisive](#decisive)
+  - [Elephant Rider Path](#elephant-rider-path)
+  - [Yak Shaving](#yak-shaving)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -259,3 +260,41 @@ _surprise: these are my daily affirmations_
 ### Decisive
 
 ### Elephant Rider Path
+
+### Yak Shaving
+
+http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html
+
+"Yak shaving."  Our very own Carlin Vieri invented the term, and yet
+it has not caught on within the lab.  This is a shame, because it
+describes all too well what I find myself doing all too often.
+
+
+You see, yak shaving is what you are doing when you're doing some
+stupid, fiddly little task that bears no obvious relationship to what
+you're supposed to be working on, but yet a chain of twelve causal
+relations links what you're doing to the original meta-task.
+
+
+Here's an example:
+
+
+"I was working on my thesis and realized I needed a reference.  I'd
+seen a post on comp.arch recently that cited a paper, so I fired up
+gnus.  While I was searching the for the post, I came across another
+post whose MIME encoding screwed up my ancient version of gnus, so I
+stopped and downloaded the latest version of gnus.  
+
+
+"Unfortunately, the new version of gnus didn't work with emacs 18, so
+I downloaded and built emacs 20.  Of course, then I had to install
+updated versions of a half-dozen other packages to keep other users
+from hurting me.  When I finally tried to use the new gnus, it kept
+crapping out on my old configuration.  And that's why I'm deep in the
+gnus info pages and my .emacs file -- and yet it's all part of working
+on my thesis."
+
+
+And that, my friends, is yak shaving.  (Not that this particular
+example happened to me recently or anything.)  
+
