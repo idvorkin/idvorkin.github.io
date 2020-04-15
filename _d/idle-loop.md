@@ -13,16 +13,19 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 <!-- vim-markdown-toc GFM -->
 
 - [Why: Parasitic energy drain or regenerative braking](#why-parasitic-energy-drain-or-regenerative-braking)
-- [How](#how)
-    - [Mindfulness](#mindfulness)
-    - [Positive thinking](#positive-thinking)
-    - [Reading something nurturing](#reading-something-nurturing)
-    - [Gratefulness thinking](#gratefulness-thinking)
-    - [Practicing easy skills](#practicing-easy-skills)
-- [Common parasitic idle loops](#common-parasitic-idle-loops)
-    - [Ruminating](#ruminating)
-    - [Checking the news, Reddit, etc](#checking-the-news-reddit-etc)
-    - [Checking e-mail or notifications](#checking-e-mail-or-notifications)
+- [Regenerative loops](#regenerative-loops)
+  - [Mindfulness](#mindfulness)
+  - [Positive thinking](#positive-thinking)
+  - [Reading something nurturing](#reading-something-nurturing)
+  - [Gratefulness thinking](#gratefulness-thinking)
+  - [Accessible Habits](#accessible-habits)
+- [Parasitic loops](#parasitic-loops)
+  - [Psychic weight](#psychic-weight)
+  - [Addiction](#addiction)
+  - [Ruminating](#ruminating)
+  - [Checking the news, Reddit, etc](#checking-the-news-reddit-etc)
+  - [Checking e-mail or notifications](#checking-e-mail-or-notifications)
+  - [Mind monsters](#mind-monsters)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -30,7 +33,7 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 ## Why: Parasitic energy drain or regenerative braking
 
-## How
+## Regenerative loops
 
 ### Mindfulness
 
@@ -40,18 +43,27 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 ### Gratefulness thinking
 
-### Practicing easy skills
+### Accessible Habits
 
-- Magic tricks
-- Music fingering
+- [Habits](/habits)
+- [Magic](/magic)
 - Meditating
+- Breathign
 
-## Common parasitic idle loops
+## Parasitic loops
+
+### Psychic weight
+
+### Addiction
+
+[Addiction](/addiction.md)
 
 ### Ruminating
 
 ### Checking the news, Reddit, etc
 
 ### Checking e-mail or notifications
+
+### Mind monsters
 
 ## Other Resources
