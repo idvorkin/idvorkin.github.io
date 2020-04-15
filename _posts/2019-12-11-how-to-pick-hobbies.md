@@ -18,7 +18,8 @@ Why?
 Hobby - An activity done in ones leisure time for pleasure. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby. Being accessible, having legs, reinforcing your identity, and building relationships.
 
 ### Why find a hobby
-Being [satisfied](https://ig2600.blogspot.com/2015/07/a-richer-model-of-happiness.html) is the point of life, and a great hobby provides satisfaction by reinforcing your identity and helping you build relationships. A great hobby puts you in flow, giving pleasure by itself, and resting your mind from life's stressors. A great hobby lets you continuously improve, giving a feeling of mastery. This feels great, and reinforces your self confidence.
+
+Being [satisfied](/happy) is the point of life, and a great hobby provides satisfaction by reinforcing your identity and helping you build relationships. A great hobby puts you in flow, giving pleasure by itself, and resting your mind from life's stressors. A great hobby lets you continuously improve, giving a feeling of mastery. This feels great, and reinforces your self confidence.
 
 If you don't have time for a hobby because you need all your energy for work and family, you should reconsider. Your work and family will eventually become stressful, and when they do having a hobby use can use to recharge will be a life saver.
 
@@ -36,7 +37,7 @@ Knitting has great accessibility. You can do it anywhere, all you need is your n
 
 The best hobbies let you continually improve. Ideally they have a progression of goals which when accomplished give you pride, and can be continued as you get into your golden years. Without legs, it's easy to get bored with your hobby when you "top out" and have nothing else to learn.
 
-Chess has legs. When you start playing chess you barely know the rules, and the more you study and play, the better you get. Even better, you can keep playing chess till you're pretty darn old.  Watching TV does not have legs.  Watch as much as you want, your just as bad (or good, if you're a glass half full person) as the day you started.
+Chess has legs. When you start playing chess you barely know the rules, and the more you study and play, the better you get. Even better, you can keep playing chess till you're pretty darn old. Watching TV does not have legs. Watch as much as you want, your just as bad (or good, if you're a glass half full person) as the day you started.
 
 #### Grows Identity and connections
 
@@ -52,13 +53,13 @@ You know why you need a hobby, and what makes a great one, now get out there and
 
 #### Is this Autonomy Mastery Competence Purpose/Relatedness?
 
-For those unfamiliar with the terms,  Autonomy, Mastery, Purpose (AMP) is Danial Pink's model for motivation. Autonomy, Competence, Relatedness (ACR) is the almost identical model articulated in self determination theory. These models are often used in the context of motivation for work and apply equally to hobbies. Accessibility is my word for autonomy, has legs is my word for Mastery/Competence and Purpose/Relatedness is my word for Purpose/Relatedness.
+For those unfamiliar with the terms, Autonomy, Mastery, Purpose (AMP) is Danial Pink's model for motivation. Autonomy, Competence, Relatedness (ACR) is the almost identical model articulated in self determination theory. These models are often used in the context of motivation for work and apply equally to hobbies. Accessibility is my word for autonomy, has legs is my word for Mastery/Competence and Purpose/Relatedness is my word for Purpose/Relatedness.
 
-#### What's the difference between hobbies and habits? 
+#### What's the difference between hobbies and habits?
 
-This gets into nomenclature. In my model, hobbies are things that make you happy while habits (the positive ones)  make you healthy. Practicing your hobby can become a habit.
+This gets into nomenclature. In my model, hobbies are things that make you happy while habits (the positive ones) make you healthy. Practicing your hobby can become a habit.
 
-Should I have my hobby be my work?** I'd recommend strongly against it for two reasons. First, it's work so you'll need to prioritize what makes your customers happy over what makes you happy and second, because if works goes badly, you'll also lose your hobby, which defeats the purpose of having a hobby.
+Should I have my hobby be my work?\*\* I'd recommend strongly against it for two reasons. First, it's work so you'll need to prioritize what makes your customers happy over what makes you happy and second, because if works goes badly, you'll also lose your hobby, which defeats the purpose of having a hobby.
 
 #### What is your hobby?
 
@@ -66,6 +67,6 @@ My current hobby is [magic](/magic). All I need is a coin or a deck of cards and
 
 #### Did you find your hobby on the first try?
 
- No. One of my early hobbies was scuba diving.  Going scuba diving take a lot of gear and preparation. Even worse you need a dive buddy who has the matching gear, will, and schedule. Needless to say, my scuba gear has been gathering dust for a long while, and my wife keep threatening to sell it. After scuba diving,  I loved squash and fencing, both fantastic hobbies, but as I crossed into my late thirties, repetitive motion caused tendentious in my forearm, and I had to give them up.
+No. One of my early hobbies was scuba diving. Going scuba diving take a lot of gear and preparation. Even worse you need a dive buddy who has the matching gear, will, and schedule. Needless to say, my scuba gear has been gathering dust for a long while, and my wife keep threatening to sell it. After scuba diving, I loved squash and fencing, both fantastic hobbies, but as I crossed into my late thirties, repetitive motion caused tendentious in my forearm, and I had to give them up.
 
-Next up was juggling, which for me is a fantastic hobby. Even though it meets all my criteria, it's not as accessible as magic and it's harder to form a connection juggling. For example, juggling clubs don't fit in my back pocket, and I get strange looks juggling at the bar, and don't get me started on security guards reaction to [flaming torches](https://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html).  While juggling let me connect with folks, it's not an intimate connection and it's rarely remembered. By contrast with magic I can strike up a conversation, personalize the magic for the audience, and often give a souvenir which when I've formed my best connection, the audience will take home and cherish for years.
+Next up was juggling, which for me is a fantastic hobby. Even though it meets all my criteria, it's not as accessible as magic and it's harder to form a connection juggling. For example, juggling clubs don't fit in my back pocket, and I get strange looks juggling at the bar, and don't get me started on security guards reaction to [flaming torches](https://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html). While juggling let me connect with folks, it's not an intimate connection and it's rarely remembered. By contrast with magic I can strike up a conversation, personalize the magic for the audience, and often give a souvenir which when I've formed my best connection, the audience will take home and cherish for years.
