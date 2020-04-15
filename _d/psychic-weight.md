@@ -14,32 +14,32 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 <!-- vim-markdown-toc GFM -->
 
 - [Types of psychic weight](#types-of-psychic-weight)
-    - [Grasping](#grasping)
-    - [Aversion](#aversion)
-    - [Mind Monsters](#mind-monsters)
-    - [Triggers](#triggers)
-    - [Emotional First Aid](#emotional-first-aid)
-    - [Shame](#shame)
-    - [Pride](#pride)
-    - [Ruminating](#ruminating)
-    - [Scarring](#scarring)
+  - [Grasping](#grasping)
+  - [Aversion](#aversion)
+  - [Mind Monsters](#mind-monsters)
+  - [Triggers](#triggers)
+  - [Emotional First Aid](#emotional-first-aid)
+  - [Shame](#shame)
+  - [Pride](#pride)
+  - [Ruminating](#ruminating)
+  - [Scarring](#scarring)
 - [Antidotes](#antidotes)
-    - [Separate Pain and suffering](#separate-pain-and-suffering)
-    - [GTD (Getting Things Done)](#gtd-getting-things-done)
-    - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
-    - [Talk it through](#talk-it-through)
-    - [Meditation](#meditation)
-    - [This too shall pass](#this-too-shall-pass)
+  - [Separate Pain and suffering](#separate-pain-and-suffering)
+  - [GTD (Getting Things Done)](#gtd-getting-things-done)
+  - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
+  - [Talk it through](#talk-it-through)
+  - [Meditation](#meditation)
+  - [This too shall pass](#this-too-shall-pass)
 - [False Avoidance Strategies](#false-avoidance-strategies)
-    - [Addiction](#addiction)
-    - [Resistance](#resistance)
+  - [Addiction](#addiction)
+  - [Resistance](#resistance)
 - [Examples from my own life](#examples-from-my-own-life)
-    - [Bathroom remodel feeling "f@#\$" over](#bathroom-remodel-feeling-f-over)
-    - [Insecurity around money](#insecurity-around-money)
-    - [Needing to finish a self evaluation](#needing-to-finish-a-self-evaluation)
-    - [Needing to finish a document at work](#needing-to-finish-a-document-at-work)
-    - [Small things that got really big](#small-things-that-got-really-big)
-    - [Examples of Pride](#examples-of-pride)
+  - [Bathroom remodel feeling "f@#\$" over](#bathroom-remodel-feeling-%22f%22-over)
+  - [Insecurity around money](#insecurity-around-money)
+  - [Needing to finish a self evaluation](#needing-to-finish-a-self-evaluation)
+  - [Needing to finish a document at work](#needing-to-finish-a-document-at-work)
+  - [Small things that got really big](#small-things-that-got-really-big)
+  - [Examples of Pride](#examples-of-pride)
 - [Useful thoughts.](#useful-thoughts)
 
 <!-- vim-markdown-toc -->
@@ -62,6 +62,8 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 ### Shame
 
 ### Pride
+
+[Pride](/pride)
 
 ### Ruminating
 
