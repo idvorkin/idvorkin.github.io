@@ -9,11 +9,14 @@ redirect_from:
   - /pay
 ---
 
-<!-- imagefeature: https://thenounproject.com/0a7bdab3-cb97-4cce-9161-d4504ebc88c2 -->
-
 Different companies use different compensation models. To compare between them only compare total compensation, not salary. Also, signing bonuses of 100% of salary aren't uncommon in the tech industry. While this sounds amazing, it's often nothing more then replacement for the otherwise lost income from unvested equity.
 
 _You can add comments to this post [here](https://hackmd.io/AyBTMcncRweMVZEVUWUFCA)_
+
+<!-- imagefeature: https://thenounproject.com/0a7bdab3-cb97-4cce-9161-d4504ebc88c2
+![](https://github.com/idvorkin/blob/raw/master/noun_compensation%20_and%20benefits.svg?sanitize=1)
+![](https://raw.githubusercontent.com/idvorkin/blob/master/noun_compensation%20_and%20benefits.svg?sanitize=1)
+-->
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->

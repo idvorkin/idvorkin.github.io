@@ -15,13 +15,17 @@ Satisfaction is our most sustainable source of happiness. To find satisfaction, 
 
 - [You are dying](#you-are-dying)
   - [So strive for Happy](#so-strive-for-happy)
+  - [Avoid Addiction](#avoid-addiction)
 - [Discover your authentic self](#discover-your-authentic-self)
   - [Find your roles](#find-your-roles)
   - [Write your Eulogy](#write-your-eulogy)
   - [Set your goals](#set-your-goals)
   - [Enjoy your Hobbies](#enjoy-your-hobbies)
 - [Maximize your sanity](#maximize-your-sanity)
-  - [Handling Pride](#handling-pride)
+  - [Handle Pride](#handle-pride)
+  - [Inspect your idle loop](#inspect-your-idle-loop)
+  - [Stay in your circle of influence](#stay-in-your-circle-of-influence)
+  - [Cut psychic weight](#cut-psychic-weight)
   - [Emotional Intelligence](#emotional-intelligence)
   - [Mindfulness Training](#mindfulness-training)
   - [Time off](#time-off)
@@ -53,6 +57,10 @@ The first step for mortality software is helping you figure out the person you w
 
 - [Happiness 101](/happy)
 
+### Avoid Addiction
+
+- [Addiction](/_d/addiction.md)
+
 ## Discover your authentic self
 
 ### Find your roles
@@ -62,18 +70,29 @@ The first step for mortality software is helping you figure out the person you w
 - [My Eulogy](/eulogy)
 
 ### Set your goals
+
 - [Goal Settings](/goals)
 
 ### Enjoy your Hobbies
 
--  [My hobby - magic](/magic)
--  [What makes a good hobby](/hobby)
+- [My hobby - magic](/magic)
+- [What makes a good hobby](/hobby)
 
 ## Maximize your sanity
 
-### Handling Pride
+### Handle Pride
 
 - [Pride](/pride)
+
+### Inspect your idle loop
+
+- [Your Idle loop](/idle-loop)
+
+### Stay in your circle of influence
+
+### Cut psychic weight
+
+- [Psychic Weight](/psychic-weight)
 
 ### Emotional Intelligence
 
@@ -107,9 +126,11 @@ Your health is your most valuable asset. It's so easy to ignore your
 ### Cognitive Health
 
 #### Making hard decisions
- - [Decisive](/decide)
+
+- [Decisive](/decide)
 
 #### Being coached
+
 - [Getting Coached](/coach)
 
 ## Life Events
@@ -129,4 +150,3 @@ Major Life events have their own module
 - [Reading List](/Depression-Reading-List)
 
 ### Cancer
-
