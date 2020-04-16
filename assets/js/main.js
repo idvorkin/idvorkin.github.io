@@ -1,109 +1,113 @@
 let tocExpand = true;
 
 function checkExpandToggle() {
-    const toc = $(".ui-toc-dropdown .toc");
-    const toggle = $(".expand-toggle");
-    if (!tocExpand) {
-        toc.removeClass("expand");
-        toggle.text("Expand all");
-    } else {
-        toc.addClass("expand");
-        toggle.text("Collapse all");
-    }
+  const toc = $(".ui-toc-dropdown .toc");
+  const toggle = $(".expand-toggle");
+  if (!tocExpand) {
+    toc.removeClass("expand");
+    toggle.text("Expand all");
+  } else {
+    toc.addClass("expand");
+    toggle.text("Collapse all");
+  }
 }
 
-
 function SwapProdAndTest() {
-    /* Find page title. */
-    const url = window.location.href;
-    const prodPrefix = "https://idvork.in"
-    const testPrefix = "http://localhost:4000"
-    const isProd = url.includes(prodPrefix)
-    let newURL = url
-    if (isProd) {
-        newURL = url.replace(prodPrefix, testPrefix)
-    }
-    else {
-        newURL = url.replace(testPrefix, prodPrefix)
-    }
+  /* Find page title. */
+  const url = window.location.href;
+  const prodPrefix = "https://idvork.in";
+  const testPrefix = "http://localhost:4000";
+  const isProd = url.includes(prodPrefix);
+  let newURL = url;
+  if (isProd) {
+    newURL = url.replace(prodPrefix, testPrefix);
+  } else {
+    newURL = url.replace(testPrefix, prodPrefix);
+  }
 
-    window.location = newURL
+  window.location = newURL;
 }
 
 // <!-- Copied from hackmd-extras.js -->
 function generateToc(id, showPinToc) {
-    const target = $(`#${id}`);
+  const target = $(`#${id}`);
+  target.html("");
+  /* eslint-disable no-unused-vars */
+  var toc = new window.Toc("content-holder", {
+    level: 3,
+    top: -1,
+    class: "toc",
+    ulClass: "nav",
+    targetId: id
+  });
+  /* eslint-enable no-unused-vars */
+  if (target.text() === "undefined") {
     target.html("");
-    /* eslint-disable no-unused-vars */
-    var toc = new window.Toc("content-holder", {
-        level: 3,
-        top: -1,
-        class: "toc",
-        ulClass: "nav",
-        targetId: id
-    });
-    /* eslint-enable no-unused-vars */
-    if (target.text() === "undefined") {
-        target.html("");
-    }
-    const tocMenu = $('<div class="toc-menu"></div');
-    const toggle = $('<a class="expand-toggle" href="#">Collapse all</a>');
-    const backToTop = $('<a class="back-to-top" href="#">Back to top</a>');
-    const gotoBottom = $('<a class="go-to-bottom" href="#">Go to bottom</a>');
-    const forceSideBar = $('<a class="go-to-bottom" href="#">Pin ToC</a>');
+  }
+  const tocMenu = $('<div class="toc-menu"></div');
+  const toggle = $('<a class="expand-toggle" href="#">Collapse all</a>');
+  const backToTop = $('<a class="back-to-top" href="#">Back to top</a>');
+  const gotoBottom = $('<a class="go-to-bottom" href="#">Go to bottom</a>');
+  const forceSideBar = $('<a class="go-to-bottom" href="#">Pin ToC</a>');
+  checkExpandToggle();
+  toggle.click(e => {
+    e.preventDefault();
+    e.stopPropagation();
+    tocExpand = !tocExpand;
     checkExpandToggle();
-    toggle.click(e => {
-        e.preventDefault();
-        e.stopPropagation();
-        tocExpand = !tocExpand;
-        checkExpandToggle();
-    });
-    backToTop.click(e => {
-        e.preventDefault();
-        e.stopPropagation();
-        window.scrollTo(0, 0)
-    });
-    gotoBottom.click(e => {
-        e.preventDefault();
-        e.stopPropagation();
-        window.scrollTo(0, document.body.scrollHeight)
-    });
-    forceSideBar.click(e => ForceShowRightSideBar())
-    tocMenu.append(toggle).append(backToTop).append(gotoBottom);
-    if (showPinToc) {
-        tocMenu.append(forceSideBar)
-    }
-    target.append(tocMenu);
+  });
+  backToTop.click(e => {
+    e.preventDefault();
+    e.stopPropagation();
+    window.scrollTo(0, 0);
+  });
+  gotoBottom.click(e => {
+    e.preventDefault();
+    e.stopPropagation();
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+  forceSideBar.click(e => ForceShowRightSideBar());
+  tocMenu
+    .append(toggle)
+    .append(backToTop)
+    .append(gotoBottom);
+  if (showPinToc) {
+    tocMenu.append(forceSideBar);
+  }
+  target.append(tocMenu);
 
-    function ForceShowRightSideBar() {
-        let toc = $("#right-sidebar")
-        let mainContent = $("#main-content")
-        toc.removeClass()
-        toc.addClass("col-4 pl-0")
+  function ForceShowRightSideBar() {
+    let toc = $("#right-sidebar");
+    let mainContent = $("#main-content");
+    toc.removeClass();
+    toc.addClass("col-4 pl-0");
 
-        mainContent.removeClass()
-        mainContent.addClass("col-8 pr-0")
+    mainContent.removeClass();
+    mainContent.addClass("col-8 pr-0");
 
-        // Hide DropUp
-        tocDropUp = $("#id-ui-toc-dropdown")
-        tocDropUp.removeClass()
-        tocDropUp.addClass("d-none")
-    }
-    Mousetrap.bind('s', e => location.href = "/");
-    Mousetrap.bind('t', e => ForceShowRightSideBar());
-    Mousetrap.bind('p', e => SwapProdAndTest());
-    Mousetrap.bind('z', e => location.href = "/random");
+    // Hide DropUp
+    tocDropUp = $("#id-ui-toc-dropdown");
+    tocDropUp.removeClass();
+    tocDropUp.addClass("d-none");
+  }
+  Mousetrap.bind("s", e => (location.href = "/"));
+  Mousetrap.bind("t", e => ForceShowRightSideBar());
+  Mousetrap.bind("p", e => SwapProdAndTest());
+  Mousetrap.bind("z", e => (location.href = "/random"));
+  Mousetrap.bind("a", e => (location.href = "/all"));
+  Mousetrap.bind("g", e => (location.href = "/toc"));
 
-    let shortcutHelp = `
+  let shortcutHelp = `
 Keyboard Shortcuts: 
   s - search
   t - force sidebar
   p - swap prod and test
   z - surprise me
-  `
-    Mousetrap.bind('?', e => alert(shortcutHelp));
-
+  a - all posts
+  g - global toc
+  `;
+  Mousetrap.bind("?", e => alert(shortcutHelp));
 }
 // NOTE: This should really be in post.md
-generateToc("ui-toc", showPinToc = true);
-generateToc("ui-toc-affix", showPinToc = false);
+generateToc("ui-toc", (showPinToc = true));
+generateToc("ui-toc-affix", (showPinToc = false));
