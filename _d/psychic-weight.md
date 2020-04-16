@@ -4,6 +4,7 @@ title: "Psychic Weight"
 comments: true
 tags:
   - how igor ticks
+permalink: psychic-weight
 
 author: "Igor Dvorkin"
 ---
@@ -14,25 +15,25 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 <!-- vim-markdown-toc GFM -->
 
 - [Types of psychic weight](#types-of-psychic-weight)
-  - [Grasping](#grasping)
-  - [Aversion](#aversion)
+  - [Aversion and the resistance](#aversion-and-the-resistance)
   - [Mind Monsters](#mind-monsters)
   - [Triggers](#triggers)
-  - [Emotional First Aid](#emotional-first-aid)
+  - [Open decisions](#open-decisions)
+  - [Open loops](#open-loops)
   - [Shame](#shame)
   - [Pride](#pride)
-  - [Ruminating](#ruminating)
-  - [Scarring](#scarring)
+  - [Ruminating a parasitic idle loop](#ruminating-a-parasitic-idle-loop)
+  - [Beating yourself up](#beating-yourself-up)
+  - [Grasping](#grasping)
 - [Antidotes](#antidotes)
   - [Separate Pain and suffering](#separate-pain-and-suffering)
+  - [Eat the frog](#eat-the-frog)
   - [GTD (Getting Things Done)](#gtd-getting-things-done)
   - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
   - [Talk it through](#talk-it-through)
   - [Meditation](#meditation)
   - [This too shall pass](#this-too-shall-pass)
-- [False Avoidance Strategies](#false-avoidance-strategies)
-  - [Addiction](#addiction)
-  - [Resistance](#resistance)
+  - [Emotional First Aid](#emotional-first-aid)
 - [Examples from my own life](#examples-from-my-own-life)
   - [Bathroom remodel feeling "f@#\$" over](#bathroom-remodel-feeling-%22f%22-over)
   - [Insecurity around money](#insecurity-around-money)
@@ -47,17 +48,32 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 
 ## Types of psychic weight
 
-### Grasping
+### Aversion and the resistance
 
-### Aversion
+Aversion is the desire to not face something. This often results in procrastination, and in extreme cases [addiction](/addiction). When left too long aversion can result in [shame](/shame), and paradoxically the thing that you refuse to face, can often be tackled, and once tackled feels invigorating.
+
+Personifying emotions can be helpful, and aversion (and procrastination) are personified by [the resistance](/resistance).
 
 ### Mind Monsters
 
+Say you have a prize horse that you're training to win the Kentucky derby. Do you feed this horse ketchup and peanut butter? Of course not - you need this horse to win so you feed it the highest quality oats you can find. Now, isn't your mind far more important than a race horse? Surely you shouldn't be focusing on silly things like anger and ego, these unhelpful thoughts are mind monsters.
+
 [Mind monsters](/mind-monsters)
+[Idle Loop](/idle-loop)
 
 ### Triggers
 
-### Emotional First Aid
+Like the trigger on a land mine, we have thoughts that have caused us damage and emotional scarring. These thoughts are triggers, adn when they happen we have a "un realistic" response to them. o
+
+Analogies:
+
+- Land mines
+- RSI
+- Aggravated sports injury
+
+### Open decisions
+
+### Open loops
 
 ### Shame
 
@@ -65,13 +81,28 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 
 [Pride](/pride)
 
-### Ruminating
+### Ruminating a parasitic idle loop
 
-### Scarring
+[Ruminating](/idle-loop)
+
+### Beating yourself up
+
+### Grasping
+
+The desire to not lose something - make less money, have someone die. The antidote here is realizing that everything is impermanent, in fact you will [die](/death) at which point you can keep nothing.
+
+From the prophet:
+
+- _For what are your possessions but things you keep and guard for fear you may need them to morrow?_
+- _And to-morrow, what shall to-morrow bring to the over-prudent dog burying bones in the trackless sand as he follows the pilgrims to the holy city?_
+- _And what is fear of need but need itself?_
+- _Is not dread of thirst when your well is full, the thirst that is unquenchable?_
 
 ## Antidotes
 
 ### Separate Pain and suffering
+
+### Eat the frog
 
 ### GTD (Getting Things Done)
 
@@ -83,11 +114,7 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 
 ### This too shall pass
 
-## False Avoidance Strategies
-
-### Addiction
-
-### Resistance
+### Emotional First Aid
 
 ## Examples from my own life
 
@@ -116,3 +143,4 @@ See [pride](/pride)
 As usual, the 7 habits helps
 Eat the frog
 Habits make psychic weight get handled.
+Grandmother mind

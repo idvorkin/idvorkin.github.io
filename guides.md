@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Life milestones"
+title: "Table of Contents"
 inprogress: true
-permalink: /guides
+permalink: /toc
 tags:
   - how igor ticks
   - emotional intelligence
@@ -65,6 +65,8 @@ The first step for mortality software is helping you figure out the person you w
 
 ### Find your roles
 
+Before tackling your eulogy, and your goals, you need to identify your many roles in life. For me, that includes father, husband, technologist, magician, and trying to be the best boss my people have ever had.
+
 ### Write your Eulogy
 
 - [My Eulogy](/eulogy)
@@ -76,6 +78,7 @@ The first step for mortality software is helping you figure out the person you w
 ### Enjoy your Hobbies
 
 - [My hobby - magic](/magic)
+- [My other joy - biking](/biking)
 - [What makes a good hobby](/hobby)
 
 ## Maximize your sanity
