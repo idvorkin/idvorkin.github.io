@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Mortality Software"
+title: "Time.ltd - Mortality Software"
 date: "2014-04-29 07:23:04 Pacific Daylight Time"
+permalink: /mortality-software
 tags:
   -
 ---
@@ -16,8 +17,6 @@ Life is finite, time is limited. Mortality software helps us understand and then
 
       It moves and  it gleams, so hungry and restless
       Where am I going? When will I live this?
-
-## Time.Ltd - Mortality software
 
 ### Why mortality software?
 
@@ -42,7 +41,7 @@ Mortality software will be both forward and backwards facing. By this I mean it 
 | Month -> Week | Milestones | Habit Tracking |
 | Week -> Day | Task List | Habit/Time Tracker|
 
-#### Life Horizon Tools
+#### Role and Value Finder, Eulogy Writer.
 
 To figure out who you want to be, write your eulogy. To make it easier, figure out the roles in your life. Imagine the person who would speak to each role of your life during your funeral. What would you want each person to say? That eulogy is the person you want to be.
 
@@ -54,7 +53,15 @@ Most people who have gone through the eulogy process have found it incredibly di
 
 Many people find this hard to imagine, so here's as a simple example. The eulogy module can start by presenting you different people and their values. Based on how much those people and values resonate with you, mortality software can suggest values that might appeal to you.
 
+#### Quarter Month Tools - Goal Setter
+
 ### Learning from your past - Tool Overview
+
+#### Annual Review
+
+#### Monthly Review
+
+#### Weekly Review
 
 <!-- >
 #### Who are you?
