@@ -2,16 +2,12 @@
 layout: post
 title: "Search inside yourself"
 author: "Igor Dvorkin"
-comments: true
-inprogress: true
-collapsable: true
-
 tags:
   - emotional intelligence
   - book-notes
----
 
-Training Emotional Intelligence through mindfulness.
+permalink: /siy
+---Training Emotional Intelligence through mindfulness.
 
 This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
@@ -93,7 +89,7 @@ _Mindfulness without butt on cushion_
   - Like exercise, only hard for first few months. Tips
     1. Have a buddy ask: Am I doing it? Why is my life better? How did this conversation go?
     1. Do less then you can
-    1. At a minimum, do a breat/1 minute/2 minute.
+    1. At a minimum, do a breathe/1 minute/2 minute.
   - Keep the difficulty at just below what you can achieve - think of how video games work.
 - Lightness and Joy in Mediation
   - Want a relaxed (light) focus on meditation. Try meditating on Joyful event.
@@ -114,7 +110,7 @@ _Mindfulness without butt on cushion_
 - Walking Meditation
   - Focus on walking while walking.
   - Feel your feet touching the ground
-  - Don't take anything forgranted.
+  - Don't take anything for granted.
 
 ### 4) Self awareness leading to self confidence
 
@@ -125,9 +121,9 @@ _All natural organic Self-Confidence_
   - Emotional Awareness
     - Resolution - See subtle differences between emotions.
     - Vividness - Turn up the contrast, so we can see easily see the additional resolution.
-    - (Am Happy -> Feel Happy -> Experiance Happy in my Body)
+    - (Am Happy -> Feel Happy -> Experience Happy in my Body)
     - The moment you observe an emotion, it's already less powerful.
-  - Accurate Self Assement - Strengths and Weakness
+  - Accurate Self Assessment - Strengths and Weakness
     - Essential for managers.
     - We're not perfect, but how can we succeed despite these gaps.
   - Self Confidence - Ego as big as Mt Fugi, or as small as grain of sand as needed.
@@ -139,7 +135,7 @@ _All natural organic Self-Confidence_
   - Emotional Awareness -> Self Assessment -> Self Confidence
     - Engineers confident in systems when understand operational, failure, and error recovery behaviors.
     - Understand operational, failure, and error recovery behaviors -> Self Assessment.
-    - Self Assement has low SNR because of emotions . Boost Emotional Awareness -> Boost Self Assessment SNR
+    - Self Assessment has low SNR because of emotions . Boost Emotional Awareness -> Boost Self Assessment SNR
   - Misc
     - More we study ourselves, more objective we can become.
     - We know all the skeletons in our closets, and can deal with them.
@@ -158,7 +154,7 @@ _All natural organic Self-Confidence_
     - Front - Chest and stomach
     - Whole Body
   - 2m Scan for Emotion - for an emotion, ok if none found.
-  - 3m Experiance Positive Emotion - think of something awesome, and see how it feels in your body/face/shoulders/tension.
+  - 3m Experience Positive Emotion - think of something awesome, and see how it feels in your body/face/shoulders/tension.
   - 1m Cool Down mindful breathing.
 - Journalling For Self Assessment
   - Journal
@@ -179,8 +175,8 @@ _All natural organic Self-Confidence_
   - 2m Negative Prime - Times when you responded negatively, where you weren't satisified.
   - 2m per Prompt/Free Associate - **1.** Things that annoy me are. **2.** My weaknesses are.
 - My emotions are not me.
-  - Emotions go from exististential -> experiential -> physiological
-  - I am happy -> I feel happy -> I experiance happy in my body
+  - Emotions go from existential -> experiential -> physiological
+  - I am happy -> I feel happy -> I experience happy in my body
 
 ### 5) Developing Self Mastery
 
@@ -190,10 +186,10 @@ _Riding your emotions like a horse_
 - About Self Regulation
   - Self-Control: Disruptive emotions under control
   - Trustworthiness: Maintain honesty and integrity
-  - Concsientiousness: Responsibilty for personal performance
-  - Adapatiblity: Flexibility in handling change
+  - Conscientiousness: Responsibility for personal performance
+  - Adaptability: Flexibility in handling change
   - Innovation: Being comfortable with novel ideas
-- NOT Avoiding or Surpressing Emotions
+- NOT Avoiding or Suppressing Emotions
   - It's about being skillful with emotions.
   - Anger vs Indignation, anger powerless, but indignation a source of calm power.
   - Negative emotions are at time appropriate, like for feeling empathy.
@@ -203,21 +199,21 @@ _Riding your emotions like a horse_
   - Grasping - holding on to something and not letting it go.
   - _Wilting flowers don't cause suffering, it's the unrealistic desire for them to last forever._
   - Aversion - avoiding something and refusing to think about it.
-  - _Pain doesn't cause suffering, it's the desire not to experiance it that causes suffering._
+  - _Pain doesn't cause suffering, it's the desire not to experience it that causes suffering._
 - Dealing with distress
   - Know when you are not in pain - have a habit of enjoying when not in pain, this gives strength.
   - Do not feel bad about feeling bad - (Meta distress) is not helpful, have grandmother mind on distress.
-  - Do not feed the [monsters](http://ig66.blogspot.com/2005/01/do-you-believe-in-mind-monsters.html) - distress needs fuel, stop retelling the same story.
+  - Do not feed the [monsters](/monsters) - distress needs fuel, stop retelling the same story.
     - Personal story - freak out over screwed up basement.
   - Start every thought with kindness and humor - It's nicer that way, gives us reserve to deal with hardship.
 - Triggers - A small event results in an objectively too big response.
   - Often have a repeated 'emotional' injury.
   - Need to respond quickly in the moment (SBNRR), but do a SBNRR meditation afterwards to proces and get better.
-  - More time you practive long form, better you get in short form.
+  - More time you proactive long form, better you get in short form.
 - Identify triggers:
-  - Body - shalllow breathing, rapid heartbeat, sick to stomach.
+  - Body - shallow breathing, rapid heartbeat, sick to stomach.
   - Emotions - Amydala hijack, fight or flight, frozen
-  - Thoughts - Victim, blame, jdudgment, trouble focusing, outrage
+  - Thoughts - Victim, blame, judgment, trouble focusing, outrage
 - **S**i**B**erinan **N**orthern **R**ail**R**oad:
   - Stop, Breathe, Notice, Reflect, Respond.
   - **Stop** is sacred, even for a few seconds. **Breathing** extends the pause.
@@ -234,26 +230,25 @@ _Riding your emotions like a horse_
     - What was the emotion, the first emotion, where did you feel it, how do you feel now.
     - Relive the negative emotion
   - 0.5m: Stop/Breathe
-  - 1m: Notice and Experiance
+  - 1m: Notice and Experience
   - 1m: Reflect on Origin
   - 1m :Imagine Response
   - 2m: Return to grounding: Tight fist, open to release emotion, 60s mindfulness breathing.
 - From self regulation to self confidence.
   - Aversion operates by distracting. Instead of feeling vulnerable, we focus on other person being a dick.
-- Making Friends with emtions
-  - Blindly reacting to emotion or fighting hard, makese it worse.
+- Making Friends with emotions
+  - Blindly reacting to emotion or fighting hard, makes it worse.
   - Instead, just observe, and reflect on the emotions, befriend them and they go away.
   - See Getting to yes with yourself.
 
-### 6) Art of self motivation and building resilliance
+### 6) Art of self motivation and building resilience
 
-_Making Profits, Rowing Accross Oceans, and Changing The World_
+_Making Profits, Rowing Across Oceans, and Changing The World_
 
 - **GOAL: Find your purose then be resilliant to failure.**
-- Learn your **Purpose**, as you get good you hit **flow**, and then you get recognition and **pleasure**.
-  - Defined in my (blog) [http://ig2600.blogspot.com/2015/07/a-richer-model-of-happiness.html]
-  - Prioirity order: Satisifaction, Flow, and Pleasure.
-- Motivation: **Align** work with purpose. **Envision** future we desire. **Overcome** obstacles through resiliance.
+- Learn your **Purpose**, as you get good you hit **flow**, and then you get recognition and **pleasure**. See [post](/happy)
+  - Priority order: Satisfaction, Flow, and Pleasure.
+- Motivation: **Align** work with purpose. **Envision** future we desire. **Overcome** obstacles through resilience.
 - Alignment - Work is _meaningful_ for you, you frequently hit _flow_.
 - Flow - focused attention. Meditation helps.
 - Autonomy, Mastery, Purpose
@@ -280,7 +275,7 @@ _Making Profits, Rowing Accross Oceans, and Changing The World_
   - Write for 7 minutes.
 - Alternate Envisioning:
   - You're at your own Obituary
-  - You're at a talk that is deeply touching and insipiring.
+  - You're at a talk that is deeply touching and inspiring.
     - What did the speaker saying why is it touching you.
     - What makes you look up to the speaker, what do you envy.
     - Imagine the speaker is you.
@@ -289,38 +284,38 @@ _Making Profits, Rowing Accross Oceans, and Changing The World_
   - **People want to be inspired**
   - People want to help.
   - Sharing with others, will inspire others, and some will help.
-- Resilliance - ability to remove obstacles, and return to baseline when troubles.
-  - Inner Calm - Foundation of optimisim and resilliance
-  - Emotional Resilliance - Success/Failure are emotional experiances, build this, and can always celebrate progress.
-  - Cognative Resilliance - How to explain setbacks to ourselves and others, to develop optimism.
-  - **Leaders provide this service to thier organization and teams**
+- Resilience - ability to remove obstacles, and return to baseline when troubles.
+  - Inner Calm - Foundation of optimism and resilience
+  - Emotional Resilience - Success/Failure are emotional experiances, build this, and can always celebrate progress.
+  - Cognitive Resilience - How to explain setbacks to ourselves and others, to develop optimism.
+  - **Leaders provide this service to their organization and teams**
 - Inner calm
   - Day to day things go wrong, but have a deep well of calmness, and can always return to it.
   - Mindfulness key training.
-- Emotional Resilliance
-  - Success/Failure emotional experiances -> Grasping/Aversion
-- Resilliance Meditation
+- Emotional Resilience
+  - Success/Failure emotional experiences -> Grasping/Aversion
+- Resilience Meditation
   - Aversion is an emotion in the body. Get used to it, invite it as a friend.
   - 3 deep breaths to calm the mind.
   - Focus on breathing
   - Quick Body Scan
-  - 4m - Experiance failure - observe emotions/body
-  - Recall these are physioligcal experiances in the body, not you. Get used to feeling aversion.
+  - 4m - Experience failure - observe emotions/body
+  - Recall these are physiological experiences in the body, not you. Get used to feeling aversion.
   - 30s pause.
-  - 4m - Experiance success - observe emotions/body
-  - Recall these are physioligcal experiances in the body, not you. Get used to not feeling grasping.
+  - 4m - Experience success - observe emotions/body
+  - Recall these are physiological experiences in the body, not you. Get used to not feeling grasping.
   - Back to mindfulness
-- Cognative Resilliance
+- Cognitive Resilience
   - Success is 99% failure.
-  - You'll suck until youd don't
+  - You'll suck until you don't
   - Best explorers lost most of the time'.'
-  - Bill gates/brinn have no idea where they are going till they land it.
-  - Optimists: Setbacks are temporary and circumstaintial. Overcome by effort and activity, how to overcome.
+  - Bill gates/Brinn have no idea where they are going till they land it.
+  - Optimists: Setbacks are temporary and circumstantial. Overcome by effort and activity, how to overcome.
   - Pessimists: Setbacks make me helpless, I am a failure . Thinks nothing can be done, gives up.
   - Default, negative emotion 3:1 ratio.
   - Imagine you get 2$ for every 1$ lost. Objective HUGE win, but subjective feel like a loser.
   - **Realize you have a huge negative bias.**
-- Reducing cognative negative bias -> Becoming an optimisit
+- Reducing cognitive negative bias -> Becoming an optimist
   - Don't worry you'll overdue this, your negative bias so string, you'll be lucky if you get to objective.
   - Focus on positive - gratefulness journal.
   - Become objective and transform thinking on Success/Failure:
@@ -329,7 +324,7 @@ _Making Profits, Rowing Accross Oceans, and Changing The World_
     - Positive, notice if you're downplaying, and take credit
     - Negative, notice you're uplaying:
       - Find evidence temporary.
-      - Feeling inadequate, focus on past succcess.
+      - Feeling inadequate, focus on past success.
 
 ### 7) Developing Empathy by connecting to others
 
@@ -341,7 +336,7 @@ _Empathy and the Monkey business of brain tangos_
   - Similarity Up => Empathy Up.
   - What we think, We Become (why affirmations work)
   - See people and think "they're just like me", and "I want to be kind to them".
-- Like me/Loving kindess practive
+- Like me/Loving kindness practice
   - Think about the person is like you (to do record script)
   - Think about the person want loving kindness (todo record script)
 - When you get in a fight, go off in corner and do sameness/loving kindness meditation.
@@ -349,23 +344,23 @@ _Empathy and the Monkey business of brain tangos_
   - 2M: May I be well, May I be happy, May I be free from suffering
   - 2M: Neutral Person: Be well, Be happy, Be free from suffering
   - 2M: Negative Person: Be well, Be happy, Be free from suffering
-- Start with Sincerity, Kindness and Openess
+- Start with Sincerity, Kindness and Openness
   - Easy for emotional brain to think someone is "bad"
-  - Easy for your cognative brain to see someone is good, but hard to convince your emotionals.
+  - Easy for your cognitive brain to see someone is good, but hard to convince your emotions.
 - When a new relationship, or things go south
   1. Give people benefit of the doubt.
   1. Trust begins with Trust
 - When chairing a meeting: some assumptions
   1. Everyone here to serve a greater good, till proven otherwise
   1. Thus assume, None of us have hidden agendas, until proven otherwise.
-  1. Thus assume, Reasonable, even when disagree, until proven otherwhise.
+  1. Thus assume, Reasonable, even when disagree, until proven otherwise.
 - Empathic Listening:
   - Mindful Listening. BUT: answer "I heard you feel", instead of "I heard you say".
   - Prompts:
     - A difficult work situation,
     - Time when you felt pain, but couldn't do anything,
     - Other emotional juice.
-- Strengthing empathic listening:
+- Strengthening empathic listening:
   1. Mindfulness: makes us more perceptive
   1. Kindness: lets us listen better to feeling
   1. Curiosity: wonder at what people might be experiances
@@ -374,7 +369,7 @@ _Empathy and the Monkey business of brain tangos_
   - Harder: people don't like to hear 'I hear you feeling ...'
   - PRIME: Mindful Breathing, Loving Kindness/Like Me,
   - START: Remind to be curious, give lots of time.
-  - If possilbe ask how they feel.
+  - If possible ask how they feel.
   - Interesting you say that, listening to you, I'm hearing....
   - END: Make lots of time to listen and give them lots of air time.
   - META: Was this conversation helpful to you?
@@ -382,11 +377,11 @@ _Empathy and the Monkey business of brain tangos_
 - Political awareness practices:
   - Empathy practices, but on steriods.
   - Have a cross organization network of people you care about and trust and nurture them.
-  - Read the currents: How are decisions made? Authority/Concensous? Who is influencer?
+  - Read the currents: How are decisions made? Authority/Consensus? Who is influencer?
   - Distinguish: Your/Team/Organization's interests.
   - Use Self awareness to understand your role.
   - Use Empathic listening to undresatnd how people feel about situation and each other.
-- **Political awareness execrise**:
+- **Political awareness exercise**:
   - Journal, or tell a friend
   - PRIME: Think of a big, real conflict with lots of potency to you.
   - Describe the situation as if you're right for 3m.
@@ -410,11 +405,11 @@ _Being Effective and Loved at the same time_
 
 - Lead with compassion, influence with goodness, communicate with goodness.
 - **Mantra: Love them. Understand them. Forgive Them. Grow with them.**
-- Most effective commanders are liked by thier crews.
+- Most effective commanders are liked by their crews.
 - Talking about personal stuff, helps both of you build empathy.
 - Using Kindness to grow friendship from an ugly situation
   - When something goes wrong, you can usually help each other, and through that build respect, trust and friendship.
-- Compassion: Mental state with concern for suffereing of others and aspiration to see suffering relieved.
+- Compassion: Mental state with concern for suffering of others and aspiration to see suffering relieved.
   - Cognitive Compassion - I understand you
   - Emotional Component - I feel for you
   - Motivational Component - I want to help you.
@@ -462,8 +457,8 @@ _Being Effective and Loved at the same time_
     - Threats triggered very easily
     - Feel good about our status by compare ourselves to former self improving.
   - **Certainty:** Do I know what what's going on.
-    - **Build:** removing ambiguity, and giving people certainy on things that matter.
-    - Uncertainity causes rumination, and can be debiliting
+    - **Build:** removing ambiguity, and giving people certainly on things that matter.
+    - Uncertainty causes rumination, and can be debilitating
     - Worried about your job, can't do anything cuz sucks up all brain power.
   - **Autonomy:** Do I have control over the situation?
     - **Build:** making clear it's people's choice, not yours.
@@ -481,8 +476,8 @@ _Being Effective and Loved at the same time_
   - Build confidence (removes ego) in lets you do this.
   - Understand people and help them succeed -
 - How goodness can change a man's life in 10 minutes
-  - Paul eckmen, 10 minutes holding dali lama's hand experinaced goodness, stopped being angry, and decided he wnated to change the world.
-  - Goodness exteremly powerful.
+  - Paul eckmen, 10 minutes holding dali lama's hand experienced goodness, stopped being angry, and decided he wanted to change the world.
+  - Goodness extremely powerful.
 - Communicate with insight
   - Empathy not enough for conversation, also need insight into what is going on.
 - Difficult conversations
