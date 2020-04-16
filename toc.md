@@ -10,6 +10,8 @@ tags:
 
 Satisfaction is our most sustainable source of happiness. To find satisfaction, we need to live in accordance with the person we want to be. Unless we know who we want to be, and act deliberately to achieve it, our satisfaction will be infrequent, and often accidental.
 
+One of my dreams is to guide others navigate through this, which I'll do through [mortality software](/mortality-software).
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
