@@ -95,7 +95,7 @@ function generateToc(id, showPinToc) {
   Mousetrap.bind("p", e => SwapProdAndTest());
   Mousetrap.bind("z", e => (location.href = "/random"));
   Mousetrap.bind("a", e => (location.href = "/all"));
-  Mousetrap.bind("g", e => (location.href = "/toc"));
+  Mousetrap.bind("m", e => (location.href = "/toc"));
 
   let shortcutHelp = `
 Keyboard Shortcuts: 
@@ -104,7 +104,7 @@ Keyboard Shortcuts:
   p - swap prod and test
   z - surprise me
   a - all posts
-  g - global toc
+  m - global toc
   `;
   Mousetrap.bind("?", e => alert(shortcutHelp));
 }
