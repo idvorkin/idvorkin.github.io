@@ -12,15 +12,16 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 <!-- vim-markdown-toc GFM -->
 
 - [Current Addictions](#current-addictions)
+    - [Crisis Porn - Covid 19](#crisis-porn---covid-19)
 - [Hypo Addictions](#hypo-addictions)
-  - [Social Media Analyitics](#social-media-analyitics)
-    - [Linked in friend count](#linked-in-friend-count)
-    - [Stock market price](#stock-market-price)
+    - [Social Media Analyitics](#social-media-analyitics)
+        - [Linked in friend count](#linked-in-friend-count)
+        - [Stock market price](#stock-market-price)
 - [Beaten addictions (for now)](#beaten-addictions-for-now)
-  - [Pokeman Go](#pokeman-go)
-  - [TikToc](#tiktoc)
-  - [Covid 19 News](#covid-19-news)
-  - [Alcohol](#alcohol)
+    - [Pokeman Go](#pokeman-go)
+    - [TikToc](#tiktoc)
+    - [Covid 19 News](#covid-19-news)
+    - [Alcohol](#alcohol)
 - [Getting Rid of 'em](#getting-rid-of-em)
 - [Other Resources](#other-resources)
 
@@ -28,6 +29,10 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 <!-- prettier-ignore-end -->
 
 ## Current Addictions
+
+### Crisis Porn - Covid 19
+
+Yeah, hard to [skip that](/covid).
 
 ## Hypo Addictions
 
