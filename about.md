@@ -28,6 +28,10 @@ Getting good at hard stuff takes LOTS of practice and LOTS of feedback, during w
 
 This is my implementation of [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), which is a very interesting concept that was "discovered" in 2020, where I started in 2013 :) Read more about the notes, especially the idea of knowledge work getting better and better.
 
+### Why is there such an odd ensemble of tech here?
+
+As well as collecting my thoughts, this site is also a pet project to try out random web tech.
+
 ### Can I copy this stuff?
 
 Please do!
