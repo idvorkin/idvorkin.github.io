@@ -16,7 +16,8 @@ Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if 
     - [Pain vs Suffering](#pain-vs-suffering)
     - [At the extreme - Addiction](#at-the-extreme---addiction)
     - [Magic Tricks for strangers](#magic-tricks-for-strangers)
-- [Fighting the resitance](#fighting-the-resitance)
+- [Fighting the resistance](#fighting-the-resistance)
+    - [If you don't beat it back, it will get stronger.](#if-you-dont-beat-it-back-it-will-get-stronger)
     - [Jump in the lake day.](#jump-in-the-lake-day)
     - [Positive Habits and Routine](#positive-habits-and-routine)
     - [Habit 3 - Begin with the end in mind](#habit-3---begin-with-the-end-in-mind)
@@ -39,15 +40,17 @@ Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if 
 
 The hardest part of magic, the hardest part by a mile, the #1 thing that stops me from doing magic is asking someone if they want to see a magic trick. 9 out of 10 people say yes. For the 1 of 1010 who say no, I've wasted less then 15s of their time (and mine).
 
-But I always freeze before asking someone if they want to see a trick, sometimes the resistance talks me out of doing it quickly, sometimes it fights me for minutes, sometimes, maybe 10% of the time, I can fight through the resistance, and ask, and then perform my trick, for their enoyment.
+But I always freeze before asking someone if they want to see a trick, sometimes the resistance talks me out of doing it quickly, sometimes it fights me for minutes, sometimes, maybe 10% of the time, I can fight through the resistance, and ask, and then perform my trick, for their enjoyment.
 
 I've **never** regretted showing someone a magic trick, I've never regretting being told someone doesn't want to do a magic trick, but I frequently regret not doing a magic trick.
 
-At my very best, I applied a powerful antitdote. I told myself I'd ask the first person I saw if they wanted to see a magic trick, I'd repeat this for each person I saw till I completed a magic trick.
+At my very best, I applied a powerful antidote. I told myself I'd ask the first person I saw if they wanted to see a magic trick, I'd repeat this for each person I saw till I completed a magic trick.
 
-## Fighting the resitance
+## Fighting the resistance
 
-[Resistance](/resistance)
+### If you don't beat it back, it will get stronger.
+
+Every victory over the resistance will give you the strength for the next victory. Every loss will make it harder.
 
 ### Jump in the lake day.
 
@@ -59,6 +62,8 @@ https://ig66.blogspot.com/search/label/jump_in_lake_day
 ### Positive Habits and Routine
 
 [Habits](/habits)
+
+Every day I wake up at 5am, it's my first victory over the resistance, and it gives me strength to fight through the day.
 
 ### Habit 3 - Begin with the end in mind
 
