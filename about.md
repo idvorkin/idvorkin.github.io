@@ -39,3 +39,9 @@ Please do!
 ### Are there keyboard shortcuts?
 
 Of course! Press ? to see them. Mobile browsers don't support keyboard shortcuts though.
+
+### How can I support you?
+
+<a href="https://www.patreon.com/bePatron?u=23788263" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+
+Seriously, if you do, I'll give 100% to my favorite charity which is the [School of Acrobatics and new Circus Arts](https://sancaseattle.org/support/give-today/).
