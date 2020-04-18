@@ -16,33 +16,34 @@ One of my dreams is to guide others navigate through this, which I'll do through
 <!-- vim-markdown-toc GFM -->
 
 - [You are dying](#you-are-dying)
-  - [So strive for Happy](#so-strive-for-happy)
-  - [Avoid Addiction](#avoid-addiction)
+    - [So strive for Happy](#so-strive-for-happy)
+    - [Fight the resistance](#fight-the-resistance)
+    - [Avoid Addiction](#avoid-addiction)
 - [Discover your authentic self](#discover-your-authentic-self)
-  - [Find your roles](#find-your-roles)
-  - [Write your Eulogy](#write-your-eulogy)
-  - [Set your goals](#set-your-goals)
-  - [Enjoy your Hobbies](#enjoy-your-hobbies)
+    - [Find your roles](#find-your-roles)
+    - [Write your Eulogy](#write-your-eulogy)
+    - [Set your goals](#set-your-goals)
+    - [Enjoy your Hobbies](#enjoy-your-hobbies)
 - [Maximize your sanity](#maximize-your-sanity)
-  - [Handle Pride](#handle-pride)
-  - [Inspect your idle loop](#inspect-your-idle-loop)
-  - [Stay in your circle of influence](#stay-in-your-circle-of-influence)
-  - [Cut psychic weight](#cut-psychic-weight)
-  - [Emotional Intelligence](#emotional-intelligence)
-  - [Mindfulness Training](#mindfulness-training)
-  - [Time off](#time-off)
+    - [Handle Pride](#handle-pride)
+    - [Inspect your idle loop](#inspect-your-idle-loop)
+    - [Stay in your circle of influence](#stay-in-your-circle-of-influence)
+    - [Cut psychic weight](#cut-psychic-weight)
+    - [Emotional Intelligence](#emotional-intelligence)
+    - [Mindfulness Training](#mindfulness-training)
+    - [Take Time off](#take-time-off)
 - [Invest in your health](#invest-in-your-health)
-  - [Physical Health](#physical-health)
-  - [Financial Health](#financial-health)
-  - [Cognitive Health](#cognitive-health)
-    - [Making hard decisions](#making-hard-decisions)
-    - [Being coached](#being-coached)
+    - [Physical Health](#physical-health)
+    - [Financial Health](#financial-health)
+    - [Cognitive Health](#cognitive-health)
+        - [Making hard decisions](#making-hard-decisions)
+        - [Being coached](#being-coached)
 - [Life Events](#life-events)
-  - [Changing Jobs](#changing-jobs)
-  - [Having a kid](#having-a-kid)
-  - [A sick parent](#a-sick-parent)
-  - [Mental Breakdowns](#mental-breakdowns)
-  - [Cancer](#cancer)
+    - [Changing Jobs](#changing-jobs)
+    - [Having a kid](#having-a-kid)
+    - [A sick parent](#a-sick-parent)
+    - [Mental Breakdowns](#mental-breakdowns)
+    - [Cancer](#cancer)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -58,6 +59,10 @@ The first step for mortality software is helping you figure out the person you w
 ### So strive for Happy
 
 - [Happiness 101](/happy)
+
+### Fight the resistance
+
+- [Resistance](/resistance)
 
 ### Avoid Addiction
 
@@ -110,7 +115,7 @@ Before tackling your eulogy, and your goals, you need to identify your many role
 - [Meditation](/search-inside-yourself)
 - Gratefulness and Joy
 
-### Time off
+### Take Time off
 
 - [How to spend time off](/timeoff)
 
