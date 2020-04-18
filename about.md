@@ -35,3 +35,7 @@ As well as collecting my thoughts, this site is also a pet project to try out ra
 ### Can I copy this stuff?
 
 Please do!
+
+### Are there keyboard shortcuts?
+
+Of course! Press ? to see them. Mobile browsers don't support keyboard shortcuts though.
