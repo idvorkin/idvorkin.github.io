@@ -179,10 +179,6 @@ List AWS lightsail properties
 
 ### Cool shell tools
 
-Decent blog posts:
-
-    https://remysharp.com/2018/08/23/cli-improved
-
 - Mosh - A better ssh (I no longer recommend)
 - fzf - Fuzzy file finder (Try C-R and C-T)
 - Rg - RipGrep (like ag)
@@ -551,4 +547,6 @@ _(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to
 
 ### Other Resources
 
-Good list of [tools](https://github.com/Kikobeats/awesome-cli/blob/master/README)
+List of [tools and programming tips](https://github.com/Kikobeats/awesome-cli)
+List of [List of Tools](https://remysharp.com/2018/08/23/cli-improved)
+More [lists](https://github.com/agarrharr/awesome-cli-apps)
