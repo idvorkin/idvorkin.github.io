@@ -20,11 +20,11 @@ Finally the metaphorical small print: These are my personal opinions, not those 
 
 ## FAQ
 
-### Are you OK having this sucky stuff?
+### Why does this stuff suck?
 
 Getting good at hard stuff takes LOTS of practice and LOTS of feedback, during which time the stuff you do will suck. Go watch Ira's talk above.
 
-### Why are these thoughts half baked?
+### Why are these posts half finished/half baked/make no sense?
 
 This is my implementation of [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), which is a very interesting concept that was "discovered" in 2020, where I started in 2013 :) Read more about the notes, especially the idea of knowledge work getting better and better.
 
@@ -39,6 +39,10 @@ Please do!
 ### Are there keyboard shortcuts?
 
 Of course! Press ? to see them. Mobile browsers don't support keyboard shortcuts though.
+
+### How do I get in touch?
+
+I love knowing smart, resiliant, positive people. Connect and message me on [Linked In](/linkedin).
 
 ### How can I support you?
 
