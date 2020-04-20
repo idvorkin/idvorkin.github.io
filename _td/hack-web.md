@@ -12,30 +12,29 @@ Now a days javascript and HTML are the assembly language of the web (I first [sa
 
 <!-- vim-markdown-toc GFM -->
 
-- [Hacking the web for fun and profit](#hacking-the-web-for-fun-and-profit)
-  - [Script Injection](#script-injection)
-    - [Bookmarklets](#bookmarklets)
-    - [Grease Monkey - User Script loader](#grease-monkey---user-script-loader)
-  - [Console Tricks](#console-tricks)
-    - [Load Jquery](#load-jquery)
-  - [Debugging 101](#debugging-101)
-    - [Chrome Keyboard shortcuts](#chrome-keyboard-shortcuts)
-    - [Force reloading](#force-reloading)
-    - [Capturing an object for later use](#capturing-an-object-for-later-use)
-    - [Black boxing](#black-boxing)
-    - [Event Handlers](#event-handlers)
-  - [Real life examples](#real-life-examples)
-    - [Automating todo item creation in omnifocus for web](#automating-todo-item-creation-in-omnifocus-for-web)
-    - [Screen Size Previews](#screen-size-previews)
-    - [Open graph preview Facebook](#open-graph-preview-facebook)
-    - [Web Site Preview Debugger](#web-site-preview-debugger)
-  - [Fly out TOC](#fly-out-toc)
-    - [CSS](#css)
-    - [Javscript Reverse Engineering Fly out TOC](#javscript-reverse-engineering-fly-out-toc)
-  - [CSS - Styling a web page low level abstraction.](#css---styling-a-web-page-low-level-abstraction)
-    - [CSS selectors](#css-selectors)
-  - [Bootstrap - A higher level abstraction over css.](#bootstrap---a-higher-level-abstraction-over-css)
-  - [Other resources](#other-resources)
+- [Script Injection](#script-injection)
+  - [Bookmarklets](#bookmarklets)
+  - [Grease Monkey - User Script loader](#grease-monkey---user-script-loader)
+- [Console Tricks](#console-tricks)
+  - [Load Jquery](#load-jquery)
+- [Debugging 101](#debugging-101)
+  - [Chrome Keyboard shortcuts](#chrome-keyboard-shortcuts)
+  - [Force reloading](#force-reloading)
+  - [Capturing an object for later use](#capturing-an-object-for-later-use)
+  - [Black boxing](#black-boxing)
+  - [Event Handlers](#event-handlers)
+- [Real life examples](#real-life-examples)
+  - [Automating todo item creation in omnifocus for web](#automating-todo-item-creation-in-omnifocus-for-web)
+  - [Screen Size Previews](#screen-size-previews)
+  - [Open graph preview Facebook](#open-graph-preview-facebook)
+  - [Web Site Preview Debugger](#web-site-preview-debugger)
+- [Fly out TOC](#fly-out-toc)
+  - [CSS](#css)
+  - [Javscript Reverse Engineering Fly out TOC](#javscript-reverse-engineering-fly-out-toc)
+- [CSS - Styling a web page low level abstraction.](#css---styling-a-web-page-low-level-abstraction)
+  - [CSS selectors](#css-selectors)
+- [Bootstrap - A higher level abstraction over css.](#bootstrap---a-higher-level-abstraction-over-css)
+- [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 
@@ -54,6 +53,16 @@ I'm not sure the differences, but I use [Voilent Monkey](https://violentmonkey.g
 ## Console Tricks
 
 ### Load Jquery
+
+You almost always want jquery to play
+
+```
+var jq = document.createElement('script');
+jq.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+document.getElementsByTagName('head')[0].appendChild(jq);
+// ... give time for script to load, then type (or see below for non wait option)
+jQuery.noConflict();
+```
 
 ## Debugging 101
 
