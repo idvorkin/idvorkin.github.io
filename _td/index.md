@@ -6,44 +6,26 @@ title: Igor's Technical Diary
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
 
-# Igor's Technical Diary
-
-## Projects
-
-- Major Research Areas and Musing
-  - [Cloud first applications](cloud-first-applications)
-  - [Machine Learning](machine-learning)
-  - [Security](better-security-design)
-  - [Data Systems](data-systems)
-  - [In Real Life](irl)
-  - [Design and Architecture](design)
-  - [Advertising systems](advertising)
-  - [How to be an iOS only developer](ios-nomad)
-  - [Hacking the web for fun and profit](hack-web)
-- Minor Tips
-  - [Time off 2020](time-off-3-2020)
-  - [VLC Player](vlc_player)
-  - [Pandas](pandas-tutorial)
-  - [iOS Usage](ios)
-  - [Mosh](mosh)
-  - [USB Tech](usbtech)
-  - [Visual Vocabulary](visual-vocabulary)
-- Complete Projects
-  - [Ring Video Downloader](ring-video-download)
-  - [Extract message history on OSX](dump_imessage_history)
-- In Progress Projects
-  - [Deploy a private web site](private_web_site)
-  - [Windows Virtual Desktop](virtual-desktops)
-  - [Alexa Skill](alexa-skill)
-  - [ManageMe](https://github.com/idvorkin/manage-me)
-
-## Awesome Lists
+Below is a collection of my research and technical explorations. Hopefully you find it useful, at a minimum I did.
 
 <!--
 Not using prettier ignore gaurds as vimtoc gets confused here.
 -->
 <!-- vim-markdown-toc GFM -->
 
+- [Design](#design)
+- [Cloud First Applications](#cloud-first-applications)
+- [Data Systems](#data-systems)
+- [Security](#security)
+- [ML](#ml)
+- [Advertising](#advertising)
+- [Other](#other)
+- [Minor Tips](#minor-tips)
+- [Projects](#projects)
+  - [Complete](#complete)
+  - [In Flight](#in-flight)
+  - [On Deck](#on-deck)
+  - [Mothballed](#mothballed)
 - [Markdown](#markdown)
 - [VIM](#vim)
 - [C Sharp](#c-sharp)
@@ -53,18 +35,18 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [Apple](#apple)
 - [Home Automation](#home-automation)
 - [Text manipulation tools](#text-manipulation-tools)
-    - [jq](#jq)
-    - [Pup - regexp For HTML](#pup---regexp-for-html)
+  - [jq](#jq)
+  - [Pup - regexp For HTML](#pup---regexp-for-html)
 - [Cool shell tools](#cool-shell-tools)
 - [Natural Language Processing](#natural-language-processing)
 - [Azure One Liners](#azure-one-liners)
-    - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
+  - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
 - [git](#git)
-    - [Diff-So-Fancy](#diff-so-fancy)
-    - [Git Stats](#git-stats)
-    - [Tig](#tig)
-    - [lazygit](#lazygit)
-    - [fac](#fac)
+  - [Diff-So-Fancy](#diff-so-fancy)
+  - [Git Stats](#git-stats)
+  - [Tig](#tig)
+  - [lazygit](#lazygit)
+  - [fac](#fac)
 - [GitHub](#github)
 - [SSH](#ssh)
 - [TMUX](#tmux)
@@ -72,31 +54,99 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [App Launchers](#app-launchers)
 - [Chrome extensions](#chrome-extensions)
 - [Web tools (http)](#web-tools-http)
-    - [wuzz](#wuzz)
-    - [httplab](#httplab)
-    - [httpie](#httpie)
-    - [httpprompt](#httpprompt)
-    - [Link Checkers](#link-checkers)
-    - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
-    - [w3m - Text based web browser](#w3m---text-based-web-browser)
+  - [wuzz](#wuzz)
+  - [httplab](#httplab)
+  - [httpie](#httpie)
+  - [httpprompt](#httpprompt)
+  - [Link Checkers](#link-checkers)
+  - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
+  - [w3m - Text based web browser](#w3m---text-based-web-browser)
 - [Video Manipulation Tools](#video-manipulation-tools)
 - [Linters and formatters](#linters-and-formatters)
 - [Switching between Unix and DOS file ending](#switching-between-unix-and-dos-file-ending)
 - [Spelling](#spelling)
 - [Web scripting](#web-scripting)
 - [Programming Helpers](#programming-helpers)
-    - [howdoi](#howdoi)
+  - [howdoi](#howdoi)
 - [PlantUML alternatives](#plantuml-alternatives)
 - [PlantUML](#plantuml)
-    - [PlantUML Tools](#plantuml-tools)
-    - [PlantUML in Markdown](#plantuml-in-markdown)
-    - [Quirks](#quirks)
+  - [PlantUML Tools](#plantuml-tools)
+  - [PlantUML in Markdown](#plantuml-in-markdown)
+  - [Quirks](#quirks)
 - [Windows Managers](#windows-managers)
 - [CLI Screen Recoding](#cli-screen-recoding)
-    - [Show pressed keys](#show-pressed-keys)
+  - [Show pressed keys](#show-pressed-keys)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
+
+### Design
+
+- [Design and Architecture](design)
+
+### Cloud First Applications
+
+- [Cloud first applications](cloud-first-applications)
+
+### Data Systems
+
+- [Data Systems](data-systems)
+
+### Security
+
+- [Security](better-security-design)
+
+### ML
+
+- [Machine Learning](machine-learning)
+
+### Advertising
+
+- [Advertising systems](advertising)
+
+### Other
+
+- [How to be an iOS only developer](ios-nomad)
+- [Hacking the web for fun and profit](hack-web)
+- [In Real Life](irl)
+
+### Minor Tips
+
+- [Time off 2020](time-off-3-2020)
+- [VLC Player](vlc_player)
+- [Pandas](pandas-tutorial)
+- [iOS Usage](ios)
+- [Mosh](mosh)
+- [USB Tech](usbtech)
+- [Visual Vocabulary](visual-vocabulary)
+
+### Projects
+
+Finishing projects requires crossing [the dip](/dip), and the best way to do that is quit, or don't even start projects you don't have the energy to complete. To improve my chances of success, I try to have a limited set of projects in flight, and deliberatelly mothball projects I don't think are worth completing.
+
+#### Complete
+
+A few that made it over the finish line
+
+- [Ring Video Downloader](ring-video-download)
+- [Extract message history on OSX](dump_imessage_history)
+
+#### In Flight
+
+Just like kanban, you don't want too many projects in flight, and this list reminds me to limit my open projects.
+
+#### On Deck
+
+- Make a single video from all my ring videos
+
+#### Mothballed
+
+Several Projects that I started and deliberatly mothballed so I'd have capacity for my other projects
+
+- [Deploy a private web site](private_web_site)
+- [Windows Virtual Desktop](virtual-desktops)
+- [Alexa Skill](alexa-skill)
+- [ManageMe](https://github.com/idvorkin/manage-me)
 
 ### Markdown
 
