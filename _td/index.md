@@ -138,6 +138,7 @@ Just like kanban, you don't want too many projects in flight, and this list remi
 #### On Deck
 
 - Make a single video from all my ring videos
+- 3D printing 
 
 #### Mothballed
 
