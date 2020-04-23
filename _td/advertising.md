@@ -4,59 +4,126 @@ no-render-title: true
 title: Advertising
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/advertising.md)_
+Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.
 
-# Advertising
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/advertising.md)_
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Why?](#why)
-    - [Success Criteria for this post](#success-criteria-for-this-post)
-    - [Performance vs Display](#performance-vs-display)
-    - [Useful terms](#useful-terms)
-        - [Ad inventory](#ad-inventory)
-        - [Ad Supply](#ad-supply)
-        - [Ad inventory](#ad-inventory-1)
-        - [Retargetting](#retargetting)
-    - [Entities](#entities)
-        - [Data Mining](#data-mining)
-        - [MCN](#mcn)
-    - [Metrics](#metrics)
-        - [CPM Cost per thousand views](#cpm-cost-per-thousand-views)
-        - [ECPM Effective CPM](#ecpm-effective-cpm)
-        - [CPC - Cost per click](#cpc---cost-per-click)
-        - [ROAS - Return on ads Spend](#roas---return-on-ads-spend)
-        - [CTR - Call to action (click) by views](#ctr---call-to-action-click-by-views)
-        - [Video CTR](#video-ctr)
-        - [Evergreen content](#evergreen-content)
-    - [Other concept](#other-concept)
-        - [Why video](#why-video)
-    - [How much can a creator make](#how-much-can-a-creator-make)
-        - [Ad revenue sharing.](#ad-revenue-sharing)
-        - [Brand sponsorship.](#brand-sponsorship)
-        - [Consumer Payment + Tips](#consumer-payment--tips)
-        - [Merch](#merch)
-        - [Bootstraping - Crowd funding](#bootstraping---crowd-funding)
+- [Why Advertise](#why-advertise)
+  - [What is a brand?](#what-is-a-brand)
+  - [The bottleneck for someone using your brand](#the-bottleneck-for-someone-using-your-brand)
+  - [How much should a brand spend Customer Acquisition Cost (CAC) and Customer Life Time Value (CLTV)](#how-much-should-a-brand-spend-customer-acquisition-cost-cac-and-customer-life-time-value-cltv)
+  - [How much do companies spend](#how-much-do-companies-spend)
+  - [What percent of gross revenue on advertising?](#what-percent-of-gross-revenue-on-advertising)
+  - [How much do ad platforms make?](#how-much-do-ad-platforms-make)
+- [Useful terms](#useful-terms)
+  - [Performance and display](#performance-and-display)
+  - [Ad Supply](#ad-supply)
+  - [Ad inventory](#ad-inventory)
+  - [Retargetting](#retargetting)
+  - [CPM Cost per thousand views](#cpm-cost-per-thousand-views)
+  - [ECPM Effective CPM](#ecpm-effective-cpm)
+  - [CPC - Cost per click](#cpc---cost-per-click)
+  - [ROAS - Return on ads Spend](#roas---return-on-ads-spend)
+  - [CTR - Call to action (click) by views](#ctr---call-to-action-click-by-views)
+  - [Video CTR](#video-ctr)
+  - [Evergreen content](#evergreen-content)
+- [Entities](#entities)
+  - [Data Mining](#data-mining)
+  - [MCN](#mcn)
+- [Metrics](#metrics)
+- [Ad Products](#ad-products)
+  - [Print](#print)
+  - [TV](#tv)
+  - [Video - Preroll, Inline](#video---preroll-inline)
+  - [Sponsored/Branded Experiences](#sponsoredbranded-experiences)
+  - [Snapchat Lenses (snap chat)](#snapchat-lenses-snap-chat)
+  - [Sponsored in feed](#sponsored-in-feed)
+- [Case study monetizing SnapChat](#case-study-monetizing-snapchat)
+  - [No room in the camera](#no-room-in-the-camera)
+  - [Sponsored Lenses where a novel ad product, which they addded.](#sponsored-lenses-where-a-novel-ad-product-which-they-addded)
+  - [Sponsored Stories where also a novel ad product, which they added.](#sponsored-stories-where-also-a-novel-ad-product-which-they-added)
+- [Other concept](#other-concept)
+  - [Gorilla Marketing](#gorilla-marketing)
+  - [Why video](#why-video)
+- [How much can a creator make](#how-much-can-a-creator-make)
+  - [Affiliate Marketing](#affiliate-marketing)
+  - [Ad revenue sharing.](#ad-revenue-sharing)
+  - [Brand sponsorship.](#brand-sponsorship)
+  - [Consumer Payment + Tips](#consumer-payment--tips)
+  - [Merch](#merch)
+  - [Bootstraping - Crowd funding](#bootstraping---crowd-funding)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-# Why?
+## Why Advertise
 
-Advertising is an huge business. 155 billion in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend.
+### What is a brand?
 
-## Success Criteria for this post
+A brand is the way a company, organization, or individual is perceived by those who experience it. More than simply a name, term, design, or symbol, a brand is the recognizable feeling a product or business evokes. [Copied from here](http://www.ignytebrands.com/what-is-a-brand/)
 
-## Performance vs Display
+Brands, then, live in the mind. They live in the minds of everyone who experiences them: employees, investors, the media, and, perhaps most importantly, customers.
+
+Simply put, brands are perceptions.
+
+### The bottleneck for someone using your brand
+
+At the end of the day, many products and brands are fungible, solving an identical customer need, modulo, competing for the same dollar. To pick which brand gets to solve the product (and be paid), the customer needs to think of your brand (discovery), and believe your brand is best.
+
+Advertising both of these.
+
+### How much should a brand spend Customer Acquisition Cost (CAC) and Customer Life Time Value (CLTV)
+
+Once a customer is subscribed to something, they likely won't switch. This means you can compute the CLTV of a customer and so long as the CAC < CLTV, it's worth spending.
+
+### How much do companies spend
+
+Ad spending is high. Some US examples of top advertisers
+
+| Brand          | Spend |
+| -------------- | ----- |
+| Facebook       | 10B   |
+| Comcast        | 5.75B |
+| Amazon         | 3.38B |
+| General Motors | 3.25B |
+
+https://www.statista.com/statistics/506867/facebook-marketing-spending/
+
+### What percent of gross revenue on advertising?
+
+| Industry          | Spend |
+| ----------------- | ----- |
+| Consumer Products | 24%   |
+| Consumer Services | 15%   |
+| Tech              | 15%   |
+| Education         | 11%   |
+| Banking           | 8%    |
+
+Need to do more vetting from balance sheets, but - https://deloitte.wsj.com/cmo/2017/01/24/who-has-the-biggest-marketing-budgets/
+
+### How much do ad platforms make?
+
+In 2019
+
+| Company  | Value |
+| -------- | ----- |
+| Google   | 162B  |
+| Facebook | 71B   |
+| Amazon   | 14B   |
+| Youtube  | 15B   |
+
+https://marketingland.com/youtube-kicked-in-15-billion-as-google-ad-revenues-topped-134-billion-in-2019-275373
+
+## Useful terms
+
+### Performance and display
 
 **Performance** Pay for a call to action. The metric is Cost Per Click (CPM). This is direct marketing in Godin terms. video.
 
 **Display** Pay to show the ads - the metric is CPM (cost per thousand impressions). This is brand Marketing in Godin terms.
-
-## Useful terms
-
-### Ad inventory
 
 ### Ad Supply
 
@@ -66,17 +133,11 @@ The number of eyeballs that see your site.
 
 The number of sellable eyeballs. The ad load x ad supply.
 
+Creators generate "Ad Inventory", and the social media platform "sell" the inventory buy showing Ads (aka, using their Ad Supply)
+
 ### Retargetting
 
-Following an advertiser
-
-## Entities
-
-### Data Mining
-
-### MCN
-
-## Metrics
+Following a user, this is when ads chase you accross sites.
 
 ### CPM Cost per thousand views
 
@@ -102,7 +163,49 @@ Following an advertiser
 
     Content that's valuable for ever. E.g TV buying guides. The more ever green content is, the longer you can have a revenue stream.
 
+## Entities
+
+### Data Mining
+
+### MCN
+
+## Metrics
+
+## Ad Products
+
+### Print
+
+### TV
+
+### Video - Preroll, Inline
+
+### Sponsored/Branded Experiences
+
+### Snapchat Lenses (snap chat)
+
+A lens in a geofenced area
+
+### Sponsored in feed
+
+When watching video/TicTo/Stories you get a video that iss sold from a brand,
+
+## Case study monetizing SnapChat
+
+### No room in the camera
+
+I'm not sure if this accurate, making it up. Snap had a challenge when it started life, because it was a camera company and there was no where to place ad invetory.
+
+### Sponsored Lenses where a novel ad product, which they addded.
+
+### Sponsored Stories where also a novel ad product, which they added.
+
 ## Other concept
+
+### Gorilla Marketing
+
+Guerrilla techniques mostly play on the element of surprise. It sets out to create highly unconventional campaigns that catch people unexpectedly in the course of their day-to-day routines. You’ll see what that looks like in some the examples below.
+
+https://blog.hubspot.com/marketing/guerilla-marketing-examples
 
 ### Why video
 
@@ -111,6 +214,12 @@ Half of advertising spend is still on TV. Tech companies want to capture that sp
 ## How much can a creator make
 
 Not quite related to advertising, but a related concept is how much can creators make.
+
+### Affiliate Marketing
+
+This is when creators say, use square space, it's because square space gives them a cut of people who sign up, for square space it's TK dollars per signup.
+
+This is also when creators say "when you click this link I'll get some money" Amazon used to pay north of 10% cut, but they did a major reduction during CV19.
 
 ### Ad revenue sharing.
 
