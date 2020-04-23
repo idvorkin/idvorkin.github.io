@@ -12,29 +12,33 @@ Now a days javascript and HTML are the assembly language of the web (I first [sa
 
 <!-- vim-markdown-toc GFM -->
 
-- [Script Injection](#script-injection)
-  - [Bookmarklets](#bookmarklets)
-  - [Grease Monkey - User Script loader](#grease-monkey---user-script-loader)
-- [Console Tricks](#console-tricks)
-  - [Load Jquery](#load-jquery)
-- [Debugging 101](#debugging-101)
-  - [Chrome Keyboard shortcuts](#chrome-keyboard-shortcuts)
-  - [Force reloading](#force-reloading)
-  - [Capturing an object for later use](#capturing-an-object-for-later-use)
-  - [Black boxing](#black-boxing)
-  - [Event Handlers](#event-handlers)
-- [Real life examples](#real-life-examples)
-  - [Automating todo item creation in omnifocus for web](#automating-todo-item-creation-in-omnifocus-for-web)
-  - [Screen Size Previews](#screen-size-previews)
-  - [Open graph preview Facebook](#open-graph-preview-facebook)
-  - [Web Site Preview Debugger](#web-site-preview-debugger)
-- [Fly out TOC](#fly-out-toc)
-  - [CSS](#css)
-  - [Javscript Reverse Engineering Fly out TOC](#javscript-reverse-engineering-fly-out-toc)
-- [CSS - Styling a web page low level abstraction.](#css---styling-a-web-page-low-level-abstraction)
-  - [CSS selectors](#css-selectors)
-- [Bootstrap - A higher level abstraction over css.](#bootstrap---a-higher-level-abstraction-over-css)
-- [Other resources](#other-resources)
+- [Hacking the web for fun and profit](#hacking-the-web-for-fun-and-profit)
+  - [Script Injection](#script-injection)
+    - [Bookmarklets](#bookmarklets)
+    - [Grease Monkey - User Script loader](#grease-monkey---user-script-loader)
+  - [Console Tricks](#console-tricks)
+    - [Load Jquery](#load-jquery)
+  - [Debugging 101](#debugging-101)
+    - [Chrome Keyboard shortcuts](#chrome-keyboard-shortcuts)
+    - [Force reloading](#force-reloading)
+    - [Capturing an object for later use](#capturing-an-object-for-later-use)
+    - [Black boxing](#black-boxing)
+    - [Event Handlers](#event-handlers)
+  - [Real life examples](#real-life-examples)
+    - [Download the Alexa sound recording](#download-the-alexa-sound-recording)
+      - [Putting it all together.](#putting-it-all-together)
+      - [Red herrings - but good approaches](#red-herrings---but-good-approaches)
+    - [Automating todo item creation in omnifocus for web](#automating-todo-item-creation-in-omnifocus-for-web)
+    - [Screen Size Previews](#screen-size-previews)
+    - [Open graph preview Facebook](#open-graph-preview-facebook)
+    - [Web Site Preview Debugger](#web-site-preview-debugger)
+  - [Fly out TOC](#fly-out-toc)
+    - [CSS](#css)
+    - [Javscript Reverse Engineering Fly out TOC](#javscript-reverse-engineering-fly-out-toc)
+  - [CSS - Styling a web page low level abstraction.](#css---styling-a-web-page-low-level-abstraction)
+    - [CSS selectors](#css-selectors)
+  - [Bootstrap - A higher level abstraction over css.](#bootstrap---a-higher-level-abstraction-over-css)
+  - [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 
@@ -96,7 +100,106 @@ Often there's a useful object, that's only available in the closure. You can alw
 
 ## Real life examples
 
-These should break all the time, and be of minimal interst to anyone but Igor, but it's my blog so there.
+### Download the Alexa sound recording
+
+Goto page:
+
+https://www.amazon.com/hz/mycd/myx/#/home/alexaPrivacy/activityHistory&custom&1388538769000&1587497019949
+
+Turns out there are audio elements on the page
+
+    $("audio")
+
+Normally, the src attribute in the src element would have a src element, which is does not:
+
+    <audio id="audio-A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1">
+        <source id="audioSource-A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1"/>
+    </audio>
+
+However, when you click on the play button src attribute appears on the source element:
+
+    <audio id="audio-A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1">
+        <source id="audioSource-A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1"
+        src="https://www.amazon.com/hz/mycd/playOption?id=A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1">
+    </audio>
+
+And luckily, the "src" is encoding in the audio source id. Let's pull those out:
+
+       https://www.amazon.com/hz/mycd/playOption?id=
+
+So
+
+    $("audio source").each((i,e)=> console.log($(e).attr("id").replace("audioSource-","")))
+
+And lets prepend the download URL
+
+       https://www.amazon.com/hz/mycd/playOption?id=A3S5BH2HU6VAYF:1.0/2020/04/21/19/G090LF1175130LD2/23:09::TNIH_2V.252ac310-314c-48e4-b433-749bdb9e8b5eZXV/0
+
+       <audio
+       id="audio-A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1"
+       >
+       <source
+       id="audioSource-                                  A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1"
+       src="https://www.amazon.com/hz/mycd/playOption?id=A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1"
+       />
+       </audio>
+
+#### Putting it all together.
+
+This is gobboldy gook for most folks, but useful for me to look up later:
+
+    let playerPrefix = "https://www.amazon.com/hz/mycd/playOption?id="
+    function dumpClips() {
+        // For every  entry in the list
+        $(".mainBox").each((i,e)=> {
+            var audio_src =  $(e).find("audio source").attr("id").replace("audioSource-","");
+            console.log(playerPrefix+audio_src);
+            var timeLoc  =  $(e).find(".subInfo").get(0)
+            if (timeLoc)
+            {
+                console.log(timeLoc.textContent.trim())
+            }
+            var textElem  =  $(e).find(".summaryCss").get(0)
+            if (textElem)
+            {
+                var text = textElem.textContent.trim()
+                console.log(text);
+            }
+            else
+            {
+                // console.log("Text not found", e)
+            }
+        })
+    }
+
+    function everyTick() {
+        dumpClips()
+        $("#nextButton").click()
+    }
+
+    setInterval(everyTick, 5*1000)
+
+#### Red herrings - but good approaches
+
+Red Herring: Look at source
+
+You could go looking for the code, but don't bother it's minified and not required as you can easily execute the code, and interact with the results. However, if you want to chase this path
+
+1. Look at what code is downloaded from network and sources tab.
+2. Prettify source code
+3. Add breakpoints on source code, or DOM modification events, or callbacks like keyboard or mouse.
+
+Red Herring: Play button doesn't appear till you open the chevrons:
+
+    $(".fa-angle-down").click()
+
+Red Herring: Audio src doesn't appear till you click the play button:
+
+    $(".playButton").click()
+
+Red Herring: Search for a handy JSON blob.
+
+If you're lucky the JS downlads a data blob, you can check this by going to the network view, and searching for what you're looking for. In this case, a partial html page was downloaded, which is harder to parse then the DOM (which you can search via JQuery)
 
 ### Automating todo item creation in omnifocus for web
 
