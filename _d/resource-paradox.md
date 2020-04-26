@@ -43,7 +43,7 @@ Work expands to fill the resources available. The more you make the more you spe
 
 ## Why
 
-I think this has to do with the long tail and the paerato principle, which states you get 80% of the value with 20% of the work. Without resoure constraints (or the deliberate focus on opporutnity cost), you won't stop even though you are long past the point of diminishing returns. Slighlty related concepts are 'sunk cost fallacy', 'bike shedding', 'ikea effect', 'loss aversion'.
+I think this has to do with the long tail and the Pareto principle, which states you get 80% of the value with 20% of the work. Without resource constraints (or the deliberate focus on opportunity cost), you won't stop even though you are long past the point of diminishing returns. Slightly related concepts are 'sunk cost fallacy', 'bike shedding', 'IKEA effect', 'loss aversion'.
 
 ### Relation to Procrastination
 
@@ -61,9 +61,9 @@ I think this has to do with the long tail and the paerato principle, which state
 
 ### Amazon's Leadership principle - Frugality
 
-I think Frugality is Amazon's least understood [Leadership Principline](/amazon). Many people think it's about saving 100\$ buy buying a door desk (by the way, door desk end up being more expensive as they are not re-usable given they have been 'cut' to size), it is in fact about buildign somethign with 5 people when you think you have 8.
+I think Frugality is Amazon's least understood [Leadership Principle](/amazon). Many people think it's about saving 100\$ buy buying a door desk (by the way, door desk end up being more expensive as they are not re-usable given they have been 'cut' to size), it is in fact about building something with 5 people when you think you have 8.
 
-This prevents you from focusing on anythign but the high order bit.
+This prevents you from focusing on anything but the high order bit.
 
 ### Lean Startup
 
@@ -89,7 +89,7 @@ This prevents you from focusing on anythign but the high order bit.
 
 ### The art of tidying up.
 
-If you go into your closet, and take out a few things, you end up in Zeno's paradox. You'll continue to take out half the stuff, but you'll never get there. By contrast, the way to clean your closet, is take everything out, and only put back things you absoloutely must have.
+If you go into your closet, and take out a few things, you end up in Zeno's paradox. You'll continue to take out half the stuff, but you'll never get there. By contrast, the way to clean your closet, is take everything out, and only put back things you absolutely must have.
 
 ## Funny other variants
 
