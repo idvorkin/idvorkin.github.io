@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Parkinson's Law: The Paradox or resources"
+title: "Parkinson's Law: The Paradox of resources"
 tags:
   - manager
 permalink: parkinson
@@ -102,4 +102,5 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Parkinson's_law?wprov=sfti1)
 - Data expands to fill the space available for storage.[8]
 - Work complicates to fill the available time.
 - If you wait until the last minute, it only takes a minute to do.[5]
+
 - Work contracts to fit in the time we give it.[6]
