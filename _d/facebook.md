@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My thoughts on facebook"
-permalink: /amazon
+permalink: /facebook
 ---
 
 I work at Facebook, here are my thoughts
