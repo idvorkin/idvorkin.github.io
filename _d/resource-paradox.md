@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Parkinson's Law: The Paradox of resources"
+title: "Parkinson's Law: The Paradox of Plenty"
 tags:
   - manager
 permalink: parkinson
