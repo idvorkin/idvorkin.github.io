@@ -22,10 +22,10 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [Other](#other)
 - [Minor Tips](#minor-tips)
 - [Projects](#projects)
-  - [Complete](#complete)
-  - [In Flight](#in-flight)
-  - [On Deck](#on-deck)
-  - [Mothballed](#mothballed)
+    - [Complete](#complete)
+    - [In Flight](#in-flight)
+    - [On Deck](#on-deck)
+    - [Mothballed](#mothballed)
 - [Markdown](#markdown)
 - [VIM](#vim)
 - [C Sharp](#c-sharp)
@@ -35,18 +35,18 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [Apple](#apple)
 - [Home Automation](#home-automation)
 - [Text manipulation tools](#text-manipulation-tools)
-  - [jq](#jq)
-  - [Pup - regexp For HTML](#pup---regexp-for-html)
+    - [jq](#jq)
+    - [Pup - regexp For HTML](#pup---regexp-for-html)
 - [Cool shell tools](#cool-shell-tools)
 - [Natural Language Processing](#natural-language-processing)
 - [Azure One Liners](#azure-one-liners)
-  - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
+    - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
 - [git](#git)
-  - [Diff-So-Fancy](#diff-so-fancy)
-  - [Git Stats](#git-stats)
-  - [Tig](#tig)
-  - [lazygit](#lazygit)
-  - [fac](#fac)
+    - [Diff-So-Fancy](#diff-so-fancy)
+    - [Git Stats](#git-stats)
+    - [Tig](#tig)
+    - [lazygit](#lazygit)
+    - [fac](#fac)
 - [GitHub](#github)
 - [SSH](#ssh)
 - [TMUX](#tmux)
@@ -54,28 +54,28 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [App Launchers](#app-launchers)
 - [Chrome extensions](#chrome-extensions)
 - [Web tools (http)](#web-tools-http)
-  - [wuzz](#wuzz)
-  - [httplab](#httplab)
-  - [httpie](#httpie)
-  - [httpprompt](#httpprompt)
-  - [Link Checkers](#link-checkers)
-  - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
-  - [w3m - Text based web browser](#w3m---text-based-web-browser)
+    - [wuzz](#wuzz)
+    - [httplab](#httplab)
+    - [httpie](#httpie)
+    - [httpprompt](#httpprompt)
+    - [Link Checkers](#link-checkers)
+    - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
+    - [w3m - Text based web browser](#w3m---text-based-web-browser)
 - [Video Manipulation Tools](#video-manipulation-tools)
 - [Linters and formatters](#linters-and-formatters)
 - [Switching between Unix and DOS file ending](#switching-between-unix-and-dos-file-ending)
 - [Spelling](#spelling)
 - [Web scripting](#web-scripting)
 - [Programming Helpers](#programming-helpers)
-  - [howdoi](#howdoi)
+    - [howdoi](#howdoi)
 - [PlantUML alternatives](#plantuml-alternatives)
 - [PlantUML](#plantuml)
-  - [PlantUML Tools](#plantuml-tools)
-  - [PlantUML in Markdown](#plantuml-in-markdown)
-  - [Quirks](#quirks)
+    - [PlantUML Tools](#plantuml-tools)
+    - [PlantUML in Markdown](#plantuml-in-markdown)
+    - [Quirks](#quirks)
 - [Windows Managers](#windows-managers)
 - [CLI Screen Recoding](#cli-screen-recoding)
-  - [Show pressed keys](#show-pressed-keys)
+    - [Show pressed keys](#show-pressed-keys)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -138,7 +138,7 @@ Just like kanban, you don't want too many projects in flight, and this list remi
 #### On Deck
 
 - Make a single video from all my ring videos
-- 3D printing 
+- 3D printing
 
 #### Mothballed
 
@@ -576,7 +576,7 @@ Then render it like an image e.g.
 
 Tools that let you re-tile
 
-- OSX - Magnets
+- OSX - [Better Snap Tool](https://apps.apple.com/us/app/bettersnaptool/id417375580?mt=12)
 - Windows - Windows Power Toys - [FancyZones](https://github.com/microsoft/PowerToys)
 
 ### CLI Screen Recoding
