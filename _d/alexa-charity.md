@@ -6,11 +6,10 @@ tags:
 permalink: /toysfortots
 redirect_from:
   - /alexa-charity
+  - /tft
 ---
 
 One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations
-
-\*Add comments soon (for now, edit from github).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -25,15 +24,12 @@ One of the most satisfying (and fun) projects I worked on in my career was givin
 
 ## Marketting and PR the big guns.
 
-This was a marquee features for Amazon and they put a lot of muscle behind it.
+This was a marquee features for Amazon and they put a lot of muscle behind it. Here were some of the ads:
 
-For the first year,
+{% include youtube.html src="fe3OYc_2H64" %}
+{% include youtube.html src="inD9qdw0KGk" %}
 
-Link to Dax Shepard Video
-
-For the second year we got iron man:
-
-Link to IronMan video
+![](https://github.com/idvorkin/blob/raw/master/tft/shaq.gif)
 
 ## Customer Impact
 
