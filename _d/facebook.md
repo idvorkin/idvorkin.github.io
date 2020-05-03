@@ -18,9 +18,15 @@ Give people the power to build community and bring the world closer together, he
     - [Design Quality](#design-quality)
     - [Employees First](#employees-first)
     - [The Trio: Engineering, Product Management and Data Science](#the-trio-engineering-product-management-and-data-science)
+- [The peculiar](#the-peculiar)
+    - [Facebook Groups instead of e-mail](#facebook-groups-instead-of-e-mail)
+    - [Mono repo.](#mono-repo)
+    - [Mercurial instead of git](#mercurial-instead-of-git)
 - [The Bad](#the-bad)
-    - [Looking forward to finding out](#looking-forward-to-finding-out)
+    - [I'm new, will add my thoughts as I know them](#im-new-will-add-my-thoughts-as-i-know-them)
 - [Engineering Systems](#engineering-systems)
+    - [Open source lots](#open-source-lots)
+    - [A CLEAR priority](#a-clear-priority)
 - [My projects at Facebook](#my-projects-at-facebook)
     - [Amplifying Connection through Art and tech.](#amplifying-connection-through-art-and-tech)
     - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
@@ -30,6 +36,9 @@ Give people the power to build community and bring the world closer together, he
     - [Be Bold](#be-bold)
     - [Be Open](#be-open)
     - [Build Social Value](#build-social-value)
+- [Lingo and Culture](#lingo-and-culture)
+    - [Show up with grace](#show-up-with-grace)
+    - [TL;DR](#tldr)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -42,6 +51,8 @@ Fantastic idea, 4-6 weeks dedicated to learning about Facebook. Managers also go
 A major part of bootcamp is doing tasks, which is hands on learning, and a great introduction to teams.
 
 NOTE: I did bootcamp through Pandemic 1 so my experience might be a bit different.
+
+NOTE: At all companies I've worked at a strong correlation to engineer success is days till first checkin. For sure there's some correlation not causation here, BUT at FB, all boot campers deploy a 'hello world' to FB on your first few days, and you fix your first production bug in the first week.
 
 ### Inclusion and Diversity.
 
@@ -76,17 +87,43 @@ Amazon was good at many things, pretty UX not so much. Facebook is a leader in U
 
 ### Employees First
 
-During [Covid](/covid19), FB wanted to relax it's employees so gave them all a 1K bonus, and guaranteed a rating of exceeded. They also said folks that couldn't WFH, and thus didn't work would still get paid. That's impressive.
+During [Covid](/covid19), FB wanted to relax it's employees so gave them all a 1K bonus, and guaranteed a rating of exceeded. They also said folks that couldn't WFH, like chefs, would still get paid. That's impressive.
 
+At FB, they have a salad bar, and at the end of the bar, there's a guy who 'tosses' your salad dressing. My friend asked him, hey I can toss my own dressing, why are you doing that. He answered - "You can, but FB knows you're special, and wants you to remember it every day, and that's why I'm doing this'.
+
+Wow!!!
+
+<!--
 ### The Trio: Engineering, Product Management and Data Science
+-->
+
+## The peculiar
+
+### Facebook Groups instead of e-mail
+
+Facebook has an enterprise product called Workspace, which is essentially FB. FB uses this instead of e-mail. While odd, it does mean that FB gets better and workplaces get better all at the same time!
+
+### Mono repo.
+
+Peculiar when you come from large companies other then Google.
+
+### Mercurial instead of git
+
+Partially because of the choice of Mono Repo, FB needed to push changes back to community, git didn't want to take them so they pushed them to Mercurial. Sadly, mercurial lost (which is a shame, as I think Mercurial was better).
 
 ## The Bad
 
-### Looking forward to finding out
+### I'm new, will add my thoughts as I know them
 
 ## Engineering Systems
 
 Oh, so good. Need to figure out what is public and what is private
+
+### Open source lots
+
+Many FB tools get open sourced, tupper ware, mercurial improvements, flow, even data center hardware designs -- what a pleasant contrast to most other places
+
+### A CLEAR priority
 
 ## My projects at Facebook
 
@@ -111,8 +148,9 @@ Used to be move fast and break stuff, but that's not good at this size. Now it's
 
 ### Be Bold
 
-- Play to win vs Play to not Lose
-- Need to fail once per half
+- Play to win not 'play to not lose'
+- Need to fail once per half, if you're not you're not working hard enough.
+- As you get into the half, figure out what goals to dump, and where to double down.n
 
 ### Be Open
 
@@ -124,3 +162,9 @@ Used to be move fast and break stuff, but that's not good at this size. Now it's
 - FB's idea of social value is 'connecting people'
 - When you connect people that are mostly similar, they will become more tolerant of each other
 - NOTE: When you connect people that are diametrically opposed, they tend to dig in their heals.
+
+## Lingo and Culture
+
+### Show up with grace
+
+### TL;DR
