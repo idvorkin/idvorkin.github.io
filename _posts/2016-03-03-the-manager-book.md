@@ -14,74 +14,74 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
 <!-- vim-markdown-toc GFM -->
 
 - [Part 1: What does a manager do?](#part-1-what-does-a-manager-do)
-  - [What are a managers responsibilities?](#what-are-a-managers-responsibilities)
-  - [How do you measure their success?](#how-do-you-measure-their-success)
-  - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
-  - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
-  - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
-  - [Should managers code?](#should-managers-code)
+    - [What are a managers responsibilities?](#what-are-a-managers-responsibilities)
+    - [How do you measure their success?](#how-do-you-measure-their-success)
+    - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
+    - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
+    - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
+    - [Should managers code?](#should-managers-code)
 - [Part 2: Managing and Developing People](#part-2-managing-and-developing-people)
-  - [How do you coach people](#how-do-you-coach-people)
-    - [Coaching](#coaching)
-    - [Career Development](#career-development)
-  - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
-  - [How do you give challenging feedback:](#how-do-you-give-challenging-feedback)
-  - [What is the point of a 1:1?](#what-is-the-point-of-a-11)
-  - [How do you think of developing people?](#how-do-you-think-of-developing-people)
-  - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
-  - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
-  - [How do you identify engineers who could make good managers? How do you help them develop?](#how-do-you-identify-engineers-who-could-make-good-managers-how-do-you-help-them-develop)
-  - [Best hire of your career](#best-hire-of-your-career)
-  - [How did you grow top talent](#how-did-you-grow-top-talent)
-  - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
-  - [What is your ideal culture?](#what-is-your-ideal-culture)
-  - [How do you make a good culture?](#how-do-you-make-a-good-culture)
+    - [How do you coach people](#how-do-you-coach-people)
+        - [Coaching](#coaching)
+        - [Career Development](#career-development)
+    - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
+    - [How do you give challenging feedback:](#how-do-you-give-challenging-feedback)
+    - [What is the point of a 1:1?](#what-is-the-point-of-a-11)
+    - [How do you think of developing people?](#how-do-you-think-of-developing-people)
+    - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
+    - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
+    - [How do you identify engineers who could make good managers? How do you help them develop?](#how-do-you-identify-engineers-who-could-make-good-managers-how-do-you-help-them-develop)
+    - [Best hire of your career](#best-hire-of-your-career)
+    - [How did you grow top talent](#how-did-you-grow-top-talent)
+    - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
+    - [What is your ideal culture?](#what-is-your-ideal-culture)
+    - [How do you make a good culture?](#how-do-you-make-a-good-culture)
 - [Part 3: Business Acumen and Strategy](#part-3-business-acumen-and-strategy)
-  - [The Four](#the-four)
-  - [Stratechary](#stratechary)
-    - [Aggregator theory](#aggregator-theory)
-    - [Disruption theory](#disruption-theory)
-    - [Horizontal vs Vertical Integration](#horizontal-vs-vertical-integration)
-  - [American Express](#american-express)
-  - [Zillow](#zillow)
-  - [Facebook](#facebook)
-    - [Messengers](#messengers)
-    - [Portal](#portal)
-    - [AR/VR](#arvr)
-  - [Google](#google)
-    - [Linked In](#linked-in)
-    - [YouTube](#youtube)
-  - [Amazon](#amazon)
-    - [AWS](#aws)
-    - [The amazon.com marketplace](#the-amazoncom-marketplace)
-    - [Alexa](#alexa)
-  - [Microsoft](#microsoft)
-  - [Linked In](#linked-in-1)
-  - [Apple](#apple)
-    - [Hardware or Services](#hardware-or-services)
-    - [The app store](#the-app-store)
+    - [The Four](#the-four)
+    - [Stratechary](#stratechary)
+        - [Aggregator theory](#aggregator-theory)
+        - [Disruption theory](#disruption-theory)
+        - [Horizontal vs Vertical Integration](#horizontal-vs-vertical-integration)
+    - [American Express](#american-express)
+    - [Zillow](#zillow)
+    - [Facebook](#facebook)
+        - [Messengers](#messengers)
+        - [Portal](#portal)
+        - [AR/VR](#arvr)
+    - [Google](#google)
+        - [Linked In](#linked-in)
+        - [YouTube](#youtube)
+    - [Amazon](#amazon)
+        - [AWS](#aws)
+        - [The amazon.com marketplace](#the-amazoncom-marketplace)
+        - [Alexa](#alexa)
+    - [Microsoft](#microsoft)
+    - [Linked In](#linked-in-1)
+    - [Apple](#apple)
+        - [Hardware or Services](#hardware-or-services)
+        - [The app store](#the-app-store)
 - [Part 4: Process and Mechanism](#part-4-process-and-mechanism)
 - [Part 5: Hiring](#part-5-hiring)
-  - [What are you looking for in an engineer when you recruit?](#what-are-you-looking-for-in-an-engineer-when-you-recruit)
-  - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
-  - [Are they more comfortable with generalists or specialists?](#are-they-more-comfortable-with-generalists-or-specialists)
-  - [How do you think about hiring?](#how-do-you-think-about-hiring)
-  - [How do you thiknk about the hiring funnel.](#how-do-you-thiknk-about-the-hiring-funnel)
-  - [What are their thoughts on structured interview loops vs. non-structured free-form loops?](#what-are-their-thoughts-on-structured-interview-loops-vs-non-structured-free-form-loops)
+    - [What are you looking for in an engineer when you recruit?](#what-are-you-looking-for-in-an-engineer-when-you-recruit)
+    - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
+    - [Are they more comfortable with generalists or specialists?](#are-they-more-comfortable-with-generalists-or-specialists)
+    - [How do you think about hiring?](#how-do-you-think-about-hiring)
+    - [How do you thiknk about the hiring funnel.](#how-do-you-thiknk-about-the-hiring-funnel)
+    - [What are their thoughts on structured interview loops vs. non-structured free-form loops?](#what-are-their-thoughts-on-structured-interview-loops-vs-non-structured-free-form-loops)
 - [Part 6: Firing and Performance Management](#part-6-firing-and-performance-management)
 - [Part 7: Charters, Re-orgs and Bootstrapping](#part-7-charters-re-orgs-and-bootstrapping)
-  - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
-  - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
-  - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
-  - [Aside: Agency and Psychological Safety:](#aside-agency-and-psychological-safety)
+    - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
+    - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
+    - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
+    - [Aside: Agency and Psychological Safety:](#aside-agency-and-psychological-safety)
 - [Part 8: Personal Motivations](#part-8-personal-motivations)
-  - [Why is management attractive to you?](#why-is-management-attractive-to-you)
-  - [What are your thoughts on managers memorizing these answers for interviews.](#what-are-your-thoughts-on-managers-memorizing-these-answers-for-interviews)
+    - [Why is management attractive to you?](#why-is-management-attractive-to-you)
+    - [What are your thoughts on managers memorizing these answers for interviews.](#what-are-your-thoughts-on-managers-memorizing-these-answers-for-interviews)
 - [Part 9: Other resources](#part-9-other-resources)
-  - [Great Videos](#great-videos)
-  - [Great Posts and Blogs](#great-posts-and-blogs)
-  - [Great books](#great-books)
-  - [My aspirations as a manager](#my-aspirations-as-a-manager)
+    - [Great Videos](#great-videos)
+    - [Great Posts and Blogs](#great-posts-and-blogs)
+    - [Great books](#great-books)
+    - [My aspirations as a manager](#my-aspirations-as-a-manager)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -397,33 +397,45 @@ The four is a fantastic book describing the value of the FAAG companies.
 ### Stratechary
 
 #### Aggregator theory
+
 #### Disruption theory
+
 #### Horizontal vs Vertical Integration
 
-
 ### American Express
+
 ### Zillow
+
 ### Facebook
 
 #### Messengers
+
 #### Portal
+
 #### AR/VR
 
 ### Google
 
 #### Linked In
+
 #### YouTube
 
 ### Amazon
 
 #### AWS
+
 #### The amazon.com marketplace
+
 #### Alexa
 
 ### Microsoft
+
 ### Linked In
+
 ### Apple
+
 #### Hardware or Services
+
 #### The app store
 
 ## Part 4: Process and Mechanism
@@ -527,6 +539,7 @@ Most important part of sales:
   - Self aware - earns trust.
 
 - Internal, Structured but Different
+
   - You better have enough internal code/design/documentation artificats. Ask candidate for artificats they're proud of.
   - Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them do ing their day job.
   - Talk about hard situations they've had. Listen for the criteria smart/gets shit done/emotionally intelligent
@@ -534,7 +547,6 @@ Most important part of sales:
 - Novel ideas for interviews (from indeed)
   - Do code reviews
   - Do a mock interview + debrief
-
 
 ## Part 6: Firing and Performance Management
 
@@ -605,10 +617,9 @@ _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, 
 
 ### What are your thoughts on managers memorizing these answers for interviews.
 
-Good interviewees prepare as much as possible, thinking through their experiences and philosphies.  If this post helps them, that is fantastic. I'm skeptical that a bad manager will be able to interalize these answers to the point they can provide rich answers.
+Good interviewees prepare as much as possible, thinking through their experiences and philosphies. If this post helps them, that is fantastic. I'm skeptical that a bad manager will be able to interalize these answers to the point they can provide rich answers.
 
-Good interviewers (and manager interviews better be good) need to be able to differentiate "theoretical knowledge" from "practical experience". They do this with situational questions like  "Tell me a time when", and probing questions like "What happened then? What were the unexpected consequences? When did you have the opposite outcome?".
-
+Good interviewers (and manager interviews better be good) need to be able to differentiate "theoretical knowledge" from "practical experience". They do this with situational questions like "Tell me a time when", and probing questions like "What happened then? What were the unexpected consequences? When did you have the opposite outcome?".
 
 ## Part 9: Other resources
 
@@ -619,6 +630,7 @@ Good interviewers (and manager interviews better be good) need to be able to dif
 
 ### Great Posts and Blogs
 
+- [Manager's Playbook](https://github.com/ksindi/managers-playbook/blob/master/README.md) - Cool awesome list for managers
 - [How managers get stuck](https://medium.com/@skamille/how-do-managers-get-stuck-b6ec9ecd1da1)
 - [The managers path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897) - This book feels like it lacks "complete" mental models, but it's the only book of it's kind - so it's the best there is!
 - [Elided Branches](http://www.elidedbranches.com/) - Blog on engineering management.
@@ -632,4 +644,4 @@ Good interviewers (and manager interviews better be good) need to be able to dif
 
 ### My aspirations as a manager
 
-- A related post which is to be merged, is my aspirations as a [manager](/boss). 
+- A related post which is to be merged, is my aspirations as a [manager](/boss).
