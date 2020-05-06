@@ -17,7 +17,7 @@ Below are my stressors and mitigations:
 
 **Lack of confidence**
 
-- Study for technical interviews - Study Cracking the Coding Interview, [system design questions](https://github.com/donnemartin/system-design-primer), [modern developer tools](https://github.com/kamranahmedse/developer-roadmap) and [hacking the SDE interview](https://tianpan.co/hacking-the-software-engineer-interview/). Expect to spend 4-8 hours a week for 4 to 8 weeks. The longer it's been since you've interviewed last, the longer this will take.
+- Study for technical interviews - Study [Elements of Programming Interviews](https://www.amazon.com/dp/1479274836/?tag=javamysqlanta-20), [system design questions](https://github.com/donnemartin/system-design-primer), [modern developer tools](https://github.com/kamranahmedse/developer-roadmap) and [hacking the SDE interview](https://tianpan.co/hacking-the-software-engineer-interview/). Expect to spend 4-8 hours a week for 4 to 8 weeks. The longer it's been since you've interviewed last, the longer this will take.
 - Buy a full size whiteboard. Practice answering questions on it. I'm not kidding.
 - Prepare for behavioral questions - Think through your previous projects for situations that demonstrate leadership, confidence, team building and be prepared to discuss them.
 - Do mock interviews - ask your friends and colleagues to interview you. You should fail the first few mock interviews it's normal.
@@ -25,7 +25,7 @@ Below are my stressors and mitigations:
 
 **Being rushed**
 
-The job hunting process is slow, with lots of unexpected and uncontrollable wait times. It takes time to schedule informational, then interviews, then getting news on the offer then negotiating with multiple companies. At each of these steps managers and recruiters are busy, on vacation,  etc, etc. If you're being thorough from your first informational to your final offer I'd allocate 3 months.
+The job hunting process is slow, with lots of unexpected and uncontrollable wait times. It takes time to schedule informational, then interviews, then getting news on the offer then negotiating with multiple companies. At each of these steps managers and recruiters are busy, on vacation, etc, etc. If you're being thorough from your first informational to your final offer I'd allocate 3 months.
 
 - Know your "must be done by" date - don't get stressed over your own fake deadlines.
 - Your "must be done by" date is usually much farther in the future then you think.
