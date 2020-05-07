@@ -15,7 +15,9 @@ redirect_from:
 
 **Step 1:** Watch the scene from pulp fiction, it's fantastic cinematography and a critical message:
 
-[![That's pride fucking with you from Pulp Fiction](/images/pride_youtube.png)](https://youtu.be/ruhFmBrl4GM)
+{% include youtube.html src="ruhFmBrl4GM" %}
+
+)
 
 **Step 2:** Imagine being the Roman emperor, focus on what that slave is telling you - "You are mortal, you are mortal"
 
