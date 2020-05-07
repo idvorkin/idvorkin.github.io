@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "The Genesis Node"
+title: "Microsoft Azure - The Genesis Node"
 author: "Igor Dvorkin"
 comments: true
 featured: false
+date: "2018-12-09 07:25:17 Pacific Daylight Time"
 tag: "software as a story"
 ---
 
-Igor, you know the odds of shipping Reddog on time are slim to none."
+Igor, you know the odds of shipping Azure on time are slim to none."
 
 {% include this_is_part_of_saas.md %}
 
-My boss and I nodded our agreement as the director of OS development for Reddog continued.
+My boss and I nodded our agreement as the director of OS development for Azure continued.
 
 "Every team is sending a volunteer to the newly formed DevOps team. With an expert from each team, DevOps will be an elite, rapid-response team, able to deal with every type of problem in short order. The budget will be wide open, and the DevOps team is authorized to take any action required - are you the man for this?"
 
