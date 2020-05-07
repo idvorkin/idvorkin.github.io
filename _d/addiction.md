@@ -4,29 +4,29 @@ title: "Addiction"
 comments: true
 tags:
   - how igor ticks
----
-
-Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Work": When we can't stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That's why addicts are so interesting and so boring at the same time. They're interesting because they're called to something — something new, something unique, something that we, watching, can't wait to see them bring forth into manifestation. At the same time, they're boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict's crazy, haunted, shattered life.
+permalink: /addiction
+---Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Work": When we can't stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That's why addicts are so interesting and so boring at the same time. They're interesting because they're called to something — something new, something unique, something that we, watching, can't wait to see them bring forth into manifestation. At the same time, they're boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict's crazy, haunted, shattered life.
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Current Addictions](#current-addictions)
-    - [Crisis Porn - Covid 19](#crisis-porn---covid-19)
+  - [Crisis Porn - Covid 19](#crisis-porn---covid-19)
 - [Hypo Addictions](#hypo-addictions)
-    - [Social Media Analyitics](#social-media-analyitics)
-        - [Linked in friend count](#linked-in-friend-count)
-        - [Stock market price](#stock-market-price)
+  - [Social Media Analyitics](#social-media-analyitics)
+    - [Linked in friend count](#linked-in-friend-count)
+    - [Stock market price](#stock-market-price)
 - [Beaten addictions (for now)](#beaten-addictions-for-now)
-    - [Pokeman Go](#pokeman-go)
-    - [TikToc](#tiktoc)
-    - [Covid 19 News](#covid-19-news)
-    - [Alcohol](#alcohol)
+  - [Pokeman Go](#pokeman-go)
+  - [TikToc](#tiktoc)
+  - [Covid 19 News](#covid-19-news)
+  - [Alcohol](#alcohol)
 - [Getting Rid of 'em](#getting-rid-of-em)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## Current Addictions
 

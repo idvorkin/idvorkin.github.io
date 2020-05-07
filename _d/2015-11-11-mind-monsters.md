@@ -4,6 +4,8 @@ title: "Mind monsters"
 tags:
   - emotional intelligence
 permalink: /mind-monsters
+redirect_from:
+  - /monsters
 ---
 
 Last night I was having trouble sleeping so I plopped down on the couch to watch infomercials. The infomercial I picked was religious in nature, and was talking about mind monsters.
@@ -15,20 +17,21 @@ Now, isn't your mind far more important than a race horse? Surely you shouldn't 
 
 That parable reminded me that I've been spending too much time focusing on silly things like being critical. Since a rose by any other name still smells as sweet, I have to say, I believe in mind monsters.
 
-----
-There's a great poem on the topic by the author of Search Inside Yourself (Chade-Meng Tang) 
+---
+
+There's a great poem on the topic by the author of Search Inside Yourself (Chade-Meng Tang)
 
 My monsters.
-Greed, hatred, envy, anger, agitation, egoistic pride, lust, etc. 
+Greed, hatred, envy, anger, agitation, egoistic pride, lust, etc.
 They come in different forms, shapes, colors and sizes.
-Over the years, I have learned to deal with them. 
+Over the years, I have learned to deal with them.
 I do that by letting go.
 First, I let go of my wish to control or suppress them.
 When they arrive, I acknowledge them.
 I let them be.
 Next, I let go of my instinct to vilify them.
 I seek to understand them.
-I see them for who they are. 
+I see them for who they are.
 They are merely creations of my body and mind.
 I humor them a little.
 I joke with them.
@@ -46,7 +49,7 @@ They are free to leave as they wish.
 I let them go.
 I am free.
 For now.
-I do not overcome them. 
+I do not overcome them.
 They do not overcome me.
 And we live together.
 In harmony.

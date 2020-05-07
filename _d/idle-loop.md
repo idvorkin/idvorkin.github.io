@@ -14,18 +14,18 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 - [Why: Parasitic energy drain or regenerative braking](#why-parasitic-energy-drain-or-regenerative-braking)
 - [Regenerative loops](#regenerative-loops)
-  - [Mindfulness](#mindfulness)
-  - [Positive thinking](#positive-thinking)
-  - [Reading something nurturing](#reading-something-nurturing)
-  - [Gratefulness thinking](#gratefulness-thinking)
-  - [Accessible Habits](#accessible-habits)
+    - [Mindfulness](#mindfulness)
+    - [Positive thinking](#positive-thinking)
+    - [Reading something nurturing](#reading-something-nurturing)
+    - [Gratefulness thinking](#gratefulness-thinking)
+    - [Accessible Habits](#accessible-habits)
 - [Parasitic loops](#parasitic-loops)
-  - [Psychic weight](#psychic-weight)
-  - [Addiction](#addiction)
-  - [Ruminating](#ruminating)
-  - [Checking the news, Reddit, etc](#checking-the-news-reddit-etc)
-  - [Checking e-mail or notifications](#checking-e-mail-or-notifications)
-  - [Mind monsters](#mind-monsters)
+    - [Psychic weight](#psychic-weight)
+    - [Addiction](#addiction)
+    - [Ruminating](#ruminating)
+    - [Checking the news, Reddit, etc](#checking-the-news-reddit-etc)
+    - [Checking e-mail or notifications](#checking-e-mail-or-notifications)
+    - [Mind monsters](#mind-monsters)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -56,7 +56,7 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 ### Addiction
 
-[Addiction](/addiction.md)
+[Addiction](/addiction)
 
 ### Ruminating
 

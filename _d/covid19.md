@@ -9,6 +9,7 @@ redirect_from:
   - /corona
   - /virus
   - /cv
+  - /covid19
 ---
 
 Corona Virus (CV) may be the defining moment in our lives. In such times, lets remember three things 1) Keep your circle of concern within your circle of influence 2) Don't feed mind monsters - see the positive 3) In crisis, you see both the best and worse. Focus on the best.
