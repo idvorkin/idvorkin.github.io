@@ -5,6 +5,9 @@ comments: true
 tags:
   - how igor ticks
   - emotional intelligence
+
+redirect_from:
+  - /resistance
 ---
 
 Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if you tried, you wouldn't. Before you turned on the water, you'd have this irrational fear of stepping in and you wouldn't do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity.

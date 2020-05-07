@@ -8,6 +8,7 @@ inprogress: true
 
 redirect_from:
   - /habit
+  - /habits
   - /atomic-habits
 
 tags:
