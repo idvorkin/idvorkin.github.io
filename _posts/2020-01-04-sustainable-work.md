@@ -48,11 +48,9 @@ Work life balance is a spectrum from working all of your waking hours to working
 
 <!-- Why? On your death bed -->
 
-I don't want to die knowing I spent too much time at work and I bet you don't either.
+I don't want to die knowing I spent too much time at work and I bet you don't either. As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders needs to walk the talk, and I'll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance.
 
 _This is a re-post of my talk on [LinkedIn](http://bit.ly/igor-wlb-manifesto)_
-
-As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders needs to walk the talk, and I'll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance.
 
 ### How do I model work-life balance?
 
