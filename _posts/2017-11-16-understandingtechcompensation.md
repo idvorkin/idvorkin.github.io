@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Understanding tech compensation and signing bonuses"
+date: "2019-01-09 07:25:17 Pacific Daylight Time"
 tags:
   - job-hunt
 permalink: /comp
@@ -9,9 +10,7 @@ redirect_from:
   - /pay
 ---
 
-Different companies use different compensation models. To compare between them only compare total compensation, not salary. Also, signing bonuses of 100% of salary aren't uncommon in the tech industry. While this sounds amazing, it's often nothing more then replacement for the otherwise lost income from unvested equity.
-
-_You can add comments to this post [here](https://hackmd.io/AyBTMcncRweMVZEVUWUFCA)_
+Different companies use different compensation models. To compare models use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon clips salary at 160K\$/yr, and doesn't have bonuses. Google vests stocks Monthly. Facebook bonuses have a company performance multiplier. At some companies signing bonuses can be over 100% of salary!
 
 <!-- imagefeature: https://thenounproject.com/0a7bdab3-cb97-4cce-9161-d4504ebc88c2
 ![](https://github.com/idvorkin/blob/raw/master/noun_compensation%20_and%20benefits.svg?sanitize=1)
@@ -21,21 +20,26 @@ _You can add comments to this post [here](https://hackmd.io/AyBTMcncRweMVZEVUWUF
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Signing Bonus](#signing-bonus)
-- [Per company comp models](#per-company-comp-models)
-  - [Initial Grant](#initial-grant)
-  - [Steady state - Total Comp vs Independent comp](#steady-state---total-comp-vs-independent-comp)
-- [Negotiating](#negotiating)
-- [Assumptions](#assumptions)
-- [Should you include stock appreciation in total compensation?](#should-you-include-stock-appreciation-in-total-compensation)
-- [Other resources](#other-resources)
+- [Total Compensation - It gets complicated](#total-compensation---it-gets-complicated)
+    - [Initial Grant Models - By Company](#initial-grant-models---by-company)
+    - [Steady State Comp Approaches - Indepedant vs Total Comp](#steady-state-comp-approaches---indepedant-vs-total-comp)
+    - [Assumptions](#assumptions)
+- [FAQ](#faq)
+    - [Why do I feel so bad?](#why-do-i-feel-so-bad)
+    - [I compared salaries and now I feel awful](#i-compared-salaries-and-now-i-feel-awful)
+    - [Wow, I had no idea, how do I get a new high paying job?](#wow-i-had-no-idea-how-do-i-get-a-new-high-paying-job)
+    - [Should you include stock appreciation in total compensation?](#should-you-include-stock-appreciation-in-total-compensation)
+    - [How do I translate job levels between companies?](#how-do-i-translate-job-levels-between-companies)
+    - [I read on the internet company Foo pays Bar.  Is that true?](#i-read-on-the-internet-company-foo-pays-bar--is-that-true)
+    - [What is the four year cliff?](#what-is-the-four-year-cliff)
+    - [Should I negotiate?](#should-i-negotiate)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-### Signing Bonus
+## Total Compensation - It gets complicated
 
-Understand your total compensation which is a combination of salary, cash bonus, and equity. For example, imagine making a steady state total compensation of 200\$/ year(see assumptions below). For this example, imagine this breakdown:
+Understand your total compensation which is a combination of salary, cash bonus, and equity. For example, imagine making a steady state total compensation of 200\$/ year(see assumptions below). For this example, imagine this breakdown (each company has a different model):
 
 - Base salary: 150\$/year, paid out bi-weekly.
 - Cash Bonus: 25\$/year, paid out annually.
@@ -57,14 +61,11 @@ The first year your comp will only be your salary - 150$. This means you're losi
 | 5    | 150  | 25    | 25 (yr 0,1,2,3,4) | 200   | 0    |
 | 6    | 150  | 25    | 25 (yr 1,2,3,4,5) | 200   | 0    |
 
-Continuing the math, you'll actually need a signing bonus of 100\$ to just cover your lost income from the previous years.
-Suddenly your 100% of salary signing bonus of 100\$ doesn't seem nearly as awesome.
+Continuing the math, you'll actually need a signing bonus of 100\$ to just cover your lost income from the previous years. Suddenly your 100% of salary signing bonus of 100\$ doesn't seem nearly as awesome.
 
-### Per company comp models
+### Initial Grant Models - By Company
 
-Each company does a different comp model. I'll list the ones I've been told. This data is likely often stale.
-
-#### Initial Grant
+Each company does a different comp model. I'll list the ones I've been told. This data is likely stale.
 
 | Company   | Salary           | Cash Bonus            | Stock Model                                                                      |
 | --------- | ---------------- | --------------------- | -------------------------------------------------------------------------------- |
@@ -74,9 +75,7 @@ Each company does a different comp model. I'll list the ones I've been told. Thi
 | Indeed    | Yes              | Yes                   | It's a private company and using something like stocks called LTIPs very complex |
 | Microsoft | Yes              | Yes                   | Unknown                                                                          |
 
-Steady state differences:
-
-#### Steady state - Total Comp vs Independent comp
+### Steady State Comp Approaches - Indepedant vs Total Comp
 
 The details get complex, so these are simplified models to build a mental model, not accurate models to compute compensation.
 
@@ -85,15 +84,11 @@ say the compensation is paid in cash (but in reality it's probably stock with a 
 
 **Independent Comp** This is the Microsoft model, it's very simple. You should be paid a 100$, you currently get a salary of  50$, therefore you'll get an extra 50\$. This is completely independent of previous years.
 
-**Total Comp** At Amazon, they do payout based on expected total comp. This means to compute this years bonus, you need to know how much you're making as a result of previous years stock (often unvested). In the simple case, imagine you have no compensation from previous years stock contribution (doesn't happen in practice). In that case, Amazon will be identical to Microsoft and pay you 50\$.
+**Total Comp** At Amazon, they do payout based on expected total comp. This means to compute this years bonus, you need to know how much you're making as a result of previous years stock (often un vested). In the simple case, imagine you have no compensation from previous years stock contribution (doesn't happen in practice). In that case, Amazon will be identical to Microsoft and pay you 50\$.
 
 However, imagine due to stock appreciation, you're already making 150\$ this year in total comp. Amazon will give you zero extra dollars for this year as you're already paid beyond the current compensation. They will pay into future years (I know it's complicated).
 
 A question that comes up in a total comp model, is will Amazon make you whole. E.g. if due to stock depreciation you've lost 30$, so you current compensation is 20$, will amazon give you 50$ or 80$? I don't know. Luckily for Amazon this has never happened.
-
-### Negotiating
-
-As of 2019, I've never seen an offer redacted due to negotiation (OK, with one very unlikely exception which has happened to me). This is true at the big tech companies, and the middle sized tech companies, not sure about small tech companies. The best way to negotiate is to have competing offers.
 
 ### Assumptions
 
@@ -101,12 +96,36 @@ Bonus and equity often vary based on performance. This article assumes you alway
 
 Equity based compensation is a function of stock price, and this article assumes a stable stock market price. This can be a bad assumption, for example, Amazon increased 375% and Microsoft increased 200% over the 4 years from June 2014 to June 2018.
 
+## FAQ
+
+### Why do I feel so bad?
+
+### I compared salaries and now I feel awful
+
+There's an old joke - when 2 people compare salaries, one of them is going to walk away feeling ecstatic, and the other miserable. Be cautious when comparing salaries, as [your pride can start fucking with you](/pride).
+
+### Wow, I had no idea, how do I get a new high paying job?
+
+Job hunts are really stressful. If you decide to change jobs, check out [reducing job hunt stress](/job-hunt-stress).
+
 ### Should you include stock appreciation in total compensation?
 
 NO! If you are doing this, you're assuming you can "predict the market".
 
 If you have that skill, that's the optimum way to make money. Skip your job hunt, and buy stocks today!
 
-### Other resources
+### How do I translate job levels between companies?
 
 Compensation is often a function of "job level" which varies by company. This site translates [ladder levels](https://www.levels.fyi/) between the big tech companies nicely (but not the compensation levels).
+
+### I read on the internet company Foo pays Bar. Is that true?
+
+Maybe, but I doubt it. Don't forget the old joke when 2 people compare salaries, one of them is going to walk away feeling ecstatic, and the other miserable. Be cautious when comparing salaries, as [your pride can start fucking with you](/pride).
+
+### What is the four year cliff?
+
+Often, if you don't get a promotion in the 4 years after you've been hired, your pay will drop. This is because many tech companies give an initial stock grant over four years. This grant is often really good at the 4 year mark because 1) the job market was competitive and you were at your best when you were hired, so you got a great offer 2) your stock has had 4 years to appreciate!
+
+### Should I negotiate?
+
+As of 2019, I've never seen an offer redacted due to negotiation (OK, with one very unlikely exception which has happened to me). This is true at the big tech companies, and the middle sized tech companies, not sure about small tech companies. The best way to negotiate is to have competing offers.
