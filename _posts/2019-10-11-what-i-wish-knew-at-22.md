@@ -8,7 +8,9 @@ permalink: /twentytwo
 tags:
   - job-hunt
   - early career
----In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled "What I wish I knew at 22, and so might you". The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there's good coverage on how to optimize your career.
+---
+
+In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled "What I wish I knew at 22, and so might you". The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there's good coverage on how to optimize your career.
 
 {% include youtube.html src="ffU-Z44Yc6c" %}
 
