@@ -17,9 +17,7 @@ redirect_from:
 
 **Step 2:** Imagine being the Roman emperor, focus on what that slave is telling you - "You are mortal, you are mortal"
 
-![Imagine being the roman emperor](https://qph.fs.quoracdn.net/main-qimg-daa981b9aab57bb4bcdf19d349a665fe)
-
-{% include youtube.html src="3GJLfHj9lfE&t=122" %}
+{% include youtube.html src="3GJLfHj9lfE?start=122" %}
 
 ---
 

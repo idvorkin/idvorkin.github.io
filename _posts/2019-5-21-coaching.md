@@ -222,4 +222,4 @@ Other coaching ideas to develop.
 
 ### Fantastic video on coaching, improvement, and discomfort
 
-[![Coaching](/images/coaching-video.png)](https://youtu.be/oHDq1PcYkT4?t=431)
+{%include youtube.html src="oHDq1PcYkT4?start=431" %}
