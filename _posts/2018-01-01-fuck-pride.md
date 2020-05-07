@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "That is pride fucking with you"
-comments: true
-inprogress: true
 tags:
   - how igor ticks
   - emotional intelligence
@@ -17,11 +15,11 @@ redirect_from:
 
 {% include youtube.html src="ruhFmBrl4GM" %}
 
-)
-
 **Step 2:** Imagine being the Roman emperor, focus on what that slave is telling you - "You are mortal, you are mortal"
 
 ![Imagine being the roman emperor](https://qph.fs.quoracdn.net/main-qimg-daa981b9aab57bb4bcdf19d349a665fe)
+
+{% include youtube.html src="3GJLfHj9lfE&t=122" %}
 
 ---
 
@@ -41,9 +39,9 @@ To help me remember places where pride has fucked with me, I'll write out some o
 <!-- vim-markdown-toc GFM -->
 
 - [Judging my career relative to my peers.](#judging-my-career-relative-to-my-peers)
-- [Feeling cheated because I was treated unfairly, or didn't appreciate me.](#feeling-cheated-because-i-was-treated-unfairly-or-didnt-appreciate-me)
-- [Being right mattering more then being effective](#being-right-mattering-more-then-being-effective)
-- [Feeling life isn't fair because a low probability random event occurred](#feeling-life-isnt-fair-because-a-low-probability-random-event-occurred)
+- [Feeling cheated because I was treated unfairly, and not appreciated.](#feeling-cheated-because-i-was-treated-unfairly-and-not-appreciated)
+- [Wanting to be right more then being effective](#wanting-to-be-right-more-then-being-effective)
+- [Feeling life isn't fair because something shitty happened to me](#feeling-life-isnt-fair-because-something-shitty-happened-to-me)
 - [Other examples](#other-examples)
 
 <!-- vim-markdown-toc -->
@@ -55,9 +53,9 @@ To help me remember places where pride has fucked with me, I'll write out some o
 
 I was an intern at Microsoft in 2001. I started my career at Microsoft with Sally (not her real name), a fellow intern and one of my best friends. Our careers tracked closely till she became a principal development manager, and then went to Amazon. Sally and I went for beers every few months, and as my career grew linearly, hers grew exponentially. A few years back at our January beer she added a QA team to her development team, and by March she had taken over teams in India and Ireland, and by September, she had an organization of 50, and got to travel to every continent quarterly.
 
-Meanwhile, my team was still only 10 people, and I felt like a failure. Having failure rubbed in your face sucks, so I avoided our monthly beers with lame excuses. One day, while talking to my mentor, it clicked. I shouldn't evaluate myself relative to Sally's life. I should evaluate myself based on me.
+Meanwhile, my team was still only 10 people, and I felt like a failure. Having failure rubbed in your face sucks, so I avoided our monthly beers with lame excuses. One day, while talking to my mentor, it clicked. I shouldn't evaluate myself relative to Sally's life. I should evaluate myself based on me. Sally and I had a good laugh over this when we resumed our beer series in October.
 
-#### Feeling cheated because I was treated unfairly, or didn't appreciate me.
+#### Feeling cheated because I was treated unfairly, and not appreciated.
 
 **Antidote:** Don't let your friend/boss/society's assessment of you outweigh your own. Take their judgment in stride. Decide if you need to find a new friend/boss/society, correct them, or live with and act appropriately.
 
@@ -67,7 +65,7 @@ Here I was lucky, I was able to learn from a mentor. My management mentor, Beth,
 
 _Important Side Bar: It's easy to be wrong on A) your principles, and B) your assessment of said principles. Be sure to test them with multiple trusted advisors and folks you respect who have gone through a similar situation_
 
-#### Being right mattering more then being effective
+#### Wanting to be right more then being effective
 
 **Antidote:** Ask yourself if your pride about being right exceeds your need to be effective. Don't lie, don't compromise your ethics or responsibilities, but be flexible in what you accept. You'll often find there's a solution where you can be effective and right.
 
@@ -75,7 +73,7 @@ Example: TBD
 
 _Important Side Bar: Being effective often requires negotiation. The bible for negotiation is [Getting to Yes](https://www.google.com/search?q=getting+to+yes) which I highly recommend_
 
-#### Feeling life isn't fair because a low probability random event occurred
+#### Feeling life isn't fair because something shitty happened to me
 
 **Antidote:** Remember, the only fair thing in life is that it is completely unfair. Compare your "life is unfair" narrative to folks with bigger problems. Getting a fast acting random cancer, beating it, and getting it again ([founder of apple](https://en.wikipedia.org/wiki/Steve_Jobs#Death)), freak accidents ( [Super Man Actor](https://en.wikipedia.org/wiki/Christopher_Reeve) ) and crippling diseases ([Smartest guy on earth](http://www.hawking.org.uk/)). Even better - if you're a parent imagine any of those things happening to your kids. Yeah, maybe be glad something worse didn't happen.
 
