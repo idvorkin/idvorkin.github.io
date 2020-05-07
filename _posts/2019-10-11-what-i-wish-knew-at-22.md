@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "What I wish I knew at 22 and so might you!"
-author: "Igor Dvorkin"
-comments: true
 imagefeature: https://www.idvork.in/images/what-i-wish-i-knew.png
 tags:
   - job-hunt
@@ -24,5 +22,5 @@ Here are some highlights for the impatient:
 - Deep Friendships: [http://bit.ly/2ySzq3C](http://bit.ly/2ySzq3C)
 - 7 Habits Lightening Tour: [http://bit.ly/2YYNnvD](http://bit.ly/2YYNnvD)
 - Q and A: [http://bit.ly/2YZdfDw](http://bit.ly/2YZdfDw)
-- A bit about a magic trick(\*) : [http://bit.ly/2YF0W3S](http://bit.ly/2YF0W3S)
+- A bit about a magic trick: [http://bit.ly/2YF0W3S](http://bit.ly/2YF0W3S)
 - Connect on linked in: [http://idvorkin.github.io/linkedin](http://idvorkin.github.io/linkedin)
