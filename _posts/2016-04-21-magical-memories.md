@@ -79,3 +79,13 @@ Zach - Making up his own card trick for woman waiting on the bus. -
 - Carl: That's great, except for the part you're flailing.
 - Felix: Uhm, that's OK, just practice another 9,997 times.
 - Felix, Oh, are you new at magic, maybe try a double lift.
+
+## Favorite Acts
+
+### Lennart Green - Superb Card Handling
+
+{% include youtube.html src="1_oa8m5Oq00?start=17" %}
+
+### Brian Gillis - Top shelf Sleight of Hand
+
+{% include youtube.html src="7tUaBtHd-dA?start=11" %}
