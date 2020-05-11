@@ -11,6 +11,7 @@ Give people the power to build community and bring the world closer together, he
 
 - [The Good](#the-good)
     - [Bootcamp](#bootcamp)
+    - [Managers "support" their team.](#managers-support-their-team)
     - [Inclusion and Diversity.](#inclusion-and-diversity)
     - [Un allocated hires](#un-allocated-hires)
     - [OKRs](#okrs)
@@ -53,6 +54,10 @@ A major part of bootcamp is doing tasks, which is hands on learning, and a great
 NOTE: I did bootcamp through Pandemic 1 so my experience might be a bit different.
 
 NOTE: At all companies I've worked at a strong correlation to engineer success is days till first checkin. For sure there's some correlation not causation here, BUT at FB, all boot campers deploy a 'hello world' to FB on your first few days, and you fix your first production bug in the first week.
+
+### Managers "support" their team.
+
+When I did an informational with FB, the manager asked me how I support my team? I couldn't parse what the question meant. At FB, the primary term they use to describe a manager's role is supporting their team. What a best practice in general, and what a great lens to view management.
 
 ### Inclusion and Diversity.
 
