@@ -26,7 +26,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
         - [Career Development](#career-development)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [How do you give challenging feedback:](#how-do-you-give-challenging-feedback)
-    - [What is the point of a 1:1?](#what-is-the-point-of-a-11)
+    - [1:1s](#11s)
     - [How do you think of developing people?](#how-do-you-think-of-developing-people)
     - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
     - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
@@ -53,10 +53,13 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
         - [YouTube](#youtube)
     - [Amazon](#amazon)
         - [AWS](#aws)
-        - [The amazon.com marketplace](#the-amazoncom-marketplace)
+        - [Retail](#retail)
         - [Alexa](#alexa)
     - [Microsoft](#microsoft)
-    - [Linked In](#linked-in-1)
+        - [Linked In](#linked-in-1)
+        - [Open Source](#open-source)
+        - [Productivity](#productivity)
+        - [Developer Tools](#developer-tools)
     - [Apple](#apple)
         - [Hardware or Services](#hardware-or-services)
         - [The app store](#the-app-store)
@@ -251,7 +254,7 @@ Types of tough conversations:
 
 Performance, Charter, Re-org (me leaving), Lay Offs.
 
-### What is the point of a 1:1?
+### 1:1s
 
 Computers produce nothing, developers produce code. Business produce nothing PMs, other functions produce stuff.
 
@@ -264,12 +267,18 @@ For 1:1's for my team, the employees owns the Agenda, however I will nudge them.
 - Having confidential discussions on concerns and questions.
 - Coaching strategically
 - Coaching tactically.
+- Having [ackward discussions](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) and [more details](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c).
 
 I also have some special 1:1s:
 
 - Leadership card evaluation exercise
 - Career discussions - A discussion around what we should be focused on for the next 6-18 months.
 - Reviewing role guidelines - to help ensure we're on the same page about tactical gaps.
+
+Other thoughts:
+
+- I try to group my 1:1's on the same day (or over 2 days) because 1:1 is a special frame of mind, and takes a bit to get in the zone.
+- With small teams, I like 1 hour 1 on 1s, but some folks prefer 30 minutes.
 
 ### How do you think of developing people?
 
@@ -424,13 +433,19 @@ The four is a fantastic book describing the value of the FAAG companies.
 
 #### AWS
 
-#### The amazon.com marketplace
+#### Retail
 
 #### Alexa
 
 ### Microsoft
 
-### Linked In
+#### Linked In
+
+#### Open Source
+
+#### Productivity
+
+#### Developer Tools
 
 ### Apple
 

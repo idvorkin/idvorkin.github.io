@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Understanding tech compensation and signing bonuses"
+title: "Care about Total Compensation"
 date: "2019-01-09 07:25:17 Pacific Daylight Time"
 tags:
   - job-hunt
@@ -30,7 +30,7 @@ Different companies use different compensation models. To compare models use tot
     - [Wow, I had no idea, how do I get a new high paying job?](#wow-i-had-no-idea-how-do-i-get-a-new-high-paying-job)
     - [Should you include stock appreciation in total compensation?](#should-you-include-stock-appreciation-in-total-compensation)
     - [How do I translate job levels between companies?](#how-do-i-translate-job-levels-between-companies)
-    - [I read on the internet company Foo pays Bar.  Is that true?](#i-read-on-the-internet-company-foo-pays-bar--is-that-true)
+    - [I read on the internet company Foo pays Bar. Is that true?](#i-read-on-the-internet-company-foo-pays-bar-is-that-true)
     - [What is the four year cliff?](#what-is-the-four-year-cliff)
     - [Should I negotiate?](#should-i-negotiate)
 
