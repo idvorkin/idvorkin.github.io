@@ -3,7 +3,9 @@ layout: post
 no-render-title: true
 title: Quip tips and tricks
 permalink: /quip
----My group lives in QUIP. Here are some tips for my quip usage.
+---
+
+My group lives in QUIP. Here are some tips for my quip usage.
 
 Quip is a shared document editor. Here are my tips to be collected.
 
