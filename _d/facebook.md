@@ -7,42 +7,44 @@ permalink: /facebook
 Give people the power to build community and bring the world closer together, here are my in progress notes on working at FB.
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [The Good](#the-good)
-    - [Bootcamp](#bootcamp)
-    - [Managers "support" their team.](#managers-support-their-team)
-    - [Inclusion and Diversity.](#inclusion-and-diversity)
-    - [Un allocated hires](#un-allocated-hires)
-    - [OKRs](#okrs)
-    - [Metric Driven Culture](#metric-driven-culture)
-    - [Design Quality](#design-quality)
-    - [Employees First](#employees-first)
-    - [The Trio: Engineering, Product Management and Data Science](#the-trio-engineering-product-management-and-data-science)
+  - [Bootcamp](#bootcamp)
+  - [Managers "support" their team.](#managers-support-their-team)
+  - [Inclusion and Diversity.](#inclusion-and-diversity)
+  - [Un allocated hires](#un-allocated-hires)
+  - [OKRs](#okrs)
+  - [Metric Driven Culture](#metric-driven-culture)
+  - [Design Quality](#design-quality)
+  - [Employees First](#employees-first)
+  - [The Trio: Engineering, Product Management and Data Science](#the-trio-engineering-product-management-and-data-science)
 - [The peculiar](#the-peculiar)
-    - [Facebook Groups instead of e-mail](#facebook-groups-instead-of-e-mail)
-    - [Mono repo.](#mono-repo)
-    - [Mercurial instead of git](#mercurial-instead-of-git)
+  - [Facebook Groups instead of e-mail](#facebook-groups-instead-of-e-mail)
+  - [Mono repo.](#mono-repo)
+  - [Mercurial instead of git](#mercurial-instead-of-git)
 - [The Bad](#the-bad)
-    - [I'm new, will add my thoughts as I know them](#im-new-will-add-my-thoughts-as-i-know-them)
+  - [I'm new, will add my thoughts as I know them](#im-new-will-add-my-thoughts-as-i-know-them)
 - [Engineering Systems](#engineering-systems)
-    - [Open source lots](#open-source-lots)
-    - [A CLEAR priority](#a-clear-priority)
+  - [Open source lots](#open-source-lots)
+  - [Top notch data tools](#top-notch-data-tools)
+  - [A CLEAR priority](#a-clear-priority)
 - [My projects at Facebook](#my-projects-at-facebook)
-    - [Amplifying Connection through Art and tech.](#amplifying-connection-through-art-and-tech)
-    - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
+  - [Amplifying Connection through Art and tech.](#amplifying-connection-through-art-and-tech)
+  - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
 - [Core Values (LP's)](#core-values-lps)
-    - [Focus on Impact](#focus-on-impact)
-    - [Move Fast](#move-fast)
-    - [Be Bold](#be-bold)
-    - [Be Open](#be-open)
-    - [Build Social Value](#build-social-value)
+  - [Focus on Impact](#focus-on-impact)
+  - [Move Fast](#move-fast)
+  - [Be Bold](#be-bold)
+  - [Be Open](#be-open)
+  - [Build Social Value](#build-social-value)
 - [Lingo and Culture](#lingo-and-culture)
-    - [Show up with grace](#show-up-with-grace)
-    - [TL;DR](#tldr)
+  - [Show up with grace](#show-up-with-grace)
+  - [TL;DR](#tldr)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## The Good
 
@@ -127,6 +129,17 @@ Oh, so good. Need to figure out what is public and what is private
 ### Open source lots
 
 Many FB tools get open sourced, tupper ware, mercurial improvements, flow, even data center hardware designs -- what a pleasant contrast to most other places
+
+### Top notch data tools
+
+Some attributes that strike me as great:
+
+1. Very pleasant to use
+1. Unified query language across multiple data sources
+1. Great IDE (includes VIM, Formating, AutoSave, History, Collaboration, Stats)
+1. CLI Support
+
+See a [detailed description of the tools](https://medium.com/analytics-and-data/i-hear-facebook-has-data-does-it-have-data-tools-a9f4c4d82ee7).
 
 ### A CLEAR priority
 
