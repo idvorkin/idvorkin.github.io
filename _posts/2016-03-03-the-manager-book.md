@@ -144,7 +144,7 @@ Top metrics:
 
 ### What do you do in the first 90 days?
 
-_First 90 days is the book_
+First 90 days is [the bible here](/90days)
 
 Outputs:
 
