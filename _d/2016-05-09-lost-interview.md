@@ -9,6 +9,10 @@ author: "Igor Dvorkin"
 
 Uneditted notes on a Q+A with Steve Jobs.
 
+### Best handling of an insult
+
+{% include youtube.html src="FF-tKLISfPE" %}
+
 ### How did you learn about hewett packard?
 
 Just called him up (everything was ina phone book) and asked him for spare parts
