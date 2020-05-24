@@ -39,30 +39,12 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
 - [Part 3: Business Acumen and Strategy](#part-3-business-acumen-and-strategy)
     - [The Four](#the-four)
     - [Stratechary](#stratechary)
-        - [Aggregator theory](#aggregator-theory)
-        - [Disruption theory](#disruption-theory)
-        - [Horizontal vs Vertical Integration](#horizontal-vs-vertical-integration)
-    - [American Express](#american-express)
     - [Zillow](#zillow)
     - [Facebook](#facebook)
-        - [Messengers](#messengers)
-        - [Portal](#portal)
-        - [AR/VR](#arvr)
     - [Google](#google)
-        - [Linked In](#linked-in)
-        - [YouTube](#youtube)
     - [Amazon](#amazon)
-        - [AWS](#aws)
-        - [Retail](#retail)
-        - [Alexa](#alexa)
     - [Microsoft](#microsoft)
-        - [Linked In](#linked-in-1)
-        - [Open Source](#open-source)
-        - [Productivity](#productivity)
-        - [Developer Tools](#developer-tools)
     - [Apple](#apple)
-        - [Hardware or Services](#hardware-or-services)
-        - [The app store](#the-app-store)
 - [Part 4: Process and Mechanism](#part-4-process-and-mechanism)
 - [Part 5: Hiring](#part-5-hiring)
     - [What are you looking for in an engineer when you recruit?](#what-are-you-looking-for-in-an-engineer-when-you-recruit)
@@ -88,8 +70,6 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-_Add comments [here](https://hackmd.io/nBT2vHq0RqSRKM-KOeBhEA)_
 
 ## Part 1: What does a manager do?
 
@@ -127,13 +107,13 @@ My role:
 - **Business Results:** I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.
 - **People growing in a high performing team:** I am responsible for the workers in the factory: Are they healthy, learning, wanting to come to work every day, getting along with co-workers.
 - **Engineering Efficiency and Process:** I am responsible for the efficiency of the factory: Is production good and improving? Are widgets coming out consistently and on schedule? Do new employees know what to do? Does everyone know what to do if there's an emergency?
-- **Technical Assets:** I am responsible for the machines we build and maintain: Can the machines in the factory be adjusted for the different types of widets we need to build? Do the machines mostly work or do they need constant adjustment? Are the machines we bought used to high efficiency?
+- **Technical Assets:** I am responsible for the machines we build and maintain: Can the machines in the factory be adjusted for the different types of widgets we need to build? Do the machines mostly work or do they need constant adjustment? Are the machines we bought used to high efficiency?
 
 Top metrics:
 
 - **Business Results**: Did we make the right widgets on time and budget?
 - **People Growing**: Are the works happy based on surveys
-- **Egineering Efficiency and Technical Assets**: Is our factory solid and able to make new stuff quickly and maintain production?
+- **Engineering Efficiency and Technical Assets**: Is our factory solid and able to make new stuff quickly and maintain production?
 
 ### Hardest part about being a manager
 
@@ -151,28 +131,6 @@ Outputs:
 - Early Win: Figure out the situation, and deliver a win.
 - Trust: Relationships with team, and peers, and partners.
 - Knowledge: Know critical parts of business, tech, org.
-
-<!--
-**Learn**
-
-Learning as an investment process. Planning to learn. Figuring out the best sources of insight. Using structured methods to accelerate learning.
-
-**Build Trust and Relationship**
-
-Build Your Team Inheriting a team and changing it. Managing the tension between short-term and long-term goals. Working team restructuring and organizational architecture issues in parallel. Putting in place new team processes.
-
-Create Alliances The trap of thinking that authority is enough. Identifying whose support is critical. Mapping networks of influence and patterns of deference. Altering perceptions of interests and alternatives.
-
-**Diagnose, agree, and find 90 day win**
-
-Match Strategy to Situation The dangers of “one-best-way” thinking. Diagnosing the situation to develop the right strategy. The STARS model of types of transitions. Using the model to analyze portfolios, and lead change.
-
-Negotiate Success Building a productive working relationship with a new boss. The five-conversations framework. Defining expectations. Agreeing on a diagnosis of the situation. Figuring out how to work together. Negotiating for resources. Putting together your 90-day plan.
-
-Achieve Alignment The role of the leader as organizational architect. Identifying the root causes of poor performance. Aligning strategy, structure, systems, skills, and culture.
-
-Secure Early Wins Avoiding common traps. Figuring out A-item priorities. Creating a compelling vision. Building personal credibility. Getting started on improving organizational performance. Plan-then-implement change versus collective learning.
--->
 
 ### Should managers code?
 
@@ -267,7 +225,7 @@ For 1:1's for my team, the employees owns the Agenda, however I will nudge them.
 - Having confidential discussions on concerns and questions.
 - Coaching strategically
 - Coaching tactically.
-- Having [ackward discussions](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) and [more details](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c).
+- Having [awkward discussions](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) and [more details](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c).
 
 I also have some special 1:1s:
 
@@ -369,11 +327,11 @@ Engineers that are interested in reading this post :)
 
 ### What do you do when a team completely disagrees with the founder/VP on the direction of a product?
 
-Step 1: Believe and deeply understand it. Either I believe in it, or I deeply understand the decision and have disagreed and commited. As part of commiting, I'm all in, and will share that.
+Step 1: Believe and deeply understand it. Either I believe in it, or I deeply understand the decision and have disagreed and committed. As part of committing, I'm all in, and will share that.
 
-Step 2: Listen to the team. The team has concerns, hopefully I can predict the, ahead of time and be prepared for the easy ones, then truely listen to new concerns, and address them.
+Step 2: Listen to the team. The team has concerns, hopefully I can predict the, ahead of time and be prepared for the easy ones, then truly listen to new concerns, and address them.
 
-Step 3: Focus on the win/win, and talk through a ripchord.
+Step 3: Focus on the win/win, and talk through a ripcord.
 
 ### What is your ideal culture?
 
@@ -396,7 +354,7 @@ Step 3: Focus on the win/win, and talk through a ripchord.
 
 ### The Four
 
-The four is a fantastic book describing the value of the FAAG companies.
+The four is a fantastic book describing the value of the FANG companies.
 
 - Google is the brain
 - Amazon is the belly
@@ -405,53 +363,47 @@ The four is a fantastic book describing the value of the FAAG companies.
 
 ### Stratechary
 
-#### Aggregator theory
-
-#### Disruption theory
-
-#### Horizontal vs Vertical Integration
-
-### American Express
+- Aggregator theory
+- Disruption theory
+- Horizontal vs Vertical Integration
 
 ### Zillow
 
+- Mortgage
+- Zillow Offers
+
 ### Facebook
 
-#### Messengers
-
-#### Portal
-
-#### AR/VR
+- AR/VR
+- Messengers
+- Portal
 
 ### Google
 
-#### Linked In
-
-#### YouTube
+- Advertising
+- YouTube
 
 ### Amazon
 
-#### AWS
-
-#### Retail
-
-#### Alexa
+- AWS
+- Retail
+- Alexa
 
 ### Microsoft
 
-#### Linked In
-
-#### Open Source
-
-#### Productivity
-
-#### Developer Tools
+- Linked In
+- Open Source
+- Productivity
+- Azure
+- Windows
+- Windows Phone
+- Developer Tools
 
 ### Apple
 
-#### Hardware or Services
-
-#### The app store
+- Hardware or Services
+- The App Store
+- The Physical Store
 
 ## Part 4: Process and Mechanism
 
@@ -482,7 +434,7 @@ Ratio Senior: SDE-II: SDE-I (1,2,2) => ten person team: 2, 4, 4.
 - Everyone grows by learning and teaching. Lots of rules
 - A crappy job for an SDE-II is a growth opportunity for SDE-I.
 - SDE-IIIs want to think hard and lead.
-- SDE-IIs do the bulk of the work, and are fully independant.
+- SDE-IIs do the bulk of the work, and are fully independent.
 - SDE-I bring energy and excitement, but still dependent.
 
 Ideally, people grow from SDE-I -> SDE-III on a team, so much knowledge transfer and opportunity.
@@ -555,8 +507,8 @@ Most important part of sales:
 
 - Internal, Structured but Different
 
-  - You better have enough internal code/design/documentation artificats. Ask candidate for artificats they're proud of.
-  - Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them do ing their day job.
+  - You better have enough internal code/design/documentation artifacts. Ask candidate for artifacts they're proud of.
+  - Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them doing their day job.
   - Talk about hard situations they've had. Listen for the criteria smart/gets shit done/emotionally intelligent
 
 - Novel ideas for interviews (from indeed)
@@ -632,7 +584,7 @@ _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, 
 
 ### What are your thoughts on managers memorizing these answers for interviews.
 
-Good interviewees prepare as much as possible, thinking through their experiences and philosphies. If this post helps them, that is fantastic. I'm skeptical that a bad manager will be able to interalize these answers to the point they can provide rich answers.
+Good interviewees prepare as much as possible, thinking through their experiences and philosophies. If this post helps them, that is fantastic. I'm skeptical that a bad manager will be able to internalize these answers to the point they can provide rich answers.
 
 Good interviewers (and manager interviews better be good) need to be able to differentiate "theoretical knowledge" from "practical experience". They do this with situational questions like "Tell me a time when", and probing questions like "What happened then? What were the unexpected consequences? When did you have the opposite outcome?".
 
@@ -649,7 +601,7 @@ Good interviewers (and manager interviews better be good) need to be able to dif
 - [How managers get stuck](https://medium.com/@skamille/how-do-managers-get-stuck-b6ec9ecd1da1)
 - [The managers path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897) - This book feels like it lacks "complete" mental models, but it's the only book of it's kind - so it's the best there is!
 - [Elided Branches](http://www.elidedbranches.com/) - Blog on engineering management.
-- [I.M Wright's Hard Code](https://imwrightshardcode.com) - Engineering Managment from Microsoft, covers most topics.
+- [I.M Wright's Hard Code](https://imwrightshardcode.com) - Engineering Management from Microsoft, covers most topics.
 
 ### Great books
 
