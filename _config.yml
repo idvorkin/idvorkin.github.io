@@ -59,8 +59,9 @@ algolia:
   files_to_exclude:
     - "*bak"
     - "search.html"
-    - "index.html"
+    - "*index.html"
     - "all.html"
+    - "all.md"
     - "tags.html"
     - "tags"
 
