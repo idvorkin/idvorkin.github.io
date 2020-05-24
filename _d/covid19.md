@@ -15,48 +15,56 @@ redirect_from:
 Corona Virus (CV) may be the defining moment in our lives. In such times, lets remember three things 1) Keep your circle of concern within your circle of influence 2) Don't feed mind monsters - see the positive 3) In crisis, you see both the best and worse. Focus on the best.
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Don't feed mind monsters, focus on the positive.](#dont-feed-mind-monsters-focus-on-the-positive)
-    - [Media's incentive is scaring you](#medias-incentive-is-scaring-you)
+  - [Leave quarantine better then when you startd](#leave-quarantine-better-then-when-you-startd)
+  - [Media's incentive is scaring you](#medias-incentive-is-scaring-you)
 - [Crisis Porn](#crisis-porn)
-    - [Humanity has prioritize lives over profits](#humanity-has-prioritize-lives-over-profits)
-    - [Bill gates models being a class act.](#bill-gates-models-being-a-class-act)
-    - [Tesla and Dyson making incubators](#tesla-and-dyson-making-incubators)
-    - [3M Refusing to ignore order to stop shipping PPE to other countries](#3m-refusing-to-ignore-order-to-stop-shipping-ppe-to-other-countries)
-    - [Big Tech still pays hourly workers.](#big-tech-still-pays-hourly-workers)
-    - [Zoo Pandas mate for first time](#zoo-pandas-mate-for-first-time)
-    - [First Zonkey Born](#first-zonkey-born)
+  - [Humanity has prioritize lives over profits](#humanity-has-prioritize-lives-over-profits)
+  - [Bill gates models being a class act.](#bill-gates-models-being-a-class-act)
+  - [Tesla and Dyson making incubators](#tesla-and-dyson-making-incubators)
+  - [3M Refusing to ignore order to stop shipping PPE to other countries](#3m-refusing-to-ignore-order-to-stop-shipping-ppe-to-other-countries)
+  - [Big Tech still pays hourly workers.](#big-tech-still-pays-hourly-workers)
+  - [Zoo Pandas mate for first time](#zoo-pandas-mate-for-first-time)
+  - [First Zonkey Born](#first-zonkey-born)
 - [Circle of concern and circle of influence.](#circle-of-concern-and-circle-of-influence)
-    - [Model good behavior](#model-good-behavior)
-    - [Teddy bear brigade](#teddy-bear-brigade)
-    - [Virtual Play dates](#virtual-play-dates)
-    - [Setting up a Minecraft server](#setting-up-a-minecraft-server)
+  - [Model good behavior](#model-good-behavior)
+  - [Teddy bear brigade](#teddy-bear-brigade)
+  - [Virtual Play dates](#virtual-play-dates)
+  - [Setting up a Minecraft server](#setting-up-a-minecraft-server)
 - [Some bizarre consequences](#some-bizarre-consequences)
-    - [Shortages caused by retail arbitrage.](#shortages-caused-by-retail-arbitrage)
-    - [Glut of lobsters](#glut-of-lobsters)
-    - [Prisoners making hand sanitizer.](#prisoners-making-hand-sanitizer)
-    - [Door dash thinks FB is a DDoS since all employees signed in at once.](#door-dash-thinks-fb-is-a-ddos-since-all-employees-signed-in-at-once)
-    - [Expected Tech innovations](#expected-tech-innovations)
-        - [Nose filters](#nose-filters)
-        - [UV blasters](#uv-blasters)
-        - [Gloves that keep you from wiping your eyes](#gloves-that-keep-you-from-wiping-your-eyes)
+  - [Shortages caused by retail arbitrage.](#shortages-caused-by-retail-arbitrage)
+  - [Glut of lobsters](#glut-of-lobsters)
+  - [Prisoners making hand sanitizer.](#prisoners-making-hand-sanitizer)
+  - [Door dash thinks FB is a DDoS since all employees signed in at once.](#door-dash-thinks-fb-is-a-ddos-since-all-employees-signed-in-at-once)
+  - [Expected Tech innovations](#expected-tech-innovations)
+    - [Nose filters](#nose-filters)
+    - [UV blasters](#uv-blasters)
+    - [Gloves that keep you from wiping your eyes](#gloves-that-keep-you-from-wiping-your-eyes)
 - [My optimizations](#my-optimizations)
-    - [Stop watching the news.](#stop-watching-the-news)
-    - [Meet people for virtual coffees](#meet-people-for-virtual-coffees)
-    - [Get a home exercise routine](#get-a-home-exercise-routine)
-    - [Get dedicated electronics for the kids](#get-dedicated-electronics-for-the-kids)
-    - [Figure our remote magic and lighting.](#figure-our-remote-magic-and-lighting)
-    - [Make a schedule when working from home](#make-a-schedule-when-working-from-home)
+  - [Stop watching the news.](#stop-watching-the-news)
+  - [Meet people for virtual coffees](#meet-people-for-virtual-coffees)
+  - [Get a home exercise routine](#get-a-home-exercise-routine)
+  - [Get dedicated electronics for the kids](#get-dedicated-electronics-for-the-kids)
+  - [Figure our remote magic and lighting.](#figure-our-remote-magic-and-lighting)
+  - [Make a schedule when working from home](#make-a-schedule-when-working-from-home)
 - [Data](#data)
-    - [My personal dashboard](#my-personal-dashboard)
-    - [Other good data sources](#other-good-data-sources)
+  - [My personal dashboard](#my-personal-dashboard)
+  - [Other good data sources](#other-good-data-sources)
 - [The best news of all - a dry run of something fatal for the human race.](#the-best-news-of-all---a-dry-run-of-something-fatal-for-the-human-race)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## Don't feed mind monsters, focus on the positive.
+
+### Leave quarantine better then when you startd
+
+Hard to articulate it better then this video:
+
+{% include youtube.html src="snAhsXyO3Ck" %}
 
 ### Media's incentive is scaring you
 
@@ -70,7 +78,7 @@ Really? Do you? Do you think the Govenor is going to call and ask your opinion? 
 
 A great line from aa fantastic youtube video that described much of my early behavior during the pandemic
 
-https://youtu.be/jCHTFClfj5k
+{% include youtube.html src="jCHTFClfj5k" %}
 
 ### Humanity has prioritize lives over profits
 

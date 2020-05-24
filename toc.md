@@ -39,6 +39,7 @@ One of my dreams is to guide others navigate through this, which I'll do through
         - [Making hard decisions](#making-hard-decisions)
         - [Being coached](#being-coached)
 - [Life Events](#life-events)
+    - [Stopping the core.](#stopping-the-core)
     - [Changing Jobs](#changing-jobs)
     - [Having a kid](#having-a-kid)
     - [A sick parent](#a-sick-parent)
@@ -146,6 +147,10 @@ Your health is your most valuable asset. It's so easy to ignore your
 ## Life Events
 
 Major Life events have their own module
+
+### Stopping the core.
+
+Great video on keeping [the cores spinning in unexpected circumstances](https://youtu.be/snAhsXyO3Ck).
 
 ### Changing Jobs
 
