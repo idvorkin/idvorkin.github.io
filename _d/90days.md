@@ -19,7 +19,17 @@ A howto guide for starting your next job.
     - [BE Curious](#be-curious)
 - [2. Accelerate Your Learning](#2-accelerate-your-learning)
 - [3. Match Strategy to Situation](#3-match-strategy-to-situation)
+    - [STARS Model](#stars-model)
+    - [Turn around vs Realignment](#turn-around-vs-realignment)
+    - [Will you be a Hero or Steward](#will-you-be-a-hero-or-steward)
+    - [How to measure and Reward by Situation](#how-to-measure-and-reward-by-situation)
 - [4. Negotiate Success](#4-negotiate-success)
+    - [The fundamentals](#the-fundamentals)
+    - [The 5 conversations](#the-5-conversations)
+    - [Negotiate the plan](#negotiate-the-plan)
+    - [The first 30 days](#the-first-30-days)
+    - [The next 30 days](#the-next-30-days)
+    - [The five conversations down the tree](#the-five-conversations-down-the-tree)
 - [5. Secure Early Wins](#5-secure-early-wins)
 - [6. Achieve Alignment](#6-achieve-alignment)
 - [7. Build Your Team](#7-build-your-team)
@@ -55,9 +65,62 @@ Planning to learn. Figuring out the best sources of insight. Using structured me
 
 The dangers of “one-best-way” thinking. Diagnosing the situation to develop the right strategy. The STARS model of types of transitions. Using the model to analyze portfolios, and lead change.
 
+#### STARS Model
+
+| Phase              | Desc | Challenge | Opportunity |
+| ------------------ | ---- | --------- | ----------- |
+| Startup            |      | \*hi      | op2         |
+| Turn Around        |      |           |             |
+| Accelerated Growth |      |           |             |
+| Realignment        |      |           |             |
+| Sustaining Success |      |           |             |
+
+#### Turn around vs Realignment
+
+#### Will you be a Hero or Steward
+
+#### How to measure and Reward by Situation
+
 ### 4. Negotiate Success
 
 Building a productive working relationship with a new boss. The five-conversations framework. Defining expectations. Agreeing on a diagnosis of the situation. Figuring out how to work together. Negotiating for resources. Putting together your 90-day plan.
+
+#### The fundamentals
+
+- Have frequent engagement - Make it a priority
+- Don't surprise - Heads up as soon as you kknow
+- Don't just bring problems - bring an idea to resolve
+- Don't expect your boss to change
+- Clarify Expectation early and often
+- Take 100% responsibility to make relationship work.
+- Pick early wins your boss cares about
+- Impress folks who your boss trusts
+
+#### The 5 conversations
+
+- Diagnose the situations
+- Align Expecrations
+- Get Resources you need
+- Style Conversation
+- Personal Development
+
+#### Negotiate the plan
+
+- Make it written to catch gaps and avoid mmory
+- Share with boss, and use as a contract to drive alignment
+
+#### The first 30 days
+
+- Devote 30 days to learning and building crediblity
+- Keep your boss to the commitment to allow this
+- Goal, diagnose of the situation, key priorities, plan for next 30 days
+
+#### The next 30 days
+
+- Where and how you'll get early wins
+- Early discussion focus on situation agreement, expectation, and plan buy in.
+
+#### The five conversations down the tree
 
 ### 5. Secure Early Wins
 
