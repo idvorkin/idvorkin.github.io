@@ -67,13 +67,15 @@ The dangers of “one-best-way” thinking. Diagnosing the situation to develop 
 
 #### STARS Model
 
-| Phase              | Desc | Challenge | Opportunity |
-| ------------------ | ---- | --------- | ----------- |
-| Startup            |      | \*hi      | op2         |
-| Turn Around        |      |           |             |
-| Accelerated Growth |      |           |             |
-| Realignment        |      |           |             |
-| Sustaining Success |      |           |             |
+{%include  blob_image.html src="90d/90d_stars_model.jpeg" %}
+
+| Phase              | Opportunity | Challenge |
+| ------------------ | ----------- | --------- |
+| Startup            |             |           |
+| Turn Around        |             |           |
+| Accelerated Growth |             |           |
+| Realignment        |             |           |
+| Sustaining Success |             |           |
 
 #### Turn around vs Realignment
 
