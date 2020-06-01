@@ -37,8 +37,8 @@ A how to guide for starting your next job.
     - [The fundamentals](#the-fundamentals)
     - [The 5 conversations](#the-5-conversations)
     - [Negotiate the plan](#negotiate-the-plan)
-    - [Milestone #2 30 days in](#milestone-2-30-days-in)
-    - [Milestone #3 - 60 days in](#milestone-3---60-days-in)
+    - [Milestone #2 +30 days](#milestone-2-30-days-1)
+    - [Milestone #3 +60 days](#milestone-3-60-days)
     - [Have the 5 conversations down as well.](#have-the-5-conversations-down-as-well)
 - [5. Secure Early Wins](#5-secure-early-wins)
 - [6. Achieve Alignment](#6-achieve-alignment)
@@ -265,13 +265,13 @@ Building a productive working relationship with a new boss. The five-conversatio
 - Make it written to catch gaps and avoid memory gaps
 - Share with boss, and use as a contract to drive alignment
 
-#### Milestone #2 30 days in
+#### Milestone #2 +30 days
 
 - Devote 30 days to learning and building credibility
 - Keep your boss to the commitment to allow this
 - Goal, diagnose of the situation, key priorities, plan for next 30 days
 
-#### Milestone #3 - 60 days in
+#### Milestone #3 +60 days
 
 - Where and how you'll get early wins
 - Early discussion focus on situation agreement, expectation, and plan buy in.
