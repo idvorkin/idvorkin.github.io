@@ -10,14 +10,13 @@ redirect_from:
 A how to guide for starting your next job.
 
 <!-- prettier-ignore-start -->
-
 <!-- vim-markdown-toc GFM -->
 
 - [Introduction: The First 90 Days](#introduction-the-first-90-days)
 - [1. Prepare Yourself](#1-prepare-yourself)
     - [What got you here won't get you there](#what-got-you-here-wont-get-you-there)
-    - [Accelerate Assimilating into the new culture](#accelerate-assimilating-into-the-new-culture)
-    - [BE Curious](#be-curious)
+    - [Assimilating yourself](#assimilating-yourself)
+    - [Be Curious](#be-curious)
 - [2. Accelerate Your Learning](#2-accelerate-your-learning)
     - [What keeps you from learning](#what-keeps-you-from-learning)
     - [What you need to ship - the proven hypothesis](#what-you-need-to-ship---the-proven-hypothesis)
@@ -61,9 +60,9 @@ Why people fail to make the mental break from their old jobs. Preparing to take 
 
 #### What got you here won't get you there
 
-#### Accelerate Assimilating into the new culture
+#### Assimilating yourself
 
-#### BE Curious
+#### Be Curious
 
 ### 2. Accelerate Your Learning
 
