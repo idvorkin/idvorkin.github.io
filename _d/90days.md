@@ -32,6 +32,7 @@ A how to guide for starting your next job.
     - [Turn around vs Realignment](#turn-around-vs-realignment)
     - [Will you be a Hero or Steward](#will-you-be-a-hero-or-steward)
     - [How to measure and Reward by Situation](#how-to-measure-and-reward-by-situation)
+    - [How your boss can help](#how-your-boss-can-help)
 - [4. Negotiate Success](#4-negotiate-success)
     - [The fundamentals](#the-fundamentals)
     - [The 5 conversations](#the-5-conversations)
@@ -235,6 +236,8 @@ Sound similar but need a different approach:
 #### Will you be a Hero or Steward
 
 #### How to measure and Reward by Situation
+
+#### How your boss can help
 
 ### 4. Negotiate Success
 
