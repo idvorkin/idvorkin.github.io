@@ -7,59 +7,105 @@ permalink: /facebook
 Give people the power to build community and bring the world closer together, here are my in progress notes on working at FB.
 
 <!-- prettier-ignore-start -->
-<!-- prettier-ignore-end -->
+
 
 <!-- vim-markdown-toc GFM -->
 
+- [The Good - Hiring and Onboarding](#the-good---hiring-and-onboarding)
+    - [Un allocated hires](#un-allocated-hires)
+    - [Bootcamp](#bootcamp)
+- [The Good - Engineering Systems](#the-good---engineering-systems)
+    - [Why they're so good.](#why-theyre-so-good)
+    - [Open source lots](#open-source-lots)
+    - [Top notch data tools](#top-notch-data-tools)
 - [The Good](#the-good)
-  - [Bootcamp](#bootcamp)
-  - [Managers "support" their team.](#managers-support-their-team)
-  - [Inclusion and Diversity.](#inclusion-and-diversity)
-  - [Un allocated hires](#un-allocated-hires)
-  - [OKRs](#okrs)
-  - [Metric Driven Culture](#metric-driven-culture)
-  - [Design Quality](#design-quality)
-  - [Employees First](#employees-first)
-  - [The Trio: Engineering, Product Management and Data Science](#the-trio-engineering-product-management-and-data-science)
+    - [Not managers, but people who support a team.](#not-managers-but-people-who-support-a-team)
+    - [Inclusion and Diversity.](#inclusion-and-diversity)
+    - [OKRs](#okrs)
+    - [Metric Driven Culture](#metric-driven-culture)
+    - [Design Quality](#design-quality)
+    - [Employees First](#employees-first)
+    - [The Trio: Engineering, Product Management and Data Science](#the-trio-engineering-product-management-and-data-science)
 - [The peculiar](#the-peculiar)
-  - [Facebook Groups instead of e-mail](#facebook-groups-instead-of-e-mail)
-  - [Mono repo.](#mono-repo)
-  - [Mercurial instead of git](#mercurial-instead-of-git)
-- [The Bad](#the-bad)
-  - [I'm new, will add my thoughts as I know them](#im-new-will-add-my-thoughts-as-i-know-them)
-- [Engineering Systems](#engineering-systems)
-  - [Open source lots](#open-source-lots)
-  - [Top notch data tools](#top-notch-data-tools)
-  - [A CLEAR priority](#a-clear-priority)
+    - [Facebook Groups instead of e-mail](#facebook-groups-instead-of-e-mail)
+    - [Monorepo.](#monorepo)
+    - [Mercurial instead of git](#mercurial-instead-of-git)
+    - [No job title bias](#no-job-title-bias)
+- [The Bad - Still earning](#the-bad---still-earning)
 - [My projects at Facebook](#my-projects-at-facebook)
-  - [Amplifying Connection through Art and tech.](#amplifying-connection-through-art-and-tech)
-  - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
+    - [Amplifying Connection through Art and tech.](#amplifying-connection-through-art-and-tech)
+    - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
 - [Core Values (LP's)](#core-values-lps)
-  - [Focus on Impact](#focus-on-impact)
-  - [Move Fast](#move-fast)
-  - [Be Bold](#be-bold)
-  - [Be Open](#be-open)
-  - [Build Social Value](#build-social-value)
+    - [Focus on Impact](#focus-on-impact)
+    - [Move Fast](#move-fast)
+    - [Be Bold](#be-bold)
+    - [Be Open](#be-open)
+    - [Build Social Value](#build-social-value)
 - [Lingo and Culture](#lingo-and-culture)
-  - [Show up with grace](#show-up-with-grace)
-  - [TL;DR](#tldr)
+    - [Show up with grace](#show-up-with-grace)
+    - [TL;DR](#tldr)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
-## The Good
+## The Good - Hiring and Onboarding
+
+FB has an exceptionally good and unique hiring and onboarding process.
+
+### Un allocated hires
+
+Many big companies say they hire for the company not the team, at which point they assign you to a team you know almost nothing about. Your chance to learn about the team is usually a few minutes at the end of 5-6 grueling interviews and a 30 minutes "sales pitch" from a hiring manager.
+
+At FB, they really mean you're hired for the company, so you join without picking a team. Then you get 6-10 weeks (bootcamp) to find a team you like. This process includes "sitting" with various teams for a week or so. When sitting with a team you work on a task with the team which lets you see if you like the team, tech and enjoy your time with them. As a result you have a lot more data before signing up to where you'll work for the next few years of your career.
 
 ### Bootcamp
 
-Fantastic idea, 4-6 weeks dedicated to learning about Facebook. Managers also go through bootcamp and code - fantastic! Very high quality videos.
-A major part of bootcamp is doing tasks, which is hands on learning, and a great introduction to teams.
+Ramping up is hard, so at FB you get 6-10 weeks dedicated to learning about Facebook and picking a team. Managers also go through bootcamp and code, this lets them better understand the FB culture and empathize with the engineers they support. A major part of bootcamp is doing tasks, which is hands on learning, and a way to understand if you like the team you'll be working with.
 
-NOTE: I did bootcamp through Pandemic 1 so my experience might be a bit different.
+FB takes bootcamp very seriously, and you're assigned an experienced mentor to guide you through the process, who guides you very closely at the start, and then advises you more generally as you get farther into bootcamp.
 
-NOTE: At all companies I've worked at a strong correlation to engineer success is days till first checkin. For sure there's some correlation not causation here, BUT at FB, all boot campers deploy a 'hello world' to FB on your first few days, and you fix your first production bug in the first week.
+As a techie, nothing gives you the confidence like knowing you've shipped, so FB makes it super easy for all boot campers to deploy a 'hello world' to FB on their first few days, and fix their first production bug in the first week. The reason this is possible is FB has fantastic engineering systems, and curates super easy tasks so this is so easy even managers can do it :)
 
-### Managers "support" their team.
+NOTE: I did bootcamp through Pandemic 1 so my experience might be a bit different, and I'm happy to talk through it.
 
-When I did an informational with FB, the manager asked me how I support my team? I couldn't parse what the question meant. At FB, the primary term they use to describe a manager's role is supporting their team. What a best practice in general, and what a great lens to view management.
+## The Good - Engineering Systems
+
+The best I've ever used. As I learn what is public and private I'll share more details.
+
+### Why they're so good.
+
+I don't know for sure, but I suspect a few things:
+
+- Understanding what a bottleneck engineering time is, and investing resources to make engineers as efficient as possible.
+- The company values engineering systems and has several teams whose role is to make things great
+- Employees get hack-months to fix stuff they're passionate about
+- Employees can choose what they work on, and if an engineer wants to fix the system that annoys them, they do.
+- Because it's a single code base (See mono-repo) engineers easily see and can build all the code, so there's a low barrier to entry to fix issues.
+
+### Open source lots
+
+Many FB tools get open sourced, tupper ware, mercurial improvements, flow, even data center hardware designs -- what a pleasant contrast to most other places
+
+### Top notch data tools
+
+Some attributes that strike me as great:
+
+1. Very pleasant to use
+1. Unified query language across multiple data sources
+1. Great IDE (includes VIM, Formatting, Auto Save, History, Collaboration, Stats)
+1. CLI Support
+
+See a [detailed description of the tools](https://medium.com/analytics-and-data/i-hear-facebook-has-data-does-it-have-data-tools-a9f4c4d82ee7).
+
+## The Good
+
+### Not managers, but people who support a team.
+
+When I did an informational with FB, the interviewer asked me how I "support my team"? I didn't understand what the question meant. At FB, servant leadership is so ingrained in the culture that when managers introduce themselves, they don't say I'm the manager for "team name", they say I support "team name".
+
+This will be an area I write lots as it's this is some of Facebook's unique value, and I'm exited to internalize it. Some early examples:
+
+**Managers don't tell employees what to work on** Instead, they help employees evaluate what projects they should use. They clarify the needs of the team and larger org, and help employees evaluate which projects are a good fit for their interests, the business, and their growth needs. It is the employees choice though, and regardless of their choice the manager will help the employee be successful.
 
 ### Inclusion and Diversity.
 
@@ -77,12 +123,6 @@ There is no fairy dust, this will be hard. Follow these rules.
 1. Assume good intent
 2. Respect each other in communication.
 3. Give people room to grow.
-
-### Un allocated hires
-
-Most companies (AMZN, MSFT) say they hire for the company not the team, at which point they assign you to a team you know nothing about. At FB, most non managers are hired un-allocated, and as part of bootcamp and doing the tasks they discover teams and can pick one. It's more work, but sooo good.
-
-Not managers tend to be pre-allocated because there are far fewer manager positions, and it'd suck to come in as a manager and not find a job you like.
 
 ### OKRs
 
@@ -110,7 +150,7 @@ Wow!!!
 
 Facebook has an enterprise product called Workspace, which is essentially FB. FB uses this instead of e-mail. While odd, it does mean that FB gets better and workplaces get better all at the same time!
 
-### Mono repo.
+### Monorepo.
 
 Peculiar when you come from large companies other then Google.
 
@@ -118,30 +158,21 @@ Peculiar when you come from large companies other then Google.
 
 Partially because of the choice of Mono Repo, FB needed to push changes back to community, git didn't want to take them so they pushed them to Mercurial. Sadly, mercurial lost (which is a shame, as I think Mercurial was better).
 
-## The Bad
+### No job title bias
 
-### I'm new, will add my thoughts as I know them
+_This probably upgrades to the good section - but definitely peculiar right now coming from AMZN/MSFT_
 
-## Engineering Systems
+FB is bottom up, which means they do not believe in positional authority (e.g. you don't get authority due to position high in the org, you get it because people want to listen to you).
 
-Oh, so good. Need to figure out what is public and what is private
+To facilitate this FB does not have job titles, (e.g. SDE-I, SDE-II) and levels are confidential information.
 
-### Open source lots
+Job titles bias you into having a preconceived notion of how much authority you should give the person talking. In a perfect world, you'd grant this authority based on the merit of a person statement's and work, which is what FB optimizes for.
 
-Many FB tools get open sourced, tupper ware, mercurial improvements, flow, even data center hardware designs -- what a pleasant contrast to most other places
+The flip side is going into new situations you need to spend more time evaluating who you should give authority to and how likely someone knows what they are talking about. This is made easier as most work is public and very easy to see. E-mail equivalents (posts), code Reviews, Bug write ups, public thanks, are all completely public, and even show up on a person's feed.
 
-### Top notch data tools
+## The Bad - Still earning
 
-Some attributes that strike me as great:
-
-1. Very pleasant to use
-1. Unified query language across multiple data sources
-1. Great IDE (includes VIM, Formating, AutoSave, History, Collaboration, Stats)
-1. CLI Support
-
-See a [detailed description of the tools](https://medium.com/analytics-and-data/i-hear-facebook-has-data-does-it-have-data-tools-a9f4c4d82ee7).
-
-### A CLEAR priority
+_I'm new, will add my thoughts as I know them_
 
 ## My projects at Facebook
 
