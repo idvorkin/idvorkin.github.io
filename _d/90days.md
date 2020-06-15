@@ -41,6 +41,10 @@ A how to guide for starting your next job.
     - [Milestone #3 +60 days](#milestone-3-60-days)
     - [Have the 5 conversations down as well.](#have-the-5-conversations-down-as-well)
 - [5. Secure Early Wins](#5-secure-early-wins)
+    - [Pick your wins](#pick-your-wins)
+    - [Write your "leader story"](#write-your-leader-story)
+    - [How will you lead change](#how-will-you-lead-change)
+    - [Avoid land mines](#avoid-land-mines)
 - [6. Achieve Alignment](#6-achieve-alignment)
 - [7. Build Your Team](#7-build-your-team)
 - [8. Create Alliances](#8-create-alliances)
@@ -283,6 +287,74 @@ Building a productive working relationship with a new boss. The five-conversatio
 ### 5. Secure Early Wins
 
 Avoiding common traps. Figuring out A-item priorities. Creating a compelling vision. Building personal credibility. Getting started on improving organizational performance. Plan-then-implement change versus collective learning.
+
+#### Pick your wins
+
+You need to build short term momentum **and** lay a foundation for long term goals. Think through what you'll deliver aka "the goals met", and the how, aka "the behaviors seen".
+
+1. Focus on a few wins
+1. Find wins your boss cares about
+1. Win by being a class act
+1. Remember your STARS when deciding your wins
+1. Look at the wins given the culture you have.
+
+#### Write your "leader story"
+
+Your early actions will be written into stories that will turn you into a loved hero, or a hated villain. People are answering:
+
+1. Do you have the insight and steadiness to make hard decisions?
+1. Do you have values they admire?
+1. Do you have the right energy?
+1. Do you inist on high standards for yourself and others?
+
+Good leaders thrive to be :
+
+1. Demanding, but be satisfiable
+1. Accessible, but not too familiar
+1. Decisive but thoughtful.
+1. Focused but flexible
+1. Active but not causing churn
+1. Make hard calls, but be humane.
+
+Make time to share:
+
+1. Who you are, and what you stand for
+1. Teachable moments
+
+#### How will you lead change
+
+1. Turn your goals into projects
+1. Focus on high leverage points
+1. Manage the wins as projects
+1. Elevate change agents
+1. Leverage early wins as examples of how you want things to operate.
+
+Use FOGLAMP to make progress:
+
+- F - What is the focus, what is the intent of the project
+- O - How will you oversee the project
+- G - What goals and milestones
+- L - Who will lead the project?
+- A - Abilities - what people resources and skills are required to deliver
+- M - Means (materials) - what resources are required
+- P - Process - Are there required process changes
+
+Notes:
+
+- Different in turn around vs sustaining success
+
+Are you making a decision, or having collective learning and decision making.
+
+- Be clear on which you're doing.
+
+#### Avoid land mines
+
+While you are excuting, make sure you're not derailed by the following:
+
+- The external environment
+- Customers/markets/competitors/strategy
+- Internal Capabilities
+- Organizational Politics
 
 ### 6. Achieve Alignment
 
