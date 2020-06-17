@@ -83,3 +83,7 @@ Most managers focus on solving problems, making sure employees and customers are
   - Each leader gives out their own type of recognition.
   - Huge piles of money (Zimbabwe) Get 3 Million Zimbabwe dollars.
   - Client write something nice -- print customer comments, and your own comments get it framed and give it to the employee.
+
+#### Moments in general
+
+I have a [very draft book summary](/moments)
