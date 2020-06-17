@@ -98,7 +98,7 @@ function generateToc(id, showPinToc) {
   Mousetrap.bind("m", e => (location.href = "/toc"));
 
   let shortcutHelp = `
-Keyboard Shortcuts: 
+Keyboard Shortcuts:
   s - search
   t - force sidebar
   p - swap prod and test
@@ -111,3 +111,32 @@ Keyboard Shortcuts:
 // NOTE: This should really be in post.md
 generateToc("ui-toc", (showPinToc = true));
 generateToc("ui-toc-affix", (showPinToc = false));
+
+// Yuk: Markdown Table Syntax makes nesting lists in tables hard. Adding JS based macro
+// Replacement
+//  NOTE: replace [](lX) with a list where X is a number
+//  List must start with *lX
+//  Markdown does not seperate lists, so stick divs between them.
+
+function JsTemplateReplace() {
+  // Build a cache of replacement candidates to avoid multiple iterations over the tables
+  let replaces = {};
+  for (var list of $("ul")) {
+    if (!list.firstElementChild) continue;
+    let firstLIText = list.firstElementChild.textContent;
+    if (!firstLIText.startsWith("l")) continue;
+    let number = parseInt(firstLIText.substring(1));
+    if (number == NaN) continue;
+    replaces[firstLIText] = list;
+  }
+
+  for (var replaceText in replaces) {
+    let aToReplace = _($(`a[href=${replaceText}]`)).head();
+    if (!aToReplace) continue; // Non-replaced targets will be left in place
+    replace = replaces[replaceText];
+    replace.removeChild(replace.firstElementChild); // remove the 'lookup id' from the list
+    $(aToReplace).replaceWith(replace);
+  }
+  window.replaces = replaces; // help debugging
+}
+$(document).ready(JsTemplateReplace);

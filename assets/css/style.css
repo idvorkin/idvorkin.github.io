@@ -51,3 +51,8 @@ pre {
 .container td {
   overflow-wrap: break-word;
 }
+
+/* Make UL's in tables have no margin-bottom (override reboot) */
+.table ul {
+  margin-bottom: 0;
+}
