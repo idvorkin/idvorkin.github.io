@@ -13,31 +13,59 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Part 1: What does a manager do?](#part-1-what-does-a-manager-do)
+- [What does a manager do?](#what-does-a-manager-do)
     - [What are a managers responsibilities?](#what-are-a-managers-responsibilities)
     - [How do you measure their success?](#how-do-you-measure-their-success)
     - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
     - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
     - [Should managers code?](#should-managers-code)
-- [Part 2: Managing and Developing People](#part-2-managing-and-developing-people)
-    - [How do you coach ?](#how-do-you-coach-)
+- [Managing and Developing People](#managing-and-developing-people)
+    - [How do you coach?](#how-do-you-coach)
     - [How do you develop careers?](#how-do-you-develop-careers)
-    - [How do you help people switch jobs.](#how-do-you-help-people-switch-jobs)
+    - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [How do you give challenging feedback:](#how-do-you-give-challenging-feedback)
     - [1:1s](#11s)
-    - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
-    - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
-    - [How do you identify engineers who could make good managers? How do you help them develop?](#how-do-you-identify-engineers-who-could-make-good-managers-how-do-you-help-them-develop)
+    - [How do you handle communication problems?](#how-do-you-handle-communication-problems)
+    - [How do you handle promotion fever?](#how-do-you-handle-promotion-fever)
+    - [How do you identify and grow potential managers?](#how-do-you-identify-and-grow-potential-managers)
     - [Best hire of your career](#best-hire-of-your-career)
     - [How did you grow top talent](#how-did-you-grow-top-talent)
-    - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
+    - [How you deal with team disagrees with the leadership](#how-you-deal-with-team-disagrees-with-the-leadership)
     - [What is your ideal culture?](#what-is-your-ideal-culture)
     - [How do you make a good culture?](#how-do-you-make-a-good-culture)
     - [How do you handle Remote Work](#how-do-you-handle-remote-work)
     - [How do you think about work life balance](#how-do-you-think-about-work-life-balance)
-- [Part 3: Business Acumen and Strategy](#part-3-business-acumen-and-strategy)
+- [Process and Mechanism](#process-and-mechanism)
+    - [Theory of Process](#theory-of-process)
+    - [Never have a human do what a computer can do.](#never-have-a-human-do-what-a-computer-can-do)
+    - [Team meeting](#team-meeting)
+    - [Deep Dives and Guest Speakers](#deep-dives-and-guest-speakers)
+    - [Engineering Excellence + Operational Review](#engineering-excellence--operational-review)
+    - [Business Reviews](#business-reviews)
+    - [Design+Arch Reviews](#designarch-reviews)
+    - [Group Bonding](#group-bonding)
+- [Hiring](#hiring)
+    - [What are you looking for when you recruit?](#what-are-you-looking-for-when-you-recruit)
+    - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
+    - [Are they more comfortable with generalists or specialists?](#are-they-more-comfortable-with-generalists-or-specialists)
+    - [How do you think about hiring?](#how-do-you-think-about-hiring)
+    - [How do you think about the hiring funnel.](#how-do-you-think-about-the-hiring-funnel)
+    - [What about structured vs free form interview loops?](#what-about-structured-vs-free-form-interview-loops)
+    - [What are better kinds of interviews?](#what-are-better-kinds-of-interviews)
+- [Firing and Performance Management](#firing-and-performance-management)
+    - [Firing Ratios](#firing-ratios)
+    - [The Process](#the-process)
+- [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
+    - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
+    - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
+    - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
+    - [Aside: Agency and Psychological Safety:](#aside-agency-and-psychological-safety)
+- [Personal Motivations](#personal-motivations)
+    - [Why is management attractive to you?](#why-is-management-attractive-to-you)
+    - [What are your thoughts on managers memorizing these answers for interviews.](#what-are-your-thoughts-on-managers-memorizing-these-answers-for-interviews)
+- [Business Acumen and Strategy](#business-acumen-and-strategy)
     - [The Four](#the-four)
     - [Stratechary](#stratechary)
     - [Zillow](#zillow)
@@ -46,24 +74,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [Amazon](#amazon)
     - [Microsoft](#microsoft)
     - [Apple](#apple)
-- [Part 4: Process and Mechanism](#part-4-process-and-mechanism)
-- [Part 5: Hiring](#part-5-hiring)
-    - [What are you looking for in an engineer when you recruit?](#what-are-you-looking-for-in-an-engineer-when-you-recruit)
-    - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
-    - [Are they more comfortable with generalists or specialists?](#are-they-more-comfortable-with-generalists-or-specialists)
-    - [How do you think about hiring?](#how-do-you-think-about-hiring)
-    - [How do you think about the hiring funnel.](#how-do-you-think-about-the-hiring-funnel)
-    - [What are their thoughts on structured interview loops vs. non-structured free-form loops?](#what-are-their-thoughts-on-structured-interview-loops-vs-non-structured-free-form-loops)
-- [Part 6: Firing and Performance Management](#part-6-firing-and-performance-management)
-- [Part 7: Charters, Re-orgs and Bootstrapping](#part-7-charters-re-orgs-and-bootstrapping)
-    - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
-    - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
-    - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
-    - [Aside: Agency and Psychological Safety:](#aside-agency-and-psychological-safety)
-- [Part 8: Personal Motivations](#part-8-personal-motivations)
-    - [Why is management attractive to you?](#why-is-management-attractive-to-you)
-    - [What are your thoughts on managers memorizing these answers for interviews.](#what-are-your-thoughts-on-managers-memorizing-these-answers-for-interviews)
-- [Part 9: Other resources](#part-9-other-resources)
+- [Other resources](#other-resources)
     - [Great Videos](#great-videos)
     - [Great Posts and Blogs](#great-posts-and-blogs)
     - [Great books](#great-books)
@@ -72,7 +83,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Part 1: What does a manager do?
+## What does a manager do?
 
 ### What are a managers responsibilities?
 
@@ -145,9 +156,9 @@ SDMs should be reading code occasionally:
 1. Assessing people - Code is a major deliverable for developers and should be inspected as part of people assessment.
 1. Deep dive during major outages - In high risk, time critical situations like outages, you want your best people reviewing the changes, and this includes SDMs. If an SDM can't understand a high risk time sensitive code change, it can be, and should be simplified.
 
-## Part 2: Managing and Developing People
+## Managing and Developing People
 
-### How do you coach ?
+### How do you coach?
 
 There are two major categories of coaching. Career development and coaching
 
@@ -193,7 +204,7 @@ My approach, and frequent peep questions.
 - How are you maximizing our benefit?
 - How do we make sure we compliment each other?
 
-### How do you help people switch jobs.
+### How do you help people switch jobs?
 
 My goal is to find people the right job, not the job on my team. I coach a lot of people through this, and here are my most popular posts:
 
@@ -281,7 +292,7 @@ Other thoughts:
 - I try to group my 1:1's on the same day (or over 2 days) because 1:1 is a special frame of mind, and takes a bit to get in the zone.
 - With small teams, I like 1 hour 1 on 1s, but some folks prefer 30 minutes.
 
-### How do you handle a great engineer with communication problems?
+### How do you handle communication problems?
 
 - High Order: Goal is not "communication style", but ability to influence.
 
@@ -298,7 +309,9 @@ Other thoughts:
     - Say not great on my feet
   - Slow in situations
 
-### How do you handle someone who really wants a promotion but isn't ready?
+### How do you handle promotion fever?
+
+Promotion fever is my word for engineers that are completely focused on promotions above all else. In general they fall into a few categories: 1) Not Ready, 2) Just hired, and believe under levelled 3) Ready, but didn't get promo due to bad luck.
 
 - Surprises are **BAD**:
 
@@ -307,35 +320,36 @@ Other thoughts:
 
 - Goal:
 
+  - Engineer is self aware
   - Engineer comes to conclusion himself
   - Engineers feels on track
   - Engineer aspires to get to that level
   - Engineer doesn't want to be over leveled
-  - Engineer is self aware
   - Engineer gets new opportunities/support required.
 
 - Start w assume engineer right - lets look at the criteria together.
 
-  - Now or next 1:1?
-
-- Review role guidelines
-
+  - Skim now and deep dive in next 1:1
   - Ask for self evaluation
+  - Review and get on same page, sometimes manager thinks below and above what eng does.
   - Go over with examples together
   - Ask "How would you describe your behavior vs someone else's"
   - Ask what gaps do you see
 
-- Call out positive examples from engineers @ Level + 1
+- Create plan to close the gaps
+  - Projects that stretch in those areas
+  - Mentors that can help close the gap on those areas
+  - Training/etc
 
-### How do you identify engineers who could make good managers? How do you help them develop?
+### How do you identify and grow potential managers?
 
-Engineers that are interested in reading this post :)
+Engineers that are interested in reading this post make good manager candidates. The path usually start with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many as people issues as people are comfortable with them tracking.
 
 ### Best hire of your career
 
 ### How did you grow top talent
 
-### What do you do when a team completely disagrees with the founder/VP on the direction of a product?
+### How you deal with team disagrees with the leadership
 
 Step 1: Believe and deeply understand it. Either I believe in it, or I deeply understand the decision and have disagreed and committed. As part of committing, I'm all in, and will share that.
 
@@ -366,66 +380,84 @@ Step 3: Focus on the win/win, and talk through a ripcord.
 
 I think it's very important. See my https://bit.ly/igor-wlb-manifesto
 
-## Part 3: Business Acumen and Strategy
+## Process and Mechanism
 
-### The Four
+### Theory of Process
 
-The four is a fantastic book describing the value of the FANG companies.
+Why:
 
-- Google is the brain
-- Amazon is the belly
-- Facebook is the heart
-- Apple is the sex drive
+- Turn input into outputs
+- Reduce variance and setup a pit of success.
+- Scale
+- The human equivalent of great tools (source control, linters, bug management systems)
 
-### Stratechary
+How:
 
-- Aggregator theory
-- Disruption theory
-- Horizontal vs Vertical Integration
+- How to measure success of the process, what will you inspect, when will you adjust?
+- What other process is this similar to, can we co-coalesce with something else?
+- How will you get buy in from up, out and down?
+  - (Bright spot, then land and expand)
+- Who is the owner?
+- Ownership lifetime, per quarter, or forever.
 
-### Zillow
+Thoughts:
 
-- Mortgage
-- Zillow Offers
+- Culture vs Process
+- Process vs Good Intentions
+- Toyota Assembly line vs Artisan
+- NEVER: Disenfranchising ownership
+  - Nothing more powerful then a motivated engineer, don’t let process take that away.
 
-### Facebook
+### Never have a human do what a computer can do.
 
-- AR/VR
-- Messengers
-- Portal
+- Use auto style for code review styles
+- Gather data from bug systems instead of having humans do it.
+- Automated tests vs human execution
+- Multiple copies of the same data
 
-### Google
+### Team meeting
 
-- Advertising
-- YouTube
+### Deep Dives and Guest Speakers
 
-### Amazon
+### Engineering Excellence + Operational Review
 
-- AWS
-- Retail
-- Alexa
+1. How do we know our customer is having a good day?
+2. How do we maximize our velocity
+3. How do we keep our developers happy.
+4. How do we sleep well at night?
+5. How do we get max learning from outages?
 
-### Microsoft
+By the way, I think a manager should be on all pages and outages.
 
-- Linked In
-- Open Source
-- Productivity
-- Azure
-- Windows
-- Windows Phone
-- Developer Tools
+- On all the pages
+- Strong appreciation for boots on the ground reality.
 
-### Apple
+Also need to review all outages
 
-- Hardware or Services
-- The App Store
-- The Physical Store
+- Write up for all outages, [Correction Of Errors](/coe) for major outages -
+- Maximize value of mistakes, don't make them twice.
+- For all customer impacting event, review w/Customer Impact, root cause understood, and commitment when to address.
+- Observability
+  - How do we get a page next time.
+  - How do we see what's going on.
+- Testing systems.
+  - Very high leverage active
 
-## Part 4: Process and Mechanism
+### Business Reviews
 
-## Part 5: Hiring
+### Design+Arch Reviews
 
-### What are you looking for in an engineer when you recruit?
+- Really a preview, not a review.
+- Ensure that tech assets are high quality and require minimal re-work.
+- Ensure team gets cross trained.
+- Catch stuff as early as possible
+- Get developers used to being on the whiteboard
+
+### Group Bonding
+
+## Hiring
+
+### What are you looking for when you recruit?
 
 Most companies have their “competencies” they test for. But I abstract it down to:
 
@@ -512,7 +544,7 @@ Most important part of sales:
   - Multi Sell job come to my
   - Focus on
 
-### What are their thoughts on structured interview loops vs. non-structured free-form loops?
+### What about structured vs free form interview loops?
 
 - External Structured
 
@@ -527,13 +559,22 @@ Most important part of sales:
   - Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them doing their day job.
   - Talk about hard situations they've had. Listen for the criteria smart/gets shit done/emotionally intelligent
 
-- Novel ideas for interviews (from indeed)
-  - Do code reviews
-  - Do a mock interview + debrief
+### What are better kinds of interviews?
 
-## Part 6: Firing and Performance Management
+Novel ideas for interviews (from indeed)
 
-## Part 7: Charters, Re-orgs and Bootstrapping
+- Do a code review
+- Do a mock interview + debrief
+- Review their public work (like Github)
+- Having them explain their projects to you.
+
+## Firing and Performance Management
+
+### Firing Ratios
+
+### The Process
+
+## Charters, Re-orgs and Bootstrapping
 
 Reorgs have two dimensions, staffing and charter, both of these need to be addressed.
 
@@ -571,7 +612,7 @@ Hopefully, early in your hiring process you've been thinking about your charter.
 
 ### Aside: Agency and Psychological Safety:
 
-## Part 8: Personal Motivations
+## Personal Motivations
 
 I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I"m being consistent between my actions and motivations.
 
@@ -604,7 +645,62 @@ Good interviewees prepare as much as possible, thinking through their experience
 
 Good interviewers (and manager interviews better be good) need to be able to differentiate "theoretical knowledge" from "practical experience". They do this with situational questions like "Tell me a time when", and probing questions like "What happened then? What were the unexpected consequences? When did you have the opposite outcome?".
 
-## Part 9: Other resources
+## Business Acumen and Strategy
+
+### The Four
+
+The four is a fantastic book describing the value of the FANG companies.
+
+- Google is the brain
+- Amazon is the belly
+- Facebook is the heart
+- Apple is the sex drive
+
+### Stratechary
+
+- Aggregator theory
+- Disruption theory
+- Horizontal vs Vertical Integration
+
+### Zillow
+
+- Mortgage
+- Zillow Offers
+
+### Facebook
+
+- AR/VR
+- Messengers
+- Portal
+
+### Google
+
+- Advertising
+- YouTube
+
+### Amazon
+
+- AWS
+- Retail
+- Alexa
+
+### Microsoft
+
+- Linked In
+- Open Source
+- Productivity
+- Azure
+- Windows
+- Windows Phone
+- Developer Tools
+
+### Apple
+
+- Hardware or Services
+- The App Store
+- The Physical Store
+
+## Other resources
 
 ### Great Videos
 
