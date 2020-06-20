@@ -22,32 +22,30 @@ ASIDE: Few things make me prouder then this [public feedback on LinkedIn](/stati
 <!-- vim-markdown-toc GFM -->
 
 - [How will I measure my success?](#how-will-i-measure-my-success)
-  - [Coach, empower, build inclusive and supportive culture](#coach-empower-build-inclusive-and-supportive-culture)
-  - [Productive and results-oriented](#productive-and-results-oriented)
-  - [Great partner to other teams and non-tech partners](#great-partner-to-other-teams-and-non-tech-partners)
+    - [Coach, empower, build inclusive and supportive culture](#coach-empower-build-inclusive-and-supportive-culture)
+    - [Productive and results-oriented](#productive-and-results-oriented)
+    - [Great partner to other teams and non-tech partners](#great-partner-to-other-teams-and-non-tech-partners)
 - [How will I behave to be successful?](#how-will-i-behave-to-be-successful)
-  - [Being a great coach](#being-a-great-coach)
-  - [Communicating clearly](#communicating-clearly)
-  - [Hiring](#hiring)
-  - [Working across teams](#working-across-teams)
-  - [Staying technical](#staying-technical)
-  - [Hack-a-thons](#hack-a-thons)
-  - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
+    - [Being a great coach](#being-a-great-coach)
+    - [Communicating clearly](#communicating-clearly)
+    - [Hiring](#hiring)
+    - [Working across teams](#working-across-teams)
+    - [Staying technical](#staying-technical)
+    - [Hack-a-thons](#hack-a-thons)
+    - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
 - [How others define great managers](#how-others-define-great-managers)
-  - [Google's Project Oxygen](#googles-project-oxygen)
-  - [Amazon's leadership principles](#amazons-leadership-principles)
+    - [Google's Project Oxygen](#googles-project-oxygen)
+    - [Amazon's leadership principles](#amazons-leadership-principles)
 - [Management situations](#management-situations)
-  - [Performance Management and Career Planning](#performance-management-and-career-planning)
-  - [Coaching for job changes](#coaching-for-job-changes)
-  - [Hiring and Recruiting](#hiring-and-recruiting)
-  - [Goal setting](#goal-setting)
-  - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
-  - [Execution tracking](#execution-tracking)
+    - [Performance Management and Career Planning](#performance-management-and-career-planning)
+    - [Coaching for job changes](#coaching-for-job-changes)
+    - [Hiring and Recruiting](#hiring-and-recruiting)
+    - [Goal setting](#goal-setting)
+    - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
+    - [Execution tracking](#execution-tracking)
 - [Igors Super Powers](#igors-super-powers)
-  - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
+    - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
 - [Other Resources](#other-resources)
-  - [Igor's manager book](#igors-manager-book)
-  - [Everything else](#everything-else)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -284,10 +282,4 @@ Someone once asked my why I'm a good coach, took me a while, here's what I came 
 
 ## Other Resources
 
-### Igor's manager book
-
-To collect my thoughts, I'm writing a [book of manager](/the-manager-book).
-
-### Everything else
-
-Check out the resources in the [book of manager](the-manager-book#part-9-other-resources)
+To collect my thoughts, I'm writing a [book of manager](/the-manager-book) which is full of manager resources.

@@ -26,10 +26,10 @@ In March 2020, the world shut down from Covid 19. In May 2020, I started a new j
     - [Challenges when the team is well gelled](#challenges-when-the-team-is-well-gelled)
     - [Sync vs Async Communication](#sync-vs-async-communication)
     - [Collaborative Documents](#collaborative-documents)
-    - [Remote workers vs  Flexible Time In Office](#remote-workers-vs--flexible-time-in-office)
+    - [Remote workers vs Flexible Time In Office](#remote-workers-vs-flexible-time-in-office)
     - [Social Things](#social-things)
     - [The environment controls are emotions and engagement](#the-environment-controls-are-emotions-and-engagement)
-    - [Remote Work and  Camera Setup](#remote-work-and--camera-setup)
+    - [Remote Work and Camera Setup](#remote-work-and-camera-setup)
     - [Cute and ackward moments](#cute-and-ackward-moments)
     - [A Post E-mail world.](#a-post-e-mail-world)
         - [Long term information storage](#long-term-information-storage)
@@ -41,6 +41,7 @@ In March 2020, the world shut down from Covid 19. In May 2020, I started a new j
         - [Quip vs Wiki](#quip-vs-wiki)
         - [Quip vs Word (and Word Procesors)](#quip-vs-word-and-word-procesors)
         - [The good and bad of public communication](#the-good-and-bad-of-public-communication)
+    - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -143,3 +144,7 @@ Word, is great, but it has many irrelevant features optimized for an era where y
 Good: You are generally nicer and more careful when talking in public. Less likley to gossip or bash someone.
 
 Bad: It's more expensive, more sterile, needs more context.
+
+### Other Resources
+
+- Gitlabs' guide to [remote work](https://about.gitlab.com/company/culture/all-remote/guide/)
