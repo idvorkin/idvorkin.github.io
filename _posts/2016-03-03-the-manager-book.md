@@ -76,7 +76,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [Great Videos](#great-videos)
     - [Great Posts and Blogs](#great-posts-and-blogs)
     - [Great books](#great-books)
-    - [Igor's other manager post](#igors-other-manager-post)
+    - [Project Oxygen and Amazon Leadership principles](#project-oxygen-and-amazon-leadership-principles)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -728,6 +728,6 @@ Apple:
 - [Igor's general reading list](/books)
 - Lots more coming
 
-### Igor's other manager post
+### Project Oxygen and Amazon Leadership principles
 
-I'm still merging in my original [manager post](/being-a-great-manager)
+It's covered in my my original [manager post](/being-a-great-manager), I'm getting around to merging it
