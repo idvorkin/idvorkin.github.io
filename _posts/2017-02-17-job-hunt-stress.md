@@ -2,6 +2,7 @@
 layout: post
 title: "Reducing job hunt stress"
 date: "2020-01-09 07:25:17 Pacific Daylight Time"
+permalink: job-hunt-stress
 tags:
   - emotional intelligence
   - software engineering
