@@ -190,14 +190,14 @@ My approach, and frequent peep questions.
 - You are new, and need to learn and need to spend a bunch of time asking for help and guidance. I have one rule - you must come with a bad idea (which will start becoming good ideas). You fail when you bring nothing, you ace it when you bring a bad idea. We'll help you develop that bad idea, and help sharpen your thinking skill.
 - "You have a fresh perspective - If something doesn't make sense ask, for us, we're like fish in water, so challenge our assumptions".
 
-<div/>
+<div> </div>
 - l20
 - How do you make the team better?
 - What are you gonna be known for?
 - You're the owner, you'll do everything and I work for you. What help do you need
 - Do shadow coaching, where I might be writing/pr-doing work but they do the send/take the credit
 
-<div/>
+<div> </div>
 - l30
 - Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
 - What are you driving for our larger organization?
