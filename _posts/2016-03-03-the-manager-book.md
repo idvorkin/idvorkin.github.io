@@ -354,11 +354,13 @@ Engineers that are interested in reading this post make good manager candidates.
 
 ### How do you handle Remote Work?
 
-Writing as [we speak](/remote-work)
+I'm writing this stuff [my rough outline](/remote-work)
 
 ### How do you think about work life balance
 
-I think it's very important. See my https://bit.ly/igor-wlb-manifesto
+I think it's very important. From my [manifesto](https://bit.ly/igor-wlb-manifesto):
+
+_I don't want to die knowing I spent too much time at work and I bet you don't either. As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders needs to walk the talk, and I'll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance._
 
 ### How you deal with team disagrees with the leadership
 
