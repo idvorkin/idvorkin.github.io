@@ -2,6 +2,7 @@
 layout: post
 title: "Care about Total Compensation"
 date: "2019-01-09 07:25:17 Pacific Daylight Time"
+imagefeature: https://github.com/idvorkin/blob/raw/master/icon_compensation.png
 tags:
   - job-hunt
 permalink: /comp
