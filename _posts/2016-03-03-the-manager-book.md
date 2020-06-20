@@ -26,17 +26,18 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [How do you give challenging feedback:](#how-do-you-give-challenging-feedback)
-    - [1:1s](#11s)
+    - [How do you do 1:1s](#how-do-you-do-11s)
     - [How do you handle communication problems?](#how-do-you-handle-communication-problems)
     - [How do you handle promotion fever?](#how-do-you-handle-promotion-fever)
     - [How do you identify and grow potential managers?](#how-do-you-identify-and-grow-potential-managers)
-    - [Best hire of your career](#best-hire-of-your-career)
     - [How did you grow top talent](#how-did-you-grow-top-talent)
-    - [How you deal with team disagrees with the leadership](#how-you-deal-with-team-disagrees-with-the-leadership)
+- [Culture](#culture)
     - [What is your ideal culture?](#what-is-your-ideal-culture)
     - [How do you make a good culture?](#how-do-you-make-a-good-culture)
-    - [How do you handle Remote Work](#how-do-you-handle-remote-work)
+    - [How do you handle Remote Work?](#how-do-you-handle-remote-work)
     - [How do you think about work life balance](#how-do-you-think-about-work-life-balance)
+    - [How you deal with team disagrees with the leadership](#how-you-deal-with-team-disagrees-with-the-leadership)
+    - [Agency and Psychological Safety](#agency-and-psychological-safety)
 - [Process and Mechanism](#process-and-mechanism)
     - [Theory of Process](#theory-of-process)
     - [Never have a human do what a computer can do.](#never-have-a-human-do-what-a-computer-can-do)
@@ -54,6 +55,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [How do you think about the hiring funnel.](#how-do-you-think-about-the-hiring-funnel)
     - [What about structured vs free form interview loops?](#what-about-structured-vs-free-form-interview-loops)
     - [What are better kinds of interviews?](#what-are-better-kinds-of-interviews)
+    - [Best hire of your career](#best-hire-of-your-career)
 - [Firing and Performance Management](#firing-and-performance-management)
     - [Firing Ratios](#firing-ratios)
     - [The Process](#the-process)
@@ -61,24 +63,20 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
     - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
     - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
-    - [Aside: Agency and Psychological Safety:](#aside-agency-and-psychological-safety)
 - [Personal Motivations](#personal-motivations)
     - [Why is management attractive to you?](#why-is-management-attractive-to-you)
+    - [What is your dream job?](#what-is-your-dream-job)
+    - [What is your career aspiration?](#what-is-your-career-aspiration)
     - [What are your thoughts on managers memorizing these answers for interviews.](#what-are-your-thoughts-on-managers-memorizing-these-answers-for-interviews)
 - [Business Acumen and Strategy](#business-acumen-and-strategy)
     - [The Four](#the-four)
     - [Stratechary](#stratechary)
-    - [Zillow](#zillow)
-    - [Facebook](#facebook)
-    - [Google](#google)
-    - [Amazon](#amazon)
-    - [Microsoft](#microsoft)
-    - [Apple](#apple)
+    - [By company](#by-company)
 - [Other resources](#other-resources)
     - [Great Videos](#great-videos)
     - [Great Posts and Blogs](#great-posts-and-blogs)
     - [Great books](#great-books)
-    - [My aspirations as a manager](#my-aspirations-as-a-manager)
+    - [Igor's other manager post](#igors-other-manager-post)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -98,41 +96,30 @@ An acid test:
 - People have clear understanding of career growth/progression and how their work supports it.
 -->
 
-| Dimension                                 |                                                                                                                                                                                                                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Business Results                          | Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.                                                                                                                      |
-| People Growing in a high performance team | team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.                                                                                                                 |
-| Engineering Efficiency and Process        | Engineering systems ensure a pit of success where things which can be automated have been, and we have high velocity releases with minimal risk.                                                                                                       |
-| Technical Assets                          | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (like take debt if you might be able to write off the asset) |
+| Dimension                          |                                                                                                                                                                                                                                                        |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Business Results                   | Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.                                                                                                                      |
+| High performance people and teams  | Team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.                                                                                                                 |
+| Engineering Efficiency and Process | Engineering systems ensure a pit of success where things which can be automated have been, and we have high velocity releases with minimal risk.                                                                                                       |
+| Technical Assets                   | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (like take debt if you might be able to write off the asset) |
 
 ### How do you describe your job to people outside the industry?
 
 I run a factory which produces widgets and has employees. For those in the industry this translates to:
 
-- Widget == Business Results
-- Factory Workers == Team health and growing, leaders who make software
-- Worker Operating procedures == Software Design Life Cycle,
-- Factory machines - architecture, tech assets
-
-My role:
-
-- **Business Results:** I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.
-- **People growing in a high performing team:** I am responsible for the workers in the factory: Are they healthy, learning, wanting to come to work every day, getting along with co-workers.
-- **Engineering Efficiency and Process:** I am responsible for the efficiency of the factory: Is production good and improving? Are widgets coming out consistently and on schedule? Do new employees know what to do? Does everyone know what to do if there's an emergency?
-- **Technical Assets:** I am responsible for the machines we build and maintain: Can the machines in the factory be adjusted for the different types of widgets we need to build? Do the machines mostly work or do they need constant adjustment? Are the machines we bought used to high efficiency?
-
-Top metrics:
-
-- **Business Results**: Did we make the right widgets on time and budget?
-- **People Growing**: Are the works happy based on surveys
-- **Engineering Efficiency and Technical Assets**: Is our factory solid and able to make new stuff quickly and maintain production?
+| Dimension                          | Analog                      | Details                                                                                                                                                                                                                                                                        | Metrics                                                                          |
+| ---------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| Business Results                   | Widgets                     | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.                                                                                                                     | Did we make the right widgets on time and budget?                                |
+| High performance people and teams  | Factory Workers             | I am responsible for the workers in the factory: Are they healthy, learning, wanting to come to work every day, getting along with co-workers.                                                                                                                                 | Are the workers happy based on surveys, and getting promos                       |
+| Engineering Efficiency and Process | Worker operating procedures | I am responsible for the efficiency of the factory: Is production good and improving? Are widgets coming out consistently and on schedule? Do new employees know what to do? Does everyone know what to do if there's an emergency?                                            | Is our factory solid and able to make new stuff quickly and maintain production? |
+| Technical Assets                   | Factory machines            | I am responsible for the machines we build and maintain: Can the machines in the factory be adjusted for the different types of widgets we need to build? Do the machines mostly work or do they need constant adjustment? Are the machines we bought used to high efficiency? | Is our factory solid and able to make new stuff quickly and maintain production? |
 
 ### Hardest part about being a manager
 
-- Surprisingly: People think it's firing it's not.
-- Greedy: telling team I'm quitting, tears, ride bike, etc.
+- Firing: People think it's firing but it's not, see that section
+- Personally: Telling team I'm quitting, tears, ride bike, etc.
 - Actual: When need to surprise folks, abrupt direction change or killing projects.
-- Expected: Layoffs, when know and can't tell.
+- Likely, but I haven't done it: Layoffs, when know and can't tell.
 
 ### What do you do in the first 90 days?
 
@@ -159,8 +146,6 @@ SDMs should be reading code occasionally:
 ## Managing and Developing People
 
 ### How do you coach?
-
-There are two major categories of coaching. Career development and coaching
 
 Coaching is a major part of the job, and covered in my [coaching post](/coaching):
 
@@ -266,7 +251,7 @@ Types of tough conversations:
 
 Performance, Charter, Re-org (me leaving), Lay Offs.
 
-### 1:1s
+### How do you do 1:1s
 
 Computers produce nothing, developers produce code. Business produce nothing PMs, other functions produce stuff.
 
@@ -345,17 +330,9 @@ Promotion fever is my word for engineers that are completely focused on promotio
 
 Engineers that are interested in reading this post make good manager candidates. The path usually start with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many as people issues as people are comfortable with them tracking.
 
-### Best hire of your career
-
 ### How did you grow top talent
 
-### How you deal with team disagrees with the leadership
-
-Step 1: Believe and deeply understand it. Either I believe in it, or I deeply understand the decision and have disagreed and committed. As part of committing, I'm all in, and will share that.
-
-Step 2: Listen to the team. The team has concerns, hopefully I can predict the, ahead of time and be prepared for the easy ones, then truly listen to new concerns, and address them.
-
-Step 3: Focus on the win/win, and talk through a ripcord.
+## Culture
 
 ### What is your ideal culture?
 
@@ -374,11 +351,23 @@ Step 3: Focus on the win/win, and talk through a ripcord.
   - Incite pride and purpose
 - Repeat/Repeat/Repeat
 
-### How do you handle Remote Work
+### How do you handle Remote Work?
+
+Writing as [we speak](/remote-work)
 
 ### How do you think about work life balance
 
 I think it's very important. See my https://bit.ly/igor-wlb-manifesto
+
+### How you deal with team disagrees with the leadership
+
+Step 1: Believe and deeply understand it. Either I believe in it, or I deeply understand the decision and have disagreed and committed. As part of committing, I'm all in, and will share that.
+
+Step 2: Listen to the team. The team has concerns, hopefully I can predict the, ahead of time and be prepared for the easy ones, then truly listen to new concerns, and address them.
+
+Step 3: Focus on the win/win, and talk through a ripcord.
+
+### Agency and Psychological Safety
 
 ## Process and Mechanism
 
@@ -568,6 +557,8 @@ Novel ideas for interviews (from indeed)
 - Review their public work (like Github)
 - Having them explain their projects to you.
 
+### Best hire of your career
+
 ## Firing and Performance Management
 
 ### Firing Ratios
@@ -610,13 +601,13 @@ Hopefully, early in your hiring process you've been thinking about your charter.
 
 ### The merge: When a manager leaves
 
-### Aside: Agency and Psychological Safety:
-
 ## Personal Motivations
 
 I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I"m being consistent between my actions and motivations.
 
 ### Why is management attractive to you?
+
+Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years.
 
 On my deathbed, the product I will be most proud of is the people who I watched blossom and grow. It's cliche, but when you love your people they know it, they thrive, and do their best work. It's not just about the work, I want to make sure people think of their lives as well, because, well, that's even more important.
 
@@ -630,6 +621,8 @@ Lastly, I love understanding what is going on, coming up with win/win solutions,
 
 _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, so inspiring, so powerful we still feel it 3 years after you left the team._
 
+And most
+
 <!--
 
 - Skill, clarifying, building consensus, sharing the story and meaning.
@@ -638,6 +631,18 @@ _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, 
 - Servant leadership
 - On top of best practices
 -->
+
+### What is your dream job?
+
+A preview of [my dream job](/job):
+
+_Jobs have many dimensions and I'll describe my dream job in several dimensions. In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office._
+
+### What is your career aspiration?
+
+A preview of [I want to be the best boss my peeps have ever had](/being-a-great-manager)
+
+_I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best._
 
 ### What are your thoughts on managers memorizing these answers for interviews.
 
@@ -662,29 +667,31 @@ The four is a fantastic book describing the value of the FANG companies.
 - Disruption theory
 - Horizontal vs Vertical Integration
 
-### Zillow
+### By company
+
+Zillow:
 
 - Mortgage
 - Zillow Offers
 
-### Facebook
+Facebook:
 
 - AR/VR
 - Messengers
 - Portal
 
-### Google
+Google:
 
 - Advertising
 - YouTube
 
-### Amazon
+Amazon:
 
 - AWS
 - Retail
 - Alexa
 
-### Microsoft
+Microsoft:
 
 - Linked In
 - Open Source
@@ -694,7 +701,7 @@ The four is a fantastic book describing the value of the FANG companies.
 - Windows Phone
 - Developer Tools
 
-### Apple
+Apple:
 
 - Hardware or Services
 - The App Store
@@ -721,6 +728,6 @@ The four is a fantastic book describing the value of the FANG companies.
 - [Igor's general reading list](/books)
 - Lots more coming
 
-### My aspirations as a manager
+### Igor's other manager post
 
-- A related post which is to be merged, is my aspirations as a [manager](/boss).
+I'm still merging in my original [manager post](/being-a-great-manager)
