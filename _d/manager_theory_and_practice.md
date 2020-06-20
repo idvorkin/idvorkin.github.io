@@ -28,6 +28,7 @@ This is the draft post being migrated to [here](/the-manager-book). Managing is 
         - [Break big bang creator studio down into](#break-big-bang-creator-studio-down-into)
     - [Get in a fight technical](#get-in-a-fight-technical)
         - [Service split and shared component](#service-split-and-shared-component)
+        - [Need SDE-III to do work that was below him.](#need-sde-iii-to-do-work-that-was-below-him)
         - [Architect won't let us launch without committing to next release.](#architect-wont-let-us-launch-without-committing-to-next-release)
         - [Variable Heart Beat](#variable-heart-beat)
     - [Get in a fight PM](#get-in-a-fight-pm)
@@ -43,10 +44,6 @@ This is the draft post being migrated to [here](/the-manager-book). Managing is 
     - [What would a report/peer/manager feedback on you be? Strengths, areas for development, etc.](#what-would-a-reportpeermanager-feedback-on-you-be-strengths-areas-for-development-etc)
     - [How would you assess if someone is a good manager?](#how-would-you-assess-if-someone-is-a-good-manager)
 - [Part 5: Process and Mechanism](#part-5-process-and-mechanism)
-    - [Process Patterns](#process-patterns)
-    - [Process Anti-Patterns:](#process-anti-patterns)
-    - [What kind of process have you followed in the past and what has worked well for you?](#what-kind-of-process-have-you-followed-in-the-past-and-what-has-worked-well-for-you)
-        - [Design+ Arch Reviews: Minimal rework, high quality assets](#design-arch-reviews-minimal-rework-high-quality-assets)
         - [Team gelling](#team-gelling)
         - [Engineering/Operational Excellence](#engineeringoperational-excellence)
         - [Strategic group alignment](#strategic-group-alignment)
@@ -264,48 +261,6 @@ Using the same metrics I apply to myself. For the how I'd:
 
 ## Part 5: Process and Mechanism
 
-### Process Patterns
-
-- Turn input into outputs
-- How to measure success of the process, what will you inspect, when will you adjust,
-- Who is the owner?
-- What other process is this similar to, can we co-coalesce with something else?
-- How will you get buy in
-- How to get team to accept
-- (Bright spot, then land and expand)
-- Sounds like good intentions
-- Culture vs Process
-
-### Process Anti-Patterns:
-
-- TODO: Invert this
-- Disenfranchising ownership
-
-  - Nothing more powerful then a motivated engineer, don’t let process take that away.
-
-- Having humans do what computers can do
-
-  - Only have so much "process execution budget" don't waste it
-    - Use auto style for code review styles
-    - Gather data from bug systems instead of having humans do it.
-    - Automated tests vs human execution
-    - Multiple copies of the same data
-
-- Free up developers to not solve known issues - freedom for more stuff
-- Someone **owns** a process for a quarter so they can own it and make it better.
-
-### What kind of process have you followed in the past and what has worked well for you?
-
-Process per "output desired"
-
-#### Design+ Arch Reviews: Minimal rework, high quality assets
-
-- Ensure that tech assets are high quality and require minimal re-work.
-- Ensure team gets cross trained.
-- Catch stuff as early as possible
-- Get developers used to being on the whiteboard
-- Really a preview, not a review.
-
 #### Team gelling
 
 - Team meetings,
@@ -323,20 +278,6 @@ Process per "output desired"
 - Keep calling out peoples strengths (team will copy)
 
 #### Engineering/Operational Excellence
-
-1.  How do we know our customer is having a good day? 2) How do we maximize our velocity 3) How do we keep our developers happy.
-
-- Know what's going on:
-- On all the pages - Strong appreciation for boots on the ground reality.
-- Write up for all outages, COE for major outages - Maximize value of mistakes, don't make them twice.
-  - For all customer impacting event, review w/Customer Impact, root cause understood, and commitment when to address.
-- Observability
-  - How do we get a page next time.
-  - How do we see what's going on.
-- Testing systems.
-  - Very high leverage active
-- Deep dive to do a check-in
-- Do it all myself to see what's broken and understand where to invest.
 
 #### Strategic group alignment
 
