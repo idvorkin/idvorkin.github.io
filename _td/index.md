@@ -302,6 +302,9 @@ TUI (merge tool)[https://github.com/mkchoi212/fac]
 - Keyboard shortcuts: https://help.github.com/articles/using-keyboard-shortcuts/
 - Grip - Local renders of GHFM https://github.com/joeyespo/grip
 - hub a better git client that understands everything comes from github
+- Search all commits by author and day
+
+  https://github.com/search?q=user%3Aidvorkin+author-date%3A2020-06-20+author%3Aidvorkin
 
 ### SSH
 
