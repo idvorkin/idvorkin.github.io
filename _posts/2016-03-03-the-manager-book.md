@@ -21,13 +21,12 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
     - [Should managers code?](#should-managers-code)
 - [Part 2: Managing and Developing People](#part-2-managing-and-developing-people)
-    - [How do you coach people](#how-do-you-coach-people)
-        - [Coaching](#coaching)
-        - [Career Development](#career-development)
+    - [How do you coach ?](#how-do-you-coach-)
+    - [How do you develop careers?](#how-do-you-develop-careers)
+    - [How do you help people switch jobs.](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [How do you give challenging feedback:](#how-do-you-give-challenging-feedback)
     - [1:1s](#11s)
-    - [How do you think of developing people?](#how-do-you-think-of-developing-people)
     - [How do you handle a great engineer with communication problems?](#how-do-you-handle-a-great-engineer-with-communication-problems)
     - [How do you handle someone who really wants a promotion but isn't ready?](#how-do-you-handle-someone-who-really-wants-a-promotion-but-isnt-ready)
     - [How do you identify engineers who could make good managers? How do you help them develop?](#how-do-you-identify-engineers-who-could-make-good-managers-how-do-you-help-them-develop)
@@ -36,6 +35,8 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [What do you do when a team completely disagrees with the founder/VP on the direction of a product?](#what-do-you-do-when-a-team-completely-disagrees-with-the-foundervp-on-the-direction-of-a-product)
     - [What is your ideal culture?](#what-is-your-ideal-culture)
     - [How do you make a good culture?](#how-do-you-make-a-good-culture)
+    - [How do you handle Remote Work](#how-do-you-handle-remote-work)
+    - [How do you think about work life balance](#how-do-you-think-about-work-life-balance)
 - [Part 3: Business Acumen and Strategy](#part-3-business-acumen-and-strategy)
     - [The Four](#the-four)
     - [Stratechary](#stratechary)
@@ -51,7 +52,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
     - [Are they more comfortable with generalists or specialists?](#are-they-more-comfortable-with-generalists-or-specialists)
     - [How do you think about hiring?](#how-do-you-think-about-hiring)
-    - [How do you thiknk about the hiring funnel.](#how-do-you-thiknk-about-the-hiring-funnel)
+    - [How do you think about the hiring funnel.](#how-do-you-think-about-the-hiring-funnel)
     - [What are their thoughts on structured interview loops vs. non-structured free-form loops?](#what-are-their-thoughts-on-structured-interview-loops-vs-non-structured-free-form-loops)
 - [Part 6: Firing and Performance Management](#part-6-firing-and-performance-management)
 - [Part 7: Charters, Re-orgs and Bootstrapping](#part-7-charters-re-orgs-and-bootstrapping)
@@ -146,17 +147,59 @@ SDMs should be reading code occasionally:
 
 ## Part 2: Managing and Developing People
 
-### How do you coach people
+### How do you coach ?
 
 There are two major categories of coaching. Career development and coaching
-
-#### Coaching
 
 Coaching is a major part of the job, and covered in my [coaching post](/coaching):
 
 _Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic._
 
-#### Career Development
+### How do you develop careers?
+
+Depends on the skill level (Eg. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
+
+| Level        | Approach                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Junior       | Not a lot of variance. Have a rubric for junior SDE skills and make sure they are getting the opportunity to learn and execute each box. Make sure they have a solid mentor, and opportunity after opportunity to round out their knowledge.                                                                                                                                     |
+| Intermediate | Now it's about how are you helping the team, growing your contributions. Bigger experiences, maybe out side the org, both to build your skills, and increase your org visibility. Double down on super powers, close red flags and blockers. Very satisfying to watch people "blossom" into leaders.                                                                             |
+| Senior/Staff | Here you're getting people are at a career level and are happy with a lot of what they're doing. Here they're deciding how much they want to grow, and where they want to improve. Here it's discussing with mentors, and how we want to split responsibility and cover each other. Also opportunities for what they own for the group (30-60+) e.g. security or process or etc. |
+
+My approach, and frequent peep questions.
+
+| Level        | Approach   |
+| ------------ | ---------- |
+| Junior       | [l10](l10) |
+| Intermediate | [l20](l20) |
+| Senior/Staff | [l30](l30) |
+
+- l10
+- You help them close gaps, sharpen their understanding by teaching it to you
+- We hired you because you're smart+really good. If you can't understand something, it's probably the presenter doesn't understand it well, as opposed to you not understanding.
+- You are new, and need to learn and need to spend a bunch of time asking for help and guidance. I have one rule - you must come with a bad idea (which will start becoming good ideas). You fail when you bring nothing, you ace it when you bring a bad idea. We'll help you develop that bad idea, and help sharpen your thinking skill.
+- "You have a fresh perspective - If something doesn't make sense ask, for us, we're like fish in water, so challenge our assumptions".
+
+<div/>
+- l20
+- How do you make the team better?
+- What are you gonna be known for?
+- You're the owner, you'll do everything and I work for you. What help do you need
+- Do shadow coaching, where I might be writing/pr-doing work but they do the send/take the credit
+
+<div/>
+- l30
+- Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
+- What are you driving for our larger organization?
+- How are you maximizing our benefit?
+- How do we make sure we compliment each other?
+
+### How do you help people switch jobs.
+
+My goal is to find people the right job, not the job on my team. I coach a lot of people through this, and here are my most popular posts:
+
+- [Reducing Job Hunt Stress](/job-hunt-stress)
+- [Only care about total compensation](/comp)
+- [What I wish I knew at 22](/twentytwo)
 
 ### How do you keep people motivated?
 
@@ -238,39 +281,6 @@ Other thoughts:
 - I try to group my 1:1's on the same day (or over 2 days) because 1:1 is a special frame of mind, and takes a bit to get in the zone.
 - With small teams, I like 1 hour 1 on 1s, but some folks prefer 30 minutes.
 
-### How do you think of developing people?
-
-Depends on the skill level: SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above. Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
-
-| Level        | Approach                                                                                                                                                                                                                                                                                                                                                                         |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Junior       | Not a lot of variance. Have a rubric for junior SDE skills and make sure they are getting the opportunity to learn and execute each box. Make sure they have a solid mentor, and opportunity after opportunity to round out their knowledge.                                                                                                                                     |
-| Intermediate | Now it's about how are you helping the team, growing your contributions. Bigger experiences, maybe out side the org, both to build your skills, and increase your org visibility. Double down on super powers, close red flags and blockers. Very satisfying to watch people "blossom" into leaders.                                                                             |
-| Senior/Staff | Here you're getting people are at a career level and are happy with a lot of what they're doing. Here they're deciding how much they want to grow, and where they want to improve. Here it's discussing with mentors, and how we want to split responsibility and cover each other. Also opportunities for what they own for the group (30-60+) e.g. security or process or etc. |
-
-Some questions and things to tell these folks
-
-Junior (SDE-I):
-
-- You help them close gaps, sharpen their understanding by teaching it to you
-- We hired you because you're smart+really good. If you can't understand something, it's probably the presenter doesn't understand it well, as opposed to you not understanding.
-- You are new, and need to learn and need to spend a bunch of time asking for help and guidance. I have one rule - you must come with a bad idea (which will start becoming good ideas). You fail when you bring nothing, you ace it when you bring a bad idea. We'll help you develop that bad idea, and help sharpen your thinking skill.
-- "You have a fresh perspective - If something doesn't make sense ask, for us, we're like fish in water, so challenge our assumptions".
-
-Intermediate(SDE-II):
-
-- How do you make the team better?
-- What are you gonna be known for?
-- You're the owner, you'll do everything and I work for you. What help do you need
-- Do shadow coaching, where I might be writing/pr-doing work but they do the send/take the credit
-
-Senior(SDE-III):
-
-- Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
-- What are you driving for our larger organization?
-- How are you maximizing our benefit?
-- How do we make sure we compliment each other?
-
 ### How do you handle a great engineer with communication problems?
 
 - High Order: Goal is not "communication style", but ability to influence.
@@ -349,6 +359,12 @@ Step 3: Focus on the win/win, and talk through a ripcord.
   - Let team take ownership of it.
   - Incite pride and purpose
 - Repeat/Repeat/Repeat
+
+### How do you handle Remote Work
+
+### How do you think about work life balance
+
+I think it's very important. See my https://bit.ly/igor-wlb-manifesto
 
 ## Part 3: Business Acumen and Strategy
 
@@ -469,7 +485,7 @@ Most important part of sales:
 
 2. Funnel: Inbound Marketing, Referrals, high touch, post sales support.
 
-### How do you thiknk about the hiring funnel.
+### How do you think about the hiring funnel.
 
 - Top of Funnel
   - Interview events
