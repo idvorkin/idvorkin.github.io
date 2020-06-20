@@ -5,6 +5,7 @@ author: "Igor Dvorkin"
 inprogress: true
 comments: true
 permalink: money
+imagefeature: https://github.com/idvorkin/blob/raw/master/icon_taxes.png
 redirect_from:
   - /money
   - /savings
@@ -16,45 +17,46 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
 
 <!-- prettier-ignore-start -->
 
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Assumptions and Hannah](#assumptions-and-hannah)
 - [IRAs Non-Taxable Saving Accounts](#iras-non-taxable-saving-accounts)
-    - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
-    - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
-    - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
-    - [IRAs vs 401Ks](#iras-vs-401ks)
-    - [IRA vs Roth IRA](#ira-vs-roth-ira)
-    - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
-    - [Back door Roth.](#back-door-roth)
-    - [The pro-Rata rule.](#the-pro-rata-rule)
+  - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
+  - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
+  - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
+  - [IRAs vs 401Ks](#iras-vs-401ks)
+  - [IRA vs Roth IRA](#ira-vs-roth-ira)
+  - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
+  - [Back door Roth.](#back-door-roth)
+  - [The pro-Rata rule.](#the-pro-rata-rule)
 - [Useful topics](#useful-topics)
-    - [No load index funds](#no-load-index-funds)
-    - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
-    - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
-    - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
-    - [529s](#529s)
-    - [Unexpected expenses](#unexpected-expenses)
-    - [Stock options](#stock-options)
-        - [Sell a Put Option](#sell-a-put-option)
-        - [Buy a Put Option](#buy-a-put-option)
-        - [Uncovered vs Covered](#uncovered-vs-covered)
-        - [Selling your options early](#selling-your-options-early)
-        - [Put vs Call](#put-vs-call)
-        - [Play safe - Guaranteed minimum value of unvested stock awards - buy a put](#play-safe---guaranteed-minimum-value-of-unvested-stock-awards---buy-a-put)
-        - [The company can't go up that high - sell a put](#the-company-cant-go-up-that-high---sell-a-put)
-        - [Summary](#summary)
+  - [No load index funds](#no-load-index-funds)
+  - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
+  - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
+  - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
+  - [529s](#529s)
+  - [Unexpected expenses](#unexpected-expenses)
+  - [Stock options](#stock-options)
+    - [Sell a Put Option](#sell-a-put-option)
+    - [Buy a Put Option](#buy-a-put-option)
+    - [Uncovered vs Covered](#uncovered-vs-covered)
+    - [Selling your options early](#selling-your-options-early)
+    - [Put vs Call](#put-vs-call)
+    - [Play safe - Guaranteed minimum value of unvested stock awards - buy a put](#play-safe---guaranteed-minimum-value-of-unvested-stock-awards---buy-a-put)
+    - [The company can't go up that high - sell a put](#the-company-cant-go-up-that-high---sell-a-put)
+    - [Summary](#summary)
 - [Philosophy](#philosophy)
-    - [The point of money](#the-point-of-money)
-        - [What would you do for less money?](#what-would-you-do-for-less-money)
-        - [Making more vs spending more](#making-more-vs-spending-more)
-    - [Believing the market only goes up](#believing-the-market-only-goes-up)
-    - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
-    - [Timing the markets](#timing-the-markets)
+  - [The point of money](#the-point-of-money)
+    - [What would you do for less money?](#what-would-you-do-for-less-money)
+    - [Making more vs spending more](#making-more-vs-spending-more)
+  - [Believing the market only goes up](#believing-the-market-only-goes-up)
+  - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
+  - [Timing the markets](#timing-the-markets)
 - [Other questions](#other-questions)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## Assumptions and Hannah
 
@@ -146,33 +148,33 @@ An education only after tax savings account. You put in money after tax, get tax
 
 ### Stock options
 
-I keep getting these words confused, here are my notes in case they are helpful to others. For these examples assume today a stock is 100$, and your options are for 30 days. In our example we'll buy 1 option, but the standard size is 100 options.
+I keep getting these words confused, here are my notes in case they are helpful to others. For these examples assume today a stock is 100\$, and your options are for 30 days. In our example we'll buy 1 option, but the standard size is 100 options.
 
 #### Sell a Put Option
 
-You guarantee to "buy at a particular price".  You will be given a low amount of money to guarantee you'll buy at a particular price. This lets you make money if a stock rises.
+You guarantee to "buy at a particular price". You will be given a low amount of money to guarantee you'll buy at a particular price. This lets you make money if a stock rises.
 
 Imagine you sell a put for 1$, for a strike price of 100$.
 
-If the stock goes to 90$ in 30 days, the "put will be exercised", and you'll need to buy the stock for 100$.  As a result, you'll end buying  the stock for 100$ instead of 90$ which is the market price.  This means you bought stock for an extra 10$ (recall the stock is worth 90$ today), but since you were paid 1$ for the put it ended up **costing you 9$**.
+If the stock goes to 90$ in 30 days, the "put will be exercised", and you'll need to buy the stock for 100$. As a result, you'll end buying the stock for 100$ instead of 90$ which is the market price. This means you bought stock for an extra 10$ (recall the stock is worth 90$ today), but since you were paid 1$ for the put it ended up **costing you 9$\*\*.
 
-If the stock goes up to 120$, the buyer won't want to sell you the stock at 100$ (they'd lose 20$), so they let the put expire. This lets you **gain 1$** over the price of the stock.
+If the stock goes up to 120$, the buyer won't want to sell you the stock at 100$ (they'd lose 20$), so they let the put expire. This lets you **gain 1$\*\* over the price of the stock.
 
 #### Buy a Put Option
 
-Allow you to "sell at a particular price".  You spend a low amount of money to be able to sell at a price. This protects you from a price drop.
+Allow you to "sell at a particular price". You spend a low amount of money to be able to sell at a price. This protects you from a price drop.
 
 Imagine you buy a put for 1$, for a strike price of 100$.
 
-If the stock goes to 90$ in 30 days, you can "exercise the put" and sell the stock for 100$, making you 10$, for a price of 1$, **netting you 9$**.
+If the stock goes to 90$ in 30 days, you can "exercise the put" and sell the stock for 100$, making you 10$, for a price of 1$, **netting you 9\$**.
 
-If the stock goes up to 110$, you don't want to sell at 100$ (you'd lose 10$), so you let the put expire. This lets you ensure you won't lose any money (recall the option was at the strike price) **costing you 1$**
+If the stock goes up to 110$, you don't want to sell at 100$ (you'd lose 10$), so you let the put expire. This lets you ensure you won't lose any money (recall the option was at the strike price) **costing you 1$\*\*
 
-NOTE: You don't need to own the stock to be able to make money in a put, in our example where the stock drops to 90$, you'd buy the stock at 90 for market price, and sell it for 100$, again **netting you 9$**
+NOTE: You don't need to own the stock to be able to make money in a put, in our example where the stock drops to 90$, you'd buy the stock at 90 for market price, and sell it for 100$, again **netting you 9\$**
 
 #### Uncovered vs Covered
 
-As with buying a put option, you don't need to own the stock to sell the option (this is an uncovered put), however this can cost you a lot of money.  Imagine you sold a put option for 1$, but the stock drops 85$ to 15$, at this point you need to buy the stock for 15$, and then sell it for 100$, when this happens you'll lose 85, and gain 1$, giving a **net loss of 84$**.
+As with buying a put option, you don't need to own the stock to sell the option (this is an uncovered put), however this can cost you a lot of money. Imagine you sold a put option for 1$, but the stock drops 85$ to 15$, at this point you need to buy the stock for 15$, and then sell it for 100$, when this happens you'll lose 85, and gain 1$, giving a **net loss of 84\$**.
 
 #### Selling your options early
 
@@ -184,25 +186,24 @@ Call is the inverse of puts, where you buy the right to "buy", and sell the righ
 
 #### Play safe - Guaranteed minimum value of unvested stock awards - buy a put
 
-Imagine you have an grant of 100 stock awards, vesting in a year, for which you had a 10$ strike price - you then have 1000$ in paper money.   You'll need that money for your kids education, so you need to guarantee you don't lose money, in that case, but a put.
+Imagine you have an grant of 100 stock awards, vesting in a year, for which you had a 10$ strike price - you then have 1000$ in paper money. You'll need that money for your kids education, so you need to guarantee you don't lose money, in that case, but a put.
 
 #### The company can't go up that high - sell a put
 
-Imagine you have an grant of 100 stock awards, vesting in a year, for which you had a 10$ strike price - you then have 1000$ in paper money.   You know the CEO and even though you think the stock will go up, you're sure it won't go up above 15$, in that case you can sell a put at 15$, and take some profit.
+Imagine you have an grant of 100 stock awards, vesting in a year, for which you had a 10$ strike price - you then have 1000$ in paper money. You know the CEO and even though you think the stock will go up, you're sure it won't go up above 15$, in that case you can sell a put at 15$, and take some profit.
 
 #### Summary
 
-Imagine a 100$ stock, for which you buy/sell a put/call for 1$ with a strike price of 100$.
+Imagine a 100$ stock, for which you buy/sell a put/call for 1$ with a strike price of 100\$.
 
 | Type | Direction | You       | Price = 110 | Price = 90 |
-|------|-----------|-----------|-------------|------------|
-| Sell | Put       | Must Sell | Gain 1$     | Lose 9$*   |
-| Buy  | Put       | Can Sell  | Lose 1$     | Gain 9$*   |
-| Sell | Call      | Must Buy  | Lose 9$     | Gain 1$    |
-| Buy  | Call      | Can Buy   | Gain 9$     | Lose 1$    |
+| ---- | --------- | --------- | ----------- | ---------- |
+| Sell | Put       | Must Sell | Gain 1\$    | Lose 9\$\* |
+| Buy  | Put       | Can Sell  | Lose 1\$    | Gain 9\$\* |
+| Sell | Call      | Must Buy  | Lose 9\$    | Gain 1\$   |
+| Buy  | Call      | Can Buy   | Gain 9\$    | Lose 1\$   |
 
-
-(*) Even though these are listed at 10$, the loss/gain is unbounded, so if the stock went up 99$ or down 99$ that would be what you need to pay.
+(\*) Even though these are listed at 10$, the loss/gain is unbounded, so if the stock went up 99$ or down 99\$ that would be what you need to pay.
 
 ## Philosophy
 
@@ -234,12 +235,9 @@ Remember:
 
 > Time in market beats timing the market.
 
-
-
-
-##  Other questions
+## Other questions
 
 - How long should I hold my RSUs before selling?
-- If I have a pile of cash from selling RSUs, do I invest immediately or dollar cost average?  -
+- If I have a pile of cash from selling RSUs, do I invest immediately or dollar cost average? -
 - Should I hold any bonds?
 - Where should I keep my emergency fund and how much?
