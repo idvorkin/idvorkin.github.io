@@ -73,10 +73,11 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [Stratechary](#stratechary)
     - [By company](#by-company)
 - [Other resources](#other-resources)
+    - [Google's Project Oxygen](#googles-project-oxygen)
+    - [Amazon's leadership principles](#amazons-leadership-principles)
     - [Great Videos](#great-videos)
     - [Great Posts and Blogs](#great-posts-and-blogs)
     - [Great books](#great-books)
-    - [Project Oxygen and Amazon Leadership principles](#project-oxygen-and-amazon-leadership-principles)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -709,6 +710,63 @@ Apple:
 
 ## Other resources
 
+### Google's Project Oxygen
+
+Google is a very data driven, willing to challenge the status quo company. One of their ideas was getting rid of managers all together, and that was a fa [failure](). Given then conclusion managers were necessary, they formed Project Oxygen, a data driven approach to understanding the attributes of successful managers. Here is there list of management [attributes](https://rework.withgoogle.com/blog/the-evolution-of-project-oxygen/):
+
+1. Is a good coach
+1. Empowers team and does not micromanage
+1. Creates an inclusive team environment, showing concern for success and well-being
+1. Is productive and results-oriented
+1. Is a good communicator - listens and shares information
+1. Supports career development and discusses performance
+1. Has a clear vision/strategy for the team
+1. Has key technical skills to help advise the team
+1. Collaborates across the company
+1. Is a strong decision maker
+
+### Amazon's leadership principles
+
+All of Amazon's [leadership principles](https://www.amazon.jobs/principles) (LPs) are superb, and while they apply to everyone, they probably have a twist for managers (which I'm still figuring out).
+
+If you're not from Amazon the LPs can be overwhelming, and are worthy of a seperate post. To help remember the principles, I think of 3 buckets: 1) Grow yourself and your team 2) Get it Done 3) Be the owner.
+
+_You'll also notice the principles are deliberatly not ranked, and have tension between them (e.g. Insist on High Standards vs Bias For Action) as they're all important and require high judgement to balance between. Alright there is definetly a post coming on this topic_
+
+**Grow yourself and the team:**
+
+**Learn and Be Curious** - Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and act to explore them.
+
+**Hire and Develop the Best** - Leaders raise the performance bar with every hire and promotion. They recognize exceptional talent, and willingly move them throughout the organization. Leaders develop leaders and take seriously their role in coaching others. We work on behalf of our people to invent mechanisms for development like Career Choice.
+
+**Insist on the Highest Standards** - Leaders have relentlessly high standards - many people may think these standards are unreasonably high. Leaders are continually raising the bar and drive their teams to deliver high quality products, services and processes. Leaders ensure that defects do not get sent down the line and that problems are fixed so they stay fixed.
+
+**Dive Deep** - Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and anecdote differ. No task is beneath them.
+
+**Earn Trust** - Leaders listen attentively, speak candidly, and treat others respectfully. They are vocally self-critical, even when doing so is awkward or embarrassing. Leaders do not believe their or their team's body odor smells of perfume. They benchmark themselves and their teams against the best.
+
+**Have Backbone; Disagree and Commit** - Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.
+
+**Get It Done:**
+
+**Deliver Results** - Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion. Despite setbacks, they rise to the occasion and never settle.
+
+**Invent and Simplify** - Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by "not invented here". As we do new things, we accept that we may be misunderstood for long periods of time.
+
+**Bias for Action** - Speed matters in business. Many decisions and actions are reversible and do not need extensive study. We value calculated risk taking.
+
+**Frugality** - Accomplish more with less. Constraints breed resourcefulness, self-sufficiency and invention. There are no extra points for growing headcount, budget size or fixed expense.
+
+**Be the owner:**
+
+**Ownership** Leaders are owners. They think long term and don't sacrifice long-term value for short-term results. They act on behalf of the entire company, beyond just their own team. They never say "that's not my job".
+
+**Customer Obsession** Leaders start with the customer and work backwards. They work vigorously to earn and keep customer trust. Although leaders pay attention to competitors, they obsess over customers.
+
+**Think Big** - Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently and look around corners for ways to serve customers.
+
+**Are Right, A Lot** - Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to dis confirm their beliefs.
+
 ### Great Videos
 
 - [On Coaching](https://youtu.be/oHDq1PcYkT4?t=431)
@@ -727,7 +785,3 @@ Apple:
 - [Technical Recruiting And Hiring](https://www.holloway.com/g/technical-recruiting-hiring/about)
 - [Igor's general reading list](/books)
 - Lots more coming
-
-### Project Oxygen and Amazon Leadership principles
-
-It's covered in my my original [manager post](/being-a-great-manager), I'm getting around to merging it
