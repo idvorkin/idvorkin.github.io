@@ -8,7 +8,7 @@ redirect_from:
   - /manager-book
 ---
 
-Managing is hard. Lessons are hard earned and should be cherished. This series of posts is designed to draw out my opinions on management. It reminds me how to behave, and encourages others to poke into my reasoning and help me improve. I'm using an interview format for this post, as that's an easy way to start.
+Managing is hard. Lessons are hard earned and should be cherished. This series of posts is designed to draw out my opinions on management. It reminds me how to behave, and encourages others to poke into my reasoning and help me improve. I'm using a Q&A format on this post as it's easier to understand.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -19,6 +19,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
     - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
+    - [Should managers be technical?](#should-managers-be-technical)
     - [Should managers code?](#should-managers-code)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you coach?](#how-do-you-coach)
@@ -75,6 +76,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
 - [Other resources](#other-resources)
     - [Google's Project Oxygen](#googles-project-oxygen)
     - [Amazon's leadership principles](#amazons-leadership-principles)
+    - [Laws to remember](#laws-to-remember)
     - [Great Videos](#great-videos)
     - [Great Posts and Blogs](#great-posts-and-blogs)
     - [Great books](#great-books)
@@ -97,23 +99,56 @@ An acid test:
 - People have clear understanding of career growth/progression and how their work supports it.
 -->
 
-| Dimension                          |                                                                                                                                                                                                                                                        |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Business Results                   | Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.                                                                                                                      |
-| High performance people and teams  | Team is well gelled with team members helping each other. Everyone has growth plans which fit their needs and they are execution them.                                                                                                                 |
-| Engineering Efficiency and Process | Engineering systems ensure a pit of success where things which can be automated have been, and we have high velocity releases with minimal risk.                                                                                                       |
-| Technical Assets                   | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (like take debt if you might be able to write off the asset) |
+| Dimension                          | Success Means                                                                                                                                                                                                                                     |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Business Results                   | Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.                                                                                                                 |
+| High performance people and teams  | Team is well gelled and team members help each other. Everyone has growth plans which fit their needs and they are execution them.                                                                                                                |
+| Engineering Efficiency and Process | Engineering systems and protocols ensure a pit of success. Process is automated, and releases have high velocity and minimal risk.                                                                                                                |
+| Technical Assets                   | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (take debt if you might be able to write off the asset) |
 
 ### How do you describe your job to people outside the industry?
 
 I run a factory which produces widgets and has employees. For those in the industry this translates to:
 
-| Dimension                          | Analog                      | Details                                                                                                                                                                                                                                                                        | Metrics                                                                          |
-| ---------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------- |
-| Business Results                   | Widgets                     | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.                                                                                                                     | Did we make the right widgets on time and budget?                                |
-| High performance people and teams  | Factory Workers             | I am responsible for the workers in the factory: Are they healthy, learning, wanting to come to work every day, getting along with co-workers.                                                                                                                                 | Are the workers happy based on surveys, and getting promos                       |
-| Engineering Efficiency and Process | Worker operating procedures | I am responsible for the efficiency of the factory: Is production good and improving? Are widgets coming out consistently and on schedule? Do new employees know what to do? Does everyone know what to do if there's an emergency?                                            | Is our factory solid and able to make new stuff quickly and maintain production? |
-| Technical Assets                   | Factory machines            | I am responsible for the machines we build and maintain: Can the machines in the factory be adjusted for the different types of widgets we need to build? Do the machines mostly work or do they need constant adjustment? Are the machines we bought used to high efficiency? | Is our factory solid and able to make new stuff quickly and maintain production? |
+| Dimension                          | Analog               | Metrics    | Success Means                                                                                                                                                                         |
+| ---------------------------------- | -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Business Results                   | Produced Widgets     | [l20](l20) | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.                            |
+| High performance people and teams  | Factory Workers      | [l21](l21) | Workers in the factory are healthy, learning, want to come to work every day, and getting along with co-workers.                                                                      |
+| Engineering Efficiency and Process | Operating procedures | [l22](l22) | The factory is efficient: Production good and improving. Widgets comes out consistently and on schedule? New employees know what to do. Everyone knows what to do during emergencies? |
+| Technical Assets                   | Factory machines     | [l23](l23) | Machines in the factory adjusted quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency                                   |
+
+<div> </div>
+
+- l20
+- Produced Widgets..
+- are wanted by customers,
+- are produced on time and budget.
+
+<div> </div>
+
+- l21
+- Factory workers..
+- are happy based on surveys,
+- are getting promos frequently
+- recommend joining the factory to their friends
+- work at the factory for several years
+
+<div> </div>
+- l22
+- Procedures Ensure..
+- workers are efficient and safe with minimal effort
+- mistakes are learned once, and never repeated?
+- continuous improvement is occurring
+- variance is low
+- over time work is not required
+
+<div> </div>
+- l23
+- Factory machines ...
+- support a wide range of widgets
+- can be extended to build new widgets at low cost
+- have have availability
+- operate at low cost
 
 ### Hardest part about being a manager
 
@@ -131,6 +166,27 @@ Outputs:
 - Early Win: Figure out the situation, and deliver a win.
 - Trust: Relationships with team, and peers, and partners.
 - Knowledge: Know critical parts of business, tech, org.
+
+### Should managers be technical?
+
+Yes they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team and partners. They should ensure the team is making correct architectural decisions and engineering excellence improves due to best practices.
+
+They need to represent the team in technical forums, swag costs, represent laws of physics, bring back best practices, and catch upcoming incompatibilities and challenges.
+
+- Attend architecture and design reviews
+- Be on every page the team gets
+- Have strong relationships w/technical leaders like principal engineers
+- Follow major tech trends and product launches (keynotes, major tech blog posts)
+- Read seminal books on topics (ML, CLoud Native Apps, Programming Language Design, Architecture)
+- Have Side projects in assorted tech and ideas (ML, PWA, FaaS)
+
+They also need to be experts at working with data systems and analysis, as much of their time will be analyzing customer, business, operational, and technical data.
+
+Once they become managers they have very limited time to increase technical muscle, so I recommend before switching they are:
+
+An experienced engineer before switching to management
+A expert in at multiple languages (for me python, and C#)
+A expert in multiple technical domains (for me networking and security).
 
 ### Should managers code?
 
@@ -167,8 +223,8 @@ My approach, and frequent peep questions.
 | Level        | Approach   |
 | ------------ | ---------- |
 | Junior       | [l10](l10) |
-| Intermediate | [l20](l20) |
-| Senior/Staff | [l30](l30) |
+| Intermediate | [l11](l11) |
+| Senior/Staff | [l12](l12) |
 
 - l10
 - You help them close gaps, sharpen their understanding by teaching it to you
@@ -177,14 +233,14 @@ My approach, and frequent peep questions.
 - "You have a fresh perspective - If something doesn't make sense ask, for us, we're like fish in water, so challenge our assumptions".
 
 <div> </div>
-- l20
+- l11
 - How do you make the team better?
 - What are you gonna be known for?
 - You're the owner, you'll do everything and I work for you. What help do you need
 - Do shadow coaching, where I might be writing/pr-doing work but they do the send/take the credit
 
 <div> </div>
-- l30
+- l13
 - Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
 - What are you driving for our larger organization?
 - How are you maximizing our benefit?
@@ -768,6 +824,13 @@ _You'll also notice the principles are deliberatly not ranked, and have tension 
 **Think Big** - Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently and look around corners for ways to serve customers.
 
 **Are Right, A Lot** - Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to dis confirm their beliefs.
+
+### Laws to remember
+
+**Goodhart's Law** - A metric can be used to measure reality, or to flog people, but not both (humans optimize to be rewarded)
+**Conway's Law** - Software will ship to match an org chart (humans optimize for communication cost)
+**Parker Principle** - Work (or money) wille expand to fill the time available.
+**Peter Principle** - People will rise till they become incompetant
 
 ### Great Videos
 
