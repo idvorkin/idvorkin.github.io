@@ -177,7 +177,7 @@ They need to represent the team in technical forums, swag costs, represent laws 
 - Be on every page the team gets
 - Have strong relationships w/technical leaders like principal engineers
 - Follow major tech trends and product launches (keynotes, major tech blog posts)
-- Read seminal books on topics (ML, CLoud Native Apps, Programming Language Design, Architecture)
+- Read seminal books on topics (ML, Cloud Native Apps, Programming Language Design, Architecture)
 - Have Side projects in assorted tech and ideas (ML, PWA, FaaS)
 
 They also need to be experts at working with data systems and analysis, as much of their time will be analyzing customer, business, operational, and technical data.
@@ -787,9 +787,9 @@ Google is a very data driven, willing to challenge the status quo company. One o
 
 All of Amazon's [leadership principles](https://www.amazon.jobs/principles) (LPs) are superb, and while they apply to everyone, they probably have a twist for managers (which I'm still figuring out).
 
-If you're not from Amazon the LPs can be overwhelming, and are worthy of a seperate post. To help remember the principles, I think of 3 buckets: 1) Grow yourself and your team 2) Get it Done 3) Be the owner.
+If you're not from Amazon the LPs can be overwhelming, and are worthy of a separate post. To help remember the principles, I think of 3 buckets: 1) Grow yourself and your team 2) Get it Done 3) Be the owner.
 
-_You'll also notice the principles are deliberatly not ranked, and have tension between them (e.g. Insist on High Standards vs Bias For Action) as they're all important and require high judgement to balance between. Alright there is definetly a post coming on this topic_
+_You'll also notice the principles are deliberately not ranked, and have tension between them (e.g. Insist on High Standards vs Bias For Action) as they're all important and require high judgement to balance between. Alright there is definitely a post coming on this topic_
 
 **Grow yourself and the team:**
 
@@ -829,8 +829,8 @@ _You'll also notice the principles are deliberatly not ranked, and have tension 
 
 **Goodhart's Law** - A metric can be used to measure reality, or to flog people, but not both (humans optimize to be rewarded)
 **Conway's Law** - Software will ship to match an org chart (humans optimize for communication cost)
-**Parker Principle** - Work (or money) wille expand to fill the time available.
-**Peter Principle** - People will rise till they become incompetant
+**Parker Principle** - Work (or money) will expand to fill the time available.
+**Peter Principle** - People will rise till they become incompetent
 
 ### Great Videos
 
