@@ -16,7 +16,9 @@ tags:
 
 I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
 
-ASIDE: Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years.
+Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years.
+
+I'm also writing a "manager guidebook", much of this post is migrating to the [manager-book](the-manager-book) and I'm decidign what should be in which post
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -33,7 +35,6 @@ ASIDE: Few things make me prouder then this [public feedback on LinkedIn](/stati
     - [Staying technical](#staying-technical)
     - [Hack-a-thons](#hack-a-thons)
     - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
-- [How others define great managers](#how-others-define-great-managers)
 - [Management situations](#management-situations)
     - [Performance Management and Career Planning](#performance-management-and-career-planning)
     - [Coaching for job changes](#coaching-for-job-changes)
@@ -113,36 +114,7 @@ As I tell my teams, the what lags the how, here's my how.
 
 ### Staying technical
 
-_This is worthy of it's own blog post. Here's some brain dumping._
-
-Before the how, lets start with why.
-
-Why do great managers need to stay technical? Because they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team to continuously:
-
-1. Make correct architectural decisions
-2. Increase engineering excellence through best practices
-
-Because they often represent teams in forums without their team the need to:
-
-1. Making sure you can represent your team in technical forums, and you can bringing back best practices, or catch upcoming mistakes.
-1. Make swags on costings
-1. Represent laws of physics
-
-How?
-
-- Architecture and design reviews
-- Try to ship software to
-- Be on every page the team gets
-- Hang w/Principal Engineers
-- Follow major tech trends and product launches (keynotes, major tech blog posts)
-- Reading seminal books on topics (ML, CLoud Native Apps, Programming Language Design, Architecture)
-- Side projects in assorted tech and ideas (ML, PWA, FaaS)
-
-Pre-Reqs?
-
-- Be an expereinced engineer before switching to management
-- Be an expert in a particular platform and language
-- Be a SME in multiple topics (for me networking and security).
+_This is answered directly in Igor's [book of management](/the-manager-book)_
 
 ### Hack-a-thons
 
@@ -152,10 +124,6 @@ Pre-Reqs?
 
 - Team music videos
 - Engineering peak moments
-
-## How others define great managers
-
-Each company has its own culture, and part of that culture is articulating what makes great managers.
 
 ## Management situations
 

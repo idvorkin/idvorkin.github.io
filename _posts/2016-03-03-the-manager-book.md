@@ -8,7 +8,11 @@ redirect_from:
   - /manager-book
 ---
 
-Managing is hard. Lessons are hard earned and should be cherished. This series of posts is designed to draw out my opinions on management. It reminds me how to behave, and encourages others to poke into my reasoning and help me improve. I'm using a Q&A format on this post as it's easier to understand.
+Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.
+
+I'm fluent in Microsoft, Amazon and (learning) Facebook culture. These cultures infuse the answers below and I am grateful for it.
+
+Microsoft teaches humility and growth. Microsofties have coffee cups that say "Do you have a growth mindset?" Facebook teaches the verb of the manager is not to lead, but to support. Facebook employees ask each other, how can managers best support the team? Amazon teaches employees are leaders. Amazonians ask how do empower everyone to lead? As you internalize this post, realize this is not a post about management, it is a post about leaders and much of the content is applicable to you regardless of your title or count direct reports.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -26,7 +30,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [How do you develop careers?](#how-do-you-develop-careers)
     - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
-    - [How do you give challenging feedback:](#how-do-you-give-challenging-feedback)
+    - [How do you give challenging feedback](#how-do-you-give-challenging-feedback)
     - [How do you do 1:1s](#how-do-you-do-11s)
     - [How do you handle communication problems?](#how-do-you-handle-communication-problems)
     - [How do you handle promotion fever?](#how-do-you-handle-promotion-fever)
@@ -68,7 +72,8 @@ Managing is hard. Lessons are hard earned and should be cherished. This series o
     - [Why is management attractive to you?](#why-is-management-attractive-to-you)
     - [What is your dream job?](#what-is-your-dream-job)
     - [What is your career aspiration?](#what-is-your-career-aspiration)
-    - [What are your thoughts on managers memorizing these answers for interviews.](#what-are-your-thoughts-on-managers-memorizing-these-answers-for-interviews)
+    - [Why do you think you are a good coach?](#why-do-you-think-you-are-a-good-coach)
+    - [What if managers memorize these answers for interviews.](#what-if-managers-memorize-these-answers-for-interviews)
 - [Business Acumen and Strategy](#business-acumen-and-strategy)
     - [The Four](#the-four)
     - [Stratechary](#stratechary)
@@ -284,7 +289,7 @@ People also care deeply about coaching and career growth:
 
 And I spend a lot of time on generating [Moments](/moments-at-work):
 
-_Of all the places we spend our time, work is the one that dominates. However, when we look back on our lives, work is often the thing we remember least. Why? Because we remember our lives through peak moments, and there are few of those, especially positive peak moments, at work. Luckily, peak moments can be created and managers can be taught how to create them. This post explores opportunities and techniques to create these moments._
+_Of all the places we spend our time, work is the one that dominates. However, when we look back on our lives, work is often the thing we remember least. Why? Because we remember our lives through peak moments, and there are few of those, especially positive peak moments, at work. Luckily, peak moments can be created and leaders can be taught how to create them. This post explores opportunities and techniques to create these moments._
 
 Some moments like:
 
@@ -293,7 +298,7 @@ Some moments like:
 - Playing cards for appreciation
 - Managers making breakfast
 
-### How do you give challenging feedback:
+### How do you give challenging feedback
 
 Why is feedback challenging? 1) It's a surprise 2) They don't want to hear it 3) They don't think you have their best interests in mind.
 
@@ -304,7 +309,7 @@ Deep diving on what makes conversations hard:
 3. Don't want to hear it - Self Aware, Think I have their best interest in mind, Put it in terms they want to hear it.
 4. Over dramatize - Anticipate what they'll care about, pre-address.
 
-Types of tough conversations:
+Types of tough conversations to flesh out:
 
 Performance, Charter, Re-org (me leaving), Lay Offs.
 
@@ -319,11 +324,10 @@ For 1:1's for my team, the employees owns the Agenda, however I will nudge them.
 - Building relationships
 - Providing Larger Context
 - Having confidential discussions on concerns and questions.
-- Coaching strategically
-- Coaching tactically.
+- [Coaching strategically and tactically](/coaching)
 - Having [awkward discussions](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) and [more details](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c).
 
-I also have some special 1:1s:
+I also have some less frequent 1:1s:
 
 - Leadership card evaluation exercise
 - Career discussions - A discussion around what we should be focused on for the next 6-18 months.
@@ -703,9 +707,18 @@ A preview of [I want to be the best boss my peeps have ever had](/being-a-great-
 
 _I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best._
 
-### What are your thoughts on managers memorizing these answers for interviews.
+### Why do you think you are a good coach?
 
-Good interviewees prepare as much as possible, thinking through their experiences and philosophies. If this post helps them, that is fantastic. I'm skeptical that a bad manager will be able to internalize these answers to the point they can provide rich answers.
+When I explained to someone coaching it the most important aspect of management, they asked why I thought I was a good coach. Took me a while to answer, but here you go:
+
+- I believe you can't be efficient with people, you can only be effective. And it always pays off.
+- People are not 'resources', they are 3 dimensional humans, with [lives outside work](https://bit.ly/igor-wlb-manifesto), emotions(like [pride](/pride)), and desires.
+- I've read and digested slews of [self help books](/books) which while often mocked, are filled with great models.
+- I actively study and practice [coaching](/coach) and effective [decision making](/decide)
+
+### What if managers memorize these answers for interviews.
+
+Good interviewees prepare as much as possible, thinking through their experiences and philosophies. If this post helps them, that is fantastic. I'm skeptical a bad manager will be able to internalize these answers to the point they can provide rich answers.
 
 Good interviewers (and manager interviews better be good) need to be able to differentiate "theoretical knowledge" from "practical experience". They do this with situational questions like "Tell me a time when", and probing questions like "What happened then? What were the unexpected consequences? When did you have the opposite outcome?".
 
