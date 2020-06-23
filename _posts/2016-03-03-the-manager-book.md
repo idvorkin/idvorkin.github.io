@@ -31,9 +31,10 @@ Microsoft teaches humility and growth. Microsofties have coffee cups that say "D
     - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [How do you give challenging feedback](#how-do-you-give-challenging-feedback)
-    - [How do you think of 1:1s](#how-do-you-think-of-11s)
+    - [What's your thinking around 1:1s](#whats-your-thinking-around-11s)
+    - [What do you do in 1:1s](#what-do-you-do-in-11s)
     - [How do you handle communication problems?](#how-do-you-handle-communication-problems)
-    - [How do you handle promotion fever?](#how-do-you-handle-promotion-fever)
+    - [How do you handle promotion preparation (and promo fever)?](#how-do-you-handle-promotion-preparation-and-promo-fever)
     - [How do you identify and grow potential managers?](#how-do-you-identify-and-grow-potential-managers)
     - [How did you grow top talent](#how-did-you-grow-top-talent)
 - [Culture](#culture)
@@ -313,39 +314,39 @@ Types of tough conversations to flesh out:
 
 Performance, Charter, Re-org (me leaving), Lay Offs.
 
-### How do you think of 1:1s
+### What's your thinking around 1:1s
 
-1:1's are not just the most expensive use of time, they are also the most important. It's a non-scalable 100% use of two people's attention which is used to:
+1:1's are not just the most expensive use of time, they are also the most important. It's a non-scalable 100% use of two people's attention which is completely worth it because:
+
+- If 1:1 gives an average 0.25% performance improvement, how much value is there? Answer: 12% per year, 300% in ten years.
+- If there isn't a forum for discussion, many concerns and bottlenecks will be ignored. Ignored concerns and bottlenecks are lost opportunities in the best case, inefficiency in the median case, and catastrophe in the worst case. Applying the exception handler analogy, the default exception handler is ignore all, and we know how that works out.
+
+My goal for 1:1's is to:
 
 - Build trust and relationships
-- [Coaching strategically and tactically](/coaching)
-- Learn (ideally larger) context
+- [Coach and be coached strategically and tactically](/coaching)
+- Teach and Learn context
 - Have confidential discussions and discussing uncomfortable questions
 - Have [awkward discussions part 1](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) [part 2](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c)
-- Vent and express emotions
+- Allow others to express emotions and let off steam in a safe space
 
 In programming terms the 1:1 is a debugger attached catch all exception handler. This allow all concerns to be discussed, understood, rethrown, reprogrammed or ignored. (OK, maybe the analogy needs work, but I think it's got legs).
 
-Are 1:1's really worth the time? Let me ask and answer a few questions:
-
-- If 1:1 gives an average 0.25% performance improvement, how much value is there? Answer: 12% per year, 300% in ten years.
-- If there isn't a forum for discussion, what happens to most concerns? Answer: They will mostly be ignored. Ignored concerns are lost opportunities in the best case, inefficiency in the median case, and catastrophe in the worst case. Applying the exception handler analogy, the default exception handler is ignore all, and we know how that works out.
-
-How do you organize 1:1's?
+### What do you do in 1:1s
 
 My default 1:1's start with "What's on your mind", I focus on asking ([coaching questions](/coaching)) and end with "what can I do immediately to help you?"
 
 A few things you didn't see me say: the status report, the deep dive, giving and requesting feedback (tactical and strategic).
 
-**The status report** I hate spending 1:1's having you tell me things I can read myself offline. I discourage using 1:1's for the public news and weather. A Highly valuable use of time is the "inner and private stories" on the status. What was hard, what was most fun, where do you want to improve?
+**The status report** I hate using 1:1 to share public status we can read offline ourselves. I discourage using 1:1's for the public news and weather. A Highly valuable use of time is the "inner and private stories" on the status. What was hard, what was most fun, where do you want to improve?
 
-**The Deep Dive** I think a 1:1 manager deep dives is an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say hey, how would I go about learning X,Y or Z? If the answer is only ask me, I'll often ask for a low quality on paper brain dump. This lets us efficiently have an aysnc discussion and Q&A. Once we've done the easy homework, we may review the doc together with me asking detailed questions, for my understanding or for coaching.
+**The Deep Dive** I think 1:1 detailed deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say hey, "how would I go about learning X,Y or Z"? If the answer is only ask me, I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an aysnc discussion and Q&A on paper. Once we've done the easy discussion, we review the doc together with more complex questions, more private context, and coaching.
 
-**Giving Feedback** Lots of contextual feedback can be given in "coaching moments" as soon as you've observed things. Other feedback is best delivered through a question in hearing someones assessment of a behavior or deliverable.
+**Giving Feedback** Lots of contextual feedback can be given in "coaching moments" as soon as you've observed things. Other feedback is best delivered through a question in hearing someones assessment of a behavior or deliverable (as they describe what's on their mind).
 
 **Getting Feedback** I try not to spend my peeps 1:1 time, but I will both ask them generic feedback - what do you think I should stop/continue doing? And specific feedback - I'm thinking of X,Y,Z what's your reaction? I did X,Y,Z last week, what did you observe?
 
-I have less frequent, but important 1:1 types like:
+I have less frequent, but exteremely important 1:1 types like:
 
 - Career discussions - A discussion around what we should be focused on for the next 6-18 months.
 - Promo preparation meetings - to help ensure we're on the same page about what needs to happen for a promo.
@@ -354,32 +355,35 @@ I have less frequent, but important 1:1 types like:
 
 Other thoughts:
 
-- I am an accessible boss - I encourage folks to come to me any time - but they don't.
+- I aspire to be accessible - I encourage folks to come to me any time (but most don't).
 - I "manage by walking around", just seeing what people are up to and working on.
 - I group my 1:1's on the same day (or over 2 days) because 1:1 is a special frame of mind, and it's hard to stay in that zone.
-- I do not use a shared 1:1 document, but wish I did as it seems super valuable.
+- I wish I used a 1:1 document, as that seems to be a best practice for most domains.
 - The current norm is 30 minute 1:1's but I enjoyed the old days when an hour was the norm. I often wonder if we've sacrificed effectiveness for efficiency in the 30 minute 1:1 culture.
 
 ### How do you handle communication problems?
 
-- High Order: Goal is not "communication style", but ability to influence.
+The goal is not "communication style", but ability to influence, and I focus on that.
 
-- Types of communication problems
-  - Clarity of thought
-    - Not communication problem, very concerning .
-  - Not listening to others
-  - ESL -
-  - Written
-  - Verbal
-    - Toast masters
-    - Pre-write thoughts
-    - Use pictures
-    - Say not great on my feet
-  - Slow in situations
+There are some things labelled communication problems, but they are much more serious and need immediate action:
 
-### How do you handle promotion fever?
+- Clarity of thought/intellectual horse power
+- Being a jerk
 
-Promotion fever is my word for engineers that are completely focused on promotions above all else. In general they fall into a few categories: 1) Not Ready, 2) Just hired, and believe under levelled 3) Ready, but didn't get promo due to bad luck.
+There are different types of communication problems each needing a different strategy:
+
+- Verbal diarrhea
+- Dominates Conversations
+- Abrasive communication style
+- Not listening to others
+- Written
+- Verbal/ESL/Not comfortable with in-person verbal communications
+  - Toast masters
+  - Pre-write thoughts
+  - Use pictures
+  - Say not great on my feet, follow up with a document
+
+### How do you handle promotion preparation (and promo fever)?
 
 - Surprises are **BAD**:
 
@@ -388,26 +392,27 @@ Promotion fever is my word for engineers that are completely focused on promotio
 
 - Goal:
 
-  - Engineer is self aware
-  - Engineer comes to conclusion himself
-  - Engineers feels on track
-  - Engineer aspires to get to that level
-  - Engineer doesn't want to be over leveled
+  - Engineer and Manager shared understanding of promo gaps and plan.
+  - Engineer feels they came to conclusion himself
+  - Engineer aspires to get to that level, and feels on track
   - Engineer gets new opportunities/support required.
+  - Engineer doesn't want to be over leveled
 
-- Start w assume engineer right - lets look at the criteria together.
+- How: Start w assume engineer right - lets look at the criteria together.
 
   - Skim now and deep dive in next 1:1
   - Ask for self evaluation
   - Review and get on same page, sometimes manager thinks below and above what eng does.
   - Go over with examples together
   - Ask "How would you describe your behavior vs someone else's"
-  - Ask what gaps do you see
+  - Ask "What gaps do you see"
 
-- Create plan to close the gaps
+- How: Create a shared plan create plan to close the gaps
   - Projects that stretch in those areas
   - Mentors that can help close the gap on those areas
   - Training/etc
+
+Promotion fever is my word for engineers that are completely focused on promotions above all else. In general they fall into a few categories: 1) Not Ready, 2) Just hired, and believe under levelled 3) Ready, but didn't get promo due to bad luck. Regardless, we go through the promotion preparation process.
 
 ### How do you identify and grow potential managers?
 
@@ -418,6 +423,12 @@ Engineers that are interested in reading this post make good manager candidates.
 ## Culture
 
 ### What is your ideal culture?
+
+- Team gelled, and always helping and growing each other
+- Continuous improvement, with very open feedback, and desire to improve.
+- Ship as frequently as possible
+- Nice people
+- Always paying down technical debt
 
 ### How do you make a good culture?
 
@@ -464,6 +475,7 @@ Why:
 - Reduce variance and setup a pit of success.
 - Scale
 - The human equivalent of great tools (source control, linters, bug management systems)
+- Don't waste "mental juice" on solved problems - see ([checklist manifesto](https://www.amazon.com/dp/B086XF436Z/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1))
 
 How:
 
