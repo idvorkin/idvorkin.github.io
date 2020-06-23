@@ -31,7 +31,7 @@ Microsoft teaches humility and growth. Microsofties have coffee cups that say "D
     - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [How do you give challenging feedback](#how-do-you-give-challenging-feedback)
-    - [How do you do 1:1s](#how-do-you-do-11s)
+    - [How do you think of 1:1s](#how-do-you-think-of-11s)
     - [How do you handle communication problems?](#how-do-you-handle-communication-problems)
     - [How do you handle promotion fever?](#how-do-you-handle-promotion-fever)
     - [How do you identify and grow potential managers?](#how-do-you-identify-and-grow-potential-managers)
@@ -313,30 +313,52 @@ Types of tough conversations to flesh out:
 
 Performance, Charter, Re-org (me leaving), Lay Offs.
 
-### How do you do 1:1s
+### How do you think of 1:1s
 
-Computers produce nothing, developers produce code. Business produce nothing PMs, other functions produce stuff.
+1:1's are not just the most expensive use of time, they are also the most important. It's a non-scalable 100% use of two people's attention which is used to:
 
-I produce nothing, my output is the output of the team, and the team is the sum of the people. My ability to get the most value from my people is through my relationship with the people. If they trust me whole heartily, they'll tell me stuff I need to know, and I'll be able to understand how to give roles that grow them/influence them/inspire them. So, all my 1:1's start with What's on your mind - what ever they have we talk through. based on time and place we'll do X, Y.
-
-For 1:1's for my team, the employees owns the Agenda, however I will nudge them. I like to spend time
-
-- Building relationships
-- Providing Larger Context
-- Having confidential discussions on concerns and questions.
+- Build trust and relationships
 - [Coaching strategically and tactically](/coaching)
-- Having [awkward discussions](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) and [more details](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c).
+- Learn (ideally larger) context
+- Have confidential discussions and discussing uncomfortable questions
+- Have [awkward discussions part 1](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) [part 2](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c)
+- Vent and express emotions
 
-I also have some less frequent 1:1s:
+In programming terms the 1:1 is a debugger attached catch all exception handler. This allow all concerns to be discussed, understood, rethrown, reprogrammed or ignored. (OK, maybe the analogy needs work, but I think it's got legs).
 
-- Leadership card evaluation exercise
+Are 1:1's really worth the time? Let me ask and answer a few questions:
+
+- If 1:1 gives an average 0.25% performance improvement, how much value is there? Answer: 12% per year, 300% in ten years.
+- If there isn't a forum for discussion, what happens to most concerns? Answer: They will mostly be ignored. Ignored concerns are lost opportunities in the best case, inefficiency in the median case, and catastrophe in the worst case. Applying the exception handler analogy, the default exception handler is ignore all, and we know how that works out.
+
+How do you organize 1:1's?
+
+My default 1:1's start with "What's on your mind", I focus on asking ([coaching questions](/coaching)) and end with "what can I do immediately to help you?"
+
+A few things you didn't see me say: the status report, the deep dive, giving and requesting feedback (tactical and strategic).
+
+**The status report** I hate spending 1:1's having you tell me things I can read myself offline. I discourage using 1:1's for the public news and weather. A Highly valuable use of time is the "inner and private stories" on the status. What was hard, what was most fun, where do you want to improve?
+
+**The Deep Dive** I think a 1:1 manager deep dives is an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say hey, how would I go about learning X,Y or Z? If the answer is only ask me, I'll often ask for a low quality on paper brain dump. This lets us efficiently have an aysnc discussion and Q&A. Once we've done the easy homework, we may review the doc together with me asking detailed questions, for my understanding or for coaching.
+
+**Giving Feedback** Lots of contextual feedback can be given in "coaching moments" as soon as you've observed things. Other feedback is best delivered through a question in hearing someones assessment of a behavior or deliverable.
+
+**Getting Feedback** I try not to spend my peeps 1:1 time, but I will both ask them generic feedback - what do you think I should stop/continue doing? And specific feedback - I'm thinking of X,Y,Z what's your reaction? I did X,Y,Z last week, what did you observe?
+
+I have less frequent, but important 1:1 types like:
+
 - Career discussions - A discussion around what we should be focused on for the next 6-18 months.
-- Reviewing role guidelines - to help ensure we're on the same page about tactical gaps.
+- Promo preparation meetings - to help ensure we're on the same page about what needs to happen for a promo.
+- Performance Review Feedback
+- Leadership card evaluation exercise (so good, needs its own post)
 
 Other thoughts:
 
-- I try to group my 1:1's on the same day (or over 2 days) because 1:1 is a special frame of mind, and takes a bit to get in the zone.
-- With small teams, I like 1 hour 1 on 1s, but some folks prefer 30 minutes.
+- I am an accessible boss - I encourage folks to come to me any time - but they don't.
+- I "manage by walking around", just seeing what people are up to and working on.
+- I group my 1:1's on the same day (or over 2 days) because 1:1 is a special frame of mind, and it's hard to stay in that zone.
+- I do not use a shared 1:1 document, but wish I did as it seems super valuable.
+- The current norm is 30 minute 1:1's but I enjoyed the old days when an hour was the norm. I often wonder if we've sacrificed effectiveness for efficiency in the 30 minute 1:1 culture.
 
 ### How do you handle communication problems?
 
