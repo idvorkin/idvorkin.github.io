@@ -140,6 +140,7 @@ I run a factory which produces widgets and has employees. For those in the indus
 - work at the factory for several years
 
 <div> </div>
+
 - l22
 - Procedures Ensure..
 - workers are efficient and safe with minimal effort
@@ -149,6 +150,7 @@ I run a factory which produces widgets and has employees. For those in the indus
 - over time work is not required
 
 <div> </div>
+
 - l23
 - Factory machines ...
 - support a wide range of widgets
@@ -246,7 +248,7 @@ My approach, and frequent peep questions.
 - Do shadow coaching, where I might be writing/pr-doing work but they do the send/take the credit
 
 <div> </div>
-- l13
+- l12
 - Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
 - What are you driving for our larger organization?
 - How are you maximizing our benefit?
