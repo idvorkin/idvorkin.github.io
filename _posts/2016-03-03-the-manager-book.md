@@ -10,9 +10,7 @@ redirect_from:
 
 Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.
 
-I'm fluent in Microsoft, Amazon and (learning) Facebook culture. These cultures infuse the answers below and I am grateful for it.
-
-Microsoft teaches humility and growth. Microsofties have coffee cups that say "Do you have a growth mindset?" Facebook teaches the verb of the manager is not to lead, but to support. Facebook employees ask each other, how can managers best support the team? Amazon teaches employees are leaders. Amazonians ask how do empower everyone to lead? As you internalize this post, realize this is not a post about management, it is a post about leaders and much of the content is applicable to you regardless of your title or count direct reports.
+Few topics are unique to managers. The majority are applicable to various degrees in many job functions regardless of seniority or the number of direct reports (including zero).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -34,7 +32,7 @@ Microsoft teaches humility and growth. Microsofties have coffee cups that say "D
     - [What's your thinking around 1:1s](#whats-your-thinking-around-11s)
     - [What do you do in 1:1s](#what-do-you-do-in-11s)
     - [How do you handle communication problems?](#how-do-you-handle-communication-problems)
-    - [How do you handle promotion preparation (and promo fever)?](#how-do-you-handle-promotion-preparation-and-promo-fever)
+    - [How do you handle promotion preparation (and fever)?](#how-do-you-handle-promotion-preparation-and-fever)
     - [How do you identify and grow potential managers?](#how-do-you-identify-and-grow-potential-managers)
     - [How did you grow top talent](#how-did-you-grow-top-talent)
 - [Culture](#culture)
@@ -47,6 +45,7 @@ Microsoft teaches humility and growth. Microsofties have coffee cups that say "D
 - [Process and Mechanism](#process-and-mechanism)
     - [Theory of Process](#theory-of-process)
     - [Never have a human do what a computer can do.](#never-have-a-human-do-what-a-computer-can-do)
+    - [Work streams](#work-streams)
     - [Team meeting](#team-meeting)
     - [Deep Dives and Guest Speakers](#deep-dives-and-guest-speakers)
     - [Engineering Excellence + Operational Review](#engineering-excellence--operational-review)
@@ -318,18 +317,20 @@ Performance, Charter, Re-org (me leaving), Lay Offs.
 
 ### What's your thinking around 1:1s
 
-1:1's are not just the most expensive use of time, they are also the most important. It's a non-scalable 100% use of two people's attention which is completely worth it because:
+1:1's are the highest ROI activity and the most expensive. They take 100% of both parties attention in a non-scalable manner. At the same time
 
-- If 1:1 gives an average 0.25% performance improvement, how much value is there? Answer: 12% per year, 300% in ten years.
-- If there isn't a forum for discussion, many concerns and bottlenecks will be ignored. Ignored concerns and bottlenecks are lost opportunities in the best case, inefficiency in the median case, and catastrophe in the worst case. Applying the exception handler analogy, the default exception handler is ignore all, and we know how that works out.
+- If 1:1s gives an average 0.25% performance improvement, how much value is there?
+  - 12% per year, 300% in ten years.
+- If there isn't a forum for discussion, many concerns and bottlenecks will be ignored.
+  - Ignored concerns and bottlenecks are lost opportunities in the best case, inefficiency in the median case, and catastrophe in the worst case.
+  - Using an exception handler analogy, the default exception handler is ignore all, and we know how that works out.
 
 My goal for 1:1's is to:
 
 - Build trust and relationships
 - [Coach and be coached strategically and tactically](/coaching)
 - Teach and Learn context
-- Have confidential discussions and discussing uncomfortable questions
-- Have [awkward discussions part 1](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) [part 2](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c)
+- Have confidential, [awkward discussions](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) ([part 2](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c))
 - Allow others to express emotions and let off steam in a safe space
 
 In programming terms the 1:1 is a debugger attached catch all exception handler. This allow all concerns to be discussed, understood, rethrown, reprogrammed or ignored. (OK, maybe the analogy needs work, but I think it's got legs).
@@ -338,15 +339,15 @@ In programming terms the 1:1 is a debugger attached catch all exception handler.
 
 My default 1:1's start with "What's on your mind", I focus on asking ([coaching questions](/coaching)) and end with "what can I do immediately to help you?"
 
-A few things you didn't see me say: the status report, the deep dive, giving and requesting feedback (tactical and strategic).
+A few things you didn't see me say: status reporting, off the cuff deep dives, and giving and requesting feedback.
 
-**The status report** I hate using 1:1 to share public status we can read offline ourselves. I discourage using 1:1's for the public news and weather. A Highly valuable use of time is the "inner and private stories" on the status. What was hard, what was most fun, where do you want to improve?
+**The status report** I discourage using 1:1 to share the public news and weather "status report" - we can read that offline ourselves. A valuable use of time is the "inner and private stories" on the status - What is hard, what is most fun, where do you want to improve?
 
-**The Deep Dive** I think 1:1 detailed deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say hey, "how would I go about learning X,Y or Z"? If the answer is only ask me, I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an aysnc discussion and Q&A on paper. Once we've done the easy discussion, we review the doc together with more complex questions, more private context, and coaching.
+**Off the cuff deep dives** I think 1:1 off the cuff deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say hey, "how would I go about learning X,Y or Z"? If the answer is only ask me, I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an aysnc discussion and Q&A on paper. Once we've done the easy discussion, we review the doc together with more complex questions, more private context, and coaching.
 
-**Giving Feedback** Lots of contextual feedback can be given in "coaching moments" as soon as you've observed things. Other feedback is best delivered through a question in hearing someones assessment of a behavior or deliverable (as they describe what's on their mind).
+**Giving Feedback** Lots of contextual feedback can be given in "coaching moments" as soon as you've observed things. Other feedback is best delivered through follow up questions during the "what's on your mind" induced discussions.
 
-**Getting Feedback** I try not to spend my peeps 1:1 time, but I will both ask them generic feedback - what do you think I should stop/continue doing? And specific feedback - I'm thinking of X,Y,Z what's your reaction? I did X,Y,Z last week, what did you observe?
+**Getting Feedback** I try not to 'spend' my peeps 1:1 time, but I will both ask them generic feedback - what do you think I should stop/continue doing? And specific feedback - I'm thinking of X,Y,Z what's your reaction? Or, I did X,Y,Z last week, what did you observe?
 
 I have less frequent, but exteremely important 1:1 types like:
 
@@ -385,7 +386,7 @@ There are different types of communication problems each needing a different str
   - Use pictures
   - Say not great on my feet, follow up with a document
 
-### How do you handle promotion preparation (and promo fever)?
+### How do you handle promotion preparation (and fever)?
 
 - Surprises are **BAD**:
 
@@ -503,11 +504,15 @@ Thoughts:
 - Automated tests vs human execution
 - Multiple copies of the same data
 
+### Work streams
+
 ### Team meeting
 
 ### Deep Dives and Guest Speakers
 
 ### Engineering Excellence + Operational Review
+
+There should always been an on-call, an engineering excellence work stream, and a periodic review meeting.
 
 1. How do we know our customer is having a good day?
 2. How do we maximize our velocity
@@ -550,11 +555,12 @@ Also need to review all outages
 Most companies have their “competencies” they test for. But I abstract it down to:
 
 - Smart (Can code, understands)
-  - Teach me something
-  - Walk through X, and Y, how do you, explain me the trade offs.
+  - Teach me something you deeply understand
+  - Walk through X, and Y, how do you, explain the trade offs.
 - Get things done (wants to ship, owns it):
-  - What matters to them
+  - What matters to you
   - Tell me something hard you did.
+  - Tell me your favorite parts
 - EQ: (Not an asshole, Continuous Learning, Sees impact off his action, self aware o how eels)
   - Tell me a time you got in a fight
   - Tell me the hardest feedback you received.
@@ -567,13 +573,13 @@ Need a Principal per 30 people.
 
 Ratio Senior: SDE-II: SDE-I (1,2,2) => ten person team: 2, 4, 4.
 
-- Everyone grows by learning and teaching. Lots of rules
-- A crappy job for an SDE-II is a growth opportunity for SDE-I.
+- Everyone grows by learning and teaching.
+- A crappy job for an SDE Level-X is a growth opportunity for SDE Level-(X-1).
 - SDE-IIIs want to think hard and lead.
 - SDE-IIs do the bulk of the work, and are fully independent.
 - SDE-I bring energy and excitement, but still dependent.
 
-Ideally, people grow from SDE-I -> SDE-III on a team, so much knowledge transfer and opportunity.
+(Bad analogy) A team is like a "conveyer belt", people continually improve and mature and want larger scope, requiring a constant flow of incoming college hires.
 
 ### Are they more comfortable with generalists or specialists?
 
@@ -590,12 +596,16 @@ Specialist - 1% on very specific teams.
 
 Want full stack teams:
 
-FE -> Learn the customer empathy through user interactions
-BE -> Learn the tech chops of complex system.
+- FE -> Learn the customer empathy through user interactions
+- BE -> Learn the tech chops of complex system.
 
 ### How do you think about hiring?
 
-Priority list 1) Full blown Site Outage 2) Recruiting 3) Everything else.
+A wise man taught me - "My priority list shoudl be":
+
+1. Full Blown Site Outage
+2. Recruiting
+3. Everything else.
 
 Recruiting is ultimately product sales, where you're selling your team.
 
@@ -636,27 +646,30 @@ Most important part of sales:
 
 - External Structured
 
-  - Coding
-  - Design
   - Leadership skills - most important
-  - Self aware - earns trust.
+  - Self aware - a [critical part of being a leader](/what-makes-a-leader)
+  - Design
+  - Coding
 
 - Internal, Structured but Different
 
-  - You better have enough internal code/design/documentation artifacts. Ask candidate for artifacts they're proud of.
+  - Review internal code/design/documentation artifacts. Ask candidate for artifacts they're proud of.
   - Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them doing their day job.
   - Talk about hard situations they've had. Listen for the criteria smart/gets shit done/emotionally intelligent
 
 ### What are better kinds of interviews?
 
-Novel ideas for interviews (from indeed)
+I've heard the tech interview model described as the second worst kind of assessment strategy, it's only better then everything else we know.
+
+That might be true, but I've also seen some novel ideas for interviews (Indeed uses these), and I'd be interested to try using them:
 
 - Do a code review
 - Do a mock interview + debrief
 - Review their public work (like Github)
-- Having them explain their projects to you.
 
+<!--
 ### Best hire of your career
+-->
 
 ## Firing and Performance Management
 
