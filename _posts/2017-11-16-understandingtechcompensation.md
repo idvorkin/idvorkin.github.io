@@ -32,6 +32,7 @@ Different companies use different compensation models. To compare models use tot
     - [Should you include stock appreciation in total compensation?](#should-you-include-stock-appreciation-in-total-compensation)
     - [How do I translate job levels between companies?](#how-do-i-translate-job-levels-between-companies)
     - [I read on the internet company Foo pays Bar. Is that true?](#i-read-on-the-internet-company-foo-pays-bar-is-that-true)
+    - [Is it fair that promotions pay at the bottom of the pay scale, and new hires tend to be at the top?](#is-it-fair-that-promotions-pay-at-the-bottom-of-the-pay-scale-and-new-hires-tend-to-be-at-the-top)
     - [What is the four year cliff?](#what-is-the-four-year-cliff)
     - [Should I negotiate?](#should-i-negotiate)
 
@@ -122,6 +123,18 @@ Compensation is often a function of "job level" which varies by company. This si
 ### I read on the internet company Foo pays Bar. Is that true?
 
 Maybe, but I doubt it. Don't forget the old joke when 2 people compare salaries, one of them is going to walk away feeling ecstatic, and the other miserable. Be cautious when comparing salaries, as [your pride can start fucking with you](/pride).
+
+### Is it fair that promotions pay at the bottom of the pay scale, and new hires tend to be at the top?
+
+First how do companies determine pay? Usually companies seek to be fair, which they do by establishing a pay range for a level, and then pegging that range to a percentile of the industry. A fictitious example, industry pay range for a Senior is 100$ to 200$, 75th percentile at 175$. A company wants to set their comp at p75 of industry so they set their senior pay band from 170$ to 180\$.
+
+Now people want to get raises every year, so companies would give someone promoted into senior 170$, and as years go by they get raises till they rise to 180$.
+
+For new hires, offers tend to be at the top of (if not over) the pay range but fairness continues to be the doctrine.
+
+The industry range for offers is higher because 1) you don't want to lose a good candidate 2) you tend to hire people high in the band. 3) You can be optimistic that person will be promoted shortly, and if they don't it'll be corrected by the 4 year cliff.
+
+New hires tend to be high in the band because it ensures they'll be successful. Changing companies has significant head winds (new culture, new tech, new process, no network). If someone is at the bottom of the band, they tend to be downlevelled to avoid them failing.
 
 ### What is the four year cliff?
 

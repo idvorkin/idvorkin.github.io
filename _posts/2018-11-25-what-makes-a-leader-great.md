@@ -4,6 +4,7 @@ title: "What makes a leader"
 author: "Igor Dvorkin"
 comments: true
 
+permalink: /what-makes-a-leader
 tags:
   - hbr
   - emotional intelligence
@@ -12,9 +13,6 @@ tags:
 Emotional intelligence (EI) is the crux of leadership. EI is comprised of Self-Awareness, Self-Regulation, Motivation, Empathy and Social Skills. This is a summary of Dan Goleman's [What makes a leader](https://hbr.org/2004/01/what-makes-a-leader). Before we begin, here's a consulting 2x2 grid:
 
 ![EI-4x4.png](/images/emotional-intelligence-2x2.jpg)
-
-
-
 
 **Self-awareness:** Knowing one's emotions, strengths, weaknesses, drives, values, and goals—and their impact on others
 
