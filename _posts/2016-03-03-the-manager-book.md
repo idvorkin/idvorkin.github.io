@@ -10,7 +10,7 @@ redirect_from:
 
 Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.
 
-Few topics are unique to managers. The majority are applicable to various degrees in many job functions regardless of seniority or the number of direct reports (including zero).
+This post uses the word manager, but the majority of topics are applicable all software job functions regardless of seniority or the number of direct reports, zero direct reports included.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -18,6 +18,7 @@ Few topics are unique to managers. The majority are applicable to various degree
 - [What does a manager do?](#what-does-a-manager-do)
     - [What are a managers responsibilities?](#what-are-a-managers-responsibilities)
     - [How do you measure their success?](#how-do-you-measure-their-success)
+    - [What is a manager accountable for?](#what-is-a-manager-accountable-for)
     - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
     - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
     - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
@@ -49,8 +50,10 @@ Few topics are unique to managers. The majority are applicable to various degree
     - [Team meeting](#team-meeting)
     - [Deep Dives and Guest Speakers](#deep-dives-and-guest-speakers)
     - [Engineering Excellence + Operational Review](#engineering-excellence--operational-review)
-    - [Business Reviews](#business-reviews)
+    - [Customer and Business Metric  Reviews](#customer-and-business-metric--reviews)
+    - [Retrospectives](#retrospectives)
     - [Design+Arch Reviews](#designarch-reviews)
+    - [Defining Success - Goal Setting, KPIs, OKRs, SLOs](#defining-success---goal-setting-kpis-okrs-slos)
     - [Group Bonding](#group-bonding)
 - [Hiring](#hiring)
     - [What are you looking for when you recruit?](#what-are-you-looking-for-when-you-recruit)
@@ -81,6 +84,7 @@ Few topics are unique to managers. The majority are applicable to various degree
 - [Other resources](#other-resources)
     - [Google's Project Oxygen](#googles-project-oxygen)
     - [Amazon's leadership principles](#amazons-leadership-principles)
+    - [A few Igorisms](#a-few-igorisms)
     - [Laws to remember](#laws-to-remember)
     - [Great Videos](#great-videos)
     - [Great Posts and Blogs](#great-posts-and-blogs)
@@ -94,6 +98,8 @@ Few topics are unique to managers. The majority are applicable to various degree
 ### What are a managers responsibilities?
 
 ### How do you measure their success?
+
+### What is a manager accountable for?
 
 The success of a manager is the success of the team. This manifest in 4 dimensions:
 
@@ -432,6 +438,7 @@ Engineers that are interested in reading this post make good manager candidates.
 - Ship as frequently as possible
 - Nice people
 - Always paying down technical debt
+- I hate the term "bring solutions not problems", it encourages people to freeze. Instead - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
 
 ### How do you make a good culture?
 
@@ -536,7 +543,9 @@ Also need to review all outages
 - Testing systems.
   - Very high leverage active
 
-### Business Reviews
+### Customer and Business Metric Reviews
+
+### Retrospectives
 
 ### Design+Arch Reviews
 
@@ -545,6 +554,8 @@ Also need to review all outages
 - Ensure team gets cross trained.
 - Catch stuff as early as possible
 - Get developers used to being on the whiteboard
+
+### Defining Success - Goal Setting, KPIs, OKRs, SLOs
 
 ### Group Bonding
 
@@ -886,6 +897,39 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 **Think Big** - Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently and look around corners for ways to serve customers.
 
 **Are Right, A Lot** - Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to dis confirm their beliefs.
+
+### A few Igorisms
+
+1. I come across as confident, that's just a personality flaw. Please don't confuse my confidence with my conviction, and push back.
+2. Don't worry about "over" influencing me. I'm learning context, and will ref-count and circle back as I get more data.
+3. My goal is to do nothing. If I'm doing anything you should do, want to do, or want to learn to do - lets make it happen.
+4. I'm super transparent
+5. Platforms;
+
+   - If you build it they will not come.
+   - If its a platform you'll have lots of opportunites to iterate before you're done.
+   - Built every iteration with a committed partner
+   - Launch the first iteration ASAP with minimal flexiblity - you'll learn a tonne
+   - Build the second iteration so it's cheaper to build the 3rd.
+   - Build the third by providing flexibility in those must frequently changed dimensios
+   - Build the next iteration for a small set of users
+   - Rinse Repeat
+
+6. We are a team - we want to help each other.
+   - If someone needed help would you give it to them? So do the same
+
+**Rules of software as an IC**
+
+1. No duplicate code - Fix it once!
+1. Trust tests not experts - Bring data not someones faulty memory
+1. Log bug then whine - Whining is fine, but bring it forward
+
+**My kryptonite**
+
+- Bad Memory/Not seeing details - I need your help sticking to details, catching stuff
+- Organization - I have the least process ever (except for Facebook)
+- UX - I'm inexpereinced at UI - I need to get better, but a place I need to lean on others
+- Dramatizing - It's emotionally engaging and helps knock us into high trust mode, but it can cause people to be defensive
 
 ### Laws to remember
 
