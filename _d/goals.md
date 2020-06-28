@@ -29,6 +29,7 @@ Goal are critcal, there are multiple goal systems and they have consequences. Th
     - [Transparent Goals](#transparent-goals)
     - [Philosphy](#philosphy)
 - [Culture vs Strategy](#culture-vs-strategy)
+- [- Culture lets you make decisions quickly and correctly](#--culture-lets-you-make-decisions-quickly-and-correctly)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -59,7 +60,7 @@ Answer what, why, and how do we know there.
 
 Philisophical Difference
 
-\*
+[Example OKRs](https://www.whatmatters.com/get-examples)
 
 ### Measuring goals
 
