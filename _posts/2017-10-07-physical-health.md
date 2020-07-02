@@ -48,11 +48,11 @@ First good for you! Realizing you need to take action is a huge first step. Real
 
 I'd start with cardio exercise (e.g. endurance fitness). That will give you the most energy, which you'll require to boost strap the other disciplines. After you've been doing that for a month or so, I'd tackle sleep and when that feels stable I'd add weight loss.
 
-#### How long should I exercise? 
+#### How long should I exercise?
 
 **I'm in for cardio - How should I start, how long should I go?**
 
-First rule of starting new habits - make it easier then you can accomplish. To that end I'd start at an easy pace for as long as you can (upto 30 minutes) then gradually increase the duration  till you can do 30 minutes comfortably.  Once you're at 30 minutes gradually raise the intensity (no more then 10% / week) so that you're continuing to push at an easy pace without feeling like you're pushing too hard.
+First rule of starting new habits - make it easier then you can accomplish. To that end I'd start at an easy pace for as long as you can (upto 30 minutes) then gradually increase the duration till you can do 30 minutes comfortably. Once you're at 30 minutes gradually raise the intensity (no more then 10% / week) so that you're continuing to push at an easy pace without feeling like you're pushing too hard.
 
 **Why 30 minutes?**
 
@@ -60,6 +60,6 @@ I don't know if there's any science here, but my target is 30 minutes of cardio.
 
 For me, it's long enough to work up a sweat, but short enough to not eat up my day. I've read that you should either do 30 minutes of low to medium intensity exercise daily or 20 minutes of high intensity exercise 3 times a week. When starting out or when old, I'd recommend low weights high reps to reduce the risk of quitting and injury.
 
-#### My body part really hurts, what should I do? 
+#### My body part really hurts, what should I do?
 
 I've had lots of injuries, here's my various [braces](/td/irl#physical-health)
