@@ -19,7 +19,8 @@ Give people the power to build community and bring the world closer together, he
     - [Open source lots](#open-source-lots)
     - [Top notch data tools](#top-notch-data-tools)
 - [The Good](#the-good)
-    - [Not managers, but people who support a team.](#not-managers-but-people-who-support-a-team)
+    - [Not managers, but a person who supports](#not-managers-but-a-person-who-supports)
+    - [Managers don't tell employees what to work on](#managers-dont-tell-employees-what-to-work-on)
     - [Inclusion and Diversity.](#inclusion-and-diversity)
     - [OKRs](#okrs)
     - [Metric Driven Culture](#metric-driven-culture)
@@ -31,7 +32,8 @@ Give people the power to build community and bring the world closer together, he
     - [Monorepo.](#monorepo)
     - [Mercurial instead of git](#mercurial-instead-of-git)
     - [No job title bias](#no-job-title-bias)
-- [The Bad - Still earning](#the-bad---still-earning)
+- [The Bad - Still learning](#the-bad---still-learning)
+    - [Anxiety around reviews](#anxiety-around-reviews)
 - [My projects at Facebook](#my-projects-at-facebook)
     - [Amplifying Connection through Art and tech.](#amplifying-connection-through-art-and-tech)
     - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
@@ -99,13 +101,15 @@ See a [detailed description of the tools](https://medium.com/analytics-and-data/
 
 ## The Good
 
-### Not managers, but people who support a team.
+### Not managers, but a person who supports
 
 When I did an informational with FB, the interviewer asked me how I "support my team"? I didn't understand what the question meant. At FB, servant leadership is so ingrained in the culture that when managers introduce themselves, they don't say I'm the manager for "team name", they say I support "team name".
 
 This will be an area I write lots as it's this is some of Facebook's unique value, and I'm exited to internalize it. Some early examples:
 
-**Managers don't tell employees what to work on** Instead, they help employees evaluate what projects they should use. They clarify the needs of the team and larger org, and help employees evaluate which projects are a good fit for their interests, the business, and their growth needs. It is the employees choice though, and regardless of their choice the manager will help the employee be successful.
+### Managers don't tell employees what to work on
+
+Instead, they help employees evaluate what projects they should use. They clarify the needs of the team and larger org, and help employees evaluate which projects are a good fit for their interests, the business, and their growth needs. It is the employees choice though, and regardless of their choice the manager will help the employee be successful.
 
 ### Inclusion and Diversity.
 
@@ -170,9 +174,20 @@ Job titles bias you into having a preconceived notion of how much authority you 
 
 The flip side is going into new situations you need to spend more time evaluating who you should give authority to and how likely someone knows what they are talking about. This is made easier as most work is public and very easy to see. E-mail equivalents (posts), code Reviews, Bug write ups, public thanks, are all completely public, and even show up on a person's feed.
 
-## The Bad - Still earning
+## The Bad - Still learning
 
 _I'm new, will add my thoughts as I know them_
+
+### Anxiety around reviews
+
+Relative to MSFT and AMZN folks are very concerned about reviews. I don't yet know what it's like as a manager, but I think the reason employees are concerned are:
+
+1. Everyone else is concerned about it.
+1. It happens twice a year
+1. There are [7 rating buckets](https://www.cnbc.com/2019/01/08/facebook-culture-cult-performance-review-process-blamed.html) though the majority of folks land in 2 buckets.
+1. The impact on salary is formulaic and transparent
+1. The ratings are relative to other employees (vs absolute) so you can't know which side of the line you are.
+1. At the lower levels there's a fixed amount of time you can stay in a level before you get promoted
 
 ## My projects at Facebook
 
