@@ -46,13 +46,13 @@ This post uses the word manager, but the majority of topics are applicable all s
 - [Process and Mechanism](#process-and-mechanism)
     - [Theory of Process](#theory-of-process)
     - [Never have a human do what a computer can do.](#never-have-a-human-do-what-a-computer-can-do)
-    - [Work streams](#work-streams)
-    - [Team meeting](#team-meeting)
-    - [Deep Dives and Guest Speakers](#deep-dives-and-guest-speakers)
-    - [Engineering Excellence + Operational Review](#engineering-excellence--operational-review)
-    - [Customer and Business Metric  Reviews](#customer-and-business-metric--reviews)
-    - [Retrospectives](#retrospectives)
-    - [Design+Arch Reviews](#designarch-reviews)
+    - [Cohesion - Work streams](#cohesion---work-streams)
+    - [Rich communication  - Team meeting](#rich-communication----team-meeting)
+    - [Continous Learning - Deep Dives, Knowledge Transfer and Guest Speakers](#continous-learning---deep-dives-knowledge-transfer-and-guest-speakers)
+    - [Engineering Excellence - Operational Review and Correction of Errors](#engineering-excellence---operational-review-and-correction-of-errors)
+    - [Data Driven - Customer and Business Metric Reviews](#data-driven---customer-and-business-metric-reviews)
+    - [Continous Improvement - Retrospectives](#continous-improvement---retrospectives)
+    - [Quality and Technical Growth Design+Arch Reviews](#quality-and-technical-growth-designarch-reviews)
     - [Defining Success - Goal Setting, KPIs, OKRs, SLOs](#defining-success---goal-setting-kpis-okrs-slos)
     - [Group Bonding](#group-bonding)
 - [Hiring](#hiring)
@@ -511,15 +511,15 @@ Thoughts:
 - Automated tests vs human execution
 - Multiple copies of the same data
 
-### Work streams
+### Cohesion - Work streams
 
-### Team meeting
+### Rich communication - Team meeting
 
-### Deep Dives and Guest Speakers
+### Continous Learning - Deep Dives, Knowledge Transfer and Guest Speakers
 
-### Engineering Excellence + Operational Review
+### Engineering Excellence - Operational Review and Correction of Errors
 
-There should always been an on-call, an engineering excellence work stream, and a periodic review meeting.
+There should always been an on-call, an engineering excellence work stream, and a periodic review meeting and a [correction of errors](/coe) process.
 
 1. How do we know our customer is having a good day?
 2. How do we maximize our velocity
@@ -543,11 +543,11 @@ Also need to review all outages
 - Testing systems.
   - Very high leverage active
 
-### Customer and Business Metric Reviews
+### Data Driven - Customer and Business Metric Reviews
 
-### Retrospectives
+### Continous Improvement - Retrospectives
 
-### Design+Arch Reviews
+### Quality and Technical Growth Design+Arch Reviews
 
 - Really a preview, not a review.
 - Ensure that tech assets are high quality and require minimal re-work.
