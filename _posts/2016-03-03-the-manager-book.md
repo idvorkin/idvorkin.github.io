@@ -47,11 +47,11 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Theory of Process](#theory-of-process)
     - [Never have a human do what a computer can do.](#never-have-a-human-do-what-a-computer-can-do)
     - [Cohesion - Work streams](#cohesion---work-streams)
-    - [Rich communication  - Team meeting](#rich-communication----team-meeting)
-    - [Continous Learning - Deep Dives, Knowledge Transfer and Guest Speakers](#continous-learning---deep-dives-knowledge-transfer-and-guest-speakers)
+    - [Rich communication - Team meeting](#rich-communication---team-meeting)
+    - [Continuous Learning - Deep Dives, Knowledge Transfer and Guest Speakers](#continuous-learning---deep-dives-knowledge-transfer-and-guest-speakers)
     - [Engineering Excellence - Operational Review and Correction of Errors](#engineering-excellence---operational-review-and-correction-of-errors)
     - [Data Driven - Customer and Business Metric Reviews](#data-driven---customer-and-business-metric-reviews)
-    - [Continous Improvement - Retrospectives](#continous-improvement---retrospectives)
+    - [Continuous Improvement - Retrospectives](#continuous-improvement---retrospectives)
     - [Quality and Technical Growth Design+Arch Reviews](#quality-and-technical-growth-designarch-reviews)
     - [Defining Success - Goal Setting, KPIs, OKRs, SLOs](#defining-success---goal-setting-kpis-okrs-slos)
     - [Group Bonding](#group-bonding)
@@ -63,10 +63,14 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [How do you think about the hiring funnel.](#how-do-you-think-about-the-hiring-funnel)
     - [What about structured vs free form interview loops?](#what-about-structured-vs-free-form-interview-loops)
     - [What are better kinds of interviews?](#what-are-better-kinds-of-interviews)
+    - [What do you do when someone says they are quitting](#what-do-you-do-when-someone-says-they-are-quitting)
     - [Best hire of your career](#best-hire-of-your-career)
 - [Firing and Performance Management](#firing-and-performance-management)
     - [Firing Ratios](#firing-ratios)
     - [The Process](#the-process)
+    - [What are your thoughts on a PIP?](#what-are-your-thoughts-on-a-pip)
+    - [How do you deal with people performance issues?](#how-do-you-deal-with-people-performance-issues)
+    - [How do you coach employee back to success?](#how-do-you-coach-employee-back-to-success)
 - [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
     - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
     - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
@@ -355,7 +359,7 @@ A few things you didn't see me say: status reporting, off the cuff deep dives, a
 
 **Getting Feedback** I try not to 'spend' my peeps 1:1 time, but I will both ask them generic feedback - what do you think I should stop/continue doing? And specific feedback - I'm thinking of X,Y,Z what's your reaction? Or, I did X,Y,Z last week, what did you observe?
 
-I have less frequent, but exteremely important 1:1 types like:
+I have less frequent, but extremely important 1:1 types like:
 
 - Career discussions - A discussion around what we should be focused on for the next 6-18 months.
 - Promo preparation meetings - to help ensure we're on the same page about what needs to happen for a promo.
@@ -411,7 +415,7 @@ There are different types of communication problems each needing a different str
 
   - Skim now and deep dive in next 1:1
   - Ask for self evaluation
-  - Review and get on same page, sometimes manager thinks below and above what eng does.
+  - Review and get on same page, sometimes manager thinks below and above what engineer does.
   - Go over with examples together
   - Ask "How would you describe your behavior vs someone else's"
   - Ask "What gaps do you see"
@@ -515,7 +519,7 @@ Thoughts:
 
 ### Rich communication - Team meeting
 
-### Continous Learning - Deep Dives, Knowledge Transfer and Guest Speakers
+### Continuous Learning - Deep Dives, Knowledge Transfer and Guest Speakers
 
 ### Engineering Excellence - Operational Review and Correction of Errors
 
@@ -545,7 +549,7 @@ Also need to review all outages
 
 ### Data Driven - Customer and Business Metric Reviews
 
-### Continous Improvement - Retrospectives
+### Continuous Improvement - Retrospectives
 
 ### Quality and Technical Growth Design+Arch Reviews
 
@@ -590,7 +594,7 @@ Ratio Senior: SDE-II: SDE-I (1,2,2) => ten person team: 2, 4, 4.
 - SDE-IIs do the bulk of the work, and are fully independent.
 - SDE-I bring energy and excitement, but still dependent.
 
-(Bad analogy) A team is like a "conveyer belt", people continually improve and mature and want larger scope, requiring a constant flow of incoming college hires.
+(Bad analogy) A team is like a "conveyor belt", people continually improve and mature and want larger scope, requiring a constant flow of incoming college hires.
 
 ### Are they more comfortable with generalists or specialists?
 
@@ -612,7 +616,7 @@ Want full stack teams:
 
 ### How do you think about hiring?
 
-A wise man taught me - "My priority list shoudl be":
+A wise man taught me - "My priority list should be":
 
 1. Full Blown Site Outage
 2. Recruiting
@@ -678,6 +682,15 @@ That might be true, but I've also seen some novel ideas for interviews (Indeed u
 - Do a mock interview + debrief
 - Review their public work (like Github)
 
+### What do you do when someone says they are quitting
+
+I always start with "Happy for you, sad for us".
+My goal is to find the right role for an employee, not to have them on the team.
+Ask if you want me to talk you out of it, or to reinforce your choice.
+Help you think through decisions
+TODO: Add story of Neha
+Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are stagnant which is bad
+
 <!--
 ### Best hire of your career
 -->
@@ -687,6 +700,56 @@ That might be true, but I've also seen some novel ideas for interviews (Indeed u
 ### Firing Ratios
 
 ### The Process
+
+### What are your thoughts on a PIP?
+
+Three "Players" in this situation:
+
+- The struggling employee
+  - Remember being in the wrong role SUCKS. Employee is going home after long day, and feeling like shit (rinse and repeat)
+  - Once in right role - will feel great. Seen lots of times this happens.
+  - Let employee 'self discover' gaps and judge, but you must set down the truth.
+  - Should not be a surprise. Should have already gone through role guidelines and gaps.
+  - Clear set of gaps, and expectation for required improvement.
+  - Progressively lay out process, so they know where they're at and what happens next.
+  - Help them know it's the wrong role, but they have lots of strengths (look we hired you), and you'll be well loved elsewhere.
+  - Help them with how to find change, mock interview, job changing guidance
+- The team
+  - Weak performer means others on team have to cover both in mentoring, and picking up dropped ball.
+  - Sets a bad example for the team
+  - Team knows the weak, and dislikes it.
+  - Need to mitigate impact of week employee.
+- The manager.
+  - Emotionally draining. But you own giving them an opportunity not their success.
+  - When they're in the wrong role, best thing that happen is getting them to a place where they are successful.
+  - Can be time and energy intensive, robs the team and good employees of your energy.
+  - Ensure criteria for demonstrating employees recover is sufficient. Get pre-agreement on criteria with your organizational leaders.
+  - Remember, all employee's getting into this process will improve because they are being chased. Ensure their improvement isn't temporary
+
+Most companies have a well laid out process, that you follow.
+
+Usually there's a "zone of concern", when the manager focuses carefully on the employee: - Set employee up for max success - Ensure clear expectations - Get mentorship - Explain to employee you believe in them.
+Then there's an official pre-PIP
+
+    - Same as above, but  really clear with employee
+    - Document everything so there is no miscommunication
+    - Ensure clear criteria for PIP removal.
+    - Ensure org agrees criteria is sufficient
+    - Meet weekly
+
+Then there's a formal PIP - Depends on your company but very similar to above, but with clear legal terminology.
+
+### How do you deal with people performance issues?
+
+### How do you coach employee back to success?
+
+- Really depends on the employee
+- Generally:
+  - Re-enforce the person is good.
+  - Remind person the team is there to help them
+  - Clarify expectations
+  - Provide a short term lowering of expectations
+  - Consider LOA or accommodations as appropriate
 
 ## Charters, Re-orgs and Bootstrapping
 
@@ -907,11 +970,11 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 5. Platforms;
 
    - If you build it they will not come.
-   - If its a platform you'll have lots of opportunites to iterate before you're done.
+   - If its a platform you'll have lots of opportunities to iterate before you're done.
    - Built every iteration with a committed partner
-   - Launch the first iteration ASAP with minimal flexiblity - you'll learn a tonne
+   - Launch the first iteration ASAP with minimal flexibility - you'll learn a tonne
    - Build the second iteration so it's cheaper to build the 3rd.
-   - Build the third by providing flexibility in those must frequently changed dimensios
+   - Build the third by providing flexibility in those must frequently changed dimensions
    - Build the next iteration for a small set of users
    - Rinse Repeat
 
@@ -924,11 +987,11 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 1. Trust tests not experts - Bring data not someones faulty memory
 1. Log bug then whine - Whining is fine, but bring it forward
 
-**My kryptonite**
+**My Kryptonite**
 
 - Bad Memory/Not seeing details - I need your help sticking to details, catching stuff
 - Organization - I have the least process ever (except for Facebook)
-- UX - I'm inexpereinced at UI - I need to get better, but a place I need to lean on others
+- UX - I'm inexperienced at UI - I need to get better, but a place I need to lean on others
 - Dramatizing - It's emotionally engaging and helps knock us into high trust mode, but it can cause people to be defensive
 
 ### Laws to remember
