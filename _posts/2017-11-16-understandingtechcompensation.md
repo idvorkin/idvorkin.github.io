@@ -13,11 +13,6 @@ redirect_from:
 
 Different companies use different compensation models. To compare models use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon clips salary at 160K\$/yr, and doesn't have bonuses. Google vests stocks Monthly. Facebook bonuses have a company performance multiplier. At some companies signing bonuses can be over 100% of salary!
 
-<!-- imagefeature: https://thenounproject.com/0a7bdab3-cb97-4cce-9161-d4504ebc88c2
-![](https://github.com/idvorkin/blob/raw/master/noun_compensation%20_and%20benefits.svg?sanitize=1)
-![](https://raw.githubusercontent.com/idvorkin/blob/master/noun_compensation%20_and%20benefits.svg?sanitize=1)
--->
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
@@ -40,6 +35,8 @@ Different companies use different compensation models. To compare models use tot
 <!-- prettier-ignore-end -->
 
 ## Total Compensation - It gets complicated
+
+{%include blob_image_float_right.html src="noun_compensation%20_and%20benefits.svg?sanitize=1" %}
 
 Understand your total compensation which is a combination of salary, cash bonus, and equity. For example, imagine making a steady state total compensation of 200\$/ year(see assumptions below). For this example, imagine this breakdown (each company has a different model):
 
