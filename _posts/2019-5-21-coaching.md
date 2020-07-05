@@ -41,6 +41,7 @@ Coaching is like midwifery. A midwife can not give birth to the baby, she facili
   - [Encourange trying to solve own problem: How would you handle this?](#encourange-trying-to-solve-own-problem-how-would-you-handle-this)
   - [Say No: Say yes slowly](#say-no-say-yes-slowly)
   - [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
+- [One on One Questions](#one-on-one-questions)
 - [Situational coaching](#situational-coaching)
 - [Other coaching tools](#other-coaching-tools)
 - [Fantastic video on coaching, improvement, and discomfort](#fantastic-video-on-coaching-improvement-and-discomfort)
@@ -195,6 +196,10 @@ take this high order bit of focusing the feedback on "you" not on them. E.g. fee
 | You need to be more responsive.                        | When I don’t hear from you, I worry that we’re not on the same page.                                              |
 | You lack strategic thinking.                           | I’m struggling to understand your plan.                                                                           |
 | You should do x [in response to a request for advice]. | What do you feel you’re struggling with, and what have you done in the past that’s worked in a similar situation? |
+
+### One on One Questions
+
+See the One on One Sections And One on One prompts in [the manager book](/the-manager-book)
 
 ### Situational coaching
 

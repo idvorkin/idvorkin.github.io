@@ -92,6 +92,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Laws to remember](#laws-to-remember)
     - [Great Videos](#great-videos)
     - [Great Posts and Blogs](#great-posts-and-blogs)
+    - [1 on 1 Prompts](#1-on-1-prompts)
     - [Great books](#great-books)
 
 <!-- vim-markdown-toc -->
@@ -1021,6 +1022,96 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 - [The managers path](https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897) - This book feels like it lacks "complete" mental models, but it's the only book of it's kind - so it's the best there is!
 - [Elided Branches](http://www.elidedbranches.com/) - Blog on engineering management.
 - [I.M Wright's Hard Code](https://imwrightshardcode.com) - Engineering Management from Microsoft, covers most topics.
+
+### 1 on 1 Prompts
+
+From Halloway's remote management guide
+
+**CAREER**
+
+- When did you recently get an opportunity to learn and grow? How can we create more of those?
+- Have you seen someone else doing something you felt worked really well? What was it?
+- What should I know about you that would help me support you better?
+- What are you doing here that you feel is most in line with your long-term goals?
+
+**WHAT ARE YOUR BIGGEST TIME WASTERS?**
+
+- If you could be proud of one accomplishment between now and next year, what would it be?
+- Is anything holding you back from doing the best work you can do right now?
+- Is there a project or area outside your current role where you feel you could be contributing?
+- Which areas make you feel like your hands are tied or you are unable to reach your full potential?
+- If you were to create your ideal position, how would it differ from what you are currently doing?
+- At what point in the past week were you most frustrated with or discouraged by your work? What can I do to help you manage that?
+
+**SEEKING FEEDBACK**
+
+- Would you like more or less direction from me?
+- Would you like more or less feedback on your work? If more, what additional feedback would you like?
+- If you were coaching me to have a greater positive impact, what would you tell me?
+- What can I tell you about myself that might make it easier to understand me and work with me?
+- Have you seen a product or initiative at another company recently and thought to yourself, ‘I wish we’d done that’?
+- What vibrations (news, rumors, dynamics) are you picking up that you think I should know about?
+- What’s our biggest oversight, and how do we resolve it?
+- What do you feel is our biggest risk right now?
+- What was the most useful part of our conversation today?
+- - What are you worried about right now?
+
+**BUILDING RELATIONSHIPS**
+
+- How’s life?
+- What’s going on for you these days outside of work?
+- What is something you’ve done that you’re proud of?
+- What was something you were scared of as a child? Have you overcome it?
+- What fictional character do you most identify with?
+- Would you rather be known or unknown? Why?
+- What hot topic usually turns into an argument for you?
+- Do you have a motto or personal mantra?
+- What’s on your bucket list?
+
+**TRANSITION AND CHANGE QUESTIONS**
+
+- Imagine it’s two years from now, and things have gone well: What has been your role in that? What does your role look like?
+- What are you worried might happen if you made this transition?
+- What will happen if you don’t take this step?
+- What would need to change for you to get to a point of “let’s do this” or “I don’t want this”? What information do you need?
+
+**TEAM DYNAMICS**
+
+- How would you say we’re doing at working together as a team? What makes you say that?
+- What do you think the rest of the team is most concerned about? (People may also share what they are personally concerned about; this framing makes it easier to share.)
+- Who on the team is doing really well right now? (Also listen for names that don’t come up.)
+
+**WELL-BEING**
+
+- Are there any decisions you’re hung up on?
+- I’ve noticed you’re a little quieter than usual. Is there anything you’d like to talk about?
+- Do you feel stretched thin? (This wording is useful to measure subjective stress, not objective workload.)
+- What, if anything, did you used to do that you find you don’t have time for right now?
+- What is your takeaway from this discussion? (This is especially helpful to get to action steps from a thorny issue.)
+- In our last one-on-one you mentioned you were frustrated by X and wanted to try Y as a solution. How has that been going?
+- During this meeting you’ve mentioned that you’d like to pursue X. What steps can you take toward that before our next one-on-one?
+- What could we change about work that would improve the rest of your life?
+
+**CONFLICT RESOLUTION**
+
+- What does your ideal outcome look like? (Could be about a specific conflict that’s come up, or approached hypothetically.)
+- What’s hard for you in getting to that outcome?
+- What do you really care about?
+- What’s the worst-case scenario you’re worried about?
+
+**GETTING DEEPER**
+
+- Are you afraid of anything at work?
+- I’ve noticed that our last several one-on-ones have stayed pretty surface. What are your honest impressions of this meeting? What could we be doing differently or better?
+- What’s something you used to strongly believe in that you no longer do today?
+- Before making a telephone call, do you ever rehearse what you are going to say? Why?
+- What are three things you and I appear to have in common?
+- What do you feel most grateful for in your life?
+- Take four minutes and tell me your life story in as much detail as possible.
+- If you could wake up tomorrow having gained any one quality or ability, what would it be?
+- Is there something that you’ve dreamed of doing for a long time? Why haven’t you done it?
+- What do you value most in a friendship?
+- What, if anything, is too serious to be joked about?
 
 ### Great books
 
