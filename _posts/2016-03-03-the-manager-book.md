@@ -40,7 +40,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [What is your ideal culture?](#what-is-your-ideal-culture)
     - [How do you make a good culture?](#how-do-you-make-a-good-culture)
     - [How do you handle Remote Work?](#how-do-you-handle-remote-work)
-    - [How do you think about work life balance](#how-do-you-think-about-work-life-balance)
+    - [What about Work Life Balance](#what-about-work-life-balance)
     - [How you deal with team disagrees with the leadership](#how-you-deal-with-team-disagrees-with-the-leadership)
     - [Agency and Psychological Safety](#agency-and-psychological-safety)
 - [Process and Mechanism](#process-and-mechanism)
@@ -437,12 +437,16 @@ Engineers that are interested in reading this post make good manager candidates.
 
 ### What is your ideal culture?
 
+Tough question. I need to think through that
+
 - Team gelled, and always helping and growing each other
 - Continuous improvement, with very open feedback, and desire to improve.
-- Ship as frequently as possible
-- Nice people
+- Test cheaply, early and often.
+- Ship as frequently as possible.
 - Always paying down technical debt
-- I hate the term "bring solutions not problems", it encourages people to freeze. Instead - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
+- I hate the term "bring solutions not probems", it encourages people to freeze. Instead - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
+- Never be blocked
+- Imagine Executed Sustainably
 
 ### How do you make a good culture?
 
@@ -463,11 +467,15 @@ Engineers that are interested in reading this post make good manager candidates.
 
 I'm writing this stuff [my rough outline](/remote-work)
 
-### How do you think about work life balance
+### What about Work Life Balance
 
-I think it's very important. From my [manifesto](https://bit.ly/igor-wlb-manifesto):
+Work Life Balance is so important to me that I wrote a [manifesto](https://bit.ly/igor-wlb-manifesto) - the opening paragraph:
 
 _I don't want to die knowing I spent too much time at work and I bet you don't either. As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders needs to walk the talk, and I'll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance._
+
+In the rare event you do want to die knowing you spent too much time at work, try to remember more hours rarely helps. In XKCD format:
+
+{%include blob_image.html src="productivity_graph.png" %}
 
 ### How you deal with team disagrees with the leadership
 
