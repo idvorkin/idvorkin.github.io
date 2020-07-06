@@ -23,6 +23,7 @@ I'm also writing a "manager guidebook", much of this post is migrating to the [m
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+- [Management situations - Igor's book](#management-situations---igors-book)
 - [How will I measure my success?](#how-will-i-measure-my-success)
     - [Coach, empower, build inclusive and supportive culture](#coach-empower-build-inclusive-and-supportive-culture)
     - [Productive and results-oriented](#productive-and-results-oriented)
@@ -35,19 +36,21 @@ I'm also writing a "manager guidebook", much of this post is migrating to the [m
     - [Staying technical](#staying-technical)
     - [Hack-a-thons](#hack-a-thons)
     - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
-- [Management situations](#management-situations)
-    - [Performance Management and Career Planning](#performance-management-and-career-planning)
-    - [Coaching for job changes](#coaching-for-job-changes)
-    - [Hiring and Recruiting](#hiring-and-recruiting)
-    - [Goal setting](#goal-setting)
     - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
-    - [Execution tracking](#execution-tracking)
 - [Igors Super Powers](#igors-super-powers)
     - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+## Management situations - Igor's book
+
+Management is a very broad topic. So broad I'm creating [Igor's book of manager](/the-manager-book). From the back cover:
+
+_Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement._
+
+There's a lot of duplication between this post and the manager book. Content is slowly migrating to the book. I'm deciding what should be in this post, and what in the other.
 
 ## How will I measure my success?
 
@@ -125,39 +128,6 @@ _This is answered directly in Igor's [book of management](/the-manager-book)_
 - Team music videos
 - Engineering peak moments
 
-## Management situations
-
-As a manager, you'll run into these situations. Each company and team has their own culture around these situations, and I'll enumerate things I've learned for them.
-
-### Performance Management and Career Planning
-
-- Stack ranking/OLR
-- Managing out
-- Delivering Performance reviews (Amazon Forte/Microsoft Connect)
-- Career Planning
-- Strategic Planning
-- Promotions
-  - Amazon promo trackers
-
-### Coaching for job changes
-
-- Preparing folks for [job hunting stress](/job-hunt-stress)
-- Determining [compensation](/comp)
-
-### Hiring and Recruiting
-
-- Interviewing best practices - External
-  - Feed forward interview loops
-  - Feedback interviewers
-  - Bar raiser, as appropriate
-  - Initial [compensation](/comp) reasoning.
-- Interviewing best practices - Internal
-- Building culture
-
-### Goal setting
-
-tbd
-
 ### Establishing Process, Project Lifecycle, and Artifacts
 
 Some teams have these things well defined and running smoothly, other teams (seems to be most) need help building out these mechanisims
@@ -174,10 +144,6 @@ Some teams have these things well defined and running smoothly, other teams (see
 - Project LifeCycle Documents/Meetings
   - Requirements Review - Design (p)review - Test Plan Review - Operations/Launch Review/Pre-Morten - Bug Bash
 
-### Execution tracking
-
-tbd
-
 ## Igors Super Powers
 
 ### Why do people think Igor is a good coach?
@@ -190,5 +156,3 @@ Someone once asked my why I'm a good coach, took me a while, here's what I came 
 - I actively study and practice [coaching](/coach) and effective [decision making](/decide)
 
 ## Other Resources
-
-To collect my thoughts, I'm writing a [book of manager](/the-manager-book) which is full of manager resources.
