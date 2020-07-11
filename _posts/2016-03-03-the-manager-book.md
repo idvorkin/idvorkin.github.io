@@ -46,14 +46,15 @@ This post uses the word manager, but the majority of topics are applicable all s
 - [Process and Mechanism](#process-and-mechanism)
     - [Theory of Process](#theory-of-process)
     - [Never have a human do what a computer can do.](#never-have-a-human-do-what-a-computer-can-do)
-    - [Cohesion - Work streams](#cohesion---work-streams)
     - [Rich communication - Team meeting](#rich-communication---team-meeting)
     - [Continuous Learning - Deep Dives, Knowledge Transfer and Guest Speakers](#continuous-learning---deep-dives-knowledge-transfer-and-guest-speakers)
     - [Engineering Excellence - Operational Review and Correction of Errors](#engineering-excellence---operational-review-and-correction-of-errors)
     - [Data Driven - Customer and Business Metric Reviews](#data-driven---customer-and-business-metric-reviews)
     - [Continuous Improvement - Retrospectives](#continuous-improvement---retrospectives)
     - [Quality and Technical Growth Design+Arch Reviews](#quality-and-technical-growth-designarch-reviews)
-    - [Defining Success - Goal Setting, KPIs, OKRs, SLOs](#defining-success---goal-setting-kpis-okrs-slos)
+    - [Defining Success - How does goal setting work](#defining-success---how-does-goal-setting-work)
+    - [How do you do planning?](#how-do-you-do-planning)
+    - [How does resource allocation work?](#how-does-resource-allocation-work)
     - [Group Bonding](#group-bonding)
 - [Hiring](#hiring)
     - [What are you looking for when you recruit?](#what-are-you-looking-for-when-you-recruit)
@@ -524,8 +525,6 @@ Thoughts:
 - Automated tests vs human execution
 - Multiple copies of the same data
 
-### Cohesion - Work streams
-
 ### Rich communication - Team meeting
 
 ### Continuous Learning - Deep Dives, Knowledge Transfer and Guest Speakers
@@ -568,7 +567,27 @@ Also need to review all outages
 - Catch stuff as early as possible
 - Get developers used to being on the whiteboard
 
-### Defining Success - Goal Setting, KPIs, OKRs, SLOs
+### Defining Success - How does goal setting work
+
+This is usually a top down business strategy intersected with a bottom up execution recommendation.
+
+### How do you do planning?
+
+5 step process 1. Define Tracks 1. Find "boulders" in each track 1. Break boulders into projects, cost and analyze and order by ROI 1. Determine cut lines 1. Resource allocate 1. Execute
+
+The only time when the 5 step process should occur simultaneously across all tracks is when a team is forming, or taking a major pivot. At all other times this series of steps should be occurring continuously and asynchronously.
+
+[TODO Picture]
+
+### How does resource allocation work?
+
+Resource allocation is maximizing the intersection in the Venn diagram - "Personal Preference", "Business Need" and "Ability to Succeed" for the business, team and individuals.
+
+[TODO Picture]
+
+The success metric for a manager is supporting the team so that they know the constraints, and can self organize to maximize the business, team and individual Venn diagram coverage.
+
+This process gets harder then it sounds based on the state and ambiguity of the tracks, balancing juniors and seniors, career development desires, and future hires and business ambiguity and reorgs.
 
 ### Group Bonding
 
