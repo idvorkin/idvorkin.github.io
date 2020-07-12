@@ -477,7 +477,7 @@ _I don't want to die knowing I spent too much time at work and I bet you don't e
 
 In the rare event you do want to die knowing you spent too much time at work, try to remember more hours rarely helps. In XKCD format:
 
-{%include blob_image.html src="productivity_graph.png" %}
+{%include mpl_render.html name="productivity" %}
 
 ### How you deal with team disagrees with the leadership
 
