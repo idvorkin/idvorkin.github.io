@@ -77,10 +77,10 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
     - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
 - [Personal Motivations](#personal-motivations)
-    - [Why is management attractive to you?](#why-is-management-attractive-to-you)
-    - [What is your dream job?](#what-is-your-dream-job)
-    - [What is your career aspiration?](#what-is-your-career-aspiration)
-    - [Why do you think you are a good coach?](#why-do-you-think-you-are-a-good-coach)
+    - [Why is management attractive to Igor?](#why-is-management-attractive-to-igor)
+    - [What is Igor's dream job?](#what-is-igors-dream-job)
+    - [What is Igor's career aspiration?](#what-is-igors-career-aspiration)
+    - [Why do you think Igor is a good coach?](#why-do-you-think-igor-is-a-good-coach)
     - [What if managers memorize these answers for interviews.](#what-if-managers-memorize-these-answers-for-interviews)
 - [Business Acumen and Strategy](#business-acumen-and-strategy)
     - [The Four](#the-four)
@@ -841,7 +841,7 @@ Hopefully, early in your hiring process you've been thinking about your charter.
 
 I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I"m being consistent between my actions and motivations.
 
-### Why is management attractive to you?
+### Why is management attractive to Igor?
 
 Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years.
 
@@ -857,8 +857,6 @@ Lastly, I love understanding what is going on, coming up with win/win solutions,
 
 _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, so inspiring, so powerful we still feel it 3 years after you left the team._
 
-And most
-
 <!--
 
 - Skill, clarifying, building consensus, sharing the story and meaning.
@@ -868,19 +866,19 @@ And most
 - On top of best practices
 -->
 
-### What is your dream job?
+### What is Igor's dream job?
 
 A preview of [my dream job](/job):
 
 _Jobs have many dimensions and I'll describe my dream job in several dimensions. In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office._
 
-### What is your career aspiration?
+### What is Igor's career aspiration?
 
 A preview of [I want to be the best boss my peeps have ever had](/being-a-great-manager)
 
 _I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best._
 
-### Why do you think you are a good coach?
+### Why do you think Igor is a good coach?
 
 When I explained to someone coaching it the most important aspect of management, they asked why I thought I was a good coach. Took me a while to answer, but here you go:
 
@@ -1046,10 +1044,10 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 
 ### Laws to remember
 
-**Goodhart's Law** - A metric can be used to measure reality, or to flog people, but not both (humans optimize to be rewarded)
-**Conway's Law** - Software will ship to match an org chart (humans optimize for communication cost)
-**Parker Principle** - Work (or money) will expand to fill the time available.
-**Peter Principle** - People will rise till they become incompetent
+- **Goodhart's Law** - A metric can be used to measure reality, or to flog people, but not both (humans optimize to be rewarded)
+- **Conway's Law** - Software will ship to match an org chart (humans optimize for communication cost)
+- **Parker Principle** - Work (or money) will expand to fill the time available.
+- **Peter Principle** - People will rise till they become incompetent
 
 ### Great Videos
 
