@@ -352,15 +352,14 @@ In programming terms the 1:1 is a debugger attached catch all exception handler.
 
 ### What do you do in 1:1s
 
-My normal 1:1's start with "What's on your mind", I focus on asking ([coaching questions](/coaching)) and end with "what can I do immediately to help you?"
+My favorite opening is "What's on your mind", then I focus on asking ([coaching questions](/coaching)) and end with "what can I do immediately to help you?"
 
-I also push hard for awkward conversations. When my peeps have nothing to talk about I push for my [favorite prompts](#1-on-1-prompts)
+I push for awkward conversations. When my peeps have nothing to talk about I ask some of my [favorite prompts](#1-on-1-prompts)
 
-A few things I don't want:
+A few things I don't do:
 
-**No public status reports** I discourage using 1:1 to share the public news and weather "status report" - we can read that offline ourselves. A valuable use of time is the "inner and private stories" on the status - What is hard, what is most fun, where do you want to improve?
-
-**No deep dives when I could just do offline homework** I think 1:1 off the cuff deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say can I get a TL;DR and "how would I go about learning X,Y or Z"? If the answer is "ask me", I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an aysnc discussion which captures Q&A in a durable form. Once we've done the easy discussion in the doc, we review the doc together with more complex questions, and more private context, and coaching.
+- **No public status reports** I discourage using 1:1 to share the public news and weather "status report" - we can read that offline ourselves. A valuable use of time is the "inner and private stories" on the status - What is hard, what is most fun, where do you want to improve?
+- **No deep dives when I could just do offline homework** I think 1:1 off the cuff deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say can I get a TL;DR and "how would I go about learning X,Y or Z"? If the answer is "ask me", I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an aysnc discussion which captures Q&A in a durable form. Once we've done the easy discussion in the doc, we review the doc together with more complex questions, and more private context, and coaching.
 
 <!--
 
@@ -371,10 +370,10 @@ A few things I don't want:
 
 I have less frequent, but extremely important 1:1 types like:
 
-- Career discussions - A discussion around what we should be focused on for the next 6-18 months.
-- Promo preparation meetings - to help ensure we're on the same page about what needs to happen for a promo.
-- Performance Review Feedback
-- Leadership card evaluation exercise (so good, needs its own post)
+- **Career discussions** A discussion around what we should be focused on for the next 6-18 months.
+- **Promo preparation meetings** - Help ensure we're on the same page about what needs to happen for career trajectory and promo.
+- **Performance Review Feedback**
+- **Leadership card evaluation exercise** (so good, needs its own post)
 
 Other thoughts:
 
@@ -1106,7 +1105,7 @@ Talk about emotions. Label one you’re feeling, or what you sense from other pe
 
 **SEEKING FEEDBACK**
 
-To get some deep feedback, use the prompts in getting extra honest feedback.
+_To get some deep feedback, use the prompts in getting extra honest feedback._
 
 Or ask the more boring questions
 
