@@ -314,25 +314,28 @@ Some moments like:
 
 ### How do you give challenging feedback
 
-Why is feedback challenging? 1) It's a surprise 2) They don't want to hear it 3) They don't think you have their best interests in mind.
+Why is feedback challenging?
+
+1. It's a surprise
+2. Folks don't want to hear it
+3. Folks don't think you have their best interests in mind.
 
 Deep diving on what makes conversations hard:
 
 1. Surprise - see around corners, and bring up anything I see ASAP, and foreshadow. Meet frequently, know what people care about.
-2. Attack the messenger - High Trust, Know how the person likes to hear stuff. Address what they care about.
+2. Attack the messenger - High Trust, Know how and when the person likes to hear stuff. Address what they care about.
 3. Don't want to hear it - Self Aware, Think I have their best interest in mind, Put it in terms they want to hear it.
 4. Over dramatize - Anticipate what they'll care about, pre-address.
 
 Types of tough conversations to flesh out:
 
-Performance, Charter, Re-org (me leaving), Lay Offs.
+Performance, Charter, Re-org, Team mates leaving, Lay Offs.
 
 ### What's the point of 1:1s
 
-1:1's are the highest ROI activity and the most expensive. They take 100% of both parties attention in a non-scalable manner. At the same time
+1:1's are the highest ROI activity and the most expensive. They take 100% of both parties attention in a non-scalable manner. At the same time:
 
-- If 1:1s gives an average 0.25% performance improvement, how much value is there?
-  - 12% per year, 300% in ten years.
+- If 1:1s gives an average 0.25% performance improvement, how much value is there? **12% per year, 300% in ten years.**
 - If there isn't a forum for discussion, many concerns and bottlenecks will be ignored.
   - Ignored concerns and bottlenecks are lost opportunities in the best case, inefficiency in the median case, and catastrophe in the worst case.
   - Using an exception handler analogy, the default exception handler is ignore all, and we know how that works out.
@@ -353,15 +356,18 @@ My normal 1:1's start with "What's on your mind", I focus on asking ([coaching q
 
 I also push hard for awkward conversations. When my peeps have nothing to talk about I push for my [favorite prompts](#1-on-1-prompts)
 
-A few things you didn't see me say: status reporting, off the cuff deep dives, and giving and requesting feedback:
+A few things I don't want:
 
-**The status report** I discourage using 1:1 to share the public news and weather "status report" - we can read that offline ourselves. A valuable use of time is the "inner and private stories" on the status - What is hard, what is most fun, where do you want to improve?
+**No public status reports** I discourage using 1:1 to share the public news and weather "status report" - we can read that offline ourselves. A valuable use of time is the "inner and private stories" on the status - What is hard, what is most fun, where do you want to improve?
 
-**Off the cuff deep dives** I think 1:1 off the cuff deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say hey, "how would I go about learning X,Y or Z"? If the answer is only ask me, I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an aysnc discussion and Q&A on paper. Once we've done the easy discussion, we review the doc together with more complex questions, more private context, and coaching.
+**No deep dives when I could just do offline homework** I think 1:1 off the cuff deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say can I get a TL;DR and "how would I go about learning X,Y or Z"? If the answer is "ask me", I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an aysnc discussion which captures Q&A in a durable form. Once we've done the easy discussion in the doc, we review the doc together with more complex questions, and more private context, and coaching.
+
+<!--
 
 **Giving Feedback** Lots of contextual feedback can be given in "coaching moments" as soon as you've observed things. Other feedback is best delivered through follow up questions during the "what's on your mind" induced discussions.
 
 **Getting Feedback** I try not to 'spend' my peeps 1:1 time, but I will both ask them generic feedback - what do you think I should stop/continue doing? And specific feedback - I'm thinking of X,Y,Z what's your reaction? Or, I did X,Y,Z last week, what did you observe?
+-->
 
 I have less frequent, but extremely important 1:1 types like:
 
@@ -575,7 +581,14 @@ This is usually a top down business strategy intersected with a bottom up execut
 
 ### How do you do planning?
 
-5 step process 1. Define Tracks 1. Find "boulders" in each track 1. Break boulders into projects, cost and analyze and order by ROI 1. Determine cut lines 1. Resource allocate 1. Execute
+6 step process
+
+1. Define Tracks
+1. Find "boulders" in each track
+1. Break boulders into projects, cost and analyze and order by ROI
+1. Determine cut lines
+1. Resource allocate
+1. Execute (It's 1% inspiration and 99% percperation)
 
 The only time when the 5 step process should occur simultaneously across all tracks is when a team is forming, or taking a major pivot. At all other times this series of steps should be occurring continuously and asynchronously.
 
@@ -585,7 +598,7 @@ The only time when the 5 step process should occur simultaneously across all tra
 
 Resource allocation is maximizing the intersection in the Venn diagram - "Personal Preference", "Business Need" and "Ability to Succeed" for the business, team and individuals.
 
-[TODO Picture]
+{%include mpl_render.html name="what-to-work-on" %}
 
 The success metric for a manager is supporting the team so that they know the constraints, and can self organize to maximize the business, team and individual Venn diagram coverage.
 
