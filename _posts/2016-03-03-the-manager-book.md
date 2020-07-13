@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Igor's Book of Management"
-date: "2016-03-05 00:56:07 +0000"
+date: "2019-11-05 00:56:07 +0000"
 tags:
   - manager
 redirect_from:
