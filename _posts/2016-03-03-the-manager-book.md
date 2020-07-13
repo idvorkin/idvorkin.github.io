@@ -30,7 +30,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [How do you give challenging feedback](#how-do-you-give-challenging-feedback)
-    - [What's your thinking around 1:1s](#whats-your-thinking-around-11s)
+    - [What's the point of 1:1s](#whats-the-point-of-11s)
     - [What do you do in 1:1s](#what-do-you-do-in-11s)
     - [How do you handle communication problems?](#how-do-you-handle-communication-problems)
     - [How do you handle promotion preparation (and fever)?](#how-do-you-handle-promotion-preparation-and-fever)
@@ -327,7 +327,7 @@ Types of tough conversations to flesh out:
 
 Performance, Charter, Re-org (me leaving), Lay Offs.
 
-### What's your thinking around 1:1s
+### What's the point of 1:1s
 
 1:1's are the highest ROI activity and the most expensive. They take 100% of both parties attention in a non-scalable manner. At the same time
 
@@ -349,9 +349,11 @@ In programming terms the 1:1 is a debugger attached catch all exception handler.
 
 ### What do you do in 1:1s
 
-My default 1:1's start with "What's on your mind", I focus on asking ([coaching questions](/coaching)) and end with "what can I do immediately to help you?"
+My normal 1:1's start with "What's on your mind", I focus on asking ([coaching questions](/coaching)) and end with "what can I do immediately to help you?"
 
-A few things you didn't see me say: status reporting, off the cuff deep dives, and giving and requesting feedback.
+I also push hard for awkward conversations. When my peeps have nothing to talk about I push for my [favorite prompts](#1-on-1-prompts)
+
+A few things you didn't see me say: status reporting, off the cuff deep dives, and giving and requesting feedback:
 
 **The status report** I discourage using 1:1 to share the public news and weather "status report" - we can read that offline ourselves. A valuable use of time is the "inner and private stories" on the status - What is hard, what is most fun, where do you want to improve?
 
@@ -1044,7 +1046,34 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 
 ### 1 on 1 Prompts
 
-From Halloway's remote management guide
+_From the [awkward 1:1](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) and Holloway's remote management guide_
+
+**Give extra honest feedback (All the time)**
+
+- Are they acting like the best manager / report / partner you could wish for? Are you? Why or why not? Discuss.
+- What have you already told someone else about this person (or heard others say)? Share with them. Discuss.
+- What is everyone around neglecting to tell this person?
+- What’s the work equivalent of this person having food stuck in their teeth? Be a good friend / coworker and tell them.
+
+**Get extra honest feedback (All the time)**
+
+Remember skip the fluffy answer and ask again until you get something real.
+
+- Tell them a growth area you’re working on currently. Tell them why you picked it (even if it was one of those “not-really-optional” ones!).
+- Ask for advice.
+- Check for your own role in a weird situation.
+- Pick a thing you've recently complained about. Ask them — “What could I've done differently in that situation?” Ask for feedback on how to be better.
+- Admit a fault or a mistake. Ask for support and advice. Ask them if they noticed you making it or not.
+
+**Meta & Feelings (Occasional)**
+
+Talk about emotions. Label one you’re feeling, or what you sense from other person. Boom, instant awkward and great discussion.
+
+- Any meta-conversation about your conversations.
+- We never talk about Topic A, we just always talk Topic B. Why is that?
+- When I tell you about Topic A, you always react like this, and that’s why I don’t tell you that stuff. When I bring up Topic B, how do you feel? Why is that?
+- Ask for their fears. What are they afraid of (for their career, the project, an upcoming tough meeting)? Why? Share your own.
+- Trust check. How easy is it for both of you to share intimate things with each other? Why? What would make it easier? Discuss.
 
 **CAREER**
 
@@ -1064,6 +1093,10 @@ From Halloway's remote management guide
 
 **SEEKING FEEDBACK**
 
+To get some deep feedback, use the prompts in getting extra honest feedback.
+
+Or ask the more boring questions
+
 - Would you like more or less direction from me?
 - Would you like more or less feedback on your work? If more, what additional feedback would you like?
 - If you were coaching me to have a greater positive impact, what would you tell me?
@@ -1073,13 +1106,13 @@ From Halloway's remote management guide
 - What’s our biggest oversight, and how do we resolve it?
 - What do you feel is our biggest risk right now?
 - What was the most useful part of our conversation today?
-- - What are you worried about right now?
+- What are you worried about right now?
 
 **BUILDING RELATIONSHIPS**
 
 - How’s life?
 - What’s going on for you these days outside of work?
-- What is something you’ve done that you’re proud of?
+- What is something you've done that you’re proud of?
 - What was something you were scared of as a child? Have you overcome it?
 - What fictional character do you most identify with?
 - Would you rather be known or unknown? Why?
@@ -1103,12 +1136,12 @@ From Halloway's remote management guide
 **WELL-BEING**
 
 - Are there any decisions you’re hung up on?
-- I’ve noticed you’re a little quieter than usual. Is there anything you’d like to talk about?
+- I've noticed you’re a little quieter than usual. Is there anything you’d like to talk about?
 - Do you feel stretched thin? (This wording is useful to measure subjective stress, not objective workload.)
 - What, if anything, did you used to do that you find you don’t have time for right now?
 - What is your takeaway from this discussion? (This is especially helpful to get to action steps from a thorny issue.)
 - In our last one-on-one you mentioned you were frustrated by X and wanted to try Y as a solution. How has that been going?
-- During this meeting you’ve mentioned that you’d like to pursue X. What steps can you take toward that before our next one-on-one?
+- During this meeting you've mentioned that you’d like to pursue X. What steps can you take toward that before our next one-on-one?
 - What could we change about work that would improve the rest of your life?
 
 **CONFLICT RESOLUTION**
@@ -1121,14 +1154,14 @@ From Halloway's remote management guide
 **GETTING DEEPER**
 
 - Are you afraid of anything at work?
-- I’ve noticed that our last several one-on-ones have stayed pretty surface. What are your honest impressions of this meeting? What could we be doing differently or better?
+- I've noticed that our last several one-on-ones have stayed pretty surface. What are your honest impressions of this meeting? What could we be doing differently or better?
 - What’s something you used to strongly believe in that you no longer do today?
 - Before making a telephone call, do you ever rehearse what you are going to say? Why?
 - What are three things you and I appear to have in common?
 - What do you feel most grateful for in your life?
 - Take four minutes and tell me your life story in as much detail as possible.
 - If you could wake up tomorrow having gained any one quality or ability, what would it be?
-- Is there something that you’ve dreamed of doing for a long time? Why haven’t you done it?
+- Is there something that you've dreamed of doing for a long time? Why haven’t you done it?
 - What do you value most in a friendship?
 - What, if anything, is too serious to be joked about?
 
