@@ -231,25 +231,25 @@ _Coaching is like midwifery. A midwife can not give birth to the baby, she facil
 
 Depends on the skill level (Eg. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
 
-| Level        | Approach                                                                                                                                                                                                                                                                                                                                                                         |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Junior       | Not a lot of variance. Have a rubric for junior SDE skills and make sure they are getting the opportunity to learn and execute each box. Make sure they have a solid mentor, and opportunity after opportunity to round out their knowledge.                                                                                                                                     |
-| Intermediate | Now it's about how are you helping the team, growing your contributions. Bigger experiences, maybe out side the org, both to build your skills, and increase your org visibility. Double down on super powers, close red flags and blockers. Very satisfying to watch people "blossom" into leaders.                                                                             |
-| Senior/Staff | Here you're getting people are at a career level and are happy with a lot of what they're doing. Here they're deciding how much they want to grow, and where they want to improve. Here it's discussing with mentors, and how we want to split responsibility and cover each other. Also opportunities for what they own for the group (30-60+) e.g. security or process or etc. |
+| Level        | Approach                                                                                                                                                                                                                                                                                                                                                                              |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Junior       | Not a lot of variance. Have a rubric for junior SDE skills and make sure they are getting the opportunity to learn and execute each box. Make sure they have a solid mentor, and opportunity after opportunity to round out their knowledge.                                                                                                                                          |
+| Intermediate | Now it's about how are you helping the team, growing your contributions. Bigger experiences, maybe out side the org, both to build your skills, and increase your org visibility. Double down on super powers, close red flags and blockers. Very satisfying to watch people "blossom" into leaders.                                                                                  |
+| Senior/Staff | Here you're getting people that are at a career level and are happy with a lot of what they're doing. Now it's helping folks decide how much they want to grow, and where they want to improve. Here it's finding mentors, and how we want to split responsibility and cover each other. Also opportunities for what they own for the group (30-60+) e.g. security or process or etc. |
 
 My approach, and frequent peep questions.
 
-| Level        | Approach   |
-| ------------ | ---------- |
-| Junior       | [l10](l10) |
-| Intermediate | [l11](l11) |
-| Senior/Staff | [l12](l12) |
+| Level        | Things I repeat and repeat |
+| ------------ | -------------------------- |
+| Junior       | [l10](l10)                 |
+| Intermediate | [l11](l11)                 |
+| Senior/Staff | [l12](l12)                 |
 
 - l10
-- You help them close gaps, sharpen their understanding by teaching it to you
 - We hired you because you're smart+really good. If you can't understand something, it's probably the presenter doesn't understand it well, as opposed to you not understanding.
 - You are new, and need to learn and need to spend a bunch of time asking for help and guidance. I have one rule - you must come with a bad idea (which will start becoming good ideas). You fail when you bring nothing, you ace it when you bring a bad idea. We'll help you develop that bad idea, and help sharpen your thinking skill.
 - "You have a fresh perspective - If something doesn't make sense ask, for us, we're like fish in water, so challenge our assumptions".
+- I'm here to help you close gaps, sharpen their understanding by teaching it to you
 
 <div> </div>
 - l11
@@ -595,13 +595,21 @@ The only time when the 5 step process should occur simultaneously across all tra
 
 ### How does resource allocation work?
 
-Resource allocation is maximizing the intersection in the Venn diagram - "Personal Preference", "Business Need" and "Ability to Succeed" for the business, team and individuals.
+Resource allocation is maximizing the intersection in the Venn diagram - "Personal Preference", "Business Need" and "Probability of Success" for the business, team and individuals.
 
-{%include mpl_render.html name="what-to-work-on" %}
+{%include mpl_render_float_right.html name="what-to-work-on" %}
 
 The success metric for a manager is supporting the team so that they know the constraints, and can self organize to maximize the business, team and individual Venn diagram coverage.
 
 This process gets harder then it sounds based on the state and ambiguity of the tracks, balancing juniors and seniors, career development desires, and future hires and business ambiguity and reorgs.
+
+There are some more concepts I need to flesh out:
+
+Personal growth and career development - People should strive for projects that stretch them and make them grow. This is always a business priority (to make the team better), and usually a personal preference. There are times when people have other things going on, and don't want to grow, and that must be honored at a high priority.
+
+- Opportunity cost - If a senior developer is doing something a junior developer is doing, then you have turned your senior developer into a junior developer and no-one is doing the work of a senior developer. This is also why teams need a blend of junior, intermediate and senior developers.
+- Right sizing projects, and support - When people are growing, stuff is going to be hard, and it's important they don't take on more then they can chew (see ability to succeed", even when the project is the right size, it's important the person has the dynamic support and mentorship they need.
+- Keeping slack in the system - Anxiety is the difference between reality and expectations. Slack is the tool that helps us better model reality.
 
 ### Group Bonding
 
