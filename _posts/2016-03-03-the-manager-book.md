@@ -355,11 +355,10 @@ In programming terms the 1:1 is a debugger attached catch all exception handler.
 My favorite opening is "What's on your mind", then I focus on asking ([coaching questions](/coaching)) and end with "what can I do immediately to help you?"
 
 I push for awkward conversations. When my peeps have nothing to talk about I ask some of my [favorite prompts](#1-on-1-prompts)
-
 A few things I don't do:
 
 - **No public status reports** I discourage using 1:1 to share the public news and weather "status report" - we can read that offline ourselves. A valuable use of time is the "inner and private stories" on the status - What is hard, what is most fun, where do you want to improve?
-- **No deep dives when I could just do offline homework** I think 1:1 off the cuff deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say can I get a TL;DR and "how would I go about learning X,Y or Z"? If the answer is "ask me", I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an aysnc discussion which captures Q&A in a durable form. Once we've done the easy discussion in the doc, we review the doc together with more complex questions, and more private context, and coaching.
+- **No deep dives when I could just do offline homework** I think 1:1 off the cuff deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say can I get a TL;DR and "How would I go about learning X,Y or Z"? If the answer is "ask me", I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an aysnc discussion which captures Q&A in a durable form. Once we've done the easy async discussion in the doc, we review the comments together with more complex questions, and more private context, and more discussion.
 
 <!--
 
