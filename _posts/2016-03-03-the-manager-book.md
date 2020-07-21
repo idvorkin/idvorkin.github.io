@@ -335,10 +335,8 @@ Performance, Charter, Re-org, Team mates leaving, Lay Offs.
 
 1:1's are the highest ROI activity and the most expensive. They take 100% of both parties attention in a non-scalable manner. At the same time:
 
-- If 1:1s gives an average 0.25% performance improvement, how much value is there? **12% per year, 300% in ten years.**
-- If there isn't a forum for discussion, many concerns and bottlenecks will be ignored.
-  - Ignored concerns and bottlenecks are lost opportunities in the best case, inefficiency in the median case, and catastrophe in the worst case.
-  - Using an exception handler analogy, the default exception handler is ignore all, and we know how that works out.
+- If on average 1:1s gives an 0.25% performance improvement, you get a 12% per performance improvement per year, which equates to 300% in ten years.
+- If there isn't a forum for discussion, many concerns and bottlenecks will be ignored. Those ignored concerns and bottlenecks are lost opportunities in the best case, inefficiency in the median case, and catastrophe in the worst case. (Using an exception handler analogy, the default exception handler is ignore all, and we know how that works out)
 
 My goal for 1:1's is to:
 
@@ -348,7 +346,7 @@ My goal for 1:1's is to:
 - Have confidential, [awkward discussions](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) ([part 2](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c))
 - Allow others to express emotions and let off steam in a safe space
 
-In programming terms the 1:1 is a debugger attached catch all exception handler. This allow all concerns to be discussed, understood, rethrown, reprogrammed or ignored. (OK, maybe the analogy needs work, but I think it's got legs).
+(Again with that programming analogy, the 1:1 is a debugger attached catch all exception handler. This allow all concerns to be discussed, understood, rethrown, reprogrammed or ignored. I know - the analogy needs work, help me make it better)
 
 ### What do you do in 1:1s
 
