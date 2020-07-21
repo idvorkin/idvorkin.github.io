@@ -16,8 +16,6 @@ redirect_from:
 Most of the tax information on the web is a mess. It's confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes
 
 <!-- prettier-ignore-start -->
-
-
 <!-- vim-markdown-toc GFM -->
 
 - [Assumptions and Hannah](#assumptions-and-hannah)
@@ -127,13 +125,24 @@ Even though you are using after tax dollars to transfer money to the Roth IRA, y
 
 ### No load index funds
 
-Funds with zero fees. Usually a broad index fund like Fidelity Zero FZROX and FZILX. Could be a Mutual Fund or ETF (but you don't care so long as it's no load and no fees).
+Funds with zero fees. Usually a broad index fund like Fidelity Zero FZROX and FZILX. Could be a Mutual Fund or ETF. So long as the fees are zero you tend not to care if it's a Mutual Fund or ETF, however the ETF has the advantage that you can sell at any point during the day, vs at the end of the day. However, given you're not timing the market this doesn't matter.
+
+If you prefer ETFs, consider VTI - which has a 0.03% fee, which is only 300\$ per 1,000,000
 
 ### Marginal vs Average Tax Rate
 
 Taxes are like a step function. From 0 - K1 you pay rate t1, From K1 - K2 you pay rate t2, etc. The marginal tax rate is how much tax you pay on every extra dollar make, E.g. the tax rate in the maximum step. By contrast, your average tax rate is the total taxes/total income, which can be significantly less then the marginal tax rate depending on how far over the step function you are.
 
 ### Short vs Long term capital gains
+
+Short term capital gains are the same as income, but long term capital gains (assets held longer then a year) are taxed at a lower rate:
+
+Below is tax rate by income in 2020.
+
+| Tax Rate | Married Filing Joiningly |
+| -------- | ------------------------ |
+| 15%      | Upto 488K                |
+| 20%      | Above 488K               |
 
 ### Cash positions and high yield savings.
 
