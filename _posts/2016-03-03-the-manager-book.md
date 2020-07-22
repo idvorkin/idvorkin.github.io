@@ -1043,7 +1043,7 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 
 - **Goodhart's Law** - A metric can be used to measure reality, or to flog people, but not both (humans optimize to be rewarded)
 - **Conway's Law** - Software will ship to match an org chart (humans optimize for communication cost)
-- **Parker Principle** - Work (or money) will expand to fill the time available.
+- **Parkinson's Law** - Work (or money) will expand to fill the time available.
 - **Peter Principle** - People will rise till they become incompetent
 
 ### Great Videos
