@@ -1045,6 +1045,8 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 - **Conway's Law** - Software will ship to match an org chart (humans optimize for communication cost)
 - **Parkinson's Law** - Work (or money) will expand to fill the time available.
 - **Peter Principle** - People will rise till they become incompetent
+- **Parkinsons Law of Triviality - (Bike Shedding)** Members of an organization give disproportionate weight to trivial issues. A nuclear power plant funding committee focus most time on how to paint the bike shed since it's easy, and they feel they are providing value
+- **Yak Shaving** - Not a law but a great term for when you go down the [rabbit hole](https://americanexpress.io/yak-shaving/) going several steps away from the task at hand (a common cause for the delay in Parkinson's Law)
 
 ### Great Videos
 
