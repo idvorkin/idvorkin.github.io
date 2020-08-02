@@ -901,6 +901,8 @@ The four is a fantastic book describing the value of the FANG companies.
 - Facebook is the heart
 - Apple is the sex drive
 
+{%include blob_image.html src="marketcap.png" %}
+
 ### Stratechary
 
 - Aggregator theory
