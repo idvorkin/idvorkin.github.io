@@ -52,6 +52,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
     - [Timing the markets](#timing-the-markets)
 - [Other questions](#other-questions)
+- [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -250,3 +251,7 @@ Remember:
 - If I have a pile of cash from selling RSUs, do I invest immediately or dollar cost average? -
 - Should I hold any bonds?
 - Where should I keep my emergency fund and how much?
+
+## Other Resources
+
+[Visualizing the worlds money](https://www.visualcapitalist.com/all-of-the-worlds-money-and-markets-in-one-visualization-2020/)
