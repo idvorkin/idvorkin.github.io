@@ -84,6 +84,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [What is Igor's career aspiration?](#what-is-igors-career-aspiration)
     - [Why do you think Igor is a good coach?](#why-do-you-think-igor-is-a-good-coach)
     - [Why do you prefer being a manager vs an IC.](#why-do-you-prefer-being-a-manager-vs-an-ic)
+    - [The road building analogy to software development roles.](#the-road-building-analogy-to-software-development-roles)
     - [What if managers memorize these answers for interviews.](#what-if-managers-memorize-these-answers-for-interviews)
 - [Business Acumen and Strategy](#business-acumen-and-strategy)
     - [The Four](#the-four)
@@ -921,6 +922,18 @@ I think as a manager, the day to day sucks. People problems, managing by spreads
 As an IC, it's almost backwards, the day to day is fun. Coding, design, debugging, even fire fighting an outage trying to get the site back up, it's very satisfying in the moment. But, as an IC, when you look at the softare you built, and you realize it's long depricated, and replaced by something better, it's a pretty meh feeling.
 
 So, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day to day joy of being an engineer.
+
+### The road building analogy to software development roles.
+
+Imagine we want to build a new road.
+
+1. Start of time: PM figures out there's a market for a road, and the needs of the customer, and comes up with a rough idea of where the road needs to be between.
+1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or soemwhere else as other folks have tried digging their, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper
+1. After: Senior Engineers come in and start figuring out where they'll build, what's the safest path, and what's a realistic schedule
+1. After: Intermeddiate dev's are assigned a small junk of the road and start building it.
+1. After: Junior devs are given very clear tasks, and start doing them
+
+At each stage of road productions things go wrong and we learn new stuff. TODO Come up with more examples
 
 ### What if managers memorize these answers for interviews.
 
