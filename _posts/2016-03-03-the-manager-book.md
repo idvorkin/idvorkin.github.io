@@ -81,6 +81,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [What is Igor's dream job?](#what-is-igors-dream-job)
     - [What is Igor's career aspiration?](#what-is-igors-career-aspiration)
     - [Why do you think Igor is a good coach?](#why-do-you-think-igor-is-a-good-coach)
+    - [Why do you prefer being a manager vs an IC.](#why-do-you-prefer-being-a-manager-vs-an-ic)
     - [What if managers memorize these answers for interviews.](#what-if-managers-memorize-these-answers-for-interviews)
 - [Business Acumen and Strategy](#business-acumen-and-strategy)
     - [The Four](#the-four)
@@ -883,6 +884,14 @@ When I explained to someone coaching it the most important aspect of management,
 - People are not 'resources', they are 3 dimensional humans, with [lives outside work](https://bit.ly/igor-wlb-manifesto), emotions(like [pride](/pride)), and desires.
 - I've read and digested slews of [self help books](/books) which while often mocked, are filled with great models.
 - I actively study and practice [coaching](/coach) and effective [decision making](/decide)
+
+### Why do you prefer being a manager vs an IC.
+
+I think as a manager, the day to day sucks. People problems, managing by spreadsheet, fire fighting, policy violations, etc. But, those days when you look at the team, and see them helping each other, and growing, and when you catch people after a few years and they tell you how impactful you were to their career, and how working on the team was the most fun they ever had - it feels superb.
+
+As an IC, it's almost backwards, the day to day is fun. Coding, design, debugging, even fire fighting an outage trying to get the site back up, it's very satisfying in the moment. But, as an IC, when you look at the softare you built, and you realize it's long depricated, and replaced by something better, it's a pretty meh feeling.
+
+So, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day to day joy of being an engineer.
 
 ### What if managers memorize these answers for interviews.
 
