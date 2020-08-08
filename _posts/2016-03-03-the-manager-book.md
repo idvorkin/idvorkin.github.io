@@ -38,6 +38,8 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [How did you grow top talent](#how-did-you-grow-top-talent)
 - [Culture](#culture)
     - [What is your ideal culture?](#what-is-your-ideal-culture)
+    - [How do you help a team gel](#how-do-you-help-a-team-gel)
+    - [What order would you intoduce culture](#what-order-would-you-intoduce-culture)
     - [How do you make a good culture?](#how-do-you-make-a-good-culture)
     - [How do you handle Remote Work?](#how-do-you-handle-remote-work)
     - [What about Work Life Balance](#what-about-work-life-balance)
@@ -454,6 +456,33 @@ Tough question. I need to think through that
 - I hate the term "bring solutions not probems", it encourages people to freeze. Instead - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
 - Never be blocked
 - Imagine Executed Sustainably
+
+### How do you help a team gel
+
+- Team lunches
+- Moral Events
+- Help people see each other as 3 dimensional humans - talk about personal stuff.
+- Encourage peopel to think of the team as an entity, and how to improve the team, not themselves.
+- Encourage people to vocalize their appreciation publicly
+- Encourage people to ask for help, and get help
+- Remind people it's intimidating to ask for help, and they can take a stand to make it happen.
+- Have the team focus on succcess of the team, ahead of personal success.
+- Encourage people to improve the team at every opportunity.
+
+### What order would you intoduce culture
+
+When I joined FB we were full remote, and started with only 1 30 min team meeting every 2 weeks.
+Here's what I worked with the team to esablish
+
+- 1 x week team meeting w/demos
+- 1 x week team meeting
+  - replaces 1x week demo and team meeting:
+- 2 x week stand up
+- 1 x week tech talk/deep dive
+  - deep dive sessions, guest speakers, TIL sesions
+- 1 x 2 week demos
+- 1 x 2 week retro
+- 3 x week lunch
 
 ### How do you make a good culture?
 
