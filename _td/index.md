@@ -38,6 +38,7 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
   - [jq](#jq)
   - [Pup - regexp For HTML](#pup---regexp-for-html)
 - [Cool shell tools](#cool-shell-tools)
+- [Process Monitoring](#process-monitoring)
 - [Natural Language Processing](#natural-language-processing)
 - [Azure One Liners](#azure-one-liners)
   - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
@@ -241,10 +242,15 @@ Combined with sed and xargs you can do some crazy stuff. In this below case I ta
 - Ngrok - Pipe ports to the internet web site (great for local host development on iOS)
 - [Bat](https://github.com/sharkdp/bat) - cat but with paging/git integration.
 - Pretty ping - Graphical Ping
+- [fd](https://github.com/sharkdp/fd) - Better find/recurse. (fd "regexp")
+
+### Process Monitoring
+
 - glances - Prettier Top
 - iftop - Network based top based on network connection
 - nethogs - Network based top based on process
-- [fd](https://github.com/sharkdp/fd) - Better find/recurse. (fd "regexp")
+- htop - Works everywhere
+- gotop - More graphical
 
 ### Natural Language Processing
 
