@@ -18,7 +18,7 @@ Job hunts are stressful, and my goal for job hunts is getting the job I want whi
 
 - [Before you start](#before-you-start)
 - [Stress and Mitigation](#stress-and-mitigation)
-- [Principles and Priorities](#principles-and-priorities)
+- [Priorities](#priorities)
 - [Learnings from my last job hunts](#learnings-from-my-last-job-hunts)
 
 <!-- vim-markdown-toc -->
@@ -70,24 +70,20 @@ The job hunting process is slow, with lots of unexpected and uncontrollable wait
 
 Even when you know about the stressors, the job hunt is still an emotional roller coaster. Expect to have "ups" and "downs". Have a support network with whom you can vent, share disappointments, and gloat.
 
-### Principles and Priorities
+### Priorities
 
-Priorities
+**Priorities**
 
-1. Get the best job you can
-   a. You'll have it for the next 4 years, this is a very high leverage activity
-2. Get the job as fast as you can
-   a. Looking for work is expensive in stress and time. Don't drag it out. You'll have worse performance at work. And you'll be stressed, finish as soon as you can.
-3. Being over prepared is worth
-   a. You can't know what you can ask. The consequence to being over prepared is you're ready for the next one. The consequence to being under prepared is you fail 1 and 2.
-4. Your current Job
-   a. Don't do a bad job, but this has the lowest ROI.
+1. **Get the best job you can** - You'll have it for the next 4 years, this is a very high leverage activity
+2. **Get the job as fast as you can** - Looking for work is expensive in stress and time. Don't drag it out. You'll have worse performance at work. And you'll be stressed, finish as soon as you can.
+3. **Being over prepared is worth it** - You can't know what they will ask. The consequence to being over prepared is you're ready for the next one. The consequence to being under prepared is you fail 1 and 2.
+4. **Your current Job** - Don't do a bad job, but this energy has the lowest ROI.
 
-Principles:
+**And remember**
 
-1. Don't leave a job got to a job
+1. Don't leave a job, go to a job
 2. Take Notes - You'll be doing this again
-3. Do it every day - makes it easier
+3. Do it every day - Small effort daily adds up
 
 ### Learnings from my last job hunts
 
