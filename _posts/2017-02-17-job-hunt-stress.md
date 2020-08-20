@@ -7,16 +7,28 @@ imagefeature: https://github.com/idvorkin/blob/raw/master/icon_interview.png
 tags:
   - emotional intelligence
   - software engineering
+
   - job-hunt
 ---
 
 Job hunts are stressful, and my goal for job hunts is getting the job I want while minimizing my stress. The stress comes from: lack of confidence, being rushed, not having options, disappointing others and the pressure from current job responsibilities. By expecting and mitigating each of these stressors I greatly reduce stress during my job hunt.
 
-_This post targets currently employed developers who want to switch jobs_
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
 
-**Before we get started, skim [decisive](/decisive) and listen to [switching jobs or staying where you are](https://heathbrothers.com/member-content/decisive-for-job-decisions/decisive-for-job-decisions-2/). It takes 30 minutes, but given how hard job changes are, I strongly recommend it**.
+- [Before you start](#before-you-start)
+- [Stress and Mitigation](#stress-and-mitigation)
+- [Principles and Priorities](#principles-and-priorities)
+- [Learnings from my last job hunts](#learnings-from-my-last-job-hunts)
 
-Below are my stressors and mitigations:
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
+### Before you start
+
+Before we get started, skim [decisive](/decisive) and listen to [switching jobs or staying where you are](https://heathbrothers.com/member-content/decisive-for-job-decisions/decisive-for-job-decisions-2/). It takes 30 minutes, but given how hard job changes are, I strongly recommend it.
+
+### Stress and Mitigation
 
 **Lack of confidence**
 
@@ -57,3 +69,69 @@ The job hunting process is slow, with lots of unexpected and uncontrollable wait
 - Recall your highest priority is the next job, but you have existing commitments.
 
 Even when you know about the stressors, the job hunt is still an emotional roller coaster. Expect to have "ups" and "downs". Have a support network with whom you can vent, share disappointments, and gloat.
+
+### Principles and Priorities
+
+Priorities
+
+1. Get the best job you can
+   a. You'll have it for the next 4 years, this is a very high leverage activity
+2. Get the job as fast as you can
+   a. Looking for work is expensive in stress and time. Don't drag it out. You'll have worse performance at work. And you'll be stressed, finish as soon as you can.
+3. Being over prepared is worth
+   a. You can't know what you can ask. The consequence to being over prepared is you're ready for the next one. The consequence to being under prepared is you fail 1 and 2.
+4. Your current Job
+   a. Don't do a bad job, but this has the lowest ROI.
+
+Principles:
+
+1. Don't leave a job got to a job
+2. Take Notes - You'll be doing this again
+3. Do it every day - makes it easier
+
+### Learnings from my last job hunts
+
+During your career - Do a great job '.'
+
+- Previous co-workers provide important recommendations
+- Gather artifacts during your career you can share.
+- Meet folks, develop contacts, even if it’s expensive and you may not go there.
+
+During the job hunting process - Avoid making up stories in your head.
+
+- Do not compare options you do not have.
+- I passed interviews I was sure I failed
+- I didn't get offers on companies that said I had them
+- I had offers rescinded, and then re-instated.
+
+During the job hunting process - You own your schedule
+
+- Feel free to to say let's interview first, and then based on timelines lock team (helps get good offers)
+- Interview at your non-ideal companies, who knows, you might find it's the most interesting job.
+- Interview at high paying companies even if you won't go there, who knows, maybe you will, and if you won't it helps you negotiate.
+- Some recruiters use pressure tactics, be respectful, but do what's right for you. (I'm not a fan of this recruiting strategy, but it works)
+
+During the interview - You own getting them the data they need
+
+- Do not get cocky. They are interviewing you, not vice versa
+- Draw pictures, makes it easier to understand
+- Aim for consistency, get good at telling your stories and focusing on the message
+- When something varies over time, pick a point in time to avoid inconsistencies.
+- You don't need to answer the exact question, answer it, but also add more context and thoughts on the topic.
+- Leave hooks to get interviewer to ask follow-ups where you want them (e.g. lets come back to that, would you like me to talk about).
+- Share artifacts you collected through your career.
+- Turn off your phone
+- Give interviewers a set of choices to dig into (E.g I can talk about X or Y, which would you like)
+- Give several examples from the same project to an interviewer to avoid too much time giving context.
+
+After your interview - You just spent a whole day in the spotlight.
+
+- Your self-evaluation is often wrong.
+- Even after success you need time to unwind.
+- Do post interview retros to remove "step into jail" answers
+- The more delays in hearing back from the company, the more likely there is stuff going on that's bad for you - like offers to other candidates.
+
+During your day job - your lowest priority
+
+- You need to be OK doing a worse job at work then normal, even though it’s going to be painful, that’s the correct priority.
+- Tell your boss (and if needed co-workers) you have some personal stuff you need to be taking care of so may need to reduce output and get extra support.
