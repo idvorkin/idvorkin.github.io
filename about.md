@@ -20,6 +20,16 @@ Finally the metaphorical small print: These are my personal opinions, not those 
 
 ## FAQ
 
+### What does this have to do with writers block?
+
+### What about writers block?
+
+_From Seth Godin_
+
+People with writer’s block don’t have a problem typing. They have a problem living with bad writing, imperfect writing, writing that might expose something that they fear.
+
+The best way to address this isn’t to wait to be perfect. Because if you wait, you’ll never get there. The best way to deal with it is to write, and to realize that your bad writing isn’t fatal. Like all skills, we improve with practice and with feedback.
+
 ### Why does this stuff suck?
 
 Getting good at hard stuff takes LOTS of practice and LOTS of feedback, during which time the stuff you do will suck. Go watch Ira's talk above.
