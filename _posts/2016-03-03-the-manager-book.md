@@ -286,6 +286,8 @@ My priority is "catching employees doing something right", so I can re-enforce p
 
 **Situational Leadership**
 
+More details are in my [coaching post](/coaching). Here's a preview:
+
 As people learn new skills they experience a learning curve, which requires different support at different points on the curve. [Situational leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory) describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.
 
 | Competent/Confident | Confident                                                   | Scared                                                          |
