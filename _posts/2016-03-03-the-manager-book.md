@@ -27,7 +27,7 @@ This post uses the word manager, but the majority of topics are applicable all s
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you coach?](#how-do-you-coach)
     - [What mechanisms do you have to ensure career development.](#what-mechanisms-do-you-have-to-ensure-career-development)
-    - [What is your approach to developing folks by career level.](#what-is-your-approach-to-developing-folks-by-career-level)
+    - [What is the level specific career expectations and growth strategies](#what-is-the-level-specific-career-expectations-and-growth-strategies)
     - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [How do you give challenging feedback](#how-do-you-give-challenging-feedback)
@@ -245,11 +245,12 @@ _Coaching is like midwifery. A midwife can not give birth to the baby, she facil
 
 To achieve these principles there are several tools:
 
-| Tool                    | Time Horizon | Checkin Frequency |
-| ----------------------- | ------------ | ----------------- |
-| Career Growth Plan      | 6m to 2y     | 3m                |
-| Pre Write Self Assement | 1m to 6m     | 4w to 8w          |
-| Frequent Feedback       | Immediate    | As Needed         |
+| Tool                    | Time Horizon    | Checkin Frequency |
+| ----------------------- | --------------- | ----------------- |
+| Career Growth Plan      | 6m to 2y        | 3m                |
+| Pre Write Self Assement | 1m to 6m        | 4w to 8w          |
+| Frequent Feedback       | Immediate       | As Needed         |
+| Situational Leadership  | Stage Dependant | Stage Dependant   |
 
 **Career Growth Plans**
 
@@ -302,7 +303,7 @@ In each of these stages different support is required.
 | Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
 | Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
 
-### What is your approach to developing folks by career level.
+### What is the level specific career expectations and growth strategies
 
 Depends on the skill level (Eg. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
 
