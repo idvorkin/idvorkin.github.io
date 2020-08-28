@@ -1,36 +1,40 @@
 ---
 layout: post
-title: "Insecurity and Imposter Syndrome"
+title: "Shame"
 comments: true
 inprogress: true
 tags:
-permalink: /insecure
+permalink: /shame
 redirect_from:
-  - /insecurity
-  - /phoney
+  - /fuck-shame
+  - /guilt
 ---
 
-We all get it. imposter syndrome, which include [shame](/shame)
+Shame and guilt are similar emotions that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt drives people to amend their mistakes.
 
-### Scott's Imposter Syndrom
+Unrealistic expectations cause into failure
+Unmet commitments harden into failure
+Failure hardens into guilt.
+Guilt hardens into shame.
+Shame derives its power from being unspeakable.
+Shame reinforces itself through rumination.
 
-A great post that was many techie's first introduction to [Imposter Syndrome](https://www.hanselman.com/blog/ImAPhonyAreYou.aspx)
+Shame - I am bad
+Guilt - I did something bad
 
-A few quotes from people he asked about these feelings:
+Catalyst for shame: Secrecy, Silence, Judgment
+(Empathy), fixes it - me too.
 
-- I always feel like a phony just biding my time until I'm found out. It definitely motivates me to excel further, hoping to outrun that sensation that I'm going to be called out for something I can't do
-- Plenty of times! Most recently I started a new job where I've been doing a lot of work in a language I'm rusty in and all the "Woot I've been doing 10 years worth of X language" doesn't mean jack. Very eye opening, very humbling, very refreshing
-- Quite often. I don't truly think I'm a phony, but certainly there are crises of confidence that happen... particularly when I get stuck on something and start thrashing.
-- Quite often actually, especially on sites like stack overflow. It can be pretty intimidating and demotivating at times. Getting started in open source as well. I usually get over it and just tell myself that I just haven't encountered a particular topic before so I'm not an expert at it yet. I then dive in and learn all I can about it.
-- I think you are only a phony when you reflect your past work and don't feel comfortable about your own efforts and achievements.
+-
 
-#### Vulnerable
+---
+
+https://www.ted.com/talks/brene_brown_listening_to_shame?language=en#t-733854
+
+To help me remember places where shame has fucked with me, I'll write out some of my experiences. The names below are changed to protect the innocent.
+
+---
 
 #### Good example
 
-#### Anecodtes
-
-- It's not just you, everyone has this
-- Estabilishing safe spaces and pychological safety
-
-#### Other resources
+**Antidote:** TK

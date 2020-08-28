@@ -26,7 +26,8 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Should managers code?](#should-managers-code)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you coach?](#how-do-you-coach)
-    - [How do you develop careers?](#how-do-you-develop-careers)
+    - [What mechanisms do you have to ensure career development.](#what-mechanisms-do-you-have-to-ensure-career-development)
+    - [What is your approach to developing folks by career level.](#what-is-your-approach-to-developing-folks-by-career-level)
     - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
     - [How do you give challenging feedback](#how-do-you-give-challenging-feedback)
@@ -231,7 +232,75 @@ Coaching is a major part of the job, and covered in my [coaching post](/coaching
 
 _Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic._
 
-### How do you develop careers?
+### What mechanisms do you have to ensure career development.
+
+There a few principles that must be met for career growth:
+
+- Peeps have an accurate, clear understanding of their interests, strengths, weakness, and next career steps.
+- Peeps have a clear understanding of level and role expectations for the current and next career stage.
+- Peeps understand how their work "ladders up" in impact and career development.
+- Peeps get frequent feedback on in progress work
+- Peeps and managers have a consistent understanding of the above.
+- Manager actually uses the process himself with her own manager.
+
+To achieve these principles there are several tools:
+
+**Career Growth Plans**
+
+**Mechanism Time Horizon:** 6 months to 2 years.
+**Conversation Frequency:** quarterly
+**Intent:** Forward looking and a good place to discuss what opportunities are required, and what major development areas should be tackled, and what's required to meet the next career level.
+
+Each employee has a career growth plan (CGP). This is a document with open ended questions like:
+
+- What are you most proud of?
+- What is most draining?
+- What are your short, medium and long term career goals?
+
+This document also has the list of expectations for the current level, and next level.
+
+**Pre writing Review Self Assessments**
+
+**Mechanism Time Horizon:** 1 month - 6 months
+**Conversation Frequency:** Every 1-2 months
+Intent: Think through what has been delivered in the next 1-6 months, and how it will be delivered.
+
+Most companies have a performance program - At MSFT it's connects, at FB it's PSCs and Amazon it's Forte. As part of this process, and employee writes a self assessment for the work that happened in the last 6 months - 1 year, and then the manager uses that as a basis of the review they'll write.
+
+There are several advantages to pre-writing these documents:
+
+- The peep and manager can be deliberate about what work is done, and discuss if projects make sense.
+- The peep and manager understand the impact provided by the work.
+- The peep has a record of what they've done in the performance period, instead of only having a crisp memory of the last few months.
+- The manager can calibrate the work to be done so there are no scope surprises.
+
+**Frequent feedback for in progress work in both the what and how dimensions**
+
+**Mechanism Time Horizon:** Just happened, or about to happen.
+**Conversation Frequency:** As needed every 1-4 weeks.
+Intent: Provide immediate observed feedback, for something that is about to happen (like reviewing a document), or a de-brief after a critical meeting or review
+
+I keep my eyes open for opportunities for feedback from my observations, and from soliciting feedback from peers and partners. I take the feedback and figure out the best way to give it.
+
+My priority is "catching employees doing something right", so I can re-enforce positive behavior. Even better, with positive behaviors I can provide them in public which not only benefits the employee, but also re-enforces that goodness with the team.
+
+**Situational Leadership**
+
+As people learn new skills they experience a learning curve, which requires different support at different points on the curve. [Situational leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory) describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.
+
+| Competent/Confident | Confident                                                   | Scared                                                          |
+| ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |
+| Incompetent         | 1. Foolish Novice - Thinks they can do it, but really can't | 2. Novice - Knows they can't do it, and feels bad               |
+| Competent           | 4. Expert - Know they can do it, and they're right          | 3. Journey man - Thinks they can't do it, but actually they can |
+
+In each of these stages different support is required.
+
+| Competent/Confident | Confident                                      | Scared                                          |
+| ------------------- | ---------------------------------------------- | ----------------------------------------------- |
+| Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
+| Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
+
+### What is your approach to developing folks by career level.
 
 Depends on the skill level (Eg. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
 
