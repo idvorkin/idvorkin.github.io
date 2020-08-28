@@ -234,7 +234,7 @@ _Coaching is like midwifery. A midwife can not give birth to the baby, she facil
 
 ### What mechanisms do you have to ensure career development.
 
-There a few principles that must be met for career growth:
+**Principles for career development**
 
 - Peeps have an accurate, clear understanding of their interests, strengths, weakness, and next career steps.
 - Peeps have a clear understanding of level and role expectations for the current and next career stage.
@@ -245,11 +245,15 @@ There a few principles that must be met for career growth:
 
 To achieve these principles there are several tools:
 
+| Tool                    | Time Horizon | Checkin Frequency |
+| ----------------------- | ------------ | ----------------- |
+| Career Growth Plan      | 6m to 2y     | 3m                |
+| Pre Write Self Assement | 1m to 6m     | 4w to 8w          |
+| Frequent Feedback       | Immediate    | As Needed         |
+
 **Career Growth Plans**
 
-**Mechanism Time Horizon:** 6 months to 2 years.
-**Conversation Frequency:** quarterly
-**Intent:** Forward looking and a good place to discuss what opportunities are required, and what major development areas should be tackled, and what's required to meet the next career level.
+Forward looking and a good place to discuss what opportunities are required, and what major development areas should be tackled, and what's required to meet the next career level.
 
 Each employee has a career growth plan (CGP). This is a document with open ended questions like:
 
@@ -261,9 +265,7 @@ This document also has the list of expectations for the current level, and next 
 
 **Pre writing Review Self Assessments**
 
-**Mechanism Time Horizon:** 1 month - 6 months
-**Conversation Frequency:** Every 1-2 months
-Intent: Think through what has been delivered in the next 1-6 months, and how it will be delivered.
+Think through what will be delivered in the next 1-6 months, and how it will be delivered.
 
 Most companies have a performance program - At MSFT it's connects, at FB it's PSCs and Amazon it's Forte. As part of this process, and employee writes a self assessment for the work that happened in the last 6 months - 1 year, and then the manager uses that as a basis of the review they'll write.
 
@@ -276,9 +278,7 @@ There are several advantages to pre-writing these documents:
 
 **Frequent feedback for in progress work in both the what and how dimensions**
 
-**Mechanism Time Horizon:** Just happened, or about to happen.
-**Conversation Frequency:** As needed every 1-4 weeks.
-Intent: Provide immediate observed feedback, for something that is about to happen (like reviewing a document), or a de-brief after a critical meeting or review
+Provide immediate observed feedback, for something that is about to happen (like reviewing a document), or a de-brief after a critical meeting or review
 
 I keep my eyes open for opportunities for feedback from my observations, and from soliciting feedback from peers and partners. I take the feedback and figure out the best way to give it.
 
