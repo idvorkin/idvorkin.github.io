@@ -12,6 +12,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 <!-- vim-markdown-toc GFM -->
 
 - [Physical Health](#physical-health)
+    - [Personal Trainer](#personal-trainer)
     - [Calf Health](#calf-health)
     - [Knee Health](#knee-health)
     - [Booger Health](#booger-health)
@@ -22,8 +23,12 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
 - [Emotional Health](#emotional-health)
     - [Meditation](#meditation)
+    - [Therapist](#therapist)
 - [Cognitive Health](#cognitive-health)
+    - [Blogging](#blogging)
+    - [Weekly goals](#weekly-goals)
 - [Identity Health](#identity-health)
+    - [Eulogy Writing](#eulogy-writing)
 - [Personal Carry](#personal-carry)
     - [Fanny Pack](#fanny-pack)
     - [Gym Bag](#gym-bag)
@@ -31,6 +36,8 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [Bikes](#bikes)
     - [Bike accouterments](#bike-accouterments)
 - [Car Tech](#car-tech)
+- [Camera](#camera)
+    - [Lenses](#lenses)
 - [Morning Routine](#morning-routine)
     - [Weekend morning routine](#weekend-morning-routine)
     - [Weekday morning routine](#weekday-morning-routine)
@@ -46,6 +53,14 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 - [Physical Health](https://idvorkin.github.io/physical-health) - My original article on physical health
 - [Tech for health](http://idvorkin.github.io/tech-health-toys) - A list of tech products I've used and tried.
+
+### Personal Trainer
+
+At 42 I got a personal trainer. Should have done it years ago. Several benefits;
+
+1. Externalized Motivation
+2. Externalized research.
+3. Can turn off brain, and PT tells you what to do so you don't even have to think about exercises or count.
 
 ### Calf Health
 
@@ -119,9 +134,28 @@ This is my portable bench, it's smaller, but less stable, but it does the job:
 
 https://www.simplysitting.com/
 
+### Therapist
+
+I've been seeing a therapist weekly since my early 30's. It provides me several benefits.
+
+- A chance to introspect, and reflect on what's on my mind.
+- A chance to get some analytic analysis over my emotions.
+- A cathardic release
+- Access to a less distorted (it's still subject to my inputs) view of my reaity.
+- An early reminder for when my world view is getting both too positive, and too negative.
+- Coachin on relationship based discussion
+- A constant reminder of the importance of my emotional health
+- A historical remidner of previous states
+
 ## Cognitive Health
 
+### Blogging
+
+### Weekly goals
+
 ## Identity Health
+
+### Eulogy Writing
 
 ## Personal Carry
 
@@ -162,6 +196,14 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 - Remote car starter - ~ 200\$ and you can start your car from the house so that it's warm and toasty when you get in.
 - Wireless Air Play - ~ 500\$. OMG - having CarPlay (especially on iOS 13) without plugging in your phone - wow!
 - Back up Camera ~ 30\$. OMG - Hard to believe I went years without one.
+
+## Camera
+
+I ended up getting an m200 because a time of purchase it was the only cheap cannon with clean HDMI output. I'd have prefered the m50, but it didn't have clean HDMI output which was a deal breaker.
+
+### Lenses
+
+I'm a fan of pancake lenses. I think that's the top value of an SLR, getting fantastic low light people photos.
 
 ## Morning Routine
 
