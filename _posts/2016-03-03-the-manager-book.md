@@ -1100,6 +1100,18 @@ Apple:
 
 ### Why do managers always say coding is part of their job but we all know it isn’t?
 
+I don't think manager's should code, however (see above). A related question might be:
+
+Why do we assess manager's ability to code.
+
+- A few enlightened companies do not.
+
+When should managers code
+
+- Link TBD
+
+What technical skills should a manager have and why
+
 ## Other resources
 
 ### Google's Project Oxygen
