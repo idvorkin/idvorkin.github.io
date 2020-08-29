@@ -30,12 +30,15 @@ FACEBOOK MANAGEMENT INTERVIEWING 101
     - [DURING THE INTERVIEW](#during-the-interview-2)
     - [COMMON ERRORS](#common-errors-2)
     - [INTERVIEW ASSESSMENT CRITERIA](#interview-assessment-criteria-1)
-- [CODING INTERVIEW: (PLEASE DO NOT SPEND MORE THAN 10% OF YOUR PREPARATION](#coding-interview-please-do-not-spend-more-than-10-of-your-preparation)
+- [CODING INTERVIEW: (NO MORE THAN 10% OF PREP)](#coding-interview-no-more-than-10-of-prep)
     - [OVERVIEW](#overview-3)
     - [PREPARATION GUIDELINES](#preparation-guidelines-3)
     - [DURING THE INTERVIEW](#during-the-interview-3)
     - [COMMON ERRORS](#common-errors-3)
     - [INTERVIEW ASSESSMENT CRITERIA](#interview-assessment-criteria-2)
+- [Other Interview types](#other-interview-types)
+    - [Cross Functional](#cross-functional)
+    - [Technical Discussion](#technical-discussion)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -68,6 +71,8 @@ Of equal importance are the management and project retrospective areas. As pract
 # MANAGEMENT INTERVIEW
 
 The purpose of the People Management interview is to assess your capability in supporting Organizational Health and People Management & Planning. Showcase success stories and get to the situations that show how you as a leader has navigated the complexity of growing, developing and supporting the people in their team/organization.
+
+This will be a deep dive into management experience. Questions will include: How do you evaluate a good team, course-correct one that’s unhealthy, grow people. It is helpful to think about past examples of successes and failures where you have navigated the complexity of growing, developing and supporting the people in your team/org.
 
 ## PREPARATION GUIDELINES
 
@@ -111,6 +116,10 @@ Areas we cover include:
 - Your understanding of design tradeoffs, business vs operations vs development considerations
 - How you scale systems and business processes.
 
+Think of this as like the system design question, except after the fact for a real project you were closely involved in. Why did it get built? What were its goals? How was it structured? What parts worked well? How did you adapt it to work better? What were some of the nitty gritty technical details that made a difference? Operating at Facebook This will be a general discussion on building management and Engineering culture.
+
+For this interview you will be asked to walk through a project you have been working on – your role is to impart an understanding of the project at both high and low levels to the interviewer. This will take the form of a discussion and not a presentation, slide decks are not needed and discouraged, but code examples and architectural diagrams are reasonable
+
 ## PREPARATION GUIDELINES
 
 - Recall one or two different projects you have been responsible for and map out the various aspects of the
@@ -143,6 +152,12 @@ Areas we cover include:
 ## OVERVIEW
 
 The design of complex systems and the tradeoffs within your design. The scope of the question can vary widely; it’s a challenging and deep technical discussion around product ideas, usability issues, scalability, data structures and technologies used. One question will typically draw directly on your previous experience (e.g., file system design, device drivers, ad serving systems, web caching systems). Examples include: design a hotel reservation system, design Facebook’s News Feed. For this interview, there is no right or wrong answer; the interviewer wants to observe how you design and architect a system. We will look to you as the expert here and ask you to drive the design, starting with defining the high-level goals and then proposing a solution.
+
+You’ll be given an open-ended system design problem and asked to walk through and whiteboard the system design, as well as think through issues around scaling, etc. System design. We’ll give you a realistic and fairly open-ended technical problem from the real world. An example might be “build typeahead suggestions for YouTube” (please ask your interviewer to use another question if they pick this!), where there’s a huge amount of data (hundreds of millions, maybe billions of titles), a load of traffic (hundreds of millions of queries per day), and a lot of dynamism in what people search for (new uploads, trending topics, etc.).
+
+Such a system would have to be fast, reliable, cost effective, scale globally, and able to adapt quickly to trends. We’d want you to lead the discussion around what such a system needs to be capable of, then start with a particular area to flesh out the constraints on and major components of.
+
+It’s really helpful to have a decent “these are the important black boxes” knowledge of modern distributed systems design, to be able to do arithmetic around sizing in your head, to roughly know about memory, disk, and latency capabilities of systems, etc. Here is crib sheet of relevant work we’ve done in this area, check out our research web site.
 
 ## PREPARATION GUIDELINES
 
@@ -187,7 +202,7 @@ dimensions of the design.
   - https://www.hiredintech.com/classrooms/system-design/lesson/52
   - https://www.educative.io/collection/5668639101419520/5649050225344512
 
-# CODING INTERVIEW: (PLEASE DO NOT SPEND MORE THAN 10% OF YOUR PREPARATION
+# CODING INTERVIEW: (NO MORE THAN 10% OF PREP)
 
 ## OVERVIEW
 
@@ -221,3 +236,13 @@ dimensions of the design.
 - Coding: Check for bugs, try to not overcomplicate your code
 - Complexity Analysis: Time and space complexity
 - Debugging: Check your code proactively
+
+# Other Interview types
+
+## Cross Functional
+
+The team is interested in how you think about and interact with other people. We like this to be “here’s a story about how I did something relative to your question.” We are big on self- awareness, so it’s really helpful here to be able to ‘fess up to working relationships you screwed up and learned from, conflicts you couldn’t resolve, and anything else that helps round out our picture of you. Can you work across the company? Can you handle different approaches, agendas and facilitate positive partnerships? How do you manage difficult partnerships?
+
+## Technical Discussion
+
+For this interview you will be asked to walk through a project you have been working on – your role is to impart an understanding of the project at both high and low levels to the interviewer. This will take the form of a discussion and not a presentation, slide decks are not needed and discouraged, but code examples and architectural diagrams are reasonable
