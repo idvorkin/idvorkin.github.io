@@ -1,11 +1,11 @@
 ### How it brings my pleasure
 
-_) Being able to take it on buses, subways, ubers, car2gos and people's trunks.
-_) Being able to throw it in people's trunks
-_) Riding it all the time
-_) Looking goofy
-_) All the people that ask me questions about it
-_) Telling people to try riding it
+- Being able to take it on buses, subways, ubers, car2gos and people's trunks.
+- Being able to throw it in people's trunks
+- Riding it all the time
+- Looking goofy
+- All the people that ask me questions about it
+- Telling people to try riding it
 
 ### The only improvements I can think of for the Brompton:
 

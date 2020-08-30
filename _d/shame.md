@@ -25,8 +25,6 @@ Guilt - I did something bad
 Catalyst for shame: Secrecy, Silence, Judgment
 (Empathy), fixes it - me too.
 
--
-
 ---
 
 https://www.ted.com/talks/brene_brown_listening_to_shame?language=en#t-733854

@@ -19,6 +19,9 @@ Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if 
     - [Pain vs Suffering](#pain-vs-suffering)
     - [At the extreme - Addiction](#at-the-extreme---addiction)
     - [Magic Tricks for strangers](#magic-tricks-for-strangers)
+    - [Skipping the diet or gym](#skipping-the-diet-or-gym)
+    - [Procrasting the string that's stressing you at work](#procrasting-the-string-thats-stressing-you-at-work)
+    - [Not doing Amazon returns](#not-doing-amazon-returns)
 - [Fighting the resistance](#fighting-the-resistance)
     - [If you don't beat it back, it will get stronger.](#if-you-dont-beat-it-back-it-will-get-stronger)
     - [Jump in the lake day.](#jump-in-the-lake-day)
@@ -49,6 +52,12 @@ I've **never** regretted showing someone a magic trick, I've never regretting be
 
 At my very best, I applied a powerful antidote. I told myself I'd ask the first person I saw if they wanted to see a magic trick, I'd repeat this for each person I saw till I completed a magic trick.
 
+### Skipping the diet or gym
+
+### Procrasting the string that's stressing you at work
+
+### Not doing Amazon returns
+
 ## Fighting the resistance
 
 ### If you don't beat it back, it will get stronger.
@@ -75,4 +84,7 @@ Every day I wake up at 5am, it's my first victory over the resistance, and it gi
 ## Other Resources
 
 [Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf) - The bible of the resistance.
-Do the work by Stephen Pressfield.
+
+- Do the work by Stephen Pressfield.
+- Eat that frog
+- Getting things done (GTD)

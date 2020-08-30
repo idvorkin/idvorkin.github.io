@@ -7,6 +7,7 @@ tags:
 permalink: /insecure
 redirect_from:
   - /insecurity
+  - /insecure
   - /phoney
 ---
 

@@ -36,6 +36,8 @@ This was a marquee features for Amazon and they put a lot of muscle behind it. H
 The details are amazon specific, but a few things I can mention
 
 - Called out in the SVP mail to all of Amazon on impactful things we did.
+- Lots of toys for Toys for Tots
+- So successful, rinse repeat.
 
 ## Cool stories - First Launch
 
@@ -46,6 +48,7 @@ The details are amazon specific, but a few things I can mention
 - How we dreaed it would never happen
 - PM quit pre-launch
 - Lots of other projects thrown at team while it was happening.
+- VP Looking for last minute scope creep
 
 ## The team that made it happen
 
