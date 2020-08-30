@@ -49,6 +49,11 @@ A how to guide for starting your next job.
 - [7. Build Your Team](#7-build-your-team)
 - [8. Create Alliances](#8-create-alliances)
 - [9. Manage Yourself](#9-manage-yourself)
+    - [Self assessment](#self-assessment)
+    - [Common problems](#common-problems)
+    - [Solutions - Focus on 90 day plan (Begin with the end in mind)](#solutions---focus-on-90-day-plan-begin-with-the-end-in-mind)
+    - [Solutions - Personal Discipline (First things first)](#solutions---personal-discipline-first-things-first)
+    - [Solutions - Build Support Systems (Interdependance)](#solutions---build-support-systems-interdependance)
 - [10. Accelerate Everyone](#10-accelerate-everyone)
 - [Notes on the book](#notes-on-the-book)
 
@@ -371,6 +376,77 @@ The trap of thinking that authority is enough. Identifying whose support is crit
 ### 9. Manage Yourself
 
 How leaders get caught in vicious cycles. The three pillars of self-efficacy. Creating and enforcing personal disciplines. Building an advice-and-counsel network.
+
+#### Self assessment
+
+On a scale of 1-10 why or why not?
+
+- Excited
+- Confident
+- In control of your success
+
+What is bothering you?
+
+- Who who have you failed to connect?
+- Which meeting is the most troublesome?
+- Of all you seen, what bothered you the most?
+
+What has gone well or poorly?
+
+- Which interactions would you handle differently
+- Which interactions exceed expectations
+- Which decision came out the best, worse?
+- What missed opportunity do you most miss, was it your mistake, or something out of your control?
+
+Are your problems, structural, or personal? If you think it's structural, it'll make you more likely to procrastinate.
+
+#### Common problems
+
+**No boundaries** - The more you are willing to take, the more folks will give you. No one will set boundaries but you. If you get too much, you'll become resentful and burn out.
+
+**Rigidity** - If need control, might dig in heels instead of being flexible when stuff changes.
+
+**Isolation** - You need to have allies, and see the underground network of information. Easy to happen 1) don't make time for connections, 2) over rely on official informaion 3) over rely on a few people 4) Discounraged key people from talking to you - either for 1 shoot the messenger, or 2 becuse you've scared them off.
+
+**Avoiding hard decisions** - Perhaps you don't have the information you need, or you're worried about life impact on others, or you think it gets easier over time. But it gets harder.
+
+**Insecurity and Shame** - See [Insecurity](/insecure) and [Shame](/shame)
+
+#### Solutions - Focus on 90 day plan (Begin with the end in mind)
+
+#### Solutions - Personal Discipline (First things first)
+
+Plan to plan - Monthly, Weekly, and Daily Plans
+
+Stay in quadrant 2 - Block time on your calendar
+
+Defer commitemnt - Never say yes on the spot. Always figure out if you can afford to do it, do not get pressured early. WAY better to no to yes then yes to no. Yes to no is hard on your reputation
+
+Go to the balcony
+
+Too emotional? Step back and get an objective opinion.
+
+Check in with yourself
+
+Need structured reflection
+
+Recognize when to quit
+
+Over the stress curve, need to drop certain things.
+
+#### Solutions - Build Support Systems (Interdependance)
+
+Start by making your bed - Small thing will kill you, get done the things you control.
+
+Stabilize the home front - Avoid fighting on too many fronts, your home life can kill you, get your family sorted out.
+
+Focus on your network
+
+- Need Technical, Cultural , Political Advisors
+- Need insiders, and external obsevers:
+- Insiders who are trustworthy with no personal agenda, or conficting interest. Give you strait accurate advice.
+  External supporters - loyal to you, not to the org. Friends and colleauges
+- In partner groups, to help understand perspective, need to get several views
 
 ### 10. Accelerate Everyone
 
