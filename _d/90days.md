@@ -51,9 +51,9 @@ A how to guide for starting your next job.
 - [9. Manage Yourself](#9-manage-yourself)
     - [Self assessment](#self-assessment)
     - [Common problems](#common-problems)
-    - [Solutions - Focus on 90 day plan (Begin with the end in mind)](#solutions---focus-on-90-day-plan-begin-with-the-end-in-mind)
-    - [Solutions - Personal Discipline (First things first)](#solutions---personal-discipline-first-things-first)
-    - [Solutions - Build Support Systems (Interdependance)](#solutions---build-support-systems-interdependance)
+    - [Solutions - Being with end in mind -  Focus on 90 day plan](#solutions---being-with-end-in-mind----focus-on-90-day-plan)
+    - [Solutions - First thing first - Personal Discipline](#solutions---first-thing-first---personal-discipline)
+    - [Solutions - Interdependance - Build Support Systems](#solutions---interdependance---build-support-systems)
 - [10. Accelerate Everyone](#10-accelerate-everyone)
 - [Notes on the book](#notes-on-the-book)
 
@@ -412,9 +412,9 @@ Are your problems, structural, or personal? If you think it's structural, it'll 
 
 **Insecurity and Shame** - See [Insecurity](/insecure) and [Shame](/shame)
 
-#### Solutions - Focus on 90 day plan (Begin with the end in mind)
+#### Solutions - Being with end in mind - Focus on 90 day plan
 
-#### Solutions - Personal Discipline (First things first)
+#### Solutions - First thing first - Personal Discipline
 
 Plan to plan - Monthly, Weekly, and Daily Plans
 
@@ -434,7 +434,7 @@ Recognize when to quit
 
 Over the stress curve, need to drop certain things.
 
-#### Solutions - Build Support Systems (Interdependance)
+#### Solutions - Interdependance - Build Support Systems
 
 Start by making your bed - Small thing will kill you, get done the things you control.
 
