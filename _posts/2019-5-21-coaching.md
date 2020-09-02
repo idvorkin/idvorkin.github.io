@@ -22,31 +22,33 @@ Coaching is like midwifery. A midwife can not give birth to the baby, she facili
 <!-- prettier-ignore-start -->
 
 
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [The coaching mindset](#the-coaching-mindset)
 - [Frequent coaching situations](#frequent-coaching-situations)
 - [The 7 goto coaching questions](#the-7-goto-coaching-questions)
 - [Questions for specific situations](#questions-for-specific-situations)
-    - [To clarify thinking](#to-clarify-thinking)
-    - [To challenge assumptions](#to-challenge-assumptions)
-    - [To gather more evidence](#to-gather-more-evidence)
-    - [To find more alternatives](#to-find-more-alternatives)
-    - [To build strategic insight](#to-build-strategic-insight)
+  - [To clarify thinking](#to-clarify-thinking)
+  - [To challenge assumptions](#to-challenge-assumptions)
+  - [To gather more evidence](#to-gather-more-evidence)
+  - [To find more alternatives](#to-find-more-alternatives)
+  - [To build strategic insight](#to-build-strategic-insight)
+  - [To increase productivity, effectiveness, and efficiency](#to-increase-productivity-effectiveness-and--efficiency)
 - [The hows of coaching](#the-hows-of-coaching)
-    - [Coach for task completion vs insight](#coach-for-task-completion-vs-insight)
-    - [Keep people safe while coaching using human safety models](#keep-people-safe-while-coaching-using-human-safety-models)
-    - [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
-    - [Encourange trying to solve own problem: How would you handle this?](#encourange-trying-to-solve-own-problem-how-would-you-handle-this)
-    - [Say No: Say yes slowly](#say-no-say-yes-slowly)
-    - [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
+  - [Coach for task completion vs insight](#coach-for-task-completion-vs-insight)
+  - [Keep people safe while coaching using human safety models](#keep-people-safe-while-coaching-using-human-safety-models)
+  - [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
+  - [Encourange trying to solve own problem: How would you handle this?](#encourange-trying-to-solve-own-problem-how-would-you-handle-this)
+  - [Say No: Say yes slowly](#say-no-say-yes-slowly)
+  - [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
 - [One on One Questions](#one-on-one-questions)
 - [Situational coaching](#situational-coaching)
 - [Other coaching tools](#other-coaching-tools)
 - [Fantastic video on coaching, improvement, and discomfort](#fantastic-video-on-coaching-improvement-and-discomfort)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ### The coaching mindset
 
@@ -125,6 +127,36 @@ Depending on what insights you want to provide, you need to use different questi
 - What will be our differentiator/moat here?
 - What capabilities/assets will need to achieve this?
 - How do we measure success and provide feedback?
+
+#### To increase productivity, effectiveness, and efficiency
+
+This request often comes in as the wrong question, need to deep dive into where the problem is coming from.
+
+1. Focusing the right things:
+
+   - The top optimization is spending zero time on the wrong thing. How often do you feel your spending time on the wrong thing?
+   - Taking time to explore is important, how are you splitting time between, learning, exploring and doing?
+   - What does success look like, how is your work supporting that success?
+
+2. Being Motiviated
+
+   - On a scale of 1/10 how energized are you doing this work?
+   - When are times you're most energized and most drained? Any patterns
+
+3. Realistic Expectations + Estimations
+
+   - Anxiety is the difference between expectations and reality. How are you validating your estimates/expectations are reasonable?
+
+4. Having the required resources
+
+   - How often are you getting blocked?
+   - What things would help you get done this faster?
+   - Are there things that if you had, would speed you up?
+   - What resources would make you more efficient?
+
+5. Doing it Efficiently
+   - How often are you stuck?
+   - How are you going about getting help?
 
 ### The hows of coaching
 
