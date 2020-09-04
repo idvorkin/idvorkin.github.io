@@ -6,6 +6,10 @@
 - vim-toc-generator - Auto generate TOCs, auto run on save
 - checklinks.sh- Check for [broken links](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/checklinks.sh) - Runs manaully from other repro
 
+# Keyboard shortcuts
+
+? - See help while in a post
+
 # Other impressive stuff
 
 tbd
