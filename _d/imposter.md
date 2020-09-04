@@ -9,6 +9,7 @@ redirect_from:
   - /insecurity
   - /insecure
   - /phoney
+  - /imposter
 ---
 
 We all get it. imposter syndrome, which include [shame](/shame)
