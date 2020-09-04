@@ -125,6 +125,14 @@ After your interview - You just spent a whole day in the spotlight.
 - Do post interview retros to remove "step into jail" answers
 - The more delays in hearing back from the company, the more likely there is stuff going on that's bad for you - like offers to other candidates.
 
+After your have all your offers:
+
+- Congrats - your hard work paid off! You made it.
+- Now your stress is FOMO (Fear of missing out)!
+- Think deeply about your [dream job](/dream-job). You won't be able to check all the boxes, but know your criteria to make great decisions.
+- For apples to apples compensation comparisons, look at [Total compensation](/comp)
+- Use the [decisive](/decide) to help you decide.
+
 During your day job - your lowest priority
 
 - You need to be OK doing a worse job at work then normal, even though it’s going to be painful, that’s the correct priority.
