@@ -10,18 +10,18 @@ redirect_from:
   - /mental-break-downs
   - /mental-breakdown
   - /mental-breakdowns
----Depression is a very dark place. Here are some of my notes on the topic I'll flesh out.
+---
+
+Depression is a very dark place. Here are some of my notes on the topic I'll flesh out.
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
-- [Uncategorized notes](#uncategorized-notes)
-        - [My emotional health practices](#my-emotional-health-practices)
-        - [Quotes](#quotes)
-        - [Other resources](#other-resources)
+- [Uncategorized notes](#uncategorized-notes) - [My emotional health practices](#my-emotional-health-practices) - [Quotes](#quotes) - [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 # Uncategorized notes
 
