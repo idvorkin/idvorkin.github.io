@@ -7,26 +7,22 @@ tags:
 permalink: /depression
 redirect_from:
   - /mental-break-down
-  - /mental-break-downs
-  - /mental-breakdown
-  - /mental-breakdowns
 ---
 
 Depression is a very dark place. Here are some of my notes on the topic I'll flesh out.
 
 <!-- prettier-ignore-start -->
-
 <!-- vim-markdown-toc GFM -->
 
 - [Uncategorized notes](#uncategorized-notes)
-        - [My emotional health practices](#my-emotional-health-practices)
-        - [Quotes](#quotes)
-        - [Other resources](#other-resources)
+- [My emotional health practices](#my-emotional-health-practices)
+- [Quotes](#quotes)
+- [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-# Uncategorized notes
+### Uncategorized notes
 
 - [Shame](/shame)
 - [Imposter Syndrome ](/imposter)
@@ -41,9 +37,12 @@ I've tried lots of things, being consistent is hard, especially when you get dep
   - What I wish I do when I get [insomnia](/insomnia).
 - [Physical health](/physical-health), especially cardio.
 - Daily Stream of Concious Journalling
-- Meditation
+- [Meditation](/siy)
 - Talking to the [voices in my head](/voices)
 - More ideas from my [eulogy](/eulogy)
+- [7 Habits](/7-habits)
+- [Getting to yes with yourself](/getting-to-yes-with-yourself)
+- Getting things done (GTD)
 
 ### Quotes
 
