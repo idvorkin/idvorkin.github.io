@@ -7,6 +7,7 @@ tags:
 permalink: /depression
 redirect_from:
   - /mental-break-down
+imagefeature: https://github.com/idvorkin/blob/raw/master/noun-depression.png
 ---
 
 Depression is a very dark place. Here are some of my notes on the topic I'll flesh out.
@@ -27,6 +28,8 @@ Depression is a very dark place. Here are some of my notes on the topic I'll fle
 - [Shame](/shame)
 - [Imposter Syndrome ](/imposter)
 - My depression [reading list](https://ig2600.blogspot.com/2014/11/depression-reading-list.html).
+
+{%include blob_image_float_right.html src="noun-depression.png" %}
 
 ### My emotional health practices
 
