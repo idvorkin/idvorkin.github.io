@@ -5,10 +5,10 @@ author: "Igor Dvorkin"
 tags:
   - emotional intelligence
   - book-notes
-
 permalink: /siy
----Training Emotional Intelligence through mindfulness.
+---
 
+Training Emotional Intelligence through mindfulness.
 This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
 ### 1) What is Emotional Intelligence (EI)? How to train it?
