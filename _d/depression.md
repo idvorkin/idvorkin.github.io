@@ -24,6 +24,7 @@ Unless you've experienced depression, you can't understand it. Even having exper
 - [Depression, Grief and Sadness](#depression-grief-and-sadness)
 - [Anxiety, Depression's cruel enforcer](#anxiety-depressions-cruel-enforcer)
 - [My emotional health practices](#my-emotional-health-practices)
+- [My experiences with depression and anxiety](#my-experiences-with-depression-and-anxiety)
 - [Related notes I plan to write](#related-notes-i-plan-to-write)
 - [Books On Depression](#books-on-depression)
 - [Videos](#videos)
@@ -62,6 +63,8 @@ I've tried lots of things, being consistent is hard, especially when you get dep
 - Getting things done (GTD)
 
 {%include blob_image_float_right.html src="noun-depression.png" %}
+
+### My experiences with depression and anxiety
 
 ### Related notes I plan to write
 
