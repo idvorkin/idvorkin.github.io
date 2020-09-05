@@ -48,6 +48,8 @@ I can't describe my anxiety in a way that conveys the feeling. All I can say is 
 
 ### My own experiences with depression and anxiety
 
+Depression and anxiety have touched me and my family.
+
 ### My antidotes
 
 I've tried lots of things, being consistent is hard, especially when you get depressed. Here are many of the things I've tried
