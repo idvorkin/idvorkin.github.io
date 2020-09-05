@@ -207,7 +207,7 @@ They need to represent the team in technical forums, swag costs, represent laws 
 - Be on every page the team gets
 - Have strong relationships w/technical leaders like principal engineers
 - Follow major tech trends and product launches (keynotes, major tech blog posts)
-- Read seminal books on topics (ML, Cloud Native Apps, Programming Language Design, Architecture)
+- Read seminal books on topics ([ML](/td/machine-learning), [Cloud Native Apps](/td/cloud-first-applications), [Data Systems](td/data-systems), [etc](/td))
 - Have Side projects in assorted tech and ideas (ML, PWA, FaaS)
 
 They also need to be experts at working with data systems and analysis, as much of their time will be analyzing customer, business, operational, and technical data.
