@@ -10,9 +10,9 @@ redirect_from:
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun-depression.png
 ---
 
-In depression you don't think that you've put on a gray veil and are seeing the world through the haze of a bad mood. You think that the veil has been taken away, the veil of happiness, and that now you're seeing truly. But the truth lies. Depressed people will say, "No one loves me." And you say, "I love you, your wife loves you, your mother loves you." You can answer that one pretty readily, at least for most people. But people who are depressed will also say, "No matter what we do, we're all just going to die in the end." To which you have to say, "That's true, but I think we should focus right now on what to have for breakfast."
+When you're depressed you don't think you've put on a gray veil - seeing the world through the haze of a bad mood. You think that a veil has been taken away. The veil of happiness, and you believe you're seeing the world as it truly is: alone, petrifying, and painful. But the truth lies. The depressed say "No one loves me." And you say, "I love you, your wife loves you, your mother loves you." and the depressed ignore you. The depressed will continue, "None of this matters, we're just going to die in the end." To which you have to say, "That's true, but I think right now should focus on what to have for breakfast."
 
-_(Quoted from Andrew Solomon's superb TED talk, as are many parts of this post)_
+_(Quotes butchured from Andrew Solomon's superb TED talk, as are many parts of this post)_
 
 Unless you've experienced depression, you can't understand it. Even having experienced depression, I doubt you'll have the words to describe, let alone discuss depression. Andrew Solomon's TED talk is gripping, depressing, funny, hopeful, and insightful. If you' have a reason to read this post, you need to watch the video. It's worth the full 30 minutes.
 
