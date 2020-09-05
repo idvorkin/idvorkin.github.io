@@ -19,6 +19,7 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [Security](#security)
 - [ML](#ml)
 - [Advertising](#advertising)
+- [Statistics](#statistics)
 - [Other](#other)
 - [Minor Tips](#minor-tips)
 - [Projects](#projects)
@@ -104,6 +105,10 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 ### Advertising
 
 - [Advertising systems](advertising)
+
+### Statistics
+
+- [Statistics](stats)
 
 ### Other
 
