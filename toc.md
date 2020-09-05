@@ -162,6 +162,6 @@ Great video on keeping [the cores spinning in unexpected circumstances](https://
 
 ### Mental Breakdowns
 
-- [Reading List](/Depression-Reading-List)
+- [Depression](/Depression)
 
 ### Cancer
