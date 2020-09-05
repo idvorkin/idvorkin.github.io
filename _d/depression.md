@@ -14,7 +14,7 @@ In depression you don't think that you've put on a gray veil and are seeing the 
 
 _(Quoted from Andrew Solomon's superb TED talk, as are many parts of this post)_
 
-Unless you've expereined depression, you can't understand it. Even having experienced depression, I doubt you'll have the words to describe, let alone discuss depression. Andrew Solomn's TED talk is gripping, depressing, funny, hopeful, and insightful. If you' have a reason to read this post, you need to watch the video. It's worth the full 30 minutes.
+Unless you've experienced depression, you can't understand it. Even having experienced depression, I doubt you'll have the words to describe, let alone discuss depression. Andrew Solomon's TED talk is gripping, depressing, funny, hopeful, and insightful. If you' have a reason to read this post, you need to watch the video. It's worth the full 30 minutes.
 
 {% include youtube.html src="-eBUcBfkVCo" %}
 
@@ -25,7 +25,7 @@ Unless you've expereined depression, you can't understand it. Even having experi
 - [Anxiety, Depression's cruel enforcer](#anxiety-depressions-cruel-enforcer)
 - [My emotional health practices](#my-emotional-health-practices)
 - [Related notes I plan to write](#related-notes-i-plan-to-write)
-- [Books On Deperession](#books-on-deperession)
+- [Books On Depression](#books-on-depression)
 - [Videos](#videos)
 
 <!-- vim-markdown-toc -->
@@ -39,11 +39,11 @@ Grief is explicitly reactive. If you have a loss and you feel incredibly unhappy
 
 ### Anxiety, Depression's cruel enforcer
 
-In it's weaker forms, anxiety is the difference between reality and expectations. But as it becomes feircer, I'll quote Soloman again:
+In it's weaker forms, anxiety is the difference between reality and expectations. But as it becomes fiercer, I'll quote Solomon again:
 
 > And then the anxiety set in. If you told me that I'd have to be depressed for the next month, I would say, "As long I know it'll be over in November, I can do it." But if you said to me, "You have to have acute anxiety for the next month," I would rather slit my wrist than go through it. It was the feeling all the time like that feeling you have if you're walking and you slip or trip and the ground is rushing up at you, but instead of lasting half a second, the way that does, it lasted for six months. It's a sensation of being afraid all the time but not even knowing what it is that you're afraid of. And it was at that point that I began to think that it was just too painful to be alive, and that the only reason not to kill oneself was so as not to hurt other people.
 
-I can't describe it in a way that convey's the feeling, other then saying it's a constnat loop playing in my head saying _"Oh my god, Oh my god, Oh my god"_
+I can't describe it in a way that conveys the feeling, other then saying it's a constant loop playing in my head saying _"Oh my god, Oh my god, Oh my god"_
 
 ### My emotional health practices
 
@@ -53,7 +53,7 @@ I've tried lots of things, being consistent is hard, especially when you get dep
   - When I get really stressed, I have no qualms take sleeping pills. Having insomnia makes everything worse.
   - What I wish I do when I get [insomnia](/insomnia).
 - [Physical health](/physical-health), especially cardio.
-- Daily Stream of Concious Journalling
+- Daily Stream of Conscious Journaling
 - [Meditation](/siy)
 - Talking to the [voices in my head](/voices)
 - More ideas from my [eulogy](/eulogy)
@@ -66,11 +66,11 @@ I've tried lots of things, being consistent is hard, especially when you get dep
 ### Related notes I plan to write
 
 - [Shame](/shame)
-- [Imposter Syndrome ](/imposter)
+- [Impostor Syndrome ](/imposter)
 - [Psychic Weight](/psychic-weight)
 - [Your Idle loop](/idle-loop)
 
-### Books On Deperession
+### Books On Depression
 
 [The Noonday Demon: An Atlas Of Depression](http://www.amazon.com/Noonday-Demon-Atlas-Depression/dp/1501123882/ref=sr_1_1?ie=UTF8&qid=1455117245&sr=8-1&keywords=atlas+of+depression)
 An extremely well written book about depression. It helps a reader understand the experience of depression from a superb story teller. This is written by the author of the ted talk.
@@ -89,6 +89,6 @@ I find these videos great discussions on how to head off depression, especially 
 
 {% include youtube.html src="LO1mTELoj6o" %}
 
-**Keep the core spinng** - A COVID-19 themed tale of how to maintain structure in your life to avoid drifting. Skip COVID though it's equally applicable.
+**Keep the core spinning** - A COVID-19 themed tale of how to maintain structure in your life to avoid drifting. Skip COVID though it's equally applicable.
 
 {% include youtube.html src="snAhsXyO3Ck" %}
