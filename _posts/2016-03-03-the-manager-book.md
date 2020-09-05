@@ -142,47 +142,43 @@ An acid test:
 
 I run a factory which produces widgets and has employees. For those in the industry this translates to:
 
-| Dimension                          | Analog               | Metrics    | Success Means                                                                                                                                                                         |
-| ---------------------------------- | -------------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Business Results                   | Produced Widgets     | [l20](l20) | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.                            |
-| High performance people and teams  | Factory Workers      | [l21](l21) | Workers in the factory are healthy, learning, want to come to work every day, and getting along with co-workers.                                                                      |
-| Engineering Efficiency and Process | Operating procedures | [l22](l22) | The factory is efficient: Production good and improving. Widgets comes out consistently and on schedule? New employees know what to do. Everyone knows what to do during emergencies? |
-| Technical Assets                   | Factory machines     | [l23](l23) | Machines in the factory adjusted quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency                                   |
+| Dimension                          | Analog               | Metrics and Measures | Success Means                                                                                                                                                                         |
+| ---------------------------------- | -------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Business Results                   | Produced Widgets     | [l20](l20)           | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.                            |
+| High performance people and teams  | Factory Workers      | [l21](l21)           | Workers in the factory are healthy, learning, want to come to work every day, and getting along with co-workers.                                                                      |
+| Engineering Efficiency and Process | Operating procedures | [l22](l22)           | The factory is efficient: Production good and improving. Widgets comes out consistently and on schedule? New employees know what to do. Everyone knows what to do during emergencies? |
+| Technical Assets                   | Factory machines     | [l23](l23)           | Machines in the factory adjusted quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency                                   |
 
 <div> </div>
 
 - l20
-- Produced Widgets..
-- are wanted by customers,
-- are produced on time and budget.
+- Are wanted by customers
+- Are produced on time and budget.
 
 <div> </div>
 
 - l21
-- Factory workers..
-- are happy based on surveys,
-- are getting promos frequently
-- recommend joining the factory to their friends
-- work at the factory for several years
+- Are happy based on surveys
+- Are getting promos frequently
+- Recommend joining the factory to their friends
+- Work at the factory for several years
 
 <div> </div>
 
 - l22
-- Procedures Ensure..
-- workers are efficient and safe with minimal effort
-- mistakes are learned once, and never repeated?
-- continuous improvement is occurring
-- variance is low
-- over time work is not required
+- Workers are efficient and safe with minimal effort
+- Mistakes are learned once, and never repeated?
+- Continuous improvement is occurring
+- Variance is low
+- Over time work is not required
 
 <div> </div>
 
 - l23
-- Factory machines ...
-- support a wide range of widgets
-- can be extended to build new widgets at low cost
-- have have availability
-- operate at low cost
+- Support a wide range of widgets
+- Can be extended to build new widgets at low cost
+- Have have availability
+- Operate at low cost
 
 ### Hardest part about being a manager
 
