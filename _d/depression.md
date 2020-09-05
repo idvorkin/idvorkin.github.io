@@ -12,7 +12,7 @@ imagefeature: https://github.com/idvorkin/blob/raw/master/noun-depression.png
 
 When you're depressed you don't think you've put on a gray veil - seeing the world through the haze of a bad mood. You think that a veil has been taken away. The veil of happiness, and you believe you're seeing the world as it truly is: alone, petrifying, and painful. But the truth lies. The depressed say "No one loves me." And you say, "I love you, your wife loves you, your mother loves you." and the depressed ignore you. The depressed will continue, "None of this matters, we're just going to die in the end." To which you have to say, "That's true, but I think right now should focus on what to have for breakfast."
 
-_(Quotes butchured from Andrew Solomon's superb TED talk, as are many parts of this post)_
+_(Quotes butchered from Andrew Solomon's superb TED talk, as are many parts of this post)_
 
 Unless you've experienced depression, you can't understand it. Even having experienced depression, I doubt you'll have the words to describe, let alone discuss depression. Andrew Solomon's TED talk is gripping, depressing, funny, hopeful, and insightful. If you' have a reason to read this post, you need to watch the video. It's worth the full 30 minutes.
 
@@ -23,8 +23,8 @@ Unless you've experienced depression, you can't understand it. Even having exper
 
 - [Depression, Grief and Sadness](#depression-grief-and-sadness)
 - [Anxiety, Depression's cruel enforcer](#anxiety-depressions-cruel-enforcer)
-- [My emotional health practices](#my-emotional-health-practices)
-- [My experiences with depression and anxiety](#my-experiences-with-depression-and-anxiety)
+- [My own experiences with depression and anxiety](#my-own-experiences-with-depression-and-anxiety)
+- [My antidotes](#my-antidotes)
 - [Related notes I plan to write](#related-notes-i-plan-to-write)
 - [Books On Depression](#books-on-depression)
 - [Videos](#videos)
@@ -44,27 +44,27 @@ In it's weaker forms, anxiety is the difference between reality and expectations
 
 _And then the anxiety set in. If you told me that I'd have to be depressed for the next month, I would say, "As long I know it'll be over in November, I can do it." But if you said to me, "You have to have acute anxiety for the next month," I would rather slit my wrist than go through it. It was the feeling all the time like that feeling you have if you're walking and you slip or trip and the ground is rushing up at you, but instead of lasting half a second, the way that does, it lasted for six months. It's a sensation of being afraid all the time but not even knowing what it is that you're afraid of. And it was at that point that I began to think that it was just too painful to be alive, and that the only reason not to kill oneself was so as not to hurt other people._
 
-I can't describe it in a way that conveys the feeling, other then saying it's a constant loop playing in my head saying _"Oh my god, Oh my god, Oh my god"_
+I can't describe my anxiety in a way that conveys the feeling. All I can say is there's a constant loop playing in my head saying _"Oh my god, Oh my god, oh my god"_
 
-### My emotional health practices
+### My own experiences with depression and anxiety
+
+### My antidotes
 
 I've tried lots of things, being consistent is hard, especially when you get depressed. Here are many of the things I've tried
 
-- Most important is sleep, when you lose that, it's over.
-  - When I get really stressed, I have no qualms take sleeping pills. Having insomnia makes everything worse.
-  - What I wish I do when I get [insomnia](/insomnia).
+- Sleep is critical. Guard it [fiercely](/insomnia).
 - [Physical health](/physical-health), especially cardio.
 - Daily Stream of Conscious Journaling
+- Weekly psychiatrist appointment
 - [Meditation](/siy)
-- Talking to the [voices in my head](/voices)
 - More ideas from my [eulogy](/eulogy)
 - [7 Habits](/7-habits)
 - [Getting to yes with yourself](/getting-to-yes-with-yourself)
+- Talking to the [voices in my head](/voices)
 - Getting things done (GTD)
+- Fierce [Work life balance](https://bit.ly/igor-wlb-manifesto)
 
 {%include blob_image_float_right.html src="noun-depression.png" %}
-
-### My experiences with depression and anxiety
 
 ### Related notes I plan to write
 
