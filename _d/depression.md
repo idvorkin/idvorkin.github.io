@@ -28,6 +28,7 @@ Unless you've experienced depression, you can't understand it. Even having exper
 - [Related notes I plan to write](#related-notes-i-plan-to-write)
 - [Books On Depression](#books-on-depression)
 - [Videos](#videos)
+- [Stats](#stats)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -97,3 +98,20 @@ I find these videos great discussions on how to head off depression, especially 
 **Keep the core spinning** - A COVID-19 themed tale of how to maintain structure in your life to avoid drifting. Skip COVID though it's equally applicable.
 
 {% include youtube.html src="snAhsXyO3Ck" %}
+
+### Stats
+
+From [CDC](https://www.cdc.gov/nchs/products/databriefs/db76.htm)
+
+- 11% of US 12+ take antidepressants
+- 22.8% of Females 40-50 take anti-depressants
+
+From [John Hopkins Medicine](https://www.hopkinsmedicine.org/health/wellness-and-prevention/mental-health-disorder-statistics)
+
+- 10% of Americans suffer from a depressive illness (major depression, bipolar disorder, or dysthymia).
+- 18% of people ages 18-54, have an anxiety disorder.
+
+From: [National Institute of Mental Health](https://www.nimh.nih.gov/health/statistics/mental-illness.shtml)
+
+- 19% of US adults have Any Mental Illness (AMI)
+- 5% of US adults have Severe Mental Illness (SMI). SMI implies illness substantially interferes with or limits one or more major life activities.
