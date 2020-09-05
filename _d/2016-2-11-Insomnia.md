@@ -18,7 +18,15 @@ If you want advice on how to deal with insomnia, do NOT ask a person who hasn't 
 
 {%include blob_image_float_right.html src="problem-size.png" %}
 
-A common pattern when I can't sleep is I wake up after sleeping for 4-6 hours (which for me tends to be around 1-2 am) feeling overwhelmed and dreading doing something, or thinking I won't be able succeed. At that point, I'm half a sleep, half awake ruminating on whatever has me overwhelmed. Since I'm not really sleeping, I'm just tossing in turning I'm A) not getting sleep B) getting myself more worked up, and C) usually setting myself up to sleep in when my alarm goes off since I'm too tired. A far better pattern to follow is:
+A common pattern when I can't sleep is I wake up after sleeping for 4-6 hours (which for me tends to be around 1-2 am) feeling overwhelmed and dreading doing something, or thinking I won't be able succeed. At that point, I'm half a sleep, half awake ruminating on whatever has me overwhelmed.
+
+Since I'm not really sleeping, I'm just tossing in turning and as a result:
+
+- I'm not getting sleep
+- I'm getting myself more worked up
+- I'm setting myself up to sleep in when my alarm goes off since I'm too tired.
+
+A far better pattern to follow is:
 
 Read a book for 20 minutes, if I'm awake at the end of 20 minutes, get up, grab a coffee and start working on the thing I'm dreading. Usually I can lean in, make a tonne of progress, and feel better about it. Often, I'll even get into a bit of flow, and pound through several hours of the task feeling more confident and relieved. At that point, I can either continue with my day or go back to bed for a quick 20 minute nap.
 
@@ -33,7 +41,8 @@ If the problem isn't a task I can work on, then I should clear my head, trying t
 After a few days of inadequate sleep, I'll often be trying to deal with sleep deprivation. When that happens it's about catching up.
 
 - The essential activity, is getting back on my natural sleep cycle. I do this best through sleep deprivation, not sleep catchup.
-- Forcing myself out of bed at wake up time - even if I didn't get enough sleep.
-- Not drinking caffeine or napping for 2 long. If I'm exhausted I'll fall asleep on time (or even early) the next day.
+- I take prescription sleeping pills (aka Ambien/Lunesta/Sonata).
+- I force myself out of bed at wake up time - even if I didn't get enough sleep.
+- I do not drinking caffeine or nap. The best path to fall asleep on time (or even early) is sleep exhaustion
 
 Sleep well.
