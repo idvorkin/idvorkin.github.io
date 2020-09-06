@@ -48,6 +48,9 @@ For example, it is impractical to measure the height of every adult woman, but y
 
 ### Confidence Interval
 
+This is the simplest in laymens terms
+http://www.bandolier.org.uk/painres/download/whatis/What_are_Conf_Inter.pdf
+
 https://blog.minitab.com/blog/adventures-in-statistics-2/understanding-hypothesis-tests-significance-levels-alpha-and-p-values-in-statistics
 https://web.ma.utexas.edu/users/mks/statmistakes/overviewfreqCI.html
 
