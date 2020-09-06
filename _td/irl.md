@@ -6,53 +6,45 @@ title: In Real Life Diary
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/irl.md)_
 
-# In Real Life Diary
-
-<!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Physical Health](#physical-health)
-    - [Personal Trainer](#personal-trainer)
-    - [Calf Health](#calf-health)
-    - [Knee Health](#knee-health)
-    - [Booger Health](#booger-health)
-    - [Skin Health](#skin-health)
-    - [Wrist Health](#wrist-health)
-    - [Standing Desks](#standing-desks)
-    - [Gym Stuff](#gym-stuff)
-    - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
+  - [Personal Trainer](#personal-trainer)
+  - [Calf Health](#calf-health)
+  - [Knee Health](#knee-health)
+  - [Booger Health](#booger-health)
+  - [Skin Health](#skin-health)
+  - [Wrist Health](#wrist-health)
+  - [Standing Desks](#standing-desks)
+  - [Gym Stuff](#gym-stuff)
+  - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
 - [Emotional Health](#emotional-health)
-    - [Meditation](#meditation)
-    - [Therapist](#therapist)
+  - [Meditation](#meditation)
+  - [Therapist](#therapist)
 - [Cognitive Health](#cognitive-health)
-    - [Blogging](#blogging)
-    - [Weekly goals](#weekly-goals)
+  - [Blogging](#blogging)
+  - [Weekly goals](#weekly-goals)
 - [Identity Health](#identity-health)
-    - [Eulogy Writing](#eulogy-writing)
+  - [Eulogy Writing](#eulogy-writing)
 - [Personal Carry](#personal-carry)
-    - [Fanny Pack](#fanny-pack)
-    - [Gym Bag](#gym-bag)
-    - [Work Bag](#work-bag)
+  - [Fanny Pack](#fanny-pack)
+  - [Gym Bag](#gym-bag)
+  - [Work Bag](#work-bag)
 - [Bikes](#bikes)
-    - [Bike accouterments](#bike-accouterments)
+  - [Bike accouterments](#bike-accouterments)
 - [Car Tech](#car-tech)
-- [Camera](#camera)
-    - [Lenses](#lenses)
 - [Morning Routine](#morning-routine)
-    - [Weekend morning routine](#weekend-morning-routine)
-    - [Weekday morning routine](#weekday-morning-routine)
-    - [Morning Kryptonite](#morning-kryptonite)
+  - [Weekend morning routine](#weekend-morning-routine)
+  - [Weekday morning routine](#weekday-morning-routine)
+  - [Morning Kryptonite](#morning-kryptonite)
 - [Tech Stuff](#tech-stuff)
-    - [Computers](#computers)
-    - [Monitors](#monitors)
+  - [Computers](#computers)
+  - [Monitors](#monitors)
+- [Camera Stuff](#camera-stuff)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## Physical Health
-
-- [Physical Health](https://idvorkin.github.io/physical-health) - My original article on physical health
-- [Tech for health](http://idvorkin.github.io/tech-health-toys) - A list of tech products I've used and tried.
 
 ### Personal Trainer
 
@@ -197,14 +189,6 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 - Wireless Air Play - ~ 500\$. OMG - having CarPlay (especially on iOS 13) without plugging in your phone - wow!
 - Back up Camera ~ 30\$. OMG - Hard to believe I went years without one.
 
-## Camera
-
-I ended up getting an m200 because a time of purchase it was the only cheap cannon with clean HDMI output. I'd have prefered the m50, but it didn't have clean HDMI output which was a deal breaker.
-
-### Lenses
-
-I'm a fan of pancake lenses. I think that's the top value of an SLR, getting fantastic low light people photos.
-
 ## Morning Routine
 
 At my best, I roll out of bed either when my eyes open or at 5am, what ever comes first.
@@ -252,3 +236,23 @@ I have two common failure modes to my morning routine.
 
 - 34" wide screen - not a huge fan. Good for wide screen movies (but Netflix/YouTube rarely has this resolution)
 - 40" 3840x2160 - Awesome, I love it! Highly recommend
+
+## Camera Stuff
+
+I ended up getting an m200 because a time of purchase it was the only cheap cannon with clean HDMI output. I'd have prefered the m50, but it didn't have clean HDMI output which was a deal breaker. My use case is mostly video recording or webcamming on a tripod, but I'll take it out of the house occasionally.
+
+[Canon m200](https://www.amazon.com/gp/product/B07XYPVFCH/) - Not ideal, but the only m-series with clean HDMI out. Biggest gaps - 1) No MF button 2) 4K sucks 3) A bit too small for SLR lenses
+
+[HDMI to USB](https://www.amazon.com/gp/product/B0894DDD7H/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1) - Be glad I found this, I took several tries to find one that was good.
+
+[Fake Battery](https://www.amazon.com/gp/product/B07KC7QCM1/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) Weird, it's like it's the early 2000s
+
+[Very good lens - F2.0/22mm](https://www.amazon.com/Canon-0-866-Compact-System-proyecci%C3%B3n/dp/B008NF8BRI/ref=sr_1_1?dchild=1&keywords=canon+f2+22m&qid=1599424169&s=electronics&sr=1-1) - Pancake lens for the win. A bit too wide for a webcam that's behind your monitor
+
+[Awesome Lens - F1.4/30mm](https://www.amazon.com/gp/product/B081QNNCCJ/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - Super expensive, but awesome bokeh with a reasonable zoom works great at 2 feet.
+
+[Wrist Strap](https://www.amazon.com/gp/product/B017L3689K/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) - Wrist straps much better then neck strap.
+
+[Stream Deck](https://www.amazon.com/Elgato-Stream-Deck-XL-customizable/dp/B07RL8H55Z/ref=sr_1_2?dchild=1&keywords=stream+deck+xl&qid=1599424060&s=electronics&sr=1-2) - Sounds silly but awesome for controlling OBS. Probably worth it's own post.
+
+Bags - who knows!
