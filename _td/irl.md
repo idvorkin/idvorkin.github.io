@@ -37,10 +37,10 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
   - [Weekend morning routine](#weekend-morning-routine)
   - [Weekday morning routine](#weekday-morning-routine)
   - [Morning Kryptonite](#morning-kryptonite)
-- [Tech Stuff](#tech-stuff)
+- [Tech](#tech)
   - [Computers](#computers)
   - [Monitors](#monitors)
-- [Camera Stuff](#camera-stuff)
+- [Camera](#camera)
 
 <!-- vim-markdown-toc -->
 
@@ -135,7 +135,7 @@ I've been seeing a therapist weekly since my early 30's. It provides me several 
 - A cathardic release
 - Access to a less distorted (it's still subject to my inputs) view of my reaity.
 - An early reminder for when my world view is getting both too positive, and too negative.
-- Coachin on relationship based discussion
+- Coaching on relationship based discussion
 - A constant reminder of the importance of my emotional health
 - A historical remidner of previous states
 
@@ -215,7 +215,7 @@ I have two common failure modes to my morning routine.
 - Hitting snooze when my alarm goes off. The worst of all words, not sleeping, and not being up and doing stuff.
 - Lying in bed awake when I wake up before 5. Sometimes I wake up and can't fall back asleep @ 3 or 4 (which isn't crazy cuz sometimes I go to bed @ 7 or 8). Similar to hitting snooze, I'm not sleeping, and I'm not accomplishing anything.
 
-## Tech Stuff
+## Tech
 
 - iPhone Pro
 - iPad Pro
@@ -237,7 +237,7 @@ I have two common failure modes to my morning routine.
 - 34" wide screen - not a huge fan. Good for wide screen movies (but Netflix/YouTube rarely has this resolution)
 - 40" 3840x2160 - Awesome, I love it! Highly recommend
 
-## Camera Stuff
+## Camera
 
 I ended up getting an m200 because a time of purchase it was the only cheap cannon with clean HDMI output. I'd have prefered the m50, but it didn't have clean HDMI output which was a deal breaker. My use case is mostly video recording or webcamming on a tripod, but I'll take it out of the house occasionally.
 
