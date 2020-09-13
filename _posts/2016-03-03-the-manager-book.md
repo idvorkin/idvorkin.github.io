@@ -50,6 +50,8 @@ This post uses the word manager, but the majority of topics are applicable all s
   - [Agency and Psychological Safety](#agency-and-psychological-safety)
 - [Process and Mechanism](#process-and-mechanism)
   - [Theory of Process](#theory-of-process)
+  - [The dark side of process](#the-dark-side-of-process)
+  - [That sounds like good intentions - Factories and Artisans](#that-sounds-like-good-intentions---factories-and-artisans)
   - [Never have a human do what a computer can do.](#never-have-a-human-do-what-a-computer-can-do)
   - [Rich communication - Team meeting](#rich-communication---team-meeting)
   - [Continuous Learning - Deep Dives, Knowledge Transfer and Guest Speakers](#continuous-learning---deep-dives-knowledge-transfer-and-guest-speakers)
@@ -625,11 +627,24 @@ How:
 
 Thoughts:
 
+- The organizational equivalent of [habits](/habits)
 - Culture vs Process
+
+### The dark side of process
+
+The upside of process is that we can do things without thinking. The downside is that we stop paying attention to process cost, small errors, and become resistant to change, which is often positive at a minimum and often required.
+
+This can be especially true when process is created high in the org chart to solve a specific problem in another part of the org chart, and then applied universally, even where the problem does not exist.
+
+**The antidote** - A review of process is essential to ensure it's still getting the maximum value with minimum cost.
+
+**Toxic process** - Bad process will disenfranchise ownership and stifling passion. It'll slow down things that can be fast. There is nothing more powerful then a motivated engineer, don’t let process take that away.
+
+### That sounds like good intentions - Factories and Artisans
+
 - Process vs Good Intentions
 - Toyota Assembly line vs Artisan
-- NEVER: Disenfranchising ownership
-  - Nothing more powerful then a motivated engineer, don’t let process take that away.
+- That passion variance
 
 ### Never have a human do what a computer can do.
 
