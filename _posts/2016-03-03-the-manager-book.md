@@ -711,11 +711,13 @@ This process gets harder then it sounds based on the state and ambiguity of the 
 
 There are some more concepts I need to flesh out:
 
-Personal growth and career development - People should strive for projects that stretch them and make them grow. This is always a business priority (to make the team better), and usually a personal preference. There are times when people have other things going on, and don't want to grow, and that must be honored at a high priority.
+**Personal growth and career development** People should strive for projects that stretch them and make them grow. This is always a business priority (to make the team better), and usually a personal preference. There are times when people have other things going on, and don't want to grow, and that must be honored at a high priority.
 
-- Opportunity cost - If a senior developer is doing something a junior developer is doing, then you have turned your senior developer into a junior developer and no-one is doing the work of a senior developer. This is also why teams need a blend of junior, intermediate and senior developers.
-- Right sizing projects, and support - When people are growing, stuff is going to be hard, and it's important they don't take on more then they can chew (see ability to succeed", even when the project is the right size, it's important the person has the dynamic support and mentorship they need.
-- Keeping slack in the system - Anxiety is the difference between reality and expectations. Slack is the tool that helps us better model reality.
+**Opportunity cost** - If a senior developer is doing something a junior developer is doing, then you have turned your senior developer into a junior developer and no-one is doing the work of a senior developer. This is also why teams need a blend of junior, intermediate and senior developers.
+
+**Right sizing projects, and support** When people are growing, stuff is going to be hard, and it's important they don't take on more then they can chew (see ability to succeed", even when the project is the right size, it's important the person has the dynamic support and mentorship they need.
+
+**Keeping slack in the system** Anxiety is the difference between reality and expectations. Slack is the tool that helps us better model reality.
 
 ### Group Bonding
 
