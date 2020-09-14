@@ -5,28 +5,32 @@ title: Statistics
 ---
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Philosophy](#philosophy)
-    - [Frequentist](#frequentist)
-    - [Bayes](#bayes)
-    - [Computer Based](#computer-based)
-    - [Twenty First Century](#twenty-first-century)
+  - [Frequentist](#frequentist)
+  - [Bayes](#bayes)
+  - [Computer Based](#computer-based)
+  - [Twenty First Century](#twenty-first-century)
 - [Sample vs Population](#sample-vs-population)
-    - [Inferential Statistics](#inferential-statistics)
-    - [Confidence Interval](#confidence-interval)
-    - [P-Values](#p-values)
+  - [Inferential Statistics](#inferential-statistics)
+  - [Confidence Interval](#confidence-interval)
+  - [P-Values](#p-values)
 - [Types of Error](#types-of-error)
+  - [Type 1 vs Type 2](#type-1-vs-type-2)
+  - [Precision vs Recall](#precision-vs-recall)
+  - [Accuracy vs Precision](#accuracy-vs-precision)
 - [Multi Arm Bandits](#multi-arm-bandits)
-    - [Explore vs Exploit](#explore-vs-exploit)
-    - [Episilon Greedy](#episilon-greedy)
-    - [Soft Max](#soft-max)
+  - [Explore vs Exploit](#explore-vs-exploit)
+  - [Episilon Greedy](#episilon-greedy)
+  - [Soft Max](#soft-max)
 - [Measures](#measures)
 - [Robust Statistics](#robust-statistics)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## Philosophy
 
@@ -75,6 +79,28 @@ How does Amazon's WebLab tool handle this?
 How does Facebook Deltoid tool handle this?
 
 ## Types of Error
+
+### Type 1 vs Type 2
+
+- Type 1 = False Positives
+- Type 2 = False Negative
+
+### Precision vs Recall
+
+In [ML](machine-learning), we talk about precision and recall:
+
+- **Precision (Exactness)** - Likely hood a result is a true positive. TP / (TP + FP). % of things you say are true, are actually true.
+
+- **Recall (Completeness)** - Likely a true positive. TP / (TP + FN). % of true things you identify in the entire space
+
+### Accuracy vs Precision
+
+In measurement we talk about accuracy and precision
+
+Imagine a target on a bullseye, and firing multiple bullets:
+
+- Accuracy = How close to the bullseye are the bullets. Arguably this is diffence of median from bullseye
+- Precision = How must variance is the "spray" of bullets. Arguably this is the standard deviation.
 
 ## Multi Arm Bandits
 
