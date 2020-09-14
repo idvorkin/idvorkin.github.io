@@ -5,32 +5,31 @@ title: Statistics
 ---
 
 <!-- prettier-ignore-start -->
-<!-- prettier-ignore-end -->
-
 <!-- vim-markdown-toc GFM -->
 
 - [Philosophy](#philosophy)
-  - [Frequentist](#frequentist)
-  - [Bayes](#bayes)
-  - [Computer Based](#computer-based)
-  - [Twenty First Century](#twenty-first-century)
+    - [Frequentist](#frequentist)
+    - [Bayes](#bayes)
+    - [Computer Based](#computer-based)
+    - [Twenty First Century](#twenty-first-century)
 - [Sample vs Population](#sample-vs-population)
-  - [Inferential Statistics](#inferential-statistics)
-  - [Confidence Interval](#confidence-interval)
-  - [P-Values](#p-values)
+    - [Inferential Statistics](#inferential-statistics)
+    - [Confidence Interval](#confidence-interval)
+    - [P-Values](#p-values)
 - [Types of Error](#types-of-error)
-  - [Type 1 vs Type 2](#type-1-vs-type-2)
-  - [Precision vs Recall](#precision-vs-recall)
-  - [Accuracy vs Precision](#accuracy-vs-precision)
+    - [Type 1 vs Type 2](#type-1-vs-type-2)
+    - [Precision vs Recall](#precision-vs-recall)
+    - [Accuracy vs Precision](#accuracy-vs-precision)
 - [Multi Arm Bandits](#multi-arm-bandits)
-  - [Explore vs Exploit](#explore-vs-exploit)
-  - [Episilon Greedy](#episilon-greedy)
-  - [Soft Max](#soft-max)
+    - [Explore vs Exploit](#explore-vs-exploit)
+    - [Episilon Greedy](#episilon-greedy)
+    - [Soft Max](#soft-max)
 - [Measures](#measures)
 - [Robust Statistics](#robust-statistics)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## Philosophy
 
