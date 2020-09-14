@@ -202,8 +202,9 @@ The class of problem being solved determines the effectiveness of ML. To measure
 
 ### Classification - Precision and Recall
 
-Precision (Exactness) - Likely hood a result is a true positive. TP / (TP + FP)
-Recall (Completeness) - Likely a true positive. TP / (TP + FN)
+- **Precision (Exactness)** - Likely hood a result is a true positive. TP / (TP + FP). % of things you say are true, are actually true.
+
+- **Recall (Completeness)** - Likely a true positive. TP / (TP + FN). % of true things you identify in the entire space
 
 Precision and Recall are in opposition, and you need to decide which of these values you'll optimize for.
 
