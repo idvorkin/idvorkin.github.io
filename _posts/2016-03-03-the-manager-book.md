@@ -214,11 +214,11 @@ They need to represent the team in technical forums, swag costs, represent laws 
 
 They also need to be experts at working with data systems and analysis, as much of their time will be analyzing customer, business, operational, and technical data.
 
-Once they become managers they have very limited time to increase technical muscle, so I recommend before switching they are:
+Once developers become managers they have little time to use their technical muscle, and their technical apptitude declines do to lack of use. Therefore I recommend before switching they are:
 
-An experienced engineer before switching to management
-A expert in at multiple languages (for me python, and C#)
-A expert in multiple technical domains (for me networking and security).
+- A very experienced engineer (MSFT L65, AMZN L6, FB E6).
+- A expert in at multiple languages (for me python, and C#)
+- A expert in multiple technical domains (for me networking and security).
 
 ### Should managers code?
 
