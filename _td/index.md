@@ -75,6 +75,7 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
   - [PlantUML in Markdown](#plantuml-in-markdown)
   - [Quirks](#quirks)
 - [Windows Managers](#windows-managers)
+- [ClI Fun](#cli-fun)
 - [CLI Screen Recoding](#cli-screen-recoding)
   - [Show pressed keys](#show-pressed-keys)
 - [OSX Misc](#osx-misc)
@@ -592,6 +593,13 @@ Tools that let you re-tile
 
 - OSX - [Better Snap Tool](https://apps.apple.com/us/app/bettersnaptool/id417375580?mt=12)
 - Windows - Windows Power Toys - [FancyZones](https://github.com/microsoft/PowerToys)
+
+### ClI Fun
+
+Here's some silly, but fun stuff:
+
+- asciiquarium - fishbowl in the terminal
+- cmatrix - the matrix in the terminal
 
 ### CLI Screen Recoding
 
