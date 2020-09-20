@@ -63,3 +63,19 @@ For me, it's long enough to work up a sweat, but short enough to not eat up my d
 #### My body part really hurts, what should I do?
 
 I've had lots of injuries, here's my various [braces](/td/irl#physical-health)
+
+#### Should I get a trainer?
+
+Trainers are expensive, but heart attacks are even more expensive, and on top of money, they really suck up your energy and reduce your quality of life.
+
+I put off getting a trainer for 20 years. I though I was very knowledgable in exercise, physiology, and was motivaed having a gym routine where I went every morning to do cardio, and I wasn't interested in getting strong. Eventually I decided I'd like some more injury prefention, so got a trainer and told him my my goal was to increase my injury resillance, and he said OK, lets do mobility workouts then.
+
+- The mobility movements are more strenous then my normal cardio routines. Every movement we do seemed like it could happen naturally through day to day activities and felt incredibly weak, a real warning to injury.
+
+- He also took a look at my cardio routine, and changed it to be a high intensity Training - Wow, same amount of time,so much more intense, and so energized afterwards.
+
+- Many days I feel lazy, I turn off my brain and just let him tell me what to do, and when to push myself.
+
+- I've had RSI in my wrists, injuries everywhere, and as we do exercises I can be like, oh this feels like it'll give out,and we instantly change the exercise.
+
+So yeah, trainers has been great.
