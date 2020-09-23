@@ -53,6 +53,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [Timing the markets](#timing-the-markets)
 - [Other questions](#other-questions)
 - [Other Resources](#other-resources)
+    - [How much is 1%](#how-much-is-1)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -255,3 +256,8 @@ Remember:
 ## Other Resources
 
 [Visualizing the worlds money](https://www.visualcapitalist.com/all-of-the-worlds-money-and-markets-in-one-visualization-2020/)
+
+### How much is 1%
+
+- 1% of household AGI (gross household income) [475K](https://dqydj.com/average-median-top-household-income-percentiles/) amazingly up from 445K in 2018.
+- 1% of wages = [737K](https://www.investopedia.com/personal-finance/how-much-income-puts-you-top-1-5-10/)
