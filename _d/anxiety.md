@@ -44,19 +44,20 @@ Anxiety is the difference between reality and expectations.
 
 ### Expectations
 
-Your expectation is whatyo you
-Being in control is a simplification. Regardless of what you want to achieve, you may be hit be a strike of lightning, and you'll lose the ability to control it.
+Your expectation is what you want to achieve (aka control). You assumed you had control over this, but being in control is a simplification (though a very useful one). In an extreme example, regardless of what you want to control, you may be hit by a bolt of lightning, and you'll lose the ability to control it.
 
-The closest to control that can be achieved is maximum influence over the situation.
+Instead of desire to control, aspire to have the maximum influence over the outcome. A few models can be applied to help.
 
-1. Expecations is often achieving desired fixed position.
-1. A few models can be applied to expecations.
+Expectations is often achieving desired fixed position.
+
 1. First, broaden the desired end state - from Getting to Yes, convert your position into a desired outcome (What do you really need to solve).
-1. Second, focus on your circle of include - From 7 Habits, Habit 1, focus on your circle of influence not circle of concern.
-1. By changing your desired reality from "I need X to happen" to "I will influence to get closer to my desired outcome for X", you are focused on your true need, and converting to action.
-1. This reduces ANxiety as the desired reality is now equal to your expectations.
-1. Parodixaclly, by focusing on your circle of influence, you increase your influence, making you more effective in achieving the desired outcome.
-1. Naively, you can conclude someone gave up and shirking responsibility by not going for it. However, assuming you are exerting your maximum influence, this is the closest you can get to achieving your desired outcome, being upset because you can't achieve the impossible, doesn't help anyone.
+1. Second, focus on your circle of include - From 7 Habits, Habit 1, focus on your circle of influence not circle of concern (What will **I do** to improve the situation)
+
+- By changing your desired reality from "I need X to happen" to "I will influence to get closer to my desired outcome for X", you are focused on your true need, and converting to action. This reduces Anxiety as the desired reality is now equal to your expectations, and you can focus on influening
+
+Paradoxically, by focusing on your circle of influence, you increase your influence, making you more effective in achieving the desired outcome.
+
+Naively, you can conclude someone gave up and is shirking responsibility by 'settling' for influence not control. However, assuming you are exerting your maximum influence, this is the closest you can get to achieving your desired outcome, being upset because you can't achieve the impossible, doesn't help anyone.
 
 Now, to be responsible, you need to communicate when there is a change in outcome, and apply WIN/WIN, Seek First to Understand, Synergy and Getting To Yes to adjust and keep everyone informed.
 
