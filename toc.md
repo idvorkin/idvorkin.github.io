@@ -163,5 +163,6 @@ Great video on keeping [the cores spinning in unexpected circumstances](https://
 ### Mental Breakdowns
 
 - [Depression](/Depression)
+- [Anxiety](/Anxiety)
 
 ### Cancer

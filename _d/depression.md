@@ -47,6 +47,8 @@ _And then the anxiety set in. If you told me that I'd have to be depressed for t
 
 I can't describe my anxiety in a way that conveys the feeling. All I can say is there's a constant loop playing in my head saying _"Oh my god, Oh my god, oh my god"_
 
+My notes on [anxeity](/anxiety)
+
 ### My own experiences with depression and anxiety
 
 Depression and anxiety have touched me and my family.
