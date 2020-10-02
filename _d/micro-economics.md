@@ -5,8 +5,8 @@ comments: true
 inprogress: true
 tags:
 permalink: /micro-economics
-redirect_from:
-  - /
+redirect_from: /microeconomics
+  /microecon
 ---
 
 Supply, demands and markets, oh my!
