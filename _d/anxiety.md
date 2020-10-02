@@ -1,40 +1,41 @@
 . ---
 layout: post
 title: "Anxiety, the gap between reality and expectations"
-comments: true
-inprogress: true
 tags:
 permalink: /anxiety
+imagefeature: https://github.com/idvorkin/blob/raw/master/noun-depression.png
 redirect_from:
 
 - /anxious
 
-### Anxiety - Reality vs Expectations
+---
 
-### The pain and suffering of the mind
+Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The
+pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.
 
-1. Anxiety is Pain, Stress is Suffering
-1. Pain is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective.
-1. Psychiatrist calls this the difference between the desire to control, and the fact it's uncontrallable.
-
+<!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Reality](#reality)
-  - [Expectations](#expectations)
-  - [Closing the gap](#closing-the-gap)
-- [The Perspective Graph](#the-perspective-graph)
-  - [Pain=Anxiety narrows perspective to resolve immediate danger.](#painanxiety-narrows-perspective-to-resolve-immediate-danger)
-- [Prophylactics - Preventive Medicine](#prophylactics---preventive-medicine)
-  - [Perspective](#perspective)
-  - [Caring vs Mattering](#caring-vs-mattering)
+- [Anxiety](#anxiety)
+    - [Reality](#reality)
+    - [Expectations](#expectations)
+    - [Closing the gap](#closing-the-gap)
+- [Perspective](#perspective)
+    - [Narrows perspective to resolve immediate danger.](#narrows-perspective-to-resolve-immediate-danger)
+    - [Caring vs Mattering](#caring-vs-mattering)
 - [Detection](#detection)
 - [Antidotes](#antidotes)
 - [Personal Examples](#personal-examples)
 - [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
-### Reality
+### Anxiety
+
+#### Reality
+
+1. Psychiatrist calls this the difference between the desire to control, and the fact it's uncontrallable.
 
 #### Expectations
 
@@ -63,7 +64,7 @@ A way to automatically increase perspective is humor, it breaks us out of our re
 
 Intresting, I picked up a mantra, "This too shall pass", with the idea of smoothing out the highs and the lows, the Pschyatrist observed this is the buddhist impermance idea, which BTW is not apathy. So this is helpful as it reducing suffering, which is attachment, to cut attachment, the good isn't as valuable, and the bad isn't as concerning. Yup, I wonder if switching my mantra from this too shall pass to more, how does this look in a larger time frame?
 
-### The Perspective Graph
+### Perspective
 
 Perspective can be imagined in two dimensions - X=time and Y=Co(t).
 
@@ -81,15 +82,9 @@ Therefore, perspective is the area of the graph being considered. This is likely
 
 1. Proactively reminder to look at a larger time frame.
 
-#### Pain=Anxiety narrows perspective to resolve immediate danger.
+#### Narrows perspective to resolve immediate danger.
 
-Anxiety, being pain, reduces the perspective, and this leads to increased stress and suffering.
-
-### Prophylactics - Preventive Medicine
-
-#### Perspective
-
-Anxiety, being pain, reduces the perspective, and this leads to increased stress and suffering.
+Anxiety, being pain, reduces the perspective, and this leads to the suffering of stress
 
 1. Detection, as it's a sub concious process that happens
 2. Remind ourselves of the larger time dimension and then many aspects of our lives.
