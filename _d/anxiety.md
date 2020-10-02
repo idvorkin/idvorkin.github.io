@@ -1,4 +1,4 @@
----
+. ---
 layout: post
 title: "Anxiety, the gap between reality and expectations"
 comments: true
@@ -6,31 +6,8 @@ inprogress: true
 tags:
 permalink: /anxiety
 redirect_from:
-  - /anxious
-imagefeature: https://github.com/idvorkin/blob/raw/master/noun-depression.png
----
 
-Anxiety is the difference between reality and expectations.
-
-<!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
-
-- [Anxiety - Reality vs Expectations](#anxiety---reality-vs-expectations)
-- [The pain and suffering of the mind](#the-pain-and-suffering-of-the-mind)
-- [Reality](#reality)
-- [Expectations](#expectations)
-- [Closing the gap](#closing-the-gap)
-- [The Perspective Graph](#the-perspective-graph)
-    - [Pain=Anxiety narrows perspective to resolve immediate danger.](#painanxiety-narrows-perspective-to-resolve-immediate-danger)
-- [Prophylactics - Preventive Medicine](#prophylactics---preventive-medicine)
-    - [Perspective](#perspective)
-- [Detection](#detection)
-- [Antidotes](#antidotes)
-- [Personal Examples](#personal-examples)
-- [Other resources](#other-resources)
-
-<!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
+- /anxious
 
 ### Anxiety - Reality vs Expectations
 
@@ -40,9 +17,26 @@ Anxiety is the difference between reality and expectations.
 1. Pain is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective.
 1. Psychiatrist calls this the difference between the desire to control, and the fact it's uncontrallable.
 
+<!-- vim-markdown-toc GFM -->
+
+- [Reality](#reality)
+  - [Expectations](#expectations)
+  - [Closing the gap](#closing-the-gap)
+- [The Perspective Graph](#the-perspective-graph)
+  - [Pain=Anxiety narrows perspective to resolve immediate danger.](#painanxiety-narrows-perspective-to-resolve-immediate-danger)
+- [Prophylactics - Preventive Medicine](#prophylactics---preventive-medicine)
+  - [Perspective](#perspective)
+  - [Caring vs Mattering](#caring-vs-mattering)
+- [Detection](#detection)
+- [Antidotes](#antidotes)
+- [Personal Examples](#personal-examples)
+- [Other resources](#other-resources)
+
+<!-- vim-markdown-toc -->
+
 ### Reality
 
-### Expectations
+#### Expectations
 
 Your expectation is what you want to achieve (aka control). You assumed you had control over this, but being in control is a simplification (though a very useful one). In an extreme example, regardless of what you want to control, you may be hit by a bolt of lightning, and you'll lose the ability to control it.
 
@@ -61,7 +55,7 @@ Naively, you can conclude someone gave up and is shirking responsibility by 'set
 
 Now, to be responsible, you need to communicate when there is a change in outcome, and apply WIN/WIN, Seek First to Understand, Synergy and Getting To Yes to adjust and keep everyone informed.
 
-### Closing the gap
+#### Closing the gap
 
 So increasing your perspective. When it comes to the remodel stress, expand. Sure, right now there is pain, but look how small it is in the bigger picture, on the expected value through everythign else is still very hight, and that's likely the optimum point.
 
@@ -100,6 +94,37 @@ Anxiety, being pain, reduces the perspective, and this leads to increased stress
 1. Detection, as it's a sub concious process that happens
 2. Remind ourselves of the larger time dimension and then many aspects of our lives.
 
+#### Caring vs Mattering
+
+When something happens, we have an unconscious emotional response. The intensity of this response is a subjective experience, how much we care. (Sometimes through conditioning, we have emotional triggers which make us care highly and become hyper sensitive to the stimulus)
+
+The objective analog to caring is how much it matters. To maintain consistency your brain automatically assumes how much something matters is the same as how much you care. For example:
+
+_Imagine you are parking, and someone takes your spot. You have an intense emotional reaction, you care deeply, and react like this matters deeply. However, from an objective stand point, the total cost is likely low minutes of impact._
+
+Even though mattering is objective, it needs to be "measured" in a system, which (like perspective) has a time dimension, and an amount of other things to take into account perspective. For example:
+
+For example, imagine your kid doesn't want to go to bed on time, and they push back to you saying go to bed with no, it doesn't matter. In the span of 4 hours, it matters as it damages the relationship and frustrates the relationship. In the span of 20 years, it's irrelevant. In the context of all the bond a parent and child have it's also irrelevant. (There's perhaps a subtlety here for discipline and habit building)
+
+**Caring and mattering for others**
+
+Speaking of the mind assuming caring and mattering are equivalent, think about a time someone you really trust and respect (spouses are a great example) tells you thing that's causing you a deep emotional response doesn't matter. This usually makes it much worse not better.
+
+**The gentle act of helping others assess how much things matter**
+
+1. Acknowledge how they're feeling. It's very real.
+1. Assume their assessment is correct, and seek to understand it.
+1. Ask permission to discuss understanding how and why they care.
+1. Listen to why they are feeling strongly, it's essential you understand (Habit 5 - Seek First to understand)
+
+Depending on the depth of the relationship and the reaction so far, it might be a good time to stop, or a good time to continue. If continue
+
+1. Ask permission to ask questions to clarify how much it matters.
+1. Use the non threatening 3 W's (but not Why/How).
+   1. When - What time range
+   1. Who - Who will be most impacted
+   1. Where - What parts of "all properties" will be effected.
+
 ### Detection
 
 - Poor sleep
@@ -107,6 +132,9 @@ Anxiety, being pain, reduces the perspective, and this leads to increased stress
 - Rumination in the [idle loop](/idle-loop)
 
 ### Antidotes
+
+- Change Perspective
+- Caring vs Mattering
 
 ### Personal Examples
 
