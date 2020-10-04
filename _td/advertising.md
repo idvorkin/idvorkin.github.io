@@ -6,55 +6,53 @@ title: Advertising
 
 Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/advertising.md)_
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Why Advertise](#why-advertise)
-  - [What is a brand?](#what-is-a-brand)
-  - [The bottleneck for someone using your brand](#the-bottleneck-for-someone-using-your-brand)
-  - [How much should a brand spend Customer Acquisition Cost (CAC) and Customer Life Time Value (CLTV)](#how-much-should-a-brand-spend-customer-acquisition-cost-cac-and-customer-life-time-value-cltv)
-  - [How much do companies spend](#how-much-do-companies-spend)
-  - [What percent of gross revenue on advertising?](#what-percent-of-gross-revenue-on-advertising)
-  - [How much do ad platforms make?](#how-much-do-ad-platforms-make)
+    - [What is a brand?](#what-is-a-brand)
+    - [The bottleneck for someone using your brand](#the-bottleneck-for-someone-using-your-brand)
+    - [How much should a brand spend Customer Acquisition Cost (CAC) and Customer Life Time Value (CLTV)](#how-much-should-a-brand-spend-customer-acquisition-cost-cac-and-customer-life-time-value-cltv)
+    - [How much do companies spend](#how-much-do-companies-spend)
+    - [What percent of gross revenue on advertising?](#what-percent-of-gross-revenue-on-advertising)
+    - [How much do ad platforms make?](#how-much-do-ad-platforms-make)
 - [Useful terms](#useful-terms)
-  - [Performance and display](#performance-and-display)
-  - [Ad Supply](#ad-supply)
-  - [Ad inventory](#ad-inventory)
-  - [Retargetting](#retargetting)
-  - [CPM Cost per thousand views](#cpm-cost-per-thousand-views)
-  - [ECPM Effective CPM](#ecpm-effective-cpm)
-  - [CPC - Cost per click](#cpc---cost-per-click)
-  - [ROAS - Return on ads Spend](#roas---return-on-ads-spend)
-  - [CTR - Call to action (click) by views](#ctr---call-to-action-click-by-views)
-  - [Video CTR](#video-ctr)
-  - [Evergreen content](#evergreen-content)
+    - [Performance and display](#performance-and-display)
+    - [Ad Supply](#ad-supply)
+    - [Ad inventory](#ad-inventory)
+    - [Retargetting](#retargetting)
+    - [CPM Cost per thousand views](#cpm-cost-per-thousand-views)
+    - [ECPM Effective CPM](#ecpm-effective-cpm)
+    - [CPC - Cost per click](#cpc---cost-per-click)
+    - [ROAS - Return on ads Spend](#roas---return-on-ads-spend)
+    - [CTR - Call to action (click) by views](#ctr---call-to-action-click-by-views)
+    - [Video CTR](#video-ctr)
+    - [Evergreen content](#evergreen-content)
 - [Entities](#entities)
-  - [Data Mining](#data-mining)
-  - [MCN](#mcn)
+    - [Data Mining](#data-mining)
+    - [MCN](#mcn)
 - [Metrics](#metrics)
 - [Ad Products](#ad-products)
-  - [Print](#print)
-  - [TV](#tv)
-  - [Video - Preroll, Inline](#video---preroll-inline)
-  - [Sponsored/Branded Experiences](#sponsoredbranded-experiences)
-  - [Snapchat Lenses (snap chat)](#snapchat-lenses-snap-chat)
-  - [Sponsored in feed](#sponsored-in-feed)
+    - [Print](#print)
+    - [TV](#tv)
+    - [Video - Preroll, Inline](#video---preroll-inline)
+    - [Sponsored/Branded Experiences](#sponsoredbranded-experiences)
+    - [Snapchat Lenses (snap chat)](#snapchat-lenses-snap-chat)
+    - [Sponsored in feed](#sponsored-in-feed)
 - [Case study monetizing SnapChat](#case-study-monetizing-snapchat)
-  - [No room in the camera](#no-room-in-the-camera)
-  - [Sponsored Lenses where a novel ad product, which they addded.](#sponsored-lenses-where-a-novel-ad-product-which-they-addded)
-  - [Sponsored Stories where also a novel ad product, which they added.](#sponsored-stories-where-also-a-novel-ad-product-which-they-added)
+    - [No room in the camera](#no-room-in-the-camera)
+    - [Sponsored Lenses where a novel ad product, which they addded.](#sponsored-lenses-where-a-novel-ad-product-which-they-addded)
+    - [Sponsored Stories where also a novel ad product, which they added.](#sponsored-stories-where-also-a-novel-ad-product-which-they-added)
 - [Other concept](#other-concept)
-  - [Gorilla Marketing](#gorilla-marketing)
-  - [Why video](#why-video)
+    - [Gorilla Marketing](#gorilla-marketing)
+    - [Why video](#why-video)
 - [How much can a creator make](#how-much-can-a-creator-make)
-  - [Affiliate Marketing](#affiliate-marketing)
-  - [Ad revenue sharing.](#ad-revenue-sharing)
-  - [Brand sponsorship.](#brand-sponsorship)
-  - [Consumer Payment + Tips](#consumer-payment--tips)
-  - [Merch](#merch)
-  - [Bootstraping - Crowd funding](#bootstraping---crowd-funding)
+    - [Affiliate Marketing](#affiliate-marketing)
+    - [Ad revenue sharing.](#ad-revenue-sharing)
+    - [Brand sponsorship.](#brand-sponsorship)
+    - [Consumer Payment + Tips](#consumer-payment--tips)
+    - [Merch](#merch)
+    - [Bootstraping - Crowd funding](#bootstraping---crowd-funding)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -77,7 +75,7 @@ Advertising both of these.
 
 ### How much should a brand spend Customer Acquisition Cost (CAC) and Customer Life Time Value (CLTV)
 
-Once a customer is subscribed to something, they likely won't switch. This means you can compute the CLTV of a customer and so long as the CAC < CLTV, it's worth spending.
+Once a customer is subscribed to something, they likely won't switch. This means you can compute the CLTV of a customer and so long as the CAC is greater then CLTV, it's worth spending.
 
 ### How much do companies spend
 
@@ -213,7 +211,8 @@ Half of advertising spend is still on TV. Tech companies want to capture that sp
 
 ## How much can a creator make
 
-Not quite related to advertising, but a related concept is how much can creators make.
+Not quite related to advertising, but a related concept is how much can creators make. Here is the [breakdown for LinusTechTips](https://www.youtube.com/watch?v=-zt57TWkTF4) a tech channel. You see their estimated youtube usage using [social blade](https://socialblade.com/youtube/channel/UCXuqSBlHAE6Xw-yeJA0Tunw)
+{%include blob_image_float_right.html src="techtips2020-revenue.png" %}
 
 ### Affiliate Marketing
 
