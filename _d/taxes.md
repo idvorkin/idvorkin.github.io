@@ -28,12 +28,12 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
     - [Back door Roth.](#back-door-roth)
     - [The pro-Rata rule.](#the-pro-rata-rule)
-- [Useful topics](#useful-topics)
-    - [No load index funds](#no-load-index-funds)
+    - [529s](#529s)
+- [Rates Taxes and Savings](#rates-taxes-and-savings)
     - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
     - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
     - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
-    - [529s](#529s)
+    - [No load index funds](#no-load-index-funds)
     - [Unexpected expenses](#unexpected-expenses)
     - [Stock options](#stock-options)
         - [Sell a Put Option](#sell-a-put-option)
@@ -56,6 +56,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [How much is 1%](#how-much-is-1)
 
 <!-- vim-markdown-toc -->
+
 <!-- prettier-ignore-end -->
 
 ## Assumptions and Hannah
@@ -123,17 +124,17 @@ Tax law is goofy. You can't deposit money into a ROTH since you're over the limi
 
 Even though you are using after tax dollars to transfer money to the Roth IRA, you can't do the math like that. The rules (arbitrary) state that the money you take over is in the ratio of your IRA before and after tax contribution.
 
-## Useful topics
+### 529s
 
-### No load index funds
+An education only after tax savings account. You put in money after tax, get tax free growth, and can use distributions for your kid or grand kids education.
 
-Funds with zero fees. Usually a broad index fund like Fidelity Zero FZROX and FZILX. Could be a Mutual Fund or ETF. So long as the fees are zero you tend not to care if it's a Mutual Fund or ETF, however the ETF has the advantage that you can sell at any point during the day, vs at the end of the day. However, given you're not timing the market this doesn't matter.
-
-If you prefer ETFs, consider VTI - which has a 0.03% fee, which is only 300\$ per 1,000,000
+## Rates Taxes and Savings
 
 ### Marginal vs Average Tax Rate
 
 Taxes are like a step function. From 0 - K1 you pay rate t1, From K1 - K2 you pay rate t2, etc. The marginal tax rate is how much tax you pay on every extra dollar make, E.g. the tax rate in the maximum step. By contrast, your average tax rate is the total taxes/total income, which can be significantly less then the marginal tax rate depending on how far over the step function you are.
+
+{%include blob_image.html src="taxrate.jpeg" %}
 
 ### Short vs Long term capital gains
 
@@ -151,9 +152,11 @@ Below is tax rate by income in 2020.
 Often, we think about holding cash, and think about holding it in a place with no interest. Keep this money in high yield bank accounts, which can give [close to 2% (as of Dec '19)](https://www.nerdwallet.com/best/banking/high-yield-online-savings-accounts)
 At Fidelity you can keep your core cash in a liquid low risk mutual fund [SPAXX](https://fundresearch.fidelity.com/mutual-funds/summary/31617H102), however this has a 0.42% expense ratio, which will eat 25% - 50% of your earned interest.
 
-### 529s
+### No load index funds
 
-An education only after tax savings account. You put in money after tax, get tax free growth, and can use distributions for your kid or grand kids education.
+Funds with zero fees. Usually a broad index fund like Fidelity Zero FZROX and FZILX. Could be a Mutual Fund or ETF. So long as the fees are zero you tend not to care if it's a Mutual Fund or ETF, however the ETF has the advantage that you can sell at any point during the day, vs at the end of the day. However, given you're not timing the market this doesn't matter.
+
+If you prefer ETFs, consider VTI - which has a 0.03% fee, which is only 300\$ per 1,000,000
 
 ### Unexpected expenses
 
