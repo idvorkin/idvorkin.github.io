@@ -236,6 +236,7 @@ I have two common failure modes to my morning routine.
 
 - 34" wide screen - not a huge fan. Good for wide screen movies (but Netflix/YouTube rarely has this resolution)
 - 40" 3840x2160 - Awesome, I love it! Highly recommend
+- [Beefy Monitor Stand](https://www.amazon.com/dp/B01BXP9LT6) - If you're getting a good monitor make sure it floats with a pneumatic monitor stand.
 
 ## Camera
 
