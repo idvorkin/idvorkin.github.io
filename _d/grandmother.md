@@ -12,7 +12,7 @@ redirect_from:
 
 ---
 
-Lead with curiosity, not judgement. This applies to yourself and to others. Think of a grandmother A grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind.As she loves her grandchildren, she won’t allow self-destructive behavior and step in when necessary. But she will always do this with the utmost care and love.
+Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother A grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind.As she loves her grandchildren, she won’t allow self-destructive behavior and step in when necessary. But she will always do this with the utmost care and love.
 
 <!-- vim-markdown-toc GFM -->
 
@@ -25,7 +25,7 @@ Lead with curiosity, not judgement. This applies to yourself and to others. Thin
 
 ### Judgment vs Curiosity
 
-Judgment throws ups barriers and causes us to hide the truth. Curisoity is gentle and helps us find what is going on.
+Judgment throws ups barriers and causes us to hide the truth. Curiosity is gentle and helps us find what is going on.
 
 ### Compassionate Consequences
 
@@ -41,7 +41,7 @@ Assuming we don't do what we wanted - the consequence should be 6 minute reflect
 2. 2m - what was the reason we wanted to follow the rule
 3. 2m - was it worth it.
 
-An advanced reader will notice, there are 2 cases to braking the rule 1) deliberately 2) mindlessly. If it was broken mindlessly, then the most useful thing will be to mindful the next time we wish to break the rule. This reflection practice primes us for that. If it was broken deliberatly, but we made a bad call, then furthor reflection on that is helpful, and it will help up again in the future.
+An advanced reader will notice, there are 2 cases to braking the rule 1) deliberately 2) mindlessly. If it was broken mindlessly, then the most useful thing will be to mindful the next time we wish to break the rule. This reflection practice primes us for that. If it was broken deliberately, but we made a bad call, then further reflection on that is helpful, and it will help up again in the future.
 
 ### Cutting ourselves slack vs slacking off
 
@@ -59,9 +59,9 @@ Retro?
 
 Lack of attention
 Excuses
-Laziness (An Excuse) - Glorifying not important, not urgent activity (finally watching TV, I'm good) - Amplifying effort requried to do one's best - Mimizing reward of doing one's best.
+Laziness (An Excuse) - Glorifying not important, not urgent activity (finally watching TV, I'm good) - Amplifying effort required to do one's best - Minimizing reward of doing one's best.
 
 ### Related Ideas
 
-[Gettign to yes with yourself](/getting-to-yes-with-yourself)
+[Getting to yes with yourself](/getting-to-yes-with-yourself)
 [Coaching](/coachign)
