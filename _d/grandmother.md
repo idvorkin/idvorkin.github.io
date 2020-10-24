@@ -1,18 +1,14 @@
-. ---
+---
 layout: post
 title: "Isn't that curious"
 tags:
 permalink: /curious
 redirect_from:
-
-- /grandmothermind
-- /grandma
-- /curious
-- /compassion
-
----
-
-Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother A grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind.As she loves her grandchildren, she won’t allow self-destructive behavior and step in when necessary. But she will always do this with the utmost care and love.
+  - /grandmothermind
+  - /grandma
+  - /curious
+  - /compassion
+---Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother A grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind.As she loves her grandchildren, she won’t allow self-destructive behavior and step in when necessary. But she will always do this with the utmost care and love.
 
 <!-- vim-markdown-toc GFM -->
 
