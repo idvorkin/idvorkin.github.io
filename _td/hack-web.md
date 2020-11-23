@@ -13,30 +13,32 @@ Now a days javascript and HTML are the assembly language of the web (I first [sa
 <!-- vim-markdown-toc GFM -->
 
 - [Script Injection](#script-injection)
-    - [Bookmarklets](#bookmarklets)
-    - [Grease Monkey - User Script loader](#grease-monkey---user-script-loader)
+  - [Bookmarklets](#bookmarklets)
+  - [Grease Monkey - User Script loader](#grease-monkey---user-script-loader)
 - [Console Tricks](#console-tricks)
-    - [Load Jquery](#load-jquery)
-    - [Speed up video playback](#speed-up-video-playback)
+  - [Load Jquery](#load-jquery)
+  - [Speed up video playback](#speed-up-video-playback)
 - [Debugging 101](#debugging-101)
-    - [Chrome Keyboard shortcuts](#chrome-keyboard-shortcuts)
-    - [Force reloading](#force-reloading)
-    - [Capturing an object for later use](#capturing-an-object-for-later-use)
-    - [Black boxing](#black-boxing)
-    - [Event Handlers](#event-handlers)
+  - [Chrome Keyboard shortcuts](#chrome-keyboard-shortcuts)
+  - [Force reloading](#force-reloading)
+  - [Capturing an object for later use](#capturing-an-object-for-later-use)
+  - [Black boxing](#black-boxing)
+  - [Event Handlers](#event-handlers)
+  - [Chrome local overrides](#chrome-local-overrides)
 - [Real life examples](#real-life-examples)
-    - [Download the Alexa sound recording](#download-the-alexa-sound-recording)
-        - [Putting it all together.](#putting-it-all-together)
-        - [Red herrings - but good approaches](#red-herrings---but-good-approaches)
-    - [Automating todo item creation in omnifocus for web](#automating-todo-item-creation-in-omnifocus-for-web)
-    - [Screen Size Previews](#screen-size-previews)
-    - [Open graph preview Facebook](#open-graph-preview-facebook)
-    - [Web Site Preview Debugger](#web-site-preview-debugger)
+  - [Download the Alexa sound recording](#download-the-alexa-sound-recording)
+    - [Putting it all together.](#putting-it-all-together)
+    - [Red herrings - but good approaches](#red-herrings---but-good-approaches)
+  - [Automating todo item creation in omnifocus for web](#automating-todo-item-creation-in-omnifocus-for-web)
+  - [Screen Size Previews](#screen-size-previews)
+  - [Open graph preview Facebook](#open-graph-preview-facebook)
+  - [Web Site Preview Debugger](#web-site-preview-debugger)
+  - [Kindle Cloud Reader](#kindle-cloud-reader)
 - [Fly out TOC](#fly-out-toc)
-    - [CSS](#css)
-    - [Javscript Reverse Engineering Fly out TOC](#javscript-reverse-engineering-fly-out-toc)
+  - [CSS](#css)
+  - [Javscript Reverse Engineering Fly out TOC](#javscript-reverse-engineering-fly-out-toc)
 - [CSS - Styling a web page low level abstraction.](#css---styling-a-web-page-low-level-abstraction)
-    - [CSS selectors](#css-selectors)
+  - [CSS selectors](#css-selectors)
 - [Bootstrap - A higher level abstraction over css.](#bootstrap---a-higher-level-abstraction-over-css)
 - [Other resources](#other-resources)
 
@@ -76,10 +78,6 @@ document.querySelector("video").play()
 document.querySelector("video").pause()
 ```
 
-
-
-
-
 ## Debugging 101
 
 ### Chrome Keyboard shortcuts
@@ -109,6 +107,17 @@ Often there's a useful object, that's only available in the closure. You can alw
 ### Black boxing
 
 ### Event Handlers
+
+### Chrome local overrides
+
+Allows you to save a local copy of the source files for editting. To Use
+
+How to use:
+
+- Goto Sources -> Page
+- Find your file, right click and save to overrides
+
+Now you can edit your file to your hearts content
 
 ## Real life examples
 
@@ -234,6 +243,31 @@ https://developers.facebook.com/tools/debug/
 ### Web Site Preview Debugger
 
 https://metatags.io/
+
+### Kindle Cloud Reader
+
+I own **lots** of kindle books, and it's annoying I can't access them the way I want. I took a look at Kindle Cloud Reader to see if there was a way to get my Kindle Books as HTML.
+
+This was pretty challenging, here's what I found:
+
+The cloud reader keeps an iframe containing a subset of the book. You can use jquery to extract the content of the iFrame, **BUT** only a subset of the book is in memory.
+
+If you look in the network panel, you can see individual fragments being downloaded, which is triggered by clicking next or previous page after a few pages. The fragments are used to load/maintain the fragments.
+
+In theory if we can download all fragments you can load the whole book into the iFrame. This was much easier said then done as the code was obfuscicated, and that broke lots of the normal chrome debugging tools.
+
+I found a a global logging object, I connected it to console.log to see what developers see.
+
+> KindleDebug.log = console.log
+
+I then spent a bunch of time try to figure out where the fragments were getting selected. It was super hard due to the anti-debuggin measures. Finally I found:
+
+> loadNextPages()
+> loadFragmentsForRange()
+
+I realized I can change the position range for loadFragmentsForRange(). Changing it didn't always result in more content in the iFrame, so I needed a way to automate it. In theory I could change the obfucated source code, but Chrome's workspace/local copy wasn't working (not sure why), so I used a logpoint (a breakpoint that logs) to modify the fragment range. With this, it worked!
+
+Hooray.
 
 ## Fly out TOC
 
