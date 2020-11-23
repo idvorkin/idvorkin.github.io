@@ -19,6 +19,7 @@ Unless you've experienced depression, you can't understand it. Even having exper
 {% include youtube.html src="-eBUcBfkVCo" %}
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Depression, Grief and Sadness](#depression-grief-and-sadness)
@@ -100,6 +101,10 @@ I find these videos great discussions on how to head off depression, especially 
 **Keep the core spinning** - A COVID-19 themed tale of how to maintain structure in your life to avoid drifting. Skip COVID though it's equally applicable.
 
 {% include youtube.html src="snAhsXyO3Ck" %}
+
+**On Depression** - Good talk on bioloigical take on depression, symptoms, and implicit stress. (Author has a great book why Zebra's don't get ulcers)
+
+{% include youtube.html src="NOAgplgTxfc" %}
 
 ### Stats
 
