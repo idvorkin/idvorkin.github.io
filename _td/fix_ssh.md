@@ -1,7 +1,7 @@
 ---
 layout: post
 no-render-title: true
-title: Fix SSH
+title: ssh client commands timing out from some clients some times
 ---
 
 For some reason, SSH is just hanging out of no where. To debug on the server, be sure to open your firewall
