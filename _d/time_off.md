@@ -18,10 +18,11 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Vegetation](#vegetation)
     - [TODO list](#todo-list)
     - [Professional Development (PD)](#professional-development-pd)
-- [Zooming in on PD](#zooming-in-on-pd)
+- [Very Vegetating](#very-vegetating)
+- [Powerful Professional development](#powerful-professional-development)
     - [Managing family expectations](#managing-family-expectations)
     - [PD vs Life Balance](#pd-vs-life-balance)
-- [Optimizing for happiness](#optimizing-for-happiness)
+    - [Optimizing for happiness](#optimizing-for-happiness)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Other Resources](#other-resources)
 
@@ -47,9 +48,32 @@ Time is scarce, things to be done are infinite, and they pile up when you have l
 
 ### Professional Development (PD)
 
-When you
+When you're recharged, feel satisfied that enough is off your todo list, and are ready to build a better you.
 
-## Zooming in on PD
+
+## Very Vegetating
+
+Vegetation comes in few flavors. 1) Ignoring your responsibilities and task list 2) Ignoring your habits and discipline 3) Being selfish and ignoring your friends and family.
+
+I think it's fair to ignore your responsibility and task list - you deserve it.
+
+You likely think your habits and discipline are a burden, and that you deserve to ignore them. Except, that's the [resistance](/resistance) lying to you! Your habits, while time negative (barely) are net energy positive, and if you skip them, you'll not only have less energy, but you'll feel worse, a double whammy.
+
+Ignoring Friends and Family - This flavor is the least clear cut. Your family and friends want to enjoy themselves, but you also need alone time, I think the best balance is finding a fair balance, and then setting expectations and honoring them. See the "Managing family expectations section.
+
+So, on behalf of future you, when you want to vegetate, let go of your responsibilities, but don't skip your positive habits!
+
+In recap:
+
+| How you want to vegetate        | Future you's request                                    |
+|---------------------------------|---------------------------------------------------------|
+| Tasks and responsibilities      | Ignore 'em you deserve it                               |
+| Habits, exercise and discipline | Do them, you'll have more energy to enjoy your vacation |
+| Being selfish                   | Seek balance, Set expectations, and honor them          |
+
+
+
+## Powerful Professional development
 
 ### Managing family expectations
 
@@ -59,7 +83,7 @@ PD is essentially working from home, but working for your future self. Just like
 
 Even though getting to do what you love is awesome, you still want to love your family. You've got an opportunity to spend more energy on them, so do.
 
-## Optimizing for happiness
+### Optimizing for happiness
 
 - Being [Happy](/happy)
 
