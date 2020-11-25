@@ -5,11 +5,11 @@ tags:
 permalink: /timeoff
 redirect_from:
   - /vacation
-  - /professional-development
+  - /personal-development
   - /pd
 ---
 
-Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, but I think there are 2 kinds of time off. Vacation, and professional development.
+Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, but I think there are 2 kinds of time off. Vacation, and personal development.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -17,9 +17,9 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 - [The phases of time off](#the-phases-of-time-off)
     - [Vegetation](#vegetation)
     - [TODO list](#todo-list)
-    - [Professional Development (PD)](#professional-development-pd)
+    - [Personal Development (PD)](#personal-development-pd)
 - [Very Vegetating](#very-vegetating)
-- [Powerful Professional development](#powerful-professional-development)
+- [Powerful Personal Development](#powerful-personal-development)
     - [Managing family expectations](#managing-family-expectations)
     - [PD vs Life Balance](#pd-vs-life-balance)
     - [Optimizing for happiness](#optimizing-for-happiness)
@@ -46,10 +46,9 @@ Work is stressful, it follows me home, and it takes several days to "drain". I t
 
 Time is scarce, things to be done are infinite, and they pile up when you have limited time. Once my work stress drains, I have a burst of Energy, and I apply that to my todo list. This is very satisfying as I feel energized and productive.
 
-### Professional Development (PD)
+### Personal Development (PD)
 
-When you're recharged, feel satisfied that enough is off your todo list, and are ready to build a better you.
-
+When you're recharged, feel satisfied that enough is off your todo list, and are ready to build a better you. Personal development can be a personal thing, like becoming a better writer, or training for a marathon, or professional, like building a skill required in your career.
 
 ## Very Vegetating
 
@@ -73,7 +72,7 @@ In recap:
 
 
 
-## Powerful Professional development
+## Powerful Personal Development
 
 ### Managing family expectations
 
