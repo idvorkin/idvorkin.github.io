@@ -11,9 +11,7 @@ tags:
   - how igor ticks
 ---
 
-Procrastination is the success killer, a powerful manifistations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing in the models I use the most.
-
-Buy it [on Amazon](https://www.amazon.com/dp/B001AFF25W9)
+Procrastination is the success killer, a powerful manifistations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing of the concepts into my favorite mental models, the chapter titles are preserved if you want to go look them up.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -52,9 +50,9 @@ Buy it [on Amazon](https://www.amazon.com/dp/B001AFF25W9)
 
 **9.** **Prepare thoroughly before you begin:** Have everything you need at hand before you start. Assemble all the papers, information, tools, work materials, and numbers you might require so that you can get started and keep going.
 
-**10.** **Take it one oil barrel at a time:** You can accomplish the biggest and most complicated job if you just complete it one step at a time.
+**10.** **Take it one oil barrel at a time:** You don't always know what's required to get to the finish line, but you can always figure out the next milestone. Get to the next milestone, and you can find the next milestone after that.
 
-**18.** **Slice and dice the task**: Break large, complex tasks down into bite-sized pieces, and then do just one small part of the task to get started.
+**18.** **Slice and dice the task**: Break large, complex tasks down into bite-sized pieces, and then do just one small part of the task to get started. If the task is still too daunting, set a time goal and stay on task till you finish that time slice.
 
 ### Daily Motivation
 
@@ -70,9 +68,9 @@ Buy it [on Amazon](https://www.amazon.com/dp/B001AFF25W9)
 
 **11.** **Sharpen the saw** The more knowledgeable and skilled you become at your key tasks, the faster you start them and the sooner you get them done. Determine exactly what it is that you are very good at doing, or could be very good at, and throw your whole heart into doing those specific things very, very well.
 
-**17.** **Focus your attention:** Stop the interruptions and distractions that interfere with completing your most important tasks.
+**19.** **Create power hours:** Organize your days around large blocks of time so you can concentrate for extended periods on your most important tasks.
 
-**19.** **Create large chunks of time:** Organize your days around large blocks of time so you can concentrate for extended periods on your most important tasks.
+**17.** **Focus your attention:** Stop the interruptions and distractions that interfere with completing your most important tasks. This is essential dangerous if you allow this to break up the large time chunks by just checking your phone/news/messages/tiktok, or yak shaving.
 
 **21.** **Single handle every task:** Set clear priorities, start immediately on your most important task, and then work without stopping until the job is 100 percent complete. This is the real key to high performance and maximum personal productivity.
 
@@ -96,3 +94,5 @@ A “C” task is defined as something that would be _nice_ to do but for which 
 A “D” task is defined as something you can _delegate_ to someone else. The rule is that you should delegate everything that someone else can do so you can free up more time for the A tasks that only you can do.
 
 “E” task are not important/not urgent **NI/NU** is defined as something that you can _eliminate_ altogether, and it won’t make any real difference. This may be a task that was important at one time but is no longer relevant to you or anyone else. Often it is something you continue to do out of habit or because you enjoy it. But every minute that you spend on an E task is time taken away from an A task or activity that can make a real difference in your life.
+
+Buy it [on Amazon](https://www.amazon.com/dp/B001AFF25W9)
