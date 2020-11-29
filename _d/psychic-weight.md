@@ -12,6 +12,7 @@ author: "Igor Dvorkin"
 Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it of, and getting now relief regardless of when you sit or sleep. Now imagine that's not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Types of psychic weight](#types-of-psychic-weight)
@@ -104,6 +105,8 @@ From the prophet:
 
 ### Eat the frog
 
+[Eat the frog](/frog)
+
 ### GTD (Getting Things Done)
 
 ### CI/CC (Circle of Influence, Circle of Concern)
@@ -141,6 +144,5 @@ See [pride](/pride)
 ## Useful thoughts.
 
 As usual, the 7 habits helps
-Eat the frog
 Habits make psychic weight get handled.
-Grandmother mind
+[Grandmother mind](/grandmother)

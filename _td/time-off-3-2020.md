@@ -8,9 +8,12 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 # Adventures March and April 2020
 
+### A note on Corona Virus
+
 <!-- vim-markdown-toc GFM -->
 
-- [A note on Corona Virus](#a-note-on-corona-virus)
+My time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized i should ignore it, or at least minimize my time thinking about it.
+
 - [Priorities](#priorities)
   - [Physical because my body is the only one I've got.](#physical-because-my-body-is-the-only-one-ive-got)
   - [Emotional health because that's how I experience the world.](#emotional-health-because-thats-how-i-experience-the-world)
@@ -79,10 +82,6 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 <!-- vim-markdown-toc -->
 
-### A note on Corona Virus
-
-My time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized i should ignore it, or at least minimize my time thinking about it.
-
 ### Priorities
 
 #### Physical because my body is the only one I've got.
@@ -100,7 +99,7 @@ My time off correlated perfectly to the Corona Virus and as a result I wasted lo
 
 #### Living the 7 habits, because that's my bible.
 
-- Eating the frog [TK]
+- [Eating the frog](/frog)
 - Quarter/Month/Week/Day Habits
 
 ### Blog Content

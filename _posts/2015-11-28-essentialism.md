@@ -2,9 +2,9 @@
 layout: post
 title: "Essentialisim"
 author: "Igor Dvorkin"
-comments: true
-inprogress: true
-collapsable: true
+
+redirect_from:
+  - /essential
 
 tags:
   - book-notes
