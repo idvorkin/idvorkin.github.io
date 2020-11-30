@@ -35,6 +35,7 @@ One of my dreams is to guide others navigate through this, which I'll do through
 - [Invest in your health](#invest-in-your-health)
     - [Physical Health](#physical-health)
     - [Financial Health](#financial-health)
+    - [Emotional Health](#emotional-health)
     - [Cognitive Health](#cognitive-health)
         - [Making hard decisions](#making-hard-decisions)
         - [Being coached](#being-coached)
@@ -64,6 +65,7 @@ The first step for mortality software is helping you figure out the person you w
 ### Fight the resistance
 
 - [Resistance](/resistance)
+- [Eat that frog](/frog)
 
 ### Avoid Addiction
 
@@ -109,7 +111,7 @@ Before tackling your eulogy, and your goals, you need to identify your many role
 
 - Negotiating
 - What makes a leader
-- Mind Monsters
+- [Mind Monsters](/monsters)
 
 ### Mindfulness Training
 
@@ -134,7 +136,13 @@ Your health is your most valuable asset. It's so easy to ignore your
 
 - [Savings and Taxes](/money)
 
+### Emotional Health
+
+- See maximizing your sanity above :)
+
 ### Cognitive Health
+
+- [Thsi blog](/about): Evergreen notes and sucking until you don't.
 
 #### Making hard decisions
 
