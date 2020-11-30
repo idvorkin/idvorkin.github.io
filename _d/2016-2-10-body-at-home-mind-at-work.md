@@ -1,13 +1,12 @@
---- 
+---
 layout: post
 title: "Body at home, mind at work"
 comments: true
 inprogress: true
-tags: 
-    - how igor ticks
-    - emotional intelligence
-comments: true
-inprogress: true
+tags:
+  - how igor ticks
+  - emotional intelligence
+permalink: mind-at-work
 ---
 
 I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I'm going to talk about my most frequent symptoms, my body being at home, but my mind still being at work
