@@ -40,7 +40,7 @@ A common questions is should you take 2 short vacations or 1 long one. That's a 
 
 ### Vegetation
 
-Work is stressful, it follows me home, and it takes several days to "drain". I think there's a relation between "draining my work stress" and vegetation. It takes me a solid week to get over that.
+Work is stressful, it follows me home, and it takes several days to "[drain](/mind-at-work)". I think there's a relation between "draining my work stress" and vegetation. It takes me a solid week to get over that.
 
 ### TODO list
 
@@ -65,12 +65,10 @@ So, on behalf of future you, when you want to vegetate, let go of your responsib
 In recap:
 
 | How you want to vegetate        | Future you's request                                    |
-|---------------------------------|---------------------------------------------------------|
+| ------------------------------- | ------------------------------------------------------- |
 | Tasks and responsibilities      | Ignore 'em you deserve it                               |
 | Habits, exercise and discipline | Do them, you'll have more energy to enjoy your vacation |
 | Being selfish                   | Seek balance, Set expectations, and honor them          |
-
-
 
 ## Powerful Personal Development
 
