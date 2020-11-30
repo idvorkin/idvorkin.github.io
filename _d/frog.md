@@ -18,19 +18,20 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Motivation: Start with Why](#motivation-start-with-why)
+- [Start with Why](#start-with-why)
 - [Goal Planning](#goal-planning)
 - [Execution](#execution)
-- [Daily Motivation](#daily-motivation)
-- [Shape the path](#shape-the-path)
+- [Work the elephant: Daily Motivation](#work-the-elephant-daily-motivation)
+- [Shape the path: Make it easy on yourself](#shape-the-path-make-it-easy-on-yourself)
+- [GTD](#gtd)
 - [ABCDE prioritization and Important Not Urgent](#abcde-prioritization-and-important-not-urgent)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-### Motivation: Start with Why
+### Start with Why
 
-**1.** **Begin with the end in mind:** Decide exactly what you want and why. Clarity is [essential](/essential). Write out your goals and objectives before you begin.
+**1.** **Begin with the end in mind:** Decide exactly what you want and [why](/eulogy). Clarity is [essential](/essential). Write out your goals and objectives before you begin.
 
 **4.** **Consider the impact:** Your most important tasks and priorities are those that can have the most impact, positive or negative, on your life or work. Focus on these above all else.
 
@@ -56,7 +57,7 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 
 **18.** **Slice and dice the task**: Break large, complex tasks down into bite-sized pieces, and then do just one small part of the task to get started. If the task is still too daunting, set a time goal and stay on task till you finish that time slice.
 
-### Daily Motivation
+### Work the elephant: Daily Motivation
 
 **13.** **Put the pressure on yourself:** Imagine that you have to leave town for a month, and work as if you had to get your major task completed before you left.
 
@@ -66,7 +67,7 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 
 **5.** **Practice creative procrastination:** Since you can’t do everything, you must learn to deliberately put off those tasks that are of low value so that you have enough time to do the few things that really count.
 
-### Shape the path
+### Shape the path: Make it easy on yourself
 
 **11.** **Sharpen the saw** The more knowledgeable and skilled you become at your key tasks, the faster you start them and the sooner you get them done. Determine exactly what it is that you are very good at doing, or could be very good at, and throw your whole heart into doing those specific things very, very well.
 
@@ -79,6 +80,10 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 **16.** **Technology is a wonderful servant:** Use your technological tools to confront yourself with what is most important and protect yourself from what is least important.
 
 **15.** **Technology is a terrible master:** Take back your time from enslaving technological addictions. Learn to often turn devices off and leave them off.
+
+### GTD
+
+If you like this, be sure to [check out GTD](/gtd)
 
 ### ABCDE prioritization and Important Not Urgent
 
@@ -94,7 +99,3 @@ I need to process how to merge the important and not urgent matrix with the ABCD
 A “C” task is defined as something that would be _nice_ to do but for which there are no consequences at all, whether you do it or not. C tasks include phoning a friend, having coffee or lunch with a coworker, and completing some personal business during work hours. These sorts of activities have no effect at all on your work life.
 
 A “D” task is defined as something you can _delegate_ to someone else. The rule is that you should delegate everything that someone else can do so you can free up more time for the A tasks that only you can do.
-
-“E” task are not important/not urgent **NI/NU** is defined as something that you can _eliminate_ altogether, and it won’t make any real difference. This may be a task that was important at one time but is no longer relevant to you or anyone else. Often it is something you continue to do out of habit or because you enjoy it. But every minute that you spend on an E task is time taken away from an A task or activity that can make a real difference in your life.
-
-Buy it [on Amazon](https://www.amazon.com/dp/B001AFF25W9)
