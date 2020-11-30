@@ -12,22 +12,25 @@ redirect_from:
 Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, but I think there are 2 kinds of time off. Vacation, and personal development.
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [The phases of time off](#the-phases-of-time-off)
-    - [Vegetation](#vegetation)
-    - [TODO list](#todo-list)
-    - [Personal Development (PD)](#personal-development-pd)
+  - [Vegetation](#vegetation)
+  - [TODO list](#todo-list)
+  - [Personal Development (PD)](#personal-development-pd)
 - [Very Vegetating](#very-vegetating)
 - [Powerful Personal Development](#powerful-personal-development)
-    - [Managing family expectations](#managing-family-expectations)
-    - [PD vs Life Balance](#pd-vs-life-balance)
-    - [Optimizing for happiness](#optimizing-for-happiness)
+  - [Managing family expectations](#managing-family-expectations)
+  - [PD vs Life Balance](#pd-vs-life-balance)
+  - [Optimizing for happiness](#optimizing-for-happiness)
+- [Get real what should I do?](#get-real-what-should-i-do)
+  - [Begin with the end in mind](#begin-with-the-end-in-mind)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## The phases of time off
 
@@ -83,6 +86,13 @@ Even though getting to do what you love is awesome, you still want to love your 
 ### Optimizing for happiness
 
 - Being [Happy](/happy)
+
+## Get real what should I do?
+
+### Begin with the end in mind
+
+- Read your [eulogy](/eulogy), to remember what matters most to you.
+- Remember not to [procrastinate](/frog)
 
 ## Examples of how I spent my time off
 

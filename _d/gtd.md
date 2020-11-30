@@ -40,7 +40,7 @@ Open loops are caused by your brain continuing to think of an open issue when yo
 
 ### Thinking vs Doing Next Actions
 
-It's easy to procrastinate when it's not clear
+It's easy to [procrastinate](/procrastinate) when the next action isn't clear
 
 ## Practices
 
