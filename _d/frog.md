@@ -9,9 +9,11 @@ redirect_from:
 tags:
   - book-notes
   - how igor ticks
+  - procrastinate
+  - procrastination
 ---
 
-Procrastination is the success killer, a powerful manifistations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing of the concepts into my favorite mental models, the chapter titles are preserved if you want to go look them up.
+Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing of the concepts into my favorite mental models, the chapter titles are preserved if you want to go look them up.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -70,7 +72,7 @@ Procrastination is the success killer, a powerful manifistations of the resistan
 
 **19.** **Create power hours:** Organize your days around large blocks of time so you can concentrate for extended periods on your most important tasks.
 
-**17.** **Focus your attention:** Stop the interruptions and distractions that interfere with completing your most important tasks. This is essential dangerous if you allow this to break up the large time chunks by just checking your phone/news/messages/tiktok, or yak shaving.
+**17.** **Focus your attention:** Stop the interruptions and distractions that interfere with completing your most important tasks. This is essential dangerous if you allow this to break up the large time chunks by just checking your phone/news/messages/TikTok, or yak shaving.
 
 **21.** **Single handle every task:** Set clear priorities, start immediately on your most important task, and then work without stopping until the job is 100 percent complete. This is the real key to high performance and maximum personal productivity.
 
@@ -80,7 +82,7 @@ Procrastination is the success killer, a powerful manifistations of the resistan
 
 ### ABCDE prioritization and Important Not Urgent
 
-I need to process how to merge the important and not urgent matrix with the ABCDE prioritization matix
+I need to process how to merge the important and not urgent matrix with the ABCDE prioritization matrix
 
 “A” items are important and urgent **I/U**, something that you must do. This is a task that will have serious consequences (positive or negative), finishing a calibration packets for upcoming calibration or dealing with a root canal. If you have more than one A task, prioritize, and execute in order “A-1,” “A-2,” “A-3,” Your A-1 task is your biggest, ugliest frog of all. Start there.
 
