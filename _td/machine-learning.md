@@ -71,8 +71,6 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Regression](#regression-1)
     - [PCA](#pca)
     - [SVM](#svm)
-    - [Neural Networks](#neural-networks)
-    - [Deep learning](#deep-learning)
 - [Topics to be explored](#topics-to-be-explored)
     - [DevOps for ML](#devops-for-ml)
     - [Ethical AI](#ethical-ai)
@@ -87,8 +85,10 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Why is ML so complicated](#why-is-ml-so-complicated)
     - [Deep Fakes](#deep-fakes)
     - [Time Series Analysis](#time-series-analysis)
-- [Other Resources](#other-resources)
-    - [What should I read to learn more](#what-should-i-read-to-learn-more)
+- [DL: Neural Networks and Deep Learning](#dl-neural-networks-and-deep-learning)
+    - [RNN: Recurrent Neural Network](#rnn-recurrent-neural-network)
+    - [GAN: Generate Associative Networs](#gan-generate-associative-networs)
+- [What should I read to learn more](#what-should-i-read-to-learn-more)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -348,10 +348,6 @@ Algorithms in [plain english](https://hackerbits.com/data/top-10-data-mining-alg
 
 ### SVM
 
-### Neural Networks
-
-### Deep learning
-
 ## Topics to be explored
 
 _Thanks Dan Massey for your recommendation to discuss these topics_
@@ -404,10 +400,34 @@ So using this we have create compress_igor(image)->small_state and decompress_ig
 
 Check out [prophet](https://towardsml.com/2018/05/23/time-series-forecasting-the-easy-way-lets-analyze-microsofts-stocks/)
 
-## Other Resources
+## DL: Neural Networks and Deep Learning
 
-### What should I read to learn more
+A neural network that includes hisory (e.g. t-1,t-2) as input features
+
+Good explanation:
+
+{% include youtube.html src="BR9h47Jtqyw" %}
+
+### RNN: Recurrent Neural Network
+
+A neural network that includes hisory (e.g. t-1,t-2) as input features
+
+Good explanation:
+
+{% include youtube.html src="2-Ol7ZB0MmU" %}
+
+### GAN: Generate Associative Networs
+
+GANs are used train a lossy compression/decompression pair without human knowledge. Essentially saying, computer make a compression and decompression pair which turns the image back into itself with a much smaller representation . This can be used for deep fakes, by connecting the trianed compession of one image, into the trained decompression of another image. Letting you go from person 1->person 2, with 0 training data.
+
+Good explanation:
+
+{% include youtube.html src="8L11aMN5KY8" %}
+
+## What should I read to learn more
 
 - [Machine learning is like sex in high school](https://vas3k.com/blog/machine_learning/)
 - [Google's rules of ML](https://developers.google.com/machine-learning/rules-of-ml/) and [summary](https://towardsml.com/2018/08/06/how-great-products-are-made-rules-of-machine-learning-by-google-a-summary/)
 - [Hands on machine learning with SciKit-Learn and tensor flow](https://www.amazon.com//dp/1491962291)
+  Neural network easier to grock lectures
+  https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
