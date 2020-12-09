@@ -12,7 +12,7 @@ redirect_from:
   - /nonjudgment
 ---
 
-Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother A grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind.As she loves her grandchildren, she won’t allow self-destructive behavior and step in when necessary. But she will always do this with the utmost care and love.
+Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -60,10 +60,8 @@ What could have I actually done that would have been better than what I did?
 Retro?
 
 Lack of attention
-Excuses
-Laziness (An Excuse) - Glorifying not important, not urgent activity (finally watching TV, I'm good) - Amplifying effort required to do one's best - Minimizing reward of doing one's best.
 
 ### Related Ideas
 
 [Getting to yes with yourself](/getting-to-yes-with-yourself)
-[Coaching](/coachign)
+[Coaching](/coaching)

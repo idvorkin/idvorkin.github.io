@@ -27,6 +27,7 @@ One of my dreams is to guide others navigate through this, which I'll do through
 - [Maximize your sanity](#maximize-your-sanity)
     - [Handle Pride](#handle-pride)
     - [Inspect your idle loop](#inspect-your-idle-loop)
+    - [Be wary of the mind monsters](#be-wary-of-the-mind-monsters)
     - [Stay in your circle of influence](#stay-in-your-circle-of-influence)
     - [Cut psychic weight](#cut-psychic-weight)
     - [Emotional Intelligence](#emotional-intelligence)
@@ -100,6 +101,10 @@ Before tackling your eulogy, and your goals, you need to identify your many role
 ### Inspect your idle loop
 
 - [Your Idle loop](/idle-loop)
+
+### Be wary of the mind monsters
+
+- [Mind Monsters](/monsters)
 
 ### Stay in your circle of influence
 

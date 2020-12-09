@@ -61,7 +61,7 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
 - When you COMMIT to unconditionally take care of your needs, you have all the power.
   - SWITCH: Your elephant can rest assured it will be fed and cared for regardless of what's going on externally.
   - This gives you much more psychic space in your relationships, making them better relationships.
-  - SIY: Grandmother mind - you are your own best grandma.
+  - SIY: [Grandmother mind](/grandmother) - you are your own best grandma.
 - Responsibility holds Power VS blame gives it away.
 - Take responsibility for what you've got, and make the most of it - DO NOT BLAME Life ([welcome to Holland](/welcome-to-holland)).
 - Focus on what you can do to make things better, NOT the fact that you screwed something up in the past.
@@ -96,7 +96,8 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
 
 ### 3) Reframe your picture &#x2610;
 
-**Abundance not Scarcity: A rising tide raises all boats**
+**Abundance not Scarcity: A rising tide raises all boats**
+
 **Expecations are a self fulling prophecy. Believe the world good or bad, and that's how you'll interpret it, and that's how it will become**
 
 - Remember your connection to life
