@@ -21,64 +21,43 @@ That parable reminded me that I've been spending too much time focusing on silly
 
 There's a great poem on the topic by the author of Search Inside Yourself (Chade-Meng Tang)
 
-My monsters.
+**My monsters.**
 
-Greed, hatred, envy, anger, agitation, egoistic pride, lust, etc.
+- Greed, hatred, envy, anger, agitation, egoistic pride, lust, etc.
+- They come in different forms, shapes, colors and sizes.
+- Over the years, I have learned to deal with them.
+- I do that by letting go.
 
-They come in different forms, shapes, colors and sizes.
+..
 
-Over the years, I have learned to deal with them.
+- First, I let go of my wish to control or suppress them.
+- When they arrive, I acknowledge them.
+- I let them be.
+- Next, I let go of my instinct to vilify them.
+- I seek to understand them.
+- I see them for who they are.
+- They are merely creations of my body and mind.
+- I humor them a little.
+- I joke with them.
+- I joke about them.
+- I let them play.
 
-I do that by letting go.
+..
 
-First, I let go of my wish to control or suppress them.
+- And then, I let go of my desire to feed them.
+- They may play here all they want.
+- But they get no food from me.
+- They are free to stay here hungry, if they want.
+- And I continue to let them be.
+- And then they get really hungry.
+- And sometimes they leave.
+- Finally, I let go of my desire to hold on to them.
+- They are free to leave as they wish.
+- I let them go.
+- I am free.
+- For now.
 
-When they arrive, I acknowledge them.
-
-I let them be.
-
-Next, I let go of my instinct to vilify them.
-
-I seek to understand them.
-
-I see them for who they are.
-
-They are merely creations of my body and mind.
-
-I humor them a little.
-
-I joke with them.
-
-I joke about them.
-
-I let them play.
-
-And then, I let go of my desire to feed them.
-
-They may play here all they want.
-
-But they get no food from me.
-
-They are free to stay here hungry, if they want.
-
-And I continue to let them be.
-
-And then they get really hungry.
-
-And sometimes they leave.
-
-Finally, I let go of my desire to hold on to them.
-
-They are free to leave as they wish.
-
-I let them go.
-
-I am free.
-
-For now.
-
-I do not overcome them.
-They do not overcome me.
-
-And we live together.
-In harmony.
+- I do not overcome them.
+- They do not overcome me.
+- And we live together.
+- In harmony.
