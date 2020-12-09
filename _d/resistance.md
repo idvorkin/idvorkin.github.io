@@ -23,6 +23,7 @@ Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if 
     - [Procrasting the string that's stressing you at work](#procrasting-the-string-thats-stressing-you-at-work)
     - [Not doing Amazon returns](#not-doing-amazon-returns)
 - [Fighting the resistance](#fighting-the-resistance)
+    - [The 3 lies of laziness](#the-3-lies-of-laziness)
     - [If you don't beat it back, it will get stronger.](#if-you-dont-beat-it-back-it-will-get-stronger)
     - [Jump in the lake day.](#jump-in-the-lake-day)
     - [Positive Habits and Routine](#positive-habits-and-routine)
@@ -59,6 +60,12 @@ At my very best, I applied a powerful antidote. I told myself I'd ask the first 
 ### Not doing Amazon returns
 
 ## Fighting the resistance
+
+### The 3 lies of laziness
+
+- **Glorifying not important, not urgent activity** Finally I have time to watch TV, so glad, otherwise I'm good)
+- **Amplifying effort required to do one's best:** Man taking the 1 minute to get up and taking out the garbage, what a burden.
+- **Minimizing reward of doing one's best.** Is taking out the garbage, a sign of huge respect or my wife really unimportant?
 
 ### If you don't beat it back, it will get stronger.
 
