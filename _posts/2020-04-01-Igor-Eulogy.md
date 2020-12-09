@@ -162,13 +162,13 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 
 Igor loved technology - taking copious [notes](https://github.com/idvorkin/techdiary) through his technical journeys, putzing with his [blog](https://github.com/idvorkin/idvorkin.github.io) and many small [projects](https://github.com/idvorkin). Igor was REALLY proud when Zach got his own [website](https://www.zacookiegames.com), and when Zach made his first [pull request](https://github.com/idvorkin/zdvorkinweb/pull/5). Igor was also very proud of his first open source [pull request](https://github.com/Homebrew/homebrew-core/pull/48163) for a command line spell checking installer.
 
-Igor loved VIM, the command line and TMUX. His dotfile [collection](https://github.com/idvorkin/settings) was impressive, and he even made a [VIM plugin for Onenote](https://github.com/idvorkin/Vim-Keybindings-For-Onenote). Perhaps the command line usage was about minimalism, and as a result Igor loved being able to do everything on his [iPad](https://github.com/idvorkin/techdiary/blob/master/notes/ios-nomad.md) using an external keyboard, a makeshift stand and ssh'ing to a cloud based EC2 instance.
+Igor loved VIM, the command line and TMUX. His dotfile [collection](https://github.com/idvorkin/settings) was impressive, and he even made a [VIM plugin for OneNote](https://github.com/idvorkin/Vim-Keybindings-For-Onenote). Perhaps the command line usage was about minimalism, and as a result Igor loved being able to do everything on his [iPad](https://github.com/idvorkin/techdiary/blob/master/notes/ios-nomad.md) using an external keyboard, a makeshift stand and ssh'ing to a cloud based EC2 instance.
 
 <!--
 Programmer:
 * Igor believed the perfect programmer was Anal retentive and lazy. While Igor was a 10/10 on lazy, he was only a 1/10 for being Anal. As a result, he relied heavily on automated tests, and very little on human process.
 * To empower his laziness Igor focused on tools that are easy to read, mutate and have excellent libraries. Python, and C# being some of his favorites.
-* Igor is a huge beleive in static typing, especially implict static typing.
+* Igor is a huge believe in static typing, especially implicit static typing.
 * Today, these have become the industry norms, which is great for Igor, because he can stop arguing about it.
 * Igor's coding principles - No duplicate code; Trust tests not experts; Log Bug then Whine;
 * Igor tried to develop in such a way that you could bottom up a design via excellent refactoring of implementation.
@@ -188,7 +188,7 @@ Igor didn't write this section - but he did describe his [dream job](/job) and h
 
 <!--
 To file:
-* Holstien Canada High School Drop Out
+* Holstein Canada High School Drop Out
 * Bad ass Java Compiler Team
 * Making router run 802.11 G
 * Implementing Bit Locker for the phone
@@ -239,6 +239,8 @@ Things I cherish with Amelia @ 6:
 - Taking for bike rides
 - Reading her Matilda
 - Helping her Spell
+
+When she was in 1st grade she was very behind in her reading. She barely knew the alphabet and hated reading, and Tori has some dyslexia in her family. In my head I diagnosed her as being dyslexic, and spent a bunch of time studying how to support a dyslexic child, and how best to equip her in a reading world. Luckily, I was introduced to special decodable reading books, and spent 30 minutes painfully reading with Amelia. She went from hating to read even simple words like cat, to volunteering to read to me, to wanting to know how the story ended, to volunteering to read to Yelena and Baba. Watching her pride in seeing how much of a story she'd read, and getting to start a new book - wowsers!
 
 ### Father to Zach - a wonderful boy
 
@@ -292,7 +294,7 @@ Things I cherish with Zach @ 10:
     * 1970's tent trailer
         * Patching
         * Getting rid of it, like getting rid of a curse.
-        * Tent trailer down the coast to stay in OakLand in freezing cold with propane heater.
+        * Tent trailer down the coast to stay in Oakland in freezing cold with propane heater.
     * First camping trips
     * Camping with friends
     * 10 person tent
