@@ -5,12 +5,10 @@ import os
 
 class RefBuilder:
     def allow_dest_ref(self,r):
-        if "404.html" in r:
-            return False
-        if "all.html" in r:
-            return False
-        if "toc.html" in r:
-            return False
+        deny_list = "404.html;all.html;toc.html;index.html".split(';')
+        for deny in deny_list:
+            if r.endswith(deny):
+                return False
         return True
 
     def allow_src_ref(self, r):
@@ -28,6 +26,13 @@ class RefBuilder:
             for tag in soup.find_all("a"):
                 refs.append(tag["href"])
                 # print (tag)
+
+            if soup.title and soup.title.string.startswith("Redirecting"):
+                self.redirects[path] = "find_link"
+            # <title>Redirecting&hellip;</title>
+            # <link rel="canonical" href="http://localhost:4000/happy">
+            #if isredirect(soup):
+            #    self.redirect[path] = redirect
         return refs
 
     def gather_refs(self, path_dest):
@@ -48,24 +53,36 @@ class RefBuilder:
 
 
     def __init__(self):
-        self.refs = defaultdict(list)
+        self.refs = defaultdict(list) # src -> dest ; 'root' -> back_links
+        # build this at the same time.
+        self.redirects = {} # redirect->root page
 
     def dump(self):
         self.dedup()
         for path_src in self.refs.keys():
             print(f"{path_src}:")
             print(f"->{self.refs[path_src]}")
+        print ("Redirects")
+        print(self.redirects)
+
 
 
 def appendXRefToFile(refreneces, output_file):
     pass
 
+def build_refs_for_dir(rb,dir):
+    for f in os.listdir(dir):
+        if not f.endswith(".html"):
+            continue
+        rb.gather_refs(f"{dir}/{f}")
 
-print("Main")
-rb = RefBuilder()
-for f in os.listdir("_site"):
-    if not f.endswith(".html"):
-        continue
-    rb.gather_refs(f"_site/{f}")
-rb.dump()
-pass
+def main():
+    print("Main")
+    rb = RefBuilder()
+    dirs = "_site;_site/td;_site/d".split(';')
+    for d in dirs:
+         build_refs_for_dir(rb,d)
+    rb.dump()
+
+main()
+
