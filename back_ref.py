@@ -4,14 +4,14 @@ import os
 
 
 class RefBuilder:
-    def allow_dest_ref(self, r):
+    def allow_back_ref(self, r):
         deny_list = "404.html;all.html;toc.html;index.html".split(";")
         for deny in deny_list:
             if r.endswith(deny):
                 return False
         return True
 
-    def allow_src_ref(self, r):
+    def allow_forward_ref(self, r):
         if r == "/":
             return False
         if r.startswith("/tags#"):
@@ -35,32 +35,32 @@ class RefBuilder:
             #    self.redirect[path] = redirect
         return refs
 
-    def gather_refs(self, path_dest):
-        if not self.allow_dest_ref(path_dest):
+    def gather_refs(self, path_back):
+        if not self.allow_back_ref(path_back):
             return
 
-        all_refs = self.get_refs(path_dest)
-        relevent_refs = [r for r in all_refs if self.allow_src_ref(r)]
-        for path_src in relevent_refs:
-            self.refs[path_src].append(path_dest)
+        all_refs = self.get_refs(path_back)
+        relevent_refs = [r for r in all_refs if self.allow_forward_ref(r)]
+        for path_forward in relevent_refs:
+            self.refs[path_forward].append(path_back)
         pass
 
     def dedup(self):
         # 1. replace redirects with their source page
         # 2. remove duplicates
-        for path_src in self.refs.keys():
-            self.refs[path_src] = list(set(self.refs[path_src]))
+        for path_forward in self.refs.keys():
+            self.refs[path_forward] = list(set(self.refs[path_forward]))
 
     def __init__(self):
-        self.refs = defaultdict(list)  # src -> dest ; 'root' -> back_links
+        self.refs = defaultdict(list)  # forward -> back ; 'root' -> back_links
         # build this at the same time.
         self.redirects = {}  # redirect->root page
 
     def dump(self):
         self.dedup()
-        for path_src in self.refs.keys():
-            print(f"{path_src}:")
-            print(f"->{self.refs[path_src]}")
+        for path_forward in self.refs.keys():
+            print(f"{path_forward}:")
+            print(f"->{self.refs[path_forward]}")
         print("Redirects")
         print(self.redirects)
 
