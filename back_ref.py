@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from collections import defaultdict
 from typing import NamedTuple
 import os
+import json
 
 
 class PageInfo(NamedTuple):
@@ -53,7 +54,9 @@ class RefBuilder:
                 self.redirects[src_url] = canonicalUrl
                 return [], None
 
-            self.titles[path] = pageTitle
+            # Jekyll makes an ugly title
+            # title='\n  INSECURITY AND IMPOSTER SYNDROME \n'
+            pageTitle = pageTitle.replace("\n  ","").replace(" \n","")
 
             # <meta property="og:description" content="Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.
             descriptionTag = soup.find("meta", property="og:description")
@@ -85,7 +88,7 @@ class RefBuilder:
             # 2. replace redirects with their source page
             back_paths = []
             for r in self.refs[path_forward]:
-                canonical_back_path = redirects[r] if r in redirects else r
+                canonical_back_path = self.redirects[r] if r in self.redirects else r
                 back_paths += [canonical_back_path]
 
             self.refs[path_forward] = list(set(back_paths))
@@ -94,7 +97,6 @@ class RefBuilder:
         self.refs = defaultdict(list)  # forward -> back
         # build this at the same time.
         self.redirects = {}  # redirect_url->canonical
-        self.titles = {}  # canonical->title
         self.src_md = {}  # canonical->md
 
     def dump(self):
@@ -102,13 +104,16 @@ class RefBuilder:
         for path_forward in self.refs.keys():
             print(f"{path_forward}:")
             print(f"->{self.refs[path_forward]}")
-        print("Redirects")
-        print(self.redirects)
 
-        print("Title")
         for canonical in self.src_md.keys():
             print(f"{canonical}->\n{self.src_md[canonical]}")
 
+        out = {
+            "backlinks":self.refs,
+            "redirects":self.redirects, #  I don't thinkw we need this, as we've de-duped
+            "url_info":self.src_md, #  I don't thinkw we need this, as we've de-duped
+        }
+        print(json.dumps(out, indent=4))
 
 def appendXRefToFile(refreneces, output_file):
     pass
