@@ -1,7 +1,14 @@
 from bs4 import BeautifulSoup
 from collections import defaultdict
+from typing import NamedTuple
 import os
 
+
+class PageInfo(NamedTuple):
+    canonical_url: list
+    title: str
+    description: int
+    file_path: str
 
 class RefBuilder:
     def allow_back_ref(self, r):
@@ -24,56 +31,59 @@ class RefBuilder:
             contents = f.read()
             soup = BeautifulSoup(contents, features="html.parser")
 
-            pageTitle = soup.title
-
-            def isCanonical(tag):
-                # <link rel="canonical" href="http://localhost:4000/happy">
-                return tag  and tag.has_attr("canonical")
-
-            canonicalTag =  soup.find(isCanonical)
-            canonicalUrl = None if not canonicalTag else canonicalTag.attrs["href"]
-
-            back_refs = [tag["href"] for tag in soup.find_all("link")]
-
+            # Skip pages that are not complete
+            pageTitle = soup.title.string if soup.title else None
+            canonicalTag = soup.find("link", rel="canonical")
+            canonicalUrl = canonicalTag["href"] if canonicalTag else None
             isCompletePage = pageTitle and canonicalUrl
             if not isCompletePage:
-                return
+                return [], None
 
-            back_refs = [tag["href"] for tag in soup.find_all("a")]
-            refs.append(back_refs)
+            # strip site,
+            # HACK, as generated, root is localhost:4000
+            canonicalUrl = canonicalUrl.replace("http://localhost:4000","")
+
 
             if pageTitle.startswith("Redirecting"):
-                self.redirects[path] = canonicalUrl
-                return
+                # hack need to convert from path to redirect URL via heuristic as
+                # redirect file name is not in the page.
 
+                # path is _site/cv.html'
+                src_url =  path.replace('_site/',"/").replace(".html","")
+                self.redirects[src_url] = canonicalUrl
+                return [], None
 
             self.titles[path] = pageTitle
-            self.src_md[canonicalUrl] = canonicalUrl
 
+            # <meta property="og:description" content="Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.
+            descriptionTag = soup.find("meta", property="og:description")
+            description = descriptionTag["content"] if descriptionTag else "..."
 
-            # <title>Redirecting&hellip;</title>
-            # <link rel="canonical" href="http://localhost:4000/happy">
-            # if isredirect(soup):
-            #    self.redirect[path] = redirect
-        return refs
+            self.src_md[canonicalUrl] = PageInfo(title=pageTitle, description=description, canonical_url=canonicalUrl, file_path=path)
+            refs = [tag["href"] for tag in soup.find_all("a")]
+            return refs, canonicalUrl
+        assert("should never get here")
 
     def gather_refs(self, path_back):
         if not self.allow_back_ref(path_back):
             return
 
-        forward_refs = self.get_refs(path_back)
-        if not forward_refs:
-            return
+        forward_refs, canonicalUrl = self.get_refs(path_back)
 
         relevent_refs = [r for r in forward_refs if self.allow_forward_ref(r)]
         for path_forward in relevent_refs:
-            self.refs[path_forward].append(path_back)
+            self.refs[path_forward].append(canonicalUrl)
 
     def dedup(self):
-        # 1. replace redirects with their source page
-        # 2. remove duplicates
+        # 1. Remove duplicates
         for path_forward in self.refs.keys():
-            self.refs[path_forward] = list(set(self.refs[path_forward]))
+            # 2. replace redirects with their source page
+            back_paths = []
+            for r in self.refs[path_forward]:
+                canonical_back_path = redirects[r] if r in redirects else r
+                back_paths+=[canonical_back_path]
+
+            self.refs[path_forward] = list(set(back_paths))
 
     def __init__(self):
         self.refs = defaultdict(list)  # forward -> back
@@ -91,8 +101,8 @@ class RefBuilder:
         print(self.redirects)
 
         print("Title")
-        for canonical in self.titles.keys():
-            print(f"{canonical}->{self.titles[canonical]}")
+        for canonical in self.src_md.keys():
+            print(f"{canonical}->\n{self.src_md[canonical]}")
 
 
 def appendXRefToFile(refreneces, output_file):
