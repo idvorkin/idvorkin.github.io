@@ -139,4 +139,38 @@ function JsTemplateReplace() {
   }
   window.replaces = replaces; // help debugging
 }
+
+function ProcessBackLinks(backLinks) {
+  var my_path = new URL(document.URL).pathname;
+  var backlinks = backLinks["backlinks"][my_path];
+  if (!backlinks) {
+    console.log("No backlinks for the page");
+    return;
+  }
+
+  let back_link_location = $("#links_to_this_page");
+  if (!back_link_location) {
+    console.log("No back_link_location");
+    return;
+  }
+
+  back_link_location.append("<p> <b>Links to this note:</b><p>");
+
+  for (var link of backlinks) {
+    url_info = backLinks["url_info"][link];
+    console.log(link);
+    console.log(url_info);
+    back_link_location.append(
+      `<li> <a href=${url_info["canonical_url"]}>${
+        url_info["title"]
+      }</a>: ${url_info["description"].slice(0, 80)}...</li>`
+    );
+  }
+}
+// Support for backlinks -- woohoo!
+$.getJSON(
+  "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-refs.json",
+  ProcessBackLinks
+);
+
 $(document).ready(JsTemplateReplace);
