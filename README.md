@@ -6,7 +6,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
 <!-- vim-markdown-toc GFM -->
 
 - [Key user features](#key-user-features)
-    - [Permalinks](#permalinks)
+    - [Permalink](#permalink)
     - [Table of Contents](#table-of-contents)
     - [Back Links](#back-links)
     - [Search](#search)
@@ -14,8 +14,8 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
     - [Keyboard features](#keyboard-features)
     - [Comments](#comments)
 - [Key authoring features](#key-authoring-features)
-    - [Markdown baed edditing and version control](#markdown-baed-edditing-and-version-control)
-    - [Permalinks](#permalinks-1)
+    - [Markdown based editing and version control](#markdown-based-editing-and-version-control)
+    - [Permalinks](#permalinks)
     - [Table of Contents](#table-of-contents-1)
     - [Back Links](#back-links-1)
     - [Search](#search-1)
@@ -29,7 +29,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
 
 ## Key user features
 
-### Permalinks
+### Permalink
 
 ### Table of Contents
 
@@ -42,7 +42,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
 ### Keyboard features
 
 - ? - See help while in a post
-- t - Toggle Toc
+- t - Toggle ToC
 
 ### Comments
 
@@ -52,13 +52,13 @@ Not yet implemented, however a few things I tried that I disliked:
 - Gitter
 - hackmd
 
-Something that seems good (for developers), is direct linking to the page on github master so you can comment. However this [isn't supported](https://github.com/isaacs/github/issues/284)
+Something that seems good (for developers), is direct linking to the page on GitHub master so you can comment. However this [isn't supported](https://github.com/isaacs/github/issues/284)
 
 ## Key authoring features
 
-### Markdown baed edditing and version control
+### Markdown based editing and version control
 
-A jekyll blog stored in markdown
+A Jekyll blog stored in markdown
 
 ### Permalinks
 
@@ -80,7 +80,7 @@ Uses algolia:
 
 ### Useful scripts
 
-- js.sh - Run the development server with live reload and excluding spurious jekyll warnings
+- js.sh - Run the development server with live reload and excluding spurious Jekyll warnings
 - prettier - Opinionated consistent formatting, auto run on git commit
 - vim-toc-generator - Auto generate TOCs, auto run on save
 - checklinks.sh- Check for [broken links](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/checklinks.sh) - Runs manaully from other repro
