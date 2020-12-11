@@ -23,12 +23,34 @@ class RefBuilder:
         with open(path, "r", encoding="latin-1") as f:
             contents = f.read()
             soup = BeautifulSoup(contents, features="html.parser")
-            for tag in soup.find_all("a"):
-                refs.append(tag["href"])
-                # print (tag)
 
-            if soup.title and soup.title.string.startswith("Redirecting"):
-                self.redirects[path] = "find_link"
+            pageTitle = soup.title
+
+            def isCanonical(tag):
+                # <link rel="canonical" href="http://localhost:4000/happy">
+                return tag  and tag.has_attr("canonical")
+
+            canonicalTag =  soup.find(isCanonical)
+            canonicalUrl = None if not canonicalTag else canonicalTag.attrs["href"]
+
+            back_refs = [tag["href"] for tag in soup.find_all("link")]
+
+            isCompletePage = pageTitle and canonicalUrl
+            if not isCompletePage:
+                return
+
+            back_refs = [tag["href"] for tag in soup.find_all("a")]
+            refs.append(back_refs)
+
+            if pageTitle.startswith("Redirecting"):
+                self.redirects[path] = canonicalUrl
+                return
+
+
+            self.titles[path] = pageTitle
+            self.src_md[canonicalUrl] = canonicalUrl
+
+
             # <title>Redirecting&hellip;</title>
             # <link rel="canonical" href="http://localhost:4000/happy">
             # if isredirect(soup):
@@ -39,11 +61,13 @@ class RefBuilder:
         if not self.allow_back_ref(path_back):
             return
 
-        all_refs = self.get_refs(path_back)
-        relevent_refs = [r for r in all_refs if self.allow_forward_ref(r)]
+        forward_refs = self.get_refs(path_back)
+        if not forward_refs:
+            return
+
+        relevent_refs = [r for r in forward_refs if self.allow_forward_ref(r)]
         for path_forward in relevent_refs:
             self.refs[path_forward].append(path_back)
-        pass
 
     def dedup(self):
         # 1. replace redirects with their source page
@@ -52,9 +76,11 @@ class RefBuilder:
             self.refs[path_forward] = list(set(self.refs[path_forward]))
 
     def __init__(self):
-        self.refs = defaultdict(list)  # forward -> back ; 'root' -> back_links
+        self.refs = defaultdict(list)  # forward -> back
         # build this at the same time.
-        self.redirects = {}  # redirect->root page
+        self.redirects = {}  # redirect_url->canonical
+        self.titles = {}  # canonical->title
+        self.src_md = {}  # canonical->md
 
     def dump(self):
         self.dedup()
@@ -63,6 +89,10 @@ class RefBuilder:
             print(f"->{self.refs[path_forward]}")
         print("Redirects")
         print(self.redirects)
+
+        print("Title")
+        for canonical in self.titles.keys():
+            print(f"{canonical}->{self.titles[canonical]}")
 
 
 def appendXRefToFile(refreneces, output_file):
