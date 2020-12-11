@@ -6,10 +6,13 @@ tags:
   - emotional intelligence
   - book-notes
 permalink: /siy
+redirect_from: /search-inside-yourself
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun-meditate.png
 ---
 
 Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It's also a pun as the author works at google, and built the program internally at Google.
+
+This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -26,8 +29,6 @@ Training Emotional Intelligence through mindfulness. Search inside yourself is a
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
 ### 1) What is Emotional Intelligence (EI)? How to train it?
 
