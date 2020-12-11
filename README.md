@@ -87,4 +87,4 @@ Uses algolia:
 
 ### Re-writing from scratch
 
-See some of my notes at [https://github.com/idvorkin/techdiary/blob/master/notes/hack-web.md]
+See some of my notes at [https://github.com/idvorkin/idvorkin.github.io/blob/master/_td/hack-web.md]
