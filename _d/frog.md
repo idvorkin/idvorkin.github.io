@@ -5,12 +5,12 @@ title: "Eat that frog"
 permalink: /frog
 redirect_from:
   - /eat-that-frog
+  - /procrastinate
+  - /procrastination
 
 tags:
   - book-notes
   - how igor ticks
-  - procrastinate
-  - procrastination
 ---
 
 Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing of the concepts into my favorite mental models, the chapter titles are preserved if you want to go look them up.
