@@ -58,6 +58,9 @@ algolia:
   index_name: jekyll
   files_to_exclude:
     - "*bak"
+    - "back-refs.json"
+    - "*sh"
+    - "*py"
     - "search.html"
     - "*index.html"
     - "all.html"
