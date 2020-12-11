@@ -132,7 +132,6 @@ def build_refs_for_dir(rb, dir):
 
 
 def main():
-    print("Main")
     rb = RefBuilder()
     dirs = "_site;_site/td;_site/d".split(";")
     for d in dirs:
