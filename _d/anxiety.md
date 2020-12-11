@@ -1,13 +1,11 @@
-. ---
+---
 layout: post
 title: "Anxiety, the gap between reality and expectations"
 tags:
 permalink: /anxiety
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun-depression.png
 redirect_from:
-
-- /anxious
-
+  - /anxious
 ---
 
 Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The
