@@ -10,6 +10,7 @@ class PageInfo(NamedTuple):
     description: int
     file_path: str
 
+
 class RefBuilder:
     def allow_back_ref(self, r):
         deny_list = "404.html;all.html;toc.html;index.html".split(";")
@@ -41,15 +42,14 @@ class RefBuilder:
 
             # strip site,
             # HACK, as generated, root is localhost:4000
-            canonicalUrl = canonicalUrl.replace("http://localhost:4000","")
-
+            canonicalUrl = canonicalUrl.replace("http://localhost:4000", "")
 
             if pageTitle.startswith("Redirecting"):
                 # hack need to convert from path to redirect URL via heuristic as
                 # redirect file name is not in the page.
 
                 # path is _site/cv.html'
-                src_url =  path.replace('_site/',"/").replace(".html","")
+                src_url = path.replace("_site/", "/").replace(".html", "")
                 self.redirects[src_url] = canonicalUrl
                 return [], None
 
@@ -59,10 +59,15 @@ class RefBuilder:
             descriptionTag = soup.find("meta", property="og:description")
             description = descriptionTag["content"] if descriptionTag else "..."
 
-            self.src_md[canonicalUrl] = PageInfo(title=pageTitle, description=description, canonical_url=canonicalUrl, file_path=path)
+            self.src_md[canonicalUrl] = PageInfo(
+                title=pageTitle,
+                description=description,
+                canonical_url=canonicalUrl,
+                file_path=path,
+            )
             refs = [tag["href"] for tag in soup.find_all("a")]
             return refs, canonicalUrl
-        assert("should never get here")
+        assert "should never get here"
 
     def gather_refs(self, path_back):
         if not self.allow_back_ref(path_back):
@@ -81,7 +86,7 @@ class RefBuilder:
             back_paths = []
             for r in self.refs[path_forward]:
                 canonical_back_path = redirects[r] if r in redirects else r
-                back_paths+=[canonical_back_path]
+                back_paths += [canonical_back_path]
 
             self.refs[path_forward] = list(set(back_paths))
 
