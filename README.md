@@ -1,6 +1,6 @@
 # Igor's collection of ever green notes
 
-This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), and an enabling environment to interact with them. These are currently intermingled, but
+This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), and an [enabling environment](https://notes.andymatuschak.org/z3DaBP4vN1dutjUgrk3jbEeNxScccvDCxDgXe) to interact with them. These are currently intermingled, but
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
