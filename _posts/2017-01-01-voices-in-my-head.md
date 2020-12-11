@@ -7,7 +7,7 @@ inprogress: true
 tags:
   - how igor ticks
   - emotional intelligence
-redirect:
+redirect_from:
   - voices
   - voices-in-my-head
 
