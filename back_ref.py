@@ -2,13 +2,14 @@ from bs4 import BeautifulSoup
 from collections import defaultdict
 from typing import NamedTuple
 import os
-import json
+import jsonpickle # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
+from dataclasses import dataclass, field
 
-
-class PageInfo(NamedTuple):
-    canonical_url: list
-    title: str
-    description: int
+@dataclass
+class PageInfo:
+    canonical_url:str
+    title:str
+    description: str
     file_path: str
 
 
@@ -83,15 +84,19 @@ class RefBuilder:
             self.refs[path_forward].append(canonicalUrl)
 
     def dedup(self):
-        # 1. Remove duplicates
-        for path_forward in self.refs.keys():
-            # 2. replace redirects with their source page
-            back_paths = []
-            for r in self.refs[path_forward]:
-                canonical_back_path = self.redirects[r] if r in self.redirects else r
-                back_paths += [canonical_back_path]
+        # remove forward duplicates
+        paths = list(self.refs.keys()) # make list as will mutate dictions
+        for path_forward in paths:
+            isRedirectedPath  =  path_forward in self.redirects
+            if not isRedirectedPath:
+                continue
+            # copy back_links to canonical page
+            self.refs[self.redirects[path_forward]].extend(self.refs[path_forward])
+            self.refs.pop(path_forward)
 
-            self.refs[path_forward] = list(set(back_paths))
+        # dedup all elements
+        for path_forward in self.refs.keys():
+            self.refs[path_forward] = list(set(self.refs[path_forward]))
 
     def __init__(self):
         self.refs = defaultdict(list)  # forward -> back
@@ -101,19 +106,19 @@ class RefBuilder:
 
     def dump(self):
         self.dedup()
-        for path_forward in self.refs.keys():
-            print(f"{path_forward}:")
-            print(f"->{self.refs[path_forward]}")
+        #for path_forward in self.refs.keys():
+            # print(f"{path_forward}:")
+            # print(f"->{self.refs[path_forward]}")
 
-        for canonical in self.src_md.keys():
-            print(f"{canonical}->\n{self.src_md[canonical]}")
+        #for canonical in self.src_md.keys():
+            # print(f"{canonical}->\n{self.src_md[canonical]}")
 
         out = {
             "backlinks":self.refs,
             "redirects":self.redirects, #  I don't thinkw we need this, as we've de-duped
             "url_info":self.src_md, #  I don't thinkw we need this, as we've de-duped
         }
-        print(json.dumps(out, indent=4))
+        print(jsonpickle.encode(out, indent=4))
 
 def appendXRefToFile(refreneces, output_file):
     pass
