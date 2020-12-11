@@ -7,9 +7,9 @@ inprogress: true
 tags:
   - how igor ticks
   - emotional intelligence
+permalink: /voices
 redirect_from:
-  - voices
-  - voices-in-my-head
+  - /voices-in-my-head
 
 author: "Igor Dvorkin"
 ---
