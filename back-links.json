@@ -38,6 +38,7 @@
       "/eulogy"
     ],
     "/essentialism": ["/7-habits", "/books-that-defined-me", "/frog", "/gtd"],
+    "/gtd": ["/books-that-defined-me", "/frog"],
     "/humans-are-underrated": ["/books-that-defined-me"],
     "/what-makes-a-leader-great": ["/siy"],
     "/happy": ["/hobby", "/siy", "/timeoff"],
@@ -113,9 +114,9 @@
     "/amazon": ["/parkinson"],
     "/mind-at-work": ["/timeoff"],
     "/td/time-off-3-2020": ["/timeoff"],
-    "/gtd": ["/frog"],
     "/td/irl#work-bag": ["/td/ios-nomad"],
     "/money": ["/td/time-off-3-2020"],
+    "/d/resistance": ["/books-that-defined-me", "/psychic-weight", "/timeoff"],
     "/curious": ["/getting-to-yes-with-yourself", "/psychic-weight"],
     "/idle": ["/anxiety", "/depression", "/happy", "/psychic-weight"],
     "/d/habits": ["/7-habits", "/d/resistance", "/idle", "/the-manager-book"],
@@ -123,7 +124,6 @@
     "/magical-memories": ["/d/resistance", "/eulogy", "/hobby", "/idle"],
     "/what-i-wish-knew-at-22": ["/the-manager-book"],
     "/toysfortots": ["/eulogy"],
-    "/d/resistance": ["/psychic-weight", "/timeoff"],
     "default_factory": {
       "py/type": "builtins.list"
     }
@@ -327,9 +327,12 @@
       "outgoing_links": [
         "/7-habits",
         "/essentialism",
+        "/gtd",
         "/humans-are-underrated",
         "/search-inside-yourself",
-        "/getting-to-yes-with-yourself"
+        "/getting-to-yes-with-yourself",
+        "/resistance",
+        "/essentialism"
       ],
       "redirect_url": null
     },
