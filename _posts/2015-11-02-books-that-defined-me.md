@@ -22,7 +22,7 @@ That post has lots of call outs to good books - check them out.
 
 **[Essentialisim](/essentialism)** A deep dive into habit #2 - begin with the end in mind: You must trade-off. You can do one thing. What is most important? If you didn't have this thing would you buy it? If you didn't have this opportunity, what would you give up for it?
 
-**Getting things done** A deep dive into habits #1 and #3 - be proactive, and do first things first: Stress free productivity through getting things out of your head and bottom up planning.
+**[Getting things done](/gtd)** A deep dive into habits #1 and #3 - be proactive, and do first things first: Stress free productivity through getting things out of your head and bottom up planning.
 
 **The checklist manifesto** You waste lots of time re-thinking what you know. Create checklists to free you to be creative, and models to better explore the world.
 
@@ -44,7 +44,7 @@ _Then, one by one, they went to see Mr. Plumbean, late at night. They would sit 
 
 _And whenever anybody visited Mr. Plumbean's house, the very next day that person would set about changing his own house to fit his dreams._
 
-**The Flinch** The resistance is the voice in your head that makes you afraid. F#\$ the resistance! This is such an important lesson, I invented, and annually celebrate [jump in the lake day](https://ig66.blogspot.com/search/label/jump_in_lake_day)!
+**The Flinch** The [resistance](/resistance) is the voice in your head that makes you afraid. F#\$ the resistance! This is such an important lesson, I invented, and annually celebrate [jump in the lake day](https://ig66.blogspot.com/search/label/jump_in_lake_day)!
 
 **The Dip** Quit everything that doesn't get you were you want to be.
 
@@ -52,7 +52,7 @@ _And whenever anybody visited Mr. Plumbean's house, the very next day that perso
 
 ### On strategy
 
-**Essentialism** You must trade-off. You can do one thing. What is most important? If you didn't have this thing would you buy it? If you didn't have this opportunity, what would you give up for it?
+**[Essentialisim](/essentialism)** You must trade-off. You can do one thing. What is most important? If you didn't have this thing would you buy it? If you didn't have this opportunity, what would you give up for it?
 
 ### On being a technologist
 
