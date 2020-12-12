@@ -6,9 +6,9 @@ tags:
   - health
   - emotional intelligence
 
-permalink: emotional-health
+permalink: /emotional-health
 redirect_from:
-  - emotional-health-practices
+  - /emotional-health-practices
 
 comments: true
 inprogress: true
