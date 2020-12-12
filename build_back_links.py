@@ -150,6 +150,15 @@ class LinkBuilder:
         for link in self.incoming_links.keys():
             self.incoming_links[link] = sorted(list(set(self.incoming_links[link])))
 
+        # dictionarys enumerate in insertion order, so rebuild dicts in insertion order
+        def sort_dict(d):
+            return {key:d[key] for key in sorted(d.keys(), key=lambda x:x.lower())}
+
+        self.redirects = sort_dict(self.redirects)
+        self.incoming_links = sort_dict(self.incoming_links)
+        self.pages = sort_dict(self.pages)
+
+
     def __init__(self):
         self.incoming_links = defaultdict(list)  # forward -> back
         self.redirects = (
@@ -175,7 +184,7 @@ def build_links_for_dir(lb, dir):
     for f in os.listdir(dir):
         if not f.endswith(".html"):
             continue
-        lb.process_path(f"{dir}/{f}")
+        lb.update(f"{dir}/{f}")
 
 
 def build_links_for_site():
