@@ -176,4 +176,4 @@ If you wouldn't take a job for a pay cut, you probably shouldn't tak ethe job.
 
 #### Making more vs spending more
 
-See Parkinson's law, applies to both tim and Money.
+See [Parkinson's law](/parkinson), applies to both tim and Money.

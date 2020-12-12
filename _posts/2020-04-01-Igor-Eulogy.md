@@ -70,11 +70,13 @@ Back in his 30s he used to juggle lots of things, the coolest of which being [ju
 
 ### Mostly car free spirit
 
-Igor took a strange pleasure in not driving. Riding his folding bike, or making a long day of public transit with Zach and Amelia. Igor would take the kids on the bus, to the train, to the airport, to ride the airport elevators, just to reverse the process and head home so he could enjoy his kids, and the bus, without spending a dime.
+Igor took a strange pleasure in not driving. Riding his folding [bike](/bike), or making a long day of public transit with Zach and Amelia. Igor would take the kids on the bus, to the train, to the airport, to ride the airport elevators, just to reverse the process and head home so he could enjoy his kids, and the bus, without spending a dime.
 
 Igor loved living in the city so he could walk Zach and Amelia to their school and local library. Igor also loved the subway station 10 minutes from his home, which when combined with his folding bicycle let him get anywhere in the city car free.
 
 Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)) which let him look goofy, be incredibly practical, and carry around the things he loved. Nothing made Igor happier then having the kids on the folding bike.
+
+During Covid-19, Amelias was in a homeschooling pod, and Igor got to ride her to school everyday up a [very big hill](https://ig66.blogspot.com/2020/11/family-journal-548az-Amelia-you-can-do.html).
 
 <!--
 * To File

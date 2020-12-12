@@ -22,6 +22,7 @@
       "/software-leadership-roles",
       "/the-manager-book"
     ],
+    "/bike": ["/eulogy"],
     "/books-that-defined-me": ["/being-a-great-manager", "/the-manager-book"],
     "/brompton-toys": ["/bike"],
     "/cache": ["/eulogy", "/job"],
@@ -83,6 +84,11 @@
     ],
     "/money": ["/td/time-off-3-2020"],
     "/outsourcing": ["/gtd"],
+    "/parkinson": [
+      "/d/2017-04-09-igor-the-operating-manual",
+      "/money",
+      "/the-manager-book"
+    ],
     "/physical-health": ["/depression", "/tech-health-toys"],
     "/pride": [
       "/being-a-great-manager",
@@ -558,7 +564,7 @@
       "title": "IGOR THE OPERATING MANUAL",
       "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.\n\n",
       "file_path": "_site/d/2017-04-09-igor-the-operating-manual.html",
-      "outgoing_links": ["/anxiety"],
+      "outgoing_links": ["/anxiety", "/parkinson"],
       "redirect_url": ""
     },
     "/d/2017-07-22-vacationphotos": {
@@ -744,6 +750,7 @@
       "file_path": "_site/eulogy.html",
       "outgoing_links": [
         "/magic",
+        "/bike",
         "/7-habits",
         "/search-inside-yourself",
         "/job",
@@ -973,7 +980,7 @@
       "title": "TAX AND SAVING",
       "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
       "file_path": "_site/money.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/parkinson"],
       "redirect_url": ""
     },
     "/mortality-software": {
@@ -1462,6 +1469,7 @@
         "/books",
         "/coach",
         "/decide",
+        "/parkinson",
         "/books"
       ],
       "redirect_url": ""
