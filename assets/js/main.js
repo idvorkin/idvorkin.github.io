@@ -169,7 +169,7 @@ function ProcessBackLinks(backLinks) {
 }
 // Support for backlinks -- woohoo!
 $.getJSON(
-  "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json",
+  "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True",
   ProcessBackLinks
 );
 
