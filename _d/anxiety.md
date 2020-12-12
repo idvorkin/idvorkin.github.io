@@ -23,8 +23,8 @@ pain of anxiety is designed for threatening circumstance drawing your attention 
     - [Caring vs Mattering](#caring-vs-mattering)
 - [Detection](#detection)
 - [Antidotes](#antidotes)
+- [Quotes](#quotes)
 - [Personal Examples](#personal-examples)
-- [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -129,6 +129,15 @@ Depending on the depth of the relationship and the reaction so far, it might be 
 - Change Perspective
 - Caring vs Mattering
 
+### Quotes
+
+- Stress is the difference between expectations and reality
+- Laws of physics always win.
+- Anxiety is practicing failure in advance.
+- Worry is not preperation, nor does it make you better.
+- Anxiety is "keeping a problem in the foreground". This sucks up your CPU, and means you can't spin down your CPU.
+- Instead the answer is commit to disk all open decisions, and then kick it out of the foreground till ready (this is the GTD solution).
+
 ### Personal Examples
 
-### Other resources
+- [Voices in my head](/voices)

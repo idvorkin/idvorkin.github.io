@@ -43,6 +43,8 @@ _(BTW the order below is deliberate,it's the order of the voices i want to talk 
 
 ### Anxieties
 
+[Anxiety](/anxiety)
+
 - **Walter** - my anxiety that I'm wasting my life.
 - **Ina** - my insecurity that I'm a failure, only around when Carl gets sick
 - **Terrance** - my frustrations with my wife

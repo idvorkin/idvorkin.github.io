@@ -150,13 +150,7 @@ Like most folks I have triggers and mental quick sand which I can get trapped in
 
 ### Stress and Anxiety
 
-Being human, I spend a bunch of time stressed and anxious. Here are some of my favorite sound bites on the topic:
-
-- Stress is the difference between expectations and reality
-- Laws of physics always win.
-- Anxiety is practicing failure in advance.
-- Worry is not preperation, nor does it make you better.
-- Anxiety is "keeping a problem in the foreground". This sucks up your CPU, and means you can't spin down your CPU. The write answer is commit to disk all open decisions, and then kick it out of the foreground till ready (this is the GTD solution).
+See [anxiety](/anxiety)
 
 ### Corona Virus
 
