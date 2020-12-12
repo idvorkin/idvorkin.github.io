@@ -2,35 +2,58 @@ from bs4 import BeautifulSoup
 from collections import defaultdict
 from typing import NamedTuple
 import os
-import jsonpickle # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
-from dataclasses import dataclass, field
+import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
+from dataclasses import dataclass
+
 
 @dataclass
-class PageInfo:
-    canonical_url:str
-    title:str
+class Page:
+    url: str
+    title: str
     description: str
     file_path: str
+    outgoing_links: list
+    redirect_url: str = None
 
 
-class RefBuilder:
-    def allow_back_ref(self, r):
+# Place to store allow and deny lists
+class Config:
+    def incoming_link_allowed(self, r):
         deny_list = "404.html;all.html;toc.html;index.html".split(";")
         for deny in deny_list:
             if r.endswith(deny):
                 return False
         return True
 
-    def allow_forward_ref(self, r):
+    def outgoing_link_allowed(self, r):
         if r == "/":
             return False
         if r.startswith("/tags#"):
             return False
         return r.startswith("/")
 
-    def get_refs(self, path):
-        refs = []
-        with open(path, "r", encoding="latin-1") as f:
+    def make_site_relative_url_from_url(self, url):
+        # Jekyll generates URLs that include the host
+        return url.replace("http://localhost:4000", "")
+
+    def make_site_relative_url_from_path(self, path):
+        # Given a path, make the path URL
+        # path is _site/cv.html'
+        return path.replace("_site/", "/").replace(".html", "")
+
+    def clean_title(self, title):
+        # Jekyll makes an ugly title
+        # title='\n  INSECURITY AND IMPOSTER SYNDROME \n'
+        return title.replace("\n  ", "").replace(" \n", "")
+
+
+# inject somehow
+config = Config()
+
+
+class LinkBuilder:
+    def parse_page(self, path):
+        with open(path, "r", encoding="utf-8") as f:
             contents = f.read()
             soup = BeautifulSoup(contents, features="html.parser")
 
@@ -40,103 +63,110 @@ class RefBuilder:
             canonicalUrl = canonicalTag["href"] if canonicalTag else None
             isCompletePage = pageTitle and canonicalUrl
             if not isCompletePage:
-                return [], None
+                return None
 
-            # strip site,
-            # HACK, as generated, root is localhost:4000
-            canonicalUrl = canonicalUrl.replace("http://localhost:4000", "")
+            canonicalUrl = config.make_site_relative_url_from_url(canonicalUrl)
 
             if pageTitle.startswith("Redirecting"):
                 # hack need to convert from path to redirect URL via heuristic as
                 # redirect file name is not in the page.
+                src_url = config.make_site_relative_url_from_path(path)
+                return Page(
+                    url=src_url,
+                    redirect_url=canonicalUrl,
+                    title=pageTitle,
+                    description=None,
+                    file_path=None,
+                    outgoing_links=None,
+                )
 
-                # path is _site/cv.html'
-                src_url = path.replace("_site/", "/").replace(".html", "")
-                self.redirects[src_url] = canonicalUrl
-                return [], None
-
-            # Jekyll makes an ugly title
-            # title='\n  INSECURITY AND IMPOSTER SYNDROME \n'
-            pageTitle = pageTitle.replace("\n  ","").replace(" \n","")
+            pageTitle = config.clean_title(pageTitle)
 
             # <meta property="og:description" content="Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.
             descriptionTag = soup.find("meta", property="og:description")
             description = descriptionTag["content"] if descriptionTag else "..."
 
-            self.src_md[canonicalUrl] = PageInfo(
+            links = [tag["href"] for tag in soup.find_all("a")]
+            links = [l for l in links if config.outgoing_link_allowed(l)]
+
+            return Page(
                 title=pageTitle,
                 description=description,
-                canonical_url=canonicalUrl,
+                url=canonicalUrl,
                 file_path=path,
+                outgoing_links=links,
             )
-            refs = [tag["href"] for tag in soup.find_all("a")]
-            return refs, canonicalUrl
+
         assert "should never get here"
 
-    def gather_refs(self, path_back):
-        if not self.allow_back_ref(path_back):
+    def process_path(self, path_back):
+        if not config.incoming_link_allowed(path_back):
             return
 
-        forward_refs, canonicalUrl = self.get_refs(path_back)
+        page = self.parse_page(path_back)
+        if page is None:
+            return
 
-        relevent_refs = [r for r in forward_refs if self.allow_forward_ref(r)]
-        for path_forward in relevent_refs:
-            self.refs[path_forward].append(canonicalUrl)
+        if page.redirect_url is not None:
+            self.redirects[page.url] = page.redirect_url
+            return
+
+        for link in page.outgoing_links:
+            self.incoming_links[link].append(page.url)
+
+        self.pages[page.url] = page
 
     def dedup(self):
         # remove forward duplicates
-        paths = list(self.refs.keys()) # make list as will mutate dictions
-        for path_forward in paths:
-            isRedirectedPath  =  path_forward in self.redirects
-            if not isRedirectedPath:
+        links = list(self.incoming_links.keys())  # make list as will mutate dictions
+        for link in links:
+            isRedirectedLink = link in self.redirects
+            if not isRedirectedLink:
                 continue
-            # copy back_links to canonical page
-            self.refs[self.redirects[path_forward]].extend(self.refs[path_forward])
-            self.refs.pop(path_forward)
+
+            # copy incoming_links from redirected page to canonical page
+            canonical_link = self.redirects[link]
+            self.incoming_links[canonical_link].extend(self.incoming_links[link])
+            # erase duplicate link from dict
+            self.incoming_links.pop(link)
 
         # dedup all elements
-        for path_forward in self.refs.keys():
-            self.refs[path_forward] = list(set(self.refs[path_forward]))
+        for link in self.incoming_links.keys():
+            self.incoming_links[link] = list(set(self.incoming_links[link]))
 
     def __init__(self):
-        self.refs = defaultdict(list)  # forward -> back
-        # build this at the same time.
-        self.redirects = {}  # redirect_url->canonical
-        self.src_md = {}  # canonical->md
+        self.incoming_links = defaultdict(list)  # forward -> back
+        self.redirects = (
+            {}
+        )  # redirect_url->canonical; Technically I don't need these, but nice to debug.
+        self.pages = {}  # canonical->md
 
     def dump(self):
         self.dedup()
-        #for path_forward in self.refs.keys():
-            # print(f"{path_forward}:")
-            # print(f"->{self.refs[path_forward]}")
-
-        #for canonical in self.src_md.keys():
-            # print(f"{canonical}->\n{self.src_md[canonical]}")
 
         out = {
-            "backlinks":self.refs,
-            "redirects":self.redirects, #  I don't thinkw we need this, as we've de-duped
-            "url_info":self.src_md, #  I don't thinkw we need this, as we've de-duped
+            "backlinks": self.incoming_links,
+            "redirects": self.redirects,  #  I don't thinkw we need this, as we've de-duped
+            "url_info": self.pages,  #  I don't thinkw we need this, as we've de-duped
         }
         print(jsonpickle.encode(out, indent=4))
 
-def appendXRefToFile(refreneces, output_file):
-    pass
 
-
-def build_refs_for_dir(rb, dir):
+def build_refs_for_dir(lb, dir):
     for f in os.listdir(dir):
         if not f.endswith(".html"):
             continue
-        rb.gather_refs(f"{dir}/{f}")
+        lb.process_path(f"{dir}/{f}")
 
 
 def main():
-    rb = RefBuilder()
+
+    lb = LinkBuilder()
     dirs = "_site;_site/td;_site/d".split(";")
     for d in dirs:
-        build_refs_for_dir(rb, d)
-    rb.dump()
+        build_refs_for_dir(lb, d)
+    lb.dump()
 
-
+# Really?! Required to not mangle the unicode
+jsonpickle.set_encoder_options("json", ensure_ascii=False) 
 main()
