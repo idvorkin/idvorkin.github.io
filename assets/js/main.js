@@ -148,22 +148,22 @@ function ProcessBackLinks(backLinks) {
     return;
   }
 
-  let back_link_location = $("#links_to_this_page");
+  let back_link_location = $("#links-to-page");
   if (!back_link_location) {
     console.log("No back_link_location");
     return;
   }
 
-  back_link_location.append("<p> <b>Links to this note:</b><p>");
+  back_link_location.append("<div id='links-to-page-title'> <b>LINKS TO THIS NOTE</b><div>");
 
   for (var link of backlinks) {
     url_info = backLinks["url_info"][link];
     console.log(link);
     console.log(url_info);
+    title_href =  `<a href=${url_info["url"]}>${ url_info["title"]}</a>`
+    class_link=  `link-box description truncate-css`
     back_link_location.append(
-      `<li> <a href=${url_info["url"]}>${
-        url_info["title"]
-      }</a>: ${url_info["description"].slice(0, 80)}...</li>`
+      `<div> <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info["description"]} <span></div></div>`
     );
   }
 }

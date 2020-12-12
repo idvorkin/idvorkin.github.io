@@ -56,3 +56,32 @@ pre {
 .table ul {
   margin-bottom: 0;
 }
+
+
+/*make notes pretty*/
+#links-to-page {
+  background-color:  lightgrey;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+#links-to-page-title{
+  font-size:1.4em;
+  margin-left:10px;
+  margin-bottom: 5px;
+}
+/* 
+https://css-tricks.com/line-clampin/
+*/
+
+.link-box {
+  overflow: hidden;
+  max-height:3.0em;
+  margin-left:15px;
+  width:95%;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.link-description {
+  line-height: 0.5;
+}
