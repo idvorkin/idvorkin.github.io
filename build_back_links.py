@@ -178,10 +178,11 @@ class LinkBuilder:
         # don't mangle the unicode
         jsonpickle.set_encoder_options("json", ensure_ascii=False)
 
-        # prettier ignore to avoid it getting re-written by git checkin scripts
-        print ('<!-- prettier-ignore-start -->')
+        # can't prettier ignore to avoid it getting re-written by git checkin scripts
+        # because it will no longer be json -- grr
+        # print ('<!-- prettier-ignore-start -->')
+        # print ('<!-- prettier-ignore-end -->')
         print(jsonpickle.encode(out, indent=4))
-        print ('<!-- prettier-ignore-end -->')
 
 
 def build_links_for_dir(lb, dir):
