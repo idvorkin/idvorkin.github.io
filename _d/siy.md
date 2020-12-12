@@ -6,7 +6,11 @@ tags:
   - emotional intelligence
   - book-notes
 permalink: /siy
-redirect_from: /search-inside-yourself
+redirect_from:
+  - /search-inside-yourself
+  - /meditate
+  - /meditation
+
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun-meditate.png
 ---
 
