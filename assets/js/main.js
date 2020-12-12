@@ -161,7 +161,7 @@ function ProcessBackLinks(backLinks) {
     console.log(link);
     console.log(url_info);
     back_link_location.append(
-      `<li> <a href=${url_info["canonical_url"]}>${
+      `<li> <a href=${url_info["url"]}>${
         url_info["title"]
       }</a>: ${url_info["description"].slice(0, 80)}...</li>`
     );
@@ -169,7 +169,7 @@ function ProcessBackLinks(backLinks) {
 }
 // Support for backlinks -- woohoo!
 $.getJSON(
-  "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-refs.json",
+  "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json",
   ProcessBackLinks
 );
 
