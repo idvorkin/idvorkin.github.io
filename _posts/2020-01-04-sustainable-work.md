@@ -2,6 +2,10 @@
 layout: post
 title: "I don't want to die knowing I spent too much time at work, and I bet you don't either"
 featured: true
+redirect_from:
+  - wlb
+  - wlb-manifesto
+  - work-life-balance
 tags:
   - manager
   - how igor ticks

@@ -137,7 +137,7 @@
       "/the-manager-book"
     ],
     "/static/StrengthFinderIgor.pdf": ["/strength-finder"],
-    "/sustainable-work": ["/being-a-great-manager"],
+    "/sustainable-work": ["/being-a-great-manager", "/depression"],
     "/td": ["/the-manager-book"],
     "/td/cloud-first-applications": ["/the-manager-book"],
     "/td/irl#physical-health": ["/physical-health"],
@@ -257,7 +257,10 @@
     "/virus": "/covid",
     "/voices-in-my-head": "/voices",
     "/vr": "/ar",
-    "/warmth": "/warm"
+    "/warmth": "/warm",
+    "/wlb": "/sustainable-work",
+    "/wlb-manifesto": "/sustainable-work",
+    "/work-life-balance": "/sustainable-work"
   },
   "url_info": {
     "/7-habits": {
@@ -726,6 +729,7 @@
         "/7-habits",
         "/getting-to-yes-with-yourself",
         "/voices",
+        "/wlb",
         "/shame",
         "/imposter",
         "/psychic-weight",

@@ -20,6 +20,8 @@ Unless you've experienced depression, you can't understand it. Even having exper
 
 <!-- prettier-ignore-start -->
 
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Depression, Grief and Sadness](#depression-grief-and-sadness)
@@ -32,7 +34,6 @@ Unless you've experienced depression, you can't understand it. Even having exper
 - [Stats](#stats)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ### Depression, Grief and Sadness
 
@@ -68,7 +69,7 @@ I've tried lots of things, being consistent is hard, especially when you get dep
 - [Getting to yes with yourself](/getting-to-yes-with-yourself)
 - Talking to the [voices in my head](/voices)
 - Getting things done (GTD)
-- Fierce [Work life balance](https://bit.ly/igor-wlb-manifesto)
+- Fierce [Work life balance](/wlb)
 
 {%include blob_image_float_right.html src="noun-depression.png" %}
 
