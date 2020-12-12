@@ -1,18 +1,11 @@
 ---
 layout: post
 title: "Emotional Health Practices"
-author: "Igor Dvorkin"
 tags:
   - health
   - emotional intelligence
 
 permalink: /emotional-health
-redirect_from:
-  - /emotional-health-practices
-
-comments: true
-inprogress: true
-collapsable: true
 ---
 
 Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I've been exploring.
