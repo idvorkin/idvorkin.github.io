@@ -2,13 +2,13 @@
     "backlinks": {
         "py/object": "collections.defaultdict",
         "/happy": [
-            "/timeoff",
+            "/hobby",
             "/siy",
-            "/hobby"
+            "/timeoff"
         ],
         "/death": [
-            "/psychic-weight",
-            "/covid"
+            "/covid",
+            "/psychic-weight"
         ],
         "/brompton-toys": [
             "/bike"
@@ -20,23 +20,23 @@
             "/getting-to-yes-with-yourself"
         ],
         "/decisive": [
+            "/being-a-great-manager",
             "/coaching",
             "/job-hunt-stress",
             "/pride",
-            "/the-manager-book",
-            "/being-a-great-manager"
+            "/the-manager-book"
         ],
         "/pride": [
+            "/being-a-great-manager",
             "/coaching",
-            "/psychic-weight",
-            "/happy",
-            "/the-manager-book",
             "/comp",
-            "/being-a-great-manager"
+            "/happy",
+            "/psychic-weight",
+            "/the-manager-book"
         ],
         "/the-manager-book": [
-            "/coaching",
-            "/being-a-great-manager"
+            "/being-a-great-manager",
+            "/coaching"
         ],
         "/what-makes-a-leader-great": [
             "/siy"
@@ -45,17 +45,17 @@
             "/about"
         ],
         "/physical-health": [
-            "/tech-health-toys",
-            "/depression"
+            "/depression",
+            "/tech-health-toys"
         ],
         "/amazon": [
             "/parkinson"
         ],
         "/mind-monsters": [
+            "/happy",
             "/idle",
-            "/siy",
             "/psychic-weight",
-            "/happy"
+            "/siy"
         ],
         "/shame": [
             "/90days",
@@ -78,9 +78,9 @@
             "/the-manager-book"
         ],
         "/moments-at-work": [
-            "/moments",
             "/being-a-great-manager",
             "/job",
+            "/moments",
             "/the-manager-book"
         ],
         "/Human-Meetings": [
@@ -98,44 +98,44 @@
             "/being-a-great-manager"
         ],
         "/addiction": [
-            "/psychic-weight",
             "/d/resistance",
-            "/idle"
+            "/idle",
+            "/psychic-weight"
         ],
         "/frog": [
+            "/7-habits",
             "/gtd",
             "/psychic-weight",
-            "/7-habits",
             "/td/time-off-3-2020",
             "/timeoff"
         ],
         "/job-hunt-stress": [
-            "/the-manager-book",
-            "/comp"
+            "/comp",
+            "/the-manager-book"
         ],
         "/essentialism": [
-            "/gtd",
+            "/7-habits",
             "/books-that-defined-me",
             "/frog",
-            "/7-habits"
+            "/gtd"
         ],
         "/dip": [
-            "/gtd",
-            "/7-habits"
+            "/7-habits",
+            "/gtd"
         ],
         "/upstream": [
             "/7-habits"
         ],
         "/siy": [
-            "/coaching",
-            "/depression",
             "/7-habits",
             "/books-that-defined-me",
-            "/d/2015-11-20-Emotional-Health-Practices"
+            "/coaching",
+            "/d/2015-11-20-Emotional-Health-Practices",
+            "/depression"
         ],
         "/anxiety": [
-            "/gtd",
-            "/depression"
+            "/depression",
+            "/gtd"
         ],
         "/insomnia": [
             "/depression"
@@ -146,19 +146,19 @@
             "/timeoff"
         ],
         "/7-habits": [
-            "/eulogy",
-            "/depression",
+            "/books-that-defined-me",
             "/d/resistance",
-            "/books-that-defined-me"
+            "/depression",
+            "/eulogy"
         ],
         "/getting-to-yes-with-yourself": [
-            "/curious",
             "/books-that-defined-me",
+            "/curious",
             "/depression"
         ],
         "/psychic-weight": [
-            "/gtd",
-            "/depression"
+            "/depression",
+            "/gtd"
         ],
         "/job": [
             "/eulogy",
@@ -181,11 +181,11 @@
             "/the-manager-book"
         ],
         "/coaching": [
-            "/moments-at-work",
-            "/job",
-            "/the-manager-book",
+            "/being-a-great-manager",
             "/curious",
-            "/being-a-great-manager"
+            "/job",
+            "/moments-at-work",
+            "/the-manager-book"
         ],
         "/comp": [
             "/job-hunt-stress",
@@ -223,12 +223,12 @@
             "/timeoff"
         ],
         "/covid": [
-            "/facebook",
-            "/addiction"
+            "/addiction",
+            "/facebook"
         ],
         "/tech-health-toys": [
-            "/physical-health",
-            "/d/2016-02-03-positive-computing-survey"
+            "/d/2016-02-03-positive-computing-survey",
+            "/physical-health"
         ],
         "/td/irl#physical-health": [
             "/physical-health"
@@ -240,20 +240,20 @@
             "/td/time-off-3-2020"
         ],
         "/magical-memories": [
-            "/idle",
-            "/eulogy",
             "/d/resistance",
-            "/hobby"
+            "/eulogy",
+            "/hobby",
+            "/idle"
         ],
         "/curious": [
-            "/psychic-weight",
-            "/getting-to-yes-with-yourself"
+            "/getting-to-yes-with-yourself",
+            "/psychic-weight"
         ],
         "/idle": [
+            "/anxiety",
             "/depression",
-            "/psychic-weight",
             "/happy",
-            "/anxiety"
+            "/psychic-weight"
         ],
         "/books-that-defined-me": [
             "/being-a-great-manager",
@@ -264,10 +264,10 @@
             "/timeoff"
         ],
         "/d/habits": [
-            "/idle",
-            "/the-manager-book",
+            "/7-habits",
             "/d/resistance",
-            "/7-habits"
+            "/idle",
+            "/the-manager-book"
         ],
         "/voices-in-my-head": [
             "/depression"

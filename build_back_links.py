@@ -132,7 +132,7 @@ class LinkBuilder:
 
         # dedup all elements
         for link in self.incoming_links.keys():
-            self.incoming_links[link] = list(set(self.incoming_links[link]))
+            self.incoming_links[link] = sorted(list(set(self.incoming_links[link])))
 
     def __init__(self):
         self.incoming_links = defaultdict(list)  # forward -> back
