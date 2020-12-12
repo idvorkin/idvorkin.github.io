@@ -108,6 +108,7 @@
     "/physical-health": [
       "/d/2017-04-09-igor-the-operating-manual",
       "/depression",
+      "/td/irl",
       "/tech-health-toys"
     ],
     "/pride": [
@@ -125,8 +126,8 @@
       "/7-habits",
       "/books-that-defined-me",
       "/coaching",
-      "/d/2015-11-20-Emotional-Health-Practices",
       "/depression",
+      "/emotional-health",
       "/eulogy",
       "/td/time-off-3-2020"
     ],
@@ -188,6 +189,7 @@
     "/dream-job": "/job",
     "/duck-pride": "/pride",
     "/eat-that-frog": "/frog",
+    "/emotional-health-practices": "/emotional-health",
     "/enjoy": "/happy",
     "/essential": "/essentialism",
     "/fatality": "/death",
@@ -483,15 +485,6 @@
       "outgoing_links": [],
       "redirect_url": ""
     },
-    "/d/2015-11-20-Emotional-Health-Practices": {
-      "py/object": "__main__.Page",
-      "url": "/d/2015-11-20-Emotional-Health-Practices",
-      "title": "EMOTIONAL HEALTH PRACTICES",
-      "description": "Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I’ve been exploring.\n\n",
-      "file_path": "_site/d/2015-11-20-Emotional-Health-Practices.html",
-      "outgoing_links": ["/search-inside-yourself"],
-      "redirect_url": ""
-    },
     "/d/2016-02-03-positive-computing-survey": {
       "py/object": "__main__.Page",
       "url": "/d/2016-02-03-positive-computing-survey",
@@ -765,6 +758,15 @@
       "description": "Igor's Blog",
       "file_path": "_site/drbot.html",
       "outgoing_links": [],
+      "redirect_url": ""
+    },
+    "/emotional-health": {
+      "py/object": "__main__.Page",
+      "url": "/emotional-health",
+      "title": "EMOTIONAL HEALTH PRACTICES",
+      "description": "Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I’ve been exploring.\n\n",
+      "file_path": "_site/emotional-health.html",
+      "outgoing_links": ["/search-inside-yourself"],
       "redirect_url": ""
     },
     "/essentialism": {
@@ -1294,9 +1296,14 @@
       "py/object": "__main__.Page",
       "url": "/td/irl",
       "title": "IN REAL LIFE DIARY",
-      "description": "Copied from my GitHub techdiary\n\n",
+      "description": "I started writing a technical blog to help me remember the many things I explore. One day, I realized I’ve got a real life too. Here’s a place I can remember the many things I explore.\n\n",
       "file_path": "_site/td/irl.html",
-      "outgoing_links": ["/emotional-health", "/eulogy", "/bike"],
+      "outgoing_links": [
+        "/physical-health",
+        "/emotional-health",
+        "/eulogy",
+        "/bike"
+      ],
       "redirect_url": ""
     },
     "/td/linqpad_from_redshift": {
