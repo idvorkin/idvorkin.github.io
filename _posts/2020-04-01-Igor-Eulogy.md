@@ -21,17 +21,17 @@ _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 <!-- vim-markdown-toc GFM -->
 
 - [Igor is a ...](#igor-is-a-)
-    - [Dealer of smiles and wonder](#dealer-of-smiles-and-wonder)
-    - [Mostly car free spirit](#mostly-car-free-spirit)
-    - [Disciple of the 7 habits of highly effective people](#disciple-of-the-7-habits-of-highly-effective-people)
-    - [Fit fellow](#fit-fellow)
-    - [Emotionally healthy human](#emotionally-healthy-human)
-    - [Husband to Tori - his life long partner.](#husband-to-tori---his-life-long-partner)
-    - [Technologist](#technologist)
-    - [Professional](#professional)
-    - [Family man](#family-man)
-    - [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
-    - [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
+  - [Dealer of smiles and wonder](#dealer-of-smiles-and-wonder)
+  - [Mostly car free spirit](#mostly-car-free-spirit)
+  - [Disciple of the 7 habits of highly effective people](#disciple-of-the-7-habits-of-highly-effective-people)
+  - [Fit fellow](#fit-fellow)
+  - [Emotionally healthy human](#emotionally-healthy-human)
+  - [Husband to Tori - his life long partner.](#husband-to-tori---his-life-long-partner)
+  - [Technologist](#technologist)
+  - [Professional](#professional)
+  - [Family man](#family-man)
+  - [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
+  - [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -126,7 +126,7 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 
 ### Emotionally healthy human
 
-Igor understood emotional health is the basis of his stability, and [invested](http://idvorkin.github.io/search-inside-yourself) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
+Igor understood emotional health is the basis of his stability, and [invested](/search-inside-yourself) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
 Igor strived for grand-mother mind, which he applied to [himself](https://www.amazon.com/dp/B00OP1FIUM/), and others. A grand mother doesn't judge, she believes people grow, listen whole heartily, encourages, and remains calm like water.
 
