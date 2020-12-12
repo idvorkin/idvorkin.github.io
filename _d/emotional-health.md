@@ -48,9 +48,9 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 ### Daily Gratefulness Journal
 
-**Why?** It's easy to focus on what we don't have and what goes wrong, and forget all the things that go right, and that we shoudl be thankful for. By taking a few minutes each day to remember what went well and what I'm grateful for, I'm remindeded why my life is awesome.
+**Why?** It's easy to focus on what we don't have and what goes wrong, and forget all the things that go right, and that we should be thankful for. By taking a few minutes each day to remember what went well and what I'm grateful for, I'm reminded why my life is awesome.
 
-**How?** I use a physical journal called [FiveMinuteJournal](http://www.FiveMinuteJournal.com), it has you list the 3 things your'e grateful for in the morning, and 3 things that went well in the evening.
+**How?** I use a physical journal called [FiveMinuteJournal](http://www.FiveMinuteJournal.com), it has you list the 3 things you're grateful for in the morning, and 3 things that went well in the evening.
 
 **How's that working out for you?** Really well. Because I can fill this out in less then 2 minutes, I tend to do it daily. It's hard to be objective, but since I've started this practice, I have been much more likely to think about how lucky I am.
 
@@ -82,7 +82,7 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 ### Daily Reflective Journal
 
-**Why?** Self awareness is the basis of emotional health, and knowing our inner self requires answering a lot of how does that make you feel? and why is thats? Journalling is a tool by which you can pose those questions and explore the answers anytime you have time.
+**Why?** Self awareness is the basis of emotional health, and knowing our inner self requires answering a lot of how does that make you feel? and why is that? Journaling is a tool by which you can pose those questions and explore the answers anytime you have time.
 
 **How?**
 
@@ -96,4 +96,4 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 ### Discontinued Practices
 
-- GratTweeting (very similuar to daily gratefulness journal.)
+- GratTweeting (very similar to daily gratefulness journal.)
