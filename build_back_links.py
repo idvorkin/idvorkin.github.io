@@ -1,45 +1,67 @@
 from bs4 import BeautifulSoup
 from collections import defaultdict
-from typing import NamedTuple
+from typing import NewType, List
 import os
 import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
 from dataclasses import dataclass
 
+# Use type system (and mypy) to reduce error,
+# Even though both of these are strings, they should not be inter mixed
+FileType = NewType("FileType", str)
+PathType = NewType("PathType", str)
+
 
 @dataclass
 class Page:
-    url: str
+    url: PathType
     title: str
     description: str
-    file_path: str
-    outgoing_links: list
-    redirect_url: str = None
+    file_path: FileType
+    outgoing_links: List[PathType]
+    redirect_url: PathType = PathType("")
+
+    def has_redirect(self):
+        return self.redirect_url != ""
+
+    @staticmethod
+    def ForRedirect(url: PathType, redirect_url: PathType):
+        return Page(
+            url=url,
+            redirect_url=redirect_url,
+            title="",
+            description="",
+            file_path=FileType(""),
+            outgoing_links=[],
+        )
 
 
 # Place to store allow and deny lists
-class Config:
-    def incoming_link_allowed(self, r):
+class idvorkin_github_io_config:
+    def is_allow_incoming(self, file_path: FileType):
         deny_list = "404.html;all.html;toc.html;index.html".split(";")
         for deny in deny_list:
-            if r.endswith(deny):
+            if file_path.endswith(deny):
                 return False
         return True
 
-    def outgoing_link_allowed(self, r):
-        if r == "/":
+    def is_allow_outgoing(self, path: PathType):
+        if path == "/":
             return False
-        if r.startswith("/tags#"):
+        if path.startswith("/tags#"):
             return False
-        return r.startswith("/")
+        return path.startswith("/")
 
-    def make_site_relative_url_from_url(self, url):
+    def collection_dirs(self):
+        return "_site;_site/td;_site/d".split(";")
+
+    def make_site_relative_url_from_url(self, url: PathType) -> PathType:
         # Jekyll generates URLs that include the host
-        return url.replace("http://localhost:4000", "")
+        return PathType(url.replace("http://localhost:4000", ""))
 
-    def make_site_relative_url_from_path(self, path):
+    def make_site_relative_url_from_path(self, path: FileType) -> PathType:
         # Given a path, make the path URL
         # path is _site/cv.html'
-        return path.replace("_site/", "/").replace(".html", "")
+        return PathType(path.replace("_site/", "/").replace(".html", ""))
 
     def clean_title(self, title):
         # Jekyll makes an ugly title
@@ -47,67 +69,61 @@ class Config:
         return title.replace("\n  ", "").replace(" \n", "")
 
 
-# inject somehow
-config = Config()
+# Come up with a better DI system for config
+jekyll_config = idvorkin_github_io_config()
 
 
 class LinkBuilder:
-    def parse_page(self, path):
-        with open(path, "r", encoding="utf-8") as f:
+    def parse_page(self, file_path: FileType):
+        if not jekyll_config.is_allow_incoming(file_path):
+            return
+
+        with open(file_path, "r", encoding="utf-8") as f:
             contents = f.read()
             soup = BeautifulSoup(contents, features="html.parser")
 
             # Skip pages that are not complete
             pageTitle = soup.title.string if soup.title else None
             canonicalTag = soup.find("link", rel="canonical")
-            canonicalUrl = canonicalTag["href"] if canonicalTag else None
+            canonicalUrl: PathType = canonicalTag["href"] if canonicalTag else None
             isCompletePage = pageTitle and canonicalUrl
             if not isCompletePage:
                 return None
 
-            canonicalUrl = config.make_site_relative_url_from_url(canonicalUrl)
+            canonicalUrl = jekyll_config.make_site_relative_url_from_url(canonicalUrl)
 
             if pageTitle.startswith("Redirecting"):
                 # hack need to convert from path to redirect URL via heuristic as
                 # redirect file name is not in the page.
-                src_url = config.make_site_relative_url_from_path(path)
-                return Page(
-                    url=src_url,
-                    redirect_url=canonicalUrl,
-                    title=pageTitle,
-                    description=None,
-                    file_path=None,
-                    outgoing_links=None,
-                )
+                src_url = jekyll_config.make_site_relative_url_from_path(file_path)
+                return Page.ForRedirect(url=src_url, redirect_url=canonicalUrl)
 
-            pageTitle = config.clean_title(pageTitle)
+            pageTitle = jekyll_config.clean_title(pageTitle)
 
             # <meta property="og:description" content="Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.
             descriptionTag = soup.find("meta", property="og:description")
             description = descriptionTag["content"] if descriptionTag else "..."
 
             links = [tag["href"] for tag in soup.find_all("a")]
-            links = [l for l in links if config.outgoing_link_allowed(l)]
+            links = [l for l in links if jekyll_config.is_allow_outgoing(l)]
 
             return Page(
                 title=pageTitle,
                 description=description,
                 url=canonicalUrl,
-                file_path=path,
+                file_path=file_path,
                 outgoing_links=links,
             )
 
         assert "should never get here"
 
-    def process_path(self, path_back):
-        if not config.incoming_link_allowed(path_back):
-            return
+    def update(self, path_back: FileType):
 
         page = self.parse_page(path_back)
         if page is None:
             return
 
-        if page.redirect_url is not None:
+        if page.has_redirect():
             self.redirects[page.url] = page.redirect_url
             return
 
@@ -116,8 +132,8 @@ class LinkBuilder:
 
         self.pages[page.url] = page
 
-    def dedup(self):
-        # remove forward duplicates
+    def compress(self):
+        # remove redirects and dedup
         links = list(self.incoming_links.keys())  # make list as will mutate dictions
         for link in links:
             isRedirectedLink = link in self.redirects
@@ -138,35 +154,35 @@ class LinkBuilder:
         self.incoming_links = defaultdict(list)  # forward -> back
         self.redirects = (
             {}
-        )  # redirect_url->canonical; Technically I don't need these, but nice to debug.
+        )  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
         self.pages = {}  # canonical->md
 
     def dump(self):
-        self.dedup()
+        self.compress()
 
         out = {
             "backlinks": self.incoming_links,
             "redirects": self.redirects,  #  I don't thinkw we need this, as we've de-duped
             "url_info": self.pages,  #  I don't thinkw we need this, as we've de-duped
         }
+
+        # don't mangle the unicode
+        jsonpickle.set_encoder_options("json", ensure_ascii=False)
         print(jsonpickle.encode(out, indent=4))
 
 
-def build_refs_for_dir(lb, dir):
+def build_links_for_dir(lb, dir):
     for f in os.listdir(dir):
         if not f.endswith(".html"):
             continue
         lb.process_path(f"{dir}/{f}")
 
 
-def main():
-
+def build_links_for_site():
     lb = LinkBuilder()
-    dirs = "_site;_site/td;_site/d".split(";")
-    for d in dirs:
-        build_refs_for_dir(lb, d)
+    for d in jekyll_config.collection_dirs():
+        build_links_for_dir(lb, d)
     lb.dump()
 
-# Really?! Required to not mangle the unicode
-jsonpickle.set_encoder_options("json", ensure_ascii=False) 
-main()
+
+build_links_for_site()
