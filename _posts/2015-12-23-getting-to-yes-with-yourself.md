@@ -13,6 +13,20 @@ tags:
 
 Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself.
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [1) Put yourself in your shoes &#x2611;](#1-put-yourself-in-your-shoes-x2611)
+- [2) Develop your inner BATNA &#x2611;](#2-develop-your-inner-batna-x2611)
+- [3) Reframe your picture &#x2610;](#3-reframe-your-picture-x2610)
+- [4) Stay in the zone &#x2610;](#4-stay-in-the-zone-x2610)
+- [5) Respect them even if &#x2610;](#5-respect-them-even-if-x2610)
+- [6) Give and Recieve &#x2610;](#6-give-and-recieve-x2610)
+- [7) The 3 wins &#x2611;](#7-the-3-wins-x2611)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 This is a summary of [Getting to yes with yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
 ### 1) Put yourself in your shoes &#x2611;
