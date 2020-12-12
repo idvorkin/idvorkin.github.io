@@ -6,6 +6,10 @@ tags:
   - health
   - emotional intelligence
 
+permalink: emotional-health
+redirect_from:
+  - emotional-health-practices
+
 comments: true
 inprogress: true
 collapsable: true
@@ -14,6 +18,25 @@ collapsable: true
 Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I've been exploring.
 
 I picked up, and also execute, these habits semi-randomly today. However, as I do with physical health, I'll try to build up a more deliberate system. If you're interested in building up your emotional intelligence, my "bible" for emotional health practices is currently [SIY](/search-inside-yourself). Joy on demand by the same author is also excellent.
+
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [Active Practices](#active-practices)
+    - [Daily Stream of Consciousness Journaling](#daily-stream-of-consciousness-journaling)
+    - [Daily Gratefulness Journal](#daily-gratefulness-journal)
+    - [5 am wake up (psst - it's really physical health)](#5-am-wake-up-psst---its-really-physical-health)
+    - [Formal 8-12 minute meditation](#formal-8-12-minute-meditation)
+- [Future Practices](#future-practices)
+    - [Informal gap meditation](#informal-gap-meditation)
+    - [Daily Reflective Journal](#daily-reflective-journal)
+- [Inconsistent/Future practices](#inconsistentfuture-practices)
+    - [Discontinued Practices](#discontinued-practices)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
+## Active Practices
 
 ### Daily Stream of Consciousness Journaling
 
@@ -47,6 +70,8 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 **How's that working out for you?**
 
+## Future Practices
+
 ### Informal gap meditation
 
 **Why?**
@@ -63,7 +88,7 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 **How's that working out for you?**
 
-### Inconsistent/Future practices
+## Inconsistent/Future practices
 
 - Process it once list
 - Why is someone behaving inconsistently

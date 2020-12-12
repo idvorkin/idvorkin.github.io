@@ -4,47 +4,54 @@ no-render-title: true
 title: In Real Life Diary
 ---
 
+I started writing a technical blog to help me remember the many things I explore. One day, I realized I've got a real life too. Here's a place I can remember the many things I explore.
+
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/irl.md)_
 
+<!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Physical Health](#physical-health)
-  - [Personal Trainer](#personal-trainer)
-  - [Calf Health](#calf-health)
-  - [Knee Health](#knee-health)
-  - [Booger Health](#booger-health)
-  - [Skin Health](#skin-health)
-  - [Wrist Health](#wrist-health)
-  - [Standing Desks](#standing-desks)
-  - [Gym Stuff](#gym-stuff)
-  - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
+    - [Personal Trainer](#personal-trainer)
+    - [Calf Health](#calf-health)
+    - [Knee Health](#knee-health)
+    - [Booger Health](#booger-health)
+    - [Skin Health](#skin-health)
+    - [Wrist Health](#wrist-health)
+    - [Standing Desks](#standing-desks)
+    - [Gym Stuff](#gym-stuff)
+    - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
 - [Emotional Health](#emotional-health)
-  - [Meditation](#meditation)
-  - [Therapist](#therapist)
+    - [The Full Post](#the-full-post)
+    - [Meditation](#meditation)
+    - [Therapist](#therapist)
 - [Cognitive Health](#cognitive-health)
-  - [Blogging](#blogging)
-  - [Weekly goals](#weekly-goals)
+    - [Blogging](#blogging)
+    - [Weekly goals](#weekly-goals)
 - [Identity Health](#identity-health)
-  - [Eulogy Writing](#eulogy-writing)
+    - [Eulogy Writing](#eulogy-writing)
 - [Personal Carry](#personal-carry)
-  - [Fanny Pack](#fanny-pack)
-  - [Gym Bag](#gym-bag)
-  - [Work Bag](#work-bag)
+    - [Fanny Pack](#fanny-pack)
+    - [Gym Bag](#gym-bag)
+    - [Work Bag](#work-bag)
 - [Bikes](#bikes)
-  - [Bike accouterments](#bike-accouterments)
+    - [Bike accouterments](#bike-accouterments)
 - [Car Tech](#car-tech)
 - [Morning Routine](#morning-routine)
-  - [Weekend morning routine](#weekend-morning-routine)
-  - [Weekday morning routine](#weekday-morning-routine)
-  - [Morning Kryptonite](#morning-kryptonite)
+    - [Weekend morning routine](#weekend-morning-routine)
+    - [Weekday morning routine](#weekday-morning-routine)
+    - [Morning Kryptonite](#morning-kryptonite)
 - [Tech](#tech)
-  - [Computers](#computers)
-  - [Monitors](#monitors)
+    - [Computers](#computers)
+    - [Monitors](#monitors)
 - [Camera](#camera)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## Physical Health
+
+My post for others at [physical health](/physical-health)
 
 ### Personal Trainer
 
