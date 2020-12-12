@@ -46,8 +46,8 @@ function generateToc(id, showPinToc) {
   }
   const tocMenu = $('<div class="toc-menu"></div');
   const toggle = $('<a class="expand-toggle" href="#">Collapse all</a>');
-  const backToTop = $('<a class="back-to-top" href="#">Back to top</a>');
-  const gotoBottom = $('<a class="go-to-bottom" href="#">Go to bottom</a>');
+  const backToTop = $('<a class="back-to-top" href="#">Top of page</a>');
+  const gotoBottom = $('<a class="go-to-bottom" href="#">Bottom of page</a>');
   const forceSideBar = $('<a class="go-to-bottom" href="#">Pin ToC</a>');
   checkExpandToggle();
   toggle.click(e => {
