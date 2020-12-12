@@ -22,7 +22,7 @@
       "/software-leadership-roles",
       "/the-manager-book"
     ],
-    "/bike": ["/eulogy"],
+    "/bike": ["/d/2017-04-09-igor-the-operating-manual", "/eulogy", "/td/irl"],
     "/books-that-defined-me": ["/being-a-great-manager", "/the-manager-book"],
     "/brompton-toys": ["/bike"],
     "/cache": ["/eulogy", "/job"],
@@ -37,7 +37,13 @@
     "/comp": ["/job-hunt-stress", "/the-manager-book"],
     "/covid": ["/addiction", "/facebook"],
     "/curious": ["/getting-to-yes-with-yourself", "/psychic-weight"],
-    "/d/habits": ["/7-habits", "/d/resistance", "/idle", "/the-manager-book"],
+    "/d/habits": [
+      "/7-habits",
+      "/d/2017-04-09-igor-the-operating-manual",
+      "/d/resistance",
+      "/idle",
+      "/the-manager-book"
+    ],
     "/d/resistance": ["/books-that-defined-me", "/psychic-weight", "/timeoff"],
     "/death": ["/covid", "/psychic-weight"],
     "/decisive": [
@@ -48,8 +54,9 @@
       "/the-manager-book"
     ],
     "/dip": ["/7-habits", "/gtd"],
+    "/emotional-health": ["/d/2017-04-09-igor-the-operating-manual", "/td/irl"],
     "/essentialism": ["/7-habits", "/books-that-defined-me", "/frog", "/gtd"],
-    "/eulogy": ["/depression", "/frog", "/timeoff"],
+    "/eulogy": ["/depression", "/frog", "/td/irl", "/timeoff"],
     "/frog": [
       "/7-habits",
       "/gtd",
@@ -72,7 +79,13 @@
     "/job": ["/eulogy", "/job-hunt-stress", "/the-manager-book"],
     "/job-hunt-stress": ["/comp", "/the-manager-book"],
     "/linkedin": ["/about"],
-    "/magical-memories": ["/d/resistance", "/eulogy", "/hobby", "/idle"],
+    "/magical-memories": [
+      "/d/2017-04-09-igor-the-operating-manual",
+      "/d/resistance",
+      "/eulogy",
+      "/hobby",
+      "/idle"
+    ],
     "/mind-at-work": ["/timeoff"],
     "/mind-monsters": ["/happy", "/idle", "/psychic-weight", "/siy"],
     "/moments": ["/moments-at-work"],
@@ -82,14 +95,21 @@
       "/moments",
       "/the-manager-book"
     ],
-    "/money": ["/td/time-off-3-2020"],
+    "/money": [
+      "/d/2017-04-09-igor-the-operating-manual",
+      "/td/time-off-3-2020"
+    ],
     "/outsourcing": ["/gtd"],
     "/parkinson": [
       "/d/2017-04-09-igor-the-operating-manual",
       "/money",
       "/the-manager-book"
     ],
-    "/physical-health": ["/depression", "/tech-health-toys"],
+    "/physical-health": [
+      "/d/2017-04-09-igor-the-operating-manual",
+      "/depression",
+      "/tech-health-toys"
+    ],
     "/pride": [
       "/being-a-great-manager",
       "/coaching",
@@ -131,7 +151,11 @@
     "/the-manager-book": ["/being-a-great-manager", "/coaching"],
     "/toysfortots": ["/eulogy"],
     "/upstream": ["/7-habits"],
-    "/voices": ["/anxiety", "/depression"],
+    "/voices": [
+      "/anxiety",
+      "/d/2017-04-09-igor-the-operating-manual",
+      "/depression"
+    ],
     "/warm": ["/bike"],
     "/welcome-to-holland": ["/getting-to-yes-with-yourself"],
     "/what-i-wish-knew-at-22": ["/the-manager-book"],
@@ -564,7 +588,17 @@
       "title": "IGOR THE OPERATING MANUAL",
       "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.\n\n",
       "file_path": "_site/d/2017-04-09-igor-the-operating-manual.html",
-      "outgoing_links": ["/anxiety", "/parkinson"],
+      "outgoing_links": [
+        "/habits",
+        "/physical-health",
+        "/emotional-health",
+        "/bike",
+        "/magic",
+        "/voices",
+        "/anxiety",
+        "/money",
+        "/parkinson"
+      ],
       "redirect_url": ""
     },
     "/d/2017-07-22-vacationphotos": {
@@ -1262,7 +1296,7 @@
       "title": "IN REAL LIFE DIARY",
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/irl.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/emotional-health", "/eulogy", "/bike"],
       "redirect_url": ""
     },
     "/td/linqpad_from_redshift": {

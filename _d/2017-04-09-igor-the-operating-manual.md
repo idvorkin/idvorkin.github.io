@@ -112,15 +112,17 @@ Top priorities:
 
 ## Health and habits
 
-Health - physical, emotional, cognitive and spiritual, is easy to understand but hard to maintain. My strategy to maintain health is habits, but thanks to the [immutable laws of hard things](http://~/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
+Health - physical, emotional, cognitive and spiritual, is easy to understand but hard to maintain. My strategy to maintain health is [habits](/habits), but thanks to the [immutable laws of hard things](http://~/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
 
 I spend lots of time thinking about how I should be working my habits, but often end up not doing them. In this case, the key is to stop moaning and restart 'em.
 
 ### Physical
 
-My summary of [physical health habits](https://medium.com/being-healthy/physical-health-a2f648e7574c).
+My summary of [physical health habits](/physical-health)
 
 ### Emotional
+
+My summary of [emotional health habits](/emotional-health)
 
 ### Cognitive
 
@@ -134,7 +136,11 @@ I've already got enough hobbies - biking, magic, juggling. I get my biking fix n
 
 ### Biking
 
+[Biking](/bike)
+
 ### Magic
+
+[Magic](/magic)
 
 ### Jugging
 
@@ -146,7 +152,7 @@ I've already got enough hobbies - biking, magic, juggling. I get my biking fix n
 
 ## Triggers and Mental Quick Sand
 
-Like most folks I have triggers and mental quick sand which I can get trapped in. Here's some of mine, and things I need to remember.
+Like most folks I have triggers and mental quick sand which I can get trapped in. Here's some of mine, and things I need to remember. This also reminds me of the [voices in my head](/voices)
 
 ### Stress and Anxiety
 
@@ -165,6 +171,8 @@ See [anxiety](/anxiety)
 #### Diet and Weight
 
 ### Financial Security and Retirement
+
+My notes on [money](/money).
 
 #### The point of money
 

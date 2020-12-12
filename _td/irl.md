@@ -108,6 +108,10 @@ https://www.amazon.com/gp/product/B07KMNVXCT/ref=ppx_yo_dt_b_search_asin_title?i
 
 ## Emotional Health
 
+### The Full Post
+
+My notes on [emotional health](/emotional-health).
+
 ### Meditation
 
 I used to have a complex meditation routine, which was very "focused", but had too much complexity. I skipped it and now use headspace, and do it slouching in a chair. Huge improvement.
@@ -149,6 +153,8 @@ I've been seeing a therapist weekly since my early 30's. It provides me several 
 
 ### Eulogy Writing
 
+[My own eulogy](/eulogy)
+
 ## Personal Carry
 
 ### Fanny Pack
@@ -179,7 +185,7 @@ I **love** not driving. Biking is an awesome form of transit. It took a while bu
 
 ### Bike accouterments
 
-[Biking on my blog](https://www.idvork.in/bike)
+[Biking on my blog](/bike)
 
 ## Car Tech
 
