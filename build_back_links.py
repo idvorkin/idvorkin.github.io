@@ -4,6 +4,7 @@ from typing import NewType, List
 import os
 import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
 from dataclasses import dataclass
+import copy
 
 # Use type system (and mypy) to reduce error,
 # Even though both of these are strings, they should not be inter mixed
@@ -18,6 +19,7 @@ class Page:
     description: str
     file_path: FileType
     outgoing_links: List[PathType]
+    incoming_links: List[PathType]
     redirect_url: PathType = PathType("")
 
     def has_redirect(self):
@@ -32,6 +34,7 @@ class Page:
             description="",
             file_path=FileType(""),
             outgoing_links=[],
+            incoming_links=[],
         )
 
 
@@ -113,6 +116,7 @@ class LinkBuilder:
                 url=canonicalUrl,
                 file_path=file_path,
                 outgoing_links=links,
+                incoming_links=[]
             )
 
         assert "should never get here"
@@ -150,14 +154,19 @@ class LinkBuilder:
         for link in self.incoming_links.keys():
             self.incoming_links[link] = sorted(list(set(self.incoming_links[link])))
 
+
         # dictionarys enumerate in insertion order, so rebuild dicts in insertion order
         def sort_dict(d):
-            return {key:d[key] for key in sorted(d.keys(), key=lambda x:x.lower())}
+            return {key: d[key] for key in sorted(d.keys(), key=lambda x: x.lower())}
 
         self.redirects = sort_dict(self.redirects)
         self.incoming_links = sort_dict(self.incoming_links)
         self.pages = sort_dict(self.pages)
 
+        # populate incoming links
+        for link in self.incoming_links.keys():
+            if link in self.pages:
+                self.pages[link].incoming_links = copy.deepcopy(self.incoming_links[link])
 
     def __init__(self):
         self.incoming_links = defaultdict(list)  # forward -> back
@@ -166,7 +175,7 @@ class LinkBuilder:
         )  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
         self.pages = {}  # canonical->md
 
-    def dump(self):
+    def print_json(self):
         self.compress()
 
         out = {
@@ -196,7 +205,7 @@ def build_links_for_site():
     lb = LinkBuilder()
     for d in jekyll_config.collection_dirs():
         build_links_for_dir(lb, d)
-    lb.dump()
+    lb.print_json()
 
 
 build_links_for_site()
