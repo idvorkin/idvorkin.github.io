@@ -14,11 +14,12 @@ redirect_from:
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun-meditate.png
 ---
 
-Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It's also a pun as the author works at google, and built the program internally at Google.
+Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It's also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to medatitive bliss.
 
-This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
+This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1) and Joy on Demand, and the place I learned many of my [emotional health practices](/emotional-health)
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [1) What is Emotional Intelligence (EI)? How to train it?](#1-what-is-emotional-intelligence-ei-how-to-train-it)
@@ -30,8 +31,13 @@ This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B
 - [7) Developing Empathy by connecting to others](#7-developing-empathy-by-connecting-to-others)
 - [8) Leadership and Social Skills](#8-leadership-and-social-skills)
 - [9) The story behind Search Inside Yourself.](#9-the-story-behind-search-inside-yourself)
+- [Inclining the Mind Toward Joy](#inclining-the-mind-toward-joy)
+- [Uplift the mind in seconds](#uplift-the-mind-in-seconds)
+- [Working with suffering](#working-with-suffering)
+- [What meditation mastery looks like](#what-meditation-mastery-looks-like)
 
 <!-- vim-markdown-toc -->
+
 <!-- prettier-ignore-end -->
 
 ### 1) What is Emotional Intelligence (EI)? How to train it?
@@ -555,3 +561,59 @@ _Three easy steps to world peace_
 - Start with Me
 - Make meditation a field of science
 - Make meditation like exercise
+
+### Inclining the Mind Toward Joy
+
+FP: NOTICING JOY IN ONE BREATH : h2
+IP: NOTICING JOY IN DAILY LIFE : h2
+Attending to Joy : h2
+Joy on Demand : h2
+FP: INVITING AND ATTENDING TO JOY : h2
+The Joyful Mind Rocks at Meditation : h2
+IP: ATTENDING TO THE JOY OF PLEASANT DAILY EXPERIENCES : h2
+“Someday, I Will Die,” and Other Happy Thoughts : h2
+IP: AWARENESS OF MORTALITY : h2
+The Joy of Not Being in Pain : h2
+IP: JUST NOTE GONE : h2
+FP: JUST NOTE GONE : h2
+Do Not Expect Every Moment, Meditation, or Day to Be Joyful : h2
+Daily Practice to Incline the Mind Toward Joy : h2
+
+### Uplift the mind in seconds
+
+Loving-Kindness and the Happiest Day in Seven Years : h2
+IP: WISHING FOR RANDOM PEOPLE TO BE HAPPY : h2
+Familiarizing the Mind with the Joy of Loving-Kindness : h2
+FP: ATTENDING TO THE JOY OF LOVING-KINDNESS : h2
+Loving-Kindness Is the “Gateway Drug” to Compassion : h2
+FP: CULTIVATING COMPASSION THROUGH PEACE, JOY, AND KINDNESS : h2
+FP: UPLIFTING AND SETTLING THE MIND WITH ALTRUISTIC JOY : h2
+IP: REJOICING IN INNER GOODNESS AND ALTRUISTIC DEEDS : h2
+Selfless Love, a Short Poem : h2
+
+### Working with suffering
+
+Step 1 in Working with Emotional Pain: The Attentional Step : h2
+Step 2 in Working with Emotional Pain: The Affective Step : h2
+Willingness to Experience Joy : h2
+The Tiger and the Strawberry : h2
+Just Because You’re in Pain Doesn’t Mean You Can’t Be Joyful : h2
+Willingness to Experience the Emotional Pain : h2
+Step 3 in Working with Emotional Pain: The Cognitive Step : h2
+Being Very Good at Working With Emotional Pain : h2
+Is That So? : h2
+Failure Is Not an Option, It Comes Preinstalled : h2
+The Art of Suffering Is Love : h2
+The Art of Suffering is love. : h2
+
+### What meditation mastery looks like
+
+Joy Is Not the Only Path : h2
+When Meditation Becomes Effortless : h2
+What Is It Like to Be Very Seasoned at Meditation? : h2
+Maturity of Samatha (Calm-Abiding) Practice : h2
+Mastery of Samatha (Calm-Abiding) : h2
+Maturity of Vipassana (Insight) Practice : h2
+Mastery of Vipassana (Insight) : h2
+Maturity of Brahmavihara (Sublime States) Practice : h2
+Freedom! : h2
