@@ -564,56 +564,56 @@ _Three easy steps to world peace_
 
 ### Inclining the Mind Toward Joy
 
-FP: NOTICING JOY IN ONE BREATH : h2
-IP: NOTICING JOY IN DAILY LIFE : h2
-Attending to Joy : h2
-Joy on Demand : h2
-FP: INVITING AND ATTENDING TO JOY : h2
-The Joyful Mind Rocks at Meditation : h2
-IP: ATTENDING TO THE JOY OF PLEASANT DAILY EXPERIENCES : h2
-“Someday, I Will Die,” and Other Happy Thoughts : h2
-IP: AWARENESS OF MORTALITY : h2
-The Joy of Not Being in Pain : h2
-IP: JUST NOTE GONE : h2
-FP: JUST NOTE GONE : h2
-Do Not Expect Every Moment, Meditation, or Day to Be Joyful : h2
-Daily Practice to Incline the Mind Toward Joy : h2
+- FP: NOTICING JOY IN ONE BREATH
+- IP: NOTICING JOY IN DAILY LIFE
+- Attending to Joy
+- Joy on Demand
+- FP: INVITING AND ATTENDING TO JOY
+- The Joyful Mind Rocks at Meditation
+- IP: ATTENDING TO THE JOY OF PLEASANT DAILY EXPERIENCES
+- “Someday, I Will Die,” and Other Happy Thoughts
+- IP: AWARENESS OF MORTALITY
+- The Joy of Not Being in Pain
+- IP: JUST NOTE GONE
+- FP: JUST NOTE GONE
+- Do Not Expect Every Moment, Meditation, or Day to Be Joyful
+- Daily Practice to Incline the Mind Toward Joy
 
 ### Uplift the mind in seconds
 
-Loving-Kindness and the Happiest Day in Seven Years : h2
-IP: WISHING FOR RANDOM PEOPLE TO BE HAPPY : h2
-Familiarizing the Mind with the Joy of Loving-Kindness : h2
-FP: ATTENDING TO THE JOY OF LOVING-KINDNESS : h2
-Loving-Kindness Is the “Gateway Drug” to Compassion : h2
-FP: CULTIVATING COMPASSION THROUGH PEACE, JOY, AND KINDNESS : h2
-FP: UPLIFTING AND SETTLING THE MIND WITH ALTRUISTIC JOY : h2
-IP: REJOICING IN INNER GOODNESS AND ALTRUISTIC DEEDS : h2
-Selfless Love, a Short Poem : h2
+- Loving-Kindness and the Happiest Day in Seven Years
+- IP: WISHING FOR RANDOM PEOPLE TO BE HAPPY
+- Familiarizing the Mind with the Joy of Loving-Kindness
+- FP: ATTENDING TO THE JOY OF LOVING-KINDNESS
+- Loving-Kindness Is the “Gateway Drug” to Compassion
+- FP: CULTIVATING COMPASSION THROUGH PEACE, JOY, AND KINDNESS
+- FP: UPLIFTING AND SETTLING THE MIND WITH ALTRUISTIC JOY
+- IP: REJOICING IN INNER GOODNESS AND ALTRUISTIC DEEDS
+- Selfless Love, a Short Poem
 
 ### Working with suffering
 
-Step 1 in Working with Emotional Pain: The Attentional Step : h2
-Step 2 in Working with Emotional Pain: The Affective Step : h2
-Willingness to Experience Joy : h2
-The Tiger and the Strawberry : h2
-Just Because You’re in Pain Doesn’t Mean You Can’t Be Joyful : h2
-Willingness to Experience the Emotional Pain : h2
-Step 3 in Working with Emotional Pain: The Cognitive Step : h2
-Being Very Good at Working With Emotional Pain : h2
-Is That So? : h2
-Failure Is Not an Option, It Comes Preinstalled : h2
-The Art of Suffering Is Love : h2
-The Art of Suffering is love. : h2
+- Step 1 in Working with Emotional Pain: The Attentional Step
+- Step 2 in Working with Emotional Pain: The Affective Step
+- Willingness to Experience Joy
+- The Tiger and the Strawberry
+- Just Because You’re in Pain Doesn’t Mean You Can’t Be Joyful
+- Willingness to Experience the Emotional Pain
+- Step 3 in Working with Emotional Pain: The Cognitive Step
+- Being Very Good at Working With Emotional Pain
+- Is That So?
+- Failure Is Not an Option, It Comes Preinstalled
+- The Art of Suffering Is Love
+- The Art of Suffering is love.
 
 ### What meditation mastery looks like
 
-Joy Is Not the Only Path : h2
-When Meditation Becomes Effortless : h2
-What Is It Like to Be Very Seasoned at Meditation? : h2
-Maturity of Samatha (Calm-Abiding) Practice : h2
-Mastery of Samatha (Calm-Abiding) : h2
-Maturity of Vipassana (Insight) Practice : h2
-Mastery of Vipassana (Insight) : h2
-Maturity of Brahmavihara (Sublime States) Practice : h2
-Freedom! : h2
+- Joy Is Not the Only Path
+- When Meditation Becomes Effortless
+- What Is It Like to Be Very Seasoned at Meditation?
+- Maturity of Samatha (Calm-Abiding) Practice
+- Mastery of Samatha (Calm-Abiding)
+- Maturity of Vipassana (Insight) Practice
+- Mastery of Vipassana (Insight)
+- Maturity of Brahmavihara (Sublime States) Practice
+- Freedom!
