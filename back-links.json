@@ -281,6 +281,12 @@
         "/atomic-habits",
         "/siy"
       ],
+      "incoming_links": [
+        "/books-that-defined-me",
+        "/d/resistance",
+        "/depression",
+        "/eulogy"
+      ],
       "redirect_url": ""
     },
     "/90days": {
@@ -290,6 +296,7 @@
       "description": "A how to guide for starting your next job.\n\n",
       "file_path": "_site/90days.html",
       "outgoing_links": ["/insecure", "/shame"],
+      "incoming_links": ["/the-manager-book"],
       "redirect_url": ""
     },
     "/about": {
@@ -299,6 +306,7 @@
       "description": "Igor's Blog",
       "file_path": "_site/about.html",
       "outgoing_links": ["/linkedin"],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/addiction": {
@@ -308,6 +316,7 @@
       "description": "Addiction is not about drugs or alcohol - it is about escape. Quoting “Do the Work”: When we can’t stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That’s why addicts are so interesting and so boring at the same time. They’re interesting because they’re called to something — something new, something unique, something that we, watching, can’t wait to see them bring forth into manifestation. At the same time, they’re boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict’s crazy, haunted, shattered life.\n\n",
       "file_path": "_site/addiction.html",
       "outgoing_links": ["/covid", "/covid"],
+      "incoming_links": ["/d/resistance", "/idle", "/psychic-weight"],
       "redirect_url": ""
     },
     "/amazon": {
@@ -317,6 +326,7 @@
       "description": "I spent 4 years working at Amazon, some things I loved, some not so much. Amazon is a huge company and the variation of behavior within a company exceeds the variation between the “median” behavior between companies. Even within the two teams I was on at Amazon I saw the exact opposite behaviors. When I talk about the good, I’ll talk about the ideal good, and when I talk about the bad, I’ll talk to some issues I saw that were systemically bad. As a result you’ll often see me describing something as both good and bad, as it’s done differently in different parts of the company.\n\n",
       "file_path": "_site/amazon.html",
       "outgoing_links": [],
+      "incoming_links": ["/parkinson"],
       "redirect_url": ""
     },
     "/anxiety": {
@@ -326,6 +336,13 @@
       "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The\npain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.\n\n",
       "file_path": "_site/anxiety.html",
       "outgoing_links": ["/idle-loop", "/voices"],
+      "incoming_links": [
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/depression",
+        "/gtd",
+        "/happy",
+        "/voices"
+      ],
       "redirect_url": ""
     },
     "/ar": {
@@ -335,6 +352,7 @@
       "description": "My notes on AR\n\n",
       "file_path": "_site/ar.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/being-a-great-manager": {
@@ -357,6 +375,12 @@
         "/coach",
         "/decide"
       ],
+      "incoming_links": [
+        "/eulogy",
+        "/job",
+        "/software-leadership-roles",
+        "/the-manager-book"
+      ],
       "redirect_url": ""
     },
     "/bike": {
@@ -366,6 +390,11 @@
       "description": "Biking, is something that make my very happy. I have multiple bikes, here are my notes\n\n",
       "file_path": "_site/bike.html",
       "outgoing_links": ["/brompton-toys", "/warm"],
+      "incoming_links": [
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/eulogy",
+        "/td/irl"
+      ],
       "redirect_url": ""
     },
     "/books-that-defined-me": {
@@ -384,6 +413,7 @@
         "/resistance",
         "/essentialism"
       ],
+      "incoming_links": ["/being-a-great-manager", "/the-manager-book"],
       "redirect_url": ""
     },
     "/brompton-toys": {
@@ -393,6 +423,7 @@
       "description": "I LOVE my Brompton, and have spent much time researching accessories for it. Here are the accoutraments I’ve bought for my Brompton, and hopefully it’ll save other Brompton owners time, and/or make them aware of accessories they don’t known about.\n\n",
       "file_path": "_site/brompton-toys.html",
       "outgoing_links": [],
+      "incoming_links": ["/bike"],
       "redirect_url": ""
     },
     "/cache": {
@@ -402,6 +433,7 @@
       "description": "Internal incubations are fun, but I love shipping products. In the case of Microsoft Cache, before I joined, the team had been incubating OneClip, and needed help bringing it to market. My self and a top tier product manager joined the team to help them ship. We immediately got to work, recruiting senior talent, and closing the gaps. We tackled the technical, product market fit, and logistical issues required to bring the product to market.\n\nYou can see the\n\n\n\nfeatures we shipped\n\n\n\n\n\n\n\n\n\nwhile the Slashgear article below captures the story well …\n</span>\n\nInstead of simply keeping all its eggs in its own Window 10 or Windows 10 Mobile basket, Microsoft, either officially or through its Garage skunkworks arm, has been steadily putting out mobile apps that cross the platform divide into iOS and Android territory, ranging from the useful to the insane. One of the latest, fortunately, straddles the useful category. Microsoft Garage’s new Cache app lets you clip anything and sync those between Windows and iOS devices. We say “new” because, truth be told, it sounds a lot like Microsoft’s “OneClip” tool from last year.\n\n\n\nAs part of its attempt to modernize its Office suite, Microsoft was spotted working on some new “smart” tools, one of which was OneClip. Taking a cue perhaps from OneNote, OneClip would have given users a sort of “stash” for notes, links, images, and files, accessible from any device. We haven’t heard from OneClip since, but that might all be moot now if it has, indeed, evolved into “Cache”.\n\n\n\nThe basic premise of Cache is totally the same, just independent of Microsoft Office, has a nice interface, and has more features. For example, it remembers where and when you “clipped” an object, so you can get back to the source if you need it. You can also organize Cache’s contents by date or into your own custom grouping.\n\nBut best of all, Cache isn’t limited to Windows only. It works on iOS too and the cache is synced on both devices through the cloud. An Android app is still missing, though, and no word yet on when, or even if, that is coming. It would be a terrible shame if it didn’t.\n",
       "file_path": "_site/cache.html",
       "outgoing_links": [],
+      "incoming_links": ["/eulogy", "/job"],
       "redirect_url": ""
     },
     "/Canadian-Spotting": {
@@ -411,6 +443,7 @@
       "description": "“I bet you the bill that dude by the window is Canadian,” I challenged.\n\n",
       "file_path": "_site/Canadian-Spotting.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/coaching": {
@@ -426,6 +459,13 @@
         "/search-inside-yourself",
         "/the-manager-book"
       ],
+      "incoming_links": [
+        "/being-a-great-manager",
+        "/curious",
+        "/job",
+        "/moments-at-work",
+        "/the-manager-book"
+      ],
       "redirect_url": ""
     },
     "/coe": {
@@ -435,6 +475,7 @@
       "description": "Everyone can make a mistake once, that’s totally fine. Repeating mistakes is unacceptable. Correction of Errors (COE) is the name Amazon gives it’s mechanism for correcting errors. Microsoft uses the term Root cause analysis (RCA), it’s the same concept. This mechanism originated with service outages but can be applied for any “error”, like missing your sons kindergarden graduation, or getting fired.\n\n",
       "file_path": "_site/coe.html",
       "outgoing_links": [],
+      "incoming_links": ["/the-manager-book"],
       "redirect_url": ""
     },
     "/comp": {
@@ -444,6 +485,7 @@
       "description": "Different companies use different compensation models. To compare models use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon clips salary at 160K$/yr, and doesn’t have bonuses. Google vests stocks Monthly. Facebook bonuses have a company performance multiplier. At some companies signing bonuses can be over 100% of salary!\n\n",
       "file_path": "_site/comp.html",
       "outgoing_links": ["/pride", "/job-hunt-stress", "/pride"],
+      "incoming_links": ["/job-hunt-stress", "/the-manager-book"],
       "redirect_url": ""
     },
     "/covid": {
@@ -453,6 +495,7 @@
       "description": "Corona Virus (CV) may be the defining moment in our lives. In such times, lets remember three things 1) Keep your circle of concern within your circle of influence 2) Don’t feed mind monsters - see the positive 3) In crisis, you see both the best and worse. Focus on the best.\n\n",
       "file_path": "_site/covid.html",
       "outgoing_links": ["/death"],
+      "incoming_links": ["/addiction", "/facebook"],
       "redirect_url": ""
     },
     "/curious": {
@@ -462,6 +505,7 @@
       "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
       "file_path": "_site/curious.html",
       "outgoing_links": ["/getting-to-yes-with-yourself", "/coaching"],
+      "incoming_links": ["/getting-to-yes-with-yourself", "/psychic-weight"],
       "redirect_url": ""
     },
     "/d/2010-2-15-2016-Misc-Uncategorized": {
@@ -471,6 +515,7 @@
       "description": "There are lots of rough ideas I have that are not yet categorized, or good enough to be a thought. This will be a\nplace to store them.\n\n",
       "file_path": "_site/d/2010-2-15-2016-Misc-Uncategorized.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2015-11-18-Outsourcing": {
@@ -480,6 +525,7 @@
       "description": "Time is my precious resource - I have a limited number of hours in my life, and once I’ve used them, I never get them back. However, I can preserve my time by outsourcing activities that don’t have high enough return on investment. This post reminds me to outsource by enumerating my position on outsourcing, and the things I have outsourced.\n\n",
       "file_path": "_site/d/2015-11-18-Outsourcing.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2015-11-18-what-is-strategy": {
@@ -489,6 +535,7 @@
       "description": "Strategy is creating fit among a company’s activities. The success of a strategy depends on doing many things well and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and improving operational effectiveness, a race to the bottom.\n\n",
       "file_path": "_site/d/2015-11-18-what-is-strategy.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2016-02-03-positive-computing-survey": {
@@ -498,6 +545,7 @@
       "description": "Positive computing is the software branch focused on increasing human well being. Similar to positive psychology, it is a brand new field and our industry has barely begun. I’ll use this post to gather my half baked thoughts on the various applications I’ve seen. For now it’ll be confusing as I’m brain dumping to various audiences with various knowledge.\n\n",
       "file_path": "_site/d/2016-02-03-positive-computing-survey.html",
       "outgoing_links": ["/tech-health-toys"],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2016-05-09-lost-interview": {
@@ -507,6 +555,7 @@
       "description": "Uneditted notes on a Q+A with Steve Jobs.\n\n",
       "file_path": "_site/d/2016-05-09-lost-interview.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2016-09-18-transportation-as-a-service": {
@@ -516,6 +565,7 @@
       "description": "Car’s have had an incredible impact on our society, and it will be disrupted by transportation as a service. This summarizes John’s Zimmers article\nthe third transportation revolution.\n\n",
       "file_path": "_site/d/2016-09-18-transportation-as-a-service.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2016-2-14-Health-In-The-Head": {
@@ -525,6 +575,7 @@
       "description": "Fit in my head, isn’t fit in reality. In the last few years I’ve learned this lesson for physical health, and now I’m learning it for emotional health.\n\n",
       "file_path": "_site/d/2016-2-14-Health-In-The-Head.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2016-2-15-Seth-Godin-Notes": {
@@ -534,6 +585,7 @@
       "description": "Seth godin has many ideas that are critical in the new world. Ideas include: Choosing yourself, Tribes, The limited value of cogs, connection, and the dip.\n\n",
       "file_path": "_site/d/2016-2-15-Seth-Godin-Notes.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2016-3-12-sleight-of-mouth": {
@@ -543,6 +595,7 @@
       "description": "Sleight of mind is about how to cause cognative reframes.\n\n",
       "file_path": "_site/d/2016-3-12-sleight-of-mouth.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2016-6-10-Appreciate": {
@@ -552,6 +605,7 @@
       "description": "Think of the last time you were appreciated: How did you feel? Think about the last hour: How many things could you have appreciated? It takes 7 positive experiences to make up for 1 negative experience - what can you be appreciating?\n\n",
       "file_path": "_site/d/2016-6-10-Appreciate.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2016-6-25-Business-Model-You": {
@@ -561,6 +615,7 @@
       "description": "The business model canvas is a tool for understanding how a company makes money. We can apply the same canvas to a person, in this article, it’ll be me.\n\n",
       "file_path": "_site/d/2016-6-25-Business-Model-You.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2016-7-14-Customer-Service": {
@@ -570,6 +625,7 @@
       "description": "Customer obsession, manifest in customer service, can be a key differentiator. This post explores the benefits, and business model impact of a customer obsessed organization.\n\n",
       "file_path": "_site/d/2016-7-14-Customer-Service.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2016-8-1-Twelve-Tech-Forces": {
@@ -579,6 +635,7 @@
       "description": "The digital revolution has gone through 3 changes: the copy of the industrial age, the link age, and the streaming age. This is a summary of the concepts representing the new age.\n\n",
       "file_path": "_site/d/2016-8-1-Twelve-Tech-Forces.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2017-04-09-igor-the-operating-manual": {
@@ -598,6 +655,7 @@
         "/money",
         "/parkinson"
       ],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2017-07-22-vacationphotos": {
@@ -607,6 +665,7 @@
       "description": "Vacation photos are great, they remind you of the good times you’ve had, the people you’ve had them with and the places you’ve had them at. Here are my tips for vacation photos, and “reminiscing” type photos in general.\n\n",
       "file_path": "_site/d/2017-07-22-vacationphotos.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2017-09-10-software-rot": {
@@ -616,6 +675,7 @@
       "description": "After a year of not working on one of my hobby software projects, I decided it’d be fun to make a minor change - should only be few lines of code. Should be easier still since I followed all the project best practices: I had full unit tests, and a fully automated command line build but boy was I wrong.\n\n",
       "file_path": "_site/d/2017-09-10-software-rot.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2017-11-04-clean-architecture": {
@@ -625,6 +685,7 @@
       "description": "Architecture is the highest level of abstraction that models a software system. The architecture is composed from modules, which are composed of objects, which are composed of functions. Design is applied to each of these layers, and when executed successfully results in a system that is easy to build and maintain. Clean architecture discusses designs at a high level, which like architecture is highly useful. On the topic of architecture, the software industry’s use of the word architect is confusing. The construction analog of a “software architect” is a “structural engineer” and the software equivalent of a “construction architect” is a product manager.\n\n",
       "file_path": "_site/d/2017-11-04-clean-architecture.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2017-2-5-To-Sell-Is-Human": {
@@ -634,6 +695,7 @@
       "description": "To sell is human is a treatise on the modern form of sales. Part I describes why selling is important, and how it has evolved. Part II focuses on the how to be a salesman and Part III focuses on what you need to do to do sales.\n\n",
       "file_path": "_site/d/2017-2-5-To-Sell-Is-Human.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2018-02-10-you-do-want-your-favorite-app-to-be-a-service": {
@@ -643,6 +705,7 @@
       "description": "When selling subscription software, a publisher needs to continue to prove the value of thier software, or users will not renew their contracts. This is very beneficial to the users and to the publisher.\n\n",
       "file_path": "_site/d/2018-02-10-you-do-want-your-favorite-app-to-be-a-service.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/2018-09-23-mind-lines": {
@@ -652,6 +715,7 @@
       "description": "Mind Lines\n\n",
       "file_path": "_site/d/2018-09-23-mind-lines.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/habits": {
@@ -661,6 +725,13 @@
       "description": "Habits are the automatic actions, both positive and negative, you take through your life. Atomic Habits describes how to change habits, it’s the how-to manual for “Sharpening the Saw”.\n\n",
       "file_path": "_site/d/habits.html",
       "outgoing_links": [],
+      "incoming_links": [
+        "/7-habits",
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/d/resistance",
+        "/idle",
+        "/the-manager-book"
+      ],
       "redirect_url": ""
     },
     "/d/management_interviews": {
@@ -670,6 +741,7 @@
       "description": "FACEBOOK MANAGEMENT INTERVIEWING 101\n\n",
       "file_path": "_site/d/management_interviews.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/d/resistance": {
@@ -679,6 +751,11 @@
       "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity.\n\n",
       "file_path": "_site/d/resistance.html",
       "outgoing_links": ["/addiction", "/magic", "/habits", "/7habits"],
+      "incoming_links": [
+        "/books-that-defined-me",
+        "/psychic-weight",
+        "/timeoff"
+      ],
       "redirect_url": ""
     },
     "/d/where-have-all-the-bugs-gone": {
@@ -688,6 +765,7 @@
       "description": "I’ve been a software developer since 2001, and back then we used to have lots of bugs. Now a days, it seems we don’t have bugs, and I’ve wondered why. Now we have tickets which we get from our systems running in operations, but that’s quite different. What’s going on?\n\n",
       "file_path": "_site/d/where-have-all-the-bugs-gone.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/death": {
@@ -697,6 +775,7 @@
       "description": "Bad news, you’re dying, so is everyone else. Good news, if we didn’t die we’d run out of resources, and our kids would be screwed. Bad news, our health care system is optimized for keeping you alive, not for maximizing the enjoyable time you have on earth. Good news, knowing is half the battle - armed with this knowledge you can decide how you want to die, which is ultimately how you want to live.\n\n",
       "file_path": "_site/death.html",
       "outgoing_links": [],
+      "incoming_links": ["/covid", "/psychic-weight"],
       "redirect_url": ""
     },
     "/debug": {
@@ -706,6 +785,7 @@
       "description": "Igor's Blog",
       "file_path": "_site/debug.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/decisive": {
@@ -715,6 +795,13 @@
       "description": "Decisions are hard because we have Narrow Framing, Confirmation Bias, Short Term Emotion and Overconfidence. We can overcome this by Widening our Options, Reality-Testing our Assumptions, Attaining Distance before Deciding and Preparing to Be Wrong.\n\n",
       "file_path": "_site/decisive.html",
       "outgoing_links": [],
+      "incoming_links": [
+        "/being-a-great-manager",
+        "/coaching",
+        "/job-hunt-stress",
+        "/pride",
+        "/the-manager-book"
+      ],
       "redirect_url": ""
     },
     "/depression": {
@@ -738,6 +825,7 @@
         "/psychic-weight",
         "/idle-loop"
       ],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/dip": {
@@ -747,6 +835,7 @@
       "description": "New things start fun, but once the new wears off they are hard because of the Dip. The Dip is the long slog between starting and mastery. Unlike Dips, cul-de-sacs are places you can put in a lot of energy and nothing will come of it. You need to quit cul-de-sacs and lean into dips. Much of our failure comes from being distracted by tasks we don’t have the guts to quit. Winners quit all the time. They quit the right stuff, so their energy can be saved to cross the Dip.\n\n",
       "file_path": "_site/dip.html",
       "outgoing_links": [],
+      "incoming_links": ["/7-habits", "/gtd"],
       "redirect_url": ""
     },
     "/don-juan": {
@@ -756,6 +845,7 @@
       "description": "Fear, Arrogrance, Authority and Old Age, are the four enemies of satisfication as described in Don Juan’s teachings.\n\n",
       "file_path": "_site/don-juan.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/drbot": {
@@ -765,6 +855,7 @@
       "description": "Igor's Blog",
       "file_path": "_site/drbot.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/emotional-health": {
@@ -774,6 +865,7 @@
       "description": "Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I’ve been exploring.\n\n",
       "file_path": "_site/emotional-health.html",
       "outgoing_links": ["/search-inside-yourself"],
+      "incoming_links": ["/d/2017-04-09-igor-the-operating-manual", "/td/irl"],
       "redirect_url": ""
     },
     "/essentialism": {
@@ -783,6 +875,12 @@
       "description": "Essentialism is deciding what goes on your todo list, not how many things you can cross off.\n\n",
       "file_path": "_site/essentialism.html",
       "outgoing_links": [],
+      "incoming_links": [
+        "/7-habits",
+        "/books-that-defined-me",
+        "/frog",
+        "/gtd"
+      ],
       "redirect_url": ""
     },
     "/eulogy": {
@@ -803,6 +901,7 @@
         "/cache",
         "/Human-Meetings"
       ],
+      "incoming_links": ["/depression", "/frog", "/td/irl", "/timeoff"],
       "redirect_url": ""
     },
     "/facebook": {
@@ -812,6 +911,7 @@
       "description": "Give people the power to build community and bring the world closer together, here are my in progress notes on working at FB.\n\n",
       "file_path": "_site/facebook.html",
       "outgoing_links": ["/covid19"],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/frog": {
@@ -821,6 +921,13 @@
       "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing of the concepts into my favorite mental models, the chapter titles are preserved if you want to go look them up.\n\n",
       "file_path": "_site/frog.html",
       "outgoing_links": ["/eulogy", "/essential", "/gtd"],
+      "incoming_links": [
+        "/7-habits",
+        "/gtd",
+        "/psychic-weight",
+        "/td/time-off-3-2020",
+        "/timeoff"
+      ],
       "redirect_url": ""
     },
     "/getting-to-yes-with-yourself": {
@@ -830,6 +937,7 @@
       "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself.\n\n\n\n\n\n  1) Put yourself in your shoes ☑\n  2) Develop your inner BATNA ☑\n  3) Reframe your picture ☐\n  4) Stay in the zone ☐\n  5) Respect them even if ☐\n  6) Give and Recieve ☐\n  7) The 3 wins ☑\n\n\n\n\n\nThis is a summary of Getting to yes with yourself\n\n1) Put yourself in your shoes ☑\n\n\n  Figure out what your elephant REALLY wants (Switch)\n  Seek first to understand yourself (7H)\n  When you judge yourself, you shutdown and can’t find what you really want\n  Acceptance induces safety, and only from safety can you find what you really want\n  See yourself form the balcony\n    \n      Respond instead of reacting.\n      Going to Balcony == Be Mindful, Self Aware and Objective\n      Choose your response, but it’s a two sided stick and you get the consequences.\n      Reaction:\n        \n          Feels good, but need to realize there is a VERY negative consequence.\n          Negative Reactions: Attack (Win:Lose) -> Accommodate (Lose:Win) -> Avoid (Lose:Lose)\n        \n      \n      Use self-awareness to catch your desire to react\n        \n          Need to build self-awareness muscle (SIY)\n          Practice mindfulness (and have a grounding spot)\n          Practice mindfulness before event to make it easier.\n        \n      \n    \n  \n  Listen with Empathy\n    \n      80% of thoughts are negative.\n      Observe self: Detached view of a scientist.\n      Listen to self: What it feels like to be you.\n      Listening to self exercise\n        \n          Don’t judge, or they will not feel safe, and won’t talk.\n          Name your neurosis, and sit them down at a table, and listen to them non-judgementally\n          Because “negative emotions are safe to speak” they get less power, and have less desire to attack at “bad” times.\n          Don’t just listen, understand the cause, and what you can do to help.\n          Be curious, ask yourself, isn’t that interesting. Ask the neurosis, why is that.\n        \n      \n      This is an opportunity to learn physical self awareness, to help notice your emotions.\n      Huge benefit, your mind is more clear, and you silence the self to concentrate and get into flow.\n    \n  \n  Uncover your needs\n    \n      Your elephant is non-verbal, negative emotions are it’s mode of communicating your needs.\n      Dig hard for your needs, don’t settle for a position, but why, what do you really want. What is done. (XREF: Essentialisim)\n      Magic Question Why? Why? Why?\n      Deepest needs: Happiness: Protection/Safety and Love/Connection\n    \n  \n  From Self Judgment to Self Understanding\n    \n      Before fighting with others, need to make sure you TRUELY know what you want.\n      Accepting yourself for who you are is NOT a cop out. Acceptance produces safety, which lets us digg deater.\n    \n  \n\n\n2) Develop your inner BATNA ☑\n\nThe ideas in this chapter are great, but I think connecting the concepts to inner BATNA is ackward. Thus my summary doesn’t track well with the books\n\n\n  A cross between 7H: Be Proactive, AND take responsibility for meeting your own needs.\n  When you COMMIT to unconditionally take care of your needs, you have all the power.\n    \n      SWITCH: Your elephant can rest assured it will be fed and cared for regardless of what’s going on externally.\n      This gives you much more psychic space in your relationships, making them better relationships.\n      SIY: Grandmother mind - you are your own best grandma.\n    \n  \n  Responsibility holds Power VS blame gives it away.\n  Take responsibility for what you’ve got, and make the most of it - DO NOT BLAME Life (welcome to Holland).\n  Focus on what you can do to make things better, NOT the fact that you screwed something up in the past.\n  \n    In a relationship, focus on what YOU CAN DO going forward in the relationship, not on blaming the other person. Doing this:\n\n    \n      Gives clarity to your needs in the relationships.\n      Gives “psychic space” for other party in relationship\n      Lets you be objectives about your needs, and your expectations from other party.\n    \n  \n  Own your life\n    \n      Need self-understanding and self-responsibility\n        \n          Just self-understanding => self-pity\n          Just self-responsibility => self-blame.\n        \n      \n      Self blame => Past looking, I WAS a failure.\n      Self responsibility => Forward looking what CAN I do to make this successful?\n      (really it’s the next section, where ‘self/life’ is the relationship)\n    \n  \n  Own your relations\n    \n      When you point a finger at someone, 3 fingers point back at you.\n      All relationships are two ways streets, if there’s a problem, you own a CHUNK.\n      Leave the blame territory, and enter the how do we improve this in the future territory.\n      Know what you bring to the relationship, and what is negotiable and non-negotiable from the other party\n      Great Anecdote on divorce requirements.\n    \n  \n  Own your needs\n    \n      BATNA, how you satisfy your needs in case you can’t get a WIN/WIN?\n      Inner BATNA - know YOU WILL ALWAYS meet your needs, so don’t have to worry.\n      Gives you confidence that you don’t need to be desperate.\n    \n  \n  From blame to responsibility\n    \n      Touching story about author’s dying daughter Gabi, and how hard it was to deal with doctors.\n      Two top changes:\n        \n          Needed to stop expecting things from doctor’s they could provide for themselves, and let dr’s bring only what they needed to bring, their expertise.\n          Needed to stop blaming life for a bum deal, and instead take responsibility for making the most out of what they had.\n        \n      \n    \n  \n\n\n3) Reframe your picture ☐\n\nAbundance not Scarcity: A rising tide raises all boats\n\nExpecations are a self fulling prophecy. Believe the world good or bad, and that’s how you’ll interpret it, and that’s how it will become\n\n\n  Remember your connection to life\n  Make your own happiness\n  Appreciate life’s lessons\n  From unfriendly to friendly.\n\n\n4) Stay in the zone ☐\n\n\n  Learn to let go\n  Accept the past\n  Trust the future\n  Embrace the present\n  From resistance to acceptance\n\n\n5) Respect them even if ☐\n\n\n  Put yourself in thier shoes\n  Expand your circle of respect\n  Respect them even if they reject you\n  From exclusion to inclusion\n\n\n6) Give and Recieve ☐\n\n\n  Give for mutual gain\n  Give for pleasure and meaning\n  Give what you are here to give\n  From Win/Lose to Win/Win/Win\n\n\n7) The 3 wins ☑\n\n\n  How do we get what we want, while meeting the needs of others?\n  The better we meet our own needs, the better we can meet the needs of others\n  We choose to be our own ally or our enemy. and we choose to be the ally or enemy in our relationships.\n  A win within\n    \n      I will give myself the most trouble today. I stand in the way of my goals.\n      Do the practices in this book, to be satisified with yourself\n    \n  \n  A win with others\n    \n      Every thing you do to get to yes with yourself, makes it easier to get to yes with others\n    \n  \n  A win for the whole\n    \n      When you succeed with yourself, and with others, then the whole world benefits\n    \n  \n  Winning the game of life\n    \n      It’s about creating inner satisfaction, which makes your life and relationships better. It’s hard but worth it.\n    \n  \n\n",
       "file_path": "_site/getting-to-yes-with-yourself.html",
       "outgoing_links": ["/grandmother", "/welcome-to-holland"],
+      "incoming_links": ["/books-that-defined-me", "/curious", "/depression"],
       "redirect_url": ""
     },
     "/goals": {
@@ -839,6 +947,7 @@
       "description": "Goal are critcal, there are multiple goal systems and they have consequences. They are mechansims to deliver without micro managements.\n\n",
       "file_path": "_site/goals.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/gtd": {
@@ -855,6 +964,7 @@
         "/dip",
         "/outsourcing"
       ],
+      "incoming_links": ["/books-that-defined-me", "/frog"],
       "redirect_url": ""
     },
     "/happy": {
@@ -864,6 +974,7 @@
       "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject\n\n",
       "file_path": "_site/happy.html",
       "outgoing_links": ["/idle-loop", "/anxiety", "/pride", "/mind-monsters"],
+      "incoming_links": ["/hobby", "/siy", "/timeoff"],
       "redirect_url": ""
     },
     "/hobby": {
@@ -873,6 +984,7 @@
       "description": "\n\n",
       "file_path": "_site/hobby.html",
       "outgoing_links": ["/happy", "/magic"],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/Human-Meetings": {
@@ -882,6 +994,7 @@
       "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
       "file_path": "_site/Human-Meetings.html",
       "outgoing_links": [],
+      "incoming_links": ["/being-a-great-manager", "/eulogy", "/job"],
       "redirect_url": ""
     },
     "/humans-are-underrated": {
@@ -891,6 +1004,7 @@
       "description": "As robots become better then humans at most things, what roles will be left for humans? What skills are required for those roles? Empathizing, collaborating, leading,and building relationships.\n\n",
       "file_path": "_site/humans-are-underrated.html",
       "outgoing_links": [],
+      "incoming_links": ["/books-that-defined-me"],
       "redirect_url": ""
     },
     "/idle": {
@@ -900,6 +1014,12 @@
       "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifiying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
       "file_path": "_site/idle.html",
       "outgoing_links": ["/habits", "/magic", "/addiction", "/mind-monsters"],
+      "incoming_links": [
+        "/anxiety",
+        "/depression",
+        "/happy",
+        "/psychic-weight"
+      ],
       "redirect_url": ""
     },
     "/Immutable-Laws-Of-Hard": {
@@ -909,6 +1029,7 @@
       "description": "Exercise, Diet, Personal Development, each of these is governed by the immutable laws of hard things. It’s possible these laws don’t apply to you, but I doubt it.\n\n",
       "file_path": "_site/Immutable-Laws-Of-Hard.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/insecure": {
@@ -918,6 +1039,7 @@
       "description": "We all get it. imposter syndrome, which include shame\n\n",
       "file_path": "_site/insecure.html",
       "outgoing_links": ["/shame"],
+      "incoming_links": ["/90days", "/depression"],
       "redirect_url": ""
     },
     "/insomnia": {
@@ -927,6 +1049,7 @@
       "description": "If you want advice on how to deal with insomnia, do NOT ask a person who hasn’t slept in two nights. Instead, ask someone who’s had insomnia several times, and has a checklist on how to respond when insomnia flares up. By the way, I’ve never actually taken this advice, but maybe writing it down will make it more likely that I’ll take it in the future.\n\n",
       "file_path": "_site/insomnia.html",
       "outgoing_links": [],
+      "incoming_links": ["/depression"],
       "redirect_url": ""
     },
     "/interviewsarehard": {
@@ -936,6 +1059,7 @@
       "description": "I’ve been hard on myself these last few months as I haven’t made a lot of progress on my habits or goals. Reflecting, that shouldn’t be a surprise as I’ve been putting a tonne of energy into my job hunt. Here is a reminder of the effort required, which will aid setting realistic expectations during the job hunt.\n\n",
       "file_path": "_site/interviewsarehard.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/job": {
@@ -952,6 +1076,7 @@
         "/moments-at-work",
         "/Human-Meetings"
       ],
+      "incoming_links": ["/eulogy", "/job-hunt-stress", "/the-manager-book"],
       "redirect_url": ""
     },
     "/job-hunt-stress": {
@@ -961,6 +1086,7 @@
       "description": "Job hunts are stressful, and my goal for job hunts is getting the job I want while minimizing my stress. The stress comes from: lack of confidence, being rushed, not having options, disappointing others and the pressure from current job responsibilities. By expecting and mitigating each of these stressors I greatly reduce stress during my job hunt.\n\n",
       "file_path": "_site/job-hunt-stress.html",
       "outgoing_links": ["/decisive", "/dream-job", "/comp", "/decide"],
+      "incoming_links": ["/comp", "/the-manager-book"],
       "redirect_url": ""
     },
     "/magical-memories": {
@@ -970,6 +1096,13 @@
       "description": "Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights\n\n",
       "file_path": "_site/magical-memories.html",
       "outgoing_links": [],
+      "incoming_links": [
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/d/resistance",
+        "/eulogy",
+        "/hobby",
+        "/idle"
+      ],
       "redirect_url": ""
     },
     "/micro-economics": {
@@ -979,6 +1112,7 @@
       "description": "Supply, demands and markets, oh my!\n\n",
       "file_path": "_site/micro-economics.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/mind-at-work": {
@@ -988,6 +1122,7 @@
       "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body being at home, but my mind still being at work\n\n",
       "file_path": "_site/mind-at-work.html",
       "outgoing_links": [],
+      "incoming_links": ["/timeoff"],
       "redirect_url": ""
     },
     "/mind-monsters": {
@@ -997,6 +1132,7 @@
       "description": "Last night I was having trouble sleeping so I plopped down on the couch to watch infomercials. The infomercial I picked was religious in nature, and was talking about mind monsters.\n\n",
       "file_path": "_site/mind-monsters.html",
       "outgoing_links": [],
+      "incoming_links": ["/happy", "/idle", "/psychic-weight", "/siy"],
       "redirect_url": ""
     },
     "/ml": {
@@ -1006,6 +1142,7 @@
       "description": "ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).\n\n",
       "file_path": "_site/ml.html",
       "outgoing_links": [],
+      "incoming_links": ["/td/stats", "/the-manager-book"],
       "redirect_url": ""
     },
     "/moments": {
@@ -1015,6 +1152,7 @@
       "description": "Take a few seconds to close your eyes and think back on an important memory. In that moment, did you feel a sense of elevation? Did you experience insight? Have a sense of pride? Make a connection? In the power of moments, the attributes of powerful moments are understood so that they can be better engineered.\n\n",
       "file_path": "_site/moments.html",
       "outgoing_links": ["/moments-at-work"],
+      "incoming_links": ["/moments-at-work"],
       "redirect_url": ""
     },
     "/moments-at-work": {
@@ -1024,6 +1162,12 @@
       "description": "Of all the places we spend our time, work is the one that dominates. However, when we look back on our lives, work is often the thing we remember least. Why? Because we remember our lives through peak moments, and there are few of those, especially positive peak moments, at work. Luckily, peak moments can be created and managers can be taught how to create them. This post explores opportunities and techniques to create these moments.\n\n",
       "file_path": "_site/moments-at-work.html",
       "outgoing_links": ["/Coaching-Questions", "/moments"],
+      "incoming_links": [
+        "/being-a-great-manager",
+        "/job",
+        "/moments",
+        "/the-manager-book"
+      ],
       "redirect_url": ""
     },
     "/money": {
@@ -1033,6 +1177,10 @@
       "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
       "file_path": "_site/money.html",
       "outgoing_links": ["/parkinson"],
+      "incoming_links": [
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/td/time-off-3-2020"
+      ],
       "redirect_url": ""
     },
     "/mortality-software": {
@@ -1042,6 +1190,7 @@
       "description": "Life is finite, time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past. The poem based elevator pitch:\n\n",
       "file_path": "_site/mortality-software.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/parkinson": {
@@ -1051,6 +1200,11 @@
       "description": "Work expands to fill the resources available. The more you make the more you spend. Stuff expands to fill the space available for storage. etc, etc.\n\n",
       "file_path": "_site/parkinson.html",
       "outgoing_links": ["/amazon"],
+      "incoming_links": [
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/money",
+        "/the-manager-book"
+      ],
       "redirect_url": ""
     },
     "/physical-health": {
@@ -1060,6 +1214,12 @@
       "description": "Physical health is the basis of energy, and thus the source of success. Physical health is about weight, fitness and sleep.\n\n",
       "file_path": "_site/physical-health.html",
       "outgoing_links": ["/tech-health-toys", "/td/irl#physical-health"],
+      "incoming_links": [
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/depression",
+        "/td/irl",
+        "/tech-health-toys"
+      ],
       "redirect_url": ""
     },
     "/pride": {
@@ -1069,6 +1229,14 @@
       "description": "“That is Pride Fucking With You” is the only scene I can quote from any movie. It’s a powerful scene, and the advice is timeless. Two thousand years ago when a Roman emperor had a victory parade, he was required to have a slave standing behind him holding his helmet high in the air and whispering continuously: “You are mortal. You are mortal”. Pride and ego are serious foes that must be kept in check.\n\n",
       "file_path": "_site/pride.html",
       "outgoing_links": ["/decisive"],
+      "incoming_links": [
+        "/being-a-great-manager",
+        "/coaching",
+        "/comp",
+        "/happy",
+        "/psychic-weight",
+        "/the-manager-book"
+      ],
       "redirect_url": ""
     },
     "/psychic-weight": {
@@ -1090,6 +1258,7 @@
         "/pride",
         "/grandmother"
       ],
+      "incoming_links": ["/depression", "/gtd"],
       "redirect_url": ""
     },
     "/quip": {
@@ -1099,6 +1268,7 @@
       "description": "My group lives in QUIP. Here are some tips for my quip usage.\n\n",
       "file_path": "_site/quip.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/reflect-tool": {
@@ -1108,6 +1278,7 @@
       "description": "Igor's Blog",
       "file_path": "_site/reflect-tool.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/remote-work": {
@@ -1117,6 +1288,7 @@
       "description": "In March 2020, the world shut down from Covid 19. In May 2020, I started a new job as a remote manager at FB. Here are my thoughts\n\n",
       "file_path": "_site/remote-work.html",
       "outgoing_links": [],
+      "incoming_links": ["/the-manager-book"],
       "redirect_url": ""
     },
     "/save-the-soup": {
@@ -1126,6 +1298,7 @@
       "description": "“Are you insane?” I half shouted at Biff, my college roommate. We had just finished our Operating Systems midterm and were lounging at “The Bomber,” our college pub. Biff suggested we both do our last internship at Microsoft.\n\n",
       "file_path": "_site/save-the-soup.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/save-the-souse": {
@@ -1135,6 +1308,7 @@
       "description": "Internships are best approached as a long-term field trip. You should plan to be exposed to new things, spend some time out of your comfort zone, and, by all means – use the buddy system.\n\n",
       "file_path": "_site/save-the-souse.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/shame": {
@@ -1144,6 +1318,12 @@
       "description": "Shame and guilt are similar emotions that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt drives people to amend their mistakes.\n\n",
       "file_path": "_site/shame.html",
       "outgoing_links": [],
+      "incoming_links": [
+        "/90days",
+        "/depression",
+        "/insecure",
+        "/psychic-weight"
+      ],
       "redirect_url": ""
     },
     "/siy": {
@@ -1153,6 +1333,15 @@
       "description": "Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It’s also a pun as the author works at google, and built the program internally at Google.\n\n",
       "file_path": "_site/siy.html",
       "outgoing_links": ["/what-makes-a-leader-great", "/monsters", "/happy"],
+      "incoming_links": [
+        "/7-habits",
+        "/books-that-defined-me",
+        "/coaching",
+        "/depression",
+        "/emotional-health",
+        "/eulogy",
+        "/td/time-off-3-2020"
+      ],
       "redirect_url": ""
     },
     "/sleeping-bag-sacrifies": {
@@ -1162,6 +1351,7 @@
       "description": "I started in Windows Azure in 2007. Back then, the name “Azure” wasn’t invented, and Azure was still called “Reddog.” I started on the OS team, drawn in by my dream of changing the world, and getting to be Dave Cutler’s lackey. I didn’t get to work with Cutler, but I still may change the world - now that I’ve learned it’s OK to wake sleeping giants. My giant was named Jay.\n\n",
       "file_path": "_site/sleeping-bag-sacrifies.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/software-leadership-roles": {
@@ -1171,6 +1361,7 @@
       "description": "The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of difference I’ve found is below copied from Quora. In this classification I like to run a team small enough that I have time to be both an engineering manager and software architect.\n\n",
       "file_path": "_site/software-leadership-roles.html",
       "outgoing_links": ["/being-a-great-manager"],
+      "incoming_links": ["/job", "/the-manager-book"],
       "redirect_url": ""
     },
     "/strength-finder": {
@@ -1180,6 +1371,7 @@
       "description": "Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.\n\n",
       "file_path": "_site/strength-finder.html",
       "outgoing_links": ["/static/StrengthFinderIgor.pdf"],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/sustainable-work": {
@@ -1189,6 +1381,7 @@
       "description": "<!–\nWho is the audience?\n    - People I’m looking to recruit to my team.\n    - People on my team who can hold me accountable to my aspirations\n    - Igor\n    - My future employers who want to build this culture\n    - My current boss who is trying to figure out what is going on.\n    - PART 2: My future employers that want to know why I’m doing this, and my strategies.\n\n",
       "file_path": "_site/sustainable-work.html",
       "outgoing_links": [],
+      "incoming_links": ["/being-a-great-manager", "/depression"],
       "redirect_url": ""
     },
     "/tags": {
@@ -1198,6 +1391,7 @@
       "description": "Igor's Blog",
       "file_path": "_site/tags.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/advertising": {
@@ -1207,6 +1401,7 @@
       "description": "Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.\n\n",
       "file_path": "_site/td/advertising.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/alexa-skill": {
@@ -1216,6 +1411,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/alexa-skill.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/back_ref": {
@@ -1225,6 +1421,7 @@
       "description": "This blog is essentially my collection of [evergreen notes](), a place to have\nmy thinking accrue. The blog is densely linked, in the forward direction, but\njekyll does not create back links. I think backlinks would be great. Here's my\nstrategy to create them. ### When to compute back links v0 - run a one off\nscript, similar to how I build search indexes. ### Back link computation\nmethodology Standard how to build a search engine question. Plan: Go through\nallow list of backlist pages (enumerate collections, remove indexes) For each\npage, build a list of referenced pages, and add them to a map of page to\nreference. Go through the map, and apply them (title, list of references) to\npages. ### How to Inject back links into the output content Inject into source\nor output Need to inject into source as output is regenerated. It's a pain as\nit's a source edit and that dirties history, but can probably come up with a way\nto keep that clean - in some kind of auto generated guards, and make an atomic\ncheckin.\n",
       "file_path": "_site/td/back_ref.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/better-security-design": {
@@ -1234,6 +1431,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/better-security-design.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/cloud-first-applications": {
@@ -1243,6 +1441,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/cloud-first-applications.html",
       "outgoing_links": [],
+      "incoming_links": ["/the-manager-book"],
       "redirect_url": ""
     },
     "/td/data-systems": {
@@ -1252,6 +1451,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/data-systems.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/design": {
@@ -1261,6 +1461,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/design.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/dump_imessage_history": {
@@ -1270,6 +1471,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/dump_imessage_history.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/fix_ssh": {
@@ -1279,6 +1481,7 @@
       "description": "For some reason, SSH is just hanging out of no where. To debug on the server, be sure to open your firewall\n\n",
       "file_path": "_site/td/fix_ssh.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/hack-web": {
@@ -1288,6 +1491,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/hack-web.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/ios": {
@@ -1297,6 +1501,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/ios.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/ios-nomad": {
@@ -1306,6 +1511,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/ios-nomad.html",
       "outgoing_links": ["/td/irl#work-bag"],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/irl": {
@@ -1320,6 +1526,7 @@
         "/eulogy",
         "/bike"
       ],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/linqpad_from_redshift": {
@@ -1329,6 +1536,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/linqpad_from_redshift.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/minecraft": {
@@ -1338,6 +1546,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/minecraft.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/mosh": {
@@ -1347,6 +1556,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/mosh.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/pandas-tutorial": {
@@ -1356,6 +1566,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/pandas-tutorial.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/private_web_site": {
@@ -1365,6 +1576,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/private_web_site.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/ring-video-download": {
@@ -1374,6 +1586,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/ring-video-download.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/sentiment_analysis": {
@@ -1383,6 +1596,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/sentiment_analysis.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/sqlalchemy-redshift": {
@@ -1392,6 +1606,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/sqlalchemy-redshift.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/stats": {
@@ -1401,6 +1616,7 @@
       "description": "\n\n\n",
       "file_path": "_site/td/stats.html",
       "outgoing_links": ["/machine-learning"],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/streaks": {
@@ -1410,6 +1626,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/streaks.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/time-off-3-2020": {
@@ -1419,6 +1636,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/time-off-3-2020.html",
       "outgoing_links": ["/frog", "/money", "/search-inside-yourself"],
+      "incoming_links": ["/timeoff"],
       "redirect_url": ""
     },
     "/td/usbtech": {
@@ -1428,6 +1646,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/usbtech.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/virtual-desktops": {
@@ -1437,6 +1656,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/virtual-desktops.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/visual-vocabulary": {
@@ -1446,6 +1666,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/visual-vocabulary.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/vlc_player": {
@@ -1455,6 +1676,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/vlc_player.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/td/windbg": {
@@ -1464,6 +1686,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/windbg.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/tech-health-toys": {
@@ -1473,6 +1696,10 @@
       "description": "Physical health is the basis of my energy, so it’s a place I’m happy spending money and energy. I’ve been buying lots of technology to help me understand and measure my health and fitness and this post will track my favorite toys.\n\n",
       "file_path": "_site/tech-health-toys.html",
       "outgoing_links": ["/physical-health"],
+      "incoming_links": [
+        "/d/2016-02-03-positive-computing-survey",
+        "/physical-health"
+      ],
       "redirect_url": ""
     },
     "/The-Genesis-Node": {
@@ -1482,6 +1709,7 @@
       "description": "Igor, you know the odds of shipping Azure on time are slim to none.”\n\n",
       "file_path": "_site/The-Genesis-Node.html",
       "outgoing_links": [],
+      "incoming_links": ["/eulogy"],
       "redirect_url": ""
     },
     "/the-manager-book": {
@@ -1520,6 +1748,7 @@
         "/parkinson",
         "/books"
       ],
+      "incoming_links": ["/being-a-great-manager", "/coaching"],
       "redirect_url": ""
     },
     "/the-recruiter-does-not-think-you-are-hot": {
@@ -1529,6 +1758,7 @@
       "description": "I’ve only had one truly unbearable job. It was awful - The code base sucked, the boss had pointed hair, and to top it off I got a terrible review.\n\n",
       "file_path": "_site/the-recruiter-does-not-think-you-are-hot.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/timeoff": {
@@ -1545,6 +1775,7 @@
         "/frog",
         "/td/time-off-3-2020"
       ],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/toysfortots": {
@@ -1554,6 +1785,7 @@
       "description": "One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations\n\n",
       "file_path": "_site/toysfortots.html",
       "outgoing_links": [],
+      "incoming_links": ["/eulogy"],
       "redirect_url": ""
     },
     "/upstream": {
@@ -1563,6 +1795,7 @@
       "description": "Imagine sitting enjoying a picnic with a friend at the side of a river. Suddenly you see a kid drowning, you and your friend dive in and save him. A few minutes later the same thing happens. When the third kid comes down river, your friend runs away. You scream at him - why the hell aren’t you helping. He replies, I’m running upstream to stop the bastard who’s throwing kids into the river. Upstream is the idea of solving problems before they start. It’s the basis of habit 3, First Things First, where we tackle the important not urgent.\n\n",
       "file_path": "_site/upstream.html",
       "outgoing_links": [],
+      "incoming_links": ["/7-habits"],
       "redirect_url": ""
     },
     "/vim-for-writing": {
@@ -1572,6 +1805,7 @@
       "description": "VIM is great at lots of things, but free form writing has a few gaps in ‘line wrapping’ and ‘distraction free visual beauty’. These gaps can be closed with the plugins Pencil, Goyo and LimeLight.\n\n",
       "file_path": "_site/vim-for-writing.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     },
     "/voices": {
@@ -1581,6 +1815,11 @@
       "description": "The person that most frequently blocks your success is … wait for it … you! Often it’s your subconscious, and often your sub conscious is a bunch of independent voices, many of whom are negative. It’s very hard to deal with this hidden opposition because it’s so opaque. To help understand your feelings you can name the voices in your head, and imagine asking each of them their positions, and desired outcomes.\n\n",
       "file_path": "_site/voices.html",
       "outgoing_links": ["/anxiety"],
+      "incoming_links": [
+        "/anxiety",
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/depression"
+      ],
       "redirect_url": ""
     },
     "/warm": {
@@ -1590,6 +1829,7 @@
       "description": "Staying warm is important, here’s the gear I use on and off the bike\n\n",
       "file_path": "_site/warm.html",
       "outgoing_links": [],
+      "incoming_links": ["/bike"],
       "redirect_url": ""
     },
     "/welcome-to-holland": {
@@ -1599,6 +1839,7 @@
       "description": "“Welcome to Holland” articulates expectation, blame, and acceptance in a heart warming easy to read story.\n\n",
       "file_path": "_site/welcome-to-holland.html",
       "outgoing_links": [],
+      "incoming_links": ["/getting-to-yes-with-yourself"],
       "redirect_url": ""
     },
     "/what-i-wish-knew-at-22": {
@@ -1608,6 +1849,7 @@
       "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
       "file_path": "_site/what-i-wish-knew-at-22.html",
       "outgoing_links": [],
+      "incoming_links": ["/the-manager-book"],
       "redirect_url": ""
     },
     "/what-makes-a-leader": {
@@ -1617,6 +1859,7 @@
       "description": "Emotional intelligence (EI) is the crux of leadership. EI is comprised of Self-Awareness, Self-Regulation, Motivation, Empathy and Social Skills. This is a summary of Dan Goleman’s What makes a leader. Before we begin, here’s a consulting 2x2 grid:\n\n",
       "file_path": "_site/what-makes-a-leader.html",
       "outgoing_links": [],
+      "incoming_links": ["/the-manager-book"],
       "redirect_url": ""
     },
     "/why-is-no-one-referring": {
@@ -1626,6 +1869,7 @@
       "description": "Your customers don’t provide referrals because it’s a risk to their credibility. Remove the credibility risk, and your referrals will follow.\n\n",
       "file_path": "_site/why-is-no-one-referring.html",
       "outgoing_links": [],
+      "incoming_links": [],
       "redirect_url": ""
     }
   }
