@@ -86,7 +86,7 @@ How does Facebook Deltoid tool handle this?
 
 ### Precision vs Recall
 
-In [ML](machine-learning), we talk about precision and recall:
+In [ML](/machine-learning), we talk about precision and recall:
 
 - **Precision (Exactness)** - Likely hood a result is a true positive. TP / (TP + FP). % of things you say are true, are actually true.
 

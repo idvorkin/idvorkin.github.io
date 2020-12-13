@@ -2,15 +2,18 @@
 layout: post
 no-render-title: true
 title: Machine learning for regular programmers.
+permalink: /ml
+redirect_from:
+  - /machine-learning
+  - /machinelearning
+  - /td/machine-learning
 ---
+
+ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can't articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/machine-learning.md)_
 
-# Machine learning for regular programmers.
-
-## Why?
-
-### Success criteria For this post
+**Success criteria For this post**
 
 - I know the problems ML can solve, and the ML vocabulary.
 - I have a good enough understanding of ML to tell if someone is full of shit.
@@ -21,7 +24,6 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [ML at 10,000 feet](#ml-at-10000-feet)
 - [Hierarchy of Abstraction in the ML space](#hierarchy-of-abstraction-in-the-ml-space)
     - [Disambiguating the word Model](#disambiguating-the-word-model)
     - [Using an ML Model](#using-an-ml-model)
@@ -85,23 +87,14 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Why is ML so complicated](#why-is-ml-so-complicated)
     - [Deep Fakes](#deep-fakes)
     - [Time Series Analysis](#time-series-analysis)
-- [DL: Neural Networks and Deep Learning](#dl-neural-networks-and-deep-learning)
+- [Neural Networks](#neural-networks)
+    - [CNN: Convolutional Neural Networks](#cnn-convolutional-neural-networks)
     - [RNN: Recurrent Neural Network](#rnn-recurrent-neural-network)
     - [GAN: Generate Associative Networs](#gan-generate-associative-networs)
 - [What should I read to learn more](#what-should-i-read-to-learn-more)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-## ML at 10,000 feet
-
-ML is the ability for computers to build algorithms without explicit programming by having the machine infer the algorithm by looking at data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express.
-
-The human version of programming is following a check list which someone else provided. E.g. bake a cake by following the recipe.
-
-The human version of ML would be following your intuition. E.g making a stir fry from the stuff you find in the fridge. Your intuition which you can't even articulate, is built through countless experiences. That intuition knows not to put a banana in your stirfry.
-
-![ML Image](/images/ml_vs_classic.jpg)
 
 ## Hierarchy of Abstraction in the ML space
 
@@ -400,21 +393,23 @@ So using this we have create compress_igor(image)->small_state and decompress_ig
 
 Check out [prophet](https://towardsml.com/2018/05/23/time-series-forecasting-the-easy-way-lets-analyze-microsofts-stocks/)
 
-## DL: Neural Networks and Deep Learning
+## Neural Networks
 
-A neural network that includes hisory (e.g. t-1,t-2) as input features
-
-Good explanation:
+A laymens introduction to neural networks and deep learning.
 
 {% include youtube.html src="BR9h47Jtqyw" %}
 
-### RNN: Recurrent Neural Network
+### CNN: Convolutional Neural Networks
 
-A neural network that includes hisory (e.g. t-1,t-2) as input features
-
-Good explanation:
+A neural network with multiple hidden layers, great for pattern (e.g. image recognition)
 
 {% include youtube.html src="2-Ol7ZB0MmU" %}
+
+### RNN: Recurrent Neural Network
+
+A neural network that includes history (e.g. t-1,t-2) as input features, great for time varying analysis
+
+{% include youtube.html src="UNmqTiOnRfg" %}
 
 ### GAN: Generate Associative Networs
 
@@ -429,5 +424,4 @@ Good explanation:
 - [Machine learning is like sex in high school](https://vas3k.com/blog/machine_learning/)
 - [Google's rules of ML](https://developers.google.com/machine-learning/rules-of-ml/) and [summary](https://towardsml.com/2018/08/06/how-great-products-are-made-rules-of-machine-learning-by-google-a-summary/)
 - [Hands on machine learning with SciKit-Learn and tensor flow](https://www.amazon.com//dp/1491962291)
-  Neural network easier to grock lectures
-  https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+- Neural network easier to grock [lectures](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
