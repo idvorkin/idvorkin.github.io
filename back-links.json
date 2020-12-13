@@ -88,6 +88,7 @@
     ],
     "/mind-at-work": ["/timeoff"],
     "/mind-monsters": ["/happy", "/idle", "/psychic-weight", "/siy"],
+    "/ml": ["/td/stats", "/the-manager-book"],
     "/moments": ["/moments-at-work"],
     "/moments-at-work": [
       "/being-a-great-manager",
@@ -142,7 +143,6 @@
     "/td/cloud-first-applications": ["/the-manager-book"],
     "/td/irl#physical-health": ["/physical-health"],
     "/td/irl#work-bag": ["/td/ios-nomad"],
-    "/td/machine-learning": ["/the-manager-book"],
     "/td/time-off-3-2020": ["/timeoff"],
     "/tech-health-toys": [
       "/d/2016-02-03-positive-computing-survey",
@@ -211,6 +211,8 @@
     "/imposter": "/insecure",
     "/insecurity": "/insecure",
     "/joy": "/happy",
+    "/machine-learning": "/ml",
+    "/machinelearning": "/ml",
     "/magic": "/magical-memories",
     "/manager": "/being-a-great-manager",
     "/manager-book": "/the-manager-book",
@@ -249,6 +251,7 @@
     "/search-inside-yourself": "/siy",
     "/sleepless": "/insomnia",
     "/taxes": "/money",
+    "/td/machine-learning": "/ml",
     "/tft": "/toysfortots",
     "/the-dip": "/dip",
     "/thedip": "/dip",
@@ -996,6 +999,15 @@
       "outgoing_links": [],
       "redirect_url": ""
     },
+    "/ml": {
+      "py/object": "__main__.Page",
+      "url": "/ml",
+      "title": "MACHINE LEARNING FOR REGULAR PROGRAMMERS.",
+      "description": "ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).\n\n",
+      "file_path": "_site/ml.html",
+      "outgoing_links": [],
+      "redirect_url": ""
+    },
     "/moments": {
       "py/object": "__main__.Page",
       "url": "/moments",
@@ -1319,15 +1331,6 @@
       "outgoing_links": [],
       "redirect_url": ""
     },
-    "/td/machine-learning": {
-      "py/object": "__main__.Page",
-      "url": "/td/machine-learning",
-      "title": "MACHINE LEARNING FOR REGULAR PROGRAMMERS.",
-      "description": "Copied from my GitHub techdiary\n\n",
-      "file_path": "_site/td/machine-learning.html",
-      "outgoing_links": [],
-      "redirect_url": ""
-    },
     "/td/minecraft": {
       "py/object": "__main__.Page",
       "url": "/td/minecraft",
@@ -1397,7 +1400,7 @@
       "title": "STATISTICS",
       "description": "\n\n\n",
       "file_path": "_site/td/stats.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/machine-learning"],
       "redirect_url": ""
     },
     "/td/streaks": {
