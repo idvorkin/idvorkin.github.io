@@ -179,9 +179,8 @@ class LinkBuilder:
         self.compress()
 
         out = {
-            "backlinks": self.incoming_links,
-            "redirects": self.redirects,  #  I don't thinkw we need this, as we've de-duped
-            "url_info": self.pages,  #  I don't thinkw we need this, as we've de-duped
+            "redirects": self.redirects,  #  Not needed for link building, but helpful for debugging.
+            "url_info": self.pages,
         }
 
         # don't mangle the unicode

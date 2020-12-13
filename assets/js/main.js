@@ -142,7 +142,7 @@ function JsTemplateReplace() {
 
 function ProcessBackLinks(backLinks) {
   var my_path = new URL(document.URL).pathname;
-  var backlinks = backLinks["backlinks"][my_path];
+  var backlinks = backLinks["url_info"][my_path].incoming_links;
   if (!backlinks) {
     console.log("No backlinks for the page");
     return;
@@ -154,14 +154,16 @@ function ProcessBackLinks(backLinks) {
     return;
   }
 
-  back_link_location.append("<div id='links-to-page-title'> <b>LINKS TO THIS NOTE</b><div>");
+  back_link_location.append(
+    "<div id='links-to-page-title'> <b>LINKS TO THIS NOTE</b><div>"
+  );
 
   for (var link of backlinks) {
     url_info = backLinks["url_info"][link];
     console.log(link);
     console.log(url_info);
-    title_href =  `<a href=${url_info["url"]}>${ url_info["title"]}</a>`
-    class_link=  `link-box description truncate-css`
+    title_href = `<a href=${url_info["url"]}>${url_info["title"]}</a>`;
+    class_link = `link-box description truncate-css`;
     back_link_location.append(
       `<div> <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info["description"]} <span></div></div>`
     );
