@@ -18,8 +18,8 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 - [Active Practices](#active-practices)
     - [Daily Stream of Consciousness Journaling](#daily-stream-of-consciousness-journaling)
     - [Daily Gratefulness Journal](#daily-gratefulness-journal)
-    - [5 am wake up (psst - it's really physical health)](#5-am-wake-up-psst---its-really-physical-health)
-    - [Formal 8-12 minute meditation](#formal-8-12-minute-meditation)
+    - [4:30 am wake up (psst - it's really physical health)](#430-am-wake-up-psst---its-really-physical-health)
+    - [Formal 20 minute breathing meditation.](#formal-20-minute-breathing-meditation)
 - [Future Practices](#future-practices)
     - [Informal gap meditation](#informal-gap-meditation)
     - [Daily Reflective Journal](#daily-reflective-journal)
@@ -47,21 +47,21 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 **How's that working out for you?** Really well. Because I can fill this out in less then 2 minutes, I tend to do it daily. It's hard to be objective, but since I've started this practice, I have been much more likely to think about how lucky I am.
 
-### 5 am wake up (psst - it's really physical health)
+### 4:30 am wake up (psst - it's really physical health)
 
 **Why?** 1) Every day starts and ends with a deliberate act 2) The quiet of the morning gives time to reflect and think before we're lost in the hustle of the day and the demands of life.
 
-**How?** Set the alarm at 5, and wake up when the alarm goes off. If you haven't had enough sleep, that's fine it'll be taken care of the next night when you're exhausted and fall asleep early.
+**How?** Set the alarm at 4:30, and wake up when the alarm goes off. If you haven't had enough sleep, that's fine it'll be taken care of the next night when you're exhausted and fall asleep early.
 
 **How's that working out for you?** Amazing, I've been doing this for years now and love it. One of the hardest parts about this is thinking wouldn't it be great if I just stayed up tonight to finish this, and remapping that thought to, if it's important I can wake up early to get it done.
 
-### Formal 8-12 minute meditation
+### Formal 20 minute breathing meditation.
 
-**Why?**
+**Why?** It's easy from your mind to be lost, to keep it focused on the moment requires, practice lots of practice. Focusing on the breath is that practive of staying focused on the breath and noticing when your attention has wandred and returning it to the breath. Also an excellent practice for dicsipline, both in doing it daily, and in staying for the entire time.
 
-**How?**
+**How?** Once a day at any time, in any position, I'll set a timer for 20 minutes, close my eyes and focus on the breath. I used to try to sit in a fancy position, in a fancy spot, but that just increased the fricition of meditaiton. For better to just do it where you stand. More details in [search inside yourself](siy).
 
-**How's that working out for you?**
+**How's that working out for you?** When I do it amazing. My latest attempt starting in October 2020, got me up to 20 minutes. Because I tend to do this in the morning, and I like having a block of time in the morning, I had to move my wake up time from 5:00 am to 4:30 am, which I love.
 
 ## Future Practices
 
@@ -85,7 +85,7 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 - Process it once list
 - Why is someone behaving inconsistently
-- Poll the people in my head
+- Poll the [voices in my head](/voices)
 
 ### Discontinued Practices
 

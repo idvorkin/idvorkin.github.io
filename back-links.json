@@ -1,168 +1,4 @@
 {
-  "backlinks": {
-    "/7-habits": [
-      "/books-that-defined-me",
-      "/d/resistance",
-      "/depression",
-      "/eulogy"
-    ],
-    "/90days": ["/the-manager-book"],
-    "/addiction": ["/d/resistance", "/idle", "/psychic-weight"],
-    "/amazon": ["/parkinson"],
-    "/anxiety": [
-      "/d/2017-04-09-igor-the-operating-manual",
-      "/depression",
-      "/gtd",
-      "/happy",
-      "/voices"
-    ],
-    "/being-a-great-manager": [
-      "/eulogy",
-      "/job",
-      "/software-leadership-roles",
-      "/the-manager-book"
-    ],
-    "/bike": ["/d/2017-04-09-igor-the-operating-manual", "/eulogy", "/td/irl"],
-    "/books-that-defined-me": ["/being-a-great-manager", "/the-manager-book"],
-    "/brompton-toys": ["/bike"],
-    "/cache": ["/eulogy", "/job"],
-    "/coaching": [
-      "/being-a-great-manager",
-      "/curious",
-      "/job",
-      "/moments-at-work",
-      "/the-manager-book"
-    ],
-    "/coe": ["/the-manager-book"],
-    "/comp": ["/job-hunt-stress", "/the-manager-book"],
-    "/covid": ["/addiction", "/facebook"],
-    "/curious": ["/getting-to-yes-with-yourself", "/psychic-weight"],
-    "/d/habits": [
-      "/7-habits",
-      "/d/2017-04-09-igor-the-operating-manual",
-      "/d/resistance",
-      "/idle",
-      "/the-manager-book"
-    ],
-    "/d/resistance": ["/books-that-defined-me", "/psychic-weight", "/timeoff"],
-    "/death": ["/covid", "/psychic-weight"],
-    "/decisive": [
-      "/being-a-great-manager",
-      "/coaching",
-      "/job-hunt-stress",
-      "/pride",
-      "/the-manager-book"
-    ],
-    "/dip": ["/7-habits", "/gtd"],
-    "/emotional-health": ["/d/2017-04-09-igor-the-operating-manual", "/td/irl"],
-    "/essentialism": ["/7-habits", "/books-that-defined-me", "/frog", "/gtd"],
-    "/eulogy": ["/depression", "/frog", "/td/irl", "/timeoff"],
-    "/frog": [
-      "/7-habits",
-      "/gtd",
-      "/psychic-weight",
-      "/td/time-off-3-2020",
-      "/timeoff"
-    ],
-    "/getting-to-yes-with-yourself": [
-      "/books-that-defined-me",
-      "/curious",
-      "/depression"
-    ],
-    "/gtd": ["/books-that-defined-me", "/frog"],
-    "/happy": ["/hobby", "/siy", "/timeoff"],
-    "/Human-Meetings": ["/being-a-great-manager", "/eulogy", "/job"],
-    "/humans-are-underrated": ["/books-that-defined-me"],
-    "/idle": ["/anxiety", "/depression", "/happy", "/psychic-weight"],
-    "/insecure": ["/90days", "/depression"],
-    "/insomnia": ["/depression"],
-    "/job": ["/eulogy", "/job-hunt-stress", "/the-manager-book"],
-    "/job-hunt-stress": ["/comp", "/the-manager-book"],
-    "/linkedin": ["/about"],
-    "/magical-memories": [
-      "/d/2017-04-09-igor-the-operating-manual",
-      "/d/resistance",
-      "/eulogy",
-      "/hobby",
-      "/idle"
-    ],
-    "/mind-at-work": ["/timeoff"],
-    "/mind-monsters": ["/happy", "/idle", "/psychic-weight", "/siy"],
-    "/ml": ["/td/stats", "/the-manager-book"],
-    "/moments": ["/moments-at-work"],
-    "/moments-at-work": [
-      "/being-a-great-manager",
-      "/job",
-      "/moments",
-      "/the-manager-book"
-    ],
-    "/money": [
-      "/d/2017-04-09-igor-the-operating-manual",
-      "/td/time-off-3-2020"
-    ],
-    "/outsourcing": ["/gtd"],
-    "/parkinson": [
-      "/d/2017-04-09-igor-the-operating-manual",
-      "/money",
-      "/the-manager-book"
-    ],
-    "/physical-health": [
-      "/d/2017-04-09-igor-the-operating-manual",
-      "/depression",
-      "/td/irl",
-      "/tech-health-toys"
-    ],
-    "/pride": [
-      "/being-a-great-manager",
-      "/coaching",
-      "/comp",
-      "/happy",
-      "/psychic-weight",
-      "/the-manager-book"
-    ],
-    "/psychic-weight": ["/depression", "/gtd"],
-    "/remote-work": ["/the-manager-book"],
-    "/shame": ["/90days", "/depression", "/insecure", "/psychic-weight"],
-    "/siy": [
-      "/7-habits",
-      "/books-that-defined-me",
-      "/coaching",
-      "/depression",
-      "/emotional-health",
-      "/eulogy",
-      "/td/time-off-3-2020"
-    ],
-    "/software-leadership-roles": ["/job", "/the-manager-book"],
-    "/static/igor-feedback-LinkedIn.pdf": [
-      "/being-a-great-manager",
-      "/the-manager-book"
-    ],
-    "/static/StrengthFinderIgor.pdf": ["/strength-finder"],
-    "/sustainable-work": ["/being-a-great-manager", "/depression"],
-    "/td": ["/the-manager-book"],
-    "/td/cloud-first-applications": ["/the-manager-book"],
-    "/td/irl#physical-health": ["/physical-health"],
-    "/td/irl#work-bag": ["/td/ios-nomad"],
-    "/td/time-off-3-2020": ["/timeoff"],
-    "/tech-health-toys": [
-      "/d/2016-02-03-positive-computing-survey",
-      "/physical-health"
-    ],
-    "/The-Genesis-Node": ["/eulogy"],
-    "/the-manager-book": ["/being-a-great-manager", "/coaching"],
-    "/toysfortots": ["/eulogy"],
-    "/upstream": ["/7-habits"],
-    "/voices": [
-      "/anxiety",
-      "/d/2017-04-09-igor-the-operating-manual",
-      "/depression"
-    ],
-    "/warm": ["/bike"],
-    "/welcome-to-holland": ["/getting-to-yes-with-yourself"],
-    "/what-i-wish-knew-at-22": ["/the-manager-book"],
-    "/what-makes-a-leader": ["/the-manager-book"],
-    "/what-makes-a-leader-great": ["/siy"]
-  },
   "redirects": {
     "/22": "/what-i-wish-knew-at-22",
     "/7habits": "/7-habits",
@@ -864,8 +700,12 @@
       "title": "EMOTIONAL HEALTH PRACTICES",
       "description": "Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I’ve been exploring.\n\n",
       "file_path": "_site/emotional-health.html",
-      "outgoing_links": ["/search-inside-yourself"],
-      "incoming_links": ["/d/2017-04-09-igor-the-operating-manual", "/td/irl"],
+      "outgoing_links": ["/search-inside-yourself", "/voices"],
+      "incoming_links": [
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/siy",
+        "/td/irl"
+      ],
       "redirect_url": ""
     },
     "/essentialism": {
@@ -1330,9 +1170,14 @@
       "py/object": "__main__.Page",
       "url": "/siy",
       "title": "SEARCH INSIDE YOURSELF",
-      "description": "Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It’s also a pun as the author works at google, and built the program internally at Google.\n\n",
+      "description": "Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It’s also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to medatitive bliss.\n\n",
       "file_path": "_site/siy.html",
-      "outgoing_links": ["/what-makes-a-leader-great", "/monsters", "/happy"],
+      "outgoing_links": [
+        "/emotional-health",
+        "/what-makes-a-leader-great",
+        "/monsters",
+        "/happy"
+      ],
       "incoming_links": [
         "/7-habits",
         "/books-that-defined-me",
@@ -1818,7 +1663,8 @@
       "incoming_links": [
         "/anxiety",
         "/d/2017-04-09-igor-the-operating-manual",
-        "/depression"
+        "/depression",
+        "/emotional-health"
       ],
       "redirect_url": ""
     },
