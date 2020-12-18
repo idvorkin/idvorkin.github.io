@@ -350,6 +350,7 @@ My approach, and frequent peep questions.
 
 <div> </div>
 - l12
+- Great post on being a [staff + level engineer](https://lethain.com//staff-plus-eng-resources/)
 - Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
 - What are you driving for our larger organization?
 - How are you maximizing our benefit?
