@@ -18,7 +18,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 - [Work](#work)
     - [Individual Contributor](#individual-contributor)
-        - [Functional Skills to develop](#functional-skills-to-develop)
+    - [Functional Skills to develop](#functional-skills-to-develop)
     - [Realistic expectations for a new leader](#realistic-expectations-for-a-new-leader)
     - [Manager](#manager)
     - [My super powers](#my-super-powers)
@@ -65,7 +65,7 @@ At the end of 2016, I joined Amazon to learn the business of software, to learn 
 
 ### Individual Contributor
 
-#### Functional Skills to develop
+### Functional Skills to develop
 
 - Business Writing
 - Design
@@ -166,6 +166,8 @@ See [anxiety](/anxiety)
 
 #### Physical activity
 
+[Physical health](/physical-health)
+
 #### Not spending enough time with them
 
 #### Diet and Weight
@@ -180,7 +182,7 @@ Money isn;t just to make piles, it's to enable you to do stuff. Stuff does not e
 
 #### What would I do for less money
 
-If you wouldn't take a job for a pay cut, you probably shouldn't tak ethe job.
+If you wouldn't take a job for a pay cut, you probably shouldn't take the job.
 
 #### Making more vs spending more
 
