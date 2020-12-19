@@ -77,6 +77,8 @@ This prevents you from focusing on anything but the high order bit.
 
 ## Mitigating at the bank
 
+This is applies to [money](/money)
+
 ### Pay yourself first
 
 ### Focus on your expenses, not on your income.
@@ -84,6 +86,8 @@ This prevents you from focusing on anything but the high order bit.
 ### Focus on your recurring expenses, not on capital expenses
 
 ## Mitigating on vacation
+
+This is applies during [time off](/time-off)
 
 ## Mitigating in the closet
 

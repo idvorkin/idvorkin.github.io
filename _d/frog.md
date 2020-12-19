@@ -15,6 +15,8 @@ tags:
 
 Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing of the concepts into my favorite mental models, the chapter titles are preserved if you want to go look them up.
 
+In case
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
@@ -28,6 +30,10 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+But first, a word from our sponsor, the [resistance](/resistance)
+
+_The resistance is the personification of the force that stops you from doing all important things. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity._
 
 ### Start with Why
 

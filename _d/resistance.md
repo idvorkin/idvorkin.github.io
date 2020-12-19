@@ -28,6 +28,8 @@ Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if 
     - [Jump in the lake day.](#jump-in-the-lake-day)
     - [Positive Habits and Routine](#positive-habits-and-routine)
     - [Habit 3 - Begin with the end in mind](#habit-3---begin-with-the-end-in-mind)
+    - [GTD](#gtd)
+    - [Eat that frog](#eat-that-frog)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -88,10 +90,15 @@ Every day I wake up at 5am, it's my first victory over the resistance, and it gi
 
 [7 Habits - Habit 3](/7habits)
 
+### GTD
+
+[Getting things done](/gtd)
+
+### Eat that frog
+
+[Eat that frog](/frog)
+
 ## Other Resources
 
-[Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf) - The bible of the resistance.
-
+- [Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf) - The bible of the resistance.
 - Do the work by Stephen Pressfield.
-- Eat that frog
-- Getting things done (GTD)

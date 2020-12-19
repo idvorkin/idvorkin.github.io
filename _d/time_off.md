@@ -7,6 +7,7 @@ redirect_from:
   - /vacation
   - /personal-development
   - /pd
+  - /time-off
 ---
 
 Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we'll discuss too.
