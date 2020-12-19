@@ -91,6 +91,7 @@
     "/tft": "/toysfortots",
     "/the-dip": "/dip",
     "/thedip": "/dip",
+    "/time-off": "/timeoff",
     "/twentytwo": "/what-i-wish-knew-at-22",
     "/vacation": "/timeoff",
     "/virus": "/covid",
@@ -488,6 +489,7 @@
         "/magic",
         "/voices",
         "/anxiety",
+        "/physical-health",
         "/money",
         "/parkinson"
       ],
@@ -586,9 +588,17 @@
       "title": "RESISTANCE: WHY YOU CAN'T MAKE YOURSELF TAKE AN ICE COLD SHOWER",
       "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity.\n\n",
       "file_path": "_site/d/resistance.html",
-      "outgoing_links": ["/addiction", "/magic", "/habits", "/7habits"],
+      "outgoing_links": [
+        "/addiction",
+        "/magic",
+        "/habits",
+        "/7habits",
+        "/gtd",
+        "/frog"
+      ],
       "incoming_links": [
         "/books-that-defined-me",
+        "/frog",
         "/psychic-weight",
         "/timeoff"
       ],
@@ -760,9 +770,10 @@
       "title": "EAT THAT FROG",
       "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing of the concepts into my favorite mental models, the chapter titles are preserved if you want to go look them up.\n\n",
       "file_path": "_site/frog.html",
-      "outgoing_links": ["/eulogy", "/essential", "/gtd"],
+      "outgoing_links": ["/resistance", "/eulogy", "/essential", "/gtd"],
       "incoming_links": [
         "/7-habits",
+        "/d/resistance",
         "/gtd",
         "/psychic-weight",
         "/td/time-off-3-2020",
@@ -804,7 +815,7 @@
         "/dip",
         "/outsourcing"
       ],
-      "incoming_links": ["/books-that-defined-me", "/frog"],
+      "incoming_links": ["/books-that-defined-me", "/d/resistance", "/frog"],
       "redirect_url": ""
     },
     "/happy": {
@@ -1019,6 +1030,7 @@
       "outgoing_links": ["/parkinson"],
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
+        "/parkinson",
         "/td/time-off-3-2020"
       ],
       "redirect_url": ""
@@ -1039,7 +1051,7 @@
       "title": "PARKINSON'S LAW: THE PARADOX OF PLENTY",
       "description": "Work expands to fill the resources available. The more you make the more you spend. Stuff expands to fill the space available for storage. etc, etc.\n\n",
       "file_path": "_site/parkinson.html",
-      "outgoing_links": ["/amazon"],
+      "outgoing_links": ["/amazon", "/money", "/time-off"],
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
         "/money",
@@ -1478,9 +1490,14 @@
       "py/object": "__main__.Page",
       "url": "/td/time-off-3-2020",
       "title": "ADVENTURES MARCH AND APRIL 2020",
-      "description": "Copied from my GitHub techdiary\n\n",
+      "description": "In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
       "file_path": "_site/td/time-off-3-2020.html",
-      "outgoing_links": ["/frog", "/money", "/search-inside-yourself"],
+      "outgoing_links": [
+        "/frog",
+        "/money",
+        "/search-inside-yourself",
+        "/https://github.com/idvorkin/LinqPadSnippets/blob/59a5b6ed535de1256f1546557e3795365ed83b82/python/linkchecker.py#L5"
+      ],
       "incoming_links": ["/timeoff"],
       "redirect_url": ""
     },
@@ -1610,7 +1627,7 @@
       "py/object": "__main__.Page",
       "url": "/timeoff",
       "title": "GETTING THE MOST OUT OF TIME OFF",
-      "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, but I think there are 2 kinds of time off. Vacation, and personal development.\n\n",
+      "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we’ll discuss too.\n\n",
       "file_path": "_site/timeoff.html",
       "outgoing_links": [
         "/mind-at-work",
@@ -1620,7 +1637,7 @@
         "/frog",
         "/td/time-off-3-2020"
       ],
-      "incoming_links": [],
+      "incoming_links": ["/parkinson"],
       "redirect_url": ""
     },
     "/toysfortots": {
