@@ -9,7 +9,7 @@ redirect_from:
   - /pd
 ---
 
-Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, but I think there are 2 kinds of time off. Vacation, and personal development.
+Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we'll discuss too.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -66,11 +66,11 @@ So, on behalf of future you, when you want to vegetate, let go of your responsib
 
 In recap:
 
-| How you want to vegetate        | Future you's request                                    |
+| You want to skip                | Future you recommends                                   |
 | ------------------------------- | ------------------------------------------------------- |
 | Tasks and responsibilities      | Ignore 'em you deserve it                               |
 | Habits, exercise and discipline | Do them, you'll have more energy to enjoy your vacation |
-| Being selfish                   | Seek balance, Set expectations, and honor them          |
+| Your friends and family         | Seek balance, Set expectations, and honor them          |
 
 ## Powerful Personal Development
 
@@ -91,7 +91,7 @@ Even though getting to do what you love is awesome, you still want to love your 
 ### Begin with the end in mind
 
 - Read your [eulogy](/eulogy), to remember what matters most to you.
-- Remember not to [procrastinate](/frog)
+- Remember not to [procrastinate](/frog).
 
 ## Examples of how I spent my time off
 
