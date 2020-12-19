@@ -49,7 +49,7 @@ Thanks to the many outsourcing crowd sourcing tools, getting contractors is easi
 
 ### Things I want to start outsourcing.
 
-- Personal Trainer (?)
+- Personal Trainer - Done- incredible idea!
 
 #### TBD - When to build relationships with contractors
 
