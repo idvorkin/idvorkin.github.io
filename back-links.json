@@ -604,6 +604,16 @@
       ],
       "redirect_url": ""
     },
+    "/d/time-off-12-2020": {
+      "py/object": "__main__.Page",
+      "url": "/d/time-off-12-2020",
+      "title": "TIME OFF X-MAS 2020",
+      "description": "It’s Corona virus X-mas, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
+      "file_path": "_site/d/time-off-12-2020.html",
+      "outgoing_links": ["/time-off", "/happy"],
+      "incoming_links": [],
+      "redirect_url": ""
+    },
     "/d/where-have-all-the-bugs-gone": {
       "py/object": "__main__.Page",
       "url": "/d/where-have-all-the-bugs-gone",
@@ -825,7 +835,7 @@
       "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject\n\n",
       "file_path": "_site/happy.html",
       "outgoing_links": ["/idle-loop", "/anxiety", "/pride", "/mind-monsters"],
-      "incoming_links": ["/hobby", "/siy", "/timeoff"],
+      "incoming_links": ["/d/time-off-12-2020", "/hobby", "/siy", "/timeoff"],
       "redirect_url": ""
     },
     "/hobby": {
@@ -1637,7 +1647,7 @@
         "/frog",
         "/td/time-off-3-2020"
       ],
-      "incoming_links": ["/parkinson"],
+      "incoming_links": ["/d/time-off-12-2020", "/parkinson"],
       "redirect_url": ""
     },
     "/toysfortots": {
