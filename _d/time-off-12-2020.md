@@ -55,8 +55,8 @@ I've used this time to restart the flywheel on magic, and diet, re-inforce my di
 
 ### Friends
 
-☐ Catch up with Slava
-☐ Catch up with Manish
+- ☐ Catch up with Slava
+- ☐ Catch up with Manish
 
 ### Tori
 
@@ -68,10 +68,10 @@ Private
 
 ### Amelia
 
-☐ Spend time with her in the hottub 8/10 days
-☐ Read with her 8/10 days - finish dog on a log book 3 and book 4 (books to help her learn to read)
-☐ JOY: Watching her start catching words from TV and books I'm reading to her
-☐ 4/10 days going for a bike ride
+- ☐ Spend time with her in the hottub 8/10 days
+- ☐ Read with her 8/10 days - finish dog on a log book 3 and book 4 (books to help her learn to read)
+- ☐ JOY: Watching her start catching words from TV and books I'm reading to her
+- ☐ 4/10 days going for a bike ride
 
 ## Identity Health
 
@@ -79,8 +79,10 @@ Private
 
 Magic used to bring me great pleasure, and I really have been ignoring it under the guise that it's not fun doing magic without an audience during CV-19. This is a lie though - as I get a lot of meditative pleasure from doing magic, and in 6 months once lockdown is over, I'll be thrilled to have new tools in my tool box.
 
-☐ Learn a new rubber band - the gift - ☐ Practice my rubber band stuff daily - ☐ Figure out how to get that looking good on camera - study Joe - ☐ Carry rubber bands on my wrist
-☐ Practice the magic board 5/10 days
+- ☐ Learn a new rubber band - the gift
+- ☐ Practice my rubber band stuff daily
+- ☐ Figure out how to get that looking good on camera - study Joe - ☐ Carry rubber bands on my wrist
+- ☐ Practice the magic board 5/10 days
 
 ### Tech Guru
 
@@ -90,10 +92,10 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 
 #### Data Analysis - Pandas
 
-☐ Find the "theory" of data shapes, and use it to your advantage
-☐ Get better at pivot tables and learning new graphing libraries
-☐ Read Pandas for everyone
-☐ See if there are new tools for Jupyter
+- ☐ Find the "theory" of data shapes, and use it to your advantage
+- ☐ Get better at pivot tables and learning new graphing libraries
+- ☐ Read Pandas for everyone
+- ☐ See if there are new tools for Jupyter
 
 TODO link to techdiary udpates for this.
 
@@ -103,14 +105,14 @@ I checked this out briefly as it's a place I have little context, I think I'll w
 
 ## Cognitive Health
 
-☐ Summarize 7 habits
+- ☐ Summarize 7 habits
 
 Even though this is work related, these quick sands are probably the biggest assult on my inner peace, and I want to spend some time maximizing the cognative force I can apply to these situations.
 
 ## Emotional Health
 
-☐ Read VSI: Happiness
-☐ Write up my engineering manager quick sands
+- ☐ Read VSI: Happiness
+- ☐ Write up my engineering manager quick sands
 
 ### Meditation
 
@@ -124,13 +126,13 @@ It's interesting that even though I can catch ad-hoc or new kinds of meditation,
 
 This has been spotty throughout Decemeber, given I've got no other time commitments, restarting this should be easy.
 
-☐ 10/10 days
+- ☐ 10/10 days
 
 ## Physical Health
 
 I've got a trainer now, which sets not just a lower bound to my activity, but in fact an optimal progress bound to my activity.
 
-☐ 4 non trainer days, do my rolling, dynamic stretches and turkish get up.
+- ☐ 4 non trainer days, do my rolling, dynamic stretches and turkish get up.
 
 ### Statistics
 
@@ -141,26 +143,26 @@ Gym Days:
 
 My diet discipline has been week. I'll take some structural "additive" attempts to make it better.
 
-☐ CONTINUE: Daily breakfast miso soup
-☐ NEW: Daily Afternoon Popcorn
-☐ NEW: Lunch include miso soup
+- ☐ CONTINUE: Daily breakfast miso soup
+- ☐ NEW: Daily Afternoon Popcorn
+- ☐ NEW: Lunch include miso soup
 
 ### Sleep
 
-☐ 10/10 wake up at 4:30.
+- ☐ 10/10 wake up at 4:30.
 
 ### Energy
 
-☐ GOAL: High
+- ☐ GOAL: High
 
 ## House and goods
 
 I think the hero of my good is my hot-tub - get in there every day, and come up with good ideas for maximizing my pleasure by doing things in the hottub to get twofers:
 
-☐ Read in the hottub
-☐ Meditate in the hottub
-☐ Practice magic in the hottub
-☐ Figure out outdoor lighting
+- ☐ Read in the hottub
+- ☐ Meditate in the hottub
+- ☐ Practice magic in the hottub
+- ☐ Figure out outdoor lighting
 
 Getting ready for the re-model is important too
 
@@ -168,7 +170,7 @@ Getting ready for the re-model is important too
 
 Random small suff
 
-☐ Swap out Wi-Fi routers
+- ☐ Swap out Wi-Fi routers
 
 ## Mental quicksand
 
