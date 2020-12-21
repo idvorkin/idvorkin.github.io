@@ -39,7 +39,7 @@ I took the first 2 days to vegitate, which wasn't a conscious decision, it was j
     - [Energy](#energy)
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
-    - [Spending vacation days when it's "fun  time at work"](#spending-vacation-days-when-its-fun--time-at-work)
+    - [Spending vacation days when it's "fun time at work"](#spending-vacation-days-when-its-fun-time-at-work)
     - [A Stacking of work stuff](#a-stacking-of-work-stuff)
 
 <!-- vim-markdown-toc -->
