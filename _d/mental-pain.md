@@ -7,8 +7,6 @@ permalink: mental-pain
 
 Pain is in the brain as they say, and even more so for mental pains.
 
-## Moments
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
@@ -23,7 +21,7 @@ Pain is in the brain as they say, and even more so for mental pains.
     - [Self](#self)
         - [Control: Anxiety](#control-anxiety)
         - [Doubt: Self Doubt](#doubt-self-doubt)
-        - [Dissapointment: Shame](#dissapointment-shame)
+        - [Dissapointment: Self dissapointment](#dissapointment-self-dissapointment)
     - [Other - From you, to you](#other---from-you-to-you)
         - [Control: Controlling, loss of autonomy](#control-controlling-loss-of-autonomy)
         - [Doubt: Abanadonment, Taking foregranted](#doubt-abanadonment-taking-foregranted)
@@ -43,6 +41,7 @@ Pain is in the brain as they say, and even more so for mental pains.
     - [Misery to Huberis](#misery-to-huberis)
 - [Misc topics](#misc-topics)
     - [Pride vs Self Confidence vs Hubris/Arrogance](#pride-vs-self-confidence-vs-hubrisarrogance)
+- [For more info](#for-more-info)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -67,9 +66,11 @@ Pain is in the brain as they say, and even more so for mental pains.
 
 #### Control: Anxiety
 
+It's all about the [anxiety](/anxiety)
+
 #### Doubt: Self Doubt
 
-#### Dissapointment: Shame
+#### Dissapointment: Self dissapointment
 
 ### Other - From you, to you
 
@@ -79,6 +80,8 @@ Pain is in the brain as they say, and even more so for mental pains.
 
 #### Dissapointment: Guilt/Shame/Emberassed, Unfair
 
+See [shame](/shame) and guilt
+
 ### Process - In your life
 
 #### Control: Anxiety
@@ -86,6 +89,8 @@ Pain is in the brain as they say, and even more so for mental pains.
 #### Doubt: Mistrust and Meaninglessness
 
 #### Dissapointment: Guilt/Shame/Emberassed, Unfair
+
+See [shame](/shame)
 
 ## Fueling the fire, adding meaning
 
@@ -110,3 +115,7 @@ Pain is in the brain as they say, and even more so for mental pains.
 ### Pride vs Self Confidence vs Hubris/Arrogance
 
 Interesting - in Dr. Raphs's model, pride is good, arrogance is bad. The test for the boundary is "how impressive is the achievement?" To be dramatic my post on arrogrance is called [pride ducking with you](/pride).
+
+## For more info
+
+This is mostly my summary of [this](https://whatilearnedsofar.com/theory/suffering/)
