@@ -21,14 +21,14 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 - [Judgment vs Curiosity](#judgment-vs-curiosity)
 - [Compassionate Consequences](#compassionate-consequences)
 - [Cutting ourselves slack vs slacking off](#cutting-ourselves-slack-vs-slacking-off)
-- [Related Ideas](#related-ideas)
+- [Curious questions for mental pain and its antidotes](#curious-questions-for-mental-pain-and-its-antidotes)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
 ### Judgment vs Curiosity
 
-Judgment throws ups barriers and causes us to hide the truth. Curiosity is gentle and helps us find what is going on.
+Judgment throws ups barriers and causes us to hide the truth which can lead to guilt and [shame](/shame). Curiosity is gentle and helps us find what is going on.
 
 ### Compassionate Consequences
 
@@ -58,11 +58,10 @@ What could have I actually done that would have been better than what I did?
 - Must be a realistic option - and it may not depend on knowledge you didn't have at the time.
 - Must have been available to you in real time. That is, nothing prevented you from choosing the better option — you simply made the lesser choice.
 
+### Curious questions for mental pain and its antidotes
+
+See [mental pain](/mental-pain)
+
 Retro?
 
 Lack of attention
-
-### Related Ideas
-
-[Getting to yes with yourself](/getting-to-yes-with-yourself)
-[Coaching](/coaching)
