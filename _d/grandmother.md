@@ -5,6 +5,7 @@ tags:
 permalink: /curious
 redirect_from:
   - /grandmothermind
+  - /grandmother-mind
   - /grandma
   - /grandmother
   - /curious
