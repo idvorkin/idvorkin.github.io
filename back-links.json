@@ -178,6 +178,7 @@
         "/depression",
         "/gtd",
         "/happy",
+        "/mental-pain",
         "/voices"
       ],
       "redirect_url": ""
@@ -610,7 +611,7 @@
       "title": "TIME OFF X-MAS 2020",
       "description": "It’s Corona virus X-mas, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
       "file_path": "_site/d/time-off-12-2020.html",
-      "outgoing_links": ["/time-off", "/happy"],
+      "outgoing_links": ["/time-off", "/happy", "/td/pandas"],
       "incoming_links": [],
       "redirect_url": ""
     },
@@ -966,6 +967,16 @@
       ],
       "redirect_url": ""
     },
+    "/mental-pain": {
+      "py/object": "__main__.Page",
+      "url": "/mental-pain",
+      "title": "THE THOUGHTS THAT PAIN US",
+      "description": "Pain is in the brain as they say, and even more so for mental pains.\n\n",
+      "file_path": "_site/mental-pain.html",
+      "outgoing_links": ["/anxiety", "/shame", "/shame", "/pride"],
+      "incoming_links": ["/shame"],
+      "redirect_url": ""
+    },
     "/micro-economics": {
       "py/object": "__main__.Page",
       "url": "/micro-economics",
@@ -1096,6 +1107,7 @@
         "/coaching",
         "/comp",
         "/happy",
+        "/mental-pain",
         "/psychic-weight",
         "/the-manager-book"
       ],
@@ -1177,13 +1189,14 @@
       "py/object": "__main__.Page",
       "url": "/shame",
       "title": "SHAME",
-      "description": "Shame and guilt are similar emotions that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt drives people to amend their mistakes.\n\n",
+      "description": "Shame and guilt are often confused emotions caused by self judgements that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt, properly applied drives people to the correct behaviors. These are both examples of mental-pain and when the pain is phantom or cronic, are often well served by grandmother mind.\n\n",
       "file_path": "_site/shame.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/mental-pain", "/grandmother-mind"],
       "incoming_links": [
         "/90days",
         "/depression",
         "/insecure",
+        "/mental-pain",
         "/psychic-weight"
       ],
       "redirect_url": ""
