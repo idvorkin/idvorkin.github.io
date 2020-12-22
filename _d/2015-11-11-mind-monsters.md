@@ -17,9 +17,9 @@ What the preacher said next sounded funny at first, but after some contemplation
 Say you have a prize horse that you're training to win the Kentucky derby. Do you feed this horse ketchup and peanut butter? Of course not - you need this horse to win so you feed it the highest quality oats you can find.
 Now, isn't your mind far more important than a race horse? Surely you shouldn't be focusing on silly things like anger and ego.
 
-That parable reminded me that I've been spending too much time focusing on silly things like being critical. Since a rose by any other name still smells as sweet, I have to say, I believe in mind monsters.
+That parable reminded me that I've been spending too much time focusing on silly things like [pride](/pride), [mental pain](/mental-pain) and the negative [voices in my head](/voices). Since a rose by any other name still smells as sweet, I have to say, I believe in mind monsters.
 
-There's a great poem on the topic by the author of Search Inside Yourself (Chade-Meng Tang)
+There's a great poem on the topic by the author of [Search Inside Yourself](/siy)
 
 **My monsters.**
 
