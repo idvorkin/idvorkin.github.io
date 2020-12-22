@@ -14,22 +14,26 @@ A place to store my hard earned pandas learnings.
 <!-- vim-markdown-toc GFM -->
 
 - [Misc](#misc)
-  - [Jupyter set to window width](#jupyter-set-to-window-width)
-  - [Jupyter run on a linux box, access from linux.](#jupyter-run-on-a-linux-box-access-from-linux)
-  - [ipython magic commands](#ipython-magic-commands)
-  - [fix column width to match terminal](#fix-column-width-to-match-terminal)
-  - [List columns](#list-columns)
-  - [Sorting](#sorting)
+    - [Jupyter set to window width](#jupyter-set-to-window-width)
+    - [Pretty print the data frame](#pretty-print-the-data-frame)
+    - [Jupyter run on a linux box, access from linux.](#jupyter-run-on-a-linux-box-access-from-linux)
+    - [ipython magic commands](#ipython-magic-commands)
+    - [fix column width to match terminal](#fix-column-width-to-match-terminal)
+    - [List columns](#list-columns)
+    - [Sorting](#sorting)
 - [Working with categories](#working-with-categories)
-  - [Convert column type to category](#convert-column-type-to-category)
-  - [Count values in category](#count-values-in-category)
-  - [Histogram column](#histogram-column)
-  - [Custom Apply to a row](#custom-apply-to-a-row)
+    - [Convert column type to category](#convert-column-type-to-category)
+    - [Count values in category](#count-values-in-category)
+    - [Histogram column](#histogram-column)
+    - [Custom Apply to a row](#custom-apply-to-a-row)
 - [Pivoting](#pivoting)
-  - [Simple pivot table by count](#simple-pivot-table-by-count)
-  - [Simple pivot table by percent change](#simple-pivot-table-by-percent-change)
+    - [Simple pivot table by count](#simple-pivot-table-by-count)
+    - [Simple pivot table by percent change](#simple-pivot-table-by-percent-change)
 - [Pandas for those that want to go faster.](#pandas-for-those-that-want-to-go-faster)
 - [Plotting](#plotting)
+    - [Matplotlib](#matplotlib)
+    - [Altair](#altair)
+    - [Plotly with cufflinks](#plotly-with-cufflinks)
 - [Reshaping Data](#reshaping-data)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 
@@ -43,6 +47,12 @@ A place to store my hard earned pandas learnings.
     # Resize Jupyter to window width
     from IPython.core.display import display, HTML
     display(HTML("<style>.container { width:95% !important; }</style>"))
+
+#### Pretty print the data frame
+
+If you use print to show a dataframe, it'll look ugly, use display instead.
+
+    display(df)
 
 #### Jupyter run on a linux box, access from linux.
 
@@ -104,9 +114,15 @@ A place to store my hard earned pandas learnings.
 - [Modin](https://github.com/modin-project/modin) - Parallel DataFrame, design for compatiblity first
 - [Dask](https://docs.dask.org/en/latest/) - Parallel DataFrame - but use Modin instead)
 - [Swifter](https://github.com/jmcarpenter2/swifter)- Smart Function Application (will use Numba, or Dask, or etc)
-- [Numba](http://www.google.com?btnI=1&q=Numba) - JIT your functions, but use Swifter instead
+- [Numba](http://www.google.com?btnI=1&q=Numba) - JIT your functions, but use Swifter instead.
 
 ### Plotting
+
+#### Matplotlib
+
+Learning plotting libraries can be a pain, dataviz is probably as important as data analysis, both because the viz will tell the story, but also because the viz will make analysis so much easier.
+
+I spent a tonne of time working with matplotlib, but it's so non-obvious to write, and I always need to look up its non onbvious syntax, and spend hours trying to figure out whatever quirk I'm getting bitten by:
 
 - [Anatomy of matploblib](https://github.com/matplotlib/AnatomyOfMatplotlib)
 - [Matplotlib by J.R. Johansson](https://github.com/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb)
@@ -114,6 +130,16 @@ A place to store my hard earned pandas learnings.
 Gotchyas:
 
 - Axes is a synonym for subplot. It should not be confused with axis.
+
+#### Altair
+
+[Altair](https://github.com/altair-viz/altair) is completely obvious to use, and I enjoy it.
+
+#### Plotly with cufflinks
+
+To check out:
+
+plot.ly with [cufflinks](https://github.com/santosjorge/cufflinks) - seems to be emerging as a winner, but careful about the need for on-line vs offline mode.
 
 ### Reshaping Data
 
