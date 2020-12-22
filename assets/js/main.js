@@ -169,10 +169,23 @@ function ProcessBackLinks(backLinks) {
     );
   }
 }
-// Support for backlinks -- woohoo!
-$.getJSON(
-  "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True",
-  ProcessBackLinks
-);
 
+function addBackLinksLoader() {
+  const url = window.location.href;
+  const prodPrefix = "https://idvork.in";
+  const testPrefix = "http://localhost:4000";
+  const isProd = url.includes(prodPrefix);
+
+  var backlinks_url = "";
+  if (isProd) {
+    backlinks_url =
+      "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";
+  } else {
+    backlinks_url = testPrefix + "/back-links.json";
+  }
+
+  $.getJSON(backlinks_url, ProcessBackLinks);
+}
+
+$(document).ready(addBackLinksLoader);
 $(document).ready(JsTemplateReplace);
