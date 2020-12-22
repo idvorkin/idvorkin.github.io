@@ -39,7 +39,6 @@ I'm also writing a "manager guidebook", much of this post is migrating to the [m
     - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
 - [Igors Super Powers](#igors-super-powers)
     - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
-- [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -152,7 +151,5 @@ Someone once asked my why I'm a good coach, took me a while, here's what I came 
 
 - I believe you can't be efficient with people, you can only be effective. And it always pays off.
 - People are not 'resources', they are 3 dimensional humans, with [lives outside work](https://bit.ly/igor-wlb-manifesto), emotions(like [pride](/pride)), and [mind monsters](/mind-monsters).
+- I actively study and practice [coaching](/coach), effective [decision making](/decide) and [grand mother mind (e.g. non judgement )](/grandmother-mind)
 - I've read and digested slews of [self help books](/books) which while often mocked, are filled with great models.
-- I actively study and practice [coaching](/coach) and effective [decision making](/decide)
-
-## Other Resources
