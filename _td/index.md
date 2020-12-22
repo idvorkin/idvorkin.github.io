@@ -304,6 +304,27 @@ The TUI clone of git gui - my day to day [git interface](https://jonas.github.io
 
 [Git stats](https://github.com/arzzen/git-quick-stats)
 
+Or my own favorite, file stat changes in a date range, which I [coded up in zsh](https://github.com/idvorkin/Settings/commit/6271f383995ecd95405c11193213ea5b2da5e083):
+
+```
+function gstatdaterange() {
+    # $1 - start
+    # $2 - end
+    # can be days ago
+    # glogdate '30 days ago' '1 day ago'
+    # or absolute dates
+    # glogdate '12/01/2020'
+
+    # output all git commits since until, pretty print to just have the commit
+    git_output=`git log --since "$1" --until "$2" --pretty="%H"`
+
+    # diff between first commit to last commit, and sort the output by size
+    #sort params -k=second column; -t=with delimter as |; -n=sort as numeric -r sort as reversed
+    git diff --stat `echo $git_output | tail -n 1` `echo $git_output | head -n 1` |  sort -k2 -t'|' -n -r
+}
+```
+
+
 #### TUI merge - fac
 
 TUI (merge tool)[https://github.com/mkchoi212/fac]
