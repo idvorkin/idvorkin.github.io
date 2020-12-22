@@ -55,8 +55,9 @@ I've used this time to restart the flywheel on magic, and diet, re-inforce my di
 
 ### Friends
 
-- ☐ Catch up with Slava
+- ☑ Catch up with Slava
 - ☐ Catch up with Manish
+- ☐ Catch up with Bob
 
 ### Tori
 
@@ -91,6 +92,8 @@ Magic used to bring me great pleasure, and I really have been ignoring it under 
 It's something that I'm over invested in, and need to put an upper bound on to let me focus on other things.
 
 #### Data Analysis - Pandas
+
+See [pandas](/td/pandas), and jupyter_link
 
 - ☐ Find the "theory" of data shapes, and use it to your advantage
 - ☐ Get better at pivot tables and learning new graphing libraries
