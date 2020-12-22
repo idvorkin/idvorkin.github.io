@@ -151,7 +151,7 @@ Some teams have these things well defined and running smoothly, other teams (see
 Someone once asked my why I'm a good coach, took me a while, here's what I came up with.
 
 - I believe you can't be efficient with people, you can only be effective. And it always pays off.
-- People are not 'resources', they are 3 dimensional humans, with [lives outside work](https://bit.ly/igor-wlb-manifesto), emotions(like [pride](/pride)), and desires.
+- People are not 'resources', they are 3 dimensional humans, with [lives outside work](https://bit.ly/igor-wlb-manifesto), emotions(like [pride](/pride)), and [mind monsters](/mind-monsters).
 - I've read and digested slews of [self help books](/books) which while often mocked, are filled with great models.
 - I actively study and practice [coaching](/coach) and effective [decision making](/decide)
 
