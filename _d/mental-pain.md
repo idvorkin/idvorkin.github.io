@@ -58,7 +58,7 @@ Pain is in the brain as they say, which is especially true for mental pains. The
 
 ### Doubt
 
-### Dissapointment
+### Disappointment
 
 ## Where's the pain
 
@@ -70,15 +70,15 @@ It's all about the [anxiety](/anxiety)
 
 #### Doubt: Self Doubt
 
-#### Dissapointment: Self dissapointment
+#### Disappointment: Self disappointment
 
 ### Other - From you, to you
 
 #### Control: Controlling, loss of autonomy
 
-#### Doubt: Abanadonment, Taking foregranted
+#### Doubt: Abandonment, Taking fore granted
 
-#### Dissapointment: Guilt/Shame/Emberassed, Unfair
+#### Disappointment: Guilt/Shame/Embarrassed, Unfair
 
 See [shame](/shame) and guilt
 
@@ -88,7 +88,7 @@ See [shame](/shame) and guilt
 
 #### Doubt: Mistrust and Meaninglessness
 
-#### Dissapointment: Guilt/Shame/Emberassed, Unfair
+#### Disappointment: Guilt/Shame/Embarrassed, Unfair
 
 See [shame](/shame)
 
@@ -108,13 +108,13 @@ See [shame](/shame)
 
 ### suffering to satisfaction
 
-### Misery to Huberis
+### Misery to Hubris
 
 ## Misc topics
 
 ### Pride vs Self Confidence vs Hubris/Arrogance
 
-Interesting - in Dr. Raphs's model, pride is good, arrogance is bad. The test for the boundary is "how impressive is the achievement?" To be dramatic my post on arrogrance is called [pride ducking with you](/pride).
+Interesting - in Dr. Raphs's model, pride is good, arrogance is bad. The test for the boundary is "how impressive is the achievement?" To be dramatic my post on arrogance is called [pride ducking with you](/pride).
 
 ## For more info
 
