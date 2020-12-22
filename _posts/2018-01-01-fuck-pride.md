@@ -41,6 +41,7 @@ To help me remember places where pride has fucked with me, I'll write out some o
 - [Wanting to be right more then being effective](#wanting-to-be-right-more-then-being-effective)
 - [Feeling life isn't fair because something shitty happened to me](#feeling-life-isnt-fair-because-something-shitty-happened-to-me)
 - [Other examples](#other-examples)
+- [HEADFAKE: This note is really about arrogance and hubris, not pride.](#headfake-this-note-is-really-about-arrogance-and-hubris-not-pride)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -87,3 +88,11 @@ I'll continue to add examples to this post over time (likely when I need to remi
 - Not accepting the reality of the situation/laws of physics.
 - Cognitive Distortions - Someone cares about what happens to you.
 - Not taking a "better" job for a pay cut
+
+#### HEADFAKE: This note is really about arrogance and hubris, not pride.
+
+To be dramatic, I'm using the word pride as an alternative to arrogance to hubris, which is the state being described in this note.
+
+Pride is a judgement over an accomplishment relative to our ability. "E.g. Did I learn to read when I really struggle reading?". It is often justified.
+
+Arrogrance, or hubris, is an assement of self, often manifesting as entitlement, which is 1) feeling you are cosmically unique or 2) that you should have a positive outcome with no effort.
