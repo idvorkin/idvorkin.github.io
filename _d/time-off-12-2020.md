@@ -40,7 +40,7 @@ I took the first 2 days to vegitate, which wasn't a conscious decision, it was j
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
     - [Spending vacation days when it's "fun time at work"](#spending-vacation-days-when-its-fun-time-at-work)
-    - [A Stacking of work stuff](#a-stacking-of-work-stuff)
+    - [January is going to be a tough month at work.](#january-is-going-to-be-a-tough-month-at-work)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -91,12 +91,32 @@ Magic used to bring me great pleasure, and I really have been ignoring it under 
 
 It's something that I'm over invested in, and need to put an upper bound on to let me focus on other things.
 
+Sigh, I couldn't help myself and did this beauty to figure out what files I'm changing in a time period [coded up in zsh](https://github.com/idvorkin/Settings/commit/6271f383995ecd95405c11193213ea5b2da5e083):
+
+```
+function gstatdaterange() {
+    # $1 - start
+    # $2 - end
+    # can be days ago
+    # glogdate '30 days ago' '1 day ago'
+    # or absolute dates
+    # glogdate '12/01/2020'
+
+    # output all git commits since until, pretty print to just have the commit
+    git_output=`git log --since "$1" --until "$2" --pretty="%H"`
+
+    # diff between first commit to last commit, and sort the output by size
+    #sort params -k=second column; -t=with delimter as |; -n=sort as numeric -r sort as reversed
+    git diff --stat `echo $git_output | tail -n 1` `echo $git_output | head -n 1` |  sort -k2 -t'|' -n -r
+}
+```
+
 #### Data Analysis - Pandas
 
-See [pandas](/td/pandas), and jupyter_link
+See [pandas](/td/pandas), and my sleep and weight analysis blog posts.
 
 - ☐ Find the "theory" of data shapes, and use it to your advantage
-- ☐ Get better at pivot tables and learning new graphing libraries
+- ☐ Get better at pivot tables and learning new graphing libraries (altair!)
 - ☐ Read Pandas for everyone
 - ☐ See if there are new tools for Jupyter
 
@@ -116,6 +136,7 @@ Even though this is work related, these quick sands are probably the biggest ass
 
 - ☐ Read VSI: Happiness
 - ☐ Write up my engineering manager quick sands
+- ☐ Wrote up some ideas on [mental pain](/mental-pain) from Dr. Raph
 
 ### Meditation
 
@@ -136,6 +157,11 @@ This has been spotty throughout Decemeber, given I've got no other time commitme
 I've got a trainer now, which sets not just a lower bound to my activity, but in fact an optimal progress bound to my activity.
 
 - ☐ 4 non trainer days, do my rolling, dynamic stretches and turkish get up.
+
+I was able to 'level up' in a few domains:
+
+- I can now plank for 90s
+- I can now do Turkish get up (TGU) at 30lbs.
 
 ### Statistics
 
@@ -173,7 +199,9 @@ Getting ready for the re-model is important too
 
 Random small suff
 
-- ☐ Swap out Wi-Fi routers
+- ☑ Swap out Wi-Fi routers
+
+Wow - that nighthark router really sucked, my new TP-Link A1700 (?) seems fantastic so far!!
 
 ## Mental quicksand
 
@@ -190,6 +218,6 @@ The pro of time off during x-max break:
 - The kids are also off, so an optimal time to spend with them
 - There are naturally 4 holiday days so spending 6 days, you get a solid 14 days off.
 
-### A Stacking of work stuff
+### January is going to be a tough month at work.
 
-January will be my first calibration at FB, I've got multiple people onboarding, planning and all the normal manager complexities simultaniously. All of these situations occur naturally while being a manager, but it is hard when they all stack. I'll spend some time during holidays writing out reasonable expectations and best practices for dealing with these.
+January will be my first calibration at FB, I've got multiple people onboarding, and planning and all the normal manager complexities simultaniously. All of these situations occur naturally while being a manager, but it is hard when they all happen at the same time. I'll spend some time during holidays writing out reasonable expectations and best practices for dealing with these.
