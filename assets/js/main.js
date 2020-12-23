@@ -158,14 +158,18 @@ function ProcessBackLinks(backLinks) {
     "<div id='links-to-page-title'> <b>LINKS TO THIS NOTE</b><div>"
   );
 
-  for (var link of backlinks) {
+  bl_ui = backLinks["url_info"];
+  var sort_descending_by_size = (a, b) =>
+    Number(bl_ui[b].doc_size) - Number(bl_ui[a].doc_size);
+
+  for (var link of backlinks.sort(sort_descending_by_size)) {
     url_info = backLinks["url_info"][link];
     console.log(link);
     console.log(url_info);
     title_href = `<a href=${url_info["url"]}>${url_info["title"]}</a>`;
     class_link = `link-box description truncate-css`;
     back_link_location.append(
-      `<div> <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info["description"]} <span></div></div>`
+      `<div> <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info["description"]}  <span></div></div>`
     );
   }
 }
