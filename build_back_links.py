@@ -1,3 +1,6 @@
+# Remove line too long
+# pep8: disable=E501
+
 from bs4 import BeautifulSoup
 from collections import defaultdict
 from typing import NewType, List
@@ -5,6 +8,7 @@ import os
 import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
 from dataclasses import dataclass
 import copy
+
 
 # Use type system (and mypy) to reduce error,
 # Even though both of these are strings, they should not be inter mixed
@@ -21,6 +25,7 @@ class Page:
     outgoing_links: List[PathType]
     incoming_links: List[PathType]
     redirect_url: PathType = PathType("")
+    doc_size: int=0
 
     def has_redirect(self):
         return self.redirect_url != ""
@@ -103,12 +108,12 @@ class LinkBuilder:
 
             pageTitle = jekyll_config.clean_title(pageTitle)
 
-            # <meta property="og:description" content="Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.
+            # <meta property="og:description" content="Coaching is like midwifery">
             descriptionTag = soup.find("meta", property="og:description")
             description = descriptionTag["content"] if descriptionTag else "..."
 
             links = [tag["href"] for tag in soup.find_all("a")]
-            links = [l for l in links if jekyll_config.is_allow_outgoing(l)]
+            links = [link for link in links if jekyll_config.is_allow_outgoing(link)]
 
             return Page(
                 title=pageTitle,
@@ -116,7 +121,8 @@ class LinkBuilder:
                 url=canonicalUrl,
                 file_path=file_path,
                 outgoing_links=links,
-                incoming_links=[]
+                incoming_links=[],
+                doc_size=len(contents),
             )
 
         assert "should never get here"
@@ -154,7 +160,6 @@ class LinkBuilder:
         for link in self.incoming_links.keys():
             self.incoming_links[link] = sorted(list(set(self.incoming_links[link])))
 
-
         # dictionarys enumerate in insertion order, so rebuild dicts in insertion order
         def sort_dict(d):
             return {key: d[key] for key in sorted(d.keys(), key=lambda x: x.lower())}
@@ -166,7 +171,9 @@ class LinkBuilder:
         # populate incoming links
         for link in self.incoming_links.keys():
             if link in self.pages:
-                self.pages[link].incoming_links = copy.deepcopy(self.incoming_links[link])
+                self.pages[link].incoming_links = copy.deepcopy(
+                    self.incoming_links[link]
+                )
 
     def __init__(self):
         self.incoming_links = defaultdict(list)  # forward -> back
@@ -179,7 +186,7 @@ class LinkBuilder:
         self.compress()
 
         out = {
-            "redirects": self.redirects,  #  Not needed for link building, but helpful for debugging.
+            "redirects": self.redirects,  # Not needed for link building, but helpful for debugging.
             "url_info": self.pages,
         }
 
