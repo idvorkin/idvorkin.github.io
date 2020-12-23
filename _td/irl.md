@@ -9,6 +9,7 @@ I started writing a technical blog to help me remember the many things I explore
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/irl.md)_
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Physical Health](#physical-health)
@@ -45,6 +46,10 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Computers](#computers)
     - [Monitors](#monitors)
 - [Camera](#camera)
+- [Backyard](#backyard)
+    - [Inflatable Hottub](#inflatable-hottub)
+    - [Propane Fire Pit](#propane-fire-pit)
+    - [Canopies](#canopies)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -270,3 +275,37 @@ I ended up getting an m200 because a time of purchase it was the only cheap cann
 [Stream Deck](https://www.amazon.com/Elgato-Stream-Deck-XL-customizable/dp/B07RL8H55Z/ref=sr_1_2?dchild=1&keywords=stream+deck+xl&qid=1599424060&s=electronics&sr=1-2) - Sounds silly but awesome for controlling OBS. Probably worth it's own post.
 
 Bags - who knows!
+
+## Backyard
+
+The best part of corona virus, is the isolation made me feel good about getting temporary things for the backyard - for example.
+
+### Inflatable Hottub
+
+I've wanted a hot tub for 20 years, but it was so hard. Turns out you can buy an inflatable one on Amazon. Trivial to use, and works great. Just plug it in to 110v power, fill with water, and wait for it to heat up. 2 days later it's ready to go, and from that point forward it stays hot.
+
+https://www.amazon.com/gp/product/B00NB3P98G/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+You also need bromine to keep the nasties out and ph up to keep the bromine working.
+
+https://www.amazon.com/gp/product/B00B9CHBK0/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+I also got these chairs which Amelia likes, but are not to useful for a grown up
+
+https://www.amazon.com/gp/product/B07H8QX8C1/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+And don't forget pool lights - I'm still figuring that out.
+
+### Propane Fire Pit
+
+Who doesn't like fire, just plug in the propane, turn the dial, and you've got a fire ready to go for enjoyment or some smores
+
+https://www.amazon.com/gp/product/B07ZVS4YPN/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
+Add the fir pit glass and cover and you're good to go.
+
+### Canopies
+
+A simple pop up canopy, up in 10 minutes, and provides rain protection. Not the sturdiest in a wind storm, but such is life.
+
+https://www.amazon.com/gp/product/B01AQILB3A/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
