@@ -188,11 +188,9 @@ I often stuff the gym bag in a larger bag so small matters - I use:
 
 It's taken me several tries, but I've concluded I like the smallest bag possible. I use a 13" macbook pro laptop and an iPad Pro 10" and this is the perfect bag for me:
 
-{%include amazon.html asin="B07WNPPF72" %}
-
 There's also the horizontal version - which is slightly bigger but also nice:
 
-{%include amazon.html asin="B07H4QYC2D" %}
+{%include amazon.html asin="B07WNPPF72;B07H4QYC2D" %}
 
 ## Bikes
 
@@ -302,6 +300,11 @@ I also got these chairs which Amelia likes, but are not to useful for a grown up
 And don't forget pool lights - I'm still figuring that out.
 
 {%include amazon.html asin="B00NB3P98G;B00B9CHBK0;B07H8QX8C1" %}
+
+Some good links:
+
+1.  Run a [propane water heater](https://www.outsidemodern.com/use-inflatable-hot-tub-winter-cold/)
+2.  Documentation for [the tub](https://m.bestwaycorp.com/Product/Detail/1090363XXX20#pro-support)
 
 ### Propane Fire Pit
 
