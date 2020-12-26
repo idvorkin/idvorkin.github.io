@@ -70,8 +70,10 @@ At 42 I got a personal trainer. Should have done it years ago. Several benefits;
 
 When I crossed 40 I went from easily running 4 miles hard and 20 mile bike rides to have my calfs lock up after 20 minutes of biking. I've tried various calf things here's my current list:
 
-- [Calf rocker](https://www.amazon.com/dp/B001HTFZZ8/ref=emc_b_5_t) I have the single and double, best, simple stretch
-- [Neoprene Calf Sleeves](https://www.amazon.com/Support-Brace-Adjustable-Splint-Compression/dp/B074734XJY/) I've tried socks but they are a pain to get on, and not adjustable. These things wrap on, keep you warm, and are wonderful. Highly recommend.
+- Calf rocker - I have the single and double, best, simple stretch
+- Neoprene Calf Sleeves - I've tried socks but they are a pain to get on, and not adjustable. These things wrap on, keep you warm, and are wonderful. Highly recommend.
+
+{%include amazon.html asin="B001HTFZZ8;B074734XJY" %}
 
 ### Knee Health
 
@@ -79,7 +81,8 @@ Lots of sleeves out there, I recommend the most flexible one that provides the p
 
 - [Knee brace Softest ](https://www.amazon.com/gp/product/B005BINV84/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 - [Knee brace more support ](https://www.amazon.com/gp/product/B019GDFN6W/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
-- [Knee Strap](https://www.amazon.com/gp/product/B019GDFN6W/ref=ppx_yo_dt_b_search_asin_title?://www.amazon.com/gp/product/B01MYGDB2L/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+
+{%include amazon.html asin="B005BINV84;B019GDFN6W" %}
 
 ### Booger Health
 
@@ -173,23 +176,23 @@ I've been seeing a therapist weekly since my early 30's. It provides me several 
 
 Don't get me started on the perfect fanny pack. My current favorite is below. It's very tactical looking - but have to start somewhere.
 
-https://www.amazon.com/gp/product/B07JJYCTST
+{%include amazon.html asin="B07JJYCTST" %}
 
 ### Gym Bag
 
 I often stuff the gym bag in a larger bag so small matters - I use:
 
-https://www.amazon.com/gp/product/B07SJ5XSB2
+{%include amazon.html asin="B07SJ5XSB2" %}
 
 ### Work Bag
 
 It's taken me several tries, but I've concluded I like the smallest bag possible. I use a 13" macbook pro laptop and an iPad Pro 10" and this is the perfect bag for me:
 
-https://www.amazon.com/gp/product/B07WNPPF72
+{%include amazon.html asin="B07WNPPF72" %}
 
 There's also the horizontal version - which is slightly bigger but also nice:
 
-https://www.amazon.com/gp/product/B07H4QYC2D/
+{%include amazon.html asin="B07H4QYC2D" %}
 
 ## Bikes
 
@@ -256,6 +259,8 @@ I have two common failure modes to my morning routine.
 - 40" 3840x2160 - Awesome, I love it! Highly recommend
 - [Beefy Monitor Stand](https://www.amazon.com/dp/B01BXP9LT6) - If you're getting a good monitor make sure it floats with a pneumatic monitor stand.
 
+{%include amazon.html asin="B01BXP9LT6" %}
+
 ## Camera
 
 I ended up getting an m200 because a time of purchase it was the only cheap cannon with clean HDMI output. I'd have prefered the m50, but it didn't have clean HDMI output which was a deal breaker. My use case is mostly video recording or webcamming on a tripod, but I'll take it out of the house occasionally.
@@ -266,13 +271,19 @@ I ended up getting an m200 because a time of purchase it was the only cheap cann
 
 [Fake Battery](https://www.amazon.com/gp/product/B07KC7QCM1/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) Weird, it's like it's the early 2000s
 
+{%include amazon.html asin="B07XYPVFCH;B0894DDD7H;B07KC7QCM1" %}
+
 [Very good lens - F2.0/22mm](https://www.amazon.com/Canon-0-866-Compact-System-proyecci%C3%B3n/dp/B008NF8BRI/ref=sr_1_1?dchild=1&keywords=canon+f2+22m&qid=1599424169&s=electronics&sr=1-1) - Pancake lens for the win. A bit too wide for a webcam that's behind your monitor
 
 [Awesome Lens - F1.4/30mm](https://www.amazon.com/gp/product/B081QNNCCJ/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1) - Super expensive, but awesome bokeh with a reasonable zoom works great at 2 feet.
 
+{%include amazon.html asin="B081QNNCCJ;B008NF8BRI" %}
+
 [Wrist Strap](https://www.amazon.com/gp/product/B017L3689K/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) - Wrist straps much better then neck strap.
 
 [Stream Deck](https://www.amazon.com/Elgato-Stream-Deck-XL-customizable/dp/B07RL8H55Z/ref=sr_1_2?dchild=1&keywords=stream+deck+xl&qid=1599424060&s=electronics&sr=1-2) - Sounds silly but awesome for controlling OBS. Probably worth it's own post.
+
+{%include amazon.html asin="B07RL8H55Z;B017L3689K" %}
 
 Bags - who knows!
 
