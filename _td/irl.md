@@ -309,7 +309,7 @@ And don't forget pool lights - I'm still figuring that out.
 
 Some good links:
 
-1.  Run a [propane water heater](https://www.outsidemodern.com/use-inflatable-hot-tub-winter-cold/)
+1.  Run a winter setup with a [propane water heater](https://www.outsidemodern.com/use-inflatable-hot-tub-winter-cold/)
 2.  Documentation for [the tub](https://m.bestwaycorp.com/Product/Detail/1090363XXX20#pro-support)
 
 ### Propane Fire Pit
