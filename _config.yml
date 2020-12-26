@@ -30,14 +30,14 @@ bing_verify:
 links:
   - title: Search
     url: /
+  - title: Surprise me
+    url: /random
   - title: Tags
     url: /tags
   - title: LinkedIn
     url: /linkedin
   - title: Tech Diary
     url: /td
-  - title: Surprise me
-    url: /random
   - title: About
     url: /about
 
