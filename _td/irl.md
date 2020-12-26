@@ -2,13 +2,19 @@
 layout: post
 no-render-title: true
 title: In Real Life Diary
+permalink: /irl
+redirect_from:
+    /td/irl
+    /in-real-life
+
 ---
 
-I started writing a technical blog to help me remember the many things I explore. One day, I realized I've got a real life too. Here's a place I can remember the many things I explore.
+I started writing a technical blog to help me remember the many things I explore. One day, I realized I've got a real life too. Here's a place I can remember the many things I explore IRL (In real Life)
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/irl.md)_
 
 <!-- prettier-ignore-start -->
+
 
 <!-- vim-markdown-toc GFM -->
 
