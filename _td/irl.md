@@ -284,28 +284,24 @@ The best part of corona virus, is the isolation made me feel good about getting 
 
 I've wanted a hot tub for 20 years, but it was so hard. Turns out you can buy an inflatable one on Amazon. Trivial to use, and works great. Just plug it in to 110v power, fill with water, and wait for it to heat up. 2 days later it's ready to go, and from that point forward it stays hot.
 
-https://www.amazon.com/gp/product/B00NB3P98G/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-
 You also need bromine to keep the nasties out and ph up to keep the bromine working.
-
-https://www.amazon.com/gp/product/B00B9CHBK0/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
 I also got these chairs which Amelia likes, but are not to useful for a grown up
 
-https://www.amazon.com/gp/product/B07H8QX8C1/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
-
 And don't forget pool lights - I'm still figuring that out.
+
+{%include amazon.html asin="B00NB3P98G;B00B9CHBK0;B07H8QX8C1" %}
 
 ### Propane Fire Pit
 
 Who doesn't like fire, just plug in the propane, turn the dial, and you've got a fire ready to go for enjoyment or some smores
 
-https://www.amazon.com/gp/product/B07ZVS4YPN/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+{%include amazon.html asin="B07ZVS4YPN" %}
 
-Add the fir pit glass and cover and you're good to go.
+Add the fire pit glass and cover and you're good to go.
 
 ### Canopies
 
 A simple pop up canopy, up in 10 minutes, and provides rain protection. Not the sturdiest in a wind storm, but such is life.
 
-https://www.amazon.com/gp/product/B01AQILB3A/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+{%include amazon.html asin="B01AQILB3A" %}
