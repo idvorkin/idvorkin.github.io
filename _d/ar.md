@@ -19,7 +19,7 @@ My notes on AR
     - [AR vs VR vs MR vs IRL](#ar-vs-vr-vs-mr-vs-irl)
     - [AR Cloud](#ar-cloud)
     - [SLAM - Simultanious Location and Mapping](#slam---simultanious-location-and-mapping)
-    - [IMU -  Inertial Measurement Unit](#imu----inertial-measurement-unit)
+    - [IMU - Inertial Measurement Unit](#imu---inertial-measurement-unit)
     - [VIO - Visual Inertial Odometry](#vio---visual-inertial-odometry)
     - [6 Dimensions X,Y,Z, Yaw, Pitch, Roll](#6-dimensions-xyz-yaw-pitch-roll)
     - [Multi Player AR](#multi-player-ar)
@@ -47,8 +47,8 @@ My notes on AR
     - [Training](#training)
     - [Tele medicine](#tele-medicine)
 - [Philosophy](#philosophy)
-    - [The Matrix  - Simulation](#the-matrix----simulation)
-    - [Why is IRL better then  VR](#why-is-irl-better-then--vr)
+    - [The Matrix - Simulation](#the-matrix---simulation)
+    - [Why is IRL better then VR](#why-is-irl-better-then-vr)
 - [Tactile Hardware](#tactile-hardware)
 - [Other Resources](#other-resources)
 
@@ -56,6 +56,8 @@ My notes on AR
 <!-- prettier-ignore-end -->
 
 ## Concepts
+
+VAS3K, as usual, has an awesome post on [AR](https://vas3k.com/blog/augmented_reality/).
 
 ### AR vs VR vs MR vs IRL
 

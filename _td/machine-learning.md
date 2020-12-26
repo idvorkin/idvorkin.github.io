@@ -96,6 +96,8 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
+I highly recommend: [Machine learning is like sex in high school](https://vas3k.com/blog/machine_learning/)
+
 ## Hierarchy of Abstraction in the ML space
 
 Before we get started, the term "model" is very overloaded, lets use these definitions.
@@ -421,7 +423,6 @@ Good explanation:
 
 ## What should I read to learn more
 
-- [Machine learning is like sex in high school](https://vas3k.com/blog/machine_learning/)
 - [Google's rules of ML](https://developers.google.com/machine-learning/rules-of-ml/) and [summary](https://towardsml.com/2018/08/06/how-great-products-are-made-rules-of-machine-learning-by-google-a-summary/)
 - [Hands on machine learning with SciKit-Learn and tensor flow](https://www.amazon.com//dp/1491962291)
 - Neural network easier to grock [lectures](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
