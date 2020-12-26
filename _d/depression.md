@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The opposite of depression is not happiness, it's vitality"
+title: "The opposite of depression is vitality"
 comments: true
 inprogress: true
 tags:
