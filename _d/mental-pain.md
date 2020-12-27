@@ -8,6 +8,7 @@ permalink: mental-pain
 Pain is in the brain as they say, which is especially true for mental pains. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [The point of pain](#the-point-of-pain)
@@ -25,11 +26,11 @@ Pain is in the brain as they say, which is especially true for mental pains. The
     - [Other - From you, to you](#other---from-you-to-you)
         - [Control: Controlling, loss of autonomy](#control-controlling-loss-of-autonomy)
         - [Doubt: Abandonment, Taking fore granted](#doubt-abandonment-taking-fore-granted)
-        - [Disappointment: Guilt/Shame/Embarrassed, Unfair](#disappointment-guiltshameembarrassed-unfair)
+        - [Disappointment: Guilt/shame/Embarrassed, Unfair](#disappointment-guiltshameembarrassed-unfair)
     - [Process - In your life](#process---in-your-life)
-        - [Control: Anxiety](#control-anxiety-1)
+        - [Control: anxiety](#control-anxiety-1)
         - [Doubt: Mistrust and Meaninglessness](#doubt-mistrust-and-meaninglessness)
-        - [Disappointment: Guilt/Shame/Embarrassed, Unfair](#disappointment-guiltshameembarrassed-unfair-1)
+        - [Disappointment: Guilt/shame/Embarrassed, Unfair](#disappointment-guiltshameembarrassed-unfair-1)
 - [Fueling the fire, adding meaning](#fueling-the-fire-adding-meaning)
     - [Meaning: From Pain to Suffering](#meaning-from-pain-to-suffering)
     - [Meaning squared: From Suffering to Misery](#meaning-squared-from-suffering-to-misery)
@@ -48,7 +49,7 @@ Pain is in the brain as they say, which is especially true for mental pains. The
 
 ## The point of pain
 
-## Pain vs Suffering
+## [Pain vs Suffering](/mental-pain)
 
 ## Phantom vs Real Pain
 
@@ -64,9 +65,7 @@ Pain is in the brain as they say, which is especially true for mental pains. The
 
 ### Self
 
-#### Control: Anxiety
-
-It's all about the [anxiety](/anxiety)
+#### Control: [Anxiety](/anxiety)
 
 #### Doubt: Self Doubt
 
@@ -78,19 +77,15 @@ It's all about the [anxiety](/anxiety)
 
 #### Doubt: Abandonment, Taking fore granted
 
-#### Disappointment: Guilt/Shame/Embarrassed, Unfair
-
-See [shame](/shame) and guilt
+#### Disappointment: Guilt/[shame](/shame)/Embarrassed, Unfair
 
 ### Process - In your life
 
-#### Control: Anxiety
+#### Control: [anxiety](/anxiety)
 
 #### Doubt: Mistrust and Meaninglessness
 
-#### Disappointment: Guilt/Shame/Embarrassed, Unfair
-
-See [shame](/shame)
+#### Disappointment: Guilt/[shame](/shame)/Embarrassed, Unfair
 
 ## Fueling the fire, adding meaning
 
