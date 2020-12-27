@@ -61,6 +61,7 @@
     "/monsters": "/mind-monsters",
     "/mortality": "/death",
     "/mr": "/ar",
+    "/nlp": "/td/sentiment_analysis.md",
     "/nonjudgment": "/curious",
     "/objective": "/goals",
     "/okr": "/goals",
@@ -642,6 +643,7 @@
       "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity.\n\n",
       "file_path": "_site/d/resistance.html",
       "outgoing_links": [
+        "/mental-pain",
         "/addiction",
         "/magic",
         "/habits",
@@ -656,7 +658,7 @@
         "/timeoff"
       ],
       "redirect_url": "",
-      "doc_size": 14976
+      "doc_size": 14930
     },
     "/d/time-off-12-2020": {
       "py/object": "__main__.Page",
@@ -735,6 +737,7 @@
         "/7-habits",
         "/getting-to-yes-with-yourself",
         "/voices",
+        "/gtd",
         "/wlb",
         "/shame",
         "/imposter",
@@ -743,7 +746,7 @@
       ],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 17718
+      "doc_size": 17708
     },
     "/dip": {
       "py/object": "__main__.Page",
@@ -858,7 +861,7 @@
         "/timeoff"
       ],
       "redirect_url": "",
-      "doc_size": 17285
+      "doc_size": 17318
     },
     "/getting-to-yes-with-yourself": {
       "py/object": "__main__.Page",
@@ -899,6 +902,7 @@
       "incoming_links": [
         "/books-that-defined-me",
         "/d/resistance",
+        "/depression",
         "/frog",
         "/psychic-weight"
       ],
@@ -1077,16 +1081,25 @@
       "title": "THE THOUGHTS THAT PAIN US",
       "description": "Pain is in the brain as they say, which is especially true for mental pains. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.\n\n",
       "file_path": "_site/mental-pain.html",
-      "outgoing_links": ["/anxiety", "/shame", "/shame", "/pride"],
+      "outgoing_links": [
+        "/mental-pain",
+        "/anxiety",
+        "/shame",
+        "/anxiety",
+        "/shame",
+        "/pride"
+      ],
       "incoming_links": [
         "/curious",
+        "/d/resistance",
         "/d/time-off-12-2020",
+        "/mental-pain",
         "/mind-monsters",
         "/psychic-weight",
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 14255
+      "doc_size": 14225
     },
     "/micro-economics": {
       "py/object": "__main__.Page",
@@ -1133,10 +1146,10 @@
       "title": "MACHINE LEARNING FOR REGULAR PROGRAMMERS.",
       "description": "ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).\n\n",
       "file_path": "_site/ml.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/nlp"],
       "incoming_links": ["/td/stats", "/the-manager-book"],
       "redirect_url": "",
-      "doc_size": 38650
+      "doc_size": 38802
     },
     "/moments": {
       "py/object": "__main__.Page",
@@ -1627,12 +1640,12 @@
       "py/object": "__main__.Page",
       "url": "/td/sentiment_analysis",
       "title": "SENTIMENT ANALYSIS AND NLP",
-      "description": "Copied from my GitHub techdiary\n\n",
+      "description": "My explorations of NLP, mostly using my corpus of journal entries and other writing. My intent is two fold 1) learning about NLP and sentiment analysis 2) finding latent meaning in my writing, ideally to help me better understand my own psychological processes. I’ve had much more success with the former then the latter\n\n",
       "file_path": "_site/td/sentiment_analysis.html",
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14854
+      "doc_size": 15360
     },
     "/td/sqlalchemy-redshift": {
       "py/object": "__main__.Page",
