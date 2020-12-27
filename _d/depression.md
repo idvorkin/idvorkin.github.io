@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The opposite of depression is vitality"
+title: "Depression is the opposite of vitality"
 comments: true
 inprogress: true
 tags:
@@ -20,7 +20,8 @@ Unless you've experienced depression, you can't understand it. Even having exper
 
 <!-- prettier-ignore-start -->
 
-<!-- prettier-ignore-end -->
+
+
 
 <!-- vim-markdown-toc GFM -->
 
@@ -34,6 +35,7 @@ Unless you've experienced depression, you can't understand it. Even having exper
 - [Stats](#stats)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ### Depression, Grief and Sadness
 
@@ -41,15 +43,14 @@ It's a strange poverty of the English language, and indeed of many other languag
 
 Grief is explicitly reactive. If you have a loss and you feel incredibly unhappy, and then, six months later, you are still deeply sad, but you're functioning a little better, it's probably grief, and it will probably ultimately resolve itself in some measure. If you experience a catastrophic loss, and you feel terrible, and six months later you can barely function at all, then it's probably a depression that was triggered by the catastrophic circumstances. The trajectory tells us a great deal. People think of depression as being just sadness. It's much, much too much sadness, much too much grief at far too slight a cause.
 
-### Anxiety, Depression's cruel enforcer
+### [Anxiety](/anxiety), Depression's cruel enforcer
 
-In it's weaker forms, anxiety is the difference between reality and expectations. But as it becomes fiercer, I'll quote Solomon again:
+In it's weaker forms, [anxiety](/anxiety) is the difference between reality and expectations. But as it becomes fiercer, I'll quote Solomon again:
 
 _And then the anxiety set in. If you told me that I'd have to be depressed for the next month, I would say, "As long I know it'll be over in November, I can do it." But if you said to me, "You have to have acute anxiety for the next month," I would rather slit my wrist than go through it. It was the feeling all the time like that feeling you have if you're walking and you slip or trip and the ground is rushing up at you, but instead of lasting half a second, the way that does, it lasted for six months. It's a sensation of being afraid all the time but not even knowing what it is that you're afraid of. And it was at that point that I began to think that it was just too painful to be alive, and that the only reason not to kill oneself was so as not to hurt other people._
 
 I can't describe my anxiety in a way that conveys the feeling. All I can say is there's a constant loop playing in my head saying _"Oh my god, Oh my god, oh my god"_
 
-My notes on [anxeity](/anxiety)
 
 ### My own experiences with depression and anxiety
 
