@@ -16,26 +16,26 @@ One of my dreams is to guide others navigate through this, which I'll do through
 <!-- vim-markdown-toc GFM -->
 
 - [You are dying](#you-are-dying)
-    - [So strive for Happy](#so-strive-for-happy)
+    - [So strive for happiness](#so-strive-for-happiness)
     - [Fight the resistance](#fight-the-resistance)
     - [Avoid Addiction](#avoid-addiction)
 - [Discover your authentic self](#discover-your-authentic-self)
     - [Find your roles](#find-your-roles)
     - [Write your Eulogy](#write-your-eulogy)
-    - [Set your goals](#set-your-goals)
-    - [Enjoy your Hobbies](#enjoy-your-hobbies)
+    - [Set your - goals](#set-your---goals)
+    - [Enjoy your hobbies](#enjoy-your-hobbies)
 - [Maximize your sanity](#maximize-your-sanity)
-    - [Handle Pride](#handle-pride)
+    - [Handle pride](#handle-pride)
     - [Inspect your idle loop](#inspect-your-idle-loop)
-    - [Be wary of the mind monsters](#be-wary-of-the-mind-monsters)
+    - [Be wary of  mind monsters](#be-wary-of--mind-monsters)
     - [Stay in your circle of influence](#stay-in-your-circle-of-influence)
     - [Cut psychic weight](#cut-psychic-weight)
     - [Emotional Intelligence](#emotional-intelligence)
-    - [Mindfulness Training](#mindfulness-training)
-    - [Take Time off](#take-time-off)
+    - [Mindfulness training](#mindfulness-training)
+    - [Take time off](#take-time-off)
 - [Invest in your health](#invest-in-your-health)
     - [Physical Health](#physical-health)
-    - [Financial Health](#financial-health)
+    - [Financial health](#financial-health)
     - [Emotional Health](#emotional-health)
     - [Cognitive Health](#cognitive-health)
         - [Making hard decisions](#making-hard-decisions)
@@ -55,22 +55,15 @@ This series of guides is the basis of mortality software helps you understand wh
 
 The first step for mortality software is helping you figure out the person you want to be and your values.
 
-## You are dying
+## [You are dying](/death)
 
-- [On Being Mortal](/death)
+### So strive for [happiness](/happy)
 
-### So strive for Happy
+### Fight the [resistance](/resistance)
 
-- [Happiness 101](/happy)
-
-### Fight the resistance
-
-- [Resistance](/resistance)
 - [Eat that frog](/frog)
 
-### Avoid Addiction
-
-- [Addiction](/_d/addiction.md)
+### Avoid [Addiction](/_d/addiction.md)
 
 ## Discover your authentic self
 
@@ -82,35 +75,24 @@ Before tackling your eulogy, and your goals, you need to identify your many role
 
 - [My Eulogy](/eulogy)
 
-### Set your goals
+### Set your - [goals](/goals)
 
-- [Goal Settings](/goals)
-
-### Enjoy your Hobbies
+### Enjoy your [hobbies](/hobby)
 
 - [My hobby - magic](/magic)
 - [My other joy - biking](/biking)
-- [What makes a good hobby](/hobby)
 
 ## Maximize your sanity
 
-### Handle Pride
+### Handle [pride](/pride)
 
-- [Pride](/pride)
+### Inspect your [idle loop](/idle-loop)
 
-### Inspect your idle loop
-
-- [Your Idle loop](/idle-loop)
-
-### Be wary of the mind monsters
-
-- [Mind Monsters](/monsters)
+### Be wary of [mind monsters](/monsters)
 
 ### Stay in your circle of influence
 
-### Cut psychic weight
-
-- [Psychic Weight](/psychic-weight)
+### Cut [psychic weight](/psychic-weight)
 
 ### Emotional Intelligence
 
@@ -118,14 +100,11 @@ Before tackling your eulogy, and your goals, you need to identify your many role
 - What makes a leader
 - [Mind Monsters](/monsters)
 
-### Mindfulness Training
+### [Mindfulness training](/search-inside-yourself)
 
-- [Meditation](/search-inside-yourself)
 - Gratefulness and Joy
 
-### Take Time off
-
-- [How to spend time off](/timeoff)
+### Take [time off](/timeoff)
 
 ## Invest in your health
 
@@ -137,9 +116,7 @@ Your health is your most valuable asset. It's so easy to ignore your
 - [Using tech gadgets to help](/tech-health-toys)
 - [Real world products I use](/irl#physical-health)
 
-### Financial Health
-
-- [Savings and Taxes](/money)
+### [Financial health](/money)
 
 ### Emotional Health
 
@@ -147,15 +124,11 @@ Your health is your most valuable asset. It's so easy to ignore your
 
 ### Cognitive Health
 
-- [Thsi blog](/about): Evergreen notes and sucking until you don't.
+- [This blog](/about): Evergreen notes and sucking until you don't.
 
-#### Making hard decisions
+#### Making [hard decisions](/decide)
 
-- [Decisive](/decide)
-
-#### Being coached
-
-- [Getting Coached](/coach)
+#### Being [coached](/coach)
 
 ## Life Events
 
@@ -165,9 +138,7 @@ Major Life events have their own module
 
 Great video on keeping [the cores spinning in unexpected circumstances](https://youtu.be/snAhsXyO3Ck).
 
-### Changing Jobs
-
-- [Changing Jobs](https://idvork.in/tags/#job-hunt)
+### [Changing Jobs](https://idvork.in/tags/#job-hunt)
 
 ### Having a kid
 
@@ -177,5 +148,6 @@ Great video on keeping [the cores spinning in unexpected circumstances](https://
 
 - [Depression](/depression)
 - [Anxiety](/anxiety)
+- [Mental pain](/mental-pain)
 
 ### Cancer
