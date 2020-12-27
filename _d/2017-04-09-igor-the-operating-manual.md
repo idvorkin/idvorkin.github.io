@@ -37,21 +37,21 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Cognitive](#cognitive)
         - [Think it through, write it out, read it again and again](#think-it-through-write-it-out-read-it-again-and-again)
     - [Identity](#identity)
-- [Hobbies](#hobbies)
+    - [Hobbies](#hobbies)
     - [Biking](#biking)
     - [Magic](#magic)
-    - [Jugging](#jugging)
+    - [Juggling](#juggling)
 - [Family](#family)
     - [Husband](#husband)
     - [Father](#father)
 - [Triggers and Mental Quick Sand](#triggers-and-mental-quick-sand)
-    - [Stress and Anxiety](#stress-and-anxiety)
+    - [Stress and anxiety](#stress-and-anxiety)
     - [Corona Virus](#corona-virus)
     - [Raising kids](#raising-kids)
-        - [Physical activity](#physical-activity)
+        - [Physical health](#physical-health)
         - [Not spending enough time with them](#not-spending-enough-time-with-them)
         - [Diet and Weight](#diet-and-weight)
-    - [Financial Security and Retirement](#financial-security-and-retirement)
+    - [Financial Security and retirement](#financial-security-and-retirement)
         - [The point of money](#the-point-of-money)
         - [What would I do for less money](#what-would-i-do-for-less-money)
         - [Making more vs spending more](#making-more-vs-spending-more)
@@ -116,13 +116,9 @@ Health - physical, emotional, cognitive and spiritual, is easy to understand but
 
 I spend lots of time thinking about how I should be working my habits, but often end up not doing them. In this case, the key is to stop moaning and restart 'em.
 
-### Physical
+### [Physical](/physical-health)
 
-My summary of [physical health habits](/physical-health)
-
-### Emotional
-
-My summary of [emotional health habits](/emotional-health)
+### [Emotional](/emotional-health)
 
 ### Cognitive
 
@@ -130,19 +126,15 @@ My summary of [emotional health habits](/emotional-health)
 
 ### Identity
 
-## Hobbies
+### [Hobbies](/hobby)
 
 I've already got enough hobbies - biking, magic, juggling. I get my biking fix no problem.
 
-### Biking
+### [Biking](/bike)
 
-[Biking](/bike)
+### [Magic](/magic)
 
-### Magic
-
-[Magic](/magic)
-
-### Jugging
+### [Juggling](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
 
 ## Family
 
@@ -154,9 +146,7 @@ I've already got enough hobbies - biking, magic, juggling. I get my biking fix n
 
 Like most folks I have triggers and mental quick sand which I can get trapped in. Here's some of mine, and things I need to remember. This also reminds me of the [voices in my head](/voices)
 
-### Stress and Anxiety
-
-See [anxiety](/anxiety)
+### Stress and [anxiety](/anxiety)
 
 ### Corona Virus
 
@@ -164,17 +154,13 @@ See [anxiety](/anxiety)
 
 ### Raising kids
 
-#### Physical activity
-
-[Physical health](/physical-health)
+#### [Physical health](/physical-health)
 
 #### Not spending enough time with them
 
 #### Diet and Weight
 
-### Financial Security and Retirement
-
-My notes on [money](/money).
+### [Financial Security and retirement](/money)
 
 #### The point of money
 
