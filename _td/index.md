@@ -4,21 +4,22 @@ no-render-title: true
 title: Igor's Technical Diary
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
+A collection of my research and technical explorations. Hopefully you find it useful, at a minimum I did.
 
-Below is a collection of my research and technical explorations. Hopefully you find it useful, at a minimum I did.
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
 
 <!--
 Not using prettier ignore gaurds as vimtoc gets confused here.
 -->
 <!-- vim-markdown-toc GFM -->
 
-- [Design](#design)
-- [Cloud First Applications](#cloud-first-applications)
+- [Design and Architecture](#design-and-architecture)
+- [Cloud first applications](#cloud-first-applications)
 - [Data Systems](#data-systems)
 - [Security](#security)
-- [ML](#ml)
-- [Advertising](#advertising)
+- [Machine Learning](#machine-learning)
+- [Natural Language Processing](#natural-language-processing)
+- [Advertising systems](#advertising-systems)
 - [Statistics](#statistics)
 - [Other](#other)
 - [Minor Tips](#minor-tips)
@@ -40,7 +41,7 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
   - [Pup - regexp For HTML](#pup---regexp-for-html)
 - [Cool shell tools](#cool-shell-tools)
 - [Process Monitoring](#process-monitoring)
-- [Natural Language Processing](#natural-language-processing)
+- [Natural Language Processing](#natural-language-processing-1)
 - [Azure One Liners](#azure-one-liners)
   - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
 - [git](#git)
@@ -83,33 +84,21 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 
 <!-- vim-markdown-toc -->
 
-### Design
+### [Design and Architecture](/td/design)
 
-- [Design and Architecture](design)
+### [Cloud first applications](/td/cloud-first-applications)
 
-### Cloud First Applications
+### [Data Systems](/td/data-systems)
 
-- [Cloud first applications](cloud-first-applications)
+### [Security](/td/better-security-design)
 
-### Data Systems
+### [Machine Learning](/td/machine-learning)
 
-- [Data Systems](data-systems)
+### [Natural Language Processing](/td/machine-learning)
 
-### Security
+### [Advertising systems](/td/advertising)
 
-- [Security](better-security-design)
-
-### ML
-
-- [Machine Learning](machine-learning)
-
-### Advertising
-
-- [Advertising systems](advertising)
-
-### Statistics
-
-- [Statistics](stats)
+### [Statistics](/td/stats)
 
 ### Other
 
@@ -323,7 +312,6 @@ function gstatdaterange() {
     git diff --stat `echo $git_output | tail -n 1` `echo $git_output | head -n 1` |  sort -k2 -t'|' -n -r
 }
 ```
-
 
 #### TUI merge - fac
 
