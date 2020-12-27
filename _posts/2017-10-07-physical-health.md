@@ -3,6 +3,8 @@ layout: post
 title: "Physical Health"
 tags:
   - health
+redirect-from:
+  - /exercise
 ---
 
 Physical health is the basis of energy, and thus the source of success. Physical health is about weight, fitness and sleep.
