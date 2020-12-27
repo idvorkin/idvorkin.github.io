@@ -13,7 +13,7 @@ Physical health is the basis of energy, and thus the source of success. Physical
 
 **Weight is essential** because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases.
 
-Weight is "calories in" minus "calories out". Calories in is dominated by diet with a minor contribution from exercise. A great way to see this is comparing what you eat to physical Activity. A box of French fries adds 400 calories to your day, but running for 30 minutes only burns 300 calories.
+Weight is "calories in" minus "calories out". Calories in is dominated by [diet](/diet) with a minor contribution from exercise. A great way to see this is comparing what you eat to physical Activity. A box of French fries adds 400 calories to your day, but running for 30 minutes only burns 300 calories.
 
 I recommend setting a weight goal, and checking that goal is constantly being met. It's easy for your weight to gradually creep up, and keep creeping up. Thus, I strongly recommend committing to not letting your weight exceed your goal for too long.
 
