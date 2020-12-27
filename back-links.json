@@ -44,6 +44,7 @@
     "/happiness": "/happy",
     "/idle-loop": "/idle",
     "/imposter": "/insecure",
+    "/in-real-life": "/irl",
     "/insecurity": "/insecure",
     "/joy": "/happy",
     "/machine-learning": "/ml",
@@ -121,7 +122,8 @@
         "/books-that-defined-me",
         "/d/resistance",
         "/depression",
-        "/eulogy"
+        "/eulogy",
+        "/psychic-weight"
       ],
       "redirect_url": "",
       "doc_size": 17895
@@ -614,6 +616,7 @@
         "/d/2017-04-09-igor-the-operating-manual",
         "/d/resistance",
         "/idle",
+        "/psychic-weight",
         "/the-manager-book"
       ],
       "redirect_url": "",
@@ -717,10 +720,11 @@
     "/depression": {
       "py/object": "__main__.Page",
       "url": "/depression",
-      "title": "THE OPPOSITE OF DEPRESSION IS VITALITY",
+      "title": "DEPRESSION IS THE OPPOSITE OF VITALITY",
       "description": "When you’re depressed you don’t think you’ve put on a gray veil - seeing the world through the haze of a bad mood. You think that a veil has been taken away. The veil of happiness, and you believe you’re seeing the world as it truly is: alone, petrifying, and painful. But the truth lies. The depressed say “No one loves me.” And you say, “I love you, your wife loves you, your mother loves you.” and the depressed ignore you. The depressed will continue, “None of this matters, we’re just going to die in the end.” To which you have to say, “That’s true, but I think right now should focus on what to have for breakfast.”\n\n",
       "file_path": "_site/depression.html",
       "outgoing_links": [
+        "/anxiety",
         "/anxiety",
         "/insomnia",
         "/physical-health",
@@ -737,7 +741,7 @@
       ],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 17724
+      "doc_size": 17718
     },
     "/dip": {
       "py/object": "__main__.Page",
@@ -890,7 +894,12 @@
         "/dip",
         "/outsourcing"
       ],
-      "incoming_links": ["/books-that-defined-me", "/d/resistance", "/frog"],
+      "incoming_links": [
+        "/books-that-defined-me",
+        "/d/resistance",
+        "/frog",
+        "/psychic-weight"
+      ],
       "redirect_url": "",
       "doc_size": 11975
     },
@@ -1071,6 +1080,7 @@
         "/curious",
         "/d/time-off-12-2020",
         "/mind-monsters",
+        "/psychic-weight",
         "/shame"
       ],
       "redirect_url": "",
@@ -1200,7 +1210,7 @@
       "title": "PHYSICAL HEALTH",
       "description": "Physical health is the basis of energy, and thus the source of success. Physical health is about weight, fitness and sleep.\n\n",
       "file_path": "_site/physical-health.html",
-      "outgoing_links": ["/tech-health-toys", "/td/irl#physical-health"],
+      "outgoing_links": ["/tech-health-toys", "/irl#physical-health"],
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
@@ -1208,7 +1218,7 @@
         "/tech-health-toys"
       ],
       "redirect_url": "",
-      "doc_size": 14768
+      "doc_size": 14765
     },
     "/pride": {
       "py/object": "__main__.Page",
@@ -1242,16 +1252,22 @@
         "/resistance",
         "/mind-monsters",
         "/idle-loop",
+        "/shame",
         "/pride",
         "/idle-loop",
         "/death",
+        "/mental-pain",
         "/frog",
+        "/gtd",
+        "/siy",
         "/pride",
+        "/7-habits",
+        "/habits",
         "/grandmother"
       ],
       "incoming_links": ["/depression", "/gtd"],
       "redirect_url": "",
-      "doc_size": 15750
+      "doc_size": 15792
     },
     "/quip": {
       "py/object": "__main__.Page",
@@ -1346,6 +1362,7 @@
         "/emotional-health",
         "/eulogy",
         "/mind-monsters",
+        "/psychic-weight",
         "/td/time-off-3-2020"
       ],
       "redirect_url": "",
