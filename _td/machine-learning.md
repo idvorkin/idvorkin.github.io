@@ -21,6 +21,8 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - I can make some PoC projects to test my understanding.
 - I can keep track of the ML concepts I've learned and cross check them with a PhD wielding ML guru.
 
+I highly recommend: [Machine learning is like sex in high school](https://vas3k.com/blog/machine_learning/)
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
@@ -79,6 +81,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Measuring within the wider business context](#measuring-within-the-wider-business-context)
     - [Guard rails for inputs versus training data](#guard-rails-for-inputs-versus-training-data)
 - [Natural Language Processing (NLP)](#natural-language-processing-nlp)
+    - [My deep dive into NLP](#my-deep-dive-into-nlp)
     - [Bert](#bert)
     - [Word Embedding](#word-embedding)
 - [Misc Topics](#misc-topics)
@@ -95,8 +98,6 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-I highly recommend: [Machine learning is like sex in high school](https://vas3k.com/blog/machine_learning/)
 
 ## Hierarchy of Abstraction in the ML space
 
@@ -356,6 +357,8 @@ _Thanks Dan Massey for your recommendation to discuss these topics_
 ### Guard rails for inputs versus training data
 
 ## Natural Language Processing (NLP)
+
+### My deep dive into [NLP](/nlp)
 
 ### Bert
 
