@@ -62,7 +62,7 @@ For me, it's long enough to work up a sweat, but short enough to not eat up my d
 
 #### My body part really hurts, what should I do?
 
-I've had lots of injuries, here's my various [braces](/td/irl#physical-health)
+I've had lots of injuries, here's my various [braces](/irl#physical-health)
 
 #### Should I get a trainer?
 
