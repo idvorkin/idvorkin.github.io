@@ -61,7 +61,6 @@
     "/monsters": "/mind-monsters",
     "/mortality": "/death",
     "/mr": "/ar",
-    "/nlp": "/td/sentiment_analysis.md",
     "/nonjudgment": "/curious",
     "/objective": "/goals",
     "/okr": "/goals",
@@ -1204,6 +1203,17 @@
       "redirect_url": "",
       "doc_size": 13516
     },
+    "/nlp": {
+      "py/object": "__main__.Page",
+      "url": "/nlp",
+      "title": "SENTIMENT ANALYSIS AND NLP",
+      "description": "My explorations of NLP, mostly using my corpus of journal entries and other writing. My intent is two fold 1) learning about NLP and sentiment analysis 2) finding latent meaning in my writing, ideally to help me better understand my own psychological processes. I’ve had much more success with the former then the latter\n\n",
+      "file_path": "_site/nlp.html",
+      "outgoing_links": [],
+      "incoming_links": ["/ml"],
+      "redirect_url": "",
+      "doc_size": 15324
+    },
     "/parkinson": {
       "py/object": "__main__.Page",
       "url": "/parkinson",
@@ -1635,17 +1645,6 @@
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 9840
-    },
-    "/td/sentiment_analysis": {
-      "py/object": "__main__.Page",
-      "url": "/td/sentiment_analysis",
-      "title": "SENTIMENT ANALYSIS AND NLP",
-      "description": "My explorations of NLP, mostly using my corpus of journal entries and other writing. My intent is two fold 1) learning about NLP and sentiment analysis 2) finding latent meaning in my writing, ideally to help me better understand my own psychological processes. I’ve had much more success with the former then the latter\n\n",
-      "file_path": "_site/td/sentiment_analysis.html",
-      "outgoing_links": [],
-      "incoming_links": [],
-      "redirect_url": "",
-      "doc_size": 15360
     },
     "/td/sqlalchemy-redshift": {
       "py/object": "__main__.Page",
