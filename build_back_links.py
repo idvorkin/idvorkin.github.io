@@ -57,6 +57,8 @@ class idvorkin_github_io_config:
             return False
         if path.startswith("/tags#"):
             return False
+        if path.startswith("/random"):
+            return False
         return path.startswith("/")
 
     def collection_dirs(self):
