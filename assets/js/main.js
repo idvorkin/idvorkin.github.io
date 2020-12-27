@@ -142,7 +142,7 @@ function JsTemplateReplace() {
 
 function ProcessBackLinks(backLinks) {
   var my_path = new URL(document.URL).pathname;
-  var backlinks = backLinks["url_info"][my_path].incoming_links;
+  var backlinks = backLinks["url_info"][my_path]?.incoming_links;
   if (!backlinks) {
     console.log("No backlinks for the page");
     return;
