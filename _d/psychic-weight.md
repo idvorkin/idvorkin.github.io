@@ -17,7 +17,7 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 
 - [Types of psychic weight](#types-of-psychic-weight)
     - [Aversion and the resistance](#aversion-and-the-resistance)
-    - [Mind Monsters](#mind-monsters)
+    - [Mind monsters](#mind-monsters)
     - [Triggers](#triggers)
     - [Open decisions](#open-decisions)
     - [Open loops](#open-loops)
@@ -27,9 +27,9 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
     - [Beating yourself up](#beating-yourself-up)
     - [Grasping](#grasping)
 - [Antidotes](#antidotes)
-    - [Separate Pain and suffering](#separate-pain-and-suffering)
+    - [Separate pain from suffering](#separate-pain-from-suffering)
     - [Eat the frog](#eat-the-frog)
-    - [GTD (Getting Things Done)](#gtd-getting-things-done)
+    - [GTD](#gtd)
     - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
     - [Talk it through](#talk-it-through)
     - [Meditation](#meditation)
@@ -55,12 +55,9 @@ Aversion is the desire to not face something. This often results in procrastinat
 
 Personifying emotions can be helpful, and aversion (and procrastination) are personified by [the resistance](/resistance).
 
-### Mind Monsters
+### [Mind monsters](/mind-monsters)
 
-Say you have a prize horse that you're training to win the Kentucky derby. Do you feed this horse ketchup and peanut butter? Of course not - you need this horse to win so you feed it the highest quality oats you can find. Now, isn't your mind far more important than a race horse? Surely you shouldn't be focusing on silly things like anger and ego, these unhelpful thoughts are mind monsters.
-
-[Mind monsters](/mind-monsters)
-[Idle Loop](/idle-loop)
+Say you have a prize horse that you're training to win the Kentucky derby. Do you feed this horse ketchup and peanut butter? Of course not - you need this horse to win so you feed it the highest quality oats you can find. Now, isn't your mind far more important than a race horse? Surely you shouldn't be focusing on silly things like anger and ego, these unhelpful thoughts are mind monsters. Make sure there are no mind monsters in your  [Idle Loop](/idle-loop)
 
 ### Triggers
 
@@ -76,15 +73,11 @@ Analogies:
 
 ### Open loops
 
-### Shame
+### [Shame](/shame)
 
-### Pride
+### [Pride](/pride)
 
-[Pride](/pride)
-
-### Ruminating a parasitic idle loop
-
-[Ruminating](/idle-loop)
+### Ruminating a parasitic [idle loop](/idle-loop)
 
 ### Beating yourself up
 
@@ -101,19 +94,17 @@ From the prophet:
 
 ## Antidotes
 
-### Separate Pain and suffering
+### Separate [pain from suffering](/mental-pain)
 
-### Eat the frog
+### [Eat the frog](/frog)
 
-[Eat the frog](/frog)
-
-### GTD (Getting Things Done)
+### [GTD](/gtd)
 
 ### CI/CC (Circle of Influence, Circle of Concern)
 
 ### Talk it through
 
-### Meditation
+### [Meditation](/siy)
 
 ### This too shall pass
 
@@ -137,12 +128,10 @@ I used to be very insecure about money, I couldn't buy a 1/2 gallon of milk beca
 
 If you don't do small things, they get bigger and bigger and bigger.
 
-### Examples of Pride
-
-See [pride](/pride)
+### Examples of [Pride](/pride)
 
 ## Useful thoughts.
 
-As usual, the 7 habits helps
-Habits make psychic weight get handled.
-[Grandmother mind](/grandmother)
+* As usual, the [7 habits](/7-habits) helps.
+* [Habits](/habits) keep psychic weight get handled.
+* [Grandmother mind](/grandmother)
