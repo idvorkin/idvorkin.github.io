@@ -27,7 +27,7 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
     - [Doom scrolling](#doom-scrolling)
     - [TikTok](#tiktok)
     - [Checking e-mail or notifications](#checking-e-mail-or-notifications)
-    - [Mind monsters](#mind-monsters)
+    - [Mind monsters is a perfect articulation for negative emotions](#mind-monsters-is-a-perfect-articulation-for-negative-emotions)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -37,7 +37,7 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 ## Regenerative loops
 
-### Mindfulness
+### [Mindfulness](/siy)
 
 ### Positive thinking
 
@@ -47,20 +47,16 @@ I have seen two categories 1) self help books, but they can be too charging up, 
 
 ### Gratefulness thinking
 
-### Accessible Habits
+### Accessible [Habits](/habits)
 
-- [Habits](/habits)
 - [Magic](/magic)
-- Meditating
-- Breathign
+- [Meditating](/siy)
 
 ## Parasitic loops
 
-### Psychic weight
+### [Psychic weight](/psychic-weight)
 
-### Addiction
-
-[Addiction](/addiction)
+### [Addiction](/addiction)
 
 ### Ruminating
 
@@ -70,8 +66,6 @@ I have seen two categories 1) self help books, but they can be too charging up, 
 
 ### Checking e-mail or notifications
 
-### Mind monsters
-
-[Mind monsters](/mind-monsters) is a perfect articulation for negative emotions
+### [Mind monsters](/mind-monsters) is a perfect articulation for negative emotions
 
 ## Other Resources
