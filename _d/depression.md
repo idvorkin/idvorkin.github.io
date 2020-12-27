@@ -35,8 +35,6 @@ Unless you've experienced depression, you can't understand it. Even having exper
 - [Stats](#stats)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
 ### Depression, Grief and Sadness
 
 It's a strange poverty of the English language, and indeed of many other languages, that we use this same word, depression, to describe how a kid feels when it rains on his birthday, and to describe how somebody feels the minute before they commit suicide.
@@ -69,7 +67,7 @@ I've tried lots of things, being consistent is hard, especially when you get dep
 - [7 Habits](/7-habits)
 - [Getting to yes with yourself](/getting-to-yes-with-yourself)
 - Talking to the [voices in my head](/voices)
-- Getting things done (GTD)
+- [Getting things done ([GTD](/gtd))
 - Fierce [Work life balance](/wlb)
 
 {%include blob_image_float_right.html src="noun-depression.png" %}
