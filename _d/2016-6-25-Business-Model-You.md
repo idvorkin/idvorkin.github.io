@@ -13,6 +13,8 @@ tags:
 
 The business model canvas is a tool for understanding how a company makes money. We can apply the same canvas to a person, in this article, it'll be me.
 
+{%include blob_image.html src="business-model-you-canvas.jpeg" %}
+
 ### Essential Concepts:
 
 - Build your value, not your skills

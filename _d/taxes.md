@@ -236,7 +236,7 @@ See [Parkinson's law](/parkinson), which applies to both time and money. The tas
 
 ### Believing the market only goes up
 
-{%include blob_imaget.html src="gdp-delta-1960-2020.png" %}
+{%include blob_image.html src="gdp-delta-1960-2020.png" %}
 
 ### Keeping a mortgage you can pay of since interest rates are low
 
