@@ -226,6 +226,7 @@
         "/books"
       ],
       "incoming_links": [
+        "/d/2016-6-25-Business-Model-You",
         "/eulogy",
         "/job",
         "/software-leadership-roles",
@@ -489,12 +490,18 @@
       "py/object": "__main__.Page",
       "url": "/d/2016-6-25-Business-Model-You",
       "title": "BUSINESS MODEL YOU",
-      "description": "The business model canvas is a tool for understanding how a company makes money. We can apply the same canvas to a person, in this article, it’ll be me.\n\n",
+      "description": "The business model canvas is a tool for understanding how a company makes money. This same model can be applied to a person’s career. While job hunting this was helpful figuring out my dream job. I suppose it should also prioritize my work energy, and probably how to prioritize my life energy. But that’s to come.\n\n",
       "file_path": "_site/d/2016-6-25-Business-Model-You.html",
-      "outgoing_links": [],
+      "outgoing_links": [
+        "/job-hunt-stress",
+        "/dream-job",
+        "/boss",
+        "/eulogy",
+        "/dream-job"
+      ],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13873
+      "doc_size": 15671
     },
     "/d/2016-7-14-Customer-Service": {
       "py/object": "__main__.Page",
@@ -528,6 +535,7 @@
         "/habits",
         "/physical-health",
         "/emotional-health",
+        "/hobby",
         "/bike",
         "/magic",
         "/voices",
@@ -538,7 +546,7 @@
       ],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 17555
+      "doc_size": 17463
     },
     "/d/2017-07-22-vacationphotos": {
       "py/object": "__main__.Page",
@@ -747,6 +755,17 @@
       "redirect_url": "",
       "doc_size": 17708
     },
+    "/diet": {
+      "py/object": "__main__.Page",
+      "url": "/diet",
+      "title": "DIET",
+      "description": "Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. Exercise, while critical to energy, is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.\n\n",
+      "file_path": "_site/diet.html",
+      "outgoing_links": ["/exercise"],
+      "incoming_links": ["/physical-health"],
+      "redirect_url": "",
+      "doc_size": 11996
+    },
     "/dip": {
       "py/object": "__main__.Page",
       "url": "/dip",
@@ -829,7 +848,13 @@
         "/cache",
         "/Human-Meetings"
       ],
-      "incoming_links": ["/depression", "/frog", "/irl", "/timeoff"],
+      "incoming_links": [
+        "/d/2016-6-25-Business-Model-You",
+        "/depression",
+        "/frog",
+        "/irl",
+        "/timeoff"
+      ],
       "redirect_url": "",
       "doc_size": 26995
     },
@@ -926,7 +951,7 @@
       "description": "\n\n",
       "file_path": "_site/hobby.html",
       "outgoing_links": ["/happy", "/magic"],
-      "incoming_links": [],
+      "incoming_links": ["/d/2017-04-09-igor-the-operating-manual"],
       "redirect_url": "",
       "doc_size": 14927
     },
@@ -958,7 +983,15 @@
       "title": "YOUR IDLE LOOP",
       "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifiying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
       "file_path": "_site/idle.html",
-      "outgoing_links": ["/habits", "/magic", "/addiction", "/mind-monsters"],
+      "outgoing_links": [
+        "/siy",
+        "/habits",
+        "/magic",
+        "/siy",
+        "/psychic-weight",
+        "/addiction",
+        "/mind-monsters"
+      ],
       "incoming_links": [
         "/anxiety",
         "/depression",
@@ -966,7 +999,7 @@
         "/psychic-weight"
       ],
       "redirect_url": "",
-      "doc_size": 11360
+      "doc_size": 11493
     },
     "/Immutable-Laws-Of-Hard": {
       "py/object": "__main__.Page",
@@ -1042,7 +1075,12 @@
         "/moments-at-work",
         "/Human-Meetings"
       ],
-      "incoming_links": ["/eulogy", "/job-hunt-stress", "/the-manager-book"],
+      "incoming_links": [
+        "/d/2016-6-25-Business-Model-You",
+        "/eulogy",
+        "/job-hunt-stress",
+        "/the-manager-book"
+      ],
       "redirect_url": "",
       "doc_size": 17476
     },
@@ -1053,7 +1091,11 @@
       "description": "Job hunts are stressful, and my goal for job hunts is getting the job I want while minimizing my stress. The stress comes from: lack of confidence, being rushed, not having options, disappointing others and the pressure from current job responsibilities. By expecting and mitigating each of these stressors I greatly reduce stress during my job hunt.\n\n",
       "file_path": "_site/job-hunt-stress.html",
       "outgoing_links": ["/decisive", "/dream-job", "/comp", "/decide"],
-      "incoming_links": ["/comp", "/the-manager-book"],
+      "incoming_links": [
+        "/comp",
+        "/d/2016-6-25-Business-Model-You",
+        "/the-manager-book"
+      ],
       "redirect_url": "",
       "doc_size": 18312
     },
@@ -1190,7 +1232,7 @@
         "/td/time-off-3-2020"
       ],
       "redirect_url": "",
-      "doc_size": 26296
+      "doc_size": 26391
     },
     "/mortality-software": {
       "py/object": "__main__.Page",
@@ -1235,7 +1277,7 @@
       "title": "PHYSICAL HEALTH",
       "description": "Physical health is the basis of energy, and thus the source of success. Physical health is about weight, fitness and sleep.\n\n",
       "file_path": "_site/physical-health.html",
-      "outgoing_links": ["/tech-health-toys", "/irl#physical-health"],
+      "outgoing_links": ["/diet", "/tech-health-toys", "/irl#physical-health"],
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
@@ -1243,7 +1285,7 @@
         "/tech-health-toys"
       ],
       "redirect_url": "",
-      "doc_size": 14765
+      "doc_size": 14785
     },
     "/pride": {
       "py/object": "__main__.Page",
@@ -1290,7 +1332,7 @@
         "/habits",
         "/grandmother"
       ],
-      "incoming_links": ["/depression", "/gtd"],
+      "incoming_links": ["/depression", "/gtd", "/idle"],
       "redirect_url": "",
       "doc_size": 15792
     },
@@ -1386,6 +1428,7 @@
         "/depression",
         "/emotional-health",
         "/eulogy",
+        "/idle",
         "/mind-monsters",
         "/psychic-weight",
         "/td/time-off-3-2020"
@@ -1436,6 +1479,17 @@
       "incoming_links": ["/being-a-great-manager", "/depression"],
       "redirect_url": "",
       "doc_size": 25326
+    },
+    "/switch": {
+      "py/object": "__main__.Page",
+      "url": "/switch",
+      "title": "SWITCH",
+      "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side is an Elephant and our rational side is its Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
+      "file_path": "_site/switch.html",
+      "outgoing_links": [],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 11435
     },
     "/tags": {
       "py/object": "__main__.Page",
