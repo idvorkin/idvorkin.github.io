@@ -2,27 +2,59 @@
 layout: post
 title: "Business Model You"
 author: "Igor Dvorkin"
-comments: true
-inprogress: true
-collapsable: true
 
 tags:
   - strategy
   - how igor ticks
 ---
 
-The business model canvas is a tool for understanding how a company makes money. We can apply the same canvas to a person, in this article, it'll be me.
+The business model canvas is a tool for understanding how a company makes money. This same model can be applied to a person's career. While [job hunting](/job-hunt) this was helpful figuring out my [dream job](/dream-job). I suppose it should also prioritize my [work energy](/boss), and probably how to prioritize my [life energy](/eulogy). But that's to come.
 
 {%include blob_image.html src="business-model-you-canvas.jpeg" %}
 
-### Essential Concepts:
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [The "you" global boxes:](#the-you-global-boxes)
+    - [Key Activities - What you do](#key-activities---what-you-do)
+    - [Key Resources - Who you are/What you have](#key-resources---who-you-arewhat-you-have)
+    - [Key Partners - Who helps you?](#key-partners---who-helps-you)
+- [Per customer boxes:](#per-customer-boxes)
+    - [Value Provided - How you help:](#value-provided---how-you-help)
+    - [Channels - How they know you, how you deliver](#channels---how-they-know-you-how-you-deliver)
+    - [Customer Relationships - How do you interact?](#customer-relationships---how-do-you-interact)
+- [Customer Segment Specific](#customer-segment-specific)
+    - [The engineering team I support](#the-engineering-team-i-support)
+    - [Product Manager](#product-manager)
+    - [Boss](#boss)
+    - [Grand Boss](#grand-boss)
+    - [Mentees](#mentees)
+    - [Feeling Meetings Members](#feeling-meetings-members)
+- [The balance sheet](#the-balance-sheet)
+    - [Revenue - What you get?](#revenue---what-you-get)
+    - [Costs - What you give up](#costs---what-you-give-up)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
+## The "you" global boxes:
 
 - Build your value, not your skills
-- Focus customers on the value you provide, not your key activities.
-- Focus customers on their job - remind them your job is to support them, not do the activities they 'hire you for'
 - Determine what key activites will support the value you provide.
+- Focus customers on the value you provide them, not your key activities.
+- Focus customers on their job - your job is to support them, not do the activities they 'hire you for'
 
-### Key Resources - Who you are/What you have:
+### Key Activities - What you do
+
+- Clarify Needs of Business
+- Convert Business needs into team activity
+- Understand each team members goals, and build plan to achieve them.
+- Balance short term delivery with investments in people, culture, and technology.
+- Build relationships with partners to ensure when stuff goes south, can get it back with minimal suffering.
+- Hire and retain teams
+- Feelings Meetings
+
+### Key Resources - Who you are/What you have
 
 - Interests - Things that excite you
 
@@ -63,24 +95,11 @@ The business model canvas is a tool for understanding how a company makes money.
 * Intangible Assets - IP/Goodwill/Brand Recogintion
 * Physical Assets - N/A for computer people.
 
-### Key Activities - What you do:
+### Key Partners - Who helps you?
 
-- Clarify Needs of Business
-- Convert Business needs into team activity
-- Understand each team members goals, and build plan to achieve them.
-- Balance short term delivery with investments in people, culture, and technology.
-- Build relationships with partners to ensure when stuff goes south, can get it back with minimal suffering.
-- Hire and retain teams
-- Feelings Meetings
-
-### Customers - Who you help:
-
-- My Product's Customer
-- My Engineering Team
-- My Product Manager
-- My Boss
-- My Grand Boss
-- Feeling Meetings Members
+- Up/Down/Side Ways
+- Close/Frequent relations - sister team.
+- On Demand - Mentors/Advisors
 
 ## Per customer boxes:
 
@@ -102,9 +121,9 @@ More complex then it sounds, need to do this per customer segment:
 - What is the frequency?
 - Is the goal retention or Aquisition?
 
-## Customer Segment Specific Interaction
+## Customer Segment Specific
 
-### Customer: Engineering Team
+### The engineering team I support
 
 **Value Provided** - tbd
 
@@ -112,23 +131,17 @@ More complex then it sounds, need to do this per customer segment:
 
 **Relationship** - tbd
 
-### Customer: Product Manager
+### Product Manager
 
-### Customer: Boss
+### Boss
 
-### Customer: Grand Boss
+### Grand Boss
 
-### Customer: mentees
+### Mentees
 
-### Customer: Feeling Meetings Members
+### Feeling Meetings Members
 
-## Partner/Revenues/Cost
-
-### Key Partners - Who helps you?
-
-- Up/Down/Side Ways
-- Close/Frequent relations - sister team.
-- On Demand - Mentors/Advisors
+## The balance sheet
 
 ### Revenue - What you get?
 
@@ -153,12 +166,9 @@ More complex then it sounds, need to do this per customer segment:
   - Access to good people
   - Nice places to go for lunch
 
-### Costs - What you give?
+### Costs - What you give up
 
 - Tangible
-
   - Time
-
 - Intangible
-
   - Stress
