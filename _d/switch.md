@@ -1,0 +1,60 @@
+---
+layout: post
+title: "Switch"
+tags:
+  - book-notes
+permalink: /switch
+---
+
+Human action can be modelled by an elephant, a rider and the path. Our emotional side is an Elephant and our rational side is its Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider's control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He's completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.
+
+{%include blob_image.html src="rider-elephant-path.jpeg" %}
+
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [About Change](#about-change)
+- [Direct the rider](#direct-the-rider)
+    - [2. Find the Bright Spots](#2-find-the-bright-spots)
+    - [3. Script the Critical Moves](#3-script-the-critical-moves)
+    - [4. Point to the Destination](#4-point-to-the-destination)
+- [Motivate the elephant](#motivate-the-elephant)
+    - [5. Find the Feeling](#5-find-the-feeling)
+    - [6. Shrink the Change](#6-shrink-the-change)
+    - [7. Grow Your People](#7-grow-your-people)
+- [Shape the path](#shape-the-path)
+    - [8. Tweak the Environment](#8-tweak-the-environment)
+    - [9. Build Habits](#9-build-habits)
+    - [10. Rally the Herd](#10-rally-the-herd)
+    - [11. Keep the Switch Going](#11-keep-the-switch-going)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
+# About Change
+
+# Direct the rider
+
+## 2. Find the Bright Spots
+
+## 3. Script the Critical Moves
+
+## 4. Point to the Destination
+
+# Motivate the elephant
+
+## 5. Find the Feeling
+
+## 6. Shrink the Change
+
+## 7. Grow Your People
+
+# Shape the path
+
+## 8. Tweak the Environment
+
+## 9. Build [Habits][/habits]
+
+## 10. Rally the Herd
+
+## 11. Keep the Switch Going
