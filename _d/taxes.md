@@ -51,9 +51,10 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [Believing the market only goes up](#believing-the-market-only-goes-up)
     - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
     - [Timing the markets](#timing-the-markets)
+    - [The unquenchable thirst](#the-unquenchable-thirst)
 - [Other questions](#other-questions)
-- [Other Resources](#other-resources)
     - [How much is 1%](#how-much-is-1)
+- [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -250,6 +251,16 @@ Remember:
 
 > Time in market beats timing the market.
 
+### The unquenchable thirst
+
+For the philisophicaly minded, from the [Prophet](https://poets.org/poem/giving-0):
+
+_For what are your possessions but things you keep and guard for fear you may need them tomorrow?_
+
+_And tomorrow, what shall tomorrow bring to the overprudent dog burying bones in the trackless sand?_
+
+_And what is fear of need by need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?_
+
 ## Other questions
 
 - How long should I hold my RSUs before selling?
@@ -257,11 +268,11 @@ Remember:
 - Should I hold any bonds?
 - Where should I keep my emergency fund and how much?
 
-## Other Resources
-
-[Visualizing the worlds money](https://www.visualcapitalist.com/all-of-the-worlds-money-and-markets-in-one-visualization-2020/)
-
 ### How much is 1%
 
 - 1% of household AGI (gross household income) [475K](https://dqydj.com/average-median-top-household-income-percentiles/) amazingly up from 445K in 2018.
 - 1% of wages = [737K](https://www.investopedia.com/personal-finance/how-much-income-puts-you-top-1-5-10/)
+
+## Other Resources
+
+[Visualizing the worlds money](https://www.visualcapitalist.com/all-of-the-worlds-money-and-markets-in-one-visualization-2020/)
