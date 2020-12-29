@@ -11,6 +11,7 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 
 <!-- prettier-ignore-start -->
 
+
 <!-- vim-markdown-toc GFM -->
 
 - [Current Addictions](#current-addictions)
@@ -25,6 +26,7 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
     - [Covid 19 News](#covid-19-news)
     - [Alcohol](#alcohol)
 - [Getting Rid of 'em](#getting-rid-of-em)
+- [Other thoughts on additction](#other-thoughts-on-additction)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -69,6 +71,12 @@ I was taking a break from working, and [Covid 19](/covid) happened, before I kne
 ## Getting Rid of 'em
 
 My personality is a double edged sword, I've got an addictive personality, and I bore easily. This means I can get addicted quickly, be addicted for a while, and then drop it cold turkey.
+
+## Other thoughts on additction
+
+An alternative definition of addiction, is someone who always prioritizes his feelings over his values.
+
+Perhaps, boredom is the [pain](/mental-pain) of lack of connection, and addiction is a great way to stamp that out.
 
 ## Other Resources
 
