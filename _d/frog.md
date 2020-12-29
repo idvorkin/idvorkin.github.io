@@ -51,7 +51,7 @@ _The resistance is the personification of the force that stops you from doing al
 
 **12.** **Identify your key constraints:** Determine the bottlenecks or choke points, internal or external, that set the speed at which you achieve your most important goals, and focus on alleviating them.
 
-**6.** **Use the urgent/import matrix, and ABCDE framework continually:** Before you begin work on a list of tasks, take a few moments to organize them by value and priority so you can be sure of working on your most important activities. Items should be done in alphabetical order.
+**6.** **Use the [urgent and import](/first-things-first) matrix, and ABCDE framework continually:** Before you begin work on a list of tasks, take a few moments to organize them by value and priority so you can be sure of working on your most important activities. Items should be done in alphabetical order.
 
 ### Execution
 
