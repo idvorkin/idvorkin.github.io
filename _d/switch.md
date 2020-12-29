@@ -6,7 +6,31 @@ tags:
 permalink: /switch
 ---
 
-Human action can be modelled by an elephant, a rider and the path. Our emotional side is an Elephant and our rational side is its Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider's control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He's completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.
+Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider's control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He's completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.
+
+| Attribute             | Chapters |
+| --------------------- | -------- |
+| Direct the Rider      | [l1](l1) |
+| Motivate the Elephant | [l2](l2) |
+| Shape the Path        | [l3](l3) |
+
+- l1
+- Find the bright spots
+- Script the critical moves
+- Point to the destination
+
+<div/>
+* l2
+* Find the feeling
+* Shrink the change
+* Grow your people
+
+<div/>
+* l3
+* Tweak the environment
+* Build Habits
+* Rally the herd
+* Keet the switch going
 
 {%include blob_image.html src="rider-elephant-path.jpeg" %}
 
