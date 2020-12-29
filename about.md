@@ -22,6 +22,16 @@ Finally the metaphorical small print: These are my personal opinions, not those 
 
 ### What does this have to do with writers block?
 
+From Seth:
+
+\*One reason that successful and prolific singer-songwriters are prolific is that as soon as they’ve written a song, they can record it and publish it. And a huge advantage of having a daily blog is that the software is always open, waiting for you to write something.
+
+Your story doesn’t have to be a book, it is simply your chance to make a difference. “Here’s what I see, here’s how you can be part of it.”
+
+When we remove the pre (finding the pen, the paper, the notebook, the software) and the post (finding a way to publish it), it turns out that we write more often, and writing more often leads to writing better.
+
+iIt doesn’t have to be perfect, it can simply be the next thing you do\*
+
 ### What about writers block?
 
 _From Seth Godin_
@@ -49,6 +59,14 @@ Please do!
 ### Are there keyboard shortcuts?
 
 Of course! Press ? to see them. Mobile browsers don't support keyboard shortcuts though.
+
+### What is the anchovie problem, and what is the monkey button:
+
+The monkey button selects a random page. It's the solution to Seth Goden's anchovie problem:
+
+\_Cleaning out the fridge after a power failure, I found three half-empty containers of anchovies. Because they magically migrate to the back of the fridge, every time I had needed some, I ended up opening a new jar, because the old ones were invisible. Not just invisible if I had looked for them, but so invisible that it never even occurred to me to look for them.
+
+Even more true with your thoughts. If you don’t know to look for it, if you don’t believe it’s there, it might as well be deleted. It’s worth putting in regular effort to remind ourselves of what we’ve already know and how it has served us in the past.\_
 
 ### How do I get in touch?
 
