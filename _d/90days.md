@@ -51,7 +51,7 @@ A how to guide for starting your next job.
 - [9. Manage Yourself](#9-manage-yourself)
     - [Self assessment](#self-assessment)
     - [Common problems](#common-problems)
-    - [Solutions - Being with end in mind -  Focus on 90 day plan](#solutions---being-with-end-in-mind----focus-on-90-day-plan)
+    - [Solutions - Being with end in mind - Focus on 90 day plan](#solutions---being-with-end-in-mind---focus-on-90-day-plan)
     - [Solutions - First thing first - Personal Discipline](#solutions---first-thing-first---personal-discipline)
     - [Solutions - Interdependance - Build Support Systems](#solutions---interdependance---build-support-systems)
 - [10. Accelerate Everyone](#10-accelerate-everyone)
@@ -72,7 +72,7 @@ Why people fail to make the mental break from their old jobs. Preparing to take 
 
 #### Assimilating yourself
 
-#### Be Curious
+#### Be [Curious](/grandmother)
 
 ### 2. Accelerate Your Learning
 
@@ -414,23 +414,20 @@ Are your problems, structural, or personal? If you think it's structural, it'll 
 
 #### Solutions - Being with end in mind - Focus on 90 day plan
 
+x
+
 #### Solutions - First thing first - Personal Discipline
 
-Plan to plan - Monthly, Weekly, and Daily Plans
-
-Stay in quadrant 2 - Block time on your calendar
+- Plan to plan - Monthly, Weekly, and Daily Plans
+- [Stay in quadrant 2](/first-things-first) - Block time on your calendar
 
 Defer commitemnt - Never say yes on the spot. Always figure out if you can afford to do it, do not get pressured early. WAY better to no to yes then yes to no. Yes to no is hard on your reputation
 
-Go to the balcony
-
-Too emotional? Step back and get an objective opinion.
-
-Check in with yourself
-
-Need structured reflection
-
-Recognize when to quit
+- Go to the balcony
+- Too emotional? Step back and get an objective opinion.
+- Check in with yourself
+- Need structured reflection
+- Recognize when to quit
 
 Over the stress curve, need to drop certain things.
 
