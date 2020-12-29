@@ -2,13 +2,16 @@
   "redirects": {
     "/22": "/what-i-wish-knew-at-22",
     "/7h": "/7-habits",
+    "/7h-c0": "/7h-concepts",
+    "/7h-c1": "/be-proactive",
+    "/7h-c3": "/first-things-first",
+    "/7h-c7": "/sharpen-the-saw",
     "/7habits": "/7-habits",
     "/90": "/90days",
     "/alexa-charity": "/toysfortots",
     "/anxious": "/anxiety",
     "/atomic-habits": "/d/habits",
     "/augmentedreality": "/ar",
-    "/be-proactive": "/7h-c1",
     "/bikes": "/bike",
     "/biking": "/bike",
     "/books": "/books-that-defined-me",
@@ -32,6 +35,7 @@
     "/essential": "/essentialism",
     "/fatality": "/death",
     "/feeling-meetings": "/Human-Meetings",
+    "/first-thing-first": "/first-things-first",
     "/first90days": "/90days",
     "/frugality": "/parkinson",
     "/fuck-shame": "/shame",
@@ -96,6 +100,7 @@
     "/td/machine-learning": "/ml",
     "/tft": "/toysfortots",
     "/the-dip": "/dip",
+    "/the-saw": "/sharpen-the-saw",
     "/thedip": "/dip",
     "/time-off": "/timeoff",
     "/twentytwo": "/what-i-wish-knew-at-22",
@@ -116,33 +121,37 @@
       "description": "Ever wish you had a user manual for your life? Imagine how reassuring it would be to know you can look up your difficulties in the table of contents, and read the chapter on how to solve your problem. For me, that manual is the The 7 Habits of Highly Effective People and it contains a model which I apply to many of my personal and professional problems and goals.\n\n",
       "file_path": "_site/7-habits.html",
       "outgoing_links": [
+        "/7h-c0",
+        "/be-proactive",
         "/essentialism",
         "/dip",
-        "/upstream",
-        "/atomic-habits",
-        "/siy"
+        "/first-things-first",
+        "/sharpen-the-saw"
       ],
       "incoming_links": [
-        "/7h-c1",
+        "/7h-concepts",
+        "/be-proactive",
         "/books-that-defined-me",
         "/d/resistance",
         "/depression",
         "/eulogy",
-        "/psychic-weight"
+        "/first-things-first",
+        "/psychic-weight",
+        "/sharpen-the-saw"
       ],
       "redirect_url": "",
-      "doc_size": 15055
+      "doc_size": 11716
     },
-    "/7h-c1": {
+    "/7h-concepts": {
       "py/object": "__main__.Page",
-      "url": "/7h-c1",
-      "title": "BE PROACTIVE (7H C1)",
-      "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions. I can subordinate feelings to values. I have the initiative and the responsibility to make things happen. This is my insights into 7 habits Chapter 1.\n\n",
-      "file_path": "_site/7h-c1.html",
-      "outgoing_links": ["/7h", "/7h", "/essentialism", "/frog"],
-      "incoming_links": [],
+      "url": "/7h-concepts",
+      "title": "7 HABITS CONCEPTS",
+      "description": "To discuss the 7 habits we need some foundational ideas, P/PC, paradigms, etc. These are my insights based on the 7 habits Chapter 0.\n\n",
+      "file_path": "_site/7h-concepts.html",
+      "outgoing_links": ["/7h"],
+      "incoming_links": ["/7-habits"],
       "redirect_url": "",
-      "doc_size": 12159
+      "doc_size": 11423
     },
     "/90days": {
       "py/object": "__main__.Page",
@@ -221,6 +230,17 @@
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 14346
+    },
+    "/be-proactive": {
+      "py/object": "__main__.Page",
+      "url": "/be-proactive",
+      "title": "BE PROACTIVE",
+      "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights basd on the 7 habits Chapter 1.\n\n",
+      "file_path": "_site/be-proactive.html",
+      "outgoing_links": ["/7h", "/essentialism", "/frog"],
+      "incoming_links": ["/7-habits"],
+      "redirect_url": "",
+      "doc_size": 12138
     },
     "/being-a-great-manager": {
       "py/object": "__main__.Page",
@@ -641,11 +661,11 @@
       "file_path": "_site/d/habits.html",
       "outgoing_links": [],
       "incoming_links": [
-        "/7-habits",
         "/d/2017-04-09-igor-the-operating-manual",
         "/d/resistance",
         "/idle",
         "/psychic-weight",
+        "/sharpen-the-saw",
         "/the-manager-book"
       ],
       "redirect_url": "",
@@ -781,7 +801,7 @@
       "description": "Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. Exercise, while critical to energy, is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.\n\n",
       "file_path": "_site/diet.html",
       "outgoing_links": ["/exercise"],
-      "incoming_links": ["/physical-health"],
+      "incoming_links": ["/physical-health", "/sharpen-the-saw"],
       "redirect_url": "",
       "doc_size": 11996
     },
@@ -829,6 +849,7 @@
         "/d/2017-04-09-igor-the-operating-manual",
         "/irl",
         "/mind-at-work",
+        "/sharpen-the-saw",
         "/siy"
       ],
       "redirect_url": "",
@@ -843,7 +864,7 @@
       "outgoing_links": [],
       "incoming_links": [
         "/7-habits",
-        "/7h-c1",
+        "/be-proactive",
         "/books-that-defined-me",
         "/frog",
         "/gtd"
@@ -890,23 +911,41 @@
       "redirect_url": "",
       "doc_size": 22109
     },
+    "/first-things-first": {
+      "py/object": "__main__.Page",
+      "url": "/first-things-first",
+      "title": "FIRST THINGS FIRST",
+      "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
+      "file_path": "_site/first-things-first.html",
+      "outgoing_links": ["/7h", "/gtd", "/upstream", "/frog"],
+      "incoming_links": ["/7-habits", "/frog"],
+      "redirect_url": "",
+      "doc_size": 11543
+    },
     "/frog": {
       "py/object": "__main__.Page",
       "url": "/frog",
       "title": "EAT THAT FROG",
       "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing of the concepts into my favorite mental models, the chapter titles are preserved if you want to go look them up.\n\n",
       "file_path": "_site/frog.html",
-      "outgoing_links": ["/resistance", "/eulogy", "/essential", "/gtd"],
+      "outgoing_links": [
+        "/resistance",
+        "/eulogy",
+        "/essential",
+        "/first-things-first",
+        "/gtd"
+      ],
       "incoming_links": [
-        "/7h-c1",
+        "/be-proactive",
         "/d/resistance",
+        "/first-things-first",
         "/gtd",
         "/psychic-weight",
         "/td/time-off-3-2020",
         "/timeoff"
       ],
       "redirect_url": "",
-      "doc_size": 17318
+      "doc_size": 17356
     },
     "/getting-to-yes-with-yourself": {
       "py/object": "__main__.Page",
@@ -948,6 +987,7 @@
         "/books-that-defined-me",
         "/d/resistance",
         "/depression",
+        "/first-things-first",
         "/frog",
         "/psychic-weight"
       ],
@@ -1309,6 +1349,7 @@
         "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
         "/irl",
+        "/sharpen-the-saw",
         "/tech-health-toys"
       ],
       "redirect_url": "",
@@ -1436,6 +1477,24 @@
       "redirect_url": "",
       "doc_size": 10804
     },
+    "/sharpen-the-saw": {
+      "py/object": "__main__.Page",
+      "url": "/sharpen-the-saw",
+      "title": "SHARPEN THE SAW",
+      "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 7.\n\n",
+      "file_path": "_site/sharpen-the-saw.html",
+      "outgoing_links": [
+        "/7h",
+        "/atomic-habits",
+        "/siy",
+        "/physical-health",
+        "/emotional-health",
+        "/diet"
+      ],
+      "incoming_links": ["/7-habits"],
+      "redirect_url": "",
+      "doc_size": 10314
+    },
     "/siy": {
       "py/object": "__main__.Page",
       "url": "/siy",
@@ -1449,7 +1508,6 @@
         "/happy"
       ],
       "incoming_links": [
-        "/7-habits",
         "/books-that-defined-me",
         "/coaching",
         "/depression",
@@ -1458,6 +1516,7 @@
         "/idle",
         "/mind-monsters",
         "/psychic-weight",
+        "/sharpen-the-saw",
         "/td/time-off-3-2020"
       ],
       "redirect_url": "",
@@ -1943,7 +2002,7 @@
       "description": "Imagine sitting enjoying a picnic with a friend at the side of a river. Suddenly you see a kid drowning, you and your friend dive in and save him. A few minutes later the same thing happens. When the third kid comes down river, your friend runs away. You scream at him - why the hell aren’t you helping. He replies, I’m running upstream to stop the bastard who’s throwing kids into the river. Upstream is the idea of solving problems before they start. It’s the basis of habit 3, First Things First, where we tackle the important not urgent.\n\n",
       "file_path": "_site/upstream.html",
       "outgoing_links": [],
-      "incoming_links": ["/7-habits"],
+      "incoming_links": ["/first-things-first"],
       "redirect_url": "",
       "doc_size": 13511
     },
