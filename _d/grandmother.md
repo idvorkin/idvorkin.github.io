@@ -16,6 +16,8 @@ redirect_from:
 Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Judgment vs Curiosity](#judgment-vs-curiosity)
@@ -24,7 +26,6 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 - [Curious questions for mental pain and its antidotes](#curious-questions-for-mental-pain-and-its-antidotes)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ### Judgment vs Curiosity
 
@@ -36,7 +37,7 @@ We often think of rewards and punishments, but punishment's are less effective t
 
 She'd get curious (aka have a retro!). Instead of assuming that breaking the rule was a bad thing, she'd dig in and reflect on if it was a good thing or a bad thing. If it was the right thing to do - perfect! If it was not the right thing to do, then we should reflect on why that was and why we made the wrong call.
 
-https://whatilearnedsofar.com/practice/cultivating-inner-discipline/
+The source of [compassionate consequences](https://whatilearnedsofar.com/practice/cultivating-inner-discipline/)
 
 Assuming we don't do what we wanted - the consequence should be 6 minute reflection.
 
@@ -48,9 +49,7 @@ An advanced reader will notice, there are 2 cases to braking the rule 1) deliber
 
 ### Cutting ourselves slack vs slacking off
 
-https://whatilearnedsofar.com/practice/best-i-can-do/
-
-Did I do the best I could do?
+Did I do the [best I could do](https://whatilearnedsofar.com/practice/best-i-can-do/)?
 
 What could have I actually done that would have been better than what I did?
 
