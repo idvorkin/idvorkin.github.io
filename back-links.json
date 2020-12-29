@@ -1,12 +1,14 @@
 {
   "redirects": {
     "/22": "/what-i-wish-knew-at-22",
+    "/7h": "/7-habits",
     "/7habits": "/7-habits",
     "/90": "/90days",
     "/alexa-charity": "/toysfortots",
     "/anxious": "/anxiety",
     "/atomic-habits": "/d/habits",
     "/augmentedreality": "/ar",
+    "/be-proactive": "/7h-c1",
     "/bikes": "/bike",
     "/biking": "/bike",
     "/books": "/books-that-defined-me",
@@ -73,6 +75,7 @@
     "/personal-development": "/timeoff",
     "/phoney": "/insecure",
     "/poh": "/happy",
+    "/proactive": "/7h-c1",
     "/process": "/upstream",
     "/procrastinate": "/frog",
     "/procrastination": "/frog",
@@ -80,6 +83,7 @@
     "/remote": "/remote-work",
     "/remotework": "/remote-work",
     "/resistance": "/d/resistance",
+    "/responsible": "/7h-c1",
     "/root-cause-analysis": "/coe",
     "/satisfaction": "/happy",
     "/satisfied": "/happy",
@@ -113,14 +117,13 @@
       "file_path": "_site/7-habits.html",
       "outgoing_links": [
         "/essentialism",
-        "/frog",
-        "/essentialism",
         "/dip",
         "/upstream",
         "/atomic-habits",
         "/siy"
       ],
       "incoming_links": [
+        "/7h-c1",
         "/books-that-defined-me",
         "/d/resistance",
         "/depression",
@@ -128,7 +131,18 @@
         "/psychic-weight"
       ],
       "redirect_url": "",
-      "doc_size": 17895
+      "doc_size": 15055
+    },
+    "/7h-c1": {
+      "py/object": "__main__.Page",
+      "url": "/7h-c1",
+      "title": "BE PROACTIVE (7H C1)",
+      "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions. I can subordinate feelings to values. I have the initiative and the responsibility to make things happen. This is my insights into 7 habits Chapter 1.\n\n",
+      "file_path": "_site/7h-c1.html",
+      "outgoing_links": ["/7h", "/7h", "/essentialism", "/frog"],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 12159
     },
     "/90days": {
       "py/object": "__main__.Page",
@@ -150,7 +164,7 @@
       "outgoing_links": ["/linkedin"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11760
+      "doc_size": 13375
     },
     "/addiction": {
       "py/object": "__main__.Page",
@@ -158,10 +172,15 @@
       "title": "ADDICTION",
       "description": "Addiction is not about drugs or alcohol - it is about escape. Quoting “Do the Work”: When we can’t stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That’s why addicts are so interesting and so boring at the same time. They’re interesting because they’re called to something — something new, something unique, something that we, watching, can’t wait to see them bring forth into manifestation. At the same time, they’re boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict’s crazy, haunted, shattered life.\n\n",
       "file_path": "_site/addiction.html",
-      "outgoing_links": ["/covid", "/covid"],
-      "incoming_links": ["/d/resistance", "/idle", "/psychic-weight"],
+      "outgoing_links": ["/covid", "/covid", "/mental-pain"],
+      "incoming_links": [
+        "/d/resistance",
+        "/idle",
+        "/mind-at-work",
+        "/psychic-weight"
+      ],
       "redirect_url": "",
-      "doc_size": 12977
+      "doc_size": 13381
     },
     "/amazon": {
       "py/object": "__main__.Page",
@@ -459,10 +478,10 @@
       "title": "SETH GODIN- IDEAS",
       "description": "Seth godin has many ideas that are critical in the new world. Ideas include: Choosing yourself, Tribes, The limited value of cogs, connection, and the dip.\n\n",
       "file_path": "_site/d/2016-2-15-Seth-Godin-Notes.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/the-dip"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13938
+      "doc_size": 13941
     },
     "/d/2016-3-12-sleight-of-mouth": {
       "py/object": "__main__.Page",
@@ -773,9 +792,9 @@
       "description": "New things start fun, but once the new wears off they are hard because of the Dip. The Dip is the long slog between starting and mastery. Unlike Dips, cul-de-sacs are places you can put in a lot of energy and nothing will come of it. You need to quit cul-de-sacs and lean into dips. Much of our failure comes from being distracted by tasks we don’t have the guts to quit. Winners quit all the time. They quit the right stuff, so their energy can be saved to cross the Dip.\n\n",
       "file_path": "_site/dip.html",
       "outgoing_links": [],
-      "incoming_links": ["/7-habits", "/gtd"],
+      "incoming_links": ["/7-habits", "/d/2016-2-15-Seth-Godin-Notes", "/gtd"],
       "redirect_url": "",
-      "doc_size": 25244
+      "doc_size": 25002
     },
     "/don-juan": {
       "py/object": "__main__.Page",
@@ -809,6 +828,7 @@
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
         "/irl",
+        "/mind-at-work",
         "/siy"
       ],
       "redirect_url": "",
@@ -823,6 +843,7 @@
       "outgoing_links": [],
       "incoming_links": [
         "/7-habits",
+        "/7h-c1",
         "/books-that-defined-me",
         "/frog",
         "/gtd"
@@ -877,7 +898,7 @@
       "file_path": "_site/frog.html",
       "outgoing_links": ["/resistance", "/eulogy", "/essential", "/gtd"],
       "incoming_links": [
-        "/7-habits",
+        "/7h-c1",
         "/d/resistance",
         "/gtd",
         "/psychic-weight",
@@ -1131,6 +1152,7 @@
         "/pride"
       ],
       "incoming_links": [
+        "/addiction",
         "/curious",
         "/d/resistance",
         "/d/time-off-12-2020",
@@ -1159,10 +1181,15 @@
       "title": "BODY AT HOME, MIND AT WORK",
       "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body being at home, but my mind still being at work\n\n",
       "file_path": "_site/mind-at-work.html",
-      "outgoing_links": [],
+      "outgoing_links": [
+        "/addiction",
+        "/time-off",
+        "/emotional-health",
+        "/emotional-health"
+      ],
       "incoming_links": ["/timeoff"],
       "redirect_url": "",
-      "doc_size": 11072
+      "doc_size": 11185
     },
     "/mind-monsters": {
       "py/object": "__main__.Page",
@@ -1484,12 +1511,12 @@
       "py/object": "__main__.Page",
       "url": "/switch",
       "title": "SWITCH",
-      "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side is an Elephant and our rational side is its Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
+      "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
       "file_path": "_site/switch.html",
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11435
+      "doc_size": 12217
     },
     "/tags": {
       "py/object": "__main__.Page",
@@ -1894,7 +1921,7 @@
         "/frog",
         "/td/time-off-3-2020"
       ],
-      "incoming_links": ["/d/time-off-12-2020", "/parkinson"],
+      "incoming_links": ["/d/time-off-12-2020", "/mind-at-work", "/parkinson"],
       "redirect_url": "",
       "doc_size": 14396
     },
