@@ -7,7 +7,7 @@ redirect-from:
   - /exercise
 ---
 
-Physical health is the basis of energy, and thus the source of success. Physical health is about weight, fitness and sleep.
+Physical health is the basis of energy, and thus the source of success, and a a key [saw to be sharpened](/sharpen-the-saw). Physical health is about weight, fitness and sleep.
 
 ### Weight Yourself
 
