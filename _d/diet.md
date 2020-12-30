@@ -21,8 +21,8 @@ Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calo
 - [My journey](#my-journey)
   - [Mating weight](#mating-weight)
   - [The bikini diet](#the-bikini-diet)
-  - [Juice fasting](#juice-fasting)
-  - [The weight pledge](#the-weight-pledge)
+  - [Juice fasting - Fat sick and nearly dead](#juice-fasting---fat-sick-and-nearly-dead)
+  - [The weight pledge - down to 149 lbs](#the-weight-pledge---down-to-149-lbs)
 - [Great lo-cal foods](#great-lo-cal-foods)
   - [Miso soup](#miso-soup)
   - [Radishes/Kimchi/Frozen carrots/Canned baby corn](#radisheskimchifrozen-carrotscanned-baby-corn)
@@ -42,9 +42,9 @@ Maintaing a healthy weight has always been a challenge for me. I was obese as a 
 
 ### The bikini diet
 
-### Juice fasting
+### Juice fasting - [Fat sick and nearly dead](http://ighealth.blogspot.com/2011/08/fat-sick-and-nearly-dead.html)
 
-### The weight pledge
+### The weight pledge - [down to 149 lbs](http://ighealth.blogspot.com/search/label/weight_update)
 
 ## Great lo-cal foods
 

@@ -4,13 +4,7 @@ no-render-title: true
 title: Cloud First Applications
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/cloud-first-applications.md)_
-
-# Cloud First Applications
-
-## Why?
-
-## Success criteria For this post
+The world is now on the cloud, here are my random notes on the topic.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->

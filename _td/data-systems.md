@@ -4,13 +4,9 @@ no-render-title: true
 title: Data Systems
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/data-systems.md)_
-
-# Data Systems
-
-## Why?
-
 This page contains my knowledge of data systems. Mostly just a summary of [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=AZ1QGMVFB2K45MWY14X0)
+
+_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/data-systems.md)_
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -29,7 +25,7 @@ This page contains my knowledge of data systems. Mostly just a summary of [Desig
     - [Key Value Store - Dynamo DB](#key-value-store---dynamo-db)
     - [Document - AWS DocumentDB](#document---aws-documentdb)
     - [Column Store - AWS Redshift](#column-store---aws-redshift)
-    - [Graph  - AWS Neptune](#graph----aws-neptune)
+    - [Graph - AWS Neptune](#graph---aws-neptune)
 - [Message Brokers](#message-brokers)
     - [What happens when messages are not consumed in time?](#what-happens-when-messages-are-not-consumed-in-time)
     - [What happens when a message is missed](#what-happens-when-a-message-is-missed)

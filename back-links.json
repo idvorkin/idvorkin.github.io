@@ -828,7 +828,7 @@
       "outgoing_links": ["/exercise"],
       "incoming_links": ["/physical-health", "/sharpen-the-saw"],
       "redirect_url": "",
-      "doc_size": 11978
+      "doc_size": 12309
     },
     "/dip": {
       "py/object": "__main__.Page",
@@ -1007,12 +1007,12 @@
       "py/object": "__main__.Page",
       "url": "/getting-to-yes",
       "title": "GETTING TO YES",
-      "description": "Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal  and seek first to understand.  The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.\n\n",
+      "description": "Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.\n\n",
       "file_path": "_site/getting-to-yes.html",
       "outgoing_links": ["/win-win", "/first-understand"],
       "incoming_links": ["/getting-to-yes-with-yourself"],
       "redirect_url": "",
-      "doc_size": 9912
+      "doc_size": 9909
     },
     "/getting-to-yes-with-yourself": {
       "py/object": "__main__.Page",
@@ -1707,45 +1707,45 @@
       "py/object": "__main__.Page",
       "url": "/td/better-security-design",
       "title": "SECURITY NOTES",
-      "description": "Copied from my GitHub techdiary\n\n",
+      "description": "I used to do security in a former life, and here are some musings on the topic, which will eventually be dissected into various essays. For now it’ll be confusing as I’m brain dumping to various audiences with various knowledge (end users, architects, CEOs, designers)\n\n",
       "file_path": "_site/td/better-security-design.html",
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 19823
+      "doc_size": 20007
     },
     "/td/cloud-first-applications": {
       "py/object": "__main__.Page",
       "url": "/td/cloud-first-applications",
       "title": "CLOUD FIRST APPLICATIONS",
-      "description": "Copied from my GitHub techdiary\n\n",
+      "description": "The world is now on the cloud, here are my random notes on the topic.\n\n",
       "file_path": "_site/td/cloud-first-applications.html",
       "outgoing_links": [],
       "incoming_links": ["/the-manager-book"],
       "redirect_url": "",
-      "doc_size": 20678
+      "doc_size": 20487
     },
     "/td/data-systems": {
       "py/object": "__main__.Page",
       "url": "/td/data-systems",
       "title": "DATA SYSTEMS",
-      "description": "Copied from my GitHub techdiary\n\n",
+      "description": "This page contains my knowledge of data systems. Mostly just a summary of Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems\n\n",
       "file_path": "_site/td/data-systems.html",
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 18597
+      "doc_size": 18677
     },
     "/td/design": {
       "py/object": "__main__.Page",
       "url": "/td/design",
       "title": "DESIGN",
-      "description": "Copied from my GitHub techdiary\n\n",
+      "description": "Software design is important. Here are my notes\n\n",
       "file_path": "_site/td/design.html",
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11407
+      "doc_size": 11510
     },
     "/td/dump_imessage_history": {
       "py/object": "__main__.Page",
