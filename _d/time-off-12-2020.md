@@ -12,10 +12,13 @@ I took the first 2 days to vegitate, which wasn't a conscious decision, it was j
 
 ## Moments
 
+## Success Stories
+
+I've used this time to restart the flywheel on magic, and diet, re-inforce my discipline, and keep a balance with my family.
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Success Stories](#success-stories)
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)
     - [Friends](#friends)
@@ -44,10 +47,6 @@ I took the first 2 days to vegitate, which wasn't a conscious decision, it was j
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-## Success Stories
-
-I've used this time to restart the flywheel on magic, and diet, re-inforce my discipline, and keep a balance with my family.
 
 ## Top Learnings
 
@@ -113,14 +112,12 @@ function gstatdaterange() {
 
 #### Data Analysis - Pandas
 
-See [pandas](/td/pandas), and my sleep and weight analysis blog posts.
+See [pandas](/td/pandas), and update my [sleep](https://nbviewer.jupyter.org/github/idvorkin/jupyter/blob/master/SleepAnalysis.ipynb) and weight analysis jupyter pages.
 
-- ☐ Find the "theory" of data shapes, and use it to your advantage
-- ☐ Get better at pivot tables and learning new graphing libraries (altair!)
-- ☐ Read Pandas for everyone
-- ☐ See if there are new tools for Jupyter
-
-TODO link to techdiary udpates for this.
+- ☑ Find the "theory" of data shapes, and use it to your advantage
+- ☑ Get better at pivot tables and learning new graphing libraries (altair!)
+- ☑ Read Pandas for everyone
+- ☑ See if there are new tools for Jupyter
 
 #### CUT: Ranking Systems
 
@@ -128,15 +125,18 @@ I checked this out briefly as it's a place I have little context, I think I'll w
 
 ## Cognitive Health
 
-- ☐ Summarize 7 habits
-
-Even though this is work related, these quick sands are probably the biggest assult on my inner peace, and I want to spend some time maximizing the cognative force I can apply to these situations.
+- ☐ Summarize [7 habits](/7-habits)
+  - ☑ Break existing contenit into separate chapters for easy extension
+  - ☐ STRETCH: Update concepts page
+  - ☐ STRETCH: Update first things first page
+  - ☐ STRETCH: Update Seek first to understand
 
 ## Emotional Health
 
-- ☐ Read VSI: Happiness
+- ☑ Read VSI: Happiness
+- ☑ Wrote up some ideas on [mental pain](/mental-pain) from Dr. Raph
 - ☐ Write up my engineering manager quick sands
-- ☐ Wrote up some ideas on [mental pain](/mental-pain) from Dr. Raph
+- Even though work related, these quick sands are probably the biggest assult on my inner peace, and I want to spend some time maximizing the cognative force I can apply to these situations.
 
 ### Meditation
 
@@ -188,10 +188,10 @@ My diet discipline has been week. I'll take some structural "additive" attempts 
 
 I think the hero of my good is my hot-tub - get in there every day, and come up with good ideas for maximizing my pleasure by doing things in the hottub to get twofers:
 
-- ☐ Read in the hottub
-- ☐ Meditate in the hottub
+- ☑ Read in the hottub
+- ☑ Meditate in the hottub
 - ☐ Practice magic in the hottub
-- ☐ Figure out outdoor lighting
+- ☑ Figure out outdoor lighting
 
 Getting ready for the re-model is important too
 
