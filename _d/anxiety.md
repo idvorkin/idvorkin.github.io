@@ -12,6 +12,7 @@ Anxiety is the difference between reality and expectations. It is the pain, whil
 pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Anxiety](#anxiety)
@@ -44,7 +45,7 @@ Instead of desire to control, aspire to have the maximum influence over the outc
 Expectations is often achieving desired fixed position.
 
 1. First, broaden the desired end state - from Getting to Yes, convert your position into a desired outcome (What do you really need to solve).
-1. Second, focus on your circle of include - From 7 Habits, Habit 1, focus on your circle of influence not circle of concern (What will **I do** to improve the situation)
+1. Second, focus on your circle of include - [Focus on your circle of influence not circle of concern](/7h-c1) (What will **I do** to improve the situation)
 
 - By changing your desired reality from "I need X to happen" to "I will influence to get closer to my desired outcome for X", you are focused on your true need, and converting to action. This reduces Anxiety as the desired reality is now equal to your expectations, and you can focus on influening
 

@@ -13,8 +13,6 @@ tags:
 
 Before you can negotiate with others, you need to be in sync with yourself. This book applies the [negotiating principles](/gty) to yourself. It's an awkward application of the model, but this book is filled with good concepts regardless.
 
-{%include amazon.html asin="0062363417" %}
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
@@ -157,3 +155,5 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
   - It's about creating inner satisfaction, which makes your life and relationships better. It's hard but worth it.
 
 This is a summary of [Getting to yes with yourself](https://www.amazon.com/Getting-Yes-Yourself-What-Truly/dp/0062363417)
+
+{%include amazon.html asin="0062363417" %}
