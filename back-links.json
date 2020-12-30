@@ -118,15 +118,16 @@
       "py/object": "__main__.Page",
       "url": "/7-habits",
       "title": "SEVEN HABITS: A MANUAL FOR LIFE",
-      "description": "Ever wish you had a user manual for your life? Imagine how reassuring it would be to know you can look up your difficulties in the table of contents, and read the chapter on how to solve your problem. For me, that manual is the The 7 Habits of Highly Effective People and it contains a model which I apply to many of my personal and professional problems and goals.\n\n",
+      "description": "Ever wish you had a user manual for your life? Imagine how reassuring it would be to know you can look up your difficulties in the table of contents, and read the chapter on how to solve your problem. For me, that manual is the The 7 Habits of Highly Effective People. It teaches you how to go from being dependant, to independent to interdependant, and doing it again and again in different aspects of your life. And oh yeah, if you’ve read a self help book, there’s an excellent chance it’s a rehash or deep dive into these concepts.\n\n",
       "file_path": "_site/7-habits.html",
       "outgoing_links": [
         "/7h-c0",
         "/be-proactive",
-        "/essentialism",
-        "/dip",
         "/first-things-first",
-        "/sharpen-the-saw"
+        "/sharpen-the-saw",
+        "/eulogy",
+        "/essentialism",
+        "/dip"
       ],
       "incoming_links": [
         "/7h-concepts",
@@ -140,7 +141,7 @@
         "/sharpen-the-saw"
       ],
       "redirect_url": "",
-      "doc_size": 11716
+      "doc_size": 12150
     },
     "/7h-concepts": {
       "py/object": "__main__.Page",
@@ -159,10 +160,15 @@
       "title": "THE FIRST 90 DAYS",
       "description": "A how to guide for starting your next job.\n\n",
       "file_path": "_site/90days.html",
-      "outgoing_links": ["/insecure", "/shame"],
+      "outgoing_links": [
+        "/grandmother",
+        "/insecure",
+        "/shame",
+        "/first-things-first"
+      ],
       "incoming_links": ["/the-manager-book"],
       "redirect_url": "",
-      "doc_size": 32267
+      "doc_size": 32381
     },
     "/about": {
       "py/object": "__main__.Page",
@@ -213,7 +219,6 @@
         "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
         "/gtd",
-        "/happy",
         "/mental-pain",
         "/voices"
       ],
@@ -406,6 +411,7 @@
       "file_path": "_site/curious.html",
       "outgoing_links": ["/shame", "/mental-pain"],
       "incoming_links": [
+        "/90days",
         "/being-a-great-manager",
         "/coaching",
         "/getting-to-yes-with-yourself",
@@ -413,7 +419,7 @@
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 12156
+      "doc_size": 12218
     },
     "/d/2010-2-15-2016-Misc-Uncategorized": {
       "py/object": "__main__.Page",
@@ -844,7 +850,11 @@
       "title": "EMOTIONAL HEALTH PRACTICES",
       "description": "Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I’ve been exploring.\n\n",
       "file_path": "_site/emotional-health.html",
-      "outgoing_links": ["/search-inside-yourself", "/voices"],
+      "outgoing_links": [
+        "/search-inside-yourself",
+        "/sharpen-the-saw",
+        "/voices"
+      ],
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
         "/irl",
@@ -853,7 +863,7 @@
         "/siy"
       ],
       "redirect_url": "",
-      "doc_size": 15338
+      "doc_size": 15357
     },
     "/essentialism": {
       "py/object": "__main__.Page",
@@ -891,6 +901,7 @@
         "/Human-Meetings"
       ],
       "incoming_links": [
+        "/7-habits",
         "/d/2016-6-25-Business-Model-You",
         "/depression",
         "/frog",
@@ -918,7 +929,7 @@
       "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
       "file_path": "_site/first-things-first.html",
       "outgoing_links": ["/7h", "/gtd", "/upstream", "/frog"],
-      "incoming_links": ["/7-habits", "/frog"],
+      "incoming_links": ["/7-habits", "/90days", "/frog"],
       "redirect_url": "",
       "doc_size": 11543
     },
@@ -998,12 +1009,12 @@
       "py/object": "__main__.Page",
       "url": "/happy",
       "title": "HAPPY",
-      "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject\n\n",
+      "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject.\n\n",
       "file_path": "_site/happy.html",
-      "outgoing_links": ["/idle-loop", "/anxiety", "/pride", "/mind-monsters"],
+      "outgoing_links": ["/idle-loop", "/moments"],
       "incoming_links": ["/d/time-off-12-2020", "/hobby", "/siy", "/timeoff"],
       "redirect_url": "",
-      "doc_size": 18638
+      "doc_size": 17464
     },
     "/hobby": {
       "py/object": "__main__.Page",
@@ -1240,7 +1251,6 @@
       "outgoing_links": ["/pride", "/mental-pain", "/voices", "/siy"],
       "incoming_links": [
         "/being-a-great-manager",
-        "/happy",
         "/idle",
         "/psychic-weight",
         "/siy"
@@ -1266,7 +1276,7 @@
       "description": "Take a few seconds to close your eyes and think back on an important memory. In that moment, did you feel a sense of elevation? Did you experience insight? Have a sense of pride? Make a connection? In the power of moments, the attributes of powerful moments are understood so that they can be better engineered.\n\n",
       "file_path": "_site/moments.html",
       "outgoing_links": ["/moments-at-work"],
-      "incoming_links": ["/moments-at-work"],
+      "incoming_links": ["/happy", "/moments-at-work"],
       "redirect_url": "",
       "doc_size": 19811
     },
@@ -1299,7 +1309,7 @@
         "/td/time-off-3-2020"
       ],
       "redirect_url": "",
-      "doc_size": 26391
+      "doc_size": 27004
     },
     "/mortality-software": {
       "py/object": "__main__.Page",
@@ -1342,9 +1352,14 @@
       "py/object": "__main__.Page",
       "url": "/physical-health",
       "title": "PHYSICAL HEALTH",
-      "description": "Physical health is the basis of energy, and thus the source of success. Physical health is about weight, fitness and sleep.\n\n",
+      "description": "Physical health is the basis of energy, and thus the source of success, and a key saw to be sharpened. Physical health is about weight, fitness and sleep.\n\n",
       "file_path": "_site/physical-health.html",
-      "outgoing_links": ["/diet", "/tech-health-toys", "/irl#physical-health"],
+      "outgoing_links": [
+        "/sharpen-the-saw",
+        "/diet",
+        "/tech-health-toys",
+        "/irl#physical-health"
+      ],
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
@@ -1353,7 +1368,7 @@
         "/tech-health-toys"
       ],
       "redirect_url": "",
-      "doc_size": 14785
+      "doc_size": 14878
     },
     "/pride": {
       "py/object": "__main__.Page",
@@ -1366,7 +1381,6 @@
         "/being-a-great-manager",
         "/coaching",
         "/comp",
-        "/happy",
         "/mental-pain",
         "/mind-monsters",
         "/psychic-weight",
@@ -1481,19 +1495,19 @@
       "py/object": "__main__.Page",
       "url": "/sharpen-the-saw",
       "title": "SHARPEN THE SAW",
-      "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 7.\n\n",
+      "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
       "file_path": "_site/sharpen-the-saw.html",
       "outgoing_links": [
         "/7h",
         "/atomic-habits",
         "/siy",
         "/physical-health",
-        "/emotional-health",
-        "/diet"
+        "/diet",
+        "/emotional-health"
       ],
-      "incoming_links": ["/7-habits"],
+      "incoming_links": ["/7-habits", "/emotional-health", "/physical-health"],
       "redirect_url": "",
-      "doc_size": 10314
+      "doc_size": 10344
     },
     "/siy": {
       "py/object": "__main__.Page",
