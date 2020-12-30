@@ -4,7 +4,11 @@
     "/7h": "/7-habits",
     "/7h-c0": "/7h-concepts",
     "/7h-c1": "/be-proactive",
+    "/7h-c2": "/end-in-mind",
     "/7h-c3": "/first-things-first",
+    "/7h-c4": "/win-win",
+    "/7h-c5": "/first-understand",
+    "/7h-c6": "/synergize",
     "/7h-c7": "/sharpen-the-saw",
     "/7habits": "/7-habits",
     "/90": "/90days",
@@ -12,6 +16,7 @@
     "/anxious": "/anxiety",
     "/atomic-habits": "/d/habits",
     "/augmentedreality": "/ar",
+    "/begin-with-the-end-in-mind": "/end-in-mind",
     "/bikes": "/bike",
     "/biking": "/bike",
     "/books": "/books-that-defined-me",
@@ -109,6 +114,7 @@
     "/voices-in-my-head": "/voices",
     "/vr": "/ar",
     "/warmth": "/warm",
+    "/win-win-or-no-deal": "/win-win",
     "/wlb": "/sustainable-work",
     "/wlb-manifesto": "/sustainable-work",
     "/work-life-balance": "/sustainable-work"
@@ -123,25 +129,31 @@
       "outgoing_links": [
         "/7h-c0",
         "/be-proactive",
+        "/end-in-mind",
         "/first-things-first",
-        "/sharpen-the-saw",
-        "/eulogy",
-        "/essentialism",
-        "/dip"
+        "/win-win",
+        "/first-understand",
+        "/synergize",
+        "/sharpen-the-saw"
       ],
       "incoming_links": [
         "/7h-concepts",
         "/be-proactive",
         "/books-that-defined-me",
         "/d/resistance",
+        "/d/time-off-12-2020",
         "/depression",
+        "/end-in-mind",
         "/eulogy",
         "/first-things-first",
+        "/first-understand",
         "/psychic-weight",
-        "/sharpen-the-saw"
+        "/sharpen-the-saw",
+        "/synergize",
+        "/win-win"
       ],
       "redirect_url": "",
-      "doc_size": 12150
+      "doc_size": 11495
     },
     "/7h-concepts": {
       "py/object": "__main__.Page",
@@ -718,10 +730,16 @@
       "title": "TIME OFF X-MAS 2020",
       "description": "It’s Corona virus X-mas, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
       "file_path": "_site/d/time-off-12-2020.html",
-      "outgoing_links": ["/time-off", "/happy", "/td/pandas", "/mental-pain"],
+      "outgoing_links": [
+        "/time-off",
+        "/happy",
+        "/td/pandas",
+        "/7-habits",
+        "/mental-pain"
+      ],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 18379
+      "doc_size": 18667
     },
     "/d/where-have-all-the-bugs-gone": {
       "py/object": "__main__.Page",
@@ -818,7 +836,11 @@
       "description": "New things start fun, but once the new wears off they are hard because of the Dip. The Dip is the long slog between starting and mastery. Unlike Dips, cul-de-sacs are places you can put in a lot of energy and nothing will come of it. You need to quit cul-de-sacs and lean into dips. Much of our failure comes from being distracted by tasks we don’t have the guts to quit. Winners quit all the time. They quit the right stuff, so their energy can be saved to cross the Dip.\n\n",
       "file_path": "_site/dip.html",
       "outgoing_links": [],
-      "incoming_links": ["/7-habits", "/d/2016-2-15-Seth-Godin-Notes", "/gtd"],
+      "incoming_links": [
+        "/d/2016-2-15-Seth-Godin-Notes",
+        "/end-in-mind",
+        "/gtd"
+      ],
       "redirect_url": "",
       "doc_size": 25002
     },
@@ -865,6 +887,17 @@
       "redirect_url": "",
       "doc_size": 15357
     },
+    "/end-in-mind": {
+      "py/object": "__main__.Page",
+      "url": "/end-in-mind",
+      "title": "BEGIN WITH THE END IN MIND",
+      "description": "All things are created twice, once in the design phase, and then again in the implementation phase. If you don’t perform the first creation, someone else will. At the extreme, imagine your eulogy, that’s the end too.\n\n",
+      "file_path": "_site/end-in-mind.html",
+      "outgoing_links": ["/7h", "/eulogy", "/essentialism", "/dip"],
+      "incoming_links": ["/7-habits"],
+      "redirect_url": "",
+      "doc_size": 9770
+    },
     "/essentialism": {
       "py/object": "__main__.Page",
       "url": "/essentialism",
@@ -873,9 +906,9 @@
       "file_path": "_site/essentialism.html",
       "outgoing_links": [],
       "incoming_links": [
-        "/7-habits",
         "/be-proactive",
         "/books-that-defined-me",
+        "/end-in-mind",
         "/frog",
         "/gtd"
       ],
@@ -901,9 +934,9 @@
         "/Human-Meetings"
       ],
       "incoming_links": [
-        "/7-habits",
         "/d/2016-6-25-Business-Model-You",
         "/depression",
+        "/end-in-mind",
         "/frog",
         "/irl",
         "/timeoff"
@@ -932,6 +965,17 @@
       "incoming_links": ["/7-habits", "/90days", "/frog"],
       "redirect_url": "",
       "doc_size": 11543
+    },
+    "/first-understand": {
+      "py/object": "__main__.Page",
+      "url": "/first-understand",
+      "title": "SEEK FIRST TO UNDERSTAND, THEN TO BE UNDERSTOOD",
+      "description": "Imagine going to the eye doctor. After hearing your complaint he takes off his glasses and hands them to you.\n“Put these on,” he says. “I’ve worn this pair of glasses for ten years now and they’ve really helped me. I have an extra pair at home; you can wear these.” So you put them on, but it only makes the problem worse. “This is terrible!” you exclaim. “I can’t see a thing!” “Well, what’s wrong?” he asks. “They work great for me. Try harder.” “I am trying,” you insist. “Everything is a blur.” “Well, what’s the matter with you? Think positively.” “Okay. I positively can’t see a thing.” “Boy, are you ungrateful!” he chides. “And after all I’ve done to help you!”\n\n",
+      "file_path": "_site/first-understand.html",
+      "outgoing_links": ["/7h", "/7h", "/siy"],
+      "incoming_links": ["/7-habits"],
+      "redirect_url": "",
+      "doc_size": 10800
     },
     "/frog": {
       "py/object": "__main__.Page",
@@ -1499,15 +1543,15 @@
       "file_path": "_site/sharpen-the-saw.html",
       "outgoing_links": [
         "/7h",
-        "/atomic-habits",
-        "/siy",
         "/physical-health",
         "/diet",
-        "/emotional-health"
+        "/emotional-health",
+        "/atomic-habits",
+        "/siy"
       ],
       "incoming_links": ["/7-habits", "/emotional-health", "/physical-health"],
       "redirect_url": "",
-      "doc_size": 10344
+      "doc_size": 10345
     },
     "/siy": {
       "py/object": "__main__.Page",
@@ -1527,6 +1571,7 @@
         "/depression",
         "/emotional-health",
         "/eulogy",
+        "/first-understand",
         "/idle",
         "/mind-monsters",
         "/psychic-weight",
@@ -1590,6 +1635,17 @@
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 12217
+    },
+    "/synergize": {
+      "py/object": "__main__.Page",
+      "url": "/synergize",
+      "title": "SYERGIZE",
+      "description": "We’ve all got stuff we’re good at, and stuff we’re bad at. We can combine these in ways that make the system greater then the sum of its parts.\n\n",
+      "file_path": "_site/synergize.html",
+      "outgoing_links": ["/7h"],
+      "incoming_links": ["/7-habits"],
+      "redirect_url": "",
+      "doc_size": 9438
     },
     "/tags": {
       "py/object": "__main__.Page",
@@ -2102,6 +2158,17 @@
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 9868
+    },
+    "/win-win": {
+      "py/object": "__main__.Page",
+      "url": "/win-win",
+      "title": "WIN/WIN OR NO DEAL",
+      "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
+      "file_path": "_site/win-win.html",
+      "outgoing_links": ["/7h"],
+      "incoming_links": ["/7-habits"],
+      "redirect_url": "",
+      "doc_size": 12522
     }
   }
 }
