@@ -11,7 +11,9 @@ tags:
   - book-notes
 ---
 
-Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself.
+Before you can negotiate with others, you need to be in sync with yourself. This book applies the [negotiating principles](/gty) to yourself. It's an awkward application of the model, but this book is filled with good concepts regardless.
+
+{%include amazon.html asin="0062363417" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -26,8 +28,6 @@ Before you can negotiate with others, you need to be in sync with yourself. This
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-This is a summary of [Getting to yes with yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 
 ### 1) Put yourself in your shoes &#x2611;
 
@@ -155,3 +155,5 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
   - When you succeed with yourself, and with others, then the whole world benefits
 - Winning the game of life
   - It's about creating inner satisfaction, which makes your life and relationships better. It's hard but worth it.
+
+This is a summary of [Getting to yes with yourself](https://www.amazon.com/Getting-Yes-Yourself-What-Truly/dp/0062363417)
