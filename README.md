@@ -11,6 +11,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
     - [Back Links](#back-links)
     - [Search](#search)
     - [No broken links](#no-broken-links)
+    - [Select a Random Page](#select-a-random-page)
     - [Keyboard features](#keyboard-features)
     - [Comments](#comments)
 - [Key authoring features](#key-authoring-features)
@@ -38,6 +39,10 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
 ### Search
 
 ### No broken links
+
+### Select a Random Page
+
+- Click the monkey on this page!
 
 ### Keyboard features
 
