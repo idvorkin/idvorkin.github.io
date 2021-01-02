@@ -1,12 +1,12 @@
 ---
 layout: post
-no-render-title: true
 title: Cloud First Applications
 ---
 
 The world is now on the cloud, here are my random notes on the topic.
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Micro services](#micro-services)
