@@ -20,18 +20,17 @@ _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Igor is a ...](#igor-is-a-)
-  - [Dealer of smiles and wonder](#dealer-of-smiles-and-wonder)
-  - [Mostly car free spirit](#mostly-car-free-spirit)
-  - [Disciple of the 7 habits of highly effective people](#disciple-of-the-7-habits-of-highly-effective-people)
-  - [Fit fellow](#fit-fellow)
-  - [Emotionally healthy human](#emotionally-healthy-human)
-  - [Husband to Tori - his life long partner.](#husband-to-tori---his-life-long-partner)
-  - [Technologist](#technologist)
-  - [Professional](#professional)
-  - [Family man](#family-man)
-  - [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
-  - [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
+- [Dealer of smiles and wonder](#dealer-of-smiles-and-wonder)
+- [Mostly car free spirit](#mostly-car-free-spirit)
+- [Disciple of the 7 habits of highly effective people](#disciple-of-the-7-habits-of-highly-effective-people)
+- [Fit fellow](#fit-fellow)
+- [Emotionally healthy human](#emotionally-healthy-human)
+- [Husband to Tori - his life long partner.](#husband-to-tori---his-life-long-partner)
+- [Technologist](#technologist)
+- [Professional](#professional)
+- [Family man](#family-man)
+- [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
+- [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -39,8 +38,6 @@ _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 _Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into entertaining others at my funeral_
 
 _For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
-
-## Igor is a ...
 
 ### Dealer of smiles and wonder
 
