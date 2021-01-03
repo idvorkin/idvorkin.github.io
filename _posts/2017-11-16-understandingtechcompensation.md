@@ -18,7 +18,7 @@ Different companies use different compensation models. To compare models use tot
 
 - [Total Compensation - It gets complicated](#total-compensation---it-gets-complicated)
     - [Initial Grant Models - By Company](#initial-grant-models---by-company)
-    - [Steady State Comp Approaches - Indepedant vs Total Comp](#steady-state-comp-approaches---indepedant-vs-total-comp)
+    - [Steady State Comp Approaches - Independent vs Total Comp](#steady-state-comp-approaches---independent-vs-total-comp)
     - [Assumptions](#assumptions)
 - [FAQ](#faq)
     - [Why do I feel so bad?](#why-do-i-feel-so-bad)
@@ -74,7 +74,7 @@ Each company does a different comp model. I'll list the ones I've been told. Thi
 | Indeed    | Yes              | Yes                   | It's a private company and using something like stocks called LTIPs very complex |
 | Microsoft | Yes              | Yes                   | Unknown                                                                          |
 
-### Steady State Comp Approaches - Indepedant vs Total Comp
+### Steady State Comp Approaches - Independent vs Total Comp
 
 The details get complex, so these are simplified models to build a mental model, not accurate models to compute compensation.
 
@@ -131,7 +131,7 @@ For new hires, offers tend to be at the top of (if not over) the pay range but f
 
 The industry range for offers is higher because 1) you don't want to lose a good candidate due to a higher competing offer 2) you tend to hire people who are already well experienced in the band. 3) As a result of the high level of experience, you can be optimistic that person will be promoted shortly, and if they don't the extra compensation will be corrected by the 4 year cliff.
 
-You hire people who tend to be high in the band because it ensures they'll be successful. Changing companies has significant head winds (new culture, new tech, new process, no network). If someone is at the bottom of the band when they interivew, they tend to be downlevelled to avoid them failing at the higher level.
+You hire people who tend to be high in the band because it ensures they'll be successful. Changing companies has significant head winds (new culture, new tech, new process, no network). If someone is at the bottom of the band when they interview, they tend to be downlevelled to avoid them failing at the higher level.
 
 ### What is the four year cliff?
 
