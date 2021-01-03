@@ -18,6 +18,10 @@ Getting To Yes is the seminal book on negotiation. It's the deep dive into [win 
 
 ### Know your BATNA
 
+Best Alternative to Negotiated Agreement. Essentially what you get if you don't reach an agreement. If your BATNA exceeds what you'd get in the negotiation, you should walk away and take your BATNA. E.g.
+
+Imagine you're negotiating with Jerry on selling a knife. If Jerry doesn't take the knife you can always sell the knife to Bob for 100$, so if Jerry gives you less then 100$, you can walk away and sell it to Jerry.
+
 {%include amazon.html asin="B0051SDM5Q" %}
 
 Also check out [Getting to yes with yourself](getting-to-yes-with-yourself)
