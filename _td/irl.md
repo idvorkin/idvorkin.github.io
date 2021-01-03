@@ -3,8 +3,7 @@ layout: post
 no-render-title: true
 title: In Real Life Diary
 permalink: /irl
-redirect_from:
-    /in-real-life
+redirect_from: /in-real-life
 ---
 
 I started writing a technical blog to help me remember the many things I explore. One day, I realized I've got a real life too. Here's a place I can remember the many things I explore IRL (In real Life)
@@ -27,7 +26,6 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Gym Stuff](#gym-stuff)
     - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
 - [Emotional Health](#emotional-health)
-    - [The Full Post](#the-full-post)
     - [Meditation](#meditation)
     - [Therapist](#therapist)
 - [Cognitive Health](#cognitive-health)
@@ -39,13 +37,8 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Fanny Pack](#fanny-pack)
     - [Gym Bag](#gym-bag)
     - [Work Bag](#work-bag)
-- [Bikes](#bikes)
-    - [Bike accouterments](#bike-accouterments)
+- [Biking](#biking)
 - [Car Tech](#car-tech)
-- [Morning Routine](#morning-routine)
-    - [Weekend morning routine](#weekend-morning-routine)
-    - [Weekday morning routine](#weekday-morning-routine)
-    - [Morning Kryptonite](#morning-kryptonite)
 - [Tech](#tech)
     - [Computers](#computers)
     - [Monitors](#monitors)
@@ -125,11 +118,7 @@ I don't use this, but it's under my desk. The day I got it and used it, I decide
 
 https://www.amazon.com/gp/product/B07KMNVXCT/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
 
-## Emotional Health
-
-### The Full Post
-
-My notes on [emotional health](/emotional-health).
+## [Emotional Health](/emotional-health)
 
 ### Meditation
 
@@ -196,13 +185,9 @@ There's also the horizontal version - which is slightly bigger but also nice:
 
 {%include amazon.html asin="B07WNPPF72;B07H4QYC2D" %}
 
-## Bikes
+## [Biking](/bike)
 
 I **love** not driving. Biking is an awesome form of transit. It took a while but I concluded I have several use cases so need several bikes. In fact,
-
-### Bike accouterments
-
-[Biking on my blog](/bike)
 
 ## Car Tech
 
@@ -211,32 +196,6 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 - Remote car starter - ~ 200\$ and you can start your car from the house so that it's warm and toasty when you get in.
 - Wireless Air Play - ~ 500\$. OMG - having CarPlay (especially on iOS 13) without plugging in your phone - wow!
 - Back up Camera ~ 30\$. OMG - Hard to believe I went years without one.
-
-## Morning Routine
-
-At my best, I roll out of bed either when my eyes open or at 5am, what ever comes first.
-
-I also love getting my morning hug from my kids, but now that Zach's older (9), I'm down to just getting the hugs from Amelia - who is 5.
-
-### Weekend morning routine
-
-On the weekends, the gym opens at 8, so it's essential I drink my coffee in my home office chair so I work on whatever is most important to me, often reading or writing. At 7:30 it's time to drag my but to the gym.
-
-Post gym I'll either hit the coffee shop to do some more writing, or head home to spend the day with my family.
-
-### Weekday morning routine
-
-At my best, I roll out of bed either when my eyes open or at 5am, what ever comes first.
-
-The gym opens at 5:30, and I try to be there by 6. After my work out, I often chillax with my next priority being walking the kids to school. Walking the kids to school has surprisingly been a major quality of life improvement for a very small impact to my day.
-
-### Morning Kryptonite
-
-I have two common failure modes to my morning routine.
-
-- Starting my day by sitting in my easy chair drinking my coffee. This mindless activity has me skipping those things that are important to me.
-- Hitting snooze when my alarm goes off. The worst of all words, not sleeping, and not being up and doing stuff.
-- Lying in bed awake when I wake up before 5. Sometimes I wake up and can't fall back asleep @ 3 or 4 (which isn't crazy cuz sometimes I go to bed @ 7 or 8). Similar to hitting snooze, I'm not sleeping, and I'm not accomplishing anything.
 
 ## Tech
 

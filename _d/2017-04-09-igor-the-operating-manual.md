@@ -17,10 +17,13 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 <!-- vim-markdown-toc GFM -->
 
 - [Work](#work)
+    - [Thoughts from joining Facebook](#thoughts-from-joining-facebook)
+    - [Thoughts from joining Amazon](#thoughts-from-joining-amazon)
     - [Individual Contributor](#individual-contributor)
     - [Functional Skills to develop](#functional-skills-to-develop)
     - [Realistic expectations for a new leader](#realistic-expectations-for-a-new-leader)
     - [Manager](#manager)
+    - [Dream Job](#dream-job)
     - [My super powers](#my-super-powers)
         - [Relationships](#relationships)
         - [Technical Depth and Breadth](#technical-depth-and-breadth)
@@ -30,7 +33,6 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
         - [Bean counting](#bean-counting)
         - [Committing and describing relative to ideal, not relative to reality.](#committing-and-describing-relative-to-ideal-not-relative-to-reality)
         - [Under estimating technical complexity](#under-estimating-technical-complexity)
-    - [Raw](#raw)
 - [Health and habits](#health-and-habits)
     - [Physical](#physical)
     - [Emotional](#emotional)
@@ -41,6 +43,10 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Biking](#biking)
     - [Magic](#magic)
     - [Juggling](#juggling)
+- [Morning Routine](#morning-routine)
+    - [Weekend morning routine](#weekend-morning-routine)
+    - [Weekday morning routine](#weekday-morning-routine)
+    - [Morning Kryptonite](#morning-kryptonite)
 - [Family](#family)
     - [Husband](#husband)
     - [Father](#father)
@@ -51,7 +57,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
         - [Physical health](#physical-health)
         - [Not spending enough time with them](#not-spending-enough-time-with-them)
         - [Diet and Weight](#diet-and-weight)
-    - [Financial Security and retirement](#financial-security-and-retirement)
+    - [Financial Security](#financial-security)
         - [The point of money](#the-point-of-money)
         - [What would I do for less money](#what-would-i-do-for-less-money)
         - [Making more vs spending more](#making-more-vs-spending-more)
@@ -61,7 +67,11 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 ## Work
 
-At the end of 2016, I joined Amazon to learn the business of software, to learn to write and to live by the leadership principles. This was an excellent choice and I love it. It's tough though, and here are some things I frequently forget:
+### Thoughts from joining Facebook
+
+### Thoughts from joining Amazon
+
+At the end of 2016, I joined Amazon to learn the business of software, to learn to write and to live by the leadership principles. This was an excellent choice and I love it. It's tough though, and here are some things I frequently forget
 
 ### Individual Contributor
 
@@ -88,6 +98,8 @@ Top priorities:
 - Defining Success Qualitatively and Quantitatively.
 - Setting the vision for the team
 
+### [Dream Job](/dream-job)
+
 ### My super powers
 
 #### Relationships
@@ -107,8 +119,6 @@ Top priorities:
 #### Committing and describing relative to ideal, not relative to reality.
 
 #### Under estimating technical complexity
-
-### Raw
 
 ## Health and habits
 
@@ -136,6 +146,32 @@ I've already got enough hobbies - biking, magic, juggling. I get my biking fix n
 
 ### [Juggling](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
 
+## Morning Routine
+
+At my best, I roll out of bed either when my eyes open or at 5am, what ever comes first.
+
+I also love getting my morning hug from my kids, but now that Zach's older (9), I'm down to just getting the hugs from Amelia - who is 5.
+
+### Weekend morning routine
+
+On the weekends, the gym opens at 8, so it's essential I drink my coffee in my home office chair so I work on whatever is most important to me, often reading or writing. At 7:30 it's time to drag my but to the gym.
+
+Post gym I'll either hit the coffee shop to do some more writing, or head home to spend the day with my family.
+
+### Weekday morning routine
+
+At my best, I roll out of bed either when my eyes open or at 5am, what ever comes first.
+
+The gym opens at 5:30, and I try to be there by 6. After my work out, I often chillax with my next priority being walking the kids to school. Walking the kids to school has surprisingly been a major quality of life improvement for a very small impact to my day.
+
+### Morning Kryptonite
+
+I have two common failure modes to my morning routine.
+
+- Starting my day by sitting in my easy chair drinking my coffee. This mindless activity has me skipping those things that are important to me.
+- Hitting snooze when my alarm goes off. The worst of all words, not sleeping, and not being up and doing stuff.
+- Lying in bed awake when I wake up before 5. Sometimes I wake up and can't fall back asleep @ 3 or 4 (which isn't crazy cuz sometimes I go to bed @ 7 or 8). Similar to hitting snooze, I'm not sleeping, and I'm not accomplishing anything.
+
 ## Family
 
 ### Husband
@@ -158,11 +194,11 @@ Like most folks I have triggers and mental quick sand which I can get trapped in
 
 #### Not spending enough time with them
 
-#### Diet and Weight
+#### [Diet and Weight](/diet)
 
-### [Financial Security and retirement](/money)
+### [Financial Security](/money)
 
-#### The point of money
+#### The point of [money](/money)
 
 Money isn;t just to make piles, it's to enable you to do stuff. Stuff does not equal stuff you don't use, stuff is actually often experiences. And most of the best stuff you can't buy. Yup, it's doing and it's with whom you are doing it.
 
