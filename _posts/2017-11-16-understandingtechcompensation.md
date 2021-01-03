@@ -129,9 +129,9 @@ Now people want to get raises every year, so companies would give someone promot
 
 For new hires, offers tend to be at the top of (if not over) the pay range but fairness continues to be the doctrine.
 
-The industry range for offers is higher because 1) you don't want to lose a good candidate 2) you tend to hire people high in the band. 3) You can be optimistic that person will be promoted shortly, and if they don't it'll be corrected by the 4 year cliff.
+The industry range for offers is higher because 1) you don't want to lose a good candidate due to a higher competing offer 2) you tend to hire people who are already well experienced in the band. 3) As a result of the high level of experience, you can be optimistic that person will be promoted shortly, and if they don't the extra compensation will be corrected by the 4 year cliff.
 
-New hires tend to be high in the band because it ensures they'll be successful. Changing companies has significant head winds (new culture, new tech, new process, no network). If someone is at the bottom of the band, they tend to be downlevelled to avoid them failing.
+You hire people who tend to be high in the band because it ensures they'll be successful. Changing companies has significant head winds (new culture, new tech, new process, no network). If someone is at the bottom of the band when they interivew, they tend to be downlevelled to avoid them failing at the higher level.
 
 ### What is the four year cliff?
 
