@@ -54,3 +54,14 @@ _(BTW the order below is deliberate,it's the order of the voices i want to talk 
 
 - **Mo** - my anxiety about money (retired since the the stock market went through roof).
 - **Wilma** - my end end of month anxiety around hitting my weight goals.
+
+<orbit-reviewarea color="cyan">
+    <orbit-prompt
+    question="Who is the voice of Habit?"
+    answer="Harry"
+    />
+    <orbit-prompt
+    question="Who is Carl?"
+    answer="The voice of my condfidence"
+    />
+</orbit-reviewarea>
