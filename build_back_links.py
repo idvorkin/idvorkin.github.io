@@ -25,7 +25,7 @@ class Page:
     outgoing_links: List[PathType]
     incoming_links: List[PathType]
     redirect_url: PathType = PathType("")
-    doc_size: int=0
+    doc_size: int = 0
 
     def has_redirect(self):
         return self.redirect_url != ""
@@ -114,7 +114,7 @@ class LinkBuilder:
             descriptionTag = soup.find("meta", property="og:description")
             description = descriptionTag["content"] if descriptionTag else "..."
 
-            links = [tag["href"] for tag in soup.find_all("a")]
+            links = [tag["href"] for tag in soup.find_all("a") if "href" in tag.attrs]
             links = [link for link in links if jekyll_config.is_allow_outgoing(link)]
 
             return Page(
