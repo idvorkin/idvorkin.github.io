@@ -978,8 +978,12 @@ Hopefully, early in your hiring process you've been thinking about your charter.
   - How long till we stabilize?
   - Why did this happen?
   - What choices do they have?
+  - What happens to my existing/ongoing project
+  - Is it just gonna happen again in 6 months
+  - Did we do something wrong
 - Focus the team on the good parts, keep them [motivated](#l-motivation)
 - Flight Risks
+- What are the exciting opportunities, and why are they better then the old ones
 - Explain why it's right for the business.
 - Telling the team
 
