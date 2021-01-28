@@ -82,8 +82,10 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [How do you coach employee back to success?](#how-do-you-coach-employee-back-to-success)
 - [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
     - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
+    - [Telling in the team](#telling-in-the-team)
+    - [The FAQ](#the-faq)
     - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
-    - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
+    - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
     - [The re-charter: When charter changes](#the-re-charter-when-charter-changes)
 - [Personal Motivations](#personal-motivations)
     - [Why is management attractive to Igor?](#why-is-management-attractive-to-igor)
@@ -967,25 +969,82 @@ Hopefully, early in your hiring process you've been thinking about your charter.
 - Build out an early roadmap and product.
 - Keep learning and improving as people join.
 
+### Telling in the team
+
+Assume this will be very hard on the team. It's critical they hear it from you first. It shows respect, and lets you reduce the largest anxieties. This will be emotional for a lot of people, and the team will be deeply influenced by your emotions. While you should acknowledge the loss, and the potential uncertainty and upcoming bumpiness, you **must be positive about the future**.
+
+To ensure everyone hears from you first I recommend the following:
+
+The days before:
+
+1. Write an FAQ for the questions you expect.
+1. Practice your story the day before with people you trust, review and tune your FAQ
+
+The day of:
+
+1. Clear your day of all meetings.
+1. Schedule team meeting at the end of the day.
+1. Make a list of everyone on the team and when you'll be telling them:
+   - Check your timing to make sure you can get everyone done, taking into consideration when people come in.
+   - Write out what you think their top concerns will be, to ensure you focus on them
+   - After every meeting take notes about their concerns, and good talking points for future meetings.
+1. Meet folks ad-hoc first starting first thing in the morning to have enough time.
+1. Plan to grab people ad-hoc, and give them as much time as they need. This ensures - You'll be on time to this high impact meeting. - You'll not be in a rush, you can give people as much time as they need. - You have time to take notes after the meetings and tune your message, and re-charge your positivity
+1. When deciding the order, start with the folks that'll take it best.
+   - This will let you have some "easier sessions" to tune your message
+   - This will give you new talking points, and get new questions
+1. When talking to people
+   - Make sure you have high energy reserves, but keep your energy low and caring, talk slowly like this is the first time you've told anyone.
+   - Warn people it's gonna be a big surprise
+   - Remind people they matter and that's why you made sure they heard it from you first.
+   - Let them know who you've told and who they can talk to.
+   - Remind them it's essential not to talk to anyone else till the team meeting so everyone hears it from you.
+   - If they are in shock, and don't know what to talk about, ask them if they'd like you to tell them about your experience, and common questions others have
+   - Tell them they'll have lots more questions, you'll talk through them at the team meeting, and they'll have more questions in the coming days, and that you'll book time with them over the next few days.
+   - Make a note of how they took it, and if you get more talking points
+   - Tell the people that are more positive how they can help make it easier on the team, think about when they can jump in during the team meeting.
+   - Use silence to let people digest and come up with questions
+1. In the team meeting
+   - Tell people you'll recap what you talked about, and give a more complete story
+   - Hit all your FAQs, including the hard ones
+   - Prompt the people that can add positive ideas (who you already asked) to share the positive parts
+   - Be available after the meeting, and offer to talk to anyone
+   - Remind people you don't have all the answers yet but you'll figure them out together.
+   - Give people as much autonomy as possible, tell them they should tell you the best way to wrap up their projects.
+1. In the next few days:
+   - Be around a lot, offer to talk to anyone anytime.
+   - Schedule meetings with everyone in case they have more questions. If they don't, you can leave early.
+
+### The FAQ
+
+- How does this impact my review?
+- How long till we stabilize?
+- Why did this happen?
+- Did we do something wrong
+- What choices do we have? Can we follow the re-org
+- What happens to my existing/ongoing project
+- How is their existing work evidence of greatness
+- Is it just gonna happen again in 6 months
+- What are the exciting opportunities, and why are they better then the old ones
+- Why is this re-org designed the way it, why would you have done the re-org this way.
+- Will more people be hired
+- Answer how to motivate them:
+  - Autonomy - Let them recommend the transition plan.
+  - Mastery - Remind them how good they are and how the team will succeed on the next project
+  - Purpose - Remind them of the continuity of purpose and
+  - [Motivation Deep Dive](#l-motivation)
+- What am I working on next
+- How long till we have more clarity
+- Why is this a good thing (people, tech, purpose)
+- How long have you known
+- How long till you felt good about it
+- Domain specific questions
+
 ### The split: When a team outgrows a manager
 
-### The merge: When a manager leaves
+### The merge or you leaving the team: When a manager leaves
 
 ### The re-charter: When charter changes
-
-- Be honest, empathize, acknowledge the downsides, and address the real concerns
-  - How does this impact my review?
-  - How long till we stabilize?
-  - Why did this happen?
-  - What choices do they have?
-  - What happens to my existing/ongoing project
-  - Is it just gonna happen again in 6 months
-  - Did we do something wrong
-- Focus the team on the good parts, keep them [motivated](#l-motivation)
-- Flight Risks
-- What are the exciting opportunities, and why are they better then the old ones
-- Explain why it's right for the business.
-- Telling the team
 
 ## Personal Motivations
 
