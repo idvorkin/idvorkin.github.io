@@ -425,7 +425,7 @@
       "title": "ISN'T THAT CURIOUS",
       "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
       "file_path": "_site/curious.html",
-      "outgoing_links": ["/shame", "/mental-pain"],
+      "outgoing_links": ["/shame", "/happy#compassion", "/mental-pain"],
       "incoming_links": [
         "/90days",
         "/being-a-great-manager",
@@ -435,7 +435,7 @@
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 12309
+      "doc_size": 12406
     },
     "/d/2010-2-15-2016-Misc-Uncategorized": {
       "py/object": "__main__.Page",
@@ -1091,7 +1091,7 @@
       "outgoing_links": ["/idle-loop", "/moments"],
       "incoming_links": ["/d/time-off-12-2020", "/hobby", "/siy", "/timeoff"],
       "redirect_url": "",
-      "doc_size": 18962
+      "doc_size": 20518
     },
     "/hobby": {
       "py/object": "__main__.Page",
@@ -2057,7 +2057,7 @@
       ],
       "incoming_links": ["/being-a-great-manager", "/coaching"],
       "redirect_url": "",
-      "doc_size": 100910
+      "doc_size": 105733
     },
     "/the-recruiter-does-not-think-you-are-hot": {
       "py/object": "__main__.Page",
