@@ -16,7 +16,6 @@ redirect_from:
 Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.
 
 <!-- prettier-ignore-start -->
-<!-- prettier-ignore-end -->
 
 <!-- vim-markdown-toc GFM -->
 
@@ -26,10 +25,11 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 - [Curious questions for mental pain and its antidotes](#curious-questions-for-mental-pain-and-its-antidotes)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ### Judgment vs Curiosity
 
-Judgment throws ups barriers and causes us to hide the truth which can lead to guilt and [shame](/shame). Curiosity is gentle and helps us find what is going on.
+Judgment throws ups barriers and causes us to hide the truth which can lead to guilt and [shame](/shame). Curiosity is gentle and helps us find what is going on. [Compassion](/happy#compassion) reduces judgment, reducing the barrier to compassion.
 
 ### Compassionate Consequences
 
