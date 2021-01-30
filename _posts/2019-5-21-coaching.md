@@ -20,25 +20,26 @@ tags:
 Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [The coaching mindset](#the-coaching-mindset)
 - [Frequent coaching situations](#frequent-coaching-situations)
 - [The 7 goto coaching questions](#the-7-goto-coaching-questions)
 - [Questions for specific situations](#questions-for-specific-situations)
-    - [To clarify thinking](#to-clarify-thinking)
-    - [To challenge assumptions](#to-challenge-assumptions)
-    - [To gather more evidence](#to-gather-more-evidence)
-    - [To find more alternatives](#to-find-more-alternatives)
-    - [To build strategic insight](#to-build-strategic-insight)
-    - [To increase productivity, effectiveness, and efficiency](#to-increase-productivity-effectiveness-and-efficiency)
+  - [To clarify thinking](#to-clarify-thinking)
+  - [To challenge assumptions](#to-challenge-assumptions)
+  - [To gather more evidence](#to-gather-more-evidence)
+  - [To find more alternatives](#to-find-more-alternatives)
+  - [To build strategic insight](#to-build-strategic-insight)
+  - [To increase productivity, effectiveness, and efficiency](#to-increase-productivity-effectiveness-and-efficiency)
 - [The hows of coaching](#the-hows-of-coaching)
-    - [Coach for task completion vs insight](#coach-for-task-completion-vs-insight)
-    - [Keep people safe while coaching using human safety models](#keep-people-safe-while-coaching-using-human-safety-models)
-    - [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
-    - [Encourange trying to solve own problem: How would you handle this?](#encourange-trying-to-solve-own-problem-how-would-you-handle-this)
-    - [Say No: Say yes slowly](#say-no-say-yes-slowly)
-    - [Focus feedback on "you", not them.](#focus-feedback-on-you-not-them)
+  - [Coach for task completion vs insight](#coach-for-task-completion-vs-insight)
+  - [Keep people safe while coaching using human safety models](#keep-people-safe-while-coaching-using-human-safety-models)
+  - [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
+  - [Encourange trying to solve own problem: How would you handle this](#encourange-trying-to-solve-own-problem-how-would-you-handle-this)
+  - [Say No: Say yes slowly](#say-no-say-yes-slowly)
+  - [Focus feedback on you, not them](#focus-feedback-on-you-not-them)
 - [One on One Questions](#one-on-one-questions)
 - [Situational coaching](#situational-coaching)
 - [Other coaching tools](#other-coaching-tools)
@@ -51,7 +52,7 @@ Coaching is like midwifery. A midwife can not give birth to the baby, she facili
 
 {%include blob_image_float_right.html src="icon-birth.png" %}
 
-Real understanding comes from within, and can not be imparted by someone else. Ask questions, guide, and facilitate. When you 'tell the solution' at best the solution will be forgotten, at worst it will offend and shutdown the coachee damaging the relationship.
+Real understanding comes from within, and is not imparted by someone else. Ask questions, guide, and encourage. When you 'tell the solution' at best the solution is forgotten, at worst it offends and shutdowns down the coachee, damaging the relationship.
 
 When being a coach maintain the following mindset.
 
@@ -72,7 +73,7 @@ Some coaching situations are common, so I have deep dived into them.
 
 ### The 7 goto coaching questions
 
-When folks come to you questions or are stuck, that's a great time to provide rapid in the moment coaching. These 7 questions are a great starting point to help coachee build the required insights for solving their own problem:
+When folks have questions or appear stuck, that's a great time to provide rapid in the moment coaching. These 7 questions are a great starting point to help coachee build the required insights for solving their own problem:
 
 - Open: What's on your mind?
 - Expand: What Else?
@@ -83,12 +84,12 @@ When folks come to you questions or are stuck, that's a great time to provide ra
 - Focus Request: How can I help?
 - Focus Trade off: If you say yes to this, what will you have to say no to?
   - Omission - automatic no
-  - Commission - what you must deliberately give up to make it happen (relationships/projects/)
+  - Commission - what you must give up to make it happen (relationships/projects/)
 - Close the loop: What was most useful for you in this conversation?
 
 ### Questions for specific situations
 
-Depending on what insights you want to provide, you need to use different questions. Below are some questions, the book [Decisive](/decisive) has many more.
+Depending on what insights you want to provide, you need to use different questions. Some questions are below, [Decisive](/decisive) has a plethora of other questions.
 
 #### To clarify thinking
 
@@ -129,13 +130,13 @@ Depending on what insights you want to provide, you need to use different questi
 
 This request often comes in as the wrong question, need to deep dive into where the problem is coming from.
 
-1. Focusing the right things:
+1. Find the right thing:
 
    - The top optimization is spending zero time on the wrong thing. How often do you feel your spending time on the wrong thing?
    - Taking time to explore is important, how are you splitting time between, learning, exploring and doing?
    - What does success look like, how is your work supporting that success?
 
-2. Being Motiviated
+2. Test for motivation:
 
    - On a scale of 1/10 how energized are you doing this work?
    - When are times you're most energized and most drained? Any patterns
@@ -197,7 +198,7 @@ _More details in [Search inside yourself - Leadership and social skills](/search
 - That is a hard problem
 - Not alone, lots of people struggle with this.
 
-#### Encourange trying to solve own problem: How would you handle this?
+#### Encourange trying to solve own problem: How would you handle this
 
 Great question, I have some ideas, but first, how would you tackle this? What else?
 
@@ -211,19 +212,19 @@ Great question, I have some ideas, but first, how would you tackle this? What el
 - What do you recommend I take off my plate to get this done?want done?
 - _If you still have to say no_ Make sure you're saying no to task, no to person.
 
-#### Focus feedback on "you", not them.
+#### Focus feedback on you, not them
 
 From the superb HBR article: [The feedback fallacy](https://hbr.org/2019/03/the-feedback-fallacy). If you don't read the article (which I'll also summarize)
-take this high order bit of focusing the feedback on "you" not on them. E.g. feedback should be "I expereinced X", instead of you screwed up X.
+take this high order bit of focusing the feedback on "you" not on them. E.g. feedback should be "I expereinced X" instead of you screwed up X.
 
 | Easy way                                               | Effective Way                                                                                                     |
 | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | Can I give you some feedback?                          | Here’s my reaction                                                                                                |
-| Good job!                                              | Here are three things that really worked for me. What was going through your mind when you did them?              |
+| Good job!                                              | Here are three things that worked for me. What was going through your mind when you did them?                     |
 | Here’s what you should do.                             | Here’s what I would do.                                                                                           |
 | Here’s where you need to improve                       | Here’s what worked best for me, and here’s why                                                                    |
-| That didn’t really work.                               | When you did x, I felt y or I didn’t get that.                                                                    |
-| You need to improve your communication skills.         | Here’s exactly where you started to lose me.                                                                      |
+| That didn’t work.                                      | When you did x, I felt y or I didn’t get that.                                                                    |
+| You need to improve your communication skills.         | Here’s where you started to lose me.                                                                              |
 | You need to be more responsive.                        | When I don’t hear from you, I worry that we’re not on the same page.                                              |
 | You lack strategic thinking.                           | I’m struggling to understand your plan.                                                                           |
 | You should do x [in response to a request for advice]. | What do you feel you’re struggling with, and what have you done in the past that’s worked in a similar situation? |
@@ -236,12 +237,12 @@ See the One on One Sections And One on One prompts in [the manager book](/the-ma
 
 As people learn new skills they experience a learning curve, which requires different support at different points on the curve. [Situational leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory) describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.
 
-| Competent/Confident | Confident                                                   | Scared                                                          |
-| ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |
-| Incompetent         | 1. Foolish Novice - Thinks they can do it, but really can't | 2. Novice - Knows they can't do it, and feels bad               |
-| Competent           | 4. Expert - Know they can do it, and they're right          | 3. Journey man - Thinks they can't do it, but actually they can |
+| Competent/Confident | Confident                                            | Scared                                                          |
+| ------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
+| Incompetent         | 1. Foolish Novice - Thinks they can do it, but can't | 2. Novice - Knows they can't do it, and feels bad               |
+| Competent           | 4. Expert - Know they can do it, and they're right   | 3. Journey man - Thinks they can't do it, but actually they can |
 
-In each of these stages different support is required.
+Each stage requires different types of support
 
 | Competent/Confident | Confident                                      | Scared                                          |
 | ------------------- | ---------------------------------------------- | ----------------------------------------------- |
