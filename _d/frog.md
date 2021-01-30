@@ -13,9 +13,11 @@ tags:
   - how igor ticks
 ---
 
-Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing of the concepts into my favorite mental models, the chapter titles are preserved if you want to go look them up.
+Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapeter titles come from the book.
 
-In case
+But first, a word from our sponsor, the [resistance](/resistance)
+
+_The resistance is the personification of the force that stops you from doing all important things. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity._
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -30,10 +32,6 @@ In case
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-But first, a word from our sponsor, the [resistance](/resistance)
-
-_The resistance is the personification of the force that stops you from doing all important things. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity._
 
 ### Start with Why
 
@@ -51,7 +49,7 @@ _The resistance is the personification of the force that stops you from doing al
 
 **12.** **Identify your key constraints:** Determine the bottlenecks or choke points, internal or external, that set the speed at which you achieve your most important goals, and focus on alleviating them.
 
-**6.** **Use the [urgent and import](/first-things-first) matrix, and ABCDE framework continually:** Before you begin work on a list of tasks, take a few moments to organize them by value and priority so you can be sure of working on your most important activities. Items should be done in alphabetical order.
+**6.** **Use the [urgent and import](/first-things-first) matrix, and ABCDE framework continually:** Before you begin work on a list of tasks, take a few moments to organize them by value and priority so you can be sure of working on your most important activities. Do items in alphabetical order.
 
 ### Execution
 
@@ -75,13 +73,13 @@ _The resistance is the personification of the force that stops you from doing al
 
 ### Shape the path: Make it easy on yourself
 
-**11.** **Sharpen the saw** The more knowledgeable and skilled you become at your key tasks, the faster you start them and the sooner you get them done. Determine exactly what it is that you are very good at doing, or could be very good at, and throw your whole heart into doing those specific things very, very well.
+**11.** **Sharpen the saw** The more knowledgeable and skilled you become at your key tasks, the faster you start them and the sooner you get them done. Determine exactly what you are very good at doing, or could be very good at, and throw your whole heart into doing those specific things very, very well.
 
 **19.** **Create power hours:** Organize your days around large blocks of time so you can concentrate for extended periods on your most important tasks.
 
 **17.** **Focus your attention:** Stop the interruptions and distractions that interfere with completing your most important tasks. This is essential dangerous if you allow this to break up the large time chunks by just checking your phone/news/messages/TikTok, or yak shaving.
 
-**21.** **Single handle every task:** Set clear priorities, start immediately on your most important task, and then work without stopping until the job is 100 percent complete. This is the real key to high performance and maximum personal productivity.
+**21.** **Single handle every task:** Set clear priorities, start your most important tasks now, and then work without stopping until the job is 100 percent complete. This is the key to peak personal productivity.
 
 **16.** **Technology is a wonderful servant:** Use your technological tools to confront yourself with what is most important and protect yourself from what is least important.
 
@@ -100,6 +98,6 @@ I need to process how to merge the important and not urgent matrix with the ABCD
 
 “B” items are urgent and not important **U/NI** - something you should do. But it has only mild consequences. These are the tadpoles of your work life. This means that someone may be unhappy or inconvenienced if you don’t do one of these tasks, but it is nowhere as important as an A task. Returning an unimportant telephone message or reviewing your e-mail would be a B task.
 
-A “C” task is defined as something that would be _nice_ to do but for which there are no consequences at all, whether you do it or not. C tasks include phoning a friend, having coffee or lunch with a coworker, and completing some personal business during work hours. These sorts of activities have no effect at all on your work life.
+A “C” task is _nice_ to do but there are no consequences if you don't use it. C tasks include phoning a friend, having coffee or lunch with a coworker, and completing some personal business during work hours. These sorts of activities have no effect at all on your work life.
 
 A “D” task is defined as something you can _delegate_ to someone else. The rule is that you should delegate everything that someone else can do so you can free up more time for the A tasks that only you can do.
