@@ -24,12 +24,12 @@ The business model canvas is a tool for understanding how a company makes money.
     - [Channels - How they know you, how you deliver](#channels---how-they-know-you-how-you-deliver)
     - [Customer Relationships - How do you interact?](#customer-relationships---how-do-you-interact)
 - [Customer Segment Specific](#customer-segment-specific)
-    - [The engineering team I support](#the-engineering-team-i-support)
-    - [Product Manager](#product-manager)
-    - [Boss](#boss)
-    - [Grand Boss](#grand-boss)
+- [The engineering team I support](#the-engineering-team-i-support)
+- [Product Manager](#product-manager)
+- [Boss](#boss)
+- [Grand Boss](#grand-boss)
     - [Mentees](#mentees)
-    - [Feeling Meetings Members](#feeling-meetings-members)
+- [Feeling Meetings Members](#feeling-meetings-members)
 - [The balance sheet](#the-balance-sheet)
     - [Revenue - What you get?](#revenue---what-you-get)
     - [Costs - What you give up](#costs---what-you-give-up)
@@ -125,23 +125,33 @@ More complex then it sounds, need to do this per customer segment:
 
 ## Customer Segment Specific
 
-### The engineering team I support
+## The engineering team I support
 
-**Value Provided** - tbd
+**Value Provided**
+
+- Architecture and Process feedback and establishment
+- Career Development
+- Mentoring
+- Ensuring sufficient resources
+- Resolving critical issues
 
 **Channel** - tbd
 
-**Relationship** - tbd
+**Relationship**
 
-### Product Manager
+- Goal retention
+- Weekly 1:1s
+- Weekly group meeting
 
-### Boss
+## Product Manager
 
-### Grand Boss
+## Boss
+
+## Grand Boss
 
 ### Mentees
 
-### Feeling Meetings Members
+## Feeling Meetings Members
 
 ## The balance sheet
 
