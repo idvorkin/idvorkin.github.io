@@ -7,21 +7,21 @@ redirect-from:
   - /exercise
 ---
 
-Physical health is the basis of energy, and thus the source of success, and a key [saw to be sharpened](/sharpen-the-saw). Physical health is about weight, fitness and sleep.
+Physical health is the basis of energy, and thus the source of success, and a key [saw to sharpen](/sharpen-the-saw). Physical health is about weight, fitness, and sleep.
 
 ### Weight Yourself
 
-**Weight is essential** because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases.
+**Weight is essential** because it reduces the effort required to do physical activities, and because it reduces the risk of diseases.
 
-Weight is "calories in" minus "calories out". Calories in is dominated by [diet](/diet) with a minor contribution from exercise. A great way to see this is comparing what you eat to physical Activity. A box of French fries adds 400 calories to your day, but running for 30 minutes only burns 300 calories.
+Weight is "calories in" minus "calories out." [Diet](/diet) dominates calories out, exercise has a small contribution. A great way to see this is comparing what you eat to physical Activity. A box of French fries adds 400 calories to your day, but running for 30 minutes burns 300 calories.
 
-I recommend setting a weight goal, and checking that goal is constantly being met. It's easy for your weight to gradually creep up, and keep creeping up. Thus, I strongly recommend committing to not letting your weight exceed your goal for too long.
+Set a weight goal, and check progress towards the goal weekly. It's easy for your weight to gradually creep up, and keep creeping up. Thus, I strongly recommend committing to not letting your weight exceed your goal for too long.
 
-Personally, I set a weight pledge every month, and never exceed that weight. Many people feel dieting is shameful. I couldn't disagree more. Dieting shows you care about health and are doing something about it.
+Personally, I set a weight pledge every month, and never exceed that weight. Some people feel dieting is shameful. I couldn't disagree more. Dieting shows you care about health and are doing something about it.
 
 ### Strength and Cardio Training
 
-**Fitness is essential** because it's the limiting factor to what you can accomplish.
+**Fitness is essential** because it's the limiting factor to what you can do.
 
 Fitness can be endurance or strength. For the majority of activities, endurance dominates, but some minimal strength is also required. For example, being able to run 30 minutes ensures you won't be out of breath when you need to hustle to catch the bus, but being able to lift 100lbs doesn't help you in many situations. Being able to lift 10 lbs is important though, so don't completely ignore strength.
 
@@ -70,14 +70,14 @@ I've had lots of injuries, here's my various [braces](/irl#physical-health)
 
 Trainers are expensive, but heart attacks are even more expensive, and on top of money, they really suck up your energy and reduce your quality of life.
 
-I put off getting a trainer for 20 years. I though I was very knowledgable in exercise, physiology, and was motivaed having a gym routine where I went every morning to do cardio, and I wasn't interested in getting strong. Eventually I decided I'd like some more injury prefention, so got a trainer and told him my my goal was to increase my injury resillance, and he said OK, lets do mobility workouts then.
+I put off getting a trainer for 20 years. I though I was very knowledgable in exercise, physiology, and was motivaed having a gym routine where I went every morning to do cardio, and I wasn't interested in getting strong. Eventually I decided I'd like some more injury prefention, so got a trainer and told him my goal was to increase my injury resillance, and he said OK, lets do mobility workouts then.
 
 - The mobility movements are more strenous then my normal cardio routines. Every movement we do seemed like it could happen naturally through day to day activities and felt incredibly weak, a real warning to injury.
 
-- He also took a look at my cardio routine, and changed it to be a high intensity Training - Wow, same amount of time,so much more intense, and so energized afterwards.
+- He also took a look at my cardio routine, and changed it to be a high intensity Training - Wow, same amount of time,so much more intense, and so energized afterward.
 
 - Many days I feel lazy, I turn off my brain and just let him tell me what to do, and when to push myself.
 
 - I've had RSI in my wrists, injuries everywhere, and as we do exercises I can be like, oh this feels like it'll give out,and we instantly change the exercise.
 
-So yeah, trainers has been great.
+In summary, trainers are worth it.
