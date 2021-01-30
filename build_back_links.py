@@ -140,7 +140,10 @@ class LinkBuilder:
             return
 
         for link in page.outgoing_links:
-            self.incoming_links[link].append(page.url)
+            # when a link has an anchor eg foo.html#bar
+            # the incoming_link is foo.html, so strip the anchor
+            clean_link = link.split('#')[0]
+            self.incoming_links[clean_link].append(page.url)
 
         self.pages[page.url] = page
 
