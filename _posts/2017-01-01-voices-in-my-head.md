@@ -14,7 +14,7 @@ redirect_from:
 author: "Igor Dvorkin"
 ---
 
-The person that most frequently blocks your success is ... wait for it ... you! Often it's your subconscious, and often your sub conscious is a bunch of independent voices. It's hard to deal with this hidden opposition because it's so opaque. To help understand your feelings you can name the voices in your head, and imagine asking each of them their positions, and desired outcomes.
+The person that most frequently blocks your success is, wait for it, you! Often it's your subconscious, and often your sub conscious is a bunch of independent voices. It's hard to deal with this hidden opposition because it's so opaque. To help understand your feelings you can name the voices in your head, and imagine asking each of them their positions, and desired outcomes.
 
 I'm not smart (or wacky) enough to come up with this technique on my own. It comes from William Ury, master negotiator, and author of Getting to Yes (and Getting to Yes with yourself). He talks about the importance of applying the negotiating principles to your unconscious. The principles are 1) Soft on people, hard on problems and 2) Focus on interests not positions. (Just like [7H: Seek first to understand](/7h-c4))
 

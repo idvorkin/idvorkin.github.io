@@ -4,13 +4,16 @@ title: "Sleight Of Mouth"
 comments: true
 inprogress: true
 collapsable: true
+permalink: /sleight-of-mouth
 tags:
   - book-notes
   - emotional intelligence
 author: "Igor Dvorkin"
 ---
 
-Sleight of mind is about how to cause cognitive reframes.
+Sleight of mouth is about how to cause cognitive reframes.
+
+{%include blob_image.html src="sleight-of-mouth.jpg" %}
 
 ### 1: Language -> Experiences
 
