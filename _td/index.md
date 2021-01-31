@@ -13,6 +13,7 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 -->
 <!-- vim-markdown-toc GFM -->
 
+- [Build your own ...](#build-your-own-)
 - [Design and Architecture](#design-and-architecture)
 - [Cloud first applications](#cloud-first-applications)
 - [Data Systems](#data-systems)
@@ -83,6 +84,8 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
+
+### Build your own [...](https://github.com/danistefanovic/build-your-own-x)
 
 ### [Design and Architecture](/td/design)
 
