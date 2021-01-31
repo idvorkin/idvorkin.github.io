@@ -14,6 +14,7 @@ redirect_from:
 Different companies use different compensation models. To compare models use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon clips salary at 160K\$/yr, and doesn't have bonuses. Google vests stocks Monthly. Facebook bonuses have a company performance multiplier. At some companies signing bonuses can be over 100% of salary!
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Total Compensation - It gets complicated](#total-compensation---it-gets-complicated)
@@ -116,6 +117,8 @@ If you have that skill, that's the optimum way to make money. Skip your job hunt
 ### How do I translate job levels between companies?
 
 Compensation is often a function of "job level" which varies by company. This site translates [ladder levels](https://www.levels.fyi/) between the big tech companies nicely (but not the compensation levels).
+
+{%include blob_image.html src="level-map.png" %}
 
 ### I read on the internet company Foo pays Bar. Is that true?
 
