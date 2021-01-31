@@ -17,6 +17,8 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 
 <!-- prettier-ignore-start -->
 
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Compassion](#compassion)
@@ -26,7 +28,6 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 - [Curious questions for mental pain and its antidotes](#curious-questions-for-mental-pain-and-its-antidotes)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ### Compassion
 
@@ -46,7 +47,7 @@ New ideas for me, writing it out. Compassion is about removing suffering, and ac
 
 ### Judgment vs Curiosity
 
-Judgment throws ups barriers and causes us to hide the truth which can lead to guilt and [shame](/shame). Curiosity is gentle and helps us find what is going on. [Compassion](/happy#compassion) reduces judgment, reducing the barrier to compassion.
+Judgment throws ups barriers and causes us to hide the truth which can lead to guilt and [shame](/shame). Curiosity is gentle and helps us find what is going on. Compassion reduces judgment, reducing the barrier to compassion.
 
 ### Compassionate Consequences
 
