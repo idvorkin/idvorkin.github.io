@@ -10,24 +10,24 @@ tags:
 author: "Igor Dvorkin"
 ---
 
-Sleight of mind is about how to cause cognative reframes.
+Sleight of mind is about how to cause cognitive reframes.
 
-### 1: Language -> Experiances
+### 1: Language -> Experiences
 
 #### Words matter - as simple as 'and', 'but' or 'even though'
 
 A and B stresses B. If A is the positive use the even though pattern.
 
-- **A and B**: It's sunny today AND raining tommorrow
+- **A and B**: It's sunny today AND raining tomorrow
   - Equal weight A and B
-- **A but B**: It's sunny today BUT raining tommorrow
-  - B is empasized.
-- **A even though B**: It's sunny today even though it's raining tommorrow.
-  - A is empasized.
+- **A but B**: It's sunny today BUT raining tomorrow
+  - B is emphasized.
+- **A even though B**: It's sunny today even though it's raining tomorrow.
+  - A is emphasized.
 
-### Chapter 2: Frames -> Reframes
+### 2: Frames -> Reframes
 
-Frame is how we experiance the world. Think about picture frames, it bounds how you percieve (and thus experiance and react to reality)
+Frame is how we experience the world. Think about picture frames, it bounds how you perceive (and thus experience and react to reality)
 
 #### Outcome frame instead of Problem frame:
 
@@ -47,7 +47,7 @@ Not I have a problem, but I want this outcome. Outcome from more powerful and ac
 
 #### Change frame size
 
-Changing the size of your persepctive. Will it be a problem in a week, month, year?
+Changing the size of your perspective. Will it be a problem in a week, month, year?
 
 #### Context Reframing
 
@@ -55,13 +55,13 @@ Think of a different context when something will be helpful? Having someone who'
 
 #### Content Reframing
 
-Instead of looking at someone's behaviors, look at thier positive intent. The underlying intent is usually good, it's the behavioral manifistation that's tricky.
+Instead of looking at someone's behaviors, look at their positive intent. The underlying intent is usually good, it's the behavioral manifestation that's tricky.
 
 #### Reframe Critics and Criticism
 
 Three types of roles - critics, dreamers, realists. Critics normally assert statements as generalized judgment - this won't work. The challenge here is that puts the listener into a polarized position - either answering yes or no.
 
-Notie the intent is good, the intent is to evaluate and help the dreamer and realist.
+Notice the intent is good, the intent is to evaluate and help the dreamer and realist.
 
 #### Positive Statements of Positive intentions
 
@@ -74,7 +74,7 @@ If I don't want X, what is it I do want? Say that instead.
 It is.... -> I want to make sure ...
 Too expensive -> It to be affordable.
 Fear of failure -> Desire to succeed
-Unrealistic -> Concreate and acheivable.
+Unrealistic -> Concrete and achievable.
 Too much effort -> Easy and achievable
 
 Next, change criticism to How will you ..
@@ -85,12 +85,12 @@ It is too expensive -> How will you ensure it's affordable?
 Ask 3 questions, especially when you're the critic:
 
 1. What is your criticism or objection?
-2. What do you want to achieve via your criticisim (the thing that's desired, not the thing that's bad).
+2. What do you want to achieve via your criticism (the thing that's desired, not the thing that's bad).
 3. What "How question" can be asked about how it will be achieved.
 
 Notice how questions shift the critic from a "spoiler" into an advisor.
 
-ProTip, before going into what needs to be achieved, call out the things that are good.
+Pro Tip, before going into what needs to be achieved, call out the things that are good.
 
 #### Pattern: Intention and Redefining
 
@@ -100,7 +100,7 @@ Critics -> Advisors
 
 Fundamental Reframes:
 **Intention:** Direct attention to persons intent (desired outcome)
-**Redefining:**Change words that are similar, but slighty different, usually more positive.
+**Redefining:**Change words that are similar, but slightly different, usually more positive.
 
 When we convert the problem to the intention - we get back to the outcome frame and open a conversation.
 
@@ -112,24 +112,24 @@ Subtle meaning differences: Overpriced -> Unable to afford -> Expensive For Valu
 
 How much pain are you in vs. How much discomfort do you feel?
 
-### One word reframes:
+### 2.1 One word reframes:
 
 Take a word/statement and make it more positive and more negative.
 
 Statements:
-It doesn't piss me off ; I'm ok with it ; I'm accepting it
+It doesn't piss me off ; I'm OK with it ; I'm accepting it
 I made a mistake; you twisted my words; he's a damn liar.
 
 Words:
 Responsible, Stable, Rigid
 Stable, Comfortable, Boring
-Fiscally responsible, Frugal,, stingy
-Friendly, Nice, Niave
+Fiscally responsible, Frugal, stingy
+Friendly, Nice, Naive
 Big Imagination -> Telling Fairy Tales -> Lying
 
-#### Oneword reframing exercise
+#### One word reframing exercise
 
-#### Percieve from different model of world, by taking a second position
+#### Perceive from different model of world, by taking a second position
 
 Models of the world - Seek first to understand. Three perspectives
 
@@ -149,11 +149,11 @@ Changing the specificity of a thought,
 
 I'm Ugly;
 
-- I -> Nostral, arm, legs?
-- Ugly -> to mom? to self? to indian women?
+- I -> Nostril, arm, legs?
+- Ugly -> to mom? to self? to Indian women?
 
 Learning Disabled?
-Learning -> Inputting, Storing, Repredocing
+Learning -> Inputting, Storing, Reproducing
 
 Failure -> Goal Setting, Planning, Execution
 
@@ -165,7 +165,7 @@ Failure -> Goal Setting, Planning, Execution
 
 - By finding an analogy, we compare to the new analogy, to better understand the current statement.
 
-#### Finding Iso Morphisims
+#### Finding ISO Morphisims
 
 - 3 folks A,B,C
 - A tells B, C a problem where they want help
@@ -173,41 +173,41 @@ Failure -> Goal Setting, Planning, Execution
 - B and C come up with a metaphor for the critical element and B tells A.
   - Sample metaphors: Fantasy, Sports, War, Folks Tales, star trek.
 
-#### Puncuation and Repruncutation
+#### Punctuation and Repruncutation
 
-- Framing is the puctuation of objective reality into our subjective reality.
+- Framing is the punctuation of objective reality into our subjective reality.
 - See great examples from book that,that,is - with comma's periods and question marks
 
 ### 4: Values and Criteria
 
 #### Structure of meaning
 
-Story of castle under seige, in defiance, the folks in the castle starving catupult all thier food out. People seiging, already demoralized since out of supplies interpertt food as a taunt that they can last forever and go home.
+Story of castle under siege, in defiance, the folks in the castle starving catapult all their food out. People seiging, already demoralized since out of supplies interpret food as a taunt that they can last forever and go home.
 
 #### Values and motivation
 
 Values - the reasons you get out of bed. Filter over which you see objective reality. People who value fun, ask how much fun is in something. Also, goals usually indicate values. Goal is build product, probably value creating new things.
 
-#### Criteria and Judgement
+#### Criteria and Judgment
 
 Value -> what we desire and want
 Criteria -> standard/evidence we use to make decisions.
 
 #### Chaining value and Criteria by
 
-#### Criteria Equivelance
+#### Criteria Equivalence
 
 #### Chunking Down to Define
 
 #### Reality Strategies
 
-#### Reality Startegy Exercise
+#### Reality Strategy Exercise
 
 #### Chunk up to identify and utilize
 
-#### Heirarchy of value and criteria
+#### Hierarchy of value and criteria
 
-#### Heirarchy of criteria technique
+#### Hierarchy of criteria technique
 
 ### 5: Belief and Expectations
 
