@@ -19,6 +19,7 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 
 <!-- vim-markdown-toc GFM -->
 
+- [Compassion](#compassion)
 - [Judgment vs Curiosity](#judgment-vs-curiosity)
 - [Compassionate Consequences](#compassionate-consequences)
 - [Cutting ourselves slack vs slacking off](#cutting-ourselves-slack-vs-slacking-off)
@@ -26,6 +27,22 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+### Compassion
+
+New ideas for me, writing it out. Compassion is about removing suffering, and accepting people as they are. This requires a time dimension
+
+| Time    | Behavior    | Practice     | Beheavior Defn                                                        |
+| ------- | ----------- | ------------ | --------------------------------------------------------------------- |
+| Past    | Forgiveness | Humility     | The willingness to give up all hope for a better past                 |
+| Present | Acceptance  | Gratefulness | Recognizing you have received more then your fair share               |
+| Future  | Hope        | Patience     | Conviction the future has the potential to be better then the present |
+
+- When people behave poorly (in your mind), it is due to their suffering.
+- Treating them with compassion makes evident that it is the person’s suffering, not the person, that is the source of the problem. The suffering is unacceptable. The person is acceptable.
+- Love, especially as applied to children, is the highest form of compassion a 11/10.
+- Compassion applies equally to self and other. As you practice compassion, focus on the place you have the maximum compassion and use it to strengthen places with lower compassion
+- Sounds like the fundamental attribution error: When you do something wrong, you attribe to circumstance, when others do thing wrong you attribute you malice/incompetence/personality.
 
 ### Judgment vs Curiosity
 
