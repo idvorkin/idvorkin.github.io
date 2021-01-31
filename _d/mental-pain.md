@@ -8,7 +8,6 @@ permalink: mental-pain
 Pain is in the brain as they say, which is especially true for mental pains. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.
 
 <!-- prettier-ignore-start -->
-
 <!-- vim-markdown-toc GFM -->
 
 - [The point of pain](#the-point-of-pain)
@@ -28,13 +27,13 @@ Pain is in the brain as they say, which is especially true for mental pains. The
         - [Doubt: Abandonment, Taking fore granted](#doubt-abandonment-taking-fore-granted)
         - [Disappointment: Guilt/shame/Embarrassed, Unfair](#disappointment-guiltshameembarrassed-unfair)
     - [Process - In your life](#process---in-your-life)
-        - [Control: anxiety](#control-anxiety-1)
+        - [Control: Anxiety](#control-anxiety-1)
         - [Doubt: Mistrust and Meaninglessness](#doubt-mistrust-and-meaninglessness)
         - [Disappointment: Guilt/shame/Embarrassed, Unfair](#disappointment-guiltshameembarrassed-unfair-1)
 - [Fueling the fire, adding meaning](#fueling-the-fire-adding-meaning)
     - [Meaning: From Pain to Suffering](#meaning-from-pain-to-suffering)
     - [Meaning squared: From Suffering to Misery](#meaning-squared-from-suffering-to-misery)
-        - [Victim: There is nothing I can do](#victim-there-is-nothing-i-can-do)
+        - [Victim: Nothing I can do](#victim-nothing-i-can-do)
         - [Unique: The world is not fair to me](#unique-the-world-is-not-fair-to-me)
 - [The positive analogs](#the-positive-analogs)
     - [pain to pleasure](#pain-to-pleasure)
@@ -81,7 +80,7 @@ Pain is in the brain as they say, which is especially true for mental pains. The
 
 ### Process - In your life
 
-#### Control: [anxiety](/anxiety)
+#### Control: [Anxiety](/anxiety)
 
 #### Doubt: Mistrust and Meaninglessness
 
@@ -93,7 +92,7 @@ Pain is in the brain as they say, which is especially true for mental pains. The
 
 ### Meaning squared: From Suffering to Misery
 
-#### Victim: There is nothing I can do
+#### Victim: Nothing I can do
 
 #### Unique: The world is not fair to me
 
@@ -109,8 +108,8 @@ Pain is in the brain as they say, which is especially true for mental pains. The
 
 ### Pride vs Self Confidence vs Hubris/Arrogance
 
-Interesting - in Dr. Raphs's model, pride is good, arrogance is bad. The test for the boundary is "how impressive is the achievement?" To be dramatic my post on arrogance is called [pride ducking with you](/pride).
+Interesting - in Dr. Raphs's model, pride is good, arrogance is bad. The test for the boundary is "how impressive is the achievement?" [Pride ducking with you](/pride) is my post on pride and arrogance.
 
 ## For more info
 
-This is mostly my summary of [this](https://whatilearnedsofar.com/theory/suffering/)
+See Raph's [this](https://whatilearnedsofar.com/theory/suffering/)
