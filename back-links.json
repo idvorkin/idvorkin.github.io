@@ -206,6 +206,7 @@
       "outgoing_links": ["/covid", "/covid", "/mental-pain"],
       "incoming_links": [
         "/d/resistance",
+        "/first-things-first",
         "/idle",
         "/mind-at-work",
         "/psychic-weight"
@@ -384,7 +385,7 @@
         "/the-manager-book"
       ],
       "redirect_url": "",
-      "doc_size": 24332
+      "doc_size": 24273
     },
     "/coe": {
       "py/object": "__main__.Page",
@@ -406,7 +407,7 @@
       "outgoing_links": ["/pride", "/job-hunt-stress", "/pride"],
       "incoming_links": ["/job-hunt-stress", "/the-manager-book"],
       "redirect_url": "",
-      "doc_size": 20926
+      "doc_size": 21014
     },
     "/covid": {
       "py/object": "__main__.Page",
@@ -425,17 +426,18 @@
       "title": "ISN'T THAT CURIOUS",
       "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
       "file_path": "_site/curious.html",
-      "outgoing_links": ["/shame", "/happy#compassion", "/mental-pain"],
+      "outgoing_links": ["/shame", "/mental-pain"],
       "incoming_links": [
         "/90days",
         "/being-a-great-manager",
         "/coaching",
         "/getting-to-yes-with-yourself",
+        "/happy",
         "/psychic-weight",
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 12406
+      "doc_size": 14052
     },
     "/d/2010-2-15-2016-Misc-Uncategorized": {
       "py/object": "__main__.Page",
@@ -524,17 +526,6 @@
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 14032
-    },
-    "/d/2016-3-12-sleight-of-mouth": {
-      "py/object": "__main__.Page",
-      "url": "/d/2016-3-12-sleight-of-mouth",
-      "title": "SLEIGHT OF MOUTH",
-      "description": "Sleight of mind is about how to cause cognative reframes.\n\n",
-      "file_path": "_site/d/2016-3-12-sleight-of-mouth.html",
-      "outgoing_links": [],
-      "incoming_links": [],
-      "redirect_url": "",
-      "doc_size": 17571
     },
     "/d/2016-6-10-Appreciate": {
       "py/object": "__main__.Page",
@@ -931,6 +922,7 @@
         "/be-proactive",
         "/books-that-defined-me",
         "/end-in-mind",
+        "/first-things-first",
         "/frog",
         "/gtd"
       ],
@@ -983,10 +975,20 @@
       "title": "FIRST THINGS FIRST",
       "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
       "file_path": "_site/first-things-first.html",
-      "outgoing_links": ["/7h", "/delegate", "/gtd", "/upstream", "/frog"],
+      "outgoing_links": [
+        "/7h",
+        "/addiction",
+        "/switch",
+        "/essentialisim",
+        "/delegate",
+        "/essential",
+        "/gtd",
+        "/upstream",
+        "/frog"
+      ],
       "incoming_links": ["/7-habits", "/90days", "/delegate", "/frog"],
       "redirect_url": "",
-      "doc_size": 11186
+      "doc_size": 15632
     },
     "/first-understand": {
       "py/object": "__main__.Page",
@@ -1003,7 +1005,7 @@
       "py/object": "__main__.Page",
       "url": "/frog",
       "title": "EAT THAT FROG",
-      "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives gives 21 antidotes to get it done, this is my re-framing of the concepts into my favorite mental models, the chapter titles are preserved if you want to go look them up.\n\n",
+      "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapeter titles come from the book.\n\n",
       "file_path": "_site/frog.html",
       "outgoing_links": [
         "/resistance",
@@ -1022,7 +1024,7 @@
         "/timeoff"
       ],
       "redirect_url": "",
-      "doc_size": 17447
+      "doc_size": 17253
     },
     "/getting-to-yes": {
       "py/object": "__main__.Page",
@@ -1088,16 +1090,10 @@
       "title": "HAPPY",
       "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject.\n\n",
       "file_path": "_site/happy.html",
-      "outgoing_links": ["/idle-loop", "/moments"],
-      "incoming_links": [
-        "/curious",
-        "/d/time-off-12-2020",
-        "/hobby",
-        "/siy",
-        "/timeoff"
-      ],
+      "outgoing_links": ["/compassion", "/idle-loop", "/moments"],
+      "incoming_links": ["/d/time-off-12-2020", "/hobby", "/siy", "/timeoff"],
       "redirect_url": "",
-      "doc_size": 20518
+      "doc_size": 18942
     },
     "/hobby": {
       "py/object": "__main__.Page",
@@ -1297,7 +1293,7 @@
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 14316
+      "doc_size": 14249
     },
     "/micro-economics": {
       "py/object": "__main__.Page",
@@ -1436,7 +1432,7 @@
       "py/object": "__main__.Page",
       "url": "/physical-health",
       "title": "PHYSICAL HEALTH",
-      "description": "Physical health is the basis of energy, and thus the source of success, and a key saw to be sharpened. Physical health is about weight, fitness and sleep.\n\n",
+      "description": "Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health is about weight, fitness, and sleep.\n\n",
       "file_path": "_site/physical-health.html",
       "outgoing_links": [
         "/sharpen-the-saw",
@@ -1452,7 +1448,7 @@
         "/tech-health-toys"
       ],
       "redirect_url": "",
-      "doc_size": 14969
+      "doc_size": 14910
     },
     "/pride": {
       "py/object": "__main__.Page",
@@ -1632,6 +1628,17 @@
       "redirect_url": "",
       "doc_size": 11664
     },
+    "/sleight-of-mouth": {
+      "py/object": "__main__.Page",
+      "url": "/sleight-of-mouth",
+      "title": "SLEIGHT OF MOUTH",
+      "description": "Sleight of mouth is about how to cause cognitive reframes.\n\n",
+      "file_path": "_site/sleight-of-mouth.html",
+      "outgoing_links": [],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 17635
+    },
     "/software-leadership-roles": {
       "py/object": "__main__.Page",
       "url": "/software-leadership-roles",
@@ -1672,7 +1679,7 @@
       "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
       "file_path": "_site/switch.html",
       "outgoing_links": [],
-      "incoming_links": [],
+      "incoming_links": ["/first-things-first"],
       "redirect_url": "",
       "doc_size": 12308
     },
@@ -1911,12 +1918,12 @@
       "py/object": "__main__.Page",
       "url": "/td/stats",
       "title": "STATISTICS",
-      "description": "\n\n\n",
+      "description": "Statistics is a tool which lets us summarize data, and make inferences from it.\n\n",
       "file_path": "_site/td/stats.html",
       "outgoing_links": ["/machine-learning"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14379
+      "doc_size": 15610
     },
     "/td/streaks": {
       "py/object": "__main__.Page",
@@ -2131,9 +2138,9 @@
       "py/object": "__main__.Page",
       "url": "/voices",
       "title": "VOICES IN MY HEAD",
-      "description": "The person that most frequently blocks your success is … wait for it … you! Often it’s your subconscious, and often your sub conscious is a bunch of independent voices, many of whom are negative. It’s very hard to deal with this hidden opposition because it’s so opaque. To help understand your feelings you can name the voices in your head, and imagine asking each of them their positions, and desired outcomes.\n\n",
+      "description": "The person that most frequently blocks your success is, wait for it, you! Often it’s your subconscious, and often your sub conscious is a bunch of independent voices. It’s hard to deal with this hidden opposition because it’s so opaque. To help understand your feelings you can name the voices in your head, and imagine asking each of them their positions, and desired outcomes.\n\n",
       "file_path": "_site/voices.html",
-      "outgoing_links": ["/anxiety"],
+      "outgoing_links": ["/7h-c4", "/anxiety"],
       "incoming_links": [
         "/anxiety",
         "/d/2017-04-09-igor-the-operating-manual",
@@ -2142,7 +2149,7 @@
         "/mind-monsters"
       ],
       "redirect_url": "",
-      "doc_size": 12092
+      "doc_size": 11945
     },
     "/warm": {
       "py/object": "__main__.Page",
@@ -2206,9 +2213,9 @@
       "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
       "file_path": "_site/win-win.html",
       "outgoing_links": ["/7h"],
-      "incoming_links": ["/7-habits", "/getting-to-yes"],
+      "incoming_links": ["/7-habits", "/getting-to-yes", "/voices"],
       "redirect_url": "",
-      "doc_size": 12615
+      "doc_size": 14779
     }
   }
 }
