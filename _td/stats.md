@@ -4,16 +4,19 @@ no-render-title: true
 title: Statistics
 ---
 
+Statistics is a tool which lets us summarize data, and make inferences from it.
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+- [Inferencing vs Analyzing](#inferencing-vs-analyzing)
 - [Philosophy](#philosophy)
     - [Frequentist](#frequentist)
     - [Bayes](#bayes)
     - [Computer Based](#computer-based)
     - [Twenty First Century](#twenty-first-century)
+- [Inferencing](#inferencing)
 - [Sample vs Population](#sample-vs-population)
-    - [Inferential Statistics](#inferential-statistics)
     - [Confidence Interval](#confidence-interval)
     - [P-Values](#p-values)
 - [Types of Error](#types-of-error)
@@ -22,14 +25,20 @@ title: Statistics
     - [Accuracy vs Precision](#accuracy-vs-precision)
 - [Multi Arm Bandits](#multi-arm-bandits)
     - [Explore vs Exploit](#explore-vs-exploit)
-    - [Episilon Greedy](#episilon-greedy)
+    - [Epsilon Greedy](#epsilon-greedy)
     - [Soft Max](#soft-max)
-- [Measures](#measures)
-- [Robust Statistics](#robust-statistics)
+- [Summarizing Data - How to characterize a data set](#summarizing-data---how-to-characterize-a-data-set)
+    - [Data Shape - Normal, Uniform, Exponential](#data-shape---normal-uniform-exponential)
+    - [Which average - Mean, Median and Mode](#which-average---mean-median-and-mode)
+    - [Dispersion](#dispersion)
+    - [Robust Statistics - Medians and Percentile](#robust-statistics---medians-and-percentile)
+    - [PDF and CDF](#pdf-and-cdf)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+## Inferencing vs Analyzing
 
 ## Philosophy
 
@@ -41,9 +50,9 @@ title: Statistics
 
 ### Twenty First Century
 
-## Sample vs Population
+## Inferencing
 
-### Inferential Statistics
+## Sample vs Population
 
 Inferential statistics use a random sample to draw conclusions about the population. Typically, it is not practical to obtain data from every member of a population. Instead, we collect a random sample from a small proportion of the population. From the sample, statistical procedures can infer the likely properties of the population.
 
@@ -51,7 +60,7 @@ For example, it is impractical to measure the height of every adult woman, but y
 
 ### Confidence Interval
 
-This is the simplest in laymens terms
+This is the simplest in layman's terms
 http://www.bandolier.org.uk/painres/download/whatis/What_are_Conf_Inter.pdf
 
 https://blog.minitab.com/blog/adventures-in-statistics-2/understanding-hypothesis-tests-significance-levels-alpha-and-p-values-in-statistics
@@ -68,12 +77,12 @@ You want to know the probability the metric change is caused by our treatment. A
 
 But the P-Value is the probability that for **this sample of the population**, the metric change could be caused by the control as opposed to treatment. (The effect being caused by the control is called the null hypothesis)
 
-\*Along these lines, you can think of P values as probabilities that you can multiply. For example, if two independent studies both have P values of 0.05, you can multiply them to obtain a probability of 0.0025. If you use this approach, you can’t cherry pick the best studies. You need to include all studies in a series of relevant studies whether they are significant or not.
+Along these lines, you can think of P values as probabilities that you can multiply. For example, if two independent studies both have P values of 0.05, you can multiply them to obtain a probability of 0.0025. If you use this approach, you can’t cherry pick the best studies. You need to include all studies in a series of relevant studies whether they are significant or not.
 
 One P value multiplied by another P value equals a smaller P value.
 You should consider results from a study in conjunction with other similar studies. It is extremely unlikely that a single study can prove that the alternative hypothesis is true with any confidence. So, don’t expect it to!\*
 
-How does Amazon's WebLab tool handle this?
+How does Amazon's Web Lab tool handle this?
 
 How does Facebook Deltoid tool handle this?
 
@@ -98,25 +107,35 @@ In measurement we talk about accuracy and precision
 
 Imagine a target on a bullseye, and firing multiple bullets:
 
-- Accuracy = How close to the bullseye are the bullets. Arguably this is diffence of median from bullseye
+- Accuracy = How close to the bullseye are the bullets. Arguably this is difference of median from bullseye
 - Precision = How must variance is the "spray" of bullets. Arguably this is the standard deviation.
 
 ## Multi Arm Bandits
 
 ### Explore vs Exploit
 
-### Episilon Greedy
+### Epsilon Greedy
 
 ### Soft Max
 
-## Measures
+## Summarizing Data - How to characterize a data set
 
-## Robust Statistics
+When we have a dataset, we need to reason about it, and reason about the changes to it.
+
+### Data Shape - Normal, Uniform, Exponential
+
+### Which average - Mean, Median and Mode
+
+### Dispersion
+
+### Robust Statistics - Medians and Percentile
+
+### PDF and CDF
 
 ## Other Resources
 
 - Bandit Algorithoms
-- Computer Age Statistical Infrence
+- Computer Age Statistical Inference
 - Python for Data Analysis
 - R CookBook
 - Python Data Science Handbook
