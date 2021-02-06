@@ -82,23 +82,26 @@ Without learning, you risk the the equivalent of org organ rejection syndrome (y
 
 #### What keeps you from learning
 
-Desire for action - uneducated action is usually the mistake
+**Desire for action**
 
+- Uneducation action is a mistake
 - External pressure can be magnified by insecurity. Remember, shit was broken before you arrived, and would still be broken a few weeks later if it took yo u a few extra weeks to join.
 - Anxious to prove yourself, but you prove yourself by listening and being curious
 - Too busy to learn will result in a death spiral
 
-Thinking you know the problem and the answer - that's arrogance, often resulting in the wrong answer.
+**Thinking you know the problem and the answer**
 
+- That's arrogance, often resulting in the wrong answer.
 - Odds are you don't know.
 
-Ignoring parts of the role you dislike.
+**Ignoring parts of the role you dislike.**
 
-- Just because you're bad at something doesn't mean you don't need to know it, or know how to keep it covered.
+- Just because you're bad at something doesn't mean you don't need to know it
+- You need to learn it, or ensure someone you trust is learning it, and teaching you.
 
 #### What you need to ship - the proven hypothesis
 
-Ramping up is the same as delivering any project. You need to start with a deliberate outcome, in this case what you need to learn, and how you'll learn it. As with a project as you learn more, you'll change your definition of done. But you need to constantly evaluate your learning goals and process to test if you're delivering on your goals efficiently.
+Ramping up is the same as delivering any project. You need to start with a deliberate outcome, in this case what you need to learn, and how you'll learn it. As with all projects, as you learn more, you'll change your definition of done. But you need to constantly evaluate your learning goals and process to test if you're delivering on your goals efficiently.
 
 - Start with generic questions
 - Create specific questions
