@@ -49,7 +49,8 @@ A how to guide for starting your next job.
 - [6. Achieve Alignment](#6-achieve-alignment)
     - [Common traps](#common-traps)
     - [Org goals and gaps](#org-goals-and-gaps)
-- [Execute the big changes](#execute-the-big-changes)
+    - [Execute the big changes](#execute-the-big-changes)
+    - [Setting strategic direction](#setting-strategic-direction)
 - [7. Build Your Team](#7-build-your-team)
     - [Avoiding traps](#avoiding-traps)
     - [Be a class act](#be-a-class-act)
@@ -409,7 +410,7 @@ Common gaps
 - **Structure and process** - Goal is ship product, but not organized in product team, organized as PMs, and Devs, and Design, results in higher communication costs.
 - **Structure and skills** - Switched to an org where developers run their data analysis, where before they had dedicated business analysist support. Now deveopers lack the skill to deliver this.
 
-### Execute the big changes
+#### Execute the big changes
 
 1. **Begin with strategic direction**. Take a hard look at how your unit is positioned with respect to the larger organization's goals and your agreed-to priorities. Make sure your mission, vision, and strategy are well thought through and logically integrated.
 2. **Look at supporting structure, processes, and skills**. Look at whether your group's existing structure, processes, and skill bases support the strategic direction-either the existing one (if you decide not to change it) or the one you envision. Dig into and understand the relationships among these elements. If one or more of them is ill suited to the mission or strategy you have in mind, figure out how you will either adapt your direction or build (or acquire) the capabilities you need.
