@@ -44,9 +44,15 @@ A how to guide for starting your next job.
     - [Pick your wins](#pick-your-wins)
     - [Write your "leader story"](#write-your-leader-story)
     - [How will you lead change](#how-will-you-lead-change)
+    - [Time to plan execution, or time for collective learning](#time-to-plan-execution-or-time-for-collective-learning)
     - [Avoid land mines](#avoid-land-mines)
 - [6. Achieve Alignment](#6-achieve-alignment)
+    - [Common traps](#common-traps)
+    - [Org goals and gaps](#org-goals-and-gaps)
+- [Execute the big changes](#execute-the-big-changes)
 - [7. Build Your Team](#7-build-your-team)
+    - [Avoiding traps](#avoiding-traps)
+    - [Be a class act](#be-a-class-act)
 - [8. Create Alliances](#8-create-alliances)
 - [9. Manage Yourself](#9-manage-yourself)
     - [Self assessment](#self-assessment)
@@ -294,13 +300,16 @@ Building a productive working relationship with a new boss. The five-conversatio
 
 ### 5. Secure Early Wins
 
-Avoiding common traps. Figuring out A-item priorities. Creating a compelling vision. Building personal credibility. Getting started on improving organizational performance. Plan-then-implement change versus collective learning.
+Pick the first round of wins to build personal credibility, establish key relationships, and identify and harvest low-hanging fruit-the highest-potential opportunities for short-term improvements in organizational performance. Done well, this strategy helps the new leader build momentum and deepen his own learning.
+
+Then have a second wave of changes to addresses fundamental issues of strategy, structure, systems, and skills to reshape the organization; deeper gains in organizational performance are achieved. But you need the first wins to pull this off.
 
 #### Pick your wins
 
 You need to build short term momentum **and** lay a foundation for long term goals. Think through what you'll deliver aka "the goals met", and the how, aka "the behaviors seen".
 
 1. Focus on a few wins
+1. Focus on the needs of the business
 1. Find wins your boss cares about
 1. Win by being a class act
 1. Remember your STARS when deciding your wins
@@ -351,9 +360,17 @@ Notes:
 
 - Different in turn around vs sustaining success
 
-Are you making a decision, or having collective learning and decision making.
+#### Time to plan execution, or time for collective learning
 
-- Be clear on which you're doing.
+You have two paths to execute - A) making a decision and planning execution, or B) having collective learning and decision making. Before planning you should make sure of the following:
+
+- **Awareness**. A critical mass of people is aware of the need for change.
+- **Diagnosis**. You know what needs to be changed and why.
+- **Vision**. You have a compelling vision and a solid strategy.
+- **Plan**. You have the expertise to put together a detailed plan.
+- **Support**. You have sufficiently powerful alliances to support implementation.
+
+Alos, be clear on which of these you're doing.
 
 #### Avoid land mines
 
@@ -368,9 +385,71 @@ While you are excuting, make sure you're not derailed by the following:
 
 The role of the leader as organizational architect. Identifying the root causes of poor performance. Aligning strategy, structure, systems, skills, and culture.
 
+#### Common traps
+
+- Making changes for change's sake
+- Not adjusting for the STARS situation.
+- Trying to restructure your way out of deeper problems.
+- Creating structures that are too complex.
+- Overestimating your organization's capacity to absorb change. D
+
+#### Org goals and gaps
+
+Ideally the org organizes around:
+
+- **Strategic direction**. The organization's mission, vision, and strategy
+- **Structure**. How people are organized in units and how their work is coordinated, measured, and incentivized
+- **Core processes**. The systems used to add value through the processing of information and materials
+- **Skill bases**. The capabilities of key groups of people in the organization
+
+Common gaps
+
+- **Strategic Direction and Skill base** - Goal is to deliver app, but only have server developers
+- \*Strategic Direction and Core processes\*\* - Goal is maximum learning velocity, but VP review required for each experiment
+- **Structure and process** - Goal is ship product, but not organized in product team, organized as PMs, and Devs, and Design, results in higher communication costs.
+- **Structure and skills** - Switched to an org where developers run their data analysis, where before they had dedicated business analysist support. Now deveopers lack the skill to deliver this.
+
+### Execute the big changes
+
+1. **Begin with strategic direction**. Take a hard look at how your unit is positioned with respect to the larger organization's goals and your agreed-to priorities. Make sure your mission, vision, and strategy are well thought through and logically integrated.
+2. **Look at supporting structure, processes, and skills**. Look at whether your group's existing structure, processes, and skill bases support the strategic direction-either the existing one (if you decide not to change it) or the one you envision. Dig into and understand the relationships among these elements. If one or more of them is ill suited to the mission or strategy you have in mind, figure out how you will either adapt your direction or build (or acquire) the capabilities you need.
+3. **Decide how and when you will introduce the new strategic direction**. Armed with a deeper understanding of your group's current capabilities, chart a path for shifting direction (if such a shift is necessary). Sketch out changes in positioning (markets, customers, and suppliers) as well as changes in supporting capabilities. Then adopt a realistic time frame for making these changes.
+4. **Think through the correct sequencing**. Different situations demand different approaches to bringing organizations into alignment. In a turnaround, the right approach often is to alter the strategy (which typically is not adequate), then to bring the structure into alignment with it, and then to focus on supporting processes and skills. In a realignment, however, strategic direction and structure often are not the real source of the difficulties. Instead, they frequently lie in the processes and skill bases of the organization, and these are the places to focus on.
+5. **Close the loop**. As you learn more about your group's structure, processes, and skills, you will gain insight into the team's capabilities and its cultural capacity for change. This insight will in turn deepen your understanding of what changes in strategic positioning are possible over what time period.
+
+#### Setting strategic direction
+
+You need to set direction over the following dimensions:
+
+- **Customers**. Which set of existing customers (external or internal) will we continue to serve? What is our value proposition? Which markets are we going to exit? What new markets are we going to enter, and when?
+- **Capital**. Of the businesses we will remain in, which will we invest in, and which will we draw cash from? What additional capital is likely to be required, and when? Where will it come from?
+- **Capabilities**. What are we good at and not good at? What existing organizational capabilities (for example, a strong new-product development organization) can we leverage? Which do we need to build up? Which do we need to create or acquire?
+- **Commitments**. What critical decisions do we need to make about resource commitments? When? What difficult-to-reverse past commitments do we have to live with or try to unwind?
+
+Use the TOWS framework - Threats, Opportunities, Weakness, Strength (not SWOT):
+
+- Start by looking at the environment. Find the opportunities and threats.
+- Next look at the org capabilities. Are there weaknesses that make it vulnerable to threats? Can strength monopolize opportunities?
+- Use this to create strategic priorities
+
 ### 7. Build Your Team
 
 Inheriting a team and changing it. Managing the tension between short-term and long-term goals. Working team restructuring and organizational architecture issues in parallel. Putting in place new team processes.
+
+#### Avoiding traps
+
+- **Criticizing the previous leadership**.
+- **Keeping the existing team too long**.
+- **Not balancing stability and change**.
+- **Not working on organizational alignment and team development in parallel**. A ship's captain cannot make the right choices about his crew without knowing the destination, the route, and the ship. Likewise, you can't build your team in isolation from changes in strategic direction, structure, processes, and skill bases.
+- **Not holding on to the good people**.
+- **Undertaking team building before the core is in place**.
+- **Making implementation-dependent decisions too early**.
+- **Trying to do it all yourself**.
+
+#### Be a class act
+
+During every phase of the team-evolution process, take pains to treat _everyone_ with respect. Even if people in your unit agree that a particular person should be replaced, your reputation will suffer if they view your actions as unfair. Do what you can to show people the care with which you are assessing team members' capabilities and the fit between jobs and individuals. Your direct reports will form lasting impressions of you based on how you manage this part of your job.
 
 ### 8. Create Alliances
 
