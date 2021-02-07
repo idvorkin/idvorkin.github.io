@@ -16,9 +16,6 @@ redirect_from:
 Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.
 
 <!-- prettier-ignore-start -->
-
-<!-- prettier-ignore-end -->
-
 <!-- vim-markdown-toc GFM -->
 
 - [Compassion](#compassion)
@@ -28,22 +25,26 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 - [Curious questions for mental pain and its antidotes](#curious-questions-for-mental-pain-and-its-antidotes)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ### Compassion
 
-New ideas for me, writing it out. Compassion is about removing suffering, and accepting people as they are. This requires a time dimension
+Compassion is about removing suffering, and accepting people as they are. This applies both to others and to yourself.
 
-| Time    | Behavior    | Practice     | Beheavior Defn                                                        |
-| ------- | ----------- | ------------ | --------------------------------------------------------------------- |
-| Past    | Forgiveness | Humility     | The willingness to give up all hope for a better past                 |
-| Present | Acceptance  | Gratefulness | Recognizing you have received more then your fair share               |
-| Future  | Hope        | Patience     | Conviction the future has the potential to be better then the present |
+When someone throws a rock at you, you don't get mad at the rock, you get mad at the person. But no one wants to throw a rock at you they likely did it due to their suffering. So, just as you don't get mad at the rock, don't get mad at the person, get mad at their suffering.
+
+Compassion can be broken down with a time dimension.
+
+| Time    | Behavior    | Practice     | Behavior Definition                                     |
+| ------- | ----------- | ------------ | ------------------------------------------------------- |
+| Past    | Forgiveness | Humility     | Give up hope for a better past                          |
+| Present | Acceptance  | Gratefulness | Recognizing you have received more then your fair share |
+| Future  | Hope        | Patience     | Believe the future can be better then the present       |
 
 - When people behave poorly (in your mind), it is due to their suffering.
-- Treating them with compassion makes evident that it is the person’s suffering, not the person, that is the source of the problem. The suffering is unacceptable. The person is acceptable.
+- Compassion clarifies the person’s suffering, not the person, is the source of the problem. Suffering is unacceptable. The person is acceptable (see [getting to yes, hard on problems soft on people](/gty)).
 - Love, especially as applied to children, is the highest form of compassion a 11/10.
-- Compassion applies equally to self and other. As you practice compassion, focus on the place you have the maximum compassion and use it to strengthen places with lower compassion
-- Sounds like the fundamental attribution error: When you do something wrong, you attribe to circumstance, when others do thing wrong you attribute you malice/incompetence/personality.
+- Sounds like the fundamental attribution error: When you do something wrong, you attribute to circumstance, when others do thing wrong you attribute you malice/incompetence/personality.
 
 ### Judgment vs Curiosity
 
