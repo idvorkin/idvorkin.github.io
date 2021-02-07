@@ -10,22 +10,23 @@ redirect_from:
 Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifiying how we spend our idle loop we can improve our lives one poop at a time.
 
 <!-- prettier-ignore-start -->
-
 <!-- vim-markdown-toc GFM -->
 
 - [Why: Parasitic energy drain or regenerative braking](#why-parasitic-energy-drain-or-regenerative-braking)
+    - [The first responder: boredom](#the-first-responder-boredom)
 - [Regenerative loops](#regenerative-loops)
     - [Mindfulness](#mindfulness)
     - [Positive thinking](#positive-thinking)
     - [Reading something nurturing](#reading-something-nurturing)
     - [Gratefulness thinking](#gratefulness-thinking)
     - [Accessible Habits](#accessible-habits)
-- [Parasitic loops](#parasitic-loops)
+- [Parasitic energy drains](#parasitic-energy-drains)
     - [Psychic weight](#psychic-weight)
     - [Addiction](#addiction)
     - [Ruminating](#ruminating)
     - [Doom scrolling](#doom-scrolling)
     - [TikTok](#tiktok)
+    - [Social Media](#social-media)
     - [Checking e-mail or notifications](#checking-e-mail-or-notifications)
     - [Mind monsters is a perfect articulation for negative emotions](#mind-monsters-is-a-perfect-articulation-for-negative-emotions)
 - [Other Resources](#other-resources)
@@ -34,6 +35,16 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 <!-- prettier-ignore-end -->
 
 ## Why: Parasitic energy drain or regenerative braking
+
+### The first responder: boredom
+
+With nothing to do, we experience the often phantom, [mental pain](/mental-pain) of boredom. If we aren't [proactive](/7h-c1), we resolve this via distracting parasitic loops. Parasitic loops take no energy, and are even occasionally satisfying, but they're a double wammy negative.
+
+First, and probably most importantly, those parasitic loops prevents us from working on our positive regenerative loops. Second, the alternative we engage in probably erodes our pursuit of happiness, by blocking our inner peace, passion and compassion.
+
+This is very similar to the often phantom, physical pain of hunger. If we aren't proactive, we'll resolve it with junk food which has the physical double wammy.
+
+First, and probably most importantly, junk food prevents us from eating healthy food. Second, the junk food we eat erodes our diet, and makes us gain weight.
 
 ## Regenerative loops
 
@@ -52,7 +63,7 @@ I have seen two categories 1) self help books, but they can be too charging up, 
 - [Magic](/magic)
 - [Meditating](/siy)
 
-## Parasitic loops
+## Parasitic energy drains
 
 ### [Psychic weight](/psychic-weight)
 
@@ -63,6 +74,8 @@ I have seen two categories 1) self help books, but they can be too charging up, 
 ### Doom scrolling
 
 ### TikTok
+
+### Social Media
 
 ### Checking e-mail or notifications
 
