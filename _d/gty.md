@@ -12,7 +12,7 @@ Getting To Yes is the seminal book on negotiation. It's the deep dive into [win 
 
 Let [compassion](/compassion) be a guide.
 
-_When someone throws a rock at you, you don't get mad at the rock, you get mad at the person. But no one wants to throw a rock at yo, they likely did it due to their suffering. So, just as you don't get mad at the rock, don't get ad at the person, get mad at their suffering._
+_When someone throws a rock at you, you don't get mad at the rock, you get mad at the person. But no one wants to throw a rock at you, they likely did it due to their suffering. So, just as you don't get mad at the rock, don't get ad at the person, get mad at their suffering_
 
 ### Focus on outcomes not positions
 
