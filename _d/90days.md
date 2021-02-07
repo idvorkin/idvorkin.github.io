@@ -61,7 +61,10 @@ A how to guide for starting your next job.
     - [Solutions - Being with end in mind - Focus on 90 day plan](#solutions---being-with-end-in-mind---focus-on-90-day-plan)
     - [Solutions - First thing first - Personal Discipline](#solutions---first-thing-first---personal-discipline)
     - [Solutions - Interdependence - Build Support Systems](#solutions---interdependence---build-support-systems)
-- [10. Accelerate Everyone](#10-accelerate-everyone)
+- [10. Help others with their transition](#10-help-others-with-their-transition)
+    - [Making org wide setup](#making-org-wide-setup)
+    - [Identify HiPos](#identify-hipos)
+    - [Succession planning](#succession-planning)
 - [Notes on the book](#notes-on-the-book)
 
 <!-- vim-markdown-toc -->
@@ -528,9 +531,15 @@ Focus on your network
   External supporters - loyal to you, not to the org. Friends and colleagues
 - In partner groups, to help understand perspective, need to get several views
 
-### 10. Accelerate Everyone
+### 10. Help others with their transition
 
 Why so few companies focus on transition acceleration. The opportunity to institutionalize a common framework. Using the framework to accelerate team development, develop high-potential leaders, integrate acquisitions, and strengthen succession planning.
+
+#### Making org wide setup
+
+#### Identify HiPos
+
+#### Succession planning
 
 ### Notes on the book
 
