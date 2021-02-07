@@ -184,7 +184,7 @@
       ],
       "incoming_links": ["/the-manager-book"],
       "redirect_url": "",
-      "doc_size": 32472
+      "doc_size": 41196
     },
     "/about": {
       "py/object": "__main__.Page",
@@ -260,7 +260,7 @@
       "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights basd on the 7 habits Chapter 1.\n\n",
       "file_path": "_site/be-proactive.html",
       "outgoing_links": ["/7h", "/essentialism", "/frog"],
-      "incoming_links": ["/7-habits", "/anxiety"],
+      "incoming_links": ["/7-habits", "/anxiety", "/idle"],
       "redirect_url": "",
       "doc_size": 12229
     },
@@ -426,18 +426,19 @@
       "title": "ISN'T THAT CURIOUS",
       "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
       "file_path": "_site/curious.html",
-      "outgoing_links": ["/shame", "/mental-pain"],
+      "outgoing_links": ["/gty", "/shame", "/mental-pain"],
       "incoming_links": [
         "/90days",
         "/being-a-great-manager",
         "/coaching",
+        "/getting-to-yes",
         "/getting-to-yes-with-yourself",
         "/happy",
         "/psychic-weight",
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 14052
+      "doc_size": 14179
     },
     "/d/2010-2-15-2016-Misc-Uncategorized": {
       "py/object": "__main__.Page",
@@ -682,6 +683,7 @@
         "/idle",
         "/psychic-weight",
         "/sharpen-the-saw",
+        "/switch",
         "/the-manager-book"
       ],
       "redirect_url": "",
@@ -1032,10 +1034,10 @@
       "title": "GETTING TO YES",
       "description": "Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.\n\n",
       "file_path": "_site/getting-to-yes.html",
-      "outgoing_links": ["/win-win", "/first-understand"],
-      "incoming_links": ["/getting-to-yes-with-yourself"],
+      "outgoing_links": ["/win-win", "/first-understand", "/compassion"],
+      "incoming_links": ["/curious", "/getting-to-yes-with-yourself"],
       "redirect_url": "",
-      "doc_size": 10435
+      "doc_size": 10788
     },
     "/getting-to-yes-with-yourself": {
       "py/object": "__main__.Page",
@@ -1135,6 +1137,8 @@
       "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifiying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
       "file_path": "_site/idle.html",
       "outgoing_links": [
+        "/mental-pain",
+        "/7h-c1",
         "/siy",
         "/habits",
         "/magic",
@@ -1150,7 +1154,7 @@
         "/psychic-weight"
       ],
       "redirect_url": "",
-      "doc_size": 11584
+      "doc_size": 12714
     },
     "/Immutable-Laws-Of-Hard": {
       "py/object": "__main__.Page",
@@ -1287,6 +1291,7 @@
         "/curious",
         "/d/resistance",
         "/d/time-off-12-2020",
+        "/idle",
         "/mental-pain",
         "/mind-monsters",
         "/psychic-weight",
@@ -1678,10 +1683,10 @@
       "title": "SWITCH",
       "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
       "file_path": "_site/switch.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/habits"],
       "incoming_links": ["/first-things-first"],
       "redirect_url": "",
-      "doc_size": 12308
+      "doc_size": 12313
     },
     "/synergize": {
       "py/object": "__main__.Page",
