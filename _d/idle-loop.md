@@ -38,13 +38,15 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 ### The first responder: boredom
 
-With nothing to do, we experience the often phantom, [mental pain](/mental-pain) of boredom. If we aren't [proactive](/7h-c1), we resolve this via distracting parasitic loops. Parasitic loops take no energy, and are even occasionally satisfying, but they're a double wammy negative.
+With nothing to do, we experience the often phantom, [mental pain](/mental-pain) of boredom. If we aren't [proactive](/7h-c1), we resolve this via distracting parasitic loops. Parasitic loops take no energy, and are even occasionally satisfying, but they're a double wammy negative:
 
-First, and probably most importantly, those parasitic loops prevents us from working on our positive regenerative loops. Second, the alternative we engage in probably erodes our pursuit of happiness, by blocking our inner peace, passion and compassion.
+- Parasitic loops prevents us from working on our positive regenerative loops.
+- Parasitic loops likely erodes our pursuit of happiness, by blocking our inner peace, passion and compassion.
 
 This is very similar to the often phantom, physical pain of hunger. If we aren't proactive, we'll resolve it with junk food which has the physical double wammy.
 
-First, and probably most importantly, junk food prevents us from eating healthy food. Second, the junk food we eat erodes our diet, and makes us gain weight.
+- Junk food prevents us from eating healthy food
+- Junk food erodes our health and diet.
 
 ## Regenerative loops
 
