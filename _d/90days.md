@@ -46,8 +46,8 @@ A how to guide for starting your next job.
     - [How will you lead change](#how-will-you-lead-change)
     - [Time to plan execution, or time for collective learning](#time-to-plan-execution-or-time-for-collective-learning)
     - [Avoid land mines](#avoid-land-mines)
-- [6. Achieve Alignment](#6-achieve-alignment)
-    - [Common traps](#common-traps)
+- [6. Set Strategy, Org Chart, Process, Skills](#6-set-strategy-org-chart-process-skills)
+    - [Anti Paterns](#anti-paterns)
     - [Org goals and gaps](#org-goals-and-gaps)
     - [Execute the big changes](#execute-the-big-changes)
     - [Setting strategic direction](#setting-strategic-direction)
@@ -382,17 +382,17 @@ While you are executing, make sure you're not derailed by the following:
 - Internal Capabilities
 - Organizational Politics
 
-### 6. Achieve Alignment
+### 6. Set Strategy, Org Chart, Process, Skills
 
 The role of the leader as organizational architect. Identifying the root causes of poor performance. Aligning strategy, structure, systems, skills, and culture.
 
-#### Common traps
+#### Anti Paterns
 
 - Making changes for change's sake
 - Not adjusting for the STARS situation.
 - Trying to restructure your way out of deeper problems.
 - Creating structures that are too complex.
-- Overestimating your organization's capacity to absorb change. D
+- Overestimating your organization's capacity to absorb change.
 
 #### Org goals and gaps
 
