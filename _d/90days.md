@@ -33,7 +33,7 @@ A how to guide for starting your next job.
     - [Will you be a Hero or Steward](#will-you-be-a-hero-or-steward)
     - [How to measure and Reward by Situation](#how-to-measure-and-reward-by-situation)
     - [How your boss can help](#how-your-boss-can-help)
-- [4. Negotiate Success](#4-negotiate-success)
+- [4. Negotiate Success up the tree](#4-negotiate-success-up-the-tree)
     - [The fundamentals](#the-fundamentals)
     - [The 5 conversations](#the-5-conversations)
     - [Negotiate the plan](#negotiate-the-plan)
@@ -52,7 +52,7 @@ A how to guide for starting your next job.
     - [Execute the big changes](#execute-the-big-changes)
     - [Setting strategic direction](#setting-strategic-direction)
 - [7. Build Your Team](#7-build-your-team)
-    - [Avoiding traps](#avoiding-traps)
+    - [Avoid the anti-patterns](#avoid-the-anti-patterns)
     - [Be a class act](#be-a-class-act)
 - [8. Create Alliances](#8-create-alliances)
 - [9. Manage Yourself](#9-manage-yourself)
@@ -60,7 +60,7 @@ A how to guide for starting your next job.
     - [Common problems](#common-problems)
     - [Solutions - Being with end in mind - Focus on 90 day plan](#solutions---being-with-end-in-mind---focus-on-90-day-plan)
     - [Solutions - First thing first - Personal Discipline](#solutions---first-thing-first---personal-discipline)
-    - [Solutions - Interdependance - Build Support Systems](#solutions---interdependance---build-support-systems)
+    - [Solutions - Interdependence - Build Support Systems](#solutions---interdependence---build-support-systems)
 - [10. Accelerate Everyone](#10-accelerate-everyone)
 - [Notes on the book](#notes-on-the-book)
 
@@ -91,7 +91,7 @@ Without learning, you risk the the equivalent of org organ rejection syndrome (y
 
 **Desire for action**
 
-- Uneducation action is a mistake
+- Uneducated action is a mistake
 - External pressure can be magnified by insecurity. Remember, shit was broken before you arrived, and would still be broken a few weeks later if it took yo u a few extra weeks to join.
 - Anxious to prove yourself, but you prove yourself by listening and being curious
 - Too busy to learn will result in a death spiral
@@ -258,7 +258,7 @@ Sound similar but need a different approach:
 
 #### How your boss can help
 
-### 4. Negotiate Success
+### 4. Negotiate Success up the tree
 
 Building a productive working relationship with a new boss. The five-conversations framework. Defining expectations. Agreeing on a diagnosis of the situation. Figuring out how to work together. Negotiating for resources. Putting together your 90-day plan.
 
@@ -323,7 +323,7 @@ Your early actions will be written into stories that will turn you into a loved 
 1. Do you have the insight and steadiness to make hard decisions?
 1. Do you have values they admire?
 1. Do you have the right energy?
-1. Do you inist on high standards for yourself and others?
+1. Do you insist on high standards for yourself and others?
 
 Good leaders thrive to be :
 
@@ -347,7 +347,7 @@ Make time to share:
 1. Elevate change agents
 1. Leverage early wins as examples of how you want things to operate.
 
-Use FOGLAMP to make progress:
+Use FOG LAMP to make progress:
 
 - F - What is the focus, what is the intent of the project
 - O - How will you oversee the project
@@ -371,11 +371,11 @@ You have two paths to execute - A) making a decision and planning execution, or 
 - **Plan**. You have the expertise to put together a detailed plan.
 - **Support**. You have sufficiently powerful alliances to support implementation.
 
-Alos, be clear on which of these you're doing.
+Also, be clear on which of these you're doing.
 
 #### Avoid land mines
 
-While you are excuting, make sure you're not derailed by the following:
+While you are executing, make sure you're not derailed by the following:
 
 - The external environment
 - Customers/markets/competitors/strategy
@@ -403,20 +403,20 @@ Ideally the org organizes around:
 - **Core processes**. The systems used to add value through the processing of information and materials
 - **Skill bases**. The capabilities of key groups of people in the organization
 
-Common gaps
+Common disconnects:
 
 - **Strategic Direction and Skill base** - Goal is to deliver app, but only have server developers
-- \*Strategic Direction and Core processes\*\* - Goal is maximum learning velocity, but VP review required for each experiment
-- **Structure and process** - Goal is ship product, but not organized in product team, organized as PMs, and Devs, and Design, results in higher communication costs.
-- **Structure and skills** - Switched to an org where developers run their data analysis, where before they had dedicated business analysist support. Now deveopers lack the skill to deliver this.
+- **Strategic Direction and Core processes** - Goal is maximum learning velocity, but VP review required for each experiment
+- **Org Chart and process** - Goal is ship product, but not organized in product team, organized as PMs, and Devs, and Design, results in higher communication costs.
+- **Org Chart and skills** - Switched to an org where developers run their data analysis, where before they had dedicated business analysts support. Now developers lack the skill to deliver this.
 
 #### Execute the big changes
 
 1. **Begin with strategic direction**. Take a hard look at how your unit is positioned with respect to the larger organization's goals and your agreed-to priorities. Make sure your mission, vision, and strategy are well thought through and logically integrated.
 2. **Look at supporting structure, processes, and skills**. Look at whether your group's existing structure, processes, and skill bases support the strategic direction-either the existing one (if you decide not to change it) or the one you envision. Dig into and understand the relationships among these elements. If one or more of them is ill suited to the mission or strategy you have in mind, figure out how you will either adapt your direction or build (or acquire) the capabilities you need.
-3. **Decide how and when you will introduce the new strategic direction**. Armed with a deeper understanding of your group's current capabilities, chart a path for shifting direction (if such a shift is necessary). Sketch out changes in positioning (markets, customers, and suppliers) as well as changes in supporting capabilities. Then adopt a realistic time frame for making these changes.
-4. **Think through the correct sequencing**. Different situations demand different approaches to bringing organizations into alignment. In a turnaround, the right approach often is to alter the strategy (which typically is not adequate), then to bring the structure into alignment with it, and then to focus on supporting processes and skills. In a realignment, however, strategic direction and structure often are not the real source of the difficulties. Instead, they frequently lie in the processes and skill bases of the organization, and these are the places to focus on.
-5. **Close the loop**. As you learn more about your group's structure, processes, and skills, you will gain insight into the team's capabilities and its cultural capacity for change. This insight will in turn deepen your understanding of what changes in strategic positioning are possible over what time period.
+3. **How and when will you change new strategic direction**. If you need lots of changes think through a plan for what you'll change and when. Think about what the dependency graph looks like.
+4. **Think through the correct sequencing**. Turnaround, change strategy, then org chart , then processes and skills. In realignment, direction and structure are not the problem - fix skill bases, and other small things.
+5. **Learn as you go**. Your plan is wrong, as you get going you'll figure out what needs to be adjusted.
 
 #### Setting strategic direction
 
@@ -437,20 +437,20 @@ Use the TOWS framework - Threats, Opportunities, Weakness, Strength (not SWOT):
 
 Inheriting a team and changing it. Managing the tension between short-term and long-term goals. Working team restructuring and organizational architecture issues in parallel. Putting in place new team processes.
 
-#### Avoiding traps
+#### Avoid the anti-patterns
 
 - **Criticizing the previous leadership**.
 - **Keeping the existing team too long**.
 - **Not balancing stability and change**.
 - **Not working on organizational alignment and team development in parallel**. A ship's captain cannot make the right choices about his crew without knowing the destination, the route, and the ship. Likewise, you can't build your team in isolation from changes in strategic direction, structure, processes, and skill bases.
 - **Not holding on to the good people**.
-- **Undertaking team building before the core is in place**.
+- **Team building before the core is in place**. It can be demoralizing if you're pushing out people who you've just bonded with
 - **Making implementation-dependent decisions too early**.
 - **Trying to do it all yourself**.
 
 #### Be a class act
 
-During every phase of the team-evolution process, take pains to treat _everyone_ with respect. Even if people in your unit agree that a particular person should be replaced, your reputation will suffer if they view your actions as unfair. Do what you can to show people the care with which you are assessing team members' capabilities and the fit between jobs and individuals. Your direct reports will form lasting impressions of you based on how you manage this part of your job.
+Always treat _everyone_ with respect. Even if people think someone should be replaced, your reputation will suffer if you seem unfair or an asshole. Show you care even while assessing team members' capabilities and the fit between jobs and individuals. Your direct reports will form lasting impressions of you based on how you manage this part of your job.
 
 ### 8. Create Alliances
 
@@ -470,7 +470,7 @@ On a scale of 1-10 why or why not?
 
 What is bothering you?
 
-- Who who have you failed to connect?
+- Who have you failed to connect?
 - Which meeting is the most troublesome?
 - Of all you seen, what bothered you the most?
 
@@ -489,7 +489,7 @@ Are your problems, structural, or personal? If you think it's structural, it'll 
 
 **Rigidity** - If need control, might dig in heels instead of being flexible when stuff changes.
 
-**Isolation** - You need to have allies, and see the underground network of information. Easy to happen 1) don't make time for connections, 2) over rely on official informaion 3) over rely on a few people 4) Discounraged key people from talking to you - either for 1 shoot the messenger, or 2 becuse you've scared them off.
+**Isolation** - You need to have allies, and see the underground network of information. Easy to happen 1) don't make time for connections, 2) over rely on official information 3) over rely on a few people 4) Discouraged key people from talking to you - either for 1 shoot the messenger, or 2 because you've scared them off.
 
 **Avoiding hard decisions** - Perhaps you don't have the information you need, or you're worried about life impact on others, or you think it gets easier over time. But it gets harder.
 
@@ -504,7 +504,7 @@ x
 - Plan to plan - Monthly, Weekly, and Daily Plans
 - [Stay in quadrant 2](/first-things-first) - Block time on your calendar
 
-Defer commitemnt - Never say yes on the spot. Always figure out if you can afford to do it, do not get pressured early. WAY better to no to yes then yes to no. Yes to no is hard on your reputation
+Defer commitment - Never say yes on the spot. Always figure out if you can afford to do it, do not get pressured early. WAY better to no to yes then yes to no. Yes to no is hard on your reputation
 
 - Go to the balcony
 - Too emotional? Step back and get an objective opinion.
@@ -514,7 +514,7 @@ Defer commitemnt - Never say yes on the spot. Always figure out if you can affor
 
 Over the stress curve, need to drop certain things.
 
-#### Solutions - Interdependance - Build Support Systems
+#### Solutions - Interdependence - Build Support Systems
 
 Start by making your bed - Small thing will kill you, get done the things you control.
 
@@ -523,9 +523,9 @@ Stabilize the home front - Avoid fighting on too many fronts, your home life can
 Focus on your network
 
 - Need Technical, Cultural , Political Advisors
-- Need insiders, and external obsevers:
-- Insiders who are trustworthy with no personal agenda, or conficting interest. Give you strait accurate advice.
-  External supporters - loyal to you, not to the org. Friends and colleauges
+- Need insiders, and external observers:
+- Insiders who are trustworthy with no personal agenda, or conflicting interest. Give you strait accurate advice.
+  External supporters - loyal to you, not to the org. Friends and colleagues
 - In partner groups, to help understand perspective, need to get several views
 
 ### 10. Accelerate Everyone
