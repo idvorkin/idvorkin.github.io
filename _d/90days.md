@@ -55,6 +55,8 @@ A how to guide for starting your next job.
     - [Avoid the anti-patterns](#avoid-the-anti-patterns)
     - [Be a class act](#be-a-class-act)
 - [8. Create Alliances](#8-create-alliances)
+    - [Authority is not enough](#authority-is-not-enough)
+    - [Find the shadow organization and real influence](#find-the-shadow-organization-and-real-influence)
 - [9. Manage Yourself](#9-manage-yourself)
     - [Self assessment](#self-assessment)
     - [Common problems](#common-problems)
@@ -458,6 +460,10 @@ Always treat _everyone_ with respect. Even if people think someone should be rep
 ### 8. Create Alliances
 
 The trap of thinking that authority is enough. Identifying whose support is critical. Mapping networks of influence and patterns of deference. Altering perceptions of interests and alternatives.
+
+#### Authority is not enough
+
+#### Find the shadow organization and real influence
 
 ### 9. Manage Yourself
 
