@@ -15,6 +15,7 @@ Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if 
 The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf).
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [The resistance is what stops us from doing the important.](#the-resistance-is-what-stops-us-from-doing-the-important)
@@ -29,9 +30,11 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
     - [If you don't beat it back, it will get stronger.](#if-you-dont-beat-it-back-it-will-get-stronger)
     - [Jump in the lake day](#jump-in-the-lake-day)
     - [Positive Habits and Routine](#positive-habits-and-routine)
-    - [7Habits - Begin with the end in mind and First things First](#7habits---begin-with-the-end-in-mind-and-first-things-first)
-    - [Getting things done](#getting-things-done)
-    - [Eat that frog](#eat-that-frog)
+    - [Related books](#related-books)
+        - [Flinch](#flinch)
+        - [7 Habits begin with the end in mind](#7-habits-begin-with-the-end-in-mind)
+        - [Getting things done](#getting-things-done)
+        - [Eat that frog](#eat-that-frog)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -64,9 +67,9 @@ At my very best, I applied a powerful antidote. I told myself I'd ask the first 
 
 ### The 3 lies of laziness
 
-- **Glorifying not important, not urgent activity** Finally I have time to watch TV, so glad, otherwise I'm good)
-- **Amplifying effort required to do one's best:** Man taking the 1 minute to get up and taking out the garbage, what a burden.
-- **Minimizing reward of doing one's best.** Is taking out the garbage, a sign of huge respect or my wife really unimportant?
+- **Doing the unimportant is glorious** Finally I have time to watch TV, so glad, I've been so deprived.
+- **Doing the important is a burden** Man taking the 1 minute to get up and taking out the garbage, what a burden.
+- **The important isn't valuable** Is taking out the garbage, a sign of huge respect or my wife really unimportant?
 
 ### If you don't beat it back, it will get stronger.
 
@@ -82,10 +85,12 @@ To remind me the resistance is a huge enemy, I do a polar bear plunge every new 
 
 Every day I wake up at 5am, it's my first victory over the resistance, and it gives me strength to fight through the day.
 
-### 7Habits - Begin with the end in mind and First things First
+### Related books
 
-[7 Habits - Habit 3](/7habits)
+#### [Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf)
 
-### [Getting things done](/gtd)
+#### [7 Habits begin with the end in mind](/7h-c3)
 
-### [Eat that frog](/frog)
+#### [Getting things done](/gtd)
+
+#### [Eat that frog](/frog)
