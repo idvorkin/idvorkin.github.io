@@ -38,9 +38,9 @@ _The resistance is the personification of the force that stops you from doing al
 
 #### Lies of procrastination
 
-- **Glorifying not important, not urgent activity** Finally I have time to watch TV, so glad, otherwise I'm good)
-- **Amplifying effort required to do one's best:** Man taking the 1 minute to get up and taking out the garbage, what a burden.
-- **Minimizing reward of doing one's best.** Is taking out the garbage, a sign of huge respect or my wife really unimportant?
+- **Doing the unimportant is glorious** Finally I have time to watch TV, so glad, I've been so deprived.
+- **Doing the important is a burden** Man taking the 1 minute to get up and taking out the garbage, what a burden.
+- **The important isn't valuable** Is taking out the garbage, a sign of huge respect or my wife really unimportant?
 
 ### Start with Why
 
