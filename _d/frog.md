@@ -13,15 +13,14 @@ tags:
   - how igor ticks
 ---
 
-Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapeter titles come from the book.
-
-But first, a word from our sponsor, the [resistance](/resistance)
-
-_The resistance is the personification of the force that stops you from doing all important things. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity._
+Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
+- [A word from our sponsor, the resistance](#a-word-from-our-sponsor-the-resistance)
+    - [Lies of procrastination](#lies-of-procrastination)
 - [Start with Why](#start-with-why)
 - [Goal Planning](#goal-planning)
 - [Execution](#execution)
@@ -32,6 +31,16 @@ _The resistance is the personification of the force that stops you from doing al
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+### A word from our sponsor, the [resistance](/resistance)
+
+_The resistance is the personification of the force that stops you from doing all important things. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity._
+
+#### Lies of procrastination
+
+- **Glorifying not important, not urgent activity** Finally I have time to watch TV, so glad, otherwise I'm good)
+- **Amplifying effort required to do one's best:** Man taking the 1 minute to get up and taking out the garbage, what a burden.
+- **Minimizing reward of doing one's best.** Is taking out the garbage, a sign of huge respect or my wife really unimportant?
 
 ### Start with Why
 
