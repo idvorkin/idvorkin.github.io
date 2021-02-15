@@ -35,6 +35,7 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 {%include blob_image.html src="rider-elephant-path.jpeg" %}
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [About Change](#about-change)
@@ -77,7 +78,7 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 
 ## 8. Tweak the Environment
 
-## 9. Build [Habits][/habits]
+## 9. Build [Habits](/habits)
 
 ## 10. Rally the Herd
 
