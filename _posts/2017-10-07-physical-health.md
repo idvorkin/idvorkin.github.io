@@ -3,7 +3,7 @@ layout: post
 title: "Physical Health"
 tags:
   - health
-redirect-from:
+redirect_from:
   - /exercise
 ---
 
