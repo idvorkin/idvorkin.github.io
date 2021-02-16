@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Isn't that curious"
-tags:
 permalink: /curious
 redirect_from:
   - /grandmothermind
