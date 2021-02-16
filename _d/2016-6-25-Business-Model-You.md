@@ -33,6 +33,7 @@ The business model canvas is a tool for understanding how a company makes money.
 - [The balance sheet](#the-balance-sheet)
     - [Revenue - What you get?](#revenue---what-you-get)
     - [Costs - What you give up](#costs---what-you-give-up)
+- [More resources](#more-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -129,6 +130,8 @@ More complex then it sounds, need to do this per customer segment:
 
 **Value Provided**
 
+- Helping understand purpose of our work
+- Help understand the why of our decisions
 - Architecture and Process feedback and establishment
 - Career Development
 - Mentoring
@@ -144,6 +147,24 @@ More complex then it sounds, need to do this per customer segment:
 - Weekly group meeting
 
 ## Product Manager
+
+**Value Provided**
+
+- Deliver the how, while eng team
+- Help maximize engineering effectiveness by representing, researching and explaining:
+  - Technical levers
+  - Cost of engineering solutions
+  - Motivations of eng team
+  - Architecture and Process trade offs
+- Divide and conquer on influence through technical channels
+
+**Channel** - tbd
+
+**Relationship**
+
+- Goal retention
+- Weekly 1:1s
+- Weekly group meeting
 
 ## Boss
 
@@ -184,3 +205,11 @@ More complex then it sounds, need to do this per customer segment:
   - Time
 - Intangible
   - Stress
+
+## More resources
+
+- [Per section details](https://strategyzer.uservoice.com/knowledgebase/articles/1194376-how-do-i-use-the-channels-building-block-of-the-bu)
+- [Business Model Canvas](https://www.amazon.com/Business-Model-Generation-Visionaries-Challengers-ebook/dp/B06X426D4F)
+- [Business Model Canvas: You](https://www.amazon.com/Business-Model-You-One-Page-Reinventing-ebook/dp/B00AB12TEI)
+
+{%include amazon.html asin="B06X426D4F;B00AB12TEI" %}
