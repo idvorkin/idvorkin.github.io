@@ -11,7 +11,7 @@ permalink: /voices
 redirect_from:
   - /voices-in-my-head
 
-author: "Igor Dvorkin"
+mermaid: True
 ---
 
 The person that most frequently blocks your success is, wait for it, you! Often it's your subconscious, and often your sub conscious is a bunch of independent voices. It's hard to deal with this hidden opposition because it's so opaque. To help understand your feelings you can name the voices in your head, and imagine asking each of them their positions, and desired outcomes.
@@ -26,8 +26,8 @@ _(BTW the order below is deliberate,it's the order of the voices i want to talk 
 
 - **Harry** - my habits coach. Always pushing for more habits
 - **Carl** - my confidence. Champion of success
-- **Peter** - the performer, loves to juggle and do magic.
-- **Willy** - the whimsical. Twin brother of peter the performer.
+- **Peter** - the performer, loves to juggle and do magic, and be goofy.
+- **Will** - my will power. Deliberate, stronga and stead.
 - **David** - the Dad. Proud like a MoFo
 - **Gertrude** - My grandmother mind reassuring me that I can take it easy, and I'm doing the best I can.
 
@@ -65,3 +65,34 @@ _(BTW the order below is deliberate,it's the order of the voices i want to talk 
     answer="The voice of my condfidence"
     />
 </orbit-reviewarea>
+
+### Appenix: Computer Diagrams
+
+```mermaid
+sequenceDiagram
+    participant B as Body <br> (and senses)
+    participant G as Gary <br> Gorging Elephant
+    participant W as Will <br> Will Power Rider
+    participant I as Igor
+    NOTE right of B:  Gary ALWAYS gets the message first
+    B->>G: Cookies!
+    NOTE right of G:  Gary ALWAYS says GORGE!!
+    G->>I: Eat them up yum!
+    alt
+        rect rgba(200,0,0,0.1)
+            NOTE over B, I: Most of the time.
+            I->>B: Down the hatch!
+            G->>G: Strength plus 1
+            W->>W: Strength minus 5
+            B->>B: Weight plus 0.1
+        end
+    else
+        rect rgba(0,200,0,0.1)
+            NOTE over B, I: When I'm at my best! <br> Will in da'house!
+            I->>W: Wait a second, do I really want a cookie?
+            W->>I: No! How will this help my pursuit of happiness?
+            I->>B: Now way, I'm strong
+            W->>W: Strength plus 10
+        end
+    end
+```
