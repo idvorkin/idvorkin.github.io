@@ -5,6 +5,7 @@ author: "Igor Dvorkin"
 permalink: /bmy
 redirect_from:
   - /Business-Model-You
+  - /bmu
 
 tags:
   - strategy
