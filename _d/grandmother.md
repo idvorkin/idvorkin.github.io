@@ -8,7 +8,6 @@ redirect_from:
   - /grandmother-mind
   - /grandma
   - /grandmother
-  - /curious
   - /compassion
   - /nonjudgment
 ---

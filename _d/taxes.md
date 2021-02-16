@@ -4,11 +4,9 @@ title: "Tax and Saving"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
-permalink: money
+permalink: /money
 imagefeature: https://github.com/idvorkin/blob/raw/master/icon_taxes.png
 redirect_from:
-  - /money
-  - /savings
   - /taxes
   - /saving
 ---
