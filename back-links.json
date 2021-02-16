@@ -259,12 +259,12 @@
       "py/object": "__main__.Page",
       "url": "/be-proactive",
       "title": "BE PROACTIVE",
-      "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights basd on the 7 habits Chapter 1.\n\n",
+      "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
       "file_path": "_site/be-proactive.html",
       "outgoing_links": ["/7h", "/essentialism", "/frog"],
       "incoming_links": ["/7-habits", "/anxiety", "/idle"],
       "redirect_url": "",
-      "doc_size": 12229
+      "doc_size": 12215
     },
     "/being-a-great-manager": {
       "py/object": "__main__.Page",
@@ -735,13 +735,13 @@
       "outgoing_links": [
         "/time-off",
         "/happy",
-        "/td/pandas",
+        "/pandas",
         "/7-habits",
         "/mental-pain"
       ],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 18759
+      "doc_size": 18756
     },
     "/d/where-have-all-the-bugs-gone": {
       "py/object": "__main__.Page",
