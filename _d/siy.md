@@ -19,7 +19,6 @@ Training Emotional Intelligence through mindfulness. Search inside yourself is a
 This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1) and Joy on Demand, and the place I learned many of my [emotional health practices](/emotional-health)
 
 <!-- prettier-ignore-start -->
-
 <!-- vim-markdown-toc GFM -->
 
 - [1) What is Emotional Intelligence (EI)? How to train it?](#1-what-is-emotional-intelligence-ei-how-to-train-it)
@@ -37,7 +36,6 @@ This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B
 - [What meditation mastery looks like](#what-meditation-mastery-looks-like)
 
 <!-- vim-markdown-toc -->
-
 <!-- prettier-ignore-end -->
 
 ### 1) What is Emotional Intelligence (EI)? How to train it?
@@ -48,7 +46,7 @@ _Even engineers can use empathy_
 
 - **GOAL:EI is a collection of trainable skills, this book teaches them.**
 - IE is Ability to monitor your, and others, feelings, and use the info to guide your own thinking and actions.
-- Background on EI: [What makes a leader](/what-makes-a-leader-great) article.
+- Background on EI: [What makes a leader](/what-makes-a-leader) article.
 - Foundational Skill 1: Focus attention
 - Foundational Skill 2: Perceive feelings in the body since body manifests feelings
   1. before mind realizes it
