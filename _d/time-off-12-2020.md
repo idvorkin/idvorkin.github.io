@@ -112,7 +112,7 @@ function gstatdaterange() {
 
 #### Data Analysis - Pandas
 
-See [pandas](/td/pandas), and update my [sleep](https://nbviewer.jupyter.org/github/idvorkin/jupyter/blob/master/SleepAnalysis.ipynb) and weight analysis jupyter pages.
+See [pandas](/pandas), and update my [sleep](https://nbviewer.jupyter.org/github/idvorkin/jupyter/blob/master/SleepAnalysis.ipynb) and weight analysis jupyter pages.
 
 - ☑ Find the "theory" of data shapes, and use it to your advantage
 - ☑ Get better at pivot tables and learning new graphing libraries (altair!)
