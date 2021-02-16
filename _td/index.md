@@ -255,7 +255,7 @@ Combined with sed and xargs you can do some crazy stuff. In this below case I ta
 - Rant - a cool c# human [language generator](https://berkin.me/rant/)
 - Rhymebrain -
 - Tranquil
-- [Sentiment Analysis](sentiment_analysis)
+- [Sentiment Analysis](/nlp)
 
 ### Azure One Liners
 
