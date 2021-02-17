@@ -1,10 +1,12 @@
 ---
 title: All posts
+layout: post
+no-render-title: true
 ---
 
-All posts for editting
+Below is my personal and family journal!
 
-# Production
+<!-- Todo, figure out how to order by date -->
 
 {% for item in site.ig66 %}
 [{{item.title}}]({{item.url}}) - {{item.date | date: "%b %d, %y"}}
