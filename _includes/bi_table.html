@@ -1,0 +1,14 @@
+{% assign is = {{include.is}} | split: ";" %}
+
+<table>
+  <tr>
+    {% for i in is %}
+    <td>
+      {{i}}
+      <img
+        src="https://github.com/idvorkin/blob/raw/master/{{include.b}}/{{i}}"
+      />
+    </td>
+    {% endfor %}
+  </tr>
+</table>
