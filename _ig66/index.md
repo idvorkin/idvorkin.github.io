@@ -13,9 +13,7 @@ Below is my personal and family journal! Enjoy
 <br/>
 
 {% for item in site.ig66 %}
-[{{item.title}}]({{item.url}})
-
-DATE: {{item.date | date: "%b %d, %y"}}
+[{{item.title}}]({{item.url}}) ({{item.date | date: "%b %d, %y"}})
 
 {{item.excerpt}}
 
