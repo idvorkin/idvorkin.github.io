@@ -1,5 +1,5 @@
 ---
-title: All posts
+title: Personal Journal
 layout: post
 no-render-title: true
 ---
