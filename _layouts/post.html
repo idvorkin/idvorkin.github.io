@@ -21,7 +21,9 @@
           <div style="text-align:center">
             {% if page.no-render-title %} {% else %}
             <h1 class="text-center">{{ page.title }}</h1>
-            {% endif%} {% include tags.html %}
+            {% endif%} {% if page.fj %}
+            <a href="/ig66"> Goto All Posts </a>
+            {% else %} {% include tags.html %} {% endif %}
           </div>
           <div id="content-holder" class="pretty-first-para">
             {% include toc.html %} {{ content }}
