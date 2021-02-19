@@ -14,10 +14,10 @@ Below is my personal and family journal! Enjoy
 
 ### [{{item.title}}]({{item.url}})
 
-{{item.date | date: "%b %d, %y"}}
-
 {{item.excerpt}}
 
-![montage](https://github.com/idvorkin/blob/raw/master/ig66/{{item.week}}/montage.jpg)
+<!-- - {{item.date | date: "%b %d, %y"}} -->
+
+[![montage](https://github.com/idvorkin/blob/raw/master/ig66/{{item.week}}/montage.jpg)]({{item.url}})
 
 {% endfor %}
