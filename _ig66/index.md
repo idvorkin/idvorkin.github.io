@@ -21,3 +21,5 @@ The days are long, but the months fly by. That's what a lady told us at the play
 {{item.excerpt}}
 
 {% endfor %}
+
+<div id="imported-posts"/>
