@@ -8,10 +8,12 @@ function append_post(div, post) {
   let thumbnail_url = post.thumbnail.replace("s72-c", "s320");
   if (post.thumbnail != "") {
     item.append(
-      `<div> <a href='${post.url}'}><img src='${thumbnail_url}'/></div>`
+      // `<div> <a href='${post.url}'}><img src='${thumbnail_url}'/></div>`
+      `<table><tr><td> <a href='${post.url}'}><img src='${thumbnail_url}'/></td><td> ${post.excerpt}</td></tr></table>`
     );
+  } else {
+    item.append(`<div> ${post.excerpt} </div>`);
   }
-  item.append(`<div> ${post.excerpt} </div>`);
   div.append(item);
 }
 function ProcessImports(posts) {
