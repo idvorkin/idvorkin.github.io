@@ -86,7 +86,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [The FAQ](#the-faq)
     - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
     - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
-    - [The re-charter: When charter changes](#the-re-charter-when-charter-changes)
+    - [The flip: When charter changes](#the-flip-when-charter-changes)
 - [Personal Motivations](#personal-motivations)
     - [Why is management attractive to Igor?](#why-is-management-attractive-to-igor)
     - [What is Igor's dream job?](#what-is-igors-dream-job)
@@ -1044,7 +1044,31 @@ The day of:
 
 ### The merge or you leaving the team: When a manager leaves
 
-### The re-charter: When charter changes
+### The flip: When charter changes
+
+There are two categories of flips: A) Flip to new domain (genesis) or B) Flip to take over another teams space. Genesis is mostly covered above, so here we'll focus on taking over another teams, or another teams partial charter.
+
+In general when this happens there are  a few common reactions
+
+**The new charter is too small**
+
+A common reason for this is the old team that had the charter, likely only planned out for 120% of there engineers.  So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there's only work for 3 people, and be sad.
+
+
+**The new charter is much simpler then expected**
+**The new charter isnt' as interesting**
+
+It's common to oversimplify from a distance. Once the team gets into the details, they'll either see it's true, and they'll find new good stuff to do, or, far more likely they'll find much more nuance, subtelty and ambigutiy in the new space.
+
+**Playbook and antidotes**
+
+This is pretty similar to the whole team getting a new job, and [the first 90 days applies](/90days):
+
+- Early Win: Figure out the situation, and deliver a win.
+- Trust: Relationships with team, and peers, and partners.
+- Knowledge: Know critical parts of business, tech, org.
+
+A great way to do this is set the team up to do spikes on the major work items, this will overcome the above concerns, building knowledge and motivating the early wins.
 
 ## Personal Motivations
 
