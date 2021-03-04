@@ -5,7 +5,8 @@ from bs4 import BeautifulSoup
 import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
 from dataclasses import dataclass
 
-print_error=False
+print_error = False
+
 
 def printjson(out):
 
@@ -16,7 +17,9 @@ def printjson(out):
     # print ('<!-- prettier-ignore-end -->')
     print(jsonpickle.encode(out, indent=4))
 
-file_path =  "ig66-export-02-22-2021.xml"
+
+file_path = "ig66-export-02-22-2021.xml"
+
 
 @dataclass
 class BlogPost:
@@ -24,8 +27,10 @@ class BlogPost:
     url: str
     published: str
     excerpt: str
-    thumbnail:str
+    thumbnail: str
+    content: str
     tags: []
+
 
 def get_post_entries_xml():
     post_entries = []
@@ -42,12 +47,13 @@ def get_post_entries_xml():
                     post_entries += [entry]
     return post_entries
 
+
 def thumbnail_for_entry(e):
-    #<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://1.bp.blogspot.com/-YZgvziaVcLs/X59gt8X8K-I/AAAAAAAE9SQ/XgnXtO3ZFlo_bmj6sO25xeg5DwmS9JllQCPcBGAsYHg/s72-c/IMG_0658.JPG" height="72" width="72"/>
+    # <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://1.bp.blogspot.com/-YZgvziaVcLs/X59gt8X8K-I/AAAAAAAE9SQ/XgnXtO3ZFlo_bmj6sO25xeg5DwmS9JllQCPcBGAsYHg/s72-c/IMG_0658.JPG" height="72" width="72"/>
     thumbnails = [l for l in e.find_all("media:thumbnail")]
     if len(thumbnails) != 1:
         # Won't have a thumbnail if there is no image in the post, totally fine
-        #print (f"!{len(thumbnails)} thumbnails for : {e.id.contents[0]}") # something fishy
+        # print (f"!{len(thumbnails)} thumbnails for : {e.id.contents[0]}") # something fishy
         return ""
     thumbnail = str(thumbnails[0]["url"])
     return thumbnail
@@ -56,30 +62,31 @@ def thumbnail_for_entry(e):
 def export_to_json():
     posts = []
     for p in get_post_entries_xml():
-        #<category scheme="http://www.blogger.com/atom/ns#" term="zach_week"/>
+        # <category scheme="http://www.blogger.com/atom/ns#" term="zach_week"/>
 
-        #<title type="text">Family Journal 550AZ:Halloween 2020, Tori Super party!!!</title>
+        # <title type="text">Family Journal 550AZ:Halloween 2020, Tori Super party!!!</title>
         if len(p.title.contents) == 0:
             if print_error:
-                print (f"!No title for id: {p.id.contents[0]}") # something fishy
+                print(f"!No title for id: {p.id.contents[0]}")  # something fishy
             continue
 
-        #<link rel="alternate" type="text/html" href="https://ig66.blogspot.com/2020/11/family-journal-550azhalloween-2020-tori.html" title="Family Journal 550AZ:Halloween 2020, Tori Super party!!!"/>
+        # <link rel="alternate" type="text/html" href="https://ig66.blogspot.com/2020/11/family-journal-550azhalloween-2020-tori.html" title="Family Journal 550AZ:Halloween 2020, Tori Super party!!!"/>
         urls = [l for l in p.find_all("link") if l["rel"] == "alternate"]
         if len(urls) != 1:
             if print_error:
-                print (f"!{len(urls)} URL for : {p.id.contents[0]}") # something fishy
+                print(f"!{len(urls)} URL for : {p.id.contents[0]}")  # something fishy
             continue
         url = urls[0]
 
-        #<published>2020-11-01T17:31:00.004-08:00</published>
+        # <published>2020-11-01T17:31:00.004-08:00</published>
         post = BlogPost(
-            title = str(p.title.contents[0]),
-            url = str(url["href"]),
-            published = str(p.published.contents[0]),
-            excerpt = "",
-            thumbnail = thumbnail_for_entry(p),
-            tags = []
+            title=str(p.title.contents[0]),
+            url=str(url["href"]),
+            published=str(p.published.contents[0]),
+            excerpt="",
+            content="",
+            thumbnail=thumbnail_for_entry(p),
+            tags=[],
         )
         posts += [post]
 
@@ -117,12 +124,13 @@ def test_parse_ns():
     """
     soup = BeautifulSoup(x, features="xml")
     entry = soup.find_all("entry")[0]
-    print (entry.find_all('media:thumbnail'))
+    print(entry.find_all("media:thumbnail"))
     thumbnails = [l for l in entry.find_all("media:thumbnail")]
-    print ("from list")
-    print (thumbnails)
-    print ("from parse")
-    print (thumbnail_for_entry(entry))
+    print("from list")
+    print(thumbnails)
+    print("from parse")
+    print(thumbnail_for_entry(entry))
 
-#test_parse_ns()
+
+# test_parse_ns()
 export_to_json()
