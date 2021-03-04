@@ -11,6 +11,7 @@ function append_post(div, post) {
       `<div> <a href='${post.url}'}><img src='${thumbnail_url}'/></div>`
     );
   }
+  item.append(`<div> ${post.excerpt} </div>`);
   div.append(item);
 }
 function ProcessImports(posts) {

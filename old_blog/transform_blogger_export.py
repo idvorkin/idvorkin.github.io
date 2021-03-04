@@ -58,6 +58,27 @@ def thumbnail_for_entry(e):
     thumbnail = str(thumbnails[0]["url"])
     return thumbnail
 
+def excerpt_for_content(content):
+    paragraphs = content.split("\n")
+    # Return first non whitespace paragraph or nothing.
+    for p in paragraphs:
+        if len(p.strip(" ")) > 0 :
+            return p
+    return ""
+
+
+def content_for_entry(p):
+   from html import unescape
+   # import html2markdown
+   import html2text
+   converter = html2text.HTML2Text()
+   converter.ignore_links=True
+   converter.ignore_images=True
+   converter.body_width = 0
+
+   content = converter.handle(unescape(str(p.content.contents[0])))
+   return content
+
 
 def export_to_json():
     posts = []
@@ -78,13 +99,14 @@ def export_to_json():
             continue
         url = urls[0]
 
+        content = content_for_entry(p)
         # <published>2020-11-01T17:31:00.004-08:00</published>
         post = BlogPost(
             title=str(p.title.contents[0]),
             url=str(url["href"]),
             published=str(p.published.contents[0]),
-            excerpt="",
-            content="",
+            excerpt=excerpt_for_content(content),
+            content="", # content,
             thumbnail=thumbnail_for_entry(p),
             tags=[],
         )
