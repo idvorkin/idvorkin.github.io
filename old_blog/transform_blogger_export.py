@@ -58,26 +58,36 @@ def thumbnail_for_entry(e):
     thumbnail = str(thumbnails[0]["url"])
     return thumbnail
 
+
 def excerpt_for_content(content):
     paragraphs = content.split("\n")
-    # Return first non whitespace paragraph or nothing.
+
+    # return first good paragraph
+    # TODO consider building up longer paragraph.
     for p in paragraphs:
-        if len(p.strip(" ")) > 0 :
-            return p
+        isWhiteSpace = len(p.strip(" ").strip("_").strip("*")) == 0
+        if isWhiteSpace:
+            continue
+        isItalicsLine = p.startswith("_") and p.endswith("_")  # usually just a note
+        if isItalicsLine:
+            continue
+        return p
     return ""
 
 
 def content_for_entry(p):
-   from html import unescape
-   # import html2markdown
-   import html2text
-   converter = html2text.HTML2Text()
-   converter.ignore_links=True
-   converter.ignore_images=True
-   converter.body_width = 0
+    from html import unescape
 
-   content = converter.handle(unescape(str(p.content.contents[0])))
-   return content
+    # import html2markdown
+    import html2text
+
+    converter = html2text.HTML2Text()
+    converter.ignore_links = True
+    converter.ignore_images = True
+    converter.body_width = 0
+
+    content = converter.handle(unescape(str(p.content.contents[0])))
+    return content
 
 
 def export_to_json():
@@ -106,7 +116,7 @@ def export_to_json():
             url=str(url["href"]),
             published=str(p.published.contents[0]),
             excerpt=excerpt_for_content(content),
-            content="", # content,
+            content="",  # content,
             thumbnail=thumbnail_for_entry(p),
             tags=[],
         )
