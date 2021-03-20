@@ -29,11 +29,12 @@ Finance has existed for as long as civilization. And like most things before the
     - [Smart Contrats, DAPPS](#smart-contrats-dapps)
     - [Smart Contrats, DAPPS](#smart-contrats-dapps-1)
     - [Fungible Tokens ERC20](#fungible-tokens-erc20)
-    - [Non Fungible Tokens  ERC20](#non-fungible-tokens--erc20)
+    - [Non Fungible Tokens ERC20](#non-fungible-tokens-erc20)
 - [Other Ledgers](#other-ledgers)
 - [Buidling your own contracts](#buidling-your-own-contracts)
     - [Tool chains](#tool-chains)
-    - [Languages: Poly and](#languages-poly-and)
+    - [Poly - the default language](#poly---the-default-language)
+    - [Vyper - the simpler programming language for python programmers](#vyper---the-simpler-programming-language-for-python-programmers)
 - [Unintended consequences](#unintended-consequences)
     - [Forking the ledger](#forking-the-ledger)
     - [Over powering the network](#over-powering-the-network)
@@ -118,7 +119,11 @@ Lets start with the bitcoin model which is easier:
 
 ### Tool chains
 
-### Languages: Poly and
+### Poly - the default language
+
+The default language
+
+### Vyper - the simpler programming language for python programmers
 
 ## Unintended consequences
 
