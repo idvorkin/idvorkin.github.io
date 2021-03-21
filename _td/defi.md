@@ -10,12 +10,29 @@ Finance has existed for as long as civilization. And like most things before the
 
 <!-- vim-markdown-toc GFM -->
 
-- [Finance 101](#finance-101)
-    - [Store of values - Gold](#store-of-values---gold)
-    - [Currency - US Dollars](#currency---us-dollars)
-    - [Loans -](#loans--)
-    - [Auctions -](#auctions--)
+- [The jobs of finance](#the-jobs-of-finance)
+    - [Representing and storing value](#representing-and-storing-value)
+    - [Fungible Entities - Sheep](#fungible-entities---sheep)
+    - [Non Fungible Entities - The Shaman's crown](#non-fungible-entities---the-shamans-crown)
+    - [Exchanging value - Markets](#exchanging-value---markets)
+    - [Liquidity - When is the market open, and who is there?](#liquidity---when-is-the-market-open-and-who-is-there)
+    - [Compensating Risk - Interest](#compensating-risk---interest)
+    - [Capitalizing an entity - Rent](#capitalizing-an-entity---rent)
+    - [Insurance - Paying to redue risk](#insurance---paying-to-redue-risk)
+    - [Hedging  - Derrivatives](#hedging----derrivatives)
+    - [Speculations - Derrivatives](#speculations---derrivatives)
     - [Market Makers -](#market-makers--)
+    - [Auctions -](#auctions--)
+    - [Loans with collatoral -](#loans-with-collatoral--)
+    - [Loans w/o collatoral -](#loans-wo-collatoral--)
+    - [Market Makers -](#market-makers---1)
+    - [Speculations - Derrivatives](#speculations---derrivatives-1)
+    - [Market Makers -](#market-makers---2)
+    - [Auctions -](#auctions---1)
+    - [Loans with collatoral -](#loans-with-collatoral---1)
+    - [Loans w/o collatoral -](#loans-wo-collatoral---1)
+    - [Market Makers -](#market-makers---3)
+- [From TradFi to DeFi](#from-tradfi-to-defi)
 - [DeFi 101](#defi-101)
     - [Store Of value - Bitcoin](#store-of-value---bitcoin)
     - [Currency - ERC20](#currency---erc20)
@@ -29,21 +46,21 @@ Finance has existed for as long as civilization. And like most things before the
     - [Smart Contracts, DAPPS](#smart-contracts-dapps)
     - [Smart Contrats, DAPPS](#smart-contrats-dapps)
     - [Fungible Tokens ERC20](#fungible-tokens-erc20)
-    - [Non Fungible Tokens ERC20](#non-fungible-tokens-erc20)
-- [Other Ledgers](#other-ledgers)
+    - [Non Fungible Tokens ER721](#non-fungible-tokens-er721)
+    - [Interacting with off chain state](#interacting-with-off-chain-state)
+    - [Oracles to keep offstate on state](#oracles-to-keep-offstate-on-state)
 - [Building your own contracts](#building-your-own-contracts)
     - [Tool chains](#tool-chains)
     - [Poly - the default language](#poly---the-default-language)
     - [Vyper - the simpler programming language for python programmers](#vyper---the-simpler-programming-language-for-python-programmers)
+    - [Ganache - a personal etherium ledger and VM](#ganache---a-personal-etherium-ledger-and-vm)
 - [Unintended consequences](#unintended-consequences)
-    - [Forking the ledger](#forking-the-ledger)
-    - [Over powering the network](#over-powering-the-network)
+    - [Taking over the chain, the 51% attack](#taking-over-the-chain-the-51-attack)
     - [MEV](#mev)
     - [Salmonella Attack](#salmonella-attack)
     - [Sandwich Attack](#sandwich-attack)
     - [Cost of consensus - Proof of Work](#cost-of-consensus---proof-of-work)
-    - [Cost of consensus - Proof of Share](#cost-of-consensus---proof-of-share)
-    - [Ledger take over](#ledger-take-over)
+    - [Cost of consensus - Proof of Stake](#cost-of-consensus---proof-of-stake)
 - [Policy Questions](#policy-questions)
     - [What's wrong with centralized finance](#whats-wrong-with-centralized-finance)
     - [Is it just drug dealers](#is-it-just-drug-dealers)
@@ -53,17 +70,69 @@ Finance has existed for as long as civilization. And like most things before the
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Finance 101
+## The jobs of finance
 
-### Store of values - Gold
+I spent some time thinking about finance. I'm guessig there's some truth here, but a finance guy would probably help me get a better grip on it.
 
-### Currency - US Dollars
+### Representing and storing value
 
-### Loans -
+### Fungible Entities - Sheep
+
+### Non Fungible Entities - The Shaman's crown
+
+### Exchanging value - Markets
+
+### Liquidity - When is the market open, and who is there?
+
+### Compensating Risk - Interest
+
+### Capitalizing an entity - Rent
+
+### Insurance - Paying to redue risk
+
+### Hedging - Derrivatives
+
+### Speculations - Derrivatives
+
+### Market Makers -
 
 ### Auctions -
 
+### Loans with collatoral -
+
+### Loans w/o collatoral -
+
 ### Market Makers -
+
+### Speculations - Derrivatives
+
+### Market Makers -
+
+### Auctions -
+
+### Loans with collatoral -
+
+### Loans w/o collatoral -
+
+### Market Makers -
+
+## From TradFi to DeFi
+
+| Representing and storing value             | Traditional Instrument                     | DeFi Instrument     |
+| ------------------------------------------ | ------------------------------------------ | ------------------- |
+| Representing and storing value             | Concept                                    | Concept             |
+| Fungible Entities                          | Sheep                                      | Bitcoin/ ERC20      |
+| Non Fungible Entities - The Shaman's crown | Shaman's Crown                             | ERC721              |
+| Exchanging value - Markets                 | Concept                                    | Concept             |
+| Markets - Order Book                       | NASDAQ                                     |                     |
+| Liquidity                                  | When is the market open, and who is there? | Uniswap             |
+| Compensating Risk                          | Interest                                   |                     |
+| Compensating For use of an entity          | Rent                                       | Rent                |
+| Hedging                                    | Derrivatives                               | dx/dy               |
+| Speculation                                | Derrivatives                               | dx/dy               |
+| Loans w/Collatoratal                       | Mortgage                                   | BlockFi             |
+| Loans w/o Collatoral                       | Bookie; Mafia (bodily harm is collatoral)  | Flashloans ERC 3156 |
+| Reducing Risk                              | Insurance                                  |                     |
 
 ## DeFi 101
 
@@ -111,9 +180,11 @@ Lets start with the bitcoin model which is easier:
 
 ### Fungible Tokens ERC20
 
-### Non Fungible Tokens ERC20
+### Non Fungible Tokens ER721
 
-## Other Ledgers
+### Interacting with off chain state
+
+### Oracles to keep offstate on state
 
 ## Building your own contracts
 
@@ -125,11 +196,17 @@ The default language
 
 ### Vyper - the simpler programming language for python programmers
 
+### Ganache - a personal etherium ledger and VM
+
+https://www.trufflesuite.com/ganache
+
 ## Unintended consequences
 
-### Forking the ledger
+### Taking over the chain, the 51% attack
 
-### Over powering the network
+https://www.investopedia.com/terms/1/51-attack.asp
+
+The attackers would be able to prevent new transactions from gaining confirmations, allowing them to halt payments between some or all users. They would also be able to reverse transactions that were completed while they were in control of the network, meaning they could double-spend coins.
 
 ### MEV
 
@@ -143,9 +220,15 @@ https://github.com/Defi-Cartel/salmonella
 
 ### Cost of consensus - Proof of Work
 
-### Cost of consensus - Proof of Share
+### Cost of consensus - Proof of Stake
 
-### Ledger take over
+You "vouch" for valid transaction getting paid if they are valid, and losing your money if you attest to invalid transactions. Way less computing power required.
+
+https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/
+
+Unlike proof-of-work, validators don't need to use significant amounts of computational power because they're selected at random and aren't competing. They don't need to mine blocks, they just need to create blocks when chosen and validate proposed blocks when they're not. This validation is known as attesting. You can think of attesting as saying "this block looks good to me". Validators get rewards for proposing new blocks and for attesting to ones they've seen.
+
+If you attest to malicious blocks, you lose your stake.
 
 ## Policy Questions
 
