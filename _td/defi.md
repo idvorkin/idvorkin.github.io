@@ -19,7 +19,7 @@ Finance has existed for as long as civilization. And like most things before the
     - [Compensating Risk - Interest](#compensating-risk---interest)
     - [Capitalizing an entity - Rent](#capitalizing-an-entity---rent)
     - [Insurance - Paying to redue risk](#insurance---paying-to-redue-risk)
-    - [Hedging  - Derrivatives](#hedging----derrivatives)
+    - [Hedging - Derrivatives](#hedging---derrivatives)
     - [Speculations - Derrivatives](#speculations---derrivatives)
     - [Market Makers -](#market-makers--)
     - [Auctions -](#auctions--)
@@ -54,8 +54,9 @@ Finance has existed for as long as civilization. And like most things before the
     - [Poly - the default language](#poly---the-default-language)
     - [Vyper - the simpler programming language for python programmers](#vyper---the-simpler-programming-language-for-python-programmers)
     - [Ganache - a personal etherium ledger and VM](#ganache---a-personal-etherium-ledger-and-vm)
-- [Unintended consequences](#unintended-consequences)
+- [Risks](#risks)
     - [Taking over the chain, the 51% attack](#taking-over-the-chain-the-51-attack)
+    - [Buggy Software - Yam](#buggy-software---yam)
     - [MEV](#mev)
     - [Salmonella Attack](#salmonella-attack)
     - [Sandwich Attack](#sandwich-attack)
@@ -200,13 +201,17 @@ The default language
 
 https://www.trufflesuite.com/ganache
 
-## Unintended consequences
+## Risks
 
 ### Taking over the chain, the 51% attack
 
 https://www.investopedia.com/terms/1/51-attack.asp
 
 The attackers would be able to prevent new transactions from gaining confirmations, allowing them to halt payments between some or all users. They would also be able to reverse transactions that were completed while they were in control of the network, meaning they could double-spend coins.
+
+### Buggy Software - Yam
+
+Great Story
 
 ### MEV
 
