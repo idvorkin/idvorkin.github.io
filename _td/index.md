@@ -13,7 +13,6 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 -->
 <!-- vim-markdown-toc GFM -->
 
-- [Build your own ...](#build-your-own-)
 - [Design and Architecture](#design-and-architecture)
 - [Cloud first applications](#cloud-first-applications)
 - [Data Systems](#data-systems)
@@ -22,6 +21,8 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [Natural Language Processing](#natural-language-processing)
 - [Advertising systems](#advertising-systems)
 - [Statistics](#statistics)
+- [Decentralized Finance](#decentralized-finance)
+- [Build your own ...](#build-your-own-)
 - [Other](#other)
 - [Minor Tips](#minor-tips)
 - [Projects](#projects)
@@ -85,8 +86,6 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 
 <!-- vim-markdown-toc -->
 
-### Build your own [...](https://github.com/danistefanovic/build-your-own-x)
-
 ### [Design and Architecture](/td/design)
 
 ### [Cloud first applications](/td/cloud-first-applications)
@@ -102,6 +101,10 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 ### [Advertising systems](/td/advertising)
 
 ### [Statistics](/td/stats)
+
+### [Decentralized Finance](/defi)
+
+### Build your own [...](https://github.com/danistefanovic/build-your-own-x)
 
 ### Other
 

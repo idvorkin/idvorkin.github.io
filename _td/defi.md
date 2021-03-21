@@ -2,6 +2,7 @@
 layout: post
 no-render-title: true
 title: Decentralized Finance
+permalink: /defi
 ---
 
 Finance has existed for as long as civilization. And like most things before the Internet age was based on the trust of centralized law and authority (like banks and governments). Decentralized Finance (DeFi) is the movement that asks could we perform our financial transaction with out centralized trust. Finance has evolved many instruments to meet the needs of civilization, all of which are based on trust (store of value, currency, loans), de-fi will search for equivalences of each of these.
