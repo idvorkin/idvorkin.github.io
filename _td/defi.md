@@ -56,6 +56,7 @@ Finance has existed for as long as civilization. And like most things before the
     - [Vyper - the simpler programming language for python programmers](#vyper---the-simpler-programming-language-for-python-programmers)
     - [Ganache - a personal etherium ledger and VM](#ganache---a-personal-etherium-ledger-and-vm)
 - [Risks](#risks)
+    - [Speculatave Bubble- The Tulip Bubble](#speculatave-bubble--the-tulip-bubble)
     - [Taking over the chain, the 51% attack](#taking-over-the-chain-the-51-attack)
     - [Buggy Software - Yam](#buggy-software---yam)
     - [MEV](#mev)
@@ -63,6 +64,12 @@ Finance has existed for as long as civilization. And like most things before the
     - [Sandwich Attack](#sandwich-attack)
     - [Cost of consensus - Proof of Work](#cost-of-consensus---proof-of-work)
     - [Cost of consensus - Proof of Stake](#cost-of-consensus---proof-of-stake)
+- [Defi - "Nations". Laws, Governance and Monetary Policy](#defi---nations-laws-governance-and-monetary-policy)
+    - [Capabilities](#capabilities)
+    - [Foreign Exchanges](#foreign-exchanges)
+    - [Monetary Policy](#monetary-policy)
+    - [Governance](#governance)
+    - [Poof of Work](#poof-of-work)
 - [Policy Questions](#policy-questions)
     - [What's wrong with centralized finance](#whats-wrong-with-centralized-finance)
     - [Is it just drug dealers](#is-it-just-drug-dealers)
@@ -204,6 +211,13 @@ https://www.trufflesuite.com/ganache
 
 ## Risks
 
+### Speculatave Bubble- The Tulip Bubble
+
+No one wants to miss a chance for a quick buck, and back in 1637 the quick buck was to be had by [investing in Tulips](https://en.wikipedia.org/wiki/Tulip_mania)
+\*Many individuals suddenly became rich. A golden bait hung temptingly out before the people, and, one after the other, they rushed to the tulip marts, like flies around a honey-pot. Every one imagined that the passion for tulips would last for ever, and that the wealthy from every part of the world would send to Holland, and pay whatever prices were asked for them. The riches of Europe would be concentrated on the shores of the Zuyder Zee, and poverty banished from the favoured clime of Holland. Nobles, citizens, farmers, mechanics, seamen, footmen, maidservants, even chimney sweeps and old clotheswomen, dabbled in tulips.
+
+People were purchasing bulbs at higher and higher prices, intending to re-sell them for a profit. Such a scheme could not last unless someone was ultimately willing to pay such high prices and take possession of the bulbs. In February 1637, tulip traders could no longer find new buyers willing to pay increasingly inflated prices for their bulbs. As this realization set in, the demand for tulips collapsed, and prices plummeted—the speculative bubble burst. Some were left holding contracts to purchase tulips at prices now ten times greater than those on the open market, while others found themselves in possession of bulbs now worth a fraction of the price they had paid. Mackay says the Dutch devolved into distressed accusations and recriminations against others in the trade.[13]\*
+
 ### Taking over the chain, the 51% attack
 
 https://www.investopedia.com/terms/1/51-attack.asp
@@ -212,7 +226,7 @@ The attackers would be able to prevent new transactions from gaining confirmatio
 
 ### Buggy Software - Yam
 
-Great Story
+[Great Story](https://www.youtube.com/watch?v=DXUhD8m_KMc) around speculation and software bugs
 
 ### MEV
 
@@ -236,7 +250,35 @@ Unlike proof-of-work, validators don't need to use significant amounts of comput
 
 If you attest to malicious blocks, you lose your stake.
 
+## Defi - "Nations". Laws, Governance and Monetary Policy
+
+Arguably, the different blockchains are the equivalent of major entities, with their own sets of laws (though laws enforced by computer programs), governance and monetary policy.
+
+For example:
+
+| Nation | Capabilities | Montery Policy | Governance | Proof Of Work |
+| \_ | | | | |
+| BitCoin | Ledger | | | |
+| Etherium | Virtual Machine | | | |
+| Etherium 2.0 | Virtual Machine | | | |
+| Polygon | | | | |
+| Chia | | | | |
+
+### Capabilities
+
+### Foreign Exchanges
+
+### Monetary Policy
+
+### Governance
+
+### Poof of Work
+
+Within each of these "Defi Nations" there are different currencies and Defi Systems, and forieng exchanges
+
 ## Policy Questions
+
+Within each of these there
 
 ### What's wrong with centralized finance
 
