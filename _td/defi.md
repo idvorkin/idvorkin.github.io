@@ -256,13 +256,13 @@ Arguably, the different blockchains are the equivalent of major entities, with t
 
 For example:
 
-| Nation | Capabilities | Montery Policy | Governance | Proof Of Work |
-| \_ | | | | |
-| BitCoin | Ledger | | | |
-| Etherium | Virtual Machine | | | |
-| Etherium 2.0 | Virtual Machine | | | |
-| Polygon | | | | |
-| Chia | | | | |
+| Nation                                                                           | Capabilities                 | Montery Policy | Governance | Proof Of Work |
+| -------------------------------------------------------------------------------- | ---------------------------- | -------------- | ---------- | ------------- |
+| BitCoin                                                                          | Ledger                       |                |            |               |
+| Etherium                                                                         | Virtual Machine - Solidatary |                |            |               |
+| Etherium 2.0                                                                     | Virtual Machine              |                |            |               |
+| Polygon                                                                          |                              |                |            |               |
+| [Chia](https://www.chia.net/assets/Chia-Business-Whitepaper-2021-02-09-v1.0.pdf) | VirtualMachine ChiaLisp      |                |            |               |
 
 ### Capabilities
 
