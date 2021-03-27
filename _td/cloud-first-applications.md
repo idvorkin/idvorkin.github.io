@@ -32,6 +32,7 @@ The world is now on the cloud, here are my random notes on the topic.
     - [Communication buses: Envoy](#communication-buses-envoy)
 - [New patterns](#new-patterns)
     - [Side cars](#side-cars)
+    - [Resiliance Patterns - Retry, Circuit-Breaker, Timeout, Fallback, Bulkhead, Cache.](#resiliance-patterns---retry-circuit-breaker-timeout-fallback-bulkhead-cache)
 - [Functions as a Service FaaS](#functions-as-a-service-faas)
     - [Introduction](#introduction)
     - [FaaS Orchestration](#faas-orchestration)
@@ -156,6 +157,12 @@ Similar to Nginx or HA Proxy, or AWS ELB, terminate the https and redirect to th
 ### Side cars
 
 Package functionality into a seperately injected application: https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar
+
+### Resiliance Patterns - Retry, Circuit-Breaker, Timeout, Fallback, Bulkhead, Cache.
+
+Distributed services fail, and resilliance patterns like mentioned above are critical. See [Polly](https://docs.google.wbb://github.com/App-vNext/Polly) as an example library implementing these concepts.
+
+[Azure cloud patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/) also has many good patterns.
 
 ## Functions as a Service FaaS
 
