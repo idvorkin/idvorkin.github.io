@@ -228,6 +228,16 @@ The attackers would be able to prevent new transactions from gaining confirmatio
 
 [Great Story](https://www.youtube.com/watch?v=DXUhD8m_KMc) around speculation and software bugs
 
+Team decided to create a new currency, Yam, with several good properties. Elastic money supply, community governance, treasury to fund future improvements via stable coin, through money supply code.
+
+- August 1st - Team had an idea for a new smart contract, furious coding
+- August 11th - Currency launches
+- August 11th - 150M in funding for initial offering
+- August 12th - 500M in funding for second round.
+- August 12th - Bug found, requiring majority of community to vote on govenrance before 8am
+- August 13th 7am - Enough people voted, but found a bug, so the protocol could not be used.
+- August 14th - Protocol worthless. Many people got their money out of the protocol, but 25%?? did not?
+
 ### MEV
 
 [Miner extractable value (MEV)](https://medium.com/flashbots/frontrunning-the-mev-crisis-40629a613752) is a measure to study the profit of a miner (or validator, sequencer, or other privileged protocol actor) can make through their ability to arbitrarily include, exclude, or re-order transactions from the blocks they produce. MEV includes both ‘conventional’ profits from transaction fees and block rewards, and ‘unconventional’ profits from transaction reordering, transaction insertion, and transaction censorship within the block a miner is producing.
