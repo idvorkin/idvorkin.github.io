@@ -41,6 +41,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Physical security.](#physical-security)
     - [The dirty little secret of security reviews](#the-dirty-little-secret-of-security-reviews)
 - [Uncategorized](#uncategorized)
+    - [Security from first principles socratic method:](#security-from-first-principles-socratic-method)
     - [Apple Pay](#apple-pay)
     - [Chip and PIN and tap in rest of world](#chip-and-pin-and-tap-in-rest-of-world)
     - [Credit card vs Debit Card security](#credit-card-vs-debit-card-security)
@@ -176,6 +177,10 @@ I grew up doing security at Microsoft, and at the heart of their assessment mode
 Going through a security review process is the way to validate security. However, as soon as the review is complete, security starts to drift, security holes start to appear, and there are no safe guards to ensure the security of the system isn't compromised.
 
 ### Uncategorized
+
+#### Security from first principles socratic method:
+
+A great ["first principles" implementation](https://web.mit.edu/kerberos/www/dialogue.html?fbclid=IwAR38MBHzKJZzMrO1P_NLpTyV1G6GYjrxYUBXIJsTitw_q4_QM4EpiLpo4Y8).
 
 #### Apple Pay
 

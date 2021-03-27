@@ -1326,8 +1326,8 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 
 ### Laws to remember
 
-- **Goodhart's Law** - A metric can be used to measure reality, or to flog people, but not both (humans optimize to be rewarded)
-- **Conway's Law** - Software will ship to match an org chart (humans optimize for communication cost)
+- **Goodhart's Law** - A metric can be used to measure reality, or to flog people, but not both (humans optimize to be rewarded). See story about pythons in India.
+- **Conway's Law** - Software will ship to match an org chart (humans optimize for communication cost). See K-Pass compiler.
 - **[Parkinson's Law](/parkinson)** - Work (or money) will expand to fill the time available.
 - **Peter Principle** - People will rise till they become incompetent
 - **Parkinsons Law of Triviality - (Bike Shedding)** Members of an organization give disproportionate weight to trivial issues. A nuclear power plant funding committee focus most time on how to paint the bike shed since it's easy, and they feel they are providing value

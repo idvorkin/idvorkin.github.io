@@ -82,6 +82,8 @@ Along these lines, you can think of P values as probabilities that you can multi
 One P value multiplied by another P value equals a smaller P value.
 You should consider results from a study in conjunction with other similar studies. It is extremely unlikely that a single study can prove that the alternative hypothesis is true with any confidence. So, don’t expect it to!\*
 
+A not yet done - [p-value simulator](https://rpsychologist.com/pvalue/)
+
 How does Amazon's Web Lab tool handle this?
 
 How does Facebook Deltoid tool handle this?
