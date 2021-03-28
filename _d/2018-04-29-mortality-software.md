@@ -18,6 +18,16 @@ Life is finite, time is limited. Mortality software helps us understand and then
       It moves and  it gleams, so hungry and restless
       Where am I going? When will I live this?
 
+And From Dr. Seuess:
+
+    How did it get so late so soon?
+    It’s night before it’s afternoon.
+
+    December is here before it’s June.
+    My goodness how the time has flewn.
+
+    How did it get so late so soon?
+
 ### Why mortality software?
 
 To be satisfied we need to live in accordance with the person we want to be. Mortality software helps you understand who you want to be, and supports you in being that person.
@@ -32,14 +42,14 @@ Mortality software will be both forward and backwards facing. By this I mean it 
 
 ### Creating your future - Tool overview
 
-| Time Horizon | What | How |
-|+--|--|--|
-| Life | Eulogy and Roles | Roles Values |
-| Two year| Supporting Projects/Accomplishments | Supporting Behaviors/Habits
-| Quarter -> Month | Decompose into reasonable chunks | Decompose into habits |
-| Quarter -> Month | How to allocate between chunks | Habit Tracking |
-| Month -> Week | Milestones | Habit Tracking |
-| Week -> Day | Task List | Habit/Time Tracker|
+| Time Horizon     | What                                | How                         |
+| ---------------- | ----------------------------------- | --------------------------- |
+| Life             | Eulogy and Roles                    | Roles Values                |
+| Two year         | Supporting Projects/Accomplishments | Supporting Behaviors/Habits |
+| Quarter -> Month | Decompose into reasonable chunks    | Decompose into habits       |
+| Quarter -> Month | How to allocate between chunks      | Habit Tracking              |
+| Month -> Week    | Milestones                          | Habit Tracking              |
+| Week -> Day      | Task List                           | Habit/Time Tracker          |
 
 #### Role and Value Finder, Eulogy Writer.
 
