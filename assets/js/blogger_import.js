@@ -36,12 +36,14 @@ function ProcessImports(posts) {
   }
   // Add a random post on top
   let count_random_posts = 3;
-  for (i = 0; i < count_random_posts; i++) {
-    var randomPost = posts[Math.floor(Math.random() * posts.length)];
+  for (var randomPost of _.chain(posts)
+    .sampleSize(count_random_posts)
+    .orderBy(o => o.published, "desc")) {
     append_post(random_div, randomPost);
   }
 
-  for (var post of posts) {
+  let count_history_to_display = 5;
+  for (var post of _.take(posts, count_history_to_display)) {
     append_post(import_div, post);
   }
 }
