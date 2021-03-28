@@ -63,16 +63,27 @@ def excerpt_for_content(content):
     paragraphs = content.split("\n")
 
     # return first good paragraph
-    # TODO consider building up longer paragraph.
+    out_paragraphs=[]
+    min_excerpt_len = 200
+    excerpt = ""
+
     for p in paragraphs:
-        isWhiteSpace = len(p.strip(" ").strip("_").strip("*")) == 0
+        p = p.strip(" ")
+        isWhiteSpace = len(p.strip("_").strip("*")) == 0
         if isWhiteSpace:
             continue
+
         isItalicsLine = p.startswith("_") and p.endswith("_")  # usually just a note
         if isItalicsLine:
             continue
-        return p
-    return ""
+
+        excerpt += p
+        out_paragraphs += [p]
+
+        if len(excerpt) > min_excerpt_len:
+            break
+
+    return "\n\n".join(out_paragraphs)
 
 
 def content_for_entry(p):
