@@ -9,7 +9,11 @@ function append_post(div, post) {
   if (post.thumbnail != "") {
     item.append(
       // `<div> <a href='${post.url}'}><img src='${thumbnail_url}'/></div>`
-      `<table><tr><td> <a href='${post.url}'}><img src='${thumbnail_url}'/></td><td> ${post.excerpt}</td></tr></table>`
+      `
+      <div style='overflow:auto'>
+      <a href='${post.url}'}><img style='float:left; margin-right:10px' src='${thumbnail_url}'/></a>
+        <div>${post.excerpt}</div>
+      </div>`
     );
   } else {
     item.append(`<div> ${post.excerpt} </div>`);
@@ -31,8 +35,11 @@ function ProcessImports(posts) {
     return;
   }
   // Add a random post on top
-  var randomPost = posts[Math.floor(Math.random() * posts.length)];
-  append_post(random_div, randomPost);
+  let count_random_posts = 3;
+  for (i = 0; i < count_random_posts; i++) {
+    var randomPost = posts[Math.floor(Math.random() * posts.length)];
+    append_post(random_div, randomPost);
+  }
 
   for (var post of posts) {
     append_post(import_div, post);

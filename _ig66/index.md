@@ -8,7 +8,6 @@ no-render-title: true
 <br/>
 
 <div class='alert alert-success' id="random-post">
-A blast from the past!
 </div>
 
 {% for item in site.ig66 reversed   %}
