@@ -2,21 +2,46 @@ function append_post(div, post) {
   let item = $("<div/>");
   // TODO: HACK: Strip to the right of Week number
   let title_href = `<h3> <a href='${post.url}'}>${post.title}</a></h3>`;
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
 
   item.append(title_href);
   // HACK: Upsize to larger thumbnail, seems like blogger auto resizes to include a 320 image as well.
   let thumbnail_url = post.thumbnail.replace("s72-c", "s320");
+
+  let published_date = new Date(post.published);
+  let excerptDisplayText = `
+    <div> ${
+      monthNames[published_date.getMonth()]
+    } ${published_date.getFullYear()} - ${post.excerpt}
+    </div>
+   `;
   if (post.thumbnail != "") {
+    console.log(post.title);
+    console.log(published_date);
     item.append(
       // `<div> <a href='${post.url}'}><img src='${thumbnail_url}'/></div>`
       `
       <div style='overflow:auto'>
+
       <a href='${post.url}'}><img style='float:left; margin-right:10px' src='${thumbnail_url}'/></a>
-        <div>${post.excerpt}</div>
+      ${excerptDisplayText}
       </div>`
     );
   } else {
-    item.append(`<div> ${post.excerpt} </div>`);
+    item.append(excerptDisplayText);
   }
   div.append(item);
 }
