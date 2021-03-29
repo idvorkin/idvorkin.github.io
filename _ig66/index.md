@@ -3,6 +3,7 @@ title: Personal Journal
 layout: post
 
 no-render-title: true
+monkey-does-reload: true
 ---
 
 <br/>

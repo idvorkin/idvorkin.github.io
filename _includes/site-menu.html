@@ -4,9 +4,14 @@
         <a class="navbar-brand" href="/" style="padding: 0;">
             <img src="{{ site.logo-png}}" height="60" alt="">
         </a>
-        <a class="navbar-brand" href="/random" style="padding: 0;">
-            <img src="/images/surprised_monkey.png" height="60" alt="">
-        </a>
+
+        {% if page.monkey-does-reload %}
+            <a class="navbar-brand" href="/ig66" style="padding: 0;">
+        {% else %}
+            <a class="navbar-brand" href="/random" style="padding: 0;">
+        {% endif %}
+                <img src="/images/surprised_monkey.png" height="60" alt="">
+            </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToCollapse"
             aria-controls="navbarToCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
