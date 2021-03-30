@@ -182,6 +182,7 @@ Several Projects that I started and deliberatly mothballed so I'd have capacity 
 - [Records](https://github.com/kennethreitz/records) Raw SQL for humans
 - [Delegator](https://github.com/kennethreitz/delegator.py) Sub process for humans
 - Pylinkvalidator - Crawl a web site for errors (great for web testing)
+- [Ice Cream](https://github.com/gruns/icecream) Simpler printf debugging.
 
 ### Typescript
 
