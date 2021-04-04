@@ -9,7 +9,7 @@ redirect_from:
   - think
 ---
 
-Useful writing tells people something true and important that they didn't already know in a way that need no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Lack of analysis, synthesis, simplification, and presentation.
+Useful writing tells people something true and important that they didn't already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -27,7 +27,7 @@ Useful writing tells people something true and important that they didn't alread
     - [The Hero's Journey Formula:](#the-heros-journey-formula)
     - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
     - [The crappy modern business book](#the-crappy-modern-business-book)
-- [How to write](#how-to-write)
+- [Pen to paper](#pen-to-paper)
     - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
     - [On essay's and writing:](#on-essays-and-writing)
     - [How to write effectively](#how-to-write-effectively)
@@ -127,7 +127,7 @@ The modern business/self-help book formula is: XYZ, and it's crappy.
 
 A modern well written business book is the [first 90 days](/90days). Highly recommended.
 
-## How to write
+## Pen to paper
 
 ### Madman, Architect, Carpenter, Judge
 
