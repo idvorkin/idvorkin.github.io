@@ -6,9 +6,10 @@ permalink: /writing
 redirect_from:
   - write
   - thinking
+  - think
 ---
 
-Useful writing tells people something true and important that they didn't already know in a way that need no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Thinking is hard, analysis is hard, synthesis is hard, simplification is hard, optimal presentation is hard.
+Useful writing tells people something true and important that they didn't already know in a way that need no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Lack of analysis, synthesis, simplification, and presentation.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -32,6 +33,7 @@ Useful writing tells people something true and important that they didn't alread
     - [How to write effectively](#how-to-write-effectively)
     - [How to tell a great story](#how-to-tell-a-great-story)
     - [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
+    - [My 80 hours on an outage document](#my-80-hours-on-an-outage-document)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -161,3 +163,15 @@ Doesn't really fit, but I do enjoy this story
 {%include youtube.html src="KxDwieKpawg" %}
 
 ### Writers head to readers head, like an army through a choke point
+
+### My 80 hours on an outage document
+
+When something goes wrong at amazon you write a [correction of errors(COE)](/coe) document. In my last few months of Amazon I wrote a COE on an Alexa outage which was a result of poor interaction between the system that turns "speech into text"(ASR) and the system that turns "text into meaning" (NLU).
+
+This was some deeply technical stuff, but needed to be clear so non-domain experts could understand what happened. I ended up spending over 80 hours on this, and even enlisted the help of a marketing person who had no idea how Alexa worked to ensure my writing was crystal clear.
+
+Some people might be appled. 80 hours is 2 strait weeks of work, (which I stretched out over 4 weeks). I think it was time well spent for two reasons.
+
+First, I was muscle building. I'm pretty sure if my writing muscle was fully matured, and I had already understood the ASR and NLU space, I could have written this document in 20 hours, meaning 60 hours was just training, which is always worth it.
+
+Second, outage is expensive, as is incorrect action,
