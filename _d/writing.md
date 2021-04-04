@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Writing is Thinking"
+imagefeature: https://github.com/idvorkin/blob/raw/master/noun_writing.svg
 redirect_from:
   - writing
   - write
@@ -13,13 +14,14 @@ Writing is thinking. Period.
 <!-- vim-markdown-toc GFM -->
 
 - [Why](#why)
-    - [Amazon's Writing  Culture](#amazons-writing--culture)
+    - [Amazon's Writing Culture](#amazons-writing-culture)
     - [Reading](#reading)
     - [Thinking](#thinking)
 - [How](#how)
     - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
     - [Minto's Pyramid Principle](#mintos-pyramid-principle)
-    - [Read and Write Daily](#read-and-write-daily)
+    - [Evergreen notes (aka this blog)](#evergreen-notes-aka-this-blog)
+    - [Sucking till you don't](#sucking-till-you-dont)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -27,6 +29,8 @@ Writing is thinking. Period.
 ## Why
 
 ### Amazon's Writing Culture
+
+{%include blob_image_float_right.html src="noun_writing.svg?sanitize=1" %}
 
 My favorite thing about [Amazon](/amazon) was the ethos of the writing culture. You've probably heard the story, during meetings. Every meeting starts with 30 minutes of silent reading followed by discussion.
 
@@ -42,6 +46,30 @@ Turns out, to build a clear writing muscle, you must build a critical thinking m
 
 ### Madman, Architect, Carpenter, Judge
 
+From [my full post](https://ig2600.blogspot.com/2015/07/soft-skills-writing-as-madman-architect.html)
+Writing breaks down into 4 distinct phases: brainstorming, organization, writing and editing. To reinforce the distinctness of these phases, think of writing as four distinct jobs: Madman, Architect, Carpenter and Judge. Maximize your efficiency by doing each job, distinctly, deliberately and serially.
+
+Each job has a specific goal, and that goal should be your sole focus during while doing that job. Do not do the next job, and do not go back to previous jobs. To reinforce the distinctness of each job, consider using a different tool, and physical reminders of each job.
+
 ### Minto's Pyramid Principle
 
-### Read and Write Daily
+### Evergreen notes (aka this blog)
+
+[Evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), are a concept brilliantly articulated by Andy Matuschak. Worth a read in its entirety, but I'll inline his definiton:
+
+Evergreen notes are written and organized to evolve, contribute, and accumulate over time, across projects. This is an unusual way to think about writing notes: Most people take only transient notes. That’s because these practices aren’t about writing notes; they’re about effectively developing insight: “Better note-taking” misses the point; what matters is “better thinking”. When done well, these notes can be quite valuable: Evergreen note-writing as fundamental unit of knowledge work.
+
+It’s hard to write notes that are worth developing over time. These principles help.
+
+Evergreen notes should be:
+
+- atomic
+- concept-oriented
+- densely linked
+- interlinked (like the web), as opposed to hierarchal (like file folders).
+
+### Sucking till you don't
+
+You're going to suck till you don't. I could never explain it as well as Ira Glass (the host of this america life), so watch his video:
+
+{%include youtube.html src="PbC4gqZGPSY" %}
