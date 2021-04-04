@@ -140,7 +140,7 @@ Frugality, done correclty is resourcefulness. It says, if you need 10 people, ha
 
 ### Severity handling
 
-### COEs
+### [COEs](/coe)
 
 ### Operational Excellence vs Engineering Excellence
 
