@@ -117,6 +117,9 @@ class LinkBuilder:
             links = [tag["href"] for tag in soup.find_all("a") if "href" in tag.attrs]
             links = [link for link in links if jekyll_config.is_allow_outgoing(link)]
 
+            # cut down on small changes to backlinks when minor file changes
+            rounded_len =  len(contents) - len(contents) % 1000
+
             return Page(
                 title=pageTitle,
                 description=description,
@@ -124,7 +127,7 @@ class LinkBuilder:
                 file_path=file_path,
                 outgoing_links=links,
                 incoming_links=[],
-                doc_size=len(contents),
+                doc_size=rounded_len
             )
 
         assert "should never get here"
