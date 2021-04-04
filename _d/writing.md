@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Writing is Thinking"
-imagefeature: https://github.com/idvorkin/blob/raw/master/noun_writing.svg
+imagefeature: https://github.com/idvorkin/blob/raw/master/noun_writing.png
 permalink: /writing
 redirect_from:
   - write
@@ -22,6 +22,8 @@ Useful writing tells people something true and important that they didn't alread
     - [SWOT and SOAR - Exploring the space](#swot-and-soar---exploring-the-space)
     - [MECE - How you know you're done.](#mece---how-you-know-youre-done)
     - [Minto's Pyramid Principle](#mintos-pyramid-principle)
+    - [Elon's First Principles](#elons-first-principles)
+    - [Five Whys](#five-whys)
 - [Writing Formulas](#writing-formulas)
     - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
     - [The Hero's Journey Formula:](#the-heros-journey-formula)
@@ -112,6 +114,45 @@ More details: https://strategyu.co/wtf-is-mece-mutually-exclusive-collectively-e
 A [rare book](https://www.amazon.com/Pyramid-Principle-Logic-Writing-Thinking/dp/0273710516/) on how to write well. Sadly long out of print, but worth picking up a copy
 
 {%include amazon.html asin="0273710516;" %}
+
+### Elon's First Principles
+
+### Five Whys
+
+_TODO: Move to COE post_
+
+Ask why 5 times till you get to a root understanding. Exactly 5 why's doesn't matter, getting no deep then why does. Also forks in the answers usually happen. Lets dig in...
+
+**1 - Why am I bad shape?**
+
+Because I stopped exercising
+
+**2 - Why did I stop exercising?**
+
+Because it's a lot of effort.
+
+**3 - Why is a lot of effort?**
+
+Because the gym closed
+Because I'm not prioritizing it enough
+
+**3.1 Why is the gym closed?**
+
+Because of Corona Virus
+
+**3.2 Why aren't you prioritizing exercise enough**
+
+Because it doesn't feel urgent in the moment.
+
+You know you have your Five Why's right when you can reverse the answers joined by "therefore", and it's coherent
+
+- Because of Corona Virus
+  - Therefore the gym is closed
+- Because it doesn't feel urgent in the moment
+  - therefore I'm not prioritizing exercise enough
+- Therefore I stopped going to the gym
+- Therefore it's a lot of effort.
+- Therefore I stopped exercising
 
 ## Writing Formulas
 
