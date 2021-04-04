@@ -114,6 +114,7 @@
     "/the-dip": "/dip",
     "/the-saw": "/sharpen-the-saw",
     "/thedip": "/dip",
+    "/think": "/writing",
     "/thinking": "/writing",
     "/time-off": "/timeoff",
     "/twentytwo": "/what-i-wish-knew-at-22",
@@ -224,7 +225,13 @@
       "title": "MY THOUGHTS ON  AMAZON",
       "description": "I spent 4 years working at Amazon, some things I loved, some not so much. Amazon is a huge company and the variation of behavior within a company exceeds the variation between the “median” behavior between companies. Even within the two teams I was on at Amazon I saw the exact opposite behaviors. When I talk about the good, I’ll talk about the ideal good, and when I talk about the bad, I’ll talk to some issues I saw that were systemically bad. As a result you’ll often see me describing something as both good and bad, as it’s done differently in different parts of the company.\n\n",
       "file_path": "_site/amazon.html",
-      "outgoing_links": [],
+      "outgoing_links": [
+        "/coe",
+        "/writing",
+        "/coe",
+        "/the-manager-book",
+        "/tft"
+      ],
       "incoming_links": ["/parkinson", "/writing"],
       "redirect_url": "",
       "doc_size": 23000
@@ -416,7 +423,7 @@
       "description": "Everyone can make a mistake once, that’s totally fine. Repeating mistakes is unacceptable. Correction of Errors (COE) is the name Amazon gives it’s mechanism for correcting errors. Microsoft uses the term Root cause analysis (RCA), it’s the same concept. This mechanism originated with service outages but can be applied for any “error”, like missing your sons kindergarden graduation, or getting fired.\n\n",
       "file_path": "_site/coe.html",
       "outgoing_links": [],
-      "incoming_links": ["/the-manager-book"],
+      "incoming_links": ["/amazon", "/the-manager-book", "/writing"],
       "redirect_url": "",
       "doc_size": 12000
     },
@@ -2118,7 +2125,7 @@
         "/parkinson",
         "/books"
       ],
-      "incoming_links": ["/being-a-great-manager", "/coaching"],
+      "incoming_links": ["/amazon", "/being-a-great-manager", "/coaching"],
       "redirect_url": "",
       "doc_size": 106000
     },
@@ -2158,7 +2165,7 @@
       "description": "One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations\n\n",
       "file_path": "_site/toysfortots.html",
       "outgoing_links": [],
-      "incoming_links": ["/eulogy"],
+      "incoming_links": ["/amazon", "/eulogy"],
       "redirect_url": "",
       "doc_size": 11000
     },
@@ -2271,12 +2278,12 @@
       "py/object": "__main__.Page",
       "url": "/writing",
       "title": "WRITING IS THINKING",
-      "description": "Writing is thinking. Period.\n\n",
+      "description": "Useful writing tells people something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation.\n\n",
       "file_path": "_site/writing.html",
-      "outgoing_links": ["/amazon", "/amazon", "/90days"],
-      "incoming_links": [],
+      "outgoing_links": ["/amazon", "/amazon", "/90days", "/coe"],
+      "incoming_links": ["/amazon"],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 21000
     }
   }
 }
