@@ -2,8 +2,8 @@
 layout: post
 title: "Writing is Thinking"
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun_writing.svg
+permalink: /writing
 redirect_from:
-  - writing
   - write
   - thinking
 ---
@@ -19,9 +19,11 @@ Writing is thinking. Period.
     - [Thinking](#thinking)
 - [How](#how)
     - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
-    - [Minto's Pyramid Principle](#mintos-pyramid-principle)
     - [Evergreen notes (aka this blog)](#evergreen-notes-aka-this-blog)
+    - [Minto's Pyramid Principle](#mintos-pyramid-principle)
     - [Sucking till you don't](#sucking-till-you-dont)
+    - [How to write effectively](#how-to-write-effectively)
+    - [A great story](#a-great-story)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -51,8 +53,6 @@ Writing breaks down into 4 distinct phases: brainstorming, organization, writing
 
 Each job has a specific goal, and that goal should be your sole focus during while doing that job. Do not do the next job, and do not go back to previous jobs. To reinforce the distinctness of each job, consider using a different tool, and physical reminders of each job.
 
-### Minto's Pyramid Principle
-
 ### Evergreen notes (aka this blog)
 
 [Evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), are a concept brilliantly articulated by Andy Matuschak. Worth a read in its entirety, but I'll inline his definiton:
@@ -68,8 +68,32 @@ Evergreen notes should be:
 - densely linked
 - interlinked (like the web), as opposed to hierarchal (like file folders).
 
+### Minto's Pyramid Principle
+
+A [rare book](https://www.amazon.com/Pyramid-Principle-Logic-Writing-Thinking/dp/0273710516/) on how to write well. Sadly long out of print, but worth picking up a copy
+
+{%include amazon.html asin="0273710516;" %}
+
 ### Sucking till you don't
 
 You're going to suck till you don't. I could never explain it as well as Ira Glass (the host of this america life), so watch his video:
 
-{%include youtube.html src="PbC4gqZGPSY" %}
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe
+    class="embed-responsive-item"
+    src="https://player.vimeo.com/video/176325518?color=1fc9a2&portrait=0"
+    allowfullscreen
+  ></iframe>
+</div>
+
+### How to write effectively
+
+{%include youtube.html src="vtIzMaLkCaM" %}
+
+Haven't watched this one yet ...
+
+{%include youtube.html src="aFwVf5a3pZM" %}
+
+### A great story
+
+{%include youtube.html src="KxDwieKpawg" %}
