@@ -479,6 +479,7 @@ A text based browser [better then lynx](http://w3m.sourceforge.net/). But,
 
 Decent cross plat video editors.
 
+- [MoviePy](https://github.com/Zulko/moviepy) - Python based video editor scripts
 - [OpenShot](https://www.openshot.org/) - Video editor with good splicing.
 - [Lossless cutting](https://github.com/mifi/lossless-cut) - A tool to make lossless cuts.
 
