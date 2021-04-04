@@ -48,9 +48,13 @@ Each job has a specific goal, and that goal should be your sole focus during whi
 
 ### MECE - How you know you're done.
 
-Mutually Exclusive, Collectively Exhausted
+Mutually Exclusive, Collectively Exhausted (MECE), is two distint ideas.
 
-https://strategyu.co/wtf-is-mece-mutually-exclusive-collectively-exhaustive/
+“Mutually exclusive” is a concept from probability theory that says two events cannot occur at the same time. For example, if you roll a six-sided die, the outcomes of a six or a three are mutually exclusive. When applied to information, mutually exclusive ideas would be distinctly separate and not overlapping.
+
+“Collectively exhaustive” means that the set of ideas is inclusive of all possible options. Going back to the six-sided dice example, the set {1,2,3,4,5,6} is mutually exclusive AND collectively exhaustive.
+
+More details: https://strategyu.co/wtf-is-mece-mutually-exclusive-collectively-exhaustive/
 
 ### Evergreen notes (aka this blog)
 
