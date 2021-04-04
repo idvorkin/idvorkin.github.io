@@ -8,26 +8,35 @@ redirect_from:
   - thinking
 ---
 
-Writing is thinking. Period.
+Useful writing tells people something true and important that they didn't already know in a way that need no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Thinking is hard, analysis is hard, synthesis is hard, simplification is hard, optimal presentation is hard.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Amazon's Writing Culture](#amazons-writing-culture)
-- [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
-- [MECE - How you know you're done.](#mece---how-you-know-youre-done)
-- [Evergreen notes (aka this blog)](#evergreen-notes-aka-this-blog)
-- [Minto's Pyramid Principle](#mintos-pyramid-principle)
-- [Sucking till you don't](#sucking-till-you-dont)
-- [How to write effectively](#how-to-write-effectively)
-- [A great story](#a-great-story)
-- [The crappyness of the modern business books](#the-crappyness-of-the-modern-business-books)
-- [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
+- [Why](#why)
+    - [Amazon's Writing Culture](#amazons-writing-culture)
+    - [Sucking till you don't](#sucking-till-you-dont)
+    - [Building Knowledge - Evergreen notes](#building-knowledge---evergreen-notes)
+- [Analysis tools](#analysis-tools)
+    - [SWOT and SOAR - Exploring the space](#swot-and-soar---exploring-the-space)
+    - [MECE - How you know you're done.](#mece---how-you-know-youre-done)
+    - [Minto's Pyramid Principle](#mintos-pyramid-principle)
+- [Writing Formulas](#writing-formulas)
+    - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
+    - [The Hero's Journey Formula:](#the-heros-journey-formula)
+    - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
+    - [The crappy modern business book](#the-crappy-modern-business-book)
+- [How to write](#how-to-write)
+    - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
+    - [On essay's and writing:](#on-essays-and-writing)
+    - [How to write effectively](#how-to-write-effectively)
+    - [How to tell a great story](#how-to-tell-a-great-story)
+    - [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-Bad writing, is bad thinking, not bad language. Bad writing happens when people are writing without working through their thinking. But how do you figure out what you're thinking?
+## Why
 
 ### Amazon's Writing Culture
 
@@ -39,24 +48,19 @@ On my second day at [Amazon](/amazon) I had my first meeting. After we went arou
 
 Turns out, to build a clear writing muscle, you must build a critical thinking muscle, which requires a critical reading muscle. After 3 years at Amazon, my skills had increased drastically, but I was still weak at these by Amazon standards.
 
-### Madman, Architect, Carpenter, Judge
+### Sucking till you don't
 
-From [my full post](https://ig2600.blogspot.com/2015/07/soft-skills-writing-as-madman-architect.html)
-Writing breaks down into 4 distinct phases: brainstorming, organization, writing and editing. To reinforce the distinctness of these phases, think of writing as four distinct jobs: Madman, Architect, Carpenter and Judge. Maximize your efficiency by doing each job, distinctly, deliberately and serially.
+You're going to suck till you don't. I could never explain it as well as Ira Glass (the host of this america life), so watch his video:
 
-Each job has a specific goal, and that goal should be your sole focus during while doing that job. Do not do the next job, and do not go back to previous jobs. To reinforce the distinctness of each job, consider using a different tool, and physical reminders of each job.
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe
+    class="embed-responsive-item"
+    src="https://player.vimeo.com/video/176325518?color=1fc9a2&portrait=0"
+    allowfullscreen
+  ></iframe>
+</div>
 
-### MECE - How you know you're done.
-
-Mutually Exclusive, Collectively Exhausted (MECE), is two distint ideas.
-
-“Mutually exclusive” is a concept from probability theory that says two events cannot occur at the same time. For example, if you roll a six-sided die, the outcomes of a six or a three are mutually exclusive. When applied to information, mutually exclusive ideas would be distinctly separate and not overlapping.
-
-“Collectively exhaustive” means that the set of ideas is inclusive of all possible options. Going back to the six-sided dice example, the set {1,2,3,4,5,6} is mutually exclusive AND collectively exhaustive.
-
-More details: https://strategyu.co/wtf-is-mece-mutually-exclusive-collectively-exhaustive/
-
-### Evergreen notes (aka this blog)
+### Building Knowledge - Evergreen notes
 
 [Evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), are a concept brilliantly articulated by Andy Matuschak. Worth a read in its entirety, but I'll inline his definiton:
 
@@ -71,23 +75,76 @@ Evergreen notes should be:
 - densely linked
 - interlinked (like the web), as opposed to hierarchal (like file folders).
 
+You'll note, this blog is my implementaiton of evergreen notes.
+
+## Analysis tools
+
+### SWOT and SOAR - Exploring the space
+
+SWOT:
+
+| Axis         | Tailwinds   | Headwinds |
+| ------------ | ----------- | --------- |
+| **Internal** | Strength    | Weakeness |
+| **External** | Opportunity | Threats   |
+
+SOAR:
+
+| Axis         | Value Proposition | Goal        |
+| ------------ | ----------------- | ----------- |
+| **Today**    | Strength          | Opportunity |
+| **Tomorrow** | Aspiration        | Results     |
+
+### MECE - How you know you're done.
+
+Mutually Exclusive, Collectively Exhausted (MECE), is two distint ideas.
+
+“Mutually exclusive” is a concept from probability theory that says two events cannot occur at the same time. For example, if you roll a six-sided die, the outcomes of a six or a three are mutually exclusive. When applied to information, mutually exclusive ideas would be distinctly separate and not overlapping.
+
+“Collectively exhaustive” means that the set of ideas is inclusive of all possible options. Going back to the six-sided dice example, the set {1,2,3,4,5,6} is mutually exclusive AND collectively exhaustive.
+
+More details: https://strategyu.co/wtf-is-mece-mutually-exclusive-collectively-exhaustive/
+
 ### Minto's Pyramid Principle
 
 A [rare book](https://www.amazon.com/Pyramid-Principle-Logic-Writing-Thinking/dp/0273710516/) on how to write well. Sadly long out of print, but worth picking up a copy
 
 {%include amazon.html asin="0273710516;" %}
 
-### Sucking till you don't
+## Writing Formulas
 
-You're going to suck till you don't. I could never explain it as well as Ira Glass (the host of this america life), so watch his video:
+### The detective formula: Situation, Complication, Resolution
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe
-    class="embed-responsive-item"
-    src="https://player.vimeo.com/video/176325518?color=1fc9a2&portrait=0"
-    allowfullscreen
-  ></iframe>
-</div>
+### The Hero's Journey Formula:
+
+### The feedback formula: Situation, Behavior, Impact
+
+### The crappy modern business book
+
+The modern business/self-help book formula is: XYZ, and it's crappy.
+
+A modern well written business book is the [first 90 days](/90days). Highly recommended.
+
+## How to write
+
+### Madman, Architect, Carpenter, Judge
+
+From [my full post](https://ig2600.blogspot.com/2015/07/soft-skills-writing-as-madman-architect.html)
+Writing breaks down into 4 distinct phases: brainstorming, organization, writing and editing. To reinforce the distinctness of these phases, think of writing as four distinct jobs: Madman, Architect, Carpenter and Judge. Maximize your efficiency by doing each job, distinctly, deliberately and serially.
+
+Each job has a specific goal, and that goal should be your sole focus during while doing that job. Do not do the next job, and do not go back to previous jobs. To reinforce the distinctness of each job, consider using a different tool, and physical reminders of each job.
+
+### On essay's and writing:
+
+Paul Graham
+
+http://www.paulgraham.com/useful.html
+
+_I've never tried to count how many times I proofread essays, but I'm sure there are sentences I've read 100 times before publishing them. When I proofread an essay, there are usually passages that stick out in an annoying way, sometimes because they're clumsily written, and sometimes because I'm not sure they're true. The annoyance starts out unconscious, but after the tenth reading or so I'm saying "Ugh, that part" each time I hit it. They become like briars that catch your sleeve as you walk past. Usually I won't publish an essay till they're all gone — till I can read through the whole thing without the feeling of anything catching._
+
+Jeff Bezos:
+
+Read his letters to shareholders, imagine how long he spends writing them
 
 ### How to write effectively
 
@@ -97,16 +154,10 @@ Haven't watched this one yet ...
 
 {%include youtube.html src="aFwVf5a3pZM" %}
 
-### A great story
+### How to tell a great story
 
 Doesn't really fit, but I do enjoy this story
 
 {%include youtube.html src="KxDwieKpawg" %}
-
-### The crappyness of the modern business books
-
-The modern business/self-help book formula is: XYZ, and it's crappy.
-
-A modern well written business book is the [first 90 days](/90days). Highly recommended.
 
 ### Writers head to readers head, like an army through a choke point
