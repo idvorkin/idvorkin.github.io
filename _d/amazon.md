@@ -16,7 +16,7 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
     - [The comfort with failure](#the-comfort-with-failure)
     - [Day 1 culture](#day-1-culture)
     - [Embracing change](#embracing-change)
-    - [Resourcefulness](#resourcefulness)
+    - [Frugality and Resourcefulness](#frugality-and-resourcefulness)
     - [Begin with the end in mind - Working Backwards](#begin-with-the-end-in-mind---working-backwards)
     - [Critical Thinking - Writing (and reading) Culture](#critical-thinking---writing-and-reading-culture)
     - [Business Metrics focus - QBR/MBR/WBR](#business-metrics-focus---qbrmbrwbr)
@@ -84,7 +84,7 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
     - [Social Cohesion is bad](#social-cohesion-is-bad)
     - [Sounds like good intentions](#sounds-like-good-intentions)
     - [Work hard have fun change the world](#work-hard-have-fun-change-the-world)
-- [My projects at Amazon](#my-projects-at-amazon)
+- [My Experience at Amazon](#my-experience-at-amazon)
     - [What I wanted to learn joining Amazon](#what-i-wanted-to-learn-joining-amazon)
     - [Bonus learnings at Amazon](#bonus-learnings-at-amazon)
     - [Live Video](#live-video)
@@ -108,7 +108,7 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
 
 ### Embracing change
 
-### Resourcefulness
+### Frugality and Resourcefulness
 
 Frugality, done correclty is resourcefulness. It says, if you need 10 people, have 8, and you'll do better work. If you have 12 people, you'll start making up work, and bad stuff happens.
 
@@ -267,7 +267,7 @@ Humorously, each LP has an opposite cancelling force.
 
 ### Work hard have fun change the world
 
-## My projects at Amazon
+## My Experience at Amazon
 
 ### What I wanted to learn joining Amazon
 
