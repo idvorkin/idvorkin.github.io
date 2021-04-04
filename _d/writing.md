@@ -13,23 +13,21 @@ Writing is thinking. Period.
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Why](#why)
-    - [Amazon's Writing Culture](#amazons-writing-culture)
-    - [Reading](#reading)
-    - [Thinking](#thinking)
-- [How](#how)
-    - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
-    - [Evergreen notes (aka this blog)](#evergreen-notes-aka-this-blog)
-    - [Minto's Pyramid Principle](#mintos-pyramid-principle)
-    - [Sucking till you don't](#sucking-till-you-dont)
-    - [How to write effectively](#how-to-write-effectively)
-    - [A great story](#a-great-story)
-    - [The crappyness of the modern business books](#the-crappyness-of-the-modern-business-books)
+- [Amazon's Writing Culture](#amazons-writing-culture)
+- [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
+- [MECE - How you know you're done.](#mece---how-you-know-youre-done)
+- [Evergreen notes (aka this blog)](#evergreen-notes-aka-this-blog)
+- [Minto's Pyramid Principle](#mintos-pyramid-principle)
+- [Sucking till you don't](#sucking-till-you-dont)
+- [How to write effectively](#how-to-write-effectively)
+- [A great story](#a-great-story)
+- [The crappyness of the modern business books](#the-crappyness-of-the-modern-business-books)
+- [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Why
+Bad writing, is bad thinking, not bad language. Bad writing happens when people are writing without working through their thinking. But how do you figure out what you're thinking?
 
 ### Amazon's Writing Culture
 
@@ -41,18 +39,18 @@ On my second day at [Amazon](/amazon) I had my first meeting. After we went arou
 
 Turns out, to build a clear writing muscle, you must build a critical thinking muscle, which requires a critical reading muscle. After 3 years at Amazon, my skills had increased drastically, but I was still weak at these by Amazon standards.
 
-### Reading
-
-### Thinking
-
-## How
-
 ### Madman, Architect, Carpenter, Judge
 
 From [my full post](https://ig2600.blogspot.com/2015/07/soft-skills-writing-as-madman-architect.html)
 Writing breaks down into 4 distinct phases: brainstorming, organization, writing and editing. To reinforce the distinctness of these phases, think of writing as four distinct jobs: Madman, Architect, Carpenter and Judge. Maximize your efficiency by doing each job, distinctly, deliberately and serially.
 
 Each job has a specific goal, and that goal should be your sole focus during while doing that job. Do not do the next job, and do not go back to previous jobs. To reinforce the distinctness of each job, consider using a different tool, and physical reminders of each job.
+
+### MECE - How you know you're done.
+
+Mutually Exclusive, Collectively Exhausted
+
+https://strategyu.co/wtf-is-mece-mutually-exclusive-collectively-exhaustive/
 
 ### Evergreen notes (aka this blog)
 
@@ -106,3 +104,5 @@ Doesn't really fit, but I do enjoy this story
 The modern business/self-help book formula is: XYZ, and it's crappy.
 
 A modern well written business book is the [first 90 days](/90days). Highly recommended.
+
+### Writers head to readers head, like an army through a choke point
