@@ -186,7 +186,7 @@
         "/shame",
         "/first-things-first"
       ],
-      "incoming_links": ["/the-manager-book"],
+      "incoming_links": ["/the-manager-book", "/writing"],
       "redirect_url": "",
       "doc_size": 41000
     },
@@ -2273,7 +2273,7 @@
       "title": "WRITING IS THINKING",
       "description": "Writing is thinking. Period.\n\n",
       "file_path": "_site/writing.html",
-      "outgoing_links": ["/amazon", "/amazon"],
+      "outgoing_links": ["/amazon", "/amazon", "/90days"],
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 15000

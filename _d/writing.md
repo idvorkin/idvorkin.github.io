@@ -24,6 +24,7 @@ Writing is thinking. Period.
     - [Sucking till you don't](#sucking-till-you-dont)
     - [How to write effectively](#how-to-write-effectively)
     - [A great story](#a-great-story)
+    - [The crappyness of the modern business books](#the-crappyness-of-the-modern-business-books)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -96,4 +97,12 @@ Haven't watched this one yet ...
 
 ### A great story
 
+Doesn't really fit, but I do enjoy this story
+
 {%include youtube.html src="KxDwieKpawg" %}
+
+### The crappyness of the modern business books
+
+The modern business/self-help book formula is: XYZ, and it's crappy.
+
+A modern well written business book is the [first 90 days](/90days). Highly recommended.
