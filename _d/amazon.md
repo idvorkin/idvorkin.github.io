@@ -300,6 +300,9 @@ Funny stories:
 
 ### Video Shopping
 
+- The video that made me realize we need moderation
+- Launching and manual moderation watching all the videos oursleves
+
 ### Chariting Giving: Toys for Tots
 
 [Toys for tots](/tft)
