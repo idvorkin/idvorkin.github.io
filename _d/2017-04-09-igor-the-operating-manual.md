@@ -14,15 +14,15 @@ author: "Igor Dvorkin"
 I've learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I've learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Work](#work)
     - [Thoughts from joining Facebook](#thoughts-from-joining-facebook)
     - [Thoughts from joining Amazon](#thoughts-from-joining-amazon)
-    - [Individual Contributor](#individual-contributor)
-    - [Functional Skills to develop](#functional-skills-to-develop)
     - [Realistic expectations for a new leader](#realistic-expectations-for-a-new-leader)
-    - [Manager](#manager)
+    - [IC skills to develop](#ic-skills-to-develop)
+    - [Manager skill to develop](#manager-skill-to-develop)
     - [Dream Job](#dream-job)
     - [My super powers](#my-super-powers)
         - [Relationships](#relationships)
@@ -37,7 +37,6 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Physical](#physical)
     - [Emotional](#emotional)
     - [Cognitive](#cognitive)
-        - [Think it through, write it out, read it again and again](#think-it-through-write-it-out-read-it-again-and-again)
     - [Identity](#identity)
     - [Hobbies](#hobbies)
     - [Biking](#biking)
@@ -69,29 +68,35 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 ### Thoughts from joining Facebook
 
+In 2020, I joined FB and it was great.
+
 ### Thoughts from joining Amazon
 
-At the end of 2016, I joined Amazon to learn the business of software, to learn to write and to live by the leadership principles. This was an excellent choice and I love it. It's tough though, and here are some things I frequently forget
-
-### Individual Contributor
-
-### Functional Skills to develop
-
-- Business Writing
-- Design
-- Data Analysis
-- Service Oriented Architecture
+At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years so it was a tough transition. Here are some things I needed to remind myself
 
 ### Realistic expectations for a new leader
+
+Here are some things I needed to remind myself as I was working through my own [insecurity and imposter syndrome](/insecurity):
 
 - I don't know how Amazon works - Duh, I was at my last job, Microsoft for 15 years, knew how everything worked, learned how everything evolved to where it was, and knew enough people to always be able to get done what I wanted.
 - Leaders take a while to ramp up - that's why you end up with signing bonuses.
 - It'll take a while to learn new skills
 - Amazon is a very different culture from Microsoft. Sometimes I don't even realize I'm swimming against the current.
 
-### Manager
+### IC skills to develop
 
-Top priorities:
+- [Business Writing](/writing)
+- [Design](/td/design)
+- [Cloud first applications and SOA](/td/cloud-first-applications)
+- [Data Systems](/td/data-systems)
+
+### Manager skill to develop
+
+From [Igor's book of manager](/the-manager-book):
+
+_Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement._
+
+As a new manager at Amazon, my top priorities:
 
 - Hiring
 - Growing my people
@@ -130,11 +135,9 @@ I spend lots of time thinking about how I should be working my habits, but often
 
 ### [Emotional](/emotional-health)
 
-### Cognitive
+### [Cognitive](/writing)
 
-#### Think it through, write it out, read it again and again
-
-### Identity
+### [Identity](/eulogy)
 
 ### [Hobbies](/hobby)
 
