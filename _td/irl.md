@@ -43,6 +43,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Computers](#computers)
     - [Monitors](#monitors)
 - [Camera](#camera)
+- [Virtual Reality - Occulus](#virtual-reality---occulus)
 - [Backyard](#backyard)
     - [Inflatable Hottub](#inflatable-hottub)
     - [Propane Fire Pit](#propane-fire-pit)
@@ -144,12 +145,12 @@ I've been seeing a therapist weekly since my early 30's. It provides me several 
 
 - A chance to introspect, and reflect on what's on my mind.
 - A chance to get some analytic analysis over my emotions.
-- A cathardic release
-- Access to a less distorted (it's still subject to my inputs) view of my reaity.
+- A cathartic release
+- Access to a less distorted (it's still subject to my inputs) view of my reality.
 - An early reminder for when my world view is getting both too positive, and too negative.
 - Coaching on relationship based discussion
 - A constant reminder of the importance of my emotional health
-- A historical remidner of previous states
+- A historical reminder of previous states
 
 ## Cognitive Health
 
@@ -224,7 +225,7 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 
 ## Camera
 
-I ended up getting an m200 because a time of purchase it was the only cheap cannon with clean HDMI output. I'd have prefered the m50, but it didn't have clean HDMI output which was a deal breaker. My use case is mostly video recording or webcamming on a tripod, but I'll take it out of the house occasionally.
+I ended up getting an m200 because a time of purchase it was the only cheap cannon with clean HDMI output. I'd have preferred the m50, but it didn't have clean HDMI output which was a deal breaker. My use case is mostly video recording or webcamming on a tripod, but I'll take it out of the house occasionally.
 
 [Canon m200](https://www.amazon.com/gp/product/B07XYPVFCH/) - Not ideal, but the only m-series with clean HDMI out. Biggest gaps - 1) No MF button 2) 4K sucks 3) A bit too small for SLR lenses
 
@@ -247,6 +248,34 @@ I ended up getting an m200 because a time of purchase it was the only cheap cann
 {%include amazon.html asin="B07RL8H55Z;B017L3689K" %}
 
 Bags - who knows!
+
+## Virtual Reality - Occulus
+
+I'm a big fan of my occulus quest, it's my favorite home work out tool for boxing.
+
+Games I like:
+
+- Thrill of the Fight (TOTF) - Great boxing game, just focused on boxing dynamics
+- Creed - Book game that looks more like a game, but not as good of a working
+
+Experiences worth trying:
+
+- The line: A really nice VR Story.
+
+Games that are OK:
+
+- Climb 2 - Try rock climbing, easy to get into.
+- Jupyter - Swing like Spider Man
+- Gorn - Super silly, bloody, gladiator game
+- Robo Recall - Really fun shooter, and rip the limbs of robots and beat them with it.
+
+Hardware Accessories:
+
+- [Better Head Strap](https://www.amazon.com//dp/B08MFH6V6C) - Occulus one breaks, I got this one.
+- [VR glasses](https://vroptician.com/) - Put glasses on the occulus lenses, works awesome
+- [Facial Interface](https://vrcover.com/oculus-quest-2/) - Very nice, blocks external light, and comfortable
+- Battery Headstrap - Haven't found one that works with my head strap
+- [Ear Covers](https://www.amazon.com/gp/product/B085S2LYZN/) - Can't tell if they're good or not
 
 ## Backyard
 
@@ -271,7 +300,7 @@ Some good links:
 
 ### Propane Fire Pit
 
-Who doesn't like fire, just plug in the propane, turn the dial, and you've got a fire ready to go for enjoyment or some smores
+Who doesn't like fire, just plug in the propane, turn the dial, and you've got a fire ready to go for enjoyment or some smore's
 
 {%include amazon.html asin="B07ZVS4YPN" %}
 
