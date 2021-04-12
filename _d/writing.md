@@ -42,6 +42,24 @@ Useful writing tells people something true and important that they didn't alread
 
 ## Why
 
+### Writing to understand, writing to be understood.
+
+You write to understand a topic, and to help others understand.
+
+**Writing to understand** is capturing and categorizing lots of information. You don't know what you're looking for as your trying to build your own coherent, complete, mental models.
+
+**Writing to be understood** is figuring out what a reader (sometimes you!) needs to understand, and focusing and simplifying your understanding to optimize presentation.
+
+
+When you're in the writing to provide understanding, you start by understanding what it is the reader want to understand, and you build them a mental model of the content optimized to match their needs.
+
+
+TODO: XREF - Mental models.
+TODO: XREF - Stages of writing
+
+
+
+
 ### Amazon's Writing Culture
 
 {%include blob_image_float_right.html src="noun_writing.svg?sanitize=1" %}
@@ -81,7 +99,22 @@ Evergreen notes should be:
 
 You'll note, this blog is my implementaiton of evergreen notes.
 
-## Analysis tools
+## Writing to think
+
+### All Mental models are wrong.
+
+Mental models are simplifications of reality, and mental models conflict, and classifacation at the edges is painful.
+
+This is required as the world is infinitly complex, and we need simpler models to understand what is going on.
+
+Imagine you want to describe the real world, or the physical terrain to someone, so you give them a map.  The type of map you provide depends on what you are trying to  understand.  Say you want to drive from point A to point B then you'd want a map of streets. Now say you wanted to install a wind turbine, in that case you wouldn't care much about streets, but you'd want a map of average winds.
+
+Because the map is not the terrain, the map is wrong, and classifying the edges is hard.
+
+Wrong Section - An example of misinterpration - the [5 blind men and the elephant](https://en.wikisource.org/wiki/The_poems_of_John_Godfrey_Saxe/The_Blind_Men_and_the_Elephant)
+
+
+
 
 ### SWOT and SOAR - Exploring the space
 
@@ -154,7 +187,7 @@ You know you have your Five Why's right when you can reverse the answers joined 
 - Therefore it's a lot of effort.
 - Therefore I stopped exercising
 
-## Writing Formulas
+## Writing To Convey Information
 
 ### The detective formula: Situation, Complication, Resolution
 
