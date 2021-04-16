@@ -76,6 +76,16 @@ Another habit I have is playing on the command line (both writing and updating m
 | Response | Carry a fanny pack with everything in it  |
 | Reward   | Thinking how much people will enjoy magic |
 
+### Behavior change modelt map
+
+Tiny habits has a simpler behavior change model, mapping it
+
+| Tiny Habit | Atomic Habit    |
+|------------|-----------------|
+| Prompt     | Cue             |
+| Ability    | Response        |
+| Motivation | Craving, Reward |
+
 ### Creating new Cues
 
 You need to make the cue obvious, and there are two ways:
@@ -88,3 +98,28 @@ You need to make the cue obvious, and there are two ways:
 Think about the habits that the person you want to be. What habits will they have? What habits will they not have, then tackle that.
 
 ### The change cycle: Plan; Execute; Audit; Adjust
+
+###  Tiny Habits
+
+#### Desiging for behavior change
+
+You'll only act with a prompt (Cue), but your likely hood of taking action is dependant on your ability and motivation.
+
+When making change, motivation is hardest to change, and wanes the most, so tackle prompt first, and then ability, and lastly motivation.
+
+Add table, prompt, ability, motivation
+
+Prompt, Ability, Motivation.
+
+TODO: Contrast this with the 7hc1, which focus on motivation, not prompts and motivation
+
+
+Start by Prompt,
+
+
+
+### Furthor resources
+
+TODO:  Add  Books
+    - Atomic Habits
+    - Tiny Habits
