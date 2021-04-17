@@ -226,15 +226,20 @@
       "description": "I spent 4 years working at Amazon, some things I loved, some not so much. Amazon is a huge company and the variation of behavior within a company exceeds the variation between the “median” behavior between companies. Even within the two teams I was on at Amazon I saw the exact opposite behaviors. When I talk about the good, I’ll talk about the ideal good, and when I talk about the bad, I’ll talk to some issues I saw that were systemically bad. As a result you’ll often see me describing something as both good and bad, as it’s done differently in different parts of the company.\n\n",
       "file_path": "_site/amazon.html",
       "outgoing_links": [
+        "/writing",
         "/coe",
         "/writing",
         "/coe",
         "/the-manager-book",
         "/tft"
       ],
-      "incoming_links": ["/parkinson", "/writing"],
+      "incoming_links": [
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/parkinson",
+        "/writing"
+      ],
       "redirect_url": "",
-      "doc_size": 23000
+      "doc_size": 24000
     },
     "/anxiety": {
       "py/object": "__main__.Page",
@@ -597,10 +602,20 @@
       "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.\n\n",
       "file_path": "_site/d/2017-04-09-igor-the-operating-manual.html",
       "outgoing_links": [
+        "/amazon",
+        "/writing",
+        "/insecurity",
+        "/writing",
+        "/td/design",
+        "/td/cloud-first-applications",
+        "/td/data-systems",
+        "/the-manager-book",
         "/dream-job",
         "/habits",
         "/physical-health",
         "/emotional-health",
+        "/writing",
+        "/eulogy",
         "/hobby",
         "/bike",
         "/magic",
@@ -699,7 +714,7 @@
         "/the-manager-book"
       ],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 15000
     },
     "/d/management_interviews": {
       "py/object": "__main__.Page",
@@ -974,6 +989,7 @@
       ],
       "incoming_links": [
         "/bmy",
+        "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
         "/end-in-mind",
         "/frog",
@@ -1210,7 +1226,11 @@
       "description": "We all get it. imposter syndrome, which include shame\n\n",
       "file_path": "_site/insecure.html",
       "outgoing_links": ["/shame"],
-      "incoming_links": ["/90days", "/depression"],
+      "incoming_links": [
+        "/90days",
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/depression"
+      ],
       "redirect_url": "",
       "doc_size": 10000
     },
@@ -1250,7 +1270,7 @@
       ],
       "incoming_links": ["/physical-health"],
       "redirect_url": "",
-      "doc_size": 35000
+      "doc_size": 36000
     },
     "/job": {
       "py/object": "__main__.Page",
@@ -1735,10 +1755,10 @@
       "title": "SWITCH",
       "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
       "file_path": "_site/switch.html",
-      "outgoing_links": ["/habits"],
+      "outgoing_links": ["/habits", "/habits"],
       "incoming_links": ["/first-things-first"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 15000
     },
     "/synergize": {
       "py/object": "__main__.Page",
@@ -1813,7 +1833,10 @@
       "description": "The world is now on the cloud, here are my random notes on the topic.\n\n",
       "file_path": "_site/td/cloud-first-applications.html",
       "outgoing_links": [],
-      "incoming_links": ["/the-manager-book"],
+      "incoming_links": [
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/the-manager-book"
+      ],
       "redirect_url": "",
       "doc_size": 21000
     },
@@ -1824,7 +1847,7 @@
       "description": "This page contains my knowledge of data systems. Mostly just a summary of Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems\n\n",
       "file_path": "_site/td/data-systems.html",
       "outgoing_links": [],
-      "incoming_links": [],
+      "incoming_links": ["/d/2017-04-09-igor-the-operating-manual"],
       "redirect_url": "",
       "doc_size": 19000
     },
@@ -1835,7 +1858,7 @@
       "description": "Software design is important. Here are my notes\n\n",
       "file_path": "_site/td/design.html",
       "outgoing_links": [],
-      "incoming_links": [],
+      "incoming_links": ["/d/2017-04-09-igor-the-operating-manual"],
       "redirect_url": "",
       "doc_size": 12000
     },
@@ -1879,7 +1902,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/ios.html",
       "outgoing_links": [],
-      "incoming_links": [],
+      "incoming_links": ["/writing"],
       "redirect_url": "",
       "doc_size": 15000
     },
@@ -1890,9 +1913,9 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/ios-nomad.html",
       "outgoing_links": ["/td/irl#work-bag"],
-      "incoming_links": [],
+      "incoming_links": ["/writing"],
       "redirect_url": "",
-      "doc_size": 21000
+      "doc_size": 20000
     },
     "/td/linqpad_from_redshift": {
       "py/object": "__main__.Page",
@@ -2038,7 +2061,7 @@
       "description": "Copied from my GitHub techdiary\n\n",
       "file_path": "_site/td/visual-vocabulary.html",
       "outgoing_links": [],
-      "incoming_links": [],
+      "incoming_links": ["/writing"],
       "redirect_url": "",
       "doc_size": 10000
     },
@@ -2115,6 +2138,7 @@
         "/coe",
         "/coe",
         "/what-makes-a-leader",
+        "/90days",
         "/static/igor-feedback-LinkedIn.pdf",
         "/job",
         "/being-a-great-manager",
@@ -2125,9 +2149,14 @@
         "/parkinson",
         "/books"
       ],
-      "incoming_links": ["/amazon", "/being-a-great-manager", "/coaching"],
+      "incoming_links": [
+        "/amazon",
+        "/being-a-great-manager",
+        "/coaching",
+        "/d/2017-04-09-igor-the-operating-manual"
+      ],
       "redirect_url": "",
-      "doc_size": 106000
+      "doc_size": 107000
     },
     "/the-recruiter-does-not-think-you-are-hot": {
       "py/object": "__main__.Page",
@@ -2187,7 +2216,7 @@
       "description": "VIM is great at lots of things, but free form writing has a few gaps in ‘line wrapping’ and ‘distraction free visual beauty’. These gaps can be closed with the plugins Pencil, Goyo and LimeLight.\n\n",
       "file_path": "_site/vim-for-writing.html",
       "outgoing_links": [],
-      "incoming_links": [],
+      "incoming_links": ["/writing"],
       "redirect_url": "",
       "doc_size": 13000
     },
@@ -2280,10 +2309,20 @@
       "title": "WRITING IS THINKING",
       "description": "Useful writing tells people something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation.\n\n",
       "file_path": "_site/writing.html",
-      "outgoing_links": ["/amazon", "/amazon", "/90days", "/coe"],
-      "incoming_links": ["/amazon"],
+      "outgoing_links": [
+        "/amazon",
+        "/amazon",
+        "/coe",
+        "/td/visual-vocabulary",
+        "/90days",
+        "/coe",
+        "/td/ios-nomad",
+        "/td/ios",
+        "/vim-for-writing"
+      ],
+      "incoming_links": ["/amazon", "/d/2017-04-09-igor-the-operating-manual"],
       "redirect_url": "",
-      "doc_size": 21000
+      "doc_size": 27000
     }
   }
 }

@@ -108,4 +108,4 @@ A different model to switch, also covering change management. Esssentially you n
 | Ability    |          |        |
 | Motivation |          |        |
 
-{%include amazon.html asin="B07LC9KDP5;B07D23CFGR;B07D23CFGR;B00BPO7710" %}
+{%include amazon.html asin="B07LC9KDP5;B07D23CFGR;B00BPO7710" %}
