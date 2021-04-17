@@ -117,4 +117,4 @@ Start by Prompt,
 
 ### Furthor resources
 
-{%include amazon.html asin="B07LC9KDP5;B07D23CFGR;B07D23CFGR" %}
+{%include amazon.html asin="B07LC9KDP5;B07D23CFGR" %}
