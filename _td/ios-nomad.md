@@ -8,8 +8,6 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 # iOS Software engineer nomad howto
 
-_Please add comments [here](https://hackmd.io/Z_2EucqOQnaoHq2KxRwlEw)_
-
 So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I'm not sure why you'd want to be such a character, in fact, I'm not sure why I want to be such a character, but I do, and here's how I do it. To be a developer nomad, you better already be a command line wiz. If you're not at an expert at the terminal, vim or Emacs and TMUX - don't even try.
 
 There are three paths - remote development, local development, and hybrid. For all of these you'll need an external keyboard, which I'll also discuss.
@@ -17,24 +15,23 @@ There are three paths - remote development, local development, and hybrid. For a
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [iOS Software engineer nomad howto](#ios-software-engineer-nomad-howto)
-    - [Remote Development - Blink](#remote-development---blink)
-      - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
-    - [Local Development - iSh, iVIM, Working Copy, etc](#local-development---ish-ivim-working-copy-etc)
-      - [Run Linux - iSH](#run-linux---ish)
-      - [Run git - Working copy](#run-git---working-copy)
-      - [Run Vim - iVIM](#run-vim---ivim)
-      - [Run python - Pythonista](#run-python---pythonista)
-      - [Run Jupyter - Carnets](#run-jupyter---carnets)
-      - [Edit markdown](#edit-markdown)
-    - [Hybrid development - Consistency](#hybrid-development---consistency)
-    - [The external keyboard.](#the-external-keyboard)
-      - [The keyboard I use](#the-keyboard-i-use)
-      - [The iPad stand I use](#the-ipad-stand-i-use)
-      - [Caps to Control](#caps-to-control)
-      - [Back tick to escape.](#back-tick-to-escape)
-      - [Carrying bags](#carrying-bags)
-    - [Related links](#related-links)
+- [Remote Development - Blink](#remote-development---blink)
+    - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
+- [Local Development - iSh, iVIM, Working Copy, etc](#local-development---ish-ivim-working-copy-etc)
+    - [Run Linux - iSH](#run-linux---ish)
+    - [Run git - Working copy](#run-git---working-copy)
+    - [Run Vim - iVIM](#run-vim---ivim)
+    - [Run python - Pythonista](#run-python---pythonista)
+    - [Run Jupyter - Carnets](#run-jupyter---carnets)
+    - [Edit markdown](#edit-markdown)
+- [Hybrid development - Consistency](#hybrid-development---consistency)
+- [The external keyboard.](#the-external-keyboard)
+    - [The keyboard I use](#the-keyboard-i-use)
+    - [The iPad stand I use](#the-ipad-stand-i-use)
+    - [Caps to Control](#caps-to-control)
+    - [Back tick to escape.](#back-tick-to-escape)
+    - [Carrying bags](#carrying-bags)
+- [Related links](#related-links)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
