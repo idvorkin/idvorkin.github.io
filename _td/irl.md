@@ -256,7 +256,7 @@ I'm a big fan of my occulus quest, it's my favorite home work out tool for boxin
 Games I like:
 
 - Thrill of the Fight (TOTF) - Great boxing game, just focused on boxing dynamics
-- Creed - Book game that looks more like a game, but not as good of a working
+- Creed - Boxing game that looks more like a game, but not as good of a working
 
 Experiences worth trying:
 
@@ -274,8 +274,6 @@ Hardware Accessories:
 - [Better Head Strap](https://www.amazon.com//dp/B08MFH6V6C) - Occulus one breaks, I got this one.
 - [VR glasses](https://vroptician.com/) - Put glasses on the occulus lenses, works awesome
 - [Facial Interface](https://vrcover.com/oculus-quest-2/) - Very nice, blocks external light, and comfortable
-- Battery Headstrap - Haven't found one that works with my head strap
-- [Ear Covers](https://www.amazon.com/gp/product/B085S2LYZN/) - Can't tell if they're good or not
 
 ## Backyard
 
