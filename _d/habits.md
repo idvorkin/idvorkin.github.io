@@ -81,7 +81,7 @@ Another habit I have is playing on the command line (both writing and updating m
 Tiny habits has a simpler behavior change model, mapping it
 
 | Tiny Habit | Atomic Habit    |
-|------------|-----------------|
+| ---------- | --------------- |
 | Prompt     | Cue             |
 | Ability    | Response        |
 | Motivation | Craving, Reward |
@@ -99,7 +99,7 @@ Think about the habits that the person you want to be. What habits will they hav
 
 ### The change cycle: Plan; Execute; Audit; Adjust
 
-###  Tiny Habits
+### Tiny Habits
 
 #### Desiging for behavior change
 
@@ -113,13 +113,8 @@ Prompt, Ability, Motivation.
 
 TODO: Contrast this with the 7hc1, which focus on motivation, not prompts and motivation
 
-
 Start by Prompt,
-
-
 
 ### Furthor resources
 
-TODO:  Add  Books
-    - Atomic Habits
-    - Tiny Habits
+{%include amazon.html asin="B07LC9KDP5;B07D23CFGR;B07D23CFGR" %}
