@@ -75,7 +75,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [What do you do when someone says they are quitting](#what-do-you-do-when-someone-says-they-are-quitting)
     - [Best hire of your career](#best-hire-of-your-career)
 - [Firing and Performance Management](#firing-and-performance-management)
-    - [Firing Ratios](#firing-ratios)
+    - [Firing Percents](#firing-percents)
     - [The Process](#the-process)
     - [What are your thoughts on a PIP?](#what-are-your-thoughts-on-a-pip)
     - [How do you deal with people performance issues?](#how-do-you-deal-with-people-performance-issues)
@@ -883,7 +883,23 @@ Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are sta
 
 ## Firing and Performance Management
 
-### Firing Ratios
+### Firing Percents
+
+TL;DR: Firing is a good thing. There is a natural percent of people who should be fired, and left to their own discretion many managers will not fire the full set of these people. At a large scale (100's of employees), and for periods of time (like during times of massive hiring), setting a firing ratio is a good thing. The key though is only enforcing it at a large scale, and having guard rails to make it objectively fair, and giving employees the ability to improve.
+
+_And now the long version for non-managers_
+
+If you've ever worked with a low performer who couldn't do their job, it's draining. They drag down the team due to missing commitments, and needing to be bailed out as unexpected work from the team. It's even a drag on the the low performer as doing poorly in your job is a miserable experience, and they'll feel way better off in a place they are succesfful.
+
+All of this is to say firing lower performers is a good thing.
+
+And so the question becomes who should be fired? Given career expectations it should be clear when someone is not meeting expectations, and thus who managers should fire and when. It also turns out at large numbers statistics can help.
+
+At the scale of 100's of employees there will be low performers unable to do their job. The exact value varies depending on how aggressive companies hire and deal with low performers, but I'd guess 1%-5%.
+
+For a while, Amazon was getting terrible press, so they got rid of firing ratios. You know what happened? Way less then 1% of people were fired, meaning the manager's good judgement wasn't working well enough.
+
+As a result Amazon re-instated it's firing ratios.
 
 ### The Process
 
@@ -892,14 +908,17 @@ Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are sta
 Three "Players" in this situation:
 
 - The struggling employee
+
   - Remember being in the wrong role SUCKS. Employee is going home after long day, and feeling like shit (rinse and repeat)
   - Once in right role - will feel great. Seen lots of times this happens.
+
   - Let employee 'self discover' gaps and judge, but you must set down the truth.
   - Should not be a surprise. Should have already gone through role guidelines and gaps.
   - Clear set of gaps, and expectation for required improvement.
   - Progressively lay out process, so they know where they're at and what happens next.
   - Help them know it's the wrong role, but they have lots of strengths (look we hired you), and you'll be well loved elsewhere.
   - Help them with how to find change, mock interview, job changing guidance
+
 - The team
   - Weak performer means others on team have to cover both in mentoring, and picking up dropped ball.
   - Sets a bad example for the team
@@ -914,16 +933,21 @@ Three "Players" in this situation:
 
 Most companies have a well laid out process, that you follow.
 
-Usually there's a "zone of concern", when the manager focuses carefully on the employee: - Set employee up for max success - Ensure clear expectations - Get mentorship - Explain to employee you believe in them.
-Then there's an official pre-PIP
+First there's a "zone of concern", when the manager focuses carefully on the employee, without scaring the employee with the seriousness of the situation:
 
-    - Same as above, but  really clear with employee
-    - Document everything so there is no miscommunication
-    - Ensure clear criteria for PIP removal.
-    - Ensure org agrees criteria is sufficient
-    - Meet weekly
+- Set employee up for max success
+- Ensure clear expectations
+  -- Get mentorship
+- Explain to employee you believe in them.
 
-Then there's a formal PIP - Depends on your company but very similar to above, but with clear legal terminology.
+Then there's an official pre-PIP. Which is the same as above, but really clear with employee.
+
+- Document everything, and share with the employee so there is no miscommunication
+- Ensure clear criteria for PIP removal.
+- Ensure org agrees removal criteria is sufficient
+- Meet weekly for formal review.
+
+Then there's a formal PIP. Depends on your company but very similar to above, but with clear legal terminology.
 
 ### How do you deal with people performance issues?
 
@@ -1048,12 +1072,11 @@ The day of:
 
 There are two categories of flips: A) Flip to new domain (genesis) or B) Flip to take over another teams space. Genesis is mostly covered above, so here we'll focus on taking over another teams, or another teams partial charter.
 
-In general when this happens there are  a few common reactions
+In general when this happens there are a few common reactions
 
 **The new charter is too small**
 
-A common reason for this is the old team that had the charter, likely only planned out for 120% of there engineers.  So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there's only work for 3 people, and be sad.
-
+A common reason for this is the old team that had the charter, likely only planned out for 120% of there engineers. So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there's only work for 3 people, and be sad.
 
 **The new charter is much simpler then expected**
 **The new charter isnt' as interesting**
