@@ -55,7 +55,7 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
     - [10. Rally the Herd](#10-rally-the-herd)
     - [11. Keep the Switch Going](#11-keep-the-switch-going)
 - [Other models](#other-models)
-    - [Fogg's Behavior change model.](#foggs-behavior-change-model)
+    - [Behavior Change  - Prompt, Ability, Motivation](#behavior-change----prompt-ability-motivation)
     - [Influencer 2.0](#influencer-20)
 
 <!-- vim-markdown-toc -->
@@ -91,7 +91,7 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 
 # Other models
 
-## Fogg's Behavior change model.
+## Behavior Change - Prompt, Ability, Motivation
 
 See [Habits](/habits)
 
