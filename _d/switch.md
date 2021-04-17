@@ -36,6 +36,8 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 
 <!-- prettier-ignore-start -->
 
+
+
 <!-- vim-markdown-toc GFM -->
 
 - [About Change](#about-change)
@@ -52,6 +54,9 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
     - [9. Build Habits](#9-build-habits)
     - [10. Rally the Herd](#10-rally-the-herd)
     - [11. Keep the Switch Going](#11-keep-the-switch-going)
+- [Other models](#other-models)
+    - [Fogg's Behavior change model.](#foggs-behavior-change-model)
+    - [Influencer 2.0](#influencer-20)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -83,3 +88,24 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 ## 10. Rally the Herd
 
 ## 11. Keep the Switch Going
+
+# Other models
+
+## Fogg's Behavior change model.
+
+See [Habits](/habits)
+
+Behavior is prompt + ability + motivation.
+
+Focus on ability and prompt, motivation is fickle. Use motivation waves to do the large 1 time investments.
+
+## Influencer 2.0
+
+A different model to switch, also covering change management. Esssentially you need to influence through the following dimensions
+
+| Dimensions | Personal | Social |
+| ---------- | -------- | ------ |
+| Ability    |          |        |
+| Motivation |          |        |
+
+{%include amazon.html asin="B07LC9KDP5;B07D23CFGR;B07D23CFGR;B00BPO7710" %}
