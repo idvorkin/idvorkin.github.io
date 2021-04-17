@@ -15,16 +15,19 @@ Useful writing tells people something true and important that they didn't alread
 <!-- vim-markdown-toc GFM -->
 
 - [Why](#why)
+    - [Writing to understand, writing to be understood.](#writing-to-understand-writing-to-be-understood)
     - [Amazon's Writing Culture](#amazons-writing-culture)
     - [Sucking till you don't](#sucking-till-you-dont)
     - [Building Knowledge - Evergreen notes](#building-knowledge---evergreen-notes)
-- [Analysis tools](#analysis-tools)
+- [Writing to understand](#writing-to-understand)
+    - [All Mental models are wrong.](#all-mental-models-are-wrong)
     - [SWOT and SOAR - Exploring the space](#swot-and-soar---exploring-the-space)
     - [MECE - How you know you're done.](#mece---how-you-know-youre-done)
     - [Minto's Pyramid Principle](#mintos-pyramid-principle)
     - [Elon's First Principles](#elons-first-principles)
     - [Five Whys](#five-whys)
-- [Writing Formulas](#writing-formulas)
+    - [Diagrams](#diagrams)
+- [Writing to be Understood](#writing-to-be-understood)
     - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
     - [The Hero's Journey Formula:](#the-heros-journey-formula)
     - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
@@ -36,6 +39,7 @@ Useful writing tells people something true and important that they didn't alread
     - [How to tell a great story](#how-to-tell-a-great-story)
     - [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
     - [My 80 hours on an outage document](#my-80-hours-on-an-outage-document)
+    - [Writing Software and Tools](#writing-software-and-tools)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -50,15 +54,10 @@ You write to understand a topic, and to help others understand.
 
 **Writing to be understood** is figuring out what a reader (sometimes you!) needs to understand, and focusing and simplifying your understanding to optimize presentation.
 
-
 When you're in the writing to provide understanding, you start by understanding what it is the reader want to understand, and you build them a mental model of the content optimized to match their needs.
-
 
 TODO: XREF - Mental models.
 TODO: XREF - Stages of writing
-
-
-
 
 ### Amazon's Writing Culture
 
@@ -108,7 +107,7 @@ Evergreen notes should be:
 
 You'll note, this blog is my implementaiton of evergreen notes.
 
-## Writing to think
+## Writing to understand
 
 ### All Mental models are wrong.
 
@@ -116,14 +115,11 @@ Mental models are simplifications of reality, and mental models conflict, and cl
 
 This is required as the world is infinitly complex, and we need simpler models to understand what is going on.
 
-Imagine you want to describe the real world, or the physical terrain to someone, so you give them a map.  The type of map you provide depends on what you are trying to  understand.  Say you want to drive from point A to point B then you'd want a map of streets. Now say you wanted to install a wind turbine, in that case you wouldn't care much about streets, but you'd want a map of average winds.
+Imagine you want to describe the real world, or the physical terrain to someone, so you give them a map. The type of map you provide depends on what you are trying to understand. Say you want to drive from point A to point B then you'd want a map of streets. Now say you wanted to install a wind turbine, in that case you wouldn't care much about streets, but you'd want a map of average winds.
 
 Because the map is not the terrain, the map is wrong, and classifying the edges is hard.
 
 Wrong Section - An example of misinterpration - the [5 blind men and the elephant](https://en.wikisource.org/wiki/The_poems_of_John_Godfrey_Saxe/The_Blind_Men_and_the_Elephant)
-
-
-
 
 ### SWOT and SOAR - Exploring the space
 
@@ -196,7 +192,14 @@ You know you have your Five Why's right when you can reverse the answers joined 
 - Therefore it's a lot of effort.
 - Therefore I stopped exercising
 
-## Writing To Convey Information
+### Diagrams
+
+Diagrams are a vocabulary until themselves. My notes on [visual vocubulary](/td/visual-vocabulary). But a few notable links:
+
+- [Decide what you want to express - then pick the graph](https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f)
+- [The noun project](http://thenounproject.com) - open source icons for everything.
+
+## Writing to be Understood
 
 ### The detective formula: Situation, Complication, Resolution
 
@@ -258,3 +261,11 @@ Some people might be appled. 80 hours is 2 strait weeks of work, (which I stretc
 First, I was muscle building. I'm pretty sure if my writing muscle was fully matured, and I had already understood the ASR and NLU space, I could have written this document in 20 hours, meaning 60 hours was just training, which is always worth it.
 
 Second, outage is expensive, as is incorrect action,
+
+### Writing Software and Tools
+
+I need to minimize distractions, so I try to write distraction free on my iPad
+
+- My iPad [writing tools](/td/ios-nomad)
+- My [iPad Setup](/td/ios)
+- I write in [vim](/vim-for-writing)
