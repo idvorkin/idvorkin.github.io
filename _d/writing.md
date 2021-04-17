@@ -64,11 +64,20 @@ TODO: XREF - Stages of writing
 
 {%include blob_image_float_right.html src="noun_writing.svg?sanitize=1" %}
 
-My favorite thing about [Amazon](/amazon) was the ethos of the writing culture. You've probably heard the story, during meetings. Every meeting starts with 30 minutes of silent reading followed by discussion.
+My favorite thing about [Amazon](/amazon) is the writing culture. Every 60 minute meeting starts with the presenter handing out a 6 page document, and asking if anyone needs a pen. The next 30 minutes is spent reading, with the silence barely puncuated with the sound of a pen underlining a key figure. At around the 30 minute mark, the presenter will ask, does anyone need more time? Which signals to the stragglers to start skimming as the discussion will start.
 
 On my second day at [Amazon](/amazon) I had my first meeting. After we went around the room introducing the new guy (me), a stapled 6 page printout was handed out and silence descended on the room. I went throught the document in 5 minutes. I didn't understand much of it, after all I was new and didn't know what these guys worked on. I then had to sit in silence fidgetting for the next 25 minutes. At the 30 minute mark, people started discussion. "I understand your reasoning, but did you consider the new market trends?", "How do you imagine things will change if we don't complete this within a month?" I was really surprised. I didn't notice any of these things in the document. How did these folks get this deep understanding of the document? They must have had a deep knowledge of the domain I thought. Nope.
 
 Turns out, to build a clear writing muscle, you must build a critical thinking muscle, which requires a critical reading muscle. After 3 years at Amazon, my skills had increased drastically, but I was still weak at these by Amazon standards.
+
+To get a sense for Amazon documents, check out Jeff Bezos's Shareholder letter for ([2020](https://s2.q4cdn.com/299287126/files/doc_financials/2021/are/Amazon-2020-Shareholder-Letter-and-1997-Shareholder-Letter.pdf)) or a a [root cause analysis](/coe) for the [Kennis Service](https://aws.amazon.com/message/11201/).
+
+These documents are "easy" compared to Amazon internal documents, but even still a few things to notice:
+
+- Are well written and clear. Amazonians pride themselves in being readable.
+- Are context free, e.g. They don't require a lot of external knowledge.
+- Are dense. You need to be a good reader to grind through the details.
+- Are number heavy, having few adverbs and adjectives (weasel words in Amazon lingo)
 
 ### Sucking till you don't
 
