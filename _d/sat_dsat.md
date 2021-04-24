@@ -1,12 +1,11 @@
 ---
-
 layout: post
 title: "Satistifaction is not the lack of dissatisfaction"
 comments: true
 permalink: /dsat
 redirect_from:
-
-- /sat ---
+  - /sat
+---
 
 Satisfition is not a lack of dissatisfaction. SAT and DSAT are orthoginal dimensions you should consider independantly. In a work context DSAT is the reason you can't sleep well at night, and SAT is the thing that makes you set your ararm to go off earlyearly Monday morning so you can get back at your favorite thing.
 
