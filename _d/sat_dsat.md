@@ -1,13 +1,14 @@
 ---
+
 layout: post
-title: "Satistifaction is not no dissatisfaction"
+title: "Satistifaction is not the lack of dissatisfaction"
 comments: true
 permalink: /dsat
 redirect_from:
-  - /sat
----
 
-You aren't satisfied because you have no dissatisfaction. SAT and DSAT are orthoginal dimensions you should consider independantly.
+- /sat ---
+
+Satisfition is not a lack of dissatisfaction. SAT and DSAT are orthoginal dimensions you should consider independantly. In a work context DSAT is the reason you can't sleep well at night, and SAT is the thing that makes you set your ararm to go off earlyearly Monday morning so you can get back at your favorite thing.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -39,7 +40,7 @@ Lets examine our Grid:
 
 ### Career SAT/DSAT vs Life SAT/DSAT
 
-If you've written your [eulogy](/eulogy), you'll be aware you have many roles in your life, and your SAT and DSAT flows between them. Your global
+If you've written your [eulogy](/eulogy), you'll be aware you have many roles in your life, and your SAT and DSAT flows between them. I suspect your global SAT/DSAT is not a weighted linear combination, but a hard to analyze non-linear function.
 
 ### High SAT High DSAT
 
