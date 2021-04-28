@@ -1,41 +1,42 @@
 ---
 layout: post
-title: "Satistifaction is not the lack of dissatisfaction"
+title: "Satisfaction is not the lack of dissatisfaction"
 comments: true
 permalink: /dsat
 redirect_from:
   - /sat
 ---
 
-Satisfition is not a lack of dissatisfaction. SAT and DSAT are orthoginal dimensions you should consider independantly. In a work context DSAT is the reason you can't sleep well at night, and SAT is the thing that makes you set your ararm to go off earlyearly Monday morning so you can get back at your favorite thing.
+Satisfaction is not a lack of dissatisfaction. SAT and DSAT are orthogonal dimensions you should consider independently. In a work context DSAT is the reason you can't sleep well at night, and SAT is the thing that makes you set your alarm to go off early Monday morning so you can get back at your favorite thing.
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Career](#career)
-    - [Career SAT/DSAT vs Life SAT/DSAT](#career-satdsat-vs-life-satdsat)
-    - [High SAT High DSAT](#high-sat-high-dsat)
-    - [Low DSAT, Low SAT](#low-dsat-low-sat)
+  - [Career SAT/DSAT vs Life SAT/DSAT](#career-satdsat-vs-life-satdsat)
+  - [High SAT High DSAT](#high-sat-high-dsat)
+  - [Low DSAT, Low SAT](#low-dsat-low-sat)
 - [Satisfaction Deep Dive - AMP](#satisfaction-deep-dive---amp)
-    - [Autonomy](#autonomy)
-    - [Mastery](#mastery)
-    - [Purpose](#purpose)
+  - [Autonomy](#autonomy)
+  - [Mastery](#mastery)
+  - [Purpose](#purpose)
 - [DSAT Deep Dive](#dsat-deep-dive)
-    - [Conflict](#conflict)
-    - [Insufficient Resources](#insufficient-resources)
+  - [Conflict](#conflict)
+  - [Insufficient Resources](#insufficient-resources)
 - [Product](#product)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## Career
 
 Lets examine our Grid:
 
-| Label     | Sat High                         | Sat Low           |
-| --------- | -------------------------------- | ----------------- |
-| DSat High | Analysis Required                | Time for a change |
-| DSat Low  | Unicorn, stay as long as you can | Analyis Required! |
+| Label     | SAT High                         | SAT Low            |
+| --------- | -------------------------------- | ------------------ |
+| DSAT High | Analysis Required                | Time for a change  |
+| DSAT Low  | Unicorn, stay as long as you can | Analysis Required! |
 
 ### Career SAT/DSAT vs Life SAT/DSAT
 
