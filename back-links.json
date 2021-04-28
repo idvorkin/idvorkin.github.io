@@ -1,6 +1,7 @@
 {
   "redirects": {
     "/22": "/what-i-wish-knew-at-22",
+    "/50yo": "/40yo",
     "/7h": "/7-habits",
     "/7h-c0": "/7h-concepts",
     "/7h-c1": "/be-proactive",
@@ -100,6 +101,7 @@
     "/resistance": "/d/resistance",
     "/responsible": "/be-proactive",
     "/root-cause-analysis": "/coe",
+    "/sat": "/dsat",
     "/satisfaction": "/happy",
     "/satisfied": "/happy",
     "/saving": "/money",
@@ -130,6 +132,17 @@
     "/write": "/writing"
   },
   "url_info": {
+    "/40yo": {
+      "py/object": "__main__.Page",
+      "url": "/40yo",
+      "title": "WHERE HAVE ALL THE 40 YEAR OLD CODERS GONE?",
+      "description": "In 2002, I started programming at MSFT with lots of other 20 year old. I don’t recall the age distributions, but maybe 90% of the programmers I knew where under 40. In 2020, at 41, I’m no longer a programmer, and the majority of programmers are younger then me. This begs the question, where do all the programmers go as they get older. I’m very curious about the answer here are some of my theories….\n\n",
+      "file_path": "_site/40yo.html",
+      "outgoing_links": [],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 13000
+    },
     "/7-habits": {
       "py/object": "__main__.Page",
       "url": "/7-habits",
@@ -744,6 +757,7 @@
       ],
       "incoming_links": [
         "/books-that-defined-me",
+        "/first-things-first",
         "/frog",
         "/psychic-weight",
         "/timeoff"
@@ -919,6 +933,17 @@
       "redirect_url": "",
       "doc_size": 7000
     },
+    "/dsat": {
+      "py/object": "__main__.Page",
+      "url": "/dsat",
+      "title": "SATISFACTION IS NOT THE LACK OF DISSATISFACTION",
+      "description": "Satisfaction is not a lack of dissatisfaction. SAT and DSAT are orthogonal dimensions you should consider independently. In a work context DSAT is the reason you can’t sleep well at night, and SAT is the thing that makes you set your alarm to go off early Monday morning so you can get back at your favorite thing.\n\n",
+      "file_path": "_site/dsat.html",
+      "outgoing_links": ["/wlb", "/eulogy", "/the-manager-book#l-motivation"],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 12000
+    },
     "/emotional-health": {
       "py/object": "__main__.Page",
       "url": "/emotional-health",
@@ -991,6 +1016,7 @@
         "/bmy",
         "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
+        "/dsat",
         "/end-in-mind",
         "/frog",
         "/irl",
@@ -1018,6 +1044,7 @@
       "file_path": "_site/first-things-first.html",
       "outgoing_links": [
         "/7h",
+        "/resistance",
         "/addiction",
         "/switch",
         "/essential",
@@ -1485,7 +1512,7 @@
       "description": "My explorations of NLP, mostly using my corpus of journal entries and other writing. My intent is two fold 1) learning about NLP and sentiment analysis 2) finding latent meaning in my writing, ideally to help me better understand my own psychological processes. I’ve had much more success with the former then the latter\n\n",
       "file_path": "_site/nlp.html",
       "outgoing_links": [],
-      "incoming_links": ["/ml"],
+      "incoming_links": ["/ml", "/tools"],
       "redirect_url": "",
       "doc_size": 16000
     },
@@ -1745,7 +1772,7 @@
       "description": "<!–\nWho is the audience?\n    - People I’m looking to recruit to my team.\n    - People on my team who can hold me accountable to my aspirations\n    - Igor\n    - My future employers who want to build this culture\n    - My current boss who is trying to figure out what is going on.\n    - PART 2: My future employers that want to know why I’m doing this, and my strategies.\n\n",
       "file_path": "_site/sustainable-work.html",
       "outgoing_links": [],
-      "incoming_links": ["/being-a-great-manager", "/depression"],
+      "incoming_links": ["/being-a-great-manager", "/depression", "/dsat"],
       "redirect_url": "",
       "doc_size": 26000
     },
@@ -2153,10 +2180,11 @@
         "/amazon",
         "/being-a-great-manager",
         "/coaching",
-        "/d/2017-04-09-igor-the-operating-manual"
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/dsat"
       ],
       "redirect_url": "",
-      "doc_size": 107000
+      "doc_size": 109000
     },
     "/the-recruiter-does-not-think-you-are-hot": {
       "py/object": "__main__.Page",
@@ -2186,6 +2214,17 @@
       "incoming_links": ["/d/time-off-12-2020", "/mind-at-work", "/parkinson"],
       "redirect_url": "",
       "doc_size": 15000
+    },
+    "/tools": {
+      "py/object": "__main__.Page",
+      "url": "/tools",
+      "title": "IGOR'S TECH, TRICKS, AND TOOLS",
+      "description": "A collection of tips, tricks and pointers of the various tools i use\n\n",
+      "file_path": "_site/tools.html",
+      "outgoing_links": ["/td", "/nlp"],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 37000
     },
     "/toysfortots": {
       "py/object": "__main__.Page",
