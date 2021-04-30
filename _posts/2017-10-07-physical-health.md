@@ -81,3 +81,17 @@ I put off getting a trainer for 20 years. I though I was very knowledgable in ex
 - I've had RSI in my wrists, injuries everywhere, and as we do exercises I can be like, oh this feels like it'll give out,and we instantly change the exercise.
 
 In summary, trainers are worth it.
+
+#### What's it like waking up at 5am
+
+The Atlantic [summarized it perfectly](https://www.theatlantic.com/health/archive/2019/08/how-know-if-youre-morning-person/595990/?utm_campaign=the-atlantic&utm_medium=social)
+
+_They walk among us, endowed with a superpower invisible to the naked eye. Before an important early meeting, they never have to forgo a shower and settle for dry shampoo and a baby wipe. They rarely wake with a jolt at 10 in the morning and stare groggily at a phone screen with five missed calls and texts that say, “You on your way? ETA_
+
+But a few points to add after you read the article:
+
+1. There's no free lunch, I still need 8 hours sleep which has me in bed at 8 asleep by 9:30.
+2. I don't pop out of bed bushy tailed. I still need an alarm, and I still hit snooze. Except, the day I'm lazy and whack snooze 6 times, it's still 5:30am.
+3. The "productivity advantage" for me is motivation starts strong when I get up and declines throgh the day, gone by 9pm when I'm on the couch, binging youtube with my beer and chips. By contrast, at 5am I'm ready to do something useful, and no one is awake, and nothing is open to distract me.
+4. Sometimes my body goes a bit batty and I wake up early, that has me waking up at 3:3:30am which is annoying, as by noon I'm pretty toast and have to fight to stay awake till 8pm.
+5. Not gonna lie, I love the feeling of Pride when I tell folks I get up crazy early.
