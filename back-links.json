@@ -1552,7 +1552,7 @@
         "/tech-health-toys"
       ],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 17000
     },
     "/pride": {
       "py/object": "__main__.Page",
@@ -2173,6 +2173,7 @@
         "/books",
         "/coach",
         "/decide",
+        "/write",
         "/parkinson",
         "/books"
       ],
@@ -2184,7 +2185,7 @@
         "/dsat"
       ],
       "redirect_url": "",
-      "doc_size": 109000
+      "doc_size": 112000
     },
     "/the-recruiter-does-not-think-you-are-hot": {
       "py/object": "__main__.Page",
@@ -2359,7 +2360,11 @@
         "/td/ios",
         "/vim-for-writing"
       ],
-      "incoming_links": ["/amazon", "/d/2017-04-09-igor-the-operating-manual"],
+      "incoming_links": [
+        "/amazon",
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/the-manager-book"
+      ],
       "redirect_url": "",
       "doc_size": 27000
     }
