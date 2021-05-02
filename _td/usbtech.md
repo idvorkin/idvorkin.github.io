@@ -41,6 +41,8 @@ USB Power Delivery (PD) is the new charging standard on the block, and can charg
 
 **Fast USB Charging for Apple Devices**
 
+OMG [this is complicated](https://www.chargerlab.com/iphone-11-pro-max-charging-test)
+
 iPad Pro, iPhones X and iPhone 8 can charge over USB-PD, and do so by using a USB C to Lightening adapter. However, the value of doing so varies by device:
 
 - **IPhone X** In theory the iPhoneX charges over USB-PD, however it's charge rate is only 14W (9V \* 1.5A), only 10% faster then the normal 12W charging. See [here](https://www.macrumors.com/guide/iphone-x-fast-charging-speeds-compared/) for full details.
