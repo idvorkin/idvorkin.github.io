@@ -17,9 +17,8 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc GFM -->
 
-- [Work](#work)
-    - [Thoughts from joining Facebook](#thoughts-from-joining-facebook)
-    - [Thoughts from joining Amazon](#thoughts-from-joining-amazon)
+- [Joining Facebook](#joining-facebook)
+- [Joining Amazon](#joining-amazon)
     - [Realistic expectations for a new leader](#realistic-expectations-for-a-new-leader)
     - [IC skills to develop](#ic-skills-to-develop)
     - [Manager skill to develop](#manager-skill-to-develop)
@@ -64,15 +63,13 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Work
+## Joining Facebook
 
-### Thoughts from joining Facebook
+In mid 2020, I joined [Facebook](/facebook) and it has been an absolute pleasure. Facebook is very aligned with my desired culture: Top shelf people, top notch management, a genuine caring about people, and a move fast and iterate culture.
 
-In 2020, I joined FB and it was great.
+## Joining Amazon
 
-### Thoughts from joining Amazon
-
-At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years so it was a tough transition. Here are some things I needed to remind myself
+At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years and it was a tough transition. Here are some things I needed to remind myself:
 
 ### Realistic expectations for a new leader
 
