@@ -35,7 +35,8 @@ Give people the power to build community and bring the world closer together, he
 - [The Bad - Still learning](#the-bad---still-learning)
     - [Anxiety around reviews](#anxiety-around-reviews)
 - [My projects at Facebook](#my-projects-at-facebook)
-    - [Amplifying Connection through Art and tech.](#amplifying-connection-through-art-and-tech)
+    - [CO-Ex: Creating a virtual living](#co-ex-creating-a-virtual-living)
+    - [AR: Having fun and reducing the burden of attention](#ar-having-fun-and-reducing-the-burden-of-attention)
     - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
 - [Core Values (LP's)](#core-values-lps)
     - [Focus on Impact](#focus-on-impact)
@@ -152,7 +153,28 @@ Wow!!!
 
 ### Facebook Groups instead of e-mail
 
-Facebook has an enterprise product called Workspace, which is essentially FB. FB uses this instead of e-mail. While odd, it does mean that FB gets better and workplaces get better all at the same time!
+Facebook has an enterprise product called Workspace, which is essentially FB. FB uses this instead of e-mail.
+
+I was very skeptical of this at first, and always concerned I'd miss something, but after a few months of use I acclimatised, and now I love it, and would hate going back to e-mail. Here are some translations/great things about it.
+
+- Stuff that translates to email.
+
+  - Groups are essentially public email lists.
+  - Notifications are your unread e-mail inbox.
+  - You cc by doing an @mention, and it shows up in the notifcation feed.
+  - Sharing across groups is like cross posting multiple lists.
+
+- Everything is public
+
+  - You can see everything someone posts (regardless of being subscribed)
+  - You can share a permalink
+  - Search is across all groups
+  - You can follow people/groups
+
+- The post, not the comments dominate
+  - You can link to specific comments
+  - The algo can bubble up comments by people you follow
+  - I can't articulate why this is good, but it really is.
 
 ### Monorepo.
 
@@ -180,18 +202,24 @@ _I'm new, will add my thoughts as I know them_
 
 ### Anxiety around reviews
 
-Relative to MSFT and AMZN folks are very concerned about reviews. I don't yet know what it's like as a manager, but I think the reason employees are concerned are:
+Relative to MSFT and AMZN folks are very concerned about reviews. I've debugged this a bit and here's my thinking
 
 1. Everyone else is concerned about it.
 1. It happens twice a year
-1. There are [7 rating buckets](https://www.cnbc.com/2019/01/08/facebook-culture-cult-performance-review-process-blamed.html) though the majority of folks land in 2 buckets.
 1. The impact on salary is formulaic and transparent
-1. The ratings are relative to other employees (vs absolute) so you can't know which side of the line you are.
-1. At the lower levels there's a fixed amount of time you can stay in a level before you get promoted
+1. In theory, the ratings are relative to other employees each half (vs absolute) so you can't know what a rating is. In practice though, ratings seem very stable, and consistent even with the other companies I've worked it.
+1. Everyone around you is a high achiever
+1. There are [7 rating buckets](https://www.cnbc.com/2019/01/08/facebook-culture-cult-performance-review-process-blamed.html) though the majority of folks land in 2 buckets.
+1. Until you're senior (E5), you need to be promoted in a fixed amount of time.
 
 ## My projects at Facebook
 
-### Amplifying Connection through Art and tech.
+### CO-Ex: Creating a virtual living
+
+- Watching movies and clips in Messenger
+- Instagram Together
+
+### AR: Having fun and reducing the burden of attention
 
 - Augmented Reality in Messenger
 - Operational Excellence
