@@ -4,8 +4,7 @@ title: "Magical memories"
 date: "2018-04-21 00:27:22 Pacific Daylight Time"
 comments: true
 inprogress: true
-redirect_from:
-  - /magic
+permalink: /magic
 tags:
   - how igor ticks
 ---
