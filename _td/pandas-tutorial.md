@@ -27,6 +27,7 @@ A place to store my hard earned pandas learnings.
     - [Count values in category](#count-values-in-category)
     - [Histogram column](#histogram-column)
     - [Custom Apply to a row](#custom-apply-to-a-row)
+    - [Convert Json BLOB to new Json Columns](#convert-json-blob-to-new-json-columns)
 - [Pivoting](#pivoting)
     - [Simple pivot table by count](#simple-pivot-table-by-count)
     - [Simple pivot table by percent change](#simple-pivot-table-by-percent-change)
@@ -99,6 +100,10 @@ If you use print to show a dataframe, it'll look ugly, use display instead.
 #### Custom Apply to a row
 
     df.apply(axis="columns", func=myFuncThatTakesArowAsInput) # pretty darn slow.
+
+#### Convert Json BLOB to new Json Columns
+
+    df = df.join(pd.DataFrame(df['json_string'].apply(json.loads).apply(pd.Series)))
 
 ### Pivoting
 
