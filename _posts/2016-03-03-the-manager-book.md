@@ -18,6 +18,7 @@ This post uses the word manager, but the majority of topics are applicable all s
 
 
 
+
 <!-- vim-markdown-toc GFM -->
 
 - [What does a manager do?](#what-does-a-manager-do)
@@ -215,17 +216,19 @@ Outputs:
 
 ### What do managers do all day?
 
-In a typical 44 hours week, I'll have 24 hours booked with standing commitments with others, and then 20 hours that vary based on the time of year and needs of the team, business, and partners.
+_For non-managers, recall a manager's purpose is supporting others, not making stuff. As a result they have a [manager schedule, not a maker schedule](http://www.paulgraham.com/makersschedule.htm)._
 
-| Hours | Time Spent on                                                |
+In a typical 44 hours week, 24 hours are standing commitments with others, and 20 hours vary based on the time of year, and needs of the team, business, and partners.
+
+| Hours | Time Allocation                                              |
 | ----- | ------------------------------------------------------------ |
-| 8     | Team 1:1s - Discussed in 1:1 section                         |
+| 20    | Variable Time - depends on season and team need              |
+| 8     | Team 1:1s - See the [1:1 questions](#l-one-on-one)           |
 | 6     | Partner 1:1s - PM, Design, Partner EMs, Other Developers     |
-| 4     | Recruiting/Networking - Coffee chats, sell calls, interviews |
 | 6     | Reviews - Project, Engineering, Staff, Initiative            |
-| 20    | Variable Time - varies based on season and team need         |
+| 4     | Recruiting/Networking - Coffee chats, sell calls, interviews |
 
-Depending on time of year, and experience of my team and partners, I'm doing the following with my discretionary time. I try to only do 1 or 2 of these at a time to avoid significant thrashing.
+Depending on time of year, and experience of my team and partners, I'm doing 1 or 2 of the following with my discretionary time:
 
 **People Development:**
 
@@ -475,6 +478,8 @@ Types of tough conversations to flesh out:
 Performance, Charter, Re-org, Team mates leaving, Lay Offs.
 
 ### What's the point of 1:1s
+
+<a id="l-one-on-one"></a>
 
 1:1's are the highest ROI activity and the most expensive. They take 100% of both parties attention in a non-scalable manner. At the same time:
 
