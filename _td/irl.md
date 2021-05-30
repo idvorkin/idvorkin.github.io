@@ -272,7 +272,7 @@ Games that are OK:
 Hardware Accessories:
 
 - [Better Head Strap](https://www.amazon.com//dp/B08MFH6V6C) - Occulus one breaks, I got this one.
-- [VR glasses](https://vroptician.com/) - Put glasses on the occulus lenses, works awesome
+- [VR glasses](https://www.framesdirect.com/virtuclear-lens-inserts-for-oculus-quest-2.html) - Put glasses on the occulus lenses, works awesome
 - [Facial Interface](https://vrcover.com/oculus-quest-2/) - Very nice, blocks external light, and comfortable
 
 ## Backyard

@@ -31,6 +31,8 @@ A place to store my hard earned pandas learnings.
 - [Pivoting](#pivoting)
     - [Simple pivot table by count](#simple-pivot-table-by-count)
     - [Simple pivot table by percent change](#simple-pivot-table-by-percent-change)
+- [Group By](#group-by)
+    - [Named Aggregations](#named-aggregations)
 - [Pandas for those that want to go faster.](#pandas-for-those-that-want-to-go-faster)
 - [Plotting](#plotting)
     - [Matplotlib](#matplotlib)
@@ -115,6 +117,12 @@ If you use print to show a dataframe, it'll look ugly, use display instead.
 
     pv = pd.pivot_table(df,index=pd.Grouper(freq='2W'), columns="column_1",values="column2", aggfunc='count').pcnt_change()
 
+### Group By
+
+#### Named Aggregations
+
+Groupby is great, but it's a bugger to name aggregations, until [pandas 0.25 added named aggregations](https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html#named-aggregation)
+
 ### Pandas for those that want to go faster.
 
 - [Modin](https://github.com/modin-project/modin) - Parallel DataFrame, design for compatiblity first
@@ -140,6 +148,10 @@ Gotchyas:
 #### Altair
 
 [Altair](https://github.com/altair-viz/altair) is completely obvious to use, and I enjoy it.
+
+Altair normally can't use index's so you'll need to reset_index first. You can do this in_place
+
+You'll also often need to unstack
 
 #### Plotly with cufflinks
 
