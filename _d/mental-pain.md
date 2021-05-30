@@ -39,6 +39,7 @@ Pain is in the brain as they say, which is especially true for mental pains. The
     - [pain to pleasure](#pain-to-pleasure)
     - [suffering to satisfaction](#suffering-to-satisfaction)
     - [Misery to Hubris](#misery-to-hubris)
+- [Lonliness](#lonliness)
 - [Misc topics](#misc-topics)
     - [Pride vs Self Confidence vs Hubris/Arrogance](#pride-vs-self-confidence-vs-hubrisarrogance)
 - [For more info](#for-more-info)
@@ -103,6 +104,11 @@ Pain is in the brain as they say, which is especially true for mental pains. The
 ### suffering to satisfaction
 
 ### Misery to Hubris
+
+## Lonliness
+
+- Boredom is the loss of connection
+- [Loniness is bad for your health](https://www.cdc.gov/aging/publications/features/lonely-older-adults.html)
 
 ## Misc topics
 
