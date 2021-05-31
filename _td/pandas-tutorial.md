@@ -2,7 +2,8 @@
 layout: post
 no-render-title: true
 title: Pandas + IPython + Jupyter Incantations
-redirect_from: -/pandas
+redirect_from:
+  - /pandas
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/pandas-tutorial.md)_
