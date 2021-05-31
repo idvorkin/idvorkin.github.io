@@ -15,7 +15,7 @@ Why?
 * You can't "not think about work" you need to "think about something".
 -->
 
-Hobby - An activity done in ones leisure time for pleasure. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby. Being accessible, having legs, reinforcing your identity, and building relationships.
+Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don't want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. For those days, I'm gratful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.
 
 ### Why find a hobby
 
@@ -25,7 +25,7 @@ If you don't have time for a hobby because you need all your energy for work and
 
 ### What makes a great hobby
 
-While many activities can be hobbies, the ideal hobby is accessible, has legs, reinforcing your identity, and builds relationships. Getting all these attributes is hard so strive for a hobby that gives as many as possible.
+While many activities can be hobbies, the ideal hobby is accessible, supports mastery, reinforcing your identity, and builds relationships. Getting all these attributes is hard so strive for a hobby that gives as many as possible.
 
 #### Accessible
 
@@ -33,11 +33,11 @@ You can do the best hobbies anywhere with minimal props and setup. While it's go
 
 Knitting has great accessibility. You can do it anywhere, all you need is your needles and a ball of yarn. Scuba diving has poor accessibility. You need all the scuba diving gear, a big body of water, and a dive buddy.
 
-#### Has Legs
+#### Supports Mastery
 
-The best hobbies let you continually improve. Ideally they have a progression of goals which when accomplished give you pride, and can be continued as you get into your golden years. Without legs, it's easy to get bored with your hobby when you "top out" and have nothing else to learn.
+The best hobbies let you continually improve. Ideally they have a progression of goals which when accomplished give you pride, and can be continued as you get into your golden years. Without building mastery, it's easy to get bored with your hobby when you "top out" and have nothing else to learn.
 
-Chess has legs. When you start playing chess you barely know the rules, and the more you study and play, the better you get. Even better, you can keep playing chess till you're pretty darn old. Watching TV does not have legs. Watch as much as you want, your just as bad (or good, if you're a glass half full person) as the day you started.
+Chess supports mastery. When you start playing chess you barely know the rules, and the more you study and play, the better you get. Even better, you can keep playing chess till you're pretty darn old. Watching TV does not support mastery. Watch as much as you want, your just as bad (or good, if you're a glass half full person) as the day you started.
 
 #### Grows Identity and connections
 
@@ -53,13 +53,13 @@ You know why you need a hobby, and what makes a great one, now get out there and
 
 #### Is this Autonomy Mastery Competence Purpose/Relatedness?
 
-For those unfamiliar with the terms, Autonomy, Mastery, Purpose (AMP) is Danial Pink's model for motivation. Autonomy, Competence, Relatedness (ACR) is the almost identical model articulated in self determination theory. These models are often used in the context of motivation for work and apply equally to hobbies. Accessibility is my word for autonomy, has legs is my word for Mastery/Competence and Purpose/Relatedness is my word for Purpose/Relatedness.
+For those unfamiliar with the terms, Autonomy, Mastery, Purpose (AMP) is Danial Pink's model for motivation. Autonomy, Competence, Relatedness (ACR) is the almost identical model articulated in self determination theory. These models are often used in the context of motivation for work and apply equally to hobbies.
 
 #### What's the difference between hobbies and habits?
 
 This gets into nomenclature. In my model, hobbies are things that make you happy while habits (the positive ones) make you healthy. Practicing your hobby can become a habit.
 
-Should I have my hobby be my work?\*\* I'd recommend strongly against it for two reasons. First, it's work so you'll need to prioritize what makes your customers happy over what makes you happy and second, because if works goes badly, you'll also lose your hobby, which defeats the purpose of having a hobby.
+**Should I have my hobby be my work?** I'd recommend strongly against it for two reasons. First, it's work so you'll need to prioritize what makes your customers happy over what makes you happy and second, because if works goes badly, you'll also lose your hobby, which defeats the purpose of having a hobby.
 
 #### What is your hobby?
 
