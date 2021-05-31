@@ -2,8 +2,9 @@
 layout: post
 no-render-title: true
 title: Pandas + IPython + Jupyter Incantations
+permalink: /pandas
 redirect_from:
-  - /pandas
+  - /td/pandas-tutorial
 ---
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/pandas-tutorial.md)_
