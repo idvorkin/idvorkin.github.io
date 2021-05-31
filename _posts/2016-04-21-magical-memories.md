@@ -31,7 +31,9 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 
 ### Highlights:
 
-- Doing card to ceiling and the card still being on the ceiling at Microsoft a year later
+- Card to ceiling and the card:
+  - Still being on the ceiling at Microsoft a year later, someone asked, Hey Taft, why is your name on that card stuck to the ceiling
+  - Still being on the ceiling at the gym locker room
 - Girl on the bus that loved my magic trick.
 - Girl at ice cream store who loved the trick, and jump up and down in a circle because it was so awesome.
 - Failure at park where 10 year old told me I got in wrong, but in fact I had done it correctly.
@@ -40,6 +42,16 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 - Card across where thought I messed up with audience, but card stuck to guys ass
 - Giving out unicorn coins
 - Performing at Pike Place
+
+### People keeping the cards and coins
+
+This young man kept this coin for over 18 months, through a pandemic and through a move sequence of Seattle, to Boston to Amsterdam. That's magic.
+
+{%include blob_image.html src="magic/2_year_old_unicorn.jpeg" %}
+
+Did a magic trick for a kid, kid kept the card in his back pack for a year, and always showed it to folks.
+
+Anniversery card, a waitress saw me and some magicians at the bar, and said, 20 years ago, a magician did this trick, and I've carrid this card in my wallet ever since.
 
 ### Bar Magic
 
@@ -78,6 +90,8 @@ Zach - Making up his own card trick for woman waiting on the bus. -
 - Carl: That's great, except for the part you're flailing.
 - Felix: Uhm, that's OK, just practice another 9,997 times.
 - Felix, Oh, are you new at magic, maybe try a double lift.
+
+### Wonder vs Meaning vs Reactions
 
 ## Favorite Acts
 
