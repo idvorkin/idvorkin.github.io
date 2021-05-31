@@ -316,7 +316,7 @@ Traditional programming progresses through requirements, design, implementation,
 
 ### Exploratory Data analysis
 
-Often done in pandas
+Often done in [pandas](/pandas)
 
 ### Data preparation
 

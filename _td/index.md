@@ -78,7 +78,7 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 
 - [Time off 2020](time-off-3-2020)
 - [VLC Player](vlc_player)
-- [Pandas](pandas-tutorial)
+- [Pandas](/pandas)
 - [iOS Usage](ios)
 - [Mosh](mosh)
 - [USB Tech](usbtech)
