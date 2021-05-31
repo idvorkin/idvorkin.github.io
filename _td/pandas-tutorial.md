@@ -31,6 +31,7 @@ A place to store my hard earned pandas learnings.
     - [Custom Apply to a row](#custom-apply-to-a-row)
     - [Convert Json BLOB to new Json Columns](#convert-json-blob-to-new-json-columns)
 - [Tidy Data Long and Wide](#tidy-data-long-and-wide)
+- [Reshaping Data](#reshaping-data)
 - [Pivoting - Narrow to wide](#pivoting---narrow-to-wide)
     - [Simple pivot table by count](#simple-pivot-table-by-count)
     - [Simple pivot table by percent change](#simple-pivot-table-by-percent-change)
@@ -41,7 +42,6 @@ A place to store my hard earned pandas learnings.
     - [Altair](#altair)
     - [Matplotlib](#matplotlib)
     - [Plotly with cufflinks](#plotly-with-cufflinks)
-- [Reshaping Data](#reshaping-data)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 
 <!-- vim-markdown-toc -->
@@ -137,7 +137,10 @@ Another form of tidy data, often how raw data looks is called narrow data,in thi
 - The best shape for altair
 - (From wide: Use melt to get from wide to narrow)
 
-You can reshape pandas data using this [cheat sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+### Reshaping Data
+
+- [Reshaping Tutorial](https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html)
+- [Tidy Reshaping cheat sheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
 
 ### Pivoting - Narrow to wide
 
@@ -159,14 +162,14 @@ Groupby is great, but it's a bugger to name aggregations, until [pandas 0.25 add
 
 - [Pandas Performance Tutorial](https://pandas.pydata.org/pandas-docs/stable/user_guide/enhancingperf.html)
 
-  - Numba - faster apply operations
+  - Numba - faster apply operations (swifter includes it)
   - df.eval - faster df operations
   - pandas.read_csv(), usecols to limit columns loaded
   - see memory - ts.memory_usage(deep=True)
 
+- [Swifter](https://github.com/jmcarpenter2/swifter) - Smart Function Application (will use Numba, or Dask, or parallel apply)
 - [Modin](https://github.com/modin-project/modin) - Parallel DataFrame, design for compatiblity first
 - [Dask](https://docs.dask.org/en/latest/) - Parallel DataFrame - but use Modin instead)
-- [Swifter](https://github.com/jmcarpenter2/swifter)- Smart Function Application (will use Numba, or Dask, or etc)
 - [Numba](http://www.google.com?btnI=1&q=Numba) - JIT your functions, but use Swifter instead.
 - [Pandarell](https://github.com/nalepae/pandarallel) - Parallel Apply (swifter equiv)
 
@@ -198,10 +201,6 @@ Gotchyas:
 To check out:
 
 plot.ly with [cufflinks](https://github.com/santosjorge/cufflinks) - seems to be emerging as a winner, but careful about the need for on-line vs offline mode.
-
-### Reshaping Data
-
-- [Official Pandas Tutorial](https://pandas.pydata.org/pandas-docs/stable/user_guide/reshaping.html)
 
 ### Exploratory Data Analysis
 
