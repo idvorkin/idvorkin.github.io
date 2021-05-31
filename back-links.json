@@ -67,9 +67,9 @@
     "/in-real-life": "/irl",
     "/insecurity": "/insecure",
     "/joy": "/happy",
+    "/jupyter": "/pandas",
     "/machine-learning": "/ml",
     "/machinelearning": "/ml",
-    "/magic": "/magical-memories",
     "/manager": "/being-a-great-manager",
     "/manager-book": "/the-manager-book",
     "/mechanism": "/upstream",
@@ -615,6 +615,7 @@
       "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.\n\n",
       "file_path": "_site/d/2017-04-09-igor-the-operating-manual.html",
       "outgoing_links": [
+        "/facebook",
         "/amazon",
         "/writing",
         "/insecurity",
@@ -642,7 +643,7 @@
       ],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 20000
+      "doc_size": 21000
     },
     "/d/2017-07-22-vacationphotos": {
       "py/object": "__main__.Page",
@@ -1032,9 +1033,9 @@
       "description": "Give people the power to build community and bring the world closer together, here are my in progress notes on working at FB.\n\n",
       "file_path": "_site/facebook.html",
       "outgoing_links": ["/covid19"],
-      "incoming_links": [],
+      "incoming_links": ["/d/2017-04-09-igor-the-operating-manual"],
       "redirect_url": "",
-      "doc_size": 22000
+      "doc_size": 24000
     },
     "/first-things-first": {
       "py/object": "__main__.Page",
@@ -1341,12 +1342,12 @@
       "redirect_url": "",
       "doc_size": 19000
     },
-    "/magical-memories": {
+    "/magic": {
       "py/object": "__main__.Page",
-      "url": "/magical-memories",
+      "url": "/magic",
       "title": "MAGICAL MEMORIES",
       "description": "Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights\n\n",
-      "file_path": "_site/magical-memories.html",
+      "file_path": "_site/magic.html",
       "outgoing_links": [],
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
@@ -1385,7 +1386,7 @@
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/mermaid": {
       "py/object": "__main__.Page",
@@ -1413,7 +1414,7 @@
       "py/object": "__main__.Page",
       "url": "/mind-at-work",
       "title": "BODY AT HOME, MIND AT WORK",
-      "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body being at home, but my mind still being at work\n\n",
+      "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
       "file_path": "_site/mind-at-work.html",
       "outgoing_links": [
         "/addiction",
@@ -1447,7 +1448,7 @@
       "title": "MACHINE LEARNING FOR REGULAR PROGRAMMERS.",
       "description": "ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).\n\n",
       "file_path": "_site/ml.html",
-      "outgoing_links": ["/nlp"],
+      "outgoing_links": ["/pandas", "/nlp"],
       "incoming_links": ["/td/stats", "/the-manager-book"],
       "redirect_url": "",
       "doc_size": 39000
@@ -1515,6 +1516,17 @@
       "incoming_links": ["/ml", "/tools"],
       "redirect_url": "",
       "doc_size": 16000
+    },
+    "/pandas": {
+      "py/object": "__main__.Page",
+      "url": "/pandas",
+      "title": "PANDAS + IPYTHON + JUPYTER INCANTATIONS",
+      "description": "Copied from my GitHub techdiary\n\n",
+      "file_path": "_site/pandas.html",
+      "outgoing_links": [],
+      "incoming_links": ["/d/time-off-12-2020", "/ml"],
+      "redirect_url": "",
+      "doc_size": 20000
     },
     "/parkinson": {
       "py/object": "__main__.Page",
@@ -1976,17 +1988,6 @@
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 10000
-    },
-    "/td/pandas-tutorial": {
-      "py/object": "__main__.Page",
-      "url": "/td/pandas-tutorial",
-      "title": "PANDAS + IPYTHON + JUPYTER INCANTATIONS",
-      "description": "Copied from my GitHub techdiary\n\n",
-      "file_path": "_site/td/pandas-tutorial.html",
-      "outgoing_links": [],
-      "incoming_links": [],
-      "redirect_url": "",
-      "doc_size": 16000
     },
     "/td/private_web_site": {
       "py/object": "__main__.Page",
