@@ -19,18 +19,18 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 <!-- vim-markdown-toc GFM -->
 
 - [The book](#the-book)
-  - [Introduction](#introduction)
-  - [The Independent Self](#the-independent-self)
-  - [Things Fall Apart](#things-fall-apart)
-  - [Dependence](#dependence)
-  - [Assistance](#assistance)
-  - [A Better Life](#a-better-life)
-  - [Letting Go](#letting-go)
-  - [Hard Conversations](#hard-conversations)
-  - [Courage](#courage)
+    - [Introduction](#introduction)
+    - [The Independent Self](#the-independent-self)
+    - [Things Fall Apart](#things-fall-apart)
+    - [Dependence](#dependence)
+    - [Assistance](#assistance)
+    - [A Better Life](#a-better-life)
+    - [Letting Go](#letting-go)
+    - [Hard Conversations](#hard-conversations)
+    - [Courage](#courage)
 - [Statistics](#statistics)
-  - [Death Rates by Cause](#death-rates-by-cause)
-  - [Probabily of death given current age](#probabily-of-death-given-current-age)
+    - [Death Rates by Cause](#death-rates-by-cause)
+    - [Probabily of death given current age](#probabily-of-death-given-current-age)
 - [Quotes](#quotes)
 - [Other resources](#other-resources)
 
@@ -49,7 +49,11 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 
 This is the most depressing chapter of any book I've ever read. It's the only attempt I've ever seen to describe the act of body falling apart in death. Here's the opening paragraph - and it gets more and more engaging and believable for the next 30 pages:
 
-_It is not death that the very old tell me they fear. It is what happens short of death—losing their hearing, their memory, their best friends, their way of life. As Felix put it to me, “Old age is a continuous series of losses.” Philip Roth put it more bitterly in his novel Everyman: “Old age is not a battle. Old age is a massacre.” With luck and fastidiousness—eating well, exercising, keeping our blood pressure under control, getting medical help when we need it—people can often live and manage a very long time. But eventually the losses accumulate to the point where life’s daily requirements become more than we can physically or mentally manage on our own. As fewer of us are struck dead out of the blue, most of us will spend significant periods of our lives too reduced and debilitated to live independently. We do not like to think about this eventuality. As a result, most of us are unprepared for it. We rarely pay more than glancing attention to how we will live when we need help until it’s too late to do much about it._
+\_It is not death that the very old tell me they fear. It is what happens short of death—losing their hearing, their memory, their best friends, their way of life.
+
+Old age is continuous series of losses. Old age is not a battle, it is a massacre.
+
+With luck and fastidiousness—eating well, exercising, keeping our blood pressure under control, getting medical help when we need it—people can often live and manage a very long time. But eventually the losses accumulate to the point where life’s daily requirements become more than we can physically or mentally manage on our own. As fewer of us are struck dead out of the blue, most of us will spend significant periods of our lives too reduced and debilitated to live independently. We do not like to think about this eventuality. As a result, most of us are unprepared for it. We rarely pay more than glancing attention to how we will live when we need help until it’s too late to do much about it.\_
 
 ### Assistance
 
