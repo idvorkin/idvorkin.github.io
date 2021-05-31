@@ -29,7 +29,7 @@ A place to store my hard earned pandas learnings.
     - [Custom Apply to a row](#custom-apply-to-a-row)
     - [Convert Json BLOB to new Json Columns](#convert-json-blob-to-new-json-columns)
 - [Tidy Data Long and Wide](#tidy-data-long-and-wide)
-- [Pivoting - Narrow  to wide](#pivoting---narrow--to-wide)
+- [Pivoting - Narrow to wide](#pivoting---narrow-to-wide)
     - [Simple pivot table by count](#simple-pivot-table-by-count)
     - [Simple pivot table by percent change](#simple-pivot-table-by-percent-change)
 - [Group By - Apply aggregate to a group of facts](#group-by---apply-aggregate-to-a-group-of-facts)
@@ -166,6 +166,7 @@ Groupby is great, but it's a bugger to name aggregations, until [pandas 0.25 add
 - [Dask](https://docs.dask.org/en/latest/) - Parallel DataFrame - but use Modin instead)
 - [Swifter](https://github.com/jmcarpenter2/swifter)- Smart Function Application (will use Numba, or Dask, or etc)
 - [Numba](http://www.google.com?btnI=1&q=Numba) - JIT your functions, but use Swifter instead.
+- [Pandarell](https://github.com/nalepae/pandarallel) - Parallel Apply (swifter equiv)
 
 ### Plotting
 
