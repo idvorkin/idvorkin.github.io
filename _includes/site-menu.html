@@ -5,9 +5,11 @@
             <img src="{{ site.logo-png}}" height="60" alt="">
         </a>
 
-        {% if page.monkey-does-reload %}
+        {% if page.url contains '/ig66' %}
+            <!-- on ig66 -->
             <a class="navbar-brand" href="/ig66" style="padding: 0;">
         {% else %}
+            <!-- not ig66 -->
             <a class="navbar-brand" href="/random" style="padding: 0;">
         {% endif %}
                 <img src="/images/surprised_monkey.png" height="60" alt="">
