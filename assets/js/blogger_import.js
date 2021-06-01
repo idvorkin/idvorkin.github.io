@@ -60,7 +60,7 @@ function ProcessImports(posts) {
     return;
   }
   // Add a random post on top
-  let count_random_posts = 3;
+  let count_random_posts = 1;
   for (var randomPost of _.chain(posts)
     .sampleSize(count_random_posts)
     .orderBy(o => o.published, "desc")) {
