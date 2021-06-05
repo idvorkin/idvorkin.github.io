@@ -9,13 +9,9 @@ redirect_from:
   - /dealjoy
 ---
 
-Bringing joy is my thing. Let me add some examples and future project
+Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles._
 
 <!-- prettier-ignore-start -->
-
-
-
-
 <!-- vim-markdown-toc GFM -->
 
 - [Theory](#theory)
@@ -29,7 +25,7 @@ Bringing joy is my thing. Let me add some examples and future project
     - [Put on a kids birthday party](#put-on-a-kids-birthday-party)
 - [Crazy Dreams](#crazy-dreams)
     - [Own a vaudiville theatre](#own-a-vaudiville-theatre)
-- [Past Projects](#past-projects)
+- [Completed Works](#completed-works)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -49,6 +45,8 @@ Bringing joy is my thing. Let me add some examples and future project
 
 ### The satisifaciton of bring joy to others
 
+Right from my [eulogy](/eulogy)
+
 ## Future
 
 ### Smile box
@@ -63,8 +61,9 @@ Bringing joy is my thing. Let me add some examples and future project
 
 ### Own a vaudiville theatre
 
-## Past Projects
+## Completed Works
 
 - Doing [magic for others](/magic)
 - [Smile Startup w/in Microsfot](https://igsmilebox.blogspot.com)
 - Juggling Fire
+- Bubble Bike
