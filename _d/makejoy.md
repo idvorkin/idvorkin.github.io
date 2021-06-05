@@ -6,12 +6,12 @@ tags:
 redirect_from:
   - /makesmile
   - /dealjoy
-  - /dealjoy
 ---
 
 Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles._
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Theory](#theory)
