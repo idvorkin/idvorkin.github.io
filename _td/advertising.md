@@ -246,5 +246,6 @@ Examples here are kick starter.
 
 ### Ads and sponsored spots
 
-Some good ads
-{% include youtube.html src="ccf9G9Hx1i4" %}
+A good tongue and cheeck shot at ads
+
+{% include youtube.html src="qQiui9h71l8" %}
