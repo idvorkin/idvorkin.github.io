@@ -7,6 +7,7 @@ title: Advertising
 Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Why Advertise](#why-advertise)
@@ -53,6 +54,7 @@ Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and
     - [Consumer Payment + Tips](#consumer-payment--tips)
     - [Merch](#merch)
     - [Bootstraping - Crowd funding](#bootstraping---crowd-funding)
+    - [Ads and sponsored spots](#ads-and-sponsored-spots)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -241,3 +243,8 @@ That's what those t-shirts and hats are about.
 ### Bootstraping - Crowd funding
 
 Examples here are kick starter.
+
+### Ads and sponsored spots
+
+Some good ads
+{% include youtube.html src="ccf9G9Hx1i4" %}
