@@ -90,7 +90,7 @@ Zach - Making up his own card trick for woman waiting on the bus. -
 - Carl: That's great, except for the part you're flailing.
 - Felix: Uhm, that's OK, just practice another 9,997 times.
 - Felix, Oh, are you new at magic, maybe try a double lift.
-- Hannibal: Faiure is not an option, it's a requirement
+- Hannibal: Faiure is not an option, it's a requirement. Failure is not a person, it's an event
 
 ### Wonder vs Meaning vs Reactions
 
