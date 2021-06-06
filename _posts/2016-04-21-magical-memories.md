@@ -103,3 +103,9 @@ Zach - Making up his own card trick for woman waiting on the bus. -
 ### Brian Gillis - Top shelf Sleight of Hand
 
 {% include youtube.html src="7tUaBtHd-dA?start=11" %}
+
+### Hannibal
+
+I like lots of his stuff. Roadhouse is racy, but fantastic. Elph boots is great, and so is this poem
+
+{% include youtube.html src="https://www.youtube.com/watch?v=002oterS2Wg" %}
