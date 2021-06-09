@@ -15,48 +15,50 @@ redirect_from:
 Most of the tax information on the web is a mess. It's confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Assumptions and Hannah](#assumptions-and-hannah)
 - [IRAs Non-Taxable Saving Accounts](#iras-non-taxable-saving-accounts)
-    - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
-    - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
-    - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
-    - [IRAs vs 401Ks](#iras-vs-401ks)
-    - [IRA vs Roth IRA](#ira-vs-roth-ira)
-    - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
-    - [Back door Roth.](#back-door-roth)
-    - [The pro-Rata rule.](#the-pro-rata-rule)
-    - [529s](#529s)
+  - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
+  - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
+  - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
+  - [IRAs vs 401Ks](#iras-vs-401ks)
+  - [IRA vs Roth IRA](#ira-vs-roth-ira)
+  - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
+  - [Back door Roth.](#back-door-roth)
+  - [The pro-Rata rule.](#the-pro-rata-rule)
+  - [529s](#529s)
 - [Rates Taxes and Savings](#rates-taxes-and-savings)
-    - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
-    - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
-    - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
-    - [No load index funds](#no-load-index-funds)
-    - [Unexpected expenses](#unexpected-expenses)
-    - [Stock options](#stock-options)
-        - [Sell a Put Option](#sell-a-put-option)
-        - [Buy a Put Option](#buy-a-put-option)
-        - [Uncovered vs Covered](#uncovered-vs-covered)
-        - [Selling your options early](#selling-your-options-early)
-        - [Put vs Call](#put-vs-call)
-        - [Play safe - Guaranteed minimum value of unvested stock awards - buy a put](#play-safe---guaranteed-minimum-value-of-unvested-stock-awards---buy-a-put)
-        - [The company can't go up that high - sell a put](#the-company-cant-go-up-that-high---sell-a-put)
-        - [Summary](#summary)
+  - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
+  - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
+  - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
+  - [No load index funds](#no-load-index-funds)
+  - [Unexpected expenses](#unexpected-expenses)
+  - [Stock options](#stock-options)
+    - [Sell a Put Option](#sell-a-put-option)
+    - [Buy a Put Option](#buy-a-put-option)
+    - [Uncovered vs Covered](#uncovered-vs-covered)
+    - [Selling your options early](#selling-your-options-early)
+    - [Put vs Call](#put-vs-call)
+    - [Play safe - Guaranteed minimum value of unvested stock awards - buy a put](#play-safe---guaranteed-minimum-value-of-unvested-stock-awards---buy-a-put)
+    - [The company can't go up that high - sell a put](#the-company-cant-go-up-that-high---sell-a-put)
+    - [Summary](#summary)
 - [Philosophy](#philosophy)
-    - [The point of money](#the-point-of-money)
-        - [What would you do for less money?](#what-would-you-do-for-less-money)
-        - [Making more vs spending more](#making-more-vs-spending-more)
-    - [Believing the market only goes up](#believing-the-market-only-goes-up)
-    - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
-    - [Timing the markets](#timing-the-markets)
-    - [The unquenchable thirst](#the-unquenchable-thirst)
+  - [The point of money](#the-point-of-money)
+    - [What would you do for less money?](#what-would-you-do-for-less-money)
+    - [Making more vs spending more](#making-more-vs-spending-more)
+  - [Believing the market only goes up](#believing-the-market-only-goes-up)
+  - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
+  - [Generational wealth and camels](#generational-wealth-and-camels)
+  - [Timing the markets](#timing-the-markets)
+  - [The unquenchable thirst](#the-unquenchable-thirst)
 - [Other questions](#other-questions)
-    - [How much is 1%](#how-much-is-1)
+  - [How much is 1%](#how-much-is-1)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## Assumptions and Hannah
 
@@ -239,6 +241,12 @@ See [Parkinson's law](/parkinson), which applies to both time and money. The tas
 {%include blob_image.html src="gdp-delta-1960-2020.png" %}
 
 ### Keeping a mortgage you can pay of since interest rates are low
+
+### Generational wealth and camels
+
+_My grandfather rode a camel, my father rode a camel, I drive a Mercedes, my son drives a Land Rover, his son will drive a Land Rover, but his son will ride a camel - Sheikh Rashid bin Saeed Al Maktoum_
+
+What a great line. Difficulty breeds strength, which translates to an easy time for the kids, which leads to weakness, which leads to the cycle. Not sure the best way to handle this.
 
 ### Timing the markets
 
