@@ -19,6 +19,7 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
 - [Theory](#theory)
     - [Things that bring most people joy](#things-that-bring-most-people-joy)
     - [Attributes of Joy](#attributes-of-joy)
+    - [Safety the precondition for Joy](#safety-the-precondition-for-joy)
     - [Joy versus pleasure](#joy-versus-pleasure)
     - [The satisifaciton of bring joy to others](#the-satisifaciton-of-bring-joy-to-others)
 - [Future Projects](#future-projects)
@@ -54,9 +55,23 @@ Increasing the receptivity to Joy
 
 TODO Use Lens of Self/Other/Process
 
-Safety and comfort:
+### Safety the precondition for Joy
 
-- Don't want to look stupid - People sing only when alone - Second person is the [first leader](https://www.youtube.com/watch?v=)
+- Don't want to look stupid
+  - Think about teenagers wanting to look cool
+  - This is why sing in the shower
+- Don't want to be ripped off
+  - Is this a conn?
+  - What's your angle for doing this?
+- You can increase someones comfort by getting validation from others
+
+  - Someone else doing it before you
+  - Reassure person
+  - Smile
+  - Start with a small commitment
+
+- Performers spend lots of time building the first follower
+- The most important guy is [The First Follower](https://www.youtube.com/watch?v=)
   {% include youtube.html src="fW8amMCVAJQ" %}
 
 Why kids are more receptive to Joy
