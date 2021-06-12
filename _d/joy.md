@@ -14,25 +14,27 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
 
 <!-- prettier-ignore-start -->
 
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Theory](#theory)
-    - [Things that bring most people joy](#things-that-bring-most-people-joy)
-    - [Attributes of Joy](#attributes-of-joy)
-    - [Safety the precondition for Joy](#safety-the-precondition-for-joy)
-    - [Joy versus pleasure](#joy-versus-pleasure)
-    - [The satisifaciton of bring joy to others](#the-satisifaciton-of-bring-joy-to-others)
+  - [Things that bring most people joy](#things-that-bring-most-people-joy)
+  - [Attributes of Joy](#attributes-of-joy)
+  - [Safety the precondition for Joy](#safety-the-precondition-for-joy)
+  - [Joy versus pleasure](#joy-versus-pleasure)
+  - [The satisifaciton of bring joy to others](#the-satisifaciton-of-bring-joy-to-others)
 - [Future Projects](#future-projects)
-    - [Smile box](#smile-box)
-    - [Bubble Show](#bubble-show)
-    - [Put on a magic show](#put-on-a-magic-show)
-    - [Put on a kids birthday party](#put-on-a-kids-birthday-party)
+  - [Smile box](#smile-box)
+  - [Bubble Show](#bubble-show)
+  - [Put on a magic show](#put-on-a-magic-show)
+  - [Put on a kids birthday party](#put-on-a-kids-birthday-party)
 - [Crazy Dream Projects](#crazy-dream-projects)
-    - [Own a vaudiville theatre](#own-a-vaudiville-theatre)
-- [Completed Works](#completed-works)
+  - [Become an executive producer for shows](#become-an-executive-producer-for-shows)
+  - [Own a vaudiville theatre](#own-a-vaudiville-theatre)
+- [Completed Projects](#completed-projects)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
 
 ## Theory
 
@@ -129,9 +131,13 @@ Thoughts on a [smile box](https://igsmilebox.blogspot.com/2012/12/what-is-smileb
 
 ## Crazy Dream Projects
 
+### Become an executive producer for shows
+
 ### Own a vaudiville theatre
 
-## Completed Works
+## Completed Projects
+
+TODO: Inline videos here.
 
 - Doing [magic for others](/magic)
 - [Smile Startup w/in Microsfot](https://igsmilebox.blogspot.com)
