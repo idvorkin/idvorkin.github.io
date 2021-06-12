@@ -33,7 +33,7 @@
     "/correct-of-errors": "/coe",
     "/covid19": "/covid",
     "/cv": "/covid",
-    "/dealjoy": "/d/makejoy",
+    "/dealjoy": "/joy",
     "/decide": "/decisive",
     "/decision": "/decisive",
     "/delegation": "/delegate",
@@ -67,11 +67,11 @@
     "/imposter": "/insecure",
     "/in-real-life": "/irl",
     "/insecurity": "/insecure",
-    "/joy": "/happy",
     "/jupyter": "/pandas",
     "/machine-learning": "/ml",
     "/machinelearning": "/ml",
-    "/makesmile": "/d/makejoy",
+    "/makejoy": "/joy",
+    "/makesmile": "/joy",
     "/manager": "/being-a-great-manager",
     "/manager-book": "/the-manager-book",
     "/mechanism": "/upstream",
@@ -227,6 +227,7 @@
       "incoming_links": [
         "/d/resistance",
         "/first-things-first",
+        "/happy",
         "/idle",
         "/mind-at-work",
         "/psychic-weight"
@@ -732,17 +733,6 @@
       "redirect_url": "",
       "doc_size": 15000
     },
-    "/d/makejoy": {
-      "py/object": "__main__.Page",
-      "url": "/d/makejoy",
-      "title": "DEALER OF SMILES AND WONDER",
-      "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
-      "file_path": "_site/d/makejoy.html",
-      "outgoing_links": ["/eulogy", "/magic"],
-      "incoming_links": [],
-      "redirect_url": "",
-      "doc_size": 11000
-    },
     "/d/management_interviews": {
       "py/object": "__main__.Page",
       "url": "/d/management_interviews",
@@ -1029,12 +1019,13 @@
       "incoming_links": [
         "/bmy",
         "/d/2017-04-09-igor-the-operating-manual",
-        "/d/makejoy",
         "/depression",
         "/dsat",
         "/end-in-mind",
         "/frog",
+        "/happy",
         "/irl",
+        "/joy",
         "/timeoff"
       ],
       "redirect_url": "",
@@ -1180,6 +1171,9 @@
       "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject.\n\n",
       "file_path": "_site/happy.html",
       "outgoing_links": [
+        "/addiction",
+        "/eulogy",
+        "/joy",
         "/mental-pain",
         "/anxiety",
         "/compassion",
@@ -1356,6 +1350,17 @@
       "redirect_url": "",
       "doc_size": 19000
     },
+    "/joy": {
+      "py/object": "__main__.Page",
+      "url": "/joy",
+      "title": "DEALER OF SMILES AND WONDER",
+      "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
+      "file_path": "_site/joy.html",
+      "outgoing_links": ["/eulogy", "/magic", "/magic"],
+      "incoming_links": ["/happy"],
+      "redirect_url": "",
+      "doc_size": 14000
+    },
     "/magic": {
       "py/object": "__main__.Page",
       "url": "/magic",
@@ -1365,11 +1370,11 @@
       "outgoing_links": [],
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
-        "/d/makejoy",
         "/d/resistance",
         "/eulogy",
         "/hobby",
-        "/idle"
+        "/idle",
+        "/joy"
       ],
       "redirect_url": "",
       "doc_size": 14000
@@ -1508,7 +1513,7 @@
         "/td/time-off-3-2020"
       ],
       "redirect_url": "",
-      "doc_size": 27000
+      "doc_size": 28000
     },
     "/mortality-software": {
       "py/object": "__main__.Page",
@@ -1845,7 +1850,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 21000
+      "doc_size": 22000
     },
     "/td/alexa-skill": {
       "py/object": "__main__.Page",
