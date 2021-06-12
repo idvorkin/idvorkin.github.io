@@ -87,7 +87,9 @@ TODO Concerts
 
 ### Joy versus pleasure
 
-Pleasure is the release of tension. The going from anticipation of something positive to getting it. Orgasm, Getting to pee when you have to go. Eating a very tasty cake.
+Pleasure is the release of tension. The going from anticipation of something positive to getting it. Eating chocolate cake, orgasm, getting to pee when you have to go. Eating a very tasty cake.
+
+Joy isn't like that.
 
 ### The satisifaciton of bring joy to others
 
