@@ -1353,13 +1353,13 @@
     "/joy": {
       "py/object": "__main__.Page",
       "url": "/joy",
-      "title": "DEALER OF SMILES AND WONDER",
+      "title": "SMILES, JOY AND WONDER",
       "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
       "file_path": "_site/joy.html",
       "outgoing_links": ["/eulogy", "/magic", "/magic"],
       "incoming_links": ["/happy"],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/magic": {
       "py/object": "__main__.Page",
@@ -1377,7 +1377,7 @@
         "/joy"
       ],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/mental-pain": {
       "py/object": "__main__.Page",
