@@ -37,37 +37,68 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
 
 ### Things that bring most people joy
 
-- Babes
+- Babies (especially smiling, or holding your finger)
 - Baby Animals
 - Bubbles
 - Reacting to a smile
 - Beautiful singing
 - Singing out loud
 - Christmas Carols
+- Dancing
 
 ### Attributes of Joy
+
+Joy is an involuntary experience that acts on you. You can be more receptive to joy, but even when you're not you can experience joy against your will.
+
+Increasing the receptivity to Joy
+
+TODO Use Lens of Self/Other/Process
+
+Safety and comfort:
+
+- Don't want to look stupid - People sing only when alone - Second person is the [first leader](https://www.youtube.com/watch?v=)
+  {% include youtube.html src="fW8amMCVAJQ" %}
+
+Why kids are more receptive to Joy
+
+- Thing are more novel
+- Naturally feel safe
+- Less need for validation of peers
+- Except things to be wholesome and good
+
+TODO Concerts
 
 ### Joy versus pleasure
 
 Pleasure is the release of tension. The going from anticipation of something positive to getting it. Orgasm, Getting to pee when you have to go. Eating a very tasty cake.
 
-Joy is different, there's no tension, and it's involuntary. You can experience Joy against your will.
-
-Joy: - Is involuntary - Acts on you - Better when it provides connection -
-
-Joy requirements - Safety - Non-threatening
-
-Building Safety - Validation of others, - Don't want to feel dumb for enjoying joy.
-
-- Kids experience more joy because:
-  - Thing are more novel
-  - Naturally feel safe
-  - Less need for validation of peers
-  - Except things to be wholesome and good
-
 ### The satisifaciton of bring joy to others
 
-Right from my [eulogy](/eulogy)
+Right from my [eulogy](/eulogy):
+
+_Making cards change colors at a spectators command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. Once Igor learned [magic](/magic), that consumed his free time and became his favorite tool._
+
+Back in his 30s he used to juggle lots of things, the coolest of which being [juggle fire](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches).
+
+<!--
+* To File
+    * Handing out bells
+    * Original Smile Service
+    * Silly hats/clothes
+    * Constantly had props with him and practicing.
+    * How he treated homeless and strangers in passing
+* Archived links
+    * [Juggling Fire]    * The pass
+* To live
+    * Juggle passing with fire
+    * Story telling voices
+    * Smile Box Art Installation
+    * Putting on a show
+    * Being a master of ceremonies
+    * Going to random juggling/side show/magic convention.
+    * Volunteering for sick kids.
+
+    -->
 
 ## Future Projects
 
