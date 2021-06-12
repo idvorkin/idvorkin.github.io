@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dealer of Smiles and Wonder"
+title: "Smiles, Joy and Wonder"
 tags:
   - emotional intelligence
 permalink: /joy
@@ -22,6 +22,7 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
   - [Things that bring most people joy](#things-that-bring-most-people-joy)
   - [Attributes of Joy](#attributes-of-joy)
   - [Safety the precondition for Joy](#safety-the-precondition-for-joy)
+  - [Joy and Wonder](#joy-and-wonder)
   - [Joy versus pleasure](#joy-versus-pleasure)
   - [The satisifaciton of bring joy to others](#the-satisifaciton-of-bring-joy-to-others)
 - [Future Projects](#future-projects)
@@ -84,6 +85,11 @@ Why kids are more receptive to Joy
 - Except things to be wholesome and good
 
 TODO Concerts
+
+### Joy and Wonder
+
+Some connection between joy and wonder
+Some say when you clear your mind you feel joy (or bliss)
 
 ### Joy versus pleasure
 
