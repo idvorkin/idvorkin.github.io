@@ -94,6 +94,10 @@ Zach - Making up his own card trick for woman waiting on the bus. -
 
 ### Wonder vs Meaning vs Reactions
 
+### Manipulation vs Augmenting Experiences.
+
+Many techniques in magic are around managing attention and molding the experience. You could look at these as manipulative. The test for manipulation vs augmenting experiences, is the intent. If the intent is personal gain it's manipulative, if the intent is the experience of the specator it's master.
+
 ## Favorite Acts
 
 ### Lennart Green - Superb Card Handling
