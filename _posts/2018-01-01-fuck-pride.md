@@ -91,8 +91,8 @@ I'll continue to add examples to this post over time (likely when I need to remi
 
 #### HEAD FAKE: This note is really about arrogance and hubris, not pride.
 
-To be dramatic, I'm using the word pride as an alternative to arrogance to hubris, which is the state being described in this note.
+To be dramatic, I'm using the word pride as an alternative to arrogance and hubris. Those words are probably more precise.
 
-Pride is a judgment over an accomplishment relative to our ability. "E.g. Did I learn to read when I really struggle reading?". It is often justified.
+Pride is a usually a justified positive judgment over an accomplishment relative to our ability. "E.g. Did I learn to read when I really struggle reading?".
 
-Arrogance, or hubris, is an assessment of self, often manifesting as entitlement, which is 1) feeling you are cosmically unique or 2) that you should have a positive outcome with no effort.
+Arrogance and hubris, are an assessment of self, often manifesting as entitlement, which is 1) feeling you are cosmically unique or 2) that you should have a positive outcome exceeding your effort or value.
