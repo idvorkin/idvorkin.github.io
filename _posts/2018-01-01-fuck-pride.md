@@ -89,6 +89,8 @@ I'll continue to add examples to this post over time (likely when I need to remi
 - Cognitive Distortions - Someone cares about what happens to you.
 - Not taking a "better" job for a pay cut
 
+<!--  I don't love this section, removing it.
+
 #### HEAD FAKE: This note is really about arrogance and hubris, not pride.
 
 To be dramatic, I'm using the word pride as an alternative to arrogance and hubris. Those words are probably more precise.
@@ -96,3 +98,5 @@ To be dramatic, I'm using the word pride as an alternative to arrogance and hubr
 Pride is a usually a justified positive judgment over an accomplishment relative to our ability. "E.g. Did I learn to read when I really struggle reading?".
 
 Arrogance and hubris, are an assessment of self, often manifesting as entitlement, which is 1) feeling you are cosmically unique or 2) that you should have a positive outcome exceeding your effort or value.
+
+--!>
