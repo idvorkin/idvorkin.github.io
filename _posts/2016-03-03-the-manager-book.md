@@ -19,6 +19,7 @@ This post uses the word manager, but the majority of topics are applicable all s
 
 
 
+
 <!-- vim-markdown-toc GFM -->
 
 - [What does a manager do?](#what-does-a-manager-do)
@@ -853,28 +854,31 @@ Want full stack teams:
 
 ### How do you think about hiring?
 
-A wise man taught me - "My priority list should be":
+My priority list:
 
-1. Full Blown Site Outage
+1. A full blown site outage where the product is hard down and I'm actively getting it back online.
 2. Recruiting
-3. Everything else.
+3. Everything else
 
-Recruiting is ultimately product sales, where you're selling your team.
+Recruiting is ultimately product sales, where you're selling the team you support. Sales breaks down into the following:
 
-Most important part of sales:
-
-1. The product: Product you're building, team (culture and people), yourself.
-
-2. Funnel: Inbound Marketing, Referrals, high touch, post sales support.
+1. Meeting the candidate's needs: Great salespeople don't sell their product, they understand and solve their customer's needs.
+   Start by understanding what the candidate values and needs. If that's on your team, fantastic, if not help them find the team that's right for them.
+2. Your solution: The product you're building, the culture and people on the team, and yourself.
+3. The Funnel: Inbound Marketing, Referrals, high touch, post sales support (see next question)
 
 ### How do you think about the hiring funnel.
 
+- Before even thinking of funnels
+  - Strive to be a class act and do your best.
+  - It's a small world. [People will learn what you value, and how you work](/static/igor-feedback-LinkedIn.pdf)
+  - Create [public artifacts](https://bitly.com/igor-wlb-manife).
 - Top of Funnel
   - Interview events
   - Internal Talks
-  - Linked in Posts
-  - Linked in Appreciation
-  - Linked in Articles
+  - LinkedIn Posts
+  - Linkedin Appreciation
+  - LinkedIn Articles
   - Always help recruiting
   - Connect to warm candidates
   - Go grab coffee with them.
@@ -882,17 +886,16 @@ Most important part of sales:
   - Intern Talk
 - Mid Funnel
   - Post interview - magic trick, after interview lets make time to chat
-  - Push to get interview done ASAP
+  - Push to get interviews done ASAP
   - Push to get results to candidate ASAP
   - Walk out of interview connect on linked in and chat with them.
 - Bottom of the Funnel
   - Focus on the needs of the candidate, then talk about how job can solve their needs.
   - Beer/Coffee/Call
-  - Share what I have
-  - Talk to my team.
-  - Come out and have lunch with my team.
-  - Multi Sell job come to my
-  - Focus on
+  - Share artifacts, and evidence of my teams operations.
+  - Invite them to talk with the team I support.
+  - Invite them to have lunch with the team.
+  - Help them build and evaluate their [dream job, and job switching decision making matrix](/job).
 
 ### What about structured vs free form interview loops?
 
