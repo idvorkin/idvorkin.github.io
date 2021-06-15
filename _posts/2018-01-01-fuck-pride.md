@@ -41,7 +41,7 @@ To help me remember places where pride has fucked with me, I'll write out some o
 - [Wanting to be right more then being effective](#wanting-to-be-right-more-then-being-effective)
 - [Feeling life isn't fair because something shitty happened to me](#feeling-life-isnt-fair-because-something-shitty-happened-to-me)
 - [Other examples](#other-examples)
-- [HEADFAKE: This note is really about arrogance and hubris, not pride.](#headfake-this-note-is-really-about-arrogance-and-hubris-not-pride)
+- [HEAD FAKE: This note is really about arrogance and hubris, not pride.](#head-fake-this-note-is-really-about-arrogance-and-hubris-not-pride)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -58,11 +58,11 @@ Meanwhile, my team was still only 10 people, and I felt like a failure. Having f
 
 **Antidote:** Don't let your friend/boss/society's assessment of you outweigh your own. Take their judgment in stride. Decide if you need to find a new friend/boss/society, correct them, or live with and act appropriately.
 
-Here I was lucky, I was able to learn from a mentor. My management mentor, Beth, was someone who I respected so much I joined her team to get "my PhD in management". Beth was my goal standard for a great manager, but she was essentially pushed out of her organization. I remember asking her: Wait if you're so good at managing why did your boss push you out. Her answer is burned into my mind, and has served me well:
+Here I was lucky, I was able to learn from a mentor. My management mentor, Beth, was someone who I respected so much I joined her team to get my "PhD in management". Beth was my gold standard for a great manager, but she was fired from her organization. I remember asking Beth: _"Wait if you're so good at managing, why did your boss make you switch teams?"_. I burned her answer into my mind, as it has served me well on many occasions:
 
-> Everyone will judge you, and that's OK, but the judgment you need to apply is your own principles. In this case, if I were to burn in hell for my actions, I'd have been happy with that. I looked deep into my soul and know I did the right thing.
+> Everyone will judge you, that's just the way it is. The judgment to care about is your own principles given what you knew at the time. In this case, I lived by my principles and did what was best given what I knew. If I were to burn in hell for my actions, so be it, I lived by principles and there's nothing better I can do.
 
-_Important Side Bar: It's easy to be wrong on A) your principles, and B) your assessment of said principles. Be sure to test them with multiple trusted advisors and folks you respect who have gone through a similar situation_
+_Side Bar 1: It's easy to be wrong on A) your principles, and B) your assessment of said principles. Be sure to test them with multiple trusted advisors and folks you respect who have gone through a similar situation_
 
 #### Wanting to be right more then being effective
 
