@@ -99,4 +99,4 @@ Pride is a usually a justified positive judgment over an accomplishment relative
 
 Arrogance and hubris, are an assessment of self, often manifesting as entitlement, which is 1) feeling you are cosmically unique or 2) that you should have a positive outcome exceeding your effort or value.
 
---!>
+-->
