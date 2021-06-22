@@ -91,6 +91,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [The FAQ](#the-faq)
     - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
     - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
+    - [Splitting Horizontally vs Verticallly](#splitting-horizontally-vs-verticallly)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
 - [Personal Motivations](#personal-motivations)
     - [Why is management attractive to Igor?](#why-is-management-attractive-to-igor)
@@ -1121,6 +1122,21 @@ The day of:
 ### The split: When a team outgrows a manager
 
 ### The merge or you leaving the team: When a manager leaves
+
+### Splitting Horizontally vs Verticallly
+
+When you have multiple teams, and multiple user scenarios you decide to organize horizonatally (each team owns tech solutions, spanning multiple user scenarios), or vertically (each team owns user scenarios, spanning tech solutions).
+
+This is hard, a few thoughts I've gathered:
+
+Deciding if you split horizonatlly vs vertically is at the highest level asking what you want care more about:
+
+- customer metrics vs engineering metrics and efficiency.
+- what's best for the customer vs what's best for the platform.
+
+Depending on how much tech needs to be build and how much specialization is required you will need horizontal teams. For example, the operating system, the networking stack, the hardware are all horizontals.
+
+TODO: Table of pros and cons
 
 ### The flip: When charter changes
 
