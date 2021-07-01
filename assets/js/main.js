@@ -96,6 +96,7 @@ function generateToc(id, showPinToc) {
   Mousetrap.bind("z", e => (location.href = "/random"));
   Mousetrap.bind("a", e => (location.href = "/all"));
   Mousetrap.bind("m", e => (location.href = "/toc"));
+  Mousetrap.bind("6", e => (location.href = "/ig66"));
 
   let shortcutHelp = `
 Keyboard Shortcuts:
@@ -105,6 +106,7 @@ Keyboard Shortcuts:
   z - surprise me
   a - all posts
   m - global toc
+  6 - family journal
   `;
   Mousetrap.bind("?", e => alert(shortcutHelp));
 }
