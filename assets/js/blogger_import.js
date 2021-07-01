@@ -55,8 +55,18 @@ function ProcessImports(posts) {
   // Import all history
   let random_div = $("#random-post");
   let import_div = $("#imported-posts");
-  if (!import_div) {
-    console.log("import-div not found");
+  let achievement_div = $("#achievment");
+  if (!achievement_div) {
+    console.log("#achievement_div not found");
+    return;
+  }
+  if (!random_div) {
+    console.log("#random-post not found");
+    return;
+  }
+
+  if (!achievement_div) {
+    console.log("#achievement_div not found");
     return;
   }
   // Add a random post on top
@@ -66,10 +76,22 @@ function ProcessImports(posts) {
     .orderBy(o => o.published, "desc")) {
     append_post(random_div, randomPost);
   }
+  // Add a random achievement post
+  // TODO: Merge in new posts to this feed
+  // Consider doing the merge with a jquery selector
 
-  let count_history_to_display = 5;
+  let count_achievement_posts = 1;
+  for (var randomPost of _.chain(posts)
+    .filter(o => o.title.toLowerCase().includes("achievement"))
+    .sampleSize(count_achievement_posts)
+    .orderBy(o => o.published, "desc")) {
+    append_post(achievement_div, randomPost);
+  }
+
+  let count_history_to_display = 0;
   for (var post of _.take(posts, count_history_to_display)) {
     append_post(import_div, post);
+    console.log("adding_post ${post}");
   }
 }
 

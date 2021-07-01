@@ -8,10 +8,14 @@ monkey-does-reload: true
 
 <br/>
 
-<div class='alert alert-success' id="random-post">
+<div class='extra-random-parent-to-make-append-work'>
+    <div class='alert alert-success' id="random-post">
+    </div>
+
 </div>
 
-{% for item in site.ig66 reversed   %}
+{% assign display_order_posts  = site.ig66 | reverse %}
+{% for item in  display_order_posts limit:3 %}
 
 {%if item.week %}
 {%else%}
@@ -25,4 +29,10 @@ monkey-does-reload: true
 
 {% endfor %}
 
-<div id="imported-posts"/>
+<div class='extra-random-parent-to-make-append-work'>
+    <div class='alert alert-success' id="achievment">
+    </div>
+
+    <div id="imported-posts"/>
+
+</div>
