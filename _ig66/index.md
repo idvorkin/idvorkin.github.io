@@ -15,7 +15,7 @@ monkey-does-reload: true
 </div>
 
 {% assign display_order_posts  = site.ig66 | reverse %}
-{% for item in  display_order_posts limit:3 %}
+{% for item in  display_order_posts limit:4 %}
 
 {%if item.week %}
 {%else%}
