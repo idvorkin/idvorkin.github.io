@@ -57,6 +57,7 @@ This post uses the word manager, but the majority of topics are applicable all s
 - [Process and Mechanism](#process-and-mechanism)
     - [Theory of Process](#theory-of-process)
     - [The dark side of process](#the-dark-side-of-process)
+    - [On Change](#on-change)
     - [That sounds like good intentions - Factories and Artisans](#that-sounds-like-good-intentions---factories-and-artisans)
     - [Never have a human do what a computer can do.](#never-have-a-human-do-what-a-computer-can-do)
     - [Rich communication - Team meeting](#rich-communication---team-meeting)
@@ -65,7 +66,6 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Data Driven - Customer and Business Metric Reviews](#data-driven---customer-and-business-metric-reviews)
     - [Continuous Improvement - Retrospectives](#continuous-improvement---retrospectives)
     - [Quality and Technical Growth Design+Arch Reviews](#quality-and-technical-growth-designarch-reviews)
-    - [On Change](#on-change)
 - [Planning, Roadmaps and Resource Allocation](#planning-roadmaps-and-resource-allocation)
     - [Defining Success - How does goal setting work](#defining-success---how-does-goal-setting-work)
     - [How do you do planning and come up with roadmaps.](#how-do-you-do-planning-and-come-up-with-roadmaps)
@@ -708,11 +708,29 @@ This can be especially true when process is created high in the org chart to sol
 
 **Toxic process** - Bad process will disenfranchise ownership and stifling passion. It'll slow down things that can be fast. There is nothing more powerful then a motivated engineer, don’t let process take that away.
 
+### On Change
+
+There are a few kinds of changes.
+
+One way door changes should start with -100 points because:
+
+1. There is only so much change a team can handle
+1. Change has unexpected consequences,
+1. Before the change, many problems, most of which you don't know about, have been solved by evolution, and will re-appear after the change.
+1. Many solutions, are like a 4 sided rug in a 5 sided room, no matter the solution, you still end up with a problem, the devil you know vs the devil you don't.
+
+Two way door changes are much safer when performed well:
+
+1. Start with a pilot
+1. Let the larger group adopt it if they feel it has value.
+1. Come up with a criteria to roll back the change
+1. Setup guard rails to monitor to roll back.
+
 ### That sounds like good intentions - Factories and Artisans
 
 - Process vs Good Intentions
 - Toyota Assembly line vs Artisan
-- That passion variance
+- The inconsistency from passionate projects
 
 ### Never have a human do what a computer can do.
 
@@ -762,24 +780,6 @@ Also need to review all outages
 - Ensure team gets cross trained.
 - Catch stuff as early as possible
 - Get developers used to being on the whiteboard
-
-### On Change
-
-There are a few kinds of changes.
-
-One way door changes should start with -100 points because:
-
-1. There is only so much change a team can handle
-1. Change has unexpected consequences,
-1. Before the change, many problems, most of which you don't know about, have been solved by evolution, and will re-appear after the change.
-1. Many solutions, are like a 4 sided rug in a 5 sided room, no matter the solution, you still end up with a problem, the devil you know vs the devil you don't.
-
-Two way door changes are much safer when performed well:
-
-1. Start with a pilot
-1. Let the larger group adopt it if they feel it has value.
-1. Come up with a criteria to roll back the change
-1. Setup guard rails to monitor to roll back.
 
 ## Planning, Roadmaps and Resource Allocation
 
