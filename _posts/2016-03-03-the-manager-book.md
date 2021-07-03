@@ -45,6 +45,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [How do you handle promotion preparation (and fever)?](#how-do-you-handle-promotion-preparation-and-fever)
     - [How do you identify and grow potential managers?](#how-do-you-identify-and-grow-potential-managers)
     - [How did you grow top talent](#how-did-you-grow-top-talent)
+    - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
 - [Culture](#culture)
     - [What is your ideal culture?](#what-is-your-ideal-culture)
     - [How do you help a team gel](#how-do-you-help-a-team-gel)
@@ -590,6 +591,38 @@ Promotion fever is my word for engineers that are completely focused on promotio
 Engineers that are interested in reading this post make good manager candidates. The path usually start with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many as people issues as people are comfortable with them tracking.
 
 ### How did you grow top talent
+
+### Performance Reveiws: Calibrations PSC, OLR, Connections
+
+[Performance reviews](https://imwrightshardcode.com/2021/06/discussing-rewards-for-people/) exist at most companies, and for good reason they:
+
+- Ensure performance is evaluated consistently.
+- Provide forced feedback.
+- Distribute compensation in accordance to impact.
+- Validate growth plans and find opportunities across the organization.
+- Assess bottom performers and ensure action is taken.
+
+Best practices for performance reviews:
+
+- Before Calibrations:
+
+  - Continous seeking feedback for team members, and anonymizing and providing feedback
+  - Continuous explanation of how tracking is occuring
+  - Doing mid point checkins, and peer manager review for hard situations (e.g. bottom performers and pending promotions)
+  - Consistent presentation template - this makes it easy for everyone to assess the presentation of people.
+  - Remind engineers you might find new data late, and what you do, that could change the assessment
+
+- At the start of every calibration session. Reminder that:
+
+  - Confidentiality is critical - Amazon says breaking confidentiality is a firing offense, which is great.
+  - Reminder of the importance of catching unconscious bias.
+  - Point is to calibrate the assessment process so it's fair.
+  - Include senior engineers - this helps the engineers trust the process is fair, and provides critical input.
+
+- After Calibrations:
+  - No surprises to the engineers, they should already be aware of their rating as it's been provided consistently.
+  - Provide as much feedback to engineers after the process, owning the message.
+  - Focus on growth plans (see above sections)
 
 ## Culture
 
