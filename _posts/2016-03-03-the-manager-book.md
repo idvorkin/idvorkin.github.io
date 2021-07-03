@@ -94,7 +94,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [The FAQ](#the-faq)
     - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
     - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
-    - [Splitting Horizontally vs Verticallly](#splitting-horizontally-vs-verticallly)
+    - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
 - [Personal Motivations](#personal-motivations)
     - [Why is management attractive to Igor?](#why-is-management-attractive-to-igor)
@@ -1018,7 +1018,7 @@ TL;DR: Firing is a good thing. There is a natural percent of people who should b
 
 _And now the long version for non-managers_
 
-If you've ever worked with a low performer who couldn't do their job, it's draining. They drag down the team due to missing commitments, and needing to be bailed out as unexpected work from the team. It's even a drag on the the low performer as doing poorly in your job is a miserable experience, and they'll feel way better off in a place they are succesfful.
+If you've ever worked with a low performer who couldn't do their job, it's draining. They drag down the team due to missing commitments, and needing to be bailed out as unexpected work from the team. It's even a drag on the the low performer as doing poorly in your job is a miserable experience, and they'll feel way better off in a place they are successful.
 
 All of this is to say firing lower performers is a good thing.
 
@@ -1026,7 +1026,7 @@ And so the question becomes who should be fired? Given career expectations it sh
 
 At the scale of 100's of employees there will be low performers unable to do their job. The exact value varies depending on how aggressive companies hire and deal with low performers, but I'd guess 1%-5%.
 
-For a while, Amazon was getting terrible press, so they got rid of firing ratios. You know what happened? Way less then 1% of people were fired, meaning the manager's good judgement wasn't working well enough.
+For a while, Amazon was getting terrible press, so they got rid of firing ratios. You know what happened? Way less then 1% of people were fired, meaning the manager's good judgment wasn't working well enough.
 
 As a result Amazon re-instated it's firing ratios.
 
@@ -1197,13 +1197,13 @@ The day of:
 
 ### The merge or you leaving the team: When a manager leaves
 
-### Splitting Horizontally vs Verticallly
+### Splitting Horizontally vs Vertically
 
-When you have multiple teams, and multiple user scenarios you decide to organize horizonatally (each team owns tech solutions, spanning multiple user scenarios), or vertically (each team owns user scenarios, spanning tech solutions).
+When you have multiple teams, and multiple user scenarios you decide to organize horizontally (each team owns tech solutions, spanning multiple user scenarios), or vertically (each team owns user scenarios, spanning tech solutions).
 
 This is hard, a few thoughts I've gathered:
 
-Deciding if you split horizonatlly vs vertically is at the highest level asking what you want care more about:
+Deciding if you split horizontally vs vertically is at the highest level asking what you want care more about:
 
 - customer metrics vs engineering metrics and efficiency.
 - what's best for the customer vs what's best for the platform.
@@ -1223,9 +1223,9 @@ In general when this happens there are a few common reactions
 A common reason for this is the old team that had the charter, likely only planned out for 120% of there engineers. So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there's only work for 3 people, and be sad.
 
 **The new charter is much simpler then expected**
-**The new charter isnt' as interesting**
+**The new charter isn't' as interesting**
 
-It's common to oversimplify from a distance. Once the team gets into the details, they'll either see it's true, and they'll find new good stuff to do, or, far more likely they'll find much more nuance, subtelty and ambigutiy in the new space.
+It's common to oversimplify from a distance. Once the team gets into the details, they'll either see it's true, and they'll find new good stuff to do, or, far more likely they'll find much more nuance, subtlety and ambiguity in the new space.
 
 **Playbook and antidotes**
 
