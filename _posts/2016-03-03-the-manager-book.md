@@ -20,6 +20,7 @@ This post uses the word manager, but the majority of topics are applicable all s
 
 
 
+
 <!-- vim-markdown-toc GFM -->
 
 - [What does a manager do?](#what-does-a-manager-do)
@@ -49,7 +50,7 @@ This post uses the word manager, but the majority of topics are applicable all s
 - [Culture](#culture)
     - [What is your ideal culture?](#what-is-your-ideal-culture)
     - [How do you help a team gel](#how-do-you-help-a-team-gel)
-    - [What order would you intoduce culture](#what-order-would-you-intoduce-culture)
+    - [What order would you introduce culture](#what-order-would-you-introduce-culture)
     - [How do you make a good culture?](#how-do-you-make-a-good-culture)
     - [How do you handle Remote Work?](#how-do-you-handle-remote-work)
     - [What about Work Life Balance](#what-about-work-life-balance)
@@ -221,7 +222,7 @@ Outputs:
 
 ### What do managers do all day?
 
-_For non-managers, recall a manager's purpose is supporting others, not making stuff. As a result they have a [manager schedule, not a maker schedule](http://www.paulgraham.com/makersschedule.htm)._
+_For non-managers, recall a manager's purpose is supporting others, not making stuff. As a result they have a [manager schedule, not a maker schedule](http://www.paulgraham.com/makers schedule.htm)._
 
 In a typical 44 hours week, 24 hours are standing commitments with others, and 20 hours vary based on the time of year, and needs of the team, business, and partners.
 
@@ -278,7 +279,7 @@ They need to represent the team in technical forums, swag costs, represent laws 
 
 They also need to be experts at working with data systems and analysis, as much of their time will be analyzing customer, business, operational, and technical data.
 
-Once developers become managers they have little time to use their technical muscle, and their technical apptitude declines do to lack of use. Therefore I recommend before switching they are:
+Once developers become managers they have little time to use their technical muscle, and their technical Aptitude declines do to lack of use. Therefore I recommend before switching they are:
 
 - A very experienced engineer (MSFT L65, AMZN L6, FB E6).
 - A expert in at multiple languages (for me python, and C#)
@@ -317,12 +318,12 @@ _Coaching is like midwifery. A midwife can not give birth to the baby, she facil
 
 To achieve these principles there are several tools:
 
-| Tool                    | Time Horizon    | Checkin Frequency |
-| ----------------------- | --------------- | ----------------- |
-| Career Growth Plan      | 6m to 2y        | 3m                |
-| Pre Write Self Assement | 1m to 6m        | 4w to 8w          |
-| Frequent Feedback       | Immediate       | As Needed         |
-| Situational Leadership  | Stage Dependant | Stage Dependant   |
+| Tool                      | Time Horizon    | Checkin Frequency |
+| ------------------------- | --------------- | ----------------- |
+| Career Growth Plan        | 6m to 2y        | 3m                |
+| Pre Write Self Assessment | 1m to 6m        | 4w to 8w          |
+| Frequent Feedback         | Immediate       | As Needed         |
+| Situational Leadership    | Stage Dependant | Stage Dependant   |
 
 **Career Growth Plans**
 
@@ -377,7 +378,7 @@ In each of these stages different support is required.
 
 ### What is the level specific career expectations and growth strategies
 
-Depends on the skill level (Eg. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
+Depends on the skill level (E.g. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
 
 | Level        | Approach                                                                                                                                                                                                                                                                                                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -436,7 +437,7 @@ I use Danial Pink's DRIVE model, Autonomy, Mastery and Purpose:
   - Protecting from harmful rays of upper management and business
   - Only clear out as much as required
 - Mastery
-  - Career Development todo link it.
+  - Career Development TODO link it.
   - Training
   - In the dimension we agree to.
   - You can work at 110% of your capacity, but I tell you when you're at 90,100, or 110
@@ -509,7 +510,7 @@ I push for awkward conversations. When my peeps have nothing to talk about I ask
 A few things I don't do:
 
 - **No public status reports** I discourage using 1:1 to share the public news and weather "status report" - we can read that offline ourselves. A valuable use of time is the "inner and private stories" on the status - What is hard, what is most fun, where do you want to improve?
-- **No deep dives when I could just do offline homework** I think 1:1 off the cuff deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say can I get a TL;DR and "How would I go about learning X,Y or Z"? If the answer is "ask me", I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an aysnc discussion which captures Q&A in a durable form. Once we've done the easy async discussion in the doc, we review the comments together with more complex questions, and more private context, and more discussion.
+- **No deep dives when I could just do offline homework** I think 1:1 off the cuff deep dives are an anti-pattern, an indication that there's a missing artifact that'd be valuable to a wider audience. I'll often say can I get a TL;DR and "How would I go about learning X,Y or Z"? If the answer is "ask me", I'll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an async discussion which captures Q&A in a durable form. Once we've done the easy async discussion in the doc, we review the comments together with more complex questions, and more private context, and more discussion.
 
 <!--
 
@@ -606,8 +607,8 @@ Best practices for performance reviews:
 
 - Before Calibrations:
 
-  - Continous seeking feedback for team members, and anonymizing and providing feedback
-  - Continuous explanation of how tracking is occuring
+  - Continuous seeking feedback for team members, and anonymizing and providing feedback
+  - Continuous explanation of how tracking is occurring
   - Doing mid point checkins, and peer manager review for hard situations (e.g. bottom performers and pending promotions)
   - Consistent presentation template - this makes it easy for everyone to assess the presentation of people.
   - Remind engineers you might find new data late, and what you do, that could change the assessment
@@ -635,7 +636,7 @@ Tough question. I need to think through that
 - Test cheaply, early and often.
 - Ship as frequently as possible.
 - Always paying down technical debt
-- I hate the term "bring solutions not probems", it encourages people to freeze. Instead - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
+- I hate the term "bring solutions not problems", it encourages people to freeze. Instead - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
 - Never be blocked
 - Imagine Executed Sustainably
 
@@ -644,24 +645,24 @@ Tough question. I need to think through that
 - Team lunches
 - Moral Events
 - Help people see each other as 3 dimensional humans - talk about personal stuff.
-- Encourage peopel to think of the team as an entity, and how to improve the team, not themselves.
+- Encourage people to think of the team as an entity, and how to improve the team, not themselves.
 - Encourage people to vocalize their appreciation publicly
 - Encourage people to ask for help, and get help
 - Remind people it's intimidating to ask for help, and they can take a stand to make it happen.
-- Have the team focus on succcess of the team, ahead of personal success.
+- Have the team focus on success of the team, ahead of personal success.
 - Encourage people to improve the team at every opportunity.
 
-### What order would you intoduce culture
+### What order would you introduce culture
 
 When I joined FB we were full remote, and started with only 1 30 min team meeting every 2 weeks.
-Here's what I worked with the team to esablish
+Here's what I worked with the team to establish
 
 - 1 x week team meeting w/demos
 - 1 x week team meeting
   - replaces 1x week demo and team meeting:
 - 2 x week stand up
 - 1 x week tech talk/deep dive
-  - deep dive sessions, guest speakers, TIL sesions
+  - deep dive sessions, guest speakers, TIL sessions
 - 1 x 2 week demos
 - 1 x 2 week retro
 - 3 x week lunch
@@ -841,7 +842,7 @@ Technical Debt is often a bad thing, but like debt it is a good thing if there i
 1. Break boulders into projects, cost and analyze and order by ROI
 1. Determine cut lines
 1. Resource allocate
-1. Execute (It's 1% inspiration and 99% percperation)
+1. Execute (It's 1% inspiration and 99% perception)
 
 The only time when the 5 step process should occur simultaneously across all tracks is when a team is forming, or taking a major pivot. At all other times this series of steps should be occurring continuously and asynchronously.
 
@@ -952,7 +953,7 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
   - Interview events
   - Internal Talks
   - LinkedIn Posts
-  - Linkedin Appreciation
+  - LinkedIn Appreciation
   - LinkedIn Articles
   - Always help recruiting
   - Connect to warm candidates
@@ -1018,7 +1019,7 @@ TL;DR: Firing is a good thing. There is a natural percent of people who should b
 
 _And now the long version for non-managers_
 
-If you've ever worked with a low performer who couldn't do their job, it's draining. They drag down the team due to missing commitments, and needing to be bailed out as unexpected work from the team. It's even a drag on the the low performer as doing poorly in your job is a miserable experience, and they'll feel way better off in a place they are successful.
+If you've ever worked with a low performer who couldn't do their job, it's draining. They drag down the team due to missing commitments, and needing to be bailed out as unexpected work from the team. It's even a drag on the low performer as doing poorly in your job is a miserable experience, and they'll feel way better off in a place they are successful.
 
 All of this is to say firing lower performers is a good thing.
 
@@ -1291,7 +1292,7 @@ When I explained to someone coaching it the most important aspect of management,
 
 I think as a manager, the day to day sucks. People problems, managing by spreadsheet, fire fighting, policy violations, etc. But, those days when you look at the team, and see them helping each other, and growing, and when you catch people after a few years and they tell you how impactful you were to their career, and how working on the team was the most fun they ever had - it feels superb.
 
-As an IC, it's almost backwards, the day to day is fun. Coding, design, debugging, even fire fighting an outage trying to get the site back up, it's very satisfying in the moment. But, as an IC, when you look at the softare you built, and you realize it's long depricated, and replaced by something better, it's a pretty meh feeling.
+As an IC, it's almost backwards, the day to day is fun. Coding, design, debugging, even fire fighting an outage trying to get the site back up, it's very satisfying in the moment. But, as an IC, when you look at the software you built, and you realize it's long deprecated, and replaced by something better, it's a pretty meh feeling.
 
 So, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day to day joy of being an engineer.
 
@@ -1300,9 +1301,9 @@ So, in a nutshell, for me those moments of intense satisfaction make it worth th
 Imagine we want to build a new road.
 
 1. Start of time: PM figures out there's a market for a road, and the needs of the customer, and comes up with a rough idea of where the road needs to be between.
-1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or soemwhere else as other folks have tried digging their, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper
+1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or somewhere else as other folks have tried digging their, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper
 1. After: Senior Engineers come in and start figuring out where they'll build, what's the safest path, and what's a realistic schedule
-1. After: Intermeddiate dev's are assigned a small junk of the road and start building it.
+1. After: Intermediate dev's are assigned a small junk of the road and start building it.
 1. After: Junior devs are given very clear tasks, and start doing them
 
 At each stage of road productions things go wrong and we learn new stuff. TODO Come up with more examples
@@ -1385,7 +1386,7 @@ The need for variable engagement
 ### An engineering team as the parts of the car
 
 PM - Navigator and long term radar
-EM - Shock obsorbers, mid term radar, swerve system
+EM - Shock absorbers, mid term radar, swerve system
 Specific team members for engine, seat belts, etc
 
 ### New hire perspective is like landing a plane
@@ -1527,7 +1528,7 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 - **Conway's Law** - Software will ship to match an org chart (humans optimize for communication cost). See K-Pass compiler.
 - **[Parkinson's Law](/parkinson)** - Work (or money) will expand to fill the time available.
 - **Peter Principle** - People will rise till they become incompetent
-- **Parkinsons Law of Triviality - (Bike Shedding)** Members of an organization give disproportionate weight to trivial issues. A nuclear power plant funding committee focus most time on how to paint the bike shed since it's easy, and they feel they are providing value
+- **Parkinson's Law of Triviality - (Bike Shedding)** Members of an organization give disproportionate weight to trivial issues. A nuclear power plant funding committee focus most time on how to paint the bike shed since it's easy, and they feel they are providing value
 - **Yak Shaving** - Not a law but a great term for when you go down the [rabbit hole](https://americanexpress.io/yak-shaving/) going several steps away from the task at hand (a common cause for the delay in Parkinson's Law)
 
 ### Great Videos
