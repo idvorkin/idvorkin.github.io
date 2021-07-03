@@ -65,8 +65,10 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Data Driven - Customer and Business Metric Reviews](#data-driven---customer-and-business-metric-reviews)
     - [Continuous Improvement - Retrospectives](#continuous-improvement---retrospectives)
     - [Quality and Technical Growth Design+Arch Reviews](#quality-and-technical-growth-designarch-reviews)
+    - [On Change](#on-change)
+- [Planning, Roadmaps and Resource Allocation](#planning-roadmaps-and-resource-allocation)
     - [Defining Success - How does goal setting work](#defining-success---how-does-goal-setting-work)
-    - [How do you do planning?](#how-do-you-do-planning)
+    - [How do you do planning and come up with roadmaps.](#how-do-you-do-planning-and-come-up-with-roadmaps)
     - [How does resource allocation work?](#how-does-resource-allocation-work)
     - [Group Bonding](#group-bonding)
 - [Hiring](#hiring)
@@ -761,11 +763,43 @@ Also need to review all outages
 - Catch stuff as early as possible
 - Get developers used to being on the whiteboard
 
+### On Change
+
+There are a few kinds of changes.
+
+One way door changes should start with -100 points because:
+
+1. There is only so much change a team can handle
+1. Change has unexpected consequences,
+1. Before the change, many problems, most of which you don't know about, have been solved by evolution, and will re-appear after the change.
+1. Many solutions, are like a 4 sided rug in a 5 sided room, no matter the solution, you still end up with a problem, the devil you know vs the devil you don't.
+
+Two way door changes are much safer when performed well:
+
+1. Start with a pilot
+1. Let the larger group adopt it if they feel it has value.
+1. Come up with a criteria to roll back the change
+1. Setup guard rails to monitor to roll back.
+
+## Planning, Roadmaps and Resource Allocation
+
 ### Defining Success - How does goal setting work
 
-This is usually a top down business strategy intersected with a bottom up execution recommendation.
+The goal is to maximize the impact of the team.
 
-### How do you do planning?
+Small companies and insulated teams can do bottom up goal settings, but as companies get larger, it's hard to have sufficient insight into the company priorities, and hard to align goals cross teams, which lessons the impact.
+
+Larger teams require a top down business strategy intersected with a bottom up execution recommendation.
+
+Ideally Engineering Excellence (EE) is built as part of a feature as it is in part of the feature costs. NOTE: It's OK to defer some of the engineering tasks till after shipping but it's not OK to say a project is complete till the Engineering excellence costs are paid.
+
+Systems rot over time, so EE should have a standing budget, usually 10%-20% of team capacity. The team should be empowered to spend this budget as required.
+
+For major projects, a large EE project is required (like a technology migration). This should be outside the standing 10-20% EE allocation. Such projects should be agreed to by the business and have explicit goals.
+
+Technical Debt is often a bad thing, but like debt it is a good thing if there is a good chance a project will be abandoned and you won't need to pay the interest. Examples here are speculative projects which may be rolled back, and bridges to a future technology.
+
+### How do you do planning and come up with roadmaps.
 
 6 step process
 
@@ -777,6 +811,13 @@ This is usually a top down business strategy intersected with a bottom up execut
 1. Execute (It's 1% inspiration and 99% percperation)
 
 The only time when the 5 step process should occur simultaneously across all tracks is when a team is forming, or taking a major pivot. At all other times this series of steps should be occurring continuously and asynchronously.
+
+The full process is expensive and the team should be shielded from some of it but here's some engagement that should happen:
+
+- **Product Manager** - Fully engaged in every step.
+- **Data Science** - Impact analysis and sizing
+- **Projects and costing** - Senior and Staff engineers, because they have higher accuracy and this ensures their buy in.
+- **Interested Parties** - The process should be transparent, and anyone wants to, including junior engineers, are welcome to see how the process works. However, given they aren't required for the process, this shouldn't come at the expense of their day jobs
 
 [TODO Picture]
 
