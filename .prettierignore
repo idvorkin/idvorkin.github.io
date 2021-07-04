@@ -1,0 +1,5 @@
+
+# prettier messes up the jekyll tags in head
+
+_includes/head.html
+
