@@ -22,6 +22,8 @@ This post uses the word manager, but the majority of topics are applicable all s
 
 
 
+
+
 <!-- vim-markdown-toc GFM -->
 
 - [What does a manager do?](#what-does-a-manager-do)
@@ -134,6 +136,9 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Great books](#great-books)
 
 <!-- vim-markdown-toc -->
+
+
+
 <!-- prettier-ignore-end -->
 
 ## What does a manager do?
@@ -222,6 +227,8 @@ Outputs:
 - Knowledge: Know critical parts of business, tech, org.
 
 ### What do managers do all day?
+
+<a id="l-what-managers-schedule"></a>
 
 _For non-managers, recall a manager's purpose is supporting others, not making stuff. As a result they have a [manager schedule, not a maker schedule](http://www.paulgraham.com/makers schedule.htm)._
 
@@ -1399,9 +1406,11 @@ Specific team members for engine, seat belts, etc
 
 ### What do you do all day?
 
+See [the managers schedule](#l-what-managers-schedule) section.
+
 ### What's the best/worst part of your job?
 
-I'd read through the [what do managers do]($l-what-managers-do) section.
+See [what do managers do](#l-what-managers-do) section.
 
 ### How do you get anything done with all of those meetings?
 
@@ -1413,7 +1422,32 @@ For tasks that require me to be heads down and [write/think](/write) I try to ge
 
 ### How can devs do to make managers job's easier?
 
+**Realize you and the team are a domain expert**
+
+Due to positional authority, managers statements can be overweighted. However, managers by not being immersed in the problem know the least. Remind the team, and yourself, that the manager knows the least about the tech, and their words should not be overweighted.
+
+**No surprises**
+
+- If stuff goes wrong share it ASAP, the manager would love to do the same
+- Discuss what you want and need, and if you're getting it
+
+**Give insight into places manager has no visibility**
+
+- When people are upset/demoralized/angry, often ICs know before managers as people don't tell managers. Sharing this with a manager is great so they can take action.
+- Give feedback, especially hard feedback.
+
 ### How does a dev find out if they’d be good at or enjoy being a manager?
+
+**Preview as much as you can:**
+
+- Intern
+- Mentor
+- Volunteer to do jobs for the manager
+- As a technical lead do some proto managing on behalf of the real Manager.
+
+**Be a strong IC first**
+
+Make sure you're a senior enough enginer before becoming a manager (AMZN - L6; FB - E6; MSFT - L65). Once you become a manager, your technical skill drops as most of your energy is focused on other tasks. So, if you don't have a strong enough base, you'll lose your ability to help assess and provide input on technical tasks.
 
 ### Why do managers always say coding is part of their job but we all know it isn’t?
 
