@@ -24,6 +24,10 @@ This post uses the word manager, but the majority of topics are applicable all s
 
 
 
+
+
+
+
 <!-- vim-markdown-toc GFM -->
 
 - [What does a manager do?](#what-does-a-manager-do)
@@ -136,9 +140,6 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Great books](#great-books)
 
 <!-- vim-markdown-toc -->
-
-
-
 <!-- prettier-ignore-end -->
 
 ## What does a manager do?
@@ -544,12 +545,11 @@ Other thoughts:
 
 ### How do you handle communication problems?
 
-The goal is not "communication style", but ability to influence, and I focus on that.
+High order bits:
 
-There are some things labelled communication problems, but they are much more serious and need immediate action:
-
-- Clarity of thought/intellectual horse power
-- Being a jerk
+1. Success is not "communication style", but ability to influence. Influence comes in many forms and mediums.
+1. Some things labelled communication problems, but they are much more serious and need to be handled differently. E.g. Lack of clarity of though/intellectual horse power and bieng a jerk.
+1. Focus on strengths is 3x as effective as shoring up weaknesses. Leverage strengths and partner with others to maximize influence.
 
 There are different types of communication problems each needing a different strategy:
 
@@ -557,12 +557,13 @@ There are different types of communication problems each needing a different str
 - Dominates Conversations
 - Abrasive communication style
 - Not listening to others
-- Written
+- Unclearn writing (too verbose, not enough context)
 - Verbal/ESL/Not comfortable with in-person verbal communications
-  - Toast masters
   - Pre-write thoughts
+  - Toast masters
   - Use pictures
   - Say not great on my feet, follow up with a document
+- Uncomfortable in group settings
 
 ### How do you handle promotion preparation (and fever)?
 
