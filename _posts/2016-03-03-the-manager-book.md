@@ -54,7 +54,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [How do you identify and grow potential managers?](#how-do-you-identify-and-grow-potential-managers)
     - [How did you grow top talent](#how-did-you-grow-top-talent)
     - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
-    - [Recall career is just one part of your life.](#recall-career-is-just-one-part-of-your-life)
+    - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
 - [Culture](#culture)
     - [What is your ideal culture?](#what-is-your-ideal-culture)
     - [How do you help a team gel](#how-do-you-help-a-team-gel)
@@ -631,23 +631,11 @@ Best practices for performance reviews:
   - Provide as much feedback to engineers after the process, owning the message.
   - Focus on growth plans (see above sections)
 
-### Recall career is just one part of your life.
+### Recall career is just one part of your life
 
-Often, when folks think of career development, they see a pie chart with 2 slices:
+Often, when folks think of career development, they fixate on their job title and compensation. Those aspects are important, but I encourage folks I support that career is only [one aspect of life](https://bit.ly/igor-wlb-manifesto), and they should look at their life holistically
 
-- Job Title
-- Compensation
-
-While that's relevant, I try to remind the folks I support that career is only [one aspect of life](https://bit.ly/igor-wlb-manifesto). As such I remind people the pie chart is much larger, it's more like:
-
-- Job Title
-- Compensation
-- Hobbies
-- Health
-- Relationships
-- Inner Peace
-
-_I know, I need to add the bar charts as well_
+{%include blob_image.html src="blog/career-convo.png" %}
 
 ## Culture
 
@@ -718,7 +706,11 @@ _I don't want to die knowing I spent too much time at work and I bet you don't e
 
 In the rare event you do want to die knowing you spent too much time at work, try to remember more hours rarely helps. In XKCD format:
 
-{%include mpl_render.html name="productivity" %}
+{%include blob_image.html src="blog/more-hours.svg" %}
+
+Equally important, when folks consider their career, I remind them there are more dimensions to their life, and they should think about their balance. There are some years and halfs where they want to focus on their career, and others where the focus will be family and health.
+
+{%include blob_image.html src="blog/career-convo.svg" %}
 
 ### How you deal with team disagrees with the leadership
 
