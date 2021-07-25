@@ -73,7 +73,6 @@
     "/makejoy": "/joy",
     "/makesmile": "/joy",
     "/manager": "/being-a-great-manager",
-    "/manager-book": "/the-manager-book",
     "/mechanism": "/upstream",
     "/meditate": "/siy",
     "/meditation": "/siy",
@@ -116,6 +115,7 @@
     "/td/machine-learning": "/ml",
     "/tft": "/toysfortots",
     "/the-dip": "/dip",
+    "/the-manager-book": "/manager-book",
     "/the-saw": "/sharpen-the-saw",
     "/thedip": "/dip",
     "/think": "/writing",
@@ -202,7 +202,7 @@
         "/shame",
         "/first-things-first"
       ],
-      "incoming_links": ["/the-manager-book", "/writing"],
+      "incoming_links": ["/manager-book", "/writing"],
       "redirect_url": "",
       "doc_size": 41000
     },
@@ -323,8 +323,8 @@
         "/bmy",
         "/eulogy",
         "/job",
-        "/software-leadership-roles",
-        "/the-manager-book"
+        "/manager-book",
+        "/software-leadership-roles"
       ],
       "redirect_url": "",
       "doc_size": 18000
@@ -377,7 +377,7 @@
         "/resistance",
         "/essentialism"
       ],
-      "incoming_links": ["/being-a-great-manager", "/the-manager-book"],
+      "incoming_links": ["/being-a-great-manager", "/manager-book"],
       "redirect_url": "",
       "doc_size": 13000
     },
@@ -431,8 +431,8 @@
       "incoming_links": [
         "/being-a-great-manager",
         "/job",
-        "/moments-at-work",
-        "/the-manager-book"
+        "/manager-book",
+        "/moments-at-work"
       ],
       "redirect_url": "",
       "doc_size": 24000
@@ -444,7 +444,7 @@
       "description": "Everyone can make a mistake once, that’s totally fine. Repeating mistakes is unacceptable. Correction of Errors (COE) is the name Amazon gives it’s mechanism for correcting errors. Microsoft uses the term Root cause analysis (RCA), it’s the same concept. This mechanism originated with service outages but can be applied for any “error”, like missing your sons kindergarden graduation, or getting fired.\n\n",
       "file_path": "_site/coe.html",
       "outgoing_links": [],
-      "incoming_links": ["/amazon", "/the-manager-book", "/writing"],
+      "incoming_links": ["/amazon", "/manager-book", "/writing"],
       "redirect_url": "",
       "doc_size": 12000
     },
@@ -455,7 +455,7 @@
       "description": "Different companies use different compensation models. To compare models use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon clips salary at 160K$/yr, and doesn’t have bonuses. Google vests stocks Monthly. Facebook bonuses have a company performance multiplier. At some companies signing bonuses can be over 100% of salary!\n\n",
       "file_path": "_site/comp.html",
       "outgoing_links": ["/pride", "/job-hunt-stress", "/pride"],
-      "incoming_links": ["/job-hunt-stress", "/the-manager-book"],
+      "incoming_links": ["/job-hunt-stress", "/manager-book"],
       "redirect_url": "",
       "doc_size": 21000
     },
@@ -714,10 +714,10 @@
         "/d/2017-04-09-igor-the-operating-manual",
         "/d/resistance",
         "/idle",
+        "/manager-book",
         "/psychic-weight",
         "/sharpen-the-saw",
-        "/switch",
-        "/the-manager-book"
+        "/switch"
       ],
       "redirect_url": "",
       "doc_size": 15000
@@ -819,8 +819,8 @@
         "/being-a-great-manager",
         "/coaching",
         "/job-hunt-stress",
-        "/pride",
-        "/the-manager-book"
+        "/manager-book",
+        "/pride"
       ],
       "redirect_url": "",
       "doc_size": 39000
@@ -1316,7 +1316,7 @@
         "/d/2017-04-09-igor-the-operating-manual",
         "/eulogy",
         "/job-hunt-stress",
-        "/the-manager-book"
+        "/manager-book"
       ],
       "redirect_url": "",
       "doc_size": 18000
@@ -1335,7 +1335,7 @@
         "/comp",
         "/decide"
       ],
-      "incoming_links": ["/bmy", "/comp", "/the-manager-book"],
+      "incoming_links": ["/bmy", "/comp", "/manager-book"],
       "redirect_url": "",
       "doc_size": 19000
     },
@@ -1367,6 +1367,57 @@
       ],
       "redirect_url": "",
       "doc_size": 15000
+    },
+    "/manager-book": {
+      "py/object": "__main__.Page",
+      "url": "/manager-book",
+      "title": "IGOR'S BOOK OF MANAGEMENT",
+      "description": "Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.\n\n",
+      "file_path": "_site/manager-book.html",
+      "outgoing_links": [
+        "/90days",
+        "/td/machine-learning",
+        "/td/cloud-first-applications",
+        "/td",
+        "/coaching",
+        "/coaching",
+        "/software-leadership-roles",
+        "/software-leadership-roles",
+        "/job-hunt-stress",
+        "/comp",
+        "/twentytwo",
+        "/moments-at-work",
+        "/coaching",
+        "/coaching",
+        "/remote-work",
+        "/habits",
+        "/coe",
+        "/coe",
+        "/static/igor-feedback-LinkedIn.pdf",
+        "/job",
+        "/what-makes-a-leader",
+        "/90days",
+        "/static/igor-feedback-LinkedIn.pdf",
+        "/job",
+        "/being-a-great-manager",
+        "/pride",
+        "/books",
+        "/coach",
+        "/decide",
+        "/strategy",
+        "/write",
+        "/parkinson",
+        "/books"
+      ],
+      "incoming_links": [
+        "/amazon",
+        "/being-a-great-manager",
+        "/coaching",
+        "/d/2017-04-09-igor-the-operating-manual",
+        "/dsat"
+      ],
+      "redirect_url": "",
+      "doc_size": 122000
     },
     "/mental-pain": {
       "py/object": "__main__.Page",
@@ -1458,7 +1509,7 @@
       "description": "ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).\n\n",
       "file_path": "_site/ml.html",
       "outgoing_links": ["/pandas", "/nlp"],
-      "incoming_links": ["/td/stats", "/the-manager-book"],
+      "incoming_links": ["/manager-book", "/td/stats"],
       "redirect_url": "",
       "doc_size": 39000
     },
@@ -1483,8 +1534,8 @@
       "incoming_links": [
         "/being-a-great-manager",
         "/job",
-        "/moments",
-        "/the-manager-book"
+        "/manager-book",
+        "/moments"
       ],
       "redirect_url": "",
       "doc_size": 15000
@@ -1546,8 +1597,8 @@
       "outgoing_links": ["/amazon", "/money", "/time-off"],
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
-        "/money",
-        "/the-manager-book"
+        "/manager-book",
+        "/money"
       ],
       "redirect_url": "",
       "doc_size": 14000
@@ -1586,10 +1637,10 @@
         "/being-a-great-manager",
         "/coaching",
         "/comp",
+        "/manager-book",
         "/mental-pain",
         "/mind-monsters",
-        "/psychic-weight",
-        "/the-manager-book"
+        "/psychic-weight"
       ],
       "redirect_url": "",
       "doc_size": 17000
@@ -1652,7 +1703,7 @@
       "description": "In March 2020, the world shut down from Covid 19. In May 2020, I started a new job as a remote manager at FB. Here are my thoughts\n\n",
       "file_path": "_site/remote-work.html",
       "outgoing_links": [],
-      "incoming_links": ["/the-manager-book"],
+      "incoming_links": ["/manager-book"],
       "redirect_url": "",
       "doc_size": 17000
     },
@@ -1771,7 +1822,7 @@
       "description": "The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of difference I’ve found is below copied from Quora. In this classification I like to run a team small enough that I have time to be both an engineering manager and software architect.\n\n",
       "file_path": "_site/software-leadership-roles.html",
       "outgoing_links": ["/being-a-great-manager"],
-      "incoming_links": ["/job", "/the-manager-book"],
+      "incoming_links": ["/job", "/manager-book"],
       "redirect_url": "",
       "doc_size": 14000
     },
@@ -1782,7 +1833,7 @@
       "description": "Strategy is creating fit among a company’s activities. The success of a strategy depends on doing many things well and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and improving operational effectiveness, a race to the bottom.\n\n",
       "file_path": "_site/strategy.html",
       "outgoing_links": [],
-      "incoming_links": ["/the-manager-book"],
+      "incoming_links": ["/manager-book"],
       "redirect_url": "",
       "doc_size": 20000
     },
@@ -1894,7 +1945,7 @@
       "outgoing_links": [],
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
-        "/the-manager-book"
+        "/manager-book"
       ],
       "redirect_url": "",
       "doc_size": 22000
@@ -2160,57 +2211,6 @@
       "redirect_url": "",
       "doc_size": 13000
     },
-    "/the-manager-book": {
-      "py/object": "__main__.Page",
-      "url": "/the-manager-book",
-      "title": "IGOR'S BOOK OF MANAGEMENT",
-      "description": "Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.\n\n",
-      "file_path": "_site/the-manager-book.html",
-      "outgoing_links": [
-        "/90days",
-        "/td/machine-learning",
-        "/td/cloud-first-applications",
-        "/td",
-        "/coaching",
-        "/coaching",
-        "/software-leadership-roles",
-        "/software-leadership-roles",
-        "/job-hunt-stress",
-        "/comp",
-        "/twentytwo",
-        "/moments-at-work",
-        "/coaching",
-        "/coaching",
-        "/remote-work",
-        "/habits",
-        "/coe",
-        "/coe",
-        "/static/igor-feedback-LinkedIn.pdf",
-        "/job",
-        "/what-makes-a-leader",
-        "/90days",
-        "/static/igor-feedback-LinkedIn.pdf",
-        "/job",
-        "/being-a-great-manager",
-        "/pride",
-        "/books",
-        "/coach",
-        "/decide",
-        "/strategy",
-        "/write",
-        "/parkinson",
-        "/books"
-      ],
-      "incoming_links": [
-        "/amazon",
-        "/being-a-great-manager",
-        "/coaching",
-        "/d/2017-04-09-igor-the-operating-manual",
-        "/dsat"
-      ],
-      "redirect_url": "",
-      "doc_size": 121000
-    },
     "/the-recruiter-does-not-think-you-are-hot": {
       "py/object": "__main__.Page",
       "url": "/the-recruiter-does-not-think-you-are-hot",
@@ -2330,7 +2330,7 @@
       "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
       "file_path": "_site/what-i-wish-knew-at-22.html",
       "outgoing_links": [],
-      "incoming_links": ["/the-manager-book"],
+      "incoming_links": ["/manager-book"],
       "redirect_url": "",
       "doc_size": 11000
     },
@@ -2341,7 +2341,7 @@
       "description": "Emotional intelligence (EI) is the crux of leadership. EI is comprised of Self-Awareness, Self-Regulation, Motivation, Empathy and Social Skills. This is a summary of Dan Goleman’s What makes a leader. Before we begin, here’s a consulting 2x2 grid:\n\n",
       "file_path": "_site/what-makes-a-leader.html",
       "outgoing_links": [],
-      "incoming_links": ["/siy", "/the-manager-book"],
+      "incoming_links": ["/manager-book", "/siy"],
       "redirect_url": "",
       "doc_size": 11000
     },
@@ -2387,7 +2387,7 @@
       "incoming_links": [
         "/amazon",
         "/d/2017-04-09-igor-the-operating-manual",
-        "/the-manager-book"
+        "/manager-book"
       ],
       "redirect_url": "",
       "doc_size": 27000
