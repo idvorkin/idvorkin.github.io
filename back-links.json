@@ -510,18 +510,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
-    },
-    "/d/2015-11-18-what-is-strategy": {
-      "py/object": "__main__.Page",
-      "url": "/d/2015-11-18-what-is-strategy",
-      "title": "ON STRATEGY",
-      "description": "Strategy is creating fit among a company’s activities. The success of a strategy depends on doing many things well and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and improving operational effectiveness, a race to the bottom.\n\n",
-      "file_path": "_site/d/2015-11-18-what-is-strategy.html",
-      "outgoing_links": [],
-      "incoming_links": [],
-      "redirect_url": "",
-      "doc_size": 19000
+      "doc_size": 12000
     },
     "/d/2016-02-03-positive-computing-survey": {
       "py/object": "__main__.Page",
@@ -834,7 +823,7 @@
         "/the-manager-book"
       ],
       "redirect_url": "",
-      "doc_size": 38000
+      "doc_size": 39000
     },
     "/defi": {
       "py/object": "__main__.Page",
@@ -1786,6 +1775,17 @@
       "redirect_url": "",
       "doc_size": 14000
     },
+    "/strategy": {
+      "py/object": "__main__.Page",
+      "url": "/strategy",
+      "title": "ON STRATEGY",
+      "description": "Strategy is creating fit among a company’s activities. The success of a strategy depends on doing many things well and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and improving operational effectiveness, a race to the bottom.\n\n",
+      "file_path": "_site/strategy.html",
+      "outgoing_links": [],
+      "incoming_links": ["/the-manager-book"],
+      "redirect_url": "",
+      "doc_size": 20000
+    },
     "/strength-finder": {
       "py/object": "__main__.Page",
       "url": "/strength-finder",
@@ -1839,7 +1839,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 19000
+      "doc_size": 20000
     },
     "/td/advertising": {
       "py/object": "__main__.Page",
@@ -2185,6 +2185,8 @@
         "/habits",
         "/coe",
         "/coe",
+        "/static/igor-feedback-LinkedIn.pdf",
+        "/job",
         "/what-makes-a-leader",
         "/90days",
         "/static/igor-feedback-LinkedIn.pdf",
@@ -2194,6 +2196,7 @@
         "/books",
         "/coach",
         "/decide",
+        "/strategy",
         "/write",
         "/parkinson",
         "/books"
@@ -2206,7 +2209,7 @@
         "/dsat"
       ],
       "redirect_url": "",
-      "doc_size": 112000
+      "doc_size": 121000
     },
     "/the-recruiter-does-not-think-you-are-hot": {
       "py/object": "__main__.Page",
@@ -2329,7 +2332,7 @@
       "outgoing_links": [],
       "incoming_links": ["/the-manager-book"],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/what-makes-a-leader": {
       "py/object": "__main__.Page",
