@@ -54,6 +54,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [How do you identify and grow potential managers?](#how-do-you-identify-and-grow-potential-managers)
     - [How did you grow top talent](#how-did-you-grow-top-talent)
     - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
+    - [Recall career is just one part of your life.](#recall-career-is-just-one-part-of-your-life)
 - [Culture](#culture)
     - [What is your ideal culture?](#what-is-your-ideal-culture)
     - [How do you help a team gel](#how-do-you-help-a-team-gel)
@@ -629,6 +630,24 @@ Best practices for performance reviews:
   - No surprises to the engineers, they should already be aware of their rating as it's been provided consistently.
   - Provide as much feedback to engineers after the process, owning the message.
   - Focus on growth plans (see above sections)
+
+### Recall career is just one part of your life.
+
+Often, when folks think of career development, they see a pie chart with 2 slices:
+
+- Job Title
+- Compensation
+
+While that's relevant, I try to remind the folks I support that career is only [one aspect of life](https://bit.ly/igor-wlb-manifesto). As such I remind people the pie chart is much larger, it's more like:
+
+- Job Title
+- Compensation
+- Hobbies
+- Health
+- Relationships
+- Inner Peace
+
+_I know, I need to add the bar charts as well_
 
 ## Culture
 
