@@ -158,3 +158,62 @@ There will be constant pressures to compromise, relax trade-offs, and emulate ri
 Strategy renders choices about what not to do as important as choices about what to do. Indeed, setting limits is another function of leadership. Deciding which target group of customers, varieties, and needs the company should serve is fundamental to developing a strategy.
 
 Indeed, one of the most important functions of an explicit, communicated strategy is to guide employees in making choices that arise because of trade-offs in their individual activities and in day-to-day decisions.
+
+### VI. Strategy in Tech
+
+#### The Four
+
+The four is a fantastic book describing the value of the FANG companies.
+
+- Google is the brain
+- Amazon is the belly
+- Facebook is the heart
+- Apple is the sex drive
+
+{%include blob_image.html src="marketcap.png" %}
+
+#### Stratechary
+
+- Aggregator theory
+- Disruption theory
+- Horizontal vs Vertical Integration
+
+#### By company
+
+Zillow:
+
+- Mortgage
+- Zillow Offers
+
+Facebook:
+
+- AR/VR
+- Messengers
+- Portal
+
+Google:
+
+- Advertising
+- YouTube
+
+Amazon:
+
+- AWS
+- Retail
+- Alexa
+
+Microsoft:
+
+- Linked In
+- Open Source
+- Productivity
+- Azure
+- Windows
+- Windows Phone
+- Developer Tools
+
+Apple:
+
+- Hardware or Services
+- The App Store
+- The Physical Store
