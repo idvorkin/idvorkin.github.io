@@ -8,6 +8,7 @@ tags:
   - strategy
 inprogress: true
 collapsable: true
+permalink: /strategy
 ---
 
 Strategy is creating fit among a company's activities. The success of a strategy depends on doing many things well and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and improving operational effectiveness, a race to the bottom.
