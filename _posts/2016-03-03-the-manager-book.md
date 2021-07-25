@@ -79,7 +79,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Defining Success - How does goal setting work](#defining-success---how-does-goal-setting-work)
     - [How do you do planning and come up with roadmaps.](#how-do-you-do-planning-and-come-up-with-roadmaps)
     - [How does resource allocation work?](#how-does-resource-allocation-work)
-    - [Group Bonding](#group-bonding)
+    - [The road building analogy to software development roles.](#the-road-building-analogy-to-software-development-roles)
 - [Hiring](#hiring)
     - [What are you looking for when you recruit?](#what-are-you-looking-for-when-you-recruit)
     - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
@@ -110,12 +110,8 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [What is Igor's career aspiration?](#what-is-igors-career-aspiration)
     - [Why do you think Igor is a good coach?](#why-do-you-think-igor-is-a-good-coach)
     - [Why do you prefer being a manager vs an IC.](#why-do-you-prefer-being-a-manager-vs-an-ic)
-    - [The road building analogy to software development roles.](#the-road-building-analogy-to-software-development-roles)
     - [What if managers memorize these answers for interviews.](#what-if-managers-memorize-these-answers-for-interviews)
 - [Business Acumen and Strategy](#business-acumen-and-strategy)
-    - [The Four](#the-four)
-    - [Stratechary](#stratechary)
-    - [By company](#by-company)
 - [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
     - [Piniata](#piniata)
     - [A project is car with a EM, PM and TL](#a-project-is-car-with-a-em-pm-and-tl)
@@ -884,7 +880,15 @@ There are some more concepts I need to flesh out:
 
 **Keeping slack in the system** Anxiety is the difference between reality and expectations. Slack is the tool that helps us better model reality.
 
-### Group Bonding
+### The road building analogy to software development roles.
+
+Imagine we want to build a new road.
+
+1. Start of time: PM figures out there's a market for a road, and the needs of the customer, and comes up with a rough idea of where the road needs to be between.
+1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or somewhere else as other folks have tried digging their, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper
+1. After: Senior Engineers come in and start figuring out where they'll build, what's the safest path, and what's a realistic schedule
+1. After: Intermediate dev's are assigned a small junk of the road and start building it.
+1. After: Junior devs are given very clear tasks, and start doing them
 
 ## Hiring
 
@@ -1305,16 +1309,6 @@ As an IC, it's almost backwards, the day to day is fun. Coding, design, debuggin
 
 So, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day to day joy of being an engineer.
 
-### The road building analogy to software development roles.
-
-Imagine we want to build a new road.
-
-1. Start of time: PM figures out there's a market for a road, and the needs of the customer, and comes up with a rough idea of where the road needs to be between.
-1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or somewhere else as other folks have tried digging their, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper
-1. After: Senior Engineers come in and start figuring out where they'll build, what's the safest path, and what's a realistic schedule
-1. After: Intermediate dev's are assigned a small junk of the road and start building it.
-1. After: Junior devs are given very clear tasks, and start doing them
-
 At each stage of road productions things go wrong and we learn new stuff. TODO Come up with more examples
 
 ### What if managers memorize these answers for interviews.
@@ -1325,62 +1319,9 @@ Good interviewers (and manager interviews better be good) need to be able to dif
 
 ## Business Acumen and Strategy
 
-### The Four
+My note on [Strategy](/strategy), including the strategic position of various companies:
 
-The four is a fantastic book describing the value of the FANG companies.
-
-- Google is the brain
-- Amazon is the belly
-- Facebook is the heart
-- Apple is the sex drive
-
-{%include blob_image.html src="marketcap.png" %}
-
-### Stratechary
-
-- Aggregator theory
-- Disruption theory
-- Horizontal vs Vertical Integration
-
-### By company
-
-Zillow:
-
-- Mortgage
-- Zillow Offers
-
-Facebook:
-
-- AR/VR
-- Messengers
-- Portal
-
-Google:
-
-- Advertising
-- YouTube
-
-Amazon:
-
-- AWS
-- Retail
-- Alexa
-
-Microsoft:
-
-- Linked In
-- Open Source
-- Productivity
-- Azure
-- Windows
-- Windows Phone
-- Developer Tools
-
-Apple:
-
-- Hardware or Services
-- The App Store
-- The Physical Store
+_Strategy is creating fit among a company's activities. The success of a strategy depends on doing many things well and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and improving operational effectiveness, a race to the bottom._
 
 ## Analogies to be fleshed out
 
