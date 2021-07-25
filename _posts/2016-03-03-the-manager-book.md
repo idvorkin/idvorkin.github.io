@@ -5,8 +5,9 @@ date: "2019-11-05 00:56:07 +0000"
 imagefeature: https://github.com/idvorkin/blob/raw/master/idvorkin-manager-book-1200-628.png
 tags:
   - manager
+permalink: /manager-book
 redirect_from:
-  - /manager-book
+  - /the-manager-book
 ---
 
 Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.
@@ -14,6 +15,7 @@ Managing is hard. Lessons are hard earned and should be cherished. This post is 
 This post uses the word manager, but the majority of topics are applicable all software job functions regardless of seniority or the number of direct reports, zero direct reports included.
 
 <!-- prettier-ignore-start -->
+
 
 
 
