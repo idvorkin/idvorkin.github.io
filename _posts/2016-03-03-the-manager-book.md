@@ -310,9 +310,9 @@ SDMs should be reading code occasionally:
 
 Lots, but these 3 are probably high on the list:
 
-1/ How much time is spent in outages/livesite/maintenance (don't forget to include time that should be but isn't due to lack of monitoring)
-2/ How often can developers check in?
-3/ How long does it take for a change to get to production.
+1. How much time is spent in outages/livesite/maintenance (don't forget to include time that should be but isn't due to lack of monitoring)
+2. How often can developers check in?
+3. How long does it take for a change to get to production.
 
 ## Managing and Developing People
 
