@@ -42,6 +42,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [What do managers do all day?](#what-do-managers-do-all-day)
     - [Should managers be technical?](#should-managers-be-technical)
     - [Should managers code?](#should-managers-code)
+    - [What engineering efficiency metrics should a manager monitor.](#what-engineering-efficiency-metrics-should-a-manager-monitor)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you coach?](#how-do-you-coach)
     - [What mechanisms do you have to ensure career development.](#what-mechanisms-do-you-have-to-ensure-career-development)
@@ -304,6 +305,14 @@ SDMs should be reading code occasionally:
 1. Spot checking - SDMs should have a good "something is fishy" intuition, and should be able to independently and discreetly prove or disprove their intuition.
 1. Assessing people - Code is a major deliverable for developers and should be inspected as part of people assessment.
 1. Deep dive during major outages - In high risk, time critical situations like outages, you want your best people reviewing the changes, and this includes SDMs. If an SDM can't understand a high risk time sensitive code change, it can be, and should be simplified.
+
+### What engineering efficiency metrics should a manager monitor.
+
+Lots, but these 3 are probably high on the list:
+
+1/ How much time is spent in outages/livesite/maintenance (don't forget to include time that should be but isn't due to lack of monitoring)
+2/ How often can developers check in?
+3/ How long does it take for a change to get to production.
 
 ## Managing and Developing People
 
