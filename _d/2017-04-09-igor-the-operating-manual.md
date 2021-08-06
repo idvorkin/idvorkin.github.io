@@ -19,10 +19,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 - [Joining Facebook](#joining-facebook)
 - [Joining Amazon](#joining-amazon)
-    - [Realistic expectations for a new leader](#realistic-expectations-for-a-new-leader)
-    - [IC skills to develop](#ic-skills-to-develop)
-    - [Manager skill to develop](#manager-skill-to-develop)
-    - [Dream Job](#dream-job)
+- [Dream Job](#dream-job)
     - [My super powers](#my-super-powers)
         - [Relationships](#relationships)
         - [Technical Depth and Breadth](#technical-depth-and-breadth)
@@ -69,38 +66,11 @@ In mid 2020, I joined [Facebook](/facebook) and it has been an absolute pleasure
 
 ## Joining Amazon
 
-At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years and it was a tough transition. Here are some things I needed to remind myself:
+At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years and it was a tough transition.
 
-### Realistic expectations for a new leader
+## [Dream Job](/dream-job)
 
-Here are some things I needed to remind myself as I was working through my own [insecurity and imposter syndrome](/insecurity):
-
-- I don't know how Amazon works - Duh, I was at my last job, Microsoft for 15 years, knew how everything worked, learned how everything evolved to where it was, and knew enough people to always be able to get done what I wanted.
-- Leaders take a while to ramp up - that's why you end up with signing bonuses.
-- It'll take a while to learn new skills
-- Amazon is a very different culture from Microsoft. Sometimes I don't even realize I'm swimming against the current.
-
-### IC skills to develop
-
-- [Business Writing](/writing)
-- [Design](/td/design)
-- [Cloud first applications and SOA](/td/cloud-first-applications)
-- [Data Systems](/td/data-systems)
-
-### Manager skill to develop
-
-From [Igor's book of manager](/the-manager-book):
-
-_Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement._
-
-As a new manager at Amazon, my top priorities:
-
-- Hiring
-- Growing my people
-- Defining Success Qualitatively and Quantitatively.
-- Setting the vision for the team
-
-### [Dream Job](/dream-job)
+In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.
 
 ### My super powers
 
