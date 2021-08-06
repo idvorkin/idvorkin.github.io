@@ -9,9 +9,7 @@ redirect-from:
 
 A collection of tips, tricks and pointers of the various tools i use
 
-<!--
-Not using prettier ignore gaurds as vimtoc gets confused here.
--->
+<!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Major Research and Project List](#major-research-and-project-list)
@@ -26,18 +24,18 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [Apple](#apple)
 - [Home Automation](#home-automation)
 - [Text manipulation tools](#text-manipulation-tools)
-  - [jq](#jq)
-  - [Pup - regexp For HTML](#pup---regexp-for-html)
+    - [jq](#jq)
+    - [Pup - regexp For HTML](#pup---regexp-for-html)
 - [Cool shell tools](#cool-shell-tools)
 - [Process Monitoring](#process-monitoring)
 - [Natural Language Processing](#natural-language-processing)
 - [Azure One Liners](#azure-one-liners)
-  - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
+    - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
 - [git](#git)
-  - [Colorized Diff - delta](#colorized-diff---delta)
-  - [TUI Client - lazygit/tig](#tui-client---lazygittig)
-  - [Git Stats](#git-stats)
-  - [TUI merge - fac](#tui-merge---fac)
+    - [Colorized Diff - delta](#colorized-diff---delta)
+    - [TUI Client - lazygit/tig](#tui-client---lazygittig)
+    - [Git Stats](#git-stats)
+    - [TUI merge - fac](#tui-merge---fac)
 - [GitHub](#github)
 - [SSH](#ssh)
 - [TMUX](#tmux)
@@ -45,33 +43,34 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 - [App Launchers](#app-launchers)
 - [Chrome extensions](#chrome-extensions)
 - [Web tools (http)](#web-tools-http)
-  - [wuzz](#wuzz)
-  - [httplab](#httplab)
-  - [httpie](#httpie)
-  - [httpprompt](#httpprompt)
-  - [Link Checkers](#link-checkers)
-  - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
-  - [w3m - Text based web browser](#w3m---text-based-web-browser)
+    - [wuzz](#wuzz)
+    - [httplab](#httplab)
+    - [httpie](#httpie)
+    - [httpprompt](#httpprompt)
+    - [Link Checkers](#link-checkers)
+    - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
+    - [w3m - Text based web browser](#w3m---text-based-web-browser)
 - [Video Manipulation Tools](#video-manipulation-tools)
 - [Linters and formatters](#linters-and-formatters)
 - [Switching between Unix and DOS file ending](#switching-between-unix-and-dos-file-ending)
 - [Spelling](#spelling)
 - [Web scripting](#web-scripting)
 - [Programming Helpers](#programming-helpers)
-  - [howdoi](#howdoi)
+    - [howdoi](#howdoi)
 - [PlantUML alternatives](#plantuml-alternatives)
 - [PlantUML](#plantuml)
-  - [PlantUML Tools](#plantuml-tools)
-  - [PlantUML in Markdown](#plantuml-in-markdown)
-  - [Quirks](#quirks)
+    - [PlantUML Tools](#plantuml-tools)
+    - [PlantUML in Markdown](#plantuml-in-markdown)
+    - [Quirks](#quirks)
 - [Windows Managers](#windows-managers)
 - [ClI Fun](#cli-fun)
 - [CLI Screen Recoding](#cli-screen-recoding)
-  - [Show pressed keys](#show-pressed-keys)
+    - [Show pressed keys](#show-pressed-keys)
 - [OSX Misc](#osx-misc)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ### Major Research and Project List
 
@@ -81,7 +80,7 @@ My various [projects and research](/td)
 
 Over time, I collected many of the tools below, but now this github project collects them all:
 
-https://github.com/ibraheemdev/modern-unix
+[Modern Unix](https://github.com/ibraheemdev/modern-unix)
 
 ### Build your own X
 
