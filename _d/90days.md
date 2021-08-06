@@ -17,6 +17,7 @@ A how to guide for starting your next job.
     - [What got you here won't get you there](#what-got-you-here-wont-get-you-there)
     - [Assimilating yourself](#assimilating-yourself)
     - [Be Curious](#be-curious)
+    - [My personal learnings joining Amazon](#my-personal-learnings-joining-amazon)
 - [2. Accelerate Your Learning](#2-accelerate-your-learning)
     - [What keeps you from learning](#what-keeps-you-from-learning)
     - [What you need to ship - the proven hypothesis](#what-you-need-to-ship---the-proven-hypothesis)
@@ -85,6 +86,17 @@ Why people fail to make the mental break from their old jobs. Preparing to take 
 #### Assimilating yourself
 
 #### Be [Curious](/grandmother)
+
+#### My personal learnings joining Amazon
+
+At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years and it was a tough transition.
+
+Here are some mantras I needed to remind myself while working through my [insecurity and imposter syndrome](/insecurity). It will likely sound familiar for you.
+
+- I don't know how Amazon works - Duh, I was at my last job, Microsoft for 15 years, knew how everything worked, learned how everything evolved to where it was, and knew enough people to always be able to get done what I wanted.
+- Leaders take a while to ramp up - that's why they get signing bonuses.
+- Learning new skills and cultures is slow, be gentle on yourself.
+- Amazon is a very different culture from Microsoft. Sometimes I don't even realize I'm swimming against the current.
 
 ### 2. Accelerate Your Learning
 
