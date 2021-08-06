@@ -15,6 +15,7 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 <!-- vim-markdown-toc GFM -->
 
 - [Major Research and Project List](#major-research-and-project-list)
+- [Modern Unix](#modern-unix)
 - [Build your own X](#build-your-own-x)
 - [Markdown](#markdown)
 - [VIM](#vim)
@@ -75,6 +76,12 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 ### Major Research and Project List
 
 My various [projects and research](/td)
+
+### Modern Unix
+
+Over time, I collected many of the tools below, but now this github project collects them all:
+
+https://github.com/ibraheemdev/modern-unix
 
 ### Build your own X
 
