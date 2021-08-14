@@ -85,6 +85,7 @@ Post mortems
 ## Quotes:
 
 - Half the pressure, twice the speed - do it without stress/pressure, but do it quickly.
+- Length of minute depends on what side of the bathroom you are in
 
 Focusing on quality of life
 
