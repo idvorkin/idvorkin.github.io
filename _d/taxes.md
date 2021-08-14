@@ -15,50 +15,50 @@ redirect_from:
 Most of the tax information on the web is a mess. It's confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes
 
 <!-- prettier-ignore-start -->
-<!-- prettier-ignore-end -->
 
 <!-- vim-markdown-toc GFM -->
 
 - [Assumptions and Hannah](#assumptions-and-hannah)
 - [IRAs Non-Taxable Saving Accounts](#iras-non-taxable-saving-accounts)
-  - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
-  - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
-  - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
-  - [IRAs vs 401Ks](#iras-vs-401ks)
-  - [IRA vs Roth IRA](#ira-vs-roth-ira)
-  - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
-  - [Back door Roth.](#back-door-roth)
-  - [The pro-Rata rule.](#the-pro-rata-rule)
-  - [529s](#529s)
+    - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
+    - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
+    - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
+    - [IRAs vs 401Ks](#iras-vs-401ks)
+    - [IRA vs Roth IRA](#ira-vs-roth-ira)
+    - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
+    - [Back door Roth.](#back-door-roth)
+    - [The pro-Rata rule.](#the-pro-rata-rule)
+    - [529s](#529s)
 - [Rates Taxes and Savings](#rates-taxes-and-savings)
-  - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
-  - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
-  - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
-  - [No load index funds](#no-load-index-funds)
-  - [Unexpected expenses](#unexpected-expenses)
-  - [Stock options](#stock-options)
-    - [Sell a Put Option](#sell-a-put-option)
-    - [Buy a Put Option](#buy-a-put-option)
-    - [Uncovered vs Covered](#uncovered-vs-covered)
-    - [Selling your options early](#selling-your-options-early)
-    - [Put vs Call](#put-vs-call)
-    - [Play safe - Guaranteed minimum value of unvested stock awards - buy a put](#play-safe---guaranteed-minimum-value-of-unvested-stock-awards---buy-a-put)
-    - [The company can't go up that high - sell a put](#the-company-cant-go-up-that-high---sell-a-put)
-    - [Summary](#summary)
+    - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
+    - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
+    - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
+    - [No load index funds and ETFs](#no-load-index-funds-and-etfs)
+    - [Unexpected expenses](#unexpected-expenses)
+    - [Stock options](#stock-options)
+        - [Sell a Put Option](#sell-a-put-option)
+        - [Buy a Put Option](#buy-a-put-option)
+        - [Uncovered vs Covered](#uncovered-vs-covered)
+        - [Selling your options early](#selling-your-options-early)
+        - [Put vs Call](#put-vs-call)
+        - [Play safe - Guaranteed minimum value of unvested stock awards - buy a put](#play-safe---guaranteed-minimum-value-of-unvested-stock-awards---buy-a-put)
+        - [The company can't go up that high - sell a put](#the-company-cant-go-up-that-high---sell-a-put)
+        - [Summary](#summary)
 - [Philosophy](#philosophy)
-  - [The point of money](#the-point-of-money)
-    - [What would you do for less money?](#what-would-you-do-for-less-money)
-    - [Making more vs spending more](#making-more-vs-spending-more)
-  - [Believing the market only goes up](#believing-the-market-only-goes-up)
-  - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
-  - [Generational wealth and camels](#generational-wealth-and-camels)
-  - [Timing the markets](#timing-the-markets)
-  - [The unquenchable thirst](#the-unquenchable-thirst)
+    - [The point of money](#the-point-of-money)
+        - [What would you do for less money?](#what-would-you-do-for-less-money)
+        - [Making more vs spending more](#making-more-vs-spending-more)
+    - [Believing the market only goes up](#believing-the-market-only-goes-up)
+    - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
+    - [Generational wealth and camels](#generational-wealth-and-camels)
+    - [Timing the markets](#timing-the-markets)
+    - [The unquenchable thirst](#the-unquenchable-thirst)
 - [Other questions](#other-questions)
-  - [How much is 1%](#how-much-is-1)
+    - [How much is 1%](#how-much-is-1)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## Assumptions and Hannah
 
@@ -66,10 +66,10 @@ You're in the same boat as Hannah. A normal software engineer at big companies w
 
 **Hannah** assumptions:
 
-    * Has a 401k with her company which she maxes annually
-    * Ineligible for Roth deductions
-    * Marginal tax rate of 35%
-    * Long Term Capital Gains  Rates of 15%
+* Has a 401k with her company which she maxes annually
+* Ineligible for Roth deductions
+* Marginal tax rate of 35%
+* Long Term Capital Gains  Rates of 15%
 
 ## IRAs Non-Taxable Saving Accounts
 
@@ -153,11 +153,19 @@ Below is tax rate by income in 2020.
 Often, we think about holding cash, and think about holding it in a place with no interest. Keep this money in high yield bank accounts, which can give [close to 2% (as of Dec '19)](https://www.nerdwallet.com/best/banking/high-yield-online-savings-accounts)
 At Fidelity you can keep your core cash in a liquid low risk mutual fund [SPAXX](https://fundresearch.fidelity.com/mutual-funds/summary/31617H102), however this has a 0.42% expense ratio, which will eat 25% - 50% of your earned interest.
 
-### No load index funds
+### No load index funds and ETFs
 
-Funds with zero fees. Usually a broad index fund like Fidelity Zero FZROX and FZILX. Could be a Mutual Fund or ETF. So long as the fees are zero you tend not to care if it's a Mutual Fund or ETF, however the ETF has the advantage that you can sell at any point during the day, vs at the end of the day. However, given you're not timing the market this doesn't matter.
+Funds with zero or almost zero fees. Usually a broad index fund like Fidelity's FZROX and FZILX or an ETF like VTI and ITOT (Note these ETFs have a 0.003% fee, or 300/1,000,000).
 
-If you prefer ETFs, consider VTI - which has a 0.03% fee, which is only 300\$ per 1,000,000
+ETFs and Mutual Funds (MF) differ primarily in how they handle [Capital Gains and Dividends](https://www.bogleheads.org/forum/viewtopic.php?t=296821).
+
+With an ETF, you pay all capital gains when you sell, meaning you have control to avoid short term capital gains, and potentially long term capital gains when you're at 20% (vs 15%).
+
+With MFs they need to have a capital gains distribution annually as they re-balance the fund. This matters because you need to pay the capital gains on behalf of the mutual fund at distribution time. The capital gains might be short term depending on when the fund bought and sold individual stocks.
+
+Digging a bit deeper, it seems like there are Mutal Fund strategies to [avoid capital gains distributions](https://www.bloomberg.com/graphics/2019-vanguard-mutual-fund-tax-dodge/), but I didn't make the time to understand how effective they are. If I understand this correctly, its possible FZROX is using a similar strategy as there were [no capital gains distributions in 2020](https://www.wsj.com/market-data/quotes/mutualfund/FZROX), though there were in 2018-2019.
+
+It seems both ETFs and MFs need to distribute dividends, which are often taxed as income. I don't understand why they can't directly re-invest it.
 
 ### Unexpected expenses
 
