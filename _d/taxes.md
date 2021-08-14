@@ -155,7 +155,7 @@ At Fidelity you can keep your core cash in a liquid low risk mutual fund [SPAXX]
 
 ### No load index funds and ETFs
 
-Funds with zero or almost zero fees. Usually a broad index fund like Fidelity's FZROX and FZILX or an ETF like VTI and ITOT (Note these ETFs have a 0.003% fee, or 300/1,000,000).
+Funds with zero or almost zero fees. Usually a broad index fund like Fidelity's FZROX and FZILX or an ETF like VTI and ITOT (Note these ETFs have a 0.03% fee, or 300/1,000,000).
 
 ETFs and Mutual Funds (MF) differ primarily in how they handle [Capital Gains and Dividends](https://www.bogleheads.org/forum/viewtopic.php?t=296821).
 
