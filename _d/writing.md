@@ -29,7 +29,7 @@ Useful writing tells people something true and important that they didn't alread
     - [Diagrams](#diagrams)
 - [Writing to be Understood](#writing-to-be-understood)
     - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
-    - [The  Pixar Formula:](#the--pixar-formula)
+    - [The Pixar Formula:](#the-pixar-formula)
     - [The Hero's Journey Formula:](#the-heros-journey-formula)
     - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
     - [The crappy modern business book](#the-crappy-modern-business-book)
