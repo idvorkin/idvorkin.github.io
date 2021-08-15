@@ -198,13 +198,16 @@
       "file_path": "_site/90days.html",
       "outgoing_links": [
         "/grandmother",
+        "/amazon",
+        "/writing",
+        "/insecurity",
         "/insecure",
         "/shame",
         "/first-things-first"
       ],
       "incoming_links": ["/manager-book", "/writing"],
       "redirect_url": "",
-      "doc_size": 41000
+      "doc_size": 43000
     },
     "/about": {
       "py/object": "__main__.Page",
@@ -244,18 +247,22 @@
       "outgoing_links": [
         "/writing",
         "/coe",
-        "/writing",
         "/coe",
+        "/writing",
+        "/td/design",
+        "/td/cloud-first-applications",
+        "/td/data-systems",
         "/the-manager-book",
         "/tft"
       ],
       "incoming_links": [
+        "/90days",
         "/d/2017-04-09-igor-the-operating-manual",
         "/parkinson",
         "/writing"
       ],
       "redirect_url": "",
-      "doc_size": 24000
+      "doc_size": 25000
     },
     "/anxiety": {
       "py/object": "__main__.Page",
@@ -432,7 +439,8 @@
         "/being-a-great-manager",
         "/job",
         "/manager-book",
-        "/moments-at-work"
+        "/moments-at-work",
+        "/writing"
       ],
       "redirect_url": "",
       "doc_size": 24000
@@ -610,12 +618,6 @@
         "/facebook",
         "/amazon",
         "/writing",
-        "/insecurity",
-        "/writing",
-        "/td/design",
-        "/td/cloud-first-applications",
-        "/td/data-systems",
-        "/the-manager-book",
         "/dream-job",
         "/habits",
         "/physical-health",
@@ -635,7 +637,7 @@
       ],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 21000
+      "doc_size": 19000
     },
     "/d/2017-07-22-vacationphotos": {
       "py/object": "__main__.Page",
@@ -834,7 +836,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 27000
+      "doc_size": 28000
     },
     "/delegate": {
       "py/object": "__main__.Page",
@@ -1251,11 +1253,7 @@
       "description": "We all get it. imposter syndrome, which include shame\n\n",
       "file_path": "_site/insecure.html",
       "outgoing_links": ["/shame"],
-      "incoming_links": [
-        "/90days",
-        "/d/2017-04-09-igor-the-operating-manual",
-        "/depression"
-      ],
+      "incoming_links": ["/90days", "/depression"],
       "redirect_url": "",
       "doc_size": 10000
     },
@@ -1301,7 +1299,7 @@
       "py/object": "__main__.Page",
       "url": "/job",
       "title": "MY DREAM JOB",
-      "description": "Jobs have many dimensions and I’ll describe my dream job in several dimensions. In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.\n\n",
+      "description": "In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.\n\n",
       "file_path": "_site/job.html",
       "outgoing_links": [
         "/software-leadership-roles",
@@ -1413,7 +1411,6 @@
         "/amazon",
         "/being-a-great-manager",
         "/coaching",
-        "/d/2017-04-09-igor-the-operating-manual",
         "/dsat"
       ],
       "redirect_url": "",
@@ -1553,7 +1550,7 @@
         "/td/time-off-3-2020"
       ],
       "redirect_url": "",
-      "doc_size": 28000
+      "doc_size": 29000
     },
     "/mortality-software": {
       "py/object": "__main__.Page",
@@ -1943,10 +1940,7 @@
       "description": "The world is now on the cloud, here are my random notes on the topic.\n\n",
       "file_path": "_site/td/cloud-first-applications.html",
       "outgoing_links": [],
-      "incoming_links": [
-        "/d/2017-04-09-igor-the-operating-manual",
-        "/manager-book"
-      ],
+      "incoming_links": ["/amazon", "/manager-book"],
       "redirect_url": "",
       "doc_size": 22000
     },
@@ -1957,7 +1951,7 @@
       "description": "This page contains my knowledge of data systems. Mostly just a summary of Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems\n\n",
       "file_path": "_site/td/data-systems.html",
       "outgoing_links": [],
-      "incoming_links": ["/d/2017-04-09-igor-the-operating-manual"],
+      "incoming_links": ["/amazon"],
       "redirect_url": "",
       "doc_size": 19000
     },
@@ -1968,7 +1962,7 @@
       "description": "Software design is important. Here are my notes\n\n",
       "file_path": "_site/td/design.html",
       "outgoing_links": [],
-      "incoming_links": ["/d/2017-04-09-igor-the-operating-manual"],
+      "incoming_links": ["/amazon"],
       "redirect_url": "",
       "doc_size": 12000
     },
@@ -2249,7 +2243,7 @@
       "outgoing_links": ["/td", "/nlp"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 37000
+      "doc_size": 38000
     },
     "/toysfortots": {
       "py/object": "__main__.Page",
@@ -2378,6 +2372,7 @@
         "/amazon",
         "/coe",
         "/td/visual-vocabulary",
+        "/coaching",
         "/90days",
         "/coe",
         "/td/ios-nomad",
@@ -2385,12 +2380,13 @@
         "/vim-for-writing"
       ],
       "incoming_links": [
+        "/90days",
         "/amazon",
         "/d/2017-04-09-igor-the-operating-manual",
         "/manager-book"
       ],
       "redirect_url": "",
-      "doc_size": 27000
+      "doc_size": 28000
     }
   }
 }
