@@ -29,6 +29,7 @@ Useful writing tells people something true and important that they didn't alread
     - [Diagrams](#diagrams)
 - [Writing to be Understood](#writing-to-be-understood)
     - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
+    - [The  Pixar Formula:](#the--pixar-formula)
     - [The Hero's Journey Formula:](#the-heros-journey-formula)
     - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
     - [The crappy modern business book](#the-crappy-modern-business-book)
@@ -203,15 +204,46 @@ Diagrams are a vocabulary until themselves. My notes on [visual vocubulary](/td/
 
 ### The detective formula: Situation, Complication, Resolution
 
+### The Pixar Formula:
+
+https://startuppitch.substack.com/p/nail-your-startup-pitch-use-pixars
+
+- Situation/Context:
+  - Once upon a time there was [details]
+  - Every day, [details]
+- Complication/Problem:
+  - One day [details]
+  - Because of that, [details]
+- Resolution/Solution
+  - Because of that, [details]
+  - Until finally [details]
+
 ### The Hero's Journey Formula:
 
 ### The feedback formula: Situation, Behavior, Impact
 
+Very useful in giving feedback and [coaching](/coaching)
+
+- When [details] happened
+- I experienced [details]
+- As a result [details]
+
 ### The crappy modern business book
 
-The modern business/self-help book formula is: XYZ, and it's crappy.
+The modern business/self-help book formula is:
 
-A modern well written business book is the [first 90 days](/90days). Highly recommended.
+- Long Introduction
+  - A few stories and personal engagmenet
+- Introduce 3 point model, with sub points
+  - Includes a picture or acronym
+- 1 section per point model
+  - 1 chapter per sub point
+    - Several stories per sub point
+- Weak summary
+
+Generally, these books can be summarized in a short 5 page essay. In fact they often have an HBR (Harvard Business Review) article from the auther which does exactly that.
+
+Business book don't have to be crappy by laws of physics, some are excellent like the [first 90 days](/90days). I highly recommend reading both for the content, and the structure. The structure is awesome because
 
 ## Pen to paper
 
@@ -232,7 +264,7 @@ _I've never tried to count how many times I proofread essays, but I'm sure there
 
 Jeff Bezos:
 
-Read his letters to shareholders, imagine how long he spends writing them
+Read Jeff's [letters to shareholders](https://drive.google.com/file/d/1SpgDsIpC_cAS0O4cBz4Sb_GJcEIBhUtA/view), imagine how long he spends writing them.
 
 ### How to write effectively
 
