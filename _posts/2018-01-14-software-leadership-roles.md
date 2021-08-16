@@ -60,7 +60,7 @@ Many organizations don't formalize the distinction between tech lead and archite
 
 I've also seen engineering managers take on all of the aforementioned roles depending on the gaps in the team.
 
-### The hard to handle cases
+### When the system doesn't work as well as it should
 
 (Thanks to my wise colleagues for bringing up these questions, looking forward to getting folks opinions on the answers)
 
