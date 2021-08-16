@@ -41,6 +41,7 @@ The details are amazon specific, but a few things I can mention
 
 ## Cool stories - First Launch
 
+- So many toys needed to rotate Toys For Tots Shipping locations
 - Begging team in Spain for help
 - Credit card validation
 - Pre-Launch issues (broken, broken)
