@@ -36,6 +36,7 @@ This was a marquee features for Amazon and they put a lot of muscle behind it. H
 
 The details are amazon specific, but a few things I can mention
 
+- So many toys needed to rotate Toys For Tots Shipping locations
 - Called out in the SVP mail to all of Amazon on impactful things we did.
 - Lots of toys for Toys for Tots
 - So successful, rinse repeat.
@@ -48,7 +49,6 @@ The details are amazon specific, but a few things I can mention
 
 ## Cool stories - First Launch
 
-- So many toys needed to rotate Toys For Tots Shipping locations
 - Begging team in Spain for help
 - Credit card validation
 - Pre-Launch issues (broken, broken)
