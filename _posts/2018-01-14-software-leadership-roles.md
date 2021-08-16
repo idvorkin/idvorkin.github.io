@@ -6,11 +6,11 @@ tags:
   - software engineering
 ---
 
-The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of difference I've found is below copied from Quora. In this classification I like to run a team small enough that I have time to be both an engineering manager and software architect.
+The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of the difference I've found is inlined Quora. In this classification I like to run a team small enough that I can be the engineering manager and step in as the software architect as required.
 
 Copied (with slight editing) from [Kartik Ayya's](https://www.quora.com/profile/Kartik-Ayya) excellent [answer](https://www.quora.com/What-are-the-key-differences-between-a-technical-architect-and-a-lead-software-engineer)
 
-### The four software leadership roles
+### Leads, Architects, and Multiple Managers
 
 A software organization needs to fill 4 leadership roles. These roles are often "physically implemented" by various degrees in different team members.
 
@@ -20,7 +20,7 @@ A software organization needs to fill 4 leadership roles. These roles are often 
 
 **The product manager:** The person who figures out what to build to satisfy customers.
 
-**The engineering manager:** The person who makes sure the organization is [getting the most out of the team](/being-a-great-manager) and filling any gaps.
+**The engineering manager:** The person who makes sure the organization is [getting the most out of the team](/manager-book) and filling any gaps.
 
 ### The Tech Lead vs the Architect
 
