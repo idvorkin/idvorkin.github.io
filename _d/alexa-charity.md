@@ -9,13 +9,14 @@ redirect_from:
   - /tft
 ---
 
-One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations
+One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations. What is most amazing about this project is we were able to go from zero to announcing our MVP live on good morning america in under 4 months which included all sorts of complexities, negotiations, and good luck.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Marketting and PR the big guns.](#marketting-and-pr-the-big-guns)
 - [Customer Impact](#customer-impact)
+- [The genesis](#the-genesis)
 - [Cool stories - First Launch](#cool-stories---first-launch)
 - [The team that made it happen](#the-team-that-made-it-happen)
 
@@ -39,13 +40,18 @@ The details are amazon specific, but a few things I can mention
 - Lots of toys for Toys for Tots
 - So successful, rinse repeat.
 
+## The genesis
+
+- While considering the job, being pitched "wouldn't this be a cool idea"
+- Get team to agree it was all or nothing to launch
+- Non stop problems
+
 ## Cool stories - First Launch
 
 - So many toys needed to rotate Toys For Tots Shipping locations
 - Begging team in Spain for help
 - Credit card validation
 - Pre-Launch issues (broken, broken)
-- Get team to agree it was all or nothing to launch
 - How we dreaed it would never happen
 - PM quit pre-launch
 - Lots of other projects thrown at team while it was happening.
