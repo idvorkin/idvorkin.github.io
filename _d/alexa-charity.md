@@ -27,7 +27,7 @@ One of the most satisfying (and fun) projects I worked on in my career was givin
 This was a marquee features for Amazon and they put a lot of muscle behind it. Here were some of the ads:
 
 {% include youtube.html src="fe3OYc_2H64" %}
-{% include youtube.html src="inD9qdw0KGk&t=11" %}
+{% include youtube.html src="inD9qdw0KGk?start=11" %}
 
 ![](https://github.com/idvorkin/blob/raw/master/tft/shaq.gif)
 
