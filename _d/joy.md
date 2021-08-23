@@ -27,6 +27,7 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
     - [Attributes of Joy](#attributes-of-joy)
     - [Safety the precondition for Joy](#safety-the-precondition-for-joy)
     - [Why kids are more receptive to Joy](#why-kids-are-more-receptive-to-joy)
+    - [Other things to file](#other-things-to-file)
     - [Joy and Wonder](#joy-and-wonder)
     - [Joy and Overwhelming kindness from a stranger.](#joy-and-overwhelming-kindness-from-a-stranger)
     - [Joy versus pleasure](#joy-versus-pleasure)
@@ -109,7 +110,12 @@ TODO Use Lens of Self/Other/Process
 - Less need for validation of peers
 - Except things to be wholesome and good
 
-TODO Concerts
+### Other things to file
+
+- Concerts
+- Figgie Pudding
+- Christmas Carols
+- Can't help yourself but to sing along
 
 ### Joy and Wonder
 
