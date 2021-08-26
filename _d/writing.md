@@ -28,6 +28,7 @@ Useful writing tells people something true and important that they didn't alread
     - [Five Whys](#five-whys)
     - [Diagrams](#diagrams)
 - [Writing to be Understood](#writing-to-be-understood)
+    - [The journey or the recommendation](#the-journey-or-the-recommendation)
     - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
     - [The Pixar Formula:](#the-pixar-formula)
     - [The Hero's Journey Formula:](#the-heros-journey-formula)
@@ -201,6 +202,21 @@ Diagrams are a vocabulary until themselves. My notes on [visual vocubulary](/td/
 - [The noun project](http://thenounproject.com) - open source icons for everything.
 
 ## Writing to be Understood
+
+### The journey or the recommendation
+
+Sometimes you want to share your journey, the twists and turns and helping readers empathize or be trained. By contrast there are times you want to provide a recommendation and reasoning. The time element, and your experiences are noise in this case.
+
+**The Journey**
+
+Consider using the Hero's formula, or the pixar formula below.
+
+**The Recommendation**
+
+- Here's what we should do
+- Here's why
+- Here's the tradeoffs and what we considered
+- Here's our assumptions and supporting data
 
 ### The detective formula: Situation, Complication, Resolution
 
