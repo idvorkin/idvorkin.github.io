@@ -326,13 +326,7 @@
         "/grandmother-mind",
         "/books"
       ],
-      "incoming_links": [
-        "/bmy",
-        "/eulogy",
-        "/job",
-        "/manager-book",
-        "/software-leadership-roles"
-      ],
+      "incoming_links": ["/bmy", "/eulogy", "/job", "/manager-book"],
       "redirect_url": "",
       "doc_size": 18000
     },
@@ -958,7 +952,7 @@
         "/siy"
       ],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 17000
     },
     "/end-in-mind": {
       "py/object": "__main__.Page",
@@ -1343,10 +1337,10 @@
       "title": "SMILES, JOY AND WONDER",
       "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
       "file_path": "_site/joy.html",
-      "outgoing_links": ["/eulogy", "/magic", "/magic"],
+      "outgoing_links": ["/magic", "/eulogy", "/magic"],
       "incoming_links": ["/happy"],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 16000
     },
     "/magic": {
       "py/object": "__main__.Page",
@@ -1411,7 +1405,8 @@
         "/amazon",
         "/being-a-great-manager",
         "/coaching",
-        "/dsat"
+        "/dsat",
+        "/software-leadership-roles"
       ],
       "redirect_url": "",
       "doc_size": 122000
@@ -1816,9 +1811,9 @@
       "py/object": "__main__.Page",
       "url": "/software-leadership-roles",
       "title": "TECH LEADS, SOFTWARE ARCHITECTS AND ENGINEERING MANAGERS - OH MY!",
-      "description": "The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of difference I’ve found is below copied from Quora. In this classification I like to run a team small enough that I have time to be both an engineering manager and software architect.\n\n",
+      "description": "The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of the difference I’ve found is inlined Quora. In this classification I like to run a team small enough that I can be the engineering manager and step in as the software architect as required.\n\n",
       "file_path": "_site/software-leadership-roles.html",
-      "outgoing_links": ["/being-a-great-manager"],
+      "outgoing_links": ["/manager-book"],
       "incoming_links": ["/job", "/manager-book"],
       "redirect_url": "",
       "doc_size": 14000
@@ -2249,12 +2244,12 @@
       "py/object": "__main__.Page",
       "url": "/toysfortots",
       "title": "DONATING TO CHARITY",
-      "description": "One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations\n\n",
+      "description": "One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations. What is most amazing about this project is we were able to go from zero to announcing our MVP live on good morning america in under 4 months which included all sorts of complexities, negotiations, and good luck.\n\n",
       "file_path": "_site/toysfortots.html",
       "outgoing_links": [],
       "incoming_links": ["/amazon", "/eulogy"],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 12000
     },
     "/upstream": {
       "py/object": "__main__.Page",
@@ -2386,7 +2381,7 @@
         "/manager-book"
       ],
       "redirect_url": "",
-      "doc_size": 28000
+      "doc_size": 29000
     }
   }
 }
