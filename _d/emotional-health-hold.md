@@ -45,7 +45,15 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 **Why?** It's easy to focus on what we don't have and what goes wrong, and forget all the things that go right, and that we should be thankful for. By taking a few minutes each day to remember what went well and what I'm grateful for, I'm reminded why my life is awesome.
 
-**How?** I use a physical journal called [FiveMinuteJournal](http://www.FiveMinuteJournal.com), it has you list the 3 things you're grateful for in the morning, and 3 things that went well in the evening.
+**NOTE** Often we confuse appreciation for gratefulness, with the difference being gratefulness is targeted appreciation. It's a good practice to include both appreciation and a target. In practice this means for each thing you appreciate apply a who you're grateful for, in 3 forms of "who": Yourself, someone else, and the universe/god. This makes the practice build your ability to appreciate and be compassionate to others (by adding a value to your understand of them). Lets demonstrate an example:
+
+I appreciate the sunrise:
+
+- Universe: I'm grateful the universe includes something as beautful as a sunrise, which is free to all
+- Other: I'm grateful to my wife who put the kids to bed, so I can wake up early and enjoy this
+- Self: I'm grateful to myself who prioritized waking up early.
+
+**How?** I used to use a physical journal called [FiveMinuteJournal](http://www.FiveMinuteJournal.com), it has you list the 3 things you're grateful for in the morning, and 3 things that went well in the evening.
 
 **How's that working out for you?** Really well. Because I can fill this out in less then 2 minutes, I tend to do it daily. It's hard to be objective, but since I've started this practice, I have been much more likely to think about how lucky I am.
 
