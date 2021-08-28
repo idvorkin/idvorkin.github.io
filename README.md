@@ -40,6 +40,8 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
 
 ### No broken links
 
+- A script validates no broken links keeping everythign nice
+
 ### Select a Random Page
 
 - Click the monkey on this page!
@@ -80,6 +82,10 @@ Uses algolia:
 - bi.sh - Build index for algolia search
 
 ### No broken links
+
+I use a [python script](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/linkchecker.py)
+
+    ~/gits/linqpadsnippets/python(master⚡) » ./checklinks.sh
 
 ### Keyboard shortcuts
 
