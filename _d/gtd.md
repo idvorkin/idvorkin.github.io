@@ -53,7 +53,7 @@ Your brain is terrible at remembering stuff, often forgetting the important, and
 All incoming tasks should handled by one of the four workflows and ignored from that point forward:
 
 - Drop - Best case :) See [Essentialism](/essentialism) and [the dip](/dip)
-- Do - If it takes less then 2 minutes, get it done. Otherwise the overhead is too high.
+- Do - If it takes less then 2 minutes, [get it done](/frog). Otherwise the overhead is too high.
 - Delegate - Get someone else to do it, [outsourcing](/outsourcing) is great.
 - Defer - Convert it into a "next action", words you'll understand later context free, and add it to a project
 
@@ -63,10 +63,16 @@ When you get a reasonable chunk of time, crack open a project, and grind through
 
 ### Weekly Review
 
-To make sure your brain trusts the system, and doesn't recreate open loops, it needs to know what's in your system will be good and not lost. Use a weekly review to go through your projects and see if anything needs to be done urgently.
+To make sure your brain trusts the system, and doesn't [recreate open loops](/idle-loop), it needs to know what's in your system will be good and not lost. Use a weekly review to go through your projects and see if anything needs to be done urgently.
 
 ## Software
 
+Here's some software that I've used. None is perfect for me (I'm not sure what would be perfect), which is a shame. I think the best advice I have is, it doesn't matter what you use, it matters that you use it. I'll tell you when I find my perfect system.
+
 ### OmniFocus
 
+Primarily Apple, and incredibly complicated (aka powerful). The complexity is easy to get lost in, but really nice UX, and lots of good features. It has a web interface, but it's amazing on the mac, less so on Windows.
+
 ### Nozbe
+
+Multiplatform was best in class in 2012 when it was created, but hasn't had many upgrades since. I used it for years.
