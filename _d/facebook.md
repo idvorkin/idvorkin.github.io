@@ -4,7 +4,7 @@ title: "My thoughts on Facebook"
 permalink: /facebook
 ---
 
-Give people the power to build community and bring the world closer together, here are my in progress notes on working at FB.
+Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook
 
 <!-- prettier-ignore-start -->
 
@@ -16,6 +16,7 @@ Give people the power to build community and bring the world closer together, he
     - [Bootcamp](#bootcamp)
 - [The Good - Engineering Systems](#the-good---engineering-systems)
     - [Why they're so good.](#why-theyre-so-good)
+    - [A Trust Driven Social Company](#a-trust-driven-social-company)
     - [Open source lots](#open-source-lots)
     - [Top notch data tools](#top-notch-data-tools)
 - [The Good](#the-good)
@@ -84,6 +85,12 @@ I don't know for sure, but I suspect a few things:
 - Employees get hack-months to fix stuff they're passionate about
 - Employees can choose what they work on, and if an engineer wants to fix the system that annoys them, they do.
 - Because it's a single code base (See mono-repo) engineers easily see and can build all the code, so there's a low barrier to entry to fix issues.
+
+### A Trust Driven Social Company
+
+From a FB Manager
+
+> By definition, Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. And I cherish this part of my job.
 
 ### Open source lots
 
@@ -201,6 +208,8 @@ The flip side is going into new situations you need to spend more time evaluatin
 _I'm new, will add my thoughts as I know them_
 
 ### Anxiety around reviews
+
+**UPDATE**: Facebook responded to this and has updated their policy to only have reviews annually (ps - I'd prefer addressing these problems but having evaluations every 6 months)
 
 Relative to MSFT and AMZN folks are very concerned about reviews. I've debugged this a bit and here's my thinking
 
