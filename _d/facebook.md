@@ -27,9 +27,9 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
     - [Metric Driven Culture](#metric-driven-culture)
     - [Design Quality](#design-quality)
     - [Employees First](#employees-first)
+    - [Facebook Groups instead of e-mail](#facebook-groups-instead-of-e-mail)
     - [The Trio: Engineering, Product Management and Data Science](#the-trio-engineering-product-management-and-data-science)
 - [The peculiar](#the-peculiar)
-    - [Facebook Groups instead of e-mail](#facebook-groups-instead-of-e-mail)
     - [Monorepo.](#monorepo)
     - [Mercurial instead of git](#mercurial-instead-of-git)
     - [No job title bias](#no-job-title-bias)
@@ -48,6 +48,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 - [Lingo and Culture](#lingo-and-culture)
     - [Show up with grace](#show-up-with-grace)
     - [TL;DR](#tldr)
+    - [Feedback is a gift](#feedback-is-a-gift)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -152,12 +153,6 @@ At FB, they have a salad bar, and at the end of the bar, there's a guy who 'toss
 
 Wow!!!
 
-<!--
-### The Trio: Engineering, Product Management and Data Science
--->
-
-## The peculiar
-
 ### Facebook Groups instead of e-mail
 
 Facebook has an enterprise product called Workspace, which is essentially FB. FB uses this instead of e-mail.
@@ -182,6 +177,12 @@ I was very skeptical of this at first, and always concerned I'd miss something, 
   - You can link to specific comments
   - The algo can bubble up comments by people you follow
   - I can't articulate why this is good, but it really is.
+
+<!--
+### The Trio: Engineering, Product Management and Data Science
+-->
+
+## The peculiar
 
 ### Monorepo.
 
@@ -269,3 +270,5 @@ Used to be move fast and break stuff, but that's not good at this size. Now it's
 ### Show up with grace
 
 ### TL;DR
+
+### Feedback is a gift
