@@ -12,41 +12,42 @@ redirect_from:
 Useful writing tells people something true and important that they didn't already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation.
 
 <!-- prettier-ignore-start -->
-<!-- prettier-ignore-end -->
+
 
 <!-- vim-markdown-toc GFM -->
 
 - [Why](#why)
-  - [Writing to understand, writing to be understood.](#writing-to-understand-writing-to-be-understood)
-  - [Amazon's Writing Culture](#amazons-writing-culture)
-  - [Sucking till you don't](#sucking-till-you-dont)
-  - [Building Knowledge - Evergreen notes](#building-knowledge---evergreen-notes)
+    - [Writing to understand, writing to be understood.](#writing-to-understand-writing-to-be-understood)
+    - [Amazon's Writing Culture](#amazons-writing-culture)
+    - [Sucking till you don't](#sucking-till-you-dont)
+    - [Building Knowledge - Evergreen notes](#building-knowledge---evergreen-notes)
 - [Writing to understand](#writing-to-understand)
-  - [All Mental models are wrong.](#all-mental-models-are-wrong)
-  - [SWOT and SOAR - Exploring the space](#swot-and-soar---exploring-the-space)
-  - [MECE - How you know you're done.](#mece---how-you-know-youre-done)
-  - [Minto's Pyramid Principle](#mintos-pyramid-principle)
-  - [Elon's First Principles](#elons-first-principles)
-  - [Five Whys](#five-whys)
-  - [Diagrams](#diagrams)
-  - [Stories and actions not just data](#stories-and-actions-not-just-data)
+    - [All Mental models are wrong.](#all-mental-models-are-wrong)
+    - [SWOT and SOAR - Exploring the space](#swot-and-soar---exploring-the-space)
+    - [MECE - How you know you're done.](#mece---how-you-know-youre-done)
+    - [Minto's Pyramid Principle](#mintos-pyramid-principle)
+    - [Elon's First Principles](#elons-first-principles)
+    - [Five Whys](#five-whys)
+    - [Diagrams](#diagrams)
+    - [Stories and actions not just data](#stories-and-actions-not-just-data)
 - [Writing to be Understood](#writing-to-be-understood)
-  - [The journey or the recommendation](#the-journey-or-the-recommendation)
-  - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
-  - [The Pixar Formula:](#the-pixar-formula)
-  - [The Hero's Journey Formula:](#the-heros-journey-formula)
-  - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
-  - [The crappy modern business book](#the-crappy-modern-business-book)
+    - [The journey or the recommendation](#the-journey-or-the-recommendation)
+    - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
+    - [The Pixar Formula:](#the-pixar-formula)
+    - [The Hero's Journey Formula:](#the-heros-journey-formula)
+    - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
+    - [The crappy modern business book](#the-crappy-modern-business-book)
 - [Pen to paper](#pen-to-paper)
-  - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
-  - [On essay's and writing:](#on-essays-and-writing)
-  - [How to write effectively](#how-to-write-effectively)
-  - [How to tell a great story](#how-to-tell-a-great-story)
-  - [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
-  - [My 80 hours on an outage document](#my-80-hours-on-an-outage-document)
-  - [Writing Software and Tools](#writing-software-and-tools)
+    - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
+    - [On essay's and writing:](#on-essays-and-writing)
+    - [How to write effectively](#how-to-write-effectively)
+    - [How to tell a great story](#how-to-tell-a-great-story)
+    - [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
+    - [My 80 hours on an outage document](#my-80-hours-on-an-outage-document)
+    - [Writing Software and Tools](#writing-software-and-tools)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## Why
 
@@ -206,7 +207,7 @@ Diagrams are a vocabulary until themselves. My notes on [visual vocubulary](/td/
 
 A fantastic diagram to explain the idea
 
-{%include blob_image_float_right.html src="blog/data-story.jpg" %}
+{%include blob_image.html src="blog/data-story.jpg" %}
 
 And a great primer on what to convery to graph
 
