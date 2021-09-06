@@ -31,6 +31,8 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 Erase video content that hasn't changed, so videos are actually interesting:
 https://stackoverflow.com/questions/13142541/extract-thumbnails-of-every-camera-change-on-a-video-file
 
+I'm exploring this in my [video editting](https://github.com/idvorkin/video-edit) project.
+
 ## Notes
 
 Ring video doorbell

@@ -80,6 +80,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Ethical AI](#ethical-ai)
     - [Measuring within the wider business context](#measuring-within-the-wider-business-context)
     - [Guard rails for inputs versus training data](#guard-rails-for-inputs-versus-training-data)
+- [Computer Vision](#computer-vision)
 - [Natural Language Processing (NLP)](#natural-language-processing-nlp)
     - [My deep dive into NLP](#my-deep-dive-into-nlp)
     - [Bert](#bert)
@@ -355,6 +356,10 @@ _Thanks Dan Massey for your recommendation to discuss these topics_
 ### Measuring within the wider business context
 
 ### Guard rails for inputs versus training data
+
+## Computer Vision
+
+See my explorations at [video editting](https://github.com/idvorkin/video-edit)
 
 ## Natural Language Processing (NLP)
 
