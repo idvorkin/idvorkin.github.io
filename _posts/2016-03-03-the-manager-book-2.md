@@ -918,16 +918,17 @@ Imagine we want to build a new road.
 
 Most companies have their “competencies” they test for. But I abstract it down to:
 
-- Smart (Can code, understands)
+- Smart (Can code, understands, sees critical paths)
   - Teach me something you deeply understand
   - Walk through X, and Y, how do you, explain the trade offs.
 - Get things done (wants to ship, owns it):
-  - What matters to you
-  - Tell me something hard you did.
-  - Tell me your favorite parts
-- EQ: (Not an asshole, Continuous Learning, Sees impact off his action, self aware o how eels)
+  - What matters to you?
+  - Tell me something hard you did?
+  - Tell me your favorite parts?
+- EQ: (Not an asshole, Continuous Learning, Sees impact off his action, self aware, Team First )
   - Tell me a time you got in a fight
   - Tell me the hardest feedback you received.
+  - Tell me the hardest feedback you gave
 
 ### Do they prefer to hire only experienced folks?
 
