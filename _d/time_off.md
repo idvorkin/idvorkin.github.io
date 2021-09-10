@@ -28,6 +28,8 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Begin with the end in mind](#begin-with-the-end-in-mind)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Other Resources](#other-resources)
+    - [Optimize for energy, not time](#optimize-for-energy-not-time)
+    - [Can you have too much time off?](#can-you-have-too-much-time-off)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -99,3 +101,15 @@ Even though getting to do what you love is awesome, you still want to love your 
 - [April 2020 - Time between leaving Amazon and Joining Facebook](/td/time-off-3-2020)
 
 ## Other Resources
+
+### Optimize for energy, not time
+
+### Can you have too much time off?
+
+Need to explore furthor, from [this study](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf):
+
+Many people living in modern society feel like they do not have enough time and are constantly searching
+for more. But is having limited discretionary time actually detrimental? And can there be downsides of having too much discretionary time? We find a negative quadratic relationship between discretionary time and subjective well-being. These results show that having too little time is indeed linked to lower subjective well-being caused by stress, having more time does not continually translate to greater subjective well-being.
+
+Having an abundance of discretionary time is sometimes even linked to lower subjective well-being because of a lacking sense of productivity. In such cases, the negative effect of having too much
+discretionary time can be attenuated when people spend this time on productive activities.
