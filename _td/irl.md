@@ -285,11 +285,17 @@ I've wanted a hot tub for 20 years, but it was so hard. Turns out you can buy an
 
 You also need bromine to keep the nasties out and ph up to keep the bromine working.
 
+{%include amazon.html asin="B01NCQO3KY;B07PFCV894;B00PZZFVFE" %}
+
 I also got these chairs which Amelia likes, but are not to useful for a grown up
 
 And don't forget pool lights - I'm still figuring that out.
 
 {%include amazon.html asin="B00NB3P98G;B00B9CHBK0;B07H8QX8C1" %}
+
+For draining the pool you need a pump, and for rapid heating a propane water heater. I like this:
+
+{%include amazon.html asin="B000CQ6CU4;B08CDHX8VD" %}
 
 Some good links:
 
