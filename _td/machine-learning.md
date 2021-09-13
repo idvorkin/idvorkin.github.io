@@ -435,6 +435,6 @@ Good explanation:
 - [Google's rules of ML](https://developers.google.com/machine-learning/rules-of-ml/) and [summary](https://towardsml.com/2018/08/06/how-great-products-are-made-rules-of-machine-learning-by-google-a-summary/)
 - [Hands on machine learning with SciKit-Learn and tensor flow](https://www.amazon.com//dp/1491962291)
 
-{%include amazon.html asin="1491962291;B07H8QX8C1" %}
+{%include amazon.html asin="1491962291;1617294438" %}
 
 - Neural network easier to grock [lectures](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
