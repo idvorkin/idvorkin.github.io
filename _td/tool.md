@@ -67,6 +67,7 @@ A collection of tips, tricks and pointers of the various tools i use
 - [CLI Screen Recoding](#cli-screen-recoding)
     - [Show pressed keys](#show-pressed-keys)
 - [OSX Misc](#osx-misc)
+- [Terminal Info](#terminal-info)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -580,6 +581,14 @@ _(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to
 
 - [Bar Tender](https://www.macbartender.com/) - Manage the menu bar
 - [Hyper Switch](https://bahoom.com/hyperswitch) - App Switch Includes window switch.
+
+### Terminal Info
+
+Terminfo, ncurses, OSX, what a mess. You need to add your own terminfos see:
+
+* https://gist.github.com/bbqtd/a4ac060d6f6b9ea6fe3aabe735aa9d95
+
+You also want to install the other terminals like xterm256 and tmux
 
 ### Other Resources
 
