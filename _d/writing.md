@@ -45,6 +45,7 @@ Useful writing tells people something true and important that they didn't alread
     - [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
     - [My 80 hours on an outage document](#my-80-hours-on-an-outage-document)
     - [Writing Software and Tools](#writing-software-and-tools)
+    - [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -329,3 +330,7 @@ I need to minimize distractions, so I try to write distraction free on my iPad
 - My iPad [writing tools](/td/ios-nomad)
 - My [iPad Setup](/td/ios)
 - I write in [vim](/vim-for-writing)
+
+### Other resources
+
+- [Write 5x more but 5x shorter](https://critter.blog/2020/10/02/write-5x-more-but-write-5x-less/)
