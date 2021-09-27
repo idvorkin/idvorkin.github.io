@@ -49,6 +49,7 @@
     "/first-thing-first": "/first-things-first",
     "/first90days": "/90days",
     "/frugality": "/parkinson",
+    "/frustration": "/anger",
     "/fuck-shame": "/shame",
     "/getting-things-done": "/gtd",
     "/goal": "/goals",
@@ -96,6 +97,7 @@
     "/process": "/upstream",
     "/procrastinate": "/frog",
     "/procrastination": "/frog",
+    "/rage": "/anger",
     "/rca": "/coe",
     "/remote": "/remote-work",
     "/remotework": "/remote-work",
@@ -121,6 +123,7 @@
     "/think": "/writing",
     "/thinking": "/writing",
     "/time-off": "/timeoff",
+    "/tolerance": "/anger",
     "/twentytwo": "/what-i-wish-knew-at-22",
     "/vacation": "/timeoff",
     "/virus": "/covid",
@@ -263,6 +266,17 @@
       ],
       "redirect_url": "",
       "doc_size": 25000
+    },
+    "/anger": {
+      "py/object": "__main__.Page",
+      "url": "/anger",
+      "title": "ANGER IS THE ENEMY",
+      "description": "It’s 8am; The normal rush, the kids are late to school, we’re yelling at them to eat their breakfast, pack their lunch, brush their teeth, get ready for school. 30 minutes earlier, I’d decided I’d bike Amelia, my 7 year old daughter, to school. I told Tori, my wife, who normally drives the kids to school. Tori didn’t acknowledge me. As I got my bike helmet Tori put the kids in the car. I ran out and tried to get her attention, waving frantically and running the car. (In my head), Tori ignroed me, wouldn’t look at me, even as I ran to the car and gesticulated wildly. I really had my heart set on biking Amelia to school, and I went into a rage, as Tori pulled off, I flipped her off. Adulting fail - not my best moment.\n\n",
+      "file_path": "_site/anger.html",
+      "outgoing_links": ["/depression"],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 12000
     },
     "/anxiety": {
       "py/object": "__main__.Page",
@@ -431,13 +445,14 @@
       ],
       "incoming_links": [
         "/being-a-great-manager",
+        "/insecure",
         "/job",
         "/manager-book",
         "/moments-at-work",
         "/writing"
       ],
       "redirect_url": "",
-      "doc_size": 24000
+      "doc_size": 26000
     },
     "/coe": {
       "py/object": "__main__.Page",
@@ -866,7 +881,7 @@
         "/psychic-weight",
         "/idle-loop"
       ],
-      "incoming_links": [],
+      "incoming_links": ["/anger"],
       "redirect_url": "",
       "doc_size": 18000
     },
@@ -1020,12 +1035,12 @@
       "py/object": "__main__.Page",
       "url": "/facebook",
       "title": "MY THOUGHTS ON FACEBOOK",
-      "description": "Give people the power to build community and bring the world closer together, here are my in progress notes on working at FB.\n\n",
+      "description": "Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook\n\n",
       "file_path": "_site/facebook.html",
       "outgoing_links": ["/covid19"],
       "incoming_links": ["/d/2017-04-09-igor-the-operating-manual"],
       "redirect_url": "",
-      "doc_size": 24000
+      "doc_size": 25000
     },
     "/first-things-first": {
       "py/object": "__main__.Page",
@@ -1136,7 +1151,9 @@
         "/procrastinate",
         "/essentialism",
         "/dip",
-        "/outsourcing"
+        "/frog",
+        "/outsourcing",
+        "/idle-loop"
       ],
       "incoming_links": [
         "/books-that-defined-me",
@@ -1147,7 +1164,7 @@
         "/psychic-weight"
       ],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/happy": {
       "py/object": "__main__.Page",
@@ -1223,6 +1240,7 @@
       "incoming_links": [
         "/anxiety",
         "/depression",
+        "/gtd",
         "/happy",
         "/psychic-weight"
       ],
@@ -1246,10 +1264,10 @@
       "title": "INSECURITY AND IMPOSTER SYNDROME",
       "description": "We all get it. imposter syndrome, which include shame\n\n",
       "file_path": "_site/insecure.html",
-      "outgoing_links": ["/shame"],
+      "outgoing_links": ["/shame", "/coaching#situational-coaching"],
       "incoming_links": ["/90days", "/depression"],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/insomnia": {
       "py/object": "__main__.Page",
@@ -1287,7 +1305,7 @@
       ],
       "incoming_links": ["/physical-health"],
       "redirect_url": "",
-      "doc_size": 36000
+      "doc_size": 39000
     },
     "/job": {
       "py/object": "__main__.Page",
@@ -1503,7 +1521,7 @@
       "outgoing_links": ["/pandas", "/nlp"],
       "incoming_links": ["/manager-book", "/td/stats"],
       "redirect_url": "",
-      "doc_size": 39000
+      "doc_size": 41000
     },
     "/moments": {
       "py/object": "__main__.Page",
@@ -2227,7 +2245,7 @@
       ],
       "incoming_links": ["/d/time-off-12-2020", "/mind-at-work", "/parkinson"],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 16000
     },
     "/tools": {
       "py/object": "__main__.Page",
@@ -2381,7 +2399,7 @@
         "/manager-book"
       ],
       "redirect_url": "",
-      "doc_size": 29000
+      "doc_size": 30000
     }
   }
 }
