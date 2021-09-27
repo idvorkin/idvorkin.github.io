@@ -278,7 +278,7 @@ If you're feeling down because you are a Disillusioned Learner or Capable but Ca
 
 ### Other coaching tools
 
-Other coaching ideas to develop.
+Below are some other good coaching tools I need to write more details on:
 
 - Using a scale question for relative improvement not for calibration. E.g. on a scale of 1 to 10, how do you rank yourself on X! Great, why do you say that?, Great - what would you need to do to move up a point on the scale?
 
