@@ -34,4 +34,10 @@ A few quotes from people he asked about these feelings:
 - It's not just you, everyone has this
 - Estabilishing safe spaces and pychological safety
 
+#### Antidotes - Situational Leadership
+
+Read my notes [situational leadership](/coaching#situational-coaching)
+
+_As people take on new tasks requiring them to learn new skills, they go through a predictable, often painful, sequence of experiences. These experiences are based on the progression of confidence and competence, and each experience benefits from a different type of coaching described in [Situational Leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory)._
+
 #### Other resources
