@@ -261,13 +261,13 @@ When competence is low, coach for direction, when confidence is low coach for su
 
 - l11
 - **Provide Support**
-- Listen to you
-- Recognize and Appreciate your efforts
-- Problem solve with you
-- Ask for your input
-- Remind you why you're doing the task
-- Share their own experiences achieving the task and goal
-- Share why the task and goal is relevant to other
+- Listen to the learner
+- Recognize and appreciate the learners
+- Problem solve with the learner
+- Ask for the learners input
+- Remind the learner why you're doing the task
+- Share your own experiences achieving the task and goal
+- Share why the task and goal is important
 
 | Competent/Confident | Confident                                      | Scared                                          |
 | ------------------- | ---------------------------------------------- | ----------------------------------------------- |
