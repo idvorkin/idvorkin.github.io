@@ -234,19 +234,47 @@ See the One on One Sections And One on One prompts in [the manager book](/the-ma
 
 ### Situational coaching
 
-As people learn new skills they experience a learning curve, which requires different support at different points on the curve. [Situational leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory) describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.
+As people take on new tasks requiring them to learn new skills, they go through a predictable, often painful, sequence of experiences. These experiences are based on the progression of confidence and competence, and each experience benefits from a different type of coaching described in [Situational Leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory).
 
-| Competent/Confident | Confident                                            | Scared                                                          |
-| ------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
-| Incompetent         | 1. Foolish Novice - Thinks they can do it, but can't | 2. Novice - Knows they can't do it, and feels bad               |
-| Competent           | 4. Expert - Know they can do it, and they're right   | 3. Journey man - Thinks they can't do it, but actually they can |
+| Competent/Confident | Confident                                                         | Scared                                                                  |
+| ------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **Incompetent**     | 1. Enthusiastic Beginner- Thinks they can do it, but can't        | 2. Disillusioned Learner - Knows they can't do it, and feels bad        |
+| **Competent**       | 4. Self Reliant Achiever - Know they can do it, and they're right | 3. Capable But Cautious- Thinks they can't do it, but actually they can |
 
-Each stage requires different types of support
+When competence is low, coach for direction, when confidence is low coach for support.
+
+| Low competence | Low Confidence |
+| -------------- | -------------- |
+| [l10](l10)     | [l11](l11)     |
+
+- l10
+- **Provide Direction**
+- Set a clear goal
+- Generate an action plan
+- Show you how to do it
+- Clarify the role
+- Provide Timelines
+- Establish Priorities
+- Monitor and evaluate, giving feedback
+
+<div> </div>
+
+- l11
+- **Provide Support**
+- Listen to you
+- Recognize and Appreciate your efforts
+- Problem solve with you
+- Ask for your input
+- Remind you why you're doing the task
+- Share their own experiences achieving the task and goal
+- Share why the task and goal is relevant to other
 
 | Competent/Confident | Confident                                      | Scared                                          |
 | ------------------- | ---------------------------------------------- | ----------------------------------------------- |
-| Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
-| Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
+| **Incompetent**     | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
+| **Competent**       | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
+
+If you're feeling down because you are a Disillusioned Learner or Capable but Cautious, know you're not alone, and consider reading [Self leadership and the one minute manager](https://www.amazon.com/dp/0060799129), it's a quick, easy, read that has a powerful message.\*
 
 ### Other coaching tools
 
