@@ -782,7 +782,7 @@
         "/7-habits",
         "/mental-pain"
       ],
-      "incoming_links": [],
+      "incoming_links": ["/timeoff"],
       "redirect_url": "",
       "doc_size": 19000
     },
@@ -2241,7 +2241,8 @@
         "/happy",
         "/eulogy",
         "/frog",
-        "/td/time-off-3-2020"
+        "/td/time-off-3-2020",
+        "/d/time-off-12-2020"
       ],
       "incoming_links": ["/d/time-off-12-2020", "/mind-at-work", "/parkinson"],
       "redirect_url": "",
