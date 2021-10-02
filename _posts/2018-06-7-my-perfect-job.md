@@ -17,7 +17,7 @@ In my dream job I learn the customer and business needs and focus the team on de
 
 ### Engineering Manager or Tech lead: Engineering Manager
 
-I'm passionate about tech, but I'm even more passionate about aspiring to be the [best boss my team will ever have](being-a-great-manager). Part of being the best is having deep understanding of the tech, so I always have some [small projects on the side](https://github.com/idvorkin), and every few years I'll do a rotation as a [tech lead](/software-leadership-roles).
+I'm passionate about tech, but I'm even more passionate about aspiring to be the [best boss my team will ever have](/being-a-great-manager). Part of being the best is having deep understanding of the tech, so I always have some [small projects on the side](https://github.com/idvorkin), and every few years I'll do a rotation as a [tech lead](/software-leadership-roles).
 
 ### Startup, Turn Around, Accelerated Growth, Realignment, Sustaining Success: Startup and Turn around
 
