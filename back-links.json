@@ -441,7 +441,8 @@
         "/pride",
         "/decisive",
         "/search-inside-yourself",
-        "/the-manager-book"
+        "/the-manager-book",
+        "/prompts"
       ],
       "incoming_links": [
         "/being-a-great-manager",
@@ -449,6 +450,7 @@
         "/job",
         "/manager-book",
         "/moments-at-work",
+        "/prompts",
         "/writing"
       ],
       "redirect_url": "",
@@ -1314,6 +1316,7 @@
       "description": "In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.\n\n",
       "file_path": "_site/job.html",
       "outgoing_links": [
+        "/being-a-great-manager",
         "/software-leadership-roles",
         "/cache",
         "/being-a-great-manager",
@@ -1399,6 +1402,7 @@
         "/moments-at-work",
         "/coaching",
         "/coaching",
+        "/prompts",
         "/remote-work",
         "/habits",
         "/coe",
@@ -1427,7 +1431,7 @@
         "/software-leadership-roles"
       ],
       "redirect_url": "",
-      "doc_size": 122000
+      "doc_size": 114000
     },
     "/mental-pain": {
       "py/object": "__main__.Page",
@@ -1654,6 +1658,17 @@
       ],
       "redirect_url": "",
       "doc_size": 17000
+    },
+    "/prompts": {
+      "py/object": "__main__.Page",
+      "url": "/prompts",
+      "title": "PROMPTS, YOUR GUIDE TO STARTING A CONVERSATION",
+      "description": "A prompt will kick start a great conversation, a great insight, and a great releationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.\n\n",
+      "file_path": "_site/prompts.html",
+      "outgoing_links": ["/coaching"],
+      "incoming_links": ["/coaching", "/manager-book"],
+      "redirect_url": "",
+      "doc_size": 19000
     },
     "/psychic-weight": {
       "py/object": "__main__.Page",
