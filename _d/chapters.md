@@ -21,6 +21,11 @@ Our lives are stories, containing many different chapters. However, regardless o
     - [40s - Focus on what you do like](#40s---focus-on-what-you-do-like)
     - [50s - Don't know yet](#50s---dont-know-yet)
     - [60s - Don't know yet](#60s---dont-know-yet)
+- [What I wish I knew when my kids](#what-i-wish-i-knew-when-my-kids)
+    - [were new](#were-new)
+    - [were two](#were-two)
+    - [were teens](#were-teens)
+    - [were adults](#were-adults)
 - [Other Concepts](#other-concepts)
     - [The Hindu Ashrama](#the-hindu-ashrama)
     - [Don Juan's Four Enemeies](#don-juans-four-enemeies)
@@ -40,11 +45,29 @@ And my advice to folks in their 20s - [Which I gave as a talk for the Amazon Int
 
 ### 30s - Avoid what you don't like
 
+I'm workign on this talk, give me content!
+
+https://docs.google.com/document/d/11bI6nV3tOxZzRlN6L8-RPx4m1_SXoaVGalmoZdlZBGI/edit#
+
 ### 40s - Focus on what you do like
 
 ### 50s - Don't know yet
 
 ### 60s - Don't know yet
+
+## What I wish I knew when my kids
+
+### were new
+
+- Take a chill pill
+- The days are long but the years fly by
+- This is what it's all about
+
+### were two
+
+### were teens
+
+### were adults
 
 ## Other Concepts
 
