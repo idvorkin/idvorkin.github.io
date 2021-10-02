@@ -99,6 +99,7 @@ Even though getting to do what you love is awesome, you still want to love your 
 ## Examples of how I spent my time off
 
 - [April 2020 - Time between leaving Amazon and Joining Facebook](/td/time-off-3-2020)
+- [Xmas 2020 - End of year time off with Corona Virus](/d/time-off-12-2020)
 
 ## Other Resources
 
