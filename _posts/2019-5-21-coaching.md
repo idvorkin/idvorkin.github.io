@@ -284,6 +284,8 @@ Below are some other good coaching tools I need to write more details on:
 
 - Imagery cards - Use cards with images on them to illicit from people what picture represents what concept, then have a discussion. E.g. which of these pictures represents leadership to you? OK, help me see how that shows a leader to you.
 
+- [Prompts](/prompts)
+
 ### Fantastic video on coaching, improvement, and discomfort
 
 {%include youtube.html src="oHDq1PcYkT4?start=431" %}
