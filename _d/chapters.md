@@ -8,7 +8,9 @@ redirect_from:
   - /stages
   - /life-stages
   - /life-chapters
----Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22 year old, and what you need as a 42 year old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of ap
+---
+
+Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22 year old, and what you need as a 42 year old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of ap
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
