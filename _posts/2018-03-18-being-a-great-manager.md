@@ -38,6 +38,7 @@ I'm also writing a "manager guidebook", much of this post is migrating to the [m
     - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
     - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
 - [Igors Super Powers](#igors-super-powers)
+    - [What is Igor's Management Philosopy](#what-is-igors-management-philosopy)
     - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
 
 <!-- vim-markdown-toc -->
@@ -144,6 +145,18 @@ Some teams have these things well defined and running smoothly, other teams (see
   - Requirements Review - Design (p)review - Test Plan Review - Operations/Launch Review/Pre-Morten - Bug Bash
 
 ## Igors Super Powers
+
+### What is Igor's Management Philosopy
+
+For some reason this is a frequent question I get asked by people deciding if they should join the team. It's super vague, so I need to think through where I'd like to answer.
+
+First a disclaimer, Managers are professional story tellers, they lie (often by accident), look with your own eyes, ask others on the team.
+
+Philosophy is probably two things 1/ What/How of the team, 2/ What/How is the managers contribution.
+
+What/How - What is the ideal culture.
+
+What/How - What is the managers part in that.
 
 ### Why do people think Igor is a good coach?
 
