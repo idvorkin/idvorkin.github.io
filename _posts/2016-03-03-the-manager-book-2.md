@@ -653,14 +653,23 @@ Often, when folks think of career development, they fixate on their job title an
 
 Tough question. I need to think through that
 
-- Team gelled, and always helping and growing each other
-- Continuous improvement, with very open feedback, and desire to improve.
-- Test cheaply, early and often.
-- Ship as frequently as possible.
-- Always paying down technical debt
-- I hate the term "bring solutions not problems", it encourages people to freeze. Instead - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
-- Never be blocked
-- Imagine Executed Sustainably
+- Coming to work is fun, team gelled, and ahead of individuals
+
+  - Team gelled, and always helping and growing each other
+  - People put team ahead of themselves, to support each other.
+  - Folks have high trust, so can be vulnerable, knowing others want to grow and suppor them.
+  - Hanging out with your friends
+  - Work filled with moments
+  - Team first, whole greater then the sum of its parts
+
+- Imagination Executed Sustainably
+  - Ship as frequently as possible.
+  - Test cheaply, early and often.
+  - Continuous improvement, with very open feedback, and desire to improve.
+  - Always paying down technical debt
+  - Never be blocked
+  - I hate the term "bring solutions not problems", it encourages people to freeze. Instead -
+    - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
 
 ### How do you help a team gel
 
