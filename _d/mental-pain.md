@@ -5,7 +5,7 @@ title: The thoughts that pain us
 permalink: mental-pain
 ---
 
-Pain is in the brain as they say, which is especially true for mental pains. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.
+Pain is in the brain as they say, which is especially true for mental pains. Pain isn't the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -78,6 +78,8 @@ Pain is in the brain as they say, which is especially true for mental pains. The
 #### Doubt: Abandonment, Taking fore granted
 
 #### Disappointment: Guilt/[shame](/shame)/Embarrassed, Unfair
+
+Remember, just because you can feel guilt/shame/emberassed, doesn't mean you should.
 
 ### Process - In your life
 
