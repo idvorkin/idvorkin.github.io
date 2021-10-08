@@ -25,7 +25,9 @@ Anger is the enemy. It is an intoxicant, it causes poor judgement and makes ever
 
 - [Your enemies trick - control](#your-enemies-trick---control)
 - [The anger dial frustration and rage](#the-anger-dial-frustration-and-rage)
+- [The components of Anger.](#the-components-of-anger)
 - [The Antidotes](#the-antidotes)
+    - [To Pain](#to-pain)
     - [To Frustration](#to-frustration)
     - [To Anger](#to-anger)
     - [To Rage - not sure.](#to-rage---not-sure)
@@ -43,7 +45,17 @@ But you're not in control, you're losing perspective and making bad decisions. E
 
 Anger has an intensity dial, at the low end, it manifests as frustration, and at the high end it manifests as rage.
 
+## The components of Anger.
+
+There are two parts to anger, first, a [mental pain](/mental-pain), but also, a feeling trapped, like you can't escape, and this will happen forever.
+
 ## The Antidotes
+
+### To Pain
+
+Pain isn't the enemy, it's a signal. See more details at [mental pain](/mental-pain), to see if the pain is valid.
+
+> Pain is in the brain as they say, which is especially true for mental pains. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.
 
 ### To Frustration
 
