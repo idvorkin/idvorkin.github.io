@@ -234,16 +234,16 @@ See the One on One Sections And One on One prompts in [the manager book](/the-ma
 
 ### Situational coaching
 
-As people take on new tasks requiring them to learn new skills, they go through a predictable, often painful, sequence of experiences. These experiences are based on the progression of confidence and competence, and each experience benefits from a different type of coaching described in [Situational Leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory).
+As people take on new tasks requiring them to learn new skills, they go through a predictable, often painful, sequence of experiences. These experiences are based on the progression of commitment and competence, and each experience benefits from a different type of coaching described in [Situational Leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory).
 
-| Competent/Confident | Confident                                                         | Scared                                                                  |
+| Competent/Confident | Committed                                                         | Discouraged                                                             |
 | ------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | **Incompetent**     | 1. Enthusiastic Beginner- Thinks they can do it, but can't        | 2. Disillusioned Learner - Knows they can't do it, and feels bad        |
 | **Competent**       | 4. Self Reliant Achiever - Know they can do it, and they're right | 3. Capable But Cautious- Thinks they can't do it, but actually they can |
 
-When competence is low, coach for direction, when confidence is low coach for support.
+When competence is low, coach for direction, when commitment is low coach for support.
 
-| Low competence | Low Confidence |
+| Low competence | Low Commitment |
 | -------------- | -------------- |
 | [l10](l10)     | [l11](l11)     |
 
@@ -269,7 +269,7 @@ When competence is low, coach for direction, when confidence is low coach for su
 - Share your own experiences achieving the task and goal
 - Share why the task and goal is important
 
-| Competent/Confident | Confident                                      | Scared                                          |
+| Competent/Committed | Commitement                                    | Discouraged                                     |
 | ------------------- | ---------------------------------------------- | ----------------------------------------------- |
 | **Incompetent**     | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
 | **Competent**       | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
