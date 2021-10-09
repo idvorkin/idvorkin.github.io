@@ -36,7 +36,7 @@ Coaching is like midwifery. A midwife can not give birth to the baby, she facili
     - [Coach for task completion vs insight](#coach-for-task-completion-vs-insight)
     - [Keep people safe while coaching using human safety models](#keep-people-safe-while-coaching-using-human-safety-models)
     - [Soften your coaching: How Can I help](#soften-your-coaching-how-can-i-help)
-    - [Encourange trying to solve own problem: How would you handle this](#encourange-trying-to-solve-own-problem-how-would-you-handle-this)
+    - [Encourage trying to solve own problem: How would you handle this](#encourage-trying-to-solve-own-problem-how-would-you-handle-this)
     - [Say No: Say yes slowly](#say-no-say-yes-slowly)
     - [Focus feedback on you, not them](#focus-feedback-on-you-not-them)
 - [One on One Questions](#one-on-one-questions)
@@ -111,7 +111,7 @@ Depending on what insights you want to provide, you need to use different questi
 
 - What is the counter argument?
 - What other options have you considered?
-- What would happen i this option dissapeared?
+- What would happen i this option disappeared?
 - What is the next best use of resources?
 - How can you do A and B?
 - How would you decide if you had double the resources?
@@ -197,7 +197,7 @@ _More details in [Search inside yourself - Leadership and social skills](/search
 - That is a hard problem
 - Not alone, lots of people struggle with this.
 
-#### Encourange trying to solve own problem: How would you handle this
+#### Encourage trying to solve own problem: How would you handle this
 
 Great question, I have some ideas, but first, how would you tackle this? What else?
 
@@ -214,7 +214,7 @@ Great question, I have some ideas, but first, how would you tackle this? What el
 #### Focus feedback on you, not them
 
 From the superb HBR article: [The feedback fallacy](https://hbr.org/2019/03/the-feedback-fallacy). If you don't read the article (which I'll also summarize)
-take this high order bit of focusing the feedback on "you" not on them. E.g. feedback should be "I expereinced X" instead of you screwed up X.
+take this high order bit of focusing the feedback on "you" not on them. E.g. feedback should be "I experienced X" instead of you screwed up X.
 
 | Easy way                                               | Effective Way                                                                                                     |
 | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
@@ -269,7 +269,7 @@ When competence is low, coach for direction, when commitment is low coach for su
 - Share your own experiences achieving the task and goal
 - Share why the task and goal is important
 
-| Competent/Committed | Commitement                                    | Discouraged                                     |
+| Competent/Committed | Commitment                                     | Discouraged                                     |
 | ------------------- | ---------------------------------------------- | ----------------------------------------------- |
 | **Incompetent**     | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
 | **Competent**       | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
