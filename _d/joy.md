@@ -26,6 +26,7 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
 - [Theory](#theory)
     - [Attributes of Joy](#attributes-of-joy)
     - [Safety the precondition for Joy](#safety-the-precondition-for-joy)
+    - [Build rapport to make people feel safe](#build-rapport-to-make-people-feel-safe)
     - [Why kids are more receptive to Joy](#why-kids-are-more-receptive-to-joy)
     - [Other things to file](#other-things-to-file)
     - [Joy and Wonder](#joy-and-wonder)
@@ -102,6 +103,12 @@ TODO Use Lens of Self/Other/Process
 - Performers spend lots of time building the first follower
 - The most important guy is [The First Follower](https://www.youtube.com/watch?v=)
   {% include youtube.html src="fW8amMCVAJQ" %}
+
+### Build rapport to make people feel safe
+
+Check out the [the like switch](/like-switch) to see how an FBI agent builds rapport and makes peope feel safe.
+
+Also look at notes from Avner class - who was all about building rapport with a stage audience
 
 ### Why kids are more receptive to Joy
 
