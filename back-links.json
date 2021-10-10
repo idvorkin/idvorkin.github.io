@@ -24,8 +24,8 @@
     "/books": "/books-that-defined-me",
     "/boss": "/being-a-great-manager",
     "/Business-Model-You": "/bmy",
-    "/coach": "/coaching",
-    "/Coaching-Questions": "/coaching",
+    "/coach": "/coaching.md",
+    "/Coaching-Questions": "/coaching.md",
     "/cold": "/warm",
     "/compassion": "/curious",
     "/compensation": "/comp",
@@ -276,10 +276,10 @@
       "title": "ANGER IS THE ENEMY",
       "description": "It’s 8am; The normal rush, the kids are late to school, we’re yelling at them to eat their breakfast, pack their lunch, brush their teeth, get ready for school. 30 minutes earlier, I’d decided I’d bike Amelia, my 7 year old daughter, to school. I told Tori, my wife, who normally drives the kids to school. Tori didn’t acknowledge me. As I got my bike helmet Tori put the kids in the car. I ran out and tried to get her attention, waving frantically and running the car. (In my head), Tori ignroed me, wouldn’t look at me, even as I ran to the car and gesticulated wildly. I really had my heart set on biking Amelia to school, and I went into a rage, as Tori pulled off, I flipped her off. Adulting fail - not my best moment.\n\n",
       "file_path": "_site/anger.html",
-      "outgoing_links": ["/depression"],
+      "outgoing_links": ["/depression", "/mental-pain", "/mental-pain"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/anxiety": {
       "py/object": "__main__.Page",
@@ -345,7 +345,7 @@
       ],
       "incoming_links": ["/bmy", "/eulogy", "/job", "/manager-book"],
       "redirect_url": "",
-      "doc_size": 18000
+      "doc_size": 19000
     },
     "/bike": {
       "py/object": "__main__.Page",
@@ -441,7 +441,7 @@
       "outgoing_links": ["/22", "/don-juan", "/don-juan"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/coaching": {
       "py/object": "__main__.Page",
@@ -458,15 +458,7 @@
         "/the-manager-book",
         "/prompts"
       ],
-      "incoming_links": [
-        "/being-a-great-manager",
-        "/insecure",
-        "/job",
-        "/manager-book",
-        "/moments-at-work",
-        "/prompts",
-        "/writing"
-      ],
+      "incoming_links": ["/insecure", "/manager-book", "/prompts", "/writing"],
       "redirect_url": "",
       "doc_size": 26000
     },
@@ -1372,10 +1364,21 @@
       "title": "SMILES, JOY AND WONDER",
       "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
       "file_path": "_site/joy.html",
-      "outgoing_links": ["/magic", "/eulogy", "/magic"],
+      "outgoing_links": ["/magic", "/eulogy", "/magic", "/like-switch"],
       "incoming_links": ["/happy"],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 17000
+    },
+    "/like-switch": {
+      "py/object": "__main__.Page",
+      "url": "/like-switch",
+      "title": "HOW TO BUILD RAPPORT AND SET PEOPLE AT EASE",
+      "description": "The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form\n\n",
+      "file_path": "_site/like-switch.html",
+      "outgoing_links": [],
+      "incoming_links": ["/joy"],
+      "redirect_url": "",
+      "doc_size": 14000
     },
     "/magic": {
       "py/object": "__main__.Page",
@@ -1445,13 +1448,13 @@
         "/software-leadership-roles"
       ],
       "redirect_url": "",
-      "doc_size": 114000
+      "doc_size": 115000
     },
     "/mental-pain": {
       "py/object": "__main__.Page",
       "url": "/mental-pain",
       "title": "THE THOUGHTS THAT PAIN US",
-      "description": "Pain is in the brain as they say, which is especially true for mental pains. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.\n\n",
+      "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.\n\n",
       "file_path": "_site/mental-pain.html",
       "outgoing_links": [
         "/mental-pain",
@@ -1463,6 +1466,7 @@
       ],
       "incoming_links": [
         "/addiction",
+        "/anger",
         "/curious",
         "/d/resistance",
         "/d/time-off-12-2020",
