@@ -78,7 +78,7 @@ When folks have questions or appear stuck, that's a great time to provide rapid 
 - Expand: What Else?
 - Focus Problem: What's the real challenge here for you?
 - Focus Need: What do you want?
-  - Do not ask why, it makes people defensive - you're question their ability by asking why.
+  - Do not ask why, it makes people defensive - you're questioning their ability by asking why.
   - Want vs Need
 - Focus Request: How can I help?
 - Focus Trade off: If you say yes to this, what will you have to say no to?
