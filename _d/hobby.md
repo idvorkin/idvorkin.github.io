@@ -4,7 +4,9 @@ title: "Why a Engineering Manager masquerades as a magician on the weekends"
 permalink: /hobby
 redirect-from:
   - /hobbies
----<!--
+---
+
+<!--
 Who is the audience?
 * People struggling to find a new hobby
 * Igor reminding himself to re-invigorate the hobby.
