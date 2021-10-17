@@ -15,7 +15,7 @@ Why?
 * You can't "not think about work" you need to "think about something".
 -->
 
-Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don't want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. For those days, I'm gratful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.
+Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don't want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. For those days, I'm grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.
 
 ### Why find a hobby
 
