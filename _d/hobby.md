@@ -2,11 +2,9 @@
 layout: post
 title: "Why a Engineering Manager masquerades as a magician on the weekends"
 permalink: /hobby
-date: "2018-06-09 16:21:17 Pacific Daylight Time"
-tags:
----
-
-<!--
+redirect-from:
+  - /hobbies
+---<!--
 Who is the audience?
 * People struggling to find a new hobby
 * Igor reminding himself to re-invigorate the hobby.
@@ -15,11 +13,11 @@ Why?
 * You can't "not think about work" you need to "think about something".
 -->
 
-Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don't want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. For those days, I'm grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.
+Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don't want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. Those days, I'm grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.
 
 ### Why find a hobby
 
-Being [satisfied](/happy) is the point of life, and a great hobby provides satisfaction by reinforcing your identity and helping you build relationships. A great hobby puts you in flow, giving pleasure by itself, and resting your mind from life's stressors. A great hobby lets you continuously improve, giving a feeling of mastery. This feels great, and reinforces your self confidence.
+Being [satisfied](/happy) is the point of life, and a great hobby provides satisfaction by reinforcing your [identity](/eulogy) and helping you build relationships. A great hobby puts you in flow, giving pleasure by itself, and resting your mind from life's stressors. A great hobby lets you continuously improve, giving a feeling of mastery. This feels great, and reinforces your self confidence.
 
 If you don't have time for a hobby because you need all your energy for work and family, you should reconsider. Your work and family will eventually become stressful, and when they do having a hobby use can use to recharge will be a life saver.
 
@@ -57,13 +55,13 @@ For those unfamiliar with the terms, Autonomy, Mastery, Purpose (AMP) is Danial 
 
 #### What's the difference between hobbies and habits?
 
-This gets into nomenclature. In my model, hobbies are things that make you happy while habits (the positive ones) make you healthy. Practicing your hobby can become a habit.
+This gets into nomenclature. In my model, hobbies are things that make you happy while [habits](/habits) (the positive ones) make you healthy. Practicing your hobby can become a habit.
 
 **Should I have my hobby be my work?** I'd recommend strongly against it for two reasons. First, it's work so you'll need to prioritize what makes your customers happy over what makes you happy and second, because if works goes badly, you'll also lose your hobby, which defeats the purpose of having a hobby.
 
 #### What is your hobby?
 
-My current hobby is [magic](/magic). All I need is a coin or a deck of cards and I can do it anywhere. Magic has incredible technical depth, and every few months I learn a new technique or presentation. Magic lets me be a "Maker of smiles and wonder" which is core to my identity, and lets me connect to magicians to tune my craft, and strangers for brief interactions of smiles and wonder.
+My current hobby is [magic](/magic). All I need is a coin or a deck of cards and I can do it anywhere. Magic has incredible technical depth, and every few months I learn a new technique or presentation. Magic lets me be a ["Maker of smiles and wonder" which is core to my identity](/joy), and lets me connect to magicians to tune my craft, and strangers for brief interactions of smiles and wonder.
 
 #### Did you find your hobby on the first try?
 
