@@ -45,6 +45,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 - [Family](#family)
     - [Husband](#husband)
     - [Father](#father)
+- [Cognative Reframe Upgrades](#cognative-reframe-upgrades)
 - [Triggers and Mental Quick Sand](#triggers-and-mental-quick-sand)
     - [Stress and anxiety](#stress-and-anxiety)
     - [Corona Virus](#corona-virus)
@@ -147,6 +148,15 @@ I have two common failure modes to my morning routine.
 ### Husband
 
 ### Father
+
+## Cognative Reframe Upgrades
+
+The words you use influence how you think.
+
+- I'm under water --> I'm fully booked this week
+- I'm not doing a good job --> When I'm at my best I do
+- I manage the XYZ team -> I support the XYZ team
+- This is crap --> Help me understand (/compassion)
 
 ## Triggers and Mental Quick Sand
 
