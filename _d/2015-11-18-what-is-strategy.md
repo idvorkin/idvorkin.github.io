@@ -184,8 +184,12 @@ The four is a fantastic book describing the value of the FANG companies.
 
 #### Stratechary
 
-- Aggregator theory
-- Disruption theory
+This guy is amazing. He discusses many challenges with tech and strategy, well worth buying his stuff.
+
+Go read all his [concepts](https://stratechery.com/concepts/)
+
+- [Aggregator theory](https://stratechery.com/aggregation-theory/)
+- [Disruption theory]()
 - Horizontal vs Vertical Integration
 
 #### By company
