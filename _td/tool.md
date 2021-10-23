@@ -268,9 +268,8 @@ TUI (merge tool)[https://github.com/mkchoi212/fac]
 - Keyboard shortcuts: https://help.github.com/articles/using-keyboard-shortcuts/
 - Grip - Local renders of GHFM https://github.com/joeyespo/grip
 - hub a better git client that understands everything comes from github
-- Search all commits by author and day
-
-  https://github.com/search?q=user%3Aidvorkin+author-date%3A2020-06-20+author%3Aidvorkin
+- [Search all commits by author and day](https://github.com/search?q=user%3Aidvorkin+author-date%3A2020-06-20+author%3Aidvorkin)
+- [See diff (w/all changes) between dates](https://github.com/idvorkin/idvorkin.github.io/compare/master@%7B1day%7D...master)
 
 ### SSH
 
@@ -586,7 +585,7 @@ _(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to
 
 Terminfo, ncurses, OSX, what a mess. You need to add your own terminfos see:
 
-* https://gist.github.com/bbqtd/a4ac060d6f6b9ea6fe3aabe735aa9d95
+- https://gist.github.com/bbqtd/a4ac060d6f6b9ea6fe3aabe735aa9d95
 
 You also want to install the other terminals like xterm256 and tmux
 
