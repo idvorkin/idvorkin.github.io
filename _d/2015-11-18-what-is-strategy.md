@@ -173,6 +173,15 @@ The four is a fantastic book describing the value of the FANG companies.
 
 {%include blob_image.html src="marketcap.png" %}
 
+#### A humorous explanation of tech
+
+- Instagram is like high school cliques
+- Facebook is like thanksgiving with your uncle who believes all the conspiracy theories
+- Amazon is the mall.
+- NextDoor is like that lady who watches everything that happens on the block put her window. But also yelling
+- Snapchat is like frat parties?
+- Zillow is like the real estate agent who can't close the deal.
+
 #### Stratechary
 
 - Aggregator theory
