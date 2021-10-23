@@ -33,6 +33,7 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
     - [Joy and Overwhelming kindness from a stranger.](#joy-and-overwhelming-kindness-from-a-stranger)
     - [Joy versus pleasure](#joy-versus-pleasure)
     - [Things that bring most people joy](#things-that-bring-most-people-joy)
+    - [Is bringing others joy manipulation?](#is-bringing-others-joy-manipulation)
 - [Future Projects](#future-projects)
     - [Smile box](#smile-box)
     - [Bubble Show](#bubble-show)
@@ -147,6 +148,14 @@ Pleasure is the release of tension. The going from anticipation of something pos
 - Singing out loud
 - Christmas Carols
 - Dancing
+
+### Is bringing others joy manipulation?
+
+This is especially relevant to magic. I think this depends on intent.
+
+**It is not manipulation if** your intent is bring the other person pleasure.
+
+**It is manipulation if** your intent is to take advantage of the other person.
 
 ## Future Projects
 
