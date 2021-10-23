@@ -334,3 +334,4 @@ I need to minimize distractions, so I try to write distraction free on my iPad
 ### Other resources
 
 - [Write 5x more but 5x shorter](https://critter.blog/2020/10/02/write-5x-more-but-write-5x-less/)
+- If writing for fun, check out these [creative writing prompts](https://www.reddit.com/r/WritingPrompts/hot/)
