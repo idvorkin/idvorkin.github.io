@@ -13,6 +13,8 @@
     "/7h-c7": "/sharpen-the-saw",
     "/7habits": "/7-habits",
     "/90": "/90days",
+    "/affirm": "/affirmations",
+    "/affirmations": "/affirmations",
     "/alexa-charity": "/toysfortots",
     "/anxious": "/anxiety",
     "/atomic-habits": "/d/habits",
@@ -37,10 +39,12 @@
     "/decide": "/decisive",
     "/decision": "/decisive",
     "/delegation": "/delegate",
+    "/don-juan": "/enemy",
     "/dream-job": "/job",
     "/duck-pride": "/pride",
     "/eat-that-frog": "/frog",
     "/emotional-health-practices": "/emotional-health",
+    "/enemies": "/enemy",
     "/enjoy": "/happy",
     "/essential": "/essentialism",
     "/exercise": "/physical-health",
@@ -732,6 +736,7 @@
       "incoming_links": [
         "/d/2017-04-09-igor-the-operating-manual",
         "/d/resistance",
+        "/hobby",
         "/idle",
         "/manager-book",
         "/psychic-weight",
@@ -769,6 +774,7 @@
       ],
       "incoming_links": [
         "/books-that-defined-me",
+        "/enemy",
         "/first-things-first",
         "/frog",
         "/psychic-weight",
@@ -923,17 +929,6 @@
       "redirect_url": "",
       "doc_size": 25000
     },
-    "/don-juan": {
-      "py/object": "__main__.Page",
-      "url": "/don-juan",
-      "title": "FOUR ENEMIES",
-      "description": "Fear, Arrogrance, Authority and Old Age, are the four enemies of satisfication as described in Don Juan’s teachings.\n\n",
-      "file_path": "_site/don-juan.html",
-      "outgoing_links": [],
-      "incoming_links": ["/chapters"],
-      "redirect_url": "",
-      "doc_size": 12000
-    },
     "/drbot": {
       "py/object": "__main__.Page",
       "url": "/drbot",
@@ -988,6 +983,17 @@
       "redirect_url": "",
       "doc_size": 10000
     },
+    "/enemy": {
+      "py/object": "__main__.Page",
+      "url": "/enemy",
+      "title": "FOUR ENEMIES",
+      "description": "Fear, Arrogrance, Authority and Apathy, are the four enemies of satisfication as described in Don Juan’s teachings.\n\n",
+      "file_path": "_site/enemy.html",
+      "outgoing_links": ["/pride", "/resistance"],
+      "incoming_links": ["/chapters"],
+      "redirect_url": "",
+      "doc_size": 12000
+    },
     "/essentialism": {
       "py/object": "__main__.Page",
       "url": "/essentialism",
@@ -1032,6 +1038,7 @@
         "/end-in-mind",
         "/frog",
         "/happy",
+        "/hobby",
         "/irl",
         "/joy",
         "/timeoff"
@@ -1201,7 +1208,7 @@
       "title": "WHY A ENGINEERING MANAGER MASQUERADES AS A MAGICIAN ON THE WEEKENDS",
       "description": "\n\n",
       "file_path": "_site/hobby.html",
-      "outgoing_links": ["/happy", "/magic"],
+      "outgoing_links": ["/happy", "/eulogy", "/habits", "/magic", "/joy"],
       "incoming_links": ["/d/2017-04-09-igor-the-operating-manual"],
       "redirect_url": "",
       "doc_size": 15000
@@ -1365,7 +1372,7 @@
       "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
       "file_path": "_site/joy.html",
       "outgoing_links": ["/magic", "/eulogy", "/magic", "/like-switch"],
-      "incoming_links": ["/happy"],
+      "incoming_links": ["/happy", "/hobby"],
       "redirect_url": "",
       "doc_size": 17000
     },
@@ -1669,6 +1676,7 @@
         "/being-a-great-manager",
         "/coaching",
         "/comp",
+        "/enemy",
         "/manager-book",
         "/mental-pain",
         "/mind-monsters",

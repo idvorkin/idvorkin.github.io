@@ -5,7 +5,9 @@ author: "Igor Dvorkin"
 comments: true
 collapsable: true
 permalink: /enemy
-redirect_from: /don-juan
+redirect_from:
+  - /don-juan
+  - /enemies
 
 tags:
   - wisdom
