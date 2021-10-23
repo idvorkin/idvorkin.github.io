@@ -4,6 +4,8 @@ title: "Four enemies"
 author: "Igor Dvorkin"
 comments: true
 collapsable: true
+permalink: /enemy
+redirect_from: /don-juan
 
 tags:
   - wisdom
