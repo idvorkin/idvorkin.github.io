@@ -267,7 +267,7 @@
       ],
       "incoming_links": [
         "/90days",
-        "/d/2017-04-09-igor-the-operating-manual",
+        "/operating-manual",
         "/parkinson",
         "/writing"
       ],
@@ -293,11 +293,11 @@
       "file_path": "_site/anxiety.html",
       "outgoing_links": ["/7h-c1", "/idle-loop", "/voices"],
       "incoming_links": [
-        "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
         "/gtd",
         "/happy",
         "/mental-pain",
+        "/operating-manual",
         "/voices"
       ],
       "redirect_url": "",
@@ -358,11 +358,7 @@
       "description": "Biking, is something that make my very happy. I have multiple bikes, here are my notes.\n\n",
       "file_path": "_site/bike.html",
       "outgoing_links": ["/brompton-toys", "/warm"],
-      "incoming_links": [
-        "/d/2017-04-09-igor-the-operating-manual",
-        "/eulogy",
-        "/irl"
-      ],
+      "incoming_links": ["/eulogy", "/irl", "/operating-manual"],
       "redirect_url": "",
       "doc_size": 18000
     },
@@ -629,37 +625,6 @@
       "redirect_url": "",
       "doc_size": 20000
     },
-    "/d/2017-04-09-igor-the-operating-manual": {
-      "py/object": "__main__.Page",
-      "url": "/d/2017-04-09-igor-the-operating-manual",
-      "title": "IGOR THE OPERATING MANUAL",
-      "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.\n\n",
-      "file_path": "_site/d/2017-04-09-igor-the-operating-manual.html",
-      "outgoing_links": [
-        "/facebook",
-        "/amazon",
-        "/writing",
-        "/dream-job",
-        "/habits",
-        "/physical-health",
-        "/emotional-health",
-        "/writing",
-        "/eulogy",
-        "/hobby",
-        "/bike",
-        "/magic",
-        "/voices",
-        "/anxiety",
-        "/physical-health",
-        "/diet",
-        "/money",
-        "/money",
-        "/parkinson"
-      ],
-      "incoming_links": [],
-      "redirect_url": "",
-      "doc_size": 19000
-    },
     "/d/2017-07-22-vacationphotos": {
       "py/object": "__main__.Page",
       "url": "/d/2017-07-22-vacationphotos",
@@ -734,11 +699,11 @@
       "file_path": "_site/d/habits.html",
       "outgoing_links": [],
       "incoming_links": [
-        "/d/2017-04-09-igor-the-operating-manual",
         "/d/resistance",
         "/hobby",
         "/idle",
         "/manager-book",
+        "/operating-manual",
         "/psychic-weight",
         "/sharpen-the-saw",
         "/switch"
@@ -907,7 +872,7 @@
       "file_path": "_site/diet.html",
       "outgoing_links": ["/exercise"],
       "incoming_links": [
-        "/d/2017-04-09-igor-the-operating-manual",
+        "/operating-manual",
         "/physical-health",
         "/sharpen-the-saw"
       ],
@@ -963,9 +928,9 @@
         "/voices"
       ],
       "incoming_links": [
-        "/d/2017-04-09-igor-the-operating-manual",
         "/irl",
         "/mind-at-work",
+        "/operating-manual",
         "/sharpen-the-saw",
         "/siy"
       ],
@@ -1032,7 +997,6 @@
       ],
       "incoming_links": [
         "/bmy",
-        "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
         "/dsat",
         "/end-in-mind",
@@ -1041,6 +1005,7 @@
         "/hobby",
         "/irl",
         "/joy",
+        "/operating-manual",
         "/timeoff"
       ],
       "redirect_url": "",
@@ -1053,7 +1018,7 @@
       "description": "Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook\n\n",
       "file_path": "_site/facebook.html",
       "outgoing_links": ["/covid19"],
-      "incoming_links": ["/d/2017-04-09-igor-the-operating-manual"],
+      "incoming_links": ["/operating-manual"],
       "redirect_url": "",
       "doc_size": 25000
     },
@@ -1209,7 +1174,7 @@
       "description": "\n\n",
       "file_path": "_site/hobby.html",
       "outgoing_links": ["/happy", "/eulogy", "/habits", "/magic", "/joy"],
-      "incoming_links": ["/d/2017-04-09-igor-the-operating-manual"],
+      "incoming_links": ["/operating-manual"],
       "redirect_url": "",
       "doc_size": 15000
     },
@@ -1339,10 +1304,10 @@
       ],
       "incoming_links": [
         "/bmy",
-        "/d/2017-04-09-igor-the-operating-manual",
         "/eulogy",
         "/job-hunt-stress",
-        "/manager-book"
+        "/manager-book",
+        "/operating-manual"
       ],
       "redirect_url": "",
       "doc_size": 18000
@@ -1395,12 +1360,12 @@
       "file_path": "_site/magic.html",
       "outgoing_links": [],
       "incoming_links": [
-        "/d/2017-04-09-igor-the-operating-manual",
         "/d/resistance",
         "/eulogy",
         "/hobby",
         "/idle",
-        "/joy"
+        "/joy",
+        "/operating-manual"
       ],
       "redirect_url": "",
       "doc_size": 15000
@@ -1452,6 +1417,7 @@
         "/being-a-great-manager",
         "/coaching",
         "/dsat",
+        "/operating-manual",
         "/software-leadership-roles"
       ],
       "redirect_url": "",
@@ -1587,7 +1553,7 @@
       "file_path": "_site/money.html",
       "outgoing_links": ["/parkinson"],
       "incoming_links": [
-        "/d/2017-04-09-igor-the-operating-manual",
+        "/operating-manual",
         "/parkinson",
         "/td/time-off-3-2020"
       ],
@@ -1616,6 +1582,44 @@
       "redirect_url": "",
       "doc_size": 16000
     },
+    "/operating-manual": {
+      "py/object": "__main__.Page",
+      "url": "/operating-manual",
+      "title": "IGOR THE OPERATING MANUAL",
+      "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.\n\n",
+      "file_path": "_site/operating-manual.html",
+      "outgoing_links": [
+        "/facebook",
+        "/facebook",
+        "/amazon",
+        "/amazon",
+        "/writing",
+        "/dream-job",
+        "/dream-job",
+        "/manager-book",
+        "/manager-book",
+        "/strength-finder",
+        "/habits",
+        "/physical-health",
+        "/emotional-health",
+        "/writing",
+        "/eulogy",
+        "/hobby",
+        "/bike",
+        "/magic",
+        "/voices",
+        "/anxiety",
+        "/physical-health",
+        "/ig66/587",
+        "/diet",
+        "/money",
+        "/money",
+        "/parkinson"
+      ],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 21000
+    },
     "/pandas": {
       "py/object": "__main__.Page",
       "url": "/pandas",
@@ -1634,11 +1638,7 @@
       "description": "Work expands to fill the resources available. The more you make the more you spend. Stuff expands to fill the space available for storage. etc, etc.\n\n",
       "file_path": "_site/parkinson.html",
       "outgoing_links": ["/amazon", "/money", "/time-off"],
-      "incoming_links": [
-        "/d/2017-04-09-igor-the-operating-manual",
-        "/manager-book",
-        "/money"
-      ],
+      "incoming_links": ["/manager-book", "/money", "/operating-manual"],
       "redirect_url": "",
       "doc_size": 14000
     },
@@ -1655,10 +1655,10 @@
         "/irl#physical-health"
       ],
       "incoming_links": [
-        "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
         "/diet",
         "/irl",
+        "/operating-manual",
         "/sharpen-the-saw",
         "/tech-health-toys"
       ],
@@ -1886,7 +1886,7 @@
       "outgoing_links": [],
       "incoming_links": ["/manager-book"],
       "redirect_url": "",
-      "doc_size": 20000
+      "doc_size": 21000
     },
     "/strength-finder": {
       "py/object": "__main__.Page",
@@ -1895,7 +1895,7 @@
       "description": "Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.\n\n",
       "file_path": "_site/strength-finder.html",
       "outgoing_links": ["/static/StrengthFinderIgor.pdf"],
-      "incoming_links": [],
+      "incoming_links": ["/operating-manual"],
       "redirect_url": "",
       "doc_size": 16000
     },
@@ -2342,10 +2342,10 @@
       "outgoing_links": ["/7h-c4", "/anxiety"],
       "incoming_links": [
         "/anxiety",
-        "/d/2017-04-09-igor-the-operating-manual",
         "/depression",
         "/emotional-health",
-        "/mind-monsters"
+        "/mind-monsters",
+        "/operating-manual"
       ],
       "redirect_url": "",
       "doc_size": 14000
@@ -2437,8 +2437,8 @@
       "incoming_links": [
         "/90days",
         "/amazon",
-        "/d/2017-04-09-igor-the-operating-manual",
-        "/manager-book"
+        "/manager-book",
+        "/operating-manual"
       ],
       "redirect_url": "",
       "doc_size": 30000
