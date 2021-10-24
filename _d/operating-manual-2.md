@@ -43,7 +43,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 - [Family](#family)
     - [Husband](#husband)
     - [Father](#father)
-- [Cognative Reframe Upgrades](#cognative-reframe-upgrades)
+- [Cognitive Reframe Upgrades](#cognitive-reframe-upgrades)
 - [Triggers and Mental Quick Sand](#triggers-and-mental-quick-sand)
     - [Stress and anxiety](#stress-and-anxiety)
     - [Corona Virus](#corona-virus)
@@ -91,7 +91,7 @@ I spent a lot of time learning to be a manager, and am [writing a book, or reall
 
 #### From [Strength Finder](/strength-finder)
 
-Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator , Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.
+Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called Strength Finder and it discovered my strengths are Activator , Communication, Problem Solving (Resolver in Strength Finder speak) Adaptability, and Ideation.
 
 ### My kryptonite
 
@@ -157,7 +157,7 @@ I have two common failure modes to my morning routine.
 
 ### Father
 
-## Cognative Reframe Upgrades
+## Cognitive Reframe Upgrades
 
 The words you use influence how you think.
 
@@ -174,7 +174,7 @@ Like most folks I have triggers and mental quick sand which I can get trapped in
 
 ### Corona Virus
 
-- My gosh this is sucking up lots of brain power. I don't think I get value thinking about htis. I have two choices, stop thinking about this,_OR_ write a post on all my thoughts on this.
+- My gosh this is sucking up lots of brain power. I don't think I get value thinking about this. I have two choices, stop thinking about this,_OR_ write a post on all my thoughts on this.
 
 ### Raising kids
 
@@ -192,7 +192,7 @@ When it comes to family, like all things, it's easy to confuse hours for quality
 
 #### The point of [money](/money)
 
-Money isn;t just to make piles, it's to enable you to do stuff. Stuff does not equal stuff you don't use, stuff is actually often experiences. And most of the best stuff you can't buy. Yup, it's doing and it's with whom you are doing it.
+Money isn't just to make piles, it's to enable you to do stuff. Stuff does not equal stuff you don't use, stuff is actually often experiences. And most of the best stuff you can't buy. Yup, it's doing and it's with whom you are doing it.
 
 #### What would I do for less money
 
@@ -200,4 +200,4 @@ If you wouldn't take a job for a pay cut, you probably shouldn't take the job.
 
 #### Making more vs spending more
 
-See [Parkinson's law](/parkinson), applies to both tim and Money.
+See [Parkinson's law](/parkinson), applies to both time and Money.
