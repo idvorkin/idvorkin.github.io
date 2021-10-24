@@ -12,14 +12,17 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc GFM -->
 
-- [Joining Facebook](#joining-facebook)
-- [Joining Amazon](#joining-amazon)
-- [Dream Job](#dream-job)
+- [Career](#career)
+    - [Joining Facebook](#joining-facebook)
+    - [Joining Amazon](#joining-amazon)
+    - [Dream Job](#dream-job)
+    - [Being a Great Manager](#being-a-great-manager)
     - [My super powers](#my-super-powers)
         - [Relationships](#relationships)
         - [Technical Depth and Breadth](#technical-depth-and-breadth)
         - [Technical Best Practice](#technical-best-practice)
         - [Ability to sanity test all tech stuff.](#ability-to-sanity-test-all-tech-stuff)
+        - [From Strength Finder](#from-strength-finder)
     - [My kryptonite](#my-kryptonite)
         - [Bean counting](#bean-counting)
         - [Committing and describing relative to ideal, not relative to reality.](#committing-and-describing-relative-to-ideal-not-relative-to-reality)
@@ -56,17 +59,23 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Joining Facebook
+## Career
+
+### [Joining Facebook](/facebook)
 
 In mid 2020, I joined [Facebook](/facebook) and it has been an absolute pleasure. Facebook is very aligned with my desired culture: Top shelf people, top notch management, a genuine caring about people, and a move fast and iterate culture.
 
-## Joining Amazon
+### [Joining Amazon](/amazon)
 
 At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years and it was a tough transition.
 
-## [Dream Job](/dream-job)
+### [Dream Job](/dream-job)
 
-In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.
+In my [dream job](/dream-job) I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.
+
+### [Being a Great Manager](/manager-book)
+
+I spent a lot of time learning to be a manager, and am [writing a book, or really notes to myself](/manager-book).
 
 ### My super powers
 
@@ -79,6 +88,10 @@ In my dream job I learn the customer and business needs and focus the team on de
 #### Technical Best Practice
 
 #### Ability to sanity test all tech stuff.
+
+#### From [Strength Finder](/strength-finder)
+
+Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator , Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.
 
 ### My kryptonite
 
@@ -168,6 +181,10 @@ Like most folks I have triggers and mental quick sand which I can get trapped in
 #### [Physical health](/physical-health)
 
 #### Not spending enough time with them
+
+When it comes to family, like all things, it's easy to confuse hours for quality. Being at home playing on his tablet, while the kids played on theirs wasn't family time. Instead Igor realized the key is having dates, a time he gave the gift of his complete attention to Amelia, Zach and Tori. Date nights were sacred and could be whatever the kid wanted. Here's a [nice date night](/ig66/587)
+
+![](https://github.com/idvorkin/blob/raw/master/ig66/587/montage.jpg)
 
 #### [Diet and Weight](/diet)
 
