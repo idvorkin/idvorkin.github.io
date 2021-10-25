@@ -1552,6 +1552,8 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 - [Elided Branches](http://www.elidedbranches.com/) - Blog on engineering management.
 - [I.M Wright's Hard Code](https://imwrightshardcode.com) - Engineering Management from Microsoft, covers most topics.
 - [Give away your legos](https://review.firstround.com/give-away-your-legos-and-other-commandments-for-scaling-startups) Dealing with org's scaling
+- [Sue's What does a manager Do, anyways](https://evilplantosavethe.world/2021/01/what-does-a-manager-do-anyway/)
+- [Sue's Manager vs IC](https://evilplantosavethe.world/2021/10/manager-vs-ic/)
 
 ### Great books
 
