@@ -26,9 +26,9 @@ A prompt will kick start a great conversation, a great insight, and a great rela
     - [Getting deeper](#getting-deeper)
     - [Meta & Feelings](#meta--feelings)
 - [Friendship Prompts](#friendship-prompts)
-    - [Easy](#easy)
-    - [Medium](#medium)
-    - [Hard](#hard)
+    - [Safe](#safe)
+    - [Deep](#deep)
+    - [Vulnerable](#vulnerable)
 - [Coaching Prompts](#coaching-prompts)
 
 <!-- vim-markdown-toc -->
@@ -156,15 +156,11 @@ Talk about emotions. Label one you’re feeling, or what you sense from other pe
 
 From [berkley's building closeness](https://ggia.berkeley.edu/practice/36_questions_for_increasing_closeness#data-tab-how)
 
-Find a time when you and your partner have at least 45 minutes free and are able to meet in person.
+Find a time when you and your partner have at least 45 minutes free and are able to meet in person. For each set of questions, each person should answer each question, but in an alternating order, so that a different person goes first each time.
 
-For 15 minutes, take turns asking one another the questions in easy below. Each person should answer each question, but in an alternating order, so that a different person goes first each time.
+Spend 15 minutes on Safe, then Deep, and then on Vulnerable prompts
 
-After 15 minutes, move on to medium, even if you haven’t yet finished the easy yet. Then spend 15 minutes on medium, following the same system.
-
-After 15 minutes on medium, spend 15 minutes on hard.
-
-### Easy
+### Safe
 
 - Given the choice of anyone in the world, whom would you want as a dinner guest?
 - Would you like to be famous? In what way?
@@ -179,7 +175,7 @@ After 15 minutes on medium, spend 15 minutes on hard.
 - Take four minutes and tell your partner your life story in as much detail as possible.
 - If you could wake up tomorrow having gained any one quality or ability, what would it be?
 
-### Medium
+### Deep
 
 - If a crystal ball could tell you the truth about yourself, your life, the future, or anything else, what would you want to know?
 - Is there something that you’ve dreamed of doing for a long time? Why haven’t you done it?
@@ -194,7 +190,7 @@ After 15 minutes on medium, spend 15 minutes on hard.
 - How close and warm is your family? Do you feel your childhood was happier than most other people’s?
 - How do you feel about your relationship with your mother?
 
-### Hard
+### Vulnerable
 
 - Make three true “we” statements each. For instance, “We are both in this room feeling…"
 - Complete this sentence: “I wish I had someone with whom I could share…"
