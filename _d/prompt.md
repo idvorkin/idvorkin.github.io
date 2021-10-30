@@ -10,8 +10,8 @@ A prompt will kick start a great conversation, a great insight, and a great rele
 <!-- vim-markdown-toc GFM -->
 
 - [Work Prompts](#work-prompts)
-    - [Give extra honest feedback (All the time)](#give-extra-honest-feedback-all-the-time)
-    - [Get extra honest feedback (All the time)](#get-extra-honest-feedback-all-the-time)
+    - [Give extra honest feedback (Frequent)](#give-extra-honest-feedback-frequent)
+    - [Get extra honest feedback (Frequent)](#get-extra-honest-feedback-frequent)
     - [Meta & Feelings (Occasional)](#meta--feelings-occasional)
     - [Career](#career)
     - [What are your biggest time wasters?](#what-are-your-biggest-time-wasters)
@@ -31,14 +31,14 @@ A prompt will kick start a great conversation, a great insight, and a great rele
 
 _From the [awkward 1:1](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) and Holloway's remote management guide_
 
-### Give extra honest feedback (All the time)
+### Give extra honest feedback (Frequent)
 
 - Are they acting like the best manager / report / partner you could wish for? Are you? Why or why not? Discuss.
 - What have you already told someone else about this person (or heard others say)? Share with them. Discuss.
 - What is everyone around neglecting to tell this person?
 - What’s the work equivalent of this person having food stuck in their teeth? Be a good friend / coworker and tell them.
 
-### Get extra honest feedback (All the time)
+### Get extra honest feedback (Frequent)
 
 Remember skip the fluffy answer and ask again until you get something real.
 

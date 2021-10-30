@@ -193,5 +193,73 @@ function addBackLinksLoader() {
   $.getJSON(backlinks_url, ProcessBackLinks);
 }
 
+// The prompts page has a bunch of lists of prompts
+// Would be nice to "pick a random one" to make it less intimidating
+// So can add a box at the top with a random prompt on top
+// And a random per section prompt
+function add_random_prompts() {
+    console.log("add_random_prompts++")
+
+    // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
+    const starting_node = $("h3")[0]
+    const node = starting_node
+    let current_category = starting_node
+    let prompts_for_category = []
+    let all_prompts = []
+    let render_random_prompt = () => {
+        //print one of the prompts
+        let random_prompt = _.sampleSize(prompts_for_category, 1)[0]
+        let category = current_category.textContent
+        // console.log(`${category}:${random_prompt}`)
+
+        // elem = $(`<div> <span class="badge badge-pill badge-primary"> ${random_prompt}</span></div>`)[0]
+        elem = $(`<div class="alert alert-primary" role="alert"> ${random_prompt}</span></div>`)[0]
+        $(current_category).after(elem)
+    }
+
+    for (let node = starting_node; node ;node= node.nextSibling)
+    {
+        if (node.tagName == "H3")
+        {
+            // End of category
+
+            if (!_.isEmpty(prompts_for_category))
+            {
+                render_random_prompt()
+            }
+
+            // Build prompt map
+
+            // start processing next categroy
+            current_category = node
+            prompts_for_category = []
+            continue
+        }
+
+        // in a category, prompts are the children of the first list
+        if (node.tagName != "UL")
+        {
+            continue
+        }
+        // print prompts
+        prompts_for_category =  _.map($(node).find("li"),(li)=>li.textContent)
+        all_prompts.concat(prompts_for_category)
+    }
+    render_random_prompt() // process last element
+
+    console.log("add_random_prompts--")
+}
+
+function random_prompt_loader() {
+  const url = window.location.href;
+  const is_target_page = url.includes("/prompts");
+  if (!is_target_page)
+  {
+      return;
+  }
+  add_random_prompts()
+}
+
 $(document).ready(addBackLinksLoader);
 $(document).ready(JsTemplateReplace);
+$(document).ready(random_prompt_loader);
