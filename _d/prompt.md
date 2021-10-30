@@ -4,10 +4,10 @@ title: Prompts, your guide to starting a conversation
 permalink: /prompts
 ---
 
-A prompt will kick start a great conversation, a great insight, and a great releationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.
+A prompt will kick start a great conversation, a great insight, and a great relationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.
 
 <div class="alert alert-primary" role="alert">
-    Too many choices? Pick a catory and then ask the question in the blue box!
+    Too many choices? Pick a category and then ask the question in the blue box!
 </div>
 
 <!-- prettier-ignore-start -->
@@ -34,7 +34,6 @@ A prompt will kick start a great conversation, a great insight, and a great rele
 
 _From the [awkward 1:1](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) and Holloway's remote management guide_
 
-
 ### Give extra honest feedback
 
 - Are they acting like the best manager / report / partner you could wish for? Are you? Why or why not? Discuss.
@@ -51,7 +50,6 @@ Remember skip the fluffy answer and ask again until you get something real.
 - Check for your own role in a weird situation.
 - Pick a thing you've recently complained about. Ask them — “What could I've done differently in that situation?” Ask for feedback on how to be better.
 - Admit a fault or a mistake. Ask for support and advice. Ask them if they noticed you making it or not.
-
 
 ### Career Growth
 
