@@ -26,7 +26,9 @@ A prompt will kick start a great conversation, a great insight, and a great rela
     - [Getting deeper](#getting-deeper)
     - [Meta & Feelings](#meta--feelings)
 - [Friendship Prompts](#friendship-prompts)
-    - [Deepen relationships](#deepen-relationships)
+    - [Easy](#easy)
+    - [Medium](#medium)
+    - [Hard](#hard)
 - [Coaching Prompts](#coaching-prompts)
 
 <!-- vim-markdown-toc -->
@@ -152,7 +154,7 @@ Talk about emotions. Label one you’re feeling, or what you sense from other pe
 
 ## Friendship Prompts
 
-### Deepen relationships
+### Easy
 
 - Given the choice of anyone in the world, whom would you want as a dinner guest?
 - Would you like to be famous? In what way?
@@ -166,6 +168,9 @@ Talk about emotions. Label one you’re feeling, or what you sense from other pe
 - If you could change anything about the way you were raised, what would it be?
 - Take four minutes and tell your partner your life story in as much detail as possible.
 - If you could wake up tomorrow having gained any one quality or ability, what would it be?
+
+### Medium
+
 - If a crystal ball could tell you the truth about yourself, your life, the future, or anything else, what would you want to know?
 - Is there something that you’ve dreamed of doing for a long time? Why haven’t you done it?
 - What is the greatest accomplishment of your life?
@@ -178,6 +183,9 @@ Talk about emotions. Label one you’re feeling, or what you sense from other pe
 - Alternate sharing something you consider a positive characteristic of your partner. Share a total of five items.
 - How close and warm is your family? Do you feel your childhood was happier than most other people’s?
 - How do you feel about your relationship with your mother?
+
+### Hard
+
 - Make three true “we” statements each. For instance, “We are both in this room feeling…"
 - Complete this sentence: “I wish I had someone with whom I could share…"
 - If you were going to become a close friend with your partner, please share what would be important for him or her to know.
