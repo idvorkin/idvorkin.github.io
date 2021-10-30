@@ -458,7 +458,13 @@
         "/the-manager-book",
         "/prompts"
       ],
-      "incoming_links": ["/insecure", "/manager-book", "/prompts", "/writing"],
+      "incoming_links": [
+        "/first-understand",
+        "/insecure",
+        "/manager-book",
+        "/prompts",
+        "/writing"
+      ],
       "redirect_url": "",
       "doc_size": 26000
     },
@@ -506,6 +512,7 @@
         "/90days",
         "/being-a-great-manager",
         "/coaching",
+        "/first-understand",
         "/getting-to-yes",
         "/getting-to-yes-with-yourself",
         "/happy",
@@ -1056,10 +1063,17 @@
       "title": "SEEK FIRST TO UNDERSTAND, THEN TO BE UNDERSTOOD",
       "description": "Imagine going to the eye doctor. After hearing your complaint he takes off his glasses and hands them to you.\n“Put these on,” he says. “I’ve worn this pair of glasses for ten years now and they’ve really helped me. I have an extra pair at home; you can wear these.” So you put them on, but it only makes the problem worse. “This is terrible!” you exclaim. “I can’t see a thing!” “Well, what’s wrong?” he asks. “They work great for me. Try harder.” “I am trying,” you insist. “Everything is a blur.” “Well, what’s the matter with you? Think positively.” “Okay. I positively can’t see a thing.” “Boy, are you ungrateful!” he chides. “And after all I’ve done to help you!”\n\n",
       "file_path": "_site/first-understand.html",
-      "outgoing_links": ["/7h", "/7h", "/siy"],
+      "outgoing_links": [
+        "/7h",
+        "/curious",
+        "/ig66/587",
+        "/prompts",
+        "/coaching",
+        "/siy"
+      ],
       "incoming_links": ["/7-habits", "/getting-to-yes"],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 14000
     },
     "/frog": {
       "py/object": "__main__.Page",
@@ -1689,12 +1703,12 @@
       "py/object": "__main__.Page",
       "url": "/prompts",
       "title": "PROMPTS, YOUR GUIDE TO STARTING A CONVERSATION",
-      "description": "A prompt will kick start a great conversation, a great insight, and a great releationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.\n\n",
+      "description": "A prompt will kick start a great conversation, a great insight, and a great relationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.\n\n",
       "file_path": "_site/prompts.html",
       "outgoing_links": ["/coaching"],
-      "incoming_links": ["/coaching", "/manager-book"],
+      "incoming_links": ["/coaching", "/first-understand", "/manager-book"],
       "redirect_url": "",
-      "doc_size": 19000
+      "doc_size": 23000
     },
     "/psychic-weight": {
       "py/object": "__main__.Page",
