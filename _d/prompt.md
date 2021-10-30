@@ -6,6 +6,10 @@ permalink: /prompts
 
 A prompt will kick start a great conversation, a great insight, and a great releationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.
 
+<div class="alert alert-primary" role="alert">
+    Too many choices? Pick a catory and then ask the question in the blue box!
+</div>
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
@@ -30,9 +34,6 @@ A prompt will kick start a great conversation, a great insight, and a great rele
 
 _From the [awkward 1:1](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) and Holloway's remote management guide_
 
-<div class="alert alert-primary" role="alert">
-    Too many choices? Pick a catory and then ask the question in the blue box!
-</div>
 
 ### Give extra honest feedback
 
