@@ -10,11 +10,9 @@ A prompt will kick start a great conversation, a great insight, and a great rele
 <!-- vim-markdown-toc GFM -->
 
 - [Work Prompts](#work-prompts)
-    - [Give extra honest feedback (Frequent)](#give-extra-honest-feedback-frequent)
-    - [Get extra honest feedback (Frequent)](#get-extra-honest-feedback-frequent)
-    - [Meta & Feelings (Occasional)](#meta--feelings-occasional)
-    - [Career](#career)
-    - [What are your biggest time wasters?](#what-are-your-biggest-time-wasters)
+    - [Give extra honest feedback](#give-extra-honest-feedback)
+    - [Receive extra honest feedback](#receive-extra-honest-feedback)
+    - [Career Growth](#career-growth)
     - [Seeking feedback](#seeking-feedback)
     - [Building relationships](#building-relationships)
     - [Transition and change questions](#transition-and-change-questions)
@@ -22,6 +20,7 @@ A prompt will kick start a great conversation, a great insight, and a great rele
     - [Well-being](#well-being)
     - [Conflict resolution](#conflict-resolution)
     - [Getting deeper](#getting-deeper)
+    - [Meta & Feelings](#meta--feelings)
 - [Coaching Prompts](#coaching-prompts)
 
 <!-- vim-markdown-toc -->
@@ -31,14 +30,18 @@ A prompt will kick start a great conversation, a great insight, and a great rele
 
 _From the [awkward 1:1](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f4e1dcbd1c5c) and Holloway's remote management guide_
 
-### Give extra honest feedback (Frequent)
+<div class="alert alert-primary" role="alert">
+    Too many choices? Pick a catory and then ask the question in the blue box!
+</div>
+
+### Give extra honest feedback
 
 - Are they acting like the best manager / report / partner you could wish for? Are you? Why or why not? Discuss.
 - What have you already told someone else about this person (or heard others say)? Share with them. Discuss.
 - What is everyone around neglecting to tell this person?
 - What’s the work equivalent of this person having food stuck in their teeth? Be a good friend / coworker and tell them.
 
-### Get extra honest feedback (Frequent)
+### Receive extra honest feedback
 
 Remember skip the fluffy answer and ask again until you get something real.
 
@@ -48,25 +51,13 @@ Remember skip the fluffy answer and ask again until you get something real.
 - Pick a thing you've recently complained about. Ask them — “What could I've done differently in that situation?” Ask for feedback on how to be better.
 - Admit a fault or a mistake. Ask for support and advice. Ask them if they noticed you making it or not.
 
-### Meta & Feelings (Occasional)
 
-Talk about emotions. Label one you’re feeling, or what you sense from other person. Boom, instant awkward and great discussion.
-
-- Any meta-conversation about your conversations.
-- We never talk about Topic A, we just always talk Topic B. Why is that?
-- When I tell you about Topic A, you always react like this, and that’s why I don’t tell you that stuff. When I bring up Topic B, how do you feel? Why is that?
-- Ask for their fears. What are they afraid of (for their career, the project, an upcoming tough meeting)? Why? Share your own.
-- Trust check. How easy is it for both of you to share intimate things with each other? Why? What would make it easier? Discuss.
-
-### Career
+### Career Growth
 
 - When did you recently get an opportunity to learn and grow? How can we create more of those?
 - Have you seen someone else doing something you felt worked really well? What was it?
 - What should I know about you that would help me support you better?
 - What are you doing here that you feel is most in line with your long-term goals?
-
-### What are your biggest time wasters?
-
 - If you could be proud of one accomplishment between now and next year, what would it be?
 - Is anything holding you back from doing the best work you can do right now?
 - Is there a project or area outside your current role where you feel you could be contributing?
@@ -147,6 +138,16 @@ Or ask the more boring questions
 - Is there something that you've dreamed of doing for a long time? Why haven’t you done it?
 - What do you value most in a friendship?
 - What, if anything, is too serious to be joked about?
+
+### Meta & Feelings
+
+Talk about emotions. Label one you’re feeling, or what you sense from other person. Boom, instant awkward and great discussion.
+
+- Any meta-conversation about your conversations.
+- We never talk about Topic A, we just always talk Topic B. Why is that?
+- When I tell you about Topic A, you always react like this, and that’s why I don’t tell you that stuff. When I bring up Topic B, how do you feel? Why is that?
+- Ask for their fears. What are they afraid of (for their career, the project, an upcoming tough meeting)? Why? Share your own.
+- Trust check. How easy is it for both of you to share intimate things with each other? Why? What would make it easier? Discuss.
 
 ## Coaching Prompts
 
