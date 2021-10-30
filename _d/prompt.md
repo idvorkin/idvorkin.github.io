@@ -154,6 +154,16 @@ Talk about emotions. Label one you’re feeling, or what you sense from other pe
 
 ## Friendship Prompts
 
+From [berkley's building closeness](https://ggia.berkeley.edu/practice/36_questions_for_increasing_closeness#data-tab-how)
+
+Find a time when you and your partner have at least 45 minutes free and are able to meet in person.
+
+For 15 minutes, take turns asking one another the questions in easy below. Each person should answer each question, but in an alternating order, so that a different person goes first each time.
+
+After 15 minutes, move on to medium, even if you haven’t yet finished the easy yet. Then spend 15 minutes on medium, following the same system.
+
+After 15 minutes on medium, spend 15 minutes on hard.
+
 ### Easy
 
 - Given the choice of anyone in the world, whom would you want as a dinner guest?
