@@ -25,7 +25,7 @@ A prompt will kick start a great conversation, a great insight, and a great rela
     - [Conflict resolution](#conflict-resolution)
     - [Getting deeper](#getting-deeper)
     - [Meta & Feelings](#meta--feelings)
-- [Friendship Prompts](#friendship-prompts)
+- [Friendship Prompts (Not For Work)](#friendship-prompts-not-for-work)
     - [Safe](#safe)
     - [Deep](#deep)
     - [Vulnerable](#vulnerable)
@@ -152,7 +152,7 @@ Talk about emotions. Label one you’re feeling, or what you sense from other pe
 - Ask for their fears. What are they afraid of (for their career, the project, an upcoming tough meeting)? Why? Share your own.
 - Trust check. How easy is it for both of you to share intimate things with each other? Why? What would make it easier? Discuss.
 
-## Friendship Prompts
+## Friendship Prompts (Not For Work)
 
 From [berkley's building closeness](https://ggia.berkeley.edu/practice/36_questions_for_increasing_closeness#data-tab-how)
 
