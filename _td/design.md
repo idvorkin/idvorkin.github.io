@@ -50,6 +50,14 @@ Nope, you already need an "apology workflow".
 
 ## Architecture Patterns
 
+Good list [here](https://orkhanscience.medium.com/software-architecture-patterns-5-mins-read-e9e3c8eb47d2)
+
+* Layered
+* Event Driven
+* MicroKernal (Plugin Based)
+* Micro Service (Service instead of plugin)
+* [Cloud Architecture](/td/cloud-first-applications)
+
 ## Other Resources
 
 - [Building Microservices: Designing Fine-Grained Systems](https://www.amazon.com/Building-Microservices-Designing-Fine-Grained-Systems/dp/1491950358)
