@@ -9,15 +9,18 @@ permalink: /coe
 redirect_from:
   - /rca
   - /correct-of-errors
-## Why COEs
+  - /root-cause-analysis
+---
 
-## Sections and questions
+Everyone can make a mistake once, that's totally fine. Repeating mistakes is unacceptable. Correction of Errors (COE) is the name Amazon gives it's mechanism for correcting errors. Microsoft uses the term Root cause analysis (RCA), it's the same concept. This mechanism originated with service outages but can be applied for any "error", like missing your sons kindergarden graduation, or getting fired.
 
-### What was the impact?
-### What is the Timeline?
+<!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-
+- [Why COEs](#why-coes)
+- [Sections and questions](#sections-and-questions)
+    - [What was the impact?](#what-was-the-impact)
+    - [What is the Timeline?](#what-is-the-timeline)
     - [How did you notice it?](#how-did-you-notice-it)
     - [How did you mitigate it?](#how-did-you-mitigate-it)
     - [What was the root cause?](#what-was-the-root-cause)
@@ -32,6 +35,16 @@ redirect_from:
 - [Related Reading](#related-reading)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
+## Why COEs
+
+## Sections and questions
+
+### What was the impact?
+
+### What is the Timeline?
+
 ### How did you notice it?
 
 ### How did you mitigate it?
