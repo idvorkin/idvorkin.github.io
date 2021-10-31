@@ -9,18 +9,15 @@ permalink: /coe
 redirect_from:
   - /rca
   - /correct-of-errors
-  - /root-cause-analysis
----
+## Why COEs
 
-Everyone can make a mistake once, that's totally fine. Repeating mistakes is unacceptable. Correction of Errors (COE) is the name Amazon gives it's mechanism for correcting errors. Microsoft uses the term Root cause analysis (RCA), it's the same concept. This mechanism originated with service outages but can be applied for any "error", like missing your sons kindergarden graduation, or getting fired.
+## Sections and questions
 
-<!-- prettier-ignore-start -->
+### What was the impact?
+### What is the Timeline?
 <!-- vim-markdown-toc GFM -->
 
-- [Why COEs](#why-coes)
-- [Sections and questions](#sections-and-questions)
-    - [What was the impact?](#what-was-the-impact)
-    - [What is the Timeline?](#what-is-the-timeline)
+
     - [How did you notice it?](#how-did-you-notice-it)
     - [How did you mitigate it?](#how-did-you-mitigate-it)
     - [What was the root cause?](#what-was-the-root-cause)
@@ -35,16 +32,6 @@ Everyone can make a mistake once, that's totally fine. Repeating mistakes is una
 - [Related Reading](#related-reading)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
-## Why COEs
-
-## Sections and questions
-
-### What was the impact?
-
-### What is the Timeline?
-
 ### How did you notice it?
 
 ### How did you mitigate it?
@@ -72,3 +59,4 @@ Everyone can make a mistake once, that's totally fine. Repeating mistakes is una
 - [I.M. Wright](https://imwrightshardcode.com/2019/10/tell-me-why-incident-rcas/) equivelant post
 - [COE Template](https://medium.com/@josh_70523/postmortem-correction-of-error-coe-template-db69481da31d)
 - [COE on being fired](https://sites.google.com/site/thefaceofamazon/home/coe-why-was-i-fired)
+- [Overcoming fear of failure](https://www.pagerduty.com/blog/engineers-guide-on-the-importance-of-failure/)
