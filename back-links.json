@@ -2008,7 +2008,7 @@
       "description": "The world is now on the cloud, here are my random notes on the topic.\n\n",
       "file_path": "_site/td/cloud-first-applications.html",
       "outgoing_links": [],
-      "incoming_links": ["/amazon", "/manager-book"],
+      "incoming_links": ["/amazon", "/manager-book", "/td/design"],
       "redirect_url": "",
       "doc_size": 22000
     },
@@ -2029,7 +2029,7 @@
       "title": "DESIGN",
       "description": "Software design is important. Here are my notes\n\n",
       "file_path": "_site/td/design.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/td/cloud-first-applications"],
       "incoming_links": ["/amazon"],
       "redirect_url": "",
       "doc_size": 12000
