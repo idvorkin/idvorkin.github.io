@@ -25,7 +25,7 @@ Dad the website isn't secure! You're the security expert fix it! Zach, my 10 yea
 
 ## Explain like I'm 10.
 
-This will be targeted at a less techincal audience, so expect some simplification that should annoy mor techincal people.
+This will be targeted at a less technical audience, so expect some simplification that should annoy more technical people.
 
 ### IPs and DNS, Phone numbers and phone books
 
@@ -57,7 +57,7 @@ On the internet, phone numbers are called IP Addresses, and they look like 112.1
 - Chrome: (Connecting to 10)
 - Zach: Sweet - I'm gonna play a fun game.
 
-But, there's some magic required here. How does chrome know the number for zacookiegames? Zach has no one to ask. Turns out, instead of Zach creating a contact, there's a internet phonebook called DNS. In it, you can look up that zacookiegames is at 10. So the above becomes.
+But, there's some magic required here. How does chrome know the number for zacookiegames? Zach has no one to ask. Turns out, instead of Zach creating a contact, there's a internet phone book called DNS. In it, you can look up that zacookiegames is at 10. So the above becomes.
 
 - Zach: I want to go to zacookiegames.com
 - **Chrome: Yo DNS- What number is zacookiegames.com at?**
@@ -85,25 +85,25 @@ So what can we do about it?
 
 Turns out there's something that doesn't exist on your phone, someone, like the police, who you can show your ID to, and then they'll give you a piece of paper proving you own the number. So...
 
-- Owner of Zacookie games (Dad) - Hey Police, can I get proof I can show people that I own zacookie games, and it's at 10.
+- Owner of Zacookie games (Dad) - Hey Police, can I get proof I can show people that I own Zacookie games, and it's at 10.
 - Police - OK, can I see your drivers license?
 - Dad - Sure!
-- Police, ok, here's your proof.
+- Police, OK, here's your proof.
 
-In computer lingo, that proof is called a certificate, and the the police is called the "ceritificate authority" or CA. Just like people trust the police, people trust the CA too. So now, to stop hackers, here's what chrome actually does.
+In computer lingo, that proof is called a certificate, and the the police is called the "certificate authority" or CA. Just like people trust the police, people trust the CA too. So now, to stop hackers, here's what chrome actually does.
 
 - Zach: I want to go to zacookiegames.com
 - _Chrome: Yo DNS- What number is zacookiegames.com at?_
 - _DNS: 10_
 - Chrome: He Zacookie - can I see the proof you own 10?
-- ZacookieGames: Sure, here's my proof!
+- Zacookiegames: Sure, here's my proof!
 - Chrome: Looks good - keep going!
 - Chrome: (Connecting to 10)
 - Zach: Sweet - I'm gonna play a fun game.
 
 ### So what was the problem?
 
-Turns out, instead of a single phone number, on the internet stuff breaks so you need more then 1 phone number. In this case, zacookies phone numbers were, 10,11,12,13, and we got a certificate for 10,11,12,13.
+Turns out, instead of a single phone number, on the internet stuff breaks so you need more then 1 phone number. In this case, Zacookie phone numbers were, 10,11,12,13, and we got a certificate for 10,11,12,13.
 
 BUT, when we told DNS, we actually told DNS the phone numbers were 10,**110**,12, 13. As a result if the phone number DNS ever gave back was **110**, then we'd connect to **110**, but chrome, would say, hey, you're not 110. Sorry.
 
@@ -111,15 +111,15 @@ BUT, when we told DNS, we actually told DNS the phone numbers were 10,**110**,12
 - _Chrome: Yo DNS- What number is zacookiegames.com at?_
 - _DNS: 110_
 - Chrome: He Zacookie - can I see the proof you own 110?
-- ZacookieGames: Sure, here's my proof - (zacookiegames is at 10,11,12,13)!
-- Chrome: Woah, you should only be at 10, 11,12,13.
+- Zacookiegames: Sure, here's my proof - (zacookiegames is at 10,11,12,13)!
+- Chrome: Whoa, you should only be at 10, 11,12,13.
 - Chrome: (ALERT - HACKER in Play).
 
 ## Explain like I'm software engineer
 
 ### The root cause.
 
-The DNS A records should have been configured to 110, 111, 112 and 113, but were actually 110,\*_11_, 112, 113. As a result, github thought the website was configured incorreclty and would not issue a new certificate, and as a reusult the old certificate expired.
+The DNS A records should have been configured to 110, 111, 112 and 113, but were actually 110,\*_11_, 112, 113. As a result, GitHub thought the website was configured incorrectly and would not issue a new certificate, and as a result the old certificate expired.
 
 ### The fix
 
@@ -127,6 +127,6 @@ As soon as I set the DNS correctly a new certificate was issued and everything w
 
 ### Why did the 100% repro help?
 
-Made it clear github wasn't issuing certificates, and then I could debug why. TODO add more techincal version.
+Made it clear GitHub wasn't issuing certificates, and then I could debug why. TODO add more technical version.
 
 ### What was the actual setup.
