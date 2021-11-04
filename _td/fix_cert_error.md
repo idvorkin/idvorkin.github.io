@@ -11,9 +11,10 @@ Dad the website isn't secure! You're the security expert fix it! Zach, my 10 yea
 <!-- vim-markdown-toc GFM -->
 
 - [Explain like I'm 10.](#explain-like-im-10)
-    - [IPs and DNS, Phone numbers and phone books](#ips-and-dns-phone-numbers-and-phone-books)
-    - [Certificate Authorities, But waits, can't a hacker lie about the address?](#certificate-authorities-but-waits-cant-a-hacker-lie-about-the-address)
-    - [So what was the problem?](#so-what-was-the-problem)
+    - [Phone numbers and phone books (IP and DNS)](#phone-numbers-and-phone-books-ip-and-dns)
+    - [But waits, can't a hacker lie about the address? (Certificates and Authorities)](#but-waits-cant-a-hacker-lie-about-the-address-certificates-and-authorities)
+    - [The problem](#the-problem)
+    - [The solution](#the-solution)
 - [Explain like I'm software engineer](#explain-like-im-software-engineer)
     - [The root cause.](#the-root-cause)
     - [The fix](#the-fix)
@@ -27,7 +28,7 @@ Dad the website isn't secure! You're the security expert fix it! Zach, my 10 yea
 
 This will be targeted at a less technical audience, so expect some simplification that should annoy more technical people.
 
-### IPs and DNS, Phone numbers and phone books
+### Phone numbers and phone books (IP and DNS)
 
 Imagine Zach has a friend named Amelia, and she's got the phone number 206-890-1111.
 
@@ -72,7 +73,7 @@ Hymn, you think, OK, well how does DNS know? It turns out just like above when Z
 - Owner of Zacookie games (Dad) - Hey DNS, please set my number to be 10.
 - DNS - OK, done. I'll tell others you're at 10.
 
-### Certificate Authorities, But waits, can't a hacker lie about the address?
+### But waits, can't a hacker lie about the address? (Certificates and Authorities)
 
 If you're sneaky like a hacker, you might notice, that someone evil could like to DNS.
 
@@ -101,7 +102,7 @@ In computer lingo, that proof is called a certificate, and the the police is cal
 - Chrome: (Connecting to 10)
 - Zach: Sweet - I'm gonna play a fun game.
 
-### So what was the problem?
+### The problem
 
 Turns out, instead of a single phone number, on the internet stuff breaks so you need more then 1 phone number. In this case, Zacookie phone numbers were, 10,11,12,13, and we got a certificate for 10,11,12,13.
 
@@ -115,11 +116,15 @@ BUT, when we told DNS, we actually told DNS the phone numbers were 10,**110**,12
 - Chrome: Whoa, you should only be at 10, 11,12,13.
 - Chrome: (ALERT - HACKER in Play).
 
+### The solution
+
+Update DNS record to 10,11,12,13, and then everything started working correctly.
+
 ## Explain like I'm software engineer
 
 ### The root cause.
 
-The DNS A records should have been configured to 110, 111, 112 and 113, but were actually 110,\*_11_, 112, 113. As a result, GitHub thought the website was configured incorrectly and would not issue a new certificate, and as a result the old certificate expired.
+The DNS A records should have been configured to 110, 111, 112 and 113, but were actually 110, **11**, 112, 113. As a result, GitHub thought the website was configured incorrectly and would not issue a new certificate, and as a result the old certificate expired.
 
 ### The fix
 
