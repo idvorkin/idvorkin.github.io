@@ -2,6 +2,7 @@
 layout: post
 no-render-title: true
 title: The case of the cert validation error
+permalink: /cert-error
 ---
 
 Dad the website isn't secure! You're the security expert fix it! Zach, my 10 year old at the time son, runs a web site, and it got an occasional this website is not secure message. I tried to debug, but couldn't get a consistent enough repro to debug, so had to move on. It stayed in this state for 6 months, at which point Zach told me the certificate had expired. Now i had a 100% repro so went to work.
