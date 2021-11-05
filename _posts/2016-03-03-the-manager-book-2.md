@@ -46,6 +46,7 @@ This post uses the word manager, but the majority of topics are applicable all s
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you coach?](#how-do-you-coach)
     - [What mechanisms do you have to ensure career development.](#what-mechanisms-do-you-have-to-ensure-career-development)
+    - [How do you help people write their self assessements](#how-do-you-help-people-write-their-self-assessements)
     - [What is the level specific career expectations and growth strategies](#what-is-the-level-specific-career-expectations-and-growth-strategies)
     - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
@@ -343,15 +344,17 @@ To achieve these principles there are several tools:
 
 **Career Growth Plans**
 
-Forward looking and a good place to discuss what opportunities are required, and what major development areas should be tackled, and what's required to meet the next career level.
+Forward looking and a good place to discuss what opportunities are required, and what major development areas should be tackled, and what's required to meet the next career level. [I.M.Wright gives some excellent insights](https://imwrightshardcode.com/2021/11/whats-your-career-plan/)
 
 Each employee has a career growth plan (CGP). This is a document with open ended questions like:
 
 - What are you most proud of?
 - What is most draining?
 - What are your short, medium and long term career goals?
+- What are the steps to get there?
+- What are your gaps between now and the next step?
 
-This document also has the list of expectations for the current level, and next level.
+To help with the last two questions, this document has the list of expectations for the current level, and next level. For each expectation, you fill in your self assessment of where you are at on the expectations relative to level, sometimes it's below, at or above. This is great tool to ensure you and those supporting you are in sync, and that they can best support you.
 
 **Pre writing Review Self Assessments**
 
@@ -391,6 +394,30 @@ In each of these stages different support is required.
 | ------------------- | ---------------------------------------------- | ----------------------------------------------- |
 | Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
 | Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
+
+### How do you help people write their self assessements
+
+Good self assessments are concise, focuses on impact, and then how you delivered the impacat. More details at [I.M Wright](https://imwrightshardcode.com/2018/06/connects-with-impact/):
+
+- _[Clearly measurable impact]_ by _[work you’ve done yourself and/or with others]._
+  - Relevant artifacts, or quote from others validating the claim.
+
+Here are some fictitious examples modelled on my own career:
+
+- Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to estabilish budgets, and holding them accountable to delivering them.
+
+  - > At first my team was skeptical that the peformance improvements could be achieved and were hesitant to invest, but once we saw the organizational support and monthly meetings of progress we found it inspiring and made sure we contributed to the goal.
+
+- Drove XXX\$ to charities, and increased Alexa Shopping DAU XXX % (XXX to YYY) to by proposing a charity giving feature and implementing it in 5 months. Complexity, 20 eng/months, supporting work from 5 teams, across mulitple divisions
+
+- Delivered XYZ, required to deliver TLS support on windows phone at very high quality. Complexity 1 engineer, 4 months - however requried ramping up on complex error prone C++ code base, and no bugs found
+
+  - > Igor's delivery was on time and of high quality. The feature had no bugs in production, due to high test coverage, which was impressive given the high complexity of the C++ code.
+
+- Increased team morale and cross group collaboration by proposing weekly team lunches, and monthly lunches with the broader organization.
+  - The monthly lunches were great. At one of them, I learned Bob on the other team was building a similer feature to mine and so we collaborated and were able to save 3 weeks of coding time.
+
+You should be observing the key to these self assessments is impact. The goal isn't motion, it's impact. If you don't know the impact, you should ask yourself (and your manager) why you are doing the work. Pre-writing self assessments is a great way to do this.
 
 ### What is the level specific career expectations and growth strategies
 
@@ -661,15 +688,21 @@ Tough question. I need to think through that
   - Hanging out with your friends
   - Work filled with moments
   - Team first, whole greater then the sum of its parts
+  - Everyone provides kuddos to others
 
 - Imagination Executed Sustainably
+
   - Ship as frequently as possible.
   - Test cheaply, early and often.
-  - Continuous improvement, with very open feedback, and desire to improve.
   - Always paying down technical debt
   - Never be blocked
   - I hate the term "bring solutions not problems", it encourages people to freeze. Instead -
     - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
+
+- Continuous improvement, with very open feedback, and desire to improve.
+  - Career Growth
+  - Technical Growth
+  - Retros, but also action item tracking.
 
 ### How do you help a team gel
 
