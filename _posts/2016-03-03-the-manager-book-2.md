@@ -45,18 +45,21 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [What engineering efficiency metrics should a manager monitor.](#what-engineering-efficiency-metrics-should-a-manager-monitor)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you coach?](#how-do-you-coach)
-    - [What mechanisms do you have to ensure career development.](#what-mechanisms-do-you-have-to-ensure-career-development)
-    - [How do you help people write their self assessements](#how-do-you-help-people-write-their-self-assessements)
-    - [What is the level specific career expectations and growth strategies](#what-is-the-level-specific-career-expectations-and-growth-strategies)
+    - [What mechanisms do you have to ensure career development?](#what-mechanisms-do-you-have-to-ensure-career-development)
+    - [How do you support folks with their career growth plans (CGPs)?](#how-do-you-support-folks-with-their-career-growth-plans-cgps)
+    - [How do you support folks by pre-writing self assessments?](#how-do-you-support-folks-by-pre-writing-self-assessments)
+    - [How do you give fast, frequent, feedback?](#how-do-you-give-fast-frequent-feedback)
+    - [How do you think about situational leadership?](#how-do-you-think-about-situational-leadership)
+    - [What is the level specific career expectations and growth strategies?](#what-is-the-level-specific-career-expectations-and-growth-strategies)
     - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
-    - [How do you give challenging feedback](#how-do-you-give-challenging-feedback)
-    - [What's the point of 1:1s](#whats-the-point-of-11s)
-    - [What do you do in 1:1s](#what-do-you-do-in-11s)
+    - [How do you give challenging feedback?](#how-do-you-give-challenging-feedback)
+    - [What's the point of 1:1s?](#whats-the-point-of-11s)
+    - [What do you do in 1:1s?](#what-do-you-do-in-11s)
     - [How do you handle communication problems?](#how-do-you-handle-communication-problems)
     - [How do you handle promotion preparation (and fever)?](#how-do-you-handle-promotion-preparation-and-fever)
     - [How do you identify and grow potential managers?](#how-do-you-identify-and-grow-potential-managers)
-    - [How did you grow top talent](#how-did-you-grow-top-talent)
+    - [How did you grow top talent?](#how-did-you-grow-top-talent)
     - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
     - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
 - [Culture](#culture)
@@ -322,7 +325,7 @@ Coaching is a major part of the job, and covered in my [coaching post](/coaching
 
 _Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic._
 
-### What mechanisms do you have to ensure career development.
+### What mechanisms do you have to ensure career development?
 
 **Principles for career development**
 
@@ -342,9 +345,9 @@ To achieve these principles there are several tools:
 | Frequent Feedback         | Immediate       | As Needed         |
 | Situational Leadership    | Stage Dependant | Stage Dependant   |
 
-**Career Growth Plans**
+### How do you support folks with their career growth plans (CGPs)?
 
-Forward looking and a good place to discuss what opportunities are required, and what major development areas should be tackled, and what's required to meet the next career level. [I.M.Wright gives some excellent insights](https://imwrightshardcode.com/2021/11/whats-your-career-plan/)
+CGPs are Forward looking and a good place to discuss what opportunities are required, and what major development areas should be tackled, and what's required to meet the next career level. [I.M.Wright gives some excellent insights](https://imwrightshardcode.com/2021/11/whats-your-career-plan/)
 
 Each employee has a career growth plan (CGP). This is a document with open ended questions like:
 
@@ -356,7 +359,7 @@ Each employee has a career growth plan (CGP). This is a document with open ended
 
 To help with the last two questions, this document has the list of expectations for the current level, and next level. For each expectation, you fill in your self assessment of where you are at on the expectations relative to level, sometimes it's below, at or above. This is great tool to ensure you and those supporting you are in sync, and that they can best support you.
 
-**Pre writing Review Self Assessments**
+### How do you support folks by pre-writing self assessments?
 
 Think through what will be delivered in the next 1-6 months, and how it will be delivered.
 
@@ -368,34 +371,6 @@ There are several advantages to pre-writing these documents:
 - The peep and manager understand the impact provided by the work.
 - The peep has a record of what they've done in the performance period, instead of only having a crisp memory of the last few months.
 - The manager can calibrate the work to be done so there are no scope surprises.
-
-**Frequent feedback for in progress work in both the what and how dimensions**
-
-Provide immediate observed feedback, for something that is about to happen (like reviewing a document), or a de-brief after a critical meeting or review
-
-I keep my eyes open for opportunities for feedback from my observations, and from soliciting feedback from peers and partners. I take the feedback and figure out the best way to give it.
-
-My priority is "catching employees doing something right", so I can re-enforce positive behavior. Even better, with positive behaviors I can provide them in public which not only benefits the employee, but also re-enforces that goodness with the team.
-
-**Situational Leadership**
-
-More details are in my [coaching post](/coaching). Here's a preview:
-
-As people learn new skills they experience a learning curve, which requires different support at different points on the curve. [Situational leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory) describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.
-
-| Competent/Confident | Confident                                                   | Scared                                                          |
-| ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |
-| Incompetent         | 1. Foolish Novice - Thinks they can do it, but really can't | 2. Novice - Knows they can't do it, and feels bad               |
-| Competent           | 4. Expert - Know they can do it, and they're right          | 3. Journey man - Thinks they can't do it, but actually they can |
-
-In each of these stages different support is required.
-
-| Competent/Confident | Confident                                      | Scared                                          |
-| ------------------- | ---------------------------------------------- | ----------------------------------------------- |
-| Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
-| Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
-
-### How do you help people write their self assessements
 
 Good self assessments are concise, focuses on impact, and then how you delivered the impacat. More details at [I.M Wright](https://imwrightshardcode.com/2018/06/connects-with-impact/):
 
@@ -419,7 +394,33 @@ Here are some fictitious examples modelled on my own career:
 
 You should be observing the key to these self assessments is impact. The goal isn't motion, it's impact. If you don't know the impact, you should ask yourself (and your manager) why you are doing the work. Pre-writing self assessments is a great way to do this.
 
-### What is the level specific career expectations and growth strategies
+### How do you give fast, frequent, feedback?
+
+I aspire to provide immediate observed feedback, for something that is about to happen (like reviewing a document), or a de-brief after a critical meeting or review.
+
+I keep my eyes open for opportunities for feedback from my observations, and from soliciting feedback from peers and partners. I take the feedback and figure out the best way to give it.
+
+My priority is "catching employees doing something right", so I can re-enforce positive behavior. Even better, with positive behaviors I can provide them in public which not only benefits the employee, but also re-enforces that goodness with the team.
+
+### How do you think about situational leadership?
+
+More details are in my [coaching post](/coaching). Here's a preview:
+
+As people learn new skills they experience a learning curve, which requires different support at different points on the curve. [Situational leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory) describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.
+
+| Competent/Confident | Confident                                                   | Scared                                                          |
+| ------------------- | ----------------------------------------------------------- | --------------------------------------------------------------- |
+| Incompetent         | 1. Foolish Novice - Thinks they can do it, but really can't | 2. Novice - Knows they can't do it, and feels bad               |
+| Competent           | 4. Expert - Know they can do it, and they're right          | 3. Journey man - Thinks they can't do it, but actually they can |
+
+In each of these stages different support is required.
+
+| Competent/Confident | Confident                                      | Scared                                          |
+| ------------------- | ---------------------------------------------- | ----------------------------------------------- |
+| Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
+| Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
+
+### What is the level specific career expectations and growth strategies?
 
 Depends on the skill level (E.g. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
 
@@ -507,7 +508,7 @@ Some moments like:
 - Playing cards for appreciation
 - Managers making breakfast
 
-### How do you give challenging feedback
+### How do you give challenging feedback?
 
 Why is feedback challenging?
 
@@ -526,7 +527,7 @@ Types of tough conversations to flesh out:
 
 Performance, Charter, Re-org, Team mates leaving, Lay Offs.
 
-### What's the point of 1:1s
+### What's the point of 1:1s?
 
 <a id="l-one-on-one"></a>
 
@@ -545,7 +546,7 @@ My goal for 1:1's is to:
 
 (Again with that programming analogy, the 1:1 is a debugger attached catch all exception handler. This allow all concerns to be discussed, understood, rethrown, reprogrammed or ignored. I know - the analogy needs work, help me make it better)
 
-### What do you do in 1:1s
+### What do you do in 1:1s?
 
 My favorite opening is "What's on your mind", then I focus on asking ([coaching questions](/coaching)) and end with "what can I do immediately to help you?"
 
@@ -634,7 +635,7 @@ Promotion fever is my word for engineers that are completely focused on promotio
 
 Engineers that are interested in reading this post make good manager candidates. The path usually start with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many as people issues as people are comfortable with them tracking.
 
-### How did you grow top talent
+### How did you grow top talent?
 
 ### Performance Reveiws: Calibrations PSC, OLR, Connections
 
