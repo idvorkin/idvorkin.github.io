@@ -37,6 +37,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Fanny Pack](#fanny-pack)
     - [Gym Bag](#gym-bag)
     - [Work Bag](#work-bag)
+    - [Selfie Sticks](#selfie-sticks)
 - [Biking](#biking)
 - [Car Tech](#car-tech)
 - [Tech](#tech)
@@ -186,6 +187,16 @@ There's also the horizontal version - which is slightly bigger but also nice:
 
 {%include amazon.html asin="B07WNPPF72;B07H4QYC2D" %}
 
+### Selfie Sticks
+
+It's great to have selfie stick for every occasion
+
+* [Smallest](https://www.amazon.com/Vproof-Bluetooth-Lightweight-Aluminum-Extendable/dp/B07QY8L3WC/ref=sr_1_3?keywords=selfie+stick+compact&qid=1636299902&qsid=136-5964723-7276266&s=electronics&sr=1-3&sres=B07QY8L3WC%2CB082HRRCGD%2CB08R85RCYP%2CB07KT1SMRX%2CB08SML6884%2CB09C5QBSF2%2CB07K7MSV25%2CB07K5QVJV3%2CB075DVXBPB%2CB098Q25M3J%2CB082YQTQPC%2CB08TT3VH6Y%2CB08V1DHMGY%2CB07RZBT9K2%2CB085FDBMQT%2CB08HJRQYL7%2CB07MK93YFC%2CB08HRL53NM%2CB071KKGFHW%2CB08GY4YJ9C&srpt=CAMERA_TRIPOD)
+* [Small w/stand](https://www.amazon.com/dp/B082HRRCGD?ref=nb_sb_ss_w_as-ypp-rep_ypp_rep_k0_1_13&crid=1HT7AE28KNQQ5&sprefix=compact+selfi)
+* [Big w/stand](https://www.amazon.com/gp/product/B09681HV3L/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
+
+
+
 ## [Biking](/bike)
 
 I **love** not driving. Biking is an awesome form of transit. It took a while but I concluded I have several use cases so need several bikes. In fact,
@@ -195,8 +206,10 @@ I **love** not driving. Biking is an awesome form of transit. It took a while bu
 I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesomeness:
 
 - Remote car starter - ~ 200\$ and you can start your car from the house so that it's warm and toasty when you get in.
-- Wireless Air Play - ~ 500\$. OMG - having CarPlay (especially on iOS 13) without plugging in your phone - wow!
+- [Wireless CarPlay](https://www.amazon.com/gp/product/B08FG2XRBP/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1).  OMG - having CarPlay (especially on iOS 13) without plugging in your phone - wow!
 - Back up Camera ~ 30\$. OMG - Hard to believe I went years without one.
+
+{%include amazon.html asin="B08FG2XRBP" %}
 
 ## Tech
 
@@ -205,7 +218,8 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 - Apple Pencil
 - Bluetooth Folding Split Keyboard
 - AirPod Pros
-- Bose 900 - Retired for the AirPod Pros
+- Bose QC35 - They're great.
+- Bose 900 - I don't like these. They can't swap through devices.
 - Foam Tips for AirPod Pros - highly recommend if you're used to foam tips.
 - iPad stand.
 
@@ -214,6 +228,7 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 - Huawei Matebook X (Essentially Windows Macbook clone):w
 - Macbook Pro (usually at work)
 - Ancient Desktop (upgrade coming)
+- Macbook Pro M1 - Fantastic device, super light, long lasting batter.
 
 ### Monitors
 
