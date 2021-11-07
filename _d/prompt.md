@@ -2,6 +2,7 @@
 layout: post
 title: Prompts, your guide to starting a conversation
 permalink: /prompts
+imagefeature: https://github.com/idvorkin/blob/raw/master/noun_convo.png
 ---
 
 A prompt will kick start a great conversation, a great insight, and a great relationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.
