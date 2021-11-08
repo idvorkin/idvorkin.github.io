@@ -28,6 +28,21 @@ function SwapProdAndTest() {
   window.location = newURL;
 }
 
+function ForceShowRightSideBar() {
+    let toc = $("#right-sidebar");
+    let mainContent = $("#main-content");
+    toc.removeClass();
+    toc.addClass("col-4 pl-0");
+
+    mainContent.removeClass();
+    mainContent.addClass("col-8 pr-0");
+
+    // Hide DropUp
+    tocDropUp = $("#id-ui-toc-dropdown");
+    tocDropUp.removeClass();
+    tocDropUp.addClass("d-none");
+}
+
 // <!-- Copied from hackmd-extras.js -->
 function generateToc(id, showPinToc) {
   const target = $(`#${id}`);
@@ -76,40 +91,8 @@ function generateToc(id, showPinToc) {
   }
   target.append(tocMenu);
 
-  function ForceShowRightSideBar() {
-    let toc = $("#right-sidebar");
-    let mainContent = $("#main-content");
-    toc.removeClass();
-    toc.addClass("col-4 pl-0");
-
-    mainContent.removeClass();
-    mainContent.addClass("col-8 pr-0");
-
-    // Hide DropUp
-    tocDropUp = $("#id-ui-toc-dropdown");
-    tocDropUp.removeClass();
-    tocDropUp.addClass("d-none");
-  }
-  Mousetrap.bind("s", e => (location.href = "/"));
-  Mousetrap.bind("t", e => ForceShowRightSideBar());
-  Mousetrap.bind("p", e => SwapProdAndTest());
-  Mousetrap.bind("z", e => (location.href = "/random"));
-  Mousetrap.bind("a", e => (location.href = "/all"));
-  Mousetrap.bind("m", e => (location.href = "/toc"));
-  Mousetrap.bind("6", e => (location.href = "/ig66"));
-
-  let shortcutHelp = `
-Keyboard Shortcuts:
-  s - search
-  t - force sidebar
-  p - swap prod and test
-  z - surprise me
-  a - all posts
-  m - global toc
-  6 - family journal
-  `;
-  Mousetrap.bind("?", e => alert(shortcutHelp));
 }
+
 // NOTE: This should really be in post.md
 generateToc("ui-toc", (showPinToc = true));
 generateToc("ui-toc-affix", (showPinToc = false));
@@ -250,6 +233,29 @@ function add_random_prompts() {
     console.log("add_random_prompts--")
 }
 
+function keyboard_shortcut_loader()
+{
+  Mousetrap.bind("s", e => (location.href = "/"));
+  Mousetrap.bind("t", e => ForceShowRightSideBar());
+  Mousetrap.bind("p", e => SwapProdAndTest());
+  Mousetrap.bind("z", e => (location.href = "/random"));
+  Mousetrap.bind("a", e => (location.href = "/all"));
+  Mousetrap.bind("m", e => (location.href = "/toc"));
+  Mousetrap.bind("6", e => (location.href = "/ig66"));
+
+  let shortcutHelp = `
+Try these shortcuts:
+  s - search
+  t - force sidebar
+  p - swap prod and test
+  z - surprise me
+  a - all posts
+  m - global toc
+  6 - family journal
+  `;
+  Mousetrap.bind("?", e => alert(shortcutHelp));
+}
+
 function random_prompt_loader() {
   const url = window.location.href;
   const is_target_page = url.includes("/prompts");
@@ -263,3 +269,4 @@ function random_prompt_loader() {
 $(document).ready(addBackLinksLoader);
 $(document).ready(JsTemplateReplace);
 $(document).ready(random_prompt_loader);
+$(document).ready(keyboard_shortcut_loader);
