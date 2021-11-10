@@ -36,6 +36,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Biking](#biking)
     - [Magic](#magic)
     - [Juggling](#juggling)
+    - [List of things I enjoy](#list-of-things-i-enjoy)
 - [Morning Routine](#morning-routine)
     - [Weekend morning routine](#weekend-morning-routine)
     - [Weekday morning routine](#weekday-morning-routine)
@@ -124,6 +125,7 @@ I've already got enough hobbies - biking, magic, juggling. I get my biking fix n
 ### [Magic](/magic)
 
 ### [Juggling](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
+### [List of things I enjoy](/todo_enjoy)
 
 ## Morning Routine
 
