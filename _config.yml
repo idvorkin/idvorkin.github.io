@@ -95,6 +95,7 @@ exclude:
     "spec",
     "Gruntfile.js",
     "package.json",
+    "cypress",
     "node_modules",
   ]
 
