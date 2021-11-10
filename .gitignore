@@ -23,3 +23,8 @@ _algolia_api_key
 node_modules/
 package-lock.json
 yarn.lock
+
+# Cypress artificats
+
+cypress/videos
+cypress/screenshots
