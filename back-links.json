@@ -26,8 +26,8 @@
     "/books": "/books-that-defined-me",
     "/boss": "/being-a-great-manager",
     "/Business-Model-You": "/bmy",
-    "/coach": "/coaching.md",
-    "/Coaching-Questions": "/coaching.md",
+    "/coach": "/coaching",
+    "/Coaching-Questions": "/coaching",
     "/cold": "/warm",
     "/compassion": "/curious",
     "/compensation": "/comp",
@@ -301,7 +301,7 @@
         "/voices"
       ],
       "redirect_url": "",
-      "doc_size": 18000
+      "doc_size": 19000
     },
     "/ar": {
       "py/object": "__main__.Page",
@@ -432,6 +432,17 @@
       "redirect_url": "",
       "doc_size": 11000
     },
+    "/cert-error": {
+      "py/object": "__main__.Page",
+      "url": "/cert-error",
+      "title": "THE CASE OF THE CERT VALIDATION ERROR",
+      "description": "Dad the website isn’t secure! You’re the security expert fix it! Zach, my 10 year old at the time son, runs a web site, and it got an occasional this website is not secure message. I tried to debug, but couldn’t get a consistent enough repro to debug, so had to move on. It stayed in this state for 6 months, at which point Zach told me the certificate had expired. Now i had a 100% repro so went to work.\n\n",
+      "file_path": "_site/cert-error.html",
+      "outgoing_links": [],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 16000
+    },
     "/chapters": {
       "py/object": "__main__.Page",
       "url": "/chapters",
@@ -459,9 +470,12 @@
         "/prompts"
       ],
       "incoming_links": [
+        "/being-a-great-manager",
         "/first-understand",
         "/insecure",
+        "/job",
         "/manager-book",
+        "/moments-at-work",
         "/prompts",
         "/writing"
       ],
@@ -1115,12 +1129,12 @@
       "py/object": "__main__.Page",
       "url": "/getting-to-yes-with-yourself",
       "title": "GETTING TO YES WITH YOURSELF",
-      "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n\n\n\n\n  1) Put yourself in your shoes ☑\n  2) Develop your inner BATNA ☑\n  3) Reframe your picture ☐\n  4) Stay in the zone ☐\n  5) Respect them even if ☐\n  6) Give and Recieve ☐\n  7) The 3 wins ☑\n\n\n\n\n\n1) Put yourself in your shoes ☑\n\n\n  Figure out what your elephant REALLY wants (Switch)\n  Seek first to understand yourself (7H)\n  When you judge yourself, you shutdown and can’t find what you really want\n  Acceptance induces safety, and only from safety can you find what you really want\n  See yourself form the balcony\n    \n      Respond instead of reacting.\n      Going to Balcony == Be Mindful, Self Aware and Objective\n      Choose your response, but it’s a two sided stick and you get the consequences.\n      Reaction:\n        \n          Feels good, but need to realize there is a VERY negative consequence.\n          Negative Reactions: Attack (Win:Lose) -> Accommodate (Lose:Win) -> Avoid (Lose:Lose)\n        \n      \n      Use self-awareness to catch your desire to react\n        \n          Need to build self-awareness muscle (SIY)\n          Practice mindfulness (and have a grounding spot)\n          Practice mindfulness before event to make it easier.\n        \n      \n    \n  \n  Listen with Empathy\n    \n      80% of thoughts are negative.\n      Observe self: Detached view of a scientist.\n      Listen to self: What it feels like to be you.\n      Listening to self exercise\n        \n          Don’t judge, or they will not feel safe, and won’t talk.\n          Name your neurosis, and sit them down at a table, and listen to them non-judgementally\n          Because “negative emotions are safe to speak” they get less power, and have less desire to attack at “bad” times.\n          Don’t just listen, understand the cause, and what you can do to help.\n          Be curious, ask yourself, isn’t that interesting. Ask the neurosis, why is that.\n        \n      \n      This is an opportunity to learn physical self awareness, to help notice your emotions.\n      Huge benefit, your mind is more clear, and you silence the self to concentrate and get into flow.\n    \n  \n  Uncover your needs\n    \n      Your elephant is non-verbal, negative emotions are it’s mode of communicating your needs.\n      Dig hard for your needs, don’t settle for a position, but why, what do you really want. What is done. (XREF: Essentialisim)\n      Magic Question Why? Why? Why?\n      Deepest needs: Happiness: Protection/Safety and Love/Connection\n    \n  \n  From Self Judgment to Self Understanding\n    \n      Before fighting with others, need to make sure you TRUELY know what you want.\n      Accepting yourself for who you are is NOT a cop out. Acceptance produces safety, which lets us digg deater.\n    \n  \n\n\n2) Develop your inner BATNA ☑\n\nThe ideas in this chapter are great, but I think connecting the concepts to inner BATNA is ackward. Thus my summary doesn’t track well with the books\n\n\n  A cross between 7H: Be Proactive, AND take responsibility for meeting your own needs.\n  When you COMMIT to unconditionally take care of your needs, you have all the power.\n    \n      SWITCH: Your elephant can rest assured it will be fed and cared for regardless of what’s going on externally.\n      This gives you much more psychic space in your relationships, making them better relationships.\n      SIY: Grandmother mind - you are your own best grandma.\n    \n  \n  Responsibility holds Power VS blame gives it away.\n  Take responsibility for what you’ve got, and make the most of it - DO NOT BLAME Life (welcome to Holland).\n  Focus on what you can do to make things better, NOT the fact that you screwed something up in the past.\n  \n    In a relationship, focus on what YOU CAN DO going forward in the relationship, not on blaming the other person. Doing this:\n\n    \n      Gives clarity to your needs in the relationships.\n      Gives “psychic space” for other party in relationship\n      Lets you be objectives about your needs, and your expectations from other party.\n    \n  \n  Own your life\n    \n      Need self-understanding and self-responsibility\n        \n          Just self-understanding => self-pity\n          Just self-responsibility => self-blame.\n        \n      \n      Self blame => Past looking, I WAS a failure.\n      Self responsibility => Forward looking what CAN I do to make this successful?\n      (really it’s the next section, where ‘self/life’ is the relationship)\n    \n  \n  Own your relations\n    \n      When you point a finger at someone, 3 fingers point back at you.\n      All relationships are two ways streets, if there’s a problem, you own a CHUNK.\n      Leave the blame territory, and enter the how do we improve this in the future territory.\n      Know what you bring to the relationship, and what is negotiable and non-negotiable from the other party\n      Great Anecdote on divorce requirements.\n    \n  \n  Own your needs\n    \n      BATNA, how you satisfy your needs in case you can’t get a WIN/WIN?\n      Inner BATNA - know YOU WILL ALWAYS meet your needs, so don’t have to worry.\n      Gives you confidence that you don’t need to be desperate.\n    \n  \n  From blame to responsibility\n    \n      Touching story about author’s dying daughter Gabi, and how hard it was to deal with doctors.\n      Two top changes:\n        \n          Needed to stop expecting things from doctor’s they could provide for themselves, and let dr’s bring only what they needed to bring, their expertise.\n          Needed to stop blaming life for a bum deal, and instead take responsibility for making the most out of what they had.\n        \n      \n    \n  \n\n\n3) Reframe your picture ☐\n\nAbundance not Scarcity: A rising tide raises all boats\n\nExpecations are a self fulling prophecy. Believe the world good or bad, and that’s how you’ll interpret it, and that’s how it will become\n\n\n  Remember your connection to life\n  Make your own happiness\n  Appreciate life’s lessons\n  From unfriendly to friendly.\n\n\n4) Stay in the zone ☐\n\n\n  Learn to let go\n  Accept the past\n  Trust the future\n  Embrace the present\n  From resistance to acceptance\n\n\n5) Respect them even if ☐\n\n\n  Put yourself in thier shoes\n  Expand your circle of respect\n  Respect them even if they reject you\n  From exclusion to inclusion\n\n\n6) Give and Recieve ☐\n\n\n  Give for mutual gain\n  Give for pleasure and meaning\n  Give what you are here to give\n  From Win/Lose to Win/Win/Win\n\n\n7) The 3 wins ☑\n\n\n  How do we get what we want, while meeting the needs of others?\n  The better we meet our own needs, the better we can meet the needs of others\n  We choose to be our own ally or our enemy. and we choose to be the ally or enemy in our relationships.\n  A win within\n    \n      I will give myself the most trouble today. I stand in the way of my goals.\n      Do the practices in this book, to be satisified with yourself\n    \n  \n  A win with others\n    \n      Every thing you do to get to yes with yourself, makes it easier to get to yes with others\n    \n  \n  A win for the whole\n    \n      When you succeed with yourself, and with others, then the whole world benefits\n    \n  \n  Winning the game of life\n    \n      It’s about creating inner satisfaction, which makes your life and relationships better. It’s hard but worth it.\n    \n  \n\n\nThis is a summary of Getting to yes with yourself\n\n\n  \n    \n    \n      \n      \n    \n    \n  \n\n\n",
+      "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n",
       "file_path": "_site/getting-to-yes-with-yourself.html",
       "outgoing_links": ["/gty", "/grandmother", "/welcome-to-holland"],
       "incoming_links": ["/books-that-defined-me", "/depression"],
       "redirect_url": "",
-      "doc_size": 27000
+      "doc_size": 20000
     },
     "/goals": {
       "py/object": "__main__.Page",
@@ -1191,17 +1205,6 @@
       "incoming_links": ["/operating-manual"],
       "redirect_url": "",
       "doc_size": 15000
-    },
-    "/Human-Meetings": {
-      "py/object": "__main__.Page",
-      "url": "/Human-Meetings",
-      "title": "FEELINGS/HUMAN MEETINGS",
-      "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
-      "file_path": "_site/Human-Meetings.html",
-      "outgoing_links": [],
-      "incoming_links": ["/being-a-great-manager", "/eulogy", "/job"],
-      "redirect_url": "",
-      "doc_size": 11000
     },
     "/humans-are-underrated": {
       "py/object": "__main__.Page",
@@ -1299,7 +1302,7 @@
       ],
       "incoming_links": ["/physical-health"],
       "redirect_url": "",
-      "doc_size": 39000
+      "doc_size": 43000
     },
     "/job": {
       "py/object": "__main__.Page",
@@ -1435,7 +1438,7 @@
         "/software-leadership-roles"
       ],
       "redirect_url": "",
-      "doc_size": 115000
+      "doc_size": 119000
     },
     "/mental-pain": {
       "py/object": "__main__.Page",
@@ -1621,6 +1624,7 @@
         "/hobby",
         "/bike",
         "/magic",
+        "/todo_enjoy",
         "/voices",
         "/anxiety",
         "/physical-health",
@@ -1933,7 +1937,7 @@
       "outgoing_links": ["/habits", "/habits"],
       "incoming_links": ["/first-things-first"],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 16000
     },
     "/synergize": {
       "py/object": "__main__.Page",
@@ -1955,7 +1959,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 20000
+      "doc_size": 19000
     },
     "/td/advertising": {
       "py/object": "__main__.Page",
@@ -2191,7 +2195,7 @@
       ],
       "incoming_links": ["/timeoff"],
       "redirect_url": "",
-      "doc_size": 26000
+      "doc_size": 27000
     },
     "/td/usbtech": {
       "py/object": "__main__.Page",
@@ -2302,6 +2306,17 @@
       "incoming_links": ["/d/time-off-12-2020", "/mind-at-work", "/parkinson"],
       "redirect_url": "",
       "doc_size": 16000
+    },
+    "/todo_enjoy": {
+      "py/object": "__main__.Page",
+      "url": "/todo_enjoy",
+      "title": "GETTING THE MOST OUT OF TIME OFF",
+      "description": "It’s easy to forget the many, often tiny things that make us happy.  For when that happens, here’s my list!\n\n",
+      "file_path": "_site/todo_enjoy.html",
+      "outgoing_links": [],
+      "incoming_links": ["/operating-manual"],
+      "redirect_url": "",
+      "doc_size": 12000
     },
     "/tools": {
       "py/object": "__main__.Page",
