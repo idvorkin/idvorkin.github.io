@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting the most out of time off"
+title: "Remembering the things I enjoy"
 tags:
 permalink: /todo_enjoy
 ---
@@ -53,8 +53,8 @@ It's easy to forget the many, often tiny things that make us happy.  For when th
 ### Public transit
 
 * Take the subway anywhere
-* Take a one day train trip to portland
-* Take a one day train trip to vancouver
+* Take a one day train trip to Portland
+* Take a one day train trip to Vancouver
 
 ## Entertaining
 
@@ -73,7 +73,7 @@ It's easy to forget the many, often tiny things that make us happy.  For when th
 ### Cards
 
 * Card to ceiling
-* Cards accross
+* Cards across
 * Ambitious card
 * Australian cards
 * Culls
