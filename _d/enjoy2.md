@@ -5,12 +5,13 @@ tags:
 permalink: /todo_enjoy
 ---
 
-It's easy to forget the many, often tiny things that make us happy. For when that happens, here's my list!
+It's easy to forget the many, often tiny things that make us happy. For when that happens, here's some reminders:
+
+<span id="prompt_table"> </span>
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [I'm feeling lucky - Inspire me!](#im-feeling-lucky---inspire-me)
 - [General](#general)
   - [Go to the grocery store](#go-to-the-grocery-store)
   - [Take a selfie](#take-a-selfie)
@@ -30,10 +31,6 @@ It's easy to forget the many, often tiny things that make us happy. For when tha
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-## I'm feeling lucky - [Inspire me!](/todo_enjoy)
-
-<span id="prompt_table"> </span>
 
 ## General
 
