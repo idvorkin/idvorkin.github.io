@@ -5,7 +5,7 @@ tags:
 permalink: /todo_enjoy
 ---
 
-It's easy to forget the many, often tiny things that make us happy.  For when that happens, here's my list!
+It's easy to forget the many, often tiny things that make us happy. For when that happens, here's my list!
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -34,89 +34,94 @@ It's easy to forget the many, often tiny things that make us happy.  For when th
 
 ### Grocery store
 
-* Taking kids to trader Joe's
-* The butcher (Double D meats)
-* The Russian store
+- Take kids to trader Joe's
+- Go to the butcher Double D meats
+- Go to the Russian store (closed on Sunday)
 
 ### Daily Selfie
 
-* With Friends
-* With Goofie Hats
-* Making Funny Faces
-* Make a funny video
+- Take a selfie with Friends
+- Take a selfie with Goofie Hats
+- Take a selife with a funny face
+- Make a goofie TikTok
 
 ### Writing
 
-* Grab my e-ink tablet and write stuff out
-* Wake up early and work on my eulogy
+- Grab my e-ink tablet and write stuff out
+- Wake up early and work on my eulogy
+- Take a writing prompt and take it.
 
 ### Public transit
 
-* Take the subway anywhere
-* Take a one day train trip to Portland
-* Take a one day train trip to Vancouver
+- Take the subway anywhere
+- Take a one day train trip to Portland
+- Take a one day train trip to Vancouver
 
 ## Entertaining
 
 ### Bubble Bike
 
-* Ride a bubble bike!
+- Ride a bubble bike!
 
 ### Juggling
 
-* Clubs
-* Passing Clubs
-* Glow in the dark balls
-* 4 balls
-* small food stuff like eggs and mandarins
+- Clubs
+- Passing Clubs
+- Glow in the dark balls
+- 4 balls
+- small food stuff like eggs and mandarins
 
 ### Cards
 
-* Card to ceiling
-* Cards across
-* Ambitious card
-* Australian cards
-* Culls
-* Anniversary cards
+- Card to ceiling
+- Cards across
+- Ambitious card
+- Australian cards
+- Culls
+- Anniversary cards
 
 ### Coins
 
 ### Bands
 
-* TRU
-* Gift
-* Flip back and forth
-* Up Nose
+- TRU
+- Gift
+- Flip back and forth
+- Up Nose
 
 ### Colorful Clothing
 
-* Rainbow suit
-* Goat boy legs and horns
-* A wig
-* Toe shows
-* Sequin Jacket
-* Halloween costumes - Lama
-* Halloween costumes - Bird
-* Halloween costumes - Fish
-* Halloween costumes - Penguin
-* Halloween costumes - Bee
+- Wear my rainbow suit
+- Wear my goat boy legs and horns
+- Put on a wig
+- Wear toe shoes
+- Wear Sequin Jacket
+- Wear a Halloween costumes - Lama
+- Wear a Halloween costumes - Bird
+- Wear a Halloween costumes - Fish
+- Wear a Halloween costumes - Penguin
+- Wear a Halloween costumes - Bee
 
 ## Family
 
 ### Amelia
 
-* Kids dates
-* Bike anywhere
-* Swimming
-* Roller Skating
-* Making a TikTok
+- Kids dates
+- Bike anywhere
+- Take Amelia Swimming
+- Take Amelia Roller Skating
+- Take Amelia To The Library
+- Make a TikTok with Amelia
 
 ### Zach
 
-* Working on games
-* Co-write an essay
-* Watch a movie
-* Watch Simpsons
-* Go out for dinner
+- Take Zach Swimming
+- Take Zach out for Dinner
+- Working on Zach's Web Site
+- Co-write an essay with Zach
+- Watch a movie with Zach
+- Watch the Simpsons with Zach
 
 ### Tori
+
+- Tori is private, respect her privacy, and appreciate her.
