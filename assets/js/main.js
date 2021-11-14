@@ -29,18 +29,18 @@ function SwapProdAndTest() {
 }
 
 function ForceShowRightSideBar() {
-    let toc = $("#right-sidebar");
-    let mainContent = $("#main-content");
-    toc.removeClass();
-    toc.addClass("col-4 pl-0");
+  let toc = $("#right-sidebar");
+  let mainContent = $("#main-content");
+  toc.removeClass();
+  toc.addClass("col-4 pl-0");
 
-    mainContent.removeClass();
-    mainContent.addClass("col-8 pr-0");
+  mainContent.removeClass();
+  mainContent.addClass("col-8 pr-0");
 
-    // Hide DropUp
-    tocDropUp = $("#id-ui-toc-dropdown");
-    tocDropUp.removeClass();
-    tocDropUp.addClass("d-none");
+  // Hide DropUp
+  tocDropUp = $("#id-ui-toc-dropdown");
+  tocDropUp.removeClass();
+  tocDropUp.addClass("d-none");
 }
 
 // <!-- Copied from hackmd-extras.js -->
@@ -90,7 +90,6 @@ function generateToc(id, showPinToc) {
     tocMenu.append(forceSideBar);
   }
   target.append(tocMenu);
-
 }
 
 // NOTE: This should really be in post.md
@@ -176,65 +175,91 @@ function addBackLinksLoader() {
   $.getJSON(backlinks_url, ProcessBackLinks);
 }
 
+function render_prompt_for_category(category, prompts_for_category) {
+  //print one of the prompts
+  let random_prompt = _.sampleSize(prompts_for_category, 1)[0];
+  // console.log(`${category}:${random_prompt}`)
+  // elem = $(`<div> <span class="badge badge-pill badge-primary"> ${random_prompt}</span></div>`)[0]
+  elem = $(
+    `<div class="alert alert-primary" role="alert"> ${random_prompt}</span></div>`
+  )[0];
+  $(category).after(elem);
+}
+function render_table_random(prompts_for_category) {
+  // Create a table at XYZ.
+  const table_placeholder = $("#prompt_table");
+  // Build a table
+  let table_as_html = "<table class='table table-striped table-bordered'>";
+
+  console.log(prompts_for_category.keys());
+  categories = _.sampleSize(Array.from(prompts_for_category.keys()), 4);
+  console.log(categories);
+  for (category of categories) {
+    prompts = prompts_for_category.get(category);
+    const random = _.sampleSize(prompts, 1)[0];
+    // console.log(category)
+    // table_as_html += `<tr> <td> ${category} </td> <td> ${prompts[0]}</td> </tr>`
+    table_as_html += `<tr> <td> ${category} </td> <td> ${random}</td> </tr>`;
+  }
+  table_as_html += "</table>";
+
+  table_element = $(table_as_html);
+  // elem = $(`<div class="alert alert-primary" role="alert"> ${prompts_for_category}</span></div>`)[0]
+  console.log(table_element);
+  console.log(table_as_html);
+  $(table_placeholder).after(table_element);
+}
+
 // The prompts page has a bunch of lists of prompts
 // Would be nice to "pick a random one" to make it less intimidating
 // So can add a box at the top with a random prompt on top
 // And a random per section prompt
 function add_random_prompts() {
-    console.log("add_random_prompts++")
+  console.log("add_random_prompts++");
 
-    // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
-    const starting_node = $("h3")[0]
-    const node = starting_node
-    let current_category = starting_node
-    let prompts_for_category = []
-    let all_prompts = []
-    let render_random_prompt = () => {
-        //print one of the prompts
-        let random_prompt = _.sampleSize(prompts_for_category, 1)[0]
-        let category = current_category.textContent
-        // console.log(`${category}:${random_prompt}`)
+  // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
+  const starting_node = $("h3")[0];
+  const node = starting_node;
+  let current_category = starting_node;
+  let prompts_for_category = [];
+  let all_prompts = [];
+  let map_category_to_prompts = new Map();
+  for (let node = starting_node; node; node = node.nextSibling) {
+    if (node.tagName == "H3") {
+      // Hit a new category
 
-        // elem = $(`<div> <span class="badge badge-pill badge-primary"> ${random_prompt}</span></div>`)[0]
-        elem = $(`<div class="alert alert-primary" role="alert"> ${random_prompt}</span></div>`)[0]
-        $(current_category).after(elem)
+      if (!_.isEmpty(prompts_for_category)) {
+        render_prompt_for_category(current_category, prompts_for_category);
+      }
+
+      // Build prompt map
+      map_category_to_prompts.set(
+        current_category.textContent,
+        prompts_for_category
+      );
+
+      // start processing next categroy
+      current_category = node;
+      prompts_for_category = [];
+      continue;
     }
 
-    for (let node = starting_node; node ;node= node.nextSibling)
-    {
-        if (node.tagName == "H3")
-        {
-            // End of category
-
-            if (!_.isEmpty(prompts_for_category))
-            {
-                render_random_prompt()
-            }
-
-            // Build prompt map
-
-            // start processing next categroy
-            current_category = node
-            prompts_for_category = []
-            continue
-        }
-
-        // in a category, prompts are the children of the first list
-        if (node.tagName != "UL")
-        {
-            continue
-        }
-        // print prompts
-        prompts_for_category =  _.map($(node).find("li"),(li)=>li.textContent)
-        all_prompts.concat(prompts_for_category)
+    // in a category, prompts are the children of the first unordered list, so skip
+    // stuff that isn't a list
+    if (node.tagName != "UL") {
+      continue;
     }
-    render_random_prompt() // process last element
-
-    console.log("add_random_prompts--")
+    // we should now be the first list in the category
+    prompts_for_category = _.map($(node).find("li"), li => li.textContent);
+    all_prompts.concat(prompts_for_category);
+  }
+  // render the last category, as we would have left the loop with out it.
+  render_prompt_for_category(current_category, prompts_for_category);
+  render_table_random(map_category_to_prompts);
+  console.log("add_random_prompts--");
 }
 
-function keyboard_shortcut_loader()
-{
+function keyboard_shortcut_loader() {
   Mousetrap.bind("s", e => (location.href = "/"));
   Mousetrap.bind("t", e => ForceShowRightSideBar());
   Mousetrap.bind("p", e => SwapProdAndTest());
@@ -258,12 +283,12 @@ Try these shortcuts:
 
 function random_prompt_loader() {
   const url = window.location.href;
-  const is_target_page = url.includes("/prompts") || url.includes("/todo_enjoy");
-  if (!is_target_page)
-  {
-      return;
+  const is_target_page =
+    url.includes("/prompts") || url.includes("/todo_enjoy");
+  if (!is_target_page) {
+    return;
   }
-  add_random_prompts()
+  add_random_prompts();
 }
 
 $(document).ready(addBackLinksLoader);
