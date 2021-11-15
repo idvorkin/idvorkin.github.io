@@ -21,8 +21,8 @@ LivePhotoElementPrototype.attributeChangedCallback = function(name) {
   if (name === "src") {
     var src = (this.attributes.src || {}).value;
     this.img.src = src;
-    var videoName  = src.replace(/\.[^\.]+$/, ".mp4");
-    console.log(videoName)
+    var videoName = src.replace(/\.[^\.]+$/, ".mp4");
+    console.log(videoName);
     this.video.src = videoName;
   }
 };
@@ -31,7 +31,7 @@ LivePhotoElementPrototype.createdCallback = function() {
   this.img = document.createElement("img");
   this.appendChild(this.img);
   this.video = document.createElement("video");
-  console.log("video created")
+  console.log("video created");
   this.video.loop = true;
   this.video.style.display = "none";
   this.appendChild(this.video);
@@ -46,5 +46,5 @@ LivePhotoElementPrototype.createdCallback = function() {
 };
 
 var LivePhotoElement = document.registerElement("live-photo-element", {
-  "prototype": LivePhotoElementPrototype
+  prototype: LivePhotoElementPrototype
 });
