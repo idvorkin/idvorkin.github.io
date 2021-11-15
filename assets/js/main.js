@@ -43,6 +43,7 @@ function generateToc(id, showPinToc) {
     var target = $("#" + id);
     target.html("");
     /* eslint-disable no-unused-vars */
+    /* @ts-ignore:TS2339*/
     var toc = new window.Toc("content-holder", {
         level: 3,
         top: -1,
@@ -117,7 +118,6 @@ function JsTemplateReplace() {
         replace.removeChild(replace.firstElementChild); // remove the 'lookup id' from the list
         $(aToReplace).replaceWith(replace);
     }
-    window.replaces = replaces; // help debugging
 }
 function ProcessBackLinks(backLinks) {
     var _a;
@@ -200,32 +200,32 @@ function render_table_random(prompts_for_category) {
 function add_random_prompts() {
     console.log("add_random_prompts++");
     // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
-    var starting_node = $("h3")[0];
-    var node = starting_node;
+    var starting_node = $("h3").first();
     var current_category = starting_node;
     var prompts_for_category = [];
     var all_prompts = [];
     var map_category_to_prompts = new Map();
-    for (var node_1 = starting_node; node_1; node_1 = node_1.nextSibling) {
-        if (node_1.tagName == "H3") {
+    for (var node = starting_node; node.length != 0; node = $(node).next()) {
+        console.log("category:" + node.prop('tagName'));
+        if (node.prop('tagName') == "H3") {
             // Hit a new category
             if (!_.isEmpty(prompts_for_category)) {
                 render_prompt_for_category(current_category, prompts_for_category);
             }
             // Build prompt map
-            map_category_to_prompts.set(current_category.textContent, prompts_for_category);
+            map_category_to_prompts.set(current_category.text(), prompts_for_category);
             // start processing next categroy
-            current_category = node_1;
+            current_category = node;
             prompts_for_category = [];
             continue;
         }
         // in a category, prompts are the children of the first unordered list, so skip
         // stuff that isn't a list
-        if (node_1.tagName != "UL") {
+        if (node.prop('tagName') != "UL") {
             continue;
         }
         // we should now be the first list in the category
-        prompts_for_category = _.map($(node_1).find("li"), function (li) { return li.textContent; });
+        prompts_for_category = _.map($(node).find("li"), function (li) { return $(li).text(); });
         all_prompts.concat(prompts_for_category);
     }
     // render the last category, as we would have left the loop with out it.

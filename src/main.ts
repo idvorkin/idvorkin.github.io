@@ -48,6 +48,7 @@ function generateToc(id, showPinToc) {
   const target = $(`#${id}`);
   target.html("");
   /* eslint-disable no-unused-vars */
+  /* @ts-ignore:TS2339*/
   const toc = new window.Toc("content-holder", {
     level: 3,
     top: -1,
@@ -121,7 +122,6 @@ function JsTemplateReplace() {
     replace.removeChild(replace.firstElementChild); // remove the 'lookup id' from the list
     $(aToReplace).replaceWith(replace);
   }
-  window.replaces = replaces; // help debugging
 }
 
 function ProcessBackLinks(backLinks) {
@@ -218,14 +218,14 @@ function add_random_prompts() {
   console.log("add_random_prompts++");
 
   // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
-  const starting_node = $("h3")[0];
-  const node = starting_node;
+  const starting_node = $("h3").first();
   let current_category = starting_node;
   let prompts_for_category = [];
   let all_prompts = [];
   let map_category_to_prompts = new Map();
-  for (let node = starting_node; node; node = node.nextSibling) {
-    if (node.tagName == "H3") {
+  for (let node = starting_node; node.length != 0; node = $(node).next()) {
+    console.log(`category:${node.prop("tagName")}`);
+    if (node.prop("tagName") == "H3") {
       // Hit a new category
 
       if (!_.isEmpty(prompts_for_category)) {
@@ -234,7 +234,7 @@ function add_random_prompts() {
 
       // Build prompt map
       map_category_to_prompts.set(
-        current_category.textContent,
+        current_category.text(),
         prompts_for_category
       );
 
@@ -246,11 +246,11 @@ function add_random_prompts() {
 
     // in a category, prompts are the children of the first unordered list, so skip
     // stuff that isn't a list
-    if (node.tagName != "UL") {
+    if (node.prop("tagName") != "UL") {
       continue;
     }
     // we should now be the first list in the category
-    prompts_for_category = _.map($(node).find("li"), li => li.textContent);
+    prompts_for_category = _.map($(node).find("li"), li => $(li).text());
     all_prompts.concat(prompts_for_category);
   }
   // render the last category, as we would have left the loop with out it.
