@@ -3,3 +3,6 @@
 
 _includes/head.html
 
+# Ignore JS Files created by TS
+assets/js/**/*js
+
