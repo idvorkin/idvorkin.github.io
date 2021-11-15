@@ -206,8 +206,8 @@ function add_random_prompts() {
     var all_prompts = [];
     var map_category_to_prompts = new Map();
     for (var node = starting_node; node.length != 0; node = $(node).next()) {
-        console.log("category:" + node.prop('tagName'));
-        if (node.prop('tagName') == "H3") {
+        console.log("category:" + node.prop("tagName"));
+        if (node.prop("tagName") == "H3") {
             // Hit a new category
             if (!_.isEmpty(prompts_for_category)) {
                 render_prompt_for_category(current_category, prompts_for_category);
@@ -221,7 +221,7 @@ function add_random_prompts() {
         }
         // in a category, prompts are the children of the first unordered list, so skip
         // stuff that isn't a list
-        if (node.prop('tagName') != "UL") {
+        if (node.prop("tagName") != "UL") {
             continue;
         }
         // we should now be the first list in the category
