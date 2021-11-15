@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/idvorkin/idvorkin.github.io/issues"
   },
-  "homepage": "https://github.com/idvorkin/idvorkin.github.io#readme"
+  "homepage": "https://github.com/idvorkin/idvorkin.github.io#readme",
+  "dependencies": {
+    "@types/jquery": "^3.5.8",
+    "@types/lodash": "^4.14.176"
+  }
 }
