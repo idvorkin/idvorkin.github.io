@@ -29,6 +29,7 @@
   "homepage": "https://github.com/idvorkin/idvorkin.github.io#readme",
   "dependencies": {
     "@types/jquery": "^3.5.8",
-    "@types/lodash": "^4.14.176"
+    "@types/lodash": "^4.14.176",
+    "@types/mousetrap": "^1.6.8"
   }
 }

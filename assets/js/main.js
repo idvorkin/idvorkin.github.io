@@ -24,7 +24,7 @@ function SwapProdAndTest() {
     else {
         newURL = url.replace(testPrefix, prodPrefix);
     }
-    window.location = newURL;
+    window.location.href = newURL;
 }
 function ForceShowRightSideBar() {
     var toc = $("#right-sidebar");
@@ -34,7 +34,7 @@ function ForceShowRightSideBar() {
     mainContent.removeClass();
     mainContent.addClass("col-8 pr-0");
     // Hide DropUp
-    tocDropUp = $("#id-ui-toc-dropdown");
+    var tocDropUp = $("#id-ui-toc-dropdown");
     tocDropUp.removeClass();
     tocDropUp.addClass("d-none");
 }
@@ -87,8 +87,8 @@ function generateToc(id, showPinToc) {
     target.append(tocMenu);
 }
 // NOTE: This should really be in post.md
-generateToc("ui-toc", (showPinToc = true));
-generateToc("ui-toc-affix", (showPinToc = false));
+generateToc("ui-toc", true);
+generateToc("ui-toc-affix", false);
 // Yuk: Markdown Table Syntax makes nesting lists in tables hard. Adding JS based macro
 // Replacement
 //  NOTE: replace [](lX) with a list where X is a number
@@ -113,7 +113,7 @@ function JsTemplateReplace() {
         var aToReplace = _($("a[href=" + replaceText + "]")).head();
         if (!aToReplace)
             continue; // Non-replaced targets will be left in place
-        replace = replaces[replaceText];
+        var replace = replaces[replaceText];
         replace.removeChild(replace.firstElementChild); // remove the 'lookup id' from the list
         $(aToReplace).replaceWith(replace);
     }
@@ -133,17 +133,17 @@ function ProcessBackLinks(backLinks) {
         return;
     }
     back_link_location.append("<div id='links-to-page-title'> <b>LINKS TO THIS NOTE</b><div>");
-    bl_ui = backLinks["url_info"];
+    var bl_ui = backLinks["url_info"];
     var sort_descending_by_size = function (a, b) {
         return Number(bl_ui[b].doc_size) - Number(bl_ui[a].doc_size);
     };
     for (var _i = 0, _b = backlinks.sort(sort_descending_by_size); _i < _b.length; _i++) {
         var link = _b[_i];
-        url_info = backLinks["url_info"][link];
+        var url_info = backLinks["url_info"][link];
         console.log(link);
         console.log(url_info);
-        title_href = "<a href=" + url_info["url"] + ">" + url_info["title"] + "</a>";
-        class_link = "link-box description truncate-css";
+        var title_href = "<a href=" + url_info["url"] + ">" + url_info["title"] + "</a>";
+        var class_link = "link-box description truncate-css";
         back_link_location.append("<div> <div class=\"" + class_link + "\"> " + title_href + ":<span class=\"link-description\"> " + url_info["description"] + "  <span></div></div>");
     }
 }
@@ -167,7 +167,7 @@ function render_prompt_for_category(category, prompts_for_category) {
     var random_prompt = _.sampleSize(prompts_for_category, 1)[0];
     // console.log(`${category}:${random_prompt}`)
     // elem = $(`<div> <span class="badge badge-pill badge-primary"> ${random_prompt}</span></div>`)[0]
-    elem = $("<div class=\"alert alert-primary\" role=\"alert\"> " + random_prompt + "</span></div>")[0];
+    var elem = $("<div class=\"alert alert-primary\" role=\"alert\"> " + random_prompt + "</span></div>")[0];
     $(category).after(elem);
 }
 function render_table_random(prompts_for_category) {
@@ -176,18 +176,18 @@ function render_table_random(prompts_for_category) {
     // Build a table
     var table_as_html = "<table class='table table-striped table-bordered'>";
     console.log(prompts_for_category.keys());
-    categories = _.sampleSize(Array.from(prompts_for_category.keys()), 4);
+    var categories = _.sampleSize(Array.from(prompts_for_category.keys()), 4);
     console.log(categories);
     for (var _i = 0, categories_1 = categories; _i < categories_1.length; _i++) {
-        category = categories_1[_i];
-        prompts = prompts_for_category.get(category);
+        var category = categories_1[_i];
+        var prompts = prompts_for_category.get(category);
         var random = _.sampleSize(prompts, 1)[0];
         // console.log(category)
         // table_as_html += `<tr> <td> ${category} </td> <td> ${prompts[0]}</td> </tr>`
         table_as_html += "<tr> <td> " + category + " </td> <td> " + random + "</td> </tr>";
     }
     table_as_html += "</table>";
-    table_element = $(table_as_html);
+    var table_element = $(table_as_html);
     // elem = $(`<div class="alert alert-primary" role="alert"> ${prompts_for_category}</span></div>`)[0]
     console.log(table_element);
     console.log(table_as_html);
