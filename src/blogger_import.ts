@@ -78,7 +78,6 @@ function ProcessImports(posts: Array<any>) {
     .value();
 
   for (const randomPost of randomPosts) {
-    console.log("RP++");
     append_post(random_div, randomPost);
   }
   // Add a random achievement post
