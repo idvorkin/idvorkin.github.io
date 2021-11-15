@@ -1,7 +1,7 @@
 function append_post(div, post) {
-  let item = $("<div/>");
+  const item = $("<div/>");
   // TODO: HACK: Strip to the right of Week number
-  let title_href = `<h3> <a href='${post.url}'}>${post.title}</a></h3>`;
+  const title_href = `<h3> <a href='${post.url}'}>${post.title}</a></h3>`;
   const monthNames = [
     "January",
     "February",
@@ -19,10 +19,10 @@ function append_post(div, post) {
 
   item.append(title_href);
   // HACK: Upsize to larger thumbnail, seems like blogger auto resizes to include a 320 image as well.
-  let thumbnail_url = post.thumbnail.replace("s72-c", "s320");
+  const thumbnail_url = post.thumbnail.replace("s72-c", "s320");
 
-  let published_date = new Date(post.published);
-  let excerptDisplayText = `
+  const published_date = new Date(post.published);
+  const excerptDisplayText = `
     <div> ${
       monthNames[published_date.getMonth()]
     } ${published_date.getFullYear()} - ${post.excerpt}
@@ -45,7 +45,7 @@ function append_post(div, post) {
   }
   div.append(item);
 }
-function ProcessImports(posts) {
+function ProcessImports(posts: Array<any>) {
   if (!posts) {
     console.log(`No posts being imported`);
     return;
@@ -53,9 +53,9 @@ function ProcessImports(posts) {
 
   //
   // Import all history
-  let random_div = $("#random-post");
-  let import_div = $("#imported-posts");
-  let achievement_div = $("#achievment");
+  const random_div = $("#random-post");
+  const import_div = $("#imported-posts");
+  const achievement_div = $("#achievment");
   if (!achievement_div) {
     console.log("#achievement_div not found");
     return;
@@ -70,33 +70,41 @@ function ProcessImports(posts) {
     return;
   }
   // Add a random post on top
-  let count_random_posts = 1;
-  for (var randomPost of _.chain(posts)
+  const count_random_posts = 1;
+
+  const randomPosts = _.chain(posts)
     .sampleSize(count_random_posts)
-    .orderBy(o => o.published, "desc")) {
+    .orderBy(o => o.published, "desc")
+    .value();
+
+  for (const randomPost of randomPosts) {
+    console.log("RP++");
     append_post(random_div, randomPost);
   }
   // Add a random achievement post
   // TODO: Merge in new posts to this feed
   // Consider doing the merge with a jquery selector
 
-  let count_achievement_posts = 1;
-  for (var randomPost of _.chain(posts)
+  const count_achievement_posts = 1;
+  let random_achievement_posts = _.chain(posts)
     .filter(o => o.title.toLowerCase().includes("achievement"))
     .sampleSize(count_achievement_posts)
-    .orderBy(o => o.published, "desc")) {
-    append_post(achievement_div, randomPost);
+    .orderBy(o => o.published, "desc")
+    .value();
+
+  for (const randomPost2 of random_achievement_posts) {
+    append_post(achievement_div, randomPost2);
   }
 
-  let count_history_to_display = 0;
-  for (var post of _.take(posts, count_history_to_display)) {
+  const count_history_to_display = 0;
+  for (const post of _.take(posts, count_history_to_display)) {
     append_post(import_div, post);
     console.log("adding_post ${post}");
   }
 }
 
 function add_imported_blog_posts() {
-  var imported_posts_url = "/ig66/ig66-export.json";
+  const imported_posts_url = "/ig66/ig66-export.json";
   $.getJSON(imported_posts_url, ProcessImports);
 }
 
