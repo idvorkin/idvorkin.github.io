@@ -57,26 +57,31 @@ function ProcessImports(posts) {
     }
     // Add a random post on top
     var count_random_posts = 1;
-    for (var _i = 0, _a = _.chain(posts)
+    var randomPosts = _.chain(posts)
         .sampleSize(count_random_posts)
-        .orderBy(function (o) { return o.published; }, "desc"); _i < _a.length; _i++) {
-        var randomPost = _a[_i];
+        .orderBy(function (o) { return o.published; }, "desc")
+        .value();
+    for (var _i = 0, randomPosts_1 = randomPosts; _i < randomPosts_1.length; _i++) {
+        var randomPost = randomPosts_1[_i];
+        console.log("RP++");
         append_post(random_div, randomPost);
     }
     // Add a random achievement post
     // TODO: Merge in new posts to this feed
     // Consider doing the merge with a jquery selector
     var count_achievement_posts = 1;
-    for (var _b = 0, _c = _.chain(posts)
+    var random_achievement_posts = _.chain(posts)
         .filter(function (o) { return o.title.toLowerCase().includes("achievement"); })
         .sampleSize(count_achievement_posts)
-        .orderBy(function (o) { return o.published; }, "desc"); _b < _c.length; _b++) {
-        var randomPost = _c[_b];
-        append_post(achievement_div, randomPost);
+        .orderBy(function (o) { return o.published; }, "desc")
+        .value();
+    for (var _a = 0, random_achievement_posts_1 = random_achievement_posts; _a < random_achievement_posts_1.length; _a++) {
+        var randomPost2 = random_achievement_posts_1[_a];
+        append_post(achievement_div, randomPost2);
     }
     var count_history_to_display = 0;
-    for (var _d = 0, _e = _.take(posts, count_history_to_display); _d < _e.length; _d++) {
-        var post = _e[_d];
+    for (var _b = 0, _c = _.take(posts, count_history_to_display); _b < _c.length; _b++) {
+        var post = _c[_b];
         append_post(import_div, post);
         console.log("adding_post ${post}");
     }
