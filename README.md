@@ -22,6 +22,9 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
     - [Search](#search-1)
     - [No broken links](#no-broken-links-1)
     - [Keyboard shortcuts](#keyboard-shortcuts)
+- [Technical Wizardry](#technical-wizardry)
+    - [Typescript - Reduce the easy Javascript Errors](#typescript---reduce-the-easy-javascript-errors)
+    - [Cypress - E2E and Unit Testing](#cypress---e2e-and-unit-testing)
     - [Useful scripts](#useful-scripts)
     - [Re-writing from scratch](#re-writing-from-scratch)
 
@@ -88,6 +91,14 @@ I use a [python script](https://github.com/idvorkin/LinqPadSnippets/blob/master/
     ~/gits/linqpadsnippets/python(master⚡) » ./checklinks.sh
 
 ### Keyboard shortcuts
+
+## Technical Wizardry
+
+This blog also serves as a home to let me experiment with fun tech. Here's some of it:
+
+### Typescript - Reduce the easy Javascript Errors
+
+### Cypress - E2E and Unit Testing
 
 ### Useful scripts
 
