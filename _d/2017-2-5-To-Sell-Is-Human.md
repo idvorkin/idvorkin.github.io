@@ -5,27 +5,30 @@ author: "Igor Dvorkin"
 comments: true
 inprogress: true
 collapsable: true
+permalink: /sell
 
 tags:
   - book-notes
 ---
 
-Selling matters - it's pitching, convincing, negotiating, hiring. Selling has a bad rap, because the seller often puts their needs ahead of the buyer - a win/lose paradigm. You should make selling win/win or no deal by needing to answer yes to these questions. 1/ If the buyer agrees, will their life improve? 2/ When the deal is done, will the world be a better place than when you began?
+Selling matters - it's pitching, convincing, negotiating, hiring. Selling has a bad rap, because the seller often puts their needs ahead of the buyer - a win/lose paradigm. You should make selling [win/win or no deal](/7h-c4) by needing to answer yes to these questions. 1/ If the buyer agrees, will their life improve? 2/ When the deal is done, will the world be a better place than when you began?
 
-To sell is human is a treatise on the modern form of sales. Part I describes why selling is important, and how it has evolved. Part II focuses on the how to be a salesman and Part III focuses on what you need to do to do sales.
+[To sell is human](https://www.amazon.com/Sell-Human-Surprising-Moving-Others-ebook/dp/B0087GJ8KM/) is a treatise on the modern form of sales. Part I describes why selling is important, and how it has evolved. Part II focuses on the how to be a salesman and Part III focuses on what you need to do to do sales.
+
+{%include amazon.html asin="B0087GJ8KM" %}
 
 ### Buyer beware to seller beware
 
-|---
-| Dimension | Before | Today | Modern sales value |
-|--------|-------------| -----| ---- |
-| Availability of Product Information | Limited, needed salesman to know what going on| Infinite knowledge on internet| Help customers evaluate the information overload |
-| Reputation Visibility | Limited, needed salesman to know what going on| Infinite knowledge on internet| Build reputation on social media. |
-| Purchase Access | Physical Stores Only | Internet purchases | Direct to easiest purchase |
+|-----------------------|------------------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| Axis | Pre Internet (Limited) | Modern World | You should |
+|-----------------------|------------------------------------------------|-----------------------------------------|-----------------------------------------------------------|
+| Product Information | Only Salesman to know what going on | Infinite knowledge on internet | Help customers evaluate the information overload |
+| Reputation Visibility | Only salesman to know what going on | Infinite knowledge on internet | Build reputation on social media. |
+| Purchase Access | Only what's in the Physical Stores | Internet purchases | Direct to easiest purchase |
 | Post Sales Support | TBD | TBD | TBD |
-| Product Catalog | limited to what my store/company had. | Provide access to broader product range | Optimize for your reputation, ensure not limited to single product model. |
+| Product Catalog | Only what store/company has. | Provide access to broader product range | Optimize for your reputation, carry to the best products. |
 
-### Attunement
+### Attunement ([Seek First To Understand](/7h-c5))
 
 Lock into what other person is transmitting, even when the signals aren't clear or obvious.
 
@@ -58,25 +61,22 @@ As you prepare your pitch, whichever variety you choose, clarify your purpose an
 - What do you want them to feel?
 - What do you want them to do?
 
-1. The One-Word Pitch Pro tip: Write a fifty-word pitch. Reduce it to twenty-five words. Then to six words. One of those remaining half-dozen is almost certainly your one-word pitch. Your try: ****\*\*****\_****\*\*****.
-
-2. The Question Pitch Pro tip: Use this if your arguments are strong. If they’re weak, make a statement. Or better yet, find some new arguments. Your try: ****\*\*****\_****\*\*****?
-
-3. The Rhyming Pitch Pro tip: Don’t rack your brain for rhymes. Go online and find a rhyming dictionary. I’m partial to RhymeZone (http:// www.rhymezone.com). Your try: ****\*\*****\_****\*\*****.
-
-4. The Subject Line Pitch Pro tip: Review the subject lines of the last twenty e-mail messages you’ve sent. Note how many of them appeal to either utility or curiosity. If that number is less than ten, rewrite each one that fails the test. Your try: ****\*\*****\_****\*\*****.
-
-5. The Twitter Pitch Pro tip: Even though Twitter allows 140 characters, limit your pitch to 120 characters so that others can pass it on. Remember: The best pitches are short, sweet, and easy to retweet. Your try: ****\*\*****\_****\*\*****.
-
-6. The Pixar Pitch Pro tip: Read all twenty-two of former Pixar story artist Emma Coats’s story rules: http:// bit.ly/ jlVWrG Your try: Once upon a time **\*\*\*\***\_\_**\*\*\*\***. Every day, **\*\***\_\_**\*\***. One day **\*\***\_\_\_**\*\***. Because of that, ****\*\*****\_\_\_****\*\*****. Because of that, **\*\***\_**\*\***. Until finally **\*\***\_\_\_\_**\*\***.
+| Pitch Tip    | How                                                                                                                                                                                                                                    |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| One Word     | Write a fifty-word pitch. Reduce it to twenty-five words. Then to six words. One of those remaining half-dozen is almost certainly your one-word pitch                                                                                 |
+| The Question | Use this if your arguments are strong. If they’re weak, make a statement. Or better yet, find some new arguments                                                                                                                       |
+| Rhyming      | Don’t rack your brain for rhymes. Go online and find a rhyming dictionary. I’m partial to [RhymeZone](http:// www.rhymezone.com)                                                                                                       |
+| Subject Line | Review the subject lines of the last twenty e-mail messages you’ve sent. Note how many of them appeal to either utility or curiosity. If that number is less than ten, rewrite each one that fails the test.                           |
+| Twitter      | Even though Twitter allows 140 characters, limit your pitch to 120 characters so that others can pass it on. Remember: The best pitches are short, sweet, and easy to retweet                                                          |
+| Pixar        | Read all twenty-two of former [Pixar story artist Emma Coats’s story rules](http:// bit.ly/ jlVWrG) Your try: Once upon a time [..] . Every day, [..]. One day [..] . Because of that [..] . Because of that [..]. Until finally [..]. |
 
 ### Improvise
 
-Improv teaches valuable skills for sales
+Improv teaches valuable skills for sales, and maps to many topics on this blog
 
-- Hear Offers (See First to Understand)
-- Yes And
-- Make your partner look good (Think win/win?)
+- Hear Offers ... [Seek First to Understand](/7h-c5)
+- Yes And ... [Getting to Yes](/gty)
+- Make your partner look good ... [Think win/win](/7h-c4)
 
 ### Serve
 
