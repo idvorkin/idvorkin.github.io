@@ -55,7 +55,7 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
     - [10. Rally the Herd](#10-rally-the-herd)
     - [11. Keep the Switch Going](#11-keep-the-switch-going)
 - [Other models](#other-models)
-    - [Behavior Change  - Prompt, Ability, Motivation](#behavior-change----prompt-ability-motivation)
+    - [Behavior Change - Prompt, Ability, Motivation](#behavior-change---prompt-ability-motivation)
     - [Influencer 2.0](#influencer-20)
 
 <!-- vim-markdown-toc -->
@@ -108,4 +108,4 @@ A different model to switch, also covering change management. Esssentially you n
 | Ability    |          |        |
 | Motivation |          |        |
 
-{%include amazon.html asin="B07LC9KDP5;B07D23CFGR;B00BPO7710" %}
+{%include amazon.html asin="0385528752;B07D23CFGR;B00BPO7710" %}
