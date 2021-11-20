@@ -40,7 +40,7 @@ function ForceShowRightSideBar() {
 }
 // <!-- Copied from hackmd-extras.js -->
 function generateToc(id, showPinToc) {
-    var target = $("#" + id);
+    var target = $("#".concat(id));
     target.html("");
     /* eslint-disable no-unused-vars */
     /* @ts-ignore:TS2339*/
@@ -111,7 +111,7 @@ function JsTemplateReplace() {
         replaces[firstLIText] = list;
     }
     for (var replaceText in replaces) {
-        var aToReplace = _($("a[href=" + replaceText + "]")).head();
+        var aToReplace = _($("a[href=".concat(replaceText, "]"))).head();
         if (!aToReplace)
             continue; // Non-replaced targets will be left in place
         var replace = replaces[replaceText];
@@ -124,7 +124,7 @@ function ProcessBackLinks(backLinks) {
     var my_path = new URL(document.URL).pathname;
     var backlinks = (_a = backLinks["url_info"][my_path]) === null || _a === void 0 ? void 0 : _a.incoming_links;
     if (!backlinks) {
-        console.log("No backlinks for the page " + my_path);
+        console.log("No backlinks for the page ".concat(my_path));
         return;
     }
     var back_link_location = $("#links-to-page");
@@ -142,9 +142,9 @@ function ProcessBackLinks(backLinks) {
         var url_info = backLinks["url_info"][link];
         console.log(link);
         console.log(url_info);
-        var title_href = "<a href=" + url_info["url"] + ">" + url_info["title"] + "</a>";
+        var title_href = "<a href=".concat(url_info["url"], ">").concat(url_info["title"], "</a>");
         var class_link = "link-box description truncate-css";
-        back_link_location.append("<div> <div class=\"" + class_link + "\"> " + title_href + ":<span class=\"link-description\"> " + url_info["description"] + "  <span></div></div>");
+        back_link_location.append("<div> <div class=\"".concat(class_link, "\"> ").concat(title_href, ":<span class=\"link-description\"> ").concat(url_info["description"], "  <span></div></div>"));
     }
 }
 function addBackLinksLoader() {
@@ -167,7 +167,7 @@ function render_prompt_for_category(category, prompts_for_category) {
     var random_prompt = _.sampleSize(prompts_for_category, 1)[0];
     // console.log(`${category}:${random_prompt}`)
     // elem = $(`<div> <span class="badge badge-pill badge-primary"> ${random_prompt}</span></div>`)[0]
-    var elem = $("<div class=\"alert alert-primary\" role=\"alert\"> " + random_prompt + "</span></div>")[0];
+    var elem = $("<div class=\"alert alert-primary\" role=\"alert\"> ".concat(random_prompt, "</span></div>"))[0];
     $(category).after(elem);
 }
 function render_table_random(prompts_for_category) {
@@ -184,7 +184,7 @@ function render_table_random(prompts_for_category) {
         var random = _.sampleSize(prompts, 1)[0];
         // console.log(category)
         // table_as_html += `<tr> <td> ${category} </td> <td> ${prompts[0]}</td> </tr>`
-        table_as_html += "<tr> <td> " + category + " </td> <td> " + random + "</td> </tr>";
+        table_as_html += "<tr> <td> ".concat(category, " </td> <td> ").concat(random, "</td> </tr>");
     }
     table_as_html += "</table>";
     var table_element = $(table_as_html);
@@ -206,7 +206,7 @@ function add_random_prompts() {
     var all_prompts = [];
     var map_category_to_prompts = new Map();
     for (var node = starting_node; node.length != 0; node = $(node).next()) {
-        console.log("category:" + node.prop("tagName"));
+        console.log("category:".concat(node.prop("tagName")));
         if (node.prop("tagName") == "H3") {
             // Hit a new category
             if (!_.isEmpty(prompts_for_category)) {
@@ -252,7 +252,7 @@ function random_prompt_loader() {
     }
     add_random_prompts();
 }
-$(document).ready(addBackLinksLoader);
-$(document).ready(JsTemplateReplace);
-$(document).ready(random_prompt_loader);
-$(document).ready(keyboard_shortcut_loader);
+$(addBackLinksLoader);
+$(JsTemplateReplace);
+$(random_prompt_loader);
+$(keyboard_shortcut_loader);

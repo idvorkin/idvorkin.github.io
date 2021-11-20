@@ -291,7 +291,7 @@ function random_prompt_loader() {
   add_random_prompts();
 }
 
-$(document).ready(addBackLinksLoader);
-$(document).ready(JsTemplateReplace);
-$(document).ready(random_prompt_loader);
-$(document).ready(keyboard_shortcut_loader);
+$(addBackLinksLoader);
+$(JsTemplateReplace);
+$(random_prompt_loader);
+$(keyboard_shortcut_loader);
