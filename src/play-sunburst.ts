@@ -47,24 +47,17 @@ function get_energy_allocation() {
   const relationships = new TreeNode({
     name: "Relationships",
     children: [
-      {
-        name: "Kids",
-        children: [
-          new TreeNode({ name: "Zach" }),
-          new TreeNode({ name: "Amelia" })
-        ],
-        value: 25
-      },
-      new TreeNode({ name: "Wife", value: 25 }),
+      new TreeNode({ name: "Zach" }),
+      new TreeNode({ name: "Amelia" }),
+      new TreeNode({ name: "Tori", value: 25 }),
       new TreeNode({ name: "Friends", value: 50 })
     ],
     value: 0
   });
-  const work = new TreeNode({ name: "Work", children: [], value: 10 });
 
   const root = new TreeNode({
     name: "Invest in",
-    children: [health, hobbies, relationships, work],
+    children: [health, hobbies, relationships],
     value: 0
   });
   return root;
@@ -134,7 +127,11 @@ async function sunburst_loader() {
   sunburst_data[0]["parents"] = sunburst_data2.parents;
   sunburst_data[0]["values"] = sunburst_data2.values;
 
-  const sunburstPlot = await Plotly.newPlot("sunburst", sunburst_data, layout);
+  const sunburstPlot = await Plotly.newPlot(
+    "sunburst",
+    sunburst_data as any,
+    layout
+  );
   sunburstPlot.on("plotly_sunburstclick", event => {
     const point = event.points[0];
     console.log(`sunburst click:`);

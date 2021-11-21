@@ -44,23 +44,16 @@ function get_energy_allocation() {
     const relationships = new TreeNode({
         name: "Relationships",
         children: [
-            {
-                name: "Kids",
-                children: [
-                    new TreeNode({ name: "Zach" }),
-                    new TreeNode({ name: "Amelia" })
-                ],
-                value: 25
-            },
-            new TreeNode({ name: "Wife", value: 25 }),
+            new TreeNode({ name: "Zach" }),
+            new TreeNode({ name: "Amelia" }),
+            new TreeNode({ name: "Tori", value: 25 }),
             new TreeNode({ name: "Friends", value: 50 })
         ],
         value: 0
     });
-    const work = new TreeNode({ name: "Work", children: [], value: 10 });
     const root = new TreeNode({
         name: "Invest in",
-        children: [health, hobbies, relationships, work],
+        children: [health, hobbies, relationships],
         value: 0
     });
     return root;

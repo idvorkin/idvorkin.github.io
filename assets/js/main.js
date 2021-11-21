@@ -192,23 +192,16 @@ function render_table_random(prompts_for_category) {
 // Would be nice to "pick a random one" to make it less intimidating
 // So can add a box at the top with a random prompt on top
 // And a random per section prompt
-function add_random_prompts() {
-    console.log("add_random_prompts++");
+function make_category_to_prompt_map() {
     // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
     const starting_node = $("h3").first();
     let current_category = starting_node;
     let prompts_for_category = [];
-    let all_prompts = [];
     let map_category_to_prompts = new Map();
     for (let node = starting_node; node.length != 0; node = $(node).next()) {
-        console.log(`category:${node.prop("tagName")}`);
         if (node.prop("tagName") == "H3") {
-            // Hit a new category
-            if (!_.isEmpty(prompts_for_category)) {
-                render_prompt_for_category(current_category, prompts_for_category);
-            }
             // Build prompt map
-            map_category_to_prompts.set(current_category.text(), prompts_for_category);
+            map_category_to_prompts.set(current_category, prompts_for_category);
             // start processing next categroy
             current_category = node;
             prompts_for_category = [];
@@ -221,10 +214,17 @@ function add_random_prompts() {
         }
         // we should now be the first list in the category
         prompts_for_category = _.map($(node).find("li"), li => $(li).text());
-        all_prompts.concat(prompts_for_category);
     }
-    // render the last category, as we would have left the loop with out it.
-    render_prompt_for_category(current_category, prompts_for_category);
+    map_category_to_prompts.set(current_category, prompts_for_category);
+    // XXX: Am I missing the last entry (??)
+    return map_category_to_prompts;
+}
+function add_random_prompts() {
+    console.log("add_random_prompts++");
+    const map_category_to_prompts = make_category_to_prompt_map();
+    for (const category of map_category_to_prompts.keys()) {
+        render_prompt_for_category(category, map_category_to_prompts.get(category));
+    }
     render_table_random(map_category_to_prompts);
     console.log("add_random_prompts--");
 }
@@ -250,7 +250,7 @@ Try these shortcuts:
 }
 function random_prompt_loader() {
     const url = window.location.href;
-    const is_target_page = url.includes("/prompts") || url.includes("/todo_enjoy");
+    const is_target_page = url.includes("/prompts") || url.includes("/todo_enjoy") || url.includes("/sunburst");
     if (!is_target_page) {
         return;
     }
