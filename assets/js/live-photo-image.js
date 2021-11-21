@@ -25,3 +25,4 @@ var LivePhotoImage = document.registerElement("live-photo-image", {
     prototype: LivePhotoImagePrototype,
     extends: "img"
 });
+//# sourceMappingURL=live-photo-image.js.map

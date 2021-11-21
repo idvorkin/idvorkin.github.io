@@ -7,49 +7,56 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+// TODO: Convert to a template class
 class TreeNode {
-    constructor({ name, value = 100, children = [] }) {
+    constructor({ name, value, children }) {
+        this.treenode = true;
         this.name = name;
-        this.children = children;
-        this.value = value;
+        this.children = children !== null && children !== void 0 ? children : [];
+        this.value = value !== null && value !== void 0 ? value : 0;
     }
 }
 function get_energy_allocation() {
     const health = new TreeNode({
         name: "Health",
         children: [
-            { name: "Physical", children: [], value: 25 },
-            { name: "Emotional", children: [], value: 10 },
-            { name: "Cognative", children: [], value: 25 }
+            new TreeNode({ name: "Physical", value: 25 }),
+            new TreeNode({ name: "Emotional", value: 10 }),
+            new TreeNode({ name: "Cognative", value: 25 })
         ],
         value: 25
     });
     const hobbies = new TreeNode({
         name: "Hobbies",
         children: [
-            { name: "Magic", children: [], value: 25 },
-            { name: "Biking", children: [], value: 10 },
-            { name: "Tech", children: [], value: 25 }
+            { name: "Magic", children: [
+                    new TreeNode({ name: "Card Magic" }),
+                    new TreeNode({ name: "Coin Magic" }),
+                    new TreeNode({ name: "Band Magic" }),
+                ]
+            },
+            new TreeNode({ name: "Biking", value: 10 }),
+            new TreeNode({ name: "Tech", value: 25 })
         ],
         value: 0
     });
     const relationships = new TreeNode({
         name: "Relationships",
         children: [
-            {
+            new TreeNode({
                 name: "Kids",
                 children: [
-                    { name: "Zach", children: [], value: 25 },
-                    { name: "Amelia", children: [], value: 10 }
+                    new TreeNode({ name: "Zach", value: 25 }),
+                    new TreeNode({ name: "Amelia", value: 25 }),
                 ],
                 value: 25
-            },
-            { name: "Wife", children: [], value: 25 },
-            { name: "Friends", children: [], value: 50 }
+            }),
+            new TreeNode({ name: "Wife", value: 25 }),
+            new TreeNode({ name: "Friends", value: 50 })
         ],
         value: 0
     });
-    const work = new TreeNode({ name: "Work", children: [], value: 10 });
+    const work = new TreeNode({ name: "Work", value: 10 });
     const root = new TreeNode({
         name: "Invest in",
         children: [health, hobbies, relationships, work],
@@ -125,3 +132,4 @@ function sunburst_loader() {
     });
 }
 $(sunburst_loader);
+//# sourceMappingURL=play-sunburst.js.map

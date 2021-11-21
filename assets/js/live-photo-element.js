@@ -40,3 +40,4 @@ LivePhotoElementPrototype.createdCallback = function () {
 var LivePhotoElement = document.registerElement("live-photo-element", {
     prototype: LivePhotoElementPrototype
 });
+//# sourceMappingURL=live-photo-element.js.map

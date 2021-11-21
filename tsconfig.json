@@ -2,7 +2,8 @@
   "compilerOptions": {
     "outDir": "./assets/js",
     "allowJs": true,
-    "target": "es6"
+    "target": "es6",
+    "sourceMap": true
   },
   "include": ["./src/**/*"]
 }
