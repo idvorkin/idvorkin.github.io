@@ -1,8 +1,17 @@
+import * as Plotly from "plotly.js";
 class TreeNode {
   name: string;
   children: [TreeNode];
   value: number;
-  constructor({ name, value = 100, children = [] }: { name; value; children }) {
+  constructor({
+    name,
+    value = 25,
+    children = []
+  }: {
+    name;
+    value?;
+    children?;
+  }) {
     this.name = name;
     this.children = children;
     this.value = value;
@@ -13,18 +22,26 @@ function get_energy_allocation() {
   const health = new TreeNode({
     name: "Health",
     children: [
-      { name: "Physical", children: [], value: 25 },
-      { name: "Emotional", children: [], value: 10 },
-      { name: "Cognative", children: [], value: 25 }
+      { name: "Physical", value: 25 },
+      { name: "Emotional", value: 10 },
+      { name: "Cognative", value: 25 }
     ],
     value: 25
   });
   const hobbies = new TreeNode({
     name: "Hobbies",
     children: [
-      { name: "Magic", children: [], value: 25 },
-      { name: "Biking", children: [], value: 10 },
-      { name: "Tech", children: [], value: 25 }
+      new TreeNode({
+        name: "Magic",
+        value: 25,
+        children: [
+          new TreeNode({ name: "Card Magic" }),
+          new TreeNode({ name: "Coin Magic" }),
+          new TreeNode({ name: "Band Magic" })
+        ]
+      }),
+      new TreeNode({ name: "Biking", value: 10 }),
+      new TreeNode({ name: "Tech", value: 25 })
     ],
     value: 0
   });
@@ -34,13 +51,13 @@ function get_energy_allocation() {
       {
         name: "Kids",
         children: [
-          { name: "Zach", children: [], value: 25 },
-          { name: "Amelia", children: [], value: 10 }
+          new TreeNode({ name: "Zach" }),
+          new TreeNode({ name: "Amelia" })
         ],
         value: 25
       },
-      { name: "Wife", children: [], value: 25 },
-      { name: "Friends", children: [], value: 50 }
+      new TreeNode({ name: "Wife", value: 25 }),
+      new TreeNode({ name: "Friends", value: 50 })
     ],
     value: 0
   });
@@ -62,7 +79,7 @@ function* in_order_walk(node: TreeNode) {
   Q.push([node, null]);
   while (Q.length > 0) {
     const [current, parent] = Q.shift();
-    for (const child of current.children) {
+    for (const child of current.children ?? []) {
       Q.push([child, current]);
     }
     yield [current, parent];

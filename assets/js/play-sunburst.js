@@ -7,34 +7,36 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-// TODO: Convert to a template class
+import * as Plotly from "plotly.js";
 class TreeNode {
-    constructor({ name, value, children }) {
-        this.treenode = true;
+    constructor({ name, value = 25, children = [] }) {
         this.name = name;
-        this.children = children !== null && children !== void 0 ? children : [];
-        this.value = value !== null && value !== void 0 ? value : 0;
+        this.children = children;
+        this.value = value;
     }
 }
 function get_energy_allocation() {
     const health = new TreeNode({
         name: "Health",
         children: [
-            new TreeNode({ name: "Physical", value: 25 }),
-            new TreeNode({ name: "Emotional", value: 10 }),
-            new TreeNode({ name: "Cognative", value: 25 })
+            { name: "Physical", value: 25 },
+            { name: "Emotional", value: 10 },
+            { name: "Cognative", value: 25 }
         ],
         value: 25
     });
     const hobbies = new TreeNode({
         name: "Hobbies",
         children: [
-            { name: "Magic", children: [
+            new TreeNode({
+                name: "Magic",
+                value: 25,
+                children: [
                     new TreeNode({ name: "Card Magic" }),
                     new TreeNode({ name: "Coin Magic" }),
-                    new TreeNode({ name: "Band Magic" }),
+                    new TreeNode({ name: "Band Magic" })
                 ]
-            },
+            }),
             new TreeNode({ name: "Biking", value: 10 }),
             new TreeNode({ name: "Tech", value: 25 })
         ],
@@ -43,20 +45,20 @@ function get_energy_allocation() {
     const relationships = new TreeNode({
         name: "Relationships",
         children: [
-            new TreeNode({
+            {
                 name: "Kids",
                 children: [
-                    new TreeNode({ name: "Zach", value: 25 }),
-                    new TreeNode({ name: "Amelia", value: 25 }),
+                    new TreeNode({ name: "Zach" }),
+                    new TreeNode({ name: "Amelia" })
                 ],
                 value: 25
-            }),
+            },
             new TreeNode({ name: "Wife", value: 25 }),
             new TreeNode({ name: "Friends", value: 50 })
         ],
         value: 0
     });
-    const work = new TreeNode({ name: "Work", value: 10 });
+    const work = new TreeNode({ name: "Work", children: [], value: 10 });
     const root = new TreeNode({
         name: "Invest in",
         children: [health, hobbies, relationships, work],
@@ -67,11 +69,12 @@ function get_energy_allocation() {
 // sunburst format is an inorder traversal of the tree.
 // good thing to unit test
 function* in_order_walk(node) {
+    var _a;
     let Q = [];
     Q.push([node, null]);
     while (Q.length > 0) {
         const [current, parent] = Q.shift();
-        for (const child of current.children) {
+        for (const child of (_a = current.children) !== null && _a !== void 0 ? _a : []) {
             Q.push([child, current]);
         }
         yield [current, parent];
