@@ -1,4 +1,3 @@
-import * as Plotly from "plotly.js";
 class TreeNode {
   name: string;
   children: [TreeNode];
