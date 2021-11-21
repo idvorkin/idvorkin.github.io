@@ -15,11 +15,15 @@ class TreeNode {
     }
 }
 function get_energy_allocation() {
-    const health = new TreeNode({ name: "Health", children: [
+    const health = new TreeNode({
+        name: "Health",
+        children: [
             { name: "Physical", children: [], value: 25 },
             { name: "Emotional", children: [], value: 10 },
             { name: "Cognative", children: [], value: 25 }
-        ], value: 25 });
+        ],
+        value: 25
+    });
     const hobbies = new TreeNode({
         name: "Hobbies",
         children: [
@@ -91,7 +95,7 @@ var sunburst_data = [
         outsidetextfont: { size: 20, color: "#377eb8" },
         // leaf: {opacity: 0.4},
         marker: { line: { width: 2 } },
-        maxdepth: 2,
+        maxdepth: 2
     }
 ];
 var layout = {

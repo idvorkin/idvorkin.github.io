@@ -1,7 +1,7 @@
-var tocExpand = true;
+let tocExpand = true;
 function checkExpandToggle() {
-    var toc = $(".ui-toc-dropdown .toc");
-    var toggle = $(".expand-toggle");
+    const toc = $(".ui-toc-dropdown .toc");
+    const toggle = $(".expand-toggle");
     if (!tocExpand) {
         toc.removeClass("expand");
         toggle.text("Expand all");
@@ -13,11 +13,11 @@ function checkExpandToggle() {
 }
 function SwapProdAndTest() {
     /* Find page title. */
-    var url = window.location.href;
-    var prodPrefix = "https://idvork.in";
-    var testPrefix = "http://localhost:4000";
-    var isProd = url.includes(prodPrefix);
-    var newURL = url;
+    const url = window.location.href;
+    const prodPrefix = "https://idvork.in";
+    const testPrefix = "http://localhost:4000";
+    const isProd = url.includes(prodPrefix);
+    let newURL = url;
     if (isProd) {
         newURL = url.replace(prodPrefix, testPrefix);
     }
@@ -27,24 +27,24 @@ function SwapProdAndTest() {
     window.location.href = newURL;
 }
 function ForceShowRightSideBar() {
-    var toc = $("#right-sidebar");
-    var mainContent = $("#main-content");
+    let toc = $("#right-sidebar");
+    let mainContent = $("#main-content");
     toc.removeClass();
     toc.addClass("col-4 pl-0");
     mainContent.removeClass();
     mainContent.addClass("col-8 pr-0");
     // Hide DropUp
-    var tocDropUp = $("#id-ui-toc-dropdown");
+    const tocDropUp = $("#id-ui-toc-dropdown");
     tocDropUp.removeClass();
     tocDropUp.addClass("d-none");
 }
 // <!-- Copied from hackmd-extras.js -->
 function generateToc(id, showPinToc) {
-    var target = $("#".concat(id));
+    const target = $(`#${id}`);
     target.html("");
     /* eslint-disable no-unused-vars */
     /* @ts-ignore:TS2339*/
-    var toc = new window.Toc("content-holder", {
+    const toc = new window.Toc("content-holder", {
         level: 3,
         top: -1,
         class: "toc",
@@ -55,29 +55,29 @@ function generateToc(id, showPinToc) {
     if (target.text() === "undefined") {
         target.html("");
     }
-    var tocMenu = $('<div class="toc-menu"></div');
-    var toggle = $('<a class="expand-toggle" href="#">Collapse all</a>');
-    var backToTop = $('<a class="back-to-top" href="#">Top of page</a>');
-    var gotoBottom = $('<a class="go-to-bottom" href="#">Bottom of page</a>');
-    var forceSideBar = $('<a class="go-to-bottom" href="#">Pin ToC</a>');
+    const tocMenu = $('<div class="toc-menu"></div');
+    const toggle = $('<a class="expand-toggle" href="#">Collapse all</a>');
+    const backToTop = $('<a class="back-to-top" href="#">Top of page</a>');
+    const gotoBottom = $('<a class="go-to-bottom" href="#">Bottom of page</a>');
+    const forceSideBar = $('<a class="go-to-bottom" href="#">Pin ToC</a>');
     checkExpandToggle();
-    toggle.click(function (e) {
+    toggle.click(e => {
         e.preventDefault();
         e.stopPropagation();
         tocExpand = !tocExpand;
         checkExpandToggle();
     });
-    backToTop.click(function (e) {
+    backToTop.click(e => {
         e.preventDefault();
         e.stopPropagation();
         window.scrollTo(0, 0);
     });
-    gotoBottom.click(function (e) {
+    gotoBottom.click(e => {
         e.preventDefault();
         e.stopPropagation();
         window.scrollTo(0, document.body.scrollHeight);
     });
-    forceSideBar.click(function (e) { return ForceShowRightSideBar(); });
+    forceSideBar.click(e => ForceShowRightSideBar());
     tocMenu
         .append(toggle)
         .append(backToTop)
@@ -97,24 +97,23 @@ generateToc("ui-toc-affix", false);
 //  Markdown does not seperate lists, so stick divs between them.
 function JsTemplateReplace() {
     // Build a cache of replacement candidates to avoid multiple iterations over the tables
-    var replaces = {};
-    for (var _i = 0, _a = $("ul"); _i < _a.length; _i++) {
-        var list = _a[_i];
+    let replaces = {};
+    for (var list of $("ul")) {
         if (!list.firstElementChild)
             continue;
-        var firstLIText = list.firstElementChild.textContent;
+        let firstLIText = list.firstElementChild.textContent;
         if (!firstLIText.startsWith("l"))
             continue;
-        var number = parseInt(firstLIText.substring(1));
+        let number = parseInt(firstLIText.substring(1));
         if (number == NaN)
             continue;
         replaces[firstLIText] = list;
     }
     for (var replaceText in replaces) {
-        var aToReplace = _($("a[href=".concat(replaceText, "]"))).head();
+        let aToReplace = _($(`a[href=${replaceText}]`)).head();
         if (!aToReplace)
             continue; // Non-replaced targets will be left in place
-        var replace = replaces[replaceText];
+        const replace = replaces[replaceText];
         replace.removeChild(replace.firstElementChild); // remove the 'lookup id' from the list
         $(aToReplace).replaceWith(replace);
     }
@@ -124,34 +123,31 @@ function ProcessBackLinks(backLinks) {
     var my_path = new URL(document.URL).pathname;
     var backlinks = (_a = backLinks["url_info"][my_path]) === null || _a === void 0 ? void 0 : _a.incoming_links;
     if (!backlinks) {
-        console.log("No backlinks for the page ".concat(my_path));
+        console.log(`No backlinks for the page ${my_path}`);
         return;
     }
-    var back_link_location = $("#links-to-page");
+    let back_link_location = $("#links-to-page");
     if (!back_link_location) {
         console.log("No back_link_location");
         return;
     }
     back_link_location.append("<div id='links-to-page-title'> <b>LINKS TO THIS NOTE</b><div>");
-    var bl_ui = backLinks["url_info"];
-    var sort_descending_by_size = function (a, b) {
-        return Number(bl_ui[b].doc_size) - Number(bl_ui[a].doc_size);
-    };
-    for (var _i = 0, _b = backlinks.sort(sort_descending_by_size); _i < _b.length; _i++) {
-        var link = _b[_i];
-        var url_info = backLinks["url_info"][link];
+    const bl_ui = backLinks["url_info"];
+    var sort_descending_by_size = (a, b) => Number(bl_ui[b].doc_size) - Number(bl_ui[a].doc_size);
+    for (var link of backlinks.sort(sort_descending_by_size)) {
+        const url_info = backLinks["url_info"][link];
         console.log(link);
         console.log(url_info);
-        var title_href = "<a href=".concat(url_info["url"], ">").concat(url_info["title"], "</a>");
-        var class_link = "link-box description truncate-css";
-        back_link_location.append("<div> <div class=\"".concat(class_link, "\"> ").concat(title_href, ":<span class=\"link-description\"> ").concat(url_info["description"], "  <span></div></div>"));
+        const title_href = `<a href=${url_info["url"]}>${url_info["title"]}</a>`;
+        const class_link = `link-box description truncate-css`;
+        back_link_location.append(`<div> <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info["description"]}  <span></div></div>`);
     }
 }
 function addBackLinksLoader() {
-    var url = window.location.href;
-    var prodPrefix = "https://idvork.in";
-    var testPrefix = "http://localhost:4000";
-    var isProd = url.includes(prodPrefix);
+    const url = window.location.href;
+    const prodPrefix = "https://idvork.in";
+    const testPrefix = "http://localhost:4000";
+    const isProd = url.includes(prodPrefix);
     var backlinks_url = "";
     if (isProd) {
         backlinks_url =
@@ -164,30 +160,29 @@ function addBackLinksLoader() {
 }
 function render_prompt_for_category(category, prompts_for_category) {
     //print one of the prompts
-    var random_prompt = _.sampleSize(prompts_for_category, 1)[0];
+    let random_prompt = _.sampleSize(prompts_for_category, 1)[0];
     // console.log(`${category}:${random_prompt}`)
     // elem = $(`<div> <span class="badge badge-pill badge-primary"> ${random_prompt}</span></div>`)[0]
-    var elem = $("<div class=\"alert alert-primary\" role=\"alert\"> ".concat(random_prompt, "</span></div>"))[0];
+    const elem = $(`<div class="alert alert-primary" role="alert"> ${random_prompt}</span></div>`)[0];
     $(category).after(elem);
 }
 function render_table_random(prompts_for_category) {
     // Create a table at XYZ.
-    var table_placeholder = $("#prompt_table");
+    const table_placeholder = $("#prompt_table");
     // Build a table
-    var table_as_html = "<table class='table table-striped table-bordered'>";
+    let table_as_html = "<table class='table table-striped table-bordered'>";
     console.log(prompts_for_category.keys());
-    var categories = _.sampleSize(Array.from(prompts_for_category.keys()), 4);
+    const categories = _.sampleSize(Array.from(prompts_for_category.keys()), 4);
     console.log(categories);
-    for (var _i = 0, categories_1 = categories; _i < categories_1.length; _i++) {
-        var category = categories_1[_i];
-        var prompts = prompts_for_category.get(category);
-        var random = _.sampleSize(prompts, 1)[0];
+    for (const category of categories) {
+        const prompts = prompts_for_category.get(category);
+        const random = _.sampleSize(prompts, 1)[0];
         // console.log(category)
         // table_as_html += `<tr> <td> ${category} </td> <td> ${prompts[0]}</td> </tr>`
-        table_as_html += "<tr> <td> ".concat(category, " </td> <td> ").concat(random, "</td> </tr>");
+        table_as_html += `<tr> <td> ${category} </td> <td> ${random}</td> </tr>`;
     }
     table_as_html += "</table>";
-    var table_element = $(table_as_html);
+    const table_element = $(table_as_html);
     // elem = $(`<div class="alert alert-primary" role="alert"> ${prompts_for_category}</span></div>`)[0]
     console.log(table_element);
     console.log(table_as_html);
@@ -200,13 +195,13 @@ function render_table_random(prompts_for_category) {
 function add_random_prompts() {
     console.log("add_random_prompts++");
     // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
-    var starting_node = $("h3").first();
-    var current_category = starting_node;
-    var prompts_for_category = [];
-    var all_prompts = [];
-    var map_category_to_prompts = new Map();
-    for (var node = starting_node; node.length != 0; node = $(node).next()) {
-        console.log("category:".concat(node.prop("tagName")));
+    const starting_node = $("h3").first();
+    let current_category = starting_node;
+    let prompts_for_category = [];
+    let all_prompts = [];
+    let map_category_to_prompts = new Map();
+    for (let node = starting_node; node.length != 0; node = $(node).next()) {
+        console.log(`category:${node.prop("tagName")}`);
         if (node.prop("tagName") == "H3") {
             // Hit a new category
             if (!_.isEmpty(prompts_for_category)) {
@@ -225,7 +220,7 @@ function add_random_prompts() {
             continue;
         }
         // we should now be the first list in the category
-        prompts_for_category = _.map($(node).find("li"), function (li) { return $(li).text(); });
+        prompts_for_category = _.map($(node).find("li"), li => $(li).text());
         all_prompts.concat(prompts_for_category);
     }
     // render the last category, as we would have left the loop with out it.
@@ -234,19 +229,28 @@ function add_random_prompts() {
     console.log("add_random_prompts--");
 }
 function keyboard_shortcut_loader() {
-    Mousetrap.bind("s", function (e) { return (location.href = "/"); });
-    Mousetrap.bind("t", function (e) { return ForceShowRightSideBar(); });
-    Mousetrap.bind("p", function (e) { return SwapProdAndTest(); });
-    Mousetrap.bind("z", function (e) { return (location.href = "/random"); });
-    Mousetrap.bind("a", function (e) { return (location.href = "/all"); });
-    Mousetrap.bind("m", function (e) { return (location.href = "/toc"); });
-    Mousetrap.bind("6", function (e) { return (location.href = "/ig66"); });
-    var shortcutHelp = "\nTry these shortcuts:\n  s - search\n  t - force sidebar\n  p - swap prod and test\n  z - surprise me\n  a - all posts\n  m - global toc\n  6 - family journal\n  ";
-    Mousetrap.bind("?", function (e) { return alert(shortcutHelp); });
+    Mousetrap.bind("s", e => (location.href = "/"));
+    Mousetrap.bind("t", e => ForceShowRightSideBar());
+    Mousetrap.bind("p", e => SwapProdAndTest());
+    Mousetrap.bind("z", e => (location.href = "/random"));
+    Mousetrap.bind("a", e => (location.href = "/all"));
+    Mousetrap.bind("m", e => (location.href = "/toc"));
+    Mousetrap.bind("6", e => (location.href = "/ig66"));
+    let shortcutHelp = `
+Try these shortcuts:
+  s - search
+  t - force sidebar
+  p - swap prod and test
+  z - surprise me
+  a - all posts
+  m - global toc
+  6 - family journal
+  `;
+    Mousetrap.bind("?", e => alert(shortcutHelp));
 }
 function random_prompt_loader() {
-    var url = window.location.href;
-    var is_target_page = url.includes("/prompts") || url.includes("/todo_enjoy");
+    const url = window.location.href;
+    const is_target_page = url.includes("/prompts") || url.includes("/todo_enjoy");
     if (!is_target_page) {
         return;
     }

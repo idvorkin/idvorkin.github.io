@@ -43,12 +43,7 @@
             }
         }
     };
-    Toc.prototype._createTocContent = function recursiveToc(level, titleElements, titleNames, ulClass, index) {
-        if (level === void 0) { level = 0; }
-        if (titleElements === void 0) { titleElements = []; }
-        if (titleNames === void 0) { titleNames = []; }
-        if (ulClass === void 0) { ulClass = "class-not-specified"; }
-        if (index === void 0) { index = 0; }
+    Toc.prototype._createTocContent = function recursiveToc(level = 0, titleElements = [], titleNames = [], ulClass = "class-not-specified", index = 0) {
         // Inititalize our elements from the toc object
         // which is only available on level 0
         if (level === 0) {
@@ -59,7 +54,7 @@
         // No need to do anything for an empty ToC
         if (!titleElements.length)
             return;
-        var content = "<ul class='" + ulClass + "'>\n";
+        var content = `<ul class='${ulClass}'>\n`;
         var iterTag = titleNames[level];
         var recurse = false;
         var openTag = false;
@@ -84,7 +79,7 @@
                     content += "</li>\n";
                     openTag = false;
                 }
-                content += "<li><a class=\"nav-link\" href=\"" + id + "\" title=\"" + elementTitle + "\">" + elementText + "</a>";
+                content += `<li><a class="nav-link" href="${id}" title="${elementTitle}">${elementText}</a>`;
                 // Reset recursion. We need it for the next subsections
                 recurse = false;
                 openTag = true;
