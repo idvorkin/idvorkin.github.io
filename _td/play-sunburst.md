@@ -9,3 +9,7 @@ Just playing around with sunburst
 
 <div id="sunburst">
 </div>
+
+<div class="alert" id="sunburst_text">
+    Click an Element to see its children
+</div>

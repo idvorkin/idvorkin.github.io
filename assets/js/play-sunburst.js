@@ -111,6 +111,7 @@ function sunburst_loader() {
             console.log(`sunburst click:`);
             console.log(point.label);
             console.log(point["currentPath"]);
+            $("#sunburst_text").text(point.label);
         });
     });
 }
