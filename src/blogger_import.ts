@@ -103,8 +103,11 @@ function ProcessImports(posts: Array<any>) {
 }
 
 function add_imported_blog_posts() {
+  if (!document.URL.includes("/ig66")) {
+    return;
+  }
   const imported_posts_url = "/ig66/ig66-export.json";
   $.getJSON(imported_posts_url, ProcessImports);
 }
 
-$(document).ready(add_imported_blog_posts);
+$(add_imported_blog_posts);

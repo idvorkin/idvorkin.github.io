@@ -1,7 +1,7 @@
 function append_post(div, post) {
     var item = $("<div/>");
     // TODO: HACK: Strip to the right of Week number
-    var title_href = "<h3> <a href='" + post.url + "'}>" + post.title + "</a></h3>";
+    var title_href = "<h3> <a href='".concat(post.url, "'}>").concat(post.title, "</a></h3>");
     var monthNames = [
         "January",
         "February",
@@ -20,13 +20,13 @@ function append_post(div, post) {
     // HACK: Upsize to larger thumbnail, seems like blogger auto resizes to include a 320 image as well.
     var thumbnail_url = post.thumbnail.replace("s72-c", "s320");
     var published_date = new Date(post.published);
-    var excerptDisplayText = "\n    <div> " + monthNames[published_date.getMonth()] + " " + published_date.getFullYear() + " - " + post.excerpt + "\n    </div>\n   ";
+    var excerptDisplayText = "\n    <div> ".concat(monthNames[published_date.getMonth()], " ").concat(published_date.getFullYear(), " - ").concat(post.excerpt, "\n    </div>\n   ");
     if (post.thumbnail != "") {
         console.log(post.title);
         console.log(published_date);
         item.append(
         // `<div> <a href='${post.url}'}><img src='${thumbnail_url}'/></div>`
-        "\n      <div style='overflow:auto'>\n\n      <a href='" + post.url + "'}><img style='float:left; margin-right:10px' src='" + thumbnail_url + "'/></a>\n      " + excerptDisplayText + "\n      </div>");
+        "\n      <div style='overflow:auto'>\n\n      <a href='".concat(post.url, "'}><img style='float:left; margin-right:10px' src='").concat(thumbnail_url, "'/></a>\n      ").concat(excerptDisplayText, "\n      </div>"));
     }
     else {
         item.append(excerptDisplayText);
@@ -86,7 +86,10 @@ function ProcessImports(posts) {
     }
 }
 function add_imported_blog_posts() {
+    if (!document.URL.includes("/ig66")) {
+        return;
+    }
     var imported_posts_url = "/ig66/ig66-export.json";
     $.getJSON(imported_posts_url, ProcessImports);
 }
-$(document).ready(add_imported_blog_posts);
+$(add_imported_blog_posts);
