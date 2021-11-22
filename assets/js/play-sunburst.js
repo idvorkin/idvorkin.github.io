@@ -12,6 +12,14 @@ class TreeNode {
         this.name = name;
         this.children = children;
         this.value = value;
+        // If kid sizes are all the same, make them equal to parent value/count kids
+        if (this.children.length > 0) { // if there are kids
+            const all_equal = this.children.every(child => child.value == this.value);
+            if (all_equal) {
+                this.children.forEach(child => child.value = this.value / this.children.length);
+            }
+            this.value = 0; // Set my value to zero since provided by the children.
+        }
     }
 }
 function get_energy_allocation() {
@@ -19,25 +27,26 @@ function get_energy_allocation() {
         name: "Health",
         children: [
             { name: "Physical", value: 25 },
-            { name: "Emotional", value: 10 },
+            { name: "Emotional", value: 25 },
             { name: "Cognative", value: 25 }
         ],
         value: 25
     });
+    const magic = new TreeNode({
+        name: "Magic",
+        value: 25,
+        children: [
+            new TreeNode({ name: "Card Magic" }),
+            new TreeNode({ name: "Coin Magic" }),
+            new TreeNode({ name: "Band Magic" })
+        ]
+    });
     const hobbies = new TreeNode({
         name: "Hobbies",
         children: [
-            new TreeNode({
-                name: "Magic",
-                value: 25,
-                children: [
-                    new TreeNode({ name: "Card Magic" }),
-                    new TreeNode({ name: "Coin Magic" }),
-                    new TreeNode({ name: "Band Magic" })
-                ]
-            }),
             new TreeNode({ name: "Biking", value: 10 }),
-            new TreeNode({ name: "Tech", value: 25 })
+            new TreeNode({ name: "Tech", value: 25 }),
+            new TreeNode({ name: "Juggling", value: 25 })
         ],
         value: 0
     });
@@ -46,14 +55,14 @@ function get_energy_allocation() {
         children: [
             new TreeNode({ name: "Zach" }),
             new TreeNode({ name: "Amelia" }),
-            new TreeNode({ name: "Tori", value: 25 }),
-            new TreeNode({ name: "Friends", value: 50 })
+            new TreeNode({ name: "Tori" }),
+            new TreeNode({ name: "Friends", })
         ],
         value: 0
     });
     const root = new TreeNode({
         name: "Invest in",
-        children: [health, hobbies, relationships],
+        children: [health, magic, hobbies, relationships],
         value: 0
     });
     return root;
@@ -115,14 +124,25 @@ function sunburst_loader() {
         sunburst_data[0]["ids"] = sunburst_data2.ids;
         sunburst_data[0]["labels"] = sunburst_data2.labels;
         sunburst_data[0]["parents"] = sunburst_data2.parents;
-        sunburst_data[0]["values"] = sunburst_data2.values;
+        // Ignore values for now.
+        // sunburst_data[0]["values"] = sunburst_data2.values;
         const sunburstPlot = yield Plotly.newPlot("sunburst", sunburst_data, layout);
+        const map_category_to_prompts_objects = make_category_to_prompt_map();
+        const map_category_to_prompts_text = new Map();
+        for (const k of map_category_to_prompts_objects.keys()) {
+            map_category_to_prompts_text.set(k.text(), map_category_to_prompts_objects.get(k)); // do via lodash
+        }
         sunburstPlot.on("plotly_sunburstclick", event => {
             const point = event.points[0];
             console.log(`sunburst click:`);
             console.log(point.label);
             console.log(point["currentPath"]);
             $("#sunburst_text").text(point.label);
+            if (map_category_to_prompts_text.get(point.label)) {
+                const prompts = map_category_to_prompts_text.get(point.label);
+                const random_prompt = _.sampleSize(prompts, 1)[0];
+                $("#sunburst_text").text(`${point.label}:${random_prompt}`);
+            }
         });
     });
 }

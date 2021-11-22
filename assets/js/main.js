@@ -179,7 +179,8 @@ function render_table_random(prompts_for_category) {
         const random = _.sampleSize(prompts, 1)[0];
         // console.log(category)
         // table_as_html += `<tr> <td> ${category} </td> <td> ${prompts[0]}</td> </tr>`
-        table_as_html += `<tr> <td> ${category} </td> <td> ${random}</td> </tr>`;
+        const category_text = category.text();
+        table_as_html += `<tr> <td> ${category_text} </td> <td> ${random}</td> </tr>`;
     }
     table_as_html += "</table>";
     const table_element = $(table_as_html);

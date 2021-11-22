@@ -28,11 +28,34 @@ Just playing around with sunburst
 - Take a selife with a funny face
 - Make a goofie TikTok
 
-### Sit down and write
+### Tech
+
+- Computer Vision
+- Typescript
+- End to End Testing
+- Natural Language Processing
+- Security
+- VIM scripting
+
+## Health
+
+### Physical
+
+- Do my back stretches
+- Go for a walk
+- Do my wrist exercises.
+
+### Emotional
+
+- Meditate
+- Stream of conciousness journal
+
+### Cognative
 
 - Grab my e-ink tablet and write stuff out
 - Wake up early and work on my eulogy
 - Take a writing prompt and take it.
+- Read a random [blog post](/random)
 
 ### Take Public Transit
 
@@ -42,11 +65,13 @@ Just playing around with sunburst
 
 ## Entertaining
 
-### Bubble Bike
+### Biking
 
 - Ride a bubble bike!
+- Ride to get a cookie!
+- Ride my folding bike!
 
-### GO Juggle
+### Juggling
 
 - Clubs
 - Passing Clubs
@@ -54,7 +79,7 @@ Just playing around with sunburst
 - 4 balls
 - small food stuff like eggs and mandarins
 
-### Do Card Magic
+### Card Magic
 
 - Card to ceiling
 - Cards across
@@ -63,12 +88,12 @@ Just playing around with sunburst
 - Culls
 - Anniversary cards
 
-### Do Coin Magic
+### Coin Magic
 
 - Chink A Chink
 - Spellbound
 
-### Do Rubber Band Magic
+### Band Magic
 
 - TRU
 - Gift
@@ -90,7 +115,7 @@ Just playing around with sunburst
 
 ## Family
 
-### Hang with Amelia
+### Amelia
 
 - Kids dates
 - Bike anywhere
@@ -99,7 +124,7 @@ Just playing around with sunburst
 - Take Amelia To The Library
 - Make a TikTok with Amelia
 
-### Hang with Zach
+### Zach
 
 - Take Zach Swimming
 - Take Zach out for Dinner
