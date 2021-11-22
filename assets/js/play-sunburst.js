@@ -81,8 +81,7 @@ function tree_to_plotly_data_format(root) {
     // parents
     // values
     // JScript Experts: Is there a desctructing for this?
-    const names_parent_names = Array.from(breadth_first_walk(root)).
-        map(([n, p]) => [n.name, p === null || p === void 0 ? void 0 : p.name]);
+    const names_parent_names = Array.from(breadth_first_walk(root)).map(([n, p]) => [n.name, p === null || p === void 0 ? void 0 : p.name]);
     return {
         ids: names_parent_names.map(([n, p]) => n),
         labels: names_parent_names.map(([n, p]) => n),
@@ -140,7 +139,7 @@ async function sunburst_loader() {
         maxdepth: 2
     };
     Object.assign(sunburst_config, sunburst_tree_flat);
-    delete (sunburst_config.values); // remove values to avoid sizing pie slices
+    delete sunburst_config.values; // remove values to avoid sizing pie slices
     console.log(sunburst_config);
     var sunburst_layout = {
         margin: { l: 0, r: 0, b: 0, t: 0 },
