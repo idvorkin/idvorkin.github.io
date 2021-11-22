@@ -116,7 +116,10 @@ function tree_to_plotly_sunburst_format(root) {
 let map_category_to_prompts_text = null;
 function make_map_category_to_prompts_text() {
     const map = make_category_to_prompt_map();
-    const list = Array.from(map.entries()).map(([k, v], _) => [k.text(), v]);
+    const list = Array.from(map.entries()).map(([k, v], _) => [
+        k.text(),
+        v
+    ]);
     return new Map(list);
 }
 function on_sunburst_click(event) {
@@ -127,18 +130,22 @@ function on_sunburst_click(event) {
     const label = event.points[0].label;
     // Convert a point to the element in the tree
     // recall bread first search returns a parent as well.
-    const [clicked_thing_i_enjoy, _parent] = Array.from(breadth_first_walk(get_things_i_enjoy()))
-        .find(([current, _parent]) => current.name == label);
+    const [clicked_thing_i_enjoy, _parent] = Array.from(breadth_first_walk(get_things_i_enjoy())).find(([current, _parent]) => current.name == label);
     // Todo handle clicked things I enjoy
     let all_prompts = [];
     for (const [node, _parent] of breadth_first_walk(clicked_thing_i_enjoy)) {
         if (map_category_to_prompts_text.get(node.name)) {
             const prompts = map_category_to_prompts_text.get(node.name);
-            const random_prompt = _.chain(prompts).sampleSize(1).first();
+            const random_prompt = _.chain(prompts)
+                .sampleSize(1)
+                .first();
             all_prompts.push(`${node.name}: ${random_prompt}`);
         }
     }
-    $("#sunburst_text").text(_.chain(all_prompts).sampleSize(1).first().value());
+    $("#sunburst_text").text(_.chain(all_prompts)
+        .sampleSize(1)
+        .first()
+        .value());
 }
 function sunburst_loader() {
     return __awaiter(this, void 0, void 0, function* () {
