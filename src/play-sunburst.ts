@@ -1,6 +1,6 @@
 // import * as Plotly from "plotly.js";
 // import * as _ from "../node_modules/cypress/types/lodash/index";
-
+//import * as _ from "lodash";
 import { map } from "jquery";
 import { SunburstClickEvent } from "plotly.js";
 
@@ -133,43 +133,46 @@ function tree_to_plotly_sunburst_format(root) {
 // Since it relies on main which isn't in a module yet
 let map_category_to_prompts_text = null;
 
-function lazy_load_map_category_to_prompts_text() {
-  const map_category_to_prompts_objects = make_category_to_prompt_map();
-  map_category_to_prompts_text = new Map();
-  for (const k of map_category_to_prompts_objects.keys()) {
-    map_category_to_prompts_text.set(
-      (k as any).text(),
-      map_category_to_prompts_objects.get(k)
-    ); // do via lodash
-  }
-  return map_category_to_prompts_text;
+function make_map_category_to_prompts_text() {
+  const map = make_category_to_prompt_map();
+  const list = Array.from(map.entries()).map(([k, v], _) => [
+    (k as any).text(),
+    v
+  ]);
+  return new Map(list as any);
 }
+
 function on_sunburst_click(event: SunburstClickEvent) {
   if (map_category_to_prompts_text == null) {
-    map_category_to_prompts_text = lazy_load_map_category_to_prompts_text();
+    map_category_to_prompts_text = make_map_category_to_prompts_text();
+    console.log("map_category_to_prompts_text", map_category_to_prompts_text);
   }
 
   const label = event.points[0].label;
-
   // Convert a point to the element in the tree
-  // Then walk down the tree, gathering everything from that point down.
-  let clicked_thing_i_enjoy = null;
-  for (const [current, parent] of breadth_first_walk(get_things_i_enjoy())) {
-    if (current.name == label) {
-      clicked_thing_i_enjoy = current;
-      break;
-    }
-  }
+  // recall bread first search returns a parent as well.
+  const [clicked_thing_i_enjoy, _parent] = Array.from(
+    breadth_first_walk(get_things_i_enjoy())
+  ).find(([current, _parent]) => current.name == label);
+
+  // Todo handle clicked things I enjoy
   let all_prompts = [];
-  for (const [current, parent] of breadth_first_walk(clicked_thing_i_enjoy)) {
-    if (map_category_to_prompts_text.get(current.name)) {
-      const prompts = map_category_to_prompts_text.get(current.name);
-      const random_prompt = _.sampleSize(prompts, 1)[0];
-      all_prompts.push(`${current.name}: ${random_prompt}`);
+  for (const [node, _parent] of breadth_first_walk(clicked_thing_i_enjoy)) {
+    if (map_category_to_prompts_text.get(node.name)) {
+      const prompts = map_category_to_prompts_text.get(node.name);
+      const random_prompt = _.chain(prompts)
+        .sampleSize(1)
+        .first();
+      all_prompts.push(`${node.name}: ${random_prompt}`);
     }
   }
 
-  $("#sunburst_text").text(_.sampleSize(all_prompts, 1)[0]);
+  $("#sunburst_text").text(
+    _.chain(all_prompts)
+      .sampleSize(1)
+      .first()
+      .value()
+  );
 }
 
 async function sunburst_loader() {
