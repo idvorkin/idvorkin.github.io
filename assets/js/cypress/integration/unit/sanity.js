@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import { TreeNode } from '../../../src/play-sunburst';
+import { TreeNode } from "../../../src/play-sunburst";
 // Welcome to Cypress!
 //
 // This spec file contains a variety of sample tests
@@ -11,9 +11,9 @@ import { TreeNode } from '../../../src/play-sunburst';
 // please read our getting started guide:
 // https://on.cypress.io/introduction-to-cypress
 describe("Page Navigation works", () => {
-    beforeEach = () => {
+    (beforeEach = () => {
         const $ = cy.stub();
-    },
+    }),
         it("can load", () => {
             const t = new TreeNode({ name: "Hi" });
         });
