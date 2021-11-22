@@ -150,5 +150,4 @@ function sunburst_loader() {
     });
 }
 export { TreeNode, sunburst_loader };
-$(sunburst_loader);
 //# sourceMappingURL=play-sunburst.js.map

@@ -137,3 +137,8 @@ It's easy to forget what i like to do. Click an item for a recommendation
 ### Tori
 
 - Tori is private, respect her privacy, and appreciate her.
+
+<script type=module>
+    import { sunburst_loader } from '/assets/js/play-sunburst.js'
+    defer(sunburst_loader)
+</script>

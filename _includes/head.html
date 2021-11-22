@@ -104,3 +104,15 @@ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif
   href="{{ site.url }}/assets/css/vendor/copied_from_hackmd_extras.css"
 />
 <link rel="stylesheet" href="{{ site.url }}/assets/css/collapsehelper.css" />
+
+<script>
+function defer(method) {
+  if (window.jQuery) {
+    method();
+  } else {
+    setTimeout(function() {
+      defer(method);
+    }, 250);
+  }
+}
+</script>
