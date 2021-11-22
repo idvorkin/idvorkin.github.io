@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./assets/js",
     "allowJs": true,
-    "target": "es6",
+    "target": "es2019",
     "sourceMap": true
   },
   "include": ["./src/**/*"]

@@ -129,49 +129,55 @@ function tree_to_plotly_sunburst_format(root) {
   return out;
 }
 
-// Yukky, need to lazy load this
-// Since it relies on main which isn't in a module yet
-let map_category_to_prompts_text = null;
-
 function make_map_category_to_prompts_text() {
   const map = make_category_to_prompt_map();
-  const list = Array.from(map.entries()).map(([k, v], _) => [
+  const list = Array.from(map.entries()).map(([k, v], _index) => [
     (k as any).text(),
     v
   ]);
   return new Map(list as any);
 }
 
-function on_sunburst_click(event: SunburstClickEvent) {
-  if (map_category_to_prompts_text == null) {
-    map_category_to_prompts_text = make_map_category_to_prompts_text();
-    console.log("map_category_to_prompts_text", map_category_to_prompts_text);
-  }
-
-  const label = event.points[0].label;
-  // Convert a point to the element in the tree
+// Kind of weird, we have a tree of categories for the sunburst category
+// But then a map of category to prompts
+function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
+  // Find the label in the tree
   // recall bread first search returns a parent as well.
-  const [clicked_thing_i_enjoy, _parent] = Array.from(
-    breadth_first_walk(get_things_i_enjoy())
+  const [clicked_node, _parent] = Array.from(
+    breadth_first_walk(tree_node)
   ).find(([current, _parent]) => current.name == label);
 
-  // Todo handle clicked things I enjoy
-  let all_prompts = [];
-  for (const [node, _parent] of breadth_first_walk(clicked_thing_i_enjoy)) {
-    if (map_category_to_prompts_text.get(node.name)) {
-      const prompts = map_category_to_prompts_text.get(node.name);
-      const random_prompt = _.chain(prompts)
-        .sampleSize(1)
-        .first();
-      all_prompts.push(`${node.name}: ${random_prompt}`);
-    }
-  }
+  // Gather all the prompts for the children of the clicked node.
+  let all_prompts = Array.from(breadth_first_walk(clicked_node))
+    .map(([node, _parent]) => node) // return node and parent
+    .filter(node => map_node_to_prompts.has(node.name))
+    .map(node =>
+      map_node_to_prompts
+        .get(node.name)
+        .map(prompt => `${node.name}: ${prompt}`)
+    )
+    .flat();
 
+  return _.chain(all_prompts)
+    .sampleSize(1)
+    .first()
+    .value();
+}
+
+// Yukky, need to lazy load this
+// Since it relies on main which isn't in a module yet
+let memoized_map_category_to_prompts_text = null;
+function on_sunburst_click(event: SunburstClickEvent) {
+  if (memoized_map_category_to_prompts_text == null) {
+    memoized_map_category_to_prompts_text = make_map_category_to_prompts_text();
+  }
+  const label = event.points[0].label;
   $("#sunburst_text").text(
-    _.chain(all_prompts)
-      .sampleSize(1)
-      .first()
-      .value()
+    random_prompt_for_label(
+      label,
+      get_things_i_enjoy(),
+      memoized_map_category_to_prompts_text
+    )
   );
 }
 

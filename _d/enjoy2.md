@@ -7,7 +7,7 @@ permalink: /todo_enjoy
 It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:
 
 <div class="alert alert-primary" id="sunburst_text">
-    Click for a suggestion
+    Click in the circle for a suggestion
 </div>
 
 <div id="sunburst">
