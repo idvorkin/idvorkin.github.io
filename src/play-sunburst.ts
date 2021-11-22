@@ -20,18 +20,6 @@ class TreeNode {
     this.name = name;
     this.children = children;
     this.value = value;
-
-    // If kid sizes are all the same, make them equal to parent value/count kids
-    if (this.children.length > 0) {
-      // if there are kids
-      const all_equal = this.children.every(child => child.value == this.value);
-      if (all_equal) {
-        this.children.forEach(
-          child => (child.value = this.value / this.children.length)
-        );
-      }
-      this.value = 0; // Set my value to zero since provided by the children.
-    }
   }
 }
 
@@ -107,26 +95,23 @@ function* breadth_first_walk(node: TreeNode) {
   }
 }
 
-// ids
-// labels
-// parents
-// values
-function tree_to_plotly_sunburst_format(root) {
-  const out = {
-    ids: [],
-    labels: [],
-    parents: [],
-    values: []
+function tree_to_plotly_data_format(root) {
+  // Plotly needs a tree to be flattened into a set of lists
+  // ids
+  // labels
+  // parents
+  // values
+
+  // JScript Experts: Is there a desctructing for this?
+  const names_parent_names = Array.from(
+    breadth_first_walk(root)
+  ).map(([n, p]) => [n.name, p?.name]);
+
+  return {
+    ids: names_parent_names.map(([n, p]) => n),
+    labels: names_parent_names.map(([n, p]) => n),
+    parents: names_parent_names.map(([n, p]) => p)
   };
-
-  for (const [current, parent] of breadth_first_walk(root)) {
-    out.ids.push(current.name);
-    out.labels.push(current.name);
-    out.values.push(current.value);
-    out.parents.push(parent?.name);
-  }
-
-  return out;
 }
 
 function make_map_category_to_prompts_text() {
@@ -138,8 +123,10 @@ function make_map_category_to_prompts_text() {
   return new Map(list as any);
 }
 
-// Kind of weird, we have a tree of categories for the sunburst category
-// But then a map of category to prompts
+// We have a tree of nested categories. [node(category, children)]
+// and prompts stored in a map[category, prompt]
+// Join and walk
+
 function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
   // Find the label in the tree
   // recall bread first search returns a parent as well.
@@ -183,9 +170,10 @@ function on_sunburst_click(event: SunburstClickEvent) {
 
 async function sunburst_loader() {
   const root = get_things_i_enjoy();
-  const sunburst_data2 = tree_to_plotly_sunburst_format(root);
+  const sunburst_tree_flat = tree_to_plotly_data_format(root);
+  console.log(sunburst_tree_flat);
 
-  var sunburst_data = {
+  var sunburst_config = {
     type: "sunburst",
     outsidetextfont: { size: 20, color: "#377eb8" },
     // leaf: {opacity: 0.4},
@@ -193,22 +181,19 @@ async function sunburst_loader() {
     marker: { line: { width: 2 } },
     maxdepth: 2
   };
+  Object.assign(sunburst_config, sunburst_tree_flat);
+  delete (sunburst_config as any).values; // remove values to avoid sizing pie slices
+  console.log(sunburst_config);
 
-  var layout = {
+  var sunburst_layout = {
     margin: { l: 0, r: 0, b: 0, t: 0 },
     sunburstcolorway: ["#636efa", "#ef553b", "#00cc96"]
   };
 
-  sunburst_data["ids"] = sunburst_data2.ids;
-  sunburst_data["labels"] = sunburst_data2.labels;
-  sunburst_data["parents"] = sunburst_data2.parents;
-  // Ignore values for now.
-  // sunburst_data[0]["values"] = sunburst_data2.values;
-
   const sunburstPlot = await Plotly.newPlot(
     "sunburst",
-    [sunburst_data] as any,
-    layout
+    [sunburst_config] as any,
+    sunburst_layout
   );
 
   sunburstPlot.on("plotly_sunburstclick", on_sunburst_click);
