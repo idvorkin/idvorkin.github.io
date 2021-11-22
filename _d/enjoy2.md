@@ -1,36 +1,22 @@
 ---
 layout: post
-title: "Remembering the things I enjoy"
-tags:
+title: Things I enjoy
 permalink: /todo_enjoy
 ---
 
-It's easy to forget the many, often tiny things that make us happy. For when that happens, here's some reminders:
+It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:
 
-<span id="prompt_table"> </span>
+<div class="alert alert-primary" id="sunburst_text">
+    Click for a suggestion
+</div>
 
-<!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<div id="sunburst">
+</div>
 
-- [General](#general)
-  - [Go to the grocery store](#go-to-the-grocery-store)
-  - [Take a selfie](#take-a-selfie)
-  - [Sit down and write](#sit-down-and-write)
-  - [Take Public Transit](#take-public-transit)
-- [Entertaining](#entertaining)
-  - [Bubble Bike](#bubble-bike)
-  - [GO Juggle](#go-juggle)
-  - [Do Card Magic](#do-card-magic)
-  - [Do Coin Magic](#do-coin-magic)
-  - [Do Rubber Band Magic](#do-rubber-band-magic)
-  - [Colorful Clothing](#colorful-clothing)
-- [Family](#family)
-  - [Hang with Amelia](#hang-with-amelia)
-  - [Hang with Zach](#hang-with-zach)
-  - [Tori](#tori)
-
-<!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
+<script type=module>
+    import { sunburst_loader } from '/assets/js/play-sunburst.js'
+    defer(sunburst_loader)
+</script>
 
 ## General
 
@@ -47,11 +33,34 @@ It's easy to forget the many, often tiny things that make us happy. For when tha
 - Take a selife with a funny face
 - Make a goofie TikTok
 
-### Sit down and write
+### Tech
+
+- Computer Vision
+- Typescript
+- End to End Testing
+- Natural Language Processing
+- Security
+- VIM scripting
+
+## Health
+
+### Physical
+
+- Do my back stretches
+- Go for a walk
+- Do my wrist exercises.
+
+### Emotional
+
+- Meditate
+- Stream of conciousness journal
+
+### Cognative
 
 - Grab my e-ink tablet and write stuff out
 - Wake up early and work on my eulogy
 - Take a writing prompt and take it.
+- Read a random [blog post](/random)
 
 ### Take Public Transit
 
@@ -61,11 +70,13 @@ It's easy to forget the many, often tiny things that make us happy. For when tha
 
 ## Entertaining
 
-### Bubble Bike
+### Biking
 
 - Ride a bubble bike!
+- Ride to get a cookie!
+- Ride my folding bike!
 
-### GO Juggle
+### Juggling
 
 - Clubs
 - Passing Clubs
@@ -73,7 +84,7 @@ It's easy to forget the many, often tiny things that make us happy. For when tha
 - 4 balls
 - small food stuff like eggs and mandarins
 
-### Do Card Magic
+### Card Magic
 
 - Card to ceiling
 - Cards across
@@ -82,12 +93,12 @@ It's easy to forget the many, often tiny things that make us happy. For when tha
 - Culls
 - Anniversary cards
 
-### Do Coin Magic
+### Coin Magic
 
 - Chink A Chink
 - Spellbound
 
-### Do Rubber Band Magic
+### Band Magic
 
 - TRU
 - Gift
@@ -109,7 +120,7 @@ It's easy to forget the many, often tiny things that make us happy. For when tha
 
 ## Family
 
-### Hang with Amelia
+### Amelia
 
 - Kids dates
 - Bike anywhere
@@ -118,7 +129,7 @@ It's easy to forget the many, often tiny things that make us happy. For when tha
 - Take Amelia To The Library
 - Make a TikTok with Amelia
 
-### Hang with Zach
+### Zach
 
 - Take Zach Swimming
 - Take Zach out for Dinner
