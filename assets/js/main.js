@@ -171,7 +171,6 @@ function render_table_random(prompts_for_category) {
     const table_placeholder = $("#prompt_table");
     // Build a table
     let table_as_html = "<table class='table table-striped table-bordered'>";
-    console.log(prompts_for_category.keys());
     const categories = _.sampleSize(Array.from(prompts_for_category.keys()), 4);
     console.log(categories);
     for (const category of categories) {
@@ -184,9 +183,6 @@ function render_table_random(prompts_for_category) {
     }
     table_as_html += "</table>";
     const table_element = $(table_as_html);
-    // elem = $(`<div class="alert alert-primary" role="alert"> ${prompts_for_category}</span></div>`)[0]
-    console.log(table_element);
-    console.log(table_as_html);
     $(table_placeholder).after(table_element);
 }
 // The prompts page has a bunch of lists of prompts
@@ -252,8 +248,7 @@ Try these shortcuts:
 function random_prompt_loader() {
     const url = window.location.href;
     const is_target_page = url.includes("/prompts") ||
-        url.includes("/todo_enjoy") ||
-        url.includes("/sunburst");
+        url.includes("/todo_enjoy");
     if (!is_target_page) {
         return;
     }

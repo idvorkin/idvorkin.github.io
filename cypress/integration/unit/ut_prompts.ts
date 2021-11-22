@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import { TreeNode } from "../../../src/play-sunburst";
+import { breadth_first_walk, TreeNode } from "../../../src/play-sunburst";
 
 // Welcome to Cypress!
 //
@@ -19,4 +19,33 @@ describe("Page Navigation works", () => {
     it("can load", () => {
       const t = new TreeNode({ name: "Hi" });
     });
+  it("can walk an empty tree", () => {
+    const t = new TreeNode({ name: "Hi" });
+    let i = 0;
+    for (const [current, parent] of breadth_first_walk(t)) {
+      i++;
+    }
+    assert.equal(i, 1);
+  });
+});
+
+describe("Tree Walker", () => {
+  it("can load", () => {
+    const t = new TreeNode({ name: "Hi" });
+  });
+  it("can walk an single tree", () => {
+    const t = new TreeNode({ name: "Hi" });
+    let i = 0;
+    for (const [current, parent] of breadth_first_walk(t)) {
+      i++;
+    }
+    assert.equal(i, 1);
+  });
+  it("can walk an empty tree", () => {
+    let i = 0;
+    for (const [current, parent] of breadth_first_walk(null)) {
+      i++;
+    }
+    assert.equal(i, 0);
+  });
 });

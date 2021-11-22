@@ -1,6 +1,9 @@
 // import * as Plotly from "plotly.js";
 // import * as _ from "../node_modules/cypress/types/lodash/index";
 
+import { map } from "jquery";
+import { SunburstClickEvent } from "plotly.js";
+
 class TreeNode {
   name: string;
   children: [TreeNode];
@@ -32,7 +35,7 @@ class TreeNode {
   }
 }
 
-function get_energy_allocation() {
+function get_things_i_enjoy() {
   const health = new TreeNode({
     name: "Health",
     children: [
@@ -63,7 +66,14 @@ function get_energy_allocation() {
   const relationships = new TreeNode({
     name: "Relationships",
     children: [
-      new TreeNode({ name: "Zach" }),
+      new TreeNode({
+        name: "Zach",
+        children: [
+          new TreeNode({ name: "Pick Zach's Nose" }),
+          new TreeNode({ name: "Make Zach Make Dinner" }),
+          new TreeNode({ name: "Smell Zach's Feet" })
+        ]
+      }),
       new TreeNode({ name: "Amelia" }),
       new TreeNode({ name: "Tori" }),
       new TreeNode({ name: "Friends" })
@@ -82,11 +92,14 @@ function get_energy_allocation() {
 // sunburst format is an inorder traversal of the tree.
 // good thing to unit test
 
-function* in_order_walk(node: TreeNode) {
+function* breadth_first_walk(node: TreeNode) {
+  if (!node) {
+    return;
+  }
   let Q = [];
-  Q.push([node, null]);
+  Q.push([node, null as TreeNode]);
   while (Q.length > 0) {
-    const [current, parent] = Q.shift();
+    const [current, parent]: [TreeNode, TreeNode] = Q.shift();
     for (const child of current.children ?? []) {
       Q.push([child, current]);
     }
@@ -106,7 +119,7 @@ function tree_to_plotly_sunburst_format(root) {
     values: []
   };
 
-  for (const [current, parent] of in_order_walk(root)) {
+  for (const [current, parent] of breadth_first_walk(root)) {
     out.ids.push(current.name);
     out.labels.push(current.name);
     out.values.push(current.value);
@@ -116,60 +129,80 @@ function tree_to_plotly_sunburst_format(root) {
   return out;
 }
 
-var sunburst_data = [
-  {
-    type: "sunburst",
-    outsidetextfont: { size: 20, color: "#377eb8" },
-    // leaf: {opacity: 0.4},
-    marker: { line: { width: 2 } },
-    maxdepth: 2
-  }
-];
+// Yukky, need to lazy load this
+// Since it relies on main which isn't in a module yet
+let map_category_to_prompts_text = null;
 
-var layout = {
-  margin: { l: 0, r: 0, b: 0, t: 0 },
-  sunburstcolorway: ["#636efa", "#ef553b", "#00cc96"]
-};
-
-async function sunburst_loader() {
-  if (!document.URL.includes("sunburst")) {
-    return;
-  }
-  console.log("drawing sunburst");
-  const root = get_energy_allocation();
-  const sunburst_data2 = tree_to_plotly_sunburst_format(root);
-  sunburst_data[0]["ids"] = sunburst_data2.ids;
-  sunburst_data[0]["labels"] = sunburst_data2.labels;
-  sunburst_data[0]["parents"] = sunburst_data2.parents;
-  // Ignore values for now.
-  // sunburst_data[0]["values"] = sunburst_data2.values;
-
-  const sunburstPlot = await Plotly.newPlot(
-    "sunburst",
-    sunburst_data as any,
-    layout
-  );
+function lazy_load_map_category_to_prompts_text() {
   const map_category_to_prompts_objects = make_category_to_prompt_map();
-  const map_category_to_prompts_text = new Map();
+  map_category_to_prompts_text = new Map();
   for (const k of map_category_to_prompts_objects.keys()) {
     map_category_to_prompts_text.set(
       (k as any).text(),
       map_category_to_prompts_objects.get(k)
     ); // do via lodash
   }
+  return map_category_to_prompts_text;
+}
+function on_sunburst_click(event: SunburstClickEvent) {
+  if (map_category_to_prompts_text == null) {
+    map_category_to_prompts_text = lazy_load_map_category_to_prompts_text();
+  }
 
-  sunburstPlot.on("plotly_sunburstclick", event => {
-    const point = event.points[0];
-    console.log(`sunburst click:`);
-    console.log(point.label);
-    console.log(point["currentPath"]);
-    $("#sunburst_text").text(point.label);
-    if (map_category_to_prompts_text.get(point.label)) {
-      const prompts = map_category_to_prompts_text.get(point.label);
-      const random_prompt = _.sampleSize(prompts, 1)[0];
-      $("#sunburst_text").text(`${point.label}:${random_prompt}`);
+  const label = event.points[0].label;
+
+  // Convert a point to the element in the tree
+  // Then walk down the tree, gathering everything from that point down.
+  let clicked_thing_i_enjoy = null;
+  for (const [current, parent] of breadth_first_walk(get_things_i_enjoy())) {
+    if (current.name == label) {
+      clicked_thing_i_enjoy = current;
+      break;
     }
-  });
+  }
+  let all_prompts = [];
+  for (const [current, parent] of breadth_first_walk(clicked_thing_i_enjoy)) {
+    if (map_category_to_prompts_text.get(current.name)) {
+      const prompts = map_category_to_prompts_text.get(current.name);
+      const random_prompt = _.sampleSize(prompts, 1)[0];
+      all_prompts.push(`${current.name}: ${random_prompt}`);
+    }
+  }
+
+  $("#sunburst_text").text(_.sampleSize(all_prompts, 1)[0]);
 }
 
-export { TreeNode, sunburst_loader };
+async function sunburst_loader() {
+  const root = get_things_i_enjoy();
+  const sunburst_data2 = tree_to_plotly_sunburst_format(root);
+
+  var sunburst_data = {
+    type: "sunburst",
+    outsidetextfont: { size: 20, color: "#377eb8" },
+    // leaf: {opacity: 0.4},
+    hoverinfo: "none",
+    marker: { line: { width: 2 } },
+    maxdepth: 2
+  };
+
+  var layout = {
+    margin: { l: 0, r: 0, b: 0, t: 0 },
+    sunburstcolorway: ["#636efa", "#ef553b", "#00cc96"]
+  };
+
+  sunburst_data["ids"] = sunburst_data2.ids;
+  sunburst_data["labels"] = sunburst_data2.labels;
+  sunburst_data["parents"] = sunburst_data2.parents;
+  // Ignore values for now.
+  // sunburst_data[0]["values"] = sunburst_data2.values;
+
+  const sunburstPlot = await Plotly.newPlot(
+    "sunburst",
+    [sunburst_data] as any,
+    layout
+  );
+
+  sunburstPlot.on("plotly_sunburstclick", on_sunburst_click);
+}
+
+export { TreeNode, sunburst_loader, get_things_i_enjoy, breadth_first_walk };
