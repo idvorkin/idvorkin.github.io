@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+import { TreeNode } from '../../../src/play-sunburst';
 // Welcome to Cypress!
 //
 // This spec file contains a variety of sample tests
@@ -10,25 +11,11 @@
 // please read our getting started guide:
 // https://on.cypress.io/introduction-to-cypress
 describe("Page Navigation works", () => {
-    beforeEach(() => {
-        // Cypress starts out with a blank slate for each test
-        // so we must tell it to visit our website with the `cy.visit()` command.
-        // Since we want to visit the same URL at the start of all our tests,
-        // we include it in our beforeEach function so that it runs before each test
-        cy.visit("http://localhost:4000");
-    }),
+    beforeEach = () => {
+        const $ = cy.stub();
+    },
         it("can load", () => {
-            // assert loaded
-        }),
-        it("go to ig66", () => {
-            cy.contains("Personal Diary").click();
-            cy.location("pathname").should("match", /\/ig66/);
-            // assert loaded
-        }),
-        it("go to techdiary", () => {
-            cy.contains("Tech Diary").click();
-            cy.location("pathname").should("match", /\/td/);
-            // assert loaded
+            const t = new TreeNode({ name: "Hi" });
         });
 });
 //# sourceMappingURL=sanity.js.map

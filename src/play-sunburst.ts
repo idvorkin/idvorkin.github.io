@@ -1,3 +1,6 @@
+import * as Plotly from "plotly.js";
+import * as _ from "../node_modules/cypress/types/lodash/index";
+
 class TreeNode {
   name: string;
   children: [TreeNode];
@@ -169,4 +172,5 @@ async function sunburst_loader() {
   });
 }
 
-$(sunburst_loader);
+export { TreeNode, sunburst_loader };
+//$(sunburst_loader);

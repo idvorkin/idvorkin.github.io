@@ -7,6 +7,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+import * as Plotly from "plotly.js";
+import * as _ from "../node_modules/cypress/types/lodash/index";
 class TreeNode {
     constructor({ name, value = 25, children = [] }) {
         this.name = name;
@@ -147,5 +149,6 @@ function sunburst_loader() {
         });
     });
 }
-$(sunburst_loader);
+export { TreeNode, sunburst_loader };
+//$(sunburst_loader);
 //# sourceMappingURL=play-sunburst.js.map
