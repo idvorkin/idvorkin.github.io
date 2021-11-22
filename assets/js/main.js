@@ -247,8 +247,7 @@ Try these shortcuts:
 }
 function random_prompt_loader() {
     const url = window.location.href;
-    const is_target_page = url.includes("/prompts") ||
-        url.includes("/todo_enjoy");
+    const is_target_page = url.includes("/prompts") || url.includes("/todo_enjoy");
     if (!is_target_page) {
         return;
     }

@@ -61,14 +61,14 @@ function get_things_i_enjoy() {
                 children: [
                     new TreeNode({ name: "Pick Zach's Nose" }),
                     new TreeNode({ name: "Make Zach Make Dinner" }),
-                    new TreeNode({ name: "Smell Zach's Feet" }),
-                ],
+                    new TreeNode({ name: "Smell Zach's Feet" })
+                ]
             }),
             new TreeNode({ name: "Amelia" }),
             new TreeNode({ name: "Tori" }),
-            new TreeNode({ name: "Friends" }),
+            new TreeNode({ name: "Friends" })
         ],
-        value: 0,
+        value: 0
     });
     const root = new TreeNode({
         name: "Invest in",
