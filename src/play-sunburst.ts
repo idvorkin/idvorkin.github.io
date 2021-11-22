@@ -1,5 +1,5 @@
-import * as Plotly from "plotly.js";
-import * as _ from "../node_modules/cypress/types/lodash/index";
+// import * as Plotly from "plotly.js";
+// import * as _ from "../node_modules/cypress/types/lodash/index";
 
 class TreeNode {
   name: string;

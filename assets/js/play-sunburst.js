@@ -1,3 +1,5 @@
+// import * as Plotly from "plotly.js";
+// import * as _ from "../node_modules/cypress/types/lodash/index";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -147,5 +149,6 @@ function sunburst_loader() {
         });
     });
 }
-$(sunburst_loader);
+export { TreeNode, sunburst_loader };
+//$(sunburst_loader);
 //# sourceMappingURL=play-sunburst.js.map

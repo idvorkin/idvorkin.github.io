@@ -5,14 +5,15 @@ title: Playing with sunburst
 permalink: /sunburst
 ---
 
-Just playing around with sunburst
+It's easy to forget what i like to do. Click an item for a recommendation
+
+<div class="alert alert-primary" id="sunburst_text">
+    Click an element for a suggestion
+</div>
 
 <div id="sunburst">
 </div>
 
-<div class="alert alert-primary" id="sunburst_text">
-    Click an Element to see its children
-</div>
 ## General
 
 ### Go to the grocery store
