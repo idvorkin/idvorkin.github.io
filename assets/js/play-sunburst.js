@@ -111,7 +111,7 @@ function make_map_category_to_prompts_text() {
     return new Map(list);
 }
 // Kind of weird, we have a tree of categories for the sunburst category
-// But then a map of category to prompts 
+// But then a map of category to prompts
 function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
     // Find the label in the tree
     // recall bread first search returns a parent as well.
@@ -120,7 +120,9 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
     let all_prompts = Array.from(breadth_first_walk(clicked_node))
         .map(([node, _parent]) => node) // return node and parent
         .filter(node => map_node_to_prompts.has(node.name))
-        .map(node => map_node_to_prompts.get(node.name).map(prompt => `${node.name}: ${prompt}`))
+        .map(node => map_node_to_prompts
+        .get(node.name)
+        .map(prompt => `${node.name}: ${prompt}`))
         .flat();
     return _.chain(all_prompts)
         .sampleSize(1)
