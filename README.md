@@ -126,3 +126,9 @@ Note you can debug slow cypress tests via:
 ### Re-writing from scratch
 
 See some of my notes at [https://github.com/idvorkin/idvorkin.github.io/blob/master/_td/hack-web.md]
+
+### Compilation workflow
+
+It's pretty complicated, rendered with [excalidraw](/tools#excalidraw):
+
+![](/images/build-workflow.png)
