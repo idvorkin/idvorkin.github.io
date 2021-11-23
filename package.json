@@ -21,8 +21,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "cc_instrument": "npx nyc instrument --compact=false _site/assets/js instrumented",
-    "cc_report": "npx nyc report --reporter html --reporter text && open coverage/index.html",
+    "coverage:instrument": "npx nyc instrument --compact=false _site/assets/js instrumented",
+    "coverage:report": "npx nyc report --reporter html --reporter text && open coverage/index.html",
+    "ut": "npx cypress run --config video=false --spec   '**/unit/*ts'",
+    "cypress": "npx open",
     "search-index": "./bi.sh",
     "serve-site": "./js.sh",
     "back_links": "./bbl.sh",

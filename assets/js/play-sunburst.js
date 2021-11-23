@@ -13,7 +13,7 @@ function get_things_i_enjoy() {
             { name: "Emotional", value: 25 },
             { name: "Cognative", value: 25 }
         ],
-        value: 25
+        value: 29
     });
     const magic = new TreeNode({
         name: "Magic",
