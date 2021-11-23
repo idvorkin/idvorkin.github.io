@@ -582,6 +582,12 @@ _(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to
 - [Hyper Switch](https://bahoom.com/hyperswitch) - App Switch Includes window switch.
 - [Remap Emoji Keyboard](https://medium.com/@maxschultz/remap-caps-lock-to-emoji-on-macos-sierra-3c933b38c6ff)
 
+### Docker
+
+[Install on Amazon Linux 2](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
+
+    sudo amazon-linux-extras install docker
+
 ### Terminal Info
 
 Terminfo, ncurses, OSX, what a mess. You need to add your own terminfos see:
