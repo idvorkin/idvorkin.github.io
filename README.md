@@ -1,3 +1,5 @@
+[![idvork.in](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/s7659o&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/s7659o/runs)
+
 # Igor's collection of ever green notes
 
 This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), and an [enabling environment](https://notes.andymatuschak.org/z3DaBP4vN1dutjUgrk3jbEeNxScccvDCxDgXe) to interact with them. These are currently intermingled, but
@@ -5,7 +7,8 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Key user features](#key-user-features)
+- [Igor's collection of ever green notes](#igors-collection-of-ever-green-notes)
+  - [Key user features](#key-user-features)
     - [Permalink](#permalink)
     - [Table of Contents](#table-of-contents)
     - [Back Links](#back-links)
@@ -14,7 +17,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
     - [Select a Random Page](#select-a-random-page)
     - [Keyboard features](#keyboard-features)
     - [Comments](#comments)
-- [Key authoring features](#key-authoring-features)
+  - [Key authoring features](#key-authoring-features)
     - [Markdown based editing and version control](#markdown-based-editing-and-version-control)
     - [Permalinks](#permalinks)
     - [Table of Contents](#table-of-contents-1)
@@ -22,7 +25,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
     - [Search](#search-1)
     - [No broken links](#no-broken-links-1)
     - [Keyboard shortcuts](#keyboard-shortcuts)
-- [Technical Wizardry](#technical-wizardry)
+  - [Technical Wizardry](#technical-wizardry)
     - [Typescript - Reduce the easy Javascript Errors](#typescript---reduce-the-easy-javascript-errors)
     - [Cypress - E2E and Unit Testing](#cypress---e2e-and-unit-testing)
     - [Useful scripts](#useful-scripts)
