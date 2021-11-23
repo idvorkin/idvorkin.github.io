@@ -57,6 +57,7 @@ A collection of tips, tricks and pointers of the various tools i use
 - [Web scripting](#web-scripting)
 - [Programming Helpers](#programming-helpers)
     - [howdoi](#howdoi)
+- [Excelidraw](#excelidraw)
 - [PlantUML alternatives](#plantuml-alternatives)
 - [PlantUML](#plantuml)
     - [PlantUML Tools](#plantuml-tools)
@@ -67,6 +68,7 @@ A collection of tips, tricks and pointers of the various tools i use
 - [CLI Screen Recoding](#cli-screen-recoding)
     - [Show pressed keys](#show-pressed-keys)
 - [OSX Misc](#osx-misc)
+- [Docker](#docker)
 - [Terminal Info](#terminal-info)
 - [Other Resources](#other-resources)
 
@@ -505,6 +507,12 @@ A quick [tool](https://github.com/gleitz/howdoi) to show you how to 'spell' your
     t2 = DT.datetime(1900,1,1)
 
     print((t1-t2).total_seconds() / 60.0)
+
+### Excelidraw
+
+A great way to draw in a collaborative form see file at (/images/build-workflow.excildraw)
+
+![](/images/build-workflow.png)
 
 ### PlantUML alternatives
 
