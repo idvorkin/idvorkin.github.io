@@ -57,7 +57,7 @@ A collection of tips, tricks and pointers of the various tools i use
 - [Web scripting](#web-scripting)
 - [Programming Helpers](#programming-helpers)
     - [howdoi](#howdoi)
-- [Excelidraw](#excelidraw)
+- [Excalidraw](#excalidraw)
 - [PlantUML alternatives](#plantuml-alternatives)
 - [PlantUML](#plantuml)
     - [PlantUML Tools](#plantuml-tools)
@@ -508,7 +508,7 @@ A quick [tool](https://github.com/gleitz/howdoi) to show you how to 'spell' your
 
     print((t1-t2).total_seconds() / 60.0)
 
-### Excelidraw
+### Excalidraw
 
 A great way to draw in a collaborative form see file at (/images/build-workflow.excildraw)
 
