@@ -1,8 +1,1 @@
-  <svg viewBox="0 0 100 15" xmlns="http://www.w3.org/2000/svg" style="border:1px solid #ced4da;color=gray">
-    <line x1="4" x2="96" y1="3" y2="3" stroke="black" stroke-width="0.1" />
-    <line x1="4" x2="96" y1="6" y2="6" stroke="black" stroke-width="0.1"/>
-    <line x1="4" x2="96" y1="9" y2="9" stroke="black" stroke-width="0.1"/>
-    <line x1="4" x2="96" y1="12" y2="12" stroke="black" stroke-width="0.1"/>
-    <!-- If you do not specify the stroke
-        color the line will not be visible -->
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 15" style="border:1px solid #ced4da"><line x1="4" x2="96" y1="3" y2="3" stroke="#000" stroke-width=".1"/><line x1="4" x2="96" y1="6" y2="6" stroke="#000" stroke-width=".1"/><line x1="4" x2="96" y1="9" y2="9" stroke="#000" stroke-width=".1"/><line x1="4" x2="96" y1="12" y2="12" stroke="#000" stroke-width=".1"/></svg>
