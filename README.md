@@ -100,6 +100,14 @@ This blog also serves as a home to let me experiment with fun tech. Here's some 
 
 ### Cypress - E2E and Unit Testing
 
+Install Dependancies for running on AWS VM's (And maybe CI packages):
+
+    yum install -y xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2 nss libXScrnSaver alsa-lib
+
+Need to do a coverage run
+
+    npm run coverage
+
 Note you can debug slow cypress tests via:
 
     set DEBUG=cypress*
