@@ -24,7 +24,7 @@
     "coverage:instrument": "npx nyc instrument --compact=false _site/assets/js instrumented",
     "coverage:report": "npx nyc report --reporter html --reporter text && open coverage/index.html",
     "ut": "npx cypress run --config video=false --spec   '**/unit/*ts'",
-    "cypress": "npx open",
+    "cypress": "npx cypress open",
     "search-index": "./bi.sh",
     "serve-site": "./js.sh",
     "back_links": "./bbl.sh",
