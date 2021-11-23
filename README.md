@@ -100,6 +100,11 @@ This blog also serves as a home to let me experiment with fun tech. Here's some 
 
 ### Cypress - E2E and Unit Testing
 
+Note you can debug slow cypress tests via:
+
+    set DEBUG=cypress*
+    npm run cypress:run
+
 ### Useful scripts
 
 - js.sh - Run the development server with live reload and excluding spurious Jekyll warnings
