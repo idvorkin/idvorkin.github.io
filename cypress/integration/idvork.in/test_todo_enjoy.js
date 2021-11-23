@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe("Prompts Randomize", () => {
+describe("Things I enjoy", () => {
   beforeEach(() => {
     // Cypress starts out with a blank slate for each test
     // so we must tell it to visit our website with the `cy.visit()` command.
@@ -9,18 +9,17 @@ describe("Prompts Randomize", () => {
     cy.visit("http://localhost:4000/todo_enjoy");
   }),
     it("loads", () => {
-      // TODO what to assert here?cy.contains("shortcuts")
       cy.location("href").should("match", /todo_enjoy/);
     }),
-    it("gets different prompt every time", () => {
+    it("has magic in donut", () => {
+      const category_to_find = "Magic"
+      cy.get(`text:contains('${category_to_find}')`).should("have.text", category_to_find);
+    }),
+    it("Get different prompt clicking in donut ", () => {
       // https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Debugging
-      // Prompt should load in first  alert.
-      cy.get(".alert:first").then($alert => {
-        const first_prompt = String($alert.text());
-        cy.reload().then(() => {
-          // Fragile, could match an undefined.
-          cy.get(".alert:first").should("not.have.text", first_prompt);
-        });
-      });
+      const default_prompt = "Click in the circle"
+      cy.get(".alert:first").should('contain.text',default_prompt) 
+      cy.get("#sunburst text:first").click({force:true})
+      cy.get(".alert:first").should('not.contain.text',default_prompt) 
     });
 });
