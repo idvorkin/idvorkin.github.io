@@ -28,3 +28,8 @@ yarn.lock
 
 cypress/videos
 cypress/screenshots
+
+# instrumented code
+instrumented/
+coverage/
+.nyc_output

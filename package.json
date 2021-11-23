@@ -1,10 +1,11 @@
 {
   "devDependencies": {
-    "@types/plotly.js": "^1.54.16",
+    "@cypress/code-coverage": "^3.9.11",
     "@types/d3": "^7.1.0",
     "@types/jquery": "^3.5.8",
     "@types/lodash": "^4.14.176",
     "@types/mousetrap": "^1.6.8",
+    "@types/plotly.js": "^1.54.16",
     "cypress": "^9.0.0",
     "husky": "^1.2.1",
     "prettier": "^1.19.1",
@@ -20,7 +21,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cc_instrument": "npx nyc instrument --compact=false _site/assets/js instrumented",
+    "cc_report": "npx nyc report --reporter html --reporter text && open coverage/index.html",
+    "search-index": "./bi.sh",
+    "serve-site": "./js.sh",
+    "back_links": "./bbl.sh",
+    "tsc": "tsc --watch",
+    "_comment": "Contains all commands"
   },
   "repository": {
     "type": "git",
@@ -34,13 +41,5 @@
   "homepage": "https://github.com/idvorkin/idvorkin.github.io#readme",
   "dependencies": {
     "typescript": "^4.5.2"
-  },
-  "scripts": {
-    "instrument": "npx nyc instrument --compact=false _site/assets/js instrumented",
-    "search-index": "./bi.sh",
-    "serve-site": "./js.sh",
-    "back_links": "./bbl.sh",
-    "tsc": "tsc --watch",
-    "_comment": "Contains all commands"
   }
 }

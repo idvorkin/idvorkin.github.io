@@ -1,5 +1,9 @@
 /// <reference types="cypress" />
-import { breadth_first_walk, TreeNode } from "../../../src/play-sunburst";
+import {
+  breadth_first_walk,
+  get_things_i_enjoy,
+  TreeNode
+} from "../../../instrumented/play-sunburst";
 
 // Welcome to Cypress!
 //
@@ -11,6 +15,16 @@ import { breadth_first_walk, TreeNode } from "../../../src/play-sunburst";
 // what makes it such an awesome testing tool,
 // please read our getting started guide:
 // https://on.cypress.io/introduction-to-cypress
+
+describe("Things I enjoy tests", () => {
+  (beforeEach = () => {
+    const $ = cy.stub();
+  }),
+    it("sanity", () => {
+      const root = get_things_i_enjoy();
+      assert.notEqual(root.children.length, 0);
+    });
+});
 
 describe("Page Navigation works", () => {
   (beforeEach = () => {
