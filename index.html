@@ -3,152 +3,57 @@ layout: search_base
 title: Igor's Blog
 ---
 
+<!-- Including InstantSearch.js library and styling -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"
+  integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js"
+  integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM="
+  crossorigin="anonymous"
+></script>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset-min.css"
+  integrity="sha256-t2ATOGCtAIZNnzER679jwcFcKYfLlw01gli6F6oszk8="
+  crossorigin="anonymous"
+/>
+<script type="module">
+  import { create_search, getParameterByName } from "/assets/js/search.js";
+  const start_search = () => {
+    const initial_query = getParameterByName("q");
+    const search = create_search(
+      "{{site.algolia.application_id}}",
+      "{{site.algolia.search_only_api_key}}",
+      "{{site.algolia.index_name}}",
+      getParameterByName("q")
+    );
+    search.start();
+  };
+  defer(start_search);
+</script>
+
+<style>
+  #search-box {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .ais-SearchBox-input {
+    padding: 10px 10px 10px 35px;
+    width: 100%;
+  }
+  .ais-SearchBox-submit {
+    visibility: hidden;
+  }
+</style>
+
 <!-- Mostly copied from https://community.algolia.com/jekyll-algolia/blog.html -->
 <div id="home-search" class="home">
   <div id="search-box"><!-- SearchBox widget will appear here --></div>
   <div id="search-hits"><!-- Hits widget will appear here --></div>
-
-  <!-- Including InstantSearch.js library and styling -->
-  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css"
-  />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css"
-  />
-
-  <script>
-    // Adding a query paramater.
-    const query = getParameterByName("q");
-
-    function getParameterByName(name, url) {
-      if (!url) url = window.location.href;
-      name = name.replace(/[\[\]]/g, "\\$&");
-      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-        results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return "";
-      return decodeURIComponent(results[2].replace(/\+/g, " "));
-    }
-
-    const hitTemplate = function(hit) {
-      let date = "";
-      if (hit.date) {
-        date = moment.unix(hit.date).format("MMM D, YYYY");
-      }
-
-      let url = "";
-      if (hit.anchor) {
-        url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
-      } else {
-        url = `{{ site.baseurl }}${hit.url}`;
-      }
-
-      const title = hit._highlightResult.title.value;
-
-      let breadcrumbs = "";
-      if (hit._highlightResult.headings) {
-        breadcrumbs = hit._highlightResult.headings
-          .map(match => {
-            return `<span class="post-breadcrumb">${match.value}</span>`;
-          })
-          .join(" > ");
-      }
-
-      const content = hit._highlightResult.html.value;
-
-      return `
-        <h3><a href="${url}">${title}</a></h3>
-        <section class="notepad-post-excerpt"><p>${content}</p></section>
-  `;
-    };
-    // Instanciating InstantSearch.js with Algolia credentials
-    const search = instantsearch({
-      appId: "{{ site.algolia.application_id }}",
-      indexName: "{{ site.algolia.index_name }}",
-      apiKey: "{{ site.algolia.search_only_api_key }}",
-      searchParameters: {
-        query: query
-      }
-    });
-
-    // Adding searchbar and results widgets
-    search.addWidget(
-      instantsearch.widgets.searchBox({
-        container: "#search-box",
-        placeholder: "Search Igor's musings...",
-        poweredBy: true // This is required if you're on the free Community plan
-      })
-    );
-
-    search.addWidget(
-      instantsearch.widgets.infiniteHits({
-        container: "#search-hits",
-        templates: {
-          item: hitTemplate
-        }
-      })
-    );
-
-    // Starting the search
-    search.start();
-  </script>
-  <style>
-    .ais-search-box {
-      max-width: 100%;
-      margin-bottom: 15px;
-      margin-top: 15px;
-    }
-
-    .ais-search-box--input[type="text"] {
-      padding: 10px 10px 10px 35px;
-    }
-
-    .ais-search-box--magnifier {
-      top: calc(50% - 12px);
-    }
-
-    .post-item {
-      margin-bottom: 30px;
-    }
-
-    .post-link .ais-Highlight {
-      color: #111;
-      font-style: normal;
-      text-decoration: underline;
-    }
-
-    .post-breadcrumbs {
-      color: #424242;
-      display: block;
-    }
-
-    .post-breadcrumb {
-      font-size: 18px;
-      color: #424242;
-    }
-
-    .post-breadcrumb .ais-Highlight {
-      font-weight: bold;
-      font-style: normal;
-    }
-
-    .post-snippet .ais-Highlight {
-      color: #2a7ae2;
-      font-style: normal;
-      font-weight: bold;
-    }
-
-    .post-snippet img {
-      display: none;
-    }
-    .ais-search-box--powered-by {
-      display: none;
-    }
-  </style>
 </div>
