@@ -23,19 +23,34 @@ class TreeNode {
   }
 }
 
+function get_seven_habits() {
+  const root = new TreeNode({
+    name: "7 Habits",
+    children: [
+      new TreeNode({ name: "" }),
+      new TreeNode({ name: "Be Proactive" }),
+      new TreeNode({ name: "Begin with the end in mind" }),
+      new TreeNode({ name: "First things First" }),
+      new TreeNode({ name: "Think Win/Win" }),
+      new TreeNode({ name: "First Understand" }),
+      new TreeNode({ name: "Synergize" }),
+      new TreeNode({ name: "Sharpen the Saw" })
+    ]
+  });
+  return root;
+}
 function get_things_i_enjoy() {
   const health = new TreeNode({
     name: "Health",
     children: [
-      { name: "Physical", value: 25 },
-      { name: "Emotional", value: 25 },
-      { name: "Cognative", value: 25 }
+      { name: "Physical" },
+      { name: "Emotional" },
+      { name: "Cognative" }
     ],
     value: 31
   });
   const magic = new TreeNode({
     name: "Magic",
-    value: 25,
     children: [
       new TreeNode({ name: "Card Magic" }),
       new TreeNode({ name: "Coin Magic" }),
@@ -45,11 +60,10 @@ function get_things_i_enjoy() {
   const hobbies = new TreeNode({
     name: "Hobbies",
     children: [
-      new TreeNode({ name: "Biking", value: 10 }),
-      new TreeNode({ name: "Tech", value: 25 }),
-      new TreeNode({ name: "Juggling", value: 25 })
-    ],
-    value: 0
+      new TreeNode({ name: "Biking" }),
+      new TreeNode({ name: "Tech" }),
+      new TreeNode({ name: "Juggling" })
+    ]
   });
   const relationships = new TreeNode({
     name: "Relationships",
@@ -65,14 +79,12 @@ function get_things_i_enjoy() {
       new TreeNode({ name: "Amelia" }),
       new TreeNode({ name: "Tori" }),
       new TreeNode({ name: "Friends" })
-    ],
-    value: 0
+    ]
   });
 
   const root = new TreeNode({
     name: "Invest in",
-    children: [health, magic, hobbies, relationships],
-    value: 0
+    children: [health, magic, hobbies, relationships, get_seven_habits()]
   });
   return root;
 }
