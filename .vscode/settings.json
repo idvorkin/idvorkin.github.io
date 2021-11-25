@@ -1,5 +1,4 @@
 {
-    "cSpell.words": [
-        "coachee"
-    ]
+  "cSpell.words": ["coachee"],
+  "python.formatting.provider": "black"
 }
