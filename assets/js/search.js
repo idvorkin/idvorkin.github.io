@@ -43,8 +43,8 @@ function create_search(appid, search_api_key, index_name, initial_query) {
         searchClient: algoliasearch(appid, search_api_key),
         indexName: index_name,
         searchParameters: {
-            query: initial_query,
-        },
+            query: initial_query
+        }
     });
     // Adding searchbar and results widgets
     search.addWidget(instantsearch.widgets.searchBox({
@@ -53,13 +53,13 @@ function create_search(appid, search_api_key, index_name, initial_query) {
         poweredBy: true,
         showSubmit: false,
         showReset: false,
-        showLoadingIndicator: false,
+        showLoadingIndicator: false
     }));
     search.addWidget(instantsearch.widgets.infiniteHits({
         container: "#search-hits",
         templates: {
-            item: hitTemplate,
-        },
+            item: hitTemplate
+        }
     }));
     return search;
 }
