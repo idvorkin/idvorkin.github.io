@@ -20,6 +20,7 @@ This page is built with [brython](https://brython.info/gallery/gallery_en.html),
 <!-- vim-markdown-toc GFM -->
 
 - [Brython DOM Manipulation](#brython-dom-manipulation)
+    - [Steve's jungle and Bar](#steves-jungle-and-bar)
 - [Source code](#source-code)
     - [Python code](#python-code)
     - [Brython loader, and Python include](#brython-loader-and-python-include)
@@ -28,6 +29,11 @@ This page is built with [brython](https://brython.info/gallery/gallery_en.html),
 <!-- prettier-ignore-end -->
 
 ### Brython DOM Manipulation
+
+#### Steve's jungle and Bar
+
+<div id="gamediv">
+</div>
 
 Render UX to:
 
