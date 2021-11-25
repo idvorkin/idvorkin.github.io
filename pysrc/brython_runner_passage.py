@@ -3,7 +3,7 @@ from typing import Dict, Callable, List
 from dataclasses import dataclass
 import copy
 from pysrc.passages import *
-from browser import document, window, html
+from browser import document, window, html, markdown
 from functools import partial
 
 
@@ -16,8 +16,23 @@ def click_on_game_link(passage_functor, runner):
     def inner(e):
         runner.prev = runner.current
         runner.run(passage_functor)
-        print (passage_functor)
     return inner
+
+def md_to_html(md):
+    # https://www.brython.info/static_doc/en/markdown.html
+    html,_ = markdown.mark(md)
+
+    # this parser had some spurious paragraphs
+    # Only strip starting and trailing ones
+    if html.startswith("<p>"):
+        html = html[3:]
+    if html.endswith("</p>"):
+        html = html[:-4]
+    if html.endswith("<p></p>"):
+        html = html[:-7]
+
+    return html 
+
 
 class HtmlRenderer:
     def __init__(self, div_id,header_func):
@@ -32,9 +47,9 @@ class HtmlRenderer:
 
     def render_div(self, div):
         css_selector =  f"#{self.div_id}"
-        print(css_selector)
-        # replace-with needs to reset the id - sigh
-        window.jQuery(css_selector).replaceWith(f"<div id='{self.div_id}'>Replaced</div>")
+        # Not sure the right way to erase the children of a node
+        # Just replace with an identical node with the same ID.
+        window.jQuery(css_selector).replaceWith(f"<div id='{self.div_id}'/>")
         document[self.div_id] <= div
 
     def run(self, passage_func:Passage):
@@ -42,11 +57,16 @@ class HtmlRenderer:
         passage = passage_func()
         htmlPassage = self.PassageToDiv(passage)
         output = html.DIV()
-        output <= html.DIV(self.header_func())
+
+        # not sure why, but there are spurious paragraphs at the ned of the MD, strip, em.
+        # Should only do this at the end, maybe via regexp?
+        md_as_html = md_to_html(self.header_func())
+        header = html.DIV(md_as_html)
+        header["class"] = 'alert alert-primary'
+        output <= header
         output <= htmlPassage.output
         if (htmlPassage.allow_back):
             output <= html.DIV(self.makeLink("Back",self.prev))
-        print (output)
         self.render_div(output)
 
     def makeLink(self,text,passage_functor):
@@ -64,9 +84,9 @@ class HtmlRenderer:
                 continue
 
             if isinstance(element, str):
-                output <= html.SPAN(element)
+                output <= html.SPAN(md_to_html(element))
                 continue
-            if isinstance(element, TL):
+            if isinstance(element, TP):
                 alink = html.A(f' {element.Text} ')
                 output <= self.makeLink(element.Text,element.PassageCreator)
                 continue

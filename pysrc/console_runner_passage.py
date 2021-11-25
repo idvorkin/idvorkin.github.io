@@ -2,7 +2,7 @@ from collections import defaultdict
 from typing import Dict, Callable, List
 from dataclasses import dataclass
 import copy
-from passages import *
+from passages import TP, Allow_Back, Passage
 
 
 @dataclass
@@ -63,7 +63,7 @@ def PassageToConsole(passage:Passage)->ConsolePassage:
         if isinstance(element, str):
             output += element
             continue
-        if isinstance(element, TL):
+        if isinstance(element, TP):
             text_link = element.Text
             output  += f' [{text_link}({link_id})] '
             links[str(link_id)]=element.PassageCreator

@@ -11,8 +11,9 @@ class Allow_Back: pass
 
 # Text and Link
 @dataclass
-class TL():
-    Text:str
-    PassageCreator:callable
+class TP():
+    def  __init__(self, text, passageCreator):
+        self.Text = text
+        self.PassageCreator = passageCreator
 
 Passage =[]
