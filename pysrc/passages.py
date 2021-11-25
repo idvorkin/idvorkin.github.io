@@ -1,4 +1,3 @@
-from icecream import ic 
 from collections import defaultdict
 from typing import Dict, Callable, List
 from dataclasses import dataclass
@@ -6,7 +5,7 @@ import copy
 
 
 # Twee has a Passage class, which represents a single passage.
-# Lets model that with python lists, 
+# Lets model that with python lists,
 
 
 class Allow_Back: pass
@@ -32,9 +31,11 @@ class ConsoleRender():
             choice = input (input_prompt)
             if not choice in choices:
                 print(f"[{choice}] is not a valid choice try again")
+                continue
             return choice
 
-    def run(self, passage:Passage, header_func):
+    def run(self, passage_func:Passage, header_func):
+        passage = passage_func()
         prev = passage
         while (True):
             consolePassage = PassageToConsole(passage)
@@ -50,7 +51,7 @@ class ConsoleRender():
             prev = passage
             passage = consolePassage.links[choice]()
 
-        
+
 
 # Passage
 # Link
@@ -65,9 +66,9 @@ def PassageToConsole(passage:Passage)->ConsolePassage:
         if isinstance(element, Allow_Back):
             allow_back = True
             continue
-            
+
         if isinstance(element, str):
-            output += element 
+            output += element
             continue
         if isinstance(element, TL):
             text_link = element.Text
@@ -85,10 +86,10 @@ def PassageToConsole(passage:Passage)->ConsolePassage:
             link_id += 1
             continue
         else:
-            ic(element)
+            print(element)
             raise Exception(f"Unknown element type {type(element)}")
 
-            
+
     return ConsolePassage(output, links, allow_back)
 
 

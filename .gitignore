@@ -34,3 +34,5 @@ cypress/screenshots
 instrumented/
 coverage/
 .nyc_output
+
+pysrc/__pycache__/

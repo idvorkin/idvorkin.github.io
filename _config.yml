@@ -75,7 +75,7 @@ algolia:
     - "tags"
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap", "jekyll-redirect-from"]
-include: [".htaccess"]
+include: [".htaccess", "__init__.py"]
 exclude:
   [
     "lib",

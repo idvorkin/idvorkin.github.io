@@ -2,6 +2,9 @@ from browser import document, window
 from browser.widgets.dialog import InfoDialog
 import random
 
+# This is pretty darn darn slow to load put it an a click handler
+import pysrc.snjb
+
 
 def click(ev):
     InfoDialog("Hello", f"Hello, {document['zone'].value} !")
@@ -19,6 +22,7 @@ def brython_main():
     document["py-source-code"].text = get_content_of_file("hello.py")
     # Highlight JS is installed on the page - call highlight
     window.hljs.highlightAll()
+    print (pysrc.snjb._the_start())
 
 brython_main()
 
