@@ -34,18 +34,19 @@ class ConsoleRender():
                 print(f"[{choice}] is not a valid choice try again")
             return choice
 
-    def run(self, passage:Passage):
+    def run(self, passage:Passage, header_func):
         prev = passage
         while (True):
             consolePassage = PassageToConsole(passage)
+            print (header_func())
             print(consolePassage.output)
             if len(consolePassage.links) == 0 and not consolePassage.allow_back:
                 print ("Game over!")
                 return
             choice = self._get_user_choice(consolePassage.links, consolePassage.allow_back)
             if choice == 'b':
-                passage = prev
-                break
+                passage, prev = prev, passage # swap them. -- probably want a stack, but that's fine
+                continue
             prev = passage
             passage = consolePassage.links[choice]()
 
@@ -83,6 +84,9 @@ def PassageToConsole(passage:Passage)->ConsolePassage:
             links[str(link_id)]=element
             link_id += 1
             continue
+        else:
+            ic(element)
+            raise Exception(f"Unknown element type {type(element)}")
 
             
     return ConsolePassage(output, links, allow_back)
@@ -93,18 +97,3 @@ def PassageToConsole(passage:Passage)->ConsolePassage:
 class TL():
     Text:str
     PassageCreator:callable
-
-def _game_over():
-    return ["Game Over"]
-
-def _fight():
-    return ["There's no one to fight. Either goto ", _the_start, "or", _the_store, "or", _game_over]
-    
-def _the_start():
-    return ["Welcome to the game. \nGoto ", _the_store, "or", _fight, 
-    "or", _game_over, "or the other", TL("Blue Store",_the_store)]
-
-def _the_store():
-    return [Allow_Back(),"Welcome to the store, nothing to buy"]
-
-ConsoleRender().run(_the_start())
