@@ -37,7 +37,6 @@ function hitTemplate(hit) {
     }
     return string_rep;
 }
-;
 function create_search(appid, search_api_key, index_name, initial_query) {
     // Instanciating InstantSearch.js with Algolia credentials
     const search = instantsearch({
