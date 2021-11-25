@@ -30,4 +30,6 @@ startgame()
     <div id="gamediv">
     </div>
 </div>
-<button id='reset-game' type="button" class="btn btn-block">Restart the game</button>
+<div class="d-grid gap-2 d-md-block">
+    <button id='reset-game' type="button" class="btn-info btn-block">Restart the game</button>
+</div>
