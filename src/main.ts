@@ -93,10 +93,6 @@ function generateToc(id, showPinToc) {
   target.append(tocMenu);
 }
 
-// NOTE: This should really be in post.md
-generateToc("ui-toc", true);
-generateToc("ui-toc-affix", false);
-
 // Yuk: Markdown Table Syntax makes nesting lists in tables hard. Adding JS based macro
 // Replacement
 //  NOTE: replace [](lX) with a list where X is a number
@@ -289,3 +285,8 @@ $(addBackLinksLoader);
 $(JsTemplateReplace);
 $(random_prompt_loader);
 $(keyboard_shortcut_loader);
+$(() => {
+  // TOC Generation should go to posts.
+  generateToc("ui-toc", true);
+  generateToc("ui-toc-affix", false);
+});
