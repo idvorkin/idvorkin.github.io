@@ -26,6 +26,8 @@ document['reset-game'].bind('click',startgame)
 startgame()
 </script>
 
-<div id="gamediv">
+<div class='border' style="min-height:30em">
+    <div id="gamediv">
+    </div>
 </div>
-<button id='reset-game' type="button" class="btn btn-primary btn-block">Restart the game</button>
+<button id='reset-game' type="button" class="btn btn-block">Restart the game</button>

@@ -70,8 +70,9 @@ class HtmlRenderer:
         self.render_div(output)
 
     def makeLink(self,text,passage_functor):
-        span =  html.SPAN(f" {text} ")
-        span["class"]= "border border-primary"
+        span =  html.A(f" {text} ")
+        span.href="#"
+        #span["class"]= "border border-primary"
         span.bind("click", click_on_game_link(passage_functor, self))
         return span
 
