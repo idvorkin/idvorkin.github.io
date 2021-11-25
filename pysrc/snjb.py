@@ -1,11 +1,11 @@
 #!python3 snjb.py
 
-# Bleh, handle the brython package problem
 try:
-    from passages import TL, Allow_Back
-except ModuleNotFoundError:
-    print("Trying loading again with pysrc - YUKKY")
+    # Bleh, handle the brython package problem
+    # Brython is slower then CLI, so do it in this order.
     from pysrc.passages import TL, Allow_Back
+except ModuleNotFoundError:
+    from passages import TL, Allow_Back
 
 
 import random
