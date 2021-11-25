@@ -4,10 +4,7 @@ import random
 
 # This is pretty darn darn slow to load put it an a click handler
 import pysrc.snjb
-
-
-def click(ev):
-    InfoDialog("Hello", f"Hello, {document['zone'].value} !")
+import pysrc.brython_runner_passage as runner
 
 def get_content_of_file(filename):
     filename_w_cachebreak = f"/pysrc/{filename}?break_cache={random.random()}"
@@ -23,6 +20,8 @@ def brython_main():
     # Highlight JS is installed on the page - call highlight
     window.hljs.highlightAll()
     print (pysrc.snjb._the_start())
+    render = runner.HtmlRenderer("gamediv")
+
 
 brython_main()
 
