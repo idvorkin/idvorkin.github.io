@@ -1,7 +1,8 @@
 ---
 layout: post
-title: A playground for brython and pystory
+title: Welcome to Steve's jungle and bar!
 permalink: /snjb
+notitle: true
 ---
 
 Zach built Steve's Night Jungle and Bar in twee, here's our port to python!
@@ -24,8 +25,6 @@ import pysrc.brython_runner_passage as runner
 document['reset-game'].bind('click',startgame)
 startgame()
 </script>
-
-#### Steve's jungle and Bar
 
 <div id="gamediv">
 </div>
