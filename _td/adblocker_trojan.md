@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Mystery of the google ads
+permalink: /adblocker-trojan
 ---
 
 Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a back blackground
