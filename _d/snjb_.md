@@ -5,7 +5,7 @@ permalink: /snjb
 notitle: true
 ---
 
-Zach built Steve's Night Jungle and Bar in twee, here's our port to python!
+Zach built Steve's Night Jungle and Bar in twee, here's our [port to python](https://github.com/idvorkin/idvorkin.github.io/blob/master/pysrc/snjb.py)!
 
 <script>
     window.addEventListener('load', (_) => brython() )
