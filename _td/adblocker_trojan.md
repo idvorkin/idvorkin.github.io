@@ -4,22 +4,25 @@ title: The Mystery of the google ads
 permalink: /adblocker-trojan
 ---
 
-Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a back blackground
+Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a back blackground. It was caused by a trojan running in my chrome extension, which I suspect was installed by a namejacked NPM plugin.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Determining Blast Radius](#determining-blast-radius)
+- [Impact and blast radius](#impact-and-blast-radius)
     - [Did happen ...](#did-happen-)
     - [Did not happen ...](#did-not-happen-)
-- [Debugging and isolating](#debugging-and-isolating)
-- [Hypothesis](#hypothesis)
-- [Fixing](#fixing)
+- [Detection](#detection)
+    - [Debugging](#debugging)
+- [Mitigation](#mitigation)
+- [Root Causing and hypothesis](#root-causing-and-hypothesis)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Determining Blast Radius
+## Impact and blast radius
+
+Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a back blackground
 
 ### Did happen ...
 
@@ -29,10 +32,12 @@ Out of the blue I started seeing ads in my google search. They were especially p
 
 ### Did not happen ...
 
-- Did not happen when
+- Did not happen when using edge
 - Did not happen with another user profile in chrome
 
-## Debugging and isolating
+## Detection
+
+### Debugging
 
 - I inspected the page, and saw the ads were in an iframe, being loaded from bing.com
 - The iframe was from `findsingl.com`, but I could find no results for that.
@@ -43,9 +48,22 @@ Out of the blue I started seeing ads in my google search. They were especially p
 - The 'initiator' field allowed me to click and see which code was making the request
 - I saw a "guid", which I'm not sure how I determined was the extension
 
-## Hypothesis
+## Mitigation
 
-From: [Malware can edit the chrome binary, or extensions, with a loader](https://www.microsoft.com/security/blog/2020/12/10/widespread-malware-campaign-seeks-to-silently-inject-ads-into-search-results-affects-multiple-browsers/)
+- I uninstalled all plugins (though will likely re-install some of them)
+- Everything was good.
+- Now, I wonder if other things are compromised.
+
+## Root Causing and hypothesis
+
+I'm not sure this happened, but my guess:
+
+- I had a common chrome exension installed (uBlock)
+- I installed and ran a brand jacked npm package (e.g npx run browser-pack, instead of npx run web-browser-pack).
+- The package modified the extension on disk (I didn't verify, just guessing :( )
+- When my web page ran, the malicious extension ran, and loaded ads.
+
+More details from [Malware can edit the chrome binary, or extensions, with a loader](https://www.microsoft.com/security/blog/2020/12/10/widespread-malware-campaign-seeks-to-silently-inject-ads-into-search-results-affects-multiple-browsers/):
 
 _We call this family of browser modifiers Adrozek. If not detected and blocked, Adrozek adds browser extensions, modifies a specific DLL per target browser, and changes browser settings to insert additional, unauthorized ads into web pages, often on top of legitimate ads from search engines. The intended effect is for users, searching for certain keywords, to inadvertently click on these malware-inserted ads, which lead to affiliated pages. The attackers earn through affiliate advertising programs, which pay by amount of traffic referred to sponsored affiliated pages._
 
@@ -60,9 +78,3 @@ I wondered if something editted the uBlocker extension on disk. Turns out npm pa
 _These mimicked the legitimate NodeJS-based database libraries, including jdb and db-json, but downloaded the malicious njRAT aka Bladabindi onto the user’s system._
 
 Here's a deep dive into how sophisticated the [attack can be]([https://blog.sonatype.com/bladabindi-njrat-rat-in-jdb.js-npm-malware).
-
-## Fixing
-
-- I uninstalled all plugins (though will likely re-install some of them)
-- Everything was good.
-- Now, I wonder if other things are compromised.
