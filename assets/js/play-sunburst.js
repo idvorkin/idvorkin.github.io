@@ -1,5 +1,5 @@
 class TreeNode {
-    constructor({ name, value = 25, children = [], }) {
+    constructor({ name, value = 25, children = [] }) {
         this.name = name;
         this.children = children;
         this.value = value;
@@ -16,8 +16,8 @@ function get_seven_habits() {
             new TreeNode({ name: "Think Win/Win" }),
             new TreeNode({ name: "First Understand" }),
             new TreeNode({ name: "Synergize" }),
-            new TreeNode({ name: "Sharpen the Saw" }),
-        ],
+            new TreeNode({ name: "Sharpen the Saw" })
+        ]
     });
     return root;
 }
@@ -27,25 +27,25 @@ function get_things_i_enjoy() {
         children: [
             { name: "Physical" },
             { name: "Emotional" },
-            { name: "Cognative" },
+            { name: "Cognative" }
         ],
-        value: 31,
+        value: 31
     });
     const magic = new TreeNode({
         name: "Magic",
         children: [
             new TreeNode({ name: "Card Magic" }),
             new TreeNode({ name: "Coin Magic" }),
-            new TreeNode({ name: "Band Magic" }),
-        ],
+            new TreeNode({ name: "Band Magic" })
+        ]
     });
     const hobbies = new TreeNode({
         name: "Hobbies",
         children: [
             new TreeNode({ name: "Biking" }),
             new TreeNode({ name: "Tech" }),
-            new TreeNode({ name: "Juggling" }),
-        ],
+            new TreeNode({ name: "Juggling" })
+        ]
     });
     const relationships = new TreeNode({
         name: "Relationships",
@@ -55,17 +55,17 @@ function get_things_i_enjoy() {
                 children: [
                     new TreeNode({ name: "Pick Zach's Nose" }),
                     new TreeNode({ name: "Make Zach Make Dinner" }),
-                    new TreeNode({ name: "Smell Zach's Feet" }),
-                ],
+                    new TreeNode({ name: "Smell Zach's Feet" })
+                ]
             }),
             new TreeNode({ name: "Amelia" }),
             new TreeNode({ name: "Tori" }),
-            new TreeNode({ name: "Friends" }),
-        ],
+            new TreeNode({ name: "Friends" })
+        ]
     });
     const root = new TreeNode({
         name: "Invest in",
-        children: [health, magic, hobbies, relationships, get_seven_habits()],
+        children: [health, magic, hobbies, relationships, get_seven_habits()]
     });
     return root;
 }
@@ -97,14 +97,14 @@ function tree_to_plotly_data_format(root) {
     return {
         ids: names_parent_names.map(([n, p]) => n),
         labels: names_parent_names.map(([n, p]) => n),
-        parents: names_parent_names.map(([n, p]) => p),
+        parents: names_parent_names.map(([n, p]) => p)
     };
 }
 function make_map_category_to_prompts_text() {
     const map = make_category_to_prompt_map();
     const list = Array.from(map.entries()).map(([k, v], _index) => [
         k.text(),
-        v,
+        v
     ]);
     return new Map(list);
 }
@@ -118,10 +118,10 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
     // Gather all the prompts for the children of the clicked node.
     let all_prompts = Array.from(breadth_first_walk(clicked_node))
         .map(([node, _parent]) => node) // return node and parent
-        .filter((node) => map_node_to_prompts.has(node.name))
-        .map((node) => map_node_to_prompts
+        .filter(node => map_node_to_prompts.has(node.name))
+        .map(node => map_node_to_prompts
         .get(node.name)
-        .map((prompt) => `${node.name}: ${prompt}`))
+        .map(prompt => `${node.name}: ${prompt}`))
         .flat();
     return _.chain(all_prompts)
         .sampleSize(1)
@@ -148,14 +148,14 @@ async function sunburst_loader() {
         // leaf: {opacity: 0.4},
         hoverinfo: "none",
         marker: { line: { width: 2 } },
-        maxdepth: 2,
+        maxdepth: 2
     };
     Object.assign(sunburst_config, sunburst_tree_flat);
     delete sunburst_config.values; // remove values to avoid sizing pie slices
     console.log(sunburst_config);
     var sunburst_layout = {
         margin: { l: 0, r: 0, b: 0, t: 0 },
-        sunburstcolorway: ["#636efa", "#ef553b", "#00cc96"],
+        sunburstcolorway: ["#636efa", "#ef553b", "#00cc96"]
     };
     const sunburstPlot = await Plotly.newPlot("sunburst", [sunburst_config], sunburst_layout);
     sunburstPlot.on("plotly_sunburstclick", on_sunburst_click);
