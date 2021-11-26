@@ -59,6 +59,7 @@ class HtmlRenderer:
         output <= header
         output <= htmlPassage.output
         if htmlPassage.allow_back:
+            output <= html.DIV() # give a blank line
             output <= html.DIV(
                 self.makeBackLink(" Go Back")
             )

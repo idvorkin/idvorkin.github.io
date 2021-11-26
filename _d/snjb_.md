@@ -22,20 +22,37 @@ def startgame(_=0):
 from browser import document, window, markdown, html
 from pysrc import snjb
 import pysrc.brython_runner_passage as runner
-document['reset-game'].bind('click',startgame)
+document['reset-game'].innerHTML=""
+reset_link = html.A("Restart SNJB")
+reset_link.href = "#"
+reset_link.bind('click',startgame)
+document['reset-game'] <= reset_link
 startgame()
 </script>
 
-<div class='border' style="min-height:30em">
-    <div id="gamediv">
-        <div> Good things come to those that wait - see you soon! </div>
-        <div class="d-flex">
-            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
-            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
-            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+<div id='reset-game' class="alert alert-info">
+        <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
         </div>
-    </div>
+        <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+        </div>
+        Trying to find Steve
+        <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+        </div>
 </div>
-<div class="d-grid gap-2 d-md-block">
-    <button id='reset-game' type="button" class="btn-info btn-block">Restart the game</button>
+
+<div class='border'>
+    <div id="gamediv">
+    </div>
 </div>
