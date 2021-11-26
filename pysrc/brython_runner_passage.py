@@ -29,12 +29,12 @@ def md_to_html(md):
 
 
 class HtmlRenderer:
-    def __init__(self, div_id, header_func:PassageFactory):
+    def __init__(self, div_id, header_factory:GetHeader):
         self.div_id = div_id
         new_div = html.DIV(f"id:{div_id} Bound to HTMLRender")
         new_div["class"] = "border"
         self.render_div(new_div)
-        self.header_func = header_func
+        self.header_func = header_factory
         self.passageStack:List[PassageFactory] = []
         self.current:PassageFactory
 
@@ -81,7 +81,8 @@ class HtmlRenderer:
         output = html.DIV()
         allow_back = False
         for element in passage:
-            if isinstance(element, Allow_Back):
+            is_allow_back = (type(element) is type)  and element.__name__ == "Allow_Back"
+            if is_allow_back:
                 allow_back = True
                 continue
 
@@ -90,7 +91,7 @@ class HtmlRenderer:
                 continue
             if isinstance(element, TP):
                 alink = html.A(f" {element.Text} ")
-                output <= self.makeLink(element.Text, element.PassageCreator)
+                output <= self.makeLink(element.Text, element.PassageFactory)
                 continue
             if callable(element):
                 function_name = element.__name__

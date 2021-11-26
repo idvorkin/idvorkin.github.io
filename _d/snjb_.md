@@ -17,7 +17,7 @@ Zach built Steve's Night Jungle and Bar in twee, here's our [port to python](htt
 <script type="text/python">
 
 def startgame(_=0):
-    runner.HtmlRenderer("gamediv", snjb.header).run(snjb._the_start)
+    runner.HtmlRenderer("gamediv", snjb.header).run(snjb.start_game)
 
 from browser import document, window, markdown, html
 from pysrc import snjb

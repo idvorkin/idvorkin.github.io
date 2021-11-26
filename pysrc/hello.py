@@ -21,7 +21,7 @@ def brython_main():
     document["py-source-code"].text = get_content_of_file("hello.py")
     # Highlight JS is installed on the page - call highlight
     window.hljs.highlightAll()
-    render = runner.HtmlRenderer("gamediv", snjb.header).run(snjb._the_start)
+    render = runner.HtmlRenderer("gamediv", snjb.header).run(snjb.start_game)
 
 
 brython_main()
