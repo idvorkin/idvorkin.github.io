@@ -26,7 +26,7 @@
     "cy:ut": "npx cypress run --config video=false --spec   '**/unit/*ts'",
     "cy:record": ". ./_cypress_api_key && npx cypress run --record --env coverage=false ",
     "cy:open": "npx cypress open --env coverage=false",
-    "search-index": "./bi.sh",
+    "search-index": "bundle exec jekyll algolia",
     "serve-site": "./js.sh",
     "back_links": "./bbl.sh",
     "tsc": "tsc --watch",
