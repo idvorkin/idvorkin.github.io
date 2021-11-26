@@ -230,6 +230,17 @@
       "redirect_url": "",
       "doc_size": 14000
     },
+    "/adblocker-trojan": {
+      "py/object": "__main__.Page",
+      "url": "/adblocker-trojan",
+      "title": "THE MYSTERY OF THE GOOGLE ADS",
+      "description": "Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a back background. It was caused by a trojan running in my chrome extension, which I suspect was installed by a name-jacked NPM plugin.\n\n",
+      "file_path": "_site/adblocker-trojan.html",
+      "outgoing_links": [],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 15000
+    },
     "/addiction": {
       "py/object": "__main__.Page",
       "url": "/addiction",
@@ -283,7 +294,7 @@
       "outgoing_links": ["/depression", "/mental-pain", "/mental-pain"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/anxiety": {
       "py/object": "__main__.Page",
@@ -323,7 +334,7 @@
       "outgoing_links": ["/7h", "/essentialism", "/frog"],
       "incoming_links": ["/7-habits", "/anxiety", "/idle"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/being-a-great-manager": {
       "py/object": "__main__.Page",
@@ -360,7 +371,7 @@
       "outgoing_links": ["/brompton-toys", "/warm"],
       "incoming_links": ["/eulogy", "/irl", "/operating-manual"],
       "redirect_url": "",
-      "doc_size": 18000
+      "doc_size": 19000
     },
     "/bmy": {
       "py/object": "__main__.Page",
@@ -408,7 +419,18 @@
       "outgoing_links": [],
       "incoming_links": ["/bike"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
+    },
+    "/brython": {
+      "py/object": "__main__.Page",
+      "url": "/brython",
+      "title": "A PLAYGROUND FOR BRYTHON AND PYSTORY",
+      "description": "This page is built with brython, a python running in browser via WASM. This is my playground to try interesting things with brython.\n\n",
+      "file_path": "_site/brython.html",
+      "outgoing_links": [],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 11000
     },
     "/cache": {
       "py/object": "__main__.Page",
@@ -419,7 +441,7 @@
       "outgoing_links": [],
       "incoming_links": ["/eulogy", "/job"],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/Canadian-Spotting": {
       "py/object": "__main__.Page",
@@ -441,7 +463,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 17000
     },
     "/chapters": {
       "py/object": "__main__.Page",
@@ -477,7 +499,7 @@
         "/writing"
       ],
       "redirect_url": "",
-      "doc_size": 26000
+      "doc_size": 27000
     },
     "/coe": {
       "py/object": "__main__.Page",
@@ -488,7 +510,7 @@
       "outgoing_links": [],
       "incoming_links": ["/amazon", "/manager-book", "/writing"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/comp": {
       "py/object": "__main__.Page",
@@ -499,7 +521,7 @@
       "outgoing_links": ["/pride", "/job-hunt-stress", "/pride"],
       "incoming_links": ["/job-hunt-stress", "/manager-book"],
       "redirect_url": "",
-      "doc_size": 21000
+      "doc_size": 22000
     },
     "/covid": {
       "py/object": "__main__.Page",
@@ -531,7 +553,7 @@
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/d/2010-2-15-2016-Misc-Uncategorized": {
       "py/object": "__main__.Page",
@@ -542,7 +564,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 22000
+      "doc_size": 23000
     },
     "/d/2015-11-18-Outsourcing": {
       "py/object": "__main__.Page",
@@ -564,7 +586,7 @@
       "outgoing_links": ["/tech-health-toys"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/d/2016-05-09-lost-interview": {
       "py/object": "__main__.Page",
@@ -575,7 +597,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/d/2016-09-18-transportation-as-a-service": {
       "py/object": "__main__.Page",
@@ -586,7 +608,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/d/2016-2-14-Health-In-The-Head": {
       "py/object": "__main__.Page",
@@ -597,7 +619,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/d/2016-2-15-Seth-Godin-Notes": {
       "py/object": "__main__.Page",
@@ -608,7 +630,7 @@
       "outgoing_links": ["/the-dip"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/d/2016-6-10-Appreciate": {
       "py/object": "__main__.Page",
@@ -619,7 +641,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/d/2016-7-14-Customer-Service": {
       "py/object": "__main__.Page",
@@ -641,7 +663,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 20000
+      "doc_size": 21000
     },
     "/d/2017-07-22-vacationphotos": {
       "py/object": "__main__.Page",
@@ -652,7 +674,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/d/2017-09-10-software-rot": {
       "py/object": "__main__.Page",
@@ -663,7 +685,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/d/2017-11-04-clean-architecture": {
       "py/object": "__main__.Page",
@@ -698,6 +720,17 @@
       "redirect_url": "",
       "doc_size": 10000
     },
+    "/d/apollo": {
+      "py/object": "__main__.Page",
+      "url": "/d/apollo",
+      "title": "QUALITY",
+      "description": "The original Kenedy speech\n\n",
+      "file_path": "_site/d/apollo.html",
+      "outgoing_links": [],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 13000
+    },
     "/d/habits": {
       "py/object": "__main__.Page",
       "url": "/d/habits",
@@ -716,7 +749,7 @@
         "/switch"
       ],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 16000
     },
     "/d/management_interviews": {
       "py/object": "__main__.Page",
@@ -727,7 +760,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 30000
+      "doc_size": 31000
     },
     "/d/resistance": {
       "py/object": "__main__.Page",
@@ -753,7 +786,7 @@
         "/timeoff"
       ],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 16000
     },
     "/d/time-off-12-2020": {
       "py/object": "__main__.Page",
@@ -803,7 +836,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 9000
+      "doc_size": 10000
     },
     "/decisive": {
       "py/object": "__main__.Page",
@@ -831,7 +864,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 28000
+      "doc_size": 29000
     },
     "/delegate": {
       "py/object": "__main__.Page",
@@ -842,7 +875,7 @@
       "outgoing_links": ["/7h-c3"],
       "incoming_links": ["/first-things-first"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/depression": {
       "py/object": "__main__.Page",
@@ -899,18 +932,7 @@
         "/gtd"
       ],
       "redirect_url": "",
-      "doc_size": 25000
-    },
-    "/drbot": {
-      "py/object": "__main__.Page",
-      "url": "/drbot",
-      "title": "THE DOCTOR IS IN",
-      "description": "Igor's Blog",
-      "file_path": "_site/drbot.html",
-      "outgoing_links": [],
-      "incoming_links": [],
-      "redirect_url": "",
-      "doc_size": 7000
+      "doc_size": 26000
     },
     "/dsat": {
       "py/object": "__main__.Page",
@@ -953,7 +975,7 @@
       "outgoing_links": ["/7h", "/eulogy", "/essentialism", "/dip"],
       "incoming_links": ["/7-habits"],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/enemy": {
       "py/object": "__main__.Page",
@@ -964,7 +986,7 @@
       "outgoing_links": ["/pride", "/resistance"],
       "incoming_links": ["/chapters"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/essentialism": {
       "py/object": "__main__.Page",
@@ -982,7 +1004,7 @@
         "/gtd"
       ],
       "redirect_url": "",
-      "doc_size": 34000
+      "doc_size": 35000
     },
     "/eulogy": {
       "py/object": "__main__.Page",
@@ -1013,10 +1035,11 @@
         "/irl",
         "/joy",
         "/operating-manual",
-        "/timeoff"
+        "/timeoff",
+        "/todo_enjoy"
       ],
       "redirect_url": "",
-      "doc_size": 27000
+      "doc_size": 28000
     },
     "/facebook": {
       "py/object": "__main__.Page",
@@ -1073,7 +1096,7 @@
       ],
       "incoming_links": ["/7-habits", "/getting-to-yes", "/sell"],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/frog": {
       "py/object": "__main__.Page",
@@ -1098,7 +1121,7 @@
         "/timeoff"
       ],
       "redirect_url": "",
-      "doc_size": 18000
+      "doc_size": 19000
     },
     "/getting-to-yes": {
       "py/object": "__main__.Page",
@@ -1136,7 +1159,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 12000
     },
     "/gtd": {
       "py/object": "__main__.Page",
@@ -1195,7 +1218,7 @@
       "outgoing_links": ["/happy", "/eulogy", "/habits", "/magic", "/joy"],
       "incoming_links": ["/operating-manual"],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 16000
     },
     "/Human-Meetings": {
       "py/object": "__main__.Page",
@@ -1206,7 +1229,7 @@
       "outgoing_links": [],
       "incoming_links": ["/being-a-great-manager", "/eulogy", "/job"],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 12000
     },
     "/humans-are-underrated": {
       "py/object": "__main__.Page",
@@ -1255,7 +1278,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 9000
+      "doc_size": 10000
     },
     "/insecure": {
       "py/object": "__main__.Page",
@@ -1288,7 +1311,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 12000
     },
     "/irl": {
       "py/object": "__main__.Page",
@@ -1369,7 +1392,7 @@
       "outgoing_links": [],
       "incoming_links": ["/joy"],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/magic": {
       "py/object": "__main__.Page",
@@ -1440,7 +1463,7 @@
         "/software-leadership-roles"
       ],
       "redirect_url": "",
-      "doc_size": 119000
+      "doc_size": 120000
     },
     "/mental-pain": {
       "py/object": "__main__.Page",
@@ -1481,7 +1504,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 9000
+      "doc_size": 10000
     },
     "/micro-economics": {
       "py/object": "__main__.Page",
@@ -1508,7 +1531,7 @@
       ],
       "incoming_links": ["/timeoff"],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 12000
     },
     "/mind-monsters": {
       "py/object": "__main__.Page",
@@ -1546,7 +1569,7 @@
       "outgoing_links": ["/moments-at-work"],
       "incoming_links": ["/happy", "/moments-at-work"],
       "redirect_url": "",
-      "doc_size": 20000
+      "doc_size": 21000
     },
     "/moments-at-work": {
       "py/object": "__main__.Page",
@@ -1588,7 +1611,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/nlp": {
       "py/object": "__main__.Page",
@@ -1638,7 +1661,7 @@
       ],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 21000
+      "doc_size": 22000
     },
     "/pandas": {
       "py/object": "__main__.Page",
@@ -1660,7 +1683,7 @@
       "outgoing_links": ["/amazon", "/money", "/time-off"],
       "incoming_links": ["/manager-book", "/money", "/operating-manual"],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/physical-health": {
       "py/object": "__main__.Page",
@@ -1703,7 +1726,7 @@
         "/psychic-weight"
       ],
       "redirect_url": "",
-      "doc_size": 17000
+      "doc_size": 18000
     },
     "/prompts": {
       "py/object": "__main__.Page",
@@ -1743,7 +1766,7 @@
       ],
       "incoming_links": ["/depression", "/gtd", "/idle"],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 17000
     },
     "/quip": {
       "py/object": "__main__.Page",
@@ -1754,7 +1777,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 9000
+      "doc_size": 10000
     },
     "/reflect-tool": {
       "py/object": "__main__.Page",
@@ -1765,7 +1788,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 8000
+      "doc_size": 9000
     },
     "/remote-work": {
       "py/object": "__main__.Page",
@@ -1787,7 +1810,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/save-the-souse": {
       "py/object": "__main__.Page",
@@ -1827,7 +1850,7 @@
         "/psychic-weight"
       ],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 12000
     },
     "/sharpen-the-saw": {
       "py/object": "__main__.Page",
@@ -1897,6 +1920,17 @@
       "redirect_url": "",
       "doc_size": 18000
     },
+    "/snjb": {
+      "py/object": "__main__.Page",
+      "url": "/snjb",
+      "title": "WELCOME TO STEVE'S JUNGLE AND BAR!",
+      "description": "Zach built Steve’s Night Jungle and Bar in twee, here’s our port to python!\n\n",
+      "file_path": "_site/snjb.html",
+      "outgoing_links": [],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 10000
+    },
     "/software-leadership-roles": {
       "py/object": "__main__.Page",
       "url": "/software-leadership-roles",
@@ -1917,7 +1951,7 @@
       "outgoing_links": [],
       "incoming_links": ["/manager-book"],
       "redirect_url": "",
-      "doc_size": 21000
+      "doc_size": 22000
     },
     "/strength-finder": {
       "py/object": "__main__.Page",
@@ -1928,7 +1962,7 @@
       "outgoing_links": ["/static/StrengthFinderIgor.pdf"],
       "incoming_links": ["/operating-manual"],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 17000
     },
     "/sustainable-work": {
       "py/object": "__main__.Page",
@@ -2005,7 +2039,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/td/better-security-design": {
       "py/object": "__main__.Page",
@@ -2049,7 +2083,7 @@
       "outgoing_links": ["/td/cloud-first-applications"],
       "incoming_links": ["/amazon"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/td/dump_imessage_history": {
       "py/object": "__main__.Page",
@@ -2071,7 +2105,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 17000
     },
     "/td/hack-web": {
       "py/object": "__main__.Page",
@@ -2104,7 +2138,7 @@
       "outgoing_links": ["/td/irl#work-bag"],
       "incoming_links": ["/writing"],
       "redirect_url": "",
-      "doc_size": 20000
+      "doc_size": 21000
     },
     "/td/linqpad_from_redshift": {
       "py/object": "__main__.Page",
@@ -2115,7 +2149,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/td/minecraft": {
       "py/object": "__main__.Page",
@@ -2126,7 +2160,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/td/mosh": {
       "py/object": "__main__.Page",
@@ -2137,7 +2171,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/td/private_web_site": {
       "py/object": "__main__.Page",
@@ -2148,7 +2182,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 9000
+      "doc_size": 10000
     },
     "/td/ring-video-download": {
       "py/object": "__main__.Page",
@@ -2159,7 +2193,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/td/sqlalchemy-redshift": {
       "py/object": "__main__.Page",
@@ -2241,7 +2275,7 @@
       "outgoing_links": [],
       "incoming_links": ["/writing"],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/td/vlc_player": {
       "py/object": "__main__.Page",
@@ -2252,7 +2286,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 9000
+      "doc_size": 10000
     },
     "/td/windbg": {
       "py/object": "__main__.Page",
@@ -2263,7 +2297,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 9000
+      "doc_size": 10000
     },
     "/tech-health-toys": {
       "py/object": "__main__.Page",
@@ -2299,7 +2333,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 12000
     },
     "/timeoff": {
       "py/object": "__main__.Page",
@@ -2318,18 +2352,18 @@
       ],
       "incoming_links": ["/d/time-off-12-2020", "/mind-at-work", "/parkinson"],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 17000
     },
     "/todo_enjoy": {
       "py/object": "__main__.Page",
       "url": "/todo_enjoy",
-      "title": "REMEMBERING THE THINGS I ENJOY",
-      "description": "It’s easy to forget the many, often tiny things that make us happy. For when that happens, here’s some reminders:\n\n",
+      "title": "THINGS I ENJOY",
+      "description": "It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:\n\n",
       "file_path": "_site/todo_enjoy.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/eulogy"],
       "incoming_links": ["/operating-manual"],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/tools": {
       "py/object": "__main__.Page",
@@ -2340,7 +2374,7 @@
       "outgoing_links": ["/td", "/nlp"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 38000
+      "doc_size": 39000
     },
     "/toysfortots": {
       "py/object": "__main__.Page",
@@ -2373,7 +2407,7 @@
       "outgoing_links": [],
       "incoming_links": ["/writing"],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/voices": {
       "py/object": "__main__.Page",
@@ -2401,7 +2435,7 @@
       "outgoing_links": [],
       "incoming_links": ["/bike"],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/welcome-to-holland": {
       "py/object": "__main__.Page",
@@ -2412,7 +2446,7 @@
       "outgoing_links": [],
       "incoming_links": ["/getting-to-yes-with-yourself"],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 12000
     },
     "/what-i-wish-knew-at-22": {
       "py/object": "__main__.Page",
@@ -2445,7 +2479,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/win-win": {
       "py/object": "__main__.Page",
