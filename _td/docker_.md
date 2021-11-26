@@ -20,6 +20,7 @@ Docker has 2 values, isolation and repeatable setup. Here are my notes
 
 - **docker stats** - Show how much memory is being used
 - docker attach - connect to stdio
+- docker run -it image - run image in interactive mode, with a terminal
 
 ## Real applications, my blog
 
