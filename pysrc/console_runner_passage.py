@@ -3,7 +3,6 @@ from typing import Dict, Callable, List
 from dataclasses import dataclass
 import copy
 from passages import TP, Allow_Back, Passage, PassageFactory
-from browser import document, window, html, markdown # type:ignore
 
 
 @dataclass
@@ -30,7 +29,7 @@ class ConsoleRender():
 
     def run(self, passage_func:PassageFactory, header_func:PassageFactory):
         passage = passage_func()
-        prev = passage
+        prev:List[Passage] = passage
         while (True):
             consolePassage = PassageToConsole(passage)
             print (header_func())
@@ -40,9 +39,9 @@ class ConsoleRender():
                 return
             choice = self._get_user_choice(consolePassage.links, consolePassage.allow_back)
             if choice == 'b':
-                passage, prev = prev, passage # swap them. -- probably want a stack, but that's fine
+                passage = prev.pop()
                 continue
-            prev = passage
+            prev += [passage]
             passage = consolePassage.links[choice]()
 
 

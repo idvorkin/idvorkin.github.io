@@ -57,7 +57,7 @@ def _the_start():
 def _the_store():
     passage =  [Allow_Back(),"Welcome to the store,  you can buy"]
     for s in item_to_price.keys():
-        passage += [TP(f"\n\n{s}",buy_if_can_afford(s))]
+        passage += ["\n\n",TP(f"{s}",buy_if_can_afford(s))]
 
     return passage
 
