@@ -6,11 +6,11 @@ from pysrc.passages import *
 from browser import document, window, html, markdown  # type:ignore
 
 
-
 @dataclass
 class DivPassage:
     output: str
     allow_back: bool = False
+
 
 def md_to_html(md):
     # https://www.brython.info/static_doc/en/markdown.html
@@ -29,14 +29,14 @@ def md_to_html(md):
 
 
 class HtmlRenderer:
-    def __init__(self, div_id, header_factory:GetHeader):
+    def __init__(self, div_id, header_factory: GetHeader):
         self.div_id = div_id
         new_div = html.DIV(f"id:{div_id} Bound to HTMLRender")
         new_div["class"] = "border"
         self.render_div(new_div)
         self.header_func = header_factory
-        self.passageStack:List[PassageFactory] = []
-        self.current:PassageFactory
+        self.passageStack: List[PassageFactory] = []
+        self.current: PassageFactory
 
     def render_div(self, div):
         css_selector = f"#{self.div_id}"
@@ -59,10 +59,8 @@ class HtmlRenderer:
         output <= header
         output <= htmlPassage.output
         if htmlPassage.allow_back:
-            output <= html.DIV() # give a blank line
-            output <= html.DIV(
-                self.makeBackLink(" Go Back")
-            )
+            output <= html.DIV()  # give a blank line
+            output <= html.DIV(self.makeBackLink(" Go Back"))
         self.render_div(output)
 
     def makeLink(self, text, passage_functor):
@@ -71,7 +69,7 @@ class HtmlRenderer:
         span.bind("click", self.on_game_link_factory(passage_functor))
         return span
 
-    def makeBackLink(self,text):
+    def makeBackLink(self, text):
         span = html.A(text)
         span.href = "#"
         span.bind("click", self.on_back_button_factory())
@@ -81,7 +79,7 @@ class HtmlRenderer:
         output = html.DIV()
         allow_back = False
         for element in passage:
-            is_allow_back = (type(element) is type)  and element.__name__ == "Allow_Back"
+            is_allow_back = (type(element) is type) and element.__name__ == "Allow_Back"
             if is_allow_back:
                 allow_back = True
                 continue
@@ -113,9 +111,9 @@ class HtmlRenderer:
 
         return on_game_link
 
-
     def on_back_button_factory(self):
         def on_back_button(e):
             prev_element = self.passageStack.pop()
             self.run(prev_element)
+
         return on_back_button

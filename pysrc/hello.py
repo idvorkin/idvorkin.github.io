@@ -6,9 +6,11 @@ from pysrc import snjb
 # This is pretty darn darn slow to load put it an a click handler
 import pysrc.brython_runner_passage as runner
 
+
 def get_content_of_file(filename):
     filename_w_cachebreak = f"/pysrc/{filename}?break_cache={random.random()}"
-    return open(filename_w_cachebreak,'r').read()
+    return open(filename_w_cachebreak, "r").read()
+
 
 def brython_main():
     # bind event 'click' on button to function echo
@@ -25,4 +27,3 @@ def brython_main():
 
 
 brython_main()
-

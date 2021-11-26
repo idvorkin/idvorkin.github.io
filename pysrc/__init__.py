@@ -1,2 +1,1 @@
-print ("Import a Package")
-
+print("Import a Package")
