@@ -2,7 +2,7 @@ from collections import defaultdict
 from typing import Dict, Callable, List
 from dataclasses import dataclass
 import copy
-from passages import TP, Allow_Back, Passage, PassageFactory
+from passages import TP, Allow_Back, Passage, PassageFactory, GetHeader
 
 
 @dataclass
@@ -12,6 +12,10 @@ class ConsolePassage:
     allow_back:bool =False
 
 class ConsoleRender():
+
+    def __init__(self, header:GetHeader):
+        self.get_header = header
+
     def _get_user_choice(self, _choices, allow_back):
         choices = copy.copy(_choices)
         input_prompt = ""
@@ -27,12 +31,12 @@ class ConsoleRender():
                 continue
             return choice
 
-    def run(self, passage_func:PassageFactory, header_func:PassageFactory):
+    def run(self, passage_func:PassageFactory):
         passage = passage_func()
-        prev:List[Passage] = passage
+        prev:List[Passage] = [passage]
         while (True):
             consolePassage = PassageToConsole(passage)
-            print (header_func())
+            print (self.get_header())
             print(consolePassage.output)
             if len(consolePassage.links) == 0 and not consolePassage.allow_back:
                 print ("Game over!")
@@ -44,8 +48,6 @@ class ConsoleRender():
             prev += [passage]
             passage = consolePassage.links[choice]()
 
-
-
 # Passage
 # Link
 # This should be in  ConsoleRender
@@ -56,7 +58,8 @@ def PassageToConsole(passage:Passage)->ConsolePassage:
     links={}
     allow_back = False
     for element in passage:
-        if isinstance(element, Allow_Back):
+        is_allow_back = (type(element) is type)  and element.__name__ == "Allow_Back"
+        if is_allow_back:
             allow_back = True
             continue
 
@@ -66,7 +69,7 @@ def PassageToConsole(passage:Passage)->ConsolePassage:
         if isinstance(element, TP):
             text_link = element.Text
             output  += f' [{text_link}({link_id})] '
-            links[str(link_id)]=element.PassageCreator
+            links[str(link_id)]=element.PassageFactory
             link_id += 1
             continue
         if callable(element):

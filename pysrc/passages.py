@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import Dict, Callable, List, NewType, Callable, TypeVar
+from typing import Dict, Callable, List, NewType, Callable, TypeVar,Union
 from dataclasses import dataclass
 import copy
 
@@ -12,10 +12,10 @@ class Allow_Back: pass
 # Text and Link
 @dataclass
 class TP():
-    def  __init__(self, text, passageCreator):
+    def  __init__(self, text:str, passageFactory:"PassageFactory"):
         self.Text = text
-        self.PassageCreator = passageCreator
+        self.PassageFactory = passageFactory
 
-Passage = NewType('Passage',List)
-#PassageFactory = TypeVar("PassageFactory",List[List[str], Passage])
-PassageFactory = Callable[[], Passage]
+PassageFactory = Callable[[], "Passage"]
+Passage = List[Union[str,PassageFactory, TP, Callable[[],Allow_Back]]]
+GetHeader = Callable[[], str]
