@@ -2,7 +2,8 @@ from collections import defaultdict
 from typing import Dict, Callable, List
 from dataclasses import dataclass
 import copy
-from passages import TP, Allow_Back, Passage
+from passages import TP, Allow_Back, Passage, PassageFactory
+from browser import document, window, html, markdown # type:ignore
 
 
 @dataclass
@@ -27,7 +28,7 @@ class ConsoleRender():
                 continue
             return choice
 
-    def run(self, passage_func:Passage, header_func):
+    def run(self, passage_func:PassageFactory, header_func:PassageFactory):
         passage = passage_func()
         prev = passage
         while (True):

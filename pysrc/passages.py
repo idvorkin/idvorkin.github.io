@@ -1,5 +1,5 @@
 from collections import defaultdict
-from typing import Dict, Callable, List
+from typing import Dict, Callable, List, NewType, Callable, TypeVar
 from dataclasses import dataclass
 import copy
 
@@ -16,4 +16,6 @@ class TP():
         self.Text = text
         self.PassageCreator = passageCreator
 
-Passage =[]
+Passage = NewType('Passage',List)
+#PassageFactory = TypeVar("PassageFactory",List[List[str], Passage])
+PassageFactory = Callable[[], Passage]

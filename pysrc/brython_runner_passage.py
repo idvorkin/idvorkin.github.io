@@ -3,24 +3,18 @@ from typing import Dict, Callable, List
 from dataclasses import dataclass
 import copy
 from pysrc.passages import *
-from browser import document, window, html, markdown
-from functools import partial
+from browser import document, window, html, markdown  # type:ignore
+
 
 
 @dataclass
 class DivPassage:
-    output:str
-    allow_back:bool =False
-
-def click_on_game_link(passage_functor, runner):
-    def inner(e):
-        runner.prev = runner.current
-        runner.run(passage_functor)
-    return inner
+    output: str
+    allow_back: bool = False
 
 def md_to_html(md):
     # https://www.brython.info/static_doc/en/markdown.html
-    html,_ = markdown.mark(md)
+    html, _ = markdown.mark(md)
 
     # this parser had some spurious paragraphs
     # Only strip starting and trailing ones
@@ -31,30 +25,29 @@ def md_to_html(md):
     if html.endswith("<p></p>"):
         html = html[:-7]
 
-    return html 
+    return html
 
 
 class HtmlRenderer:
-    def __init__(self, div_id,header_func):
+    def __init__(self, div_id, header_func:PassageFactory):
         self.div_id = div_id
-        new_div =  html.DIV(f"id:{div_id} Bound to HTMLRender")
+        new_div = html.DIV(f"id:{div_id} Bound to HTMLRender")
         new_div["class"] = "border"
         self.render_div(new_div)
         self.header_func = header_func
-        self.prev=None
-        self.current = None
-
+        self.passageStack:List[PassageFactory] = []
+        self.current:PassageFactory
 
     def render_div(self, div):
-        css_selector =  f"#{self.div_id}"
+        css_selector = f"#{self.div_id}"
         # Not sure the right way to erase the children of a node
         # Just replace with an identical node with the same ID.
         window.jQuery(css_selector).replaceWith(f"<div id='{self.div_id}'/>")
         document[self.div_id] <= div
 
-    def run(self, passage_func:Passage):
-        self.current=passage_func
-        passage = passage_func()
+    def run(self, passageFactory: PassageFactory):
+        self.current = passageFactory
+        passage = passageFactory()
         htmlPassage = self.PassageToDiv(passage)
         output = html.DIV()
 
@@ -62,21 +55,28 @@ class HtmlRenderer:
         # Should only do this at the end, maybe via regexp?
         md_as_html = md_to_html(self.header_func())
         header = html.DIV(md_as_html)
-        header["class"] = 'alert alert-primary'
+        header["class"] = "alert alert-primary"
         output <= header
         output <= htmlPassage.output
-        if (htmlPassage.allow_back):
-            output <= html.DIV(self.makeLink("Back",self.prev))
+        if htmlPassage.allow_back:
+            output <= html.DIV(
+                self.makeBackLink(" Go Back")
+            )
         self.render_div(output)
 
-    def makeLink(self,text,passage_functor):
-        span =  html.A(f" {text} ")
-        span.href="#"
-        #span["class"]= "border border-primary"
-        span.bind("click", click_on_game_link(passage_functor, self))
+    def makeLink(self, text, passage_functor):
+        span = html.A(f" {text} ")
+        span.href = "#"
+        span.bind("click", self.on_game_link_factory(passage_functor))
         return span
 
-    def PassageToDiv(self, passage:Passage)->DivPassage:
+    def makeBackLink(self,text):
+        span = html.A(text)
+        span.href = "#"
+        span.bind("click", self.on_back_button_factory())
+        return span
+
+    def PassageToDiv(self, passage: Passage) -> DivPassage:
         output = html.DIV()
         allow_back = False
         for element in passage:
@@ -88,15 +88,15 @@ class HtmlRenderer:
                 output <= html.SPAN(md_to_html(element))
                 continue
             if isinstance(element, TP):
-                alink = html.A(f' {element.Text} ')
-                output <= self.makeLink(element.Text,element.PassageCreator)
+                alink = html.A(f" {element.Text} ")
+                output <= self.makeLink(element.Text, element.PassageCreator)
                 continue
             if callable(element):
                 function_name = element.__name__
                 text_link = f"{function_name.replace('_',' ')}"
-                if text_link.startswith(' '):
+                if text_link.startswith(" "):
                     text_link = text_link[1:]
-                output <= self.makeLink(text_link,element)
+                output <= self.makeLink(text_link, element)
                 continue
             else:
                 print(element)
@@ -104,8 +104,16 @@ class HtmlRenderer:
 
         return DivPassage(output, allow_back)
 
+    def on_game_link_factory(self, passageFactory: PassageFactory):
+        def on_game_link(e):
+            self.passageStack += [self.current]
+            self.run(passageFactory)
+
+        return on_game_link
 
 
-
-
-
+    def on_back_button_factory(self):
+        def on_back_button(e):
+            prev_element = self.passageStack.pop()
+            self.run(prev_element)
+        return on_back_button
