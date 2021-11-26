@@ -11,17 +11,37 @@ except ModuleNotFoundError:
 import random
 from dataclasses import dataclass
 
+item_to_price = {
+    'sword':10,
+    'apple':20,
+    'bat':15,
+}
+
 @dataclass
 class Game:
     gold:int = 0
 
 game = Game()
 
+def buy_if_can_afford(item):
+    def inner():
+        display = [Allow_Back()]
+        if game.gold >= item_to_price[item]:
+            game.gold -= item_to_price[item]
+            display += [f"Congrats - you have an {item}!"]
+        else:
+            display += [f"You can't afford {item}!"]
+        return display
+    
+    return inner
+        
+
+
 def _game_over():
     return ["Game Over"]
 
 def _mine_for_gold():
-    gold_peices = random.randint(1,5)
+    gold_peices = random.randint(5,100)
     game.gold += gold_peices
     return [Allow_Back(),f"Congrats you found {gold_peices} gold!"]
 
@@ -35,7 +55,11 @@ def _the_start():
     "or ", _mine_for_gold, TP("WZAAUP",_mine_for_gold)]
 
 def _the_store():
-    return [Allow_Back(),"Welcome to the store, nothing to buy"]
+    passage =  [Allow_Back(),"Welcome to the store,  you can buy"]
+    for s in item_to_price.keys():
+        passage += [TP(f"\n\n{s}",buy_if_can_afford(s))]
+
+    return passage
 
 def header():
     return f"_Gold_:**{game.gold}**"
