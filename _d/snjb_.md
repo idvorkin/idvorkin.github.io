@@ -28,6 +28,12 @@ startgame()
 
 <div class='border' style="min-height:30em">
     <div id="gamediv">
+        <div> Good things come to those that wait - see you soon! </div>
+        <div class="d-flex">
+            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+        </div>
     </div>
 </div>
 <div class="d-grid gap-2 d-md-block">
