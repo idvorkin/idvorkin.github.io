@@ -69,7 +69,7 @@ pre {
   margin-left:5px;
   margin-bottom: 5px;
 }
-/* 
+/*
 https://css-tricks.com/line-clampin/
 */
 
@@ -84,4 +84,9 @@ https://css-tricks.com/line-clampin/
 
 .link-description {
   line-height: 0.5;
+}
+
+.nav-fa-icon{
+    font-size:175%;
+    color:white
 }
