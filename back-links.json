@@ -934,6 +934,17 @@
       "redirect_url": "",
       "doc_size": 26000
     },
+    "/docker": {
+      "py/object": "__main__.Page",
+      "url": "/docker",
+      "title": "THE MYSTERY OF THE GOOGLE ADS",
+      "description": "Docker has 2 values, isolation and repeatable setup. Here are my notes\n\n",
+      "file_path": "_site/docker.html",
+      "outgoing_links": [],
+      "incoming_links": [],
+      "redirect_url": "",
+      "doc_size": 10000
+    },
     "/dsat": {
       "py/object": "__main__.Page",
       "url": "/dsat",
