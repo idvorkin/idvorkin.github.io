@@ -25,24 +25,6 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-# Links to include in footer navigation
-# For external links add external: true
-links:
-  - title: Search
-    url: /
-  - title: Surprise me
-    url: /random
-  - title: Tags
-    url: /tags
-  - title: LinkedIn
-    url: /linkedin
-  - title: Tech Diary
-    url: /td
-  - title: Personal Diary
-    url: /ig66
-  - title: About
-    url: /about
-
 collections:
   d:
     output: true
