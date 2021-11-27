@@ -1,11 +1,13 @@
 ---
 layout: post
 permalink: /about
-title: "Why?"
+title: "Where am I?"
 tags:
 ---
 
-Ira Glass, the host of This American Life, eloquently explains this blog's Raison d'Etre in the video below.
+My blog! It's the place I sharpen my thinking, play with technology, and have a grand old time! I started the blog with a desire to get good at hard things, and over time it turned into my implementation of [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C).
+
+To get good at hard this you need LOTS of practice and LOTS of feedback, and sadly for you, during that time the stuff you do will suck. Ira Glass, the host of This American Life, eloquently explains it elegantly.
 
 <div class="embed-responsive embed-responsive-16by9">
   <iframe
@@ -15,13 +17,7 @@ Ira Glass, the host of This American Life, eloquently explains this blog's Raiso
   ></iframe>
 </div>
 
-Expressed plainly - getting good at hard stuff takes LOTS of practice and LOTS of feedback, during which time the stuff you do will suck.
-
-I want to get great at understanding, reasoning, and presenting ideas, and have no fear of sucking, so I'll use this blog to collect, massage, and present ideas.
-
-This is also my implementation of [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), which is a very interesting concept that was "discovered" in 2020, where I started in 2013 :)
-
-A few of the posts here will be finished, but most posts will be incomplete, and many will be incoherent. If anything strikes your fancy holler, I'd love to riff on the ideas.
+As such, a few of the posts will be finished, most posts will be incomplete, and many will be incoherent. If anything strikes your fancy holler, I'd love to riff on the ideas.
 
 Finally the metaphorical small print: These are my personal opinions, not those of my employer.
 
@@ -37,7 +33,7 @@ Your story doesn’t have to be a book, it is simply your chance to make a diffe
 
 When we remove the pre (finding the pen, the paper, the notebook, the software) and the post (finding a way to publish it), it turns out that we write more often, and writing more often leads to writing better.
 
-iIt doesn’t have to be perfect, it can simply be the next thing you do\*
+It doesn’t have to be perfect, it can simply be the next thing you do\*
 
 ### What about writers block?
 
@@ -67,9 +63,9 @@ Please do!
 
 Of course! Press ? to see them. Mobile browsers don't support keyboard shortcuts though.
 
-### What is the anchovie problem, and what is the monkey button:
+### What is the anchovy problem, and what is the monkey button:
 
-The monkey button selects a random page. It's the solution to Seth Goden's anchovie problem:
+The monkey button selects a random page. It's the solution to Seth Goden's anchovy problem:
 
 \*Cleaning out the fridge after a power failure, I found three half-empty containers of anchovies. Because they magically migrate to the back of the fridge, every time I had needed some, I ended up opening a new jar, because the old ones were invisible. Not just invisible if I had looked for them, but so invisible that it never even occurred to me to look for them.
 
@@ -77,7 +73,7 @@ Even more true with your thoughts. If you don’t know to look for it, if you do
 
 ### How do I get in touch?
 
-I love knowing smart, resiliant, positive people. Connect and message me on [Linked In](/linkedin).
+I love knowing smart, resilient, positive people. Connect and message me on [Linked In](/linkedin).
 
 ### How can I support you?
 
