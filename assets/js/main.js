@@ -251,7 +251,6 @@ function random_prompt_loader() {
     add_random_prompts();
 }
 function on_monkey_button_click(e) {
-    console.log("MOnkey Button Hit");
     if (window.location.href.includes("/ig66")) {
         window.location.href = "/ig66";
         return;
@@ -260,7 +259,6 @@ function on_monkey_button_click(e) {
 }
 function monkey_button_loader() {
     $("#monkey-button").bind("click", on_monkey_button_click);
-    console.log("MOnkey Button loaded");
 }
 $(monkey_button_loader);
 $(addBackLinksLoader);

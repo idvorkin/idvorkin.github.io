@@ -53,7 +53,7 @@ This is my implementation of [evergreen notes](https://notes.andymatuschak.org/z
 
 ### Why is there such an odd ensemble of tech here?
 
-As well as collecting my thoughts, this site is also a pet project to try out random web tech.
+As well as collecting my thoughts, this site is also a pet project to try out random web tech. There's probably much more tech then you can imagine. [Check it out](https://github.com/idvorkin/idvorkin.github.io).
 
 ### Can I copy this stuff?
 
