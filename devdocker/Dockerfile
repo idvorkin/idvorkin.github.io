@@ -11,20 +11,19 @@ EXPOSE 35729
 RUN apt-get update
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y install tzdata
-RUN apt-get install -y zsh tmux npm fzf vim git make gcc ruby-full bat python3 w3m netcat
-RUN echo "set -o vi" > /root/.zshrc
-RUN echo "alias python=/user/bin/python3.10" > /root/.zshrc
-RUN echo "set -o vi" > /root/.bashrc
-RUN echo "alias python=/user/bin/python3.10" > /root/.bashrc
+RUN apt-get install -y zsh tmux w3m netcat curl wget git
 WORKDIR /root
 RUN git clone https://github.com/idvorkin/settings ~/settings
 RUN git clone https://github.com/idvorkin/idvorkin.github.io ~/blog
 # RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# RUN sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+RUN ["cp","/app/zsh_profile", "/root/.zshrc"]
 
 RUN apt-get -y install python3-pip
 RUN pip3 install bs4 icecream
 RUN npm install -g prettier
-
+RUN apt-get install -y npm fzf vim git make gcc ruby-full bat python3
 
 WORKDIR /root/blog
 RUN gem install bundler
