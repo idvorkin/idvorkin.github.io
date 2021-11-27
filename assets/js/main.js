@@ -259,7 +259,7 @@ function on_monkey_button_click(e) {
     window.location.href = "/random";
 }
 function monkey_button_loader() {
-    $("#monkey-button").bind('click', on_monkey_button_click);
+    $("#monkey-button").bind("click", on_monkey_button_click);
     console.log("MOnkey Button loaded");
 }
 $(monkey_button_loader);
