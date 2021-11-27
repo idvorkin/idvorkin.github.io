@@ -1,12 +1,17 @@
 # syntax=docker/dockerfile:1
 # docker build -t devdocker devdocker
+
 FROM ubuntu
 WORKDIR /app
 COPY . .
+RUN ["cp","/app/zsh_profile", "/root/.zshrc"]
+RUN ["cp","/app/bash_profile", "/root/.bashrc"]
+EXPOSE 4000
+EXPOSE 35729
 RUN apt-get update
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y install tzdata
-RUN apt-get install -y zsh tmux npm fzf vim git make gcc ruby-full bat python3
+RUN apt-get install -y zsh tmux npm fzf vim git make gcc ruby-full bat python3 w3m netcat
 RUN echo "set -o vi" > /root/.zshrc
 RUN echo "alias python=/user/bin/python3.10" > /root/.zshrc
 RUN echo "set -o vi" > /root/.bashrc
@@ -25,4 +30,4 @@ WORKDIR /root/blog
 RUN gem install bundler
 RUN bundle install
 RUN npm install
-CMD ["/bin/zsh"]
+CMD ["/usr/bin/tmux"]
