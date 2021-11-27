@@ -16,7 +16,7 @@ WORKDIR /root
 RUN git clone https://github.com/idvorkin/settings ~/settings
 RUN git clone https://github.com/idvorkin/idvorkin.github.io ~/blog
 # RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 RUN ["cp","/app/zsh_profile", "/root/.zshrc"]
 
 RUN apt-get -y install python3-pip
