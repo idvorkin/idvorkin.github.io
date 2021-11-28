@@ -11,7 +11,7 @@
 // please read our getting started guide:
 // https://on.cypress.io/introduction-to-cypress
 
-describe("Page Navigation works", () => {
+describe("Search works", () => {
   beforeEach(() => {
     // Cypress starts out with a blank slate for each test
     // so we must tell it to visit our website with the `cy.visit()` command.
@@ -19,38 +19,11 @@ describe("Page Navigation works", () => {
     // we include it in our beforeEach function so that it runs before each test
     cy.visit("http://localhost:4000");
   }),
-    it("go to ig66", () => {
-      cy.get(".fa-baby-carriage").click();
-      cy.location("pathname").should("equal", "/ig66/");
-    }),
-    it("go to tech", () => {
-      cy.get(".fa-microchip").click();
-      cy.location("pathname").should("equal", "/td/");
-    }),
-    it("go to tags", () => {
-      cy.get(".fa-tags").click();
-      cy.location("pathname").should("equal", "/tags");
-    }),
-    it("go to about", () => {
-      cy.get(".fa-info-circle").click();
-      cy.location("pathname").should("equal", "/about");
-    }),
-    it("goto edit", () => {
-      cy.get(".fa-github")
-        .parent()
-        .should("have.attr", "href")
-        .and(
-          "equal",
-          "https://github.com/idvorkin/idvorkin.github.io/blob/master/index.html"
-        );
-    }),
-    it("go to linked in", () => {
-      // Can't verify left page since that has a cross-origin error
-      // https://docs.cypress.io/guides/guides/web-security#Limitations
-
-      cy.get(".fa-linkedin")
-        .parent()
-        .should("have.attr", "href")
-        .and("equal", "/linkedin");
+    it("type job hunt stress - click link", () => {
+      cy.get("input").type("job hunt stress");
+      cy.get(".ais-InfiniteHits-item  a")
+        .first()
+        .click();
+      cy.location("pathname").should("include", "job-hunt-stress");
     });
 });
