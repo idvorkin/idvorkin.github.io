@@ -57,16 +57,15 @@ pre {
   margin-bottom: 0;
 }
 
-
 /*make notes pretty*/
 #links-to-page {
-  background-color:  lightgrey;
+  background-color: lightgrey;
   margin-bottom: 20px;
-  width:99pcnt;
+  width: 99pcnt;
 }
-#links-to-page-title{
-  font-size:1.4em;
-  margin-left:5px;
+#links-to-page-title {
+  font-size: 1.4em;
+  margin-left: 5px;
   margin-bottom: 5px;
 }
 /*
@@ -75,9 +74,9 @@ https://css-tricks.com/line-clampin/
 
 .link-box {
   overflow: hidden;
-  max-height:3.0em;
-  margin-left:10px;
-  margin-right:10px;
+  max-height: 3em;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 10px;
   text-align: justify;
 }
@@ -86,7 +85,7 @@ https://css-tricks.com/line-clampin/
   line-height: 0.5;
 }
 
-.nav-fa-icon{
-    font-size:175%;
-    color:white
+.nav-fa-icon {
+  font-size: 165%;
+  color: white;
 }
