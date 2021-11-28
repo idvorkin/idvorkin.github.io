@@ -73,7 +73,7 @@ Igor loved living in the city so he could walk Zach and Amelia to their school a
 
 Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66.blogspot.com/2013/12/the-wheels-full-of-grace.html)) which let him look goofy, be incredibly practical, and carry around the things he loved. Nothing made Igor happier then having the kids on the folding bike.
 
-During Covid-19, Amelias was in a homeschooling pod, and Igor got to ride her to school everyday up a [very big hill](https://ig66.blogspot.com/2020/11/family-journal-548az-Amelia-you-can-do.html).
+During Covid-19, Amelias was in a homeschooling pod, and Igor got to ride her to school everyday up a [very big hill](https://ig66.blogspot.com/2020/11/family-journal-548az-amelia-you-can-do.html).
 
 <!--
 * To File
