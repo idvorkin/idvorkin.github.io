@@ -21,6 +21,7 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
     - [Critical Thinking - Writing (and reading) Culture](#critical-thinking---writing-and-reading-culture)
     - [Business Metrics focus - QBR/MBR/WBR](#business-metrics-focus---qbrmbrwbr)
     - [PR/FAQs](#prfaqs)
+    - [Fulfillment and Customer Days](#fulfillment-and-customer-days)
     - [Tenants](#tenants)
     - [Hiring Process](#hiring-process)
     - [Bar Raisers](#bar-raisers)
@@ -122,6 +123,16 @@ Frugality, done correclty is resourcefulness. It says, if you need 10 people, ha
 ### Business Metrics focus - QBR/MBR/WBR
 
 ### PR/FAQs
+
+### Fulfillment and Customer Days
+
+Mandatory for e7+, and encouraged for lower. You take a day to work in a fulfillment center or be a customer service rep. You build empathy and be amazed at the work Amazon does
+
+{%include youtube.html src="8nKPC-WmLjU" %}
+
+Here was me during my tour, loading a truck
+
+{%include blob_image_float_right.html src="blog/igor-pack-truck.jpg" %}
 
 ### Tenants
 
