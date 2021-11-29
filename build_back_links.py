@@ -55,9 +55,8 @@ class idvorkin_github_io_config:
     def is_allow_outgoing(self, path: PathType):
         if path == "/":
             return False
-        if path.startswith("/tags#"):
-            return False
-        if path.startswith("/random"):
+
+        if path in "/ig66;/random;/tags;/about;/linkedin;/td".split(";"):
             return False
         return path.startswith("/")
 

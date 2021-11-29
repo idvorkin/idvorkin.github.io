@@ -26,8 +26,8 @@
     "/books": "/books-that-defined-me",
     "/boss": "/being-a-great-manager",
     "/Business-Model-You": "/bmy",
-    "/coach": "/coaching.md",
-    "/Coaching-Questions": "/coaching.md",
+    "/coach": "/coaching",
+    "/Coaching-Questions": "/coaching",
     "/cold": "/warm",
     "/compassion": "/curious",
     "/compensation": "/comp",
@@ -222,10 +222,10 @@
     "/about": {
       "py/object": "__main__.Page",
       "url": "/about",
-      "title": "WHY?",
+      "title": "WHERE AM I?",
       "description": "Igor's Blog",
       "file_path": "_site/about.html",
-      "outgoing_links": ["/linkedin"],
+      "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 14000
@@ -237,9 +237,9 @@
       "description": "Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a back background. It was caused by a trojan running in my chrome extension, which I suspect was installed by a name-jacked NPM plugin.\n\n",
       "file_path": "_site/adblocker-trojan.html",
       "outgoing_links": [],
-      "incoming_links": [],
+      "incoming_links": ["/d/time-off-11-2021"],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 14000
     },
     "/addiction": {
       "py/object": "__main__.Page",
@@ -283,7 +283,7 @@
         "/writing"
       ],
       "redirect_url": "",
-      "doc_size": 25000
+      "doc_size": 24000
     },
     "/anger": {
       "py/object": "__main__.Page",
@@ -294,7 +294,7 @@
       "outgoing_links": ["/depression", "/mental-pain", "/mental-pain"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 13000
     },
     "/anxiety": {
       "py/object": "__main__.Page",
@@ -312,7 +312,7 @@
         "/voices"
       ],
       "redirect_url": "",
-      "doc_size": 19000
+      "doc_size": 18000
     },
     "/ar": {
       "py/object": "__main__.Page",
@@ -334,7 +334,7 @@
       "outgoing_links": ["/7h", "/essentialism", "/frog"],
       "incoming_links": ["/7-habits", "/anxiety", "/idle"],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 12000
     },
     "/being-a-great-manager": {
       "py/object": "__main__.Page",
@@ -371,7 +371,7 @@
       "outgoing_links": ["/brompton-toys", "/warm"],
       "incoming_links": ["/eulogy", "/irl", "/operating-manual"],
       "redirect_url": "",
-      "doc_size": 19000
+      "doc_size": 18000
     },
     "/bmy": {
       "py/object": "__main__.Page",
@@ -419,16 +419,16 @@
       "outgoing_links": [],
       "incoming_links": ["/bike"],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 12000
     },
     "/brython": {
       "py/object": "__main__.Page",
       "url": "/brython",
       "title": "A PLAYGROUND FOR BRYTHON AND PYSTORY",
-      "description": "This page is built with brython, a python running in browser via WASM. This is my playground to try interesting things with brython.\n\n",
+      "description": "This page is built with brython, a python running in browser via WASM. This is my playground to try interesting things with brython.\n\n\n\n\n\n\n\n\n\n\n\n\n\n  Brython DOM Manipulation\n    \n      Steve’s jungle and Bar\n    \n  \n  Source code\n    \n      Python code\n      Brython loader, and Python include\n    \n  \n\n\n\n\n\nBrython DOM Manipulation\n\nSteve’s jungle and Bar\n\n\n\n\nRender UX to:\n\n\n\n\nWrite to id=bry-out\n\n\n\n\nSource code\n\nFor my tech friends, here’s what the code looks like.\n\nPython code\n\nThe python code block is read at run time, from the python code.\n\n\n    Replaced by python code\n    \n\nBrython loader, and Python include\n\n <script>\n    window.addEventListener('load', (_) => brython() )\n</script>\n\n<script type=",
       "file_path": "_site/brython.html",
       "outgoing_links": [],
-      "incoming_links": [],
+      "incoming_links": ["/d/time-off-11-2021"],
       "redirect_url": "",
       "doc_size": 11000
     },
@@ -441,7 +441,7 @@
       "outgoing_links": [],
       "incoming_links": ["/eulogy", "/job"],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 13000
     },
     "/Canadian-Spotting": {
       "py/object": "__main__.Page",
@@ -449,7 +449,7 @@
       "title": "CANADIAN SPOTTING",
       "description": "“I bet you the bill that dude by the window is Canadian,” I challenged.\n\n",
       "file_path": "_site/Canadian-Spotting.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/tags#Software%20as%20a%20Story"],
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 11000
@@ -463,7 +463,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 17000
+      "doc_size": 16000
     },
     "/chapters": {
       "py/object": "__main__.Page",
@@ -492,14 +492,17 @@
         "/prompts"
       ],
       "incoming_links": [
+        "/being-a-great-manager",
         "/first-understand",
         "/insecure",
+        "/job",
         "/manager-book",
+        "/moments-at-work",
         "/prompts",
         "/writing"
       ],
       "redirect_url": "",
-      "doc_size": 27000
+      "doc_size": 26000
     },
     "/coe": {
       "py/object": "__main__.Page",
@@ -510,7 +513,7 @@
       "outgoing_links": [],
       "incoming_links": ["/amazon", "/manager-book", "/writing"],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 12000
     },
     "/comp": {
       "py/object": "__main__.Page",
@@ -521,7 +524,7 @@
       "outgoing_links": ["/pride", "/job-hunt-stress", "/pride"],
       "incoming_links": ["/job-hunt-stress", "/manager-book"],
       "redirect_url": "",
-      "doc_size": 22000
+      "doc_size": 21000
     },
     "/covid": {
       "py/object": "__main__.Page",
@@ -553,7 +556,7 @@
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 14000
     },
     "/d/2010-2-15-2016-Misc-Uncategorized": {
       "py/object": "__main__.Page",
@@ -564,7 +567,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 23000
+      "doc_size": 22000
     },
     "/d/2015-11-18-Outsourcing": {
       "py/object": "__main__.Page",
@@ -575,7 +578,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 11000
     },
     "/d/2016-02-03-positive-computing-survey": {
       "py/object": "__main__.Page",
@@ -586,7 +589,7 @@
       "outgoing_links": ["/tech-health-toys"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 13000
     },
     "/d/2016-05-09-lost-interview": {
       "py/object": "__main__.Page",
@@ -597,7 +600,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 13000
     },
     "/d/2016-09-18-transportation-as-a-service": {
       "py/object": "__main__.Page",
@@ -608,7 +611,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 13000
     },
     "/d/2016-2-14-Health-In-The-Head": {
       "py/object": "__main__.Page",
@@ -619,7 +622,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/d/2016-2-15-Seth-Godin-Notes": {
       "py/object": "__main__.Page",
@@ -630,7 +633,7 @@
       "outgoing_links": ["/the-dip"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 14000
     },
     "/d/2016-6-10-Appreciate": {
       "py/object": "__main__.Page",
@@ -641,7 +644,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/d/2016-7-14-Customer-Service": {
       "py/object": "__main__.Page",
@@ -663,7 +666,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 21000
+      "doc_size": 20000
     },
     "/d/2017-07-22-vacationphotos": {
       "py/object": "__main__.Page",
@@ -674,7 +677,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 12000
     },
     "/d/2017-09-10-software-rot": {
       "py/object": "__main__.Page",
@@ -685,7 +688,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/d/2017-11-04-clean-architecture": {
       "py/object": "__main__.Page",
@@ -729,7 +732,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 12000
     },
     "/d/habits": {
       "py/object": "__main__.Page",
@@ -749,7 +752,7 @@
         "/switch"
       ],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 15000
     },
     "/d/management_interviews": {
       "py/object": "__main__.Page",
@@ -760,7 +763,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 31000
+      "doc_size": 30000
     },
     "/d/resistance": {
       "py/object": "__main__.Page",
@@ -786,7 +789,24 @@
         "/timeoff"
       ],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 15000
+    },
+    "/d/time-off-11-2021": {
+      "py/object": "__main__.Page",
+      "url": "/d/time-off-11-2021",
+      "title": "TIME OFF TURKEY DAY 2021",
+      "description": "I should have written up a plan before this time off so I’d have been more deliberate. As it stands, I did what I wanted, got a tonne done, but missed some things that bring me a lot of energy.\n\n",
+      "file_path": "_site/d/time-off-11-2021.html",
+      "outgoing_links": [
+        "/time-off",
+        "/brython",
+        "/snjb",
+        "/adblocker-trojan",
+        "/adblocker-trojan"
+      ],
+      "incoming_links": ["/timeoff"],
+      "redirect_url": "",
+      "doc_size": 15000
     },
     "/d/time-off-12-2020": {
       "py/object": "__main__.Page",
@@ -836,7 +856,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 9000
     },
     "/decisive": {
       "py/object": "__main__.Page",
@@ -853,7 +873,7 @@
         "/pride"
       ],
       "redirect_url": "",
-      "doc_size": 39000
+      "doc_size": 38000
     },
     "/defi": {
       "py/object": "__main__.Page",
@@ -864,7 +884,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 29000
+      "doc_size": 28000
     },
     "/delegate": {
       "py/object": "__main__.Page",
@@ -875,7 +895,7 @@
       "outgoing_links": ["/7h-c3"],
       "incoming_links": ["/first-things-first"],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 12000
     },
     "/depression": {
       "py/object": "__main__.Page",
@@ -932,7 +952,7 @@
         "/gtd"
       ],
       "redirect_url": "",
-      "doc_size": 26000
+      "doc_size": 25000
     },
     "/docker": {
       "py/object": "__main__.Page",
@@ -975,7 +995,7 @@
         "/siy"
       ],
       "redirect_url": "",
-      "doc_size": 17000
+      "doc_size": 16000
     },
     "/end-in-mind": {
       "py/object": "__main__.Page",
@@ -986,7 +1006,7 @@
       "outgoing_links": ["/7h", "/eulogy", "/essentialism", "/dip"],
       "incoming_links": ["/7-habits"],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/enemy": {
       "py/object": "__main__.Page",
@@ -997,7 +1017,7 @@
       "outgoing_links": ["/pride", "/resistance"],
       "incoming_links": ["/chapters"],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 12000
     },
     "/essentialism": {
       "py/object": "__main__.Page",
@@ -1015,7 +1035,7 @@
         "/gtd"
       ],
       "redirect_url": "",
-      "doc_size": 35000
+      "doc_size": 34000
     },
     "/eulogy": {
       "py/object": "__main__.Page",
@@ -1031,6 +1051,7 @@
         "/job",
         "/manager",
         "/alexa-charity",
+        "/tags#Software as a Story",
         "/The-Genesis-Node",
         "/cache",
         "/Human-Meetings"
@@ -1050,7 +1071,7 @@
         "/todo_enjoy"
       ],
       "redirect_url": "",
-      "doc_size": 28000
+      "doc_size": 27000
     },
     "/facebook": {
       "py/object": "__main__.Page",
@@ -1107,7 +1128,7 @@
       ],
       "incoming_links": ["/7-habits", "/getting-to-yes", "/sell"],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 14000
     },
     "/frog": {
       "py/object": "__main__.Page",
@@ -1132,7 +1153,7 @@
         "/timeoff"
       ],
       "redirect_url": "",
-      "doc_size": 19000
+      "doc_size": 18000
     },
     "/getting-to-yes": {
       "py/object": "__main__.Page",
@@ -1154,12 +1175,12 @@
       "py/object": "__main__.Page",
       "url": "/getting-to-yes-with-yourself",
       "title": "GETTING TO YES WITH YOURSELF",
-      "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n\n\n\n\n  1) Put yourself in your shoes ☑\n  2) Develop your inner BATNA ☑\n  3) Reframe your picture ☐\n  4) Stay in the zone ☐\n  5) Respect them even if ☐\n  6) Give and Recieve ☐\n  7) The 3 wins ☑\n\n\n\n\n\n1) Put yourself in your shoes ☑\n\n\n  Figure out what your elephant REALLY wants (Switch)\n  Seek first to understand yourself (7H)\n  When you judge yourself, you shutdown and can’t find what you really want\n  Acceptance induces safety, and only from safety can you find what you really want\n  See yourself form the balcony\n    \n      Respond instead of reacting.\n      Going to Balcony == Be Mindful, Self Aware and Objective\n      Choose your response, but it’s a two sided stick and you get the consequences.\n      Reaction:\n        \n          Feels good, but need to realize there is a VERY negative consequence.\n          Negative Reactions: Attack (Win:Lose) -> Accommodate (Lose:Win) -> Avoid (Lose:Lose)\n        \n      \n      Use self-awareness to catch your desire to react\n        \n          Need to build self-awareness muscle (SIY)\n          Practice mindfulness (and have a grounding spot)\n          Practice mindfulness before event to make it easier.\n        \n      \n    \n  \n  Listen with Empathy\n    \n      80% of thoughts are negative.\n      Observe self: Detached view of a scientist.\n      Listen to self: What it feels like to be you.\n      Listening to self exercise\n        \n          Don’t judge, or they will not feel safe, and won’t talk.\n          Name your neurosis, and sit them down at a table, and listen to them non-judgementally\n          Because “negative emotions are safe to speak” they get less power, and have less desire to attack at “bad” times.\n          Don’t just listen, understand the cause, and what you can do to help.\n          Be curious, ask yourself, isn’t that interesting. Ask the neurosis, why is that.\n        \n      \n      This is an opportunity to learn physical self awareness, to help notice your emotions.\n      Huge benefit, your mind is more clear, and you silence the self to concentrate and get into flow.\n    \n  \n  Uncover your needs\n    \n      Your elephant is non-verbal, negative emotions are it’s mode of communicating your needs.\n      Dig hard for your needs, don’t settle for a position, but why, what do you really want. What is done. (XREF: Essentialisim)\n      Magic Question Why? Why? Why?\n      Deepest needs: Happiness: Protection/Safety and Love/Connection\n    \n  \n  From Self Judgment to Self Understanding\n    \n      Before fighting with others, need to make sure you TRUELY know what you want.\n      Accepting yourself for who you are is NOT a cop out. Acceptance produces safety, which lets us digg deater.\n    \n  \n\n\n2) Develop your inner BATNA ☑\n\nThe ideas in this chapter are great, but I think connecting the concepts to inner BATNA is ackward. Thus my summary doesn’t track well with the books\n\n\n  A cross between 7H: Be Proactive, AND take responsibility for meeting your own needs.\n  When you COMMIT to unconditionally take care of your needs, you have all the power.\n    \n      SWITCH: Your elephant can rest assured it will be fed and cared for regardless of what’s going on externally.\n      This gives you much more psychic space in your relationships, making them better relationships.\n      SIY: Grandmother mind - you are your own best grandma.\n    \n  \n  Responsibility holds Power VS blame gives it away.\n  Take responsibility for what you’ve got, and make the most of it - DO NOT BLAME Life (welcome to Holland).\n  Focus on what you can do to make things better, NOT the fact that you screwed something up in the past.\n  \n    In a relationship, focus on what YOU CAN DO going forward in the relationship, not on blaming the other person. Doing this:\n\n    \n      Gives clarity to your needs in the relationships.\n      Gives “psychic space” for other party in relationship\n      Lets you be objectives about your needs, and your expectations from other party.\n    \n  \n  Own your life\n    \n      Need self-understanding and self-responsibility\n        \n          Just self-understanding => self-pity\n          Just self-responsibility => self-blame.\n        \n      \n      Self blame => Past looking, I WAS a failure.\n      Self responsibility => Forward looking what CAN I do to make this successful?\n      (really it’s the next section, where ‘self/life’ is the relationship)\n    \n  \n  Own your relations\n    \n      When you point a finger at someone, 3 fingers point back at you.\n      All relationships are two ways streets, if there’s a problem, you own a CHUNK.\n      Leave the blame territory, and enter the how do we improve this in the future territory.\n      Know what you bring to the relationship, and what is negotiable and non-negotiable from the other party\n      Great Anecdote on divorce requirements.\n    \n  \n  Own your needs\n    \n      BATNA, how you satisfy your needs in case you can’t get a WIN/WIN?\n      Inner BATNA - know YOU WILL ALWAYS meet your needs, so don’t have to worry.\n      Gives you confidence that you don’t need to be desperate.\n    \n  \n  From blame to responsibility\n    \n      Touching story about author’s dying daughter Gabi, and how hard it was to deal with doctors.\n      Two top changes:\n        \n          Needed to stop expecting things from doctor’s they could provide for themselves, and let dr’s bring only what they needed to bring, their expertise.\n          Needed to stop blaming life for a bum deal, and instead take responsibility for making the most out of what they had.\n        \n      \n    \n  \n\n\n3) Reframe your picture ☐\n\nAbundance not Scarcity: A rising tide raises all boats\n\nExpecations are a self fulling prophecy. Believe the world good or bad, and that’s how you’ll interpret it, and that’s how it will become\n\n\n  Remember your connection to life\n  Make your own happiness\n  Appreciate life’s lessons\n  From unfriendly to friendly.\n\n\n4) Stay in the zone ☐\n\n\n  Learn to let go\n  Accept the past\n  Trust the future\n  Embrace the present\n  From resistance to acceptance\n\n\n5) Respect them even if ☐\n\n\n  Put yourself in thier shoes\n  Expand your circle of respect\n  Respect them even if they reject you\n  From exclusion to inclusion\n\n\n6) Give and Recieve ☐\n\n\n  Give for mutual gain\n  Give for pleasure and meaning\n  Give what you are here to give\n  From Win/Lose to Win/Win/Win\n\n\n7) The 3 wins ☑\n\n\n  How do we get what we want, while meeting the needs of others?\n  The better we meet our own needs, the better we can meet the needs of others\n  We choose to be our own ally or our enemy. and we choose to be the ally or enemy in our relationships.\n  A win within\n    \n      I will give myself the most trouble today. I stand in the way of my goals.\n      Do the practices in this book, to be satisified with yourself\n    \n  \n  A win with others\n    \n      Every thing you do to get to yes with yourself, makes it easier to get to yes with others\n    \n  \n  A win for the whole\n    \n      When you succeed with yourself, and with others, then the whole world benefits\n    \n  \n  Winning the game of life\n    \n      It’s about creating inner satisfaction, which makes your life and relationships better. It’s hard but worth it.\n    \n  \n\n\nThis is a summary of Getting to yes with yourself\n\n\n  \n    \n    \n      \n      \n    \n    \n  \n\n\n",
+      "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n",
       "file_path": "_site/getting-to-yes-with-yourself.html",
       "outgoing_links": ["/gty", "/grandmother", "/welcome-to-holland"],
       "incoming_links": ["/books-that-defined-me", "/depression"],
       "redirect_url": "",
-      "doc_size": 27000
+      "doc_size": 19000
     },
     "/goals": {
       "py/object": "__main__.Page",
@@ -1170,7 +1191,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 11000
     },
     "/gtd": {
       "py/object": "__main__.Page",
@@ -1224,23 +1245,12 @@
       "py/object": "__main__.Page",
       "url": "/hobby",
       "title": "WHY A ENGINEERING MANAGER MASQUERADES AS A MAGICIAN ON THE WEEKENDS",
-      "description": "\n\n",
+      "description": "Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don’t want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. Those days, I’m grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.\n\n",
       "file_path": "_site/hobby.html",
       "outgoing_links": ["/happy", "/eulogy", "/habits", "/magic", "/joy"],
       "incoming_links": ["/operating-manual"],
       "redirect_url": "",
       "doc_size": 16000
-    },
-    "/Human-Meetings": {
-      "py/object": "__main__.Page",
-      "url": "/Human-Meetings",
-      "title": "FEELINGS/HUMAN MEETINGS",
-      "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
-      "file_path": "_site/Human-Meetings.html",
-      "outgoing_links": [],
-      "incoming_links": ["/being-a-great-manager", "/eulogy", "/job"],
-      "redirect_url": "",
-      "doc_size": 12000
     },
     "/humans-are-underrated": {
       "py/object": "__main__.Page",
@@ -1289,7 +1299,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 9000
     },
     "/insecure": {
       "py/object": "__main__.Page",
@@ -1322,7 +1332,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 11000
     },
     "/irl": {
       "py/object": "__main__.Page",
@@ -1403,7 +1413,7 @@
       "outgoing_links": [],
       "incoming_links": ["/joy"],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 14000
     },
     "/magic": {
       "py/object": "__main__.Page",
@@ -1427,13 +1437,12 @@
       "py/object": "__main__.Page",
       "url": "/manager-book",
       "title": "IGOR'S BOOK OF MANAGEMENT",
-      "description": "Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.\n\n",
+      "description": "Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.\n\nThis post uses the word manager, but the majority of topics are applicable all software job functions regardless of seniority or the number of direct reports, zero direct reports included.\n\n\n\n\n\n\n  What does a manager do?\n    \n      What are a managers responsibilities?\n      How do you measure their success?\n      What is a manager accountable for?\n      How do you describe your job to people outside the industry?\n      Hardest part about being a manager\n      What do you do in the first 90 days?\n      What do managers do all day?\n      Should managers be technical?\n      Should managers code?\n      What engineering efficiency metrics should a manager monitor.\n    \n  \n  Managing and Developing People\n    \n      How do you coach?\n      What mechanisms do you have to ensure career development?\n      How do you support folks with their career growth plans (CGPs)?\n      How do you support folks by pre-writing self assessments?\n      How do you give fast, frequent, feedback?\n      How do you think about situational leadership?\n      What is the level specific career expectations and growth strategies?\n      How do you help people switch jobs?\n      How do you keep people motivated?\n      How do you give challenging feedback?\n      What’s the point of 1:1s?\n      What do you do in 1:1s?\n      How do you handle communication problems?\n      How do you handle promotion preparation (and fever)?\n      How do you identify and grow potential managers?\n      How did you grow top talent?\n      Performance Reveiws: Calibrations PSC, OLR, Connections\n      Recall career is just one part of your life\n    \n  \n  Culture\n    \n      What is your ideal culture?\n      How do you help a team gel\n      What order would you introduce culture\n      How do you make a good culture?\n      How do you handle Remote Work?\n      What about Work Life Balance\n      How you deal with team disagrees with the leadership\n      Agency and Psychological Safety\n    \n  \n  Process and Mechanism\n    \n      Theory of Process\n      The dark side of process\n      On Change\n      That sounds like good intentions - Factories and Artisans\n      Never have a human do what a computer can do.\n      Rich communication - Team meeting\n      Continuous Learning - Deep Dives, Knowledge Transfer and Guest Speakers\n      Engineering Excellence - Operational Review and Correction of Errors\n      Data Driven - Customer and Business Metric Reviews\n      Continuous Improvement - Retrospectives\n      Quality and Technical Growth Design+Arch Reviews\n    \n  \n  Planning, Roadmaps and Resource Allocation\n    \n      Defining Success - How does goal setting work\n      How do you do planning and come up with roadmaps.\n      How does resource allocation work?\n      The road building analogy to software development roles.\n    \n  \n  Hiring\n    \n      What are you looking for when you recruit?\n      Do they prefer to hire only experienced folks?\n      Are they more comfortable with generalists or specialists?\n      How do you think about hiring?\n      How do you think about the hiring funnel.\n      What about structured vs free form interview loops?\n      What are better kinds of interviews?\n      What do you do when someone says they are quitting\n      Best hire of your career\n    \n  \n  Firing and Performance Management\n    \n      Firing Percents\n      The Process\n      What are your thoughts on a PIP?\n      How do you deal with people performance issues?\n      How do you coach employee back to success?\n    \n  \n  Charters, Re-orgs and Bootstrapping\n    \n      The genesis: When you start from scratch\n      Telling in the team\n      The FAQ\n      The split: When a team outgrows a manager\n      The merge or you leaving the team: When a manager leaves\n      Splitting Horizontally vs Vertically\n      The flip: When charter changes\n    \n  \n  Personal Motivations\n    \n      Why is management attractive to Igor?\n      What is Igor’s dream job?\n      What is Igor’s career aspiration?\n      Why do you think Igor is a good coach?\n      Why do you prefer being a manager vs an IC.\n      What if managers memorize these answers for interviews.\n    \n  \n  Business Acumen and Strategy\n  Analogies to be fleshed out\n    \n      Piniata\n      A project is car with a EM, PM and TL\n      An engineering team as the parts of the car\n      New hire perspective is like landing a plane\n    \n  \n  Questions managers get\n    \n      What do you do all day?\n      What’s the best/worst part of your job?\n      How do you get anything done with all of those meetings?\n      What do you think developers do?\n      How can devs do to make managers job’s easier?\n      How does a dev find out if they’d be good at or enjoy being a manager?\n      Why do managers always say coding is part of their job but we all know it isn’t?\n    \n  \n  Other resources\n    \n      Google’s Project Oxygen\n      Amazon’s leadership principles\n      A few Igorisms\n      Laws to remember\n      Great Videos\n      Great Posts and Blogs\n      Great books\n    \n  \n\n\n\n\n\nWhat does a manager do?\n\n\n\nWhat are a managers responsibilities?\n\nHow do you measure their success?\n\nWhat is a manager accountable for?\n\nThe success of a manager is the success of the team. This manifest in 4 dimensions:\n\n\n\n\n  \n    \n      Dimension\n      Success Means\n    \n  \n  \n    \n      Business Results\n      Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.\n    \n    \n      High performance people and teams\n      Team is well gelled and team members help each other. Everyone has growth plans which fit their needs and they are execution them.\n    \n    \n      Engineering Efficiency and Process\n      Engineering systems and protocols ensure a pit of success. Process is automated, and releases have high velocity and minimal risk.\n    \n    \n      Technical Assets\n      Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I’m on the pages), and technical debt is applied judiciously (take debt if you might be able to write off the asset)\n    \n  \n\n\nHow do you describe your job to people outside the industry?\n\nI run a factory which produces widgets and has employees. For those in the industry this translates to:\n\n\n  \n    \n      Dimension\n      Analog\n      Metrics and Measures\n      Success Means\n    \n  \n  \n    \n      Business Results\n      Produced Widgets\n      l20\n      I work with the business to help figure out the best “widgets we can make”, by understanding what people want to buy, and explaining how our factory runs.\n    \n    \n      High performance people and teams\n      Factory Workers\n      l21\n      Workers in the factory are healthy, learning, want to come to work every day, and getting along with co-workers.\n    \n    \n      Engineering Efficiency and Process\n      Operating procedures\n      l22\n      The factory is efficient: Production good and improving. Widgets comes out consistently and on schedule? New employees know what to do. Everyone knows what to do during emergencies?\n    \n    \n      Technical Assets\n      Factory machines\n      l23\n      Machines in the factory adjusted quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency\n    \n  \n\n\n \n\n\n  l20\n  Are wanted by customers\n  Are produced on time and budget.\n\n\n \n\n\n  l21\n  Are happy based on surveys\n  Are getting promos frequently\n  Recommend joining the factory to their friends\n  Work at the factory for several years\n\n\n \n\n\n  l22\n  Workers are efficient and safe with minimal effort\n  Mistakes are learned once, and never repeated?\n  Continuous improvement is occurring\n  Variance is low\n  Over time work is not required\n\n\n \n\n\n  l23\n  Support a wide range of widgets\n  Can be extended to build new widgets at low cost\n  Have have availability\n  Operate at low cost\n\n\nHardest part about being a manager\n\n\n  Firing: People think it’s firing but it’s not, see that section\n  Personally: Telling team I’m quitting, tears, ride bike, etc.\n  Actual: When need to surprise folks, abrupt direction change or killing projects.\n  Likely, but I haven’t done it: Layoffs, when know and can’t tell.\n\n\nWhat do you do in the first 90 days?\n\nFirst 90 days is the bible here\n\nOutputs:\n\n\n  Early Win: Figure out the situation, and deliver a win.\n  Trust: Relationships with team, and peers, and partners.\n  Knowledge: Know critical parts of business, tech, org.\n\n\nWhat do managers do all day?\n\n\n\nFor non-managers, recall a manager’s purpose is supporting others, not making stuff. As a result they have a manager schedule, not a maker schedule.\n\nIn a typical 44 hours week, 24 hours are standing commitments with others, and 20 hours vary based on the time of year, and needs of the team, business, and partners. Vivek Garg has a good post on his manager of manager’s calendar if you want more insights.\n\n\n  \n    \n      Hours\n      Time Allocation\n    \n  \n  \n    \n      20\n      Variable Time - depends on season and team need\n    \n    \n      8\n      Team 1:1s - See the 1:1 questions\n    \n    \n      6\n      Partner 1:1s - PM, Design, Partner EMs, Other Developers\n    \n    \n      6\n      Reviews - Project, Engineering, Staff, Initiative\n    \n    \n      4\n      Recruiting/Networking - Coffee chats, sell calls, interviews\n    \n  \n\n\nDepending on time of year, and experience of my team and partners, I’m doing 1 or 2 of the following with my discretionary time:\n\nPeople Development:\n\n\n  Stack Ranking/Performance Reviews/Career Growth Plans\n  Low performers\n  Complex people situations (more often then you’d expect)\n  Extra recruiting\n\n\nProduct:\n\n\n  Strategy development\n  Road mapping\n  Pitching\n  Data Analysis\n\n\nExecution\n\n\n  Escalations\n  Unblocking the team\n  Negotiating/Finding win/wins with other teams\n  Re-balancing projects and engineer allocation\n  Inter and Intra team conflict.\n\n\nTech/Organization\n\n\n  Generating content for a talk/program (e.g. D&I, Recruiting, People Development)\n  Architecture/Design/Engineering Excellence brainstorming, and review\n  RCA Analysis\n\n\nShould managers be technical?\n\nYes they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team and partners. They should ensure the team is making correct architectural decisions and engineering excellence improves due to best practices.\n\nThey need to represent the team in technical forums, swag costs, represent laws of physics, bring back best practices, and catch upcoming incompatibilities and challenges.\n\n\n  Attend architecture and design reviews\n  Be on every page the team gets\n  Have strong relationships w/technical leaders like principal engineers\n  Follow major tech trends and product launches (keynotes, major tech blog posts)\n  Read seminal books on topics (ML, Cloud Native Apps, Data Systems, etc)\n  Have Side projects in assorted tech and ideas (ML, PWA, FaaS)\n\n\nThey also need to be experts at working with data systems and analysis, as much of their time will be analyzing customer, business, operational, and technical data.\n\nOnce developers become managers they have little time to use their technical muscle, and their technical Aptitude declines do to lack of use. Therefore I recommend before switching they are:\n\n\n  A very experienced engineer (MSFT L65, AMZN L6, FB E6).\n  A expert in at multiple languages (for me python, and C#)\n  A expert in multiple technical domains (for me networking and security).\n\n\nShould managers code?\n\nManagers should read code on specific occasions, but they can’t be on critical path because their time is often needed to deal with urgent situations. Thus, they can only write low importance code usually something you’d assign to an SDE-I. At that point, you have a very expensive priority inversion.\n\nThat said, SDMs need to use their product just like their customers do to be able to better understand and meet the customer need. Like wise, SDMs need to use their development tools periodically, which should include the code/test/deploy cycle, so they are better able to understand and meet their team’s (aka other big customer) need.\n\nSDMs should be reading code occasionally:\n\n\n  Spot checking - SDMs should have a good “something is fishy” intuition, and should be able to independently and discreetly prove or disprove their intuition.\n  Assessing people - Code is a major deliverable for developers and should be inspected as part of people assessment.\n  Deep dive during major outages - In high risk, time critical situations like outages, you want your best people reviewing the changes, and this includes SDMs. If an SDM can’t understand a high risk time sensitive code change, it can be, and should be simplified.\n\n\nWhat engineering efficiency metrics should a manager monitor.\n\nLots, but these 3 are probably high on the list:\n\n\n  How much time is spent in outages/livesite/maintenance (don’t forget to include time that should be but isn’t due to lack of monitoring)\n  How often can developers check in?\n  How long does it take for a change to get to production.\n\n\nManaging and Developing People\n\nHow do you coach?\n\nCoaching is a major part of the job, and covered in my coaching post:\n\nCoaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.\n\nWhat mechanisms do you have to ensure career development?\n\nPrinciples for career development\n\n\n  Peeps have an accurate, clear understanding of their interests, strengths, weakness, and next career steps.\n  Peeps have a clear understanding of level and role expectations for the current and next career stage.\n  Peeps understand how their work “ladders up” in impact and career development.\n  Peeps get frequent feedback on in progress work\n  Peeps and managers have a consistent understanding of the above.\n  Manager actually uses the process himself with her own manager.\n\n\nTo achieve these principles there are several tools:\n\n\n  \n    \n      Tool\n      Time Horizon\n      Checkin Frequency\n    \n  \n  \n    \n      Career Growth Plan\n      6m to 2y\n      3m\n    \n    \n      Pre Write Self Assessment\n      1m to 6m\n      4w to 8w\n    \n    \n      Frequent Feedback\n      Immediate\n      As Needed\n    \n    \n      Situational Leadership\n      Stage Dependant\n      Stage Dependant\n    \n  \n\n\nHow do you support folks with their career growth plans (CGPs)?\n\nCGPs are Forward looking and a good place to discuss what opportunities are required, and what major development areas should be tackled, and what’s required to meet the next career level. I.M.Wright gives some excellent insights\n\nEach employee has a career growth plan (CGP). This is a document with open ended questions like:\n\n\n  What are you most proud of?\n  What is most draining?\n  What are your short, medium and long term career goals?\n  What are the steps to get there?\n  What are your gaps between now and the next step?\n\n\nTo help with the last two questions, this document has the list of expectations for the current level, and next level. For each expectation, you fill in your self assessment of where you are at on the expectations relative to level, sometimes it’s below, at or above. This is great tool to ensure you and those supporting you are in sync, and that they can best support you.\n\nHow do you support folks by pre-writing self assessments?\n\nThink through what will be delivered in the next 1-6 months, and how it will be delivered.\n\nMost companies have a performance program - At MSFT it’s connects, at FB it’s PSCs and Amazon it’s Forte. As part of this process, and employee writes a self assessment for the work that happened in the last 6 months - 1 year, and then the manager uses that as a basis of the review they’ll write.\n\nThere are several advantages to pre-writing these documents:\n\n\n  The peep and manager can be deliberate about what work is done, and discuss if projects make sense.\n  The peep and manager understand the impact provided by the work.\n  The peep has a record of what they’ve done in the performance period, instead of only having a crisp memory of the last few months.\n  The manager can calibrate the work to be done so there are no scope surprises.\n\n\nGood self assessments are concise, focuses on impact, and then how you delivered the impacat. More details at I.M Wright:\n\n\n  [Clearly measurable impact] by [work you’ve done yourself and/or with others].\n    \n      Relevant artifacts, or quote from others validating the claim.\n    \n  \n\n\nHere are some fictitious examples modelled on my own career:\n\n\n  \n    Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to estabilish budgets, and holding them accountable to delivering them.\n\n    \n      \n        \n          At first my team was skeptical that the peformance improvements could be achieved and were hesitant to invest, but once we saw the organizational support and monthly meetings of progress we found it inspiring and made sure we contributed to the goal.\n        \n      \n    \n  \n  \n    Drove XXX$ to charities, and increased Alexa Shopping DAU XXX % (XXX to YYY) to by proposing a charity giving feature and implementing it in 5 months. Complexity, 20 eng/months, supporting work from 5 teams, across mulitple divisions\n  \n  \n    Delivered XYZ, required to deliver TLS support on windows phone at very high quality. Complexity 1 engineer, 4 months - however requried ramping up on complex error prone C++ code base, and no bugs found\n\n    \n      \n        \n          Igor’s delivery was on time and of high quality. The feature had no bugs in production, due to high test coverage, which was impressive given the high complexity of the C++ code.\n        \n      \n    \n  \n  \n    Increased team morale and cross group collaboration by proposing weekly team lunches, and monthly lunches with the broader organization.\n    \n      The monthly lunches were great. At one of them, I learned Bob on the other team was building a similer feature to mine and so we collaborated and were able to save 3 weeks of coding time.\n    \n  \n\n\nYou should be observing the key to these self assessments is impact. The goal isn’t motion, it’s impact. If you don’t know the impact, you should ask yourself (and your manager) why you are doing the work. Pre-writing self assessments is a great way to do this.\n\nHow do you give fast, frequent, feedback?\n\nI aspire to provide immediate observed feedback, for something that is about to happen (like reviewing a document), or a de-brief after a critical meeting or review.\n\nI keep my eyes open for opportunities for feedback from my observations, and from soliciting feedback from peers and partners. I take the feedback and figure out the best way to give it.\n\nMy priority is “catching employees doing something right”, so I can re-enforce positive behavior. Even better, with positive behaviors I can provide them in public which not only benefits the employee, but also re-enforces that goodness with the team.\n\nHow do you think about situational leadership?\n\nMore details are in my coaching post. Here’s a preview:\n\nAs people learn new skills they experience a learning curve, which requires different support at different points on the curve. Situational leadership describes this in detail, but in a nutshell, while learning new things, people go through this grid from 1 to 4.\n\n\n  \n    \n      Competent/Confident\n      Confident\n      Scared\n    \n  \n  \n    \n      Incompetent\n      1. Foolish Novice - Thinks they can do it, but really can’t\n      2. Novice - Knows they can’t do it, and feels bad\n    \n    \n      Competent\n      4. Expert - Know they can do it, and they’re right\n      3. Journey man - Thinks they can’t do it, but actually they can\n    \n  \n\n\nIn each of these stages different support is required.\n\n\n  \n    \n      Competent/Confident\n      Confident\n      Scared\n    \n  \n  \n    \n      Incompetent\n      1. Instruct and Explain - Tell them what to do\n      2. Guide and Encourage - Show them how to do it\n    \n    \n      Competent\n      4. Empower - Explain Why Not\n      3. Facilitate - Explain Why.\n    \n  \n\n\nWhat is the level specific career expectations and growth strategies?\n\nDepends on the skill level (E.g. levels ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between Tech Lead, Architects and Managers.\n\n\n  \n    \n      Level\n      Approach\n    \n  \n  \n    \n      Junior\n      Not a lot of variance. Have a rubric for junior SDE skills and make sure they are getting the opportunity to learn and execute each box. Make sure they have a solid mentor, and opportunity after opportunity to round out their knowledge.\n    \n    \n      Intermediate\n      Now it’s about how are you helping the team, growing your contributions. Bigger experiences, maybe out side the org, both to build your skills, and increase your org visibility. Double down on super powers, close red flags and blockers. Very satisfying to watch people “blossom” into leaders.\n    \n    \n      Senior/Staff\n      Here you’re getting people that are at a career level and are happy with a lot of what they’re doing. Now it’s helping folks decide how much they want to grow, and where they want to improve. Here it’s finding mentors, and how we want to split responsibility and cover each other. Also opportunities for what they own for the group (30-60+) e.g. security or process or etc.\n    \n  \n\n\nMy approach, and frequent peep questions.\n\n\n  \n    \n      Level\n      Things I repeat and repeat\n    \n  \n  \n    \n      Junior\n      l10\n    \n    \n      Intermediate\n      l11\n    \n    \n      Senior/Staff\n      l12\n    \n  \n\n\n\n  l10\n  We hired you because you’re smart+really good. If you can’t understand something, it’s probably the presenter doesn’t understand it well, as opposed to you not understanding.\n  You are new, and need to learn and need to spend a bunch of time asking for help and guidance. I have one rule - you must come with a bad idea (which will start becoming good ideas). You fail when you bring nothing, you ace it when you bring a bad idea. We’ll help you develop that bad idea, and help sharpen your thinking skill.\n  “You have a fresh perspective - If something doesn’t make sense ask, for us, we’re like fish in water, so challenge our assumptions”.\n  I’m here to help you close gaps, sharpen their understanding by teaching it to you\n\n\n \n\n  l11\n  How do you make the team better?\n  What are you gonna be known for?\n  You’re the owner, you’ll do everything and I work for you. What help do you need\n  Do shadow coaching, where I might be writing/pr-doing work but they do the send/take the credit\n\n\n \n\n  l12\n  Great post on being a staff + level engineer\n  Are you clear on Tech Lead, Architects and Managers.\n  What are you driving for our larger organization?\n  How are you maximizing our benefit?\n  How do we make sure we compliment each other?\n\n\nHow do you help people switch jobs?\n\nMy goal is to find people the right job, not the job on my team. I coach a lot of people through this, and here are my most popular posts:\n\n\n  Reducing Job Hunt Stress\n  Only care about total compensation\n  What I wish I knew at 22\n\n\nHow do you keep people motivated?\n\n\n\nI use Danial Pink’s DRIVE model, Autonomy, Mastery and Purpose:\n\n\n  Autonomy\n    \n      You are the owner\n      All decision need your sign off\n      Coach from behind (here’s success, here’s how I’d say it, what are the consequences, misses)\n      The team has your back.\n      Protecting from harmful rays of upper management and business\n      Only clear out as much as required\n    \n  \n  Mastery\n    \n      Career Development TODO link it.\n      Training\n      In the dimension we agree to.\n      You can work at 110% of your capacity, but I tell you when you’re at 90,100, or 110\n      Bigger and Bigger Opportunities and/or Exposure\n    \n  \n  Purpose\n    \n      Focus on the why\n      Call out the impact\n      Share the success with the team\n      Share success with partners and boss\n    \n  \n\n\nPeople also care deeply about coaching and career growth:\n\n\n  Catching people doing things right.\n  110% of capability but clarify doing 110% vs 80%\n\n\nAnd I spend a lot of time on generating Moments:\n\nOf all the places we spend our time, work is the one that dominates. However, when we look back on our lives, work is often the thing we remember least. Why? Because we remember our lives through peak moments, and there are few of those, especially positive peak moments, at work. Luckily, peak moments can be created and leaders can be taught how to create them. This post explores opportunities and techniques to create these moments.\n\nSome moments like:\n\n\n  Constant celebrating people doing stuff fun\n  Hack-a-thons\n  Playing cards for appreciation\n  Managers making breakfast\n\n\nHow do you give challenging feedback?\n\nWhy is feedback challenging?\n\n\n  It’s a surprise\n  Folks don’t want to hear it\n  Folks don’t think you have their best interests in mind.\n\n\nDeep diving on what makes conversations hard:\n\n\n  Surprise - see around corners, and bring up anything I see ASAP, and foreshadow. Meet frequently, know what people care about.\n  Attack the messenger - High Trust, Know how and when the person likes to hear stuff. Address what they care about.\n  Don’t want to hear it - Self Aware, Think I have their best interest in mind, Put it in terms they want to hear it.\n  Over dramatize - Anticipate what they’ll care about, pre-address.\n\n\nTypes of tough conversations to flesh out:\n\nPerformance, Charter, Re-org, Team mates leaving, Lay Offs.\n\nWhat’s the point of 1:1s?\n\n\n\n1:1’s are the highest ROI activity and the most expensive. They take 100% of both parties attention in a non-scalable manner. At the same time:\n\n\n  If on average 1:1s gives an 0.25% performance improvement, you get a 12% per performance improvement per year, which equates to 300% in ten years.\n  If there isn’t a forum for discussion, many concerns and bottlenecks will be ignored. Those ignored concerns and bottlenecks are lost opportunities in the best case, inefficiency in the median case, and catastrophe in the worst case. (Using an exception handler analogy, the default exception handler is ignore all, and we know how that works out)\n\n\nMy goal for 1:1’s is to:\n\n\n  Build trust and relationships\n  Coach and be coached strategically and tactically\n  Teach and Learn context\n  Have confidential, awkward discussions (part 2)\n  Allow others to express emotions and let off steam in a safe space\n\n\n(Again with that programming analogy, the 1:1 is a debugger attached catch all exception handler. This allow all concerns to be discussed, understood, rethrown, reprogrammed or ignored. I know - the analogy needs work, help me make it better)\n\nWhat do you do in 1:1s?\n\nMy favorite opening is “What’s on your mind”, then I focus on asking (coaching questions) and end with “what can I do immediately to help you?”\n\nI push for awkward conversations. When my peeps have nothing to talk about I ask some of my favorite prompts\nA few things I don’t do:\n\n\n  No public status reports I discourage using 1:1 to share the public news and weather “status report” - we can read that offline ourselves. A valuable use of time is the “inner and private stories” on the status - What is hard, what is most fun, where do you want to improve?\n  No deep dives when I could just do offline homework I think 1:1 off the cuff deep dives are an anti-pattern, an indication that there’s a missing artifact that’d be valuable to a wider audience. I’ll often say can I get a TL;DR and “How would I go about learning X,Y or Z”? If the answer is “ask me”, I’ll often recommend a low quality on paper brain dump we can review together. This lets us efficiently have an async discussion which captures Q&A in a durable form. Once we’ve done the easy async discussion in the doc, we review the comments together with more complex questions, and more private context, and more discussion.\n\n\n\n\nI have less frequent, but extremely important 1:1 types like:\n\n\n  Career discussions A discussion around what we should be focused on for the next 6-18 months.\n  Promo preparation meetings - Help ensure we’re on the same page about what needs to happen for career trajectory and promo.\n  Performance Review Feedback\n  Leadership card evaluation exercise (so good, needs its own post)\n\n\nOther thoughts:\n\n\n  I aspire to be accessible - I encourage folks to come to me any time (but most don’t).\n  I “manage by walking around”, just seeing what people are up to and working on.\n  I group my 1:1’s on the same day (or over 2 days) because 1:1 is a special frame of mind, and it’s hard to stay in that zone.\n  I wish I used a 1:1 document, as that seems to be a best practice for most domains.\n  The current norm is 30 minute 1:1’s but I enjoyed the old days when an hour was the norm. I often wonder if we’ve sacrificed effectiveness for efficiency in the 30 minute 1:1 culture.\n\n\nHow do you handle communication problems?\n\nHigh order bits:\n\n\n  Success is not “communication style”, but ability to influence. Influence comes in many forms and mediums.\n  Some things labelled communication problems, but they are much more serious and need to be handled differently. E.g. Lack of clarity of though/intellectual horse power and bieng a jerk.\n  Focus on strengths is 3x as effective as shoring up weaknesses. Leverage strengths and partner with others to maximize influence.\n\n\nThere are different types of communication problems each needing a different strategy:\n\n\n  Verbal diarrhea\n  Dominates Conversations\n  Abrasive communication style\n  Not listening to others\n  Unclearn writing (too verbose, not enough context)\n  Verbal/ESL/Not comfortable with in-person verbal communications\n    \n      Pre-write thoughts\n      Toast masters\n      Use pictures\n      Say not great on my feet, follow up with a document\n    \n  \n  Uncomfortable in group settings\n\n\nHow do you handle promotion preparation (and fever)?\n\n\n  \n    Surprises are BAD:\n\n    \n      Haven’t set clear expectations.\n      Requires mini RCA\n    \n  \n  \n    Goal:\n\n    \n      Engineer and Manager shared understanding of promo gaps and plan.\n      Engineer feels they came to conclusion himself\n      Engineer aspires to get to that level, and feels on track\n      Engineer gets new opportunities/support required.\n      Engineer doesn’t want to be over leveled\n    \n  \n  \n    How: Start w assume engineer right - lets look at the criteria together.\n\n    \n      Skim now and deep dive in next 1:1\n      Ask for self evaluation\n      Review and get on same page, sometimes manager thinks below and above what engineer does.\n      Go over with examples together\n      Ask “How would you describe your behavior vs someone else’s”\n      Ask “What gaps do you see”\n    \n  \n  \n    How: Create a shared plan create plan to close the gaps\n    \n      Projects that stretch in those areas\n      Mentors that can help close the gap on those areas\n      Training/etc\n    \n  \n\n\nPromotion fever is my word for engineers that are completely focused on promotions above all else. In general they fall into a few categories: 1) Not Ready, 2) Just hired, and believe under levelled 3) Ready, but didn’t get promo due to bad luck. Regardless, we go through the promotion preparation process.\n\nHow do you identify and grow potential managers?\n\nEngineers that are interested in reading this post make good manager candidates. The path usually start with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many as people issues as people are comfortable with them tracking.\n\nHow did you grow top talent?\n\nPerformance Reveiws: Calibrations PSC, OLR, Connections\n\nPerformance reviews exist at most companies, and for good reason they:\n\n\n  Ensure performance is evaluated consistently.\n  Provide forced feedback.\n  Distribute compensation in accordance to impact.\n  Validate growth plans and find opportunities across the organization.\n  Assess bottom performers and ensure action is taken.\n\n\nBest practices for performance reviews:\n\n\n  \n    Before Calibrations:\n\n    \n      Continuous seeking feedback for team members, and anonymizing and providing feedback\n      Continuous explanation of how tracking is occurring\n      Doing mid point checkins, and peer manager review for hard situations (e.g. bottom performers and pending promotions)\n      Consistent presentation template - this makes it easy for everyone to assess the presentation of people.\n      Remind engineers you might find new data late, and what you do, that could change the assessment\n    \n  \n  \n    At the start of every calibration session. Reminder that:\n\n    \n      Confidentiality is critical - Amazon says breaking confidentiality is a firing offense, which is great.\n      Reminder of the importance of catching unconscious bias.\n      Point is to calibrate the assessment process so it’s fair.\n      Include senior engineers - this helps the engineers trust the process is fair, and provides critical input.\n    \n  \n  \n    After Calibrations:\n    \n      No surprises to the engineers, they should already be aware of their rating as it’s been provided consistently.\n      Provide as much feedback to engineers after the process, owning the message.\n      Focus on growth plans (see above sections)\n    \n  \n\n\nRecall career is just one part of your life\n\nOften, when folks think of career development, they fixate on their job title and compensation. Those aspects are important, but I encourage folks I support that career is only one aspect of life, and they should look at their life holistically\n\n\n\nCulture\n\nWhat is your ideal culture?\n\nTough question. I need to think through that\n\n\n  \n    Coming to work is fun, team gelled, and ahead of individuals\n\n    \n      Team gelled, and always helping and growing each other\n      People put team ahead of themselves, to support each other.\n      Folks have high trust, so can be vulnerable, knowing others want to grow and suppor them.\n      Hanging out with your friends\n      Work filled with moments\n      Team first, whole greater then the sum of its parts\n      Everyone provides kuddos to others\n    \n  \n  \n    Imagination Executed Sustainably\n\n    \n      Ship as frequently as possible.\n      Test cheaply, early and often.\n      Always paying down technical debt\n      Never be blocked\n      I hate the term “bring solutions not problems”, it encourages people to freeze. Instead -\n        \n          “bring ideas, even terrible ones, with your problems”, caring and lead time to fix is most important\n        \n      \n    \n  \n  \n    Continuous improvement, with very open feedback, and desire to improve.\n    \n      Career Growth\n      Technical Growth\n      Retros, but also action item tracking.\n    \n  \n\n\nHow do you help a team gel\n\n\n  Team lunches\n  Moral Events\n  Help people see each other as 3 dimensional humans - talk about personal stuff.\n  Encourage people to think of the team as an entity, and how to improve the team, not themselves.\n  Encourage people to vocalize their appreciation publicly\n  Encourage people to ask for help, and get help\n  Remind people it’s intimidating to ask for help, and they can take a stand to make it happen.\n  Have the team focus on success of the team, ahead of personal success.\n  Encourage people to improve the team at every opportunity.\n\n\nWhat order would you introduce culture\n\nWhen I joined FB we were full remote, and started with only 1 30 min team meeting every 2 weeks.\nHere’s what I worked with the team to establish\n\n\n  1 x week team meeting w/demos\n  1 x week team meeting\n    \n      replaces 1x week demo and team meeting:\n    \n  \n  2 x week stand up\n  1 x week tech talk/deep dive\n    \n      deep dive sessions, guest speakers, TIL sessions\n    \n  \n  1 x 2 week demos\n  1 x 2 week retro\n  3 x week lunch\n\n\nHow do you make a good culture?\n\n\n  Model myself\n    \n      On All the Pages\n      If team is working I’m working\n      When I make mistakes I apologies\n      If I drop the ball I make it clear.\n      When someone does well I celebrate and call out.\n    \n  \n  Catch people doings things right\n    \n      Coaching stuff\n      Put it front and center\n      Let team take ownership of it.\n      Incite pride and purpose\n    \n  \n  Repeat/Repeat/Repeat\n\n\nHow do you handle Remote Work?\n\nI’m writing this stuff my rough outline\n\nWhat about Work Life Balance\n\nWork Life Balance is so important to me that I wrote a manifesto - the opening paragraph:\n\nI don’t want to die knowing I spent too much time at work and I bet you don’t either. As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders needs to walk the talk, and I’ll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance.\n\nIn the rare event you do want to die knowing you spent too much time at work, try to remember more hours rarely helps. In XKCD format:\n\n\n\nEqually important, when folks consider their career, I remind them there are more dimensions to their life, and they should think about their balance. There are some years and halfs where they want to focus on their career, and others where the focus will be family and health.\n\n\n\nHow you deal with team disagrees with the leadership\n\nStep 1: Believe and deeply understand it. Either I believe in it, or I deeply understand the decision and have disagreed and committed. As part of committing, I’m all in, and will share that.\n\nStep 2: Listen to the team. The team has concerns, hopefully I can predict the, ahead of time and be prepared for the easy ones, then truly listen to new concerns, and address them.\n\nStep 3: Focus on the win/win, and talk through a ripcord.\n\nAgency and Psychological Safety\n\nProcess and Mechanism\n\nTheory of Process\n\nWhy:\n\n\n  Turn input into outputs\n  Reduce variance and setup a pit of success.\n  Scale\n  The human equivalent of great tools (source control, linters, bug management systems)\n  Don’t waste “mental juice” on solved problems - see (checklist manifesto)\n\n\nHow:\n\n\n  How to measure success of the process, what will you inspect, when will you adjust?\n  What other process is this similar to, can we co-coalesce with something else?\n  How will you get buy in from up, out and down?\n    \n      (Bright spot, then land and expand)\n    \n  \n  Who is the owner?\n  Ownership lifetime, per quarter, or forever.\n\n\nThoughts:\n\n\n  The organizational equivalent of habits\n  Culture vs Process\n\n\nThe dark side of process\n\nThe upside of process is that we can do things without thinking. The downside is that we stop paying attention to process cost, small errors, and become resistant to change, which is often positive at a minimum and often required.\n\nThis can be especially true when process is created high in the org chart to solve a specific problem in another part of the org chart, and then applied universally, even where the problem does not exist.\n\nThe antidote - A review of process is essential to ensure it’s still getting the maximum value with minimum cost.\n\nToxic process - Bad process will disenfranchise ownership and stifling passion. It’ll slow down things that can be fast. There is nothing more powerful then a motivated engineer, don’t let process take that away.\n\nOn Change\n\nThere are a few kinds of changes.\n\nOne way door changes should start with -100 points because:\n\n\n  There is only so much change a team can handle\n  Change has unexpected consequences,\n  Before the change, many problems, most of which you don’t know about, have been solved by evolution, and will re-appear after the change.\n  Many solutions, are like a 4 sided rug in a 5 sided room, no matter the solution, you still end up with a problem, the devil you know vs the devil you don’t.\n\n\nTwo way door changes are much safer when performed well:\n\n\n  Start with a pilot\n  Let the larger group adopt it if they feel it has value.\n  Come up with a criteria to roll back the change\n  Setup guard rails to monitor to roll back.\n\n\nThat sounds like good intentions - Factories and Artisans\n\n\n  Process vs Good Intentions\n  Toyota Assembly line vs Artisan\n  The inconsistency from passionate projects\n\n\nNever have a human do what a computer can do.\n\n\n  Use auto style for code review styles\n  Gather data from bug systems instead of having humans do it.\n  Automated tests vs human execution\n  Multiple copies of the same data\n\n\nRich communication - Team meeting\n\nContinuous Learning - Deep Dives, Knowledge Transfer and Guest Speakers\n\nEngineering Excellence - Operational Review and Correction of Errors\n\nThere should always been an on-call, an engineering excellence work stream, and a periodic review meeting and a correction of errors process.\n\n\n  How do we know our customer is having a good day?\n  How do we maximize our velocity\n  How do we keep our developers happy.\n  How do we sleep well at night?\n  How do we get max learning from outages?\n\n\nBy the way, I think a manager should be on all pages and outages.\n\n\n  On all the pages\n  Strong appreciation for boots on the ground reality.\n\n\nAlso need to review all outages\n\n\n  Write up for all outages, Correction Of Errors for major outages -\n  Maximize value of mistakes, don’t make them twice.\n  For all customer impacting event, review w/Customer Impact, root cause understood, and commitment when to address.\n  Observability\n    \n      How do we get a page next time.\n      How do we see what’s going on.\n    \n  \n  Testing systems.\n    \n      Very high leverage active\n    \n  \n\n\nData Driven - Customer and Business Metric Reviews\n\nContinuous Improvement - Retrospectives\n\nQuality and Technical Growth Design+Arch Reviews\n\n\n  Really a preview, not a review.\n  Ensure that tech assets are high quality and require minimal re-work.\n  Ensure team gets cross trained.\n  Catch stuff as early as possible\n  Get developers used to being on the whiteboard\n\n\nPlanning, Roadmaps and Resource Allocation\n\nDefining Success - How does goal setting work\n\nThe goal is to maximize the impact of the team.\n\nSmall companies and insulated teams can do bottom up goal settings, but as companies get larger, it’s hard to have sufficient insight into the company priorities, and hard to align goals cross teams, which lessons the impact.\n\nLarger teams require a top down business strategy intersected with a bottom up execution recommendation.\n\nIdeally Engineering Excellence (EE) is built as part of a feature as it is in part of the feature costs. NOTE: It’s OK to defer some of the engineering tasks till after shipping but it’s not OK to say a project is complete till the Engineering excellence costs are paid.\n\nSystems rot over time, so EE should have a standing budget, usually 10%-20% of team capacity. The team should be empowered to spend this budget as required.\n\nFor major projects, a large EE project is required (like a technology migration). This should be outside the standing 10-20% EE allocation. Such projects should be agreed to by the business and have explicit goals.\n\nTechnical Debt is often a bad thing, but like debt it is a good thing if there is a good chance a project will be abandoned and you won’t need to pay the interest. Examples here are speculative projects which may be rolled back, and bridges to a future technology.\n\nHow do you do planning and come up with roadmaps.\n\n6 step process\n\n\n  Define Tracks\n  Find “boulders” in each track\n  Break boulders into projects, cost and analyze and order by ROI\n  Determine cut lines\n  Resource allocate\n  Execute (It’s 1% inspiration and 99% perception)\n\n\nThe only time when the 5 step process should occur simultaneously across all tracks is when a team is forming, or taking a major pivot. At all other times this series of steps should be occurring continuously and asynchronously.\n\nThe full process is expensive and the team should be shielded from some of it but here’s some engagement that should happen:\n\n\n  Product Manager - Fully engaged in every step.\n  Data Science - Impact analysis and sizing\n  Projects and costing - Senior and Staff engineers, because they have higher accuracy and this ensures their buy in.\n  Interested Parties - The process should be transparent, and anyone wants to, including junior engineers, are welcome to see how the process works. However, given they aren’t required for the process, this shouldn’t come at the expense of their day jobs\n\n\n[TODO Picture]\n\nHow does resource allocation work?\n\nResource allocation is maximizing the intersection in the Venn diagram - “Personal Preference”, “Business Need” and “Probability of Success” for the business, team and individuals.\n\n\n\nThe success metric for a manager is supporting the team so that they know the constraints, and can self organize to maximize the business, team and individual Venn diagram coverage.\n\nThis process gets harder then it sounds based on the state and ambiguity of the tracks, balancing juniors and seniors, career development desires, and future hires and business ambiguity and reorgs.\n\nThere are some more concepts I need to flesh out:\n\nPersonal growth and career development People should strive for projects that stretch them and make them grow. This is always a business priority (to make the team better), and usually a personal preference. There are times when people have other things going on, and don’t want to grow, and that must be honored at a high priority.\n\nOpportunity cost - If a senior developer is doing something a junior developer is doing, then you have turned your senior developer into a junior developer and no-one is doing the work of a senior developer. This is also why teams need a blend of junior, intermediate and senior developers.\n\nRight sizing projects, and support When people are growing, stuff is going to be hard, and it’s important they don’t take on more then they can chew (see ability to succeed”, even when the project is the right size, it’s important the person has the dynamic support and mentorship they need.\n\nKeeping slack in the system Anxiety is the difference between reality and expectations. Slack is the tool that helps us better model reality.\n\nThe road building analogy to software development roles.\n\nImagine we want to build a new road.\n\n\n  Start of time: PM figures out there’s a market for a road, and the needs of the customer, and comes up with a rough idea of where the road needs to be between.\n  Slightly After: EM starts surveying broadly, and discovers can’t go some places because there’s a giant mountain, or somewhere else as other folks have tried digging their, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it’ll be cheaper\n  After: Senior Engineers come in and start figuring out where they’ll build, what’s the safest path, and what’s a realistic schedule\n  After: Intermediate dev’s are assigned a small junk of the road and start building it.\n  After: Junior devs are given very clear tasks, and start doing them\n\n\nHiring\n\nWhat are you looking for when you recruit?\n\nMost companies have their “competencies” they test for. But I abstract it down to:\n\n\n  Smart (Can code, understands, sees critical paths)\n    \n      Teach me something you deeply understand\n      Walk through X, and Y, how do you, explain the trade offs.\n    \n  \n  Get things done (wants to ship, owns it):\n    \n      What matters to you?\n      Tell me something hard you did?\n      Tell me your favorite parts?\n    \n  \n  EQ: (Not an asshole, Continuous Learning, Sees impact off his action, self aware, Team First )\n    \n      Tell me a time you got in a fight\n      Tell me the hardest feedback you received.\n      Tell me the hardest feedback you gave\n    \n  \n\n\nDo they prefer to hire only experienced folks?\n\nI need a pipeline of developers for mentorship, fan out and succession planning.\n\nNeed a Principal per 30 people.\n\nRatio Senior: SDE-II: SDE-I (1,2,2) => ten person team: 2, 4, 4.\n\n\n  Everyone grows by learning and teaching.\n  A crappy job for an SDE Level-X is a growth opportunity for SDE Level-(X-1).\n  SDE-IIIs want to think hard and lead.\n  SDE-IIs do the bulk of the work, and are fully independent.\n  SDE-I bring energy and excitement, but still dependent.\n\n\n(Bad analogy) A team is like a “conveyor belt”, people continually improve and mature and want larger scope, requiring a constant flow of incoming college hires.\n\nAre they more comfortable with generalists or specialists?\n\nGeneralists - 99% of time\n\n\n  Industry changes to much.\n  Mostly about Architecture/Design and SDL and coding, domain and language easy to learn.\n\n\nSpecialist - 1% on very specific teams.\n\n\n  File system\n  Distributed system transaction processing.\n  Firmware engineers\n\n\nWant full stack teams:\n\n\n  FE -> Learn the customer empathy through user interactions\n  BE -> Learn the tech chops of complex system.\n\n\nHow do you think about hiring?\n\nMy priority list:\n\n\n  A full blown site outage where the product is hard down and I’m actively getting it back online.\n  Recruiting\n  Everything else\n\n\nRecruiting is ultimately product sales, where you’re selling the team you support. Sales breaks down into the following:\n\n\n  Meeting the candidate’s needs: Great salespeople don’t sell their product, they understand and solve their customer’s needs.\nStart by understanding what the candidate values and needs. If that’s on your team, fantastic, if not help them find the team that’s right for them.\n  Your solution: The product you’re building, the culture and people on the team, and yourself.\n  The Funnel: Inbound Marketing, Referrals, high touch, post sales support (see next question)\n\n\nHow do you think about the hiring funnel.\n\n\n  Before even thinking of funnels\n    \n      Strive to be a class act and do your best.\n      It’s a small world. People will learn what you value, and how you work\n      Create public artifacts.\n    \n  \n  Top of Funnel\n    \n      Interview events\n      Internal Talks\n      LinkedIn Posts\n      LinkedIn Appreciation\n      LinkedIn Articles\n      Always help recruiting\n      Connect to warm candidates\n      Go grab coffee with them.\n      Mentorship of folks, volunteer for mentorship\n      Intern Talk\n    \n  \n  Mid Funnel\n    \n      Post interview - magic trick, after interview lets make time to chat\n      Push to get interviews done ASAP\n      Push to get results to candidate ASAP\n      Walk out of interview connect on linked in and chat with them.\n    \n  \n  Bottom of the Funnel\n    \n      Focus on the needs of the candidate, then talk about how job can solve their needs.\n      Beer/Coffee/Call\n      Share artifacts, and evidence of my teams operations.\n      Invite them to talk with the team I support.\n      Invite them to have lunch with the team.\n      Help them build and evaluate their dream job, and job switching decision making matrix.\n    \n  \n\n\nWhat about structured vs free form interview loops?\n\n\n  \n    External Structured\n\n    \n      Leadership skills - most important\n      Self aware - a critical part of being a leader\n      Design\n      Coding\n    \n  \n  \n    Internal, Structured but Different\n\n    \n      Review internal code/design/documentation artifacts. Ask candidate for artifacts they’re proud of.\n      Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them doing their day job.\n      Talk about hard situations they’ve had. Listen for the criteria smart/gets shit done/emotionally intelligent\n    \n  \n\n\nWhat are better kinds of interviews?\n\nI’ve heard the tech interview model described as the second worst kind of assessment strategy, it’s only better then everything else we know.\n\nThat might be true, but I’ve also seen some novel ideas for interviews (Indeed uses these), and I’d be interested to try using them:\n\n\n  Do a code review\n  Do a mock interview + debrief\n  Review their public work (like Github)\n\n\nWhat do you do when someone says they are quitting\n\nI always start with “Happy for you, sad for us”.\nMy goal is to find the right role for an employee, not to have them on the team.\nAsk if you want me to talk you out of it, or to reinforce your choice.\nHelp you think through decisions\nTODO: Add story of Neha\nTeams should be like rivers, not lakes. Rivers are fresh and move, lakes are stagnant which is bad\n\n\n\nFiring and Performance Management\n\nFiring Percents\n\nTL;DR: Firing is a good thing. There is a natural percent of people who should be fired, and left to their own discretion many managers will not fire the full set of these people. At a large scale (100’s of employees), and for periods of time (like during times of massive hiring), setting a firing ratio is a good thing. The key though is only enforcing it at a large scale, and having guard rails to make it objectively fair, and giving employees the ability to improve.\n\nAnd now the long version for non-managers\n\nIf you’ve ever worked with a low performer who couldn’t do their job, it’s draining. They drag down the team due to missing commitments, and needing to be bailed out as unexpected work from the team. It’s even a drag on the low performer as doing poorly in your job is a miserable experience, and they’ll feel way better off in a place they are successful.\n\nAll of this is to say firing lower performers is a good thing.\n\nAnd so the question becomes who should be fired? Given career expectations it should be clear when someone is not meeting expectations, and thus who managers should fire and when. It also turns out at large numbers statistics can help.\n\nAt the scale of 100’s of employees there will be low performers unable to do their job. The exact value varies depending on how aggressive companies hire and deal with low performers, but I’d guess 1%-5%.\n\nFor a while, Amazon was getting terrible press, so they got rid of firing ratios. You know what happened? Way less then 1% of people were fired, meaning the manager’s good judgment wasn’t working well enough.\n\nAs a result Amazon re-instated it’s firing ratios.\n\nThe Process\n\nWhat are your thoughts on a PIP?\n\nThree “Players” in this situation:\n\n\n  \n    The struggling employee\n\n    \n      Remember being in the wrong role SUCKS. Employee is going home after long day, and feeling like shit (rinse and repeat)\n      \n        Once in right role - will feel great. Seen lots of times this happens.\n      \n      Let employee ‘self discover’ gaps and judge, but you must set down the truth.\n      Should not be a surprise. Should have already gone through role guidelines and gaps.\n      Clear set of gaps, and expectation for required improvement.\n      Progressively lay out process, so they know where they’re at and what happens next.\n      Help them know it’s the wrong role, but they have lots of strengths (look we hired you), and you’ll be well loved elsewhere.\n      Help them with how to find change, mock interview, job changing guidance\n    \n  \n  The team\n    \n      Weak performer means others on team have to cover both in mentoring, and picking up dropped ball.\n      Sets a bad example for the team\n      Team knows the weak, and dislikes it.\n      Need to mitigate impact of week employee.\n    \n  \n  The manager.\n    \n      Emotionally draining. But you own giving them an opportunity not their success.\n      When they’re in the wrong role, best thing that happen is getting them to a place where they are successful.\n      Can be time and energy intensive, robs the team and good employees of your energy.\n      Ensure criteria for demonstrating employees recover is sufficient. Get pre-agreement on criteria with your organizational leaders.\n      Remember, all employee’s getting into this process will improve because they are being chased. Ensure their improvement isn’t temporary\n    \n  \n\n\nMost companies have a well laid out process, that you follow.\n\nFirst there’s a “zone of concern”, when the manager focuses carefully on the employee, without scaring the employee with the seriousness of the situation:\n\n\n  Set employee up for max success\n  Ensure clear expectations\n– Get mentorship\n  Explain to employee you believe in them.\n\n\nThen there’s an official pre-PIP. Which is the same as above, but really clear with employee.\n\n\n  Document everything, and share with the employee so there is no miscommunication\n  Ensure clear criteria for PIP removal.\n  Ensure org agrees removal criteria is sufficient\n  Meet weekly for formal review.\n\n\nThen there’s a formal PIP. Depends on your company but very similar to above, but with clear legal terminology.\n\nHow do you deal with people performance issues?\n\nHow do you coach employee back to success?\n\n\n  Really depends on the employee\n  Generally:\n    \n      Re-enforce the person is good.\n      Remind person the team is there to help them\n      Clarify expectations\n      Provide a short term lowering of expectations\n      Consider LOA or accommodations as appropriate\n    \n  \n\n\nCharters, Re-orgs and Bootstrapping\n\nReorgs have two dimensions, staffing and charter, both of these need to be addressed.\n\nThere are several types of re-orgs. Here are some of the ones I’ve executed:\n\nThe genesis: When you start from scratch\n\nBuilding a team has two aspects, hiring from 0 to staffed, and building out a new charter and vision.\n\nIn an ideal world, you’d execute the following hiring plan:\n\n\n  Start with a high level view of the business\n  Put in places the senior developers to build out the architecture and process\n  Start working by getting your SDE-IIs and SDE-Is\n\n\nIn the real world, you’ll likely:\n\n\n  Have a vague idea\n  Add people as you find them (hard stop when too many juniors - see below)\n  Pick some easy wins, and get those started, ready to pick up debt to see what we can do.\n\n\nNote: It’s usually easy to hire junior people, and when there’s pressure to start, you’ll be tempted to just keep adding junior folks. However, there’s a world of hurt here. If you’re planning on starting with too many junior folks (or getting pressured to) borrow more experienced folks from other teams. Ideally borrow them full time for a few quarters, but at least borrow them for brainstorming, design, architecture and mentorship.\n\nHopefully, early in your hiring process you’ve been thinking about your charter. Charters and such are hard, here’s the strategy I tackle:\n\n\n  Come up with a north star vision\n  Start your first experiments in tech and market\n  Find the first wins to be able to inspire the team, excite the investors, and really partners.\n  Build out an early roadmap and product.\n  Keep learning and improving as people join.\n\n\nTelling in the team\n\nAssume this will be very hard on the team. It’s critical they hear it from you first. It shows respect, and lets you reduce the largest anxieties. This will be emotional for a lot of people, and the team will be deeply influenced by your emotions. While you should acknowledge the loss, and the potential uncertainty and upcoming bumpiness, you must be positive about the future.\n\nTo ensure everyone hears from you first I recommend the following:\n\nThe days before:\n\n\n  Write an FAQ for the questions you expect.\n  Practice your story the day before with people you trust, review and tune your FAQ\n\n\nThe day of:\n\n\n  Clear your day of all meetings.\n  Schedule team meeting at the end of the day.\n  Make a list of everyone on the team and when you’ll be telling them:\n    \n      Check your timing to make sure you can get everyone done, taking into consideration when people come in.\n      Write out what you think their top concerns will be, to ensure you focus on them\n      After every meeting take notes about their concerns, and good talking points for future meetings.\n    \n  \n  Meet folks ad-hoc first starting first thing in the morning to have enough time.\n  Plan to grab people ad-hoc, and give them as much time as they need. This ensures - You’ll be on time to this high impact meeting. - You’ll not be in a rush, you can give people as much time as they need. - You have time to take notes after the meetings and tune your message, and re-charge your positivity\n  When deciding the order, start with the folks that’ll take it best.\n    \n      This will let you have some “easier sessions” to tune your message\n      This will give you new talking points, and get new questions\n    \n  \n  When talking to people\n    \n      Make sure you have high energy reserves, but keep your energy low and caring, talk slowly like this is the first time you’ve told anyone.\n      Warn people it’s gonna be a big surprise\n      Remind people they matter and that’s why you made sure they heard it from you first.\n      Let them know who you’ve told and who they can talk to.\n      Remind them it’s essential not to talk to anyone else till the team meeting so everyone hears it from you.\n      If they are in shock, and don’t know what to talk about, ask them if they’d like you to tell them about your experience, and common questions others have\n      Tell them they’ll have lots more questions, you’ll talk through them at the team meeting, and they’ll have more questions in the coming days, and that you’ll book time with them over the next few days.\n      Make a note of how they took it, and if you get more talking points\n      Tell the people that are more positive how they can help make it easier on the team, think about when they can jump in during the team meeting.\n      Use silence to let people digest and come up with questions\n    \n  \n  In the team meeting\n    \n      Tell people you’ll recap what you talked about, and give a more complete story\n      Hit all your FAQs, including the hard ones\n      Prompt the people that can add positive ideas (who you already asked) to share the positive parts\n      Be available after the meeting, and offer to talk to anyone\n      Remind people you don’t have all the answers yet but you’ll figure them out together.\n      Give people as much autonomy as possible, tell them they should tell you the best way to wrap up their projects.\n    \n  \n  In the next few days:\n    \n      Be around a lot, offer to talk to anyone anytime.\n      Schedule meetings with everyone in case they have more questions. If they don’t, you can leave early.\n    \n  \n\n\nThe FAQ\n\n\n  How does this impact my review?\n  How long till we stabilize?\n  Why did this happen?\n  Did we do something wrong\n  What choices do we have? Can we follow the re-org\n  What happens to my existing/ongoing project\n  How is their existing work evidence of greatness\n  Is it just gonna happen again in 6 months\n  What are the exciting opportunities, and why are they better then the old ones\n  Why is this re-org designed the way it, why would you have done the re-org this way.\n  Will more people be hired\n  Answer how to motivate them:\n    \n      Autonomy - Let them recommend the transition plan.\n      Mastery - Remind them how good they are and how the team will succeed on the next project\n      Purpose - Remind them of the continuity of purpose and\n      Motivation Deep Dive\n    \n  \n  What am I working on next\n  How long till we have more clarity\n  Why is this a good thing (people, tech, purpose)\n  How long have you known\n  How long till you felt good about it\n  Domain specific questions\n\n\nThe split: When a team outgrows a manager\n\nThe merge or you leaving the team: When a manager leaves\n\nSplitting Horizontally vs Vertically\n\nWhen you have multiple teams, and multiple user scenarios you decide to organize horizontally (each team owns tech solutions, spanning multiple user scenarios), or vertically (each team owns user scenarios, spanning tech solutions).\n\nThis is hard, a few thoughts I’ve gathered:\n\nDeciding if you split horizontally vs vertically is at the highest level asking what you want care more about:\n\n\n  customer metrics vs engineering metrics and efficiency.\n  what’s best for the customer vs what’s best for the platform.\n\n\nDepending on how much tech needs to be build and how much specialization is required you will need horizontal teams. For example, the operating system, the networking stack, the hardware are all horizontals.\n\nTODO: Table of pros and cons\n\nThe flip: When charter changes\n\nThere are two categories of flips: A) Flip to new domain (genesis) or B) Flip to take over another teams space. Genesis is mostly covered above, so here we’ll focus on taking over another teams, or another teams partial charter.\n\nIn general when this happens there are a few common reactions\n\nThe new charter is too small\n\nA common reason for this is the old team that had the charter, likely only planned out for 120% of there engineers. So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there’s only work for 3 people, and be sad.\n\nThe new charter is much simpler then expected\nThe new charter isn’t’ as interesting\n\nIt’s common to oversimplify from a distance. Once the team gets into the details, they’ll either see it’s true, and they’ll find new good stuff to do, or, far more likely they’ll find much more nuance, subtlety and ambiguity in the new space.\n\nPlaybook and antidotes\n\nThis is pretty similar to the whole team getting a new job, and the first 90 days applies:\n\n\n  Early Win: Figure out the situation, and deliver a win.\n  Trust: Relationships with team, and peers, and partners.\n  Knowledge: Know critical parts of business, tech, org.\n\n\nA great way to do this is set the team up to do spikes on the major work items, this will overcome the above concerns, building knowledge and motivating the early wins.\n\nPersonal Motivations\n\nI guess the whole post is personal, as these are my opinions. The questions below can’t be “evaluated” as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I”m being consistent between my actions and motivations.\n\nWhy is management attractive to Igor?\n\nFew things make me prouder then this public feedback on LinkedIn from people who worked with me over several years.\n\nOn my deathbed, the product I will be most proud of is the people who I watched blossom and grow. It’s cliche, but when you love your people they know it, they thrive, and do their best work. It’s not just about the work, I want to make sure people think of their lives as well, because, well, that’s even more important.\n\nI’m also energized by getting shit done. The though of shipping, clearing roadblocks, and never being blocked puts a smile on face.\n\nSpeaking of smiling, nothing brings me back up like reading this kind of feedback that I got when I left a team:\n\nGoodbye Igor! Thank you for helping me reach the next level both physically and mentally. I cherish the moments when we ground through challenges like peak days, when I was in trouble and you said “That’s why I’m here, give it to me I’ll make it happen”, and of course, when you show your magic at happy hour! You are a great boss and great teacher.\n\nLastly, I love understanding what is going on, coming up with win/win solutions, and framing those solutions into a meaningful story that people rally behind and deliver. Some more words that bring me up:\n\nIgor - Your passion, energy, intellect, and sheer force of will – so intense, so inspiring, so powerful we still feel it 3 years after you left the team.\n\n\n\nWhat is Igor’s dream job?\n\nA preview of my dream job:\n\nJobs have many dimensions and I’ll describe my dream job in several dimensions. In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.\n\nWhat is Igor’s career aspiration?\n\nA preview of I want to be the best boss my peeps have ever had\n\nI aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I’ve coached :) ). I hope to have incredibly stiff competition at the top, and I’ll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.\n\nWhy do you think Igor is a good coach?\n\nWhen I explained to someone coaching it the most important aspect of management, they asked why I thought I was a good coach. Took me a while to answer, but here you go:\n\n\n  I believe you can’t be efficient with people, you can only be effective. And it always pays off.\n  People are not ‘resources’, they are 3 dimensional humans, with lives outside work, emotions(like pride), and desires.\n  I’ve read and digested slews of self help books which while often mocked, are filled with great models.\n  I actively study and practice coaching and effective decision making\n\n\nWhy do you prefer being a manager vs an IC.\n\nI think as a manager, the day to day sucks. People problems, managing by spreadsheet, fire fighting, policy violations, etc. But, those days when you look at the team, and see them helping each other, and growing, and when you catch people after a few years and they tell you how impactful you were to their career, and how working on the team was the most fun they ever had - it feels superb.\n\nAs an IC, it’s almost backwards, the day to day is fun. Coding, design, debugging, even fire fighting an outage trying to get the site back up, it’s very satisfying in the moment. But, as an IC, when you look at the software you built, and you realize it’s long deprecated, and replaced by something better, it’s a pretty meh feeling.\n\nSo, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day to day joy of being an engineer.\n\nAt each stage of road productions things go wrong and we learn new stuff. TODO Come up with more examples\n\nWhat if managers memorize these answers for interviews.\n\nGood interviewees prepare as much as possible, thinking through their experiences and philosophies. If this post helps them, that is fantastic. I’m skeptical a bad manager will be able to internalize these answers to the point they can provide rich answers.\n\nGood interviewers (and manager interviews better be good) need to be able to differentiate “theoretical knowledge” from “practical experience”. They do this with situational questions like “Tell me a time when”, and probing questions like “What happened then? What were the unexpected consequences? When did you have the opposite outcome?”.\n\nBusiness Acumen and Strategy\n\nMy note on Strategy, including the strategic position of various companies:\n\nStrategy is creating fit among a company’s activities. The success of a strategy depends on doing many things well and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and improving operational effectiveness, a race to the bottom.\n\nAnalogies to be fleshed out\n\nPiniata\n\nThe need for maturity and alignment\n\nA project is car with a EM, PM and TL\n\nThe need for variable engagement\n\nAn engineering team as the parts of the car\n\nPM - Navigator and long term radar\nEM - Shock absorbers, mid term radar, swerve system\nSpecific team members for engine, seat belts, etc\n\nNew hire perspective is like landing a plane\n\n\n  When joining high altitude can see the city\n  Once landed, all you can see is the air port and a few streets\n\n\nQuestions managers get\n\nWhat do you do all day?\n\nSee the managers schedule section.\n\nWhat’s the best/worst part of your job?\n\nSee what do managers do section.\n\nHow do you get anything done with all of those meetings?\n\nThe majority of the things I do are about amplifying, de-risking and unblocking people. Much of that works best when there’s someone else in the room. Further many of those meetings, especially 1:1s and small groups energize me, giving making me able to tackle the rest of my with gusto.\n\nFor tasks that require me to be heads down and write/think I try to get that done crazy early in the morning when I have zero interruptions and maximum intellectual horse power.\n\nWhat do you think developers do?\n\nHow can devs do to make managers job’s easier?\n\nRealize you and the team are a domain expert\n\nDue to positional authority, managers statements can be overweighted. However, managers by not being immersed in the problem know the least. Remind the team, and yourself, that the manager knows the least about the tech, and their words should not be overweighted.\n\nNo surprises\n\n\n  If stuff goes wrong share it ASAP, the manager would love to do the same\n  Discuss what you want and need, and if you’re getting it\n\n\nGive insight into places manager has no visibility\n\n\n  When people are upset/demoralized/angry, often ICs know before managers as people don’t tell managers. Sharing this with a manager is great so they can take action.\n  Give feedback, especially hard feedback.\n\n\nHow does a dev find out if they’d be good at or enjoy being a manager?\n\nPreview as much as you can:\n\n\n  Intern\n  Mentor\n  Volunteer to do jobs for the manager\n  As a technical lead do some proto managing on behalf of the real Manager.\n\n\nBe a strong IC first\n\nMake sure you’re a senior enough enginer before becoming a manager (AMZN - L6; FB - E6; MSFT - L65). Once you become a manager, your technical skill drops as most of your energy is focused on other tasks. So, if you don’t have a strong enough base, you’ll lose your ability to help assess and provide input on technical tasks.\n\nWhy do managers always say coding is part of their job but we all know it isn’t?\n\n\n  more details in the should managers code section*\n\n\nI don’t think manager’s should code, however (see above). A related question might be:\n\nWhy do we assess manager’s ability to code.\n\n\n  A few enlightened companies do not.\n\n\nWhen should managers code\n\n\n  Link TBD\n\n\nWhat technical skills should a manager have and why\n\nOther resources\n\nGoogle’s Project Oxygen\n\nGoogle is a very data driven, willing to challenge the status quo company. One of their ideas was getting rid of managers all together, and that was a fa failure. Given then conclusion managers were necessary, they formed Project Oxygen, a data driven approach to understanding the attributes of successful managers. Here is there list of management attributes:\n\n\n  Is a good coach\n  Empowers team and does not micromanage\n  Creates an inclusive team environment, showing concern for success and well-being\n  Is productive and results-oriented\n  Is a good communicator - listens and shares information\n  Supports career development and discusses performance\n  Has a clear vision/strategy for the team\n  Has key technical skills to help advise the team\n  Collaborates across the company\n  Is a strong decision maker\n\n\nAmazon’s leadership principles\n\nAll of Amazon’s leadership principles (LPs) are superb, and while they apply to everyone, they probably have a twist for managers (which I’m still figuring out).\n\nIf you’re not from Amazon the LPs can be overwhelming, and are worthy of a separate post. To help remember the principles, I think of 3 buckets: 1) Grow yourself and your team 2) Get it Done 3) Be the owner.\n\nYou’ll also notice the principles are deliberately not ranked, and have tension between them (e.g. Insist on High Standards vs Bias For Action) as they’re all important and require high judgement to balance between. Alright there is definitely a post coming on this topic\n\nGrow yourself and the team:\n\nLearn and Be Curious - Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and act to explore them.\n\nHire and Develop the Best - Leaders raise the performance bar with every hire and promotion. They recognize exceptional talent, and willingly move them throughout the organization. Leaders develop leaders and take seriously their role in coaching others. We work on behalf of our people to invent mechanisms for development like Career Choice.\n\nInsist on the Highest Standards - Leaders have relentlessly high standards - many people may think these standards are unreasonably high. Leaders are continually raising the bar and drive their teams to deliver high quality products, services and processes. Leaders ensure that defects do not get sent down the line and that problems are fixed so they stay fixed.\n\nDive Deep - Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and anecdote differ. No task is beneath them.\n\nEarn Trust - Leaders listen attentively, speak candidly, and treat others respectfully. They are vocally self-critical, even when doing so is awkward or embarrassing. Leaders do not believe their or their team’s body odor smells of perfume. They benchmark themselves and their teams against the best.\n\nHave Backbone; Disagree and Commit - Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.\n\nGet It Done:\n\nDeliver Results - Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion. Despite setbacks, they rise to the occasion and never settle.\n\nInvent and Simplify - Leaders expect and require innovation and invention from their teams and always find ways to simplify. They are externally aware, look for new ideas from everywhere, and are not limited by “not invented here”. As we do new things, we accept that we may be misunderstood for long periods of time.\n\nBias for Action - Speed matters in business. Many decisions and actions are reversible and do not need extensive study. We value calculated risk taking.\n\nFrugality - Accomplish more with less. Constraints breed resourcefulness, self-sufficiency and invention. There are no extra points for growing headcount, budget size or fixed expense.\n\nBe the owner:\n\nOwnership Leaders are owners. They think long term and don’t sacrifice long-term value for short-term results. They act on behalf of the entire company, beyond just their own team. They never say “that’s not my job”.\n\nCustomer Obsession Leaders start with the customer and work backwards. They work vigorously to earn and keep customer trust. Although leaders pay attention to competitors, they obsess over customers.\n\nThink Big - Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently and look around corners for ways to serve customers.\n\nAre Right, A Lot - Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to dis confirm their beliefs.\n\nA few Igorisms\n\n\n  I come across as confident, that’s just a personality flaw. Please don’t confuse my confidence with my conviction, and push back.\n  Don’t worry about “over” influencing me. I’m learning context, and will ref-count and circle back as I get more data.\n  My goal is to do nothing. If I’m doing anything you should do, want to do, or want to learn to do - lets make it happen.\n  I’m super transparent\n  \n    Platforms;\n\n    \n      If you build it they will not come.\n      If its a platform you’ll have lots of opportunities to iterate before you’re done.\n      Built every iteration with a committed partner\n      Launch the first iteration ASAP with minimal flexibility - you’ll learn a tonne\n      Build the second iteration so it’s cheaper to build the 3rd.\n      Build the third by providing flexibility in those must frequently changed dimensions\n      Build the next iteration for a small set of users\n      Rinse Repeat\n    \n  \n  We are a team - we want to help each other.\n    \n      If someone needed help would you give it to them? So do the same\n    \n  \n\n\nRules of software as an IC\n\n\n  No duplicate code - Fix it once!\n  Trust tests not experts - Bring data not someones faulty memory\n  Log bug then whine - Whining is fine, but bring it forward\n\n\nMy Kryptonite\n\n\n  Bad Memory/Not seeing details - I need your help sticking to details, catching stuff\n  Organization - I have the least process ever (except for Facebook)\n  UX - I’m inexperienced at UI - I need to get better, but a place I need to lean on others\n  Dramatizing - It’s emotionally engaging and helps knock us into high trust mode, but it can cause people to be defensive\n\n\nLaws to remember\n\n\n  Goodhart’s Law - A metric can be used to measure reality, or to flog people, but not both (humans optimize to be rewarded). See story about pythons in India.\n  Conway’s Law - Software will ship to match an org chart (humans optimize for communication cost). See K-Pass compiler.\n  Parkinson’s Law - Work (or money) will expand to fill the time available.\n  Peter Principle - People will rise till they become incompetent\n  Parkinson’s Law of Triviality - (Bike Shedding) Members of an organization give disproportionate weight to trivial issues. A nuclear power plant funding committee focus most time on how to paint the bike shed since it’s easy, and they feel they are providing value\n  Yak Shaving - Not a law but a great term for when you go down the rabbit hole going several steps away from the task at hand (a common cause for the delay in Parkinson’s Law)\n\n\nGreat Videos\n\n\n  On Coaching\n  On making people feeling safe\n\n\nGreat Posts and Blogs\n\n\n  Manager’s Playbook - Cool awesome list for managers\n  How managers get stuck\n  The managers path - This book feels like it lacks “complete” mental models, but it’s the only book of it’s kind - so it’s the best there is!\n  Elided Branches - Blog on engineering management.\n  I.M Wright’s Hard Code - Engineering Management from Microsoft, covers most topics.\n  Give away your legos Dealing with org’s scaling\n  Sue’s What does a manager Do, anyways\n  Sue’s Manager vs IC\n\n\nGreat books\n\n\n  Technical Recruiting And Hiring\n  Igor’s general reading list\n  Lots more coming\n\n",
       "file_path": "_site/manager-book.html",
       "outgoing_links": [
         "/90days",
         "/td/machine-learning",
         "/td/cloud-first-applications",
-        "/td",
         "/coaching",
         "/coaching",
         "/software-leadership-roles",
@@ -1474,7 +1483,7 @@
         "/software-leadership-roles"
       ],
       "redirect_url": "",
-      "doc_size": 120000
+      "doc_size": 202000
     },
     "/mental-pain": {
       "py/object": "__main__.Page",
@@ -1515,7 +1524,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 9000
     },
     "/micro-economics": {
       "py/object": "__main__.Page",
@@ -1542,7 +1551,7 @@
       ],
       "incoming_links": ["/timeoff"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 11000
     },
     "/mind-monsters": {
       "py/object": "__main__.Page",
@@ -1580,7 +1589,7 @@
       "outgoing_links": ["/moments-at-work"],
       "incoming_links": ["/happy", "/moments-at-work"],
       "redirect_url": "",
-      "doc_size": 21000
+      "doc_size": 20000
     },
     "/moments-at-work": {
       "py/object": "__main__.Page",
@@ -1622,7 +1631,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 14000
     },
     "/nlp": {
       "py/object": "__main__.Page",
@@ -1672,7 +1681,7 @@
       ],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 22000
+      "doc_size": 21000
     },
     "/pandas": {
       "py/object": "__main__.Page",
@@ -1694,7 +1703,7 @@
       "outgoing_links": ["/amazon", "/money", "/time-off"],
       "incoming_links": ["/manager-book", "/money", "/operating-manual"],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 14000
     },
     "/physical-health": {
       "py/object": "__main__.Page",
@@ -1737,7 +1746,7 @@
         "/psychic-weight"
       ],
       "redirect_url": "",
-      "doc_size": 18000
+      "doc_size": 17000
     },
     "/prompts": {
       "py/object": "__main__.Page",
@@ -1777,7 +1786,7 @@
       ],
       "incoming_links": ["/depression", "/gtd", "/idle"],
       "redirect_url": "",
-      "doc_size": 17000
+      "doc_size": 16000
     },
     "/quip": {
       "py/object": "__main__.Page",
@@ -1788,7 +1797,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 9000
     },
     "/reflect-tool": {
       "py/object": "__main__.Page",
@@ -1799,7 +1808,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 9000
+      "doc_size": 8000
     },
     "/remote-work": {
       "py/object": "__main__.Page",
@@ -1818,10 +1827,10 @@
       "title": "SAVE THE SOUP",
       "description": "“Are you insane?” I half shouted at Biff, my college roommate. We had just finished our Operating Systems midterm and were lounging at “The Bomber,” our college pub. Biff suggested we both do our last internship at Microsoft.\n\n",
       "file_path": "_site/save-the-soup.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/tags#Software%20as%20a%20Story"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 12000
     },
     "/save-the-souse": {
       "py/object": "__main__.Page",
@@ -1829,7 +1838,7 @@
       "title": "SAVE THE SOUSE",
       "description": "Internships are best approached as a long-term field trip. You should plan to be exposed to new things, spend some time out of your comfort zone, and, by all means – use the buddy system.\n\n",
       "file_path": "_site/save-the-souse.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/tags#Software%20as%20a%20Story"],
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 13000
@@ -1838,12 +1847,12 @@
       "py/object": "__main__.Page",
       "url": "/sell",
       "title": "TO SELL IS HUMAN",
-      "description": "Selling matters - it’s pitching, convincing, negotiating, hiring. Selling has a bad rap, because the seller often puts their needs ahead of the buyer - a win/lose paradigm. You should make selling win/win or no deal by needing to answer yes to these questions. 1/ If the buyer agrees, will their life improve? 2/ When the deal is done, will the world be a better place than when you began?\n\n",
+      "description": "Selling matters - it’s pitching, convincing, negotiating, hiring. Selling has a bad rap, because the seller often puts their needs ahead of the buyer - a win/lose paradigm. You should make selling win/win or no deal by needing to answer yes to these questions. 1/ If the buyer agrees, will their life improve? 2/ When the deal is done, will the world be a better place than when you began?\n\nTo sell is human is a treatise on the modern form of sales. Part I describes why selling is important, and how it has evolved. Part II focuses on the how to be a salesman and Part III focuses on what you need to do to do sales.\n\n\n  \n    \n    \n      \n      \n    \n    \n  \n\n\nBuyer beware to seller beware\n\n\n  \n    \n      Axis\n      Pre Internet (Limited)\n      Modern World\n      You should\n    \n  \n  \n    \n      Product Information\n      Only Salesman to know what going on\n      Infinite knowledge on internet\n      Help customers evaluate the information overload\n    \n    \n      Reputation Visibility\n      Only salesman to know what going on\n      Infinite knowledge on internet\n      Build reputation on social media.\n    \n    \n      Purchase Access\n      Only what’s in the Physical Stores\n      Internet purchases\n      Direct to easiest purchase\n    \n    \n      Post Sales Support\n      TBD\n      TBD\n      TBD\n    \n    \n      Product Catalog\n      Only what store/company has.\n      Provide access to broader product range\n      Optimize for your reputation, carry to the best products.\n    \n  \n\n\nAttunement (Seek First To Understand)\n\nLock into what other person is transmitting, even when the signals aren’t clear or obvious.\n\n\n  Increase your power by reducing it.\n    \n      More power we have, less likely to listen.\n      Try Snap 5 times, then draw E on forehead trick.\n      Power results in anchoring on own point of view, not that of others\n    \n  \n  Use your head as much as your heart\n    \n      Cognitive understanding of need.\n      Cousin: Empathy - emotional understanding.\n    \n  \n  Mimic Strategically\n    \n      Build connection\n      Mirroring\n      Touching\n      Repeating words/concepts\n    \n  \n\n\nBuoyancy\n\nTBD\n\nClarity\n\nTBD\n\nPitch\n\nAs you prepare your pitch, whichever variety you choose, clarify your purpose and strategy by making sure you can answer these three questions: After someone hears your pitch . . .\n\n\n  What do you want them to know?\n  What do you want them to feel?\n  What do you want them to do?\n\n\n\n  \n    \n      Pitch Tip\n      How\n    \n  \n  \n    \n      One Word\n      Write a fifty-word pitch. Reduce it to twenty-five words. Then to six words. One of those remaining half-dozen is almost certainly your one-word pitch\n    \n    \n      The Question\n      Use this if your arguments are strong. If they’re weak, make a statement. Or better yet, find some new arguments\n    \n    \n      Rhyming\n      Don’t rack your brain for rhymes. Go online and find a rhyming dictionary. I’m partial to RhymeZone\n    \n    \n      Subject Line\n      Review the subject lines of the last twenty e-mail messages you’ve sent. Note how many of them appeal to either utility or curiosity. If that number is less than ten, rewrite each one that fails the test.\n    \n    \n      Twitter\n      Even though Twitter allows 140 characters, limit your pitch to 120 characters so that others can pass it on. Remember: The best pitches are short, sweet, and easy to retweet\n    \n    \n      Pixar\n      Read all twenty-two of former Pixar story artist Emma Coats’s story rules Your try: Once upon a time [..] . Every day, [..]. One day [..] . Because of that [..] . Because of that [..]. Until finally [..].\n    \n  \n\n\nImprovise\n\nImprov teaches valuable skills for sales, and maps to many topics on this blog\n\n\n  Hear Offers … Seek First to Understand\n  Yes And … Getting to Yes\n  Make your partner look good … Think win/win\n\n\nServe\n\nService is about improving others lives, and in the process improving the world.\n\n\n  Make it personal\n    \n      Radiologists seeing a picture of a person, do a better job\n      See patients as people instead of bundles of symptoms.\n      Professionalism does not mean cold and distant, it means human connection.\n      Put your personal brand behind what you’re doing (put your phone number on your product)\n    \n  \n  Make it purposeful\n    \n      People aren’t just selfish, they feel great when they help others.\n      Washing helps stops patients from getting sick, much more effective then washing hands kills germs.\n    \n  \n  Upserve don’t upsell.\n    \n      How can I provide even more value in this experience?\n      Always imagine the other guy is doing you a favor.\n    \n  \n  Emotionally Intelligent signs:\n    \n      Don’t worry - the line moves quickly. (give empathy)\n      Children play here - pick up after your dog (provide purpose)\n    \n  \n\n",
       "file_path": "_site/sell.html",
       "outgoing_links": ["/7h-c4", "/7h-c5", "/7h-c5", "/gty", "/7h-c4"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 20000
     },
     "/shame": {
       "py/object": "__main__.Page",
@@ -1861,7 +1870,7 @@
         "/psychic-weight"
       ],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 11000
     },
     "/sharpen-the-saw": {
       "py/object": "__main__.Page",
@@ -1915,7 +1924,7 @@
       "title": "SLEEPING BAG SACRIFICES",
       "description": "I started in Windows Azure in 2007. Back then, the name “Azure” wasn’t invented, and Azure was still called “Reddog.” I started on the OS team, drawn in by my dream of changing the world, and getting to be Dave Cutler’s lackey. I didn’t get to work with Cutler, but I still may change the world - now that I’ve learned it’s OK to wake sleeping giants. My giant was named Jay.\n\n",
       "file_path": "_site/sleeping-bag-sacrifies.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/tags#Software%20as%20a%20Story"],
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 12000
@@ -1938,7 +1947,7 @@
       "description": "Zach built Steve’s Night Jungle and Bar in twee, here’s our port to python!\n\n",
       "file_path": "_site/snjb.html",
       "outgoing_links": [],
-      "incoming_links": [],
+      "incoming_links": ["/d/time-off-11-2021"],
       "redirect_url": "",
       "doc_size": 10000
     },
@@ -1962,7 +1971,7 @@
       "outgoing_links": [],
       "incoming_links": ["/manager-book"],
       "redirect_url": "",
-      "doc_size": 22000
+      "doc_size": 21000
     },
     "/strength-finder": {
       "py/object": "__main__.Page",
@@ -1973,7 +1982,7 @@
       "outgoing_links": ["/static/StrengthFinderIgor.pdf"],
       "incoming_links": ["/operating-manual"],
       "redirect_url": "",
-      "doc_size": 17000
+      "doc_size": 16000
     },
     "/sustainable-work": {
       "py/object": "__main__.Page",
@@ -1990,12 +1999,12 @@
       "py/object": "__main__.Page",
       "url": "/switch",
       "title": "SWITCH",
-      "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
+      "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n\n  \n    \n      Attribute\n      Chapters\n    \n  \n  \n    \n      Direct the Rider\n      l1\n    \n    \n      Motivate the Elephant\n      l2\n    \n    \n      Shape the Path\n      l3\n    \n  \n\n\n\n  l1\n  Find the bright spots\n  Script the critical moves\n  Point to the destination\n\n\n\n\n\n  l2\n  Find the feeling\n  Shrink the change\n  Grow your people\n\n\n\n\n\n  l3\n  Tweak the environment\n  Build Habits\n  Rally the herd\n  Keet the switch going\n\n\n\n\n\n\n\n\n\n  About Change\n  Direct the rider\n    \n      2. Find the Bright Spots\n      3. Script the Critical Moves\n      4. Point to the Destination\n    \n  \n  Motivate the elephant\n    \n      5. Find the Feeling\n      6. Shrink the Change\n      7. Grow Your People\n    \n  \n  Shape the path\n    \n      8. Tweak the Environment\n      9. Build Habits\n      10. Rally the Herd\n      11. Keep the Switch Going\n    \n  \n  Other models\n    \n      Behavior Change - Prompt, Ability, Motivation\n      Influencer 2.0\n    \n  \n\n\n\n\n\nAbout Change\n\nDirect the rider\n\n2. Find the Bright Spots\n\n3. Script the Critical Moves\n\n4. Point to the Destination\n\nMotivate the elephant\n\n5. Find the Feeling\n\n6. Shrink the Change\n\n7. Grow Your People\n\nShape the path\n\n8. Tweak the Environment\n\n9. Build Habits\n\n10. Rally the Herd\n\n11. Keep the Switch Going\n\nOther models\n\nBehavior Change - Prompt, Ability, Motivation\n\nSee Habits\n\nBehavior is prompt + ability + motivation.\n\nFocus on ability and prompt, motivation is fickle. Use motivation waves to do the large 1 time investments.\n\nInfluencer 2.0\n\nA different model to switch, also covering change management. Esssentially you need to influence through the following dimensions\n\n\n  \n    \n      Dimensions\n      Personal\n      Social\n    \n  \n  \n    \n      Ability\n       \n       \n    \n    \n      Motivation\n       \n       \n    \n  \n\n\n\n  \n    \n    \n      \n      \n    \n    \n    \n      \n      \n    \n    \n    \n      \n      \n    \n    \n  \n\n\n",
       "file_path": "_site/switch.html",
       "outgoing_links": ["/habits", "/habits"],
       "incoming_links": ["/first-things-first"],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 17000
     },
     "/synergize": {
       "py/object": "__main__.Page",
@@ -2015,9 +2024,16 @@
       "description": "Igor's Blog",
       "file_path": "_site/tags.html",
       "outgoing_links": [],
-      "incoming_links": [],
+      "incoming_links": [
+        "/Canadian-Spotting",
+        "/The-Genesis-Node",
+        "/eulogy",
+        "/save-the-soup",
+        "/save-the-souse",
+        "/sleeping-bag-sacrifies"
+      ],
       "redirect_url": "",
-      "doc_size": 20000
+      "doc_size": 19000
     },
     "/td/advertising": {
       "py/object": "__main__.Page",
@@ -2050,7 +2066,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/td/better-security-design": {
       "py/object": "__main__.Page",
@@ -2094,7 +2110,7 @@
       "outgoing_links": ["/td/cloud-first-applications"],
       "incoming_links": ["/amazon"],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 12000
     },
     "/td/dump_imessage_history": {
       "py/object": "__main__.Page",
@@ -2116,7 +2132,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 17000
+      "doc_size": 16000
     },
     "/td/hack-web": {
       "py/object": "__main__.Page",
@@ -2149,7 +2165,7 @@
       "outgoing_links": ["/td/irl#work-bag"],
       "incoming_links": ["/writing"],
       "redirect_url": "",
-      "doc_size": 21000
+      "doc_size": 20000
     },
     "/td/linqpad_from_redshift": {
       "py/object": "__main__.Page",
@@ -2160,7 +2176,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 12000
     },
     "/td/minecraft": {
       "py/object": "__main__.Page",
@@ -2171,7 +2187,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 13000
     },
     "/td/mosh": {
       "py/object": "__main__.Page",
@@ -2182,7 +2198,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/td/private_web_site": {
       "py/object": "__main__.Page",
@@ -2193,7 +2209,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 9000
     },
     "/td/ring-video-download": {
       "py/object": "__main__.Page",
@@ -2204,7 +2220,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/td/sqlalchemy-redshift": {
       "py/object": "__main__.Page",
@@ -2253,7 +2269,7 @@
       ],
       "incoming_links": ["/timeoff"],
       "redirect_url": "",
-      "doc_size": 27000
+      "doc_size": 26000
     },
     "/td/usbtech": {
       "py/object": "__main__.Page",
@@ -2286,7 +2302,7 @@
       "outgoing_links": [],
       "incoming_links": ["/writing"],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/td/vlc_player": {
       "py/object": "__main__.Page",
@@ -2297,7 +2313,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 9000
     },
     "/td/windbg": {
       "py/object": "__main__.Page",
@@ -2308,7 +2324,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 9000
     },
     "/tech-health-toys": {
       "py/object": "__main__.Page",
@@ -2330,7 +2346,7 @@
       "title": "MICROSOFT AZURE - THE GENESIS NODE",
       "description": "Igor, you know the odds of shipping Azure on time are slim to none.”\n\n",
       "file_path": "_site/The-Genesis-Node.html",
-      "outgoing_links": [],
+      "outgoing_links": ["/tags#Software%20as%20a%20Story"],
       "incoming_links": ["/eulogy"],
       "redirect_url": "",
       "doc_size": 13000
@@ -2344,7 +2360,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 11000
     },
     "/timeoff": {
       "py/object": "__main__.Page",
@@ -2359,22 +2375,28 @@
         "/eulogy",
         "/frog",
         "/td/time-off-3-2020",
-        "/d/time-off-12-2020"
+        "/d/time-off-12-2020",
+        "/d/time-off-11-2021"
       ],
-      "incoming_links": ["/d/time-off-12-2020", "/mind-at-work", "/parkinson"],
+      "incoming_links": [
+        "/d/time-off-11-2021",
+        "/d/time-off-12-2020",
+        "/mind-at-work",
+        "/parkinson"
+      ],
       "redirect_url": "",
-      "doc_size": 17000
+      "doc_size": 16000
     },
     "/todo_enjoy": {
       "py/object": "__main__.Page",
       "url": "/todo_enjoy",
       "title": "THINGS I ENJOY",
-      "description": "It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:\n\n",
+      "description": "It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:\n\n\n    Click in the circle for a suggestion\n\n\n\n\n\n\n\nGeneral\n\nGo to the grocery store\n\n\n  Take kids to trader Joe’s\n  Go to the butcher Double D meats\n  Go to the Russian store (closed on Sunday)\n\n\nTake a selfie\n\n\n  Take a selfie with Friends\n  Take a selfie with Goofie Hats\n  Take a selife with a funny face\n  Make a goofie TikTok\n\n\nTech\n\n\n  Computer Vision\n  Typescript\n  End to End Testing\n  Natural Language Processing\n  Security\n  VIM scripting\n\n\nHealth\n\nPhysical\n\n\n  Do my back stretches\n  Go for a walk\n  Do my wrist exercises.\n\n\nEmotional\n\n\n  Meditate\n  Stream of conciousness journal\n\n\nCognative\n\n\n  Grab my e-ink tablet and write stuff out\n  Wake up early and work on my eulogy\n  Take a writing prompt and take it.\n  Read a random blog post\n\n\nTake Public Transit\n\n\n  Take the subway anywhere\n  Take a one day train trip to Portland\n  Take a one day train trip to Vancouver\n\n\nEntertaining\n\nBiking\n\n\n  Ride a bubble bike!\n  Ride to get a cookie!\n  Ride my folding bike!\n\n\nJuggling\n\n\n  Clubs\n  Passing Clubs\n  Glow in the dark balls\n  4 balls\n  small food stuff like eggs and mandarins\n\n\nCard Magic\n\n\n  Card to ceiling\n  Cards across\n  Ambitious card\n  Australian cards\n  Culls\n  Anniversary cards\n\n\nCoin Magic\n\n\n  Chink A Chink\n  Spellbound\n\n\nBand Magic\n\n\n  TRU\n  Gift\n  Red or Green\n  Up Nose\n\n\nColorful Clothing\n\n\n  Wear my rainbow suit\n  Wear my goat boy legs and horns\n  Put on a wig\n  Wear toe shoes\n  Wear Sequin Jacket\n  Wear a Halloween costumes - Lama\n  Wear a Halloween costumes - Bird\n  Wear a Halloween costumes - Fish\n  Wear a Halloween costumes - Penguin\n  Wear a Halloween costumes - Bee\n\n\nFamily\n\nAmelia\n\n\n  Kids dates\n  Bike anywhere\n  Take Amelia Swimming\n  Take Amelia Roller Skating\n  Take Amelia To The Library\n  Make a TikTok with Amelia\n\n\nZach\n\n\n  Take Zach Swimming\n  Take Zach out for Dinner\n  Working on Zach’s Web Site\n  Co-write an essay with Zach\n  Watch a movie with Zach\n  Watch the Simpsons with Zach\n\n\nTori\n\n\n  Tori is private, respect her privacy, and appreciate her.\n\n\n7 Habits\n\nMaybe these should move to their own circle\n\nSharpen the saw\n\n\n  Did you do your habits today?\n\n\nBegin with the end in mind\n\n\n  Re-read your eulogy\n  What does success look like\n\n\nFirst things First\n\n\n  Stay in quadrant 2\n\n\nSharpen the Saw\n\n\n  Is technology helping me, or is it hurting me?\n\n\nBe Proactive\n\n\n  Pause between stimuls and response\n  Who has helped me be grow?\n  Stop using reactive language\n  Use empowering lanuage (I choose, I will)\n  Is this in my circle of incluence, or circle of concern?\n\n\nSynergize\n\n\n  How can I compliment someone around me?\n\n\nThink Win/Win\n\n\n  If it’s not WIN/WIN, it’s LOSE/LOSE.\n\n\nFirst Understand\n\n\n  Imagine an eye doctor tried to make you use their glasses\n\n",
       "file_path": "_site/todo_enjoy.html",
       "outgoing_links": ["/eulogy"],
       "incoming_links": ["/operating-manual"],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 16000
     },
     "/tools": {
       "py/object": "__main__.Page",
@@ -2382,7 +2404,7 @@
       "title": "IGOR'S TECH, TRICKS, AND TOOLS",
       "description": "A collection of tips, tricks and pointers of the various tools i use\n\n",
       "file_path": "_site/tools.html",
-      "outgoing_links": ["/td", "/nlp"],
+      "outgoing_links": ["/nlp"],
       "incoming_links": [],
       "redirect_url": "",
       "doc_size": 39000
@@ -2418,7 +2440,7 @@
       "outgoing_links": [],
       "incoming_links": ["/writing"],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 13000
     },
     "/voices": {
       "py/object": "__main__.Page",
@@ -2446,7 +2468,7 @@
       "outgoing_links": [],
       "incoming_links": ["/bike"],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 14000
     },
     "/welcome-to-holland": {
       "py/object": "__main__.Page",
@@ -2457,7 +2479,7 @@
       "outgoing_links": [],
       "incoming_links": ["/getting-to-yes-with-yourself"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 11000
     },
     "/what-i-wish-knew-at-22": {
       "py/object": "__main__.Page",
@@ -2468,7 +2490,7 @@
       "outgoing_links": [],
       "incoming_links": ["/chapters", "/manager-book"],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/what-makes-a-leader": {
       "py/object": "__main__.Page",
@@ -2490,7 +2512,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/win-win": {
       "py/object": "__main__.Page",
