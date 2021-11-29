@@ -1,1 +1,0 @@
-$(npm bin)/cypress run
