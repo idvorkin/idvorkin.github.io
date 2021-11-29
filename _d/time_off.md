@@ -100,6 +100,7 @@ Even though getting to do what you love is awesome, you still want to love your 
 
 - [April 2020 - Time between leaving Amazon and Joining Facebook](/td/time-off-3-2020)
 - [Xmas 2020 - End of year time off with Corona Virus](/d/time-off-12-2020)
+- [Turkey Day 2021 - A spontanious, super tech heavy marathon](/d/time-off-11-2021)
 
 ## Other Resources
 
