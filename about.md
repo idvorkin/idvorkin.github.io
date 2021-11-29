@@ -9,7 +9,7 @@ My blog! It's the place I sharpen my thinking, play with technology, and have a 
 
 To get good at hard this you need LOTS of practice and LOTS of feedback, and sadly for you, during that time the stuff you do will suck. Ira Glass, the host of This American Life, eloquently explains it elegantly.
 
-<div class="embed-responsive embed-responsive-16by9">
+<div class="ratio ratio-16x9">
   <iframe
     class="embed-responsive-item"
     src="https://player.vimeo.com/video/176325518?color=1fc9a2&portrait=0"

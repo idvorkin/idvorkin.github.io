@@ -87,9 +87,11 @@ Courage is strength in the face of knowledge of what is to be feared or hoped. W
 - Age is range between previous and current e.g. 24 implies 15-24
 - You can download the excel yourself, and play with it as you wish.
 
+<div class="ratio ratio-16x9">
 <iframe class="embed-responsive" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSAhgOtBkSFTNbzsiGpmohCFpTa1Jm_TfXVHsDp84FnRX33pSi8ycwI9YNPoxSuasV7p2w33a_LIPEU/pubhtml?widget=true&amp;headers=false"
 style="height:400px"
 ></iframe>
+</div>
 
 Get the raw data from:
 
@@ -101,7 +103,9 @@ Get the raw data from:
 
 Death://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/68_07/Table01.xlsx
 
+<div class="ratio ratio-16x9">
 <iframe class="embed-responsive" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIOa5Jwg06iWzeKodwg3SMs5O1xI21GsSCEV5WB1_kLPvZTaQCOti8hgObhqgV4w/pubhtml?gid=881982232&amp;single=true&amp;widget=true&amp;headers=false" style="height:400px"></iframe>
+</div>
 
 ## Quotes
 

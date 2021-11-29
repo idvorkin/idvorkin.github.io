@@ -88,7 +88,7 @@ These documents are "easy" compared to Amazon internal documents, but even still
 
 You're going to suck till you don't. I could never explain it as well as Ira Glass (the host of this america life), so watch his video:
 
-<div class="embed-responsive embed-responsive-16by9">
+<div class="ratio ratio-16x9">
   <iframe
     class="embed-responsive-item"
     src="https://player.vimeo.com/video/176325518?color=1fc9a2&portrait=0"
