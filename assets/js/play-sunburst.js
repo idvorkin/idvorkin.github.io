@@ -1,13 +1,6 @@
-class TreeNode {
-    constructor({ name, value = 25, children = [] }) {
-        this.name = name;
-        this.children = children;
-        this.value = value;
-    }
-}
-function get_seven_habits() {
+function get_7_habits() {
     const root = new TreeNode({
-        name: "7 Habits",
+        name: "7H Prompt",
         children: [
             new TreeNode({ name: "" }),
             new TreeNode({ name: "Be Proactive" }),
@@ -16,8 +9,8 @@ function get_seven_habits() {
             new TreeNode({ name: "Think Win/Win" }),
             new TreeNode({ name: "First Understand" }),
             new TreeNode({ name: "Synergize" }),
-            new TreeNode({ name: "Sharpen the Saw" })
-        ]
+            new TreeNode({ name: "Sharpen the Saw" }),
+        ],
     });
     return root;
 }
@@ -27,25 +20,25 @@ function get_things_i_enjoy() {
         children: [
             { name: "Physical" },
             { name: "Emotional" },
-            { name: "Cognative" }
+            { name: "Cognative" },
         ],
-        value: 31
+        value: 31,
     });
     const magic = new TreeNode({
         name: "Magic",
         children: [
             new TreeNode({ name: "Card Magic" }),
             new TreeNode({ name: "Coin Magic" }),
-            new TreeNode({ name: "Band Magic" })
-        ]
+            new TreeNode({ name: "Band Magic" }),
+        ],
     });
     const hobbies = new TreeNode({
         name: "Hobbies",
         children: [
             new TreeNode({ name: "Biking" }),
             new TreeNode({ name: "Tech" }),
-            new TreeNode({ name: "Juggling" })
-        ]
+            new TreeNode({ name: "Juggling" }),
+        ],
     });
     const relationships = new TreeNode({
         name: "Relationships",
@@ -55,19 +48,18 @@ function get_things_i_enjoy() {
                 children: [
                     new TreeNode({ name: "Pick Zach's Nose" }),
                     new TreeNode({ name: "Make Zach Make Dinner" }),
-                    new TreeNode({ name: "Smell Zach's Feet" })
-                ]
+                    new TreeNode({ name: "Smell Zach's Feet" }),
+                ],
             }),
             new TreeNode({ name: "Amelia" }),
             new TreeNode({ name: "Tori" }),
-            new TreeNode({ name: "Friends" })
-        ]
+            new TreeNode({ name: "Friends" }),
+        ],
     });
-    const root = new TreeNode({
+    return new TreeNode({
         name: "Invest in",
-        children: [health, magic, hobbies, relationships, get_seven_habits()]
+        children: [health, magic, hobbies, relationships],
     });
-    return root;
 }
 // sunburst format is an inorder traversal of the tree.
 // good thing to unit test
@@ -97,14 +89,14 @@ function tree_to_plotly_data_format(root) {
     return {
         ids: names_parent_names.map(([n, p]) => n),
         labels: names_parent_names.map(([n, p]) => n),
-        parents: names_parent_names.map(([n, p]) => p)
+        parents: names_parent_names.map(([n, p]) => p),
     };
 }
 function make_map_category_to_prompts_text() {
     const map = make_category_to_prompt_map();
     const list = Array.from(map.entries()).map(([k, v], _index) => [
         k.text(),
-        v
+        v,
     ]);
     return new Map(list);
 }
@@ -118,47 +110,48 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
     // Gather all the prompts for the children of the clicked node.
     let all_prompts = Array.from(breadth_first_walk(clicked_node))
         .map(([node, _parent]) => node) // return node and parent
-        .filter(node => map_node_to_prompts.has(node.name))
-        .map(node => map_node_to_prompts
+        .filter((node) => map_node_to_prompts.has(node.name))
+        .map((node) => map_node_to_prompts
         .get(node.name)
-        .map(prompt => `${node.name}: ${prompt}`))
+        .map((prompt) => `${node.name}: ${prompt}`))
         .flat();
     return _.chain(all_prompts)
         .sampleSize(1)
         .first()
         .value();
 }
-// Yukky, need to lazy load this
-// Since it relies on main which isn't in a module yet
+// Yukky, need to lazy load this object
+// Since it relies on main.make_category_to_prompts_text which isn't in a module yet
 let memoized_map_category_to_prompts_text = null;
-function on_sunburst_click(event) {
-    if (memoized_map_category_to_prompts_text == null) {
+// Messy this includes UX updates and logic, clean up in the mythical later ;)
+function on_sunburst_click(set_random_text, root, event) {
+    if (!memoized_map_category_to_prompts_text) {
         memoized_map_category_to_prompts_text = make_map_category_to_prompts_text();
     }
     const label = event.points[0].label;
-    $("#sunburst_text").text(random_prompt_for_label(label, get_things_i_enjoy(), memoized_map_category_to_prompts_text));
+    set_random_text(random_prompt_for_label(label, root, memoized_map_category_to_prompts_text));
 }
-async function sunburst_loader() {
-    const root = get_things_i_enjoy();
+async function add_sunburst(plot_element_id, random_text_div_id, root) {
     const sunburst_tree_flat = tree_to_plotly_data_format(root);
-    console.log(sunburst_tree_flat);
     var sunburst_config = {
         type: "sunburst",
         outsidetextfont: { size: 20, color: "#377eb8" },
         // leaf: {opacity: 0.4},
         hoverinfo: "none",
         marker: { line: { width: 2 } },
-        maxdepth: 2
+        maxdepth: 2,
     };
     Object.assign(sunburst_config, sunburst_tree_flat);
     delete sunburst_config.values; // remove values to avoid sizing pie slices
-    console.log(sunburst_config);
     var sunburst_layout = {
         margin: { l: 0, r: 0, b: 0, t: 0 },
-        sunburstcolorway: ["#636efa", "#ef553b", "#00cc96"]
+        sunburstcolorway: ["#636efa", "#ef553b", "#00cc96"],
     };
-    const sunburstPlot = await Plotly.newPlot("sunburst", [sunburst_config], sunburst_layout);
-    sunburstPlot.on("plotly_sunburstclick", on_sunburst_click);
+    const sunburstPlot = await Plotly.newPlot(plot_element_id, [sunburst_config], sunburst_layout);
+    sunburstPlot.on("plotly_sunburstclick", (event) => {
+        const set_random_text = (text) => $(`#${random_text_div_id}`).text(text);
+        on_sunburst_click(set_random_text, root, event);
+    });
 }
-export { TreeNode, sunburst_loader, get_things_i_enjoy, breadth_first_walk };
+export { add_sunburst, get_things_i_enjoy, get_7_habits, breadth_first_walk };
 //# sourceMappingURL=play-sunburst.js.map

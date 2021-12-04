@@ -14,8 +14,8 @@ It’s easy to forget the many, often tiny things that makes me happy. For when 
 </div>
 
 <script type=module>
-    import { sunburst_loader } from '/assets/js/play-sunburst.js'
-    defer(sunburst_loader)
+    import { add_sunburst, get_things_i_enjoy } from '/assets/js/play-sunburst.js'
+    defer(() => add_sunburst("sunburst", "sunburst_text", get_things_i_enjoy()))
 </script>
 
 ## General
@@ -141,44 +141,3 @@ It’s easy to forget the many, often tiny things that makes me happy. For when 
 ### Tori
 
 - Tori is private, respect her privacy, and appreciate her.
-
-## 7 Habits
-
-Maybe these should move to their own circle
-
-### Sharpen the saw
-
-- Did you do your habits today?
-
-### Begin with the end in mind
-
-- Re-read your [eulogy](/eulogy)
-- What does success look like
-
-### First things First
-
-- Stay in quadrant 2
-
-### Sharpen the Saw
-
-- Is technology helping me, or is it hurting me?
-
-### Be Proactive
-
-- Pause between stimuls and response
-- Who has helped me be grow?
-- Stop using reactive language
-- Use empowering lanuage (I choose, I will)
-- Is this in my circle of incluence, or circle of concern?
-
-### Synergize
-
-- How can I compliment someone around me?
-
-### Think Win/Win
-
-- If it's not WIN/WIN, it's LOSE/LOSE.
-
-### First Understand
-
-- Imagine an eye doctor tried to make you use their glasses

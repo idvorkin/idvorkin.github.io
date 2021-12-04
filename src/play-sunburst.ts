@@ -4,28 +4,9 @@
 import { map } from "jquery";
 import { SunburstClickEvent } from "plotly.js";
 
-class TreeNode {
-  name: string;
-  children: [TreeNode];
-  value: number;
-  constructor({
-    name,
-    value = 25,
-    children = []
-  }: {
-    name;
-    value?;
-    children?;
-  }) {
-    this.name = name;
-    this.children = children;
-    this.value = value;
-  }
-}
-
-function get_seven_habits() {
+function get_7_habits() {
   const root = new TreeNode({
-    name: "7 Habits",
+    name: "7H Prompt",
     children: [
       new TreeNode({ name: "" }),
       new TreeNode({ name: "Be Proactive" }),
@@ -82,11 +63,10 @@ function get_things_i_enjoy() {
     ]
   });
 
-  const root = new TreeNode({
+  return new TreeNode({
     name: "Invest in",
-    children: [health, magic, hobbies, relationships, get_seven_habits()]
+    children: [health, magic, hobbies, relationships]
   });
-  return root;
 }
 
 // sunburst format is an inorder traversal of the tree.
@@ -163,28 +143,31 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
     .value();
 }
 
-// Yukky, need to lazy load this
-// Since it relies on main which isn't in a module yet
+// Yukky, need to lazy load this object
+// Since it relies on main.make_category_to_prompts_text which isn't in a module yet
 let memoized_map_category_to_prompts_text = null;
-function on_sunburst_click(event: SunburstClickEvent) {
-  if (memoized_map_category_to_prompts_text == null) {
+
+// Messy this includes UX updates and logic, clean up in the mythical later ;)
+function on_sunburst_click(
+  set_random_text,
+  root: TreeNode,
+  event: SunburstClickEvent
+) {
+  if (!memoized_map_category_to_prompts_text) {
     memoized_map_category_to_prompts_text = make_map_category_to_prompts_text();
   }
   const label = event.points[0].label;
-  $("#sunburst_text").text(
-    random_prompt_for_label(
-      label,
-      get_things_i_enjoy(),
-      memoized_map_category_to_prompts_text
-    )
+  set_random_text(
+    random_prompt_for_label(label, root, memoized_map_category_to_prompts_text)
   );
 }
 
-async function sunburst_loader() {
-  const root = get_things_i_enjoy();
+async function add_sunburst(
+  plot_element_id,
+  random_text_div_id,
+  root: TreeNode
+) {
   const sunburst_tree_flat = tree_to_plotly_data_format(root);
-  console.log(sunburst_tree_flat);
-
   var sunburst_config = {
     type: "sunburst",
     outsidetextfont: { size: 20, color: "#377eb8" },
@@ -195,7 +178,6 @@ async function sunburst_loader() {
   };
   Object.assign(sunburst_config, sunburst_tree_flat);
   delete (sunburst_config as any).values; // remove values to avoid sizing pie slices
-  console.log(sunburst_config);
 
   var sunburst_layout = {
     margin: { l: 0, r: 0, b: 0, t: 0 },
@@ -203,12 +185,15 @@ async function sunburst_loader() {
   };
 
   const sunburstPlot = await Plotly.newPlot(
-    "sunburst",
+    plot_element_id,
     [sunburst_config] as any,
     sunburst_layout
   );
 
-  sunburstPlot.on("plotly_sunburstclick", on_sunburst_click);
+  sunburstPlot.on("plotly_sunburstclick", event => {
+    const set_random_text = text => $(`#${random_text_div_id}`).text(text);
+    on_sunburst_click(set_random_text, root, event);
+  });
 }
 
-export { TreeNode, sunburst_loader, get_things_i_enjoy, breadth_first_walk };
+export { add_sunburst, get_things_i_enjoy, get_7_habits, breadth_first_walk };
