@@ -26,6 +26,7 @@ If it's not tested, it doesn't work'.' Quality can not be outsourced.
     - [The role of a QA team](#the-role-of-a-qa-team)
     - [Cost of tests vs cost of development](#cost-of-tests-vs-cost-of-development)
     - [Cost to change the tests](#cost-to-change-the-tests)
+    - [What is the right amount of test coverage?](#what-is-the-right-amount-of-test-coverage)
 - [Great books](#great-books)
 
 <!-- vim-markdown-toc -->
@@ -75,5 +76,7 @@ Back in the 2000s, "amazing developers" walked through all their code in the deb
 ### Cost of tests vs cost of development
 
 ### Cost to change the tests
+
+### What is the right amount of test coverage?
 
 ## Great books
