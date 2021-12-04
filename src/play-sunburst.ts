@@ -6,7 +6,7 @@ import { SunburstClickEvent } from "plotly.js";
 
 function get_7_habits() {
   const root = new TreeNode({
-    name: "7H Prompt",
+    name: "7H ",
     children: [
       new TreeNode({ name: "" }),
       new TreeNode({ name: "Be Proactive" }),
