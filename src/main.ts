@@ -1,5 +1,24 @@
 let tocExpand = true;
 
+class TreeNode {
+  name: string;
+  children: [TreeNode];
+  value: number;
+  constructor({
+    name,
+    value = 25,
+    children = []
+  }: {
+    name;
+    value?;
+    children?;
+  }) {
+    this.name = name;
+    this.children = children;
+    this.value = value;
+  }
+}
+
 function checkExpandToggle() {
   const toc = $(".ui-toc-dropdown .toc");
   const toggle = $(".expand-toggle");
@@ -288,6 +307,36 @@ function on_monkey_button_click(e) {
   }
   window.location.href = "/random";
 }
+
+function elemToList(elem) {}
+
+// Html with headings to Tree
+function HeadingsAndListsToTree(elem) {
+  // h2, h3, h4, h5, h6 and lists are all the same level, put them in a tree
+  //
+  // close parent when finding element at the same level
+}
+
+function HeadingToTree(depth, dom) {
+  // recursion ends when list is empty
+  // which is when there are no elements at this depth.
+
+  return dom.find("h" + depth).map(elem => {
+    const children = HeadingToTree(depth + 1, elem);
+    return new TreeNode({ name: $(elem).text(), children });
+  });
+}
+
+// h2
+// h3
+// <li>
+/*
+  dom.find(" ")
+  for (const header of 
+
+    ret.push(new TreeNode({ name: headerText, children: children }));
+  }
+  */
 
 function monkey_button_loader() {
   $("#monkey-button").bind("click", on_monkey_button_click);
