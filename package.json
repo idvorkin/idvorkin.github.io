@@ -24,6 +24,7 @@
     "coverage:instrument": "npx nyc instrument --compact=false _site/assets/js instrumented",
     "coverage:report": "npx nyc report --reporter html --reporter text && open coverage/index.html",
     "cy:ut": "npx cypress run --config video=false --spec   '**/unit/*ts'",
+    "cy:run": "npx cypress run --config video=false",
     "cy:record": ". ./_cypress_api_key && npx cypress run --record --env coverage=false ",
     "cy:open": "npx cypress open --env coverage=false",
     "search-index": "bundle exec jekyll algolia",
