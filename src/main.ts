@@ -169,84 +169,6 @@ function addBackLinksLoader() {
   $.getJSON(backlinks_url, ProcessBackLinks);
 }
 
-function render_prompt_for_category(category, prompts_for_category) {
-  //print one of the prompts
-  let random_prompt = _.sampleSize(prompts_for_category, 1)[0];
-  // console.log(`${category}:${random_prompt}`)
-  // elem = $(`<div> <span class="badge badge-pill badge-primary"> ${random_prompt}</span></div>`)[0]
-  const elem = $(
-    `<div class="alert alert-primary" role="alert"> ${random_prompt}</span></div>`
-  )[0];
-  $(category).after(elem);
-}
-function render_table_random(prompts_for_category) {
-  // Create a table at XYZ.
-  const table_placeholder = $("#prompt_table");
-  // Build a table
-  let table_as_html = "<table class='table table-striped table-bordered'>";
-  const categories = _.sampleSize(Array.from(prompts_for_category.keys()), 4);
-  console.log(categories);
-  for (const category of categories) {
-    const prompts = prompts_for_category.get(category);
-    const random = _.sampleSize(prompts, 1)[0];
-    // console.log(category)
-    // table_as_html += `<tr> <td> ${category} </td> <td> ${prompts[0]}</td> </tr>`
-    const category_text = (category as any).text();
-    table_as_html += `<tr> <td> ${category_text} </td> <td> ${random}</td> </tr>`;
-  }
-  table_as_html += "</table>";
-
-  const table_element = $(table_as_html);
-  $(table_placeholder).after(table_element);
-}
-
-// The prompts page has a bunch of lists of prompts
-// Would be nice to "pick a random one" to make it less intimidating
-// So can add a box at the top with a random prompt on top
-// And a random per section prompt
-
-function make_category_to_prompt_map() {
-  // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
-  const starting_node = $("h3").first();
-  let current_category = starting_node;
-  let prompts_for_category = [];
-  let map_category_to_prompts = new Map();
-  for (let node = starting_node; node.length != 0; node = $(node).next()) {
-    if (node.prop("tagName") == "H3") {
-      // Build prompt map
-      map_category_to_prompts.set(current_category, prompts_for_category);
-
-      // start processing next categroy
-      current_category = node;
-      prompts_for_category = [];
-      continue;
-    }
-
-    // in a category, prompts are the children of the first unordered list, so skip
-    // stuff that isn't a list
-    if (node.prop("tagName") != "UL") {
-      continue;
-    }
-    // we should now be the first list in the category
-    prompts_for_category = _.map($(node).find("li"), li => $(li).text());
-  }
-
-  map_category_to_prompts.set(current_category, prompts_for_category);
-  // XXX: Am I missing the last entry (??)
-  return map_category_to_prompts;
-}
-
-function add_random_prompts() {
-  console.log("add_random_prompts++");
-
-  const map_category_to_prompts = make_category_to_prompt_map();
-  for (const category of map_category_to_prompts.keys()) {
-    render_prompt_for_category(category, map_category_to_prompts.get(category));
-  }
-  render_table_random(map_category_to_prompts);
-  console.log("add_random_prompts--");
-}
-
 function keyboard_shortcut_loader() {
   Mousetrap.bind("s", e => (location.href = "/"));
   Mousetrap.bind("t", e => ForceShowRightSideBar());
@@ -268,17 +190,6 @@ Try these shortcuts:
   `;
   Mousetrap.bind("?", e => alert(shortcutHelp));
 }
-
-function random_prompt_loader() {
-  const url = window.location.href;
-  const is_target_page =
-    url.includes("/prompts") || url.includes("/todo_enjoy");
-  if (!is_target_page) {
-    return;
-  }
-  add_random_prompts();
-}
-
 function on_monkey_button_click(e) {
   if (window.location.href.includes("/ig66")) {
     window.location.href = "/ig66";
@@ -294,7 +205,6 @@ function monkey_button_loader() {
 $(monkey_button_loader);
 $(addBackLinksLoader);
 $(JsTemplateReplace);
-$(random_prompt_loader);
 $(keyboard_shortcut_loader);
 $(() => {
   // TOC Generation should go to posts.

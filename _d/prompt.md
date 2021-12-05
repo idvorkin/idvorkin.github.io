@@ -15,27 +15,32 @@ A prompt will kick start a great conversation, a great insight, and a great rela
 <!-- vim-markdown-toc GFM -->
 
 - [Work Prompts](#work-prompts)
-    - [Give extra honest feedback](#give-extra-honest-feedback)
-    - [Receive extra honest feedback](#receive-extra-honest-feedback)
-    - [Career Growth](#career-growth)
-    - [Seeking feedback](#seeking-feedback)
-    - [Building relationships](#building-relationships)
-    - [Transition and change questions](#transition-and-change-questions)
-    - [Team dynamics](#team-dynamics)
-    - [Well-being](#well-being)
-    - [Conflict resolution](#conflict-resolution)
-    - [Getting deeper](#getting-deeper)
-    - [Meta & Feelings](#meta--feelings)
+  - [Give extra honest feedback](#give-extra-honest-feedback)
+  - [Receive extra honest feedback](#receive-extra-honest-feedback)
+  - [Career Growth](#career-growth)
+  - [Seeking feedback](#seeking-feedback)
+  - [Building relationships](#building-relationships)
+  - [Transition and change questions](#transition-and-change-questions)
+  - [Team dynamics](#team-dynamics)
+  - [Well-being](#well-being)
+  - [Conflict resolution](#conflict-resolution)
+  - [Getting deeper](#getting-deeper)
+  - [Meta & Feelings](#meta--feelings)
 - [Friendship Prompts (Not For Work)](#friendship-prompts-not-for-work)
-    - [Safe](#safe)
-    - [Deep](#deep)
-    - [Vulnerable](#vulnerable)
+  - [Safe](#safe)
+  - [Deep](#deep)
+  - [Vulnerable](#vulnerable)
 - [Kids](#kids)
-    - [Fun](#fun)
+  - [Fun](#fun)
 - [Coaching Prompts](#coaching-prompts)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+<script type=module>
+    import { add_random_prompts} from '/assets/js/random-prompter.js'
+    defer(add_random_prompts)
+</script>
 
 ## Work Prompts
 
@@ -214,37 +219,37 @@ Spend 15 minutes on Safe, then Deep, and then on Vulnerable prompts
 
 You can probably ask these to grown ups as well, but I suspect kids will be more opening to discussing.
 
-* What is something that made you laugh today
-* If you wrote a book, what would you name the main character and where would he go?
-* What is your favorite thing to do?
-* If you could design a t-shirt, what would you draw or write on it?
-* What was your favorite part of your day/school/activity…?
-* What is your favorite memory about being ___ years old?
-* If the story of YOU became a movie, how would the movie end?
-* Do you have any jokes to tell me?
-* What’s the funniest thing you saw today/this week?
-* How would you describe a perfect day for you?
-* If we had an airplane to take us on vacation right now, where would you want to go?
-* If we could go to (insert name of favorite place) but couldn’t use a car to get there, how do you think we could get there?
-* If you could have any animal in the world as a pet, where would you go to get it and what would it be?
-* If you could do something just like your friend (use name of friend) what would you do?
-* If you could do something like your Dad/Mom do, what would you want to be able to do?
-* If you could change anything about school what would it be?
-* If you could change anything about our family what would it be?
-* If you could change anything in the world, what would you change and how?
-* Who is your favorite tv/book/story character and what do you like about him/her?
-* If you could eat lunch with (insert favorite character’s name) where would you go and what would you eat together?
-* If you could wake up tomorrow with a superpower, what superpower would you want to have?
-* If you could have any 3 wishes granted, what would they be?
-* If all your clothes could only be one color, what color would you choose?
-* If you could change the lunch menu at (school/home) what would you change?
-* What is your biggest dream?
-* What is your biggest worry?
-* If you could change your name, would you want to and what name would you choose instead?
-* What are you proudest of in your life?
-* Where is your favorite place to be?
-* What is something you never thought you could tell me but maybe want to tell me now?
-* Is there anything you have always wanted to ask me but didn’t? Do you want to ask me now?
+- What is something that made you laugh today
+- If you wrote a book, what would you name the main character and where would he go?
+- What is your favorite thing to do?
+- If you could design a t-shirt, what would you draw or write on it?
+- What was your favorite part of your day/school/activity…?
+- What is your favorite memory about being \_\_\_ years old?
+- If the story of YOU became a movie, how would the movie end?
+- Do you have any jokes to tell me?
+- What’s the funniest thing you saw today/this week?
+- How would you describe a perfect day for you?
+- If we had an airplane to take us on vacation right now, where would you want to go?
+- If we could go to (insert name of favorite place) but couldn’t use a car to get there, how do you think we could get there?
+- If you could have any animal in the world as a pet, where would you go to get it and what would it be?
+- If you could do something just like your friend (use name of friend) what would you do?
+- If you could do something like your Dad/Mom do, what would you want to be able to do?
+- If you could change anything about school what would it be?
+- If you could change anything about our family what would it be?
+- If you could change anything in the world, what would you change and how?
+- Who is your favorite tv/book/story character and what do you like about him/her?
+- If you could eat lunch with (insert favorite character’s name) where would you go and what would you eat together?
+- If you could wake up tomorrow with a superpower, what superpower would you want to have?
+- If you could have any 3 wishes granted, what would they be?
+- If all your clothes could only be one color, what color would you choose?
+- If you could change the lunch menu at (school/home) what would you change?
+- What is your biggest dream?
+- What is your biggest worry?
+- If you could change your name, would you want to and what name would you choose instead?
+- What are you proudest of in your life?
+- Where is your favorite place to be?
+- What is something you never thought you could tell me but maybe want to tell me now?
+- Is there anything you have always wanted to ask me but didn’t? Do you want to ask me now?
 
 ## Coaching Prompts
 

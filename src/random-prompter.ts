@@ -20,6 +20,83 @@ class TreeNode {
     this.value = value;
   }
 }
+function add_random_prompts() {
+  console.log("add_random_prompts++");
+  const map_category_to_prompts = make_category_to_prompt_map();
+  for (const category of map_category_to_prompts.keys()) {
+    render_prompt_for_category(category, map_category_to_prompts.get(category));
+  }
+  render_table_random(map_category_to_prompts);
+  console.log("add_random_prompts--");
+}
+
+function render_prompt_for_category(category, prompts_for_category) {
+  //print one of the prompts
+  let random_prompt = _.sampleSize(prompts_for_category, 1)[0];
+  // console.log(`${category}:${random_prompt}`)
+  // elem = $(`<div> <span class="badge badge-pill badge-primary"> ${random_prompt}</span></div>`)[0]
+  const elem = $(
+    `<div class="alert alert-primary" role="alert"> ${random_prompt}</span></div>`
+  )[0];
+  $(category).after(elem);
+}
+function render_table_random(prompts_for_category) {
+  // Create a table at XYZ.
+  const table_placeholder = $("#prompt_table");
+  // Build a table
+  let table_as_html = "<table class='table table-striped table-bordered'>";
+  const categories = _.sampleSize(Array.from(prompts_for_category.keys()), 4);
+  for (const category of categories) {
+    const prompts = prompts_for_category.get(category);
+    const random = _.sampleSize(prompts, 1)[0];
+    // console.log(category)
+    // table_as_html += `<tr> <td> ${category} </td> <td> ${prompts[0]}</td> </tr>`
+    const category_text = (category as any).text();
+    table_as_html += `<tr> <td> ${category_text} </td> <td> ${random}</td> </tr>`;
+  }
+  table_as_html += "</table>";
+
+  const table_element = $(table_as_html);
+  $(table_placeholder).after(table_element);
+}
+
+// The prompts page has a bunch of lists of prompts
+// Would be nice to "pick a random one" to make it less intimidating
+// So can add a box at the top with a random prompt on top
+// And a random per section prompt
+
+function make_category_to_prompt_map() {
+  // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
+  const starting_node = $("h3").first();
+  let current_category = starting_node;
+  let prompts_for_category = [];
+  let map_category_to_prompts = new Map();
+  for (let node = starting_node; node.length != 0; node = $(node).next()) {
+    if (node.prop("tagName") == "H3") {
+      // Build prompt map
+      map_category_to_prompts.set(current_category, prompts_for_category);
+
+      // start processing next categroy
+      current_category = node;
+      prompts_for_category = [];
+      continue;
+    }
+
+    // in a category, prompts are the children of the first unordered list, so skip
+    // stuff that isn't a list
+    if (node.prop("tagName") != "UL") {
+      continue;
+    }
+    // we should now be the first list in the category
+    prompts_for_category = _.map($(node).find("li"), li => $(li).text());
+  }
+
+  map_category_to_prompts.set(current_category, prompts_for_category);
+  // XXX: Am I missing the last entry (??)
+  return map_category_to_prompts;
+}
+
+const map_category_to_prompts = make_category_to_prompt_map();
 
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(list) {
@@ -168,22 +245,15 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
     .value();
 }
 
-// Yukky, need to lazy load this object
-// Since it relies on main.make_category_to_prompts_text which isn't in a module yet
-let memoized_map_category_to_prompts_text = null;
-
 // Messy this includes UX updates and logic, clean up in the mythical later ;)
 function on_sunburst_click(
   set_random_text,
   root: TreeNode,
   event: SunburstClickEvent
 ) {
-  if (!memoized_map_category_to_prompts_text) {
-    memoized_map_category_to_prompts_text = make_map_category_to_prompts_text();
-  }
   const label = event.points[0].label;
   set_random_text(
-    random_prompt_for_label(label, root, memoized_map_category_to_prompts_text)
+    random_prompt_for_label(label, root, make_map_category_to_prompts_text())
   );
 }
 
@@ -214,6 +284,11 @@ async function add_sunburst(
     [sunburst_config] as any,
     sunburst_layout
   );
+  $(`#${random_text_div_id}`)
+    .first()
+    .click(() => {
+      alert("clicked");
+    });
 
   sunburstPlot.on("plotly_sunburstclick", event => {
     const set_random_text = text => $(`#${random_text_div_id}`).text(text);
@@ -228,4 +303,10 @@ const UT = {
 };
 // How do I export things only for testing?
 // I guess they should be in their own module
-export { add_sunburst, get_things_i_enjoy, get_7_habits, UT };
+export {
+  add_random_prompts,
+  add_sunburst,
+  get_things_i_enjoy,
+  get_7_habits,
+  UT,
+};

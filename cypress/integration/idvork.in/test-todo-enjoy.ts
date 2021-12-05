@@ -57,4 +57,9 @@ describe("Things I enjoy", () => {
     cy.get("@donut-center").click({ force: true });
     cy.get("@donut-center").should("contain.text", this.default_center_text);
   });
+  it("Click prompt randomizes", function() {
+    cy.get(".alert:first").should("contain.text", this.default_prompt);
+    cy.get(".alert:first").click({ force: true });
+    cy.get(".alert:first").should("not.contain.text", this.default_prompt);
+  });
 });

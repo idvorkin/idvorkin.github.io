@@ -18,6 +18,11 @@ It’s easy to forget the many, often tiny things that makes me happy. For when 
     defer(() => add_sunburst("sunburst", "sunburst_text", get_things_i_enjoy()))
 </script>
 
+<script type=module>
+    import { add_random_prompts} from '/assets/js/random-prompter.js'
+    defer(add_random_prompts)
+</script>
+
 ## General
 
 ### Go to the grocery store
