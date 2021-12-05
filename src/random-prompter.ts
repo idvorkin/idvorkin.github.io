@@ -20,6 +20,14 @@ class TreeNode {
   }
 }
 
+// https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffle(list) {
+  return list
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+}
+
 function get_7_habits() {
   const root = new TreeNode({
     name: "7H ",
@@ -214,7 +222,8 @@ async function add_sunburst(
 
 const UT = {
   breadth_first_walk: breadth_first_walk, // for UT
-  TreeNode: TreeNode // For UT
+  TreeNode: TreeNode, // For UT
+  shuffle: shuffle
 };
 // How do I export things only for testing?
 // I guess they should be in their own module

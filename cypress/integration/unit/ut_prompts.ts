@@ -1,5 +1,9 @@
 /// <reference types="cypress" />
-import { UT, get_things_i_enjoy } from "../../../instrumented/random-prompter";
+//import { UT, get_things_i_enjoy } from "../../../instrumented/random-prompter";
+import {
+  UT,
+  get_things_i_enjoy
+} from "../../../_site/assets/js/random-prompter.js";
 
 // Welcome to Cypress!
 //
@@ -57,5 +61,13 @@ describe("Tree Walker", () => {
       i++;
     }
     assert.equal(i, 0);
+  });
+  it("shuffle works", () => {
+    let i = 0;
+    let l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    for (let _ = 0; _ < 10; _++) {
+      const l2 = UT.shuffle(l);
+      assert.notDeepEqual(l, l2);
+    }
   });
 });
