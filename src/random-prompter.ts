@@ -1,6 +1,7 @@
 // One of the imports is goofy
 // @ts-ignore:TS2792
 import { SunburstClickEvent } from "plotly.js";
+import { isTypeAliasDeclaration } from "../node_modules/typescript/lib/typescript";
 class TreeNode {
   name: string;
   children: [TreeNode];
@@ -21,13 +22,11 @@ class TreeNode {
   }
 }
 function add_random_prompts() {
-  console.log("add_random_prompts++");
-  const map_category_to_prompts = make_category_to_prompt_map();
+  const map_category_to_prompts = category_to_prompts();
   for (const category of map_category_to_prompts.keys()) {
     render_prompt_for_category(category, map_category_to_prompts.get(category));
   }
   render_table_random(map_category_to_prompts);
-  console.log("add_random_prompts--");
 }
 
 function render_prompt_for_category(category, prompts_for_category) {
@@ -65,7 +64,7 @@ function render_table_random(prompts_for_category) {
 // So can add a box at the top with a random prompt on top
 // And a random per section prompt
 
-function make_category_to_prompt_map() {
+function category_to_prompts() {
   // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
   const starting_node = $("h3").first();
   let current_category = starting_node;
@@ -95,8 +94,6 @@ function make_category_to_prompt_map() {
   // XXX: Am I missing the last entry (??)
   return map_category_to_prompts;
 }
-
-const map_category_to_prompts = make_category_to_prompt_map();
 
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(list) {
@@ -208,8 +205,8 @@ function tree_to_plotly_data_format(root) {
   };
 }
 
-function make_map_category_to_prompts_text() {
-  const map = make_category_to_prompt_map();
+function category_to_prompts_text() {
+  const map = category_to_prompts();
   const list = Array.from(map.entries()).map(([k, v], _index) => [
     (k as any).text(),
     v,
@@ -245,18 +242,6 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
     .value();
 }
 
-// Messy this includes UX updates and logic, clean up in the mythical later ;)
-function on_sunburst_click(
-  set_random_text,
-  root: TreeNode,
-  event: SunburstClickEvent
-) {
-  const label = event.points[0].label;
-  set_random_text(
-    random_prompt_for_label(label, root, make_map_category_to_prompts_text())
-  );
-}
-
 async function add_sunburst(
   plot_element_id,
   random_text_div_id,
@@ -284,15 +269,28 @@ async function add_sunburst(
     [sunburst_config] as any,
     sunburst_layout
   );
+  const set_random_prompt_text = text => $(`#${random_text_div_id}`).text(text);
+  // Set click handler for div
   $(`#${random_text_div_id}`)
     .first()
     .click(() => {
-      alert("clicked");
+      const label = $("#sunburst text:first").text(); // Hack should use an API to find center text
+      const prompt = random_prompt_for_label(
+        label,
+        root,
+        category_to_prompts_text()
+      );
+      set_random_prompt_text(prompt);
     });
 
   sunburstPlot.on("plotly_sunburstclick", event => {
-    const set_random_text = text => $(`#${random_text_div_id}`).text(text);
-    on_sunburst_click(set_random_text, root, event);
+    const label = event.points[0].label;
+    const prompt = random_prompt_for_label(
+      label,
+      root,
+      category_to_prompts_text()
+    );
+    set_random_prompt_text(prompt);
   });
 }
 
@@ -301,6 +299,7 @@ const UT = {
   TreeNode: TreeNode, // For UT
   shuffle: shuffle,
 };
+
 // How do I export things only for testing?
 // I guess they should be in their own module
 export {
