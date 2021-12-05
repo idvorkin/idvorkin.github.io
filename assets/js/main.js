@@ -49,7 +49,7 @@ function generateToc(id, showPinToc) {
         top: -1,
         class: "toc",
         ulClass: "nav",
-        targetId: id,
+        targetId: id
     });
     /* eslint-enable no-unused-vars */
     if (target.text() === "undefined") {
@@ -61,23 +61,23 @@ function generateToc(id, showPinToc) {
     const gotoBottom = $('<a class="go-to-bottom" href="#">Bottom of page</a>');
     const forceSideBar = $('<a class="go-to-bottom" href="#">Pin ToC</a>');
     checkExpandToggle();
-    toggle.click((e) => {
+    toggle.click(e => {
         e.preventDefault();
         e.stopPropagation();
         tocExpand = !tocExpand;
         checkExpandToggle();
     });
-    backToTop.click((e) => {
+    backToTop.click(e => {
         e.preventDefault();
         e.stopPropagation();
         window.scrollTo(0, 0);
     });
-    gotoBottom.click((e) => {
+    gotoBottom.click(e => {
         e.preventDefault();
         e.stopPropagation();
         window.scrollTo(0, document.body.scrollHeight);
     });
-    forceSideBar.click((e) => ForceShowRightSideBar());
+    forceSideBar.click(e => ForceShowRightSideBar());
     tocMenu
         .append(toggle)
         .append(backToTop)
@@ -207,7 +207,7 @@ function make_category_to_prompt_map() {
             continue;
         }
         // we should now be the first list in the category
-        prompts_for_category = _.map($(node).find("li"), (li) => $(li).text());
+        prompts_for_category = _.map($(node).find("li"), li => $(li).text());
     }
     map_category_to_prompts.set(current_category, prompts_for_category);
     // XXX: Am I missing the last entry (??)
@@ -223,13 +223,13 @@ function add_random_prompts() {
     console.log("add_random_prompts--");
 }
 function keyboard_shortcut_loader() {
-    Mousetrap.bind("s", (e) => (location.href = "/"));
-    Mousetrap.bind("t", (e) => ForceShowRightSideBar());
-    Mousetrap.bind("p", (e) => SwapProdAndTest());
-    Mousetrap.bind("z", (e) => (location.href = "/random"));
-    Mousetrap.bind("a", (e) => (location.href = "/all"));
-    Mousetrap.bind("m", (e) => (location.href = "/toc"));
-    Mousetrap.bind("6", (e) => (location.href = "/ig66"));
+    Mousetrap.bind("s", e => (location.href = "/"));
+    Mousetrap.bind("t", e => ForceShowRightSideBar());
+    Mousetrap.bind("p", e => SwapProdAndTest());
+    Mousetrap.bind("z", e => (location.href = "/random"));
+    Mousetrap.bind("a", e => (location.href = "/all"));
+    Mousetrap.bind("m", e => (location.href = "/toc"));
+    Mousetrap.bind("6", e => (location.href = "/ig66"));
     let shortcutHelp = `
 Try these shortcuts:
   s - search
@@ -240,7 +240,7 @@ Try these shortcuts:
   m - global toc
   6 - family journal
   `;
-    Mousetrap.bind("?", (e) => alert(shortcutHelp));
+    Mousetrap.bind("?", e => alert(shortcutHelp));
 }
 function random_prompt_loader() {
     const url = window.location.href;
@@ -267,7 +267,7 @@ function HeadingsAndListsToTree(elem) {
 function HeadingToTree(depth, dom) {
     // recursion ends when list is empty
     // which is when there are no elements at this depth.
-    return dom.find("h" + depth).map((elem) => {
+    return dom.find("h" + depth).map(elem => {
         const children = HeadingToTree(depth + 1, elem);
         return new TreeNode({ name: $(elem).text(), children });
     });
