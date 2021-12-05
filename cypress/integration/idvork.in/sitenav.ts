@@ -13,11 +13,7 @@
 
 describe("Page Navigation works", () => {
   beforeEach(() => {
-    // Cypress starts out with a blank slate for each test
-    // so we must tell it to visit our website with the `cy.visit()` command.
-    // Since we want to visit the same URL at the start of all our tests,
-    // we include it in our beforeEach function so that it runs before each test
-    cy.visit("/");
+    cy.visit("/magic"); // '/' is a bit slow, this page is fast
   }),
     it("go to ig66", () => {
       cy.get(".fa-baby-carriage").click();
@@ -26,6 +22,14 @@ describe("Page Navigation works", () => {
     it("go to tech", () => {
       cy.get(".fa-microchip").click();
       cy.location("pathname").should("equal", "/td/");
+    }),
+    it("go to todo enjoy", () => {
+      cy.get(".fa-heart").click();
+      cy.location("pathname").should("equal", "/todo_enjoy");
+    }),
+    it("go to 7 habits", () => {
+      cy.get(".fa-hammer").click();
+      cy.location("pathname").should("equal", "/7-habits");
     }),
     it("go to tags", () => {
       cy.get(".fa-tags").click();
@@ -41,7 +45,7 @@ describe("Page Navigation works", () => {
         .should("have.attr", "href")
         .and(
           "equal",
-          "https://github.com/idvorkin/idvorkin.github.io/blob/master/index.html"
+          "https://github.com/idvorkin/idvorkin.github.io/blob/master/_posts/2016-04-21-magical-memories.md"
         );
     }),
     it("go to linked in", () => {
