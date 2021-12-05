@@ -9,7 +9,7 @@ describe("Things I enjoy", () => {
     // so we must tell it to visit our website with the `cy.visit()` command.
     // Since we want to visit the same URL at the start of all our tests,
     // we include it in our beforeEach function so that it runs before each test
-    cy.visit("http://localhost:4000/todo_enjoy");
+    cy.visit("/todo_enjoy");
     cy.get("#sunburst text:first").as('donut-center')
   }),
     it("loads", () => {
@@ -21,9 +21,9 @@ describe("Things I enjoy", () => {
     }),
     it("Get different prompt clicking in donut ", () => {
       // https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Debugging
-      cy.get(".alert:first").should('contain.text',default_prompt) 
+      cy.get(".alert:first").should('contain.text',default_prompt)
       cy.get('@donut-center').click({force:true})
-      cy.get(".alert:first").should('not.contain.text',default_prompt) 
+      cy.get(".alert:first").should('not.contain.text',default_prompt)
     });
     it("Click into magic zooms magic", () => {
       // https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Debugging
@@ -35,7 +35,7 @@ describe("Things I enjoy", () => {
 
       // Click again should go back to default_prompt
       cy.get('@donut-center').click({force:true})
-      cy.get('@donut-center').should('contain.text', default_center_text) 
+      cy.get('@donut-center').should('contain.text', default_center_text)
 
       // click on magic again
       cy.get(`text:contains('${category_to_click}')`).click({force:true})
@@ -44,10 +44,10 @@ describe("Things I enjoy", () => {
       cy.get(`text:contains('Coin Magic')`).click({force:true})
 
       // since no sub categories, should not redraw
-      cy.get('@donut-center').should('contain.text', 'Magic') 
+      cy.get('@donut-center').should('contain.text', 'Magic')
 
       // go back to default_prompt by clicking center
       cy.get('@donut-center').click({force:true})
-      cy.get('@donut-center').should('contain.text', default_center_text) 
+      cy.get('@donut-center').should('contain.text', default_center_text)
     });
 });

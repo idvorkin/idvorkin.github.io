@@ -3,7 +3,7 @@ import {
   breadth_first_walk,
   get_things_i_enjoy,
   TreeNode
-} from "../../../instrumented/play-sunburst";
+} from "../../../instrumented/random-prompter";
 
 // Welcome to Cypress!
 //

@@ -1,24 +1,5 @@
 let tocExpand = true;
 
-class TreeNode {
-  name: string;
-  children: [TreeNode];
-  value: number;
-  constructor({
-    name,
-    value = 25,
-    children = []
-  }: {
-    name;
-    value?;
-    children?;
-  }) {
-    this.name = name;
-    this.children = children;
-    this.value = value;
-  }
-}
-
 function checkExpandToggle() {
   const toc = $(".ui-toc-dropdown .toc");
   const toggle = $(".expand-toggle");

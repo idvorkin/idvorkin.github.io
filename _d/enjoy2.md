@@ -14,7 +14,7 @@ It’s easy to forget the many, often tiny things that makes me happy. For when 
 </div>
 
 <script type=module>
-    import { add_sunburst, get_things_i_enjoy } from '/assets/js/play-sunburst.js'
+    import { add_sunburst, get_things_i_enjoy } from '/assets/js/random-prompter.js'
     defer(() => add_sunburst("sunburst", "sunburst_text", get_things_i_enjoy()))
 </script>
 

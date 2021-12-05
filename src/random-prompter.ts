@@ -3,6 +3,24 @@
 //import * as _ from "lodash";
 import { map } from "jquery";
 import { SunburstClickEvent } from "plotly.js";
+class TreeNode {
+  name: string;
+  children: [TreeNode];
+  value: number;
+  constructor({
+    name,
+    value = 25,
+    children = []
+  }: {
+    name;
+    value?;
+    children?;
+  }) {
+    this.name = name;
+    this.children = children;
+    this.value = value;
+  }
+}
 
 function get_7_habits() {
   const root = new TreeNode({
@@ -196,4 +214,12 @@ async function add_sunburst(
   });
 }
 
-export { add_sunburst, get_things_i_enjoy, get_7_habits, breadth_first_walk };
+// How do I export things only for testing?
+// I guess they should be in their own module
+export {
+  add_sunburst,
+  get_things_i_enjoy,
+  get_7_habits,
+  breadth_first_walk, // for UT
+  TreeNode // For UT
+};
