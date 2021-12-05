@@ -20,10 +20,10 @@ describe("Search works", () => {
     cy.visit("/");
   }),
     it("type job hunt stress - click link", () => {
-      cy.get("input").type("job hunt stress");
-      cy.get(".ais-InfiniteHits-item  a")
-        .first()
-        .click();
+      cy.get("input")
+        .type("job hunt stress")
+        .wait(1000);
+      cy.get(".ais-InfiniteHits-item  a :first").click();
       cy.location("pathname").should("include", "job-hunt-stress");
     });
 });
