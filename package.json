@@ -3,7 +3,7 @@
     "@cypress/code-coverage": "^3.9.11",
     "@types/d3": "^7.1.0",
     "@types/jquery": "^3.5.8",
-    "@types/lodash": "^4.14.176",
+    "@types/lodash-es": "^4.17.5",
     "@types/mousetrap": "^1.6.8",
     "@types/plotly.js": "^1.54.16",
     "cypress": "^9.0.0",
@@ -32,7 +32,7 @@
     "docker:build": "docker build -t devdocker devdocker",
     "docker:run": "docker run -v ~/blog:/root/blog -it -P -p 127.0.0.1:4000:4000 devdocker",
     "back-links": "python3 build_back_links.py | prettier --parser=json > back-links.json",
-    "tsc": "tsc --watch",
+    "tsc": "tsc --watch --allowUmdGlobalAccess",
     "_comment": "Contains all commands"
   },
   "repository": {

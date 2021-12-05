@@ -144,8 +144,6 @@ function ProcessBackLinks(backLinks) {
 
   for (var link of backlinks.sort(sort_descending_by_size)) {
     const url_info = backLinks["url_info"][link];
-    console.log(link);
-    console.log(url_info);
     const title_href = `<a href=${url_info["url"]}>${url_info["title"]}</a>`;
     const class_link = `link-box description truncate-css`;
     back_link_location.append(
@@ -288,36 +286,6 @@ function on_monkey_button_click(e) {
   }
   window.location.href = "/random";
 }
-
-function elemToList(elem) {}
-
-// Html with headings to Tree
-function HeadingsAndListsToTree(elem) {
-  // h2, h3, h4, h5, h6 and lists are all the same level, put them in a tree
-  //
-  // close parent when finding element at the same level
-}
-
-function HeadingToTree(depth, dom) {
-  // recursion ends when list is empty
-  // which is when there are no elements at this depth.
-
-  return dom.find("h" + depth).map(elem => {
-    const children = HeadingToTree(depth + 1, elem);
-    return new TreeNode({ name: $(elem).text(), children });
-  });
-}
-
-// h2
-// h3
-// <li>
-/*
-  dom.find(" ")
-  for (const header of 
-
-    ret.push(new TreeNode({ name: headerText, children: children }));
-  }
-  */
 
 function monkey_button_loader() {
   $("#monkey-button").bind("click", on_monkey_button_click);

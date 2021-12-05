@@ -1,6 +1,5 @@
 // Adding a query paramater.
-
-// import { algoliasearch,instantsearch } from "algoliasearch";
+// import instantsearch from "algoliasearch";
 
 function getParameterByName(name, url): string {
   if (!url) url = window.location.href;
@@ -39,6 +38,9 @@ function hitTemplate(hit) {
   return string_rep;
 }
 
+declare function instantsearch(l: any): any;
+declare function algoliasearch(l: any, l2: any): any;
+
 function create_search(appid, search_api_key, index_name, initial_query) {
   // Instanciating InstantSearch.js with Algolia credentials
   const search = instantsearch({
@@ -51,6 +53,7 @@ function create_search(appid, search_api_key, index_name, initial_query) {
 
   // Adding searchbar and results widgets
   search.addWidget(
+    // @ts-ignore:TS2339
     instantsearch.widgets.searchBox({
       container: "#search-box",
       placeholder: "Search Igor's musings...",
@@ -62,6 +65,7 @@ function create_search(appid, search_api_key, index_name, initial_query) {
   );
 
   search.addWidget(
+    // @ts-ignore:TS2339
     instantsearch.widgets.infiniteHits({
       container: "#search-hits",
       templates: {

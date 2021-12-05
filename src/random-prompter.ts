@@ -1,7 +1,5 @@
-// import * as Plotly from "plotly.js";
-// import * as _ from "../node_modules/cypress/types/lodash/index";
-//import * as _ from "lodash";
-import { map } from "jquery";
+// One of the imports is goofy
+// @ts-ignore:TS2792
 import { SunburstClickEvent } from "plotly.js";
 class TreeNode {
   name: string;
