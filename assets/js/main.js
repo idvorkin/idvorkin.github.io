@@ -49,7 +49,7 @@ function generateToc(id, showPinToc) {
         top: -1,
         class: "toc",
         ulClass: "nav",
-        targetId: id
+        targetId: id,
     });
     /* eslint-enable no-unused-vars */
     if (target.text() === "undefined") {

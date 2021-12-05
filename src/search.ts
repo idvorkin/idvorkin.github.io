@@ -47,8 +47,8 @@ function create_search(appid, search_api_key, index_name, initial_query) {
     searchClient: algoliasearch(appid, search_api_key),
     indexName: index_name,
     searchParameters: {
-      query: initial_query
-    }
+      query: initial_query,
+    },
   });
 
   // Adding searchbar and results widgets
@@ -60,7 +60,7 @@ function create_search(appid, search_api_key, index_name, initial_query) {
       poweredBy: true, // This is required if you're on the free Community plan
       showSubmit: false,
       showReset: false,
-      showLoadingIndicator: false
+      showLoadingIndicator: false,
     })
   );
 
@@ -69,8 +69,8 @@ function create_search(appid, search_api_key, index_name, initial_query) {
     instantsearch.widgets.infiniteHits({
       container: "#search-hits",
       templates: {
-        item: hitTemplate
-      }
+        item: hitTemplate,
+      },
     })
   );
 

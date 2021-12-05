@@ -14,7 +14,7 @@ function append_post(div, post) {
     "September",
     "October",
     "November",
-    "December"
+    "December",
   ];
 
   item.append(title_href);

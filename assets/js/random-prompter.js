@@ -1,14 +1,15 @@
 class TreeNode {
     constructor({ name, value = 25, children = [], }) {
         this.name = name;
-        this.children = children;
+        // Keep it interesting
+        this.children = shuffle(children);
         this.value = value;
     }
 }
 // https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(list) {
     return list
-        .map((value) => ({ value, sort: Math.random() }))
+        .map(value => ({ value, sort: Math.random() }))
         .sort((a, b) => a.sort - b.sort)
         .map(({ value }) => value);
 }
@@ -124,10 +125,10 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
     // Gather all the prompts for the children of the clicked node.
     let all_prompts = Array.from(breadth_first_walk(clicked_node))
         .map(([node, _parent]) => node) // return node and parent
-        .filter((node) => map_node_to_prompts.has(node.name))
-        .map((node) => map_node_to_prompts
+        .filter(node => map_node_to_prompts.has(node.name))
+        .map(node => map_node_to_prompts
         .get(node.name)
-        .map((prompt) => `${node.name}: ${prompt}`))
+        .map(prompt => `${node.name}: ${prompt}`))
         .flat();
     return _.chain(all_prompts)
         .sampleSize(1)
@@ -162,8 +163,8 @@ async function add_sunburst(plot_element_id, random_text_div_id, root) {
         sunburstcolorway: ["#636efa", "#ef553b", "#00cc96"],
     };
     const sunburstPlot = await Plotly.newPlot(plot_element_id, [sunburst_config], sunburst_layout);
-    sunburstPlot.on("plotly_sunburstclick", (event) => {
-        const set_random_text = (text) => $(`#${random_text_div_id}`).text(text);
+    sunburstPlot.on("plotly_sunburstclick", event => {
+        const set_random_text = text => $(`#${random_text_div_id}`).text(text);
         on_sunburst_click(set_random_text, root, event);
     });
 }

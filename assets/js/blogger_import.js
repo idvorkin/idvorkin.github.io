@@ -14,7 +14,7 @@ function append_post(div, post) {
         "September",
         "October",
         "November",
-        "December"
+        "December",
     ];
     item.append(title_href);
     // HACK: Upsize to larger thumbnail, seems like blogger auto resizes to include a 320 image as well.
