@@ -212,12 +212,10 @@ async function add_sunburst(
   });
 }
 
+const UT = {
+  breadth_first_walk: breadth_first_walk, // for UT
+  TreeNode: TreeNode // For UT
+};
 // How do I export things only for testing?
 // I guess they should be in their own module
-export {
-  add_sunburst,
-  get_things_i_enjoy,
-  get_7_habits,
-  breadth_first_walk, // for UT
-  TreeNode // For UT
-};
+export { add_sunburst, get_things_i_enjoy, get_7_habits, UT };

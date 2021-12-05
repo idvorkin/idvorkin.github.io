@@ -1,9 +1,5 @@
 /// <reference types="cypress" />
-import {
-  breadth_first_walk,
-  get_things_i_enjoy,
-  TreeNode
-} from "../../../instrumented/random-prompter";
+import { UT, get_things_i_enjoy } from "../../../instrumented/random-prompter";
 
 // Welcome to Cypress!
 //
@@ -31,12 +27,12 @@ describe("Page Navigation works", () => {
     const $ = cy.stub();
   }),
     it("can load", () => {
-      const t = new TreeNode({ name: "Hi" });
+      const t = new UT.TreeNode({ name: "Hi" });
     });
   it("can walk an empty tree", () => {
-    const t = new TreeNode({ name: "Hi" });
+    const t = new UT.TreeNode({ name: "Hi" });
     let i = 0;
-    for (const [current, parent] of breadth_first_walk(t)) {
+    for (const [current, parent] of UT.breadth_first_walk(t)) {
       i++;
     }
     assert.equal(i, 1);
@@ -45,19 +41,19 @@ describe("Page Navigation works", () => {
 
 describe("Tree Walker", () => {
   it("can load", () => {
-    const t = new TreeNode({ name: "Hi" });
+    const t = new UT.TreeNode({ name: "Hi" });
   });
   it("can walk an single tree", () => {
-    const t = new TreeNode({ name: "Hi" });
+    const t = new UT.TreeNode({ name: "Hi" });
     let i = 0;
-    for (const [current, parent] of breadth_first_walk(t)) {
+    for (const [current, parent] of UT.breadth_first_walk(t)) {
       i++;
     }
     assert.equal(i, 1);
   });
   it("can walk an empty tree", () => {
     let i = 0;
-    for (const [current, parent] of breadth_first_walk(null)) {
+    for (const [current, parent] of UT.breadth_first_walk(null)) {
       i++;
     }
     assert.equal(i, 0);
