@@ -80,3 +80,5 @@ Back in the 2000s, "amazing developers" walked through all their code in the deb
 ### What is the right amount of test coverage?
 
 ## Great books
+
+{%include amazon.html asin="B095C16LSW;1492052205" %}
