@@ -1,0 +1,27 @@
+# syntax=docker/dockerfile:1
+# docker build -t devdocker devdocker
+
+FROM alpine
+WORKDIR /app
+COPY . .
+RUN ["cp","/app/zsh_profile", "/root/.zshrc"]
+RUN ["cp","/app/bash_profile", "/root/.bashrc"]
+EXPOSE 4000
+EXPOSE 35729
+RUN apk add python3 py3-pip netcat-openbsd npm fzf vim git make gcc ruby-full bat python3 zsh tmux w3m curl wget git ruby-dev musl-dev libc-dev g++ zlib libxml2
+WORKDIR /root
+
+RUN pip3 install bs4 icecream
+RUN npm install -g prettier
+
+RUN git clone https://github.com/idvorkin/settings ~/settings
+RUN git clone https://github.com/idvorkin/idvorkin.github.io ~/blog
+# RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+RUN ["cp","/app/zsh_profile", "/root/.zshrc"]
+
+WORKDIR /root/blog
+RUN gem install bundler
+# RUN bundle install
+RUN npm install
+CMD ["/usr/bin/tmux"]
