@@ -8,35 +8,35 @@ A collection of my research and technical explorations. Hopefully you find it us
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
 
-<!--
-Not using prettier ignore gaurds as vimtoc gets confused here.
--->
+<!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Engineering](#engineering)
-  - [Design and Architecture](#design-and-architecture)
-  - [Cloud first applications](#cloud-first-applications)
-  - [Data Systems](#data-systems)
-  - [Security](#security)
-  - [Tech tools and Tips](#tech-tools-and-tips)
+    - [Design and Architecture](#design-and-architecture)
+    - [Cloud first applications](#cloud-first-applications)
+    - [Data Systems](#data-systems)
+    - [Security](#security)
+    - [Tech tools and Tips](#tech-tools-and-tips)
+    - [Testing and Quality](#testing-and-quality)
 - [Science](#science)
-  - [Machine Learning](#machine-learning)
-  - [Natural Language Processing](#natural-language-processing)
-  - [Computer Video](#computer-video)
-  - [Statistics](#statistics)
+    - [Machine Learning](#machine-learning)
+    - [Natural Language Processing](#natural-language-processing)
+    - [Computer Video](#computer-video)
+    - [Statistics](#statistics)
 - [Business Domains](#business-domains)
-  - [Advertising systems](#advertising-systems)
-  - [Decentralized Finance](#decentralized-finance)
-  - [Build your own ...](#build-your-own-)
-  - [Other](#other)
-  - [Minor Tips](#minor-tips)
-  - [Projects](#projects)
-    - [Complete](#complete)
-    - [In Flight](#in-flight)
-    - [On Deck](#on-deck)
-    - [Mothballed](#mothballed)
+    - [Advertising systems](#advertising-systems)
+    - [Decentralized Finance](#decentralized-finance)
+    - [Build your own ...](#build-your-own-)
+    - [Other](#other)
+    - [Minor Tips](#minor-tips)
+    - [Projects](#projects)
+        - [Complete](#complete)
+        - [In Flight](#in-flight)
+        - [On Deck](#on-deck)
+        - [Mothballed](#mothballed)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## Engineering
 
@@ -49,6 +49,8 @@ Not using prettier ignore gaurds as vimtoc gets confused here.
 ### [Security](/td/better-security-design)
 
 ### [Tech tools and Tips](/tools)
+
+### [Testing and Quality](/testing)
 
 ## Science
 
