@@ -151,8 +151,13 @@ function ProcessBackLinks(backLinks) {
     );
   }
 }
+async function addBackLinksLoader() {
+  ProcessBackLinks(await get_link_info());
+}
 
-function addBackLinksLoader() {
+interface ILinkInfo {}
+
+async function get_link_info(): Promise<ILinkInfo> {
   const url = window.location.href;
   const prodPrefix = "https://idvork.in";
   const isProd = url.includes(prodPrefix);
@@ -165,7 +170,7 @@ function addBackLinksLoader() {
     backlinks_url = "/back-links.json";
   }
 
-  $.getJSON(backlinks_url, ProcessBackLinks);
+  return $.getJSON(backlinks_url);
 }
 
 function keyboard_shortcut_loader() {
@@ -212,4 +217,4 @@ function load_globals() {
   });
 }
 
-export { load_globals };
+export { load_globals, get_link_info };

@@ -1,6 +1,7 @@
 // Only include this in the html files, one per file
 // This allows code to seet things to refactor
-import { add_sunburst, add_random_prompts, TreeNode, } from "./random-prompter.js";
+import { add_sunburst, add_random_prompts, TreeNode, shuffle, } from "./random-prompter.js";
+import { get_link_info } from "./main.js";
 class SevenHabits {
     get_tree() {
         const root = new TreeNode({
@@ -68,9 +69,39 @@ class ThingsIEnjoy {
         });
     }
 }
+// TODO: De-Dup from blogger_import.ts
+function make_post_preview_html({ url, title, description }) {
+    // TODO: HACK: Strip to the right of Week number
+    const title_href = `<h4> <a href='${url}'}>${title}</a></h4>`;
+    const excerptDisplayText = `<div> ${description} </div>`;
+    return `
+    <div class='alert alert-info'>
+      ${title_href}
+      ${excerptDisplayText}
+    </div>
+  `;
+}
+async function add_random_post(element) {
+    const links = await get_link_info();
+    const all_url_info = links["url_info"];
+    //  Yuk, find a clearere way to do this
+    const all_pages = new Array(Object.entries(all_url_info))[0].map(e => e[1]);
+    const random_post = shuffle(all_pages)[0];
+    console.log(random_post);
+    const new_element = make_post_preview_html({
+        url: random_post["url"],
+        title: random_post["title"],
+        description: random_post["description"],
+    });
+    console.log(new_element);
+    $(element)
+        .empty()
+        .append(new_element);
+}
 function load_enjoy2() {
     add_sunburst("sunburst", "sunburst_text", new ThingsIEnjoy().get_tree());
     add_random_prompts();
+    add_random_post("#random-blog-posts");
 }
 function load_7_habits() {
     add_sunburst("sunburst", "sunburst_text", new SevenHabits().get_tree());

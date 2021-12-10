@@ -138,7 +138,10 @@ function ProcessBackLinks(backLinks) {
         back_link_location.append(`<div> <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info["description"]}  <span></div></div>`);
     }
 }
-function addBackLinksLoader() {
+async function addBackLinksLoader() {
+    ProcessBackLinks(await get_link_info());
+}
+async function get_link_info() {
     const url = window.location.href;
     const prodPrefix = "https://idvork.in";
     const isProd = url.includes(prodPrefix);
@@ -150,7 +153,7 @@ function addBackLinksLoader() {
     else {
         backlinks_url = "/back-links.json";
     }
-    $.getJSON(backlinks_url, ProcessBackLinks);
+    return $.getJSON(backlinks_url);
 }
 function keyboard_shortcut_loader() {
     Mousetrap.bind("s", e => (location.href = "/"));
@@ -193,5 +196,5 @@ function load_globals() {
         generateToc("ui-toc-affix", false);
     });
 }
-export { load_globals };
+export { load_globals, get_link_info };
 //# sourceMappingURL=main.js.map

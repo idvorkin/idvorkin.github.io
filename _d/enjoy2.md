@@ -18,6 +18,12 @@ It’s easy to forget the many, often tiny things that makes me happy. For when 
     defer(load_enjoy2)
 </script>
 
+## Random Wisdom
+
+<div id="random-blog-posts">
+    Will be replaced by  a random blog post        
+</div>
+
 ## General
 
 ### Go to the grocery store

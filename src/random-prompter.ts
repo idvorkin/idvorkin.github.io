@@ -204,7 +204,11 @@ async function add_sunburst(
     [sunburst_config] as any,
     sunburst_layout
   );
-  const set_random_prompt_text = text => $(`#${random_text_div_id}`).text(text);
+  const set_random_prompt_text = text => {
+    console.log("set_random_prompt_text", text);
+    $(`#${random_text_div_id}`).text(text);
+  };
+
   // Set click handler for div
   $(`#${random_text_div_id}`)
     .first()
@@ -236,4 +240,4 @@ const UT = {
 
 // How do I export things only for testing?
 // I guess they should be in their own module
-export { add_random_prompts, add_sunburst, TreeNode, UT };
+export { add_random_prompts, add_sunburst, TreeNode, UT, shuffle };
