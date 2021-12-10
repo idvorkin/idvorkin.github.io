@@ -15,9 +15,17 @@ describe("Things I enjoy", () => {
     cy.get("#sunburst text:first")
       .invoke("text")
       .as("default_center_text");
+    cy.get("#random-blog-posts")
+      .invoke("text")
+      .as("blog_text");
   }),
     it("loads", () => {
       cy.location("href").should("match", /todo_enjoy/);
+    }),
+    it("Click random blog post randomizes", function() {
+      cy.get("#random-blog-posts")
+        .click()
+        .should("not.equal", this.blog_text);
     }),
     it("has magic in donut", () => {
       const category_to_find = "Magic";
@@ -25,13 +33,13 @@ describe("Things I enjoy", () => {
         "have.text",
         category_to_find
       );
-    }),
-    it("Get different prompt clicking in donut ", function() {
-      // https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Debugging
-      cy.get(".alert:first").should("contain.text", this.default_prompt);
-      cy.get("@donut-center").click({ force: true });
-      cy.get(".alert:first").should("not.contain.text", this.default_prompt);
     });
+  it("Get different prompt clicking in donut ", function() {
+    // https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Debugging
+    cy.get(".alert:first").should("contain.text", this.default_prompt);
+    cy.get("@donut-center").click({ force: true });
+    cy.get(".alert:first").should("not.contain.text", this.default_prompt);
+  });
   it("Click into magic zooms magic", function() {
     // https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Debugging
 
