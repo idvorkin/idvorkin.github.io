@@ -72,12 +72,10 @@ class ThingsIEnjoy {
 // TODO: De-Dup from blogger_import.ts
 function make_post_preview_html({ url, title, description }) {
     // TODO: HACK: Strip to the right of Week number
-    const title_href = `<h4> <a href='${url}'}>${title}</a></h4>`;
-    const excerptDisplayText = `<div> ${description} </div>`;
+    const title_href = `<a href='${url}'}>${title}</a>`;
     return `
     <div class='alert alert-info'>
-      ${title_href}
-      ${excerptDisplayText}
+      ${title_href}: ${description}
     </div>
   `;
 }
@@ -94,6 +92,9 @@ async function add_random_post(element) {
         description: random_post["description"],
     });
     console.log(new_element);
+    $(new_element).click(() => {
+        add_random_post(element);
+    });
     $(element)
         .empty()
         .append(new_element);
