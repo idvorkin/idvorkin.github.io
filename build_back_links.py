@@ -112,8 +112,14 @@ class LinkBuilder:
             # <meta property="og:description" content="Coaching is like midwifery">
             descriptionTag = soup.find("meta", property="og:description")
             description = descriptionTag["content"] if descriptionTag else "..."
+            # Remove all in site nav, which have a parent of class including site_nav
+            def is_site_nav(tag):
+                if "class" not in tag.attrs:
+                    return False
+                return "nav-item" in tag["class"]
 
-            links = [tag["href"] for tag in soup.find_all("a") if "href" in tag.attrs]
+
+            links = [tag["href"] for tag in soup.find_all("a") if "href" in tag.attrs and (not is_site_nav(tag))]
             links = [link for link in links if jekyll_config.is_allow_outgoing(link)]
 
             # cut down on small changes to backlinks when minor file changes
