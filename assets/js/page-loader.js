@@ -91,7 +91,6 @@ async function add_random_post(element) {
         description: random_post["description"],
     });
     const new_element = $(new_element_html);
-    console.log(new_element);
     $(element)
         .empty()
         .append(new_element);
@@ -101,7 +100,6 @@ async function add_random_post(element) {
         if (event.target.tagName != "A") {
             add_random_post(element);
         }
-        return false;
     });
 }
 function load_enjoy2() {
