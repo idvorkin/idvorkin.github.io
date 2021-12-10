@@ -155,7 +155,6 @@ function ProcessBackLinks(backLinks) {
 function addBackLinksLoader() {
   const url = window.location.href;
   const prodPrefix = "https://idvork.in";
-  const testPrefix = "http://localhost:4000";
   const isProd = url.includes(prodPrefix);
 
   var backlinks_url = "";
@@ -163,7 +162,7 @@ function addBackLinksLoader() {
     backlinks_url =
       "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";
   } else {
-    backlinks_url = testPrefix + "/back-links.json";
+    backlinks_url = "/back-links.json";
   }
 
   $.getJSON(backlinks_url, ProcessBackLinks);
@@ -201,13 +200,16 @@ function on_monkey_button_click(e) {
 function monkey_button_loader() {
   $("#monkey-button").bind("click", on_monkey_button_click);
 }
+function load_globals() {
+  $(monkey_button_loader);
+  $(addBackLinksLoader);
+  $(JsTemplateReplace);
+  $(keyboard_shortcut_loader);
+  $(() => {
+    // TOC Generation should go to posts.
+    generateToc("ui-toc", true);
+    generateToc("ui-toc-affix", false);
+  });
+}
 
-$(monkey_button_loader);
-$(addBackLinksLoader);
-$(JsTemplateReplace);
-$(keyboard_shortcut_loader);
-$(() => {
-  // TOC Generation should go to posts.
-  generateToc("ui-toc", true);
-  generateToc("ui-toc-affix", false);
-});
+export { load_globals };
