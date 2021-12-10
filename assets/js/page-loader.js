@@ -85,19 +85,24 @@ async function add_random_post(element) {
     //  Yuk, find a clearere way to do this
     const all_pages = new Array(Object.entries(all_url_info))[0].map(e => e[1]);
     const random_post = shuffle(all_pages)[0];
-    console.log(random_post);
-    const new_element = make_post_preview_html({
+    const new_element_html = make_post_preview_html({
         url: random_post["url"],
         title: random_post["title"],
         description: random_post["description"],
     });
+    const new_element = $(new_element_html);
     console.log(new_element);
-    $(new_element).click(() => {
-        add_random_post(element);
-    });
     $(element)
         .empty()
         .append(new_element);
+    // Clicking on the element should result in a reload, unless you're
+    // Clicking on a link
+    new_element.click(event => {
+        if (event.target.tagName != "A") {
+            add_random_post(element);
+        }
+        return false;
+    });
 }
 function load_enjoy2() {
     add_sunburst("sunburst", "sunburst_text", new ThingsIEnjoy().get_tree());
