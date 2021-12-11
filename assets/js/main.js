@@ -115,10 +115,19 @@ function JsTemplateReplace() {
         $(aToReplace).replaceWith(replace);
     }
 }
-function ProcessBackLinks(backLinks) {
+function MakeBackLinkHTML(url_info) {
+    const title_href = `<a href=${url_info.url}>${url_info.title}</a>`;
+    const class_link = `link-box description truncate-css`;
+    const output = `
+<div>
+    <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info.description} <span></div>
+</div>`;
+    return output;
+}
+async function ProcessBackLinks(allUrls) {
     var _a;
     var my_path = new URL(document.URL).pathname;
-    var backlinks = (_a = backLinks["url_info"][my_path]) === null || _a === void 0 ? void 0 : _a.incoming_links;
+    const backlinks = (_a = allUrls[my_path]) === null || _a === void 0 ? void 0 : _a.incoming_links;
     if (!backlinks) {
         console.log(`No backlinks for the page ${my_path}`);
         return;
@@ -129,13 +138,10 @@ function ProcessBackLinks(backLinks) {
         return;
     }
     back_link_location.append("<div id='links-to-page-title'> <b>LINKS TO THIS NOTE</b><div>");
-    const bl_ui = backLinks["url_info"];
-    var sort_descending_by_size = (a, b) => Number(bl_ui[b].doc_size) - Number(bl_ui[a].doc_size);
+    var sort_descending_by_size = (a, b) => Number(allUrls[b].doc_size) - Number(allUrls[a].doc_size);
     for (var link of backlinks.sort(sort_descending_by_size)) {
-        const url_info = backLinks["url_info"][link];
-        const title_href = `<a href=${url_info["url"]}>${url_info["title"]}</a>`;
-        const class_link = `link-box description truncate-css`;
-        back_link_location.append(`<div> <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info["description"]}  <span></div></div>`);
+        const url_info = allUrls[link];
+        back_link_location.append(MakeBackLinkHTML(url_info));
     }
 }
 async function addBackLinksLoader() {
@@ -153,16 +159,18 @@ async function get_link_info() {
     else {
         backlinks_url = "/back-links.json";
     }
-    return $.getJSON(backlinks_url);
+    const urlJSON = (await $.getJSON(backlinks_url));
+    return urlJSON.url_info;
 }
 function keyboard_shortcut_loader() {
-    Mousetrap.bind("s", e => (location.href = "/"));
-    Mousetrap.bind("t", e => ForceShowRightSideBar());
-    Mousetrap.bind("p", e => SwapProdAndTest());
-    Mousetrap.bind("z", e => (location.href = "/random"));
-    Mousetrap.bind("a", e => (location.href = "/all"));
-    Mousetrap.bind("m", e => (location.href = "/toc"));
-    Mousetrap.bind("6", e => (location.href = "/ig66"));
+    const mouseTrap = Mousetrap();
+    mouseTrap.bind("s", e => (location.href = "/"));
+    mouseTrap.bind("t", e => ForceShowRightSideBar());
+    mouseTrap.bind("p", e => SwapProdAndTest());
+    mouseTrap.bind("z", e => (location.href = "/random"));
+    mouseTrap.bind("a", e => (location.href = "/all"));
+    mouseTrap.bind("m", e => (location.href = "/toc"));
+    mouseTrap.bind("6", e => (location.href = "/ig66"));
     let shortcutHelp = `
 Try these shortcuts:
   s - search
@@ -173,7 +181,7 @@ Try these shortcuts:
   m - global toc
   6 - family journal
   `;
-    Mousetrap.bind("?", e => alert(shortcutHelp));
+    mouseTrap.bind("?", e => alert(shortcutHelp));
 }
 function on_monkey_button_click(e) {
     if (window.location.href.includes("/ig66")) {
@@ -196,5 +204,5 @@ function load_globals() {
         generateToc("ui-toc-affix", false);
     });
 }
-export { load_globals, get_link_info };
+export { load_globals, get_link_info, MakeBackLinkHTML };
 //# sourceMappingURL=main.js.map

@@ -120,9 +120,19 @@ function JsTemplateReplace() {
   }
 }
 
-function ProcessBackLinks(backLinks) {
+function MakeBackLinkHTML(url_info: IURLInfo) {
+  const title_href = `<a href=${url_info.url}>${url_info.title}</a>`;
+  const class_link = `link-box description truncate-css`;
+  const output = `
+<div>
+    <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info.description} <span></div>
+</div>`;
+  return output;
+}
+
+async function ProcessBackLinks(allUrls: IURLInfoMap) {
   var my_path = new URL(document.URL).pathname;
-  var backlinks = backLinks["url_info"][my_path]?.incoming_links;
+  const backlinks = allUrls[my_path]?.incoming_links;
   if (!backlinks) {
     console.log(`No backlinks for the page ${my_path}`);
     return;
@@ -138,26 +148,39 @@ function ProcessBackLinks(backLinks) {
     "<div id='links-to-page-title'> <b>LINKS TO THIS NOTE</b><div>"
   );
 
-  const bl_ui = backLinks["url_info"];
   var sort_descending_by_size = (a, b) =>
-    Number(bl_ui[b].doc_size) - Number(bl_ui[a].doc_size);
+    Number(allUrls[b].doc_size) - Number(allUrls[a].doc_size);
 
   for (var link of backlinks.sort(sort_descending_by_size)) {
-    const url_info = backLinks["url_info"][link];
-    const title_href = `<a href=${url_info["url"]}>${url_info["title"]}</a>`;
-    const class_link = `link-box description truncate-css`;
-    back_link_location.append(
-      `<div> <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info["description"]}  <span></div></div>`
-    );
+    const url_info = allUrls[link];
+    back_link_location.append(MakeBackLinkHTML(url_info));
   }
 }
 async function addBackLinksLoader() {
   ProcessBackLinks(await get_link_info());
 }
 
-interface ILinkInfo {}
+export interface IBacklinks {
+  redirects: { [key: string]: string };
+  url_info: IURLInfoMap;
+}
 
-async function get_link_info(): Promise<ILinkInfo> {
+export interface IURLInfoMap {
+  [key: string]: IURLInfo;
+}
+
+export interface IURLInfo {
+  url: string;
+  title: string;
+  description: string;
+  file_path: string;
+  outgoing_links: string[];
+  incoming_links: string[];
+  redirect_url: string;
+  doc_size: number;
+}
+
+async function get_link_info(): Promise<IURLInfoMap> {
   const url = window.location.href;
   const prodPrefix = "https://idvork.in";
   const isProd = url.includes(prodPrefix);
@@ -170,17 +193,19 @@ async function get_link_info(): Promise<ILinkInfo> {
     backlinks_url = "/back-links.json";
   }
 
-  return $.getJSON(backlinks_url);
+  const urlJSON = (await ($.getJSON(backlinks_url) as any)) as IBacklinks;
+  return urlJSON.url_info;
 }
 
 function keyboard_shortcut_loader() {
-  Mousetrap.bind("s", e => (location.href = "/"));
-  Mousetrap.bind("t", e => ForceShowRightSideBar());
-  Mousetrap.bind("p", e => SwapProdAndTest());
-  Mousetrap.bind("z", e => (location.href = "/random"));
-  Mousetrap.bind("a", e => (location.href = "/all"));
-  Mousetrap.bind("m", e => (location.href = "/toc"));
-  Mousetrap.bind("6", e => (location.href = "/ig66"));
+  const mouseTrap: any = Mousetrap();
+  mouseTrap.bind("s", e => (location.href = "/"));
+  mouseTrap.bind("t", e => ForceShowRightSideBar());
+  mouseTrap.bind("p", e => SwapProdAndTest());
+  mouseTrap.bind("z", e => (location.href = "/random"));
+  mouseTrap.bind("a", e => (location.href = "/all"));
+  mouseTrap.bind("m", e => (location.href = "/toc"));
+  mouseTrap.bind("6", e => (location.href = "/ig66"));
 
   let shortcutHelp = `
 Try these shortcuts:
@@ -192,7 +217,7 @@ Try these shortcuts:
   m - global toc
   6 - family journal
   `;
-  Mousetrap.bind("?", e => alert(shortcutHelp));
+  mouseTrap.bind("?", e => alert(shortcutHelp));
 }
 function on_monkey_button_click(e) {
   if (window.location.href.includes("/ig66")) {
@@ -217,4 +242,4 @@ function load_globals() {
   });
 }
 
-export { load_globals, get_link_info };
+export { load_globals, get_link_info, MakeBackLinkHTML };
