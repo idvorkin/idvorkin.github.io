@@ -18,6 +18,7 @@ https://insights.stackoverflow.com/survey/2020#developer-profile-age
 
 - [BIG DISCLAIMER](#big-disclaimer)
 - [Hypothesis](#hypothesis)
+    - [Exponential growth of programmers](#exponential-growth-of-programmers)
     - [Won the lottery and cashed out](#won-the-lottery-and-cashed-out)
     - [Moved to management.](#moved-to-management)
     - [Switched to other industries.](#switched-to-other-industries)
@@ -37,6 +38,12 @@ https://insights.stackoverflow.com/survey/2020#developer-profile-age
 These are some half baked ideas, looking forwad to discussing with others to building better hypothesis.
 
 ### Hypothesis
+
+#### Exponential growth of programmers
+
+From clean craftsmanship:
+
+“People look at the number of young people in programming and conclude that it’s a young person’s profession. They ask, “Where are all the old people?” We’re all still here! We haven’t gone anywhere. There just weren’t that many of us to begin with. The problem is that there aren’t enough of us old guys to teach the new programmers coming in. For every programmer with 30 years’ experience, there are 63 programmers who need to learn something from her (or him), 32 of whom are brand new.”
 
 #### Won the lottery and cashed out
 
