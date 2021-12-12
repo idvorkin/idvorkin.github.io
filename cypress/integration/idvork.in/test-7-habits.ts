@@ -1,30 +1,32 @@
 /// <reference types="cypress" />
 
+import { gray } from "d3";
+
 // TODO: DRY vs todo enjoy test!
 
 describe("7 habits", () => {
-  const category_to_find = "Be Proactive";
+  const known_category_on_sunburst = "Be Proactive";
+  const get_default_prompt = () => cy.get("#sunburst_text");
+  const get_donut_center = () => cy.get(".sunburst text:first");
   beforeEach(() => {
-    cy.visit("/7h");
-    cy.get(".alert:first")
-      .invoke("text")
-      .as("default_prompt");
-    cy.get("#sunburst text:first").as("donut_center");
-    cy.get("#sunburst text:first")
-      .invoke("text")
-      .as("default_center_text");
+    cy.visit("/7-habits");
   }),
-    it("has to contain proactive", () => {
-      cy.get(`text:contains('${category_to_find}')`).should(
+    it("Has to known category", () => {
+      cy.get(`text:contains('${known_category_on_sunburst}')`).should(
         "have.text",
-        category_to_find
+        known_category_on_sunburst
       );
     }),
-    it("Get different prompt clicking in donut ", function() {
+    it("Text changes when clicking on donut ", function() {
       /*need function to access this variables*/
       // https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Debugging
-      cy.get(".alert:first").should("contain.text", this.default_prompt);
-      cy.get("@donut_center").click({ force: true });
-      cy.get(".alert:first").should("not.contain.text", this.default_prompt);
+      get_default_prompt()
+        .invoke("text")
+        .then(original_text => {
+          get_donut_center().click({ force: true });
+          get_default_prompt()
+            .invoke("text")
+            .should("not.eq", original_text);
+        });
     });
 });
