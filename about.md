@@ -71,6 +71,12 @@ The monkey button selects a random page. It's the solution to Seth Goden's ancho
 
 Even more true with your thoughts. If you don’t know to look for it, if you don’t believe it’s there, it might as well be deleted. It’s worth putting in regular effort to remind ourselves of what we’ve already know and how it has served us in the past.\*
 
+### Are you doing this outside of work? How do you have time.
+
+From "Clean Craftsmanship" on being a professional ...
+
+“If your employer provides you the time and space to do this kind of learning, then take as much advantage of it as you can. If your employer is not so helpful, then you’ll have to learn on your own time. Be prepared to spend several hours per month on it. Make sure you have the personal time set aside for it. Yes, I know, you have family obligations, there are bills to pay and planes to catch, and you’ve got a life. Okay, but you also have a profession. And professions need care and maintenance. I expect us all to be continuous aggressive learners.”
+
 ### How do I get in touch?
 
 I love knowing smart, resilient, positive people. Connect and message me on [Linked In](/linkedin).
