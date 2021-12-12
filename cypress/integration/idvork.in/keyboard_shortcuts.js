@@ -1,8 +1,10 @@
 /// <reference types="cypress" />
 
+
 describe('Keyboard shortcuts work', () => {
+  const start_page ='/save-the-soup'
   beforeEach(() => {
-    cy.visit('/td').wait(500) // ensure keyboard handers get bound.
+    cy.visit(start_page).wait(500); // fast page, give keybindings time to load
   })
 
   , it('help loads', () => {
@@ -12,7 +14,7 @@ describe('Keyboard shortcuts work', () => {
 
   , it('go to ig66', () => {
     cy.get('body').type('6') // Find first h3 to get out of the  main page
-    cy.location('pathname').should('match', /\/ig66/);
+    cy.location('pathname').should('contain', 'ig66');
 
       // assert loaded
 
@@ -20,7 +22,7 @@ describe('Keyboard shortcuts work', () => {
   it('go to random', () => {
 
     cy.get('body').type('z') // Find first h3 to get out of the  main page
-    cy.location('href').should('match', /from_random/);
+    cy.location('href').should('not.equal', start_page);
       // assert loaded
 
   })

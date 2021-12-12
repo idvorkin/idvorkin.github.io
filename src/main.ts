@@ -219,12 +219,28 @@ Try these shortcuts:
   `;
   mouseTrap.bind("?", e => alert(shortcutHelp));
 }
-function on_monkey_button_click(e) {
+
+// Export and share with others.
+// https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffle(list) {
+  return list
+    .map(value => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+}
+
+async function on_monkey_button_click(e) {
   if (window.location.href.includes("/ig66")) {
     window.location.href = "/ig66";
     return;
   }
-  window.location.href = "/random";
+
+  const all_url_info = await get_link_info();
+  //  Yuk, find a clearere way to do this
+  const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
+    .map(e => e[1]);
+  const random_post = shuffle(all_pages)[0];
+  window.location.href = random_post.url;
 }
 
 function monkey_button_loader() {

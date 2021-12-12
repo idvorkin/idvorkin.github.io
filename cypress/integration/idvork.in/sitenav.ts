@@ -13,7 +13,7 @@
 
 describe("Page Navigation works", () => {
   beforeEach(() => {
-    cy.visit("/magic"); // '/' is a bit slow, this page is fast
+    cy.visit("/save-the-soup"); // '/' is a bit slow, this page is fast
   }),
     it("go to ig66", () => {
       cy.get(".fa-baby-carriage").click();
@@ -45,7 +45,7 @@ describe("Page Navigation works", () => {
         .should("have.attr", "href")
         .and(
           "equal",
-          "https://github.com/idvorkin/idvorkin.github.io/blob/master/_posts/2016-04-21-magical-memories.md"
+          "https://github.com/idvorkin/idvorkin.github.io/blob/master/_posts/2018-11-04-save-the-soup.md"
         );
     }),
     it("go to linked in", () => {
