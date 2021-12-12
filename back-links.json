@@ -153,7 +153,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/7-habits": {
       "py/object": "__main__.Page",
@@ -229,7 +229,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/adblocker-trojan": {
       "py/object": "__main__.Page",
@@ -295,7 +295,7 @@
       "outgoing_links": ["/depression", "/mental-pain", "/mental-pain"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/anxiety": {
       "py/object": "__main__.Page",
@@ -335,7 +335,7 @@
       "outgoing_links": ["/7h", "/essentialism", "/frog"],
       "incoming_links": ["/7-habits", "/anxiety", "/idle"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 13000
     },
     "/being-a-great-manager": {
       "py/object": "__main__.Page",
@@ -554,7 +554,7 @@
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/d/2010-2-15-2016-Misc-Uncategorized": {
       "py/object": "__main__.Page",
@@ -565,7 +565,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 22000
+      "doc_size": 23000
     },
     "/d/2015-11-18-Outsourcing": {
       "py/object": "__main__.Page",
@@ -587,7 +587,7 @@
       "outgoing_links": ["/tech-health-toys"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/d/2016-05-09-lost-interview": {
       "py/object": "__main__.Page",
@@ -750,7 +750,7 @@
         "/switch"
       ],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 16000
     },
     "/d/management_interviews": {
       "py/object": "__main__.Page",
@@ -787,7 +787,7 @@
         "/timeoff"
       ],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 16000
     },
     "/d/time-off-11-2021": {
       "py/object": "__main__.Page",
@@ -1341,7 +1341,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 12000
     },
     "/irl": {
       "py/object": "__main__.Page",
@@ -1492,7 +1492,7 @@
         "/software-leadership-roles"
       ],
       "redirect_url": "",
-      "doc_size": 119000
+      "doc_size": 120000
     },
     "/mental-pain": {
       "py/object": "__main__.Page",
@@ -1560,7 +1560,7 @@
       ],
       "incoming_links": ["/timeoff"],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 12000
     },
     "/mind-monsters": {
       "py/object": "__main__.Page",
@@ -1806,7 +1806,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 9000
+      "doc_size": 10000
     },
     "/reflect-tool": {
       "py/object": "__main__.Page",
@@ -2075,7 +2075,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 11000
     },
     "/td/better-security-design": {
       "py/object": "__main__.Page",
@@ -2196,7 +2196,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 13000
+      "doc_size": 14000
     },
     "/td/mosh": {
       "py/object": "__main__.Page",
@@ -2353,12 +2353,12 @@
       "py/object": "__main__.Page",
       "url": "/testing",
       "title": "TESTING AND QUALITY",
-      "description": "If it’s not tested, it doesn’t work’.’ Quality can not be outsourced.\n\n",
+      "description": "If it’s not tested, it doesn’t work’.’ When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you’ve got more work to do\n\n",
       "file_path": "_site/testing.html",
       "outgoing_links": ["/td/design"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 15000
     },
     "/The-Genesis-Node": {
       "py/object": "__main__.Page",
