@@ -5,6 +5,7 @@ describe("Things I enjoy", () => {
   const get_donut_center = () => cy.get(".sunburst text:first");
   const get_blog_post = () => cy.get("#random-blog-posts");
   const default_center_text = "Invest in";
+  const hobbies = "Hobbies";
   beforeEach(() => {
     // Cypress starts out with a blank slate for each test
     // so we must tell it to visit our website with the `cy.visit()` command.
@@ -15,6 +16,9 @@ describe("Things I enjoy", () => {
     it("loads", () => {
       cy.location("href").should("match", /todo_enjoy/);
     });
+  it("Has hobbies in donut", () => {
+    cy.contains(hobbies).should("have.text", hobbies);
+  });
   it("Click random blog post randomizes", function() {
     get_blog_post()
       .invoke("text")
@@ -24,10 +28,6 @@ describe("Things I enjoy", () => {
           .invoke("text")
           .should("not.eq", original_text);
       });
-  });
-  it("Has magic in donut", () => {
-    const category_to_find = "Magic";
-    cy.contains(category_to_find).should("have.text", category_to_find);
   });
   it("Get different prompt clicking in donut ", function() {
     get_default_prompt()
@@ -41,8 +41,6 @@ describe("Things I enjoy", () => {
   });
   it("Click into Hobbies zooms Hoobies, click again zooms out", function() {
     // https://docs.cypress.io/guides/core-concepts/variables-and-aliases#Debugging
-
-    const hobbies = "Hobbies";
 
     // click on magic
     cy.contains(hobbies).click({ force: true });

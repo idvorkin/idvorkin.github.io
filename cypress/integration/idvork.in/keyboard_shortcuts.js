@@ -22,8 +22,7 @@ describe('Keyboard shortcuts work', () => {
   it('go to random', () => {
 
     cy.get('body').type('z') // Find first h3 to get out of the  main page
-    cy.location('href').should('not.equal', start_page);
-      // assert loaded
+    cy.location('pathname').should('not.contain', start_page);
 
   })
 })
