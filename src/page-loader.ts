@@ -93,11 +93,9 @@ function makePostPreviewHTML({ url, title, description }) {
 
 async function add_random_post(element) {
   const all_url_info = await get_link_info();
-  console.log("AUI as OE", Object.entries(all_url_info));
   //  Yuk, find a clearere way to do this
   const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
     .map(e => e[1]);
-  console.log("AP", all_pages);
   const random_post = shuffle(all_pages)[0];
   const new_element_html = makePostPreviewHTML({
     url: random_post["url"],
@@ -106,7 +104,6 @@ async function add_random_post(element) {
   });
 
   const new_element = $(new_element_html);
-  console.log(new_element);
   $(element)
     .empty()
     .append(new_element);

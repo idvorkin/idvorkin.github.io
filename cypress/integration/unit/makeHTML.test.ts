@@ -1,7 +1,9 @@
 /// <reference types="cypress" />
 // import { UT as UTMain } from "../../../_site/assets/js/main.js";
 import { IURLInfo, MakeBackLinkHTML } from "../../../src/main";
-import { makePostPreviewHTML } from "../../../src/page-loader";
+
+// Sigh can't improt as nested dependency, super sigh.
+// import { makePostPreviewHTML } from "../../../src/page-loader";
 
 // Welcome to Cypress!
 //
@@ -47,9 +49,11 @@ describe("Snapshot HTML Makers", () => {
       redirect_url: "",
       doc_size: 0,
     };
+    /*
     const backLinkHTML = makePostPreviewHTML(urlInfo);
     const expectedHTML = `
       hi
       `;
+      */
   });
 });

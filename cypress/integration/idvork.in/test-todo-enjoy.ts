@@ -12,9 +12,6 @@ describe("Things I enjoy", () => {
       .invoke("text")
       .as("default_prompt");
     cy.get("#sunburst text:first").as("donut_center");
-    cy.get("#sunburst text:first")
-      .invoke("text")
-      .as("default_center_text");
     cy.get("#random-blog-posts")
       .invoke("text")
       .as("blog_text");
@@ -45,15 +42,16 @@ describe("Things I enjoy", () => {
 
     // Click on magic
     const category_to_click = "Magic";
+    const default_center_text = "Invest in";
     cy.get(`text:contains('${category_to_click}')`).click({ force: true });
     cy.get("@donut-center").should("contain.text", category_to_click);
 
     // Click again should go back to default_prompt
     cy.get("@donut-center").click({ force: true });
-    cy.get("@donut-center").should("contain.text", this.default_center_text);
+    cy.get("@donut-center").should("contain.text", default_center_text);
 
     // click on magic again
-    cy.get(`text:contains('${category_to_click}')`).click({ force: true });
+    cy.get("@donut-center").click({ force: true });
 
     // click on coin Magic
     cy.get(`text:contains('Coin Magic')`).click({ force: true });
@@ -63,7 +61,7 @@ describe("Things I enjoy", () => {
 
     // go back to default_prompt by clicking center
     cy.get("@donut-center").click({ force: true });
-    cy.get("@donut-center").should("contain.text", this.default_center_text);
+    cy.get("@donut-center").should("contain.text", default_center_text);
   });
   it("Click prompt randomizes", function() {
     cy.get(".alert:first").should("contain.text", this.default_prompt);
