@@ -62,6 +62,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [How did you grow top talent?](#how-did-you-grow-top-talent)
     - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
     - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
+    - [How do you have a difficult converastion](#how-do-you-have-a-difficult-converastion)
 - [Culture](#culture)
     - [What is your ideal culture?](#what-is-your-ideal-culture)
     - [How do you help a team gel](#how-do-you-help-a-team-gel)
@@ -674,6 +675,17 @@ Best practices for performance reviews:
 Often, when folks think of career development, they fixate on their job title and compensation. Those aspects are important, but I encourage folks I support that career is only [one aspect of life](https://bit.ly/igor-wlb-manifesto), and they should look at their life holistically
 
 {%include blob_image.html src="blog/career-convo.png" %}
+
+### How do you have a difficult converastion
+
+From Simon Sinek, a great script:
+
+- I need to have a difficult conversation
+- Afraid to have this conversation,
+- afraid to say something wrong, and accidentally trigger someone
+- I know having this conversation is more important then my fears against it
+- Please work with me to struggle through this.
+- Because want us to tackle this subject
 
 ## Culture
 
