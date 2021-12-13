@@ -97,4 +97,4 @@ Examples:
 
 ## Great books
 
-{%include amazon.html asin="B095C16LSW;1492052205" %}
+{%include amazon.html asin="B09782L692;B095C16LSW;1492052205" %}
