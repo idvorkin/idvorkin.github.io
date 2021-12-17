@@ -31,14 +31,27 @@ function add_random_prompts() {
 
 function render_prompt_for_category(category, prompts_for_category) {
   //print one of the prompts
-  let random_prompt = _.sampleSize(prompts_for_category, 1)[0];
-  // console.log(`${category}:${random_prompt}`)
-  // elem = $(`<div> <span class="badge badge-pill badge-primary"> ${random_prompt}</span></div>`)[0]
-  const elem = $(
+  let get_random_prompt = () =>
+    _.chain(prompts_for_category)
+      .sampleSize(1)
+      .head()
+      .value();
+  let random_prompt = get_random_prompt();
+
+  const new_element = $(
     `<div class="alert alert-primary" role="alert"> ${random_prompt}</span></div>`
-  )[0];
-  $(category).after(elem);
+  );
+  // Clicking on the element should result in a reload, unless you're
+  // Clicking on a link
+  new_element.click(event => {
+    if (event.target.tagName != "A") {
+      new_element.html(get_random_prompt());
+    }
+  });
+
+  $(category).after(new_element);
 }
+
 function render_table_random(prompts_for_category) {
   // Create a table at XYZ.
   const table_placeholder = $("#prompt_table");
