@@ -8,8 +8,6 @@ It's Corona virus X-mas, not so bad edition, and I've got 2 weeks off. In an att
 
 This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
-I took the first 2 days to vegitate, which wasn't a conscious decision, it was just what happened when I didn't think about it. And boy did I vegitate. I think all I did on Sunday was consume media on my iPad and TV.
-
 ## Moments
 
 ## Success Stories
@@ -34,9 +32,10 @@ I've used this time to restart the flywheel on magic, and diet, re-inforce my di
         - [DENY LIST: Data Analysis - Pandas](#deny-list-data-analysis---pandas)
         - [DENY LIST: Ranking Systems](#deny-list-ranking-systems)
 - [Cognitive Health](#cognitive-health)
+    - [7 Habits](#7-habits)
 - [Emotional Health](#emotional-health)
     - [Meditation](#meditation)
-    - [750 words](#750-words)
+    - [750 words/Gratefulness](#750-wordsgratefulness)
 - [Physical Health](#physical-health)
     - [Statistics](#statistics)
     - [Diet](#diet)
@@ -51,6 +50,9 @@ I've used this time to restart the flywheel on magic, and diet, re-inforce my di
 <!-- prettier-ignore-end -->
 
 ## Top Learnings
+
+- This year, reads almost [identical to last year](/td/time-off-12-2020). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
+- Balance, it's all about balance!
 
 ## Relationships
 
@@ -79,9 +81,18 @@ Private
 
 ### Biking
 
+- Bike atleast every other day
+- Combine folding bike with subway for more range
+- Take a selfie with the Bicycle
+
 ### Software for Balance
 
 Interesting to think about how my blog can help me achieve balance. Prompts for things i enjoy seems like a good idea.
+
+- Some notion of weekly reviews with scoring.
+- Make up some UX for graphing my balance
+- Review and have someone else score your balance.
+- Update prompting system to be stateful, so it prompts you more for stuff you haven't been doing, or need more investment in.
 
 ### Tech Guru
 
@@ -95,20 +106,18 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 
 ## Cognitive Health
 
-- ☐ Summarize [7 habits](/7-habits)
-  - ☑ Break existing contenit into separate chapters for easy extension
-  - ☐ STRETCH: Update concepts page
-  - ☐ STRETCH: Update first things first page
-  - ☐ STRETCH: Update Seek first to understand
+### 7 Habits
+
+- ☐ STRETCH: Update concepts page
+- ☐ STRETCH: Update first things first page
+- ☐ STRETCH: Update Seek first to understand
+- ☐ Add more prompts to 7 habits page
 
 ## Emotional Health
 
-- ☐ Meditate Daily
-- ☐ Gratefulness journal daily
-
 ### Meditation
 
-### 750 words
+### 750 words/Gratefulness
 
 ## Physical Health
 
@@ -132,6 +141,8 @@ Gym Days:
 
 - ☐ Get hottub working again
 - ☐ Get propane heater working again.
+- ☐ Figure out LTC insurance
+- ☐ Expense all the stuff I've forgotten to expense
 
 ## Mental quicksand
 
@@ -150,4 +161,4 @@ The pro of time off during x-max break:
 
 ### January is going to be a tough month at work.
 
-January will be my first calibration at FB, I've got multiple people onboarding, and planning and all the normal manager complexities simultaniously. All of these situations occur naturally while being a manager, but it is hard when they all happen at the same time. I'll spend some time during holidays writing out reasonable expectations and best practices for dealing with these.
+January is calibration time at Meta. That's high work load and stress as a manager, but this will be my 3rd calibration at Meta, and like the 10th?? of my career. I have lots of calibration best practices to follow, and I'll tackle that when January rolls around.
