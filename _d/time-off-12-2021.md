@@ -8,11 +8,11 @@ It's Corona virus X-mas, not so bad edition, and I've got 2 weeks off. In an att
 
 This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
+My top priorities: - Restart my morning habit routine, cardio and magic. - Figure out tools to create more balance - Create moments with the family (and take Selfies of them)
+
 ## Moments
 
 ## Success Stories
-
-I've used this time to restart the flywheel on magic, and diet, re-inforce my discipline, and keep a balance with my family.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -53,6 +53,7 @@ I've used this time to restart the flywheel on magic, and diet, re-inforce my di
 
 - This year, reads almost [identical to last year](/td/time-off-12-2020). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
 - Balance, it's all about balance!
+- Prepare before you take time off so when you go in you don't need to spend much time vegetating.
 
 ## Relationships
 
