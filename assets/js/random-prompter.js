@@ -15,7 +15,10 @@ function add_random_prompts() {
 }
 function render_prompt_for_category(category, prompts_for_category) {
     //print one of the prompts
-    let get_random_prompt = () => _.chain(prompts_for_category).sampleSize(1).head().value();
+    let get_random_prompt = () => _.chain(prompts_for_category)
+        .sampleSize(1)
+        .head()
+        .value();
     let random_prompt = get_random_prompt();
     const new_element = $(`<div class="alert alert-primary" role="alert"> ${random_prompt}</span></div>`);
     // Clicking on the element should result in a reload, unless you're
