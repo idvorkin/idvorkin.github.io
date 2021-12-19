@@ -241,7 +241,10 @@ function random_from_list(list) {
 
 // This div gets content from the random_html_factory
 // and clicking does a re-randomize
-async function append_randomizer_div($parent, random_html_factory) {
+async function append_randomizer_div(
+  $parent: JQuery<HTMLElement>,
+  random_html_factory: () => string
+) {
   if ($parent.length != 1) {
     console.log("Passed in invalid parent element");
   }

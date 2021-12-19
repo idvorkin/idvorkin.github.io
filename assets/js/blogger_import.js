@@ -41,7 +41,6 @@ function html_for_blogpost(post) {
         item.append(excerptDisplayText);
     }
     const ret = item.html();
-    console.log("Hello", ret);
     return ret;
 }
 function get_achievement_posts(imported_posts) {
@@ -58,14 +57,6 @@ function ProcessImports(posts) {
     // Import all history
     const random_div = $("#random-post");
     const achievement_div = $("#achievment");
-    if (!random_div) {
-        console.log("#random-post not found");
-        return;
-    }
-    if (!achievement_div) {
-        console.log("#achievement_div not found");
-        return;
-    }
     append_randomizer_div(random_div, () => html_for_blogpost(random_from_list(posts)));
     // Add a random achievement post
     append_randomizer_div(achievement_div, () => html_for_blogpost(random_from_list(get_achievement_posts(posts))));

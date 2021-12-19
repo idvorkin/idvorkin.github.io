@@ -1,4 +1,4 @@
-import { shuffle, random_from_list, append_randomizer_div } from "./main.js";
+import { random_from_list, append_randomizer_div } from "./main.js";
 function html_for_blogpost(post) {
   const item = $("<div/>");
   // TODO: HACK: Strip to the right of Week number
@@ -45,7 +45,6 @@ function html_for_blogpost(post) {
     item.append(excerptDisplayText);
   }
   const ret = item.html();
-  console.log("Hello", ret);
   return ret;
 }
 
@@ -67,15 +66,7 @@ function ProcessImports(posts: Array<any>) {
   // Import all history
   const random_div = $("#random-post");
   const achievement_div = $("#achievment");
-  if (!random_div) {
-    console.log("#random-post not found");
-    return;
-  }
 
-  if (!achievement_div) {
-    console.log("#achievement_div not found");
-    return;
-  }
   append_randomizer_div(random_div, () =>
     html_for_blogpost(random_from_list(posts))
   );
