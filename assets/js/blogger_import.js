@@ -1,4 +1,5 @@
-function append_post(div, post) {
+import { random_from_list, append_randomizer_div } from "./main.js";
+function html_for_blogpost(post) {
     const item = $("<div/>");
     // TODO: HACK: Strip to the right of Week number
     const title_href = `<h3> <a href='${post.url}'}>${post.title}</a></h3>`;
@@ -39,9 +40,16 @@ function append_post(div, post) {
     else {
         item.append(excerptDisplayText);
     }
-    div.append(item);
+    const ret = item.html();
+    console.log("Hello", ret);
+    return ret;
+}
+function get_achievement_posts(imported_posts) {
+    // TODO: merge imported and new posts
+    return imported_posts.filter(post => post.title.toLowerCase().includes("achievement"));
 }
 function ProcessImports(posts) {
+    console.log("Processing", posts.length, "posts");
     if (!posts) {
         console.log(`No posts being imported`);
         return;
@@ -49,12 +57,7 @@ function ProcessImports(posts) {
     //
     // Import all history
     const random_div = $("#random-post");
-    const import_div = $("#imported-posts");
     const achievement_div = $("#achievment");
-    if (!achievement_div) {
-        console.log("#achievement_div not found");
-        return;
-    }
     if (!random_div) {
         console.log("#random-post not found");
         return;
@@ -63,39 +66,13 @@ function ProcessImports(posts) {
         console.log("#achievement_div not found");
         return;
     }
-    // Add a random post on top
-    const count_random_posts = 1;
-    const randomPosts = _.chain(posts)
-        .sampleSize(count_random_posts)
-        .orderBy(o => o.published, "desc")
-        .value();
-    for (const randomPost of randomPosts) {
-        append_post(random_div, randomPost);
-    }
+    append_randomizer_div(random_div, () => html_for_blogpost(random_from_list(posts)));
     // Add a random achievement post
-    // TODO: Merge in new posts to this feed
-    // Consider doing the merge with a jquery selector
-    const count_achievement_posts = 1;
-    let random_achievement_posts = _.chain(posts)
-        .filter(o => o.title.toLowerCase().includes("achievement"))
-        .sampleSize(count_achievement_posts)
-        .orderBy(o => o.published, "desc")
-        .value();
-    for (const randomPost2 of random_achievement_posts) {
-        append_post(achievement_div, randomPost2);
-    }
-    const count_history_to_display = 0;
-    for (const post of _.take(posts, count_history_to_display)) {
-        append_post(import_div, post);
-        console.log("adding_post ${post}");
-    }
+    append_randomizer_div(achievement_div, () => html_for_blogpost(random_from_list(get_achievement_posts(posts))));
 }
 function add_imported_blog_posts() {
-    if (!document.URL.includes("/ig66")) {
-        return;
-    }
     const imported_posts_url = "/ig66/ig66-export.json";
     $.getJSON(imported_posts_url, ProcessImports);
 }
-$(add_imported_blog_posts);
+export { add_imported_blog_posts };
 //# sourceMappingURL=blogger_import.js.map

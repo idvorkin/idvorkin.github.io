@@ -1,3 +1,4 @@
+import { shuffle, random_from_list, append_randomizer_div } from "./main.js";
 class TreeNode {
     constructor({ name, value = 25, children = [], }) {
         this.name = name;
@@ -15,20 +16,11 @@ function add_random_prompts() {
 }
 function render_prompt_for_category(category, prompts_for_category) {
     //print one of the prompts
-    let get_random_prompt = () => _.chain(prompts_for_category)
-        .sampleSize(1)
-        .head()
-        .value();
-    let random_prompt = get_random_prompt();
-    const new_element = $(`<div class="alert alert-primary" role="alert"> ${random_prompt}</span></div>`);
-    // Clicking on the element should result in a reload, unless you're
-    // Clicking on a link
-    new_element.click(event => {
-        if (event.target.tagName != "A") {
-            new_element.html(get_random_prompt());
-        }
-    });
+    let get_random_prompt_html = () => `<span>${random_from_list(prompts_for_category)}</span>`;
+    // add a place holder for random div.
+    const new_element = $(`<div class="alert alert-primary" role="alert"/>`);
     $(category).after(new_element);
+    append_randomizer_div(new_element, get_random_prompt_html);
 }
 function render_table_random(prompts_for_category) {
     // Create a table at XYZ.
@@ -78,13 +70,6 @@ function category_to_prompts() {
     map_category_to_prompts.set(current_category, prompts_for_category);
     // XXX: Am I missing the last entry (??)
     return map_category_to_prompts;
-}
-// https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-function shuffle(list) {
-    return list
-        .map(value => ({ value, sort: Math.random() }))
-        .sort((a, b) => a.sort - b.sort)
-        .map(({ value }) => value);
 }
 // sunburst format is an inorder traversal of the tree.
 // good thing to unit test

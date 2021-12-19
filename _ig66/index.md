@@ -6,6 +6,11 @@ no-render-title: true
 monkey-does-reload: true
 ---
 
+<script type=module>
+    import { load_ig66 } from '/assets/js/page-loader.js'
+    defer(load_ig66)
+</script>
+
 <br/>
 
 <div class='extra-random-parent-to-make-append-work'>

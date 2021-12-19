@@ -8,6 +8,8 @@ import {
 } from "./random-prompter.js";
 import { get_link_info } from "./main.js";
 import { get } from "lodash-es";
+import { append_randomizer_div, random_from_list } from "./main.js";
+import { add_imported_blog_posts } from "./blogger_import.js";
 
 class SevenHabits {
   get_tree() {
@@ -91,44 +93,34 @@ function makePostPreviewHTML({ url, title, description }) {
   `;
 }
 
-async function add_random_post(element) {
+async function make_random_post_html() {
   const all_url_info = await get_link_info();
   //  Yuk, find a clearere way to do this
   const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
     .map(e => e[1]);
-  const random_post = shuffle(all_pages)[0];
-  const new_element_html = makePostPreviewHTML({
+  const random_post = random_from_list(all_pages);
+  return makePostPreviewHTML({
     url: random_post["url"],
     title: random_post["title"],
     description: random_post["description"],
-  });
-
-  const new_element = $(new_element_html);
-  $(element)
-    .empty()
-    .append(new_element);
-
-  // Clicking on the element should result in a reload, unless you're
-  // Clicking on a link
-  new_element.click(event => {
-    if (event.target.tagName != "A") {
-      add_random_post(element);
-    }
   });
 }
 
 function load_enjoy2() {
   add_sunburst("sunburst", "sunburst_text", new ThingsIEnjoy().get_tree());
   add_random_prompts();
-  add_random_post("#random-blog-posts");
+  append_randomizer_div($("#random-blog-posts"), make_random_post_html);
 }
 function load_7_habits() {
   add_sunburst("sunburst", "sunburst_text", new SevenHabits().get_tree());
   add_random_prompts();
+}
+function load_ig66() {
+  add_imported_blog_posts();
 }
 const UT = {
   SevenHabits,
   ThingsIEnjoy,
 };
 
-export { UT, load_enjoy2, load_7_habits, makePostPreviewHTML };
+export { UT, load_enjoy2, load_7_habits, makePostPreviewHTML, load_ig66 };

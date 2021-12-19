@@ -147,7 +147,11 @@ async function ProcessBackLinks(allUrls) {
 async function addBackLinksLoader() {
     ProcessBackLinks(await get_link_info());
 }
+let cached_linked_info = null;
 async function get_link_info() {
+    if (cached_linked_info != null) {
+        return cached_linked_info;
+    }
     const url = window.location.href;
     const prodPrefix = "https://idvork.in";
     const isProd = url.includes(prodPrefix);
@@ -160,7 +164,8 @@ async function get_link_info() {
         backlinks_url = "/back-links.json";
     }
     const urlJSON = (await $.getJSON(backlinks_url));
-    return urlJSON.url_info;
+    cached_linked_info = urlJSON.url_info;
+    return cached_linked_info;
 }
 function keyboard_shortcut_loader() {
     const mouseTrap = Mousetrap();
@@ -191,6 +196,25 @@ function shuffle(list) {
         .sort((a, b) => a.sort - b.sort)
         .map(({ value }) => value);
 }
+function random_from_list(list) {
+    return shuffle(list)[0];
+}
+// This div gets content from the random_html_factory
+// and clicking does a re-randomize
+async function append_randomizer_div($parent, random_html_factory) {
+    if ($parent.length != 1) {
+        console.log("Passed in invalid parent element");
+    }
+    const new_element = $(await random_html_factory());
+    $parent.empty().append(new_element);
+    // Clicking on the element should result in a reload, unless you're
+    // Clicking on a link
+    $parent.click(event => {
+        if (event.target.tagName != "A") {
+            append_randomizer_div($parent, random_html_factory);
+        }
+    });
+}
 async function on_monkey_button_click(e) {
     if (window.location.href.includes("/ig66")) {
         window.location.href = "/ig66";
@@ -218,5 +242,5 @@ function load_globals() {
         generateToc("ui-toc-affix", false);
     });
 }
-export { load_globals, get_link_info, MakeBackLinkHTML };
+export { load_globals, get_link_info, MakeBackLinkHTML, shuffle, random_from_list, append_randomizer_div, };
 //# sourceMappingURL=main.js.map
