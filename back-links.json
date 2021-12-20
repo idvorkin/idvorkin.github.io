@@ -554,7 +554,7 @@
         "/shame"
       ],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 14000
     },
     "/d/2010-2-15-2016-Misc-Uncategorized": {
       "py/object": "__main__.Page",
@@ -565,7 +565,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 23000
+      "doc_size": 22000
     },
     "/d/2015-11-18-Outsourcing": {
       "py/object": "__main__.Page",
@@ -587,7 +587,7 @@
       "outgoing_links": ["/tech-health-toys"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 13000
     },
     "/d/2016-05-09-lost-interview": {
       "py/object": "__main__.Page",
@@ -787,7 +787,7 @@
         "/timeoff"
       ],
       "redirect_url": "",
-      "doc_size": 16000
+      "doc_size": 15000
     },
     "/d/time-off-11-2021": {
       "py/object": "__main__.Page",
@@ -822,6 +822,17 @@
       "incoming_links": ["/timeoff"],
       "redirect_url": "",
       "doc_size": 19000
+    },
+    "/d/time-off-12-2021": {
+      "py/object": "__main__.Page",
+      "url": "/d/time-off-12-2021",
+      "title": "TIME OFF X-MAS 2021",
+      "description": "It’s Corona virus X-mas 2021, the not so bad edition, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
+      "file_path": "_site/d/time-off-12-2021.html",
+      "outgoing_links": ["/time-off", "/happy", "/td/time-off-12-2020"],
+      "incoming_links": ["/timeoff"],
+      "redirect_url": "",
+      "doc_size": 16000
     },
     "/d/where-have-all-the-bugs-gone": {
       "py/object": "__main__.Page",
@@ -1235,7 +1246,13 @@
         "/idle-loop",
         "/moments"
       ],
-      "incoming_links": ["/d/time-off-12-2020", "/hobby", "/siy", "/timeoff"],
+      "incoming_links": [
+        "/d/time-off-12-2020",
+        "/d/time-off-12-2021",
+        "/hobby",
+        "/siy",
+        "/timeoff"
+      ],
       "redirect_url": "",
       "doc_size": 22000
     },
@@ -1341,7 +1358,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 11000
     },
     "/irl": {
       "py/object": "__main__.Page",
@@ -1492,7 +1509,7 @@
         "/software-leadership-roles"
       ],
       "redirect_url": "",
-      "doc_size": 120000
+      "doc_size": 122000
     },
     "/mental-pain": {
       "py/object": "__main__.Page",
@@ -1560,7 +1577,7 @@
       ],
       "incoming_links": ["/timeoff"],
       "redirect_url": "",
-      "doc_size": 12000
+      "doc_size": 11000
     },
     "/mind-monsters": {
       "py/object": "__main__.Page",
@@ -1806,7 +1823,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 10000
+      "doc_size": 9000
     },
     "/reflect-tool": {
       "py/object": "__main__.Page",
@@ -2075,7 +2092,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 11000
+      "doc_size": 10000
     },
     "/td/better-security-design": {
       "py/object": "__main__.Page",
@@ -2196,7 +2213,7 @@
       "outgoing_links": [],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 14000
+      "doc_size": 13000
     },
     "/td/mosh": {
       "py/object": "__main__.Page",
@@ -2358,7 +2375,7 @@
       "outgoing_links": ["/td/design"],
       "incoming_links": [],
       "redirect_url": "",
-      "doc_size": 15000
+      "doc_size": 17000
     },
     "/The-Genesis-Node": {
       "py/object": "__main__.Page",
@@ -2396,11 +2413,13 @@
         "/frog",
         "/td/time-off-3-2020",
         "/d/time-off-12-2020",
-        "/d/time-off-11-2021"
+        "/d/time-off-11-2021",
+        "/d/time-off-12-2021"
       ],
       "incoming_links": [
         "/d/time-off-11-2021",
         "/d/time-off-12-2020",
+        "/d/time-off-12-2021",
         "/mind-at-work",
         "/parkinson"
       ],
