@@ -33,6 +33,7 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
         - [DENY LIST: Ranking Systems](#deny-list-ranking-systems)
 - [Cognitive Health](#cognitive-health)
     - [7 Habits](#7-habits)
+    - [Blog posts](#blog-posts)
 - [Emotional Health](#emotional-health)
     - [Meditation](#meditation)
     - [750 words/Gratefulness](#750-wordsgratefulness)
@@ -118,6 +119,11 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 - ☐ STRETCH: Update concepts page
 - ☐ STRETCH: Update first things first page
 - ☐ STRETCH: Update Seek first to understand
+
+### Blog posts
+
+- ☐ Merge Psych Safety talk into some of your blogs
+- ☐ Merge Anxiety Todo list into some of the blogs
 
 ## Emotional Health
 
