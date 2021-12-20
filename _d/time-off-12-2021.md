@@ -4,7 +4,7 @@ no-render-title: true
 title: Time off X-mas 2021
 ---
 
-It's Corona virus X-mas, not so bad edition, and I've got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
+It's Corona virus X-mas 2021, the not so bad edition, and I've got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
 
 This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
@@ -59,8 +59,9 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 
 ### Friends
 
-- ☐ Catch up with Bob
+- ☑ Catch up with Bob
 - ☐ Catch up with Slava
+- ☐ Catch up with Dave
 
 ### Tori
 
@@ -71,6 +72,8 @@ Private
 - ☐ Setup a list of things to watch togteher
 - ☐ Watch a movie together
 - ☐ Work on his programming course
+  - Write Pong
+  - Come up with another game to write
 
 ### Amelia
 
@@ -79,6 +82,8 @@ Private
 ## Identity Health
 
 ### Magic
+
+- Practice Daily
 
 ### Biking
 
@@ -109,10 +114,10 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 
 ### 7 Habits
 
+- ☐ Add more prompts to 7 habits page
 - ☐ STRETCH: Update concepts page
 - ☐ STRETCH: Update first things first page
 - ☐ STRETCH: Update Seek first to understand
-- ☐ Add more prompts to 7 habits page
 
 ## Emotional Health
 
@@ -125,7 +130,7 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 ### Statistics
 
 Weight Start: 228
-Weight End: 229
+Weight End:
 Gym Days:
 
 ### Diet
