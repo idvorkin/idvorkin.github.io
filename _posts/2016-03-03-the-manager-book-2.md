@@ -72,6 +72,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [What about Work Life Balance](#what-about-work-life-balance)
     - [How you deal with team disagrees with the leadership](#how-you-deal-with-team-disagrees-with-the-leadership)
     - [Agency and Psychological Safety](#agency-and-psychological-safety)
+    - [Kudos Boards - Appreciation](#kudos-boards---appreciation)
 - [Process and Mechanism](#process-and-mechanism)
     - [Theory of Process](#theory-of-process)
     - [The dark side of process](#the-dark-side-of-process)
@@ -83,6 +84,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Engineering Excellence - Operational Review and Correction of Errors](#engineering-excellence---operational-review-and-correction-of-errors)
     - [Data Driven - Customer and Business Metric Reviews](#data-driven---customer-and-business-metric-reviews)
     - [Continuous Improvement - Retrospectives](#continuous-improvement---retrospectives)
+    - [Team Participation and Feedback - Surveys and Polls](#team-participation-and-feedback---surveys-and-polls)
     - [Quality and Technical Growth Design+Arch Reviews](#quality-and-technical-growth-designarch-reviews)
 - [Planning, Roadmaps and Resource Allocation](#planning-roadmaps-and-resource-allocation)
     - [Defining Success - How does goal setting work](#defining-success---how-does-goal-setting-work)
@@ -787,6 +789,15 @@ Step 3: Focus on the win/win, and talk through a ripcord.
 
 ### Agency and Psychological Safety
 
+### Kudos Boards - Appreciation
+
+Both helpful for a short period of time, and for a longer period of time, kuddos boards let the team get together and celebrate what they appreciate from their co-workers. This has many benefits:
+
+- People are appreciated for thier contributions
+- People are reminded how impactful their work is
+- Good behaviors are recognized and reinforced
+- The team bonds and grows
+
 ## Process and Mechanism
 
 ### Theory of Process
@@ -887,6 +898,24 @@ Also need to review all outages
 ### Data Driven - Customer and Business Metric Reviews
 
 ### Continuous Improvement - Retrospectives
+
+### Team Participation and Feedback - Surveys and Polls
+
+It's very easy to "think" the team is getting what they want, or has gotten what they want. A fast, easy way to validate this is having polls before something happens, and surveys after.
+
+Some examples where we use polls:
+
+- Should we move this meeting to another time?
+- Where should we go for lunch
+- What questions should we focus our limited time on?
+
+Some examples where we use surveys:
+
+- Which meetings are a good use of time (special survey)
+- How are we doing on XYZ
+- How helpful was this presentation, what could have gone better (TODO: link to a useful survey)
+
+Pro tip for surveys - use part of a meeting to complete a fast survey. This ensures completion isn't just another thing that needs to be done.
 
 ### Quality and Technical Growth Design+Arch Reviews
 
