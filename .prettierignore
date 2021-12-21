@@ -2,6 +2,7 @@
 # prettier messes up the jekyll tags in head
 
 _includes/head.html
+_ig66/ig66-export.json
 back-links.json
 
 
