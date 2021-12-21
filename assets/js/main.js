@@ -209,9 +209,10 @@ async function append_randomizer_div($parent, random_html_factory) {
     $parent.empty().append(new_element);
     // Clicking on the element should result in a reload, unless you're
     // Clicking on a link
-    $parent.click(event => {
+    $parent.click(async function (event) {
         if (event.target.tagName != "A") {
-            append_randomizer_div($parent, random_html_factory);
+            const new_element = $(await random_html_factory());
+            $parent.empty().append(new_element);
         }
     });
 }
