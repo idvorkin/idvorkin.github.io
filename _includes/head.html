@@ -14,8 +14,12 @@
   }}
 </title>
 
+{% if page.date %}
+  <meta property="date" content="{{page.date}}"/> 
+{% endif %}
+
 {% if page.tags %}
-<meta name=" keywords" content="{{ page.tags | join: ', ' }}" />{% endif %}
+<meta name="keywords" content="{{ page.tags | join: ', ' }}" />{% endif %}
 
 <!-- Open Graph
     https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing
