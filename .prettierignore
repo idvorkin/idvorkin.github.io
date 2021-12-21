@@ -2,6 +2,8 @@
 # prettier messes up the jekyll tags in head
 
 _includes/head.html
+back-links.json
+
 
 # Ignore JS Files created by TS
 **/*js
