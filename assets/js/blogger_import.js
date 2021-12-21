@@ -33,7 +33,7 @@ function html_for_blogpost(post) {
         `
       <div style='overflow:auto'>
 
-      <a href='${post.url}'}><img style='float:left; margin-right:10px' src='${thumbnail_url}'/></a>
+      <a href='${post.url}'}><img class="img-fluid" style='float:left; margin-right:10px' src='${thumbnail_url}'/></a>
       ${excerptDisplayText}
       </div>`);
     }
