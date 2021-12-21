@@ -1,9 +1,12 @@
+#!python3
 # Remove line too long
 # pep8: disable=E501
 
 from bs4 import BeautifulSoup
 import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
 from dataclasses import dataclass
+import typer
+app = typer.Typer()
 
 print_error = False
 
@@ -100,42 +103,49 @@ def content_for_entry(p):
     content = converter.handle(unescape(str(p.content.contents[0])))
     return content
 
+def xml_entry_to_post(xml):
+    p = xml
+    # <category scheme="http://www.blogger.com/atom/ns#" term="zach_week"/>
+    # <title type="text">Family Journal 550AZ:Halloween 2020, Tori Super party!!!</title>
+    if len(p.title.contents) == 0:
+        if print_error:
+            print(f"!No title for id: {p.id.contents[0]}")  # something fishy
+        return []
 
+    # <link rel="alternate" type="text/html" href="https://ig66.blogspot.com/2020/11/family-journal-550azhalloween-2020-tori.html" title="Family Journal 550AZ:Halloween 2020, Tori Super party!!!"/>
+    urls = [l for l in p.find_all("link") if l["rel"] == "alternate"]
+    if len(urls) != 1:
+        if print_error:
+            print(f"!{len(urls)} URL for : {p.id.contents[0]}")  # something fishy
+        return []
+    url = urls[0]
+
+    content = content_for_entry(p)
+    # <published>2020-11-01T17:31:00.004-08:00</published>
+    return [BlogPost(
+        title=str(p.title.contents[0]),
+        url=str(url["href"]),
+        published=str(p.published.contents[0]),
+        excerpt=excerpt_for_content(content),
+        content="",  # content,
+        thumbnail=thumbnail_for_entry(p),
+        tags=[],
+    )]
+
+
+
+@app.command()
 def export_to_json():
-    posts = []
-    for p in get_post_entries_xml():
-        # <category scheme="http://www.blogger.com/atom/ns#" term="zach_week"/>
+    # 2 step select many
+    list_list_posts = [xml_entry_to_post(p)
+             for p in get_post_entries_xml()]
 
-        # <title type="text">Family Journal 550AZ:Halloween 2020, Tori Super party!!!</title>
-        if len(p.title.contents) == 0:
-            if print_error:
-                print(f"!No title for id: {p.id.contents[0]}")  # something fishy
-            continue
-
-        # <link rel="alternate" type="text/html" href="https://ig66.blogspot.com/2020/11/family-journal-550azhalloween-2020-tori.html" title="Family Journal 550AZ:Halloween 2020, Tori Super party!!!"/>
-        urls = [l for l in p.find_all("link") if l["rel"] == "alternate"]
-        if len(urls) != 1:
-            if print_error:
-                print(f"!{len(urls)} URL for : {p.id.contents[0]}")  # something fishy
-            continue
-        url = urls[0]
-
-        content = content_for_entry(p)
-        # <published>2020-11-01T17:31:00.004-08:00</published>
-        post = BlogPost(
-            title=str(p.title.contents[0]),
-            url=str(url["href"]),
-            published=str(p.published.contents[0]),
-            excerpt=excerpt_for_content(content),
-            content="",  # content,
-            thumbnail=thumbnail_for_entry(p),
-            tags=[],
-        )
-        posts += [post]
+    posts = [p for p in (lp for lp in list_list_posts)]
 
     printjson(posts)
 
 
+@app.command()
 def test_parse_ns():
     x = """
 <?xml version="1.0" encoding="UTF-8"?>
@@ -175,5 +185,6 @@ def test_parse_ns():
     print(thumbnail_for_entry(entry))
 
 
-# test_parse_ns()
-export_to_json()
+
+if __name__ == "__main__":
+    app()
