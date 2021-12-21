@@ -34,7 +34,8 @@
     "docker:run": "docker run -v ~/blog:/root/blog -it -P -p 127.0.0.1:4000:4000 devdocker",
     "update:backlinks": "python3 build_back_links.py > back-links.json",
     "update:search": "bundle exec jekyll algolia",
-    "back-links": "python3 build_back_links.py | prettier --parser=json > back-links.json",
+    "update:fj": "python3 old_blog/transform_blogger_export.py export-all > _ig66/ig66-export.json",
+    "back-links": "python3 build_back_links.py > back-links.json",
     "tsc": "tsc --watch --allowUmdGlobalAccess",
     "_comment": "Contains all commands"
   },
