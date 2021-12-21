@@ -2,6 +2,7 @@
 # Remove line too long
 # pep8: disable=E501
 
+import os
 from bs4 import BeautifulSoup
 import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
 from dataclasses import dataclass
@@ -23,6 +24,12 @@ def printjson(out):
 
 file_path = "ig66-export-02-22-2021.xml"
 
+def flatten_lol(lol):
+    def flatten_lol_iter(lol):
+        for l in lol:
+            for i in l:
+                yield i
+    return list(flatten_lol_iter(lol))
 
 @dataclass
 class BlogPost:
@@ -34,6 +41,27 @@ class BlogPost:
     content: str
     tags: []
 
+def get_new_blog_entries():
+    ig66_collection_dir = "../_site/ig66/"
+    post_entries = []
+
+    for f_path in os.listdir(ig66_collection_dir):
+        if not f_path.endswith(".html"):
+            continue
+        with open(ig66_collection_dir+f_path, "r", encoding="utf-8") as f:
+            contents = f.read()
+            soup = BeautifulSoup(contents, features="html.parser")
+            pageTitle = soup.title.string if soup.title else None
+            canonicalTag = soup.find("link", rel="canonical")
+            canonicalUrl = canonicalTag["href"] if canonicalTag else None
+            isCompletePage = pageTitle and canonicalUrl
+            # pageTitle = jekyll_config.clean_title(pageTitle)
+
+            # <meta property="og:description" content="Coaching is like midwifery">
+            descriptionTag = soup.find("meta", property="og:description")
+            description = descriptionTag["content"] if descriptionTag else "..."
+            print (description, pageTitle, canonicalTag, canonicalUrl)
+    return post_entries
 
 def get_post_entries_xml():
     post_entries = []
@@ -133,16 +161,18 @@ def xml_entry_to_post(xml):
     )]
 
 
+@app.command()
+def dump_new_blog():
+    get_new_blog_entries()
 
 @app.command()
 def export_to_json():
     # 2 step select many
-    list_list_posts = [xml_entry_to_post(p)
+    lol_posts = [xml_entry_to_post(p)
              for p in get_post_entries_xml()]
 
-    posts = [p for p in (lp for lp in list_list_posts)]
 
-    printjson(posts)
+    printjson(flatten_lol(lol_posts))
 
 
 @app.command()
