@@ -3,7 +3,6 @@ title: Personal Journal
 layout: post
 
 no-render-title: true
-monkey-does-reload: true
 ---
 
 <script type=module>
@@ -11,16 +10,8 @@ monkey-does-reload: true
     defer(load_ig66)
 </script>
 
-<br/>
-
-<div class='extra-random-parent-to-make-append-work'>
-    <div class='alert alert-success' id="random-post">
-    </div>
-
-</div>
-
 {% assign display_order_posts  = site.ig66 | reverse %}
-{% for item in  display_order_posts limit:4 %}
+{% for item in  display_order_posts limit:2 %}
 
 {%if item.week %}
 {%else%}
@@ -34,10 +25,10 @@ monkey-does-reload: true
 
 {% endfor %}
 
-<div class='extra-random-parent-to-make-append-work'>
-    <div class='alert alert-success' id="achievment">
-    </div>
+<br/>
 
-    <div id="imported-posts"/>
+<div class='alert alert-info' id="achievment">
+</div>
 
+<div class='alert alert-success' id="random-post">
 </div>
