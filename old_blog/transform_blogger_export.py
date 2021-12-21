@@ -3,10 +3,12 @@
 # pep8: disable=E501
 
 import os
+from typing import List, TypeVar
 from bs4 import BeautifulSoup
 import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
 from dataclasses import dataclass
 import typer
+from urllib.parse import urlparse
 app = typer.Typer()
 
 print_error = False
@@ -22,9 +24,10 @@ def printjson(out):
     print(jsonpickle.encode(out, indent=4))
 
 
-file_path = "ig66-export-02-22-2021.xml"
+file_path = "old_blog/ig66-export-02-22-2021.xml"
 
-def flatten_lol(lol):
+T = TypeVar('T')  # Any type.
+def flatten_lol(lol:List[List[T]])->List[T]:
     def flatten_lol_iter(lol):
         for l in lol:
             for i in l:
@@ -40,28 +43,53 @@ class BlogPost:
     thumbnail: str
     content: str
     tags: []
+    def __str__(self):
+        return f"{self.title} {self.url} {self.published} {self.excerpt} {self.thumbnail} {self.content} {self.tags}"
+
+# copied from BBL
+def clean_title(title):
+    # Jekyll makes an ugly title
+    # title='\n  INSECURITY AND IMPOSTER SYNDROME \n'
+    return title.replace("\n  ", "").replace(" \n", "")
+
+def path_to_blog_entry(path)->List[BlogPost]:
+    def get_meta_content(property, default_value=""):
+        meta_tag = soup.find("meta", property=property)
+        return str(meta_tag["content"]) if meta_tag else default_value
+
+    if not path.endswith(".html"):
+        return []
+    if path.endswith("index.html"):
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        contents = f.read()
+        soup = BeautifulSoup(contents, features="html.parser")
+        pageTitle = soup.title.string if soup.title else None
+        canonicalTag = soup.find("link", rel="canonical")
+        canonicalUrl = canonicalTag["href"] if canonicalTag else None
+        relative_url = urlparse(canonicalUrl).path if canonicalUrl else None
+        isCompletePage = pageTitle and canonicalUrl
+        pageTitle = clean_title(pageTitle)
+
+        # <meta property="og:description" content="Coaching is like midwifery">
+
+         # <meta property="og:image" content="https://github.com/idvorkin/blob/raw/master/ig66/580/montage.jpg" />
+        description = get_meta_content("og:description", "...")
+        image = get_meta_content("og:image","")
+        date = get_meta_content("date", "")
+        keywords = get_meta_content("keywords", "")
+        tags = [t.strip() for t in keywords.split(",")]
+        return [BlogPost(title=pageTitle, url=relative_url, published=date, excerpt=description, content="",  thumbnail=image, tags=tags)]
 
 def get_new_blog_entries():
-    ig66_collection_dir = "../_site/ig66/"
+    ig66_collection_dir = "_site/ig66/"
     post_entries = []
 
-    for f_path in os.listdir(ig66_collection_dir):
-        if not f_path.endswith(".html"):
-            continue
-        with open(ig66_collection_dir+f_path, "r", encoding="utf-8") as f:
-            contents = f.read()
-            soup = BeautifulSoup(contents, features="html.parser")
-            pageTitle = soup.title.string if soup.title else None
-            canonicalTag = soup.find("link", rel="canonical")
-            canonicalUrl = canonicalTag["href"] if canonicalTag else None
-            isCompletePage = pageTitle and canonicalUrl
-            # pageTitle = jekyll_config.clean_title(pageTitle)
-
-            # <meta property="og:description" content="Coaching is like midwifery">
-            descriptionTag = soup.find("meta", property="og:description")
-            description = descriptionTag["content"] if descriptionTag else "..."
-            print (description, pageTitle, canonicalTag, canonicalUrl)
-    return post_entries
+    paths = [ig66_collection_dir+f for f in os.listdir(ig66_collection_dir)]
+    posts = [path_to_blog_entry(p) for p in paths]
+    flat = flatten_lol(posts)
+    flat.sort(key=lambda x: x.published)
+    return flat
 
 def get_post_entries_xml():
     post_entries = []
@@ -163,16 +191,22 @@ def xml_entry_to_post(xml):
 
 @app.command()
 def dump_new_blog():
-    get_new_blog_entries()
+    posts = get_new_blog_entries()
+    printjson(posts)
 
-@app.command()
-def export_to_json():
-    # 2 step select many
+def get_old_blog_entries():
     lol_posts = [xml_entry_to_post(p)
              for p in get_post_entries_xml()]
+    return flatten_lol(lol_posts)
 
+@app.command()
+def export_old_blog():
+    printjson(get_old_blog_entries())
 
-    printjson(flatten_lol(lol_posts))
+@app.command()
+def export_all():
+    # 2 step select many
+    printjson(flatten_lol([get_old_blog_entries(),get_new_blog_entries()]))
 
 
 @app.command()
