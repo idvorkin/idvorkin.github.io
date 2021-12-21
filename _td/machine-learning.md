@@ -9,7 +9,7 @@ redirect_from:
   - /td/machine-learning
 ---
 
-ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can't articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).
+It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can't articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/machine-learning.md)_
 
