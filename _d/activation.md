@@ -70,20 +70,16 @@ console.log(ctx,myChart)
 
 ### Stopping Energy
 
-The amount of energy required to being an activity. Addictions are negative, habits are neutral, and new positive habits are positive. Things you are avoiding, your mental quick sand, can b every high positive.
+The amount of energy required to stop an activity. This usually varies over time. Movies have a natural drop in stopping energy at the end of the movie, but the magic of TikTok and Casinos is they are designed to never reduce in stopping energy
 
-### Will Power
-
-For me, will power is very strong in the morning, but drops over time. Doing my morning habits really charges up my will power
-
-<canvas id="chart-willpower-over-time">canvas>
+<canvas id="chart-stopping-over-time">canvas>
 
 </p>
 <script>
-defer (()=>  {
-const ctx = "chart-willpower-over-time"
-annotations = {
-  /*
+defer(() => {
+  const ctx = "chart-stopping-over-time";
+  annotations = {
+    /*
         line1:{
             // Indicates the type of annotation
             type: 'line',
@@ -93,79 +89,174 @@ annotations = {
             borderWidth: 2,
         }
 */
-  "l1": {
-    // Indicates the type of annotation
-    "type": "label",
-    "xValue": 2.5,
-    "yValue": 30,
-    "content": ["Why I never go to the", " gym after work"]
-  },
-  "l2": {
-    // Indicates the type of annotation
-    "type": "point",
-    "xValue": 2,
-    "yValue": 20,
-    "backgroundColor": "rgb(0, 128, 0)",
-    "label": {
-      "content": "I wish I was here"
+    "l1": {
+      // Indicates the type of annotation
+      "type": "label",
+      "xValue": 2.5,
+      "yValue": 30,
+      "content": ["Why I never go to the", " gym after work"]
+    },
+    "l2": {
+      // Indicates the type of annotation
+      "type": "point",
+      "xValue": 2,
+      "yValue": 20,
+      "backgroundColor": "rgb(0, 128, 0)",
+      "label": {
+        "enabled": true,
+        "content": "I wish I was here"
+      }
+    },
+    "vline": {
+      "type": "line",
+        borderDash: [6, 6],
+      "value": 40,
+      scaleID:"y",
+      "label": {
+        "enabled": true,
+        "content": "Gym Starting Energy"
+      }
     }
-  },
-  "vline": {
-    drawTime: "afterDatasetsDraw",
-    "type": "line",
-    "mode": "vertical",
-    "scaleID": "x-axis-0",
-    "value": 2,
-    "label": {
-      "enabled": true,
-      "position": "top",
-      "content": "hello",
-    }
-  }
-}
+  };
+  annotations={}
 
 const myChart = new Chart(ctx, {
-type: 'line',
-data: {
-labels: ["5:00", "8:00", "15:00", "20:00"],
-datasets: [
+"type": "line",
+"data": {
+"labels": ["00h30", "01h00", "01h30", "02h00", "02h30"],
+"datasets": [
 {
-label:"Default",
-data: [100, 70, 20, 10],
-borderColor: 'rgba(0, 155, 132, 0.2)',
+"label": "Movie",
+"data": [70, 80, 80, 80, 10],
+"borderColor": "rgba(0, 155, 132, 0.2)"
 },
 {
-label:"With Morning Habits",
-data: [100, 90, 30, 15],
-borderColor: 'rgba(255, 99, 132, 0.2)',
-},
+"label": "TikTok",
+"data": [80, 90, 90, 80, 80],
+"borderColor": "rgba(255, 99, 132, 0.2)"
+}
 ]
 },
-options: {
-plugins: {
-title: {
-display: true,
-text: 'Will Power over Time'
+"options": {
+"plugins": {
+"title": {
+"display": true,
+"text": "Stopping Energy over time in hours"
 },
-annotation: {
-annotations: annotations
-},
+"annotation": {
+"annotations": annotations
+}
 },
 
-        scales: {
-                y: {
-                    beginAtZero: true,
-                },
-            },
-         elements:{
-             point:{
-                 radius:0,
-             },
-         },
-    },
+      "scales": {
+        "y": {
+          "beginAtZero": true
+        }
+      },
+      "elements": {
+        "point": {
+          "radius": 0
+        }
       }
+    }
 
-);
-console.log(ctx,myChart)
+});
+console.log(ctx, myChart);
+})
+</script>
+
+### Will Power
+
+For me, will power is very strong in the morning, but drops over time. Doing my morning habits really charges up my will power, but you can see why I can never get to the gym after work, my gym starting energy exceeds my remaining will power.
+
+<canvas id="chart-willpower-over-time">canvas>
+
+</p>
+<script>
+defer(() => {
+  const ctx = "chart-willpower-over-time";
+  annotations = {
+    /*
+        line1:{
+            // Indicates the type of annotation
+            type: 'line',
+            ymin: 80,
+            ymax: 80,
+            borderColor: 'rgb(255, 99, 132)',
+            borderWidth: 2,
+        }
+*/
+    "l1": {
+      // Indicates the type of annotation
+      "type": "label",
+      "xValue": 2.5,
+      "yValue": 30,
+      "content": ["Why I never go to the", " gym after work"]
+    },
+    "l2": {
+      // Indicates the type of annotation
+      "type": "point",
+      "xValue": 2,
+      "yValue": 20,
+      "backgroundColor": "rgb(0, 128, 0)",
+      "label": {
+        "enabled": true,
+        "content": "I wish I was here"
+      }
+    },
+    "vline": {
+      "type": "line",
+        borderDash: [6, 6],
+      "value": 40,
+      scaleID:"y",
+      "label": {
+        "enabled": true,
+        "content": "Gym Starting Energy"
+      }
+    }
+  };
+
+const myChart = new Chart(ctx, {
+"type": "line",
+"data": {
+"labels": ["5:00", "8:00", "15:00", "20:00"],
+"datasets": [
+{
+"label": "Default",
+"data": [80, 70, 20, 10],
+"borderColor": "rgba(0, 155, 132, 0.2)"
+},
+{
+"label": "With Morning Habits",
+"data": [80, 90, 30, 15],
+"borderColor": "rgba(255, 99, 132, 0.2)"
+}
+]
+},
+"options": {
+"plugins": {
+"title": {
+"display": true,
+"text": "Will Power over Time"
+},
+"annotation": {
+"annotations": annotations
+}
+},
+
+      "scales": {
+        "y": {
+          "beginAtZero": true
+        }
+      },
+      "elements": {
+        "point": {
+          "radius": 0
+        }
+      }
+    }
+
+});
+console.log(ctx, myChart);
 })
 </script>
