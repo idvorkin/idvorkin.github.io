@@ -128,7 +128,7 @@ const myChart = new Chart(ctx, {
 {
 "label": "TikTok",
 "data": [40, 30, 28, 27, 26],
-"borderColor": "lightred"
+"borderColor": "lightpink"
 },
 {
 "label": "Movie",
