@@ -62,6 +62,7 @@ A collection of tips, tricks and pointers of the various tools i use
 - [PlantUML](#plantuml)
     - [PlantUML Tools](#plantuml-tools)
     - [PlantUML in Markdown](#plantuml-in-markdown)
+    - [Inline plantuml via Gravizo](#inline-plantuml-via-gravizo)
     - [Quirks](#quirks)
 - [Windows Managers](#windows-managers)
 - [ClI Fun](#cli-fun)
@@ -544,6 +545,70 @@ Then render it like an image e.g.
     ![UML rendered](https://www.plantuml.com/plantuml/proxy?idx=0&format=svg&src=https://raw.githubusercontent.com/idvorkin/techdiary/master/sample_diagrams.puml&c=1)
 
 ![UML rendered](https://www.plantuml.com/plantuml/proxy?idx=0&format=svg&c=4&src=https://raw.githubusercontent.com/idvorkin/techdiary/master/sample_diagrams.puml)
+
+#### Inline plantuml via Gravizo
+
+This seems the best approach, using gravizo with inline HTML like this:
+
+```
+<p><img src='https://g.gravizo.com/svg?
+@startuml;
+
+actor User;
+participant "First Class" as A;
+participant "Second Class" as B;
+participant "Last Class" as C;
+
+User -> A: DoWork;
+activate A;
+
+A -> B: Create Request;
+activate B;
+
+B -> C: DoWork;
+activate C;
+
+C --> B: WorkDone;
+destroy C;
+
+B --> A: Request Created;
+deactivate B;
+
+A --> User: Done;
+deactivate A;
+
+@enduml
+'></p>
+```
+
+<p><img src='https://g.gravizo.com/svg?
+@startuml;
+
+actor User;
+participant "First Class" as A;
+participant "Second Class" as B;
+participant "Last Class" as C;
+
+User -> A: DoWork;
+activate A;
+
+A -> B: Create Request;
+activate B;
+
+B -> C: DoWork;
+activate C;
+
+C --> B: WorkDone;
+destroy C;
+
+B --> A: Request Created;
+deactivate B;
+
+A --> User: Done;
+deactivate A;
+
+@enduml
+'></p>
 
 #### Quirks
 
