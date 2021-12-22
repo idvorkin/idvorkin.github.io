@@ -14,10 +14,12 @@ Doing activities requires will power, addictions and procrastination require neg
 
 ### Activation Energy
 
-To activiate an activity, we need to stop the current activty, and start the new one.
+To begin an activity, we need to stop the current activty, and start the new one.
 
 <p>
-$$ Activation(NewActivity) = Stopping(CurrentActivity) + StartingEnergy(NewActivity)$$
+$$ Activation(New, Current) = $$
+$$  Stopping(CurrentActivity) +  $$
+$$ StartingEnergy(NewActivity)$$
 </p>
 
 ### Starting Energy
@@ -187,14 +189,14 @@ defer(() => {
       // Indicates the type of annotation
       "type": "label",
       "xValue": 2.5,
-      "yValue": 30,
+      "yValue": 50,
       "content": ["Why I never go to the", " gym after work"]
     },
     "l2": {
       // Indicates the type of annotation
       "type": "point",
-      "xValue": 2,
-      "yValue": 20,
+      "xValue": 2.5,
+      "yValue": 35,
       "backgroundColor": "rgb(0, 128, 0)",
       "label": {
         "enabled": true,
