@@ -126,15 +126,15 @@ const myChart = new Chart(ctx, {
 "labels": ["00h30", "01h00", "01h30", "02h00", "02h30"],
 "datasets": [
 {
-"label": "Movie",
-"data": [70, 80, 80, 80, 10],
-"borderColor": "rgba(0, 155, 132, 0.2)"
+"label": "TikTok",
+"data": [40, 30, 28, 27, 26],
+"borderColor": "lightred"
 },
 {
-"label": "TikTok",
-"data": [80, 90, 90, 80, 75],
-"borderColor": "rgba(255, 99, 132, 0.2)"
-}
+"label": "Movie",
+"data": [35, 40, 40, 35, 10],
+"borderColor": "lightgreen"
+},
 ]
 },
 "options": {
