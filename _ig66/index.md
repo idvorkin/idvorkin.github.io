@@ -32,3 +32,6 @@ no-render-title: true
 
 <div class='alert alert-success' id="random-post">
 </div>
+
+<div class='alert alert-primary' id="random-recent">
+</div>
