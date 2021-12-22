@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
 from dataclasses import dataclass
 import typer
+from dateutil import parser
 from urllib.parse import urlparse
 app = typer.Typer()
 
@@ -78,8 +79,9 @@ def path_to_blog_entry(path)->List[BlogPost]:
         image = get_meta_content("og:image","")
         date = get_meta_content("date", "")
         keywords = get_meta_content("keywords", "")
+        datetime_clean = parser.parse(date).strftime("%Y-%m-%dT%H:%M:%S")
         tags = [t.strip() for t in keywords.split(",")]
-        return [BlogPost(title=pageTitle, url=relative_url, published=date, excerpt=description, content="",  thumbnail=image, tags=tags)]
+        return [BlogPost(title=pageTitle, url=relative_url, published=datetime_clean, excerpt=description, content="",  thumbnail=image, tags=tags)]
 
 def get_new_blog_entries():
     ig66_collection_dir = "_site/ig66/"
