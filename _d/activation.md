@@ -132,7 +132,7 @@ const myChart = new Chart(ctx, {
 },
 {
 "label": "TikTok",
-"data": [80, 90, 90, 80, 80],
+"data": [80, 90, 90, 80, 75],
 "borderColor": "rgba(255, 99, 132, 0.2)"
 }
 ]
