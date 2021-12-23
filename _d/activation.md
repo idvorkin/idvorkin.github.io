@@ -259,3 +259,11 @@ const myChart = new Chart(ctx, {
 console.log(ctx, myChart);
 })
 </script>
+
+### Habits and addicitions
+
+[Habits](/habits) are tools to help us reduce the starting energy for things we want to do, and increase the starting energy (and decrease the stopping energy) for our [addictions](/addiction).
+
+### Sleep and activation Energy
+
+Sleep is something we need to activate every day, and has a huge impact on our mental health, so it's important to know how to [optimize for this](/insomnia). First, decrease the starting energy by making consistent bed time a habit, and reducing caffeine intake. Also, don't engage in high stopping energy activities before bed. TikTok will keep you up, but reading a boring book will get you down for the count.
