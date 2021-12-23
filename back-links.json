@@ -44,6 +44,7 @@
         "/dream-job": "/job",
         "/duck-pride": "/pride",
         "/eat-that-frog": "/frog",
+        "/effectiveness": "/balance",
         "/emotional-health-practices": "/emotional-health",
         "/enemies": "/enemy",
         "/enjoy": "/happy",
@@ -175,6 +176,7 @@
             ],
             "incoming_links": [
                 "/7h-concepts",
+                "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/d/time-off-12-2020",
@@ -363,6 +365,20 @@
             "incoming_links": [],
             "redirect_url": "",
             "doc_size": 15000
+        },
+        "/balance": {
+            "py/object": "__main__.Page",
+            "url": "/balance",
+            "title": "BALANCE - THE HOLY GRAIL",
+            "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet.\n\n",
+            "file_path": "_site/balance.html",
+            "outgoing_links": [
+                "/7h",
+                "/wlb"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 11000
         },
         "/be-proactive": {
             "py/object": "__main__.Page",
@@ -2279,6 +2295,7 @@
             "file_path": "_site/sustainable-work.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/balance",
                 "/being-a-great-manager",
                 "/depression",
                 "/dsat"
