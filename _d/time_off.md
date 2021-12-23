@@ -25,6 +25,8 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [PD vs Life Balance](#pd-vs-life-balance)
     - [Optimizing for happiness](#optimizing-for-happiness)
 - [Get real what should I do?](#get-real-what-should-i-do)
+    - [Time box vegetation](#time-box-vegetation)
+    - [Strategize against the resistance.](#strategize-against-the-resistance)
     - [Begin with the end in mind](#begin-with-the-end-in-mind)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Other Resources](#other-resources)
@@ -91,6 +93,16 @@ Even though getting to do what you love is awesome, you still want to love your 
 
 ## Get real what should I do?
 
+### Time box vegetation
+
+Acknowledge you deserve to vegetate, and give your self a day or 2 guilt free. At the end of the prescribed limit, start to fight the resistance.
+
+### Strategize against the resistance.
+
+You can fight the [resistance](/resistance) by making your [addictions](/addictions) harder. For me that means uinstall TikTok.
+
+Add by making your positive habits easier. For me, this includes remembering what my good habits are, and how much better I feel when I do them. And then running a habit app to make sure I'm doing them.
+
 ### Begin with the end in mind
 
 - Read your [eulogy](/eulogy), to remember what matters most to you.
@@ -98,10 +110,9 @@ Even though getting to do what you love is awesome, you still want to love your 
 
 ## Examples of how I spent my time off
 
+Look at the incoming links below and:
+
 - [April 2020 - Time between leaving Amazon and Joining Facebook](/td/time-off-3-2020)
-- [Xmas 2020 - End of year time off with Corona Virus](/d/time-off-12-2020)
-- [Turkey Day 2021 - A spontanious, super tech heavy marathon](/d/time-off-11-2021)
-- [Xmas 2021 - End of year time off with Corona Virus Light](/d/time-off-12-2021)
 
 ## Other Resources
 
@@ -109,10 +120,10 @@ Even though getting to do what you love is awesome, you still want to love your 
 
 ### Can you have too much time off?
 
-Need to explore furthor, from [this study](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf):
+Need to explore further, from [this study](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf):
 
-Many people living in modern society feel like they do not have enough time and are constantly searching
-for more. But is having limited discretionary time actually detrimental? And can there be downsides of having too much discretionary time? We find a negative quadratic relationship between discretionary time and subjective well-being. These results show that having too little time is indeed linked to lower subjective well-being caused by stress, having more time does not continually translate to greater subjective well-being.
+_Many people living in modern society feel like they do not have enough time and are constantly searching
+for more. But is having limited discretionary time actually detrimental? And can there be downsides of having too much discretionary time? We find a negative quadratic relationship between discretionary time and subjective well-being. These results show that having too little time is indeed linked to lower subjective well-being caused by stress, having more time does not continually translate to greater subjective well-being._
 
-Having an abundance of discretionary time is sometimes even linked to lower subjective well-being because of a lacking sense of productivity. In such cases, the negative effect of having too much
-discretionary time can be attenuated when people spend this time on productive activities.
+_Having an abundance of discretionary time is sometimes even linked to lower subjective well-being because of a lacking sense of productivity. In such cases, the negative effect of having too much
+discretionary time can be attenuated when people spend this time on productive activities._
