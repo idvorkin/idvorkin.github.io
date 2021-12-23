@@ -200,7 +200,8 @@
             "description": "To discuss the 7 habits we need some foundational ideas, P/PC, paradigms, etc. These are my insights based on the 7 habits Chapter 0.\n\n",
             "file_path": "_site/7h-concepts.html",
             "outgoing_links": [
-                "/7h"
+                "/7h",
+                "/balance"
             ],
             "incoming_links": [
                 "/7-habits"
@@ -376,7 +377,9 @@
                 "/7h",
                 "/wlb"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/7h-concepts"
+            ],
             "redirect_url": "",
             "doc_size": 11000
         },
