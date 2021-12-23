@@ -6,8 +6,6 @@ title: Adventures March and April 2020
 
 In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/time-off-3-2020.md)_
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
@@ -22,6 +20,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [☐ Job Hunt Rollercoaster Post](#-job-hunt-rollercoaster-post)
     - [☐ Emotional Health Posts](#-emotional-health-posts)
     - [☐ Money Ideas](#-money-ideas)
+    - [☑ Time Off!](#-time-off)
 - [Minecraft](#minecraft)
     - [☑ Bedrock Server](#-bedrock-server)
     - [☐ EC2 Updating](#-ec2-updating)
@@ -68,7 +67,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [☐ Tori](#-tori)
 - [Blog Tech](#blog-tech)
     - [☑ Clone tech diary into tech blog](#-clone-tech-diary-into-tech-blog)
-    - [☑  Better broken link checker](#--better-broken-link-checker)
+    - [☑ Better broken link checker](#-better-broken-link-checker)
     - [☑ Deep dive into CSS and bootstrap (great idea)](#-deep-dive-into-css-and-bootstrap-great-idea)
     - [☑ Redo CSS to be bootstrapped base](#-redo-css-to-be-bootstrapped-base)
     - [☑ Create ToC](#-create-toc)
@@ -120,6 +119,10 @@ https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180
 #### ☐ Emotional Health Posts
 
 #### ☐ Money Ideas
+
+#### ☑ Time Off!
+
+My guide to taking [time off](/time off)
 
 [Money](/money)
 
