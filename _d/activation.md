@@ -78,47 +78,6 @@ The amount of energy required to stop an activity. This usually varies over time
 <script>
 defer(() => {
   const ctx = "chart-stopping-over-time";
-  annotations = {
-    /*
-        line1:{
-            // Indicates the type of annotation
-            type: 'line',
-            ymin: 80,
-            ymax: 80,
-            borderColor: 'rgb(255, 99, 132)',
-            borderWidth: 2,
-        }
-*/
-    "l1": {
-      // Indicates the type of annotation
-      "type": "label",
-      "xValue": 2.5,
-      "yValue": 30,
-      "content": ["Why I never go to the", " gym after work"]
-    },
-    "l2": {
-      // Indicates the type of annotation
-      "type": "point",
-      "xValue": 2,
-      "yValue": 20,
-      "backgroundColor": "rgb(0, 128, 0)",
-      "label": {
-        "enabled": true,
-        "content": "I wish I was here"
-      }
-    },
-    "vline": {
-      "type": "line",
-        borderDash: [6, 6],
-      "value": 40,
-      scaleID:"y",
-      "label": {
-        "enabled": true,
-        "content": "Gym Starting Energy"
-      }
-    }
-  };
-  annotations={}
 
 const myChart = new Chart(ctx, {
 "type": "line",
@@ -128,12 +87,14 @@ const myChart = new Chart(ctx, {
 {
 "label": "TikTok",
 "data": [40, 30, 28, 27, 26],
-"borderColor": "lightpink"
+"borderColor": "lightpink",
+      tension: 0.4,
 },
 {
 "label": "Movie",
 "data": [35, 40, 40, 35, 10],
-"borderColor": "lightgreen"
+"borderColor": "lightgreen",
+      tension: 0.4,
 },
 ]
 },
@@ -143,9 +104,6 @@ const myChart = new Chart(ctx, {
 "display": true,
 "text": "Stopping Energy over time in hours"
 },
-"annotation": {
-"annotations": annotations
-}
 },
 
       "scales": {
@@ -223,11 +181,13 @@ const myChart = new Chart(ctx, {
 {
 "label": "Default",
 "data": [80, 70, 20, 10],
-"borderColor": "rgba(0, 155, 132, 0.2)"
+"borderColor": "rgba(0, 155, 132, 0.2)",
+tension: 0.4,
 },
 {
 "label": "With Morning Habits",
 "data": [80, 90, 30, 15],
+tension:0.4,
 "borderColor": "rgba(255, 99, 132, 0.2)"
 }
 ]
