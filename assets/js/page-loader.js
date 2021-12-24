@@ -129,6 +129,7 @@ const months = [
 ];
 const row_height = 20;
 const heatmap_base = 100;
+const ideal_color = "#00BF00";
 async function make_balance_chart_by_work(div) {
     const roles = ["Work"];
     const layout = {
@@ -139,7 +140,7 @@ async function make_balance_chart_by_work(div) {
         pad: 0,
     };
     const color_scale = [
-        [0.0, "green"],
+        [0.0, ideal_color],
         [0.5, "darkred"],
         [1.0, "red"],
     ];
@@ -170,7 +171,7 @@ async function make_balance_chart_by_desired_time_rest(div) {
     const color_scale = [
         [0.0, "darkblue"],
         [0.3, "blue"],
-        [0.5, "#00Bf00"],
+        [0.5, ideal_color],
         [0.7, "darkred"],
         [1.0, "red"],
     ];
