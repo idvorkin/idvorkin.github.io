@@ -88,12 +88,14 @@ const myChart = new Chart(ctx, {
 "label": "TikTok",
 "data": [40, 30, 28, 27, 26],
 "borderColor": "lightpink",
+"backgroundColor": "lightpink",
       tension: 0.4,
 },
 {
 "label": "Movie",
 "data": [35, 40, 40, 35, 10],
 "borderColor": "lightgreen",
+"backgroundColor": "lightgreen",
       tension: 0.4,
 },
 ]
@@ -181,14 +183,16 @@ const myChart = new Chart(ctx, {
 {
 "label": "Default",
 "data": [80, 70, 20, 10],
-"borderColor": "rgba(0, 155, 132, 0.2)",
+"borderColor": "lightpink",
+"backgroundColor": "lightpink",
 tension: 0.4,
 },
 {
 "label": "With Morning Habits",
 "data": [80, 90, 30, 15],
+"borderColor": "lightgreen",
+"backgroundColor": "lightgreen",
 tension:0.4,
-"borderColor": "rgba(255, 99, 132, 0.2)"
 }
 ]
 },
