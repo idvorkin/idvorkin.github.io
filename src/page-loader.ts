@@ -118,9 +118,119 @@ function load_7_habits() {
 function load_ig66() {
   add_imported_blog_posts();
 }
+function load_balance() {
+  make_balance_chart_by_desired_time_rest("balance-heatmap-rest");
+  make_balance_chart_by_work("balance-heatmap-work");
+}
 const UT = {
   SevenHabits,
   ThingsIEnjoy,
 };
 
-export { UT, load_enjoy2, load_7_habits, makePostPreviewHTML, load_ig66 };
+const months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "June",
+  "July",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+const row_height = 20;
+const heatmap_base = 100;
+async function make_balance_chart_by_work(div) {
+  const roles = ["Work"];
+  const layout = {
+    height: row_height * roles.length + heatmap_base,
+    margin: {
+      t: 5,
+    },
+    pad: 0,
+  };
+  const color_scale = [
+    [0.0, "green"],
+    [0.5, "darkred"],
+    [1.0, "red"],
+  ];
+  // Need to normalize by range
+  const gap_desire_over_time = [
+    [0, 4, 7, 8, 2, 1, 2, 3, 2, 0], //  Work
+  ];
+
+  const data = [
+    {
+      colorscale: color_scale,
+      zmin: 0,
+      zmax: 10,
+      x: months.slice(2, 13),
+      y: roles.reverse(),
+      z: gap_desire_over_time,
+      type: "heatmap",
+    },
+  ];
+  const config = {
+    displayModeBar: false,
+  };
+
+  await (Plotly as any).newPlot(div, data, layout, config);
+}
+
+// Could be over or under
+// GREEN be Good,
+// RED be Bad
+async function make_balance_chart_by_desired_time_rest(div) {
+  const color_scale = [
+    [0.0, "darkblue"],
+    [0.3, "blue"],
+    [0.5, "#00Bf00"],
+    [0.7, "darkred"],
+    [1.0, "red"],
+  ];
+  const roles = ["Health", "Hobbies", "Family", "Magic", "Tech"];
+  const gap_desire_over_time = [
+    // J, F, M, A, M, J, J, A, S, O, N, D
+    [6, 6, 7, 6, 5, 7, 8, 8, 7, 8], // Health
+    [6, 6, 7, 6, 5, 4, 6, 8, 6, 5], // Hobbies
+    [8, 7, 7, 6, 9, 5, 6, 7, 8, 6], // Family
+    [5, 5, 5, 6, 5, 5, 6, 5, 6, 5], //  Magic
+    [3, 5, 7, 3, 4, 5, 1, 4, 1, 0], //  Tech
+  ];
+  const data = [
+    {
+      colorscale: color_scale,
+      zmin: 0,
+      zmax: 10,
+      x: months.slice(2, 13),
+      y: roles.reverse(),
+      z: gap_desire_over_time.reverse(),
+      type: "heatmap",
+    },
+  ];
+  const config = {
+    displayModeBar: false,
+  };
+  const layout = {
+    height: 250,
+    height: row_height * roles.length + heatmap_base,
+    margin: {
+      t: 5,
+    },
+    pad: 0,
+  };
+
+  await (Plotly as any).newPlot(div, data, layout, config);
+}
+
+export {
+  UT,
+  load_enjoy2,
+  load_7_habits,
+  makePostPreviewHTML,
+  load_ig66,
+  load_balance,
+};
