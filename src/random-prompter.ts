@@ -46,10 +46,10 @@ function render_table_random(prompts_for_category) {
   const table_placeholder = $("#prompt_table");
   // Build a table
   let table_as_html = "<table class='table table-striped table-bordered'>";
-  const categories = _.sampleSize(Array.from(prompts_for_category.keys()), 4);
+  const categories = shuffle(prompts_for_category.keys().splice(1, 4));
   for (const category of categories) {
     const prompts = prompts_for_category.get(category);
-    const random = _.sampleSize(prompts, 1)[0];
+    const random = random_from_list(prompts);
     // console.log(category)
     // table_as_html += `<tr> <td> ${category} </td> <td> ${prompts[0]}</td> </tr>`
     const category_text = (category as any).text();
@@ -89,7 +89,7 @@ function category_to_prompts() {
       continue;
     }
     // we should now be the first list in the category
-    prompts_for_category = _.map($(node).find("li"), li => $(li).text());
+    prompts_for_category = Array($(node).find("li")).map(li => $(li).text());
   }
 
   map_category_to_prompts.set(current_category, prompts_for_category);
@@ -164,10 +164,7 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
     )
     .flat();
 
-  return _.chain(all_prompts)
-    .sampleSize(1)
-    .first()
-    .value();
+  return random_from_list(all_prompts);
 }
 
 async function add_sunburst(

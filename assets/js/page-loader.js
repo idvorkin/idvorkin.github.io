@@ -200,7 +200,6 @@ async function make_balance_chart_by_desired_time_rest(div) {
         displayModeBar: false,
     };
     const layout = {
-        height: 250,
         height: row_height * roles.length + heatmap_base,
         margin: {
             t: 5,
