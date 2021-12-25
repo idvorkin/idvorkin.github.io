@@ -2,7 +2,7 @@ import { random_from_list, append_randomizer_div } from "./main.js";
 function html_for_blogpost(post) {
     const item = $("<div/>");
     // TODO: HACK: Strip to the right of Week number
-    const title_href = `<h3> <a href='${post.url}'}>${post.title}</a></h3>`;
+    const title_href = `<h4> <a href='${post.url}'}>${post.title}</a></h4>`;
     const monthNames = [
         "January",
         "February",

@@ -46,10 +46,10 @@ function category_to_prompts() {
             continue;
         }
         // we should now be the first list in the category
-        prompts_for_category = Array($(node).find("li")).map(li => $(li).text());
+        prompts_for_category = Array.from($(node).find("li")).map(li => $(li).text());
     }
     map_category_to_prompts.set(current_category, prompts_for_category);
-    // XXX: Am I missing the last entry (??)
+    // Remove any categories that
     return map_category_to_prompts;
 }
 // sunburst format is an inorder traversal of the tree.
@@ -98,12 +98,13 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
     // Find the label in the tree
     // recall bread first search returns a parent as well.
     const [clicked_node, _parent] = Array.from(breadth_first_walk(tree_node)).find(([current, _parent]) => current.name == label);
-    console.log(Array.from(breadth_first_walk(tree_node)));
-    console.log(clicked_node);
-    console.log(label);
+    // console.log(Array.from(breadth_first_walk(tree_node)));
+    // console.log("Label", label);
+    // console.log("Clicked Node", clicked_node);
+    // console.log(map_node_to_prompts);
     // Gather all the prompts for the children of the clicked node.
     let all_prompts = Array.from(breadth_first_walk(clicked_node))
-        .map(([node, _parent]) => node) // return node and parent
+        .map(([node, _parent]) => node) // returns node and parent
         .filter(node => map_node_to_prompts.has(node.name))
         .map(node => map_node_to_prompts
         .get(node.name)
@@ -113,21 +114,25 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
 }
 async function add_sunburst(plot_element_id, random_text_div_id, root) {
     const sunburst_tree_flat = tree_to_plotly_data_format(root);
-    var sunburst_config = {
+    var sunburst_data = {
         type: "sunburst",
         outsidetextfont: { size: 20, color: "#377eb8" },
         // leaf: {opacity: 0.4},
         hoverinfo: "none",
         marker: { line: { width: 2 } },
         maxdepth: 2,
+        displayModeBar: false,
     };
-    Object.assign(sunburst_config, sunburst_tree_flat);
-    delete sunburst_config.values; // remove values to avoid sizing pie slices
+    Object.assign(sunburst_data, sunburst_tree_flat);
+    delete sunburst_data.values; // remove values to avoid sizing pie slices
     var sunburst_layout = {
         margin: { l: 0, r: 0, b: 0, t: 0 },
         sunburstcolorway: ["#636efa", "#ef553b", "#00cc96"],
     };
-    const sunburstPlot = await Plotly.newPlot(plot_element_id, [sunburst_config], sunburst_layout);
+    const config = {
+        displayModeBar: false,
+    };
+    const sunburstPlot = await Plotly.newPlot(plot_element_id, [sunburst_data], sunburst_layout, config);
     const set_random_prompt_text = text => {
         console.log("set_random_prompt_text", text);
         $(`#${random_text_div_id}`).text(text);
