@@ -253,9 +253,11 @@
                 "/addiction",
                 "/insomnia"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/balance"
+            ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/adblocker-trojan": {
             "py/object": "__main__.Page",
@@ -375,13 +377,17 @@
             "file_path": "_site/balance.html",
             "outgoing_links": [
                 "/7h",
-                "/wlb"
+                "/wlb",
+                "/eulogy",
+                "/parkinson",
+                "/moments",
+                "/activation"
             ],
             "incoming_links": [
                 "/7h-concepts"
             ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 15000
         },
         "/be-proactive": {
             "py/object": "__main__.Page",
@@ -1221,6 +1227,7 @@
             ],
             "incoming_links": [
                 "/7-habits",
+                "/balance",
                 "/bmy",
                 "/depression",
                 "/dsat",
@@ -1826,6 +1833,7 @@
                 "/moments-at-work"
             ],
             "incoming_links": [
+                "/balance",
                 "/happy",
                 "/moments-at-work"
             ],
@@ -1958,6 +1966,7 @@
                 "/time-off"
             ],
             "incoming_links": [
+                "/balance",
                 "/manager-book",
                 "/money",
                 "/operating-manual"
