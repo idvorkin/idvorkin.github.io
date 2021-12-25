@@ -131,7 +131,7 @@ const row_height = 20;
 const heatmap_base = 100;
 const ideal_color = "#00BF00";
 async function make_balance_chart_by_work(div) {
-    const roles = ["Work"];
+    const roles = ["Tech", "Work"];
     const layout = {
         height: row_height * roles.length + heatmap_base,
         margin: {
@@ -140,13 +140,15 @@ async function make_balance_chart_by_work(div) {
         pad: 0,
     };
     const color_scale = [
-        [0.0, ideal_color],
-        [0.5, "darkred"],
+        [0.0, "darkblue"],
+        [0.4, "blue"],
+        [0.5, ideal_color],
+        [0.6, "darkred"],
         [1.0, "red"],
     ];
-    // Need to normalize by range
     const gap_desire_over_time = [
-        [0, 4, 7, 8, 2, 1, 2, 3, 2, 0], //  Work
+        [7, 4, 7, 8, 2, 4, 2, 3, 2, 8],
+        [10, 7, 5, 5, 3, 5, 6, 6, 7, 5], //  Work
     ];
     const data = [
         {
@@ -154,7 +156,7 @@ async function make_balance_chart_by_work(div) {
             zmin: 0,
             zmax: 10,
             x: months.slice(2, 13),
-            y: roles.reverse(),
+            y: roles,
             z: gap_desire_over_time,
             type: "heatmap",
         },
@@ -168,21 +170,20 @@ async function make_balance_chart_by_work(div) {
 // GREEN be Good,
 // RED be Bad
 async function make_balance_chart_by_desired_time_rest(div) {
-    const color_scale = [
-        [0.0, "darkblue"],
-        [0.3, "blue"],
-        [0.5, ideal_color],
-        [0.7, "darkred"],
-        [1.0, "red"],
-    ];
-    const roles = ["Health", "Hobbies", "Family", "Magic", "Tech"];
+    const roles = ["Health", "Hobbies", "Family", "Magic"];
     const gap_desire_over_time = [
         // J, F, M, A, M, J, J, A, S, O, N, D
-        [6, 6, 7, 6, 5, 7, 8, 8, 7, 8],
-        [6, 6, 7, 6, 5, 4, 6, 8, 6, 5],
-        [8, 7, 7, 6, 9, 5, 6, 7, 8, 6],
-        [5, 5, 5, 6, 5, 5, 6, 5, 6, 5],
-        [3, 5, 7, 3, 4, 5, 1, 4, 1, 0], //  Tech
+        [4, 4, 3, 4, 5, 3, 2, 2, 3, 2],
+        [4, 4, 3, 4, 5, 4, 4, 2, 4, 5],
+        [2, 3, 3, 4, 1, 5, 4, 3, 2, 4],
+        [5, 5, 5, 4, 5, 5, 4, 5, 4, 5], //  Magic
+    ];
+    const color_scale = [
+        [0.0, "red"],
+        [0.4, "darkred"],
+        [0.5, ideal_color],
+        [0.6, "blue"],
+        [1.0, "darkblue"],
     ];
     const data = [
         {
