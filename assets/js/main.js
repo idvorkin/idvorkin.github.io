@@ -201,9 +201,11 @@ function random_from_list(list) {
 }
 // This div gets content from the random_html_factory
 // and clicking does a re-randomize
-async function append_randomizer_div($parent, random_html_factory) {
+async function append_randomizer_div(parent_id, random_html_factory) {
+    const $parent = $(parent_id);
     if ($parent.length != 1) {
-        console.log("Passed in invalid parent element");
+        console.log(`append_randomizer_div ${parent_id} not present`);
+        return;
     }
     const new_element = $(await random_html_factory());
     $parent.empty().append(new_element);

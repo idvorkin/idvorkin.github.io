@@ -27,7 +27,6 @@ function add_random_prompts() {
   for (const category of map_category_to_prompts.keys()) {
     render_prompt_for_category(category, map_category_to_prompts.get(category));
   }
-  render_table_random(map_category_to_prompts);
 }
 
 function render_prompt_for_category(category, prompts_for_category) {
@@ -39,26 +38,6 @@ function render_prompt_for_category(category, prompts_for_category) {
   const new_element = $(`<div class="alert alert-primary" role="alert"/>`);
   $(category).after(new_element);
   append_randomizer_div(new_element, get_random_prompt_html);
-}
-
-function render_table_random(prompts_for_category) {
-  // Create a table at XYZ.
-  const table_placeholder = $("#prompt_table");
-  // Build a table
-  let table_as_html = "<table class='table table-striped table-bordered'>";
-  const categories = shuffle(prompts_for_category.keys().splice(1, 4));
-  for (const category of categories) {
-    const prompts = prompts_for_category.get(category);
-    const random = random_from_list(prompts);
-    // console.log(category)
-    // table_as_html += `<tr> <td> ${category} </td> <td> ${prompts[0]}</td> </tr>`
-    const category_text = (category as any).text();
-    table_as_html += `<tr> <td> ${category_text} </td> <td> ${random}</td> </tr>`;
-  }
-  table_as_html += "</table>";
-
-  const table_element = $(table_as_html);
-  $(table_placeholder).after(table_element);
 }
 
 // The prompts page has a bunch of lists of prompts
@@ -152,6 +131,9 @@ function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
   const [clicked_node, _parent] = Array.from(
     breadth_first_walk(tree_node)
   ).find(([current, _parent]) => current.name == label);
+  console.log(Array.from(breadth_first_walk(tree_node)));
+  console.log(clicked_node);
+  console.log(label);
 
   // Gather all the prompts for the children of the clicked node.
   let all_prompts = Array.from(breadth_first_walk(clicked_node))

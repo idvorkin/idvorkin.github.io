@@ -44,11 +44,9 @@ function html_for_blogpost(post) {
     return ret;
 }
 function get_achievement_posts(imported_posts) {
-    // TODO: merge imported and new posts
     return imported_posts.filter(post => post.title.toLowerCase().includes("achievement"));
 }
 function get_recent_posts(imported_posts) {
-    // TODO: merge imported and new posts
     return imported_posts.filter(post => post.tags.includes("family-journal"));
 }
 function ProcessImports(posts) {
@@ -59,9 +57,9 @@ function ProcessImports(posts) {
     }
     //
     // Import all history
-    const random_div = $("#random-post");
-    const achievement_div = $("#achievment");
-    const random_recent = $("#random-recent");
+    const random_div = "#random-post";
+    const achievement_div = "#achievment";
+    const random_recent = "#random-recent";
     append_randomizer_div(random_div, () => html_for_blogpost(random_from_list(posts)));
     // Add a random achievement post
     append_randomizer_div(achievement_div, () => html_for_blogpost(random_from_list(get_achievement_posts(posts))));

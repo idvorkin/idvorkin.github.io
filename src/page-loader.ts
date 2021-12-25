@@ -87,7 +87,7 @@ function makePostPreviewHTML({ url, title, description }) {
   // TODO: HACK: Strip to the right of Week number
   const title_href = `<a href='${url}'}>${title}</a>`;
   return `
-    <div class='alert alert-info'>
+    <div>
       ${title_href}: ${description}
     </div>
   `;
@@ -109,7 +109,8 @@ async function make_random_post_html() {
 function load_enjoy2() {
   add_sunburst("sunburst", "sunburst_text", new ThingsIEnjoy().get_tree());
   add_random_prompts();
-  append_randomizer_div($("#random-blog-posts"), make_random_post_html as any);
+  add_imported_blog_posts(); // has a random achievement post
+  append_randomizer_div("#random-blog-posts", make_random_post_html as any);
 }
 function load_7_habits() {
   add_sunburst("sunburst", "sunburst_text", new SevenHabits().get_tree());

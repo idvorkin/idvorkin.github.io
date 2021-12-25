@@ -49,13 +49,11 @@ function html_for_blogpost(post) {
 }
 
 function get_achievement_posts(imported_posts: Array<any>) {
-  // TODO: merge imported and new posts
   return imported_posts.filter(post =>
     post.title.toLowerCase().includes("achievement")
   );
 }
 function get_recent_posts(imported_posts: Array<any>) {
-  // TODO: merge imported and new posts
   return imported_posts.filter(post => post.tags.includes("family-journal"));
 }
 
@@ -68,9 +66,9 @@ function ProcessImports(posts: Array<any>) {
 
   //
   // Import all history
-  const random_div = $("#random-post");
-  const achievement_div = $("#achievment");
-  const random_recent = $("#random-recent");
+  const random_div = "#random-post";
+  const achievement_div = "#achievment";
+  const random_recent = "#random-recent";
 
   append_randomizer_div(random_div, () =>
     html_for_blogpost(random_from_list(posts))

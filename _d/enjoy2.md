@@ -2,6 +2,9 @@
 layout: post
 title: Things I enjoy
 permalink: /todo_enjoy
+redirect:
+  - /todo-enjoy
+  - /todo
 ---
 
 It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:
@@ -18,10 +21,16 @@ It’s easy to forget the many, often tiny things that makes me happy. For when 
     defer(load_enjoy2)
 </script>
 
-## Random Wisdom
+#### Random wisdom
 
-<div id="random-blog-posts">
-    Will be replaced by  a random blog post        
+<div class= 'alert alert-info' id="random-blog-posts">
+    Will be replaced by  a random blog post
+</div>
+
+#### Random memory
+
+<div class='alert alert-success' id="achievment">
+    Will be replaced by an achievement blog post
 </div>
 
 ## General
