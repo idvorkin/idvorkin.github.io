@@ -6471,19 +6471,6 @@
     },
     {
         "py/object": "__main__.BlogPost",
-        "title": "ACHIEVEMENT UNLOCKED - BUBBLE BIKE",
-        "url": "/ig66/583",
-        "published": "2021-05-30T00:00:00",
-        "excerpt": "I start my eulogy with my role as a dealer of smiles and wonder and bicycle rider. For a reason I don’t understand, few things are so universally smile generating as bubbles. Normally, bubbles are limited to your lung capacity, but a few years back I discovered bubble machines, which automatically create a metric tonne of bubbles, but you’re usually stuck at your house where you’ve got power. A while back I had an idea of putting a bubble machine on my bike. I found a model that ran on batteries, and Tori did a bunch of thinking, and came up with an attachment mechanism. Now, as I ride my bike there is a trail of bubbles. When I stop my bike, there are bubbles everywhere, and when I walk my bike, if the wind is to my back, I’m engulfed in bubbles.\n\n",
-        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/583/montage.jpg",
-        "content": "",
-        "tags": [
-            "family-journal",
-            "achievement"
-        ]
-    },
-    {
-        "py/object": "__main__.BlogPost",
         "title": "579AZ - BUBBLE BIKE!",
         "url": "/ig66/579",
         "published": "2021-05-30T00:00:00",
@@ -6501,6 +6488,19 @@
         "published": "2021-05-30T00:00:00",
         "excerpt": "I like to say kids are like hard drugs, they ruin your life but the highs are worth it. Jokes aside, Amelia’s father day gift is gonna be in the top lifetime highs. I’m pretty sure no matter what is bothering me, this video will ground me, and make me feel fantastic.\n\n",
         "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/580/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal",
+            "achievement"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "ACHIEVEMENT UNLOCKED - BUBBLE BIKE",
+        "url": "/ig66/583",
+        "published": "2021-05-30T00:00:00",
+        "excerpt": "I start my eulogy with my role as a dealer of smiles and wonder and bicycle rider. For a reason I don’t understand, few things are so universally smile generating as bubbles. Normally, bubbles are limited to your lung capacity, but a few years back I discovered bubble machines, which automatically create a metric tonne of bubbles, but you’re usually stuck at your house where you’ve got power. A while back I had an idea of putting a bubble machine on my bike. I found a model that ran on batteries, and Tori did a bunch of thinking, and came up with an attachment mechanism. Now, as I ride my bike there is a trail of bubbles. When I stop my bike, there are bubbles everywhere, and when I walk my bike, if the wind is to my back, I’m engulfed in bubbles.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/583/montage.jpg",
         "content": "",
         "tags": [
             "family-journal",
@@ -6627,6 +6627,19 @@
         "content": "",
         "tags": [
             "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "ACHIEVEMENT UNLOCKED - ZONG!",
+        "url": "/ig66/602",
+        "published": "2021-12-24T00:00:00",
+        "excerpt": "Zong! It’s like Pong, but Zach made it! For the past few weeks Zach has been taking an interactive programming course. Today, on Christmas Eve 2021, Zach finished the first major project - writing Zong (aka Pong bit the ball has a big Z on it :) ) ! I’m so proud of Zach, not only did he write the game, but he’s been doing 2-4 hours a week of programming, and much of it with me. It’s a pleasure to be a part of this.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/602/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal",
+            "achievement"
         ]
     }
 ]
