@@ -16,7 +16,9 @@ I'm good at a lot of things, but balance is really hard for me. Hard for everyon
     - [Juggling Elephants: Balancing the roles in your life.](#juggling-elephants-balancing-the-roles-in-your-life)
     - [Productivity vs addiction and resistance.](#productivity-vs-addiction-and-resistance)
 - [How to achieve](#how-to-achieve)
-    - [Monitoring the roles in your life](#monitoring-the-roles-in-your-life)
+    - [Realistic goals by role](#realistic-goals-by-role)
+    - [Monitoring the roles in your life vs your goals.](#monitoring-the-roles-in-your-life-vs-your-goals)
+    - [Review adjustment](#review-adjustment)
     - [Focus on Impact, not energy spent](#focus-on-impact-not-energy-spent)
     - [Parkinson's law and the 80/20 rule.](#parkinsons-law-and-the-8020-rule)
     - [Peak end rule and moments](#peak-end-rule-and-moments)
@@ -49,7 +51,17 @@ We often simplify our roles as work and life, (see: [I don't want to spend too m
 
 ## How to achieve
 
-### Monitoring the roles in your life
+### Realistic goals by role
+
+I think the most effective way to set yourself up for failure is deciding you can do do everything. This is false, you need [to choose](/essential). The super easy mistake to make here is to have an unrealistic goal in a role, for example - I can run a marathon when I can't even walk a mile. But the almost as easy mistake, is to set mulitple aggressive goals at once. E.g I'll both run a marathon, and get a promotion at work and deal with ailing parent.
+
+So, Start by setting goals per role that are realistic. The unit here should be TBD.
+
+Also, it's easy to stress like crazy about your goals. Don't if they're wrong you can always change them at the next review.
+
+<div id="balance-radar-map-ideal"> </div>
+
+### Monitoring the roles in your life vs your goals.
 
 In some roles, I default to over investing, for these **red is over investing**, green is just right, and blue is under investing
 
@@ -70,6 +82,14 @@ A few notes:
 - The assessment here is a normalized 'actual investment vs desired investment' not 'time spent'. For me, I want to spend about an hour a day on magic, while 8 hours day on work.
 
 - Desired time spent varies over time. For example, on holiday, my desire is to spend zero time on work.
+
+### Review adjustment
+
+If you do some kind of review, I'm certain you missed your goals, either positive or negative. I think there are 3 reasons here:
+
+1. Your goal was off
+2. Your plan was off
+3. Your execution was off.
 
 ### Focus on Impact, not energy spent
 
