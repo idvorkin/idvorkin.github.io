@@ -6,7 +6,7 @@ redirect_from:
   - /effectiveness
 ---
 
-I'm good at a lot of things, but balance is really hard for me. Hard for everyone I bet.
+I'm good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from [mortality software](/mortality-software).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->

@@ -122,6 +122,7 @@ function load_ig66() {
 function load_balance() {
   make_balance_chart_by_desired_time_rest("balance-heatmap-rest");
   make_balance_chart_by_work("balance-heatmap-work");
+  make_radar_map("balance-radar-map-ideal");
 }
 const UT = {
   SevenHabits,
@@ -142,6 +143,57 @@ const months = [
   "Nov",
   "Dec",
 ];
+
+async function make_radar_map(div) {
+  const data = [
+    {
+      type: "scatterpolar",
+      r: [8, 8, 8, 5, 8, 8, 8],
+      theta: [
+        "Work",
+        "Tech",
+        "Health",
+        "Hobbies",
+        "Relationships",
+        "Magic",
+        "Work",
+      ],
+      name: "2020 Goal",
+      fill: "toself",
+    },
+    {
+      type: "scatterpolar",
+      r: [7, 7, 5, 5, 5, 9, 7],
+      theta: [
+        "Work",
+        "Tech",
+        "Health",
+        "Hobbies",
+        "Relationships",
+        "Magic",
+        "Work",
+      ],
+      name: "2020 Actual",
+      fill: "toself",
+    },
+  ];
+
+  const layout = {
+    polar: {
+      radialaxis: {
+        visible: true,
+        range: [0, 10],
+      },
+    },
+    showlegend: true,
+  };
+  const config = {
+    displayModeBar: false,
+  };
+
+  Plotly.newPlot(div, data, layout, config);
+}
+
 const row_height = 20;
 const heatmap_base = 100;
 const ideal_color = "#00BF00";
