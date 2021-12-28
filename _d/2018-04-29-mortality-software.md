@@ -2,7 +2,7 @@
 layout: post
 title: "Time.ltd - Mortality Software"
 permalink: /mortality-software
-tags:
+redirect-from:
   - life_ltd
   - time_ltd
   - time-ltd
