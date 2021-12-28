@@ -373,12 +373,14 @@
             "py/object": "__main__.Page",
             "url": "/balance",
             "title": "BALANCE - THE HOLY GRAIL",
-            "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet.\n\n",
+            "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from mortality software.\n\n",
             "file_path": "_site/balance.html",
             "outgoing_links": [
+                "/mortality-software",
                 "/7h",
                 "/wlb",
                 "/eulogy",
+                "/essential",
                 "/parkinson",
                 "/moments",
                 "/activation"
@@ -387,7 +389,7 @@
                 "/7h-concepts"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 17000
         },
         "/be-proactive": {
             "py/object": "__main__.Page",
@@ -987,6 +989,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/covid",
+                "/mortality-software",
                 "/psychic-weight"
             ],
             "redirect_url": "",
@@ -1196,6 +1199,7 @@
             "file_path": "_site/essentialism.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/end-in-mind",
@@ -1882,10 +1886,15 @@
             "title": "TIME.LTD - MORTALITY SOFTWARE",
             "description": "Life is finite, time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past. The poem based elevator pitch:\n\n",
             "file_path": "_site/mortality-software.html",
-            "outgoing_links": [],
-            "incoming_links": [],
+            "outgoing_links": [
+                "/death",
+                "/death"
+            ],
+            "incoming_links": [
+                "/balance"
+            ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 18000
         },
         "/nlp": {
             "py/object": "__main__.Page",
