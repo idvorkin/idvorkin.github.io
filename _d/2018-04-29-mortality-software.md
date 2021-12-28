@@ -1,13 +1,52 @@
 ---
 layout: post
 title: "Time.ltd - Mortality Software"
-date: "2014-04-29 07:23:04 Pacific Daylight Time"
 permalink: /mortality-software
 tags:
-  -
+  - life_ltd
+  - time_ltd
+  - time-ltd
+  - life-ltd
+  - mortality
 ---
 
 Life is finite, time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past. The poem based elevator pitch:
+
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [Why](#why)
+    - [Why mortality software?](#why-mortality-software)
+    - [How will it work?](#how-will-it-work)
+        - [Create your future](#create-your-future)
+        - [Learn from the past](#learn-from-the-past)
+    - [Creating your future - Tool overview](#creating-your-future---tool-overview)
+        - [Role and Value Finder, Eulogy Writer.](#role-and-value-finder-eulogy-writer)
+        - [Quarter Month Tools - Goal Setter](#quarter-month-tools---goal-setter)
+    - [Learning from your past - Tool Overview](#learning-from-your-past---tool-overview)
+        - [Annual Review](#annual-review)
+        - [Monthly Review](#monthly-review)
+        - [Weekly Review](#weekly-review)
+        - [Who are you?](#who-are-you)
+        - [What are the roles in your life.](#what-are-the-roles-in-your-life)
+        - [What are your values?](#what-are-your-values)
+        - [How do you want to balance your time between your roles?](#how-do-you-want-to-balance-your-time-between-your-roles)
+        - [For each role:](#for-each-role)
+- [Coaches](#coaches)
+    - [Habit Coach](#habit-coach)
+    - [Reflection Coach](#reflection-coach)
+- [Appendix: Product Market Fit](#appendix-product-market-fit)
+    - [When is this most appropriate?](#when-is-this-most-appropriate)
+    - [What is similar to this?](#what-is-similar-to-this)
+    - [Are there societal structures like this?](#are-there-societal-structures-like-this)
+    - [Why doesn't this exist?](#why-doesnt-this-exist)
+- [FAQ](#faq)
+    - [Why call it Time.Ltd](#why-call-it-timeltd)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
+In a poem
 
       Too many dreams, not enough sleep
       I want it all, though none is to keep
@@ -18,7 +57,7 @@ Life is finite, time is limited. Mortality software helps us understand and then
       It moves and  it gleams, so hungry and restless
       Where am I going? When will I live this?
 
-And From Dr. Seuess:
+In a Dr. Seuss Poem
 
     How did it get so late so soon?
     It’s night before it’s afternoon.
@@ -27,6 +66,8 @@ And From Dr. Seuess:
     My goodness how the time has flewn.
 
     How did it get so late so soon?
+
+## Why
 
 ### Why mortality software?
 
@@ -119,6 +160,43 @@ Help you define who you are:
 ### Reflection Coach
 
 As we get older, we realize our time is finite, and th
+
+## Appendix: Product Market Fit
+
+### When is this most appropriate?
+
+### What is similar to this?
+
+Life coaches, positive pychiatry, worklife balance.
+
+### Are there societal structures like this?
+
+No, not really. As a society we don't really break up the "work till you retire" life stage. Maybe the closest is new years resolutions, and mid life crisis.
+
+### Why doesn't this exist?
+
+This software causes two things that people really don't like 1/ Thinking you've got [finite time](/death) 2/ Being Judged (and worst of all by you).
+
+**Thinking you've got finit time**
+
+Why people avoid it:
+
+- It feels aweful, read [on being mortal](/death)
+
+Mitigations
+
+- Focusing on life stages.
+- Reframing infinite life to compressed morbidity
+- Focusing on satisfaction
+
+**Judging yourself**
+
+Why people avoid it:
+
+Mitigations
+
+- Be compassion driven
+- Explain that by default, doesn't mean it's not happening.
 
 ## FAQ
 
