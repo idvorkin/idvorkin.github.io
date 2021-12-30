@@ -124,6 +124,9 @@ A very cool index of tutorial to build your own everything
 - [Delegator](https://github.com/kennethreitz/delegator.py) Sub process for humans
 - Pylinkvalidator - Crawl a web site for errors (great for web testing)
 - [Ice Cream](https://github.com/gruns/icecream) Simpler printf debugging.
+- pudb - Python Debugger
+- bpython - Python Interpretter (nice GUI, but no VI)
+- attribs - Clean classes with less boiler plate
 
 ### Typescript
 
