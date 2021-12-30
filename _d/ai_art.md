@@ -10,6 +10,8 @@ Creativity is a criticial aspect of art, and that's something which I think AI c
 <!-- vim-markdown-toc GFM -->
 
 - [Philosophy](#philosophy)
+    - [The value of art - inspiration](#the-value-of-art---inspiration)
+    - [Augmented Intelligence](#augmented-intelligence)
     - [Creativity](#creativity)
     - [Emotional Impact](#emotional-impact)
     - [Surprise](#surprise)
@@ -25,6 +27,12 @@ Creativity is a criticial aspect of art, and that's something which I think AI c
 <!-- prettier-ignore-end -->
 
 ## Philosophy
+
+### The value of art - inspiration
+
+### Augmented Intelligence
+
+We often need inspiration.
 
 ### Creativity
 
@@ -50,7 +58,7 @@ https://bhaasha.iiit.ac.in/lipsync/
 
 So much to say about about GPT, should be in [NLP](/nlp)
 
-See: https://beta.openai.com/examples
+https://beta.openai.com/examples
 
 ### Face Generator
 
