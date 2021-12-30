@@ -172,7 +172,8 @@
                 "/first-understand",
                 "/synergize",
                 "/sharpen-the-saw",
-                "/eulogy"
+                "/eulogy",
+                "/balance"
             ],
             "incoming_links": [
                 "/7h-concepts",
@@ -191,7 +192,7 @@
                 "/win-win"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/7h-concepts": {
             "py/object": "__main__.Page",
@@ -295,6 +296,19 @@
             "redirect_url": "",
             "doc_size": 14000
         },
+        "/ai-art": {
+            "py/object": "__main__.Page",
+            "url": "/ai-art",
+            "title": "AI AND ART",
+            "description": "Creativity is a criticial aspect of art, and that’s something which I think AI can be really good at. Some very random ideas\n\n",
+            "file_path": "_site/ai-art.html",
+            "outgoing_links": [
+                "/nlp"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 11000
+        },
         "/amazon": {
             "py/object": "__main__.Page",
             "url": "/amazon",
@@ -386,6 +400,7 @@
                 "/activation"
             ],
             "incoming_links": [
+                "/7-habits",
                 "/7h-concepts"
             ],
             "redirect_url": "",
@@ -1386,6 +1401,17 @@
             "redirect_url": "",
             "doc_size": 12000
         },
+        "/grateful": {
+            "py/object": "__main__.Page",
+            "url": "/grateful",
+            "title": "GRATEFULNES",
+            "description": "Gratefulness exercises work - here’s somethings to help.\n\n",
+            "file_path": "_site/grateful.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 11000
+        },
         "/gtd": {
             "py/object": "__main__.Page",
             "url": "/gtd",
@@ -1884,7 +1910,7 @@
             "py/object": "__main__.Page",
             "url": "/mortality-software",
             "title": "TIME.LTD - MORTALITY SOFTWARE",
-            "description": "Life is finite, time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past. The poem based elevator pitch:\n\n",
+            "description": "Mortality is a word most people try to avoid. But, earlier or later, it’s something we all face. Our life is finite and our time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past.\n\n",
             "file_path": "_site/mortality-software.html",
             "outgoing_links": [
                 "/death",
@@ -1904,6 +1930,7 @@
             "file_path": "_site/nlp.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/ai-art",
                 "/ml",
                 "/tools"
             ],
