@@ -1,10 +1,10 @@
-
 # prettier messes up the jekyll tags in head
-
 _includes/head.html
+
+# Prettier reformats my python json
 _ig66/ig66-export.json
 back-links.json
-
+eulogy.json
 
 # Ignore JS Files created by TS
 **/*js
