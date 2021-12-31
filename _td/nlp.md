@@ -47,9 +47,10 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [Analysis Approaches](#analysis-approaches)
     - [Bag of words.](#bag-of-words)
 - [Useful stuff](#useful-stuff)
+    - [GPT3 and AI-ART](#gpt3-and-ai-art)
     - [Lemmatization vs Stemming](#lemmatization-vs-stemming)
     - [TF/IDF](#tfidf)
-    - [Word Embedding](#word-embedding)
+    - [Word Embedding - Word2Vec](#word-embedding---word2vec)
     - [Bag of words analysis.](#bag-of-words-analysis)
 
 <!-- vim-markdown-toc -->
@@ -131,15 +132,21 @@ I can score the sentiment of a document as the median(f
 
 ## Useful stuff
 
+### GPT3 and AI-ART
+
+See my article on [ai-art](/ai-art)
+
 ### Lemmatization vs Stemming
 
 ### TF/IDF
 
 Multiply term frequency by inverse document frequency, this boosts words that only appear in this text as they are likely more important (or they're typos).
 
-### Word Embedding
+### Word Embedding - Word2Vec
 
 Put words into a semantic vector space using unsupervised learning, so words with similar meanings are closer in vector space distance. For example (king - queen) ~ (boy - girl) and toaster is far away from red.
+
+Very good articulation of [word embedding](https://jalammar.github.io/illustrated-word2vec/)
 
 ### Bag of words analysis.
 

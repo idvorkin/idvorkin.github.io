@@ -22,6 +22,7 @@ Creativity is a criticial aspect of art, and that's something which I think AI c
     - [Face Generator](#face-generator)
     - [Image to Word Generation](#image-to-word-generation)
     - [Not a real face](#not-a-real-face)
+- [Related ideas](#related-ideas)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -64,8 +65,18 @@ https://beta.openai.com/examples
 
 ### Image to Word Generation
 
+[Dall-E is Open GPT's](https://openai.com/blog/dall-e/) thing, and the examples lower in the blog post have some level of interaction.
+
+Much better is this Russian variant ([see gallery](with a live demo (annoying need to translate to Russian first):
+
 ### Not a real face
 
 These use GAN to create not real faces - crazy how real they look.
 
 https://thispersondoesnotexist.com/
+
+## Related ideas
+
+- [Prompt library for various models](https://github.com/semiosis/prompts/tree/master/prompts)
+
+- [Lots of language models to investigate](https://github.com/semiosis/pen.el/blob/master/docs/compatibility-and-interoperatbility.org)
