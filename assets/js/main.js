@@ -202,6 +202,8 @@ function random_from_list(list) {
 // This div gets content from the random_html_factory
 // and clicking does a re-randomize
 async function append_randomizer_div(parent_id, random_html_factory) {
+    // as string to queit type checker.
+    // Will be a noop if parent_id is already a jquery object
     const $parent = $(parent_id);
     if ($parent.length != 1) {
         console.log(`append_randomizer_div ${parent_id} not present`);

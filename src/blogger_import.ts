@@ -87,5 +87,42 @@ function add_imported_blog_posts() {
   const imported_posts_url = "/ig66/ig66-export.json";
   $.getJSON(imported_posts_url, ProcessImports);
 }
+//
+// Todo put in own file
+interface Role {
+  title: string;
+  summary: string;
+  full_text: string;
+}
 
-export { add_imported_blog_posts };
+interface Roles {
+  roles: Role[];
+}
+
+function html_for_role(role: Role) {
+  return `
+  <div>
+  <b>${role.title}</b> - ${role.summary}
+  </div>
+  `;
+}
+
+function ProcessEulogy(div: string, roles: Roles) {
+  if (!roles) {
+    console.log(`No roles being imported`);
+    return;
+  }
+  console.log("Processing", roles.roles.length, "roles");
+
+  // Import all history
+  append_randomizer_div(div, () =>
+    html_for_role(random_from_list(roles.roles))
+  );
+}
+
+function add_eulogy_roles(div: string) {
+  const imported_posts_url = "/eulogy.json";
+  $.getJSON(imported_posts_url, (roles: Roles) => ProcessEulogy(div, roles));
+}
+
+export { add_imported_blog_posts, add_eulogy_roles, html_for_role };

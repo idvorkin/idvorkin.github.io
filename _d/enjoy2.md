@@ -21,22 +21,20 @@ It’s easy to forget the many, often tiny things that makes me happy. For when 
     defer(load_enjoy2)
 </script>
 
-## Some
-
-**Roles to invest in**
+**Igor is a ...**
 
 <div class= 'alert alert-warning' id="random-eulogy-role">
 From my <a href="/eulogy"> eulogy</a>:
 Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor “Began with the end in mind” with the “important but not urgent” task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 </div>
 
-**Wisdom to reflect on**
+**Wisdom to reflect on ...**
 
 <div class= 'alert alert-info' id="random-blog-posts">
     Will be replaced by  a random blog post
 </div>
 
-**Memories to savor**
+**Memories to savor ...**
 
 <div class='alert alert-success' id="random-post">
     Will be replaced by an achievement blog post

@@ -3,7 +3,7 @@
 import { add_sunburst, add_random_prompts, TreeNode, } from "./random-prompter.js";
 import { get_link_info } from "./main.js";
 import { append_randomizer_div, random_from_list } from "./main.js";
-import { add_imported_blog_posts } from "./blogger_import.js";
+import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";
 class SevenHabits {
     get_tree() {
         const root = new TreeNode({
@@ -97,6 +97,7 @@ function load_enjoy2() {
     add_sunburst("sunburst", "sunburst_text", new ThingsIEnjoy().get_tree());
     add_random_prompts();
     add_imported_blog_posts(); // has a random achievement post
+    add_eulogy_roles("#random-eulogy-role");
     append_randomizer_div("#random-blog-posts", make_random_post_html);
 }
 function load_7_habits() {
