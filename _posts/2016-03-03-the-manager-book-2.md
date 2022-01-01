@@ -789,6 +789,8 @@ Step 3: Focus on the win/win, and talk through a ripcord.
 
 ### Agency and Psychological Safety
 
+I gave a talk on [lies we tell ourselves](https://docs.google.com/presentation/d/1u8kswf7qUDdKgMlxBVRUXilwECv9sVWJtM6IMTuP5hQ/)
+
 ### Kudos Boards - Appreciation
 
 Both helpful for a short period of time, and for a longer period of time, kuddos boards let the team get together and celebrate what they appreciate from their co-workers. This has many benefits:
@@ -797,6 +799,8 @@ Both helpful for a short period of time, and for a longer period of time, kuddos
 - People are reminded how impactful their work is
 - Good behaviors are recognized and reinforced
 - The team bonds and grows
+
+A nice format for this is a "clock" with everyone's name on it, and the center of the clock having great prompts like:
 
 ## Process and Mechanism
 
