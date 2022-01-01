@@ -112,21 +112,40 @@ A very cool index of tutorial to build your own everything
 
 ### Python
 
-- Hug: Python API generator
+- [Records](https://github.com/kennethreitz/records) Raw SQL for humans
+- [Delegator](https://github.com/kennethreitz/delegator.py) Sub process for humans
+
+Web:
+
 - Httpie: wget replacement
+- Beautiful Soup - JQuery like parsing
+- Pylinkvalidator - Crawl a web site for errors (great for web testing)
+- Hug: Python API generator
 - Pendulum: The best datetime library (better then arrow).
-- PipEnv - Finally sane dependency management for python!
-- [Datalore](https://datalore.io/) - Jetbrain's version of Jupyter
 - [Requests](https://docs.python-requests.org/en/master/) Http requests for humans
 - [Requests-HTML](https://github.com/kennethreitz/requests-html) Web Parsing for humans
 - [Scapy](https://scrapy.org/) Web crawling for humans.
-- [Records](https://github.com/kennethreitz/records) Raw SQL for humans
-- [Delegator](https://github.com/kennethreitz/delegator.py) Sub process for humans
-- Pylinkvalidator - Crawl a web site for errors (great for web testing)
+
+Language and Syntax:
+
+- attribs - Clean classes with less boiler plate
+
+Tools:
+
+- PipEnv - Finally sane dependency management for python!
+- [Datalore](https://datalore.io/) - Jetbrain's version of Jupyter
+
+CLI:
+
+- typer - Very nice command line too based on type arguments
+- rich - Nice TUI output
+
+Debugging:
+
 - [Ice Cream](https://github.com/gruns/icecream) Simpler printf debugging.
 - pudb - Python Debugger
 - bpython - Python Interpretter (nice GUI, but no VI)
-- attribs - Clean classes with less boiler plate
+- loguru - Output pretty exception meassages with a single type annotation
 
 ### Typescript
 
