@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Things that make me cry"
+comments: true
+inprogress: true
+permalink: /touching
+redirect_from:
+  - /cry
+  - /makes-me-cry
+---
+
+It's pretty easy to be overwhelmed by humanity sucking, but there is so much good in the world. Here are some great examples
+
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [Commercials](#commercials)
+- [Movies](#movies)
+- [Good podcasts](#good-podcasts)
+- [Stuff from my own life](#stuff-from-my-own-life)
+- [Related Reading](#related-reading)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
+## Commercials
+
+- [Grandfather getting strong](https://youtu.be/y_bYjLYXJo0)
+- [Thai Feeding the poor - sick dad](https://m.youtube.com/watch?v=iVrQqWIs6ZE)
+- [Unsung heros - Thai bank](https://m.youtube.com/watch?v=uaWA2GbcnJU)
+- [Thai homeless with Shop Keeper](https://m.youtube.com/watch?v=S-fvxEq_3DA)
+- [Thai silence of love](https://m.youtube.com/watch?v=qZMX6H6YY1M)
+- [Lots of the commercials back to back](https://m.youtube.com/watch?v=rQcucGT6hd8)
+
+## Movies
+
+- [Bat Kid](https://www.imdb.com/title/tt3884528/)
+- [National Geographic Diver rescue thai kids from cave](https://www.imdb.com/title/tt9098872/)
+
+## Good podcasts
+
+- Bunch of this american life episodes
+- 13 months to the moon when thing blows up.
+
+## Stuff from my own life
+
+- Some of the magical memories
+- The idea of the sacrifice my parents made by going to another country, not knowing the language or anything else.
+- Stuff as a father
+
+## Related Reading
+
+- [Anxiety](/anxiety)
