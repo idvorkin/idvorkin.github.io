@@ -119,6 +119,7 @@ Interesting to think about how my blog can help me achieve balance. Prompts for 
 - ☑ Started playing around with [balance](/balance), and also [activation energy](/activation-energy)
 - ☑ Some notion of weekly reviews with scoring.
 - ☑ Make up some UX for graphing my balance
+- ☑ Added Eulogy role to my todo-enjoy page. Nice since was able to bang out the [Typescript](https://github.com/idvorkin/idvorkin.github.io/commit/272b52c3f9e03b04709fedad168bbd3c5ddc33a4) and [python](https://github.com/idvorkin/idvorkin.github.io/commit/e737fb7b18abc72817941873ff0f2b06b8a84338#diff-bb4df011ed38b037f2faf683590e337b1b0997feaa3be3094ff93e5fbb7280b5) with minimal effort since my tools are so good now (and my fluency is up in both languages).
 
 Didn't get here:
 
