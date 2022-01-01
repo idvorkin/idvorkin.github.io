@@ -15,15 +15,16 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 <!-- vim-markdown-toc GFM -->
 
 - [Commercials](#commercials)
+- [Shorts](#shorts)
 - [Movies](#movies)
-- [Good podcasts](#good-podcasts)
+- [Good audio](#good-audio)
 - [Stuff from my own life](#stuff-from-my-own-life)
 - [Related Reading](#related-reading)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Commercials
+### Commercials
 
 - [Grandfather getting strong](https://youtu.be/y_bYjLYXJo0)
 - [Thai Feeding the poor - sick dad](https://m.youtube.com/watch?v=iVrQqWIs6ZE)
@@ -32,22 +33,29 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 - [Thai silence of love](https://m.youtube.com/watch?v=qZMX6H6YY1M)
 - [Lots of the commercials back to back](https://m.youtube.com/watch?v=rQcucGT6hd8)
 
-## Movies
+### Shorts
+
+- [There are no scraps of men](https://youtu.be/1QX7aoxSTAQ)
+- [Mr rogers speaking to congress](https://youtu.be/-C5PMPIdG_Y)
+- [The power of kindness](https://youtu.be/aWseEycdXS8)
+
+### Movies
 
 - [Bat Kid](https://www.imdb.com/title/tt3884528/)
 - [National Geographic Diver rescue thai kids from cave](https://www.imdb.com/title/tt9098872/)
 
-## Good podcasts
+### Good audio
 
 - Bunch of this american life episodes
 - 13 months to the moon when thing blows up.
+- Felix Denis [who was the better man](http://www.felixdennis.com/Poet/The-Better-Man.aspx)
 
-## Stuff from my own life
+### Stuff from my own life
 
 - Some of the magical memories
 - The idea of the sacrifice my parents made by going to another country, not knowing the language or anything else.
 - Stuff as a father
 
-## Related Reading
+### Related Reading
 
 - [Anxiety](/anxiety)
