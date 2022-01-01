@@ -147,6 +147,10 @@ Debugging:
 - bpython - Python Interpretter (nice GUI, but no VI)
 - loguru - Output pretty exception meassages with a single type annotation
 
+Examples:
+
+- Parsing a web page, with nice debugging and cli tooling ([Eulogy Parser](https://github.com/idvorkin/idvorkin.github.io/blob/master/eulogy_to_json.py#L5))
+
 ### Typescript
 
 - [Quick Type](https://quicktype.io/?l=cs&r=json2csharp) Create classes from JSON
