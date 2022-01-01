@@ -9,6 +9,8 @@ redirect_from:
   - /insecurity
   - /phoney
   - /imposter
+  - /psych-safety
+  - /psychological-safety
 ---
 
 We all get it. imposter syndrome, which include [shame](/shame)
@@ -39,5 +41,11 @@ A few quotes from people he asked about these feelings:
 Read my notes [situational leadership](/coaching#situational-coaching)
 
 _As people take on new tasks requiring them to learn new skills, they go through a predictable, often painful, sequence of experiences. These experiences are based on the progression of confidence and competence, and each experience benefits from a different type of coaching described in [Situational Leadership](https://en.wikipedia.org/wiki/Situational_leadership_theory)._
+
+#### Psychological Safety
+
+Probably in the wrong spot - maybe add to the manager book call out, or anxiety
+
+[Lies we tell ourselves](https://docs.google.com/presentation/d/1u8kswf7qUDdKgMlxBVRUXilwECv9sVWJtM6IMTuP5hQ/edit)
 
 #### Other resources
