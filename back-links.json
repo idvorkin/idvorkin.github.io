@@ -35,6 +35,7 @@
         "/corona": "/covid",
         "/correct-of-errors": "/coe",
         "/covid19": "/covid",
+        "/cry": "/touching",
         "/cv": "/covid",
         "/dealjoy": "/joy",
         "/decide": "/decisive",
@@ -50,6 +51,7 @@
         "/enjoy": "/happy",
         "/essential": "/essentialism",
         "/exercise": "/physical-health",
+        "/failure": "/fail",
         "/fatality": "/death",
         "/feeling-meetings": "/Human-Meetings",
         "/first-thing-first": "/first-things-first",
@@ -80,6 +82,7 @@
         "/machine-learning": "/ml",
         "/machinelearning": "/ml",
         "/makejoy": "/joy",
+        "/makes-me-cry": "/touching",
         "/makesmile": "/joy",
         "/manager": "/being-a-great-manager",
         "/mechanism": "/upstream",
@@ -105,6 +108,8 @@
         "/process": "/upstream",
         "/procrastinate": "/frog",
         "/procrastination": "/frog",
+        "/psych-safety": "/insecure",
+        "/psychological-safety": "/insecure",
         "/rage": "/anger",
         "/rca": "/coe",
         "/remote": "/remote-work",
@@ -132,6 +137,8 @@
         "/think": "/writing",
         "/thinking": "/writing",
         "/time-off": "/timeoff",
+        "/todo": "/todo_enjoy",
+        "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
         "/twentytwo": "/what-i-wish-knew-at-22",
         "/vacation": "/timeoff",
@@ -255,7 +262,8 @@
                 "/insomnia"
             ],
             "incoming_links": [
-                "/balance"
+                "/balance",
+                "/d/time-off-12-2021"
             ],
             "redirect_url": "",
             "doc_size": 15000
@@ -305,9 +313,11 @@
             "outgoing_links": [
                 "/nlp"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/nlp"
+            ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -363,10 +373,12 @@
             ],
             "incoming_links": [
                 "/depression",
+                "/fail",
                 "/gtd",
                 "/happy",
                 "/mental-pain",
                 "/operating-manual",
+                "/touching",
                 "/voices"
             ],
             "redirect_url": "",
@@ -401,7 +413,8 @@
             ],
             "incoming_links": [
                 "/7-habits",
-                "/7h-concepts"
+                "/7h-concepts",
+                "/d/time-off-12-2021"
             ],
             "redirect_url": "",
             "doc_size": 17000
@@ -632,6 +645,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/amazon",
+                "/fail",
                 "/manager-book",
                 "/writing"
             ],
@@ -927,6 +941,7 @@
             "incoming_links": [
                 "/books-that-defined-me",
                 "/enemy",
+                "/fail",
                 "/first-things-first",
                 "/frog",
                 "/psychic-weight",
@@ -978,11 +993,14 @@
             "outgoing_links": [
                 "/time-off",
                 "/happy",
-                "/td/time-off-12-2020"
+                "/time-off-11-2021",
+                "/td/time-off-12-2020",
+                "/balance",
+                "/activation-energy"
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 19000
         },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
@@ -1257,7 +1275,8 @@
                 "/irl",
                 "/joy",
                 "/operating-manual",
-                "/timeoff"
+                "/timeoff",
+                "/todo_enjoy"
             ],
             "redirect_url": "",
             "doc_size": 28000
@@ -1276,6 +1295,21 @@
             ],
             "redirect_url": "",
             "doc_size": 25000
+        },
+        "/fail": {
+            "py/object": "__main__.Page",
+            "url": "/fail",
+            "title": "LEARNING FROM MISTAKES",
+            "description": "Failure is not an option it’s a necessity. Here a\n\n",
+            "file_path": "_site/fail.html",
+            "outgoing_links": [
+                "/coe",
+                "/resistance",
+                "/anxiety"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 12000
         },
         "/first-things-first": {
             "py/object": "__main__.Page",
@@ -1928,7 +1962,9 @@
             "title": "SENTIMENT ANALYSIS AND NLP",
             "description": "My explorations of NLP, mostly using my corpus of journal entries and other writing. My intent is two fold 1) learning about NLP and sentiment analysis 2) finding latent meaning in my writing, ideally to help me better understand my own psychological processes. I’ve had much more success with the former then the latter\n\n",
             "file_path": "_site/nlp.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/ai-art"
+            ],
             "incoming_links": [
                 "/ai-art",
                 "/ml",
@@ -2802,7 +2838,9 @@
             "title": "THINGS I ENJOY",
             "description": "It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:\n\n",
             "file_path": "_site/todo_enjoy.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/eulogy"
+            ],
             "incoming_links": [
                 "/operating-manual"
             ],
@@ -2820,7 +2858,20 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 40000
+            "doc_size": 41000
+        },
+        "/touching": {
+            "py/object": "__main__.Page",
+            "url": "/touching",
+            "title": "THINGS THAT MAKE ME CRY",
+            "description": "It’s pretty easy to be overwhelmed by humanity sucking, but there is so much good in the world. Here are some great examples\n\n",
+            "file_path": "_site/touching.html",
+            "outgoing_links": [
+                "/anxiety"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 11000
         },
         "/toysfortots": {
             "py/object": "__main__.Page",
