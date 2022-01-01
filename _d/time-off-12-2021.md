@@ -12,7 +12,24 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 
 ## Moments
 
+- Wrote [Zong with Zach](https://idvork.in/ig66/602).
+- TBD Jumped in the lake 2021
+- Had a bunch of walks to enjoy our snowy weather.
+
 ## Success Stories
+
+- Only 1 day vegitating
+- Almost no time on quick sand.
+- Uninstalled TikTik, took out lots of opportunities to vegetate.
+- Used streaks to track habits. Very helpful to have that in my face
+- Took Selfies almost daily
+- Lots of good bonding with Zach.
+- Really nice relationship time with Tori, awesome seeing her engaged in projects.
+- Got Zach prepped to walk home from work.
+- Ammon reminded me the importance of jumping in the lake
+- Started Intermitted Fasting
+- Honored my desire not to go deep into tech for the sake of tech (because I did it [last timeoff](/time-off-11-2021))
+- Thought pretty deeply about balance and activation energy.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -55,13 +72,15 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 - This year, reads almost [identical to last year](/td/time-off-12-2020). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
 - Balance, it's all about balance!
 - Prepare before you take time off so when you go in you don't need to spend much time vegetating.
+- Re-writing your desires for time off is good and helps you hit it. Need to think through how to have the right goals, not too hard so you feel bad, but not so easy that you feel unsatisfied.
+- Tech/content time before the kids wake up is totally fine.
 
 ## Relationships
 
 ### Friends
 
 - ☑ Catch up with Bob
-- ☐ Catch up with Slava
+- ☑ Catch up with Slava
 - ☐ Catch up with Dave
 
 ### Tori
@@ -71,37 +90,44 @@ Private
 ### Zach
 
 - ☐ Setup a list of things to watch togteher
-- ☐ Watch a movie together
-- ☐ Work on his programming course
-  - Write Pong
-  - Come up with another game to write
+- ☑ Watch a movie together
+- ☑ Work on his programming course
+- ☑ Write Pong
+- ☑ Come up with another game to write
 
 ### Amelia
 
-- ☐ Spend time with her in the hottub 8/10 days
+- ☐ Spend time with her in the hottub 8/10 days. OK, it was freezing, we got lots of hugs, and went bowling. Could have done better here.
+- ☐ Lots of selifes
 
 ## Identity Health
 
 ### Magic
 
-- Practice Daily
+- ☑ Practice Daily - I did this, **BUT** Only a few minutes - need to start somewhere.
 
 ### Biking
 
-- Bike atleast every other day
-- Combine folding bike with subway for more range
-- Take a selfie with the Bicycle
+- ☐ Bike atleast every other day - It was freezing, didn't do at all. Double miss as winter biking is fun.
+- ☐ Combine folding bike with subway for more range
+- ☐ Take a selfie with the Bicycle
 
 ### Software for Balance
 
 Interesting to think about how my blog can help me achieve balance. Prompts for things i enjoy seems like a good idea.
 
-- Some notion of weekly reviews with scoring.
-- Make up some UX for graphing my balance
+- ☑ Started playing around with [balance](/balance), and also [activation energy](/activation-energy)
+- ☑ Some notion of weekly reviews with scoring.
+- ☑ Make up some UX for graphing my balance
+
+Didn't get here:
+
 - Review and have someone else score your balance.
 - Update prompting system to be stateful, so it prompts you more for stuff you haven't been doing, or need more investment in.
 
 ### Tech Guru
+
+I did a great job writing content, but not messering around with my vim or bash or python setup. Good for me! I spent some time playing with [OpenAI3](https://github.com/idvorkin/LinqPadSnippets/blob/628072a882250daa16b142c023c104b8fb520bc1/python/gpt3.py#L1), but that was pretty fun, very glad I did.
 
 #### DENY LIST: Shell + Enabling Environment + Python in VIM
 
@@ -115,21 +141,26 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 
 ### 7 Habits
 
-- ☐ Add more prompts to 7 habits page
+- ☑ Add more prompts to 7 habits page
 - ☐ STRETCH: Update concepts page
 - ☐ STRETCH: Update first things first page
 - ☐ STRETCH: Update Seek first to understand
 
 ### Blog posts
 
-- ☐ Merge Psych Safety talk into some of your blogs
+- ☑ Merge Psych Safety talk into some of your blogs
 - ☐ Merge Anxiety Todo list into some of the blogs
 
 ## Emotional Health
 
 ### Meditation
 
+- ☑ Every day for 15 minutes! Using the streaks apps really helped
+
 ### 750 words/Gratefulness
+
+- ☑ Gratefulness daily.
+- ☐ 750 words - Dropped this as a habit, thinking gratefulness was high order bit. Probably a mistake. When I do this it clears my head.
 
 ## Physical Health
 
@@ -143,7 +174,7 @@ Gym Days:
 
 ### Sleep
 
-- ☐ 10/10 wake up at 4:30.
+- ☑ 10/10 wake up at 4:30. Probably 8 days, and the otehrs up by 5:30, I'd say nailed that.
 
 ### Energy
 
@@ -151,10 +182,11 @@ Gym Days:
 
 ## House and goods
 
-- ☐ Get hottub working again
-- ☐ Get propane heater working again.
-- ☐ Figure out LTC insurance
-- ☐ Expense all the stuff I've forgotten to expense
+- ☑ Get hottub working again
+- ☑ Get propane heater working again - It was broken, I ended up buying a new one - the right call as it brings me pleasure.
+- ☑ Figure out LTC insurance
+- ☐ Expense all the stuff I've forgotten to expense - Sigh maybe in february.
+- ☐ Figure out Tax Audit. Forgot to stick this on the list. That said IRS is reviewing it again, so maybe I'll wait for that.
 
 ## Mental quicksand
 
