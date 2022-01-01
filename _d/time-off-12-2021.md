@@ -4,7 +4,7 @@ no-render-title: true
 title: Time off X-mas 2021
 ---
 
-It's Corona virus X-mas 2021, the not so bad edition, and I've got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
+It's Corona virus X-mas 2021, the not so bad edition, and I've got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
 
 This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
@@ -18,17 +18,17 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 
 ## Success Stories
 
-- Only 1 day vegitating
+- Only 1 day vegetating
 - Almost no time on quick sand.
-- Uninstalled TikTik, took out lots of opportunities to vegetate.
+- Uninstalled TikTok, took out lots of opportunities to vegetate.
 - Used streaks to track habits. Very helpful to have that in my face
 - Took Selfies almost daily
 - Lots of good bonding with Zach.
 - Really nice relationship time with Tori, awesome seeing her engaged in projects.
 - Got Zach prepped to walk home from work.
 - Ammon reminded me the importance of jumping in the lake
-- Started Intermitted Fasting
-- Honored my desire not to go deep into tech for the sake of tech (because I did it [last timeoff](/time-off-11-2021))
+- Started Intermittent Fasting
+- Honored my desire not to go deep into tech for the sake of tech (because I did it [last time off](/time-off-11-2021))
 - Thought pretty deeply about balance and activation energy.
 
 <!-- prettier-ignore-start -->
@@ -89,7 +89,7 @@ Private
 
 ### Zach
 
-- ☐ Setup a list of things to watch togteher
+- ☐ Setup a list of things to watch together
 - ☑ Watch a movie together
 - ☑ Work on his programming course
 - ☑ Write Pong
@@ -97,8 +97,8 @@ Private
 
 ### Amelia
 
-- ☐ Spend time with her in the hottub 8/10 days. OK, it was freezing, we got lots of hugs, and went bowling. Could have done better here.
-- ☐ Lots of selifes
+- ☐ Spend time with her in the hot tub 8/10 days. OK, it was freezing, we got lots of hugs, and went bowling. Could have done better here.
+- ☐ Lots of selfies
 
 ## Identity Health
 
@@ -108,7 +108,7 @@ Private
 
 ### Biking
 
-- ☐ Bike atleast every other day - It was freezing, didn't do at all. Double miss as winter biking is fun.
+- ☐ Bike at least every other day - It was freezing, didn't do at all. Double miss as winter biking is fun.
 - ☐ Combine folding bike with subway for more range
 - ☐ Take a selfie with the Bicycle
 
@@ -128,7 +128,7 @@ Didn't get here:
 
 ### Tech Guru
 
-I did a great job writing content, but not messering around with my vim or bash or python setup. Good for me! I spent some time playing with [OpenAI3](https://github.com/idvorkin/LinqPadSnippets/blob/628072a882250daa16b142c023c104b8fb520bc1/python/gpt3.py#L1), but that was pretty fun, very glad I did.
+I did a great job writing content, but not messing around with my vim or bash or python setup. Good for me! I spent some time playing with [Open AI3](https://github.com/idvorkin/LinqPadSnippets/blob/628072a882250daa16b142c023c104b8fb520bc1/python/gpt3.py#L1), but that was pretty fun, very glad I did.
 
 #### DENY LIST: Shell + Enabling Environment + Python in VIM
 
@@ -175,7 +175,7 @@ Gym Days:
 
 ### Sleep
 
-- ☑ 10/10 wake up at 4:30. Probably 8 days, and the otehrs up by 5:30, I'd say nailed that.
+- ☑ 10/10 wake up at 4:30. Probably 8 days, and the others up by 5:30, I'd say nailed that.
 
 ### Energy
 
@@ -183,10 +183,10 @@ Gym Days:
 
 ## House and goods
 
-- ☑ Get hottub working again
+- ☑ Get hot tub working again
 - ☑ Get propane heater working again - It was broken, I ended up buying a new one - the right call as it brings me pleasure.
 - ☑ Figure out LTC insurance
-- ☐ Expense all the stuff I've forgotten to expense - Sigh maybe in february.
+- ☐ Expense all the stuff I've forgotten to expense - Sigh maybe in February.
 - ☐ Figure out Tax Audit. Forgot to stick this on the list. That said IRS is reviewing it again, so maybe I'll wait for that.
 
 ## Mental quicksand
