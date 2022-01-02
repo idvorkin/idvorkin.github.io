@@ -687,6 +687,8 @@ _(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to
 
     sudo amazon-linux-extras install docker
 
+Manage via [LazyDocker](https://github.com/jesseduffield/lazydocker)
+
 ### Terminal Info
 
 Terminfo, ncurses, OSX, what a mess. You need to add your own terminfos see:
