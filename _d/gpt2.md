@@ -73,6 +73,8 @@ Because the input is a prompt which gets autcompleted, prompt generation is huge
 * [Lots of language models to investigate](https://github.com/semiosis/pen.el/blob/master/docs/compatibility-and-interoperatbility.org)
 * [Prompt Database other](https://gptprompts.org/prompts)
 * Super interesting person [On GPT3](https://www.gwern.net/GPT-3)
+* More prompt libraries - https://github.com/maraoz/gpt-scrolls/
+* Using Playground - https://www.twilio.com/blog/ultimate-guide-openai-gpt-3-language-model
 
 ## Tech
 
