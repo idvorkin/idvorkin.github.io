@@ -311,11 +311,9 @@
             "description": "Creativity is a criticial aspect of art, and that’s something which I think AI can be really good at. Some very random ideas\n\n",
             "file_path": "_site/ai-art.html",
             "outgoing_links": [
-                "/nlp"
+                "/gpt"
             ],
-            "incoming_links": [
-                "/nlp"
-            ],
+            "incoming_links": [],
             "redirect_url": "",
             "doc_size": 12000
         },
@@ -988,7 +986,7 @@
             "py/object": "__main__.Page",
             "url": "/d/time-off-12-2021",
             "title": "TIME OFF X-MAS 2021",
-            "description": "It’s Corona virus X-mas 2021, the not so bad edition, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
+            "description": "It’s Corona virus X-mas 2021, the not so bad edition, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
             "file_path": "_site/d/time-off-12-2021.html",
             "outgoing_links": [
                 "/time-off",
@@ -1435,6 +1433,21 @@
             "redirect_url": "",
             "doc_size": 12000
         },
+        "/gpt": {
+            "py/object": "__main__.Page",
+            "url": "/gpt",
+            "title": "GPT3 AND LANGUAGE MODELS",
+            "description": "Using GPT3 is like coaching a superintelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
+            "file_path": "_site/gpt.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/ai-art",
+                "/ml",
+                "/nlp"
+            ],
+            "redirect_url": "",
+            "doc_size": 13000
+        },
         "/grateful": {
             "py/object": "__main__.Page",
             "url": "/grateful",
@@ -1878,6 +1891,7 @@
             "file_path": "_site/ml.html",
             "outgoing_links": [
                 "/pandas",
+                "/gpt",
                 "/nlp"
             ],
             "incoming_links": [
@@ -1963,10 +1977,9 @@
             "description": "My explorations of NLP, mostly using my corpus of journal entries and other writing. My intent is two fold 1) learning about NLP and sentiment analysis 2) finding latent meaning in my writing, ideally to help me better understand my own psychological processes. I’ve had much more success with the former then the latter\n\n",
             "file_path": "_site/nlp.html",
             "outgoing_links": [
-                "/ai-art"
+                "/gpt"
             ],
             "incoming_links": [
-                "/ai-art",
                 "/ml",
                 "/tools"
             ],
