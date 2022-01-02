@@ -47,7 +47,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [Analysis Approaches](#analysis-approaches)
     - [Bag of words.](#bag-of-words)
 - [Useful stuff](#useful-stuff)
-    - [GPT3 and AI-ART](#gpt3-and-ai-art)
+    - [GPT3](#gpt3)
     - [Lemmatization vs Stemming](#lemmatization-vs-stemming)
     - [TF/IDF](#tfidf)
     - [Word Embedding - Word2Vec](#word-embedding---word2vec)
@@ -132,9 +132,9 @@ I can score the sentiment of a document as the median(f
 
 ## Useful stuff
 
-### GPT3 and AI-ART
+### GPT3
 
-See my article on [ai-art](/ai-art)
+See my article on [GPT](/gpt)
 
 ### Lemmatization vs Stemming
 

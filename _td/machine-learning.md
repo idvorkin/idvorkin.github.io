@@ -75,6 +75,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Regression](#regression-1)
     - [PCA](#pca)
     - [SVM](#svm)
+    - [Language models and GPT 3](#language-models-and-gpt-3)
 - [Topics to be explored](#topics-to-be-explored)
     - [DevOps for ML](#devops-for-ml)
     - [Ethical AI](#ethical-ai)
@@ -344,6 +345,10 @@ Algorithms in [plain english](https://hackerbits.com/data/top-10-data-mining-alg
 ### PCA
 
 ### SVM
+
+### Language models and GPT 3
+
+This is an amazing topic. See [GPT](/gpt)
 
 ## Topics to be explored
 
