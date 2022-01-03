@@ -31,12 +31,13 @@ Useful writing tells people something true and important that they didn't alread
     - [Diagrams](#diagrams)
     - [Stories and actions not just data](#stories-and-actions-not-just-data)
 - [Writing to be Understood](#writing-to-be-understood)
+    - [Know your audience](#know-your-audience)
     - [The journey or the recommendation](#the-journey-or-the-recommendation)
     - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
     - [The Pixar Formula:](#the-pixar-formula)
-    - [The Hero's Journey Formula:](#the-heros-journey-formula)
     - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
     - [The crappy modern business book](#the-crappy-modern-business-book)
+    - [The Hero's Journey - For very long form](#the-heros-journey---for-very-long-form)
 - [Pen to paper](#pen-to-paper)
     - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
     - [On essay's and writing:](#on-essays-and-writing)
@@ -216,6 +217,15 @@ And a great primer on what to convery to graph
 
 ## Writing to be Understood
 
+### Know your audience
+
+You're writing for someone, as yourself:
+
+- Who is the audience?
+- What do they already know?
+- What do I want them to learn?
+- What do I want them to do?
+
 ### The journey or the recommendation
 
 Sometimes you want to share your journey, the twists and turns and helping readers empathize or be trained. By contrast there are times you want to provide a recommendation and reasoning. The time element, and your experiences are noise in this case.
@@ -247,8 +257,6 @@ https://startuppitch.substack.com/p/nail-your-startup-pitch-use-pixars
   - Because of that, [details]
   - Until finally [details]
 
-### The Hero's Journey Formula:
-
 ### The feedback formula: Situation, Behavior, Impact
 
 Very useful in giving feedback and [coaching](/coaching)
@@ -273,6 +281,34 @@ The modern business/self-help book formula is:
 Generally, these books can be summarized in a short 5 page essay. In fact they often have an HBR (Harvard Business Review) article from the auther which does exactly that.
 
 Business book don't have to be crappy by laws of physics, some are excellent like the [first 90 days](/90days). I highly recommend reading both for the content, and the structure. The structure is awesome because
+
+### The Hero's Journey - For very long form
+
+You'll see this in a lot of movies, and it can be fun to map a movie to this story. From [here](https://libguides.gvsu.edu/c.php?g=948085&p=6857311)
+
+- THE ORDINARY WORLD - This is the original world of the hero, which "suffers from a symbolic deficiency." The hero is lacking something, or something is taken from him.
+
+- THE CALL TO ADVENTURE - The hero is given a challenge, problem, or adventure. Often it appears as a blunder, or chance. This stage establishes the goal of the hero.
+
+- THE REFUSAL OF THE CALL - The (often) reluctant hero has to be set along the correct path. He must weigh the consequences and be excited by a stronger motivation to proceed further.
+
+- MEETING WITH THE MENTOR - The hero encounters a wise figure who prepares him for the journey. This figure (or item) gives advice, guidance, or an item, but cannot go with the hero.
+
+- CROSSING THE THRESHOLD - The hero has committed to his task, and enters the special world. Often he is met by a threshold guardian.
+
+- TESTS, ALLIES, AND ENEMIES - In the special world, the hero learns the new rules by meeting people and obtaining new information. There is often a "local watering hole" component. This is where the true characteristics of the hero are revealed.
+
+- APPROACH TO THE INNERMOST CAVE - Now our hero, and often his allies, have come to the edge of the dangerous place where the "object of the quest" is hidden. This stage often is the land of the dead.
+
+- THE SUPREME ORDEAL - The hero faces danger, often a life-or-death moment that is either physical or psychological.
+
+- REWARD, OR SEIZING THE SWORD - After surviving, our hero takes possession of the object, typically a treasure, weapon, knowledge, token, or reconciliation.
+
+- THE ROAD BACK - The hero must now deal with the consequences of their actions. They may be pursued by remaining forces. They now face the decision to return to the ordinary world.
+
+- RESURRECTION - One final test is required for the purification and rebirth of the hero. Alternatively, it may be a miraculous transformation.
+
+- RETURN WITH THE ELIXIR - The triumphant hero returns to the ordinary world bearing the elixir. Common elixirs are treasure, love, freedom, wisdom, or knowledge. A defeated hero is doomed to repeat the lesson.
 
 ## Pen to paper
 
