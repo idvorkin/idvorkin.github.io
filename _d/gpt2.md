@@ -25,6 +25,8 @@ Using GPT3 is like coaching a superintelligent cat into learning a new trick: yo
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
+Step #1 - check out some [demos here](https://herbertlui.net/9-examples-of-writing-with-openais-gpt-3-language-model/)
+
 ## Philosophy
 
 GPT 3 is a huge langauge model that has the ability to complete sentances
