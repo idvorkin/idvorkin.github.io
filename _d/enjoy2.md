@@ -96,7 +96,7 @@ Wearing a silly hat, his trusty folding bike at his feet, and using a purple fou
 - Ride to get a cookie!
 - Ride my folding bike!
 
-### Potporri
+### Joy
 
 - Give out chocolate balls
 - Ride a bubble bike!
@@ -121,6 +121,8 @@ Wearing a silly hat, his trusty folding bike at his feet, and using a purple fou
 - Glow in the dark balls
 - 4 balls
 - small food stuff like eggs and mandarins
+
+## Magic
 
 ### Card Magic
 
