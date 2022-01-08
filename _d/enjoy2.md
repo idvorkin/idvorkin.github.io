@@ -91,11 +91,28 @@ Wearing a silly hat, his trusty folding bike at his feet, and using a purple fou
 
 ## Entertaining
 
-### Biking
+### Make others smile
 
-- Ride a bubble bike!
 - Ride to get a cookie!
 - Ride my folding bike!
+
+### Potporri
+
+- Give out chocolate balls
+- Ride a bubble bike!
+- Wear my rainbow suit
+- Wear my goat boy legs and horns
+
+### Colorful Clothing
+
+- Put on a wig
+- Wear toe shoes
+- Wear Sequin Jacket
+- Wear a Halloween costumes - Lama
+- Wear a Halloween costumes - Bird
+- Wear a Halloween costumes - Fish
+- Wear a Halloween costumes - Penguin
+- Wear a Halloween costumes - Bee
 
 ### Juggling
 
@@ -125,19 +142,6 @@ Wearing a silly hat, his trusty folding bike at his feet, and using a purple fou
 - Gift
 - Red or Green
 - Up Nose
-
-### Colorful Clothing
-
-- Wear my rainbow suit
-- Wear my goat boy legs and horns
-- Put on a wig
-- Wear toe shoes
-- Wear Sequin Jacket
-- Wear a Halloween costumes - Lama
-- Wear a Halloween costumes - Bird
-- Wear a Halloween costumes - Fish
-- Wear a Halloween costumes - Penguin
-- Wear a Halloween costumes - Bee
 
 ## Family
 
