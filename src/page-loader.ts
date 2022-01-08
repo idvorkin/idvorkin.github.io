@@ -60,23 +60,19 @@ class ThingsIEnjoy {
     const relationships = new TreeNode({
       name: "Relationships",
       children: [
-        new TreeNode({
-          name: "Zach",
-          children: [
-            new TreeNode({ name: "Pick Zach's Nose" }),
-            new TreeNode({ name: "Make Zach Make Dinner" }),
-            new TreeNode({ name: "Smell Zach's Feet" }),
-          ],
-        }),
+        new TreeNode({ name: "Zach" }),
         new TreeNode({ name: "Amelia" }),
         new TreeNode({ name: "Tori" }),
         new TreeNode({ name: "Friends" }),
       ],
     });
+    const joy = new TreeNode({
+      name: "Joy",
+    });
 
     return new TreeNode({
       name: "Invest in",
-      children: [health, magic, hobbies, relationships],
+      children: [health, magic, hobbies, relationships, joy],
     });
   }
 }
