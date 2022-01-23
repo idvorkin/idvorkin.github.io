@@ -10,6 +10,8 @@ no-render-title: true
     defer(load_ig66)
 </script>
 
+<!-- Show the most recent blog posts -->
+
 {% assign display_order_posts  = site.ig66 | reverse %}
 {% for item in  display_order_posts limit:2 %}
 
@@ -35,3 +37,20 @@ no-render-title: true
 
 <div class='alert alert-primary' id="random-recent">
 </div>
+
+<!-- Show the next blog posts -->
+
+{% assign display_order_posts  = site.ig66 | reverse %}
+{% for item in  display_order_posts limit:6 offset:2 %}
+
+{%if item.week %}
+{%else%}
+{% continue %}
+{% endif%}
+
+### [{{item.title}}]({{item.url}})
+
+[![montage](https://github.com/idvorkin/blob/raw/master/ig66/{{item.week}}/montage.jpg)]({{item.url}})
+{{item.excerpt}}
+
+{% endfor %}
