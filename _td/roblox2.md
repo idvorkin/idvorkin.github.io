@@ -44,6 +44,7 @@ See [them in my project](https://github.com/idvorkin/cat-lady-2/blob/main/.vscod
 - Amazing Autocompletion - Microsoft Co-Pilot
 - Edit roblox files outside studio - Rojo
 - Lint your files - Selene
+  - With Selene - enable roblox mode
 - Good Code Completion - Roblox LSP
 - Better Debugging in VS.Code - Roblox Output Sync
 - Langague Support - Lua Plugin
