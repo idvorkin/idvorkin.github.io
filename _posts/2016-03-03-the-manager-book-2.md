@@ -642,7 +642,7 @@ Engineers that are interested in reading this post make good manager candidates.
 
 ### Performance Reveiws: Calibrations PSC, OLR, Connections
 
-[Performance reviews](https://imwrightshardcode.com/2021/06/discussing-rewards-for-people/) exist at most companies, and for good reason they:
+[Performance reviews](https://imwrightshardcode.com/2021/06/discussing-rewards-for-people/) exist at most companies (I've been through Connects at MSFT, OLR at AMZN and PSC at FB), and for good reason they:
 
 - Ensure performance is evaluated consistently.
 - Provide forced feedback.
@@ -671,6 +671,15 @@ Best practices for performance reviews:
   - No surprises to the engineers, they should already be aware of their rating as it's been provided consistently.
   - Provide as much feedback to engineers after the process, owning the message.
   - Focus on growth plans (see above sections)
+
+Your role when representing people:
+
+- Gather data on what happened through the evaluation period. Gather more data on things that surprise you (like peer feedback, or accomplishments you wer enot aware of)
+- Present it as well as possible
+- Ensure the presentation is evaluated fairly by seeking feedback and focusing on fairness.
+- Calibrate yourself to ensure
+
+a post on preparing for calibrations
 
 ### Recall career is just one part of your life
 
