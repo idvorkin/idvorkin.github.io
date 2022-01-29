@@ -46,11 +46,11 @@ Compassion can be broken down with a time dimension.
 
 ### Judgment vs Curiosity
 
-Judgment throws ups barriers and causes us to hide the truth which can lead to guilt and [shame](/shame). Curiosity is gentle and helps us find what is going on. Compassion reduces judgment, reducing the barrier to compassion.
+Judgment throws up barriers and causes us to hide the truth which can lead to guilt and [shame](/shame). Curiosity is gentle and helps us find what is going on. Compassion reduces judgment, reducing the barrier to compassion.
 
 ### Compassionate Consequences
 
-We often think of rewards and punishments, but punishment's are less effective then rewards. So, what should happen if we don't follow our rule/reach our goal (do what we want, etc, etc)? What would grandma do?
+We often think of rewards and punishments, but punishments are less effective then rewards. So, what should happen if we don't follow our rule/reach our goal (do what we want, etc, etc)? What would grandma do?
 
 She'd get curious (aka have a retro!). Instead of assuming that breaking the rule was a bad thing, she'd dig in and reflect on if it was a good thing or a bad thing. If it was the right thing to do - perfect! If it was not the right thing to do, then we should reflect on why that was and why we made the wrong call.
 
@@ -62,7 +62,12 @@ Assuming we don't do what we wanted - the consequence should be 6 minute reflect
 2. 2m - what was the reason we wanted to follow the rule
 3. 2m - was it worth it.
 
-An advanced reader will notice, there are 2 cases to braking the rule 1) deliberately 2) mindlessly. If it was broken mindlessly, then the most useful thing will be to mindful the next time we wish to break the rule. This reflection practice primes us for that. If it was broken deliberately, but we made a bad call, then further reflection on that is helpful, and it will help up again in the future.
+An advanced reader will notice, there are 2 cases to breaking the rule 1) deliberately 2) mindlessly. If it was broken mindlessly, then the most useful thing will be to mindful the next time we wish to break the rule. This reflection practice primes us for that. If it was broken deliberately, but we made a bad call, then further reflection on that is helpful, and it will help up again in the future.
+
+| Mindfulness/Call | Right Call - Next Time                       | Wrong Call - Next Time            |
+| ---------------- | -------------------------------------------- | --------------------------------- |
+| Mindful          | Well done - Keep it up                       | Doh - Think through the trade off |
+| Mindless         | Got lucky - Make sure to think before acting | Snap - Think before acting        |
 
 ### Cutting ourselves slack vs slacking off
 
