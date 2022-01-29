@@ -17,6 +17,8 @@ Satisfaction is not a lack of dissatisfaction. SAT and DSAT are orthogonal dimen
     - [Waking up in the night, excited to go to work.](#waking-up-in-the-night-excited-to-go-to-work)
     - [The combinations](#the-combinations)
     - [Life is more important then Career](#life-is-more-important-then-career)
+    - [High SAT Low DSAT](#high-sat-low-dsat)
+    - [High DSAT, Low SAT](#high-dsat-low-sat)
     - [High SAT High DSAT](#high-sat-high-dsat)
     - [Low DSAT, Low SAT](#low-dsat-low-sat)
 - [Satisfaction - AMP](#satisfaction---amp)
@@ -50,11 +52,31 @@ SAT is being so excited about your project, you get up early Sunday morning to g
 
 ### Life is more important then Career
 
-[On deathbeds, you never hear "I wish I spent more time at work"](/wlb). You have many [roles in your life](/eulogy), and your SAT and DSAT flows out of your control, between them. Your life SAT/DSAT is not a static linear combination you decide, but a hard to subconcious dynamic function, with many unpredictable step functions.
+[On deathbeds, you never hear "I wish I spent more time at work"](/wlb). You have many [roles in your life](/eulogy), and your SAT and DSAT escape their role of original to impact all of your other roles. Your life SAT/DSAT is not a static linear combination that you decide, but a subconcious dynamic function, with many unpredictable step functions.
+
+### High SAT Low DSAT
+
+You've arrived. But this will likely pass. Learn what's working so you can replicate it later.
+
+### High DSAT, Low SAT
+
+Sounds like you need a change. Read [decisive](/decide) and [the dip](/the-dip)
 
 ### High SAT High DSAT
 
+This often oscillates between stressed as shit, and amazing. These situations tend to be unsustainable.
+
+Need to understand if the DSAT is structural or temporal, e.g. Just launch then everything calms down, or you're working with crappy people. If it's structural, there's an excellent chance the DSAT will grow into resentment, and then it'll be over.
+
 ### Low DSAT, Low SAT
+
+The hardest case. You've got a great gig, but something is missing.
+
+First, need to see if your low SAT is impacting your performance. If it is, this will become a problem and become high DSAT.
+
+Second, need to see if you can redefine your role/responsiblities to include things that give you SAT. You'd be surprised, there are often tonnes.
+
+Third, this setup doesn't rob you of energy from your other roles in life. Assuming you're performing well in this role, can you get your SAT from the extra energy you contribute to those other roles?
 
 ## Satisfaction - AMP
 
