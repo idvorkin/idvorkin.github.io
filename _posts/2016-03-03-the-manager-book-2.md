@@ -994,19 +994,19 @@ There are some more concepts I need to flesh out:
 
 **Opportunity cost** - If a senior developer is doing something a junior developer is doing, then you have turned your senior developer into a junior developer and no-one is doing the work of a senior developer. This is also why teams need a blend of junior, intermediate and senior developers.
 
-**Right sizing projects, and support** When people are growing, stuff is going to be hard, and it's important they don't take on more then they can chew (see ability to succeed", even when the project is the right size, it's important the person has the dynamic support and mentorship they need.
+**Right sizing projects, and support** When people are growing, stuff is going to be hard, and it's important they don't take on more then they can chew (see ability to succeed), even when the project is the right size, it's important the person has the dynamic support and mentorship they need.
 
-**Keeping slack in the system** Anxiety is the difference between reality and expectations. Slack is the tool that helps us better model reality.
+**Keeping slack in the system** Anxiety is the difference between reality and expectations. Slack is the tool that helps us better model reality, and keep stress under control.
 
 ### The road building analogy to software development roles.
 
 Imagine we want to build a new road.
 
 1. Start of time: PM figures out there's a market for a road, and the needs of the customer, and comes up with a rough idea of where the road needs to be between.
-1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or somewhere else as other folks have tried digging their, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper
+1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or somewhere else as other folks have tried digging there, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper
 1. After: Senior Engineers come in and start figuring out where they'll build, what's the safest path, and what's a realistic schedule
-1. After: Intermediate dev's are assigned a small junk of the road and start building it.
-1. After: Junior devs are given very clear tasks, and start doing them
+1. After: Intermediate dev's are assigned a chunk of the road and start building it.
+1. After: Junior devs are given very clear tasks, and start doing them.
 
 ## Hiring
 
