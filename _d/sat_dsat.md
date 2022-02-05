@@ -21,7 +21,7 @@ Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are ort
     - [High DSAT, Low SAT](#high-dsat-low-sat)
     - [High SAT High DSAT](#high-sat-high-dsat)
     - [Low DSAT, Low SAT](#low-dsat-low-sat)
-- [From  Low DSAT, Low SAT to unicorn land (Low DSAT; High SAT)](#from--low-dsat-low-sat-to-unicorn-land-low-dsat-high-sat)
+- [From Low DSAT, Low SAT to unicorn land (Low DSAT; High SAT)](#from-low-dsat-low-sat-to-unicorn-land-low-dsat-high-sat)
 - [Satisfaction - AMP](#satisfaction---amp)
     - [Autonomy](#autonomy)
     - [Mastery](#mastery)
@@ -29,7 +29,7 @@ Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are ort
 - [DSAT Deep Dive](#dsat-deep-dive)
     - [Conflict](#conflict)
     - [Insufficient Resources](#insufficient-resources)
-    - [Insecurty](#insecurty)
+    - [Insecurity](#insecurity)
     - [WLB](#wlb)
 
 <!-- vim-markdown-toc -->
@@ -45,11 +45,11 @@ SAT is being so excited about your project, you get up early Sunday morning to g
 
 ### DSAT, SAT, Work and Life
 
-[I wish I spent more time at work, is never uttured on a death bed](/wlb). You have many [roles beyond work in your life](/eulogy), and balancing between them is the definition of effectiveness.
+[I wish I spent more time at work, is never uttered on a death bed](/wlb). You have many [roles beyond work in your life](/eulogy), and balancing between them is the definition of effectiveness.
 
 High work SAT is great for your work, but this results in a [high stopping Energy, making activating](/activation) your other roles challenging. This is balanced, by the fact that Sat bringing good energy to other roles in your life.
 
-Even though low work SAT, results in lower work stopping energy, having low SAT can lower your overall enery and will power, resulting in less energy for your other roles.
+Even though low work SAT, results in lower work stopping energy, having low SAT can lower your overall energy and will power, resulting in less energy for your other roles.
 
 ### The consulting matrix
 
@@ -113,6 +113,6 @@ Examine the things that don't bring you SAT, and see what you can adjust to sque
 
 ### Insufficient Resources
 
-### Insecurty
+### Insecurity
 
 ### WLB
