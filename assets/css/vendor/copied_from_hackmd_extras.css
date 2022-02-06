@@ -78,8 +78,9 @@
   display: block;
   padding: 4px 5px;
   font-size: 15px;
-  font-weight: 500;
-  color: #007bff;
+  font-weight: bold;
+  color: blue;
+  background-color: white;
 }
 
 .ui-toc-dropdown .toc.expand ul {
@@ -104,7 +105,7 @@
 .ui-toc-dropdown .nav > .active > a {
   padding-left: 18px;
   font-weight: 700;
-  color: black;
+  color: blue;
   background-color: transparent;
   border-left: 2px solid black;
 }
