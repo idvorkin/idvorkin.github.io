@@ -137,11 +137,25 @@ async function ProcessBackLinks(allUrls) {
         console.log("No back_link_location");
         return;
     }
-    back_link_location.append("<div id='links-to-page-title'> <b>LINKS TO THIS NOTE</b><div>");
+    back_link_location.append(`
+<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#incoming" type="button" role="tab" aria-controls="incoming" aria-selected="true">Links to here</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#outgoing" type="button" role="tab" aria-controls="outgoing" aria-selected="false">Link from here</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active " id="incoming" role="tabpanel" aria-labelledby="incoming-tab"></div>
+  <div class="tab-pane fade" id="outgoing" role="tabpanel" aria-labelledby="outgoing-tab">To be implemented</div>
+</div>
+`);
+    let outgoing_location = back_link_location.find("#incoming");
     var sort_descending_by_size = (a, b) => Number(allUrls[b].doc_size) - Number(allUrls[a].doc_size);
     for (var link of backlinks.sort(sort_descending_by_size)) {
         const url_info = allUrls[link];
-        back_link_location.append(MakeBackLinkHTML(url_info));
+        outgoing_location.append(MakeBackLinkHTML(url_info));
     }
 }
 async function addBackLinksLoader() {
