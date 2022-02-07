@@ -124,20 +124,21 @@ function MakeBackLinkHTML(url_info) {
 </div>`;
     return output;
 }
-async function ProcessBackLinks(allUrls) {
-    var _a;
+async function AddLinksToPage(allUrls) {
+    var _a, _b;
     var my_path = new URL(document.URL).pathname;
     const backlinks = (_a = allUrls[my_path]) === null || _a === void 0 ? void 0 : _a.incoming_links;
-    if (!backlinks) {
+    const frontlinks = (_b = allUrls[my_path]) === null || _b === void 0 ? void 0 : _b.outgoing_links;
+    if (!backlinks && !frontlinks) {
         console.log(`No backlinks for the page ${my_path}`);
         return;
     }
-    let back_link_location = $("#links-to-page");
-    if (!back_link_location) {
+    let link_parent_location = $("#links-to-page");
+    if (!link_parent_location) {
         console.log("No back_link_location");
         return;
     }
-    back_link_location.append(`
+    link_parent_location.append(`
 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#incoming" type="button" role="tab" aria-controls="incoming" aria-selected="true">Links to here</button>
@@ -148,18 +149,34 @@ async function ProcessBackLinks(allUrls) {
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active " id="incoming" role="tabpanel" aria-labelledby="incoming-tab"></div>
-  <div class="tab-pane fade" id="outgoing" role="tabpanel" aria-labelledby="outgoing-tab">To be implemented</div>
+  <div class="tab-pane fade" id="outgoing" role="tabpanel" aria-labelledby="outgoing-tab"></div>
 </div>
 `);
-    let outgoing_location = back_link_location.find("#incoming");
+    let incoming_location = link_parent_location.find("#incoming");
     var sort_descending_by_size = (a, b) => Number(allUrls[b].doc_size) - Number(allUrls[a].doc_size);
-    for (var link of backlinks.sort(sort_descending_by_size)) {
-        const url_info = allUrls[link];
-        outgoing_location.append(MakeBackLinkHTML(url_info));
+    if (backlinks) {
+        for (var link of backlinks.sort(sort_descending_by_size)) {
+            const url_info = allUrls[link];
+            incoming_location.append(MakeBackLinkHTML(url_info));
+        }
+    }
+    // remove front links not in
+    let clean_front_links = [];
+    for (var link of frontlinks) {
+        if (allUrls[link]) {
+            clean_front_links.push(link);
+        }
+    }
+    let outgoing_location = link_parent_location.find("#outgoing");
+    if (clean_front_links) {
+        for (let link of clean_front_links.sort(sort_descending_by_size)) {
+            const url_info = allUrls[link];
+            outgoing_location.append(MakeBackLinkHTML(url_info));
+        }
     }
 }
-async function addBackLinksLoader() {
-    ProcessBackLinks(await get_link_info());
+async function add_link_loader() {
+    AddLinksToPage(await get_link_info());
 }
 let cached_linked_info = null;
 async function get_link_info() {
@@ -252,7 +269,7 @@ function monkey_button_loader() {
 }
 function load_globals() {
     $(monkey_button_loader);
-    $(addBackLinksLoader);
+    $(add_link_loader);
     $(JsTemplateReplace);
     $(keyboard_shortcut_loader);
     $(() => {
