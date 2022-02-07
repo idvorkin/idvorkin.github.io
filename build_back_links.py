@@ -158,10 +158,10 @@ class LinkBuilder:
 
     def canonicalize_outgoing_pages(self):
         for page in self.pages.values():
-            # Remove duplicates
-            page.outgoing_links = list(set(page.outgoing_links))
             # Canonicalize redirects
             page.outgoing_links = [self.redirects.get(link, link) for link in page.outgoing_links]
+            # Remove duplicates
+            page.outgoing_links = list(set(page.outgoing_links))
             # Sort so stable in output
             page.outgoing_links.sort()
 
