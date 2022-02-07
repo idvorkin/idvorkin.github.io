@@ -171,16 +171,16 @@
             "description": "Need a user manual for life? For me, that’s The 7 Habits of Highly Effective People. From dependant, to independent to interdependant, and then rinse and repeat for the the different roles in your life. Like other self-helf books? Excellent chance it’s a reframe or deep dive into these concepts.\n\n",
             "file_path": "_site/7-habits.html",
             "outgoing_links": [
-                "/7h-c0",
+                "/7h-concepts",
+                "/balance",
                 "/be-proactive",
                 "/end-in-mind",
-                "/first-things-first",
-                "/win-win",
-                "/first-understand",
-                "/synergize",
-                "/sharpen-the-saw",
                 "/eulogy",
-                "/balance"
+                "/first-things-first",
+                "/first-understand",
+                "/sharpen-the-saw",
+                "/synergize",
+                "/win-win"
             ],
             "incoming_links": [
                 "/7h-concepts",
@@ -208,7 +208,7 @@
             "description": "To discuss the 7 habits we need some foundational ideas, P/PC, paradigms, etc. These are my insights based on the 7 habits Chapter 0.\n\n",
             "file_path": "_site/7h-concepts.html",
             "outgoing_links": [
-                "/7h",
+                "/7-habits",
                 "/balance"
             ],
             "incoming_links": [
@@ -224,13 +224,13 @@
             "description": "A how to guide for starting your next job.\n\n",
             "file_path": "_site/90days.html",
             "outgoing_links": [
-                "/grandmother",
                 "/amazon",
-                "/writing",
-                "/insecurity",
+                "/curious",
+                "/first-things-first",
+                "/insecure",
                 "/insecure",
                 "/shame",
-                "/first-things-first"
+                "/writing"
             ],
             "incoming_links": [
                 "/manager-book",
@@ -257,8 +257,8 @@
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
             "file_path": "_site/activation.html",
             "outgoing_links": [
-                "/habits",
                 "/addiction",
+                "/d/habits",
                 "/insomnia"
             ],
             "incoming_links": [
@@ -289,7 +289,6 @@
             "description": "Addiction is not about drugs or alcohol - it is about escape. Quoting “Do the Work”: When we can’t stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That’s why addicts are so interesting and so boring at the same time. They’re interesting because they’re called to something — something new, something unique, something that we, watching, can’t wait to see them bring forth into manifestation. At the same time, they’re boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict’s crazy, haunted, shattered life.\n\n",
             "file_path": "_site/addiction.html",
             "outgoing_links": [
-                "/covid",
                 "/covid",
                 "/mental-pain"
             ],
@@ -325,15 +324,13 @@
             "description": "I spent 4 years working at Amazon, some things I loved, some not so much. Amazon is a huge company and the variation of behavior within a company exceeds the variation between the “median” behavior between companies. Even within the two teams I was on at Amazon I saw the exact opposite behaviors. When I talk about the good, I’ll talk about the ideal good, and when I talk about the bad, I’ll talk to some issues I saw that were systemically bad. As a result you’ll often see me describing something as both good and bad, as it’s done differently in different parts of the company.\n\n",
             "file_path": "_site/amazon.html",
             "outgoing_links": [
-                "/writing",
                 "/coe",
-                "/coe",
-                "/writing",
-                "/td/design",
+                "/manager-book",
                 "/td/cloud-first-applications",
                 "/td/data-systems",
-                "/the-manager-book",
-                "/tft"
+                "/td/design",
+                "/toysfortots",
+                "/writing"
             ],
             "incoming_links": [
                 "/90days",
@@ -352,7 +349,6 @@
             "file_path": "_site/anger.html",
             "outgoing_links": [
                 "/depression",
-                "/mental-pain",
                 "/mental-pain"
             ],
             "incoming_links": [],
@@ -366,8 +362,8 @@
             "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The\npain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.\n\n",
             "file_path": "_site/anxiety.html",
             "outgoing_links": [
-                "/7h-c1",
-                "/idle-loop",
+                "/be-proactive",
+                "/idle",
                 "/voices"
             ],
             "incoming_links": [
@@ -401,14 +397,14 @@
             "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from mortality software.\n\n",
             "file_path": "_site/balance.html",
             "outgoing_links": [
-                "/mortality-software",
-                "/7h",
-                "/wlb",
+                "/7-habits",
+                "/activation",
+                "/essentialism",
                 "/eulogy",
-                "/essential",
-                "/parkinson",
                 "/moments",
-                "/activation"
+                "/mortality-software",
+                "/parkinson",
+                "/sustainable-work"
             ],
             "incoming_links": [
                 "/7-habits",
@@ -425,7 +421,7 @@
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
             "file_path": "_site/be-proactive.html",
             "outgoing_links": [
-                "/7h",
+                "/7-habits",
                 "/essentialism",
                 "/frog"
             ],
@@ -444,20 +440,18 @@
             "description": "I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I’ve coached :) ). I hope to have incredibly stiff competition at the top, and I’ll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.\n\n",
             "file_path": "_site/being-a-great-manager.html",
             "outgoing_links": [
-                "/static/igor-feedback-LinkedIn.pdf",
-                "/the-manager-book",
-                "/static/igor-feedback-LinkedIn.pdf",
-                "/Coaching-Questions",
-                "/moments-at-work",
-                "/human-meetings",
-                "/sustainable-work",
-                "/the-manager-book",
-                "/pride",
+                "/Human-Meetings",
+                "/books-that-defined-me",
+                "/coaching",
+                "/coaching",
+                "/curious",
+                "/decisive",
+                "/manager-book",
                 "/mind-monsters",
-                "/coach",
-                "/decide",
-                "/grandmother-mind",
-                "/books"
+                "/moments-at-work",
+                "/pride",
+                "/static/igor-feedback-LinkedIn.pdf",
+                "/sustainable-work"
             ],
             "incoming_links": [
                 "/bmy",
@@ -493,11 +487,10 @@
             "description": "The business model canvas is a tool for understanding how a company makes money. This same model can be applied to a person’s career. While job hunting this was helpful figuring out my dream job. I suppose it should also prioritize my work energy, and probably how to prioritize my life energy. But that’s to come.\n\n",
             "file_path": "_site/bmy.html",
             "outgoing_links": [
-                "/job-hunt-stress",
-                "/dream-job",
-                "/boss",
+                "/being-a-great-manager",
                 "/eulogy",
-                "/dream-job"
+                "/job",
+                "/job-hunt-stress"
             ],
             "incoming_links": [
                 "/job-hunt-stress"
@@ -513,13 +506,12 @@
             "file_path": "_site/books-that-defined-me.html",
             "outgoing_links": [
                 "/7-habits",
+                "/d/resistance",
                 "/essentialism",
+                "/getting-to-yes-with-yourself",
                 "/gtd",
                 "/humans-are-underrated",
-                "/search-inside-yourself",
-                "/getting-to-yes-with-yourself",
-                "/resistance",
-                "/essentialism"
+                "/siy"
             ],
             "incoming_links": [
                 "/being-a-great-manager",
@@ -575,7 +567,7 @@
             "description": "“I bet you the bill that dude by the window is Canadian,” I challenged.\n\n",
             "file_path": "_site/Canadian-Spotting.html",
             "outgoing_links": [
-                "/tags#Software%20as%20a%20Story"
+                "/tags"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -599,9 +591,8 @@
             "description": "Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22 year old, and what you need as a 42 year old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of ap\n\n",
             "file_path": "_site/chapters.html",
             "outgoing_links": [
-                "/22",
-                "/don-juan",
-                "/don-juan"
+                "/enemy",
+                "/what-i-wish-knew-at-22"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -614,13 +605,12 @@
             "description": "Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.\n\n",
             "file_path": "_site/coaching.html",
             "outgoing_links": [
-                "/grandmother-mind",
+                "/curious",
                 "/decisive",
+                "/manager-book",
                 "/pride",
-                "/decisive",
-                "/search-inside-yourself",
-                "/the-manager-book",
-                "/prompts"
+                "/prompts",
+                "/siy"
             ],
             "incoming_links": [
                 "/being-a-great-manager",
@@ -658,7 +648,6 @@
             "description": "Different companies use different compensation models. To compare models use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon clips salary at 160K$/yr, and doesn’t have bonuses. Google vests stocks Monthly. Facebook bonuses have a company performance multiplier. At some companies signing bonuses can be over 100% of salary!\n\n",
             "file_path": "_site/comp.html",
             "outgoing_links": [
-                "/pride",
                 "/job-hunt-stress",
                 "/pride"
             ],
@@ -692,9 +681,9 @@
             "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
             "file_path": "_site/curious.html",
             "outgoing_links": [
-                "/gty",
-                "/shame",
-                "/mental-pain"
+                "/getting-to-yes",
+                "/mental-pain",
+                "/shame"
             ],
             "incoming_links": [
                 "/90days",
@@ -786,7 +775,7 @@
             "description": "Seth godin has many ideas that are critical in the new world. Ideas include: Choosing yourself, Tribes, The limited value of cogs, connection, and the dip.\n\n",
             "file_path": "_site/d/2016-2-15-Seth-Godin-Notes.html",
             "outgoing_links": [
-                "/the-dip"
+                "/dip"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -930,13 +919,13 @@
             "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity.\n\n",
             "file_path": "_site/d/resistance.html",
             "outgoing_links": [
-                "/mental-pain",
                 "/addiction",
-                "/magic",
-                "/habits",
-                "/7h-c3",
+                "/d/habits",
+                "/first-things-first",
+                "/frog",
                 "/gtd",
-                "/frog"
+                "/magic",
+                "/mental-pain"
             ],
             "incoming_links": [
                 "/books-that-defined-me",
@@ -957,11 +946,10 @@
             "description": "I should have written up a plan before this time off so I’d have been more deliberate. As it stands, I did what I wanted, got a tonne done, but missed some things that bring me a lot of energy.\n\n",
             "file_path": "_site/d/time-off-11-2021.html",
             "outgoing_links": [
-                "/time-off",
+                "/adblocker-trojan",
                 "/brython",
                 "/snjb",
-                "/adblocker-trojan",
-                "/adblocker-trojan"
+                "/timeoff"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -974,11 +962,11 @@
             "description": "It’s Corona virus X-mas, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
             "file_path": "_site/d/time-off-12-2020.html",
             "outgoing_links": [
-                "/time-off",
-                "/happy",
-                "/pandas",
                 "/7-habits",
-                "/mental-pain"
+                "/happy",
+                "/mental-pain",
+                "/pandas",
+                "/timeoff"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -991,12 +979,12 @@
             "description": "It’s Corona virus X-mas 2021, the not so bad edition, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
             "file_path": "_site/d/time-off-12-2021.html",
             "outgoing_links": [
-                "/time-off",
-                "/happy",
-                "/time-off-11-2021",
-                "/td/time-off-12-2020",
+                "/activation",
                 "/balance",
-                "/activation-energy"
+                "/happy",
+                "/td/time-off-12-2020",
+                "/time-off-11-2021",
+                "/timeoff"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -1075,7 +1063,7 @@
             "description": "At some point you need to scale out, and that’s called delegation! Stewardship delegation is a form of delegation where the responsibility for the delegated task is transferred to the delegatee. Stewardship delegation requires upfront effort, but the long term effectiveness it creates is second to none. Stewardship delegation has five parts you need to get a shared agreement on. The desired results, the operating parameters, the available resources, the measurement system and the consequences of their stewardship.\n\n",
             "file_path": "_site/delegate.html",
             "outgoing_links": [
-                "/7h-c3"
+                "/first-things-first"
             ],
             "incoming_links": [
                 "/first-things-first"
@@ -1090,21 +1078,20 @@
             "description": "When you’re depressed you don’t think you’ve put on a gray veil - seeing the world through the haze of a bad mood. You think that a veil has been taken away. The veil of happiness, and you believe you’re seeing the world as it truly is: alone, petrifying, and painful. But the truth lies. The depressed say “No one loves me.” And you say, “I love you, your wife loves you, your mother loves you.” and the depressed ignore you. The depressed will continue, “None of this matters, we’re just going to die in the end.” To which you have to say, “That’s true, but I think right now should focus on what to have for breakfast.”\n\n",
             "file_path": "_site/depression.html",
             "outgoing_links": [
+                "/7-habits",
                 "/anxiety",
-                "/anxiety",
+                "/eulogy",
+                "/getting-to-yes-with-yourself",
+                "/gtd",
+                "/idle",
+                "/insecure",
                 "/insomnia",
                 "/physical-health",
-                "/siy",
-                "/eulogy",
-                "/7-habits",
-                "/getting-to-yes-with-yourself",
-                "/voices",
-                "/gtd",
-                "/wlb",
-                "/shame",
-                "/imposter",
                 "/psychic-weight",
-                "/idle-loop"
+                "/shame",
+                "/siy",
+                "/sustainable-work",
+                "/voices"
             ],
             "incoming_links": [
                 "/anger"
@@ -1119,7 +1106,7 @@
             "description": "Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. Exercise, while critical to energy, is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.\n\n",
             "file_path": "_site/diet.html",
             "outgoing_links": [
-                "/exercise"
+                "/physical-health"
             ],
             "incoming_links": [
                 "/operating-manual",
@@ -1163,12 +1150,12 @@
             "description": "Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can’t sleep well at night, and SAT is reason you set your alarm for 5am so you can get an early start tackling your favorite problems.\n\n",
             "file_path": "_site/dsat.html",
             "outgoing_links": [
-                "/wlb",
-                "/eulogy",
                 "/activation",
-                "/decide",
-                "/the-dip",
-                "/manager-book#l-motivation"
+                "/decisive",
+                "/dip",
+                "/eulogy",
+                "/manager-book",
+                "/sustainable-work"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -1181,8 +1168,8 @@
             "description": "Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I’ve been exploring.\n\n",
             "file_path": "_site/emotional-health.html",
             "outgoing_links": [
-                "/search-inside-yourself",
                 "/sharpen-the-saw",
+                "/siy",
                 "/voices"
             ],
             "incoming_links": [
@@ -1202,10 +1189,10 @@
             "description": "All things are created twice, once in the design phase, and then again in the implementation phase. If you don’t perform the first creation, someone else will. At the extreme, imagine your eulogy, that’s the end too.\n\n",
             "file_path": "_site/end-in-mind.html",
             "outgoing_links": [
-                "/7h",
-                "/eulogy",
+                "/7-habits",
+                "/dip",
                 "/essentialism",
-                "/dip"
+                "/eulogy"
             ],
             "incoming_links": [
                 "/7-habits"
@@ -1220,8 +1207,8 @@
             "description": "Fear, Arrogrance, Authority and Apathy, are the four enemies of satisfication as described in Don Juan’s teachings.\n\n",
             "file_path": "_site/enemy.html",
             "outgoing_links": [
-                "/pride",
-                "/resistance"
+                "/d/resistance",
+                "/pride"
             ],
             "incoming_links": [
                 "/chapters"
@@ -1255,17 +1242,17 @@
             "description": "Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor “Began with the end in mind” with the “important but not urgent” task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.\n\n",
             "file_path": "_site/eulogy.html",
             "outgoing_links": [
-                "/magic",
-                "/bike",
                 "/7-habits",
-                "/search-inside-yourself",
-                "/job",
-                "/manager",
-                "/alexa-charity",
-                "/tags#Software as a Story",
+                "/Human-Meetings",
                 "/The-Genesis-Node",
+                "/being-a-great-manager",
+                "/bike",
                 "/cache",
-                "/Human-Meetings"
+                "/job",
+                "/magic",
+                "/siy",
+                "/tags",
+                "/toysfortots"
             ],
             "incoming_links": [
                 "/7-habits",
@@ -1293,7 +1280,7 @@
             "description": "Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook\n\n",
             "file_path": "_site/facebook.html",
             "outgoing_links": [
-                "/covid19"
+                "/covid"
             ],
             "incoming_links": [
                 "/operating-manual"
@@ -1308,9 +1295,9 @@
             "description": "Failure is not an option it’s a necessity. Here a\n\n",
             "file_path": "_site/fail.html",
             "outgoing_links": [
+                "/anxiety",
                 "/coe",
-                "/resistance",
-                "/anxiety"
+                "/d/resistance"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -1323,16 +1310,15 @@
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
             "file_path": "_site/first-things-first.html",
             "outgoing_links": [
-                "/7h",
-                "/resistance",
+                "/7-habits",
                 "/addiction",
-                "/switch",
-                "/essential",
+                "/d/resistance",
                 "/delegate",
-                "/essential",
+                "/essentialism",
+                "/frog",
                 "/gtd",
-                "/upstream",
-                "/frog"
+                "/switch",
+                "/upstream"
             ],
             "incoming_links": [
                 "/7-habits",
@@ -1351,11 +1337,11 @@
             "description": "Imagine going to the eye doctor. After hearing your complaint he takes off his glasses and hands them to you.\n“Put these on,” he says. “I’ve worn this pair of glasses for ten years now and they’ve really helped me. I have an extra pair at home; you can wear these.” So you put them on, but it only makes the problem worse. “This is terrible!” you exclaim. “I can’t see a thing!” “Well, what’s wrong?” he asks. “They work great for me. Try harder.” “I am trying,” you insist. “Everything is a blur.” “Well, what’s the matter with you? Think positively.” “Okay. I positively can’t see a thing.” “Boy, are you ungrateful!” he chides. “And after all I’ve done to help you!”\n\n",
             "file_path": "_site/first-understand.html",
             "outgoing_links": [
-                "/7h",
+                "/7-habits",
+                "/coaching",
                 "/curious",
                 "/ig66/587",
                 "/prompts",
-                "/coaching",
                 "/siy"
             ],
             "incoming_links": [
@@ -1373,9 +1359,9 @@
             "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.\n\n",
             "file_path": "_site/frog.html",
             "outgoing_links": [
-                "/resistance",
+                "/d/resistance",
+                "/essentialism",
                 "/eulogy",
-                "/essential",
                 "/first-things-first",
                 "/gtd"
             ],
@@ -1398,9 +1384,9 @@
             "description": "Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.\n\n",
             "file_path": "_site/getting-to-yes.html",
             "outgoing_links": [
-                "/win-win",
+                "/curious",
                 "/first-understand",
-                "/compassion"
+                "/win-win"
             ],
             "incoming_links": [
                 "/curious",
@@ -1418,8 +1404,8 @@
             "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n",
             "file_path": "_site/getting-to-yes-with-yourself.html",
             "outgoing_links": [
-                "/gty",
-                "/grandmother",
+                "/curious",
+                "/getting-to-yes",
                 "/welcome-to-holland"
             ],
             "incoming_links": [
@@ -1473,14 +1459,14 @@
             "description": "Getting Things Done (GTD) is a model based on David Allen’s book of the same name. It’s a deep dive into Habit 3 - first things first, with some lite weight Habit 2 - begin with the end in mind, mixed in for good measure. By using GTD religiously you can have a drastic reduction in stress and procrastination.\n\n",
             "file_path": "_site/gtd.html",
             "outgoing_links": [
-                "/psychic-weight",
                 "/anxiety",
-                "/procrastinate",
-                "/essentialism",
                 "/dip",
+                "/essentialism",
                 "/frog",
+                "/frog",
+                "/idle",
                 "/outsourcing",
-                "/idle-loop"
+                "/psychic-weight"
             ],
             "incoming_links": [
                 "/books-that-defined-me",
@@ -1501,13 +1487,13 @@
             "file_path": "_site/happy.html",
             "outgoing_links": [
                 "/addiction",
+                "/anxiety",
+                "/curious",
                 "/eulogy",
+                "/getting-to-yes",
+                "/idle",
                 "/joy",
                 "/mental-pain",
-                "/anxiety",
-                "/compassion",
-                "/gty",
-                "/idle-loop",
                 "/moments"
             ],
             "incoming_links": [
@@ -1527,11 +1513,11 @@
             "description": "Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don’t want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. Those days, I’m grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.\n\n",
             "file_path": "_site/hobby.html",
             "outgoing_links": [
-                "/happy",
+                "/d/habits",
                 "/eulogy",
-                "/habits",
-                "/magic",
-                "/joy"
+                "/happy",
+                "/joy",
+                "/magic"
             ],
             "incoming_links": [
                 "/operating-manual"
@@ -1559,15 +1545,14 @@
             "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifiying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
             "file_path": "_site/idle.html",
             "outgoing_links": [
-                "/mental-pain",
-                "/7h-c1",
-                "/siy",
-                "/habits",
-                "/magic",
-                "/siy",
-                "/psychic-weight",
                 "/addiction",
-                "/mind-monsters"
+                "/be-proactive",
+                "/d/habits",
+                "/magic",
+                "/mental-pain",
+                "/mind-monsters",
+                "/psychic-weight",
+                "/siy"
             ],
             "incoming_links": [
                 "/anxiety",
@@ -1597,8 +1582,8 @@
             "description": "We all get it. imposter syndrome, which include shame\n\n",
             "file_path": "_site/insecure.html",
             "outgoing_links": [
-                "/shame",
-                "/coaching#situational-coaching"
+                "/coaching",
+                "/shame"
             ],
             "incoming_links": [
                 "/90days",
@@ -1639,10 +1624,10 @@
             "description": "I started writing a technical blog to help me remember the many things I explore. One day, I realized I’ve got a real life too. Here’s a place I can remember the many things I explore IRL (In real Life)\n\n",
             "file_path": "_site/irl.html",
             "outgoing_links": [
-                "/physical-health",
+                "/bike",
                 "/emotional-health",
                 "/eulogy",
-                "/bike"
+                "/physical-health"
             ],
             "incoming_links": [
                 "/physical-health"
@@ -1657,13 +1642,12 @@
             "description": "In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.\n\n",
             "file_path": "_site/job.html",
             "outgoing_links": [
+                "/Human-Meetings",
                 "/being-a-great-manager",
-                "/software-leadership-roles",
                 "/cache",
-                "/being-a-great-manager",
-                "/Coaching-Questions",
+                "/coaching",
                 "/moments-at-work",
-                "/Human-Meetings"
+                "/software-leadership-roles"
             ],
             "incoming_links": [
                 "/bmy",
@@ -1682,12 +1666,11 @@
             "description": "Job hunts are stressful, and my goal for job hunts is getting the job I want while minimizing my stress. The stress comes from: lack of confidence, being rushed, not having options, disappointing others and the pressure from current job responsibilities. By expecting and mitigating each of these stressors I greatly reduce stress during my job hunt.\n\n",
             "file_path": "_site/job-hunt-stress.html",
             "outgoing_links": [
-                "/decisive",
-                "/bmu",
-                "/dream-job",
-                "/dream-job",
+                "/bmy",
                 "/comp",
-                "/decide"
+                "/decisive",
+                "/decisive",
+                "/job"
             ],
             "incoming_links": [
                 "/bmy",
@@ -1704,10 +1687,9 @@
             "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
             "file_path": "_site/joy.html",
             "outgoing_links": [
-                "/magic",
                 "/eulogy",
-                "/magic",
-                "/like-switch"
+                "/like-switch",
+                "/magic"
             ],
             "incoming_links": [
                 "/happy",
@@ -1755,38 +1737,29 @@
             "file_path": "_site/manager-book.html",
             "outgoing_links": [
                 "/90days",
-                "/td/machine-learning",
-                "/td/cloud-first-applications",
+                "/being-a-great-manager",
+                "/books-that-defined-me",
                 "/coaching",
                 "/coaching",
-                "/software-leadership-roles",
-                "/software-leadership-roles",
-                "/job-hunt-stress",
+                "/coe",
                 "/comp",
-                "/twentytwo",
+                "/d/habits",
+                "/decisive",
+                "/job",
+                "/job-hunt-stress",
+                "/ml",
                 "/moments-at-work",
-                "/coaching",
-                "/coaching",
+                "/parkinson",
+                "/pride",
                 "/prompts",
                 "/remote-work",
-                "/habits",
-                "/coe",
-                "/coe",
+                "/software-leadership-roles",
                 "/static/igor-feedback-LinkedIn.pdf",
-                "/job",
-                "/what-makes-a-leader",
-                "/90days",
-                "/static/igor-feedback-LinkedIn.pdf",
-                "/job",
-                "/being-a-great-manager",
-                "/pride",
-                "/books",
-                "/coach",
-                "/decide",
                 "/strategy",
-                "/write",
-                "/parkinson",
-                "/books"
+                "/td/cloud-first-applications",
+                "/what-i-wish-knew-at-22",
+                "/what-makes-a-leader",
+                "/writing"
             ],
             "incoming_links": [
                 "/amazon",
@@ -1806,12 +1779,10 @@
             "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.\n\n",
             "file_path": "_site/mental-pain.html",
             "outgoing_links": [
+                "/anxiety",
                 "/mental-pain",
-                "/anxiety",
-                "/shame",
-                "/anxiety",
-                "/shame",
-                "/pride"
+                "/pride",
+                "/shame"
             ],
             "incoming_links": [
                 "/addiction",
@@ -1859,9 +1830,8 @@
             "file_path": "_site/mind-at-work.html",
             "outgoing_links": [
                 "/addiction",
-                "/time-off",
                 "/emotional-health",
-                "/emotional-health"
+                "/timeoff"
             ],
             "incoming_links": [
                 "/timeoff"
@@ -1876,10 +1846,10 @@
             "description": "Last night I was having trouble sleeping so I plopped down on the couch to watch infomercials. The infomercial I picked was religious in nature, and was talking about mind monsters.\n\n",
             "file_path": "_site/mind-monsters.html",
             "outgoing_links": [
-                "/pride",
                 "/mental-pain",
-                "/voices",
-                "/siy"
+                "/pride",
+                "/siy",
+                "/voices"
             ],
             "incoming_links": [
                 "/being-a-great-manager",
@@ -1897,9 +1867,9 @@
             "description": "It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).\n\n",
             "file_path": "_site/ml.html",
             "outgoing_links": [
-                "/pandas",
                 "/gpt",
-                "/nlp"
+                "/nlp",
+                "/pandas"
             ],
             "incoming_links": [
                 "/manager-book",
@@ -1932,7 +1902,7 @@
             "description": "Of all the places we spend our time, work is the one that dominates. However, when we look back on our lives, work is often the thing we remember least. Why? Because we remember our lives through peak moments, and there are few of those, especially positive peak moments, at work. Luckily, peak moments can be created and managers can be taught how to create them. This post explores opportunities and techniques to create these moments.\n\n",
             "file_path": "_site/moments-at-work.html",
             "outgoing_links": [
-                "/Coaching-Questions",
+                "/coaching",
                 "/moments"
             ],
             "incoming_links": [
@@ -1968,7 +1938,6 @@
             "description": "Mortality is a word most people try to avoid. But, earlier or later, it’s something we all face. Our life is finite and our time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past.\n\n",
             "file_path": "_site/mortality-software.html",
             "outgoing_links": [
-                "/death",
                 "/death"
             ],
             "incoming_links": [
@@ -2000,33 +1969,26 @@
             "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.\n\n",
             "file_path": "_site/operating-manual.html",
             "outgoing_links": [
-                "/facebook",
-                "/facebook",
                 "/amazon",
-                "/amazon",
-                "/writing",
-                "/dream-job",
-                "/dream-job",
-                "/manager-book",
-                "/manager-book",
-                "/strength-finder",
-                "/habits",
-                "/physical-health",
-                "/emotional-health",
-                "/writing",
-                "/eulogy",
-                "/hobby",
+                "/anxiety",
                 "/bike",
+                "/d/habits",
+                "/diet",
+                "/emotional-health",
+                "/eulogy",
+                "/facebook",
+                "/hobby",
+                "/ig66/587",
+                "/job",
                 "/magic",
+                "/manager-book",
+                "/money",
+                "/parkinson",
+                "/physical-health",
+                "/strength-finder",
                 "/todo_enjoy",
                 "/voices",
-                "/anxiety",
-                "/physical-health",
-                "/ig66/587",
-                "/diet",
-                "/money",
-                "/money",
-                "/parkinson"
+                "/writing"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -2055,7 +2017,7 @@
             "outgoing_links": [
                 "/amazon",
                 "/money",
-                "/time-off"
+                "/timeoff"
             ],
             "incoming_links": [
                 "/balance",
@@ -2073,10 +2035,10 @@
             "description": "Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health is about weight, fitness, and sleep.\n\n",
             "file_path": "_site/physical-health.html",
             "outgoing_links": [
-                "/sharpen-the-saw",
                 "/diet",
-                "/tech-health-toys",
-                "/irl#physical-health"
+                "/irl",
+                "/sharpen-the-saw",
+                "/tech-health-toys"
             ],
             "incoming_links": [
                 "/depression",
@@ -2135,23 +2097,20 @@
             "description": "Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it of, and getting now relief regardless of when you sit or sleep. Now imagine that’s not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.\n\n",
             "file_path": "_site/psychic-weight.html",
             "outgoing_links": [
+                "/7-habits",
                 "/addiction",
-                "/shame",
-                "/resistance",
-                "/mind-monsters",
-                "/idle-loop",
-                "/shame",
-                "/pride",
-                "/idle-loop",
+                "/curious",
+                "/d/habits",
+                "/d/resistance",
                 "/death",
-                "/mental-pain",
                 "/frog",
                 "/gtd",
-                "/siy",
+                "/idle",
+                "/mental-pain",
+                "/mind-monsters",
                 "/pride",
-                "/7-habits",
-                "/habits",
-                "/grandmother"
+                "/shame",
+                "/siy"
             ],
             "incoming_links": [
                 "/depression",
@@ -2214,7 +2173,7 @@
             "description": "“Are you insane?” I half shouted at Biff, my college roommate. We had just finished our Operating Systems midterm and were lounging at “The Bomber,” our college pub. Biff suggested we both do our last internship at Microsoft.\n\n",
             "file_path": "_site/save-the-soup.html",
             "outgoing_links": [
-                "/tags#Software%20as%20a%20Story"
+                "/tags"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -2227,7 +2186,7 @@
             "description": "Internships are best approached as a long-term field trip. You should plan to be exposed to new things, spend some time out of your comfort zone, and, by all means – use the buddy system.\n\n",
             "file_path": "_site/save-the-souse.html",
             "outgoing_links": [
-                "/tags#Software%20as%20a%20Story"
+                "/tags"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -2240,11 +2199,9 @@
             "description": "Selling matters - it’s pitching, convincing, negotiating, hiring. Selling has a bad rap, because the seller often puts their needs ahead of the buyer - a win/lose paradigm. You should make selling win/win or no deal by needing to answer yes to these questions. 1/ If the buyer agrees, will their life improve? 2/ When the deal is done, will the world be a better place than when you began?\n\n",
             "file_path": "_site/sell.html",
             "outgoing_links": [
-                "/7h-c4",
-                "/7h-c5",
-                "/7h-c5",
-                "/gty",
-                "/7h-c4"
+                "/first-understand",
+                "/getting-to-yes",
+                "/win-win"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -2257,8 +2214,8 @@
             "description": "Shame and guilt are often confused emotions caused by self judgements that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt, properly applied drives people to the correct behaviors. These are both examples of mental-pain and when the pain is phantom or cronic, are often well served by grandmother mind.\n\n",
             "file_path": "_site/shame.html",
             "outgoing_links": [
-                "/mental-pain",
-                "/grandmother-mind"
+                "/curious",
+                "/mental-pain"
             ],
             "incoming_links": [
                 "/90days",
@@ -2278,11 +2235,11 @@
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
             "file_path": "_site/sharpen-the-saw.html",
             "outgoing_links": [
-                "/7h",
-                "/physical-health",
+                "/7-habits",
+                "/d/habits",
                 "/diet",
                 "/emotional-health",
-                "/atomic-habits",
+                "/physical-health",
                 "/siy"
             ],
             "incoming_links": [
@@ -2301,9 +2258,9 @@
             "file_path": "_site/siy.html",
             "outgoing_links": [
                 "/emotional-health",
-                "/what-makes-a-leader",
-                "/monsters",
-                "/happy"
+                "/happy",
+                "/mind-monsters",
+                "/what-makes-a-leader"
             ],
             "incoming_links": [
                 "/books-that-defined-me",
@@ -2328,7 +2285,7 @@
             "description": "I started in Windows Azure in 2007. Back then, the name “Azure” wasn’t invented, and Azure was still called “Reddog.” I started on the OS team, drawn in by my dream of changing the world, and getting to be Dave Cutler’s lackey. I didn’t get to work with Cutler, but I still may change the world - now that I’ve learned it’s OK to wake sleeping giants. My giant was named Jay.\n\n",
             "file_path": "_site/sleeping-bag-sacrifies.html",
             "outgoing_links": [
-                "/tags#Software%20as%20a%20Story"
+                "/tags"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -2425,8 +2382,7 @@
             "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
             "file_path": "_site/switch.html",
             "outgoing_links": [
-                "/habits",
-                "/habits"
+                "/d/habits"
             ],
             "incoming_links": [
                 "/first-things-first"
@@ -2441,7 +2397,7 @@
             "description": "We’ve all got stuff we’re good at, and stuff we’re bad at. We can combine these in ways that make the system greater then the sum of its parts.\n\n",
             "file_path": "_site/synergize.html",
             "outgoing_links": [
-                "/7h"
+                "/7-habits"
             ],
             "incoming_links": [
                 "/7-habits"
@@ -2608,7 +2564,7 @@
             "description": "Copied from my GitHub techdiary\n\n",
             "file_path": "_site/td/ios-nomad.html",
             "outgoing_links": [
-                "/td/irl#work-bag"
+                "/td/irl"
             ],
             "incoming_links": [
                 "/writing"
@@ -2689,7 +2645,7 @@
             "description": "Statistics is a tool which lets us summarize data, and make inferences from it.\n\n",
             "file_path": "_site/td/stats.html",
             "outgoing_links": [
-                "/machine-learning"
+                "/ml"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -2714,10 +2670,10 @@
             "file_path": "_site/td/time-off-3-2020.html",
             "outgoing_links": [
                 "/frog",
-                "/time off",
+                "/https://github.com/idvorkin/LinqPadSnippets/blob/59a5b6ed535de1256f1546557e3795365ed83b82/python/linkchecker.py",
                 "/money",
-                "/search-inside-yourself",
-                "/https://github.com/idvorkin/LinqPadSnippets/blob/59a5b6ed535de1256f1546557e3795365ed83b82/python/linkchecker.py#L5"
+                "/siy",
+                "/time off"
             ],
             "incoming_links": [
                 "/timeoff"
@@ -2818,7 +2774,7 @@
             "description": "Igor, you know the odds of shipping Azure on time are slim to none.”\n\n",
             "file_path": "_site/The-Genesis-Node.html",
             "outgoing_links": [
-                "/tags#Software%20as%20a%20Story"
+                "/tags"
             ],
             "incoming_links": [
                 "/eulogy"
@@ -2844,13 +2800,12 @@
             "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we’ll discuss too.\n\n",
             "file_path": "_site/timeoff.html",
             "outgoing_links": [
-                "/mind-at-work",
-                "/resistance",
-                "/happy",
-                "/resistance",
                 "/addictions",
+                "/d/resistance",
                 "/eulogy",
                 "/frog",
+                "/happy",
+                "/mind-at-work",
                 "/td/time-off-3-2020"
             ],
             "incoming_links": [
@@ -2951,9 +2906,9 @@
             "description": "The person that most frequently blocks your success is, wait for it, you! Often it’s your subconscious, and often your sub conscious is a bunch of independent voices. It’s hard to deal with this hidden opposition because it’s so opaque. To help understand your feelings you can name the voices in your head, and imagine asking each of them their positions, and desired outcomes.\n\n",
             "file_path": "_site/voices.html",
             "outgoing_links": [
-                "/7h-c4",
-                "/compassion",
-                "/anxiety"
+                "/anxiety",
+                "/curious",
+                "/win-win"
             ],
             "incoming_links": [
                 "/anxiety",
@@ -3037,7 +2992,7 @@
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
             "file_path": "_site/win-win.html",
             "outgoing_links": [
-                "/7h"
+                "/7-habits"
             ],
             "incoming_links": [
                 "/7-habits",
@@ -3055,15 +3010,13 @@
             "description": "Useful writing tells people something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation.\n\n",
             "file_path": "_site/writing.html",
             "outgoing_links": [
-                "/amazon",
-                "/amazon",
-                "/coe",
-                "/td/visual-vocabulary",
-                "/coaching",
                 "/90days",
+                "/amazon",
+                "/coaching",
                 "/coe",
-                "/td/ios-nomad",
                 "/td/ios",
+                "/td/ios-nomad",
+                "/td/visual-vocabulary",
                 "/vim-for-writing"
             ],
             "incoming_links": [
