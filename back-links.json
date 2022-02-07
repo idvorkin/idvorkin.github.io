@@ -263,10 +263,11 @@
             ],
             "incoming_links": [
                 "/balance",
-                "/d/time-off-12-2021"
+                "/d/time-off-12-2021",
+                "/dsat"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/adblocker-trojan": {
             "py/object": "__main__.Page",
@@ -315,7 +316,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -704,7 +705,8 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/psychic-weight",
-                "/shame"
+                "/shame",
+                "/voices"
             ],
             "redirect_url": "",
             "doc_size": 15000
@@ -753,7 +755,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/d/2016-09-18-transportation-as-a-service": {
             "py/object": "__main__.Page",
@@ -1047,6 +1049,7 @@
             "incoming_links": [
                 "/being-a-great-manager",
                 "/coaching",
+                "/dsat",
                 "/job-hunt-stress",
                 "/manager-book",
                 "/pride"
@@ -1063,7 +1066,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 29000
+            "doc_size": 28000
         },
         "/delegate": {
             "py/object": "__main__.Page",
@@ -1135,6 +1138,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/d/2016-2-15-Seth-Godin-Notes",
+                "/dsat",
                 "/end-in-mind",
                 "/gtd"
             ],
@@ -1156,16 +1160,19 @@
             "py/object": "__main__.Page",
             "url": "/dsat",
             "title": "SATISFACTION IS NOT THE LACK OF DISSATISFACTION",
-            "description": "Satisfaction is not a lack of dissatisfaction. SAT and DSAT are orthogonal dimensions you should consider independently. In a work context DSAT is the reason you can’t sleep well at night, and SAT is the thing that makes you set your alarm to go off early Monday morning so you can get back at your favorite thing.\n\n",
+            "description": "Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can’t sleep well at night, and SAT is reason you set your alarm for 5am so you can get an early start tackling your favorite problems.\n\n",
             "file_path": "_site/dsat.html",
             "outgoing_links": [
                 "/wlb",
                 "/eulogy",
-                "/the-manager-book#l-motivation"
+                "/activation",
+                "/decide",
+                "/the-dip",
+                "/manager-book#l-motivation"
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 15000
         },
         "/emotional-health": {
             "py/object": "__main__.Page",
@@ -1277,7 +1284,7 @@
                 "/todo_enjoy"
             ],
             "redirect_url": "",
-            "doc_size": 28000
+            "doc_size": 27000
         },
         "/facebook": {
             "py/object": "__main__.Page",
@@ -1357,7 +1364,7 @@
                 "/sell"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/frog": {
             "py/object": "__main__.Page",
@@ -1382,7 +1389,7 @@
                 "/timeoff"
             ],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 18000
         },
         "/getting-to-yes": {
             "py/object": "__main__.Page",
@@ -1446,7 +1453,7 @@
                 "/nlp"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/grateful": {
             "py/object": "__main__.Page",
@@ -1581,7 +1588,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 9000
         },
         "/insecure": {
             "py/object": "__main__.Page",
@@ -1790,7 +1797,7 @@
                 "/software-leadership-roles"
             ],
             "redirect_url": "",
-            "doc_size": 122000
+            "doc_size": 123000
         },
         "/mental-pain": {
             "py/object": "__main__.Page",
@@ -2189,6 +2196,17 @@
             "redirect_url": "",
             "doc_size": 17000
         },
+        "/roblox-dev": {
+            "py/object": "__main__.Page",
+            "url": "/roblox-dev",
+            "title": "DEVELOPING ON ROBLOX",
+            "description": "Zach and Amelia are roblox fans, so it’s fun to be able to create things in there playgrounds. With Zach (and maybe Amelia in a while) it’s even more fun to get to program. Here’s some stuff I’ve learned about programming robolox.\n\n",
+            "file_path": "_site/roblox-dev.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 12000
+        },
         "/save-the-soup": {
             "py/object": "__main__.Page",
             "url": "/save-the-soup",
@@ -2535,7 +2553,7 @@
                 "/testing"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
@@ -2817,7 +2835,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/timeoff": {
             "py/object": "__main__.Page",
@@ -2934,6 +2952,7 @@
             "file_path": "_site/voices.html",
             "outgoing_links": [
                 "/7h-c4",
+                "/compassion",
                 "/anxiety"
             ],
             "incoming_links": [
@@ -3054,7 +3073,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 30000
+            "doc_size": 33000
         }
     }
 }
