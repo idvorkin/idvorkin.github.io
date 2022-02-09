@@ -53,6 +53,8 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [What is the level specific career expectations and growth strategies?](#what-is-the-level-specific-career-expectations-and-growth-strategies)
     - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
+    - [How to motivate through personal experience](#how-to-motivate-through-personal-experience)
+    - [How to motivate through team environment](#how-to-motivate-through-team-environment)
     - [How do you give challenging feedback?](#how-do-you-give-challenging-feedback)
     - [What's the point of 1:1s?](#whats-the-point-of-11s)
     - [What do you do in 1:1s?](#what-do-you-do-in-11s)
@@ -473,6 +475,16 @@ My goal is to find people the right job, not the job on my team. I coach a lot o
 ### How do you keep people motivated?
 
 <a id="l-motivation"></a>
+
+Motivation has 2 dimensions, personal experience and team environment. The personal experience is about encouraging Autonomy, Mastery and Purpose. The team environment is about the culture in which you experience the personal dimension.
+
+### How to motivate through personal experience
+
+### How to motivate through team environment
+
+\*\*
+
+There are 3 parts here
 
 I use Danial Pink's DRIVE model, Autonomy, Mastery and Purpose:
 
