@@ -474,45 +474,59 @@ My goal is to find people the right job, not the job on my team. I coach a lot o
 
 ### How do you keep people motivated?
 
-<a id="l-motivation"></a>
+<a id="l-motivation"></a> <a id="l-motivate"></a>
 
-Motivation has 2 dimensions, personal experience and team environment. The personal experience is about encouraging Autonomy, Mastery and Purpose. The team environment is about the culture in which you experience the personal dimension.
+Classically, motivation is comprised of carrots and sticks, where carrots focus on extrinsic motivation like compensation. Turns out sticks and exterinsic motivations fail for creative tasks. Instead I focus on the following dimensions
+
+Motivation has 2 dimensions, personal experience and team environment. Personal experience is based on the book Drive, and is about encouraging Autonomy, Mastery and Purpose. The team environment is about the culture in which you experience the personal dimension.
 
 ### How to motivate through personal experience
 
-### How to motivate through team environment
+I use Danial Pink's [DRIVE model](https://youtu.be/t9wDmRMtPnA). TL;DR: Extrinsic motivation doesn't work, you need intrinsic motivation, which is driven by Autonomy mastery purpose.
 
-\*\*
+**Autonomy: Direct thy self**
 
-There are 3 parts here
+- You choose what you work on (Link: How does resource allocation work)
+- You are the end to end owner.
+- You make the decisions, though I'm here to support. Even if I disagree, it's your call.
+- We collaborate on the definition of success, and then you chose how it gets done.
+- I support you in private, by helping you understand success, sharing how I'd do it, helping you see around corners, and bringing up signals and context you may be missing.
+- I support you in public by re-inforcing your message and needs, and nudging where nudges are required.
+- You know the the team has your back
+- I protect you from harmful rays of upper management and business
+- Hack-a-thons
 
-I use Danial Pink's DRIVE model, Autonomy, Mastery and Purpose:
+**Mastery: Become the best you can be**
 
-- Autonomy
-  - You are the owner
-  - All decision need your sign off
-  - Coach from behind (here's success, here's how I'd say it, what are the consequences, misses)
-  - The team has your back.
-  - Protecting from harmful rays of upper management and business
-  - Only clear out as much as required
-- Mastery
-  - Career Development TODO link it.
-  - Training
-  - In the dimension we agree to.
-  - You can work at 110% of your capacity, but I tell you when you're at 90,100, or 110
-  - Bigger and Bigger Opportunities and/or Exposure
-- Purpose
-  - Focus on the why
-  - Call out the impact
-  - Share the success with the team
-  - Share success with partners and boss
+- (Link: Managing and developing people)
+- I help you brainstorm what skill you want (or need) to master.
+- I remind you that building mastery is painful, and that's OK. (Link: Situational Leadership)
+- I encourage continuous improvement, retros, and mentorship and menteeship
+- I'll push you to 110% of your capacity, but I tell you when you're at 90,100, or 110.
+- As you build your skills, I help you find bigger and bigger opportunities and/or Exposure
+- I am on the lookout for projects that help you find what makes sense for you.
+
+**Purpose: Make the world a little bit better**
+
+- Focus on the why
+- Call out the impact
+- Call out the small wins
+- Share the success with the team
+- Share success with partners and boss
+- Remind you putting the team first, and supporting others is a very strong purpose in and of itself
 
 People also care deeply about coaching and career growth:
 
 - Catching people doing things right.
 - 110% of capability but clarify doing 110% vs 80%
 
-And I spend a lot of time on generating [Moments](/moments-at-work):
+### How to motivate through team environment
+
+I focus significant energy nurturing the [team culture](#l-culture):
+
+_As a team we all aspire to a culture where coming to work is fun, the team members put the team needs ahead of their own, the team gelled and by people being vulnerable we built a strong sense of psycholigcal safety_
+
+I spend significant energy generating [Moments](/moments-at-work):
 
 _Of all the places we spend our time, work is the one that dominates. However, when we look back on our lives, work is often the thing we remember least. Why? Because we remember our lives through peak moments, and there are few of those, especially positive peak moments, at work. Luckily, peak moments can be created and leaders can be taught how to create them. This post explores opportunities and techniques to create these moments._
 
@@ -711,6 +725,8 @@ From Simon Sinek, a great script:
 - Because want us to tackle this subject
 
 ## Culture
+
+<a id="l-culture"></a>
 
 ### What is your ideal culture?
 
