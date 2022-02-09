@@ -480,6 +480,10 @@ Classically, motivation is comprised of carrots and sticks, where carrots focus 
 
 Motivation has 2 dimensions, personal experience and team environment. Personal experience is based on the book Drive, and is about encouraging Autonomy, Mastery and Purpose. The team environment is about the culture in which you experience the personal dimension.
 
+Another lens of motivation is [satisfaction and dissatisfaction](/dsat):
+
+_Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can’t sleep well at night, and SAT is reason you set your alarm for 5am so you can get an early start tackling your favorite probems_
+
 ### How to motivate through personal experience
 
 I use Danial Pink's [DRIVE model](https://youtu.be/t9wDmRMtPnA). TL;DR: Extrinsic motivation doesn't work, you need intrinsic motivation, which is driven by Autonomy mastery purpose.
