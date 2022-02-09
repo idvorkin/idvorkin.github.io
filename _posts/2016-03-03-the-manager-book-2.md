@@ -501,6 +501,7 @@ I use Danial Pink's [DRIVE model](https://youtu.be/t9wDmRMtPnA). TL;DR: Extrinsi
 - (Link: Managing and developing people)
 - I help you brainstorm what skill you want (or need) to master.
 - I remind you that building mastery is painful, and that's OK. (Link: Situational Leadership)
+- I encourage frequent feedback by encouraging sharing [small increments, spikes, small diffs, etc](https://www.thezbook.com/the-biggest-mistake-i-see-engineers-make-2)
 - I encourage continuous improvement, retros, and mentorship and menteeship
 - I'll push you to 110% of your capacity, but I tell you when you're at 90,100, or 110.
 - As you build your skills, I help you find bigger and bigger opportunities and/or Exposure
