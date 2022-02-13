@@ -14,9 +14,9 @@ Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are ort
 <!-- vim-markdown-toc GFM -->
 
 - [General](#general)
-    - [Waking up in the middle of the night vs excited to go to work.](#waking-up-in-the-middle-of-the-night-vs-excited-to-go-to-work)
-    - [Your life isn't just your work](#your-life-isnt-just-your-work)
-- [The consulting matrix](#the-consulting-matrix)
+    - [Detection: How's your sleep](#detection-hows-your-sleep)
+    - [Balance Your life is more then your work.](#balance-your-life-is-more-then-your-work)
+- [The class 2x2 matrix](#the-class-2x2-matrix)
     - [High SAT Low DSAT](#high-sat-low-dsat)
     - [High DSAT, Low SAT](#high-dsat-low-sat)
     - [High SAT High DSAT](#high-sat-high-dsat)
@@ -41,12 +41,12 @@ Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are ort
 
 ## General
 
-### Waking up in the middle of the night vs excited to go to work.
+### Detection: How's your sleep
 
 DSAT is waking up in a panic angry at your co-worker, or stressed you'll fail.
 SAT is being so excited about your project, you get up early Sunday morning to get a few extra hours in cuz you enjoy it so much.
 
-### Your life isn't just your work
+### Balance Your life is more then your work.
 
 [I wish I spent more time at work, is never uttered on a death bed](/wlb). You have many [roles beyond work in your life](/eulogy), and balancing between them is the definition of effectiveness.
 
@@ -54,7 +54,7 @@ High work SAT is great for your career, but often results in a [high stopping En
 
 On the other hand even though low work SAT results in lower work stopping energy, low SAT can lower your overall energy and will power, resulting in less energy for your other roles.
 
-## The consulting matrix
+## The class 2x2 matrix
 
 | DSAT/SAT  | SAT High                         | SAT Low            |
 | --------- | -------------------------------- | ------------------ |
