@@ -77,6 +77,14 @@ Amelia's always proud I do magic. I was at her Kindergarden party, and suddenly 
 
 [Video Album](https://photos.app.goo.gl/HPrGV2Uum5EBgo8NA)
 
+### That's the coolest guy ever
+
+One day I was walking downtown and ran into Colin and his kids. I love doing magic, so without introducing myself, I kneeled down and did magic for the kids and wandered off saying nothing else. I'm sure I enjoyed the moment, but didn't think hard about it.
+
+A few years later as I chatted with Colin, he brought that interaction up, and told me his daughter's reaction after I'd continued on my way. His daughter said - "Wow, who was that?", Colin answered - "My friend Igor". His daughter cocked her head and continued "Wow your friend is the coolest guy in the world".
+
+I'm confident Colin exaggerated to make me feel good, but I'll take his story at face value as it certainly makes me feel great and re-focus on my magic practice.
+
 ### Family Magic
 
 Amelia - Amelia starting to do brauve reverse with card turning over.
