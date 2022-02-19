@@ -54,6 +54,7 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
     - [9. Build Habits](#9-build-habits)
     - [10. Rally the Herd](#10-rally-the-herd)
     - [11. Keep the Switch Going](#11-keep-the-switch-going)
+    - [How does this apply to diet](#how-does-this-apply-to-diet)
 - [Other models](#other-models)
     - [Behavior Change - Prompt, Ability, Motivation](#behavior-change---prompt-ability-motivation)
     - [Influencer 2.0](#influencer-20)
@@ -83,11 +84,44 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 
 ## 8. Tweak the Environment
 
+- Fundamental Attribution Error
+- Often situation resulting in the behavior, not the person.
+- People problem is often a situation problem
+- See who shaped your behavior.
+  - Want you to slow down, narrower roads
+  - Want you to shop more, put milk (which you need at the back)
+  - Don't leave ATM card in machine, so need to get card before taking out cash
+  - Reach for carrots, not stick
+- Ask to watch people who have trouble, you'll see them follow the easiest path.
+- Medication Vests
+  - Everyone hated it
+  - 50% better ..
+  - When saw impact, people start to like it.
+- Hold the marker when too many people talking at once
+- Sterile time.
+- People don't need to change, behavior does.
+- Environment Changes more effective by People.
+- Use smaller plates. Auto-refilling soup, people never stop.
+- Self manipulation tools.
+- This applies to magic (??) Is structural misdirection part of this
+- Force yourself to close your laptop in meetings
+- Fun to have "rider" outsmart our "elephant".
+- Screen Time.
+- Turn off notifications
+- How to make undesirable outcomes structurally impossible.
+- Look at Amazon's [COEs](/coe)
+- Machine that can cut off hands by accident. Sturcutral fix, only turn on machine by making 2 buttons you need to touch with large y shape, so hands can't be near it.
+- Can't life parking break off without touching brake.
+- Focus - Pre-Event; - Seat belts - Air Bags - Mid-Event ; - Post-Event - Get Ambulance There quickly - Training for physio therapy
+  Note, nothing about people's motivations or discipline.
+
 ## 9. Build [Habits](/habits)
 
 ## 10. Rally the Herd
 
 ## 11. Keep the Switch Going
+
+## How does this apply to diet
 
 # Other models
 
