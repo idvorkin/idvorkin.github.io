@@ -6,11 +6,6 @@ title: Igor's Blog
 <!-- Including InstantSearch.js library and styling -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 <script
-  src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"
-  integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk="
-  crossorigin="anonymous"
-></script>
-<script
   src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js"
   integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM="
   crossorigin="anonymous"
@@ -23,10 +18,10 @@ title: Igor's Blog
   crossorigin="anonymous"
 />
 <script type="module">
-  import { create_search, getParameterByName } from "/assets/js/search.js";
+  import { CreateSearch, getParameterByName } from "/assets/js/search.js";
   const start_search = () => {
     const initial_query = getParameterByName("q");
-    const search = create_search(
+    const search = CreateSearch(
       "{{site.algolia.application_id}}",
       "{{site.algolia.search_only_api_key}}",
       "{{site.algolia.index_name}}",
@@ -34,6 +29,7 @@ title: Igor's Blog
     );
     search.start();
   };
+
   defer(start_search);
 </script>
 

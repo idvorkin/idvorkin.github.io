@@ -1,9 +1,14 @@
 <!-- Image and text -->
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding:0">
-    <a class="navbar-brand" href="/" style="padding: 0;">
-      <img src="{{ site.logo-png}}" height="60" alt="" />
-    </a>
+    <span class="navbar-brand" href="#" style="padding: 0;">
+      <img
+        id="autocomplete-search-box-button"
+        src="{{ site.logo-png}}"
+        height="60"
+        alt=""
+      />
+    </span>
     <img
       id="monkey-button"
       src="/images/surprised_monkey.png"
@@ -51,3 +56,24 @@
     </div>
   </nav>
 </header>
+
+<style>
+  .aa-Autocomplete {
+  }
+</style>
+<script type="module">
+  import { CreateAutoComplete } from "/assets/js/search.js";
+  CreateAutoComplete(
+    "{{site.algolia.application_id}}",
+    "{{site.algolia.search_only_api_key}}",
+    "{{site.algolia.index_name}}"
+  );
+
+  $("#autocomplete-search-box-button").click(function() {
+    // $("#autocomplete-search-box").toggleClass("autocomplete-search-box-active");
+    console.log("Clicked");
+    $("#autocomplete-search-box > div > button").click();
+  });
+</script>
+<!-- Keep search box hidden, and only access the detached state -->
+<div id="autocomplete-search-box" style="display:none"></div>
