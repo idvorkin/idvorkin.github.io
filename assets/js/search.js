@@ -31,8 +31,9 @@ function InstantSearchHitTemplate(hit) {
         const content = (_b = (_a = highlighted === null || highlighted === void 0 ? void 0 : highlighted.content) === null || _a === void 0 ? void 0 : _a.value) !== null && _b !== void 0 ? _b : "";
         // <section class="notepad-post-excerpt"><p>${content}</p></section>
         const string_rep = `
-           <b> <a href="${url}">${title}</a></b>
-            <span>${content}</span>
+           <span onClick="window.location='${url}';">
+              <b> <a href="${url}">${title}</a></b> <span>${content}</span>
+           </span>
         `;
         return string_rep;
     }
@@ -97,7 +98,7 @@ async function get_random_post() {
         .map(e => e[1]);
     const random_post = random_from_list(all_pages);
     const ret = {
-        label: random_post["title"],
+        title: random_post["title"],
         url: random_post["url"],
         description: random_post["description"],
     };
@@ -111,13 +112,13 @@ async function CreateAutoComplete(appid, search_api_key, index_name) {
             for (let i = 0; i < 4; i++) {
                 random_posts.push(await get_random_post());
             }
-            random_posts.push({ label: "GitHub", url: "https://github.com" });
+            // random_posts.push({ title: "GitHub", url: "https://github.com" });
             return random_posts;
         },
         getItemUrl({ item }) {
             console.log("getItemUrl ", item);
-            const ret = "https://www.google.com";
-            // const ret = item.url;
+            // const ret = "https://www.google.com";
+            const ret = item.url;
             console.log("ret", ret);
             return ret;
         },
@@ -125,14 +126,19 @@ async function CreateAutoComplete(appid, search_api_key, index_name) {
             header({ createElement }) {
                 return createElement("div", {
                     dangerouslySetInnerHTML: {
-                        __html: "<i style='color:grey'>Posts you can to search for</i>",
+                        __html: "<i style='color:grey'>Random posts ...</i>",
                     },
                 });
             },
             item({ item, createElement }) {
                 return createElement("div", {
                     dangerouslySetInnerHTML: {
-                        __html: `<b>${item.label}</b> - ${item.description}`,
+                        __html: `
+            <span onClick="window.location='${item.url}';" > 
+           <b> <a href="${item.url}">${item.title}</a></b>
+            <span>${item.description}</span>
+            </span>
+            `,
                     },
                 });
             },
@@ -161,7 +167,7 @@ async function CreateAutoComplete(appid, search_api_key, index_name) {
                             params: {
                                 hitsPerPage: isEmptySearch
                                     ? 2
-                                    : 5 /* On empty serach leave room for random */,
+                                    : 10 /* On empty serach leave room for random */,
                                 highlightPreTag: "<span style='background:yellow'>",
                                 highlightPostTag: "</span>",
                             },

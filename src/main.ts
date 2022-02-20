@@ -2,6 +2,7 @@ import {
   isRegularExpressionLiteral,
   JSDocUnknownTag,
 } from "../node_modules/typescript/lib/typescript";
+import { CreateSearch } from "./search";
 
 let tocExpand = true;
 
@@ -241,9 +242,14 @@ async function get_link_info(): Promise<IURLInfoMap> {
   return cached_linked_info;
 }
 
+function search() {
+  $("#autocomplete-search-box-button").click();
+}
+
 function keyboard_shortcut_loader() {
   const mouseTrap: any = Mousetrap();
-  mouseTrap.bind("s", e => (location.href = "/"));
+  mouseTrap.bind("/", e => search());
+  mouseTrap.bind("s", e => search());
   mouseTrap.bind("t", e => ForceShowRightSideBar());
   mouseTrap.bind("p", e => SwapProdAndTest());
   mouseTrap.bind("z", e => on_monkey_button_click(e));
@@ -254,6 +260,7 @@ function keyboard_shortcut_loader() {
   let shortcutHelp = `
 Try these shortcuts:
   s - search
+  / - search
   t - force sidebar
   p - swap prod and test
   z - surprise me
