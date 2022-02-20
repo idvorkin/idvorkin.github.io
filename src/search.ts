@@ -4,6 +4,8 @@ const { autocomplete, getAlgoliaResults } = window["@algolia/autocomplete-js"];
 // Adding a query paramater.
 // import instantsearch from "algoliasearch";
 
+const search_placeholder_text = "Search Igor's Musings ...";
+
 function getParameterByName(name, url): string {
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, "\\$&");
@@ -27,9 +29,10 @@ function InstantSearchHitTemplate(hit) {
     }
     const title = highlighted.title.value;
     const content = highlighted?.content?.value ?? "";
+    // <section class="notepad-post-excerpt"><p>${content}</p></section>
     const string_rep = `
             <h3><a href="${url}">${title}</a></h3>
-            <section class="notepad-post-excerpt"><p>${content}</p></section>
+            <p>${content}</p>
         `;
     return string_rep;
   } catch (err) {
@@ -57,7 +60,7 @@ function CreateSearch(appid, search_api_key, index_name, initial_query) {
     // @ts-ignore:TS2339
     instantsearch.widgets.searchBox({
       container: "#search-box",
-      placeholder: "Search Igor's musings...",
+      placeholder: search_placeholder_text,
       poweredBy: true, // This is required if you're on the free Community plan
       showSubmit: false,
       showReset: false,
@@ -94,8 +97,8 @@ function AutoCompleteHitTemplateWithComponentDoesNotWork({
 
 function AlgoliaMarkupToHTML(algolia_markup) {
   return algolia_markup
-    .replace(/__aa-highlight__/g, "<mark>")
-    .replace(/__\/aa-highlight__/g, "</mark>");
+    .replace(/__aa-highlight__/g, "<span style='background:yellow'>")
+    .replace(/__\/aa-highlight__/g, "</span>");
 }
 
 // Algolia uses some PREACT thing, which this project does not support
@@ -148,7 +151,7 @@ function CreateAutoComplete(appid, search_api_key, index_name) {
   // Setup Auto Complete Stuff
   return autocomplete({
     container: "#autocomplete-search-box",
-    placeholder: "Search",
+    placeholder: search_placeholder_text,
     getSources: GetSources,
     debug: false,
     autoFocus: true,
