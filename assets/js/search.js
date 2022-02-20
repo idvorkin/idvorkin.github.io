@@ -125,7 +125,7 @@ async function CreateAutoComplete(appid, search_api_key, index_name) {
             header({ createElement }) {
                 return createElement("div", {
                     dangerouslySetInnerHTML: {
-                        __html: "<i>Posts you can to search for</i>",
+                        __html: "<i style='color:grey'>Posts you can to search for</i>",
                     },
                 });
             },
