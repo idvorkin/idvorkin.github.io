@@ -1,5 +1,6 @@
 // For autocomplete
 const { autocomplete, getAlgoliaResults } = window["@algolia/autocomplete-js"];
+import { get_link_info, random_from_list } from "./main.js";
 
 // Adding a query paramater.
 // import instantsearch from "algoliasearch";
@@ -31,8 +32,8 @@ function InstantSearchHitTemplate(hit) {
     const content = highlighted?.content?.value ?? "";
     // <section class="notepad-post-excerpt"><p>${content}</p></section>
     const string_rep = `
-            <h3><a href="${url}">${title}</a></h3>
-            <p>${content}</p>
+           <b> <a href="${url}">${title}</a></b>
+            <span>${content}</span>
         `;
     return string_rep;
   } catch (err) {
@@ -106,41 +107,98 @@ function AutoCompleteHitTemplate({ item, createElement }) {
   });
 }
 
-function CreateAutoComplete(appid, search_api_key, index_name) {
+async function get_random_post() {
+  const all_url_info = await get_link_info();
+  //  Yuk, find a clearere way to do this
+  const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
+    .map(e => e[1]);
+  const random_post = random_from_list(all_pages);
+  const ret = {
+    label: random_post["title"],
+    url: random_post["url"],
+    description: random_post["description"],
+  };
+  return ret;
+}
+
+async function CreateAutoComplete(appid, search_api_key, index_name) {
+  const GetDefaultSearchResults = {
+    sourceId: "links",
+    async getItems() {
+      const random_posts = [];
+      for (let i = 0; i < 4; i++) {
+        random_posts.push(await get_random_post());
+      }
+      random_posts.push({ label: "GitHub", url: "https://github.com" });
+      return random_posts;
+    },
+    getItemUrl({ item }) {
+      console.log("getItemUrl ", item);
+      const ret = "https://www.google.com";
+      // const ret = item.url;
+      console.log("ret", ret);
+      return ret;
+    },
+    templates: {
+      header({ createElement }) {
+        return createElement("div", {
+          dangerouslySetInnerHTML: {
+            __html: "<i>Posts you can to search for</i>",
+          },
+        });
+      },
+      item({ item, createElement }) {
+        return createElement("div", {
+          dangerouslySetInnerHTML: {
+            __html: `<b>${item.label}</b> - ${item.description}`,
+          },
+        });
+      },
+    },
+    // ...
+  };
   const searchClient = algoliasearch(appid, search_api_key);
   function GetSources({ query }) {
-    if (query.length == 0) {
+    const isEmptySearch = query.length === 0;
+    if (isEmptySearch) {
       // Searching for a space gives nice default results
       // so when no results search for that ...
       // TODO: Consider including the recent search history as well
       // And perhaps include the page you are on in recents
       query = " ";
     }
-    return [
-      {
-        sourceId: "products",
-        getItems() {
-          return getAlgoliaResults({
-            searchClient,
-            queries: [
-              {
-                indexName: index_name,
-                query,
-                params: {
-                  hitsPerPage: 5,
-                  highlightPreTag: "<span style='background:yellow'>",
-                  highlightPostTag: "</span>",
-                },
+    const algolia_results = {
+      sourceId: "from_search",
+      getItems() {
+        return getAlgoliaResults({
+          searchClient,
+          queries: [
+            {
+              indexName: index_name,
+              query,
+              params: {
+                hitsPerPage: isEmptySearch
+                  ? 2
+                  : 5 /* On empty serach leave room for random */,
+                highlightPreTag: "<span style='background:yellow'>",
+                highlightPostTag: "</span>",
               },
-            ],
-          });
-        },
-        templates: {
-          item: AutoCompleteHitTemplate,
-        },
+            },
+          ],
+        });
       },
-    ];
+      templates: {
+        item: AutoCompleteHitTemplate,
+      },
+    };
+    let results = [algolia_results];
+    if (isEmptySearch) {
+      results.push(GetDefaultSearchResults);
+      // results = [GetDefaultSearchResults];
+    }
+    return results;
   }
+
   const autocomplete_id = "#autocomplete-search-box";
 
   if (!$(autocomplete_id).length) {
@@ -158,6 +216,7 @@ function CreateAutoComplete(appid, search_api_key, index_name) {
     getSources: GetSources,
     debug: false,
     openOnFocus: true,
+    detachedMediaQuery: "",
   });
 }
 
