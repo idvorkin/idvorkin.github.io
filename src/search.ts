@@ -95,19 +95,13 @@ function AutoCompleteHitTemplateWithComponentDoesNotWork({
   return components.Highlight({ hit: item });
 }
 
-function AlgoliaMarkupToHTML(algolia_markup) {
-  return algolia_markup
-    .replace(/__aa-highlight__/g, "<span style='background:yellow'>")
-    .replace(/__\/aa-highlight__/g, "</span>");
-}
-
 // Algolia uses some PREACT thing, which this project does not support
 // Reach way into algolia and build the HTML manually
 function AutoCompleteHitTemplate({ item, createElement }) {
   // https://www.algolia.com/doc/api-reference/widgets/infinite-hits/js/
   return createElement("div", {
     dangerouslySetInnerHTML: {
-      __html: AlgoliaMarkupToHTML(InstantSearchHitTemplate(item)),
+      __html: InstantSearchHitTemplate(item),
     },
   });
 }
@@ -115,6 +109,13 @@ function AutoCompleteHitTemplate({ item, createElement }) {
 function CreateAutoComplete(appid, search_api_key, index_name) {
   const searchClient = algoliasearch(appid, search_api_key);
   function GetSources({ query }) {
+    if (query.length == 0) {
+      // Searching for a space gives nice default results
+      // so when no results search for that ...
+      // TODO: Consider including the recent search history as well
+      // And perhaps include the page you are on in recents
+      query = " ";
+    }
     return [
       {
         sourceId: "products",
@@ -127,6 +128,8 @@ function CreateAutoComplete(appid, search_api_key, index_name) {
                 query,
                 params: {
                   hitsPerPage: 5,
+                  highlightPreTag: "<span style='background:yellow'>",
+                  highlightPostTag: "</span>",
                 },
               },
             ],
@@ -154,7 +157,7 @@ function CreateAutoComplete(appid, search_api_key, index_name) {
     placeholder: search_placeholder_text,
     getSources: GetSources,
     debug: false,
-    autoFocus: true,
+    openOnFocus: true,
   });
 }
 
