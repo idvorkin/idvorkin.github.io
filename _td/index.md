@@ -40,7 +40,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
 
 ## Engineering
 
-### [Design and Architecture](/td/design)
+### [Design and Architecture](/design)
 
 ### [Cloud first applications](/td/cloud-first-applications)
 

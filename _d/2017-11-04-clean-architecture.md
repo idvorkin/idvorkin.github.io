@@ -270,25 +270,7 @@ Architecture is the highest level of abstraction that models a software system. 
 
 <!-- /TOC -->
 
-### User Behavior and Malleability
-
-Software is measured in two dimensions: end user behavior and malleability. End user behavior is the delivery of use cases, while malleability is the ease with which the software can modify the existing use cases, or add new ones. Software malleability is the evaluation function for an architecture. Malleability is the more important of these dimensions because over time there will be far more changes to the software then the original use case (e.g. the cost of maintenance far exceeds the software writing cost).
-
-Product managers don't understand software enough to understand the notion of malleability, and thus don't have the ability to prioritize architecture. It's the role of the software engineers (and software architects) to continually prioritize the architecture.
-
-> On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
-
-### Software Paradigms
-
-Software has evolved from unstructured, to structured, to object-oriented to functional paradigms. With each paradigm, additional constraints are placed on the programmers, which improves their productivity. These paradigms are a programming model more then a technical constraints as each paradigm can be implemented in assembly code (which is what compilers do)
-
-The value of the structured program is functional decomposition and constrained flow control, e.g. decomposable functions with constrained flow control (if/for/foreach) are the lowest level of our software systems. A key value of functions is 1) Letting the programmer understand the program a high level without knowing all the details a 2) allowing a small unit which can be tested independently.
-
-The value of the object oriented paradigm is encapsulation (bundling data with functions - e.g. classes and objects), and polymorphism (interfaces which can be instantiated with various types).
-
-Polymorphism gives programmers the most power, decoupling the source code dependency from the flow of control dependency. E.g. main only depends on the plugin interfaces, where modules must implement those interfaces (often with a simple adapter or facade). This is such a powerful difference from structured programming that it's called the dependency inversion principle (DIP). This power enables the programmer to understand much more complex programs at a high level without knowing all the details. These low level details can be developed and deployed individually.
-
-The value of the functional paradigm is functions with no side effects and functional composition and currying. With this tool we reduce error, remove concurrency errors, and transform problems to be embarrassingly parallel. Some mutation is always required, but it should be isolated as much as possible. However, less mutation is required then you think. In [event sourcing](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing) use store transaction records instead of updates and compute current state from the sum of previous updates we can remove mutation even from storage (e.g. CRUD becomes CR). If this sounds crazy you already use it daily when using source control, and is becoming very popular in react-redux applications and time travel debugging.
+See notes on [design and architecture](/design)
 
 ## II.Object Oriented design principles
 

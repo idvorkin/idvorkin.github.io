@@ -2,9 +2,7 @@
 layout: post
 title: Testing and Quality
 permalink: /testing
----
-
-If it's not tested, it doesn't work'.' When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you've got more work to do
+---If it's not tested, it doesn't work'.' When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you've got more work to do
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
