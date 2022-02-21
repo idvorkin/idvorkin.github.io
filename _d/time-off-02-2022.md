@@ -124,6 +124,8 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 
 ### Blog posts
 
+- ☐ Read and update [Switch](/switch)
+- ☐ Start a [productity post](/productive)
 - ☐ Merge Anxiety Todo list into some of the blogs
 
 ## Emotional Health
