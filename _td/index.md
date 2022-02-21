@@ -29,11 +29,11 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
     - [Build your own ...](#build-your-own-)
     - [Other](#other)
     - [Minor Tips](#minor-tips)
-    - [Projects](#projects)
-        - [Complete](#complete)
-        - [In Flight](#in-flight)
-        - [On Deck](#on-deck)
-        - [Mothballed](#mothballed)
+- [Projects](#projects)
+    - [Complete](#complete)
+    - [In Flight](#in-flight)
+    - [On Deck](#on-deck)
+    - [Mothballed](#mothballed)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -86,27 +86,27 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
 - [USB Tech](usbtech)
 - [Visual Vocabulary](visual-vocabulary)
 
-### Projects
+## Projects
 
 Finishing projects requires crossing [the dip](/dip), and the best way to do that is quit, or don't even start projects you don't have the energy to complete. To improve my chances of success, I try to have a limited set of projects in flight, and deliberatelly mothball projects I don't think are worth completing.
 
-#### Complete
+### Complete
 
 A few that made it over the finish line
 
 - [Ring Video Downloader](ring-video-download)
 - [Extract message history on OSX](dump_imessage_history)
 
-#### In Flight
+### In Flight
 
 Just like kanban, you don't want too many projects in flight, and this list reminds me to limit my open projects.
 
-#### On Deck
+### On Deck
 
 - Make a single video from all my ring videos
 - 3D printing
 
-#### Mothballed
+### Mothballed
 
 Several Projects that I started and deliberatly mothballed so I'd have capacity for my other projects
 
