@@ -2,7 +2,9 @@
 layout: post
 title: Software Design And Architecture
 permalink: /design
----Software design is important. Here are my notes
+---
+
+Software design is important. Here are my notes
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
