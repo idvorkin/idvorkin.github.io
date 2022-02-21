@@ -123,8 +123,8 @@ async function get_random_post() {
   return ret;
 }
 
-async function CreateAutoComplete(appid, search_api_key, index_name) {
-  const GetDefaultSearchResults = {
+async function GetDefaultSearchResults() {
+  return {
     sourceId: "links",
     async getItems() {
       const random_posts = [];
@@ -136,7 +136,6 @@ async function CreateAutoComplete(appid, search_api_key, index_name) {
     },
     getItemUrl({ item }) {
       console.log("getItemUrl ", item);
-      // const ret = "https://www.google.com";
       const ret = item.url;
       console.log("ret", ret);
       return ret;
@@ -164,7 +163,10 @@ async function CreateAutoComplete(appid, search_api_key, index_name) {
     },
     // ...
   };
+}
+async function CreateAutoComplete(appid, search_api_key, index_name) {
   const searchClient = algoliasearch(appid, search_api_key);
+  const defaultSearchResults = await GetDefaultSearchResults();
   function GetSources({ query }) {
     const isEmptySearch = query.length === 0;
     if (isEmptySearch) {
@@ -197,10 +199,20 @@ async function CreateAutoComplete(appid, search_api_key, index_name) {
       templates: {
         item: AutoCompleteHitTemplate,
       },
+      getItemUrl({ item }) {
+        let url = item.url;
+        if (item.anchor) {
+          url += `#${item.anchor}`;
+        }
+        const ret = url;
+        console.log("getItemUrl ", item);
+        console.log("ret", ret);
+        return ret;
+      },
     };
     let results = [algolia_results];
     if (isEmptySearch) {
-      results.push(GetDefaultSearchResults);
+      results.push(defaultSearchResults);
       // results = [GetDefaultSearchResults];
     }
     return results;

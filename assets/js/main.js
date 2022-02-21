@@ -207,7 +207,6 @@ function keyboard_shortcut_loader() {
     mouseTrap.bind("s", e => search());
     mouseTrap.bind("t", e => ForceShowRightSideBar());
     mouseTrap.bind("p", e => SwapProdAndTest());
-    mouseTrap.bind("z", e => on_monkey_button_click(e));
     mouseTrap.bind("a", e => (location.href = "/all"));
     mouseTrap.bind("m", e => (location.href = "/toc"));
     mouseTrap.bind("6", e => (location.href = "/ig66"));
@@ -256,24 +255,7 @@ async function append_randomizer_div(parent_id, random_html_factory) {
         }
     });
 }
-async function on_monkey_button_click(e) {
-    if (window.location.href.includes("/ig66")) {
-        window.location.href = "/ig66";
-        return;
-    }
-    const all_url_info = await get_link_info();
-    //  Yuk, find a clearere way to do this
-    const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
-        .map(e => e[1]);
-    const random_post = shuffle(all_pages)[0];
-    const new_url = window.location.origin + random_post.url;
-    window.location.href = new_url;
-}
-function monkey_button_loader() {
-    $("#monkey-button").bind("click", on_monkey_button_click);
-}
 function load_globals() {
-    $(monkey_button_loader);
     $(add_link_loader);
     $(JsTemplateReplace);
     $(keyboard_shortcut_loader);
