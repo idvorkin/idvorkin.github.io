@@ -1,7 +1,7 @@
 ---
 layout: post
 no-render-title: true
-title: Time off Mid winter break.
+title: Time off Mid winter break 2022
 ---
 
 It'mid winter break and I've got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
@@ -101,7 +101,7 @@ Private
 
 ### Software for Balance
 
-- Parse the the weekly summaries and put them into the blog post.
+- ☑ Parse the the weekly summaries and [put them into the blog post](https://github.com/idvorkin/jupyter/blob/master/WeekAnalysis.ipynb).
 - Review and have someone else score your balance.
 
 ### Tech Guru
@@ -109,6 +109,8 @@ Private
 #### DENY LIST: Shell + Enabling Environment + Python in VIM
 
 It's something that I'm over invested in, and need to put an upper bound on to let me focus on other things.
+
+- ☑ Figure out how to highlight and bold italics for markdown files [surround.vim](https://github.com/idvorkin/Settings/commit/c1d4ffb34d50193a0dac8c13125759b65172f5ac), and ask [for help](https://github.com/tpope/vim-surround/issues/346).
 
 #### DENY LIST: Data Analysis - Pandas
 
@@ -126,7 +128,9 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 
 - ☐ Read and update [Switch](/switch)
 - ☐ Start a [productity post](/productive)
+- ☐ Update some [Sleight of mouth](/sleight-of-mouth)
 - ☐ Merge Anxiety Todo list into some of the blogs
+- ☑ Update search to be an auto complete based search.
 
 ## Emotional Health
 
