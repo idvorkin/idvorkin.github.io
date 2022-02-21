@@ -135,9 +135,9 @@ async function GetDefaultSearchResults() {
       return random_posts;
     },
     getItemUrl({ item }) {
-      console.log("getItemUrl ", item);
+      // console.log("getItemUrl ", item);
       const ret = item.url;
-      console.log("ret", ret);
+      // console.log("ret", ret);
       return ret;
     },
     templates: {
@@ -152,7 +152,7 @@ async function GetDefaultSearchResults() {
         return createElement("div", {
           dangerouslySetInnerHTML: {
             __html: `
-            <span onClick="window.location='${item.url}';" > 
+            <span onClick="window.location='${item.url}';" >
            <b> <a href="${item.url}">${item.title}</a></b>
             <span>${item.description}</span>
             </span>
@@ -164,62 +164,76 @@ async function GetDefaultSearchResults() {
     // ...
   };
 }
-async function CreateAutoComplete(appid, search_api_key, index_name) {
+
+function GetAlgoliaResults(
+  searchClient,
+  index_name,
+  query,
+  hitsPerPage: number
+) {
+  return {
+    sourceId: "from_search",
+    getItems() {
+      return getAlgoliaResults({
+        searchClient,
+        queries: [
+          {
+            indexName: index_name,
+            query,
+            params: {
+              hitsPerPage: hitsPerPage
+                ? 2
+                : 10 /* On empty serach leave room for random */,
+              highlightPreTag: "<span style='background:yellow'>",
+              highlightPostTag: "</span>",
+            },
+          },
+        ],
+      });
+    },
+    templates: {
+      item: AutoCompleteHitTemplate,
+    },
+    getItemUrl({ item }) {
+      let url = item.url;
+      if (item.anchor) {
+        url += `#${item.anchor}`;
+      }
+      const ret = url;
+      // console.log("getItemUrl ", item);
+      // console.log("ret", ret);
+      return ret;
+    },
+  };
+}
+async function CreateAutoComplete(
+  appid,
+  search_api_key,
+  index_name,
+  autocomplete_id
+) {
   const searchClient = algoliasearch(appid, search_api_key);
   const defaultSearchResults = await GetDefaultSearchResults();
   function GetSources({ query }) {
     const isEmptySearch = query.length === 0;
     if (isEmptySearch) {
-      // Searching for a space gives nice default results
-      // so when no results search for that ...
+      // Searching for a space gives nice default results, so when no results search for that ...
       // TODO: Consider including the recent search history as well
-      // And perhaps include the page you are on in recents
       query = " ";
     }
-    const algolia_results = {
-      sourceId: "from_search",
-      getItems() {
-        return getAlgoliaResults({
-          searchClient,
-          queries: [
-            {
-              indexName: index_name,
-              query,
-              params: {
-                hitsPerPage: isEmptySearch
-                  ? 2
-                  : 10 /* On empty serach leave room for random */,
-                highlightPreTag: "<span style='background:yellow'>",
-                highlightPostTag: "</span>",
-              },
-            },
-          ],
-        });
-      },
-      templates: {
-        item: AutoCompleteHitTemplate,
-      },
-      getItemUrl({ item }) {
-        let url = item.url;
-        if (item.anchor) {
-          url += `#${item.anchor}`;
-        }
-        const ret = url;
-        console.log("getItemUrl ", item);
-        console.log("ret", ret);
-        return ret;
-      },
-    };
-    let results = [algolia_results];
+    const algoliaResults = GetAlgoliaResults(
+      searchClient,
+      index_name,
+      query,
+      isEmptySearch ? 2 : 10
+    );
+    const results = [algoliaResults];
     if (isEmptySearch) {
       results.push(defaultSearchResults);
       // results = [GetDefaultSearchResults];
     }
     return results;
   }
-
-  const autocomplete_id = "#autocomplete-search-box";
-
   if (!$(autocomplete_id).length) {
     console.log(
       "No autocomplete element found",

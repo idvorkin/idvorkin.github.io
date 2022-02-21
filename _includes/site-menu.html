@@ -49,17 +49,18 @@
       ></a>
     </div>
   </nav>
-  <div id="autocomplete-search-box" style="display:none">
-    <!-- Keep search box hidden, and only access the detached state -->
-  </div>
 </header>
+<div id="autocomplete-search-box" style="display:none">
+  <!-- Keep search box hidden, and only access the detached state -->
+</div>
 
 <script type="module">
   import { CreateAutoComplete } from "/assets/js/search.js";
   CreateAutoComplete(
     "{{site.algolia.application_id}}",
     "{{site.algolia.search_only_api_key}}",
-    "{{site.algolia.index_name}}"
+    "{{site.algolia.index_name}}",
+    "#autocomplete-search-box"
   );
 
   $("#autocomplete-search-box-button").click(function() {
