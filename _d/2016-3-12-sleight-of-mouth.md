@@ -1,17 +1,15 @@
 ---
 layout: post
 title: "Sleight Of Mouth"
-comments: true
-inprogress: true
-collapsable: true
 permalink: /sleight-of-mouth
 tags:
   - book-notes
   - emotional intelligence
-author: "Igor Dvorkin"
 ---
 
-Sleight of mouth is about how to cause cognitive reframes.
+Language, often unknown to us, creating and mental models, our reality, and defines our meaning. But the model is not the terrain, and by changing the language we can change the mental model. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. To experience the power of language, take any thing that is invisible to you, and name it. Now as it's given a name, see how percieve it, and become aware of it.
+
+The techniques
 
 {%include blob_image.html src="sleight-of-mouth.jpg" %}
 
@@ -223,3 +221,25 @@ Criteria -> standard/evidence we use to make decisions.
 ### 9: Applying the patterns as a system.
 
 ### 10: Conclusion
+
+### Levels of experience
+
+We experience stuff through this triangle.
+
+- Environment
+- Behavior
+- Capability
+- Beliefs and Values
+- Identity
+
+However we blame stuff in the inverse triangle
+
+This is the fundamental attirbution error. For ourselves we attribute fault to our environment, but to others we attribute to their identity.
+
+Question - what is identity vs our beliefs and values (good Q for Dr. Raph).
+
+### Resources
+
+Discussion of the techniques here.
+
+{% include youtube.html src="0VDkRz3Yf8c" %}
