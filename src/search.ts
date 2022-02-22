@@ -134,7 +134,6 @@ async function GetDefaultSearchResults() {
       const random_posts = await Promise.all(
         sized_array.map(async e => get_random_post())
       );
-      console.log(random_posts);
       return random_posts;
     },
     getItemUrl({ item }) {
