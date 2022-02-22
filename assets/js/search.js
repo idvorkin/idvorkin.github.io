@@ -109,7 +109,9 @@ async function GetDefaultSearchResults() {
     return {
         sourceId: "links",
         async getItems() {
-            const sized_array = new Array(count_random_posts_to_show).join('_').split('_');
+            const sized_array = new Array(count_random_posts_to_show)
+                .join("_")
+                .split("_");
             const random_posts = await Promise.all(sized_array.map(async (e) => get_random_post()));
             console.log(random_posts);
             return random_posts;
