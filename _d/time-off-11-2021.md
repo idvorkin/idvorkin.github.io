@@ -1,6 +1,5 @@
 ---
 layout: post
-no-render-title: true
 title: Time off Turkey Day 2021
 ---
 
