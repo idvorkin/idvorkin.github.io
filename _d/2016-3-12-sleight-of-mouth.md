@@ -5,11 +5,51 @@ permalink: /sleight-of-mouth
 tags:
   - book-notes
   - emotional intelligence
+redirectfrom:
+  - som
+  - SoM
+  - SOM
 ---
 
-Language, often unknown to us, creating and mental models, our reality, and defines our meaning. But the model is not the terrain, and by changing the language we can change the mental model. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. To experience the power of language, take any thing that is invisible to you, and name it. Now as it's given a name, see how percieve it, and become aware of it.
+Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. To experience the power of language, take any thing that is invisible to you, and name it. Now as it's given a name, see how percieve it, and become aware of it. Our mental models are frame, and we need help going from a 'problem frame' to a 'desired outcome frame' , a 'failure frame', to a 'feedback frame' and an 'impossible frame ' to an 'as if' frame.
 
-The techniques
+The techniques encourage us to:
+
+- 'repunctuate' and 'rechunk'our perceptions
+- Identify and appreciate different perspectives and alternative models of the world
+- Discover the internal process by which we assess ‘reality', and through which we form and update our beliefs
+- Explore how we build the mental maps by which we form expectations, determine cause, and give meaning to our experiences.
+- Recognize the influence of our internal states on our beliefs and attitudes
+- Pace the natural process of belief change
+- Understand the impact of language and beliefs on different levels of our experience
+- Become more aware of potential verbal 'thought viruses' and unspoken assumptions and presuppositions
+
+At the core, you have a limiting belief which is of the form: 'limiting beleif' because/means/causes 'outcome'
+
+Examples:
+
+| Subject (Noun)    | Judgement        | (because/means/causes/reason) Reason                      |
+| ----------------- | ---------------- | --------------------------------------------------------- |
+| I                 | can't be healthy | because my foot hurts                                     |
+| My Boss           | ignores me       | because he is going to fire more                          |
+| A speeding ticket | causes           | me to get poor because my insurance will be too expensive |
+
+From there you apply a series of questions/concepts (Page 318):
+
+1. Intent - What is the positive purpose/intention of this belief?
+2. Redefine - What is another way to say this that's more positive?
+3. Consequence - What is a positive effect of this belief?
+4. Chunk down - Apply the belief to a more specific situation.
+5. Chunk up - Apply to belief to a more abstract/generic situation.
+6. Analogy - Give a related metaphor that's more positive
+7. Change Frame Size - Change the time frame, or apply to more or less changing implication or beign more positive.
+8. Better outcome - What would be a better outcome
+9. Look through a different world view - What different model of the world would you need for this to be positive?
+10. Realitiy Strategy - How would you need to perceive the world for this belief to be true.
+11. Counter Example - Find an exception to the rule
+12. Hierarchy of Criteria - What criteria is more important then the one you are considering.
+13. Apply to Self - ??
+14. Meta frame - What other belief about this believfe could change or enrich the perception of this belief?
 
 {%include blob_image.html src="sleight-of-mouth.jpg" %}
 
@@ -220,11 +260,9 @@ Criteria -> standard/evidence we use to make decisions.
 
 ### 9: Applying the patterns as a system.
 
-### 10: Conclusion
+### Bonus Levels of experience
 
-### Levels of experience
-
-We experience stuff through this triangle.
+Our experiences filter through these layers.
 
 - Environment
 - Behavior
@@ -240,6 +278,6 @@ Question - what is identity vs our beliefs and values (good Q for Dr. Raph).
 
 ### Resources
 
-Discussion of the techniques here.
+Discussion of SoM techniques.
 
 {% include youtube.html src="0VDkRz3Yf8c" %}
