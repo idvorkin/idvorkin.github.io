@@ -123,15 +123,18 @@ async function get_random_post() {
   return ret;
 }
 
+const count_random_posts_to_show = 10;
 async function GetDefaultSearchResults() {
   return {
     sourceId: "links",
     async getItems() {
-      const random_posts = [];
-      for (let i = 0; i < 4; i++) {
-        random_posts.push(await get_random_post());
-      }
-      // random_posts.push({ title: "GitHub", url: "https://github.com" });
+      const sized_array = new Array(count_random_posts_to_show)
+        .join("_")
+        .split("_");
+      const random_posts = await Promise.all(
+        sized_array.map(async e => get_random_post())
+      );
+      console.log(random_posts);
       return random_posts;
     },
     getItemUrl({ item }) {
@@ -141,13 +144,6 @@ async function GetDefaultSearchResults() {
       return ret;
     },
     templates: {
-      header({ createElement }) {
-        return createElement("div", {
-          dangerouslySetInnerHTML: {
-            __html: "<i style='color:grey'>Random posts ...</i>",
-          },
-        });
-      },
       item({ item, createElement }) {
         return createElement("div", {
           dangerouslySetInnerHTML: {
@@ -157,6 +153,13 @@ async function GetDefaultSearchResults() {
             <span>${item.description}</span>
             </span>
             `,
+          },
+        });
+      },
+      header({ createElement }) {
+        return createElement("div", {
+          dangerouslySetInnerHTML: {
+            __html: "<i style='color:grey'>Random posts ...</i>",
           },
         });
       },
@@ -181,9 +184,7 @@ function GetAlgoliaResults(
             indexName: index_name,
             query,
             params: {
-              hitsPerPage: hitsPerPage
-                ? 2
-                : 10 /* On empty serach leave room for random */,
+              hitsPerPage: hitsPerPage,
               highlightPreTag: "<span style='background:yellow'>",
               highlightPostTag: "</span>",
             },
@@ -193,6 +194,13 @@ function GetAlgoliaResults(
     },
     templates: {
       item: AutoCompleteHitTemplate,
+      header({ createElement }) {
+        return createElement("div", {
+          dangerouslySetInnerHTML: {
+            __html: "<i style='color:grey'>Featured posts ...</i>",
+          },
+        });
+      },
     },
     getItemUrl({ item }) {
       let url = item.url;
@@ -225,7 +233,7 @@ async function CreateAutoComplete(
       searchClient,
       index_name,
       query,
-      isEmptySearch ? 2 : 10
+      isEmptySearch ? 4 : 10
     );
     const results = [algoliaResults];
     if (isEmptySearch) {
