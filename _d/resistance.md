@@ -89,8 +89,14 @@ Every day I wake up at 5am, it's my first victory over the resistance, and it gi
 
 #### [Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf)
 
-#### [7 Habits begin with the end in mind](/7h-c3)
+#### 7 Habits begin with the end in mind
 
-#### [Getting things done](/gtd)
+{%include summarize-page.html src='/7h-c2' %}
 
-#### [Eat that frog](/frog)
+#### Getting things done
+
+{%include summarize-page.html src='/gtd' %}
+
+#### Eat that frog
+
+{%include summarize-page.html src='/frog %}
