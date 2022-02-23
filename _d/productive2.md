@@ -54,12 +54,12 @@ At the core of balance, energy, wlb, habits is being productive.
 
 ### Addicitions
 
-{%include summarize-page.html src='/addiction %}
+{%include summarize-page.html src='/addiction' %}
 
 ### Procrastination
 
-{%include summarize-page.html src='/frog %}
+{%include summarize-page.html src='/frog' %}
 
 ### The Resistance
 
-{%include summarize-page.html src='/resistance %}
+{%include summarize-page.html src='/resistance' %}
