@@ -1,11 +1,9 @@
 ---
-
 layout: post
 title: "Productive"
 permalink: /produtive
 redirect_from:
-
-## Concepts
+---## Concepts
 
 ### Optimize Energy not time
 
