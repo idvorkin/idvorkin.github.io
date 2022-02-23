@@ -110,7 +110,7 @@ Examine the things that don't bring you SAT, and see what you can adjust to sque
 
 DSAT is often caused by people or structural problems. These are hard to influence.
 
-Even when there are are small improvements you may have residual [mental pain](/pain), which leaves reactive, slowing your ability to lower DSAT.
+Even when there are are small improvements you may have residual [mental pain](/mental-pain), which leaves reactive, slowing your ability to lower DSAT.
 
 Sometimes the right thing to do here is a re-roll.
 

@@ -178,7 +178,7 @@ The keyboard I use has backtick where escape should be. In VIM this is super pai
 
 Slightly off topic, but if you made it this far, you probably care about small bags as well.
 
-It's taken me several tries, but [I've concluded](/td/irl#work-bag) I like the smallest bag possible. I use a 13" macbook pro laptop and an iPad Pro 10" and this is the perfect bag for me:
+It's taken me several tries, but [I've concluded](/irl#work-bag) I like the smallest bag possible. I use a 13" macbook pro laptop and an iPad Pro 10" and this is the perfect bag for me:
 
 https://www.amazon.com/gp/product/B07WNPPF72
 

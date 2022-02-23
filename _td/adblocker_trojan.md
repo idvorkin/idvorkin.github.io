@@ -77,4 +77,4 @@ I wondered if something edited the uBlock extension on disk. Turns out NPM packa
 
 _These mimicked the legitimate NodeJS-based database libraries, including jdb and db-json, but downloaded the malicious njRAT aka Bladabindi onto the user’s system._
 
-Here's a deep dive into how sophisticated the [attack can be]([https://blog.sonatype.com/bladabindi-njrat-rat-in-jdb.js-npm-malware).
+Here's a deep dive into how sophisticated the [attack can be](https://blog.sonatype.com/bladabindi-njrat-rat-in-jdb.js-npm-malware).
