@@ -38,6 +38,7 @@
     "update:fj": "python3 old_blog/transform_blogger_export.py export-all > _ig66/ig66-export.json",
     "back-links": "python3 build_back_links.py > back-links.json",
     "tsc": "tsc --watch --allowUmdGlobalAccess",
+    "broken_links": "scrapy runspider linkchecker.py -O ~/tmp/brokenlinks.csv && cat ~/tmp/brokenlinks.csv",
     "_comment": "Contains all commands"
   },
   "repository": {
