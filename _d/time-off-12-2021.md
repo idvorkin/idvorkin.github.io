@@ -1,6 +1,5 @@
 ---
 layout: post
-no-render-title: true
 title: Time off X-mas 2021
 ---
 
@@ -69,7 +68,7 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 
 ## Top Learnings
 
-- This year, reads almost [identical to last year](/td/time-off-12-2020). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
+- This year, reads almost [identical to last year](/d/time-off-12-2020). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
 - Balance, it's all about balance!
 - Prepare before you take time off so when you go in you don't need to spend much time vegetating.
 - Pre-writing your desires for time off is good and helps you hit it. Need to think through how to have the right goals, not too hard so you feel bad, but not so easy that you feel unsatisfied.
