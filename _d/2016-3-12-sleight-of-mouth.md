@@ -5,17 +5,17 @@ permalink: /sleight-of-mouth
 tags:
   - book-notes
   - emotional intelligence
-redirectfrom:
+redirect_from:
   - som
   - SoM
   - SOM
 ---
 
-Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. To experience the power of language, take any thing that is invisible to you, and name it. Now as it's given a name, see how percieve it, and become aware of it. Our mental models are frame, and we need help going from a 'problem frame' to a 'desired outcome frame' , a 'failure frame', to a 'feedback frame' and an 'impossible frame ' to an 'as if' frame.
+Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. To experience the power of language, take any thing that is invisible to you, and name it. Now as it's given a name, see how perceive it, and become aware of it. Our mental models are frame, and we need help going from a 'problem frame' to a 'desired outcome frame' , a 'failure frame', to a 'feedback frame' and an 'impossible frame ' to an 'as if' frame.
 
 The techniques encourage us to:
 
-- 'repunctuate' and 'rechunk'our perceptions
+- 're punctuate' and 'rechunk our perceptions
 - Identify and appreciate different perspectives and alternative models of the world
 - Discover the internal process by which we assess ‘reality', and through which we form and update our beliefs
 - Explore how we build the mental maps by which we form expectations, determine cause, and give meaning to our experiences.
@@ -24,15 +24,15 @@ The techniques encourage us to:
 - Understand the impact of language and beliefs on different levels of our experience
 - Become more aware of potential verbal 'thought viruses' and unspoken assumptions and presuppositions
 
-At the core, you have a limiting belief which is of the form: 'limiting beleif' because/means/causes 'outcome'
+At the core, you have a limiting belief which is of the form: 'limiting belief' because/means/causes 'outcome'
 
 Examples:
 
-| Subject (Noun)    | Judgement        | (because/means/causes/reason) Reason                      |
-| ----------------- | ---------------- | --------------------------------------------------------- |
-| I                 | can't be healthy | because my foot hurts                                     |
-| My Boss           | ignores me       | because he is going to fire more                          |
-| A speeding ticket | causes           | me to get poor because my insurance will be too expensive |
+| Subject (Noun)    | Judgment              | (because/means/causes/reason) Reason                      |
+| ----------------- | --------------------- | --------------------------------------------------------- |
+| My Boss           | ignores me            | because he is going to fire more                          |
+| A speeding ticket | causes                | me to get poor because my insurance will be too expensive |
+| My                | back has hurt forever | so I'll never be able to get better                       |
 
 From there you apply a series of questions/concepts (Page 318):
 
@@ -42,14 +42,14 @@ From there you apply a series of questions/concepts (Page 318):
 4. Chunk down - Apply the belief to a more specific situation.
 5. Chunk up - Apply to belief to a more abstract/generic situation.
 6. Analogy - Give a related metaphor that's more positive
-7. Change Frame Size - Change the time frame, or apply to more or less changing implication or beign more positive.
+7. Change Frame Size - Change the time frame, or apply to more or less changing implication or being more positive.
 8. Better outcome - What would be a better outcome
 9. Look through a different world view - What different model of the world would you need for this to be positive?
-10. Realitiy Strategy - How would you need to perceive the world for this belief to be true.
+10. Reality Strategy - How would you need to perceive the world for this belief to be true.
 11. Counter Example - Find an exception to the rule
 12. Hierarchy of Criteria - What criteria is more important then the one you are considering.
 13. Apply to Self - ??
-14. Meta frame - What other belief about this believfe could change or enrich the perception of this belief?
+14. Meta frame - What other belief about this belief could change or enrich the perception of this belief?
 
 {%include blob_image.html src="sleight-of-mouth.jpg" %}
 
@@ -202,7 +202,7 @@ Failure -> Goal Setting, Planning, Execution
 
 - By going up, we see if it's as bad and, if we can find something better to chunk down to.
 
-#### Chunking Laterally
+#### Analogy (chunk Laterally)
 
 - By finding an analogy, we compare to the new analogy, to better understand the current statement.
 
@@ -214,7 +214,7 @@ Failure -> Goal Setting, Planning, Execution
 - B and C come up with a metaphor for the critical element and B tells A.
   - Sample metaphors: Fantasy, Sports, War, Folks Tales, star trek.
 
-#### Punctuation and Repruncutation
+#### Punctuation and Punctuation
 
 - Framing is the punctuation of objective reality into our subjective reality.
 - See great examples from book that,that,is - with comma's periods and question marks
@@ -260,6 +260,10 @@ Criteria -> standard/evidence we use to make decisions.
 
 ### 9: Applying the patterns as a system.
 
+- Using multiple avenues to attack the problem.
+- Examples of using the tools against beliefs.
+- Also example of creating a positive "though virus"
+
 ### Bonus Levels of experience
 
 Our experiences filter through these layers.
@@ -272,7 +276,7 @@ Our experiences filter through these layers.
 
 However we blame stuff in the inverse triangle
 
-This is the fundamental attirbution error. For ourselves we attribute fault to our environment, but to others we attribute to their identity.
+This is the fundamental attribution error. For ourselves we attribute fault to our environment, but to others we attribute to their identity.
 
 Question - what is identity vs our beliefs and values (good Q for Dr. Raph).
 
