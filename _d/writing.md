@@ -118,15 +118,15 @@ You'll note, this blog is my implementaiton of evergreen notes.
 
 ### All Mental models are wrong.
 
-Mental models are simplifications of reality, and mental models conflict, and classifacation at the edges is painful.
+See [7 habits concepts](/7h-c0) Maps vs Terrain
 
-This is required as the world is infinitly complex, and we need simpler models to understand what is going on.
+Using your eyes you can look at the road outside your house. It has a color, a specific width, perhaps some potholes. This the terrain, the physical reality, but you won't see any of this google maps. Your eyes won't let you see the networks of sewers underneath your street. Fort that, there are maps that show the sewers, but those maps lack houses.
 
-Imagine you want to describe the real world, or the physical terrain to someone, so you give them a map. The type of map you provide depends on what you are trying to understand. Say you want to drive from point A to point B then you'd want a map of streets. Now say you wanted to install a wind turbine, in that case you wouldn't care much about streets, but you'd want a map of average winds.
+Maps are required as the world is infinitly complex, and we need simpler models to understand what is going on. A similar thing happens at the restaurant, your order of the menu which is a simplification of the food. And to understand the world, we need mental models, like the ones presented in most non-fiction books.
 
-Because the map is not the terrain, the map is wrong, and classifying the edges is hard.
+While maps are useful, they are not the terrain, in some dimensiosn the map is always wrong, and classifying the edges is hard.
 
-Wrong Section - An example of misinterpration - the [5 blind men and the elephant](https://en.wikisource.org/wiki/The_poems_of_John_Godfrey_Saxe/The_Blind_Men_and_the_Elephant)
+There will be several maps to understand the terrain. Like the street map and the sewer map. These maps will often disagree, or be non-overlapping, and that's completely fine each map has its own purpose.
 
 ### SWOT and SOAR - Exploring the space
 
