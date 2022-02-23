@@ -26,7 +26,7 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 - [Execution](#execution)
 - [Work the elephant: Daily Motivation](#work-the-elephant-daily-motivation)
 - [Shape the path: Make it easy on yourself](#shape-the-path-make-it-easy-on-yourself)
-- [Getting things done (GTD)](#getting-things-done-gtd)
+- [Getting things done](#getting-things-done)
 - [ABCDE prioritization and Important Not Urgent](#abcde-prioritization-and-important-not-urgent)
 
 <!-- vim-markdown-toc -->
@@ -94,7 +94,9 @@ _The resistance is the personification of the force that stops you from doing al
 
 **15.** **Technology is a terrible master:** Take back your time from enslaving technological addictions. Learn to often turn devices off and leave them off.
 
-### Getting things done ([GTD](/gtd))
+### Getting things done
+
+{%include summarize-page.html src='/gtd' %}
 
 ### ABCDE prioritization and Important Not Urgent
 
