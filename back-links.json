@@ -108,7 +108,7 @@
         "/process": "/upstream",
         "/procrastinate": "/frog",
         "/procrastination": "/frog",
-        "/productivity": "/produtive",
+        "/productivity": "/productive",
         "/psych-safety": "/insecure",
         "/psychological-safety": "/insecure",
         "/rage": "/anger",
@@ -126,6 +126,7 @@
         "/savor": "/happy",
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
+        "/som": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/taxes": "/money",
@@ -163,7 +164,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/7-habits": {
             "py/object": "__main__.Page",
@@ -210,13 +211,15 @@
             "file_path": "_site/7h-concepts.html",
             "outgoing_links": [
                 "/7-habits",
-                "/balance"
+                "/balance",
+                "/sleight-of-mouth"
             ],
             "incoming_links": [
-                "/7-habits"
+                "/7-habits",
+                "/writing"
             ],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 16000
         },
         "/90days": {
             "py/object": "__main__.Page",
@@ -237,7 +240,7 @@
                 "/writing"
             ],
             "redirect_url": "",
-            "doc_size": 43000
+            "doc_size": 44000
         },
         "/about": {
             "py/object": "__main__.Page",
@@ -248,7 +251,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/activation": {
             "py/object": "__main__.Page",
@@ -280,7 +283,7 @@
                 "/d/time-off-11-2021"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/addiction": {
             "py/object": "__main__.Page",
@@ -299,10 +302,11 @@
                 "/happy",
                 "/idle",
                 "/mind-at-work",
+                "/productive",
                 "/psychic-weight"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/ai-art": {
             "py/object": "__main__.Page",
@@ -315,7 +319,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -353,7 +357,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/anxiety": {
             "py/object": "__main__.Page",
@@ -377,7 +381,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/ar": {
             "py/object": "__main__.Page",
@@ -388,7 +392,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/balance": {
             "py/object": "__main__.Page",
@@ -431,7 +435,7 @@
                 "/idle"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/being-a-great-manager": {
             "py/object": "__main__.Page",
@@ -459,7 +463,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/bike": {
             "py/object": "__main__.Page",
@@ -477,7 +481,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/bmy": {
             "py/object": "__main__.Page",
@@ -495,7 +499,7 @@
                 "/job-hunt-stress"
             ],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/books-that-defined-me": {
             "py/object": "__main__.Page",
@@ -517,7 +521,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/brompton-toys": {
             "py/object": "__main__.Page",
@@ -543,7 +547,7 @@
                 "/d/time-off-11-2021"
             ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/cache": {
             "py/object": "__main__.Page",
@@ -557,7 +561,7 @@
                 "/job"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/Canadian-Spotting": {
             "py/object": "__main__.Page",
@@ -570,7 +574,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/cert-error": {
             "py/object": "__main__.Page",
@@ -595,7 +599,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/coaching": {
             "py/object": "__main__.Page",
@@ -612,14 +616,17 @@
                 "/siy"
             ],
             "incoming_links": [
+                "/being-a-great-manager",
                 "/first-understand",
                 "/insecure",
+                "/job",
                 "/manager-book",
+                "/moments-at-work",
                 "/prompts",
                 "/writing"
             ],
             "redirect_url": "",
-            "doc_size": 26000
+            "doc_size": 27000
         },
         "/coe": {
             "py/object": "__main__.Page",
@@ -632,6 +639,7 @@
                 "/amazon",
                 "/fail",
                 "/manager-book",
+                "/switch",
                 "/writing"
             ],
             "redirect_url": "",
@@ -669,7 +677,7 @@
                 "/facebook"
             ],
             "redirect_url": "",
-            "doc_size": 24000
+            "doc_size": 25000
         },
         "/curious": {
             "py/object": "__main__.Page",
@@ -695,7 +703,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/d/2010-2-15-2016-Misc-Uncategorized": {
             "py/object": "__main__.Page",
@@ -706,7 +714,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 23000
+            "doc_size": 24000
         },
         "/d/2015-11-18-Outsourcing": {
             "py/object": "__main__.Page",
@@ -717,7 +725,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/d/2016-02-03-positive-computing-survey": {
             "py/object": "__main__.Page",
@@ -730,7 +738,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/d/2016-05-09-lost-interview": {
             "py/object": "__main__.Page",
@@ -741,7 +749,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/d/2016-09-18-transportation-as-a-service": {
             "py/object": "__main__.Page",
@@ -763,7 +771,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/d/2016-2-15-Seth-Godin-Notes": {
             "py/object": "__main__.Page",
@@ -787,7 +795,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/d/2016-7-14-Customer-Service": {
             "py/object": "__main__.Page",
@@ -798,7 +806,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/d/2016-8-1-Twelve-Tech-Forces": {
             "py/object": "__main__.Page",
@@ -831,7 +839,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/d/2017-11-04-clean-architecture": {
             "py/object": "__main__.Page",
@@ -839,10 +847,14 @@
             "title": "CLEAN ARCHITECTURE",
             "description": "Architecture is the highest level of abstraction that models a software system. The architecture is composed from modules, which are composed of objects, which are composed of functions. Design is applied to each of these layers, and when executed successfully results in a system that is easy to build and maintain. Clean architecture discusses designs at a high level, which like architecture is highly useful. On the topic of architecture, the software industry’s use of the word architect is confusing. The construction analog of a “software architect” is a “structural engineer” and the software equivalent of a “construction architect” is a product manager.\n\n",
             "file_path": "_site/d/2017-11-04-clean-architecture.html",
-            "outgoing_links": [],
-            "incoming_links": [],
+            "outgoing_links": [
+                "/design"
+            ],
+            "incoming_links": [
+                "/design"
+            ],
             "redirect_url": "",
-            "doc_size": 50000
+            "doc_size": 47000
         },
         "/d/2018-02-10-you-do-want-your-favorite-app-to-be-a-service": {
             "py/object": "__main__.Page",
@@ -853,7 +865,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/d/2018-09-23-mind-lines": {
             "py/object": "__main__.Page",
@@ -864,7 +876,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/d/apollo": {
             "py/object": "__main__.Page",
@@ -875,7 +887,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/d/habits": {
             "py/object": "__main__.Page",
@@ -891,13 +903,13 @@
                 "/idle",
                 "/manager-book",
                 "/operating-manual",
-                "/produtive",
+                "/productive",
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/switch"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/d/management_interviews": {
             "py/object": "__main__.Page",
@@ -919,7 +931,7 @@
             "outgoing_links": [
                 "/addiction",
                 "/d/habits",
-                "/first-things-first",
+                "/end-in-mind",
                 "/frog",
                 "/gtd",
                 "/magic",
@@ -931,25 +943,31 @@
                 "/fail",
                 "/first-things-first",
                 "/frog",
+                "/productive",
                 "/psychic-weight",
                 "/timeoff"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/d/time-off-02-2022": {
             "py/object": "__main__.Page",
             "url": "/d/time-off-02-2022",
-            "title": "TIME OFF MID WINTER BREAK.",
+            "title": "TIME OFF MID WINTER BREAK 2022",
             "description": "It’mid winter break and I’ve got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
             "file_path": "_site/d/time-off-02-2022.html",
             "outgoing_links": [
+                "/d/time-off-02-2022",
                 "/happy",
-                "/timeoff"
+                "/productive",
+                "/sleight-of-mouth",
+                "/switch"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/d/time-off-02-2022"
+            ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 17000
         },
         "/d/time-off-11-2021": {
             "py/object": "__main__.Page",
@@ -965,7 +983,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/d/time-off-12-2020": {
             "py/object": "__main__.Page",
@@ -982,7 +1000,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/d/time-off-12-2021": {
             "py/object": "__main__.Page",
@@ -1000,7 +1018,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
@@ -1011,7 +1029,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/death": {
             "py/object": "__main__.Page",
@@ -1026,7 +1044,7 @@
                 "/psychic-weight"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/debug": {
             "py/object": "__main__.Page",
@@ -1037,7 +1055,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 9000
+            "doc_size": 10000
         },
         "/decisive": {
             "py/object": "__main__.Page",
@@ -1055,7 +1073,7 @@
                 "/pride"
             ],
             "redirect_url": "",
-            "doc_size": 39000
+            "doc_size": 40000
         },
         "/defi": {
             "py/object": "__main__.Page",
@@ -1066,7 +1084,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 28000
+            "doc_size": 29000
         },
         "/delegate": {
             "py/object": "__main__.Page",
@@ -1081,7 +1099,7 @@
                 "/first-things-first"
             ],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/depression": {
             "py/object": "__main__.Page",
@@ -1109,6 +1127,23 @@
                 "/anger"
             ],
             "redirect_url": "",
+            "doc_size": 19000
+        },
+        "/design": {
+            "py/object": "__main__.Page",
+            "url": "/design",
+            "title": "SOFTWARE DESIGN AND ARCHITECTURE",
+            "description": "Software design is important. Here are my notes\n\n",
+            "file_path": "_site/design.html",
+            "outgoing_links": [
+                "/d/2017-11-04-clean-architecture",
+                "/td/cloud-first-applications",
+                "/testing"
+            ],
+            "incoming_links": [
+                "/d/2017-11-04-clean-architecture"
+            ],
+            "redirect_url": "",
             "doc_size": 18000
         },
         "/diet": {
@@ -1126,7 +1161,7 @@
                 "/sharpen-the-saw"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/dip": {
             "py/object": "__main__.Page",
@@ -1142,7 +1177,7 @@
                 "/gtd"
             ],
             "redirect_url": "",
-            "doc_size": 25000
+            "doc_size": 26000
         },
         "/docker": {
             "py/object": "__main__.Page",
@@ -1153,7 +1188,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/dsat": {
             "py/object": "__main__.Page",
@@ -1176,7 +1211,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/emotional-health": {
             "py/object": "__main__.Page",
@@ -1197,7 +1232,7 @@
                 "/siy"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/end-in-mind": {
             "py/object": "__main__.Page",
@@ -1213,10 +1248,11 @@
             ],
             "incoming_links": [
                 "/7-habits",
-                "/produtive"
+                "/d/resistance",
+                "/productive"
             ],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/enemy": {
             "py/object": "__main__.Page",
@@ -1232,7 +1268,7 @@
                 "/chapters"
             ],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/essentialism": {
             "py/object": "__main__.Page",
@@ -1289,7 +1325,7 @@
                 "/todo_enjoy"
             ],
             "redirect_url": "",
-            "doc_size": 27000
+            "doc_size": 28000
         },
         "/facebook": {
             "py/object": "__main__.Page",
@@ -1304,7 +1340,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 25000
+            "doc_size": 26000
         },
         "/fail": {
             "py/object": "__main__.Page",
@@ -1319,7 +1355,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/first-things-first": {
             "py/object": "__main__.Page",
@@ -1341,12 +1377,11 @@
             "incoming_links": [
                 "/7-habits",
                 "/90days",
-                "/d/resistance",
                 "/delegate",
                 "/frog"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/first-understand": {
             "py/object": "__main__.Page",
@@ -1368,7 +1403,7 @@
                 "/sell"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/frog": {
             "py/object": "__main__.Page",
@@ -1388,12 +1423,13 @@
                 "/d/resistance",
                 "/first-things-first",
                 "/gtd",
+                "/productive",
                 "/psychic-weight",
                 "/td/time-off-3-2020",
                 "/timeoff"
             ],
             "redirect_url": "",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/getting-to-yes": {
             "py/object": "__main__.Page",
@@ -1410,17 +1446,17 @@
                 "/curious",
                 "/getting-to-yes-with-yourself",
                 "/happy",
-                "/produtive",
+                "/productive",
                 "/sell"
             ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/getting-to-yes-with-yourself": {
             "py/object": "__main__.Page",
             "url": "/getting-to-yes-with-yourself",
             "title": "GETTING TO YES WITH YOURSELF",
-            "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n\n\n\n\n  1) Put yourself in your shoes ☑\n  2) Develop your inner BATNA ☑\n  3) Reframe your picture ☐\n  4) Stay in the zone ☐\n  5) Respect them even if ☐\n  6) Give and Recieve ☐\n  7) The 3 wins ☑\n\n\n\n\n\n1) Put yourself in your shoes ☑\n\n\n  Figure out what your elephant REALLY wants (Switch)\n  Seek first to understand yourself (7H)\n  When you judge yourself, you shutdown and can’t find what you really want\n  Acceptance induces safety, and only from safety can you find what you really want\n  See yourself form the balcony\n    \n      Respond instead of reacting.\n      Going to Balcony == Be Mindful, Self Aware and Objective\n      Choose your response, but it’s a two sided stick and you get the consequences.\n      Reaction:\n        \n          Feels good, but need to realize there is a VERY negative consequence.\n          Negative Reactions: Attack (Win:Lose) -> Accommodate (Lose:Win) -> Avoid (Lose:Lose)\n        \n      \n      Use self-awareness to catch your desire to react\n        \n          Need to build self-awareness muscle (SIY)\n          Practice mindfulness (and have a grounding spot)\n          Practice mindfulness before event to make it easier.\n        \n      \n    \n  \n  Listen with Empathy\n    \n      80% of thoughts are negative.\n      Observe self: Detached view of a scientist.\n      Listen to self: What it feels like to be you.\n      Listening to self exercise\n        \n          Don’t judge, or they will not feel safe, and won’t talk.\n          Name your neurosis, and sit them down at a table, and listen to them non-judgementally\n          Because “negative emotions are safe to speak” they get less power, and have less desire to attack at “bad” times.\n          Don’t just listen, understand the cause, and what you can do to help.\n          Be curious, ask yourself, isn’t that interesting. Ask the neurosis, why is that.\n        \n      \n      This is an opportunity to learn physical self awareness, to help notice your emotions.\n      Huge benefit, your mind is more clear, and you silence the self to concentrate and get into flow.\n    \n  \n  Uncover your needs\n    \n      Your elephant is non-verbal, negative emotions are it’s mode of communicating your needs.\n      Dig hard for your needs, don’t settle for a position, but why, what do you really want. What is done. (XREF: Essentialisim)\n      Magic Question Why? Why? Why?\n      Deepest needs: Happiness: Protection/Safety and Love/Connection\n    \n  \n  From Self Judgment to Self Understanding\n    \n      Before fighting with others, need to make sure you TRUELY know what you want.\n      Accepting yourself for who you are is NOT a cop out. Acceptance produces safety, which lets us digg deater.\n    \n  \n\n\n2) Develop your inner BATNA ☑\n\nThe ideas in this chapter are great, but I think connecting the concepts to inner BATNA is ackward. Thus my summary doesn’t track well with the books\n\n\n  A cross between 7H: Be Proactive, AND take responsibility for meeting your own needs.\n  When you COMMIT to unconditionally take care of your needs, you have all the power.\n    \n      SWITCH: Your elephant can rest assured it will be fed and cared for regardless of what’s going on externally.\n      This gives you much more psychic space in your relationships, making them better relationships.\n      SIY: Grandmother mind - you are your own best grandma.\n    \n  \n  Responsibility holds Power VS blame gives it away.\n  Take responsibility for what you’ve got, and make the most of it - DO NOT BLAME Life (welcome to Holland).\n  Focus on what you can do to make things better, NOT the fact that you screwed something up in the past.\n  \n    In a relationship, focus on what YOU CAN DO going forward in the relationship, not on blaming the other person. Doing this:\n\n    \n      Gives clarity to your needs in the relationships.\n      Gives “psychic space” for other party in relationship\n      Lets you be objectives about your needs, and your expectations from other party.\n    \n  \n  Own your life\n    \n      Need self-understanding and self-responsibility\n        \n          Just self-understanding => self-pity\n          Just self-responsibility => self-blame.\n        \n      \n      Self blame => Past looking, I WAS a failure.\n      Self responsibility => Forward looking what CAN I do to make this successful?\n      (really it’s the next section, where ‘self/life’ is the relationship)\n    \n  \n  Own your relations\n    \n      When you point a finger at someone, 3 fingers point back at you.\n      All relationships are two ways streets, if there’s a problem, you own a CHUNK.\n      Leave the blame territory, and enter the how do we improve this in the future territory.\n      Know what you bring to the relationship, and what is negotiable and non-negotiable from the other party\n      Great Anecdote on divorce requirements.\n    \n  \n  Own your needs\n    \n      BATNA, how you satisfy your needs in case you can’t get a WIN/WIN?\n      Inner BATNA - know YOU WILL ALWAYS meet your needs, so don’t have to worry.\n      Gives you confidence that you don’t need to be desperate.\n    \n  \n  From blame to responsibility\n    \n      Touching story about author’s dying daughter Gabi, and how hard it was to deal with doctors.\n      Two top changes:\n        \n          Needed to stop expecting things from doctor’s they could provide for themselves, and let dr’s bring only what they needed to bring, their expertise.\n          Needed to stop blaming life for a bum deal, and instead take responsibility for making the most out of what they had.\n        \n      \n    \n  \n\n\n3) Reframe your picture ☐\n\nAbundance not Scarcity: A rising tide raises all boats\n\nExpecations are a self fulling prophecy. Believe the world good or bad, and that’s how you’ll interpret it, and that’s how it will become\n\n\n  Remember your connection to life\n  Make your own happiness\n  Appreciate life’s lessons\n  From unfriendly to friendly.\n\n\n4) Stay in the zone ☐\n\n\n  Learn to let go\n  Accept the past\n  Trust the future\n  Embrace the present\n  From resistance to acceptance\n\n\n5) Respect them even if ☐\n\n\n  Put yourself in thier shoes\n  Expand your circle of respect\n  Respect them even if they reject you\n  From exclusion to inclusion\n\n\n6) Give and Recieve ☐\n\n\n  Give for mutual gain\n  Give for pleasure and meaning\n  Give what you are here to give\n  From Win/Lose to Win/Win/Win\n\n\n7) The 3 wins ☑\n\n\n  How do we get what we want, while meeting the needs of others?\n  The better we meet our own needs, the better we can meet the needs of others\n  We choose to be our own ally or our enemy. and we choose to be the ally or enemy in our relationships.\n  A win within\n    \n      I will give myself the most trouble today. I stand in the way of my goals.\n      Do the practices in this book, to be satisified with yourself\n    \n  \n  A win with others\n    \n      Every thing you do to get to yes with yourself, makes it easier to get to yes with others\n    \n  \n  A win for the whole\n    \n      When you succeed with yourself, and with others, then the whole world benefits\n    \n  \n  Winning the game of life\n    \n      It’s about creating inner satisfaction, which makes your life and relationships better. It’s hard but worth it.\n    \n  \n\n\nThis is a summary of Getting to yes with yourself\n\n\n  \n    \n    \n      \n      \n    \n    \n  \n\n\n",
+            "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n",
             "file_path": "_site/getting-to-yes-with-yourself.html",
             "outgoing_links": [
                 "/curious",
@@ -1432,7 +1468,7 @@
                 "/depression"
             ],
             "redirect_url": "",
-            "doc_size": 27000
+            "doc_size": 21000
         },
         "/goals": {
             "py/object": "__main__.Page",
@@ -1469,7 +1505,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/gtd": {
             "py/object": "__main__.Page",
@@ -1495,7 +1531,7 @@
                 "/psychic-weight"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/happy": {
             "py/object": "__main__.Page",
@@ -1523,7 +1559,7 @@
                 "/timeoff"
             ],
             "redirect_url": "",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/hobby": {
             "py/object": "__main__.Page",
@@ -1542,22 +1578,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 16000
-        },
-        "/Human-Meetings": {
-            "py/object": "__main__.Page",
-            "url": "/Human-Meetings",
-            "title": "FEELINGS/HUMAN MEETINGS",
-            "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
-            "file_path": "_site/Human-Meetings.html",
-            "outgoing_links": [],
-            "incoming_links": [
-                "/being-a-great-manager",
-                "/eulogy",
-                "/job"
-            ],
-            "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 17000
         },
         "/humans-are-underrated": {
             "py/object": "__main__.Page",
@@ -1570,7 +1591,7 @@
                 "/books-that-defined-me"
             ],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/idle": {
             "py/object": "__main__.Page",
@@ -1596,7 +1617,7 @@
                 "/psychic-weight"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/Immutable-Laws-Of-Hard": {
             "py/object": "__main__.Page",
@@ -1607,7 +1628,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 9000
+            "doc_size": 10000
         },
         "/insecure": {
             "py/object": "__main__.Page",
@@ -1624,7 +1645,7 @@
                 "/depression"
             ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/insomnia": {
             "py/object": "__main__.Page",
@@ -1638,7 +1659,7 @@
                 "/depression"
             ],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/interviewsarehard": {
             "py/object": "__main__.Page",
@@ -1649,7 +1670,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/irl": {
             "py/object": "__main__.Page",
@@ -1667,7 +1688,7 @@
                 "/physical-health"
             ],
             "redirect_url": "",
-            "doc_size": 43000
+            "doc_size": 44000
         },
         "/job": {
             "py/object": "__main__.Page",
@@ -1691,7 +1712,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/job-hunt-stress": {
             "py/object": "__main__.Page",
@@ -1712,7 +1733,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/joy": {
             "py/object": "__main__.Page",
@@ -1730,7 +1751,7 @@
                 "/hobby"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/like-switch": {
             "py/object": "__main__.Page",
@@ -1761,7 +1782,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 17000
         },
         "/manager-book": {
             "py/object": "__main__.Page",
@@ -1774,7 +1795,6 @@
                 "/being-a-great-manager",
                 "/books-that-defined-me",
                 "/coaching",
-                "/coaching.md",
                 "/coe",
                 "/comp",
                 "/d/habits",
@@ -1833,7 +1853,7 @@
                 "/shame"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/mermaid": {
             "py/object": "__main__.Page",
@@ -1855,7 +1875,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/mind-at-work": {
             "py/object": "__main__.Page",
@@ -1872,7 +1892,7 @@
                 "/timeoff"
             ],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/mind-monsters": {
             "py/object": "__main__.Page",
@@ -1893,7 +1913,7 @@
                 "/siy"
             ],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/ml": {
             "py/object": "__main__.Page",
@@ -1911,7 +1931,7 @@
                 "/td/stats"
             ],
             "redirect_url": "",
-            "doc_size": 41000
+            "doc_size": 42000
         },
         "/moments": {
             "py/object": "__main__.Page",
@@ -1928,7 +1948,7 @@
                 "/moments-at-work"
             ],
             "redirect_url": "",
-            "doc_size": 20000
+            "doc_size": 21000
         },
         "/moments-at-work": {
             "py/object": "__main__.Page",
@@ -1947,7 +1967,7 @@
                 "/moments"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/money": {
             "py/object": "__main__.Page",
@@ -1964,7 +1984,7 @@
                 "/td/time-off-3-2020"
             ],
             "redirect_url": "",
-            "doc_size": 29000
+            "doc_size": 30000
         },
         "/mortality-software": {
             "py/object": "__main__.Page",
@@ -1979,7 +1999,7 @@
                 "/balance"
             ],
             "redirect_url": "",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/nlp": {
             "py/object": "__main__.Page",
@@ -1995,7 +2015,7 @@
                 "/tools"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/operating-manual": {
             "py/object": "__main__.Page",
@@ -2027,7 +2047,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 21000
+            "doc_size": 22000
         },
         "/pandas": {
             "py/object": "__main__.Page",
@@ -2041,7 +2061,7 @@
                 "/ml"
             ],
             "redirect_url": "",
-            "doc_size": 20000
+            "doc_size": 21000
         },
         "/parkinson": {
             "py/object": "__main__.Page",
@@ -2061,7 +2081,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/physical-health": {
             "py/object": "__main__.Page",
@@ -2084,7 +2104,7 @@
                 "/tech-health-toys"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/pride": {
             "py/object": "__main__.Page",
@@ -2106,22 +2126,27 @@
                 "/psychic-weight"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 18000
         },
-        "/produtive": {
+        "/productive": {
             "py/object": "__main__.Page",
-            "url": "/produtive",
+            "url": "/productive",
             "title": "PRODUCTIVE",
             "description": "At the core of balance, energy, wlb, habits is being productive.\n\n",
-            "file_path": "_site/produtive.html",
+            "file_path": "_site/productive.html",
             "outgoing_links": [
+                "/addiction",
                 "/d/habits",
+                "/d/resistance",
                 "/end-in-mind",
+                "/frog",
                 "/getting-to-yes"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/d/time-off-02-2022"
+            ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/prompts": {
             "py/object": "__main__.Page",
@@ -2138,7 +2163,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 26000
+            "doc_size": 27000
         },
         "/psychic-weight": {
             "py/object": "__main__.Page",
@@ -2168,7 +2193,7 @@
                 "/idle"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/quip": {
             "py/object": "__main__.Page",
@@ -2179,7 +2204,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/reflect-tool": {
             "py/object": "__main__.Page",
@@ -2203,7 +2228,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/roblox-dev": {
             "py/object": "__main__.Page",
@@ -2214,7 +2239,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/save-the-soup": {
             "py/object": "__main__.Page",
@@ -2227,7 +2252,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/save-the-souse": {
             "py/object": "__main__.Page",
@@ -2240,7 +2265,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/sell": {
             "py/object": "__main__.Page",
@@ -2255,7 +2280,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/shame": {
             "py/object": "__main__.Page",
@@ -2276,7 +2301,7 @@
                 "/psychic-weight"
             ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/sharpen-the-saw": {
             "py/object": "__main__.Page",
@@ -2298,7 +2323,7 @@
                 "/physical-health"
             ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/siy": {
             "py/object": "__main__.Page",
@@ -2326,7 +2351,7 @@
                 "/td/time-off-3-2020"
             ],
             "redirect_url": "",
-            "doc_size": 51000
+            "doc_size": 52000
         },
         "/sleeping-bag-sacrifies": {
             "py/object": "__main__.Page",
@@ -2339,18 +2364,21 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/sleight-of-mouth": {
             "py/object": "__main__.Page",
             "url": "/sleight-of-mouth",
             "title": "SLEIGHT OF MOUTH",
-            "description": "Sleight of mouth is about how to cause cognitive reframes.\n\n",
+            "description": "Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. To experience the power of language, take any thing that is invisible to you, and name it. Now as it’s given a name, see how perceive it, and become aware of it. Our mental models are frame, and we need help going from a ‘problem frame’ to a ‘desired outcome frame’ , a ‘failure frame’, to a ‘feedback frame’ and an ‘impossible frame ‘ to an ‘as if’ frame.\n\n",
             "file_path": "_site/sleight-of-mouth.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/7h-concepts",
+                "/d/time-off-02-2022"
+            ],
             "redirect_url": "",
-            "doc_size": 18000
+            "doc_size": 24000
         },
         "/snjb": {
             "py/object": "__main__.Page",
@@ -2363,7 +2391,7 @@
                 "/d/time-off-11-2021"
             ],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/software-leadership-roles": {
             "py/object": "__main__.Page",
@@ -2379,7 +2407,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/strategy": {
             "py/object": "__main__.Page",
@@ -2423,7 +2451,7 @@
                 "/dsat"
             ],
             "redirect_url": "",
-            "doc_size": 26000
+            "doc_size": 27000
         },
         "/switch": {
             "py/object": "__main__.Page",
@@ -2432,13 +2460,15 @@
             "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
             "file_path": "_site/switch.html",
             "outgoing_links": [
+                "/coe",
                 "/d/habits"
             ],
             "incoming_links": [
+                "/d/time-off-02-2022",
                 "/first-things-first"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 19000
         },
         "/synergize": {
             "py/object": "__main__.Page",
@@ -2453,7 +2483,7 @@
                 "/7-habits"
             ],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/tags": {
             "py/object": "__main__.Page",
@@ -2482,7 +2512,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/td/alexa-skill": {
             "py/object": "__main__.Page",
@@ -2493,7 +2523,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/td/back_ref": {
             "py/object": "__main__.Page",
@@ -2504,7 +2534,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/td/better-security-design": {
             "py/object": "__main__.Page",
@@ -2515,7 +2545,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 21000
+            "doc_size": 22000
         },
         "/td/cloud-first-applications": {
             "py/object": "__main__.Page",
@@ -2526,11 +2556,11 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/amazon",
-                "/manager-book",
-                "/td/design"
+                "/design",
+                "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/td/data-systems": {
             "py/object": "__main__.Page",
@@ -2543,23 +2573,7 @@
                 "/amazon"
             ],
             "redirect_url": "",
-            "doc_size": 19000
-        },
-        "/td/design": {
-            "py/object": "__main__.Page",
-            "url": "/td/design",
-            "title": "DESIGN",
-            "description": "Software design is important. Here are my notes\n\n",
-            "file_path": "_site/td/design.html",
-            "outgoing_links": [
-                "/td/cloud-first-applications"
-            ],
-            "incoming_links": [
-                "/amazon",
-                "/testing"
-            ],
-            "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 20000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
@@ -2570,7 +2584,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/td/fix_ssh": {
             "py/object": "__main__.Page",
@@ -2592,7 +2606,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 25000
+            "doc_size": 26000
         },
         "/td/ios": {
             "py/object": "__main__.Page",
@@ -2605,7 +2619,7 @@
                 "/writing"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/td/ios-nomad": {
             "py/object": "__main__.Page",
@@ -2631,7 +2645,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/td/minecraft": {
             "py/object": "__main__.Page",
@@ -2642,7 +2656,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/td/mosh": {
             "py/object": "__main__.Page",
@@ -2653,7 +2667,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/td/private_web_site": {
             "py/object": "__main__.Page",
@@ -2686,7 +2700,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/td/stats": {
             "py/object": "__main__.Page",
@@ -2699,7 +2713,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/td/streaks": {
             "py/object": "__main__.Page",
@@ -2710,7 +2724,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/td/time-off-3-2020": {
             "py/object": "__main__.Page",
@@ -2729,7 +2743,7 @@
                 "/timeoff"
             ],
             "redirect_url": "",
-            "doc_size": 27000
+            "doc_size": 28000
         },
         "/td/usbtech": {
             "py/object": "__main__.Page",
@@ -2740,7 +2754,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/td/virtual-desktops": {
             "py/object": "__main__.Page",
@@ -2751,7 +2765,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/td/visual-vocabulary": {
             "py/object": "__main__.Page",
@@ -2786,7 +2800,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 9000
+            "doc_size": 10000
         },
         "/tech-health-toys": {
             "py/object": "__main__.Page",
@@ -2802,20 +2816,7 @@
                 "/physical-health"
             ],
             "redirect_url": "",
-            "doc_size": 13000
-        },
-        "/testing": {
-            "py/object": "__main__.Page",
-            "url": "/testing",
-            "title": "TESTING AND QUALITY",
-            "description": "If it’s not tested, it doesn’t work’.’ When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you’ve got more work to do\n\n",
-            "file_path": "_site/testing.html",
-            "outgoing_links": [
-                "/td/design"
-            ],
-            "incoming_links": [],
-            "redirect_url": "",
-            "doc_size": 18000
+            "doc_size": 14000
         },
         "/The-Genesis-Node": {
             "py/object": "__main__.Page",
@@ -2830,7 +2831,7 @@
                 "/eulogy"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/the-recruiter-does-not-think-you-are-hot": {
             "py/object": "__main__.Page",
@@ -2841,7 +2842,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/timeoff": {
             "py/object": "__main__.Page",
@@ -2859,7 +2860,6 @@
                 "/td/time-off-3-2020"
             ],
             "incoming_links": [
-                "/d/time-off-02-2022",
                 "/d/time-off-11-2021",
                 "/d/time-off-12-2020",
                 "/d/time-off-12-2021",
@@ -2867,7 +2867,7 @@
                 "/parkinson"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/todo_enjoy": {
             "py/object": "__main__.Page",
@@ -2882,7 +2882,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/tools": {
             "py/object": "__main__.Page",
@@ -2895,7 +2895,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 41000
+            "doc_size": 42000
         },
         "/touching": {
             "py/object": "__main__.Page",
@@ -2908,7 +2908,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/toysfortots": {
             "py/object": "__main__.Page",
@@ -2922,7 +2922,7 @@
                 "/eulogy"
             ],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/upstream": {
             "py/object": "__main__.Page",
@@ -2935,7 +2935,7 @@
                 "/first-things-first"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/vim-for-writing": {
             "py/object": "__main__.Page",
@@ -2969,7 +2969,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/warm": {
             "py/object": "__main__.Page",
@@ -2982,7 +2982,7 @@
                 "/bike"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/welcome-to-holland": {
             "py/object": "__main__.Page",
@@ -3009,7 +3009,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/what-makes-a-leader": {
             "py/object": "__main__.Page",
@@ -3023,7 +3023,7 @@
                 "/siy"
             ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/why-is-no-one-referring": {
             "py/object": "__main__.Page",
@@ -3052,7 +3052,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/writing": {
             "py/object": "__main__.Page",
@@ -3061,6 +3061,7 @@
             "description": "Useful writing tells people something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation.\n\n",
             "file_path": "_site/writing.html",
             "outgoing_links": [
+                "/7h-concepts",
                 "/90days",
                 "/amazon",
                 "/coaching",
@@ -3077,7 +3078,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 33000
+            "doc_size": 34000
         }
     }
 }
