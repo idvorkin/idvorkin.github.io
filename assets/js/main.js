@@ -126,6 +126,7 @@ function MakeBackLinkHTML(url_info) {
 }
 async function AddLinksToPage(allUrls) {
     var _a, _b;
+    // TODO handle redirects
     var my_path = new URL(document.URL).pathname;
     const backlinks = (_a = allUrls[my_path]) === null || _a === void 0 ? void 0 : _a.incoming_links;
     const frontlinks = (_b = allUrls[my_path]) === null || _b === void 0 ? void 0 : _b.outgoing_links;
@@ -175,13 +176,46 @@ async function AddLinksToPage(allUrls) {
         }
     }
 }
+function make_html_summary_link(link, url_info) {
+    const attribution = `From <a href='${url_info.url}'> ${url_info.title}</a>.`;
+    return `<div>  
+        <i> ${url_info.description}</i> ${attribution}
+    </div>`;
+}
+function make_html_summary_link_error(link, error) {
+    return `<span class='text-danger'>Error: Invalid link for ${link.attr("href")} ${error} </span>`;
+}
+function AddSummarysToPage(backLinks) {
+    const summary_links = $.makeArray($(".summary-link"));
+    summary_links.forEach(raw_link => {
+        const link = $(raw_link);
+        try {
+            console.log(link.attr("href"));
+            let ref = link.attr("href");
+            // Resolve redirect
+            if (backLinks.redirects[ref] != undefined) {
+                ref = backLinks.redirects[ref];
+            }
+            // Look up in url info
+            if (backLinks.url_info[ref] == undefined) {
+                link.html(make_html_summary_link_error(link, "not found in url info"));
+                return;
+            }
+            link.html(make_html_summary_link(link, backLinks.url_info[ref]));
+        }
+        catch (e) {
+            link.html(make_html_summary_link_error(link, e));
+        }
+    });
+}
 async function add_link_loader() {
     AddLinksToPage(await get_link_info());
+    AddSummarysToPage(await get_back_links());
 }
-let cached_linked_info = null;
-async function get_link_info() {
-    if (cached_linked_info != null) {
-        return cached_linked_info;
+let cached_back_links = null;
+async function get_back_links() {
+    if (cached_back_links != null) {
+        return cached_back_links;
     }
     const url = window.location.href;
     const prodPrefix = "https://idvork.in";
@@ -194,9 +228,12 @@ async function get_link_info() {
     else {
         backlinks_url = "/back-links.json";
     }
-    const urlJSON = (await $.getJSON(backlinks_url));
-    cached_linked_info = urlJSON.url_info;
-    return cached_linked_info;
+    const backlinksJson = (await $.getJSON(backlinks_url));
+    cached_back_links = backlinksJson;
+    return cached_back_links;
+}
+async function get_link_info() {
+    return (await get_back_links()).url_info;
 }
 function search() {
     $("#autocomplete-search-box-button").click();
