@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Productive"
-permalink: /produtive
+permalink: /productive
 redirect_from:
   - /productivity
 ---
@@ -54,6 +54,12 @@ At the core of balance, energy, wlb, habits is being productive.
 
 ### Addicitions
 
+{%include summarize-page.html src='/addiction %}
+
 ### Procrastination
 
+{%include summarize-page.html src='/frog %}
+
 ### The Resistance
+
+{%include summarize-page.html src='/resistance %}
