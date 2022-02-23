@@ -14,6 +14,7 @@
         "/7habits": "/7-habits",
         "/90": "/90days",
         "/activation-energy": "/activation",
+        "/addictions": "/addiction",
         "/affirm": "/affirmations",
         "/affirmations": "/affirmations",
         "/alexa-charity": "/toysfortots",
@@ -251,7 +252,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/activation": {
             "py/object": "__main__.Page",
@@ -303,7 +304,8 @@
                 "/idle",
                 "/mind-at-work",
                 "/productive",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/timeoff"
             ],
             "redirect_url": "",
             "doc_size": 15000
@@ -357,7 +359,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/anxiety": {
             "py/object": "__main__.Page",
@@ -435,7 +437,7 @@
                 "/idle"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/being-a-great-manager": {
             "py/object": "__main__.Page",
@@ -481,7 +483,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/bmy": {
             "py/object": "__main__.Page",
@@ -561,7 +563,7 @@
                 "/job"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/Canadian-Spotting": {
             "py/object": "__main__.Page",
@@ -714,7 +716,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 24000
+            "doc_size": 23000
         },
         "/d/2015-11-18-Outsourcing": {
             "py/object": "__main__.Page",
@@ -738,7 +740,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/d/2016-05-09-lost-interview": {
             "py/object": "__main__.Page",
@@ -771,7 +773,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/d/2016-2-15-Seth-Godin-Notes": {
             "py/object": "__main__.Page",
@@ -909,7 +911,7 @@
                 "/switch"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/d/management_interviews": {
             "py/object": "__main__.Page",
@@ -978,10 +980,13 @@
             "outgoing_links": [
                 "/adblocker-trojan",
                 "/brython",
+                "/ig66/591",
                 "/snjb",
                 "/timeoff"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/d/time-off-12-2021"
+            ],
             "redirect_url": "",
             "doc_size": 17000
         },
@@ -998,7 +1003,9 @@
                 "/pandas",
                 "/timeoff"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/d/time-off-12-2021"
+            ],
             "redirect_url": "",
             "doc_size": 20000
         },
@@ -1011,9 +1018,9 @@
             "outgoing_links": [
                 "/activation",
                 "/balance",
+                "/d/time-off-11-2021",
+                "/d/time-off-12-2020",
                 "/happy",
-                "/td/time-off-12-2020",
-                "/time-off-11-2021",
                 "/timeoff"
             ],
             "incoming_links": [],
@@ -1141,7 +1148,8 @@
                 "/testing"
             ],
             "incoming_links": [
-                "/d/2017-11-04-clean-architecture"
+                "/d/2017-11-04-clean-architecture",
+                "/testing"
             ],
             "redirect_url": "",
             "doc_size": 18000
@@ -1204,7 +1212,7 @@
                 "/eulogy",
                 "/job-hunt-stress",
                 "/manager-book",
-                "/pain",
+                "/mental-pain",
                 "/sustainable-work"
             ],
             "incoming_links": [
@@ -1355,7 +1363,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/first-things-first": {
             "py/object": "__main__.Page",
@@ -1670,7 +1678,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/irl": {
             "py/object": "__main__.Page",
@@ -1685,7 +1693,8 @@
                 "/physical-health"
             ],
             "incoming_links": [
-                "/physical-health"
+                "/physical-health",
+                "/td/ios-nomad"
             ],
             "redirect_url": "",
             "doc_size": 44000
@@ -1782,7 +1791,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/manager-book": {
             "py/object": "__main__.Page",
@@ -1845,6 +1854,7 @@
                 "/curious",
                 "/d/resistance",
                 "/d/time-off-12-2020",
+                "/dsat",
                 "/happy",
                 "/idle",
                 "/mental-pain",
@@ -1892,7 +1902,7 @@
                 "/timeoff"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/mind-monsters": {
             "py/object": "__main__.Page",
@@ -2204,7 +2214,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/reflect-tool": {
             "py/object": "__main__.Page",
@@ -2252,7 +2262,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/save-the-souse": {
             "py/object": "__main__.Page",
@@ -2534,7 +2544,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/td/better-security-design": {
             "py/object": "__main__.Page",
@@ -2616,6 +2626,7 @@
             "file_path": "_site/td/ios.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/tools",
                 "/writing"
             ],
             "redirect_url": "",
@@ -2628,9 +2639,10 @@
             "description": "Copied from my GitHub techdiary\n\n",
             "file_path": "_site/td/ios-nomad.html",
             "outgoing_links": [
-                "/td/irl"
+                "/irl"
             ],
             "incoming_links": [
+                "/tools",
                 "/writing"
             ],
             "redirect_url": "",
@@ -2656,7 +2668,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/td/mosh": {
             "py/object": "__main__.Page",
@@ -2734,10 +2746,9 @@
             "file_path": "_site/td/time-off-3-2020.html",
             "outgoing_links": [
                 "/frog",
-                "/https://github.com/idvorkin/LinqPadSnippets/blob/59a5b6ed535de1256f1546557e3795365ed83b82/python/linkchecker.py",
                 "/money",
                 "/siy",
-                "/time off"
+                "/timeoff"
             ],
             "incoming_links": [
                 "/timeoff"
@@ -2818,6 +2829,21 @@
             "redirect_url": "",
             "doc_size": 14000
         },
+        "/testing": {
+            "py/object": "__main__.Page",
+            "url": "/testing",
+            "title": "TESTING AND QUALITY",
+            "description": "If it’s not tested, it doesn’t work’.’ When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you’ve got more work to do\n\n",
+            "file_path": "_site/testing.html",
+            "outgoing_links": [
+                "/design"
+            ],
+            "incoming_links": [
+                "/design"
+            ],
+            "redirect_url": "",
+            "doc_size": 20000
+        },
         "/The-Genesis-Node": {
             "py/object": "__main__.Page",
             "url": "/The-Genesis-Node",
@@ -2851,7 +2877,7 @@
             "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we’ll discuss too.\n\n",
             "file_path": "_site/timeoff.html",
             "outgoing_links": [
-                "/addictions",
+                "/addiction",
                 "/d/resistance",
                 "/eulogy",
                 "/frog",
@@ -2864,7 +2890,8 @@
                 "/d/time-off-12-2020",
                 "/d/time-off-12-2021",
                 "/mind-at-work",
-                "/parkinson"
+                "/parkinson",
+                "/td/time-off-3-2020"
             ],
             "redirect_url": "",
             "doc_size": 18000
@@ -2891,7 +2918,9 @@
             "description": "A collection of tips, tricks and pointers of the various tools i use\n\n",
             "file_path": "_site/tools.html",
             "outgoing_links": [
-                "/nlp"
+                "/nlp",
+                "/td/ios",
+                "/td/ios-nomad"
             ],
             "incoming_links": [],
             "redirect_url": "",
