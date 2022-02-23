@@ -99,4 +99,4 @@ Every day I wake up at 5am, it's my first victory over the resistance, and it gi
 
 #### Eat that frog
 
-{%include summarize-page.html src='/frog %}
+{%include summarize-page.html src='/frog' %}
