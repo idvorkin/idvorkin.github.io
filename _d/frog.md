@@ -100,7 +100,7 @@ _The resistance is the personification of the force that stops you from doing al
 
 ### ABCDE prioritization and Important Not Urgent
 
-I need to process how to merge the important and not urgent matrix with the ABCDE prioritization matrix
+I need to process how to merge the important and not urgent matrix with the ABCDE prioritization matrix.
 
 “A” items are important and urgent **I/U**, something that you must do. This is a task that will have serious consequences (positive or negative), finishing a calibration packets for upcoming calibration or dealing with a root canal. If you have more than one A task, prioritize, and execute in order “A-1,” “A-2,” “A-3,” Your A-1 task is your biggest, ugliest frog of all. Start there.
 
