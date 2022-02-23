@@ -1,4 +1,5 @@
 import {
+  createSemanticDiagnosticsBuilderProgram,
   isRegularExpressionLiteral,
   JSDocUnknownTag,
 } from "../node_modules/typescript/lib/typescript";
@@ -137,6 +138,7 @@ function MakeBackLinkHTML(url_info: IURLInfo) {
 }
 
 async function AddLinksToPage(allUrls: IURLInfoMap) {
+  // TODO handle redirects
   var my_path = new URL(document.URL).pathname;
   const backlinks = allUrls[my_path]?.incoming_links;
   const frontlinks = allUrls[my_path]?.outgoing_links;
@@ -196,8 +198,49 @@ async function AddLinksToPage(allUrls: IURLInfoMap) {
     }
   }
 }
+function make_html_summary_link(link, url_info: IURLInfo) {
+  const attribution = `From <a href='${url_info.url}'> ${url_info.title}</a>.`;
+
+  return `<div>  
+        <i> ${url_info.description}</i> ${attribution}
+    </div>`;
+}
+
+function make_html_summary_link_error(link, error) {
+  return `<span class='text-danger'>Error: Invalid link for ${link.attr(
+    "href"
+  )} ${error} </span>`;
+}
+
+function AddSummarysToPage(backLinks: IBacklinks) {
+  const summary_links = $.makeArray($(".summary-link"));
+  summary_links.forEach(raw_link => {
+    const link = $(raw_link);
+    try {
+      console.log(link.attr("href"));
+
+      let ref = link.attr("href");
+
+      // Resolve redirect
+      if (backLinks.redirects[ref] != undefined) {
+        ref = backLinks.redirects[ref];
+      }
+      // Look up in url info
+      if (backLinks.url_info[ref] == undefined) {
+        link.html(make_html_summary_link_error(link, "not found in url info"));
+        return;
+      }
+
+      link.html(make_html_summary_link(link, backLinks.url_info[ref]));
+    } catch (e) {
+      link.html(make_html_summary_link_error(link, e));
+    }
+  });
+}
+
 async function add_link_loader() {
   AddLinksToPage(await get_link_info());
+  AddSummarysToPage(await get_back_links());
 }
 
 export interface IBacklinks {
@@ -220,10 +263,10 @@ export interface IURLInfo {
   doc_size: number;
 }
 
-let cached_linked_info: IURLInfoMap = null;
-async function get_link_info(): Promise<IURLInfoMap> {
-  if (cached_linked_info != null) {
-    return cached_linked_info;
+let cached_back_links: IBacklinks = null;
+async function get_back_links(): Promise<IBacklinks> {
+  if (cached_back_links != null) {
+    return cached_back_links;
   }
   const url = window.location.href;
   const prodPrefix = "https://idvork.in";
@@ -237,9 +280,13 @@ async function get_link_info(): Promise<IURLInfoMap> {
     backlinks_url = "/back-links.json";
   }
 
-  const urlJSON = (await ($.getJSON(backlinks_url) as any)) as IBacklinks;
-  cached_linked_info = urlJSON.url_info;
-  return cached_linked_info;
+  const backlinksJson = (await ($.getJSON(backlinks_url) as any)) as IBacklinks;
+  cached_back_links = backlinksJson;
+  return cached_back_links;
+}
+
+async function get_link_info(): Promise<IURLInfoMap> {
+  return (await get_back_links()).url_info;
 }
 
 function search() {
