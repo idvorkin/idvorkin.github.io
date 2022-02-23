@@ -41,7 +41,7 @@ I should have written up a plan before this [time off](/time-off) so I'd have be
 
 ## Moments and success stories
 
-- See [family blog]([/ig66/591)
+- See [family blog](/ig66/591)
 
 ## Success Stories
 
