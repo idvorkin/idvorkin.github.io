@@ -1,6 +1,5 @@
 ---
 layout: post
-no-render-title: true
 title: Adventures March and April 2020
 ---
 
@@ -122,7 +121,7 @@ https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180
 
 #### ☑ Time Off!
 
-My guide to taking [time off](/time off)
+My guide to taking [time off](/time-off)
 
 [Money](/money)
 
@@ -385,7 +384,7 @@ Don't worry, Tori is a big part of my energy, but she's private so we won't talk
 
 #### ☑ Better broken link checker
 
-[Here](/https://github.com/idvorkin/LinqPadSnippets/blob/59a5b6ed535de1256f1546557e3795365ed83b82/python/linkchecker.py#L5)
+[Here](https://github.com/idvorkin/LinqPadSnippets/blob/59a5b6ed535de1256f1546557e3795365ed83b82/python/linkchecker.py#L5)
 
 #### ☑ Deep dive into CSS and bootstrap (great idea)
 

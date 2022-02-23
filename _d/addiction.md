@@ -5,9 +5,8 @@ comments: true
 tags:
   - how igor ticks
 permalink: /addiction
----
-
-Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Work": When we can't stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That's why addicts are so interesting and so boring at the same time. They're interesting because they're called to something — something new, something unique, something that we, watching, can't wait to see them bring forth into manifestation. At the same time, they're boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict's crazy, haunted, shattered life.
+redirect_from: /addictions
+---Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Work": When we can't stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That's why addicts are so interesting and so boring at the same time. They're interesting because they're called to something — something new, something unique, something that we, watching, can't wait to see them bring forth into manifestation. At the same time, they're boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict's crazy, haunted, shattered life.
 
 <!-- prettier-ignore-start -->
 

@@ -1,9 +1,10 @@
 ---
-
 layout: post
 title: Testing and Quality
 permalink: /testing
----If it's not tested, it doesn't work'.' When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you've got more work to do
+---
+
+If it's not tested, it doesn't work'.' When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you've got more work to do
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -37,7 +38,7 @@ permalink: /testing
 
 Software needs to work, and if it's not tested, it doesn't work. In the rare event it works today, I assure you it'll stop workign after you make a change. If you can't make a change safely, your system will go to shit instantly.
 
-Very related to [design](/td/design)
+Very related to [design](/design)
 
 - SOLID designs (OO joke there, haha!)
 - Safe to refactor

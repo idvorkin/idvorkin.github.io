@@ -158,8 +158,8 @@ Examples:
 ### Apple
 
 - Copy files **without** iTunes - [CopyTrans Manager](https://www.copytrans.net/copytransmanager/)
-- Tips and tricks for [iOS](ios)
-- How to be an [iPad nomad](ios-nomad)
+- Tips and tricks for [iOS](/td/ios)
+- How to be an [iPad nomad](/td/dios-nomad)
 
 ### Home Automation
 

@@ -28,7 +28,7 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 - Got Zach prepped to walk home from work.
 - Ammon reminded me the importance of jumping in the lake
 - Started Intermittent Fasting
-- Honored my desire not to go deep into tech for the sake of tech (because I did it [last time off](/time-off-11-2021))
+- Honored my desire not to go deep into tech for the sake of tech (because I did it [last time off](/d/time-off-11-2021))
 - Thought pretty deeply about balance and activation energy.
 
 <!-- prettier-ignore-start -->
