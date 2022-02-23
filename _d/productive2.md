@@ -3,52 +3,44 @@ layout: post
 title: "Productive"
 permalink: /produtive
 redirect_from:
----## Concepts
+  - /productivity
+---
 
-### Optimize Energy not time
+At the core of balance, energy, wlb, habits is being productive.
 
-### Drip, Drip, Drip - it adds up
-
+<!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Concepts](#concepts)
-  - [Motivation](#motivation)
-  - [Realistic Expectations](#realistic-expectations)
-  - [Flow](#flow)
-- [Shape the path](#shape-the-path)
-  - [Remove the need for will power](#remove-the-need-for-will-power)
-  - [Get Lucky](#get-lucky)
-  - [Enlist others](#enlist-others)
-  - [Leverage Habits](#leverage-habits)
-  - [Use the calendar](#use-the-calendar)
+    - [Optimize Energy not time](#optimize-energy-not-time)
+    - [Shape the path, leverage habits](#shape-the-path-leverage-habits)
+    - [Drip, Drip, Drip - it adds up](#drip-drip-drip---it-adds-up)
+    - [Motivation](#motivation)
+    - [Realistic Expectations](#realistic-expectations)
+    - [Flow](#flow)
 - [Related Positive notes](#related-positive-notes)
 - [Anti Patterns](#anti-patterns)
-  - [Anxiety/Fear](#anxietyfear)
-  - [Addicitions](#addicitions)
-  - [Procrastination](#procrastination)
-  - [The Resistance](#the-resistance)
+    - [Anxiety/Fear](#anxietyfear)
+    - [Addicitions](#addicitions)
+    - [Procrastination](#procrastination)
+    - [The Resistance](#the-resistance)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## Concepts
+
+### Optimize Energy not time
+
+### Shape the path, leverage habits
+
+### Drip, Drip, Drip - it adds up
 
 ### Motivation
 
 ### Realistic Expectations
 
 ### Flow
-
-## Shape the path
-
-### Remove the need for will power
-
-### Get Lucky
-
-### Enlist others
-
-### Leverage Habits
-
-### Use the calendar
 
 ## Related Positive notes
 
