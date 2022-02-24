@@ -29,6 +29,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Strategize against the resistance.](#strategize-against-the-resistance)
     - [Begin with the end in mind](#begin-with-the-end-in-mind)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
+- [Making the most out of staycation.](#making-the-most-out-of-staycation)
 - [Other Resources](#other-resources)
     - [Optimize for energy, not time](#optimize-for-energy-not-time)
     - [Can you have too much time off?](#can-you-have-too-much-time-off)
@@ -113,6 +114,10 @@ Add by making your positive habits easier. For me, this includes remembering wha
 Look at the incoming links below and:
 
 - [April 2020 - Time between leaving Amazon and Joining Facebook](/td/time-off-3-2020)
+
+## Making the most out of staycation.
+
+With staycations, it's especially easy to oscillate between vegetating, grinding through the todo list, and ruminating on work. I suspect there are special tools for staycations - I should think through them.
 
 ## Other Resources
 
