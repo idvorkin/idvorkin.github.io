@@ -59,7 +59,7 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 
 ### Stuff from my own life
 
-- Some of the magical memories
+- Some of the [magical memories](/magic)
 - The idea of the sacrifice my parents made by going to another country, not knowing the language or anything else.
 - Stuff as a father
 
