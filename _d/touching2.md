@@ -7,7 +7,7 @@ permalink: /touching
 redirect_from:
   - /cry
   - /makes-me-cry
-  - humanity
+  - /humanity
 ---
 
 It's pretty easy to be overwhelmed by humanity sucking, but there is so much good in the world. Here are some great examples
