@@ -28,6 +28,7 @@
         "/books": "/books-that-defined-me",
         "/boss": "/being-a-great-manager",
         "/Business-Model-You": "/bmy",
+        "/classact": "/class-act",
         "/coach": "/coaching",
         "/Coaching-Questions": "/coaching",
         "/cold": "/warm",
@@ -73,6 +74,7 @@
         "/habits": "/d/habits",
         "/happiness": "/happy",
         "/human-meetings": "/Human-Meetings",
+        "/humanity": "/touching",
         "/idle-loop": "/idle",
         "/imposter": "/insecure",
         "/in-real-life": "/irl",
@@ -603,6 +605,20 @@
             "redirect_url": "",
             "doc_size": 14000
         },
+        "/class-act": {
+            "py/object": "__main__.Page",
+            "url": "/class-act",
+            "title": "BE A CLASS ACT",
+            "description": "Be a class act. Fantatic advice.\n\n",
+            "file_path": "_site/class-act.html",
+            "outgoing_links": [
+                "/curious",
+                "/first-understand"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 10000
+        },
         "/coaching": {
             "py/object": "__main__.Page",
             "url": "/coaching",
@@ -695,6 +711,7 @@
             "incoming_links": [
                 "/90days",
                 "/being-a-great-manager",
+                "/class-act",
                 "/coaching",
                 "/first-understand",
                 "/getting-to-yes",
@@ -1407,6 +1424,7 @@
             ],
             "incoming_links": [
                 "/7-habits",
+                "/class-act",
                 "/getting-to-yes",
                 "/sell"
             ],
@@ -1788,7 +1806,8 @@
                 "/hobby",
                 "/idle",
                 "/joy",
-                "/operating-manual"
+                "/operating-manual",
+                "/touching"
             ],
             "redirect_url": "",
             "doc_size": 16000
@@ -2380,7 +2399,7 @@
             "py/object": "__main__.Page",
             "url": "/sleight-of-mouth",
             "title": "SLEIGHT OF MOUTH",
-            "description": "Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. To experience the power of language, take any thing that is invisible to you, and name it. Now as it’s given a name, see how perceive it, and become aware of it. Our mental models are frame, and we need help going from a ‘problem frame’ to a ‘desired outcome frame’ , a ‘failure frame’, to a ‘feedback frame’ and an ‘impossible frame ‘ to an ‘as if’ frame.\n\n",
+            "description": "Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a ‘problem frame’ to a ‘desired outcome frame’ , a ‘failure frame’, to a ‘feedback frame’ and an ‘impossible frame ‘ to an ‘as if’ frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you’ve given it a name, see how perceive it, and become aware of it.\n\n",
             "file_path": "_site/sleight-of-mouth.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -2933,7 +2952,8 @@
             "description": "It’s pretty easy to be overwhelmed by humanity sucking, but there is so much good in the world. Here are some great examples\n\n",
             "file_path": "_site/touching.html",
             "outgoing_links": [
-                "/anxiety"
+                "/anxiety",
+                "/magic"
             ],
             "incoming_links": [],
             "redirect_url": "",
