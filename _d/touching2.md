@@ -7,6 +7,7 @@ permalink: /touching
 redirect_from:
   - /cry
   - /makes-me-cry
+  - humanity
 ---
 
 It's pretty easy to be overwhelmed by humanity sucking, but there is so much good in the world. Here are some great examples
@@ -15,6 +16,7 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 <!-- vim-markdown-toc GFM -->
 
 - [Commercials](#commercials)
+- [Speeches](#speeches)
 - [Shorts](#shorts)
 - [Movies](#movies)
 - [Good audio](#good-audio)
@@ -32,6 +34,11 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 - [Thai homeless with Shop Keeper](https://m.youtube.com/watch?v=S-fvxEq_3DA)
 - [Thai silence of love](https://m.youtube.com/watch?v=qZMX6H6YY1M)
 - [Lots of the commercials back to back](https://m.youtube.com/watch?v=rQcucGT6hd8)
+
+### Speeches
+
+- [The last lecture](https://youtu.be/ji5_MqicxSo) - A man dying of cancer gives his last lecture
+- [Steve Job's do what you love](https://youtu.be/UF8uR6Z6KLc) - May not good advice, but sounds great
 
 ### Shorts
 
