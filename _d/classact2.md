@@ -37,7 +37,7 @@ Be a class act. Fantatic advice.
 
 ### Appreciate
 
-{%include summarize-page.html src="/grandma" %}
+{%include summarize-page.html src="/appreciate" %}
 
 ### Other
 
