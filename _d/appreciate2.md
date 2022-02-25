@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Appreciate"
-permalink:/appreciate
+permalink: /appreciate
 tags:
   - emotional intelligence
 ---
@@ -15,7 +15,7 @@ I have lots of thoughts tied up in appreciation, here are some of them until I c
 
 ### Appreciation and Gratefulness
 
-    A consequence
+{%include summarize-page.html src="/grateful" %}
 
 ### Appreciating people and appreciating circumstances
 
