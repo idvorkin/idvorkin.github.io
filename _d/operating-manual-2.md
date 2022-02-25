@@ -12,21 +12,20 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc GFM -->
 
-- [Career](#career)
-    - [Joining Facebook](#joining-facebook)
-    - [Joining Amazon](#joining-amazon)
-    - [Dream Job](#dream-job)
-    - [Being a Great Manager](#being-a-great-manager)
-    - [My super powers](#my-super-powers)
-        - [Relationships](#relationships)
-        - [Technical Depth and Breadth](#technical-depth-and-breadth)
-        - [Technical Best Practice](#technical-best-practice)
-        - [Ability to sanity test all tech stuff.](#ability-to-sanity-test-all-tech-stuff)
-        - [From Strength Finder](#from-strength-finder)
-    - [My kryptonite](#my-kryptonite)
-        - [Bean counting](#bean-counting)
-        - [Committing and describing relative to ideal, not relative to reality.](#committing-and-describing-relative-to-ideal-not-relative-to-reality)
-        - [Under estimating technical complexity](#under-estimating-technical-complexity)
+- [Morning Routine](#morning-routine)
+    - [Weekend morning routine](#weekend-morning-routine)
+    - [Weekday morning routine](#weekday-morning-routine)
+    - [Morning Kryptonite](#morning-kryptonite)
+- [My super powers](#my-super-powers)
+    - [From Strength Finder](#from-strength-finder)
+    - [Relationships](#relationships)
+    - [Technical Depth and Breadth](#technical-depth-and-breadth)
+    - [Technical Best Practice](#technical-best-practice)
+    - [Ability to sanity test all tech stuff.](#ability-to-sanity-test-all-tech-stuff)
+- [My kryptonite](#my-kryptonite)
+    - [Bean counting](#bean-counting)
+    - [Committing and describing relative to ideal, not relative to reality.](#committing-and-describing-relative-to-ideal-not-relative-to-reality)
+    - [Under estimating technical complexity](#under-estimating-technical-complexity)
 - [Health and habits](#health-and-habits)
     - [Physical](#physical)
     - [Emotional](#emotional)
@@ -37,95 +36,29 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Magic](#magic)
     - [Juggling](#juggling)
     - [List of things I enjoy](#list-of-things-i-enjoy)
-- [Morning Routine](#morning-routine)
-    - [Weekend morning routine](#weekend-morning-routine)
-    - [Weekday morning routine](#weekday-morning-routine)
-    - [Morning Kryptonite](#morning-kryptonite)
 - [Family](#family)
     - [Husband](#husband)
     - [Father](#father)
 - [Cognitive Reframe Upgrades](#cognitive-reframe-upgrades)
 - [Triggers and Mental Quick Sand](#triggers-and-mental-quick-sand)
-    - [Stress and anxiety](#stress-and-anxiety)
+    - [Stress and Anxiety](#stress-and-anxiety)
     - [Corona Virus](#corona-virus)
     - [Raising kids](#raising-kids)
-        - [Physical health](#physical-health)
+        - [Physical Health](#physical-health)
         - [Not spending enough time with them](#not-spending-enough-time-with-them)
         - [Diet and Weight](#diet-and-weight)
     - [Financial Security](#financial-security)
         - [The point of money](#the-point-of-money)
         - [What would I do for less money](#what-would-i-do-for-less-money)
         - [Making more vs spending more](#making-more-vs-spending-more)
+- [Career](#career)
+    - [Joining Facebook](#joining-facebook)
+    - [Joining Amazon](#joining-amazon)
+    - [Dream Job](#dream-job)
+    - [Being a Great Manager](#being-a-great-manager)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-## Career
-
-### [Joining Facebook](/facebook)
-
-In mid 2020, I joined [Facebook](/facebook) and it has been an absolute pleasure. Facebook is very aligned with my desired culture: Top shelf people, top notch management, a genuine caring about people, and a move fast and iterate culture.
-
-### [Joining Amazon](/amazon)
-
-At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years and it was a tough transition.
-
-### [Dream Job](/dream-job)
-
-In my [dream job](/dream-job) I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.
-
-### [Being a Great Manager](/manager-book)
-
-I spent a lot of time learning to be a manager, and am [writing a book, or really notes to myself](/manager-book).
-
-### My super powers
-
-#### Relationships
-
-- Investing time in relationships always pays out. It can feel expensive, but it's always worth it.
-
-#### Technical Depth and Breadth
-
-#### Technical Best Practice
-
-#### Ability to sanity test all tech stuff.
-
-#### From [Strength Finder](/strength-finder)
-
-Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called Strength Finder and it discovered my strengths are Activator , Communication, Problem Solving (Resolver in Strength Finder speak) Adaptability, and Ideation.
-
-### My kryptonite
-
-#### Bean counting
-
-#### Committing and describing relative to ideal, not relative to reality.
-
-#### Under estimating technical complexity
-
-## Health and habits
-
-Health - physical, emotional, cognitive and spiritual, is easy to understand but hard to maintain. My strategy to maintain health is [habits](/habits), but thanks to the [immutable laws of hard things](http://~/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
-
-I spend lots of time thinking about how I should be working my habits, but often end up not doing them. In this case, the key is to stop moaning and restart 'em.
-
-### [Physical](/physical-health)
-
-### [Emotional](/emotional-health)
-
-### [Cognitive](/writing)
-
-### [Identity](/eulogy)
-
-### [Hobbies](/hobby)
-
-I've already got enough hobbies - biking, magic, juggling. I get my biking fix no problem.
-
-### [Biking](/bike)
-
-### [Magic](/magic)
-
-### [Juggling](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
-### [List of things I enjoy](/todo_enjoy)
 
 ## Morning Routine
 
@@ -153,6 +86,72 @@ I have two common failure modes to my morning routine.
 - Hitting snooze when my alarm goes off. The worst of all words, not sleeping, and not being up and doing stuff.
 - Lying in bed awake when I wake up before 5. Sometimes I wake up and can't fall back asleep @ 3 or 4 (which isn't crazy cuz sometimes I go to bed @ 7 or 8). Similar to hitting snooze, I'm not sleeping, and I'm not accomplishing anything.
 
+## My super powers
+
+### From [Strength Finder](/strength-finder)
+
+Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called Strength Finder and it discovered my strengths are Activator , Communication, Problem Solving (Resolver in Strength Finder speak) Adaptability, and Ideation.
+
+### Relationships
+
+- Investing time in relationships always pays out. It can feel expensive, but it's always worth it.
+
+### Technical Depth and Breadth
+
+### Technical Best Practice
+
+### Ability to sanity test all tech stuff.
+
+## My kryptonite
+
+### Bean counting
+
+### Committing and describing relative to ideal, not relative to reality.
+
+### Under estimating technical complexity
+
+## Health and habits
+
+Health - physical, emotional, cognitive and spiritual, is easy to understand but hard to maintain. My strategy to maintain health is [habits](/habits), but thanks to the [immutable laws of hard things](http://~/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
+
+I spend lots of time thinking about how I should be working my habits, but often end up not doing them. In this case, the key is to stop moaning and restart 'em.
+
+### Physical
+
+{%include summarize-page.html src="/physical-health" %}
+
+### Emotional
+
+{%include summarize-page.html src="/emotional-health" %}
+
+### Cognitive
+
+{%include summarize-page.html src="/writing" %}
+
+### Identity
+
+{%include summarize-page.html src="/eulogy" %}
+
+### Hobbies
+
+I've already got enough hobbies - biking, magic, juggling. I get my biking fix no problem.
+
+{%include summarize-page.html src="/hobby" %}
+
+### Biking
+
+{%include summarize-page.html src="/bike" %}
+
+### Magic
+
+{%include summarize-page.html src="/magic" %}
+
+### [Juggling](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches)
+
+### List of things I enjoy
+
+{%include summarize-page.html src="/todo-enjoy" %}
+
 ## Family
 
 ### Husband
@@ -168,19 +167,29 @@ The words you use influence how you think.
 - I manage the XYZ team -> I support the XYZ team
 - This is crap --> Help me understand (/compassion)
 
+{%include summarize-page.html src="/som" %}
+
 ## Triggers and Mental Quick Sand
 
-Like most folks I have triggers and mental quick sand which I can get trapped in. Here's some of mine, and things I need to remember. This also reminds me of the [voices in my head](/voices)
+Like most folks I have triggers and mental quick sand which I can get trapped in. Here's some of mine, and things I need to remember. This also reminds me of the:
 
-### Stress and [anxiety](/anxiety)
+{%include summarize-page.html src="/voices" %}
+
+### Stress and Anxiety
+
+{%include summarize-page.html src="/anxiety" %}
 
 ### Corona Virus
 
-- My gosh this is sucking up lots of brain power. I don't think I get value thinking about this. I have two choices, stop thinking about this,_OR_ write a post on all my thoughts on this.
+My gosh this is sucking up lots of brain power. I don't think I get value thinking about this. I have two choices, stop thinking about this,_OR_ write a post on all my thoughts on this.
+
+{%include summarize-page.html src="/covid" %}
 
 ### Raising kids
 
-#### [Physical health](/physical-health)
+#### Physical Health
+
+{%include summarize-page.html src="/physical-health" %}
 
 #### Not spending enough time with them
 
@@ -188,9 +197,13 @@ When it comes to family, like all things, it's easy to confuse hours for quality
 
 ![](https://github.com/idvorkin/blob/raw/master/ig66/587/montage.jpg)
 
-#### [Diet and Weight](/diet)
+#### Diet and Weight
 
-### [Financial Security](/money)
+{%include summarize-page.html src="/diet" %}
+
+### Financial Security
+
+{%include summarize-page.html src="/money" %}
 
 #### The point of [money](/money)
 
@@ -203,3 +216,29 @@ If you wouldn't take a job for a pay cut, you probably shouldn't take the job.
 #### Making more vs spending more
 
 See [Parkinson's law](/parkinson), applies to both time and Money.
+
+{%include summarize-page.html src="/parkinson" %}
+
+## Career
+
+### Joining Facebook
+
+In mid 2020, I joined [Facebook](/facebook) and it has been an absolute pleasure. Facebook is very aligned with my desired culture: Top shelf people, top notch management, a genuine caring about people, and a move fast and iterate culture.
+
+{%include summarize-page.html src="/facebook" %}
+
+### [Joining Amazon](/amazon)
+
+At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years and it was a tough transition.
+
+{%include summarize-page.html src="/amazon" %}
+
+### [Dream Job](/dream-job)
+
+{%include summarize-page.html src="/dream-job" %}
+
+### [Being a Great Manager](/manager-book)
+
+I spent a lot of time learning to be a manager, and am [writing a book, or really notes to myself](/manager-book).
+
+{%include summarize-page.html src="/manager-book" %}
