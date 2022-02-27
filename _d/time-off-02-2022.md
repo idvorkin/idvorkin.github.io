@@ -16,6 +16,9 @@ My top priorities: - Restart cardio and magic. - Figure out tools to create more
 ## Success Stories
 
 - Wrote up my plan the weekend before.
+- Spent 4 hours on magic, multiple days in a row
+- Did magic for a spectator at a bar
+- Learning a new coin trick that is awesome!
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -31,7 +34,7 @@ My top priorities: - Restart cardio and magic. - Figure out tools to create more
     - [Biking](#biking)
     - [Software for Balance](#software-for-balance)
     - [Tech Guru](#tech-guru)
-        - [DENY LIST: Shell + Enabling Environment + Python in VIM](#deny-list-shell--enabling-environment--python-in-vim)
+        - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
         - [DENY LIST: Data Analysis - Pandas](#deny-list-data-analysis---pandas)
         - [DENY LIST: Ranking Systems](#deny-list-ranking-systems)
 - [Cognitive Health](#cognitive-health)
@@ -105,11 +108,13 @@ Private
 
 ### Tech Guru
 
-#### DENY LIST: Shell + Enabling Environment + Python in VIM
+#### Shell + Enabling Environment + Python in VIM
 
 It's something that I'm over invested in, and need to put an upper bound on to let me focus on other things.
 
 - ☑ Figure out how to highlight and bold italics for markdown files [surround.vim](https://github.com/idvorkin/Settings/commit/c1d4ffb34d50193a0dac8c13125759b65172f5ac), and ask [for help](https://github.com/tpope/vim-surround/issues/346).
+
+- ☑ Got GPT3 connected to VIM w/FZF in the middle, this is so fricking cool, I need to make a video about it!
 
 #### DENY LIST: Data Analysis - Pandas
 
@@ -119,15 +124,15 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 
 ### 7 Habits
 
-- ☐ STRETCH: Update concepts page
+- ☑ STRETCH: Update concepts page
 - ☐ STRETCH: Update first things first page
 - ☐ STRETCH: Update Seek first to understand
 
 ### Blog posts
 
 - ☐ Read and update [Switch](/switch)
-- ☐ Start a [productity post](/productive)
-- ☐ Update some [Sleight of mouth](/sleight-of-mouth)
+- ☑ Start a [productity post](/productive)
+- ☑ Update some [Sleight of mouth](/sleight-of-mouth)
 - ☐ Merge Anxiety Todo list into some of the blogs
 - ☑ Update search to be an auto complete based search.
 
@@ -135,29 +140,32 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 
 ### Meditation
 
-- ☐ Every day for 15 minutes
+- ☑ Every day for 5 minutes (reduced from 15 so it would actually happen)
 
 ### 750 words/Gratefulness
 
-- ☐ 750 words Daily
+- ☑ 750 words Daily
+- ☑ Explored using GPT to summarize, absoloutely amazing.
 
 ## Physical Health
 
 ### Statistics
 
 Weight Start: 225
-Weight End:
+Weight End: 227
 Gym Days:
 
 ### Diet
 
+- Started exploring potatos, but not really nailed it yet.
+
 ### Sleep
 
-- ☐ 7/7 week up at 4:30
+- ☐ 5/7 week up at 4:30
 
 ### Energy
 
-- ☐ GOAL: High
+- ☑ GOAL: High
 
 ## House and goods
 
@@ -169,4 +177,4 @@ Gym Days:
 
 ### Staycations aren't vacations
 
-They will be when you plan them well.
+They will be when you plan them well. OK, this didn't happen at all -- hooray!
