@@ -12,7 +12,7 @@ A hodgepodge of additional resources for the manager book.
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [The whole manager book](#the-whole-manager-book)
+- [The whole Manager Book](#the-whole-manager-book)
 - [Google's Project Oxygen](#googles-project-oxygen)
 - [Amazon's leadership principles](#amazons-leadership-principles)
 - [A few Igorisms](#a-few-igorisms)
@@ -24,7 +24,7 @@ A hodgepodge of additional resources for the manager book.
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-### The whole manager book
+### The whole Manager Book
 
 See the whole manager book:
 
