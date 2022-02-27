@@ -1,20 +1,26 @@
 ---
+
 layout: post
 title: Igor's Tech, Tricks, and Tools
 permalink: /tools
 redirect-from:
-  - /cli
-  - /tool
----
 
-A collection of tips, tricks and pointers of the various tools i use
+- /cli
 
-<!-- prettier-ignore-start -->
+### Major Research and Project List
+
+My various [projects and research](/td)
+
+### Modern Unix
+
+### Build your own X
+
+[What I can create, I can not understand](https://github.com/danistefanovic/build-your-own-x)
+
+A very cool index of tutorial to build your own everything
+
 <!-- vim-markdown-toc GFM -->
 
-- [Major Research and Project List](#major-research-and-project-list)
-- [Modern Unix](#modern-unix)
-- [Build your own X](#build-your-own-x)
 - [Markdown](#markdown)
 - [VIM](#vim)
 - [C Sharp](#c-sharp)
@@ -24,18 +30,18 @@ A collection of tips, tricks and pointers of the various tools i use
 - [Apple](#apple)
 - [Home Automation](#home-automation)
 - [Text manipulation tools](#text-manipulation-tools)
-    - [jq](#jq)
-    - [Pup - regexp For HTML](#pup---regexp-for-html)
+  - [jq](#jq)
+  - [Pup - regexp For HTML](#pup---regexp-for-html)
 - [Cool shell tools](#cool-shell-tools)
 - [Process Monitoring](#process-monitoring)
 - [Natural Language Processing](#natural-language-processing)
 - [Azure One Liners](#azure-one-liners)
-    - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
+  - [Deploy webapp via git checkin](#deploy-webapp-via-git-checkin)
 - [git](#git)
-    - [Colorized Diff - delta](#colorized-diff---delta)
-    - [TUI Client - lazygit/tig](#tui-client---lazygittig)
-    - [Git Stats](#git-stats)
-    - [TUI merge - fac](#tui-merge---fac)
+  - [Colorized Diff - delta](#colorized-diff---delta)
+  - [TUI Client - lazygit/tig](#tui-client---lazygittig)
+  - [Git Stats](#git-stats)
+  - [TUI merge - fac](#tui-merge---fac)
 - [GitHub](#github)
 - [SSH](#ssh)
 - [TMUX](#tmux)
@@ -43,54 +49,37 @@ A collection of tips, tricks and pointers of the various tools i use
 - [App Launchers](#app-launchers)
 - [Chrome extensions](#chrome-extensions)
 - [Web tools (http)](#web-tools-http)
-    - [wuzz](#wuzz)
-    - [httplab](#httplab)
-    - [httpie](#httpie)
-    - [httpprompt](#httpprompt)
-    - [Link Checkers](#link-checkers)
-    - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
-    - [w3m - Text based web browser](#w3m---text-based-web-browser)
+  - [wuzz](#wuzz)
+  - [httplab](#httplab)
+  - [httpie](#httpie)
+  - [httpprompt](#httpprompt)
+  - [Link Checkers](#link-checkers)
+  - [brow.sh - Text based web browser](#browsh---text-based-web-browser)
+  - [w3m - Text based web browser](#w3m---text-based-web-browser)
 - [Video Manipulation Tools](#video-manipulation-tools)
 - [Linters and formatters](#linters-and-formatters)
 - [Switching between Unix and DOS file ending](#switching-between-unix-and-dos-file-ending)
 - [Spelling](#spelling)
 - [Web scripting](#web-scripting)
 - [Programming Helpers](#programming-helpers)
-    - [howdoi](#howdoi)
+  - [howdoi](#howdoi)
 - [Excalidraw](#excalidraw)
 - [PlantUML alternatives](#plantuml-alternatives)
 - [PlantUML](#plantuml)
-    - [PlantUML Tools](#plantuml-tools)
-    - [PlantUML in Markdown](#plantuml-in-markdown)
-    - [Inline plantuml via Gravizo](#inline-plantuml-via-gravizo)
-    - [Quirks](#quirks)
+  - [PlantUML Tools](#plantuml-tools)
+  - [PlantUML in Markdown](#plantuml-in-markdown)
+  - [Inline plantuml via Gravizo](#inline-plantuml-via-gravizo)
+  - [Quirks](#quirks)
 - [Windows Managers](#windows-managers)
 - [ClI Fun](#cli-fun)
 - [CLI Screen Recoding](#cli-screen-recoding)
-    - [Show pressed keys](#show-pressed-keys)
+  - [Show pressed keys](#show-pressed-keys)
 - [OSX Misc](#osx-misc)
 - [Docker](#docker)
 - [Terminal Info](#terminal-info)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
-### Major Research and Project List
-
-My various [projects and research](/td)
-
-### Modern Unix
-
-Over time, I collected many of the tools below, but now this github project collects them all:
-
-[Modern Unix](https://github.com/ibraheemdev/modern-unix)
-
-### Build your own X
-
-[What I can create, I can not understand](https://github.com/danistefanovic/build-your-own-x)
-
-A very cool index of tutorial to build your own everything
 
 ### Markdown
 
@@ -212,6 +201,7 @@ Combined with sed and xargs you can do some crazy stuff. In this below case I ta
 - [Bat](https://github.com/sharkdp/bat) - cat but with paging/git integration.
 - Pretty ping - Graphical Ping
 - [fd](https://github.com/sharkdp/fd) - Better find/recurse. (fd "regexp")
+- [jless](https://github.com/PaulJuliusMartinez/jless) A less for json, vim like keybindgs
 
 ### Process Monitoring
 
