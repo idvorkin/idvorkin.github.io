@@ -130,8 +130,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/taxes": "/money",
@@ -539,7 +537,8 @@
             ],
             "incoming_links": [
                 "/being-a-great-manager",
-                "/manager-book"
+                "/manager-book",
+                "/manager-book-appendix"
             ],
             "redirect_url": "",
             "doc_size": 14000
@@ -1616,21 +1615,6 @@
             "redirect_url": "",
             "doc_size": 17000
         },
-        "/Human-Meetings": {
-            "py/object": "__main__.Page",
-            "url": "/Human-Meetings",
-            "title": "FEELINGS/HUMAN MEETINGS",
-            "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
-            "file_path": "_site/Human-Meetings.html",
-            "outgoing_links": [],
-            "incoming_links": [
-                "/being-a-great-manager",
-                "/eulogy",
-                "/job"
-            ],
-            "redirect_url": "",
-            "doc_size": 12000
-        },
         "/humans-are-underrated": {
             "py/object": "__main__.Page",
             "url": "/humans-are-underrated",
@@ -1855,9 +1839,9 @@
                 "/dsat",
                 "/job",
                 "/job-hunt-stress",
+                "/manager-book-appendix",
                 "/ml",
                 "/moments-at-work",
-                "/parkinson",
                 "/pride",
                 "/prompts",
                 "/remote-work",
@@ -1874,11 +1858,29 @@
                 "/being-a-great-manager",
                 "/coaching",
                 "/dsat",
+                "/manager-book-appendix",
                 "/operating-manual",
                 "/software-leadership-roles"
             ],
             "redirect_url": "",
-            "doc_size": 126000
+            "doc_size": 115000
+        },
+        "/manager-book-appendix": {
+            "py/object": "__main__.Page",
+            "url": "/manager-book-appendix",
+            "title": "MANAGER BOOK APPENDIX",
+            "description": "A hodgepodge of additional resources for the manager book.\n\n",
+            "file_path": "_site/manager-book-appendix.html",
+            "outgoing_links": [
+                "/books-that-defined-me",
+                "/manager-book",
+                "/parkinson"
+            ],
+            "incoming_links": [
+                "/manager-book"
+            ],
+            "redirect_url": "",
+            "doc_size": 24000
         },
         "/mental-pain": {
             "py/object": "__main__.Page",
@@ -2132,7 +2134,7 @@
             ],
             "incoming_links": [
                 "/balance",
-                "/manager-book",
+                "/manager-book-appendix",
                 "/money",
                 "/operating-manual"
             ],
@@ -2558,7 +2560,7 @@
                 "/sleeping-bag-sacrifies"
             ],
             "redirect_url": "",
-            "doc_size": 21000
+            "doc_size": 20000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
