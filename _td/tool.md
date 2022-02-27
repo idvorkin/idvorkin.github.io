@@ -202,6 +202,7 @@ Combined with sed and xargs you can do some crazy stuff. In this below case I ta
 - Pretty ping - Graphical Ping
 - [fd](https://github.com/sharkdp/fd) - Better find/recurse. (fd "regexp")
 - [jless](https://github.com/PaulJuliusMartinez/jless) A less for json, vim like keybindgs
+- [csview](https://github.com/wfxr/csview) A less for csv
 
 ### Process Monitoring
 
