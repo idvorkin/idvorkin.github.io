@@ -130,6 +130,8 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
+        "/SoM": "/sleight-of-mouth",
+        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/taxes": "/money",
@@ -387,6 +389,21 @@
             "redirect_url": "",
             "doc_size": 20000
         },
+        "/appreciate": {
+            "py/object": "__main__.Page",
+            "url": "/appreciate",
+            "title": "APPRECIATE",
+            "description": "Think of the last time you were appreciated: How did you feel? Think about the last hour: How many things could you have appreciated? It takes 7 positive experiences to make up for 1 negative experience - what can you be appreciating?\n\n",
+            "file_path": "_site/appreciate.html",
+            "outgoing_links": [
+                "/grateful"
+            ],
+            "incoming_links": [
+                "/class-act"
+            ],
+            "redirect_url": "",
+            "doc_size": 11000
+        },
         "/ar": {
             "py/object": "__main__.Page",
             "url": "/ar",
@@ -612,12 +629,13 @@
             "description": "Be a class act. Fantatic advice.\n\n",
             "file_path": "_site/class-act.html",
             "outgoing_links": [
+                "/appreciate",
                 "/curious",
                 "/first-understand"
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 10000
+            "doc_size": 12000
         },
         "/coaching": {
             "py/object": "__main__.Page",
@@ -692,7 +710,8 @@
             ],
             "incoming_links": [
                 "/addiction",
-                "/facebook"
+                "/facebook",
+                "/operating-manual"
             ],
             "redirect_url": "",
             "doc_size": 25000
@@ -804,17 +823,6 @@
             "incoming_links": [],
             "redirect_url": "",
             "doc_size": 15000
-        },
-        "/d/2016-6-10-Appreciate": {
-            "py/object": "__main__.Page",
-            "url": "/d/2016-6-10-Appreciate",
-            "title": "APPRECIATE",
-            "description": "Think of the last time you were appreciated: How did you feel? Think about the last hour: How many things could you have appreciated? It takes 7 positive experiences to make up for 1 negative experience - what can you be appreciating?\n\n",
-            "file_path": "_site/d/2016-6-10-Appreciate.html",
-            "outgoing_links": [],
-            "incoming_links": [],
-            "redirect_url": "",
-            "doc_size": 11000
         },
         "/d/2016-7-14-Customer-Service": {
             "py/object": "__main__.Page",
@@ -1529,7 +1537,9 @@
             "description": "Gratefulness exercises work - here’s somethings to help.\n\n",
             "file_path": "_site/grateful.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/appreciate"
+            ],
             "redirect_url": "",
             "doc_size": 12000
         },
@@ -1605,6 +1615,21 @@
             ],
             "redirect_url": "",
             "doc_size": 17000
+        },
+        "/Human-Meetings": {
+            "py/object": "__main__.Page",
+            "url": "/Human-Meetings",
+            "title": "FEELINGS/HUMAN MEETINGS",
+            "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
+            "file_path": "_site/Human-Meetings.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/being-a-great-manager",
+                "/eulogy",
+                "/job"
+            ],
+            "redirect_url": "",
+            "doc_size": 12000
         },
         "/humans-are-underrated": {
             "py/object": "__main__.Page",
@@ -2056,6 +2081,7 @@
                 "/amazon",
                 "/anxiety",
                 "/bike",
+                "/covid",
                 "/d/habits",
                 "/diet",
                 "/emotional-health",
@@ -2069,6 +2095,7 @@
                 "/money",
                 "/parkinson",
                 "/physical-health",
+                "/sleight-of-mouth",
                 "/strength-finder",
                 "/todo_enjoy",
                 "/voices",
@@ -2076,7 +2103,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/pandas": {
             "py/object": "__main__.Page",
@@ -2404,7 +2431,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/7h-concepts",
-                "/d/time-off-02-2022"
+                "/d/time-off-02-2022",
+                "/operating-manual"
             ],
             "redirect_url": "",
             "doc_size": 24000
@@ -2530,7 +2558,7 @@
                 "/sleeping-bag-sacrifies"
             ],
             "redirect_url": "",
-            "doc_size": 20000
+            "doc_size": 21000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
