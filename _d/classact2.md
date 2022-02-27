@@ -17,9 +17,10 @@ Be a class act. Fantatic advice.
     - [Seek first to understand](#seek-first-to-understand)
     - [Be compassionate](#be-compassionate)
     - [Appreciate](#appreciate)
+    - [Other](#other)
 - [Great Examples](#great-examples)
     - [Not taking the bait.](#not-taking-the-bait)
-    - [Other](#other)
+    - [Being a leader](#being-a-leader)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -38,6 +39,10 @@ Be a class act. Fantatic advice.
 
 {%include summarize-page.html src="/grandma" %}
 
+### Other
+
+- Never speak about someone behind their back what you wouldn't say to their face.
+
 ## Great Examples
 
 ### Not taking the bait.
@@ -53,6 +58,8 @@ Bill Gates not being baited to complain about the government response to covid
 
 {% include youtube.html src="Xe8fIjxicoo?start=643" %}
 
-### Other
+### Being a leader
 
-- Never speak about someone behind their back what you wouldn't say to their face.
+This chef as he praises other, focuses on the customer, trains other. And the respect he is commanded as a result - so good...
+
+{% include youtube.html src="azxp2M8evts" %}
