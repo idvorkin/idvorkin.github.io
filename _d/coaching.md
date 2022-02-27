@@ -4,6 +4,7 @@ title: "Coaching - helping others find insight"
 ogtitle: "Coaching - How to help others find insight"
 author: "Igor Dvorkin"
 comments: true
+permalink: /coaching
 redirect_from:
   - /Coaching-Questions
   - /coach
