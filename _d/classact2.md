@@ -13,14 +13,18 @@ Be a class act. Fantatic advice.
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Seek first to understand](#seek-first-to-understand)
-- [Be compassionate](#be-compassionate)
-- [Appreciate](#appreciate)
-- [Not taking the bait.](#not-taking-the-bait)
-- [Other](#other)
+- [The practices](#the-practices)
+    - [Seek first to understand](#seek-first-to-understand)
+    - [Be compassionate](#be-compassionate)
+    - [Appreciate](#appreciate)
+- [Great Examples](#great-examples)
+    - [Not taking the bait.](#not-taking-the-bait)
+    - [Other](#other)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+## The practices
 
 ### Seek first to understand
 
@@ -33,6 +37,8 @@ Be a class act. Fantatic advice.
 ### Appreciate
 
 {%include summarize-page.html src="/grandma" %}
+
+## Great Examples
 
 ### Not taking the bait.
 
