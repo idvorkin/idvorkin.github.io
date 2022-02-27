@@ -16,6 +16,7 @@ Be a class act. Fantatic advice.
 - [Seek first to understand](#seek-first-to-understand)
 - [Be compassionate](#be-compassionate)
 - [Appreciate](#appreciate)
+- [Not taking the bait.](#not-taking-the-bait)
 - [Other](#other)
 
 <!-- vim-markdown-toc -->
@@ -32,6 +33,19 @@ Be a class act. Fantatic advice.
 ### Appreciate
 
 {%include summarize-page.html src="/grandma" %}
+
+### Not taking the bait.
+
+Steve Jobs not being baited by an insult.
+
+{% include youtube.html src="FF-tKLISfPE" %}
+
+Bill Gates not being baited to complain about the government response to covid
+
+- Interviewer: Trying to Stir a rage answer on why wasted on February
+- Bill Gates: OK, we didn't act, but the good news is "focus on productive action"
+
+{% include youtube.html src="Xe8fIjxicoo?start=643" %}
 
 ### Other
 
