@@ -48,23 +48,17 @@ Google is a very data driven, willing to challenge the status quo company. One o
 
 ### Facebook's principles
 
-As we build the next chapter of our company as Meta, we just updated the values that guide our work. I wrote the note below to our employees and I wanted to share with everyone in our community as well. We will continue hiring around the world, and it's helpful for people to know what it's like working at Meta and what makes us different from other companies.
+**Move Fast** helps us to build and learn faster than anyone else. This means acting with urgency and not waiting until next week to do something you could do today. At our scale, this also means continuously working to increase the velocity of our highest priority initiatives by methodically removing barriers that get in the way. It's about moving fast together -- in one direction as a company, not just as individuals.
 
-Now is the right time to update our values and our cultural operating system. I've always believed that in order for values to be useful, they need to be ideas that good companies can reasonably disagree with or emphasize differently. By working at Meta, we commit to applying these values to our work every day. I think these values capture how we must act as a company to bring our vision to life.
+**Focus on Long-Term Impact** emphasizes long-term thinking and encourages us to extend the timeline for the impact we have, rather than optimizing for near-term wins. We should take on the challenges that will be the most impactful, even if the full results won't be seen for years.
 
-Move Fast helps us to build and learn faster than anyone else. This means acting with urgency and not waiting until next week to do something you could do today. At our scale, this also means continuously working to increase the velocity of our highest priority initiatives by methodically removing barriers that get in the way. It's about moving fast together -- in one direction as a company, not just as individuals.
+**Build Awesome Things** pushes us to ship things that are not just good, but also awe-inspiring. We've already built products that are useful to billions of people, but in our next chapter we'll focus more on inspiring people as well. This quality bar should apply to everything we do.
 
-Focus on Long-Term Impact emphasizes long-term thinking and encourages us to extend the timeline for the impact we have, rather than optimizing for near-term wins. We should take on the challenges that will be the most impactful, even if the full results won't be seen for years.
+**Live in the Future** guides us to build the future of distributed work that we want, where opportunity isn't limited by geography. This means operating as a distributed-first company and being the early adopters of the future products we're building to help people feel present together no matter where they are.
 
-Build Awesome Things pushes us to ship things that are not just good, but also awe-inspiring. We've already built products that are useful to billions of people, but in our next chapter we'll focus more on inspiring people as well. This quality bar should apply to everything we do.
+**Be Direct and Respect Your Colleagues** is about creating a culture where we are straightforward and willing to have hard conversations with each other. At the same time, we are also respectful and when we share feedback we recognize that many of the world's leading experts work here.
 
-Live in the Future guides us to build the future of distributed work that we want, where opportunity isn't limited by geography. This means operating as a distributed-first company and being the early adopters of the future products we're building to help people feel present together no matter where they are.
-
-Be Direct and Respect Your Colleagues is about creating a culture where we are straightforward and willing to have hard conversations with each other. At the same time, we are also respectful and when we share feedback we recognize that many of the world's leading experts work here.
-
-Meta, Metamates, Me is about being good stewards of our company and mission. It's about the sense of responsibility we have for our collective success and to each other as teammates. It's about taking care of our company and each other.
-
-At the end of the day, values aren't what you write on a website but what we hold each other accountable for every day. I encourage you to reflect on these values and what they mean to you as we start working on this next chapter for our company.kjk
+**Meta, Metamates, Me** is about being good stewards of our company and mission. It's about the sense of responsibility we have for our collective success and to each other as teammates. It's about taking care of our company and each other.
 
 ### Amazon's leadership principles
 
