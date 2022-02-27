@@ -21,10 +21,10 @@ Every day I try to write 3 prompts in the form of:
 
 I'm grateful for X, To God because Y, to Other because Z, to myself because A.
 
-- The element: To build my muscle
-- To God: To build my appreciation for wonder in the universe
-- To Other: To build my appreciation and compassion for others and their contribution
-- To Myself: To reinforce my good habits and behvaior.
+- **The element**: To build my muscle
+- **To God**: To build my appreciation for wonder in the universe
+- **To Other**: To build my appreciation and compassion for others and their contribution
+- **To Myself**: To reinforce my good habits and behvaior.
 
 However, these start to get repetitive and stale quickly.
 
