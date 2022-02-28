@@ -20,6 +20,7 @@ Using GPT3 is like coaching a superintelligent cat into learning a new trick: yo
 - [Prompt engineering.](#prompt-engineering)
 - [Tech](#tech)
     - [GPT3 vs GPT2](#gpt3-vs-gpt2)
+    - [An example summary](#an-example-summary)
 - [Related ideas](#related-ideas)
 
 <!-- vim-markdown-toc -->
@@ -82,5 +83,16 @@ Because the input is a prompt which gets autcompleted, prompt generation is huge
 
 - Finetuning is done via passing in a prompt.
 - Much bigger model
+
+### An example summary
+
+My blog journal [Week 601](https://idvork.in/ig66/601), and GPT's summary:
+
+_**The protagonist** The protagonist of this journal is a parent of two children. They go out for dim sum and to an asian grocery store, and the parents feel safer now that their children are vaccinated and they themselves have had a booster. They explore fun masks, as Covid has been going on for a while. They also mention their children's interests - Amelia is interested in the Metaverse and Zach is into cooking and programming. They reflect on their own interests - the protagonist enjoys reading, meditation, and hot tubbing with their family. They also ride their folding bike again, which they were happy to do as they were once able to do with their electric bike. Lastly, they mention their spouse's interests - Tori is busy working at the theater_
+
+See me creating this in my enabling environment:
+
+[![asciicast](https://asciinema.org/a/Tl4UcEOW64qOuYkMjejvvUlLi.svg)](https://asciinema.org/a/Tl4UcEOW64qOuYkMjejvvUlLi)
+With source code [here](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/gpt3.py)
 
 ## Related ideas
