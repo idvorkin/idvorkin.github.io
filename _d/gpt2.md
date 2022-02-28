@@ -20,6 +20,7 @@ Using GPT3 is like coaching a superintelligent cat into learning a new trick: yo
 - [Prompt engineering.](#prompt-engineering)
 - [Tech](#tech)
     - [GPT3 vs GPT2](#gpt3-vs-gpt2)
+    - [GPT3 vs Instruct GPT](#gpt3-vs-instruct-gpt)
     - [An example summary](#an-example-summary)
 - [Related ideas](#related-ideas)
 
@@ -83,6 +84,12 @@ Because the input is a prompt which gets autcompleted, prompt generation is huge
 
 - Finetuning is done via passing in a prompt.
 - Much bigger model
+
+### GPT3 vs Instruct GPT
+
+The original GPT3 engine had a tendency to go of the rail, which I really enjoyed. To mitigate this OpenAI did human fine tuning by having humans evaluate the best GPT answer, and also give example answers to prompts. This was really effective, and is now the default GPT model.
+
+Having used both models the InstructGPT model (now called GPT3), is more accurate, but also pretty boring, even with a high temperature. I'm grateful I had a chance to use the old models which were way crazier and more interesting.
 
 ### An example summary
 
