@@ -17,14 +17,14 @@ Useful writing tells people something true and important that they didn't alread
 <!-- vim-markdown-toc GFM -->
 
 - [Why](#why)
-    - [Writing to understand, writing to be understood.](#writing-to-understand-writing-to-be-understood)
+    - [Writing to understand, writing to be understood](#writing-to-understand-writing-to-be-understood)
     - [Amazon's Writing Culture](#amazons-writing-culture)
     - [Sucking till you don't](#sucking-till-you-dont)
     - [Building Knowledge - Evergreen notes](#building-knowledge---evergreen-notes)
 - [Writing to understand](#writing-to-understand)
-    - [All Mental models are wrong.](#all-mental-models-are-wrong)
+    - [All Mental models are wrong](#all-mental-models-are-wrong)
     - [SWOT and SOAR - Exploring the space](#swot-and-soar---exploring-the-space)
-    - [MECE - How you know you're done.](#mece---how-you-know-youre-done)
+    - [MECE - How you know you're done](#mece---how-you-know-youre-done)
     - [Minto's Pyramid Principle](#mintos-pyramid-principle)
     - [Elon's First Principles](#elons-first-principles)
     - [Five Whys](#five-whys)
@@ -34,13 +34,13 @@ Useful writing tells people something true and important that they didn't alread
     - [Know your audience](#know-your-audience)
     - [The journey or the recommendation](#the-journey-or-the-recommendation)
     - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
-    - [The Pixar Formula:](#the-pixar-formula)
+    - [The Pixar Formula](#the-pixar-formula)
     - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
     - [The crappy modern business book](#the-crappy-modern-business-book)
     - [The Hero's Journey - For very long form](#the-heros-journey---for-very-long-form)
 - [Pen to paper](#pen-to-paper)
     - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
-    - [On essay's and writing:](#on-essays-and-writing)
+    - [On essay's and writing](#on-essays-and-writing)
     - [How to write effectively](#how-to-write-effectively)
     - [How to tell a great story](#how-to-tell-a-great-story)
     - [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
@@ -53,7 +53,7 @@ Useful writing tells people something true and important that they didn't alread
 
 ## Why
 
-### Writing to understand, writing to be understood.
+### Writing to understand, writing to be understood
 
 You write to understand a topic, and to help others understand.
 
@@ -116,7 +116,7 @@ You'll note, this blog is my implementaiton of evergreen notes.
 
 ## Writing to understand
 
-### All Mental models are wrong.
+### All Mental models are wrong
 
 See [7 habits concepts](/7h-c0) Maps vs Terrain
 
@@ -144,7 +144,7 @@ SOAR:
 | **Today**    | Strength          | Opportunity |
 | **Tomorrow** | Aspiration        | Results     |
 
-### MECE - How you know you're done.
+### MECE - How you know you're done
 
 Mutually Exclusive, Collectively Exhausted (MECE), is two distint ideas.
 
@@ -152,7 +152,7 @@ Mutually Exclusive, Collectively Exhausted (MECE), is two distint ideas.
 
 “Collectively exhaustive” means that the set of ideas is inclusive of all possible options. Going back to the six-sided dice example, the set {1,2,3,4,5,6} is mutually exclusive AND collectively exhaustive.
 
-More details: https://strategyu.co/wtf-is-mece-mutually-exclusive-collectively-exhaustive/
+More details: <https://strategyu.co/wtf-is-mece-mutually-exclusive-collectively-exhaustive/>
 
 ### Minto's Pyramid Principle
 
@@ -243,9 +243,9 @@ Consider using the Hero's formula, or the pixar formula below.
 
 ### The detective formula: Situation, Complication, Resolution
 
-### The Pixar Formula:
+### The Pixar Formula
 
-https://startuppitch.substack.com/p/nail-your-startup-pitch-use-pixars
+<https://startuppitch.substack.com/p/nail-your-startup-pitch-use-pixars>
 
 - Situation/Context:
   - Once upon a time there was [details]
@@ -319,11 +319,11 @@ Writing breaks down into 4 distinct phases: brainstorming, organization, writing
 
 Each job has a specific goal, and that goal should be your sole focus during while doing that job. Do not do the next job, and do not go back to previous jobs. To reinforce the distinctness of each job, consider using a different tool, and physical reminders of each job.
 
-### On essay's and writing:
+### On essay's and writing
 
 Paul Graham
 
-http://www.paulgraham.com/useful.html
+<http://www.paulgraham.com/useful.html>
 
 _I've never tried to count how many times I proofread essays, but I'm sure there are sentences I've read 100 times before publishing them. When I proofread an essay, there are usually passages that stick out in an annoying way, sometimes because they're clumsily written, and sometimes because I'm not sure they're true. The annoyance starts out unconscious, but after the tenth reading or so I'm saying "Ugh, that part" each time I hit it. They become like briars that catch your sleeve as you walk past. Usually I won't publish an essay till they're all gone — till I can read through the whole thing without the feeling of anything catching._
 
