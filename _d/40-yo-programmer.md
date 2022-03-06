@@ -11,22 +11,22 @@ In 2002, I started programming at MSFT with lots of other 20 year old. I don't r
 
 _TODO: Picture of pyramid of age distributions_
 
-https://insights.stackoverflow.com/survey/2020#developer-profile-age
+<https://insights.stackoverflow.com/survey/2020#developer-profile-age>
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [BIG DISCLAIMER](#big-disclaimer)
 - [Hypothesis](#hypothesis)
-    - [Exponential growth of programmers](#exponential-growth-of-programmers)
-    - [Won the lottery and cashed out](#won-the-lottery-and-cashed-out)
-    - [Moved to management.](#moved-to-management)
-    - [Switched to other industries.](#switched-to-other-industries)
+  - [Exponential growth of programmers](#exponential-growth-of-programmers)
+  - [Won the lottery and cashed out](#won-the-lottery-and-cashed-out)
+  - [Moved to management](#moved-to-management)
+  - [Switched to other industries](#switched-to-other-industries)
 - [Is age discrimination a thing?](#is-age-discrimination-a-thing)
 - [Negative Frame of Minds](#negative-frame-of-minds)
-    - [I don't care about this new stuff, it's all BS, I'm just gonna do what I want.](#i-dont-care-about-this-new-stuff-its-all-bs-im-just-gonna-do-what-i-want)
-    - [Who moved my cheese?](#who-moved-my-cheese)
-    - [I just want to coast till I have enough to retire.](#i-just-want-to-coast-till-i-have-enough-to-retire)
+  - [I don't care about this new stuff, it's all BS, I'm just gonna do what I want](#i-dont-care-about-this-new-stuff-its-all-bs-im-just-gonna-do-what-i-want)
+  - [Who moved my cheese?](#who-moved-my-cheese)
+  - [I just want to coast till I have enough to retire](#i-just-want-to-coast-till-i-have-enough-to-retire)
 - [Age Based Advantages](#age-based-advantages)
 - [Age Based Cognative Declines](#age-based-cognative-declines)
 
@@ -49,11 +49,11 @@ From clean craftsmanship:
 
 The software industry has minted many millionaires. I've met lots of engineers who were able to retire.
 
-#### Moved to management.
+#### Moved to management
 
 Some folks have moved to management, but that can't be all of them, as management is a tree with fanout of 1:10, so that could at most account for 1 in 10.
 
-#### Switched to other industries.
+#### Switched to other industries
 
 I don't see a lot of this in my peer group, curious.
 
@@ -65,11 +65,11 @@ Many people have told me there is, I can honestly say, having performed 100s of 
 
 While I haven't seen age discrimination due to age, I've seen some attributes that tend to be attributed to older folks.
 
-#### I don't care about this new stuff, it's all BS, I'm just gonna do what I want.
+#### I don't care about this new stuff, it's all BS, I'm just gonna do what I want
 
 #### Who moved my cheese?
 
-#### I just want to coast till I have enough to retire.
+#### I just want to coast till I have enough to retire
 
 ### Age Based Advantages
 
