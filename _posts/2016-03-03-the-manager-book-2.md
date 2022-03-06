@@ -232,7 +232,7 @@ Outputs:
 
 <a id="l-what-managers-schedule"></a>
 
-_For non-managers, recall a manager's purpose is supporting others, not making stuff. As a result they have a [manager schedule, not a maker schedule](http://www.paulgraham.com/makers schedule.htm)._
+\_For non-managers, recall a manager's purpose is supporting others, not making stuff. As a result they have a [manager schedule, not a maker schedule](http://www.paulgraham.com/makersschedule.html).
 
 In a typical 44 hours week, 24 hours are standing commitments with others, and 20 hours vary based on the time of year, and needs of the team, business, and partners. Vivek Garg has a good post on his [manager of manager's calendar if you want more insights](https://istn.substack.com/p/rush-hour-go-inside-the-calendar).
 
