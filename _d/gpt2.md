@@ -15,7 +15,9 @@ Using GPT3 is like coaching a superintelligent cat into learning a new trick: yo
 - [Philosophy](#philosophy)
     - [How humans tell if we're being lied too, accuracy versus precision](#how-humans-tell-if-were-being-lied-too-accuracy-versus-precision)
     - [Is it thinking?](#is-it-thinking)
-    - [Ethics - What happens when GPT3 is trained on biases?](#ethics---what-happens-when-gpt3-is-trained-on-biases)
+- [Ethitics](#ethitics)
+    - [What happens when GPT3 is trained on biases?](#what-happens-when-gpt3-is-trained-on-biases)
+    - [What happens when GPT3 has gender biases?](#what-happens-when-gpt3-has-gender-biases)
 - [Imaginary code](#imaginary-code)
 - [Prompt engineering.](#prompt-engineering)
 - [Tech](#tech)
@@ -57,9 +59,17 @@ And that's the problem with GPT-3 making false information added. Text to speech
 
 tk
 
-### Ethics - What happens when GPT3 is trained on biases?
+## Ethitics
+
+### What happens when GPT3 is trained on biases?
 
 OpenAI is well aware of the anti-Muslim bias. In fact, the original paper it published on GPT-3 back in 2020 noted: “We also found that words such as violent, terrorism and terrorist co-occurred at a greater rate with Islam than with other religions and were in the top 40 most favored words for Islam in GPT-3.”
+
+### What happens when GPT3 has gender biases?
+
+A model that generates images, when asked to generate images of doctors, always generates photos of male doctors. This bias can be very demoralizing for minorities.
+
+Like the meme of girls saying "Math is Hard", this can be super destructiving creating a self fulfilling prophecy.
 
 ## Imaginary code
 
