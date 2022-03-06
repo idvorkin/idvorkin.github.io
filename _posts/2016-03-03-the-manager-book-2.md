@@ -32,45 +32,45 @@ This post uses the word manager, but the majority of topics are applicable all s
 
 <!-- vim-markdown-toc GFM -->
 
-- [What does a manager do?](#what-does-a-manager-do)
-    - [What are a managers responsibilities?](#what-are-a-managers-responsibilities)
-    - [How do you measure their success?](#how-do-you-measure-their-success)
-    - [What is a manager accountable for?](#what-is-a-manager-accountable-for)
-    - [How do you describe your job to people outside the industry?](#how-do-you-describe-your-job-to-people-outside-the-industry)
+- [What does a manager do](#what-does-a-manager-do)
+    - [What are a managers responsibilities](#what-are-a-managers-responsibilities)
+    - [How do you measure their success](#how-do-you-measure-their-success)
+    - [What is a manager accountable for](#what-is-a-manager-accountable-for)
+    - [How do you describe your job to people outside the industry](#how-do-you-describe-your-job-to-people-outside-the-industry)
     - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
-    - [What do you do in the first 90 days?](#what-do-you-do-in-the-first-90-days)
-    - [What do managers do all day?](#what-do-managers-do-all-day)
-    - [Should managers be technical?](#should-managers-be-technical)
-    - [Should managers code?](#should-managers-code)
-    - [What engineering efficiency metrics should a manager monitor.](#what-engineering-efficiency-metrics-should-a-manager-monitor)
+    - [What do you do in the first 90 days](#what-do-you-do-in-the-first-90-days)
+    - [What do managers do all day](#what-do-managers-do-all-day)
+    - [Should managers be technical](#should-managers-be-technical)
+    - [Should managers code](#should-managers-code)
+    - [What engineering efficiency metrics should a manager monitor](#what-engineering-efficiency-metrics-should-a-manager-monitor)
 - [Managing and Developing People](#managing-and-developing-people)
-    - [How do you coach?](#how-do-you-coach)
-    - [What mechanisms do you have to ensure career development?](#what-mechanisms-do-you-have-to-ensure-career-development)
-    - [How do you support folks with their career growth plans (CGPs)?](#how-do-you-support-folks-with-their-career-growth-plans-cgps)
-    - [How do you support folks by pre-writing self assessments?](#how-do-you-support-folks-by-pre-writing-self-assessments)
-    - [How do you give fast, frequent, feedback?](#how-do-you-give-fast-frequent-feedback)
-    - [How do you think about situational leadership?](#how-do-you-think-about-situational-leadership)
-    - [What is the level specific career expectations and growth strategies?](#what-is-the-level-specific-career-expectations-and-growth-strategies)
-    - [How do you help people switch jobs?](#how-do-you-help-people-switch-jobs)
-    - [How do you keep people motivated?](#how-do-you-keep-people-motivated)
+    - [How do you coach](#how-do-you-coach)
+    - [What mechanisms do you have to ensure career development](#what-mechanisms-do-you-have-to-ensure-career-development)
+    - [How do you support folks with their career growth plans (CGPs)](#how-do-you-support-folks-with-their-career-growth-plans-cgps)
+    - [How do you support folks by pre-writing self assessments](#how-do-you-support-folks-by-pre-writing-self-assessments)
+    - [How do you give fast, frequent, feedback](#how-do-you-give-fast-frequent-feedback)
+    - [How do you think about situational leadership](#how-do-you-think-about-situational-leadership)
+    - [What is the level specific career expectations and growth strategies](#what-is-the-level-specific-career-expectations-and-growth-strategies)
+    - [How do you help people switch jobs](#how-do-you-help-people-switch-jobs)
+    - [How do you keep people motivated](#how-do-you-keep-people-motivated)
     - [How to motivate through personal experience](#how-to-motivate-through-personal-experience)
     - [How to motivate through team environment](#how-to-motivate-through-team-environment)
-    - [How do you give challenging feedback?](#how-do-you-give-challenging-feedback)
-    - [What's the point of 1:1s?](#whats-the-point-of-11s)
-    - [What do you do in 1:1s?](#what-do-you-do-in-11s)
-    - [How do you handle communication problems?](#how-do-you-handle-communication-problems)
-    - [How do you handle promotion preparation (and fever)?](#how-do-you-handle-promotion-preparation-and-fever)
-    - [How do you identify and grow potential managers?](#how-do-you-identify-and-grow-potential-managers)
-    - [How did you grow top talent?](#how-did-you-grow-top-talent)
+    - [How do you give challenging feedback](#how-do-you-give-challenging-feedback)
+    - [What's the point of 1:1s](#whats-the-point-of-11s)
+    - [What do you do in 1:1s](#what-do-you-do-in-11s)
+    - [How do you handle communication problems](#how-do-you-handle-communication-problems)
+    - [How do you handle promotion preparation (and fever)](#how-do-you-handle-promotion-preparation-and-fever)
+    - [How do you identify and grow potential managers](#how-do-you-identify-and-grow-potential-managers)
+    - [How did you grow top talent](#how-did-you-grow-top-talent)
     - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
     - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
     - [How do you have a difficult converastion](#how-do-you-have-a-difficult-converastion)
 - [Culture](#culture)
-    - [What is your ideal culture?](#what-is-your-ideal-culture)
+    - [What is your ideal culture](#what-is-your-ideal-culture)
     - [How do you help a team gel](#how-do-you-help-a-team-gel)
     - [What order would you introduce culture](#what-order-would-you-introduce-culture)
-    - [How do you make a good culture?](#how-do-you-make-a-good-culture)
-    - [How do you handle Remote Work?](#how-do-you-handle-remote-work)
+    - [How do you make a good culture](#how-do-you-make-a-good-culture)
+    - [How do you handle Remote Work](#how-do-you-handle-remote-work)
     - [What about Work Life Balance](#what-about-work-life-balance)
     - [How you deal with team disagrees with the leadership](#how-you-deal-with-team-disagrees-with-the-leadership)
     - [Agency and Psychological Safety](#agency-and-psychological-safety)
@@ -80,7 +80,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [The dark side of process](#the-dark-side-of-process)
     - [On Change](#on-change)
     - [That sounds like good intentions - Factories and Artisans](#that-sounds-like-good-intentions---factories-and-artisans)
-    - [Never have a human do what a computer can do.](#never-have-a-human-do-what-a-computer-can-do)
+    - [Never have a human do what a computer can do](#never-have-a-human-do-what-a-computer-can-do)
     - [Rich communication - Team meeting](#rich-communication---team-meeting)
     - [Continuous Learning - Deep Dives, Knowledge Transfer and Guest Speakers](#continuous-learning---deep-dives-knowledge-transfer-and-guest-speakers)
     - [Engineering Excellence - Operational Review and Correction of Errors](#engineering-excellence---operational-review-and-correction-of-errors)
@@ -90,25 +90,25 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Quality and Technical Growth Design+Arch Reviews](#quality-and-technical-growth-designarch-reviews)
 - [Planning, Roadmaps and Resource Allocation](#planning-roadmaps-and-resource-allocation)
     - [Defining Success - How does goal setting work](#defining-success---how-does-goal-setting-work)
-    - [How do you do planning and come up with roadmaps.](#how-do-you-do-planning-and-come-up-with-roadmaps)
-    - [How does resource allocation work?](#how-does-resource-allocation-work)
-    - [The road building analogy to software development roles.](#the-road-building-analogy-to-software-development-roles)
+    - [How do you do planning and come up with roadmaps](#how-do-you-do-planning-and-come-up-with-roadmaps)
+    - [How does resource allocation work](#how-does-resource-allocation-work)
+    - [The road building analogy to software development roles](#the-road-building-analogy-to-software-development-roles)
 - [Hiring](#hiring)
-    - [What are you looking for when you recruit?](#what-are-you-looking-for-when-you-recruit)
-    - [Do they prefer to hire only experienced folks?](#do-they-prefer-to-hire-only-experienced-folks)
-    - [Are they more comfortable with generalists or specialists?](#are-they-more-comfortable-with-generalists-or-specialists)
-    - [How do you think about hiring?](#how-do-you-think-about-hiring)
-    - [How do you think about the hiring funnel.](#how-do-you-think-about-the-hiring-funnel)
-    - [What about structured vs free form interview loops?](#what-about-structured-vs-free-form-interview-loops)
-    - [What are better kinds of interviews?](#what-are-better-kinds-of-interviews)
+    - [What are you looking for when you recruit](#what-are-you-looking-for-when-you-recruit)
+    - [Do they prefer to hire only experienced folks](#do-they-prefer-to-hire-only-experienced-folks)
+    - [Are they more comfortable with generalists or specialists](#are-they-more-comfortable-with-generalists-or-specialists)
+    - [How do you think about hiring](#how-do-you-think-about-hiring)
+    - [How do you think about the hiring funnel](#how-do-you-think-about-the-hiring-funnel)
+    - [What about structured vs free form interview loops](#what-about-structured-vs-free-form-interview-loops)
+    - [What are better kinds of interviews](#what-are-better-kinds-of-interviews)
     - [What do you do when someone says they are quitting](#what-do-you-do-when-someone-says-they-are-quitting)
     - [Best hire of your career](#best-hire-of-your-career)
 - [Firing and Performance Management](#firing-and-performance-management)
     - [Firing Percents](#firing-percents)
     - [The Process](#the-process)
-    - [What are your thoughts on a PIP?](#what-are-your-thoughts-on-a-pip)
-    - [How do you deal with people performance issues?](#how-do-you-deal-with-people-performance-issues)
-    - [How do you coach employee back to success?](#how-do-you-coach-employee-back-to-success)
+    - [What are your thoughts on a PIP](#what-are-your-thoughts-on-a-pip)
+    - [How do you deal with people performance issues](#how-do-you-deal-with-people-performance-issues)
+    - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
 - [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
     - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
     - [Telling in the team](#telling-in-the-team)
@@ -118,12 +118,12 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
 - [Personal Motivations](#personal-motivations)
-    - [Why is management attractive to Igor?](#why-is-management-attractive-to-igor)
-    - [What is Igor's dream job?](#what-is-igors-dream-job)
-    - [What is Igor's career aspiration?](#what-is-igors-career-aspiration)
-    - [Why do you think Igor is a good coach?](#why-do-you-think-igor-is-a-good-coach)
-    - [Why do you prefer being a manager vs an IC.](#why-do-you-prefer-being-a-manager-vs-an-ic)
-    - [What if managers memorize these answers for interviews.](#what-if-managers-memorize-these-answers-for-interviews)
+    - [Why is management attractive to Igor](#why-is-management-attractive-to-igor)
+    - [What is Igor's dream job](#what-is-igors-dream-job)
+    - [What is Igor's career aspiration](#what-is-igors-career-aspiration)
+    - [Why do you think Igor is a good coach](#why-do-you-think-igor-is-a-good-coach)
+    - [Why do you prefer being a manager vs an IC](#why-do-you-prefer-being-a-manager-vs-an-ic)
+    - [What if managers memorize these answers for interviews](#what-if-managers-memorize-these-answers-for-interviews)
 - [Business Acumen and Strategy](#business-acumen-and-strategy)
 - [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
     - [Piniata](#piniata)
@@ -131,27 +131,27 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [An engineering team as the parts of the car](#an-engineering-team-as-the-parts-of-the-car)
     - [New hire perspective is like landing a plane](#new-hire-perspective-is-like-landing-a-plane)
 - [Questions managers get](#questions-managers-get)
-    - [What do you do all day?](#what-do-you-do-all-day)
-    - [What's the best/worst part of your job?](#whats-the-bestworst-part-of-your-job)
-    - [How do you get anything done with all of those meetings?](#how-do-you-get-anything-done-with-all-of-those-meetings)
-    - [What do you think developers do?](#what-do-you-think-developers-do)
-    - [How can devs do to make managers job's easier?](#how-can-devs-do-to-make-managers-jobs-easier)
-    - [How does a dev find out if they’d be good at or enjoy being a manager?](#how-does-a-dev-find-out-if-theyd-be-good-at-or-enjoy-being-a-manager)
-    - [Why do managers always say coding is part of their job but we all know it isn’t?](#why-do-managers-always-say-coding-is-part-of-their-job-but-we-all-know-it-isnt)
+    - [What do you do all day](#what-do-you-do-all-day)
+    - [What's the best/worst part of your job](#whats-the-bestworst-part-of-your-job)
+    - [How do you get anything done with all of those meetings](#how-do-you-get-anything-done-with-all-of-those-meetings)
+    - [What do you think developers do](#what-do-you-think-developers-do)
+    - [How can devs do to make managers job's easier](#how-can-devs-do-to-make-managers-jobs-easier)
+    - [How does a dev find out if they’d be good at or enjoy being a manager](#how-does-a-dev-find-out-if-theyd-be-good-at-or-enjoy-being-a-manager)
+    - [Why do managers always say coding is part of their job but we all know it isn’t](#why-do-managers-always-say-coding-is-part-of-their-job-but-we-all-know-it-isnt)
 - [Appendix](#appendix)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## What does a manager do?
+## What does a manager do
 
 <a id="l-what-managers-do"></a>
 
-### What are a managers responsibilities?
+### What are a managers responsibilities
 
-### How do you measure their success?
+### How do you measure their success
 
-### What is a manager accountable for?
+### What is a manager accountable for
 
 The success of a manager is the success of the team. This manifest in 4 dimensions:
 
@@ -169,7 +169,7 @@ An acid test:
 | Engineering Efficiency and Process | Engineering systems and protocols ensure a pit of success. Process is automated, and releases have high velocity and minimal risk.                                                                                                                |
 | Technical Assets                   | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (take debt if you might be able to write off the asset) |
 
-### How do you describe your job to people outside the industry?
+### How do you describe your job to people outside the industry
 
 I run a factory which produces widgets and has employees. For those in the industry this translates to:
 
@@ -218,7 +218,7 @@ I run a factory which produces widgets and has employees. For those in the indus
 - Actual: When need to surprise folks, abrupt direction change or killing projects.
 - Likely, but I haven't done it: Layoffs, when know and can't tell.
 
-### What do you do in the first 90 days?
+### What do you do in the first 90 days
 
 First 90 days is [the bible here](/90days)
 
@@ -228,7 +228,7 @@ Outputs:
 - Trust: Relationships with team, and peers, and partners.
 - Knowledge: Know critical parts of business, tech, org.
 
-### What do managers do all day?
+### What do managers do all day
 
 <a id="l-what-managers-schedule"></a>
 
@@ -274,7 +274,7 @@ Depending on time of year, and experience of my team and partners, I'm doing 1 o
 - Architecture/Design/Engineering Excellence brainstorming, and review
 - RCA Analysis
 
-### Should managers be technical?
+### Should managers be technical
 
 Yes they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team and partners. They should ensure the team is making correct architectural decisions and engineering excellence improves due to best practices.
 
@@ -295,7 +295,7 @@ Once developers become managers they have little time to use their technical mus
 - A expert in at multiple languages (for me python, and C#)
 - A expert in multiple technical domains (for me networking and security).
 
-### Should managers code?
+### Should managers code
 
 Managers should read code on specific occasions, but they can't be on critical path because their time is often needed to deal with urgent situations. Thus, they can only write low importance code usually something you'd assign to an SDE-I. At that point, you have a very expensive priority inversion.
 
@@ -307,7 +307,7 @@ SDMs should be reading code occasionally:
 1. Assessing people - Code is a major deliverable for developers and should be inspected as part of people assessment.
 1. Deep dive during major outages - In high risk, time critical situations like outages, you want your best people reviewing the changes, and this includes SDMs. If an SDM can't understand a high risk time sensitive code change, it can be, and should be simplified.
 
-### What engineering efficiency metrics should a manager monitor.
+### What engineering efficiency metrics should a manager monitor
 
 Lots, but these 3 are probably high on the list:
 
@@ -317,13 +317,13 @@ Lots, but these 3 are probably high on the list:
 
 ## Managing and Developing People
 
-### How do you coach?
+### How do you coach
 
 Coaching is a major part of the job, and covered in my [coaching post](/coaching):
 
 _Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic._
 
-### What mechanisms do you have to ensure career development?
+### What mechanisms do you have to ensure career development
 
 **Principles for career development**
 
@@ -343,7 +343,7 @@ To achieve these principles there are several tools:
 | Frequent Feedback         | Immediate       | As Needed         |
 | Situational Leadership    | Stage Dependant | Stage Dependant   |
 
-### How do you support folks with their career growth plans (CGPs)?
+### How do you support folks with their career growth plans (CGPs)
 
 CGPs are Forward looking and a good place to discuss what opportunities are required, and what major development areas should be tackled, and what's required to meet the next career level. [I.M.Wright gives some excellent insights](https://imwrightshardcode.com/2021/11/whats-your-career-plan/)
 
@@ -357,7 +357,7 @@ Each employee has a career growth plan (CGP). This is a document with open ended
 
 To help with the last two questions, this document has the list of expectations for the current level, and next level. For each expectation, you fill in your self assessment of where you are at on the expectations relative to level, sometimes it's below, at or above. This is great tool to ensure you and those supporting you are in sync, and that they can best support you.
 
-### How do you support folks by pre-writing self assessments?
+### How do you support folks by pre-writing self assessments
 
 Think through what will be delivered in the next 1-6 months, and how it will be delivered.
 
@@ -392,7 +392,7 @@ Here are some fictitious examples modelled on my own career:
 
 You should be observing the key to these self assessments is impact. The goal isn't motion, it's impact. If you don't know the impact, you should ask yourself (and your manager) why you are doing the work. Pre-writing self assessments is a great way to do this.
 
-### How do you give fast, frequent, feedback?
+### How do you give fast, frequent, feedback
 
 I aspire to provide immediate observed feedback, for something that is about to happen (like reviewing a document), or a de-brief after a critical meeting or review.
 
@@ -400,7 +400,7 @@ I keep my eyes open for opportunities for feedback from my observations, and fro
 
 My priority is "catching employees doing something right", so I can re-enforce positive behavior. Even better, with positive behaviors I can provide them in public which not only benefits the employee, but also re-enforces that goodness with the team.
 
-### How do you think about situational leadership?
+### How do you think about situational leadership
 
 More details are in my [coaching post](/coaching). Here's a preview:
 
@@ -418,7 +418,7 @@ In each of these stages different support is required.
 | Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
 | Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
 
-### What is the level specific career expectations and growth strategies?
+### What is the level specific career expectations and growth strategies
 
 Depends on the skill level (E.g. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
 
@@ -457,7 +457,7 @@ My approach, and frequent peep questions.
 - How are you maximizing our benefit?
 - How do we make sure we compliment each other?
 
-### How do you help people switch jobs?
+### How do you help people switch jobs
 
 My goal is to find people the right job, not the job on my team. I coach a lot of people through this, and here are my most popular posts:
 
@@ -465,7 +465,7 @@ My goal is to find people the right job, not the job on my team. I coach a lot o
 - [Only care about total compensation](/comp)
 - [What I wish I knew at 22](/twentytwo)
 
-### How do you keep people motivated?
+### How do you keep people motivated
 
 <a id="l-motivation"></a> <a id="l-motivate"></a>
 
@@ -535,7 +535,7 @@ Some moments like:
 - Playing cards for appreciation
 - Managers making breakfast
 
-### How do you give challenging feedback?
+### How do you give challenging feedback
 
 Why is feedback challenging?
 
@@ -554,7 +554,7 @@ Types of tough conversations to flesh out:
 
 Performance, Charter, Re-org, Team mates leaving, Lay Offs.
 
-### What's the point of 1:1s?
+### What's the point of 1:1s
 
 <a id="l-one-on-one"></a>
 
@@ -573,7 +573,7 @@ My goal for 1:1's is to:
 
 (Again with that programming analogy, the 1:1 is a debugger attached catch all exception handler. This allow all concerns to be discussed, understood, rethrown, reprogrammed or ignored. I know - the analogy needs work, help me make it better)
 
-### What do you do in 1:1s?
+### What do you do in 1:1s
 
 My favorite opening is "What's on your mind", then I focus on asking ([coaching questions](/coaching)) and end with "what can I do immediately to help you?"
 
@@ -605,7 +605,7 @@ Other thoughts:
 - I wish I used a 1:1 document, as that seems to be a best practice for most domains.
 - The current norm is 30 minute 1:1's but I enjoyed the old days when an hour was the norm. I often wonder if we've sacrificed effectiveness for efficiency in the 30 minute 1:1 culture.
 
-### How do you handle communication problems?
+### How do you handle communication problems
 
 High order bits:
 
@@ -627,7 +627,7 @@ There are different types of communication problems each needing a different str
   - Say not great on my feet, follow up with a document
 - Uncomfortable in group settings
 
-### How do you handle promotion preparation (and fever)?
+### How do you handle promotion preparation (and fever)
 
 - Surprises are **BAD**:
 
@@ -658,11 +658,11 @@ There are different types of communication problems each needing a different str
 
 Promotion fever is my word for engineers that are completely focused on promotions above all else. In general they fall into a few categories: 1) Not Ready, 2) Just hired, and believe under levelled 3) Ready, but didn't get promo due to bad luck. Regardless, we go through the promotion preparation process.
 
-### How do you identify and grow potential managers?
+### How do you identify and grow potential managers
 
 Engineers that are interested in reading this post make good manager candidates. The path usually start with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many as people issues as people are comfortable with them tracking.
 
-### How did you grow top talent?
+### How did you grow top talent
 
 ### Performance Reveiws: Calibrations PSC, OLR, Connections
 
@@ -726,7 +726,7 @@ From Simon Sinek, a great script:
 
 <a id="l-culture"></a>
 
-### What is your ideal culture?
+### What is your ideal culture
 
 Tough question. I need to think through that
 
@@ -781,7 +781,7 @@ Here's what I worked with the team to establish
 - 1 x 2 week retro
 - 3 x week lunch
 
-### How do you make a good culture?
+### How do you make a good culture
 
 - Model myself
   - On All the Pages
@@ -796,7 +796,7 @@ Here's what I worked with the team to establish
   - Incite pride and purpose
 - Repeat/Repeat/Repeat
 
-### How do you handle Remote Work?
+### How do you handle Remote Work
 
 I'm writing this stuff [my rough outline](/remote-work)
 
@@ -897,7 +897,7 @@ Two way door changes are much safer when performed well:
 - Toyota Assembly line vs Artisan
 - The inconsistency from passionate projects
 
-### Never have a human do what a computer can do.
+### Never have a human do what a computer can do
 
 - Use auto style for code review styles
 - Gather data from bug systems instead of having humans do it.
@@ -982,7 +982,7 @@ For major projects, a large EE project is required (like a technology migration)
 
 Technical Debt is often a bad thing, but like debt it is a good thing if there is a good chance a project will be abandoned and you won't need to pay the interest. Examples here are speculative projects which may be rolled back, and bridges to a future technology.
 
-### How do you do planning and come up with roadmaps.
+### How do you do planning and come up with roadmaps
 
 6 step process
 
@@ -1004,7 +1004,7 @@ The full process is expensive and the team should be shielded from some of it bu
 
 [TODO Picture]
 
-### How does resource allocation work?
+### How does resource allocation work
 
 Resource allocation is maximizing the intersection in the Venn diagram - "Personal Preference", "Business Need" and "Probability of Success" for the business, team and individuals.
 
@@ -1024,7 +1024,7 @@ There are some more concepts I need to flesh out:
 
 **Keeping slack in the system** Anxiety is the difference between reality and expectations. Slack is the tool that helps us better model reality, and keep stress under control.
 
-### The road building analogy to software development roles.
+### The road building analogy to software development roles
 
 Imagine we want to build a new road.
 
@@ -1036,7 +1036,7 @@ Imagine we want to build a new road.
 
 ## Hiring
 
-### What are you looking for when you recruit?
+### What are you looking for when you recruit
 
 Most companies have their “competencies” they test for. But I abstract it down to:
 
@@ -1052,7 +1052,7 @@ Most companies have their “competencies” they test for. But I abstract it do
   - Tell me the hardest feedback you received.
   - Tell me the hardest feedback you gave
 
-### Do they prefer to hire only experienced folks?
+### Do they prefer to hire only experienced folks
 
 I need a pipeline of developers for mentorship, fan out and succession planning.
 
@@ -1068,7 +1068,7 @@ Ratio Senior: SDE-II: SDE-I (1,2,2) => ten person team: 2, 4, 4.
 
 (Bad analogy) A team is like a "conveyor belt", people continually improve and mature and want larger scope, requiring a constant flow of incoming college hires.
 
-### Are they more comfortable with generalists or specialists?
+### Are they more comfortable with generalists or specialists
 
 Generalists - 99% of time
 
@@ -1086,7 +1086,7 @@ Want full stack teams:
 - FE -> Learn the customer empathy through user interactions
 - BE -> Learn the tech chops of complex system.
 
-### How do you think about hiring?
+### How do you think about hiring
 
 My priority list:
 
@@ -1101,7 +1101,7 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
 2. Your solution: The product you're building, the culture and people on the team, and yourself.
 3. The Funnel: Inbound Marketing, Referrals, high touch, post sales support (see next question)
 
-### How do you think about the hiring funnel.
+### How do you think about the hiring funnel
 
 - Before even thinking of funnels
   - Strive to be a class act and do your best.
@@ -1131,7 +1131,7 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
   - Invite them to have lunch with the team.
   - Help them build and evaluate their [dream job, and job switching decision making matrix](/job).
 
-### What about structured vs free form interview loops?
+### What about structured vs free form interview loops
 
 - External Structured
 
@@ -1146,7 +1146,7 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
   - Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them doing their day job.
   - Talk about hard situations they've had. Listen for the criteria smart/gets shit done/emotionally intelligent
 
-### What are better kinds of interviews?
+### What are better kinds of interviews
 
 I've heard the tech interview model described as the second worst kind of assessment strategy, it's only better then everything else we know.
 
@@ -1191,7 +1191,7 @@ As a result Amazon re-instated it's firing ratios.
 
 ### The Process
 
-### What are your thoughts on a PIP?
+### What are your thoughts on a PIP
 
 Three "Players" in this situation:
 
@@ -1237,9 +1237,9 @@ Then there's an official pre-PIP. Which is the same as above, but really clear w
 
 Then there's a formal PIP. Depends on your company but very similar to above, but with clear legal terminology.
 
-### How do you deal with people performance issues?
+### How do you deal with people performance issues
 
-### How do you coach employee back to success?
+### How do you coach employee back to success
 
 - Really depends on the employee
 - Generally:
@@ -1400,7 +1400,7 @@ A great way to do this is set the team up to do spikes on the major work items, 
 
 I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I"m being consistent between my actions and motivations.
 
-### Why is management attractive to Igor?
+### Why is management attractive to Igor
 
 Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years.
 
@@ -1425,19 +1425,19 @@ _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, 
 - On top of best practices
 -->
 
-### What is Igor's dream job?
+### What is Igor's dream job
 
 A preview of [my dream job](/job):
 
 _Jobs have many dimensions and I'll describe my dream job in several dimensions. In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office._
 
-### What is Igor's career aspiration?
+### What is Igor's career aspiration
 
 A preview of [I want to be the best boss my peeps have ever had](/being-a-great-manager)
 
 _I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best._
 
-### Why do you think Igor is a good coach?
+### Why do you think Igor is a good coach
 
 When I explained to someone coaching it the most important aspect of management, they asked why I thought I was a good coach. Took me a while to answer, but here you go:
 
@@ -1446,7 +1446,7 @@ When I explained to someone coaching it the most important aspect of management,
 - I've read and digested slews of [self help books](/books) which while often mocked, are filled with great models.
 - I actively study and practice [coaching](/coach) and effective [decision making](/decide)
 
-### Why do you prefer being a manager vs an IC.
+### Why do you prefer being a manager vs an IC
 
 I think as a manager, the day to day sucks. People problems, managing by spreadsheet, fire fighting, policy violations, etc. But, those days when you look at the team, and see them helping each other, and growing, and when you catch people after a few years and they tell you how impactful you were to their career, and how working on the team was the most fun they ever had - it feels superb.
 
@@ -1456,7 +1456,7 @@ So, in a nutshell, for me those moments of intense satisfaction make it worth th
 
 At each stage of road productions things go wrong and we learn new stuff. TODO Come up with more examples
 
-### What if managers memorize these answers for interviews.
+### What if managers memorize these answers for interviews
 
 Good interviewees prepare as much as possible, thinking through their experiences and philosophies. If this post helps them, that is fantastic. I'm skeptical a bad manager will be able to internalize these answers to the point they can provide rich answers.
 
@@ -1491,23 +1491,23 @@ Specific team members for engine, seat belts, etc
 
 ## Questions managers get
 
-### What do you do all day?
+### What do you do all day
 
 See [the managers schedule](#l-what-managers-schedule) section.
 
-### What's the best/worst part of your job?
+### What's the best/worst part of your job
 
 See [what do managers do](#l-what-managers-do) section.
 
-### How do you get anything done with all of those meetings?
+### How do you get anything done with all of those meetings
 
 The majority of the things I do are about amplifying, de-risking and unblocking people. Much of that works best when there's someone else in the room. Further many of those meetings, especially 1:1s and small groups energize me, giving making me able to tackle the rest of my with gusto.
 
 For tasks that require me to be heads down and [write/think](/write) I try to get that done crazy early in the morning when I have zero interruptions and maximum intellectual horse power.
 
-### What do you think developers do?
+### What do you think developers do
 
-### How can devs do to make managers job's easier?
+### How can devs do to make managers job's easier
 
 **Realize you and the team are a domain expert**
 
@@ -1523,7 +1523,7 @@ Due to positional authority, managers statements can be overweighted. However, m
 - When people are upset/demoralized/angry, often ICs know before managers as people don't tell managers. Sharing this with a manager is great so they can take action.
 - Give feedback, especially hard feedback.
 
-### How does a dev find out if they’d be good at or enjoy being a manager?
+### How does a dev find out if they’d be good at or enjoy being a manager
 
 **Preview as much as you can:**
 
@@ -1536,7 +1536,7 @@ Due to positional authority, managers statements can be overweighted. However, m
 
 Make sure you're a senior enough enginer before becoming a manager (AMZN - L6; FB - E6; MSFT - L65). Once you become a manager, your technical skill drops as most of your energy is focused on other tasks. So, if you don't have a strong enough base, you'll lose your ability to help assess and provide input on technical tasks.
 
-### Why do managers always say coding is part of their job but we all know it isn’t?
+### Why do managers always say coding is part of their job but we all know it isn’t
 
 - more details in the should managers code section\*
 
