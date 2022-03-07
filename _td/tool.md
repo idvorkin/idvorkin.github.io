@@ -655,6 +655,7 @@ Here's some silly, but fun stuff:
 
 - asciiquarium - fishbowl in the terminal
 - cmatrix - the matrix in the terminal
+- phraze - Make cartoon characters say stuff (npx run phraze)
 
 ### CLI Screen Recoding
 
