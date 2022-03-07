@@ -7,14 +7,9 @@
     "@types/mousetrap": "^1.6.8",
     "@types/plotly.js": "^1.54.16",
     "cypress": "^9.0.0",
-    "husky": "^1.2.1",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^1.8.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.5",
+    "prettier": "^1.19.1"
   },
   "name": "idvorkin.github.io",
   "description": "This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), and an [enabling environment](https://notes.andymatuschak.org/z3DaBP4vN1dutjUgrk3jbEeNxScccvDCxDgXe) to interact with them. These are currently intermingled, but",
@@ -39,7 +34,8 @@
     "back-links": "python3 build_back_links.py > back-links.json",
     "tsc": "tsc --watch --allowUmdGlobalAccess",
     "broken_links": "scrapy runspider linkchecker.py -O ~/tmp/brokenlinks.csv && cat ~/tmp/brokenlinks.csv",
-    "_comment": "Contains all commands"
+    "_comment": "Contains all commands",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -53,5 +49,8 @@
   "homepage": "https://github.com/idvorkin/idvorkin.github.io#readme",
   "dependencies": {
     "typescript": "^4.5.2"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
