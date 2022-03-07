@@ -4,6 +4,9 @@ import sys
 import os
 import re
 
+print("This file is now junk")
+
+
 if len(sys.argv) != 2:
     print(f"Syntax: <filename> {sys.argv}")
     exit(-3)

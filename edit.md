@@ -12,14 +12,14 @@ All posts for editting
 {{item.path}}
 {% endfor %}
 
-# Drafts
+# Drafts.
 
 {% for item in site.d %}
 {{item.title}}
 {{item.path}}
 {% endfor %}
 
-# Tech Diary
+# Technical Entries
 
 {% for item in site.td %}
 
