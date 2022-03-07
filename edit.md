@@ -12,7 +12,7 @@ All posts for editting
 {{item.path}}
 {% endfor %}
 
-# Drafts.
+# Drafts
 
 {% for item in site.d %}
 {{item.title}}
