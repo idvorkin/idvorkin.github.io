@@ -93,6 +93,10 @@ class LinkBuilder:
 
             # Skip pages that are not complete
             pageTitle = soup.title.string if soup.title else None
+
+            titleTag = soup.find("meta", property="og:title")
+            pageTitle = titleTag["content"] if titleTag else pageTitle
+
             canonicalTag = soup.find("link", rel="canonical")
             canonicalUrl: PathType = canonicalTag["href"] if canonicalTag else None
             isCompletePage = pageTitle and canonicalUrl
@@ -118,13 +122,16 @@ class LinkBuilder:
                     return False
                 return "nav-item" in tag["class"]
 
-
-            links = [tag["href"] for tag in soup.find_all("a") if "href" in tag.attrs and (not is_site_nav(tag))]
+            links = [
+                tag["href"]
+                for tag in soup.find_all("a")
+                if "href" in tag.attrs and (not is_site_nav(tag))
+            ]
             links = [link for link in links if jekyll_config.is_allow_outgoing(link)]
-            links = [ link.split("#")[0] for link in links]
+            links = [link.split("#")[0] for link in links]
 
             # cut down on small changes to backlinks when minor file changes
-            rounded_len =  len(contents) - len(contents) % 1000
+            rounded_len = len(contents) - len(contents) % 1000
 
             return Page(
                 title=pageTitle,
@@ -133,7 +140,7 @@ class LinkBuilder:
                 file_path=file_path,
                 outgoing_links=links,
                 incoming_links=[],
-                doc_size=rounded_len
+                doc_size=rounded_len,
             )
 
         assert "should never get here"
@@ -151,7 +158,7 @@ class LinkBuilder:
         for link in page.outgoing_links:
             # when a link has an anchor eg foo.html#bar
             # the incoming_link is foo.html, so strip the anchor
-            clean_link = link.split('#')[0]
+            clean_link = link.split("#")[0]
             self.incoming_links[clean_link].append(page.url)
 
         self.pages[page.url] = page
@@ -159,7 +166,9 @@ class LinkBuilder:
     def canonicalize_outgoing_pages(self):
         for page in self.pages.values():
             # Canonicalize redirects
-            page.outgoing_links = [self.redirects.get(link, link) for link in page.outgoing_links]
+            page.outgoing_links = [
+                self.redirects.get(link, link) for link in page.outgoing_links
+            ]
             # Remove duplicates
             page.outgoing_links = list(set(page.outgoing_links))
             # Sort so stable in output
