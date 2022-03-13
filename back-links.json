@@ -129,8 +129,6 @@
         "/savor": "/happy",
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
-        "/SOM": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
         "/som": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
@@ -1520,7 +1518,7 @@
             "py/object": "__main__.Page",
             "url": "/gpt",
             "title": "GPT3 and language models",
-            "description": "Using GPT3 is like coaching a superintelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
+            "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a superintelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
             "file_path": "_site/gpt.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -1529,7 +1527,7 @@
                 "/nlp"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/grateful": {
             "py/object": "__main__.Page",
@@ -1616,21 +1614,6 @@
             ],
             "redirect_url": "",
             "doc_size": 17000
-        },
-        "/Human-Meetings": {
-            "py/object": "__main__.Page",
-            "url": "/Human-Meetings",
-            "title": "Feelings/Human Meetings",
-            "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
-            "file_path": "_site/Human-Meetings.html",
-            "outgoing_links": [],
-            "incoming_links": [
-                "/being-a-great-manager",
-                "/eulogy",
-                "/job"
-            ],
-            "redirect_url": "",
-            "doc_size": 12000
         },
         "/humans-are-underrated": {
             "py/object": "__main__.Page",
