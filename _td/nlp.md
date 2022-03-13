@@ -7,9 +7,7 @@ permalink: /nlp
 
 My explorations of NLP, mostly using my corpus of journal entries and other writing. My intent is two fold 1) learning about NLP and sentiment analysis 2) finding latent meaning in my writing, ideally to help me better understand my own psychological processes. I've had much more success with the former then the latter
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/sentiment_analysis.md)_
-
-# Sentiment Analysis and NLP
+My Journal Entries are private, but you can see my [code here](https://github.com/idvorkin/nlp)(though it is tightly coupled to my corpus and format).
 
 ## Success Criteria
 
@@ -18,7 +16,6 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - Do simple work frequency analysis
 - Played with word embedding
 - Topic/mood over time visualization.
-- use the new dot net core from WSL and \*nix
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -31,13 +28,14 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Focus on Proper Nouns](#focus-on-proper-nouns)
     - [Focus on Verbs/Nouns](#focus-on-verbsnouns)
 - [Sentiment Analysis From Cloud Vendors](#sentiment-analysis-from-cloud-vendors)
+    - [GPT3](#gpt3)
     - [Call Google NLP from C sharp](#call-google-nlp-from-c-sharp)
     - [Put google NLP output into pandas](#put-google-nlp-output-into-pandas)
     - [Evaluate NLP Solutions from various vendors](#evaluate-nlp-solutions-from-various-vendors)
-        - [Google NLP](#google-nlp)
-        - [AWS Comprehend](#aws-comprehend)
-        - [IBM Watson](#ibm-watson)
-        - [Azure NLP service](#azure-nlp-service)
+    - [Google NLP](#google-nlp)
+    - [AWS Comprehend](#aws-comprehend)
+    - [IBM Watson](#ibm-watson)
+    - [Azure NLP service](#azure-nlp-service)
 - [Use cases - Functional](#use-cases---functional)
     - [I can see what I'm thinking about on a single day](#i-can-see-what-im-thinking-about-on-a-single-day)
     - [I can see what I'm thinking about over a time period](#i-can-see-what-im-thinking-about-over-a-time-period)
@@ -46,11 +44,9 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [Up next](#up-next)
 - [Analysis Approaches](#analysis-approaches)
     - [Bag of words](#bag-of-words)
-- [Useful stuff](#useful-stuff)
-    - [GPT3](#gpt3)
     - [Lemmatization vs Stemming](#lemmatization-vs-stemming)
     - [TF/IDF](#tfidf)
-    - [Word Embedding - Word2Vec](#word-embedding---word2vec)
+    - [Word Embedding - Word2Vec (GPT3 is better)](#word-embedding---word2vec-gpt3-is-better)
     - [Bag of words analysis](#bag-of-words-analysis)
 
 <!-- vim-markdown-toc -->
@@ -86,6 +82,12 @@ Haven't had a lot of luck here, my writing isn't very verb focused. Perhaps this
 
 ## Sentiment Analysis From Cloud Vendors
 
+### GPT3
+
+Once GPT 3 came along the other cloud services became irrelevant.
+
+{%include summarize-page.html src="/gpt" %}
+
 ### Call Google NLP from C sharp
 
 See: <https://github.com/idvorkin/play-google-nlp>
@@ -94,15 +96,15 @@ See: <https://github.com/idvorkin/play-google-nlp>
 
 ### Evaluate NLP Solutions from various vendors
 
-#### Google NLP
+### Google NLP
 
 The place I decided to start.
 
-#### AWS Comprehend
+### AWS Comprehend
 
-#### IBM Watson
+### IBM Watson
 
-#### Azure NLP service
+### Azure NLP service
 
 Limited, only supports extraction of key topics, without the different spots of them.
 
@@ -130,19 +132,13 @@ I can score the sentiment of a document as the median(f
 
 ### Bag of words
 
-## Useful stuff
-
-### GPT3
-
-{%include summarize-page.html src="/gpt" %}
-
 ### Lemmatization vs Stemming
 
 ### TF/IDF
 
 Multiply term frequency by inverse document frequency, this boosts words that only appear in this text as they are likely more important (or they're typos).
 
-### Word Embedding - Word2Vec
+### Word Embedding - Word2Vec (GPT3 is better)
 
 Put words into a semantic vector space using unsupervised learning, so words with similar meanings are closer in vector space distance. For example (king - queen) ~ (boy - girl) and toaster is far away from red.
 
