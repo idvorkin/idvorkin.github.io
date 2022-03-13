@@ -39,10 +39,10 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
         - [IBM Watson.](#ibm-watson)
         - [Azure NLP service](#azure-nlp-service)
 - [Use cases - Functional](#use-cases---functional)
-        - [I can see what I'm thinking about on a single day.](#i-can-see-what-im-thinking-about-on-a-single-day)
-        - [I can see what I'm thinking about over a time period.](#i-can-see-what-im-thinking-about-over-a-time-period)
-        - [I can graph my mood over time.](#i-can-graph-my-mood-over-time)
-        - [I can see when my mood goes south.](#i-can-see-when-my-mood-goes-south)
+    - [I can see what I'm thinking about on a single day.](#i-can-see-what-im-thinking-about-on-a-single-day)
+    - [I can see what I'm thinking about over a time period.](#i-can-see-what-im-thinking-about-over-a-time-period)
+    - [I can graph my mood over time.](#i-can-graph-my-mood-over-time)
+    - [I can see when my mood goes south.](#i-can-see-when-my-mood-goes-south)
 - [Up next](#up-next)
 - [Analysis Approaches](#analysis-approaches)
     - [Bag of words.](#bag-of-words)
@@ -88,7 +88,7 @@ Haven't had a lot of luck here, my writing isn't very verb focused. Perhaps this
 
 ### Call Google NLP from C sharp
 
-See: https://github.com/idvorkin/play-google-nlp
+See: <https://github.com/idvorkin/play-google-nlp>
 
 ### Put google NLP output into pandas
 
@@ -100,7 +100,7 @@ The place I decided to start.
 
 #### AWS Comprehend
 
-#### IBM Watson.
+#### IBM Watson
 
 #### Azure NLP service
 
@@ -108,11 +108,11 @@ Limited, only supports extraction of key topics, without the different spots of 
 
 ## Use cases - Functional
 
-#### I can see what I'm thinking about on a single day.
+### I can see what I'm thinking about on a single day
 
-#### I can see what I'm thinking about over a time period.
+### I can see what I'm thinking about over a time period
 
-#### I can graph my mood over time.
+### I can graph my mood over time
 
 Sentiment analysis only works on sentences. For a first order approximation take the median sentence sentiment score for a document. E.g. Median([sentiment(s) for s in sentences]). Graph sentiment by day measured.
 
@@ -122,19 +122,19 @@ TBD:
 
 I can score the sentiment of a document as the median(f
 
-#### I can see when my mood goes south.
+### I can see when my mood goes south
 
 ## Up next
 
 ## Analysis Approaches
 
-### Bag of words.
+### Bag of words
 
 ## Useful stuff
 
 ### GPT3
 
-See my article on [GPT](/gpt)
+{%include summarize-page.html src="/gpt" %}
 
 ### Lemmatization vs Stemming
 
@@ -148,6 +148,6 @@ Put words into a semantic vector space using unsupervised learning, so words wit
 
 Very good articulation of [word embedding](https://jalammar.github.io/illustrated-word2vec/)
 
-### Bag of words analysis.
+### Bag of words analysis
 
 Ignore properties of text other then word frequencies.
