@@ -4,10 +4,10 @@ title: "GPT3 and language models"
 permalink: /gpt
 redirect-from:
   - /lanuage-model
-  - /gpt
+  - /gpt3
 ---
 
-Using GPT3 is like coaching a superintelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t([From Gwern](https://www.gwern.net/GPT-3)).
+Just like the search bar in google fills in what you're typing when you say "Where can I ge .. " GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there's a catch, GPT3 doesn't do the same thing twice (non-deterministic), it's like coaching a superintelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t([From Gwern](https://www.gwern.net/GPT-3)).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -75,18 +75,18 @@ Like the meme of girls saying "Math is Hard", this can be super destructiving cr
 
 Using codex it can figure out what code does, or what functions can be it's amazing.
 
-## Prompt engineering.
+## Prompt engineering
 
 Because the input is a prompt which gets autcompleted, prompt generation is huge.
 
-- https://beta.openai.com/examples
+- <https://beta.openai.com/examples>
 
-* [Prompt library for various models](https://github.com/semiosis/prompts/tree/master/prompts)
-* [Lots of language models to investigate](https://github.com/semiosis/pen.el/blob/master/docs/compatibility-and-interoperatbility.org)
-* [Prompt Database other](https://gptprompts.org/prompts)
-* Super interesting person [On GPT3](https://www.gwern.net/GPT-3)
-* More prompt libraries - https://github.com/maraoz/gpt-scrolls/
-* Using Playground - https://www.twilio.com/blog/ultimate-guide-openai-gpt-3-language-model
+- [Prompt library for various models](https://github.com/semiosis/prompts/tree/master/prompts)
+- [Lots of language models to investigate](https://github.com/semiosis/pen.el/blob/master/docs/compatibility-and-interoperatbility.org)
+- [Prompt Database other](https://gptprompts.org/prompts)
+- Super interesting person [On GPT3](https://www.gwern.net/GPT-3)
+- More prompt libraries - <https://github.com/maraoz/gpt-scrolls/>
+- Using Playground - <https://www.twilio.com/blog/ultimate-guide-openai-gpt-3-language-model>
 
 ## Tech
 
