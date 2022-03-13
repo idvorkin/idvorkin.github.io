@@ -40,33 +40,57 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
 
 ## Engineering
 
-### [Design and Architecture](/design)
+### Design and Architecture
 
-### [Cloud first applications](/td/cloud-first-applications)
+{%include summarize-page.html src="/design" %}
 
-### [Data Systems](/td/data-systems)
+### Cloud first applications
 
-### [Security](/td/better-security-design)
+{%include summarize-page.html src="/td/cloud-first-applications" %}
 
-### [Tech tools and Tips](/tools)
+### Data Systems
 
-### [Testing and Quality](/testing)
+{%include summarize-page.html src="/td/data-systems" %}
+
+### Security
+
+{%include summarize-page.html src="/td/better-security-design" %}
+
+### Tech tools and Tips
+
+{%include summarize-page.html src="/tools" %}
+
+### Testing and Quality
+
+{%include summarize-page.html src="/testing" %}
 
 ## Science
 
-### [Machine Learning](/td/machine-learning)
+### Machine Learning
 
-### [Natural Language Processing](/td/machine-learning)
+{%include summarize-page.html src="/td/machine-learning" %}
 
-### [Computer Video](https://github.com/idvorkin/video-edit)
+### Natural Language Processing
 
-### [Statistics](/td/stats)
+{%include summarize-page.html src="/nlp" %}
+
+### Computer Video
+
+See my repository here: <https://github.com/idvorkin/video-edit>
+
+### Statistics
+
+{%include summarize-page.html src="/td/stats" %}
 
 ## Business Domains
 
-### [Advertising systems](/td/advertising)
+### Advertising systems
 
-### [Decentralized Finance](/defi)
+{%include summarize-page.html src="/td/advertising" %}
+
+### Decentralized Finance
+
+{%include summarize-page.html src="/defi" %}
 
 ### Build your own [...](https://github.com/danistefanovic/build-your-own-x)
 
