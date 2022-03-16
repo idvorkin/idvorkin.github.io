@@ -49,7 +49,11 @@ Pain is in the brain as they say, which is especially true for mental pains. Pai
 
 ## The point of pain
 
-## [Pain vs Suffering](/mental-pain)
+## Pain vs Suffering
+
+Humans need things to have meaning. To give our pain meaning, we usually add sufferening. Suffering is the made up story that transforms our pain from "I have a problem I need to address" to "he doesn't like me", "I'm screwed", "I'll never be able to show my face again".
+
+Pain is a good thing, suffering, is the problem.
 
 ## Phantom vs Real Pain
 
@@ -65,7 +69,9 @@ Pain is in the brain as they say, which is especially true for mental pains. Pai
 
 ### Self
 
-#### Control: [Anxiety](/anxiety)
+#### Control: Anxiety
+
+{%include summarize-page.html src="/anxiety" %}
 
 #### Doubt: Self Doubt
 
@@ -84,6 +90,7 @@ Remember, just because you can feel guilt/shame/emberassed, doesn't mean you sho
 ### Process - In your life
 
 #### Control: [Anxiety](/anxiety)
+{%include summarize-page.html src="/anxiety" %}
 
 #### Doubt: Mistrust and Meaninglessness
 
