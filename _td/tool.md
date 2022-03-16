@@ -234,7 +234,7 @@ Combined with sed and xargs you can do some crazy stuff. In this below case I ta
 
 #### Deploy webapp via git checkin
 
-https://docs.microsoft.com/en-us/azure/app-service/deploy-local-git
+<https://docs.microsoft.com/en-us/azure/app-service/deploy-local-git>
 
 1. Create the git credentials to deploy which gives a new git repository.
 2. Add a git remote
@@ -246,7 +246,7 @@ npx add-gitignore - update gitignore files
 
 Find when text is [deleted](https://stackoverflow.com/questions/12591247/find-when-line-was-deleted/43463653):
 
-```
+```bash
 # ignore the path if you don't know it.
 git log -c -S'missingtext' /path/to/file
 ```
@@ -271,7 +271,7 @@ The TUI clone of git gui - my day to day [git interface](https://jonas.github.io
 
 Or my own favorite, file stat changes in a date range, which I [coded up in zsh](https://github.com/idvorkin/Settings/commit/6271f383995ecd95405c11193213ea5b2da5e083):
 
-```
+```vim
 function gstatdaterange() {
     # $1 - start
     # $2 - end
@@ -291,13 +291,13 @@ function gstatdaterange() {
 
 #### TUI merge - fac
 
-TUI (merge tool)[https://github.com/mkchoi212/fac]
+TUI [merge tool](https://github.com/mkchoi212/fac)
 
 ### GitHub
 
-- Serve HTML files directly from GitHub: https://rawgit.com/idvorkin/linqpadsnippets/master/js/DetectBackButton.html
-- Keyboard shortcuts: https://help.github.com/articles/using-keyboard-shortcuts/
-- Grip - Local renders of GHFM https://github.com/joeyespo/grip
+- Serve HTML files directly from GitHub: <https://rawgit.com/idvorkin/linqpadsnippets/master/js/DetectBackButton.html>
+- Keyboard shortcuts: <https://help.github.com/articles/using-keyboard-shortcuts/>
+- Grip - Local renders of GHFM <https://github.com/joeyespo/grip>
 - hub a better git client that understands everything comes from github
 - [Search all commits by author and day](https://github.com/search?q=user%3Aidvorkin+author-date%3A2020-06-20+author%3Aidvorkin)
 - [See diff (w/all changes) between dates](https://github.com/idvorkin/idvorkin.github.io/compare/master@%7B1day%7D...master)
@@ -327,7 +327,7 @@ Use a tool to auto re-connect (MOSH should do this, but it's been flaky for me o
 
 For my memory here are the many ports I forward, which you can also configure in your [ssh config](https://github.com/idvorkin/Settings/blob/master/shared/ssh_config)
 
-```
+```bash
 # jupyter
 ssh -N -L localhost:8888:localhost:8888 lightsail
 
@@ -349,7 +349,7 @@ Install tmuxp to re-create sessions.
 Look at my config to see how to setup vi mode
 Look at tmux plugin manager
 
-https://gist.github.com/MohamedAlaa/2961058
+<https://gist.github.com/MohamedAlaa/2961058>
 
 - C-A w - See all windows and sessions.
 - C-A \$ - rename session
@@ -398,8 +398,8 @@ zsh path append
 - Fail to load dinosaur - Not an extension but you can play a little game with the dinosaur by pressing <space> on the chrome dinosaur
 - Custom searchh engines are cool. You can use them for search sites you frequently use. For example my github repo and my blog:
 
-  ghtd: https://github.com/search?l=&q=%s+user%3Aidvorkin&type=Code&s=indexed
-  ig: https://www.idvork.in/index.html?q=%s
+  ghtd: <https://github.com/search?l=&q=%s+user%3Aidvorkin&type=Code&s=indexed>
+  ig: <https://www.idvork.in/index.html?q=%s>
 
 ### Web tools (http)
 
@@ -459,7 +459,7 @@ Convert video formats
 
 Trimming
 
-https://superuser.com/questions/138331/using-ffmpeg-to-cut-up-video As other people mentioned, putting -ss before (much faster) or after (more accurate) the -i makes a big difference. The section "Fast And Accurate Seeking" on the ffmpeg seek page tells you how to get both, and I have used it, and it makes a big difference. Basically you put -ss before AND after the -i, just make sure to leave enough time before where you want to start cutting to have another key frame. Example: If you want to make a 1-minute clip, from 9min0sec to 10min 0sec in Video.mp4, you could do it both quickly and accurately using:
+<https://superuser.com/questions/138331/using-ffmpeg-to-cut-up-video> As other people mentioned, putting -ss before (much faster) or after (more accurate) the -i makes a big difference. The section "Fast And Accurate Seeking" on the ffmpeg seek page tells you how to get both, and I have used it, and it makes a big difference. Basically you put -ss before AND after the -i, just make sure to leave enough time before where you want to start cutting to have another key frame. Example: If you want to make a 1-minute clip, from 9min0sec to 10min 0sec in Video.mp4, you could do it both quickly and accurately using:
 
     ffmpeg -ss 00:08:00 -i Video.mp4 -ss 00:01:00 -t 00:01:00 -c copy VideoClip.mp4
 
@@ -473,14 +473,22 @@ On github, it's common to share an inline view of a [repro](https://github.com/m
 
 ### Linters and formatters
 
-You know what sucks less then coding standards? Arguing about coding standards. Nothing pains me more then arguing about formatting (and other minutia). As such I love having lint failures being build breaks and including formatting on save. Even better when you have [opinionated](https://stackoverflow.com/questions/802050/what-is-opinionated-software) formatters that don't have options. Sure standards suck, but they suck much less then arguing.
+You know what sucks more then coding standards? Arguing about coding standards. Nothing pains me like arguing about formatting (and other minutia).
+
+As such I love having lint failures part of the build process, being auto-fixed, and failing checkin when ignored. [Opinionated](https://stackoverflow.com/questions/802050/what-is-opinionated-software) formatters are even better as you don't need to spend time arguing about which standard to enforce. And yes, all standards suck, but arguing about standards sucks more.
+
+Formatters I like:
 
 - Front End Stuff - [Prettier](https://prettier.io)
 - Python - [Black](https://github.com/ambv/black)
 
+And to ensure they are integrated into your work flow, enforce them with
+
+[lint-staged and husky](https://laurieontech.com/posts/husky/). My using it is [here](https://github.com/idvorkin/LinqPadSnippets/blob/55df7b7d269c727ea121cde211252d81f83e2e68/package.json#L25)
+
 ### Switching between Unix and DOS file ending
 
-(https://stackoverflow.com/questions/2466959/git-removing-carriage-returns-from-source-controlled-files)
+(<https://stackoverflow.com/questions/2466959/git-removing-carriage-returns-from-source-controlled-files>)
 On windows, when you switch between windows and WSL, you can get your line endings messed up in git.
 
 To have git honor settings in the existing files set:
@@ -508,19 +516,18 @@ aspell
 ispell
 
 (Bragging - I fixed aspell highlighting in WSL)
-https://github.com/GNUAspell/aspell/issues/590
-https://github.com/Homebrew/homebrew-core/pull/48163
+<https://github.com/GNUAspell/aspell/issues/590>
+<https://github.com/Homebrew/homebrew-core/pull/48163>
 
 ### Web scripting
 
 I like to watch YouTube (engineering documentaries) before bed, and need a sleep timer. JS will let you close a windows you opened, so this script opens a new window to watch YouTube in for an hour.
 
-```
+```javascript
 // Open in another window so I have perms to close it
-var customWindow = window.open('https://youtube.com', '_blank', '');
+var customWindow = window.open("https://youtube.com", "_blank", "");
 // Close tab in 2 hours
-setTimeout(()=>customWindow.close(),1000*60*120)
-
+setTimeout(() => customWindow.close(), 1000 * 60 * 120);
 ```
 
 ### Programming Helpers
@@ -541,13 +548,13 @@ A quick [tool](https://github.com/gleitz/howdoi) to show you how to 'spell' your
 
 A great way to draw in a collaborative form see file at (/images/build-workflow.excildraw)
 
-![](/images/build-workflow.png)
+![Build workflow](/images/build-workflow.png "Build Workflow")
 
 ### PlantUML alternatives
 
 Huh, turns out there are lots (for UML and graphicing, etc). Read the list here, I haven't played with them yet:
 
-https://hackmd.io/features#UML-Diagrams
+<https://hackmd.io/features#UML-Diagrams>
 
 ### PlantUML
 
@@ -578,7 +585,7 @@ Then render it like an image e.g.
 
 This seems the best approach, using gravizo with inline HTML like this:
 
-```
+```plantuml
 <p><img src='https://g.gravizo.com/svg?
 @startuml;
 
@@ -661,7 +668,7 @@ Here's some silly, but fun stuff:
 
 OK, this is a 2 putter: First run [asciinema](https://github.com/asciinema/asciinema), then [svgterm](https://github.com/marionebl/svg-term-cli)
 
-```
+```bash
 asciinema rec foo.cast
 # records till you hit C-D  (curious how that works)
 cat foo.cast | svg-term --out foo.svg
@@ -696,7 +703,7 @@ Manage via [LazyDocker](https://github.com/jesseduffield/lazydocker)
 
 Terminfo, ncurses, OSX, what a mess. You need to add your own terminfos see:
 
-- https://gist.github.com/bbqtd/a4ac060d6f6b9ea6fe3aabe735aa9d95
+- <https://gist.github.com/bbqtd/a4ac060d6f6b9ea6fe3aabe735aa9d95>
 
 You also want to install the other terminals like xterm256 and tmux
 

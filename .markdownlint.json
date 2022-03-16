@@ -13,6 +13,8 @@
   "MD036_doc": "No emphasis as header",
   "MD033": false,
   "MD033_doc": "No inline HTML",
+  "MD046": false,
+  "MD046_doc": "Code style blocks need to be indent",
   "no-hard-tabs": false,
   "whitespace": false
 }
