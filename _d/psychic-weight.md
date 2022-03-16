@@ -29,7 +29,7 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 - [Antidotes](#antidotes)
     - [Separate pain from suffering](#separate-pain-from-suffering)
     - [Eat the frog](#eat-the-frog)
-    - [GTD](#gtd)
+    - [Getting things done](#getting-things-done)
     - [CI/CC (Circle of Influence, Circle of Concern)](#cicc-circle-of-influence-circle-of-concern)
     - [Talk it through](#talk-it-through)
     - [Meditation](#meditation)
@@ -73,11 +73,17 @@ Analogies:
 
 ### Open loops
 
-### [Shame](/shame)
+### Shame
 
-### [Pride](/pride)
+{%include summarize-page.html src="/shame" %}
 
-### Ruminating a parasitic [idle loop](/idle-loop)
+### Pride
+
+{%include summarize-page.html src="/pride" %}
+
+### Ruminating a parasitic idle loop
+
+{%include summarize-page.html src="/idle-loop" %}
 
 ### Beating yourself up
 
@@ -96,15 +102,21 @@ From the prophet:
 
 ### Separate [pain from suffering](/mental-pain)
 
-### [Eat the frog](/frog)
+### Eat the frog
 
-### [GTD](/gtd)
+{%include summarize-page.html src="/frog" %}
+
+### Getting things done
+
+{%include summarize-page.html src="/gtd" %}
 
 ### CI/CC (Circle of Influence, Circle of Concern)
 
 ### Talk it through
 
-### [Meditation](/siy)
+### Meditation
+
+{%include summarize-page.html src="/siy" %}
 
 ### This too shall pass
 
