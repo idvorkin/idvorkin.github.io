@@ -177,8 +177,8 @@ async function AddLinksToPage(allUrls) {
     }
 }
 function make_html_summary_link(link, url_info) {
-    const attribution = `From <a href='${url_info.url}'> ${url_info.title}</a>.`;
-    return `<div>  
+    const attribution = `(From:<a href='${url_info.url}'> ${url_info.title}</a>)`;
+    return `<div>
         <i> ${url_info.description}</i> ${attribution}
     </div>`;
 }

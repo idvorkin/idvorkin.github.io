@@ -199,9 +199,9 @@ async function AddLinksToPage(allUrls: IURLInfoMap) {
   }
 }
 function make_html_summary_link(link, url_info: IURLInfo) {
-  const attribution = `From <a href='${url_info.url}'> ${url_info.title}</a>.`;
+  const attribution = `(From:<a href='${url_info.url}'> ${url_info.title}</a>)`;
 
-  return `<div>  
+  return `<div>
         <i> ${url_info.description}</i> ${attribution}
     </div>`;
 }
