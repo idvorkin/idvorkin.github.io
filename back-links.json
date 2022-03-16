@@ -16,7 +16,6 @@
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
         "/affirm": "/affirmations",
-        "/affirmations": "/affirmations",
         "/alexa-charity": "/toysfortots",
         "/anxious": "/anxiety",
         "/atomic-habits": "/d/habits",
@@ -73,7 +72,6 @@
         "/habit": "/d/habits",
         "/habits": "/d/habits",
         "/happiness": "/happy",
-        "/human-meetings": "/Human-Meetings",
         "/humanity": "/touching",
         "/idle-loop": "/idle",
         "/imposter": "/insecure",
@@ -82,6 +80,7 @@
         "/jupyter": "/pandas",
         "/life-chapters": "/chapters",
         "/life-stages": "/chapters",
+        "/loneliness": "/lonely",
         "/machine-learning": "/ml",
         "/machinelearning": "/ml",
         "/makejoy": "/joy",
@@ -312,6 +311,26 @@
             "redirect_url": "",
             "doc_size": 15000
         },
+        "/affirmations": {
+            "py/object": "__main__.Page",
+            "url": "/affirmations",
+            "title": "AFFIRMATIONS",
+            "description": "Every day I write out my affirmations. These are positive statements that help me challenge and overcome my self-sabotaging and negative thoughts. When I repeat them often, and believe in them, I make positive changes.\n\n",
+            "file_path": "_site/affirmations.html",
+            "outgoing_links": [
+                "/anxiety",
+                "/appreciate",
+                "/curious",
+                "/end-in-mind",
+                "/essentialism",
+                "/first-understand",
+                "/insecure",
+                "/joy"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 12000
+        },
         "/ai-art": {
             "py/object": "__main__.Page",
             "url": "/ai-art",
@@ -375,6 +394,7 @@
                 "/voices"
             ],
             "incoming_links": [
+                "/affirmations",
                 "/depression",
                 "/fail",
                 "/gtd",
@@ -397,6 +417,7 @@
                 "/grateful"
             ],
             "incoming_links": [
+                "/affirmations",
                 "/class-act"
             ],
             "redirect_url": "",
@@ -463,11 +484,11 @@
             "description": "I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I’ve coached :) ). I hope to have incredibly stiff competition at the top, and I’ll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.\n\n",
             "file_path": "_site/being-a-great-manager.html",
             "outgoing_links": [
-                "/Human-Meetings",
                 "/books-that-defined-me",
                 "/coaching",
                 "/curious",
                 "/decisive",
+                "/human-meetings",
                 "/manager-book",
                 "/mind-monsters",
                 "/moments-at-work",
@@ -728,6 +749,7 @@
             ],
             "incoming_links": [
                 "/90days",
+                "/affirmations",
                 "/being-a-great-manager",
                 "/class-act",
                 "/coaching",
@@ -1280,6 +1302,7 @@
             ],
             "incoming_links": [
                 "/7-habits",
+                "/affirmations",
                 "/d/resistance",
                 "/productive"
             ],
@@ -1310,6 +1333,7 @@
             "file_path": "_site/essentialism.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/affirmations",
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
@@ -1431,6 +1455,7 @@
             ],
             "incoming_links": [
                 "/7-habits",
+                "/affirmations",
                 "/class-act",
                 "/getting-to-yes",
                 "/sell"
@@ -1615,6 +1640,20 @@
             "redirect_url": "",
             "doc_size": 17000
         },
+        "/Human-Meetings": {
+            "py/object": "__main__.Page",
+            "url": "/Human-Meetings",
+            "title": "FEELINGS/HUMAN MEETINGS",
+            "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More then denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
+            "file_path": "_site/human-meetings.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/eulogy",
+                "/job"
+            ],
+            "redirect_url": "",
+            "doc_size": 12000
+        },
         "/humans-are-underrated": {
             "py/object": "__main__.Page",
             "url": "/humans-are-underrated",
@@ -1677,6 +1716,7 @@
             ],
             "incoming_links": [
                 "/90days",
+                "/affirmations",
                 "/depression"
             ],
             "redirect_url": "",
@@ -1783,6 +1823,7 @@
                 "/magic"
             ],
             "incoming_links": [
+                "/affirmations",
                 "/happy",
                 "/hobby"
             ],
@@ -1801,6 +1842,17 @@
             ],
             "redirect_url": "",
             "doc_size": 15000
+        },
+        "/lonely": {
+            "py/object": "__main__.Page",
+            "url": "/lonely",
+            "title": "LONELINESS",
+            "description": "In a study of 1,000 Americans, 36% of respondents reported feeling lonely “frequently”,  “almost all the time” or “all the time” in the prior four weeks. 61% of young people aged 18-25 and 51% of mothers with young children reported these miserable degrees of loneliness. The cost of loneliness is high. Loneliness is linked to early mortality and a wide array of seriousphysical and emotional problems, including depression, anxiety, heart disease, substance abuse,and domestic abuse.\n\n",
+            "file_path": "_site/lonely.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 11000
         },
         "/magic": {
             "py/object": "__main__.Page",
