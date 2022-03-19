@@ -7,7 +7,7 @@ redirect_from:
   - /sat
 ---
 
-Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can't sleep well at night, and SAT is reason you set your alarm for 5am so you can get an early start tackling your favorite problems.
+Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is what makes  you sleep poorly, and SAT is what makes you set your alarm early Monday morning so you can get back to your favorite project, and to hang out with your awesome team.
 
 <!-- prettier-ignore-start -->
 
@@ -43,8 +43,8 @@ Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are ort
 
 ### The Acid Test: How's your sleep
 
-DSAT is waking up in a panic angry at your co-worker, or stressed you'll fail.
-SAT is being so excited about your project, you get up early Sunday morning to get a few extra hours in cuz you enjoy it so much.
+DSAT is what makes you sleep poorly, be it unable to fall asleep, or waking up a panic panic angry at your co-worker, or stressed you'll fail. SAT is being so excited about your project, you get up early Sunday morning to get a few extra hours in cuz you enjoy your work so much.
+
 
 ### Balance: Your life is more then your work.
 
