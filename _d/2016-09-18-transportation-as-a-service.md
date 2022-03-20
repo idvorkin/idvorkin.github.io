@@ -2,7 +2,10 @@
 layout: post
 title: "Transportation as a Service"
 date: "2016-09-18 10:54:43 Pacific Daylight Time"
-tags:
+layout: post
+permalink: /taas
+---
+
 ### America built for cars
 
 - Car in use 4% of the time (1h/day)
@@ -22,7 +25,7 @@ tags:
   - Garages
   - Accidents
 
-### Trends:
+### Trends
 
 - Autonomous Vehicle Fleets become widespread, and the majority of ride sharing rides
   - Autonomous cars being created - now.
@@ -79,8 +82,6 @@ tags:
 
 - Early examples exit - SF - Ferry building, blocked by highway. Destroy highway now 51% more housing, 25K visits/year
 - More listed in article.
-  - book summary
----
 
 Car's have had an incredible impact on our society, and it will be disrupted by transportation as a service. This summarizes John's Zimmers [article](https://medium.com/@johnzimmer/the-third-transportation-revolution-27860f05fa91#.bjs5a1mj0)
 the third transportation revolution.
