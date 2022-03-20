@@ -4,7 +4,6 @@ title: "Affirmations"
 permalink: /affirmations
 redirect_from:
   - /affirm
-  - /affirmations
 
 tags:
   - wisdom
@@ -19,7 +18,7 @@ These are mine, you'll need to find yours. These weren't my original affirmation
 - Discipline is [being proactive](7h-c1), it's the path to success.
 - It's so easy to lose your discipline. But that's OK be [self compassionate](/compassion), and you can (and should) restart the next day.
 
-### Know Essential. Provide Context.
+### Know Essential. Provide Context
 
 - There are so many choices, you need to choose, spend time finding [the essential](/essential) and [begin with the end in mind](/7h-c2).
 - People have no idea what I'm talking about. Think about the story that will make it clear. Practice the story, refine it, till it lands.
