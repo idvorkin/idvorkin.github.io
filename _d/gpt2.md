@@ -23,7 +23,9 @@ Just like the search bar in google fills in what you're typing when you say "Whe
 - [Tech](#tech)
     - [GPT3 vs GPT2](#gpt3-vs-gpt2)
     - [GPT3 vs Instruct GPT](#gpt3-vs-instruct-gpt)
-    - [An example summary](#an-example-summary)
+- [Demos of usage](#demos-of-usage)
+    - [Summarizing](#summarizing)
+    - [Spelling and grammar fixing](#spelling-and-grammar-fixing)
 - [Related ideas](#related-ideas)
 
 <!-- vim-markdown-toc -->
@@ -101,7 +103,9 @@ The original GPT3 engine had a tendency to go of the rail, which I really enjoye
 
 Having used both models the InstructGPT model (now called GPT3), is more accurate, but also pretty boring, even with a high temperature. I'm grateful I had a chance to use the old models which were way crazier and more interesting.
 
-### An example summary
+## Demos of usage
+
+### Summarizing
 
 My blog journal [Week 601](https://idvork.in/ig66/601), and GPT's summary:
 
@@ -109,7 +113,12 @@ _**The protagonist** The protagonist of this journal is a parent of two children
 
 See me creating this summary in my enabling environment, observe that I have GPT create 5 summaries, and then I pick the best one. Because GPT is non-deterministic, this is a valuable technique.
 
-[![asciicast](https://asciinema.org/a/Tl4UcEOW64qOuYkMjejvvUlLi.svg)](https://asciinema.org/a/Tl4UcEOW64qOuYkMjejvvUlLi)
+<asciinema-player src="https://raw.githubusercontent.com/idvorkin/blob/master/cast/gpt-completion.cast" poster="npt:2:34"></asciinema-player>
+
+### Spelling and grammar fixing
+
+<asciinema-player src="https://raw.githubusercontent.com/idvorkin/blob/master/cast/correct.cast" poster="npt:2:34" ></asciinema-player>
+
 With source code [here](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/gpt3.py)
 
 ## Related ideas
