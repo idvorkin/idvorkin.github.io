@@ -41,19 +41,19 @@ As said in the [7 habits](/7h)
 
 {% include youtube.html src="Clzi7QhTuCc" %}
 
-### Juggling Elephants: Balancing the roles in your life.
+### Juggling Elephants: Balancing the roles in your life
 
 There are many roles in your life, and it's important to monitor and balance between them.
 
-We often simplify our roles as work and life, (see: [I don't want to spend too much time at work](/wlb)), but there are many more. I use my [eulogy](/eulogy) to define my roles (and do some composition - E.g. Magic and tech gets their own category while biking is grouped into Hobbies)
+We often simplify our roles as work and life, (see: [I don't want to spend too much time at work](/wlb)), but there are many more. I use my [eulogy](/eulogy) to define my roles (and do some composition - E.g. Magic and tech get their own category while biking is grouped into Hobbies)
 
-### Productivity vs addiction and resistance.
+### Productivity vs addiction and resistance
 
 ## How to achieve
 
 ### Realistic goals by role
 
-I think the most effective way to set yourself up for failure is deciding you can do do everything. This is false, you need [to choose](/essential). The super easy mistake to make here is to have an unrealistic goal in a role, for example - I can run a marathon when I can't even walk a mile. But the almost as easy mistake, is to set mulitple aggressive goals at once. E.g I'll both run a marathon, and get a promotion at work and deal with ailing parent.
+I think the most effective way to set yourself up for failure is deciding you can do everything. This is false, you need [to choose](/essential). The super easy mistake to make here is to have an unrealistic goal in a role, for example - I can run a marathon when I can't even walk a mile. But the almost as easy mistake, is to set multiple aggressive goals at once. E.g I'll both run a marathon, and get a promotion at work and deal with an ailing parent.
 
 So, Start by setting goals per role that are realistic. The unit here should be TBD.
 
@@ -61,7 +61,7 @@ Also, it's easy to stress like crazy about your goals. Don't if they're wrong yo
 
 <div id="balance-radar-map-ideal"> </div>
 
-### Monitoring the roles in your life vs your goals.
+### Monitoring the roles in your life vs your goals
 
 In some roles, I default to over investing, for these **red is over investing**, green is just right, and blue is under investing
 
@@ -95,7 +95,7 @@ If you do some kind of review, I'm certain you missed your goals, either positiv
 
 We should not measure the success in our roles by the energy we spend. For example, our role of healthy can likely be achieved with an hour a day, while work, likely requires many more hours then that.
 
-### Parkinson's law and the 80/20 rule.
+### Parkinson's law and the 80/20 rule
 
 [Parkinson's law](/parkinson) tells us we'll spend as much time as we have available to us on a task.
 
