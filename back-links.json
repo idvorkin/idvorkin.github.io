@@ -322,16 +322,19 @@
             "outgoing_links": [
                 "/anxiety",
                 "/appreciate",
+                "/be-proactive",
+                "/class-act",
                 "/curious",
                 "/end-in-mind",
                 "/essentialism",
                 "/first-understand",
                 "/insecure",
-                "/joy"
+                "/joy",
+                "/writing"
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/ai-art": {
             "py/object": "__main__.Page",
@@ -473,6 +476,7 @@
             ],
             "incoming_links": [
                 "/7-habits",
+                "/affirmations",
                 "/anxiety",
                 "/d/habits",
                 "/idle"
@@ -656,7 +660,9 @@
                 "/curious",
                 "/first-understand"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/affirmations"
+            ],
             "redirect_url": "",
             "doc_size": 12000
         },
@@ -808,17 +814,6 @@
             "title": "Steve Jobs -- The Lost Interview",
             "description": "Uneditted notes on a Q+A with Steve Jobs.\n\n",
             "file_path": "_site/d/2016-05-09-lost-interview.html",
-            "outgoing_links": [],
-            "incoming_links": [],
-            "redirect_url": "",
-            "doc_size": 14000
-        },
-        "/d/2016-09-18-transportation-as-a-service": {
-            "py/object": "__main__.Page",
-            "url": "/d/2016-09-18-transportation-as-a-service",
-            "title": "Transportation as a Service",
-            "description": "Car’s have had an incredible impact on our society, and it will be disrupted by transportation as a service. This summarizes John’s Zimmers article\nthe third transportation revolution.\n\n",
-            "file_path": "_site/d/2016-09-18-transportation-as-a-service.html",
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
@@ -2598,6 +2593,17 @@
             "redirect_url": "",
             "doc_size": 11000
         },
+        "/taas": {
+            "py/object": "__main__.Page",
+            "url": "/taas",
+            "title": "Transportation as a Service",
+            "description": "Transportation as a service is the third transportation revolution. The first revolution was the addition of 20,000 miles of track which led to the emergence of cities. The second revolution was the assembly line which mass produced cars. The third revolution is ride sharing which is a different transport option. The Fourth transportation revolution will be the human to autonomous transition. The fifth revolution will be the redefining of our cities.\n\n",
+            "file_path": "_site/taas.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 15000
+        },
         "/tags": {
             "py/object": "__main__.Page",
             "url": "/tags",
@@ -3206,6 +3212,7 @@
             ],
             "incoming_links": [
                 "/90days",
+                "/affirmations",
                 "/amazon",
                 "/manager-book",
                 "/operating-manual"
