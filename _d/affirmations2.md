@@ -25,9 +25,16 @@ These are mine, you'll need to find yours. These weren't my original affirmation
 
 ### Know Essential. Provide Context
 
-- There are so many choices, you need to choose, spend time finding [the essential](/essential) and [begin with the end in mind](/7h-c2).
-- People have no idea what I'm talking about. Think about the story that will make it clear. Practice the story, refine it, till it lands.
-- Find the essential, by [writing it out](/writing).
+- There are so many choices, you need to choose, spend time finding the essential:
+  {%include summarize-page.html src="/essential" %}
+
+- As you do this, begin with the end in mind:
+
+{%include summarize-page.html src="/7h-c2" %}
+
+- People have no idea what I'm talking about. Think about the story that will make it clear. Practice the story, refine it, , repeat till it lands. The best practice to achieve this is to write it out:
+
+{%include summarize-page.html src="/writing" %}
 
 ### First Understand. Appreciate. Be a class act
 
@@ -39,4 +46,7 @@ These are mine, you'll need to find yours. These weren't my original affirmation
 ### Be Present. This too shall pass
 
 - Every day can be full of [joy](/joy), but if you're not paying attention you'll miss it. Being present will also let you [appreciate](/appreciate) others which also brings satisfaction.
+
+{%include summarize-page.html src="/joy" %}
+
 - There is good, and bad. While we wish the bad will turn into good, we need to remember the good isn't permanent, it's just as transient.
