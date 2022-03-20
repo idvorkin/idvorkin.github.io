@@ -20,7 +20,7 @@ pain of anxiety is designed for threatening circumstance drawing your attention 
     - [Expectations](#expectations)
     - [Closing the gap](#closing-the-gap)
 - [Perspective](#perspective)
-    - [Narrows perspective to resolve immediate danger.](#narrows-perspective-to-resolve-immediate-danger)
+    - [Narrows perspective to resolve immediate danger](#narrows-perspective-to-resolve-immediate-danger)
     - [Caring vs Mattering](#caring-vs-mattering)
 - [Detection](#detection)
 - [Antidotes](#antidotes)
@@ -90,34 +90,34 @@ Anxiety, being pain, reduces the perspective, and this leads to the suffering of
 
 #### Caring vs Mattering
 
-When something happens, we have an unconscious emotional response. The intensity of this response is a subjective experience, how much we care. (Sometimes through conditioning, we have emotional triggers which make us care highly and become hyper sensitive to the stimulus)
+When something happens, we have an unconscious emotional response. The intensity of this response is a subjective experience, how much we care. (Sometimes through conditioning, we have emotional triggers which make us care highly and become hypersensitive to the stimulus)
 
 The objective analog to caring is how much it matters. To maintain consistency your brain automatically assumes how much something matters is the same as how much you care. For example:
 
-_Imagine you are parking, and someone takes your spot. You have an intense emotional reaction, you care deeply, and react like this matters deeply. However, from an objective stand point, the total cost is likely low minutes of impact._
+_Imagine you are parking, and someone takes your spot. You have an intense emotional reaction, you care deeply, and react like this matters deeply. However, from an objective standpoint, the total cost is likely low minutes of impact._
 
-Even though mattering is objective, it needs to be "measured" in a system, which (like perspective) has a time dimension, and an amount of other things to take into account perspective. For example:
+Even though mattering is objective, it needs to be "measured" in a system, which (like perspective) has a time dimension, and an amount of other things to take into account. For example:
 
-For example, imagine your kid doesn't want to go to bed on time, and they push back to you saying go to bed with no, it doesn't matter. In the span of 4 hours, it matters as it damages the relationship and frustrates the relationship. In the span of 20 years, it's irrelevant. In the context of all the bond a parent and child have it's also irrelevant. (There's perhaps a subtlety here for discipline and habit building)
+For example, imagine your kid doesn't want to go to bed on time, and they push back to you saying go to bed with no, it doesn't matter. In the span of 4 hours, it matters as it damages the relationship and frustrates the relationship. In the span of 20 years, it's irrelevant. In the context of all the bond a parent and child have, it's also irrelevant. (There's perhaps a subtlety here for discipline and habit building)
 
 **Caring and mattering for others**
 
-Speaking of the mind assuming caring and mattering are equivalent, think about a time someone you really trust and respect (spouses are a great example) tells you thing that's causing you a deep emotional response doesn't matter. This usually makes it much worse not better.
+Speaking of the mind assuming caring and mattering are equivalent, think about a time someone you really trust and respect (spouses are a great example) tells you the thing that's causing you a deep emotional response doesn't matter. This usually makes it much worse not better.
 
 **The gentle act of helping others assess how much things matter**
 
 1. Acknowledge how they're feeling. It's very real.
 1. Assume their assessment is correct, and seek to understand it.
-1. Ask permission to discuss understanding how and why they care.
+1. Ask permission to discuss understanding how and why they care so much.
 1. Listen to why they are feeling strongly, it's essential you understand (Habit 5 - Seek First to understand)
 
-Depending on the depth of the relationship and the reaction so far, it might be a good time to stop, or a good time to continue. If continue
+Depending on the depth of the relationship and the reaction so far, it might be a good time to stop, or a good time to continue. If you continue
 
 1. Ask permission to ask questions to clarify how much it matters.
 1. Use the non threatening 3 W's (but not Why/How).
    1. When - What time range
    1. Who - Who will be most impacted
-   1. Where - What parts of "all properties" will be effected.
+   1. Where - What parts of "all properties" will be affected.
 
 ### Detection
 
@@ -135,7 +135,7 @@ Depending on the depth of the relationship and the reaction so far, it might be 
 - Stress is the difference between expectations and reality
 - Laws of physics always win.
 - Anxiety is practicing failure in advance.
-- Worry is not preperation, nor does it make you better.
+- Worry is not preparation, nor does it make you better.
 - Anxiety is "keeping a problem in the foreground". This sucks up your CPU, and means you can't spin down your CPU.
 - Instead the answer is commit to disk all open decisions, and then kick it out of the foreground till ready (this is the GTD solution).
 
