@@ -36,8 +36,8 @@ To help me remember places where pride has fucked with me, I'll write out some o
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Judging my career relative to my peers.](#judging-my-career-relative-to-my-peers)
-- [Feeling cheated because I was treated unfairly, and not appreciated.](#feeling-cheated-because-i-was-treated-unfairly-and-not-appreciated)
+- [Judging my career relative to my peers](#judging-my-career-relative-to-my-peers)
+- [Feeling cheated because I was treated unfairly, and not appreciated](#feeling-cheated-because-i-was-treated-unfairly-and-not-appreciated)
 - [Wanting to be right more than being effective](#wanting-to-be-right-more-than-being-effective)
 - [Feeling life isn't fair because something shitty happened to me](#feeling-life-isnt-fair-because-something-shitty-happened-to-me)
 - [Other examples](#other-examples)
