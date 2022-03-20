@@ -34,7 +34,7 @@ pain of anxiety is designed for threatening circumstance drawing your attention 
 
 #### Reality
 
-1. Psychiatrist calls this the difference between the desire to control, and the fact it's uncontrallable.
+1. Psychiatrist calls this the difference between the desire to control, and the fact it's uncontrollable.
 
 #### Expectations
 
@@ -45,9 +45,9 @@ Instead of desire to control, aspire to have the maximum influence over the outc
 Expectations is often achieving desired fixed position.
 
 1. First, broaden the desired end state - from Getting to Yes, convert your position into a desired outcome (What do you really need to solve).
-1. Second, focus on your circle of include - [Focus on your circle of influence not circle of concern](/7h-c1) (What will **I do** to improve the situation)
+1. Second, focus on your circle of influence - [Focus on your circle of influence not circle of concern](/7h-c1) (What will **I do** to improve the situation)
 
-- By changing your desired reality from "I need X to happen" to "I will influence to get closer to my desired outcome for X", you are focused on your true need, and converting to action. This reduces Anxiety as the desired reality is now equal to your expectations, and you can focus on influening
+- By changing your desired reality from "I need X to happen" to "I will influence to get closer to my desired outcome for X", you are focused on your true need, and converting to action. This reduces Anxiety as the desired reality is now equal to your expectations, and you can focus on influencing
 
 Paradoxically, by focusing on your circle of influence, you increase your influence, making you more effective in achieving the desired outcome.
 
@@ -57,11 +57,11 @@ Now, to be responsible, you need to communicate when there is a change in outcom
 
 #### Closing the gap
 
-So increasing your perspective. When it comes to the remodel stress, expand. Sure, right now there is pain, but look how small it is in the bigger picture, on the expected value through everythign else is still very hight, and that's likely the optimum point.
+So increasing your perspective. When it comes to the remodel stress, expand. Sure, right now there is pain, but look how small it is in the bigger picture, on the expected value through everything else is still very high, and that's likely the optimum point.
 
-A way to automatically increase perspective is humor, it breaks us out of our revery, and lets us laugh (TBD, postive vs negative stress). A flip side of this is, if you notice you're not laughing, nore enjoying other parts of life, you need to expand your perspective.
+A way to automatically increase perspective is humor, it breaks us out of our reverie, and lets us laugh (TBD, positive vs negative stress). A flip side of this is, if you notice you're not laughing, nor enjoying other parts of life, you need to expand your perspective.
 
-Intresting, I picked up a mantra, "This too shall pass", with the idea of smoothing out the highs and the lows, the Pschyatrist observed this is the buddhist impermance idea, which BTW is not apathy. So this is helpful as it reducing suffering, which is attachment, to cut attachment, the good isn't as valuable, and the bad isn't as concerning. Yup, I wonder if switching my mantra from this too shall pass to more, how does this look in a larger time frame?
+Interesting, I picked up a mantra, "This too shall pass", with the idea of smoothing out the highs and the lows, the Psychiatrist observed this is the Buddhist impermanence idea, which BTW is not apathy. So this is helpful as it reducing suffering, which is attachment, to cut attachment, the good isn't as valuable, and the bad isn't as concerning. Yup, I wonder if switching my mantra from this too shall pass to more, how does this look in a larger time frame?
 
 ### Perspective
 
@@ -81,7 +81,7 @@ Therefore, perspective is the area of the graph being considered. This is likely
 
 1. Proactively reminder to look at a larger time frame.
 
-#### Narrows perspective to resolve immediate danger.
+#### Narrows perspective to resolve immediate danger
 
 Anxiety, being pain, reduces the perspective, and this leads to the suffering of stress
 
