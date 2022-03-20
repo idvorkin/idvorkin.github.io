@@ -19,7 +19,7 @@ tags:
 
 Habits are the automatic actions, both positive and negative, you take through your life. Atomic Habits describes how to change habits, it's the how-to manual for "Sharpening the Saw".
 
-### Big Ideas;
+### Big Ideas
 
 #### Systems more important then goals
 
@@ -93,7 +93,7 @@ You need to make the cue obvious, and there are two ways:
 1. Set a date and time intention
 1. Tie it to another habit.
 
-### Working backwards - Who do you want to be.
+### Working backwards - Who do you want to be
 
 Think about the habits that the person you want to be. What habits will they have? What habits will they not have, then tackle that.
 
@@ -111,7 +111,7 @@ Add table, prompt, ability, motivation
 
 Prompt, Ability, Motivation.
 
-TODO: Contrast this with the 7hc1, which focus on motivation, not prompts and motivation
+TODO: Contrast this with the [Be Proactive](/7h-c1), which focus on motivation, not prompts and motivation
 
 Start by Prompt,
 
