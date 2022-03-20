@@ -70,7 +70,7 @@ I've had lots of injuries, here's my various [braces](/irl#physical-health)
 
 Trainers are expensive, but heart attacks are even more expensive, and on top of money, they really suck up your energy and reduce your quality of life.
 
-I put off getting a trainer for 20 years. I though I was very knowledgable in exercise, physiology, and was motivaed having a gym routine where I went every morning to do cardio, and I wasn't interested in getting strong. Eventually I decided I'd like some more injury prefention, so got a trainer and told him my goal was to increase my injury resillance, and he said OK, lets do mobility workouts then.
+I put off getting a trainer for 20 years. I thought I was very knowledgable in exercise, physiology, and was motivated having a gym routine where I went every morning to do cardio, and I wasn't interested in getting strong. Eventually I decided I'd like some more injury prevention, so got a trainer and told him my goal was to increase my injury resilience, and he said OK, lets do mobility workouts then.
 
 - The mobility movements are more strenous then my normal cardio routines. Every movement we do seemed like it could happen naturally through day to day activities and felt incredibly weak, a real warning to injury.
 
