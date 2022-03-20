@@ -93,6 +93,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [How do you do planning and come up with roadmaps](#how-do-you-do-planning-and-come-up-with-roadmaps)
     - [How does resource allocation work](#how-does-resource-allocation-work)
     - [The road building analogy to software development roles](#the-road-building-analogy-to-software-development-roles)
+    - [Prioritize Ruthlessly](#prioritize-ruthlessly)
 - [Hiring](#hiring)
     - [What are you looking for when you recruit](#what-are-you-looking-for-when-you-recruit)
     - [Do they prefer to hire only experienced folks](#do-they-prefer-to-hire-only-experienced-folks)
@@ -1033,6 +1034,10 @@ Imagine we want to build a new road.
 1. After: Senior Engineers come in and start figuring out where they'll build, what's the safest path, and what's a realistic schedule
 1. After: Intermediate dev's are assigned a chunk of the road and start building it.
 1. After: Junior devs are given very clear tasks, and start doing them.
+
+### Prioritize Ruthlessly
+
+A great mantra for life, individual contributors, and especially folks supporting more junior folks. A great article that deep dives into the topic [here](https://alexturek.com/2022-03-07-How-to-do-less/)
 
 ## Hiring
 
