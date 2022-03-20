@@ -38,7 +38,7 @@ To help me remember places where pride has fucked with me, I'll write out some o
 
 - [Judging my career relative to my peers.](#judging-my-career-relative-to-my-peers)
 - [Feeling cheated because I was treated unfairly, and not appreciated.](#feeling-cheated-because-i-was-treated-unfairly-and-not-appreciated)
-- [Wanting to be right more then being effective](#wanting-to-be-right-more-then-being-effective)
+- [Wanting to be right more than being effective](#wanting-to-be-right-more-than-being-effective)
 - [Feeling life isn't fair because something shitty happened to me](#feeling-life-isnt-fair-because-something-shitty-happened-to-me)
 - [Other examples](#other-examples)
 - [HEAD FAKE: This note is really about arrogance and hubris, not pride.](#head-fake-this-note-is-really-about-arrogance-and-hubris-not-pride)
@@ -46,7 +46,7 @@ To help me remember places where pride has fucked with me, I'll write out some o
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-#### Judging my career relative to my peers.
+#### Judging my career relative to my peers
 
 **Antidote:** Don't compare yourself to others, compare to what you want.
 
@@ -54,7 +54,7 @@ I was an intern at Microsoft in 2001. I started my career at Microsoft with Sall
 
 Meanwhile, my team was still only 10 people, and I felt like a failure. Having failure rubbed in your face sucks, so I avoided our monthly beers with lame excuses. One day, while talking to my mentor, it clicked. I shouldn't evaluate myself relative to Sally's life. I should evaluate myself based on me. Sally and I had a good laugh over this when we resumed our beer series in October.
 
-#### Feeling cheated because I was treated unfairly, and not appreciated.
+#### Feeling cheated because I was treated unfairly, and not appreciated
 
 **Antidote:** Don't let your friend/boss/society's assessment of you outweigh your own. Take their judgment in stride. Decide if you need to find a new friend/boss/society, correct them, or live with and act appropriately.
 
@@ -64,26 +64,26 @@ Here I was lucky, I was able to learn from a mentor. My management mentor, Beth,
 
 _Side Bar 1: It's easy to be wrong on A) your principles, and B) your assessment of said principles. Be sure to test them with multiple trusted advisors and folks you respect who have gone through a similar situation_
 
-#### Wanting to be right more then being effective
+#### Wanting to be right more than being effective
 
 **Antidote:** Ask yourself if your pride about being right exceeds your need to be effective. Don't lie, don't compromise your ethics or responsibilities, but be flexible in what you accept. You'll often find there's a solution where you can be effective and right.
 
-Example: TBD
+Example: TBD.
 
-_Important Side Bar: Being effective often requires negotiation. The bible for negotiation is [Getting to Yes](https://www.google.com/search?q=getting+to+yes) which I highly recommend_
+_Important Side Bar: Being effective often requires negotiation. The bible for negotiation is [Getting to Yes](https://www.google.com/search?q=getting+to+yes) which I highly recommend._
 
 #### Feeling life isn't fair because something shitty happened to me
 
 **Antidote:** Remember, the only fair thing in life is that it is completely unfair. Compare your "life is unfair" narrative to folks with bigger problems. Getting a fast acting random cancer, beating it, and getting it again ([founder of apple](https://en.wikipedia.org/wiki/Steve_Jobs#Death)), freak accidents ( [Super Man Actor](https://en.wikipedia.org/wiki/Christopher_Reeve) ) and crippling diseases ([Smartest guy on earth](http://www.hawking.org.uk/)). Even better - if you're a parent imagine any of those things happening to your kids. Yeah, maybe be glad something worse didn't happen.
 
-_Important Side Bar: Don't let "life being unfair" be an excuse to avoid learning or skirt responsibility. Each challenge we get is a precious learning opportunity - make this most of it_
+_Important Side Bar: Don't let "life being unfair" be an excuse to avoid learning or skirt responsibility. Each challenge we get is a precious learning opportunity - make this most of it._
 
 #### Other examples
 
 I'll continue to add examples to this post over time (likely when I need to remind myself or someone else of the perils of pride). Here are other examples where pride has fucked me up:
 
 - Not willing to apologize
-- Promotion being more important then pay or responsibility
+- Promotion being more important than pay or responsibility
 - Need to be acknowledged/praised by others
 - Not accepting the reality of the situation/laws of physics.
 - Cognitive Distortions - Someone cares about what happens to you.
