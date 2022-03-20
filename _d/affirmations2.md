@@ -31,10 +31,9 @@ These are mine, you'll need to find yours. These weren't my original affirmation
 
 ### First Understand. Appreciate. Be a class act
 
-- People want to do their best and are rational, and they probably talk in a way that doesn't make sense to you. Seek [first to understand](/7h-c5), and only then be understood. This is also the core of [compassion](/compassion)
-  {%include summarize-page.html src="/7h-c5" %}
-- It takes 7 times to hear something positive about ourselves to make up for 1 negative though.
-  {%include summarize-page.html src="/appreciate" %}
+- People want to do their best and are rational. Seek [first to understand](/7h-c5), and only then be understood. This is also the core of [compassion](/compassion)
+- It takes 7 times to hear something positive about ourselves to make up for 1 negative thought.
+
 - Appreciation is also very important because all humans have [anxiety](/anxiety) and [impostor syndrome](/imposter)
 
 ### Be Present. This too shall pass
