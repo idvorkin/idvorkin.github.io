@@ -6,6 +6,8 @@ layout: post
 permalink: /taas
 ---
 
+Transportation as a service is the third transportation revolution. The first revolution was the addition of 20,000 miles of track which led to the emergence of cities. The second revolution was the assembly line which mass produced cars. The third revolution is ride sharing which is a different transport option. The Fourth transportation revolution will be the human to autonomous transition. The fifth revolution will be the redefining of our cities.
+
 ### America built for cars
 
 - Car in use 4% of the time (1h/day)
@@ -84,4 +86,3 @@ permalink: /taas
 - More listed in article.
 
 Car's have had an incredible impact on our society, and it will be disrupted by transportation as a service. This summarizes John's Zimmers [article](https://medium.com/@johnzimmer/the-third-transportation-revolution-27860f05fa91#.bjs5a1mj0)
-the third transportation revolution.
