@@ -25,11 +25,11 @@ These are mine, you'll need to find yours. These weren't my original affirmation
 
 ### First Understand. Appreciate
 
-- People want to do their best and are rational, and they probably talk in a way that doesn't make sense to you. Seek [first to understand](/7h-c5), and only then be understand. This is also the core of [compassion](/compassion)
+- People want to do their best and are rational, and they probably talk in a way that doesn't make sense to you. Seek [first to understand](/7h-c5), and only then be understood. This is also the core of [compassion](/compassion)
 - It takes 7 times to hear something positive about ourselves to make up for 1 negative though.
 - Appreciation is also very important because all humans have [anxiety](/anxiety) and [impostor syndrome](/imposter)
 
 ### Be Present. This too shall pass
 
 - Every day can be full of [joy](/joy), but if you're not paying attention you'll miss it. Being present will also let you [appreciate](/appreciate) others which also brings satisfaction.
-- There good, and bad. While we wish the bad will turn into good, we need to remember the good isn't permanent, it's just as transient.
+- There is good, and bad. While we wish the bad will turn into good, we need to remember the good isn't permanent, it's just as transient.
