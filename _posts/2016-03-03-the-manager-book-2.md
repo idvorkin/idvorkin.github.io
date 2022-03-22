@@ -12,7 +12,7 @@ redirect_from:
 
 Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.
 
-This post uses the word manager, but the majority of topics are applicable all software job functions regardless of seniority or the number of direct reports, zero direct reports included.
+This post uses the word manager, but the majority of topics are applicable to all software job functions regardless of seniority or the number of direct reports, zero direct reports included.
 
 <!-- prettier-ignore-start -->
 
@@ -42,7 +42,7 @@ This post uses the word manager, but the majority of topics are applicable all s
     - [What do managers do all day](#what-do-managers-do-all-day)
     - [Should managers be technical](#should-managers-be-technical)
     - [Should managers code](#should-managers-code)
-    - [What engineering efficiency metrics should a manager monitor](#what-engineering-efficiency-metrics-should-a-manager-monitor)
+    - [What engineering efficiency metrics should a manager monitor?](#what-engineering-efficiency-metrics-should-a-manager-monitor)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you coach](#how-do-you-coach)
     - [What mechanisms do you have to ensure career development](#what-mechanisms-do-you-have-to-ensure-career-development)
@@ -166,7 +166,7 @@ An acid test:
 | Dimension                          | Success Means                                                                                                                                                                                                                                     |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Business Results                   | Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.                                                                                                                 |
-| High performance people and teams  | Team is well gelled and team members help each other. Everyone has growth plans which fit their needs and they are execution them.                                                                                                                |
+| High performance people and teams  | Team is well gelled and team members help each other. Everyone has growth plans which fit their needs and they are executing them.                                                                                                                |
 | Engineering Efficiency and Process | Engineering systems and protocols ensure a pit of success. Process is automated, and releases have high velocity and minimal risk.                                                                                                                |
 | Technical Assets                   | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (take debt if you might be able to write off the asset) |
 
@@ -290,17 +290,17 @@ They need to represent the team in technical forums, swag costs, represent laws 
 
 They also need to be experts at working with data systems and analysis, as much of their time will be analyzing customer, business, operational, and technical data.
 
-Once developers become managers they have little time to use their technical muscle, and their technical Aptitude declines do to lack of use. Therefore I recommend before switching they are:
+Once developers become managers they have little time to use their technical muscle, and their technical Aptitude declines due to lack of use. Therefore I recommend before switching they are:
 
 - A very experienced engineer (MSFT L65, AMZN L6, FB E6).
 - A expert in at multiple languages (for me python, and C#)
-- A expert in multiple technical domains (for me networking and security).
+- An expert in multiple technical domains (for me networking and security).
 
 ### Should managers code
 
 Managers should read code on specific occasions, but they can't be on critical path because their time is often needed to deal with urgent situations. Thus, they can only write low importance code usually something you'd assign to an SDE-I. At that point, you have a very expensive priority inversion.
 
-That said, SDMs need to use their product just like their customers do to be able to better understand and meet the customer need. Like wise, SDMs need to use their development tools periodically, which should include the code/test/deploy cycle, so they are better able to understand and meet their team's (aka other big customer) need.
+That said, SDMs need to use their product just like their customers do to be able to better understand and meet the customer need. Likewise, SDMs need to use their development tools periodically, which should include the code/test/deploy cycle, so they are better able to understand and meet their team's (aka other big customer) need.
 
 SDMs should be reading code occasionally:
 
@@ -308,11 +308,11 @@ SDMs should be reading code occasionally:
 1. Assessing people - Code is a major deliverable for developers and should be inspected as part of people assessment.
 1. Deep dive during major outages - In high risk, time critical situations like outages, you want your best people reviewing the changes, and this includes SDMs. If an SDM can't understand a high risk time sensitive code change, it can be, and should be simplified.
 
-### What engineering efficiency metrics should a manager monitor
+### What engineering efficiency metrics should a manager monitor?
 
 Lots, but these 3 are probably high on the list:
 
-1. How much time is spent in outages/livesite/maintenance (don't forget to include time that should be but isn't due to lack of monitoring)
+1. How much time is spent in outages/livesite/maintenance (don't forget to include time that should be but isn't due to lack of monitoring).
 2. How often can developers check in?
 3. How long does it take for a change to get to production.
 
