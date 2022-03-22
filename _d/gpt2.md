@@ -75,7 +75,7 @@ Like the meme of girls saying "Math is Hard", this can be super destructive crea
 
 ## Imaginary code
 
-Using codex it can figure out what code does, or what functions can be it's amazing.
+Using codex it can figure out what code does, or what functions can be. It's amazing.
 
 ## Prompt engineering
 
