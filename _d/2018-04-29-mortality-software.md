@@ -92,7 +92,7 @@ Mortality software will be both forward and backwards facing. By this I mean it 
 | Month -> Week    | Milestones                          | Habit Tracking              |
 | Week -> Day      | Task List                           | Habit/Time Tracker          |
 
-#### Role and Value Finder, Eulogy Writer.
+#### Role and Value Finder, Eulogy Writer
 
 To figure out who you want to be, write your eulogy. To make it easier, figure out the roles in your life. Imagine the person who would speak to each role of your life during your funeral. What would you want each person to say? That eulogy is the person you want to be.
 
@@ -177,7 +177,7 @@ No, not really. As a society we don't really break up the "work till you retire"
 
 This software causes two things that people really don't like 1/ Thinking you've got [finite time](/death) 2/ Being Judged (and worst of all by you).
 
-**Thinking you've got finit time**
+**Thinking you've got finite time**
 
 Why people avoid it:
 
