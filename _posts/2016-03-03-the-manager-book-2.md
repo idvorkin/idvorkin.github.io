@@ -74,7 +74,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [What about Work Life Balance](#what-about-work-life-balance)
     - [How you deal with team disagrees with the leadership](#how-you-deal-with-team-disagrees-with-the-leadership)
     - [Agency and Psychological Safety](#agency-and-psychological-safety)
-    - [Kudos Boards - Appreciation](#kudos-boards---appreciation)
+    - [Kudos Boards - Appreciations](#kudos-boards---appreciations)
 - [Process and Mechanism](#process-and-mechanism)
     - [Theory of Process](#theory-of-process)
     - [The dark side of process](#the-dark-side-of-process)
@@ -112,7 +112,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
 - [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
     - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
-    - [Telling in the team](#telling-in-the-team)
+    - [Telling the team](#telling-the-team)
     - [The FAQ](#the-faq)
     - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
     - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
@@ -136,7 +136,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [What's the best/worst part of your job](#whats-the-bestworst-part-of-your-job)
     - [How do you get anything done with all of those meetings](#how-do-you-get-anything-done-with-all-of-those-meetings)
     - [What do you think developers do](#what-do-you-think-developers-do)
-    - [How can devs do to make managers job's easier](#how-can-devs-do-to-make-managers-jobs-easier)
+    - [How can devs do to make managers jobs easier](#how-can-devs-do-to-make-managers-jobs-easier)
     - [How does a dev find out if they’d be good at or enjoy being a manager](#how-does-a-dev-find-out-if-theyd-be-good-at-or-enjoy-being-a-manager)
     - [Why do managers always say coding is part of their job but we all know it isn’t](#why-do-managers-always-say-coding-is-part-of-their-job-but-we-all-know-it-isnt)
 - [Appendix](#appendix)
@@ -735,7 +735,7 @@ Tough question. I need to think through that
 
   - Team gelled, and always helping and growing each other
   - People put team ahead of themselves, to support each other.
-  - Folks have high trust, so can be vulnerable, knowing others want to grow and suppor them.
+  - Folks have high trust, so can be vulnerable, knowing others want to grow and support them.
   - Hanging out with your friends
   - Work filled with moments
   - Team first, whole greater then the sum of its parts
@@ -827,7 +827,7 @@ Step 3: Focus on the win/win, and talk through a ripcord.
 
 I gave a talk on [lies we tell ourselves](https://docs.google.com/presentation/d/1u8kswf7qUDdKgMlxBVRUXilwECv9sVWJtM6IMTuP5hQ/)
 
-### Kudos Boards - Appreciation
+### Kudos Boards - Appreciations
 
 Both helpful for a short period of time, and for a longer period of time, kuddos boards let the team get together and celebrate what they appreciate from their co-workers. This has many benefits:
 
@@ -1111,7 +1111,7 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
 - Before even thinking of funnels
   - Strive to be a class act and do your best.
   - It's a small world. [People will learn what you value, and how you work](/static/igor-feedback-LinkedIn.pdf)
-  - Create [public artifacts](https://bitly.com/igor-wlb-manife).
+  - Create [public artifacts](https://bitly.com/igor-wlb-manife)
 - Top of Funnel
   - Interview events
   - Internal Talks
@@ -1120,20 +1120,20 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
   - LinkedIn Articles
   - Always help recruiting
   - Connect to warm candidates
-  - Go grab coffee with them.
+  - Go grab coffee with them
   - Mentorship of folks, volunteer for mentorship
   - Intern Talk
 - Mid Funnel
   - Post interview - magic trick, after interview lets make time to chat
   - Push to get interviews done ASAP
   - Push to get results to candidate ASAP
-  - Walk out of interview connect on linked in and chat with them.
+  - Walk out of interview connect on linked in and chat with them
 - Bottom of the Funnel
-  - Focus on the needs of the candidate, then talk about how job can solve their needs.
+  - Focus on the needs of the candidate, then talk about how job can solve their needs
   - Beer/Coffee/Call
-  - Share artifacts, and evidence of my teams operations.
-  - Invite them to talk with the team I support.
-  - Invite them to have lunch with the team.
+  - Share artifacts, and evidence of my teams operations
+  - Invite them to talk with the team I support
+  - Invite them to have lunch with the team
   - Help them build and evaluate their [dream job, and job switching decision making matrix](/job).
 
 ### What about structured vs free form interview loops
@@ -1286,7 +1286,7 @@ Hopefully, early in your hiring process you've been thinking about your charter.
 - Build out an early roadmap and product.
 - Keep learning and improving as people join.
 
-### Telling in the team
+### Telling the team
 
 Assume this will be very hard on the team. It's critical they hear it from you first. It shows respect, and lets you reduce the largest anxieties. This will be emotional for a lot of people, and the team will be deeply influenced by your emotions. While you should acknowledge the loss, and the potential uncertainty and upcoming bumpiness, you **must be positive about the future**.
 
@@ -1506,13 +1506,13 @@ See [what do managers do](#l-what-managers-do) section.
 
 ### How do you get anything done with all of those meetings
 
-The majority of the things I do are about amplifying, de-risking and unblocking people. Much of that works best when there's someone else in the room. Further many of those meetings, especially 1:1s and small groups energize me, giving making me able to tackle the rest of my with gusto.
+The majority of the things I do are about amplifying, de-risking and unblocking people. Much of that works best when there's someone else in the room. Further many of those meetings, especially 1:1s and small groups energize me, making me able to tackle the rest of my with gusto.
 
-For tasks that require me to be heads down and [write/think](/write) I try to get that done crazy early in the morning when I have zero interruptions and maximum intellectual horse power.
+For tasks that require me to be heads down and [write/think](/write) I try to get that done crazy early in the morning when I have zero interruptions and maximum intellectual horsepower.
 
 ### What do you think developers do
 
-### How can devs do to make managers job's easier
+### How can devs do to make managers jobs easier
 
 **Realize you and the team are a domain expert**
 
@@ -1539,7 +1539,7 @@ Due to positional authority, managers statements can be overweighted. However, m
 
 **Be a strong IC first**
 
-Make sure you're a senior enough enginer before becoming a manager (AMZN - L6; FB - E6; MSFT - L65). Once you become a manager, your technical skill drops as most of your energy is focused on other tasks. So, if you don't have a strong enough base, you'll lose your ability to help assess and provide input on technical tasks.
+Make sure you're a senior enough engineer before becoming a manager (AMZN - L6; FB - E6; MSFT - L65). Once you become a manager, your technical skill drops as most of your energy is focused on other tasks. So, if you don't have a strong enough base, you'll lose your ability to help assess and provide input on technical tasks.
 
 ### Why do managers always say coding is part of their job but we all know it isn’t
 
@@ -1547,7 +1547,7 @@ Make sure you're a senior enough enginer before becoming a manager (AMZN - L6; F
 
 I don't think manager's should code, however (see above). A related question might be:
 
-Why do we assess manager's ability to code.
+Why do we assess managers ability to code.
 
 - A few enlightened companies do not.
 
