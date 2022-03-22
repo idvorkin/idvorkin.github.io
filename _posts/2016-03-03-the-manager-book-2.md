@@ -61,7 +61,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [How do you handle communication problems](#how-do-you-handle-communication-problems)
     - [How do you handle promotion preparation (and fever)](#how-do-you-handle-promotion-preparation-and-fever)
     - [How do you identify and grow potential managers](#how-do-you-identify-and-grow-potential-managers)
-    - [How did you grow top talent](#how-did-you-grow-top-talent)
+    - [How do you grow top talent](#how-do-you-grow-top-talent)
     - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
     - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
     - [How do you have a difficult converastion](#how-do-you-have-a-difficult-converastion)
@@ -371,7 +371,7 @@ There are several advantages to pre-writing these documents:
 - The peep has a record of what they've done in the performance period, instead of only having a crisp memory of the last few months.
 - The manager can calibrate the work to be done so there are no scope surprises.
 
-Good self assessments are concise, focuses on impact, and then how you delivered the impacat. More details at [I.M Wright](https://imwrightshardcode.com/2018/06/connects-with-impact/):
+Good self assessments are concise, focuses on impact, and then how you delivered the impact. More details at [I.M Wright](https://imwrightshardcode.com/2018/06/connects-with-impact/):
 
 - _[Clearly measurable impact]_ by _[work you’ve done yourself and/or with others]._
   - Relevant artifacts, or quote from others validating the claim.
@@ -380,16 +380,16 @@ Here are some fictitious examples modelled on my own career:
 
 - Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to estabilish budgets, and holding them accountable to delivering them.
 
-  - > At first my team was skeptical that the peformance improvements could be achieved and were hesitant to invest, but once we saw the organizational support and monthly meetings of progress we found it inspiring and made sure we contributed to the goal.
+  - > At first my team was skeptical that the performance improvements could be achieved and were hesitant to invest, but once we saw the organizational support and monthly meetings of progress we found it inspiring and made sure we contributed to the goal.
 
-- Drove XXX\$ to charities, and increased Alexa Shopping DAU XXX % (XXX to YYY) to by proposing a charity giving feature and implementing it in 5 months. Complexity, 20 eng/months, supporting work from 5 teams, across mulitple divisions
+- Drove XXX\$ to charities, and increased Alexa Shopping DAU XXX % (XXX to YYY) to by proposing a charity giving feature and implementing it in 5 months. Complexity, 20 eng/months, supporting work from 5 teams, across multiple divisions
 
 - Delivered XYZ, required to deliver TLS support on windows phone at very high quality. Complexity 1 engineer, 4 months - however requried ramping up on complex error prone C++ code base, and no bugs found
 
   - > Igor's delivery was on time and of high quality. The feature had no bugs in production, due to high test coverage, which was impressive given the high complexity of the C++ code.
 
 - Increased team morale and cross group collaboration by proposing weekly team lunches, and monthly lunches with the broader organization.
-  - The monthly lunches were great. At one of them, I learned Bob on the other team was building a similer feature to mine and so we collaborated and were able to save 3 weeks of coding time.
+  - The monthly lunches were great. At one of them, I learned Bob on the other team was building a similar feature to mine and so we collaborated and were able to save 3 weeks of coding time.
 
 You should be observing the key to these self assessments is impact. The goal isn't motion, it's impact. If you don't know the impact, you should ask yourself (and your manager) why you are doing the work. Pre-writing self assessments is a great way to do this.
 
@@ -476,7 +476,7 @@ Motivation has 2 dimensions, personal experience and team environment. Personal 
 
 Another lens of motivation is [satisfaction and dissatisfaction](/dsat):
 
-_Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can’t sleep well at night, and SAT is reason you set your alarm for 5am so you can get an early start tackling your favorite probems_
+_Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can’t sleep well at night, and SAT is reason you set your alarm for 5am so you can get an early start tackling your favorite problems_
 
 ### How to motivate through personal experience
 
@@ -611,7 +611,7 @@ Other thoughts:
 High order bits:
 
 1. Success is not "communication style", but ability to influence. Influence comes in many forms and mediums.
-1. Some things labelled communication problems, but they are much more serious and need to be handled differently. E.g. Lack of clarity of though/intellectual horse power and bieng a jerk.
+1. Some things labelled communication problems, but they are much more serious and need to be handled differently. E.g. Lack of clarity of thought/intellectual horse power and being a jerk.
 1. Focus on strengths is 3x as effective as shoring up weaknesses. Leverage strengths and partner with others to maximize influence.
 
 There are different types of communication problems each needing a different strategy:
@@ -663,7 +663,7 @@ Promotion fever is my word for engineers that are completely focused on promotio
 
 Engineers that are interested in reading this post make good manager candidates. The path usually start with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many as people issues as people are comfortable with them tracking.
 
-### How did you grow top talent
+### How do you grow top talent
 
 ### Performance Reveiws: Calibrations PSC, OLR, Connections
 
