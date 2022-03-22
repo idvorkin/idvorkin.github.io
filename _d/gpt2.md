@@ -18,6 +18,7 @@ Just like the search bar in google fills in what you're typing when you say "Whe
 - [Ethics](#ethics)
     - [What happens when GPT3 is trained on biases?](#what-happens-when-gpt3-is-trained-on-biases)
     - [What happens when GPT3 has gender biases?](#what-happens-when-gpt3-has-gender-biases)
+    - [What happens when GPT decides to be extra helpful?](#what-happens-when-gpt-decides-to-be-extra-helpful)
 - [Imaginary code](#imaginary-code)
 - [Prompt engineering](#prompt-engineering)
 - [Tech](#tech)
@@ -72,6 +73,17 @@ OpenAI is well aware of the anti-Muslim bias. In fact, the original paper it pub
 A model that generates images, when asked to generate images of doctors, always generates photos of male doctors. This bias can be very demoralizing for minorities.
 
 Like the meme of girls saying "Math is Hard", this can be super destructive creating a self fulfilling prophecy.
+
+### What happens when GPT decides to be extra helpful?
+
+In this example, GPT was doing spelling and grammar correction, and added the following sentances out of the blue:
+
+- I'm not saying it doesn't exist, but I haven't seen it
+- I'm not saying these are true but I've heard of them.
+
+Luckily, I was watching the diffs closely:
+
+<asciinema-player src="https://raw.githubusercontent.com/idvorkin/blob/master/cast/sneaky-error-correction.cast" poster="npt:0:14"> </asciinema-player>
 
 ## Imaginary code
 
