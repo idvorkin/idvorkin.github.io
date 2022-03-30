@@ -9,6 +9,8 @@ redirect_from:
 
 Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can't sleep well at night, and SAT is reason you set your alarm for 5am so you can get an early start tackling your favorite problems.
 
+[R] Maximizing your overall Satisfaction (SAT) and minimizing moments of dissatisfaction (DSAT) are equally important with your ability to feel content and happy. Not all SAT and DSAT are created equal nor are they always correlated. Symptoms of DSAT include dreading the feeling of going into work on Monday during your weekend, feeling so glad (but not happy) your workday is over at 5pm, being in a generally bad mood when talking to friends and family, or being unable to sleep at night. Symptoms of SAT manifest as waking up excited to work on a hard or interesting problem, a positive energy coming naturally when speaking with your team and cross-functional partners (for the most part), and not feeling like you need to surf LinkedIn Jobs or Indeed to find your next gig ASAP. 
+
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc GFM -->
