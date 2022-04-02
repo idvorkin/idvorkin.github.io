@@ -43,18 +43,20 @@ Maximizing your overall Satisfaction (SAT) and minimizing moments of dissatisfac
 
 ## General
 
-### The Acid Test: How's your sleep
+### The Acid Test: How's your sleep, does work consume your mindshare even outside of working hours?
 
-DSAT is what makes you sleep poorly, be it unable to fall asleep, or waking up a panic panic angry at your co-worker, or stressed you'll fail. SAT is being so excited about your project, you get up early Sunday morning to get a few extra hours in cuz you enjoy your work so much.
+Stage 4 DSAT is what makes you sleep poorly, be it unable to fall asleep, or waking up a panic panic angry at your co-worker, stressed you'll fail, or dreading work the next morning. Stage 4 SAT is being so excited about your project, you get up early Sunday morning to get a few extra hours in cuz you enjoy your work so much.
 
 
 ### Balance: Your life is more then your work.
 
-[I wish I spent more time at work, is never uttered on a death bed](/wlb). You have many [roles beyond work in your life](/eulogy), and balancing between them is the definition of effectiveness.
+[I wish I spent more time at work, is never uttered on a death bed](/wlb). You have many [roles beyond work in your life](/eulogy), and balancing between them is the definition of effectiveness. The age old advice of do what you love for work sounds so obvious but honestly the portion of people where their true passion and their work overlap completely is less than 1%. However, people do enjoy the challenge their work presents them, the forcing function of using their mind to solve hard problems, and creating opportunities to talk with like minded people that makes us feel engaged. Embrace the greatest parts, mull over them, whether its the bike ride in the park, the water cooler chat with a fellow techie, and stop dwelling on the fact that you may not have given your best for an architecture design review, there will always be another one; and if there's anything in life you can learn to get better in, it's work.
 
-High work SAT is great for your career, but often results in a [high stopping Energy, making activating](/activation) your other roles challenging. This is balanced by the fact that SAT is infectious bring inspiration and resilience to other roles in your life.
+High work SAT is great for your career, but often results in a [high stopping Energy, making activating](/activation) your other roles challenging. This is balanced by the fact that SAT is infectious bringing inspiration and resilience to other roles in your life. For some who are high acheivers or build their sense of self-identity through their career, work is important. Where you work, what you work on, how challenging it is, is something that if going well, is like a giant snowball going downhill that cant be stopped. 
 
-On the other hand even though low work SAT results in lower work stopping energy, low SAT can lower your overall energy and will power, resulting in less energy for your other roles.
+On the other hand even though low work SAT results in lower work stopping energy, low SAT can lower your overall energy and will power, resulting in less energy for your other roles. We all want to make the most of our lives, maybe not every breathing moment but what's the point if what you do the majority of the time (40 hours per week) is boring, not challenging, or horrible? 
+
+For these two orthogonal yet related vectors, the most important thing is to be mindful and self-aware of what makes you tick. Can you clearly on a piece of paper write down what you want out of your work life vs what you dont? Can you write it clearly enough that you can hand it to your hiring manager or therapist and either one can diagnose something is going wrong for you? If you cant, its ok, its a journey and figuring out ourselves is sometimes harder than solving the next big technical challenge. 
 
 ## The situations a 2x2 matrix
 
