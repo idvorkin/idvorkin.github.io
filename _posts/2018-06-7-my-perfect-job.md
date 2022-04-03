@@ -19,7 +19,15 @@ In my dream job I learn the customer and business needs and focus the team on de
 
 I'm passionate about tech, but I'm even more passionate about aspiring to be the [best boss my team will ever have](/being-a-great-manager). Part of being the best is having deep understanding of the tech, so I always have some [small projects on the side](https://github.com/idvorkin), and every few years I'll do a rotation as a [tech lead](/software-leadership-roles).
 
-### Startup, Turn Around, Accelerated Growth, Realignment, Sustaining Success: Startup and Turn around
+### Product Domain? Well being, Productivity and Natural Language Processing
+
+As a human, I'm incredibly passionate about well being. I'm excited about the whole field from nurturing mindfulness, increasing satisfaction, to solving loneliness and enabling self-reflection.
+
+Such jobs are rare, so if that's something you need help delivering on, please reach out immediately.
+
+I'm also very excited by Natural Language Processing and Productivity so if you need help delivering them reach out immediately!
+
+### Startup, Turn Around, Accelerated Growth, Realignment, Sustaining Success: Startup and Turn Around
 
 _If you don't know those words, read about [STARS](https://hbr.org/2009/01/picking-the-right-transition-strategy)_
 
@@ -32,14 +40,6 @@ Accelerated Growth, Realignment, Sustaining Success aren't things I've tried yet
 ### B2C, B2B, Infrastructure? B2C
 
 At this point in my career I'm interested in making the lives of others better. Right now, I'd like to do this via consumer software.
-
-### Product Domain? Well being, Productivity and Natural Language Processing
-
-As a human, I'm incredibly passionate about well being. I'm excited about the whole field from nurturing mindfulness, increasing satisfaction, to solving loneliness and enabling self-reflection.
-
-Such jobs are rare, so if that's something you need help delivering on, please reach out immediately.
-
-I'm also very excited by Natural Language Processing and Productivity so if you need help delivering them reach out immediately!
 
 ### Technologist or Entrepreneur: Entrepreneur
 
