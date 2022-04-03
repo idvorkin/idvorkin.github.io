@@ -21,7 +21,7 @@ Creativity is a criticial aspect of art, and that's something which I think AI c
     - [NLP: GPT-3](#nlp-gpt-3)
     - [Face Generator](#face-generator)
     - [Image to Word Generation](#image-to-word-generation)
-    - [Not a real face](#not-a-real-face)
+    - [Not a X](#not-a-x)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -42,7 +42,7 @@ We often need inspiration.
 
 ## Tech
 
-### TTS (Text to Speech) Read the content back with a different voice.
+### TTS (Text to Speech) Read the content back with a different voice
 
 We can have text to speech (TTS) with any voice, perhaps a famous voice saying something will inspire you:
 
@@ -52,7 +52,7 @@ TODO: Link an example
 
 ### Lipsync a video/audio
 
-https://bhaasha.iiit.ac.in/lipsync/
+<https://bhaasha.iiit.ac.in/lipsync/>
 
 ### NLP: GPT-3
 
@@ -66,8 +66,8 @@ Go read my better post on [gpt](/gpt)
 
 Much better is this Russian variant ([see gallery](with a live demo (annoying need to translate to Russian first):
 
-### Not a real face
+### Not a X
 
-These use GAN to create not real faces - crazy how real they look.
+These use GAN to create not real things
 
-https://thispersondoesnotexist.com/
+<https://thisxdoesnotexist.com/>
