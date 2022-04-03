@@ -18,6 +18,11 @@ A hodgepodge of additional resources for the manager book.
 - [Amazon's leadership principles](#amazons-leadership-principles)
 - [A few Igorisms](#a-few-igorisms)
 - [Laws to remember](#laws-to-remember)
+- [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
+    - [Piniata](#piniata)
+    - [A project is car with a EM, PM and TL](#a-project-is-car-with-a-em-pm-and-tl)
+    - [An engineering team as the parts of the car](#an-engineering-team-as-the-parts-of-the-car)
+    - [New hire perspective is like landing a plane](#new-hire-perspective-is-like-landing-a-plane)
 - [Great Videos](#great-videos)
 - [Great Posts and Blogs](#great-posts-and-blogs)
 - [Great books](#great-books)
@@ -33,7 +38,7 @@ See the whole manager book:
 
 ### Google's Project Oxygen
 
-Google is a very data driven, willing to challenge the status quo company. One of their ideas was getting rid of managers all together, and that was a fa [failure](). Given then conclusion managers were necessary, they formed Project Oxygen, a data driven approach to understanding the attributes of successful managers. Here is there list of management [attributes](https://rework.withgoogle.com/blog/the-evolution-of-project-oxygen/):
+Google is a very data driven, willing to challenge the status quo company. One of their ideas was getting rid of managers all together, and that was a [failure](https://rework.withgoogle.com/subjects/managers/). Given then conclusion managers were necessary, they formed Project Oxygen, a data driven approach to understanding the attributes of successful managers. Here is there list of management [attributes](https://rework.withgoogle.com/blog/the-evolution-of-project-oxygen/):
 
 1. Is a good coach
 1. Empowers team and does not micromanage
@@ -143,6 +148,27 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 - **Peter Principle** - People will rise till they become incompetent
 - **Parkinson's Law of Triviality - (Bike Shedding)** Members of an organization give disproportionate weight to trivial issues. A nuclear power plant funding committee focus most time on how to paint the bike shed since it's easy, and they feel they are providing value
 - **Yak Shaving** - Not a law but a great term for when you go down the [rabbit hole](https://americanexpress.io/yak-shaving/) going several steps away from the task at hand (a common cause for the delay in Parkinson's Law)
+
+### Analogies to be fleshed out
+
+#### Piniata
+
+The need for maturity and alignment
+
+#### A project is car with a EM, PM and TL
+
+The need for variable engagement
+
+#### An engineering team as the parts of the car
+
+PM - Navigator and long term radar
+EM - Shock absorbers, mid term radar, swerve system
+Specific team members for engine, seat belts, etc
+
+#### New hire perspective is like landing a plane
+
+- When joining high altitude can see the city
+- Once landed, all you can see is the air port and a few streets
 
 ### Great Videos
 
