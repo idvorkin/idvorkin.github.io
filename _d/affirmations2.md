@@ -9,9 +9,7 @@ tags:
   - wisdom
 ---
 
-Every day I write out my affirmations. These are positive statements that help me challenge and overcome my self-sabotaging and negative thoughts. When I repeat them often, and believe in them, I make positive changes.
-
-These are mine, you'll need to find yours. These weren't my original affirmations, they've evolved over time.
+Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me, and have evolved over time, you'll want to find the ones that speak best to you.
 
 ### Deliberate. Disciplined. Daily
 
