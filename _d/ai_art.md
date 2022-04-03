@@ -72,7 +72,7 @@ Picard
 
 ### NLP: GPT-3
 
-Go read my better post on [gpt](/gpt)
+{%include summarize-page.html src="/gpt" %}
 
 ### Face Generator
 
