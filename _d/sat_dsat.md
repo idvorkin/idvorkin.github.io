@@ -7,7 +7,7 @@ redirect_from:
   - /sat
 ---
 
-Love your work, and you'll never work a day in your life, sounds great, but don't confuse work with a carribian cruise. You know they are different because you pay for the cruise, while your job pays you. Work should be satisfying (SAT). You should be enjoying solving hard problems, getting opportunities to talk with like minded people, and even being forced to stretch and grow. Work will also make you feel dissatisfaction (DSAT). Some days your boss will piss you off, your co-workers will misunderstand you, and you will be forced to do something you don't want to. Satisfaction is not a lack of dissatisfaction they are orthogonal experiences. DSAT is what makes you sleep poorly, and SAT is what makes you set your alarm early Monday morning so you can get back to your favorite project, and to hang out with your awesome team.
+Love your work, and you'll never work a day in your life, sounds great, but don't confuse work with a carribian cruise. You can tell the difference because one you pay for, and the other pays you. Work should be satisfying (SAT). You should be enjoying solving hard problems, getting opportunities to talk with like minded people, and even being forced to stretch and grow. Work will also make you feel dissatisfaction (DSAT). Some days your boss will piss you off, your co-workers will misunderstand you, and you will be forced to do something you don't want to. Satisfaction is not a lack of dissatisfaction they are orthogonal experiences. DSAT is what makes you sleep poorly, and SAT is what makes you set your alarm early Monday morning so you can get back to your favorite project, and to hang out with your awesome team.
 
 Not all SAT and DSAT are created equal nor are they always correlated. You know you've got DSAT when you're dreading going into work on Monday all weekend, feeling relieved your workday is over at 5pm, and being in a generally bad mood when talking to friends and family, or being unable to sleep at night. You know you have SAT when you wake up excited to work on a hard or interesting problem, a positive energy comes naturally when speaking with your team and cross-functional partners (for the most part), and not feeling like you need to zone out with 4 hours of TikTok to block out work.
 
@@ -32,8 +32,8 @@ Embrace the greatest parts of your work , mull over them, whether its the bike r
 <!-- vim-markdown-toc GFM -->
 
 - [General](#general)
-    - [The Acid Test: How's your sleep, does work consume your thoughts after you've left the building.](#the-acid-test-hows-your-sleep-does-work-consume-your-thoughts-after-youve-left-the-building)
-    - [Balance: Your life is more then your work.](#balance-your-life-is-more-then-your-work)
+    - [The Acid Test: How's your sleep, does work consume your thoughts after you've left the building](#the-acid-test-hows-your-sleep-does-work-consume-your-thoughts-after-youve-left-the-building)
+    - [Balance: Your life is more then your work](#balance-your-life-is-more-then-your-work)
 - [The situations a 2x2 matrix](#the-situations-a-2x2-matrix)
     - [High SAT Low DSAT](#high-sat-low-dsat)
     - [High DSAT, Low SAT](#high-dsat-low-sat)
