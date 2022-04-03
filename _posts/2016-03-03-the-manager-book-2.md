@@ -125,12 +125,6 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [Why do you think Igor is a good coach](#why-do-you-think-igor-is-a-good-coach)
     - [Why do you prefer being a manager vs an IC](#why-do-you-prefer-being-a-manager-vs-an-ic)
     - [What if managers memorize these answers for interviews](#what-if-managers-memorize-these-answers-for-interviews)
-- [Business Acumen and Strategy](#business-acumen-and-strategy)
-- [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
-    - [Piniata](#piniata)
-    - [A project is car with a EM, PM and TL](#a-project-is-car-with-a-em-pm-and-tl)
-    - [An engineering team as the parts of the car](#an-engineering-team-as-the-parts-of-the-car)
-    - [New hire perspective is like landing a plane](#new-hire-perspective-is-like-landing-a-plane)
 - [Questions managers get](#questions-managers-get)
     - [What do you do all day](#what-do-you-do-all-day)
     - [What's the best/worst part of your job](#whats-the-bestworst-part-of-your-job)
@@ -139,6 +133,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [How can devs do to make managers jobs easier](#how-can-devs-do-to-make-managers-jobs-easier)
     - [How does a dev find out if they’d be good at or enjoy being a manager](#how-does-a-dev-find-out-if-theyd-be-good-at-or-enjoy-being-a-manager)
     - [Why do managers always say coding is part of their job but we all know it isn’t](#why-do-managers-always-say-coding-is-part-of-their-job-but-we-all-know-it-isnt)
+- [Business Acumen and Strategy](#business-acumen-and-strategy)
 - [Appendix](#appendix)
 
 <!-- vim-markdown-toc -->
@@ -275,6 +270,8 @@ Depending on time of year, and experience of my team and partners, I'm doing 1 o
 - Architecture/Design/Engineering Excellence brainstorming, and review
 - RCA Analysis
 
+<a id="l-technical"></a> <a id="l-technical"></a>
+
 ### Should managers be technical
 
 Yes they are ultimately responsible for the outcomes of the team and that requires them to understand, confirm and nudge the team and partners. They should ensure the team is making correct architectural decisions and engineering excellence improves due to best practices.
@@ -295,6 +292,8 @@ Once developers become managers they have little time to use their technical mus
 - A very experienced engineer (MSFT L65, AMZN L6, FB E6).
 - A expert in at multiple languages (for me python, and C#)
 - An expert in multiple technical domains (for me networking and security).
+
+<a id="l-code"></a> <a id="l-code"></a>
 
 ### Should managers code
 
@@ -1467,33 +1466,6 @@ Good interviewees prepare as much as possible, thinking through their experience
 
 Good interviewers (and manager interviews better be good) need to be able to differentiate "theoretical knowledge" from "practical experience". They do this with situational questions like "Tell me a time when", and probing questions like "What happened then? What were the unexpected consequences? When did you have the opposite outcome?".
 
-## Business Acumen and Strategy
-
-My note on [Strategy](/strategy), including the strategic position of various companies:
-
-_Strategy is creating fit among a company's activities. The success of a strategy depends on doing many things well and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and improving operational effectiveness, a race to the bottom._
-
-## Analogies to be fleshed out
-
-### Piniata
-
-The need for maturity and alignment
-
-### A project is car with a EM, PM and TL
-
-The need for variable engagement
-
-### An engineering team as the parts of the car
-
-PM - Navigator and long term radar
-EM - Shock absorbers, mid term radar, swerve system
-Specific team members for engine, seat belts, etc
-
-### New hire perspective is like landing a plane
-
-- When joining high altitude can see the city
-- Once landed, all you can see is the air port and a few streets
-
 ## Questions managers get
 
 ### What do you do all day
@@ -1528,6 +1500,10 @@ Due to positional authority, managers statements can be overweighted. However, m
 - When people are upset/demoralized/angry, often ICs know before managers as people don't tell managers. Sharing this with a manager is great so they can take action.
 - Give feedback, especially hard feedback.
 
+**Maximize your impact, and the teams impact**
+
+The evaluation criteria for a manager is the success of the team, maximize your impact (and that of the team), and that's the best way to help your manager.
+
 ### How does a dev find out if they’d be good at or enjoy being a manager
 
 **Preview as much as you can:**
@@ -1543,19 +1519,17 @@ Make sure you're a senior enough engineer before becoming a manager (AMZN - L6; 
 
 ### Why do managers always say coding is part of their job but we all know it isn’t
 
-- more details in the should managers code section\*
+I don't think managers should code with a minor exception ([More details](#l-code)). A related question might be:
 
-I don't think manager's should code, however (see above). A related question might be:
+Why do we assess managers ability to code - no clue, but a few enlightened companies do not.
 
-Why do we assess managers ability to code.
+I think managers do need technical skills see [here](#l-technical).
 
-- A few enlightened companies do not.
+## Business Acumen and Strategy
 
-When should managers code
+My note on [Strategy](/strategy), including the strategic position of various companies:
 
-- Link TBD
-
-What technical skills should a manager have and why
+{%include summarize-page.html src="/strategy" %}
 
 ## Appendix
 
