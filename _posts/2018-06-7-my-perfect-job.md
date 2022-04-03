@@ -33,7 +33,7 @@ Accelerated Growth, Realignment, Sustaining Success aren't things I've tried yet
 
 At this point in my career I'm interested in making the lives of others better. Right now, I'd like to do this via consumer software.
 
-### Product Domain? Well being, productivity and Natural Language Processing
+### Product Domain? Well being, Productivity and Natural Language Processing
 
 As a human, I'm incredibly passionate about well being. I'm excited about the whole field from nurturing mindfulness, increasing satisfaction, to solving loneliness and enabling self-reflection.
 
@@ -46,7 +46,7 @@ I'm also very excited by Natural Language Processing and Productivity so if you 
 As I get older, I'm finding more satisfaction in solving a customer's problem than extending the limits of technology.
 That said, I've built bad ass complex technical systems for the first 20 years of my career so I make sure we build and use the right architecture and technology to effectively meet the customer's need.
 
-### Product/Market Risk vs Technical Risk: Product/Market Risk
+### Product/Market Risk or Technical Risk: Product/Market Risk
 
 Incubations need to prove a risk can be overcome, either product/market or technical. Product/market risk is "Do customers want your product," while technical risk is "Can we build the tech to deliver it."
 
