@@ -32,8 +32,8 @@ Embrace the greatest parts of your work , mull over them, whether its the bike r
 <!-- vim-markdown-toc GFM -->
 
 - [General](#general)
-    - [The Acid Test: How's your sleep, does work consume your thoughts after you've left the building](#the-acid-test-hows-your-sleep-does-work-consume-your-thoughts-after-youve-left-the-building)
-    - [Balance: Don't forget the other 60% of your life](#balance-dont-forget-the-other-60-of-your-life)
+    - [What's keeping you awake?](#whats-keeping-you-awake)
+    - [What about the time you're not working?](#what-about-the-time-youre-not-working)
 - [The situations a 2x2 matrix](#the-situations-a-2x2-matrix)
     - [High SAT Low DSAT](#high-sat-low-dsat)
     - [High DSAT, Low SAT](#high-dsat-low-sat)
@@ -63,11 +63,11 @@ Embrace the greatest parts of your work , mull over them, whether its the bike r
 I think there's a joke to be had here about something in your bed or your partner's grumbling
 -->
 
-### The Acid Test: How's your sleep, does work consume your thoughts after you've left the building
+### What's keeping you awake?
 
 At the extremes DSAT ruins your sleep. Be it unable to fall asleep, waking up in a panic panic angry at your co-worker, stressed you'll fail, or dreading work the next morning. SAT is being so excited about your project, you get up early Sunday morning to sneak in a few extra hours cuz you love your project.
 
-### Balance: Don't forget the other 60% of your life
+### What about the time you're not working?
 
 <!---
 
