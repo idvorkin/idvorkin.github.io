@@ -119,12 +119,11 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
 - [Personal Motivations](#personal-motivations)
-    - [Why is management attractive to Igor](#why-is-management-attractive-to-igor)
-    - [What is Igor's dream job](#what-is-igors-dream-job)
-    - [What is Igor's career aspiration](#what-is-igors-career-aspiration)
-    - [Why do you think Igor is a good coach](#why-do-you-think-igor-is-a-good-coach)
-    - [Why do you prefer being a manager vs an IC](#why-do-you-prefer-being-a-manager-vs-an-ic)
-    - [What if managers memorize these answers for interviews](#what-if-managers-memorize-these-answers-for-interviews)
+    - [Why do you find management attractive](#why-do-you-find-management-attractive)
+    - [What is your dream job](#what-is-your-dream-job)
+    - [What are your career aspirations](#what-are-your-career-aspirations)
+    - [Why do you think you're a good coach](#why-do-you-think-youre-a-good-coach)
+    - [Why do you prefer being a manager to an IC](#why-do-you-prefer-being-a-manager-to-an-ic)
 - [Questions managers get](#questions-managers-get)
     - [What do you do all day](#what-do-you-do-all-day)
     - [What's the best/worst part of your job](#whats-the-bestworst-part-of-your-job)
@@ -1404,7 +1403,7 @@ A great way to do this is set the team up to do spikes on the major work items, 
 
 I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I"m being consistent between my actions and motivations.
 
-### Why is management attractive to Igor
+### Why do you find management attractive
 
 Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years.
 
@@ -1429,19 +1428,15 @@ _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, 
 - On top of best practices
 -->
 
-### What is Igor's dream job
+### What is your dream job
 
-A preview of [my dream job](/job):
+{%include summarize-page.html src="/job" %}
 
-_Jobs have many dimensions and I'll describe my dream job in several dimensions. In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office._
+### What are your career aspirations
 
-### What is Igor's career aspiration
+{%include summarize-page.html src="/being-a-great-manager" %}
 
-A preview of [I want to be the best boss my peeps have ever had](/being-a-great-manager)
-
-_I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best._
-
-### Why do you think Igor is a good coach
+### Why do you think you're a good coach
 
 When I explained to someone coaching it the most important aspect of management, they asked why I thought I was a good coach. Took me a while to answer, but here you go:
 
@@ -1450,7 +1445,7 @@ When I explained to someone coaching it the most important aspect of management,
 - I've read and digested slews of [self help books](/books) which while often mocked, are filled with great models.
 - I actively study and practice [coaching](/coach) and effective [decision making](/decide)
 
-### Why do you prefer being a manager vs an IC
+### Why do you prefer being a manager to an IC
 
 I think as a manager, the day to day sucks. People problems, managing by spreadsheet, fire fighting, policy violations, etc. But, those days when you look at the team, and see them helping each other, and growing, and when you catch people after a few years and they tell you how impactful you were to their career, and how working on the team was the most fun they ever had - it feels superb.
 
@@ -1459,12 +1454,6 @@ As an IC, it's almost backwards, the day to day is fun. Coding, design, debuggin
 So, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day to day joy of being an engineer.
 
 At each stage of road productions things go wrong and we learn new stuff. TODO Come up with more examples
-
-### What if managers memorize these answers for interviews
-
-Good interviewees prepare as much as possible, thinking through their experiences and philosophies. If this post helps them, that is fantastic. I'm skeptical a bad manager will be able to internalize these answers to the point they can provide rich answers.
-
-Good interviewers (and manager interviews better be good) need to be able to differentiate "theoretical knowledge" from "practical experience". They do this with situational questions like "Tell me a time when", and probing questions like "What happened then? What were the unexpected consequences? When did you have the opposite outcome?".
 
 ## Questions managers get
 
