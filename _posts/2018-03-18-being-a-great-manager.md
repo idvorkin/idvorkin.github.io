@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Being a great manager"
+title: "Being the best manager I can be"
 date: "2018-03-18 06:24:17 -0700"
 comments: true
 inprogress: true
@@ -14,16 +14,14 @@ tags:
   - manager
 ---
 
-I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I've coached :) ). I hope to have incredibly stiff competition at the top, and I'll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.
+I aspire to be the best manager I can be. I'll often fall short of my goal, but through continuous practice I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best. Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years. I'm also writing a [manager guidebook](/manager-book), which goes into much more depth on management.
 
-Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years.
-
-I'm also writing a "manager guidebook", much of this post is migrating to the [manager-book](the-manager-book) and I'm decidign what should be in which post
+{%include summarize-page.html src="/manager-book" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Management situations - Igor's book](#management-situations---igors-book)
+- [Igor's book of manager](#igors-book-of-manager)
 - [How will I measure my success?](#how-will-i-measure-my-success)
     - [Coach, empower, build inclusive and supportive culture](#coach-empower-build-inclusive-and-supportive-culture)
     - [Productive and results-oriented](#productive-and-results-oriented)
@@ -44,13 +42,13 @@ I'm also writing a "manager guidebook", much of this post is migrating to the [m
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Management situations - Igor's book
+## Igor's book of manager
 
-Management is a very broad topic. So broad I'm creating [Igor's book of manager](/the-manager-book). From the back cover:
+Management is a very broad topic. So I'm creating "Igor's book of manager":
 
-_Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement._
+{%include summarize-page.html src="/manager-book" %}
 
-There's a lot of duplication between this post and the manager book. Content is slowly migrating to the book. I'm deciding what should be in this post, and what in the other.
+There's a lot of duplication between this post and the manager book and content is slowly migrating to the book as I decide what shoud be in what post
 
 ## How will I measure my success?
 
@@ -160,7 +158,7 @@ What/How - What is the managers part in that.
 
 ### Why do people think Igor is a good coach?
 
-Someone once asked my why I'm a good coach, took me a while, here's what I came up with.
+Someone once asked me why I'm a good coach, took me a while, here's what I came up with.
 
 - I believe you can't be efficient with people, you can only be effective. And it always pays off.
 - People are not 'resources', they are 3 dimensional humans, with [lives outside work](https://bit.ly/igor-wlb-manifesto), emotions(like [pride](/pride)), and [mind monsters](/mind-monsters).
