@@ -16,7 +16,7 @@ Creativity is a criticial aspect of art, and that's something which I think AI c
     - [Emotional Impact](#emotional-impact)
     - [Surprise](#surprise)
 - [Tech](#tech)
-    - [TTS (Text to Speech) Read the content back with a different voice.](#tts-text-to-speech-read-the-content-back-with-a-different-voice)
+    - [TTS (Text to Speech) Read the content back with a different voice](#tts-text-to-speech-read-the-content-back-with-a-different-voice)
     - [Lipsync a video/audio](#lipsync-a-videoaudio)
     - [NLP: GPT-3](#nlp-gpt-3)
     - [Face Generator](#face-generator)
@@ -48,7 +48,23 @@ We can have text to speech (TTS) with any voice, perhaps a famous voice saying s
 
 [https://fakeyou.com/](https://fakeyou.com/)
 
-TODO: Link an example
+Obama
+
+<audio controls>
+  <source src="https://github.com/idvorkin/blob/raw/master/fake_voices/obama_remember_igor.wav" type="audio/wav">
+</audio>
+
+Trump
+
+<audio controls>
+  <source src="https://github.com/idvorkin/blob/raw/master/fake_voices/trump_remember_igor.wav" type="audio/wav">
+</audio>
+
+Picard
+
+<audio controls>
+  <source src="https://github.com/idvorkin/blob/raw/master/fake_voices/picard_remember_igor.wav" type="audio/wav">
+</audio>
 
 ### Lipsync a video/audio
 
