@@ -314,7 +314,7 @@
             "py/object": "__main__.Page",
             "url": "/affirmations",
             "title": "Affirmations",
-            "description": "Every day I write out my affirmations. These are positive statements that help me challenge and overcome my self-sabotaging and negative thoughts. When I repeat them often, and believe in them, I make positive changes.\n\n",
+            "description": "Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me, and have evolved over time, you’ll want to find the ones that speak best to you.\n\n",
             "file_path": "_site/affirmations.html",
             "outgoing_links": [
                 "/anxiety",
@@ -344,7 +344,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -495,8 +495,8 @@
         "/being-a-great-manager": {
             "py/object": "__main__.Page",
             "url": "/being-a-great-manager",
-            "title": "Being a great manager",
-            "description": "I aspire not only to be a great manager, but to be the best manager my team members will ever have (unless they get to work for a manager I’ve coached :) ). I hope to have incredibly stiff competition at the top, and I’ll often fall short of my goal, but through trying I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best.\n\n",
+            "title": "Being the best manager I can be",
+            "description": "I aspire to be the best manager I can be. I’ll often fall short of my goal, but through continuous practice I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best. Few things make me prouder then this public feedback on LinkedIn from people who worked with me over several years. I’m also writing a manager guidebook, which goes into much more depth on management.\n\n",
             "file_path": "_site/being-a-great-manager.html",
             "outgoing_links": [
                 "/books-that-defined-me",
@@ -1655,7 +1655,8 @@
             "file_path": "_site/human-meetings.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/being-a-great-manager"
+                "/being-a-great-manager",
+                "/job"
             ],
             "redirect_url": "",
             "doc_size": 12000
@@ -1783,6 +1784,8 @@
                 "/being-a-great-manager",
                 "/cache",
                 "/coaching",
+                "/human-meetings",
+                "/manager-book",
                 "/moments-at-work",
                 "/software-leadership-roles"
             ],
@@ -1794,7 +1797,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/job-hunt-stress": {
             "py/object": "__main__.Page",
@@ -1916,12 +1919,13 @@
                 "/being-a-great-manager",
                 "/coaching",
                 "/dsat",
+                "/job",
                 "/manager-book-appendix",
                 "/operating-manual",
                 "/software-leadership-roles"
             ],
             "redirect_url": "",
-            "doc_size": 116000
+            "doc_size": 113000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -1938,7 +1942,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 23000
+            "doc_size": 25000
         },
         "/mental-pain": {
             "py/object": "__main__.Page",
