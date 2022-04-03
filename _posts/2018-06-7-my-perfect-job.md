@@ -66,12 +66,29 @@ Technology leaders need to divide their time among the business, experiences, an
 
 ### Regardless of my job I will be successful when
 
-- I am the [best boss my team has ever had](/being-a-great-manager).
-- Everyone gets value from personalized [coaching](/Coaching-Questions)
-- The team is high performing (even if they start off in trouble)
-- Work is filled with [peak moments](/moments-at-work)
-- Going to work is like hanging out with friends.
+**My manager skills are continuously improving**
+
+{%include summarize-page.html src="/manager-book" %}
+
+**I am the best boss my team has ever had**
+
+{%include summarize-page.html src="/being-a-great-manager"%}
+
+**Everyone gets value from personalized coaching**
+
+{%include summarize-page.html src="/coaching" %}
+
+**Work is filled with peak moments**
+
+{%include summarize-page.html src="/moments-at-work" %}
+
 - (In very special places ...) I run [Feelings meetings](/Human-Meetings)
+
+{%include summarize-page.html src="/human-meetings"%}
+
+**The team is high performing (even if they start off in trouble)**
+
+**Going to work is like hanging out with friends.**
 
 <!--
 ### Very entertaining references on engineering jobs in the industry.
