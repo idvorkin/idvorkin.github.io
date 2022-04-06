@@ -1506,6 +1506,10 @@ The evaluation criteria for a manager is the success of the team, maximize your 
 
 Make sure you're a senior enough engineer before becoming a manager (AMZN - L6; FB - E6; MSFT - L65). Once you become a manager, your technical skill drops as most of your energy is focused on other tasks. So, if you don't have a strong enough base, you'll lose your ability to help assess and provide input on technical tasks.
 
+Read this:
+
+[90 days as a manager](https://review.firstround.com/this-90-day-plan-turns-engineers-into-remarkable-managers) - Great insights to what's different and how to assess if it's right for you.
+
 ### Why do managers always say coding is part of their job but we all know it isn’t
 
 I don't think managers should code with a minor exception ([More details](#l-code)). A related question might be:
