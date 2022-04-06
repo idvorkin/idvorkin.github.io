@@ -130,7 +130,6 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [How do you get anything done with all of those meetings](#how-do-you-get-anything-done-with-all-of-those-meetings)
     - [What do you think developers do](#what-do-you-think-developers-do)
     - [How can devs do to make managers jobs easier](#how-can-devs-do-to-make-managers-jobs-easier)
-    - [How does a dev find out if they’d be good at or enjoy being a manager](#how-does-a-dev-find-out-if-theyd-be-good-at-or-enjoy-being-a-manager)
     - [Why do managers always say coding is part of their job but we all know it isn’t](#why-do-managers-always-say-coding-is-part-of-their-job-but-we-all-know-it-isnt)
 - [Business Acumen and Strategy](#business-acumen-and-strategy)
 - [Appendix](#appendix)
@@ -660,6 +659,21 @@ Promotion fever is my word for engineers that are completely focused on promotio
 ### How do you identify and grow potential managers
 
 Engineers that are interested in reading this post make good manager candidates. The path usually start with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many as people issues as people are comfortable with them tracking.
+
+**Help them preview as much as they can - for example**
+
+- Intern
+- Mentor
+- Volunteer to do jobs for the manager
+- As a technical lead do some proto managing on behalf of the real Manager.
+
+**Be a strong IC first**
+
+Make sure you're a senior enough engineer before becoming a manager (AMZN - L6; FB - E6; MSFT - L65). Once you become a manager, your technical skill drops as most of your energy is focused on other tasks. So, if you don't have a strong enough base, you'll lose your ability to help assess and provide input on technical tasks.
+
+Read this:
+
+[90 days as a manager](https://review.firstround.com/this-90-day-plan-turns-engineers-into-remarkable-managers) - Great insights to what's different and how to assess if it's right for you.
 
 ### How do you grow top talent
 
@@ -1492,23 +1506,6 @@ Due to positional authority, managers statements can be overweighted. However, m
 **Maximize your impact, and the teams impact**
 
 The evaluation criteria for a manager is the success of the team, maximize your impact (and that of the team), and that's the best way to help your manager.
-
-### How does a dev find out if they’d be good at or enjoy being a manager
-
-**Preview as much as you can:**
-
-- Intern
-- Mentor
-- Volunteer to do jobs for the manager
-- As a technical lead do some proto managing on behalf of the real Manager.
-
-**Be a strong IC first**
-
-Make sure you're a senior enough engineer before becoming a manager (AMZN - L6; FB - E6; MSFT - L65). Once you become a manager, your technical skill drops as most of your energy is focused on other tasks. So, if you don't have a strong enough base, you'll lose your ability to help assess and provide input on technical tasks.
-
-Read this:
-
-[90 days as a manager](https://review.firstround.com/this-90-day-plan-turns-engineers-into-remarkable-managers) - Great insights to what's different and how to assess if it's right for you.
 
 ### Why do managers always say coding is part of their job but we all know it isn’t
 
