@@ -23,3 +23,4 @@ This tragedy still serves as a guiding principle to engineering students today. 
 The food was fantastic, and I clinked the table with my ring as Sam paid for my dinner!
 
 ![iron_ring](/images/ironring.jpg)
+(And a nice [TikTok](https://www.tiktok.com/@phong.thieu/video/7080660848225668357?_r=1&_t=8RGsT8huCv0&social_sharing=v3) talking about the importance, but not the origin)
