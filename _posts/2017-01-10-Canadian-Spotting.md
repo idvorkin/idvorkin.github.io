@@ -23,4 +23,8 @@ This tragedy still serves as a guiding principle to engineering students today. 
 The food was fantastic, and I clinked the table with my ring as Sam paid for my dinner!
 
 ![iron_ring](/images/ironring.jpg)
-(And a nice [TikTok](https://www.tiktok.com/@phong.thieu/video/7080660848225668357?_r=1&_t=8RGsT8huCv0&social_sharing=v3) talking about the importance, but not the origin)
+
+And for the curious here's another version of the story
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@phong.thieu/video/7080660848225668357" data-video-id="7080660848225668357" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@phong.thieu" href="https://www.tiktok.com/@phong.thieu">@phong.thieu</a>
+<a title="stitch" target="_blank" href="https://www.tiktok.com/tag/stitch">#stitch</a> <a title="uwaterloo" target="_blank" href="https://www.tiktok.com/tag/uwaterloo"></a> <a title="engineer" target="_blank" href="https://www.tiktok.com/tag/engineer">#engineer</a> <a title="ertw" target="_blank" href="https://www.tiktok.com/tag/ertw">#ertw</a> <a title="ironring" target="_blank" href="https://www.tiktok.com/tag/ironring">#ironring</a> <a target="_blank" title="♬ Stuff We Did (From &#34;Up&#34;) - Mark Northam" href="https://www.tiktok.com/music/Stuff-We-Did-From-Up-6791673106587977730"></a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
