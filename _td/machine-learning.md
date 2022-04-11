@@ -61,6 +61,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [What do on device ML cores do](#what-do-on-device-ml-cores-do)
     - [Model building vs Model Execution](#model-building-vs-model-execution)
     - [Computation power required for cat pictures](#computation-power-required-for-cat-pictures)
+- [The steps in running an ML model at scale.](#the-steps-in-running-an-ml-model-at-scale)
 - [The steps in training an ML model.](#the-steps-in-training-an-ml-model)
     - [Requirements gathering and problem definition](#requirements-gathering-and-problem-definition)
     - [Exploratory Data analysis](#exploratory-data-analysis)
@@ -309,6 +310,17 @@ Tensor is a name for a multi-dimensional array.
 ### Model building vs Model Execution
 
 ### Computation power required for cat pictures
+
+## The steps in running an ML model at scale.
+
+
+From: https://blog.fennel.ai/p/real-world-recommendation-system
+
+*Training a collaborative filtering based recommendation system on a toy dataset is a sophomore year project in colleges these days. But where the rubber meets the road is building such a system at scale, deploying in production, and serving live requests within a few hundred milliseconds while the user is waiting for the page to load. To build a system like this, engineers have to make decisions spanning multiple moving layers like:*
+
+
+
+
 
 ## The steps in training an ML model.
 
