@@ -130,6 +130,8 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
+        "/SoM": "/sleight-of-mouth",
+        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/taxes": "/money",
@@ -2660,12 +2662,12 @@
             "py/object": "__main__.Page",
             "url": "/td/back_ref",
             "title": "Adding back references to my blog",
-            "description": "This blog is essentially my collection of [evergreen notes](), a place to have\nmy thinking accrue. The blog is densely linked, in the forward direction, but\njekyll does not create back links. I think backlinks would be great. Here's my\nstrategy to create them. ### When to compute back links v0 - run a one off\nscript, similar to how I build search indexes. ### Back link computation\nmethodology Standard how to build a search engine question. Plan: Go through\nallow list of backlist pages (enumerate collections, remove indexes) For each\npage, build a list of referenced pages, and add them to a map of page to\nreference. Go through the map, and apply them (title, list of references) to\npages. ### How to Inject back links into the output content Inject into source\nor output Need to inject into source as output is regenerated. It's a pain as\nit's a source edit and that dirties history, but can probably come up with a way\nto keep that clean - in some kind of auto generated guards, and make an atomic\ncheckin.\n",
+            "description": "This blog is my collection of evergreen notes, a place to have\nmy thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
             "file_path": "_site/td/back_ref.html",
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/td/better-security-design": {
             "py/object": "__main__.Page",
