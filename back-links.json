@@ -18,6 +18,7 @@
         "/affirm": "/affirmations",
         "/alexa-charity": "/toysfortots",
         "/anxious": "/anxiety",
+        "/architecture": "/design",
         "/atomic-habits": "/d/habits",
         "/augmentedreality": "/ar",
         "/begin-with-the-end-in-mind": "/end-in-mind",
@@ -129,8 +130,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/taxes": "/money",
@@ -1196,7 +1195,7 @@
             "py/object": "__main__.Page",
             "url": "/design",
             "title": "Software Design And Architecture",
-            "description": "Software design is important. Here are my notes\n\n",
+            "description": "Software is measured in two dimensions: use cases (end user behavior) and malleability. End user behavior is the delivery of use cases, while malleability is the ease with which the software can modify the existing use cases, or add new ones. Software malleability is the evaluation function for an architecture. Malleability is the more important of these dimensions because over time there will be far more changes to the software then the original use case (e.g. the cost of maintenance far exceeds the software writing cost). A key property of software architecture is it’s obvious there is one place to make changes, and where that place is.\n\n",
             "file_path": "_site/design.html",
             "outgoing_links": [
                 "/d/2017-11-04-clean-architecture",
@@ -1208,7 +1207,7 @@
                 "/testing"
             ],
             "redirect_url": "",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/diet": {
             "py/object": "__main__.Page",
@@ -2049,7 +2048,7 @@
                 "/td/stats"
             ],
             "redirect_url": "",
-            "doc_size": 42000
+            "doc_size": 43000
         },
         "/moments": {
             "py/object": "__main__.Page",
