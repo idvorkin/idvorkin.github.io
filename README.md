@@ -139,10 +139,13 @@ It's pretty complicated, rendered with [excalidraw](/tools#excalidraw):
 What a PITA
 
 ```bash
+# at runtime
+export LD_LIBRARY_PATH=/home/linuxbrew/.linuxbrew/lib
+
+# at compile time
 brew install rbenv libffi
 brew link libffi
 
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"                                                                                                                                             1 ↵
 rbenv install  2.7.3
-
 ```
