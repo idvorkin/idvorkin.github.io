@@ -4,8 +4,7 @@ no-render-title: true
 title: Adding back references to my blog
 ---
 
-This blog is my collection of [evergreen notes](https://www.youtube.com/watch?v=8bZh5LMaSmE), a place to have
-my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here's my strategy to create them.
+This blog is my collection of [evergreen notes](https://notes.andymatuschak.org/Evergreen_notes), a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here's my strategy to create them.
 
 ### When to compute back links v0
 
