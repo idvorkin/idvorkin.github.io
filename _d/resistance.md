@@ -10,7 +10,7 @@ redirect_from:
   - /resistance
 ---
 
-Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if you tried, you wouldn't. Before you turned on the water, you'd have this irrational fear of stepping in and you wouldn't do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity.
+Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if you tried, you wouldn't. Before you turned on the water, you'd have this irrational fear of stepping in and you wouldn't do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity. The resistance is the enemy of progress.
 
 The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf).
 
@@ -39,7 +39,7 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## The resistance is what stops us from doing the important.
+## The resistance is what stops us from doing the important
 
 ### [Pain vs Suffering](/mental-pain)
 
@@ -71,7 +71,7 @@ At my very best, I applied a powerful antidote. I told myself I'd ask the first 
 - **Doing the important is a burden** Man taking the 1 minute to get up and taking out the garbage, what a burden.
 - **The important isn't valuable** Is taking out the garbage, a sign of huge respect or my wife really unimportant?
 
-### If you don't beat it back, it will get stronger.
+### If you don't beat it back, it will get stronger
 
 Every victory over the resistance will give you the strength for the next victory. Every loss will make it harder.
 
@@ -79,7 +79,7 @@ Every victory over the resistance will give you the strength for the next victor
 
 To remind me the resistance is a huge enemy, I do a polar bear plunge every new years, I call it jump in the lake day.
 
-![](http://farm8.staticflickr.com/7013/6615434129_8040468028.jpg)
+![Fun Photo](http://farm8.staticflickr.com/7013/6615434129_8040468028.jpg)
 
 ### Positive [Habits](/habits) and Routine
 
