@@ -21,8 +21,9 @@ page, build a list of referenced pages, and add them to a map of page to
 reference. Go through the map, and apply them (title, list of references) to
 pages.
 
-### How to Inject back links into the output content Inject into source
-or output Need to inject into source as output is regenerated. It's a pain as
+### How to Inject back links into the output content
+
+Inject into source or output Need to inject into source as output is regenerated. It's a pain as
 it's a source edit and that dirties history, but can probably come up with a way
 to keep that clean - in some kind of auto generated guards, and make an atomic
 checkin.
