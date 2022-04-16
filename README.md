@@ -1,14 +1,13 @@
-[![idvork.in](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/s7659o&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/s7659o/runs)
+# Igor's Enabling Environment and Ever green notes
 
-# Igor's collection of ever green notes
+[![idvork.in](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/s7659o&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/s7659o/runs)
 
 This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), and an [enabling environment](https://notes.andymatuschak.org/z3DaBP4vN1dutjUgrk3jbEeNxScccvDCxDgXe) to interact with them. These are currently intermingled, but
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Igor's collection of ever green notes](#igors-collection-of-ever-green-notes)
-  - [Key user features](#key-user-features)
+- [Key user features](#key-user-features)
     - [Permalink](#permalink)
     - [Table of Contents](#table-of-contents)
     - [Back Links](#back-links)
@@ -17,19 +16,21 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
     - [Select a Random Page](#select-a-random-page)
     - [Keyboard features](#keyboard-features)
     - [Comments](#comments)
-  - [Key authoring features](#key-authoring-features)
-    - [Markdown based editing and version control](#markdown-based-editing-and-version-control)
-    - [Permalinks](#permalinks)
-    - [Table of Contents](#table-of-contents-1)
-    - [Back Links](#back-links-1)
-    - [Search](#search-1)
-    - [No broken links](#no-broken-links-1)
-    - [Keyboard shortcuts](#keyboard-shortcuts)
-  - [Technical Wizardry](#technical-wizardry)
+- [Key authoring features](#key-authoring-features)
+    - [Author: Markdown based editing and version control](#author-markdown-based-editing-and-version-control)
+    - [Author: Permalinks](#author-permalinks)
+    - [Author: Table of Contents](#author-table-of-contents)
+    - [Author: Back Links](#author-back-links)
+    - [Author: Search](#author-search)
+    - [Author: No broken links](#author-no-broken-links)
+    - [Author: Keyboard shortcuts](#author-keyboard-shortcuts)
+- [Technical Wizardry](#technical-wizardry)
     - [Typescript - Reduce the easy Javascript Errors](#typescript---reduce-the-easy-javascript-errors)
     - [Cypress - E2E and Unit Testing](#cypress---e2e-and-unit-testing)
     - [Useful scripts](#useful-scripts)
     - [Re-writing from scratch](#re-writing-from-scratch)
+    - [Compilation workflow](#compilation-workflow)
+    - [Jekyll setup](#jekyll-setup)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -69,31 +70,31 @@ Something that seems good (for developers), is direct linking to the page on Git
 
 ## Key authoring features
 
-### Markdown based editing and version control
+### Author: Markdown based editing and version control
 
 A Jekyll blog stored in markdown
 
-### Permalinks
+### Author: Permalinks
 
 Standard markdown feature
 
-### Table of Contents
+### Author: Table of Contents
 
-### Back Links
+### Author: Back Links
 
-### Search
+### Author: Search
 
 Uses algolia:
 
 - bi.sh - Build index for algolia search
 
-### No broken links
+### Author: No broken links
 
 I use a [python script](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/linkchecker.py)
 
     ~/gits/linqpadsnippets/python(master⚡) » ./checklinks.sh
 
-### Keyboard shortcuts
+### Author: Keyboard shortcuts
 
 ## Technical Wizardry
 
@@ -131,4 +132,17 @@ See some of my notes at [https://github.com/idvorkin/idvorkin.github.io/blob/mas
 
 It's pretty complicated, rendered with [excalidraw](/tools#excalidraw):
 
-![](/images/build-workflow.png)
+![Build workflow](/images/build-workflow.png)
+
+### Jekyll setup
+
+What a PITA
+
+```bash
+brew install rbenv libffi
+brew link libffi
+
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"                                                                                                                                             1 ↵
+rbenv install  2.7.3
+
+```
