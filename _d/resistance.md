@@ -18,16 +18,16 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
 
 <!-- vim-markdown-toc GFM -->
 
-- [The resistance is what stops us from doing the important.](#the-resistance-is-what-stops-us-from-doing-the-important)
+- [The resistance is what stops us from doing the important](#the-resistance-is-what-stops-us-from-doing-the-important)
     - [Pain vs Suffering](#pain-vs-suffering)
     - [At the extreme - Addiction](#at-the-extreme---addiction)
     - [Magic Tricks for strangers](#magic-tricks-for-strangers)
-    - [Skipping the diet or gym](#skipping-the-diet-or-gym)
-    - [Procrasting the string that's stressing you at work](#procrasting-the-string-thats-stressing-you-at-work)
-    - [Not doing Amazon returns](#not-doing-amazon-returns)
+    - [Skipping the diet or gym, or not doing the important thing](#skipping-the-diet-or-gym-or-not-doing-the-important-thing)
+    - [Procrastinating the string that's stressing you at work](#procrastinating-the-string-thats-stressing-you-at-work)
+    - [Not doing Amazon returns, or not doing the important thing](#not-doing-amazon-returns-or-not-doing-the-important-thing)
 - [Fighting the resistance](#fighting-the-resistance)
     - [The 3 lies of laziness](#the-3-lies-of-laziness)
-    - [If you don't beat it back, it will get stronger.](#if-you-dont-beat-it-back-it-will-get-stronger)
+    - [If you don't beat it back, it will get stronger](#if-you-dont-beat-it-back-it-will-get-stronger)
     - [Jump in the lake day](#jump-in-the-lake-day)
     - [Positive Habits and Routine](#positive-habits-and-routine)
     - [Related books](#related-books)
@@ -41,35 +41,39 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
 
 ## The resistance is what stops us from doing the important
 
-### [Pain vs Suffering](/mental-pain)
+### Pain vs Suffering
 
-### At the extreme - [Addiction](/addiction)
+{%include summarize-page.html src="/mental-pain" %}
+
+### At the extreme - Addiction
+
+{%include summarize-page.html src="/addiction" %}
 
 ### Magic Tricks for strangers
 
 [Magician](/magic) is one of my treasured identities. Few things make me happier then doing magic, but the resistance battles me here constantly.
 
-The hardest part of magic, the hardest part by a mile, the #1 thing that stops me from doing magic is asking someone if they want to see a magic trick. 9 out of 10 people say yes. For the 1 of 1010 who say no, I've wasted less then 15s of their time (and mine).
+The hardest part of magic, the hardest part by a mile, the #1 thing that stops me from doing magic is asking someone if they want to see a magic trick. 9 out of 10 people say yes. For the 1 of 10 who say no, I've wasted less then 15s of their time (and mine).
 
 But I always freeze before asking someone if they want to see a trick, sometimes the resistance talks me out of doing it quickly, sometimes it fights me for minutes, sometimes, maybe 10% of the time, I can fight through the resistance, and ask, and then perform my trick, for their enjoyment.
 
-I've **never** regretted showing someone a magic trick, I've never regretting being told someone doesn't want to do a magic trick, but I frequently regret not doing a magic trick.
+I've **never** regretted showing someone a magic trick, I've never regretted being told someone doesn't want to do a magic trick, but I frequently regret not doing a magic trick.
 
-At my very best, I applied a powerful antidote. I told myself I'd ask the first person I saw if they wanted to see a magic trick, I'd repeat this for each person I saw till I completed a magic trick.
+At my very best, I applied a powerful antidote. I told myself I'd ask the first person I saw if they wanted to see a magic trick, I'd repeat this for each person I saw till I completed a magic trick. This worked well, but I still have a long way to go.
 
-### Skipping the diet or gym
+### Skipping the diet or gym, or not doing the important thing
 
-### Procrasting the string that's stressing you at work
+### Procrastinating the string that's stressing you at work
 
-### Not doing Amazon returns
+### Not doing Amazon returns, or not doing the important thing
 
 ## Fighting the resistance
 
 ### The 3 lies of laziness
 
-- **Doing the unimportant is glorious** Finally I have time to watch TV, so glad, I've been so deprived.
-- **Doing the important is a burden** Man taking the 1 minute to get up and taking out the garbage, what a burden.
-- **The important isn't valuable** Is taking out the garbage, a sign of huge respect or my wife really unimportant?
+- **Doing the unimportant is glorious** Finally I have time to watch TV, so glad, I've been so deprived. (I'm not saying TV is bad, I'm saying it's not important.)
+- **Doing the important is a burden** Man taking the 1 minute to get up and taking out the garbage, what a burden. (I'm not saying taking out the garbage is important, I'm saying it's not a burden.)
+- **The important isn't valuable** Is taking out the garbage, a sign of huge respect or my wife really unimportant? (I'm not saying taking out the garbage is important, I'm saying it's valuable.)
 
 ### If you don't beat it back, it will get stronger
 
@@ -77,7 +81,7 @@ Every victory over the resistance will give you the strength for the next victor
 
 ### [Jump in the lake day](https://ig66.blogspot.com/search/label/jump_in_lake_day)
 
-To remind me the resistance is a huge enemy, I do a polar bear plunge every new years, I call it jump in the lake day.
+To remind me the resistance is a huge enemy, I do a polar bear plunge every new year, I call it jump in the lake day.
 
 ![Fun Photo](http://farm8.staticflickr.com/7013/6615434129_8040468028.jpg)
 
