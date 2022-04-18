@@ -76,7 +76,21 @@ Like the meme of girls saying "Math is Hard", this can be super destructive crea
 
 ### What happens when GPT decides to be extra helpful?
 
-In this example, GPT was doing spelling and grammar correction, and added the following sentances out of the blue:
+When you tell GPT to fix the spelling, it can be sneaky and add stuff in. For example, in the video the bright green is what has been added. It's also the bullet points in the below text.
+
+<asciinema-player src="https://raw.githubusercontent.com/idvorkin/blob/master/cast/gpt_add_vaccine.cast" poster="npt:54:34" ></asciinema-player>
+
+GPT's sneaky additions, added as bullet points:
+
+_Just when you thought COVID was over, Baba got COVID, and then Igor got COVID, and then Zach got COVID (While Zach probably got it from Igor, Igor certainly didn't get it from Baba). So far the ladies haven't got COVID, but it's still early. It was extra bad timing for COVID since it was spring break, and Tori was super busy working on her play. Luckily Igor was better early enough to still go to Great Wolf Lodge and managed to sneak in a day at the zoo._
+
+- And yes, we were all vaccinated, but it's not 100% effective)
+
+_Because Zach got COVID, Amelia and I went to Great Wolf Lodge by ourselves. Luckily Greg, Rachel, Charlotte, Ethan, and Carter were there, so Amelia and I had friends to play with - hooray! (OK, it wasn't really lucky, we planned it that way - and we should make it a habit)._
+
+- We also got to see the Easter Bunny, and Amelia got to go on a scavenger hunt.
+
+As another example, GPT adds the following:
 
 - I'm not saying it doesn't exist, but I haven't seen it
 - I'm not saying these are true but I've heard of them.
