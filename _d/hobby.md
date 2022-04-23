@@ -21,7 +21,7 @@ Why?
 
 Being [satisfied](/happy) is the point of life, and a great hobby provides satisfaction by reinforcing your [identity](/eulogy) and helping you build relationships. A great hobby puts you in flow, giving pleasure by itself, and resting your mind from life's stressors. A great hobby lets you continuously improve, giving a feeling of mastery. This feels great, and reinforces your self confidence.
 
-If you don't have time for a hobby because you need all your energy for work and family, you should reconsider. Your work and family will eventually become stressful, and when they do having a hobby use can use to recharge will be a life saver.
+If you don't have time for a hobby because you need all your energy for work and family, you should reconsider. Your work and family will eventually become stressful, and when they do having a hobby you can use to recharge will be a life saver.
 
 ### What makes a great hobby
 
@@ -29,7 +29,7 @@ While many activities can be hobbies, the ideal hobby is accessible, supports ma
 
 #### Accessible
 
-You can do the best hobbies anywhere with minimal props and setup. While it's good to be able to do your hobby with others, an ideal hobby an also be done by yourself. Without accessibly, you'll be doing your hobby infrequently, which defeats the purpose.
+You can do the best hobbies anywhere with minimal props and setup. While it's good to be able to do your hobby with others, an ideal hobby can also be done by yourself. Without accessibility, you'll be doing your hobby infrequently, which defeats the purpose.
 
 Knitting has great accessibility. You can do it anywhere, all you need is your needles and a ball of yarn. Scuba diving has poor accessibility. You need all the scuba diving gear, a big body of water, and a dive buddy.
 
@@ -37,13 +37,13 @@ Knitting has great accessibility. You can do it anywhere, all you need is your n
 
 The best hobbies let you continually improve. Ideally they have a progression of goals which when accomplished give you pride, and can be continued as you get into your golden years. Without building mastery, it's easy to get bored with your hobby when you "top out" and have nothing else to learn.
 
-Chess supports mastery. When you start playing chess you barely know the rules, and the more you study and play, the better you get. Even better, you can keep playing chess till you're pretty darn old. Watching TV does not support mastery. Watch as much as you want, your just as bad (or good, if you're a glass half full person) as the day you started.
+Chess supports mastery. When you start playing chess you barely know the rules, and the more you study and play, the better you get. Even better, you can keep playing chess till you're pretty darn old. Watching TV does not support mastery. Watch as much as you want, you're just as bad (or good, if you're a glass half full person) as the day you started.
 
 #### Grows Identity and connections
 
 The best hobbies can represent who you are, and allow you form connections with other members of the hobbies community, and with strangers. Without identity and connection, you miss out on some of the highest benefits of your hobby.
 
-Performing music reinforces identity. You are a musician. If you're in a band you build a bond with the other band members, and if you play for an audience you've got a thrill of connection. Playing solitaire has minimal identity and connection. There's no such thing as a Solitairian and while you could play group solitaire, it almost defeats the purpose, and rarely will you share solitaire with others.
+Performing music reinforces identity. You are a musician. If you're in a band you build a bond with the other band members, and if you play for an audience you've got a thrill of connection. Playing solitaire has minimal identity and connection. There's no such thing as a Solitaireian and while you could play group solitaire, it almost defeats the purpose, and rarely will you share solitaire with others.
 
 ### Your turn - find a hobby
 
