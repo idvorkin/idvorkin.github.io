@@ -90,6 +90,14 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Ride to get a cookie!
 - Ride my folding bike!
 
+### Balloons
+
+- Sword
+- Flower
+- Monkey
+- Bunny
+- Pig
+
 ### Joy
 
 - Give out chocolate balls
