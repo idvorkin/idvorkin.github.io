@@ -98,7 +98,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Bunny
 - Pig
 
-### Joy
+### Joy to Others
 
 - Give out chocolate balls
 - Ride a bubble bike!

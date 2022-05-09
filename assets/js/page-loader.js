@@ -60,6 +60,10 @@ class ThingsIEnjoy {
         });
         const joy = new TreeNode({
             name: "Joy",
+            children: [
+                new TreeNode({ name: "Balloons" }),
+                new TreeNode({ name: "Joy to Others" }),
+            ],
         });
         return new TreeNode({
             name: "Invest in",
