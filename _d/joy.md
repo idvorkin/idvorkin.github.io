@@ -22,6 +22,7 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
     - [Smile Startup](#smile-startup)
     - [Juggling Fire](#juggling-fire)
     - [Bubble Bike](#bubble-bike)
+    - [Ballooning](#ballooning)
     - [Chocolate Balls and Bells](#chocolate-balls-and-bells)
 - [Theory](#theory)
     - [Attributes of Joy](#attributes-of-joy)
@@ -52,7 +53,7 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
 
 - Doing [magic for others](/magic)
 
-Strait from my [eulogy](/eulogy):
+Straight from my [eulogy](/eulogy):
 
 _Making cards change colors at a spectators command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. Once Igor learned [magic](/magic), that consumed his free time and became his favorite tool._
 
@@ -70,6 +71,12 @@ My well worn [Juggling fire](http://ig66.blogspot.com/2014/08/accomplishment-unl
 My [Bubble Bike](https://idvork.in/ig66/583):
 
 {% include youtube.html src="g4CPmCKyXmI" %}
+
+### Ballooning
+
+My early [ballooning](https://idvork.in/ig66/614) adventures:
+
+{% include youtube.html src="aRy86UE9QZ8" %}
 
 ### Chocolate Balls and Bells
 
@@ -127,10 +134,10 @@ Also look at notes from Avner class - who was all about building rapport with a 
 
 ### Joy and Wonder
 
-Some connection between joy and wonder
-Some say when you clear your mind you feel joy (or bliss)
+- Some connection between joy and wonder
+- Some say when you clear your mind you feel joy (or bliss)
 
-### Joy and Overwhelming kindness from a stranger.
+### Joy and Overwhelming kindness from a stranger
 
 If a stranger does something really kind for you unexpectantly, that's kind of like joy
 
