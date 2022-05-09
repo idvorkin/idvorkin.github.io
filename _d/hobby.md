@@ -19,13 +19,13 @@ Why?
 
 ### Why find a hobby
 
-Being [satisfied](/happy) is the point of life, and a great hobby provides satisfaction by reinforcing your [identity](/eulogy) and helping you build relationships. A great hobby puts you in flow, giving pleasure by itself, and resting your mind from life's stressors. A great hobby lets you continuously improve, giving a feeling of mastery. This feels great, and reinforces your self confidence.
+Being [satisfied](/happy) is the point of life, and a great hobby provides satisfaction by reinforcing your [identity](/eulogy) and helping you build relationships. A great hobby puts you in flow, giving pleasure by itself, and resting your mind from life's stressors. A great hobby lets you continuously improve, giving a feeling of mastery. This feels great, and reinforces your self-confidence.
 
-If you don't have time for a hobby because you need all your energy for work and family, you should reconsider. Your work and family will eventually become stressful, and when they do having a hobby you can use to recharge will be a life saver.
+If you don't have time for a hobby because you need all your energy for work and family, you should reconsider. Your work and family will eventually become stressful, and when they do having a hobby you can use to recharge will be a lifesaver.
 
 ### What makes a great hobby
 
-While many activities can be hobbies, the ideal hobby is accessible, supports mastery, reinforcing your identity, and builds relationships. Getting all these attributes is hard so strive for a hobby that gives as many as possible.
+While many activities can be hobbies, the ideal hobby is accessible, supports mastery, reinforces your identity, and builds relationships. Getting all these attributes is hard so strive for a hobby that gives as many as possible.
 
 #### Accessible
 
@@ -39,9 +39,9 @@ The best hobbies let you continually improve. Ideally they have a progression of
 
 Chess supports mastery. When you start playing chess you barely know the rules, and the more you study and play, the better you get. Even better, you can keep playing chess till you're pretty darn old. Watching TV does not support mastery. Watch as much as you want, you're just as bad (or good, if you're a glass half full person) as the day you started.
 
-#### Grows Identity and connections
+#### Grows Identity and Connections
 
-The best hobbies can represent who you are, and allow you form connections with other members of the hobbies community, and with strangers. Without identity and connection, you miss out on some of the highest benefits of your hobby.
+The best hobbies can represent who you are, and allow you to form connections with other members of the hobbies community, and with strangers. Without identity and connection, you miss out on some of the highest benefits of your hobby.
 
 Performing music reinforces identity. You are a musician. If you're in a band you build a bond with the other band members, and if you play for an audience you've got a thrill of connection. Playing solitaire has minimal identity and connection. There's no such thing as a Solitaireian and while you could play group solitaire, it almost defeats the purpose, and rarely will you share solitaire with others.
 
@@ -53,7 +53,7 @@ You know why you need a hobby, and what makes a great one, now get out there and
 
 #### Is this Autonomy Mastery Competence Purpose/Relatedness?
 
-For those unfamiliar with the terms, Autonomy, Mastery, Purpose (AMP) is Danial Pink's model for motivation. Autonomy, Competence, Relatedness (ACR) is the almost identical model articulated in self determination theory. These models are often used in the context of motivation for work and apply equally to hobbies.
+For those unfamiliar with the terms, Autonomy, Mastery, Purpose (AMP) is Daniel Pink's model for motivation. Autonomy, Competence, Relatedness (ACR) is the almost identical model articulated in self-determination theory. These models are often used in the context of motivation for work and apply equally to hobbies.
 
 #### What's the difference between hobbies and habits?
 
@@ -67,6 +67,6 @@ My current hobby is [magic](/magic). All I need is a coin or a deck of cards and
 
 #### Did you find your hobby on the first try?
 
-No. One of my early hobbies was scuba diving. Going scuba diving take a lot of gear and preparation. Even worse you need a dive buddy who has the matching gear, will, and schedule. Needless to say, my scuba gear has been gathering dust for a long while, and my wife keep threatening to sell it. After scuba diving, I loved squash and fencing, both fantastic hobbies, but as I crossed into my late thirties, repetitive motion caused tendentious in my forearm, and I had to give them up.
+No. One of my early hobbies was scuba diving. Going scuba diving takes a lot of gear and preparation. Even worse you need a dive buddy who has the matching gear, will, and schedule. Needless to say, my scuba gear has been gathering dust for a long while, and my wife keeps threatening to sell it. After scuba diving, I loved squash and fencing, both fantastic hobbies, but as I crossed into my late thirties, repetitive motion caused tendentious in my forearm, and I had to give them up.
 
 Next up was juggling, which for me is a fantastic hobby. Even though it meets all my criteria, it's not as accessible as magic and it's harder to form a connection juggling. For example, juggling clubs don't fit in my back pocket, and I get strange looks juggling at the bar, and don't get me started on security guards reaction to [flaming torches](https://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html). While juggling let me connect with folks, it's not an intimate connection and it's rarely remembered. By contrast with magic I can strike up a conversation, personalize the magic for the audience, and often give a souvenir which when I've formed my best connection, the audience will take home and cherish for years.
