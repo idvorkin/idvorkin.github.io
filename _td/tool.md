@@ -71,6 +71,7 @@ A collection of tips, tricks and pointers of the various tools i use
 - [OSX Misc](#osx-misc)
 - [Docker](#docker)
 - [Terminal Info](#terminal-info)
+- [OBS](#obs)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -706,6 +707,14 @@ Terminfo, ncurses, OSX, what a mess. You need to add your own terminfos see:
 - <https://gist.github.com/bbqtd/a4ac060d6f6b9ea6fe3aabe735aa9d95>
 
 You also want to install the other terminals like xterm256 and tmux
+
+### OBS
+
+Great tool for playing with videos, useful plugins
+
+- iPhone Video Recorder (use a USB cable)
+- Stream desk (makes scene control way easier)
+- Source Record Plugin (though lots of complaints that it works poorly)
 
 ### Other Resources
 
