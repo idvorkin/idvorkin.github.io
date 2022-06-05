@@ -24,7 +24,8 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
     - [Interview magic](#interview-magic)
     - [That's the coolest guy ever](#thats-the-coolest-guy-ever)
     - [Family Magic](#family-magic)
-    - [Freedom](#freedom)
+    - [Purple Intern Magic](#purple-intern-magic)
+    - [Freedom Magic](#freedom-magic)
 - [Training](#training)
 - [Philosphical Questions](#philosphical-questions)
     - [Wonder vs Joy vs Meaning vs Reactions](#wonder-vs-joy-vs-meaning-vs-reactions)
@@ -118,7 +119,21 @@ Amelia - Amelia starting to do brave reverse with card turning over.
 
 Zach - Making up his own card trick for woman waiting on the bus. -
 
-#### Freedom
+#### Purple Intern Magic
+
+I like to do magic at bars, slightly drunk people seem to enjoy it more. To celebrate our 20 interns going back to college, we went to the bar across the street.
+
+As usual, I was doing magic. On that day, I was doing my "I want you to imagine the card is in my pocket", and the card would appear in my pocket.
+
+After warming up by doing the magic for a few interns, I went to the bathroom (I do that a lot). As I came out the bathroom door, the waitress gestured me over and said _"my boyfriend is a magician and does a way better version of that ... wanna try it?"_
+
+"Always" I said, and she told me what to do. I went back to the table and Jeff, a cocky intern, told me he was gonna "catch me doing the magic". (If you're wondering, magicians hate that, it ruins it for everyone). _"Sounds great"_ I replied, and got the attention the other interns to see the magic.
+
+I asked Jeff to sign the card and place it in the deck. I then asked Jeff to concentrate on my right pocket, and when he did, the card appeared in the right pocket. Next I asked Jeff to concentrate on my left pocket. But the card wasn't there.
+
+When the card wasn't there, I told Jeff this magic is foolproof. If the card wasn't in my pocket, then you must have been concentrating on something else. Jeff rolled his eyes, giving me the "you're crappy at magic" look. Before he could open his mouth I said _"Jeff, look I know you're skeptical, but this magic is bulletproof. The only way that card isn't in my pocket is if you were concentrating on something else. What were you concentrating on?"_ Jeff was going to answer when the waitress made a startled sound, and started patting her blouse. To Jeff's surprise, and everyone else's entertainment, the signed card was in the waitress's blouse. Jeff turned very, very, very purple.
+
+#### Freedom Magic
 
 One of my magic routines is _"pick a card, write down what you really want on it"_.
 
