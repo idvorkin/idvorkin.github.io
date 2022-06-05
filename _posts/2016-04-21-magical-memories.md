@@ -51,7 +51,7 @@ This young man kept this coin for over 18 months, through a pandemic and through
 
 Did a magic trick for a kid, kid kept the card in his back pack for a year, and always showed it to folks.
 
-Anniversery card, a waitress saw me and some magicians at the bar, and said, 20 years ago, a magician did this trick, and I've carrid this card in my wallet ever since.
+Anniversary card, a waitress saw me and some magicians at the bar, and said, 20 years ago, a magician did this trick, and I've carried this card in my wallet ever since.
 
 #### Bar Magic
 
@@ -59,14 +59,14 @@ Usually I just get to watch Clive perform, but I'll get my own videos here event
 
 #### School magic
 
-Amelia's always proud I do magic. I was at her Kindergarden party, and suddenly they let the kids out and I was sorrouned by 15 Kindergardeners who wanted to see magic. It was awesome! I did tricks for lots to them, had them write their names on cards, gave out rubber bands -- was a wonderful experience.
+Amelia's always proud I do magic. I was at her Kindergarden party, and suddenly they let the kids out and I was surrounded by 15 Kindergardeners who wanted to see magic. It was awesome! I did tricks for lots to them, had them write their names on cards, gave out rubber bands -- was a wonderful experience.
 
 #### Interview magic
 
 - Best ever - Interviewer was WFH over video.
-  - Daughter crawls in, Mom try's to shew her away.
+  - Daughter crawls in, Mom tries to shew her away.
   - I say, stop, watch.
-  - Daughter stand ups, only mouth and nose in frame.
+  - Daughter stands up, only mouth and nose in frame.
   - I get up and back palm.
   - Jaw drops.
   - Hard to beat that
@@ -87,7 +87,7 @@ I'm confident Colin exaggerated to make me feel good, but I'll take his story at
 
 #### Family Magic
 
-Amelia - Amelia starting to do brauve reverse with card turning over.
+Amelia - Amelia starting to do brave reverse with card turning over.
 
 Zach - Making up his own card trick for woman waiting on the bus. -
 
@@ -109,20 +109,13 @@ Wow!
 
 ### Training
 
-- Carl: How do you fix it? You fix it by doing it right!
-- Carl: Stop - practice does not make perfect. It makes permanent.
-- Carl: That's great, except for the part you're flailing.
-- Felix: Uhm, that's OK, just practice another 9,997 times.
-- Felix, Oh, are you new at magic, maybe try a double lift.
-- Hannibal: Faiure is not an option, it's a requirement. Failure is not a person, it's an event
-
 ### Philosphical Questions
 
 #### Wonder vs Joy vs Meaning vs Reactions
 
 #### Manipulation vs Augmenting Experiences
 
-Many techniques in magic are around managing attention and molding the experience. You could look at these as manipulative. The test for manipulation vs augmenting experiences, is the intent. If the intent is personal gain it's manipulative, if the intent is the experience of the specator it's master.
+Many techniques in magic are around managing attention and molding the experience. You could look at these as manipulative. The test for manipulation vs augmenting experiences, is the intent. If the intent is personal gain it's manipulative, if the intent is the experience of the spectator it's master.
 
 #### Imbalance of Impact
 
@@ -136,14 +129,14 @@ I need more thinking here but something like.
 - People have a happiness set point (SP) So
   - Default Happiness = SP
 - Doing something wonder/joy isn't additive, it pushes someone to just above their SP, say SP+K.
-  - Before - Happines = Z
+  - Before - Happiness = Z
   - After - Happiness = SP+K
 - If the person is already close their set point, they don't move their happiness much e.g:
-  - Before - Happines = SP
+  - Before - Happiness = SP
   - After - Happiness = SP+K
   - Delta Happy = (SP+K) - SP) = K
 - If the person is depressed, say half their set point, then the impact is huge:
-  - Before - Happines = SP/2
+  - Before - Happiness = SP/2
   - After - Happiness = SP+K
   - Delta Happy = (SP+K) - (SP/2) = SP/2+K (!!!!)
 
@@ -162,3 +155,10 @@ I need more thinking here but something like.
 I like lots of his stuff. Roadhouse is racy, but fantastic. Elph boots is great, and so is this poem
 
 {% include youtube.html src="002oterS2Wg" %}
+
+- Carl: How do you fix it? You fix it by doing it right!
+- Carl: Stop - practice does not make perfect. It makes permanent.
+- Carl: That's great, except for the part you're flailing.
+- Felix: Uhm, that's OK, just practice another 9,997 times.
+- Felix, Oh, are you new at magic, maybe try a double lift.
+- Hannibal: Faiure is not an option, it's a requirement. Failure is not a person, it's an event
