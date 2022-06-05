@@ -135,7 +135,7 @@ When the card wasn't there, I told Jeff this magic is foolproof. If the card was
 
 #### Freedom Magic
 
-Magic is core to my identity. At my best, I practice 20 hours a week. I walk up to strangers and ask them to pick a card. That changed four months ago. One patch of ice, one bad landing, and magic transformed from absolute pleasure to searing pain. My wrist got better, but my magic never came back.
+Magic is core to my identity. At my best, I practice 20 hours a week. I walk up to strangers and ask them to pick a card. That changed four months ago. One patch of ice, one bad landing, and magic transformed from absolute pleasure to searing pain. My wrist got better, but my magic was gone.
 
 My fate changed three weeks ago. I saw a woman that looked defeated. Like instinct, I patted the side of my bag, and pulled out a deck of cards that hadn't been used in months. I asked her to pick a card and write down something she wanted on it. She wrote down freedom. I was a bit disappointed, I like it when folks write something personal, and I assumed she was writing freedom for some political cause. I was wrong.
 
