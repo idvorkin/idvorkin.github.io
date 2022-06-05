@@ -135,19 +135,13 @@ When the card wasn't there, I told Jeff this magic is foolproof. If the card was
 
 #### Freedom Magic
 
-One of my magic routines is _"pick a card, write down what you really want on it"_.
+My wrist had been bugging me and so I hadn't been doing magic for a few months, and had lost the habit. I saw a woman that looked pretty down on her luck, so I pulled a deck of cards out of my pocket (there's always a deck of cards in my pocket), and asked her to pick a card and write down something she wanted on it. She wrote down freedom. I was a bit disappointed, I like it when folks write something personal, and I assumed she was writing freedom for some political cause. I was wrong.
 
-Then the card is lost and the person says their magic word to find the thing they want. We do this a few times re-enforcing they can get the thing they want. When the magic is over I say OK, take home this card with the thing you want as a reminder that you can get what you want.
+She took the freedom card and placed it in the middle of the deck. I then told her to focus on the card being on the top of the deck, and the freedom card jumped to the top of the deck. We did this a few times to reinforce she can get what she wants when she really concentrates on it. After she got the card to the top the last time, I told her to keep the card to remind her she will get what she wants. She looked at me and said, _"I really needed that - thank you"_!
 
-My wrist had been bugging me and so I hadn't been doing magic for a few months, and had lost the habit. I saw a woman that looked like she could use some wonder, so I did the "write down what you want" magic. She wrote down that she wanted freedom. I was a bit disappointed, I like it when folks write something personal, and I assumed she was writing freedom for some political cause.
+A few days later the woman stopped me and said _That magic really was life changing thank you_. I figured she was lying and just being kind, so I said _glad you enjoyed it_, and went on my way. But a lie can be enough, and I restarted my daily magic practice.
 
-After we did the magic the woman seemed really happy, and said _"I really needed that - thank you"_!
-
-A few days later the woman stopped me and said _That magic really was life changing thank you_. I figured she was lying and just being kind, so I said _glad you enjoyed it_, and went on my way.
-
-But a lie can be enough, and I restarted my daily magic practice. A few weeks later I ran into the woman and thanked her - _"When you told me the magic mattered to you, it inspired me to get back into magic". She was like, _"oh it was mutually beneficial then"\*. She went on to explain that on the day I did the magic trick was the day her divorce had been finalized, and she was emotionally crushed. She went on to say "When you gave me that card, you literally handed me my freedom".
-
-Wow!
+A few weeks later I ran into the woman and thanked her - _"When you told me the magic mattered to you, it inspired me to get back into magic"._ She was like, _"oh it was mutually beneficial then"._ She went on _" Literally 2 hours before you did that magic, I'd finalized my divorce of 15 years, and was feeling lost._ She paused for a second, looked me in the eye and said - _"When you gave me that card, you literally handed me my freedom"._
 
 ### Training
 
