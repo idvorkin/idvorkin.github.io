@@ -145,7 +145,7 @@ The next day the woman stopped me and said _That magic really was life changing 
 
 Yesterday I ran into the woman and thanked her - _"When you told me the magic mattered to you, it inspired me to get back into magic"._ She was like, _"oh it was mutually beneficial then"._ She went on _" Literally 2 hours before you did that magic, I'd finalized my divorce of 15 years, and was feeling lost._ She paused for a second, looked me in the eye and said - _"When you gave me that card, you literally handed me my freedom"._
 
-She got her freedom, and I got my identity back.
+She found her freedom, and I found my magic.
 
 ### Training
 
