@@ -120,17 +120,17 @@ Zach - Making up his own card trick for woman waiting on the bus. -
 
 #### Freedom
 
-One of my magic routines is "pick a card, write down what you really want on it".
-Then the card is lost and the person says their magic word several times to find the thing they want. We do this a few times re-enforcing they can get the thing they want.
-When the trick is over I say OK, this card with the thing you want is for you. Remember, you can always do that when you're having trouble getting what you want.
+One of my magic routines is _"pick a card, write down what you really want on it"_.
 
-My wrist had been bugging me and so I hadn't been doing magic for a few months, and had sort of lost the habit. I saw a woman that looked like she could use some joy, so I did the above magic. She wrote down that she wanted freedom. I was a bit disappointed, I like it when folks write something personal, and I assumed she was writing this for some political purpose.
+Then the card is lost and the person says their magic word to find the thing they want. We do this a few times re-enforcing they can get the thing they want. When the magic is over I say OK, take home this card with the thing you want as a reminder that you can get what you want.
 
-After we did the magic the woman seemed really happy, and said "I really needed that - thank you"!
+My wrist had been bugging me and so I hadn't been doing magic for a few months, and had lost the habit. I saw a woman that looked like she could use some wonder, so I did the "write down what you want" magic. She wrote down that she wanted freedom. I was a bit disappointed, I like it when folks write something personal, and I assumed she was writing freedom for some political cause.
 
-A few days later I saw the woman again, and she stopped me and said "Wow, that magic really was life changing thank you". I figured she was lying and just being kind, and said "glad you enjoyed it", and went on my way. But after that, I spent a bunch more time practicing magic.
+After we did the magic the woman seemed really happy, and said _"I really needed that - thank you"_!
 
-That small encouragement was enough though, and I restarted my daily magic. A few days later I saw the woman again and thanked her - "When you told me the magic mattered to you, it made my day and inspired me to double down into magic". She was like, "oh it was mutually beneficial then". She went on to explain that on the day I did the magic she'd been served divorce papers, and it was crushing. She said "When I took that card, I was literally given my freedom".
+A few days later the woman stopped me and said _That magic really was life changing thank you_. I figured she was lying and just being kind, so I said _glad you enjoyed it_, and went on my way.
+
+But a lie can be enough, and I restarted my daily magic practice. A few weeks later I ran into the woman and thanked her - _"When you told me the magic mattered to you, it inspired me to get back into magic". She was like, _"oh it was mutually beneficial then"\*. She went on to explain that on the day I did the magic trick was the day her divorce had been finalized, and she was emotionally crushed. She went on to say "When you gave me that card, you literally handed me my freedom".
 
 Wow!
 
