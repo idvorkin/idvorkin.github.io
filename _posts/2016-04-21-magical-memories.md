@@ -11,6 +11,33 @@ tags:
 
 Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [Early magic memories](#early-magic-memories)
+- [How I started](#how-i-started)
+- [Magic Get Together](#magic-get-together)
+- [Highlights](#highlights)
+    - [People keeping the cards and coins](#people-keeping-the-cards-and-coins)
+    - [Bar Magic](#bar-magic)
+    - [School magic](#school-magic)
+    - [Interview magic](#interview-magic)
+    - [That's the coolest guy ever](#thats-the-coolest-guy-ever)
+    - [Family Magic](#family-magic)
+    - [Freedom](#freedom)
+- [Training](#training)
+- [Philosphical Questions](#philosphical-questions)
+    - [Wonder vs Joy vs Meaning vs Reactions](#wonder-vs-joy-vs-meaning-vs-reactions)
+    - [Manipulation vs Augmenting Experiences](#manipulation-vs-augmenting-experiences)
+    - [Imbalance of Impact](#imbalance-of-impact)
+- [Favorite Acts](#favorite-acts)
+    - [Lennart Green - Superb Card Handling](#lennart-green---superb-card-handling)
+    - [Brian Gillis - Top shelf Sleight of Hand](#brian-gillis---top-shelf-sleight-of-hand)
+    - [Hannibal](#hannibal)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 ### Early magic memories
 
 - Never really saw magic as a kid, but love to be "amazed". At a french bistro in Fremont, there was a roving magician. His finally was card to ceiling. Looked up and saw cards all over the ceiling.
