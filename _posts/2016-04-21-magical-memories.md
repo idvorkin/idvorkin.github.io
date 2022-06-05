@@ -16,7 +16,7 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 - Never really saw magic as a kid, but love to be "amazed". At a french bistro in Fremont, there was a roving magician. His finally was card to ceiling. Looked up and saw cards all over the ceiling.
 - At the table when Hannibal did [Roadhouse](https://www.youtube.com/watch?v=G1iaCcL9UDw) and his perfect classic force.
 
-### How I started:
+### How I started
 
 - Carl Bystrom's class at magic with a french drop jacket routine (great intro Carl - thanks!)
 - Not knowing how to shuffle and thus having to learn to shuffle till my fingers bled.
@@ -29,7 +29,7 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 - First Magic Conference - 3 of clubs
 - Second Magic Conference - MagiFest
 
-### Highlights:
+### Highlights
 
 - Card to ceiling and the card:
   - Still being on the ceiling at Microsoft a year later, someone asked, Hey Taft, why is your name on that card stuck to the ceiling
@@ -43,7 +43,7 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 - Giving out unicorn coins
 - Performing at Pike Place
 
-### People keeping the cards and coins
+#### People keeping the cards and coins
 
 This young man kept this coin for over 18 months, through a pandemic and through a move sequence of Seattle, to Boston to Amsterdam. That's magic.
 
@@ -53,15 +53,15 @@ Did a magic trick for a kid, kid kept the card in his back pack for a year, and 
 
 Anniversery card, a waitress saw me and some magicians at the bar, and said, 20 years ago, a magician did this trick, and I've carrid this card in my wallet ever since.
 
-### Bar Magic
+#### Bar Magic
 
 Usually I just get to watch Clive perform, but I'll get my own videos here eventually:
 
-### School magic
+#### School magic
 
 Amelia's always proud I do magic. I was at her Kindergarden party, and suddenly they let the kids out and I was sorrouned by 15 Kindergardeners who wanted to see magic. It was awesome! I did tricks for lots to them, had them write their names on cards, gave out rubber bands -- was a wonderful experience.
 
-### Interview magic
+#### Interview magic
 
 - Best ever - Interviewer was WFH over video.
   - Daughter crawls in, Mom try's to shew her away.
@@ -77,7 +77,7 @@ Amelia's always proud I do magic. I was at her Kindergarden party, and suddenly 
 
 [Video Album](https://photos.app.goo.gl/HPrGV2Uum5EBgo8NA)
 
-### That's the coolest guy ever
+#### That's the coolest guy ever
 
 One day I was walking downtown and ran into Colin and his kids. I love doing magic, so without introducing myself, I kneeled down and did magic for the kids and wandered off saying nothing else. I'm sure I enjoyed the moment, but didn't think hard about it.
 
@@ -85,11 +85,27 @@ A few years later as I chatted with Colin, he brought that interaction up, and t
 
 I'm confident Colin exaggerated to make me feel good, but I'll take his story at face value as it certainly makes me feel great and re-focus on my magic practice.
 
-### Family Magic
+#### Family Magic
 
 Amelia - Amelia starting to do brauve reverse with card turning over.
 
 Zach - Making up his own card trick for woman waiting on the bus. -
+
+#### Freedom
+
+One of my magic routines is "pick a card, write down what you really want on it".
+Then the card is lost and the person says their magic word several times to find the thing they want. We do this a few times re-enforcing they can get the thing they want.
+When the trick is over I say OK, this card with the thing you want is for you. Remember, you can always do that when you're having trouble getting what you want.
+
+My wrist had been bugging me and so I hadn't been doing magic for a few months, and had sort of lost the habit. I saw a woman that looked like she could use some joy, so I did the above magic. She wrote down that she wanted freedom. I was a bit disappointed, I like it when folks write something personal, and I assumed she was writing this for some political purpose.
+
+After we did the magic the woman seemed really happy, and said "I really needed that - thank you"!
+
+A few days later I saw the woman again, and she stopped me and said "Wow, that magic really was life changing thank you". I figured she was lying and just being kind, and said "glad you enjoyed it", and went on my way. But after that, I spent a bunch more time practicing magic.
+
+That small encouragement was enough though, and I restarted my daily magic. A few days later I saw the woman again and thanked her - "When you told me the magic mattered to you, it made my day and inspired me to double down into magic". She was like, "oh it was mutually beneficial then". She went on to explain that on the day I did the magic she'd been served divorce papers, and it was crushing. She said "When I took that card, I was literally given my freedom".
+
+Wow!
 
 ### Training
 
@@ -100,23 +116,48 @@ Zach - Making up his own card trick for woman waiting on the bus. -
 - Felix, Oh, are you new at magic, maybe try a double lift.
 - Hannibal: Faiure is not an option, it's a requirement. Failure is not a person, it's an event
 
-### Wonder vs Meaning vs Reactions
+### Philosphical Questions
 
-### Manipulation vs Augmenting Experiences.
+#### Wonder vs Joy vs Meaning vs Reactions
+
+#### Manipulation vs Augmenting Experiences
 
 Many techniques in magic are around managing attention and molding the experience. You could look at these as manipulative. The test for manipulation vs augmenting experiences, is the intent. If the intent is personal gain it's manipulative, if the intent is the experience of the specator it's master.
 
-## Favorite Acts
+#### Imbalance of Impact
 
-### Lennart Green - Superb Card Handling
+_Cross file this in my post on joy_
+
+Often the impact of magic (or Joy) can be intense, especially relative to the act.
+
+I need more thinking here but something like.
+
+- Measure happiness in Moodles (Mu) see discussion in [happy](/happy).
+- People have a happiness set point (SP) So
+  - Default Happiness = SP
+- Doing something wonder/joy isn't additive, it pushes someone to just above their SP, say SP+K.
+  - Before - Happines = Z
+  - After - Happiness = SP+K
+- If the person is already close their set point, they don't move their happiness much e.g:
+  - Before - Happines = SP
+  - After - Happiness = SP+K
+  - Delta Happy = (SP+K) - SP) = K
+- If the person is depressed, say half their set point, then the impact is huge:
+  - Before - Happines = SP/2
+  - After - Happiness = SP+K
+  - Delta Happy = (SP+K) - (SP/2) = SP/2+K (!!!!)
+
+### Favorite Acts
+
+#### Lennart Green - Superb Card Handling
 
 {% include youtube.html src="1_oa8m5Oq00?start=17" %}
 
-### Brian Gillis - Top shelf Sleight of Hand
+#### Brian Gillis - Top shelf Sleight of Hand
 
 {% include youtube.html src="7tUaBtHd-dA?start=11" %}
 
-### Hannibal
+#### Hannibal
 
 I like lots of his stuff. Roadhouse is racy, but fantastic. Elph boots is great, and so is this poem
 
