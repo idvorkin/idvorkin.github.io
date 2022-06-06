@@ -137,15 +137,15 @@ When the card wasn't there, I told Jeff this magic is foolproof. If the card was
 
 Magic is core to my identity. At my best, I practice 20 hours a week. I walk up to strangers and ask them to pick a card. That changed four months ago. One patch of ice, one bad landing, and magic transformed from absolute pleasure to searing pain. My wrist got better, but my magic was gone.
 
-My fate changed three weeks ago. I saw a woman that looked defeated. Like instinct, I patted the side of my bag, and pulled out a deck of cards that hadn't been used in months. I asked her to pick a card and write down something she wanted on it. She wrote down freedom. I was a bit disappointed, I like it when folks write something personal, and I assumed she was writing freedom for some political cause. I was wrong.
+My fate changed three weeks ago. I saw a woman that looked beaten down by life. Like instinct, I patted the side of my bag, and pulled out a deck of cards that was untouched for months. I asked her to pick a card and write down what she wanted on it. She wrote down freedom. I was a bit disappointed, I like it when magic is personal, and I figured freedom was some political cause. I was wrong.
 
-She took the freedom card and placed it in the middle of the deck. I told her to focus on the card being on the top of the deck, and her card jumped to the top of the deck. She was suprised, the second time she did it I could see some wonder showing on her face. The third time she was smiling. I told her _"Keep this card, know you'll always get what you want when you concentrate on it"_. She looked at me and said, _"I really needed that - thank you"_!
+She placed the freedom card it in the middle of the deck. I told her to focus on her freedom, and her card jumped to the top of the deck. She was suprised. The second time the freedom card jumped to the top, some wonder began creeping into her expression. The third time she was smiling. I told her _"Take this card, and remember whenever you concentrate on what you want, you'll get it."_ Surprised, she looked up, and said quitely _"I really needed that - thank you"._
 
-The next day the woman stopped me and said _That magic really was life changing thank you_. I figured she was lying to be kind, so I said _glad you enjoyed it_, and went on my way. But a lie can be enough, and I restarted my daily magic practice.
+The next day the woman caught my attention while I was going by and said _That magic thing you did was life changing thank you_. I figured she wanted to say something nice so was lying. _"Glad you enjoyed it"_ I said without really stopping. But a lie can be enough, and I restarted my daily magic practice.
 
-Yesterday I ran into the woman and thanked her - _"When you told me the magic mattered to you, it inspired me to get back into magic"._ She was like, _"oh it was mutually beneficial then"._ She went on _" Literally 2 hours before you did that magic, I'd finalized my divorce of 15 years, and was feeling lost._ She paused for a second, looked me in the eye and said - _"When you gave me that card, you literally handed me my freedom"._
+Yesterday I ran into the woman and thanked her - _"When you told me the magic mattered to you, it inspired me to get back into magic"._ She was like, _"oh it was mutually beneficial then"._ She went on _" Literally 2 hours before you did that magic, I'd finalized my divorce of 15 years, and was lost._ She paused for a second, looked me in the eye and said - _"When you gave me that card, you literally handed me my freedom"._
 
-She may have gotten her freedom, but I got my magic back.
+She got her freedom, I got my magic. What will you write on your card?
 
 ### Training
 
