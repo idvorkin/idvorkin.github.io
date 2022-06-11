@@ -1,8 +1,0 @@
-{
-  "projectId": "s7659o",
-  "baseUrl": "http://localhost:4000",
-  "env": {
-    "login_url": "/login",
-    "products_url": "/products"
-  }
-}

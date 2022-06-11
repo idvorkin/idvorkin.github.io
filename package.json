@@ -6,7 +6,7 @@
     "@types/lodash-es": "^4.17.5",
     "@types/mousetrap": "^1.6.8",
     "@types/plotly.js": "^1.54.16",
-    "cypress": "^9.0.0",
+    "cypress": "^10.0.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.5",
     "prettier": "^1.19.1"
