@@ -61,15 +61,15 @@ For example, it is impractical to measure the height of every adult woman, but y
 ### Confidence Interval
 
 This is the simplest in layman's terms
-http://www.bandolier.org.uk/painres/download/whatis/What_are_Conf_Inter.pdf
+<http://www.bandolier.org.uk/painres/download/whatis/What_are_Conf_Inter.pdf>
 
-https://blog.minitab.com/blog/adventures-in-statistics-2/understanding-hypothesis-tests-significance-levels-alpha-and-p-values-in-statistics
-https://web.ma.utexas.edu/users/mks/statmistakes/overviewfreqCI.html
+<https://blog.minitab.com/blog/adventures-in-statistics-2/understanding-hypothesis-tests-significance-levels-alpha-and-p-values-in-statistics>
+<https://web.ma.utexas.edu/users/mks/statmistakes/overviewfreqCI.html>
 
 ### P-Values
 
-https://statisticsbyjim.com/hypothesis-testing/interpreting-p-values/
-https://statisticsbyjim.com/hypothesis-testing/p-value-tips-false-positives-misleading-results/
+<https://statisticsbyjim.com/hypothesis-testing/interpreting-p-values/>
+<https://statisticsbyjim.com/hypothesis-testing/p-value-tips-false-positives-misleading-results/>
 
 **RANT:** P-Values are confusing because they answer an easy question, not the one you want, and are phrased in super confusing terms. P-Values are much like the story of the man looking for his keys under a street lamp. A woman comes to him and asks if she can help find the keys, and where the man lost him. The man answer's over there. The woman says, over there - well why are you looking under the street light!? The man responds, well because it's dark over there.
 
@@ -142,3 +142,4 @@ When we have a dataset, we need to reason about it, and reason about the changes
 - R CookBook
 - Python Data Science Handbook
 - Think Stats
+- [Data Science Concepts you need to know](https://towardsdatascience.com/introduction-to-statistics-e9d72d818745)
