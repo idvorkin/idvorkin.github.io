@@ -29,12 +29,12 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
 - [Hierarchy of Abstraction in the ML space](#hierarchy-of-abstraction-in-the-ml-space)
     - [Disambiguating the word Model](#disambiguating-the-word-model)
     - [Using an ML Model](#using-an-ml-model)
-    - [Building an ML model by training an ML algorithm.](#building-an-ml-model-by-training-an-ml-algorithm)
+    - [Building an ML model by training an ML algorithm](#building-an-ml-model-by-training-an-ml-algorithm)
     - [Implementing ML Algorithm](#implementing-ml-algorithm)
     - [Converting an ML model to hardware](#converting-an-ml-model-to-hardware)
 - [What category of problems can ML algorithms solve](#what-category-of-problems-can-ml-algorithms-solve)
-    - [Give a recommendation](#give-a-recommendation)
-    - [What type is this -  Classification](#what-type-is-this----classification)
+    - [What should I propose - Recommendation](#what-should-i-propose---recommendation)
+    - [What type is this - Classification](#what-type-is-this---classification)
     - [Predict a Value - Regression](#predict-a-value---regression)
     - [Make logical groups - Clustering](#make-logical-groups---clustering)
     - [Dimension Reduction](#dimension-reduction)
@@ -42,7 +42,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Supervised vs Unsupervised vs Semi Supervised](#supervised-vs-unsupervised-vs-semi-supervised)
     - [Batch vs Online](#batch-vs-online)
     - [Instance vs Model](#instance-vs-model)
-- [How to measure the effectiveness of ML by problem category.](#how-to-measure-the-effectiveness-of-ml-by-problem-category)
+- [How to measure the effectiveness of ML by problem category](#how-to-measure-the-effectiveness-of-ml-by-problem-category)
     - [Regression - Distance from predication to actual](#regression---distance-from-predication-to-actual)
     - [Classification - Precision and Recall](#classification---precision-and-recall)
     - [Clustering - its complicated](#clustering---its-complicated)
@@ -55,15 +55,15 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [HP face tracking doesn't recognize black people](#hp-face-tracking-doesnt-recognize-black-people)
     - [Clever Hans - the horse that could count](#clever-hans---the-horse-that-could-count)
     - [Likely hood of death from Pneumonia given asthma](#likely-hood-of-death-from-pneumonia-given-asthma)
-- [Computing Power, Hardware,](#computing-power-hardware)
+- [Computing Power, Hardware](#computing-power-hardware)
     - [Why can't a big computer do all the tuning](#why-cant-a-big-computer-do-all-the-tuning)
     - [Why GPU vs CPU](#why-gpu-vs-cpu)
     - [What is a tensor](#what-is-a-tensor)
     - [What do on device ML cores do](#what-do-on-device-ml-cores-do)
     - [Model building vs Model Execution](#model-building-vs-model-execution)
     - [Computation power required for cat pictures](#computation-power-required-for-cat-pictures)
-- [The steps in running an ML model at scale.](#the-steps-in-running-an-ml-model-at-scale)
-- [The steps in training an ML model.](#the-steps-in-training-an-ml-model)
+- [The steps in running an ML model at scale](#the-steps-in-running-an-ml-model-at-scale)
+- [The steps in training an ML model](#the-steps-in-training-an-ml-model)
     - [Requirements gathering and problem definition](#requirements-gathering-and-problem-definition)
     - [Exploratory Data analysis](#exploratory-data-analysis)
     - [Data preparation](#data-preparation)
@@ -89,7 +89,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Bert](#bert)
     - [Word Embedding](#word-embedding)
 - [Misc Topics](#misc-topics)
-    - [What is ML vs AI.](#what-is-ml-vs-ai)
+    - [What is ML vs AI](#what-is-ml-vs-ai)
     - [Generalize vs Narrow AI](#generalize-vs-narrow-ai)
     - [Why is ML so complicated](#why-is-ml-so-complicated)
     - [Deep Fakes](#deep-fakes)
@@ -149,7 +149,7 @@ This is the same as compiling C or assembly code to machine code. The machine co
 
 ## What category of problems can ML algorithms solve
 
-### Give a recommendation
+### What should I propose - Recommendation
 
 {%include summarize-page.html src="/recommend" %}
 
