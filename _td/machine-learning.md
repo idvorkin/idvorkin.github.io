@@ -80,7 +80,6 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Language models and GPT 3](#language-models-and-gpt-3)
 - [Topics to be explored](#topics-to-be-explored)
     - [DevOps for ML](#devops-for-ml)
-    - [Ethical AI](#ethical-ai)
     - [Measuring within the wider business context](#measuring-within-the-wider-business-context)
     - [Guard rails for inputs versus training data](#guard-rails-for-inputs-versus-training-data)
 - [Computer Vision](#computer-vision)
@@ -88,6 +87,8 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [My deep dive into NLP](#my-deep-dive-into-nlp)
     - [Bert](#bert)
     - [Word Embedding](#word-embedding)
+- [AI Misbehaving](#ai-misbehaving)
+    - [AI Ethics](#ai-ethics)
 - [Misc Topics](#misc-topics)
     - [What is ML vs AI](#what-is-ml-vs-ai)
     - [Generalize vs Narrow AI](#generalize-vs-narrow-ai)
@@ -368,8 +369,6 @@ _Thanks Dan Massey for your recommendation to discuss these topics_
 
 ### DevOps for ML
 
-### Ethical AI
-
 ### Measuring within the wider business context
 
 ### Guard rails for inputs versus training data
@@ -391,6 +390,17 @@ Word masking NLP models [BERT](https://towardsml.com/2019/09/17/bert-explained-a
 ### Word Embedding
 
 [Introduction to word embeddings](http://jalammar.github.io/illustrated-word2vec)
+
+## AI Misbehaving
+
+We often delegate decisions to AI, but they are as biased as their training data. Examples of what can go wrong at the site AI Misbehaving:
+
+<https://incidentdatabase.ai/>
+
+### AI Ethics
+
+- AI models existing biases in society, example dr's as men. Terrorist as islam
+- Society always has biases, what is the 'ground truth'?
 
 ## Misc Topics
 
