@@ -116,6 +116,7 @@
         "/psychological-safety": "/insecure",
         "/rage": "/anger",
         "/rca": "/coe",
+        "/recommender": "/recommend",
         "/remote": "/remote-work",
         "/remotework": "/remote-work",
         "/resistance": "/d/resistance",
@@ -224,7 +225,7 @@
                 "/writing"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/90days": {
             "py/object": "__main__.Page",
@@ -256,7 +257,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/activation": {
             "py/object": "__main__.Page",
@@ -385,7 +386,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/anxiety": {
             "py/object": "__main__.Page",
@@ -410,7 +411,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/appreciate": {
             "py/object": "__main__.Page",
@@ -493,7 +494,7 @@
                 "/idle"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/being-a-great-manager": {
             "py/object": "__main__.Page",
@@ -539,7 +540,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/bmy": {
             "py/object": "__main__.Page",
@@ -606,7 +607,7 @@
                 "/d/time-off-11-2021"
             ],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/cache": {
             "py/object": "__main__.Page",
@@ -620,7 +621,7 @@
                 "/job"
             ],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/Canadian-Spotting": {
             "py/object": "__main__.Page",
@@ -793,7 +794,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 24000
+            "doc_size": 23000
         },
         "/d/2015-11-18-Outsourcing": {
             "py/object": "__main__.Page",
@@ -804,7 +805,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/d/2016-02-03-positive-computing-survey": {
             "py/object": "__main__.Page",
@@ -817,7 +818,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/d/2016-05-09-lost-interview": {
             "py/object": "__main__.Page",
@@ -839,7 +840,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/d/2016-2-15-Seth-Godin-Notes": {
             "py/object": "__main__.Page",
@@ -968,7 +969,7 @@
                 "/switch"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/d/management_interviews": {
             "py/object": "__main__.Page",
@@ -985,7 +986,7 @@
             "py/object": "__main__.Page",
             "url": "/d/resistance",
             "title": "Resistance: Why you can't make yourself take an ice cold shower",
-            "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity.\n\n",
+            "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity. The resistance is the enemy of progress.\n\n",
             "file_path": "_site/d/resistance.html",
             "outgoing_links": [
                 "/addiction",
@@ -1007,7 +1008,7 @@
                 "/timeoff"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/d/time-off-02-2022": {
             "py/object": "__main__.Page",
@@ -1137,7 +1138,7 @@
                 "/pride"
             ],
             "redirect_url": "",
-            "doc_size": 40000
+            "doc_size": 39000
         },
         "/defi": {
             "py/object": "__main__.Page",
@@ -1296,7 +1297,7 @@
                 "/siy"
             ],
             "redirect_url": "",
-            "doc_size": 18000
+            "doc_size": 17000
         },
         "/end-in-mind": {
             "py/object": "__main__.Page",
@@ -1421,7 +1422,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/first-things-first": {
             "py/object": "__main__.Page",
@@ -1536,7 +1537,7 @@
                 "/depression"
             ],
             "redirect_url": "",
-            "doc_size": 21000
+            "doc_size": 20000
         },
         "/goals": {
             "py/object": "__main__.Page",
@@ -1562,7 +1563,7 @@
                 "/nlp"
             ],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/grateful": {
             "py/object": "__main__.Page",
@@ -1625,6 +1626,7 @@
                 "/d/time-off-12-2020",
                 "/d/time-off-12-2021",
                 "/hobby",
+                "/magic",
                 "/siy",
                 "/timeoff"
             ],
@@ -1755,7 +1757,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/irl": {
             "py/object": "__main__.Page",
@@ -1800,7 +1802,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/job-hunt-stress": {
             "py/object": "__main__.Page",
@@ -1859,7 +1861,7 @@
             "py/object": "__main__.Page",
             "url": "/lonely",
             "title": "Loneliness",
-            "description": "In a study of 1,000 Americans, 36% of respondents reported feeling lonely “frequently”,  “almost all the time” or “all the time” in the prior four weeks. 61% of young people aged 18-25 and 51% of mothers with young children reported these miserable degrees of loneliness. The cost of loneliness is high. Loneliness is linked to early mortality and a wide array of seriousphysical and emotional problems, including depression, anxiety, heart disease, substance abuse,and domestic abuse.\n\n",
+            "description": "In a study of 1,000 Americans, 36% of respondents reported feeling lonely “frequently”, “almost all the time” or “all the time” in the prior four weeks. 61% of young people aged 18-25 and 51% of mothers with young children reported these miserable degrees of loneliness. The cost of loneliness is high. Loneliness is linked to early mortality and a wide array of seriousphysical and emotional problems, including depression, anxiety, heart disease, substance abuse,and domestic abuse.\n\n",
             "file_path": "_site/lonely.html",
             "outgoing_links": [],
             "incoming_links": [],
@@ -1872,7 +1874,9 @@
             "title": "Magical memories",
             "description": "Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights\n\n",
             "file_path": "_site/magic.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/happy"
+            ],
             "incoming_links": [
                 "/d/resistance",
                 "/eulogy",
@@ -1883,7 +1887,7 @@
                 "/touching"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 23000
         },
         "/manager-book": {
             "py/object": "__main__.Page",
@@ -1945,7 +1949,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 25000
+            "doc_size": 24000
         },
         "/mental-pain": {
             "py/object": "__main__.Page",
@@ -1972,7 +1976,7 @@
                 "/shame"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/mermaid": {
             "py/object": "__main__.Page",
@@ -2011,7 +2015,7 @@
                 "/timeoff"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/mind-monsters": {
             "py/object": "__main__.Page",
@@ -2043,7 +2047,8 @@
             "outgoing_links": [
                 "/gpt",
                 "/nlp",
-                "/pandas"
+                "/pandas",
+                "/recommend"
             ],
             "incoming_links": [
                 "/manager-book",
@@ -2325,7 +2330,20 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 10000
+        },
+        "/recommend": {
+            "py/object": "__main__.Page",
+            "url": "/recommend",
+            "title": "Recommender Systems",
+            "description": "My explorations of recommender systems, heavly based on the superb book Practical Recommender Systems\n\n",
+            "file_path": "_site/recommend.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/ml"
+            ],
+            "redirect_url": "",
+            "doc_size": 14000
         },
         "/reflect-tool": {
             "py/object": "__main__.Page",
@@ -2373,7 +2391,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/save-the-souse": {
             "py/object": "__main__.Page",
@@ -2590,7 +2608,7 @@
                 "/first-things-first"
             ],
             "redirect_url": "",
-            "doc_size": 19000
+            "doc_size": 18000
         },
         "/synergize": {
             "py/object": "__main__.Page",
@@ -2662,7 +2680,7 @@
             "py/object": "__main__.Page",
             "url": "/td/back_ref",
             "title": "Adding back references to my blog",
-            "description": "This blog is my collection of evergreen notes, a place to have\nmy thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
+            "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
             "file_path": "_site/td/back_ref.html",
             "outgoing_links": [],
             "incoming_links": [],
@@ -2791,7 +2809,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/td/mosh": {
             "py/object": "__main__.Page",
@@ -3047,7 +3065,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 46000
+            "doc_size": 47000
         },
         "/touching": {
             "py/object": "__main__.Page",
@@ -3162,7 +3180,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/what-makes-a-leader": {
             "py/object": "__main__.Page",
