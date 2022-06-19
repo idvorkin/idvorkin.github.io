@@ -12,7 +12,8 @@ My explorations of recommender systems, heavly based on the superb book Practica
 <!-- vim-markdown-toc GFM -->
 
 - [Intro to Recommmendation Systems](#intro-to-recommmendation-systems)
-    - [How to collect user benavior](#how-to-collect-user-benavior)
+    - [Concepts](#concepts)
+    - [Understand Netflix (collect user behavior and present recommendations)](#understand-netflix-collect-user-behavior-and-present-recommendations)
     - [How to monitor a system](#how-to-monitor-a-system)
     - [How to calculate ratings](#how-to-calculate-ratings)
     - [Non Personalized Recommendations](#non-personalized-recommendations)
@@ -20,7 +21,7 @@ My explorations of recommender systems, heavly based on the superb book Practica
     - [Similary between content and users](#similary-between-content-and-users)
     - [Collaborative Filtering](#collaborative-filtering)
     - [Testing a recommender](#testing-a-recommender)
-    - [COntent Based Recommenders](#content-based-recommenders)
+    - [Content Based Recommenders](#content-based-recommenders)
     - [Hidden Gems: Matrix Factorization](#hidden-gems-matrix-factorization)
     - [Hybrid Recommenders](#hybrid-recommenders)
     - [From recommending to ranking](#from-recommending-to-ranking)
@@ -36,11 +37,18 @@ My explorations of recommender systems, heavly based on the superb book Practica
 
 ## Intro to Recommmendation Systems
 
-### How to collect user benavior
+### Concepts
+
+- Recommendation != Prediction. Prediction = What a user would rate content; A recommendation is what content is relevant for a user.
+
+### Understand Netflix (collect user behavior and present recommendations)
 
 ### How to monitor a system
 
 ### How to calculate ratings
+
+- Implict vs Explicit Rating - Users lie, implicit is better (see flossing example)
+- The bannana problem - knowing someone buys a bananna doesn't tell you much (See TF-IFD)
 
 ### Non Personalized Recommendations
 
@@ -52,7 +60,7 @@ My explorations of recommender systems, heavly based on the superb book Practica
 
 ### Testing a recommender
 
-### COntent Based Recommenders
+### Content Based Recommenders
 
 ### Hidden Gems: Matrix Factorization
 
