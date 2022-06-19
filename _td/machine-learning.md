@@ -33,9 +33,10 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Implementing ML Algorithm](#implementing-ml-algorithm)
     - [Converting an ML model to hardware](#converting-an-ml-model-to-hardware)
 - [What category of problems can ML algorithms solve](#what-category-of-problems-can-ml-algorithms-solve)
-    - [Classification](#classification)
-    - [Regression](#regression)
-    - [Clustering](#clustering)
+    - [Give a recommendation](#give-a-recommendation)
+    - [What type is this -  Classification](#what-type-is-this----classification)
+    - [Predict a Value - Regression](#predict-a-value---regression)
+    - [Make logical groups - Clustering](#make-logical-groups---clustering)
     - [Dimension Reduction](#dimension-reduction)
 - [Other ML Concepts](#other-ml-concepts)
     - [Supervised vs Unsupervised vs Semi Supervised](#supervised-vs-unsupervised-vs-semi-supervised)
@@ -73,7 +74,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Validation](#validation)
     - [Present Results, Use it](#present-results-use-it)
 - [ML Algorithms](#ml-algorithms)
-    - [Regression](#regression-1)
+    - [Regression](#regression)
     - [PCA](#pca)
     - [SVM](#svm)
     - [Language models and GPT 3](#language-models-and-gpt-3)
@@ -124,7 +125,7 @@ Notice that the user of an API doesn't care about the implementation and so does
 
 Web Services, like Microsoft's Cognitive Services and Amazon Translate, expose models for your application to use.
 
-### Building an ML model by training an ML algorithm.
+### Building an ML model by training an ML algorithm
 
 This is the same as using data structures and algorithms to build high level libraries. Think of creating a file system from B-Trees.
 
@@ -148,7 +149,11 @@ This is the same as compiling C or assembly code to machine code. The machine co
 
 ## What category of problems can ML algorithms solve
 
-### Classification
+### Give a recommendation
+
+{%include summarize-page.html src="/recommend" %}
+
+### What type is this - Classification
 
 Given a sample, classify into a discrete set of known values. Mathematically F(sample):Enum. Find F. Training data must be labelled, into a discrete set of data.
 
@@ -156,13 +161,13 @@ Classification can be binary (spam detection), or categorical (image recognition
 
 Algorithms used include decision trees, and Baseyian classifiers.
 
-### Regression
+### Predict a Value - Regression
 
 Given a sample, what is the output value. Mathematically F(sample):Number. Find F.
 
 For example, how much does age impact the probability of having cancer. Given an income, what is the happiness quotient. Linear Regression has been around for a long time (remember newton's method from high school)
 
-### Clustering
+### Make logical groups - Clustering
 
 Given a set of unlabeled data, classify it into groups. Mathematically F(List[Data]):List[Set(Data)]. Find F, and List[Set(Data)]
 
@@ -190,7 +195,7 @@ In online learning (better called incremental learning) an initial model is depl
 
 ### Instance vs Model
 
-## How to measure the effectiveness of ML by problem category.
+## How to measure the effectiveness of ML by problem category
 
 Because programming tends not to be probabilistic, we tend not to measure effectiveness. In programming we often care about performance, and for that we need a standard benchmark. Various benchmarks exist for various measures, E.g. crystal mark for disk, and battery burner for power utilization.
 Similarly to measure effectiveness you need to use a standard data set. Also "good values" is a function of the data set and domain. E.g. a precision of 99% is OK on the MINST data set, but 50% fantastic good on a handwriting recognition dataset.
@@ -270,7 +275,7 @@ You can find great examples here: [Synthesizing the preferred inputs for neurons
 
 ### Google Photos recognizing black people as gorillas
 
-From: https://www.theverge.com/2015/7/1/8880363/google-apologizes-photos-app-tags-two-black-people-gorillas
+From: <https://www.theverge.com/2015/7/1/8880363/google-apologizes-photos-app-tags-two-black-people-gorillas>
 
 Google came under fire this week after its new Photos app categorized photos in one of the most racist ways possible. On June 28th, computer programmer Jacky Alcin� found that the feature kept tagging pictures of him and his girlfriend as "gorillas." He tweeted at Google asking what kind of sample images the company had used that would allow such a terrible mistake to happen.
 
@@ -293,7 +298,7 @@ This was a true correlation in the data, but it owed to the more aggressive trea
 
 Put simply, a researcher taking actions based on this information would be mistaking correlation for causation. And if a hospital used the risk score for triage, they would actually recklessly put the asthma patients at risk, thus invalidating the learned model model.
 
-## Computing Power, Hardware,
+## Computing Power, Hardware
 
 ### Why can't a big computer do all the tuning
 
@@ -311,18 +316,13 @@ Tensor is a name for a multi-dimensional array.
 
 ### Computation power required for cat pictures
 
-## The steps in running an ML model at scale.
+## The steps in running an ML model at scale
 
+From: <https://blog.fennel.ai/p/real-world-recommendation-system>
 
-From: https://blog.fennel.ai/p/real-world-recommendation-system
+_Training a collaborative filtering based recommendation system on a toy dataset is a sophomore year project in colleges these days. But where the rubber meets the road is building such a system at scale, deploying in production, and serving live requests within a few hundred milliseconds while the user is waiting for the page to load. To build a system like this, engineers have to make decisions spanning multiple moving layers like:_
 
-*Training a collaborative filtering based recommendation system on a toy dataset is a sophomore year project in colleges these days. But where the rubber meets the road is building such a system at scale, deploying in production, and serving live requests within a few hundred milliseconds while the user is waiting for the page to load. To build a system like this, engineers have to make decisions spanning multiple moving layers like:*
-
-
-
-
-
-## The steps in training an ML model.
+## The steps in training an ML model
 
 Traditional programming progresses through requirements, design, implementation, and testing. Likewise there is a set of steps required for ML.
 
@@ -382,6 +382,8 @@ See my explorations at [video editting](https://github.com/idvorkin/video-edit)
 
 ### My deep dive into [NLP](/nlp)
 
+{%include summarize-page.html src="/nlp" %}
+
 ### Bert
 
 Word masking NLP models [BERT](https://towardsml.com/2019/09/17/bert-explained-a-complete-guide-with-theory-and-tutorial/)
@@ -392,7 +394,7 @@ Word masking NLP models [BERT](https://towardsml.com/2019/09/17/bert-explained-a
 
 ## Misc Topics
 
-### What is ML vs AI.
+### What is ML vs AI
 
 AI is the idea that computers can do activities traditionally performed by humans . E.g. diagnose a disease, argue a case like a defence lawyer, drive a car, have a conversation. ML is a method to achieve artificial intelligence, but not the only one. Early medical diagnosis AI was implemented by human programmers using decision trees created by subject matter experts.
 
