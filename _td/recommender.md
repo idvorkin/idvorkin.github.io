@@ -29,7 +29,7 @@ My explorations of recommender systems, heavly based on the superb book Practica
 - [Datasets](#datasets)
     - [Real Movie Datasets](#real-movie-datasets)
 - [Other Stuff](#other-stuff)
-    - [The Amazing book this is based on](#the-amazing-book-this-is-based-on)
+    - [Practical Recommender Systems - The book this is based on](#practical-recommender-systems---the-book-this-is-based-on)
     - [Netflix Prize](#netflix-prize)
 
 <!-- vim-markdown-toc -->
@@ -43,12 +43,26 @@ My explorations of recommender systems, heavly based on the superb book Practica
 
 ### Understand Netflix (collect user behavior and present recommendations)
 
+- Connect a snitch to a website by attaching a call to all events happing on a site. Good evidence provides information to the system about a user’s taste.
+- It’s good to record all events because they might turn out to be useful later.
+- Implicit ratings are deduced from the events triggered by the user, while explicit ratings are the actual ratings a user inserts.
+
 ### How to monitor a system
+
+- Key performance indicators are good because they can be benchmarked and easily used to see whether your site is improving.
+- A visitor is converted when they perform a goal or do something that you’re hoping for. The conversion funnel shows a series of steps you want the user to take.
+- The conversion path is the actual path visitors take before converting. Understanding your site’s conversion funnel is important so you can understand how close users are to converting.
+- Analytics is important to understand and always have running.
 
 ### How to calculate ratings
 
 - Implict vs Explicit Rating - Users lie, implicit is better (see flossing example)
 - The bannana problem - knowing someone buys a bananna doesn't tell you much (See TF-IFD)
+
+- A user-item matrix is the data format for recommender algorithms. You can populate them by using explicit as well as implicit ratings or by indicating which items were consumed by the user in a binary matrix.
+- A rating is the glue that connects a user to an item. It can either be manually entered by the user or calculated based on the behavior of the user.
+- The time decay algorithm takes into account that not all information is equally important: old evidence is less important because people tend to change their tastes.
+- Inverse frequency factors into the equation because interactions with less popular items provide more information about the user than interactions with popular items.
 
 ### Non Personalized Recommendations
 
@@ -80,7 +94,7 @@ My explorations of recommender systems, heavly based on the superb book Practica
 
 ## Other Stuff
 
-### The Amazing book this is based on
+### Practical Recommender Systems - The book this is based on
 
 {%include amazon.html asin="B09782BTD3" %}
 
