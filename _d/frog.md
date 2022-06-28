@@ -20,6 +20,7 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 <!-- vim-markdown-toc GFM -->
 
 - [A word from our sponsor, the resistance](#a-word-from-our-sponsor-the-resistance)
+    - [The immutable laws of hard things](#the-immutable-laws-of-hard-things)
     - [Lies of procrastination](#lies-of-procrastination)
 - [Start with Why](#start-with-why)
 - [Goal Planning](#goal-planning)
@@ -32,15 +33,21 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-### A word from our sponsor, the [resistance](/resistance)
+### A word from our sponsor, the resistance
 
-_The resistance is the personification of the force that stops you from doing all important things. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity._
+{%include summarize-page.html src="/resistance" %}
+
+
+#### The immutable laws of hard things
+
+{%include summarize-page.html src="/Immutable-Laws-Of-Hard" %}
 
 #### Lies of procrastination
 
 - **Doing the unimportant is glorious** Finally I have time to watch TV, so glad, I've been so deprived.
 - **Doing the important is a burden** Man taking the 1 minute to get up and taking out the garbage, what a burden.
 - **The important isn't valuable** Is taking out the garbage, a sign of huge respect or my wife really unimportant?
+
 
 ### Start with Why
 
