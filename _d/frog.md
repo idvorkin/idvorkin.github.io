@@ -20,8 +20,8 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 <!-- vim-markdown-toc GFM -->
 
 - [A word from our sponsor, the resistance](#a-word-from-our-sponsor-the-resistance)
-    - [The immutable laws of hard things](#the-immutable-laws-of-hard-things)
-    - [Lies of procrastination](#lies-of-procrastination)
+- [The immutable laws of hard things](#the-immutable-laws-of-hard-things)
+- [Lies of procrastination](#lies-of-procrastination)
 - [Start with Why](#start-with-why)
 - [Goal Planning](#goal-planning)
 - [Execution](#execution)
@@ -38,11 +38,11 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 {%include summarize-page.html src="/resistance" %}
 
 
-#### The immutable laws of hard things
+### The immutable laws of hard things
 
 {%include summarize-page.html src="/Immutable-Laws-Of-Hard" %}
 
-#### Lies of procrastination
+### Lies of procrastination
 
 - **Doing the unimportant is glorious** Finally I have time to watch TV, so glad, I've been so deprived.
 - **Doing the important is a burden** Man taking the 1 minute to get up and taking out the garbage, what a burden.
