@@ -91,6 +91,7 @@ This post uses the word manager, but the majority of topics are applicable to al
 - [Planning, Roadmaps and Resource Allocation](#planning-roadmaps-and-resource-allocation)
     - [Defining Success - How does goal setting work](#defining-success---how-does-goal-setting-work)
     - [How do you do planning and come up with roadmaps](#how-do-you-do-planning-and-come-up-with-roadmaps)
+    - [What makes a great schedule](#what-makes-a-great-schedule)
     - [How does resource allocation work](#how-does-resource-allocation-work)
     - [The road building analogy to software development roles](#the-road-building-analogy-to-software-development-roles)
     - [Prioritize Ruthlessly](#prioritize-ruthlessly)
@@ -1016,6 +1017,22 @@ The full process is expensive and the team should be shielded from some of it bu
 - **Interested Parties** - The process should be transparent, and anyone wants to, including junior engineers, are welcome to see how the process works. However, given they aren't required for the process, this shouldn't come at the expense of their day jobs
 
 [TODO Picture]
+
+### What makes a great schedule
+
+NOTE: Even though plans tend to be reviewed at a half year cadence, it's important that the dates below are relative for the health of the team.
+
+Great schedules and roadmaps can solve many problems, based on people's levels and the time granularity.
+
+- Team feels inspired knowing they're doing great things, and senior folks see career opportunities
+  - By having a roadmap that stretches out at very course low precision/accuracy projects for +6-12 months
+- Intermediate folks feels career opportunities by seeing opportunities that interest them.
+  - By having a roadmap with lightly scoped projects for +2-6 months
+- Team feels comfortable re-jiggering ordering and ownership by knowing hard vs soft deadlines
+  - By having a roadmap with clear deliverables and dependencies for 0-3 months
+- Junior folks (and senior) build their estimation muscles and has a sense of their own personal velocity by creating and reviewing granular estimates
+  - (The more senior folks help junior folks do this, and also build their coarse estimation muscles)
+  - By having granular estimates down to he 1-2 weeks, and having someone help create and review the estimates
 
 ### How does resource allocation work
 
