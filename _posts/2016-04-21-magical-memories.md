@@ -29,8 +29,7 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 - [Training](#training)
 - [Philosphical Questions](#philosphical-questions)
     - [Wonder vs Joy vs Meaning vs Reactions](#wonder-vs-joy-vs-meaning-vs-reactions)
-    - [Manipulation vs Augmenting Experiences](#manipulation-vs-augmenting-experiences)
-    - [Imbalance of Impact](#imbalance-of-impact)
+    - [The theory of joy](#the-theory-of-joy)
 - [Favorite Acts](#favorite-acts)
     - [Lennart Green - Superb Card Handling](#lennart-green---superb-card-handling)
     - [Brian Gillis - Top shelf Sleight of Hand](#brian-gillis---top-shelf-sleight-of-hand)
@@ -153,32 +152,9 @@ She got her freedom, I got my magic. What will you write on your card?
 
 #### Wonder vs Joy vs Meaning vs Reactions
 
-#### Manipulation vs Augmenting Experiences
+#### The theory of joy
 
-Many techniques in magic are around managing attention and molding the experience. You could look at these as manipulative. The test for manipulation vs augmenting experiences, is the intent. If the intent is personal gain it's manipulative, if the intent is the experience of the spectator it's master.
-
-#### Imbalance of Impact
-
-_Cross file this in my post on joy_
-
-Often the impact of magic (or Joy) can be intense, especially relative to the act.
-
-I need more thinking here but something like.
-
-- Measure happiness in Moodles (Mu) see discussion in [happy](/happy).
-- People have a happiness set point (SP) So
-  - Default Happiness = SP
-- Doing something wonder/joy isn't additive, it pushes someone to just above their SP, say SP+K.
-  - Before - Happiness = Z
-  - After - Happiness = SP+K
-- If the person is already close their set point, they don't move their happiness much e.g:
-  - Before - Happiness = SP
-  - After - Happiness = SP+K
-  - Delta Happy = (SP+K) - SP) = K
-- If the person is depressed, say half their set point, then the impact is huge:
-  - Before - Happiness = SP/2
-  - After - Happiness = SP+K
-  - Delta Happy = (SP+K) - (SP/2) = SP/2+K (!!!!)
+See my [theories on joy](/joy#theory)
 
 ### Favorite Acts
 
