@@ -6411,6 +6411,19 @@
     },
     {
         "py/object": "__main__.BlogPost",
+        "title": "ACHIEVEMENT UNLOCKED - 149LBS (210LBS IN  NOVEMBER 2013)",
+        "url": "/ig66/293",
+        "published": "2015-12-01T00:00:00",
+        "excerpt": "I’m incredibly proud to say I’m under 150 lbs, for the first time since I was 14. I’ve been able to accomplish this using my 1000$/month weight pledge for 25 months in a row.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/293/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal",
+            "achievement"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
         "title": "565AZ - YUMMY SNOWSTORMS",
         "url": "/ig66/565",
         "published": "2021-02-16T00:00:00",
@@ -6810,6 +6823,54 @@
         "tags": [
             "family-journal",
             "achievement"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 629AZ - WONDERFUL WEATHER, AND WONDERFUL DISCOVERIES",
+        "url": "/ig66/629",
+        "published": "2022-05-22T00:00:00",
+        "excerpt": "Weather is finally amazing! Our first non-stop sun weekend, I’m making tonnes of balloons, Tori is back in the garden, and the kids are growing up!\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/629/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 630AZ - RERUNS",
+        "url": "/ig66/630",
+        "published": "2022-06-05T00:00:00",
+        "excerpt": "Some days I’m too lazy to write a blog post, but I did write up a magical memory. And I also made some progress on my balloons, here you go …\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/630/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 631AZ - BIKING, IT'S IN THE GENES",
+        "url": "/ig66/631",
+        "published": "2022-06-12T00:00:00",
+        "excerpt": "“Dad, I think I got the biking gene from you. Also, I got the “woohoo” gene, cuz we both like to say woohoo!” Said Amelia as we did a 2 mile (3 km) bike ride to the Japanese garden and back.  The next day, I bribed Zach with a humbow at the Pike place market, and we took, non public transit, but Igor Transit to get there. Igor Transit is my bike.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/631/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 632AZ - FREMONT PARADE - SUMMER IS FINALLY HERE",
+        "url": "/ig66/632",
+        "published": "2022-06-18T00:00:00",
+        "excerpt": "HELLO my name is Amelia Dvorkin and I’m Igor’s daughter and today I’m writing THE FAMILY JOURNAL I went to the Fremont Solstice parade AND I SAW HEKING NAKED PEOPLE. I mean I respect them and all, its just it makes me uncomfortable. I at least liked the parade, we biked there. But I will say the naked people did look like they had a lot of fun.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/632/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
         ]
     }
 ]
