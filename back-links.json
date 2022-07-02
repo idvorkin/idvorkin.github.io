@@ -131,8 +131,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/taxes": "/money",
@@ -1481,6 +1479,7 @@
             "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.\n\n",
             "file_path": "_site/frog.html",
             "outgoing_links": [
+                "/Immutable-Laws-Of-Hard",
                 "/d/resistance",
                 "/essentialism",
                 "/eulogy",
@@ -1712,7 +1711,9 @@
             "description": "Exercise, Diet, Personal Development, each of these is governed by the immutable laws of hard things. It’s possible these laws don’t apply to you, but I doubt it.\n\n",
             "file_path": "_site/Immutable-Laws-Of-Hard.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/frog"
+            ],
             "redirect_url": "",
             "doc_size": 10000
         },
@@ -2055,7 +2056,7 @@
                 "/td/stats"
             ],
             "redirect_url": "",
-            "doc_size": 43000
+            "doc_size": 44000
         },
         "/moments": {
             "py/object": "__main__.Page",
@@ -2343,7 +2344,7 @@
                 "/ml"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 16000
         },
         "/reflect-tool": {
             "py/object": "__main__.Page",
