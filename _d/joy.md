@@ -31,7 +31,7 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
     - [Why kids are more receptive to Joy](#why-kids-are-more-receptive-to-joy)
     - [Other things to file](#other-things-to-file)
     - [Joy and Wonder](#joy-and-wonder)
-    - [Joy and Overwhelming kindness from a stranger.](#joy-and-overwhelming-kindness-from-a-stranger)
+    - [Joy and Overwhelming kindness from a stranger](#joy-and-overwhelming-kindness-from-a-stranger)
     - [Joy versus pleasure](#joy-versus-pleasure)
     - [Things that bring most people joy](#things-that-bring-most-people-joy)
     - [Is bringing others joy manipulation?](#is-bringing-others-joy-manipulation)
@@ -71,6 +71,7 @@ My well worn [Juggling fire](http://ig66.blogspot.com/2014/08/accomplishment-unl
 My [Bubble Bike](https://idvork.in/ig66/583):
 
 {% include youtube.html src="g4CPmCKyXmI" %}
+{% include youtube.html src="1NWsE-P7_VA" %}
 
 ### Ballooning
 
