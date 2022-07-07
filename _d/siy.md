@@ -23,13 +23,13 @@ This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B
 
 - [1) What is Emotional Intelligence (EI)? How to train it?](#1-what-is-emotional-intelligence-ei-how-to-train-it)
 - [2) Theory and practice of mindfulness](#2-theory-and-practice-of-mindfulness)
-- [3) Extend mindfulness beyond formal practice.](#3-extend-mindfulness-beyond-formal-practice)
+- [3) Extend mindfulness beyond formal practice](#3-extend-mindfulness-beyond-formal-practice)
 - [4) Self awareness leading to self confidence](#4-self-awareness-leading-to-self-confidence)
 - [5) Developing Self Mastery](#5-developing-self-mastery)
 - [6) Art of self motivation and building resilience](#6-art-of-self-motivation-and-building-resilience)
 - [7) Developing Empathy by connecting to others](#7-developing-empathy-by-connecting-to-others)
 - [8) Leadership and Social Skills](#8-leadership-and-social-skills)
-- [9) The story behind Search Inside Yourself.](#9-the-story-behind-search-inside-yourself)
+- [9) The story behind Search Inside Yourself](#9-the-story-behind-search-inside-yourself)
 - [Inclining the Mind Toward Joy](#inclining-the-mind-toward-joy)
 - [Uplift the mind in seconds](#uplift-the-mind-in-seconds)
 - [Working with suffering](#working-with-suffering)
@@ -541,6 +541,7 @@ _Being Effective and Loved at the same time_
   - Worse, lack of information makes us assume the worst AND believe it to be true.
   - Remember human on other end, just like me. Will make up missing information.
 - Practice Difficult E-mail.
+
   - Deep breath.
   - Reflect what the other person will read, think about 3 conversations.
   - Write e-mail.
@@ -579,6 +580,13 @@ _Three easy steps to world peace_
 
 ### Uplift the mind in seconds
 
+Tools of the trade (Sublime states):
+
+- Loving Kindness
+- Compassion
+- Altrustic Joy
+- Equanimity
+
 - Loving-Kindness and the Happiest Day in Seven Years
 - IP: WISHING FOR RANDOM PEOPLE TO BE HAPPY
 - Familiarizing the Mind with the Joy of Loving-Kindness
@@ -589,7 +597,32 @@ _Three easy steps to world peace_
 - IP: REJOICING IN INNER GOODNESS AND ALTRUISTIC DEEDS
 - Selfless Love, a Short Poem
 
-Enemy of loving kindness - Far: Ill will - Near: Grasping - If pereson leaves, no longer love - Near: Conditional Love - Only love if they do XYZ
+Enemies of loving kindness
+
+- Ill will - the opposite
+
+- Grasping - If person leaves, no longer love
+- Conditional Love - Only love if they do XYZ
+
+Enemies of compassion
+
+- Cruelty - The opposite
+- Pity - Feeling superiur, re-inforces ego.
+- Grief/Despair - Need to have hope of inspired future.
+
+Enemies of Altruistic Joy
+
+- Envy - The opposite
+- Relative to me - It's good because it's good for me.
+- Unholesome Joy - Feel happy for someone because on drugs or cheating someone
+
+Enemies of Equanimity
+
+- Anxiety/Craving/Hatred/Anger The opposite
+- Disengagement - Ignoring the thing we don't want to see
+- Apathy - See, but don't care about the thing
+
+If only brave when far away, then not really brave.
 
 ### Working with suffering
 
