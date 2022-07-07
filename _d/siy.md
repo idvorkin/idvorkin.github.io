@@ -582,13 +582,15 @@ _Three easy steps to world peace_
 
 Tools of the trade (Sublime states):
 
-- Loving Kindness
+- Loving Kindness - Wish for someone to be happy
+  - Only think in your head
+  - Work, min bar, just think you want someone to be happy.
+- IP: WISHING FOR RANDOM PEOPLE TO BE HAPPY
+  - Secretely pick two people, and think them happy though
+  - Make a shooting sound to make it joyful (pew, pew)
 - Compassion
 - Altrustic Joy
 - Equanimity
-
-- Loving-Kindness and the Happiest Day in Seven Years
-- IP: WISHING FOR RANDOM PEOPLE TO BE HAPPY
 - Familiarizing the Mind with the Joy of Loving-Kindness
 - FP: ATTENDING TO THE JOY OF LOVING-KINDNESS
 - Loving-Kindness Is the “Gateway Drug” to Compassion
