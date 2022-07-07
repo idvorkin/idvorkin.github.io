@@ -62,6 +62,24 @@ I don't know if there's any science here, but my target is 30 minutes of cardio.
 
 For me, it's long enough to work up a sweat, but short enough to not eat up my day. I've read that you should either do 30 minutes of low to medium intensity exercise daily or 20 minutes of high intensity exercise 3 times a week. When starting out or when old, I'd recommend low weights high reps to reduce the risk of quitting and injury.
 
+#### What is your cardio HIT protocol
+
+"Tony the trainer" taught me a great protocol I swear by it, and think I came close to it accidentally before.
+
+TL;DR: All that matters is training at 90% of your max HR. 15 minutes a day 3x a week and you're set. But good lucking doing 15 minutes at 90% max HR. Break it does as follows. 5 min off, 5 off, 4 on, 4 off, ... 1 on, 1 off. You should get a curve as follows
+
+TODO: Add heart graphs
+
+What's great about this protocol is it works at any fitness level. If all you can do is walk to get winded, walk till you hit the goal. If you can run, run. BUT, don't look at speed, look at heart rate.
+
+Other stuff:
+
+- How got lucky to re-start it as started by running, but calf injury made this happen
+- Used to do infinite elliptical
+- Show impact on HRV and Resting Heart Rate
+- How quickly need to scale up the intensity.
+- The goal is not "muscle strength", it's cardio strength, so back down when you hit your HR max, regardless of how tired you are.
+
 #### My body part really hurts, what should I do?
 
 I've had lots of injuries, here's my various [braces](/irl#physical-health)
