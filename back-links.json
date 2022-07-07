@@ -131,6 +131,8 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
+        "/SoM": "/sleight-of-mouth",
+        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/taxes": "/money",
@@ -1015,15 +1017,30 @@
             "description": "It’mid winter break and I’ve got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
             "file_path": "_site/d/time-off-02-2022.html",
             "outgoing_links": [
-                "/d/time-off-02-2022",
                 "/happy",
                 "/productive",
                 "/sleight-of-mouth",
-                "/switch"
+                "/switch",
+                "/timeoff"
             ],
-            "incoming_links": [
-                "/d/time-off-02-2022"
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 17000
+        },
+        "/d/time-off-07-2022": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-07-2022",
+            "title": "Time off July 2022 - FISM and Canada.",
+            "description": "It’s FISM (olympics of magic), and I’m going to Quebec city to reenergize my love of magic, since I’m already in Canada I’ll also spend time with My Mom, Sister, and college room mate.\n`\n\n",
+            "file_path": "_site/d/time-off-07-2022.html",
+            "outgoing_links": [
+                "/happy",
+                "/productive",
+                "/sleight-of-mouth",
+                "/switch",
+                "/timeoff"
             ],
+            "incoming_links": [],
             "redirect_url": "",
             "doc_size": 17000
         },
@@ -1369,6 +1386,7 @@
                 "/cache",
                 "/job",
                 "/magic",
+                "/physical-health",
                 "/siy",
                 "/tags",
                 "/toysfortots"
@@ -1622,10 +1640,11 @@
             ],
             "incoming_links": [
                 "/d/time-off-02-2022",
+                "/d/time-off-07-2022",
                 "/d/time-off-12-2020",
                 "/d/time-off-12-2021",
                 "/hobby",
-                "/magic",
+                "/joy",
                 "/siy",
                 "/timeoff"
             ],
@@ -1834,16 +1853,18 @@
             "file_path": "_site/joy.html",
             "outgoing_links": [
                 "/eulogy",
+                "/happy",
                 "/like-switch",
                 "/magic"
             ],
             "incoming_links": [
                 "/affirmations",
                 "/happy",
-                "/hobby"
+                "/hobby",
+                "/magic"
             ],
             "redirect_url": "",
-            "doc_size": 18000
+            "doc_size": 20000
         },
         "/like-switch": {
             "py/object": "__main__.Page",
@@ -1876,7 +1897,7 @@
             "description": "Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights\n\n",
             "file_path": "_site/magic.html",
             "outgoing_links": [
-                "/happy"
+                "/joy"
             ],
             "incoming_links": [
                 "/d/resistance",
@@ -1888,7 +1909,7 @@
                 "/touching"
             ],
             "redirect_url": "",
-            "doc_size": 23000
+            "doc_size": 22000
         },
         "/manager-book": {
             "py/object": "__main__.Page",
@@ -1933,7 +1954,7 @@
                 "/software-leadership-roles"
             ],
             "redirect_url": "",
-            "doc_size": 113000
+            "doc_size": 114000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -2225,13 +2246,14 @@
             "incoming_links": [
                 "/depression",
                 "/diet",
+                "/eulogy",
                 "/irl",
                 "/operating-manual",
                 "/sharpen-the-saw",
                 "/tech-health-toys"
             ],
             "redirect_url": "",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/pride": {
             "py/object": "__main__.Page",
@@ -2270,7 +2292,8 @@
                 "/getting-to-yes"
             ],
             "incoming_links": [
-                "/d/time-off-02-2022"
+                "/d/time-off-02-2022",
+                "/d/time-off-07-2022"
             ],
             "redirect_url": "",
             "doc_size": 12000
@@ -2516,6 +2539,7 @@
             "incoming_links": [
                 "/7h-concepts",
                 "/d/time-off-02-2022",
+                "/d/time-off-07-2022",
                 "/operating-manual"
             ],
             "redirect_url": "",
@@ -2606,6 +2630,7 @@
             ],
             "incoming_links": [
                 "/d/time-off-02-2022",
+                "/d/time-off-07-2022",
                 "/first-things-first"
             ],
             "redirect_url": "",
@@ -3028,6 +3053,8 @@
                 "/td/time-off-3-2020"
             ],
             "incoming_links": [
+                "/d/time-off-02-2022",
+                "/d/time-off-07-2022",
                 "/d/time-off-11-2021",
                 "/d/time-off-12-2020",
                 "/d/time-off-12-2021",
