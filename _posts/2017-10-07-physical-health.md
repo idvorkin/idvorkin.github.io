@@ -13,11 +13,11 @@ Physical health is the basis of energy, and thus the source of success, and a ke
 
 **Weight is essential** because it reduces the effort required to do physical activities, and because it reduces the risk of diseases.
 
-Weight is "calories in" minus "calories out." [Diet](/diet) dominates calories out, exercise has a small contribution. A great way to see this is comparing what you eat to physical Activity. A box of French fries adds 400 calories to your day, but running for 30 minutes burns 300 calories.
+Weight is "calories in" minus "calories out." [Diet](/diet) dominates calories out, exercise has a small contribution. A great way to see this is comparing what you eat to physical activity. A box of French fries adds 400 calories to your day, but running for 30 minutes burns 300 calories.
 
-Set a weight goal, and check progress towards the goal weekly. It's easy for your weight to gradually creep up, and keep creeping up. Thus, I strongly recommend committing to not letting your weight exceed your goal for too long.
+Set a weight goal, and check progress towards the goal weekly. It's easy for your weight to gradually creep up, and keep creeping up. Thus, I strongly recommend committing to not letting your weight exceed your goal for too long. Personally, I set a weight pledge every month, and never exceed that weight.
 
-Personally, I set a weight pledge every month, and never exceed that weight. Some people feel dieting is shameful. I couldn't disagree more. Dieting shows you care about health and are doing something about it.
+Some people feel dieting is shameful. I couldn't disagree more. Dieting shows you care about health and are doing something about it.
 
 ### Strength and Cardio Training
 
@@ -25,9 +25,9 @@ Personally, I set a weight pledge every month, and never exceed that weight. Som
 
 Fitness can be endurance or strength. For the majority of activities, endurance dominates, but some minimal strength is also required. For example, being able to run 30 minutes ensures you won't be out of breath when you need to hustle to catch the bus, but being able to lift 100lbs doesn't help you in many situations. Being able to lift 10 lbs is important though, so don't completely ignore strength.
 
-I recommend doing the most vigorous cardio activity you can comfortably do multiple times a week. It's easy to skip your activity, so try to set it up so you don' have excuses to skip.
+I recommend doing the most vigorous cardio activity you can comfortably do multiple times a week. It's easy to skip your activity, so try to set it up so you don't have excuses to skip.
 
-Personally, I run 4 miles on a tread mill multiple times a week at the gym. I run inside so weather can't keep me from running, and I keep gym clothes in a locker at the gym so I can't have the "I forgot my gym shoes" excuse either.
+Personally, I run 4 miles on a treadmill multiple times a week at the gym. I run inside so weather can't keep me from running, and I keep gym clothes in a locker at the gym so I can't have the "I forgot my gym shoes" excuse either.
 
 ### Sleeping soundly
 
@@ -36,9 +36,7 @@ Personally, I run 4 miles on a tread mill multiple times a week at the gym. I ru
 Sleep is a personal thing, with different people requiring different amounts. The amount of sleep you need should be dictated by how tired you feel.
 I recommend getting as much sleep as you need.
 
-Personally I set an alarm and always wake up at the same, regardless of how tired I am. When I'm not getting enough sleep I actually reduce my caffeine to make sure I'm so tired, I fall asleep early. Many people feel they don't have enough time for sleep, but I couldn't disagree more. Not sleeping makes everything worse, resulting in you getting less done. Getting enough sleep show you want to get the most done in your waking hours.
-
-ps. Being a nerd I use a bunch of [toys]({% post_url 2017-10-06-tech-health-toys %}) to help with my health.
+Personally I set an alarm and always wake up at the same time, regardless of how tired I am. When I'm not getting enough sleep I actually reduce my caffeine to make sure I'm so tired, I fall asleep early. Many people feel they don't have enough time for sleep, but I couldn't disagree more. Not sleeping makes everything worse, resulting in you getting less done. Getting enough sleep shows you want to get the most done in your waking hours.
 
 ### FAQ
 
@@ -66,7 +64,7 @@ For me, it's long enough to work up a sweat, but short enough to not eat up my d
 
 "Tony the trainer" taught me a great protocol I swear by it, and think I came close to it accidentally before.
 
-TL;DR: All that matters is training at 90% of your max HR. 15 minutes a day 3x a week and you're set. But good lucking doing 15 minutes at 90% max HR. Break it does as follows. 5 min off, 5 off, 4 on, 4 off, ... 1 on, 1 off. You should get a curve as follows
+TL;DR: All that matters is training at 90% of your max HR. 15 minutes a day 3x a week and you're set. But good luck doing 15 minutes at 90% max HR. Break it down as follows. 5 min off, 5 off, 4 on, 4 off, ... 1 on, 1 off. You should get a curve as follows
 
 TODO: Add heart graphs
 
@@ -74,10 +72,10 @@ What's great about this protocol is it works at any fitness level. If all you ca
 
 Other stuff:
 
-- How got lucky to re-start it as started by running, but calf injury made this happen
+- How I got lucky to re-start it as started by running, but calf injury made this happen
 - Used to do infinite elliptical
 - Show impact on HRV and Resting Heart Rate
-- How quickly need to scale up the intensity.
+- How quickly you need to scale up the intensity.
 - The goal is not "muscle strength", it's cardio strength, so back down when you hit your HR max, regardless of how tired you are.
 
 #### My body part really hurts, what should I do?
@@ -90,9 +88,9 @@ Trainers are expensive, but heart attacks are even more expensive, and on top of
 
 I put off getting a trainer for 20 years. I thought I was very knowledgable in exercise, physiology, and was motivated having a gym routine where I went every morning to do cardio, and I wasn't interested in getting strong. Eventually I decided I'd like some more injury prevention, so got a trainer and told him my goal was to increase my injury resilience, and he said OK, lets do mobility workouts then.
 
-- The mobility movements are more strenous then my normal cardio routines. Every movement we do seemed like it could happen naturally through day to day activities and felt incredibly weak, a real warning to injury.
+- The mobility movements are more strenuous then my normal cardio routines. Every movement we do seemed like it could happen naturally through day to day activities and felt incredibly weak, a real warning to injury.
 
-- He also took a look at my cardio routine, and changed it to be a high intensity Training - Wow, same amount of time,so much more intense, and so energized afterward.
+- He also took a look at my cardio routine, and changed it to be a high intensity Training - Wow, same amount of time, so much more intense, and so energized afterward.
 
 - Many days I feel lazy, I turn off my brain and just let him tell me what to do, and when to push myself.
 
@@ -110,6 +108,7 @@ But a few points to add after you read the article:
 
 1. There's no free lunch, I still need 8 hours sleep which has me in bed at 8 asleep by 9:30.
 2. I don't pop out of bed bushy tailed. I still need an alarm, and I still hit snooze. Except, the day I'm lazy and whack snooze 6 times, it's still 5:30am.
-3. The "productivity advantage" for me is motivation starts strong when I get up and declines throgh the day, gone by 9pm when I'm on the couch, binging youtube with my beer and chips. By contrast, at 5am I'm ready to do something useful, and no one is awake, and nothing is open to distract me.
+3. The "productivity advantage" for me is motivation starts strong when I get up and declines through the day, gone by 9pm when I'm on the couch, binging youtube with my beer and chips. By contrast, at 5am I'm ready to do something useful, and no one is awake, and nothing is open to distract me.
 4. Sometimes my body goes a bit batty and I wake up early, that has me waking up at 3:3:30am which is annoying, as by noon I'm pretty toast and have to fight to stay awake till 8pm.
 5. Not gonna lie, I love the feeling of Pride when I tell folks I get up crazy early.
+   ps. Being a nerd I use a bunch of [toys]({% post_url 2017-10-06-tech-health-toys %}) to help with my health.
