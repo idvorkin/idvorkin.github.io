@@ -80,7 +80,7 @@ _Breathing as if your life depends on it._
   - Dude where is the science.
   - Happiness default state of mind.
 
-### 3) Extend mindfulness beyond formal practice.
+### 3) Extend mindfulness beyond formal practice
 
 _Mindfulness without butt on cushion_
 
@@ -546,13 +546,13 @@ _Being Effective and Loved at the same time_
   - Write e-mail.
   - Don't send, wait some time, and think through what reader will read. Assume already threatened by you.
 
-* Compassion leads to happiness:
+- Compassion leads to happiness:
   - Happiest state is compassion.
   - Zen monks sending happiness off the fMRI chart, say compassion is what puts them in happiest state.
   - Second happiest state is open attention.
-* Not summarized
+- Not summarized
 
-### 9) The story behind Search Inside Yourself.
+### 9) The story behind Search Inside Yourself
 
 _Three easy steps to world peace_
 
@@ -588,6 +588,8 @@ _Three easy steps to world peace_
 - FP: UPLIFTING AND SETTLING THE MIND WITH ALTRUISTIC JOY
 - IP: REJOICING IN INNER GOODNESS AND ALTRUISTIC DEEDS
 - Selfless Love, a Short Poem
+
+Enemy of loving kindness - Far: Ill will - Near: Grasping - If pereson leaves, no longer love - Near: Conditional Love - Only love if they do XYZ
 
 ### Working with suffering
 
