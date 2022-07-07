@@ -9,12 +9,19 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ## My top priorities
 
+### Maintain Healthy habits
+
 - Keep my weight at 200 lbs (though dropping 5 extra would be amazing
 - Maintaining my mobilily, and cardio routine (can skip strength)
 - Maintaining my emotional health habits
-- Get my Mom setup with fresh electronics
 - Minimize Procrastination
 - Disconnect from work as soon as I'm done work.
+
+### Other
+
+- Get my Mom setup with fresh electronics
+- Enjoy the magic
+- Feel got the most out of vacation
 
 ## Executive Summary
 
@@ -44,6 +51,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 - [Physical Energy (Y/5)](#physical-energy-y5)
 - [Motivation (Y/5)](#motivation-y5)
 - [Emotional Habits (Y/5)](#emotional-habits-y5)
+- [Avoid Procrastination](#avoid-procrastination)
     - [Meditation](#meditation)
     - [750 words](#750-words)
 - [Physical Habits (Y/5)](#physical-habits-y5)
@@ -53,9 +61,11 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
     - [Sleep](#sleep)
 - [Other stuff](#other-stuff)
 - [Mental quicksand](#mental-quicksand)
-    - [Stock market being down impacting my ability to spend.](#stock-market-being-down-impacting-my-ability-to-spend)
+    - [Guilt of missing summer time with family](#guilt-of-missing-summer-time-with-family)
+    - [Forgetting something with lots bring](#forgetting-something-with-lots-bring)
+    - [Stock market being down impacting my ability to spend](#stock-market-being-down-impacting-my-ability-to-spend)
     - [Missing root from tooth extraction](#missing-root-from-tooth-extraction)
-    - [No buffer between vacation and work.](#no-buffer-between-vacation-and-work)
+    - [No buffer between vacation and work](#no-buffer-between-vacation-and-work)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -82,6 +92,9 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ### Blogging
 
+- Not at the expensive of family time.
+- Doing it early in the morning before folks get up is reasonable.
+
 ### Programming
 
 - Learn some stuff about [recommender systems](/recommender) are part of the work side of time off and on the flights
@@ -90,7 +103,12 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ### Biking
 
+- Don't think so, will be in canada.
+
 ### Ballooning
+
+- Bring lots of balloons and manual pump. Great opportunity to bring joy to kids.
+- Fun at Airport (though likely working there)
 
 ### Joy Activities
 
@@ -99,6 +117,10 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 ## Motivation (Y/5)
 
 ## Emotional Habits (Y/5)
+
+## Avoid Procrastination
+
+- Turn off phone and use table instead
 
 ### Meditation
 
@@ -120,6 +142,18 @@ Gym Days:
 ## Other stuff
 
 ## Mental quicksand
+
+### Guilt of missing summer time with family
+
+- Very crap weather in seattle, little time to enjoy sumemr with family
+- Kept trip a bit shorter
+- Work from trip to get other time off with family.
+
+### Forgetting something with lots bring
+
+- Bought max size carry on
+- Made several lists of stuff to bring (magic, balloon, health, )
+- Packing lots of health stuff.
 
 ### Stock market being down impacting my ability to spend
 
