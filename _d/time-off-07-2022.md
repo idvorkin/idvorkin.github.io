@@ -48,18 +48,12 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
     - [Biking](#biking)
     - [Ballooning](#ballooning)
     - [Joy Activities](#joy-activities)
-- [Physical Energy (Y/5)](#physical-energy-y5)
-- [Motivation (Y/5)](#motivation-y5)
 - [Emotional Habits (Y/5)](#emotional-habits-y5)
-- [Avoid Procrastination](#avoid-procrastination)
-    - [Meditation](#meditation)
-    - [750 words](#750-words)
 - [Physical Habits (Y/5)](#physical-habits-y5)
     - [Statistics](#statistics)
     - [Verbose](#verbose)
     - [Diet](#diet)
     - [Sleep](#sleep)
-- [Other stuff](#other-stuff)
 - [Mental quicksand](#mental-quicksand)
     - [Guilt of missing summer time with family](#guilt-of-missing-summer-time-with-family)
     - [Forgetting something with lots bring](#forgetting-something-with-lots-bring)
@@ -74,13 +68,17 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ## Family (Y/5)
 
-- Call my famliy every day
+- ☐ Call kids every day and hear what they did.
 
 ## Magic (Y/5)
 
 ### Performing
 
+- ☐ Daily performacne to a stranger
+
 ### Practice
+
+- ☐ Practice standard cards and bands
 
 ### General Magic
 
@@ -88,7 +86,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ### Enabling Environment
 
-- Don't touch it.
+- ☐ Don't touch it.
 
 ### Blogging
 
@@ -97,7 +95,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ### Programming
 
-- Learn some stuff about [recommender systems](/recommender) are part of the work side of time off and on the flights
+- ☐ Finish and summarize book on [recommender systems](/recommender). (Part of the work side of time off and on the flights)
 
 ## Identity Health (Y/5)
 
@@ -107,26 +105,25 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ### Ballooning
 
-- Bring lots of balloons and manual pump. Great opportunity to bring joy to kids.
-- Fun at Airport (though likely working there)
+- ☐ Bring lots of balloons and manual pump
+
+- ☐ Make some balloons for kids at the airport
 
 ### Joy Activities
 
-## Physical Energy (Y/5)
-
-## Motivation (Y/5)
-
 ## Emotional Habits (Y/5)
 
-## Avoid Procrastination
-
 - Turn off phone and use table instead
-
-### Meditation
-
-### 750 words
+- ☐ Daily gratefulness journal
+- ☐ Daily 8 minute (or 15 minute) meditation
 
 ## Physical Habits (Y/5)
+
+- ☐ Foam roll every morning
+- ☐ Wrist stretches every morning
+- ☐ Assisteted weights every few days
+- ☐ Cardio every other day
+- ☐ Assisted pullups
 
 ### Statistics
 
@@ -137,9 +134,16 @@ Gym Days:
 
 ### Diet
 
+- Bring warm clothes so "cold" isn't a problem.
+- Bring microwavable popcorn popper
+- Bring travel scale
+- ☐ Weight myself daily
+- ☐ Be ready to get back on weight track for end of August weight in.
+
 ### Sleep
 
-## Other stuff
+- ☐ To bed by 10 (if not 8) every night
+- ☐ Only read before bend.
 
 ## Mental quicksand
 
