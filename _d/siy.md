@@ -589,14 +589,14 @@ Tools of the trade (Sublime states):
 | Loving Kindness | Wish for someone to be happy                                 |
 | Compassion      | Wish for someone to be free of suffering                     |
 | Altruistic Joy  | Be happy for [self](/joy) or [other](/touching) bringing joy |
-| Equinimity      | Remaining Calm, regardless of circumstance                   |
+| Equanimity      | Remaining Calm, regardless of circumstance                   |
 
 | Tool            | Enemy          |
 | --------------- | -------------- |
 | Loving Kindness | [l10](l10)     |
 | Compassion      | [l11](l11)     |
 | Altruistic Joy  | [l12](l12)     |
-| Equinimity      | [l13](l13)     |
+| Equanimity      | [l13](l13)     |
 | --------------  | -------------- |
 
 - l10
@@ -607,18 +607,18 @@ Tools of the trade (Sublime states):
 <div> </div>
 - l11
 - Cruelty - The opposite
-- Pity - Feeling superiur, re-inforces ego.
+- Pity - Feeling superior, re-inforces ego.
 - Grief/Despair - Need to have hope of inspired future.
 
 <div> </div>
 - l12
-* Envy - The opposite
-* Relative to me - It’s good because it’s good for me.
-* Unholesome Joy - Feel happy for someone because on drugs or cheating someone
+- Envy - The opposite
+- Relative to me - It’s good because it’s good for me.
+- Unwholesome Joy - Feel happy for someone because on drugs or cheating someone
 <div> </div>
 - Envy - The opposite
 - Relative to me - It's good because it's good for me.
-- Unholesome Joy - Feel happy for someone because on drugs or cheating someone
+- Unwholesome Joy - Feel happy for someone because on drugs or cheating someone
 <div> </div>
 - l13
 - Anxiety/Craving/Hatred/Anger The opposite
