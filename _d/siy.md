@@ -16,7 +16,9 @@ imagefeature: https://github.com/idvorkin/blob/raw/master/noun-meditate.png
 
 Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It's also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to medatitive bliss.
 
-This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1) and Joy on Demand, and the place I learned many of my [emotional health practices](/emotional-health)
+This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1) and [Joy on Demand](https://www.amazon.com/Joy-Demand-Discovering-Happiness-Within/dp/0062378872), and the place I learned many of my [emotional health practices](/emotional-health)
+
+{%include amazon.html asin="B0070XF474;0062378872" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
