@@ -659,6 +659,50 @@ Tools of the trade (Sublime states):
 
 ### Working with suffering
 
+When suffering, you need to get to the cognative reframes, but first you need to be able to focus clearly, this requirs calming the mind and experiences the pain (and first joy) to handle the reframes.
+
+Step 1: **Calm the mind** Need to be calm enough to observe and experience.
+
+Step 2A: **Affective - experience joy** - Can always find joy - Like an oasis in the dessert - Some days harder then others - Some days impossible, just need to wait - Train in non-pain makes it easier, like gym.
+
+Step 2B: **Affective - experience pain**
+
+- Pain in Body - Tension - Pit in stomach - Heart pounding - Nausia - Be willing to experience the pain in the body
+  -Approach: - Realize unpleasant experiences in the body - RealiE Root cause of suffering is aversion - Apply loving kindness to the aversion and the self - Apply equinimity - be calm watching the emotions - These empotions are not me - These thoughts are not me - Just bodily experiences
+
+Step 3: **Cognition - Use your cognition to resolve**
+
+- Many reframes
+- Caused by others - apply kindness and compassion
+  - Think the best of the person
+  - Human attribute error
+  - Get mad at suffering not the person. Like mad at the thrower not the rock.
+- Caused by self/mistake - apply kindness and compassion to self
+  - See through eyes of best friend
+- Something bad has/will happen - test if catastrophizing. We make up stories
+- Gain perspective - more time, more dimensions
+- Realize what a mircle everything is - earth/civilizatoin/body/etc
+- With humor - no humor; no perspective
+
+**Failure comes pre-installed**
+
+- First I walk down the street, don't see the hole and walk in
+- Second, I see hole, and walk in.
+  - The hardest day
+  - You see the hole, but can't stop yourself as don't know how
+- Third, I see the hole, and I avoid it
+  - Build the ability to fix the problem, to walk around the hole.
+
+It's like juggling. Just because you can juggle 3 balls, you can't juggle 4 or 5 or 7.
+
+Also like diving. Any small issue can kill you.
+
+Dive training requires handling and practicing each failure mode.
+
+New divers can handle 1 problem, and then frequently abort their dive.
+Experienced diver can probably handle 2 or 3 then abort
+Pro divers can handle several combinations of problems.
+
 - Step 1 in Working with Emotional Pain: The Attentional Step
 - Step 2 in Working with Emotional Pain: The Affective Step
 - Willingness to Experience Joy
