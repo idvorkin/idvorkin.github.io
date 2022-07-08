@@ -627,7 +627,7 @@ Tools of the trade (Sublime states):
 - Secretely pick two people, and think them happy thought
 - Make a shooting sound to make it joyful (pew, pew)
 
-**FP: Attending to the joy of loving-kindneSS**
+**FP: Attending to the joy of loving-kindness**
 
 - 1m: Bring to mind someone for whom you can feel loving kindness
   - See if loving kindness arise
@@ -635,9 +635,27 @@ Tools of the trade (Sublime states):
 - Repeat for 3 reps
 - Feel free to change sets and reps
 
-**FP: Cultivating compassion through peace, JOY, AND KINDNESS** - 2m: Settle the mind - 2m: Attend to joy - 2m: Do loving kindness from above - Anytime: When selfless love arises, attend to it. - 2m: Settle the mind
+**FP: Cultivating compassion through peace, joy, and kindness**
+
+- 2m: Settle the mind
+- 2m: Attend to joy
+- 2m: Do loving kindness from above
+- Anytime: When selfless love arises, attend to it. - 2m: Settle the mind
+
 **FP: Uplifting and settling the mind with altruistic joy**
+
+- 2m: Uplift the mind
+  - think of persom for whom you've brought altruistic intent
+  - Think of the deed, think of intention
+  - Delight in your action
+- 5m: Settle the mind
+- 2m: Attend to joy if it's present
+
 **IP: Rejoicing in inner goodness and altruistic deeds**
+
+- When doing something altruistic, think I am being altruistic, this makes me happy
+- When seeing someone being altruistic, there exists a wonderful person in the world, I am happy
+- When someone is doing an altruisitc act, think more good is being done in the world, I am happy
 
 ### Working with suffering
 
