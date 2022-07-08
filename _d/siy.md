@@ -211,7 +211,7 @@ _All natural organic Self-Confidence_
 
 _Riding your emotions like a horse_
 
-- **GOAL: Compulsion -> Choice (7H: Choose your response)**
+- **GOAL: Compulsion -> Choice ([7H: Choose your response](/7h-c1))**
 - About Self Regulation
   - Self-Control: Disruptive emotions under control
   - Trustworthiness: Maintain honesty and integrity
@@ -287,7 +287,7 @@ _Making Profits, Rowing Across Oceans, and Changing The World_
 - Know and align yourself
   - Mindfulness -> Self Awareness -> You can figure out the opportunities to AMP.
   - Abstract concepts, need to verbalize or write down to find them.
-  - 7H: Personal mission statement, funeral exercise.
+  - [7H: Personal mission statement, funeral exercise.](/7h-c2)
 - Discovering values and higher purpose
   - Prompts: My core values are, I stand for.
   - Alone: Journal
@@ -316,7 +316,7 @@ _Making Profits, Rowing Across Oceans, and Changing The World_
 - Resilience - ability to remove obstacles, and return to baseline when troubles.
   - Inner Calm - Foundation of optimism and resilience
   - Emotional Resilience - Success/Failure are emotional experiances, build this, and can always celebrate progress.
-  - Cognitive Resilience - How to explain setbacks to ourselves and others, to develop optimism.
+  - Cognitive Resiliece - How to explain setbacks to ourselves and others, to develop optimism.
   - **Leaders provide this service to their organization and teams**
 - Inner calm
   - Day to day things go wrong, but have a deep well of calmness, and can always return to it.
@@ -582,49 +582,62 @@ _Three easy steps to world peace_
 
 Tools of the trade (Sublime states):
 
+| Tool            | Definition                                                   |
+| --------------- | ------------------------------------------------------------ |
+| Loving Kindness | Wish for someone to be happy                                 |
+| Compassion      | Wish for someone to be free of suffering                     |
+| Altruistic Joy  | Be happy for [self](/joy) or [other](/touching) bringing joy |
+| Equinimity      | Remaining Calm, regardless of circumstance                   |
+
+| Tool            | Enemy          |
+| --------------- | -------------- |
+| Loving Kindness | [l10](l10)     |
+| Compassion      | [l11](l11)     |
+| Altruistic Joy  | [l12](l12)     |
+| Equinimity      | [l13](l13)     |
+| --------------  | -------------- |
+
+- l10
+- Ill will - the opposite
+- Grasping - If person leaves, no longer love
+- Conditional Love - Only love if they do XYZ
+
+<div> </div>
+- l11
+- Cruelty - The opposite
+- Pity - Feeling superiur, re-inforces ego.
+- Grief/Despair - Need to have hope of inspired future.
+
+<div> </div>
+- l12
+* Envy - The opposite
+* Relative to me - It’s good because it’s good for me.
+* Unholesome Joy - Feel happy for someone because on drugs or cheating someone
+<div> </div>
+- Envy - The opposite
+- Relative to me - It's good because it's good for me.
+- Unholesome Joy - Feel happy for someone because on drugs or cheating someone
+<div> </div>
+- l13
+- Anxiety/Craving/Hatred/Anger The opposite
+- Disengagement - Ignoring the thing we don't want to see
+- Apathy - See, but don't care about the thing
+<div> </div>
+
 - Loving Kindness - Wish for someone to be happy
   - Only think in your head
   - Work, min bar, just think you want someone to be happy.
 - IP: WISHING FOR RANDOM PEOPLE TO BE HAPPY
+
   - Secretely pick two people, and think them happy though
   - Make a shooting sound to make it joyful (pew, pew)
-- Compassion
-- Altrustic Joy
-- Equanimity
+
 - Familiarizing the Mind with the Joy of Loving-Kindness
 - FP: ATTENDING TO THE JOY OF LOVING-KINDNESS
 - Loving-Kindness Is the “Gateway Drug” to Compassion
 - FP: CULTIVATING COMPASSION THROUGH PEACE, JOY, AND KINDNESS
 - FP: UPLIFTING AND SETTLING THE MIND WITH ALTRUISTIC JOY
 - IP: REJOICING IN INNER GOODNESS AND ALTRUISTIC DEEDS
-- Selfless Love, a Short Poem
-
-Enemies of loving kindness
-
-- Ill will - the opposite
-
-- Grasping - If person leaves, no longer love
-- Conditional Love - Only love if they do XYZ
-
-Enemies of compassion
-
-- Cruelty - The opposite
-- Pity - Feeling superiur, re-inforces ego.
-- Grief/Despair - Need to have hope of inspired future.
-
-Enemies of Altruistic Joy
-
-- Envy - The opposite
-- Relative to me - It's good because it's good for me.
-- Unholesome Joy - Feel happy for someone because on drugs or cheating someone
-
-Enemies of Equanimity
-
-- Anxiety/Craving/Hatred/Anger The opposite
-- Disengagement - Ignoring the thing we don't want to see
-- Apathy - See, but don't care about the thing
-
-If only brave when far away, then not really brave.
 
 ### Working with suffering
 
