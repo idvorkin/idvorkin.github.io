@@ -616,30 +616,28 @@ Tools of the trade (Sublime states):
 - Relative to me - It’s good because it’s good for me.
 - Unwholesome Joy - Feel happy for someone because on drugs or cheating someone
 <div> </div>
-- Envy - The opposite
-- Relative to me - It's good because it's good for me.
-- Unwholesome Joy - Feel happy for someone because on drugs or cheating someone
-<div> </div>
 - l13
 - Anxiety/Craving/Hatred/Anger The opposite
 - Disengagement - Ignoring the thing we don't want to see
 - Apathy - See, but don't care about the thing
 <div> </div>
 
-- Loving Kindness - Wish for someone to be happy
-  - Only think in your head
-  - Work, min bar, just think you want someone to be happy.
-- IP: WISHING FOR RANDOM PEOPLE TO BE HAPPY
+**IP: Wishing for random people to be happy**
 
-  - Secretely pick two people, and think them happy though
-  - Make a shooting sound to make it joyful (pew, pew)
+- Secretely pick two people, and think them happy thought
+- Make a shooting sound to make it joyful (pew, pew)
 
-- Familiarizing the Mind with the Joy of Loving-Kindness
-- FP: ATTENDING TO THE JOY OF LOVING-KINDNESS
-- Loving-Kindness Is the “Gateway Drug” to Compassion
-- FP: CULTIVATING COMPASSION THROUGH PEACE, JOY, AND KINDNESS
-- FP: UPLIFTING AND SETTLING THE MIND WITH ALTRUISTIC JOY
-- IP: REJOICING IN INNER GOODNESS AND ALTRUISTIC DEEDS
+**FP: Attending to the joy of loving-kindneSS**
+
+- 1m: Bring to mind someone for whom you can feel loving kindness
+  - See if loving kindness arise
+  - If it does, focus on it.
+- Repeat for 3 reps
+- Feel free to change sets and reps
+
+**FP: Cultivating compassion through peace, JOY, AND KINDNESS** - 2m: Settle the mind - 2m: Attend to joy - 2m: Do loving kindness from above - Anytime: When selfless love arises, attend to it. - 2m: Settle the mind
+**FP: Uplifting and settling the mind with altruistic joy**
+**IP: Rejoicing in inner goodness and altruistic deeds**
 
 ### Working with suffering
 
