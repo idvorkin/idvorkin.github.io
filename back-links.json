@@ -491,7 +491,8 @@
                 "/affirmations",
                 "/anxiety",
                 "/d/habits",
-                "/idle"
+                "/idle",
+                "/siy"
             ],
             "redirect_url": "",
             "doc_size": 13000
@@ -1035,14 +1036,12 @@
             "file_path": "_site/d/time-off-07-2022.html",
             "outgoing_links": [
                 "/happy",
-                "/productive",
-                "/sleight-of-mouth",
-                "/switch",
+                "/recommend",
                 "/timeoff"
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/d/time-off-11-2021": {
             "py/object": "__main__.Page",
@@ -1330,7 +1329,8 @@
                 "/7-habits",
                 "/affirmations",
                 "/d/resistance",
-                "/productive"
+                "/productive",
+                "/siy"
             ],
             "redirect_url": "",
             "doc_size": 11000
@@ -1861,7 +1861,8 @@
                 "/affirmations",
                 "/happy",
                 "/hobby",
-                "/magic"
+                "/magic",
+                "/siy"
             ],
             "redirect_url": "",
             "doc_size": 20000
@@ -2292,8 +2293,7 @@
                 "/getting-to-yes"
             ],
             "incoming_links": [
-                "/d/time-off-02-2022",
-                "/d/time-off-07-2022"
+                "/d/time-off-02-2022"
             ],
             "redirect_url": "",
             "doc_size": 12000
@@ -2364,6 +2364,7 @@
             "file_path": "_site/recommend.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/d/time-off-07-2022",
                 "/ml"
             ],
             "redirect_url": "",
@@ -2495,9 +2496,13 @@
             "description": "Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It’s also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to medatitive bliss.\n\n",
             "file_path": "_site/siy.html",
             "outgoing_links": [
+                "/be-proactive",
                 "/emotional-health",
+                "/end-in-mind",
                 "/happy",
+                "/joy",
                 "/mind-monsters",
+                "/touching",
                 "/what-makes-a-leader"
             ],
             "incoming_links": [
@@ -2514,7 +2519,7 @@
                 "/td/time-off-3-2020"
             ],
             "redirect_url": "",
-            "doc_size": 52000
+            "doc_size": 56000
         },
         "/sleeping-bag-sacrifies": {
             "py/object": "__main__.Page",
@@ -2539,7 +2544,6 @@
             "incoming_links": [
                 "/7h-concepts",
                 "/d/time-off-02-2022",
-                "/d/time-off-07-2022",
                 "/operating-manual"
             ],
             "redirect_url": "",
@@ -2630,7 +2634,6 @@
             ],
             "incoming_links": [
                 "/d/time-off-02-2022",
-                "/d/time-off-07-2022",
                 "/first-things-first"
             ],
             "redirect_url": "",
@@ -3105,7 +3108,9 @@
                 "/anxiety",
                 "/magic"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/siy"
+            ],
             "redirect_url": "",
             "doc_size": 12000
         },
