@@ -584,14 +584,14 @@ _Three easy steps to world peace_
 
 Tools of the trade (Sublime states):
 
-| Tool            | Definition                                                   |
+| State           | Definition                                                   |
 | --------------- | ------------------------------------------------------------ |
 | Loving Kindness | Wish for someone to be happy                                 |
 | Compassion      | Wish for someone to be free of suffering                     |
 | Altruistic Joy  | Be happy for [self](/joy) or [other](/touching) bringing joy |
 | Equanimity      | Remaining Calm, regardless of circumstance                   |
 
-| Tool            | Enemy          |
+| State           | Enemy          |
 | --------------- | -------------- |
 | Loving Kindness | [l10](l10)     |
 | Compassion      | [l11](l11)     |
