@@ -11,9 +11,10 @@ tags:
   - strategy
 ---
 
-Essentialism is deciding what goes on your todo list, not how many things you can cross off.
+Essentialism is deciding what goes on your todo list, not how many things you can cross off. Being an essentialist means you say 'I choose to' not 'I have to', 'Only a few things matter', not 'all things matter' and 'I will do one thing', not 'I will do both'. The essential questions are 'How do I know when I'm done', 'If I didn't own this, would I buy it?', 'If I didn't have this opportunity what would I do to acquire it?'
 
 This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
+{%include amazon.html asin="B00G1J1D28" %}
 
 ## Essence
 
