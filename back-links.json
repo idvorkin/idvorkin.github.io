@@ -484,7 +484,8 @@
             "outgoing_links": [
                 "/7-habits",
                 "/essentialism",
-                "/frog"
+                "/frog",
+                "/siy"
             ],
             "incoming_links": [
                 "/7-habits",
@@ -495,7 +496,7 @@
                 "/siy"
             ],
             "redirect_url": "",
-            "doc_size": 13000
+            "doc_size": 15000
         },
         "/being-a-great-manager": {
             "py/object": "__main__.Page",
@@ -1355,7 +1356,7 @@
             "py/object": "__main__.Page",
             "url": "/essentialism",
             "title": "Essentialisim",
-            "description": "Essentialism is deciding what goes on your todo list, not how many things you can cross off.\n\n",
+            "description": "Essentialism is deciding what goes on your todo list, not how many things you can cross off. Being an essentialist means you say ‘I choose to’ not ‘I have to’, ‘Only a few things matter’, not ‘all things matter’ and ‘I will do one thing’, not ‘I will do both’. The essential questions are ‘How do I know when I’m done’, ‘If I didn’t own this, would I buy it?’, ‘If I didn’t have this opportunity what would I do to acquire it?’\n\n",
             "file_path": "_site/essentialism.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -1369,7 +1370,7 @@
                 "/gtd"
             ],
             "redirect_url": "",
-            "doc_size": 35000
+            "doc_size": 37000
         },
         "/eulogy": {
             "py/object": "__main__.Page",
@@ -2506,6 +2507,7 @@
                 "/what-makes-a-leader"
             ],
             "incoming_links": [
+                "/be-proactive",
                 "/books-that-defined-me",
                 "/coaching",
                 "/depression",
@@ -2519,7 +2521,7 @@
                 "/td/time-off-3-2020"
             ],
             "redirect_url": "",
-            "doc_size": 56000
+            "doc_size": 59000
         },
         "/sleeping-bag-sacrifies": {
             "py/object": "__main__.Page",
