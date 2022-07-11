@@ -21,6 +21,7 @@
         "/architecture": "/design",
         "/atomic-habits": "/d/habits",
         "/augmentedreality": "/ar",
+        "/bbb": "/build-bubble-bike",
         "/begin-with-the-end-in-mind": "/end-in-mind",
         "/bikes": "/bike",
         "/biking": "/bike",
@@ -610,6 +611,21 @@
             ],
             "redirect_url": "",
             "doc_size": 11000
+        },
+        "/build-bubble-bike": {
+            "py/object": "__main__.Page",
+            "url": "/build-bubble-bike",
+            "title": "Building a bubble bike",
+            "description": "Bringing joy for others is my thing. As they say in buddhism there are many vehicles to do such things, and one of my favorite vehicles is the bubble bike. Making it has been quite the journey.\n\n",
+            "file_path": "_site/build-bubble-bike.html",
+            "outgoing_links": [
+                "/joy"
+            ],
+            "incoming_links": [
+                "/joy"
+            ],
+            "redirect_url": "",
+            "doc_size": 12000
         },
         "/cache": {
             "py/object": "__main__.Page",
@@ -1853,6 +1869,7 @@
             "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
             "file_path": "_site/joy.html",
             "outgoing_links": [
+                "/build-bubble-bike",
                 "/eulogy",
                 "/happy",
                 "/like-switch",
@@ -1860,6 +1877,7 @@
             ],
             "incoming_links": [
                 "/affirmations",
+                "/build-bubble-bike",
                 "/happy",
                 "/hobby",
                 "/magic",
