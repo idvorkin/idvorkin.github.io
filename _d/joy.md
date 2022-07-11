@@ -69,7 +69,9 @@ My well worn [Juggling fire](http://ig66.blogspot.com/2014/08/accomplishment-unl
 
 ### Bubble Bike
 
-My [Bubble Bike](https://idvork.in/ig66/583):
+See my family journal about the [Bubble Bike](<https://idvork.in/ig66/583>.:
+
+Also
 
 {%include summarize-page.html src="/bbb" %}
 
