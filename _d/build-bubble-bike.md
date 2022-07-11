@@ -8,30 +8,32 @@ redirect_from:
   - /bbb
 ---
 
-Bringing joy for others is my thing. As they say in buddhism there are many vehicles to do such things, and one of my favorite vehicles is the bubble bike. Making it has been quite the journey.
+What the heck is a bubble bike? Ah, you see, bringing joy for others is my thing. As they say in buddhism there are many vehicles to bring joy, and my vehicle is the bubble bike.
 
 <!-- prettier-ignore-start -->
 
 
 <!-- vim-markdown-toc GFM -->
 
-- [History](#history)
-- [Link to Joy](#link-to-joy)
 - [Why](#why)
-- [Many of the steps  and challenges](#many-of-the-steps--and-challenges)
+- [The Genesis of the Bubble Bike](#the-genesis-of-the-bubble-bike)
+- [Custom Bubble machine](#custom-bubble-machine)
+- [Many of the steps and challenges](#many-of-the-steps-and-challenges)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## History
-
-## Link to Joy
+## Why
 
 {%include summarize-page.html src="/joy" %}
 
-## Why
+## The Genesis of the Bubble Bike
 
-Custom Bubble machine
+To Merge ...
+
+My [Bubble Bike](https://idvork.in/ig66/583):
+
+## Custom Bubble machine
 
 {% include youtube.html src="hFaoC1UoGJ4" %}
 
