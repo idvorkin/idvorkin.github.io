@@ -9,6 +9,8 @@ redirect_from:
 My explorations of recommender systems, heavly based on the superb book Practical Recommender Systems
 
 <!-- prettier-ignore-start -->
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [Intro to Recommmendation Systems](#intro-to-recommmendation-systems)
@@ -17,7 +19,17 @@ My explorations of recommender systems, heavly based on the superb book Practica
     - [How to monitor a system](#how-to-monitor-a-system)
     - [How to calculate ratings](#how-to-calculate-ratings)
     - [Non Personalized Recommendations](#non-personalized-recommendations)
-    - [Solving Cold Start](#solving-cold-start)
+- [- What else can you do before we have logged in users](#--what-else-can-you-do-before-we-have-logged-in-users)
+        - [Top 10 lists](#top-10-lists)
+        - [Spot Lights](#spot-lights)
+        - [Seeded Recommendations, seed to find clusters, Frequently Bouht Together (FBT)](#seeded-recommendations-seed-to-find-clusters-frequently-bouht-together-fbt)
+        - [Implementation notes](#implementation-notes)
+        - [Commercial vs a recommendation.](#commercial-vs-a-recommendation)
+    - [Solving Cold Start For Users](#solving-cold-start-for-users)
+        - [How to find new stuff](#how-to-find-new-stuff)
+        - [Business Rules](#business-rules)
+        - [How to engage biz rules](#how-to-engage-biz-rules)
+        - [Semi-personalized by geo/segment/demographic](#semi-personalized-by-geosegmentdemographic)
     - [Similary between content and users](#similary-between-content-and-users)
     - [Collaborative Filtering](#collaborative-filtering)
     - [Testing a recommender](#testing-a-recommender)
@@ -33,8 +45,6 @@ My explorations of recommender systems, heavly based on the superb book Practica
     - [Netflix Prize](#netflix-prize)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
 ## Intro to Recommmendation Systems
 
 ### Concepts
@@ -66,7 +76,101 @@ My explorations of recommender systems, heavly based on the superb book Practica
 
 ### Non Personalized Recommendations
 
-### Solving Cold Start
+- What else can you do before we have logged in users
+-
+
+#### Top 10 lists
+
+- Most Bought
+- Cheapest
+- New Arrivals
+- All we had with mass media (Radio/TV/Newspaper)
+
+#### Spot Lights
+
+- Manual Curatoin
+- Categories with Manual Curation
+
+#### Seeded Recommendations, seed to find clusters, Frequently Bouht Together (FBT)
+
+* Top 10 list, but with a seed, aka a keyword.
+* Is that search? Not quite, can be clusters/associations
+* Can build clusters on stuff bought together. If you buy shoes, you probably want socks
+* Cross Selling See what we have
+
+**Item Set** Bought together, but not with everthing else.
+
+
+**Confidence** Number of times have that subset/(number of times first item present)
+
+**Support** s
+
+TODO: Work through this example.
+
+T(X) = set of transactions containing X
+C(Bread given milk) = T(bread and milk)/T(bread)
+
+QQ: Is this like TF/TFID
+
+#### Implementation notes
+
+* Can make recommendations more resonsive by doing offline
+* Keep multiple sets of versioned recommendations. Helpful for testing and rolling back
+
+
+#### Commercial vs a recommendation.
+   *  Commercial - something we want to sell you vs the right thing for you
+   * Deal of the day is a commercial
+   * Coupons are commercials, and trade CAC for LTCV or ARPU
+
+### Solving Cold Start For Users
+
+What is cold start
+
+
+#### How to find new stuff
+
+* Add a new stuff section - users like that.
+* Boost and then let decay
+
+Keeping track of visitors
+
+Using Algos for cold start
+
+Thow who won't ask, won't know
+
+Association rules to start recommending fast
+
+* Cold start = What to recommend to the new users
+* Concious ordering
+* Grey sheep = Users who don't cluster with others, could help them  with genres
+
+#### Business Rules
+
+If someone watches Toy Story and Texas Chain saw, don't recommend Texacs Chainsaw during Childrens rules. Need biz rules
+
+* When watching family movies, only recommend family
+* Never recommend a horror movie when watching family movies
+
+#### How to engage biz rules
+
+* Build short list (Search)
+* Filter out w/Biz Rules
+* Presonalize what's left with fast recommender
+
+
+#### Semi-personalized by geo/segment/demographic
+
+Country (can use IP), can use to
+
+
+* Association rules is a fast way to bootstrap
+* Segments built or generated to make semi-personalized recommendations
+* Can make demographic recommendations
+
+Age, Star Wars
+
+Great for folks who saw them as kids (now 40) and their kids who have watched them. In the middle group, they are boring.
 
 ### Similary between content and users
 
