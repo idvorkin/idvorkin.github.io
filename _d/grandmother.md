@@ -43,6 +43,7 @@ Compassion can be broken down with a time dimension.
 - Compassion clarifies the person’s suffering, not the person, is the source of the problem. Suffering is unacceptable. The person is acceptable (see [getting to yes, hard on problems soft on people](/gty)).
 - Love, especially as applied to children, is the highest form of compassion a 11/10.
 - Sounds like the fundamental attribution error: When you do something wrong, you attribute to circumstance, when others do thing wrong you attribute you malice/incompetence/personality.
+- Being compassionate takes the focuss off the ego, which is super important as the ego brings you very little.
 
 ### Judgment vs Curiosity
 
