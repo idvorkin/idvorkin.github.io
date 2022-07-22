@@ -38,6 +38,8 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 
 ### My journey to compassion
 
+Kept ignorning it, took a few stabs. But honest compassion to reduce the suffering of others not till re-reading the [Joy Of Happiness](/siy) and the sublime states. Some how it really clicked.
+
 ### Compassion
 
 Compassion is about removing suffering, and accepting people as they are. This applies both to others and to yourself.
