@@ -31,6 +31,13 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ## Top Learnings
 
+- **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membereship with GoodLife, let me do my top pirorities daily, even had a massage chair.
+- **Don't berate mistakes** - Getting off the plane, it was super bright in torontoo. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I hav ean abilityt o squint. Nothing terrible happens.
+- **Continuous learning** - Any structural solutions - apply to next time (like having this list)
+- **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bbring my sunglasses.
+- **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine
+- **Don't fret micro optimizations** - From Belleville to Hamilonton, spent lots of time trying to figure out what time I'd adrive, what order of gym/work/sister/luncch I'd tackle, trying to micro optimize, spent lots of cycles. Turned out, didn't matter at all.
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
