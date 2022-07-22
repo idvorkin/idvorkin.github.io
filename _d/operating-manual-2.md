@@ -40,6 +40,9 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Husband](#husband)
     - [Father](#father)
 - [Cognitive Reframe Upgrades](#cognitive-reframe-upgrades)
+- [Bad Influences](#bad-influences)
+    - [Luxury Car](#luxury-car)
+    - [Sports cars](#sports-cars)
 - [Triggers and Mental Quick Sand](#triggers-and-mental-quick-sand)
     - [Stress and Anxiety](#stress-and-anxiety)
     - [Corona Virus](#corona-virus)
@@ -100,13 +103,13 @@ Developing you strengths is 3 times as effective as improving your weakness, so 
 
 ### Technical Best Practice
 
-### Ability to sanity test all tech stuff.
+### Ability to sanity test all tech stuff
 
 ## My kryptonite
 
 ### Bean counting
 
-### Committing and describing relative to ideal, not relative to reality.
+### Committing and describing relative to ideal, not relative to reality
 
 ### Under estimating technical complexity
 
@@ -169,6 +172,20 @@ The words you use influence how you think.
 
 {%include summarize-page.html src="/som" %}
 
+## Bad Influences
+
+Don't give a guy trying to lose weight an ice cream maker. An ice cream maker sounds great, but if it facilitates things that you don't want it's double bad.
+
+### Luxury Car
+
+I've been dying to get a Tesla, full self driving and some luxur. But what's most importnat to my identity is biking, and not driving a car. To quote my friend Ammon - Igor you getting a tesla is like getting an ice cream maker. You need to decide your priority and go from there.
+
+### Sports cars
+
+On my trip to [FISM](/d/timeoff-07-2022), the cheapest car to rent ended up being a fancy sports car. It accelerated like butter, braked on a dime, and had gear shifting paddles in full sports mode. I soon realized I could weave throught traffic going 60 miles an hour easily playing peek-a-boo with regular cars.
+
+I realized 1/ no value to me in this 2/ chance of getting into or causing an accident 3/ chance of me focusing on anger that someone else playing peek-a-boo with me and winning.
+
 ## Triggers and Mental Quick Sand
 
 Like most folks I have triggers and mental quick sand which I can get trapped in. Here's some of mine, and things I need to remember. This also reminds me of the:
@@ -195,7 +212,7 @@ My gosh this is sucking up lots of brain power. I don't think I get value thinki
 
 When it comes to family, like all things, it's easy to confuse hours for quality. Being at home playing on his tablet, while the kids played on theirs wasn't family time. Instead Igor realized the key is having dates, a time he gave the gift of his complete attention to Amelia, Zach and Tori. Date nights were sacred and could be whatever the kid wanted. Here's a [nice date night](/ig66/587)
 
-![](https://github.com/idvorkin/blob/raw/master/ig66/587/montage.jpg)
+![montage](https://github.com/idvorkin/blob/raw/master/ig66/587/montage.jpg)
 
 #### Diet and Weight
 
