@@ -16,6 +16,8 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+- [Why be compassionate](#why-be-compassionate)
+- [My journey to compassion](#my-journey-to-compassion)
 - [Compassion](#compassion)
 - [Judgment vs Curiosity](#judgment-vs-curiosity)
 - [Compassionate Consequences](#compassionate-consequences)
@@ -24,6 +26,17 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+### Why be compassionate
+
+- Reduces the ego
+- Builds empathy and relationships
+- Nurtures self compassion
+- Shifts from blame to problem solving
+- Builds Curiosity
+- Requires habits [Win Win or No deal](/7h-c4) and [seek first to understand](/7h-c5)
+
+### My journey to compassion
 
 ### Compassion
 
