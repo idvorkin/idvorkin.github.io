@@ -231,9 +231,25 @@ Great for folks who saw them as kids (now 40) and their kids who have watched th
   - Wrong farther down the list is less important, ignore tat
   - Mean active Precision (MAP)
 - Data splitting
+
   - User w/o enough data - probably need to remove from set
   - Too much data - sampling
   - Stratified sampling - sample more from under represented
+
+- Data Sets
+  - Test - only used once on final recommendations
+  - Validate Set - Optimize the model. Optimzie one param at a time. Then test it.
+  - Training Set - Use it to give data to the recommender.
+  - How to split data sets
+    _ Random
+    _ By Time
+    _ End up with cold users in the test set.
+    _ Can clean them out \*
+    Cross validation
+  - Split into folds, and combine randomly.
+  - Average results from all of them
+
+Benchmarkingi predictions - How often do you watch something? - Consider starting with popular items as the baseline predictor to get a benchmark
 
 - Friends and Family
 - A/B test
@@ -269,6 +285,8 @@ Great for folks who saw them as kids (now 40) and their kids who have watched th
 ### Hybrid Recommenders
 
 ### From recommending to ranking
+
+- Give a list of stuff users like, don't need a score, just give a top N order.
 
 ### Future of Recommendors
 
