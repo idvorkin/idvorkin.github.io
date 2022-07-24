@@ -82,11 +82,10 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [DevOps for ML](#devops-for-ml)
     - [Measuring within the wider business context](#measuring-within-the-wider-business-context)
     - [Guard rails for inputs versus training data](#guard-rails-for-inputs-versus-training-data)
-- [Computer Vision](#computer-vision)
-- [Natural Language Processing (NLP)](#natural-language-processing-nlp)
-    - [My deep dive into NLP](#my-deep-dive-into-nlp)
-    - [Bert](#bert)
-    - [Word Embedding](#word-embedding)
+- [AI Domains](#ai-domains)
+    - [Recommender Systems](#recommender-systems)
+    - [Computer Vision](#computer-vision)
+    - [Natural Language Processing (NLP)](#natural-language-processing-nlp)
 - [AI Misbehaving](#ai-misbehaving)
     - [AI Ethics](#ai-ethics)
 - [Misc Topics](#misc-topics)
@@ -373,23 +372,23 @@ _Thanks Dan Massey for your recommendation to discuss these topics_
 
 ### Guard rails for inputs versus training data
 
-## Computer Vision
+## AI Domains
 
-See my explorations at [video editting](https://github.com/idvorkin/video-edit)
+### Recommender Systems
 
-## Natural Language Processing (NLP)
+{%include summarize-page.html src="/ranking" %}
 
-### My deep dive into [NLP](/nlp)
+### Computer Vision
+
+See my explorations of [video editting](https://github.com/idvorkin/video-edit) and CV models.
+
+### Natural Language Processing (NLP)
 
 {%include summarize-page.html src="/nlp" %}
 
-### Bert
+- Word masking NLP models [BERT](https://towardsml.com/2019/09/17/bert-explained-a-complete-guide-with-theory-and-tutorial/)
 
-Word masking NLP models [BERT](https://towardsml.com/2019/09/17/bert-explained-a-complete-guide-with-theory-and-tutorial/)
-
-### Word Embedding
-
-[Introduction to word embeddings](http://jalammar.github.io/illustrated-word2vec)
+- [Introduction to word embeddings](http://jalammar.github.io/illustrated-word2vec)
 
 ## AI Misbehaving
 
