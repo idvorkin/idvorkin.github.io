@@ -19,12 +19,11 @@ My explorations of recommender and ranking systems, heavly based on the superb b
     - [How to monitor a system](#how-to-monitor-a-system)
     - [How to calculate ratings](#how-to-calculate-ratings)
     - [Non Personalized Recommendations](#non-personalized-recommendations)
-- [- What else can you do before we have logged in users](#--what-else-can-you-do-before-we-have-logged-in-users)
         - [Top 10 lists](#top-10-lists)
         - [Spot Lights](#spot-lights)
         - [Seeded Recommendations, seed to find clusters, Frequently Bouht Together (FBT)](#seeded-recommendations-seed-to-find-clusters-frequently-bouht-together-fbt)
         - [Implementation notes](#implementation-notes)
-        - [Commercial vs a recommendation.](#commercial-vs-a-recommendation)
+        - [Commercial vs a recommendation](#commercial-vs-a-recommendation)
     - [Solving Cold Start For Users](#solving-cold-start-for-users)
         - [How to find new stuff](#how-to-find-new-stuff)
         - [Business Rules](#business-rules)
@@ -40,6 +39,8 @@ My explorations of recommender and ranking systems, heavly based on the superb b
     - [Future of Recommendors](#future-of-recommendors)
 - [Datasets](#datasets)
     - [Real Movie Datasets](#real-movie-datasets)
+- [Ideas](#ideas)
+    - [The progression of recommender systems](#the-progression-of-recommender-systems)
 - [Other Stuff](#other-stuff)
     - [Practical Recommender Systems - The book this is based on](#practical-recommender-systems---the-book-this-is-based-on)
     - [Netflix Prize](#netflix-prize)
@@ -194,6 +195,23 @@ Great for folks who saw them as kids (now 40) and their kids who have watched th
 - [TMDB](https://developers.themoviedb.org/3) Kind of like a semi open-source IMDB API.
 - [MovieTweeting](https://github.com/sidooms/MovieTweetings) Ratings based on tweets
 - [MovieLens](https://grouplens.org/datasets/movielens/) - Like Movie Tweeting
+
+## Ideas
+
+### The progression of recommender systems
+
+1. Spotlight - manual curation
+2. Top 10 lists
+   - Can build by using viewership data
+3. Non-personalized by demographic
+   - People in this demographic like XYZ
+4. Non-personlized by item
+   - People who buy item X by item Y
+5. Non personalized by item when items sparse
+   - Use a higher order attribute, so use the artist that creates instead of the item itself.
+6. Personlized via Clustering
+
+7. ## Similarity in items and users
 
 ## Other Stuff
 
