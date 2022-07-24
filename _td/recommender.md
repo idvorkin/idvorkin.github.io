@@ -32,6 +32,10 @@ My explorations of recommender and ranking systems, heavly based on the superb b
     - [Similary between content and users](#similary-between-content-and-users)
     - [Collaborative Filtering](#collaborative-filtering)
     - [Testing a recommender](#testing-a-recommender)
+        - [Happy customers](#happy-customers)
+        - [Matthew effect, diversity, filter bubbles](#matthew-effect-diversity-filter-bubbles)
+        - [Coverage](#coverage)
+        - [Serendipity](#serendipity)
     - [Content Based Recommenders](#content-based-recommenders)
     - [Hidden Gems: Matrix Factorization](#hidden-gems-matrix-factorization)
     - [Hybrid Recommenders](#hybrid-recommenders)
@@ -177,6 +181,86 @@ Great for folks who saw them as kids (now 40) and their kids who have watched th
 ### Collaborative Filtering
 
 ### Testing a recommender
+
+- Paper verification
+  - Work through a small example on paper
+  - If doesn't work small, might not work big.
+  - Might see don't have required data
+  - Verify with stake holders what they want.
+  - Verify you have required data (pivacy, retention, etc)
+  - Can you join aggregate the data into required shape
+- Regression Testing
+  - But it's hard.
+  - Too bad, bugs are harder.
+  - Both UT and regression testing
+  - Test every pary you can
+  - Similary methods, anything you can
+  - Use small dataset to verify everything you can
+- Test Scenarios
+  - Offline
+  - Controlled user
+  - Online
+- Offline Evaluation
+  - Assume data set is accurate
+  - Train on the training data
+  - Verify with the test data if it recommeneded success
+  - Verification based on the inferior algorithm
+- Measuring error metrics
+  - Hidden data vs new algo recommendations
+  - Error = User Rating - Prediction
+  - Error Sums
+    - Mean Absolute Error
+    - Root Mean Squared Error
+    - Not these correct for +/- cancelling each other out
+    - RMSE - Sensetive to really bad errors
+    - MAE - Not sensetive. Decent when a terrible rating is OK.
+    - Be careful if you have user with lots of recommendation and popular items that will overweight in the results
+- Decision Support - Precision and Recall
+
+  - True Positive - Recommended and consumed
+  - False Positive - Recommended and not consumed
+  - False Negative - Didn't include the recommendation, but user consumed
+  - True Negative - Wasn't recommended, and user didn't select
+
+- Precision - What % of recommend items did users consume
+- Recall - What % of items users concsumed were recommended.
+- Precision is more important for ranking
+- But since using TopN, need to have precision at K.
+- Ranking Metrics:
+  - Need to turn the results into a number, the formula for that has consequences, you need to understand as has different impacts.f
+  - Wrong farther down the list is less important, ignore tat
+  - Mean active Precision (MAP)
+- Data splitting
+  - User w/o enough data - probably need to remove from set
+  - Too much data - sampling
+  - Stratified sampling - sample more from under represented
+
+- Friends and Family
+- A/B test
+- Explore and Exploit
+
+#### Happy customers
+
+- The site understands my tastes
+- The site gives me a nice variety of recommendations
+- The site surprises me
+- (Catalog owner) Users see lots of the catalog
+
+#### Matthew effect, diversity, filter bubbles
+
+- Rich get richer, poor get poorer
+- True for popularity. Once popular more hits, when less less shown.
+- This results in a filter bubble where you only see the same stuff again and again.
+- If recommender only shows top 10, it doesn't help you see the whole catalog.
+
+#### Coverage
+
+- Content coverage - what percent of your catalog gets recommended
+- User coverage - what percent of users get personalized recommendations
+
+#### Serendipity
+
+- People like surprise don't make your recommender too tight, or they'll always get the same thing.
 
 ### Content Based Recommenders
 
