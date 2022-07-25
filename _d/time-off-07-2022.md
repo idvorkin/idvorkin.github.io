@@ -37,11 +37,22 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 - **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bbring my sunglasses.
 - **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine
 - **Don't fret micro optimizations** - From Belleville to Hamilonton, spent lots of time trying to figure out what time I'd adrive, what order of gym/work/sister/luncch I'd tackle, trying to micro optimize, spent lots of cycles. Turned out, didn't matter at all.
+- **I have an extra pocket in my suitcase** - Lost my popcorn popper and my baloon pump and my laptop. Wow too much stuff to lose.
+- **Travel Stuff** - Haven't really travelled in forever. Useful stuff
+  - Figure out how to use rental car, wothe effort
+  - Have a good packing of keys wallet so don't worry about losing (Fanny pack)
+  - Bags on carry on clip together
+  - Bring straps
+  - Carry workout stuff (maybe as a belt)
+- **Bring portable gym equipment** - Yeah, super light, and great to stretch out and keep healhty
+  - Heavy bands/light bands
+  - Peanut ball
+  - Harsh foam roller
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Friends (Y/5)](#friends-y5)
+- [Friends (5/5)](#friends-55)
 - [Family (Y/5)](#family-y5)
 - [Magic (Y/5)](#magic-y5)
     - [Performing](#performing)
@@ -71,7 +82,14 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Friends (Y/5)
+## Friends (5/5)
+
+- Had an amazing time with Baltasar
+  - Made lots of ballons for his kids
+  - Went to the beach lots of time
+  - Really felt like an uncle!
+  - Maybe gorged but payed it back the next day
+- Met a cool professor of ranking when needed a cab to the airport
 
 ## Family (Y/5)
 
@@ -102,7 +120,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ### Programming
 
-- ☐ Finish and summarize book on [recommender systems](/recommender). (Part of the work side of time off and on the flights)
+- ☐ Finish and summarize book on [recommender systems](/recommender). (Part of the work side of time off and on the flights). Harder then I expected
 
 ## Identity Health (Y/5)
 
@@ -113,10 +131,15 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 ### Ballooning
 
 - ☐ Bring lots of balloons and manual pump
-
 - ☐ Make some balloons for kids at the airport
+- Made balloons for kids at Sam's work (they loved it)
+- Made balloons for Baltasar's kids, they loved it too.
+- ☐ Sit at a coffee shop and make balloons for kids walking past!
 
 ### Joy Activities
+
+- ☑ Just finding joy where I am
+- Making the gym a joyful experiance.
 
 ## Emotional Habits (Y/5)
 
