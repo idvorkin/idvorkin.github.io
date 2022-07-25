@@ -26,16 +26,17 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Optimizing for happiness](#optimizing-for-happiness)
 - [Get real what should I do?](#get-real-what-should-i-do)
     - [Time box vegetation](#time-box-vegetation)
-    - [Strategize against the resistance.](#strategize-against-the-resistance)
+    - [Strategize against the resistance](#strategize-against-the-resistance)
     - [Begin with the end in mind](#begin-with-the-end-in-mind)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
-- [Making the most out of staycation.](#making-the-most-out-of-staycation)
+- [Making the most out of staycation](#making-the-most-out-of-staycation)
 - [Combined Learnings](#combined-learnings)
     - [Before the time off](#before-the-time-off)
     - [Balance](#balance)
     - [Physical Health](#physical-health)
     - [Emotional Health](#emotional-health)
     - [Travel Tips](#travel-tips)
+    - [Other learnings](#other-learnings)
 - [Other Resources](#other-resources)
     - [Optimize for energy, not time](#optimize-for-energy-not-time)
     - [Can you have too much time off?](#can-you-have-too-much-time-off)
@@ -144,32 +145,42 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
 - Prioritize your todo items early
   - Recall they'll be psychic weight
   - Get them done early, or they'll drag you down.
+- Create a won't do list
+  - I can get sucked into programming, but I want to avoid it.
 - Write up your phychic Weight
   - Just naming it helps you get it under control.
 
 ### Balance
 
-- Family time feels fantastic
-- Make sure to do magic
-- Make sure to do hot tub
-- My habits are energizing, the time spent is still energy positive.
-- If I don't force my self to maintain my habits, and stay balanced - I won't (I did zero magic).
-- Tech/content time before the kids wake up is totally fine.
 - Balance, it's all about balance!
-- Your positive habits charge you up, do them!
+- Pay yourself first, gives you the energy and strength for everything else.
+  - Make sure to do magic
+  - Make sure to do hot tub
+  - Your positive habits charge you up, do them!
+  - My habits are energizing, the time spent is actually time positive from additional magic.
+  - If I don't force my self to maintain my habits, and stay balanced - I won't
+- Hobbies are OK if part of charging up
+  - Before family wakes up
+  - Tell family the plans so they aren't surprised and expectations are set.
+  - Tech/content time before the kids wake up is totally fine.
+- Family time feels fantastic
 - If I don't force my self to maintain my habits, and stay balanced - I won't (I did zero magic).
 - My habits are energizing, the time spent is still energy positive.
 - Family time feels fantastic
 - Make sure to do magic
-- Make sure to do hot tub
-- Get my todo items checked off early instead of letting them drag (I could have got my hot tub working early too)
+- TODOs
+  - Check in frequently on what needs to get done
+  - Get my todo items checked off early instead of letting them drag
 
 ### Physical Health
 
 - **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membereship with GoodLife, let me do my top pirorities daily, even had a massage chair.
 
 - **Bring bands, light gym equipment** - Have everything to stretch and self massage, and light workouts
+
   - Heavy bands/light bands; Peanut ball; Harsh foam roller; Gripper (need it for my wrist)
+
+- **Do extra streches/cardio** - Remember energy positive, and keeps you injury free.
 
 ### Emotional Health
 
@@ -193,6 +204,10 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
 - Carry workout stuff great when waiting
 - Get Nexus/Frequent Traveller card (well worth the 100 bucks)
 - **I have an extra pocket in my suitcase** - Lost my popcorn popper and my baloon pump and my laptop. Wow too much stuff to lose.
+
+### Other learnings
+
+- It's coming
 
 ## Other Resources
 
