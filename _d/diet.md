@@ -14,25 +14,26 @@ Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calo
 
 <!-- prettier-ignore-start -->
 
-<!-- prettier-ignore-end -->
 
 <!-- vim-markdown-toc GFM -->
 
 - [My journey](#my-journey)
-  - [Mating weight](#mating-weight)
-  - [The bikini diet](#the-bikini-diet)
-  - [Juice fasting - Fat sick and nearly dead](#juice-fasting---fat-sick-and-nearly-dead)
-  - [The weight pledge - down to 149 lbs](#the-weight-pledge---down-to-149-lbs)
+    - [Mating weight](#mating-weight)
+    - [The bikini diet](#the-bikini-diet)
+    - [Juice fasting - Fat sick and nearly dead](#juice-fasting---fat-sick-and-nearly-dead)
+    - [The weight pledge - down to 149 lbs](#the-weight-pledge---down-to-149-lbs)
+    - [Post Corona Virus](#post-corona-virus)
 - [Great lo-cal foods](#great-lo-cal-foods)
-  - [Miso soup](#miso-soup)
-  - [Radishes/Kimchi/Frozen carrots/Canned baby corn](#radisheskimchifrozen-carrotscanned-baby-corn)
-  - [Popcorn](#popcorn)
+    - [Miso soup](#miso-soup)
+    - [Radishes/Kimchi/Frozen carrots/Canned baby corn](#radisheskimchifrozen-carrotscanned-baby-corn)
+    - [Popcorn](#popcorn)
 - [Thinks that have been successful](#thinks-that-have-been-successful)
 - [A tale of mindless Eating](#a-tale-of-mindless-eating)
 - [Making it a habit](#making-it-a-habit)
-  - [Breakfast Miso](#breakfast-miso)
+    - [Breakfast Miso](#breakfast-miso)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## My journey
 
@@ -45,6 +46,17 @@ Maintaing a healthy weight has always been a challenge for me. I was obese as a 
 ### Juice fasting - [Fat sick and nearly dead](http://ighealth.blogspot.com/2011/08/fat-sick-and-nearly-dead.html)
 
 ### The weight pledge - [down to 149 lbs](http://ighealth.blogspot.com/search/label/weight_update)
+
+- Tough pattern. Gorge at the start of the month, then drop hard, w/cutting
+- Super hard on the transitions
+
+### Post Corona Virus
+
+- Nothing crazy, just low calories
+- Added Hard cardio once Gym re-opened
+- Staying low avoiding the in and out transitions
+- Lots of porpcorn
+- Only sads at work.
 
 ## Great lo-cal foods
 
