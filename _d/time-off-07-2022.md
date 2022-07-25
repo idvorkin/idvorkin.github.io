@@ -35,7 +35,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 - **Don't berate mistakes** - Getting off the plane, it was super bright in torontoo. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I hav ean abilityt o squint. Nothing terrible happens.
 - **Continuous learning** - Any structural solutions - apply to next time (like having this list)
 - **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bbring my sunglasses.
-- **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine
+- **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forcedd check bags would be lost forever. They weren't.
 - **Don't fret micro optimizations** - From Belleville to Hamilonton, spent lots of time trying to figure out what time I'd adrive, what order of gym/work/sister/luncch I'd tackle, trying to micro optimize, spent lots of cycles. Turned out, didn't matter at all.
 - **I have an extra pocket in my suitcase** - Lost my popcorn popper and my baloon pump and my laptop. Wow too much stuff to lose.
 - **Travel Stuff** - Haven't really travelled in forever. Useful stuff
@@ -48,6 +48,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
   - Heavy bands/light bands
   - Peanut ball
   - Harsh foam roller
+- **Slack** - Have lots of slack (See [Essential](/essential)). Made time with my family much more enjoyable when I wasn't in a rush and sucecess was being with them. Also, same iwt going to the airport, had lots of extra time, didn't matter that got stuck at the car rental return. Didn't matter that my flight got delayed, can meditate do some inner work.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
