@@ -73,7 +73,7 @@ If goals are used for compensation, become very conservative.
 
 Results in extrinsic, not intrinsic motivation.
 
-### Extrinsic vs Intrinsic Motivations
+### Extrinsic vs Intrinsic Motivations.
 
 ### Transparent Goals
 
@@ -81,27 +81,27 @@ Results in extrinsic, not intrinsic motivation.
 
 ## Metrics Anti-Patterns
 
-- Measuring what is easy vs what is important
 
-  - Looking for keys under steet light - but keys are over there, why looking here? Cuz that's where we have light
+* Measuring what is easy vs what is important
+    * Looking for keys under steet light - but keys are over there, why looking here? Cuz that's where we have light
 
-- Using a metric to flog instead of to learn
+* Using a metric to flog instead of to learn
+    * Sev's are bad, people won't create SEVs,  will use alterate systems
 
-  - Sev's are bad, people won't create SEVs, will use alterate systems
-
-- Measuring a proxy, not intent
-  - Goal, get rid of foxes. Solution, 5\$ per fox paid; People started breeding foxes to put them down.
+* Measuring a proxy, not intent
+    * Goal, get rid of foxes. Solution, 5$ per fox paid; People started breeding foxes to put them down.
 
 ## Wrong KPIs
 
-- For a library - Count books vs Customer Engagement
+* For a library - Count books vs Customer Engagement
 
 ## Input vs output metrics
 
 asdf
 
+
+
 ## Culture vs Strategy
 
 - Culture lets you make decisions quickly and correctly
-
 -
