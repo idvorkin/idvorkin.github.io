@@ -297,4 +297,5 @@ export {
   makePostPreviewHTML,
   load_ig66,
   load_balance,
+  load_random_eulogy,
 };

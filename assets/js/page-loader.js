@@ -265,5 +265,5 @@ async function make_balance_chart_by_desired_time_rest(div) {
     };
     await Plotly.newPlot(div, data, layout, config);
 }
-export { UT, load_enjoy2, load_7_habits, makePostPreviewHTML, load_ig66, load_balance, };
+export { UT, load_enjoy2, load_7_habits, makePostPreviewHTML, load_ig66, load_balance, load_random_eulogy, };
 //# sourceMappingURL=page-loader.js.map
