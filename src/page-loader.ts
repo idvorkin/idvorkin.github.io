@@ -107,7 +107,6 @@ async function make_random_post_html() {
 }
 
 function load_random_eulogy() {
-  add_imported_blog_posts(); // has a random achievement post
   add_eulogy_roles("e1");
   add_eulogy_roles("e2");
   add_eulogy_roles("e3");
