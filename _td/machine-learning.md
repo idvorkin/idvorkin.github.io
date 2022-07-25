@@ -47,6 +47,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Classification - Precision and Recall](#classification---precision-and-recall)
     - [Clustering - its complicated](#clustering---its-complicated)
     - [PCA - its complicated](#pca---its-complicated)
+- [Why is ML hard?](#why-is-ml-hard)
 - [About ML errors](#about-ml-errors)
     - [The ML learning challenges](#the-ml-learning-challenges)
     - [Model and feature interpretability](#model-and-feature-interpretability)
@@ -249,6 +250,44 @@ So, from this "re-written" version of recall formula can pop-up one thing: this 
 ### Clustering - its complicated
 
 ### PCA - its complicated
+
+## Why is ML hard?
+
+I've been an engineer for a long time, and always struggled to understand what people are explaining when talking about ML. I've been doing lots of studying lately and here are some of the reasons I think ML is hard:
+
+- Modelling customer needs is hard.
+  - What is good in a customers mind?
+  - How does it change person to person?
+  - How do you know if someone got what they wanted
+  - Someones context/state of mind matter.
+  - What people want changes over time relative to the rest of the world.
+  - How hard is it to self motivate
+- Even if you had perfect ML, your domain understanding is wrong (think how hard PMF is)
+  - People probably lie?
+  - Business needs change
+  - People change
+  - Who should you keep happy?
+  - What's going on - world cup? More people less people
+  - Snow storms?
+  - Temporal changes
+- ML is not perfect
+  - Imagine you hired a great employee, but they don't change.
+- You need to map IRL concepts to imprecise math functions
+  - How should you model the words, pictures to numbers?
+  - Each math function has biases, weight outliers?
+  - Lots of subtelties
+  - Not clear how it performs on many things.
+- Hard to verify
+  - Models are opaque
+  - Lots of hard to verify steps in the pipeline
+  - No ground truth.
+  - Performance rots
+  - Regressions hard to understand.
+  - Not enough data
+- Not clear what ground truth is
+- Best practices changing non-stop
+  - Yesterday's state of the art is today's old news.
+  - Don't really share the training data. Only share the algos, and tied to the domain.
 
 ## About ML errors
 
