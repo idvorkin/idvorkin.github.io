@@ -93,6 +93,13 @@ async function make_random_post_html() {
         description: random_post["description"],
     });
 }
+function load_random_eulogy() {
+    add_imported_blog_posts(); // has a random achievement post
+    add_eulogy_roles("e1");
+    add_eulogy_roles("e2");
+    add_eulogy_roles("e3");
+    add_eulogy_roles("e4");
+}
 function load_enjoy2() {
     add_sunburst("sunburst", "sunburst_text", new ThingsIEnjoy().get_tree());
     add_random_prompts();

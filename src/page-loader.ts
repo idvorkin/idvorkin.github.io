@@ -112,7 +112,6 @@ function load_random_eulogy() {
   add_eulogy_roles("e2");
   add_eulogy_roles("e3");
   add_eulogy_roles("e4");
-  add_eulogy_roles("e5");
 }
 
 function load_enjoy2() {
