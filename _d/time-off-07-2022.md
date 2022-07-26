@@ -31,24 +31,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ## Top Learnings
 
-- **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membereship with GoodLife, let me do my top pirorities daily, even had a massage chair.
-- **Don't berate mistakes** - Getting off the plane, it was super bright in torontoo. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I hav ean abilityt o squint. Nothing terrible happens.
-- **Continuous learning** - Any structural solutions - apply to next time (like having this list)
-- **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bbring my sunglasses.
-- **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forcedd check bags would be lost forever. They weren't.
-- **Don't fret micro optimizations** - From Belleville to Hamilonton, spent lots of time trying to figure out what time I'd adrive, what order of gym/work/sister/luncch I'd tackle, trying to micro optimize, spent lots of cycles. Turned out, didn't matter at all.
-- **I have an extra pocket in my suitcase** - Lost my popcorn popper and my baloon pump and my laptop. Wow too much stuff to lose.
-- **Travel Stuff** - Haven't really travelled in forever. Useful stuff
-  - Figure out how to use rental car, wothe effort
-  - Have a good packing of keys wallet so don't worry about losing (Fanny pack)
-  - Bags on carry on clip together
-  - Bring straps
-  - Carry workout stuff (maybe as a belt)
-- **Bring portable gym equipment** - Yeah, super light, and great to stretch out and keep healhty
-  - Heavy bands/light bands
-  - Peanut ball
-  - Harsh foam roller
-- **Slack** - Have lots of slack (See [Essential](/essential)). Made time with my family much more enjoyable when I wasn't in a rush and sucecess was being with them. Also, same iwt going to the airport, had lots of extra time, didn't matter that got stuck at the car rental return. Didn't matter that my flight got delayed, can meditate do some inner work.
+- See summary post in [time off](/timeoff)
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -79,6 +62,15 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
     - [Stock market being down impacting my ability to spend](#stock-market-being-down-impacting-my-ability-to-spend)
     - [Missing root from tooth extraction](#missing-root-from-tooth-extraction)
     - [No buffer between vacation and work](#no-buffer-between-vacation-and-work)
+- [To make into a separate post](#to-make-into-a-separate-post)
+    - [Baltasar](#baltasar)
+    - [Mom](#mom)
+    - [Yelena](#yelena)
+    - [Good life](#good-life)
+    - [Rental Car](#rental-car)
+    - [Air Port to Quebec](#air-port-to-quebec)
+    - [Day #1](#day-1)
+    - [Priorities](#priorities)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -103,8 +95,6 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 - ☐ Daily performacne to a stranger
 
 ### Practice
-
-- ☐ Practice standard cards and bands
 
 ### General Magic
 
@@ -203,3 +193,66 @@ I just got a tooth extracton and am concerned about root removal, following up w
 To preserve time-off with the family. I'm working the first few days of my canada trip. While the flexibility is great, I wonder if I'll have trouble disconnecting, and would be better off using some of that time to do initial decompression.
 
 I guess if I do, I can take the time off.
+
+## To make into a separate post
+
+### Baltasar
+
+### Mom
+
+- Really nice to get to see her.
+- Got all electronics setup
+- Worked from her place, very nice
+
+### Yelena
+
+- Great to spend time with her
+- Made my morning time from 6-12 , then lots of energy to hang with her, and not have an agenda
+- Very nice to do exercise when idle, great for stretching
+
+### Good life
+
+- Got a gym membership - cheaper then day passes
+- Tried a few. One had no showers,
+- Top metric is probably BP/sqft
+- Last one I went to had a saltwater pool and a cold plunge ,and everythign else. Was awesome. And massage chairs
+- Last day, found out pool was closed, grateful to have gotten to try it for several days.
+
+### Rental Car
+
+- Premium was cheaper then economy.
+- Pretty fun to drive, glad with lots of driving and weather
+- Learning: Take time to learn how to use the features, fuel, fancy lock/unlock
+- Learning: Go buy a phone mount as phones are great
+
+### Air Port to Quebec
+
+- Followed apple map directions to close place in middle of air port
+- Couldn't ge ta hold of my rental company, tried the others, finally someone told me that one was closed, go to other terminal (rudely - compassion)
+- Went to take laptop out of bag, not in bag :(
+- Called everywhere I was.
+- Decided couldn't be in my carry on because it was x-ray'd
+- Bag didn't fit in size dimensions by an inch, luckily had bands, and banded them up so it would fit.
+- After all that couldnt' get bag on plane, had to check it. Only thing I had was my foam roller
+- But had to check bag, and pick up
+- Best part, met someone cool - ranking professor, which I was working on
+
+### Day #1
+
+- Renting the bike
+- Dinner with the belgians
+- Falling into the hole while loving my eulogy
+- Brought popcorn popper from Canada, but can't get a microwave for my hotel room
+- Found radishes
+- Very nice coffee shop in old quebec
+- All day cool hearing english and french, if not too fast, really enjoyed it.
+- Amazing opening ceremonies
+  - Best shadow puppet
+  - Amazing Trampoliners - crazy good.
+- Non stop magic see schedule
+
+### Priorities
+
+- Going to bed early even if miss stuff
+  - Totally worth it
+- xyz
