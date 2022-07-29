@@ -207,6 +207,7 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
 
 ### Other learnings
 
+- **Use your own evaluation criteria, avoid sunk costs** - At magic conference, 10 hours of magic a day, burning out on it. Decide to skip types of magic I like less for my hobbies and travel. Yes, it's paid for, yes it's a 'once in a lifetime', but if you don't enjoy it, well, you don't enjoy it.
 - It's coming
 
 ## Other Resources
