@@ -70,6 +70,10 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
     - [Rental Car](#rental-car)
     - [Air Port to Quebec](#air-port-to-quebec)
     - [Day #1](#day-1)
+    - [Day #2-4](#day-2-4)
+    - [Day #5 - Recalling the essential](#day-5---recalling-the-essential)
+    - [Dani DaOrtiz  - Best Magic Show of My life](#dani-daortiz----best-magic-show-of-my-life)
+        - [Mario Lecture](#mario-lecture)
     - [Priorities](#priorities)
 
 <!-- vim-markdown-toc -->
@@ -250,6 +254,47 @@ I guess if I do, I can take the time off.
   - Best shadow puppet
   - Amazing Trampoliners - crazy good.
 - Non stop magic see schedule
+
+### Day #2-4
+
+- 10-11 hours a day of magic: 3 hour stage show; 4 hour close up; 2 hour show; 1-2 hours of lectures
+- Too much, burned out
+- Falling asleep in the middle of the day.
+- Not enough sleep
+- Meeting some strangers .
+
+### Day #5 - Recalling the essential
+
+Post-Hoc realized I was being an [essentialist](/essential):
+
+- Skipped morning stage shows (don't love them), and did lectures instead. Awesome!
+- Really enjoyed the lecture so boughht his class (OK, will probably never watch it, but fingres crossed)
+- Snuck out of banquet since folks i didn't connect with my table mates to talk to family.
+- Took two slots to clear my head and meditate
+- Took a break in the middle of the day to meditate
+- Took time during intermissions to do stretching
+- I do weird stretches so people always ask if I'm OK.
+- Left the envening show 15 minutes in so I could sleep in instead. Should have not showed up.
+- Asked folks who said they do baloons and bands to show me what they do
+- Talking to Zach and Tori!
+
+### Dani DaOrtiz - Best Magic Show of My life
+
+- Truly impossible
+- Super high, positive energy
+- Total audience engagement
+- Impossible
+- Keeps building suspense
+- Pulls the audience in
+- Feels like you're experiencing chaos
+
+#### Mario Lecture
+
+- Cool idea of cards going up
+- Using "broken magic" to be human (see Show don't tell kids magic)
+- Be yourself
+- Have a reason for your magical jesture. Say if someone buys you dinner you can talk for 30 minutes
+- Use cigaratee to load card to cigarette
 
 ### Priorities
 
