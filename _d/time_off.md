@@ -31,8 +31,8 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Making the most out of staycation](#making-the-most-out-of-staycation)
 - [Combined Learnings](#combined-learnings)
-    - [Before the time off](#before-the-time-off)
-    - [Balance](#balance)
+    - [Before you go](#before-you-go)
+    - [Every other day checkin](#every-other-day-checkin)
     - [Physical Health](#physical-health)
     - [Emotional Health](#emotional-health)
     - [Travel Tips](#travel-tips)
@@ -130,7 +130,7 @@ With staycations, it's especially easy to oscillate between vegetating, grinding
 
 Here are the combined learnigns from my time offs. Make sure to read an interalize it!
 
-### Before the time off
+### Before you go
 
 - Pre-writing your desires/goals for time off (see this template).
   - If you begin with the end in mind you can get it done
@@ -142,35 +142,35 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
 - Visualize the battle of the resistance, prepare mentally to avoid it.
   - If I don't force my self to maintain my habits, and stay balanced - I won't (I did zero magic).
   - Decide when you'll check in with your plans.
-- Prioritize your todo items early
-  - Recall they'll be psychic weight
-  - Get them done early, or they'll drag you down.
 - Create a won't do list
   - I can get sucked into programming, but I want to avoid it.
 - Write up your phychic Weight
   - Just naming it helps you get it under control.
 
-### Balance
+### Every other day checkin
 
-- Balance, it's all about balance!
-- Pay yourself first, gives you the energy and strength for everything else.
+- **Refresh** - Re-read these learnings and your time off priority list.
+- **Pay yourself first, do the habits** - gives you the energy and strength for everything else.
+  - If I don't force my self to maintain my habits, and stay balanced - I won't
   - Make sure to do magic
   - Make sure to do hot tub
   - Your positive habits charge you up, do them!
   - My habits are energizing, the time spent is actually time positive from additional magic.
   - If I don't force my self to maintain my habits, and stay balanced - I won't
-- Hobbies are OK if part of charging up
+  - Don't skip habits, they give you the energy
+- **Use your own evaluation criteria, avoid sunk costs** - What "should be best", probably isn't do what's most important to you and your identity, not "what should" happen.
+  - At magic conference, 10 hours of magic a day, burning out on it.
+    - Decide to skip types of magic I like less for my hobbies and travel.
+  - Ask yourself if you're actually doing what you enjoy. Beware sunk cost fallacy.
+- **Hobbies are OK if part of charging up:**
   - Before family wakes up
   - Tell family the plans so they aren't surprised and expectations are set.
   - Tech/content time before the kids wake up is totally fine.
-- Family time feels fantastic
-- If I don't force my self to maintain my habits, and stay balanced - I won't (I did zero magic).
-- My habits are energizing, the time spent is still energy positive.
-- Family time feels fantastic
-- Make sure to do magic
-- TODOs
-  - Check in frequently on what needs to get done
-  - Get my todo items checked off early instead of letting them drag
+- **Handle the todo's and physic weight early**
+  - Get the todo items done, or scheduled so they aren't dragging you down.
+  - See what else is stressing you and finish it.
+  - Check in on pychic weight and decide if you should be doing it or not.
+- **Am I getting enough relationship time vs self time** - Your family and relationships are precious be sure to nuruture them ,but also need time for self (and so do others
 
 ### Physical Health
 
@@ -203,12 +203,10 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
 - Bring luggage compression straps.
 - Carry workout stuff great when waiting
 - Get Nexus/Frequent Traveller card (well worth the 100 bucks)
+- Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
 - **I have an extra pocket in my suitcase** - Lost my popcorn popper and my baloon pump and my laptop. Wow too much stuff to lose.
 
 ### Other learnings
-
-- **Use your own evaluation criteria, avoid sunk costs** - At magic conference, 10 hours of magic a day, burning out on it. Decide to skip types of magic I like less for my hobbies and travel. Yes, it's paid for, yes it's a 'once in a lifetime', but if you don't enjoy it, well, you don't enjoy it.
-- It's coming
 
 ## Other Resources
 
