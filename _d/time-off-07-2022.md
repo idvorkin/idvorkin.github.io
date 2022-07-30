@@ -64,6 +64,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
     - [No buffer between vacation and work](#no-buffer-between-vacation-and-work)
 - [To make into a separate post](#to-make-into-a-separate-post)
     - [Baltasar](#baltasar)
+    - [The Props - Popcorn maker and sunglasses](#the-props---popcorn-maker-and-sunglasses)
     - [Mom](#mom)
     - [Yelena](#yelena)
     - [Good life](#good-life)
@@ -201,6 +202,10 @@ I guess if I do, I can take the time off.
 ## To make into a separate post
 
 ### Baltasar
+
+### The Props - Popcorn maker and sunglasses
+
+- Great lens through which to see the trip
 
 ### Mom
 
