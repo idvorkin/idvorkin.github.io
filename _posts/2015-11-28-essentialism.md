@@ -11,7 +11,7 @@ tags:
   - strategy
 ---
 
-Essentialism is deciding what goes on your todo list, not how many things you can cross off. Being an essentialist means you say 'I choose to' not 'I have to', 'Only a few things matter', not 'all things matter' and 'I will do one thing', not 'I will do both'. The essential questions are 'How do I know when I'm done', 'If I didn't own this, would I buy it?', 'If I didn't have this opportunity what would I do to acquire it?'
+Essentialism is deciding what goes on your todo list, not how many things you can cross off. Being an essentialist means you say 'I choose to' not 'I have to', 'Only a few things matter', not 'all things matter' and 'I will do one thing', not 'I will do both'. The essential questions are 'How do I know when I'm done?', 'If I didn't own this, would I buy it?', 'If I didn't have this opportunity what would I do to acquire it?'
 
 This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 {%include amazon.html asin="B00G1J1D28" %}
@@ -36,11 +36,11 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
 
 ## Explore and Evaluate
 
-### 2) Choose: You need to choose &#x2610;
+### 2) Choose: You need to choose ☑
 
 tbd
 
-### 3) Discern: Only a few things matter, the rest are fluff. &#x2610;
+### 3) Discern: Only a few things matter, the rest are fluff. ☑
 
 tbd
 
@@ -50,14 +50,14 @@ tbd
 - Trade offs exist, can't be ignored.
 - Embrace the trade off
 
-### 5) Escape: Be unavailable &#x2611;
+### 5) Escape: Be unavailable ☑
 
 - Need to make space to think
 - To have focus, need to escape, to be able TO FOCUS.
 - Space to concentrate
 - Space to read
 
-### 6) Look: See what matters &#x2611;
+### 6) Look: See what matters ☑
 
 - Lead - The essence of the story.
 
@@ -410,11 +410,12 @@ tbd
 - Choosing and your todo list:
   - Life is about what you decide to put on your todo list, not how efficiently you cross things off.
   - Focus on essential is a choice, make it, or someone else will make your choices, and it'll suck.
-- Regressions:
-  - You'll forget that you can't do both, you can't.
-  - They'll happen, keep grandmother mind, and try again.
+- You will regress:
+  - You'll forget that you can't do everything, you'll lose discipline
+  - They'll happen, keep [grandmother mind](/compassion), and try again.
 - Living a life that matters:
   - Family most important thing in your life, everything else will fade over time.
+  - You need to stay energized with your [phyiscal](/physical-health) and [emotional](/emotional-health) health habits.
   - You have so little time -- go look at cemeteries to see how little you have.
   - Remove fear of choosing the wrong thing, just choose and move on.
   - By deciding what is most important and doing it, you'll have no regrets.
