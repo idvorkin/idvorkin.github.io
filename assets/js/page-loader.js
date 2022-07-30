@@ -94,10 +94,9 @@ async function make_random_post_html() {
     });
 }
 function load_random_eulogy() {
-    add_eulogy_roles("e1");
-    add_eulogy_roles("e2");
-    add_eulogy_roles("e3");
-    add_eulogy_roles("e4");
+    add_eulogy_roles("#e1");
+    add_eulogy_roles("#e2");
+    add_eulogy_roles("#e3");
 }
 function load_enjoy2() {
     add_sunburst("sunburst", "sunburst_text", new ThingsIEnjoy().get_tree());
