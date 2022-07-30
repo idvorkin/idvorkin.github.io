@@ -35,7 +35,7 @@ Every day I write out my affirmations. These positive statements help me challen
 
 {%include summarize-page.html src="/writing" %}
 
-### First Understand. Appreciate. Be a class act
+### Be a class act: First Understand. Appreciate
 
 **People want to do their best and are rational. Seek first to understand, and only then be understood.**
 
@@ -58,7 +58,7 @@ Every day I write out my affirmations. These positive statements help me challen
 
 {%include summarize-page.html src="/class-act" %}
 
-### Be Present. This too shall pass
+### Be Calm: Be Present. This too shall pass
 
 **Every day can be full of [joy](/joy), but if you're not paying attention you'll miss it. Being present will also let you [appreciate](/appreciate) others which also brings satisfaction.**
 
