@@ -117,9 +117,11 @@ tbd
   - 2. Reduces stress
   - 3. Positive effect on executive function
 
-### 8) Sleep: Protect it &#x2611;
+### 8) Sleep: Protect it ☑
 
 - Don't sleep, don't think. Don't think, can't choose well.
+
+{%include summarize-page.html src="/insomnia" %}
 
 ## Eliminate
 
@@ -169,17 +171,17 @@ tbd
   - See picture of magnetic by poles.
 - Essential Intent:
 
-        |---------------+----------------+---------------------|
-        | 2x2 Grid      |  Vague         | Concrete            |
-        |---------------+----------------+---------------------|
-        | Inspirational | Vision/Mission | Essential Intent    |
-        | Bland         | Values         | Quarterly Objective |
-        |---------------+----------------+---------------------|
+|---------------+----------------+---------------------|
+| 2x2 Grid | Vague | Concrete |
+|---------------+----------------+---------------------|
+| Inspirational | Vision/Mission | Essential Intent |
+| Bland | Values | Quarterly Objective |
+|---------------+----------------+---------------------|
 
-  - Vision/Mission - Sounds like inspiration, but so vague ignored.
-  - Values - So generic, doesn't inspire passion
-  - Quartely Objectives - a specific tactic/how, not inspiring.
-  - Intent - Strategy that is Concrete, Inspiring, Memorable and says what NOT doing.
+- Vision/Mission - Sounds like inspiration, but so vague ignored.
+- Values - So generic, doesn't inspire passion
+- Quartely Objectives - a specific tactic/how, not inspiring.
+- Intent - Strategy that is Concrete, Inspiring, Memorable and says what NOT doing.
 
 - Answer the question, do not wordsmith.
   - Stop rearranging words, only answer the questions ...
@@ -219,13 +221,16 @@ tbd
 - Remind yourself that everyone is selling something
   - When you say yes, you're buying something, make that thing essential.
 
-### 12) Uncommit: Cut your losses. &#x2611;
+### 12) Uncommit: Cut your losses. ☑
 
+- **What else would I do with this energy/time/money if I walked away now**
 - **If wasn't already invested, how much would I invest?**
-- **What else would I do with this time or money if I walked away now**
-- Sunk Cost bias
-  - Already put so much in, will be a win with just a bit more.
-  - Antidote: Realize waste is OK (especially since it's already happened).
+
+The tricksters:
+
+- **Sunk Cost bias** - Already put so much in, will be a win with just a bit more.
+
+  - **Antidote:** Realize waste is OK (especially since it's already happened).
   - Anecdote:
     - Realize waste is OK. Remember this story.
     - Buy ticket A for 100$, 2 weeks later ticket B for 50$
@@ -233,13 +238,14 @@ tbd
     - A and B on same day, need to choose which to go to.
     - Many pick A, because they'd waste less money.
     - BUT WRONG CHOICE.
-- Endowment affect (divestiture aversion) bias
 
-  - Over value what you own.
-  - No one washed a rental car.
-  - Can't get rid of a book you don't read.
-  - Can't get rid of clothes you don't fit into.
-  - Antidote: Pretend you don't own it yet
+- **Endowment affect (divestiture aversion) bias** - You over value what you own
+
+  - **Antidote:** Pretend you don't own it yet
+  - Examples
+    - No one washed a rental car.
+    - Can't get rid of a book you don't read.
+    - Can't get rid of clothes you don't fit into.
   - **ITEM**: If I didn't own it, how much would I pay?
   - **OPPORTUNITY**: If I don't have this opportunity, how hard will I work to get it?
   - **INVOLVEMENT**: If I wasn't involved, how hard would I work to get involved?
@@ -260,7 +266,7 @@ tbd
     - Hard, but worth it.
 - Stop making casual commitments
   - Take 5s to ask if this is essential before you commit.
-- Get over fear of missing out
+- Get over FOMO
   - Loss averse, don't want to miss out.
   - Antidote: Reverse Pilot
     - Try to stop doing it for a while, and see if anyone notices.
