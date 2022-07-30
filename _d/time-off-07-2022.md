@@ -72,7 +72,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
     - [Day #1](#day-1)
     - [Day #2-4](#day-2-4)
     - [Day #5 - Recalling the essential](#day-5---recalling-the-essential)
-    - [Dani DaOrtiz  - Best Magic Show of My life](#dani-daortiz----best-magic-show-of-my-life)
+    - [Dani DaOrtiz - Best Magic Show of My life](#dani-daortiz---best-magic-show-of-my-life)
         - [Mario Lecture](#mario-lecture)
     - [Priorities](#priorities)
 
