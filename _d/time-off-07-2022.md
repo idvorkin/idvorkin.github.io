@@ -27,67 +27,40 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ## Moments
 
+**Remember the peak end rule**
+
+- My last day in Quebec City
+  - Skipped ceremonies and going out night before and got to bed on time
+  - Back up at 5:30
+  - Writing from 7-10
+  - Citadel Tour from 10-11 (pretty cool)
+  - Spontanious ran into person I split cab with to the hotel, veyr nice.
+  - Walked around all over for fun
+  - Stopped listening to music and did some balloons for kids
+  - Had a nice dinner
+  - Radishes and Cherries for Lunch
+  - Perfect weather, wandering randomly
+  - Super tasty salad for dinner
+  - Dipped ice cream - love the coating, thew away the ice cream
+  - gave out tonnes of balloons
+  - Gave a balloon flower to an older lady who was looking at me
+  - People asking about why my mismatched shoes - the answer makes people smile
+  - Some one came up to me asked where to get balloons - I said oh for you. She tried to pay me, which always makes me happy and I always decline
+  - Hanging out with a busker, walking randomly through blocked off streets, giving out balloons to everyone I want. Making people really, really happy.
+  - Pre-packed my bags
+  - Full wrist stretches
+  - Wrote up the amazing culmination of the journey
+  - To bed by 9:30
+
+Last morning
+
+- Up at 4:30
+
 ## Success Stories
 
 ## Top Learnings
 
-- See summary post in [time off](/timeoff)
-
-<!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
-
-- [Friends (5/5)](#friends-55)
-- [Family (Y/5)](#family-y5)
-- [Magic (Y/5)](#magic-y5)
-    - [Performing](#performing)
-    - [Practice](#practice)
-    - [General Magic](#general-magic)
-- [Tech Guru (Y/5)](#tech-guru-y5)
-    - [Enabling Environment](#enabling-environment)
-    - [Blogging](#blogging)
-    - [Programming](#programming)
-- [Identity Health (Y/5)](#identity-health-y5)
-    - [Biking](#biking)
-    - [Ballooning](#ballooning)
-    - [Joy Activities](#joy-activities)
-- [Emotional Habits (Y/5)](#emotional-habits-y5)
-- [Physical Habits (Y/5)](#physical-habits-y5)
-    - [Statistics](#statistics)
-    - [Verbose](#verbose)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
-- [Mental quicksand](#mental-quicksand)
-    - [Guilt of missing summer time with family](#guilt-of-missing-summer-time-with-family)
-    - [Forgetting something with lots bring](#forgetting-something-with-lots-bring)
-    - [Stock market being down impacting my ability to spend](#stock-market-being-down-impacting-my-ability-to-spend)
-    - [Missing root from tooth extraction](#missing-root-from-tooth-extraction)
-    - [No buffer between vacation and work](#no-buffer-between-vacation-and-work)
-- [To make into a separate post](#to-make-into-a-separate-post)
-    - [Baltasar](#baltasar)
-    - [The Props - Popcorn maker and sunglasses](#the-props---popcorn-maker-and-sunglasses)
-    - [Mom](#mom)
-    - [Yelena](#yelena)
-    - [Good life](#good-life)
-    - [Rental Car](#rental-car)
-    - [Air Port to Quebec](#air-port-to-quebec)
-    - [Day #1](#day-1)
-    - [Day #2-4](#day-2-4)
-    - [Day #5 - Recalling the essential](#day-5---recalling-the-essential)
-    - [Dani DaOrtiz - Best Magic Show of My life](#dani-daortiz---best-magic-show-of-my-life)
-        - [Mario Lecture](#mario-lecture)
-    - [Priorities](#priorities)
-
-<!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
 ## Friends (5/5)
-
-- Had an amazing time with Baltasar
-  - Made lots of ballons for his kids
-  - Went to the beach lots of time
-  - Really felt like an uncle!
-  - Maybe gorged but payed it back the next day
-- Met a cool professor of ranking when needed a cab to the airport
 
 ## Family (Y/5)
 
@@ -97,11 +70,48 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
 
 ### Performing
 
-- ☐ Daily performacne to a stranger
-
 ### Practice
 
 ### General Magic
+
+<!-- vim-markdown-toc GFM -->
+
+- [Tech Guru (Y/5)](#tech-guru-y5)
+  - [Enabling Environment](#enabling-environment)
+  - [Blogging](#blogging)
+  - [Programming](#programming)
+- [Identity Health (Y/5)](#identity-health-y5)
+  - [Biking](#biking)
+  - [Ballooning](#ballooning)
+  - [Joy Activities](#joy-activities)
+- [Emotional Habits (Y/5)](#emotional-habits-y5)
+- [Physical Habits (Y/5)](#physical-habits-y5)
+  - [Statistics](#statistics)
+  - [Verbose](#verbose)
+  - [Diet](#diet)
+  - [Sleep](#sleep)
+- [Mental quicksand](#mental-quicksand)
+  - [Guilt of missing summer time with family](#guilt-of-missing-summer-time-with-family)
+  - [Forgetting something with lots bring](#forgetting-something-with-lots-bring)
+  - [Stock market being down impacting my ability to spend](#stock-market-being-down-impacting-my-ability-to-spend)
+  - [Missing root from tooth extraction](#missing-root-from-tooth-extraction)
+  - [No buffer between vacation and work](#no-buffer-between-vacation-and-work)
+- [To make into a separate post](#to-make-into-a-separate-post)
+  - [Baltasar](#baltasar)
+  - [The Props - Popcorn maker and sunglasses](#the-props---popcorn-maker-and-sunglasses)
+  - [Mom](#mom)
+  - [Yelena](#yelena)
+  - [Good life](#good-life)
+  - [Rental Car](#rental-car)
+  - [Air Port to Quebec](#air-port-to-quebec)
+  - [Day #1](#day-1)
+  - [Day #2-4](#day-2-4)
+  - [Day #5 - Recalling the essential](#day-5---recalling-the-essential)
+  - [Dani DaOrtiz - Best Magic Show of My life](#dani-daortiz---best-magic-show-of-my-life)
+    - [Mario Lecture](#mario-lecture)
+  - [Priorities](#priorities)
+
+<!-- vim-markdown-toc -->
 
 ## Tech Guru (Y/5)
 
