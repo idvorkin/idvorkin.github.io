@@ -36,7 +36,8 @@ My explorations of recommender and ranking systems, heavly based on the superb b
         - [Matthew effect, diversity, filter bubbles](#matthew-effect-diversity-filter-bubbles)
         - [Coverage](#coverage)
         - [Serendipity](#serendipity)
-    - [Content Based Recommenders](#content-based-recommenders)
+    - [Content Based Recommenders - More Like This](#content-based-recommenders---more-like-this)
+        - [LDA](#lda)
     - [Hidden Gems: Matrix Factorization](#hidden-gems-matrix-factorization)
     - [Hybrid Recommenders](#hybrid-recommenders)
     - [From recommending to ranking](#from-recommending-to-ranking)
@@ -193,7 +194,7 @@ Great for folks who saw them as kids (now 40) and their kids who have watched th
   - But it's hard.
   - Too bad, bugs are harder.
   - Both UT and regression testing
-  - Test every pary you can
+  - Test every part you can
   - Similary methods, anything you can
   - Use small dataset to verify everything you can
 - Test Scenarios
@@ -216,7 +217,6 @@ Great for folks who saw them as kids (now 40) and their kids who have watched th
     - MAE - Not sensetive. Decent when a terrible rating is OK.
     - Be careful if you have user with lots of recommendation and popular items that will overweight in the results
 - Decision Support - Precision and Recall
-
   - True Positive - Recommended and consumed
   - False Positive - Recommended and not consumed
   - False Negative - Didn't include the recommendation, but user consumed
@@ -278,7 +278,19 @@ Benchmarkingi predictions - How often do you watch something? - Consider startin
 
 - People like surprise don't make your recommender too tight, or they'll always get the same thing.
 
-### Content Based Recommenders
+### Content Based Recommenders - More Like This
+
+Use a category, not just the collaborative filtering
+
+
+#### LDA
+
+- Latent - topics aren't known before hand
+- Dirichlet - How documents described using topics
+- Allocation - Words map to topics
+- QQ: Are topics just clusters which are words?
+
+
 
 ### Hidden Gems: Matrix Factorization
 

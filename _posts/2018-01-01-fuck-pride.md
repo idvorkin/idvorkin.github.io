@@ -89,8 +89,6 @@ I'll continue to add examples to this post over time (likely when I need to remi
 - Cognitive Distortions - Someone cares about what happens to you.
 - Not taking a "better" job for a pay cut
 
-<!--  I don't love this section, removing it.
-
 #### HEAD FAKE: This note is really about arrogance and hubris, not pride.
 
 To be dramatic, I'm using the word pride as an alternative to arrogance and hubris. Those words are probably more precise.

@@ -109,6 +109,8 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 
 I need to process how to merge the important and not urgent matrix with the ABCDE prioritization matrix.
 
+{%include summarize-page.html src="/7h-c1" %}
+
 “A” items are important and urgent **I/U**, something that you must do. This is a task that will have serious consequences (positive or negative), finishing a calibration packets for upcoming calibration or dealing with a root canal. If you have more than one A task, prioritize, and execute in order “A-1,” “A-2,” “A-3,” Your A-1 task is your biggest, ugliest frog of all. Start there.
 
 **TBD: Where to work in Important and Not-Urgent**

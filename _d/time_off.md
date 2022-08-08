@@ -196,17 +196,38 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
 
 ### Travel Tips
 
-- Take time to think through daily routines:
-- Figure out how to use rental car (wipers, door locks, cruise control)
+- Pack the afternoon before so you don't have a rush in the morning
+- Hanging at the airport early is totall ine - don't worr about it.
+- Make a leave list (Notion)
+    - Pack my chargers
+    - Put Masks in Bag
+    - Make sure batteries are fully charged before leaving
+    - Leave for the airport 3 hours early (have lots of slack)
+- Rental car
+    - Just get it if you need lots of travel
+    - Take time to learn how to use it
+    - Get Insurance on your credit card
+    - Take 10 minutes to learn how to use it (wipers, door locks, cruise control, fuel)
+- Take time to think through daily routines, and when you'll do them
+    - Ad hoc doesn't work
+- Re pack day bag
+    - Don't haul around stuff you won't use it
 - Have a good packing of keys wallet so don't worry about losing (Fanny pack)
-- Bags on carry on clip together
-- Bring luggage compression straps.
-- Carry workout stuff great when waiting
-- Get Nexus/Frequent Traveller card (well worth the 100 bucks)
+- Luggage:
+    - Bags on carry on clip together
+    - Bring luggage compression straps.
+- Airport
+    - Bring power bars
+    - Don't drink too much
+    - Get Nexus/Frequent Traveller card (well worth the 100 bucks)
+    - Carry a bag with bands and foam roller
+
 - Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
 - **I have an extra pocket in my suitcase** - Lost my popcorn popper and my baloon pump and my laptop. Wow too much stuff to lose.
 
 ### Other learnings
+
+- Remember the peak end rule. Make the last day amazing!
 
 ## Other Resources
 
