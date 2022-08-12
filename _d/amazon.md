@@ -80,7 +80,7 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
 - [The curious](#the-curious)
     - [Building twice is faster then building once](#building-twice-is-faster-then-building-once)
     - [Discourage interdependence between teams](#discourage-interdependence-between-teams)
-    - [Amazon as evolution](#amazon-as-evolution)
+    - [Amazon as natural selection](#amazon-as-natural-selection)
     - [Letting teams implode](#letting-teams-implode)
     - [Social Cohesion is bad](#social-cohesion-is-bad)
     - [Sounds like good intentions](#sounds-like-good-intentions)
@@ -196,7 +196,7 @@ A thing I saw at Amazon that made me really sad, was signs on the wall describin
 
 ### Too much intensity
 
-### No one knows how to use Word.
+### No one knows how to use Word
 
 ### Frupidity
 
@@ -208,7 +208,7 @@ Some people used frugality to focus on not the high order bit. For example, I ha
 
 ### So hard to hire
 
-## Leadership Principles (LPs): The beating hart of Amazon.
+## Leadership Principles (LPs): The beating hart of Amazon
 
 At Amazon training the first thing they tell you is "Everywhere else, you see the leadership principles on the wall, and no one knows what they are", at Amazon, they are no on the walls, but instead we speak to them every day.
 
@@ -216,7 +216,7 @@ You don't just speak to them daily, you speak to the leadership principles multi
 
 ### Design principles for Leadership
 
-### The dirty secret of LPs - You can justify anything.
+### The dirty secret of LPs - You can justify anything
 
 If you think of LPs as a "vector space", you can use them to justify any behavior or action as a leadership principle.
 
@@ -257,9 +257,9 @@ Humorously, each LP has an opposite cancelling force.
 
 ### Frugality
 
-## LP Set: Good partners:
+## LP Set: Good partners
 
-### Earn Trust.
+### Earn Trust
 
 ### Have backbone, disagree and commit
 
@@ -271,7 +271,7 @@ Humorously, each LP has an opposite cancelling force.
 
 ### Discourage interdependence between teams
 
-### Amazon as evolution
+### Amazon as natural selection
 
 ### Letting teams implode
 
@@ -283,7 +283,7 @@ Humorously, each LP has an opposite cancelling force.
 
 ## My Experience at Amazon
 
-### My time at Amazon.
+### My time at Amazon
 
 I care deeply about the teams I work with, and [my goodbye mail says it well](https://github.com/idvorkin/blob/blob/master/career/idvorkin_amazon_going_away_mail.pdf).
 
