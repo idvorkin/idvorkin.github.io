@@ -29,6 +29,7 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
     - [The 3 lies of laziness](#the-3-lies-of-laziness)
     - [If you don't beat it back, it will get stronger](#if-you-dont-beat-it-back-it-will-get-stronger)
     - [Jump in the lake day](#jump-in-the-lake-day)
+    - [Cold Exposure and Physiology - The science behind jump in the lake day](#cold-exposure-and-physiology---the-science-behind-jump-in-the-lake-day)
     - [Positive Habits and Routine](#positive-habits-and-routine)
     - [Related books](#related-books)
         - [Flinch](#flinch)
@@ -84,6 +85,12 @@ Every victory over the resistance will give you the strength for the next victor
 To remind me the resistance is a huge enemy, I do a polar bear plunge every new year, I call it jump in the lake day.
 
 ![Fun Photo](http://farm8.staticflickr.com/7013/6615434129_8040468028.jpg)
+
+### Cold Exposure and Physiology - The science behind jump in the lake day
+
+Pretty cool discussion of cold exposure and its brain chemsistry defences using andreniline and how deliberately fighting the adreniline can build your fight against the resistance. Kind of the science behind
+
+<https://www.youtube.com/watch?v=pq6WHJzOkno>
 
 ### Positive [Habits](/habits) and Routine
 
