@@ -46,6 +46,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
     - [Real Movie Datasets](#real-movie-datasets)
 - [Ideas](#ideas)
     - [The progression of recommender systems](#the-progression-of-recommender-systems)
+- [Code](#code)
 - [Other Stuff](#other-stuff)
     - [Practical Recommender Systems - The book this is based on](#practical-recommender-systems---the-book-this-is-based-on)
     - [Netflix Prize](#netflix-prize)
@@ -217,6 +218,7 @@ Great for folks who saw them as kids (now 40) and their kids who have watched th
     - MAE - Not sensetive. Decent when a terrible rating is OK.
     - Be careful if you have user with lots of recommendation and popular items that will overweight in the results
 - Decision Support - Precision and Recall
+
   - True Positive - Recommended and consumed
   - False Positive - Recommended and not consumed
   - False Negative - Didn't include the recommendation, but user consumed
@@ -282,15 +284,12 @@ Benchmarkingi predictions - How often do you watch something? - Consider startin
 
 Use a category, not just the collaborative filtering
 
-
 #### LDA
 
 - Latent - topics aren't known before hand
 - Dirichlet - How documents described using topics
 - Allocation - Words map to topics
 - QQ: Are topics just clusters which are words?
-
-
 
 ### Hidden Gems: Matrix Factorization
 
@@ -326,6 +325,14 @@ Use a category, not just the collaborative filtering
 6. Personlized via Clustering
 
 7. ## Similarity in items and users
+
+## Code
+
+This stuff is kind of complicated, so I'm workign throught eh code in the book. Follow along at <https://github.com/idvorkin/moviegeek>
+
+If you're running the docker setup locally, you can run the webpage at ...
+
+<http://localhost:8010>
 
 ## Other Stuff
 
