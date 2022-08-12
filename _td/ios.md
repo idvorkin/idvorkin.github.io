@@ -67,6 +67,8 @@ GoTo settings -> Imessage and ensure you're starting from your phone numbe.
 
 You can take full control from Voice Control, this lets you dictate with out starting with siri, and tap on buttons. Go look up accessibility -> Voice Control
 
+<https://www.youtube.com/watch?v=eg22JaZWAgs>
+
 ### Background noises
 
 You can turn on background noise to be comfortable in a loud environment
