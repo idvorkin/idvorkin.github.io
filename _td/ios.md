@@ -15,6 +15,10 @@ I spent a **LOT** of time on my iPhone/iPad - here are some of the tools/tips I 
 
 - [General](#general)
     - [Global Controls (For iPhone X)](#global-controls-for-iphone-x)
+    - [iMessage Turning into Green Dots](#imessage-turning-into-green-dots)
+    - [Voice Control](#voice-control)
+    - [Background noises](#background-noises)
+    - [Read aloud](#read-aloud)
     - [Siri (For iPhone X)](#siri-for-iphone-x)
     - [HomeKit](#homekit)
     - [Health Kit](#health-kit)
@@ -52,6 +56,24 @@ I spent a **LOT** of time on my iPhone/iPad - here are some of the tools/tips I 
 - Hey Siri -> A better way to launch Siri
 - Scroll to top of page -> press on time
 - Reboot -> Volume up then Volume down, then press side button for 10 seconds.
+
+### iMessage Turning into Green Dots
+
+Sometimes iMessage gets screwed up, when that happens, it's because iPhone is using email to start convos (I think?)
+
+GoTo settings -> Imessage and ensure you're starting from your phone numbe.
+
+### Voice Control
+
+You can take full control from Voice Control, this lets you dictate with out starting with siri, and tap on buttons. Go look up accessibility -> Voice Control
+
+### Background noises
+
+You can turn on background noise to be comfortable in a loud environment
+
+### Read aloud
+
+Lets Phone be a screen reader
 
 ### Siri (For iPhone X)
 
@@ -98,7 +120,7 @@ Close Tab - Pull top of page down and to right
 New Tab - Pull top of page down and to left
 
 Keyboard: Test if these work
-https://productforums.google.com/forum/#!topic/chrome/fiR1lQ0mpbw;context-place=forum/chrome
+<https://productforums.google.com/forum/#!topic/chrome/fiR1lQ0mpbw;context-place=forum/chrome>
 
 ### Launcher
 
