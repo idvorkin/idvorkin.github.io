@@ -30,6 +30,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
         - [How to engage biz rules](#how-to-engage-biz-rules)
         - [Semi-personalized by geo/segment/demographic](#semi-personalized-by-geosegmentdemographic)
     - [Similary between content and users](#similary-between-content-and-users)
+        - [How to measure similarity](#how-to-measure-similarity)
     - [Collaborative Filtering](#collaborative-filtering)
     - [Testing a recommender](#testing-a-recommender)
         - [Happy customers](#happy-customers)
@@ -179,6 +180,16 @@ Age, Star Wars
 Great for folks who saw them as kids (now 40) and their kids who have watched them. In the middle group, they are boring.
 
 ### Similary between content and users
+
+#### How to measure similarity
+
+Given two things (people or items), how similar or different are they, 1 is the same, and 0 is not at all.
+
+There are multiple ways to measure, and depends on the representation of the thing, and the domain (#ml_art)
+
+- Jaccard Distance -
+- Pearson Correlation Coefficient
+- Cosine Similarity
 
 ### Collaborative Filtering
 
