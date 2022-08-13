@@ -15,6 +15,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
 
 - [Intro to Recommmendation Systems](#intro-to-recommmendation-systems)
     - [Concepts](#concepts)
+    - [What makes ML hard](#what-makes-ml-hard)
     - [Understand Netflix (collect user behavior and present recommendations)](#understand-netflix-collect-user-behavior-and-present-recommendations)
     - [How to monitor a system](#how-to-monitor-a-system)
     - [How to calculate ratings](#how-to-calculate-ratings)
@@ -60,6 +61,12 @@ My explorations of recommender and ranking systems, heavly based on the superb b
 ### Concepts
 
 - Recommendation != Prediction. Prediction = What a user would rate content; A recommendation is what content is relevant for a user.
+
+### What makes ML hard
+
+- Need to convert a domain into math (floats, and functions operating on floats). Each of these conversions is lossy with subteties that have unexpected impact.
+- Data drifts over time for reasons that are unclear to your system
+- Search post for #ml_art
 
 ### Understand Netflix (collect user behavior and present recommendations)
 
