@@ -47,15 +47,46 @@ And my advice to folks in their 20s - [Which I gave as a talk for the Amazon Int
 
 I'm workign on this talk, give me content!
 
-https://docs.google.com/document/d/11bI6nV3tOxZzRlN6L8-RPx4m1_SXoaVGalmoZdlZBGI/edit#
+<https://docs.google.com/document/d/11bI6nV3tOxZzRlN6L8-RPx4m1_SXoaVGalmoZdlZBGI/edit>#
 
 ### 40s - Focus on what you do like
+
+- This is your peak earnings, and peak productivity. You've got maximum experience and minimal mental decline.
+- Your body is no longer foregiving of incorrect movements, and healing is much harder.
+- The health debt you likely took on in your 30s need to be paid back otherwise you'll degrade quickly.
+- As you get older, you will decline, the work you do in your 40s will be the starting point for your decline, and simultainously impact your rate of decline.
+
+{%include summarize-page.html src="/physical-health" %}
+{%include summarize-page.html src="/diet" %}
 
 ### 50s - Don't know yet
 
 ### 60s - Don't know yet
 
 ## What I wish I knew when my kids
+
+Read the [prophet on children](https://www.amazon.com//dp/0394404289/):
+
+_Your children are not your children.
+They are the sons and daughters of Life’s longing for itself.
+They come through you but not from you,
+And though they are with you yet they belong not to you._
+
+_You may give them your love but not your thoughts,
+For they have their own thoughts._
+
+_You may house their bodies but not their souls,
+For their souls dwell in the house of tomorrow, which you cannot visit, not even in your dreams._
+
+_You may strive to be like them, but seek not to make them like you.
+For life goes not backward nor tarries with yesterday._
+
+_You are the bows from which your children as living arrows are sent forth._
+
+_The archer sees the mark upon the path of the infinite, and He bends you with His might that His arrows may go swift and far._
+
+_Let your bending in the archer’s hand be for gladness;
+For even as He loves the arrow that flies, so He loves also the bow that is stable._
 
 ### were new
 
@@ -65,7 +96,12 @@ https://docs.google.com/document/d/11bI6nV3tOxZzRlN6L8-RPx4m1_SXoaVGalmoZdlZBGI/
 
 ### were two
 
+- To you, your kids will be dismmisive and disrepectful. To see your influence, go watch them describe you to their friends. You'll often be on a pedestal.
+- Do don't tell. They can tell when you do stuff.
+
 ### were teens
+
+- They are human, your best best is treat them like adults.
 
 ### were adults
 
@@ -81,10 +117,10 @@ Their progression is student, househodler, forrest dweller and
 
 In [Don Juan's Philophy](/don-juan) the stages are: [Fear, Arrogrance, Authority and Old Age](/don-juan).
 
-### Coming of age ceremonies.
+### Coming of age ceremonies
 
 - Bar Mitzvah's
 - Marriage
 - Graduations
 
-### Every article I've written evolves over time.
+### Every article I've written evolves over time
