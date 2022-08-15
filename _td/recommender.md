@@ -195,8 +195,8 @@ Given two things (people or items), how similar or different are they, 1 is the 
 There are multiple ways to measure, and depends on the representation of the thing, and the domain (#ml_art)
 
 - Jaccard Distance -
-- Pearson Correlation Coefficient
-- Cosine Similarity
+- Pearson Correlation Coefficient -
+- Cosine Similarity -
 
 ### Collaborative Filtering
 
