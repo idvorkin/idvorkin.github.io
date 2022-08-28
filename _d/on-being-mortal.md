@@ -18,8 +18,7 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-    - [Before we start ... my last year](#before-we-start--my-last-year)
-
+- [My last year](#my-last-year)
 - [The book](#the-book)
     - [Introduction](#introduction)
     - [The Independent Self](#the-independent-self)
@@ -33,7 +32,7 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
     - [Courage](#courage)
 - [Statistics](#statistics)
     - [Death Rates by Cause](#death-rates-by-cause)
-    - [Probabily of death given current age](#probabily-of-death-given-current-age)
+    - [Probability of death given current age](#probability-of-death-given-current-age)
 - [When I get old](#when-i-get-old)
 - [Quotes](#quotes)
 - [Other resources](#other-resources)
@@ -41,7 +40,9 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-### Before we start ... my last year
+## My last year
+
+Before we get into it, lets see my aspirations for my last year.
 
 {%include summarize-page.html src='/last-year' %}
 
@@ -109,9 +110,9 @@ Get the raw data from:
 - Download [Excel](https://1drv.ms/x/s!Ap6_JgmVeSWShucCfjXvgzVyAeRA8A?e=QXhv3o)
 - A similar graph from the [CDC](https://www.cdc.gov/injury/images/lc-charts/leading_causes_of_death_by_age_group_2017_1100w850h.jpg)
 
-### Probabily of death given current age
+### Probability of death given current age
 
-Death://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/68_07/Table01.xlsx
+[Death](https://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/68_07/Table01.xlsx)
 
 <div class="ratio ratio-16x9">
 <iframe class="embed-responsive" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIOa5Jwg06iWzeKodwg3SMs5O1xI21GsSCEV5WB1_kLPvZTaQCOti8hgObhqgV4w/pubhtml?gid=881982232&amp;single=true&amp;widget=true&amp;headers=false" style="height:400px"></iframe>
