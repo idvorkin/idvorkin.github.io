@@ -18,6 +18,8 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+    - [Before we start ... my last year](#before-we-start--my-last-year)
+
 - [The book](#the-book)
     - [Introduction](#introduction)
     - [The Independent Self](#the-independent-self)
@@ -38,6 +40,10 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+### Before we start ... my last year
+
+{%include summarize-page.html src='/last-year' %}
 
 ## The book
 
