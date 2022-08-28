@@ -29,6 +29,7 @@
         "/books": "/books-that-defined-me",
         "/boss": "/being-a-great-manager",
         "/Business-Model-You": "/bmy",
+        "/centenarian": "/last-year",
         "/classact": "/class-act",
         "/coach": "/coaching",
         "/Coaching-Questions": "/coaching",
@@ -74,6 +75,7 @@
         "/habit": "/d/habits",
         "/habits": "/d/habits",
         "/happiness": "/happy",
+        "/healthspan": "/last-year",
         "/humanity": "/touching",
         "/idle-loop": "/idle",
         "/imposter": "/insecure",
@@ -116,6 +118,7 @@
         "/psych-safety": "/insecure",
         "/psychological-safety": "/insecure",
         "/rage": "/anger",
+        "/ranking": "/recommend",
         "/rca": "/coe",
         "/recommender": "/recommend",
         "/remote": "/remote-work",
@@ -132,8 +135,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/taxes": "/money",
@@ -208,7 +209,7 @@
                 "/win-win"
             ],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/7h-concepts": {
             "py/object": "__main__.Page",
@@ -493,6 +494,7 @@
                 "/affirmations",
                 "/anxiety",
                 "/d/habits",
+                "/frog",
                 "/idle",
                 "/siy"
             ],
@@ -669,15 +671,17 @@
             "py/object": "__main__.Page",
             "url": "/chapters",
             "title": "Think of your life as a series of chapters",
-            "description": "Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22 year old, and what you need as a 42 year old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of ap\n\n",
+            "description": "Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22 year old, and what you need as a 42 year old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.\n\n",
             "file_path": "_site/chapters.html",
             "outgoing_links": [
+                "/diet",
                 "/enemy",
+                "/physical-health",
                 "/what-i-wish-knew-at-22"
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 14000
+            "doc_size": 16000
         },
         "/class-act": {
             "py/object": "__main__.Page",
@@ -782,9 +786,12 @@
             "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
             "file_path": "_site/curious.html",
             "outgoing_links": [
+                "/first-understand",
                 "/getting-to-yes",
                 "/mental-pain",
-                "/shame"
+                "/shame",
+                "/siy",
+                "/win-win"
             ],
             "incoming_links": [
                 "/90days",
@@ -792,6 +799,7 @@
                 "/being-a-great-manager",
                 "/class-act",
                 "/coaching",
+                "/essentialism",
                 "/first-understand",
                 "/getting-to-yes",
                 "/getting-to-yes-with-yourself",
@@ -801,7 +809,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/d/2010-2-15-2016-Misc-Uncategorized": {
             "py/object": "__main__.Page",
@@ -1052,13 +1060,14 @@
             "description": "It’s FISM (olympics of magic), and I’m going to Quebec city to reenergize my love of magic, since I’m already in Canada I’ll also spend time with My Mom, Sister, and college room mate.\n\n",
             "file_path": "_site/d/time-off-07-2022.html",
             "outgoing_links": [
+                "/essentialism",
                 "/happy",
                 "/recommend",
                 "/timeoff"
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 24000
         },
         "/d/time-off-11-2021": {
             "py/object": "__main__.Page",
@@ -1120,7 +1129,7 @@
             "py/object": "__main__.Page",
             "url": "/d/where-have-all-the-bugs-gone",
             "title": "Where have all the bugs gone",
-            "description": "I’ve been a software developer since 2001, and back then we used to have lots of bugs. Now a days, it seems we don’t have bugs, and I’ve wondered why. Now we have tickets which we get from our systems running in operations, but that’s quite different. What’s going on?\n\n",
+            "description": "I’ve been a software developer since 2001, and back then we used to have lots of bugs. Nowadays, it seems we don’t have bugs, and I’ve wondered why. Now we have tickets which we get from our systems running in production, but that’s quite different. What’s going on?\n\n",
             "file_path": "_site/d/where-have-all-the-bugs-gone.html",
             "outgoing_links": [],
             "incoming_links": [],
@@ -1133,9 +1142,13 @@
             "title": "On being Mortal - Guess what? You're dying",
             "description": "Bad news, you’re dying, so is everyone else. Good news, if we didn’t die we’d run out of resources, and our kids would be screwed. Bad news, our health care system is optimized for keeping you alive, not for maximizing the enjoyable time you have on earth. Good news, knowing is half the battle - armed with this knowledge you can decide how you want to die, which is ultimately how you want to live.\n\n",
             "file_path": "_site/death.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/igors-last-year",
+                "/last-year"
+            ],
             "incoming_links": [
                 "/covid",
+                "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
             ],
@@ -1253,6 +1266,7 @@
                 "/physical-health"
             ],
             "incoming_links": [
+                "/chapters",
                 "/operating-manual",
                 "/physical-health",
                 "/sharpen-the-saw"
@@ -1309,6 +1323,17 @@
             "redirect_url": "",
             "doc_size": 21000
         },
+        "/e1": {
+            "py/object": "__main__.Page",
+            "url": "/e1",
+            "title": "Igor's Identity",
+            "description": "\n\n",
+            "file_path": "_site/e1.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "doc_size": 10000
+        },
         "/emotional-health": {
             "py/object": "__main__.Page",
             "url": "/emotional-health",
@@ -1321,6 +1346,7 @@
                 "/voices"
             ],
             "incoming_links": [
+                "/essentialism",
                 "/irl",
                 "/mind-at-work",
                 "/operating-manual",
@@ -1340,7 +1366,9 @@
                 "/7-habits",
                 "/dip",
                 "/essentialism",
-                "/eulogy"
+                "/eulogy",
+                "/joy",
+                "/touching"
             ],
             "incoming_links": [
                 "/7-habits",
@@ -1350,7 +1378,7 @@
                 "/siy"
             ],
             "redirect_url": "",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/enemy": {
             "py/object": "__main__.Page",
@@ -1372,18 +1400,25 @@
             "py/object": "__main__.Page",
             "url": "/essentialism",
             "title": "Essentialisim",
-            "description": "Essentialism is deciding what goes on your todo list, not how many things you can cross off. Being an essentialist means you say ‘I choose to’ not ‘I have to’, ‘Only a few things matter’, not ‘all things matter’ and ‘I will do one thing’, not ‘I will do both’. The essential questions are ‘How do I know when I’m done’, ‘If I didn’t own this, would I buy it?’, ‘If I didn’t have this opportunity what would I do to acquire it?’\n\n",
+            "description": "Essentialism is deciding what goes on your todo list, not how many things you can cross off. Being an essentialist means you say ‘I choose to’ not ‘I have to’, ‘Only a few things matter’, not ‘all things matter’ and ‘I will do one thing’, not ‘I will do both’. The essential questions are ‘How do I know when I’m done?’, ‘If I didn’t own this, would I buy it?’, ‘If I didn’t have this opportunity what would I do to acquire it?’\n\n",
             "file_path": "_site/essentialism.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/curious",
+                "/emotional-health",
+                "/insomnia",
+                "/physical-health"
+            ],
             "incoming_links": [
                 "/affirmations",
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
+                "/d/time-off-07-2022",
                 "/end-in-mind",
                 "/first-things-first",
                 "/frog",
-                "/gtd"
+                "/gtd",
+                "/timeoff"
             ],
             "redirect_url": "",
             "doc_size": 37000
@@ -1481,7 +1516,7 @@
                 "/frog"
             ],
             "redirect_url": "",
-            "doc_size": 17000
+            "doc_size": 20000
         },
         "/first-understand": {
             "py/object": "__main__.Page",
@@ -1501,6 +1536,7 @@
                 "/7-habits",
                 "/affirmations",
                 "/class-act",
+                "/curious",
                 "/getting-to-yes",
                 "/sell"
             ],
@@ -1515,6 +1551,7 @@
             "file_path": "_site/frog.html",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
+                "/be-proactive",
                 "/d/resistance",
                 "/essentialism",
                 "/eulogy",
@@ -1582,7 +1619,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/gpt": {
             "py/object": "__main__.Page",
@@ -1780,7 +1817,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/activation",
-                "/depression"
+                "/depression",
+                "/essentialism"
             ],
             "redirect_url": "",
             "doc_size": 13000
@@ -1878,6 +1916,7 @@
             "incoming_links": [
                 "/affirmations",
                 "/build-bubble-bike",
+                "/end-in-mind",
                 "/happy",
                 "/hobby",
                 "/magic",
@@ -1885,6 +1924,21 @@
             ],
             "redirect_url": "",
             "doc_size": 20000
+        },
+        "/last-year": {
+            "py/object": "__main__.Page",
+            "url": "/last-year",
+            "title": "Health span, compressed morbidity and being the grandfather",
+            "description": "Bad news, you’ve got a last year on earth. Good news, if you’re lucky you’ll accept that “grand father dies, father dies, son dies” is the best blessing you can have (imagine a different ordering). If you’re luckier, you’ll have age appropriate health right up till that last year, or even better that last few months. If you’re even luckier you’ll have the strength to do what you want in your personal “centenarian Olympics”.\n\n",
+            "file_path": "_site/last-year.html",
+            "outgoing_links": [
+                "/death"
+            ],
+            "incoming_links": [
+                "/death"
+            ],
+            "redirect_url": "",
+            "doc_size": 13000
         },
         "/like-switch": {
             "py/object": "__main__.Page",
@@ -2097,7 +2151,7 @@
                 "/td/stats"
             ],
             "redirect_url": "",
-            "doc_size": 44000
+            "doc_size": 46000
         },
         "/moments": {
             "py/object": "__main__.Page",
@@ -2195,6 +2249,7 @@
                 "/bike",
                 "/covid",
                 "/d/habits",
+                "/d/timeoff-07-2022",
                 "/diet",
                 "/emotional-health",
                 "/eulogy",
@@ -2215,7 +2270,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 24000
+            "doc_size": 25000
         },
         "/pandas": {
             "py/object": "__main__.Page",
@@ -2264,8 +2319,10 @@
                 "/tech-health-toys"
             ],
             "incoming_links": [
+                "/chapters",
                 "/depression",
                 "/diet",
+                "/essentialism",
                 "/eulogy",
                 "/irl",
                 "/operating-manual",
@@ -2379,7 +2436,7 @@
             "py/object": "__main__.Page",
             "url": "/recommend",
             "title": "Recommender Systems",
-            "description": "My explorations of recommender systems, heavly based on the superb book Practical Recommender Systems\n\n",
+            "description": "My explorations of recommender and ranking systems, heavly based on the superb book Practical Recommender Systems\n\n",
             "file_path": "_site/recommend.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -2387,7 +2444,7 @@
                 "/ml"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 29000
         },
         "/reflect-tool": {
             "py/object": "__main__.Page",
@@ -2528,6 +2585,7 @@
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/coaching",
+                "/curious",
                 "/depression",
                 "/emotional-health",
                 "/eulogy",
@@ -2820,7 +2878,7 @@
                 "/writing"
             ],
             "redirect_url": "",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/td/ios-nomad": {
             "py/object": "__main__.Page",
@@ -3069,6 +3127,7 @@
             "outgoing_links": [
                 "/addiction",
                 "/d/resistance",
+                "/essentialism",
                 "/eulogy",
                 "/frog",
                 "/happy",
@@ -3086,7 +3145,7 @@
                 "/td/time-off-3-2020"
             ],
             "redirect_url": "",
-            "doc_size": 18000
+            "doc_size": 27000
         },
         "/todo_enjoy": {
             "py/object": "__main__.Page",
@@ -3129,6 +3188,7 @@
                 "/magic"
             ],
             "incoming_links": [
+                "/end-in-mind",
                 "/siy"
             ],
             "redirect_url": "",
@@ -3271,6 +3331,7 @@
             ],
             "incoming_links": [
                 "/7-habits",
+                "/curious",
                 "/getting-to-yes",
                 "/sell",
                 "/voices"
