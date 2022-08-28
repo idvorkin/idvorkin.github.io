@@ -27,10 +27,12 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
     - [A Better Life](#a-better-life)
     - [Letting Go](#letting-go)
     - [Hard Conversations](#hard-conversations)
+    - [Health span vs lifespan](#health-span-vs-lifespan)
     - [Courage](#courage)
 - [Statistics](#statistics)
     - [Death Rates by Cause](#death-rates-by-cause)
     - [Probabily of death given current age](#probabily-of-death-given-current-age)
+- [When I get old](#when-i-get-old)
 - [Quotes](#quotes)
 - [Other resources](#other-resources)
 
@@ -62,6 +64,8 @@ With luck and fastidiousness—eating well, exercising, keeping our blood pressu
 ### Letting Go
 
 ### Hard Conversations
+
+### Health span vs lifespan
 
 ### Courage
 
@@ -106,6 +110,10 @@ Death://ftp.cdc.gov/pub/Health_Statistics/NCHS/Publications/NVSR/68_07/Table01.x
 <div class="ratio ratio-16x9">
 <iframe class="embed-responsive" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTIOa5Jwg06iWzeKodwg3SMs5O1xI21GsSCEV5WB1_kLPvZTaQCOti8hgObhqgV4w/pubhtml?gid=881982232&amp;single=true&amp;widget=true&amp;headers=false" style="height:400px"></iframe>
 </div>
+
+## When I get old
+
+{%include summarize-page.html src='/igors-last-year' %}
 
 ## Quotes
 
