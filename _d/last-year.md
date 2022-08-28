@@ -9,7 +9,7 @@ redirect_from:
   - /fatality
 ---
 
-Bad news, you've got a last year on earth. Good news, if you're lucky you'll accept that "grand father dies, father dies, son dies" is the best blessing you can have (imagine a different ordering). If you're luckier, you'll have age appropriate health right up till that last year, or even better that last few months. If you're even luckier you'll have the strength to do what you want your personal "centenarian Olympics".
+Bad news, you've got a last year on earth. Good news, if you're lucky you'll accept that "grand father dies, father dies, son dies" is the best blessing you can have (imagine a different ordering). If you're luckier, you'll have age appropriate health right up till that last year, or even better that last few months. If you're even luckier you'll have the strength to do what you want in your personal "centenarian Olympics".
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -40,14 +40,14 @@ Now watch this ...
 
 ## Centarian Olympics
 
-Compressed Morbidity. Ideally you'll stay healthy till the very end. What does that mean when you're a 100? It means you have the strength to do the functional things you'd like. So what should we call this set of activities? How about the [Centarian Olympics](https://peterattiamd.com/how-to-train-for-the-centenarian-olympics/), containing the following activities:
+Compressed Morbidity. Ideally you'll stay healthy till the very end. What does that mean when you're a 100? It means you have the strength to do the functional things you'd like. So what should we call this set of activities? How about the [Centenarian Olympics](https://peterattiamd.com/how-to-train-for-the-centenarian-olympics/), containing the following activities:
 
 - Lift my 40 year old grand kid
 - Go for a 1 hour walk
 - Get off the ground with 1 hand (otherwise can't play on the floor)
 - Carry 2 grocery bags
 
-This is a great idea from Peter Attia. Those things sound awefully easy you think, except:
+This is a great idea from Peter Attia. Those things sound awfully easy you think, except:
 
 ### The Inverted Parabola of Health
 
@@ -55,11 +55,11 @@ Regardless of your training, your health will be parabolic, initially your train
 
 $$ Health(YearsPastPeak) = HealthAtPeak -  \sum_{n=PeakYear}^{PeakYear+YearsPastPeak} HealthDecline(n)$$
 
-Your body decline is envitable, you can control 2 things. 1/ Your starting health, 2/ Your rate of decline.
+Your body decline is inevitable, you can control 2 things. 1/ Your starting health, 2/ Your rate of decline.
 
 ### Your peak health age
 
-You want to train as hard as you can till you peak. The better your starting position the more room you have for the inevtible decline.
+You want to train as hard as you can till you peak. The better your starting position the more room you have for the inevitable decline.
 
 ### Your rate of decline
 
