@@ -53,8 +53,7 @@ This is a great idea from Peter Attia. Those things sound awefully easy you thin
 
 Regardless of your training, your health will be parabolic, initially your training will make your health positive, then it will be neutral and then it will decline. Once you're on the downward curve, it'll look like the following:
 
-$$ Health(YearsPastPeak) = HealthAtPeak - HealthDecline(YearsPastPeak) $$
-$$ HealthDecline(YearsPastPeak) = NonLinearStepFunction $$
+$$ Health(YearsPastPeak) = HealthAtPeak -  \sum_{n=PeakYear}^{PeakYear+YearsPastPeak} HealthDecline(n)$$
 
 Your body decline is envitable, you can control 2 things. 1/ Your starting health, 2/ Your rate of decline.
 
@@ -75,5 +74,3 @@ You can't stop your decline but you can slow it down. Same as the plan to build 
 ### Aerobic (Zone 2)
 
 ### Anaerobic (Zone 5)
-
-Bleh ..
