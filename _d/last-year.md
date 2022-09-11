@@ -42,7 +42,7 @@ Now watch this ...
 
 Compressed Morbidity. Ideally you'll stay healthy till the very end. What does that mean when you're a 100? It means you have the strength to do the functional things you'd like. So what should we call this set of activities? How about the [Centenarian Olympics](https://peterattiamd.com/how-to-train-for-the-centenarian-olympics/), containing the following activities:
 
-- Lift my 40 year old grand kid
+- Lift my 4 year old grand kid
 - Go for a 1 hour walk
 - Get off the ground with 1 hand (otherwise can't play on the floor)
 - Carry 2 grocery bags
