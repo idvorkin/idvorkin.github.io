@@ -18,6 +18,7 @@ A hodgepodge of additional resources for the manager book.
 - [Amazon's leadership principles](#amazons-leadership-principles)
 - [A few Igorisms](#a-few-igorisms)
 - [Laws to remember](#laws-to-remember)
+- [How you need to communicate differently](#how-you-need-to-communicate-differently)
 - [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
     - [Piniata](#piniata)
     - [A project is car with a EM, PM and TL](#a-project-is-car-with-a-em-pm-and-tl)
@@ -148,6 +149,24 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 - **Peter Principle** - People will rise till they become incompetent
 - **Parkinson's Law of Triviality - (Bike Shedding)** Members of an organization give disproportionate weight to trivial issues. A nuclear power plant funding committee focus most time on how to paint the bike shed since it's easy, and they feel they are providing value
 - **Yak Shaving** - Not a law but a great term for when you go down the [rabbit hole](https://americanexpress.io/yak-shaving/) going several steps away from the task at hand (a common cause for the delay in Parkinson's Law)
+
+### How you need to communicate differently
+
+From Ian Tien:
+
+When you're promoted, you have more power and less dexterity.
+
+You have to be more careful about what you say and how you say it, because the risk of misinterpretation can materially increase.
+
+With each promotion, imagine putting on an additional pair of gloves. So managers get driving gloves, directors get ski gloves, VP/C-Suite get boxing gloves, and a CEO gets cheer-leading pom-poms.
+
+This represents the increased complexity of communication in your new role, because you have more power.
+
+When you're in meetings, in channels, or on email, you need to think about how everyone around you will process what you say as a manager/director/exec.
+
+The most dangerous thing you can do is the "ah shucks, I'm the same person I always was..." because that's not how the organization will view you, and you can create all sorts of unintended consequences.
+
+You have more power. Be responsible with it.
 
 ### Analogies to be fleshed out
 
