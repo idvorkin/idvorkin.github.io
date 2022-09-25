@@ -15,7 +15,7 @@ Open System Preferences, find the “Security & Privacy” pane, click on the �
 You'll also need to make sure you've enabled full cloud syncing if your message history is truncated
 
 iMessage -> Preferences -> Imessage -> settings (Apple Id -> Enable Messages is iCloud) , grayed out sync now button.
-<https://www.mackungfu.org/HowtomakesureyourMacisusingMessagesiniCloud#:~:text=Ensure%20you>'ve%20selected%20the,and%20you%20can%20click%20it.
+<https://www.mackungfu.org/HowtomakesureyourMacisusingMessagesiniCloud>
 
 iMessage is just a sqllite file located @
 
