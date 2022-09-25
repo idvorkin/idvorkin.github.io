@@ -1,3 +1,5 @@
+# Try to install ffi first - not sure what works and what doesn't
+# here.
 source 'https://rubygems.org'
 gem 'wdm'
 gem 'webrick'
