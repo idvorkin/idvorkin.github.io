@@ -31,9 +31,9 @@ Perhaps the thing to think about instead of how to change the habit, is how to c
 | State    | Description                      |
 | -------- | ---------------------------   |
 | Cue      | Thinking about Work |
-| Craving  | Know I'm already doing my best at work, and make sure I don't lose anything |
-| Response | Write down what I'm thinking so I can process it when I'm at work, or realize I'm already have that in plan|
-| Reward   | Feel confident I'm not missing anything |
+| Craving  | Not miss a work insight, not spending more time at work then I want|
+| Response | Write down what I'm thinking so I can process it when I'm at work, or realize I'm already have it in plan|
+| Reward   | Feel confident I'm not missing anything and I'm putting the right investment into work|
 
 Imagine if you had to work 80 hours a week, every week, but you wasted 40 of those hours being stuck and making no progress. That's what happens when my body is at home, but my mind is at work. It's obvious this flares up when things are going poorly at work, and non-obvious when things are going well. Having my mind at work is a waste - my life outside of work suffers, and no work is competed. Ironically, work suffers because you never clear your head.
 
