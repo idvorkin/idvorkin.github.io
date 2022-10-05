@@ -20,7 +20,7 @@ A habit model looks like the below, need to flesh this out..
 | State    | Description                      | Change             |
 | -------- | --------------------------- | -------------------- |
 | Cue      | Sit in my chair at home  | Make it invisible    |
-| Craving  | Solve my work problems  | Make it displeasing  |
+| Craving  | Make progress on my work  | Make it displeasing  |
 | Response | Thinking About work , often spinning |  Make it hard         |
 | Reward   | Don't think there is one anymore but back in the day solving a problem | Make it unsatisfying |
 
@@ -31,7 +31,7 @@ Perhaps the thing to think about instead of how to change the habit, is how to c
 | State    | Description                      |
 | -------- | ---------------------------   |
 | Cue      | Thinking about Work |
-| Craving  | Know I'm already exerting my optimum Performance at work |
+| Craving  | Know I'm already doing my best at work, and make sure I don't lose anything |
 | Response | Write down what I'm thinking so I can process it when I'm at work, or realize I'm already have that in plan|
 | Reward   | Feel confident I'm not missing anything |
 
