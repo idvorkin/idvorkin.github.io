@@ -111,6 +111,9 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [What are your thoughts on a PIP](#what-are-your-thoughts-on-a-pip)
     - [How do you deal with people performance issues](#how-do-you-deal-with-people-performance-issues)
     - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
+- [Team Insecurity](#team-insecurity)
+    - [Everyone wants to feel good, support each other](#everyone-wants-to-feel-good-support-each-other)
+    - [Maintain perspective](#maintain-perspective)
 - [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
     - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
     - [Telling the team](#telling-the-team)
@@ -1282,6 +1285,30 @@ Then there's a formal PIP. Depends on your company but very similar to above, bu
   - Clarify expectations
   - Provide a short term lowering of expectations
   - Consider LOA or accommodations as appropriate
+
+## Team Insecurity
+
+* Very common situtatoin
+* Team feels nothing they/EM can do - but that's completely wrong!!
+
+### Everyone wants to feel good, support each other
+
+ Happiness is a choice!
+
+Every day I walk past a begger, he only has 1 leg, and like 6 teeth, but he's always smiling. Wet or dry, snow or sun, always a beaming mostly toohtless smile. One day I ask him "Hey man, i gotta ask, why are you always so positive"? And he answered.
+
+"Look, every day I have a choice, I can be happy or miserable" - why would I chooose miserable?
+
+Now, as a team we want to support each other, lets help each other by reminding each other of these things and the importance of choosing happiness.
+
+
+### Maintain perspective
+
+* When there's  mental pain, time bound shrinks, as does all the attributes
+* Share all the good stuff and big pcitures
+* Extra focus on appreciation
+* Increase Time Rang
+* Be Patient
 
 ## Charters, Re-orgs and Bootstrapping
 
