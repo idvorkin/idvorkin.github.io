@@ -99,7 +99,7 @@ My discipline is strong in the morning, but by the time I get home from work, I'
 
 * I can fight my lack of will power with a schedule.
 * Current schedule, 1 day Zach date, 1 day Amelia date, 1 day friend date
-* Get a healthy snack - popcorn or vegtables (not a huge container of fruit)
+* Get a healthy snack - popcorn or vegetables (not a huge container of fruit)
 
 ### Post work Kryptonite
 
@@ -287,3 +287,4 @@ At the end of 2016, I joined [Amazon](/amazon) to learn the business of software
 I spent a lot of time learning to be a manager, and am [writing a book, or really notes to myself](/manager-book).
 
 {%include summarize-page.html src="/manager-book" %}
+
