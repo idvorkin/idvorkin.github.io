@@ -988,6 +988,7 @@
                 "/hobby",
                 "/idle",
                 "/manager-book",
+                "/mind-at-work",
                 "/operating-manual",
                 "/productive",
                 "/psychic-weight",
@@ -2028,7 +2029,7 @@
                 "/software-leadership-roles"
             ],
             "redirect_url": "",
-            "doc_size": 114000
+            "doc_size": 115000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -2045,7 +2046,7 @@
                 "/manager-book"
             ],
             "redirect_url": "",
-            "doc_size": 24000
+            "doc_size": 26000
         },
         "/mental-pain": {
             "py/object": "__main__.Page",
@@ -2104,6 +2105,7 @@
             "file_path": "_site/mind-at-work.html",
             "outgoing_links": [
                 "/addiction",
+                "/d/habits",
                 "/emotional-health",
                 "/timeoff"
             ],
@@ -2111,7 +2113,7 @@
                 "/timeoff"
             ],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 15000
         },
         "/mind-monsters": {
             "py/object": "__main__.Page",
@@ -2270,7 +2272,7 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 25000
+            "doc_size": 26000
         },
         "/pandas": {
             "py/object": "__main__.Page",
@@ -2842,7 +2844,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/td/fix_ssh": {
             "py/object": "__main__.Page",
