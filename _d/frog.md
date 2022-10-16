@@ -3,6 +3,7 @@ layout: post
 title: "Eat that frog"
 
 permalink: /frog
+aliases: ["frog","eat-that-frog","procrastinate","procrastination"]
 redirect_from:
   - /eat-that-frog
   - /procrastinate

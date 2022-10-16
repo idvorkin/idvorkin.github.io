@@ -5,7 +5,7 @@ date: "2018-04-21 00:27:22 Pacific Daylight Time"
 comments: true
 inprogress: true
 permalink: /magic
-aliases=["/magic"]
+aliases: ["/magic"]
 tags:
   - how igor ticks
 ---
