@@ -25,6 +25,7 @@ class Page:
     outgoing_links: List[PathType]
     incoming_links: List[PathType]
     redirect_url: PathType = PathType("")
+    markdown_path: PathType = PathType("")
     doc_size: int = 0
 
     def has_redirect(self):
@@ -133,8 +134,12 @@ class LinkBuilder:
             # cut down on small changes to backlinks when minor file changes
             rounded_len = len(contents) - len(contents) % 1000
 
+            markdownPathTag = soup.find("meta", property="markdown-path")
+            markdownPath = markdownPathTag["content"] if markdownPathTag else ""
+
             return Page(
                 title=pageTitle,
+                markdown_path=markdownPath,
                 description=description,
                 url=canonicalUrl,
                 file_path=file_path,

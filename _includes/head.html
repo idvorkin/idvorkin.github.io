@@ -15,7 +15,7 @@
 </title>
 
 {% if page.date %}
-  <meta property="date" content="{{page.date}}"/> 
+  <meta property="date" content="{{page.date}}"/>
 {% endif %}
 
 {% if page.tags %}
@@ -44,6 +44,7 @@ else %}
 {% endif %}
 
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="markdown-path" content="{{ page.path }}" />
 
 {% if page.imagefeature %}
     {% assign image_url = page.imagefeature %} {% elsif
