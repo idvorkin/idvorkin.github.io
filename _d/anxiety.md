@@ -3,6 +3,7 @@ layout: post
 title: "Anxiety, the gap between reality and expectations"
 tags:
 permalink: /anxiety
+aliases: ["/anxiety","/anxious"
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun-depression.png
 redirect_from:
   - /anxious
