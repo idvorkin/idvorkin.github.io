@@ -2,6 +2,7 @@
 layout: post
 title: "Gratefulnes"
 permalink: /grateful
+alias: /grateful
 ---
 
 Gratefulness exercises work - here's somethings to help.
