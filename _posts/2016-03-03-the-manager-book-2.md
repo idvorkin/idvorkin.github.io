@@ -122,7 +122,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
     - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
-    - [Insufficient progress -  To double down or pivot](#insufficient-progress----to-double-down-or-pivot)
+    - [Insufficient progress -  Double down or pivot](#insufficient-progress----double-down-or-pivot)
 - [Personal Motivations](#personal-motivations)
     - [Why do you find management attractive](#why-do-you-find-management-attractive)
     - [What is your dream job](#what-is-your-dream-job)
@@ -1458,37 +1458,53 @@ This is pretty similar to the whole team getting a new job, and [the first 90 da
 
 A great way to do this is set the team up to do spikes on the major work items, this will overcome the above concerns, building knowledge and motivating the early wins.
 
-### Insufficient progress -  To double down or pivot
+### Insufficient progress -  Double down or pivot
 
-When progress is insufficient, there are two situations, both in a painful state, with similar symptoms:
+When progress is insufficient, there are two situations, both painful, with overlapping symptoms, and some shared requirements.
 
-1/ Progress towards goals is slower than expected
-2/ Team is demotivated
+1/ You believe the charter can still be successful, but needs more time due to execution gaps/insufficient progress/insufficient resources.
 
-1/ You believe it can still be successful, but there have been Execution Gaps/Insufficient Progress/Insufficient resources.
-
-2/ You no longer believe the space can be successful
+2/ You no longer believe the space can be successful.
 
 Both 1/ and 2/ can be subjective, and there can be disagreement, but an objective criteria can help establish this.
 
-**Space can be successful - just hasn't yet**
+**Symptoms:**
 
-This is often a result of execution difficulties, or underestimating the difficulties of a space.
+1/ Progress towards goals is slower than expected.
+2/ Team is demotivated - the team knows the goals, and they know they aren't making progress.
 
+**Communications:**
+
+1/ Surprises are bad - you need a plan, and to let your leadership and partners know what is going on, and time till you'll have a plan.
+2/ You need to let the team know what is going on, and that a plan of action is happening to make it right.
+
+**Space can be successful, just hasn't yet - hold the course**
+
+This is often a result of execution difficulties, or underestimating the difficulties of progress in a space. Action depends on the situation.
+
+If there are sufficient resources, and there is high probability success is likely - this section is in roadmapping and execution.
+
+If there are insufficient resources, or resources are blocked - consider the space can not be successful playbook.
 
 **Space can not be successful, or can't be successful in a reasonable time frame**
 
-This is a very painful situation. The team has invested significantly: emotionally and through your work and a drastic change is required.
+This will be a painful situation. The team has invested significantly: emotionally and through their work and a drastic change is required. The team and the manager will have a desire for wishful thinking, but that must be avoided as additional investment is waste of resources, often the sunk cost fallacy.
 
-In this, case you need to "declare success", wrap up the work and move on.
+In these situations, you need to "declare success", wrap up the work and move on.
 
-In the best case, this discovery will be made as part of the normal rhythm of business with sufficient lead time so a a clear set of new projects to transition onto are found, and the team can wrap up their current work, and switch to the new work on their roadmap.
+In the best case, this decision will be made as part of the normal rhythm of business with sufficient lead time so a a clear set of new projects to transition onto are found, and the team can wrap up their current work, and switch to the new work on their roadmap without any disruption except for feeling bad their previous work didn't work out as well as they had hoped.
 
-However, frequently you don't get the best case, and you need to make a change before more time is spent on the fixed cost fallacy.
+In a common case, the decision will be suddenly, often with an edict from leadership to take immediate action. In this case, the priorities are:
 
-any additional resources spent on the project are lost, it's now a sunk cost fallacy. This can be especially
+* Manage comms with the team - decide when to tell folks, see some of the re-org discussions
+* Negotiate a transition period with leadership.
+* Figure out an interim roadmap till longer term work can be found
+* Figure out how to wrap up work, and ensure fair credit attributed to work in progress.
+* This is a highly emotional situation support the team, and yourself.
 
 
+NOTES:
+    - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
 
 ## Personal Motivations
 
