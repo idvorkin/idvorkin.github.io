@@ -122,6 +122,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
     - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
+    - [Insufficient progress -  To double down or pivot](#insufficient-progress----to-double-down-or-pivot)
 - [Personal Motivations](#personal-motivations)
     - [Why do you find management attractive](#why-do-you-find-management-attractive)
     - [What is your dream job](#what-is-your-dream-job)
@@ -1456,6 +1457,38 @@ This is pretty similar to the whole team getting a new job, and [the first 90 da
 - Knowledge: Know critical parts of business, tech, org.
 
 A great way to do this is set the team up to do spikes on the major work items, this will overcome the above concerns, building knowledge and motivating the early wins.
+
+### Insufficient progress -  To double down or pivot
+
+When progress is insufficient, there are two situations, both in a painful state, with similar symptoms:
+
+1/ Progress towards goals is slower than expected
+2/ Team is demotivated
+
+1/ You believe it can still be successful, but there have been Execution Gaps/Insufficient Progress/Insufficient resources.
+
+2/ You no longer believe the space can be successful
+
+Both 1/ and 2/ can be subjective, and there can be disagreement, but an objective criteria can help establish this.
+
+**Space can be successful - just hasn't yet**
+
+This is often a result of execution difficulties, or underestimating the difficulties of a space.
+
+
+**Space can not be successful, or can't be successful in a reasonable time frame**
+
+This is a very painful situation. The team has invested significantly: emotionally and through your work and a drastic change is required.
+
+In this, case you need to "declare success", wrap up the work and move on.
+
+In the best case, this discovery will be made as part of the normal rhythm of business with sufficient lead time so a a clear set of new projects to transition onto are found, and the team can wrap up their current work, and switch to the new work on their roadmap.
+
+However, frequently you don't get the best case, and you need to make a change before more time is spent on the fixed cost fallacy.
+
+any additional resources spent on the project are lost, it's now a sunk cost fallacy. This can be especially
+
+
 
 ## Personal Motivations
 
