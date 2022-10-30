@@ -26,6 +26,7 @@ pain of anxiety is designed for threatening circumstance drawing your attention 
 - [Detection](#detection)
 - [Antidotes](#antidotes)
 - [Quotes](#quotes)
+- [Anxiety Protocol from What I learned so Far](#anxiety-protocol-from-what-i-learned-so-far)
 - [Personal Examples](#personal-examples)
 
 <!-- vim-markdown-toc -->
@@ -139,6 +140,11 @@ Depending on the depth of the relationship and the reaction so far, it might be 
 - Worry is not preparation, nor does it make you better.
 - Anxiety is "keeping a problem in the foreground". This sucks up your CPU, and means you can't spin down your CPU.
 - Instead the answer is commit to disk all open decisions, and then kick it out of the foreground till ready (this is the GTD solution).
+
+
+### Anxiety Protocol from What I learned so Far
+
+{%include summarize-page.html src="/anxiety-managment" %}
 
 ### Personal Examples
 

@@ -135,6 +135,8 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
+        "/SoM": "/sleight-of-mouth",
+        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/taxes": "/money",
@@ -311,6 +313,7 @@
             ],
             "incoming_links": [
                 "/activation",
+                "/anxiety_management",
                 "/d/resistance",
                 "/first-things-first",
                 "/happy",
@@ -409,6 +412,7 @@
             "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The\npain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.\n\n",
             "file_path": "_site/anxiety.html",
             "outgoing_links": [
+                "/anxiety-managment",
                 "/be-proactive",
                 "/idle",
                 "/voices"
@@ -426,7 +430,21 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/anxiety.md",
-            "doc_size": 19000
+            "doc_size": 20000
+        },
+        "/anxiety_management": {
+            "py/object": "__main__.Page",
+            "url": "/anxiety_management",
+            "title": "Anxiety Management",
+            "description": "When your emotions aren’t serving you well, it’s helpful to have a solid protocol. This is the one I especially like.\n\n",
+            "file_path": "_site/anxiety_management.html",
+            "outgoing_links": [
+                "/addiction"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/anxiety_management.md",
+            "doc_size": 15000
         },
         "/appreciate": {
             "py/object": "__main__.Page",
@@ -1352,7 +1370,8 @@
                 "/d/2016-2-15-Seth-Godin-Notes",
                 "/dsat",
                 "/end-in-mind",
-                "/gtd"
+                "/gtd",
+                "/manager-book"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2017-11-12-thedip.md",
@@ -2104,6 +2123,7 @@
                 "/comp",
                 "/d/habits",
                 "/decisive",
+                "/dip",
                 "/dsat",
                 "/job",
                 "/job-hunt-stress",
@@ -2133,7 +2153,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 116000
+            "doc_size": 119000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -2811,18 +2831,16 @@
             "markdown_path": "_d/2015-11-18-what-is-strategy.md",
             "doc_size": 22000
         },
-        "/strength-finder": {
+        "/strengths": {
             "py/object": "__main__.Page",
-            "url": "/strength-finder",
+            "url": "/strengths",
             "title": "My Strengths from  Strength Finder",
             "description": "Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.\n\n",
-            "file_path": "_site/strength-finder.html",
+            "file_path": "_site/strengths.html",
             "outgoing_links": [
                 "/static/StrengthFinderIgor.pdf"
             ],
-            "incoming_links": [
-                "/operating-manual"
-            ],
+            "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_posts/2018-05-25-strength-finder.md",
             "doc_size": 17000
