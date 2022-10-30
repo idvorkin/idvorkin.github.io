@@ -15,6 +15,7 @@ Anxiety is the difference between reality and expectations. It is the pain, whil
 
 <!-- vim-markdown-toc GFM -->
 
+- [Anxiety](#anxiety)
     - [Reality](#reality)
     - [Expectations](#expectations)
     - [Closing the gap](#closing-the-gap)
@@ -142,7 +143,7 @@ Depending on the depth of the relationship and the reaction so far, it might be 
 
 ### Anxiety Protocol from What I learned so Far
 
-{%include summarize-page.html src="/anxiety-managment" %}
+{%include summarize-page.html src="/anxiety-management" %}
 
 ### Personal Examples
 
