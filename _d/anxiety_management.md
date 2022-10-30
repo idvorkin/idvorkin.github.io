@@ -2,7 +2,7 @@
 layout: post
 title: Anxiety Management
 tags:
-permalink: /anxiety_management
+permalink: /anxiety-management
 ---
 
 
