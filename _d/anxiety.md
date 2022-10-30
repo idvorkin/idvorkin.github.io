@@ -9,14 +9,12 @@ redirect_from:
   - /anxious
 ---
 
-Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The
-pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.
+Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.
 
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc GFM -->
 
-- [Anxiety](#anxiety)
     - [Reality](#reality)
     - [Expectations](#expectations)
     - [Closing the gap](#closing-the-gap)
@@ -69,9 +67,9 @@ Interesting, I picked up a mantra, "This too shall pass", with the idea of smoot
 
 Perspective can be imagined in two dimensions - X=time and Y=Co(t).
 
-**Co(t)** The amount of things being considered. This can be from a single insult to your life. The units on this are unclear, for now, lets normalize from 0 to all the things you can be considering accross all aspects of your life.
+**Co(t)** The amount of things being considered. This can be from a single insult to your life. The units on this are unclear, for now, lets normalize from 0 to all the things you can be considering across all aspects of your life.
 
-**SIDEBAR: Mu(t)** is a concept I [explored long ago](http://ig2600.blogspot.com/2015/05/measuring-in-moment-happiness-with.html) Measuring in the moment happiness (InMoHap). It's not the perfect measure, but might be more useful then Co. for this convo.
+**SIDEBAR: Mu(t)** is a concept I [explored long ago](http://ig2600.blogspot.com/2015/05/measuring-in-moment-happiness-with.html) Measuring in the moment happiness (InMoHap). It's not the perfect measure, but might be more useful than Co. for this convo.
 
 So Co(t) is how much we are considering at time.
 

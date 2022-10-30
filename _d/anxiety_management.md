@@ -8,6 +8,10 @@ permalink: /anxiety-management
 
 When your emotions aren't serving you well, it's helpful to have a solid protocol. This is the one I especially like.
 
+My notes on anxiety:
+
+{%include summarize-page.html src="/anxiety" %}
+
 ## Don't make stuff worse
 
 When anxiety is acute ... the first thing  you need to do is ensure you don't make it worse ... here's how.

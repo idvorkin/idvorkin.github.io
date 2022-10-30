@@ -313,7 +313,7 @@
             ],
             "incoming_links": [
                 "/activation",
-                "/anxiety_management",
+                "/anxiety-management",
                 "/d/resistance",
                 "/first-things-first",
                 "/happy",
@@ -409,7 +409,7 @@
             "py/object": "__main__.Page",
             "url": "/anxiety",
             "title": "Anxiety, the gap between reality and expectations",
-            "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The\npain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.\n\n",
+            "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.\n\n",
             "file_path": "_site/anxiety.html",
             "outgoing_links": [
                 "/anxiety-managment",
@@ -419,6 +419,7 @@
             ],
             "incoming_links": [
                 "/affirmations",
+                "/anxiety-management",
                 "/depression",
                 "/fail",
                 "/gtd",
@@ -432,14 +433,15 @@
             "markdown_path": "_d/anxiety.md",
             "doc_size": 20000
         },
-        "/anxiety_management": {
+        "/anxiety-management": {
             "py/object": "__main__.Page",
-            "url": "/anxiety_management",
+            "url": "/anxiety-management",
             "title": "Anxiety Management",
             "description": "When your emotions aren’t serving you well, it’s helpful to have a solid protocol. This is the one I especially like.\n\n",
-            "file_path": "_site/anxiety_management.html",
+            "file_path": "_site/anxiety-management.html",
             "outgoing_links": [
-                "/addiction"
+                "/addiction",
+                "/anxiety"
             ],
             "incoming_links": [],
             "redirect_url": "",
