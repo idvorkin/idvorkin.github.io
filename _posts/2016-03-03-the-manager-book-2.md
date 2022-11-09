@@ -10,7 +10,7 @@ redirect_from:
   - /the-manager-book
 ---
 
-Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.
+Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave and encourages continuous improvement.
 
 This post uses the word manager, but the majority of topics are applicable to all software job functions regardless of seniority or the number of direct reports, zero direct reports included.
 
@@ -33,7 +33,7 @@ This post uses the word manager, but the majority of topics are applicable to al
 <!-- vim-markdown-toc GFM -->
 
 - [What does a manager do](#what-does-a-manager-do)
-    - [What are a managers responsibilities](#what-are-a-managers-responsibilities)
+    - [What are a manager's responsibilities](#what-are-a-managers-responsibilities)
     - [How do you measure their success](#how-do-you-measure-their-success)
     - [What is a manager accountable for](#what-is-a-manager-accountable-for)
     - [How do you describe your job to people outside the industry](#how-do-you-describe-your-job-to-people-outside-the-industry)
@@ -42,7 +42,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [What do managers do all day](#what-do-managers-do-all-day)
     - [Should managers be technical](#should-managers-be-technical)
     - [Should managers code](#should-managers-code)
-    - [What engineering efficiency metrics should a manager monitor?](#what-engineering-efficiency-metrics-should-a-manager-monitor)
+    - [What engineering efficiency metrics should a manager monitor](#what-engineering-efficiency-metrics-should-a-manager-monitor)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you coach](#how-do-you-coach)
     - [What mechanisms do you have to ensure career development](#what-mechanisms-do-you-have-to-ensure-career-development)
@@ -146,13 +146,13 @@ This post uses the word manager, but the majority of topics are applicable to al
 
 <a id="l-what-managers-do"></a>
 
-### What are a managers responsibilities
+### What are a manager's responsibilities
 
 ### How do you measure their success
 
 ### What is a manager accountable for
 
-The success of a manager is the success of the team. This manifest in 4 dimensions:
+The success of a manager is the success of the team. This manifests in 4 dimensions:
 
 <!--
 An acid test:
@@ -163,10 +163,10 @@ An acid test:
 
 | Dimension                          | Success Means                                                                                                                                                                                                                                     |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Business Results                   | Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.                                                                                                                 |
+| Business Results                   | Team delivers business value for our customers and organization. I define success (KPI), and help the team understand and deliver it.                                                                                                                 |
 | High performance people and teams  | Team is well gelled and team members help each other. Everyone has growth plans which fit their needs and they are executing them.                                                                                                                |
-| Engineering Efficiency and Process | Engineering systems and protocols ensure a pit of success. Process is automated, and releases have high velocity and minimal risk.                                                                                                                |
-| Technical Assets                   | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (take debt if you might be able to write off the asset) |
+| Engineering Efficiency and Process | Engineering systems and protocols ensure a pit of success. Process is automated, and releases have high velocity and minimal risk.                                                                                                                 |
+| Technical Assets                   | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (take debt if you might be able to write off the asset). |
 
 ### How do you describe your job to people outside the industry
 
@@ -174,22 +174,22 @@ I run a factory which produces widgets and has employees. For those in the indus
 
 | Dimension                          | Analog               | Metrics and Measures | Success Means                                                                                                                                                                         |
 | ---------------------------------- | -------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Business Results                   | Produced Widgets     | [l20](l20)           | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.                            |
+| Business Results                   | Produced Widgets     | [l20](l20)           | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy and explaining how our factory runs.                            |
 | High performance people and teams  | Factory Workers      | [l21](l21)           | Workers in the factory are healthy, learning, want to come to work every day, and getting along with co-workers.                                                                      |
-| Engineering Efficiency and Process | Operating procedures | [l22](l22)           | The factory is efficient: Production good and improving. Widgets comes out consistently and on schedule? New employees know what to do. Everyone knows what to do during emergencies? |
-| Technical Assets                   | Factory machines     | [l23](l23)           | Machines in the factory adjusted quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency                                   |
+| Engineering Efficiency and Process | Operating procedures | [l22](l22)           | The factory is efficient: Production is good and improving. Widgets come out consistently and on schedule. New employees know what to do. Everyone knows what to do during emergencies. |
+| Technical Assets                   | Factory machines     | [l23](l23)           | Machines in the factory adjust quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency.                                   |
 
 <div> </div>
 
 - l20
 - Are wanted by customers
-- Are produced on time and budget.
+- Are produced on time and on budget.
 
 <div> </div>
 
 - l21
 - Are happy based on surveys
-- Are getting promos frequently
+- Are getting promotions frequently
 - Recommend joining the factory to their friends
 - Work at the factory for several years
 
@@ -207,7 +207,7 @@ I run a factory which produces widgets and has employees. For those in the indus
 - l23
 - Support a wide range of widgets
 - Can be extended to build new widgets at low cost
-- Have have availability
+- Have high availability
 - Operate at low cost
 
 ### Hardest part about being a manager
@@ -310,7 +310,7 @@ SDMs should be reading code occasionally:
 1. Assessing people - Code is a major deliverable for developers and should be inspected as part of people assessment.
 1. Deep dive during major outages - In high risk, time critical situations like outages, you want your best people reviewing the changes, and this includes SDMs. If an SDM can't understand a high risk time sensitive code change, it can be, and should be simplified.
 
-### What engineering efficiency metrics should a manager monitor?
+### What engineering efficiency metrics should a manager monitor
 
 Lots, but these 3 are probably high on the list:
 
