@@ -42,7 +42,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [What do managers do all day](#what-do-managers-do-all-day)
     - [Should managers be technical](#should-managers-be-technical)
     - [Should managers code](#should-managers-code)
-    - [What engineering efficiency metrics should a manager monitor](#what-engineering-efficiency-metrics-should-a-manager-monitor)
+    - [What engineering efficiency metrics should a manager monitor?](#what-engineering-efficiency-metrics-should-a-manager-monitor)
 - [Managing and Developing People](#managing-and-developing-people)
     - [How do you coach](#how-do-you-coach)
     - [What mechanisms do you have to ensure career development](#what-mechanisms-do-you-have-to-ensure-career-development)
@@ -50,7 +50,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [How do you support folks by pre-writing self assessments](#how-do-you-support-folks-by-pre-writing-self-assessments)
     - [How do you give fast, frequent, feedback](#how-do-you-give-fast-frequent-feedback)
     - [How do you think about situational leadership](#how-do-you-think-about-situational-leadership)
-    - [What is the level specific career expectations and growth strategies](#what-is-the-level-specific-career-expectations-and-growth-strategies)
+    - [What are the level specific career expectations and growth strategies](#what-are-the-level-specific-career-expectations-and-growth-strategies)
     - [How do you help people switch jobs](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated](#how-do-you-keep-people-motivated)
     - [How to motivate through personal experience](#how-to-motivate-through-personal-experience)
@@ -310,7 +310,7 @@ SDMs should be reading code occasionally:
 1. Assessing people - Code is a major deliverable for developers and should be inspected as part of people assessment.
 1. Deep dive during major outages - In high risk, time critical situations like outages, you want your best people reviewing the changes, and this includes SDMs. If an SDM can't understand a high risk time sensitive code change, it can be, and should be simplified.
 
-### What engineering efficiency metrics should a manager monitor
+### What engineering efficiency metrics should a manager monitor?
 
 Lots, but these 3 are probably high on the list:
 
@@ -364,16 +364,16 @@ To help with the last two questions, this document has the list of expectations 
 
 Think through what will be delivered in the next 1-6 months, and how it will be delivered.
 
-Most companies have a performance program - At MSFT it's connects, at FB it's PSCs and Amazon it's Forte. As part of this process, and employee writes a self assessment for the work that happened in the last 6 months - 1 year, and then the manager uses that as a basis of the review they'll write.
+Most companies have a performance program - At MSFT it's connects, at FB it's PSCs and Amazon it's Forte. As part of this process, an employee writes a self assessment for the work that happened in the last 6 months - 1 year, and then the manager uses that as a basis of the review they'll write.
 
 There are several advantages to pre-writing these documents:
 
-- The peep and manager can be deliberate about what work is done, and discuss if projects make sense.
+- The peep and manager can be deliberate about what work is done, and discuss if projects make sense, and if they are the right projects.
 - The peep and manager understand the impact provided by the work.
-- The peep has a record of what they've done in the performance period, instead of only having a crisp memory of the last few months.
+- The peep has a record of what they've done in the performance period, instead of only having a crisp memory of the last few months, and can use that to write the self assessment.
 - The manager can calibrate the work to be done so there are no scope surprises.
 
-Good self assessments are concise, focuses on impact, and then how you delivered the impact. More details at [I.M Wright](https://imwrightshardcode.com/2018/06/connects-with-impact/):
+Good self assessments are concise, focus on impact, and then how you delivered the impact. More details at [I.M Wright](https://imwrightshardcode.com/2018/06/connects-with-impact/):
 
 - _[Clearly measurable impact]_ by _[work you’ve done yourself and/or with others]._
   - Relevant artifacts, or quote from others validating the claim.
@@ -421,9 +421,9 @@ In each of these stages different support is required.
 | Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
 | Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
 
-### What is the level specific career expectations and growth strategies
+### What are the level specific career expectations and growth strategies
 
-Depends on the skill level (E.g. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
+Depends on the skill level (E.g. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above. Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
 
 | Level        | Approach                                                                                                                                                                                                                                                                                                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -472,7 +472,7 @@ My goal is to find people the right job, not the job on my team. I coach a lot o
 
 <a id="l-motivation"></a> <a id="l-motivate"></a>
 
-Classically, motivation is comprised of carrots and sticks, where carrots focus on extrinsic motivation like compensation. Turns out sticks and exterinsic motivations fail for creative tasks. Instead I focus on the following dimensions
+Classically, motivation is comprised of carrots and sticks, where carrots focus on extrinsic motivation like compensation. Turns out sticks and extrinsic motivations fail for creative tasks. Instead I focus on the following dimensions
 
 Motivation has 2 dimensions, personal experience and team environment. Personal experience is based on the book Drive, and is about encouraging Autonomy, Mastery and Purpose. The team environment is about the culture in which you experience the personal dimension.
 
