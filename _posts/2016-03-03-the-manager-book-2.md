@@ -1075,19 +1075,19 @@ Most companies have their “competencies” they test for. But I abstract it do
 
 - Smart (Can code, understands, sees critical paths)
   - Teach me something you deeply understand
-  - Walk through X, and Y, how do you, explain the trade offs.
+  - Walk through X, and Y, how do you, explain the tradeoffs.
 - Get things done (wants to ship, owns it):
   - What matters to you?
   - Tell me something hard you did?
   - Tell me your favorite parts?
 - EQ: (Not an asshole, Continuous Learning, Sees impact off his action, self aware, Team First )
   - Tell me a time you got in a fight
-  - Tell me the hardest feedback you received.
+  - Tell me the hardest feedback you received
   - Tell me the hardest feedback you gave
 
 ### Do they prefer to hire only experienced folks
 
-I need a pipeline of developers for mentorship, fan out and succession planning.
+I need a pipeline of developers for mentorship, fan out, and succession planning.
 
 Need a Principal per 30 people.
 
@@ -1105,13 +1105,13 @@ Ratio Senior: SDE-II: SDE-I (1,2,2) => ten person team: 2, 4, 4.
 
 Generalists - 99% of time
 
-1. Industry changes to much.
-2. Mostly about Architecture/Design and SDL and coding, domain and language easy to learn.
+1. Industry changes too much.
+2. Mostly about Architecture/Design and SDL and coding, domain and language are easy to learn.
 
 Specialist - 1% on very specific teams.
 
 1. File system
-2. Distributed system transaction processing.
+2. Distributed system transaction processing
 3. Firmware engineers
 
 Want full stack teams:
@@ -1138,8 +1138,8 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
 
 - Before even thinking of funnels
   - Strive to be a class act and do your best.
-  - It's a small world. [People will learn what you value, and how you work](/static/igor-feedback-LinkedIn.pdf)
-  - Create [public artifacts](https://bitly.com/igor-wlb-manife)
+  - It's a small world. [People will learn what you value, and how you work](/static/igor-feedback-linkedin.pdf)
+  - Create [public artifacts](https://bitly.com/igor-wlb-manifesto)
 - Top of Funnel
   - Interview events
   - Internal Talks
@@ -1155,11 +1155,11 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
   - Post interview - magic trick, after interview lets make time to chat
   - Push to get interviews done ASAP
   - Push to get results to candidate ASAP
-  - Walk out of interview connect on linked in and chat with them
+  - Walk out of interview connect on LinkedIn and chat with them
 - Bottom of the Funnel
   - Focus on the needs of the candidate, then talk about how job can solve their needs
   - Beer/Coffee/Call
-  - Share artifacts, and evidence of my teams operations
+  - Share artifacts, and evidence of my team's operations
   - Invite them to talk with the team I support
   - Invite them to have lunch with the team
   - Help them build and evaluate their [dream job, and job switching decision making matrix](/job).
@@ -1177,11 +1177,11 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
 
   - Review internal code/design/documentation artifacts. Ask candidate for artifacts they're proud of.
   - Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them doing their day job.
-  - Talk about hard situations they've had. Listen for the criteria smart/gets shit done/emotionally intelligent
+  - Talk about hard situations they've had. Listen for the criteria smart/gets things done/emotionally intelligent
 
 ### What are better kinds of interviews
 
-I've heard the tech interview model described as the second worst kind of assessment strategy, it's only better then everything else we know.
+I've heard the tech interview model described as the second worst kind of assessment strategy, it's only better than everything else we know.
 
 That might be true, but I've also seen some novel ideas for interviews (Indeed uses these), and I'd be interested to try using them:
 
@@ -1193,10 +1193,10 @@ That might be true, but I've also seen some novel ideas for interviews (Indeed u
 
 I always start with "Happy for you, sad for us".
 My goal is to find the right role for an employee, not to have them on the team.
-Ask if you want me to talk you out of it, or to reinforce your choice.
-Help you think through decisions
+Ask if you want me to talk you out of it or to reinforce your choice.
+Help you think through decisions.
 TODO: Add story of Neha
-Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are stagnant which is bad
+Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are stagnant which is bad.
 
 <!--
 ### Best hire of your career
@@ -1291,19 +1291,19 @@ Then there's a formal PIP. Depends on your company but very similar to above, bu
 
  Happiness is a choice!
 
-Every day I walk past a begger, he only has 1 leg, and like 6 teeth, but he's always smiling. Wet or dry, snow or sun, always a beaming mostly toohtless smile. One day I ask him "Hey man, i gotta ask, why are you always so positive"? And he answered.
+Every day I walk past a beggar, he only has 1 leg, and like 6 teeth, but he's always smiling. Wet or dry, snow or sun, always a beaming mostly toothless smile. One day I ask him "Hey man, I gotta ask, why are you always so positive"? And he answered.
 
-"Look, every day I have a choice, I can be happy or miserable" - why would I chooose miserable?
+"Look, every day I have a choice, I can be happy or miserable" - why would I choose miserable?
 
 Now, as a team we want to support each other, lets help each other by reminding each other of these things and the importance of choosing happiness.
 
 
 ### Maintain perspective
 
-* When there's  mental pain, time bound shrinks, as does all the attributes
-* Share all the good stuff and big pcitures
+* When there's mental pain, time bound shrinks, as does all the attributes
+* Share all the good stuff and big pictures
 * Extra focus on appreciation
-* Increase Time Rang
+* Increase Time Range
 * Be Patient
 
 ## Charters, Re-orgs and Bootstrapping
@@ -1439,7 +1439,7 @@ In general when this happens there are a few common reactions
 A common reason for this is the old team that had the charter, likely only planned out for 120% of there engineers. So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there's only work for 3 people, and be sad.
 
 **The new charter is much simpler then expected**
-**The new charter isn't' as interesting**
+**The new charter isn't as interesting**
 
 It's common to oversimplify from a distance. Once the team gets into the details, they'll either see it's true, and they'll find new good stuff to do, or, far more likely they'll find much more nuance, subtlety and ambiguity in the new space.
 
@@ -1487,9 +1487,9 @@ This will be a painful situation. The team has invested significantly: emotional
 
 In these situations, you need to "declare success", wrap up the work and move on.
 
-In the best case, this decision will be made as part of the normal rhythm of business with sufficient lead time so a a clear set of new projects to transition onto are found, and the team can wrap up their current work, and switch to the new work on their roadmap without any disruption except for feeling bad their previous work didn't work out as well as they had hoped.
+In the best case, this decision will be made as part of the normal rhythm of business with sufficient lead time so a clear set of new projects to transition onto are found, and the team can wrap up their current work, and switch to the new work on their roadmap without any disruption except for feeling bad their previous work didn't work out as well as they had hoped.
 
-In a common case, the decision will be suddenly, often with an edict from leadership to take immediate action. In this case, the priorities are:
+In a common case, the decision will be sudden, often with an edict from leadership to take immediate action. In this case, the priorities are:
 
 * Manage comms with the team - decide when to tell folks, see some of the re-org discussions
 * Negotiate a transition period with leadership.
@@ -1511,13 +1511,13 @@ Few things make me prouder then this [public feedback on LinkedIn](/static/igor-
 
 On my deathbed, the product I will be most proud of is the people who I watched blossom and grow. It's cliche, but when you love your people they know it, they thrive, and do their best work. It's not just about the work, I want to make sure people think of their lives as well, because, well, that's even more important.
 
-I'm also energized by getting shit done. The though of shipping, clearing roadblocks, and never being blocked puts a smile on face.
+I'm also energized by getting shit done. The thought of shipping, clearing roadblocks, and never being blocked puts a smile on my face.
 
-Speaking of smiling, nothing brings me back up like reading this kind of feedback that I got when I left a team:
+Speaking of smiling, nothing brings me back up like reading this kind of feedback that I got when I left a team.
 
 _Goodbye Igor! Thank you for helping me reach the next level both physically and mentally. I cherish the moments when we ground through challenges like peak days, when I was in trouble and you said "That's why I'm here, give it to me I'll make it happen", and of course, when you show your magic at happy hour! You are a great boss and great teacher._
 
-Lastly, I love understanding what is going on, coming up with win/win solutions, and framing those solutions into a meaningful story that people rally behind and deliver. Some more words that bring me up:
+Lastly, I love understanding what is going on, coming up with win/win solutions, and framing those solutions into a meaningful story that people rally behind and deliver. Some more words that bring me up.
 
 _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, so inspiring, so powerful we still feel it 3 years after you left the team._
 
@@ -1601,14 +1601,13 @@ I don't think managers should code with a minor exception ([More details](#l-cod
 
 Why do we assess managers ability to code - no clue, but a few enlightened companies do not.
 
-I think managers do need technical skills see [here](#l-technical).
-
 ## Business Acumen and Strategy
 
-My note on [Strategy](/strategy), including the strategic position of various companies:
+My note on [Strategy](/strategy), including the strategic positions of various companies:
 
 {%include summarize-page.html src="/strategy" %}
 
 ## Appendix
 
 {%include summarize-page.html src="/manager-book-appendix" %}
+I think managers do need technical skills see [here](#l-technical).
