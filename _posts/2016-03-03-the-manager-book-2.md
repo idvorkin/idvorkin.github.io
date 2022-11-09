@@ -482,17 +482,17 @@ _Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are or
 
 ### How to motivate through personal experience
 
-I use Danial Pink's [DRIVE model](https://youtu.be/t9wDmRMtPnA). TL;DR: Extrinsic motivation doesn't work, you need intrinsic motivation, which is driven by Autonomy mastery purpose.
+I use Daniel Pink's [DRIVE model](https://youtu.be/t9wDmRMtPnA). TL;DR: Extrinsic motivation doesn't work, you need intrinsic motivation, which is driven by Autonomy mastery purpose.
 
 **Autonomy: Direct thy self**
 
 - You choose what you work on (Link: How does resource allocation work)
 - You are the end to end owner.
 - You make the decisions, though I'm here to support. Even if I disagree, it's your call.
-- We collaborate on the definition of success, and then you chose how it gets done.
+- We collaborate on the definition of success, and then you choose how it gets done.
 - I support you in private, by helping you understand success, sharing how I'd do it, helping you see around corners, and bringing up signals and context you may be missing.
 - I support you in public by re-inforcing your message and needs, and nudging where nudges are required.
-- You know the the team has your back
+- You know the team has your back
 - I protect you from harmful rays of upper management and business
 - Hack-a-thons
 
@@ -525,7 +525,7 @@ People also care deeply about coaching and career growth:
 
 I focus significant energy nurturing the [team culture](#l-culture):
 
-_As a team we all aspire to a culture where coming to work is fun, the team members put the team needs ahead of their own, the team gelled and by people being vulnerable we built a strong sense of psycholigcal safety_
+_As a team we all aspire to a culture where coming to work is fun, the team members put the team needs ahead of their own, the team gelled and by people being vulnerable we built a strong sense of psychological safety_
 
 I spend significant energy generating [Moments](/moments-at-work):
 
@@ -533,9 +533,9 @@ _Of all the places we spend our time, work is the one that dominates. However, w
 
 Some moments like:
 
-- Constant celebrating people doing stuff fun
+- Constant celebrating people doing stuff
 - Hack-a-thons
-- Playing cards for appreciation
+- Playing cards for appreciation (Link: Playing cards for appreciation)
 - Managers making breakfast
 
 ### How do you give challenging feedback
@@ -607,7 +607,6 @@ Other thoughts:
 - I group my 1:1's on the same day (or over 2 days) because 1:1 is a special frame of mind, and it's hard to stay in that zone.
 - I wish I used a 1:1 document, as that seems to be a best practice for most domains.
 - The current norm is 30 minute 1:1's but I enjoyed the old days when an hour was the norm. I often wonder if we've sacrificed effectiveness for efficiency in the 30 minute 1:1 culture.
-
 ### How do you handle communication problems
 
 High order bits:
