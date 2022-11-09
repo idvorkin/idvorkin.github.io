@@ -64,7 +64,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [How do you grow top talent](#how-do-you-grow-top-talent)
     - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
     - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
-    - [How do you have a difficult converastion](#how-do-you-have-a-difficult-converastion)
+    - [How do you have a difficult conversation](#how-do-you-have-a-difficult-conversation)
 - [Culture](#culture)
     - [What is your ideal culture](#what-is-your-ideal-culture)
     - [How do you help a team gel](#how-do-you-help-a-team-gel)
@@ -72,7 +72,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [How do you make a good culture](#how-do-you-make-a-good-culture)
     - [How do you handle Remote Work](#how-do-you-handle-remote-work)
     - [What about Work Life Balance](#what-about-work-life-balance)
-    - [How you deal with team disagrees with the leadership](#how-you-deal-with-team-disagrees-with-the-leadership)
+    - [How do you deal with a team that disagrees with the leadership](#how-do-you-deal-with-a-team-that-disagrees-with-the-leadership)
     - [Agency and Psychological Safety](#agency-and-psychological-safety)
     - [Kudos Boards - Appreciations](#kudos-boards---appreciations)
 - [Process and Mechanism](#process-and-mechanism)
@@ -607,6 +607,7 @@ Other thoughts:
 - I group my 1:1's on the same day (or over 2 days) because 1:1 is a special frame of mind, and it's hard to stay in that zone.
 - I wish I used a 1:1 document, as that seems to be a best practice for most domains.
 - The current norm is 30 minute 1:1's but I enjoyed the old days when an hour was the norm. I often wonder if we've sacrificed effectiveness for efficiency in the 30 minute 1:1 culture.
+
 ### How do you handle communication problems
 
 High order bits:
@@ -728,14 +729,14 @@ Often, when folks think of career development, they fixate on their job title an
 
 {%include blob_image.html src="blog/career-convo.png" %}
 
-### How do you have a difficult converastion
+### How do you have a difficult conversation
 
 From Simon Sinek, a great script:
 
 - I need to have a difficult conversation
-- Afraid to have this conversation,
-- afraid to say something wrong, and accidentally trigger someone
-- I know having this conversation is more important then my fears against it
+- I'm afraid to have this conversation,
+- I'm afraid to say something wrong, and accidentally trigger someone
+- I know having this conversation is more important than my fears against it
 - Please work with me to struggle through this.
 - Because want us to tackle this subject
 
@@ -831,11 +832,11 @@ Equally important, when folks consider their career, I remind them there are mor
 
 {%include blob_image.html src="blog/career-convo.svg" %}
 
-### How you deal with team disagrees with the leadership
+### How do you deal with a team that disagrees with the leadership
 
 Step 1: Believe and deeply understand it. Either I believe in it, or I deeply understand the decision and have disagreed and committed. As part of committing, I'm all in, and will share that.
 
-Step 2: Listen to the team. The team has concerns, hopefully I can predict the, ahead of time and be prepared for the easy ones, then truly listen to new concerns, and address them.
+Step 2: Listen to the team. The team has concerns, hopefully I can predict them ahead of time and be prepared for the easy ones, then truly listen to new concerns, and address them.
 
 Step 3: Focus on the win/win, and talk through a ripcord.
 
@@ -888,7 +889,7 @@ This can be especially true when process is created high in the org chart to sol
 
 **The antidote** - A review of process is essential to ensure it's still getting the maximum value with minimum cost.
 
-**Toxic process** - Bad process will disenfranchise ownership and stifling passion. It'll slow down things that can be fast. There is nothing more powerful then a motivated engineer, don’t let process take that away.
+**Toxic process** - Bad process will disenfranchise ownership and stifle passion. It'll slow down things that can be fast. There is nothing more powerful than a motivated engineer, don’t let process take that away.
 
 ### On Change
 
@@ -927,7 +928,7 @@ Two way door changes are much safer when performed well:
 
 ### Engineering Excellence - Operational Review and Correction of Errors
 
-There should always been an on-call, an engineering excellence work stream, and a periodic review meeting and a [correction of errors](/coe) process.
+There should always be an on-call, an engineering excellence work stream, and a periodic review meeting and a [correction of errors](/coe) process.
 
 1. How do we know our customer is having a good day?
 2. How do we maximize our velocity
@@ -935,21 +936,16 @@ There should always been an on-call, an engineering excellence work stream, and 
 4. How do we sleep well at night?
 5. How do we get max learning from outages?
 
-By the way, I think a manager should be on all pages and outages.
+By the way, I think a manager should be on all pages and outages. This is a great way to get a strong appreciation for boots on the ground reality.
 
-- On all the pages
-- Strong appreciation for boots on the ground reality.
-
-Also need to review all outages
-
-- Write up for all outages, [Correction Of Errors](/coe) for major outages -
+- Write up for all outages, [Correction Of Errors](/coe) for major outages
 - Maximize value of mistakes, don't make them twice.
-- For all customer impacting event, review w/Customer Impact, root cause understood, and commitment when to address.
+- For all customer impacting events, review w/Customer Impact, root cause understood, and commitment when to address.
 - Observability
-  - How do we get a page next time.
-  - How do we see what's going on.
+  - How do we get a page next time?
+  - How do we see what's going on?
 - Testing systems.
-  - Very high leverage active
+  - Very high leverage activity
 
 ### Data Driven - Customer and Business Metric Reviews
 
@@ -987,11 +983,11 @@ Pro tip for surveys - use part of a meeting to complete a fast survey. This ensu
 
 The goal is to maximize the impact of the team.
 
-Small companies and insulated teams can do bottom up goal settings, but as companies get larger, it's hard to have sufficient insight into the company priorities, and hard to align goals cross teams, which lessons the impact.
+Small companies and insulated teams can do bottom up goal settings, but as companies get larger, it's hard to have sufficient insight into the company priorities, and hard to align goals across teams, which lessens the impact.
 
 Larger teams require a top down business strategy intersected with a bottom up execution recommendation.
 
-Ideally Engineering Excellence (EE) is built as part of a feature as it is in part of the feature costs. NOTE: It's OK to defer some of the engineering tasks till after shipping but it's not OK to say a project is complete till the Engineering excellence costs are paid.
+Ideally Engineering Excellence (EE) is built as part of a feature as it is in part of the feature costs. NOTE: It's OK to defer some of the engineering tasks till after shipping but it's not OK to say a project is complete till the engineering excellence costs are paid.
 
 Systems rot over time, so EE should have a standing budget, usually 10%-20% of team capacity. The team should be empowered to spend this budget as required.
 
@@ -1062,14 +1058,14 @@ There are some more concepts I need to flesh out:
 Imagine we want to build a new road.
 
 1. Start of time: PM figures out there's a market for a road, and the needs of the customer, and comes up with a rough idea of where the road needs to be between.
-1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or somewhere else as other folks have tried digging there, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper
+1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or somewhere else as other folks have tried digging there, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper.
 1. After: Senior Engineers come in and start figuring out where they'll build, what's the safest path, and what's a realistic schedule
 1. After: Intermediate dev's are assigned a chunk of the road and start building it.
 1. After: Junior devs are given very clear tasks, and start doing them.
 
 ### Prioritize Ruthlessly
 
-A great mantra for life, individual contributors, and especially folks supporting more junior folks. A great article that deep dives into the topic [here](https://alexturek.com/2022-03-07-How-to-do-less/)
+A great mantra for life, individual contributors, and especially folks supporting more junior folks. A great article that deep dives into the topic [here](https://alexturek.com/2022-03-07-How-to-do-less/).
 
 ## Hiring
 
