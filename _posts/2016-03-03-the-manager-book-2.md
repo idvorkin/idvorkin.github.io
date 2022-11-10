@@ -123,6 +123,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
     - [Insufficient progress -  Double down or pivot](#insufficient-progress----double-down-or-pivot)
+    - [Layoffs](#layoffs)
 - [Personal Motivations](#personal-motivations)
     - [Why do you find management attractive](#why-do-you-find-management-attractive)
     - [What is your dream job](#what-is-your-dream-job)
@@ -1500,6 +1501,35 @@ In a common case, the decision will be sudden, often with an edict from leadersh
 
 NOTES:
     - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
+
+
+<!--
+
+### Layoffs
+
+Before:
+
+* Be careful about telling people you don't know anything, at some point you will, and you can and will be trapped in a lie.  (I don't know best thing to do here).
+* Remind people if they can't control something don't focus on it. Focus on what they can influence.
+* Do not tell people they will not be laid off.  Unless you know, don't.
+
+Day Of:
+
+* Get up early and get ready.
+* This will be a very emotionally draining day.
+* Excellent chance you won't know what's going on, and
+* Remind people it's a tough day and take care of themselves.
+* Discourage people speculating what and why
+* Remind people to take care of themselves
+* Mental health experts recommend against group meetings. Keep everything 1:1
+
+Next days:
+
+* Possible re-org
+
+
+-->
+
 
 ## Personal Motivations
 
