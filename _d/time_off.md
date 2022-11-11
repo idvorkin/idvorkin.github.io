@@ -10,9 +10,10 @@ redirect_from:
   - /time-off
 ---
 
-Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we'll discuss too.
+Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we'll discuss too.  Like most things time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
 
 <!-- prettier-ignore-start -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [The phases of time off](#the-phases-of-time-off)
@@ -30,7 +31,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Begin with the end in mind](#begin-with-the-end-in-mind)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Making the most out of staycation](#making-the-most-out-of-staycation)
-- [Combined Learnings](#combined-learnings)
+- [Igor's Personal combined learnings](#igors-personal-combined-learnings)
     - [Before you go](#before-you-go)
     - [Every other day checkin](#every-other-day-checkin)
     - [Physical Health](#physical-health)
@@ -109,7 +110,7 @@ Acknowledge you deserve to vegetate, and give your self a day or 2 guilt free. A
 
 You can fight the [resistance](/resistance) by making your [addictions](/addictions) harder. For me that means uinstall TikTok.
 
-Add by making your positive habits easier. For me, this includes remembering what my good habits are, and how much better I feel when I do them. And then running a habit app to make sure I'm doing them.
+And by making your positive habits easier. For me, this includes writing up a time off todo list (see notes linking to this), rembering what my good habits are, and how much better I feel when I do them. And then running a habit app to make sure I'm doing them.
 
 ### Begin with the end in mind
 
@@ -126,9 +127,9 @@ Look at the incoming links below and:
 
 With staycations, it's especially easy to oscillate between vegetating, grinding through the todo list, and ruminating on work. I suspect there are special tools for staycations - I should think through them.
 
-## Combined Learnings
+## Igor's Personal combined learnings
 
-Here are the combined learnigns from my time offs. Make sure to read an interalize it!
+Here are the combined learnigns from my time offs. Igor needs to read and internalize it.
 
 ### Before you go
 
@@ -152,16 +153,17 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
 - **Refresh** - Re-read these learnings and your time off priority list.
 - **Pay yourself first, do the habits** - gives you the energy and strength for everything else.
   - If I don't force my self to maintain my habits, and stay balanced - I won't
+  - Don't skip habits, they give you the energy
   - Make sure to do magic
   - Make sure to do hot tub
   - Your positive habits charge you up, do them!
   - My habits are energizing, the time spent is actually time positive from additional magic.
-  - If I don't force my self to maintain my habits, and stay balanced - I won't
-  - Don't skip habits, they give you the energy
-- **Use your own evaluation criteria, avoid sunk costs** - What "should be best", probably isn't do what's most important to you and your identity, not "what should" happen.
-  - At magic conference, 10 hours of magic a day, burning out on it.
-    - Decide to skip types of magic I like less for my hobbies and travel.
+- **Use your own evaluation criteria, avoid sunk costs**
+  - What "should be best", probably isn't "do what's most important to you and your identity".
   - Ask yourself if you're actually doing what you enjoy. Beware sunk cost fallacy.
+  - examples:
+    - At magic conference, 10 hours of magic a day, burning out on it.
+    - At magic conference, Decide to skip types of magic I like less for my hobbies and travel.
 - **Hobbies are OK if part of charging up:**
   - Before family wakes up
   - Tell family the plans so they aren't surprised and expectations are set.
@@ -182,6 +184,10 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
 
 - **Do extra streches/cardio** - Remember energy positive, and keeps you injury free.
 
+- **Bring stuff to help you eat healthy**
+    - Bring the micowavable popcorn popper and instant soup. These are some of my favorite low calorie foods.
+    - Bring a travel scale - that mindfulness around weight is great.
+
 ### Emotional Health
 
 - **Pay yourself first** - Make time for yourself in the morning, go to bed early and get coffee shop time, gratefulness journal, meditation etc. This grounds me through the day, and gives me the calmness I need and a chance to figure out the essential.
@@ -189,15 +195,16 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
   - Made time with my family much more enjoyable when I wasn't in a rush and sucecess was being with them.
   - Same with going to the airport, got there hours early. Didn't matter that got stuck at the car rental return. Didn't matter that my flight got delayed, can write, meditate do some inner work.
 - **Continuous learning** - Always a learning opportunity, learn what needs to be learned and move on.
-- **Don't berate mistakes** - Getting off the plane, it was super bright in torontoo. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I hav ean abilityt o squint. Nothing terrible happens.
-- **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forcedd check bags would be lost forever. They weren't.
-- **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bbring my sunglasses.
-- **Don't fret micro optimizations** - From Belleville to Hamilonton, spent lots of time trying to figure out what time I'd adrive, what order of gym/work/sister/luncch I'd tackle, trying to micro optimize, spent lots of cycles. Turned out, didn't matter at all.
+- **Don't berate mistakes** - Getting off the plane, it was super bright in Toronto. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I hav ean abilityt o squint. Nothing terrible happens.
+    - TODO: Add a not on caring vs mattering. Caring is your emotional response(un avoidable), but mattering is the objective difference it makes to whom, and over what time period.
+-  **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forced check bags would be lost forever. It wasn't, it was right there. And as a result of waiting for it, I ended up meeting a really cool person.
+- **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bring my sunglasses.
+- **Don't fret micro optimizations** - From Belleville to Hamilon, I spent lots of time trying to figure out what time I'd arrive, what order of gym/work/sister/lunch I'd tackle, trying to micro optimize, spent lots of cycles. Turned out, didn't matter at all.
 
 ### Travel Tips
 
 - Pack the afternoon before so you don't have a rush in the morning
-- Hanging at the airport early is totall ine - don't worr about it.
+- Hanging at the airport early is totally fine - don't worry it's better then being there late.
 - Make a leave list (Notion)
     - Pack my chargers
     - Put Masks in Bag
@@ -205,9 +212,8 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
     - Leave for the airport 3 hours early (have lots of slack)
 - Rental car
     - Just get it if you need lots of travel
-    - Take time to learn how to use it
     - Get Insurance on your credit card
-    - Take 10 minutes to learn how to use it (wipers, door locks, cruise control, fuel)
+    - Take 10 minutes to learn how to use the rental car (wipers, door locks, cruise control, fuel)
 - Take time to think through daily routines, and when you'll do them
     - Ad hoc doesn't work
 - Re pack day bag
@@ -223,7 +229,8 @@ Here are the combined learnigns from my time offs. Make sure to read an interali
     - Carry a bag with bands and foam roller
 
 - Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
-- **I have an extra pocket in my suitcase** - Lost my popcorn popper and my baloon pump and my laptop. Wow too much stuff to lose.
+- **I have an extra pocket in my suitcase**
+    - Lost my popcorn popper and my baloon pump and my laptop. Turns out in the extra pocket, I forgot.
 
 ### Other learnings
 

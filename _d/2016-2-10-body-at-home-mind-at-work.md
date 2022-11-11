@@ -6,7 +6,7 @@ inprogress: true
 tags:
   - how igor ticks
   - emotional intelligence
-permalink: mind-at-work
+permalink: /mind-at-work
 ---
 
 I have a problem, an [addiction](/addiction), an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I'm going to talk about my most frequent symptoms, my body at home, but my mind at work.
