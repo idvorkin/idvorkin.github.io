@@ -7,41 +7,7 @@ title: iOS Software engineer nomad howto
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/ios-nomad.md)_
 
 # iOS Software engineer nomad howto
-
-So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I'm not sure why you'd want to be such a character, in fact, I'm not sure why I want to be such a character, but I do, and here's how I do it. To be a developer nomad, you better already be a command line wiz. If you're not at an expert at the terminal, vim or Emacs and TMUX - don't even try.
-
-There are three paths - remote development, local development, and hybrid. For all of these you'll need an external keyboard, which I'll also discuss.
-
-<!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
-
-- [Remote Development - Blink](#remote-development---blink)
-    - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
-- [Local Development - iSh, iVIM, Working Copy, etc](#local-development---ish-ivim-working-copy-etc)
-    - [Run Linux - iSH](#run-linux---ish)
-    - [Run git - Working copy](#run-git---working-copy)
-    - [Run Vim - iVIM](#run-vim---ivim)
-    - [Run python - Pythonista](#run-python---pythonista)
-    - [Run Jupyter - Carnets](#run-jupyter---carnets)
-    - [Edit markdown](#edit-markdown)
-- [Hybrid development - Consistency](#hybrid-development---consistency)
-- [The external keyboard.](#the-external-keyboard)
-    - [The keyboard I use](#the-keyboard-i-use)
-    - [The iPad stand I use](#the-ipad-stand-i-use)
-    - [Caps to Control](#caps-to-control)
-    - [Back tick to escape.](#back-tick-to-escape)
-    - [Carrying bags](#carrying-bags)
-- [Related links](#related-links)
-
-<!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
 ### Remote Development - Blink
-
-This is the easy way, but you're going to need a good low latency network.
-
-First you need a remote box, I use lightsail. For 10\$ a month I've never run out of CPU or disk. Next you need to be able to connect to the box using SSH, and that requires an ssh client. I use [blink](https://blink.sh/) and couldn't be happier. Great product, great support.
-
 #### ssh super powers - port forwarding and TMUX auto-attach.
 
 Because ssh doesn't keep persistent sessions, I use TMUX with an auto reattach script. If you're not doing this, go learn how it's awesome. You should also know about ssh [port forwarding](https://github.com/idvorkin/techdiary#ssh)
@@ -69,35 +35,34 @@ My [dot files](https://github.com/idvorkin/settings) should provide some insight
 Remote development is perfect, except of course when you have no and or slow network. At this point you need to get creative. Luckily, there has been lots of improvement in this space.
 
 #### Run Linux - iSH
-
-The holy grail. [iSH](https://iSH.app) takes a very impressive approach. And [tbodt](https://github.com/tbodt/) the author of iSH is incredibly cool, I have the utmost respect for his project and his style, and I even have his user name memorized.
-
-iSH Creates an x86 emulated machine (e.g. simulate execution), and run alpine Linux in it. I love this but it has two big gaps. A) Compatibility B) Speed. There are still CPU instructions and system calls that aren't supported so large swaths of applications don't work - E.g. NPM, Rust. B) Because it's emulated it's slow, so I need to use trimmed down versions of all my configurations.
-
-When your software can run iSH, and is fast enough, you're done. However because of the compatibility and speed concerns, you'll often need other solutions to augment iSH. Here are the ones I use
-
-Useful ish tips:
-
-1. Run ssh-keygen then you can ssh into your other machines
-1. You can access clipboard by cat or pipe-in to /dev/clipboard
-
-#### Run git - Working copy
-
-Working Copy - the best git client for iOS, it's truly fantastic. So many features you should read the documentation as carefully as you would for TMUX.
-
-Even though it's graphical it can be automated because it exposes iOS APIs via URL that other tools (like VIM) can execute. Super cool.
-
-Example callbacks I use are:
-
-Pull All Repos:
-
-    working-copy://x-callback-url/pull?key=secret&repo=%2A
-
-A cousin to Working Copy is Git Hawk this tool allows you to monitor your GitHub messages.
-
 #### Run Vim - iVIM
 
 [iVIM](https://github.com/terrychou/iVim) does a great job being VIM, but you tend not to use VIM in isolation, you need Git and Plugins and often some command line integration. There are workarounds, some of which painful, but I'll describe them here.
+
+OK - this stuff is now pretty stale, be sure to use ivim to look at the ios specific help.
+
+iVIM now support:
+
+* Some plugin integration
+* Nice font upgrade
+* preview windows
+    * ipreview -w (open new preview window)
+<!-- vim-markdown-toc GFM -->
+
+    - [Run python - Pythonista](#run-python---pythonista)
+    - [Run Jupyter - Carnets](#run-jupyter---carnets)
+    - [Edit markdown](#edit-markdown)
+- [Hybrid development - Consistency](#hybrid-development---consistency)
+- [The external keyboard.](#the-external-keyboard)
+    - [The keyboard I use](#the-keyboard-i-use)
+    - [The iPad stand I use](#the-ipad-stand-i-use)
+    - [Caps to Control](#caps-to-control)
+    - [Back tick to escape.](#back-tick-to-escape)
+    - [Carrying bags](#carrying-bags)
+- [Related links](#related-links)
+
+<!-- vim-markdown-toc -->
+
 
 - git integration
 
