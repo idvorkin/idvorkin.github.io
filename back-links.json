@@ -412,7 +412,7 @@
             "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.\n\n",
             "file_path": "_site/anxiety.html",
             "outgoing_links": [
-                "/anxiety-managment",
+                "/anxiety-management",
                 "/be-proactive",
                 "/idle",
                 "/voices"
@@ -437,16 +437,20 @@
             "py/object": "__main__.Page",
             "url": "/anxiety-management",
             "title": "Anxiety Management",
-            "description": "When your emotions aren’t serving you well, it’s helpful to have a solid protocol. This is the one I especially like.\n\n",
+            "description": "When your emotions aren’t serving you well, it’s helpful to have a solid protocol. This is one I especially like.\n\n",
             "file_path": "_site/anxiety-management.html",
             "outgoing_links": [
                 "/addiction",
+                "/anxiety",
+                "/frog",
+                "/mental-pain"
+            ],
+            "incoming_links": [
                 "/anxiety"
             ],
-            "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/anxiety_management.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/appreciate": {
             "py/object": "__main__.Page",
@@ -1164,6 +1168,22 @@
             "markdown_path": "_d/time-off-11-2021.md",
             "doc_size": 17000
         },
+        "/d/time-off-11-2022": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-11-2022",
+            "title": "Time off November 2022 - New York with Ammon, and Then Maureen and Brian for Thanksgiving",
+            "description": "It’s just about thanksgiving 2022, and after 2 years of not being able to go to Oregon, we’re on our away! Through unexpected timing, before going to Oregon, I’m going to New York City with Ammon, and through even more unexpected timing, we just had lay offs at work, and have a major re-organization. Instead of being able to fully take the time off, I’ll be working several days, so having clarity on my priorities is critical.\n\n",
+            "file_path": "_site/d/time-off-11-2022.html",
+            "outgoing_links": [
+                "/happy",
+                "/mind-at-work",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-11-2022.md",
+            "doc_size": 20000
+        },
         "/d/time-off-12-2020": {
             "py/object": "__main__.Page",
             "url": "/d/time-off-12-2020",
@@ -1660,6 +1680,7 @@
                 "/gtd"
             ],
             "incoming_links": [
+                "/anxiety-management",
                 "/be-proactive",
                 "/d/resistance",
                 "/first-things-first",
@@ -1803,6 +1824,7 @@
             "incoming_links": [
                 "/d/time-off-02-2022",
                 "/d/time-off-07-2022",
+                "/d/time-off-11-2022",
                 "/d/time-off-12-2020",
                 "/d/time-off-12-2021",
                 "/hobby",
@@ -2114,7 +2136,7 @@
             "py/object": "__main__.Page",
             "url": "/manager-book",
             "title": "Igor's Book of Management",
-            "description": "Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.\n\n",
+            "description": "Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave and encourages continuous improvement.\n\n",
             "file_path": "_site/manager-book.html",
             "outgoing_links": [
                 "/90days",
@@ -2137,6 +2159,7 @@
                 "/remote-work",
                 "/software-leadership-roles",
                 "/static/igor-feedback-LinkedIn.pdf",
+                "/static/igor-feedback-linkedin.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
                 "/what-i-wish-knew-at-22",
@@ -2155,7 +2178,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 119000
+            "doc_size": 120000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -2189,6 +2212,7 @@
             "incoming_links": [
                 "/addiction",
                 "/anger",
+                "/anxiety-management",
                 "/curious",
                 "/d/resistance",
                 "/d/time-off-12-2020",
@@ -2240,6 +2264,7 @@
                 "/timeoff"
             ],
             "incoming_links": [
+                "/d/time-off-11-2022",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -3319,7 +3344,7 @@
             "py/object": "__main__.Page",
             "url": "/timeoff",
             "title": "Getting the most out of time off",
-            "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we’ll discuss too.\n\n",
+            "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we’ll discuss too.  Like most things time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
             "file_path": "_site/timeoff.html",
             "outgoing_links": [
                 "/addiction",
@@ -3335,6 +3360,7 @@
                 "/d/time-off-02-2022",
                 "/d/time-off-07-2022",
                 "/d/time-off-11-2021",
+                "/d/time-off-11-2022",
                 "/d/time-off-12-2020",
                 "/d/time-off-12-2021",
                 "/mind-at-work",
@@ -3343,7 +3369,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time_off.md",
-            "doc_size": 27000
+            "doc_size": 28000
         },
         "/todo_enjoy": {
             "py/object": "__main__.Page",
