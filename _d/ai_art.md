@@ -20,7 +20,7 @@ Creativity is a criticial aspect of art, and that's something which I think AI c
     - [Lipsync a video/audio](#lipsync-a-videoaudio)
     - [NLP: GPT-3](#nlp-gpt-3)
     - [Face Generator](#face-generator)
-    - [Image to Word Generation](#image-to-word-generation)
+    - [Word to Image Generator: DALL-E and Stable Diffusion](#word-to-image-generator-dall-e-and-stable-diffusion)
     - [Not a X](#not-a-x)
 
 <!-- vim-markdown-toc -->
@@ -76,11 +76,10 @@ Picard
 
 ### Face Generator
 
-### Image to Word Generation
+### Word to Image Generator: DALL-E and Stable Diffusion
 
-[Dall-E is Open GPT's](https://openai.com/blog/dall-e/) thing, and the examples lower in the blog post have some level of interaction.
-
-Much better is this Russian variant ([see gallery](with a live demo (annoying need to translate to Russian first):
+* [Dall-E is OpenAI's Image Generator](https://openai.com/blog/dall-e/) the examples lower in the blog post have some level of  interaction.
+* [Tool to do art with image generators](https://openart.ai/promptbook)
 
 ### Not a X
 
