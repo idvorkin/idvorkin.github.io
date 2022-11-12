@@ -82,9 +82,6 @@ Two days before the start of the trip we had layoffs (including my partners who 
     - [Diet](#diet)
     - [Sleep](#sleep)
 - [Mental quicksand](#mental-quicksand)
-    - [Guilt of missing summer time with family](#guilt-of-missing-summer-time-with-family)
-    - [Forgetting something with lots bring](#forgetting-something-with-lots-bring)
-    - [Stock market being down impacting my ability to spend](#stock-market-being-down-impacting-my-ability-to-spend)
     - [Missing important stuff in critical time at work.](#missing-important-stuff-in-critical-time-at-work)
 - [To make into a separate post](#to-make-into-a-separate-post)
     - [Friday to NYC](#friday-to-nyc)
@@ -110,6 +107,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 
 - ☐ Practice every day
 - ☐ Bring my magic fanny pack.
+- ☐ Work on anniversery card
 
 ### General Magic
 
@@ -132,12 +130,12 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 
 ### Biking
 
-- Don't think so, will be in canada.
+- ☐ Ride a citi bike
 
 ### Ballooning
 
 - ☐ Bring lots of balloons and manual pump
-- ☐ Make some balloons for kids at the airport
+- ☑  Make some balloons for kids at the airport
 
 ### Joy Activities
 
@@ -166,7 +164,7 @@ Gym Days:
 ### Diet
 
 - ☐ Weight myself daily
-- ☐ Be ready to get back on weight track for end of August weight in.
+- ☐ Be ready to get back on weight track for end of November weight in.
 
 ### Sleep
 
@@ -174,22 +172,6 @@ Gym Days:
 - ☐ Only read before bend.
 
 ## Mental quicksand
-
-### Guilt of missing summer time with family
-
-- Very crap weather in seattle, little time to enjoy sumemr with family
-- Kept trip a bit shorter
-- Work from trip to get other time off with family.
-
-### Forgetting something with lots bring
-
-- Bought max size carry on
-- Made several lists of stuff to bring (magic, balloon, health, )
-- Packing lots of health stuff.
-
-### Stock market being down impacting my ability to spend
-
-Even with a down market, I've still got lots of savings, and a fantastic job, and certainly deserve to enjoy myself.
 
 ### Missing important stuff in critical time at work.
 
@@ -205,7 +187,9 @@ See the section about keep work at work.
 - Super nice catching up with him, I never see him in person so lots to talk about and catch up on.
 - Playing spelling bee with Ammon was fun, and then taking time some hours to write up this travel post.
 - Note to self, read the time off post before hand.
-- Deliberate: I'll take an hour to catch up with work when I get to the hotel, then I'll hang with Ammon, and then he has as show where I'll work a few more hours.
+- Made a balloon for kid on airport to city bus
+- Did magic trick for girl, totaly missed. luckily she was drunk as a skunk and rather happy, stuffed card in her bra
+- Lost air tag, went on hunt to find it. Found it but too late was crushed by a car
 
 ### Priorities
 
