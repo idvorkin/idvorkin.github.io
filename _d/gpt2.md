@@ -147,4 +147,6 @@ See me creating this summary in my enabling environment, observe that I have GPT
 
 With source code [here](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/gpt3.py)
 
+* [Used as an excel macro to perform complex extractions](https://twitter.com/shubroski/status/1587136794797244417)
+
 ## Related ideas
