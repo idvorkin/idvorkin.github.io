@@ -3,13 +3,13 @@ layout: post
 title: "Anxiety, the gap between reality and expectations"
 tags:
 permalink: /anxiety
+aliases: ["/anxiety","/anxious"]
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun-depression.png
 redirect_from:
   - /anxious
 ---
 
-Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The
-pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.
+Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.
 
 <!-- prettier-ignore-start -->
 
@@ -25,6 +25,7 @@ pain of anxiety is designed for threatening circumstance drawing your attention 
 - [Detection](#detection)
 - [Antidotes](#antidotes)
 - [Quotes](#quotes)
+- [Anxiety Protocol from What I learned so Far](#anxiety-protocol-from-what-i-learned-so-far)
 - [Personal Examples](#personal-examples)
 
 <!-- vim-markdown-toc -->
@@ -67,9 +68,9 @@ Interesting, I picked up a mantra, "This too shall pass", with the idea of smoot
 
 Perspective can be imagined in two dimensions - X=time and Y=Co(t).
 
-**Co(t)** The amount of things being considered. This can be from a single insult to your life. The units on this are unclear, for now, lets normalize from 0 to all the things you can be considering accross all aspects of your life.
+**Co(t)** The amount of things being considered. This can be from a single insult to your life. The units on this are unclear, for now, lets normalize from 0 to all the things you can be considering across all aspects of your life.
 
-**SIDEBAR: Mu(t)** is a concept I [explored long ago](http://ig2600.blogspot.com/2015/05/measuring-in-moment-happiness-with.html) Measuring in the moment happiness (InMoHap). It's not the perfect measure, but might be more useful then Co. for this convo.
+**SIDEBAR: Mu(t)** is a concept I [explored long ago](http://ig2600.blogspot.com/2015/05/measuring-in-moment-happiness-with.html) Measuring in the moment happiness (InMoHap). It's not the perfect measure, but might be more useful than Co. for this convo.
 
 So Co(t) is how much we are considering at time.
 
@@ -138,6 +139,11 @@ Depending on the depth of the relationship and the reaction so far, it might be 
 - Worry is not preparation, nor does it make you better.
 - Anxiety is "keeping a problem in the foreground". This sucks up your CPU, and means you can't spin down your CPU.
 - Instead the answer is commit to disk all open decisions, and then kick it out of the foreground till ready (this is the GTD solution).
+
+
+### Anxiety Protocol from What I learned so Far
+
+{%include summarize-page.html src="/anxiety-management" %}
 
 ### Personal Examples
 

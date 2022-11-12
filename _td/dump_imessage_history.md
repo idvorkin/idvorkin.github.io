@@ -8,6 +8,15 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 # Accessing iMessage history
 
+You'll need to start by taking full disk access for you terminal
+
+Open System Preferences, find the “Security & Privacy” pane, click on the “Privacy” tab, and find the “Full Disk Access” item. Make sure your SQL client and/or terminal are selected.
+
+You'll also need to make sure you've enabled full cloud syncing if your message history is truncated
+
+iMessage -> Preferences -> Imessage -> settings (Apple Id -> Enable Messages is iCloud) , grayed out sync now button.
+<https://www.mackungfu.org/HowtomakesureyourMacisusingMessagesiniCloud>
+
 iMessage is just a sqllite file located @
 
     ~/Library/Messages/chat.db
@@ -30,5 +39,5 @@ Same query, dump the whole thing.
 
 References:
 
-- iMessage Analyis in pandas: https://github.com/yortos/imessage-analysis
-- python example: https://github.com/mattrajca/pymessage-lite/blob/master/imessage.py
+- iMessage Analyis in pandas: <https://github.com/yortos/imessage-analysis>
+- python example: <https://github.com/mattrajca/pymessage-lite/blob/master/imessage.py>

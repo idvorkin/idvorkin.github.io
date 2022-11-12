@@ -10,6 +10,12 @@ redirect_from:
   - /search-inside-yourself
   - /meditate
   - /meditation
+alias:
+  - /siy
+  - /search-inside-yourself
+  - /meditate
+  - /meditation
+
 
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun-meditate.png
 ---

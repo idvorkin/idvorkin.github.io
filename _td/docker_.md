@@ -10,6 +10,7 @@ Docker has 2 values, isolation and repeatable setup. Here are my notes
 <!-- vim-markdown-toc GFM -->
 
 - [Useful commands and notes](#useful-commands-and-notes)
+- [TUI](#tui)
 - [Real applications, my blog](#real-applications-my-blog)
     - [Requirements](#requirements)
 
@@ -23,6 +24,12 @@ Docker has 2 values, isolation and repeatable setup. Here are my notes
 - docker run -it image - run image in interactive mode, with a terminal
 - docker build -t image_name directory name - build and assign it a tag
 - Kill all stopped containers - `docker rm $(docker ps --filter status=exited -q)`
+- Erase dangling containers
+  docker volume rm \$(docker volume ls -qf dangling=true)
+
+## TUI
+
+- lazydocker
 
 ## Real applications, my blog
 

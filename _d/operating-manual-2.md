@@ -16,8 +16,10 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Weekend morning routine](#weekend-morning-routine)
     - [Weekday morning routine](#weekday-morning-routine)
     - [Morning Kryptonite](#morning-kryptonite)
+- [After Work Routine](#after-work-routine)
+    - [Post work routine](#post-work-routine)
+    - [Post work Kryptonite](#post-work-kryptonite)
 - [My super powers](#my-super-powers)
-    - [From Strength Finder](#from-strength-finder)
     - [Relationships](#relationships)
     - [Technical Depth and Breadth](#technical-depth-and-breadth)
     - [Technical Best Practice](#technical-best-practice)
@@ -89,11 +91,37 @@ I have two common failure modes to my morning routine.
 - Hitting snooze when my alarm goes off. The worst of all words, not sleeping, and not being up and doing stuff.
 - Lying in bed awake when I wake up before 5. Sometimes I wake up and can't fall back asleep @ 3 or 4 (which isn't crazy cuz sometimes I go to bed @ 7 or 8). Similar to hitting snooze, I'm not sleeping, and I'm not accomplishing anything.
 
+## After Work Routine
+
+My discipline is strong in the morning, but by the time I get home from work, I'm usually energy  and will power depleted.
+
+### Post work routine
+
+* I can fight my lack of will power with a schedule.
+* Current schedule, 1 day Zach date, 1 day Amelia date, 1 day friend date
+* Get a healthy snack - popcorn or vegetables (not a huge container of fruit)
+
+### Post work Kryptonite
+
+* Sitting in my easy chair, mindlessly on my phone
+* Eating continuously
+
 ## My super powers
 
-### From [Strength Finder](/strength-finder)
+{%include summarize-page.html src="/strength-finder" %}
 
-Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called Strength Finder and it discovered my strengths are Activator , Communication, Problem Solving (Resolver in Strength Finder speak) Adaptability, and Ideation.
+**Activator** - People who are especially talented in the Activator theme can
+make things happen by turning thoughts into action. They are
+often impatient.
+
+**Communication** - People who are especially talented in the Communication
+theme generally find it easy to put their thoughts into words.
+They are good conversationalists and presenters.
+
+**Restorative** - People who are especially talented in the Restorative theme are
+adept at dealing with problems. They are good at figuring out
+what is wrong and resolving it.
+
 
 ### Relationships
 
@@ -259,3 +287,4 @@ At the end of 2016, I joined [Amazon](/amazon) to learn the business of software
 I spent a lot of time learning to be a manager, and am [writing a book, or really notes to myself](/manager-book).
 
 {%include summarize-page.html src="/manager-book" %}
+

@@ -5,6 +5,9 @@ tags:
   - health
   - emotional intelligence
 
+alias:
+  - /emotional-health
+  - /emotional-health-practices
 permalink: /emotional-health
 redirect_from:
   - /emotional-health-practices

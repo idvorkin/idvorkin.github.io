@@ -7,6 +7,7 @@ inprogress: true
 featured: true
 comments: true
 permalink: /eulogy
+aliases: ["/eulogy"]
 imagefeature: https://github.com/idvorkin/blob/raw/master/icon_eulogy_1200_628.png
 tags:
   - how igor ticks
@@ -25,7 +26,7 @@ _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 - [Disciple of the 7 habits of highly effective people](#disciple-of-the-7-habits-of-highly-effective-people)
 - [Fit fellow](#fit-fellow)
 - [Emotionally healthy human](#emotionally-healthy-human)
-- [Husband to Tori - his life long partner.](#husband-to-tori---his-life-long-partner)
+- [Husband to Tori - his life long partner](#husband-to-tori---his-life-long-partner)
 - [Technologist](#technologist)
 - [Professional](#professional)
 - [Family man](#family-man)

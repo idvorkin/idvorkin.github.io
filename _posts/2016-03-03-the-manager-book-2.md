@@ -10,7 +10,7 @@ redirect_from:
   - /the-manager-book
 ---
 
-Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement.
+Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave and encourages continuous improvement.
 
 This post uses the word manager, but the majority of topics are applicable to all software job functions regardless of seniority or the number of direct reports, zero direct reports included.
 
@@ -33,7 +33,7 @@ This post uses the word manager, but the majority of topics are applicable to al
 <!-- vim-markdown-toc GFM -->
 
 - [What does a manager do](#what-does-a-manager-do)
-    - [What are a managers responsibilities](#what-are-a-managers-responsibilities)
+    - [What are a manager's responsibilities](#what-are-a-managers-responsibilities)
     - [How do you measure their success](#how-do-you-measure-their-success)
     - [What is a manager accountable for](#what-is-a-manager-accountable-for)
     - [How do you describe your job to people outside the industry](#how-do-you-describe-your-job-to-people-outside-the-industry)
@@ -50,7 +50,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [How do you support folks by pre-writing self assessments](#how-do-you-support-folks-by-pre-writing-self-assessments)
     - [How do you give fast, frequent, feedback](#how-do-you-give-fast-frequent-feedback)
     - [How do you think about situational leadership](#how-do-you-think-about-situational-leadership)
-    - [What is the level specific career expectations and growth strategies](#what-is-the-level-specific-career-expectations-and-growth-strategies)
+    - [What are the level specific career expectations and growth strategies](#what-are-the-level-specific-career-expectations-and-growth-strategies)
     - [How do you help people switch jobs](#how-do-you-help-people-switch-jobs)
     - [How do you keep people motivated](#how-do-you-keep-people-motivated)
     - [How to motivate through personal experience](#how-to-motivate-through-personal-experience)
@@ -64,7 +64,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [How do you grow top talent](#how-do-you-grow-top-talent)
     - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
     - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
-    - [How do you have a difficult converastion](#how-do-you-have-a-difficult-converastion)
+    - [How do you have a difficult conversation](#how-do-you-have-a-difficult-conversation)
 - [Culture](#culture)
     - [What is your ideal culture](#what-is-your-ideal-culture)
     - [How do you help a team gel](#how-do-you-help-a-team-gel)
@@ -72,7 +72,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [How do you make a good culture](#how-do-you-make-a-good-culture)
     - [How do you handle Remote Work](#how-do-you-handle-remote-work)
     - [What about Work Life Balance](#what-about-work-life-balance)
-    - [How you deal with team disagrees with the leadership](#how-you-deal-with-team-disagrees-with-the-leadership)
+    - [How do you deal with a team that disagrees with the leadership](#how-do-you-deal-with-a-team-that-disagrees-with-the-leadership)
     - [Agency and Psychological Safety](#agency-and-psychological-safety)
     - [Kudos Boards - Appreciations](#kudos-boards---appreciations)
 - [Process and Mechanism](#process-and-mechanism)
@@ -111,6 +111,9 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [What are your thoughts on a PIP](#what-are-your-thoughts-on-a-pip)
     - [How do you deal with people performance issues](#how-do-you-deal-with-people-performance-issues)
     - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
+- [Team Insecurity](#team-insecurity)
+    - [Everyone wants to feel good, support each other](#everyone-wants-to-feel-good-support-each-other)
+    - [Maintain perspective](#maintain-perspective)
 - [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
     - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
     - [Telling the team](#telling-the-team)
@@ -119,6 +122,8 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
     - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
+    - [Insufficient progress -  Double down or pivot](#insufficient-progress----double-down-or-pivot)
+    - [Layoffs](#layoffs)
 - [Personal Motivations](#personal-motivations)
     - [Why do you find management attractive](#why-do-you-find-management-attractive)
     - [What is your dream job](#what-is-your-dream-job)
@@ -142,13 +147,13 @@ This post uses the word manager, but the majority of topics are applicable to al
 
 <a id="l-what-managers-do"></a>
 
-### What are a managers responsibilities
+### What are a manager's responsibilities
 
 ### How do you measure their success
 
 ### What is a manager accountable for
 
-The success of a manager is the success of the team. This manifest in 4 dimensions:
+The success of a manager is the success of the team. This manifests in 4 dimensions:
 
 <!--
 An acid test:
@@ -159,10 +164,10 @@ An acid test:
 
 | Dimension                          | Success Means                                                                                                                                                                                                                                     |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Business Results                   | Team delivers business value for our customers and organization. I define success (KPI), and help team understand and deliver it.                                                                                                                 |
+| Business Results                   | Team delivers business value for our customers and organization. I define success (KPI), and help the team understand and deliver it.                                                                                                                 |
 | High performance people and teams  | Team is well gelled and team members help each other. Everyone has growth plans which fit their needs and they are executing them.                                                                                                                |
-| Engineering Efficiency and Process | Engineering systems and protocols ensure a pit of success. Process is automated, and releases have high velocity and minimal risk.                                                                                                                |
-| Technical Assets                   | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (take debt if you might be able to write off the asset) |
+| Engineering Efficiency and Process | Engineering systems and protocols ensure a pit of success. Process is automated, and releases have high velocity and minimal risk.                                                                                                                 |
+| Technical Assets                   | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (take debt if you might be able to write off the asset). |
 
 ### How do you describe your job to people outside the industry
 
@@ -170,22 +175,22 @@ I run a factory which produces widgets and has employees. For those in the indus
 
 | Dimension                          | Analog               | Metrics and Measures | Success Means                                                                                                                                                                         |
 | ---------------------------------- | -------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Business Results                   | Produced Widgets     | [l20](l20)           | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy, and explaining how our factory runs.                            |
+| Business Results                   | Produced Widgets     | [l20](l20)           | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy and explaining how our factory runs.                            |
 | High performance people and teams  | Factory Workers      | [l21](l21)           | Workers in the factory are healthy, learning, want to come to work every day, and getting along with co-workers.                                                                      |
-| Engineering Efficiency and Process | Operating procedures | [l22](l22)           | The factory is efficient: Production good and improving. Widgets comes out consistently and on schedule? New employees know what to do. Everyone knows what to do during emergencies? |
-| Technical Assets                   | Factory machines     | [l23](l23)           | Machines in the factory adjusted quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency                                   |
+| Engineering Efficiency and Process | Operating procedures | [l22](l22)           | The factory is efficient: Production is good and improving. Widgets come out consistently and on schedule. New employees know what to do. Everyone knows what to do during emergencies. |
+| Technical Assets                   | Factory machines     | [l23](l23)           | Machines in the factory adjust quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency.                                   |
 
 <div> </div>
 
 - l20
 - Are wanted by customers
-- Are produced on time and budget.
+- Are produced on time and on budget.
 
 <div> </div>
 
 - l21
 - Are happy based on surveys
-- Are getting promos frequently
+- Are getting promotions frequently
 - Recommend joining the factory to their friends
 - Work at the factory for several years
 
@@ -203,7 +208,7 @@ I run a factory which produces widgets and has employees. For those in the indus
 - l23
 - Support a wide range of widgets
 - Can be extended to build new widgets at low cost
-- Have have availability
+- Have high availability
 - Operate at low cost
 
 ### Hardest part about being a manager
@@ -360,16 +365,16 @@ To help with the last two questions, this document has the list of expectations 
 
 Think through what will be delivered in the next 1-6 months, and how it will be delivered.
 
-Most companies have a performance program - At MSFT it's connects, at FB it's PSCs and Amazon it's Forte. As part of this process, and employee writes a self assessment for the work that happened in the last 6 months - 1 year, and then the manager uses that as a basis of the review they'll write.
+Most companies have a performance program - At MSFT it's connects, at FB it's PSCs and Amazon it's Forte. As part of this process, an employee writes a self assessment for the work that happened in the last 6 months - 1 year, and then the manager uses that as a basis of the review they'll write.
 
 There are several advantages to pre-writing these documents:
 
-- The peep and manager can be deliberate about what work is done, and discuss if projects make sense.
+- The peep and manager can be deliberate about what work is done, and discuss if projects make sense, and if they are the right projects.
 - The peep and manager understand the impact provided by the work.
-- The peep has a record of what they've done in the performance period, instead of only having a crisp memory of the last few months.
+- The peep has a record of what they've done in the performance period, instead of only having a crisp memory of the last few months, and can use that to write the self assessment.
 - The manager can calibrate the work to be done so there are no scope surprises.
 
-Good self assessments are concise, focuses on impact, and then how you delivered the impact. More details at [I.M Wright](https://imwrightshardcode.com/2018/06/connects-with-impact/):
+Good self assessments are concise, focus on impact, and then how you delivered the impact. More details at [I.M Wright](https://imwrightshardcode.com/2018/06/connects-with-impact/):
 
 - _[Clearly measurable impact]_ by _[work you’ve done yourself and/or with others]._
   - Relevant artifacts, or quote from others validating the claim.
@@ -417,9 +422,9 @@ In each of these stages different support is required.
 | Incompetent         | 1. Instruct and Explain - Tell them what to do | 2. Guide and Encourage - Show them how to do it |
 | Competent           | 4. Empower - Explain Why Not                   | 3. Facilitate - Explain Why.                    |
 
-### What is the level specific career expectations and growth strategies
+### What are the level specific career expectations and growth strategies
 
-Depends on the skill level (E.g. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above . Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
+Depends on the skill level (E.g. [levels](https://www.levels.fyi/) ): SDE-I is a junior developer, SDE-II intermediate, and SDE-III senior and above. Also see my post on the differences between [Tech Lead, Architects and Managers](/software-leadership-roles).
 
 | Level        | Approach                                                                                                                                                                                                                                                                                                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -468,7 +473,7 @@ My goal is to find people the right job, not the job on my team. I coach a lot o
 
 <a id="l-motivation"></a> <a id="l-motivate"></a>
 
-Classically, motivation is comprised of carrots and sticks, where carrots focus on extrinsic motivation like compensation. Turns out sticks and exterinsic motivations fail for creative tasks. Instead I focus on the following dimensions
+Classically, motivation is comprised of carrots and sticks, where carrots focus on extrinsic motivation like compensation. Turns out sticks and extrinsic motivations fail for creative tasks. Instead I focus on the following dimensions
 
 Motivation has 2 dimensions, personal experience and team environment. Personal experience is based on the book Drive, and is about encouraging Autonomy, Mastery and Purpose. The team environment is about the culture in which you experience the personal dimension.
 
@@ -478,17 +483,17 @@ _Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are or
 
 ### How to motivate through personal experience
 
-I use Danial Pink's [DRIVE model](https://youtu.be/t9wDmRMtPnA). TL;DR: Extrinsic motivation doesn't work, you need intrinsic motivation, which is driven by Autonomy mastery purpose.
+I use Daniel Pink's [DRIVE model](https://youtu.be/t9wDmRMtPnA). TL;DR: Extrinsic motivation doesn't work, you need intrinsic motivation, which is driven by Autonomy mastery purpose.
 
 **Autonomy: Direct thy self**
 
 - You choose what you work on (Link: How does resource allocation work)
 - You are the end to end owner.
 - You make the decisions, though I'm here to support. Even if I disagree, it's your call.
-- We collaborate on the definition of success, and then you chose how it gets done.
+- We collaborate on the definition of success, and then you choose how it gets done.
 - I support you in private, by helping you understand success, sharing how I'd do it, helping you see around corners, and bringing up signals and context you may be missing.
 - I support you in public by re-inforcing your message and needs, and nudging where nudges are required.
-- You know the the team has your back
+- You know the team has your back
 - I protect you from harmful rays of upper management and business
 - Hack-a-thons
 
@@ -521,7 +526,7 @@ People also care deeply about coaching and career growth:
 
 I focus significant energy nurturing the [team culture](#l-culture):
 
-_As a team we all aspire to a culture where coming to work is fun, the team members put the team needs ahead of their own, the team gelled and by people being vulnerable we built a strong sense of psycholigcal safety_
+_As a team we all aspire to a culture where coming to work is fun, the team members put the team needs ahead of their own, the team gelled and by people being vulnerable we built a strong sense of psychological safety_
 
 I spend significant energy generating [Moments](/moments-at-work):
 
@@ -529,9 +534,9 @@ _Of all the places we spend our time, work is the one that dominates. However, w
 
 Some moments like:
 
-- Constant celebrating people doing stuff fun
+- Constant celebrating people doing stuff
 - Hack-a-thons
-- Playing cards for appreciation
+- Playing cards for appreciation (Link: Playing cards for appreciation)
 - Managers making breakfast
 
 ### How do you give challenging feedback
@@ -725,14 +730,14 @@ Often, when folks think of career development, they fixate on their job title an
 
 {%include blob_image.html src="blog/career-convo.png" %}
 
-### How do you have a difficult converastion
+### How do you have a difficult conversation
 
 From Simon Sinek, a great script:
 
 - I need to have a difficult conversation
-- Afraid to have this conversation,
-- afraid to say something wrong, and accidentally trigger someone
-- I know having this conversation is more important then my fears against it
+- I'm afraid to have this conversation,
+- I'm afraid to say something wrong, and accidentally trigger someone
+- I know having this conversation is more important than my fears against it
 - Please work with me to struggle through this.
 - Because want us to tackle this subject
 
@@ -828,11 +833,11 @@ Equally important, when folks consider their career, I remind them there are mor
 
 {%include blob_image.html src="blog/career-convo.svg" %}
 
-### How you deal with team disagrees with the leadership
+### How do you deal with a team that disagrees with the leadership
 
 Step 1: Believe and deeply understand it. Either I believe in it, or I deeply understand the decision and have disagreed and committed. As part of committing, I'm all in, and will share that.
 
-Step 2: Listen to the team. The team has concerns, hopefully I can predict the, ahead of time and be prepared for the easy ones, then truly listen to new concerns, and address them.
+Step 2: Listen to the team. The team has concerns, hopefully I can predict them ahead of time and be prepared for the easy ones, then truly listen to new concerns, and address them.
 
 Step 3: Focus on the win/win, and talk through a ripcord.
 
@@ -885,7 +890,7 @@ This can be especially true when process is created high in the org chart to sol
 
 **The antidote** - A review of process is essential to ensure it's still getting the maximum value with minimum cost.
 
-**Toxic process** - Bad process will disenfranchise ownership and stifling passion. It'll slow down things that can be fast. There is nothing more powerful then a motivated engineer, don’t let process take that away.
+**Toxic process** - Bad process will disenfranchise ownership and stifle passion. It'll slow down things that can be fast. There is nothing more powerful than a motivated engineer, don’t let process take that away.
 
 ### On Change
 
@@ -924,7 +929,7 @@ Two way door changes are much safer when performed well:
 
 ### Engineering Excellence - Operational Review and Correction of Errors
 
-There should always been an on-call, an engineering excellence work stream, and a periodic review meeting and a [correction of errors](/coe) process.
+There should always be an on-call, an engineering excellence work stream, and a periodic review meeting and a [correction of errors](/coe) process.
 
 1. How do we know our customer is having a good day?
 2. How do we maximize our velocity
@@ -932,21 +937,16 @@ There should always been an on-call, an engineering excellence work stream, and 
 4. How do we sleep well at night?
 5. How do we get max learning from outages?
 
-By the way, I think a manager should be on all pages and outages.
+By the way, I think a manager should be on all pages and outages. This is a great way to get a strong appreciation for boots on the ground reality.
 
-- On all the pages
-- Strong appreciation for boots on the ground reality.
-
-Also need to review all outages
-
-- Write up for all outages, [Correction Of Errors](/coe) for major outages -
+- Write up for all outages, [Correction Of Errors](/coe) for major outages
 - Maximize value of mistakes, don't make them twice.
-- For all customer impacting event, review w/Customer Impact, root cause understood, and commitment when to address.
+- For all customer impacting events, review w/Customer Impact, root cause understood, and commitment when to address.
 - Observability
-  - How do we get a page next time.
-  - How do we see what's going on.
+  - How do we get a page next time?
+  - How do we see what's going on?
 - Testing systems.
-  - Very high leverage active
+  - Very high leverage activity
 
 ### Data Driven - Customer and Business Metric Reviews
 
@@ -984,11 +984,11 @@ Pro tip for surveys - use part of a meeting to complete a fast survey. This ensu
 
 The goal is to maximize the impact of the team.
 
-Small companies and insulated teams can do bottom up goal settings, but as companies get larger, it's hard to have sufficient insight into the company priorities, and hard to align goals cross teams, which lessons the impact.
+Small companies and insulated teams can do bottom up goal settings, but as companies get larger, it's hard to have sufficient insight into the company priorities, and hard to align goals across teams, which lessens the impact.
 
 Larger teams require a top down business strategy intersected with a bottom up execution recommendation.
 
-Ideally Engineering Excellence (EE) is built as part of a feature as it is in part of the feature costs. NOTE: It's OK to defer some of the engineering tasks till after shipping but it's not OK to say a project is complete till the Engineering excellence costs are paid.
+Ideally Engineering Excellence (EE) is built as part of a feature as it is in part of the feature costs. NOTE: It's OK to defer some of the engineering tasks till after shipping but it's not OK to say a project is complete till the engineering excellence costs are paid.
 
 Systems rot over time, so EE should have a standing budget, usually 10%-20% of team capacity. The team should be empowered to spend this budget as required.
 
@@ -1059,14 +1059,14 @@ There are some more concepts I need to flesh out:
 Imagine we want to build a new road.
 
 1. Start of time: PM figures out there's a market for a road, and the needs of the customer, and comes up with a rough idea of where the road needs to be between.
-1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or somewhere else as other folks have tried digging there, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper
+1. Slightly After: EM starts surveying broadly, and discovers can't go some places because there's a giant mountain, or somewhere else as other folks have tried digging there, but fell through, and that someone has started making a path from the other side, so if we meet at the middle it'll be cheaper.
 1. After: Senior Engineers come in and start figuring out where they'll build, what's the safest path, and what's a realistic schedule
 1. After: Intermediate dev's are assigned a chunk of the road and start building it.
 1. After: Junior devs are given very clear tasks, and start doing them.
 
 ### Prioritize Ruthlessly
 
-A great mantra for life, individual contributors, and especially folks supporting more junior folks. A great article that deep dives into the topic [here](https://alexturek.com/2022-03-07-How-to-do-less/)
+A great mantra for life, individual contributors, and especially folks supporting more junior folks. A great article that deep dives into the topic [here](https://alexturek.com/2022-03-07-How-to-do-less/).
 
 ## Hiring
 
@@ -1076,19 +1076,19 @@ Most companies have their “competencies” they test for. But I abstract it do
 
 - Smart (Can code, understands, sees critical paths)
   - Teach me something you deeply understand
-  - Walk through X, and Y, how do you, explain the trade offs.
+  - Walk through X, and Y, how do you, explain the tradeoffs.
 - Get things done (wants to ship, owns it):
   - What matters to you?
   - Tell me something hard you did?
   - Tell me your favorite parts?
 - EQ: (Not an asshole, Continuous Learning, Sees impact off his action, self aware, Team First )
   - Tell me a time you got in a fight
-  - Tell me the hardest feedback you received.
+  - Tell me the hardest feedback you received
   - Tell me the hardest feedback you gave
 
 ### Do they prefer to hire only experienced folks
 
-I need a pipeline of developers for mentorship, fan out and succession planning.
+I need a pipeline of developers for mentorship, fan out, and succession planning.
 
 Need a Principal per 30 people.
 
@@ -1106,13 +1106,13 @@ Ratio Senior: SDE-II: SDE-I (1,2,2) => ten person team: 2, 4, 4.
 
 Generalists - 99% of time
 
-1. Industry changes to much.
-2. Mostly about Architecture/Design and SDL and coding, domain and language easy to learn.
+1. Industry changes too much.
+2. Mostly about Architecture/Design and SDL and coding, domain and language are easy to learn.
 
 Specialist - 1% on very specific teams.
 
 1. File system
-2. Distributed system transaction processing.
+2. Distributed system transaction processing
 3. Firmware engineers
 
 Want full stack teams:
@@ -1139,8 +1139,8 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
 
 - Before even thinking of funnels
   - Strive to be a class act and do your best.
-  - It's a small world. [People will learn what you value, and how you work](/static/igor-feedback-LinkedIn.pdf)
-  - Create [public artifacts](https://bitly.com/igor-wlb-manife)
+  - It's a small world. [People will learn what you value, and how you work](/static/igor-feedback-linkedin.pdf)
+  - Create [public artifacts](https://bitly.com/igor-wlb-manifesto)
 - Top of Funnel
   - Interview events
   - Internal Talks
@@ -1156,11 +1156,11 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
   - Post interview - magic trick, after interview lets make time to chat
   - Push to get interviews done ASAP
   - Push to get results to candidate ASAP
-  - Walk out of interview connect on linked in and chat with them
+  - Walk out of interview connect on LinkedIn and chat with them
 - Bottom of the Funnel
   - Focus on the needs of the candidate, then talk about how job can solve their needs
   - Beer/Coffee/Call
-  - Share artifacts, and evidence of my teams operations
+  - Share artifacts, and evidence of my team's operations
   - Invite them to talk with the team I support
   - Invite them to have lunch with the team
   - Help them build and evaluate their [dream job, and job switching decision making matrix](/job).
@@ -1178,11 +1178,11 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
 
   - Review internal code/design/documentation artifacts. Ask candidate for artifacts they're proud of.
   - Go on a whiteboard to have them explain one of their systems, or help you on yours. No need for the candidate to practice, this is just them doing their day job.
-  - Talk about hard situations they've had. Listen for the criteria smart/gets shit done/emotionally intelligent
+  - Talk about hard situations they've had. Listen for the criteria smart/gets things done/emotionally intelligent
 
 ### What are better kinds of interviews
 
-I've heard the tech interview model described as the second worst kind of assessment strategy, it's only better then everything else we know.
+I've heard the tech interview model described as the second worst kind of assessment strategy, it's only better than everything else we know.
 
 That might be true, but I've also seen some novel ideas for interviews (Indeed uses these), and I'd be interested to try using them:
 
@@ -1194,10 +1194,10 @@ That might be true, but I've also seen some novel ideas for interviews (Indeed u
 
 I always start with "Happy for you, sad for us".
 My goal is to find the right role for an employee, not to have them on the team.
-Ask if you want me to talk you out of it, or to reinforce your choice.
-Help you think through decisions
+Ask if you want me to talk you out of it or to reinforce your choice.
+Help you think through decisions.
 TODO: Add story of Neha
-Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are stagnant which is bad
+Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are stagnant which is bad.
 
 <!--
 ### Best hire of your career
@@ -1282,6 +1282,30 @@ Then there's a formal PIP. Depends on your company but very similar to above, bu
   - Clarify expectations
   - Provide a short term lowering of expectations
   - Consider LOA or accommodations as appropriate
+
+## Team Insecurity
+
+* Very common situtatoin
+* Team feels nothing they/EM can do - but that's completely wrong!!
+
+### Everyone wants to feel good, support each other
+
+ Happiness is a choice!
+
+Every day I walk past a beggar, he only has 1 leg, and like 6 teeth, but he's always smiling. Wet or dry, snow or sun, always a beaming mostly toothless smile. One day I ask him "Hey man, I gotta ask, why are you always so positive"? And he answered.
+
+"Look, every day I have a choice, I can be happy or miserable" - why would I choose miserable?
+
+Now, as a team we want to support each other, lets help each other by reminding each other of these things and the importance of choosing happiness.
+
+
+### Maintain perspective
+
+* When there's mental pain, time bound shrinks, as does all the attributes
+* Share all the good stuff and big pictures
+* Extra focus on appreciation
+* Increase Time Range
+* Be Patient
 
 ## Charters, Re-orgs and Bootstrapping
 
@@ -1416,7 +1440,7 @@ In general when this happens there are a few common reactions
 A common reason for this is the old team that had the charter, likely only planned out for 120% of there engineers. So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there's only work for 3 people, and be sad.
 
 **The new charter is much simpler then expected**
-**The new charter isn't' as interesting**
+**The new charter isn't as interesting**
 
 It's common to oversimplify from a distance. Once the team gets into the details, they'll either see it's true, and they'll find new good stuff to do, or, far more likely they'll find much more nuance, subtlety and ambiguity in the new space.
 
@@ -1430,6 +1454,83 @@ This is pretty similar to the whole team getting a new job, and [the first 90 da
 
 A great way to do this is set the team up to do spikes on the major work items, this will overcome the above concerns, building knowledge and motivating the early wins.
 
+### Insufficient progress -  Double down or pivot
+
+When progress is insufficient, there are two situations, both painful, with overlapping symptoms, and some shared requirements.
+
+1/ You believe the charter can still be successful, but needs more time due to execution gaps/insufficient progress/insufficient resources.
+
+2/ You no longer believe the space can be successful.
+
+Both 1/ and 2/ can be subjective, and there can be disagreement, but an objective criteria can help establish this.
+
+**Symptoms:**
+
+1/ Progress towards goals is slower than expected.
+2/ Team is demotivated - the team knows the goals, and they know they aren't making progress.
+
+**Communications:**
+
+1/ Surprises are bad - you need a plan, and to let your leadership and partners know what is going on, and time till you'll have a plan.
+2/ You need to let the team know what is going on, and that a plan of action is happening to make it right.
+
+**Space can be successful, just hasn't yet - hold the course**
+
+This is often a result of execution difficulties, or underestimating the difficulties of progress in a space. Action depends on the situation.
+
+If there are sufficient resources, and there is high probability success is likely - this section is in roadmapping and execution.
+
+If there are insufficient resources, or resources are blocked - consider the space can not be successful playbook.
+
+**Space can not be successful, or can't be successful in a reasonable time frame**
+
+This will be a painful situation. The team has invested significantly: emotionally and through their work and a drastic change is required. The team and the manager will have a desire for wishful thinking, but that must be avoided as additional investment is waste of resources, often the sunk cost fallacy.
+
+In these situations, you need to "declare success", wrap up the work and move on.
+
+In the best case, this decision will be made as part of the normal rhythm of business with sufficient lead time so a clear set of new projects to transition onto are found, and the team can wrap up their current work, and switch to the new work on their roadmap without any disruption except for feeling bad their previous work didn't work out as well as they had hoped.
+
+In a common case, the decision will be sudden, often with an edict from leadership to take immediate action. In this case, the priorities are:
+
+* Manage comms with the team - decide when to tell folks, see some of the re-org discussions
+* Negotiate a transition period with leadership.
+* Figure out an interim roadmap till longer term work can be found
+* Figure out how to wrap up work, and ensure fair credit attributed to work in progress.
+* This is a highly emotional situation support the team, and yourself.
+
+
+NOTES:
+    - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
+
+
+<!--
+
+### Layoffs
+
+Before:
+
+* Be careful about telling people you don't know anything, at some point you will, and you can and will be trapped in a lie.  (I don't know best thing to do here).
+* Remind people if they can't control something don't focus on it. Focus on what they can influence.
+* Do not tell people they will not be laid off.  Unless you know, don't.
+
+Day Of:
+
+* Get up early and get ready.
+* This will be a very emotionally draining day.
+* Excellent chance you won't know what's going on, and
+* Remind people it's a tough day and take care of themselves.
+* Discourage people speculating what and why
+* Remind people to take care of themselves
+* Mental health experts recommend against group meetings. Keep everything 1:1
+
+Next days:
+
+* Possible re-org
+
+
+-->
+
+
 ## Personal Motivations
 
 I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I"m being consistent between my actions and motivations.
@@ -1440,13 +1541,13 @@ Few things make me prouder then this [public feedback on LinkedIn](/static/igor-
 
 On my deathbed, the product I will be most proud of is the people who I watched blossom and grow. It's cliche, but when you love your people they know it, they thrive, and do their best work. It's not just about the work, I want to make sure people think of their lives as well, because, well, that's even more important.
 
-I'm also energized by getting shit done. The though of shipping, clearing roadblocks, and never being blocked puts a smile on face.
+I'm also energized by getting shit done. The thought of shipping, clearing roadblocks, and never being blocked puts a smile on my face.
 
-Speaking of smiling, nothing brings me back up like reading this kind of feedback that I got when I left a team:
+Speaking of smiling, nothing brings me back up like reading this kind of feedback that I got when I left a team.
 
 _Goodbye Igor! Thank you for helping me reach the next level both physically and mentally. I cherish the moments when we ground through challenges like peak days, when I was in trouble and you said "That's why I'm here, give it to me I'll make it happen", and of course, when you show your magic at happy hour! You are a great boss and great teacher._
 
-Lastly, I love understanding what is going on, coming up with win/win solutions, and framing those solutions into a meaningful story that people rally behind and deliver. Some more words that bring me up:
+Lastly, I love understanding what is going on, coming up with win/win solutions, and framing those solutions into a meaningful story that people rally behind and deliver. Some more words that bring me up.
 
 _Igor - Your passion, energy, intellect, and sheer force of will -- so intense, so inspiring, so powerful we still feel it 3 years after you left the team._
 
@@ -1530,14 +1631,13 @@ I don't think managers should code with a minor exception ([More details](#l-cod
 
 Why do we assess managers ability to code - no clue, but a few enlightened companies do not.
 
-I think managers do need technical skills see [here](#l-technical).
-
 ## Business Acumen and Strategy
 
-My note on [Strategy](/strategy), including the strategic position of various companies:
+My note on [Strategy](/strategy), including the strategic positions of various companies:
 
 {%include summarize-page.html src="/strategy" %}
 
 ## Appendix
 
 {%include summarize-page.html src="/manager-book-appendix" %}
+I think managers do need technical skills see [here](#l-technical).

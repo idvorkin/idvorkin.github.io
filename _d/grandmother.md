@@ -2,6 +2,14 @@
 layout: post
 title: "Isn't that curious"
 permalink: /curious
+alias:
+  - /curious
+  - /grandmothermind
+  - /grandmother-mind
+  - /grandma
+  - /grandmother
+  - /compassion
+  - /nonjudgment
 redirect_from:
   - /grandmothermind
   - /grandmother-mind
