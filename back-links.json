@@ -200,7 +200,7 @@
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
-                "/d/time-off-12-2020",
+                "/d/time-off-2020-12",
                 "/depression",
                 "/end-in-mind",
                 "/eulogy",
@@ -281,7 +281,7 @@
             ],
             "incoming_links": [
                 "/balance",
-                "/d/time-off-12-2021"
+                "/d/time-off-2021-12"
             ],
             "redirect_url": "",
             "markdown_path": "_d/activation.md",
@@ -295,7 +295,7 @@
             "file_path": "_site/adblocker-trojan.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/d/time-off-11-2021"
+                "/d/time-off-2021-11"
             ],
             "redirect_url": "",
             "markdown_path": "_td/adblocker_trojan.md",
@@ -512,7 +512,7 @@
             "incoming_links": [
                 "/7-habits",
                 "/7h-concepts",
-                "/d/time-off-12-2021"
+                "/d/time-off-2021-12"
             ],
             "redirect_url": "",
             "markdown_path": "_d/balance2.md",
@@ -656,7 +656,7 @@
             "file_path": "_site/brython.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/d/time-off-11-2021"
+                "/d/time-off-2021-11"
             ],
             "redirect_url": "",
             "markdown_path": "_d/brython_.md",
@@ -1113,12 +1113,88 @@
             "markdown_path": "_d/resistance.md",
             "doc_size": 18000
         },
-        "/d/time-off-02-2022": {
+        "/d/time-off-2020-03": {
             "py/object": "__main__.Page",
-            "url": "/d/time-off-02-2022",
+            "url": "/d/time-off-2020-03",
+            "title": "Adventures March and April 2020",
+            "description": "In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
+            "file_path": "_site/d/time-off-2020-03.html",
+            "outgoing_links": [
+                "/frog",
+                "/money",
+                "/siy",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2020-03.md",
+            "doc_size": 28000
+        },
+        "/d/time-off-2020-12": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2020-12",
+            "title": "Time off X-mas 2020",
+            "description": "It’s Corona virus X-mas, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
+            "file_path": "_site/d/time-off-2020-12.html",
+            "outgoing_links": [
+                "/7-habits",
+                "/happy",
+                "/mental-pain",
+                "/pandas",
+                "/timeoff"
+            ],
+            "incoming_links": [
+                "/d/time-off-2021-12"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2020-12.md",
+            "doc_size": 20000
+        },
+        "/d/time-off-2021-11": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2021-11",
+            "title": "Time off Turkey Day 2021",
+            "description": "I should have written up a plan before this time off so I’d have been more deliberate. As it stands, I did what I wanted, got a tonne done, but missed some things that bring me a lot of energy.\n\n",
+            "file_path": "_site/d/time-off-2021-11.html",
+            "outgoing_links": [
+                "/adblocker-trojan",
+                "/brython",
+                "/ig66/591",
+                "/snjb",
+                "/timeoff"
+            ],
+            "incoming_links": [
+                "/d/time-off-2021-12"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2021-11.md",
+            "doc_size": 17000
+        },
+        "/d/time-off-2021-12": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2021-12",
+            "title": "Time off X-mas 2021",
+            "description": "It’s Corona virus X-mas 2021, the not so bad edition, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
+            "file_path": "_site/d/time-off-2021-12.html",
+            "outgoing_links": [
+                "/activation",
+                "/balance",
+                "/d/time-off-2020-12",
+                "/d/time-off-2021-11",
+                "/happy",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2021-12.md",
+            "doc_size": 20000
+        },
+        "/d/time-off-2022-02": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2022-02",
             "title": "Time off Mid winter break 2022",
             "description": "It’mid winter break and I’ve got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
-            "file_path": "_site/d/time-off-02-2022.html",
+            "file_path": "_site/d/time-off-2022-02.html",
             "outgoing_links": [
                 "/happy",
                 "/productive",
@@ -1128,15 +1204,15 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "markdown_path": "_d/time-off-02-2022.md",
+            "markdown_path": "_d/time-off-2022-02.md",
             "doc_size": 17000
         },
-        "/d/time-off-07-2022": {
+        "/d/time-off-2022-07": {
             "py/object": "__main__.Page",
-            "url": "/d/time-off-07-2022",
+            "url": "/d/time-off-2022-07",
             "title": "Time off July 2022 - FISM and Canada.",
             "description": "It’s FISM (olympics of magic), and I’m going to Quebec city to reenergize my love of magic, since I’m already in Canada I’ll also spend time with My Mom, Sister, and college room mate.\n\n",
-            "file_path": "_site/d/time-off-07-2022.html",
+            "file_path": "_site/d/time-off-2022-07.html",
             "outgoing_links": [
                 "/essentialism",
                 "/happy",
@@ -1145,35 +1221,15 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "markdown_path": "_d/time-off-07-2022.md",
+            "markdown_path": "_d/time-off-2022-07.md",
             "doc_size": 24000
         },
-        "/d/time-off-11-2021": {
+        "/d/time-off-2022-11": {
             "py/object": "__main__.Page",
-            "url": "/d/time-off-11-2021",
-            "title": "Time off Turkey Day 2021",
-            "description": "I should have written up a plan before this time off so I’d have been more deliberate. As it stands, I did what I wanted, got a tonne done, but missed some things that bring me a lot of energy.\n\n",
-            "file_path": "_site/d/time-off-11-2021.html",
-            "outgoing_links": [
-                "/adblocker-trojan",
-                "/brython",
-                "/ig66/591",
-                "/snjb",
-                "/timeoff"
-            ],
-            "incoming_links": [
-                "/d/time-off-12-2021"
-            ],
-            "redirect_url": "",
-            "markdown_path": "_d/time-off-11-2021.md",
-            "doc_size": 17000
-        },
-        "/d/time-off-11-2022": {
-            "py/object": "__main__.Page",
-            "url": "/d/time-off-11-2022",
+            "url": "/d/time-off-2022-11",
             "title": "Time off November 2022 - New York with Ammon, and Then Maureen and Brian for Thanksgiving",
             "description": "It’s just about thanksgiving 2022, and after 2 years of not being able to go to Oregon, we’re on our away! Through unexpected timing, before going to Oregon, I’m going to New York City with Ammon, and through even more unexpected timing, we just had lay offs at work, and have a major re-organization. Instead of being able to fully take the time off, I’ll be working several days, so having clarity on my priorities is critical.\n\n",
-            "file_path": "_site/d/time-off-11-2022.html",
+            "file_path": "_site/d/time-off-2022-11.html",
             "outgoing_links": [
                 "/happy",
                 "/mind-at-work",
@@ -1181,47 +1237,8 @@
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "markdown_path": "_d/time-off-11-2022.md",
-            "doc_size": 20000
-        },
-        "/d/time-off-12-2020": {
-            "py/object": "__main__.Page",
-            "url": "/d/time-off-12-2020",
-            "title": "Time off X-mas 2020",
-            "description": "It’s Corona virus X-mas, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
-            "file_path": "_site/d/time-off-12-2020.html",
-            "outgoing_links": [
-                "/7-habits",
-                "/happy",
-                "/mental-pain",
-                "/pandas",
-                "/timeoff"
-            ],
-            "incoming_links": [
-                "/d/time-off-12-2021"
-            ],
-            "redirect_url": "",
-            "markdown_path": "_d/time-off-12-2020.md",
-            "doc_size": 20000
-        },
-        "/d/time-off-12-2021": {
-            "py/object": "__main__.Page",
-            "url": "/d/time-off-12-2021",
-            "title": "Time off X-mas 2021",
-            "description": "It’s Corona virus X-mas 2021, the not so bad edition, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
-            "file_path": "_site/d/time-off-12-2021.html",
-            "outgoing_links": [
-                "/activation",
-                "/balance",
-                "/d/time-off-11-2021",
-                "/d/time-off-12-2020",
-                "/happy",
-                "/timeoff"
-            ],
-            "incoming_links": [],
-            "redirect_url": "",
-            "markdown_path": "_d/time-off-12-2021.md",
-            "doc_size": 20000
+            "markdown_path": "_d/time-off-2022-11.md",
+            "doc_size": 19000
         },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
@@ -1528,7 +1545,7 @@
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
-                "/d/time-off-07-2022",
+                "/d/time-off-2022-07",
                 "/end-in-mind",
                 "/first-things-first",
                 "/frog",
@@ -1683,11 +1700,11 @@
                 "/anxiety-management",
                 "/be-proactive",
                 "/d/resistance",
+                "/d/time-off-2020-03",
                 "/first-things-first",
                 "/gtd",
                 "/productive",
                 "/psychic-weight",
-                "/td/time-off-3-2020",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -1761,7 +1778,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/gpt2.md",
-            "doc_size": 20000
+            "doc_size": 21000
         },
         "/grateful": {
             "py/object": "__main__.Page",
@@ -1822,11 +1839,11 @@
                 "/moments"
             ],
             "incoming_links": [
-                "/d/time-off-02-2022",
-                "/d/time-off-07-2022",
-                "/d/time-off-11-2022",
-                "/d/time-off-12-2020",
-                "/d/time-off-12-2021",
+                "/d/time-off-2020-12",
+                "/d/time-off-2021-12",
+                "/d/time-off-2022-02",
+                "/d/time-off-2022-07",
+                "/d/time-off-2022-11",
                 "/hobby",
                 "/joy",
                 "/siy",
@@ -2215,7 +2232,7 @@
                 "/anxiety-management",
                 "/curious",
                 "/d/resistance",
-                "/d/time-off-12-2020",
+                "/d/time-off-2020-12",
                 "/dsat",
                 "/happy",
                 "/idle",
@@ -2264,7 +2281,7 @@
                 "/timeoff"
             ],
             "incoming_links": [
-                "/d/time-off-11-2022",
+                "/d/time-off-2022-11",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -2361,9 +2378,9 @@
                 "/parkinson"
             ],
             "incoming_links": [
+                "/d/time-off-2020-03",
                 "/operating-manual",
-                "/parkinson",
-                "/td/time-off-3-2020"
+                "/parkinson"
             ],
             "redirect_url": "",
             "markdown_path": "_d/taxes.md",
@@ -2446,7 +2463,7 @@
             "file_path": "_site/pandas.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/d/time-off-12-2020",
+                "/d/time-off-2020-12",
                 "/ml"
             ],
             "redirect_url": "",
@@ -2539,7 +2556,7 @@
                 "/getting-to-yes"
             ],
             "incoming_links": [
-                "/d/time-off-02-2022"
+                "/d/time-off-2022-02"
             ],
             "redirect_url": "",
             "markdown_path": "_d/productive2.md",
@@ -2614,7 +2631,7 @@
             "file_path": "_site/recommend.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/d/time-off-07-2022",
+                "/d/time-off-2022-07",
                 "/ml"
             ],
             "redirect_url": "",
@@ -2769,6 +2786,7 @@
                 "/books-that-defined-me",
                 "/coaching",
                 "/curious",
+                "/d/time-off-2020-03",
                 "/depression",
                 "/emotional-health",
                 "/eulogy",
@@ -2776,8 +2794,7 @@
                 "/idle",
                 "/mind-monsters",
                 "/psychic-weight",
-                "/sharpen-the-saw",
-                "/td/time-off-3-2020"
+                "/sharpen-the-saw"
             ],
             "redirect_url": "",
             "markdown_path": "_d/siy.md",
@@ -2806,7 +2823,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/7h-concepts",
-                "/d/time-off-02-2022",
+                "/d/time-off-2022-02",
                 "/operating-manual"
             ],
             "redirect_url": "",
@@ -2821,7 +2838,7 @@
             "file_path": "_site/snjb.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/d/time-off-11-2021"
+                "/d/time-off-2021-11"
             ],
             "redirect_url": "",
             "markdown_path": "_d/snjb_.md",
@@ -2900,7 +2917,7 @@
                 "/d/habits"
             ],
             "incoming_links": [
-                "/d/time-off-02-2022",
+                "/d/time-off-2022-02",
                 "/first-things-first"
             ],
             "redirect_url": "",
@@ -3098,7 +3115,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/ios-nomad.md",
-            "doc_size": 21000
+            "doc_size": 22000
         },
         "/td/linqpad_from_redshift": {
             "py/object": "__main__.Page",
@@ -3197,25 +3214,6 @@
             "redirect_url": "",
             "markdown_path": "_td/streaks.md",
             "doc_size": 11000
-        },
-        "/td/time-off-3-2020": {
-            "py/object": "__main__.Page",
-            "url": "/td/time-off-3-2020",
-            "title": "Adventures March and April 2020",
-            "description": "In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
-            "file_path": "_site/td/time-off-3-2020.html",
-            "outgoing_links": [
-                "/frog",
-                "/money",
-                "/siy",
-                "/timeoff"
-            ],
-            "incoming_links": [
-                "/timeoff"
-            ],
-            "redirect_url": "",
-            "markdown_path": "_td/time-off-3-2020.md",
-            "doc_size": 28000
         },
         "/td/usbtech": {
             "py/object": "__main__.Page",
@@ -3354,18 +3352,18 @@
                 "/frog",
                 "/happy",
                 "/mind-at-work",
-                "/td/time-off-3-2020"
+                "/time-off-2020-03"
             ],
             "incoming_links": [
-                "/d/time-off-02-2022",
-                "/d/time-off-07-2022",
-                "/d/time-off-11-2021",
-                "/d/time-off-11-2022",
-                "/d/time-off-12-2020",
-                "/d/time-off-12-2021",
+                "/d/time-off-2020-03",
+                "/d/time-off-2020-12",
+                "/d/time-off-2021-11",
+                "/d/time-off-2021-12",
+                "/d/time-off-2022-02",
+                "/d/time-off-2022-07",
+                "/d/time-off-2022-11",
                 "/mind-at-work",
-                "/parkinson",
-                "/td/time-off-3-2020"
+                "/parkinson"
             ],
             "redirect_url": "",
             "markdown_path": "_d/time_off.md",
