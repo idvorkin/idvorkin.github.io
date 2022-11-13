@@ -85,6 +85,8 @@ Two days before the start of the trip we had layoffs (including my partners who 
     - [Missing important stuff in critical time at work.](#missing-important-stuff-in-critical-time-at-work)
 - [To make into a separate post](#to-make-into-a-separate-post)
     - [Friday to NYC](#friday-to-nyc)
+    - [Saturday - Harry Potter](#saturday---harry-potter)
+    - [Sunday](#sunday)
     - [Priorities](#priorities)
 
 <!-- vim-markdown-toc -->
@@ -103,6 +105,8 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 
 ### Performing
 
+- Did magic for a drunk woman who put the card in her bra!
+
 ### Practice
 
 - ☐ Practice every day
@@ -116,6 +120,8 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 ### Enabling Environment
 
 - ☐ Don't touch it.
+    - Actually maybe playing with it isn't terrible
+    - Playing with it makes me happy,  and charges up my energy
 
 ### Blogging
 
@@ -131,6 +137,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 ### Biking
 
 - ☐ Ride a citi bike
+- ☑ Got a bike pass
 
 ### Ballooning
 
@@ -156,7 +163,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 
 ### Statistics
 
-Weight:
+Weight: 180
 Gym Days:
 
 ### Verbose
@@ -165,11 +172,14 @@ Gym Days:
 
 - ☐ Weight myself daily
 - ☐ Be ready to get back on weight track for end of November weight in.
+- ☐ Recall, I'd be happier to be skinny then get a snack
+- ☐ If there's something I want, get one per day,  and keep calories down the rest.
+- ☐ Get a mini fridge and keep it stocked with Veggies and fruit
 
 ### Sleep
 
 - ☐ To bed by 10 (if not 8) every night
-- ☐ Only read before bend.
+- ☐ No electronics/tv before bed, just read.
 
 ## Mental quicksand
 
@@ -190,6 +200,26 @@ See the section about keep work at work.
 - Made a balloon for kid on airport to city bus
 - Did magic trick for girl, totaly missed. luckily she was drunk as a skunk and rather happy, stuffed card in her bra
 - Lost air tag, went on hunt to find it. Found it but too late was crushed by a car
+
+### Saturday - Harry Potter
+
+- Saw the best play of my life Happy Potter
+    - Cried through the whole second act
+    - Amazing blocking and transitions and special effects
+    - Great story about a dad accepting his son
+
+### Sunday
+
+- Day before eating tonnes of vegtables (todo link photos)
+- Went for a walk, started to pour
+    - Went to a meh coffee shop
+    - Suddenly needed to poop
+    - No bathroom at coffee shop, none near
+    - Luckily citi bike, raced to hotle, and got it done
+- Funny part about emergenncy poop
+    - First night, saw a comedy show one 20 year fit guy talking about healhty eating messing up your sphinctor not able to hold it in.
+    - Didn't think it was funny.
+    - This morning, needed to poop, absoloutely hillarious
 
 ### Priorities
 
