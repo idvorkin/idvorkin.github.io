@@ -208,6 +208,10 @@ See the section about keep work at work.
     - Amazing blocking and transitions and special effects
     - Great story about a dad accepting his son
 
+- M and M Store
+    - Load picture of M&M, and all the M&Ms
+    - Instead of that, I just eat all the veggies in the fridge (see next day)
+
 ### Sunday
 
 - Day before eating tonnes of vegtables (todo link photos)
