@@ -21,7 +21,7 @@ There are three paths - remote development, local development, and hybrid. For a
     - [Run Linux - iSH](#run-linux---ish)
     - [Run git - Working copy](#run-git---working-copy)
     - [Run Vim - iVIM](#run-vim---ivim)
-    - [Run python - Pythonista](#run-python---pythonista)
+    - [Run python - Pyto](#run-python---pyto)
     - [Run Jupyter - Carnets](#run-jupyter---carnets)
     - [Edit markdown](#edit-markdown)
 - [Hybrid development - Consistency](#hybrid-development---consistency)
@@ -105,38 +105,28 @@ iVIM now support:
 
 * Some plugin integration
 * Nice font upgrade
-* preview windows
+    :ifont increase
+* Preview windows (in New tab, and works with markdown render in realtime)
+    :ipreview -w
 
+* git integration
 
-- git integration
+For this you load your files into working copy and link them via idoc dir, and then they are available locally
 
-This is a bizarre, but surprisingly effective technique. While iVIM can't run git, Working Copy can create a directory it has access to in another app (like iVIM), and execute git commands on it.
-
-The approach here is you setup git repositories into iVIM (working copy calls these TK), then you set the remote of the synced directory to be the git target you want (e.g. github.com/idvorkin/settings). Then every time you want to use git commands, you flip to working copy, and it just works. Given how hacky this sound it works amazingly well.
+    :iexdir add
 
 - bundle/plugin integration
 
-This is painful as most plugin managers execute git behind the covers. To get this to work you need to copy your bundle directory into iVIM using the iOS Files app. For some reason, when I try this it fails.
+    :iplug
 
-An alternative I'm planning on trying is git TK
+- Ctags support wow!
 
-Now because iVIM doesn't support git you need to use Working Copy, and so far that has worked well.
+   !ctags
 
-- opening files from other apps
 
-This works decently, you the :idocu command to get the iOS File Picker and then choose files from other apps.
+#### Run python - Pyto
 
-- sharing files to other apps
-
-This works very well, use the share to and you're done.
-
-- font management
-
-While not apple UI friendly it's supported use the :ifont command, e.g.:
-
-    :ifont 0 4
-
-#### Run python - Pythonista
+Pythonista used to be the bomb, but now Pyto looks like it's actively updated
 
 #### Run Jupyter - Carnets
 
