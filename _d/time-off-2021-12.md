@@ -27,7 +27,7 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 - Got Zach prepped to walk home from work.
 - Ammon reminded me the importance of jumping in the lake
 - Started Intermittent Fasting
-- Honored my desire not to go deep into tech for the sake of tech (because I did it [last time off](/d/time-off-11-2021))
+- Honored my desire not to go deep into tech for the sake of tech (because I did it [last time off](/d/time-off-2021-11))
 - Thought pretty deeply about balance and activation energy.
 
 <!-- prettier-ignore-start -->
@@ -68,7 +68,7 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 
 ## Top Learnings
 
-- This year, reads almost [identical to last year](/d/time-off-12-2020). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
+- This year, reads almost [identical to last year](/d/time-off-2020-12). Not sure if that means I've solved it, or I'm stuck in a local maximum? I guess regardless I'm not regressing.
 - Balance, it's all about balance!
 - Prepare before you take time off so when you go in you don't need to spend much time vegetating.
 - Pre-writing your desires for time off is good and helps you hit it. Need to think through how to have the right goals, not too hard so you feel bad, but not so easy that you feel unsatisfied.

@@ -8,7 +8,7 @@ redirect_from:
   - /personal-development
   - /pd
   - /time-off
-alias: 
+alias:
   - /vacation
   - /personal-development
   - /pd
@@ -127,7 +127,7 @@ And by making your positive habits easier. For me, this includes writing up a ti
 
 Look at the incoming links below and:
 
-- [April 2020 - Time between leaving Amazon and Joining Facebook](/td/time-off-3-2020)
+- [April 2020 - Time between leaving Amazon and Joining Facebook](/time-off-2020-03)
 
 ## Making the most out of staycation
 
