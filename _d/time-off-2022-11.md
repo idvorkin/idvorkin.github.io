@@ -50,6 +50,14 @@ Two days before the start of the trip we had layoffs (including my partners who 
 ## Moments
 
 - Getting to tell Ammon all the stuff in my life in the first 2 hours of our flight
+- Getting to tell Ammon all the stuff in my life in the first 2 hours of our flight
+- Doing ballon for kid on the bus
+- Seeing Harry Potter and crying
+- Poop story from cofffee shop
+- Not eating the M&Ms at the store
+- To Learn : Anniversaryj card
+- To Re-Learn : Monkey and Other ballooing things (Make blog post to remember)
+
 
 **Remember the peak end rule**
 
