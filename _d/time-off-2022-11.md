@@ -22,7 +22,8 @@ These posts are a combination of [time off](/time-off), and all the stuff for [h
 - Maintain my daily meditation and daily journal.
 - Check in on my streaks app - it'll keep me honest
 - If I don't care what I'm eating, eat a big bowl of popcorn
-- Don't eat junk food cuz it's a good deal.
+- Don't eat junk food cuz it's cheap/free.
+- Throw away half my meal before I start
 - Take lots of photos
 
 ### Keep work at work.
@@ -95,6 +96,7 @@ Two days before the start of the trip we had layoffs (including my partners who 
     - [Friday to NYC](#friday-to-nyc)
     - [Saturday - Harry Potter](#saturday---harry-potter)
     - [Sunday](#sunday)
+    - [Monday](#monday)
     - [Priorities](#priorities)
 
 <!-- vim-markdown-toc -->
@@ -232,6 +234,32 @@ See the section about keep work at work.
     - First night, saw a comedy show one 20 year fit guy talking about healhty eating messing up your sphinctor not able to hold it in.
     - Didn't think it was funny.
     - This morning, needed to poop, absoloutely hillarious
+
+- Asi Wind Show
+    - Amazing Magic, but kind of slow ...
+    - Cool venue
+    - Cool having everyone write names on their cards
+- Pizza Magic
+    -   Did another magic trick for girl in pizza line
+    -   This time thought I got it,  but it didn't have her name on it. Then looked closer, and it was just written really smal.
+    -   Not to self: Have someone else hold the cards
+    -       Tell spectator: Visualize your card in your mind ... have you got it? Good
+    -       now, imagine it turning over... Did you do it? Great ..
+    - OK, now do you believe? Great!!
+- Comedy Club
+    - Incredible show, super funny.
+- Giving out balloons on the street
+    - Very fun
+    - Figured out howtt o keep balloon pump in pocket (keep the head out)
+    - Someone asked to buy one, gave it for their daughter
+- Pull ups
+    -   Went all over central park to find pullup bars, finally found them, but then, super weird, got a video.
+
+### Monday
+
+- Super nice sunny day
+- FB office nice, but then told to go the really nice one. AMAZING views!
+- At work, new job, not sure what I should be working on ... lots of free time.
 
 ### Priorities
 
