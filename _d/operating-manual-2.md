@@ -42,6 +42,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Husband](#husband)
     - [Father](#father)
 - [Cognitive Reframe Upgrades](#cognitive-reframe-upgrades)
+- [Calendar - 2022](#calendar---2022)
 - [Bad Influences](#bad-influences)
     - [Luxury Car](#luxury-car)
     - [Sports cars](#sports-cars)
@@ -93,18 +94,18 @@ I have two common failure modes to my morning routine.
 
 ## After Work Routine
 
-My discipline is strong in the morning, but by the time I get home from work, I'm usually energy  and will power depleted.
+My discipline is strong in the morning, but by the time I get home from work, I'm usually energy and will power depleted.
 
 ### Post work routine
 
-* I can fight my lack of will power with a schedule.
-* Current schedule, 1 day Zach date, 1 day Amelia date, 1 day friend date
-* Get a healthy snack - popcorn or vegetables (not a huge container of fruit)
+- I can fight my lack of will power with a schedule.
+- Current schedule, 1 day Zach date, 1 day Amelia date, 1 day friend date
+- Get a healthy snack - popcorn or vegetables (not a huge container of fruit)
 
 ### Post work Kryptonite
 
-* Sitting in my easy chair, mindlessly on my phone
-* Eating continuously
+- Sitting in my easy chair, mindlessly on my phone
+- Eating continuously
 
 ## My super powers
 
@@ -121,7 +122,6 @@ They are good conversationalists and presenters.
 **Restorative** - People who are especially talented in the Restorative theme are
 adept at dealing with problems. They are good at figuring out
 what is wrong and resolving it.
-
 
 ### Relationships
 
@@ -199,6 +199,33 @@ The words you use influence how you think.
 - This is crap --> Help me understand (/compassion)
 
 {%include summarize-page.html src="/som" %}
+
+## Calendar - 2022
+
+As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegitate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
+
+My new calendar
+
+| Day | Early AM         | Evening       |
+| --- | ---------------- | ------------- |
+| M   | Crazy Early Work | Free          |
+| T   | Trainer          | Amelia Date   |
+| W   | Stair Climber    | Zach Date     |
+| Th  | Self Gym         | Magic w/Clive |
+| F   | Run              | Movie Night   |
+| Sa  | [l1](l1)         | Free          |
+| Su  | [l2](l2)         | Free          |
+
+- l1
+- Trainer
+- Coffee Shop Writing
+
+<div/>
+- l2
+- Stretching/Free Gym
+- Coffee Shop
+- Weekly Journal
+- Family Blog Post
 
 ## Bad Influences
 
@@ -287,4 +314,3 @@ At the end of 2016, I joined [Amazon](/amazon) to learn the business of software
 I spent a lot of time learning to be a manager, and am [writing a book, or really notes to myself](/manager-book).
 
 {%include summarize-page.html src="/manager-book" %}
-
