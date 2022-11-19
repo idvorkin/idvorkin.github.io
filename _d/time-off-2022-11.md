@@ -116,6 +116,8 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 ### Performing
 
 - Did magic for a drunk woman who put the card in her bra!
+- Did magic trick for a kid that was hyper on stage, got him calmed down and relaxed
+- Did a mgic trick which I thought I messed up, but the person had just written super small
 
 ### Practice
 
@@ -124,6 +126,9 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 - ☐ Work on anniversery card
 
 ### General Magic
+
+- Saw Asi Wind's amazing magic show, but it had low energy
+- Went to Magic Monday which is meh,  but got to go on stage, which was really fun.
 
 ## Tech Guru (Y/5)
 
@@ -153,6 +158,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 
 - ☐ Bring lots of balloons and manual pump
 - ☑  Make some balloons for kids at the airport
+- ☐ Figured out how to carry balloon inflator in my pocket.
 
 ### Joy Activities
 
