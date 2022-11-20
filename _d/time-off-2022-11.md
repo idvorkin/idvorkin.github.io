@@ -51,13 +51,14 @@ Two days before the start of the trip we had layoffs (including my partners who 
 ## Moments
 
 - Getting to tell Ammon all the stuff in my life in the first 2 hours of our flight
-- Getting to tell Ammon all the stuff in my life in the first 2 hours of our flight
 - Doing ballon for kid on the bus
 - Seeing Harry Potter and crying
 - Poop story from cofffee shop
 - Not eating the M&Ms at the store
 - To Learn : Anniversaryj card
 - To Re-Learn : Monkey and Other ballooing things (Make blog post to remember)
+- Doing balloon trick for kid that didn't want to be good on stage
+- Super funny commedy show, with wings and super funny singing guy
 
 
 **Remember the peak end rule**
@@ -97,6 +98,7 @@ Two days before the start of the trip we had layoffs (including my partners who 
     - [Saturday - Harry Potter](#saturday---harry-potter)
     - [Sunday](#sunday)
     - [Monday](#monday)
+    - [Other](#other)
     - [Priorities](#priorities)
 
 <!-- vim-markdown-toc -->
@@ -129,6 +131,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 
 - Saw Asi Wind's amazing magic show, but it had low energy
 - Went to Magic Monday which is meh,  but got to go on stage, which was really fun.
+- Went to Tannon's that place is amazing.
 
 ## Tech Guru (Y/5)
 
@@ -137,6 +140,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 - ☐ Don't touch it.
     - Actually maybe playing with it isn't terrible
     - Playing with it makes me happy,  and charges up my energy
+- Got my offline vim setup for the plane - pretty freaking cool.
 
 ### Blogging
 
@@ -152,13 +156,15 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 ### Biking
 
 - ☐ Ride a citi bike
+- ☑ Biked on the hudson river pass
 - ☑ Got a bike pass
 
 ### Ballooning
 
 - ☐ Bring lots of balloons and manual pump
-- ☑  Make some balloons for kids at the airport
-- ☐ Figured out how to carry balloon inflator in my pocket.
+- ☑ Make some balloons for kids at the airport
+- ☑ Figured out how to carry balloon inflator in my pocket.
+- ☑ Did balloons for kids most days.
 
 ### Joy Activities
 
@@ -266,6 +272,10 @@ See the section about keep work at work.
 - Super nice sunny day
 - FB office nice, but then told to go the really nice one. AMAZING views!
 - At work, new job, not sure what I should be working on ... lots of free time.
+
+### Other
+
+Saw 3 comedy shows
 
 ### Priorities
 
