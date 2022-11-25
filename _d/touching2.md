@@ -43,8 +43,8 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 
 ### Shorts
 
-- [There are no scraps of men](https://youtu.be/1QX7aoxSTAQ)
 - [Mr rogers speaking to congress](https://youtu.be/-C5PMPIdG_Y)
+- [There are no scraps of men](https://youtu.be/1QX7aoxSTAQ)
 - [The power of kindness](https://youtu.be/aWseEycdXS8)
 
 ### Movies

@@ -59,6 +59,7 @@ Two days before the start of the trip we had layoffs (including my partners who 
 - To Re-Learn : Monkey and Other ballooing things (Make blog post to remember)
 - Doing balloon trick for kid that didn't want to be good on stage
 - Super funny commedy show, with wings and super funny singing guy
+- Boarding guy at the airport, treating folks to increaes energy liike they do at a comedy club, truly welcoming and thanking everyone.
 
 
 **Remember the peak end rule**
