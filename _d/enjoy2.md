@@ -69,6 +69,11 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 
 - Meditate
 - Stream of conciousness journal
+- Do altruistic joy
+- wish someone happiness (happy gun)
+- wish someone free of suffering 
+
+ 
 
 ### Cognative
 
@@ -96,7 +101,9 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Flower
 - Monkey
 - Bunny
-- Pig
+- teddy bear
+- ray gun 
+- mermaid 
 
 ### Joy to Others
 
