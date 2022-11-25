@@ -679,7 +679,13 @@ When suffering, you need to get to the cognative reframes, but first you need to
 
 Step 1: **Calm the mind** Need to be calm enough to observe and experience.
 
-Step 2A: **Affective - experience joy** - Can always find joy - Like an oasis in the dessert - Some days harder then others - Some days impossible, just need to wait - Train in non-pain makes it easier, like gym.
+Step 2A: **Affective -  experience joy**
+-  Can always find joy
+-  Like an oasis in the dessert
+-  Some days harder then others
+-  Some days impossible, just need to wait
+-  Train in non
+- pain makes it easier, like gym.
 
 Step 2B: **Affective - experience pain**
 
