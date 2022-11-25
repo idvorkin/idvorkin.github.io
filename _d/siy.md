@@ -571,16 +571,26 @@ _Three easy steps to world peace_
 
 ### Inclining the Mind Toward Joy
 
-- FP: NOTICING JOY IN ONE BREATH
-- IP: NOTICING JOY IN DAILY LIFE
-- Attending to Joy
-- Joy on Demand
-- FP: INVITING AND ATTENDING TO JOY
-- The Joyful Mind Rocks at Meditation
+FP: NOTICING JOY IN ONE BREATH
+
+
+IP: NOTICING JOY IN DAILY LIFE
+    - Attending to Joy
+    - Joy on Demand
+
+FP: INVITING AND ATTENDING TO JOY
+    - The Joyful Mind Rocks at Meditation
+
 - IP: ATTENDING TO THE JOY OF PLEASANT DAILY EXPERIENCES
+
+
 - “Someday, I Will Die,” and Other Happy Thoughts
 - IP: AWARENESS OF MORTALITY
+
+
 - The Joy of Not Being in Pain
+
+
 - IP: JUST NOTE GONE
 - FP: JUST NOTE GONE
 - Do Not Expect Every Moment, Meditation, or Day to Be Joyful
@@ -673,17 +683,33 @@ Step 2A: **Affective - experience joy** - Can always find joy - Like an oasis in
 
 Step 2B: **Affective - experience pain**
 
-- Pain in Body - Tension - Pit in stomach - Heart pounding - Nausia - Be willing to experience the pain in the body
-  -Approach: - Realize unpleasant experiences in the body - RealiE Root cause of suffering is aversion - Apply loving kindness to the aversion and the self - Apply equinimity - be calm watching the emotions - These empotions are not me - These thoughts are not me - Just bodily experiences
+- Pain in Body
+- Tension
+- Pit in stomach
+- Heart pounding
+- Nausia
+- Be willing to experience the pain in the body
+
+-Approach:
+
+- Realize unpleasant experiences in the body
+- Realize root cause of suffering is aversion
+- Apply loving kindness to the aversion and the self
+- Apply equinimity - be calm watching the emotions
+- These emotions are not me
+- These thoughts are not me
+- Just bodily experiences
 
 Step 3: **Cognition - Use your cognition to resolve**
 
 - Many reframes
-- Caused by others - apply kindness and compassion
+- Caused by others
+  - apply kindness and compassion
   - Think the best of the person
   - Human attribute error
   - Get mad at suffering not the person. Like mad at the thrower not the rock.
-- Caused by self/mistake - apply kindness and compassion to self
+- Caused by self/mistake
+  - apply kindness and compassion to self
   - See through eyes of best friend
 - Something bad has/will happen - test if catastrophizing. We make up stories
 - Gain perspective - more time, more dimensions
