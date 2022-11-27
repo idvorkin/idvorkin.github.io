@@ -12,6 +12,8 @@ My original notes on anxiety:
 
 {%include summarize-page.html src="/anxiety" %}
 
+Also, see the notes from [Search Inside Yourself and Joy of Happiness](/siy#working-with-suffering)
+
 ## Don't make stuff worse in the moment.
 
 When anxiety is acute ... the first thing  you need to do is ensure you don't make it worse ... Based on [Do no harm](https://whatilearnedsofar.com/practice/first-order-of-business/)
