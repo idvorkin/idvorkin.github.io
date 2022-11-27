@@ -680,6 +680,8 @@ When suffering, you need to get to the cognative reframes, but first you need to
 Step 1: **Calm the mind** Need to be calm enough to observe and experience.
 
 Step 2A: **Affective -  experience joy**
+
+
 -  Can always find joy
 -  Like an oasis in the dessert
 -  Some days harder then others
@@ -696,7 +698,7 @@ Step 2B: **Affective - experience pain**
 - Nausia
 - Be willing to experience the pain in the body
 
--Approach:
+Approach:
 
 - Realize unpleasant experiences in the body
 - Realize root cause of suffering is aversion
