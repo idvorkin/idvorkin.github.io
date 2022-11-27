@@ -72,10 +72,10 @@ As a younger man I hated calendars, and structure. I still don't love them, but 
 My new calendar
 
 | Day | Early AM         | Evening       |
-| --- | ---------------- | ------------- |
-| M   | Crazy Early Work | Zach Date          |
-| T   | Trainer          | Free |
-| W   | Stair Climber    | Amelia Date     |
+|-----|------------------|---------------|
+| M   | Crazy Early Work | Zach Date     |
+| T   | Trainer          | Free          |
+| W   | Stair Climber    | Amelia Date   |
 | Th  | Self Gym         | Magic w/Clive |
 | F   | Run              | Movie Night   |
 | Sa  | [l1](l1)         | Free          |
