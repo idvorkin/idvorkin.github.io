@@ -65,10 +65,9 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
 ## Calendar - 2022
 
-As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegitate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
+As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
 
 My new calendar
 
@@ -96,37 +95,41 @@ My new calendar
 
 ## Morning Routine
 
-At my best, I roll out of bed either when my eyes open or at 5am, what ever comes first.
+At my best, I roll out of bed either when my eyes open or at 5am, whatever comes first.
 
 I also love getting my morning hug from my kids, but now that Zach's older (9), I'm down to just getting the hugs from Amelia - who is 5.
 
 ### Weekend morning routine
 
-On the weekends, the gym opens at 8, so it's essential I drink my coffee in my home office chair so I work on whatever is most important to me, often reading or writing. At 7:30 it's time to drag my but to the gym.
+On the weekends, the gym opens at 8, so it's essential I drink my coffee in my home office chair so I work on whatever is most important to me, often reading or writing. At 7:30 it's time to drag my butt to the gym.
 
 Post gym I'll either hit the coffee shop to do some more writing, or head home to spend the day with my family.
 
 ### Weekday morning routine
 
-At my best, I roll out of bed either when my eyes open or at 5am, what ever comes first.
+At my best, I roll out of bed either when my eyes open or at 5am, whatever comes first.
 
-The gym opens at 5:30, and I try to be there by 6. After my work out, I often chillax with my next priority being walking the kids to school. Walking the kids to school has surprisingly been a major quality of life improvement for a very small impact to my day.
+The gym opens at 5:30, and I try to be there by 6.
+
+**2022*** After my workout, I go to work so I'm done at 4pm.
+
+**Pre - 2021:** After my workout, I often chillax with my next priority being walking the kids to school. Walking the kids to school has surprisingly been a major quality of life improvement for a very small impact to my day.
 
 ### Morning Kryptonite
 
 I have two common failure modes to my morning routine.
 
 - Starting my day by sitting in my easy chair drinking my coffee. This mindless activity has me skipping those things that are important to me.
-- Hitting snooze when my alarm goes off. The worst of all words, not sleeping, and not being up and doing stuff.
+- Hitting snooze when my alarm goes off. The worst of all worlds, not sleeping, and not being up and doing stuff.
 - Lying in bed awake when I wake up before 5. Sometimes I wake up and can't fall back asleep @ 3 or 4 (which isn't crazy cuz sometimes I go to bed @ 7 or 8). Similar to hitting snooze, I'm not sleeping, and I'm not accomplishing anything.
 
 ## After Work Routine
 
-My discipline is strong in the morning, but by the time I get home from work, I'm usually energy and will power depleted.
+My discipline is strong in the morning, but by the time I get home from work, I'm usually energy and willpower depleted.
 
 ### Post work routine
 
-- I can fight my lack of will power with a schedule.
+- I can fight my lack of willpower with a schedule.
 - Current schedule, 1 day Zach date, 1 day Amelia date, 1 day friend date
 - Get a healthy snack - popcorn or vegetables (not a huge container of fruit)
 
@@ -137,7 +140,7 @@ My discipline is strong in the morning, but by the time I get home from work, I'
 
 ## My super powers
 
-{%include summarize-page.html src="/strength-finder" %}
+{%include summarize-page.html src="/strengths" %}
 
 **Activator** - People who are especially talented in the Activator theme can
 make things happen by turning thoughts into action. They are
@@ -216,7 +219,6 @@ I've already got enough hobbies - biking, magic, juggling. I get my biking fix n
 ### Husband
 
 ### Father
-
 ## Cognitive Reframe Upgrades
 
 The words you use influence how you think.
@@ -234,13 +236,13 @@ Don't give a guy trying to lose weight an ice cream maker. An ice cream maker so
 
 ### Luxury Car
 
-I've been dying to get a Tesla, full self driving and some luxur. But what's most importnat to my identity is biking, and not driving a car. To quote my friend Ammon - Igor you getting a tesla is like getting an ice cream maker. You need to decide your priority and go from there.
+I've been dying to get a Tesla, full self driving and some luxury. But what's most important to my identity is biking, and not driving a car. To quote my friend Ammon - Igor you getting a tesla is like getting an ice cream maker. You need to decide your priority and go from there.
 
 ### Sports cars
 
-On my trip to [FISM](/d/timeoff-07-2022), the cheapest car to rent ended up being a fancy sports car. It accelerated like butter, braked on a dime, and had gear shifting paddles in full sports mode. I soon realized I could weave throught traffic going 60 miles an hour easily playing peek-a-boo with regular cars.
+On my trip to [FISM](/d/timeoff-07-2022), the cheapest car to rent ended up being a fancy sports car. It accelerated like butter, braked on a dime, and had gear shifting paddles in full sports mode. I soon realized I could weave through traffic going 60 miles an hour easily playing peek-a-boo with regular cars.
 
-I realized 1/ no value to me in this 2/ chance of getting into or causing an accident 3/ chance of me focusing on anger that someone else playing peek-a-boo with me and winning.
+I realized 1/ no value to me in this 2/ chance of getting into or causing an accident 3/ chance of me focusing on anger that someone else is playing peek-a-boo with me and winning.
 
 ## Triggers and Mental Quick Sand
 
@@ -315,3 +317,4 @@ At the end of 2016, I joined [Amazon](/amazon) to learn the business of software
 I spent a lot of time learning to be a manager, and am [writing a book, or really notes to myself](/manager-book).
 
 {%include summarize-page.html src="/manager-book" %}
+
