@@ -12,6 +12,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc GFM -->
 
+- [Calendar - 2022](#calendar---2022)
 - [Morning Routine](#morning-routine)
     - [Weekend morning routine](#weekend-morning-routine)
     - [Weekday morning routine](#weekday-morning-routine)
@@ -42,7 +43,6 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Husband](#husband)
     - [Father](#father)
 - [Cognitive Reframe Upgrades](#cognitive-reframe-upgrades)
-- [Calendar - 2022](#calendar---2022)
 - [Bad Influences](#bad-influences)
     - [Luxury Car](#luxury-car)
     - [Sports cars](#sports-cars)
@@ -65,6 +65,34 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+## Calendar - 2022
+
+As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegitate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
+
+My new calendar
+
+| Day | Early AM         | Evening       |
+| --- | ---------------- | ------------- |
+| M   | Crazy Early Work | Free          |
+| T   | Trainer          | Amelia Date   |
+| W   | Stair Climber    | Zach Date     |
+| Th  | Self Gym         | Magic w/Clive |
+| F   | Run              | Movie Night   |
+| Sa  | [l1](l1)         | Free          |
+| Su  | [l2](l2)         | Free          |
+
+- l1
+- Trainer
+- Coffee Shop Writing
+
+<div/>
+- l2
+- Stretching/Free Gym
+- Coffee Shop
+- Weekly Journal
+- Family Blog Post
+
 
 ## Morning Routine
 
@@ -199,33 +227,6 @@ The words you use influence how you think.
 - This is crap --> Help me understand (/compassion)
 
 {%include summarize-page.html src="/som" %}
-
-## Calendar - 2022
-
-As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegitate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
-
-My new calendar
-
-| Day | Early AM         | Evening       |
-| --- | ---------------- | ------------- |
-| M   | Crazy Early Work | Free          |
-| T   | Trainer          | Amelia Date   |
-| W   | Stair Climber    | Zach Date     |
-| Th  | Self Gym         | Magic w/Clive |
-| F   | Run              | Movie Night   |
-| Sa  | [l1](l1)         | Free          |
-| Su  | [l2](l2)         | Free          |
-
-- l1
-- Trainer
-- Coffee Shop Writing
-
-<div/>
-- l2
-- Stretching/Free Gym
-- Coffee Shop
-- Weekly Journal
-- Family Blog Post
 
 ## Bad Influences
 
