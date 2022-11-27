@@ -71,9 +71,9 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Stream of conciousness journal
 - Do altruistic joy
 - wish someone happiness (happy gun)
-- wish someone free of suffering 
+- wish someone free of suffering
 
- 
+
 
 ### Cognative
 
@@ -102,8 +102,8 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Monkey
 - Bunny
 - teddy bear
-- ray gun 
-- mermaid 
+- ray gun
+- mermaid
 
 ### Joy to Others
 
@@ -173,6 +173,8 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Co-write an essay with Zach
 - Watch a movie with Zach
 - Watch the Simpsons with Zach
+- Go Kayaking
+- Working on a Movie
 
 ### Tori
 
