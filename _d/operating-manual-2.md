@@ -73,8 +73,8 @@ My new calendar
 
 | Day | Early AM         | Evening       |
 |-----|------------------|---------------|
-| M   | Crazy Early Work | Zach Date     |
-| T   | Trainer          | Free          |
+| M   | Crazy Early Work | Free          |
+| T   | Trainer          | Zach Date     |
 | W   | Stair Climber    | Amelia Date   |
 | Th  | Self Gym         | Magic w/Clive |
 | F   | Run              | Movie Night   |
