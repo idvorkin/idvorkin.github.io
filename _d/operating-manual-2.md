@@ -65,6 +65,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
 ## Calendar - 2022
 
 As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
@@ -72,7 +73,7 @@ As a younger man I hated calendars, and structure. I still don't love them, but 
 My new calendar
 
 | Day | Early AM         | Evening       |
-|-----|------------------|---------------|
+| --- | ---------------- | ------------- |
 | M   | Crazy Early Work | Free          |
 | T   | Trainer          | Zach Date     |
 | W   | Stair Climber    | Amelia Date   |
@@ -92,7 +93,6 @@ My new calendar
 - Weekly Journal
 - Family Blog Post
 
-
 ## Morning Routine
 
 At my best, I roll out of bed either when my eyes open or at 5am, whatever comes first.
@@ -111,7 +111,7 @@ At my best, I roll out of bed either when my eyes open or at 5am, whatever comes
 
 The gym opens at 5:30, and I try to be there by 6.
 
-**2022*** After my workout, I go to work so I'm done at 4pm.
+**2022\*** After my workout, I go to work so I'm done at 4pm.
 
 **Pre - 2021:** After my workout, I often chillax with my next priority being walking the kids to school. Walking the kids to school has surprisingly been a major quality of life improvement for a very small impact to my day.
 
@@ -174,7 +174,9 @@ what is wrong and resolving it.
 
 ## Health and habits
 
-Health - physical, emotional, cognitive and spiritual, is easy to understand but hard to maintain. My strategy to maintain health is [habits](/habits), but thanks to the [immutable laws of hard things](http://~/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
+Health - physical, emotional, cognitive and spiritual, is easy to understand but hard to maintain. My strategy to maintain health is [habits](/habits), but thanks to the [immutable laws of hard things](/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
+
+{%include summarize-page.html src="/Immutable-Laws-Of-Hard" %}
 
 I spend lots of time thinking about how I should be working my habits, but often end up not doing them. In this case, the key is to stop moaning and restart 'em.
 
@@ -219,6 +221,7 @@ I've already got enough hobbies - biking, magic, juggling. I get my biking fix n
 ### Husband
 
 ### Father
+
 ## Cognitive Reframe Upgrades
 
 The words you use influence how you think.
@@ -317,4 +320,3 @@ At the end of 2016, I joined [Amazon](/amazon) to learn the business of software
 I spent a lot of time learning to be a manager, and am [writing a book, or really notes to myself](/manager-book).
 
 {%include summarize-page.html src="/manager-book" %}
-
