@@ -2,6 +2,10 @@
 layout: post
 title: "My thoughts on Facebook"
 permalink: /facebook
+redirects_from:
+    - /meta
+    - /fb
+
 ---
 
 Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook
@@ -39,6 +43,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
     - [CO-Ex: Creating a virtual living](#co-ex-creating-a-virtual-living)
     - [AR: Having fun and reducing the burden of attention](#ar-having-fun-and-reducing-the-burden-of-attention)
     - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
+- [From Facebook to Meta and the metaverse:](#from-facebook-to-meta-and-the-metaverse)
 - [Core Values (LP's)](#core-values-lps)
     - [Focus on Impact](#focus-on-impact)
     - [Move Fast](#move-fast)
@@ -235,6 +240,17 @@ Relative to MSFT and AMZN folks are very concerned about reviews. I've debugged 
 - Operational Excellence
 
 ### Bonus leanings at Facebook
+
+##  From Facebook to Meta and the metaverse:
+
+There are lots of jokes about the metaverse, but I'm a big fan, I'll I'll tell you why.
+
+In 2020, had a college hire wanted to do a 1:1 in VR instead of in person.
+Annoyed, buy hey that's why we hire college hires, to get new ideas. Took 20 minutes to setup, virtual conference room. Cartoony, but then ... He sits beside me, right in the chair beside me. Shoulder to shoulder, very uncomfortable. Told him he had to move, and he said in relief, oh you felt that too, yeah - that was ackward.
+
+Next, open of horizon worlds ... creator ... showed me how to configure correctly, told me about art ...
+
+In 2022, lord of the rings. How do we solve thi sim the real world? Identity and social norm.s Group chats are like this.
 
 ## Core Values (LP's)
 
