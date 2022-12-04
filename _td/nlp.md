@@ -9,6 +9,8 @@ My explorations of NLP, mostly using my corpus of journal entries and other writ
 
 My Journal Entries are private, but you can see my [code here](https://github.com/idvorkin/nlp)(though it is tightly coupled to my corpus and format).
 
+To beter underst all this check out this course: <https://www.nlpdemystified.org/course/seq2seq-and-attention>
+
 ## Success Criteria
 
 - Deeper understanding of what I care about.
