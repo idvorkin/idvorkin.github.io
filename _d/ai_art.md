@@ -78,8 +78,10 @@ Picard
 
 ### Word to Image Generator: DALL-E and Stable Diffusion
 
-* [Dall-E is OpenAI's Image Generator](https://openai.com/blog/dall-e/) the examples lower in the blog post have some level of  interaction.
-* [Tool to do art with image generators](https://openart.ai/promptbook)
+- [Dall-E is OpenAI's Image Generator](https://openai.com/blog/dall-e/) the examples lower in the blog post have some level of interaction.
+- [Tool to do art with image generators](https://openart.ai/promptbook)
+
+Run stable diffusion on M1 mac (WOW!!) - <https://github.com/brycedrennan/imaginAIry>
 
 ### Not a X
 
