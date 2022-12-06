@@ -59,6 +59,7 @@ A collection of tips, tricks and pointers of the various tools i use
     - [howdoi](#howdoi)
 - [Excalidraw](#excalidraw)
 - [PlantUML alternatives](#plantuml-alternatives)
+- [D2](#d2)
 - [PlantUML](#plantuml)
     - [PlantUML Tools](#plantuml-tools)
     - [PlantUML in Markdown](#plantuml-in-markdown)
@@ -557,6 +558,10 @@ A great way to draw in a collaborative form see file at (/images/build-workflow.
 Huh, turns out there are lots (for UML and graphicing, etc). Read the list here, I haven't played with them yet:
 
 <https://hackmd.io/features#UML-Diagrams>
+
+### D2
+
+Look like a fun alternative language: <https://github.com/terrastruct/d2#install>
 
 ### PlantUML
 
