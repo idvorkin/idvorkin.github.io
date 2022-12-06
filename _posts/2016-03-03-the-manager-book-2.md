@@ -162,10 +162,10 @@ An acid test:
 - People have clear understanding of career growth/progression and how their work supports it.
 -->
 
-| Dimension                          | Success Means                                                                                                                                                                                                                                     |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Business Results                   | Team delivers business value for our customers and organization. I define success (KPI), and help the team understand and deliver it.                                                                                                                 |
-| High performance people and teams  | Team is well gelled and team members help each other. Everyone has growth plans which fit their needs and they are executing them.                                                                                                                |
+| Dimension                          | Success Means                                                                                                                                                                                                                                      |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Business Results                   | Team delivers business value for our customers and organization. I define success (KPI), and help the team understand and deliver it.                                                                                                              |
+| High performance people and teams  | Team is well gelled and team members help each other. Everyone has growth plans which fit their needs and they are executing them.                                                                                                                 |
 | Engineering Efficiency and Process | Engineering systems and protocols ensure a pit of success. Process is automated, and releases have high velocity and minimal risk.                                                                                                                 |
 | Technical Assets                   | Systems are extensible in the ways that support the business. Operational burden is minimal (side bar: to help me prioritize I'm on the pages), and technical debt is applied judiciously (take debt if you might be able to write off the asset). |
 
@@ -173,12 +173,12 @@ An acid test:
 
 I run a factory which produces widgets and has employees. For those in the industry this translates to:
 
-| Dimension                          | Analog               | Metrics and Measures | Success Means                                                                                                                                                                         |
-| ---------------------------------- | -------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Business Results                   | Produced Widgets     | [l20](l20)           | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy and explaining how our factory runs.                            |
-| High performance people and teams  | Factory Workers      | [l21](l21)           | Workers in the factory are healthy, learning, want to come to work every day, and getting along with co-workers.                                                                      |
+| Dimension                          | Analog               | Metrics and Measures | Success Means                                                                                                                                                                           |
+| ---------------------------------- | -------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Business Results                   | Produced Widgets     | [l20](l20)           | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy and explaining how our factory runs.                               |
+| High performance people and teams  | Factory Workers      | [l21](l21)           | Workers in the factory are healthy, learning, want to come to work every day, and getting along with co-workers.                                                                        |
 | Engineering Efficiency and Process | Operating procedures | [l22](l22)           | The factory is efficient: Production is good and improving. Widgets come out consistently and on schedule. New employees know what to do. Everyone knows what to do during emergencies. |
-| Technical Assets                   | Factory machines     | [l23](l23)           | Machines in the factory adjust quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency.                                   |
+| Technical Assets                   | Factory machines     | [l23](l23)           | Machines in the factory adjust quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency.                                      |
 
 <div> </div>
 
@@ -747,9 +747,11 @@ From Simon Sinek, a great script:
 
 ### What is your ideal culture
 
-Tough question. I need to think through that
+Tough question. I need to put more thining and polish into this.
 
-- Coming to work is fun, team gelled, and ahead of individuals
+Culture has 3 components, the team, the execution model and the growth/feedback model.
+
+- Team: Coming to work is fun, team gelled, and ahead of individuals
 
   - Team gelled, and always helping and growing each other
   - People put team ahead of themselves, to support each other.
@@ -759,7 +761,7 @@ Tough question. I need to think through that
   - Team first, whole greater then the sum of its parts
   - Everyone provides kuddos to others
 
-- Imagination Executed Sustainably
+- Execution Model: Imagination Executed Sustainably
 
   - Ship as frequently as possible.
   - Test cheaply, early and often.
@@ -1285,12 +1287,12 @@ Then there's a formal PIP. Depends on your company but very similar to above, bu
 
 ## Team Insecurity
 
-* Very common situtatoin
-* Team feels nothing they/EM can do - but that's completely wrong!!
+- Very common situtatoin
+- Team feels nothing they/EM can do - but that's completely wrong!!
 
 ### Everyone wants to feel good, support each other
 
- Happiness is a choice!
+Happiness is a choice!
 
 Every day I walk past a beggar, he only has 1 leg, and like 6 teeth, but he's always smiling. Wet or dry, snow or sun, always a beaming mostly toothless smile. One day I ask him "Hey man, I gotta ask, why are you always so positive"? And he answered.
 
@@ -1298,14 +1300,13 @@ Every day I walk past a beggar, he only has 1 leg, and like 6 teeth, but he's al
 
 Now, as a team we want to support each other, lets help each other by reminding each other of these things and the importance of choosing happiness.
 
-
 ### Maintain perspective
 
-* When there's mental pain, time bound shrinks, as does all the attributes
-* Share all the good stuff and big pictures
-* Extra focus on appreciation
-* Increase Time Range
-* Be Patient
+- When there's mental pain, time bound shrinks, as does all the attributes
+- Share all the good stuff and big pictures
+- Extra focus on appreciation
+- Increase Time Range
+- Be Patient
 
 ## Charters, Re-orgs and Bootstrapping
 
@@ -1454,7 +1455,7 @@ This is pretty similar to the whole team getting a new job, and [the first 90 da
 
 A great way to do this is set the team up to do spikes on the major work items, this will overcome the above concerns, building knowledge and motivating the early wins.
 
-### Insufficient progress -  Double down or pivot
+### Insufficient progress - Double down or pivot
 
 When progress is insufficient, there are two situations, both painful, with overlapping symptoms, and some shared requirements.
 
@@ -1492,16 +1493,13 @@ In the best case, this decision will be made as part of the normal rhythm of bus
 
 In a common case, the decision will be sudden, often with an edict from leadership to take immediate action. In this case, the priorities are:
 
-* Manage comms with the team - decide when to tell folks, see some of the re-org discussions
-* Negotiate a transition period with leadership.
-* Figure out an interim roadmap till longer term work can be found
-* Figure out how to wrap up work, and ensure fair credit attributed to work in progress.
-* This is a highly emotional situation support the team, and yourself.
+- Manage comms with the team - decide when to tell folks, see some of the re-org discussions
+- Negotiate a transition period with leadership.
+- Figure out an interim roadmap till longer term work can be found
+- Figure out how to wrap up work, and ensure fair credit attributed to work in progress.
+- This is a highly emotional situation support the team, and yourself.
 
-
-NOTES:
-    - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
-
+NOTES: - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
 
 <!--
 
@@ -1517,19 +1515,19 @@ Day Of:
 
 * Get up early and get ready.
 * This will be a very emotionally draining day.
-* Excellent chance you won't know what's going on, and
+* Excellent chance you won't know what's going on
 * Remind people it's a tough day and take care of themselves.
 * Discourage people speculating what and why
-* Remind people to take care of themselves
-* Mental health experts recommend against group meetings. Keep everything 1:1
 
 Next days:
 
-* Possible re-org
-
+* Mental health experts recommend against group meetings. Keep everything 1:1
+* Reduced productivity for days
+* Possible re-org, with potential for lots of uncertainty.
+* It's easy to "mourn" the people who were impacted. However, they are not dead.
+* Ask impacted folks if they'd like to get together, it probably means a lot to them to get closure.
 
 -->
-
 
 ## Personal Motivations
 
