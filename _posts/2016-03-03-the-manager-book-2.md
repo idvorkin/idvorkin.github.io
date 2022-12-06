@@ -10,9 +10,9 @@ redirect_from:
   - /the-manager-book
 ---
 
-Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave and encourages continuous improvement.
+Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.
 
-This post uses the word manager, but the majority of topics are applicable to all software job functions regardless of seniority or the number of direct reports, zero direct reports included.
+This post uses the word manager, but the most topics apply to all software job functions regardless of seniority or the number of direct reports, zero direct reports included.
 
 <!-- prettier-ignore-start -->
 
@@ -122,7 +122,7 @@ This post uses the word manager, but the majority of topics are applicable to al
     - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
     - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
-    - [Insufficient progress -  Double down or pivot](#insufficient-progress----double-down-or-pivot)
+    - [Insufficient progress - Double down or pivot](#insufficient-progress---double-down-or-pivot)
     - [Layoffs](#layoffs)
 - [Personal Motivations](#personal-motivations)
     - [Why do you find management attractive](#why-do-you-find-management-attractive)
