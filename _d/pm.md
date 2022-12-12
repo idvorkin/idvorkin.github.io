@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Product Manager Notes
+title: Building products
 tags:
   - emotional intelligence
-permalink: /pm
+permalink: /product
 redirect_from:
   - /product-manager
+  - /pm
 ---
 
 My notes on being a product manager
