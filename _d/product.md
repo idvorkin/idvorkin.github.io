@@ -9,7 +9,7 @@ redirect_from:
   - /pm
 ---
 
-My notes on being a product manager
+My notes on building a products
 
 ### Product Vision - The future you want to create
 
@@ -50,10 +50,22 @@ Pleasing everyone pleases no one. So this is where we decide what we're going to
 
 ### Product Discovery (Solving the big risks)
 
-* Customer Risk - Will the customer buy it?
-* Usability Risk - Can user figure out how to use it?
-* Feasibility Risk - Can we build it?
-* Business Risk - Does this work for our business?
+The key of product discovery framing is:
+
+1. Team is in sync on
+    * The objective,
+    * Problem we solve for the customers,
+    * which target is the customers
+    * How to know if we succeeded.
+    * These are connected to the KPIs
+
+1. The big risks are identified and tackled
+    * Customer Risk - Will the customer buy it?
+    * Usability Risk - Can user figure out how to use it?
+    * Feasibility Risk - Can we build it?
+    * Business Risk - Does this work for our business?
+
+NOTE: The goal is to focus on the customers problem that is constant, the solution varies with the iterations
 
 Some things as you try to eliminate these risks
 
@@ -67,9 +79,8 @@ Some things as you try to eliminate these risks
 1. Validate business value during discovery, not after
 1. Share learnings with the team.
 
-### Product Discovery Framing
+# Sizing
 
-The key of product discovery Framing is.
 
 ### Working with Product Design
 
@@ -117,9 +128,9 @@ The goal is a book that was mandatory reading for amazon executives...
 
 3 Areas:
 
-1/ Making Money - What ever your output goal is. Though usuall you move an input goal.
-2/ Inventory - Stuff that's required to meet your goal, but isn't sufficient.
-3/ Operating Expense - Anyt costs.
+1. Making Money - What ever your output goal is. Though usuall you move an input goal.
+2. Inventory - Stuff that's required to meet your goal, but isn't sufficient.
+3. Operating Expense - Anyt costs.
 
 Note, inventory is output. Not inherintly useful. Outcomes is goal!
 
