@@ -100,3 +100,18 @@ be sure? What you are sure of is that ideas are thrilling. And on most days this
 ### The really long version of my strengths
 
 Is in this [pdf](/static/StrengthFinderIgor.pdf).
+
+### Bonus: My Enneagram (Any-O-Gram)
+
+| Enneagram | Type              | Score |
+|-----------|-------------------|-------|
+| 8         | The Challenger    | 23    |
+| 2         | The Helper        | 19    |
+| 5         | The Investigator  | 18    |
+| 4         | The Individualist | 15    |
+| 3         | The Achiever      | 13    |
+| 1         | The Reformer      | 10    |
+| 6         | The Loyalist      | 9     |
+| 9         | The Peacemaker    | 8     |
+
+Is in this [pdf](https://github.com/idvorkin/blob/raw/master/blog/igor-enneagram.pdf)
