@@ -41,6 +41,33 @@ Pleasing everyone pleases no one. So this is where we decide what we're going to
 * Obsess on customers not competitors
 * Make sure all partners know your strategy
 
+### Product Discovery (Solving the big risks)
+
+* Customer Risk - Will the customer buy it?
+* Usability Risk - Can user figure out how to use it?
+* Feasibility Risk - Can we build it?
+* Business Risk - Does this work for our business?
+
+Some things as you try to eliminate these risks
+
+1. Customers (and execs) can't tell you what to build
+1. Most important thing is to provide value
+1. User experience is usually harder than the engineering process
+1. Design/Tech/Function is intertwined
+1. Many of our ideas won't work and we require iteration
+1. Must validate our ideas on real users
+1. Goal is to validate as cheaply as possible
+1. Validate business value during discovery, not after
+1. Share learnings with the team.
+
+### Product Discovery Framing
+
+The key of product discovery Framing is.
+
+
+### User Story Mapping
+
+
 ### How to prioritize your market.
 
 * Market Size - TAM
@@ -58,6 +85,7 @@ Pleasing everyone pleases no one. So this is where we decide what we're going to
 * Be an expert on the domain (competitors, customers)
 * Be excited  - Enthusiasm is contaigous
 * Spend time with the team - Every single person, makes a very big deal.
+
 
 ### Notes from the goal
 
