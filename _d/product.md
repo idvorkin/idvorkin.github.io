@@ -28,6 +28,13 @@ Top recruiting tools, motivates folks to come to work daily. Everyone wants to w
 * Realize it always is a leap of faith
 * Evangalize continously
 
+### Sharing your thinking/approach
+
+* Connect work to goals
+* Don't hide constraints (no designer/no eng/xyz)
+* Show decisions by laying out your insights and reasoning
+* Partner with designer other stakeholders
+
 ### Product Strategy - Path to get to the future
 
 Vision should be inspiring! Strategy should should be focused.
@@ -64,6 +71,22 @@ Some things as you try to eliminate these risks
 
 The key of product discovery Framing is.
 
+### Working with Product Design
+
+Product design is critical. Common Failure modes:
+
+* PM tries to draw prodcuts themselves. Eng needs product design, you draw wireframes, eng builds, and makes up the design themselves
+* PM doesn't provide designs, just stories, again eng makes up product design themselves
+* You create interactive design, then hire a contractor to draw themselves
+
+
+Optimal, having a designer:
+
+* Do what is required to have them sit with you
+* Include design from start of all ideas
+* Include design in as many customer and user interactions as possible
+* Don't give the desiner your ideas, let them sole the problems themselves.
+* Let designer iterate as much as possible.
 
 ### User Story Mapping
 

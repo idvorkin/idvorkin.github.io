@@ -99,7 +99,7 @@ be sure? What you are sure of is that ideas are thrilling. And on most days this
 
 ### The really long version of my strengths
 
-Is in this [pdf](/static/StrengthFinderIgor.pdf).
+See [full Strength Finder](/static/StrengthFinderIgor.pdf).
 
 ### Bonus: My Enneagram (Any-O-Gram)
 
@@ -114,4 +114,5 @@ Is in this [pdf](/static/StrengthFinderIgor.pdf).
 | 6         | The Loyalist      | 9     |
 | 9         | The Peacemaker    | 8     |
 
-Is in this [pdf](https://github.com/idvorkin/blob/raw/master/blog/igor-enneagram.pdf)
+See [full Enneagram
+](/static/igor-enneagram.pdf)
