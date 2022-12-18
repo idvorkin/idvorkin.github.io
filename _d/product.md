@@ -79,7 +79,7 @@ Some things as you try to eliminate these risks
 1. Validate business value during discovery, not after
 1. Share learnings with the team.
 
-# Sizing
+### Sizing
 
 
 ### Working with Product Design
@@ -119,6 +119,30 @@ Optimal, having a designer:
 * Be an expert on the domain (competitors, customers)
 * Be excited  - Enthusiasm is contaigous
 * Spend time with the team - Every single person, makes a very big deal.
+
+
+### Engagement vs Growth
+
+* Growth is getting new users - New entrypoints, advertising, etc - DAU/WAU/MAU
+* Engagement - Getting existing users to have more value - Usage Time
+
+### DAU is retention and new users
+
+* Recall DAU needs new users returning users. New users vs retention likely matters in a
+
+## Flywheels
+
+*Huh, GPT is writing these*
+
+### Sharing Flywheel
+
+A Sharing Flywheel is a model or concept used to encourage the sharing of a particular piece of content with the intent of increasing its visibility and engagement. The basic idea is that if one person shares it, their followers or friends may reshare  and repost the content, creating a "flywheel" effect where the content is shared and reshared in a cycle. By creating an environment where the content can become viral, more people will be exposed to it, which can lead to more engagement
+
+### Content Consumption Flywheel
+
+A Content Consumption Flywheel is a type of content marketing strategy in which a company or organization encourages their customers and followers to consume content in an ongoing cycle. This strategy encourages customers and followers to consume content consistently, often on a regular basis and
+
+## Misc
 
 
 ### Notes from the goal
