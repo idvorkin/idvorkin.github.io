@@ -11,6 +11,8 @@ redirect_from:
 
 My notes on building a products
 
+## Product Work
+
 ### Product Vision - The future you want to create
 
 Vision should be inspiring! Strategy should should be focused.
@@ -79,8 +81,6 @@ Some things as you try to eliminate these risks
 1. Validate business value during discovery, not after
 1. Share learnings with the team.
 
-### Sizing
-
 
 ### Working with Product Design
 
@@ -99,7 +99,6 @@ Optimal, having a designer:
 * Don't give the desiner your ideas, let them sole the problems themselves.
 * Let designer iterate as much as possible.
 
-### User Story Mapping
 
 
 ### How to prioritize your market.
@@ -120,6 +119,11 @@ Optimal, having a designer:
 * Be excited  - Enthusiasm is contaigous
 * Spend time with the team - Every single person, makes a very big deal.
 
+## Roadmapping and User Story Mapping
+
+### What's a story map
+
+## Concepts
 
 ### Engagement vs Growth
 
