@@ -58,6 +58,8 @@ Bill Gates not being baited to complain about the government response to covid
 
 {% include youtube.html src="Xe8fIjxicoo?start=643" %}
 
+Everything Mr. Rogers does
+
 ### Being a leader
 
 This chef as he praises other, focuses on the customer, trains other. And the respect he is commanded as a result - so good...
