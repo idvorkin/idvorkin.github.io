@@ -21,6 +21,7 @@
         "/architecture": "/design",
         "/atomic-habits": "/d/habits",
         "/augmentedreality": "/ar",
+        "/ballooning": "/balloon",
         "/bbb": "/build-bubble-bike",
         "/begin-with-the-end-in-mind": "/end-in-mind",
         "/bikes": "/bike",
@@ -109,11 +110,13 @@
         "/perfect-job": "/job",
         "/personal-development": "/timeoff",
         "/phoney": "/insecure",
+        "/pm": "/product",
         "/poh": "/happy",
         "/proactive": "/be-proactive",
         "/process": "/upstream",
         "/procrastinate": "/frog",
         "/procrastination": "/frog",
+        "/product-manager": "/product",
         "/productivity": "/productive",
         "/psych-safety": "/insecure",
         "/psychological-safety": "/insecure",
@@ -363,7 +366,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai_art.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -443,14 +446,15 @@
                 "/addiction",
                 "/anxiety",
                 "/frog",
-                "/mental-pain"
+                "/mental-pain",
+                "/siy"
             ],
             "incoming_links": [
                 "/anxiety"
             ],
             "redirect_url": "",
             "markdown_path": "_d/anxiety_management.md",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/appreciate": {
             "py/object": "__main__.Page",
@@ -517,6 +521,18 @@
             "redirect_url": "",
             "markdown_path": "_d/balance2.md",
             "doc_size": 17000
+        },
+        "/balloon": {
+            "py/object": "__main__.Page",
+            "url": "/balloon",
+            "title": "Being a Ballooner",
+            "description": "How can you put a huge smile on someones face with 10 cents of material and  20 seconds of work? Making balloons! In 2022 I discovered ballooning, and have used it to bring joy ever since.\n\n",
+            "file_path": "_site/balloon.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/balloon.md",
+            "doc_size": 11000
         },
         "/be-proactive": {
             "py/object": "__main__.Page",
@@ -745,7 +761,8 @@
             "outgoing_links": [
                 "/appreciate",
                 "/curious",
-                "/first-understand"
+                "/first-understand",
+                "/touching"
             ],
             "incoming_links": [
                 "/affirmations"
@@ -1238,7 +1255,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2022-11.md",
-            "doc_size": 19000
+            "doc_size": 24000
         },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
@@ -1470,8 +1487,10 @@
             "description": "Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I’ve been exploring.\n\n",
             "file_path": "_site/emotional-health.html",
             "outgoing_links": [
+                "/joy",
                 "/sharpen-the-saw",
                 "/siy",
+                "/touching",
                 "/voices"
             ],
             "incoming_links": [
@@ -1484,7 +1503,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/emotional-health-hold.md",
-            "doc_size": 18000
+            "doc_size": 21000
         },
         "/end-in-mind": {
             "py/object": "__main__.Page",
@@ -1610,7 +1629,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/facebook.md",
-            "doc_size": 26000
+            "doc_size": 27000
         },
         "/fail": {
             "py/object": "__main__.Page",
@@ -1937,7 +1956,8 @@
             "file_path": "_site/Immutable-Laws-Of-Hard.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/frog"
+                "/frog",
+                "/operating-manual"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-6-30-Immutable-Laws-Of-Hard.md",
@@ -1966,7 +1986,7 @@
             "py/object": "__main__.Page",
             "url": "/insomnia",
             "title": "What I should do when I can't sleep",
-            "description": "If you want advice on how to deal with insomnia, do NOT ask a person who hasn’t slept in two nights. Instead, ask someone who’s had insomnia several times, and has a checklist on how to respond when insomnia flares up. By the way, I’ve never actually taken this advice, but maybe writing it down will make it more likely that I’ll take it in the future.\n\n",
+            "description": "Insomnia controls you, instead of you controlling your sleep. If you want advice on how to deal with insomnia, do NOT ask a person who hasn’t slept in two nights. Instead, ask someone who’s had insomnia several times, and has a checklist on how to respond when insomnia flares up. By the way, I’ve never actually taken this advice, but maybe writing it down will make it more likely that I’ll take it in the future.\n\n",
             "file_path": "_site/insomnia.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -2075,6 +2095,7 @@
             "incoming_links": [
                 "/affirmations",
                 "/build-bubble-bike",
+                "/emotional-health",
                 "/end-in-mind",
                 "/happy",
                 "/hobby",
@@ -2153,7 +2174,7 @@
             "py/object": "__main__.Page",
             "url": "/manager-book",
             "title": "Igor's Book of Management",
-            "description": "Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave and encourages continuous improvement.\n\n",
+            "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
             "file_path": "_site/manager-book.html",
             "outgoing_links": [
                 "/90days",
@@ -2426,6 +2447,7 @@
             "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.\n\n",
             "file_path": "_site/operating-manual.html",
             "outgoing_links": [
+                "/Immutable-Laws-Of-Hard",
                 "/amazon",
                 "/anxiety",
                 "/bike",
@@ -2445,7 +2467,7 @@
                 "/parkinson",
                 "/physical-health",
                 "/sleight-of-mouth",
-                "/strength-finder",
+                "/strengths",
                 "/todo_enjoy",
                 "/voices",
                 "/writing"
@@ -2453,7 +2475,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/operating-manual-2.md",
-            "doc_size": 26000
+            "doc_size": 28000
         },
         "/pandas": {
             "py/object": "__main__.Page",
@@ -2540,6 +2562,18 @@
             "redirect_url": "",
             "markdown_path": "_posts/2018-01-01-fuck-pride.md",
             "doc_size": 18000
+        },
+        "/product": {
+            "py/object": "__main__.Page",
+            "url": "/product",
+            "title": "Building products",
+            "description": "My notes on building a products\n\n",
+            "file_path": "_site/product.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/product.md",
+            "doc_size": 20000
         },
         "/productive": {
             "py/object": "__main__.Page",
@@ -2782,6 +2816,7 @@
                 "/what-makes-a-leader"
             ],
             "incoming_links": [
+                "/anxiety-management",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/coaching",
@@ -2797,7 +2832,7 @@
                 "/sharpen-the-saw"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/siy.md",
+            "markdown_path": "_d/pm.md",
             "doc_size": 59000
         },
         "/sleeping-bag-sacrifies": {
@@ -2882,12 +2917,15 @@
             "description": "Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.\n\n",
             "file_path": "_site/strengths.html",
             "outgoing_links": [
-                "/static/StrengthFinderIgor.pdf"
+                "/static/StrengthFinderIgor.pdf",
+                "/static/igor-enneagram.pdf"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/operating-manual"
+            ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-05-25-strength-finder.md",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/sustainable-work": {
             "py/object": "__main__.Page",
@@ -3115,7 +3153,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/ios-nomad.md",
-            "doc_size": 22000
+            "doc_size": 21000
         },
         "/td/linqpad_from_redshift": {
             "py/object": "__main__.Page",
@@ -3412,6 +3450,8 @@
                 "/magic"
             ],
             "incoming_links": [
+                "/class-act",
+                "/emotional-health",
                 "/end-in-mind",
                 "/siy"
             ],
