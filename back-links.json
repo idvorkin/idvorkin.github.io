@@ -526,7 +526,7 @@
             "py/object": "__main__.Page",
             "url": "/balloon",
             "title": "Being a Ballooner",
-            "description": "How can you put a huge smile on someones face with 10 cents of material and  20 seconds of work? Making balloons! In 2022 I discovered ballooning, and have used it to bring joy ever since.\n\n",
+            "description": "How can you put a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Making balloons! In 2022 I discovered ballooning, and have used it to bring joy ever since.\n\n",
             "file_path": "_site/balloon.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -1203,7 +1203,9 @@
                 "/happy",
                 "/timeoff"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/d/time-off-2022-12"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2021-12.md",
             "doc_size": 20000
@@ -1258,6 +1260,22 @@
             "redirect_url": "",
             "markdown_path": "_d/time-off-2022-11.md",
             "doc_size": 24000
+        },
+        "/d/time-off-2022-12": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2022-12",
+            "title": "Time off X-mas 2022",
+            "description": "It’s X-mas 2022, quite the fall excitement edition! and ‘ve got 1 and change  weeks off in an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
+            "file_path": "_site/d/time-off-2022-12.html",
+            "outgoing_links": [
+                "/d/time-off-2021-12",
+                "/happy",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2022-12.md",
+            "doc_size": 17000
         },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
@@ -1866,6 +1884,7 @@
                 "/d/time-off-2022-02",
                 "/d/time-off-2022-07",
                 "/d/time-off-2022-11",
+                "/d/time-off-2022-12",
                 "/hobby",
                 "/joy",
                 "/siy",
@@ -3403,6 +3422,7 @@
                 "/d/time-off-2022-02",
                 "/d/time-off-2022-07",
                 "/d/time-off-2022-11",
+                "/d/time-off-2022-12",
                 "/mind-at-work",
                 "/parkinson"
             ],
