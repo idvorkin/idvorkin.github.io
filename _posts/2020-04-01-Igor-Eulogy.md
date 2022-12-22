@@ -44,6 +44,8 @@ _For many of my roles, I'm still figuring out who I want to be, and how I will a
 
 Making cards change colors at a spectators command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. Once Igor learned [magic](/magic), that consumed his free time and became his favorite tool.
 
+In 2022 Igor discovered [ballooning](/balloon) which was amazing as well.
+
 Back in his 30s he used to juggle lots of things, the coolest of which being [juggle fire](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches).
 
 <!--
