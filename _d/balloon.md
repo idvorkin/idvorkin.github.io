@@ -8,7 +8,7 @@ redirect_from:
   - /ballooning
 ---
 
-How can you put a huge smile on someones face with 10 cents of material and  20 seconds of work? Making balloons! In 2022 I discovered ballooning, and have used it to bring joy ever since.
+How can you put a huge smile on someone's face with 10 cents of material and 20 seconds of work? Making balloons! In 2022 I discovered ballooning, and have used it to bring joy ever since.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -17,7 +17,7 @@ How can you put a huge smile on someones face with 10 cents of material and  20 
 - [Amelia's Grade 3 holiday Party](#amelias-grade-3-holiday-party)
 - [Some of my creations](#some-of-my-creations)
 - [Guns, Mermaids and Gender Biases](#guns-mermaids-and-gender-biases)
-- [This Selflessness of Balloon teachers](#this-selflessness-of-balloon-teachers)
+- [The Selflessness of Balloon teachers](#the-selflessness-of-balloon-teachers)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -32,5 +32,5 @@ How can you put a huge smile on someones face with 10 cents of material and  20 
 ### Guns, Mermaids and Gender Biases
 
 
-### This Selflessness of Balloon teachers
+### The Selflessness of Balloon teachers
 
