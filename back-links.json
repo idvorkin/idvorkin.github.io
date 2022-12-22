@@ -529,7 +529,9 @@
             "description": "How can you put a huge smile on someones face with 10 cents of material and  20 seconds of work? Making balloons! In 2022 I discovered ballooning, and have used it to bring joy ever since.\n\n",
             "file_path": "_site/balloon.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/eulogy"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/balloon.md",
             "doc_size": 11000
@@ -1585,6 +1587,7 @@
                 "/7-habits",
                 "/Human-Meetings",
                 "/The-Genesis-Node",
+                "/balloon",
                 "/being-a-great-manager",
                 "/bike",
                 "/cache",
