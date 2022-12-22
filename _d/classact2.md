@@ -17,6 +17,7 @@ Be a class act. Fantatic advice.
     - [Seek first to understand](#seek-first-to-understand)
     - [Be compassionate](#be-compassionate)
     - [Appreciate](#appreciate)
+    - [Do something touching](#do-something-touching)
     - [Other](#other)
 - [Great Examples](#great-examples)
     - [Not taking the bait.](#not-taking-the-bait)
@@ -38,6 +39,12 @@ Be a class act. Fantatic advice.
 ### Appreciate
 
 {%include summarize-page.html src="/appreciate" %}
+
+### Do something touching
+
+Not quite the same, but pretty related
+
+{%include summarize-page.html src="/touching" %}
 
 ### Other
 
