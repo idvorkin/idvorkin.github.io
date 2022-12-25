@@ -528,13 +528,16 @@
             "title": "Being a Ballooner",
             "description": "How can you put a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Making balloons! In 2022 I discovered ballooning, and have used it to bring joy ever since.\n\n",
             "file_path": "_site/balloon.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/joy"
+            ],
             "incoming_links": [
-                "/eulogy"
+                "/eulogy",
+                "/joy"
             ],
             "redirect_url": "",
             "markdown_path": "_d/balloon.md",
-            "doc_size": 11000
+            "doc_size": 16000
         },
         "/be-proactive": {
             "py/object": "__main__.Page",
@@ -2050,7 +2053,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/irl.md",
-            "doc_size": 44000
+            "doc_size": 45000
         },
         "/job": {
             "py/object": "__main__.Page",
@@ -2108,14 +2111,17 @@
             "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
             "file_path": "_site/joy.html",
             "outgoing_links": [
+                "/balloon",
                 "/build-bubble-bike",
                 "/eulogy",
                 "/happy",
+                "/ig66/621",
                 "/like-switch",
                 "/magic"
             ],
             "incoming_links": [
                 "/affirmations",
+                "/balloon",
                 "/build-bubble-bike",
                 "/emotional-health",
                 "/end-in-mind",

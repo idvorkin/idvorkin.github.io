@@ -80,7 +80,7 @@ Also
 
 ### Ballooning
 
-My early [ballooning](https://idvork.in/ig66/614) adventures:
+My early [ballooning](/ig66/621) adventures:
 
 {% include youtube.html src="aRy86UE9QZ8" %}
 
