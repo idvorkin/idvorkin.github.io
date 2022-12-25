@@ -16,21 +16,67 @@ How can you put a huge smile on someone's face with 10 cents of material and 20 
 - [How I started](#how-i-started)
 - [Amelia's Grade 3 holiday Party](#amelias-grade-3-holiday-party)
 - [Some of my creations](#some-of-my-creations)
-- [Guns, Mermaids and Gender Biases](#guns-mermaids-and-gender-biases)
 - [The Selflessness of Balloon teachers](#the-selflessness-of-balloon-teachers)
+- [Psychology of Balloons](#psychology-of-balloons)
+    - [Grown ups want balloons too, but are afraid to ask](#grown-ups-want-balloons-too-but-are-afraid-to-ask)
+    - [Everyone is happy with their sword, until someone else gets a mega sword](#everyone-is-happy-with-their-sword-until-someone-else-gets-a-mega-sword)
+    - [An animal is in the eye of the beholder.](#an-animal-is-in-the-eye-of-the-beholder)
+- [Impact vs Effort](#impact-vs-effort)
+- [Ethical Considerations](#ethical-considerations)
+    - [Should I make guns?](#should-i-make-guns)
+    - [But boys want guns, and girls want mermaids.](#but-boys-want-guns-and-girls-want-mermaids)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
 
 ### How I started
 
 ### Amelia's Grade 3 holiday Party
 
+Highlights:
+
+*  Didn't get an invite, e-mailed teacher said I'm a professional clown, got me an invite
+*  Deaf kid
+    * Had an interpreter, who is probably a huge thing in the kids life.
+    * Wanted a balloon, could see him asking interpreter, and interpreter saying wait to the back of the line.
+    * Gave kid balloon
+    * Kid's balloon unravelled. Saw kid asking interpreter to get a new one, interpreter said no.
+    * I tried to get  kids attention to come to me and a get a new one. He wouldn't.
+    * So I went to him with an awesome balloon
+    * Later, kid started seeing other discarded balloons and picked them.
+    * Eventually kid had like 10 balloons, and was so happy beaming.
+    * He was like exploding with joy, and had a spontaneous giant hug for interpreter before leaving the room.
+* Coming back to school after the party
+    * Left school after party
+    * Came back to pick up Amelia
+    * Like 1 in 8 kids had balloons (recall, I did balloons for a full grade)
+    * Kids so happy walking with parents
+    * Best part, no one recognized me. I could just savor the moment of the joy everyone had.
+
 ### Some of my creations
 
-### Guns, Mermaids and Gender Biases
-
-
 ### The Selflessness of Balloon teachers
+
+* Most of the balloons I learned from youtube.
+* Amazing that folks would just share the balloons for anyone to make
+
+
+### Psychology of Balloons
+
+#### Grown ups want balloons too, but are afraid to ask
+
+#### Everyone is happy with their sword, until someone else gets a mega sword
+
+#### An animal is in the eye of the beholder.
+
+
+### Impact vs Effort
+
+### Ethical Considerations
+
+#### Should I make guns?
+
+Decided a water gun blaster is fine. I now make that. I also make a water gun blaster that shoots water.
+
+#### But boys want guns, and girls want mermaids.
 
