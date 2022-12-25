@@ -22,6 +22,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Booger Health](#booger-health)
     - [Skin Health](#skin-health)
     - [Wrist Health](#wrist-health)
+    - [Books on injury prevention](#books-on-injury-prevention)
     - [Standing Desks](#standing-desks)
     - [Gym Stuff](#gym-stuff)
     - [Under Desk Exercise Equipment](#under-desk-exercise-equipment)
@@ -101,6 +102,12 @@ Several braces for different times
 - [Heavy support during the day](https://www.amazon.com/gp/product/B002NLGNW8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 - [Light support during the day](https://www.amazon.com/gp/product/B072392YGD/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 - [Tight Warm Fingerless Gloves](https://www.amazon.com/gp/product/B00VTR6MDM/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+
+### Books on injury prevention
+
+Get 'em both
+
+{%include amazon.html asin="1628604220;1735728500" %}
 
 ### Standing Desks
 
