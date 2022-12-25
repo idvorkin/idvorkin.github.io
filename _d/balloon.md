@@ -14,13 +14,14 @@ How can you put a huge smile on someone's face with 10 cents of material and 20 
 <!-- vim-markdown-toc GFM -->
 
 - [How I started](#how-i-started)
+- [It's all about joy](#its-all-about-joy)
 - [Amelia's Grade 3 holiday Party](#amelias-grade-3-holiday-party)
 - [Some of my creations](#some-of-my-creations)
 - [The Selflessness of Balloon teachers](#the-selflessness-of-balloon-teachers)
 - [Psychology of Balloons](#psychology-of-balloons)
     - [Grown ups want balloons too, but are afraid to ask](#grown-ups-want-balloons-too-but-are-afraid-to-ask)
     - [Everyone is happy with their sword, until someone else gets a mega sword](#everyone-is-happy-with-their-sword-until-someone-else-gets-a-mega-sword)
-    - [An animal is in the eye of the beholder.](#an-animal-is-in-the-eye-of-the-beholder)
+    - [We want to believe makes it so](#we-want-to-believe-makes-it-so)
 - [Impact vs Effort](#impact-vs-effort)
 - [Ethical Considerations](#ethical-considerations)
     - [Should I make guns?](#should-i-make-guns)
@@ -30,6 +31,16 @@ How can you put a huge smile on someone's face with 10 cents of material and 20 
 <!-- prettier-ignore-end -->
 
 ### How I started
+
+My early [ballooning](https://idvork.in/ig66/614) adventures:
+
+{% include youtube.html src="aRy86UE9QZ8" %}
+
+### It's all about joy
+
+Balloons are a fantastic vehicle for
+
+{%include summarize-page.html src="/joy" %}
 
 ### Amelia's Grade 3 holiday Party
 
@@ -65,10 +76,18 @@ Highlights:
 
 #### Grown ups want balloons too, but are afraid to ask
 
+* Most grown ups won't take a balloon, but if you say give it to your partner, they're really happy to, and their partner enjoys it.
+
 #### Everyone is happy with their sword, until someone else gets a mega sword
 
-#### An animal is in the eye of the beholder.
+* Life lesson here, happiness is a differential
 
+#### We want to believe makes it so
+
+* Kid says he wants X, I make a Y, then tell them it's really an X
+* Kid feels he got a Y, checks for validatation from others
+* Others, including me say no, it's an X,
+* After kid negotiates with himself, and decides you're not lying, kid runs off happy.
 
 ### Impact vs Effort
 

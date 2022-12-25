@@ -17,13 +17,14 @@ My habits and balance have been strong, just keep my streaks running!
 
 - End the year at and honest 180 (even better a lying 175)
 - Keep up the daily gym, magic and ballooning
-
 - Create moments with the family (and take Selfies of them)
+- Build the TGU and swing habit
 
 ## Moments
 
 - Amelia's Holiday Party (Deaf kid, coming back seeing everyone)
 - TBD Jumped in the lake 2021
+- Doing programming with Zach
 
 ## Success Stories
 
@@ -79,8 +80,8 @@ My habits and balance have been strong, just keep my streaks running!
 
 ### Friends
 
-- ☐  Catch up with Bob
-- ☐  Catch up with Slava
+- ☐ Catch up with Bob
+- ☑ Catch up with Slava
 - ☐ Catch up with Dave
 
 ### Tori

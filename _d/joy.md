@@ -84,6 +84,8 @@ My early [ballooning](https://idvork.in/ig66/614) adventures:
 
 {% include youtube.html src="aRy86UE9QZ8" %}
 
+{%include summarize-page.html src="/balloon" %}
+
 ### Chocolate Balls and Bells
 
 - Giving out chocolate balls
