@@ -13,10 +13,11 @@ How can you put a huge smile on someone's face with 10 cents of material and 20 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [How I started](#how-i-started)
 - [It's all about joy](#its-all-about-joy)
+- [How I started](#how-i-started)
+    - [The genesis at 5am](#the-genesis-at-5am)
+    - [First time at the 2pm](#first-time-at-the-2pm)
 - [Amelia's Grade 3 holiday Party](#amelias-grade-3-holiday-party)
-- [Some of my creations](#some-of-my-creations)
 - [The Selflessness of Balloon teachers](#the-selflessness-of-balloon-teachers)
 - [Psychology of Balloons](#psychology-of-balloons)
     - [Grown ups want balloons too, but are afraid to ask](#grown-ups-want-balloons-too-but-are-afraid-to-ask)
@@ -26,21 +27,37 @@ How can you put a huge smile on someone's face with 10 cents of material and 20 
 - [Ethical Considerations](#ethical-considerations)
     - [Should I make guns?](#should-i-make-guns)
     - [But boys want guns, and girls want mermaids.](#but-boys-want-guns-and-girls-want-mermaids)
+- [Some of my creations](#some-of-my-creations)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-### How I started
-
-My early [ballooning](https://idvork.in/ig66/614) adventures:
-
-{% include youtube.html src="aRy86UE9QZ8" %}
 
 ### It's all about joy
 
 Balloons are a fantastic vehicle for
 
 {%include summarize-page.html src="/joy" %}
+
+{% include youtube.html src="aRy86UE9QZ8" %}
+
+### How I started
+
+#### The genesis at 5am
+
+- As a kid was able to make a simple balloon dog.
+- Not sure why, but I didn't do balloons till Zach was 12 (OMG - What a waste!!)
+- For last 10 years people asked me if I could pull a rabbit from a hat.
+- A Sunday after Zach's 12th birthday, I woke up at 5am, and thought maybe I'll make a rabbit balloon.
+- I kept doing it for the next 5 hours.
+
+#### First time at the 2pm
+
+- Came with Amelia working on my rabbit.
+- Kids started coming up to me, asking to make a Cow, or a Monkey, or a something else.
+- I'd keep repeating, I can make a dog, on the 4th try, they'd say OK - can you make me a dog.
+- Then I got braver, and when kids asked for UFO, I'd make something that looked nothing like a UFO, and the kid would look at me and cock their head, checking if I was trying to trick them. After 30 seconds of me holding my composure, the kid would run off thrilled with her UFO.
+- Then a kid asked for a bunny, and I tried making one (recall just starting out this morning), and it was awful, but the kid was thrilled.
+
 
 ### Amelia's Grade 3 holiday Party
 
@@ -64,7 +81,6 @@ Highlights:
     * Kids so happy walking with parents
     * Best part, no one recognized me. I could just savor the moment of the joy everyone had.
 
-### Some of my creations
 
 ### The Selflessness of Balloon teachers
 
@@ -99,3 +115,5 @@ Decided a water gun blaster is fine. I now make that. I also make a water gun bl
 
 #### But boys want guns, and girls want mermaids.
 
+
+### Some of my creations
