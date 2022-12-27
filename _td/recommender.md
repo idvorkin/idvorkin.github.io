@@ -15,6 +15,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
 
 - [Intro to Recommmendation Systems](#intro-to-recommmendation-systems)
     - [Concepts](#concepts)
+    - [Recommender processes](#recommender-processes)
     - [What makes ML hard](#what-makes-ml-hard)
     - [Understand Netflix (collect user behavior and present recommendations)](#understand-netflix-collect-user-behavior-and-present-recommendations)
     - [How to monitor a system](#how-to-monitor-a-system)
@@ -31,6 +32,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
         - [How to engage biz rules](#how-to-engage-biz-rules)
         - [Semi-personalized by geo/segment/demographic](#semi-personalized-by-geosegmentdemographic)
     - [Similary between content and users](#similary-between-content-and-users)
+    - [How to represent content/users](#how-to-represent-contentusers)
         - [How to measure similarity](#how-to-measure-similarity)
     - [Collaborative Filtering](#collaborative-filtering)
     - [Testing a recommender](#testing-a-recommender)
@@ -50,7 +52,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
     - [The progression of recommender systems](#the-progression-of-recommender-systems)
 - [Code](#code)
 - [Other Stuff](#other-stuff)
-    - [Practical Recommender Systems - The book this is based on](#practical-recommender-systems---the-book-this-is-based-on)
+    - [Source Materials, The book and google course:](#source-materials-the-book-and-google-course)
     - [Netflix Prize](#netflix-prize)
 
 <!-- vim-markdown-toc -->
@@ -61,6 +63,14 @@ My explorations of recommender and ranking systems, heavly based on the superb b
 ### Concepts
 
 - Recommendation != Prediction. Prediction = What a user would rate content; A recommendation is what content is relevant for a user.
+- Items - The things being recommended
+- Query - Information system uses to make a recommendation (user, items user previously used, time of day, user device, etc)
+
+### Recommender processes
+
+Candidate Generation - huge corpus, can't search all on-line. Offline generate candidates, down to order of hunderds
+Scoring - Next round goes from 100s to 10s. Can be more precise, and take into consideration more things.
+Re-ranking - Final online ranking, remove dislikes, fairness, etc. Since online needs to be super fast.
 
 ### What makes ML hard
 
@@ -188,15 +198,19 @@ Great for folks who saw them as kids (now 40) and their kids who have watched th
 
 ### Similary between content and users
 
+### How to represent content/users
+
+We need to represent them into a vector, vectors can be explicit, like for a user age/gender, or they can be latent, latent means the computer came upw tih the model and users don't know what it means.
+
 #### How to measure similarity
 
 Given two things (people or items), how similar or different are they, 1 is the same, and 0 is not at all.
 
 There are multiple ways to measure, and depends on the representation of the thing, and the domain (#ml_art)
 
-- Jaccard Distance -
-- Pearson Correlation Coefficient -
-- Cosine Similarity -
+- Euclidian Distance - just like you remember from lines in algebra sqrt(Sum(yi-xi)^2)
+- Dot product -
+- Cosine Similarity - The angle between the djfh distance, without the magnitude/intensity.
 
 ### Collaborative Filtering
 
@@ -354,9 +368,13 @@ If you're running the docker setup locally, you can run the webpage at ...
 
 ## Other Stuff
 
-### Practical Recommender Systems - The book this is based on
+### Source Materials, The book and google course
 
 {%include amazon.html asin="B09782BTD3" %}
+
+<https://developers.google.com/machine-learning/recommendation/>
+
+Notebook from google - <https://colab.research.google.com/github/google/eng-edu/blob/main/ml/recommendation-systems/recommendation-systems.ipynb?utm_source=ss-recommendation-systems&utm_campaign=colab-external&utm_medium=referral&utm_content=recommendation-systems#scrollTo=O3bcgduFo4s6>
 
 ### Netflix Prize
 
