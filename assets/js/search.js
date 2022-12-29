@@ -145,7 +145,12 @@ async function GetDefaultSearchResults() {
         // ...
     };
 }
-function GetAlgoliaResults(searchClient, index_name, query, hitsPerPage) {
+function GetAlgoliaResults(searchClient, index_name, query, hitsPerPage, includeFamilyJournal = false) {
+    // By default don't include family journal.
+    let filter = "NOT tags:family-journal";
+    if (includeFamilyJournal) {
+        filter = "";
+    }
     return {
         sourceId: "from_search",
         getItems() {
@@ -155,6 +160,7 @@ function GetAlgoliaResults(searchClient, index_name, query, hitsPerPage) {
                     {
                         indexName: index_name,
                         query,
+                        filters: filter,
                         params: {
                             hitsPerPage: hitsPerPage,
                             highlightPreTag: "<span style='background:yellow'>",
@@ -186,7 +192,7 @@ function GetAlgoliaResults(searchClient, index_name, query, hitsPerPage) {
         },
     };
 }
-async function CreateAutoComplete(appid, search_api_key, index_name, autocomplete_id) {
+async function CreateAutoComplete(appid, search_api_key, index_name, autocomplete_id, includeFamilyJournal) {
     const searchClient = algoliasearch(appid, search_api_key);
     const defaultSearchResults = await GetDefaultSearchResults();
     function GetSources({ query }) {
@@ -196,7 +202,7 @@ async function CreateAutoComplete(appid, search_api_key, index_name, autocomplet
             // TODO: Consider including the recent search history as well
             query = " ";
         }
-        const algoliaResults = GetAlgoliaResults(searchClient, index_name, query, isEmptySearch ? 4 : 10);
+        const algoliaResults = GetAlgoliaResults(searchClient, index_name, query, isEmptySearch ? 4 : 10, includeFamilyJournal);
         const results = [algoliaResults];
         if (isEmptySearch) {
             results.push(defaultSearchResults);

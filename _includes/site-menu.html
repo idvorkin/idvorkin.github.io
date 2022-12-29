@@ -60,6 +60,10 @@
     "{{site.algolia.application_id}}",
     "{{site.algolia.search_only_api_key}}",
     "{{site.algolia.index_name}}",
+       {% if page.url contains "ig66" %}
+      // Include Family Journal
+       true,
+      {% endif %}
     "#autocomplete-search-box"
   );
 

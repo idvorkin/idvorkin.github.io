@@ -171,8 +171,15 @@ function GetAlgoliaResults(
   searchClient,
   index_name,
   query,
-  hitsPerPage: number
+  hitsPerPage: number,
+  includeFamilyJournal = false
 ) {
+  // By default don't include family journal.
+  let filter = "NOT tags:family-journal";
+  if (includeFamilyJournal) {
+    filter = "";
+  }
+
   return {
     sourceId: "from_search",
     getItems() {
@@ -182,6 +189,7 @@ function GetAlgoliaResults(
           {
             indexName: index_name,
             query,
+            filters: filter,
             params: {
               hitsPerPage: hitsPerPage,
               highlightPreTag: "<span style='background:yellow'>",
@@ -217,7 +225,8 @@ async function CreateAutoComplete(
   appid,
   search_api_key,
   index_name,
-  autocomplete_id
+  autocomplete_id,
+  includeFamilyJournal
 ) {
   const searchClient = algoliasearch(appid, search_api_key);
   const defaultSearchResults = await GetDefaultSearchResults();
@@ -232,7 +241,8 @@ async function CreateAutoComplete(
       searchClient,
       index_name,
       query,
-      isEmptySearch ? 4 : 10
+      isEmptySearch ? 4 : 10,
+      includeFamilyJournal
     );
     const results = [algoliaResults];
     if (isEmptySearch) {
