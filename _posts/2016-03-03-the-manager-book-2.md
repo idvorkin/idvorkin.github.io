@@ -104,7 +104,6 @@ This post uses the word manager, but the most topics apply to all software job f
     - [What about structured vs free form interview loops](#what-about-structured-vs-free-form-interview-loops)
     - [What are better kinds of interviews](#what-are-better-kinds-of-interviews)
     - [What do you do when someone says they are quitting](#what-do-you-do-when-someone-says-they-are-quitting)
-    - [Best hire of your career](#best-hire-of-your-career)
 - [Firing and Performance Management](#firing-and-performance-management)
     - [Firing Percents](#firing-percents)
     - [The Process](#the-process)
@@ -123,7 +122,6 @@ This post uses the word manager, but the most topics apply to all software job f
     - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
     - [Insufficient progress - Double down or pivot](#insufficient-progress---double-down-or-pivot)
-    - [Layoffs](#layoffs)
 - [Personal Motivations](#personal-motivations)
     - [Why do you find management attractive](#why-do-you-find-management-attractive)
     - [What is your dream job](#what-is-your-dream-job)
@@ -137,6 +135,7 @@ This post uses the word manager, but the most topics apply to all software job f
     - [What do you think developers do](#what-do-you-think-developers-do)
     - [How can devs do to make managers jobs easier](#how-can-devs-do-to-make-managers-jobs-easier)
     - [Why do managers always say coding is part of their job but we all know it isn’t](#why-do-managers-always-say-coding-is-part-of-their-job-but-we-all-know-it-isnt)
+- [Product Development and Product Management](#product-development-and-product-management)
 - [Business Acumen and Strategy](#business-acumen-and-strategy)
 - [Appendix](#appendix)
 
@@ -1202,7 +1201,7 @@ TODO: Add story of Neha
 Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are stagnant which is bad.
 
 <!--
-### Best hire of your career
+- ### Best hire of your career
 -->
 
 ## Firing and Performance Management
@@ -1503,7 +1502,7 @@ NOTES: - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
 
 <!--
 
-### Layoffs
+- ### Layoffs
 
 Before:
 
@@ -1629,9 +1628,15 @@ I don't think managers should code with a minor exception ([More details](#l-cod
 
 Why do we assess managers ability to code - no clue, but a few enlightened companies do not.
 
+## Product Development and Product Management
+
+My notes on [Product](/product), often the domain of the prodcut manager, but EMs wear many hats
+
+{%include summarize-page.html src="/product" %}
+
 ## Business Acumen and Strategy
 
-My note on [Strategy](/strategy), including the strategic positions of various companies:
+My notes on [Strategy](/strategy), including the strategic positions of various companies:
 
 {%include summarize-page.html src="/strategy" %}
 
