@@ -102,7 +102,7 @@ function JsTemplateReplace() {
         if (!firstLIText.startsWith("l"))
             continue;
         let number = parseInt(firstLIText.substring(1));
-        if (number == NaN)
+        if (Number.isNaN(number))
             continue;
         replaces[firstLIText] = list;
     }
