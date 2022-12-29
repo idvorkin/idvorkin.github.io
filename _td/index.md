@@ -19,9 +19,10 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
     - [Tech tools and Tips](#tech-tools-and-tips)
     - [Testing and Quality](#testing-and-quality)
 - [Science](#science)
+    - [Understanding Words - Natural Language Processing](#understanding-words---natural-language-processing)
+    - [Understanding Images - Computer Vision](#understanding-images---computer-vision)
+    - [What should I X - Recommenders and Ranking](#what-should-i-x---recommenders-and-ranking)
     - [Machine Learning](#machine-learning)
-    - [Natural Language Processing](#natural-language-processing)
-    - [Computer Video](#computer-video)
     - [Statistics](#statistics)
 - [Business Domains](#business-domains)
     - [Advertising systems](#advertising-systems)
@@ -66,17 +67,26 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
 
 ## Science
 
+### Understanding Words - Natural Language Processing
+
+My early explorations ...
+{%include summarize-page.html src="/nlp" %}
+
+And in 2022 the world was taken by storm by gpt ...
+
+{%include summarize-page.html src="/gpt" %}
+
+### Understanding Images - Computer Vision
+
+See my repository here: <https://github.com/idvorkin/video-edit>
+
+### What should I X - Recommenders and Ranking
+
+{%include summarize-page.html src="/recommend" %}
+
 ### Machine Learning
 
 {%include summarize-page.html src="/td/machine-learning" %}
-
-### Natural Language Processing
-
-{%include summarize-page.html src="/nlp" %}
-
-### Computer Video
-
-See my repository here: <https://github.com/idvorkin/video-edit>
 
 ### Statistics
 

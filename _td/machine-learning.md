@@ -33,7 +33,9 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Implementing ML Algorithm](#implementing-ml-algorithm)
     - [Converting an ML model to hardware](#converting-an-ml-model-to-hardware)
 - [What category of problems can ML algorithms solve](#what-category-of-problems-can-ml-algorithms-solve)
-    - [What should I propose - Recommendation](#what-should-i-propose---recommendation)
+    - [Understanding Words - Natural Language Processing](#understanding-words---natural-language-processing)
+    - [Understanding Images - Computer Vision](#understanding-images---computer-vision)
+    - [What should I X - Recommenders and Ranking](#what-should-i-x---recommenders-and-ranking)
     - [What type is this - Classification](#what-type-is-this---classification)
     - [Predict a Value - Regression](#predict-a-value---regression)
     - [Make logical groups - Clustering](#make-logical-groups---clustering)
@@ -150,7 +152,20 @@ This is the same as compiling C or assembly code to machine code. The machine co
 
 ## What category of problems can ML algorithms solve
 
-### What should I propose - Recommendation
+### Understanding Words - Natural Language Processing
+
+My early explorations ...
+{%include summarize-page.html src="/nlp" %}
+
+And in 2022 the world was taken by storm by gpt ...
+
+{%include summarize-page.html src="/gpt" %}
+
+### Understanding Images - Computer Vision
+
+See my repository here: <https://github.com/idvorkin/video-edit>
+
+### What should I X - Recommenders and Ranking
 
 {%include summarize-page.html src="/recommend" %}
 
