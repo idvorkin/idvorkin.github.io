@@ -11,7 +11,7 @@ collapsable: true
 permalink: /strategy
 ---
 
-Strategy is creating fit among a company's activities. The success of a strategy depends on doing many things well and integrating among them. If there is no fit among activities, there is no distinctive strategy and little sustainability. Management reverts to the simpler task of overseeing independent functions, and improving operational effectiveness, a race to the bottom.
+As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyers money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it's all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!
 
 ### I. How to compete?
 
@@ -35,7 +35,7 @@ Managers describe position in terms of user experience. But strategy is the acti
 
 These three approaches to positioning are often combined.
 
-##### Variety based positioning
+#### Variety based positioning
 
 Focus on the most you can get out of a subset of products services which you can deliver most efficiently.
 
@@ -49,7 +49,7 @@ Customer Value:
 - Best ROI for the provided service.
 - Serves lots of customers, but doesn't meet all of their needs.
 
-##### Needs based positioning
+#### Needs based positioning
 
 Focus on a niche (or large market) and provide everything required to serve the niche. This is the current vogue approach used by startups and start small groups.
 
@@ -69,7 +69,7 @@ Customer Value:
 
 - Meets most of my needs.
 
-##### Access based positioning
+#### Access based positioning
 
 Focus on the unique distribution strategy for these customers. For example geography, or
 Examples:
@@ -96,7 +96,7 @@ You can straddle, but there's a huge penalty.
 Avoid False Trade Offs.
 No trade off -> No competitive advantage.
 
-### IV. Fit and sustainable competitive advantage.
+### IV. Fit and sustainable competitive advantage
 
 - How do the unique activities interrelate and reinforce each other.
 - Fit is as strong as the strongest link?
@@ -189,7 +189,7 @@ This guy is amazing. He discusses many challenges with tech and strategy, well w
 Go read all his [concepts](https://stratechery.com/concepts/)
 
 - [Aggregator theory](https://stratechery.com/aggregation-theory/)
-- [Disruption theory]()
+- Disruption theory
 - Horizontal vs Vertical Integration
 
 #### By company
