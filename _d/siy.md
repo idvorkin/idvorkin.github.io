@@ -16,7 +16,6 @@ alias:
   - /meditate
   - /meditation
 
-
 imagefeature: https://github.com/idvorkin/blob/raw/master/noun-meditate.png
 ---
 
@@ -48,7 +47,7 @@ This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B
 
 ### 1) What is Emotional Intelligence (EI)? How to train it?
 
-{%include blob_image_float_right.html src="noun-meditate.png" %}
+{%include blob_image_float_right_w25.html src="noun-meditate.png" %}
 
 _Even engineers can use empathy_
 
@@ -573,23 +572,16 @@ _Three easy steps to world peace_
 
 FP: NOTICING JOY IN ONE BREATH
 
+IP: NOTICING JOY IN DAILY LIFE - Attending to Joy - Joy on Demand
 
-IP: NOTICING JOY IN DAILY LIFE
-    - Attending to Joy
-    - Joy on Demand
-
-FP: INVITING AND ATTENDING TO JOY
-    - The Joyful Mind Rocks at Meditation
+FP: INVITING AND ATTENDING TO JOY - The Joyful Mind Rocks at Meditation
 
 - IP: ATTENDING TO THE JOY OF PLEASANT DAILY EXPERIENCES
-
 
 - “Someday, I Will Die,” and Other Happy Thoughts
 - IP: AWARENESS OF MORTALITY
 
-
 - The Joy of Not Being in Pain
-
 
 - IP: JUST NOTE GONE
 - FP: JUST NOTE GONE
@@ -679,14 +671,13 @@ When suffering, you need to get to the cognative reframes, but first you need to
 
 Step 1: **Calm the mind** Need to be calm enough to observe and experience.
 
-Step 2A: **Affective -  experience joy**
+Step 2A: **Affective - experience joy**
 
-
--  Can always find joy
--  Like an oasis in the dessert
--  Some days harder then others
--  Some days impossible, just need to wait
--  Train in non
+- Can always find joy
+- Like an oasis in the dessert
+- Some days harder then others
+- Some days impossible, just need to wait
+- Train in non
 - pain makes it easier, like gym.
 
 Step 2B: **Affective - experience pain**

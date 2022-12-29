@@ -9,6 +9,7 @@ alias:
   - /emotional-health
   - /emotional-health-practices
 permalink: /emotional-health
+imagefeature: https://github.com/idvorkin/blob/raw/master/noun-meditate.png
 redirect_from:
   - /emotional-health-practices
 ---
@@ -45,6 +46,8 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 **How's that working out for you?** Really well, this is my most consistent practice. Since [September 2011](http://ighealth.blogspot.com/2012/01/750wordscom.html), I've written over a million words on more then 1300 days.
 
+{%include blob_image_float_right_w25.html src="noun-meditate.png" %}
+
 ### Daily Gratefulness Journal
 
 **Why?** It's easy to focus on what we don't have and what goes wrong, and forget all the things that go right, and that we should be thankful for. By taking a few minutes each day to remember what went well and what I'm grateful for, I'm reminded why my life is awesome.
@@ -69,7 +72,7 @@ I appreciate the sunrise:
 
 **How's that working out for you?** Amazing, I've been doing this for years now and love it. One of the hardest parts about this is thinking wouldn't it be great if I just stayed up tonight to finish this, and remapping that thought to, if it's important I can wake up early to get it done.
 
-### Formal 20 minute breathing meditation.
+### Formal 20 minute breathing meditation
 
 **Why?** It's easy from your mind to be lost, to keep it focused on the moment requires, practice lots of practice. Focusing on the breath is that practive of staying focused on the breath and noticing when your attention has wandred and returning it to the breath. Also an excellent practice for dicsipline, both in doing it daily, and in staying for the entire time.
 
@@ -83,7 +86,7 @@ I appreciate the sunrise:
 
 Compassion is something I'm new at ... here are some great ideas for how to do it, copied from:
 
-https://idvork.in/siy#uplift-the-mind-in-seconds
+<https://idvork.in/siy#uplift-the-mind-in-seconds>
 
 Tools of the trade (Sublime states):
 
@@ -159,7 +162,6 @@ Tools of the trade (Sublime states):
 - When doing something altruistic, think I am being altruistic, this makes me happy
 - When seeing someone being altruistic, there exists a wonderful person in the world, I am happy
 - When someone is doing an altruisitc act, think more good is being done in the world, I am happy
-
 
 ### Informal gap meditation
 
