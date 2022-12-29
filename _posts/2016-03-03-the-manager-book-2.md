@@ -5,6 +5,7 @@ date: "2021-11-05 00:56:07 +0000"
 imagefeature: https://github.com/idvorkin/blob/raw/master/idvorkin-manager-book-1200-628.png
 tags:
   - manager
+  - search-featured
 permalink: /manager-book
 redirect_from:
   - /the-manager-book
