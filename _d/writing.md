@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Writing is Thinking"
-imagefeature: https://github.com/idvorkin/blob/raw/master/noun_writing.png
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon_quill.png
 permalink: /writing
 redirect_from:
   - write
@@ -55,6 +55,8 @@ Useful writing tells people something true and important that they didn't alread
 
 ### Writing to understand, writing to be understood
 
+{%include blob_image_float_right_w25.html src="blog/raccoon-quill.png" %}
+
 You write to understand a topic, and to help others understand.
 
 **Writing to understand** is capturing and categorizing lots of information. You don't know what you're looking for as your trying to build your own coherent, complete, mental models.
@@ -68,7 +70,6 @@ TODO: XREF - Stages of writing
 
 ### Amazon's Writing Culture
 
-{%include blob_image_float_right.html src="noun_writing.svg?sanitize=1" %}
 
 My favorite thing about [Amazon](/amazon) is the writing culture. Every 60 minute meeting starts with the presenter handing out a 6 page document, and asking if anyone needs a pen. The next 30 minutes is spent reading, with the silence barely puncuated with the sound of a pen underlining a key figure. At around the 30 minute mark, the presenter will ask, does anyone need more time? Which signals to the stragglers to start skimming as the discussion will start.
 
