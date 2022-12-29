@@ -1040,7 +1040,11 @@ Great schedules and roadmaps can solve many problems, based on people's levels a
 
 Resource allocation is maximizing the intersection in the Venn diagram - "Personal Preference", "Business Need" and "Probability of Success" for the business, team and individuals.
 
+<!--
 {%include mpl_render_float_right.html name="what-to-work-on" %}
+-->
+
+{%include blob_image_float_right.html src="blog/who-works-on-what.svg" %}
 
 The success metric for a manager is supporting the team so that they know the constraints, and can self organize to maximize the business, team and individual Venn diagram coverage.
 
