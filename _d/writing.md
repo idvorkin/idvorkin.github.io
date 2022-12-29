@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Writing is Thinking"
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon_quill.png
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-quill.png
 permalink: /writing
 redirect_from:
   - write
@@ -69,7 +69,6 @@ TODO: XREF - Mental models.
 TODO: XREF - Stages of writing
 
 ### Amazon's Writing Culture
-
 
 My favorite thing about [Amazon](/amazon) is the writing culture. Every 60 minute meeting starts with the presenter handing out a 6 page document, and asking if anyone needs a pen. The next 30 minutes is spent reading, with the silence barely puncuated with the sound of a pen underlining a key figure. At around the 30 minute mark, the presenter will ask, does anyone need more time? Which signals to the stragglers to start skimming as the discussion will start.
 
