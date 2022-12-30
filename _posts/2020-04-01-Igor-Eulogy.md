@@ -236,6 +236,12 @@ Igor also realized that writing about kids in an eulogy is hard as kids are cons
 
 ### Father to Amelia - an incredible girl
 
+Things I cherish with Amelia @ 9:
+
+- Seeing how kind and wise she is
+- Seeing how fierce and brave she is
+- Seeing her grit and determination
+
 Things I cherish with Amelia @ 6:
 
 - Roller Skating
@@ -247,6 +253,14 @@ Things I cherish with Amelia @ 6:
 When she was in 1st grade she was very behind in her reading. She barely knew the alphabet and hated reading, and Tori has some dyslexia in her family. In my head I diagnosed her as being dyslexic, and spent a bunch of time studying how to support a dyslexic child, and how best to equip her in a reading world. Luckily, I was introduced to special decodable reading books, and spent 30 minutes painfully reading with Amelia. She went from hating to read even simple words like cat, to volunteering to read to me, to wanting to know how the story ended, to volunteering to read to Yelena and Baba. Watching her pride in seeing how much of a story she'd read, and getting to start a new book - wowsers!
 
 ### Father to Zach - a wonderful boy
+
+Things I cherish with Zach @ 12.5:
+
+- Getting to program w/Zach. He's been taking the programming course from RICE university
+- Taking Zach Kayaking
+- Seeing Zach flourish
+- Making a movie with Zach
+- Seeing Zach wake up at 5am, and do an exercise bike daily.
 
 Things I cherish with Zach @ 10:
 
