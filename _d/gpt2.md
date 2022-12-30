@@ -134,7 +134,17 @@ Having used both models the InstructGPT model (now called GPT3), is more accurat
 
 ### GPT writing my git commits
 
+GPT is really good at writing commit messages. Here's an example of me doing some vim magic, and GPT understanding it.
+
 <script id="asciicast-iuqkj5H8BsmaMqBt2sOCdJCNG" src="https://asciinema.org/a/iuqkj5H8BsmaMqBt2sOCdJCNG.js" async></script>
+
+Even cooler, when I added this demo to the blog, here's the commit message it recommended for [this commit](https://github.com/idvorkin/idvorkin.github.io/commit/0c037c5d946c3bda154d1ef022a3c54628d62a30):
+
+    Add new demo with GPT writing git commits
+
+    This commit adds a new demo showing GPT being used to create git commits. This example demonstrates the
+    potential applications of GPT in areas like software engineering, where it can help with automating
+    and speeding up tedious tasks. The source code for this demo is included in the _d/gpt2.md document.
 
 ### Summarizing
 
