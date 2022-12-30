@@ -186,7 +186,7 @@ Family pleasure, for which we must reclaim
 
 ### Spelling and grammar fixing
 
-<asciinema-player src="https://raw.githubusercontent.com/idvorkin/blob/master/cast/correct.cast" poster="npt:2:34" ></asciinema-player>
+To add.. pretty boring ...
 
 With source code [here](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/gpt3.py)
 
