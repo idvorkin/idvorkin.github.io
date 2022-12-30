@@ -3,6 +3,7 @@ layout: post
 title: "Getting the most out of time off"
 tags:
 permalink: /timeoff
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-vacation.png
 redirect_from:
   - /vacation
   - /personal-development
@@ -16,7 +17,7 @@ alias:
   - /timeoff
 ---
 
-Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we'll discuss too.  Like most things time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
+Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we'll discuss too. Like most things time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
 
 <!-- prettier-ignore-start -->
 
@@ -59,6 +60,8 @@ A common questions is should you take 2 short vacations or 1 long one. That's a 
 1. TODO list - Cross those small things you've been putting off your TODO list
 1. Freedom - Savoring your ability to do nothing
 1. Productivity - Realizing there are important not urgent things you can do at your own pace.
+
+{%include blob_image_float_right_w25.html src="blog/raccoon-vacation.png" %}
 
 ### Vegetation
 
@@ -191,8 +194,8 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 - **Do extra streches/cardio** - Remember energy positive, and keeps you injury free.
 
 - **Bring stuff to help you eat healthy**
-    - Bring the micowavable popcorn popper and instant soup. These are some of my favorite low calorie foods.
-    - Bring a travel scale - that mindfulness around weight is great.
+  - Bring the micowavable popcorn popper and instant soup. These are some of my favorite low calorie foods.
+  - Bring a travel scale - that mindfulness around weight is great.
 
 ### Emotional Health
 
@@ -202,8 +205,8 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
   - Same with going to the airport, got there hours early. Didn't matter that got stuck at the car rental return. Didn't matter that my flight got delayed, can write, meditate do some inner work.
 - **Continuous learning** - Always a learning opportunity, learn what needs to be learned and move on.
 - **Don't berate mistakes** - Getting off the plane, it was super bright in Toronto. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I hav ean abilityt o squint. Nothing terrible happens.
-    - TODO: Add a not on caring vs mattering. Caring is your emotional response(un avoidable), but mattering is the objective difference it makes to whom, and over what time period.
--  **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forced check bags would be lost forever. It wasn't, it was right there. And as a result of waiting for it, I ended up meeting a really cool person.
+  - TODO: Add a not on caring vs mattering. Caring is your emotional response(un avoidable), but mattering is the objective difference it makes to whom, and over what time period.
+- **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forced check bags would be lost forever. It wasn't, it was right there. And as a result of waiting for it, I ended up meeting a really cool person.
 - **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bring my sunglasses.
 - **Don't fret micro optimizations** - From Belleville to Hamilon, I spent lots of time trying to figure out what time I'd arrive, what order of gym/work/sister/lunch I'd tackle, trying to micro optimize, spent lots of cycles. Turned out, didn't matter at all.
 
@@ -212,31 +215,32 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 - Pack the afternoon before so you don't have a rush in the morning
 - Hanging at the airport early is totally fine - don't worry it's better then being there late.
 - Make a leave list (Notion)
-    - Pack my chargers
-    - Put Masks in Bag
-    - Make sure batteries are fully charged before leaving
-    - Leave for the airport 3 hours early (have lots of slack)
+  - Pack my chargers
+  - Put Masks in Bag
+  - Make sure batteries are fully charged before leaving
+  - Leave for the airport 3 hours early (have lots of slack)
 - Rental car
-    - Just get it if you need lots of travel
-    - Get Insurance on your credit card
-    - Take 10 minutes to learn how to use the rental car (wipers, door locks, cruise control, fuel)
+  - Just get it if you need lots of travel
+  - Get Insurance on your credit card
+  - Take 10 minutes to learn how to use the rental car (wipers, door locks, cruise control, fuel)
 - Take time to think through daily routines, and when you'll do them
-    - Ad hoc doesn't work
+  - Ad hoc doesn't work
 - Re pack day bag
-    - Don't haul around stuff you won't use it
+  - Don't haul around stuff you won't use it
 - Have a good packing of keys wallet so don't worry about losing (Fanny pack)
 - Luggage:
-    - Bags on carry on clip together
-    - Bring luggage compression straps.
+  - Bags on carry on clip together
+  - Bring luggage compression straps.
 - Airport
-    - Bring power bars
-    - Don't drink too much
-    - Get Nexus/Frequent Traveller card (well worth the 100 bucks)
-    - Carry a bag with bands and foam roller
+
+  - Bring power bars
+  - Don't drink too much
+  - Get Nexus/Frequent Traveller card (well worth the 100 bucks)
+  - Carry a bag with bands and foam roller
 
 - Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
 - **I have an extra pocket in my suitcase**
-    - Lost my popcorn popper and my baloon pump and my laptop. Turns out in the extra pocket, I forgot.
+  - Lost my popcorn popper and my baloon pump and my laptop. Turns out in the extra pocket, I forgot.
 
 ### Other learnings
 
