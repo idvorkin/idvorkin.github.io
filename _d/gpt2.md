@@ -25,6 +25,7 @@ Just like the search bar in google fills in what you're typing when you say "Whe
     - [GPT3 vs GPT2](#gpt3-vs-gpt2)
     - [GPT3 vs Instruct GPT](#gpt3-vs-instruct-gpt)
 - [Demos of usage](#demos-of-usage)
+    - [GPT writing my git commits](#gpt-writing-my-git-commits)
     - [Summarizing](#summarizing)
     - [Spelling and grammar fixing](#spelling-and-grammar-fixing)
 - [Related ideas](#related-ideas)
@@ -131,6 +132,10 @@ Having used both models the InstructGPT model (now called GPT3), is more accurat
 
 ## Demos of usage
 
+### GPT writing my git commits
+
+<script id="asciicast-iuqkj5H8BsmaMqBt2sOCdJCNG" src="https://asciinema.org/a/iuqkj5H8BsmaMqBt2sOCdJCNG.js" async></script>
+
 ### Summarizing
 
 My blog journal [Week 601](https://idvork.in/ig66/601), and GPT's summary:
@@ -147,6 +152,6 @@ See me creating this summary in my enabling environment, observe that I have GPT
 
 With source code [here](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/gpt3.py)
 
-* [Used as an excel macro to perform complex extractions](https://twitter.com/shubroski/status/1587136794797244417)
+- [Used as an excel macro to perform complex extractions](https://twitter.com/shubroski/status/1587136794797244417)
 
 ## Related ideas
