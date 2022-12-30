@@ -26,7 +26,7 @@ Just like the search bar in google fills in what you're typing when you say "Whe
     - [GPT3 vs Instruct GPT](#gpt3-vs-instruct-gpt)
 - [Demos of usage](#demos-of-usage)
     - [GPT writing my git commits](#gpt-writing-my-git-commits)
-    - [Summarizing](#summarizing)
+    - [Creating poems out of journal entries](#creating-poems-out-of-journal-entries)
     - [Spelling and grammar fixing](#spelling-and-grammar-fixing)
 - [Related ideas](#related-ideas)
 
@@ -148,15 +148,41 @@ Even cooler, when I added this demo to the blog, here's the commit message it re
 
 Source code to make commit messsages [here](https://github.com/idvorkin/nlp/blob/a2ba4b96a57d5bbc0274d537d8976a66fce4566d/gpt3.py#L235).
 
-### Summarizing
+### Creating poems out of journal entries
 
-My blog journal [Week 601](https://idvork.in/ig66/601), and GPT's summary:
+My blog journal [Week 601](https://idvork.in/ig66/601), and GPT's poem form:
 
-_**The protagonist** The protagonist of this journal is a parent of two children. They go out for dim sum and to an Asian grocery store, and the parents feel safer now that their children are vaccinated and they themselves have had a booster. They explore fun masks, as Covid has been going on for a while. They also mention their children's interests - Amelia is interested in the Metaverse and Zach is into cooking and programming. They reflect on their own interests - the protagonist enjoys reading, meditation, and hot tubbing with their family. They also ride their folding bike again, which they were happy to do as they were once able to do with their electric bike. Lastly, they mention their spouse's interests - Tori is busy working at the theater_
+Amelia found cotton, Zach found sprats,
+Amelia called it 'insomnia snacks'
 
-See me creating this summary in my enabling environment, observe that I have GPT create 5 summaries, and then I pick the best one. Because GPT is non-deterministic, this is a valuable technique.
+Mask shopping had been a pleasant surprise,
+For Igor, a neat fold, that'd be no disguise
 
-<asciinema-player src="https://raw.githubusercontent.com/idvorkin/blob/master/cast/gpt-completion.cast" poster="npt:2:34"></asciinema-player>
+In the harbor, boat in the night,
+Christmas was drawing near with such delight
+
+Amelia joined the Metaverse to explore,
+In the physical realm nothing she need ignore
+
+At work with the Salad Bar now open wide,
+To balance the M&M-soup in Amelia's stride
+
+Zach was cooking and programming not one but two,
+Meal kit and Pong, reaping what he'd due
+
+On the jacuzzi adventure too,
+Now Igor was getting weaker due to few
+
+Folding bike funny story is quite amusing,
+A way to get Igor home and then not losing
+
+Magic and theater, what a treat,
+Tori enjoys doing them and all around she's so sweet
+
+Family pleasure, not for fame,
+Family pleasure, for which we must reclaim
+
+<script id="asciicast-Ti3tqwc7zK96NAEuBAJhe9qdU" src="https://asciinema.org/a/Ti3tqwc7zK96NAEuBAJhe9qdU.js" async></script>
 
 ### Spelling and grammar fixing
 
