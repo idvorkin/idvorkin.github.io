@@ -56,7 +56,7 @@ I'd start with cardio exercise (e.g. endurance fitness). That will give you the 
 
 **I'm in for cardio - How should I start, how long should I go?**
 
-First rule of starting new habits - make it easier then you can accomplish. To that end I'd start at an easy pace for as long as you can (upto 30 minutes) then gradually increase the duration till you can do 30 minutes comfortably. Once you're at 30 minutes gradually raise the intensity (no more then 10% / week) so that you're continuing to push at an easy pace without feeling like you're pushing too hard.
+First rule of starting new habits - make it easier than you can accomplish. To that end I'd start at an easy pace for as long as you can (up to 30 minutes) then gradually increase the duration till you can do 30 minutes comfortably. Once you're at 30 minutes gradually raise the intensity (no more than 10% / week) so that you're continuing to push at an easy pace without feeling like you're pushing too hard.
 
 **Why 30 minutes?**
 
@@ -64,7 +64,7 @@ I don't know if there's any science here, but my target is 30 minutes of cardio.
 
 For me, it's long enough to work up a sweat, but short enough to not eat up my day. I've read that you should either do 30 minutes of low to medium intensity exercise daily or 20 minutes of high intensity exercise 3 times a week. When starting out or when old, I'd recommend low weights high reps to reduce the risk of quitting and injury.
 
-#### What is your cardio HIT protocol
+#### What is your cardio HIT protocol?
 
 "Tony the trainer" taught me a great protocol I swear by it, and think I came close to it accidentally before.
 
@@ -86,11 +86,15 @@ Other stuff:
 
 I've had lots of injuries, here's my various [braces](/irl#physical-health)
 
+I found these books especially good to understand how body parts get hurt, and what to do about it. It really helped me understand what my physio therapist had me doing:
+
+{%include amazon.html asin="1628604220;1735728500" %}
+
 #### Should I get a trainer?
 
 Trainers are expensive, but heart attacks are even more expensive, and on top of money, they really suck up your energy and reduce your quality of life.
 
-I put off getting a trainer for 20 years. I thought I was very knowledgable in exercise, physiology, and was motivated having a gym routine where I went every morning to do cardio, and I wasn't interested in getting strong. Eventually I decided I'd like some more injury prevention, so got a trainer and told him my goal was to increase my injury resilience, and he said OK, lets do mobility workouts then.
+I put off getting a trainer for 20 years. I thought I was very knowledgeable in exercise, physiology, and was motivated having a gym routine where I went every morning to do cardio, and I wasn't interested in getting strong. Eventually I decided I'd like some more injury prevention, so got a trainer and told him my goal was to increase my injury resilience, and he said OK, lets do mobility workouts then.
 
 - The mobility movements are more strenuous then my normal cardio routines. Every movement we do seemed like it could happen naturally through day to day activities and felt incredibly weak, a real warning to injury.
 
@@ -101,6 +105,22 @@ I put off getting a trainer for 20 years. I thought I was very knowledgable in e
 - I've had RSI in my wrists, injuries everywhere, and as we do exercises I can be like, oh this feels like it'll give out,and we instantly change the exercise.
 
 In summary, trainers are worth it.
+
+#### Should I do kettle bells?
+
+When I started working out with a trainer, they introduced me to kettle bells. Kettlebells are a rock with a handle. What could be cooler then that?
+
+I instantly liked Turkish Get Ups (TGUs) they have a nice flow and feel great. The trainer tried to get me to do swings, but I'm afraid of ballistic exercises so declined.
+
+A year later I decided to try them, and I love them! At 44 every day I woke up my back would be stiff till I stretched out. When I started doing swings, the next day my back was as loose as a 30 year olds :)
+
+Swings:
+
+{%include youtube.html src="e-gsAvLdi68" %}
+
+TGUs:
+
+Video coming
 
 #### What's it like waking up at 5am
 
