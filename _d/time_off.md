@@ -3,7 +3,7 @@ layout: post
 title: "Getting the most out of time off"
 tags:
 permalink: /timeoff
-imagefeatureblob: blog/raccoon-vacation.png
+imagefeatureblocal: raccoon-vacation.png
 redirect_from:
   - /vacation
   - /personal-development
@@ -54,14 +54,14 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 
 ## The phases of time off
 
+{%include local_image_float_right.html src="raccoon-vacation.png" %}
+
 A common questions is should you take 2 short vacations or 1 long one. That's a tough choice. I'm not sure I have an opinion on that, but I've learned my time off goes through a few phases, and I suspect there's a fixed time component, and if I can better understand the phases, I can better spend my time off.
 
 1. Vegetation - Getting over being tired.
 1. TODO list - Cross those small things you've been putting off your TODO list
 1. Freedom - Savoring your ability to do nothing
 1. Productivity - Realizing there are important not urgent things you can do at your own pace.
-
-{%include blob_image_float_right_w25.html src="blog/raccoon-vacation.png" %}
 
 ### Vegetation
 
