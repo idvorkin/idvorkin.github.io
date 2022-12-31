@@ -9,7 +9,7 @@ alias:
   - /emotional-health
   - /emotional-health-practices
 permalink: /emotional-health
-imagefeature: https://github.com/idvorkin/blob/raw/master/noun-meditate.png
+imagefeaturelocal: raccoon-meditate.png
 redirect_from:
   - /emotional-health-practices
 ---
@@ -25,7 +25,7 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
     - [Daily Stream of Consciousness Journaling](#daily-stream-of-consciousness-journaling)
     - [Daily Gratefulness Journal](#daily-gratefulness-journal)
     - [4:30 am wake up (psst - it's really physical health)](#430-am-wake-up-psst---its-really-physical-health)
-    - [Formal 20 minute breathing meditation.](#formal-20-minute-breathing-meditation)
+    - [Formal 20 minute breathing meditation](#formal-20-minute-breathing-meditation)
 - [Future Practices](#future-practices)
     - [Compassion Check-ins](#compassion-check-ins)
     - [Informal gap meditation](#informal-gap-meditation)

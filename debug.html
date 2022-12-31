@@ -3,111 +3,253 @@ title: Debug the page
 layout: empty
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <!-- pre head -->
 
-    <!-- pre head -->
+  <head>
+    <!-- pre include -->
+    {% include head.html %}
+  </head>
 
-    <head>
-        <!-- pre include -->
-        {% include head.html %}
-    </head>
+  <body
+    data-spy="scroll"
+    data-target=".nav-scroll-spy"
+    style="position:relative"
+  >
+    {% include site-menu.html %}
 
-    <body data-spy="scroll" data-target=".nav-scroll-spy" style="position:relative">
-        {% include site-menu.html %}
+    <article class="article">
+      <div id="content-holder" class="pretty-first-para">
+        {% include toc.html %}
 
-        <article class="article">
-            <div id="content-holder" class="pretty-first-para">
-                {% include toc.html %}
+        <div
+          id="debug-page-scroll-spy"
+          class="nav-scroll-spy"
+          style="position:fixed;offset-top:100px"
+        ></div>
 
-                <div id="debug-page-scroll-spy" class="nav-scroll-spy" style="position:fixed;offset-top:100px">
-                </div>
+        <h1 id="tip1">tip1</h1>
 
-                <h1 id="tip1">tip1</h1>
+        <p>debug</p>
 
-                <p>debug</p>
+        <p>debug</p>
 
-                <p>debug</p>
+        <p>debug debug debug debug debug</p>
 
-                <p>debug
-                debug
-                debug
-                debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug</p>
 
-                <p>debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug</p>
 
-                <p>debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <h1 id="tip3">tip3</h1>
+        <p>debug debug</p>
 
-                <h1 id="tip3">tip3</h1>
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug debug</p>
 
-                <p>debug
-                debug</p>
+        <p>debug</p>
 
-                <p>debug</p>
+        <h1 id="tip4">tip4</h1>
+      </div>
+    </article>
+    <span id="hold-scripts-so-looks-nice-debugging">
+      {% include scripts.html %}
+      <script>
+        //  Bootstrap tables are optin, so set their class
+        // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
+        $("table").addClass("table");
+        generateToc("debug-page-scroll-spy");
+      </script>
+      Lots and lots and lots and lots of text Lots and lots and lots and lots of
+      text Lots and lots and lots and lots of text Lots and lots and lots and
+      lots of text Lots and lots and lots and lots of text Lots and lots and
+      lots and lots of text Lots and lots and lots and lots of text Lots and
+      lots and lots and lots of text Lots and lots and lots and lots of text
+      <img
+        src="https://github.com/idvorkin/blob/raw/master/noun-meditate.png"
+        class="img-fluid float-end"
+        style="shape-outside:url(/images/noun-meditate.png); shape-margin: 1.5em;"
+      />
+      Lots and lots and lots and lots of text Lots and lots and lots and lots of
+      text Lots and lots and lots and lots of text Lots and lots and lots and
+      lots of text Lots and lots and lots and lots of text Lots and lots and
+      lots and lots of text Lots and lots and lots and lots of text Lots and
+      lots and lots and lots of text Lots and lots and lots and lots of text
 
-                <h1 id="tip4">tip4</h1>
-            </div>
-        </article>
-            <span id="hold-scripts-so-looks-nice-debugging">
-                {% include scripts.html %}
-                <script>
-                    //  Bootstrap tables are optin, so set their class
-                    // https://getbootstrap.com/docs/4.0/content/tables/#table-head-options
-                    $("table").addClass("table")
-                    generateToc('debug-page-scroll-spy')
-                </script>
-            </span>
+      <p>
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text
+      </p>
+      <img
+        src="https://github.com/idvorkin/blob/raw/master/noun-meditate.png"
+        class="img-fluid float-end"
+        style="shape-outside:circle(50%); shape-margin: 1.5em;"
+      />
 
-    </body>
-
+      <p>
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text Lots and lots and lots and lots of text
+        Lots and lots and lots and lots of text Lots and lots and lots and lots
+        of text Lots and lots and lots and lots of text Lots and lots and lots
+        and lots of text Lots and lots and lots and lots of text Lots and lots
+        and lots and lots of text Lots and lots and lots and lots of text Lots
+        and lots and lots and lots of text Lots and lots and lots and lots of
+        text Lots and lots and lots and lots of text Lots and lots and lots and
+        lots of text Lots and lots and lots and lots of text Lots and lots and
+        lots and lots of text Lots and lots and lots and lots of text Lots and
+        lots and lots and lots of text
+      </p>
+    </span>
+  </body>
 </html>
 
 <!--

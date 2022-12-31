@@ -102,7 +102,7 @@ Discipline is a core concept of "Begin with the end in mind" (Habit 1), and Igor
 
 ### Fit fellow
 
-{%include blob_image_float_right_w25.html src="blog/raccoon-lifting-weights.png" %}
+{%include local_image_float_right.html src="raccoon-lifting-weights.png" %}
 Igor knew physical health was the [source of his energy](/physical-health) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000\$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never reneged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
 
 It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, [Igor weighted 230 lbs](https://www.flickr.com/photos/idvorkin/4590579760/in/datetaken/), and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
@@ -132,7 +132,7 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 
 ### Emotionally healthy human
 
-{%include blob_image_float_right_w25.html src="noun-meditate.png" %}
+{%include local_image_float_right.html src="raccoon-meditate.png" %}
 
 Igor understood emotional health is the basis of his stability, and [invested](/search-inside-yourself) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
@@ -204,7 +204,7 @@ To file:
 
 ### Family man
 
-{%include blob_image_float_right_w25.html src="blog/raccoon-family.png" %}
+{%include local_image_float_right.html src="raccoon-family.png" %}
 
 Igor used to think being a family man would be easy. Being proud of his family, looking back fondly on time with them was easy, but making the time for them, supporting them, teaching them - that was all really hard. Hard yes, but totally worth it.
 
