@@ -3,7 +3,7 @@ layout: post
 title: "Getting the most out of time off"
 tags:
 permalink: /timeoff
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-vacation.png
+imagefeatureblob: blog/raccoon-vacation.png
 redirect_from:
   - /vacation
   - /personal-development

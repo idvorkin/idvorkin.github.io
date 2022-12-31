@@ -47,12 +47,21 @@ else %}
 <meta property="markdown-path" content="{{ page.path }}" />
 
 {% if page.imagefeature %}
-    {% assign image_url = page.imagefeature %} {% elsif
-page.week %}
-    {% capture image_url%}https://github.com/idvorkin/blob/raw/master/ig66/{{page.week}}/montage.jpg{%
-endcapture%}
+
+    {% assign image_url = page.imagefeature %}
+
+{% elsif page.imagefeatureblob %}
+
+    {% capture image_url%}https://github.com/idvorkin/blob/raw/master/{{page.imagefeatureblob}}{%endcapture%}
+
+{% elsif page.week %}
+
+    {% capture image_url%}https://github.com/idvorkin/blob/raw/master/ig66/{{page.week}}/montage.jpg{%endcapture%}
+
 {% else %}
+
     {% assign image_url ="https://github.com/idvorkin/blob/raw/master/idvorkin-bunny-ears-ar-2020-with-motto-1200-628.png" %}
+
 {% endif %}
 
 <meta property="og:image" content="{{image_url}}" />
