@@ -5,6 +5,8 @@ tags:
   - health
 redirect_from:
   - /exercise
+  - /strong
+imagefeatureblob: blog/raccoon-lifting-weights.png
 ---
 
 Physical health is the basis of energy, and thus the source of success, and a key [saw to sharpen](/sharpen-the-saw). Physical health is about weight, fitness, and sleep.
@@ -18,6 +20,8 @@ Weight is "calories in" minus "calories out." [Diet](/diet) dominates calories o
 Set a weight goal, and check progress towards the goal weekly. It's easy for your weight to gradually creep up, and keep creeping up. Thus, I strongly recommend committing to not letting your weight exceed your goal for too long. Personally, I set a weight pledge every month, and never exceed that weight.
 
 Some people feel dieting is shameful. I couldn't disagree more. Dieting shows you care about health and are doing something about it.
+
+{%include blob_image_float_right_w25.html src="blog/raccoon-lifting-weights.png" %}
 
 ### Strength and Cardio Training
 
