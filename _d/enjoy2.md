@@ -9,6 +9,7 @@ redirect_from:
 
 It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:
 
+<script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
 <div class="alert alert-primary" id="sunburst_text">
     Click in any box or circle
 </div>
@@ -72,8 +73,6 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Do altruistic joy
 - wish someone happiness (happy gun)
 - wish someone free of suffering
-
-
 
 ### Cognative
 

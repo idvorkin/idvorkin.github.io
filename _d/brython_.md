@@ -1,10 +1,17 @@
 ---
 layout: post
 title: A playground for brython and pystory
+use_slow_libraries: 1
 permalink: /brython
 ---
 
 This page is built with [brython](https://brython.info/gallery/gallery_en.html), a python running in browser via WASM. This is my playground to try interesting things with brython.
+
+## Page is Broken -- not worth investigating till later
+
+<script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js" />
+<script src="https://cdn.jsdelivr.net/gh/PierreQuentel/brython-widgets/brython-widgets.brython.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js" />
 
 <script>
     window.addEventListener('load', (_) => brython() )
@@ -22,7 +29,7 @@ This page is built with [brython](https://brython.info/gallery/gallery_en.html),
 - [Brython DOM Manipulation](#brython-dom-manipulation)
     - [Steve's jungle and Bar](#steves-jungle-and-bar)
 - [Source code](#source-code)
-    - [Python code](#python-code)
+- [Python code](#python-code)
     - [Brython loader, and Python include](#brython-loader-and-python-include)
 
 <!-- vim-markdown-toc -->
@@ -49,7 +56,7 @@ Write to id=bry-out
 
 For my tech friends, here's what the code looks like.
 
-#### Python code
+### Python code
 
 The python code block is read at run time, from the python code.
 
