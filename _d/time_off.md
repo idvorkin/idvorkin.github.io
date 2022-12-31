@@ -3,7 +3,7 @@ layout: post
 title: "Getting the most out of time off"
 tags:
 permalink: /timeoff
-imagefeatureblocal: raccoon-vacation.png
+imagefeaturelocal: raccoon-vacation.png
 redirect_from:
   - /vacation
   - /personal-development
