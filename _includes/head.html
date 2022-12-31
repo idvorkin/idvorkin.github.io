@@ -54,6 +54,10 @@ else %}
 
     {% capture image_url%}https://github.com/idvorkin/blob/raw/master/{{page.imagefeatureblob}}{%endcapture%}
 
+{% elsif page.imagefeaturelocal %}
+
+    {% capture image_url%}/images/{{page.imagefeaturelocal}}{%endcapture%}
+
 {% elsif page.week %}
 
     {% capture image_url%}https://github.com/idvorkin/blob/raw/master/ig66/{{page.week}}/montage.jpg{%endcapture%}
