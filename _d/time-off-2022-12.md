@@ -1,15 +1,16 @@
 ---
 layout: post
 title: Time off X-mas 2022
+imagefeaturelocal: raccoon-vaccation.png
 ---
 
-It's X-mas 2022, quite the fall excitement edition! and 've got 1 and change  weeks off in an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
+It's X-mas 2022, quite the fall excitement edition! and 've got 1 and change weeks off in an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I'm going to pre-write what I want to get done, and adjust it as I go.
 
 This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
 Humoursly, I can just copy much of my todo from last year as it's pretty simmilar!
 
-## My top priorities:
+## My top priorities
 
 ### Health and Habits
 
@@ -27,7 +28,6 @@ My habits and balance have been strong, just keep my streaks running!
 - Doing programming with Zach
 
 ## Success Stories
-
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -54,7 +54,6 @@ My habits and balance have been strong, just keep my streaks running!
 - [Physical Energy (Y/5)](#physical-energy-y5)
 - [Motivation (Y/5)](#motivation-y5)
 - [Emotional Habits (Y/5)](#emotional-habits-y5)
-    - [Meditation](#meditation-1)
     - [750 words](#750-words)
     - [Avoid Procrastion](#avoid-procrastion)
 - [Physical Habits (Y/5)](#physical-habits-y5)
@@ -91,8 +90,8 @@ Private
 ### Zach
 
 - ☐ Setup a list of things to watch together
-- ☐  Watch a movie together
-- ☐  Work on his programming course
+- ☐ Watch a movie together
+- ☐ Work on his programming course
 
 ### Amelia
 
@@ -108,7 +107,6 @@ Private
 - ☐ Combine folding bike with subway for more range
 - ☐ Take a selfie with the Bicycle
 
-
 ### Ballooning
 
 - Made some great balloons for a co-worker that was in town to visit Seattle with his family.
@@ -117,13 +115,11 @@ Private
 
 - Am
 
-
 ### Magic
 
 ### Tech Guru
 
 #### GPT and NLP
-
 
 ## Cognitive Health
 
@@ -142,7 +138,7 @@ Private
 
 ### Meditation
 
-- ☐  Every day for 15 minutes! Using the streaks apps really helped
+- ☐ Every day for 15 minutes! Using the streaks apps really helped
 
 ### 750 words/Gratefulness
 
@@ -154,8 +150,6 @@ Private
 ## Motivation (Y/5)
 
 ## Emotional Habits (Y/5)
-
-### Meditation
 
 ### 750 words
 
@@ -174,7 +168,6 @@ Weight Start: 185
 Weight End:
 Gym Days:
 
-
 ### Diet
 
 ### Sleep
@@ -182,7 +175,6 @@ Gym Days:
 ## House and goods
 
 - ☐ Fix LTC insurance.
-
 
 ## Inner Peace (Y/5)
 
@@ -192,11 +184,10 @@ Gym Days:
 
 From last year ...
 
-
 **Spending vacation days when it's "fun time at work"** Not a problem at all this year.
 
 **January is going to be a tough month at work.** January is calibration time at Meta. The team is a fair bit smaller then last year so I'm feeling good about this.
 
 ### Family
 
-### Last year:
+### Last year
