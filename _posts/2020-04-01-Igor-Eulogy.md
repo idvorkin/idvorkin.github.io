@@ -38,11 +38,12 @@ _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 <!-- prettier-ignore-end -->
 
 _Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into entertaining others at my funeral_
-{%include blob_image_float_right_w25.html src="icon_eulogy_1200_628.png" %}
 
 _For many of my roles, I'm still figuring out who I want to be, and how I will achieved it, so this list is not yet in priority order. The fleshed out sections are the easy ones to write, because, well, they are the easy ones to write :)_
 
 ### Dealer of smiles and wonder
+
+{%include blob_image_float_right_w25.html src="icon_eulogy_1200_628.png" %}
 
 Making cards change colors at a spectators command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. Once Igor learned [magic](/magic), that consumed his free time and became his favorite tool.
 
@@ -101,6 +102,7 @@ Discipline is a core concept of "Begin with the end in mind" (Habit 1), and Igor
 
 ### Fit fellow
 
+{%include blob_image_float_right_w25.html src="blog/raccoon-lifting-weights.png" %}
 Igor knew physical health was the [source of his energy](/physical-health) and acted accordingly. Every month Igor pledged his weight would be 140lbs, and he put [1000\$ on the line](http://ighealth.blogspot.com/2014/10/the-best-1000-i-did-spend.html) to make sure he never reneged on his pledge. Igor valued his cardio vascular endurance and tried to run a fast 4 miles 2 to 3 times a week. Igor also tried to incorporate biking into his life whenever possible: biking to work, biking to doctors appointments, and even biking the grocery store (which was not efficient nor effective, but enjoyable). Finally, Igor knew the importance of sleep, and always woke up @ 5am. When Igor was having trouble getting enough sleep, he'd cut his caffeine to make sure his body forced him to get the sleep he needed.
 
 It took Igor almost 40 years to get his weight under control sustainably. At his most unhealthy, [Igor weighted 230 lbs](https://www.flickr.com/photos/idvorkin/4590579760/in/datetaken/), and felt terrible. Luckily Igor's good friend recommended [Fat sick and nearly dead](http://ighealth.blogspot.com/search?q=fat+sick+and+nearly+dead) and Igor began [juice fasting](http://ighealth.blogspot.com/search/label/juicing) the next day.
@@ -129,6 +131,8 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 -->
 
 ### Emotionally healthy human
+
+{%include blob_image_float_right_w25.html src="noun-meditate.png" %}
 
 Igor understood emotional health is the basis of his stability, and [invested](/search-inside-yourself) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
@@ -199,6 +203,8 @@ To file:
 -->
 
 ### Family man
+
+{%include blob_image_float_right_w25.html src="blog/raccoon-family.png" %}
 
 Igor used to think being a family man would be easy. Being proud of his family, looking back fondly on time with them was easy, but making the time for them, supporting them, teaching them - that was all really hard. Hard yes, but totally worth it.
 
