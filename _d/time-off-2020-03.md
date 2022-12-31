@@ -1,5 +1,6 @@
 ---
 layout: post
+imagefeaturelocal: raccoon-vacation.png
 title: Adventures March and April 2020
 ---
 
@@ -80,7 +81,7 @@ In March 2020, I took a 2 month sabatical between leaving Amazon and joining Fac
 
 ### Priorities
 
-#### Physical because my body is the only one I've got.
+#### Physical because my body is the only one I've got
 
 - I will weight 200 by May 1st (205 by April 1st).
 - I go to a personal trainer once a week.
@@ -88,12 +89,12 @@ In March 2020, I took a 2 month sabatical between leaving Amazon and joining Fac
 - I wake up daily at 5 am.
 - I close my rings daily.
 
-#### Emotional health because that's how I experience the world.
+#### Emotional health because that's how I experience the world
 
 - I medtate daily.
 - I do a mental wind down befor bed daily.
 
-#### Living the 7 habits, because that's my bible.
+#### Living the 7 habits, because that's my bible
 
 - [Eating the frog](/frog)
 - Quarter/Month/Week/Day Habits
@@ -102,7 +103,7 @@ In March 2020, I took a 2 month sabatical between leaving Amazon and joining Fac
 
 #### ☑ New logo
 
-https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180.png
+<https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180.png>
 
 #### ☐ The manager book
 
@@ -119,7 +120,7 @@ https://github.com/idvorkin/blob/blob/master/idvorkin-bunny-ears-ar-2020-180-180
 
 #### ☐ Money Ideas
 
-#### ☑ Time Off!
+#### ☑ Time Off
 
 My guide to taking [time off](/time-off)
 
@@ -146,8 +147,8 @@ However, try as I might I get few insights beyond the fact I generate lots of ty
 
 #### ☑ 'generative text' from my journal entries
 
-https://github.com/minimaxir/textgenrnn
-https://colab.research.google.com/notebooks/intro.ipynb#recent=true
+<https://github.com/minimaxir/textgenrnn>
+<https://colab.research.google.com/notebooks/intro.ipynb#recent=true>
 
 #### ☐ 'generative text' using gpt-2
 
@@ -416,7 +417,7 @@ Also build interesting tag files for a markdown repo, by only using fd, which ho
 
 Find the community:
 
-1. Subscribed to rss feed for reddit via https://reddit/r/subreddit.rss
+1. Subscribed to rss feed for reddit via <https://reddit/r/subreddit.rss>
 2. Find interesting discord
 
 #### ☐ Screen cast of my cool setup
