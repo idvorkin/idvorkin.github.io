@@ -5,7 +5,7 @@ author: "Igor Dvorkin"
 tags:
   - emotional intelligence
   - book-notes
-permalink: /siy
+imagefeaturelocal: raccoon-meditate.png
 redirect_from:
   - /search-inside-yourself
   - /meditate
@@ -15,8 +15,7 @@ alias:
   - /search-inside-yourself
   - /meditate
   - /meditation
-
-imagefeature: https://github.com/idvorkin/blob/raw/master/noun-meditate.png
+permalink: /siy
 ---
 
 Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It's also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to medatitive bliss.
