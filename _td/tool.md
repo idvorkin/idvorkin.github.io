@@ -36,6 +36,7 @@ A collection of tips, tricks and pointers of the various tools i use
     - [TUI Client - lazygit/tig](#tui-client---lazygittig)
     - [Git Stats](#git-stats)
     - [TUI merge - fac](#tui-merge---fac)
+    - [Re-write history](#re-write-history)
 - [GitHub](#github)
 - [SSH](#ssh)
 - [TMUX](#tmux)
@@ -304,6 +305,13 @@ function gstatdaterange() {
 
 TUI [merge tool](https://github.com/mkchoi212/fac)
 
+#### Re-write history
+
+Go back a few commits, and then make the new commits 1 by 1. Quite simple, just be careful about re-writing history someone else has also edited
+
+    git reset --soft HEAD~[n]
+    git commit
+
 ### GitHub
 
 - Serve HTML files directly from GitHub: <https://rawgit.com/idvorkin/linqpadsnippets/master/js/DetectBackButton.html>
@@ -312,6 +320,7 @@ TUI [merge tool](https://github.com/mkchoi212/fac)
 - hub a better git client that understands everything comes from github
 - [Search all commits by author and day](https://github.com/search?q=user%3Aidvorkin+author-date%3A2020-06-20+author%3Aidvorkin)
 - [See diff (w/all changes) between dates](https://github.com/idvorkin/idvorkin.github.io/compare/master@%7B1day%7D...master)
+- A cool feature of hub is can open the file/line in github - Pretty helpful when you're working in an editor and on a [file/line](https://github.com/idvorkin/Settings/blob/97e9ea51e4ce4b0ce98123900c07fd76836b7bbf/default_vimrc#L913)
 
 ### SSH
 
