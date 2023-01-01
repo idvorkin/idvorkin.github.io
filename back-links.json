@@ -142,6 +142,7 @@
         "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
+        "/strong": "/physical-health",
         "/taxes": "/money",
         "/td/machine-learning": "/ml",
         "/tft": "/toysfortots",
@@ -178,7 +179,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/40-yo-programmer.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/7-habits": {
             "py/object": "__main__.Page",
@@ -216,7 +217,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-01-04-7-habits.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/7h-concepts": {
             "py/object": "__main__.Page",
@@ -257,7 +258,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/90days.md",
-            "doc_size": 44000
+            "doc_size": 43000
         },
         "/about": {
             "py/object": "__main__.Page",
@@ -269,7 +270,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "about.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/activation": {
             "py/object": "__main__.Page",
@@ -288,7 +289,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/activation.md",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/adblocker-trojan": {
             "py/object": "__main__.Page",
@@ -302,7 +303,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/adblocker_trojan.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/addiction": {
             "py/object": "__main__.Page",
@@ -328,7 +329,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/addiction.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/affirmations": {
             "py/object": "__main__.Page",
@@ -352,7 +353,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/affirmations2.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/ai-art": {
             "py/object": "__main__.Page",
@@ -366,7 +367,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai_art.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -391,7 +392,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/amazon.md",
-            "doc_size": 26000
+            "doc_size": 25000
         },
         "/anger": {
             "py/object": "__main__.Page",
@@ -406,7 +407,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/anger.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/anxiety": {
             "py/object": "__main__.Page",
@@ -434,7 +435,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/anxiety.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/anxiety-management": {
             "py/object": "__main__.Page",
@@ -454,7 +455,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/anxiety_management.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/appreciate": {
             "py/object": "__main__.Page",
@@ -471,7 +472,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/appreciate2.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/ar": {
             "py/object": "__main__.Page",
@@ -483,19 +484,19 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ar.md",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/asciinema": {
             "py/object": "__main__.Page",
             "url": "/asciinema",
             "title": "asciinema",
-            "description": "asciinema is a super cool tool allowing you to play shell recording… This page contains them\n\n",
+            "description": "Lets clean this up and see what it looks like …\n\n",
             "file_path": "_site/asciinema.html",
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/asciinema.md",
-            "doc_size": 10000
+            "doc_size": 9000
         },
         "/balance": {
             "py/object": "__main__.Page",
@@ -520,7 +521,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/balance2.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/balloon": {
             "py/object": "__main__.Page",
@@ -537,7 +538,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/balloon.md",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/be-proactive": {
             "py/object": "__main__.Page",
@@ -562,7 +563,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c1.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/being-a-great-manager": {
             "py/object": "__main__.Page",
@@ -591,7 +592,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-03-18-being-a-great-manager.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/bike": {
             "py/object": "__main__.Page",
@@ -629,7 +630,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/bmu.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/books-that-defined-me": {
             "py/object": "__main__.Page",
@@ -653,7 +654,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/brompton-toys": {
             "py/object": "__main__.Page",
@@ -667,7 +668,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-4-9-brompton-toys.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/brython": {
             "py/object": "__main__.Page",
@@ -681,7 +682,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/brython_.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/build-bubble-bike": {
             "py/object": "__main__.Page",
@@ -726,7 +727,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_posts/2017-01-10-Canadian-Spotting.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/cert-error": {
             "py/object": "__main__.Page",
@@ -738,7 +739,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/fix_cert_error.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/chapters": {
             "py/object": "__main__.Page",
@@ -755,7 +756,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/chapters.md",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/class-act": {
             "py/object": "__main__.Page",
@@ -774,7 +775,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/classact2.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/coaching": {
             "py/object": "__main__.Page",
@@ -802,7 +803,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/coaching.md",
-            "doc_size": 27000
+            "doc_size": 26000
         },
         "/coe": {
             "py/object": "__main__.Page",
@@ -820,7 +821,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/correction-of-errors.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/comp": {
             "py/object": "__main__.Page",
@@ -839,7 +840,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-11-16-understandingtechcompensation.md",
-            "doc_size": 22000
+            "doc_size": 21000
         },
         "/covid": {
             "py/object": "__main__.Page",
@@ -857,7 +858,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/covid19.md",
-            "doc_size": 25000
+            "doc_size": 24000
         },
         "/curious": {
             "py/object": "__main__.Page",
@@ -890,7 +891,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/grandmother.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/d/2010-2-15-2016-Misc-Uncategorized": {
             "py/object": "__main__.Page",
@@ -902,7 +903,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2010-2-15-2016-Misc-Uncategorized.md",
-            "doc_size": 23000
+            "doc_size": 22000
         },
         "/d/2015-11-18-Outsourcing": {
             "py/object": "__main__.Page",
@@ -914,7 +915,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2015-11-18-Outsourcing.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/d/2016-02-03-positive-computing-survey": {
             "py/object": "__main__.Page",
@@ -928,7 +929,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2016-02-03-positive-computing-survey.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/d/2016-05-09-lost-interview": {
             "py/object": "__main__.Page",
@@ -940,7 +941,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2016-05-09-lost-interview.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/d/2016-2-14-Health-In-The-Head": {
             "py/object": "__main__.Page",
@@ -966,7 +967,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2016-2-15-Seth-Godin-Notes.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/d/2016-7-14-Customer-Service": {
             "py/object": "__main__.Page",
@@ -978,7 +979,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2016-7-14-Customer-Service.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/d/2016-8-1-Twelve-Tech-Forces": {
             "py/object": "__main__.Page",
@@ -990,7 +991,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2016-8-1-Twelve-Tech-Forces.md",
-            "doc_size": 21000
+            "doc_size": 20000
         },
         "/d/2017-07-22-vacationphotos": {
             "py/object": "__main__.Page",
@@ -1002,7 +1003,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2017-07-22-vacationphotos.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/d/2017-09-10-software-rot": {
             "py/object": "__main__.Page",
@@ -1014,7 +1015,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2017-09-10-software-rot.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/d/2017-11-04-clean-architecture": {
             "py/object": "__main__.Page",
@@ -1030,7 +1031,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2017-11-04-clean-architecture.md",
-            "doc_size": 47000
+            "doc_size": 46000
         },
         "/d/2018-02-10-you-do-want-your-favorite-app-to-be-a-service": {
             "py/object": "__main__.Page",
@@ -1042,7 +1043,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2018-02-10-you-do-want-your-favorite-app-to-be-a-service.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/d/2018-09-23-mind-lines": {
             "py/object": "__main__.Page",
@@ -1054,7 +1055,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2018-09-23-mind-lines.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/d/apollo": {
             "py/object": "__main__.Page",
@@ -1066,7 +1067,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/apollo.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/d/habits": {
             "py/object": "__main__.Page",
@@ -1104,7 +1105,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/management_interviews.md",
-            "doc_size": 31000
+            "doc_size": 30000
         },
         "/d/resistance": {
             "py/object": "__main__.Page",
@@ -1133,7 +1134,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/resistance.md",
-            "doc_size": 18000
+            "doc_size": 17000
         },
         "/d/time-off-2020-03": {
             "py/object": "__main__.Page",
@@ -1150,7 +1151,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2020-03.md",
-            "doc_size": 28000
+            "doc_size": 27000
         },
         "/d/time-off-2020-12": {
             "py/object": "__main__.Page",
@@ -1170,7 +1171,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2020-12.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/d/time-off-2021-11": {
             "py/object": "__main__.Page",
@@ -1190,7 +1191,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2021-11.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/d/time-off-2021-12": {
             "py/object": "__main__.Page",
@@ -1211,7 +1212,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2021-12.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/d/time-off-2022-02": {
             "py/object": "__main__.Page",
@@ -1229,7 +1230,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2022-02.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/d/time-off-2022-07": {
             "py/object": "__main__.Page",
@@ -1246,7 +1247,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2022-07.md",
-            "doc_size": 24000
+            "doc_size": 23000
         },
         "/d/time-off-2022-11": {
             "py/object": "__main__.Page",
@@ -1262,23 +1263,24 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2022-11.md",
-            "doc_size": 24000
+            "doc_size": 23000
         },
         "/d/time-off-2022-12": {
             "py/object": "__main__.Page",
             "url": "/d/time-off-2022-12",
             "title": "Time off X-mas 2022",
-            "description": "It’s X-mas 2022, quite the fall excitement edition! and ‘ve got 1 and change  weeks off in an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
+            "description": "It’s X-mas 2022, quite the fall excitement edition! and I’ve got 1 and change weeks off in an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation. I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
             "file_path": "_site/d/time-off-2022-12.html",
             "outgoing_links": [
                 "/d/time-off-2021-12",
                 "/happy",
+                "/moments",
                 "/timeoff"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2022-12.md",
-            "doc_size": 17000
+            "doc_size": 20000
         },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
@@ -1290,7 +1292,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/where-have-all-the-bugs-gone.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/death": {
             "py/object": "__main__.Page",
@@ -1322,7 +1324,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "debug.html",
-            "doc_size": 10000
+            "doc_size": 20000
         },
         "/decisive": {
             "py/object": "__main__.Page",
@@ -1341,7 +1343,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2019-09-21-decisive.md",
-            "doc_size": 40000
+            "doc_size": 39000
         },
         "/defi": {
             "py/object": "__main__.Page",
@@ -1353,7 +1355,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/defi.md",
-            "doc_size": 29000
+            "doc_size": 28000
         },
         "/delegate": {
             "py/object": "__main__.Page",
@@ -1369,7 +1371,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/delegate.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/depression": {
             "py/object": "__main__.Page",
@@ -1398,7 +1400,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/depression.md",
-            "doc_size": 19000
+            "doc_size": 18000
         },
         "/design": {
             "py/object": "__main__.Page",
@@ -1417,7 +1419,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/design.md",
-            "doc_size": 19000
+            "doc_size": 18000
         },
         "/diet": {
             "py/object": "__main__.Page",
@@ -1436,7 +1438,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/diet.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/dip": {
             "py/object": "__main__.Page",
@@ -1454,7 +1456,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2017-11-12-thedip.md",
-            "doc_size": 26000
+            "doc_size": 25000
         },
         "/docker": {
             "py/object": "__main__.Page",
@@ -1466,7 +1468,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/docker_.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/dsat": {
             "py/object": "__main__.Page",
@@ -1489,7 +1491,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/sat_dsat.md",
-            "doc_size": 21000
+            "doc_size": 20000
         },
         "/e1": {
             "py/object": "__main__.Page",
@@ -1501,7 +1503,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/e1.md",
-            "doc_size": 10000
+            "doc_size": 9000
         },
         "/emotional-health": {
             "py/object": "__main__.Page",
@@ -1551,7 +1553,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c2.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/enemy": {
             "py/object": "__main__.Page",
@@ -1568,7 +1570,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/don-juan2.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/essentialism": {
             "py/object": "__main__.Page",
@@ -1596,7 +1598,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-11-28-essentialism.md",
-            "doc_size": 37000
+            "doc_size": 36000
         },
         "/eulogy": {
             "py/object": "__main__.Page",
@@ -1637,7 +1639,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
-            "doc_size": 28000
+            "doc_size": 29000
         },
         "/facebook": {
             "py/object": "__main__.Page",
@@ -1653,7 +1655,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/facebook.md",
-            "doc_size": 27000
+            "doc_size": 26000
         },
         "/fail": {
             "py/object": "__main__.Page",
@@ -1722,7 +1724,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c5.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/frog": {
             "py/object": "__main__.Page",
@@ -1774,7 +1776,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/gty.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/getting-to-yes-with-yourself": {
             "py/object": "__main__.Page",
@@ -1793,7 +1795,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-23-getting-to-yes-with-yourself.md",
-            "doc_size": 21000
+            "doc_size": 20000
         },
         "/goals": {
             "py/object": "__main__.Page",
@@ -1805,7 +1807,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/goals.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/gpt": {
             "py/object": "__main__.Page",
@@ -1835,7 +1837,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/grateful2.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/gtd": {
             "py/object": "__main__.Page",
@@ -1862,7 +1864,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/gtd.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/happy": {
             "py/object": "__main__.Page",
@@ -1895,7 +1897,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-04-12-happy.md",
-            "doc_size": 23000
+            "doc_size": 22000
         },
         "/hobby": {
             "py/object": "__main__.Page",
@@ -1915,7 +1917,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/hobby.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/human-meetings": {
             "py/object": "__main__.Page",
@@ -1930,7 +1932,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/human-meeting.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/humans-are-underrated": {
             "py/object": "__main__.Page",
@@ -1944,7 +1946,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-12-humans-are-underrated.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/idle": {
             "py/object": "__main__.Page",
@@ -1971,7 +1973,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/idle-loop.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/Immutable-Laws-Of-Hard": {
             "py/object": "__main__.Page",
@@ -1986,7 +1988,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-6-30-Immutable-Laws-Of-Hard.md",
-            "doc_size": 10000
+            "doc_size": 9000
         },
         "/insecure": {
             "py/object": "__main__.Page",
@@ -2005,7 +2007,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/imposter.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/insomnia": {
             "py/object": "__main__.Page",
@@ -2021,7 +2023,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2016-2-11-Insomnia.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/interviewsarehard": {
             "py/object": "__main__.Page",
@@ -2033,7 +2035,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_posts/2016-11-26-interviewsarehard.markdown",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/irl": {
             "py/object": "__main__.Page",
@@ -2053,7 +2055,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/irl.md",
-            "doc_size": 45000
+            "doc_size": 44000
         },
         "/job": {
             "py/object": "__main__.Page",
@@ -2080,7 +2082,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/job-hunt-stress": {
             "py/object": "__main__.Page",
@@ -2102,7 +2104,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-02-17-job-hunt-stress.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/joy": {
             "py/object": "__main__.Page",
@@ -2132,7 +2134,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/joy.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/last-year": {
             "py/object": "__main__.Page",
@@ -2162,7 +2164,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/the-like-switch.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/lonely": {
             "py/object": "__main__.Page",
@@ -2174,7 +2176,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/lonely.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/magic": {
             "py/object": "__main__.Page",
@@ -2196,7 +2198,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-04-21-magical-memories.md",
-            "doc_size": 22000
+            "doc_size": 21000
         },
         "/manager-book": {
             "py/object": "__main__.Page",
@@ -2245,7 +2247,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 121000
+            "doc_size": 120000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -2263,7 +2265,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/manager-book-appendix.md",
-            "doc_size": 26000
+            "doc_size": 25000
         },
         "/mental-pain": {
             "py/object": "__main__.Page",
@@ -2304,7 +2306,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/mermaid.md",
-            "doc_size": 10000
+            "doc_size": 9000
         },
         "/micro-economics": {
             "py/object": "__main__.Page",
@@ -2316,7 +2318,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/micro-economics.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/mind-at-work": {
             "py/object": "__main__.Page",
@@ -2336,7 +2338,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2016-2-10-body-at-home-mind-at-work.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/mind-monsters": {
             "py/object": "__main__.Page",
@@ -2358,7 +2360,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2015-11-11-mind-monsters.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/ml": {
             "py/object": "__main__.Page",
@@ -2378,7 +2380,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/machine-learning.md",
-            "doc_size": 47000
+            "doc_size": 46000
         },
         "/moments": {
             "py/object": "__main__.Page",
@@ -2391,12 +2393,13 @@
             ],
             "incoming_links": [
                 "/balance",
+                "/d/time-off-2022-12",
                 "/happy",
                 "/moments-at-work"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2018-04-03-moments.md",
-            "doc_size": 21000
+            "doc_size": 20000
         },
         "/moments-at-work": {
             "py/object": "__main__.Page",
@@ -2416,7 +2419,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-04-09-moments-at-work.md",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/money": {
             "py/object": "__main__.Page",
@@ -2434,7 +2437,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/taxes.md",
-            "doc_size": 30000
+            "doc_size": 29000
         },
         "/mortality-software": {
             "py/object": "__main__.Page",
@@ -2450,7 +2453,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
-            "doc_size": 19000
+            "doc_size": 18000
         },
         "/nlp": {
             "py/object": "__main__.Page",
@@ -2467,7 +2470,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/nlp.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/operating-manual": {
             "py/object": "__main__.Page",
@@ -2504,7 +2507,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/operating-manual-2.md",
-            "doc_size": 28000
+            "doc_size": 27000
         },
         "/pandas": {
             "py/object": "__main__.Page",
@@ -2519,7 +2522,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/pandas-tutorial.md",
-            "doc_size": 21000
+            "doc_size": 20000
         },
         "/parkinson": {
             "py/object": "__main__.Page",
@@ -2540,7 +2543,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/resource-paradox.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/physical-health": {
             "py/object": "__main__.Page",
@@ -2567,7 +2570,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/pride": {
             "py/object": "__main__.Page",
@@ -2590,13 +2593,13 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-01-01-fuck-pride.md",
-            "doc_size": 18000
+            "doc_size": 17000
         },
         "/product": {
             "py/object": "__main__.Page",
             "url": "/product",
             "title": "Building products",
-            "description": "From creating a vision that inspires to laying out the strategies to get there, product work requires a range of skills—and a good dose of creativity.  Putting the puzzle pieces together is essential to creating a product that appeals to its customers. With the right combination of vision, strategy, product design and execution, anyone can create something truly remarkable. With this in mind, let’s start building the future we want to create!\n\n",
+            "description": "From creating a vision that inspires to laying out the strategies to get there, product work requires a range of skills—and a good dose of creativity. Putting the puzzle pieces together is essential to creating a product that appeals to its customers. With the right combination of vision, strategy, product design and execution, anyone can create something truly remarkable. With this in mind, let’s start building the future we want to create!\n\n",
             "file_path": "_site/product.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -2625,7 +2628,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/productive2.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/prompts": {
             "py/object": "__main__.Page",
@@ -2643,7 +2646,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/prompt.md",
-            "doc_size": 27000
+            "doc_size": 26000
         },
         "/psychic-weight": {
             "py/object": "__main__.Page",
@@ -2674,7 +2677,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/psychic-weight.md",
-            "doc_size": 18000
+            "doc_size": 17000
         },
         "/quip": {
             "py/object": "__main__.Page",
@@ -2686,7 +2689,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/quip.md",
-            "doc_size": 10000
+            "doc_size": 9000
         },
         "/recommend": {
             "py/object": "__main__.Page",
@@ -2713,7 +2716,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "self-reflect.md",
-            "doc_size": 9000
+            "doc_size": 8000
         },
         "/remote-work": {
             "py/object": "__main__.Page",
@@ -2727,7 +2730,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/remotework.md",
-            "doc_size": 18000
+            "doc_size": 17000
         },
         "/roblox-dev": {
             "py/object": "__main__.Page",
@@ -2739,7 +2742,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/roblox2.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/save-the-soup": {
             "py/object": "__main__.Page",
@@ -2767,7 +2770,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_posts/2018-11-05-save-the-souse.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/sell": {
             "py/object": "__main__.Page",
@@ -2783,7 +2786,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2017-2-5-To-Sell-Is-Human.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/shame": {
             "py/object": "__main__.Page",
@@ -2805,7 +2808,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/shame.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/sharpen-the-saw": {
             "py/object": "__main__.Page",
@@ -2828,7 +2831,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c7.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/siy": {
             "py/object": "__main__.Page",
@@ -2864,7 +2867,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/siy.md",
-            "doc_size": 59000
+            "doc_size": 58000
         },
         "/sleeping-bag-sacrifies": {
             "py/object": "__main__.Page",
@@ -2878,7 +2881,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_posts/2018-11-06-sleeping-bag-sacrifies.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/sleight-of-mouth": {
             "py/object": "__main__.Page",
@@ -2894,7 +2897,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
-            "doc_size": 24000
+            "doc_size": 23000
         },
         "/snjb": {
             "py/object": "__main__.Page",
@@ -2908,7 +2911,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/snjb_.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/software-leadership-roles": {
             "py/object": "__main__.Page",
@@ -2925,7 +2928,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-01-14-software-leadership-roles.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/strategy": {
             "py/object": "__main__.Page",
@@ -2939,7 +2942,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2015-11-18-what-is-strategy.md",
-            "doc_size": 23000
+            "doc_size": 22000
         },
         "/strengths": {
             "py/object": "__main__.Page",
@@ -2956,7 +2959,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-05-25-strength-finder.md",
-            "doc_size": 18000
+            "doc_size": 17000
         },
         "/sustainable-work": {
             "py/object": "__main__.Page",
@@ -2973,7 +2976,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2020-01-04-sustainable-work.md",
-            "doc_size": 27000
+            "doc_size": 26000
         },
         "/switch": {
             "py/object": "__main__.Page",
@@ -2991,7 +2994,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/switch.md",
-            "doc_size": 19000
+            "doc_size": 18000
         },
         "/synergize": {
             "py/object": "__main__.Page",
@@ -3007,7 +3010,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c6.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/taas": {
             "py/object": "__main__.Page",
@@ -3019,7 +3022,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/2016-09-18-transportation-as-a-service.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/tags": {
             "py/object": "__main__.Page",
@@ -3038,7 +3041,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
@@ -3050,7 +3053,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/advertising.md",
-            "doc_size": 23000
+            "doc_size": 22000
         },
         "/td/alexa-skill": {
             "py/object": "__main__.Page",
@@ -3062,7 +3065,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/alexa-skill.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/td/back_ref": {
             "py/object": "__main__.Page",
@@ -3074,7 +3077,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/back_ref.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/td/better-security-design": {
             "py/object": "__main__.Page",
@@ -3086,7 +3089,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/better-security-design.md",
-            "doc_size": 22000
+            "doc_size": 21000
         },
         "/td/cloud-first-applications": {
             "py/object": "__main__.Page",
@@ -3102,7 +3105,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/cloud-first-applications.md",
-            "doc_size": 23000
+            "doc_size": 22000
         },
         "/td/data-systems": {
             "py/object": "__main__.Page",
@@ -3116,7 +3119,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/data-systems.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
@@ -3128,7 +3131,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/dump_imessage_history.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/td/fix_ssh": {
             "py/object": "__main__.Page",
@@ -3140,7 +3143,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/fix_ssh.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/td/hack-web": {
             "py/object": "__main__.Page",
@@ -3152,7 +3155,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/hack-web.md",
-            "doc_size": 26000
+            "doc_size": 25000
         },
         "/td/ios": {
             "py/object": "__main__.Page",
@@ -3167,7 +3170,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/ios.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/td/ios-nomad": {
             "py/object": "__main__.Page",
@@ -3184,7 +3187,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/ios-nomad.md",
-            "doc_size": 21000
+            "doc_size": 20000
         },
         "/td/linqpad_from_redshift": {
             "py/object": "__main__.Page",
@@ -3196,7 +3199,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/linqpad_from_redshift.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/td/minecraft": {
             "py/object": "__main__.Page",
@@ -3208,7 +3211,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/minecraft.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/td/mosh": {
             "py/object": "__main__.Page",
@@ -3220,7 +3223,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/mosh.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/td/private_web_site": {
             "py/object": "__main__.Page",
@@ -3232,7 +3235,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/private_web_site.md",
-            "doc_size": 10000
+            "doc_size": 9000
         },
         "/td/ring-video-download": {
             "py/object": "__main__.Page",
@@ -3244,7 +3247,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/ring-video-download.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/td/sqlalchemy-redshift": {
             "py/object": "__main__.Page",
@@ -3256,7 +3259,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/sqlalchemy-redshift.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/td/stats": {
             "py/object": "__main__.Page",
@@ -3270,7 +3273,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/stats.md",
-            "doc_size": 18000
+            "doc_size": 17000
         },
         "/td/streaks": {
             "py/object": "__main__.Page",
@@ -3282,7 +3285,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/streaks.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/td/usbtech": {
             "py/object": "__main__.Page",
@@ -3294,7 +3297,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/usbtech.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/td/virtual-desktops": {
             "py/object": "__main__.Page",
@@ -3306,7 +3309,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/virtual-desktops.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/td/visual-vocabulary": {
             "py/object": "__main__.Page",
@@ -3320,7 +3323,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/visual-vocabulary.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/td/vlc_player": {
             "py/object": "__main__.Page",
@@ -3332,7 +3335,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/vlc_player.md",
-            "doc_size": 10000
+            "doc_size": 9000
         },
         "/td/windbg": {
             "py/object": "__main__.Page",
@@ -3344,7 +3347,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/windbg.md",
-            "doc_size": 10000
+            "doc_size": 9000
         },
         "/tech-health-toys": {
             "py/object": "__main__.Page",
@@ -3361,7 +3364,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-06-tech-health-toys.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/testing": {
             "py/object": "__main__.Page",
@@ -3377,7 +3380,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/testing.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/The-Genesis-Node": {
             "py/object": "__main__.Page",
@@ -3393,7 +3396,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-11-03-The-Genesis-Node.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/the-recruiter-does-not-think-you-are-hot": {
             "py/object": "__main__.Page",
@@ -3405,13 +3408,13 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_posts/2020-01-01-the-recruiter-does-not-think-you-are-hot.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/timeoff": {
             "py/object": "__main__.Page",
             "url": "/timeoff",
             "title": "Getting the most out of time off",
-            "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we’ll discuss too.  Like most things time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
+            "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
             "file_path": "_site/timeoff.html",
             "outgoing_links": [
                 "/addiction",
@@ -3437,7 +3440,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time_off.md",
-            "doc_size": 28000
+            "doc_size": 27000
         },
         "/todo_enjoy": {
             "py/object": "__main__.Page",
@@ -3453,7 +3456,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/enjoy2.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/tools": {
             "py/object": "__main__.Page",
@@ -3469,7 +3472,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/tool.md",
-            "doc_size": 47000
+            "doc_size": 46000
         },
         "/touching": {
             "py/object": "__main__.Page",
@@ -3489,7 +3492,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/touching2.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/toysfortots": {
             "py/object": "__main__.Page",
@@ -3504,7 +3507,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/alexa-charity.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/upstream": {
             "py/object": "__main__.Page",
@@ -3518,7 +3521,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/upstream.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/vim-for-writing": {
             "py/object": "__main__.Page",
@@ -3532,7 +3535,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-5-1-vim-for-writing.md",
-            "doc_size": 14000
+            "doc_size": 13000
         },
         "/voices": {
             "py/object": "__main__.Page",
@@ -3554,7 +3557,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-01-01-voices-in-my-head.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/warm": {
             "py/object": "__main__.Page",
@@ -3568,7 +3571,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-9-29-staying-warm-and-biking.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/welcome-to-holland": {
             "py/object": "__main__.Page",
@@ -3582,7 +3585,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-26-welcome-to-holland.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/what-i-wish-knew-at-22": {
             "py/object": "__main__.Page",
@@ -3597,7 +3600,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2019-10-11-what-i-wish-knew-at-22.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/what-makes-a-leader": {
             "py/object": "__main__.Page",
@@ -3612,7 +3615,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-11-25-what-makes-a-leader-great.md",
-            "doc_size": 12000
+            "doc_size": 11000
         },
         "/why-is-no-one-referring": {
             "py/object": "__main__.Page",
@@ -3624,7 +3627,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_posts/2015-3-13-why-is-no-one-referring.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/win-win": {
             "py/object": "__main__.Page",
@@ -3644,7 +3647,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c4.md",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/writing": {
             "py/object": "__main__.Page",
@@ -3672,7 +3675,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/writing.md",
-            "doc_size": 34000
+            "doc_size": 33000
         }
     }
 }
