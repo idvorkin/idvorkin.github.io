@@ -154,6 +154,14 @@ Examples:
 
 - Parsing a web page, with nice debugging and cli tooling ([Eulogy Parser](https://github.com/idvorkin/idvorkin.github.io/blob/master/eulogy_to_json.py#L5))
 
+Profiling:
+
+- Tuna - Profile viewer <https://github.com/nschloe/tuna>
+- importime
+  python -X importtime yourfile.py 2> import.log
+- Profiling code
+  python -mcProfile -o program.prof yourfile.py
+
 ### Typescript
 
 - [Quick Type](https://quicktype.io/?l=cs&r=json2csharp) Create classes from JSON
