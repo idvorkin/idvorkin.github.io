@@ -44,7 +44,9 @@ algolia:
   index_name: jekyll
   files_to_exclude:
     - "*bak"
-    - "debug"
+    - "debug.html"
+    - "edit.html"
+    - "edit"
     - "back-refs.json"
     - "*sh"
     - "*py"
@@ -53,6 +55,7 @@ algolia:
     - "all.html"
     - "all.md"
     - "tags.html"
+    - "d/index*"
     - "tags"
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap", "jekyll-redirect-from"]
