@@ -43,7 +43,7 @@ _For many of my roles, I'm still figuring out who I want to be, and how I will a
 
 ### Dealer of smiles and wonder
 
-{%include blob_image_float_right_w25.html src="icon_eulogy_1200_628.png" %}
+{%include local_image_float_right.html src="raccoon-magic.png" %}
 
 Making cards change colors at a spectators command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. Once Igor learned [magic](/magic), that consumed his free time and became his favorite tool.
 
@@ -72,6 +72,8 @@ Back in his 30s he used to juggle lots of things, the coolest of which being [ju
     -->
 
 ### Mostly car free spirit
+
+{%include local_image_float_right.html src="raccoon-bike.png" %}
 
 Igor took a strange pleasure in not driving. Riding his folding [bike](/bike), or making a long day of public transit with Zach and Amelia. Igor would take the kids on the bus, to the train, to the airport, to ride the airport elevators, just to reverse the process and head home so he could enjoy his kids, and the bus, without spending a dime.
 
@@ -167,6 +169,8 @@ Becoming a husband started [when Igor met Tori](http://ig66.blogspot.com/2012/02
 -->
 
 ### Technologist
+
+{%include local_image_float_right.html src="raccoon-nerd.png" %}
 
 Igor loved technology - taking copious [notes](https://github.com/idvorkin/techdiary) through his technical journeys, putzing with his [blog](https://github.com/idvorkin/idvorkin.github.io) and many small [projects](https://github.com/idvorkin). Igor was REALLY proud when Zach got his own [website](https://www.zacookiegames.com), and when Zach made his first [pull request](https://github.com/idvorkin/zdvorkinweb/pull/5). Igor was also very proud of his first open source [pull request](https://github.com/Homebrew/homebrew-core/pull/48163) for a command line spell checking installer.
 
