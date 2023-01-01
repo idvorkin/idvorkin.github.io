@@ -6,6 +6,7 @@ comments: true
 inprogress: true
 permalink: /magic
 aliases: ["/magic"]
+imagefeaturelocal: raccoon-magic.png
 tags:
   - how igor ticks
 ---
@@ -13,7 +14,6 @@ tags:
 Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights
 
 <!-- prettier-ignore-start -->
-<!-- prettier-ignore-end -->
 
 <!-- vim-markdown-toc GFM -->
 
@@ -40,12 +40,16 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 - [FISM 2022](#fism-2022)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 ### Early magic memories
 
 - Never really saw magic as a kid, but love to be "amazed". At a french bistro in Fremont, there was a roving magician. His finally was card to ceiling. Looked up and saw cards all over the ceiling.
 - At the table when Hannibal did [Roadhouse](https://www.youtube.com/watch?v=G1iaCcL9UDw) and his perfect classic force.
 
 ### How I started
+
+{%include local_image_float_right.html src="raccoon-magic.png" %}
 
 - Carl Bystrom's class at magic with a french drop jacket routine (great intro Carl - thanks!)
 - Not knowing how to shuffle and thus having to learn to shuffle till my fingers bled.
@@ -183,16 +187,13 @@ I like lots of his stuff. Roadhouse is racy, but fantastic. Elph boots is great,
 
 ### FISM 2022
 
-The olympics of magic.  Every 3 years. Amazing time.
+The olympics of magic. Every 3 years. Amazing time.
 
 10 hours a day of magic
 Amazing magicians
 Dani D'Ortiz - best card magician I've ever seen.
 Class acts:
-    * Jay Sankey, looking at you deeply and finding something positive
-    * Eric Jones, walking through audiance and thanking folks from coming
-    * Tetro walking around saying surveying what are the best tricks to learn.
+_ Jay Sankey, looking at you deeply and finding something positive
+_ Eric Jones, walking through audiance and thanking folks from coming \* Tetro walking around saying surveying what are the best tricks to learn.
 
 TODO: link to your FISM Post.
-
-

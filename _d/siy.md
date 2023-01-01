@@ -46,7 +46,7 @@ This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B
 
 ### 1) What is Emotional Intelligence (EI)? How to train it?
 
-{%include blob_image_float_right_w25.html src="noun-meditate.png" %}
+{%include local_image_float_right.html src="raccoon-meditate.png" %}
 
 _Even engineers can use empathy_
 

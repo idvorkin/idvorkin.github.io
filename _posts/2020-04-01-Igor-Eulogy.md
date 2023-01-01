@@ -136,7 +136,7 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 
 {%include local_image_float_right.html src="raccoon-meditate.png" %}
 
-Igor understood emotional health is the basis of his stability, and [invested](/search-inside-yourself) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
+Igor understood emotional health is the basis of his stability, and [invested](/siy) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
 Igor strived for grand-mother mind, which he applied to [himself](https://www.amazon.com/dp/B00OP1FIUM/), and others. A grand mother doesn't judge, she believes people grow, listen whole heartily, encourages, and remains calm like water.
 
