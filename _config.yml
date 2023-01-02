@@ -37,11 +37,16 @@ collections:
 # https://community.algolia.com/jekyll-algolia/getting-started.html
 # Create algolia key via cat
 # cat ~/gits/igor2/secretBox.json | jq -r ."AlgoliaKey" > _algolia_api_key
+#
+#
+
+
 
 algolia:
   application_id: RY6D0RNCA3
   search_only_api_key: d4bae7d1d6328352ce13c0978ca620e9
   index_name: jekyll
+   # https://community.algolia.com/jekyll-algolia/options.html#files-to-exclude
   files_to_exclude:
     - "*bak"
     - "debug.html"
@@ -55,7 +60,7 @@ algolia:
     - "all.html"
     - "all.md"
     - "tags.html"
-    - "d/index*"
+    - "_d/index.html"
     - "tags"
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap", "jekyll-redirect-from"]
