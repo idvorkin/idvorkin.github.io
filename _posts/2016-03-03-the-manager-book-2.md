@@ -105,12 +105,13 @@ This post uses the word manager, but the most topics apply to all software job f
     - [What about structured vs free form interview loops](#what-about-structured-vs-free-form-interview-loops)
     - [What are better kinds of interviews](#what-are-better-kinds-of-interviews)
     - [What do you do when someone says they are quitting](#what-do-you-do-when-someone-says-they-are-quitting)
-- [Firing and Performance Management](#firing-and-performance-management)
-    - [Firing Percents](#firing-percents)
-    - [The Process](#the-process)
-    - [What are your thoughts on a PIP](#what-are-your-thoughts-on-a-pip)
-    - [How do you deal with people performance issues](#how-do-you-deal-with-people-performance-issues)
+- [Performance Management, URA and PIPs](#performance-management-ura-and-pips)
+    - [Some terms](#some-terms)
+    - [Performance Management](#performance-management)
+    - [The types of URA](#the-types-of-ura)
+    - [The who and how of performance management](#the-who-and-how-of-performance-management)
     - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
+    - [How do handle poor communication, ESL, ineffective communication in some modalities.](#how-do-handle-poor-communication-esl-ineffective-communication-in-some-modalities)
 - [Team Insecurity](#team-insecurity)
     - [Everyone wants to feel good, support each other](#everyone-wants-to-feel-good-support-each-other)
     - [Maintain perspective](#maintain-perspective)
@@ -1209,29 +1210,47 @@ Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are sta
 - ### Best hire of your career
 -->
 
-## Firing and Performance Management
+## Performance Management, URA and PIPs
 
-### Firing Percents
+### Some terms
 
-TL;DR: Firing is a good thing. There is a natural percent of people who should be fired, and left to their own discretion many managers will not fire the full set of these people. At a large scale (100's of employees), and for periods of time (like during times of massive hiring), setting a firing ratio is a good thing. The key though is only enforcing it at a large scale, and having guard rails to make it objectively fair, and giving employees the ability to improve.
+You'll often find the following words used in these discussions.
+
+Performance Mangement - the general process of ensuring the team is high performing. Usually refers to having no low performers on the team.
+Managing out - Going through the PIP process with an employee.
+Up or Out - The term indicating the employee either improves, or will be managed out.
+URA - UnRegretted Attrition. A person who is no longer at the company, and that's not regrettable
+PIP - Process improvement plan. The formal final process of performance management. Performance expectations are clearly documented for employee and manager, and if the employee does not improve, they will be terminated.
+
+### Performance Management
+
+TL;DR: Performance Management is a good thing. There is a natural percent of people who are URA, and left to their own discretion many managers will not let go the full set of these people. At a large scale (100's of employees), and for periods of time (like during times of massive hiring), setting a URA ratio is a good thing. The key is enforcing it at a large scale, and having guard rails to make it objectively fair, and giving employees the ability to improve.
 
 _And now the long version for non-managers_
 
 If you've ever worked with a low performer who couldn't do their job, it's draining. They drag down the team due to missing commitments, and needing to be bailed out as unexpected work from the team. It's even a drag on the low performer as doing poorly in your job is a miserable experience, and they'll feel way better off in a place they are successful.
 
-All of this is to say firing lower performers is a good thing.
+All of this is to say managing out lower performers is a good thing.
 
-And so the question becomes who should be fired? Given career expectations it should be clear when someone is not meeting expectations, and thus who managers should fire and when. It also turns out at large numbers statistics can help.
+And so the question becomes who should be managed out? Given career expectations it should be clear when someone is not meeting expectations, and thus who managers should manage out and when. It also turns out at large numbers statistics can help.
 
 At the scale of 100's of employees there will be low performers unable to do their job. The exact value varies depending on how aggressive companies hire and deal with low performers, but I'd guess 1%-5%.
 
-For a while, Amazon was getting terrible press, so they got rid of firing ratios. You know what happened? Way less then 1% of people were fired, meaning the manager's good judgment wasn't working well enough.
+For a while, Amazon was getting terrible press, so they got rid of URA ratios. You know what happened? Way less than 1% of people were fired, meaning the manager's good judgment wasn't working well enough.
 
-As a result Amazon re-instated it's firing ratios.
+As a result Amazon re-instated its URA ratios.
 
-### The Process
+### The types of URA
 
-### What are your thoughts on a PIP
+I've observed two categories of URA, those with a skill gap, and those with consistency gap.
+
+Skill Gaps are usually the result of a mis hire, an over leveled hire, or a premature promotion (the reason promos should be lagging not leading). Skill gaps often manifest as a lack of a core competency, lack of communication skill, lack of collaboration skill, or a quality gap.
+
+These problems usually show up quickly, and can be assessed looking at artifacts objectively, and are the easier performance management case. You explain expectations, provide coaching/mentoring/opportunity and if improvement is not seen the PIP will be very straight forward.
+
+Consistency is the harder PIP for a few reasons. First, the employee will have periods of acceptable performance, sometimes above expectations, and then they'll have misses, so the PIP needs to capture a time period when there is a performance gap. Simultaneously, it can be difficult to root cause inconsistencies, is it really an employment consistency issue, or is it a structural/situational issue.
+
+### The who and how of performance management
 
 Three "Players" in this situation:
 
@@ -1251,13 +1270,13 @@ Three "Players" in this situation:
   - Weak performer means others on team have to cover both in mentoring, and picking up dropped ball.
   - Sets a bad example for the team
   - Team knows the weak, and dislikes it.
-  - Need to mitigate impact of week employee.
+  - Need to mitigate impact of weak employee.
 - The manager.
   - Emotionally draining. But you own giving them an opportunity not their success.
-  - When they're in the wrong role, best thing that happen is getting them to a place where they are successful.
+  - When they're in the wrong role, best thing that can happen is getting them to a place where they are successful.
   - Can be time and energy intensive, robs the team and good employees of your energy.
-  - Ensure criteria for demonstrating employees recover is sufficient. Get pre-agreement on criteria with your organizational leaders.
-  - Remember, all employee's getting into this process will improve because they are being chased. Ensure their improvement isn't temporary
+  - Ensure criteria for demonstrating employees recovery is sufficient. Get pre-agreement on criteria with your organizational leaders.
+  - Remember, all employees getting into this process will improve because they are being chased. Ensure their improvement isn't temporary
 
 Most companies have a well laid out process, that you follow.
 
@@ -1265,7 +1284,7 @@ First there's a "zone of concern", when the manager focuses carefully on the emp
 
 - Set employee up for max success
 - Ensure clear expectations
-  -- Get mentorship
+- Get mentorship
 - Explain to employee you believe in them.
 
 Then there's an official pre-PIP. Which is the same as above, but really clear with employee.
@@ -1277,8 +1296,6 @@ Then there's an official pre-PIP. Which is the same as above, but really clear w
 
 Then there's a formal PIP. Depends on your company but very similar to above, but with clear legal terminology.
 
-### How do you deal with people performance issues
-
 ### How do you coach employee back to success
 
 - Really depends on the employee
@@ -1288,6 +1305,20 @@ Then there's a formal PIP. Depends on your company but very similar to above, bu
   - Clarify expectations
   - Provide a short term lowering of expectations
   - Consider LOA or accommodations as appropriate
+
+### How do handle poor communication, ESL, ineffective communication in some modalities
+
+Poor communication is often quoted as a performance gap, but requires a deep dive. Is the issue frustrating employees/being a jerk, having a thick accent, having good written but poor spoken communication.
+
+Being a jerk is not a communication gap, it's a toxic behavior that needs to be addressed immediately.
+
+The other communication issues need to be examined carefully. The question is not do they have a clear accent, or do they engage vocally in meetings, the question is can the employee influence to the expectations for their level. If they can great! If not, there are many alternative communication methods/coaching to improve.
+
+Some tools I've seen used:
+
+Examples for employees who don't like being vocal in a meeting can be to provide feedback before/after the meeting.
+
+For folks who can get flustered representing their work in standups, pre-write their updates and read them during the meeting.
 
 ## Team Insecurity
 
