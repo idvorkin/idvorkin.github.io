@@ -64,7 +64,7 @@ This post uses the word manager, but the most topics apply to all software job f
     - [How do you identify and grow potential managers](#how-do-you-identify-and-grow-potential-managers)
     - [How do you grow top talent](#how-do-you-grow-top-talent)
     - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
-    - [Performance reviews the pain and the suffering.](#performance-reviews-the-pain-and-the-suffering)
+    - [Performance reviews the pain and the suffering](#performance-reviews-the-pain-and-the-suffering)
     - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
     - [How do you have a difficult conversation](#how-do-you-have-a-difficult-conversation)
 - [Culture](#culture)
@@ -751,54 +751,54 @@ The things I suffer about during PSCs - _Suffering is unhelpful, try to avoid it
 - As a result I am:
   - screwing over the people who trust me most
   - bad manager
-  - bad review because of the above (or because of the above)
+  - getting a well deserved bad review
 
-How to reduce pain and suffering. _Have no confusion, I rarely do these_
+How to reduce pain and suffering. _Have no confusion, I rarely do these, but I wish I did_
 
 - Treat your own packet, just like those of your employees.
   - Yes, that means you're writing your own review.
-  - Leave place holders that you'll fill in when you get data from what the folks you support did
-  - It helps your boss know what you did, present it easier, and see expectations miss matches (likely needing more data from you)
+  - Leave place holders that you'll fill in when you get data from what the folks you support did.
+  - It helps your boss know what you did, present it easier, and see expectations miss matches (likely needing more data from you).
   - All the rules below also apply.
 - Update packets through the year. No wordsmithing.
-  - At least quarterly, monthly is better
-  - Otherwise you won't remember
-  - Quickly course correct
-  - Include feedback you're getting
+  - At least quarterly, monthly is better.
+  - Otherwise you won't remember.
+  - Quickly course correct.
+  - Include feedback you're getting.
   - Bonus point for including what you plan to do.
+- Block your calender at work, and tell your family you're working nights and weekends
+  - Set expectation this will take 110% of your energy.
+  - Ensure your family knows and can support you.
+  - Remove all other stressors from your life at this time.
+- Prioritize packets by difficulty and impact
+  - Don't spend much time on mid-band no debate packets.
+  - Spend a lot of time on borderline packets.
+  - Spend a lot of time on promo packets, especially at the higher levels.
+  - Spend lots of time when there are misses.
 - Only think about a person's packet and calibrations when writing their packet.
   - You can lose so much energy by ruminating on the suffering above.
-  - It's super hard, but if you catch yourself, tell yourself if I want to think about packets, I need to have my editor open and looking at a packet.
+  - It's super hard, but if you catch yourself, tell yourself if I want to think about packets, I need to have my editor open and looking at a packet. Otherwise I need to think about something else.
 - Only work on one packet at a time
-  - No switching mid section/person
+  - Need to have a sense of progress/completion.
+  - No switching mid section/person.
+  - Only work on one section at a time.
   - You are allowed to copy good sections from other packets.
-- Only work on one section at a time
-  - The key is continuous progress
 - Do 3 versions of a packet
-  - Getting high quality early is pointless. And it's stressful.
-  - Wordsmithing something you won't keep is just procrastination
+  - Need to have a sense of progress/completion.
+  - Spinning on wording early is pointless. And it's stressful.
+  - Wordsmithing something you won't keep is just procrastination.
   - First version gather all the evidence, relevant ideas, ask folks you support for more evidence here.
   - Second version: put it into rough sentences; go over it with another manager.
-  - Third version: make this one good. It's near final. Get a final review with other managers
-- Make a very granular schedule
-  - I schedule 3 blocks a day, including who's packet, what section and what draft
-  - I schedule when I'm talking to folks
-- Get input early
-  - Schedule time to get feedback from the people you supportj
-  - Schedule time to get feedback from other providers
-  - Schedule time to review with tech leads
-  - Schedule time to do mock calibrations
-- Prioritize packets by difficulty and impact
-  - Don't spend much time on mid-band no debate packets
-  - Spend a lot of time on borderline packets
-  - Spend a lot of time on promo packets, especially at the higher levels
-  - Spend lots of time when there are misses.
-- Block your calender at work, and tell your family you're working nights and weekends
-  - Set expectatinos this will take 110% of your energy
-  - Ensure your family knows and can support you.
+  - Third version: make this one good. It's near final. Get a final review with other managers.
+- Make a very granular schedule, including when you're talking to people
+  - I schedule 3 blocks a day, including who's packet, what section and what draft.
+  - I schedule time to get feedback from the people you support.
+  - I schedule time to get feedback from other providers.
+  - I schedule time to review with tech leads.
+  - I schedule time to do mock calibrations.
 - Get support from other EMs
   - Everyone can see our situations better then we can.
-  - Talk to other EMs for support
+  - Talk to other EMs for support.
 
 ### Recall career is just one part of your life
 
