@@ -163,6 +163,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Take Amelia Roller Skating
 - Take Amelia To The Library
 - Make a TikTok with Amelia
+- Make a Puppet show and Movie with Amelia
 
 ### Zach
 
@@ -174,6 +175,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Watch the Simpsons with Zach
 - Go Kayaking
 - Working on a Movie
+- Do some programming
 
 ### Tori
 
