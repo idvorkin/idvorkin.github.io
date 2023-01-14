@@ -111,9 +111,9 @@ This post uses the word manager, but the most topics apply to all software job f
     - [The types of URA](#the-types-of-ura)
     - [The who and how of performance management](#the-who-and-how-of-performance-management)
     - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
-    - [How do handle poor communication, ESL, ineffective communication in some modalities.](#how-do-handle-poor-communication-esl-ineffective-communication-in-some-modalities)
+    - [How do handle poor communication, ESL, ineffective communication in some modalities](#how-do-handle-poor-communication-esl-ineffective-communication-in-some-modalities)
 - [Team Insecurity](#team-insecurity)
-    - [Everyone wants to feel good, support each other](#everyone-wants-to-feel-good-support-each-other)
+    - [Everyone wants to feel supported](#everyone-wants-to-feel-supported)
     - [Maintain perspective](#maintain-perspective)
 - [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
     - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
@@ -748,9 +748,9 @@ From Simon Sinek, a great script:
 
 ### What is your ideal culture
 
-Tough question. I need to put more thining and polish into this.
+Tough question. I need to put more thinking and polish into this.
 
-Culture has 3 components, the team, the execution model and the growth/feedback model.
+Culture has 3 components, the team, the execution model, and the growth/feedback model.
 
 - Team: Coming to work is fun, team gelled, and ahead of individuals
 
@@ -1322,36 +1322,36 @@ For folks who can get flustered representing their work in standups, pre-write t
 
 ## Team Insecurity
 
-- Very common situtatoin
-- Team feels nothing they/EM can do - but that's completely wrong!!
+- Very common situation
+- Team feels nothing they/EM can do about - but that's completely wrong!
 
-### Everyone wants to feel good, support each other
+### Everyone wants to feel supported
 
 Happiness is a choice!
 
-Every day I walk past a beggar, he only has 1 leg, and like 6 teeth, but he's always smiling. Wet or dry, snow or sun, always a beaming mostly toothless smile. One day I ask him "Hey man, I gotta ask, why are you always so positive"? And he answered.
+Every day I walk past a beggar. He only has 1 leg, and like 6 teeth, but he's always smiling. Whether it's wet or dry, snow or sun, always a toothless smile. One day I asked him "Hey man, I gotta ask, why are you always so positive?" And he answered:
 
-"Look, every day I have a choice, I can be happy or miserable" - why would I choose miserable?
+"Look, every day I have a choice, I can be happy or miserable - why would I choose miserable?"
 
-Now, as a team we want to support each other, lets help each other by reminding each other of these things and the importance of choosing happiness.
+As a team, we want to support each other, so let be help each other by reminding each other of these things and the importance of choosing happiness.
 
 ### Maintain perspective
 
-- When there's mental pain, time bound shrinks, as does all the attributes
-- Share all the good stuff and big pictures
-- Extra focus on appreciation
-- Increase Time Range
-- Be Patient
+- When there's mental pain, our time bound shrinks, as does everything else
+- Share all the good stuff and big pictures.
+- Extra focus on appreciation.
+- Increase time ranges.
+- Be patient.
 
 ## Charters, Re-orgs and Bootstrapping
 
-Reorgs have two dimensions, staffing and charter, both of these need to be addressed.
+Reorgs have two dimensions, staffing and charter, both of these need to be addressed and communicated.
 
-There are several types of re-orgs. Here are some of the ones I've executed:
+There are several types of reorgs. Here are some of the ones I've executed:
 
 ### The genesis: When you start from scratch
 
-Building a team has two aspects, hiring from 0 to staffed, and building out a new charter and vision.
+Building a team from a greenfield of 0 has two aspects: hiring from 0 to staffed and building out a new charter and vision.
 
 In an ideal world, you'd execute the following hiring plan:
 
@@ -1359,7 +1359,7 @@ In an ideal world, you'd execute the following hiring plan:
 - Put in places the senior developers to build out the architecture and process
 - Start working by getting your SDE-IIs and SDE-Is
 
-In the real world, you'll likely:
+In the real world, you'll most likely:
 
 - Have a vague idea
 - Add people as you find them (hard stop when too many juniors - see below)
@@ -1367,12 +1367,12 @@ In the real world, you'll likely:
 
 Note: It's usually easy to hire junior people, and when there's pressure to start, you'll be tempted to just keep adding junior folks. However, there's a world of hurt here. If you're planning on starting with too many junior folks (or getting pressured to) borrow more experienced folks from other teams. Ideally borrow them full time for a few quarters, but at least borrow them for brainstorming, design, architecture and mentorship.
 
-Hopefully, early in your hiring process you've been thinking about your charter. Charters and such are hard, here's the strategy I tackle:
+Hopefully, early in your hiring process, you've been thinking about your charter. Charters and such are hard. Here's the strategy I tackle:
 
-- Come up with a north star vision
-- Start your first experiments in tech and market
+- Come up with a north star vision.
+- Start your first experiments in tech and market.
 - Find the first wins to be able to inspire the team, excite the investors, and really partners.
-- Build out an early roadmap and product.
+- Build out an early roadmap and products.
 - Keep learning and improving as people join.
 
 ### Telling the team
@@ -1679,4 +1679,3 @@ My notes on [Strategy](/strategy), including the strategic positions of various 
 ## Appendix
 
 {%include summarize-page.html src="/manager-book-appendix" %}
-I think managers do need technical skills see [here](#l-technical).
