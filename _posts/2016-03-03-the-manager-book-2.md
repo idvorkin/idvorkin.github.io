@@ -63,8 +63,6 @@ This post uses the word manager, but the most topics apply to all software job f
     - [How do you handle promotion preparation (and fever)](#how-do-you-handle-promotion-preparation-and-fever)
     - [How do you identify and grow potential managers](#how-do-you-identify-and-grow-potential-managers)
     - [How do you grow top talent](#how-do-you-grow-top-talent)
-    - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
-    - [Performance reviews the pain and the suffering](#performance-reviews-the-pain-and-the-suffering)
     - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
     - [How do you have a difficult conversation](#how-do-you-have-a-difficult-conversation)
 - [Culture](#culture)
@@ -106,9 +104,12 @@ This post uses the word manager, but the most topics apply to all software job f
     - [What about structured vs free form interview loops](#what-about-structured-vs-free-form-interview-loops)
     - [What are better kinds of interviews](#what-are-better-kinds-of-interviews)
     - [What do you do when someone says they are quitting](#what-do-you-do-when-someone-says-they-are-quitting)
-- [Performance Management, URA and PIPs](#performance-management-ura-and-pips)
-    - [Some terms](#some-terms)
-    - [Performance Management](#performance-management)
+- [Performance Management](#performance-management)
+    - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
+    - [Best Practices For Performance Reviews](#best-practices-for-performance-reviews)
+    - [The pain and the suffering of performance reviews](#the-pain-and-the-suffering-of-performance-reviews)
+    - [Some definitions for low performers](#some-definitions-for-low-performers)
+    - [Performance Management for low performers](#performance-management-for-low-performers)
     - [The types of URA](#the-types-of-ura)
     - [The who and how of performance management](#the-who-and-how-of-performance-management)
     - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
@@ -685,121 +686,6 @@ Read this:
 
 ### How do you grow top talent
 
-### Performance Reveiws: Calibrations PSC, OLR, Connections
-
-[Performance reviews](https://imwrightshardcode.com/2021/06/discussing-rewards-for-people/) exist at most companies (I've been through Connects at MSFT, OLR at AMZN and PSC at FB), and for good reason they:
-
-- Ensure performance is evaluated consistently.
-- Provide forced feedback.
-- Distribute compensation in accordance to impact.
-- Validate growth plans and find opportunities across the organization.
-- Assess bottom performers and ensure action is taken.
-
-Best practices for performance reviews:
-
-- Before Calibrations:
-
-  - Continuous seeking feedback for team members, and anonymizing and providing feedback
-  - Continuous explanation of how tracking is occurring
-  - Doing mid point checkins, and peer manager review for hard situations (e.g. bottom performers and pending promotions)
-  - Consistent presentation template - this makes it easy for everyone to assess the presentation of people.
-  - Remind engineers you might find new data late, and what you do, that could change the assessment
-
-- At the start of every calibration session. Reminder that:
-
-  - Confidentiality is critical - Amazon says breaking confidentiality is a firing offense, which is great.
-  - Reminder of the importance of catching unconscious bias.
-  - Point is to calibrate the assessment process so it's fair.
-  - Include senior engineers - this helps the engineers trust the process is fair, and provides critical input.
-
-- After Calibrations:
-  - No surprises to the engineers, they should already be aware of their rating as it's been provided consistently.
-  - Provide as much feedback to engineers after the process, owning the message.
-  - Focus on growth plans (see above sections)
-
-Your role when representing people:
-
-- Gather data on what happened through the evaluation period. Gather more data on things that surprise you (like peer feedback, or accomplishments you wer enot aware of)
-- Present it as well as possible
-- Ensure the presentation is evaluated fairly by seeking feedback and focusing on fairness.
-- Calibrate yourself to ensure
-
-a post on preparing for calibrations
-
-### Performance reviews the pain and the suffering
-
-_I'm calling Performance reviews PSCs below, translate to your own company's process_
-
-For managers, PSCs are the super bowl, tight timelines, high stress, and high stakes. This leads to pain and suffering. First, a quick note on pain and suffering. Pain is a signal telling you need to act/pay attention. Suffering is the story you tell yourself, with such unhelpful attributes like practicing failure in advance and judging yourself from the past.
-
-The pains of the PSC - _Pain is a good thing, it tells you to pay attention, and act_
-
-- Take a lot of time to write
-- Have very high consequences for the individuals involved
-- One slip can cause big issues
-
-The things I suffer about during PSCs - _Suffering is unhelpful, try to avoid it_
-
-- Someone gets a bad outcome because I :
-
-  - didn't give them the right opportunity or sufficient feedback
-  - missed something critical during the year that I should have caught
-  - wrote the packet poorly, or presented the packet poorly (or both)
-  - found new information while presenting the packet
-  - procrastinated and didn't get everything done
-
-- As a result I am:
-  - screwing over the people who trust me most
-  - bad manager
-  - getting a well deserved bad review
-
-How to reduce pain and suffering. _Have no confusion, I rarely do these, but I wish I did_
-
-- Treat your own packet, just like those of your employees.
-  - Yes, that means you're writing your own review.
-  - Leave place holders that you'll fill in when you get data from what the folks you support did.
-  - It helps your boss know what you did, present it easier, and see expectations miss matches (likely needing more data from you).
-  - All the rules below also apply.
-- Update packets through the year. No wordsmithing.
-  - At least quarterly, monthly is better.
-  - Otherwise you won't remember.
-  - Quickly course correct.
-  - Include feedback you're getting.
-  - Bonus point for including what you plan to do.
-- Block your calender at work, and tell your family you're working nights and weekends
-  - Set expectation this will take 110% of your energy.
-  - Ensure your family knows and can support you.
-  - Remove all other stressors from your life at this time.
-- Prioritize packets by difficulty and impact
-  - Don't spend much time on mid-band no debate packets.
-  - Spend a lot of time on borderline packets.
-  - Spend a lot of time on promo packets, especially at the higher levels.
-  - Spend lots of time when there are misses.
-- Only think about a person's packet and calibrations when writing their packet.
-  - You can lose so much energy by ruminating on the suffering above.
-  - It's super hard, but if you catch yourself, tell yourself if I want to think about packets, I need to have my editor open and looking at a packet. Otherwise I need to think about something else.
-- Only work on one packet at a time
-  - Need to have a sense of progress/completion.
-  - No switching mid section/person.
-  - Only work on one section at a time.
-  - You are allowed to copy good sections from other packets.
-- Do 3 versions of a packet
-  - Need to have a sense of progress/completion.
-  - Spinning on wording early is pointless. And it's stressful.
-  - Wordsmithing something you won't keep is just procrastination.
-  - First version gather all the evidence, relevant ideas, ask folks you support for more evidence here.
-  - Second version: put it into rough sentences; go over it with another manager.
-  - Third version: make this one good. It's near final. Get a final review with other managers.
-- Make a very granular schedule, including when you're talking to people
-  - I schedule 3 blocks a day, including who's packet, what section and what draft.
-  - I schedule time to get feedback from the people you support.
-  - I schedule time to get feedback from other providers.
-  - I schedule time to review with tech leads.
-  - I schedule time to do mock calibrations.
-- Get support from other EMs
-  - Everyone can see our situations better then we can.
-  - Talk to other EMs for support.
-
 ### Recall career is just one part of your life
 
 Often, when folks think of career development, they fixate on their job title and compensation. Those aspects are important, but I encourage folks I support that career is only [one aspect of life](https://bit.ly/igor-wlb-manifesto), and they should look at their life holistically
@@ -1285,19 +1171,136 @@ Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are sta
 - ### Best hire of your career
 -->
 
-## Performance Management, URA and PIPs
+## Performance Management
 
-### Some terms
+### Performance Reveiws: Calibrations PSC, OLR, Connections
+
+[Performance reviews](https://imwrightshardcode.com/2021/06/discussing-rewards-for-people/) exist at most companies (I've been through Connects at MSFT, OLR at AMZN and PSC at FB), and for good reason they:
+
+- Ensure performance is evaluated consistently and
+- Force feedback
+- Distribute compensation in accordance to impact
+- Validate growth plans and find opportunities across the organization
+- Assess bottom performers and ensure action is taken
+
+### Best Practices For Performance Reviews
+
+- Before Calibrations:
+
+  - Continue seeking feedback for team members, and anonymizing and providing feedback
+  - Continue explaining how tracking is occurring
+  - Do mid-point checkins and peer manager review for hard situations (e.g. bottom performers and pending promotions)
+  - Consistent presentation template - this makes it easy for everyone to assess the presentation of people
+  - Remind engineers you might find new data late, and what you do that could change their assessment
+
+- At the start of every calibration session. Reminder that:
+
+  - Confidentiality is critical - Amazon says breaking confidentiality is a firing offense, which is great.
+  - Reminder of the importance of catching unconscious bias.
+  - Point is to calibrate the assessment process so it's fair.
+  - Include senior engineers - this helps the engineers trust the process is fair, and provides critical input.
+
+- After Calibrations:
+  - No surprises to the engineers, they should already be aware of their rating as it's been provided consistently.
+  - Provide as much feedback to engineers after the process, owning the message.
+  - Focus on growth plans (see above sections)
+
+Your role when representing people:
+
+- Gather data on what happened through the evaluation period. Gather more data on things that surprise you (like peer feedback, or accomplishments you wer enot aware of)
+- Present it as well as possible
+- Ensure the presentation is evaluated fairly by seeking feedback and focusing on fairness.
+- Calibrate yourself to ensure
+
+a post on preparing for calibrations
+
+### The pain and the suffering of performance reviews
+
+_I'm calling Performance reviews PSCs below, translate to your own company's process_
+
+For managers, PSCs are the super bowl, tight timelines, high stress, and high stakes. This leads to pain and suffering. First, a quick note on pain and suffering. Pain is a signal telling you need to act/pay attention. Suffering is the story you tell yourself, with such unhelpful attributes like practicing failure in advance and judging yourself from the past.
+
+The pains of the PSC - _Pain is a good thing, it tells you to pay attention, and act_
+
+- Take a lot of time to write
+- Have very high consequences for the individuals involved
+- One slip can cause big issues
+
+The things I suffer about during PSCs - _Suffering is unhelpful, try to avoid it_
+
+- Someone gets a bad outcome because I :
+
+  - didn't give them the right opportunity or sufficient feedback
+  - missed something critical during the year that I should have caught
+  - wrote the packet poorly, or presented the packet poorly (or both)
+  - found new information while presenting the packet
+  - procrastinated and didn't get everything done
+
+- As a result I am:
+  - screwing over the people who trust me most
+  - bad manager
+  - getting a well deserved bad review
+
+How to reduce pain and suffering. _Have no confusion, I rarely do these, but I wish I did_
+
+- Treat your own packet, just like those of your employees.
+  - Yes, that means you're writing your own review.
+  - Leave place holders that you'll fill in when you get data from what the folks you support did.
+  - It helps your boss know what you did, present it easier, and see expectations miss matches (likely needing more data from you).
+  - All the rules below also apply.
+- Update packets through the year. No wordsmithing.
+  - At least quarterly, monthly is better.
+  - Otherwise you won't remember.
+  - Quickly course correct.
+  - Include feedback you're getting.
+  - Bonus point for including what you plan to do.
+- Block your calender at work, and tell your family you're working nights and weekends
+  - Set expectation this will take 110% of your energy.
+  - Ensure your family knows and can support you.
+  - Remove all other stressors from your life at this time.
+- Prioritize packets by difficulty and impact
+  - Don't spend much time on mid-band no debate packets.
+  - Spend a lot of time on borderline packets.
+  - Spend a lot of time on promo packets, especially at the higher levels.
+  - Spend lots of time when there are misses.
+- Only think about a person's packet and calibrations when writing their packet.
+  - You can lose so much energy by ruminating on the suffering above.
+  - It's super hard, but if you catch yourself, tell yourself if I want to think about packets, I need to have my editor open and looking at a packet. Otherwise I need to think about something else.
+- Only work on one packet at a time
+  - Need to have a sense of progress/completion.
+  - No switching mid section/person.
+  - Only work on one section at a time.
+  - You are allowed to copy good sections from other packets.
+- Do 3 versions of a packet
+  - Need to have a sense of progress/completion.
+  - Spinning on wording early is pointless. And it's stressful.
+  - Wordsmithing something you won't keep is just procrastination.
+  - First version gather all the evidence, relevant ideas, ask folks you support for more evidence here.
+  - Second version: put it into rough sentences; go over it with another manager.
+  - Third version: make this one good. It's near final. Get a final review with other managers.
+- Make a very granular schedule, including when you're talking to people
+  - I schedule 3 blocks a day, including who's packet, what section and what draft.
+  - I schedule time to get feedback from the people you support.
+  - I schedule time to get feedback from other providers.
+  - I schedule time to review with tech leads.
+  - I schedule time to do mock calibrations.
+- Get support from other EMs
+  - Everyone can see our situations better then we can.
+  - It helps make us objective
+  - It gets us over some things we're stuck on by drawing out our reasoning and correcting our faultly logic.
+  - It'll remind you of your responsibilities and the employee's contibutions to situations
+
+### Some definitions for low performers
 
 You'll often find the following words used in these discussions.
 
-Performance Mangement - the general process of ensuring the team is high performing. Usually refers to having no low performers on the team.
-Managing out - Going through the PIP process with an employee.
-Up or Out - The term indicating the employee either improves, or will be managed out.
-URA - UnRegretted Attrition. A person who is no longer at the company, and that's not regrettable
-PIP - Process improvement plan. The formal final process of performance management. Performance expectations are clearly documented for employee and manager, and if the employee does not improve, they will be terminated.
+- Performance Mangement - the general process of ensuring the team is high performing. Usually refers to having no low performers on the team.
+- Managing out - Going through the PIP process with an employee.
+- Up or Out - The term indicating the employee either improves, or will be managed out.
+- URA - UnRegretted Attrition. A person who is no longer at the company, and that's not regrettable
+- PIP - Process improvement plan. The formal final process of performance management. Performance expectations are clearly documented for employee and manager, and if the employee does not improve, they will be terminated.
 
-### Performance Management
+### Performance Management for low performers
 
 TL;DR: Performance Management is a good thing. There is a natural percent of people who are URA, and left to their own discretion many managers will not let go the full set of these people. At a large scale (100's of employees), and for periods of time (like during times of massive hiring), setting a URA ratio is a good thing. The key is enforcing it at a large scale, and having guard rails to make it objectively fair, and giving employees the ability to improve.
 
