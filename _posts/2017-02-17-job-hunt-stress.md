@@ -45,7 +45,7 @@ Before we get started, skim [decisive](/decisive) and listen to [switching jobs 
 
 **Lack of confidence**
 
-- Study for technical interviews - Study [Elements of Programming Interviews](https://www.amazon.com/dp/1479274836/?tag=javamysqlanta-20), [system design questions](https://github.com/donnemartin/system-design-primer), [modern developer tools](https://github.com/kamranahmedse/developer-roadmap) and [hacking the SDE interview](https://tianpan.co/hacking-the-software-engineer-interview/). Expect to spend 4-8 hours a week for 4 to 8 weeks. The longer it's been since you've interviewed last, the longer this will take.
+- Study for technical interviews - Study [Elements of Programming Interviews](https://www.amazon.com/dp/1479274836/?tag=javamysqlanta-20), [system design questions](/system-design), [modern developer tools](https://github.com/kamranahmedse/developer-roadmap) and [hacking the SDE interview](https://tianpan.co/hacking-the-software-engineer-interview/). Expect to spend 4-8 hours a week for 4 to 8 weeks. The longer it's been since you've interviewed last, the longer this will take.
 - Buy a full size whiteboard. Practice answering questions on it. I'm not kidding.
 - Prepare for behavioral questions - Think through your previous projects for situations that demonstrate leadership, confidence, team building and be prepared to discuss them.
 - Do mock interviews - ask your friends and colleagues to interview you. You should fail the first few mock interviews it's normal.
