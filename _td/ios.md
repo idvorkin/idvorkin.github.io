@@ -101,11 +101,13 @@ tbd
 
 ### Air Pods Pro
 
-OMG - This is amazing, tune audio to an audiograph (and take one too)
+OMG - This is amazing, you can customize yoru AirPods with your hearing test results (AudioGraph)!!!
 
-AirPods Settings->Accessibility->audio accessibility settings->Headphone Accommodations->transparency mode. (Create an audiogram for the health app if you haven’t yet and customize the AirPods for that to get started, everyone with any AirPods should do this, it makes everything better including transparency and ANC). Use the [mimo  app](https://mimi.io/)
+First, create an AudioGraph using mimo app, and write it to apple health! [mimo app](https://mimi.io/)! You need to be able to see the hearing test in apple health.
 
-There are sliders for environmental noises and other customizations that should help. Idk why it’s the most hidden thing.
+Next go to AirPods Settings->Accessibility->audio accessibility settings->Headphone Accommodations->transparency mode. If you added an audio graph, it wil be available to use.
+
+There are also sliders for environmental noises and other customizations that should help under accessiblitiy.
 
 ## Apps
 
