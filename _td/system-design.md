@@ -1,6 +1,9 @@
 ---
 layout: post
 title: System Design Questions
+permalink: /system-design
+redirect-from:
+  - /systemdesign
 ---
 
 As a technologist I love system designs. I like to tell interview candidates you don't need to practice them, it's what you do every day. In fact, it's one of the favorite parts of my technical role. I never liked crossword puzzles, but I could totally do system design problems instead. Here's a great list ..
@@ -99,6 +102,6 @@ Most of these are copied from the system design interview books/tutorials.
 
 ### System design resources
 
-TODO: Add Links to Books
-TODO: Add Links to web syites
-TODO: LInk to some of my interview pages
+Online: - <https://github.com/donnemartin/system-design-primer>
+
+Add Links to Books \* System Design Interviews 1 and 2
