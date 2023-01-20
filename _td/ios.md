@@ -23,6 +23,7 @@ I spent a **LOT** of time on my iPhone/iPad - here are some of the tools/tips I 
     - [HomeKit](#homekit)
     - [Health Kit](#health-kit)
     - [Photos](#photos)
+    - [Air Pods Pro](#air-pods-pro)
 - [Apps](#apps)
     - [All](#all)
     - [Chrome](#chrome)
@@ -97,6 +98,14 @@ tbd
 - Take picture by pressing volume up.
 - Hey Siri take a selfie
 - App: LightX
+
+### Air Pods Pro
+
+OMG - This is amazing, tune audio to an audiograph (and take one too)
+
+AirPods Settings->Accessibility->audio accessibility settings->Headphone Accommodations->transparency mode. (Create an audiogram for the health app if you haven’t yet and customize the AirPods for that to get started, everyone with any AirPods should do this, it makes everything better including transparency and ANC). Use the [mimo  app](https://mimi.io/)
+
+There are sliders for environmental noises and other customizations that should help. Idk why it’s the most hidden thing.
 
 ## Apps
 
