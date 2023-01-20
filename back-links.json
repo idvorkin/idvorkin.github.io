@@ -1280,7 +1280,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2022-12.md",
-            "doc_size": 20000
+            "doc_size": 21000
         },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
@@ -2094,7 +2094,8 @@
                 "/bmy",
                 "/comp",
                 "/decisive",
-                "/job"
+                "/job",
+                "/system-design"
             ],
             "incoming_links": [
                 "/bmy",
@@ -2247,7 +2248,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 120000
+            "doc_size": 129000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -3012,6 +3013,20 @@
             "markdown_path": "_d/7h-c6.md",
             "doc_size": 10000
         },
+        "/system-design": {
+            "py/object": "__main__.Page",
+            "url": "/system-design",
+            "title": "System Design Questions",
+            "description": "As a technologist I love system designs. I like to tell interview candidates you don’t need to practice them, it’s what you do every day. In fact, it’s one of the favorite parts of my technical role. I never liked crossword puzzles, but I could totally do system design problems instead. Here’s a great list ..\n\n",
+            "file_path": "_site/system-design.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/job-hunt-stress"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_td/system-design.md",
+            "doc_size": 13000
+        },
         "/taas": {
             "py/object": "__main__.Page",
             "url": "/taas",
@@ -3456,7 +3471,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/enjoy2.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/tools": {
             "py/object": "__main__.Page",
@@ -3472,7 +3487,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/tool.md",
-            "doc_size": 46000
+            "doc_size": 47000
         },
         "/touching": {
             "py/object": "__main__.Page",
