@@ -14,41 +14,67 @@ Most of these are copied from the system design interview books/tutorials.
 
 <!-- vim-markdown-toc GFM -->
 
-- [Why do these?](#why-do-these)
-- [For all system design questions](#for-all-system-design-questions)
-- [Proximity Service](#proximity-service)
-- [Nearby Friends](#nearby-friends)
-- [Google Maps](#google-maps)
-- [Distributed Message Queue](#distributed-message-queue)
-- [Metrics Monitoring and Alerting System](#metrics-monitoring-and-alerting-system)
-- [Ad Click Event Aggregation](#ad-click-event-aggregation)
-- [Hotel Reservation System](#hotel-reservation-system)
-- [Distributed Email Service](#distributed-email-service)
-- [S3-like Object Storage](#s3-like-object-storage)
-- [Real-time Gaming Leaderboard](#real-time-gaming-leaderboard)
-- [Payment System](#payment-system)
-- [Digital Wallet](#digital-wallet)
-- [Stock Exchange](#stock-exchange)
-- [Rate limiter](#rate-limiter)
-- [Consistent hashing](#consistent-hashing)
-- [Key-value store](#key-value-store)
-- [Unique id generator](#unique-id-generator)
-- [Url shortener](#url-shortener)
-- [Web crawler](#web-crawler)
-- [Notification system](#notification-system)
-- [News feed system](#news-feed-system)
-- [Chat system](#chat-system)
-- [Search Auto Complete](#search-auto-complete)
-- [Youtube](#youtube)
-- [Google Drive](#google-drive)
-- [System design resources](#system-design-resources)
+- [Theory](#theory)
+    - [Why do these?](#why-do-these)
+    - [For all system design questions](#for-all-system-design-questions)
+- [Tech](#tech)
+    - [SQL vs No-SQL](#sql-vs-no-sql)
+    - [Poll/Pull vs Push](#pollpull-vs-push)
+- [Use cases](#use-cases)
+    - [Proximity Service](#proximity-service)
+    - [Nearby Friends](#nearby-friends)
+    - [Google Maps](#google-maps)
+    - [Distributed Message Queue](#distributed-message-queue)
+    - [Metrics Monitoring and Alerting System](#metrics-monitoring-and-alerting-system)
+    - [Ad Click Event Aggregation](#ad-click-event-aggregation)
+    - [Hotel Reservation System](#hotel-reservation-system)
+    - [Distributed Email Service](#distributed-email-service)
+    - [S3-like Object Storage](#s3-like-object-storage)
+    - [Real-time Gaming Leaderboard](#real-time-gaming-leaderboard)
+    - [Payment System](#payment-system)
+    - [Digital Wallet](#digital-wallet)
+    - [Stock Exchange](#stock-exchange)
+    - [Rate limiter](#rate-limiter)
+    - [Consistent hashing](#consistent-hashing)
+    - [Key-value store](#key-value-store)
+    - [Unique id generator](#unique-id-generator)
+    - [Url shortener](#url-shortener)
+    - [Web crawler](#web-crawler)
+    - [Notification system](#notification-system)
+    - [News feed system](#news-feed-system)
+    - [Chat system](#chat-system)
+    - [Search Auto Complete](#search-auto-complete)
+    - [Youtube](#youtube)
+    - [Google Drive](#google-drive)
+- [Resources](#resources)
+    - [System design resources](#system-design-resources)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
+## Theory
+
 ### Why do these?
 
 ### For all system design questions
+
+## Tech
+
+### SQL vs No-SQL
+
+### Poll/Pull vs Push
+
+_What to call this?_
+
+Polling - Wake up every 'k' seconds and ask
+
+Push - Usually better (always?), only down side is harder to implement, more server load?
+
+Long Poll - Open a http request, leave it open for a while then answer on the server. - Weird hack - What if client dies
+
+Bi-directional - E.g. WebSocket (ideal) - Ideal - Setup over HTTP - Traverses Fire walls
+
+## Use cases
 
 ### Proximity Service
 
@@ -94,11 +120,20 @@ Most of these are copied from the system design interview books/tutorials.
 
 ### Chat system
 
+- 1:1 vs Group
+- Online vs Offlie
+- External Notification System
+- Presence
+  - How to detect user is no longer online
+  - How to propagate presence to other users (similar to propagate messages)
+
 ### Search Auto Complete
 
 ### Youtube
 
 ### Google Drive
+
+## Resources
 
 ### System design resources
 
