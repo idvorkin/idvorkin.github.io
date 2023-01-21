@@ -16,10 +16,24 @@ Most of these are copied from the system design interview books/tutorials.
 
 - [Theory](#theory)
     - [Why do these?](#why-do-these)
-    - [For all system design questions](#for-all-system-design-questions)
-- [Tech](#tech)
+- [For All System Design Qs](#for-all-system-design-qs)
+    - [Users and Use Cases](#users-and-use-cases)
+    - [High Level Design](#high-level-design)
+    - [APIs](#apis)
+    - [Data](#data)
+    - [Connections](#connections)
+    - [Throughput/Availability](#throughputavailability)
+    - [Capacity/Constraints](#capacityconstraints)
+    - [Regionalization I18N](#regionalization-i18n)
+    - [Non Functional requriemetns](#non-functional-requriemetns)
+    - [Capacity Estimation](#capacity-estimation)
+    - [Money: Monetization + COGS](#money-monetization--cogs)
+- [Other posts](#other-posts)
+    - [Design and Architecture](#design-and-architecture)
+    - [Cloud first applications](#cloud-first-applications)
+    - [Data Systems](#data-systems)
+    - [Security](#security)
     - [SQL vs No-SQL](#sql-vs-no-sql)
-    - [Poll/Pull vs Push](#pollpull-vs-push)
 - [Use cases](#use-cases)
     - [Proximity Service](#proximity-service)
     - [Nearby Friends](#nearby-friends)
@@ -56,13 +70,17 @@ Most of these are copied from the system design interview books/tutorials.
 
 ### Why do these?
 
-### For all system design questions
+## For All System Design Qs
 
-## Tech
+### Users and Use Cases
 
-### SQL vs No-SQL
+### High Level Design
 
-### Poll/Pull vs Push
+### APIs
+
+### Data
+
+### Connections
 
 _What to call this?_
 
@@ -73,6 +91,70 @@ Push - Usually better (always?), only down side is harder to implement, more ser
 Long Poll - Open a http request, leave it open for a while then answer on the server. - Weird hack - What if client dies
 
 Bi-directional - E.g. WebSocket (ideal) - Ideal - Setup over HTTP - Traverses Fire walls
+
+TCP vs UDP
+
+WebSocket vs HTTP/2 + Server Side Events (SSE)
+
+### Throughput/Availability
+
+- Load balancing/bottlenecks/fault points
+- Caching, purging, replication, consistency
+- Serving data from edge CDN
+
+### Capacity/Constraints
+
+- Capacity
+- Scale and usage estimates (include memory, data transmission)
+
+### Regionalization I18N
+
+- Per locale laws
+- Languages
+- Data practices
+- Geo-distributed
+- Edge/CDN
+
+### Non Functional requriemetns
+
+- Latency
+- Scalability
+- Availability
+- Reliability
+- Observability
+  - Test ability
+  - Monitoring
+  - Metrics
+  - Logging
+  - Alarming
+- Deployment
+- Supportability
+- Non Functional Requirements
+  - Security, authentication, authorization
+
+### Capacity Estimation
+
+### Money: Monetization + COGS
+
+## Other posts
+
+### Design and Architecture
+
+{%include summarize-page.html src="/design" %}
+
+### Cloud first applications
+
+{%include summarize-page.html src="/td/cloud-first-applications" %}
+
+### Data Systems
+
+{%include summarize-page.html src="/td/data-systems" %}
+
+### Security
+
+{%include summarize-page.html src="/td/better-security-design" %}
+
+### SQL vs No-SQL
 
 ## Use cases
 
