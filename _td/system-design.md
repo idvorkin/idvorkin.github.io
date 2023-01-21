@@ -31,13 +31,13 @@ Most of these are copied from the system design interview books/tutorials.
 - [Stock Exchange](#stock-exchange)
 - [Rate limiter](#rate-limiter)
 - [Consistent hashing](#consistent-hashing)
-- [key-value store](#key-value-store)
-- [unique id generator](#unique-id-generator)
-- [url shortener](#url-shortener)
-- [web crawler](#web-crawler)
-- [notification system](#notification-system)
-- [news feed system](#news-feed-system)
-- [chat system](#chat-system)
+- [Key-value store](#key-value-store)
+- [Unique id generator](#unique-id-generator)
+- [Url shortener](#url-shortener)
+- [Web crawler](#web-crawler)
+- [Notification system](#notification-system)
+- [News feed system](#news-feed-system)
+- [Chat system](#chat-system)
 - [Search Auto Complete](#search-auto-complete)
 - [Youtube](#youtube)
 - [Google Drive](#google-drive)
@@ -80,19 +80,19 @@ Most of these are copied from the system design interview books/tutorials.
 
 ### Consistent hashing
 
-### key-value store
+### Key-value store
 
-### unique id generator
+### Unique id generator
 
-### url shortener
+### Url shortener
 
-### web crawler
+### Web crawler
 
-### notification system
+### Notification system
 
-### news feed system
+### News feed system
 
-### chat system
+### Chat system
 
 ### Search Auto Complete
 

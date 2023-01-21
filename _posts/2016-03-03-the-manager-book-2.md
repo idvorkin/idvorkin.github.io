@@ -1618,6 +1618,8 @@ NOTES: - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
 
 - ### Layoffs
 
+(Some of this is copied from [Ashish](https://www.linkedin.com/pulse/being-leadermanager-hard-during-layoffs-ashish-singh?trk=public_post_feed-article-content) )
+
 Before:
 
 * Be careful about telling people you don't know anything, at some point you will, and you can and will be trapped in a lie.  (I don't know best thing to do here).
@@ -1625,6 +1627,11 @@ Before:
 * Do not tell people they will not be laid off.  Unless you know, don't.
 
 Day Of:
+
+Life suddenly seems to have slapped you hard and slowed down the day you find out your team is impacted. These are folks you have worked with in some cases for years, they came over to your team because they believed in you and your vision. The news makes you feel so small and helpless. While your heart is sinking and you are still trying to convince yourself that this is really happening, you are still expected to run the show, business as usual.
+
+The folks you support still trust you,  and want you to help them navigate through the situation, get them the answers they are looking for and you may not have any clue of what to do next.
+
 
 * Get up early and get ready.
 * This will be a very emotionally draining day.
