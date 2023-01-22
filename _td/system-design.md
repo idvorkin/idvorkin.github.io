@@ -253,6 +253,22 @@ sequenceDiagram
 
 end
 
+```mermaid
+classDiagram
+
+class FriendsDB {
+User:UserId
+Friend:UserId
+CanSee:bool
+}
+class UserLocationHistory {
+ID: AutoIncrement
+User:UserId
+Location:LocData
+Time: TimeStamp
+}
+```
+
 ## Resources
 
 ### System design resources
