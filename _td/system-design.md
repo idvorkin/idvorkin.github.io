@@ -169,6 +169,18 @@ WebSocket vs HTTP/2 + Server Side Events (SSE)
 
 ### SQL vs No-SQL
 
+Todo Link to Data Systems
+
+- [Dynamo](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ServiceQuotas.html)
+- SQL
+
+the table
+
+| Type               | TPS | Notes          |
+| ------------------ | --- | -------------- |
+| Key Value (Dynamo) | 40K | Upto 5 Indexes |
+| SQL (Aurora)       | ??  |                |
+
 ## Use cases
 
 ### Proximity Service
