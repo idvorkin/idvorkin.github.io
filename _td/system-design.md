@@ -4,6 +4,7 @@ title: System Design Questions
 permalink: /system-design
 redirect-from:
   - /systemdesign
+mermaid: True
 ---
 
 As a technologist I love system designs. I like to tell interview candidates you don't need to practice them, it's what you do every day. In fact, it's one of the favorite parts of my technical role. I never liked crossword puzzles, but I could totally do system design problems instead. Here's a great list ..
@@ -28,6 +29,8 @@ Most of these are copied from the system design interview books/tutorials.
     - [Non Functional requriemetns](#non-functional-requriemetns)
     - [Capacity Estimation](#capacity-estimation)
     - [Money: Monetization + COGS](#money-monetization--cogs)
+- [Specific Tech](#specific-tech)
+    - [Geo Approaches](#geo-approaches)
 - [Other posts](#other-posts)
     - [Design and Architecture](#design-and-architecture)
     - [Cloud first applications](#cloud-first-applications)
@@ -36,7 +39,6 @@ Most of these are copied from the system design interview books/tutorials.
     - [SQL vs No-SQL](#sql-vs-no-sql)
 - [Use cases](#use-cases)
     - [Proximity Service](#proximity-service)
-    - [Nearby Friends](#nearby-friends)
     - [Google Maps](#google-maps)
     - [Distributed Message Queue](#distributed-message-queue)
     - [Metrics Monitoring and Alerting System](#metrics-monitoring-and-alerting-system)
@@ -60,6 +62,7 @@ Most of these are copied from the system design interview books/tutorials.
     - [Search Auto Complete](#search-auto-complete)
     - [Youtube](#youtube)
     - [Google Drive](#google-drive)
+    - [Nearby Friends](#nearby-friends)
 - [Resources](#resources)
     - [System design resources](#system-design-resources)
 
@@ -106,6 +109,8 @@ WebSocket vs HTTP/2 + Server Side Events (SSE)
 
 - Capacity
 - Scale and usage estimates (include memory, data transmission)
+- There are 10e5 seconds in a day
+- Other
 
 ### Regionalization I18N
 
@@ -136,6 +141,14 @@ WebSocket vs HTTP/2 + Server Side Events (SSE)
 
 ### Money: Monetization + COGS
 
+## Specific Tech
+
+### Geo Approaches
+
+- As the crow flies - lat/long search - 2d union is expensive
+- Geo Hash - Use each digit to divide space into quadrants
+- Quad Tree - Geo Divide but so leafs are 'equal sized'
+
 ## Other posts
 
 ### Design and Architecture
@@ -159,8 +172,6 @@ WebSocket vs HTTP/2 + Server Side Events (SSE)
 ## Use cases
 
 ### Proximity Service
-
-### Nearby Friends
 
 ### Google Maps
 
@@ -214,6 +225,33 @@ WebSocket vs HTTP/2 + Server Side Events (SSE)
 ### Youtube
 
 ### Google Drive
+
+### Nearby Friends
+
+begin
+
+```mermaid
+sequenceDiagram
+    participant U as Montoring User
+    participant U2 as Moving User
+    participant W_PS as WebPubSub
+    participant FL_PS as FriendLocationPubSub
+    participant F_DB as FriendsDB
+    par Initialize Connection
+        U ->> W_PS: RegisterFriendLocationChange()
+        W_PS ->> F_DB: GetFriends()
+        W_PS ->> FL_PS: RegisterFriendLocationChange (friends)
+    end
+    par A friend changes their location, initial sub generates location
+        U2 ->> W_PS: NewLocation(location)
+        W_PS ->> FL_PS: NewLocation(U2,location)
+        FL_PS ->>  W_PS: OnFriendLocationChange
+        NOTE over W_PS: Check Close Enough <br> Coalse and Debounce
+        W_PS ->>  U: OnFriendLocationChange
+    end
+```
+
+end
 
 ## Resources
 
