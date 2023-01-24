@@ -122,6 +122,11 @@ TGUs:
 
 Video coming
 
+I'm applying a goal from a book called Kettle Bell Simple and Sinister. Targets:
+
+10x10 @ 32 KG One Arm Swings
+5x1 (each arm) @ 32KG
+
 #### What's it like waking up at 5am
 
 The Atlantic [summarized it perfectly](https://www.theatlantic.com/health/archive/2019/08/how-know-if-youre-morning-person/595990/?utm_campaign=the-atlantic&utm_medium=social)
