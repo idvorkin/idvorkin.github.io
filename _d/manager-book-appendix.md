@@ -12,30 +12,37 @@ A hodgepodge of additional resources for the manager book.
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [The whole Manager Book](#the-whole-manager-book)
-- [Google's Project Oxygen](#googles-project-oxygen)
-- [Facebook's principles](#facebooks-principles)
-- [Amazon's leadership principles](#amazons-leadership-principles)
-- [A few Igorisms](#a-few-igorisms)
-- [Laws to remember](#laws-to-remember)
-- [How you need to communicate differently](#how-you-need-to-communicate-differently)
+- [The Whole Manager Book](#the-whole-manager-book)
+- [Leadership Principles by Company](#leadership-principles-by-company)
+    - [Google's Project Oxygen](#googles-project-oxygen)
+    - [Facebook's principles](#facebooks-principles)
+    - [Amazon's leadership principles](#amazons-leadership-principles)
+    - [Grammerly](#grammerly)
+    - [Zillow](#zillow)
+- [Misc Topics](#misc-topics)
+    - [A few Igorisms](#a-few-igorisms)
+    - [Laws to remember](#laws-to-remember)
+    - [How you need to communicate differently](#how-you-need-to-communicate-differently)
 - [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
     - [Piniata](#piniata)
     - [A project is car with a EM, PM and TL](#a-project-is-car-with-a-em-pm-and-tl)
     - [An engineering team as the parts of the car](#an-engineering-team-as-the-parts-of-the-car)
     - [New hire perspective is like landing a plane](#new-hire-perspective-is-like-landing-a-plane)
-- [Great Videos](#great-videos)
-- [Great Posts and Blogs](#great-posts-and-blogs)
-- [Great books](#great-books)
+- [Other Resources](#other-resources)
+    - [Great Videos](#great-videos)
+    - [Great Posts and Blogs](#great-posts-and-blogs)
+    - [Great books](#great-books)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-### The whole Manager Book
+## The Whole Manager Book
 
 See the whole manager book:
 
 {%include summarize-page.html src="/manager-book" %}
+
+## Leadership Principles by Company
 
 ### Google's Project Oxygen
 
@@ -108,6 +115,28 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 
 **Are Right, A Lot** - Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to dis confirm their beliefs.
 
+### Grammerly
+
+- Ethical (Earn Trust; Vocally Self Critical) - Be honorable and earn trust by doing the right thing even when no one is watching, every time.
+
+- Adaptable (Invent and Simplify) - Embrace change to evolve and succeed, with a positive, problem-solving attitude.
+- Grit - (Deliver Results/Bias For Action) Achieve with passion and perseverance for goals, by doing whatever it takes to get the job done, whenever it’s necessary.
+- Ethical (Earn Trust) - Treat others as they want to be treated to work well together, by actively listening to put yourself in their shoes and then responding accordingly.
+- Remarkable (Learn and Be Curious) - Always be learning to develop quickly and be exceptional yet humble, by continually seeking out mentors and learning opportunities.
+
+### Zillow
+
+<https://www.geekwire.com/2016/zillow-built-culture-around-6-core-values-empower-employees/>
+
+- Act with integrity
+- Move Fast, THink Big
+- Own it
+- Zillow is a team sport
+- Turn on the lights
+- Winning is fun
+
+## Misc Topics
+
 ### A few Igorisms
 
 1. I come across as confident, that's just a personality flaw. Please don't confuse my confidence with my conviction, and push back.
@@ -168,26 +197,28 @@ The most dangerous thing you can do is the "ah shucks, I'm the same person I alw
 
 You have more power. Be responsible with it.
 
-### Analogies to be fleshed out
+## Analogies to be fleshed out
 
-#### Piniata
+### Piniata
 
 The need for maturity and alignment
 
-#### A project is car with a EM, PM and TL
+### A project is car with a EM, PM and TL
 
 The need for variable engagement
 
-#### An engineering team as the parts of the car
+### An engineering team as the parts of the car
 
 PM - Navigator and long term radar
 EM - Shock absorbers, mid term radar, swerve system
 Specific team members for engine, seat belts, etc
 
-#### New hire perspective is like landing a plane
+### New hire perspective is like landing a plane
 
 - When joining high altitude can see the city
 - Once landed, all you can see is the air port and a few streets
+
+## Other Resources
 
 ### Great Videos
 
