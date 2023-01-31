@@ -26,6 +26,7 @@ A hodgepodge of additional resources for the manager book.
 - [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
     - [Piniata](#piniata)
     - [A project is car with a EM, PM and TL](#a-project-is-car-with-a-em-pm-and-tl)
+    - [Magic Tricks vs Balloon Animals (Effort vs Impact)](#magic-tricks-vs-balloon-animals-effort-vs-impact)
     - [An engineering team as the parts of the car](#an-engineering-team-as-the-parts-of-the-car)
     - [New hire perspective is like landing a plane](#new-hire-perspective-is-like-landing-a-plane)
 - [Other Resources](#other-resources)
@@ -206,6 +207,8 @@ The need for maturity and alignment
 ### A project is car with a EM, PM and TL
 
 The need for variable engagement
+
+### Magic Tricks vs Balloon Animals (Effort vs Impact)
 
 ### An engineering team as the parts of the car
 
