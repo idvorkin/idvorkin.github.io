@@ -10,7 +10,7 @@ redirect_from:
   - /resistance
 ---
 
-Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if you tried, you wouldn't. Before you turned on the water, you'd have this irrational fear of stepping in and you wouldn't do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity. The resistance is the enemy of progress.
+Stop. Take an ice cold shower right now. You didn't, did you? Trust me, even if you tried, you wouldn't. Before you turned on the water, you'd have this irrational fear of stepping in and you wouldn't do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard when they are not. The resistance adds suffering when there is minimal pain and that confuses us, stopping us from doing things which give us the most value, joy and positive identity. The resistance is the enemy of progress.
 
 The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf).
 
@@ -18,7 +18,7 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
 
 <!-- vim-markdown-toc GFM -->
 
-- [The resistance is what stops us from doing the important](#the-resistance-is-what-stops-us-from-doing-the-important)
+- [The resistance is what stops us from doing the important things](#the-resistance-is-what-stops-us-from-doing-the-important-things)
     - [Pain vs Suffering](#pain-vs-suffering)
     - [At the extreme - Addiction](#at-the-extreme---addiction)
     - [Magic Tricks for strangers](#magic-tricks-for-strangers)
@@ -40,7 +40,7 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## The resistance is what stops us from doing the important
+## The resistance is what stops us from doing the important things
 
 ### Pain vs Suffering
 
@@ -52,9 +52,9 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
 
 ### Magic Tricks for strangers
 
-[Magician](/magic) is one of my treasured identities. Few things make me happier then doing magic, but the resistance battles me here constantly.
+[Magician](/magic) is one of my treasured identities. Few things make me happier than doing magic, but the resistance battles me here constantly.
 
-The hardest part of magic, the hardest part by a mile, the #1 thing that stops me from doing magic is asking someone if they want to see a magic trick. 9 out of 10 people say yes. For the 1 of 10 who say no, I've wasted less then 15s of their time (and mine).
+The hardest part of magic, the hardest part by a mile, the #1 thing that stops me from doing magic is asking someone if they want to see a magic trick. 9 out of 10 people say yes. For the 1 of 10 who say no, I've wasted less than 15s of their time (and mine).
 
 But I always freeze before asking someone if they want to see a trick, sometimes the resistance talks me out of doing it quickly, sometimes it fights me for minutes, sometimes, maybe 10% of the time, I can fight through the resistance, and ask, and then perform my trick, for their enjoyment.
 
@@ -88,7 +88,7 @@ To remind me the resistance is a huge enemy, I do a polar bear plunge every new 
 
 ### Cold Exposure and Physiology - The science behind jump in the lake day
 
-Pretty cool discussion of cold exposure and its brain chemsistry defences using andreniline and how deliberately fighting the adreniline can build your fight against the resistance. Kind of the science behind
+Pretty cool discussion of cold exposure and its brain chemistry defences using adrenaline and how deliberately fighting the adrenaline can build your fight against the resistance. Kind of the science behind.
 
 <https://www.youtube.com/watch?v=pq6WHJzOkno>
 
