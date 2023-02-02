@@ -3,9 +3,8 @@ layout: post
 title: "My thoughts on Facebook"
 permalink: /facebook
 redirects_from:
-    - /meta
-    - /fb
-
+  - /meta
+  - /fb
 ---
 
 Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook
@@ -44,6 +43,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
     - [AR: Having fun and reducing the burden of attention](#ar-having-fun-and-reducing-the-burden-of-attention)
     - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
 - [From Facebook to Meta and the metaverse:](#from-facebook-to-meta-and-the-metaverse)
+    - [Why is the metaverse taking so long](#why-is-the-metaverse-taking-so-long)
 - [Core Values (LP's)](#core-values-lps)
     - [Focus on Impact](#focus-on-impact)
     - [Move Fast](#move-fast)
@@ -82,7 +82,7 @@ NOTE: I did bootcamp through Pandemic 1 so my experience might be a bit differen
 
 The best I've ever used. As I learn what is public and private I'll share more details.
 
-### Why they're so good.
+### Why they're so good
 
 I don't know for sure, but I suspect a few things:
 
@@ -125,7 +125,7 @@ This will be an area I write lots as it's this is some of Facebook's unique valu
 
 Instead, they help employees evaluate what projects they should use. They clarify the needs of the team and larger org, and help employees evaluate which projects are a good fit for their interests, the business, and their growth needs. It is the employees choice though, and regardless of their choice the manager will help the employee be successful.
 
-### Inclusion and Diversity.
+### Inclusion and Diversity
 
 At AMZN, I was in the inclusion bar raiser program, which was in it's infancy, so a huge contrast.
 
@@ -183,13 +183,11 @@ I was very skeptical of this at first, and always concerned I'd miss something, 
   - The algo can bubble up comments by people you follow
   - I can't articulate why this is good, but it really is.
 
-<!--
 ### The Trio: Engineering, Product Management and Data Science
--->
 
 ## The peculiar
 
-### Monorepo.
+### Monorepo
 
 Peculiar when you come from large companies other then Google.
 
@@ -241,7 +239,7 @@ Relative to MSFT and AMZN folks are very concerned about reviews. I've debugged 
 
 ### Bonus leanings at Facebook
 
-##  From Facebook to Meta and the metaverse:
+## From Facebook to Meta and the metaverse
 
 There are lots of jokes about the metaverse, but I'm a big fan, I'll I'll tell you why.
 
@@ -251,6 +249,10 @@ Annoyed, buy hey that's why we hire college hires, to get new ideas. Took 20 min
 Next, open of horizon worlds ... creator ... showed me how to configure correctly, told me about art ...
 
 In 2022, lord of the rings. How do we solve thi sim the real world? Identity and social norm.s Group chats are like this.
+
+### Why is the metaverse taking so long
+
+<https://www.matthewball.vc/all/why-vrar-gets-farther-away-as-it-comes-into-focus>
 
 ## Core Values (LP's)
 
