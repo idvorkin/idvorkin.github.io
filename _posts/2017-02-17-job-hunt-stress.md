@@ -137,3 +137,7 @@ During your day job - your lowest priority
 
 - You need to be OK doing a worse job at work then normal, even though it’s going to be painful, that’s the correct priority.
 - Tell your boss (and if needed co-workers) you have some personal stuff you need to be taking care of so may need to reduce output and get extra support.
+
+During your the whole process - cut yourself some slack.
+
+{%include summarize-page.html src="/interviewsarehard" %}
