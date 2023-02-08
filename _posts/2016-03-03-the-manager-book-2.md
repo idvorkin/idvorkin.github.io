@@ -114,6 +114,7 @@ This post uses the word manager, but the most topics apply to all software job f
     - [The who and how of performance management](#the-who-and-how-of-performance-management)
     - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
     - [How do handle poor communication, ESL, ineffective communication in some modalities](#how-do-handle-poor-communication-esl-ineffective-communication-in-some-modalities)
+- [Cross Org Influence](#cross-org-influence)
 - [Team Insecurity](#team-insecurity)
     - [Everyone wants to feel supported](#everyone-wants-to-feel-supported)
     - [Maintain perspective](#maintain-perspective)
@@ -1397,6 +1398,24 @@ Some tools I've seen used:
 Examples for employees who don't like being vocal in a meeting can be to provide feedback before/after the meeting.
 
 For folks who can get flustered representing their work in standups, pre-write their updates and read them during the meeting.
+
+## Cross Org Influence
+
+- Through process build relationships and earn trust
+- "Start with why" and seek first to understand,
+  - As many touch points as possible EM/PM/TLS
+  - Maintain EM/EM ad-hoc channel for risks and concerns
+  - Periodic meetings with key players, tell them you want to listen
+- Next up "What" - Win/Win or No deal, Getting to Yes
+  - Balance short and long term goals
+  - Find growth opportunities for folks executing from both teams
+  - Agree on shared goals
+- Agree on Shared Goals
+- Exec Buy-In on Shared Goals
+- How, When, and Who (in that order) - Approach, Dates, People allocation
+- All plans change when you're punched in the face
+  - Execution Tracking
+  - Flex funding cross org
 
 ## Team Insecurity
 
