@@ -122,7 +122,7 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 
 - Adaptable (Invent and Simplify) - Embrace change to evolve and succeed, with a positive, problem-solving attitude.
 - Grit - (Deliver Results/Bias For Action) Achieve with passion and perseverance for goals, by doing whatever it takes to get the job done, whenever it’s necessary.
-- Ethical (Earn Trust) - Treat others as they want to be treated to work well together, by actively listening to put yourself in their shoes and then responding accordingly.
+- Empathy (Earn Trust) - Treat others as they want to be treated to work well together, by actively listening to put yourself in their shoes and then responding accordingly.
 - Remarkable (Learn and Be Curious) - Always be learning to develop quickly and be exceptional yet humble, by continually seeking out mentors and learning opportunities.
 
 ### Zillow
