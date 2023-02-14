@@ -1410,6 +1410,7 @@ For folks who can get flustered representing their work in standups, pre-write t
   - Balance short and long term goals
   - Find growth opportunities for folks executing from both teams
   - Agree on shared goals
+    -Common Currency
 - Agree on Shared Goals
 - Exec Buy-In on Shared Goals
 - How, When, and Who (in that order) - Approach, Dates, People allocation
