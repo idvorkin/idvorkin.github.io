@@ -56,6 +56,7 @@ A collection of tips, tricks and pointers of the various tools i use
 - [Switching between Unix and DOS file ending](#switching-between-unix-and-dos-file-ending)
 - [Spelling](#spelling)
 - [Web scripting](#web-scripting)
+- [Document conversion - Pandoc](#document-conversion---pandoc)
 - [Programming Helpers](#programming-helpers)
     - [howdoi](#howdoi)
 - [Excalidraw](#excalidraw)
@@ -549,6 +550,11 @@ var customWindow = window.open("https://youtube.com", "_blank", "");
 // Close tab in 2 hours
 setTimeout(() => customWindow.close(), 1000 * 60 * 120);
 ```
+
+### Document conversion - Pandoc
+
+HMTL to markdown
+pandoc x.html -t gfm-raw_html -f html > lawsofpower.md
 
 ### Programming Helpers
 
