@@ -20,7 +20,19 @@ Staying warm is important, here's the gear I use on and off the bike
 
 I get cold lots, here are some of the products I use to stay warm.
 
-**USB [Hand Warmers](http://www.amazon.com/EnergyFlux-4400mAh-Rechargeable-Double-Sided-External/dp/B00G4VQ6CA/ref=sr_1_4?s=sporting-goods&ie=UTF8&qid=1448076345&sr=1-4&keywords=usb+hand+warmer) -** It's pretty awesome to be able to warm up your hands in a jiffy. It doubles as a battery charger as well. They also come in a [larger size](http://www.amazon.com/EnergyFlux-Enduro-7800mAh-Rechargeable-double-sided/dp/B00Q7Q2KFO/ref=pd_sim_468_2?ie=UTF8&dpID=41obvKhFEiL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=197N5FQ1VKS71HSJCR1D), I haven't decide which size I like more, but I always have a pair in my pants - they are awesome.
+#### USB heated jacket - I love this
+
+KOVNLO Heated Vest for Men, 4in1 Smart Controller, Lightweight insulated Electric Vest with Battery Pack Included <https://a.co/d/2eCVo3I>
+
+{%include amazon.html asin="B0B8S4481T" %}
+
+#### USB heated gloves
+
+Still finding a pair I like
+
+#### USB hand warmers
+
+**[Hand Warmers](http://www.amazon.com/EnergyFlux-4400mAh-Rechargeable-Double-Sided-External/dp/B00G4VQ6CA/ref=sr_1_4?s=sporting-goods&ie=UTF8&qid=1448076345&sr=1-4&keywords=usb+hand+warmer) -** It's pretty awesome to be able to warm up your hands in a jiffy. It doubles as a battery charger as well. They also come in a [larger size](http://www.amazon.com/EnergyFlux-Enduro-7800mAh-Rechargeable-double-sided/dp/B00Q7Q2KFO/ref=pd_sim_468_2?ie=UTF8&dpID=41obvKhFEiL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=197N5FQ1VKS71HSJCR1D), I haven't decide which size I like more, but I always have a pair in my pants - they are awesome.
 
 **[Mattress Pad Heater](http://www.amazon.com/Sunbeam-Quilted-Polyester-Mattress-Controller/dp/B00FHW8QI4/ref=pd_sim_201_1?ie=UTF8&dpID=41kUrfJ92dL&dpSrc=sims&preST=_AC_UL160_SR160%2C160_&refRID=1A3EQGNWVC4A7J37X08B)** - Don't know what this? Buy one know, kiss me later.
 
