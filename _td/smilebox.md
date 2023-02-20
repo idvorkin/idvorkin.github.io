@@ -42,8 +42,47 @@ https://stackoverflow.com/questions/50083512/placing-two-divs-on-top-of-each-oth
 <label for="fps">Estimated Fps:</label> <input disabled value="-" id="fps" type="text" class="bold">
 
 <script>
+
+class Smoother
+{
+    constructor(){
+        this.values=[]
+    }
+    smooth(value){
+      this.values = [value].concat(this.values).slice(0, 10)
+      const avg = this.values.reduce((total, a) => total + a) / this.values.length
+      return avg
+    }
+}
+
+// Happy smoother should be closer to exponential backoff
+class HappySmoother
+{
+    constructor(){
+        this.hold_frames=10
+        this.backoff=0
+        this.last_value
+    }
+    smooth(value){
+        if (value == NaN)
+            return 0
+        if (value > 0.5)
+        {
+            this.backoff = this.hold_frames
+            this.last_value = value
+        }
+        this.backoff = this.backoff - 1
+        if (this.backoff < 0)
+        {
+            return 0
+        }
+        return this.last_value
+    }
+}
+
 let forwardTimes = []
-let predictedAges = []
+const ageSmoother = new Smoother()
+const happySmoother = new HappySmoother()
 let withBoxes = true
 
 function onChangeHideBoundingBoxes(e) {
@@ -55,11 +94,10 @@ function getCurrentFaceDetectionNet() {
     return faceapi.nets.tinyFaceDetector
 }
 
-function interpolateAgePredictions(age) {
-  predictedAges = [age].concat(predictedAges).slice(0, 30)
-  const avgPredictedAge = predictedAges.reduce((total, a) => total + a) / predictedAges.length
-  return avgPredictedAge
+function interpolateHappy(happy) {
 }
+
+
 
 function getFaceDetectorOptions() {
     new faceapi.TinyFaceDetectorOptions({ inputSize, scoreThreshold })
@@ -81,8 +119,36 @@ async function onPlay() {
   const options = getFaceDetectorOptions()
 
   const ts = Date.now()
-  const result = await faceapi.detectSingleFace(videoEl, options)
-    .withAgeAndGender()
+  let result = 0
+  let face = 0
+
+
+  face =  faceapi.detectSingleFace(videoEl, options)
+  if (!face)
+  {
+      return
+  }
+
+  result = await face.withFaceExpressions()
+
+  updateTimeStats(Date.now() - ts)
+  expressions =  null
+
+  if (result) {
+      expressions = result.expressions
+      const canvas = $('#overlay').get(0)
+          const dims = faceapi.matchDimensions(canvas, videoEl, true)
+
+          const resizedResult = faceapi.resizeResults(result, dims)
+          const minConfidence = 0.05
+          if (withBoxes) {
+              faceapi.draw.drawDetections(canvas, resizedResult)
+          }
+      // faceapi.draw.drawFaceExpressions(canvas, resizedResult, minConfidence)
+      // console.log (result)
+  }
+
+  result = await face.withAgeAndGender()
 
   if (result) {
     const canvas = $('#overlay').get(0)
@@ -93,15 +159,31 @@ async function onPlay() {
       faceapi.draw.drawDetections(canvas, resizedResult)
     }
     const { age, gender, genderProbability } = resizedResult
+    emotions = []
+    if (expressions)
+    {
+        // Consider doing this via destructirng
+        const {happy, sad, neutral, surprised}  = expressions
+        smoothedHappy = happySmoother.smooth(happy)
+        if (smoothedHappy > 0.4)
+        {
+            emotions.push(`happy:${smoothedHappy}`)
+        }
+    }
 
     // interpolate gender predictions over last 30 frames
     // to make the displayed age more stable
-    const interpolatedAge = interpolateAgePredictions(age)
-    new faceapi.draw.DrawTextField(
-      [
+    const interpolatedAge = ageSmoother.smooth(age)
+    let output =
+    [
         `${faceapi.utils.round(interpolatedAge, 0)} years`,
-        `${gender} (${faceapi.utils.round(genderProbability)})`
-      ],
+        `${gender} (${faceapi.utils.round(genderProbability)})`,
+    ]
+    if (emotions.length > 0 ){
+        output.push(...emotions)
+    }
+    new faceapi.draw.DrawTextField(
+      output,
       result.detection.box.bottomLeft
     ).draw(canvas)
   }
@@ -118,15 +200,9 @@ async function run() {
   // await changeFaceDetector(TINY_FACE_DETECTOR)
   await faceapi.nets.ssdMobilenetv1.load(model_path)
   await faceapi.nets.ageGenderNet.load(model_path)
+  await faceapi.nets.ageGenderNet.load(model_path)
   await faceapi.nets.tinyFaceDetector.load(model_path)
-
-  // Put canvas on top of the video
-
-  var w = videoEl.offsetWidth;
-  var h = videoEl.offsetHeight;
-  var cv = document.getElementById("canvas");
-  cv.width = w;
-  cv.height =h;
+  await faceapi.loadFaceExpressionModel(model_path)
 
   // try to access users webcam and stream the images
   // to the video element
