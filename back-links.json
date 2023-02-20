@@ -1,6 +1,7 @@
 {
     "redirects": {
         "/22": "/what-i-wish-knew-at-22",
+        "/48-laws": "/laws-of-power",
         "/50yo": "/40yo",
         "/7h": "/7-habits",
         "/7h-c0": "/7h-concepts",
@@ -138,8 +139,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -367,7 +366,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai_art.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -1111,7 +1110,7 @@
             "py/object": "__main__.Page",
             "url": "/d/resistance",
             "title": "Resistance: Why you can't make yourself take an ice cold shower",
-            "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard, when they are not. The resistance adds suffering, when there is minimal pain - and that confuses us, stopping us from doing the things which give us the most value, joy, and positive identity. The resistance is the enemy of progress.\n\n",
+            "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard when they are not. The resistance adds suffering when there is minimal pain and that confuses us, stopping us from doing things which give us the most value, joy and positive identity. The resistance is the enemy of progress.\n\n",
             "file_path": "_site/d/resistance.html",
             "outgoing_links": [
                 "/addiction",
@@ -1415,6 +1414,7 @@
             ],
             "incoming_links": [
                 "/d/2017-11-04-clean-architecture",
+                "/system-design",
                 "/testing"
             ],
             "redirect_url": "",
@@ -1748,6 +1748,7 @@
                 "/d/time-off-2020-03",
                 "/first-things-first",
                 "/gtd",
+                "/mental-pain",
                 "/productive",
                 "/psychic-weight",
                 "/timeoff"
@@ -1825,6 +1826,18 @@
             "markdown_path": "_d/gpt2.md",
             "doc_size": 21000
         },
+        "/grammerly": {
+            "py/object": "__main__.Page",
+            "url": "/grammerly",
+            "title": "Grammerly",
+            "description": "\n\n",
+            "file_path": "_site/grammerly.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_td/smilebox.md",
+            "doc_size": 9000
+        },
         "/grateful": {
             "py/object": "__main__.Page",
             "url": "/grateful",
@@ -1860,6 +1873,7 @@
                 "/depression",
                 "/first-things-first",
                 "/frog",
+                "/mental-pain",
                 "/psychic-weight"
             ],
             "redirect_url": "",
@@ -2032,7 +2046,9 @@
             "description": "I’ve been hard on myself these last few months as I haven’t made a lot of progress on my habits or goals. Reflecting, that shouldn’t be a surprise as I’ve been putting a tonne of energy into my job hunt. Here is a reminder of the effort required, which will aid setting realistic expectations during the job hunt.\n\n",
             "file_path": "_site/interviewsarehard.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/job-hunt-stress"
+            ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-11-26-interviewsarehard.markdown",
             "doc_size": 11000
@@ -2094,6 +2110,7 @@
                 "/bmy",
                 "/comp",
                 "/decisive",
+                "/interviewsarehard",
                 "/job",
                 "/system-design"
             ],
@@ -2120,7 +2137,8 @@
                 "/happy",
                 "/ig66/621",
                 "/like-switch",
-                "/magic"
+                "/magic",
+                "/smilebox"
             ],
             "incoming_links": [
                 "/affirmations",
@@ -2152,6 +2170,18 @@
             "redirect_url": "",
             "markdown_path": "_d/last-year.md",
             "doc_size": 13000
+        },
+        "/laws-of-power": {
+            "py/object": "__main__.Page",
+            "url": "/laws-of-power",
+            "title": "The 48 laws of power",
+            "description": "A very cynical book about the laws of power. Probably worth a read in case you want to better understand the dark side.\n\n",
+            "file_path": "_site/laws-of-power.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/48-laws-of-power.md",
+            "doc_size": 43000
         },
         "/like-switch": {
             "py/object": "__main__.Page",
@@ -2248,7 +2278,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 129000
+            "doc_size": 131000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -2266,7 +2296,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/manager-book-appendix.md",
-            "doc_size": 25000
+            "doc_size": 27000
         },
         "/mental-pain": {
             "py/object": "__main__.Page",
@@ -2276,6 +2306,8 @@
             "file_path": "_site/mental-pain.html",
             "outgoing_links": [
                 "/anxiety",
+                "/frog",
+                "/gtd",
                 "/pride",
                 "/shame"
             ],
@@ -2295,7 +2327,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/mental-pain.md",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/mermaid": {
             "py/object": "__main__.Page",
@@ -2900,6 +2932,20 @@
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
             "doc_size": 23000
         },
+        "/smilebox": {
+            "py/object": "__main__.Page",
+            "url": "/smilebox",
+            "title": "Smilebox",
+            "description": "Way back in 2012 I had this idea to make a Smilebox. The tech wasn’t good enough, but in 2023 tech is right ready. Here’s quoting the original blog post … Nothing makes me happier then seeing someone smile. In fact, seeing others smile makes me smile. As a result, I’m creating a box that captures smiles, which I’m calling a smile box. If you look at the smile box, you’ll see the smiles that are already captured . If you smile at the box, it’ll capture your smile and add it to the box.\n\n",
+            "file_path": "_site/smilebox.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/joy"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_td/smilebox.md",
+            "doc_size": 16000
+        },
         "/snjb": {
             "py/object": "__main__.Page",
             "url": "/snjb",
@@ -3019,13 +3065,18 @@
             "title": "System Design Questions",
             "description": "As a technologist I love system designs. I like to tell interview candidates you don’t need to practice them, it’s what you do every day. In fact, it’s one of the favorite parts of my technical role. I never liked crossword puzzles, but I could totally do system design problems instead. Here’s a great list ..\n\n",
             "file_path": "_site/system-design.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/design",
+                "/td/better-security-design",
+                "/td/cloud-first-applications",
+                "/td/data-systems"
+            ],
             "incoming_links": [
                 "/job-hunt-stress"
             ],
             "redirect_url": "",
             "markdown_path": "_td/system-design.md",
-            "doc_size": 13000
+            "doc_size": 20000
         },
         "/taas": {
             "py/object": "__main__.Page",
@@ -3101,7 +3152,9 @@
             "description": "I used to do security in a former life, and here are some musings on the topic, which will eventually be dissected into various essays. For now it’ll be confusing as I’m brain dumping to various audiences with various knowledge (end users, architects, CEOs, designers)\n\n",
             "file_path": "_site/td/better-security-design.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/system-design"
+            ],
             "redirect_url": "",
             "markdown_path": "_td/better-security-design.md",
             "doc_size": 21000
@@ -3116,7 +3169,8 @@
             "incoming_links": [
                 "/amazon",
                 "/design",
-                "/manager-book"
+                "/manager-book",
+                "/system-design"
             ],
             "redirect_url": "",
             "markdown_path": "_td/cloud-first-applications.md",
@@ -3130,7 +3184,8 @@
             "file_path": "_site/td/data-systems.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/amazon"
+                "/amazon",
+                "/system-design"
             ],
             "redirect_url": "",
             "markdown_path": "_td/data-systems.md",
@@ -3185,7 +3240,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/ios.md",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/td/ios-nomad": {
             "py/object": "__main__.Page",
@@ -3586,7 +3641,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-9-29-staying-warm-and-biking.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/welcome-to-holland": {
             "py/object": "__main__.Page",
