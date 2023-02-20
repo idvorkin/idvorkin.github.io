@@ -201,7 +201,7 @@ Here are some projects I'd love to get into
 
 ### Smile box
 
-Thoughts on a [smile box](https://igsmilebox.blogspot.com/2012/12/what-is-smilebox.html)
+{%include summarize-page.html src="/smilebox" %}
 
 ### Bubble Show
 
