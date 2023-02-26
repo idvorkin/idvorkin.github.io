@@ -10,14 +10,14 @@ I like having a blog, but honestly it's faster to write it in google photos as t
 
 Shells are weird, might want to shortcut it. Use follow if shortcutting.
 
-    export ALBUM_URL=shorturl.at/hjLX0
-    http --follow $ALBUM_URL  >  album.html
+    export ALBUM_URL="https://shorturl.at/hjLX0"
+    http --follow $ALBUM_URL >  album.html
 
 # Extract the content
 
 Oddly, the page is pretty dynamic, got to find the text in a script block
 
-    cat album.html | pup 'script:contains("AF_initDataCallback(")' > data
+    cat album.html | pup 'script:contains("AF_initDataCallback(")' | grep AF_init > data
 
 # References
 
