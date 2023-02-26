@@ -13,7 +13,7 @@ Shells are weird, might want to shortcut it. Use follow if shortcutting.
     export ALBUM_URL="https://shorturl.at/hjLX0"
     http --follow $ALBUM_URL >  album.html
 
-# Extract the content
+# Extract the text content
 
 Oddly, the page is pretty dynamic, got to find the text in a script block
 
@@ -32,11 +32,20 @@ Then need to parse the json slug with the dictionary that has keys like: 9921834
           ],
           101428965: [0, "vdhvk94a06vv00000000004a"],
 
-OK, so that'd be
+Thinking, maybe the best way to do that is non greedy grep ... Lets think through that ..
 
-    cat data | grep  ("99218341":[[1,["my string"]]],)
+    https://github.com/idvorkin/idvorkin.github.io/blob/master/dump_google_album.py?plain=1#L25
 
-Thinking, maybe the best way is a non greedy grep ... Lets think through that ..
+# Extract the photos
+
+    prettier album.html > pretty.album.html
+    cat pretty.album.html | grep 'https.*usercontet'
+
+# Extract the title
+
+Slopp doppy
+
+    cat pretty.album.html| grep ' - Google Photos'
 
 # References
 
