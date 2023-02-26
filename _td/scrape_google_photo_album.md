@@ -17,7 +17,26 @@ Shells are weird, might want to shortcut it. Use follow if shortcutting.
 
 Oddly, the page is pretty dynamic, got to find the text in a script block
 
-    cat album.html | pup 'script:contains("AF_initDataCallback(")' | grep AF_init > data
+    cat album.html | pup 'script:contains("AF_initDataCallback(")' | grep AF_init > data1
+
+Bleah, need to figure out a clean way to paarse this ... Yuk.
+Then need to parse the json slug with the dictionary that has keys like: 99218341.
+
+          99218341: [
+            [
+              1,
+              [
+                "Last but not least there was a risk of snow, which made the family uncomfortable to drive on the highway. At first that had me grumpy... But then I remembered the most important lesson of all.\n\nPut the needs of your family ahead of your own, you can always do something with them later when they're comfortable\n\nHave a great weekend - and we'll see you next week!",
+              ],
+            ],
+          ],
+          101428965: [0, "vdhvk94a06vv00000000004a"],
+
+OK, so that'd be
+
+    cat data | grep  ("99218341":[[1,["my string"]]],)
+
+Thinking, maybe the best way is a non greedy grep ... Lets think through that ..
 
 # References
 
