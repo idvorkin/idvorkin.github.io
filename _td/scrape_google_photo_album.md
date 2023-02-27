@@ -34,7 +34,7 @@ Then need to parse the json slug with the dictionary that has keys like: 9921834
 
 Thinking, maybe the best way to do that is non greedy grep ... Lets think through that ..
 
-    https://github.com/idvorkin/idvorkin.github.io/blob/master/dump_google_album.py?plain=1#L25
+<https://github.com/idvorkin/idvorkin.github.io/blob/master/dump_google_album.py?plain=1#L25>
 
 # Extract the photos
 
