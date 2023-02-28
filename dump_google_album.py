@@ -10,9 +10,18 @@ from rich import print as rich_print
 import rich
 import re
 from typeguard import typechecked
+import requests
+from io import BytesIO
 
 
 app = typer.Typer()
+
+
+def content_type_to_extension(ct):
+    if ct == "image/jpeg":
+        return "jpg"
+    else:
+        raise 0
 
 
 @app.command()
@@ -26,6 +35,27 @@ def default():
     print(len(matches))
     for i in matches:
         print(i)
+
+    url_extract_pattern = "[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&\\/=]*)"
+    url_matches = re.findall(url_extract_pattern, text)
+    for i, u in enumerate(url_matches):
+        if not "googleusercontent" in u:
+            continue
+
+        url = "https://" + u
+        print(url)
+        r = requests.get(url)
+        content_type = r.headers["Content-Type"]
+        if "html" in content_type:
+            # something weird.
+            ic(content_type, url)
+            continue
+        extension = content_type_to_extension(content_type)
+
+        filename = os.path.expanduser(f"~/tmp/img_{i}.{extension}")
+        print(filename)
+        f = open(filename, "wb")
+        f.write(r.content)
 
 
 if __name__ == "__main__":
