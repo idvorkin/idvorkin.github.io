@@ -10,6 +10,9 @@ no-render-title: true
     defer(load_ig66)
 </script>
 
+<div class='alert alert-primary' id="random-recent">
+</div>
+
 <!-- Show the most recent blog posts -->
 
 {% assign display_order_posts  = site.ig66 | reverse %}
@@ -29,14 +32,13 @@ no-render-title: true
 
 <br/>
 
-<div class='alert alert-info' id="achievment">
-</div>
 
 <div class='alert alert-success' id="random-post">
 </div>
 
-<div class='alert alert-primary' id="random-recent">
+<div class='alert alert-info' id="achievment">
 </div>
+
 
 <!-- Show the next blog posts -->
 
