@@ -6484,6 +6484,19 @@
     },
     {
         "py/object": "__main__.BlogPost",
+        "title": "ACHIEVEMENT UNLOCKED - BUBBLE BIKE",
+        "url": "/ig66/583",
+        "published": "2021-05-30T00:00:00",
+        "excerpt": "I start my eulogy with my role as a dealer of smiles and wonder and bicycle rider. For a reason I don’t understand, few things are so universally smile generating as bubbles. Normally, bubbles are limited to your lung capacity, but a few years back I discovered bubble machines, which automatically create a metric tonne of bubbles, but you’re usually stuck at your house where you’ve got power. A while back I had an idea of putting a bubble machine on my bike. I found a model that ran on batteries, and Tori did a bunch of thinking, and came up with an attachment mechanism. Now, as I ride my bike there is a trail of bubbles. When I stop my bike, there are bubbles everywhere, and when I walk my bike, if the wind is to my back, I’m engulfed in a wall of bubbles.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/583/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal",
+            "achievement"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
         "title": "579AZ - BUBBLE BIKE!",
         "url": "/ig66/579",
         "published": "2021-05-30T00:00:00",
@@ -6501,19 +6514,6 @@
         "published": "2021-05-30T00:00:00",
         "excerpt": "I like to say kids are like hard drugs, they ruin your life but the highs are worth it. Jokes aside, Amelia’s father day gift is gonna be in the top lifetime highs. I’m pretty sure no matter what is bothering me, this video will ground me, and make me feel fantastic.\n\n",
         "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/580/montage.jpg",
-        "content": "",
-        "tags": [
-            "family-journal",
-            "achievement"
-        ]
-    },
-    {
-        "py/object": "__main__.BlogPost",
-        "title": "ACHIEVEMENT UNLOCKED - BUBBLE BIKE",
-        "url": "/ig66/583",
-        "published": "2021-05-30T00:00:00",
-        "excerpt": "I start my eulogy with my role as a dealer of smiles and wonder and bicycle rider. For a reason I don’t understand, few things are so universally smile generating as bubbles. Normally, bubbles are limited to your lung capacity, but a few years back I discovered bubble machines, which automatically create a metric tonne of bubbles, but you’re usually stuck at your house where you’ve got power. A while back I had an idea of putting a bubble machine on my bike. I found a model that ran on batteries, and Tori did a bunch of thinking, and came up with an attachment mechanism. Now, as I ride my bike there is a trail of bubbles. When I stop my bike, there are bubbles everywhere, and when I walk my bike, if the wind is to my back, I’m engulfed in bubbles.\n\n",
-        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/583/montage.jpg",
         "content": "",
         "tags": [
             "family-journal",
@@ -7022,10 +7022,10 @@
     },
     {
         "py/object": "__main__.BlogPost",
-        "title": "WEEK 647 AZ - DATING, BLACKSMITHING, MAKING MOVIES, AND KISSING ALPACAS",
+        "title": "WEEK 647 AZ CALENDAR POWER DATING, BLACKSMITHING, MAKING MOVIES, AND KISSING ALPACAS",
         "url": "/ig66/647",
         "published": "2022-09-30T00:00:00",
-        "excerpt": "Super fun week… Augmented by a calendar!\n\n",
+        "excerpt": "As a younger man I hated calendars, and structure. I still don’t love them, but I have limited decision making/discipline energy/capability per day, and when I’m out of that energy, I just vegitate. So TL;DR figure out what you want, and schedule it. Then don’t think about, this week I nailed my calendar!\n\n",
         "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/647/montage.jpg",
         "content": "",
         "tags": [
@@ -7051,6 +7051,115 @@
         "published": "2022-11-06T00:00:00",
         "excerpt": "This year was a quiet halloween, Tori’s been busy and Zach wanted to stay home, so Amelia and I went out instead. Zach’s arm is all healed, and I’ve gotten to see the influence I have on the kids.\n\n",
         "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/654/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 655AZ - GREAT KIDS LINES - CLEARANCE SALE",
+        "url": "/ig66/655",
+        "published": "2022-11-07T00:00:00",
+        "excerpt": "For years I’ve been collecting cruft the kids have said to me, here is a dump of it, I’m not even sure when it was said or written, but possibly it’s years old.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/655/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 656 AZ - LAYOFFS AND NYC W/AMMON",
+        "url": "/ig66/656",
+        "published": "2022-11-14T00:00:00",
+        "excerpt": "This has been a crazy two weeks. First of all, on Wednesday Meta had its first layoffs ever, and I had my first experience going through layoffs and a giant re-organization where I’d be working on completely new things with a completely new boss. Not very fun.  Making it worse, I’d planned a trip to NYC months ago with Ammon, and I flew to NYC Friday, just 2 days after layoffs while the team was trying to digest layoffs, and trying to understand what would happen next. As a result even though I was in NYC, I was trying to work a few days a week to help support the team through this difficult time (for them and me).\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/656/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 657 AZ - ASHLAND 2022!",
+        "url": "/ig66/657",
+        "published": "2022-11-27T00:00:00",
+        "excerpt": "You know what’s great? Going off the grid, where power is generated from the sun, water is collected on the roof, and there is 1 gigabit internet.  This week we did our annual pilgrimage to Ashland for Thanksgiving. We saw Maureen, Brian, and the rest of Tori’s extended family. Zach got exposure to lots of dogs, I made lots of balloons, and Amelia followed in the family tradition of driving the bob cat.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/657/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 658 AZ - BALLOONING AND ZACH THE GREAT",
+        "url": "/ig66/658",
+        "published": "2022-12-15T00:00:00",
+        "excerpt": "It’s been a good week - participating in Zach’s journey to a healthier lifestyle, connecting with my daughter Amelia as we watched our first tv series together, and creating magical memories of joy and fun at Amelia’s school party as a balloon-maker! Who knew with a little bit of exercise, a great show, and some balloons, I could achieve such contentment! And this is my first blog being co-authored by AI!\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/658/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "JUMP IN THE LAKE DAY 2023 - CLASS ACT EDITION",
+        "url": "/ig66/660",
+        "published": "2023-01-01T00:00:00",
+        "excerpt": "It’s Jump in the Lake Day - that day we kick off the year by saying F@#$ the resistance!! This year is all about being a class act, and this year that manifested by coming up with a Jump in the lake compromise. See, historically I plunged at a lake that was super crowded, meaning you’d have to get there early park really far away, and schlep to the beach. While I enjoyed this, the family was less enthusiastic since they were only there to support me. So this year, I decide to jump into a quiet lake where there was no parking and we could be done quickly!\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/660/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal",
+            "jump-in-the-lake-day"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 661 AZ - MOVIES, FRIENDS,",
+        "url": "/ig66/661",
+        "published": "2023-01-07T00:00:00",
+        "excerpt": "This has been a great week, and a great start to 2023. First jumped in the lake, then got done a ton with family, friends and work! Here’s to an amazing rest of the year.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/661/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 662 AZ - ZACH PROGRAMMING, AMELIA BIKING, IGOR GRINDING THROUGH PERFORMANCE REVIEWS",
+        "url": "/ig66/662",
+        "published": "2023-01-14T00:00:00",
+        "excerpt": "Dang, another great week! Zach is now keeping me awake so we can get programming time. Amelia got back on her bike, then got me back on my bike so we could bike to Boba, and then made me make balloons for a family there. I even got out my folding bike and threw it in the back of the Rav so Tori could give me a ride home when I met her at work. I am also half way through reviews, which feels great!\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/662/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 663 AZ - BEARDS, AND BIKING",
+        "url": "/ig66/663",
+        "published": "2023-01-21T00:00:00",
+        "excerpt": "This week I embraced being vain, and got some great shots of the kids, and was chastised by the state troopers.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/663/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 664 AZ - SOME FUN",
+        "url": "/ig66/664",
+        "published": "2023-01-27T00:00:00",
+        "excerpt": "To celebrate Zach biking last week I promised root beer (Diet Of course!) And we had floats (with Diet Whipped Cream - Is that a thing).\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/664/montage.jpg",
         "content": "",
         "tags": [
             "family-journal"
