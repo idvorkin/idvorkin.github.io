@@ -50,6 +50,7 @@ This post uses the word manager, but the most topics apply to all software job f
     - [How do you support folks with their career growth plans (CGPs)](#how-do-you-support-folks-with-their-career-growth-plans-cgps)
     - [How do you support folks by pre-writing self assessments](#how-do-you-support-folks-by-pre-writing-self-assessments)
     - [How do you give fast, frequent, feedback](#how-do-you-give-fast-frequent-feedback)
+    - [What do you recommend for folks who just joined the team](#what-do-you-recommend-for-folks-who-just-joined-the-team)
     - [How do you think about situational leadership](#how-do-you-think-about-situational-leadership)
     - [What are the level specific career expectations and growth strategies](#what-are-the-level-specific-career-expectations-and-growth-strategies)
     - [How do you help people switch jobs](#how-do-you-help-people-switch-jobs)
@@ -407,6 +408,13 @@ I aspire to provide immediate observed feedback, for something that is about to 
 I keep my eyes open for opportunities for feedback from my observations, and from soliciting feedback from peers and partners. I take the feedback and figure out the best way to give it.
 
 My priority is "catching employees doing something right", so I can re-enforce positive behavior. Even better, with positive behaviors I can provide them in public which not only benefits the employee, but also re-enforces that goodness with the team.
+
+### What do you recommend for folks who just joined the team
+
+- Consider the first 90 days
+- Ensure you get coffee with everyone on the team
+- Get them checking in as soon as possible
+- Get them a mentor
 
 ### How do you think about situational leadership
 
