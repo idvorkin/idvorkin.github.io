@@ -11,6 +11,17 @@ tags:
 
 Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You'll want to find the ones that speak best to you.
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [Pay myself first: Deliberate. Disciplined. Daily](#pay-myself-first-deliberate-disciplined-daily)
+- [Be an essentialist: Know Essential. Provide Context](#be-an-essentialist-know-essential-provide-context)
+- [Be a class act: First Understand. Appreciate](#be-a-class-act-first-understand-appreciate)
+- [Calm like water: Be Present. This too shall pass. Work the problem](#calm-like-water-be-present-this-too-shall-pass-work-the-problem)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 ### Pay myself first: Deliberate. Disciplined. Daily
 
 **Discipline is being proactive, it's the path to success.**
