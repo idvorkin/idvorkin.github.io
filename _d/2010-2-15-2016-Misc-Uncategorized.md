@@ -7,6 +7,8 @@ permalink: random-idea
 redirect_from:
   - uncategorized
   - heap
+    - potporri
+    - potpori
 tags:
   - how igor ticks
 author: "Igor Dvorkin"
@@ -19,11 +21,11 @@ place to store them.
 <!-- vim-markdown-toc GFM -->
 
 - [Igor as a business model](#igor-as-a-business-model)
-    - [Igor's UVP:](#igors-uvp)
-    - [Igor's Key Activities:](#igors-key-activities)
+    - [Igor's UVP](#igors-uvp)
+    - [Igor's Key Activities](#igors-key-activities)
 - [Magic: Great example of Seth Godin principles](#magic-great-example-of-seth-godin-principles)
-- [Quotes:](#quotes)
-- [Journaling Prompt:](#journaling-prompt)
+- [Quotes](#quotes)
+- [Journaling Prompt](#journaling-prompt)
 - [Wisdom](#wisdom)
 - [Intimacy Questions](#intimacy-questions)
 - [Progressions](#progressions)
@@ -32,14 +34,14 @@ place to store them.
     - [Life Stages; 20-Exploring; 30 - Stopping what don't like; 40 - Doing what do like; 50 - Unknown (being selfless??)](#life-stages-20-exploring-30---stopping-what-dont-like-40---doing-what-do-like-50---unknown-being-selfless)
     - [Best Friend Conversation: Getting Drunk; Getting Married, Kid Did X; Did you know bob, he's dead](#best-friend-conversation-getting-drunk-getting-married-kid-did-x-did-you-know-bob-hes-dead)
 - [Models](#models)
-    - [Marginal costs - just this once.](#marginal-costs---just-this-once)
+    - [Marginal costs - just this once](#marginal-costs---just-this-once)
     - [Strategy : Defined vs Emergent](#strategy--defined-vs-emergent)
     - [Types of capabilities - Resources, Process, Values](#types-of-capabilities---resources-process-values)
     - [Being a class act](#being-a-class-act)
     - [Knowledge vs Wisdom](#knowledge-vs-wisdom)
     - [Curiosity](#curiosity)
-    - [Cognitive vs Curiosity based improvement.](#cognitive-vs-curiosity-based-improvement)
-    - [Love and rejection.](#love-and-rejection)
+    - [Cognitive vs Curiosity based improvement](#cognitive-vs-curiosity-based-improvement)
+    - [Love and rejection](#love-and-rejection)
 - [Random Stuff](#random-stuff)
     - [From Clarisaa Magic Lecture](#from-clarisaa-magic-lecture)
 - [Heath brothers](#heath-brothers)
@@ -272,8 +274,11 @@ _surprise: these are my daily affirmations_
 
 ### Moments
 
-{%include summarize-page.html src="/momenets" %}
-{%include summarize-page.html src="/momenets-at-work" %}
+{%include summarize-page.html src="/moments" %}
+
+**And at work**
+
+{%include summarize-page.html src="/moments-at-work" %}
 
 ### Decisive
 
