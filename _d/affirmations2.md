@@ -11,7 +11,7 @@ tags:
 
 Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me, and have evolved over time, you'll want to find the ones that speak best to you.
 
-### Deliberate. Disciplined. Daily
+### Pay myself first: Deliberate. Disciplined. Daily
 
 **Discipline is being proactive, it's the path to success.**
 
@@ -21,7 +21,7 @@ Every day I write out my affirmations. These positive statements help me challen
 
 {%include summarize-page.html src="/compassion" %}
 
-### Know Essential. Provide Context
+### Be an essentialist: Know Essential. Provide Context
 
 **There are so many choices, you need to choose, spend time finding the essential.**
 
@@ -58,7 +58,7 @@ Every day I write out my affirmations. These positive statements help me challen
 
 {%include summarize-page.html src="/class-act" %}
 
-### Be Calm: Be Present. This too shall pass
+### Calm like water: Be Present. This too shall pass. Work the problem
 
 **Every day can be full of [joy](/joy), but if you're not paying attention you'll miss it. Being present will also let you [appreciate](/appreciate) others which also brings satisfaction.**
 
