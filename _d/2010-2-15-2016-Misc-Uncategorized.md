@@ -3,6 +3,10 @@ layout: post
 title: "random un categorized notes"
 comments: true
 inprogress: true
+permalink: random-idea
+redirect_from:
+  - uncategorized
+  - heap
 tags:
   - how igor ticks
 author: "Igor Dvorkin"
@@ -36,12 +40,13 @@ place to store them.
     - [Curiosity](#curiosity)
     - [Cognitive vs Curiosity based improvement.](#cognitive-vs-curiosity-based-improvement)
     - [Love and rejection.](#love-and-rejection)
+- [Random Stuff](#random-stuff)
+    - [From Clarisaa Magic Lecture](#from-clarisaa-magic-lecture)
 - [Heath brothers](#heath-brothers)
     - [Made to stick](#made-to-stick)
-    - [Switch](#switch)
+    - [Switch (Elephant, Rider, Path)](#switch-elephant-rider-path)
     - [Moments](#moments)
     - [Decisive](#decisive)
-    - [Elephant Rider Path](#elephant-rider-path)
     - [Yak Shaving](#yak-shaving)
 
 <!-- vim-markdown-toc -->
@@ -49,13 +54,13 @@ place to store them.
 
 ## Igor as a business model
 
-### Igor's UVP:
+### Igor's UVP
 
 - Mantra: People cry when I move on.
 - Ideas Executed Brilliantly.
 - Growing teams
 
-### Igor's Key Activities:
+### Igor's Key Activities
 
 - Free Association Journaling
 - Prototyping Software
@@ -82,7 +87,7 @@ Post mortems
   - In hands card routine.
 - Q: How do I build MORE connection to audience.
 
-## Quotes:
+## Quotes
 
 - Half the pressure, twice the speed - do it without stress/pressure, but do it quickly.
 - Length of minute depends on what side of the bathroom you are in
@@ -111,7 +116,7 @@ _Some of these are extra valuable depending on your teams culture_
   - I CHOOSE TO
 - Listening to books on tape that are low SNR but high in inspiration.
 
-## Journaling Prompt:
+## Journaling Prompt
 
 - What do I want for Zach?
 - Empathy Exercise
@@ -190,7 +195,7 @@ _Some of these are extra valuable depending on your teams culture_
 
 ## Models
 
-### Marginal costs - just this once.
+### Marginal costs - just this once
 
 Never assume just this once, assume it'll happen forever, because it will. Standard story:
 
@@ -219,14 +224,14 @@ Skipping church or skipping meditation.
 - Self Awareness, focus on 'how curious' instead of cognitive
 - How curious, is less judgmental
 
-### Cognitive vs Curiosity based improvement.
+### Cognitive vs Curiosity based improvement
 
 - Reframe
 - Cognitive Control (rider) is hard, BUT curiosity is much easier.
 - Curiosity does not take discipline, just awareness.
 - From Curiosity, can make progress.
 
-### Love and rejection.
+### Love and rejection
 
 - Afraid to love because fear of rejection
 - Very common statement, in the grand, but happens in the small too.
@@ -245,21 +250,38 @@ _surprise: these are my daily affirmations_
 - First Understand, then be understated
 - Provide Context
 
+## Random Stuff
+
+### From Clarisaa Magic Lecture
+
+- Take the peas out of your shoes. If something causes a problem, even a tiny one fix it as it can drag on for ever. Plus fixing it makes you happy
+  - Her example w ssetting up her suit case so that she everything had a place. That way she could see if she had forgotten anything, and it was perfect
+- Keep the core there, but leave in space to pack in new stuff
+  - Core suit case, but another suit case of new stuff, that way always have a good show, but don't get bored.
+  - When stuff get good graduate it into the core
+- Focus on the remembering self in interactions with others
+  - How will co-workers remember you in the future? Focus on the moments.
+
 ## Heath brothers
 
 ### Made to stick
 
-### Switch
+### Switch (Elephant, Rider, Path)
+
+{%include summarize-page.html src="/switch" %}
 
 ### Moments
 
+{%include summarize-page.html src="/momenets" %}
+{%include summarize-page.html src="/momenets-at-work" %}
+
 ### Decisive
 
-### Elephant Rider Path
+{%include summarize-page.html src="/decide" %}
 
 ### Yak Shaving
 
-http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html
+<http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html>
 
 "Yak shaving." Our very own Carlin Vieri invented the term, and yet
 it has not caught on within the lab. This is a shame, because it
