@@ -66,18 +66,20 @@
         "/frustration": "/anger",
         "/fuck-shame": "/shame",
         "/getting-things-done": "/gtd",
+        "/getting-to-yes": "/negotiate",
         "/goal": "/goals",
         "/gopher": "/delegate",
         "/grandma": "/curious",
         "/grandmother": "/curious",
         "/grandmother-mind": "/curious",
         "/grandmothermind": "/curious",
-        "/gty": "/getting-to-yes",
+        "/gty": "/negotiate",
         "/guilt": "/shame",
         "/habit": "/d/habits",
         "/habits": "/d/habits",
         "/happiness": "/happy",
         "/healthspan": "/last-year",
+        "/heap - potporri - potpori": "/random-idea",
         "/humanity": "/touching",
         "/idle-loop": "/idle",
         "/imposter": "/insecure",
@@ -100,6 +102,7 @@
         "/monsters": "/mind-monsters",
         "/mortality": "/death",
         "/mr": "/ar",
+        "/negotiation": "/negotiate",
         "/nonjudgment": "/curious",
         "/objective": "/goals",
         "/okr": "/goals",
@@ -139,6 +142,8 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
+        "/SoM": "/sleight-of-mouth",
+        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -156,6 +161,7 @@
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
         "/twentytwo": "/what-i-wish-knew-at-22",
+        "/uncategorized": "/random-idea",
         "/vacation": "/timeoff",
         "/virus": "/covid",
         "/voices-in-my-head": "/voices",
@@ -334,7 +340,7 @@
             "py/object": "__main__.Page",
             "url": "/affirmations",
             "title": "Affirmations",
-            "description": "Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me, and have evolved over time, you’ll want to find the ones that speak best to you.\n\n",
+            "description": "Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You’ll want to find the ones that speak best to you.\n\n",
             "file_path": "_site/affirmations.html",
             "outgoing_links": [
                 "/anxiety",
@@ -352,7 +358,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/affirmations2.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/ai-art": {
             "py/object": "__main__.Page",
@@ -494,7 +500,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "markdown_path": "_td/asciinema.md",
+            "markdown_path": "_td/grammerly.md",
             "doc_size": 9000
         },
         "/balance": {
@@ -687,7 +693,7 @@
             "py/object": "__main__.Page",
             "url": "/build-bubble-bike",
             "title": "Building a bubble bike",
-            "description": "What the heck is a bubble bike? Ah, you see, bringing joy for others is my thing. As they say in buddhism there are many vehicles to bring joy, and my vehicle is the bubble bike.\n\n",
+            "description": "What the heck is a bubble bike? Ah, you see, bringing joy for others is my thing. As they say in Buddhism there are many vehicles to bring joy, and my vehicle is the bubble bike.\n\n",
             "file_path": "_site/build-bubble-bike.html",
             "outgoing_links": [
                 "/joy"
@@ -867,8 +873,8 @@
             "file_path": "_site/curious.html",
             "outgoing_links": [
                 "/first-understand",
-                "/getting-to-yes",
                 "/mental-pain",
+                "/negotiate",
                 "/shame",
                 "/siy",
                 "/win-win"
@@ -881,9 +887,9 @@
                 "/coaching",
                 "/essentialism",
                 "/first-understand",
-                "/getting-to-yes",
                 "/getting-to-yes-with-yourself",
                 "/happy",
+                "/negotiate",
                 "/psychic-weight",
                 "/shame",
                 "/voices"
@@ -891,18 +897,6 @@
             "redirect_url": "",
             "markdown_path": "_d/grandmother.md",
             "doc_size": 16000
-        },
-        "/d/2010-2-15-2016-Misc-Uncategorized": {
-            "py/object": "__main__.Page",
-            "url": "/d/2010-2-15-2016-Misc-Uncategorized",
-            "title": "random un categorized notes",
-            "description": "There are lots of rough ideas I have that are not yet categorized, or good enough to be a thought. This will be a\nplace to store them.\n\n",
-            "file_path": "_site/d/2010-2-15-2016-Misc-Uncategorized.html",
-            "outgoing_links": [],
-            "incoming_links": [],
-            "redirect_url": "",
-            "markdown_path": "_d/2010-2-15-2016-Misc-Uncategorized.md",
-            "doc_size": 22000
         },
         "/d/2015-11-18-Outsourcing": {
             "py/object": "__main__.Page",
@@ -1338,7 +1332,8 @@
                 "/dsat",
                 "/job-hunt-stress",
                 "/manager-book",
-                "/pride"
+                "/pride",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2019-09-21-decisive.md",
@@ -1719,7 +1714,7 @@
                 "/affirmations",
                 "/class-act",
                 "/curious",
-                "/getting-to-yes",
+                "/negotiate",
                 "/sell"
             ],
             "redirect_url": "",
@@ -1757,28 +1752,6 @@
             "markdown_path": "_d/frog.md",
             "doc_size": 19000
         },
-        "/getting-to-yes": {
-            "py/object": "__main__.Page",
-            "url": "/getting-to-yes",
-            "title": "Getting to yes",
-            "description": "Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.\n\n",
-            "file_path": "_site/getting-to-yes.html",
-            "outgoing_links": [
-                "/curious",
-                "/first-understand",
-                "/win-win"
-            ],
-            "incoming_links": [
-                "/curious",
-                "/getting-to-yes-with-yourself",
-                "/happy",
-                "/productive",
-                "/sell"
-            ],
-            "redirect_url": "",
-            "markdown_path": "_d/gty.md",
-            "doc_size": 11000
-        },
         "/getting-to-yes-with-yourself": {
             "py/object": "__main__.Page",
             "url": "/getting-to-yes-with-yourself",
@@ -1787,7 +1760,7 @@
             "file_path": "_site/getting-to-yes-with-yourself.html",
             "outgoing_links": [
                 "/curious",
-                "/getting-to-yes",
+                "/negotiate",
                 "/welcome-to-holland"
             ],
             "incoming_links": [
@@ -1808,6 +1781,18 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/goals.md",
+            "doc_size": 13000
+        },
+        "/google-photos": {
+            "py/object": "__main__.Page",
+            "url": "/google-photos",
+            "title": "Accessing Google Photos",
+            "description": "I like having a blog, but honestly it’s faster to write it in google photos as that has a better WYSWIG viewer. But, I don’t get features like search, or previews, which matters to me. I also don’t trust Google not to break photos in the future. Of course exporting is a PITA, here are some hacks to export and make it into my blog format. NOTE: There is an API to extrat photos, but it doesn’t include the text (which I like to have, as recall WYSWIG editor)\n\n",
+            "file_path": "_site/google-photos.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_td/scrape_google_photo_album.md",
             "doc_size": 12000
         },
         "/gpt": {
@@ -1835,7 +1820,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "markdown_path": "_td/smilebox.md",
+            "markdown_path": "_td/grammerly.md",
             "doc_size": 9000
         },
         "/grateful": {
@@ -1891,11 +1876,11 @@
                 "/anxiety",
                 "/curious",
                 "/eulogy",
-                "/getting-to-yes",
                 "/idle",
                 "/joy",
                 "/mental-pain",
-                "/moments"
+                "/moments",
+                "/negotiate"
             ],
             "incoming_links": [
                 "/d/time-off-2020-12",
@@ -2428,7 +2413,8 @@
                 "/balance",
                 "/d/time-off-2022-12",
                 "/happy",
-                "/moments-at-work"
+                "/moments-at-work",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2018-04-03-moments.md",
@@ -2448,7 +2434,8 @@
                 "/being-a-great-manager",
                 "/job",
                 "/manager-book",
-                "/moments"
+                "/moments",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-04-09-moments-at-work.md",
@@ -2487,6 +2474,29 @@
             "redirect_url": "",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
             "doc_size": 18000
+        },
+        "/negotiate": {
+            "py/object": "__main__.Page",
+            "url": "/negotiate",
+            "title": "Getting to yes",
+            "description": "Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.Several years later a new book came out by a hostage negotiator. Instead of being analytic focus, it’s all about influencing the elephant.\n\n",
+            "file_path": "_site/negotiate.html",
+            "outgoing_links": [
+                "/curious",
+                "/first-understand",
+                "/switch",
+                "/win-win"
+            ],
+            "incoming_links": [
+                "/curious",
+                "/getting-to-yes-with-yourself",
+                "/happy",
+                "/productive",
+                "/sell"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/gty.md",
+            "doc_size": 17000
         },
         "/nlp": {
             "py/object": "__main__.Page",
@@ -2654,7 +2664,7 @@
                 "/d/resistance",
                 "/end-in-mind",
                 "/frog",
-                "/getting-to-yes"
+                "/negotiate"
             ],
             "incoming_links": [
                 "/d/time-off-2022-02"
@@ -2724,6 +2734,23 @@
             "markdown_path": "_td/quip.md",
             "doc_size": 9000
         },
+        "/random-idea": {
+            "py/object": "__main__.Page",
+            "url": "/random-idea",
+            "title": "random un categorized notes",
+            "description": "There are lots of rough ideas I have that are not yet categorized, or good enough to be a thought. This will be a\nplace to store them.\n\n",
+            "file_path": "_site/random-idea.html",
+            "outgoing_links": [
+                "/decisive",
+                "/moments",
+                "/moments-at-work",
+                "/switch"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/2010-2-15-2016-Misc-Uncategorized.md",
+            "doc_size": 24000
+        },
         "/recommend": {
             "py/object": "__main__.Page",
             "url": "/recommend",
@@ -2763,7 +2790,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/remotework.md",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/roblox-dev": {
             "py/object": "__main__.Page",
@@ -2813,7 +2840,7 @@
             "file_path": "_site/sell.html",
             "outgoing_links": [
                 "/first-understand",
-                "/getting-to-yes",
+                "/negotiate",
                 "/win-win"
             ],
             "incoming_links": [],
@@ -3037,7 +3064,9 @@
             ],
             "incoming_links": [
                 "/d/time-off-2022-02",
-                "/first-things-first"
+                "/first-things-first",
+                "/negotiate",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/switch.md",
@@ -3711,7 +3740,7 @@
             "incoming_links": [
                 "/7-habits",
                 "/curious",
-                "/getting-to-yes",
+                "/negotiate",
                 "/sell",
                 "/voices"
             ],
