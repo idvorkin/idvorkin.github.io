@@ -25,6 +25,7 @@ Just like the search bar in google fills in what you're typing when you say "Whe
     - [GPT3 vs GPT2](#gpt3-vs-gpt2)
     - [GPT3 vs Instruct GPT](#gpt3-vs-instruct-gpt)
 - [Demos of usage](#demos-of-usage)
+    - [Using GPT to write book summaries, even for books that don't exist](#using-gpt-to-write-book-summaries-even-for-books-that-dont-exist)
     - [GPT writing my git commits](#gpt-writing-my-git-commits)
     - [Creating poems out of journal entries](#creating-poems-out-of-journal-entries)
     - [Spelling and grammar fixing](#spelling-and-grammar-fixing)
@@ -131,6 +132,22 @@ The original GPT3 engine had a tendency to go of the rail, which I really enjoye
 Having used both models the InstructGPT model (now called GPT3), is more accurate, but also pretty boring, even with a high temperature. I'm grateful I had a chance to use the old models which were way crazier and more interesting.
 
 ## Demos of usage
+
+### Using GPT to write book summaries, even for books that don't exist
+
+Woah, this has been working with GPT4... These prompts are amazing ... My favorite books are by the heath brothres
+
+Regardless of the book.
+
+_For the topic XYZ. Write a book about the topic as if written by the Heath Brothers. Include an acronym, and write it in Markdown. Don't worry about the response length, I'll say continue if it gets truncated_
+
+If it's a todo book, like on meditating
+
+Write a draft of chapter 1 and 2 don’t include any stories. Start with theories, then a deep dive into the key ideas, the practices with 3-5 bullets on how to apply the practice. and then reader exercises."
+
+If it's about history, just say write the book
+
+An example book it wrote is [Nurture: A summary of the gottman method](/nurture), and [Rapport](/rapport).
 
 ### GPT writing my git commits
 
