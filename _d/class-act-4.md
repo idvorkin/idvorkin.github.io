@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Being a Class Act: How to Stand Out with Grace and Dignity in Any Situation
+title: Being a Class Act - How to Stand Out with Grace and Dignity in Any Situation
 tags:
   - book-notes
   - gpt
-permalink: /nurture
+permalink: /heath-class-act
 ---
 
 <!-- prettier-ignore-start -->
