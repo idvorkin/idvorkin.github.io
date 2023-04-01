@@ -1,34 +1,19 @@
 ---
 layout: post
 title: Tags
-permalink: /tags
+permalink: /tags2
 description: "An archive of posts sorted by tag."
 ---
 
-<!-- DEBUG MARK -->
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless
-forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-<!-- site_tags: {{ site_tags }} -->
-{% assign tag_words = site_tags | split:',' | sort %}
-<!-- tag_words: {{ tag_words }} -->
-
-<ul class="tag-box inline">
-  {% for tag in tag_words %}
-  <li>
-    <a href="#{{ tag }}"
-      >{{ tag | capitalize }} [<span>{{ site.tags[tag].size }}</span>]</a
-    >
-  </li>
-  {% endfor %}
-</ul>
-
-{% for tag in tag_words %}
-<h2 id="{{ tag }}">{{ tag | capitalize }}</h2>
-<ul class="post-list">
-  {% assign pages_list = site.tags[tag] %} {% for post in pages_list %} {% if
-  post.title != null %} {% if group == null or group == post.group %}
-  <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endif %} {% endif %} {% endfor %} {% assign pages_list = nil %} {% assign
-  group = nil %}
-</ul>
+<h1>Tags</h1>
+{% assign all_tags = "" %} {% for collection in site.collections %} {% for tag
+in collection.docs | map: 'tags' | join: ',' | split: ',' | map: 'strip' | uniq
+%} {% capture tag_name %}{{ tag }}{% endcapture %} {% capture tag_url %}/tags/{{
+tag_name | slugify }}/{% endcapture %} {% assign all_tags = all_tags | append:
+',' | append: tag_name %}
+<a href="{{ tag_url }}">{{ tag_name }}</a>
+{% endfor %} {% endfor %} {% assign all_tags = all_tags | split: ',' | map:
+'strip' | uniq %} {% for tag in all_tags %} {% capture tag_url %}/tags/{{ tag |
+slugify }}/{% endcapture %}
+<a href="{{ tag_url }}">{{ tag }}</a>
 {% endfor %}
