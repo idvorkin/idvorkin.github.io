@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Being a GOOD HUSBAND: An acronym guide by the Heath Brothers
+title: Being a GOOD Husband
 tags:
   - book-notes
   - gpt
