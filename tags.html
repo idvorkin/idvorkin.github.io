@@ -5,30 +5,52 @@ permalink: /tags
 description: "An archive of posts sorted by tag."
 ---
 
-<!-- DEBUG MARK -->
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless
-forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-<!-- site_tags: {{ site_tags }} -->
-{% assign tag_words = site_tags | split:',' | sort %}
-<!-- tag_words: {{ tag_words }} -->
+<!-- Capture all tags from the site -->
+{% capture all_tags %} {% for collection in site.collections %} {% for doc in
+collection.docs %} {% for tag in doc.tags %},{{tag}}, {% endfor %} {% endfor %}
+{% endfor %} {% endcapture %}
 
+<!-- Remove duplicate tags and sort them alphabetically -->
+{% assign tag_words = all_tags | split:',' | uniq | sort %}
+
+<!--
+<h1> Debug </h1>
+
+<h2> All Tags</h2>
+{{all_tags}}
+
+<h2> Tag Words </h2>
+{{tag_words}}
+
+<h1> End Debug </h1>
+
+-->
+
+<!-- Display tag list with post counts -->
+
+{% comment %}Display tag list with post counts{% endcomment %}
 <ul class="tag-box inline">
-  {% for tag in tag_words %}
+  {% for tag in tag_words %} {% assign tag_count = 0 %} {% for collection in
+  site.collections %} {% assign pages_list = collection.docs %} {% for doc in
+  pages_list %} {% if doc.tags contains tag %} {% assign tag_count = tag_count |
+  plus: 1 %} {% endif %} {% endfor %} {% endfor %} {% if tag_count != 0 %}
   <li>
     <a href="#{{ tag }}"
-      >{{ tag | capitalize }} [<span>{{ site.tags[tag].size }}</span>]</a
+      >{{ tag | capitalize }} [<span>{{ tag_count }}</span>]</a
     >
   </li>
-  {% endfor %}
+  {% endif %} {% endfor %}
 </ul>
 
-{% for tag in tag_words %}
+{% comment %}Display posts for each tag{% endcomment %} {% for tag in tag_words
+%}
 <h2 id="{{ tag }}">{{ tag | capitalize }}</h2>
 <ul class="post-list">
-  {% assign pages_list = site.tags[tag] %} {% for post in pages_list %} {% if
-  post.title != null %} {% if group == null or group == post.group %}
+  {% for collection in site.collections %} {% assign pages_list =
+  collection.docs %} {% for post in pages_list %} {% if post.tags contains tag
+  %} {% if post.title != null %} {% if group == null or group == post.group %}
   <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endif %} {% endif %} {% endfor %} {% assign pages_list = nil %} {% assign
-  group = nil %}
+  {% endif %} {% endif %} {% endif %} {% endfor %} {% endfor %} {% assign
+  pages_list = nil %} {% assign group = nil %}
 </ul>
 {% endfor %}
