@@ -15,11 +15,13 @@ alias:
   - /pd
   - /time-off
   - /timeoff
+
 ---
 
 Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we'll discuss too. Like most things time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
 
 <!-- prettier-ignore-start -->
+
 
 <!-- vim-markdown-toc GFM -->
 
@@ -142,6 +144,7 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 
 ### Before you go
 
+- Read the travel tips section
 - Pre-writing your desires/goals for time off (see this template).
   - If you begin with the end in mind you can get it done
   - Then you need to check in and review tune over time
@@ -160,6 +163,7 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 ### Every other day checkin
 
 - **Refresh** - Re-read these learnings and your time off priority list.
+- **Know your real riches** - Is anything more valuable then satisfiaction and health? Probably not. Remember that.
 - **Pay yourself first, do the habits** - gives you the energy and strength for everything else.
   - If I don't force my self to maintain my habits, and stay balanced - I won't
   - Don't skip habits, they give you the energy
@@ -199,7 +203,7 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 
 ### Emotional Health
 
-- **Pay yourself first** - Make time for yourself in the morning, go to bed early and get coffee shop time, gratefulness journal, meditation etc. This grounds me through the day, and gives me the calmness I need and a chance to figure out the essential.
+- - **Pay yourself first** - Make time for yourself in the morning, go to bed early and get coffee shop time, gratefulness journal, meditation etc. This grounds me through the day, and gives me the calmness I need and a chance to figure out the essential.
 - **Slack** - Have lots of slack (See [Essential](/essential)).
   - Made time with my family much more enjoyable when I wasn't in a rush and sucecess was being with them.
   - Same with going to the airport, got there hours early. Didn't matter that got stuck at the car rental return. Didn't matter that my flight got delayed, can write, meditate do some inner work.
@@ -209,38 +213,42 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 - **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forced check bags would be lost forever. It wasn't, it was right there. And as a result of waiting for it, I ended up meeting a really cool person.
 - **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bring my sunglasses.
 - **Don't fret micro optimizations** - From Belleville to Hamilon, I spent lots of time trying to figure out what time I'd arrive, what order of gym/work/sister/lunch I'd tackle, trying to micro optimize, spent lots of cycles. Turned out, didn't matter at all.
+- **Remember The [Sublime states](/siy)** - Loving Kindness; Compassion; Altruistic Joy; Equanimity
+
 
 ### Travel Tips
 
+- Booking flights
+    - More leg room is usually worth paying for
+    - Don't get seats in front of emergency exit
+- Rental car
+  - Just get it if you need lots of travel
+  - Get Insurance on your credit card
+  - Take 10 minutes to learn how to use the rental car (wipers, door locks, cruise control, fuel)
 - Pack the afternoon before so you don't have a rush in the morning
-- Hanging at the airport early is totally fine - don't worry it's better then being there late.
 - Make a leave list (Notion)
   - Pack my chargers
   - Put Masks in Bag
   - Make sure batteries are fully charged before leaving
   - Leave for the airport 3 hours early (have lots of slack)
-- Rental car
-  - Just get it if you need lots of travel
-  - Get Insurance on your credit card
-  - Take 10 minutes to learn how to use the rental car (wipers, door locks, cruise control, fuel)
+- Luggage:
+  - Bags on carry on clip together
+  - Bring luggage compression straps.
+    - **I have an extra pocket in my suitcase**
+  - Lost my popcorn popper and my baloon pump and my laptop. Turns out in the extra pocket, I forgot.
+- Airport
+  - Hanging at the airport early is totally fine - don't worry it's better then being there late.
+  - Bring power bars
+  - Don't drink too much
+  - Get Nexus/Frequent Traveller card (well worth the 100 bucks)
+  - Carry a bag with bands and foam roller
+  - Get out your balloon inflator and make balloons for kids
 - Take time to think through daily routines, and when you'll do them
   - Ad hoc doesn't work
 - Re pack day bag
   - Don't haul around stuff you won't use it
 - Have a good packing of keys wallet so don't worry about losing (Fanny pack)
-- Luggage:
-  - Bags on carry on clip together
-  - Bring luggage compression straps.
-- Airport
-
-  - Bring power bars
-  - Don't drink too much
-  - Get Nexus/Frequent Traveller card (well worth the 100 bucks)
-  - Carry a bag with bands and foam roller
-
 - Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
-- **I have an extra pocket in my suitcase**
-  - Lost my popcorn popper and my baloon pump and my laptop. Turns out in the extra pocket, I forgot.
 
 ### Other learnings
 
