@@ -23,6 +23,9 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 <!-- prettier-ignore-start -->
 
 
+<!-- prettier-ignore-end -->
+
+
 <!-- vim-markdown-toc GFM -->
 
 - [The phases of time off](#the-phases-of-time-off)
@@ -52,8 +55,6 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Can you have too much time off?](#can-you-have-too-much-time-off)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
 ## The phases of time off
 
 {%include local_image_float_right.html src="raccoon-vacation.png" %}
@@ -229,6 +230,8 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 - Make a leave list (Notion)
   - Pack my chargers
   - Put Masks in Bag
+    - Sun glasses
+    - Selfie Stick
   - Make sure batteries are fully charged before leaving
   - Leave for the airport 3 hours early (have lots of slack)
 - Luggage:
@@ -240,6 +243,8 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
   - Hanging at the airport early is totally fine - don't worry it's better then being there late.
   - Bring power bars
   - Don't drink too much
+  - Take Sudafed
+  - Get AirPlugs
   - Get Nexus/Frequent Traveller card (well worth the 100 bucks)
   - Carry a bag with bands and foam roller
   - Get out your balloon inflator and make balloons for kids
