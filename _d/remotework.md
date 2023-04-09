@@ -16,11 +16,19 @@ In March 2020, the world shut down from Covid 19. In May 2020, I started a new j
 
 <!-- prettier-ignore-start -->
 
+<!-- prettier-ignore-end -->
+
 <!-- vim-markdown-toc GFM -->
 
 - [The Good](#the-good)
 - [Meetings](#meetings)
-    - [One head per box.](#one-head-per-box)
+    - [One head per box](#one-head-per-box)
+    - [Whiteboards](#whiteboards)
+- [Building Culture/Rapport](#building-culturerapport)
+    - [Donut/Coffee Roulette](#donutcoffee-roulette)
+    - [Periodic 1 hour 1:1s](#periodic-1-hour-11s)
+    - [Make periodic IRL time getting to know each other](#make-periodic-irl-time-getting-to-know-each-other)
+    - [Group quirks](#group-quirks)
 - [The hard to replicate micro moments](#the-hard-to-replicate-micro-moments)
     - [The 5 minute events](#the-5-minute-events)
     - [Knowing people are disruptable](#knowing-people-are-disruptable)
@@ -33,14 +41,14 @@ In March 2020, the world shut down from Covid 19. In May 2020, I started a new j
     - [Collaborative Documents](#collaborative-documents)
     - [Remote workers vs Flexible Time In Office](#remote-workers-vs-flexible-time-in-office)
     - [Social Things](#social-things)
-    - [The environment controls are emotions and engagement](#the-environment-controls-are-emotions-and-engagement)
+    - [The environment controls actions and emotions](#the-environment-controls-actions-and-emotions)
     - [Remote Work and Camera Setup](#remote-work-and-camera-setup)
     - [Cute and ackward moments](#cute-and-ackward-moments)
-- [A Post E-mail world.](#a-post-e-mail-world)
+- [A Post E-mail world](#a-post-e-mail-world)
     - [Long term information storage](#long-term-information-storage)
-    - [Keeping track of non-immediate follow ups:](#keeping-track-of-non-immediate-follow-ups)
-    - [Grouping everything at self controlled granularity with rules and folders.](#grouping-everything-at-self-controlled-granularity-with-rules-and-folders)
-    - [Discrete "units of action" and follow ups for non-public tasks.](#discrete-units-of-action-and-follow-ups-for-non-public-tasks)
+    - [Keeping track of non-immediate follow ups](#keeping-track-of-non-immediate-follow-ups)
+    - [Grouping everything at self controlled granularity with rules and folders](#grouping-everything-at-self-controlled-granularity-with-rules-and-folders)
+    - [Discrete "units of action" and follow ups for non-public tasks](#discrete-units-of-action-and-follow-ups-for-non-public-tasks)
     - [Focused Threads](#focused-threads)
     - [Other Use Cases](#other-use-cases)
     - [Quip vs Wiki](#quip-vs-wiki)
@@ -49,8 +57,6 @@ In March 2020, the world shut down from Covid 19. In May 2020, I started a new j
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
 ## The Good
 
 - We get better at flexiblity
@@ -61,6 +67,30 @@ In March 2020, the world shut down from Covid 19. In May 2020, I started a new j
 ### One head per box
 
 When there are many people in a room, but others are remote, it's really hard to engage with the people in the room, especially when they're talking. Need them to talk into boxes. Yup, as a remote person you get more value when everyone is talking. Arreeed.
+
+### Whiteboards
+
+You need a collabortive whiteboard app. My favorite is Excalidraw. Open source, keyboard short cuts, and multiple users. Strongly, strongly recommend
+
+
+## Building Culture/Rapport
+
+### Donut/Coffee Roulette
+
+Meeting folks 1:1 is ackward, force it to happen with a coffee roulette (Meta) or Donut for Slack.
+
+### Periodic 1 hour 1:1s
+
+If your goup has a 30 minute meeting culture, it's hard to get into the personal stuff, make the meeting an hour and you'll have space for it.
+
+### Make periodic IRL time getting to know each other
+
+When you get together IRL, focus on connecting, not on working, that'll pay dividends later.
+
+### Group quirks
+
+We bond by having unique shared experiences. Perhaps a team wave, or a funny clap. These also work in person but are probably more important remotely.
+
 
 ## The hard to replicate micro moments
 
@@ -88,7 +118,7 @@ The team I joined was very well gelled, as a result you didn't see much of peopl
 
 ### Social Things
 
-### The environment controls are emotions and engagement
+### The environment controls actions and emotions
 
 - Work at work, home at home.
 - But when work at home, need a way to change work and home
