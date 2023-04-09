@@ -14,8 +14,8 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 
 ### Health and Habits
 
-- ☐ Get a gym membership and go every other day at least
-    - ☐ Do the ice bath
+- ☑ Get a gym membership and go every other day at least
+  - ☐ Do the ice bath
 - ☑ Bring travel scale
 - ☐ Get popcorn maker
 - ☐ Get boiled eggs and cucumbers
@@ -26,6 +26,12 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 
 - TBD: Medival Times
 - TBD: Harry potter play
+- Went to circus
+- Got Zach his A&W diet rootbeer
+- POUTINE!!
+- Kids complaining about me doing stretches
+- Zach thinking we were sleeping in the Tesla
+- Guy on airplane saying he loved my enthusiasim.
 
 ## Success Stories
 
@@ -33,6 +39,8 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 - TBD: Get kids to the pool
 
 ## Top Learnings
+
+- Even if you think the store is closed, it might be open go for it!
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -67,12 +75,9 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-
-
 ## Relationships (3/5)
 
 ### Friends
-
 
 - ☐ Catch up with Baltasar
 - ☐ Really enjoy Mom and Sister
@@ -111,8 +116,7 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 
 ## Tech Guru (X/5)
 
-- Want to keep this to a minimum,  only play with GPT, but even that minimize
-
+- Want to keep this to a minimum, only play with GPT, but even that minimize
 
 ## Cognitive Health (X/5)
 
@@ -124,11 +128,11 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 
 ### Meditation
 
-- ☐  Daily meditation!
+- ☐ Daily meditation!
 
 ### 750 words/Gratefulness
 
-- ☐  Daily Gratefulness journal/750 words!
+- ☐ Daily Gratefulness journal/750 words!
 
 ## Motivation (4/5)
 
