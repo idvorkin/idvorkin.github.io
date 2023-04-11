@@ -15,7 +15,6 @@ alias:
   - /pd
   - /time-off
   - /timeoff
-
 ---
 
 Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we'll discuss too. Like most things time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
@@ -23,7 +22,6 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 <!-- prettier-ignore-start -->
 
 
-<!-- prettier-ignore-end -->
 
 
 <!-- vim-markdown-toc GFM -->
@@ -48,6 +46,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Every other day checkin](#every-other-day-checkin)
     - [Physical Health](#physical-health)
     - [Emotional Health](#emotional-health)
+    - [Identity Health](#identity-health)
     - [Travel Tips](#travel-tips)
     - [Other learnings](#other-learnings)
 - [Other Resources](#other-resources)
@@ -55,6 +54,8 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Can you have too much time off?](#can-you-have-too-much-time-off)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 ## The phases of time off
 
 {%include local_image_float_right.html src="raccoon-vacation.png" %}
@@ -210,18 +211,23 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
   - Same with going to the airport, got there hours early. Didn't matter that got stuck at the car rental return. Didn't matter that my flight got delayed, can write, meditate do some inner work.
 - **Continuous learning** - Always a learning opportunity, learn what needs to be learned and move on.
 - **Don't berate mistakes** - Getting off the plane, it was super bright in Toronto. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I hav ean abilityt o squint. Nothing terrible happens.
-  - TODO: Add a not on caring vs mattering. Caring is your emotional response(un avoidable), but mattering is the objective difference it makes to whom, and over what time period.
+  - TODO: Add a note on caring vs mattering. Caring is your emotional response(un avoidable), but mattering is the objective difference it makes to whom, and over what time period.
 - **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forced check bags would be lost forever. It wasn't, it was right there. And as a result of waiting for it, I ended up meeting a really cool person.
 - **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bring my sunglasses.
 - **Don't fret micro optimizations** - From Belleville to Hamilon, I spent lots of time trying to figure out what time I'd arrive, what order of gym/work/sister/lunch I'd tackle, trying to micro optimize, spent lots of cycles. Turned out, didn't matter at all.
 - **Remember The [Sublime states](/siy)** - Loving Kindness; Compassion; Altruistic Joy; Equanimity
 
+### Identity Health
+
+- Go to improv jams/dojos
+- Do magic for folks
+- Do balloons for kids, they love them.
 
 ### Travel Tips
 
 - Booking flights
-    - More leg room is usually worth paying for
-    - Don't get seats in front of emergency exit
+  - More leg room is usually worth paying for
+  - Don't get seats in front of emergency exit
 - Rental car
   - Just get it if you need lots of travel
   - Get Insurance on your credit card
