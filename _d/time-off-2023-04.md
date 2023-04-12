@@ -18,7 +18,7 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
   - ☐ Do the ice bath
 - ☑ Bring travel scale
 - ☐ Get popcorn maker
-- ☐ Get boiled eggs and cucumbers
+- ☑ Get boiled eggs and cucumbers
 
 ## Moments
 
@@ -29,14 +29,17 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 - Went to circus
 - Got Zach his A&W diet rootbeer
 - POUTINE!!
-- Kids complaining about me doing stretches
+- Kids complaining about me doing stretches (Second hand embarassent)
 - Zach thinking we were sleeping in the Tesla
 - Guy on airplane saying he loved my enthusiasim.
+- Second City, me on stage, Amelia AirHart, and Amelia doing an easter skit, For not having to talk to peope
+- Taking Zach to improv dojo (it was fun,and he loved it)
+- Cold plunge, then hottub, then sauna, and then massage chair
 
 ## Success Stories
 
 - Supported Tori in working when she needed to work
-- TBD: Get kids to the pool
+- Getting kids to the pool
 
 ## Top Learnings
 
@@ -88,7 +91,7 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 
 ### Zach
 
-- ☐ Go to an improv Dojo
+- ☑ Go to an improv Dojo
 - Set a good example for him by being moderate on eating junk.
 
 ### Amelia
