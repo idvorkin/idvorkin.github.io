@@ -47,7 +47,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Physical Health](#physical-health)
     - [Emotional Health](#emotional-health)
     - [Identity Health](#identity-health)
-    - [Travel Tips](#travel-tips)
+    - [Travel Tips - Before you go](#travel-tips---before-you-go)
     - [Other learnings](#other-learnings)
 - [Other Resources](#other-resources)
     - [Optimize for energy, not time](#optimize-for-energy-not-time)
@@ -191,6 +191,8 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 
 ### Physical Health
 
+- **Nothing tastes as good as skinny feels** - So true, regardless of metric: feeling great, looking great.
+- **No booze** - Those days are over for me. Messes up my sleep and I Feel worse. Go take a cold shower instead.
 - **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membereship with GoodLife, let me do my top pirorities daily, even had a massage chair.
 
 - **Bring bands, light gym equipment** - Have everything to stretch and self massage, and light workouts
@@ -221,9 +223,10 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 
 - Go to improv jams/dojos
 - Do magic for folks
+  - Find some guy by himself, practice him as he won't be threatened
 - Do balloons for kids, they love them.
 
-### Travel Tips
+### Travel Tips - Before you go
 
 - Booking flights
   - More leg room is usually worth paying for
@@ -258,8 +261,11 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
   - Ad hoc doesn't work
 - Re pack day bag
   - Don't haul around stuff you won't use it
+- If you forget stuff, just buy it from walmart instead of suffering
+- AirTags for everything
 - Have a good packing of keys wallet so don't worry about losing (Fanny pack)
 - Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
+- For the stuff I forget - Just go to walmart/target and buy it. It's basically disposable.
 
 ### Other learnings
 
