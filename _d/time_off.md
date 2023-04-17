@@ -231,6 +231,7 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 - Booking flights
   - More leg room is usually worth paying for
   - Don't get seats in front of emergency exit
+  - Just get wifi for flights over 3 hours, don't agonize
 - Rental car
   - Just get it if you need lots of travel
   - Get Insurance on your credit card
