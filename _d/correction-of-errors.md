@@ -19,6 +19,7 @@ Everyone can make a mistake once, that's totally fine. Repeating mistakes is una
 
 - [Why COEs](#why-coes)
 - [Sections and questions](#sections-and-questions)
+    - [Additional Context](#additional-context)
     - [What is the customer impact](#what-is-the-customer-impact)
     - [What was the impact?](#what-was-the-impact)
     - [What is the Timeline?](#what-is-the-timeline)
@@ -41,6 +42,8 @@ Everyone can make a mistake once, that's totally fine. Repeating mistakes is una
 ## Why COEs
 
 ## Sections and questions
+
+### Additional Context
 
 ### What is the customer impact
 

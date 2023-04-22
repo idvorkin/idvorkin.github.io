@@ -52,6 +52,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
     - [Generational wealth and camels](#generational-wealth-and-camels)
     - [Timing the markets](#timing-the-markets)
+    - [The 3 types of rich:](#the-3-types-of-rich)
     - [The unquenchable thirst](#the-unquenchable-thirst)
 - [Other questions](#other-questions)
     - [How much is 1%](#how-much-is-1)
@@ -66,10 +67,10 @@ You're in the same boat as Hannah. A normal software engineer at big companies w
 
 **Hannah** assumptions:
 
-* Has a 401k with her company which she maxes annually
-* Ineligible for Roth deductions
-* Marginal tax rate of 35%
-* Long Term Capital Gains  Rates of 15%
+- Has a 401k with her company which she maxes annually
+- Ineligible for Roth deductions
+- Marginal tax rate of 35%
+- Long Term Capital Gains Rates of 15%
 
 ## IRAs Non-Taxable Saving Accounts
 
@@ -85,7 +86,7 @@ TODO show calculation for Roth growth
 
 TODO show calculation for IRA growth
 
-### Taxable income, and capital gains.
+### Taxable income, and capital gains
 
 Income is the money you make. That starts by being your wages, but as you get assets like stocks, bonds and houses, things get a big more complex. Let start with easy sources of income:
 
@@ -113,15 +114,15 @@ Assuming your tax rate is the same, it doesn't matter which you choose. If your 
 1. Your tax rate can go up by moving to a state with higher state taxes (e.g. From WA w/0% state tax to HI w/TK% state tax).
 2. If you've saved a lot, your marginal tax rate might be the same, but your average tax rate (which will be on your retirement withdrawals) is most likely lower.
 
-### IRA and Roth IRA contribution limits.
+### IRA and Roth IRA contribution limits
 
 You're limited to how much you can put in your IRA and Roth. Odds are you can't put money into your Roth IRA because you make to much.
 
-### Back door Roth.
+### Back door Roth
 
 Tax law is goofy. You can't deposit money into a ROTH since you're over the limit, but you can take money from your IRA and convert into a Roth IRA. But there's a rub - the Pro-Rata rule.
 
-### The pro-Rata rule.
+### The pro-Rata rule
 
 Even though you are using after tax dollars to transfer money to the Roth IRA, you can't do the math like that. The rules (arbitrary) state that the money you take over is in the ratio of your IRA before and after tax contribution.
 
@@ -148,7 +149,7 @@ Below is tax rate by income in 2020.
 | 15%      | Upto 488K                |
 | 20%      | Above 488K               |
 
-### Cash positions and high yield savings.
+### Cash positions and high yield savings
 
 Often, we think about holding cash, and think about holding it in a place with no interest. Keep this money in high yield bank accounts, which can give [close to 2% (as of Dec '19)](https://www.nerdwallet.com/best/banking/high-yield-online-savings-accounts)
 At Fidelity you can keep your core cash in a liquid low risk mutual fund [SPAXX](https://fundresearch.fidelity.com/mutual-funds/summary/31617H102), however this has a 0.42% expense ratio, which will eat 25% - 50% of your earned interest.
@@ -265,6 +266,12 @@ The correct strategy is buying no load broad spectrum index funds.
 Remember:
 
 > Time in market beats timing the market.
+
+### The 3 types of rich
+
+1. Rich enough you don't care the price of groceries
+1. Rich enough you don't care the price of vacation
+1. Rich enough you don't care the price of a car
 
 ### The unquenchable thirst
 
