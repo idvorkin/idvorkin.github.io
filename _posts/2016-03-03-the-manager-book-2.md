@@ -128,6 +128,7 @@ This post uses the word manager, but the most topics apply to all software job f
     - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
     - [The flip: When charter changes](#the-flip-when-charter-changes)
     - [Insufficient progress - Double down or pivot](#insufficient-progress---double-down-or-pivot)
+    - [Layoffs](#layoffs)
 - [Personal Motivations](#personal-motivations)
     - [Why do you find management attractive](#why-do-you-find-management-attractive)
     - [What is your dream job](#what-is-your-dream-job)
@@ -1642,40 +1643,42 @@ In a common case, the decision will be sudden, often with an edict from leadersh
 
 NOTES: - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
 
-<!--
-
-- ### Layoffs
+### Layoffs
 
 (Some of this is copied from [Ashish](https://www.linkedin.com/pulse/being-leadermanager-hard-during-layoffs-ashish-singh?trk=public_post_feed-article-content) )
 
 Before:
 
-* Be careful about telling people you don't know anything, at some point you will, and you can and will be trapped in a lie.  (I don't know best thing to do here).
-* Remind people if they can't control something don't focus on it. Focus on what they can influence.
-* Do not tell people they will not be laid off.  Unless you know, don't.
+- Be careful about telling people you don't know anything; at some point, you will, and you can and will be trapped in a lie. (I don't know the best thing to do here).
+- Remind people if they can't control something, don't focus on it. Focus on what they can influence.
+- Do not tell people they will not be laid off. Unless you know, don't.
 
 Day Of:
 
-Life suddenly seems to have slapped you hard and slowed down the day you find out your team is impacted. These are folks you have worked with in some cases for years, they came over to your team because they believed in you and your vision. The news makes you feel so small and helpless. While your heart is sinking and you are still trying to convince yourself that this is really happening, you are still expected to run the show, business as usual.
+Life suddenly seems to have slapped you hard and slowed down the day you find out your team is impacted. These are folks you have worked with in some cases for years; they came over to your team because they believed in you and your vision. The news makes you feel so small and helpless. While your heart is sinking and you are still trying to convince yourself that this is really happening, you are still expected to run the show, business as usual.
 
-The folks you support still trust you,  and want you to help them navigate through the situation, get them the answers they are looking for and you may not have any clue of what to do next.
+The folks you support still trust you and want you to help them navigate through the situation, get them the answers they are looking for, and you may not have any clue of what to do next.
 
-
-* Get up early and get ready.
-* This will be a very emotionally draining day.
-* Excellent chance you won't know what's going on
-* Remind people it's a tough day and take care of themselves.
-* Discourage people speculating what and why
+- Get up early and get ready.
+- This will be a very emotionally draining day.
+- Excellent chance you won't know what's going on.
+- Remind people it's a tough day and take care of themselves.
+- Discourage people from speculating what and why.
 
 Next days:
 
-* Mental health experts recommend against group meetings. Keep everything 1:1
-* Reduced productivity for days
-* Possible re-org, with potential for lots of uncertainty.
-* It's easy to "mourn" the people who were impacted. However, they are not dead.
-* Ask impacted folks if they'd like to get together, it probably means a lot to them to get closure.
+- Mental health experts recommend against group meetings. Keep everything 1:1.
+- Reduced productivity for days.
+- Possible re-org, with potential for lots of uncertainty.
+- It's easy to "mourn" the people who were impacted. However, they are not dead.
+- Ask impacted folks if they'd like to get together; it probably means a lot to them to get closure.
 
--->
+General
+
+- If your team/other people aren't directly impacted, remind them it can be a very hard day for others, so be empathetic.
+- There will be pain; people may say negative stuff from a place of deep emotions, and that's a function of pain.
+- Some people need to make jokes to relieve pressure (I'm one of them). Remind them, and yourself, to be respectful of others at the same time.
+- Everyone processes this differently; offer to meet folks and have 1:1s privately, some will want them, others will not, honor their wishes.
 
 ## Personal Motivations
 
