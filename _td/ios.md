@@ -16,9 +16,6 @@ I spent a **LOT** of time on my iPhone/iPad - here are some of the tools/tips I 
 - [General](#general)
     - [Global Controls (For iPhone X)](#global-controls-for-iphone-x)
     - [iMessage Turning into Green Dots](#imessage-turning-into-green-dots)
-    - [Voice Control](#voice-control)
-    - [Background noises](#background-noises)
-    - [Read aloud](#read-aloud)
     - [Siri (For iPhone X)](#siri-for-iphone-x)
     - [HomeKit](#homekit)
     - [Health Kit](#health-kit)
@@ -63,20 +60,6 @@ I spent a **LOT** of time on my iPhone/iPad - here are some of the tools/tips I 
 Sometimes iMessage gets screwed up, when that happens, it's because iPhone is using email to start convos (I think?)
 
 GoTo settings -> Imessage and ensure you're starting from your phone numbe.
-
-### Voice Control
-
-You can take full control from Voice Control, this lets you dictate with out starting with siri, and tap on buttons. Go look up accessibility -> Voice Control
-
-<https://www.youtube.com/watch?v=eg22JaZWAgs>
-
-### Background noises
-
-You can turn on background noise to be comfortable in a loud environment
-
-### Read aloud
-
-Lets Phone be a screen reader
 
 ### Siri (For iPhone X)
 
