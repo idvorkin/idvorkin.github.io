@@ -14,6 +14,7 @@ LLMs and GenAI is new. A great way to build models for new things is with analog
 - [A New Computational Model - Interns](#a-new-computational-model---interns)
     - [The Perfect Intern](#the-perfect-intern)
     - [Your Intern Can't Read Your Mind - Prompting](#your-intern-cant-read-your-mind---prompting)
+    - [Good Intern - Super powers](#good-intern---super-powers)
     - [Bad Itern - Intern Quirks and Mitigations](#bad-itern---intern-quirks-and-mitigations)
     - [What are you thinking - Understandability](#what-are-you-thinking---understandability)
     - [Brain Surgery - Do I need to understand paramater count and neural networks](#brain-surgery---do-i-need-to-understand-paramater-count-and-neural-networks)
@@ -57,10 +58,18 @@ ASIDE: No interns were harmed in the creation of this talk. I love interns, and 
 - Very hard to evaluate if your intern did good
 - See prompt engineering.
 
+### Good Intern - Super powers
+
+- Understand English and high complexity
+  - Don't need to 'dumb it down', just talk in natural language
+- Infinite creativity
+  - Don't need to 'search' for an image, just have them genereate it!
+
 ### Bad Itern - Intern Quirks and Mitigations
 
 - Non-deterministic: Every call you get a different intern.
 - Sometimes it'll just be a bad intern, can lie, or ignore instructions.
+- Slow: Current models have bad latency and rate limits (bleh)
 - TODO: Link to build '23 talk by OpenAI scientist.
 - Sometimes you get a dud and they ignore the instructions. :(
 - The longer the answer, the more they can think; short answers have them thinking less.
