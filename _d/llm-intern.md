@@ -30,7 +30,11 @@ LLMs and GenAI is new. A great way to build models for new things is with analog
     - [Maybe Reading Your Mind Is Too Hard - Input Affordances](#maybe-reading-your-mind-is-too-hard---input-affordances)
     - [Give Me Choices - Output Affordances](#give-me-choices---output-affordances)
     - [Balancing Code and Prompts](#balancing-code-and-prompts)
-    - [Bad Intern -](#bad-intern--)
+- [Bad Intern - All the things that can go wrongf](#bad-intern---all-the-things-that-can-go-wrongf)
+    - [Alignment - Don't be evil](#alignment---dont-be-evil)
+    - [Societal Bias](#societal-bias)
+    - [Git supply chain attacks](#git-supply-chain-attacks)
+    - [AGI taking over the world](#agi-taking-over-the-world)
 - [Appendix](#appendix)
     - [LLM-Book](#llm-book)
     - [Talk to the intern](#talk-to-the-intern)
@@ -113,7 +117,22 @@ Conventional Programming vs Delegating to an Intern
 
 ### Balancing Code and Prompts
 
-### Bad Intern -
+## Bad Intern - All the things that can go wrongf
+
+### Alignment - Don't be evil
+
+- Getting around the blocks. Answer in spanish, then translate the block to english
+- See password guessing
+
+### Societal Bias
+
+- Draw a picture of a doctor - 90% male
+- Societal biases are in the data, and the model will learn them.
+- Yesterdays heritic migth be today's genius
+
+### Git supply chain attacks
+
+### AGI taking over the world
 
 ## Appendix
 
