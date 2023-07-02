@@ -30,7 +30,7 @@ LLMs and GenAI is new. A great way to build models for new things is with analog
     - [Maybe Reading Your Mind Is Too Hard - Input Affordances](#maybe-reading-your-mind-is-too-hard---input-affordances)
     - [Give Me Choices - Output Affordances](#give-me-choices---output-affordances)
     - [Balancing Code and Prompts](#balancing-code-and-prompts)
-- [Bad Intern - All the things that can go wrongf](#bad-intern---all-the-things-that-can-go-wrongf)
+- [Bad Intern - All the things that can go wrong](#bad-intern---all-the-things-that-can-go-wrong)
     - [Alignment - Don't be evil](#alignment---dont-be-evil)
     - [Societal Bias](#societal-bias)
     - [Git supply chain attacks](#git-supply-chain-attacks)
@@ -45,7 +45,7 @@ LLMs and GenAI is new. A great way to build models for new things is with analog
 
 ## A New Computational Model - Interns
 
-ASIDE: No interns were harmed in the creation of this talk. I love interns, and have been one myself. I'm just using them as a metaphor for LLMs.
+ASIDE: No interns were harmed in the creation of this talk. I love interns, and have been one myself. I'm just using them as a metaphor for LLMs. If you're an intern, or recently graduated, feel free to read my advice to y'all - <http://bit.ly/igor-advice-22>
 
 ### The Perfect Intern
 
@@ -117,7 +117,7 @@ Conventional Programming vs Delegating to an Intern
 
 ### Balancing Code and Prompts
 
-## Bad Intern - All the things that can go wrongf
+## Bad Intern - All the things that can go wrong
 
 ### Alignment - Don't be evil
 
