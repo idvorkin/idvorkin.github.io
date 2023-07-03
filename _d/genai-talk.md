@@ -27,6 +27,12 @@ Generative AI (GenAI) is taking the world by storm, and it takes a new mindset t
     - [Programmer](#programmer)
 - [Programs with hidden interns - Blending Code and Mind Reading](#programs-with-hidden-interns---blending-code-and-mind-reading)
     - [LLM as Computer](#llm-as-computer)
+    - [Natural Language and reasoning as state](#natural-language-and-reasoning-as-state)
+    - [How to merge a program and user input with prompts](#how-to-merge-a-program-and-user-input-with-prompts)
+    - [How to maintain state with prompts](#how-to-maintain-state-with-prompts)
+    - [How to influence control flow with prompts](#how-to-influence-control-flow-with-prompts)
+    - [How to interact with external systems with prompts](#how-to-interact-with-external-systems-with-prompts)
+    - [Great, why not just write the whole program in prompts](#great-why-not-just-write-the-whole-program-in-prompts)
     - [The Before Times - It's All Code (Code)](#the-before-times---its-all-code-code)
     - [The Perfect Program - It Just Reads Your Mind (Prompts)](#the-perfect-program---it-just-reads-your-mind-prompts)
     - [Maybe Reading Your Mind Is Too Hard - Input Affordances](#maybe-reading-your-mind-is-too-hard---input-affordances)
@@ -87,6 +93,13 @@ ASIDE: No interns were harmed in the creation of this talk. I love interns, and 
 
 ### Annual Review - Evaluating your intern
 
+- Evaluating at design time
+- Evaluate at runtime
+- Handling a runtime failure
+- Human Review
+- Review with another model
+- Voting System
+
 ### Why the heck did your intern do that - Understandability
 
 ### Brain Surgery - Do I need to understand paramater count and neural networks
@@ -127,10 +140,103 @@ Conventional Programming vs Delegating to an Intern
 
 ### LLM as Computer
 
-- LLM is the CPU
-- You need to write the program for the LLM, that’s the prompt
-- Big problem is the context window, or RAM.
-- Your job is the efficiently use the RAM, you can store anything you want in the hard drive. You need to figure out how to go from hard drive data to RAM
+- (Thinking: Should there be a concept of conversation sidebared)
+- LLM is a really simple computer/CPU
+  - A prompt for input, a response for output.
+  - Stateless
+  - No control flow
+  - No I/O (Except the prompt, and the response)
+  - No Reading External Storage
+- In classical coding, the computer program is separate from the user input,
+  - In LLM there's only the prompt.
+  - Thus the prompt must be the program and the input
+  - So think of the prompt as the resolution of PromptTemplate(UserInput)
+- In classical coding, there are variables, and control flow,
+  - In LLMs there are only the prompt
+  - We can simulate state/control flow by keeping the history of the previous prompts/response in the current prompt
+  - This is why the prompt format of messages has evolved.
+- In classical coding you can access storage, and have lots of RAM.
+  - In LLMs you can access no storage beyond the prompt (think of it as RAM)
+  - In LLMs you have limited RAM, so you need to be efficient with it.
+  - In LLMs use need to efficiently use the RAM, by deciding which data to place in it.
+
+### Natural Language and reasoning as state
+
+Talk about how weird it is coming with a computer mindset
+
+### How to merge a program and user input with prompts
+
+Create a prompt by instantiating a prompt template with the user input.
+
+PromptTemplate = "I'll ask these facts later {user_input}"
+
+Prompt:
+
+```ascii
+Here is a conversation between an AI and a user,  The AI is very curt.
+ USER: I'll ask these facts later. I like fruit
+```
+
+Response:
+
+```ascii
+AI: Noted.
+```
+
+### How to maintain state with prompts
+
+When talking to an intern, they have state in that they remember the conversation. But as we discussed you get a new intern for every call to the intern factory.
+
+You work around this "stateless" problem by having the prompt be the entire conversation to date.
+
+Say we now want to ask what fruit the user likes, the prompt is not just
+
+Prompt:
+
+```ascii
+USER:  What food do I like?
+```
+
+It has to include the entire history
+
+```ascii
+Here is a conversation between an AI and a user,  The AI is very curt.
+USER: I'll ask these facts later. I like fruit
+AI: Noted.
+USER:  What food do I like?
+```
+
+Response:
+
+```ascii
+AI: You like fruit.
+```
+
+Here's where the term prompt gets confusing. Prompt refers to the entire prompt passed to the LLM, which is the entire conversation. However like most converations it is usually append only with the latest users input transformation on the end (more complexity but will save that for later).
+
+So normally it's:
+
+```python
+prompt = PromptTemplate(get_user_input())
+conversation += [prompt]
+conversation += CallLM(conversation)
+```
+
+E.g. extend the conversation by extending only a singl new prompt
+
+And the only output to the user is the final response
+
+### How to influence control flow with prompts
+
+Should I merge with the next one?
+
+### How to interact with external systems with prompts
+
+- (Thinking) there is program execution as represented by history, but there's also program execution as requested by the LLM. Need to think through that.
+
+Physically, prompts can only do stateless data transformations, not control flow or I/O.
+
+### Great, why not just write the whole program in prompts
 
 ### The Before Times - It's All Code (Code)
 
