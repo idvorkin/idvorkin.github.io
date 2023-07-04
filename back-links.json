@@ -17,6 +17,7 @@
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
         "/affirm": "/affirmations",
+        "/ai-talk": "/genai-talk",
         "/alexa-charity": "/toysfortots",
         "/anxious": "/anxiety",
         "/architecture": "/design",
@@ -388,7 +389,7 @@
             "file_path": "_site/ai-journal.html",
             "outgoing_links": [
                 "/ai-art",
-                "/ai-talk",
+                "/genai-talk",
                 "/gpt"
             ],
             "incoming_links": [],
@@ -1809,7 +1810,9 @@
             "description": "Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!\n\n",
             "file_path": "_site/genai-talk.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/ai-journal"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/genai-talk.md",
             "doc_size": 24000
