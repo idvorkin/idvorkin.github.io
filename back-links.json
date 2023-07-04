@@ -65,6 +65,7 @@
         "/frugality": "/parkinson",
         "/frustration": "/anger",
         "/fuck-shame": "/shame",
+        "/genai-intern": "/genai-talk",
         "/getting-things-done": "/gtd",
         "/getting-to-yes": "/negotiate",
         "/goal": "/goals",
@@ -85,9 +86,12 @@
         "/imposter": "/insecure",
         "/in-real-life": "/irl",
         "/insecurity": "/insecure",
+        "/intern-llm": "/genai-talk",
         "/jupyter": "/pandas",
         "/life-chapters": "/chapters",
         "/life-stages": "/chapters",
+        "/llm-intern": "/genai-talk",
+        "/llm-talk": "/genai-talk",
         "/loneliness": "/lonely",
         "/machine-learning": "/ml",
         "/machinelearning": "/ml",
@@ -369,10 +373,28 @@
             "outgoing_links": [
                 "/gpt"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/ai-journal"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/ai_art.md",
             "doc_size": 14000
+        },
+        "/ai-journal": {
+            "py/object": "__main__.Page",
+            "url": "/ai-journal",
+            "title": "Igor's AI Journal",
+            "description": "Woah, there’s so much stuff to explore in AI. I’m going to keep a journal of stuff I’m looking at.\n\n",
+            "file_path": "_site/ai-journal.html",
+            "outgoing_links": [
+                "/ai-art",
+                "/ai-talk",
+                "/gpt"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/ai-journal.md",
+            "doc_size": 10000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -826,7 +848,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/correction-of-errors.md",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/comp": {
             "py/object": "__main__.Page",
@@ -1275,6 +1297,22 @@
             "markdown_path": "_d/time-off-2022-12.md",
             "doc_size": 21000
         },
+        "/d/time-off-2023-04": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2023-04",
+            "title": "Time off April Break 2023",
+            "description": "It’s spring break 2023! The kids and I are going to Canada to see Baba, Yelena, Justin, Sam and Baltasar and Rada’s Famliy. Unfortunately Tori can’t come as she’s critical to her play opening and it’ll be opening that week.\n\n",
+            "file_path": "_site/d/time-off-2023-04.html",
+            "outgoing_links": [
+                "/happy",
+                "/moments",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2023-04.md",
+            "doc_size": 15000
+        },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
             "url": "/d/where-have-all-the-bugs-gone",
@@ -1286,6 +1324,18 @@
             "redirect_url": "",
             "markdown_path": "_d/where-have-all-the-bugs-gone.md",
             "doc_size": 10000
+        },
+        "/dad": {
+            "py/object": "__main__.Page",
+            "url": "/dad",
+            "title": "Being a Good Dad - A Guide to Fatherhood",
+            "description": "\n\n\n",
+            "file_path": "_site/dad.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/gpt-dad.md",
+            "doc_size": 17000
         },
         "/death": {
             "py/object": "__main__.Page",
@@ -1752,6 +1802,18 @@
             "markdown_path": "_d/frog.md",
             "doc_size": 19000
         },
+        "/genai-talk": {
+            "py/object": "__main__.Page",
+            "url": "/genai-talk",
+            "title": "Your new interns - GenAI for fun and profit",
+            "description": "Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!\n\n",
+            "file_path": "_site/genai-talk.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/genai-talk.md",
+            "doc_size": 24000
+        },
         "/getting-to-yes-with-yourself": {
             "py/object": "__main__.Page",
             "url": "/getting-to-yes-with-yourself",
@@ -1801,15 +1863,43 @@
             "title": "GPT3 and language models",
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
             "file_path": "_site/gpt.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/nurture",
+                "/rapport"
+            ],
             "incoming_links": [
                 "/ai-art",
+                "/ai-journal",
                 "/ml",
                 "/nlp"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/gpt2.md",
-            "doc_size": 21000
+            "markdown_path": "_d/llm-intern.md",
+            "doc_size": 22000
+        },
+        "/gpt-7h": {
+            "py/object": "__main__.Page",
+            "url": "/gpt-7h",
+            "title": "LEADER: Another take on the 7 habts",
+            "description": "\n\n\n",
+            "file_path": "_site/gpt-7h.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/gpt-7-habits.md",
+            "doc_size": 28000
+        },
+        "/gpt-system-design": {
+            "py/object": "__main__.Page",
+            "url": "/gpt-system-design",
+            "title": "System Design Interviews- The SHINE Method",
+            "description": "\n\n\n",
+            "file_path": "_site/gpt-system-design.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/gpt-system-design-interview.md",
+            "doc_size": 25000
         },
         "/grammerly": {
             "py/object": "__main__.Page",
@@ -1889,6 +1979,7 @@
                 "/d/time-off-2022-07",
                 "/d/time-off-2022-11",
                 "/d/time-off-2022-12",
+                "/d/time-off-2023-04",
                 "/hobby",
                 "/joy",
                 "/siy",
@@ -1897,6 +1988,18 @@
             "redirect_url": "",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "doc_size": 22000
+        },
+        "/heath-class-act": {
+            "py/object": "__main__.Page",
+            "url": "/heath-class-act",
+            "title": "Being a Class Act - How to Stand Out with Grace and Dignity in Any Situation",
+            "description": "\n\n\n",
+            "file_path": "_site/heath-class-act.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/class-act-4.md",
+            "doc_size": 28000
         },
         "/hobby": {
             "py/object": "__main__.Page",
@@ -1946,6 +2049,18 @@
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-12-humans-are-underrated.md",
             "doc_size": 10000
+        },
+        "/husband": {
+            "py/object": "__main__.Page",
+            "url": "/husband",
+            "title": "Being a GOOD Husband",
+            "description": "\n\n\n",
+            "file_path": "_site/husband.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/good_husband-4.md",
+            "doc_size": 20000
         },
         "/idle": {
             "py/object": "__main__.Page",
@@ -2005,7 +2120,7 @@
                 "/depression"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/imposter.md",
+            "markdown_path": "_d/ai-journal.md",
             "doc_size": 11000
         },
         "/insomnia": {
@@ -2037,6 +2152,18 @@
             "redirect_url": "",
             "markdown_path": "_posts/2016-11-26-interviewsarehard.markdown",
             "doc_size": 11000
+        },
+        "/ios-accessibility": {
+            "py/object": "__main__.Page",
+            "url": "/ios-accessibility",
+            "title": "iOS Accessibility",
+            "description": "iOS has some great accessibility features which allow hands-free and eye-less control of the device. Here they are.\n\n",
+            "file_path": "_site/ios-accessibility.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_td/ios-accessibility.md",
+            "doc_size": 10000
         },
         "/irl": {
             "py/object": "__main__.Page",
@@ -2263,7 +2390,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 131000
+            "doc_size": 132000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -2400,6 +2527,18 @@
             "markdown_path": "_td/machine-learning.md",
             "doc_size": 46000
         },
+        "/modal": {
+            "py/object": "__main__.Page",
+            "url": "/modal",
+            "title": "Modal - A tool to play with ML",
+            "description": "Modal seems like a system custom built for ML, giving it a shot\n\n",
+            "file_path": "_site/modal.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_td/modal.md",
+            "doc_size": 9000
+        },
         "/moments": {
             "py/object": "__main__.Page",
             "url": "/moments",
@@ -2412,6 +2551,7 @@
             "incoming_links": [
                 "/balance",
                 "/d/time-off-2022-12",
+                "/d/time-off-2023-04",
                 "/happy",
                 "/moments-at-work",
                 "/random-idea"
@@ -2514,6 +2654,20 @@
             "redirect_url": "",
             "markdown_path": "_td/nlp.md",
             "doc_size": 16000
+        },
+        "/nurture": {
+            "py/object": "__main__.Page",
+            "url": "/nurture",
+            "title": "NURTURE- The Gottman Method",
+            "description": "The Gottman Method is a research-based approach to couples therapy developed by Drs. John and Julie Gottman. The method is based on the idea that happy and healthy relationships require a strong foundation of love and friendship, as well as the ability to handle conflict in a positive way. The acronym NURTURE stands for the seven key components of the Gottman Method: Navigating Love Maps, Unleashing Fondness and Admiration, Responding to Bids for Attention, Tackling Conflict Constructively, Uplifting Dreams and Aspirations, Renewing Relationship Rituals, and Embracing Shared Meaning. In this book, we will explore each of these components in depth, providing practical advice, exercises, and journal prompts to help you apply the Gottman Method to your own relationship.\n\n",
+            "file_path": "_site/nurture.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/gpt"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/gpt-gotman.md",
+            "doc_size": 29000
         },
         "/operating-manual": {
             "py/object": "__main__.Page",
@@ -2751,6 +2905,20 @@
             "markdown_path": "_d/2010-2-15-2016-Misc-Uncategorized.md",
             "doc_size": 24000
         },
+        "/rapport": {
+            "py/object": "__main__.Page",
+            "url": "/rapport",
+            "title": "How to build rapport",
+            "description": "In today’s fast-paced and interconnected world, building and maintaining strong relationships is essential for personal and professional success. POWER is a five-step process that will help you establish rapport and create meaningful connections with people from all walks of life. The POWER acronym stands for: Proximity Observation, Warmth, Empathy, Revelation\n\n",
+            "file_path": "_site/rapport.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/gpt"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/rapport.md",
+            "doc_size": 30000
+        },
         "/recommend": {
             "py/object": "__main__.Page",
             "url": "/recommend",
@@ -2790,7 +2958,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/remotework.md",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/roblox-dev": {
             "py/object": "__main__.Page",
@@ -2923,7 +3091,8 @@
                 "/idle",
                 "/mind-monsters",
                 "/psychic-weight",
-                "/sharpen-the-saw"
+                "/sharpen-the-saw",
+                "/timeoff"
             ],
             "redirect_url": "",
             "markdown_path": "_d/siy.md",
@@ -3136,7 +3305,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 19000
+            "doc_size": 66000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
@@ -3269,7 +3438,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/ios.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/td/ios-nomad": {
             "py/object": "__main__.Page",
@@ -3523,6 +3692,7 @@
                 "/frog",
                 "/happy",
                 "/mind-at-work",
+                "/siy",
                 "/time-off-2020-03"
             ],
             "incoming_links": [
@@ -3534,12 +3704,13 @@
                 "/d/time-off-2022-07",
                 "/d/time-off-2022-11",
                 "/d/time-off-2022-12",
+                "/d/time-off-2023-04",
                 "/mind-at-work",
                 "/parkinson"
             ],
             "redirect_url": "",
             "markdown_path": "_d/time_off.md",
-            "doc_size": 27000
+            "doc_size": 29000
         },
         "/todo_enjoy": {
             "py/object": "__main__.Page",
