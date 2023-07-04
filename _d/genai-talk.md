@@ -7,6 +7,7 @@ redirect_from:
   - /llm-intern
   - /intern-llm
   - /llm-talk
+  - /ai-talk
 ---
 
 Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!
