@@ -34,6 +34,14 @@ LANGCHAIN_WANDBB_TRACING=true
 LANGCHAIN_WANDB_TRACING=playing-around
 ```
 
+- Consider a better git commit message generator... Including nested calls. Checkout
+
+<https://github.com/zurawiki/gptcommit/blob/main/prompts/summarize_file_diff.tera>
+
+- Using AI chat in co-pilot on nightlysf
+
+Use meta -I (e.g. Alt-I) e.g. AI :)
+
 ### Related posts
 
 {%include summarize-page.html src="/ai-talk" %}
