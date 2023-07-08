@@ -227,6 +227,7 @@ Specific team members for engine, seat belts, etc
 
 - [On Coaching](https://youtu.be/oHDq1PcYkT4?t=431)
 - [On making people feeling safe](https://www.youtube.com/watch?v=lmyZMtPVodo)
+- [Some humor on being an EM](https://www.instagram.com/reel/CnNCVyRDzPo/?igshid=NjZiM2M3MzIxNA==)
 
 ### Great Posts and Blogs
 
