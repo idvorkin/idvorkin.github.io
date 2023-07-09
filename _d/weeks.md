@@ -30,7 +30,6 @@ permalink: /weeks
 </style>
 
 {% assign data   = site.data[page.datafile] %}
-
 {% assign start_date = page.start_date %}
 {% assign split_start = start_date | split: "-" %}
 {% assign start_year = split_start[0] %}

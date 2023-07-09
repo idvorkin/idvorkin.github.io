@@ -24,22 +24,32 @@
     tags: ["technology"]
 
 '2001-09-11':
-  - name: "I do my final internship at MSFT"
+  - name: "Internship at MSFT"
+    category: "world"
+    tags: ["politics"]
+
+'2001-12-11':
+  - name: "💣 Dotcom bubble bursts"
     category: "world"
     tags: ["politics"]
 
 '2002-04-30':
-  - name: "I start my career MSFT"
+  - name: "Start at MSFT Full Time"
     category: "writing"
     tags: ["man versus himself"]
 
 '2006-03-05':
-  - name: "❤️  I meets Tori"
+  - name: "❤️  I meet Tori"
     category: "family"
     link: https://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html
 
 '2010-04-21':
   - name: "👶 Zach is born"
+    category: "family"
+    link:  https://ig66.blogspot.com/2010/04/fresh-off-stork-it-zachary-marshall.html
+
+'2011-08-21':
+  - name: "😰 230 lbs"
     category: "family"
     link:  https://ig66.blogspot.com/2010/04/fresh-off-stork-it-zachary-marshall.html
 
@@ -65,7 +75,7 @@
     link: https://igsmilebox.blogspot.com/
 
 '2015-12-01':
-  - name: "My first day at Amazon"
+  - name: "First day at Amazon"
     category: "work"
     tags: ["medium"]
 
@@ -74,11 +84,24 @@
     category: "work"
     tags: ["medium"]
     link: https://idvork.in/toysfortots
-
-'2020-04-15':
-  - name: "My first day at Meta"
+'2020-03-01':
+  - name: "Last day @ Amazon"
     category: "work"
     tags: ["medium"]
+
+'2020-03-15':
+  - name: "COVID Shutdown"
+    category: "work"
+    tags: ["medium"]
+
+'2020-04-15':
+  - name: "First day at Meta"
+    category: "work"
+    tags: ["medium"]
+
+'2021-08-21':
+  - name: "😰 230 lbs again"
+    category: "family"
 
 '2022-03-15':
   - name: "🎈 I become a ballooner"
