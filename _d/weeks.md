@@ -44,10 +44,11 @@ permalink: /weeks
 -->
 
 {% assign end_year = page.end_year %}
-{% assign year_border_class = "future_date"%}
+{% assign year_border_class = "future-date"%}
 
 My life, where each week I've been alive is a little box. When meaningful things happen (for both better and worse) I make a note of it so I can remember how much of life is influenced by these factors. This is a brilliant idea from this [guy](https://busterbenson.com/life-in-weeks).
 
+<div class="life-in-weeks">
 <div class="row justify-content-center">
     	<div class="col">
     		{% for year in (start_year..end_year) %}
@@ -105,10 +106,6 @@ My life, where each week I've been alive is a little box. When meaningful things
     		{% endfor %}
     	</div>
     </div>
-
-    <br clear="all" />
-
-    </p>
 
 </div> <!-- End life in weeks -->
 
