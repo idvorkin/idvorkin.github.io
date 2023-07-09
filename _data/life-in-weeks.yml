@@ -43,10 +43,19 @@
     category: "family"
     link: https://ig66.blogspot.com/2012/02/how-igor-met-tori-genesis-story.html
 
+'2007-04-21':
+  - name: "Employee ~ 100 in Azure"
+    link:  https://idvork.in/The-Genesis-Node
+
 '2010-04-21':
   - name: "👶 Zach is born"
     category: "family"
     link:  https://ig66.blogspot.com/2010/04/fresh-off-stork-it-zachary-marshall.html
+
+
+'2011-04-21':
+  - name: "🏠 Buy House"
+    category: "family"
 
 '2011-08-21':
   - name: "😰 230 lbs"
