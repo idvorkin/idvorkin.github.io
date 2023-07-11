@@ -4,7 +4,16 @@
     category: "self"
 
 '1982-04-01':
-  - name: "Family emmigrates to Canada"
+  - name: "🛬 Family emmigrates to Canada"
+    category: "family"
+
+'1990-06-01':
+  - name: "💻 First PC (286!)"
+    category: "family"
+
+
+'1990-07-01':
+  - name: "Created Igor's Computers"
     category: "family"
 
 '1994-07-01':
