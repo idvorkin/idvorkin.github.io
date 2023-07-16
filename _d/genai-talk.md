@@ -2,6 +2,7 @@
 layout: post
 title: Your new interns - GenAI for fun and profit
 permalink: /genai-talk
+mermaid: True
 redirect_from:
   - /genai-intern
   - /llm-intern
@@ -46,7 +47,7 @@ Generative AI (GenAI) is taking the world by storm, and it takes a new mindset t
         - [Select between multiple outputs](#select-between-multiple-outputs)
         - [Use output to help refine my input](#use-output-to-help-refine-my-input)
         - [Use output to help refine my tuning of input](#use-output-to-help-refine-my-tuning-of-input)
-    - [Balancing Code and Prompts](#balancing-code-and-prompts)
+    - [Code and Prompt, finding the right balance](#code-and-prompt-finding-the-right-balance)
 - [Bad Intern - All the things that can go wrong](#bad-intern---all-the-things-that-can-go-wrong)
     - [Alignment - Don't be evil](#alignment---dont-be-evil)
     - [Societal Bias](#societal-bias)
@@ -265,7 +266,109 @@ Physically, prompts can only do stateless data transformations, not control flow
 
 #### Use output to help refine my tuning of input
 
-### Balancing Code and Prompts
+### Code and Prompt, finding the right balance
+
+Hold
+
+```mermaid
+stateDiagram
+    state Algorithmic {
+        [*] --> Conventional_Computing : Starts With
+        Conventional_Computing --> Algorithmic_Execution : Follows Logic
+        Algorithmic_Execution --> Output : Produces Results
+        Output --> [*] : Ends
+    }
+    state Neural {
+        [*] --> LLMs : Starts With
+        LLMs --> Neural_Computation : Processes Data
+        Neural_Computation --> Output : Produces Results
+        Output --> [*] : Ends
+    }
+```
+
+Coffee Shop Front Desk
+
+```mermaid
+stateDiagram
+    state "Customer Order" as Order {
+        [*] --> Coffee : Orders Coffee
+    }
+    state "Coffee Preparation" as Preparation {
+        [*] --> Grind_Beans : Start
+        Grind_Beans --> Brew_Coffee : Grind Beans
+        Brew_Coffee --> Serve_Coffee : Brew Coffee
+        Serve_Coffee --> [*] : Serve Coffee
+    }
+    Order --> Preparation : Send Order
+    Preparation --> Order : Coffee Ready
+```
+
+What if we extend that to include specials
+
+```mermaid
+stateDiagram
+    state "Customer Order" as Order {
+        [*] --> Ask_Specials: Ask for Specials
+        Ask_Specials --> Coffee : Orders Coffee
+    }
+    state "Coffee Preparation" as Preparation {
+        [*] --> Grind_Beans : Start
+        Grind_Beans --> Brew_Coffee : Grind Beans
+        Brew_Coffee --> Serve_Coffee : Brew Coffee
+        Serve_Coffee --> [*] : Serve Coffee
+    }
+    state "Specials Information" as Specials {
+        [*] --> Current_Specials : Start
+        Current_Specials --> [*] : Ends
+    }
+    Order --> Preparation : Send Order
+    Preparation --> Order : Coffee Ready
+    Order --> Specials : Request Specials
+    Specials --> Order : Provide Specials
+```
+
+**Algorithmic Computing:**
+
+_Pros:_
+
+1. Deterministic: Algorithmic computing is deterministic, which means given the same input, it will always produce the same output.
+2. Efficiency: Algorithms can be extremely efficient for complex tasks if they are well-designed.
+3. Understandability: These systems can be easier to debug and troubleshoot due to their deterministic nature.
+4. Scalability: Algorithmic programs can be easily scaled up and down.
+
+_Cons:_
+
+1. Rigidity: Algorithms follow a strict set of rules, which can make them less adaptable to new or unexpected scenarios.
+2. Complexity: Creating efficient and effective algorithms can be complex and time-consuming.
+3. Data Limitations: Algorithmic computing may not perform well with incomplete or fuzzy data.
+
+**Neural Computing (LLMs or Large Language Models):**
+
+_Pros:_
+
+1. Adaptability: Neural networks, or LLMs, are capable of learning and adapting to new scenarios and data.
+2. Handling Unstructured Data: They can handle unstructured or incomplete data well.
+3. Pattern Recognition: LLMs excel at identifying patterns and correlations in large data sets.
+4. Non-Linearity: They can model complex, non-linear relationships.
+
+_Cons:_
+
+1. Interpretability: Neural networks can be seen as black boxes, making it difficult to understand how they reach their conclusions.
+2. Training Requirements: They require large amounts of data and computational resources for training.
+3. Overfitting: Without proper regularization, LLMs may overfit to the training data and perform poorly on unseen data.
+
+| Traits                                 | Algorithmic Computing                                            | Neural Computing (LLMs)                                                                        |
+| -------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Deterministic/Adaptability**         | Deterministic: Same input always results in the same output      | Adaptability: Capable of learning and adapting to new data and scenarios                       |
+| **Efficiency**                         | Efficient for complex tasks if well-designed                     | Needs large amounts of data and computational resources for training                           |
+| **Understandability/Interpretability** | Understandable: Easier to debug due to deterministic nature      | Less Interpretable: Seen as 'black boxes', making it difficult to understand their conclusions |
+| **Handling Data**                      | Less effective with incomplete or fuzzy data                     | Can handle unstructured or incomplete data well                                                |
+| **Pattern Recognition**                | Limited to the rules and patterns explicitly programmed          | Excel at identifying patterns in large data sets                                               |
+| **Non-Linearity**                      | Struggles with complex, non-linear relationships                 | Excels at modeling complex, non-linear relationships                                           |
+| **Rigidity/Flexibility**               | Rigidity: Follows a strict set of rules                          | Flexibility: Can learn and adjust based on new data                                            |
+| **Complexity**                         | Can be complex and time-consuming to design efficient algorithms | Can become complex due to the need for data pre-processing, architecture selection, etc.       |
+| **Scalability**                        | Easily scalable                                                  | Scalability can be a challenge due to computational demands                                    |
+| **Risk of Overfitting**                | Less risk if properly designed                                   | High risk: May overfit to the training data without proper regularization                      |
 
 ## Bad Intern - All the things that can go wrong
 
