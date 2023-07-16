@@ -20,6 +20,9 @@ from langchain.vectorstores import Chroma
 from langchain.text_splitter import CharacterTextSplitter
 from typing_extensions import Annotated
 from openai_wrapper import choose_model, remaining_response_tokens
+from fastapi import FastAPI
+import requests
+server = FastAPI()
 
 app = typer.Typer()
 console = Console()
@@ -161,44 +164,41 @@ def ask(
 ):
     model = "gpt-4" if u4 else "gpt-3.5-turbo-16k"
     model, max_tokens = choose_model(u4)
-    verbose = False
     if debug:
         ic(model)
         ic(facts)
-        verbose = True
+
     # load chroma from DB
     blog_content_db = Chroma(
         persist_directory=chroma_db_dir, embedding_function=embeddings
     )
-    history = []
-    facts_as_documents = blog_content_db.similarity_search(question, k=facts)
+
+    nearest_documents = blog_content_db.similarity_search(question, k=facts)
+
     # set_trace()
-    for f in facts_as_documents:
+    for f in nearest_documents:
         if debug:
             ic(f.metadata["source"])
 
-    facts = [Fact(source=f.metadata["source"], content=f.page_content) for f in facts_as_documents]
+    facts = [Fact(source=f.metadata["source"], content=f.page_content) for f in nearest_documents]
 
-
-    example_facts = []
-
-    system_prompt = """
+    # explain what you want
+    system_instructions = """
 You are an expert at answering questions.
 You give output in markdown
 Use the passed in document snippets facts to answer provided questions.
-
 Before your answer, repeat the question as an H2 header
 
 After you answer, return the list of sources and why they were relevant in order of relevance.
 Be sure to include the % relvanace of each source
 If there are multiple facts with the same source, combine them with indented bullet points
+    """
 
+    # give an example instead of trying to describe everything.
+    system_example = """
 E.g.
 
-
-### Question
-
-the question the user provided here
+## the question the user asked here
 
 ### Answer
 
@@ -206,11 +206,13 @@ your answer here
 
 ### Sources
 
-* source file path - Why it is relevant (% relevance)
-
+* source file path - Your reasoning on why it's  relevant (% you assessment of relevance)
     """
 
+    system_prompt = system_instructions + system_example
+
     prompt = f"""
+    ### Facts
 {facts_to_prompt(facts)}
     ### Question
         {question}
@@ -218,21 +220,27 @@ your answer here
     resp = base_query(
         system_prompt=system_prompt, prompt_to_gpt=prompt, debug=debug, u4=u4
     )
-    # re-write all file as markdown
-    markdown_to_url = build_markdown_to_url_map()
-    for (md_file_path,url) in markdown_to_url.items():
-        # url starts with a /
-        url = url[1:]
-        md_link = f"[{url}](https://idvork.in/{url})"
-        resp = resp.replace(md_file_path, md_link)
-    print (resp)
+
+    # We built the file_path from source markdown
+    def fixup_markdown_path_to_url(src):
+        markdown_to_url = build_markdown_to_url_map()
+        for (md_file_path,url) in markdown_to_url.items():
+            # url starts with a /
+            url = url[1:]
+            md_link = f"[{url}](https://idvork.in/{url})"
+            src = src.replace(md_file_path, md_link)
+        return src
+    out = fixup_markdown_path_to_url(resp)
+    print(out)
 
 
 # cache this so it's memoized
 @lru_cache
 def build_markdown_to_url_map():
     source_file_to_url = {}
-    d = json.load(open(os.path.expanduser("~/blog/back-links.json")))
+    # read the json file From Github, slightly stale, but good enough
+    backlinks_url = "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json"
+    d = requests.get(backlinks_url).json()
     url_infos = d["url_info"]
     # "url_info": {
         # "/40yo": {
@@ -244,6 +252,7 @@ def build_markdown_to_url_map():
     return source_file_to_url
 
 
+@server.get("/remap/{source_file}")
 @app.command()
 def source_file_to_url(source_file):
     source_file_to_url = build_markdown_to_url_map()
