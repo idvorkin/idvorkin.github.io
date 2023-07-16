@@ -1,23 +1,23 @@
 #!python3
 import requests
+from functools import lru_cache
 import pathlib
 import subprocess
+from pydantic import BaseModel
 import tempfile
+import pydantic
 import openai
+import json
 from rich.console import Console
 from icecream import ic
 import typer
 import time
 import os
-from loguru import logger
 from pudb import set_trace
-from langchain.chains import ConversationalRetrievalChain
-from langchain.llms import OpenAI
 from langchain.docstore.document import Document
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.prompts import PromptTemplate
 from typing_extensions import Annotated
 from openai_wrapper import choose_model, remaining_response_tokens
 
@@ -120,11 +120,11 @@ def base_query(
     text = ""
     for i, content in enumerate(response_contents):
         text = content
-        print(text)
 
     if debug:
         out = f"All chunks took: {int((time.time() - start)*1000)} ms"
         ic(out)
+    return text
 
 
 @app.command()
@@ -136,6 +136,19 @@ def chunk_md(
     elements = partition_md(filename=os.path.expanduser(path))
     ic(elements)
 
+class Fact(BaseModel):
+    source: str
+    content: str
+    def to_prompt(self):
+        return f"""---(FACT)---
+SOURCE FILE PATH:
+{self.source}
+FACT:
+{self.content}
+---"""
+
+def facts_to_prompt(facts):
+    return "\n".join([f.to_prompt() for f in facts])
 
 @app.command()
 def ask(
@@ -148,7 +161,6 @@ def ask(
 ):
     model = "gpt-4" if u4 else "gpt-3.5-turbo-16k"
     model, max_tokens = choose_model(u4)
-    openai = OpenAI(model=model)
     verbose = False
     if debug:
         ic(model)
@@ -159,53 +171,84 @@ def ask(
         persist_directory=chroma_db_dir, embedding_function=embeddings
     )
     history = []
-    facts = blog_content_db.similarity_search(question, k=facts)
+    facts_as_documents = blog_content_db.similarity_search(question, k=facts)
     # set_trace()
-    for f in facts:
+    for f in facts_as_documents:
         if debug:
             ic(f.metadata["source"])
 
-    facts_for_prompt = ""
-    for i, f in enumerate(facts):
-        facts_for_prompt += f"""---(Fact {i})---
-SOURCE FILE PATH:
-    {f.metadata["source"]}
-FACT:
-    {f.page_content}
----
-"""
+    facts = [Fact(source=f.metadata["source"], content=f.page_content) for f in facts_as_documents]
 
-    system_prompt = """You are an expert at answering questions. You give output in markdown
-Use the following document snippets facts to answer provided questions.
-After you answer, return the list of sources and why they were relevant in order of relevance. E.g.
+
+    example_facts = []
+
+    system_prompt = """
+You are an expert at answering questions.
+You give output in markdown
+Use the passed in document snippets facts to answer provided questions.
+
+Before your answer, repeat the question as an H2 header
+
+After you answer, return the list of sources and why they were relevant in order of relevance.
+Be sure to include the % relvanace of each source
+If there are multiple facts with the same source, combine them with indented bullet points
+
+E.g.
 
 
 ### Question
 
-The question asked
+the question the user provided here
 
 ### Answer
 
-your answer answer
+your answer here
 
 ### Sources
 
-* source file path - the reason it is relevant (% relevant)
+* source file path - Why it is relevant (% relevance)
 
     """
 
     prompt = f"""
-    .
-    :
-    ### Facts:
-{facts_for_prompt}
+{facts_to_prompt(facts)}
     ### Question
         {question}
     """
     resp = base_query(
         system_prompt=system_prompt, prompt_to_gpt=prompt, debug=debug, u4=u4
     )
+    # re-write all file as markdown
+    markdown_to_url = build_markdown_to_url_map()
+    for (md_file_path,url) in markdown_to_url.items():
+        # url starts with a /
+        url = url[1:]
+        md_link = f"[{url}](https://idvork.in/{url})"
+        resp = resp.replace(md_file_path, md_link)
+    print (resp)
 
+
+# cache this so it's memoized
+@lru_cache
+def build_markdown_to_url_map():
+    source_file_to_url = {}
+    d = json.load(open(os.path.expanduser("~/blog/back-links.json")))
+    url_infos = d["url_info"]
+    # "url_info": {
+        # "/40yo": {
+            # "markdown_path": "_d/40-yo-programmer.md",
+            # "doc_size": 14000
+        # },
+    # convert the url_infos into a source_file_to_url map
+    source_file_to_url = {v["markdown_path"]: k for k, v in url_infos.items()}
+    return source_file_to_url
+
+
+@app.command()
+def source_file_to_url(source_file):
+    source_file_to_url = build_markdown_to_url_map()
+    blog_base="https://idvork.in"
+    return blog_base + source_file_to_url[source_file]
 
 # @logger.catch()
 def app_wrap_loguru():
