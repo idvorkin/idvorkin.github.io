@@ -12,6 +12,7 @@ Woah, there's so much stuff to explore in AI. I'm going to keep a journal of stu
 - [Visualization](#visualization)
     - [Weights and Balances](#weights-and-balances)
 - [Diary](#diary)
+    - [2023-07-16](#2023-07-16)
     - [2023-07-04](#2023-07-04)
     - [Related posts](#related-posts)
 
@@ -23,6 +24,11 @@ Woah, there's so much stuff to explore in AI. I'm going to keep a journal of stu
 ### Weights and Balances
 
 ## Diary
+
+### 2023-07-16
+
+- Doing Q&A for my blog w/ChromaDB and LandChain
+  - Bleh, Langchain is hard to grok, changing on the daily
 
 ### 2023-07-04
 
