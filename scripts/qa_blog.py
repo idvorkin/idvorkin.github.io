@@ -132,6 +132,7 @@ def ask(
     question: Annotated[
         str, typer.Argument()
     ] = "What are the roles from Igor's Eulogy, answer in bullet form",
+    facts: Annotated[int, typer.Option()] = 5,
     u4: bool = typer.Option(False),
     debug: bool = typer.Option(True),
 ):
@@ -141,17 +142,18 @@ def ask(
     verbose = False
     if debug:
         ic(model)
+        ic(facts)
         verbose = True
     # load chroma from DB
     blog_content_db = Chroma(
         persist_directory=chroma_db_dir, embedding_function=embeddings
     )
     history = []
-    facts = blog_content_db.similarity_search(question, max_results=5)
-    # set_trace()
+    facts = blog_content_db.similarity_search(question, k=facts)
     # set_trace()
     for f in facts:
-        ic(f.metadata["source"])
+        if debug:
+            ic(f.metadata["source"])
 
     facts_for_prompt = ""
     for i, f in enumerate(facts):
@@ -163,30 +165,36 @@ FACT:
 ---
 """
 
+    system_prompt = """You are an expert at answering questions. You give output in markdown
+Use the following document snippets facts to answer provided questions.
+After you answer, return the list of sources and why they were relevant. E.g.
+
+
+### Question
+
+The question asked
+
+### Answer
+
+your answer answer
+
+### Sources
+
+* source - the reason it is relevant
+
+    """
+
     prompt = f"""
-    Use the following document snippets to answer the following questions. After you answer, return the list of sources that you used to answer the question in a markdown list.
+    .
     :
     ### Facts:
 {facts_for_prompt}
     ### Question
         {question}
     """
-    resp = base_query(prompt_to_gpt=prompt, debug=debug, u4=u4)
-    ic(resp)
-    # ic(prompt)
-
-    return """
-        qa = ConversationalRetrievalChain.from_llm(llm=openai, chain_type="map_reduce", retriever=blog_content_db.as_retriever(), return_source_documents=True, verbose=verbose, )
-        # answer = qa.run(question)
-        answer = qa({"question": question,
-                    "chat_history":history,
-                    })
-        print (f"Answer: {answer['result']}")
-        print ("Sources:")
-        for doc in answer["source_documents"]:
-            print(doc.metadata["source"])
-        ic(history)
-    """
+    resp = base_query(
+        system_prompt=system_prompt, prompt_to_gpt=prompt, debug=debug, u4=u4
+    )
 
 
 # @logger.catch()
