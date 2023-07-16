@@ -128,6 +128,16 @@ def base_query(
 
 
 @app.command()
+def chunk_md(
+    path: Annotated[str, typer.Argument()] = "~/blog/_posts/2020-04-01-Igor-Eulogy.md"
+):
+    from unstructured.partition.md import partition_md
+
+    elements = partition_md(filename=os.path.expanduser(path))
+    ic(elements)
+
+
+@app.command()
 def ask(
     question: Annotated[
         str, typer.Argument()
