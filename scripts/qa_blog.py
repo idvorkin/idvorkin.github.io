@@ -168,7 +168,7 @@ def ask(
     facts_for_prompt = ""
     for i, f in enumerate(facts):
         facts_for_prompt += f"""---(Fact {i})---
-SOURCE:
+SOURCE FILE PATH:
     {f.metadata["source"]}
 FACT:
     {f.page_content}
@@ -177,7 +177,7 @@ FACT:
 
     system_prompt = """You are an expert at answering questions. You give output in markdown
 Use the following document snippets facts to answer provided questions.
-After you answer, return the list of sources and why they were relevant. E.g.
+After you answer, return the list of sources and why they were relevant in order of relevance. E.g.
 
 
 ### Question
@@ -190,7 +190,7 @@ your answer answer
 
 ### Sources
 
-* source - the reason it is relevant
+* source file path - the reason it is relevant (% relevant)
 
     """
 
