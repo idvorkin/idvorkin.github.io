@@ -21,7 +21,6 @@ from langchain.text_splitter import CharacterTextSplitter
 from typing_extensions import Annotated
 from openai_wrapper import choose_model, remaining_response_tokens
 from fastapi import FastAPI
-import requests
 server = FastAPI()
 
 app = typer.Typer()
@@ -251,9 +250,13 @@ def build_markdown_to_url_map():
     source_file_to_url = {v["markdown_path"]: k for k, v in url_infos.items()}
     return source_file_to_url
 
-
 @server.get("/remap/{source_file}")
+def remap_to_url(source_file):
+    return {"url": source_file_to_url(source_file)}
+    # return {"url":"It works"}
+
 @app.command()
+@server.get("/remap/{source_file}")
 def source_file_to_url(source_file):
     source_file_to_url = build_markdown_to_url_map()
     blog_base="https://idvork.in"
