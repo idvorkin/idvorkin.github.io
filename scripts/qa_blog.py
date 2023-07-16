@@ -184,12 +184,14 @@ def ask(
     # explain what you want
     system_instructions = """
 You are an expert at answering questions.
+Use the passed in facts from Igor's blog to answer provided questions.
+
 You give output in markdown
-Use the passed in document snippets facts to answer provided questions.
 Before your answer, repeat the question as an H2 header
 
 After you answer, return the list of sources and why they were relevant in order of relevance.
 Be sure to include the % relvanace of each source
+'_' is a valid part of the source file path, do not remove it
 If there are multiple facts with the same source, combine them with indented bullet points
     """
 
@@ -205,7 +207,7 @@ your answer here
 
 ### Sources
 
-* source file path - Your reasoning on why it's  relevant (% you assessment of relevance)
+* source file path - Your reasoning on why it's  relevant (% relevance,  e.g. 20%)
     """
 
     system_prompt = system_instructions + system_example
@@ -229,7 +231,14 @@ your answer here
             md_link = f"[{url}](https://idvork.in/{url})"
             src = src.replace(md_file_path, md_link)
         return src
+
+    def fixup_ig66_path_to_url(src):
+        for i in range(100*52):
+            src =  src.replace(f"_ig66/{i}.md", f"[Family Journal {i}](https://idvork.in/ig66/{i})")
+        return src
+
     out = fixup_markdown_path_to_url(resp)
+    out = fixup_ig66_path_to_url(out)
     print(out)
 
 
