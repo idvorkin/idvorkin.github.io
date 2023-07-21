@@ -8,17 +8,26 @@ redirect_from:
   - /llm-intern
   - /intern-llm
   - /llm-talk
-  - /ai-talk
----
+## A New Computational Model - Interns
 
-Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!
+ASIDE: No interns were harmed in the creation of this talk. I love interns, and have been one myself. I'm just using them as a metaphor for LLMs. If you're an intern, or recently graduated, feel free to read my advice to y'all - <http://bit.ly/igor-advice-22>
 
-<!-- prettier-ignore-start -->
+### The Perfect Intern
+### Bad Intern - Quirks and Mitigations
+
+- But makes mistakes
+- So you need to coach and guide
+- Non-deterministic: Every call you get a different intern.
+- Sometimes it'll just be a bad intern, can lie, or ignore instructions.
+- Slow: Current models have bad latency and rate limits (bleh)
+- TODO: Link to build '23 talk by OpenAI scientist.
+- Sometimes you get a dud and they ignore the instructions. :(
+- The longer the answer, the more they can think; short answers have them thinking less.
+- Once committed to an answer, even if wrong, they'll keep going.
+- Very dangerous, since so used to smart, honest interns, when you get a bad intern that's confident, it can really throw you for a loop.
+
 <!-- vim-markdown-toc GFM -->
 
-- [A New Computational Model - Interns](#a-new-computational-model---interns)
-    - [The Perfect Intern](#the-perfect-intern)
-    - [Bad Intern - Quirks and Mitigations](#bad-intern---quirks-and-mitigations)
     - [Your Intern Can't Read Your Mind - Prompting](#your-intern-cant-read-your-mind---prompting)
     - [Annual Review - Evaluating your intern](#annual-review---evaluating-your-intern)
     - [Why the heck did your intern do that - Understandability](#why-the-heck-did-your-intern-do-that---understandability)
@@ -48,6 +57,11 @@ Generative AI (GenAI) is taking the world by storm, and it takes a new mindset t
         - [Use output to help refine my input](#use-output-to-help-refine-my-input)
         - [Use output to help refine my tuning of input](#use-output-to-help-refine-my-tuning-of-input)
     - [Code and Prompt, finding the right balance](#code-and-prompt-finding-the-right-balance)
+- [How did my intern do?](#how-did-my-intern-do)
+    - [Engagement Based](#engagement-based)
+    - [Expert based](#expert-based)
+        - [Using a model to evalaute a model.](#using-a-model-to-evalaute-a-model)
+    - [Ooops workflows - Insurance](#ooops-workflows---insurance)
 - [Bad Intern - All the things that can go wrong](#bad-intern---all-the-things-that-can-go-wrong)
     - [Alignment - Don't be evil](#alignment---dont-be-evil)
     - [Societal Bias](#societal-bias)
@@ -59,34 +73,6 @@ Generative AI (GenAI) is taking the world by storm, and it takes a new mindset t
     - [Disclaimer](#disclaimer)
 
 <!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
-## A New Computational Model - Interns
-
-ASIDE: No interns were harmed in the creation of this talk. I love interns, and have been one myself. I'm just using them as a metaphor for LLMs. If you're an intern, or recently graduated, feel free to read my advice to y'all - <http://bit.ly/igor-advice-22>
-
-### The Perfect Intern
-
-- Super smart
-- Super creative
-- Understand English and high complexity
-  - Don't need to 'dumb it down', just talk in natural language
-- Infinite creativity
-  - Don't need to 'search' for an image, just have them genereate it!
-
-### Bad Intern - Quirks and Mitigations
-
-- But makes mistakes
-- So you need to coach and guide
-- Non-deterministic: Every call you get a different intern.
-- Sometimes it'll just be a bad intern, can lie, or ignore instructions.
-- Slow: Current models have bad latency and rate limits (bleh)
-- TODO: Link to build '23 talk by OpenAI scientist.
-- Sometimes you get a dud and they ignore the instructions. :(
-- The longer the answer, the more they can think; short answers have them thinking less.
-- Once committed to an answer, even if wrong, they'll keep going.
-- Very dangerous, since so used to smart, honest interns, when you get a bad intern that's confident, it can really throw you for a loop.
-
 ### Your Intern Can't Read Your Mind - Prompting
 
 - Input is conversational.
@@ -369,6 +355,44 @@ _Cons:_
 | **Complexity**                         | Can be complex and time-consuming to design efficient algorithms | Can become complex due to the need for data pre-processing, architecture selection, etc.       |
 | **Scalability**                        | Easily scalable                                                  | Scalability can be a challenge due to computational demands                                    |
 | **Risk of Overfitting**                | Less risk if properly designed                                   | High risk: May overfit to the training data without proper regularization                      |
+
+## How did my intern do?
+
+When you have non-determinstic systems, with unclear outputs, evaluating them is hard.
+
+If you think about it, this is the same as evaulating a teacher or sales person. There are 2 ways to do it:
+
+
+### Engagement Based
+
+1/ Look at the engagement. How did the end users engage with the product. Classic A/B testing with teired deployment
+
+### Expert based
+
+2/ Use an expert to evaluatie.  So, if you had
+
+
+#### Using a model to evalaute a model.
+
+Sure,  this is exactly what we do with interns, we have a senior engineer evaluate them. Often we'll use a "cheaper model", and we can use an expensive model to assess the cheeaper model.
+
+The most expensive model is a human. If you don't trust your expensive models, then you can have them vote.
+
+### Ooops workflows - Insurance
+
+Humans make mistakes too, and that's why we have insurance in the real world. The question is can your reduce the average cost.... E.g.
+
+Old humans: Cost of transactions is high
+LLMs: Cost of transactions is much lower
+
+Old humans: Transactions*(Profit per Transaction) + Cost of Insurance
+LLMs: Transactions*(Profit per Transaction) + Cost of Insurance
+
+Example if we can do 100x transactions at 1/1000th the cost, and insurace is 10x
+
+
+
+
 
 ## Bad Intern - All the things that can go wrong
 
