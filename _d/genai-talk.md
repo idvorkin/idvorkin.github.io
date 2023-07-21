@@ -8,28 +8,18 @@ redirect_from:
   - /llm-intern
   - /intern-llm
   - /llm-talk
-## A New Computational Model - Interns
+  - /ai-talk
+---
 
-ASIDE: No interns were harmed in the creation of this talk. I love interns, and have been one myself. I'm just using them as a metaphor for LLMs. If you're an intern, or recently graduated, feel free to read my advice to y'all - <http://bit.ly/igor-advice-22>
+Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!
 
-### The Perfect Intern
-### Bad Intern - Quirks and Mitigations
-
-- But makes mistakes
-- So you need to coach and guide
-- Non-deterministic: Every call you get a different intern.
-- Sometimes it'll just be a bad intern, can lie, or ignore instructions.
-- Slow: Current models have bad latency and rate limits (bleh)
-- TODO: Link to build '23 talk by OpenAI scientist.
-- Sometimes you get a dud and they ignore the instructions. :(
-- The longer the answer, the more they can think; short answers have them thinking less.
-- Once committed to an answer, even if wrong, they'll keep going.
-- Very dangerous, since so used to smart, honest interns, when you get a bad intern that's confident, it can really throw you for a loop.
-
+<!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+- [A New Computational Model - Interns](#a-new-computational-model---interns)
+    - [The Perfect Intern](#the-perfect-intern)
+    - [Bad Intern - Quirks and Mitigations](#bad-intern---quirks-and-mitigations)
     - [Your Intern Can't Read Your Mind - Prompting](#your-intern-cant-read-your-mind---prompting)
-    - [Annual Review - Evaluating your intern](#annual-review---evaluating-your-intern)
     - [Why the heck did your intern do that - Understandability](#why-the-heck-did-your-intern-do-that---understandability)
     - [Brain Surgery - Do I need to understand paramater count and neural networks](#brain-surgery---do-i-need-to-understand-paramater-count-and-neural-networks)
 - [Use cases: What should we hire the intern to do?](#use-cases-what-should-we-hire-the-intern-to-do)
@@ -57,14 +47,15 @@ ASIDE: No interns were harmed in the creation of this talk. I love interns, and 
         - [Use output to help refine my input](#use-output-to-help-refine-my-input)
         - [Use output to help refine my tuning of input](#use-output-to-help-refine-my-tuning-of-input)
     - [Code and Prompt, finding the right balance](#code-and-prompt-finding-the-right-balance)
-- [How did my intern do?](#how-did-my-intern-do)
+- [The Final Reiew How did my intern do?](#the-final-reiew-how-did-my-intern-do)
     - [Engagement Based](#engagement-based)
     - [Expert based](#expert-based)
         - [Using a model to evalaute a model.](#using-a-model-to-evalaute-a-model)
     - [Ooops workflows - Insurance](#ooops-workflows---insurance)
+- [Ethics](#ethics)
+    - [Societal Bias](#societal-bias)
 - [Bad Intern - All the things that can go wrong](#bad-intern---all-the-things-that-can-go-wrong)
     - [Alignment - Don't be evil](#alignment---dont-be-evil)
-    - [Societal Bias](#societal-bias)
     - [Git supply chain attacks](#git-supply-chain-attacks)
     - [AGI taking over the world](#agi-taking-over-the-world)
 - [Appendix](#appendix)
@@ -73,6 +64,34 @@ ASIDE: No interns were harmed in the creation of this talk. I love interns, and 
     - [Disclaimer](#disclaimer)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
+## A New Computational Model - Interns
+
+ASIDE: No interns were harmed in the creation of this talk. I love interns, and have been one myself. I'm just using them as a metaphor for LLMs. If you're an intern, or recently graduated, feel free to read my advice to y'all - <http://bit.ly/igor-advice-22>
+
+### The Perfect Intern
+
+- Super smart
+- Super creative
+- Understand English and high complexity
+  - Don't need to 'dumb it down', just talk in natural language
+- Infinite creativity
+  - Don't need to 'search' for an image, just have them genereate it!
+
+### Bad Intern - Quirks and Mitigations
+
+- But makes mistakes
+- So you need to coach and guide
+- Non-deterministic: Every call you get a different intern.
+- Sometimes it'll just be a bad intern, can lie, or ignore instructions.
+- Slow: Current models have bad latency and rate limits (bleh)
+- TODO: Link to build '23 talk by OpenAI scientist.
+- Sometimes you get a dud and they ignore the instructions. :(
+- The longer the answer, the more they can think; short answers have them thinking less.
+- Once committed to an answer, even if wrong, they'll keep going.
+- Very dangerous, since so used to smart, honest interns, when you get a bad intern that's confident, it can really throw you for a loop.
+
 ### Your Intern Can't Read Your Mind - Prompting
 
 - Input is conversational.
@@ -80,15 +99,6 @@ ASIDE: No interns were harmed in the creation of this talk. I love interns, and 
 - But very quickly realize you haven't.
 - Very hard to evaluate if your intern did good
 - See prompt engineering.
-
-### Annual Review - Evaluating your intern
-
-- Evaluating at design time
-- Evaluate at runtime
-- Handling a runtime failure
-- Human Review
-- Review with another model
-- Voting System
 
 ### Why the heck did your intern do that - Understandability
 
@@ -356,7 +366,7 @@ _Cons:_
 | **Scalability**                        | Easily scalable                                                  | Scalability can be a challenge due to computational demands                                    |
 | **Risk of Overfitting**                | Less risk if properly designed                                   | High risk: May overfit to the training data without proper regularization                      |
 
-## How did my intern do?
+## The Final Reiew How did my intern do?
 
 When you have non-determinstic systems, with unclear outputs, evaluating them is hard.
 
@@ -392,14 +402,7 @@ Example if we can do 100x transactions at 1/1000th the cost, and insurace is 10x
 
 
 
-
-
-## Bad Intern - All the things that can go wrong
-
-### Alignment - Don't be evil
-
-- Getting around the blocks. Answer in spanish, then translate the block to english
-- See password guessing
+## Ethics
 
 ### Societal Bias
 
@@ -407,9 +410,18 @@ Example if we can do 100x transactions at 1/1000th the cost, and insurace is 10x
 - Societal biases are in the data, and the model will learn them.
 - Yesterdays heritic migth be today's genius
 
+
+## Bad Intern - All the things that can go wrong
+
+### Alignment - Don't be evil
+
+- Getting around the blocks. Answer in spanish, then translate the block to english
+- See password guessing - https://gandalf.lakera.ai/
+
 ### Git supply chain attacks
 
 ### AGI taking over the world
+
 
 ## Appendix
 
