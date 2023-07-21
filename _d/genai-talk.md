@@ -54,6 +54,7 @@ Generative AI (GenAI) is taking the world by storm, and it takes a new mindset t
     - [Oops workflows - Insurance](#oops-workflows---insurance)
 - [Ethics](#ethics)
     - [Societal Bias](#societal-bias)
+    - [Copyright infringement](#copyright-infringement)
 - [Bad Intern - All the things that can go wrong](#bad-intern---all-the-things-that-can-go-wrong)
     - [Alignment - Don't be evil](#alignment---dont-be-evil)
     - [Git supply chain attacks](#git-supply-chain-attacks)
@@ -408,6 +409,13 @@ For example, if we can do 100x transactions at 1/1000th the cost, and insurance 
 - Draw a picture of a doctor - 90% male.
 - Societal biases are in the data, and the model will learn them.
 - Yesterday's heretic might be today's genius.
+
+### Copyright infringement
+
+- If LLM spits out a book how much is copied from the author?
+- Adobe's LLM has full licenses of content users
+- Word for this is pedigree
+- What if we make a fake actor, but with likeness of a real person
 
 
 ## Bad Intern - All the things that can go wrong
