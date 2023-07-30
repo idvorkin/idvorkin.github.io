@@ -22,6 +22,8 @@ Training Emotional Intelligence through mindfulness. Search inside yourself is a
 
 This is a summary of [Search Inside Yourself](http://www.amazon.com/gp/product/B0070XF474/ref=dp-kindle-redirect?ie=UTF8&btkr=1) and [Joy on Demand](https://www.amazon.com/Joy-Demand-Discovering-Happiness-Within/dp/0062378872), and the place I learned many of my [emotional health practices](/emotional-health)
 
+FYI, I now do a different practice; See my experience with [SKY](/ig66/685)
+
 {%include amazon.html asin="B0070XF474;0062378872" %}
 
 <!-- prettier-ignore-start -->
