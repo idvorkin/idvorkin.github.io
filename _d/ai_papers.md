@@ -25,7 +25,7 @@ The original AI papers were all about training, super technical, and not that us
 
 Woah, this starting off point is great:
 
-https://lilianweng.github.io/posts/2023-06-23-agent/
+From [Lilian Weng's LLM Powered Autonmous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
 
 Shamelessly inlining from the above:
 
