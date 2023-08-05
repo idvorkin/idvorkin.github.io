@@ -96,6 +96,7 @@ This post uses the word manager, but the most topics apply to all software job f
     - [How does resource allocation work](#how-does-resource-allocation-work)
     - [The road building analogy to software development roles](#the-road-building-analogy-to-software-development-roles)
     - [Prioritize Ruthlessly](#prioritize-ruthlessly)
+    - [How to provide coarse estimates SWAG/T-Shirt size](#how-to-provide-coarse-estimates-swagt-shirt-size)
 - [Hiring](#hiring)
     - [What are you looking for when you recruit](#what-are-you-looking-for-when-you-recruit)
     - [Do they prefer to hire only experienced folks](#do-they-prefer-to-hire-only-experienced-folks)
@@ -1045,6 +1046,22 @@ Imagine we want to build a new road.
 ### Prioritize Ruthlessly
 
 A great mantra for life, individual contributors, and especially folks supporting more junior folks. A great article that deep dives into the topic [here](https://alexturek.com/2022-03-07-How-to-do-less/).
+
+### How to provide coarse estimates SWAG/T-Shirt size
+
+* **T-Shirt size** - This is a method of cost estimation that uses sizes (S, M, L, XL) to correspond with costs. This method may not be universally understood as its time units are not an industry standard. An alternative is stating the actual time unit, such as 2 weeks, a month, a quarter, etc.
+* **SWAG (Scientific Wild Ass Guess)** - This is another method for cost estimation. In this context, it's synonymous with T-Shirt size.
+
+When asked to provide a SWAG, the main goal is to stack rank projects. This is done by computing the return on investment (ROI), where the Return is based on DS Impact Sizing, and the Investment is based on the Engineering cost.
+
+For half-level planning, we'll estimate the cost in a coarse manner (in engineering quarters) to understand two things:
+
+1. If we have enough capacity, which is calculated by multiplying the number of engineers by the number of quarters.
+2. The fastest possible shipment time, calculated by the critical path assuming all engineers are available from the start.
+
+For example:
+
+Suppose it takes 1 quarter for backend, 1 for Android, and 3 for iOS, but the tasks need to be completed one after another (in series). This would total 6 engineering quarters. The critical path, or the longest sequence of tasks, is 3 quarters.
 
 ## Hiring
 
