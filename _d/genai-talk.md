@@ -47,6 +47,7 @@ Generative AI (GenAI) is taking the world by storm, and it takes a new mindset t
         - [Use output to help refine my input](#use-output-to-help-refine-my-input)
         - [Use output to help refine my tuning of input](#use-output-to-help-refine-my-tuning-of-input)
     - [Code and Prompt, finding the right balance](#code-and-prompt-finding-the-right-balance)
+- [Re-thinking prompts](#re-thinking-prompts)
 - [The Final Review: How did my intern do?](#the-final-review-how-did-my-intern-do)
     - [Engagement Based](#engagement-based)
     - [Expert based](#expert-based)
@@ -160,6 +161,7 @@ Conventional Programming vs Delegating to an Intern
   - In LLMs you can access no storage beyond the prompt (think of it as RAM)
   - In LLMs you have limited RAM, so you need to be efficient with it.
   - In LLMs use need to efficiently use the RAM, by deciding which data to place in it.
+
 
 ### Natural Language and reasoning as state
 
@@ -366,6 +368,36 @@ _Cons:_
 | **Complexity**                         | Can be complex and time-consuming to design efficient algorithms | Can become complex due to the need for data pre-processing, architecture selection, etc.       |
 | **Scalability**                        | Easily scalable                                                  | Scalability can be a challenge due to computational demands                                    |
 | **Risk of Overfitting**                | Less risk if properly designed                                   | High risk: May overfit to the training data without proper regularization                      |
+
+## Re-thinking prompts
+
+
+* Prompt+LLM is not the equivalent of an app running on an iPhone
+* Prompt+LLM is  the equivelant of assembly language running on an CPU that can only perform operations and output
+
+The Prompt:
+* Is not the program!
+* It’s the assembly language for the LLM!
+
+The LLM:
+* Is not a CPU, that can take input, or request output
+* It
+
+So what should we call the program?
+* Is the outer system which uses prompts as part of execution
+
+The memory:
+   * Is not accessed by the CPU
+   * It is inlined into the prompt
+
+The I/O:
+   * Is not accessed by the program directly
+   * Shim
+
+You need to write:
+    * The compiler
+
+
 
 ## The Final Review: How did my intern do?
 
