@@ -27,12 +27,32 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
     - Coleslaw
 - Bring my travel scale
 - Be OK going out for some meals and treats. But no gorging
+- Huh, weird....
+    - My brain wanted to go to store at 9pm and gorge
+    - Went to store, bought stuff (mostly helahty)
+    - but came home and was pretty full so didn't want to gorge
+    - Wow, tha twas great.
+
 
 ## Moments
 
 {%include summarize-page.html src="/moments" %}
 
+
+First night:
+    - Arrived: Went to beach and did 30 minutes of meditation on the sunset. It was amazing
+    - Maybe an hour today
+
+Things to do:
+
+- Go to Seaside
+- Go to Cranberry museum
+
+
 ## Success Stories
+
+- Bought lots of peas and healthy things at grocery store
+- Got dinner before unpacking
 
 ## Top Learnings
 
