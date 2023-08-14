@@ -17,6 +17,7 @@
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
         "/affirm": "/affirmations",
+        "/ai-papers": "/ai-paper",
         "/ai-talk": "/genai-talk",
         "/alexa-charity": "/toysfortots",
         "/anxious": "/anxiety",
@@ -31,6 +32,8 @@
         "/bmu": "/bmy",
         "/books": "/books-that-defined-me",
         "/boss": "/being-a-great-manager",
+        "/breathe": "/breath",
+        "/breathing": "/breath",
         "/Business-Model-You": "/bmy",
         "/centenarian": "/last-year",
         "/classact": "/class-act",
@@ -395,7 +398,19 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai-journal.md",
-            "doc_size": 10000
+            "doc_size": 12000
+        },
+        "/ai-paper": {
+            "py/object": "__main__.Page",
+            "url": "/ai-paper",
+            "title": "Seminal AI Papers",
+            "description": "The original AI papers were all about training, super technical, and not that usable as a practioner. Now a days papers are less “mathy” and more applicable to practioners. Here are some worth reading\n\n",
+            "file_path": "_site/ai-paper.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/ai_papers.md",
+            "doc_size": 13000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -523,7 +538,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "markdown_path": "_td/grammerly.md",
+            "markdown_path": "_td/asciinema.md",
             "doc_size": 9000
         },
         "/balance": {
@@ -683,6 +698,18 @@
             "redirect_url": "",
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
             "doc_size": 13000
+        },
+        "/breath": {
+            "py/object": "__main__.Page",
+            "url": "/breath",
+            "title": "Breathing as if your life depends on it",
+            "description": "Breathing, an act so simple yet so crucial, harbors the potential to transform our health, mind, and life. This blog post is a deep dive into the world of breathing techniques, exploring a range of practices from Box Breathing and Victory Breath to Sitali Breath and the Breath Focus Technique. Each technique is detailed with its benefits and step-by-step instructions. In addition, the scientific perspective on breathing is explored. Whether you’re seeking to reduce stress, improve focus, or simply understand the science of breathing, this post is your comprehensive guide. Join us as we explore the art of breathing, its techniques, and the science behind it.\n\n",
+            "file_path": "_site/breath.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/breath.md",
+            "doc_size": 18000
         },
         "/brompton-toys": {
             "py/object": "__main__.Page",
@@ -1314,6 +1341,22 @@
             "markdown_path": "_d/time-off-2023-04.md",
             "doc_size": 15000
         },
+        "/d/time-off-2023-08": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2023-08",
+            "title": "Time off August 2023",
+            "description": "It’s summer break 2023! It’s late August and our last chance to get a vacation before  the kids go back to school.  We were going to go to Chilliwack to try a deli run by a small jewish cult, but alas it’s like 100 degrees so we’re going to to coast instead!\n\n",
+            "file_path": "_site/d/time-off-2023-08.html",
+            "outgoing_links": [
+                "/happy",
+                "/moments",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2023-08.md",
+            "doc_size": 15000
+        },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
             "url": "/d/where-have-all-the-bugs-gone",
@@ -1815,7 +1858,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/genai-talk.md",
-            "doc_size": 24000
+            "doc_size": 34000
         },
         "/getting-to-yes-with-yourself": {
             "py/object": "__main__.Page",
@@ -1877,7 +1920,7 @@
                 "/nlp"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/llm-intern.md",
+            "markdown_path": "_d/gpt2.md",
             "doc_size": 22000
         },
         "/gpt-7h": {
@@ -1983,6 +2026,7 @@
                 "/d/time-off-2022-11",
                 "/d/time-off-2022-12",
                 "/d/time-off-2023-04",
+                "/d/time-off-2023-08",
                 "/hobby",
                 "/joy",
                 "/siy",
@@ -2123,7 +2167,7 @@
                 "/depression"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/ai-journal.md",
+            "markdown_path": "_d/imposter.md",
             "doc_size": 11000
         },
         "/insomnia": {
@@ -2393,7 +2437,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 132000
+            "doc_size": 134000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -2448,13 +2492,13 @@
             "py/object": "__main__.Page",
             "url": "/mermaid",
             "title": "Playing w/Mermaid",
-            "description": "Playing with Mermaid my friend.\n\n",
+            "description": "Lets try d2\n\n",
             "file_path": "_site/mermaid.html",
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/mermaid.md",
-            "doc_size": 9000
+            "doc_size": 11000
         },
         "/micro-economics": {
             "py/object": "__main__.Page",
@@ -2555,6 +2599,7 @@
                 "/balance",
                 "/d/time-off-2022-12",
                 "/d/time-off-2023-04",
+                "/d/time-off-2023-08",
                 "/happy",
                 "/moments-at-work",
                 "/random-idea"
@@ -2661,16 +2706,16 @@
         "/nurture": {
             "py/object": "__main__.Page",
             "url": "/nurture",
-            "title": "NURTURE- The Gottman Method",
-            "description": "The Gottman Method is a research-based approach to couples therapy developed by Drs. John and Julie Gottman. The method is based on the idea that happy and healthy relationships require a strong foundation of love and friendship, as well as the ability to handle conflict in a positive way. The acronym NURTURE stands for the seven key components of the Gottman Method: Navigating Love Maps, Unleashing Fondness and Admiration, Responding to Bids for Attention, Tackling Conflict Constructively, Uplifting Dreams and Aspirations, Renewing Relationship Rituals, and Embracing Shared Meaning. In this book, we will explore each of these components in depth, providing practical advice, exercises, and journal prompts to help you apply the Gottman Method to your own relationship.\n\n",
+            "title": "NURTURE: The Gottman Method",
+            "description": "In “Nurturing Love,” the Heath Brothers distill the wisdom of renowned relationship experts Drs. John and Julie Gottman into a concise and actionable guide for couples seeking to strengthen their relationships. Using their signature storytelling approach and evidence-based insights, the Heath Brothers create an engaging and accessible roadmap to the Gottman Method.\n\n",
             "file_path": "_site/nurture.html",
             "outgoing_links": [],
             "incoming_links": [
                 "/gpt"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/gpt-gotman.md",
-            "doc_size": 29000
+            "markdown_path": "_d/nurture.md",
+            "doc_size": 38000
         },
         "/operating-manual": {
             "py/object": "__main__.Page",
@@ -3075,6 +3120,7 @@
                 "/emotional-health",
                 "/end-in-mind",
                 "/happy",
+                "/ig66/685",
                 "/joy",
                 "/mind-monsters",
                 "/touching",
@@ -3308,7 +3354,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 66000
+            "doc_size": 68000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
@@ -3637,6 +3683,20 @@
             "markdown_path": "_posts/2017-10-06-tech-health-toys.md",
             "doc_size": 13000
         },
+        "/tesla": {
+            "py/object": "__main__.Page",
+            "url": "/tesla",
+            "title": "Tony (Tessie) the Tesla",
+            "description": "I don’t like to drive. I don’t like to drive so much that I have it in my eulogy. Luckily, this fellow made a car that’s optimized to driving you. In August 2023 I treated myself to a Tesla Model Y. It has lots of trade offs, but the key for me is Autopilot (e.g. it driving me)\n\n",
+            "file_path": "_site/tesla.html",
+            "outgoing_links": [
+                "/ig66/687"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/tesla.md",
+            "doc_size": 12000
+        },
         "/testing": {
             "py/object": "__main__.Page",
             "url": "/testing",
@@ -3708,6 +3768,7 @@
                 "/d/time-off-2022-11",
                 "/d/time-off-2022-12",
                 "/d/time-off-2023-04",
+                "/d/time-off-2023-08",
                 "/mind-at-work",
                 "/parkinson"
             ],
@@ -3845,6 +3906,18 @@
             "redirect_url": "",
             "markdown_path": "_posts/2017-9-29-staying-warm-and-biking.md",
             "doc_size": 15000
+        },
+        "/weeks": {
+            "py/object": "__main__.Page",
+            "url": "/weeks",
+            "title": "Life in Weeks",
+            "description": "\n\n",
+            "file_path": "_site/weeks.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/weeks.md",
+            "doc_size": 4300000
         },
         "/welcome-to-holland": {
             "py/object": "__main__.Page",
