@@ -64,6 +64,7 @@ Generative AI (GenAI) is taking the world by storm, and it takes a new mindset t
     - [LLM-Book](#llm-book)
     - [Talk to the intern](#talk-to-the-intern)
     - [Disclaimer](#disclaimer)
+    - [What is a prompt engineer?](#what-is-a-prompt-engineer)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -476,3 +477,7 @@ Very deeply inspired by: <https://vladris.com/llm-book/>
 
 These are my personal opinions and are not related to the opinions of my employer or any other organization I am affiliated with.
 
+
+### What is a prompt engineer?
+
+An interesting take - "a prompt engineer" is a word that can go the way of things like "informaiton super highway", but if you think about what it is doing is saying instructions in  a way that can be understood by another. This requires understnading requirements,  and articulating them to match the person to whom you are giving htem. Honestly,s ounds like a Product Manager
