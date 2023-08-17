@@ -1,30 +1,31 @@
 ---
 layout: post
 title: "Igor's AI Journal"
-permalink: /ai-journal
----
-
-Woah, there's so much stuff to explore in AI. I'm going to keep a journal of stuff I'm looking at.
-
-<!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
-
-- [Visualization](#visualization)
-    - [Weights and Balances](#weights-and-balances)
-- [Diary](#diary)
-    - [2023-07-16](#2023-07-16)
-    - [2023-07-15](#2023-07-15)
-    - [2023-07-04](#2023-07-04)
-    - [Related posts](#related-posts)
-
-<!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
 ## Visualization
 
 ### Weights and Balances
 
 ## Diary
+
+<!-- vim-markdown-toc GFM -->
+
+- [2023-08-17](#2023-08-17)
+- [2023-07-16](#2023-07-16)
+- [2023-07-15](#2023-07-15)
+- [2023-07-04](#2023-07-04)
+- [Related posts](#related-posts)
+
+<!-- vim-markdown-toc -->
+### 2023-08-17
+
+- Playing with Autnomous Agents
+    - AutoGPT
+    - GPTResearcher
+    - Both of these run through docker-compose. Kind of nice as 1/ runtime sandbox, 2/ environment mess up avoidance
+- Playing with new LangChain Syntax
+- Figuring out that I can use debugger to attach so I can debug easily. Figured out how to hook all typer commands (wish I knew that earlier)
+
+
 
 ### 2023-07-16
 

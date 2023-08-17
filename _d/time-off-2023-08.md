@@ -92,6 +92,9 @@ Things to do:
 
 ## Relationships (3/5)
 
+- Did much of the cooking and groceries myself. Really enjoyed it!
+- Zach and kids enjoyed it too!
+
 ### Friends
 
 - Nada, just me and the family
