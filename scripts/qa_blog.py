@@ -13,6 +13,8 @@ from icecream import ic
 import typer
 import time
 import os
+from rich import print
+from loguru import logger
 from pudb import set_trace
 from langchain.docstore.document import Document
 from langchain.embeddings.openai import OpenAIEmbeddings
@@ -161,6 +163,7 @@ def ask(
     u4: bool = typer.Option(False),
     debug: bool = typer.Option(True),
 ):
+
     model = "gpt-4" if u4 else "gpt-3.5-turbo-16k"
     model, max_tokens = choose_model(u4)
     if debug:
@@ -270,6 +273,45 @@ def source_file_to_url(source_file):
     source_file_to_url = build_markdown_to_url_map()
     blog_base="https://idvork.in"
     return blog_base + source_file_to_url[source_file]
+
+@app.command()
+def ask2(
+    question: Annotated[
+        str, typer.Argument()
+    ] = "What are the roles from Igor's Eulogy, answer in bullet form",
+    facts: Annotated[int, typer.Option()] = 5,
+    u4: bool = typer.Option(False),
+    debug: bool = typer.Option(True),
+):
+    model = "gpt-4" if u4 else "gpt-3.5-turbo-16k"
+    model, max_tokens = choose_model(u4)
+    if debug:
+        ic(model)
+        ic(facts)
+    # load chroma from DB
+    blog_content_db = Chroma(
+        persist_directory=chroma_db_dir, embedding_function=embeddings
+    )
+    from langchain.chains import RetrievalQA
+    from langchain.chat_models import ChatOpenAI
+    from langchain.retrievers.multi_query import MultiQueryRetriever
+
+    llm = ChatOpenAI(model_name=model)
+
+    simple_retriever = blog_content_db.as_retriever(search_kwargs={"k": facts})
+    smart_retriever = MultiQueryRetriever.from_llm(
+        retriever=simple_retriever,
+        llm=llm,
+    )
+    qa_chain = RetrievalQA.from_chain_type(
+        llm, retriever=simple_retriever, verbose=True, return_source_documents=True
+    )
+    response = qa_chain({"query": question})
+    print(response["result"])
+    print("Source Documents")
+    for doc in response["source_documents"]:
+        ic(doc.metadata)
+
 
 # @logger.catch()
 def app_wrap_loguru():
