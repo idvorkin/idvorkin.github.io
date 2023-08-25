@@ -13,7 +13,9 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc GFM -->
 
-- [Calendar - 2022](#calendar---2022)
+- [Calendar](#calendar)
+    - [Calendar - 2023 Q3](#calendar---2023-q3)
+    - [Calendar - 2022](#calendar---2022)
 - [Morning Routine](#morning-routine)
     - [Weekend morning routine](#weekend-morning-routine)
     - [Weekday morning routine](#weekday-morning-routine)
@@ -66,8 +68,38 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+## Calendar
 
-## Calendar - 2022
+As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
+
+### Calendar - 2023 Q3
+
+
+My new calendar
+
+| Day | Early AM  | Evening       |
+|-----|-----------|---------------|
+| M   | 2H Swings | Free          |
+| T   | Trainer   | Zach Date     |
+| W   | 1H Swings | Improv        |
+| Th  | 2H Swings | Magic w/Clive |
+| F   | 1H Swings | Movie Night   |
+| Sa  | [l1](l1)  | Free          |
+| Su  | [l2](l2)  | Free          |
+
+- l1
+- Trainer
+- Coffee Shop Writing
+
+<div/>
+- l2
+- Stretching/Free Gym
+- Coffee Shop
+- Weekly Journal
+- Family Blog Post
+
+
+### Calendar - 2022
 
 As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
 
