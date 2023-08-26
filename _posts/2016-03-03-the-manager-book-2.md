@@ -76,6 +76,7 @@ This post uses the word manager, but the most topics apply to all software job f
     - [How do you deal with a team that disagrees with the leadership](#how-do-you-deal-with-a-team-that-disagrees-with-the-leadership)
     - [Agency and Psychological Safety](#agency-and-psychological-safety)
     - [Kudos Boards - Appreciations](#kudos-boards---appreciations)
+    - [How do you like being questioned/micromanaged?](#how-do-you-like-being-questionedmicromanaged)
 - [Process and Mechanism](#process-and-mechanism)
     - [Theory of Process](#theory-of-process)
     - [The dark side of process](#the-dark-side-of-process)
@@ -830,6 +831,18 @@ Both helpful for a short period of time, and for a longer period of time, kuddos
 - The team bonds and grows
 
 A nice format for this is a "clock" with everyone's name on it, and the center of the clock having great prompts like:
+
+
+### How do you like being questioned/micromanaged?
+
+This applies to me, and I need to think about if this is a good part of culture. I like to tell people:
+
+Never worry, I'll think you're "questioning me". I like sanity checks.
+
+If you already had the thought, it's free for you to say it. If I've already thought about it, it's free for me to share my reasoning.
+
+Catching a bad assumption on my part, or even more important, something I haven't thought about - priceless.
+
 
 ## Process and Mechanism
 
