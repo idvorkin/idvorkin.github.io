@@ -1,9 +1,10 @@
 ---
 layout: post
-permalink: /neovim
 title: Neovim
-permalink:
-    - /nvim
+permalink: /neovim
+mermaid: True
+redirect-from:
+  - /nvim
 ---
 
 Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when Bram (the inventor of vim) died, I decided it was time to switch. Here are my thoughts and configuration
@@ -12,7 +13,42 @@ Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when
 
 ### Lively active development
 
+I don't hang out with "modern cutting edge" developers, so I don't know the latest and greatest in the community. I rely on web searches for awesome lists. Plugging into new projects lets me see what the "awesome bleeding edge engineers are doing." Nice to uncover new projects and approaches.
+
 ### Telescope, LSP, CMP, Treesitter
+
+```mermaid
+graph TD;
+  lsp["Language Server Protocol<br>(Language Features)"]
+  cmp["cmp<br>(Autocomplete)"]
+  telescope["Telescope<br>(Fuzzy Finder)"]
+  treesitter["Tree-sitter<br>(Syntax Parsing)"]
+
+  lsp -- "Provides autocomplete" --> cmp
+  lsp -- "Provides language features" --> telescope
+  treesitter -- "Provides syntax highlighting" --> lsp
+  treesitter -- "Provides syntax highlighting" --> cmp
+  treesitter -- "Provides parsed information" --> telescope
+  cmp -- "Provides suggestions" --> telescope
+```
+
+#### Telescope
+
+This is a fuzzy picker - given a list it lets you pick the thing to do with fuzzy finding as you type. This is helpful for commands like files, windows, and autocompletion
+
+#### CMP
+
+Comp is a completion engine, it builds lists from various sources.
+
+#### LSP - Language Server Protocol.
+
+When VS.Code became popular they factored out the language integration into a separate process. So now languge support (refactor, code understanding, find source) runs in a different process and can be high quality instead of just parsing regexp
+
+The way better way to do language integration.
+
+#### Tree Sitter
+
+A super fast grammar parser, supporting parsing partial files and stuff.  Much faster then the regexp/vim parsing support
 
 ### Git tooling
 
@@ -20,6 +56,9 @@ Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when
 #### DiffViewOnly
 #### Gitsigns
 
+#### Speed
+
+Neovim is faster, maybe LUA is faster then VIM Script, VIM9 implemented modern funcctions designed to be faster, but I doubt plugins will be re-written to take advantage of it. If anything, the LUA plugins are faster by default.
 
 ## The weird
 
@@ -27,6 +66,9 @@ Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when
 
 I don't like LUA, I really don't. Luckily, I can mostly use ChatGPT to translate my code to Lua successfull.y Now that I'm over the initial hump, maybe I'll even come to terms with it's nice features.
 
+If I'm being honest though,  LUA is better then vimscript, once I stop whining about LUA, I'll get used to it and find some portable stuf
+
 ### Terminal/Shell Differences
 
 ### Prettier UX doesn't work well under Mosh (need to use SSH)
+
