@@ -18,7 +18,7 @@ I don't hang out with "modern cutting edge" developers, so I don't know the late
 ### Telescope, LSP, CMP, Treesitter
 
 ```mermaid
-graph TD;
+graph BT;
   lsp["Language Server Protocol<br>(Language Features)"]
   cmp["cmp<br>(Autocomplete)"]
   telescope["Telescope<br>(Fuzzy Finder)"]
