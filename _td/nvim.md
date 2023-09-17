@@ -7,13 +7,23 @@ redirect-from:
   - /nvim
 ---
 
-Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when Bram (the inventor of vim) died, I decided it was time to switch. Here are my thoughts and configuration
+Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when Bram (the inventor of vim) died, I decided it was time to switch. Now that I've sucked up the 20-40 hours in the conversion,  I'm thrilled I did.  Turns out all the "kids" have been using and developing on neovim. This results in 1, good tools, and nice best practices.
+
+You can see my configuration and workarounds [here](https://github.com/idvorkin/Settings/tree/master/nvim).
 
 ## The good
+
 
 ### Lively active development
 
 I don't hang out with "modern cutting edge" developers, so I don't know the latest and greatest in the community. I rely on web searches for awesome lists. Plugging into new projects lets me see what the "awesome bleeding edge engineers are doing." Nice to uncover new projects and approaches.
+
+### Nice plugins
+
+* Octo - Github workflow management
+* Neogit - Git integration (yeah, I know about fugitive)
+* DiffViewOpen - Git diff, (as opposed to a file diff)
+* Nicer Copilot
 
 ### Telescope, LSP, CMP, Treesitter
 
