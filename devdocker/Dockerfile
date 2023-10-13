@@ -18,6 +18,8 @@ RUN git clone https://github.com/idvorkin/settings ~/settings
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 RUN ["cp","/app/zsh_profile", "/root/.zshrc"]
 
+# e need to clone the blog repo so we can build the required libraries
+RUN git clone https://github.com/idvorkin/idvorkin.github.io ~/blog
 RUN apt-get -y install python3-pip
 RUN pip3 install bs4 icecream
 RUN apt-get install -y npm fzf vim git make gcc ruby-full bat python3
