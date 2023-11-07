@@ -832,7 +832,6 @@ Both helpful for a short period of time, and for a longer period of time, kuddos
 
 A nice format for this is a "clock" with everyone's name on it, and the center of the clock having great prompts like:
 
-
 ### How do you like being questioned/micromanaged?
 
 This applies to me, and I need to think about if this is a good part of culture. I like to tell people:
@@ -842,7 +841,6 @@ Never worry, I'll think you're "questioning me". I like sanity checks.
 If you already had the thought, it's free for you to say it. If I've already thought about it, it's free for me to share my reasoning.
 
 Catching a bad assumption on my part, or even more important, something I haven't thought about - priceless.
-
 
 ## Process and Mechanism
 
@@ -1062,8 +1060,9 @@ A great mantra for life, individual contributors, and especially folks supportin
 
 ### How to provide coarse estimates SWAG/T-Shirt size
 
-* **T-Shirt size** - This is a method of cost estimation that uses sizes (S, M, L, XL) to correspond with costs. This method may not be universally understood as its time units are not an industry standard. An alternative is stating the actual time unit, such as 2 weeks, a month, a quarter, etc.
-* **SWAG (Scientific Wild Ass Guess)** - This is another method for cost estimation. In this context, it's synonymous with T-Shirt size.
+- **T-Shirt size** - This is a word for creating very coarse cost estimates that use sizes (S, M, L, XL) to correspond with cost. T-Shirt sizes don't have a standardized map to time units so I recommend using actual time units. To avoid "false precision", limit yourself to a small set of coarse time units e.g. (1 half, 2 halves, 4 halves, 4+ halves).
+
+- **SWAG (Scientific Wild Ass Guess)** - This is another word for cost estimation. In this context, it's synonymous with T-Shirt size.
 
 When asked to provide a SWAG, the main goal is to stack rank projects. This is done by computing the return on investment (ROI), where the Return is based on DS Impact Sizing, and the Investment is based on the Engineering cost.
 
