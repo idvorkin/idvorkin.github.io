@@ -19,6 +19,14 @@ By Neighborhood:
 1. Capitol Hill
 1. Ballard
 
+Restaurants
+
+1. Palace Kitchen (Amazing Burgers)
+2. Tai Tung (Good Chinese)
+3. Beth's (Giant Breakfast)
+4. Cafe Flora (Vegetarian)
+5. Tanoor (Middle Easter) - Best Meat
+
 Beaches:
 
 1. Golden Gardens - Very nice sand beeach
@@ -28,9 +36,10 @@ Beaches:
 
 Parks:
 
+1. Olympic Sculpture Park and [vivarium](https://art.seattleartmuseum.org/objects/32046/neukom-vivarium)
 1. Arboretum (+Japanese Garden)
-2. Interlaken
-3. Discovery Park
+1. Interlaken
+1. Discovery Park
 
 By Classic Tourist Attration
 
