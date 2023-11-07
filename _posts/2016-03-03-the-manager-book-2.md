@@ -1060,7 +1060,7 @@ A great mantra for life, individual contributors, and especially folks supportin
 
 ### How to provide coarse estimates SWAG/T-Shirt size
 
-- **T-Shirt size** - This is a word for creating very coarse cost estimates that use sizes (S, M, L, XL) to correspond with cost. T-Shirt sizes don't have a standardized map to time units so I recommend using actual time units. To avoid "false precision", limit yourself to a small set of coarse time units e.g. (1 half, 2 halves, 4 halves, 4+ halves).
+- **T-Shirt size** - This is a word for creating coarse cost estimates that use sizes (S, M, L, XL) to correspond with cost. T-Shirt sizes don't have a standardized map to time units so I recommend using actual time units. To avoid "false precision", limit yourself to a small set of coarse time units e.g. (1 quarter, 2 quarter, 4 quarter, 4+ quarter).
 
 - **SWAG (Scientific Wild Ass Guess)** - This is another word for cost estimation. In this context, it's synonymous with T-Shirt size.
 
@@ -1073,7 +1073,7 @@ For half-level planning, we'll estimate the cost in a coarse manner (in engineer
 
 For example:
 
-Suppose it takes 1 quarter for backend, 1 for Android, and 3 for iOS, but the tasks need to be completed one after another (in series). This would total 6 engineering quarters. The critical path, or the longest sequence of tasks, is 3 quarters.
+Suppose it takes 1 quarter for backend, 1 for Android, and 3 for iOS, but the tasks need to be completed n series (one after another). This would have a t-shirt size of 5 engineering quarters (a swag of 4+). With the critical path, or the longest sequence of tasks, being 3 quarters.
 
 ## Hiring
 
