@@ -19,6 +19,19 @@ By Neighborhood:
 1. Capitol Hill
 1. Ballard
 
+Hikes:
+
+1. Discovery Park - Larger park in Seattle. Big enough to be a hikej
+2. [Twin Falls](https://www.wta.org/go-hiking/hikes/twin-falls-state-park) - Easy day hike
+3. Tiger Mountain - Top end of easy hike
+4. Little Si- Easier day hike
+5. Mount Si - Serious Hike
+
+Caves/Tunnels
+
+1. [Ape Caves](https://www.wta.org/go-hiking/hikes/ape-cave) - Pretty amazing , pitch black lava tubes. Very amazing experience.
+1. [Railroad tunnel](https://www.wta.org/go-hiking/hikes/iron-horse-tunnel) - Pitch black rail road tunnel fun for a bike ride.
+
 Restaurants
 
 1. Palace Kitchen (Amazing Burgers)
@@ -48,4 +61,4 @@ By Classic Tourist Attration
 
 Stuff to skip:
 
-1. First Starbucks - just a crappy coffee shop
+1. First Starbucks - just a crappy coffee [shop](shop.md)
