@@ -28,8 +28,7 @@ LISP, and SICP
     - [Tail recurusssion](#tail-recurusssion)
 - [Data](#data)
     - [Church encoding](#church-encoding)
-    - [Understanding pairs](#understanding-pairs)
-    - [Procedural pairs](#procedural-pairs)
+    - [Church Pairs](#church-pairs)
     - [2.3 Symbolic Data](#23-symbolic-data)
 
 <!-- vim-markdown-toc -->
@@ -99,15 +98,26 @@ The terms `car` and `cdr` were retained in Lisp to refer to the first and rest o
 
 ### Church encoding
 
+If all you have is substitution, how do you get stuff done?
+
+* Whole Numbers
+    * Zero
+    * 1: Next(Zero)
+    * 2: Next(Next(Zero))
+* Booleans ->
+* Pairs -> See below
+* Lists
+    * {} ()
+    * {1} (Pair 1 ())
+    * {1 2} (Pair 2 (Pair 1 ()))
+* Maybes ->
+
 * Recurssion
 * Only subsititutions
 
+### Church Pairs
 
-### Understanding pairs
-
-### Procedural pairs
-
-How to create pairs using only substitution.  That's a lie, there is in fact storage, it's just using the closure of the parent function for storage
+How to create pairs using only substitution.  Aka w/o storage. Except, there has to be storage. The storage is the closure of the parent function
 
 https://xuanji.appspot.com/isicp/2-1-data.html
 
@@ -126,7 +136,7 @@ https://xuanji.appspot.com/isicp/2-1-data.html
 or in python
 ```python
 def make_pair(x, y):
-    def pick_element(m):
+    def dispatch(m):
         if m == "head":
             return x
         elif m == "tail":
@@ -141,6 +151,8 @@ def head(pair):
 def tail(pair):
     return pair("tail")
 ```
+
+Think about that more, that's creating an object at runtime. With a bit of sugar that's could very easily by a class/object sugar
 
 ### 2.3 Symbolic Data
 
@@ -166,8 +178,7 @@ or in python
 def make_pair(x, y):
     def pick_element(m):
         if m == "head":
-            return x
-        elif m == "tail":
+            return x elif m == "tail":
             return y
         else:
             raise Exception("Argument not 0 or 1 -- CONS")
