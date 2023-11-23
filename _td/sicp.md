@@ -26,8 +26,11 @@ LISP, and SICP
 - [Recurssion](#recurssion)
     - [Basis in lambda calculus](#basis-in-lambda-calculus)
     - [Tail recurusssion](#tail-recurusssion)
-- [Understanding pairs](#understanding-pairs)
+- [Data](#data)
+    - [Church encoding](#church-encoding)
+    - [Understanding pairs](#understanding-pairs)
     - [Procedural pairs](#procedural-pairs)
+    - [2.3 Symbolic Data](#23-symbolic-data)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -81,6 +84,8 @@ The names `cons`, `car`, and `cadr` come from the historical development of Lisp
 The terms `car` and `cdr` were retained in Lisp to refer to the first and rest of a cons cell. Over time, as Lisp evolved, additional shorthand functions were created by combining `car` and `cdr` in various ways. These names stuck and became a part of the Lisp family of languages' common vernacular, despite their somewhat cryptic appearance to newcomers.
 
 
+
+
 ## Recurssion
 
 ### Basis in lambda calculus
@@ -90,7 +95,15 @@ The terms `car` and `cdr` were retained in Lisp to refer to the first and rest o
 * A way to implement recurussion, but with O(1) space
 
 
-## Understanding pairs
+## Data
+
+### Church encoding
+
+* Recurssion
+* Only subsititutions
+
+
+### Understanding pairs
 
 ### Procedural pairs
 
@@ -128,3 +141,45 @@ def head(pair):
 def tail(pair):
     return pair("tail")
 ```
+
+### 2.3 Symbolic Data
+
+[Symbolic Data](https://xuanji.appspot.com/isicp/2-3-symbolic.html)
+
+```scheme
+(define x 1)
+(define y 2)
+
+(list x y) ; => (1 2)
+
+(display "Wait what if i I wanted the actual symbols x and y")
+
+'(x y) ; => (x y)
+'(list x y) ; => (list x y)
+(list x 'y) ; => (list 1 y)
+
+
+
+```
+or in python
+```python
+def make_pair(x, y):
+    def pick_element(m):
+        if m == "head":
+            return x
+        elif m == "tail":
+            return y
+        else:
+            raise Exception("Argument not 0 or 1 -- CONS")
+    return pick_element
+
+def head(pair):
+    return pair("head")
+
+def tail(pair):
+    return pair("tail")
+```
+
+
+
+
