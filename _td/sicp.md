@@ -23,13 +23,18 @@ LISP, and SICP
     - [Why is everything recurression?](#why-is-everything-recurression)
     - [Why all those wonkey brackets?](#why-all-those-wonkey-brackets)
     - [Why cons, car, cadr](#why-cons-car-cadr)
+- [Recurssion](#recurssion)
+    - [Basis in lambda calculus](#basis-in-lambda-calculus)
+    - [Tail recurusssion](#tail-recurusssion)
+- [Understanding pairs](#understanding-pairs)
+    - [Procedural pairs](#procedural-pairs)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
 ## SICP
 
-Cool interactive version: https://xuanji.appspot.com/isicp
+Cool interactive version: [Nice Version](https://xuanji.appspot.com/isicp)
 
 ## Racket: Modern Lisp
 
@@ -41,6 +46,7 @@ Cool interactive version: https://xuanji.appspot.com/isicp
 * Setup NeoFormat with raco format
 
 ### Conjure School
+
 
 Cool interactive editor
 
@@ -74,3 +80,51 @@ The names `cons`, `car`, and `cadr` come from the historical development of Lisp
 
 The terms `car` and `cdr` were retained in Lisp to refer to the first and rest of a cons cell. Over time, as Lisp evolved, additional shorthand functions were created by combining `car` and `cdr` in various ways. These names stuck and became a part of the Lisp family of languages' common vernacular, despite their somewhat cryptic appearance to newcomers.
 
+
+## Recurssion
+
+### Basis in lambda calculus
+
+### Tail recurusssion
+
+* A way to implement recurussion, but with O(1) space
+
+
+## Understanding pairs
+
+### Procedural pairs
+
+How to create pairs using only substitution.  That's a lie, there is in fact storage, it's just using the closure of the parent function for storage
+
+https://xuanji.appspot.com/isicp/2-1-data.html
+
+```lisp
+(define (make_pair x y)
+  (define (dispatch m)
+    (cond ((= m 0) x)
+          ((= m 1) y)
+          (else (error "Argument not 0 or 1 -- CONS" m))))
+  dispatch)
+
+(define (head pair) (pair 0))
+
+(define (tail pair) (pair 1))
+```
+or in python
+```python
+def make_pair(x, y):
+    def pick_element(m):
+        if m == "head":
+            return x
+        elif m == "tail":
+            return y
+        else:
+            raise Exception("Argument not 0 or 1 -- CONS")
+    return pick_element
+
+def head(pair):
+    return pair("head")
+
+def tail(pair):
+    return pair("tail")
+```
