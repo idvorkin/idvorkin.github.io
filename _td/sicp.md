@@ -121,7 +121,7 @@ How to create pairs using only substitution.  Aka w/o storage. Except, there has
 
 https://xuanji.appspot.com/isicp/2-1-data.html
 
-```lisp
+```scheme
 (define (make_pair x y)
   (define (dispatch m)
     (cond ((= m 0) x)
