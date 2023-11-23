@@ -160,7 +160,6 @@ tail(p2) # => 2
 Think about that more, that's creating an object at runtime. With a bit of sugar that's could very easily by a class/object sugar
 
 ```python
-```python
 class Pair:
     def __init__(self, x, y):
         self.x = x
@@ -172,9 +171,10 @@ class Pair:
     def tail(self):
         return self.y
 
-p1 = Pair_pair(1,2)
+p1 = Pair(1,2)
 p1.head() # => 1
 p1.tail() # => 2
+```
 
 
 ### 2.3 Symbolic Data
