@@ -134,25 +134,48 @@ https://xuanji.appspot.com/isicp/2-1-data.html
 (define (tail pair) (pair 1))
 ```
 or in python
+
 ```python
 def make_pair(x, y):
     def dispatch(m):
         if m == "head":
-            return x
+           return x
         elif m == "tail":
             return y
         else:
-            raise Exception("Argument not 0 or 1 -- CONS")
-    return pick_element
+            raise Exception("un supported method")
+    return dispatch
 
 def head(pair):
     return pair("head")
 
 def tail(pair):
     return pair("tail")
+
+p1 = make_pair(1,2)
+head(p1) # => 1
+tail(p2) # => 2
 ```
 
 Think about that more, that's creating an object at runtime. With a bit of sugar that's could very easily by a class/object sugar
+
+```python
+```python
+class Pair:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def head(self):
+        return self.x
+
+    def tail(self):
+        return self.y
+
+p1 = Pair_pair(1,2)
+p1.head() # => 1
+p1.tail() # => 2
+
 
 ### 2.3 Symbolic Data
 
@@ -173,24 +196,6 @@ Think about that more, that's creating an object at runtime. With a bit of sugar
 
 
 ```
-or in python
-```python
-def make_pair(x, y):
-    def pick_element(m):
-        if m == "head":
-            return x elif m == "tail":
-            return y
-        else:
-            raise Exception("Argument not 0 or 1 -- CONS")
-    return pick_element
-
-def head(pair):
-    return pair("head")
-
-def tail(pair):
-    return pair("tail")
-```
-
 
 
 
