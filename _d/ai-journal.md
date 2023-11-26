@@ -1,21 +1,43 @@
 ---
 layout: post
 title: "Igor's AI Journal"
+permalink: /ai-journal/
+---
+
+A journal of random explorations in AI. Keeping track of htem so I don't get super lost
+
+
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [Visualization](#visualization)
+    - [Weights and Balances](#weights-and-balances)
+- [Diary](#diary)
+    - [2023-11-26](#2023-11-26)
+    - [2023-08-17](#2023-08-17)
+    - [2023-07-16](#2023-07-16)
+    - [2023-07-15](#2023-07-15)
+    - [2023-07-04](#2023-07-04)
+    - [Related posts](#related-posts)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 ## Visualization
 
 ### Weights and Balances
 
 ## Diary
 
-<!-- vim-markdown-toc GFM -->
+### 2023-11-26
 
-- [2023-08-17](#2023-08-17)
-- [2023-07-16](#2023-07-16)
-- [2023-07-15](#2023-07-15)
-- [2023-07-04](#2023-07-04)
-- [Related posts](#related-posts)
+- Foun content on red teaming
+- Found out new models like Orca and they are pretty darn fast on GPT4all
+- Updated my code to use the latest OpenAI models
+- Updated my code to use langchain
+- Fixed up journal to have stuff again
 
-<!-- vim-markdown-toc -->
+
 ### 2023-08-17
 
 - Playing with Autnomous Agents
