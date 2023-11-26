@@ -42,6 +42,7 @@ LISP, and SICP
     - [LISP Macros](#lisp-macros)
     - [LISP Macros vs C Macros](#lisp-macros-vs-c-macros)
     - [Macros vs Reflection](#macros-vs-reflection)
+- [Paul graham on the roots of list](#paul-graham-on-the-roots-of-list)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -300,3 +301,15 @@ C Macros are just text substitution, they can't do anything that you can't do wi
 
 Reflection lets you operate at runtime, while macros change the code at compile time. Compile time is more efficient, but can be less powerful
 
+
+## Paul graham on the roots of list
+
+Paul has lots of good stuff , you can read through it [http://www.paulgraham.com/lisp.html]. I think his best post was LISP from scratch [here](/static/roots_of_lisp.pdf)
+
+The core idea was you can make all of computing with just 7 primitives! You can then use those to create X helper functions, from which you can then execute the language!
+
+The primitives are:
+
+The helpers are:
+
+The final Eval code:
