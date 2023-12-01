@@ -10,7 +10,7 @@ redirect_from:
   - /failure
 ---
 
-Failure is not an option it's a necessity. Here a
+Failure is not an option it's a necessity. Here some thoughts on failures
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -22,6 +22,7 @@ Failure is not an option it's a necessity. Here a
     - [James Web Telescope guy](#james-web-telescope-guy)
     - [Elon on launching man to space](#elon-on-launching-man-to-space)
     - [Elon on engineering responsibility](#elon-on-engineering-responsibility)
+    - [My $500M mars rover mistake](#my-500m-mars-rover-mistake)
     - [Seth Godin on Fear](#seth-godin-on-fear)
 - [FAQ](#faq)
 - [Related Reading](#related-reading)
@@ -57,6 +58,12 @@ Failures are a great opportunity to learn. Use [COEs](/coe)
 ### Elon on engineering responsibility
 
 {% include youtube.html src="DxREm3s1scA?start=405" %}
+
+### My \$500M mars rover mistake
+
+Great story on the empathy that failure can bring
+
+[My \$500M mars rover mistake](https://www.chrislewicki.com/articles/failurestory)
 
 ### Seth Godin on Fear
 
