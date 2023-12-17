@@ -32,13 +32,11 @@ no-render-title: true
 
 <br/>
 
-
 <div class='alert alert-success' id="random-post">
 </div>
 
 <div class='alert alert-info' id="achievment">
 </div>
-
 
 <!-- Show the next blog posts -->
 
