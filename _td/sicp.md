@@ -3,21 +3,21 @@ layout: post
 title: Structure And Design of Computer Programs
 permalink: /sicp
 redirect_from:
-- /wizard-book
-- /lisp
+  - /wizard-book
+  - /lisp
 ---
 
 LISP, and SICP
-
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [SICP](#sicp)
+- [LISP](#lisp)
 - [Racket: Modern Lisp](#racket-modern-lisp)
 - [VIM Integration](#vim-integration)
     - [Formatter](#formatter)
-    - [Conjure School](#conjure-school)
+    - [Conjure (NVIM editor plugin)](#conjure-nvim-editor-plugin)
 - [FAQ](#faq)
     - [Why different then other languages?](#why-different-then-other-languages)
     - [Why is everything recurression?](#why-is-everything-recurression)
@@ -43,6 +43,7 @@ LISP, and SICP
     - [LISP Macros vs C Macros](#lisp-macros-vs-c-macros)
     - [Macros vs Reflection](#macros-vs-reflection)
 - [Paul graham on the roots of list](#paul-graham-on-the-roots-of-list)
+    - [Lecture 3B Differentiation](#lecture-3b-differentiation)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -51,23 +52,48 @@ LISP, and SICP
 
 Cool interactive version: [Nice Version](https://xuanji.appspot.com/isicp)
 
-## Racket: Modern Lisp
+- Amazing this video series is from 1986. So many concepts have sort of gotten their way into modern programming languages.
+- [ ] Really fun learning programming from these guys as they're so excited
 
+-
+
+## LISP
+
+List processing, this is the key! All you do is process lists. Unlike other languages, everything is a list.
+
+A list (+ 3 4) can be an expression, or define a variable, or define a function.
+
+Because everything is a list, including the source tree, you can interact with the source tree at run-time (ala reflection) or at compile time via (macros)
+
+Because everything is a list you have to look more closely then in other languages.
+
+A list with nested lists is a tree. A list in LISP is implemented as a link list. If each tree has 2 children, then a b-tree, else a regular tree.
+
+LISP is not a functional programming language, though functions are first class citizens. Modifining variables is a common situation, using (set )
+
+Because there are no operators, we can redefine any symbox we want.
+
+We don't write math like this.
+
+## Racket: Modern Lisp
 
 ## VIM Integration
 
 ### Formatter
 
-* Setup NeoFormat with raco format
+- Setup NeoFormat with raco format
+- `raco pkg install fmt`
 
-### Conjure School
-
+### Conjure (NVIM editor plugin)
 
 Cool interactive editor
 
-* \ee -> execute the current inner form
-* \er -> execute the current outer form
-* \eb -> execute the entire buffer
+- \ee -> execute the current inner form
+- \er -> execute the current outer form
+- \eb -> execute the entire buffer
+- \lR -> Reset the buffer
+- \lV -> View the buffer in a vert split
+- \ece -> Execute the code, and paste itino a comment
 
 ## FAQ
 
@@ -77,11 +103,9 @@ It starts with assumption all you need is lambda calculus, e.g just functions, e
 
 Interestingly if you can pass in functions, then you can have functions to do the equivalent of statements in other programming languages
 
-
 ### Why is everything recurression?
 
 Actuall, it's more fundamental, it's that everything is na expression, and if everything is an expression, the only looping has to be recurssion
-
 
 ### Why all those wonkey brackets?
 
@@ -96,18 +120,18 @@ This corresonds to the models of computation:
 
 1/ The teuring machine
 
-* You interact with a a machine that has variables
-* You can set and read variables
-* You can do math
-* You get language specific control statements
-* You can call sub routines
+- You interact with a a machine that has variables
+- You can set and read variables
+- You can do math
+- You get language specific control statements
+- You can call sub routines
 
 2/ Lambada calculus
 
-* Everything is a function/expression
-* Assignment is a function
-* Iteration is a function
-* Condition is a function
+- Everything is a function/expression
+- Assignment is a function
+- Iteration is a function
+- Condition is a function
 
 Harder on brain, but more consistent
 
@@ -125,17 +149,13 @@ The names `cons`, `car`, and `cadr` come from the historical development of Lisp
 
 The terms `car` and `cdr` were retained in Lisp to refer to the first and rest of a cons cell. Over time, as Lisp evolved, additional shorthand functions were created by combining `car` and `cdr` in various ways. These names stuck and became a part of the Lisp family of languages' common vernacular, despite their somewhat cryptic appearance to newcomers.
 
-
-
-
 ## Recurssion
 
 ### Basis in lambda calculus
 
 ### Tail recurusssion
 
-* A way to implement recurussion, but with O(1) space
-
+- A way to implement recurussion, but with O(1) space
 
 ## Data
 
@@ -143,26 +163,26 @@ The terms `car` and `cdr` were retained in Lisp to refer to the first and rest o
 
 If all you have is substitution, how do you get stuff done?
 
-* Whole Numbers
-    * Zero
-    * 1: Next(Zero)
-    * 2: Next(Next(Zero))
-* Booleans ->
-* Pairs -> See below
-* Lists
-    * {} ()
-    * {1} (Pair 1 ())
-    * {1 2} (Pair 2 (Pair 1 ()))
-* Maybes ->
+- Whole Numbers
+  - Zero
+  - 1: Next(Zero)
+  - 2: Next(Next(Zero))
+- Booleans ->
+- Pairs -> See below
+- Lists
+  - {} [()](<().md>)
+  - {1} (Pair 1 ())
+  - {1 2} (Pair 2 (Pair 1 ()))
+- Maybes ->
 
-* Recurssion
-* Only subsititutions
+- Recurssion
+- Only subsititutions
 
 ### Church Pairs
 
-How to create pairs using only substitution.  Aka w/o storage. Except, there has to be storage. The storage is the closure of the parent function
+How to create pairs using only substitution. Aka w/o storage. Except, there has to be storage. The storage is the closure of the parent function
 
-https://xuanji.appspot.com/isicp/2-1-data.html
+<https://xuanji.appspot.com/isicp/2-1-data.html>
 
 ```scheme
 (define (make_pair x y)
@@ -176,6 +196,7 @@ https://xuanji.appspot.com/isicp/2-1-data.html
 
 (define (tail pair) (pair 1))
 ```
+
 or in python
 
 ```python
@@ -219,7 +240,6 @@ p1.head() # => 1
 p1.tail() # => 2
 ```
 
-
 ### 2.3 Symbolic Data
 
 [Symbolic Data](https://xuanji.appspot.com/isicp/2-3-symbolic.html)
@@ -256,15 +276,13 @@ So long as syntax is always (function arg1, arg2 arg3), if (method, object, arg 
 
 Hymogophony? What if you can edit the source code just as easily as you can edit any other data? To do that parse trees can be much simpler when using prefix notion.
 
-## Modern learning using an excellent tutor.
+## Modern learning using an excellent tutor
 
 How to learn when you don't know everything. Books are linear.
-
 
 Really concepts are a dag. so where ever you end, you probably need eveything... And that'st he beter way to go. Ideally the book has this linear aspect to it. The problem with books is.
 
 The problemw ith the interjnnet
-
 
 The book
 
@@ -272,16 +290,16 @@ The Internet
 
 The Choose your own adventure
 
-
 ### Scheme vs Lisp vs Racket
 
 ## Language Eveolution
 
-* Lisp  (list procssing)
-   *  -> Scheme -> Racket
-* Algol (procedural)
-   * C, Pascal
-   *
+- Lisp (list procssing)
+  - -> Scheme -> Racket
+- Algol (procedural)
+  - C, Pascal
+
+  -
 
 ## Meta programming
 
@@ -291,16 +309,15 @@ Treat code as any other data structure, you can see the length of a code segment
 
 ### LISP Macros
 
-https://www.greghendershott.com/fear-of-macros/
+<https://www.greghendershott.com/fear-of-macros/>
 
 ### LISP Macros vs C Macros
 
-C Macros are just text substitution, they can't do anything that you can't do with text substitution. By contrast lisp macros allow you to make changes to the parse tree. Here's a  good idea of what you can do with lisp macros
+C Macros are just text substitution, they can't do anything that you can't do with text substitution. By contrast lisp macros allow you to make changes to the parse tree. Here's a good idea of what you can do with lisp macros
 
 ### Macros vs Reflection
 
 Reflection lets you operate at runtime, while macros change the code at compile time. Compile time is more efficient, but can be less powerful
-
 
 ## Paul graham on the roots of list
 
@@ -313,3 +330,20 @@ The primitives are:
 The helpers are:
 
 The final Eval code:
+
+### Lecture 3B Differentiation
+
+Because we're first class function We can start w/numerical differentiator. Take an input as af unction, and return the output of a function
+
+````python
+
+
+```rkt
+(define (deriv f x)
+ (define delta 0.0001)
+
+ ; Derivative is rate of change, rise/run
+
+ ( / (- (f (+x delta))(f x)) delta)
+)
+````
