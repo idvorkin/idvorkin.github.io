@@ -3,29 +3,29 @@ layout: post
 title: All posts
 tags: []
 ---
+
 Here are all the posts
-
-
 
 # Production
 
 {% for item in site.posts %}
-[{{item.title}}]({{item.url}}) - [{{item.url }}] 
+[{{item.title}}]({{item.url}}) - [{{item.url }}]
 {{item.path}}
 
 {% endfor %}
 
-# Drafts 
+# Drafts
+
 {% for item in site.d %}
-[{{item.title}}]({{item.url}}) - [{{item.url }}] 
+[{{item.title}}]({{item.url}}) - [{{item.url }}]
 {{item.path}}
 
 {% endfor %}
 
+# Tech Diary
 
-# Tech Diary 
 {% for item in site.td %}
-[{{item.title}}]({{item.url}}) - [{{item.url }}] 
+[{{item.title}}]({{item.url}}) - [{{item.url }}]
 {{item.path}}
 
 {% endfor %}

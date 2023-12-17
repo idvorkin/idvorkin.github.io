@@ -2,14 +2,12 @@
 # Remove line too long
 # pep8: disable=E501
 
-import os
-from typing import List, TypeVar
+from typing import List
 from bs4 import BeautifulSoup
 import jsonpickle  # richer json libray
 import typer
 from loguru import logger
 from attrs import define, asdict
-from icecream import ic
 
 app = typer.Typer()
 

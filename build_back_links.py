@@ -117,6 +117,7 @@ class LinkBuilder:
             # <meta property="og:description" content="Coaching is like midwifery">
             descriptionTag = soup.find("meta", property="og:description")
             description = descriptionTag["content"] if descriptionTag else "..."
+
             # Remove all in site nav, which have a parent of class including site_nav
             def is_site_nav(tag):
                 if "class" not in tag.attrs:
@@ -151,7 +152,6 @@ class LinkBuilder:
         assert "should never get here"
 
     def update(self, path_back: FileType):
-
         page = self.parse_page(path_back)
         if page is None:
             return
@@ -215,9 +215,7 @@ class LinkBuilder:
 
     def __init__(self):
         self.incoming_links = defaultdict(list)  # forward -> back
-        self.redirects = (
-            {}
-        )  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
+        self.redirects = {}  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
         self.pages = {}  # canonical->md
 
     def print_json(self):

@@ -1,17 +1,10 @@
 #!python3
 
 import os
-import openai
-import json
 from icecream import ic
 import typer
-import sys
-from rich import print as rich_print
-import rich
 import re
-from typeguard import typechecked
 import requests
-from io import BytesIO
 
 
 app = typer.Typer()
@@ -30,7 +23,6 @@ def content_type_to_extension(ct):
 
 @app.command()
 def default(album_url):
-
     # download the file
     request = requests.get(album_url)
     text = request.text
@@ -47,7 +39,7 @@ def default(album_url):
     url_matches = re.findall(url_extract_pattern, text)
     img_count = 0
     for i, u in enumerate(url_matches):
-        if not "googleusercontent" in u:
+        if "googleusercontent" not in u:
             continue
 
         img_count += 1

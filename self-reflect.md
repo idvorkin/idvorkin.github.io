@@ -7,14 +7,12 @@ featured: true
 comments: true
 permalink: /reflect-tool
 tags:
-- how igor ticks
-- emotional intelligence
+  - how igor ticks
+  - emotional intelligence
 ---
 
 I like the idea of providing self reflection tools via prompt questions. Story board has the best
 [approximation of what I'm thinking](https://www.mystorybrand.com).
-
-
 
 <div class="card">
   <div class="card-header" style="background-image: url();">Ten minute coaching</div>

@@ -1,7 +1,8 @@
 ---
 title: Igor's Linked In
-redirect_from: 
+redirect_from:
 ---
+
 <!--
 
     Intent of this page is to redirect to linked in based via web or applink, and to capture that in google analytics.
@@ -13,90 +14,99 @@ TODO:
     Consider merging with scripts.html
 -->
 <head>
+  <!-- Asynchronous Google Analytics snippet -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "//www.google-analytics.com/analytics.js",
+      "ga"
+    );
 
-<!-- Asynchronous Google Analytics snippet -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga("create", "{{ site.google_analytics }}", "auto");
+    ga("require", "displayfeatures");
+    ga("send", "pageview");
+  </script>
 
-  ga('create', '{{ site.google_analytics }}', 'auto');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
+  <script>
+    function gotoAppIfInstalled(app_url, web_url) {
+      // Must be a better way to do mobile detection but this is good enough for now.
+      const ios = /iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase());
+      const android = /android/i.test(navigator.userAgent.toLowerCase());
 
-</script>
+      const web_only = !(ios || android);
 
+      console.log(` ios: ${ios} android: ${android} web_only: ${web_only}`);
 
-<script>
-function gotoAppIfInstalled(app_url, web_url)
-{
-    // Must be a better way to do mobile detection but this is good enough for now.
-    const ios = (/iphone|ipad|ipod/i.test(navigator.userAgent.toLowerCase()));
-    const android = (/android/i.test(navigator.userAgent.toLowerCase()));
+      if (web_only) {
+        window.location = web_url;
+        return;
+      }
 
-    const web_only = !(ios || android);
+      //  Can't tell if app is installed, so try to launch the app. If nothing happens then
+      //  go to web_url after a timeout.
+      // https://stackoverflow.com/questions/13044805/how-to-check-if-an-app-is-installed-from-a-web-page-on-an-iphone
 
-    console.log(` ios: ${ios} android: ${android} web_only: ${web_only}`)
+      const set_window_location_time = new Date().valueOf();
+      const max_duration_till_app_launched_ms = 25;
+      const max_duration_till_callback_runs_ms = 100;
 
-    if (web_only)
-    {
-        window.location =  web_url
-        return
-    }
+      setTimeout(() => {
+        console.log("timed out going to web url");
 
-    //  Can't tell if app is installed, so try to launch the app. If nothing happens then
-    //  go to web_url after a timeout.
-    // https://stackoverflow.com/questions/13044805/how-to-check-if-an-app-is-installed-from-a-web-page-on-an-iphone
-
-    const set_window_location_time = new Date().valueOf();
-    const max_duration_till_app_launched_ms = 25;
-    const max_duration_till_callback_runs_ms = 100
-
-    setTimeout(() => {
-            console.log('timed out going to web url')
-
-            const now =  new Date().valueOf()
-            const isTookToLongForCallbackToRun = now - set_window_location_time > max_duration_till_callback_runs_ms;
-            if (isTookToLongForCallbackToRun) {
-                // If callback hasn't run till much after it should have, something odd going on. E.g.
-                // App crashed, user hit back, etc.
-                // In that case don't force them back to the app.
-               return;
-            }
-
-            window.location = web_url;
-
-    }, max_duration_till_app_launched_ms);
-
-    console.log(`attempt to go to ${app_url}`)
-    window.location = app_url;
-}
-
-// copied from:  https://stackoverflow.com/questions/2090551/parse-query-string-in-javascript
-function getQueryVariable(variable) {
-    var query = window.location.search.substring(1);
-    var vars = query.split('&');
-    for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split('=');
-        if (decodeURIComponent(pair[0]) == variable) {
-            return decodeURIComponent(pair[1]);
+        const now = new Date().valueOf();
+        const isTookToLongForCallbackToRun =
+          now - set_window_location_time > max_duration_till_callback_runs_ms;
+        if (isTookToLongForCallbackToRun) {
+          // If callback hasn't run till much after it should have, something odd going on. E.g.
+          // App crashed, user hit back, etc.
+          // In that case don't force them back to the app.
+          return;
         }
+
+        window.location = web_url;
+      }, max_duration_till_app_launched_ms);
+
+      console.log(`attempt to go to ${app_url}`);
+      window.location = app_url;
     }
-    console.log('Query variable %s not found', variable);
-    return ""
-}
 
-// in this approach the input needs to be urlencoded and in the redirect query paramater.
-// to use - copy the stuff after linkedin.com and stuff it in an url encoder.
+    // copied from:  https://stackoverflow.com/questions/2090551/parse-query-string-in-javascript
+    function getQueryVariable(variable) {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (decodeURIComponent(pair[0]) == variable) {
+          return decodeURIComponent(pair[1]);
+        }
+      }
+      console.log("Query variable %s not found", variable);
+      return "";
+    }
 
-function getRedirect(pathname)
-{
-    // for now ignore pathname
-    return getQueryVariable("redirect")
-}
+    // in this approach the input needs to be urlencoded and in the redirect query paramater.
+    // to use - copy the stuff after linkedin.com and stuff it in an url encoder.
 
-/*
+    function getRedirect(pathname) {
+      // for now ignore pathname
+      return getQueryVariable("redirect");
+    }
+
+    /*
 // This commented out approach fails because githubpages can't resolve the subpage - grr
 // take the path after /linkedin/ and process it is as is.
 
@@ -108,31 +118,29 @@ function getRedirect(pathname) {
 } 
 */
 
-console.log(window.location)
-const redirect_path = getRedirect(window.location.pathname+window.location.search)
-const isNoRedirect = redirect_path == ""
+    console.log(window.location);
+    const redirect_path = getRedirect(
+      window.location.pathname + window.location.search
+    );
+    const isNoRedirect = redirect_path == "";
 
-app_url = ""
-web_url = ""
-if (isNoRedirect)
-{
-    // When no redirect goto profile
-    // (NOTE: Can't share code with else block as need different paths for profiles- groan)
-    const profile = 'idvorkin';
-    app_url = `linkedin://profile/${profile}`;
-    web_url = `https://linkedin.com/in/${profile}`;
-    gotoAppIfInstalled(app_url, web_url)
-}
-else
-{
-    // When redirect try the redirect
-    app_url = `linkedin://${redirect_path}`;
-    web_url = `https://linkedin.com/${redirect_path}`;
-}
-console.log(`redirectPath: ${redirect_path}`)
-console.log(`app_url: ${app_url}`)
-console.log(`web_url: ${web_url}`)
-gotoAppIfInstalled(app_url, web_url)
-
-</script>
+    app_url = "";
+    web_url = "";
+    if (isNoRedirect) {
+      // When no redirect goto profile
+      // (NOTE: Can't share code with else block as need different paths for profiles- groan)
+      const profile = "idvorkin";
+      app_url = `linkedin://profile/${profile}`;
+      web_url = `https://linkedin.com/in/${profile}`;
+      gotoAppIfInstalled(app_url, web_url);
+    } else {
+      // When redirect try the redirect
+      app_url = `linkedin://${redirect_path}`;
+      web_url = `https://linkedin.com/${redirect_path}`;
+    }
+    console.log(`redirectPath: ${redirect_path}`);
+    console.log(`app_url: ${app_url}`);
+    console.log(`web_url: ${web_url}`);
+    gotoAppIfInstalled(app_url, web_url);
+  </script>
 </head>

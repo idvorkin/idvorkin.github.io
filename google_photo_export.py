@@ -2,7 +2,6 @@
 
 import json
 import os
-import re
 import shutil
 import zipfile
 from datetime import datetime
@@ -49,10 +48,10 @@ def create_jekyll_post(elements, jekyll_posts_folder):
     post_filename = f"{post_date}-google-photos-album.markdown"
 
     with open(os.path.join(jekyll_posts_folder, post_filename), "w") as f:
-        f.write(f"---\n")
-        f.write(f"title: Google Photos Album\n")
+        f.write("---\n")
+        f.write("title: Google Photos Album\n")
         f.write(f"date: {post_date}\n")
-        f.write(f"---\n\n")
+        f.write("---\n\n")
 
         for element in elements:
             if element[0] == "photo":
@@ -71,7 +70,7 @@ def generate_jekyll_blog(metadata_files, extracted_photos_folder, jekyll_folder)
     )
     create_jekyll_post(elements, jekyll_posts_folder)
 
-    print(f"Generated single Jekyll blog post with photos and text.")
+    print("Generated single Jekyll blog post with photos and text.")
 
 
 if __name__ == "__main__":
