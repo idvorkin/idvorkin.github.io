@@ -8,18 +8,15 @@ I don't like to drive. I don't like to drive so much that I have it in my eulogy
 
 See [Family Journal 687](/ig66/687)
 
-
 ### What's auto pilot like
 
-The Tesla drives you.  It's more nuanced than that. The Tesla does great on the highway, not nearly as good in the city. The mental model I use is it's like sharing the wheel with a teenager when you can, and should take over the driving for more complex situations. This teen has mastered clearly marked highways, but it doesn't like carpool lanes and gets confused in old cities like Seattle where roads are a mess and construction is everywhere. A common question I get on the autopilot is "Do you really trust the Tesla to drive?" I'm always amazed by that, humans are incredibly unsafe drivers. The Tesla is way better than that.
+The Tesla drives you. It's more nuanced than that. The Tesla does great on the highway, not nearly as good in the city. The mental model I use is it's like sharing the wheel with a teenager when you can, and should take over the driving for more complex situations. This teen has mastered clearly marked highways, but it doesn't like carpool lanes and gets confused in old cities like Seattle where roads are a mess and construction is everywhere. A common question I get on the autopilot is "Do you really trust the Tesla to drive?" I'm always amazed by that, humans are incredibly unsafe drivers. The Tesla is way better than that.
 
-Places Autopilot has trouble:
-    - When a car pull out in front you and you need to break. It slows down "after it happens"
-    - Curvy roads where there are "just for the turn" speed limits. It doesn't slow down for these
+Places Autopilot has trouble: - When a car pull out in front you and you need to break. It slows down "after it happens" - Curvy roads where there are "just for the turn" speed limits. It doesn't slow down for these
 
 ### Why is it constantly beeping while driving slow
 
-Here's a real "Elon treat". Basically the standard way to do near object collision avoidance is ultra sonice sensors. Tesla had a plan to remove those and do it with vision instead.  Turns out, order of oeprations failed for Elon. He started by removing the sensors, before vision was ready. First it didn't work at all for like 6 months. Now it just workds really poorly. Worse then not working because since it's always beeping you need to ignore it most of the time, so when it matters you don't listen.
+Here's a real "Elon treat". Basically the standard way to do near object collision avoidance is ultra sonice sensors. Tesla had a plan to remove those and do it with vision instead. Turns out, order of oeprations failed for Elon. He started by removing the sensors, before vision was ready. First it didn't work at all for like 6 months. Now it just workds really poorly. Worse then not working because since it's always beeping you need to ignore it most of the time, so when it matters you don't listen.
 
 ### Accessories
 

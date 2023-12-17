@@ -9,7 +9,6 @@ Lets try d2
 
 ![AI Agent Diagram](/d2/ai-agent.svg)
 
-
 Playing with Mermaid my friend.
 
 Letting GPT-4 make the subgraphs
@@ -23,7 +22,6 @@ Agent
     Action
 
 ```
-
 
 Trying with a flowchart for better up and down control
 
@@ -74,4 +72,3 @@ pie title What Voldemort doesn't have?
     "FAMILY" : 3
     "NOSE" : 45
 ```
-

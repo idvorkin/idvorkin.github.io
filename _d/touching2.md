@@ -4,7 +4,7 @@ title: "Things that make me cry"
 comments: true
 inprogress: true
 permalink: /touching
-aliases: ["/touching","/cry","/makes-me-cry","/humanity"]
+aliases: ["/touching", "/cry", "/makes-me-cry", "/humanity"]
 redirect_from:
   - /cry
   - /makes-me-cry

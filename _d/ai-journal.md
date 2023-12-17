@@ -6,7 +6,6 @@ permalink: /ai-journal/
 
 A journal of random explorations in AI. Keeping track of htem so I don't get super lost
 
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
@@ -37,17 +36,14 @@ A journal of random explorations in AI. Keeping track of htem so I don't get sup
 - Updated my code to use langchain
 - Fixed up journal to have stuff again
 
-
 ### 2023-08-17
 
 - Playing with Autnomous Agents
-    - AutoGPT
-    - GPTResearcher
-    - Both of these run through docker-compose. Kind of nice as 1/ runtime sandbox, 2/ environment mess up avoidance
+  - AutoGPT
+  - GPTResearcher
+  - Both of these run through docker-compose. Kind of nice as 1/ runtime sandbox, 2/ environment mess up avoidance
 - Playing with new LangChain Syntax
 - Figuring out that I can use debugger to attach so I can debug easily. Figured out how to hook all typer commands (wish I knew that earlier)
-
-
 
 ### 2023-07-16
 

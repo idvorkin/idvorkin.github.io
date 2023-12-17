@@ -46,4 +46,3 @@ After a few days of inadequate sleep, I'll often be trying to deal with sleep de
 - I do not drink caffeine or nap. The best path to fall asleep on time (or even early) is sleep exhaustion
 
 Sleep well.
-

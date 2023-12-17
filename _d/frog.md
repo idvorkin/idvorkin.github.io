@@ -3,7 +3,7 @@ layout: post
 title: "Eat that frog"
 
 permalink: /frog
-aliases: ["frog","eat-that-frog","procrastinate","procrastination"]
+aliases: ["frog", "eat-that-frog", "procrastinate", "procrastination"]
 redirect_from:
   - /eat-that-frog
   - /procrastinate
@@ -38,7 +38,6 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 
 {%include summarize-page.html src="/resistance" %}
 
-
 ### The immutable laws of hard things
 
 {%include summarize-page.html src="/Immutable-Laws-Of-Hard" %}
@@ -48,7 +47,6 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 - **Doing the unimportant is glorious** Finally I have time to watch TV, so glad, I've been so deprived.
 - **Doing the important is a burden** Man taking the 1 minute to get up and taking out the garbage, what a burden.
 - **The important isn't valuable** Is taking out the garbage, a sign of huge respect or my wife really unimportant?
-
 
 ### Start with Why
 

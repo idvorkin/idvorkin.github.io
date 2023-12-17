@@ -53,7 +53,7 @@ This is a great idea from Peter Attia. Those things sound awfully easy you think
 
 Regardless of your training, your health will be parabolic, initially your training will make your health positive, then it will be neutral and then it will decline. Once you're on the downward curve, it'll look like the following:
 
-$$ Health(YearsPastPeak) = HealthAtPeak -  \sum_{n=PeakYear}^{PeakYear+YearsPastPeak} HealthDecline(n)$$
+$$ Health(YearsPastPeak) = HealthAtPeak - \sum\_{n=PeakYear}^{PeakYear+YearsPastPeak} HealthDecline(n)$$
 
 Your body decline is inevitable, you can control 2 things. 1/ Your starting health, 2/ Your rate of decline.
 

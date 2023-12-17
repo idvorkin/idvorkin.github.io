@@ -7,7 +7,7 @@ It's just about thanksgiving 2022, and after 2 years of not being able to go to 
 
 The first leg of my trip is NYC. Turns out Ammon loves musicals, and every year he makes a pilgramige to broadway to be able to see like 14 musicals in 7 days.
 
-6 months ago, Ammon was saying he loves these trips, but his wife Elise and his kids find them overwhelming and he has to go alone. I'm like "Well, I can work from the Facebook office in NYC, and seeing some shows will be fun".  (Not nearly as many shows as Ammon though). We decided back then to book the week before Thanksgiving.
+6 months ago, Ammon was saying he loves these trips, but his wife Elise and his kids find them overwhelming and he has to go alone. I'm like "Well, I can work from the Facebook office in NYC, and seeing some shows will be fun". (Not nearly as many shows as Ammon though). We decided back then to book the week before Thanksgiving.
 
 These posts are a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
@@ -28,16 +28,16 @@ These posts are a combination of [time off](/time-off), and all the stuff for [h
 
 ### Keep work at work.
 
-The last 2 months have been stressful at work, and I've been spending lots of time thinking about work at home, as a  reminder to myself:
+The last 2 months have been stressful at work, and I've been spending lots of time thinking about work at home, as a reminder to myself:
 
 {%include summarize-page.html src='/mind-at-work' %}
 
-Two days before the start of the trip we had layoffs (including my partners who help the team while I'm out), and a giant re-org where the team I support will be doing something completely new and I have a new boss, and this is all starting to be figured out while I'm on my flight to New York.  I expect there will be lots of meetings and many decisions being made, and I'll be working on EST with hard stops to make 300$ shows booked months ago. So here are my rules:
+Two days before the start of the trip we had layoffs (including my partners who help the team while I'm out), and a giant re-org where the team I support will be doing something completely new and I have a new boss, and this is all starting to be figured out while I'm on my flight to New York. I expect there will be lots of meetings and many decisions being made, and I'll be working on EST with hard stops to make 300$ shows booked months ago. So here are my rules:
 
 - Disconnect from work as soon as I'm done work.
 - Be really calendar focused to get the time to be used deliberately.
 - Set expectations on what I can and can not attend
-- Realize  I have lots of time to catch up async before everyone comes to work
+- Realize I have lots of time to catch up async before everyone comes to work
 - Co-ordinate with my tech lead to have maximum coverage.
 - No looking at work on my phone (a bad habit I picked up the last few days due to layoffs).
 
@@ -61,13 +61,11 @@ Two days before the start of the trip we had layoffs (including my partners who 
 - Super funny commedy show, with wings and super funny singing guy
 - Boarding guy at the airport, treating folks to increaes energy liike they do at a comedy club, truly welcoming and thanking everyone.
 
-
 **Remember the peak end rule**
 
 ## Success Stories
 
 ## Top Learnings
-
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -107,14 +105,13 @@ Two days before the start of the trip we had layoffs (including my partners who 
 
 ## Friends (5/5)
 
-Even though we live 40 minutes part, I almost never see Ammon in person (notable exceptions being when he is bringing over a birthday cake). I prioritized spending time with him  - and it's super enjoyable.
+Even though we live 40 minutes part, I almost never see Ammon in person (notable exceptions being when he is bringing over a birthday cake). I prioritized spending time with him - and it's super enjoyable.
 
 ## Family (Y/5)
 
 - ☐ Call kids every day and hear what they did.
 
 ## Magic (Y/5)
-
 
 ### Performing
 
@@ -131,7 +128,7 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 ### General Magic
 
 - Saw Asi Wind's amazing magic show, but it had low energy
-- Went to Magic Monday which is meh,  but got to go on stage, which was really fun.
+- Went to Magic Monday which is meh, but got to go on stage, which was really fun.
 - Went to Tannon's that place is amazing.
 
 ## Tech Guru (Y/5)
@@ -139,8 +136,8 @@ Even though we live 40 minutes part, I almost never see Ammon in person (notable
 ### Enabling Environment
 
 - ☐ Don't touch it.
-    - Actually maybe playing with it isn't terrible
-    - Playing with it makes me happy,  and charges up my energy
+  - Actually maybe playing with it isn't terrible
+  - Playing with it makes me happy, and charges up my energy
 - Got my offline vim setup for the plane - pretty freaking cool.
 
 ### Blogging
@@ -196,7 +193,7 @@ Gym Days:
 - ☐ Weight myself daily
 - ☐ Be ready to get back on weight track for end of November weight in.
 - ☐ Recall, I'd be happier to be skinny then get a snack
-- ☐ If there's something I want, get one per day,  and keep calories down the rest.
+- ☐ If there's something I want, get one per day, and keep calories down the rest.
 - ☐ Get a mini fridge and keep it stocked with Veggies and fruit
 
 ### Sleep
@@ -227,46 +224,48 @@ See the section about keep work at work.
 ### Saturday - Harry Potter
 
 - Saw the best play of my life Happy Potter
-    - Cried through the whole second act
-    - Amazing blocking and transitions and special effects
-    - Great story about a dad accepting his son
+
+  - Cried through the whole second act
+  - Amazing blocking and transitions and special effects
+  - Great story about a dad accepting his son
 
 - M and M Store
-    - Load picture of M&M, and all the M&Ms
-    - Instead of that, I just eat all the veggies in the fridge (see next day)
+  - Load picture of M&M, and all the M&Ms
+  - Instead of that, I just eat all the veggies in the fridge (see next day)
 
 ### Sunday
 
 - Day before eating tonnes of vegtables (todo link photos)
 - Went for a walk, started to pour
-    - Went to a meh coffee shop
-    - Suddenly needed to poop
-    - No bathroom at coffee shop, none near
-    - Luckily citi bike, raced to hotle, and got it done
+  - Went to a meh coffee shop
+  - Suddenly needed to poop
+  - No bathroom at coffee shop, none near
+  - Luckily citi bike, raced to hotle, and got it done
 - Funny part about emergenncy poop
-    - First night, saw a comedy show one 20 year fit guy talking about healhty eating messing up your sphinctor not able to hold it in.
-    - Didn't think it was funny.
-    - This morning, needed to poop, absoloutely hillarious
+
+  - First night, saw a comedy show one 20 year fit guy talking about healhty eating messing up your sphinctor not able to hold it in.
+  - Didn't think it was funny.
+  - This morning, needed to poop, absoloutely hillarious
 
 - Asi Wind Show
-    - Amazing Magic, but kind of slow ...
-    - Cool venue
-    - Cool having everyone write names on their cards
+  - Amazing Magic, but kind of slow ...
+  - Cool venue
+  - Cool having everyone write names on their cards
 - Pizza Magic
-    -   Did another magic trick for girl in pizza line
-    -   This time thought I got it,  but it didn't have her name on it. Then looked closer, and it was just written really smal.
-    -   Not to self: Have someone else hold the cards
-    -       Tell spectator: Visualize your card in your mind ... have you got it? Good
-    -       now, imagine it turning over... Did you do it? Great ..
-    - OK, now do you believe? Great!!
+  - Did another magic trick for girl in pizza line
+  - This time thought I got it, but it didn't have her name on it. Then looked closer, and it was just written really smal.
+  - Not to self: Have someone else hold the cards
+  -       Tell spectator: Visualize your card in your mind ... have you got it? Good
+  -       now, imagine it turning over... Did you do it? Great ..
+  - OK, now do you believe? Great!!
 - Comedy Club
-    - Incredible show, super funny.
+  - Incredible show, super funny.
 - Giving out balloons on the street
-    - Very fun
-    - Figured out howtt o keep balloon pump in pocket (keep the head out)
-    - Someone asked to buy one, gave it for their daughter
+  - Very fun
+  - Figured out howtt o keep balloon pump in pocket (keep the head out)
+  - Someone asked to buy one, gave it for their daughter
 - Pull ups
-    -   Went all over central park to find pullup bars, finally found them, but then, super weird, got a video.
+  - Went all over central park to find pullup bars, finally found them, but then, super weird, got a video.
 
 ### Monday
 

@@ -60,7 +60,6 @@ Last morning
 
 ## Top Learnings
 
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 

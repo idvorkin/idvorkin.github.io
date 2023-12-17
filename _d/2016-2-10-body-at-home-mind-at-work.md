@@ -25,30 +25,28 @@ Future posts will document my journey, and the [activities](/emotional-health) t
 
 ### Thinking about work at home is a habit
 
-**Woah, someone told me something that blew my mind**  Thinking about work at home is just a habit!  That means a few things, 1/ there was a time this brought me some value (need to introspect to see if it still does), 2/ I need to apply all my understanding/tools of habits.
+**Woah, someone told me something that blew my mind** Thinking about work at home is just a habit! That means a few things, 1/ there was a time this brought me some value (need to introspect to see if it still does), 2/ I need to apply all my understanding/tools of habits.
 
 {%include summarize-page.html src="/habits" %}
 
 The Atomic habit model looks like the below, with the generic device on how to remove the bad habit:
 
 | State    | Description                                                            | Change                                               |
-|----------|------------------------------------------------------------------------|------------------------------------------------------|
+| -------- | ---------------------------------------------------------------------- | ---------------------------------------------------- |
 | Cue      | Idle/Mindless Time                                                     | Make it invisible                                    |
 | Craving  | Make progress on my work                                               | Make it displeasing (I don't think this is the case) |
 | Response | Thinking About work , often spinning                                   | Make it hard (I don't think this is the case)        |
 | Reward   | Don't think there is one anymore but back in the day solving a problem | Make it unsatisfying                                 |
-
 
 When most of the habit is in your head, it's pretty tough to apply the habit change model. It's very difficult to stop thinking about something, your best shot is thinking about something else. (Try this; Picture a yellow elephant for 10seconds, OK, now try not to think of it - good luck).
 
 Perhaps the thing to think about instead of how to change the habit, is how to create a new habit? Letting the old habit become the cue for the new habit. Trying out something:
 
 | State    | Description                                                                                               |
-|----------|-----------------------------------------------------------------------------------------------------------|
+| -------- | --------------------------------------------------------------------------------------------------------- |
 | Cue      | Thinking about Work                                                                                       |
 | Craving  | Not miss a work insight, not spending more time at work than I want                                       |
 | Response | Write down what I'm thinking so I can process it when I'm at work, or realize I'm already have it in plan |
 | Reward   | Feel confident I'm not missing anything and I'm putting the right investment into work                    |
 
 Will keep you posted if this works.
-

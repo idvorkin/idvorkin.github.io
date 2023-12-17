@@ -57,7 +57,7 @@ Personifying emotions can be helpful, and aversion (and procrastination) are per
 
 ### [Mind monsters](/mind-monsters)
 
-Say you have a prize horse that you're training to win the Kentucky derby. Do you feed this horse ketchup and peanut butter? Of course not - you need this horse to win so you feed it the highest quality oats you can find. Now, isn't your mind far more important than a race horse? Surely you shouldn't be focusing on silly things like anger and ego, these unhelpful thoughts are mind monsters. Make sure there are no mind monsters in your  [Idle Loop](/idle-loop)
+Say you have a prize horse that you're training to win the Kentucky derby. Do you feed this horse ketchup and peanut butter? Of course not - you need this horse to win so you feed it the highest quality oats you can find. Now, isn't your mind far more important than a race horse? Surely you shouldn't be focusing on silly things like anger and ego, these unhelpful thoughts are mind monsters. Make sure there are no mind monsters in your [Idle Loop](/idle-loop)
 
 ### Triggers
 
@@ -144,6 +144,6 @@ If you don't do small things, they get bigger and bigger and bigger.
 
 ## Useful thoughts.
 
-* As usual, the [7 habits](/7-habits) helps.
-* [Habits](/habits) keep psychic weight get handled.
-* [Grandmother mind](/grandmother)
+- As usual, the [7 habits](/7-habits) helps.
+- [Habits](/habits) keep psychic weight get handled.
+- [Grandmother mind](/grandmother)

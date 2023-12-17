@@ -22,41 +22,42 @@ In March 2020, the world shut down from Covid 19. In May 2020, I started a new j
 
 - [The Good](#the-good)
 - [Meetings](#meetings)
-    - [One head per box](#one-head-per-box)
-    - [Whiteboards](#whiteboards)
+  - [One head per box](#one-head-per-box)
+  - [Whiteboards](#whiteboards)
 - [Building Culture/Rapport](#building-culturerapport)
-    - [Donut/Coffee Roulette](#donutcoffee-roulette)
-    - [Periodic 1 hour 1:1s](#periodic-1-hour-11s)
-    - [Make periodic IRL time getting to know each other](#make-periodic-irl-time-getting-to-know-each-other)
-    - [Group quirks](#group-quirks)
+  - [Donut/Coffee Roulette](#donutcoffee-roulette)
+  - [Periodic 1 hour 1:1s](#periodic-1-hour-11s)
+  - [Make periodic IRL time getting to know each other](#make-periodic-irl-time-getting-to-know-each-other)
+  - [Group quirks](#group-quirks)
 - [The hard to replicate micro moments](#the-hard-to-replicate-micro-moments)
-    - [The 5 minute events](#the-5-minute-events)
-    - [Knowing people are disruptable](#knowing-people-are-disruptable)
-    - [The water cooler](#the-water-cooler)
+  - [The 5 minute events](#the-5-minute-events)
+  - [Knowing people are disruptable](#knowing-people-are-disruptable)
+  - [The water cooler](#the-water-cooler)
 - [Social](#social)
-    - [Big events](#big-events)
-    - [Technical talks](#technical-talks)
-    - [Challenges when the team is well gelled](#challenges-when-the-team-is-well-gelled)
-    - [Sync vs Async Communication](#sync-vs-async-communication)
-    - [Collaborative Documents](#collaborative-documents)
-    - [Remote workers vs Flexible Time In Office](#remote-workers-vs-flexible-time-in-office)
-    - [Social Things](#social-things)
-    - [The environment controls actions and emotions](#the-environment-controls-actions-and-emotions)
-    - [Remote Work and Camera Setup](#remote-work-and-camera-setup)
-    - [Cute and ackward moments](#cute-and-ackward-moments)
+  - [Big events](#big-events)
+  - [Technical talks](#technical-talks)
+  - [Challenges when the team is well gelled](#challenges-when-the-team-is-well-gelled)
+  - [Sync vs Async Communication](#sync-vs-async-communication)
+  - [Collaborative Documents](#collaborative-documents)
+  - [Remote workers vs Flexible Time In Office](#remote-workers-vs-flexible-time-in-office)
+  - [Social Things](#social-things)
+  - [The environment controls actions and emotions](#the-environment-controls-actions-and-emotions)
+  - [Remote Work and Camera Setup](#remote-work-and-camera-setup)
+  - [Cute and ackward moments](#cute-and-ackward-moments)
 - [A Post E-mail world](#a-post-e-mail-world)
-    - [Long term information storage](#long-term-information-storage)
-    - [Keeping track of non-immediate follow ups](#keeping-track-of-non-immediate-follow-ups)
-    - [Grouping everything at self controlled granularity with rules and folders](#grouping-everything-at-self-controlled-granularity-with-rules-and-folders)
-    - [Discrete "units of action" and follow ups for non-public tasks](#discrete-units-of-action-and-follow-ups-for-non-public-tasks)
-    - [Focused Threads](#focused-threads)
-    - [Other Use Cases](#other-use-cases)
-    - [Quip vs Wiki](#quip-vs-wiki)
-    - [Quip vs Word (and Word Procesors)](#quip-vs-word-and-word-procesors)
-    - [The good and bad of public communication](#the-good-and-bad-of-public-communication)
+  - [Long term information storage](#long-term-information-storage)
+  - [Keeping track of non-immediate follow ups](#keeping-track-of-non-immediate-follow-ups)
+  - [Grouping everything at self controlled granularity with rules and folders](#grouping-everything-at-self-controlled-granularity-with-rules-and-folders)
+  - [Discrete "units of action" and follow ups for non-public tasks](#discrete-units-of-action-and-follow-ups-for-non-public-tasks)
+  - [Focused Threads](#focused-threads)
+  - [Other Use Cases](#other-use-cases)
+  - [Quip vs Wiki](#quip-vs-wiki)
+  - [Quip vs Word (and Word Procesors)](#quip-vs-word-and-word-procesors)
+  - [The good and bad of public communication](#the-good-and-bad-of-public-communication)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
+
 ## The Good
 
 - We get better at flexiblity
@@ -71,7 +72,6 @@ When there are many people in a room, but others are remote, it's really hard to
 ### Whiteboards
 
 You need a collabortive whiteboard app. My favorite is Excalidraw. Open source, keyboard short cuts, and multiple users. Strongly, strongly recommend
-
 
 ## Building Culture/Rapport
 
@@ -90,7 +90,6 @@ When you get together IRL, focus on connecting, not on working, that'll pay divi
 ### Group quirks
 
 We bond by having unique shared experiences. Perhaps a team wave, or a funny clap. These also work in person but are probably more important remotely.
-
 
 ## The hard to replicate micro moments
 

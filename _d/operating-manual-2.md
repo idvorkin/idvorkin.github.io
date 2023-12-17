@@ -68,17 +68,17 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
 ## Calendar
 
 As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
 
 ### Calendar - 2023 Q3
 
-
 My new calendar
 
 | Day | Early AM  | Evening       |
-|-----|-----------|---------------|
+| --- | --------- | ------------- |
 | M   | 2H Swings | Free          |
 | T   | Trainer   | Zach Date     |
 | W   | 1H Swings | Improv        |
@@ -97,7 +97,6 @@ My new calendar
 - Coffee Shop
 - Weekly Journal
 - Family Blog Post
-
 
 ### Calendar - 2022
 

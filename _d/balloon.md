@@ -58,52 +58,49 @@ Balloons are a fantastic vehicle for
 - Then I got braver, and when kids asked for UFO, I'd make something that looked nothing like a UFO, and the kid would look at me and cock their head, checking if I was trying to trick them. After 30 seconds of me holding my composure, the kid would run off thrilled with her UFO.
 - Then a kid asked for a bunny, and I tried making one (recall just starting out this morning), and it was awful, but the kid was thrilled.
 
-
 ### Amelia's Grade 3 holiday Party
 
 Highlights:
 
-*  Didn't get an invite, e-mailed teacher said I'm a professional clown, got me an invite
-*  Deaf kid
-    * Had an interpreter, who is probably a huge thing in the kids life.
-    * Wanted a balloon, could see him asking interpreter, and interpreter saying wait to the back of the line.
-    * Gave kid balloon
-    * Kid's balloon unravelled. Saw kid asking interpreter to get a new one, interpreter said no.
-    * I tried to get  kids attention to come to me and a get a new one. He wouldn't.
-    * So I went to him with an awesome balloon
-    * Later, kid started seeing other discarded balloons and picked them.
-    * Eventually kid had like 10 balloons, and was so happy beaming.
-    * He was like exploding with joy, and had a spontaneous giant hug for interpreter before leaving the room.
-* Coming back to school after the party
-    * Left school after party
-    * Came back to pick up Amelia
-    * Like 1 in 8 kids had balloons (recall, I did balloons for a full grade)
-    * Kids so happy walking with parents
-    * Best part, no one recognized me. I could just savor the moment of the joy everyone had.
-
+- Didn't get an invite, e-mailed teacher said I'm a professional clown, got me an invite
+- Deaf kid
+  - Had an interpreter, who is probably a huge thing in the kids life.
+  - Wanted a balloon, could see him asking interpreter, and interpreter saying wait to the back of the line.
+  - Gave kid balloon
+  - Kid's balloon unravelled. Saw kid asking interpreter to get a new one, interpreter said no.
+  - I tried to get kids attention to come to me and a get a new one. He wouldn't.
+  - So I went to him with an awesome balloon
+  - Later, kid started seeing other discarded balloons and picked them.
+  - Eventually kid had like 10 balloons, and was so happy beaming.
+  - He was like exploding with joy, and had a spontaneous giant hug for interpreter before leaving the room.
+- Coming back to school after the party
+  - Left school after party
+  - Came back to pick up Amelia
+  - Like 1 in 8 kids had balloons (recall, I did balloons for a full grade)
+  - Kids so happy walking with parents
+  - Best part, no one recognized me. I could just savor the moment of the joy everyone had.
 
 ### The Selflessness of Balloon teachers
 
-* Most of the balloons I learned from youtube.
-* Amazing that folks would just share the balloons for anyone to make
-
+- Most of the balloons I learned from youtube.
+- Amazing that folks would just share the balloons for anyone to make
 
 ### Psychology of Balloons
 
 #### Grown ups want balloons too, but are afraid to ask
 
-* Most grown ups won't take a balloon, but if you say give it to your partner, they're really happy to, and their partner enjoys it.
+- Most grown ups won't take a balloon, but if you say give it to your partner, they're really happy to, and their partner enjoys it.
 
 #### Everyone is happy with their sword, until someone else gets a mega sword
 
-* Life lesson here, happiness is a differential
+- Life lesson here, happiness is a differential
 
 #### We want to believe makes it so
 
-* Kid says he wants X, I make a Y, then tell them it's really an X
-* Kid feels he got a Y, checks for validatation from others
-* Others, including me say no, it's an X,
-* After kid negotiates with himself, and decides you're not lying, kid runs off happy.
+- Kid says he wants X, I make a Y, then tell them it's really an X
+- Kid feels he got a Y, checks for validatation from others
+- Others, including me say no, it's an X,
+- After kid negotiates with himself, and decides you're not lying, kid runs off happy.
 
 ### Impact vs Effort
 
@@ -114,6 +111,5 @@ Highlights:
 Decided a water gun blaster is fine. I now make that. I also make a water gun blaster that shoots water.
 
 #### But boys want guns, and girls want mermaids.
-
 
 ### Some of my creations

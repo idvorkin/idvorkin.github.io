@@ -20,9 +20,6 @@ Unless you've experienced depression, you can't understand it. Even having exper
 
 <!-- prettier-ignore-start -->
 
-
-
-
 <!-- vim-markdown-toc GFM -->
 
 - [Depression, Grief and Sadness](#depression-grief-and-sadness)
@@ -35,6 +32,7 @@ Unless you've experienced depression, you can't understand it. Even having exper
 - [Stats](#stats)
 
 <!-- vim-markdown-toc -->
+
 ### Depression, Grief and Sadness
 
 It's a strange poverty of the English language, and indeed of many other languages, that we use this same word, depression, to describe how a kid feels when it rains on his birthday, and to describe how somebody feels the minute before they commit suicide.
@@ -48,7 +46,6 @@ In it's weaker forms, [anxiety](/anxiety) is the difference between reality and 
 _And then the anxiety set in. If you told me that I'd have to be depressed for the next month, I would say, "As long I know it'll be over in November, I can do it." But if you said to me, "You have to have acute anxiety for the next month," I would rather slit my wrist than go through it. It was the feeling all the time like that feeling you have if you're walking and you slip or trip and the ground is rushing up at you, but instead of lasting half a second, the way that does, it lasted for six months. It's a sensation of being afraid all the time but not even knowing what it is that you're afraid of. And it was at that point that I began to think that it was just too painful to be alive, and that the only reason not to kill oneself was so as not to hurt other people._
 
 I can't describe my anxiety in a way that conveys the feeling. All I can say is there's a constant loop playing in my head saying _"Oh my god, Oh my god, oh my god"_
-
 
 ### My own experiences with depression and anxiety
 

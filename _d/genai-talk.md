@@ -163,7 +163,6 @@ Conventional Programming vs Delegating to an Intern
   - In LLMs you have limited RAM, so you need to be efficient with it.
   - In LLMs use need to efficiently use the RAM, by deciding which data to place in it.
 
-
 ### Natural Language and reasoning as state
 
 Talk about how weird it is coming with a computer mindset
@@ -372,40 +371,40 @@ _Cons:_
 
 ## Re-thinking prompts
 
-
-* Prompt+LLM is not the equivalent of an app running on an iPhone
-* Prompt+LLM is  the equivelant of assembly language running on an CPU that can only perform operations and output
+- Prompt+LLM is not the equivalent of an app running on an iPhone
+- Prompt+LLM is the equivelant of assembly language running on an CPU that can only perform operations and output
 
 The Prompt:
-* Is not the program!
-* It’s the assembly language for the LLM!
+
+- Is not the program!
+- It’s the assembly language for the LLM!
 
 The LLM:
-* Is not a CPU, that can take input, or request output
-* It
+
+- Is not a CPU, that can take input, or request output
+- It
 
 So what should we call the program?
-* Is the outer system which uses prompts as part of execution
+
+- Is the outer system which uses prompts as part of execution
 
 The memory:
-   * Is not accessed by the CPU
-   * It is inlined into the prompt
+
+- Is not accessed by the CPU
+- It is inlined into the prompt
 
 The I/O:
-   * Is not accessed by the program directly
-   * Shim
 
-You need to write:
-    * The compiler
+- Is not accessed by the program directly
+- Shim
 
-
+You need to write: \* The compiler
 
 ## The Final Review: How did my intern do?
 
 When you have non-deterministic systems, with unclear outputs, evaluating them is hard.
 
 If you think about it, this is the same as evaluating a teacher or salesperson. There are 2 ways to do it:
-
 
 ### Engagement Based
 
@@ -414,7 +413,6 @@ If you think about it, this is the same as evaluating a teacher or salesperson. 
 ### Expert based
 
 2/ Use an expert to evaluate. So, if you had
-
 
 #### Using a model to evaluate a model.
 
@@ -434,7 +432,6 @@ LLMs: Transactions*(Profit per Transaction) + Cost of Insurance.
 
 For example, if we can do 100x transactions at 1/1000th the cost, and insurance is 10x.
 
-
 ## Ethics
 
 ### Societal Bias
@@ -450,7 +447,6 @@ For example, if we can do 100x transactions at 1/1000th the cost, and insurance 
 - Word for this is pedigree
 - What if we make a fake actor, but with likeness of a real person
 
-
 ## Bad Intern - All the things that can go wrong
 
 ### Alignment - Don't be evil
@@ -461,7 +457,6 @@ For example, if we can do 100x transactions at 1/1000th the cost, and insurance 
 ### Git supply chain attacks
 
 ### AGI taking over the world
-
 
 ## Appendix
 
@@ -477,7 +472,6 @@ Very deeply inspired by: <https://vladris.com/llm-book/>
 
 These are my personal opinions and are not related to the opinions of my employer or any other organization I am affiliated with.
 
-
 ### What is a prompt engineer?
 
-An interesting take - "a prompt engineer" is a word that can go the way of things like "informaiton super highway", but if you think about what it is doing is saying instructions in  a way that can be understood by another. This requires understnading requirements,  and articulating them to match the person to whom you are giving htem. Honestly,s ounds like a Product Manager
+An interesting take - "a prompt engineer" is a word that can go the way of things like "informaiton super highway", but if you think about what it is doing is saying instructions in a way that can be understood by another. This requires understnading requirements, and articulating them to match the person to whom you are giving htem. Honestly,s ounds like a Product Manager

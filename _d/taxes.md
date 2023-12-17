@@ -180,7 +180,7 @@ You guarantee to "buy at a particular price". You will be given a low amount of 
 
 Imagine you sell a put for 1$, for a strike price of 100$.
 
-If the stock goes to 90$ in 30 days, the "put will be exercised", and you'll need to buy the stock for 100$. As a result, you'll end buying the stock for 100$ instead of 90$ which is the market price. This means you bought stock for an extra 10$ (recall the stock is worth 90$ today), but since you were paid 1$ for the put it ended up **costing you 9$\*\*.
+If the stock goes to 90$ in 30 days, the "put will be exercised", and you'll need to buy the stock for 100$. As a result, you'll end buying the stock for 100$ instead of 90$ which is the market price. This means you bought stock for an extra 10$ (recall the stock is worth 90$ today), but since you were paid 1$ for the put it ended up \*\*costing you 9$\*\*.
 
 If the stock goes up to 120$, the buyer won't want to sell you the stock at 100$ (they'd lose 20$), so they let the put expire. This lets you **gain 1$\*\* over the price of the stock.
 

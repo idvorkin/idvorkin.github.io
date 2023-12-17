@@ -4,7 +4,7 @@ title: Time off August 2023
 imagefeaturelocal: raccoon-vaccation.png
 ---
 
-It's summer break 2023! It's late August and our last chance to get a vacation before  the kids go back to school.  We were going to go to Chilliwack to try a deli run by a small jewish cult, but alas it's like 100 degrees so we're going to to coast instead!
+It's summer break 2023! It's late August and our last chance to get a vacation before the kids go back to school. We were going to go to Chilliwack to try a deli run by a small jewish cult, but alas it's like 100 degrees so we're going to to coast instead!
 
 To get the most out of my time off, I'm going to follow my best practice of pre-writing what I want to get done, and adjust it as I go. This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
@@ -18,36 +18,30 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 - Write 4 family journal entries (!!)
 - Finish my talk on AI
 
-
 ### Health and Habits
 
 - I think I'm going to go easy on diet this trip (?)
 - Go to grocery store and load up on healhty food
-    - Boiled eggs and cuconumorres
-    - Coleslaw
+  - Boiled eggs and cuconumorres
+  - Coleslaw
 - Bring my travel scale
 - Be OK going out for some meals and treats. But no gorging
 - Huh, weird....
-    - My brain wanted to go to store at 9pm and gorge
-    - Went to store, bought stuff (mostly helahty)
-    - but came home and was pretty full so didn't want to gorge
-    - Wow, tha twas great.
-
+  - My brain wanted to go to store at 9pm and gorge
+  - Went to store, bought stuff (mostly helahty)
+  - but came home and was pretty full so didn't want to gorge
+  - Wow, tha twas great.
 
 ## Moments
 
 {%include summarize-page.html src="/moments" %}
 
-
-First night:
-    - Arrived: Went to beach and did 30 minutes of meditation on the sunset. It was amazing
-    - Maybe an hour today
+First night: - Arrived: Went to beach and did 30 minutes of meditation on the sunset. It was amazing - Maybe an hour today
 
 Things to do:
 
 - Go to Seaside
 - Go to Cranberry museum
-
 
 ## Success Stories
 
@@ -55,7 +49,6 @@ Things to do:
 - Got dinner before unpacking
 
 ## Top Learnings
-
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -98,7 +91,6 @@ Things to do:
 ### Friends
 
 - Nada, just me and the family
-
 
 ### Tori
 
@@ -156,15 +148,13 @@ Things to do:
 
 -
 
-
 ## Physical Habits (4/5)
 
 ### Statistics
 
 Weight Start: 185
 Weight End:
-Gym Days:
-    - Goal is do something light every day. Use it as a break from training till Thursday
+Gym Days: - Goal is do something light every day. Use it as a break from training till Thursday
 
 ### Diet
 
@@ -185,7 +175,6 @@ Gym Days:
 - tbd
 
 ### Work
-
 
 ### Family
 
