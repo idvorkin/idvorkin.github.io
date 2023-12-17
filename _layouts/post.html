@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     {% include head.html %}
@@ -7,7 +7,7 @@
   <body
     data-bs-spy="scroll"
     data-bs-target=".nav-scroll-spy"
-    style="position:relative"
+    style="position: relative"
   >
     {% include site-menu.html %}
 
@@ -18,7 +18,7 @@
                When XL, make it 2/3, right sidebar will be other 3rd.
         -->
         <div id="main-content" class="col-12 col-xl-8">
-          <div style="text-align:center">
+          <div style="text-align: center">
             {% if page.no-render-title %} {% else %}
             <h1 class="text-center">{{ page.title }}</h1>
             {% endif%} {% if page.fj %}
