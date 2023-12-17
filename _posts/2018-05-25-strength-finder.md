@@ -6,7 +6,6 @@ comments: true
 tags:
   - how igor ticks
 permalink: /strengths
-
 ---
 
 Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.
@@ -104,7 +103,7 @@ See [full Strength Finder](/static/StrengthFinderIgor.pdf).
 ### Bonus: My Enneagram (Any-O-Gram)
 
 | Enneagram | Type              | Score |
-|-----------|-------------------|-------|
+| --------- | ----------------- | ----- |
 | 8         | The Challenger    | 23    |
 | 2         | The Helper        | 19    |
 | 5         | The Investigator  | 18    |

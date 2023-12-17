@@ -9,8 +9,8 @@ tags:
   - emotional intelligence
 permalink: /voices
 alias:
- - /voices
- - /voices-in-my-head
+  - /voices
+  - /voices-in-my-head
 redirect_from:
   - /voices-in-my-head
 
