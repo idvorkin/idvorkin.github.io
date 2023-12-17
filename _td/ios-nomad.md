@@ -103,13 +103,13 @@ OK - this stuff is now pretty stale, be sure to use ivim to look at the ios spec
 
 iVIM now support:
 
-* Some plugin integration
-* Nice font upgrade
-    :ifont increase
-* Preview windows (in New tab, and works with markdown render in realtime)
-    :ipreview -w
+- Some plugin integration
+- Nice font upgrade
+  :ifont increase
+- Preview windows (in New tab, and works with markdown render in realtime)
+  :ipreview -w
 
-* git integration
+- git integration
 
 For this you load your files into working copy and link them via idoc dir, and then they are available locally
 
@@ -117,12 +117,11 @@ For this you load your files into working copy and link them via idoc dir, and t
 
 - bundle/plugin integration
 
-    :iplug
+  :iplug
 
 - Ctags support wow!
 
-   !ctags
-
+  !ctags
 
 #### Run python - Pyto
 

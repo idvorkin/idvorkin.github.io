@@ -297,6 +297,7 @@ The Choose your own adventure
 - Lisp (list procssing)
   - -> Scheme -> Racket
 - Algol (procedural)
+
   - C, Pascal
 
   -

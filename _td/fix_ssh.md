@@ -4,8 +4,6 @@ no-render-title: true
 title: ssh client commands timing out from some clients some times
 ---
 
-
-
 For some reason, SSH is just hanging out of no where. To debug on the server, be sure to open your firewall
 
 > sudo /usr/sbin/sshd -d -D -p 6161
@@ -149,6 +147,7 @@ client_loop: send disconnect: Broken pipe
 Holy slug bug, it is an MTU issue!
 
 A few observations:
+
 - Even when creating a new lightsail instance, I still hang on connect
 - On my work VPN, I don't hang, nor on my windows macines.
 - Bizarre

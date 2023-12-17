@@ -198,12 +198,11 @@ There's also the horizontal version - which is slightly bigger but also nice:
 
 It's great to have selfie stick for every occasion
 
-* [Smallest](https://www.amazon.com/Vproof-Bluetooth-Lightweight-Aluminum-Extendable/dp/B07QY8L3WC/)
-* [Small w/stand](https://www.amazon.com/dp/B082HRRCGD?ref=nb_sb_ss_w_as-ypp-rep_ypp_rep_k0_1_13&crid=1HT7AE28KNQQ5&sprefix=compact+selfi)
-* [Big w/stand](https://www.amazon.com/gp/product/B09681HV3L/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
+- [Smallest](https://www.amazon.com/Vproof-Bluetooth-Lightweight-Aluminum-Extendable/dp/B07QY8L3WC/)
+- [Small w/stand](https://www.amazon.com/dp/B082HRRCGD?ref=nb_sb_ss_w_as-ypp-rep_ypp_rep_k0_1_13&crid=1HT7AE28KNQQ5&sprefix=compact+selfi)
+- [Big w/stand](https://www.amazon.com/gp/product/B09681HV3L/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1)
 
 {%include amazon.html asin="B09681HV3L;B082HRRCGD;B07QY8L3WC" %}
-
 
 ## [Biking](/bike)
 
@@ -214,7 +213,7 @@ I **love** not driving. Biking is an awesome form of transit. It took a while bu
 I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesomeness:
 
 - Remote car starter - ~ 200\$ and you can start your car from the house so that it's warm and toasty when you get in.
-- [Wireless CarPlay](https://www.amazon.com/gp/product/B08FG2XRBP/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1).  OMG - having CarPlay (especially on iOS 13) without plugging in your phone - wow!
+- [Wireless CarPlay](https://www.amazon.com/gp/product/B08FG2XRBP/ref=ppx_yo_dt_b_asin_title_o04_s00?ie=UTF8&psc=1). OMG - having CarPlay (especially on iOS 13) without plugging in your phone - wow!
 - Back up Camera ~ 30\$. OMG - Hard to believe I went years without one.
 
 {%include amazon.html asin="B08FG2XRBP" %}
