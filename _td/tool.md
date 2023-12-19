@@ -720,6 +720,7 @@ _(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to
 - [Bar Tender](https://www.macbartender.com/) - Manage the menu bar
 - [Alt Tab](https://alt-tab-macos.netlify.app/) - Windows like alt tab
 - [Remap Emoji Keyboard](https://medium.com/@maxschultz/remap-caps-lock-to-emoji-on-macos-sierra-3c933b38c6ff)
+- Menubar - Show next meeting in the menu bar
 
 ### Docker
 
