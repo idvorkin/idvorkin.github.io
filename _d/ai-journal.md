@@ -10,7 +10,13 @@ A journal of random explorations in AI. Keeping track of htem so I don't get sup
 <!-- vim-markdown-toc GFM -->
 
 - [Visualization](#visualization)
-    - [Weights and Balances](#weights-and-balances)
+- [Bestie Simulator](#bestie-simulator)
+    - [Attempt #1: Prompt GPT to simulate with lots of example text](#attempt-1-prompt-gpt-to-simulate-with-lots-of-example-text)
+    - [Attempt #2: Use that data to do the training](#attempt-2-use-that-data-to-do-the-training)
+    - [Data Prep](#data-prep)
+    - [Observation](#observation)
+    - [Tooling learnings](#tooling-learnings)
+    - [Upstream fixes](#upstream-fixes)
 - [Diary](#diary)
     - [2023-11-26](#2023-11-26)
     - [2023-08-17](#2023-08-17)
@@ -24,7 +30,33 @@ A journal of random explorations in AI. Keeping track of htem so I don't get sup
 
 ## Visualization
 
-### Weights and Balances
+## Bestie Simulator
+
+Playing around with [a bestie simulator](https://python.langchain.com/docs/integrations/chat_loaders/facebook)
+
+### Attempt #1: Prompt GPT to simulate with lots of example text
+
+Prompt:
+
+### Attempt #2: Use that data to do the training
+
+### Data Prep
+
+- EASY: Merge consequetive lines by same person within 5 minutes.
+- HARD: Decide when you have a request/response, vs
+
+### Observation
+
+- For hard data tasks, I can use GPT to do the work, e.g. like how to split up into distinct converationsj
+
+### Tooling learnings
+
+- Pre-commit - Nicer version of husky (which was always kind of flacky)
+- Ruff - Nicer version of black. Written in black, so much faster, and also suports fixing some simple stuff, has nvim support
+
+### Upstream fixes
+
+- Pushed multiple PRs to better support iMessage chat format in Langchain [1](https://github.com/langchain-ai/langchain/pull/14804) [2](https://github.com/langchain-ai/langchain/pull/14818)
 
 ## Diary
 
