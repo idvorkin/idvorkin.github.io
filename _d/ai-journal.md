@@ -36,9 +36,13 @@ Playing around with [a bestie simulator](https://python.langchain.com/docs/integ
 
 ### Attempt #1: Prompt GPT to simulate with lots of example text
 
-Prompt:
+Prompts didn't work that well. Still sounded like GPT
 
 ### Attempt #2: Use that data to do the training
+
+- https://platform.openai.com/finetune
+- [Fine-tuning in general](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates)
+- [OpenAI Code Sample](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_finetune_chat_models.ipynb)
 
 ### Data Prep
 
