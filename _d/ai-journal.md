@@ -40,7 +40,9 @@ Prompts didn't work that well. Still sounded like GPT
 
 ### Attempt #2: Use that data to do the training
 
-- https://platform.openai.com/finetune
+- PoC: (https://github.com/idvorkin/nlp/blob/2f7fce99e108adaaf343c11f9edc42d07c6aba3e/play_langchain.py#L449)
+- Use fine tune tool https://platform.openai.com/finetune
+- Split into training and validation
 - [Fine-tuning in general](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates)
 - [OpenAI Code Sample](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_finetune_chat_models.ipynb)
 
@@ -52,11 +54,16 @@ Prompts didn't work that well. Still sounded like GPT
 ### Observation
 
 - For hard data tasks, I can use GPT to do the work, e.g. like how to split up into distinct converationsj
+- Can finetune on daily or weekly. Daily sounds good, but a few problems:
+  - Conversations that span end of day break
+  - You have overhead for every training sample. From daily to weekly I went from 10M to 4M
+  - Need to pay attention to stay under token limit
 
 ### Tooling learnings
 
 - Pre-commit - Nicer version of husky (which was always kind of flacky)
 - Ruff - Nicer version of black. Written in black, so much faster, and also suports fixing some simple stuff, has nvim support
+- Path from pathlib. Lets you use Path.home() vs os.expanduser(), and a type safe path paramater, avoiding sending in strings by accident (God Bless Typing)
 
 ### Upstream fixes
 
