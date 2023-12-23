@@ -13,7 +13,13 @@ A journal of random explorations in AI. Keeping track of htem so I don't get sup
 - [Bestie Simulator](#bestie-simulator)
     - [Attempt #1: Prompt GPT to simulate with lots of example text](#attempt-1-prompt-gpt-to-simulate-with-lots-of-example-text)
     - [Attempt #2: Use that data to do the training](#attempt-2-use-that-data-to-do-the-training)
+    - [Models:](#models)
+        - [Bestie-1d-raw-2020+](#bestie-1d-raw-2020)
+        - [Bestie-7d-raw-2020+](#bestie-7d-raw-2020)
+        - [Bestie-7d-raw-2020-sampled +](#bestie-7d-raw-2020-sampled-)
+        - [Bestie-1d-raw-full](#bestie-1d-raw-full)
     - [Data Prep](#data-prep)
+    - [Useful links](#useful-links)
     - [Observation](#observation)
     - [Tooling learnings](#tooling-learnings)
     - [Upstream fixes](#upstream-fixes)
@@ -40,16 +46,49 @@ Prompts didn't work that well. Still sounded like GPT
 
 ### Attempt #2: Use that data to do the training
 
-- PoC: (https://github.com/idvorkin/nlp/blob/2f7fce99e108adaaf343c11f9edc42d07c6aba3e/play_langchain.py#L449)
+- Style transfer success! But then answer were too concise.
+  - TBD -- add several examples
+- Next use a prompt to make the responses longer
+  - TBD -- add several examples
+- [Proof of concept](https://github.com/idvorkin/nlp/blob/2f7fce99e108adaaf343c11f9edc42d07c6aba3e/play_langchain.py#L449)
 - Use fine tune tool https://platform.openai.com/finetune
 - Split into training and validation
-- [Fine-tuning in general](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates)
-- [OpenAI Code Sample](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_finetune_chat_models.ipynb)
+- Started getting moderation errors when I went to weekly batches.
+  - Tried removing image unicode, and went to 1/10 the size, and that worked
+  - Trying again at full size, see if that works
+  -
+
+### Models:
+
+#### Bestie-1d-raw-2020+
+
+- ftjob-qyOyRWqpuakIhQdulCSi60Ui
+- I'm guessing performance gets weird on facts as they change over 5 year blocks
+
+#### Bestie-7d-raw-2020+
+
+- Having a hard time getting tnis to pass validation
+
+#### Bestie-7d-raw-2020-sampled +
+
+- ftjob-5V0Pkd9YtiAp4FsnPctJ29F1
+- Having a hard time getting tnis to pass validation
+
+#### Bestie-1d-raw-full
+
+- No cleanups, just raw data
+- ft:gpt-3.5-turbo-1106:idvorkinteam::8YgPRpMB
+- Didn't have a validation set, so not sure what that did
 
 ### Data Prep
 
 - EASY: Merge consequetive lines by same person within 5 minutes.
-- HARD: Decide when you have a request/response, vs
+- HARD: Decide when you have a request/response, vs not
+
+### Useful links
+
+- [Fine-tuning in general](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates)
+- [OpenAI Code Sample](https://github.com/openai/openai-cookbook/blob/main/examples/How_to_finetune_chat_models.ipynb)
 
 ### Observation
 
@@ -58,6 +97,9 @@ Prompts didn't work that well. Still sounded like GPT
   - Conversations that span end of day break
   - You have overhead for every training sample. From daily to weekly I went from 10M to 4M
   - Need to pay attention to stay under token limit
+- ufffc is what apple sends for an image
+- A tuning run is 50$
+- I suspect the conversation gets weird if theirs too much history, as people change. Not knowing when something happens (a decay) on the training data is important. So can address by limiting to latest history
 
 ### Tooling learnings
 
