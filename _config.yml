@@ -60,6 +60,7 @@ algolia:
     - "all.md"
     - "tags.html"
     - "_d/index.html"
+    - "*.ruff_cache*"
     - "tags"
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap", "jekyll-redirect-from"]
