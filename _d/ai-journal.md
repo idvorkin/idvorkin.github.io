@@ -10,6 +10,8 @@ A journal of random explorations in AI. Keeping track of htem so I don't get sup
 <!-- vim-markdown-toc GFM -->
 
 - [Visualization](#visualization)
+- [Text to speech our friends.](#text-to-speech-our-friends)
+- [RAG a pychiatrist](#rag-a-pychiatrist)
 - [Bestie Simulator](#bestie-simulator)
     - [Attempt #1: Prompt GPT to simulate with lots of example text](#attempt-1-prompt-gpt-to-simulate-with-lots-of-example-text)
     - [Attempt #2: Use that data to do the training](#attempt-2-use-that-data-to-do-the-training)
@@ -35,6 +37,27 @@ A journal of random explorations in AI. Keeping track of htem so I don't get sup
 <!-- prettier-ignore-end -->
 
 ## Visualization
+
+## Text to speech our friends.
+
+Well that was super easy, eleven labs has perfect instant voice clones, and what's coolest is you
+can clone in multiple languages, so you can hear yourself talking in lots of languages. Let me give a sample
+
+This took me about 30 minutes to setup - crazy!!
+
+[The code](https://github.com/idvorkin/nlp/blob/38193de32fff308ee292fa368799d804343b6336/tts.py?plain=1#L50)
+
+## RAG a pychiatrist
+
+OK, I used to go to this pychaitratist, who had a full "consistent model" of pychiatraty
+
+[here](https://whatilearnedsofar.com/practice/)
+
+lets see if we can simulate him, step #1, lets bring the site down into markdown
+
+1. Lets use https://github.com/paulpierre/markdown-crawler:
+2. pip install markdown-crawler
+   markdown-crawler https://whatilearnedsofar.com/practice/ --output-dir ./practice
 
 ## Bestie Simulator
 
