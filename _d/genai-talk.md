@@ -453,6 +453,7 @@ For example, if we can do 100x transactions at 1/1000th the cost, and insurance 
 
 - Getting around the blocks. Answer in Spanish, then translate the block to English.
 - See password guessing - https://gandalf.lakera.ai/
+- Red testing toolkit - https://github.com/declare-lab/red-instruct/
 
 ### Git supply chain attacks
 
