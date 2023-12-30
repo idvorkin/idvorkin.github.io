@@ -20,19 +20,19 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
 
 - [Assumptions and Hannah](#assumptions-and-hannah)
 - [IRAs Non-Taxable Saving Accounts](#iras-non-taxable-saving-accounts)
-    - [Taxable income, and capital gains.](#taxable-income-and-capital-gains)
+    - [Taxable income, and capital gains](#taxable-income-and-capital-gains)
     - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
     - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
     - [IRAs vs 401Ks](#iras-vs-401ks)
     - [IRA vs Roth IRA](#ira-vs-roth-ira)
-    - [IRA and Roth IRA contribution limits.](#ira-and-roth-ira-contribution-limits)
-    - [Back door Roth.](#back-door-roth)
-    - [The pro-Rata rule.](#the-pro-rata-rule)
+    - [IRA and Roth IRA contribution limits](#ira-and-roth-ira-contribution-limits)
+    - [Back door Roth](#back-door-roth)
+    - [The pro-Rata rule](#the-pro-rata-rule)
     - [529s](#529s)
 - [Rates Taxes and Savings](#rates-taxes-and-savings)
     - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
     - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
-    - [Cash positions and high yield savings.](#cash-positions-and-high-yield-savings)
+    - [Cash positions and high yield savings](#cash-positions-and-high-yield-savings)
     - [No load index funds and ETFs](#no-load-index-funds-and-etfs)
     - [Unexpected expenses](#unexpected-expenses)
     - [Stock options](#stock-options)
@@ -46,13 +46,14 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
         - [Summary](#summary)
 - [Philosophy](#philosophy)
     - [The point of money](#the-point-of-money)
-        - [What would you do for less money?](#what-would-you-do-for-less-money)
-        - [Making more vs spending more](#making-more-vs-spending-more)
+    - [What would you do for less money?](#what-would-you-do-for-less-money)
+    - [Making more vs spending more](#making-more-vs-spending-more)
+    - [Does money make you happy?](#does-money-make-you-happy)
     - [Believing the market only goes up](#believing-the-market-only-goes-up)
     - [Keeping a mortgage you can pay of since interest rates are low](#keeping-a-mortgage-you-can-pay-of-since-interest-rates-are-low)
     - [Generational wealth and camels](#generational-wealth-and-camels)
     - [Timing the markets](#timing-the-markets)
-    - [The 3 types of rich:](#the-3-types-of-rich)
+    - [The 3 types of rich](#the-3-types-of-rich)
     - [The unquenchable thirst](#the-unquenchable-thirst)
 - [Other questions](#other-questions)
     - [How much is 1%](#how-much-is-1)
@@ -237,13 +238,21 @@ When seeing a financial planner, they asked me - what is the point of your savin
 
 Yeah that was a mistake. Money is a tool. Use it to make your life better. Great uses are experiences with your children, investments in your health, and things that avoid a fight.
 
-#### What would you do for less money?
+### What would you do for less money?
 
 If you wouldn't take a job for a pay cut, you probably shouldn't take the job.
 
-#### Making more vs spending more
+### Making more vs spending more
 
 See [Parkinson's law](/parkinson), which applies to both time and money. The task you have will expand to all the money (or time) available to it.
+
+### Does money make you happy?
+
+Famous study, saying after 75K (maybe 200K now), extra money doesn't make you happy. However, turns out that was flawed, the better model, whci I buy is more money is log linear to happiness.
+
+E.g. every 10x inecease in money 2x in happiness. So going from 100K to 1M only doubles your happiness.
+
+Fascinating, the impact of log linear money depends on your happiness [paper](https://github.com/idvorkin/blob/blob/master/papers/money-vs-happiness.pdf)
 
 ### Believing the market only goes up
 
