@@ -66,8 +66,8 @@
         "/feeling-meetings": "/human-meetings",
         "/first-thing-first": "/first-things-first",
         "/first90days": "/90days",
-        "/fourty-two": "/42",
-        "/fourtytwo": "/42",
+        "/forty-two": "/42",
+        "/fortytwo": "/42",
         "/frugality": "/parkinson",
         "/frustration": "/anger",
         "/fuck-shame": "/shame",
@@ -153,6 +153,8 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
+        "/SoM": "/sleight-of-mouth",
+        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -199,18 +201,20 @@
         "/42": {
             "py/object": "__main__.Page",
             "url": "/42",
-            "title": "What I wish I knew at 42f",
-            "description": "Congrats, you survived young kids, marriage, house, some easy crisis, and now it’s time for .. things I wish I knew at 42.\n\n",
+            "title": "What I wish I knew at 42",
+            "description": "Congrats, you survived young kids, marriage, house, some easy crises, and now it’s time for .. things I wish I knew at 42.\n\n",
             "file_path": "_site/42.html",
             "outgoing_links": [
-                "/chapters"
+                "/diet",
+                "/last-year",
+                "/physical-health"
             ],
             "incoming_links": [
                 "/chapters"
             ],
             "redirect_url": "",
             "markdown_path": "_d/42.md",
-            "doc_size": 10000
+            "doc_size": 13000
         },
         "/7-habits": {
             "py/object": "__main__.Page",
@@ -799,22 +803,18 @@
         "/chapters": {
             "py/object": "__main__.Page",
             "url": "/chapters",
-            "title": "Think of your life as a series of chapters",
-            "description": "Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22 year old, and what you need as a 42 year old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.\n\n",
+            "title": "The chapters of our lives",
+            "description": "Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22-year-old, and what you need as a 42-year-old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.\n\n",
             "file_path": "_site/chapters.html",
             "outgoing_links": [
                 "/42",
-                "/diet",
                 "/enemy",
-                "/physical-health",
                 "/what-i-wish-knew-at-22"
             ],
-            "incoming_links": [
-                "/42"
-            ],
+            "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/chapters.md",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/class-act": {
             "py/object": "__main__.Page",
@@ -1539,7 +1539,7 @@
                 "/physical-health"
             ],
             "incoming_links": [
-                "/chapters",
+                "/42",
                 "/operating-manual",
                 "/physical-health",
                 "/sharpen-the-saw"
@@ -2341,6 +2341,7 @@
                 "/death"
             ],
             "incoming_links": [
+                "/42",
                 "/death"
             ],
             "redirect_url": "",
@@ -2833,7 +2834,7 @@
                 "/tech-health-toys"
             ],
             "incoming_links": [
-                "/chapters",
+                "/42",
                 "/depression",
                 "/diet",
                 "/essentialism",
@@ -3492,7 +3493,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/data-systems.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
