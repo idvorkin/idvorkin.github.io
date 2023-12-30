@@ -152,8 +152,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -230,13 +228,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/42.md",
-<<<<<<< HEAD
-            "doc_size": 13000
-||||||| parent of 88a9dec (Update and clean up)
-            "doc_size": 10000
-=======
             "doc_size": 14000
->>>>>>> 88a9dec (Update and clean up)
         },
         "/7-habits": {
             "py/object": "__main__.Page",
@@ -831,25 +823,9 @@
             "outgoing_links": [
                 "/22",
                 "/42",
-<<<<<<< HEAD
-                "/enemy",
-                "/what-i-wish-knew-at-22"
-            ],
-            "incoming_links": [],
-||||||| parent of 88a9dec (Update and clean up)
-                "/diet",
-                "/enemy",
-                "/physical-health",
-                "/what-i-wish-knew-at-22"
-            ],
-            "incoming_links": [
-                "/42"
-            ],
-=======
                 "/enemy"
             ],
             "incoming_links": [],
->>>>>>> 88a9dec (Update and clean up)
             "redirect_url": "",
             "markdown_path": "_d/chapters.md",
             "doc_size": 15000
@@ -3531,7 +3507,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/data-systems.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
