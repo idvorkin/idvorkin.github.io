@@ -1,6 +1,5 @@
 {
     "redirects": {
-        "/22": "/what-i-wish-knew-at-22",
         "/48-laws": "/laws-of-power",
         "/50yo": "/40yo",
         "/7h": "/7-habits",
@@ -171,13 +170,15 @@
         "/todo": "/todo_enjoy",
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
-        "/twentytwo": "/what-i-wish-knew-at-22",
+        "/twenty-two": "/22",
+        "/twentytwo": "/22",
         "/uncategorized": "/random-idea",
         "/vacation": "/timeoff",
         "/virus": "/covid",
         "/voices-in-my-head": "/voices",
         "/vr": "/ar",
         "/warmth": "/warm",
+        "/what-i-wish-i-knew-at-22": "/22",
         "/win-win-or-no-deal": "/win-win",
         "/wizard-book": "/sicp",
         "/wlb": "/sustainable-work",
@@ -186,6 +187,21 @@
         "/write": "/writing"
     },
     "url_info": {
+        "/22": {
+            "py/object": "__main__.Page",
+            "url": "/22",
+            "title": "What I wish I knew at 22 and so might you!",
+            "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
+            "file_path": "_site/22.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/chapters",
+                "/manager-book"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/22.md",
+            "doc_size": 11000
+        },
         "/40yo": {
             "py/object": "__main__.Page",
             "url": "/40yo",
@@ -214,7 +230,13 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/42.md",
+<<<<<<< HEAD
             "doc_size": 13000
+||||||| parent of 88a9dec (Update and clean up)
+            "doc_size": 10000
+=======
+            "doc_size": 14000
+>>>>>>> 88a9dec (Update and clean up)
         },
         "/7-habits": {
             "py/object": "__main__.Page",
@@ -807,11 +829,27 @@
             "description": "Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22-year-old, and what you need as a 42-year-old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.\n\n",
             "file_path": "_site/chapters.html",
             "outgoing_links": [
+                "/22",
                 "/42",
+<<<<<<< HEAD
                 "/enemy",
                 "/what-i-wish-knew-at-22"
             ],
             "incoming_links": [],
+||||||| parent of 88a9dec (Update and clean up)
+                "/diet",
+                "/enemy",
+                "/physical-health",
+                "/what-i-wish-knew-at-22"
+            ],
+            "incoming_links": [
+                "/42"
+            ],
+=======
+                "/enemy"
+            ],
+            "incoming_links": [],
+>>>>>>> 88a9dec (Update and clean up)
             "redirect_url": "",
             "markdown_path": "_d/chapters.md",
             "doc_size": 15000
@@ -1667,7 +1705,7 @@
             "py/object": "__main__.Page",
             "url": "/enemy",
             "title": "Four enemies",
-            "description": "Fear, Arrogrance, Authority and Apathy, are the four enemies of satisfication as described in Don Juan’s teachings.\n\n",
+            "description": "Fear, Arrogance, Authority, and Apathy are the four enemies of satisfaction as described in Don Juan’s teachings.\n\n",
             "file_path": "_site/enemy.html",
             "outgoing_links": [
                 "/d/resistance",
@@ -2415,6 +2453,7 @@
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
             "file_path": "_site/manager-book.html",
             "outgoing_links": [
+                "/22",
                 "/90days",
                 "/being-a-great-manager",
                 "/books-that-defined-me",
@@ -2439,7 +2478,6 @@
                 "/static/igor-feedback-linkedin.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
-                "/what-i-wish-knew-at-22",
                 "/what-makes-a-leader",
                 "/writing"
             ],
@@ -3990,21 +4028,6 @@
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-26-welcome-to-holland.md",
             "doc_size": 12000
-        },
-        "/what-i-wish-knew-at-22": {
-            "py/object": "__main__.Page",
-            "url": "/what-i-wish-knew-at-22",
-            "title": "What I wish I knew at 22 and so might you!",
-            "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
-            "file_path": "_site/what-i-wish-knew-at-22.html",
-            "outgoing_links": [],
-            "incoming_links": [
-                "/chapters",
-                "/manager-book"
-            ],
-            "redirect_url": "",
-            "markdown_path": "_posts/2019-10-11-what-i-wish-knew-at-22.md",
-            "doc_size": 11000
         },
         "/what-makes-a-leader": {
             "py/object": "__main__.Page",
