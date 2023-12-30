@@ -2,8 +2,6 @@
 layout: post
 title: "Four enemies"
 author: "Igor Dvorkin"
-comments: true
-collapsable: true
 permalink: /enemy
 redirect_from:
   - /don-juan
@@ -13,9 +11,9 @@ tags:
   - wisdom
 ---
 
-Fear, Arrogrance, Authority and Apathy, are the four enemies of satisfication as described in Don Juan's teachings.
+Fear, Arrogance, Authority, and Apathy are the four enemies of satisfaction as described in Don Juan's teachings.
 
-[Don Juan's teaching](http://kennysideshow.blogspot.com/2014/04/the-four-natural-enemies-of-man-of.html) is an interesting philosphy that has a lot of overlap with my philosphical model, and is also a fun book to read. Of the ideas covered in the book, The four enemy model is a unique articulate, presentation of the challenges on the path to satisifcation. Many of the other concepts in the book are already presented in my philosphical model, and so I provide translations.
+[Don Juan's teaching](http://kennysideshow.blogspot.com/2014/04/the-four-natural-enemies-of-man-of.html) is an interesting philosophy that has a lot of overlap with my philosophical model, and is also a fun book to read. Of the ideas covered in the book, The four enemy model is a uniquely articulate presentation of the challenges on the path to satisfaction. Many of the other concepts in the book are already presented in my philosophical model, and so I provide translations.
 
 ## The four enemies
 
@@ -33,7 +31,7 @@ Fear, Arrogrance, Authority and Apathy, are the four enemies of satisfication as
 
 ### Authority
 
-- When you rely on authority, you stop using your principles, and stuff goes stuff.
+- When you rely on authority, you stop using your principles, and stuff goes south.
 - Problem: Will abandon principles, and do what you want.
 - Solution: Only use authority when needed. Only use authority in alignment with principles, never else. Never let your authority get out of your control.
 
@@ -47,7 +45,7 @@ Fear, Arrogrance, Authority and Apathy, are the four enemies of satisfication as
 
 ### Knowledge of Death is Strength
 
-- Death is always an arms length away - Remember this every day.
+- Death is always an arm's length away - Remember this every day.
 - How can you feel important, when you see graveyards are filled with "important men"
 - Because you'll die soon, will these petty thoughts matter?
 - When you think something is going wrong - ask death if it matters. It'll say nope, not compared to death.
@@ -65,7 +63,7 @@ Fear, Arrogrance, Authority and Apathy, are the four enemies of satisfication as
 ### Ego is the Enemy
 
 - [Ego is the enemy](/pride), how much time is wasted feeling offended or insulted. What a waste of time. Does it matter when dead?
-- The ego generates a subjective experience through self talk. Repeat self talk will repeat same actions
+- The ego generates a subjective experience through self-talk. Repeat self-talk will repeat same actions
 
 ## "Igor's Philosophical Model" mapping to Don Juan
 
