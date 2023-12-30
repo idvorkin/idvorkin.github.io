@@ -24,6 +24,7 @@
     "cy:record": ". ./_cypress_api_key && npx cypress run --record --env coverage=false ",
     "cy:open": "npx cypress open --env coverage=false",
     "jekyll:serve": "bundle exec jekyll server --incremental --livereload --host 127.0.0.1",
+    "jekyll:mac_serve": "~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host 127.0.0.1",
     "jekyll:container": "bundle exec jekyll server --incremental --livereload --host 0.0.0.0",
     "docker:build": "docker build -t devdocker devdocker",
     "docker:run2": "docker run -v ~/blog:/root/blog -p 35729:35729 -p 4000:4000 -it devdocker  ",
