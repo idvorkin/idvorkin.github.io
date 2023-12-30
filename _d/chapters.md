@@ -46,6 +46,8 @@ And my advice to folks in their 20s - [Which I gave as a talk for the Amazon Int
 
 {% include youtube.html src="ffU-Z44Yc6c" %}
 
+{%include summarize-page.html src="/22" %}
+
 ### 30s - Avoid what you don't like
 
 I'm working on this talk, give me content!
