@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Think of your life as a series of chapters"
+title: "The chapters of our lives"
 tags:
   - book-notes
 permalink: /chapters
