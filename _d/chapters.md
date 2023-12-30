@@ -8,6 +8,7 @@ redirect_from:
   - /stages
   - /life-stages
   - /life-chapters
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.webp
 ---
 
 Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22 year old, and what you need as a 42 year old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.
@@ -37,6 +38,8 @@ Our lives are stories, containing many different chapters. However, regardless o
 
 ## The western model
 
+![](https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.webp)
+
 ### 20s - Try everything you can
 
 And my advice to folks in their 20s - [Which I gave as a talk for the Amazon Interns](/22)
@@ -51,16 +54,7 @@ I'm working on this talk, give me content!
 
 ### 40s - Focus on what you do like
 
-- This is your peak earnings, and peak productivity. You've got maximum experience and minimal mental decline.
-- Your body is no longer forgiving of incorrect movements, and healing is much harder.
-- The health debt you likely took on in your 30s need to be paid back otherwise you'll degrade quickly.
-- As you get older, you will decline, the work you do in your 40s will be the starting point for your decline, and simultaneously impact your rate of decline.
-
 {%include summarize-page.html src="/42"%}
-
-{%include summarize-page.html src="/physical-health" %}
-
-{%include summarize-page.html src="/diet" %}
 
 ### 50s - Don't know yet
 
