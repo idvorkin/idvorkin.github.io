@@ -66,8 +66,8 @@
         "/feeling-meetings": "/human-meetings",
         "/first-thing-first": "/first-things-first",
         "/first90days": "/90days",
-        "/fourty-two": "/d/42",
-        "/fourtytwo": "/d/42",
+        "/fourty-two": "/42",
+        "/fourtytwo": "/42",
         "/frugality": "/parkinson",
         "/frustration": "/anger",
         "/fuck-shame": "/shame",
@@ -195,6 +195,22 @@
             "redirect_url": "",
             "markdown_path": "_d/40-yo-programmer.md",
             "doc_size": 14000
+        },
+        "/42": {
+            "py/object": "__main__.Page",
+            "url": "/42",
+            "title": "What I wish I knew at 42f",
+            "description": "Congrats, you survived young kids, marriage, house, some easy crisis, and now it’s time for .. things I wish I knew at 42.\n\n",
+            "file_path": "_site/42.html",
+            "outgoing_links": [
+                "/chapters"
+            ],
+            "incoming_links": [
+                "/chapters"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/42.md",
+            "doc_size": 10000
         },
         "/7-habits": {
             "py/object": "__main__.Page",
@@ -793,7 +809,9 @@
                 "/physical-health",
                 "/what-i-wish-knew-at-22"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/42"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/chapters.md",
             "doc_size": 16000
