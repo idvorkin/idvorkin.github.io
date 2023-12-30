@@ -11,7 +11,7 @@ redirect_from:
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.webp
 ---
 
-Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22 year old, and what you need as a 42 year old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.
+Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22-year-old, and what you need as a 42-year-old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -22,14 +22,14 @@ Our lives are stories, containing many different chapters. However, regardless o
     - [40s - Focus on what you do like](#40s---focus-on-what-you-do-like)
     - [50s - Don't know yet](#50s---dont-know-yet)
     - [60s - Don't know yet](#60s---dont-know-yet)
-- [What I wish I knew when my kids](#what-i-wish-i-knew-when-my-kids)
+- [What I wish I knew when my kids were new](#what-i-wish-i-knew-when-my-kids-were-new)
     - [were new](#were-new)
     - [were two](#were-two)
     - [were teens](#were-teens)
     - [were adults](#were-adults)
 - [Other Concepts](#other-concepts)
     - [The Hindu Ashrama](#the-hindu-ashrama)
-    - [Don Juan's Four Enemeies](#don-juans-four-enemeies)
+    - [Don Juan's Four Enemies](#don-juans-four-enemies)
     - [Coming of age ceremonies](#coming-of-age-ceremonies)
     - [Every article I've written evolves over time](#every-article-ive-written-evolves-over-time)
 
@@ -54,13 +54,13 @@ I'm working on this talk, give me content!
 
 ### 40s - Focus on what you do like
 
-{%include summarize-page.html src="/42"%}
+{% include summarize-page.html src="/42"%}
 
 ### 50s - Don't know yet
 
 ### 60s - Don't know yet
 
-## What I wish I knew when my kids
+## What I wish I knew when my kids were new
 
 Read the [prophet on children](https://www.amazon.com//dp/0394404289/):
 
@@ -106,13 +106,13 @@ For even as He loves the arrow that flies, so He loves also the bow that is stab
 
 ### The Hindu Ashrama
 
-Hindu's have these kind of ideas well codified in [the vedics](<https://en.wikipedia.org/wiki/Ashrama_(stage)>).
+Hindu's have these kinds of ideas well codified in [the vedics](<https://en.wikipedia.org/wiki/Ashrama_(stage)>).
 
 Their progression is student, householder, forest dweller and
 
-### Don Juan's Four Enemeies
+### Don Juan's Four Enemies
 
-In [Don Juan's Philophy](/don-juan) the stages are: [Fear, Arrogrance, Authority and Old Age](/don-juan).
+In [Don Juan's Philosophy](/don-juan) the stages are: [Fear, Arrogance, Authority and Old Age](/don-juan).
 
 ### Coming of age ceremonies
 
