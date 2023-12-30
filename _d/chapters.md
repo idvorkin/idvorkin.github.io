@@ -56,7 +56,10 @@ I'm working on this talk, give me content!
 - The health debt you likely took on in your 30s need to be paid back otherwise you'll degrade quickly.
 - As you get older, you will decline, the work you do in your 40s will be the starting point for your decline, and simultaneously impact your rate of decline.
 
+{%include summarize-page.html src="/42"%}
+
 {%include summarize-page.html src="/physical-health" %}
+
 {%include summarize-page.html src="/diet" %}
 
 ### 50s - Don't know yet

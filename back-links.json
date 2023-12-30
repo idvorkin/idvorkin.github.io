@@ -66,6 +66,8 @@
         "/feeling-meetings": "/human-meetings",
         "/first-thing-first": "/first-things-first",
         "/first90days": "/90days",
+        "/fourty-two": "/d/42",
+        "/fourtytwo": "/d/42",
         "/frugality": "/parkinson",
         "/frustration": "/anger",
         "/fuck-shame": "/shame",
@@ -151,8 +153,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -787,6 +787,7 @@
             "description": "Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22 year old, and what you need as a 42 year old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.\n\n",
             "file_path": "_site/chapters.html",
             "outgoing_links": [
+                "/42",
                 "/diet",
                 "/enemy",
                 "/physical-health",
@@ -795,7 +796,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/chapters.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/class-act": {
             "py/object": "__main__.Page",
@@ -1340,6 +1341,22 @@
             "redirect_url": "",
             "markdown_path": "_d/time-off-2023-08.md",
             "doc_size": 15000
+        },
+        "/d/time-off-2023-11": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2023-11",
+            "title": "Ashland T-Day 2023",
+            "description": "It’s time for our annual thanksgiving 2023 trip to Oregon!\n\n",
+            "file_path": "_site/d/time-off-2023-11.html",
+            "outgoing_links": [
+                "/happy",
+                "/moments",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2023-11.md",
+            "doc_size": 14000
         },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
@@ -2008,6 +2025,7 @@
                 "/d/time-off-2022-12",
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
+                "/d/time-off-2023-11",
                 "/hobby",
                 "/joy",
                 "/siy",
@@ -2581,6 +2599,7 @@
                 "/d/time-off-2022-12",
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
+                "/d/time-off-2023-11",
                 "/happy",
                 "/moments-at-work",
                 "/random-idea"
@@ -3455,7 +3474,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/data-systems.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
@@ -3788,6 +3807,7 @@
                 "/d/time-off-2022-12",
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
+                "/d/time-off-2023-11",
                 "/mind-at-work",
                 "/parkinson"
             ],
