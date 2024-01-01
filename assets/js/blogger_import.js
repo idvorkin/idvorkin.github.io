@@ -70,9 +70,17 @@ function add_imported_blog_posts() {
     $.getJSON(imported_posts_url, ProcessImports);
 }
 function html_for_role(role) {
+    // url encode the role title
+    const role_file_name = role.title.replace(/ /g, "%20");
+    const voices = ["igor", "ammon"];
+    const random_voice = voices[Math.floor(Math.random() * voices.length)];
+    // Yucky - toggle_play_pause is a global function in enjoy2.md - bleh,  so brittle
     return `
   <div>
-  <b>${role.title}</b> - ${role.summary}
+    <audio id="eulogy-player">
+      <source src="https://github.com/idvorkin/blob/raw/master/read_eulogy/${random_voice}/${role_file_name}.mp3" type="audio/mp3">
+    </audio>
+  <b>${role.title} <a class='lead' onclick="toggle_play_pause()">🔈</a></b> - ${role.summary}
   </div>
   `;
 }

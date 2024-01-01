@@ -18,8 +18,20 @@ It’s easy to forget the many, often tiny things that makes me happy. For when 
 </div>
 
 <script type=module>
-    import { load_enjoy2 } from '/assets/js/page-loader.js'
+    import { load_enjoy2} from '/assets/js/page-loader.js'
     defer(load_enjoy2)
+</script>
+
+<script>
+    <!-- TODO get this to work properly in blogger_import, but too much work, leave it here for now -->
+function toggle_play_pause() {
+  const player = document.getElementById("eulogy-player")
+  if (player.paused) {
+    player.play();
+  } else {
+    player.pause();
+  }
+}
 </script>
 
 <div class= 'alert alert-warning' id="random-eulogy-role">
