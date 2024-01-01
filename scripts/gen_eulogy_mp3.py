@@ -16,7 +16,13 @@ def dump_eulogy(voice="igor"):
         print(role["summary"])
         role_filename = f"{role['title']}.mp3"
         process = subprocess.Popen(
-            ["tts", "say", "--no-speak", f"--outfile={role_filename}"],
+            [
+                "tts",
+                "say",
+                f"--voice={voice}",
+                "--no-speak",
+                f"--outfile={role_filename}",
+            ],
             stdin=subprocess.PIPE,
         )
         # Write the summary directly to the tts command's stdin
