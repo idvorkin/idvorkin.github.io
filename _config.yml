@@ -62,11 +62,13 @@ algolia:
     - "_d/index.html"
     - "*.ruff_cache*"
     - "tags"
+    - "scripts/*"
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap", "jekyll-redirect-from"]
 include: [".htaccess", "__init__.py"]
 exclude:
   [
+    "scripts/*",
     "lib",
     "config.rb",
     "Gemfile",
