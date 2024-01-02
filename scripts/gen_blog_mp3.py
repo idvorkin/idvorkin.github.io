@@ -3,6 +3,7 @@ import typer
 import json
 from pathlib import Path
 import subprocess
+from icecream import ic
 
 
 app = typer.Typer()
@@ -16,11 +17,10 @@ def dump_blog(voice="igor"):
     for url_info in url_info_map.values():
         text = url_info["description"]
         url = url_info["url"]
-        # strip the leading slash
-        filename = Path(f"{url[1:]}.mp3")
+        # convert slashes to _
+        filename = Path(f"{url.replace('/','_')}.mp3")
+        ic(filename)
         tts(voice, text, filename)
-        break
-    #
 
 
 @app.command()
@@ -40,6 +40,7 @@ def tts(voice, text, filename: Path):
             "say",
             f"--voice={voice}",
             "--no-speak",
+            "--no-fast",
             f"--outfile={filename}",
         ],
         stdin=subprocess.PIPE,
