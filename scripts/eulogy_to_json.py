@@ -33,6 +33,11 @@ def printjson(out: List[Role]):
 
 def h3_to_summary(h3):
     next_p = h3.find_next("p")
+
+    # If next p has an image, skip that.
+    if next_p.find_all("img"):
+        next_p = next_p.find_next("p")
+
     if next_p:
         return "".join([str(c) for c in next_p.contents])
     else:
