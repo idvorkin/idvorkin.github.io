@@ -110,7 +110,7 @@ function html_for_role(role: Role) {
     <audio id="eulogy-player">
       <source src="https://github.com/idvorkin/blob/raw/master/read_eulogy/${random_voice}/${role_file_name}.mp3" type="audio/mp3">
     </audio>
-  <b>${role.title} <a class='lead' onclick="toggle_play_pause()">🔈</a></b> - ${role.summary}
+  <b>${role.title} <a class='lead' onclick="toggle_play_pause('eulogy-player')">🔈</a></b> - ${role.summary}
   </div>
   `;
 }

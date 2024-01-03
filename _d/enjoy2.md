@@ -24,8 +24,8 @@ It’s easy to forget the many, often tiny things that makes me happy. For when 
 
 <script>
     <!-- TODO get this to work properly in blogger_import, but too much work, leave it here for now -->
-function toggle_play_pause() {
-  const player = document.getElementById("eulogy-player")
+function toggle_play_pause(id) {
+  const player = document.getElementById(id)
   if (player.paused) {
     player.play();
   } else {
