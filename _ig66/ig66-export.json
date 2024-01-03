@@ -6484,6 +6484,19 @@
     },
     {
         "py/object": "__main__.BlogPost",
+        "title": "ACHIEVEMENT UNLOCKED - BUBBLE BIKE",
+        "url": "/ig66/583",
+        "published": "2021-05-30T00:00:00",
+        "excerpt": "I start my eulogy with my role as a dealer of smiles and wonder and bicycle rider. For a reason I don’t understand, few things are so universally smile generating as bubbles. Normally, bubbles are limited to your lung capacity, but a few years back I discovered bubble machines, which automatically create a metric tonne of bubbles, but you’re usually stuck at your house where you’ve got power. A while back I had an idea of putting a bubble machine on my bike. I found a model that ran on batteries, and Tori did a bunch of thinking, and came up with an attachment mechanism. Now, as I ride my bike there is a trail of bubbles. When I stop my bike, there are bubbles everywhere, and when I walk my bike, if the wind is to my back, I’m engulfed in a wall of bubbles.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/583/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal",
+            "achievement"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
         "title": "579AZ - BUBBLE BIKE!",
         "url": "/ig66/579",
         "published": "2021-05-30T00:00:00",
@@ -6501,19 +6514,6 @@
         "published": "2021-05-30T00:00:00",
         "excerpt": "I like to say kids are like hard drugs, they ruin your life but the highs are worth it. Jokes aside, Amelia’s father day gift is gonna be in the top lifetime highs. I’m pretty sure no matter what is bothering me, this video will ground me, and make me feel fantastic.\n\n",
         "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/580/montage.jpg",
-        "content": "",
-        "tags": [
-            "family-journal",
-            "achievement"
-        ]
-    },
-    {
-        "py/object": "__main__.BlogPost",
-        "title": "ACHIEVEMENT UNLOCKED - BUBBLE BIKE",
-        "url": "/ig66/583",
-        "published": "2021-05-30T00:00:00",
-        "excerpt": "I start my eulogy with my role as a dealer of smiles and wonder and bicycle rider. For a reason I don’t understand, few things are so universally smile generating as bubbles. Normally, bubbles are limited to your lung capacity, but a few years back I discovered bubble machines, which automatically create a metric tonne of bubbles, but you’re usually stuck at your house where you’ve got power. A while back I had an idea of putting a bubble machine on my bike. I found a model that ran on batteries, and Tori did a bunch of thinking, and came up with an attachment mechanism. Now, as I ride my bike there is a trail of bubbles. When I stop my bike, there are bubbles everywhere, and when I walk my bike, if the wind is to my back, I’m engulfed in a wall of bubbles.\n\n",
-        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/583/montage.jpg",
         "content": "",
         "tags": [
             "family-journal",
@@ -6866,7 +6866,7 @@
         "title": "WEEK 631AZ - BIKING, IT'S IN THE GENES",
         "url": "/ig66/631",
         "published": "2022-06-12T00:00:00",
-        "excerpt": "“Dad, I think I got the biking gene from you. Also, I got the “woohoo” gene, cuz we both like to say woohoo!” Said Amelia as we did a 2 mile (3 km) bike ride to the Japanese garden and back.  The next day, I bribed Zach with a humbow at the Pike place market, and we took, non public transit, but Igor Transit to get there. Igor Transit is my bike.\n\n",
+        "excerpt": "“Dad, I think I got the biking gene from you. Also, I got the “woohoo” gene, cuz we both like to say woohoo!” Said Amelia as we did a 2 mile (3 km) bike ride to the Japanese garden and back. The next day, I bribed Zach with a humbow at the Pike place market, and we took, non public transit, but Igor Transit to get there. Igor Transit is my bike.\n\n",
         "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/631/montage.jpg",
         "content": "",
         "tags": [
@@ -7073,7 +7073,7 @@
         "title": "WEEK 656 AZ - LAYOFFS AND NYC W/AMMON",
         "url": "/ig66/656",
         "published": "2022-11-14T00:00:00",
-        "excerpt": "This has been a crazy two weeks. First of all, on Wednesday Meta had its first layoffs ever, and I had my first experience going through layoffs and a giant re-organization where I’d be working on completely new things with a completely new boss. Not very fun.  Making it worse, I’d planned a trip to NYC months ago with Ammon, and I flew to NYC Friday, just 2 days after layoffs while the team was trying to digest layoffs, and trying to understand what would happen next. As a result even though I was in NYC, I was trying to work a few days a week to help support the team through this difficult time (for them and me).\n\n",
+        "excerpt": "This has been a crazy two weeks. First of all, on Wednesday Meta had its first layoffs ever, and I had my first experience going through layoffs and a giant re-organization where I’d be working on completely new things with a completely new boss. Not very fun. Making it worse, I’d planned a trip to NYC months ago with Ammon, and I flew to NYC Friday, just 2 days after layoffs while the team was trying to digest layoffs, and trying to understand what would happen next. As a result even though I was in NYC, I was trying to work a few days a week to help support the team through this difficult time (for them and me).\n\n",
         "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/656/montage.jpg",
         "content": "",
         "tags": [
@@ -7085,7 +7085,7 @@
         "title": "WEEK 657 AZ - ASHLAND 2022!",
         "url": "/ig66/657",
         "published": "2022-11-27T00:00:00",
-        "excerpt": "You know what’s great? Going off the grid, where power is generated from the sun, water is collected on the roof, and there is 1 gigabit internet.  This week we did our annual pilgrimage to Ashland for Thanksgiving. We saw Maureen, Brian, and the rest of Tori’s extended family. Zach got exposure to lots of dogs, I made lots of balloons, and Amelia followed in the family tradition of driving the bob cat.\n\n",
+        "excerpt": "You know what’s great? Going off the grid, where power is generated from the sun, water is collected on the roof, and there is 1 gigabit internet. This week we did our annual pilgrimage to Ashland for Thanksgiving. We saw Maureen, Brian, and the rest of Tori’s extended family. Zach got exposure to lots of dogs, I made lots of balloons, and Amelia followed in the family tradition of driving the bob cat.\n\n",
         "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/657/montage.jpg",
         "content": "",
         "tags": [
@@ -7187,6 +7187,129 @@
         "content": "",
         "tags": [
             "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 682AZ - ACHIEVEMENT UNLOCKED. CAVE RESCUE. WOW",
+        "url": "/ig66/682",
+        "published": "2023-05-29T00:00:00",
+        "excerpt": "“Chaperones, you’ve got your first aid kits, spare headlamps, and emergency food. Grab 7 kids, do their final gear check, wait 10 minutes after the group in front of disappears, your turn to descend into the dark.” I was chaperoning Zach’s 7th-grade caving trip. The trip should be one of those magical experiences the kids remember for the rest of their lives - I know I will.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/682/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal",
+            "accomplishment"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 684AZ - SCHOOLS OUT!",
+        "url": "/ig66/684",
+        "published": "2023-06-30T00:00:00",
+        "excerpt": "Schools out! Zach was VP in Grade 7, and won the election to be president when he comes back in Grade 8. Amelia had a rough go of math at the start grade 3, but is now the poster child (literally) for the effectiveness of Math Academy (an afterschool math program), she’ll be going into Grade 4 in great math shape, maybe if she keeps doing stuff she’ll even be ahead in math. Let me brain dump a bunch of stories that could have been their own post but I’m too lazy, maybe I’ll split them up later.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/684/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "ACHIEVEMENT UNLOCKED - MEDITATION HABIT",
+        "url": "/ig66/685",
+        "published": "2023-07-01T00:00:00",
+        "excerpt": "“Igor, I was in Seattle the other day, and I saw a meditation bench with your name on it.” And so began my 30-minute-a-day meditation practice! I’m on day 21, which means over 10 hours of meditation in the last month! For day 21, I woke up at 4:30 am (no free lunch, I go to bed at 8 pm), went to the beach and watched the sunrise as I meditated.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/685/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal",
+            "accomplishemnt"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 686AZ - SUMMER AT HOME",
+        "url": "/ig66/686",
+        "published": "2023-07-03T00:00:00",
+        "excerpt": "Simple\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/686/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 687AZ - MANIC MEATBALLS, AND OUR NEW CAR (TESLA!)!",
+        "url": "/ig66/687",
+        "published": "2023-07-10T00:00:00",
+        "excerpt": "(Zach writes) It’s not every day that you get dragged along on a 60-minute road trip by your maniacally gleeful brother to get some fast-food meatballs. But when that day comes, and it will happen, I will be the maniacally gleeful brother. If I am being truthful, I have no idea why I set my sights on Manic Meatballs, the fast-food meatball restaurant in question, or what drove me to spend 60 minutes in a brand-new Tesla Model Y to get there. Maybe it was a sense of childlike wonder. Perhaps it was divine providence, a call from the gods that meatballs were to be had. Whatever the case, I did it.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/687/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 700AZ - FATHER BURRIES GRAND FATHER; SON BURRIES FATHER",
+        "url": "/ig66/700",
+        "published": "2023-10-01T00:00:00",
+        "excerpt": "The story goes a woman asked a Buddhist priest for a blessing, and he said “father buries grandfather, son buries father”. She was angry at first, but then realized anything else would be much much worse. This week we watched Slava Bury Aaron. Painful for the loss, but Aaron was lucky to die peacefully at the age of 80 having had a joyous life and getting to have grandchildren.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/700/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 706AZ - HAPPLY HALLOWEEN 2023",
+        "url": "/ig66/706",
+        "published": "2023-11-05T00:00:00",
+        "excerpt": "Halloweeen is our favorite holiday. This year Zach was the phantom of the Opera, Amelia was a witch from her favorite video game, and I had hair (and was a squirrel). Tori’s made slews of progress on the bathroom, and I’m crushing the kettlebells.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/706/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 707AZ - DAD, GUESS WHAT? WHAT!? I GOT MARRIED TODAY",
+        "url": "/ig66/707",
+        "published": "2023-11-12T00:00:00",
+        "excerpt": "Nuptials wasn’t exactly what I was expecting, but it’s clear Amelia is no longer a little girl. She’s now somewhere between a girl and young lady. Almost double digits as she likes to say. We’ve been spending more time together, which is precious, and I’m incredibly grateful that we’ve been getting lots of quality time together.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/707/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "WEEK 708AZ - SICK, AND READY FOR THE HOLIDAYS",
+        "url": "/ig66/708",
+        "published": "2023-12-01T00:00:00",
+        "excerpt": "The week had a strong start with Black Nativity (highly recommended), but ended with the whole family coming down with a cold. So pretty slow and boring. High hopes for next week as work will have ground to a halt as many folks are on holiday vacation, and the kids are home from school.\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/708/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal"
+        ]
+    },
+    {
+        "py/object": "__main__.BlogPost",
+        "title": "JUMP IN THE LAKE DAY 2024 - HOT COCOA EDITION",
+        "url": "/ig66/714",
+        "published": "2024-01-01T00:00:00",
+        "excerpt": "It’s Jump in the Lake Day 2024 - that day we kick off the year by saying F@#$ the resistance!! This year Amelia dipped her proverbial toe in the water, and I brought us a hot chocolate toast! Sharing is caring, so when I saw someone who didn’t have a family to plunge with drying off alone, I brought them a shot of hot cocoa to enjoy. To quote them - a very good omen indeed!\n\n",
+        "thumbnail": "https://github.com/idvorkin/blob/raw/master/ig66/714/montage.jpg",
+        "content": "",
+        "tags": [
+            "family-journal",
+            "jump-in-the-lake-day"
         ]
     }
 ]
