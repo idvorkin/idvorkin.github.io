@@ -86,9 +86,17 @@ class ThingsIEnjoy {
 function makePostPreviewHTML({ url, title, description }) {
   // TODO: HACK: Strip to the right of Week number
   const title_href = `<a href='${url}'}>${title}</a>`;
+  // random id for audio player
+  const id = "audio_player_" + Math.floor(Math.random() * 10000000000);
+  // filename is URL with '/' turned to '_'
+  const filename = url.replace(/\//g, "_");
+  // console.log(post)
   return `
     <div>
-      ${title_href}: ${description}
+        <audio id='${id}'>
+          <source src="https://github.com/idvorkin/blob/raw/master/url_info_voices/igor/${filename}.mp3" type="audio/mp3">
+        </audio>
+      ${title_href}:  <b><a class='lead' onclick="toggle_play_pause('${id}')">🔈</a></b> ${description}
     </div>
   `;
 }
