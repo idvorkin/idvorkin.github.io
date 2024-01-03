@@ -32,7 +32,7 @@
     "update:backlinks": "python3 build_back_links.py > back-links.json",
     "update:search": "bundle exec jekyll algolia",
     "update:ig66": "python3 old_blog/transform_blogger_export.py export-all > _ig66/ig66-export.json",
-    "update:eulogy": "python3 eulogy_to_json.py > eulogy.json",
+    "update:eulogy": "python3 scripts/eulogy_to_json.py > eulogy.json",
     "update:fj": "python3 old_blog/transform_blogger_export.py export-all > _ig66/ig66-export.json",
     "back-links": "python3 build_back_links.py > back-links.json",
     "tsc": "tsc --watch --allowUmdGlobalAccess",
