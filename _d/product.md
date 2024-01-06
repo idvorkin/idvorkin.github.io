@@ -1,12 +1,14 @@
----
+[---](---.md)
 layout: post
 title: Building products
 tags:
-  - emotional intelligence
-permalink: /product
-redirect_from:
-  - /product-manager
-  - /pm
+
+- emotional intelligence
+  permalink: /product
+  redirect_from:
+- /product-manager
+- /pm
+
 ---
 
 From creating a vision that inspires to laying out the strategies to get there, product work requires a range of skills—and a good dose of creativity. Putting the puzzle pieces together is essential to creating a product that appeals to its customers. With the right combination of vision, strategy, product design and execution, anyone can create something truly remarkable. With this in mind, let's start building the future we want to create!
@@ -152,11 +154,72 @@ _Might be worth it's own page_
 
 1. Making Money - What ever your output goal is. Though usuall you move an input goal.
 2. Inventory - Stuff that's required to meet your goal, but isn't sufficient.
-3. Operating Expense - Anyt costs.
+3. Operating Expense - Any costs.
 
 Note, inventory is output. Not inherintly useful. Outcomes is goal!
 
 ### Differneces from an EM
+
+### How to inteview for customer need - the Mom Test
+
+1. Talk about their life instead of your idea.
+2. Ask about specifics in the past instead of generics or opinions about the future.
+3. Talk less and listen more.
+
+4. **Ask About Specific Behaviors**: Instead of asking for opinions about your idea, ask about specific behaviors and actions they've taken in the past. This provides more reliable data.
+
+5. **Focus on Their Life, Not Your Idea**: Engage in discussions about the customer's life and problems instead of pitching your idea. This helps to uncover real issues that your product or service might solve.
+
+6. **Avoid Compliments**: Disregard compliments; they often don't provide valuable feedback and can be misleading.
+
+7. **Seek Evidence of Customer Pain Points**: Look for evidence that the problem you're trying to solve is painful enough that customers have already tried to solve it themselves.
+
+8. **Get Commitment**: Try to get some form of commitment from potential customers, whether it's time, reputation risk, or even pre-purchases.
+
+9. **Keep Questions Neutral**: Phrase your questions in a way that doesn't lead to the answer you want to hear.
+
+10. **Avoid Bad Data**: Be wary of the bad data that comes from questions about hypothetical situations, flattery, and future intentions.
+
+Examples of turning accusatry "why questions" into less threatening data gathering questions:
+
+- **Bad**: "Why didn't you like our product?"
+
+  - **Good**: "What were you hoping to achieve with our product, and how did it fall short of those expectations?"
+
+- **Bad**: "Why aren't you using the feature we built?"
+
+  - **Good**: "Can you walk me through a recent time when you considered using the feature and what your thought process was?"
+
+- **Bad**: "Why do you think people will buy this?"
+
+  - **Good**: "What kinds of problems have people encountered that might lead them to look for a solution like ours?"
+
+- **Bad**: "Why do you prefer our competitor's product?"
+
+  - **Good**: "What aspects of our competitor's product made a difference in your decision to use it?"
+
+- **Bad**: "Why haven't you tried solving this problem before?"
+
+  - **Good**: "What has prevented you from addressing this issue until now?"
+
+- **Bad**: "Why would you pay for this service?"
+
+  - **Good**: "Can you describe a situation where you felt this service would be worth paying for?"
+
+- **Bad**: "Why do you find this task difficult?"
+
+  - **Good**: "What challenges do you face when you're trying to accomplish this task?"
+
+- **Bad**: "Why do you like this feature so much?"
+
+  - **Good**: "What specific benefits do you get from this feature that you value the most?"
+
+- **Bad**: "Why don't you track your expenses?"
+
+  - **Good**: "What has your experience been with tracking expenses, and what has made it difficult or unappealing for you?"
+
+- **Bad**: "Why do you need this solution right now?"
+  - **Good**: "What has changed recently that has made finding a solution like this more urgent for you?"
 
 ### Books
 
