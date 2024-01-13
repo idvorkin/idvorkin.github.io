@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Igor's Book of Management"
-date: "2021-11-05 00:56:07 +0000"
+title: "How to EM: Be the manager everyone wants"
 imagefeature: https://github.com/idvorkin/blob/raw/master/idvorkin-manager-book-1200-628.png
 tags:
   - manager
@@ -13,7 +12,7 @@ redirect_from:
 
 Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.
 
-This post uses the word manager, but the most topics apply to all software job functions regardless of seniority or the number of direct reports, zero direct reports included.
+This post uses the word manager, but many topics apply to all job functions, regardless of seniority or number of direct reports, zero direct reports included.
 
 <!-- prettier-ignore-start -->
 
