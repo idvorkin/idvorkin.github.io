@@ -15,6 +15,7 @@ A journal of random explorations in AI. Keeping track of htem so I don't get sup
 - [Bestie Simulator](#bestie-simulator)
     - [Attempt #1: Prompt GPT to simulate with lots of example text](#attempt-1-prompt-gpt-to-simulate-with-lots-of-example-text)
     - [Attempt #2: Use that data to do the training](#attempt-2-use-that-data-to-do-the-training)
+    - [Style vs Substance](#style-vs-substance)
     - [Models:](#models)
         - [Bestie-1d-raw-2020+](#bestie-1d-raw-2020)
         - [Bestie-7d-raw-2020+](#bestie-7d-raw-2020)
@@ -38,7 +39,7 @@ A journal of random explorations in AI. Keeping track of htem so I don't get sup
 
 ## Visualization
 
-## Text to speech our friends.
+## Text to speech our friends
 
 Well that was super easy, eleven labs has perfect instant voice clones, and what's coolest is you
 can clone in multiple languages, so you can hear yourself talking in lots of languages. Let me give a sample
@@ -55,9 +56,9 @@ OK, I used to go to this pychaitratist, who had a full "consistent model" of pyc
 
 lets see if we can simulate him, step #1, lets bring the site down into markdown
 
-1. Lets use https://github.com/paulpierre/markdown-crawler:
+1. Lets use <https://github.com/paulpierre/markdown-crawler>:
 2. pip install markdown-crawler
-   markdown-crawler https://whatilearnedsofar.com/practice/ --output-dir ./practice
+   markdown-crawler <https://whatilearnedsofar.com/practice/> --output-dir ./practice
 
 ## Bestie Simulator
 
@@ -74,14 +75,34 @@ Prompts didn't work that well. Still sounded like GPT
 - Next use a prompt to make the responses longer
   - TBD -- add several examples
 - [Proof of concept](https://github.com/idvorkin/nlp/blob/2f7fce99e108adaaf343c11f9edc42d07c6aba3e/play_langchain.py#L449)
-- Use fine tune tool https://platform.openai.com/finetune
+- Use fine tune tool <https://platform.openai.com/finetune>
 - Split into training and validation
 - Started getting moderation errors when I went to weekly batches.
   - Tried removing image unicode, and went to 1/10 the size, and that worked
   - Trying again at full size, see if that works
   -
 
-### Models:
+### Style vs Substance
+
+Fine tuning makes it sound like my bestie, but a few observations:
+
+1. It's very bad at telling me about itself/it's day
+2. It's pretty good at giving me advice.
+
+I think part of the problem with 1, as fine tuning doesn't have a sense of "context", or a sense of "utlity". I think In eed to inject those in. So example context:
+
+- Current Global Events
+  - _Interestingly, this is pretty shallow stuff, so don't think it helps, beyond getting the interesting, brr it's cold out_
+  - Location
+  - Date
+  - Weather
+- Current Utility for bestie
+  - This is probably good, but mayve not as the key is reflection
+- What bestie knows I wnt to accomplish and care about
+  - Being explicit here is probably good
+  - Having bestie know my goals, and my things i get caught up in.
+
+### Models
 
 #### Bestie-1d-raw-2020+
 
@@ -121,7 +142,7 @@ Prompts didn't work that well. Still sounded like GPT
   - You have overhead for every training sample. From daily to weekly I went from 10M to 4M
   - Need to pay attention to stay under token limit
 - ufffc is what apple sends for an image
-- A tuning run is 50$
+- A tuning run is 50\$
 - I suspect the conversation gets weird if theirs too much history, as people change. Not knowing when something happens (a decay) on the training data is important. So can address by limiting to latest history
 
 ### Tooling learnings

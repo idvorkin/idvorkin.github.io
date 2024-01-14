@@ -13,15 +13,12 @@ My notes on writing books, mostly from Write Useful Books
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Book on this](#book-on-this)
 - [Appendix](#appendix)
     - [Book sources](#book-sources)
-    - [Conversation on the manager book title,](#conversation-on-the-manager-book-title)
+    - [Conversation on the manager book title](#conversation-on-the-manager-book-title)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-## Book on this
 
 ## Appendix
 
