@@ -1,5 +1,7 @@
 {
     "redirects": {
+        "/2024": "/y24",
+        "/24": "/y24",
         "/48-laws": "/laws-of-power",
         "/50yo": "/40yo",
         "/7h": "/7-habits",
@@ -124,13 +126,11 @@
         "/perfect-job": "/job",
         "/personal-development": "/timeoff",
         "/phoney": "/insecure",
-        "/pm": "/product",
         "/poh": "/happy",
         "/proactive": "/be-proactive",
         "/process": "/upstream",
         "/procrastinate": "/frog",
         "/procrastination": "/frog",
-        "/product-manager": "/product",
         "/productivity": "/productive",
         "/psych-safety": "/insecure",
         "/psychological-safety": "/insecure",
@@ -216,7 +216,7 @@
             "py/object": "__main__.Page",
             "url": "/42",
             "title": "What I wish I knew at 42",
-            "description": "Congrats, you survived young kids, marriage, house, some easy crises, and now it’s time for .. things I wish I knew at 42.\n\n",
+            "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember , a healthy person has a thousand wishes, a sick person just one - things i wish I knew at 42\n\n",
             "file_path": "_site/42.html",
             "outgoing_links": [
                 "/diet",
@@ -224,7 +224,8 @@
                 "/physical-health"
             ],
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/y24"
             ],
             "redirect_url": "",
             "markdown_path": "_d/42.md",
@@ -2425,7 +2426,7 @@
         "/manager-book": {
             "py/object": "__main__.Page",
             "url": "/manager-book",
-            "title": "Igor's Book of Management",
+            "title": "How to EM: Be the manager everyone wants",
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
             "file_path": "_site/manager-book.html",
             "outgoing_links": [
@@ -2465,7 +2466,8 @@
                 "/job",
                 "/manager-book-appendix",
                 "/operating-manual",
-                "/software-leadership-roles"
+                "/software-leadership-roles",
+                "/y24"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
@@ -2884,20 +2886,6 @@
             "redirect_url": "",
             "markdown_path": "_posts/2018-01-01-fuck-pride.md",
             "doc_size": 18000
-        },
-        "/product": {
-            "py/object": "__main__.Page",
-            "url": "/product",
-            "title": "Building products",
-            "description": "From creating a vision that inspires to laying out the strategies to get there, product work requires a range of skills—and a good dose of creativity. Putting the puzzle pieces together is essential to creating a product that appeals to its customers. With the right combination of vision, strategy, product design and execution, anyone can create something truly remarkable. With this in mind, let’s start building the future we want to create!\n\n",
-            "file_path": "_site/product.html",
-            "outgoing_links": [],
-            "incoming_links": [
-                "/manager-book"
-            ],
-            "redirect_url": "",
-            "markdown_path": "_d/product.md",
-            "doc_size": 20000
         },
         "/productive": {
             "py/object": "__main__.Page",
@@ -3926,7 +3914,7 @@
                 "/first-things-first"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/upstream.md",
+            "markdown_path": "_d/y2024.md",
             "doc_size": 14000
         },
         "/vim-for-writing": {
@@ -4052,6 +4040,20 @@
             "markdown_path": "_d/7h-c4.md",
             "doc_size": 15000
         },
+        "/write-book": {
+            "py/object": "__main__.Page",
+            "url": "/write-book",
+            "title": "How to write a book",
+            "description": "My notes on writing books, mostly from Write Useful Books\n\n",
+            "file_path": "_site/write-book.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/y24"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/book-writing.md",
+            "doc_size": 13000
+        },
         "/writing": {
             "py/object": "__main__.Page",
             "url": "/writing",
@@ -4079,6 +4081,22 @@
             "redirect_url": "",
             "markdown_path": "_d/writing.md",
             "doc_size": 34000
+        },
+        "/y24": {
+            "py/object": "__main__.Page",
+            "url": "/y24",
+            "title": "Year 2024",
+            "description": "I like to begin in mind, so let’s write a report for 2024.\n\n",
+            "file_path": "_site/y24.html",
+            "outgoing_links": [
+                "/42",
+                "/manager-book",
+                "/write-book"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/y2024.md",
+            "doc_size": 11000
         }
     }
 }
