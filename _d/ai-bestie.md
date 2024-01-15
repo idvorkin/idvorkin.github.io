@@ -72,13 +72,15 @@ I think part of the problem with 1, as fine tuning doesn't have a sense of "cont
 
 ### Models
 
+Here are some models I fine tuned in case you get access to them
+
 - Bestie-1d-raw-2020+
   - ftjob-qyOyRWqpuakIhQdulCSi60Ui
   - I'm guessing performance gets weird on facts as they change over 5 year blocks
 - Bestie-7d-raw-2020+
   - Having a hard time getting tnis to pass validation
-  - Bestie-7d-raw-2020-sampled +
-- ftjob-5V0Pkd9YtiAp4FsnPctJ29F1
+- Bestie-7d-raw-2020-sampled +
+  - ftjob-5V0Pkd9YtiAp4FsnPctJ29F1
   - Having a hard time getting tnis to pass validation
 - Bestie-1d-raw-full
   - No cleanups, just raw data
