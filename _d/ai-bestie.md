@@ -2,6 +2,7 @@
 layout: post
 title: "Igor's AI Bestie Simulator"
 permalink: /ai-bestie
+rediret_from: /ai-bestie/
 ---
 
 My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75, P95). I have years of chat history, and so this seemed like a super fun way to get deeper into ML. This is created and shared with his permission.
@@ -72,24 +73,17 @@ I think part of the problem with 1, as fine tuning doesn't have a sense of "cont
 ### Models
 
 - Bestie-1d-raw-2020+
-
-- ftjob-qyOyRWqpuakIhQdulCSi60Ui
-- I'm guessing performance gets weird on facts as they change over 5 year blocks
-
+  - ftjob-qyOyRWqpuakIhQdulCSi60Ui
+  - I'm guessing performance gets weird on facts as they change over 5 year blocks
 - Bestie-7d-raw-2020+
-
-- Having a hard time getting tnis to pass validation
-
-- Bestie-7d-raw-2020-sampled +
-
+  - Having a hard time getting tnis to pass validation
+  - Bestie-7d-raw-2020-sampled +
 - ftjob-5V0Pkd9YtiAp4FsnPctJ29F1
-- Having a hard time getting tnis to pass validation
-
+  - Having a hard time getting tnis to pass validation
 - Bestie-1d-raw-full
-
-- No cleanups, just raw data
-- ft:gpt-3.5-turbo-1106:idvorkinteam::8YgPRpMB
-- Didn't have a validation set, so not sure what that did
+  - No cleanups, just raw data
+  - ft:gpt-3.5-turbo-1106:idvorkinteam::8YgPRpMB
+  - Didn't have a validation set, so not sure what that did
 
 ### Data Prep
 
