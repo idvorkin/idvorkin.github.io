@@ -2,7 +2,9 @@
 layout: post
 title: "Igor's AI Bestie Simulator"
 permalink: /ai-bestie
-rediret_from: /ai-bestie/
+redirect_from:
+  - /bestiegpt
+  - /aGPT
 ---
 
 My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75, P95). I have years of chat history, and so this seemed like a super fun way to get deeper into ML. This is created and shared with his permission.
@@ -48,7 +50,6 @@ Prompts didn't work that well. Still sounded like GPT
 - Started getting moderation errors when I went to weekly batches.
   - Tried removing image unicode, and went to 1/10 the size, and that worked
   - Trying again at full size, see if that works
-  -
 
 ### Style vs Substance
 

@@ -18,6 +18,7 @@
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
         "/affirm": "/affirmations",
+        "/aGPT": "/ai-bestie",
         "/ai-papers": "/ai-paper",
         "/ai-talk": "/genai-talk",
         "/alexa-charity": "/toysfortots",
@@ -28,6 +29,7 @@
         "/ballooning": "/balloon",
         "/bbb": "/build-bubble-bike",
         "/begin-with-the-end-in-mind": "/end-in-mind",
+        "/bestiegpt": "/ai-bestie",
         "/bikes": "/bike",
         "/biking": "/bike",
         "/bmu": "/bmy",
@@ -2767,16 +2769,16 @@
         "/nurture": {
             "py/object": "__main__.Page",
             "url": "/nurture",
-            "title": "NURTURE: The Gottman Method",
-            "description": "In “Nurturing Love,” the Heath Brothers distill the wisdom of renowned relationship experts Drs. John and Julie Gottman into a concise and actionable guide for couples seeking to strengthen their relationships. Using their signature storytelling approach and evidence-based insights, the Heath Brothers create an engaging and accessible roadmap to the Gottman Method.\n\n",
+            "title": "NURTURE- The Gottman Method",
+            "description": "The Gottman Method is a research-based approach to couples therapy developed by Drs. John and Julie Gottman. The method is based on the idea that happy and healthy relationships require a strong foundation of love and friendship, as well as the ability to handle conflict in a positive way. The acronym NURTURE stands for the seven key components of the Gottman Method: Navigating Love Maps, Unleashing Fondness and Admiration, Responding to Bids for Attention, Tackling Conflict Constructively, Uplifting Dreams and Aspirations, Renewing Relationship Rituals, and Embracing Shared Meaning. In this book, we will explore each of these components in depth, providing practical advice, exercises, and journal prompts to help you apply the Gottman Method to your own relationship.\n\n",
             "file_path": "_site/nurture.html",
             "outgoing_links": [],
             "incoming_links": [
                 "/gpt"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/nurture.md",
-            "doc_size": 38000
+            "markdown_path": "_d/gpt-gotman.md",
+            "doc_size": 30000
         },
         "/operating-manual": {
             "py/object": "__main__.Page",
@@ -3427,7 +3429,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 72000
+            "doc_size": 73000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
@@ -3928,7 +3930,7 @@
                 "/first-things-first"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/y2024.md",
+            "markdown_path": "_d/upstream.md",
             "doc_size": 14000
         },
         "/vim-for-writing": {
