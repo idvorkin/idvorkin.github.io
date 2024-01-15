@@ -1,3 +1,4 @@
+#!python3
 # Remove line too long
 # pep8: disable=E501
 
@@ -8,6 +9,11 @@ import os
 import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
 from dataclasses import dataclass
 import copy
+import typer
+from icecream import ic
+from pathlib import Path
+import pudb
+from typing_extensions import Annotated
 
 
 # Use type system (and mypy) to reduce error,
@@ -152,6 +158,9 @@ class LinkBuilder:
         assert "should never get here"
 
     def update(self, path_back: FileType):
+        if "debug-something-wonky" in path_back:
+            pudb.set_trace()
+
         page = self.parse_page(path_back)
         if page is None:
             return
@@ -215,7 +224,9 @@ class LinkBuilder:
 
     def __init__(self):
         self.incoming_links = defaultdict(list)  # forward -> back
-        self.redirects = {}  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
+        self.redirects = (
+            {}
+        )  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
         self.pages = {}  # canonical->md
 
     def print_json(self):
@@ -243,11 +254,25 @@ def build_links_for_dir(lb, dir):
         lb.update(f"{dir}/{f}")
 
 
-def build_links_for_site():
+app = typer.Typer()
+
+
+@app.command()
+def build():
     lb = LinkBuilder()
     for d in jekyll_config.collection_dirs():
         build_links_for_dir(lb, d)
     lb.print_json()
 
 
-build_links_for_site()
+@app.command()
+def debug():
+    ic("debugging")
+    lb = LinkBuilder()
+    for d in jekyll_config.collection_dirs():
+        build_links_for_dir(lb, d)
+    lb.print_json()
+
+
+if __name__ == "__main__":
+    app()
