@@ -4,7 +4,7 @@ title: "Igor's AI Bestie Simulator"
 permalink: /ai-bestie
 ---
 
-My best friend and I communicate over chat, 13.4/messages per day median, I have lots of chat history, and so this seemed like a super fun way to get deeper into ML. This is created and shared with his permission.
+My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75, P95). I have years of chat history, and so this seemed like a super fun way to get deeper into ML. This is created and shared with his permission.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
