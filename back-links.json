@@ -4085,11 +4085,12 @@
         "/y24": {
             "py/object": "__main__.Page",
             "url": "/y24",
-            "title": "Year 2024",
+            "title": "Igor's plan for 2024",
             "description": "I like to begin in mind, so let’s write a report for 2024.\n\n",
             "file_path": "_site/y24.html",
             "outgoing_links": [
                 "/42",
+                "/ai-bestie",
                 "/manager-book",
                 "/write-book"
             ],
