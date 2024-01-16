@@ -4,7 +4,7 @@ title: "Things that make me cry"
 comments: true
 inprogress: true
 permalink: /touching
-aliases: ["/touching", "/cry", "/makes-me-cry", "/humanity"]
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon_crying.webp
 redirect_from:
   - /cry
   - /makes-me-cry
@@ -35,6 +35,8 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 - [Thai homeless with Shop Keeper](https://m.youtube.com/watch?v=S-fvxEq_3DA)
 - [Thai silence of love](https://m.youtube.com/watch?v=qZMX6H6YY1M)
 - [Lots of the commercials back to back](https://m.youtube.com/watch?v=rQcucGT6hd8)
+
+{%include blob_image_float_right.html src="blog/racoon_crying.webp" %}
 
 ### Speeches
 
