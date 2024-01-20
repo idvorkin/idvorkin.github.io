@@ -150,9 +150,12 @@ For some reason this is a frequent question I get asked by people deciding if th
 
 First a disclaimer, Managers are professional story tellers, they lie (often by accident), look with your own eyes, ask others on the team.
 
-Philosophy is probably two things 1/ What/How of the team, 2/ What/How is the managers contribution.
+Philosophy is probably two things
 
-What/How - What is the ideal culture.
+1. What/How of the team
+2. What/How is the managers contribution.
+
+What/How - What is the ideal team culture.
 
 What/How - What is the managers part in that.
 
