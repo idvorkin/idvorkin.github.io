@@ -33,17 +33,17 @@ app = typer.Typer()
 console = Console()
 
 chroma_db_dir = "blog.chroma.db"
-# embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
-embeddings = OpenAIEmbeddings()
+embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+# embeddings = OpenAIEmbeddings()
 
 
 # TODO: Use UnstructuredMarkdownParser
 # Interesting trade off here, if we make chunks bigger we can have more context
 # If we make chunk smaller we can inject more chunks
-chunk_size = 1024
+chunk_size = 2048
 
 
-def chunk_documents(documents, chunk_size=chunk_size, chunk_overlap=0):
+def chunk_documents(documents, chunk_size=chunk_size, chunk_overlap=50):
     splitter = CharacterTextSplitter(
         separator=" ", chunk_size=chunk_size, chunk_overlap=chunk_overlap
     )
@@ -68,6 +68,10 @@ def get_blog_content(path):
 @app.command()
 def build():
     docs = list(get_blog_content("~/blog"))
+    # db = Path(chroma_db_dir)
+    # erase the db directory
+
+    # db.rmdir(
     # ic(docs[1])
     chunks = list(chunk_documents(docs))
     # ic(chunks[3])
@@ -274,7 +278,16 @@ def ask(
     If you don't know the answer, just say that you don't know. Keep the answer under 10 lines
     Question: {question}
     Context: {context}
-    Answer:
+
+## the question the user asked here
+
+### Answer
+
+your answer here
+
+### Sources
+
+* source file path - Your reasoning on why it's  relevant (% relevance,  e.g. 20%)
     """
     )
 
