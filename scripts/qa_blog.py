@@ -2,7 +2,7 @@
 import requests
 from functools import lru_cache
 import pathlib
-from langchain_community.chat_models import ChatOpenAI
+from langchain_openai.chat_models import ChatOpenAI
 from pydantic import BaseModel
 from rich.console import Console
 from icecream import ic
@@ -11,10 +11,9 @@ import os
 from rich import print
 from langchain.docstore.document import Document
 from langchain_openai import OpenAIEmbeddings
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
 from langchain.text_splitter import CharacterTextSplitter
 from typing_extensions import Annotated
-import time
 from openai_wrapper import choose_model
 from fastapi import FastAPI
 from openai_wrapper import setup_gpt, get_model
@@ -24,6 +23,8 @@ from langchain.prompts.chat import (
     SystemMessagePromptTemplate,
 )
 from langchain.schema.output_parser import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough
+
 
 gpt_model = setup_gpt()
 server = FastAPI()
@@ -32,7 +33,8 @@ app = typer.Typer()
 console = Console()
 
 chroma_db_dir = "blog.chroma.db"
-embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+# embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+embeddings = OpenAIEmbeddings()
 
 
 # TODO: Use UnstructuredMarkdownParser
@@ -103,8 +105,27 @@ def facts_to_prompt(facts):
     return "\n".join([f.to_prompt() for f in facts])
 
 
+# We built the file_path from source markdown
+def fixup_markdown_path_to_url(src):
+    markdown_to_url = build_markdown_to_url_map()
+    for md_file_path, url in markdown_to_url.items():
+        # url starts with a /
+        url = url[1:]
+        md_link = f"[{url}](https://idvork.in/{url})"
+        src = src.replace(md_file_path, md_link)
+    return src
+
+
+def fixup_ig66_path_to_url(src):
+    for i in range(100 * 52):
+        src = src.replace(
+            f"_ig66/{i}.md", f"[Family Journal {i}](https://idvork.in/ig66/{i})"
+        )
+    return src
+
+
 @app.command()
-def ask(
+def ask_eulogy(
     question: Annotated[
         str, typer.Argument()
     ] = "What are the roles from Igor's Eulogy, answer in bullet form",
@@ -129,7 +150,7 @@ def ask(
         if debug:
             ic(f.metadata["source"])
 
-    facts = [
+    thefacts = [
         Fact(source=f.metadata["source"], content=f.page_content)
         for f in nearest_documents
     ]
@@ -167,7 +188,7 @@ your answer here
 
     prompt = f"""
     ### Facts
-{facts_to_prompt(facts)}
+{facts_to_prompt(thefacts)}
     ### Question
         {question}
     """
@@ -182,26 +203,8 @@ your answer here
     model = ChatOpenAI(model=model_name)
     ic(model_name)
 
-    start = time.time()
     chain = prompt | model | StrOutputParser()
     response = chain.invoke({})
-
-    # We built the file_path from source markdown
-    def fixup_markdown_path_to_url(src):
-        markdown_to_url = build_markdown_to_url_map()
-        for md_file_path, url in markdown_to_url.items():
-            # url starts with a /
-            url = url[1:]
-            md_link = f"[{url}](https://idvork.in/{url})"
-            src = src.replace(md_file_path, md_link)
-        return src
-
-    def fixup_ig66_path_to_url(src):
-        for i in range(100 * 52):
-            src = src.replace(
-                f"_ig66/{i}.md", f"[Family Journal {i}](https://idvork.in/ig66/{i})"
-            )
-        return src
 
     out = fixup_markdown_path_to_url(response)
     out = fixup_ig66_path_to_url(out)
@@ -240,16 +243,21 @@ def source_file_to_url(source_file):
     return blog_base + source_file_to_url[source_file]
 
 
+def format_docs(docs):
+    ic(len(docs))
+    return "\n\n".join(doc.page_content for doc in docs)
+
+
 @app.command()
-def ask2(
+def ask(
     question: Annotated[
         str, typer.Argument()
     ] = "What are the roles from Igor's Eulogy, answer in bullet form",
     facts: Annotated[int, typer.Option()] = 5,
-    u4: bool = typer.Option(False),
+    u4: bool = typer.Option(True),
     debug: bool = typer.Option(True),
 ):
-    model, max_tokens = choose_model(u4)
+    model, _ = choose_model(u4)
     if debug:
         ic(model)
         ic(facts)
@@ -257,24 +265,38 @@ def ask2(
     blog_content_db = Chroma(
         persist_directory=chroma_db_dir, embedding_function=embeddings
     )
-    from langchain.chains import RetrievalQA
-    from langchain.retrievers.multi_query import MultiQueryRetriever
 
-    model = ChatOpenAI(model=model_name)
+    prompt = ChatPromptTemplate.from_template(
+        """
+    You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Keep the answer under 10 lines
+    Question: {question}
+    Context: {context}
+    Answer:
+    """
+    )
 
+    model_name = get_model(u4=True)
+    llm = ChatOpenAI(model=model_name)
     simple_retriever = blog_content_db.as_retriever(search_kwargs={"k": facts})
-    smart_retriever = MultiQueryRetriever.from_llm(
-        retriever=simple_retriever,
-        llm=llm,
+    included_facts = simple_retriever.get_relevant_documents(question)
+
+    chain = (
+        {
+            "context": simple_retriever | format_docs,
+            "question": RunnablePassthrough(),
+        }
+        | prompt
+        | llm
+        | StrOutputParser()
     )
-    qa_chain = RetrievalQA.from_chain_type(
-        llm, retriever=simple_retriever, verbose=True, return_source_documents=True
-    )
-    response = qa_chain({"query": question})
-    print(response["result"])
+    response = chain.invoke(question)
+    print(response)
     print("Source Documents")
-    for doc in response["source_documents"]:
+    for doc in included_facts:
+        # Remap metadata to url
         ic(doc.metadata)
+        path = fixup_markdown_path_to_url(doc.metadata["source"])
+        ic(path)
 
 
 # @logger.catch()
