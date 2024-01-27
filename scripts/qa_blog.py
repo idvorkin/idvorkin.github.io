@@ -268,7 +268,10 @@ def ask(
 
     prompt = ChatPromptTemplate.from_template(
         """
-    You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question. If you don't know the answer, just say that you don't know. Keep the answer under 10 lines
+    You are an assistant for question-answering tasks.
+    Use the following pieces of retrieved context to answer the question.
+    The content is all from Igor's blog
+    If you don't know the answer, just say that you don't know. Keep the answer under 10 lines
     Question: {question}
     Context: {context}
     Answer:
