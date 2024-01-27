@@ -2,34 +2,37 @@
 import requests
 from functools import lru_cache
 import pathlib
-import subprocess
+from langchain_community.chat_models import ChatOpenAI
 from pydantic import BaseModel
-import tempfile
-import pydantic
-import openai
-import json
 from rich.console import Console
 from icecream import ic
 import typer
-import time
 import os
 from rich import print
-from loguru import logger
-from pudb import set_trace
 from langchain.docstore.document import Document
-from langchain.embeddings.openai import OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.text_splitter import CharacterTextSplitter
 from typing_extensions import Annotated
-from openai_wrapper import choose_model, remaining_response_tokens
+import time
+from openai_wrapper import choose_model
 from fastapi import FastAPI
+from openai_wrapper import setup_gpt, get_model
+from langchain.prompts.chat import (
+    ChatPromptTemplate,
+    HumanMessagePromptTemplate,
+    SystemMessagePromptTemplate,
+)
+from langchain.schema.output_parser import StrOutputParser
+
+gpt_model = setup_gpt()
 server = FastAPI()
 
 app = typer.Typer()
 console = Console()
 
 chroma_db_dir = "blog.chroma.db"
-embeddings = OpenAIEmbeddings()
+embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 
 
 # TODO: Use UnstructuredMarkdownParser
@@ -73,76 +76,20 @@ def build():
     search_index.persist()
 
 
-### Todo, move this to openai_wrapper
-def base_query(
-    tokens: int = 300,
-    debug: bool = False,
-    prompt_to_gpt="replace_prompt",
-    system_prompt="You are a helpful assistant.",
-    u4=False,
-):
-    model, tokens = choose_model(u4, tokens)
-
-    # Define the messages for the chat
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": prompt_to_gpt},
-    ]
-
-    output_tokens = remaining_response_tokens(model, system_prompt, prompt_to_gpt)
-
-    if debug:
-        ic(system_prompt)
-        # ic(prompt_to_gpt)
-        ic(model)
-        ic(output_tokens)
-
-    start = time.time()
-    response_contents = [""]
-    first_chunk = True
-    for chunk in openai.ChatCompletion.create(
-        model=model,
-        messages=messages,
-        max_tokens=output_tokens,
-        temperature=0.7,
-        stream=True,
-    ):
-        if not "choices" in chunk:
-            continue
-
-        for elem in chunk["choices"]:  # type: ignore
-
-            if first_chunk:
-                if debug:
-                    out = f"First Chunk took: {int((time.time() - start)*1000)} ms"
-                    ic(out)
-                first_chunk = False
-            delta = elem["delta"]
-            delta_content = delta.get("content", "")
-            response_contents[elem["index"]] += delta_content
-
-    text = ""
-    for i, content in enumerate(response_contents):
-        text = content
-
-    if debug:
-        out = f"All chunks took: {int((time.time() - start)*1000)} ms"
-        ic(out)
-    return text
-
-
 @app.command()
 def chunk_md(
-    path: Annotated[str, typer.Argument()] = "~/blog/_posts/2020-04-01-Igor-Eulogy.md"
+    path: Annotated[str, typer.Argument()] = "~/blog/_posts/2020-04-01-Igor-Eulogy.md",
 ):
     from unstructured.partition.md import partition_md
 
     elements = partition_md(filename=os.path.expanduser(path))
     ic(elements)
 
+
 class Fact(BaseModel):
     source: str
     content: str
+
     def to_prompt(self):
         return f"""---(FACT)---
 SOURCE FILE PATH:
@@ -151,8 +98,10 @@ FACT:
 {self.content}
 ---"""
 
+
 def facts_to_prompt(facts):
     return "\n".join([f.to_prompt() for f in facts])
+
 
 @app.command()
 def ask(
@@ -163,8 +112,6 @@ def ask(
     u4: bool = typer.Option(False),
     debug: bool = typer.Option(True),
 ):
-
-    model = "gpt-4" if u4 else "gpt-3.5-turbo-16k"
     model, max_tokens = choose_model(u4)
     if debug:
         ic(model)
@@ -182,7 +129,10 @@ def ask(
         if debug:
             ic(f.metadata["source"])
 
-    facts = [Fact(source=f.metadata["source"], content=f.page_content) for f in nearest_documents]
+    facts = [
+        Fact(source=f.metadata["source"], content=f.page_content)
+        for f in nearest_documents
+    ]
 
     # explain what you want
     system_instructions = """
@@ -221,14 +171,25 @@ your answer here
     ### Question
         {question}
     """
-    resp = base_query(
-        system_prompt=system_prompt, prompt_to_gpt=prompt, debug=debug, u4=u4
+
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            SystemMessagePromptTemplate.from_template(system_prompt),
+            HumanMessagePromptTemplate.from_template(prompt),
+        ],
     )
+    model_name = get_model(u4=True)
+    model = ChatOpenAI(model=model_name)
+    ic(model_name)
+
+    start = time.time()
+    chain = prompt | model | StrOutputParser()
+    response = chain.invoke({})
 
     # We built the file_path from source markdown
     def fixup_markdown_path_to_url(src):
         markdown_to_url = build_markdown_to_url_map()
-        for (md_file_path,url) in markdown_to_url.items():
+        for md_file_path, url in markdown_to_url.items():
             # url starts with a /
             url = url[1:]
             md_link = f"[{url}](https://idvork.in/{url})"
@@ -236,11 +197,13 @@ your answer here
         return src
 
     def fixup_ig66_path_to_url(src):
-        for i in range(100*52):
-            src =  src.replace(f"_ig66/{i}.md", f"[Family Journal {i}](https://idvork.in/ig66/{i})")
+        for i in range(100 * 52):
+            src = src.replace(
+                f"_ig66/{i}.md", f"[Family Journal {i}](https://idvork.in/ig66/{i})"
+            )
         return src
 
-    out = fixup_markdown_path_to_url(resp)
+    out = fixup_markdown_path_to_url(response)
     out = fixup_ig66_path_to_url(out)
     print(out)
 
@@ -254,25 +217,28 @@ def build_markdown_to_url_map():
     d = requests.get(backlinks_url).json()
     url_infos = d["url_info"]
     # "url_info": {
-        # "/40yo": {
-            # "markdown_path": "_d/40-yo-programmer.md",
-            # "doc_size": 14000
-        # },
+    # "/40yo": {
+    # "markdown_path": "_d/40-yo-programmer.md",
+    # "doc_size": 14000
+    # },
     # convert the url_infos into a source_file_to_url map
     source_file_to_url = {v["markdown_path"]: k for k, v in url_infos.items()}
     return source_file_to_url
+
 
 @server.get("/remap/{source_file}")
 def remap_to_url(source_file):
     return {"url": source_file_to_url(source_file)}
     # return {"url":"It works"}
 
+
 @app.command()
 @server.get("/remap/{source_file}")
 def source_file_to_url(source_file):
     source_file_to_url = build_markdown_to_url_map()
-    blog_base="https://idvork.in"
+    blog_base = "https://idvork.in"
     return blog_base + source_file_to_url[source_file]
+
 
 @app.command()
 def ask2(
@@ -283,7 +249,6 @@ def ask2(
     u4: bool = typer.Option(False),
     debug: bool = typer.Option(True),
 ):
-    model = "gpt-4" if u4 else "gpt-3.5-turbo-16k"
     model, max_tokens = choose_model(u4)
     if debug:
         ic(model)
@@ -293,10 +258,9 @@ def ask2(
         persist_directory=chroma_db_dir, embedding_function=embeddings
     )
     from langchain.chains import RetrievalQA
-    from langchain.chat_models import ChatOpenAI
     from langchain.retrievers.multi_query import MultiQueryRetriever
 
-    llm = ChatOpenAI(model_name=model)
+    model = ChatOpenAI(model=model_name)
 
     simple_retriever = blog_content_db.as_retriever(search_kwargs={"k": facts})
     smart_retriever = MultiQueryRetriever.from_llm(
