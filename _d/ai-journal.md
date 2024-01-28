@@ -4,15 +4,16 @@ title: "Igor's AI Journal"
 permalink: /ai-journal/
 ---
 
-A journal of random explorations in AI. Keeping track of htem so I don't get super lost
+A journal of random explorations in AI. Keeping track of them so I don't get super lost
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Visualization](#visualization)
 - [Text to speech our friends](#text-to-speech-our-friends)
-- [RAG a pychiatrist](#rag-a-pychiatrist)
+- [RAG a psychiatrist](#rag-a-psychiatrist)
 - [Diary](#diary)
+    - [2024-01-27](#2024-01-27)
     - [2023-11-26](#2023-11-26)
     - [2023-08-17](#2023-08-17)
     - [2023-07-16](#2023-07-16)
@@ -34,9 +35,9 @@ This took me about 30 minutes to setup - crazy!!
 
 [The code](https://github.com/idvorkin/nlp/blob/38193de32fff308ee292fa368799d804343b6336/tts.py?plain=1#L50)
 
-## RAG a pychiatrist
+## RAG a psychiatrist
 
-OK, I used to go to this pychaitratist, who had a full "consistent model" of pychiatraty
+OK, I used to go to this psychiatrist, who had a full "consistent model" of psychiatry
 
 [here](https://whatilearnedsofar.com/practice/)
 
@@ -48,9 +49,25 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## Diary
 
+### 2024-01-27
+
+- OpenAI released new embedding models
+- Restarted playing with using [RAG on my blog](https://github.com/idvorkin/idvorkin.github.io/blob/7e7617f6bb563e4428e4f8595709f54229d9750e/scripts/qa_blog.py?plain=1#L82)
+  - Works better than before, maybe since GPT-4 is faster, and I'm using it by default now
+- Biggest challenge is how to do the document chunking. Playing around with keeping global context on chunks (hard)
+- Also building [latent space search for my journal entries](https://github.com/idvorkin/nlp/blob/7d5cfc124cea08c5343f32140ff78fc667a36431/life.py?plain=1#L386)
+  - Interesting observation here, the embedding vector is bigger than the source
+  - 750 words = 750\* 8 letters/chars per word = 6K bytes
+  - Embedding = 3K \* 4 bytes = 12K
+- I used to worry about the embedding model endpoint being leaked for my journal entries, but I think I'm now assuming OpenAI is trustworthy.
+- In theory I can search my journal corpus through 3 approaches (which I'll blend):
+  - Lexical -> regexp search
+  - Semantic -> vector similarity
+  - Structured -> LLM to create structure (maybe do semantic over that)
+
 ### 2023-11-26
 
-- Foun content on red teaming
+- Found content on red teaming
 - Found out new models like Orca and they are pretty darn fast on GPT4all
 - Updated my code to use the latest OpenAI models
 - Updated my code to use langchain
@@ -58,7 +75,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ### 2023-08-17
 
-- Playing with Autnomous Agents
+- Playing with Autonomous Agents
   - AutoGPT
   - GPTResearcher
   - Both of these run through docker-compose. Kind of nice as 1/ runtime sandbox, 2/ environment mess up avoidance
@@ -73,8 +90,8 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ### 2023-07-15
 
-- Had very clever idea to 1/ make my convo files markdown, giving me completion from CoPilot
-- Having GPT prompt default answer in [markdown with line seperators](https://github.com/idvorkin/nlp/blob/ed56c29719a8a8f53ffd10513ec96d3895a25076/convos/default.convo?plain=1#L1) so that it was clear the answers from the bot
+- Had a very clever idea to 1/ make my convo files markdown, giving me completion from CoPilot
+- Having GPT prompt default answer in [markdown with line separators](https://github.com/idvorkin/nlp/blob/ed56c29719a8a8f53ffd10513ec96d3895a25076/convos/default.convo?plain=1#L1) so that it was clear the answers from the bot
 - e.g. <https://gist.github.com/idvorkin/98cfaa4bea8e4f9cc113ff978612518e>
 
 ### 2023-07-04
