@@ -76,6 +76,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [Agency and Psychological Safety](#agency-and-psychological-safety)
     - [Kudos Boards - Appreciations](#kudos-boards---appreciations)
     - [How do you like being questioned/micromanaged?](#how-do-you-like-being-questionedmicromanaged)
+    - [How do you transition from mercenaries to missionaries.](#how-do-you-transition-from-mercenaries-to-missionaries)
 - [Process and Mechanism](#process-and-mechanism)
     - [Theory of Process](#theory-of-process)
     - [The dark side of process](#the-dark-side-of-process)
@@ -106,6 +107,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [What about structured vs free form interview loops](#what-about-structured-vs-free-form-interview-loops)
     - [What are better kinds of interviews](#what-are-better-kinds-of-interviews)
     - [What do you do when someone says they are quitting](#what-do-you-do-when-someone-says-they-are-quitting)
+    - [What is a tribe?](#what-is-a-tribe)
 - [Performance Management](#performance-management)
     - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
     - [Best Practices For Performance Reviews](#best-practices-for-performance-reviews)
@@ -841,6 +843,17 @@ If you already had the thought, it's free for you to say it. If I've already tho
 
 Catching a bad assumption on my part, or even more important, something I haven't thought about - priceless.
 
+### How do you transition from mercenaries to missionaries.
+
+Mercenary - A hired gun who does exactly what you tell them without question
+Missionary - A person who believes in the mission and will do what they believe is best
+
+When there's too much top-down direction, a team can turn into mercenaries. They stop thinking and just do what they are told. Not good.
+
+What you want is missionaries, people that deeply believe in what they are doing.
+
+TBD: TODO add specific things here.
+
 ## Process and Mechanism
 
 ### Theory of Process
@@ -1208,6 +1221,18 @@ Teams should be like rivers, not lakes. Rivers are fresh and move, lakes are sta
 <!--
 - ### Best hire of your career
 -->
+
+### What is a tribe?
+
+Rarely you'll find a group of folks that follows each other even as they change organizations and companies. Usually a senior person will show up in a new place, and before you know it much of the organization will have joined her. I'll call this a tribe. If you find a tribe you gel with, I strongly recommend following the tribe.
+
+Tribes are awesome because
+
+How to form a tribe: - TBD
+
+What to do if a tribe appears around you: - Decide if you are aligned with the head of the tribe, if you're not, you probably want to go.
+
+How to join a tribe: - TBD
 
 ## Performance Management
 
