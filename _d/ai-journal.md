@@ -13,6 +13,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [Text to speech our friends](#text-to-speech-our-friends)
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [Diary](#diary)
+    - [2024-02-03](#2024-02-03)
     - [2024-01-27](#2024-01-27)
     - [2023-11-26](#2023-11-26)
     - [2023-08-17](#2023-08-17)
@@ -48,6 +49,16 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
    markdown-crawler <https://whatilearnedsofar.com/practice/> --output-dir ./practice
 
 ## Diary
+
+### 2024-02-03
+
+- TL;DR: While upgrading my improv coach bot, it refused to do any coaching. I had to spend 1.5 hours adjusting the prompt till it worked.
+  - When you look at the [diff](https://github.com/idvorkin/nlp/commit/6eca0560202696f93f954f3b46d8350d66e3a247) it looks obvious, but this stuff is alchemy groan.
+- I built an improv bot way back before openai supported function calls.
+- Of course, all the APIs broke in the last 6 months, so I decided to upgrade it
+- Worked pretty well, about 2 hours to figure out the new spellings of things,
+- But then the model kept refusing to extend my improv story. I wasted a full hour trying to figure out how to change the prompt.
+  - Pretty surprisng given this was GPT-4
 
 ### 2024-01-27
 
