@@ -2,7 +2,7 @@
 layout: post
 title: "Seattle"
 permalink: /seattle
-imagefeaturelocal: raccoon-seattle.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-seattle.webp
 ---
 
 I want to die in Seattle, not soon, but a great place to live. Here's some ideas if you're visisting
