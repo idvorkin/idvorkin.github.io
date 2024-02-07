@@ -2,6 +2,7 @@
 layout: post
 title: "Seattle"
 permalink: /seattle
+imagefeaturelocal: raccoon-seattle.webp
 ---
 
 I want to die in Seattle, not soon, but a great place to live. Here's some ideas if you're visisting
@@ -12,6 +13,8 @@ Igor's list:
 2. Coolest Library: [Hogwarts](https://www.lib.washington.edu/suzzallo)
 3. Second Coolest Library: [Seattle Public](https://www.spl.org/hours-and-locations/central-library)
 4. Fremont: Troll/Lenin
+
+{%include blob_image_float_right.html src="blog/raccoon-seattle.webp" %}
 
 By Neighborhood:
 
