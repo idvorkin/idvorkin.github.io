@@ -5,7 +5,7 @@ permalink: /seattle
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-seattle.webp
 ---
 
-I want to die in Seattle, not soon, but a great place to live. Here's some ideas if you're visisting
+Seattle is my home, I want to die here, though not soon. If you're visiting, here's a list of fun things you can try. But here's the deal, give me feedback of stuff to add/remove from this list
 
 Igor's list:
 
