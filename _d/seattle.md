@@ -19,7 +19,9 @@ Igor's list:
 By Neighborhood:
 
 1. Fremont
+   - Favorite Coffee shop: Milstead
 1. Capitol Hill
+   - Favorite Coffee shop: Victrola on 15th
 1. Ballard
 
 Hikes:
