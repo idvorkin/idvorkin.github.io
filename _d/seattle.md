@@ -30,8 +30,9 @@ Hikes:
 4. Little Si- Easier day hike
 5. Mount Si - Serious Hike
 
-Caves/Tunnels
+If you have a free day, a car, and a desire to do something amazing outside
 
+1. In Mt. Rainier national park - Paradise to Sunrise is one of the most amazing scenic drives ever
 1. [Ape Caves](https://www.wta.org/go-hiking/hikes/ape-cave) - Pretty amazing , pitch black lava tubes. Very amazing experience.
 1. [Railroad tunnel](https://www.wta.org/go-hiking/hikes/iron-horse-tunnel) - Pitch black rail road tunnel fun for a bike ride.
 
@@ -52,6 +53,7 @@ Beaches:
 
 Parks:
 
+1. Kerry Park (Its where all the space needle post card photos are from)
 1. Olympic Sculpture Park and [vivarium](https://art.seattleartmuseum.org/objects/32046/neukom-vivarium)
 1. Arboretum (+Japanese Garden)
 1. Interlaken
