@@ -20,9 +20,15 @@ By Neighborhood:
 
 1. Fremont
    - Favorite Coffee shop: Milstead
+   - Retro Arcarde: [Add a ball](https://add-a-ball.com/)
 1. Capitol Hill
    - Favorite Coffee shop: Victrola on 15th
+   - Crazy bar: [The unicorn](https://www.unicornseattle.com/)
 1. Ballard
+   - I don't get there often enough to make a recommendation
+1. Bellevue
+   - I tend not to be on the east side, but if you're downtown bellevue
+   - Favorite Coffee shop: [Cafe Cesura](https://www.cafecesura.com/)
 
 Hikes:
 
