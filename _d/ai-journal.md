@@ -10,6 +10,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 <!-- vim-markdown-toc GFM -->
 
 - [Visualization](#visualization)
+- [Blog to bot](#blog-to-bot)
 - [Text to speech our friends](#text-to-speech-our-friends)
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [Diary](#diary)
@@ -26,6 +27,27 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 <!-- prettier-ignore-end -->
 
 ## Visualization
+
+## Blog to bot
+
+Join the [discord here](https://discord.gg/S2s24P6JtU), and then just '/ask'. See the source [on github](https://github.com/idvorkin/nlp/blob/d9f24b7aa5a046f78147c2e53144a9258c91894f/qa_blog.py?plain=1#L393)
+Standard workflow,
+chunk blog -> Embeddig(chunk) -> vector DB <- Retrieve <- Project Inject <- Rago
+this begs the Q what to chuk, and how to chunk it
+
+Useful features:
+
+- ☐ Do an offline evaluation model for various retrieval approaches.
+- ☑ Give the answer
+- ☑ Link back to specific pages
+- Link back to the specific anchors
+- TBD Ask follow up questiosn
+
+Open Questions
+
+- Does back link data help?
+- Does a smarter retrieval strategy help?
+- Play w/cRAG?
 
 ## Text to speech our friends
 
