@@ -184,7 +184,8 @@
         "/wlb": "/sustainable-work",
         "/wlb-manifesto": "/sustainable-work",
         "/work-life-balance": "/sustainable-work",
-        "/write": "/writing"
+        "/write": "/writing",
+        "/y2024": "/y24"
     },
     "url_info": {
         "/22": {
@@ -433,7 +434,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-bestie.md",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/ai-paper": {
             "py/object": "__main__.Page",
@@ -446,6 +447,20 @@
             "redirect_url": "",
             "markdown_path": "_d/ai_papers.md",
             "doc_size": 13000
+        },
+        "/ai-testing": {
+            "py/object": "__main__.Page",
+            "url": "/ai-testing",
+            "title": "Testing AI",
+            "description": "Testing math is easy, it’s right or wrong. Test spelling is easy too, but if an essay is good is much harder. Lets talk about how to test AI\n\n",
+            "file_path": "_site/ai-testing.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/testing"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/ai-testing.md",
+            "doc_size": 11000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -1407,6 +1422,22 @@
             "markdown_path": "_d/time-off-2023-11.md",
             "doc_size": 14000
         },
+        "/d/time-off-2024-08": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2024-08",
+            "title": "Time off August 2024",
+            "description": "I’m incredibly fortunate to be able to take 6 weeks off this summer! From when performance reviews finish to when the kids go back to school, it’ll be summer vacation.\n\n",
+            "file_path": "_site/d/time-off-2024-08.html",
+            "outgoing_links": [
+                "/happy",
+                "/moments",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2024-08.md",
+            "doc_size": 16000
+        },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
             "url": "/d/where-have-all-the-bugs-gone",
@@ -2075,6 +2106,7 @@
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
                 "/d/time-off-2023-11",
+                "/d/time-off-2024-08",
                 "/hobby",
                 "/joy",
                 "/siy",
@@ -2373,7 +2405,8 @@
             ],
             "incoming_links": [
                 "/42",
-                "/death"
+                "/death",
+                "/y24"
             ],
             "redirect_url": "",
             "markdown_path": "_d/last-year.md",
@@ -2487,7 +2520,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 135000
+            "doc_size": 136000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -2532,7 +2565,8 @@
                 "/idle",
                 "/mind-monsters",
                 "/psychic-weight",
-                "/shame"
+                "/shame",
+                "/y24"
             ],
             "redirect_url": "",
             "markdown_path": "_d/mental-pain.md",
@@ -2651,6 +2685,7 @@
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
                 "/d/time-off-2023-11",
+                "/d/time-off-2024-08",
                 "/happy",
                 "/moments-at-work",
                 "/random-idea"
@@ -3101,13 +3136,13 @@
             "py/object": "__main__.Page",
             "url": "/seattle",
             "title": "Seattle",
-            "description": "I want to die in Seattle, not soon, but a great place to live. Here’s some ideas if you’re visisting\n\n",
+            "description": "Seattle is my home, I want to die here, though not soon. If you’re visiting, here’s a list of fun things you can try. But here’s the deal, give me feedback of stuff to add/remove from this list\n\n",
             "file_path": "_site/seattle.html",
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/seattle.md",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/sell": {
             "py/object": "__main__.Page",
@@ -3779,6 +3814,7 @@
             "description": "If it’s not tested, it doesn’t work’.’ When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you’ve got more work to do\n\n",
             "file_path": "_site/testing.html",
             "outgoing_links": [
+                "/ai-testing",
                 "/design"
             ],
             "incoming_links": [
@@ -3786,7 +3822,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/testing.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/The-Genesis-Node": {
             "py/object": "__main__.Page",
@@ -3820,7 +3856,7 @@
             "py/object": "__main__.Page",
             "url": "/timeoff",
             "title": "Getting the most out of time off",
-            "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
+            "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
             "file_path": "_site/timeoff.html",
             "outgoing_links": [
                 "/addiction",
@@ -3845,6 +3881,7 @@
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
                 "/d/time-off-2023-11",
+                "/d/time-off-2024-08",
                 "/mind-at-work",
                 "/parkinson"
             ],
@@ -4022,7 +4059,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-11-25-what-makes-a-leader-great.md",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/why-is-no-one-referring": {
             "py/object": "__main__.Page",
@@ -4102,18 +4139,20 @@
             "py/object": "__main__.Page",
             "url": "/y24",
             "title": "Igor's plan for 2024",
-            "description": "I like to begin in mind, so let’s write a report for 2024.\n\n",
+            "description": "I like to begin in mind, so let’s write a report for 2024. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
             "file_path": "_site/y24.html",
             "outgoing_links": [
                 "/42",
                 "/ai-bestie",
+                "/last-year",
                 "/manager-book",
+                "/mental-pain",
                 "/write-book"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/y2024.md",
-            "doc_size": 11000
+            "doc_size": 15000
         }
     }
 }

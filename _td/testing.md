@@ -29,6 +29,7 @@ If it's not tested, it doesn't work'.' When your tests passing lets you deploy w
     - [The role of a QA team](#the-role-of-a-qa-team)
     - [Cost of tests vs cost of development](#cost-of-tests-vs-cost-of-development)
     - [Cost to change the tests](#cost-to-change-the-tests)
+    - [AI Testing](#ai-testing)
 - [Great books](#great-books)
 
 <!-- vim-markdown-toc -->
@@ -65,7 +66,7 @@ To enable this, create a [humble object](http://xunitpatterns.com/Humble%20Objec
 
 _Extract all the logic from the hard-to-test component into a component that is testable via synchronous tests. This component implements a service interface consisting of methods that expose all the logic of the untestable component; the only difference is that they are accessible via synchronous method calls. As a result, the Humble Object component becomes a very thin adapter layer that contains very little code. Each time the Humble Object is called by the framework, it delegates to the testable component. If the testable component needs any information from the context, the Humble Object is responsible for retrieving it and passing it to the testable component. The Humble Object code is typically so simple that we often don't bother writing tests for it because it can be quite difficult to set up the environment need to run it._
 
-### Unit Tests - The code does what the developer wants.
+### Unit Tests - The code does what the developer wants
 
 Back in the 2000s, "amazing developers" walked through all their code in the debugger to make sure it was doing what was expected. But like all manual activities this gets dreary, error prone and skipped. Instead, write unit tests to ensure your code works as you expect.
 
@@ -113,6 +114,10 @@ Examples:
 ### Cost of tests vs cost of development
 
 ### Cost to change the tests
+
+### AI Testing
+
+{%include summarize-page.html src="/ai-testing" %}
 
 ## Great books
 
