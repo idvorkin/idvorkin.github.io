@@ -17,12 +17,9 @@ alias:
   - /timeoff
 ---
 
-Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action packed tour of disneyland. But, there are other kinds of time off that we'll discuss too. Like most things time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
+Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we'll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
 
 <!-- prettier-ignore-start -->
-
-
-
 
 <!-- vim-markdown-toc GFM -->
 
@@ -43,7 +40,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 - [Making the most out of staycation](#making-the-most-out-of-staycation)
 - [Igor's Personal combined learnings](#igors-personal-combined-learnings)
     - [Before you go](#before-you-go)
-    - [Every other day checkin](#every-other-day-checkin)
+    - [Every other day check-in](#every-other-day-check-in)
     - [Physical Health](#physical-health)
     - [Emotional Health](#emotional-health)
     - [Identity Health](#identity-health)
@@ -58,9 +55,9 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 
 ## The phases of time off
 
-{%include local_image_float_right.html src="raccoon-vacation.png" %}
+{% include local_image_float_right.html src="raccoon-vacation.png" %}
 
-A common questions is should you take 2 short vacations or 1 long one. That's a tough choice. I'm not sure I have an opinion on that, but I've learned my time off goes through a few phases, and I suspect there's a fixed time component, and if I can better understand the phases, I can better spend my time off.
+A common question is should you take 2 short vacations or 1 long one. That's a tough choice. I'm not sure I have an opinion on that, but I've learned my time off goes through a few phases, and I suspect there's a fixed time component, and if I can better understand the phases, I can better spend my time off.
 
 1. Vegetation - Getting over being tired.
 1. TODO list - Cross those small things you've been putting off your TODO list
@@ -81,23 +78,23 @@ When you're recharged, feel satisfied that enough is off your todo list, and are
 
 ## Very Vegetating
 
-Vegetation comes in few flavors. 1) Ignoring your responsibilities and task list 2) Ignoring your habits and discipline 3) Being selfish and ignoring your friends and family.
+Vegetation comes in a few flavors. 1) Ignoring your responsibilities and task list 2) Ignoring your habits and discipline 3) Being selfish and ignoring your friends and family.
 
 I think it's fair to ignore your responsibility and task list - you deserve it.
 
-You likely think your habits and discipline are a burden, and that you deserve to ignore them. Except, that's the [resistance](/resistance) lying to you! Your habits, while time negative (barely) are net energy positive, and if you skip them, you'll not only have less energy, but you'll feel worse, a double whammy.
+You likely think your habits and discipline are a burden, and that you deserve to ignore them. Except, that's the [resistance](/resistance) lying to you! Your habits, while time-negative (barely) are net energy positive, and if you skip them, you'll not only have less energy, but you'll feel worse, a double whammy.
 
-Ignoring Friends and Family - This flavor is the least clear cut. Your family and friends want to enjoy themselves, but you also need alone time, I think the best balance is finding a fair balance, and then setting expectations and honoring them. See the "Managing family expectations section.
+Ignoring Friends and Family - This flavor is the least clear-cut. Your family and friends want to enjoy themselves, but you also need alone time, I think the best balance is finding a fair balance, and then setting expectations and honoring them. See the "Managing family expectations section.
 
 So, on behalf of future you, when you want to vegetate, let go of your responsibilities, but don't skip your positive habits!
 
 In recap:
 
-| You want to skip                | Future you recommends                                   |
-| ------------------------------- | ------------------------------------------------------- |
-| Tasks and responsibilities      | Ignore 'em you deserve it                               |
-| Habits, exercise and discipline | Do them, you'll have more energy to enjoy your vacation |
-| Your friends and family         | Seek balance, Set expectations, and honor them          |
+| You want to skip                 | Future you recommends                                   |
+| -------------------------------- | ------------------------------------------------------- |
+| Tasks and responsibilities       | Ignore 'em you deserve it                               |
+| Habits, exercise, and discipline | Do them, you'll have more energy to enjoy your vacation |
+| Your friends and family          | Seek balance, Set expectations, and honor them          |
 
 ## Powerful Personal Development
 
@@ -117,13 +114,13 @@ Even though getting to do what you love is awesome, you still want to love your 
 
 ### Time box vegetation
 
-Acknowledge you deserve to vegetate, and give your self a day or 2 guilt free. At the end of the prescribed limit, start to fight the resistance.
+Acknowledge you deserve to vegetate, and give yourself a day or 2 guilt-free. At the end of the prescribed limit, start to fight the resistance.
 
 ### Strategize against the resistance
 
-You can fight the [resistance](/resistance) by making your [addictions](/addictions) harder. For me that means uinstall TikTok.
+You can fight the [resistance](/resistance) by making your [addictions](/addictions) harder. For me, that means uninstall TikTok.
 
-And by making your positive habits easier. For me, this includes writing up a time off todo list (see notes linking to this), rembering what my good habits are, and how much better I feel when I do them. And then running a habit app to make sure I'm doing them.
+And by making your positive habits easier. For me, this includes writing up a time off todo list (see notes linking to this), remembering what my good habits are, and how much better I feel when I do them. And then running a habit app to make sure I'm doing them.
 
 ### Begin with the end in mind
 
@@ -142,32 +139,32 @@ With staycations, it's especially easy to oscillate between vegetating, grinding
 
 ## Igor's Personal combined learnings
 
-Here are the combined learnigns from my time offs. Igor needs to read and internalize it.
+Here are the combined learnings from my time offs. Igor needs to read and internalize it.
 
 ### Before you go
 
 - Read the travel tips section
 - Pre-writing your desires/goals for time off (see this template).
   - If you begin with the end in mind you can get it done
-  - Then you need to check in and review tune over time
-  - Don't over do your todo list, after all you should get a break too.
+  - Then you need to check-in and review tune over time
+  - Don't overdo your todo list, after all, you should get a break too.
 - Wrap up everything before you go.
   - Got done everything I needed at work the week before so had no work baggage.
   - Load up your todo list for when you're back and trust you'll come back and get back
 - Visualize the battle of the resistance, prepare mentally to avoid it.
-  - If I don't force my self to maintain my habits, and stay balanced - I won't (I did zero magic).
-  - Decide when you'll check in with your plans.
+  - If I don't force myself to maintain my habits, and stay balanced - I won't (I did zero magic).
+  - Decide when you'll check-in with your plans.
 - Create a won't do list
   - I can get sucked into programming, but I want to avoid it.
-- Write up your phychic Weight
+- Write up your psychic Weight
   - Just naming it helps you get it under control.
 
-### Every other day checkin
+### Every other day check-in
 
 - **Refresh** - Re-read these learnings and your time off priority list.
-- **Know your real riches** - Is anything more valuable then satisfiaction and health? Probably not. Remember that.
+- **Know your real riches** - Is anything more valuable than satisfaction and health? Probably not. Remember that.
 - **Pay yourself first, do the habits** - gives you the energy and strength for everything else.
-  - If I don't force my self to maintain my habits, and stay balanced - I won't
+  - If I don't force myself to maintain my habits, and stay balanced - I won't
   - Don't skip habits, they give you the energy
   - Make sure to do magic
   - Make sure to do hot tub
@@ -183,40 +180,40 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
   - Before family wakes up
   - Tell family the plans so they aren't surprised and expectations are set.
   - Tech/content time before the kids wake up is totally fine.
-- **Handle the todo's and physic weight early**
+- **Handle the todo's and psychic weight early**
   - Get the todo items done, or scheduled so they aren't dragging you down.
   - See what else is stressing you and finish it.
-  - Check in on pychic weight and decide if you should be doing it or not.
-- **Am I getting enough relationship time vs self time** - Your family and relationships are precious be sure to nuruture them ,but also need time for self (and so do others
+  - Check in on psychic weight and decide if you should be doing it or not.
+- **Am I getting enough relationship time vs self-time** - Your family and relationships are precious be sure to nurture them, but also need time for self (and so do others)
 
 ### Physical Health
 
-- **Nothing tastes as good as skinny feels** - So true, regardless of metric: feeling great, looking great.
+- **Nothing tastes as good as skinny feels** - So true, regardless of the metric: feeling great, looking great.
 - **No booze** - Those days are over for me. Messes up my sleep and I Feel worse. Go take a cold shower instead.
-- **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membereship with GoodLife, let me do my top pirorities daily, even had a massage chair.
+- **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membership with GoodLife, let me do my top priorities daily, even had a massage chair.
 
-- **Bring bands, light gym equipment** - Have everything to stretch and self massage, and light workouts
+- **Bring bands, light gym equipment** - Have everything to stretch and self-massage, and light workouts
 
   - Heavy bands/light bands; Peanut ball; Harsh foam roller; Gripper (need it for my wrist)
 
-- **Do extra streches/cardio** - Remember energy positive, and keeps you injury free.
+- **Do extra stretches/cardio** - Remember energy positive, and keeps you injury-free.
 
 - **Bring stuff to help you eat healthy**
-  - Bring the micowavable popcorn popper and instant soup. These are some of my favorite low calorie foods.
+  - Bring the microwavable popcorn popper and instant soup. These are some of my favorite low-calorie foods.
   - Bring a travel scale - that mindfulness around weight is great.
 
 ### Emotional Health
 
-- - **Pay yourself first** - Make time for yourself in the morning, go to bed early and get coffee shop time, gratefulness journal, meditation etc. This grounds me through the day, and gives me the calmness I need and a chance to figure out the essential.
+- **Pay yourself first** - Make time for yourself in the morning, go to bed early and get coffee shop time, gratefulness journal, meditation etc. This grounds me through the day, and gives me the calmness I need and a chance to figure out the essential.
 - **Slack** - Have lots of slack (See [Essential](/essential)).
-  - Made time with my family much more enjoyable when I wasn't in a rush and sucecess was being with them.
+  - Made time with my family much more enjoyable when I wasn't in a rush and success was being with them.
   - Same with going to the airport, got there hours early. Didn't matter that got stuck at the car rental return. Didn't matter that my flight got delayed, can write, meditate do some inner work.
 - **Continuous learning** - Always a learning opportunity, learn what needs to be learned and move on.
-- **Don't berate mistakes** - Getting off the plane, it was super bright in Toronto. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I hav ean abilityt o squint. Nothing terrible happens.
-  - TODO: Add a note on caring vs mattering. Caring is your emotional response(un avoidable), but mattering is the objective difference it makes to whom, and over what time period.
-- **Don't catasrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to checkout car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forced check bags would be lost forever. It wasn't, it was right there. And as a result of waiting for it, I ended up meeting a really cool person.
+- **Don't berate mistakes** - Getting off the plane, it was super bright in Toronto. I opened my sunglasses case, and turns out I brought a second pair of glasses. OMG, I'll be blind, this will be terrible. Meh, was on the beach 20 hours over the weekend, was fine, turns out I have an ability to squint. Nothing terrible happens.
+  - TODO: Add a note on caring vs mattering. Caring is your emotional response(unavoidable), but mattering is the objective difference it makes to whom, and over what time period.
+- **Don't catastrophize** - On the flight down realized I didn't bring the credit card on which I booked the car, and need to use for insurance. Thought would need it to check out the car. Freaked out a bit, got there - turns out it was totally fine. Also though I'd lost my popcorn popper, and balloon pump, and laptop - I didn't. Also thought my forced check bags would be lost forever. It wasn't, it was right there. And as a result of waiting for it, I ended up meeting a really cool person.
 - **Stop panicking and think** - Turns out my friend was flying into Toronto, so got him to bring my sunglasses.
-- **Don't fret micro optimizations** - From Belleville to Hamilon, I spent lots of time trying to figure out what time I'd arrive, what order of gym/work/sister/lunch I'd tackle, trying to micro optimize, spent lots of cycles. Turned out, didn't matter at all.
+- **Don't fret micro-optimizations** - From Belleville to Hamilton, I spent lots of time trying to figure out what time I'd arrive, what order of gym/work/sister/lunch I'd tackle, trying to micro-optimize, spent lots of cycles. Turned out, didn't matter at all.
 - **Remember The [Sublime states](/siy)** - Loving Kindness; Compassion; Altruistic Joy; Equanimity
 
 ### Identity Health
@@ -229,7 +226,7 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 ### Travel Tips - Before you go
 
 - Booking flights
-  - More leg room is usually worth paying for
+  - More legroom is usually worth paying for
   - Don't get seats in front of emergency exit
   - Just get wifi for flights over 3 hours, don't agonize
 - Rental car
@@ -240,33 +237,33 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 - Make a leave list (Notion)
   - Pack my chargers
   - Put Masks in Bag
-    - Sun glasses
+    - Sunglasses
     - Selfie Stick
   - Make sure batteries are fully charged before leaving
   - Leave for the airport 3 hours early (have lots of slack)
 - Luggage:
-  - Bags on carry on clip together
+  - Bags on carry-on clip together
   - Bring luggage compression straps.
     - **I have an extra pocket in my suitcase**
-  - Lost my popcorn popper and my baloon pump and my laptop. Turns out in the extra pocket, I forgot.
+  - Lost my popcorn popper and my balloon pump and my laptop. Turns out in the extra pocket, I forgot.
 - Airport
-  - Hanging at the airport early is totally fine - don't worry it's better then being there late.
+  - Hanging at the airport early is totally fine - don't worry it's better than being there late.
   - Bring power bars
   - Don't drink too much
   - Take Sudafed
   - Get AirPlugs
-  - Get Nexus/Frequent Traveller card (well worth the 100 bucks)
+  - Get Nexus/Frequent Traveler card (well worth the 100 bucks)
   - Carry a bag with bands and foam roller
   - Get out your balloon inflator and make balloons for kids
 - Take time to think through daily routines, and when you'll do them
   - Ad hoc doesn't work
-- Re pack day bag
+- Re-pack day bag
   - Don't haul around stuff you won't use it
-- If you forget stuff, just buy it from walmart instead of suffering
+- If you forget stuff, just buy it from Walmart instead of suffering
 - AirTags for everything
 - Have a good packing of keys wallet so don't worry about losing (Fanny pack)
 - Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
-- For the stuff I forget - Just go to walmart/target and buy it. It's basically disposable.
+- For the stuff I forget - Just go to Walmart/target and buy it. It's basically disposable.
 
 ### Other learnings
 
@@ -281,7 +278,7 @@ Here are the combined learnigns from my time offs. Igor needs to read and intern
 Need to explore further, from [this study](https://www.apa.org/pubs/journals/releases/psp-pspp0000391.pdf):
 
 _Many people living in modern society feel like they do not have enough time and are constantly searching
-for more. But is having limited discretionary time actually detrimental? And can there be downsides of having too much discretionary time? We find a negative quadratic relationship between discretionary time and subjective well-being. These results show that having too little time is indeed linked to lower subjective well-being caused by stress, having more time does not continually translate to greater subjective well-being._
+for more. But is having limited discretionary time actually detrimental? And can there be downsides to having too much discretionary time? We find a negative quadratic relationship between discretionary time and subjective well-being. These results show that having too little time is indeed linked to lower subjective well-being caused by stress, having more time does not continually translate to greater subjective well-being._
 
 _Having an abundance of discretionary time is sometimes even linked to lower subjective well-being because of a lacking sense of productivity. In such cases, the negative effect of having too much
 discretionary time can be attenuated when people spend this time on productive activities._
