@@ -74,4 +74,4 @@ By Classic Tourist Attration
 
 Stuff to skip:
 
-1. First Starbucks - just a crappy coffee [shop](shop.md)
+1. First Starbucks - just a crappy coffee shop

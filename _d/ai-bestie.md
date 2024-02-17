@@ -13,6 +13,7 @@ My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75
 <!-- vim-markdown-toc GFM -->
 
 - [Simulation](#simulation)
+    - [Idea: Inject Recent chat history](#idea-inject-recent-chat-history)
     - [Attempt #1: Prompt GPT to simulate with lots of example text](#attempt-1-prompt-gpt-to-simulate-with-lots-of-example-text)
     - [Attempt #2: Use that data to do the training](#attempt-2-use-that-data-to-do-the-training)
     - [Style vs Substance](#style-vs-substance)
@@ -21,6 +22,7 @@ My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75
     - [Useful links](#useful-links)
     - [Observation](#observation)
 - [Embodiement](#embodiement)
+    - [Discord Bot](#discord-bot)
     - [Voice of our friends](#voice-of-our-friends)
     - [Video of our friends](#video-of-our-friends)
 - [Appendix](#appendix)
@@ -33,6 +35,12 @@ My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75
 ## Simulation
 
 Playing around with [a bestie simulator](https://python.langchain.com/docs/integrations/chat_loaders/facebook)
+
+### Idea: Inject Recent chat history
+
+I've been thinking about how to inject "state", perhaps the easiest thing is just injet our last few days of discusion. Need to do the math on how much room I have in the prompt ...
+
+Can also use semantic summarization if that's too big
 
 ### Attempt #1: Prompt GPT to simulate with lots of example text
 
@@ -110,6 +118,10 @@ Here are some models I fine tuned in case you get access to them
 - I suspect the conversation gets weird if theirs too much history, as people change. Not knowing when something happens (a decay) on the training data is important. So can address by limiting to latest history
 
 ## Embodiement
+
+### Discord Bot
+
+Having the inteface be discord is great. Easy and fun
 
 ### Voice of our friends
 
