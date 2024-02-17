@@ -45,6 +45,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Batch vs Online](#batch-vs-online)
     - [Instance vs Model](#instance-vs-model)
 - [How to measure the effectiveness of ML by problem category](#how-to-measure-the-effectiveness-of-ml-by-problem-category)
+    - [AI Testing](#ai-testing)
     - [Regression - Distance from predication to actual](#regression---distance-from-predication-to-actual)
     - [Classification - Precision and Recall](#classification---precision-and-recall)
     - [Clustering - its complicated](#clustering---its-complicated)
@@ -217,6 +218,10 @@ Because programming tends not to be probabilistic, we tend not to measure effect
 Similarly to measure effectiveness you need to use a standard data set. Also "good values" is a function of the data set and domain. E.g. a precision of 99% is OK on the MINST data set, but 50% fantastic good on a handwriting recognition dataset.
 
 The class of problem being solved determines the effectiveness of ML. To measure effectiveness, you must do so over a dataset.
+
+### AI Testing
+
+{%include summarize-page.html src="/ai-testing" %}
 
 ### Regression - Distance from predication to actual
 
