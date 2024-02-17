@@ -13,16 +13,14 @@ tags:
 
 Emotional intelligence (EI) is the crux of leadership. EI is comprised of Self-Awareness, Self-Regulation, Motivation, Empathy and Social Skills. This is a summary of Dan Goleman's [What makes a leader](https://hbr.org/2004/01/what-makes-a-leader). Before we begin, here's a consulting 2x2 grid:
 
-![EI-4x4.png](/images/emotional-intelligence-2x2.jpg)
-
 ```mermaid
 quadrantChart
   x-axis Awareness  --> Influence
   y-axis "Those around you" --> Self
   quadrant-1 "Self Regulation "
   quadrant-2 "Self Awareness"
-  quadrant-3 Motivation
-  quadrant-4 Empathy
+  quadrant-3 Empathy
+  quadrant-4 Motivation
 ```
 
 **Self-awareness:** Knowing one's emotions, strengths, weaknesses, drives, values, and goals—and their impact on others
