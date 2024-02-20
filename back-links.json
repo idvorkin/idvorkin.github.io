@@ -110,8 +110,8 @@
         "/makesmile": "/joy",
         "/manager": "/being-a-great-manager",
         "/mechanism": "/upstream",
-        "/meditate": "/siy",
-        "/meditation": "/siy",
+        "/meditate": "/sublime",
+        "/meditation": "/sublime",
         "/mental-break-down": "/depression",
         "/monsters": "/mind-monsters",
         "/mortality": "/death",
@@ -151,7 +151,7 @@
         "/saving": "/money",
         "/savings": "/money",
         "/savor": "/happy",
-        "/search-inside-yourself": "/siy",
+        "/search-inside-yourself": "/sublime",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
         "/stages": "/chapters",
@@ -739,7 +739,7 @@
                 "/getting-to-yes-with-yourself",
                 "/gtd",
                 "/humans-are-underrated",
-                "/siy"
+                "/sublime"
             ],
             "incoming_links": [
                 "/being-a-great-manager",
@@ -894,7 +894,7 @@
                 "/manager-book",
                 "/pride",
                 "/prompts",
-                "/siy"
+                "/sublime"
             ],
             "incoming_links": [
                 "/being-a-great-manager",
@@ -1238,7 +1238,7 @@
             "outgoing_links": [
                 "/frog",
                 "/money",
-                "/siy",
+                "/sublime",
                 "/timeoff"
             ],
             "incoming_links": [],
@@ -1685,7 +1685,7 @@
             "outgoing_links": [
                 "/joy",
                 "/sharpen-the-saw",
-                "/siy",
+                "/sublime",
                 "/touching",
                 "/voices"
             ],
@@ -1695,7 +1695,8 @@
                 "/mind-at-work",
                 "/operating-manual",
                 "/sharpen-the-saw",
-                "/siy"
+                "/siy",
+                "/sublime"
             ],
             "redirect_url": "",
             "markdown_path": "_d/emotional-health-hold.md",
@@ -2389,7 +2390,7 @@
                 "/happy",
                 "/hobby",
                 "/magic",
-                "/siy"
+                "/sublime"
             ],
             "redirect_url": "",
             "markdown_path": "_d/joy.md",
@@ -3233,20 +3234,15 @@
                 "/end-in-mind",
                 "/happy",
                 "/ig66/685",
-                "/joy",
                 "/mind-monsters",
-                "/touching",
+                "/sublime",
                 "/what-makes-a-leader"
             ],
             "incoming_links": [
                 "/anxiety-management",
                 "/be-proactive",
-                "/books-that-defined-me",
-                "/coaching",
                 "/curious",
-                "/d/time-off-2020-03",
                 "/depression",
-                "/emotional-health",
                 "/eulogy",
                 "/first-understand",
                 "/idle",
@@ -3257,7 +3253,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/siy.md",
-            "doc_size": 59000
+            "doc_size": 56000
         },
         "/sleeping-bag-sacrifies": {
             "py/object": "__main__.Page",
@@ -3364,6 +3360,28 @@
             "redirect_url": "",
             "markdown_path": "_posts/2018-05-25-strength-finder.md",
             "doc_size": 18000
+        },
+        "/sublime": {
+            "py/object": "__main__.Page",
+            "url": "/sublime",
+            "title": "Search inside yourself",
+            "description": "Emotional healths is pretty important. Western folks don’t have a lot of words to support this budhists have the sublime states: Loving kindness, Compassion, Altrustistic Joy and Equanimity. Give ‘em a try. Most of this is based on “The Joy of Happiness”.\n\n",
+            "file_path": "_site/sublime.html",
+            "outgoing_links": [
+                "/emotional-health",
+                "/joy",
+                "/touching"
+            ],
+            "incoming_links": [
+                "/books-that-defined-me",
+                "/coaching",
+                "/d/time-off-2020-03",
+                "/emotional-health",
+                "/siy"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/sublime.md",
+            "doc_size": 16000
         },
         "/sustainable-work": {
             "py/object": "__main__.Page",
@@ -3937,7 +3955,7 @@
                 "/class-act",
                 "/emotional-health",
                 "/end-in-mind",
-                "/siy"
+                "/sublime"
             ],
             "redirect_url": "",
             "markdown_path": "_d/touching2.md",
