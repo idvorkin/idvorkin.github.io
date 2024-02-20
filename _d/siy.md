@@ -600,6 +600,39 @@ Tools of the trade (Sublime states):
 | Altruistic Joy  | Be happy for [self](/joy) or [other](/touching) bringing joy |
 | Equanimity      | Remaining Calm, regardless of circumstance                   |
 
+| State           | Informal Practice |
+| --------------- | ----------------- |
+| Loving Kindness | [l20](l20)        |
+| Compassion      | [l21](l21)        |
+| Altruistic Joy  | [l22](l22)        |
+| Equanimity      | [l23](l23)        |
+| --------------  | --------------    |
+
+<div> </div>
+- l20
+- **Loving Thoughts**: Make it a habit to silently wish happiness, safety, and well-being for people you interact with or think about, including strangers you pass on the street. (Happy guyn - Pew Pew)
+- **Everyday Kindness**: Practice small acts of kindness throughout your day. This could be as simple as offering a smile, giving a sincere compliment, or helping someone in a small way. These actions cultivate a habit of kindness.
+
+<div> </div>
+- l21
+- **Empathetic Listening**: When talking to someone, especially if they're sharing difficulties, practice fully listening with the intention to understand and empathize, rather than to respond. This fosters a deeper connection and compassion.
+- **Acts of Service:** Look for opportunities to alleviate others' suffering through acts of service, whether it's through volunteering, supporting a friend in need, or any gesture that can ease someone's burden.
+
+<div> </div>
+- l22
+- **Appreciate Others:** Make a conscious effort to celebrate others' successes and joys, no matter how big or small. This can be through congratulatory messages, sharing in their excitement, or simply acknowledging their happiness.
+- **Mindful Appreciation:** Notice and appreciate the good in those around you and in your own life. Acknowledging the positive aspects can enhance your capacity for joy.
+- When doing something altruistic, think I am being altruistic, this makes me happy
+- When seeing someone being altruistic, there exists a wonderful person in the world, I am happy
+- When someone is doing an altruisitc act, think more good is being done in the world, I am happy
+
+<div> </div>
+- l23
+- **Balanced Response:** Practice maintaining a calm and balanced response to both positive and negative events. This could mean taking a moment to breathe before reacting, helping to cultivate a more equanimous approach to life's ups and downs.
+- **This too shall pass:** Remind yourself of the impermanence of situations, emotions, and life itself. This practice can help cultivate a sense of peace and acceptance, reducing the intensity of attachment and aversion.
+
+<div> </div>
+
 | State           | Enemy          |
 | --------------- | -------------- |
 | Loving Kindness | [l10](l10)     |
@@ -631,11 +664,6 @@ Tools of the trade (Sublime states):
 - Apathy - See, but don't care about the thing
 <div> </div>
 
-**IP: Wishing for random people to be happy**
-
-- Secretely pick two people, and think them happy thought
-- Make a shooting sound to make it joyful (pew, pew)
-
 **FP: Attending to the joy of loving-kindness**
 
 - 1m: Bring to mind someone for whom you can feel loving kindness
@@ -661,10 +689,6 @@ Tools of the trade (Sublime states):
 - 2m: Attend to joy if it's present
 
 **IP: Rejoicing in inner goodness and altruistic deeds**
-
-- When doing something altruistic, think I am being altruistic, this makes me happy
-- When seeing someone being altruistic, there exists a wonderful person in the world, I am happy
-- When someone is doing an altruisitc act, think more good is being done in the world, I am happy
 
 ### Working with suffering
 
