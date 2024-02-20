@@ -59,8 +59,7 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 - Bunch of this american life episodes
 - 13 months to the moon when thing blows up.
 - Felix Denis [who was the better man](http://www.felixdennis.com/Poet/The-Better-Man.aspx)
-- A cut store of love:
-  - [This america life Episode 791 - 10 Things I Require About You](https://www.thisamericanlife.org/791/math-or-magic/act-one-18)
+- On Love [America life Episode 791 - 10 Things I Require About You](https://www.thisamericanlife.org/791/math-or-magic/act-one-18)
 
 ### Stuff from my own life
 
