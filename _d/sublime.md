@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Search inside yourself"
-author: "Igor Dvorkin"
+title: "Training the sublime states"
 tags:
   - emotional intelligence
-  - book-notes
 imagefeaturelocal: raccoon-meditate.png
 redirect_from:
   - /search-inside-yourself
@@ -18,6 +16,8 @@ Emotional healths is pretty important. Western folks don't have a lot of words t
 ### Uplift the mind in seconds
 
 Tools of the trade (Sublime states):
+
+{%include local_image_float_right.html src="raccoon-meditate.png" %}
 
 | State           | Definition                                                   |
 | --------------- | ------------------------------------------------------------ |
