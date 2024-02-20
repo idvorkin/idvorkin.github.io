@@ -27,8 +27,8 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
     - [4:30 am wake up (psst - it's really physical health)](#430-am-wake-up-psst---its-really-physical-health)
     - [Formal 20 minute breathing meditation](#formal-20-minute-breathing-meditation)
 - [Future Practices](#future-practices)
-    - [Compassion Check-ins](#compassion-check-ins)
-    - [Informal gap meditation](#informal-gap-meditation)
+    - [Sublime States Training](#sublime-states-training)
+    - [Box breathing](#box-breathing)
     - [Daily Reflective Journal](#daily-reflective-journal)
 - [Inconsistent/Future practices](#inconsistentfuture-practices)
     - [Discontinued Practices](#discontinued-practices)
@@ -82,94 +82,17 @@ I appreciate the sunrise:
 
 ## Future Practices
 
-### Compassion Check-ins
+### Sublime States Training
 
-Compassion is something I'm new at ... here are some great ideas for how to do it, copied from:
+{%include summarize-page.html src="/sublime" %}
 
-<https://idvork.in/siy#uplift-the-mind-in-seconds>
+### Box breathing
 
-Tools of the trade (Sublime states):
+**Why?** It's easy to stuff in anywhere i want
 
-| State           | Definition                                                   |
-| --------------- | ------------------------------------------------------------ |
-| Loving Kindness | Wish for someone to be happy                                 |
-| Compassion      | Wish for someone to be free of suffering                     |
-| Altruistic Joy  | Be happy for [self](/joy) or [other](/touching) bringing joy |
-| Equanimity      | Remaining Calm, regardless of circumstance                   |
+**How?** App on my phone getting me to breathe - in, hold, out, hold. Often do it in the car wearing my eye mask
 
-| State           | Enemy          |
-| --------------- | -------------- |
-| Loving Kindness | [l10](l10)     |
-| Compassion      | [l11](l11)     |
-| Altruistic Joy  | [l12](l12)     |
-| Equanimity      | [l13](l13)     |
-| --------------  | -------------- |
-
-- l10
-- Ill will - the opposite
-- Grasping - If person leaves, no longer love
-- Conditional Love - Only love if they do XYZ
-
-<div> </div>
-- l11
-- Cruelty - The opposite
-- Pity - Feeling superior, re-inforces ego.
-- Grief/Despair - Need to have hope of inspired future.
-
-<div> </div>
-- l12
-- Envy - The opposite
-- Relative to me - It’s good because it’s good for me.
-- Unwholesome Joy - Feel happy for someone because on drugs or cheating someone
-<div> </div>
-- l13
-- Anxiety/Craving/Hatred/Anger The opposite
-- Disengagement - Ignoring the thing we don't want to see
-- Apathy - See, but don't care about the thing
-<div> </div>
-
-**IP: Wishing for random people to be happy**
-
-- Secretely pick two people, and think them happy thought
-- Make a shooting sound to make it joyful (pew, pew)
-
-**FP: Attending to the joy of loving-kindness**
-
-- 1m: Bring to mind someone for whom you can feel loving kindness
-  - See if loving kindness arise
-  - If it does, focus on it.
-- Repeat for 3 reps
-- Feel free to change sets and reps
-
-**FP: Cultivating compassion through peace, joy, and kindness**
-
-- 2m: Settle the mind
-- 2m: Attend to joy
-- 2m: Do loving kindness from above
-- Anytime: When selfless love arises, attend to it. - 2m: Settle the mind
-
-**FP: Uplifting and settling the mind with altruistic joy**
-
-- 2m: Uplift the mind
-  - think of persom for whom you've brought altruistic intent
-  - Think of the deed, think of intention
-  - Delight in your action
-- 5m: Settle the mind
-- 2m: Attend to joy if it's present
-
-**IP: Rejoicing in inner goodness and altruistic deeds**
-
-- When doing something altruistic, think I am being altruistic, this makes me happy
-- When seeing someone being altruistic, there exists a wonderful person in the world, I am happy
-- When someone is doing an altruisitc act, think more good is being done in the world, I am happy
-
-### Informal gap meditation
-
-**Why?**
-
-**How?**
-
-**How's that working out for you?**
+**How's that working out for you?** Feels good when I do it.
 
 ### Daily Reflective Journal
 

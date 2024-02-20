@@ -1683,10 +1683,8 @@
             "description": "Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I’ve been exploring.\n\n",
             "file_path": "_site/emotional-health.html",
             "outgoing_links": [
-                "/joy",
                 "/sharpen-the-saw",
                 "/sublime",
-                "/touching",
                 "/voices"
             ],
             "incoming_links": [
@@ -1700,7 +1698,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/emotional-health-hold.md",
-            "doc_size": 21000
+            "doc_size": 18000
         },
         "/end-in-mind": {
             "py/object": "__main__.Page",
@@ -2385,7 +2383,6 @@
                 "/affirmations",
                 "/balloon",
                 "/build-bubble-bike",
-                "/emotional-health",
                 "/end-in-mind",
                 "/happy",
                 "/hobby",
@@ -3953,7 +3950,6 @@
             ],
             "incoming_links": [
                 "/class-act",
-                "/emotional-health",
                 "/end-in-mind",
                 "/sublime"
             ],
