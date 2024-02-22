@@ -44,6 +44,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 - [Tech](#tech)
     - [Computers](#computers)
     - [Monitors](#monitors)
+    - [Keyboards](#keyboards)
 - [Camera](#camera)
 - [Virtual Reality - Occulus](#virtual-reality---occulus)
 - [Backyard](#backyard)
@@ -125,7 +126,7 @@ With age comes the need for more accouterments
 
 I don't use this, but it's under my desk. The day I got it and used it, I decided it was a good idea and I should use it more often.
 
-https://www.amazon.com/gp/product/B07KMNVXCT/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+<https://www.amazon.com/gp/product/B07KMNVXCT/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1>
 
 ## [Emotional Health](/emotional-health)
 
@@ -141,11 +142,11 @@ I meditate kneeling (Seiza) and have two benches. Meditation benches are over pr
 
 Even though this is folding, this is my permanent bench:
 
-https://www.bluecony.com/collections/ikuko-meditation-bench
+<https://www.bluecony.com/collections/ikuko-meditation-bench>
 
 This is my portable bench, it's smaller, but less stable, but it does the job:
 
-https://www.simplysitting.com/
+<https://www.simplysitting.com/>
 
 ### Therapist
 
@@ -244,6 +245,30 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 - [Beefy Monitor Stand](https://www.amazon.com/dp/B01BXP9LT6) - If you're getting a good monitor make sure it floats with a pneumatic monitor stand.
 
 {%include amazon.html asin="B01BXP9LT6" %}
+
+### Keyboards
+
+- I had lots of wrist issues from 20 years of typing. If I use a laptop or straight keyboard my wrists hurt on low days. So I need ergo keyboards.
+- I used to use an iconic MS Sculpt, that hasn't been made in forever.
+- I then switched to the Logitech Ergo K860, which is similar and has Bluetooth, but has an annoying number pad.
+- Then I realized, I struggle to rotate my shoulders, and so need a bigger split, and got into the [Kinesis Freestyle (Quiet)](https://kinesis-ergo.com/products/#keyboards)
+  - Pretty awesome having the ability to go really wide - but sucks that it's wired across the split and plugs in over USB A.
+  - Oh, I tried the Kinesis Advantage, I didn't like the ortholinear keyboards.
+- Then I discovered, I can do 2 folding split Bluetooth keyboards, and patch the software to still work with [Karabiner Elements](https://github.com/idvorkin/settings/blob/d37d021f27bdec58dfd9e80fc727d9c00f5c103d/mac/multi_keyboard_sync.json?plain=1#L210), which is what I'm using as my coffee shop setup.
+  - Todo add a photo of this.
+- Bluetooth [Folding Split Keyboard](https://www.amazon.com/iClever-Rechargeable-Bluetooth-Smartphones-IC-BK06/dp/B01JA6HG88) - I have literally bought 9 of these!
+- Notes on mechnical keyboards:
+  - I deliberately decided not to get into mechanical keyboards.
+  - But the Freestyle only comes in mechanical, so I got stuck.
+  - The Advantage Quiet uses linear keys (cherry red), which I rather like much more than clicky.
+  - I continue to try to avoid learning more about mechanical keyboards.
+- Notes on my wrist problems:
+  - Most of my career my wrists would flair for a week or so, I'd wear a brace and be fine in a week.
+  - In 2022, my wrists commpletley gave out (after 24 hours of strait magic practice)
+  - After lots of physical therapy, I discovered I don't have the ability to externally rotate my shoulders,
+  - That's why the split is so helpful.
+  - I did like a year of shoulder work, and now I'm better -thanks for asking!
+  - Also zero grip strength (like I couldn't squeeze 15 lbs, now i do 135)
 
 ## Camera
 
