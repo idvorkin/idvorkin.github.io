@@ -4,10 +4,6 @@ no-render-title: true
 title: iOS Software engineer nomad howto
 ---
 
-_[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/ios-nomad.md)_
-
-# iOS Software engineer nomad howto
-
 So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I'm not sure why you'd want to be such a character, in fact, I'm not sure why I want to be such a character, but I do, and here's how I do it. To be a developer nomad, you better already be a command line wiz. If you're not at an expert at the terminal, vim or Emacs and TMUX - don't even try.
 
 There are three paths - remote development, local development, and hybrid. For all of these you'll need an external keyboard, which I'll also discuss.
@@ -42,24 +38,23 @@ This is the easy way, but you're going to need a good low latency network.
 
 First you need a remote box, I use lightsail. For 10\$ a month I've never run out of CPU or disk. Next you need to be able to connect to the box using SSH, and that requires an ssh client. I use [blink](https://blink.sh/) and couldn't be happier. Great product, great support.
 
-#### ssh super powers - port forwarding and TMUX auto-attach.
+#### ssh super powers - port forwarding and TMUX auto-attach
 
 Because ssh doesn't keep persistent sessions, I use TMUX with an auto reattach script. If you're not doing this, go learn how it's awesome. You should also know about ssh [port forwarding](https://github.com/idvorkin/techdiary#ssh)
 
 My [dot files](https://github.com/idvorkin/settings) should provide some insights on powerful command line tricks. For inspiration, here's what my TMUX sessions look like (press [C-B w](https://github.com/idvorkin/Settings/blob/master/shared/.tmux.conf) to get this view)
 
-```
-(0)   - main: 6 windows (attached)
-(1)   ├>   0: vim* (1 panes) "ip-172-26-8-55"
-(2)   ├>   1: zsh- (1 panes) "ip-172-26-8-55"
-(3)   ├>   2: glances (1 panes) "ip-172-26-8-55"
-(4)   ├> + 3: ntop (2 panes)
-(5)   ├>   7: zsh (1 panes) "ip-172-26-8-55"
-(6)   - servers: 3 windows
-(7)   ├> 0: jekyll blog* (1 panes) "ip-172-26-8-55"
-(8)   ├> 1: techdiary grip- (1 panes) "ip-172-26-8-55"
-(9)   └> 2: jupyter serve (1 panes) "ip-172-26-8-55"
-
+```md
+(0) - main: 6 windows (attached)
+(1) ├> 0: vim* (1 panes) "ip-172-26-8-55"
+(2) ├> 1: zsh- (1 panes) "ip-172-26-8-55"
+(3) ├> 2: glances (1 panes) "ip-172-26-8-55"
+(4) ├> + 3: ntop (2 panes)
+(5) ├> 7: zsh (1 panes) "ip-172-26-8-55"
+(6) - servers: 3 windows
+(7) ├> 0: jekyll blog* (1 panes) "ip-172-26-8-55"
+(8) ├> 1: techdiary grip- (1 panes) "ip-172-26-8-55"
+(9) └> 2: jupyter serve (1 panes) "ip-172-26-8-55"
 ```
 
 (For folks that are considering [MOSH](https://mosh.org/), MOSH has great promise, but the project hasn't been updated in years, and still doesn't support true color. For my needs ssh+TMUX+auto-reconnect is perfect.)
@@ -141,15 +136,20 @@ What is hybrid development? It's remote development when you've got the network 
 
 The main complexity with hybrid development is keeping everything in sync. To do this I keep everything in git, and then run a cron job that's pushing and pulling continuously. My cron job approach is:
 
-https://github.com/idvorkin/Settings/blob/master/shared/cron_git_sync.sh
+<https://github.com/idvorkin/Settings/blob/master/shared/cron_git_sync.sh>
 
 The two gaps here are merge conflicts (which I handle manually), and not syncing on my iPad, which is tricky because I haven't found a way to do a periodic timer to arbitray command execution yet (TK: Holler if you have a good way to do this)
 
-### The external keyboard.
+### The external keyboard
 
 #### The keyboard I use
 
 I'm a huge fan of ergo keyboards. iClever makes a [cheap folding ergo Bluetooth keyboard](https://www.amazon.com/dp/B01JA6HG88/) that support up to 3 devices. I prefer this to all my laptop keyboards.
+
+See more details at
+{%include summarize-page.html src="/irl" %}
+
+{%include blob_image_float_right.html src="blog/dual_keyboard.jpg" %}
 
 #### The iPad stand I use
 
@@ -163,11 +163,11 @@ For remote use, I want something that is light and fits in my bag. I've tried sl
 
 Finally, built into iOS 13.4
 
-#### Back tick to escape.
+#### Back tick to escape
 
 The keyboard I use has backtick where escape should be. In VIM this is super painful iSH and blink have options to flip this. In iVIM you can do a key remap - e.g.
 
-```
+```vim
     :imap ` <C-[>
     :cmap ` <C-[>
 ```
@@ -178,11 +178,11 @@ Slightly off topic, but if you made it this far, you probably care about small b
 
 It's taken me several tries, but [I've concluded](/irl#work-bag) I like the smallest bag possible. I use a 13" macbook pro laptop and an iPad Pro 10" and this is the perfect bag for me:
 
-https://www.amazon.com/gp/product/B07WNPPF72
+<https://www.amazon.com/gp/product/B07WNPPF72>
 
 There's also the horizontal version - which is slightly bigger but also nice:
 
-https://www.amazon.com/gp/product/B07H4QYC2D/
+<https://www.amazon.com/gp/product/B07H4QYC2D/>
 
 ### Related links
 
