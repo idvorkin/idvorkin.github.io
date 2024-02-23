@@ -37,6 +37,7 @@
         "/boss": "/being-a-great-manager",
         "/breathe": "/breath",
         "/breathing": "/breath",
+        "/Business-Model-You": "/bmy",
         "/centenarian": "/last-year",
         "/classact": "/class-act",
         "/coach": "/coaching",
@@ -3634,7 +3635,7 @@
             "py/object": "__main__.Page",
             "url": "/td/ios-nomad",
             "title": "iOS Software engineer nomad howto",
-            "description": "Copied from my GitHub techdiary\n\n",
+            "description": "So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I’m not sure why you’d want to be such a character, in fact, I’m not sure why I want to be such a character, but I do, and here’s how I do it. To be a developer nomad, you better already be a command line wiz. If you’re not at an expert at the terminal, vim or Emacs and TMUX - don’t even try.\n\n",
             "file_path": "_site/td/ios-nomad.html",
             "outgoing_links": [
                 "/irl"
@@ -3645,7 +3646,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/ios-nomad.md",
-            "doc_size": 20000
+            "doc_size": 21000
         },
         "/td/linqpad_from_redshift": {
             "py/object": "__main__.Page",
