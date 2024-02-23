@@ -37,7 +37,6 @@
         "/boss": "/being-a-great-manager",
         "/breathe": "/breath",
         "/breathing": "/breath",
-        "/Business-Model-You": "/bmy",
         "/centenarian": "/last-year",
         "/classact": "/class-act",
         "/coach": "/coaching",
@@ -1423,6 +1422,20 @@
             "markdown_path": "_d/time-off-2023-11.md",
             "doc_size": 14000
         },
+        "/d/time-off-2024-02": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2024-02",
+            "title": "Time off Mid winter break 2024 - Divide and conquer",
+            "description": "It’s mid winter break and I’ve got a week off. I learned I should pre-write these, but I decided (imlicitly, by not applying discipline) to skip it, so I’m starting this at the end of the vacation. This time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.\n\n",
+            "file_path": "_site/d/time-off-2024-02.html",
+            "outgoing_links": [
+                "/tesla"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2024-02.md",
+            "doc_size": 18000
+        },
         "/d/time-off-2024-08": {
             "py/object": "__main__.Page",
             "url": "/d/time-off-2024-08",
@@ -1599,7 +1612,8 @@
             "description": "Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. Exercise, while critical to energy, is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.\n\n",
             "file_path": "_site/diet.html",
             "outgoing_links": [
-                "/physical-health"
+                "/physical-health",
+                "/terzepatide"
             ],
             "incoming_links": [
                 "/42",
@@ -2310,7 +2324,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/irl.md",
-            "doc_size": 45000
+            "doc_size": 48000
         },
         "/job": {
             "py/object": "__main__.Page",
@@ -3810,6 +3824,20 @@
             "markdown_path": "_posts/2017-10-06-tech-health-toys.md",
             "doc_size": 13000
         },
+        "/terzepatide": {
+            "py/object": "__main__.Page",
+            "url": "/terzepatide",
+            "title": "Terzepatide: The magic weight loss shot",
+            "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. For me, will power dominates diet, and terzepatide dominates will power in the domain of stuffing things in your mouth. I started Terzepatide in February 2024, and so far it’s been great.\n\n",
+            "file_path": "_site/terzepatide.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/diet"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/terzepatide.md",
+            "doc_size": 13000
+        },
         "/tesla": {
             "py/object": "__main__.Page",
             "url": "/tesla",
@@ -3819,7 +3847,9 @@
             "outgoing_links": [
                 "/ig66/687"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/d/time-off-2024-02"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/tesla.md",
             "doc_size": 13000
