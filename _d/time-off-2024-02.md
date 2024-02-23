@@ -100,7 +100,9 @@ _This is less new learnings, and more refcounts to existing knowledge_
 
 ### Tori
 
-Private, but we made time to go on a mini-vacation (WOW)!
+Private, but we made time to go on a mini-vacation (WOW)! I'll keep it mostly secret, except
+
+{%include blob_image.html src="blog/pee-end-of-road.png" %}
 
 ### Zach
 
