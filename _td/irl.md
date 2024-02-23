@@ -224,7 +224,6 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 - iPhone Pro
 - iPad Pro
 - Apple Pencil
-- Bluetooth Folding Split Keyboard
 - AirPod Pros
 - Bose QC35 - They're great.
 - Bose 900 - I don't like these. They can't swap through devices.
@@ -248,19 +247,21 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 
 ### Keyboards
 
-- I had lots of wrist issues from 20 years of typing. If I use a laptop or straight keyboard my wrists hurt on low days. So I need ergo keyboards.
-- I used to use an iconic MS Sculpt, that hasn't been made in forever.
-- I then switched to the Logitech Ergo K860, which is similar and has Bluetooth, but has an annoying number pad.
-- Then I realized, I struggle to rotate my shoulders, and so need a bigger split, and got into the [Kinesis Freestyle (Quiet)](https://kinesis-ergo.com/products/#keyboards)
-  - Pretty awesome having the ability to go really wide - but sucks that it's wired across the split and plugs in over USB A.
-  - Oh, I tried the Kinesis Advantage, I didn't like the ortholinear keyboards.
+{%include blob_image_float_right.html src="blog/dual_keyboard.jpg" %}
+
+I had lots of wrist issues from 20 years of typing. If I use a laptop or straight keyboard my wrists hurt on low days. So I need ergo keyboards. Here's the rambling story
+
+- I used to use an iconic MS Sculpt, they stopped making that forever ago, luckily I bought like 6 spares.
+- I switched to the Logitech Ergo K860, which is similar and has Bluetooth, but has an annoying number pad.
+- Then I realized, my wrist pain actually comes not being able to externally rotate my shoulders, and a bigger split (like hands 3 feet apart), would support that, so I got the [Kinesis Freestyle (Quiet)](https://kinesis-ergo.com/products/#keyboards)
+  - Awesome having the ability to go really wide - but sucks that it's wired across the split and plugs in over USB A.
+  - BTW I tried the Kinesis Advantage, I really don't like the ortholinear keyboards.
 - Then I discovered, I can do 2 folding split Bluetooth keyboards, and patch the software to still work with [Karabiner Elements](https://github.com/idvorkin/settings/blob/d37d021f27bdec58dfd9e80fc727d9c00f5c103d/mac/multi_keyboard_sync.json?plain=1#L210), which is what I'm using as my coffee shop setup.
-  - Todo add a photo of this.
 - Bluetooth [Folding Split Keyboard](https://www.amazon.com/iClever-Rechargeable-Bluetooth-Smartphones-IC-BK06/dp/B01JA6HG88) - I have literally bought 9 of these!
 - Notes on mechnical keyboards:
   - I deliberately decided not to get into mechanical keyboards.
   - But the Freestyle only comes in mechanical, so I got stuck.
-  - The Advantage Quiet uses linear keys (cherry red), which I rather like much more than clicky.
+  - The Advantage Quiet uses linear keys (cherry red), which I like much more than clicky.
   - I continue to try to avoid learning more about mechanical keyboards.
 - Notes on my wrist problems:
   - Most of my career my wrists would flair for a week or so, I'd wear a brace and be fine in a week.
@@ -269,6 +270,8 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
   - That's why the split is so helpful.
   - I did like a year of shoulder work, and now I'm better -thanks for asking!
   - Also zero grip strength (like I couldn't squeeze 15 lbs, now i do 135)
+
+My Dual Keyboard
 
 ## Camera
 

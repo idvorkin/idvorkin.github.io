@@ -23,6 +23,7 @@ Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calo
     - [Juice fasting - Fat sick and nearly dead](#juice-fasting---fat-sick-and-nearly-dead)
     - [The weight pledge - down to 149 lbs](#the-weight-pledge---down-to-149-lbs)
     - [Post Corona Virus](#post-corona-virus)
+- [Terzepatide](#terzepatide)
 - [Great lo-cal foods](#great-lo-cal-foods)
     - [Miso soup](#miso-soup)
     - [Radishes/Kimchi/Frozen carrots/Canned baby corn](#radisheskimchifrozen-carrotscanned-baby-corn)
@@ -57,6 +58,10 @@ Maintaing a healthy weight has always been a challenge for me. I was obese as a 
 - Staying low avoiding the in and out transitions
 - Lots of porpcorn
 - Only sads at work.
+
+## Terzepatide
+
+{%include summarize-page.html src="/terzepatide" %}
 
 ## Great lo-cal foods
 

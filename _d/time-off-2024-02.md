@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Time off Mid winter break 2024 - Divide and conquer
+imagefeaturelocal: raccoon-vaccation.png
 ---
 
 It's mid winter break and I've got a week off. I learned I should pre-write these, but I decided (imlicitly, by not applying discipline) to skip it, so I'm starting this at the end of the vacation. This time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.
@@ -61,7 +62,7 @@ My top priorities:
     - [Energy](#energy)
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
-    - [Angry that wasting my vacation, and sacred time with family.](#angry-that-wasting-my-vacation-and-sacred-time-with-family)
+    - [Angry that wasting my vacation, and sacred time with family](#angry-that-wasting-my-vacation-and-sacred-time-with-family)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
