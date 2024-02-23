@@ -24,6 +24,10 @@ Get the mobile charger
 
 ### Charging
 
+{%include blob_image_float_right.html src="blog/tesla_sleep.jpg" %}
+
+**(Protip: Get a pillow, ear plugs, and an eye mask so you can charge yourself while you're charging the Tesla)**
+
 Now the downside. Range and charging. Range is 330 miles, but you probably want AC or Heating and the 330 rating is pretty wishful thinking, so let's take off 20%, now you've got 270 miles. Now you normally only charge to 90%, and never feel safe going under 20%, so your effective range is like 180. That's 3 hours of driving. Totally fine for a day as long as you can charge overnight/at work. You charge 20 real miles an hour, so "filling up" takes 13 hours!!! Hopefully, you're planning a long day at work.
 
 This would make road trips impossible, except there's supercharging. These are like "fast gas stations for Teslas". Fast is relative to 13 hours, not to gasoline cars though, you still need 30 minutes to go from 20%->80%. This is reasonable, I often stop and stretch out for a bit every 3-4 hours anyways. Get lunch or dinner, of course! Except, your restaurant now needs to be walking distance to the supercharging station. There's always something there, but it's nice having a choice.
