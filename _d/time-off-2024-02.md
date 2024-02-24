@@ -2,6 +2,8 @@
 layout: post
 title: Time off Mid winter break 2024 - Divide and conquer
 imagefeaturelocal: raccoon-vaccation.png
+redirect_from:
+  - /time-off-2024-02
 ---
 
 It's mid winter break and I've got a week off. I learned I should pre-write these, but I decided (imlicitly, by not applying discipline) to skip it, so I'm starting this at the end of the vacation. This time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.
