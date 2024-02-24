@@ -2,11 +2,14 @@
 layout: post
 title: "Tony (Tessie) the Tesla"
 permalink: /tesla
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/tesla-juggle.jpg
 ---
 
 I don't like to drive. I don't like to drive so much that I have it in my eulogy. Luckily, this fellow made a car that's optimized to driving you. In August 2023 I treated myself to a Tesla Model Y. It has lots of trade offs, but the key for me is Autopilot (e.g. it driving me)
 
 See [Family Journal 687](/ig66/687)
+
+{%include blob_image_float_right.html src="blog/tesla-juggle.jpg" %}
 
 ### What's auto pilot like
 
@@ -20,7 +23,8 @@ Here's a real "Elon treat". Basically the standard way to do near object collisi
 
 ### Accessories
 
-Get the mobile charger
+- Get the mobile charger
+- Get the tessie app - lets you unlock from your phone and get some better features
 
 ### Charging
 
