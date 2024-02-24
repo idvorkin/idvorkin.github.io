@@ -109,6 +109,9 @@ Private, but we made time to go on a mini-vacation (WOW)! I'll keep it mostly se
 ### Zach
 
 - Read blogpost - Yellow Deli
+
+{%include summarize-page.html src="/yellow-deli" %}
+
 - Did spontaneous musical improv, then took light rail far away and walked home at night, pretty cool.
 - Tonnes of time talking about the knowledge here
 
