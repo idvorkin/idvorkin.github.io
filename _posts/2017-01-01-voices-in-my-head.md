@@ -28,7 +28,7 @@ _(BTW the order below is deliberate, it's the order of the voices I want to talk
 - **Peter** - the performer, loves to juggle and do magic, and be goofy.
 - **Will** - my willpower. Deliberate, strong, and steady.
 - **David** - the Dad. Proud like a MoFo
-- **Gertrude** - My grandmother mind reassuring me that I can take it easy, and I'm doing the best I can.
+- **Gertrude** - My [grandmother mind](/compassion) reassuring me that I can take it easy, and I'm doing the best I can.
 
 ### Positive Players (Need to hire)
 
@@ -52,7 +52,7 @@ On the topic of anxieties
 
 ### Anxieties (Retired)
 
-- **Gary** my desire to gorge instead of eating healthy. Laid off once I started up on [terzepatide](/terzepatide.md)
+- **Gary** my desire to gorge instead of eating healthy. Laid off once I started up on [terzepatide](/terzepatide)
 - **Mo** - my anxiety about money (retired since the stock market went through the roof).
 - **Wilma** - my end of month anxiety around hitting my weight goals (Retired since I stopped this habit, but I should probably bring it back ;))
 
