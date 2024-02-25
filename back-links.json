@@ -2822,16 +2822,16 @@
         "/nurture": {
             "py/object": "__main__.Page",
             "url": "/nurture",
-            "title": "NURTURE- The Gottman Method",
-            "description": "The Gottman Method is a research-based approach to couples therapy developed by Drs. John and Julie Gottman. The method is based on the idea that happy and healthy relationships require a strong foundation of love and friendship, as well as the ability to handle conflict in a positive way. The acronym NURTURE stands for the seven key components of the Gottman Method: Navigating Love Maps, Unleashing Fondness and Admiration, Responding to Bids for Attention, Tackling Conflict Constructively, Uplifting Dreams and Aspirations, Renewing Relationship Rituals, and Embracing Shared Meaning. In this book, we will explore each of these components in depth, providing practical advice, exercises, and journal prompts to help you apply the Gottman Method to your own relationship.\n\n",
+            "title": "NURTURE: The Gottman Method",
+            "description": "In “Nurturing Love,” the Heath Brothers distill the wisdom of renowned relationship experts Drs. John and Julie Gottman into a concise and actionable guide for couples seeking to strengthen their relationships. Using their signature storytelling approach and evidence-based insights, the Heath Brothers create an engaging and accessible roadmap to the Gottman Method.\n\n",
             "file_path": "_site/nurture.html",
             "outgoing_links": [],
             "incoming_links": [
                 "/gpt"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/gpt-gotman.md",
-            "doc_size": 30000
+            "markdown_path": "_d/nurture.md",
+            "doc_size": 38000
         },
         "/operating-manual": {
             "py/object": "__main__.Page",
@@ -3499,7 +3499,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 73000
+            "doc_size": 75000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
@@ -3836,7 +3836,8 @@
             "file_path": "_site/terzepatide.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/diet"
+                "/diet",
+                "/voices"
             ],
             "redirect_url": "",
             "markdown_path": "_d/terzepatide.md",
@@ -4038,11 +4039,12 @@
             "py/object": "__main__.Page",
             "url": "/voices",
             "title": "Voices in my head - A survey of my personalities",
-            "description": "The person that most frequently blocks your success is, wait for it, you! Often it’s your subconscious, and often your sub conscious is a bunch of independent voices. It’s hard to deal with this hidden opposition because it’s so opaque. To help understand your feelings you can name the voices in your head, and imagine asking each of them their positions, and desired outcomes.\n\n",
+            "description": "The person that most frequently blocks your success is, wait for it, you! Often it’s your subconscious, and often your subconscious is a bunch of independent voices. It’s hard to deal with this hidden opposition because it’s so opaque. To help understand your feelings, you can name the voices in your head, and imagine asking each of them their positions and desired outcomes.\n\n",
             "file_path": "_site/voices.html",
             "outgoing_links": [
                 "/anxiety",
                 "/curious",
+                "/terzepatide",
                 "/win-win"
             ],
             "incoming_links": [
@@ -4054,7 +4056,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-01-01-voices-in-my-head.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/warm": {
             "py/object": "__main__.Page",
