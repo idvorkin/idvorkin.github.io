@@ -4,6 +4,8 @@ title: "Switch"
 tags:
   - book-notes
 permalink: /switch
+mermaid: true
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/switch.webp
 ---
 
 Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider's control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He's completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.
@@ -32,7 +34,7 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 * Rally the herd
 * Keet the switch going
 
-{%include blob_image.html src="rider-elephant-path.jpeg" %}
+{%include blob_image_float_right.html src="blog/switch.webp" %}
 
 <!-- prettier-ignore-start -->
 
@@ -137,9 +139,14 @@ Focus on ability and prompt, motivation is fickle. Use motivation waves to do th
 
 A different model to switch, also covering change management. Esssentially you need to influence through the following dimensions
 
-| Dimensions | Personal | Social |
-| ---------- | -------- | ------ |
-| Ability    |          |        |
-| Motivation |          |        |
+```mermaid
+quadrantChart
+  x-axis Personal  --> Social
+  y-axis "Motivation" --> Ability
+  quadrant-1 "Group Ability"
+  quadrant-2 "Skills"
+  quadrant-3 "Self Regulation "
+  quadrant-4 Group Motivation
+```
 
 {%include amazon.html asin="0385528752;B07D23CFGR;B00BPO7710" %}
