@@ -69,6 +69,10 @@ Every day I write out my affirmations. These positive statements help me challen
 
 {%include summarize-page.html src="/class-act" %}
 
+**Think about the sublime states**
+
+{%include summarize-page.html src="/sublime" %}
+
 ### Calm like water: Be Present. This too shall pass. Work the problem
 
 **Every day can be full of [joy](/joy), but if you're not paying attention you'll miss it. Being present will also let you [appreciate](/appreciate) others which also brings satisfaction.**
