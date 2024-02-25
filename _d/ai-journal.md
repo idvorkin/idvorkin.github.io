@@ -11,9 +11,11 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 
 - [Visualization](#visualization)
 - [Blog to bot](#blog-to-bot)
+    - [RAG Challenges](#rag-challenges)
 - [Text to speech our friends](#text-to-speech-our-friends)
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [Diary](#diary)
+    - [2024-02-03 etoday](#2024-02-03-etoday)
     - [2024-02-03](#2024-02-03)
     - [2024-01-27](#2024-01-27)
     - [2023-11-26](#2023-11-26)
@@ -49,6 +51,12 @@ Open Questions
 - Does a smarter retrieval strategy help?
 - Play w/cRAG?
 
+### RAG Challenges
+
+- Some words don't map, so terzepatide doesn't pick up my terzeptatide blog post. Diet doesn't match terzepatide
+- Chunk size vs relevenace
+- My time off posts keep getting picked up since their template has good stuff, but content is light
+
 ## Text to speech our friends
 
 Well that was super easy, eleven labs has perfect instant voice clones, and what's coolest is you
@@ -71,6 +79,8 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
    markdown-crawler <https://whatilearnedsofar.com/practice/> --output-dir ./practice
 
 ## Diary
+
+### 2024-02-03 etoday
 
 ### 2024-02-03
 
