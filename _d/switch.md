@@ -8,7 +8,7 @@ mermaid: true
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/switch.webp
 ---
 
-Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider's control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He's completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.
+Human action can be modeled by an elephant, a rider, and the path. Our emotional side is the Elephant and our rational side is the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider's control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He's completely overmatched. Lastly, the path is the structural elements that nudge your elephant and your rider in a direction, without effort.
 
 | Attribute             | Chapters |
 | --------------------- | -------- |
@@ -32,13 +32,11 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 * Tweak the environment
 * Build Habits
 * Rally the herd
-* Keet the switch going
+* Keep the switch going
 
-{%include blob_image_float_right.html src="blog/switch.webp" %}
+{% include blob_image_float_right.html src="blog/switch.webp" %}
 
 <!-- prettier-ignore-start -->
-
-
 
 <!-- vim-markdown-toc GFM -->
 
@@ -92,7 +90,7 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 - See who shaped your behavior.
   - Want you to slow down, narrower roads
   - Want you to shop more, put milk (which you need at the back)
-  - Don't leave ATM card in machine, so need to get card before taking out cash
+  - Don't leave ATM card in the machine, so need to get the card before taking out cash
   - Reach for carrots, not stick
 - Ask to watch people who have trouble, you'll see them follow the easiest path.
 - Medication Vests
@@ -104,7 +102,7 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 - People don't need to change, behavior does.
 - Environment Changes more effective by People.
 - Use smaller plates. Auto-refilling soup, people never stop.
-- Self manipulation tools.
+- Self-manipulation tools.
 - This applies to magic (??) Is structural misdirection part of this
 - Force yourself to close your laptop in meetings
 - Fun to have "rider" outsmart our "elephant".
@@ -112,9 +110,9 @@ Human action can be modelled by an elephant, a rider and the path. Our emotional
 - Turn off notifications
 - How to make undesirable outcomes structurally impossible.
 - Look at Amazon's [COEs](/coe)
-- Machine that can cut off hands by accident. Sturcutral fix, only turn on machine by making 2 buttons you need to touch with large y shape, so hands can't be near it.
+- Machine that can cut off hands by accident. Structural fix, only turn on the machine by making 2 buttons you need to touch with a large Y shape, so hands can't be near it.
 - Can't life parking break off without touching brake.
-- Focus - Pre-Event; - Seat belts - Air Bags - Mid-Event ; - Post-Event - Get Ambulance There quickly - Training for physio therapy
+- Focus - Pre-Event; - Seat belts - Air Bags - Mid-Event ; - Post-Event - Get Ambulance There quickly - Training for physiotherapy
   Note, nothing about people's motivations or discipline.
 
 ## 9. Build [Habits](/habits)
@@ -133,11 +131,11 @@ See [Habits](/habits)
 
 Behavior is prompt + ability + motivation.
 
-Focus on ability and prompt, motivation is fickle. Use motivation waves to do the large 1 time investments.
+Focus on ability and prompt, motivation is fickle. Use motivation waves to do the large 1-time investments.
 
 ## Influencer 2.0
 
-A different model to switch, also covering change management. Esssentially you need to influence through the following dimensions
+A different model to switch, also covering change management. Essentially you need to influence through the following dimensions
 
 ```mermaid
 quadrantChart
@@ -149,4 +147,4 @@ quadrantChart
   quadrant-4 Group Motivation
 ```
 
-{%include amazon.html asin="0385528752;B07D23CFGR;B00BPO7710" %}
+{% include amazon.html asin="0385528752;B07D23CFGR;B00BPO7710" %}
