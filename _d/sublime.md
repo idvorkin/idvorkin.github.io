@@ -5,9 +5,8 @@ tags:
   - emotional intelligence
 imagefeaturelocal: raccoon-meditate.png
 redirect_from:
-  - /search-inside-yourself
-  - /meditate
-  - /meditation
+  - /sublime-states
+  - /sublime-state
 permalink: /sublime
 ---
 
