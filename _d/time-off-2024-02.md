@@ -1,41 +1,45 @@
 ---
 layout: post
-title: Time off Mid winter break 2024 - Divide and conquer
-imagefeaturelocal: raccoon-vaccation.png
+title: Time off Midwinter break 2024 - Divide and conquer
+imagefeaturelocal: raccoon-vacation.png
 redirect_from:
   - /time-off-2024-02
 ---
 
-It's mid winter break and I've got a week off. I learned I should pre-write these, but I decided (imlicitly, by not applying discipline) to skip it, so I'm starting this at the end of the vacation. This time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.
+It's midwinter break and I've got a week off. Most of these I try to do as a big family adventure. Finding something everyone wants to do is super challenging, so this time we tried something new, divide and conquer: I had a 1-2 day mini-vacations with Amelia, Zach, and even Tori. It worked out very well, the time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.
 
-Context:
+Long ago, I learned I should pre-write these, but I decided (implicitly, by not applying discipline) to wing it, so I'm writing this at the end of the vacation.
 
-- Work has been going great, and I need 1 hours to "disconnect from work". I'm actually excited to get back to work and dig into stuff, but I wrote it in a document and will pick it up when I'm back at work.
-- Money Troubles have been great - stock market is through the roof, with Meta and MSFTat all time highs!
-- Health has been great (see below)
+This time off was probably easier than others as I got many environmental boosts to my inner peace:
+
+- Work has been going great, and I only needed 1 hour to "disconnect from work". I'm actually excited to get back to work and dig into stuff, but I wrote it in a document and will pick it up when I'm back at work.
+- Money Troubles have been great - stock market is through the roof, with Meta and MSFT at all-time highs!
+- Health has been great, diet and exercise are dialed in.
 
 My top priorities:
 
 - Don't waste it by doing nothing.
 - Recharge my "dealer of smiles and wonder" identity - doing balloons and magic.
 - Create moments with the family (and take Selfies of them)
-- Stay healthy (though this is easier then usual see below)
+- Stay healthy (though this is easier than usual see below)
 
 ## Moments
 
 - Zach to Yellow Deli
   - 6 hours with Zach talking about lots of blog content
-- Zach to musical improv, then subway to Rosevault
+- 2 times - Zach to improv, then subway to somewhere hopping and walk home together!
 - Tori and I went on a mini-vacation (WOW!)
-- Amelia and I did a 2 day trip to Vancouver (Stanley park, Denman street, and Grandville island )
+- Amelia and I did a 2-day trip to Vancouver (Stanley park, Denman street, and Granville Island)
 
 ## Success Stories
 
 - Did magic several times:
 - Did balloons (FIRST TIME IN MONTHS):
-  - Kid at restaurant, kept htinking I should go to the car and get balloon stuff, finally did it after dinner. Of course kid loved it.
+  - Kid at restaurant, kept thinking I should go to the car and get balloon stuff, finally did it after dinner. Of course, the kid loved it.
+  - NOTE: Great work past Igor for leaving all the balloon accessories I need in the car!
 - Lots of physical exercise:
   - Every time in Seattle hit the gym, and got great workouts
+- Discovered [Bryan Johnson](/blueprint) and his blueprint idea. I'm definitely with him in spirit, though not his exact path.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -52,9 +56,6 @@ My top priorities:
     - [Tech Guru](#tech-guru)
         - [Shell + Enabling Environment + Python in VIM](#shell--enabling-environment--python-in-vim)
 - [Cognitive Health](#cognitive-health)
-    - [7 Habits](#7-habits)
-    - [Blog posts](#blog-posts)
-- [Emotional Health](#emotional-health)
     - [Meditation](#meditation)
     - [750 words/Gratefulness](#750-wordsgratefulness)
 - [Physical Health](#physical-health)
@@ -64,6 +65,7 @@ My top priorities:
     - [Energy](#energy)
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
+    - [Got grumpy about some stuff](#got-grumpy-about-some-stuff)
     - [Angry that wasting my vacation, and sacred time with family](#angry-that-wasting-my-vacation-and-sacred-time-with-family)
 
 <!-- vim-markdown-toc -->
@@ -71,25 +73,25 @@ My top priorities:
 
 ## Top Learnings
 
-_This is less new learnings, and more refcounts to existing knowledge_
+_This is less new learnings, and more recounts to existing knowledge_
 
 - It really is easier to divide and conquer the family
 - Going to Vancouver when [Toni](/tesla) is driving is trivial
-- The messed up spoon story with Amelia :(
+- The messed-up spoon story with Amelia :(
 - Tori and Amelia prefer a plan in advance (this isn't much of a learning)
-- I've gotten way better at travel thanks to all my MPK trips (I used to fret about packing for days, now i just have everything in my travel bag, and the car is packed with stuff)
-- Have all the stuff I want pre-loaded ( like balloon gear)
+- I've gotten way better at travel thanks to all my MPK trips (I used to fret about packing for days, now I just have everything in my travel bag, and the car is packed with stuff)
+- Have all the stuff I want pre-loaded (like balloon gear)
 - My discipline:
-  - I don't think of my self as being disicplined, but then people tell me you're crazy, ypou're super disciplined
+  - I don't think of myself as being disciplined, but then people tell me you're crazy, you're super disciplined
     - I wake up at 4:30 and gym
-    - I gym like 6 days a week for 1-2 horus
+    - I gym like 6 days a week for 1-2 hours
     - I meditate
-    - I write a tonne
-    - I went years losing 5 lbs a motnh
-  - I think what it is is I"m hyper disciplined, but ...
-    - I'm not realistic on how mcuh I can do, so 20 habits i want, can only do 5, so some are always rotatin gin and out, not congruent with my deliberate desires
-    - I get mentla blocks, like can't cash checks on the fridge For years
-    - Can't refill hottub so haven' tused it (which I love) for a year.
+    - I write a ton
+    - I went years losing 5 lbs a month
+  - I think what it is is I'm hyper-disciplined, but ...
+    - I'm not realistic on how much I can do, so 20 habits I want, can only do 5, so some are always rotating in and out, not congruent with my deliberate desires
+    - I get mental blocks, like can't cash checks on the fridge For years
+    - Can't refill hot tub so haven't used it (which I love) for a year.
 
 ## Relationships
 
@@ -97,29 +99,28 @@ _This is less new learnings, and more refcounts to existing knowledge_
 
 - Most parents and kids folks were out of town for winter break
 - Hang out w/Clive
-- Week before Zach's parents friends invited me out, wasn't sure I wanted to go, but did anyway so that I'd be able to join.
-- ☐ Do virtual walks with folks
+- Week before Zach's parents' friends invited me out, wasn't sure I wanted to go, but did anyway so that I'd be able to join.
 
 ### Tori
 
 Private, but we made time to go on a mini-vacation (WOW)! I'll keep it mostly secret, except
 
-{%include blob_image.html src="blog/pee-end-of-road.png" %}
+{% include blob_image.html src="blog/pee-end-of-road.png" %}
 
 ### Zach
 
-- Read blogpost - Yellow Deli
-
-{%include summarize-page.html src="/yellow-deli" %}
-
+- See the [Yellow Deli](/yellow-deli)
 - Did spontaneous musical improv, then took light rail far away and walked home at night, pretty cool.
-- Tonnes of time talking about the knowledge here
+- Did spontaneous improv, then took light rail far away and walked home at night, pretty cool.
+
+{% include summarize-page.html src="/yellow-deli" %}
 
 ### Amelia
 
-- Did
-- Messed up the the spoon
-- Swimming was awesme
+- Went to Vancouver (left at 6 am so she could sleep and we could get there by 9 am)
+- Went go Granville Island, and Denman street, and stayed at Sylvia Hotel
+- No pool at the hotel, so hit the Vancouver athletic club
+- Messed up the spoon
 
 ## Identity Health
 
@@ -128,10 +129,8 @@ Private, but we made time to go on a mini-vacation (WOW)! I'll keep it mostly se
 - ☐ Practice Daily
 - Magic for a kid hanging out at the magic store
 - Server at the Yellow Deli (the thing he wished for was "Grace")
-- Did magic for folks that had their own deck standing in front of the yellow Deli
-- ☐ Do a trick for a person #4
-- ☐ Do a trick for a person #5
-- ☐ Do a trick for a person #6
+- Did magic for folks that had their deck standing in front of the Yellow Deli
+- Zach nudged me to do magic!
 
 ### Biking
 
@@ -151,13 +150,8 @@ Private, but we made time to go on a mini-vacation (WOW)! I'll keep it mostly se
 
 ## Cognitive Health
 
-### 7 Habits
-
-### Blog posts
-
-_TODO: I should write a AI bot to read git history and do a summary_
-
-## Emotional Health
+- Wrote up a bunch of blog posts
+- Discovered [Bryan Johnson](/blueprint) and his blueprint idea. I'm definitely with him in spirit, though not his exact path.
 
 ### Meditation
 
@@ -174,7 +168,7 @@ _TODO: I should write a AI bot to read git history and do a summary_
 ### Statistics
 
 Weight Start: 189
-Weight End: 189
+Weight End: 187
 Gym Days: 3
 
 ### Diet
@@ -183,7 +177,7 @@ Gym Days: 3
 
 ### Sleep
 
-- All days by 6, several at 4:30
+- Didn't get enough, but worked well.
 
 ### Energy
 
@@ -196,6 +190,12 @@ Gym Days: 3
 
 ## Mental quicksand
 
+### Got grumpy about some stuff
+
+Dug back into sublime states, that's super helpful
+
+{% include summarize-page.html src="/sublime" %}
+
 ### Angry that wasting my vacation, and sacred time with family
 
-The antitode is doing stuff, divide and conquer to redcue the activation energy and tackle it
+The antidote is doing stuff, divide and conquer to reduce the activation energy and tackle it
