@@ -38,6 +38,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Begin with the end in mind](#begin-with-the-end-in-mind)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Making the most out of staycation](#making-the-most-out-of-staycation)
+- [Should you do 1:1 time with the family](#should-you-do-11-time-with-the-family)
 - [Igor's Personal combined learnings](#igors-personal-combined-learnings)
     - [Before you go](#before-you-go)
     - [Every other day check-in](#every-other-day-check-in)
@@ -136,6 +137,26 @@ Look at the incoming links below and:
 ## Making the most out of staycation
 
 With staycations, it's especially easy to oscillate between vegetating, grinding through the todo list, and ruminating on work. I suspect there are special tools for staycations - I should think through them.
+
+## Should you do 1:1 time with the family
+
+I've felt guilt around this before, but this time it worked amazing:
+
+{%include summarize-page.html src="/time-off-2024-02" %}
+
+Pros:
+
+- You can really focus on doing what you and that person want
+
+Cons:
+
+- Feels less efficient - as you
+- Feels like folks are missing out - missing out is about fairness
+
+I think there are some keys here:
+
+- Make sure you spend time with each family member so you feel inclusive and are fair
+- Don't' forget to take time for yourself
 
 ## Igor's Personal combined learnings
 
