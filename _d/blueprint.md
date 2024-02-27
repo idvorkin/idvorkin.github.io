@@ -16,6 +16,8 @@ So there's this guy who measures his nightly erections, doesn't go out into the 
 - [Goofy stuff](#goofy-stuff)
 - [Sleep](#sleep)
 - [Don't Die - Voices in his head](#dont-die---voices-in-his-head)
+- [Who holds the reins, morning or evening Igor](#who-holds-the-reins-morning-or-evening-igor)
+- [Why not defer control to an algorithm?](#why-not-defer-control-to-an-algorithm)
 - [Attitude to others](#attitude-to-others)
 - [Changes he's made me consider](#changes-hes-made-me-consider)
 - [Changes he's made me implement](#changes-hes-made-me-implement)
@@ -43,6 +45,16 @@ How good a nights sleep you have is really sets the difficultly level of the nex
 ## Don't Die - Voices in his head
 
 He wrote a book, that is a conversation between the voices in his head. I was dissapointed he didn't name them, like [I did](/voices) :) Interesting, he has a voice named scribe, which I never thought about, but turns out I also have a scribe.
+
+## Who holds the reins, morning or evening Igor
+
+A core concept is there are really two Igors, the morning, who is full of discipline, and the evening one who makes terrilbe decisons. Who should have "control of the body"? I think future Igor would prefer morning Igor, but when evening Igor is in control, he's king of the world with accountability to no one.
+
+## Why not defer control to an algorithm?
+
+Sounds scary, but we do this easily to google maps, and we no longer get lost. Honeslty, and even if it's not 'perfectly optimal on every instance', it's great on the integral. I'm not sure if I'd want to do this, but I'm not sure why not. It's not like I'm doing a great job of it myself.
+
+I also try to do this for my finances using zero index funds vs lottery tickets.
 
 ## Attitude to others
 
