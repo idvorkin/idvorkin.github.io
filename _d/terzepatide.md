@@ -8,7 +8,7 @@ tags:
 permalink: /terzepatide
 ---
 
-"You know Igor, weight loss is a solved problem" - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calories out". For me, will power dominates diet, and terzepatide dominates will power in the domain of stuffing things in your mouth. I started Terzepatide in February 2024, and so far it's been great.
+"You know Igor, weight loss is a solved problem" - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calories out". For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it's been great.
 
 <!-- prettier-ignore-start -->
 
@@ -17,11 +17,11 @@ permalink: /terzepatide
 
 - [What's it like?](#whats-it-like)
 - [Side effects](#side-effects)
-    - [It's mostly the side effects of dieting hard (if you are):](#its-mostly-the-side-effects-of-dieting-hard-if-you-are)
+    - [It's mostly the side effects of dieting hard (if you are)](#its-mostly-the-side-effects-of-dieting-hard-if-you-are)
     - [Gastroinstronal](#gastroinstronal)
     - [Muscle loss](#muscle-loss)
 - [FAQ](#faq)
-    - [Did you get a 'script, isn't there a shortage? Is this some grey market $hit?](#did-you-get-a-script-isnt-there-a-shortage-is-this-some-grey-market-hit)
+    - [Did you get a 'script, isn't there a shortage? Is this some grey market \$hit?](#did-you-get-a-script-isnt-there-a-shortage-is-this-some-grey-market-hit)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -30,7 +30,7 @@ permalink: /terzepatide
 
 To quote Ammon again. "It's kind of how I imagined normal people are - they eat, they enjoy the food, savoring it, and then they stop". That's exatly what it's like.
 
-Do I magically lose weight? There no laws of physics defying magic, it's still calories in minus calories out. The magic though is your body feels full, by drastically slowing your digestion and messing with some digestive plumbing.
+Do I magically lose weight? No! There is no physics defying magic here. It's still calories in minus calories out. The magic here is your body feels full, by drastically slowing your digestion and messing with some digestive plumbing.
 
 Interesting it's volume based, so if you wolf down calorie dense foods, you can still gain weight.
 
