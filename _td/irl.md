@@ -41,14 +41,17 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Selfie Sticks](#selfie-sticks)
 - [Biking](#biking)
 - [Car Tech](#car-tech)
+    - [Tony](#tony)
+    - [Tech (Old)](#tech-old)
 - [Tech](#tech)
+    - [How to add a poison pill to the addictive iPhone](#how-to-add-a-poison-pill-to-the-addictive-iphone)
     - [Computers](#computers)
     - [Monitors](#monitors)
     - [Keyboards](#keyboards)
 - [Camera](#camera)
-- [Virtual Reality - Occulus](#virtual-reality---occulus)
+- [Virtual Reality - Oculus](#virtual-reality---oculus)
 - [Backyard](#backyard)
-    - [Inflatable Hottub](#inflatable-hottub)
+    - [Inflatable Hot tub](#inflatable-hot-tub)
     - [Propane Fire Pit](#propane-fire-pit)
     - [Canopies](#canopies)
 
@@ -59,9 +62,11 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 My post for others at [physical health](/physical-health)
 
+{%include summarize-page.html src="/physical-health" %}
+
 ### Personal Trainer
 
-At 42 I got a personal trainer. Should have done it years ago. Several benefits;
+At 42 I got a personal trainer. Should have done it years ago. Several benefits:
 
 1. Externalized Motivation
 2. Externalized research.
@@ -69,7 +74,7 @@ At 42 I got a personal trainer. Should have done it years ago. Several benefits;
 
 ### Calf Health
 
-When I crossed 40 I went from easily running 4 miles hard and 20 mile bike rides to have my calfs lock up after 20 minutes of biking. I've tried various calf things here's my current list:
+When I crossed 40 I went from easily running 4 miles hard and 20-mile bike rides to have my calves lock up after 20 minutes of biking. I've tried various calf things here's my current list:
 
 - Calf rocker - I have the single and double, best, simple stretch
 - Neoprene Calf Sleeves - I've tried socks but they are a pain to get on, and not adjustable. These things wrap on, keep you warm, and are wonderful. Highly recommend.
@@ -80,14 +85,14 @@ When I crossed 40 I went from easily running 4 miles hard and 20 mile bike rides
 
 Lots of sleeves out there, I recommend the most flexible one that provides the pain relief. For me that:
 
-- [Knee brace Softest ](https://www.amazon.com/gp/product/B005BINV84/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
-- [Knee brace more support ](https://www.amazon.com/gp/product/B019GDFN6W/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+- [Knee brace Softest](https://www.amazon.com/gp/product/B005BINV84/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+- [Knee brace more support](https://www.amazon.com/gp/product/B019GDFN6W/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 
 {%include amazon.html asin="B005BINV84;B019GDFN6W" %}
 
 ### Booger Health
 
-For much of my 30's I had a brutal hacking cough. At 41, those coughs were causing me to pull out my shoulder muscles so I decided to take Flonase (I knew it was post nasal drip). I started taking Flonase, and I'm blown away by not coughing up a hairball.
+For much of my 30's I had a brutal hacking cough. At 41, those coughs were causing me to pull out my shoulder muscles so I decided to take Flonase (I knew it was postnasal drip). I started taking Flonase, and I'm blown away by not coughing up a hairball.
 
 ### Skin Health
 
@@ -99,7 +104,7 @@ I also have dry skin, so use O'Keeffe's which is awesome.
 
 Several braces for different times
 
-- [Full Imobilization Sleeping](https://www.amazon.com/gp/product/B004YIFA04/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+- [Full Immobilization Sleeping](https://www.amazon.com/gp/product/B004YIFA04/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 - [Heavy support during the day](https://www.amazon.com/gp/product/B002NLGNW8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 - [Light support during the day](https://www.amazon.com/gp/product/B072392YGD/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 - [Tight Warm Fingerless Gloves](https://www.amazon.com/gp/product/B00VTR6MDM/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
@@ -132,13 +137,13 @@ I don't use this, but it's under my desk. The day I got it and used it, I decide
 
 ### Meditation
 
-I used to have a complex meditation routine, which was very "focused", but had too much complexity. I skipped it and now use headspace, and do it slouching in a chair. Huge improvement.
-
-Also, if you're interested in why start meditating, read "Search Inside Yourself"
+{%include summarize-page.html src="/siy" %}
 
 **OLD**
 
-I meditate kneeling (Seiza) and have two benches. Meditation benches are over priced, but if it improves my emotional health (and it's supposed to) it's worth it.
+I used to have a complex meditation routine, which was very "focused", but had too much complexity. I skipped it and now use headspace, and do it slouching in a chair. Huge improvement.
+
+I meditate kneeling (Seiza) and have two benches. Meditation benches are overpriced, but if it improves my emotional health (and it's supposed to) it's worth it.
 
 Even though this is folding, this is my permanent bench:
 
@@ -156,8 +161,8 @@ I've been seeing a therapist weekly since my early 30's. It provides me several 
 - A chance to get some analytic analysis over my emotions.
 - A cathartic release
 - Access to a less distorted (it's still subject to my inputs) view of my reality.
-- An early reminder for when my world view is getting both too positive, and too negative.
-- Coaching on relationship based discussion
+- An early reminder for when my worldview is getting both too positive, and too negative.
+- Coaching on relationship-based discussion
 - A constant reminder of the importance of my emotional health
 - A historical reminder of previous states
 
@@ -177,7 +182,7 @@ I've been seeing a therapist weekly since my early 30's. It provides me several 
 
 ### Fanny Pack
 
-Don't get me started on the perfect fanny pack. My current favorite is below. It's very tactical looking - but have to start somewhere.
+Don't get me started on the perfect fanny pack. My current favorite is below. It's very tactical-looking - but have to start somewhere.
 
 {%include amazon.html asin="B07JJYCTST" %}
 
@@ -189,7 +194,7 @@ I often stuff the gym bag in a larger bag so small matters - I use:
 
 ### Work Bag
 
-It's taken me several tries, but I've concluded I like the smallest bag possible. I use a 13" macbook pro laptop and an iPad Pro 10" and this is the perfect bag for me:
+It's taken me several tries, but I've concluded I like the smallest bag possible. I use a 13" MacBook Pro laptop and an iPad Pro 10" and this is the perfect bag for me:
 
 There's also the horizontal version - which is slightly bigger but also nice:
 
@@ -197,7 +202,7 @@ There's also the horizontal version - which is slightly bigger but also nice:
 
 ### Selfie Sticks
 
-It's great to have selfie stick for every occasion
+It's great to have a selfie stick for every occasion
 
 - [Smallest](https://www.amazon.com/Vproof-Bluetooth-Lightweight-Aluminum-Extendable/dp/B07QY8L3WC/)
 - [Small w/stand](https://www.amazon.com/dp/B082HRRCGD?ref=nb_sb_ss_w_as-ypp-rep_ypp_rep_k0_1_13&crid=1HT7AE28KNQQ5&sprefix=compact+selfi)
@@ -210,6 +215,14 @@ It's great to have selfie stick for every occasion
 I **love** not driving. Biking is an awesome form of transit. It took a while but I concluded I have several use cases so need several bikes. In fact,
 
 ## Car Tech
+
+### Tony
+
+Right, now a days it's all about Tony
+
+{%include summarize-page.html src="/tesla" %}
+
+### Tech (Old)
 
 I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesomeness:
 
@@ -225,21 +238,27 @@ I've gotten 3 cheap pieces of aftermarket tech that transformed my car to awesom
 - iPad Pro
 - Apple Pencil
 - AirPod Pros
-- Bose QC35 - They're great.
+- Bose QC35 - They're great, but when using a mac the Airpod Pros are so much better
 - Bose 900 - I don't like these. They can't swap through devices.
 - Foam Tips for AirPod Pros - highly recommend if you're used to foam tips.
 - iPad stand.
 
+### How to add a poison pill to the addictive iPhone
+
+- Remind myself to uninstall TikTok
+- Put phone in black and white (Accessibility -> Color Filter -> Black and White)
+- Set Screen Time to 1-hour limit
+
 ### Computers
 
-- Huawei Matebook X (Essentially Windows Macbook clone):w
-- Macbook Pro (usually at work)
+- Huawei Matebook X (Essentially Windows MacBook clone)
+- MacBook Pro (usually at work)
 - Ancient Desktop (upgrade coming)
-- Macbook Pro M1 - Fantastic device, super light, long lasting batter.
+- MacBook Pro M1 - Fantastic device, super light, long-lasting battery.
 
 ### Monitors
 
-- 34" wide screen - not a huge fan. Good for wide screen movies (but Netflix/YouTube rarely has this resolution)
+- 34" wide screen - not a huge fan. Good for widescreen movies (but Netflix/YouTube rarely has this resolution)
 - 40" 3840x2160 - Awesome, I love it! Highly recommend
 - [Beefy Monitor Stand](https://www.amazon.com/dp/B01BXP9LT6) - If you're getting a good monitor make sure it floats with a pneumatic monitor stand.
 
@@ -258,24 +277,24 @@ I had lots of wrist issues from 20 years of typing. If I use a laptop or straigh
   - BTW I tried the Kinesis Advantage, I really don't like the ortholinear keyboards.
 - Then I discovered, I can do 2 folding split Bluetooth keyboards, and patch the software to still work with [Karabiner Elements](https://github.com/idvorkin/settings/blob/d37d021f27bdec58dfd9e80fc727d9c00f5c103d/mac/multi_keyboard_sync.json?plain=1#L210), which is what I'm using as my coffee shop setup.
 - Bluetooth [Folding Split Keyboard](https://www.amazon.com/iClever-Rechargeable-Bluetooth-Smartphones-IC-BK06/dp/B01JA6HG88) - I have literally bought 9 of these!
-- Notes on mechnical keyboards:
+- Notes on mechanical keyboards:
   - I deliberately decided not to get into mechanical keyboards.
   - But the Freestyle only comes in mechanical, so I got stuck.
   - The Advantage Quiet uses linear keys (cherry red), which I like much more than clicky.
   - I continue to try to avoid learning more about mechanical keyboards.
 - Notes on my wrist problems:
   - Most of my career my wrists would flair for a week or so, I'd wear a brace and be fine in a week.
-  - In 2022, my wrists commpletley gave out (after 24 hours of strait magic practice)
+  - In 2022, my wrists completely gave out (after 24 hours of straight magic practice)
   - After lots of physical therapy, I discovered I don't have the ability to externally rotate my shoulders,
   - That's why the split is so helpful.
-  - I did like a year of shoulder work, and now I'm better -thanks for asking!
-  - Also zero grip strength (like I couldn't squeeze 15 lbs, now i do 135)
+  - I did like a year of shoulder work, and now I'm better - thanks for asking!
+  - Also zero grip strength (like I couldn't squeeze 15 lbs, now I do 135)
 
 My Dual Keyboard
 
 ## Camera
 
-I ended up getting an m200 because a time of purchase it was the only cheap cannon with clean HDMI output. I'd have preferred the m50, but it didn't have clean HDMI output which was a deal breaker. My use case is mostly video recording or webcamming on a tripod, but I'll take it out of the house occasionally.
+I ended up getting an m200 because a time of purchase it was the only cheap cannon with clean HDMI output. I'd have preferred the m50, but it didn't have clean HDMI output which was a deal-breaker. My use case is mostly video recording or webcamming on a tripod, but I'll take it out of the house occasionally.
 
 [Canon m200](https://www.amazon.com/gp/product/B07XYPVFCH/) - Not ideal, but the only m-series with clean HDMI out. Biggest gaps - 1) No MF button 2) 4K sucks 3) A bit too small for SLR lenses
 
@@ -291,17 +310,17 @@ I ended up getting an m200 because a time of purchase it was the only cheap cann
 
 {%include amazon.html asin="B081QNNCCJ;B008NF8BRI" %}
 
-[Wrist Strap](https://www.amazon.com/gp/product/B017L3689K/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) - Wrist straps much better then neck strap.
+[Wrist Strap](https://www.amazon.com/gp/product/B017L3689K/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) - Wrist straps much better than neck strap.
 
-[Stream Deck](https://www.amazon.com/Elgato-Stream-Deck-XL-customizable/dp/B07RL8H55Z/ref=sr_1_2?dchild=1&keywords=stream+deck+xl&qid=1599424060&s=electronics&sr=1-2) - Sounds silly but awesome for controlling OBS. Probably worth it's own post.
+[Stream Deck](https://www.amazon.com/Elgato-Stream-Deck-XL-customizable/dp/B07RL8H55Z/ref=sr_1_2?dchild=1&keywords=stream+deck+xl&qid=1599424060&s=electronics&sr=1-2) - Sounds silly but awesome for controlling OBS. Probably worth its own post.
 
 {%include amazon.html asin="B07RL8H55Z;B017L3689K" %}
 
 Bags - who knows!
 
-## Virtual Reality - Occulus
+## Virtual Reality - Oculus
 
-I'm a big fan of my occulus quest, it's my favorite home work out tool for boxing.
+I'm a big fan of my Oculus Quest, it's my favorite home workout tool for boxing.
 
 Games I like:
 
@@ -315,29 +334,29 @@ Experiences worth trying:
 Games that are OK:
 
 - Climb 2 - Try rock climbing, easy to get into.
-- Jupyter - Swing like Spider Man
+- Jupyter - Swing like Spider-Man
 - Gorn - Super silly, bloody, gladiator game
 - Robo Recall - Really fun shooter, and rip the limbs of robots and beat them with it.
 
 Hardware Accessories:
 
-- [Better Head Strap](https://www.amazon.com//dp/B08MFH6V6C) - Occulus one breaks, I got this one.
-- [VR glasses](https://www.framesdirect.com/virtuclear-lens-inserts-for-oculus-quest-2.html) - Put glasses on the occulus lenses, works awesome
+- [Better Head Strap](https://www.amazon.com//dp/B08MFH6V6C) - Oculus one breaks, I got this one.
+- [VR glasses](https://www.framesdirect.com/virtuclear-lens-inserts-for-oculus-quest-2.html) - Put glasses on the Oculus lenses, works awesome
 - [Facial Interface](https://vrcover.com/oculus-quest-2/) - Very nice, blocks external light, and comfortable
 
 ## Backyard
 
-The best part of corona virus, is the isolation made me feel good about getting temporary things for the backyard - for example.
+The best part of coronavirus is the isolation made me feel good about getting temporary things for the backyard - for example.
 
-### Inflatable Hottub
+### Inflatable Hot tub
 
-I've wanted a hot tub for 20 years, but it was so hard. Turns out you can buy an inflatable one on Amazon. Trivial to use, and works great. Just plug it in to 110v power, fill with water, and wait for it to heat up. 2 days later it's ready to go, and from that point forward it stays hot.
+I've wanted a hot tub for 20 years, but it was so hard. Turns out you can buy an inflatable one on Amazon. Trivial to use and works great. Just plug it into 110v power, fill with water, and wait for it to heat up. 2 days later it's ready to go, and from that point forward it stays hot.
 
-You also need bromine to keep the nasties out and ph up to keep the bromine working.
+You also need bromine to keep the nasties out and pH up to keep the bromine working.
 
 {%include amazon.html asin="B01NCQO3KY;B07PFCV894;B00PZZFVFE" %}
 
-I also got these chairs which Amelia likes, but are not to useful for a grown up
+I also got these chairs which Amelia likes, but are not too useful for a grown-up
 
 And don't forget pool lights - I'm still figuring that out.
 
@@ -349,12 +368,12 @@ For draining the pool you need a pump, and for rapid heating a propane water hea
 
 Some good links:
 
-1.  Run a winter setup with a [propane water heater](https://www.outsidemodern.com/use-inflatable-hot-tub-winter-cold/)
-2.  Documentation for [the tub](https://m.bestwaycorp.com/Product/Detail/1090363XXX20#pro-support)
+1. Run a winter setup with a [propane water heater](https://www.outsidemodern.com/use-inflatable-hot-tub-winter-cold/)
+2. Documentation for [the tub](https://m.bestwaycorp.com/Product/Detail/1090363XXX20#pro-support)
 
 ### Propane Fire Pit
 
-Who doesn't like fire, just plug in the propane, turn the dial, and you've got a fire ready to go for enjoyment or some smore's
+Who doesn't like fire, just plug in the propane, turn the dial, and you've got a fire ready to go for enjoyment or some s'mores
 
 {%include amazon.html asin="B07ZVS4YPN" %}
 
@@ -362,6 +381,6 @@ Add the fire pit glass and cover and you're good to go.
 
 ### Canopies
 
-A simple pop up canopy, up in 10 minutes, and provides rain protection. Not the sturdiest in a wind storm, but such is life.
+A simple pop-up canopy, up in 10 minutes, and provides rain protection. Not the sturdiest in a wind storm, but such is life.
 
 {%include amazon.html asin="B01AQILB3A" %}
