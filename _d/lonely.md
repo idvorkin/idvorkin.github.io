@@ -15,9 +15,15 @@ From [harvard](https://mcc.gse.harvard.edu/reports/loneliness-in-america)
 
 ### Loneliness
 
-Long term loneliness is equivalent to smoking half a pack a day.
+**Long term loneliness is equivalent to smoking half a pack a day.**
 
-- <https://mcc.gse.harvard.edu/reports/loneliness-in-america>
+<https://mcc.gse.harvard.edu/reports/loneliness-in-america>
+
+**Doubling real life friends has an equivalent effect on well-being as a 50% increase in income**. Second, the size of online. networks is largely uncorrelated with subjective well-being.
+
+<https://www.nber.org/papers/w18690>
+
+I wonder if there’s someone in Meta working on changing this.
 
 ### Happiness spreads upto 3 degrees of seperation
 
