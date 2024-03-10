@@ -18,6 +18,7 @@ One of the most satisfying (and fun) projects I worked on in my career was givin
 - [Customer Impact](#customer-impact)
 - [The genesis](#the-genesis)
 - [Cool stories - First Launch](#cool-stories---first-launch)
+- [Cool stories - Launch Day](#cool-stories---launch-day)
 - [The team that made it happen](#the-team-that-made-it-happen)
 
 <!-- vim-markdown-toc -->
@@ -56,6 +57,24 @@ The details are amazon specific, but a few things I can mention
 - PM quit pre-launch
 - Lots of other projects thrown at team while it was happening.
 - VP Looking for last minute scope creep
+
+## Cool stories - Launch Day
+
+- Week before - Thanksgiving, which at Amazon is non-stop, and all hands on deck.
+- Day before - several issues coming up on the dashboard, fixed at 11pm
+- Day of 9am EST live TV (6am in PST) on good morning america. We literally have someone in the green room
+- War room 4am PST. Intermittent failures
+  - Intermittent failures the worst, hard to repro.
+  - Purchase getting ranodm fails - Start Paging in folks, 3 managers up get someone.
+    - Some Purchases are failing.
+    - Why? Price changes between "confirmation" and "purchase", call fails
+    - Why Fail? Complex, rare scenario
+    - Why Happening? System Optimization, if item stock is dropping, price floats around to ensure not overselling.
+    - Why wouldn't running out of stock be an issue normally?
+      - We already fail over to next item when stock drops below a threshold
+    - How to resolve?
+      - Force ourselves to high stock item.
+      - Page in team that owns inventory control pricing, and disable for our products
 
 ## The team that made it happen
 
