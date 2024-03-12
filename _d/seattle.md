@@ -67,6 +67,10 @@ Parks:
 1. Interlaken
 1. Discovery Park
 
+If you have a friend that works at Amazon
+
+1. Get them to give you a tour of the Spheres
+
 By Classic Tourist Attration
 
 1. Space Needle/Seattle Center
