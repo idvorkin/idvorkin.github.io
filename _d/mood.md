@@ -22,6 +22,10 @@ Let me ask an easy question: "How are you feeling?". How long did it take you to
     - [The heuristic is buggy](#the-heuristic-is-buggy)
     - [The heuristic is bi-directional](#the-heuristic-is-bi-directional)
 - [Theory and model](#theory-and-model)
+- [Actual moods](#actual-moods)
+    - [Joy](#joy)
+    - [Happy](#happy)
+    - [Anger](#anger)
     - [Quotes](#quotes)
 
 <!-- vim-markdown-toc -->
@@ -75,6 +79,20 @@ As a model,
 | Self    |      |         |        |
 | Other   |      |         |        |
 | Process |      |         |        |
+
+## Actual moods
+
+### Joy
+
+{%include summarize-page.html src="/joy" %}
+
+### Happy
+
+{%include summarize-page.html src="/happy" %}
+
+### Anger
+
+{%include summarize-page.html src="/anger" %}
 
 ### Quotes
 
