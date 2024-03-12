@@ -37,6 +37,7 @@
         "/boss": "/being-a-great-manager",
         "/breathe": "/breath",
         "/breathing": "/breath",
+        "/bryan-johnson": "/blueprint",
         "/Business-Model-You": "/bmy",
         "/centenarian": "/last-year",
         "/classact": "/class-act",
@@ -110,8 +111,8 @@
         "/makesmile": "/joy",
         "/manager": "/being-a-great-manager",
         "/mechanism": "/upstream",
-        "/meditate": "/sublime",
-        "/meditation": "/sublime",
+        "/meditate": "/siy",
+        "/meditation": "/siy",
         "/mental-break-down": "/depression",
         "/monsters": "/mind-monsters",
         "/mortality": "/death",
@@ -151,12 +152,14 @@
         "/saving": "/money",
         "/savings": "/money",
         "/savor": "/happy",
-        "/search-inside-yourself": "/sublime",
+        "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
+        "/sublime-state": "/sublime",
+        "/sublime-states": "/sublime",
         "/taxes": "/money",
         "/td/machine-learning": "/ml",
         "/tft": "/toysfortots",
@@ -176,6 +179,7 @@
         "/uncategorized": "/random-idea",
         "/vacation": "/timeoff",
         "/virus": "/covid",
+        "/voices": "/voices",
         "/voices-in-my-head": "/voices",
         "/vr": "/ar",
         "/warmth": "/warm",
@@ -187,7 +191,8 @@
         "/work-life-balance": "/sustainable-work",
         "/write": "/writing",
         "/y2024": "/y24",
-        "/yellow-deli": "/ig66/717"
+        "/yellow-deli": "/ig66/717",
+        "/zero": "/blueprint"
     },
     "url_info": {
         "/22": {
@@ -403,6 +408,7 @@
                 "/first-understand",
                 "/insecure",
                 "/joy",
+                "/sublime",
                 "/writing"
             ],
             "incoming_links": [],
@@ -526,8 +532,7 @@
                 "/happy",
                 "/mental-pain",
                 "/operating-manual",
-                "/touching",
-                "/voices"
+                "/touching"
             ],
             "redirect_url": "",
             "markdown_path": "_d/anxiety.md",
@@ -709,6 +714,23 @@
             "markdown_path": "_posts/2017-03-01-bike.md",
             "doc_size": 19000
         },
+        "/blueprint": {
+            "py/object": "__main__.Page",
+            "url": "/blueprint",
+            "title": "Bryan Johnson - A 50 year old 18 year old",
+            "description": "So there’s this guy who measures his nightly erections, doesn’t go out into the sun, and strives to delegate all his decision making to an algorithm called blue print. Certainly a nut job, but a nut job who has explored many of the thoughts I’m very interested in. Depression, purpose, sleep, exercise. Here are my notes.\n\n",
+            "file_path": "_site/blueprint.html",
+            "outgoing_links": [
+                "/ig66/663",
+                "/voices"
+            ],
+            "incoming_links": [
+                "/d/time-off-2024-02"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/blueprint.md",
+            "doc_size": 13000
+        },
         "/bmy": {
             "py/object": "__main__.Page",
             "url": "/bmy",
@@ -741,7 +763,7 @@
                 "/getting-to-yes-with-yourself",
                 "/gtd",
                 "/humans-are-underrated",
-                "/sublime"
+                "/siy"
             ],
             "incoming_links": [
                 "/being-a-great-manager",
@@ -896,7 +918,7 @@
                 "/manager-book",
                 "/pride",
                 "/prompts",
-                "/sublime"
+                "/siy"
             ],
             "incoming_links": [
                 "/being-a-great-manager",
@@ -993,8 +1015,7 @@
                 "/happy",
                 "/negotiate",
                 "/psychic-weight",
-                "/shame",
-                "/voices"
+                "/shame"
             ],
             "redirect_url": "",
             "markdown_path": "_d/grandmother.md",
@@ -1240,7 +1261,7 @@
             "outgoing_links": [
                 "/frog",
                 "/money",
-                "/sublime",
+                "/siy",
                 "/timeoff"
             ],
             "incoming_links": [],
@@ -1428,17 +1449,21 @@
         "/d/time-off-2024-02": {
             "py/object": "__main__.Page",
             "url": "/d/time-off-2024-02",
-            "title": "Time off Mid winter break 2024 - Divide and conquer",
-            "description": "It’s mid winter break and I’ve got a week off. I learned I should pre-write these, but I decided (imlicitly, by not applying discipline) to skip it, so I’m starting this at the end of the vacation. This time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.\n\n",
+            "title": "Time off Midwinter break 2024 - Divide and conquer",
+            "description": "It’s midwinter break and I’ve got a week off. Most of these I try to do as a big family adventure. Finding something everyone wants to do is super challenging, so this time we tried something new, divide and conquer: I had a 1-2 day mini-vacations with Amelia, Zach, and even Tori. It worked out very well, the time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.\n\n",
             "file_path": "_site/d/time-off-2024-02.html",
             "outgoing_links": [
+                "/blueprint",
                 "/ig66/717",
+                "/sublime",
                 "/tesla"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/timeoff"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-02.md",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/d/time-off-2024-08": {
             "py/object": "__main__.Page",
@@ -1702,6 +1727,7 @@
             "file_path": "_site/emotional-health.html",
             "outgoing_links": [
                 "/sharpen-the-saw",
+                "/siy",
                 "/sublime",
                 "/voices"
             ],
@@ -2112,6 +2138,7 @@
                 "/joy",
                 "/mental-pain",
                 "/moments",
+                "/mood",
                 "/negotiate"
             ],
             "incoming_links": [
@@ -2127,12 +2154,13 @@
                 "/d/time-off-2024-08",
                 "/hobby",
                 "/joy",
+                "/mood",
                 "/siy",
                 "/timeoff"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-04-12-happy.md",
-            "doc_size": 23000
+            "doc_size": 22000
         },
         "/heath-class-act": {
             "py/object": "__main__.Page",
@@ -2320,7 +2348,9 @@
                 "/bike",
                 "/emotional-health",
                 "/eulogy",
-                "/physical-health"
+                "/physical-health",
+                "/siy",
+                "/tesla"
             ],
             "incoming_links": [
                 "/physical-health",
@@ -2328,7 +2358,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/irl.md",
-            "doc_size": 48000
+            "doc_size": 49000
         },
         "/job": {
             "py/object": "__main__.Page",
@@ -2465,7 +2495,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/lonely.md",
-            "doc_size": 11000
+            "doc_size": 30000
         },
         "/magic": {
             "py/object": "__main__.Page",
@@ -2751,6 +2781,22 @@
             "markdown_path": "_d/taxes.md",
             "doc_size": 30000
         },
+        "/mood": {
+            "py/object": "__main__.Page",
+            "url": "/mood",
+            "title": "Mood - Our blazing fast heuristic for subjective experience",
+            "description": "Let me ask an easy question: “How are you feeling?”. How long did it take you to answer? Less then a second? Impressive. Now a harder question “What makes you say that?”, or even harder “How do you ‘compute’ how are you feeling?” What is going on? Human’s have a super fast heuristic called mood giving them an insant assessement of their sujective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.\n\n",
+            "file_path": "_site/mood.html",
+            "outgoing_links": [
+                "/happy"
+            ],
+            "incoming_links": [
+                "/happy"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/mood.md",
+            "doc_size": 14000
+        },
         "/mortality-software": {
             "py/object": "__main__.Page",
             "url": "/mortality-software",
@@ -2806,7 +2852,7 @@
             "py/object": "__main__.Page",
             "url": "/nlp",
             "title": "Sentiment Analysis and NLP",
-            "description": "My explorations of NLP, mostly using my corpus of journal entries and other writing. My intent is two fold 1) learning about NLP and sentiment analysis 2) finding latent meaning in my writing, ideally to help me better understand my own psychological processes. I’ve had much more success with the former then the latter\n\n",
+            "description": "My explorations of NLP, mostly using my corpus of journal entries and other writing. My intent is twofold: 1) learning about NLP and sentiment analysis 2) finding latent meaning in my writing, ideally to help me better understand my own psychological processes. I’ve had much more success with the former than the latter.\n\n",
             "file_path": "_site/nlp.html",
             "outgoing_links": [
                 "/gpt"
@@ -3256,11 +3302,16 @@
             "incoming_links": [
                 "/anxiety-management",
                 "/be-proactive",
+                "/books-that-defined-me",
+                "/coaching",
                 "/curious",
+                "/d/time-off-2020-03",
                 "/depression",
+                "/emotional-health",
                 "/eulogy",
                 "/first-understand",
                 "/idle",
+                "/irl",
                 "/mind-monsters",
                 "/psychic-weight",
                 "/sharpen-the-saw",
@@ -3388,9 +3439,8 @@
                 "/touching"
             ],
             "incoming_links": [
-                "/books-that-defined-me",
-                "/coaching",
-                "/d/time-off-2020-03",
+                "/affirmations",
+                "/d/time-off-2024-02",
                 "/emotional-health",
                 "/siy"
             ],
@@ -3419,7 +3469,7 @@
             "py/object": "__main__.Page",
             "url": "/switch",
             "title": "Switch",
-            "description": "Human action can be modelled by an elephant, a rider and the path. Our emotional side the Elephant and our rational side the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly the path, is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
+            "description": "Human action can be modeled by an elephant, a rider, and the path. Our emotional side is the Elephant and our rational side is the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly, the path is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
             "file_path": "_site/switch.html",
             "outgoing_links": [
                 "/coe",
@@ -3832,12 +3882,11 @@
             "py/object": "__main__.Page",
             "url": "/terzepatide",
             "title": "Terzepatide: The magic weight loss shot",
-            "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. For me, will power dominates diet, and terzepatide dominates will power in the domain of stuffing things in your mouth. I started Terzepatide in February 2024, and so far it’s been great.\n\n",
+            "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it’s been great.\n\n",
             "file_path": "_site/terzepatide.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/diet",
-                "/voices"
+                "/diet"
             ],
             "redirect_url": "",
             "markdown_path": "_d/terzepatide.md",
@@ -3853,7 +3902,8 @@
                 "/ig66/687"
             ],
             "incoming_links": [
-                "/d/time-off-2024-02"
+                "/d/time-off-2024-02",
+                "/irl"
             ],
             "redirect_url": "",
             "markdown_path": "_d/tesla.md",
@@ -3913,6 +3963,7 @@
             "outgoing_links": [
                 "/addiction",
                 "/d/resistance",
+                "/d/time-off-2024-02",
                 "/essentialism",
                 "/eulogy",
                 "/frog",
@@ -3939,7 +3990,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time_off.md",
-            "doc_size": 29000
+            "doc_size": 30000
         },
         "/todo_enjoy": {
             "py/object": "__main__.Page",
@@ -3996,7 +4047,7 @@
             "py/object": "__main__.Page",
             "url": "/toysfortots",
             "title": "Donating to charity",
-            "description": "One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations. What is most amazing about this project is we were able to go from zero to announcing our MVP live on good morning america in under 4 months which included all sorts of complexities, negotiations, and good luck.\n\n",
+            "description": "One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations. What is most amazing about this project is we were able to go from zero to announcing our MVP live on Good Morning America in under 4 months which included all sorts of complexities, negotiations, and good luck.\n\n",
             "file_path": "_site/toysfortots.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -4005,7 +4056,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/alexa-charity.md",
-            "doc_size": 12000
+            "doc_size": 14000
         },
         "/upstream": {
             "py/object": "__main__.Page",
@@ -4018,7 +4069,7 @@
                 "/first-things-first"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/upstream.md",
+            "markdown_path": "_d/blueprint.md",
             "doc_size": 14000
         },
         "/vim-for-writing": {
@@ -4034,29 +4085,6 @@
             "redirect_url": "",
             "markdown_path": "_posts/2016-5-1-vim-for-writing.md",
             "doc_size": 14000
-        },
-        "/voices": {
-            "py/object": "__main__.Page",
-            "url": "/voices",
-            "title": "Voices in my head - A survey of my personalities",
-            "description": "The person that most frequently blocks your success is, wait for it, you! Often it’s your subconscious, and often your subconscious is a bunch of independent voices. It’s hard to deal with this hidden opposition because it’s so opaque. To help understand your feelings, you can name the voices in your head, and imagine asking each of them their positions and desired outcomes.\n\n",
-            "file_path": "_site/voices.html",
-            "outgoing_links": [
-                "/anxiety",
-                "/curious",
-                "/terzepatide",
-                "/win-win"
-            ],
-            "incoming_links": [
-                "/anxiety",
-                "/depression",
-                "/emotional-health",
-                "/mind-monsters",
-                "/operating-manual"
-            ],
-            "redirect_url": "",
-            "markdown_path": "_posts/2017-01-01-voices-in-my-head.md",
-            "doc_size": 15000
         },
         "/warm": {
             "py/object": "__main__.Page",
@@ -4138,8 +4166,7 @@
                 "/7-habits",
                 "/curious",
                 "/negotiate",
-                "/sell",
-                "/voices"
+                "/sell"
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c4.md",
