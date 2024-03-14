@@ -724,7 +724,7 @@ From Simon Sinek, a great script:
 
 Tough question. I need to put more thinking and polish into this.
 
-Culture has 3 components, the team, the execution model, and the growth/feedback model.
+Culture has 3 components: The team, The execution model, and the growth mindset
 
 - Team: Coming to work is fun, team gelled, and ahead of individuals
 
@@ -745,7 +745,7 @@ Culture has 3 components, the team, the execution model, and the growth/feedback
   - I hate the term "bring solutions not problems", it encourages people to freeze. Instead -
     - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
 
-- Continuous improvement, with very open feedback, and desire to improve.
+- Growth Mindset: Continuous improvement, with very open feedback, and desire to improve.
   - Career Growth
   - Technical Growth
   - Retros, but also action item tracking.
@@ -843,7 +843,7 @@ If you already had the thought, it's free for you to say it. If I've already tho
 
 Catching a bad assumption on my part, or even more important, something I haven't thought about - priceless.
 
-### How do you transition from mercenaries to missionaries.
+### How do you transition from mercenaries to missionaries
 
 Mercenary - A hired gun who does exactly what you tell them without question
 Missionary - A person who believes in the mission and will do what they believe is best
