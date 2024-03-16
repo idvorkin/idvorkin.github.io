@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Shame"
-comments: true
-inprogress: true
 tags:
+  - emotional intelligence
+  - emotion
 permalink: /shame
 redirect_from:
   - /fuck-shame
