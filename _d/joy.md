@@ -3,6 +3,7 @@ layout: post
 title: "Smiles, Joy and Wonder"
 tags:
   - emotional intelligence
+  - emotion
 permalink: /joy
 redirect_from:
   - /makesmile

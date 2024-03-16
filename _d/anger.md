@@ -10,6 +10,7 @@ redirect_from:
 
 tags:
   - emotional intelligence
+  - emotion
 ---
 
 It's 8am; The normal rush, the kids are late to school, we're yelling at them to eat their breakfast, pack their lunch, brush their teeth, get ready for school. 30 minutes earlier, I'd decided I'd bike Amelia, my 7 year old daughter, to school. I told Tori, my wife, who normally drives the kids to school. Tori didn't acknowledge me. As I got my bike helmet Tori put the kids in the car. I ran out and tried to get her attention, waving frantically and running the car. (In my head), Tori ignored me, wouldn't look at me, even as I ran to the car and gesticulated wildly. I really had my heart set on biking Amelia to school, and I went into a rage, as Tori pulled off, I flipped her off. Adulting fail - not my best moment.
@@ -25,12 +26,12 @@ Anger is the enemy. It is an intoxicant, it causes poor judgement and makes ever
 
 - [Your enemies trick - control](#your-enemies-trick---control)
 - [The anger dial frustration and rage](#the-anger-dial-frustration-and-rage)
-- [The components of Anger.](#the-components-of-anger)
+- [The components of Anger](#the-components-of-anger)
 - [The Antidotes](#the-antidotes)
     - [To Pain](#to-pain)
     - [To Frustration](#to-frustration)
     - [To Anger](#to-anger)
-    - [To Rage - not sure.](#to-rage---not-sure)
+    - [To Rage - not sure](#to-rage---not-sure)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
