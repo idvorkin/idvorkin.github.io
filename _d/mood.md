@@ -29,7 +29,8 @@ Let me ask an easy question: "How are you feeling?". How long did it take you to
     - [Joy](#joy)
     - [Happy](#happy)
     - [Anger](#anger)
-    - [Quotes](#quotes)
+    - [Regret](#regret)
+- [Quotes](#quotes)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -137,6 +138,10 @@ Be that as it may, when the problem is ignorance, the remedy is learning which, 
 
 {%include summarize-page.html src="/anger" %}
 
-### Quotes
+### Regret
+
+{%include summarize-page.html src="/regrets" %}
+
+## Quotes
 
 In the original, it's about comfort, not pleasure.
