@@ -20,7 +20,7 @@ Regret is a five-letter word that carries the weight of our past decisions and a
     - [Circle of Concern vs Circle of Influence](#circle-of-concern-vs-circle-of-influence)
     - [Be compassionate to yourself - foregive](#be-compassionate-to-yourself---foregive)
 - [The Four Regrets](#the-four-regrets)
-        - [Foundation Regrets -  If only I'd done the work](#foundation-regrets----if-only-id-done-the-work)
+        - [Foundation Regrets - If only I'd done the work](#foundation-regrets---if-only-id-done-the-work)
     - [Boldness Regrets - If only I'd taken the risk/opportunity](#boldness-regrets---if-only-id-taken-the-riskopportunity)
     - [Moral Regrets - If only I done the right thing](#moral-regrets---if-only-i-done-the-right-thing)
     - [Connection Regrets - Neglecting or damaging important relationships.](#connection-regrets---neglecting-or-damaging-important-relationships)
