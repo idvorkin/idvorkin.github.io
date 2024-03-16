@@ -141,6 +141,7 @@
         "/ranking": "/recommend",
         "/rca": "/coe",
         "/recommender": "/recommend",
+        "/regret": "/regrets",
         "/remote": "/remote-work",
         "/remotework": "/remote-work",
         "/resistance": "/d/resistance",
@@ -506,7 +507,9 @@
                 "/depression",
                 "/mental-pain"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/mood"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/anger.md",
             "doc_size": 14000
@@ -660,6 +663,7 @@
                 "/d/habits",
                 "/frog",
                 "/idle",
+                "/regrets",
                 "/siy"
             ],
             "redirect_url": "",
@@ -1015,6 +1019,7 @@
                 "/happy",
                 "/negotiate",
                 "/psychic-weight",
+                "/regrets",
                 "/shame"
             ],
             "redirect_url": "",
@@ -1608,7 +1613,8 @@
                 "/voices"
             ],
             "incoming_links": [
-                "/anger"
+                "/anger",
+                "/mood"
             ],
             "redirect_url": "",
             "markdown_path": "_d/depression.md",
@@ -2435,6 +2441,7 @@
                 "/happy",
                 "/hobby",
                 "/magic",
+                "/mood",
                 "/sublime"
             ],
             "redirect_url": "",
@@ -2612,6 +2619,7 @@
                 "/idle",
                 "/mind-monsters",
                 "/psychic-weight",
+                "/regrets",
                 "/shame",
                 "/y24"
             ],
@@ -2788,14 +2796,18 @@
             "description": "Let me ask an easy question: “How are you feeling?”. How long did it take you to answer? Less then a second? Impressive. Now a harder question “What makes you say that?”, or even harder “How do you ‘compute’ how are you feeling?” What is going on? Human’s have a super fast heuristic called mood giving them an insant assessement of their sujective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.\n\n",
             "file_path": "_site/mood.html",
             "outgoing_links": [
-                "/happy"
+                "/anger",
+                "/depression",
+                "/happy",
+                "/joy",
+                "/regrets"
             ],
             "incoming_links": [
                 "/happy"
             ],
             "redirect_url": "",
             "markdown_path": "_d/mood.md",
-            "doc_size": 14000
+            "doc_size": 24000
         },
         "/mortality-software": {
             "py/object": "__main__.Page",
@@ -2830,6 +2842,7 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/productive",
+                "/regrets",
                 "/sell"
             ],
             "redirect_url": "",
@@ -3141,6 +3154,26 @@
             "redirect_url": "",
             "markdown_path": "self-reflect.md",
             "doc_size": 9000
+        },
+        "/regrets": {
+            "py/object": "__main__.Page",
+            "url": "/regrets",
+            "title": "Regrets",
+            "description": "Regrets, both ours and others, are a powerful tools to shape our present and future. four main types: foundation regrets related to not laying a proper base for life; boldness regrets stemming from missed opportunities and risks; moral regrets from not doing the right thing; and connection regrets from neglecting or damaging relationships. May you fin dinsights into how we can better navigate our choices to minimize regret and enhance our sense of fulfillment.\n\n",
+            "file_path": "_site/regrets.html",
+            "outgoing_links": [
+                "/be-proactive",
+                "/curious",
+                "/mental-pain",
+                "/negotiate",
+                "/sustainable-work"
+            ],
+            "incoming_links": [
+                "/mood"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/regrets.md",
+            "doc_size": 17000
         },
         "/remote-work": {
             "py/object": "__main__.Page",
@@ -3459,7 +3492,8 @@
                 "/balance",
                 "/being-a-great-manager",
                 "/depression",
-                "/dsat"
+                "/dsat",
+                "/regrets"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2020-01-04-sustainable-work.md",
@@ -3549,7 +3583,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 75000
+            "doc_size": 72000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
@@ -4069,7 +4103,7 @@
                 "/first-things-first"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/blueprint.md",
+            "markdown_path": "_d/upstream.md",
             "doc_size": 14000
         },
         "/vim-for-writing": {
