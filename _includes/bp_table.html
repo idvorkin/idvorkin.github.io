@@ -1,0 +1,18 @@
+{% assign is = {{include.is}} | split: ";" %}
+
+<table>
+  <tr>
+    {% for i in is %}
+    <td>
+      <a
+        href="https://github.com/idvorkin/blob/raw/master/{{include.path}}/{{page.week}}/{{i |downcase |strip }}"
+        class="glightbox"
+      >
+        <img
+          src="https://github.com/idvorkin/blob/raw/master/{{include.path}}/{{page.week}}/{{i |downcase | strip}}"
+        />
+      </a>
+    </td>
+    {% endfor %}
+  </tr>
+</table>
