@@ -1,18 +1,2 @@
-{% assign is = {{include.is}} | split: ";" %}
-
-<table>
-  <tr>
-    {% for i in is %}
-    <td>
-      <a
-        href="https://github.com/idvorkin/blob/raw/master/ig66/{{page.week}}/{{i |downcase |strip }}"
-        class="glightbox"
-      >
-        <img
-          src="https://github.com/idvorkin/blob/raw/master/ig66/{{page.week}}/{{i |downcase | strip}}"
-        />
-      </a>
-    </td>
-    {% endfor %}
-  </tr>
-</table>
+{% capture new_path %}ig66/{{ page.week }}{% endcapture %} {% assign is =
+{{include.is}} %} {% include bp_table.html path=new_path is=is %}
