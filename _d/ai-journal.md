@@ -35,8 +35,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 
 Join the [discord here](https://discord.gg/S2s24P6JtU), and then just '/ask'. See the source [on github](https://github.com/idvorkin/nlp/blob/d9f24b7aa5a046f78147c2e53144a9258c91894f/qa_blog.py?plain=1#L393)
 Standard workflow,
-chunk blog -> Embeddig(chunk) -> vector DB <- Retrieve <- Project Inject <- Rago
-this begs the Q what to chuk, and how to chunk it
+chunk blog -> Embedding(chunk) -> vector DB <- Retrieve <- Project Inject <- Rago
+this begs the Q what to chuck, and how to chunk it
 
 Useful features:
 
@@ -44,7 +44,7 @@ Useful features:
 - ☑ Give the answer
 - ☑ Link back to specific pages
 - Link back to the specific anchors
-- TBD Ask follow up questiosn
+- TBD Ask follow up questions
 
 Open Questions
 
@@ -55,7 +55,7 @@ Open Questions
 ### RAG Challenges
 
 - Some words don't map, so terzepatide doesn't pick up my terzeptatide blog post. Diet doesn't match terzepatide
-- Chunk size vs relevenace
+- Chunk size vs relevance
 - My time off posts keep getting picked up since their template has good stuff, but content is light
 
 ## Text to speech our friends
@@ -81,8 +81,8 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## What I wrote summary
 
-- I tend to write a fair bit over a time span, and forget what i did. I used a simple [git log stat creator](https://github.com/idvorkin/settings/blob/7c747bf7061a2da774faedd6efe14fdff547e92d/shared/zsh_include.sh?plain=1#L133) to see it, but it was too simple
-- Turns, out LLMs are a great way to do this. So I wrote an [app for it](https://github.com/idvorkin/nlp/blob/303d7c58265b647dead79ccdbaeafd0cab58d1a0/changes.py?plain=1#L211). It does [great summaries](https://gist.github.com/idvorkin/7f457ef75330f5faee8c9a82a3d0d820]. Inlining changes to this app as follows:
+- I tend to write a fair bit over a time span, and forget what I did. I used a simple [git log stat creator](https://github.com/idvorkin/settings/blob/7c747bf7061a2da774faedd6efe14fdff547e92d/shared/zsh_include.sh?plain=1#L133) to see it, but it was too simple
+- Turns, out LLMs are a great way to do this. So I wrote an [app for it](https://github.com/idvorkin/nlp/blob/303d7c58265b647dead79ccdbaeafd0cab58d1a0/changes.py?plain=1#L211). It does [great summaries](https://gist.github.com/idvorkin/7f457ef75330f5faee8c9a82a3d0d820). Inlining changes to this app as follows:
 
   - [changes.py](https://github.com/idvorkin/nlp/blob/303d7c58265b647dead79ccdbaeafd0cab58d1a0/changes.py)
   - Creation of a new Python script to handle Git diffs and summarize changes using OpenAI.
@@ -107,17 +107,17 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 ### 2024-03-24
 
 - Made a kettle [bell swings viewer](https://gist.github.com/idvorkin/c1e201ad1a1c90069fc51bf11fa37817#pre-commit-configyaml):
-- Did a what I wrote git summary (see ection above)
+- Did a what I wrote in git summary (see section above)
 
 ### 2024-02-03
 
 - TL;DR: While upgrading my improv coach bot, it refused to do any coaching. I had to spend 1.5 hours adjusting the prompt till it worked.
   - When you look at the [diff](https://github.com/idvorkin/nlp/commit/6eca0560202696f93f954f3b46d8350d66e3a247) it looks obvious, but this stuff is alchemy groan.
 - I built an improv bot way back before openai supported function calls.
-- Of course, all the APIs broke in the last 6 months, so I decided to upgrade it
+- Of course, all the APIs broke in the last 6 months, so I decided to upgrade it.
 - Worked pretty well, about 2 hours to figure out the new spellings of things,
 - But then the model kept refusing to extend my improv story. I wasted a full hour trying to figure out how to change the prompt.
-  - Pretty surprisng given this was GPT-4
+  - Pretty surprising given this was GPT-4
 
 ### 2024-01-27
 
