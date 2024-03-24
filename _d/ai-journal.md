@@ -14,8 +14,9 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
     - [RAG Challenges](#rag-challenges)
 - [Text to speech our friends](#text-to-speech-our-friends)
 - [RAG a psychiatrist](#rag-a-psychiatrist)
+- [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
-    - [2024-02-03 etoday](#2024-02-03-etoday)
+    - [2024-03-24](#2024-03-24)
     - [2024-02-03](#2024-02-03)
     - [2024-01-27](#2024-01-27)
     - [2023-11-26](#2023-11-26)
@@ -78,9 +79,35 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 2. pip install markdown-crawler
    markdown-crawler <https://whatilearnedsofar.com/practice/> --output-dir ./practice
 
+## What I wrote summary
+
+- I tend to write a fair bit over a time span, and forget what i did. I used a simple [git log stat creator](https://github.com/idvorkin/settings/blob/7c747bf7061a2da774faedd6efe14fdff547e92d/shared/zsh_include.sh?plain=1#L133) to see it, but it was too simple
+- Turns, out LLMs are a great way to do this. So I wrote an [app for it](https://github.com/idvorkin/nlp/blob/303d7c58265b647dead79ccdbaeafd0cab58d1a0/changes.py?plain=1#L211). It does [great summaries](https://gist.github.com/idvorkin/7f457ef75330f5faee8c9a82a3d0d820]. Inlining changes to this app as follows:
+
+  - [changes.py](https://github.com/idvorkin/nlp/blob/303d7c58265b647dead79ccdbaeafd0cab58d1a0/changes.py)
+  - Creation of a new Python script to handle Git diffs and summarize changes using OpenAI.
+  - Major functionalities include:
+    - Asynchronous retrieval of file diffs from Git using specified commit ranges.
+    - Summarization of changes in files between two commits.
+    - Filtering out specific files (e.g., Jupyter notebooks and back-links.json).
+    - Environment setup for OpenAI API key from a secrets file.
+    - Generation of prompts for OpenAI to summarize and rank changes based on impact.
+    - Command-line interface implementation using Typer for user interaction.
+  - Functions to interact with Git:
+    - Retrieval of repository path from Git remote URL.
+    - Fetching first and last commit hashes within a specified date range.
+  - Obtaining a list of changed files between two commits.
+  - Utilities for handling dates and generating summaries:
+    - Function to calculate tomorrow's date.
+    - Prompt generation for summarizing and reordering file changes.
+  - Logging and debugging setup with Loguru and PuDB.
+
 ## Diary
 
-### 2024-02-03 etoday
+### 2024-03-24
+
+- Made a kettle [bell swings viewer](https://gist.github.com/idvorkin/c1e201ad1a1c90069fc51bf11fa37817#pre-commit-configyaml):
+- Did a what I wrote git summary (see ection above)
 
 ### 2024-02-03
 
