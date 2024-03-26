@@ -10,10 +10,11 @@ Testing math is easy, it's right or wrong. Test spelling is easy too, but if an 
 <!-- vim-markdown-toc GFM -->
 
 - [Testing Theory](#testing-theory)
-    - [Simplest form of testing:](#simplest-form-of-testing)
+    - [Simplest form of testing](#simplest-form-of-testing)
     - [Wrinkle - A/B Testing](#wrinkle---ab-testing)
     - [Wrinkle - No Known Answer](#wrinkle---no-known-answer)
     - [Wrinkle - No clear questions](#wrinkle---no-clear-questions)
+    - [MT-Bench -  LLM as judge](#mt-bench----llm-as-judge)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -62,3 +63,9 @@ Judges are subjective, so we can have mulitple judges and average their answers 
 Before testing:
 
 - Have an expert create a list of tasks
+
+## MT-Bench - LLM as judge
+
+A paper desribing the approach here: https://arxiv.org/html/2306.05685v4
+
+An the github repo w/test sets: https://github.com/Dongping-Chen/MLLM-Judge/
