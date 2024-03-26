@@ -14,7 +14,7 @@ Testing math is easy, it's right or wrong. Test spelling is easy too, but if an 
     - [Wrinkle - A/B Testing](#wrinkle---ab-testing)
     - [Wrinkle - No Known Answer](#wrinkle---no-known-answer)
     - [Wrinkle - No clear questions](#wrinkle---no-clear-questions)
-    - [MT-Bench -  LLM as judge](#mt-bench----llm-as-judge)
+    - [MT-Bench - LLM as judge](#mt-bench---llm-as-judge)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
