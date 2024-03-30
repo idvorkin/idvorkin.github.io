@@ -16,6 +16,7 @@ permalink: /terzepatide
 <!-- vim-markdown-toc GFM -->
 
 - [What's it like?](#whats-it-like)
+- [Differences from calorie restriction](#differences-from-calorie-restriction)
 - [Side effects](#side-effects)
     - [It's mostly the side effects of dieting hard (if you are)](#its-mostly-the-side-effects-of-dieting-hard-if-you-are)
     - [Gastroinstronal](#gastroinstronal)
@@ -38,6 +39,26 @@ Interesting it's volume based, so if you wolf down calorie dense foods, you can 
 - You don't feel hungry.
 - You feel full fast
 - Because you feel full, you're more likely to stop and savor.
+
+## Differences from calorie restriction
+
+I've done a ton of dieting - the core approach is to get my calories down, get used to an empty stomach, and frequently eat small meals like popcorn or protein shakes - which satiates me. This **does not** work well with terzepatide.
+
+I think the reason is that on the above dieting strategy you get used to a mostly empty belly, and even a bit full having some calories feels satiated.
+
+On terzepatide, you digest food more slowly. So you're better off eating a large meal of meat, and then your digestion is slowed down so you feel full for way longer.
+
+I'll convert this to a graph, and all these numbers are made up:
+
+- Fullness- How full you need to feel full
+- Normal meal - How full you need to feel full on a normal meal
+- Drain speed - How quickly you are digesting those calories
+
+| Mode          | Fullness | Normal Meal | Digestion/Hour |
+| ------------- | -------- | ----------- | -------------- |
+| Normal Eating | 100      | 70          | 30             |
+| Local Dieting | 50       | 20          | 30             |
+| Terzepatide   | 100      | 70          | 10             |
 
 ## Side effects
 
