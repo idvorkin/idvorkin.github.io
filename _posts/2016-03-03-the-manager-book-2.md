@@ -76,7 +76,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [Agency and Psychological Safety](#agency-and-psychological-safety)
     - [Kudos Boards - Appreciations](#kudos-boards---appreciations)
     - [How do you like being questioned/micromanaged?](#how-do-you-like-being-questionedmicromanaged)
-    - [How do you transition from mercenaries to missionaries.](#how-do-you-transition-from-mercenaries-to-missionaries)
+    - [How do you transition from mercenaries to missionaries](#how-do-you-transition-from-mercenaries-to-missionaries)
 - [Process and Mechanism](#process-and-mechanism)
     - [Theory of Process](#theory-of-process)
     - [The dark side of process](#the-dark-side-of-process)
@@ -143,8 +143,8 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [What's the best/worst part of your job](#whats-the-bestworst-part-of-your-job)
     - [How do you get anything done with all of those meetings](#how-do-you-get-anything-done-with-all-of-those-meetings)
     - [What do you think developers do](#what-do-you-think-developers-do)
-    - [How can devs do to make managers jobs easier](#how-can-devs-do-to-make-managers-jobs-easier)
-    - [Why do managers always say coding is part of their job but we all know it isn’t](#why-do-managers-always-say-coding-is-part-of-their-job-but-we-all-know-it-isnt)
+    - [What can engineers do to make manager's jobs easier](#what-can-engineers-do-to-make-managers-jobs-easier)
+    - [Why do managers always say coding is part of their job but we all know it isn't](#why-do-managers-always-say-coding-is-part-of-their-job-but-we-all-know-it-isnt)
 - [Product Development and Product Management](#product-development-and-product-management)
 - [Business Acumen and Strategy](#business-acumen-and-strategy)
 - [Appendix](#appendix)
@@ -1793,7 +1793,7 @@ At each stage of road productions things go wrong and we learn new stuff. TODO C
 
 ### What do you do all day
 
-See [the managers schedule](#l-what-managers-schedule) section.
+See [the manager's schedule](#l-what-manager's-schedule) section.
 
 ### What's the best/worst part of your job
 
@@ -1801,21 +1801,21 @@ See [what do managers do](#l-what-managers-do) section.
 
 ### How do you get anything done with all of those meetings
 
-The majority of the things I do are about amplifying, de-risking and unblocking people. Much of that works best when there's someone else in the room. Further many of those meetings, especially 1:1s and small groups energize me, making me able to tackle the rest of my with gusto.
+The majority of the things I do are about amplifying, de-risking, and unblocking people. Much of that works best when there's someone else in the room. Furthermore, many of those meetings, especially 1:1s and small groups energize me, making me able to tackle the rest of my work with gusto.
 
-For tasks that require me to be heads down and [write/think](/write) I try to get that done crazy early in the morning when I have zero interruptions and maximum intellectual horsepower.
+For tasks that require me to be heads down and [write/think](/write), I try to get that done crazy early in the morning when I have zero interruptions and maximum intellectual horsepower.
 
 ### What do you think developers do
 
-### How can devs do to make managers jobs easier
+### What can engineers do to make manager's jobs easier
 
 **Realize you and the team are a domain expert**
 
-Due to positional authority, managers statements can be overweighted. However, managers by not being immersed in the problem know the least. Remind the team, and yourself, that the manager knows the least about the tech, and their words should not be overweighted.
+Due to positional authority, manager's statements can be overweighted. However, managers by not being immersed in the problem know the least. Remind the team, and yourself, that the manager knows the least about the tech, and their words should not be overweighted.
 
 **No surprises**
 
-- If stuff goes wrong share it ASAP, the manager would love to do the same
+- If stuff goes wrong, share it ASAP, the manager would love to do the same
 - Discuss what you want and need, and if you're getting it
 
 **Give insight into places manager has no visibility**
@@ -1823,15 +1823,15 @@ Due to positional authority, managers statements can be overweighted. However, m
 - When people are upset/demoralized/angry, often ICs know before managers as people don't tell managers. Sharing this with a manager is great so they can take action.
 - Give feedback, especially hard feedback.
 
-**Maximize your impact, and the teams impact**
+**Maximize your impact, and the team's impact**
 
-The evaluation criteria for a manager is the success of the team, maximize your impact (and that of the team), and that's the best way to help your manager.
+The evaluation criteria for a manager are the success of the team, maximize your impact (and that of the team), and that's the best way to help your manager.
 
-### Why do managers always say coding is part of their job but we all know it isn’t
+### Why do managers always say coding is part of their job but we all know it isn't
 
 I don't think managers should code with a minor exception ([More details](#l-code)). A related question might be:
 
-Why do we assess managers ability to code - no clue, but a few enlightened companies do not.
+Why do we assess manager's ability to code - no clue, but a few enlightened companies do not.
 
 ## Product Development and Product Management
 
