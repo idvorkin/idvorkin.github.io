@@ -70,6 +70,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [How do you help a team gel](#how-do-you-help-a-team-gel)
     - [What order would you introduce culture](#what-order-would-you-introduce-culture)
     - [How do you make a good culture](#how-do-you-make-a-good-culture)
+    - [How do you think about ad-hoc insights/questions from others, even if you've already thought of and maybe presented the doc/plan/answer already?](#how-do-you-think-about-ad-hoc-insightsquestions-from-others-even-if-youve-already-thought-of-and-maybe-presented-the-docplananswer-already)
     - [How do you handle Remote Work](#how-do-you-handle-remote-work)
     - [What about Work Life Balance](#what-about-work-life-balance)
     - [How do you deal with a team that disagrees with the leadership](#how-do-you-deal-with-a-team-that-disagrees-with-the-leadership)
@@ -133,7 +134,6 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [Insufficient progress - Double down or pivot](#insufficient-progress---double-down-or-pivot)
     - [Layoffs](#layoffs)
 - [Personal Motivations](#personal-motivations)
-    - [Do you like getting ad hoc chats/Q&A/insights from execs, even if you've already thought through and maybe presented the doc/plan/answer already?](#do-you-like-getting-ad-hoc-chatsqainsights-from-execs-even-if-youve-already-thought-through-and-maybe-presented-the-docplananswer-already)
     - [Why do you find management attractive](#why-do-you-find-management-attractive)
     - [What is your dream job](#what-is-your-dream-job)
     - [What are your career aspirations](#what-are-your-career-aspirations)
@@ -792,6 +792,24 @@ Here's what I worked with the team to establish
   - Let team take ownership of it.
   - Incite pride and purpose
 - Repeat/Repeat/Repeat
+
+### How do you think about ad-hoc insights/questions from others, even if you've already thought of and maybe presented the doc/plan/answer already?
+
+_(others == peers, VP, interns, doesn't matter)_
+
+Short answer: I **really, really** appreciate it.
+
+Medium answer: The return on investment (ROI) is fantastic. Let's do the math.
+
+- For the other person - They already thought of something, the cost for them to bring it up is **super cheap**.
+- On my side there are two cases:
+  - I've already thought of the answer/insight, explaining it should be **super cheap**
+  - I haven't thought of it, now it's not cheap, but could be a huge saving down the road, great ROI.
+  - Bonus: I have thought about it, but explaining it again with the twist brought on by that person adds a new insight and improves my understanding or explanation.
+
+Long Answer:
+
+When I get these questions/insights, I don't feel questioned/seconded guessed, I feel honored. The other person is super busy and has spent their precious energy thinking through an issue I care about, which is essentially caring about my success. The other person has a tonne of experiences and perspective different from my own, and it's a real gift when they spend their energy on me.
 
 ### How do you handle Remote Work
 
@@ -1737,22 +1755,6 @@ General
 ## Personal Motivations
 
 I guess the whole post is personal, as these are my opinions. The questions below can't be "evaluated" as they deal with internal motivations, however they can be questioned to determine if these are really my motivations, and if I"m being consistent between my actions and motivations.
-
-### Do you like getting ad hoc chats/Q&A/insights from execs, even if you've already thought through and maybe presented the doc/plan/answer already?
-
-_(aside, the answer is the same regardless of exec or intern)_
-
-Short answer: I **really, really** do, the ROI is fantastic. Let's do the math.
-
-- For the other person - They already thought of something, the cost for them to bring it up is **super cheap**.
-- On my side there are two cases:
-  - I've already thought of the answer/insight, explaining it again is **super cheap**
-  - I haven't thought of it, now it's not cheap, but could be a huge saving down the road, great ROI.
-  - Bonus: I have thought about it, but explaining it again with the twist brought on by that person adds a new insight
-
-Long Answers:
-
-Everyone is super busy, and has a slew of experiences and perspectives different than my own. If they put in the effort to think about my problem space/domain, that's incredibly high-value work I'd be foolish to waste.
 
 ### Why do you find management attractive
 
