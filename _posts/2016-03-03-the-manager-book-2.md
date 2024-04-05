@@ -797,9 +797,9 @@ Here's what I worked with the team to establish
 
 _(others == peers, VP, interns, doesn't matter)_
 
-Short answer: I **really, really** appreciate it.
+**Concise answer:** I **really, really** appreciate it.
 
-Medium answer: The return on investment (ROI) is fantastic. Let's do the math.
+**Robot answer:** The return on investment (ROI) is fantastic. Let's do the math.
 
 - For the other person - They already thought of something, the cost for them to bring it up is **super cheap**.
 - On my side there are two cases:
@@ -807,9 +807,7 @@ Medium answer: The return on investment (ROI) is fantastic. Let's do the math.
   - I haven't thought of it, now it's not cheap, but could be a huge saving down the road, great ROI.
   - Bonus: I have thought about it, but explaining it again with the twist brought on by that person adds a new insight and improves my understanding or explanation.
 
-Long Answer:
-
-When I get these questions/insights, I don't feel questioned/seconded guessed, I feel honored. The other person is super busy and has spent their precious energy thinking through an issue I care about, which is essentially caring about my success. The other person has a tonne of experiences and perspective different from my own, and it's a real gift when they spend their energy on me.
+**Human Answer:** When I get these questions/insights, I don't feel questioned/seconded guessed, I feel honored. The other person is super busy and has spent their precious energy thinking through an issue I care about, which is essentially caring about my success. The other person has a tonne of experiences and perspective different from my own, and it's a real gift when they spend their energy on me.
 
 ### How do you handle Remote Work
 
