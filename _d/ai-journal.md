@@ -16,6 +16,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+    - [2024-04-06](#2024-04-06)
     - [2024-03-24](#2024-03-24)
     - [2024-02-03](#2024-02-03)
     - [2024-01-27](#2024-01-27)
@@ -103,6 +104,18 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2024-04-06
+
+- Containerize Bot
+
+  - Secret Injection
+  - Auto Starting
+
+- Retrieval
+  - Better Observability
+  - Better Retrieval Strategies
+  - Chunk Manager Book my chapters
 
 ### 2024-03-24
 
