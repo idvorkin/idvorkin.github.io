@@ -6,6 +6,10 @@ layout: post
 
 Lets clean this up and see what it looks like ...
 
+Note, at this point I should use the include version ([example](https://github.com/idvorkin/idvorkin.github.io/blob/456050423530d87150b33f7e3db4176a6045982e/_d/time-off-2024-04.md?plain=1#L112))...
+
+{include asciicinema.html src="651707" offset="16" }
+
 <a1sciinema-player src="https://raw.githubusercontent.com/idvorkin/blob/master/gptfix.cast" poster="npt:2:34"></a1sciinema-player>
 Script 1:
 
