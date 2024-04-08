@@ -6,20 +6,22 @@ redirect_from:
   - /time-off-2024-04
 ---
 
-It's spring break 2024 and I've got a week off. The last few weeks have been a bit crazy at work trying to get some big features launched and into public testing, so very excited for the timeoff. I usually try to avoid too much tech, but I'm looking forward to making some tech investments as it's been a while.
+It's spring break 2024 and I've got a week off. The last few weeks have been a bit crazy at work trying to get some big features launched and into public testing, so very excited for the time off. I usually try to avoid too much tech, but I'm looking forward to making some tech investments as it's been a while.
 
-I kind of miss doing technical stuff on my blog, and looking fowrad to that
+I kind of miss doing lots of technical and blogging - so I'm looking forward to both of those.
 
-Long ago, I learned I should pre-write these, but I decided (implicitly, by not applying discipline) to wing it, so I'm writing this at the end of the vacation.
-
-I've got several head winds going into this break:
+I've got several headwinds going into this break:
 
 - Money Troubles have been great - stock market is through the roof, with Meta and MSFT at all-time highs!
 - Health has been great, diet, and exercise are dialed in.
 - Even though I had three intense weeks at work, my co-workers are amazing, and everything is good.
 - My "Dealer of Smiles and Wonder" Persona has re-emerged from Hibernation
 
-Tail winds
+All coins have two sides so Tailwinds as well:
+
+- Weather is cool and rainy
+- Tori is working
+- Most of our friends are out of town
 
 My top priorities:
 
@@ -54,8 +56,6 @@ My top priorities:
     - [Energy](#energy)
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
-    - [Got grumpy about some stuff](#got-grumpy-about-some-stuff)
-    - [Angry that wasting my vacation, and sacred time with family](#angry-that-wasting-my-vacation-and-sacred-time-with-family)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -73,7 +73,7 @@ New Learnings
 
 ### Friends
 
-- ☐ Walk with Bob
+- ☑ Walk with Bob
 
 ### Tori
 
@@ -97,17 +97,19 @@ New Learnings
 
 - ☐ Repair my cargo bike computer
 - ☐ Look at bubble bike setup
+- ☑ Setup my tesla bike carrier
 
 ### Tech Guru
 
-- ☐ Containerize Bots
-- ☐ Get more out of Improv Bot
-- ☐ Some more work on Improv Bot
+- ☑ Containerize Bots
+- ☑ Get more out of Improv Bot
 - ☐ Look at LLM based Eval
 
 #### Shell + Enabling Environment + Python in VIM
 
 - ☐ Figure out how to put IgConvo into pop up prompt []
+
+{%include asciicinema.html src="651707" offset="16" %}
 
 ## Cognitive Health
 
@@ -128,6 +130,8 @@ New Learnings
 ## Physical Health
 
 - ☐ Video my swings and run them through my Swing-A-Lyzer
+  https://www.youtube.com/watch?v=&ab_channel=IgorDvorkin
+  {% include youtube.html src="BD6Sys1GIuU" %}
 - ☑ 3x5 Good Pullups
 - ☐ 10x10 swings in 30 min
 
@@ -157,13 +161,3 @@ Gym Days:
 - Basically own everything I want
 
 ## Mental quicksand
-
-### Got grumpy about some stuff
-
-- ☐ Study sublime states
-
-{% include summarize-page.html src="/sublime" %}
-
-### Angry that wasting my vacation, and sacred time with family
-
-The antidote is doing stuff, divide and conquer to reduce the activation energy and tackle it
