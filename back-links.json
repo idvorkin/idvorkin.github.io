@@ -156,6 +156,8 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
+        "/SoM": "/sleight-of-mouth",
+        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -172,6 +174,7 @@
         "/thinking": "/writing",
         "/time-off": "/timeoff",
         "/time-off-2024-02": "/d/time-off-2024-02",
+        "/time-off-2024-04": "/d/time-off-2024-04",
         "/todo": "/todo_enjoy",
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
@@ -631,7 +634,7 @@
             "py/object": "__main__.Page",
             "url": "/balloon",
             "title": "Being a Ballooner",
-            "description": "How can you put a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Making balloons! In 2022 I discovered ballooning, and have used it to bring joy ever since.\n\n",
+            "description": "Want to plaster a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.\n\n",
             "file_path": "_site/balloon.html",
             "outgoing_links": [
                 "/joy"
@@ -642,7 +645,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/balloon.md",
-            "doc_size": 15000
+            "doc_size": 18000
         },
         "/be-proactive": {
             "py/object": "__main__.Page",
@@ -1469,6 +1472,21 @@
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-02.md",
             "doc_size": 19000
+        },
+        "/d/time-off-2024-04": {
+            "py/object": "__main__.Page",
+            "url": "/d/time-off-2024-04",
+            "title": "Time off Spring break 2024 - Chillin",
+            "description": "It’s spring break 2024 and I’ve got a week off. The last few weeks have been a bit crazy at work trying to get some big features launched and into public testing, so very excited for the timeoff. I usually try to avoid too much tech, but I’m looking forward to making some tech investments as it’s been a while.\n\n",
+            "file_path": "_site/d/time-off-2024-04.html",
+            "outgoing_links": [
+                "/sublime",
+                "/terzepatide"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2024-04.md",
+            "doc_size": 15000
         },
         "/d/time-off-2024-08": {
             "py/object": "__main__.Page",
@@ -2574,7 +2592,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 136000
+            "doc_size": 138000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -3239,7 +3257,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/seattle.md",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/sell": {
             "py/object": "__main__.Page",
@@ -3474,6 +3492,7 @@
             "incoming_links": [
                 "/affirmations",
                 "/d/time-off-2024-02",
+                "/d/time-off-2024-04",
                 "/emotional-health",
                 "/siy"
             ],
@@ -3665,7 +3684,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/data-systems.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
@@ -3920,11 +3939,12 @@
             "file_path": "_site/terzepatide.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/d/time-off-2024-04",
                 "/diet"
             ],
             "redirect_url": "",
             "markdown_path": "_d/terzepatide.md",
-            "doc_size": 13000
+            "doc_size": 15000
         },
         "/tesla": {
             "py/object": "__main__.Page",
