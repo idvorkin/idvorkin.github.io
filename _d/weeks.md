@@ -60,16 +60,6 @@ My life, where each week I've been alive is a little box. When meaningful things
     		    <a name="decade-{{ age }}"></a>
     		    <div class="row text-left display-block w-100 mt-4">
     			    <div class="col sticky-top mt-1" style="top: 60px; background-color: #fff;"><h2 class="mt-0">
-    			    	{% if page.suppress_decades %}
-    			      {% elsif age == 0 %}
-    			        My first ten years
-    			      {% elsif age == 10 %}
-    			        My teens
-    			      {% elsif age == 100 %}
-    			        Endgame
-    			      {% else %}
-    			        My {{ age }}s
-    			      {% endif %}
     			    </h2></div>
     			  	</div>
     			{% endif %}

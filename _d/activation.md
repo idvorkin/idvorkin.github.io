@@ -235,3 +235,5 @@ The calendar is a simple tool to reduce stopping and starting energy. If you thi
 ### Sleep and activation Energy
 
 Sleep is something we need to activate every day, and has a huge impact on our mental health, so it's important to know how to [optimize for this](/insomnia). First, decrease the starting energy by making consistent bed time a habit, and reducing caffeine intake. Also, don't engage in high stopping energy activities before bed. TikTok will keep you up, but reading a boring book will get you down for the count.
+
+Quoting [Brian Johnson](/blueprint) a good nites sleep is like putting life into "easy mode".

@@ -6,12 +6,14 @@ redirect_from:
   - /effectiveness
 ---
 
-I'm good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from [mortality software](/mortality-software).
+I'm good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from [mortality software](/mortality-software). Todo, decide if this post should fork into energy and balance
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Types of balance](#types-of-balance)
+- [On Balanace](#on-balanace)
+    - [Energy is finite, like really finite.](#energy-is-finite-like-really-finite)
+    - [You need to decide how you'll spend it](#you-need-to-decide-how-youll-spend-it)
     - [Golden Geese: Balancing Production and Production Capacity](#golden-geese-balancing-production-and-production-capacity)
     - [Juggling Elephants: Balancing the roles in your life](#juggling-elephants-balancing-the-roles-in-your-life)
     - [Productivity vs addiction and resistance](#productivity-vs-addiction-and-resistance)
@@ -23,6 +25,7 @@ I'm good at a lot of things, but balance is really hard for me. Hard for everyon
     - [Parkinson's law and the 80/20 rule](#parkinsons-law-and-the-8020-rule)
     - [Peak end rule and moments](#peak-end-rule-and-moments)
     - [Activation Energy](#activation-energy)
+    - [Recharging with Time off](#recharging-with-time-off)
 - [More resources](#more-resources)
 
 <!-- vim-markdown-toc -->
@@ -33,7 +36,17 @@ I'm good at a lot of things, but balance is really hard for me. Hard for everyon
     defer(load_balance)
 </script>
 
-## Types of balance
+## On Balanace
+
+### Energy is finite, like really finite.
+
+If you're lucky you'll get 4160 weeks (80 years), and [I've already spent 2400 of mine](/weeks).
+
+_Todo inline photo, or auto generate it._
+
+### You need to decide how you'll spend it
+
+Mortalilgy software/essentialist/beign with the end in mind
 
 ### Golden Geese: Balancing Production and Production Capacity
 
@@ -119,6 +132,12 @@ This also has some consequences:
 ### Activation Energy
 
 Investing in a role requires activation. See [Activation Energy](/activation)
+
+{%include summarize-page.html src="/activation" %}
+
+### Recharging with Time off
+
+{%include summarize-page.html src="/time-off" %}
 
 ## More resources
 
