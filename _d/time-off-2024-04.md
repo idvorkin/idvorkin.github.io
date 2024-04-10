@@ -103,11 +103,15 @@ New Learnings
 
 - ☑ Containerize Bots
 - ☑ Get more out of Improv Bot
-- ☐ Look at LLM based Eval
+  - Added 3 things promp
+- ☑ Look at [LLM based Eval](/ai-testing)
 
 #### Shell + Enabling Environment + Python in VIM
 
-- ☐ Figure out how to put IgConvo into pop up prompt []
+- ☐ Use Claude Opus for code it seems better
+- ☐ Make Git Commit use a better prompt
+- ☐ Upgrade to using multiple models!
+- ☑ Figure out how to put IgConvo into pop up prompt
 
 {%include asciicinema.html src="651707" offset="16" %}
 
@@ -130,7 +134,6 @@ New Learnings
 ## Physical Health
 
 - ☐ Video my swings and run them through my Swing-A-Lyzer
-  https://www.youtube.com/watch?v=&ab_channel=IgorDvorkin
   {% include youtube.html src="BD6Sys1GIuU" %}
 - ☑ 3x5 Good Pullups
 - ☐ 10x10 swings in 30 min
