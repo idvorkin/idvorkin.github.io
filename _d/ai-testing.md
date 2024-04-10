@@ -33,13 +33,17 @@ I use LangSmith
 
 ### Testing across prompts
 
-I use PromptFoo
+I use PromptFoo, but havent' really done this.
 
 ### Testing across models
 
-Easy trick, just keep the output of both. Here's an example, where I use multiple LLMs to generate output, and just keep both.
+1. PromptFoo - For heavy lifts
+2. [https://nat.dev](https://nat.dev) - For adhoc experimentation
+3. Just keep the output of both - The cheater's way
 
-[My commit that actually does this](https://github.com/idvorkin/nlp/commit/674e73c6729cedc9a07cdad326c67ef8976601db)
+Here's an example, where I use multiple LLMs to generate output, and just keep both.
+
+For example here's the explanation of [My commit that does this](https://github.com/idvorkin/nlp/commit/674e73c6729cedc9a07cdad326c67ef8976601db)
 
 Notice that Claude does a better job getting the gist of it.
 
