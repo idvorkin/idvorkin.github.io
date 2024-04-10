@@ -4,7 +4,7 @@ title: Testing AI
 permalink: /ai-testing
 ---
 
-Testing math is easy, it's right or wrong. Test spelling is easy too, but testing if a joke is funny - now that's tough. Lets talk about how to test AI
+Testing math is easy, it's right or wrong. Test spelling is easy too, but testing if a joke is funny - now that's tough. Let's talk about how to test AI
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -41,7 +41,7 @@ Easy trick, just keep the output of both. Here's an example, where I use multipl
 
 [My commit that actually does this](https://github.com/idvorkin/nlp/commit/674e73c6729cedc9a07cdad326c67ef8976601db)
 
-Notice that claude does a better job getting the gist of it.
+Notice that Claude does a better job getting the gist of it.
 
 _-- claude-3-opus-20240229 --_
 Add support for generating commit messages from multiple LLMs concurrently
@@ -62,15 +62,30 @@ instruction formatting
 
 ### Who is the funnier LLM
 
-One of my AI creation is an improv coach. A key requriement of said coach is that it is funny. How the heck can I tell if GPT3.5, GPT4, or Claude is funnier?
+One of my AI creations is an improv coach. A key requirement of said coach is that it is funny. How the heck can I tell if GPT3.5, GPT4, or Claude is funnier?
 
-I found a package called promptfoo, which is most of what I want
+I found a package called PromptFoo, which is most of what I want
 
 See the [code here](https://github.com/idvorkin/nlp/commit/9b5af637477099c6562c80f46ad2a3cec65d6c27), and you can interact with a [live file here](https://app.promptfoo.dev/eval/f:e66b7a20-67b1-4e78-a0bd-63a3f7f30f96/).
 
 {% include blob_image.html src="/blog/promptfoo-3-things.webp" %}
 
 ### Who is the better git summarizer
+
+You can see my PromptFoo test cases [here](https://github.com/idvorkin/nlp/blob/1ca6b3f85895b2684596c8957f0a0bd5a7a5d4f1/eval/commit/diff_commit.json?plain=1#L2f).
+
+How to get the test case? I'd recommend recording a trace with LangSmith, then copy/export them from a LangChain trace and write to JSON (todo add a script for this)
+
+And the output of the run [in PromptFoo](https://app.promptfoo.dev/eval/f:442e0857-efc0-408b-9a6d-c064ee7ae306).
+
+Note, you can both assess these as a human, also have the LLM look at criteria
+
+```yaml
+tests:
+  assert:
+    - type: llm-rubric
+      value: ensure the diff is described well
+```
 
 ## Testing Theory
 
@@ -82,7 +97,7 @@ Before testing:
 
 Test Time
 
-- Have system perform those tasks and write down answer
+- Have the system perform those tasks and write down the answer
 
 Eval Time
 
@@ -109,7 +124,7 @@ Eval Time:
 
 Have a judge give a subjective score.
 
-Judges are subjective, so we can have mulitple judges and average their answers - like we do in boxing matches, or work performance reveiws
+Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches, or work performance reviews
 
 ### Wrinkle - No clear questions
 
