@@ -97,20 +97,23 @@ New Learnings
 
 - ☐ Repair my cargo bike computer
 - ☐ Look at bubble bike setup
-- ☑ Setup my tesla bike carrier
+- ☑ Setup my Tesla bike carrier
 
 ### Tech Guru
 
 - ☑ Containerize Bots
 - ☑ Get more out of Improv Bot
-  - Added 3 things promp
+  - Added 3 things prompt
 - ☑ Look at [LLM based Eval](/ai-testing)
+- ☐ Create a blog post on Energy
+- ☐ Create a blog on Enabling Environment
+- ☐ Create a prompt to digest another blog and find most similar posts, then compare to find matching mental models
 
 #### Shell + Enabling Environment + Python in VIM
 
-- ☐ Use Claude Opus for code it seems better
-- ☐ Make Git Commit use a better prompt
-- ☐ Upgrade to using multiple models!
+- ☑ Use Claude Opus for code it seems better
+- ☑ Make Git Commit use a better prompt
+- ☑ Upgrade to using multiple models!
 - ☑ Figure out how to put IgConvo into pop up prompt
 
 {%include asciicinema.html src="651707" offset="16" %}
@@ -159,7 +162,7 @@ Gym Days:
 
 ## House and goods
 
-- ☐ Fix Hottub
+- ☐ Fix Hot tub
 - Stocks are way up so feeling very financially secure (though security should come from production capacity, not the current assets)
 - Basically own everything I want
 
