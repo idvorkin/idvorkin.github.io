@@ -43,6 +43,7 @@
         "/classact": "/class-act",
         "/coach": "/coaching",
         "/Coaching-Questions": "/coaching",
+        "/cocaine": "/mania",
         "/cold": "/warm",
         "/compassion": "/curious",
         "/compensation": "/comp",
@@ -110,6 +111,7 @@
         "/makes-me-cry": "/touching",
         "/makesmile": "/joy",
         "/manager": "/being-a-great-manager",
+        "/manic": "/mania",
         "/mechanism": "/upstream",
         "/meditate": "/siy",
         "/meditation": "/siy",
@@ -156,8 +158,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -344,6 +344,7 @@
             "file_path": "_site/activation.html",
             "outgoing_links": [
                 "/addiction",
+                "/blueprint",
                 "/d/habits",
                 "/insomnia"
             ],
@@ -464,16 +465,18 @@
             "py/object": "__main__.Page",
             "url": "/ai-testing",
             "title": "Testing AI",
-            "description": "Testing math is easy, it’s right or wrong. Test spelling is easy too, but if an essay is good is much harder. Lets talk about how to test AI\n\n",
+            "description": "Testing math is easy, it’s right or wrong. Test spelling is easy too, but testing if a joke is funny - now that’s tough. Let’s talk about how to test AI\n\n",
             "file_path": "_site/ai-testing.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/d/time-off-2024-04",
+                "/genai-talk",
                 "/ml",
                 "/testing"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-testing.md",
-            "doc_size": 11000
+            "doc_size": 15000
         },
         "/amazon": {
             "py/object": "__main__.Page",
@@ -609,7 +612,7 @@
             "py/object": "__main__.Page",
             "url": "/balance",
             "title": "Balance - The Holy Grail",
-            "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from mortality software.\n\n",
+            "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from mortality software. Todo, decide if this post should fork into energy and balance\n\n",
             "file_path": "_site/balance.html",
             "outgoing_links": [
                 "/7-habits",
@@ -619,7 +622,9 @@
                 "/moments",
                 "/mortality-software",
                 "/parkinson",
-                "/sustainable-work"
+                "/sustainable-work",
+                "/timeoff",
+                "/weeks"
             ],
             "incoming_links": [
                 "/7-habits",
@@ -628,7 +633,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/balance2.md",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/balloon": {
             "py/object": "__main__.Page",
@@ -732,6 +737,7 @@
                 "/voices"
             ],
             "incoming_links": [
+                "/activation",
                 "/d/time-off-2024-02"
             ],
             "redirect_url": "",
@@ -1477,10 +1483,10 @@
             "py/object": "__main__.Page",
             "url": "/d/time-off-2024-04",
             "title": "Time off Spring break 2024 - Chillin",
-            "description": "It’s spring break 2024 and I’ve got a week off. The last few weeks have been a bit crazy at work trying to get some big features launched and into public testing, so very excited for the timeoff. I usually try to avoid too much tech, but I’m looking forward to making some tech investments as it’s been a while.\n\n",
+            "description": "It’s spring break 2024 and I’ve got a week off. The last few weeks have been a bit crazy at work trying to get some big features launched and into public testing, so very excited for the time off. I usually try to avoid too much tech, but I’m looking forward to making some tech investments as it’s been a while.\n\n",
             "file_path": "_site/d/time-off-2024-04.html",
             "outgoing_links": [
-                "/sublime",
+                "/ai-testing",
                 "/terzepatide"
             ],
             "incoming_links": [],
@@ -1497,12 +1503,13 @@
             "outgoing_links": [
                 "/happy",
                 "/moments",
+                "/mood",
                 "/timeoff"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-08.md",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
@@ -1635,7 +1642,7 @@
                 "/mood"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/depression.md",
+            "markdown_path": "_d/mania.md",
             "doc_size": 18000
         },
         "/design": {
@@ -2001,7 +2008,9 @@
             "title": "Your new interns - GenAI for fun and profit",
             "description": "Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!\n\n",
             "file_path": "_site/genai-talk.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/ai-testing"
+            ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/genai-talk.md",
@@ -2612,6 +2621,20 @@
             "markdown_path": "_d/manager-book-appendix.md",
             "doc_size": 27000
         },
+        "/mania": {
+            "py/object": "__main__.Page",
+            "url": "/mania",
+            "title": "Mania: It's like a free cocaine drip",
+            "description": "Here’s a tale a friend with bipolar: What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love—so, so many family and friends were desperately trying to intervene—and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, son, brother, friend, as a kind human being. It is a hard pill to swallow that I was the Evil one, after all. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn’t. You can learn a lot, but you can’t unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn’t real and that I could stop living in fear of it. That all the doubters were wrong.\n\n",
+            "file_path": "_site/mania.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/mood"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/mania.md",
+            "doc_size": 14000
+        },
         "/mental-pain": {
             "py/object": "__main__.Page",
             "url": "/mental-pain",
@@ -2818,9 +2841,11 @@
                 "/depression",
                 "/happy",
                 "/joy",
+                "/mania",
                 "/regrets"
             ],
             "incoming_links": [
+                "/d/time-off-2024-08",
                 "/happy"
             ],
             "redirect_url": "",
@@ -3492,7 +3517,6 @@
             "incoming_links": [
                 "/affirmations",
                 "/d/time-off-2024-02",
-                "/d/time-off-2024-04",
                 "/emotional-health",
                 "/siy"
             ],
@@ -3602,7 +3626,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 72000
+            "doc_size": 75000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
@@ -3684,7 +3708,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/data-systems.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
@@ -4027,6 +4051,7 @@
                 "/time-off-2020-03"
             ],
             "incoming_links": [
+                "/balance",
                 "/d/time-off-2020-03",
                 "/d/time-off-2020-12",
                 "/d/time-off-2021-11",
@@ -4123,7 +4148,7 @@
                 "/first-things-first"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/upstream.md",
+            "markdown_path": "_d/blueprint.md",
             "doc_size": 14000
         },
         "/vim-for-writing": {
@@ -4161,7 +4186,9 @@
             "description": "\n\n",
             "file_path": "_site/weeks.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/balance"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/weeks.md",
             "doc_size": 4300000

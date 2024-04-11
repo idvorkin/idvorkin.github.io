@@ -102,9 +102,13 @@ In the second type of mood-regulation failure, the experienced mood-states are p
 
 **Mania** - Everything feels good, I'm told that's what cocaine's like. Feels awesome!
 
+{%include summarize-page.html src="/mania" %}
+
 _Patients tend to recall their past experiences as better than they actually were and they relate to the future with boundless optimism. Overall, the ‘quality of reality’ experienced during a manic episode is so high it is often longed for by many patients after the episode resolves, somewhat reminiscent of the way addicts long to a “high”. In both cases the illusion of a high ‘quality of reality’ that is created by an elevated mood is seductive, self-defeating, and unaffordable_
 
 **Depression** - It's not sadness, it's a lack of feeling.
+
+{%include summarize-page.html src="/depression" %}
 
 _Major depression tends to exert a similar effect, in the opposite direction: Depressed patients typically perceive their present reality – i.e., themselves, the others around them, and the processes they are involved with, as lacking quality. Consequently, major depression often manifests with lack of self-confidence, social isolation, and a loss of interest in most activities. In addition, under the influence of their mood, patients with major depression often recall past memories as having a lower quality than the actual quality of the experiences they had and patients tend to relate to their future with an unwavering conviction of its negative quality, which manifests as non-negotiable hopelessness._
 
