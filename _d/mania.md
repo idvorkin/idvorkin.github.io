@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Mania: It's like a free cocaine drip"
-comments: true
-inprogress: true
 tags:
+  - mood
 permalink: /mania
 redirect_from:
   - /cocaine
@@ -11,17 +10,17 @@ redirect_from:
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-manic.webp
 ---
 
-The words that follow, I pray will never be my own -- What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love.So, so many family and friends were desperately trying to intervene and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, a brother, friend, and as a kind human being. It is a hard pill to swallow that I was the Evil one. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn't. You can learn a lot, but you can't unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn't real and that I could stop living in fear of it. That all the doubters were wrong (from a [friend with bi-polar](https://breckyunits.com/a-manic-startup.html)).
+The words that follow, I pray will never be my own -- What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love. So, so many family and friends were desperately trying to intervene, and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, a brother, friend, and as a kind human being. It is a hard pill to swallow that I was the Evil one. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn't. You can learn a lot, but you can't unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn't real and that I could stop living in fear of it. That all the doubters were wrong (from a [friend with bipolar](https://breckyunits.com/a-manic-startup.html)).
 
-I've always described my hypomanic episode in a positive light (but that's a trap) - I've never taken cocaine, but I did go hypo-manic in 2012, and it was glorious. Infinite energy, sharp as a whip, maximum creativity. Well, that's my subjective reality, but external observers said I was talking fast, jittery, etc. And of course, such high energy can go out of control, and it must be paid back with some future depression.
+I've always described my hypomanic episode in a positive light (but that's a trap) - I've never taken cocaine, but I did go hypomanic in 2012, and it was glorious. Infinite energy, sharp as a whip, maximum creativity. Well, that's my subjective reality, but external observers said I was talking fast, jittery, etc. And of course, such high energy can go out of control, and it must be paid back with some future depression.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [Don't fool your self, this is as serious as depression](#dont-fool-your-self-this-is-as-serious-as-depression)
+- [Don't fool yourself, this is as serious as depression](#dont-fool-yourself-this-is-as-serious-as-depression)
 - [The failure modes: Crash your car, spend all your money, have an affair.](#the-failure-modes-crash-your-car-spend-all-your-money-have-an-affair)
 - [What you should do if you sense I'm going hypomanic](#what-you-should-do-if-you-sense-im-going-hypomanic)
-- [My hypo mania in 2012](#my-hypo-mania-in-2012)
+- [My hypomania in 2012](#my-hypomania-in-2012)
 - [Optimal energy vs Hypomania](#optimal-energy-vs-hypomania)
 - [Hypomania vs Mania](#hypomania-vs-mania)
 - [Mania vs Cocaine](#mania-vs-cocaine)
@@ -30,23 +29,12 @@ I've always described my hypomanic episode in a positive light (but that's a tra
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-{%include blob_image_float_right.html src="blog/raccoon-manic.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-manic.webp" %}
 
-### Don't fool your self, this is as serious as depression
+### Don't fool yourself, this is as serious as depression
 
 - [From Breck's Nasty Manic Episode](https://breckyunits.com/a-manic-startup.html)
-
-Why did my startup fail? Me. My brain. My manic self. Someone once called me a terrible entrepreneur. I wanted more than anything to prove them wrong. That I could do this. But I couldn't. You can learn a lot about doing startups but you can't unlearn bipolar disorder.
-
-I desperately wanted to believe that bipolar disorder wasn't real and that I could stop living in fear of it. That all the doubters were wrong and that we would build a new kind of scientific database that would prove this.
-
-What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love—so, so many family and friends were desperately trying to intervene—and I spurned them and then reacted despicably. I am so, so sorry.
-
-Far worse than failing at the startup I failed as a husband, a father, son, brother, friend, as a kind human being.
-
-It is a hard pill to swallow that I was the Evil one, after all.
-
-- [Breck's hsitory of Bipolar](https://breckyunits.com/bipolarDisorder.html)
+- [Breck's history of Bipolar](https://breckyunits.com/bipolarDisorder.html)
 - [Breck's Blog](https://breckyunits.com/bipolar.html)
 
 ### The failure modes: Crash your car, spend all your money, have an affair.
@@ -55,28 +43,32 @@ It is a hard pill to swallow that I was the Evil one, after all.
 
 **Spend all your money** - Lucky for me, I'm pretty cheap, and basically own everything I want already.
 
-**Have an affair** - This is my highest risk, luckily at the time I was in terrible shape, and now I know there is nothing more sacred then my family.
+**Have an affair** - This is my highest risk, luckily at the time I was in terrible shape, and now I know there is nothing more sacred than my family.
 
 ### What you should do if you sense I'm going hypomanic
 
-In the bipolar survival guide they say it's critical to make a plan for when you go off kilter while you're stable. So here's my plan:
+In the bipolar survival guide, they say it's critical to make a plan for when you go off-kilter while you're stable. So here's my plan:
 
-- 1 - get me into a psychiatrist ASAP.
-- 2 need to figure this out.
-- 3 - make me read this
-- 4 - check I'm still on meds
+- Need to figure this out.
+- Make me read this
+- Get me into a psychiatrist ASAP.
+  - Check I'm still on my meds
+- Check I'm still doing my [practices](/emotional-health)
+- Make sure I've checked in with my friends/bipolar support
+  - Ammon
+  - [Breck](breckyunits.com)
 
-### My hypo mania in 2012
+### My hypomania in 2012
 
 Cause
 
-I had been diagnosed with depression, and went on SSRIs. I remember it clear as day about 12 weeks to the day of taking SSRIs we were driving back from Oregon (TBD: Find old blog post), and I suddenly felt fantastic.
+I had been diagnosed with depression and went on SSRIs. I remember it clear as day about 12 weeks to the day of taking SSRIs we were driving back from Oregon (TBD: Find old blog post), and I suddenly felt fantastic.
 
-I told my pychaitist (I'd only had him for 12 weeks), and he was like you need to stop SSRI's immediately, he also prescribed some valium in case symptoms got worse.
+I told my psychiatrist (I'd only had him for 12 weeks), and he was like you need to stop SSRIs immediately, he also prescribed some valium in case symptoms got worse.
 
 The episode:
 
-I stabilized at high energy, for about 2 or 3 months
+I stabilized at high energy for about 2 or 3 months
 
 Stuff I did
 
@@ -87,7 +79,7 @@ Stuff I did
 
 Interventions:
 
-- Lamatrogine/Lamictal - for the rest of my life.
+- Lamotrigine/Lamictal - for the rest of my life.
 
 Post Episode:
 
@@ -99,17 +91,17 @@ Sometimes, I'm at my best, and I wonder if I'm going hypomanic - so far the real
 
 ### Hypomania vs Mania
 
-I liked to use the word Mania with my pychiatrist, he scolded me, no you're not manic. Manic is different, and he told me a story.
+I liked to use the word Mania with my psychiatrist, he scolded me, no you're not manic. Manic is different, and he told me a story.
 
-Fished his client out of Lake Union in a wrestling leotard. What are you doing asked the police? Oh, I'm planning on pulling this tug boat.
+Fished his client out of Lake Union in a wrestling leotard. What are you doing asked the police? Oh, I'm planning on pulling this tugboat.
 
 ### Mania vs Cocaine
 
+Drugs are fantastic till they ruin your life. Mania is like that too.
+
 From your favorite LLM:
 
-Here's a table comparing the behavioral aspects of mania and cocaine use. Honestly, the big difference seems to be duration of mechanism.
-
-Here's the revised table without mentioning the duration of effects:
+Behaviors and consequences associated with mania and cocaine use, without addressing the duration of their effects.
 
 | Behavior Aspect                  | Mania                                                                                                    | Cocaine Use                                                                                    |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -124,8 +116,6 @@ Here's the revised table without mentioning the duration of effects:
 | **Addiction and Dependence**     | Not applicable as mania is a symptom of a disorder; however, behaviors can have addictive-like patterns. | High potential for addiction, with a compulsion to use despite negative effects.               |
 | **Aftereffects**                 | Can include post-manic depression, exhaustion, or stabilization with treatment.                          | Comedown effects include depression, lethargy, and a strong craving to use again.              |
 
-This table maintains a focus on the behaviors and consequences associated with mania and cocaine use, without addressing the duration of their effects.
-
 ### Stats
 
-To bed added
+To be added
