@@ -44,7 +44,7 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 **How?** Every day I take 10 minutes to write about 750 words as quickly as I can on the ideas sloshing around in my head. I do it on [750words](http://www.750words.com) which is optimized for this practice.
 
-**How's that working out for you?** Really well, this is my most consistent practice. Since [September 2011](http://ighealth.blogspot.com/2012/01/750wordscom.html), I've written over a million words on more then 1300 days.
+**How's that working out for you?** Really well, this is my most consistent practice. Since [September 2011](http://ighealth.blogspot.com/2012/01/750wordscom.html), I've written over a million words on more than 1300 days.
 
 {%include blob_image_float_right_w25.html src="noun-meditate.png" %}
 
@@ -52,17 +52,17 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 **Why?** It's easy to focus on what we don't have and what goes wrong, and forget all the things that go right, and that we should be thankful for. By taking a few minutes each day to remember what went well and what I'm grateful for, I'm reminded why my life is awesome.
 
-**NOTE** Often we confuse appreciation for gratefulness, with the difference being gratefulness is targeted appreciation. It's a good practice to include both appreciation and a target. In practice this means for each thing you appreciate apply a who you're grateful for, in 3 forms of "who": Yourself, someone else, and the universe/god. This makes the practice build your ability to appreciate and be compassionate to others (by adding a value to your understand of them). Lets demonstrate an example:
+**NOTE** Often we confuse appreciation for gratefulness, with the difference being gratefulness is targeted appreciation. It's a good practice to include both appreciation and a target. In practice, this means for each thing you appreciate apply a who you're grateful for, in 3 forms of "who": Yourself, someone else, and the universe/god. This makes the practice build your ability to appreciate and be compassionate to others (by adding a value to your understanding of them). Let's demonstrate an example:
 
 I appreciate the sunrise:
 
-- Universe: I'm grateful the universe includes something as beautful as a sunrise, which is free to all
-- Other: I'm grateful to my wife who put the kids to bed, so I can wake up early and enjoy this
+- Universe: I'm grateful the universe includes something as beautiful as a sunrise, which is free to all
+- Other: I'm grateful to my wife who put the kids to bed so I can wake up early and enjoy this
 - Self: I'm grateful to myself who prioritized waking up early.
 
 **How?** I used to use a physical journal called [FiveMinuteJournal](http://www.FiveMinuteJournal.com), it has you list the 3 things you're grateful for in the morning, and 3 things that went well in the evening.
 
-**How's that working out for you?** Really well. Because I can fill this out in less then 2 minutes, I tend to do it daily. It's hard to be objective, but since I've started this practice, I have been much more likely to think about how lucky I am.
+**How's that working out for you?** Really well. Because I can fill this out in less than 2 minutes, I tend to do it daily. It's hard to be objective, but since I've started this practice, I have been much more likely to think about how lucky I am.
 
 ### 4:30 am wake up (psst - it's really physical health)
 
@@ -74,19 +74,19 @@ I appreciate the sunrise:
 
 ### Formal 20 minute breathing meditation
 
-**Why?** It's easy from your mind to be lost, to keep it focused on the moment requires, practice lots of practice. Focusing on the breath is that practive of staying focused on the breath and noticing when your attention has wandred and returning it to the breath. Also an excellent practice for dicsipline, both in doing it daily, and in staying for the entire time.
+**Why?** It's easy for your mind to be lost, to keep it focused on the moment requires, practice lots of practice. Focusing on the breath is that practice of staying focused on the breath and noticing when your attention has wandered and returning it to the breath. Also an excellent practice for discipline, both in doing it daily, and in staying for the entire time.
 
-**How?** Once a day at any time, in any position, I'll set a timer for 20 minutes, close my eyes and focus on the breath. I used to try to sit in a fancy position, in a fancy spot, but that just increased the fricition of meditaiton. For better to just do it where you stand. More details in [search inside yourself](siy).
+**How?** Once a day at any time, in any position, I'll set a timer for 20 minutes, close my eyes and focus on the breath. I used to try to sit in a fancy position, in a fancy spot, but that just increased the friction of meditation. It's better to just do it where you stand. More details in [search inside yourself](siy).
 
-**How's that working out for you?** When I do it amazing. My latest attempt starting in October 2020, got me up to 20 minutes. Because I tend to do this in the morning, and I like having a block of time in the morning, I had to move my wake up time from 5:00 am to 4:30 am, which I love.
+**How's that working out for you?** When I do it, amazing. My latest attempt starting in October 2020, got me up to 20 minutes. Because I tend to do this in the morning, and I like having a block of time in the morning, I had to move my wake-up time from 5:00 am to 4:30 am, which I love.
 
 ### Box breathing
 
-**Why?** It's easy to stuff in anywhere i want
+**Why?** It's easy to stuff in anywhere I want
 
 **How?** App on my phone getting me to breathe - in, hold, out, hold. Often do it in the car wearing my eye mask.
 
-**How's that working out for you?** Feels great when I do it. When I started I had trouble with 4seconds, now I do 12s, soon 15s (which is cool, cuz you have 1 minute rounds). Also conveniently lets me become a nose breather.
+**How's that working out for you?** Feels great when I do it. When I started I had trouble with 4 seconds, now I do 12s, soon 15s (which is cool, 'cause you have 1-minute rounds). Also conveniently lets me become a nose breather.
 
 ## Future Practices
 
@@ -96,7 +96,7 @@ I appreciate the sunrise:
 
 ### Daily Reflective Journal
 
-**Why?** Self awareness is the basis of emotional health, and knowing our inner self requires answering a lot of how does that make you feel? and why is that? Journaling is a tool by which you can pose those questions and explore the answers anytime you have time.
+**Why?** Self-awareness is the basis of emotional health, and knowing our inner self requires answering a lot of how does that make you feel? and why is that? Journaling is a tool by which you can pose those questions and explore the answers anytime you have the time.
 
 **How?**
 
