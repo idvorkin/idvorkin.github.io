@@ -49,21 +49,12 @@ It is a hard pill to swallow that I was the Evil one, after all.
 
 ### The failure modes: Crash your car, spend all your money, have an affair.
 
-\*\*
+**Crash your car** - I hate driving, I'm either riding a bicycle, or as of 2023, or my car is [driving me](/tesla). Safe
+
+**Spend all your money** - Lucky for me, I'm pretty cheap, and basically own everything I want already.
+
+**Have an affair** - This is my highest risk, luckily at the time I was in terrible shape, and now I know there is nothing more sacred then my family.
 
 ### Stats
 
-From [CDC](https://www.cdc.gov/nchs/products/databriefs/db76.htm)
-
-- 11% of US 12+ take antidepressants
-- 22.8% of Females 40-50 take anti-depressants
-
-From [John Hopkins Medicine](https://www.hopkinsmedicine.org/health/wellness-and-prevention/mental-health-disorder-statistics)
-
-- 10% of Americans suffer from a depressive illness (major depression, bipolar disorder, or dysthymia).
-- 18% of people ages 18-54, have an anxiety disorder.
-
-From: [National Institute of Mental Health](https://www.nimh.nih.gov/health/statistics/mental-illness.shtml)
-
-- 19% of US adults have Any Mental Illness (AMI)
-- 5% of US adults have Severe Mental Illness (SMI). SMI implies illness substantially interferes with or limits one or more major life activities.
+To bed added
