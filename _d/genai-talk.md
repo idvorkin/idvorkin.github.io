@@ -404,6 +404,8 @@ You need to write: \* The compiler
 
 When you have non-deterministic systems, with unclear outputs, evaluating them is hard.
 
+{%include summarize-page.html src="/ai-testing" %}
+
 If you think about it, this is the same as evaluating a teacher or salesperson. There are 2 ways to do it:
 
 ### Engagement Based
