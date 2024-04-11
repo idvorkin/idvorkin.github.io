@@ -2,7 +2,8 @@
 layout: post
 title: "Mania: It's like a free cocaine drip"
 tags:
-  - mood
+  - emotional intelligence
+  - emotion
 permalink: /mania
 redirect_from:
   - /cocaine
