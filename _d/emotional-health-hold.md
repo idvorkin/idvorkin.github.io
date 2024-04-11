@@ -26,9 +26,9 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
     - [Daily Gratefulness Journal](#daily-gratefulness-journal)
     - [4:30 am wake up (psst - it's really physical health)](#430-am-wake-up-psst---its-really-physical-health)
     - [Formal 20 minute breathing meditation](#formal-20-minute-breathing-meditation)
+    - [Box breathing](#box-breathing)
 - [Future Practices](#future-practices)
     - [Sublime States Training](#sublime-states-training)
-    - [Box breathing](#box-breathing)
     - [Daily Reflective Journal](#daily-reflective-journal)
 - [Inconsistent/Future practices](#inconsistentfuture-practices)
     - [Discontinued Practices](#discontinued-practices)
@@ -80,19 +80,19 @@ I appreciate the sunrise:
 
 **How's that working out for you?** When I do it amazing. My latest attempt starting in October 2020, got me up to 20 minutes. Because I tend to do this in the morning, and I like having a block of time in the morning, I had to move my wake up time from 5:00 am to 4:30 am, which I love.
 
+### Box breathing
+
+**Why?** It's easy to stuff in anywhere i want
+
+**How?** App on my phone getting me to breathe - in, hold, out, hold. Often do it in the car wearing my eye mask.
+
+**How's that working out for you?** Feels great when I do it. When I started I had trouble with 4seconds, now I do 12s, soon 15s (which is cool, cuz you have 1 minute rounds). Also conveniently lets me become a nose breather.
+
 ## Future Practices
 
 ### Sublime States Training
 
 {%include summarize-page.html src="/sublime" %}
-
-### Box breathing
-
-**Why?** It's easy to stuff in anywhere i want
-
-**How?** App on my phone getting me to breathe - in, hold, out, hold. Often do it in the car wearing my eye mask
-
-**How's that working out for you?** Feels good when I do it.
 
 ### Daily Reflective Journal
 
