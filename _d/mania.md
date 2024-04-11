@@ -28,7 +28,7 @@ Here's a story from [a friend with bipolar](https://breckyunits.com/a-manic-star
 
 I've never taken cocaine, but I did go hypo-manic once, and it was glorious. Infinite energy, sharp as a whip, maximum creativity. Well, that's my subjective reality, but external observers said I was talking fast, jittery, etc. And of course, such high energy can go out of control, and it must be paid back with some future depression.
 
-{%include blob_image_float_right.html src="blog/racoon_mania.webp" %}
+{%include blob_image_float_right.html src="blog/raccoon-manic.webp" %}
 
 ### Don't fool your self, this is as serious as depression
 
