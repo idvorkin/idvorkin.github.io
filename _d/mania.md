@@ -20,7 +20,9 @@ I've never taken cocaine, but I did go hypo-manic in 2012, and it was glorious. 
 
 - [Don't fool your self, this is as serious as depression](#dont-fool-your-self-this-is-as-serious-as-depression)
 - [The failure modes: Crash your car, spend all your money, have an affair.](#the-failure-modes-crash-your-car-spend-all-your-money-have-an-affair)
+- [What you should do if you sense I'm going hypomanic](#what-you-should-do-if-you-sense-im-going-hypomanic)
 - [My hypo mania in 2012](#my-hypo-mania-in-2012)
+- [Optimal energy vs Hypomania](#optimal-energy-vs-hypomania)
 - [Hypomania vs Mania](#hypomania-vs-mania)
 - [Stats](#stats)
 
@@ -54,6 +56,15 @@ It is a hard pill to swallow that I was the Evil one, after all.
 
 **Have an affair** - This is my highest risk, luckily at the time I was in terrible shape, and now I know there is nothing more sacred then my family.
 
+### What you should do if you sense I'm going hypomanic
+
+In the bipolar survival guide they say it's critical to make a plan for when you go off kilter while you're stable. So here's my plan:
+
+- 1 - get me into a psychiatrist ASAP.
+- 2 need to figure this out.
+- 3 - make me read this
+- 4 - check I'm still on meds
+
 ### My hypo mania in 2012
 
 Cause
@@ -80,6 +91,10 @@ Interventions:
 Post Episode:
 
 - Did I become depressed don't recall.
+
+### Optimal energy vs Hypomania
+
+Sometimes, I'm at my best, and I wonder if I'm going hypomanic - so far the real condition seems to be how much sleep I need. As long as I get tired and need sleep, I'm probably just operating at my best, and feeling great for it.
 
 ### Hypomania vs Mania
 
