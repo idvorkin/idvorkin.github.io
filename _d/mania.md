@@ -24,6 +24,7 @@ I've always described my hypomanic episode in a positive light (but that's a tra
 - [My hypo mania in 2012](#my-hypo-mania-in-2012)
 - [Optimal energy vs Hypomania](#optimal-energy-vs-hypomania)
 - [Hypomania vs Mania](#hypomania-vs-mania)
+- [Mania vs Cocaine](#mania-vs-cocaine)
 - [Stats](#stats)
 
 <!-- vim-markdown-toc -->
@@ -101,6 +102,29 @@ Sometimes, I'm at my best, and I wonder if I'm going hypomanic - so far the real
 I liked to use the word Mania with my pychiatrist, he scolded me, no you're not manic. Manic is different, and he told me a story.
 
 Fished his client out of Lake Union in a wrestling leotard. What are you doing asked the police? Oh, I'm planning on pulling this tug boat.
+
+### Mania vs Cocaine
+
+From your favorite LLM:
+
+Here's a table comparing the behavioral aspects of mania and cocaine use. Honestly, the big difference seems to be duration of mechanism.
+
+Here's the revised table without mentioning the duration of effects:
+
+| Behavior Aspect                  | Mania                                                                                                    | Cocaine Use                                                                                    |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Mood**                         | Elevated, expansive, or irritable mood.                                                                  | Intense euphoria and heightened confidence.                                                    |
+| **Energy and Alertness**         | High energy and activity levels; decreased need for sleep.                                               | Spike in energy and alertness; increased physical and mental activity.                         |
+| **Impulsivity and Risk-Taking**  | Impulsive decision-making and engagement in risky activities.                                            | Impulsiveness and propensity for taking risks, especially when under the influence.            |
+| **Social Behavior**              | Overly social, intrusive, and lacking social boundaries.                                                 | Fluctuating social behavior; initially increased sociability, followed by possible withdrawal. |
+| **Self-Perception**              | Inflated self-esteem or grandiosity, often disconnected from reality.                                    | Temporary feelings of grandiosity and invincibility.                                           |
+| **Speech and Thought Patterns**  | Rapid, pressured speech; racing thoughts and ideas.                                                      | Fast talking; thoughts can be accelerated but may lack depth and coherence.                    |
+| **Sleep Patterns**               | Significantly reduced need for sleep without feeling fatigued.                                           | Decreased need for sleep during use; rebound sleepiness or exhaustion after effects wear off.  |
+| **Judgment and Decision-Making** | Impaired judgment leading to potentially severe life consequences.                                       | Compromised decision-making abilities, often leading to immediate negative consequences.       |
+| **Addiction and Dependence**     | Not applicable as mania is a symptom of a disorder; however, behaviors can have addictive-like patterns. | High potential for addiction, with a compulsion to use despite negative effects.               |
+| **Aftereffects**                 | Can include post-manic depression, exhaustion, or stabilization with treatment.                          | Comedown effects include depression, lethargy, and a strong craving to use again.              |
+
+This table maintains a focus on the behaviors and consequences associated with mania and cocaine use, without addressing the duration of their effects.
 
 ### Stats
 
