@@ -27,6 +27,24 @@ Ma
 
 Four years ago, I dreamed of taking a year off of work. A few things have changed, Meta doesn't do unpaid leaves, and the software industry has gone through some employment turbulance (e.g. layoffs), so I've replanned and am take a 6 weeks of vaction
 
+## By Week
+
+| Week | Dates       | People       | Activities                 | Notes |
+| ---- | ----------- | ------------ | -------------------------- | ----- |
+| 1    | July 21     | Alone        | Beach                      |       |
+| 2    | July 28     | Zach         | Beach                      |       |
+| 3    | August 4    | Amelia       | Beach                      |       |
+| 4    | August 11   | Alone        | Beach                      |       |
+| 5    | August 18   | Family       | Beach                      |       |
+| 6    | August 25   | Family       | Beach                      |       |
+| DONE | September 4 | Back to Work | Back to Work/School Starts |       |
+
+Stuff happening:
+
+- Tesla car camping
+- Mid week camping
+- Hang with Baltasar and Family
+
 ## My top priorities
 
 ### Back to generating artificats
@@ -37,17 +55,21 @@ Four years ago, I dreamed of taking a year off of work. A few things have change
 
 ### Health and Habits
 
-- I think I'm going to go easy on diet this trip (?)
-- Go to grocery store and load up on healhty food
-  - Boiled eggs and cuconumorres
-  - Coleslaw
-- Bring my travel scale
-- Be OK going out for some meals and treats. But no gorging
-- Huh, weird....
-  - My brain wanted to go to store at 9pm and gorge
-  - Went to store, bought stuff (mostly helahty)
-  - but came home and was pretty full so didn't want to gorge
-  - Wow, tha twas great.
+- **Diet** - I should be pretty close to steady state goal (165 ish). I guess don't go up more then 5 lbs
+
+  - Start of: May 175; June 170; July 165; August 160;
+  - Go to grocery store and load up on healhty food
+  - Bring my travel scale
+
+- **Sleep** - Up every day at 5.
+
+  - When drifting cut caffiene
+  - Bring earplugs and sleep mask
+  - Nap while charing the Tesla
+
+- **Exercise** - This will probably the hardest.
+  - When out of town, bring a portable kit
+  - Figure out an outdoor setup
 
 ## Moments
 
@@ -92,7 +114,7 @@ Things to do:
     - [Diet](#diet)
     - [Sleep](#sleep)
 - [House and goods](#house-and-goods)
-- [Inner Peace (5/5)](#inner-peace-55)
+- [Inner Peace (X/5)](#inner-peace-x5)
     - [General Inner Peace](#general-inner-peace)
     - [Work](#work)
     - [Family](#family)
@@ -169,9 +191,9 @@ Things to do:
 
 ### Statistics
 
-Weight Start: 185
+Weight Start: 165
 Weight End:
-Gym Days: - Goal is do something light every day. Use it as a break from training till Thursday
+Gym Days: -
 
 ### Diet
 
@@ -185,13 +207,16 @@ Gym Days: - Goal is do something light every day. Use it as a break from trainin
 
 - NONE!
 
-## Inner Peace (5/5)
+## Inner Peace (X/5)
 
 ### General Inner Peace
 
-- tbd
+- Should be pretty high
+- Need to remember [mood](/mood) is a heuristic, and my subjective well being will be super strong
 
 ### Work
+
+- I should be spending 0 time on this
 
 ### Family
 
