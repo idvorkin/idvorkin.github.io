@@ -147,3 +147,4 @@ Depending on the depth of the relationship and the reaction so far, it might be 
 ### Personal Examples
 
 - [Voices in my head](/voices)
+- [Mental health in software eng - from someone else](https://vadimkravcenko.com/shorts/mental-health-in-software-engineering/)
