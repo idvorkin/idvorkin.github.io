@@ -37,7 +37,10 @@ quadrantChart
   "Satisfaction": [0.65, 0.25]
 ```
 
-### When ephoria gets stuck on high?
+### Do we want to always be high energy?
+
+1. It's not appropriate for the situation - A funeral is not the time to be high energy.
+1. It's not sustainable - we can take in caffiene, or stimulants, but then we have to pay it back.
 
 Cocaine? Mania? Not good.
 
