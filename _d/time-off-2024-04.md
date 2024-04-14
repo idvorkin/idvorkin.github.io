@@ -112,8 +112,6 @@ New Learnings
 
 - ☑ Containerize Bots
 - ☑ Get more out of Improv Bot
-  - Added 3 things prompt
-- ☑ Look at [LLM based Eval](/ai-testing)
 - ☐ Create a blog post on Energy
 - ☐ Create a blog on Enabling Environment
 - ☐ Create a prompt to digest another blog and find most similar posts, then compare to find matching mental models
@@ -123,15 +121,20 @@ New Learnings
 - ☑ Use Claude Opus for code it seems better
 - ☑ Make Git Commit use a better prompt
 - ☑ Upgrade to using multiple models!
+- ☑ Look at [LLM based Eval](/ai-testing)
+
 - ☑ Figure out how to put IgConvo into pop up prompt
 
-{%include asciicinema.html src="651707" offset="16" %}
+{% include asciicinema.html src="651707" offset="16" %}
+
+- ☑ Finally got access to [gemini 1.5](https://github.com/idvorkin/video-edit/blob/bf60f440bfa382fa6930a31623a8c467348ba3ba//Users/idvorkin/gits/nlp/play_langchain.py?plain=1#L49) (1M Context Window) - but rate limiting is an issue, so haven't really used it
 
 ## Cognitive Health
 
 - ☐ Write up most valuable stuff you can do as a senior eng
 - ☐ Write up "Sustainable Work"
 - ☐ Do TikTok on the variants of "See Something/Say Something"
+- ☑ Met a neat guy who also blogs, does tech, and bi-polor. Scary story about his [bipolar getting out of control](https://breckyunits.com/a-manic-startup.html).
 
 ### Meditation
 
