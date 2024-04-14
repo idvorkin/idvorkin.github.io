@@ -11,7 +11,7 @@ I'm good at a lot of things, but balance is really hard for me. Hard for everyon
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [On Balanace](#on-balanace)
+- [On Balance](#on-balance)
     - [Balance vs Productivity](#balance-vs-productivity)
     - [Energy is finite, like really finite.](#energy-is-finite-like-really-finite)
     - [You need to decide how you'll spend it](#you-need-to-decide-how-youll-spend-it)
@@ -37,23 +37,24 @@ I'm good at a lot of things, but balance is really hard for me. Hard for everyon
     defer(load_balance)
 </script>
 
-## On Balanace
+## On Balance
 
 ### Balance vs Productivity
 
-This post is corrurently intertwined with productiity, will spend time on how to pull them apart
+This post is currently intertwined with productivity and energy, will spend time on how to pull them apart
 
 {%include summarize-page.html src="/productive" %}
+{%include summarize-page.html src="/energy" %}
 
 ### Energy is finite, like really finite.
 
-If you're lucky you'll get 4160 weeks (80 years), and [I've already spent 2400 of mine](/weeks).
+If you're lucky, you'll get 4160 weeks (80 years), and [I've already spent 2400 of mine](/weeks).
 
-_Todo inline photo, or auto generate it._
+_Todo inline photo, or auto-generate it._
 
 ### You need to decide how you'll spend it
 
-Mortalilgy software/essentialist/beign with the end in mind
+Mortality software/essentialist/begin with the end in mind
 
 ### Golden Geese: Balancing Production and Production Capacity
 
@@ -73,7 +74,7 @@ We often simplify our roles as work and life, (see: [I don't want to spend too m
 
 ### Realistic goals by role
 
-I think the most effective way to set yourself up for failure is deciding you can do everything. This is false, you need [to choose](/essential). The super easy mistake to make here is to have an unrealistic goal in a role, for example - I can run a marathon when I can't even walk a mile. But the almost as easy mistake, is to set multiple aggressive goals at once. E.g I'll both run a marathon, and get a promotion at work and deal with an ailing parent.
+I think the most effective way to set yourself up for failure is deciding you can do everything. This is false; you need [to choose](/essential). The super easy mistake to make here is to have an unrealistic goal in a role, for example - I can run a marathon when I can't even walk a mile. But the almost as easy mistake is to set multiple aggressive goals at once. E.g., I'll both run a marathon, and get a promotion at work and deal with an ailing parent.
 
 So, Start by setting goals per role that are realistic. The unit here should be TBD.
 
@@ -83,11 +84,11 @@ Also, it's easy to stress like crazy about your goals. Don't if they're wrong yo
 
 ### Monitoring the roles in your life vs your goals
 
-In some roles, I default to over investing, for these **red is over investing**, green is just right, and blue is under investing
+In some roles, I default to overinvesting, for these **red is overinvesting**, green is just right, and blue is underinvesting
 
 <div id="balance-heatmap-work"> </div>
 
-For the other roles, in which I under invest, **red is under investing**, and **blue is over investing**, which as you see, doesn't happen that often ;)
+For the other roles, in which I underinvest, **red is underinvesting**, and **blue is overinvesting**, which as you see, doesn't happen that often ;)
 
 <div id="balance-heatmap-rest"> </div>
 
@@ -95,11 +96,11 @@ A few notes:
 
 - TODO: Need to make a better color mapping, default colors aren't matching the intent.
 
-- I find a correlation between work being green and the rest being green. If work is over invested, everything else gets under invested.
+- I find a correlation between work being green and the rest being green. If work is overinvested, everything else gets underinvested.
 
 - I find sometimes even when work is in balance, I spend too much time on a role, like tech, and not enough on the others. For me, it's usually family that suffers.
 
-- The assessment here is a normalized 'actual investment vs desired investment' not 'time spent'. For me, I want to spend about an hour a day on magic, while 8 hours day on work.
+- The assessment here is a normalized 'actual investment vs desired investment' not 'time spent'. For me, I want to spend about an hour a day on magic, while 8 hours a day on work.
 
 - Desired time spent varies over time. For example, on holiday, my desire is to spend zero time on work.
 
@@ -113,13 +114,13 @@ If you do some kind of review, I'm certain you missed your goals, either positiv
 
 ### Focus on Impact, not energy spent
 
-We should not measure the success in our roles by the energy we spend. For example, our role of healthy can likely be achieved with an hour a day, while work, likely requires many more hours than that.
+We should not measure the success in our roles by the energy we spend. For example, our role of healthy can likely be achieved with an hour a day, while work likely requires many more hours than that.
 
 ### Parkinson's law and the 80/20 rule
 
 [Parkinson's law](/parkinson) tells us we'll spend as much time as we have available to us on a task.
 
-The 80/20 rules says you get 80% of the value from 20% of the time.
+The 80/20 rules say you get 80% of the value from 20% of the time.
 
 ### Peak end rule and moments
 
