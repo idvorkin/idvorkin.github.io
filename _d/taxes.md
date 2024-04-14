@@ -54,6 +54,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [Generational wealth and camels](#generational-wealth-and-camels)
     - [Timing the markets](#timing-the-markets)
     - [The 3 types of rich](#the-3-types-of-rich)
+    - [How to trade money for happiness](#how-to-trade-money-for-happiness)
     - [The unquenchable thirst](#the-unquenchable-thirst)
 - [Other questions](#other-questions)
     - [How much is 1%](#how-much-is-1)
@@ -281,6 +282,20 @@ Remember:
 1. Rich enough you don't care the price of groceries
 1. Rich enough you don't care the price of vacation
 1. Rich enough you don't care the price of a car
+
+### How to trade money for happiness
+
+1. Money can lower the unhappiness
+
+Above that. Buying crap won't make you happy
+
+5 things you can do
+
+1. Buy stuff - bringes least happine
+2. Buy time - time to spend with people love
+3. Buy expeiernces - experiences with people you love.
+4. Give it away to others
+5. Save it - Makes you feel secure (limited)
 
 ### The unquenchable thirst
 
