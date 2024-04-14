@@ -21,7 +21,10 @@ My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75
     - [Data Prep](#data-prep)
     - [Useful links](#useful-links)
     - [Observation](#observation)
+- [Coaching/Mentoring](#coachingmentoring)
+    - [Habit Tracking](#habit-tracking)
 - [Embodiement](#embodiement)
+    - [Callable Agent Platforms](#callable-agent-platforms)
     - [Discord Bot](#discord-bot)
     - [Voice of our friends](#voice-of-our-friends)
     - [Video of our friends](#video-of-our-friends)
@@ -117,7 +120,21 @@ Here are some models I fine tuned in case you get access to them
 - A tuning run is 50\$
 - I suspect the conversation gets weird if theirs too much history, as people change. Not knowing when something happens (a decay) on the training data is important. So can address by limiting to latest history
 
+## Coaching/Mentoring
+
+Not exactly related, but let me merge some of these concepts in.
+
+[Tony the Tesla](https://github.com/idvorkin/nlp/blob/bcb2660f97d3448a7421bd0db9cc2fc98ef6f077/convos/lifecoach.convo.md?plain=1#L28)
+
+### Habit Tracking
+
+I have daily and weekly habits. I use an app called streaks for that. But I could probably have an agent do this, especially for the ones I've done or not done. Lets try that.
+
 ## Embodiement
+
+### Callable Agent Platforms
+
+[VAPI](https://vapi.canny.io/feature-requests) - ties the Transcription/TTS/S2T agent and fuc calls together to let you call your agent. That's certainly where I'll end up.
 
 ### Discord Bot
 

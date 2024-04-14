@@ -30,7 +30,15 @@ My top priorities:
 
 ## Moments
 
+- Another Trip to the Yellow Deli
+- Did the waterslide with Zach
+- Saw the Harrison Hot Springs
+- My swings are getting to heavier and feeling good doing it
+
 ## Success Stories
+
+- Tesla crushes the driving, would be great if Tori would do some driving
+- Drone worked great at taking videos
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -68,6 +76,7 @@ New Learnings
 
 - Toe spreaders are fun
 - I should eat fruit before a workout (else go lightheaded)
+- Talking to an agent is way more fun then texting (See [Tony](https://github.com/idvorkin/nlp/blob/3ac6a14389f8c5a42a270dcd6b5e9cfd92c7b42e/convos/lifecoach.convo.md?plain=1#L3))
 
 ## Relationships
 

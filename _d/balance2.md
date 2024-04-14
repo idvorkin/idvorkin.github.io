@@ -12,6 +12,7 @@ I'm good at a lot of things, but balance is really hard for me. Hard for everyon
 <!-- vim-markdown-toc GFM -->
 
 - [On Balanace](#on-balanace)
+    - [Balance vs Productivity](#balance-vs-productivity)
     - [Energy is finite, like really finite.](#energy-is-finite-like-really-finite)
     - [You need to decide how you'll spend it](#you-need-to-decide-how-youll-spend-it)
     - [Golden Geese: Balancing Production and Production Capacity](#golden-geese-balancing-production-and-production-capacity)
@@ -37,6 +38,12 @@ I'm good at a lot of things, but balance is really hard for me. Hard for everyon
 </script>
 
 ## On Balanace
+
+### Balance vs Productivity
+
+This post is corrurently intertwined with productiity, will spend time on how to pull them apart
+
+{%include summarize-page.html src="/productive" %}
 
 ### Energy is finite, like really finite.
 

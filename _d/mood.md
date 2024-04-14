@@ -92,6 +92,10 @@ As a model,
 | Other   |      |         |        |
 | Process |      |         |        |
 
+**Mood vs Energy/Arrousal**
+
+{%include summarize-page.html src="/energy" %}
+
 ## Mood disorders vs working moods responding to life
 
 Under normal conditions, mood-states are transient, changing in response to changes in the surrounding circumstances. Mood disorders, in comparison, are generally hallmarked by a persistent, relatively unchanging mood-state. The persistent mood-state is experienced subjectively as uncomfortable (which is putting it mildly; pathological mood states can be extremely painful) and objectively with so called “vegetative symptoms” (e.g., physical and mental slowing, changes in sleep and appetite) and problems functioning which all too frequently become disabling.

@@ -13,6 +13,7 @@ At the core of balance, energy, wlb, habits is being productive.
 
 - [Concepts](#concepts)
     - [Focus on energy, not on time](#focus-on-energy-not-on-time)
+    - [Stay balanced](#stay-balanced)
     - [Shape the path, leverage habits](#shape-the-path-leverage-habits)
     - [Drip, Drip, Drip - it adds up](#drip-drip-drip---it-adds-up)
     - [Motivation](#motivation)
@@ -33,13 +34,9 @@ At the core of balance, energy, wlb, habits is being productive.
 
 ### Focus on energy, not on time
 
-We say I didn't have time, but usually, the limiting factor isn't time, it's energy.
+{%include summarize-page.html src="/energy" %}
 
-That's good because time is finite, and monotnically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy.
-
-What's amazing to me is how going to the gym can be energy positive.
-
-{%include summarize-page.html src="/activation" %}
+### Stay balanced
 
 ### Shape the path, leverage habits
 

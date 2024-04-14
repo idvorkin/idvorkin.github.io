@@ -208,7 +208,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/chapters",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/22.md",
@@ -239,6 +240,7 @@
             ],
             "incoming_links": [
                 "/chapters",
+                "/random-idea",
                 "/y24"
             ],
             "redirect_url": "",
@@ -275,6 +277,7 @@
                 "/first-things-first",
                 "/first-understand",
                 "/psychic-weight",
+                "/random-idea",
                 "/sharpen-the-saw",
                 "/synergize",
                 "/win-win"
@@ -296,6 +299,7 @@
             ],
             "incoming_links": [
                 "/7-habits",
+                "/random-idea",
                 "/writing"
             ],
             "redirect_url": "",
@@ -318,6 +322,7 @@
             ],
             "incoming_links": [
                 "/manager-book",
+                "/random-idea",
                 "/writing"
             ],
             "redirect_url": "",
@@ -350,7 +355,9 @@
             ],
             "incoming_links": [
                 "/balance",
-                "/d/time-off-2021-12"
+                "/d/time-off-2021-12",
+                "/energy",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/activation.md",
@@ -364,7 +371,8 @@
             "file_path": "_site/adblocker-trojan.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/d/time-off-2021-11"
+                "/d/time-off-2021-11",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_td/adblocker_trojan.md",
@@ -390,6 +398,7 @@
                 "/mind-at-work",
                 "/productive",
                 "/psychic-weight",
+                "/random-idea",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -430,7 +439,9 @@
             "outgoing_links": [
                 "/gpt"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/ai_art.md",
             "doc_size": 14000
@@ -443,11 +454,12 @@
             "file_path": "_site/ai-bestie.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/random-idea",
                 "/y24"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-bestie.md",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/ai-paper": {
             "py/object": "__main__.Page",
@@ -472,6 +484,7 @@
                 "/d/time-off-2024-04",
                 "/genai-talk",
                 "/ml",
+                "/random-idea",
                 "/testing"
             ],
             "redirect_url": "",
@@ -497,6 +510,7 @@
                 "/90days",
                 "/operating-manual",
                 "/parkinson",
+                "/random-idea",
                 "/writing"
             ],
             "redirect_url": "",
@@ -514,7 +528,8 @@
                 "/mental-pain"
             ],
             "incoming_links": [
-                "/mood"
+                "/mood",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/anger.md",
@@ -541,11 +556,13 @@
                 "/happy",
                 "/mental-pain",
                 "/operating-manual",
+                "/productive",
+                "/random-idea",
                 "/touching"
             ],
             "redirect_url": "",
             "markdown_path": "_d/anxiety.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/anxiety-management": {
             "py/object": "__main__.Page",
@@ -561,7 +578,8 @@
                 "/siy"
             ],
             "incoming_links": [
-                "/anxiety"
+                "/anxiety",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/anxiety_management.md",
@@ -578,7 +596,8 @@
             ],
             "incoming_links": [
                 "/affirmations",
-                "/class-act"
+                "/class-act",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/appreciate2.md",
@@ -622,6 +641,7 @@
                 "/moments",
                 "/mortality-software",
                 "/parkinson",
+                "/productive",
                 "/sustainable-work",
                 "/timeoff",
                 "/weeks"
@@ -629,7 +649,8 @@
             "incoming_links": [
                 "/7-habits",
                 "/7h-concepts",
-                "/d/time-off-2021-12"
+                "/d/time-off-2021-12",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/balance2.md",
@@ -646,7 +667,8 @@
             ],
             "incoming_links": [
                 "/eulogy",
-                "/joy"
+                "/joy",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/balloon.md",
@@ -671,6 +693,7 @@
                 "/d/habits",
                 "/frog",
                 "/idle",
+                "/random-idea",
                 "/regrets",
                 "/siy"
             ],
@@ -701,7 +724,8 @@
                 "/bmy",
                 "/eulogy",
                 "/job",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-03-18-being-a-great-manager.md",
@@ -720,7 +744,8 @@
             "incoming_links": [
                 "/eulogy",
                 "/irl",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-03-01-bike.md",
@@ -738,7 +763,8 @@
             ],
             "incoming_links": [
                 "/activation",
-                "/d/time-off-2024-02"
+                "/d/time-off-2024-02",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/blueprint.md",
@@ -757,7 +783,8 @@
                 "/job-hunt-stress"
             ],
             "incoming_links": [
-                "/job-hunt-stress"
+                "/job-hunt-stress",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/bmu.md",
@@ -781,7 +808,8 @@
             "incoming_links": [
                 "/being-a-great-manager",
                 "/manager-book",
-                "/manager-book-appendix"
+                "/manager-book-appendix",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
@@ -807,7 +835,8 @@
             "file_path": "_site/brompton-toys.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/bike"
+                "/bike",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-4-9-brompton-toys.md",
@@ -821,7 +850,8 @@
             "file_path": "_site/brython.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/d/time-off-2021-11"
+                "/d/time-off-2021-11",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/brython_.md",
@@ -837,7 +867,8 @@
                 "/joy"
             ],
             "incoming_links": [
-                "/joy"
+                "/joy",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/build-bubble-bike.md",
@@ -852,7 +883,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/eulogy",
-                "/job"
+                "/job",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-1-1-cache.md",
@@ -913,7 +945,8 @@
                 "/touching"
             ],
             "incoming_links": [
-                "/affirmations"
+                "/affirmations",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/classact2.md",
@@ -941,6 +974,7 @@
                 "/manager-book",
                 "/moments-at-work",
                 "/prompts",
+                "/random-idea",
                 "/writing"
             ],
             "redirect_url": "",
@@ -958,6 +992,7 @@
                 "/amazon",
                 "/fail",
                 "/manager-book",
+                "/random-idea",
                 "/switch",
                 "/writing"
             ],
@@ -978,7 +1013,8 @@
             "incoming_links": [
                 "/dsat",
                 "/job-hunt-stress",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-11-16-understandingtechcompensation.md",
@@ -996,7 +1032,8 @@
             "incoming_links": [
                 "/addiction",
                 "/facebook",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/covid19.md",
@@ -1028,6 +1065,7 @@
                 "/happy",
                 "/negotiate",
                 "/psychic-weight",
+                "/random-idea",
                 "/regrets",
                 "/shame"
             ],
@@ -1157,7 +1195,8 @@
                 "/design"
             ],
             "incoming_links": [
-                "/design"
+                "/design",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2017-11-04-clean-architecture.md",
@@ -1218,6 +1257,7 @@
                 "/operating-manual",
                 "/productive",
                 "/psychic-weight",
+                "/random-idea",
                 "/sharpen-the-saw",
                 "/switch"
             ],
@@ -1260,6 +1300,7 @@
                 "/frog",
                 "/productive",
                 "/psychic-weight",
+                "/random-idea",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -1297,7 +1338,8 @@
                 "/timeoff"
             ],
             "incoming_links": [
-                "/d/time-off-2021-12"
+                "/d/time-off-2021-12",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2020-12.md",
@@ -1317,7 +1359,8 @@
                 "/timeoff"
             ],
             "incoming_links": [
-                "/d/time-off-2021-12"
+                "/d/time-off-2021-12",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2021-11.md",
@@ -1338,7 +1381,8 @@
                 "/timeoff"
             ],
             "incoming_links": [
-                "/d/time-off-2022-12"
+                "/d/time-off-2022-12",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2021-12.md",
@@ -1473,6 +1517,7 @@
                 "/tesla"
             ],
             "incoming_links": [
+                "/random-idea",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -1492,7 +1537,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-04.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/d/time-off-2024-08": {
             "py/object": "__main__.Page",
@@ -1549,7 +1594,8 @@
                 "/covid",
                 "/last-year",
                 "/mortality-software",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/on-being-mortal.md",
@@ -1594,7 +1640,9 @@
             "description": "Finance has existed for as long as civilization. And like most things before the Internet age was based on the trust of centralized law and authority (like banks and governments). Decentralized Finance (DeFi) is the movement that asks could we perform our financial transaction with out centralized trust. Finance has evolved many instruments to meet the needs of civilization, all of which are based on trust (store of value, currency, loans), de-fi will search for equivalences of each of these.\n\n",
             "file_path": "_site/defi.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "redirect_url": "",
             "markdown_path": "_td/defi.md",
             "doc_size": 28000
@@ -1609,7 +1657,8 @@
                 "/first-things-first"
             ],
             "incoming_links": [
-                "/first-things-first"
+                "/first-things-first",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/delegate.md",
@@ -1639,7 +1688,8 @@
             ],
             "incoming_links": [
                 "/anger",
-                "/mood"
+                "/mood",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/mania.md",
@@ -1658,6 +1708,7 @@
             ],
             "incoming_links": [
                 "/d/2017-11-04-clean-architecture",
+                "/random-idea",
                 "/system-design",
                 "/testing"
             ],
@@ -1679,6 +1730,7 @@
                 "/42",
                 "/operating-manual",
                 "/physical-health",
+                "/random-idea",
                 "/sharpen-the-saw"
             ],
             "redirect_url": "",
@@ -1697,7 +1749,8 @@
                 "/dsat",
                 "/end-in-mind",
                 "/gtd",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2017-11-12-thedip.md",
@@ -1732,7 +1785,8 @@
                 "/sustainable-work"
             ],
             "incoming_links": [
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/sat_dsat.md",
@@ -1765,8 +1819,10 @@
             "incoming_links": [
                 "/essentialism",
                 "/irl",
+                "/mania",
                 "/mind-at-work",
                 "/operating-manual",
+                "/random-idea",
                 "/sharpen-the-saw",
                 "/siy",
                 "/sublime"
@@ -1794,6 +1850,7 @@
                 "/affirmations",
                 "/d/resistance",
                 "/productive",
+                "/random-idea",
                 "/siy"
             ],
             "redirect_url": "",
@@ -1811,11 +1868,31 @@
                 "/pride"
             ],
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/don-juan2.md",
             "doc_size": 13000
+        },
+        "/energy": {
+            "py/object": "__main__.Page",
+            "url": "/energy",
+            "title": "Control your Energy",
+            "description": "“I didn’t have time” is usually a lie, the limiting factor isn’t time, it’s energy. That’s good because time is finite, and monotonically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy. What’s amazing to me is how going to the gym can be energy positive.\n\n",
+            "file_path": "_site/energy.html",
+            "outgoing_links": [
+                "/activation",
+                "/mania",
+                "/mood"
+            ],
+            "incoming_links": [
+                "/mood",
+                "/productive"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/energy.md",
+            "doc_size": 11000
         },
         "/essentialism": {
             "py/object": "__main__.Page",
@@ -1839,6 +1916,7 @@
                 "/first-things-first",
                 "/frog",
                 "/gtd",
+                "/random-idea",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -1879,6 +1957,7 @@
                 "/irl",
                 "/joy",
                 "/operating-manual",
+                "/random-idea",
                 "/timeoff",
                 "/todo_enjoy"
             ],
@@ -1896,7 +1975,8 @@
                 "/covid"
             ],
             "incoming_links": [
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/facebook.md",
@@ -1939,7 +2019,8 @@
                 "/7-habits",
                 "/90days",
                 "/delegate",
-                "/frog"
+                "/frog",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c3.md",
@@ -1965,6 +2046,7 @@
                 "/class-act",
                 "/curious",
                 "/negotiate",
+                "/random-idea",
                 "/sell"
             ],
             "redirect_url": "",
@@ -1996,6 +2078,7 @@
                 "/mental-pain",
                 "/productive",
                 "/psychic-weight",
+                "/random-idea",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -2011,7 +2094,9 @@
             "outgoing_links": [
                 "/ai-testing"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/genai-talk.md",
             "doc_size": 35000
@@ -2029,7 +2114,8 @@
             ],
             "incoming_links": [
                 "/books-that-defined-me",
-                "/depression"
+                "/depression",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-23-getting-to-yes-with-yourself.md",
@@ -2042,7 +2128,9 @@
             "description": "Goal are critcal, there are multiple goal systems and they have consequences. They are mechansims to deliver without micro managements.\n\n",
             "file_path": "_site/goals.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/goals.md",
             "doc_size": 13000
@@ -2072,7 +2160,8 @@
             "incoming_links": [
                 "/ai-art",
                 "/ml",
-                "/nlp"
+                "/nlp",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/gpt2.md",
@@ -2122,7 +2211,8 @@
             "file_path": "_site/grateful.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/appreciate"
+                "/appreciate",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/grateful2.md",
@@ -2150,7 +2240,8 @@
                 "/first-things-first",
                 "/frog",
                 "/mental-pain",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/gtd.md",
@@ -2188,6 +2279,7 @@
                 "/hobby",
                 "/joy",
                 "/mood",
+                "/random-idea",
                 "/siy",
                 "/timeoff"
             ],
@@ -2221,7 +2313,8 @@
                 "/magic"
             ],
             "incoming_links": [
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/hobby.md",
@@ -2236,7 +2329,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/being-a-great-manager",
-                "/job"
+                "/job",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/human-meeting.md",
@@ -2250,7 +2344,8 @@
             "file_path": "_site/humans-are-underrated.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/books-that-defined-me"
+                "/books-that-defined-me",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-12-humans-are-underrated.md",
@@ -2289,7 +2384,8 @@
                 "/depression",
                 "/gtd",
                 "/happy",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/idle-loop.md",
@@ -2304,7 +2400,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/frog",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-6-30-Immutable-Laws-Of-Hard.md",
@@ -2323,7 +2420,8 @@
             "incoming_links": [
                 "/90days",
                 "/affirmations",
-                "/depression"
+                "/depression",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/imposter.md",
@@ -2339,7 +2437,8 @@
             "incoming_links": [
                 "/activation",
                 "/depression",
-                "/essentialism"
+                "/essentialism",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2016-2-11-Insomnia.md",
@@ -2353,7 +2452,8 @@
             "file_path": "_site/interviewsarehard.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/job-hunt-stress"
+                "/job-hunt-stress",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-11-26-interviewsarehard.markdown",
@@ -2387,6 +2487,7 @@
             ],
             "incoming_links": [
                 "/physical-health",
+                "/random-idea",
                 "/td/ios-nomad"
             ],
             "redirect_url": "",
@@ -2414,7 +2515,8 @@
                 "/eulogy",
                 "/job-hunt-stress",
                 "/manager-book",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
@@ -2438,7 +2540,8 @@
                 "/bmy",
                 "/comp",
                 "/dsat",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-02-17-job-hunt-stress.md",
@@ -2469,6 +2572,7 @@
                 "/hobby",
                 "/magic",
                 "/mood",
+                "/random-idea",
                 "/sublime"
             ],
             "redirect_url": "",
@@ -2487,6 +2591,7 @@
             "incoming_links": [
                 "/42",
                 "/death",
+                "/random-idea",
                 "/y24"
             ],
             "redirect_url": "",
@@ -2513,7 +2618,8 @@
             "file_path": "_site/like-switch.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/joy"
+                "/joy",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/the-like-switch.md",
@@ -2547,6 +2653,7 @@
                 "/idle",
                 "/joy",
                 "/operating-manual",
+                "/random-idea",
                 "/touching"
             ],
             "redirect_url": "",
@@ -2596,6 +2703,7 @@
                 "/job",
                 "/manager-book-appendix",
                 "/operating-manual",
+                "/random-idea",
                 "/software-leadership-roles",
                 "/y24"
             ],
@@ -2615,7 +2723,8 @@
                 "/parkinson"
             ],
             "incoming_links": [
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/manager-book-appendix.md",
@@ -2625,15 +2734,20 @@
             "py/object": "__main__.Page",
             "url": "/mania",
             "title": "Mania: It's like a free cocaine drip",
-            "description": "Here’s a tale a friend with bipolar: What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love—so, so many family and friends were desperately trying to intervene—and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, son, brother, friend, as a kind human being. It is a hard pill to swallow that I was the Evil one, after all. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn’t. You can learn a lot, but you can’t unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn’t real and that I could stop living in fear of it. That all the doubters were wrong.\n\n",
+            "description": "The words that follow, I pray will never be my own – What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love. So, so many family and friends were desperately trying to intervene, and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, a brother, friend, and as a kind human being. It is a hard pill to swallow that I was the Evil one. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn’t. You can learn a lot, but you can’t unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn’t real and that I could stop living in fear of it. That all the doubters were wrong (from a friend with bipolar).\n\n",
             "file_path": "_site/mania.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/emotional-health",
+                "/tesla"
+            ],
             "incoming_links": [
-                "/mood"
+                "/energy",
+                "/mood",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/mania.md",
-            "doc_size": 14000
+            "doc_size": 19000
         },
         "/mental-pain": {
             "py/object": "__main__.Page",
@@ -2660,6 +2774,7 @@
                 "/idle",
                 "/mind-monsters",
                 "/psychic-weight",
+                "/random-idea",
                 "/regrets",
                 "/shame",
                 "/y24"
@@ -2706,6 +2821,7 @@
             ],
             "incoming_links": [
                 "/d/time-off-2022-11",
+                "/random-idea",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -2728,6 +2844,7 @@
                 "/being-a-great-manager",
                 "/idle",
                 "/psychic-weight",
+                "/random-idea",
                 "/siy"
             ],
             "redirect_url": "",
@@ -2749,6 +2866,7 @@
             ],
             "incoming_links": [
                 "/manager-book",
+                "/random-idea",
                 "/td/stats"
             ],
             "redirect_url": "",
@@ -2824,7 +2942,8 @@
             "incoming_links": [
                 "/d/time-off-2020-03",
                 "/operating-manual",
-                "/parkinson"
+                "/parkinson",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/taxes.md",
@@ -2839,6 +2958,7 @@
             "outgoing_links": [
                 "/anger",
                 "/depression",
+                "/energy",
                 "/happy",
                 "/joy",
                 "/mania",
@@ -2846,7 +2966,9 @@
             ],
             "incoming_links": [
                 "/d/time-off-2024-08",
-                "/happy"
+                "/energy",
+                "/happy",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/mood.md",
@@ -2862,7 +2984,8 @@
                 "/death"
             ],
             "incoming_links": [
-                "/balance"
+                "/balance",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
@@ -2885,6 +3008,7 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/productive",
+                "/random-idea",
                 "/regrets",
                 "/sell"
             ],
@@ -2915,6 +3039,7 @@
             ],
             "incoming_links": [
                 "/ml",
+                "/random-idea",
                 "/tools"
             ],
             "redirect_url": "",
@@ -2929,7 +3054,8 @@
             "file_path": "_site/nurture.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/gpt"
+                "/gpt",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/nurture.md",
@@ -2981,7 +3107,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/d/time-off-2020-12",
-                "/ml"
+                "/ml",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_td/pandas-tutorial.md",
@@ -3002,7 +3129,8 @@
                 "/balance",
                 "/manager-book-appendix",
                 "/money",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/resource-paradox.md",
@@ -3028,6 +3156,7 @@
                 "/eulogy",
                 "/irl",
                 "/operating-manual",
+                "/random-idea",
                 "/sharpen-the-saw",
                 "/tech-health-toys"
             ],
@@ -3052,7 +3181,8 @@
                 "/manager-book",
                 "/mental-pain",
                 "/mind-monsters",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-01-01-fuck-pride.md",
@@ -3066,18 +3196,22 @@
             "file_path": "_site/productive.html",
             "outgoing_links": [
                 "/addiction",
+                "/anxiety",
                 "/d/habits",
                 "/d/resistance",
                 "/end-in-mind",
+                "/energy",
                 "/frog",
                 "/negotiate"
             ],
             "incoming_links": [
-                "/d/time-off-2022-02"
+                "/balance",
+                "/d/time-off-2022-02",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/productive2.md",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/prompts": {
             "py/object": "__main__.Page",
@@ -3091,7 +3225,8 @@
             "incoming_links": [
                 "/coaching",
                 "/first-understand",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/prompt.md",
@@ -3122,7 +3257,8 @@
             "incoming_links": [
                 "/depression",
                 "/gtd",
-                "/idle"
+                "/idle",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/psychic-weight.md",
@@ -3144,18 +3280,184 @@
             "py/object": "__main__.Page",
             "url": "/random-idea",
             "title": "random un categorized notes",
-            "description": "There are lots of rough ideas I have that are not yet categorized, or good enough to be a thought. This will be a\nplace to store them.\n\n",
+            "description": "Igor's Blog",
             "file_path": "_site/random-idea.html",
             "outgoing_links": [
+                "/22",
+                "/42",
+                "/7-habits",
+                "/7h-concepts",
+                "/90days",
+                "/Human-Meetings",
+                "/Immutable-Laws-Of-Hard",
+                "/The-Genesis-Node",
+                "/_d/addiction.md",
+                "/activation",
+                "/adblocker-trojan",
+                "/addiction",
+                "/ai-art",
+                "/ai-bestie",
+                "/ai-testing",
+                "/amazon",
+                "/anger",
+                "/anxiety",
+                "/anxiety-management",
+                "/appreciate",
+                "/balance",
+                "/balloon",
+                "/be-proactive",
+                "/being-a-great-manager",
+                "/bike",
+                "/blueprint",
+                "/bmy",
+                "/books-that-defined-me",
+                "/brompton-toys",
+                "/brython",
+                "/build-bubble-bike",
+                "/cache",
+                "/class-act",
+                "/coaching",
+                "/coe",
+                "/comp",
+                "/covid",
+                "/curious",
+                "/d/2017-11-04-clean-architecture",
+                "/d/habits",
+                "/d/resistance",
+                "/d/time-off-2020-12",
+                "/d/time-off-2021-11",
+                "/d/time-off-2021-12",
+                "/d/time-off-2024-02",
+                "/d/timeoff-07-2022",
+                "/death",
                 "/decisive",
+                "/defi",
+                "/delegate",
+                "/depression",
+                "/design",
+                "/diet",
+                "/dip",
+                "/dsat",
+                "/emotional-health",
+                "/end-in-mind",
+                "/enemy",
+                "/essentialism",
+                "/eulogy",
+                "/facebook",
+                "/first-things-first",
+                "/first-understand",
+                "/frog",
+                "/genai-talk",
+                "/getting-to-yes-with-yourself",
+                "/goals",
+                "/gpt",
+                "/grateful",
+                "/gtd",
+                "/happy",
+                "/hobby",
+                "/human-meetings",
+                "/humans-are-underrated",
+                "/idle",
+                "/ig66/587",
+                "/ig66/591",
+                "/ig66/621",
+                "/ig66/663",
+                "/ig66/685",
+                "/ig66/687",
+                "/ig66/717",
+                "/igors-last-year",
+                "/insecure",
+                "/insomnia",
+                "/interviewsarehard",
+                "/irl",
+                "/job",
+                "/job-hunt-stress",
+                "/joy",
+                "/last-year",
+                "/like-switch",
+                "/magic",
+                "/manager-book",
+                "/manager-book-appendix",
+                "/mania",
+                "/mental-pain",
+                "/mind-at-work",
+                "/mind-monsters",
+                "/ml",
                 "/moments",
                 "/moments-at-work",
-                "/switch"
+                "/money",
+                "/mood",
+                "/mortality-software",
+                "/negotiate",
+                "/nlp",
+                "/nurture",
+                "/outsourcing",
+                "/pandas",
+                "/parkinson",
+                "/physical-health",
+                "/pride",
+                "/product",
+                "/productive",
+                "/prompts",
+                "/psychic-weight",
+                "/rapport",
+                "/recommend",
+                "/regrets",
+                "/remote-work",
+                "/shame",
+                "/sharpen-the-saw",
+                "/siy",
+                "/sleight-of-mouth",
+                "/smilebox",
+                "/snjb",
+                "/software-leadership-roles",
+                "/static/StrengthFinderIgor.pdf",
+                "/static/igor-enneagram.pdf",
+                "/static/igor-feedback-LinkedIn.pdf",
+                "/static/igor-feedback-linkedin.pdf",
+                "/static/roots_of_lisp.pdf",
+                "/strategy",
+                "/strengths",
+                "/sublime",
+                "/sustainable-work",
+                "/switch",
+                "/synergize",
+                "/system-design",
+                "/tags",
+                "/td/advertising",
+                "/td/better-security-design",
+                "/td/cloud-first-applications",
+                "/td/data-systems",
+                "/td/design",
+                "/td/ios",
+                "/td/ios-nomad",
+                "/td/stats",
+                "/td/visual-vocabulary",
+                "/tech-health-toys",
+                "/terzepatide",
+                "/tesla",
+                "/testing",
+                "/time-off-2020-03",
+                "/timeoff",
+                "/todo_enjoy",
+                "/tools",
+                "/touching",
+                "/toysfortots",
+                "/upstream",
+                "/vim-for-writing",
+                "/voices",
+                "/warm",
+                "/weeks",
+                "/welcome-to-holland",
+                "/what-makes-a-leader",
+                "/win-win",
+                "/write-book",
+                "/writing"
             ],
             "incoming_links": [],
             "redirect_url": "",
-            "markdown_path": "_d/2010-2-15-2016-Misc-Uncategorized.md",
-            "doc_size": 25000
+            "markdown_path": "igor_blog_content.md",
+            "doc_size": 2225000
         },
         "/rapport": {
             "py/object": "__main__.Page",
@@ -3165,7 +3467,8 @@
             "file_path": "_site/rapport.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/gpt"
+                "/gpt",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/rapport.md",
@@ -3180,7 +3483,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/d/time-off-2022-07",
-                "/ml"
+                "/ml",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_td/recommender.md",
@@ -3212,7 +3516,8 @@
                 "/sustainable-work"
             ],
             "incoming_links": [
-                "/mood"
+                "/mood",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/regrets.md",
@@ -3226,7 +3531,8 @@
             "file_path": "_site/remote-work.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/remotework.md",
@@ -3316,7 +3622,8 @@
                 "/depression",
                 "/insecure",
                 "/mental-pain",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/shame.md",
@@ -3339,7 +3646,8 @@
             "incoming_links": [
                 "/7-habits",
                 "/emotional-health",
-                "/physical-health"
+                "/physical-health",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c7.md",
@@ -3390,6 +3698,7 @@
                 "/irl",
                 "/mind-monsters",
                 "/psychic-weight",
+                "/random-idea",
                 "/sharpen-the-saw",
                 "/timeoff"
             ],
@@ -3421,7 +3730,8 @@
             "incoming_links": [
                 "/7h-concepts",
                 "/d/time-off-2022-02",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
@@ -3435,7 +3745,8 @@
             "file_path": "_site/smilebox.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/joy"
+                "/joy",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_td/smilebox.md",
@@ -3449,7 +3760,8 @@
             "file_path": "_site/snjb.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/d/time-off-2021-11"
+                "/d/time-off-2021-11",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/snjb_.md",
@@ -3466,7 +3778,8 @@
             ],
             "incoming_links": [
                 "/job",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-01-14-software-leadership-roles.md",
@@ -3480,7 +3793,8 @@
             "file_path": "_site/strategy.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2015-11-18-what-is-strategy.md",
@@ -3497,7 +3811,8 @@
                 "/static/igor-enneagram.pdf"
             ],
             "incoming_links": [
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-05-25-strength-finder.md",
@@ -3518,6 +3833,7 @@
                 "/affirmations",
                 "/d/time-off-2024-02",
                 "/emotional-health",
+                "/random-idea",
                 "/siy"
             ],
             "redirect_url": "",
@@ -3536,6 +3852,7 @@
                 "/being-a-great-manager",
                 "/depression",
                 "/dsat",
+                "/random-idea",
                 "/regrets"
             ],
             "redirect_url": "",
@@ -3572,7 +3889,8 @@
                 "/7-habits"
             ],
             "incoming_links": [
-                "/7-habits"
+                "/7-habits",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c6.md",
@@ -3591,7 +3909,8 @@
                 "/td/data-systems"
             ],
             "incoming_links": [
-                "/job-hunt-stress"
+                "/job-hunt-stress",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_td/system-design.md",
@@ -3620,6 +3939,7 @@
                 "/Canadian-Spotting",
                 "/The-Genesis-Node",
                 "/eulogy",
+                "/random-idea",
                 "/save-the-soup",
                 "/save-the-souse",
                 "/sleeping-bag-sacrifies"
@@ -3635,7 +3955,9 @@
             "description": "Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.\n\n",
             "file_path": "_site/td/advertising.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "redirect_url": "",
             "markdown_path": "_td/advertising.md",
             "doc_size": 22000
@@ -3672,6 +3994,7 @@
             "file_path": "_site/td/better-security-design.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/random-idea",
                 "/system-design"
             ],
             "redirect_url": "",
@@ -3689,6 +4012,7 @@
                 "/amazon",
                 "/design",
                 "/manager-book",
+                "/random-idea",
                 "/system-design"
             ],
             "redirect_url": "",
@@ -3704,6 +4028,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/amazon",
+                "/random-idea",
                 "/system-design"
             ],
             "redirect_url": "",
@@ -3754,6 +4079,7 @@
             "file_path": "_site/td/ios.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/random-idea",
                 "/tools",
                 "/writing"
             ],
@@ -3771,6 +4097,7 @@
                 "/irl"
             ],
             "incoming_links": [
+                "/random-idea",
                 "/tools",
                 "/writing"
             ],
@@ -3859,7 +4186,9 @@
             "outgoing_links": [
                 "/ml"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "redirect_url": "",
             "markdown_path": "_td/stats.md",
             "doc_size": 17000
@@ -3908,6 +4237,7 @@
             "file_path": "_site/td/visual-vocabulary.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/random-idea",
                 "/writing"
             ],
             "redirect_url": "",
@@ -3949,7 +4279,8 @@
             ],
             "incoming_links": [
                 "/d/2016-02-03-positive-computing-survey",
-                "/physical-health"
+                "/physical-health",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-06-tech-health-toys.md",
@@ -3964,7 +4295,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/d/time-off-2024-04",
-                "/diet"
+                "/diet",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/terzepatide.md",
@@ -3981,7 +4313,9 @@
             ],
             "incoming_links": [
                 "/d/time-off-2024-02",
-                "/irl"
+                "/irl",
+                "/mania",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/tesla.md",
@@ -3998,7 +4332,8 @@
                 "/design"
             ],
             "incoming_links": [
-                "/design"
+                "/design",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_td/testing.md",
@@ -4014,7 +4349,8 @@
                 "/tags"
             ],
             "incoming_links": [
-                "/eulogy"
+                "/eulogy",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-11-03-The-Genesis-Node.md",
@@ -4065,7 +4401,8 @@
                 "/d/time-off-2023-11",
                 "/d/time-off-2024-08",
                 "/mind-at-work",
-                "/parkinson"
+                "/parkinson",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/time_off.md",
@@ -4081,7 +4418,8 @@
                 "/eulogy"
             ],
             "incoming_links": [
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/enjoy2.md",
@@ -4098,7 +4436,9 @@
                 "/td/ios",
                 "/td/ios-nomad"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "redirect_url": "",
             "markdown_path": "_td/tool.md",
             "doc_size": 48000
@@ -4116,6 +4456,7 @@
             "incoming_links": [
                 "/class-act",
                 "/end-in-mind",
+                "/random-idea",
                 "/sublime"
             ],
             "redirect_url": "",
@@ -4131,7 +4472,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/amazon",
-                "/eulogy"
+                "/eulogy",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/alexa-charity.md",
@@ -4145,7 +4487,8 @@
             "file_path": "_site/upstream.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/first-things-first"
+                "/first-things-first",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/blueprint.md",
@@ -4159,6 +4502,7 @@
             "file_path": "_site/vim-for-writing.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/random-idea",
                 "/writing"
             ],
             "redirect_url": "",
@@ -4173,7 +4517,8 @@
             "file_path": "_site/warm.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/bike"
+                "/bike",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-9-29-staying-warm-and-biking.md",
@@ -4187,7 +4532,8 @@
             "file_path": "_site/weeks.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/balance"
+                "/balance",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/weeks.md",
@@ -4201,7 +4547,8 @@
             "file_path": "_site/welcome-to-holland.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/getting-to-yes-with-yourself"
+                "/getting-to-yes-with-yourself",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-26-welcome-to-holland.md",
@@ -4216,6 +4563,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/manager-book",
+                "/random-idea",
                 "/siy"
             ],
             "redirect_url": "",
@@ -4247,6 +4595,7 @@
                 "/7-habits",
                 "/curious",
                 "/negotiate",
+                "/random-idea",
                 "/sell"
             ],
             "redirect_url": "",
@@ -4261,6 +4610,7 @@
             "file_path": "_site/write-book.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/random-idea",
                 "/y24"
             ],
             "redirect_url": "",
@@ -4289,7 +4639,8 @@
                 "/affirmations",
                 "/amazon",
                 "/manager-book",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "redirect_url": "",
             "markdown_path": "_d/writing.md",
