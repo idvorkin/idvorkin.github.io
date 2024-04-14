@@ -29,15 +29,15 @@ Four years ago, I dreamed of taking a year off of work. A few things have change
 
 ## By Week
 
-| Week | Dates       | People          | Activities                 | Notes          |
-| ---- | ----------- | --------------- | -------------------------- | -------------- |
-| 1    | July 21     | Alone           | Beach                      |                |
-| 2    | July 28     | Amelia          | Beach                      | Zach in Film   |
-| 3    | August 4    | Zach            | Beach                      | Amelia at Farm |
-| 4    | August 11   | Alone-or-Family | Beach                      |                |
-| 5    | August 18   | Family          | Beach                      |                |
-| 6    | August 25   | Family          | Beach                      |                |
-| DONE | September 4 | Back to Work    | Back to Work/School Starts |                |
+| Week | Dates       | People       | Activities                 | Notes               |
+| ---- | ----------- | ------------ | -------------------------- | ------------------- |
+| 1    | July 21     | Zach         | Beach                      |                     |
+| 2    | July 28     | Family       | Beach                      |                     |
+| 3    | August 4    | Alone        | Beach                      | A at Farm; Z rowing |
+| 4    | August 11   | Amelia       | Beach                      | Z Rowing            |
+| 5    | August 18   | Alone        | Beach                      | Z Rowing            |
+| 6    | August 25   | Family       | Beach                      |                     |
+| DONE | September 4 | Back to Work | Back to Work/School Starts |                     |
 
 Stuff happening:
 
