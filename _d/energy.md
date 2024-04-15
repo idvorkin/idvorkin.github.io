@@ -25,9 +25,32 @@ In fact, sometimes it deven drains worse, so care deeply about
 
 {%include summarize-page.html src="/productive" %}
 
+### Energy vs Will Power
+
+Interesting - what is the difference between these concepts in my model?
+
+### Wasting energy, can accelerate the drain
+
+- Or maybe it makes you energy weaker
+
+{%include summarize-page.html src="/resistance" %}
+
 ### Activation Energy, often far exceeds steady state energy
 
 {% include summarize-page.html src="/activation" %}
+
+### We can go into energy debt, but you need to always pay the piper
+
+Think Coffee
+
+### You can reduce the energy required
+
+- See productivity
+- By having habits
+- By shaping the path
+- By being stronger "peak energy" capacity (think strength training)
+- By building more "energy endurance" capacity (think cardio vascular)
+- Q is there an analog to hypertrophy? (Influencer Videos - haha)
 
 ### Energy (Arousal) vs Valence
 
