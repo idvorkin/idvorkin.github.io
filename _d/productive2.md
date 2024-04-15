@@ -12,7 +12,7 @@ At the core of balance, energy, wlb, habits is being productive.
 <!-- vim-markdown-toc GFM -->
 
 - [Concepts](#concepts)
-    - [Focus on energy, not on time](#focus-on-energy-not-on-time)
+    - [The fuel of productivity, is energy.](#the-fuel-of-productivity-is-energy)
     - [Match task to energy](#match-task-to-energy)
     - [Stay balanced](#stay-balanced)
     - [Shape the path, leverage habits](#shape-the-path-leverage-habits)
@@ -33,7 +33,7 @@ At the core of balance, energy, wlb, habits is being productive.
 
 ## Concepts
 
-### Focus on energy, not on time
+### The fuel of productivity, is energy.
 
 {%include summarize-page.html src="/energy" %}
 
