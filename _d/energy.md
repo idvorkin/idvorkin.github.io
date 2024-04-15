@@ -5,7 +5,7 @@ mermaid: true
 permalink: /energy
 ---
 
-"I didn't have time" is usually a lie, the limiting factor isn't time, it's energy. That's good because time is finite, and monotonically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy. What's amazing to me is how going to the gym can be energy positive.
+We often say we don't have time, but usually we mean we don't have energy. That's great news because time is finite, and monotonically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy. What's amazing to me is how going to the gym can be energy positive.
 
 ## Theory
 
@@ -14,6 +14,20 @@ permalink: /energy
 You can get a blast of energy when someone smiles at you. [Joy](/joy) is like that. Doing nothing, like watching TikTok can be very draining. I even have a set of Kryptonite activities which drain me
 
 {%include summarize-page.html src="/operating-manual" %}
+
+### Doing work, can result in more energy
+
+It's amazing to me that a good workout does this. So does a productive day at work.
+
+### Energy drains, regardless of if it's being applied to do work
+
+In fact, sometimes it deven drains worse, so care deeply about
+
+{%include summarize-page.html src="/productive" %}
+
+### Activation Energy, often far exceeds steady state energy
+
+{% include summarize-page.html src="/activation" %}
 
 ### Energy (Arousal) vs Valence
 
@@ -53,10 +67,6 @@ quadrantChart
 Cocaine? Mania? Not good.
 
 {%include summarize-page.html src="/mania" %}
-
-### Activation Energy
-
-{% include summarize-page.html src="/activation" %}
 
 ## Maximize Energy
 
