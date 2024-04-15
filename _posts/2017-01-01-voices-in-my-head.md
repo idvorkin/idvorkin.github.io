@@ -7,7 +7,6 @@ tags:
   - emotional intelligence
 permalink: /voices
 redirect_from:
-  - /voices
   - /voices-in-my-head
 
 mermaid: True

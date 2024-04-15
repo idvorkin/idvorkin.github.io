@@ -13,6 +13,7 @@ At the core of balance, energy, wlb, habits is being productive.
 
 - [Concepts](#concepts)
     - [Focus on energy, not on time](#focus-on-energy-not-on-time)
+    - [Match task to energy](#match-task-to-energy)
     - [Stay balanced](#stay-balanced)
     - [Shape the path, leverage habits](#shape-the-path-leverage-habits)
     - [Drip, Drip, Drip - it adds up](#drip-drip-drip---it-adds-up)
@@ -36,9 +37,17 @@ At the core of balance, energy, wlb, habits is being productive.
 
 {%include summarize-page.html src="/energy" %}
 
+### Match task to energy
+
+No point spending "my high energy/will power time" on a low energy activety. It's funny, my strongest energy is when I wake up, which seems like a waste to spend on the gym, except when I don't spend that on the gym it makes a mess.
+
 ### Stay balanced
 
+{%include summarize-page.html src="/balance" %}
+
 ### Shape the path, leverage habits
+
+{%include summarize-page.html src="/switch" %}
 
 ### Drip, Drip, Drip - it adds up
 

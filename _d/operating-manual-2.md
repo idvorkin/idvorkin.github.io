@@ -87,6 +87,8 @@ My new calendar
 | Sa  | [l1](l1)  | Free          |
 | Su  | [l2](l2)  | Free          |
 
+<div/>
+
 - l1
 - Trainer
 - Coffee Shop Writing
@@ -111,15 +113,17 @@ My new calendar
 | W   | Stair Climber    | Amelia Date   |
 | Th  | Self Gym         | Magic w/Clive |
 | F   | Run              | Movie Night   |
-| Sa  | [l1](l1)         | Free          |
-| Su  | [l2](l2)         | Free          |
+| Sa  | [l21](21)        | Free          |
+| Su  | [l22](22)        | Free          |
 
-- l1
+<div/>
+
+- l21
 - Trainer
 - Coffee Shop Writing
 
 <div/>
-- l2
+- l22
 - Stretching/Free Gym
 - Coffee Shop
 - Weekly Journal
@@ -127,9 +131,9 @@ My new calendar
 
 ## Morning Routine
 
-At my best, I roll out of bed either when my eyes open or at 5am, whatever comes first.
+At my best, I roll out of bed either when my eyes open or at 5am, whatever comes first. Then I sit in front of my [mood lamp](https://www.amazon.com/gp/product/B00PCN4UVU/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) and drink my cold brew nitro coffee
 
-I also love getting my morning hug from my kids, but now that Zach's older (9), I'm down to just getting the hugs from Amelia - who is 5.
+_Ah when the kids where younger - I also love getting my morning hug from my kids, but now that Zach's older (9), I'm down to just getting the hugs from Amelia - who is 5._
 
 ### Weekend morning routine
 
@@ -271,7 +275,11 @@ Don't give a guy trying to lose weight an ice cream maker. An ice cream maker so
 
 ### Luxury Car
 
-I've been dying to get a Tesla, full self driving and some luxury. But what's most important to my identity is biking, and not driving a car. To quote my friend Ammon - Igor you getting a tesla is like getting an ice cream maker. You need to decide your priority and go from there.
+~~I've been dying to get a Tesla, full self driving and some luxury. But what's most important to my identity is biking, and not driving a car. To quote my friend Ammon - Igor you getting a tesla is like getting an ice cream maker. You need to decide your priority and go from there.~~
+
+Turns out, I love this now. Check out
+
+{%include summarize-page.html src="/tesla" %}
 
 ### Sports cars
 

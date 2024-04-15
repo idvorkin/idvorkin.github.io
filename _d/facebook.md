@@ -15,13 +15,13 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 <!-- vim-markdown-toc GFM -->
 
 - [The Good - Hiring and Onboarding](#the-good---hiring-and-onboarding)
-    - [Un allocated hires](#un-allocated-hires)
+    - [Unallocated hires](#unallocated-hires)
     - [Bootcamp](#bootcamp)
 - [The Good - Engineering Systems](#the-good---engineering-systems)
     - [Why they're so good](#why-theyre-so-good)
     - [A Trust Driven Social Company](#a-trust-driven-social-company)
     - [Open source lots](#open-source-lots)
-    - [Top notch data tools](#top-notch-data-tools)
+    - [Top-notch data tools](#top-notch-data-tools)
 - [The Good](#the-good)
     - [Not managers, but a person who supports](#not-managers-but-a-person-who-supports)
     - [Managers don't tell employees what to work on](#managers-dont-tell-employees-what-to-work-on)
@@ -65,11 +65,11 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 
 FB has an exceptionally good and unique hiring and onboarding process.
 
-### Un allocated hires
+### Unallocated hires
 
 Many big companies say they hire for the company not the team, at which point they assign you to a team you know almost nothing about. Your chance to learn about the team is usually a few minutes at the end of 5-6 grueling interviews and a 30 minutes "sales pitch" from a hiring manager.
 
-At FB, they really mean you're hired for the company, so you join without picking a team. Then you get 6-10 weeks (bootcamp) to find a team you like. This process includes "sitting" with various teams for a week or so. When sitting with a team you work on a task with the team which lets you see if you like the team, tech and enjoy your time with them. As a result you have a lot more data before signing up to where you'll work for the next few years of your career.
+At FB, they really mean you're hired for the company, so you join without picking a team. Then you get 6-10 weeks (boot camp) to find a team you like. This process includes "sitting" with various teams for a week or so. When sitting with a team you work on a task with the team which lets you see if you like the team, tech and enjoy your time with them. As a result you have a lot more data before signing up to where you'll work for the next few years of your career.
 
 ### Bootcamp
 
@@ -103,9 +103,9 @@ From a FB Manager
 
 ### Open source lots
 
-Many FB tools get open sourced, tupper ware, mercurial improvements, flow, even data center hardware designs -- what a pleasant contrast to most other places
+Many FB tools get open sourced, tupperware, mercurial improvements, flow, even data center hardware designs -- what a pleasant contrast to most other places
 
-### Top notch data tools
+### Top-notch data tools
 
 Some attributes that strike me as great:
 
@@ -122,17 +122,17 @@ See a [detailed description of the tools](https://medium.com/analytics-and-data/
 
 When I did an informational with FB, the interviewer asked me how I "support my team"? I didn't understand what the question meant. At FB, servant leadership is so ingrained in the culture that when managers introduce themselves, they don't say I'm the manager for "team name", they say I support "team name".
 
-This will be an area I write lots as it's this is some of Facebook's unique value, and I'm exited to internalize it. Some early examples:
+This will be an area I write lots as it's this is some of Facebook's unique value, and I'm excited to internalize it. Some early examples:
 
 ### Managers don't tell employees what to work on
 
-Instead, they help employees evaluate what projects they should use. They clarify the needs of the team and larger org, and help employees evaluate which projects are a good fit for their interests, the business, and their growth needs. It is the employees choice though, and regardless of their choice the manager will help the employee be successful.
+Instead, they help employees evaluate what projects they should use. They clarify the needs of the team and larger org, and help employees evaluate which projects are a good fit for their interests, the business, and their growth needs. It is the employee's choice though, and regardless of their choice the manager will help the employee be successful.
 
 ### Inclusion and Diversity
 
-At AMZN, I was in the inclusion bar raiser program, which was in it's infancy, so a huge contrast.
+At AMZN, I was in the inclusion bar raiser program, which was in its infancy, so a huge contrast.
 
-The first lecture I saw at FB started with an explanation of using pro-nouns, and then many folks talking openly about their gender and identity. Super cool, and I loved the talk from the D&I officer.
+The first lecture I saw at FB started with an explanation of using pronouns, and then many folks talking openly about their gender and identity. Super cool, and I loved the talk from the D&I officer.
 
 At the core you want D&I because:
 
@@ -155,7 +155,7 @@ Amazon was good at many things, pretty UX not so much. Facebook is a leader in U
 
 ### Employees First
 
-During [Covid](/covid19), FB wanted to relax it's employees so gave them all a 1K bonus, and guaranteed a rating of exceeded. They also said folks that couldn't WFH, like chefs, would still get paid. That's impressive.
+During [Covid](/covid19), FB wanted to relax its employees so gave them all a 1K bonus, and guaranteed a rating of exceeded. They also said folks that couldn't WFH, like chefs, would still get paid. That's impressive.
 
 At FB, they have a salad bar, and at the end of the bar, there's a guy who 'tosses' your salad dressing. My friend asked him, hey I can toss my own dressing, why are you doing that. He answered - "You can, but FB knows you're special, and wants you to remember it every day, and that's why I'm doing this'.
 
@@ -163,16 +163,16 @@ Wow!!!
 
 ### Facebook Groups instead of e-mail
 
-Facebook has an enterprise product called Workspace, which is essentially FB. FB uses this instead of e-mail.
+Facebook has an enterprise product called Workspace, which is essentially FB. FB uses this instead of email.
 
-I was very skeptical of this at first, and always concerned I'd miss something, but after a few months of use I acclimatised, and now I love it, and would hate going back to e-mail. Here are some translations/great things about it.
+I was very skeptical of this at first, and always concerned I'd miss something, but after a few months of use I acclimatized, and now I love it, and would hate going back to email. Here are some translations/great things about it.
 
 - Stuff that translates to email.
 
   - Groups are essentially public email lists.
-  - Notifications are your unread e-mail inbox.
-  - You cc by doing an @mention, and it shows up in the notifcation feed.
-  - Sharing across groups is like cross posting multiple lists.
+  - Notifications are your unread email inbox.
+  - You cc by doing an @mention, and it shows up in the notification feed.
+  - Sharing across groups is like cross-posting multiple lists.
 
 - Everything is public
 
@@ -192,11 +192,11 @@ I was very skeptical of this at first, and always concerned I'd miss something, 
 
 ### Monorepo
 
-Peculiar when you come from large companies other then Google.
+Peculiar when you come from large companies other than Google.
 
 ### Mercurial instead of git
 
-Partially because of the choice of Mono Repo, FB needed to push changes back to community, git didn't want to take them so they pushed them to Mercurial. Sadly, mercurial lost (which is a shame, as I think Mercurial was better).
+Partially because of the choice of Monorepo, FB needed to push changes back to the community, git didn't want to take them so they pushed them to Mercurial. Sadly, mercurial lost (which is a shame, as I think Mercurial was better).
 
 ### No job title bias
 
@@ -204,11 +204,11 @@ _This probably upgrades to the good section - but definitely peculiar right now 
 
 FB is bottom up, which means they do not believe in positional authority (e.g. you don't get authority due to position high in the org, you get it because people want to listen to you).
 
-To facilitate this FB does not have job titles, (e.g. SDE-I, SDE-II) and levels are confidential information.
+To facilitate this, FB does not have job titles, (e.g. SDE-I, SDE-II) and levels are confidential information.
 
-Job titles bias you into having a preconceived notion of how much authority you should give the person talking. In a perfect world, you'd grant this authority based on the merit of a person statement's and work, which is what FB optimizes for.
+Job titles bias you into having a preconceived notion of how much authority you should give the person talking. In a perfect world, you'd grant this authority based on the merit of a person's statement and work, which is what FB optimizes for.
 
-The flip side is going into new situations you need to spend more time evaluating who you should give authority to and how likely someone knows what they are talking about. This is made easier as most work is public and very easy to see. E-mail equivalents (posts), code Reviews, Bug write ups, public thanks, are all completely public, and even show up on a person's feed.
+The flip side is going into new situations you need to spend more time evaluating who you should give authority to and how likely someone knows what they are talking about. This is made easier as most work is public and very easy to see. Email equivalents (posts), code Reviews, Bug write-ups, public thanks, are all completely public, and even show up on a person's feed.
 
 ## The Bad - Still learning
 
@@ -247,11 +247,11 @@ Relative to MSFT and AMZN folks are very concerned about reviews. I've debugged 
 There are lots of jokes about the metaverse, but I'm a big fan, I'll I'll tell you why.
 
 In 2020, had a college hire wanted to do a 1:1 in VR instead of in person.
-Annoyed, buy hey that's why we hire college hires, to get new ideas. Took 20 minutes to setup, virtual conference room. Cartoony, but then ... He sits beside me, right in the chair beside me. Shoulder to shoulder, very uncomfortable. Told him he had to move, and he said in relief, oh you felt that too, yeah - that was ackward.
+Annoyed, buy hey that's why we hire college hires, to get new ideas. Took 20 minutes to set up, virtual conference room. Cartoony, but then ... He sits beside me, right in the chair beside me. Shoulder to shoulder, very uncomfortable. Told him he had to move, and he said in relief, oh you felt that too, yeah - that was awkward.
 
 Next, open of horizon worlds ... creator ... showed me how to configure correctly, told me about art ...
 
-In 2022, lord of the rings. How do we solve thi sim the real world? Identity and social norm.s Group chats are like this.
+In 2022, lord of the rings. How do we solve this sim the real world? Identity and social norms. Group chats are like this.
 
 ### Why is the metaverse taking so long
 
@@ -273,18 +273,18 @@ Used to be move fast and break stuff, but that's not good at this size. Now it's
 
 - Play to win not 'play to not lose'
 - Need to fail once per half, if you're not you're not working hard enough.
-- As you get into the half, figure out what goals to dump, and where to double down.n
+- As you get into the half, figure out what goals to dump, and where to double down.
 
 ### Be Open
 
-- Be transport in your work
+- Be transparent in your work
 
 ### Build Social Value
 
 - A platform is 'social value agnostic'
 - FB's idea of social value is 'connecting people'
 - When you connect people that are mostly similar, they will become more tolerant of each other
-- NOTE: When you connect people that are diametrically opposed, they tend to dig in their heals.
+- NOTE: When you connect people that are diametrically opposed, they tend to dig in their heels.
 
 ## How Engineers and EMs are evaluated
 

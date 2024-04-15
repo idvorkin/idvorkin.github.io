@@ -7,6 +7,14 @@ permalink: /energy
 
 "I didn't have time" is usually a lie, the limiting factor isn't time, it's energy. That's good because time is finite, and monotonically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy. What's amazing to me is how going to the gym can be energy positive.
 
+## Theory
+
+### Energy is very non-linear
+
+You can get a blast of energy when someone smiles at you. [Joy](/joy) is like that. Doing nothing, like watching TikTok can be very draining. I even have a set of Kryptonite activities which drain me
+
+{%include summarize-page.html src="/operating-manual" %}
+
 ### Energy (Arousal) vs Valence
 
 [Mood](/mood) can also look like arousal and valence
@@ -49,3 +57,21 @@ Cocaine? Mania? Not good.
 ### Activation Energy
 
 {% include summarize-page.html src="/activation" %}
+
+## Maximize Energy
+
+### Very similar to maximize productivity
+
+{%include summarize-page.html src="/productive" %}
+
+### Sleep
+
+{%include summarize-page.html src="/sleep" %}
+
+### Match task to energy
+
+No point spending "my high energy/will power time" on a low energy activety. It's funny, my strongest energy is when I wake up, which seems like a waste to spend on the gym, except when I don't spend that on the gym it makes a mess.
+
+### Remember to take some time off
+
+{%include summarize-page.html src="/time-off" %}
