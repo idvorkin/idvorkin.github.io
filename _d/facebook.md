@@ -18,14 +18,14 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
     - [Un allocated hires](#un-allocated-hires)
     - [Bootcamp](#bootcamp)
 - [The Good - Engineering Systems](#the-good---engineering-systems)
-    - [Why they're so good.](#why-theyre-so-good)
+    - [Why they're so good](#why-theyre-so-good)
     - [A Trust Driven Social Company](#a-trust-driven-social-company)
     - [Open source lots](#open-source-lots)
     - [Top notch data tools](#top-notch-data-tools)
 - [The Good](#the-good)
     - [Not managers, but a person who supports](#not-managers-but-a-person-who-supports)
     - [Managers don't tell employees what to work on](#managers-dont-tell-employees-what-to-work-on)
-    - [Inclusion and Diversity.](#inclusion-and-diversity)
+    - [Inclusion and Diversity](#inclusion-and-diversity)
     - [OKRs](#okrs)
     - [Metric Driven Culture](#metric-driven-culture)
     - [Design Quality](#design-quality)
@@ -33,7 +33,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
     - [Facebook Groups instead of e-mail](#facebook-groups-instead-of-e-mail)
     - [The Trio: Engineering, Product Management and Data Science](#the-trio-engineering-product-management-and-data-science)
 - [The peculiar](#the-peculiar)
-    - [Monorepo.](#monorepo)
+    - [Monorepo](#monorepo)
     - [Mercurial instead of git](#mercurial-instead-of-git)
     - [No job title bias](#no-job-title-bias)
 - [The Bad - Still learning](#the-bad---still-learning)
@@ -42,7 +42,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
     - [CO-Ex: Creating a virtual living](#co-ex-creating-a-virtual-living)
     - [AR: Having fun and reducing the burden of attention](#ar-having-fun-and-reducing-the-burden-of-attention)
     - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
-- [From Facebook to Meta and the metaverse:](#from-facebook-to-meta-and-the-metaverse)
+- [From Facebook to Meta and the metaverse](#from-facebook-to-meta-and-the-metaverse)
     - [Why is the metaverse taking so long](#why-is-the-metaverse-taking-so-long)
 - [Core Values (LP's)](#core-values-lps)
     - [Focus on Impact](#focus-on-impact)
@@ -50,6 +50,9 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
     - [Be Bold](#be-bold)
     - [Be Open](#be-open)
     - [Build Social Value](#build-social-value)
+- [How Engineers and EMs are evaluated](#how-engineers-and-ems-are-evaluated)
+    - [Engineers](#engineers)
+    - [Engineering Manager](#engineering-manager)
 - [Lingo and Culture](#lingo-and-culture)
     - [Show up with grace](#show-up-with-grace)
     - [TL;DR](#tldr)
@@ -282,6 +285,22 @@ Used to be move fast and break stuff, but that's not good at this size. Now it's
 - FB's idea of social value is 'connecting people'
 - When you connect people that are mostly similar, they will become more tolerant of each other
 - NOTE: When you connect people that are diametrically opposed, they tend to dig in their heals.
+
+## How Engineers and EMs are evaluated
+
+### Engineers
+
+- Project Impact
+- Engineering Excellence
+- Direction
+- People
+
+### Engineering Manager
+
+- Team Impact - What the team delivered (often metric driven)
+- People - Team Growth/Hiring/Team Happiness (via feedback and surveys)
+- Organizational Impact - Your social work, mine are own EM growth, mentoring, PSCs and recruiting
+- Collaboration - How well you worked with other teams to deliver.
 
 ## Lingo and Culture
 
