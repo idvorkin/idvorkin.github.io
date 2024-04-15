@@ -492,7 +492,7 @@ Check out [prophet](https://towardsml.com/2018/05/23/time-series-forecasting-the
 
 ## Neural Networks
 
-A laymens introduction to neural networks and deep learning.
+A laymens introduction to neural networks and deep learning. What's interesting here is that many of the stes of model selection and training is "semi random". This [post](https://ahgamut.github.io/2020/11/20/netpicking-1/) Does a great job discussing how to assess models using semi-random model creation.
 
 {% include youtube.html src="BR9h47Jtqyw" %}
 
