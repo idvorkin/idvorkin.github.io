@@ -29,3 +29,11 @@ Here are all the posts
 {{item.path}}
 
 {% endfor %}
+
+# Ig66
+
+{% for item in site.ig66 %}
+[{{item.title}}]({{item.url}}) - [{{item.url }}]
+{{item.path}}
+
+{% endfor %}
