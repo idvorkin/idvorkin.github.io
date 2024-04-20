@@ -16,6 +16,9 @@ Testing math is easy, it's right or wrong. Test spelling is easy too, but testin
 - [Examples](#examples)
     - [Who is the funnier LLM](#who-is-the-funnier-llm)
     - [Who is the better git summarizer](#who-is-the-better-git-summarizer)
+- [Eval Systems](#eval-systems)
+    - [Human based blind taste tates Chatbot arena](#human-based-blind-taste-tates-chatbot-arena)
+    - [Eval Data Sets](#eval-data-sets)
 - [Testing Theory](#testing-theory)
     - [Simplest form of testing](#simplest-form-of-testing)
     - [Wrinkle - A/B Testing](#wrinkle---ab-testing)
@@ -90,6 +93,26 @@ tests:
     - type: llm-rubric
       value: ensure the diff is described well
 ```
+
+## Eval Systems
+
+### Human based blind taste tates Chatbot arena
+
+The gold standard for what LLM is best is asking users to judge. [Chatbot Arena](https://chat.lmsys.org/?leaderboard) does this, from their paper:
+
+_Large Language Models (LLMs) have unlocked new capabilities and applications; however, evaluating the alignment with human preferences still poses significant challenges. To address this issue, we introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences. Our methodology employs a pairwise comparison approach and leverages input from a diverse user base through crowdsourcing. The platform has been operational for several months, amassing over 240K votes. This paper describes the platform, analyzes the data we have collected so far, and explains the tried-and-true statistical methods we are using for efficient and accurate evaluation and ranking of models. We confirm that the crowdsourced questions are sufficiently diverse and discriminating and that the crowdsourced human votes are in good agreement with those of expert raters. These analyses collectively establish a robust foundation for the credibility of Chatbot Arena. Because of its unique value and openness, Chatbot Arena has emerged as one of the most referenced LLM leaderboards, widely cited by leading LLM developers and companies. Our demo is publicly available at \url{this https URL}._
+
+Note, Elo rating is better then a strait rank. It's what's used in chess scores, TL;DR from GPT:
+
+_The Elo rating system provides a more dynamic and precise measurement of a player's skill level compared to a strict ranking system. In a strict rank system, ranks are usually assigned based on the order of finish in competitions or through a simple win/loss record without considering the strength of the opponents. This can sometimes lead to misleading ranks when players have not played opponents of equal skill._
+
+_The Elo system, however, adjusts a player’s rating based on the expected outcome of each game, taking into account the skill levels of the opponents. This means that beating a higher-rated player will gain you more points than beating a lower-rated one, and losing to a lower-rated player will cost you more points. As a result, the Elo rating is a more accurate reflection of a player's true skill level and provides a more nuanced understanding of how players compare to each other._
+
+### Eval Data Sets
+
+Buiding good "generic" eval data sets is hard, here are some:
+
+- [Big Bench](https://github.com/suzgunmirac/BIG-Bench-Hard/tree/main) - a bunch of hard question prompts
 
 ## Testing Theory
 
