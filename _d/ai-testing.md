@@ -17,7 +17,7 @@ Testing math is easy, it's right or wrong. Test spelling is easy too, but testin
     - [Who is the funnier LLM](#who-is-the-funnier-llm)
     - [Who is the better git summarizer](#who-is-the-better-git-summarizer)
 - [Eval Systems](#eval-systems)
-    - [Human based blind taste tates Chatbot arena](#human-based-blind-taste-tates-chatbot-arena)
+    - [Human-based blind taste tests Chatbot arena](#human-based-blind-taste-tests-chatbot-arena)
     - [Eval Data Sets](#eval-data-sets)
 - [Testing Theory](#testing-theory)
     - [Simplest form of testing](#simplest-form-of-testing)
@@ -36,15 +36,15 @@ I use LangSmith
 
 ### Testing across prompts
 
-I use PromptFoo, but havent' really done this.
+I use PromptFoo, but haven't really done this.
 
 ### Testing across models
 
 1. PromptFoo - For heavy lifts
-2. [https://nat.dev](https://nat.dev) - For adhoc experimentation
+2. [https://nat.dev](https://nat.dev) - For ad-hoc experimentation
 3. Just keep the output of both - The cheater's way
 
-Here's an example, where I use multiple LLMs to generate output, and just keep both.
+Here's an example, where I use multiple LLMs to generate output and just keep both.
 
 For example here's the explanation of [My commit that does this](https://github.com/idvorkin/nlp/commit/674e73c6729cedc9a07cdad326c67ef8976601db)
 
@@ -96,13 +96,13 @@ tests:
 
 ## Eval Systems
 
-### Human based blind taste tates Chatbot arena
+### Human-based blind taste tests Chatbot arena
 
 The gold standard for what LLM is best is asking users to judge. [Chatbot Arena](https://chat.lmsys.org/?leaderboard) does this, from their paper:
 
 _Large Language Models (LLMs) have unlocked new capabilities and applications; however, evaluating the alignment with human preferences still poses significant challenges. To address this issue, we introduce Chatbot Arena, an open platform for evaluating LLMs based on human preferences. Our methodology employs a pairwise comparison approach and leverages input from a diverse user base through crowdsourcing. The platform has been operational for several months, amassing over 240K votes. This paper describes the platform, analyzes the data we have collected so far, and explains the tried-and-true statistical methods we are using for efficient and accurate evaluation and ranking of models. We confirm that the crowdsourced questions are sufficiently diverse and discriminating and that the crowdsourced human votes are in good agreement with those of expert raters. These analyses collectively establish a robust foundation for the credibility of Chatbot Arena. Because of its unique value and openness, Chatbot Arena has emerged as one of the most referenced LLM leaderboards, widely cited by leading LLM developers and companies. Our demo is publicly available at \url{this https URL}._
 
-Note, Elo rating is better then a strait rank. It's what's used in chess scores, TL;DR from GPT:
+Note, Elo rating is better than a straight rank. It's what's used in chess scores, TL;DR from GPT:
 
 _The Elo rating system provides a more dynamic and precise measurement of a player's skill level compared to a strict ranking system. In a strict rank system, ranks are usually assigned based on the order of finish in competitions or through a simple win/loss record without considering the strength of the opponents. This can sometimes lead to misleading ranks when players have not played opponents of equal skill._
 
@@ -110,7 +110,7 @@ _The Elo system, however, adjusts a player’s rating based on the expected outc
 
 ### Eval Data Sets
 
-Buiding good "generic" eval data sets is hard, here are some:
+Building good "generic" eval data sets is hard, here are some:
 
 - [Big Bench](https://github.com/suzgunmirac/BIG-Bench-Hard/tree/main) - a bunch of hard question prompts
 
@@ -145,13 +145,13 @@ Eval Time:
 
 ### Wrinkle - No Known Answer
 
-Sometimes there isn't a known answer - in that case we can have a judge do the answers.
+Sometimes there isn't a known answer - in that case, we can have a judge do the answers.
 
 Eval Time:
 
 Have a judge give a subjective score.
 
-Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches, or work performance reviews
+Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews
 
 ### Wrinkle - No clear questions
 
