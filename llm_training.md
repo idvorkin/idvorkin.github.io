@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Training LLMs"
-permalink: /llm-training
-redirect-from:
+permalink: /ai-training
+redirect_from:
   - /ai-training
+  - /training
+  - /llm-training
 ---
 
 Generally, I don't deal with training or deeper tech, but might as well keep some onotes on it.
