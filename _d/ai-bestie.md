@@ -124,7 +124,7 @@ Here are some models I fine tuned in case you get access to them
 
 Not exactly related, but let me merge some of these concepts in.
 
-[Tony the Tesla](https://github.com/idvorkin/nlp/blob/bcb2660f97d3448a7421bd0db9cc2fc98ef6f077/convos/lifecoach.convo.md?plain=1#L28)
+[Tony the Tesla](https://github.com/idvorkin/tony_tesla)
 
 ### Habit Tracking
 
