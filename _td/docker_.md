@@ -1,21 +1,7 @@
 ---
+
 layout: post
-title: The Mystery of the google ads
-permalink: /docker
----
-
-Docker has 2 values, isolation and repeatable setup. Here are my notes
-
-<!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
-
-- [Useful commands and notes](#useful-commands-and-notes)
-- [TUI](#tui)
-- [Real applications, my blog](#real-applications-my-blog)
-    - [Requirements](#requirements)
-
-<!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
+title: Docker tools
 
 ## Useful commands and notes
 
@@ -26,6 +12,14 @@ Docker has 2 values, isolation and repeatable setup. Here are my notes
 - Kill all stopped containers - `docker rm $(docker ps --filter status=exited -q)`
 - Erase dangling containers
   docker volume rm \$(docker volume ls -qf dangling=true)
+
+<!-- vim-markdown-toc GFM -->
+
+- [TUI](#tui)
+- [Real applications, my blog](#real-applications-my-blog)
+  - [Requirements](#requirements)
+
+<!-- vim-markdown-toc -->
 
 ## TUI
 
