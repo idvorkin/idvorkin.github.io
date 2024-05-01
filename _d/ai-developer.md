@@ -4,11 +4,12 @@ title: AI Developer
 permalink: /ai-developer
 ---
 
-ML Engineer is a hot new word. I think it refers to engineers who train and deploy models. I heard the word AI developer the other day and I don't know if it's defined yet, but I'll refer to it as AI application engineers. People who use AI to sovle use cases.
+ML Engineer is a hot new word. I think it refers to engineers who train and deploy models. I heard the word AI developer the other day and I don't know if it's defined yet, but I'll refer to it as AI application engineers. People who use AI to solve use cases.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+- [AI Developer, vs a Software Engineer using AI](#ai-developer-vs-a-software-engineer-using-ai)
 - [Use Cases and Applications](#use-cases-and-applications)
 - [Tech Deep Dive - Models](#tech-deep-dive---models)
     - [Model and Service Dashboards](#model-and-service-dashboards)
@@ -17,10 +18,20 @@ ML Engineer is a hot new word. I think it refers to engineers who train and depl
     - [Groq](#groq)
 - [Data Access](#data-access)
 - [Related Posts](#related-posts)
-- [Several post on this topic:](#several-post-on-this-topic)
+- [Several posts on this topic:](#several-posts-on-this-topic)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+## AI Developer, vs a Software Engineer using AI
+
+Today, most software engineers are thinking how do I use AI to be a better programmer.
+
+An AI developer would instead do:
+
+1. Be the PM, nail the use case.
+2. Figure out how much of it AI can do.
+3. Close the gap.
 
 ## Use Cases and Applications
 
@@ -46,7 +57,7 @@ ML Engineer is a hot new word. I think it refers to engineers who train and depl
 
 ### Groq
 
-- Groq is really excisting because it's crazy fast. Like 200 Tokens/S. But it can only run open source models, so much less useful. Looks like it can run
+- Groq is really exciting because it's crazy fast. Like 200 Tokens/S. But it can only run open source models, so much less useful. Looks like it can run
 
 ## Data Access
 
@@ -56,26 +67,26 @@ ML Engineer is a hot new word. I think it refers to engineers who train and depl
 
 ## Related Posts
 
-## Several post on this topic:
+## Several posts on this topic:
 
-{%include summarize-page.html src="/ai-testing" %}
-
----
-
-{%include summarize-page.html src="/ai-bestie" %}
+{% include summarize-page.html src="/ai-testing" %}
 
 ---
 
-{%include summarize-page.html src="/ai-talk" %}
+{% include summarize-page.html src="/ai-bestie" %}
 
 ---
 
-{%include summarize-page.html src="/ai-journal" %}
+{% include summarize-page.html src="/ai-talk" %}
 
 ---
 
-{%include summarize-page.html src="/ai-art" %}
+{% include summarize-page.html src="/ai-journal" %}
 
 ---
 
-{%include summarize-page.html src="/ml" %}
+{% include summarize-page.html src="/ai-art" %}
+
+---
+
+{% include summarize-page.html src="/ml" %}
