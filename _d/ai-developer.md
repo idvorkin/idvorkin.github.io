@@ -16,7 +16,8 @@ ML Engineer is a hot new word. I think it refers to engineers who train and depl
     - [Commercial vs Open Source Models](#commercial-vs-open-source-models)
     - [Groq](#groq)
 - [Data Access](#data-access)
-- [Validating AI](#validating-ai)
+- [Related Posts](#related-posts)
+- [Several post on this topic:](#several-post-on-this-topic)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -53,6 +54,24 @@ ML Engineer is a hot new word. I think it refers to engineers who train and depl
 - Raptor
 - DSpy
 
-## Validating AI
+## Related Posts
+
+## Several post on this topic:
 
 {%include summarize-page.html src="/ai-testing" %}
+
+---
+
+{%include summarize-page.html src="/ai-bestie" %}
+
+---
+
+{%include summarize-page.html src="/ai-journal" %}
+
+---
+
+{%include summarize-page.html src="/ai-art" %}
+
+---
+
+{%include summarize-page.html src="/ml" %}
