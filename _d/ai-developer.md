@@ -66,6 +66,10 @@ ML Engineer is a hot new word. I think it refers to engineers who train and depl
 
 ---
 
+{%include summarize-page.html src="/ai-talk" %}
+
+---
+
 {%include summarize-page.html src="/ai-journal" %}
 
 ---
