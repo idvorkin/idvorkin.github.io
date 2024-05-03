@@ -8,6 +8,19 @@ redirect_from:
 
 Image a place where you'd do your best work. Andy Matuschak defined this word, and as someone who aspires to effectiveness I fell in love with the concept. As a techie who loves efficiency I set about building my own. From Andy: An enabling environment significantly expands its participants’ capacity to do things they find meaningful and important. This blog is the consumption environment for mine.
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [From Andy](#from-andy)
+- [Igor's Computing Setup](#igors-computing-setup)
+- [Igor's Physical Setup](#igors-physical-setup)
+- [AI Augmentation](#ai-augmentation)
+    - [Critical Thinking](#critical-thinking)
+    - [Inspiration](#inspiration)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 There's so much to say here. Pulling in some content from Andy:
 
 ## From Andy
