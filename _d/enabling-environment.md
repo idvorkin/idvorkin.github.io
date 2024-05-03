@@ -1,0 +1,51 @@
+---
+layout: post
+title: "Enabling Environment"
+permalink: /enable
+redirect_from:
+  - /enabling-environment
+---
+
+Image a place where you'd do your best work. Andy Matuschak defined this word, and as someone who aspires to effectiveness I fell in love with the concept. As a techie who loves efficiency I set about building my own. From Andy: An enabling environment significantly expands its participants’ capacity to do things they find meaningful and important. This blog is the consumption environment for mine.
+
+There's so much to say here. Pulling in some content from Andy:
+
+## From Andy
+
+- [Enabling Environment](https://notes.andymatuschak.org/z492hGrHvRvJiEY9UfB4Mby)
+- [Ever green notes](https://notes.andymatuschak.org/z5E5QawiXCMbtNtupvxeoEX)
+- [Andy's about page](https://notes.andymatuschak.org/About_these_notes)
+
+## Igor's Computing Setup
+
+- Igor's [about page](/about)
+- Some of the [features](https://github.com/idvorkin/idvorkin.github.io) in the read me.
+- Tonnes of [VIM/CLI stuff](https://github.com/idvorkin/settings)
+
+At a core we have writing
+
+{%include summarize-page.html src="/writing" %}
+
+## Igor's Physical Setup
+
+- I think there are some coffee shop rituals that are part of mine.
+
+## AI Augmentation
+
+What I'm most excited about is how to expand this with AI. My thinking program is my first cut.
+
+Spell check and summary/eli5/TLDR are the obvious ones, but what if we extended to reflection questions, implicit assumptions, etc....
+
+### Critical Thinking
+
+Running over Andy's enabling environment page ...
+
+gist.github.com/idvorkin/25eadce2222a09d9dca620679afd59d6
+
+github.com/idvorkin/nlp/blob/main/think.py
+
+https://gist.github.com/idvorkin/25eadce2222a09d9dca620679afd59d6
+
+### Inspiration
+
+Mood matters, and for some reason, illustrating my blog makes me thrilled. IF I'm stuck having DALL-E illustrate my blog makes me thrilled!
