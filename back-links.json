@@ -63,6 +63,7 @@
         "/eat-that-frog": "/frog",
         "/effectiveness": "/balance",
         "/emotional-health-practices": "/emotional-health",
+        "/enabling-environment": "/enable",
         "/enemies": "/enemy",
         "/enjoy": "/happy",
         "/essential": "/essentialism",
@@ -462,19 +463,20 @@
             "py/object": "__main__.Page",
             "url": "/ai-developer",
             "title": "AI Developer",
-            "description": "ML Engineer is a hot new word. I think it refers to engineers who train and deploy models. I heard the word AI developer the other day and I don’t know if it’s defined yet, but I’ll refer to it as AI application engineers. People who use AI to sovle use cases.\n\n",
+            "description": "ML Engineer is a hot new job. It’s the boys and girls who train and deploy models. I heard the word AI developer the other day, and I’ll refer to it as AI application engineers. People who use AI to solve use cases. NOTE: This is not what most developers do today. What most developers do today is ask how can AI do the things I would have done (e.g. write the function).\n\n",
             "file_path": "_site/ai-developer.html",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-bestie",
                 "/ai-journal",
                 "/ai-testing",
+                "/genai-talk",
                 "/ml"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai-developer.md",
-            "doc_size": 12000
+            "doc_size": 16000
         },
         "/ai-journal": {
             "py/object": "__main__.Page",
@@ -1829,6 +1831,20 @@
             "markdown_path": "_d/emotional-health-hold.md",
             "doc_size": 18000
         },
+        "/enable": {
+            "py/object": "__main__.Page",
+            "url": "/enable",
+            "title": "Enabling Environment",
+            "description": "Image a place where you’d do your best work. Andy Matuschak defined this word, and as someone who aspires to effectiveness I fell in love with the concept. As a techie who loves efficiency I set about building my own. From Andy: An enabling environment significantly expands its participants’ capacity to do things they find meaningful and important. This blog is the consumption environment for mine.\n\n",
+            "file_path": "_site/enable.html",
+            "outgoing_links": [
+                "/writing"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/enabling-environment.md",
+            "doc_size": 12000
+        },
         "/end-in-mind": {
             "py/object": "__main__.Page",
             "url": "/end-in-mind",
@@ -2092,6 +2108,7 @@
                 "/ai-testing"
             ],
             "incoming_links": [
+                "/ai-developer",
                 "/ai-journal"
             ],
             "redirect_url": "",
@@ -4432,6 +4449,7 @@
                 "/90days",
                 "/affirmations",
                 "/amazon",
+                "/enable",
                 "/manager-book",
                 "/operating-manual"
             ],
