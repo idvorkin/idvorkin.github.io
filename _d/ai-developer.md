@@ -9,6 +9,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+- [AI Developer, vs a Software Engineer using AI](#ai-developer-vs-a-software-engineer-using-ai)
 - [Programs, Human Code, AI.](#programs-human-code-ai)
 - [Design Patterns](#design-patterns)
     - [Job: Maximize the workflow and computation in your programs.](#job-maximize-the-workflow-and-computation-in-your-programs)
@@ -25,6 +26,16 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+## AI Developer, vs a Software Engineer using AI
+
+Today, most software engineers are thinking how do I use AI to be a better programmer.
+
+An AI developer would instead do:
+
+- Be the PM, nail the use case.
+- Figure out how much of it AI can do.
+- Close the gap.
 
 ## Programs, Human Code, AI.
 
@@ -52,7 +63,6 @@ The AI developer thrives to get the AI to the highest level possible
 
 ## Design Patterns
 
-
 ### Job: Maximize the workflow and computation in your programs.
 
 1. Understand use case
@@ -63,7 +73,7 @@ The AI developer thrives to get the AI to the highest level possible
 6. Figure out gaps AI is doing with current generation of AI
 7. Gap fill
 
-### Job:  Provide context to your model for Ground your model
+### Job: Provide context to your model for Ground your model
 
 Currently more complex, figuring it out.
 
