@@ -13,7 +13,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 - [Programs, Human Code, AI.](#programs-human-code-ai)
 - [Design Patterns](#design-patterns)
     - [Job: Maximize the workflow and computation in your programs.](#job-maximize-the-workflow-and-computation-in-your-programs)
-    - [Job:  Provide context to your model for Ground your model](#job--provide-context-to-your-model-for-ground-your-model)
+    - [Job: Provide context to your model for Ground your model](#job-provide-context-to-your-model-for-ground-your-model)
 - [Use Cases and Applications](#use-cases-and-applications)
 - [Tech Deep Dive - Models](#tech-deep-dive---models)
     - [Model and Service Dashboards](#model-and-service-dashboards)
@@ -81,7 +81,7 @@ Currently more complex, figuring it out.
 
 - [Writing git commit messages](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/commit.py?plain=1#L19)
 - [Spellchecking a file at a time](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/gpt3.py#L748)
-- [Reviewing changes in a repo over a period of time] (kind of a special case of git commit message)(https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/commit.py#L19). E.g. [What I wrote some random week](https://gist.github.com/idvorkin/a701075a10d98dc41768765bc5b567ca)
+- [Summarize changes in a repo over a period of time](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/commit.py#L19). E.g. [What I wrote some random week](https://gist.github.com/idvorkin/a701075a10d98dc41768765bc5b567ca)
 
 ## Tech Deep Dive - Models
 
