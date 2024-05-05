@@ -12,14 +12,17 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 - [AI Developer, vs a Software Engineer using AI](#ai-developer-vs-a-software-engineer-using-ai)
 - [Programs, Human Code, AI.](#programs-human-code-ai)
 - [Design Patterns](#design-patterns)
-    - [Job: Maximize the workflow and computation in your programs.](#job-maximize-the-workflow-and-computation-in-your-programs)
-    - [Job: Provide context to your model for Ground your model](#job-provide-context-to-your-model-for-ground-your-model)
+    - [Maximize the workflow and computation in your programs.](#maximize-the-workflow-and-computation-in-your-programs)
+    - [Provide context to your model for Ground your model](#provide-context-to-your-model-for-ground-your-model)
+    - [Use multiple AIs to maximize the value.](#use-multiple-ais-to-maximize-the-value)
+    - [Human in the loop](#human-in-the-loop)
 - [Use Cases and Applications](#use-cases-and-applications)
 - [Tech Deep Dive - Models](#tech-deep-dive---models)
     - [Model and Service Dashboards](#model-and-service-dashboards)
+    - [Quality vs Speed vs Prices](#quality-vs-speed-vs-prices)
+    - [Llama 3](#llama-3)
     - [Tools + Libraries](#tools--libraries)
     - [Commercial vs Open Source Models](#commercial-vs-open-source-models)
-    - [Groq](#groq)
 - [Data Access](#data-access)
 - [Related Posts](#related-posts)
 - [Several posts on this topic:](#several-posts-on-this-topic)
@@ -63,7 +66,7 @@ The AI developer thrives to get the AI to the highest level possible
 
 ## Design Patterns
 
-### Job: Maximize the workflow and computation in your programs.
+### Maximize the workflow and computation in your programs.
 
 1. Understand use case
 2. Make crappy prompt
@@ -73,9 +76,20 @@ The AI developer thrives to get the AI to the highest level possible
 6. Figure out gaps AI is doing with current generation of AI
 7. Gap fill
 
-### Job: Provide context to your model for Ground your model
+### Provide context to your model for Ground your model
 
 Currently more complex, figuring it out.
+
+### Use multiple AIs to maximize the value.
+
+- Run same prompt through multiple AIs
+- Show user multiple outputs
+- Use AI to judge and merge
+- Very helpful when you want the best thinking (e.g. commit messages).
+
+### Human in the loop
+
+- AI can still be wrong. Put a human in the loop
 
 ## Use Cases and Applications
 
@@ -93,16 +107,21 @@ Currently more complex, figuring it out.
 - [VAPI](https://dashboard.vapi.ai/billing) - for voice access
 - [Modal](https://modal.com/settings/idvorkin/usage) - For FaaS capability
 
+### Quality vs Speed vs Prices
+
+- See [performance dashboards](https://artificialanalysis.ai/models/gpt-4-turbo)
+- Groq is really exciting because it's crazy fast. Like 200 Tokens/S. But it can only run open source models, so much less useful. Looks like it can run
+
+### Llama 3
+
+- Super exciting based on quality, and by being hosted on Groq making it super fast.
+
 ### Tools + Libraries
 
 - Langchain
   - Gives you a unified API to use multiple models
 
 ### Commercial vs Open Source Models
-
-### Groq
-
-- Groq is really exciting because it's crazy fast. Like 200 Tokens/S. But it can only run open source models, so much less useful. Looks like it can run
 
 ## Data Access
 
