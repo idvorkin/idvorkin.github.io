@@ -46,6 +46,7 @@ Useful writing tells people something true and important that they didn't alread
     - [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
     - [My 80 hours on an outage document](#my-80-hours-on-an-outage-document)
     - [Writing Software and Tools](#writing-software-and-tools)
+    - [Writing is better with an enabling environment](#writing-is-better-with-an-enabling-environment)
     - [Other resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -366,6 +367,10 @@ I need to minimize distractions, so I try to write distraction free on my iPad
 - My iPad [writing tools](/td/ios-nomad)
 - My [iPad Setup](/td/ios)
 - I write in [vim](/vim-for-writing)
+
+### Writing is better with an enabling environment
+
+{%include summarize-page.html src="/enable" %}
 
 ### Other resources
 
