@@ -14,6 +14,15 @@ Image a place where you'd do your best work. Andy Matuschak defined this word, a
 - [From Andy](#from-andy)
 - [Igor's Computing Setup](#igors-computing-setup)
 - [Igor's Physical Setup](#igors-physical-setup)
+- [By Task](#by-task)
+    - [Production](#production)
+    - [Consumption](#consumption)
+    - [Reflection](#reflection)
+    - [Discovery](#discovery)
+    - [Recall](#recall)
+- [By Scope](#by-scope)
+    - [Individual Atrifacts](#individual-atrifacts)
+    - [Entire corpus](#entire-corpus)
 - [AI Augmentation](#ai-augmentation)
     - [Critical Thinking](#critical-thinking)
     - [Inspiration](#inspiration)
@@ -42,6 +51,24 @@ At a core we have writing
 ## Igor's Physical Setup
 
 - I think there are some coffee shop rituals that are part of mine.
+
+## By Task
+
+### Production
+
+### Consumption
+
+### Reflection
+
+### Discovery
+
+### Recall
+
+## By Scope
+
+### Individual Atrifacts
+
+### Entire corpus
 
 ## AI Augmentation
 
