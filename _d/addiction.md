@@ -29,6 +29,7 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
     - [Alcohol](#alcohol)
 - [Getting Rid of 'em](#getting-rid-of-em)
 - [Other thoughts on addiction](#other-thoughts-on-addiction)
+- [Addiction to flow/production/productivity](#addiction-to-flowproductionproductivity)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -79,6 +80,10 @@ My personality is a double-edged sword, I've got an addictive personality, and I
 An alternative definition of addiction is someone who always prioritizes his feelings over his values.
 
 Perhaps, boredom is the [pain](/mental-pain) of lack of connection, and addiction is a great way to stamp that out.
+
+## Addiction to flow/production/productivity
+
+Being addicted to flow and production sounds like a perfect hack. Afterall, isn't that the goal? Being productive? Close, I think addiction has this element of "out of control", and escape. Meaning you're skipping the thing you should be doing to do your addiction, so by definition it's bad. Certainly less bad then it can be, but still bad
 
 ## Other Resources
 
