@@ -10,6 +10,15 @@ redirect_from:
 
 Midlife has a marketing problem, the next word is always crisis. Chip Conley has lots of good insights here.
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [Midlife](#midlife)
+- [Modern Elder](#modern-elder)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 ## Midlife
 
 Book: Learning to love in midlife
