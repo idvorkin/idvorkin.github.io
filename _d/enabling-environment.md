@@ -2,6 +2,7 @@
 layout: post
 title: "Enabling Environment"
 permalink: /enable
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-enable.webp
 redirect_from:
   - /enabling-environment
 ---
@@ -26,12 +27,12 @@ Imagine the place you do your best work. Andy Matuschak defined this, and as som
     - [Entire corpus](#entire-corpus)
 - [AI Augmentation](#ai-augmentation)
     - [Critical Thinking](#critical-thinking)
-    - [Inspiration](#inspiration)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
 There's so much to say here. Pulling in some content from Andy:
+{%include blob_image_float_right.html src="blog/raccoon-enable.webp" %}
 
 ## From Andy
 
@@ -71,6 +72,8 @@ At its core, we have writing
 
 You'd think this is about the rider, but the elephant is super important too
 
+Mood matters, and for some reason, illustrating my blog makes me thrilled. If I'm stuck having DALL-E illustrate my blog makes me thrilled!
+
 ## By Scope
 
 ### Individual Artifacts
@@ -97,7 +100,3 @@ gist.github.com/idvorkin/25eadce2222a09d9dca620679afd59d6
 github.com/idvorkin/nlp/blob/main/think.py
 
 https://gist.github.com/idvorkin/25eadce2222a09d9dca620679afd59d6
-
-### Inspiration
-
-Mood matters, and for some reason, illustrating my blog makes me thrilled. If I'm stuck having DALL-E illustrate my blog makes me thrilled!
