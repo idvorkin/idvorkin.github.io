@@ -47,7 +47,8 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Identity Health](#identity-health)
     - [Travel Tips - Before you go](#travel-tips---before-you-go)
     - [Other learnings](#other-learnings)
-- [Other Resources](#other-resources)
+- [Other Thoughts](#other-thoughts)
+    - [Time Poor/Rich/Affluent](#time-poorrichaffluent)
     - [Optimize for energy, not time](#optimize-for-energy-not-time)
     - [Can you have too much time off?](#can-you-have-too-much-time-off)
 
@@ -290,9 +291,17 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 - Remember the peak end rule. Make the last day amazing!
 
-## Other Resources
+## Other Thoughts
+
+### Time Poor/Rich/Affluent
+
+**Time poor** is when you feels you do not have enough time to accomplish all their tasks and responsibilities. **Time rich** means having ample time to engage in activities that you enjoys outside of their work and responsibilities. This allows for a more relaxed lifestyle and often contributes to higher levels of personal satisfaction and happiness.
+
+This it the real nice thing about having time off, you can be time rich.
 
 ### Optimize for energy, not time
+
+{%include summarize-page.html src="/energy" %}
 
 ### Can you have too much time off?
 
