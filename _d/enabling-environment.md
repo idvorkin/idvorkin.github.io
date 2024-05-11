@@ -70,6 +70,11 @@ At a core we have writing
 
 ### Entire corpus
 
+Check out this thing on embeddigns. I think the story here needs to be embeddgns + rag
+
+- [Analyzing all of Hacker news](https://blog.wilsonl.in/hackerverse/)
+  - [Thinks Analysis](https://gist.github.com/idvorkin/0d6263706d8ca5a102242ed50b3b6047)
+
 ## AI Augmentation
 
 What I'm most excited about is how to expand this with AI. My thinking program is my first cut.
