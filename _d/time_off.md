@@ -17,12 +17,13 @@ alias:
   - /timeoff
 ---
 
-Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we'll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
+Time off is critical, it's how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we'll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!
 
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc GFM -->
 
+- [Time on, time rich, time poor.](#time-on-time-rich-time-poor)
 - [The phases of time off](#the-phases-of-time-off)
     - [Vegetation](#vegetation)
     - [TODO list](#todo-list)
@@ -48,18 +49,27 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Travel Tips - Before you go](#travel-tips---before-you-go)
     - [Other learnings](#other-learnings)
 - [Other Thoughts](#other-thoughts)
-    - [Time Poor/Rich/Affluent](#time-poorrichaffluent)
     - [Optimize for energy, not time](#optimize-for-energy-not-time)
     - [Can you have too much time off?](#can-you-have-too-much-time-off)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
+## Time on, time rich, time poor.
+
+Yeah, I've never thought about that either. Let's define "Time On" as the period when you're actively engaged in work or other mandatory activities that require your full attention and energy.
+
+The implication of "time on" is you don't have the time to do the things you want to do, aka you're **time poor**. Time off gives you a chance to be **time rich**, when you can spend the time as you wish.
+
+Like being "money rich", being time rich can solve lots of problem, but it comes with the same traps:
+
+{%include summarize-page.html src="/parkinson" %}
+
 ## The phases of time off
 
 {% include local_image_float_right.html src="raccoon-vacation.png" %}
 
-A common question is should you take 2 short vacations or 1 long one. That's a tough choice. I'm not sure I have an opinion on that, but I've learned my time off goes through a few phases, and I suspect there's a fixed time component, and if I can better understand the phases, I can better spend my time off.
+A common question is should you take 2 short vacations or 1 long one. That's a tough choice. I'm not sure I have an opinion on that, but I've learned my time off goes through a few phases, and I suspect there's a fixed time component, and if I can better understand the phases, I can maximize the value of my time off:
 
 1. Vegetation - Getting over being tired.
 1. TODO list - Cross those small things you've been putting off your TODO list
@@ -110,7 +120,7 @@ Even though getting to do what you love is awesome, you still want to love your 
 
 ### Optimizing for happiness
 
-- Being [Happy](/happy)
+{%include summarize-page.html src="/happy" %}
 
 ## Get real what should I do?
 
@@ -292,12 +302,6 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 - Remember the peak end rule. Make the last day amazing!
 
 ## Other Thoughts
-
-### Time Poor/Rich/Affluent
-
-**Time poor** is when you feels you do not have enough time to accomplish all their tasks and responsibilities. **Time rich** means having ample time to engage in activities that you enjoys outside of their work and responsibilities. This allows for a more relaxed lifestyle and often contributes to higher levels of personal satisfaction and happiness.
-
-This it the real nice thing about having time off, you can be time rich.
 
 ### Optimize for energy, not time
 
