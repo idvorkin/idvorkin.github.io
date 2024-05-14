@@ -9,7 +9,7 @@ redirect_from:
   - think
 ---
 
-Useful writing tells people something true and important that they didn't already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation.
+Useful writing tells people something true and important that they didn't already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart "If you're thinking without writing, you're only thinking about thinking".
 
 <!-- prettier-ignore-start -->
 
