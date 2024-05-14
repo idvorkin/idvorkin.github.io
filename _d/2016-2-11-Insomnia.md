@@ -16,6 +16,8 @@ imagefeature: https://github.com/idvorkin/blob/raw/master/problem-size.png
 
 Insomnia controls you, instead of you controlling your sleep. If you want advice on how to deal with insomnia, do NOT ask a person who hasn't slept in two nights. Instead, ask someone who's had insomnia several times, and has a checklist on how to respond when insomnia flares up. By the way, I've never actually taken this advice, but maybe writing it down will make it more likely that I'll take it in the future.
 
+## Insomnia
+
 {%include blob_image_float_right.html src="problem-size.png" %}
 
 A common pattern when I can't sleep is I wake up after sleeping for 4-6 hours (which for me tends to be around 1-2 am) feeling overwhelmed and dreading doing something, or thinking I won't be able to succeed. At that point, I'm half a sleep, half awake ruminating on whatever has me overwhelmed.
@@ -44,5 +46,23 @@ After a few days of inadequate sleep, I'll often be trying to deal with sleep de
 - I take prescription sleeping pills (aka Ambien/Lunesta/Sonata).
 - I force myself out of bed at wake up time - even if I didn't get enough sleep.
 - I do not drink caffeine or nap. The best path to fall asleep on time (or even early) is sleep exhaustion
+
+## Sleep
+
+_TODO: Make this it's own post_
+
+[Bryan Johnson](/blueprint) says sleep is like life on easy mode. He has lots to say on this, and it gets technical, and I think I agree:
+
+{%include youtube.html src="Qt-2UYS-qNc?start=77s2s" %}
+
+### Bed Heater/Cooler - Eight Sleep
+
+Ok, I used to use a mattress pad warmer, it was glorious. The sleep 8 is like that but cooler! Pun intended, it's able to both heat and cool your bed. Basically a heat pump w/radiator. It also adjusts as you sleep so you go to bed warm (who wants a cold bed), cools you through the evening, then cooks you to get you out of bed in the morning. Super expensive, but probably worht it given it's a lifetime investment in yoru sleep. Humoursly - cooking is the best alarm clock.
+
+### Consistent bed time
+
+### Caffiene
+
+### Alcohol
 
 Sleep well.

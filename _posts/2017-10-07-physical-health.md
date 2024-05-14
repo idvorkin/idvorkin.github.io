@@ -42,6 +42,8 @@ I recommend getting as much sleep as you need.
 
 Personally I set an alarm and always wake up at the same time, regardless of how tired I am. When I'm not getting enough sleep I actually reduce my caffeine to make sure I'm so tired, I fall asleep early. Many people feel they don't have enough time for sleep, but I couldn't disagree more. Not sleeping makes everything worse, resulting in you getting less done. Getting enough sleep shows you want to get the most done in your waking hours.
 
+{%include summarize-page.html src="/insomnia" %}
+
 ### FAQ
 
 #### How should I start?
@@ -108,6 +110,8 @@ In summary, trainers are worth it.
 
 #### Should I do kettle bells?
 
+_TODO: Make kettlebells its own page_
+
 When I started working out with a trainer, they introduced me to kettle bells. Kettlebells are a rock with a handle. What could be cooler then that?
 
 I instantly liked Turkish Get Ups (TGUs) they have a nice flow and feel great. The trainer tried to get me to do swings, but I'm afraid of ballistic exercises so declined.
@@ -118,14 +122,19 @@ Swings:
 
 {%include youtube.html src="e-gsAvLdi68" %}
 
+I also wrote and [app](https://github.com/idvorkin/video-edit/blob/3676fd9d827ee881eb90a1914ee21ab37e417756/yolo.py?plain=1#L112) to make sure my swings were good:
+
+{%include youtube.html src="BD6Sys1GIuU?si=tVnJMGwbD34SPFw5" %}
+
 TGUs:
 
-Video coming
+- Video coming
 
 I'm applying a goal from a book called Kettle Bell Simple and Sinister. Targets:
 
-10x10 @ 32 KG One Arm Swings
-5x1 (each arm) @ 32KG
+- 10x10 @ 32 KG Two Arm Swings (100!) (Achieved Novemeber '23), but then regressed due to injury.
+- 10x10 @ 32 KG (50 per arm) One Arm Swings
+- 5x1 @ 32KG -(5 per arm) Achieved January '24
 
 #### What's it like waking up at 5am
 
