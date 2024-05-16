@@ -41,3 +41,11 @@ This would make road trips impossible, except there's supercharging. These are l
 Superchargers have 2 larger failures though 1/ there isn't a supercharger where you need one, so you need to plan routes that can take them, and those routes don't always exist. 2/ If the supercharger is full, you need to wait. And you need to wait in your car since you can't charge until a slot opens up.
 
 Fuel cost is nice too. It's dirt cheap to drive. We put 10,000 miles on the RAV-4, at 20 miles/gallon and $5/gallon fuel that's $2,500 in fuel. Same 10,000 miles on the Tesla, \$200, tops. I'm told maintenance is way lower since you don't have an engine, so no oil changes.
+
+### Camping/Sleeping
+
+Turns out the Tesla is perfect for sleeping 1 or 2 people. Lay flat seats, camping mode (Climate control on), and a glass roof to gaze at the stars. You buy an air matress, and you're ready to go.
+
+Why not just sleep in a tent? 3 reasons, 1/ climate control 2/see the stars 3/ 0 tear down time.
+
+And best of all, if you only have 2 people, you don't even need to tear down the air mattress.
