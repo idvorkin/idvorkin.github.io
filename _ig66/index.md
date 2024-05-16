@@ -25,7 +25,7 @@ no-render-title: true
 
 ### [{{item.title}}]({{item.url}})
 
-[![montage](https://github.com/idvorkin/blob/raw/master/ig66/{{item.week}}/montage.jpg)]({{item.url}})
+[![montage](https://github.com/idvorkin/blob/raw/master/ig66/{{item.week}}/montage.webp)]({{item.url}})
 {{item.excerpt}}
 
 {% endfor %}
@@ -50,7 +50,7 @@ no-render-title: true
 
 ### [{{item.title}}]({{item.url}})
 
-[![montage](https://github.com/idvorkin/blob/raw/master/ig66/{{item.week}}/montage.jpg)]({{item.url}})
+[![montage](https://github.com/idvorkin/blob/raw/master/ig66/{{item.week}}/montage.webp)]({{item.url}})
 {{item.excerpt}}
 
 {% endfor %}
