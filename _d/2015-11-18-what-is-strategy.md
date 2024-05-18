@@ -231,3 +231,8 @@ Apple:
 - Hardware or Services
 - The App Store
 - The Physical Store
+
+### Strategy vs Execution
+
+Strategy is how it works when you get there.
+Execution is how you go about doing it
