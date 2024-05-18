@@ -77,6 +77,14 @@ From "Clean Craftsmanship" on being a professional ...
 
 “If your employer provides you the time and space to do this kind of learning, then take as much advantage of it as you can. If your employer is not so helpful, then you’ll have to learn on your own time. Be prepared to spend several hours per month on it. Make sure you have the personal time set aside for it. Yes, I know, you have family obligations, there are bills to pay and planes to catch, and you’ve got a life. Okay, but you also have a profession. And professions need care and maintenance. I expect us all to be continuous aggressive learners.”
 
+### How do you decide what you work on?
+
+From a post on nvim - which speaks to my approach:
+
+_The Neovim project is loosely organized and structured. We follow a “fun driven development” paradigm: for the most part, contributors and maintainers work on things that are personally interesting to them. Because of this, it can be difficult to predict what will happen in future releases. If there is a feature you want to see implemented, the best way to do it is to take a crack at it yourself: many of the features mentioned in this very blog post were contributed by users that are not part of the “core” maintenance team!_
+
+A non-obvious bonus of this approach is you're always operating with high motivation resulting in high effeciency.
+
 ### How do I get in touch?
 
 I love knowing smart, resilient, positive people. Connect and message me on [Linked In](/linkedin).
