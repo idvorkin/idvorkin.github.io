@@ -683,7 +683,7 @@ deactivate A;
 
 Tools that let you re-tile
 
-- OSX - [Better Snap Tool](https://apps.apple.com/us/app/bettersnaptool/id417375580?mt=12)
+- OSX - Rectangle
 - Windows - Windows Power Toys - [FancyZones](https://github.com/microsoft/PowerToys)
 
 ### ClI Fun
