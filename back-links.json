@@ -119,6 +119,8 @@
         "/meditate": "/siy",
         "/meditation": "/siy",
         "/mental-break-down": "/depression",
+        "/middleage": "/elder",
+        "/midlife": "/elder",
         "/monsters": "/mind-monsters",
         "/mortality": "/death",
         "/mr": "/ar",
@@ -217,7 +219,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/22.md",
-            "doc_size": 11000
+            "doc_size": 13000
         },
         "/40yo": {
             "py/object": "__main__.Page",
@@ -339,7 +341,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "about.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/activation": {
             "py/object": "__main__.Page",
@@ -400,7 +402,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/addiction.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/affirmations": {
             "py/object": "__main__.Page",
@@ -476,7 +478,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai-developer.md",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/ai-journal": {
             "py/object": "__main__.Page",
@@ -791,7 +793,8 @@
             ],
             "incoming_links": [
                 "/activation",
-                "/d/time-off-2024-02"
+                "/d/time-off-2024-02",
+                "/insomnia"
             ],
             "redirect_url": "",
             "markdown_path": "_d/blueprint.md",
@@ -1805,6 +1808,18 @@
             "markdown_path": "_d/e1.md",
             "doc_size": 10000
         },
+        "/elder": {
+            "py/object": "__main__.Page",
+            "url": "/elder",
+            "title": "The Modern Elder and middle age",
+            "description": "Midlife has a marketing problem, the next word is always crisis. Chip Conley has lots of good insights here.\n\n",
+            "file_path": "_site/elder.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/elder.md",
+            "doc_size": 14000
+        },
         "/emotional-health": {
             "py/object": "__main__.Page",
             "url": "/emotional-health",
@@ -1835,15 +1850,18 @@
             "py/object": "__main__.Page",
             "url": "/enable",
             "title": "Enabling Environment",
-            "description": "Image a place where you’d do your best work. Andy Matuschak defined this word, and as someone who aspires to effectiveness I fell in love with the concept. As a techie who loves efficiency I set about building my own. From Andy: An enabling environment significantly expands its participants’ capacity to do things they find meaningful and important. This blog is the consumption environment for mine.\n\n",
+            "description": "Imagine the place you do your best work. Andy Matuschak defined this, and as someone who aspires to effectiveness, I fell in love with the concept. As a techie who loves efficiency, I also set about building my own. From Andy: An enabling environment significantly expands its participants’ capacity to do things they find meaningful and important. This blog is the consumption environment for mine.\n\n",
             "file_path": "_site/enable.html",
             "outgoing_links": [
+                "/switch",
                 "/writing"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/writing"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/enabling-environment.md",
-            "doc_size": 12000
+            "doc_size": 15000
         },
         "/end-in-mind": {
             "py/object": "__main__.Page",
@@ -1907,7 +1925,8 @@
             "incoming_links": [
                 "/balance",
                 "/mood",
-                "/productive"
+                "/productive",
+                "/timeoff"
             ],
             "redirect_url": "",
             "markdown_path": "_d/energy.md",
@@ -2214,6 +2233,18 @@
             "markdown_path": "_td/grammerly.md",
             "doc_size": 9000
         },
+        "/graph": {
+            "py/object": "__main__.Page",
+            "url": "/graph",
+            "title": "Graph",
+            "description": "Igor's Blog",
+            "file_path": "_site/graph.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "graph.html",
+            "doc_size": 9000
+        },
         "/grateful": {
             "py/object": "__main__.Page",
             "url": "/grateful",
@@ -2227,6 +2258,18 @@
             "redirect_url": "",
             "markdown_path": "_d/grateful2.md",
             "doc_size": 11000
+        },
+        "/groupchat": {
+            "py/object": "__main__.Page",
+            "url": "/groupchat",
+            "title": "My favorite group chats - the forever dinner party",
+            "description": "If you had to articulate what makes a group chat great, you’d probably end up describing a great dinner party. So lets think on that. Idea mostly copied from Sriram\n\n",
+            "file_path": "_site/groupchat.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/groupchat.md",
+            "doc_size": 16000
         },
         "/gtd": {
             "py/object": "__main__.Page",
@@ -2435,15 +2478,18 @@
             "title": "What I should do when I can't sleep",
             "description": "Insomnia controls you, instead of you controlling your sleep. If you want advice on how to deal with insomnia, do NOT ask a person who hasn’t slept in two nights. Instead, ask someone who’s had insomnia several times, and has a checklist on how to respond when insomnia flares up. By the way, I’ve never actually taken this advice, but maybe writing it down will make it more likely that I’ll take it in the future.\n\n",
             "file_path": "_site/insomnia.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/blueprint"
+            ],
             "incoming_links": [
                 "/activation",
                 "/depression",
-                "/essentialism"
+                "/essentialism",
+                "/physical-health"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2016-2-11-Insomnia.md",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/interviewsarehard": {
             "py/object": "__main__.Page",
@@ -3116,7 +3162,7 @@
             "py/object": "__main__.Page",
             "url": "/parkinson",
             "title": "Parkinson's Law: The Paradox of Plenty",
-            "description": "Work expands to fill the resources available. The more you make the more you spend. Stuff expands to fill the space available for storage. etc, etc.\n\n",
+            "description": "Work expands to fill the resources available. The more you make, the more you spend. Stuff expands to fill the space available for storage. If you want something done, give it to a busy person, etc.\n\n",
             "file_path": "_site/parkinson.html",
             "outgoing_links": [
                 "/amazon",
@@ -3127,7 +3173,8 @@
                 "/balance",
                 "/manager-book-appendix",
                 "/money",
-                "/operating-manual"
+                "/operating-manual",
+                "/timeoff"
             ],
             "redirect_url": "",
             "markdown_path": "_d/resource-paradox.md",
@@ -3141,6 +3188,7 @@
             "file_path": "_site/physical-health.html",
             "outgoing_links": [
                 "/diet",
+                "/insomnia",
                 "/irl",
                 "/sharpen-the-saw",
                 "/tech-health-toys"
@@ -3158,7 +3206,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
-            "doc_size": 21000
+            "doc_size": 22000
         },
         "/pride": {
             "py/object": "__main__.Page",
@@ -3685,6 +3733,7 @@
             ],
             "incoming_links": [
                 "/d/time-off-2022-02",
+                "/enable",
                 "/first-things-first",
                 "/negotiate",
                 "/productive",
@@ -3758,7 +3807,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 72000
+            "doc_size": 79000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
@@ -3840,7 +3889,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/data-systems.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
@@ -4107,11 +4156,9 @@
             "py/object": "__main__.Page",
             "url": "/tesla",
             "title": "Tony (Tessie) the Tesla",
-            "description": "I don’t like to drive. I don’t like to drive so much that I have it in my eulogy. Luckily, this fellow made a car that’s optimized to driving you. In August 2023 I treated myself to a Tesla Model Y. It has lots of trade offs, but the key for me is Autopilot (e.g. it driving me)\n\n",
+            "description": "I don’t like to drive. I don’t like to drive so much that I have it in my eulogy. Luckily, this fellow made a car that’s optimized to driving you. In August 2023 I treated myself to a Tesla Model Y. It has lots of trade-offs, but the key for me is Autopilot (e.g. it driving me)\n\n",
             "file_path": "_site/tesla.html",
-            "outgoing_links": [
-                "/ig66/687"
-            ],
+            "outgoing_links": [],
             "incoming_links": [
                 "/d/time-off-2024-02",
                 "/irl",
@@ -4120,7 +4167,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/tesla.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/testing": {
             "py/object": "__main__.Page",
@@ -4171,17 +4218,19 @@
             "py/object": "__main__.Page",
             "url": "/timeoff",
             "title": "Getting the most out of time off",
-            "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with vacation, which is the case when you turn your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
+            "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
             "file_path": "_site/timeoff.html",
             "outgoing_links": [
                 "/addiction",
                 "/d/resistance",
                 "/d/time-off-2024-02",
+                "/energy",
                 "/essentialism",
                 "/eulogy",
                 "/frog",
                 "/happy",
                 "/mind-at-work",
+                "/parkinson",
                 "/siy",
                 "/time-off-2020-03"
             ],
@@ -4205,7 +4254,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time_off.md",
-            "doc_size": 30000
+            "doc_size": 31000
         },
         "/todo_enjoy": {
             "py/object": "__main__.Page",
@@ -4432,7 +4481,7 @@
             "py/object": "__main__.Page",
             "url": "/writing",
             "title": "Writing is Thinking",
-            "description": "Useful writing tells people something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation.\n\n",
+            "description": "Useful writing tells people something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart “If you’re thinking without writing, you’re only thinking about thinking”.\n\n",
             "file_path": "_site/writing.html",
             "outgoing_links": [
                 "/7h-concepts",
@@ -4440,6 +4489,7 @@
                 "/amazon",
                 "/coaching",
                 "/coe",
+                "/enable",
                 "/td/ios",
                 "/td/ios-nomad",
                 "/td/visual-vocabulary",
