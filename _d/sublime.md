@@ -10,24 +10,24 @@ redirect_from:
 permalink: /sublime
 ---
 
-Emotional healths is pretty important. Western folks don't have a lot of words to support this budhists have the sublime states: Loving kindness, Compassion, Altrustistic Joy and Equanimity. Give 'em a try. Most of this is based on "The Joy of Happiness".
+Emotional health is pretty important. Western folks don't have a lot of words to support this; Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give 'em a try. Most of this is based on "The Joy of Happiness".
 
 ### Uplift the mind in seconds
 
 Tools of the trade (Sublime states):
 
-{%include local_image_float_right.html src="raccoon-meditate.png" %}
+{% include local_image_float_right.html src="raccoon-meditate.png" %}
 
 | State           | Definition                                                   |
 | --------------- | ------------------------------------------------------------ |
-| Loving Kindness | Wish for someone to be happy                                 |
+| Loving-kindness | Wish for someone to be happy                                 |
 | Compassion      | Wish for someone to be free of suffering                     |
 | Altruistic Joy  | Be happy for [self](/joy) or [other](/touching) bringing joy |
 | Equanimity      | Remaining Calm, regardless of circumstance                   |
 
 | State           | Informal Practice |
 | --------------- | ----------------- |
-| Loving Kindness | [l20](l20)        |
+| Loving-kindness | [l20](l20)        |
 | Compassion      | [l21](l21)        |
 | Altruistic Joy  | [l22](l22)        |
 | Equanimity      | [l23](l23)        |
@@ -35,7 +35,7 @@ Tools of the trade (Sublime states):
 
 <div> </div>
 - l20
-- **Loving Thoughts**: Make it a habit to silently wish happiness, safety, and well-being for people you interact with or think about, including strangers you pass on the street. (Happy guyn - Pew Pew)
+- **Loving Thoughts**: Make it a habit to silently wish happiness, safety, and well-being for people you interact with or think about, including strangers you pass on the street. (Happy guy - Pew Pew)
 - **Everyday Kindness**: Practice small acts of kindness throughout your day. This could be as simple as offering a smile, giving a sincere compliment, or helping someone in a small way. These actions cultivate a habit of kindness.
 
 <div> </div>
@@ -49,7 +49,7 @@ Tools of the trade (Sublime states):
 - **Mindful Appreciation:** Notice and appreciate the good in those around you and in your own life. Acknowledging the positive aspects can enhance your capacity for joy.
 - When doing something altruistic, think I am being altruistic, this makes me happy
 - When seeing someone being altruistic, there exists a wonderful person in the world, I am happy
-- When someone is doing an altruisitc act, think more good is being done in the world, I am happy
+- When someone is doing an altruistic act, think more good is being done in the world, I am happy
 
 <div> </div>
 - l23
@@ -58,30 +58,30 @@ Tools of the trade (Sublime states):
 
 <div> </div>
 
-| State           | Sneaky Enemiesf |
-| --------------- | --------------- |
-| Loving Kindness | [l10](l10)      |
-| Compassion      | [l11](l11)      |
-| Altruistic Joy  | [l12](l12)      |
-| Equanimity      | [l13](l13)      |
-| --------------  | --------------  |
+| State           | Sneaky Enemies |
+| --------------- | -------------- |
+| Loving-kindness | [l10](l10)     |
+| Compassion      | [l11](l11)     |
+| Altruistic Joy  | [l12](l12)     |
+| Equanimity      | [l13](l13)     |
+| --------------  | -------------- |
 
 - l10
 - Ill will - the opposite
-- Grasping - If person leaves, no longer love
+- Grasping - If a person leaves, no longer love
 - Conditional Love - Only love if they do XYZ
 
 <div> </div>
 - l11
 - Cruelty - The opposite
-- Pity - Feeling superior, re-inforces ego.
-- Grief/Despair - Need to have hope of inspired future.
+- Pity - Feeling superior, reinforces ego.
+- Grief/Despair - Need to have hope of an inspired future.
 
 <div> </div>
 - l12
 - Envy - The opposite
 - Relative to me - It’s good because it’s good for me.
-- Unwholesome Joy - Feel happy for someone because on drugs or cheating someone
+- Unwholesome Joy - Feel happy for someone because of drugs or cheating someone
 <div> </div>
 - l13
 - Anxiety/Craving/Hatred/Anger The opposite
@@ -89,12 +89,12 @@ Tools of the trade (Sublime states):
 - Apathy - See, but don't care about the thing
 <div> </div>
 
-Some formal practicees
+Some formal practices
 
 **FP: Attending to the joy of loving-kindness**
 
-- 1m: Bring to mind someone for whom you can feel loving kindness
-  - See if loving kindness arise
+- 1m: Bring to mind someone for whom you can feel loving-kindness
+  - See if loving-kindness arises
   - If it does, focus on it.
 - Repeat for 3 reps
 - Feel free to change sets and reps
@@ -103,15 +103,15 @@ Some formal practicees
 
 - 2m: Settle the mind
 - 2m: Attend to joy
-- 2m: Do loving kindness from above
+- 2m: Do loving-kindness from above
 - Anytime: When selfless love arises, attend to it.
 - - 2m: Settle the mind
 
 **FP: Uplifting and settling the mind with altruistic joy**
 
 - 2m: Uplift the mind
-  - think of persom for whom you've brought altruistic intent
-  - Think of the deed, think of intention
+  - Think of a person for whom you've brought altruistic intent
+  - Think of the deed, think of the intention
   - Delight in your action
 - 5m: Settle the mind
 - 2m: Attend to joy if it's present
