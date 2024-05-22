@@ -10,7 +10,7 @@ redirect_from:
 permalink: /sublime
 ---
 
-Emotional health is pretty important. Western folks don't have a lot of words to support this; Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give 'em a try. Most of this is based on "The Joy of Happiness".
+Emotional health is pretty important. Western folks don't have a lot of words to support this. Luckily, the Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give 'em a try. Most of this post is based on "The Joy of Happiness".
 
 ### Uplift the mind in seconds
 
@@ -20,8 +20,8 @@ Tools of the trade (Sublime states):
 
 | State           | Definition                                                   |
 | --------------- | ------------------------------------------------------------ |
-| Loving-kindness | Wish for someone to be happy                                 |
-| Compassion      | Wish for someone to be free of suffering                     |
+| Loving-kindness | Wish someone to be happy                                     |
+| Compassion      | Wish someone to be free of suffering                         |
 | Altruistic Joy  | Be happy for [self](/joy) or [other](/touching) bringing joy |
 | Equanimity      | Remaining Calm, regardless of circumstance                   |
 
@@ -35,8 +35,9 @@ Tools of the trade (Sublime states):
 
 <div> </div>
 - l20
-- **Loving Thoughts**: Make it a habit to silently wish happiness, safety, and well-being for people you interact with or think about, including strangers you pass on the street. (Happy guy - Pew Pew)
+- **Loving Thoughts**: Make it a habit to silently wish happiness, safety, and well-being for people you interact with or think about, including strangers you pass on the street. (Happy gun - Pew Pew)
 - **Everyday Kindness**: Practice small acts of kindness throughout your day. This could be as simple as offering a smile, giving a sincere compliment, or helping someone in a small way. These actions cultivate a habit of kindness.
+- **Give out chocolate/balls candy** - Sometimes I'll buy a bunch of chocolates in bulk and spend the day handing them out.
 
 <div> </div>
 - l21
@@ -67,24 +68,24 @@ Tools of the trade (Sublime states):
 | --------------  | -------------- |
 
 - l10
-- Ill will - the opposite
+- **Opposite:** Ill will
 - Grasping - If a person leaves, no longer love
 - Conditional Love - Only love if they do XYZ
 
 <div> </div>
 - l11
-- Cruelty - The opposite
+- **Opposite** Cruelty
 - Pity - Feeling superior, reinforces ego.
 - Grief/Despair - Need to have hope of an inspired future.
 
 <div> </div>
 - l12
-- Envy - The opposite
+- **Opposite** Envy
 - Relative to me - It’s good because it’s good for me.
 - Unwholesome Joy - Feel happy for someone because of drugs or cheating someone
 <div> </div>
 - l13
-- Anxiety/Craving/Hatred/Anger The opposite
+- **Opposite** Anxiety/Craving/Hatred/Anger
 - Disengagement - Ignoring the thing we don't want to see
 - Apathy - See, but don't care about the thing
 <div> </div>
