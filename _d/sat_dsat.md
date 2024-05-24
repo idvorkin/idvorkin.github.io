@@ -11,6 +11,8 @@ Love your work, and you'll never work a day in your life. Sounds great, but work
 
 Not all SAT and DSAT are created equal nor do they need to be correlated. You know you've got DSAT when you're dreading going into work on Monday all weekend, feeling relieved your workday is over at 5pm, and being in a generally bad mood when talking to friends and family, or being unable to sleep at night. You know you have SAT when you wake up excited to work on a hard or interesting problem, a positive energy comes naturally when speaking with your team and cross-functional partners (for the most part), and not feeling like you need to zone out with 4 hours of TikTok to block out work.
 
+Slightly out of place, but critical commentary: If you're working with awesome people on a shitty problem, you'll do well, and soon the problems will be fun. If you're working with shitty people on an awesome problem, there will be much suffering, and very quickly you'll be working with shitty people on a shitty problem.
+
 <!--- Gold need to find something about the motivation ferry to sprinkle in.
 ### The motivation ferry
 
