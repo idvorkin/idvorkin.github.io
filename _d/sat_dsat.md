@@ -43,7 +43,7 @@ Embrace the greatest parts of your work , mull over them, whether its the bike r
 - [General](#general)
     - [What's keeping you awake?](#whats-keeping-you-awake)
     - [What about the time you're not working?](#what-about-the-time-youre-not-working)
-- [The situations a 2x2 matrix](#the-situations-a-2x2-matrix)
+- [The situation's a 2x2 matrix](#the-situations-a-2x2-matrix)
     - [High SAT Low DSAT](#high-sat-low-dsat)
     - [High DSAT, Low SAT](#high-dsat-low-sat)
     - [High SAT High DSAT](#high-sat-high-dsat)
@@ -74,7 +74,7 @@ I think there's a joke to be had here about something in your bed or your partne
 
 ### What's keeping you awake?
 
-At the extremes DSAT ruins your sleep. Be it unable to fall asleep, waking up in a panic panic angry at your co-worker, stressed you'll fail, or dreading work the next morning. SAT is being so excited about your project, you get up early Sunday morning to sneak in a few extra hours cuz you love your project.
+At the extremes, DSAT ruins your sleep. Be it unable to fall asleep, waking up in a panic angry at your co-worker, stressed you'll fail, or dreading work the next morning. SAT is being so excited about your project, you get up early Sunday morning to sneak in a few extra hours because you love your project.
 
 ### What about the time you're not working?
 
@@ -84,19 +84,19 @@ As written, it's all about SAT, not SAT and DSAT
 
 -->
 
-[I wish I spent more time at work, is never uttered on a death bed](/wlb). You have many [roles other then work](/eulogy), and balancing between them is the name of the game. While high work SAT is great for your career, it makes stopping work hard.
+[I wish I spent more time at work, is never uttered on a deathbed](/wlb). You have many [roles other than work](/eulogy), and balancing between them is the name of the game. While high work SAT is great for your career, it makes stopping work hard.
 
-At the same time, where you work, what you work on, how challenging it is, when going well, like a giant snowball gathering speed down on a hill, is infectious. That SAT will bring energy and resilience to the other roles in your life.
+At the same time, where you work, what you work on, and how challenging it is, when going well, like a giant snowball gathering speed down a hill, is infectious. That SAT will bring energy and resilience to the other roles in your life.
 
-While it's easy to stop working when you have low work SAT, that low SAT can be parasitic. It can lower your overall will power, and suck energy from the other roles in your life.
+While it's easy to stop working when you have low work SAT, that low SAT can be parasitic. It can lower your overall willpower and suck energy from the other roles in your life.
 
 <!---
 I kind of like this paragraph, but not sure how much it adds.
 -->
 
-We all want to make the most of our lives. While not every breathing moment should be about work, what's the point if what you do the majority of the time is mind numbing, or makes you grind a millimeter/month off your teeth.
+We all want to make the most of our lives. While not every breathing moment should be about work, what's the point if what you do the majority of the time is mind-numbing or makes you grind a millimeter a month off your teeth.
 
-## The situations a 2x2 matrix
+## The situation's a 2x2 matrix
 
 | DSAT/SAT  | SAT High                         | SAT Low            |
 | --------- | -------------------------------- | ------------------ |
@@ -109,13 +109,13 @@ You've arrived. But this will likely pass. Learn what's working so you can repli
 
 ### High DSAT, Low SAT
 
-Urgent Change Required. Read [decisive](/decide), [the dip](/the-dip), and if required re-roll.
+Urgent Change Required. Read [Decisive](/decide), [The Dip](/the-dip), and if required, re-roll.
 
 ### High SAT High DSAT
 
-This often oscillates between stressed as shit, and amazing. These situations tend to be unsustainable.
+This often oscillates between stressed as hell and amazing. These situations tend to be unsustainable.
 
-Need to understand if the DSAT is structural or temporal, e.g. Just launch then everything calms down, or you're working with crappy people. If it's structural, there's an excellent chance the DSAT will grow into resentment, and you'll need to re-roll.
+Need to understand if the DSAT is structural or temporal, e.g., just launched then everything calms down, or you're working with crappy people. If it's structural, there's an excellent chance the DSAT will grow into resentment, and you'll need to re-roll.
 
 ### Low DSAT, Low SAT
 
@@ -123,28 +123,28 @@ The hardest case. You've got a great gig, but something is missing.
 
 ## Influencing change
 
-There are two changes you'd like to make, increase your SAT, and decrease your DSAT.
+There are two changes you'd like to make: increase your SAT, and decrease your DSAT.
 
 ### Making the perfect job: Raising SAT
 
 First, make nothing worse, you need to
 
-**Ring fence your low SAT. Don't let it:**
+**Ring-fence your low SAT. Don't let it:**
 
-- Effect your performance. When your performance tanks, DSAT will spike.
-- Infect others. Emotions are contagious and if other catch your low SAT, you'll have problems soon.
-- Ignore the things and people that are keeping your DSAT low. Without nurturing, and reinforcement they may stop.
+- Affect your performance. When your performance tanks, DSAT will spike.
+- Infect others. Emotions are contagious, and if others catch your low SAT, you'll have problems soon.
+- Ignore the things and people that are keeping your DSAT low. Without nurturing and reinforcement, they may stop.
 - Drain your energy. See the low SAT as an opportunity to invest in some of your other roles.
 
 **Mine for gold: Increase your SAT:**
 
-Odd are you're struggling with a lack of [AMP](/manager-book#l-motivation) (see next section),
+Odds are you're struggling with a lack of [AMP](/manager-book#l-motivation) (see next section),
 
-You've got 3 paths:
+You've got three paths:
 
-Add stuff that brings you SAT. Pick up extra projects which bring you AMP.
+Add stuff that brings you SAT. Pick up extra projects that bring you AMP.
 
-Cut stuff that doesn't bring you SAT
+Cut stuff that doesn't bring you SAT.
 
 Examine the things that don't bring you SAT, and see what you can adjust to squeeze out more SAT. For example:
 
@@ -152,20 +152,20 @@ Examine the things that don't bring you SAT, and see what you can adjust to sque
 
 DSAT is often caused by people or structural problems. These are hard to influence.
 
-Even when there are are small improvements you may have residual [mental pain](/mental-pain), which leaves reactive, slowing your ability to lower DSAT.
+Even when there are small improvements, you may have residual [mental pain](/mental-pain), which leaves you reactive, slowing your ability to lower DSAT.
 
 Sometimes the right thing to do here is a re-roll.
 
 ### Re-rolling: Changing teams or companies
 
-When you have a structural problem and you can't influence the changes you need (see [the dip](/dip)), the right thing to do may be finding a new team or company.
+When you have a structural problem and you can't influence the changes you need (see [The Dip](/dip)), the right thing to do may be finding a new team or company.
 
-While easy to think, it's very easy to mis-assess the situation. The grass is always greener on the other side of the fence, and sometimes the issue you think is your environment, may be you. Before you go down this path, skim [decisive](/decisive) and listen to [switching jobs or staying where you are](https://heathbrothers.com/member-content/decisive-for-job-decisions/decisive-for-job-decisions-2/). It takes 30 minutes, but given how hard job changes are, I strongly recommend it.
+While easy to think, it's very easy to misassess the situation. The grass is always greener on the other side of the fence, and sometimes the issue you think is your environment may be you. Before you go down this path, skim [Decisive](/decisive) and listen to [Switching Jobs or Staying Where You Are](https://heathbrothers.com/member-content/decisive-for-job-decisions/decisive-for-job-decisions-2/). It takes 30 minutes, but given how hard job changes are, I strongly recommend it.
 
-If you're still committed check out:
+If you're still committed, check out:
 
 - [Reducing Job Hunt Stress](/job-hunt-stress)
-- [Only care about total compensation](/comp)
+- [Only Care About Total Compensation](/comp)
 
 ## Satisfaction - AMP
 
