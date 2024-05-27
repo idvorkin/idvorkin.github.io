@@ -25,6 +25,8 @@ Seattle is my home, I want to die here, though not soon. If you're visiting, her
 1. Fremont
    - Favorite Coffee shop: Milstead
    - Retro Arcade: [Add-a-Ball](https://add-a-ball.com/)
+   - On Sundays: Fremont Market
+   - On the solstice: Fremont Parade
 1. Capitol Hill
    - Favorite Coffee shop: Victrola on 15th
    - Crazy bar: [The Unicorn](https://www.unicornseattle.com/)
