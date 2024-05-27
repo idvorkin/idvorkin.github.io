@@ -41,6 +41,12 @@ Four years ago, I dreamed of taking a year off of work. A few things have change
 
 Stuff happening:
 
+- [Medival Fair](https://washingtonfaire.com/) -
+  - Knights, July 19
+  - Pirates, July 26
+  - Heroes and Villans, Aug 2
+  - Warriors (Vikings?), Aug 9
+  - Fantasy, Aug 16 (Best One?)
 - Tesla car camping
 - Mid week camping
 - Hang with Baltasar and Family
@@ -57,7 +63,7 @@ Stuff happening:
 
 - **Diet** - I should be pretty close to steady state goal (165 ish). I guess don't go up more then 5 lbs
 
-  - Start of: May 175; June 170; July 165; August 160;
+  - Start of: May 180; June 175; July 170; August 165;
   - Go to grocery store and load up on healhty food
   - Bring my travel scale
 
