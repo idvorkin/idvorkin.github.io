@@ -1,8 +1,6 @@
 ---
 layout: post
-title: "Learning from mistakes"
-comments: true
-inprogress: true
+title: Failure is not an option it is a necassity
 tags:
   - manager
 permalink: /fail
@@ -10,7 +8,7 @@ redirect_from:
   - /failure
 ---
 
-Failure is not an option it's a necessity. Here some thoughts on failures
+Failure is not an option; it's a necessity. Here are some thoughts on failures.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -19,10 +17,10 @@ Failure is not an option it's a necessity. Here some thoughts on failures
     - [COEs](#coes)
     - [Good sayings](#good-sayings)
 - [Smart people talking about fear of failure](#smart-people-talking-about-fear-of-failure)
-    - [James Web Telescope guy](#james-web-telescope-guy)
+    - [James Webb Telescope guy](#james-webb-telescope-guy)
     - [Elon on launching man to space](#elon-on-launching-man-to-space)
     - [Elon on engineering responsibility](#elon-on-engineering-responsibility)
-    - [My \$500M mars rover mistake](#my-500m-mars-rover-mistake)
+    - [My \$500M Mars rover mistake](#my-500m-mars-rover-mistake)
     - [Seth Godin on Fear](#seth-godin-on-fear)
 - [Out of our control, vs in our control failures](#out-of-our-control-vs-in-our-control-failures)
 - [FAQ](#faq)
@@ -40,7 +38,7 @@ Failures are a great opportunity to learn. Use [COEs](/coe)
 ### Good sayings
 
 - Success is falling down 7 times and getting up 8
-- Failure isn't an option it's a requirement
+- Failure isn't an option; it's a requirement
 - The default, doing nothing, is usually a failure
 - Fear is the mind killer
 - Fear of failure is brought to you by the [resistance](/resistance)
@@ -48,7 +46,7 @@ Failures are a great opportunity to learn. Use [COEs](/coe)
 
 ## Smart people talking about fear of failure
 
-### James Web Telescope guy
+### James Webb Telescope guy
 
 {% include youtube.html src="4P8fKd0IVOs?start=929" %}
 
@@ -60,11 +58,11 @@ Failures are a great opportunity to learn. Use [COEs](/coe)
 
 {% include youtube.html src="DxREm3s1scA?start=405" %}
 
-### My \$500M mars rover mistake
+### My \$500M Mars rover mistake
 
-Great story on the empathy that failure can bring
+Great story on the empathy that failure can bring.
 
-[My \$500M mars rover mistake](https://www.chrislewicki.com/articles/failurestory)
+[My \$500M Mars rover mistake](https://www.chrislewicki.com/articles/failurestory)
 
 ### Seth Godin on Fear
 
@@ -80,7 +78,7 @@ Read his other [posts as well](https://seths.blog/?s=Fear)
 
 ## Out of our control, vs in our control failures
 
-_Good story from Ethan Evans, note this is about the anxiety definition around shifting [from controlling to masximizing influence](/anxiety)_
+_Good story from Ethan Evans, note this is about the anxiety definition around shifting [from controlling to maximizing influence](/anxiety)_
 
 LinkedIn recently made some unknown changes to their algorithm. I have noticed a drop of 70% to 80% in the reach of our posts. Since my goal is to share my knowledge with more people, that means my goal just took an 80% hit.
 
@@ -116,7 +114,7 @@ I admit, I slipped into defining my own performance by how many people viewed my
 
 3. Adapt your core value if you must (if its value has decreased).
 
-In my case, the value of what I offer hasn't changed, the external delivery system has.
+In my case, the value of what I offer hasn't changed; the external delivery system has.
 
 4. Once you adapt and/or increase your value, find new ways to deliver it if necessary.
 
@@ -130,4 +128,8 @@ Really, this step is everything. Once you get past the grief, jump into action i
 
 ## Related Reading
 
-- [Anxiety](/anxiety)
+{%include summarize-page.html src="/anxiety" %}
+
+-
+
+{%include summarize-page.html src="/anxiety-management" %}

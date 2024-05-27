@@ -91,6 +91,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [Continuous Improvement - Retrospectives](#continuous-improvement---retrospectives)
     - [Team Participation and Feedback - Surveys and Polls](#team-participation-and-feedback---surveys-and-polls)
     - [Quality and Technical Growth Design+Arch Reviews](#quality-and-technical-growth-designarch-reviews)
+    - [Code reviews](#code-reviews)
 - [Planning, Roadmaps and Resource Allocation](#planning-roadmaps-and-resource-allocation)
     - [Defining Success - How does goal setting work](#defining-success---how-does-goal-setting-work)
     - [How do you do planning and come up with roadmaps](#how-do-you-do-planning-and-come-up-with-roadmaps)
@@ -992,6 +993,27 @@ Pro tip for surveys - use part of a meeting to complete a fast survey. This ensu
 - Ensure team gets cross trained.
 - Catch stuff as early as possible
 - Get developers used to being on the whiteboard
+
+### Code reviews
+
+Code reviews have evolved into a method to catch errors. I'm not a fan, I think instead they are a way to train and knowledge share. [This post](https://www.aviator.co/blog/how-not-to-do-code-reviews/) summarizes it well.
+
+> Code reviews should be done in a way to foster collaboration and continuous learning. This feedback and discussion are no longer mainly meant to improve the current code—it’s to grow a team that can build a healthy codebase in the long term.
+
+Quality still needs to be enforced but there are much better approaches:
+
+- Things like style/lint should be handled by opinionated linters
+- Automated Tests should be the way errors are caught
+- Soon, AI error detectors
+  {%include summarize-page.html src="/testing" %}
+
+When looking at code reviews as a teaching tool:
+
+- Pair programming is like code reviews but way better.
+
+- You can strategically pair more experienced domain experts with less experienced reviewers to accelerate learning and reduce knowledge silos. Less experienced engineers gain exposure to expert feedback and best practices, while seniors benefit from fresh perspectives and must clearly articulate their reasoning.
+
+- The emphasis should still be on discussing and explaining issues and concepts rather than just pointing out issues that need fixing. Other engineers not involved in the review process can also read through these discussions at a later stage to understand why certain changes were made and how they fit into the big picture.
 
 ## Planning, Roadmaps and Resource Allocation
 
