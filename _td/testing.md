@@ -4,21 +4,27 @@ title: Testing and Quality
 permalink: /testing
 ---
 
-If it's not tested, it doesn't work'.' When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you've got more work to do
+If it's not tested, it doesn't work. When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise, you've got more work to do.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Why test?](#why-test)
 - [Types of tests](#types-of-tests)
+    - [Smoke Testing](#smoke-testing)
     - [Acceptance Tests - Validation that requirements are met](#acceptance-tests---validation-that-requirements-are-met)
     - [End To End Tests - Expensive but critical](#end-to-end-tests---expensive-but-critical)
     - [Integration Tests - Correct interactions with external world](#integration-tests---correct-interactions-with-external-world)
+    - [Regression Testing](#regression-testing)
     - [Snapshot Tests - Validating UX](#snapshot-tests---validating-ux)
     - [External Dependency Testing - The Humble Object](#external-dependency-testing---the-humble-object)
-    - [Unit Tests - The code does what the developer wants.](#unit-tests---the-code-does-what-the-developer-wants)
+    - [Unit Tests - The code does what the developer wants](#unit-tests---the-code-does-what-the-developer-wants)
     - [Compiler and static analysis based testing](#compiler-and-static-analysis-based-testing)
 - [Non-functional testing](#non-functional-testing)
+    - [Load Testing](#load-testing)
+    - [Stress Testing](#stress-testing)
+    - [Security Testing](#security-testing)
+    - [Fuzz Testing](#fuzz-testing)
     - [Performance](#performance)
     - [Thread safety](#thread-safety)
 - [Testing in production and monitoring](#testing-in-production-and-monitoring)
@@ -37,7 +43,7 @@ If it's not tested, it doesn't work'.' When your tests passing lets you deploy w
 
 ## Why test?
 
-Software needs to work, and if it's not tested, it doesn't work. In the rare event it works today, I assure you it'll stop workign after you make a change. If you can't make a change safely, your system will go to shit instantly.
+Software needs to work, and if it's not tested, it doesn't work. In the rare event it works today, I assure you it'll stop working after you make a change. If you can't make a change safely, your system will go to shit instantly.
 
 Very related to [design](/design)
 
@@ -48,36 +54,48 @@ Very related to [design](/design)
 
 ## Types of tests
 
+### Smoke Testing
+
+This is done after API development is complete. Simply validate if the APIs are working and nothing breaks.
+
 ### Acceptance Tests - Validation that requirements are met
+
+This creates a test plan based on the functional requirements and compares the results with the expected results.
 
 ### End To End Tests - Expensive but critical
 
-Include running in multiple configurations, like different devices, or different browsers, or different screen orientations
+Include running in multiple configurations, like different devices, or different browsers, or different screen orientations.
 
 ### Integration Tests - Correct interactions with external world
+
+This test combines several API calls to perform end-to-end tests. The intra-service communications and data transmissions are tested.
+
+### Regression Testing
+
+This test ensures that bug fixes or new features shouldn’t break the existing behaviors of APIs.
 
 ### Snapshot Tests - Validating UX
 
 ### External Dependency Testing - The Humble Object
 
-Often people try to text external dependancies, like drawing on the screen,or opening the door, and think it's impossible. That is impossible, but you don't need to test the external dependancy. You need to test everything else, all the business logic that does everything before the external dependancy.
+Often people try to test external dependencies, like drawing on the screen, or opening the door, and think it's impossible. That is impossible, but you don't need to test the external dependency. You need to test everything else, all the business logic that does everything before the external dependency.
 
-To enable this, create a [humble object](http://xunitpatterns.com/Humble%20Object.html) that does only the screen operations, and test all interactions to and from that.
+To enable this, create a [humble object](http://xunitpatterns.com/Humble%20Object.html) that does only the screen operations and test all interactions to and from that.
 
-_Extract all the logic from the hard-to-test component into a component that is testable via synchronous tests. This component implements a service interface consisting of methods that expose all the logic of the untestable component; the only difference is that they are accessible via synchronous method calls. As a result, the Humble Object component becomes a very thin adapter layer that contains very little code. Each time the Humble Object is called by the framework, it delegates to the testable component. If the testable component needs any information from the context, the Humble Object is responsible for retrieving it and passing it to the testable component. The Humble Object code is typically so simple that we often don't bother writing tests for it because it can be quite difficult to set up the environment need to run it._
+_Extract all the logic from the hard-to-test component into a component that is testable via synchronous tests. This component implements a service interface consisting of methods that expose all the logic of the untestable component; the only difference is that they are accessible via synchronous method calls. As a result, the Humble Object component becomes a very thin adapter layer that contains very little code. Each time the Humble Object is called by the framework, it delegates to the testable component. If the testable component needs any information from the context, the Humble Object is responsible for retrieving it and passing it to the testable component. The Humble Object code is typically so simple that we often don't bother writing tests for it because it can be quite difficult to set up the environment needed to run it._
 
 ### Unit Tests - The code does what the developer wants
 
-Back in the 2000s, "amazing developers" walked through all their code in the debugger to make sure it was doing what was expected. But like all manual activities this gets dreary, error prone and skipped. Instead, write unit tests to ensure your code works as you expect.
+Back in the 2000s, "amazing developers" walked through all their code in the debugger to make sure it was doing what was expected. But like all manual activities, this gets dreary, error-prone, and skipped. Instead, write unit tests to ensure your code works as you expect.
 
 ### Compiler and static analysis based testing
 
 If you use a strongly typed language, and use types as much as you can, you get lots of testing for free from the compiler!
-Similar, if you can have automated code analysis you get testing for free through analysis. See [AWS Code Guru](https://aws.amazon.com/codeguru/), and [some bugs it detects](https://noise.getoto.net/2021/09/07/finding-code-inconsistencies-using-amazon-codeguru-reviewer/)
+Similarly, if you can have automated code analysis, you get testing for free through analysis. See [AWS Code Guru](https://aws.amazon.com/codeguru/), and [some bugs it detects](https://noise.getoto.net/2021/09/07/finding-code-inconsistencies-using-amazon-codeguru-reviewer/).
 
 _These bugs are the kinds of errors that developers can unknowingly introduce in the course of their day-to-day work. Introducing bugs is easy, but tracking down their root causes can be hard. Some of the bugs even found issues that went against the official documentation. One team found a race condition with the Java `ConcurrentHashMap` type; the documentation said it was thread-safe, but if two threads picked up the process at the same time, the values of instantiated `ConcurrentHashMap` objects could be overwritten._
 
-_The first involved key derivation and password hashing using the Argon2 algorithm. Chan knew about password hashing, but not with the fairly new Argon2 algorithm. The second came from invoking a shell comment with `subprocess.Popen([cmd], shell=True)`, which could risk unwanted privilege escalation in the shell. Instead, he used the `shlex.split()` and `shlex.quote()` commands to avoid invoking a shell at all._
+_The first involved key derivation and password hashing using the Argon2 algorithm. Chan knew about password hashing, but not with the fairly new Argon2 algorithm. The second came from invoking a shell command with `subprocess.Popen([cmd], shell=True)`, which could risk unwanted privilege escalation in the shell. Instead, he used the `shlex.split()` and `shlex.quote()` commands to avoid invoking a shell at all._
 
 From Programming with types:
 
@@ -85,15 +103,31 @@ _Although a weak type system is easier to work with in the short term, as it doe
 
 Examples:
 
-- Making types for primitive types, like encoding units - E.g. a type for meters vs inches (space catastropy)
+- Making types for primitive types, like encoding units - E.g. a type for meters vs inches (space catastrophe)
 - A type for velocity vs volume.
 - Rust for borrow
 - JS to TS
-- Pythong type system
+- Python type system
 - Implicit Typing vs Duck Typing
-- It's hard to make it compiler, but once compiles it works.
+- It's hard to make it compile, but once compiles it works.
 
 ## Non-functional testing
+
+### Load Testing
+
+Tests applications’ performance by simulating different loads. Then we can calculate the capacity of the application.
+
+### Stress Testing
+
+We deliberately create high loads to the APIs and test if the APIs are able to function normally.
+
+### Security Testing
+
+This tests the APIs against all possible external threats.
+
+### Fuzz Testing
+
+This injects invalid or unexpected input data into the API and tries to crash the API. In this way, it identifies the API vulnerabilities.
 
 ### Performance
 
@@ -117,8 +151,8 @@ Examples:
 
 ### AI Testing
 
-{%include summarize-page.html src="/ai-testing" %}
+{% include summarize-page.html src="/ai-testing" %}
 
 ## Great books
 
-{%include amazon.html asin="B09782L692;B095C16LSW;1492052205" %}
+{% include amazon.html asin="B09782L692;B095C16LSW;1492052205" %}
