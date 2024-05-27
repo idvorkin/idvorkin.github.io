@@ -1,22 +1,26 @@
 ---
 layout: post
+
 title: "Seattle"
+
 permalink: /seattle
+
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-seattle.webp
 ---
 
-Seattle is my home, I want to die here, though not soon. If you're visiting, here's a list of fun things you can try. But here's the deal, give me feedback of stuff to add/remove from this list
+Seattle is my home, I want to die here, though not soon. If you're visiting, here's a list of fun things you can try. But here's the deal, give me feedback on stuff to add/remove from this list
 
-Igor's list:
+### Igor's list:
 
 1. Coolest Coffee: [Starbucks Reserve Roastery](https://www.starbucksreserve.com/en-us/locations/seattle)
 2. Coolest Library: [Hogwarts](https://www.lib.washington.edu/suzzallo)
 3. Second Coolest Library: [Seattle Public](https://www.spl.org/hours-and-locations/central-library)
 4. Fremont: Troll/Lenin
+5. Ride a ferry, Bremerton and Bainbridge leave from downtown. Take them there and stay on to come back
 
 {% include blob_image_float_right.html src="blog/raccoon-seattle.webp" %}
 
-By Neighborhood:
+### By Neighborhood:
 
 1. Fremont
    - Favorite Coffee shop: Milstead
@@ -30,7 +34,7 @@ By Neighborhood:
    - I tend not to be on the east side, but if you're downtown Bellevue
    - Favorite Coffee shop: [Cafe Cesura](https://www.cafecesura.com/)
 
-Hikes:
+### Hikes:
 
 1. Discovery Park - Larger park in Seattle. Big enough to be a hike
 2. [Twin Falls](https://www.wta.org/go-hiking/hikes/twin-falls-state-park) - Easy day hike
@@ -44,7 +48,7 @@ If you have a free day, a car, and a desire to do something amazing outside
 1. [Ape Caves](https://www.wta.org/go-hiking/hikes/ape-cave) - Pretty amazing, pitch-black lava tubes. Very amazing experience.
 1. [Railroad Tunnel](https://www.wta.org/go-hiking/hikes/iron-horse-tunnel) - Pitch-black railroad tunnel fun for a bike ride.
 
-Restaurants
+### Restaurants
 
 1. Palace Kitchen (Amazing Burgers)
 2. Tai Tung (Good Chinese)
@@ -53,14 +57,14 @@ Restaurants
 5. Tanoor (Middle Eastern) - Best Meat
 6. [Berliner](https://www.yelp.com/biz/the-berliner-d%C3%B6ner-kebab-seattle-4) (Hole in the wall in SLU)
 
-Beaches:
+### Beaches:
 
 1. Golden Gardens - Very nice sand beach
 1. Alki Beach - Very nice sand beach in West Seattle
 1. Madison Park - Nice for swimming
 1. Matthew's Beach - Nice for swimming/Polar Bear Plunge
 
-Parks:
+### Parks:
 
 1. Kerry Park (It's where all the Space Needle postcard photos are from)
 1. Olympic Sculpture Park and [vivarium](https://art.seattleartmuseum.org/objects/32046/neukom-vivarium)
@@ -68,19 +72,15 @@ Parks:
 1. Interlaken
 1. Discovery Park
 
-If you have a friend that works at Amazon:
+### If you have a friend that works at Amazon:
 
 1. Get them to give you a tour of the Spheres
 
-By Classic Tourist Attraction:
+### By Classic Tourist Attraction:
 
 1. Space Needle/Seattle Center
 1. Pike Place Market
 
-Stuff to skip:
+### Stuff to skip:
 
 1. First Starbucks - just a crappy coffee shop
-
-If you have an Amazon friend
-
-1. Tour of the spheres
