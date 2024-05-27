@@ -22,8 +22,9 @@ Failure is not an option it's a necessity. Here some thoughts on failures
     - [James Web Telescope guy](#james-web-telescope-guy)
     - [Elon on launching man to space](#elon-on-launching-man-to-space)
     - [Elon on engineering responsibility](#elon-on-engineering-responsibility)
-    - [My $500M mars rover mistake](#my-500m-mars-rover-mistake)
+    - [My \$500M mars rover mistake](#my-500m-mars-rover-mistake)
     - [Seth Godin on Fear](#seth-godin-on-fear)
+- [Out of our control, vs in our control failures](#out-of-our-control-vs-in-our-control-failures)
 - [FAQ](#faq)
 - [Related Reading](#related-reading)
 
@@ -76,6 +77,54 @@ No, the right question is, "How do I dance with the fear?"
 Fear is not the enemy. Paralysis is the enemy.
 
 Read his other [posts as well](https://seths.blog/?s=Fear)
+
+## Out of our control, vs in our control failures
+
+_Good story from Ethan Evans, note this is about the anxiety definition around shifting [from controlling to masximizing influence](/anxiety)_
+
+LinkedIn recently made some unknown changes to their algorithm. I have noticed a drop of 70% to 80% in the reach of our posts. Since my goal is to share my knowledge with more people, that means my goal just took an 80% hit.
+
+In general, setbacks in performance are either due to:
+
+A) Something we did
+
+Or
+
+B) Something external, outside our direct control
+
+Mistakes, poor decisions, and missed deadlines are examples of A. They are in our control.
+
+Things like Covid, high interest rates, and reorganizations at work are examples of B, outside our control.
+
+LinkedIn's change is also case B, outside my control.
+
+When a setback comes from something in your control, you know clearly what you did wrong and what you need to change to restore your performance and progress. Fixing your own issues may take time and be difficult, but you know what to do.
+
+When the setback is due to something outside your control, you do not know how to fix the issue.
+
+So, how can we react when our performance is shattered and we do not know why?
+
+Here is my recipe:
+
+1. Allow yourself a fixed amount of time to grieve (and complain if you wish).
+
+Emotions are real, and before you can move on you will need to sit with those emotions. But, do not get stuck in them. Curse your bad luck, pout for a minute, etc. Then, move to the next step.
+
+2. Refocus on your core value. Whatever happened, go back to how you define high performance to ensure it is still relevant.
+
+I admit, I slipped into defining my own performance by how many people viewed my LinkedIn posts. This was a mistake. My mission is to help others, so getting views is a proxy, not a result. And, using LinkedIn is just a method for the mission, not the mission itself.
+
+3. Adapt your core value if you must (if its value has decreased).
+
+In my case, the value of what I offer hasn't changed, the external delivery system has.
+
+4. Once you adapt and/or increase your value, find new ways to deliver it if necessary.
+
+Luckily, I have other options for reaching people: my Substack newsletter, YouTube, etc. Since Substack has been such a good partner recently, I will start there. I have also refocused how I write on LinkedIn to make every post focused on my goal.
+
+5. Test, measure, adapt, repeat!
+
+Really, this step is everything. Once you get past the grief, jump into action in this loop. Nothing can stop you if you keep working to refine, deliver, and showcase your core value.
 
 ## FAQ
 
