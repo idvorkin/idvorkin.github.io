@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Where have all the 40 year old coders gone?"
+title: ""Age Before Beauty: The Vanishing Act of Older Coders"
 comments: true
 permalink: /40yo
 redirect_from:
   - /50yo
 ---
 
-In 2002, I started programming at MSFT with lots of other 20-year-olds. I don't recall the age distributions, but maybe 90% of the programmers I knew were under 40. In 2020, at 41, I'm no longer a programmer, and the majority of programmers are younger than me. This begs the question, where do all the programmers go as they get older? I'm very curious about the answer. Here are some of my theories....
+In 2002, I started programming at MSFT with lots of other 20-year-olds. I don't recall the age distributions, but maybe 90% of the programmers I knew were under 40. In 2020, at 41, I'm no longer a programmer, and the majority of programmers are much younger than me. This begs the question, where do all the programmers go as they get older? I'm very curious about the answer. Here are some of my theories....
 
 _TODO: Picture of pyramid of age distributions_
 
