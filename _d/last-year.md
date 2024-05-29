@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Health span, compressed morbidity and being the grandfather"
+title: "Kick the Bucket List: Your Guide to an Epic Last Year on Earth"
 tags:
 permalink: /last-year
 redirect_from:
