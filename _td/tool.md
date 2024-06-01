@@ -71,10 +71,10 @@ A collection of tips, tricks and pointers of the various tools i use
 - [ClI Fun](#cli-fun)
 - [CLI Screen Recoding](#cli-screen-recoding)
     - [Show pressed keys](#show-pressed-keys)
-- [OSX Misc](#osx-misc)
 - [Docker](#docker)
 - [Terminal Info](#terminal-info)
 - [OBS](#obs)
+- [OSX](#osx)
 - [Obsidian](#obsidian)
 - [Other Resources](#other-resources)
 
@@ -715,13 +715,6 @@ _(Note, to include an svg from raw.githubusercontent.com/blah.svg you'll need to
 
 [Carnac](https://github.com/bfritscher/carnac)
 
-### OSX Misc
-
-- [Bar Tender](https://www.macbartender.com/) - Manage the menu bar
-- [Alt Tab](https://alt-tab-macos.netlify.app/) - Windows like alt tab
-- [Remap Emoji Keyboard](https://medium.com/@maxschultz/remap-caps-lock-to-emoji-on-macos-sierra-3c933b38c6ff)
-- Menubar - Show next meeting in the menu bar
-
 ### Docker
 
 [Install on Amazon Linux 2](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
@@ -745,6 +738,10 @@ Great tool for playing with videos, useful plugins
 - iPhone Video Recorder (use a USB cable)
 - Stream desk (makes scene control way easier)
 - Source Record Plugin (though lots of complaints that it works poorly)
+
+### OSX
+
+{%include summarize-page.html src="/osx" %}
 
 ### Obsidian
 
