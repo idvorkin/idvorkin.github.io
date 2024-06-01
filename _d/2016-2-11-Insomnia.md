@@ -49,20 +49,4 @@ After a few days of inadequate sleep, I'll often be trying to deal with sleep de
 
 ## Sleep
 
-_TODO: Make this it's own post_
-
-[Bryan Johnson](/blueprint) says sleep is like life on easy mode. He has lots to say on this, and it gets technical, and I think I agree:
-
-{%include youtube.html src="Qt-2UYS-qNc?start=77s2s" %}
-
-### Bed Heater/Cooler - Eight Sleep
-
-Ok, I used to use a mattress pad warmer, it was glorious. The sleep 8 is like that but cooler! Pun intended, it's able to both heat and cool your bed. Basically a heat pump w/radiator. It also adjusts as you sleep so you go to bed warm (who wants a cold bed), cools you through the evening, then cooks you to get you out of bed in the morning. Super expensive, but probably worht it given it's a lifetime investment in yoru sleep. Humoursly - cooking is the best alarm clock.
-
-### Consistent bed time
-
-### Caffiene
-
-### Alcohol
-
-Sleep well.
+{%include summarize-page.html src="/sleep" %}
