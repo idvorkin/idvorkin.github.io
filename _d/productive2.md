@@ -39,7 +39,7 @@ At the core of balance, energy, wlb, habits is being productive.
 
 ### Match task to energy
 
-No point spending "my high energy/will power time" on a low energy activety. It's funny, my strongest energy is when I wake up, which seems like a waste to spend on the gym, except when I don't spend that on the gym it makes a mess.
+No point spending "my high energy/willpower time" on a low energy activity. It's funny, my strongest energy is when I wake up, which seems like a waste to spend on the gym, except when I don't spend that on the gym it makes a mess.
 
 ### Stay balanced
 
@@ -85,3 +85,5 @@ No point spending "my high energy/will power time" on a low energy activety. It'
 
 - The perfect is the enemy of the good
 - It's 99% perspiration, 1% inspiration
+- Gotta do the reps
+- Practice makes permanent, only perfect practice makes perfect.
