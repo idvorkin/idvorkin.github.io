@@ -3,7 +3,6 @@
         "/2024": "/y24",
         "/24": "/y24",
         "/48-laws": "/laws-of-power",
-        "/50yo": "/40yo",
         "/7h": "/7-habits",
         "/7h-c0": "/7h-concepts",
         "/7h-c1": "/be-proactive",
@@ -163,8 +162,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -220,18 +217,6 @@
             "redirect_url": "",
             "markdown_path": "_d/22.md",
             "doc_size": 13000
-        },
-        "/40yo": {
-            "py/object": "__main__.Page",
-            "url": "/40yo",
-            "title": "Where have all the 40 year old coders gone?",
-            "description": "In 2002, I started programming at MSFT with lots of other 20 year old. I don’t recall the age distributions, but maybe 90% of the programmers I knew where under 40. In 2020, at 41, I’m no longer a programmer, and the majority of programmers are younger then me. This begs the question, where do all the programmers go as they get older. I’m very curious about the answer here are some of my theories….\n\n",
-            "file_path": "_site/40yo.html",
-            "outgoing_links": [],
-            "incoming_links": [],
-            "redirect_url": "",
-            "markdown_path": "_d/40-yo-programmer.md",
-            "doc_size": 14000
         },
         "/42": {
             "py/object": "__main__.Page",
@@ -603,7 +588,7 @@
             "py/object": "__main__.Page",
             "url": "/anxiety-management",
             "title": "Anxiety Management",
-            "description": "When your emotions aren’t serving you well, it’s helpful to have a solid protocol. This is one I especially like.\n\n",
+            "description": "When your emotions aren’t serving you well, it’s helpful to have a solid protocol. First you need to rebuild perspective, and then you need to focus on maximizing your influence.\n\n",
             "file_path": "_site/anxiety-management.html",
             "outgoing_links": [
                 "/addiction",
@@ -613,11 +598,12 @@
                 "/siy"
             ],
             "incoming_links": [
-                "/anxiety"
+                "/anxiety",
+                "/fail"
             ],
             "redirect_url": "",
             "markdown_path": "_d/anxiety_management.md",
-            "doc_size": 16000
+            "doc_size": 18000
         },
         "/appreciate": {
             "py/object": "__main__.Page",
@@ -1567,7 +1553,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-08.md",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
@@ -2020,18 +2006,19 @@
         "/fail": {
             "py/object": "__main__.Page",
             "url": "/fail",
-            "title": "Learning from mistakes",
-            "description": "Failure is not an option it’s a necessity. Here some thoughts on failures\n\n",
+            "title": "Failure is not an option it is a necassity",
+            "description": "Failure is not an option; it’s a necessity. Here are some thoughts on failures.\n\n",
             "file_path": "_site/fail.html",
             "outgoing_links": [
                 "/anxiety",
+                "/anxiety-management",
                 "/coe",
                 "/d/resistance"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/fail2.md",
-            "doc_size": 12000
+            "doc_size": 16000
         },
         "/first-things-first": {
             "py/object": "__main__.Page",
@@ -2263,7 +2250,7 @@
             "py/object": "__main__.Page",
             "url": "/groupchat",
             "title": "My favorite group chats - the forever dinner party",
-            "description": "If you had to articulate what makes a group chat great, you’d probably end up describing a great dinner party. So lets think on that. Idea mostly copied from Sriram\n\n",
+            "description": "Imagine a group chat as the bustling kitchen of a high-end restaurant. In place of culinary masterpieces, it’s ideas, gossip, and insights that are cooked up, seasoned, and served. Just as a great dinner party brings together eclectic personalities for a memorable evening, a stellar group chat assembles diverse voices for ongoing, vibrant conversations. Basically Sriram’s awesome post on great group chats.\n\n",
             "file_path": "_site/groupchat.html",
             "outgoing_links": [],
             "incoming_links": [],
@@ -2625,7 +2612,7 @@
         "/last-year": {
             "py/object": "__main__.Page",
             "url": "/last-year",
-            "title": "Health span, compressed morbidity and being the grandfather",
+            "title": "Kick the Bucket List: Your Guide to an Epic Last Year on Earth",
             "description": "Bad news, you’ve got a last year on earth. Good news, if you’re lucky you’ll accept that “grand father dies, father dies, son dies” is the best blessing you can have (imagine a different ordering). If you’re luckier, you’ll have age appropriate health right up till that last year, or even better that last few months. If you’re even luckier you’ll have the strength to do what you want in your personal “centenarian Olympics”.\n\n",
             "file_path": "_site/last-year.html",
             "outgoing_links": [
@@ -2746,6 +2733,7 @@
                 "/static/igor-feedback-linkedin.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
+                "/testing",
                 "/what-makes-a-leader",
                 "/writing"
             ],
@@ -2762,7 +2750,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 138000
+            "doc_size": 140000
         },
         "/manager-book-appendix": {
             "py/object": "__main__.Page",
@@ -3143,6 +3131,20 @@
             "markdown_path": "_d/operating-manual-2.md",
             "doc_size": 30000
         },
+        "/osx": {
+            "py/object": "__main__.Page",
+            "url": "/osx",
+            "title": "Igor's OSX Tools",
+            "description": "Igor's Blog",
+            "file_path": "_site/osx.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/tools"
+            ],
+            "redirect_url": "",
+            "markdown_path": "osx.md",
+            "doc_size": 10000
+        },
         "/pandas": {
             "py/object": "__main__.Page",
             "url": "/pandas",
@@ -3455,7 +3457,7 @@
             "py/object": "__main__.Page",
             "url": "/seattle",
             "title": "Seattle",
-            "description": "Seattle is my home, I want to die here, though not soon. If you’re visiting, here’s a list of fun things you can try. But here’s the deal, give me feedback of stuff to add/remove from this list\n\n",
+            "description": "Seattle is my home, I want to die here, though not soon. If you’re visiting, here’s a list of fun things you can try. But here’s the deal, give me feedback on stuff to add/remove from this list\n\n",
             "file_path": "_site/seattle.html",
             "outgoing_links": [],
             "incoming_links": [],
@@ -3686,7 +3688,7 @@
             "py/object": "__main__.Page",
             "url": "/sublime",
             "title": "Training the sublime states",
-            "description": "Emotional healths is pretty important. Western folks don’t have a lot of words to support this budhists have the sublime states: Loving kindness, Compassion, Altrustistic Joy and Equanimity. Give ‘em a try. Most of this is based on “The Joy of Happiness”.\n\n",
+            "description": "Emotional health is pretty important. Western folks don’t have a lot of words to support this. Luckily, the Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give ‘em a try. Most of this post is based on “The Joy of Happiness”.\n\n",
             "file_path": "_site/sublime.html",
             "outgoing_links": [
                 "/emotional-health",
@@ -4166,25 +4168,26 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/tesla.md",
+            "markdown_path": "_d/groupchat.md",
             "doc_size": 14000
         },
         "/testing": {
             "py/object": "__main__.Page",
             "url": "/testing",
             "title": "Testing and Quality",
-            "description": "If it’s not tested, it doesn’t work’.’ When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you’ve got more work to do\n\n",
+            "description": "If it’s not tested, it doesn’t work. When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise, you’ve got more work to do.\n\n",
             "file_path": "_site/testing.html",
             "outgoing_links": [
                 "/ai-testing",
                 "/design"
             ],
             "incoming_links": [
-                "/design"
+                "/design",
+                "/manager-book"
             ],
             "redirect_url": "",
             "markdown_path": "_td/testing.md",
-            "doc_size": 20000
+            "doc_size": 21000
         },
         "/The-Genesis-Node": {
             "py/object": "__main__.Page",
@@ -4280,13 +4283,14 @@
             "file_path": "_site/tools.html",
             "outgoing_links": [
                 "/nlp",
+                "/osx",
                 "/td/ios",
                 "/td/ios-nomad"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/tool.md",
-            "doc_size": 48000
+            "doc_size": 47000
         },
         "/touching": {
             "py/object": "__main__.Page",
