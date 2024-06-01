@@ -780,7 +780,7 @@
             "incoming_links": [
                 "/activation",
                 "/d/time-off-2024-02",
-                "/insomnia"
+                "/sleep"
             ],
             "redirect_url": "",
             "markdown_path": "_d/blueprint.md",
@@ -2466,17 +2466,18 @@
             "description": "Insomnia controls you, instead of you controlling your sleep. If you want advice on how to deal with insomnia, do NOT ask a person who hasn’t slept in two nights. Instead, ask someone who’s had insomnia several times, and has a checklist on how to respond when insomnia flares up. By the way, I’ve never actually taken this advice, but maybe writing it down will make it more likely that I’ll take it in the future.\n\n",
             "file_path": "_site/insomnia.html",
             "outgoing_links": [
-                "/blueprint"
+                "/sleep"
             ],
             "incoming_links": [
                 "/activation",
                 "/depression",
                 "/essentialism",
-                "/physical-health"
+                "/physical-health",
+                "/sleep"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2016-2-11-Insomnia.md",
-            "doc_size": 13000
+            "doc_size": 12000
         },
         "/interviewsarehard": {
             "py/object": "__main__.Page",
@@ -3577,6 +3578,24 @@
             "redirect_url": "",
             "markdown_path": "_d/siy.md",
             "doc_size": 56000
+        },
+        "/sleep": {
+            "py/object": "__main__.Page",
+            "url": "/sleep",
+            "title": "Keep life on easy mode - Prioritize Sleep",
+            "description": "Bryan Johnson says sleep is like life on easy mode. He has lots to say on this, and it gets technical, and I think I agree:\n\n",
+            "file_path": "_site/sleep.html",
+            "outgoing_links": [
+                "/blueprint",
+                "/insomnia"
+            ],
+            "incoming_links": [
+                "/energy",
+                "/insomnia"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/sleep.md",
+            "doc_size": 11000
         },
         "/sleeping-bag-sacrifies": {
             "py/object": "__main__.Page",
