@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""Age Before Beauty: The Vanishing Act of Older Coders"
+title: "Age Before Beauty: The Vanishing Act of Older Coders"
 comments: true
 permalink: /40yo
 redirect_from:
