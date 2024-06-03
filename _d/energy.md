@@ -25,19 +25,21 @@ In fact, sometimes it even drains worse, so care deeply about
 
 {% include summarize-page.html src="/productive" %}
 
-### Energy vs Will Power
-
-Interesting - what is the difference between these concepts in my model?
-
 ### Wasting energy can accelerate the drain
 
 - Or maybe it makes your energy weaker
 
 {% include summarize-page.html src="/resistance" %}
 
-### Activation Energy often far exceeds steady state energy
+### Energy fuels will power
+
+I need to reflect - what is the difference between these concepts in my model? Certainly, will power is a function of energy, Maybe u-shaped, too much or too little energy, no will power, middle it's pretty solid.
+
+### Activation Energy can far exceeds steady state energy
 
 {% include summarize-page.html src="/activation" %}
+
+There is an analogy here with physical devices, like cars have a starter motor which is only requiref or starting up after witch you switch to the steady state motor
 
 ### We can go into energy debt, but you need to always pay the piper
 
@@ -103,7 +105,9 @@ Cocaine? Mania? Not good.
 
 ### Match task to energy
 
-No point spending "my high energy/will power time" on a low energy activity. It's funny, my strongest energy is when I wake up, which seems like a waste to spend on the gym, except when I don't spend that on the gym it makes a mess.
+You'd think there is no point spending "my high energy/will power time" on a low computational activity like goint to the gym. So you'd think I'd go to the gym after work.
+
+Except. Going to the gym charges me up, and it takes significant will power. So I take my high energy in the morning when my will power is high and spend it on going to the gym.
 
 ### Remember to take some time off
 
