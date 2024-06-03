@@ -3,6 +3,7 @@
         "/2024": "/y24",
         "/24": "/y24",
         "/48-laws": "/laws-of-power",
+        "/50yo": "/40yo",
         "/7h": "/7-habits",
         "/7h-c0": "/7h-concepts",
         "/7h-c1": "/be-proactive",
@@ -162,6 +163,8 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
+        "/SoM": "/sleight-of-mouth",
+        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -217,6 +220,18 @@
             "redirect_url": "",
             "markdown_path": "_d/22.md",
             "doc_size": 13000
+        },
+        "/40yo": {
+            "py/object": "__main__.Page",
+            "url": "/40yo",
+            "title": "Age Before Beauty: The Vanishing Act of Older Coders",
+            "description": "In 2002, I started programming at MSFT with lots of other 20-year-olds. I don’t recall the age distributions, but maybe 90% of the programmers I knew were under 40. In 2020, at 41, I’m no longer a programmer, and the majority of programmers are much younger than me. This begs the question, where do all the programmers go as they get older? I’m very curious about the answer. Here are some of my theories….\n\n",
+            "file_path": "_site/40yo.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/40-yo-programmer.md",
+            "doc_size": 14000
         },
         "/42": {
             "py/object": "__main__.Page",
@@ -4187,7 +4202,7 @@
                 "/operating-manual"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/groupchat.md",
+            "markdown_path": "_d/tesla.md",
             "doc_size": 14000
         },
         "/testing": {
