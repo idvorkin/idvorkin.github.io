@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Addiction"
+title: "Escape Artists: The True Face of Addiction"
 comments: true
 tags:
   - how igor ticks
@@ -59,7 +59,7 @@ Well, it's only an addiction when it goes up.
 
 ### Pokemon Go
 
-I was pretty depressed, and needed an escape from reality. Pokemon Go was great, I could just get out and do it. Then one day at LegoLand I realized I just wanted to zone out and play Pokemon Go, and I was like, OK this is crazy and stopped cold turkey.
+I was pretty depressed, and needed an escape from reality. Pokemon Go was great, I could just get out and do it. Then one day at Legoland I realized I just wanted to zone out and play Pokemon Go, and I was like, OK this is crazy and stopped cold turkey.
 
 ### TikTok
 
@@ -83,8 +83,8 @@ Perhaps, boredom is the [pain](/mental-pain) of lack of connection, and addictio
 
 ## Addiction to flow/production/productivity
 
-Being addicted to flow and production sounds like a perfect hack. Afterall, isn't that the goal? Being productive? Close, I think addiction has this element of "out of control", and escape. Meaning you're skipping the thing you should be doing to do your addiction, so by definition it's bad. Certainly less bad then it can be, but still bad
+Being addicted to flow and production sounds like a perfect hack. After all, isn't that the goal? Being productive? Close, I think addiction has this element of "out of control", and escape. Meaning you're skipping the thing you should be doing to do your addiction, so by definition it's bad. Certainly less bad than it can be, but still bad
 
 ## Other Resources
 
-Do the work by Stephen Pressfield.
+Do the Work by Steven Pressfield.
