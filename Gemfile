@@ -4,6 +4,7 @@
 source 'https://rubygems.org'
 gem 'github-pages'
 gem 'webrick'
+gem 'csv'
 
 group :jekyll_plugins do
   gem 'jekyll-algolia', '~> 1.0'
