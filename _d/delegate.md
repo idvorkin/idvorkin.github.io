@@ -9,7 +9,7 @@ redirect_from:
   - /gopher
 ---
 
-At some point you need to scale out, and that's called delegation! Stewardship delegation is a form of delegation where the responsibility for the delegated task is transferred to the delegatee. Stewardship delegation requires upfront effort, but the long term effectiveness it creates is second to none. Stewardship delegation has five parts you need to get a shared agreement on. The desired results, the operating parameters, the available resources, the measurement system and the consequences of their stewardship.
+At some point you need to scale out, and that's called delegation! Stewardship delegation is the form of delegation where the responsibility for the delegated task is transferred to the delegatee. Stewardship delegation requires upfront effort, but results in long term effectiveness. For Stewardship delegation you need agreement on the following 5 things: The desired results, the operating parameters, the available resources, the measurement system, and the consequences of their stewardship.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -42,4 +42,20 @@ By the way, I'm trying to leverage the stewardship delegation method with myself
 
 ### Gopher Delegation
 
-Go for this, go for that, a terrible way to delegate don't do it.
+Unlike stweardship delegation, gopher delegation is a terrible way to delegate. It may "feel" efficient, but boy will it suck. Gopher delegation is when you say "Go for that, go for this". When you use gopher delegation you may find the following:
+
+_GPT for the assist on the following_
+
+1. **Confused Gophers**: Imagine a bunch of gophers running around with no clue what they're doing. One's fetching coffee, another's trying to decode your scribble on a sticky note, and yet another is wondering why they're in this mess in the first place. It's chaos!
+
+2. **Micro-Management Mayhem**: You thought you were delegating, but guess what? You're now a full-time babysitter. You're constantly checking in, giving step-by-step instructions, and basically doing the task yourself in slow motion. Fun times, right?
+
+3. **Unleashed Chaos**: Remember those guard rails in stewardship delegation? Yeah, gopher delegation doesn't have those. It's like giving a toddler a marker and leaving them in your pristine white living room. Good luck cleaning that up.
+
+4. **Resource Ransack**: Your gophers are using resources like they're in a supermarket sweep. Need that expensive software? Sure! Training that takes a week? Why not! Your budget will thank you later.
+
+5. **Accountability Abyss**: Who's responsible for what? Nobody knows. It's like playing hot potato with tasks. When things go wrong (and they will), everyone points fingers faster than a spaghetti western showdown.
+
+6. **Reward Roulette**: Rewards and consequences? More like random prizes at a carnival. "Congrats on completing that task! Here's a goldfish." Or, "You messed up? No worries, just try not to do it again... maybe."
+
+In summary, gopher delegation might feel fast and easy, but it’s like putting a band-aid on a sinking ship. Sure, it might stay afloat for a bit, but you’re definitely going down—eventually. Stick with stewardship delegation for a smoother, more effective ride.
