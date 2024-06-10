@@ -12,76 +12,74 @@ redirect_from:
   - remotework
 ---
 
-In March 2020, the world shut down from Covid 19. In May 2020, I started a new job as a remote manager at FB. Here are my thoughts
+In March 2020, the world shut down from Covid-19. In May 2020, I started a new job as a remote manager at FB. Here are my thoughts.
 
 <!-- prettier-ignore-start -->
-
-<!-- prettier-ignore-end -->
-
 <!-- vim-markdown-toc GFM -->
 
 - [The Good](#the-good)
 - [Meetings](#meetings)
-  - [One head per box](#one-head-per-box)
-  - [Whiteboards](#whiteboards)
+    - [One head per box](#one-head-per-box)
+    - [Whiteboards](#whiteboards)
 - [Building Culture/Rapport](#building-culturerapport)
-  - [Donut/Coffee Roulette](#donutcoffee-roulette)
-  - [Periodic 1 hour 1:1s](#periodic-1-hour-11s)
-  - [Make periodic IRL time getting to know each other](#make-periodic-irl-time-getting-to-know-each-other)
-  - [Group quirks](#group-quirks)
+    - [Donut/Coffee Roulette](#donutcoffee-roulette)
+    - [Periodic 1 hour 1:1s](#periodic-1-hour-11s)
+    - [Make periodic IRL time getting to know each other](#make-periodic-irl-time-getting-to-know-each-other)
+    - [Group quirks](#group-quirks)
 - [The hard to replicate micro moments](#the-hard-to-replicate-micro-moments)
-  - [The 5 minute events](#the-5-minute-events)
-  - [Knowing people are disruptable](#knowing-people-are-disruptable)
-  - [The water cooler](#the-water-cooler)
+    - [The 5 minute events](#the-5-minute-events)
+    - [Knowing people are disruptable](#knowing-people-are-disruptable)
+    - [The water cooler](#the-water-cooler)
 - [Social](#social)
-  - [Big events](#big-events)
-  - [Technical talks](#technical-talks)
-  - [Challenges when the team is well gelled](#challenges-when-the-team-is-well-gelled)
-  - [Sync vs Async Communication](#sync-vs-async-communication)
-  - [Collaborative Documents](#collaborative-documents)
-  - [Remote workers vs Flexible Time In Office](#remote-workers-vs-flexible-time-in-office)
-  - [Social Things](#social-things)
-  - [The environment controls actions and emotions](#the-environment-controls-actions-and-emotions)
-  - [Remote Work and Camera Setup](#remote-work-and-camera-setup)
-  - [Cute and ackward moments](#cute-and-ackward-moments)
+    - [Big events](#big-events)
+    - [Technical talks](#technical-talks)
+    - [Challenges when the team is well gelled](#challenges-when-the-team-is-well-gelled)
+    - [Sync vs Async Communication](#sync-vs-async-communication)
+    - [Collaborative Documents](#collaborative-documents)
+    - [Remote workers vs Flexible Time In Office](#remote-workers-vs-flexible-time-in-office)
+    - [Social Things](#social-things)
+    - [The environment controls actions and emotions](#the-environment-controls-actions-and-emotions)
+    - [Remote Work and Camera Setup](#remote-work-and-camera-setup)
+    - [Cute and awkward moments](#cute-and-awkward-moments)
 - [A Post E-mail world](#a-post-e-mail-world)
-  - [Long term information storage](#long-term-information-storage)
-  - [Keeping track of non-immediate follow ups](#keeping-track-of-non-immediate-follow-ups)
-  - [Grouping everything at self controlled granularity with rules and folders](#grouping-everything-at-self-controlled-granularity-with-rules-and-folders)
-  - [Discrete "units of action" and follow ups for non-public tasks](#discrete-units-of-action-and-follow-ups-for-non-public-tasks)
-  - [Focused Threads](#focused-threads)
-  - [Other Use Cases](#other-use-cases)
-  - [Quip vs Wiki](#quip-vs-wiki)
-  - [Quip vs Word (and Word Procesors)](#quip-vs-word-and-word-procesors)
-  - [The good and bad of public communication](#the-good-and-bad-of-public-communication)
+    - [Long term information storage](#long-term-information-storage)
+    - [Keeping track of non-immediate follow ups](#keeping-track-of-non-immediate-follow-ups)
+    - [Grouping everything at self controlled granularity with rules and folders](#grouping-everything-at-self-controlled-granularity-with-rules-and-folders)
+    - [Discrete "units of action" and follow ups for non-public tasks](#discrete-units-of-action-and-follow-ups-for-non-public-tasks)
+    - [Focused Threads](#focused-threads)
+    - [Other Use Cases](#other-use-cases)
+    - [Quip vs Wiki](#quip-vs-wiki)
+    - [Quip vs Word (and Word Processors)](#quip-vs-word-and-word-processors)
+    - [The good and bad of public communication](#the-good-and-bad-of-public-communication)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
 
 ## The Good
 
-- We get better at flexiblity
+- We get better at flexibility
 - We get better at communicating
 
 ## Meetings
 
 ### One head per box
 
-When there are many people in a room, but others are remote, it's really hard to engage with the people in the room, especially when they're talking. Need them to talk into boxes. Yup, as a remote person you get more value when everyone is talking. Arreeed.
+When there are many people in a room, but others are remote, it's really hard to engage with the people in the room, especially when they're talking. Need them to talk into boxes. Yup, as a remote person you get more value when everyone is talking. Agreed.
 
 ### Whiteboards
 
-You need a collabortive whiteboard app. My favorite is Excalidraw. Open source, keyboard short cuts, and multiple users. Strongly, strongly recommend
+You need a collaborative whiteboard app. My favorite is Excalidraw. Open source, keyboard shortcuts, and multiple users. Strongly, strongly recommend.
 
 ## Building Culture/Rapport
 
 ### Donut/Coffee Roulette
 
-Meeting folks 1:1 is ackward, force it to happen with a coffee roulette (Meta) or Donut for Slack.
+Meeting folks 1:1 is awkward, force it to happen with a coffee roulette (Meta) or Donut for Slack.
 
 ### Periodic 1 hour 1:1s
 
-If your goup has a 30 minute meeting culture, it's hard to get into the personal stuff, make the meeting an hour and you'll have space for it.
+If your group has a 30-minute meeting culture, it's hard to get into the personal stuff, make the meeting an hour and you'll have space for it.
 
 ### Make periodic IRL time getting to know each other
 
@@ -132,27 +130,27 @@ The team I joined was very well gelled, as a result you didn't see much of peopl
   - <https://www.hanselman.com/blog/GoodBetterBestCreatingTheUltimateRemoteWorkerWebcamSetupOnABudget.aspx>
   - <https://www.youtube.com/watch?v=KDc0Ne0KTQ4>
 
-### Cute and ackward moments
+### Cute and awkward moments
 
-- Co-workers 6 year old coming in dancing naked with just a cape
+- Co-worker's 6-year-old coming in dancing naked with just a cape
 - Camera left on, and being naked
 - Daughter coming in and giving a backward hug while I'm giving an important presentation
 
 ## A Post E-mail world
 
-As part of remote work, many orgs have dropped e-mail and instead use Slack/Teams/Workplace Messenger/Chime as their dominant form of information exchange. This has been challenging for me as I've spend 20 years optimizing for e-mail use.
+As part of remote work, many orgs have dropped e-mail and instead use Slack/Teams/Workplace Messenger/Chime as their dominant form of information exchange. This has been challenging for me as I've spent 20 years optimizing for e-mail use.
 
-In this section I'll use Quip as a reference to collaborative document systems (E.g. google docs, shared OneNote), and Slack as a chat platform (E.g. Teams, Chime, Workplace Messenger)
+In this section I'll use Quip as a reference to collaborative document systems (E.g. Google Docs, shared OneNote), and Slack as a chat platform (E.g. Teams, Chime, Workplace Messenger)
 
 ### Long term information storage
 
 A top use case for e-mail, but e-mail is terrible at this because it's private, hard to comment on, and doesn't store history. Chat shares the e-mail downsides in this use case, and makes them even worse as it's rare to take the time to craft a good chat message, and there's many tangents in the chats.
 
-A shared doc systems like Quip is far superior for this usecase. History, collaborative editting, rich inline comments, etc.
+A shared doc system like Quip is far superior for this use case. History, collaborative editing, rich inline comments, etc.
 
 ### Keeping track of non-immediate follow ups
 
-In an e-mail world, I'd have folders for followup_today, followup_this_week, follow_up_next_week, follow_up_next_month. I don't have a great solution for this - In theory a tasks system, but that kind of sucks as it loses too much context.
+In an e-mail world, I'd have folders for followup_today, followup_this_week, follow_up_next_week, follow_up_next_month. I don't have a great solution for this - In theory a task system, but that kind of sucks as it loses too much context.
 
 ### Grouping everything at self controlled granularity with rules and folders
 
@@ -162,13 +160,13 @@ Don't have a great solution.
 
 ### Discrete "units of action" and follow ups for non-public tasks
 
-In a public setting, a task system is better then storing todos in e-mail. However, for private and small group tasks e-mail is great, especially when organized into folders with rules.
+In a public setting, a task system is better than storing todos in e-mail. However, for private and small group tasks e-mail is great, especially when organized into folders with rules.
 
 ### Focused Threads
 
 ### Other Use Cases
 
-- Read a thread at at a time.
+- Read a thread at a time.
 - See only “Un-Read” post comments
 - Sending a mail to yourself for followup
 - Seeing your sent mail to people
@@ -178,18 +176,18 @@ In a public setting, a task system is better then storing todos in e-mail. Howev
 
 ### Quip vs Wiki
 
-Many companies have both Quip and Wiki, and it often comes up which should be used for what. For this post, I assume your wiki system does not have collaborative real time editting, @mentions or a very powerful comment system. I prefer Quip for everything, though I appreciate Wiki is good once your document is complete.
+Many companies have both Quip and Wiki, and it often comes up which should be used for what. For this post, I assume your wiki system does not have collaborative real-time editing, @mentions or a very powerful comment system. I prefer Quip for everything, though I appreciate Wiki is good once your document is complete.
 
-### Quip vs Word (and Word Procesors)
+### Quip vs Word (and Word Processors)
 
 Word, is great, but it has many irrelevant features optimized for an era where you'd print your document. Assuming you're not at Amazon, you won't be printing a document so there's a lot of cruft in these tools that you just don't need, and can waste time.
 
 ### The good and bad of public communication
 
-Good: You are generally nicer and more careful when talking in public. Less likley to gossip or bash someone.
+Good: You are generally nicer and more careful when talking in public. Less likely to gossip or bash someone.
 
 Bad: It's more expensive, more sterile, needs more context.
 
 ## Other Resources
 
-- Gitlabs' guide to [remote work](https://about.gitlab.com/company/culture/all-remote/guide/)
+- Gitlab's guide to [remote work](https://about.gitlab.com/company/culture/all-remote/guide/)
