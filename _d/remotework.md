@@ -2,10 +2,6 @@
 layout: post
 title: "Remote Work"
 date: "2018-04-03 06:25:21 Pacific Daylight Time"
-comments: true
-inprogress: true
-tags:
-collapsable: true
 permalink: remote-work
 redirect_from:
   - remote
@@ -19,8 +15,10 @@ In March 2020, the world shut down from Covid-19. In May 2020, I started a new j
 
 - [The Good](#the-good)
 - [Meetings](#meetings)
-    - [One head per box](#one-head-per-box)
+    - [One head per box(screen)](#one-head-per-boxscreen)
     - [Whiteboards](#whiteboards)
+    - [Shared Realtime Editing](#shared-realtime-editing)
+- [Sync vs Async, Real Time vs Delayed](#sync-vs-async-real-time-vs-delayed)
 - [Building Culture/Rapport](#building-culturerapport)
     - [Donut/Coffee Roulette](#donutcoffee-roulette)
     - [Periodic 1 hour 1:1s](#periodic-1-hour-11s)
@@ -63,13 +61,27 @@ In March 2020, the world shut down from Covid-19. In May 2020, I started a new j
 
 ## Meetings
 
-### One head per box
+### One head per box(screen)
 
-When there are many people in a room, but others are remote, it's really hard to engage with the people in the room, especially when they're talking. Need them to talk into boxes. Yup, as a remote person you get more value when everyone is talking. Agreed.
+Video calls are optimized for one her per box. E.g. every person has their own camera. This breaks down when you have one camera for 10 people in a conference room. When there are many people in a room, but someone is remote, it's really hard for them to undersatnd what is happneing in the room, especially when they're talking.
+
+Ideally you setup one head per box, whever everyone joins on their laptop (camera on, microphone off), at least then you can see who is talking, even if they're not looking directly into their screen.
 
 ### Whiteboards
 
 You need a collaborative whiteboard app. My favorite is Excalidraw. Open source, keyboard shortcuts, and multiple users. Strongly, strongly recommend.
+
+**OK, I don't use this often, enough I need to**
+
+### Shared Realtime Editing
+
+While not as good as a whiteboard, opening a collaborative document ala google docs or some such, works surpringly well. You can all follow along and contribute at the same time
+
+## Sync vs Async, Real Time vs Delayed
+
+Sync is convenient as it's real time and has maximum bandwith, and attention.
+
+Real time async usually has more time slicing which is bad. It also ruins a lot of the value of async
 
 ## Building Culture/Rapport
 
@@ -138,7 +150,7 @@ The team I joined was very well gelled, as a result you didn't see much of peopl
 
 ## A Post E-mail world
 
-As part of remote work, many orgs have dropped e-mail and instead use Slack/Teams/Workplace Messenger/Chime as their dominant form of information exchange. This has been challenging for me as I've spent 20 years optimizing for e-mail use.
+Many younger organizations (like Facebook) have dropped e-mail and instead use Slack/Teams/Workplace Messenger/Chime as their dominant form of information exchange. This has been challenging for me as I've spent 20 years optimizing for e-mail use.
 
 In this section I'll use Quip as a reference to collaborative document systems (E.g. Google Docs, shared OneNote), and Slack as a chat platform (E.g. Teams, Chime, Workplace Messenger)
 
@@ -151,6 +163,8 @@ A shared doc system like Quip is far superior for this use case. History, collab
 ### Keeping track of non-immediate follow ups
 
 In an e-mail world, I'd have folders for followup_today, followup_this_week, follow_up_next_week, follow_up_next_month. I don't have a great solution for this - In theory a task system, but that kind of sucks as it loses too much context.
+
+We have a reminder bot, which is surpringly good, as it forces stuff too top.
 
 ### Grouping everything at self controlled granularity with rules and folders
 
