@@ -50,6 +50,8 @@ Stuff happening:
 - Tesla car camping
 - Mid week camping
 - Hang with Baltasar and Family
+- Table Mountain star party - July 30 - August 3, 2024
+  - 3 hours away, camp and telescope
 
 ## My top priorities
 
