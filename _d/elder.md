@@ -8,7 +8,7 @@ redirect_from:
   - /midlife
 ---
 
-Midlife has a marketing problem, the next word is always crisis. Chip Conley has lots of good insights here.
+Midlife has a marketing problem, the next word is always crisis. Chip Conley has lots of good insights here. This post talks about his books Modern Elder and Midlife, and also From Strength to Strength a book on midlife for strivers
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -39,7 +39,12 @@ Book on how to age
 
 ### Your professional decline is coming (much) sooner than you think
 
-- Half life of
+_Huh, this is true for all who moved my cheese situations_
+
+- 3 choices:
+  - Deny and rage against failure - setup for failure and dissapointemnt
+  - Shurg and resign yourself to decline - experience as a tragedy
+  - Accept what got you here won't get you there - and build new skills
 
 ### The second curve
 
