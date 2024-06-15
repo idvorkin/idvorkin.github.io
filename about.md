@@ -21,8 +21,6 @@ As such, a few of the posts will be finished, most posts will be incomplete, and
 
 Finally the metaphorical small print: These are my personal opinions, not those of my employer.
 
-## FAQ
-
 ### What does this have to do with writers block?
 
 From Seth:
