@@ -27,8 +27,10 @@ _TODO: Picture of pyramid of age distributions_
     - [I don't care about this new stuff, it's all BS, I'm just gonna do what I want](#i-dont-care-about-this-new-stuff-its-all-bs-im-just-gonna-do-what-i-want)
     - [Who moved my cheese?](#who-moved-my-cheese)
     - [I just want to coast till I have enough to retire](#i-just-want-to-coast-till-i-have-enough-to-retire)
-- [Age Based Advantages](#age-based-advantages)
-- [Age Based Cognitive Declines](#age-based-cognitive-declines)
+- [Declines and Growth as you cross 50](#declines-and-growth-as-you-cross-50)
+    - [Age Based Advantages](#age-based-advantages)
+    - [Age Based Cognitive Declines](#age-based-cognitive-declines)
+    - [AI as an equalizer](#ai-as-an-equalizer)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -71,7 +73,13 @@ While I haven't seen age discrimination due to age, I've seen some attributes th
 
 ### I just want to coast till I have enough to retire
 
-## Age Based Advantages
+## Declines and Growth as you cross 50
+
+[From Strength to strength] is a book that starts off explaining what gets better and what gets worse as we move into the 50s. I'll likley merge that section there.
+
+{%include summarize-page.html src="/elder" %}
+
+### Age Based Advantages
 
 1. Discipline
 1. Emotional Stability
@@ -82,7 +90,7 @@ While I haven't seen age discrimination due to age, I've seen some attributes th
 1. Clarity of purpose
 1. Ability to see the big picture
 
-## Age Based Cognitive Declines
+### Age Based Cognitive Declines
 
 I don't know when it kicks in, but I think the science is clear, and I certainly have seen a reduction in some of my cognitive processes. Using a computer model:
 
@@ -91,6 +99,6 @@ I don't know when it kicks in, but I think the science is clear, and I certainly
 1. Lower peak load - Can't push for 110% for as long.
 1. Worse Memory - I must write down everything or I'll lose it.
 
-A book on this is [From strength to strength], chapter 1. See my notes here:
+### AI as an equalizer
 
-{%include summarize-page.html src="/elder" %}
+Oh this is a very interesting section
