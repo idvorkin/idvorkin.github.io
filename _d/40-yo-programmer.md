@@ -81,14 +81,17 @@ While I haven't seen age discrimination due to age, I've seen some attributes th
 
 ### Age Based Advantages
 
-1. Discipline
 1. Emotional Stability
-1. Tolerance
-1. Not my first rodeo
-1. Having done it before.
-1. Intrinsic motivation
-1. Clarity of purpose
-1. Ability to see the big picture
+   1. Discipline
+   1. Tolerance
+   1. Intrinsic motivation
+1. Experience
+   1. Not my first rodeo
+   1. Having done it before.
+1. Clarity
+   1. Time Affluence
+   1. Clarity of purpose
+   1. Ability to see the big picture
 
 ### Age Based Cognitive Declines
 
