@@ -30,6 +30,7 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 - [Getting Rid of 'em](#getting-rid-of-em)
 - [Other thoughts on addiction](#other-thoughts-on-addiction)
 - [Addiction to flow/production/productivity](#addiction-to-flowproductionproductivity)
+- [Work Addicition and Success Addicition](#work-addicition-and-success-addicition)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc -->
@@ -84,6 +85,21 @@ Perhaps, boredom is the [pain](/mental-pain) of lack of connection, and addictio
 ## Addiction to flow/production/productivity
 
 Being addicted to flow and production sounds like a perfect hack. After all, isn't that the goal? Being productive? Close, I think addiction has this element of "out of control", and escape. Meaning you're skipping the thing you should be doing to do your addiction, so by definition it's bad. Certainly less bad than it can be, but still bad
+
+## Work Addicition and Success Addicition
+
+See midlife notes on from strength to strength.
+
+{%include summarize-page.html src="/midlife" %}
+
+- Success => Having more then others
+- Failure => Having Less
+
+A few problems of course: 1. You change your definition of others 1. It gets hard and harder as you get into midlife
+
+Far better is to define satifiscation as
+
+1.  What you want / what you have
 
 ## Other Resources
 
