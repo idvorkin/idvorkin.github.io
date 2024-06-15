@@ -90,3 +90,7 @@ I don't know when it kicks in, but I think the science is clear, and I certainly
 1. Smaller input set - Can only process so much information at once.
 1. Lower peak load - Can't push for 110% for as long.
 1. Worse Memory - I must write down everything or I'll lose it.
+
+A book on this is [From strength to strength], chapter 1. See my notes here:
+
+{%include summarize-page.html src="/elder" %}
