@@ -13,13 +13,56 @@ Midlife has a marketing problem, the next word is always crisis. Chip Conley has
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+- [From Strength To Strength](#from-strength-to-strength)
+    - [Your professional decline is coming (much) sooner than you think](#your-professional-decline-is-coming-much-sooner-than-you-think)
+    - [The second curve](#the-second-curve)
+    - [Kick your success addiction](#kick-your-success-addiction)
+    - [Start chipping away](#start-chipping-away)
+    - [Ponder your death](#ponder-your-death)
+    - [Cultivate your aspen grove](#cultivate-your-aspen-grove)
+    - [Start your vanaprastha](#start-your-vanaprastha)
+    - [Make your weakness your strength](#make-your-weakness-your-strength)
+    - [Cast into the falling tide](#cast-into-the-falling-tide)
+    - [Seven words to remember.](#seven-words-to-remember)
 - [Midlife](#midlife)
     - [5 lives](#5-lives)
 - [Modern Elder](#modern-elder)
     - [The skills](#the-skills)
+    - [Where have the 40 year old coders gones](#where-have-the-40-year-old-coders-gones)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
+
+## From Strength To Strength
+
+Book on how to age
+
+### Your professional decline is coming (much) sooner than you think
+
+- Half life of
+
+### The second curve
+
+- Fluid Intelligence: "Raw Horsepower/Being Smart" - This is what declines
+- Crystalized Intelligence: "Wisdom" - This Continues to grow. Get onto this curve
+
+### Kick your success addiction
+
+Th
+
+### Start chipping away
+
+### Ponder your death
+
+### Cultivate your aspen grove
+
+### Start your vanaprastha
+
+### Make your weakness your strength
+
+### Cast into the falling tide
+
+### Seven words to remember.
 
 ## Midlife
 
@@ -104,3 +147,7 @@ Idea:
 2. Learning mindset - curiosity about new technologies and trends
 3. Collaborative leadership - guiding, not commanding
 4. Counselor - sharing insights and fostering a culture of mutual learning
+
+### Where have the 40 year old coders gones
+
+{%include summarize-page.html src="/40yo" %}
