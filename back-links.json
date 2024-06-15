@@ -227,11 +227,15 @@
             "title": "Age Before Beauty: The Vanishing Act of Older Coders",
             "description": "In 2002, I started programming at MSFT with lots of other 20-year-olds. I don’t recall the age distributions, but maybe 90% of the programmers I knew were under 40. In 2020, at 41, I’m no longer a programmer, and the majority of programmers are much younger than me. This begs the question, where do all the programmers go as they get older? I’m very curious about the answer. Here are some of my theories….\n\n",
             "file_path": "_site/40yo.html",
-            "outgoing_links": [],
-            "incoming_links": [],
+            "outgoing_links": [
+                "/elder"
+            ],
+            "incoming_links": [
+                "/elder"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/40-yo-programmer.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/42": {
             "py/object": "__main__.Page",
@@ -381,11 +385,12 @@
         "/addiction": {
             "py/object": "__main__.Page",
             "url": "/addiction",
-            "title": "Addiction",
+            "title": "Escape Artists: The True Face of Addiction",
             "description": "Addiction is not about drugs or alcohol - it is about escape. Quoting “Do the Work”: When we can’t stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That’s why addicts are so interesting and so boring at the same time. They’re interesting because they’re called to something — something new, something unique, something that we, watching, can’t wait to see them bring forth into manifestation. At the same time, they’re boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict’s crazy, haunted, shattered life.\n\n",
             "file_path": "_site/addiction.html",
             "outgoing_links": [
                 "/covid",
+                "/elder",
                 "/mental-pain"
             ],
             "incoming_links": [
@@ -402,7 +407,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/addiction.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/affirmations": {
             "py/object": "__main__.Page",
@@ -1661,8 +1666,8 @@
         "/delegate": {
             "py/object": "__main__.Page",
             "url": "/delegate",
-            "title": "Stewardship delegation 101",
-            "description": "At some point you need to scale out, and that’s called delegation! Stewardship delegation is a form of delegation where the responsibility for the delegated task is transferred to the delegatee. Stewardship delegation requires upfront effort, but the long term effectiveness it creates is second to none. Stewardship delegation has five parts you need to get a shared agreement on. The desired results, the operating parameters, the available resources, the measurement system and the consequences of their stewardship.\n\n",
+            "title": "Stewardship Delegation 101",
+            "description": "At some point you need to scale out, and that’s called delegation! Stewardship delegation is the form of delegation where the responsibility for the delegated task is transferred to the delegatee. Stewardship delegation requires upfront effort, but results in long-term effectiveness. For stewardship delegation, you need agreement on the following 5 things: The desired results, the operating parameters, the available resources, the measurement system, and the consequences of their stewardship.\n\n",
             "file_path": "_site/delegate.html",
             "outgoing_links": [
                 "/first-things-first"
@@ -1672,7 +1677,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/delegate.md",
-            "doc_size": 13000
+            "doc_size": 15000
         },
         "/depression": {
             "py/object": "__main__.Page",
@@ -1815,11 +1820,16 @@
             "title": "The Modern Elder and middle age",
             "description": "Midlife has a marketing problem, the next word is always crisis. Chip Conley has lots of good insights here.\n\n",
             "file_path": "_site/elder.html",
-            "outgoing_links": [],
-            "incoming_links": [],
+            "outgoing_links": [
+                "/40yo"
+            ],
+            "incoming_links": [
+                "/40yo",
+                "/addiction"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/elder.md",
-            "doc_size": 14000
+            "doc_size": 17000
         },
         "/emotional-health": {
             "py/object": "__main__.Page",
@@ -2271,7 +2281,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/groupchat.md",
-            "doc_size": 16000
+            "doc_size": 21000
         },
         "/gtd": {
             "py/object": "__main__.Page",
@@ -3419,7 +3429,7 @@
             "py/object": "__main__.Page",
             "url": "/remote-work",
             "title": "Remote Work",
-            "description": "In March 2020, the world shut down from Covid 19. In May 2020, I started a new job as a remote manager at FB. Here are my thoughts\n\n",
+            "description": "In March 2020, the world shut down from Covid-19. In May 2020, I started a new job as a remote manager at FB. Here are my thoughts.\n\n",
             "file_path": "_site/remote-work.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -3427,7 +3437,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/remotework.md",
-            "doc_size": 20000
+            "doc_size": 21000
         },
         "/roblox-dev": {
             "py/object": "__main__.Page",
