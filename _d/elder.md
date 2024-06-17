@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Does the word after midlife have to be crisis? Transitioning to a modern elder.
+title: From midlife crisis to modern elder - Sharpening and Embrace your new skills
 tags:
 permalink: /elder
 redirect_from:
