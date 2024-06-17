@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Does the word after midlife have to be crisis?
+title: Does the word after midlife have to be crisis? Transitioning to a modern elder.
 tags:
 permalink: /elder
 redirect_from:
@@ -8,7 +8,7 @@ redirect_from:
   - /midlife
 ---
 
-Midlife has a marketing problem, the next word is always crisis. Chip Conley has lots of good insights here. This post talks about his books Modern Elder, Midlife, And From Strength to Strength a book on midlife for strivers
+Midlife has a marketing problem, the next word is always crisis. Honestly, for good reason: Midlife is a new chapter of your life where the things you and society value are in decline. E.g. you're getting weaker and dumber. Embrace and optimize for that or suffer. Luckily there is a good formula here: both to embrace it, and to find new strengths to focus on.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
