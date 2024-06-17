@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Modern Elder and middle age
+title: Does the word after midlife have to be crisis?
 tags:
 permalink: /elder
 redirect_from:
@@ -8,7 +8,7 @@ redirect_from:
   - /midlife
 ---
 
-Midlife has a marketing problem, the next word is always crisis. Chip Conley has lots of good insights here. This post talks about his books Modern Elder and Midlife, and also From Strength to Strength a book on midlife for strivers
+Midlife has a marketing problem, the next word is always crisis. Chip Conley has lots of good insights here. This post talks about his books Modern Elder, Midlife, And From Strength to Strength a book on midlife for strivers
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -28,14 +28,14 @@ Midlife has a marketing problem, the next word is always crisis. Chip Conley has
     - [5 lives](#5-lives)
 - [Modern Elder](#modern-elder)
     - [The skills](#the-skills)
-    - [Where have the 40 year old coders gones](#where-have-the-40-year-old-coders-gones)
+- [Related posts](#related-posts)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
 ## From Strength To Strength
 
-Book on how to age
+TL;DR: Not sure if you felt like you were crushing it, or not through your late 30s, but you're going to start to decline. You can either deny it and suffer, or embrace it and optimize for the next set of skills you can develop
 
 ### Your professional decline is coming (much) sooner than you think
 
@@ -53,17 +53,33 @@ _Huh, this is true for all who moved my cheese situations_
 
 ### Kick your success addiction
 
-Th
+- You're going to get worse so stop tying your satisifaction to that
+- Tie your satisfaction to stuff you can continue on - helping others, and getting spirtual
 
 ### Start chipping away
+
+- Figure out what makes you happy and focus on that
+- Pro tip: Start with nothing and add vs throwing away
+
+{%include summarize-page.html src="/7h-c2" %}
+
+---
+
+{%include summarize-page.html src="/essential" %}
 
 ### Ponder your death
 
 ### Cultivate your aspen grove
 
+- Make friends
+
 ### Start your vanaprastha
 
+- Find spirtuallity, helps you avoid thinking about yourself (todo add notes about this)
+
 ### Make your weakness your strength
+
+- Share that your in decline, being vulnerable is a strength
 
 ### Cast into the falling tide
 
@@ -153,6 +169,12 @@ Idea:
 3. Collaborative leadership - guiding, not commanding
 4. Counselor - sharing insights and fostering a culture of mutual learning
 
-### Where have the 40 year old coders gones
+## Related posts
+
+**Are there 40 year old programmers?**
 
 {%include summarize-page.html src="/40yo" %}
+
+**Post midlife, you're going to die**
+
+{%include summarize-page.html src="/death" %}
