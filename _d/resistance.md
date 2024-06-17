@@ -23,7 +23,7 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
     - [At the extreme - Addiction](#at-the-extreme---addiction)
     - [Magic Tricks for strangers](#magic-tricks-for-strangers)
     - [Skipping the diet or gym, or not doing the important thing](#skipping-the-diet-or-gym-or-not-doing-the-important-thing)
-    - [Procrastinating the string that's stressing you at work](#procrastinating-the-string-thats-stressing-you-at-work)
+    - [Procrastinating the thing that's stressing you at work](#procrastinating-the-thing-thats-stressing-you-at-work)
     - [Not doing Amazon returns, or not doing the important thing](#not-doing-amazon-returns-or-not-doing-the-important-thing)
 - [Fighting the resistance](#fighting-the-resistance)
     - [The 3 lies of laziness](#the-3-lies-of-laziness)
@@ -44,11 +44,11 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
 
 ### Pain vs Suffering
 
-{%include summarize-page.html src="/mental-pain" %}
+{% include summarize-page.html src="/mental-pain" %}
 
 ### At the extreme - Addiction
 
-{%include summarize-page.html src="/addiction" %}
+{% include summarize-page.html src="/addiction" %}
 
 ### Magic Tricks for strangers
 
@@ -64,7 +64,7 @@ At my very best, I applied a powerful antidote. I told myself I'd ask the first 
 
 ### Skipping the diet or gym, or not doing the important thing
 
-### Procrastinating the string that's stressing you at work
+### Procrastinating the thing that's stressing you at work
 
 ### Not doing Amazon returns, or not doing the important thing
 
@@ -88,13 +88,13 @@ To remind me the resistance is a huge enemy, I do a polar bear plunge every new 
 
 ### Cold Exposure and Physiology - The science behind jump in the lake day
 
-Pretty cool discussion of cold exposure and its brain chemistry defences using adrenaline and how deliberately fighting the adrenaline can build your fight against the resistance. Kind of the science behind.
+Pretty cool discussion of cold exposure and its brain chemistry defenses using adrenaline and how deliberately fighting the adrenaline can build your fight against the resistance. Kind of the science behind.
 
 <https://www.youtube.com/watch?v=pq6WHJzOkno>
 
 ### Positive [Habits](/habits) and Routine
 
-Every day I wake up at 5am, it's my first victory over the resistance, and it gives me strength to fight through the day.
+Every day I wake up at 5 am, it's my first victory over the resistance, and it gives me strength to fight through the day.
 
 ### Related books
 
@@ -102,12 +102,12 @@ Every day I wake up at 5am, it's my first victory over the resistance, and it gi
 
 #### 7 Habits begin with the end in mind
 
-{%include summarize-page.html src='/7h-c2' %}
+{% include summarize-page.html src='/7h-c2' %}
 
 #### Getting things done
 
-{%include summarize-page.html src='/gtd' %}
+{% include summarize-page.html src='/gtd' %}
 
 #### Eat that frog
 
-{%include summarize-page.html src='/frog' %}
+{% include summarize-page.html src='/frog' %}
