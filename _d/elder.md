@@ -28,6 +28,9 @@ Midlife has a marketing problem, the next word is always crisis. Honestly, for g
     - [5 lives](#5-lives)
 - [Modern Elder](#modern-elder)
     - [The skills](#the-skills)
+- [All Fours - A novel.](#all-fours---a-novel)
+    - [The advantages of menopause](#the-advantages-of-menopause)
+    - [To file](#to-file)
 - [Related posts](#related-posts)
 
 <!-- vim-markdown-toc -->
@@ -42,30 +45,30 @@ TL;DR: Not sure if you felt like you were crushing it, or not through your late 
 _Huh, this is true for all who moved my cheese situations_
 
 - 3 choices:
-  - Deny and rage against failure - setup for failure and dissapointemnt
-  - Shurg and resign yourself to decline - experience as a tragedy
+  - Deny and rage against failure - setup for failure and disappointment
+  - Shrug and resign yourself to decline - experience as a tragedy
   - Accept what got you here won't get you there - and build new skills
 
 ### The second curve
 
 - Fluid Intelligence: "Raw Horsepower/Being Smart" - This is what declines
-- Crystalized Intelligence: "Wisdom" - This Continues to grow. Get onto this curve
+- Crystallized Intelligence: "Wisdom" - This continues to grow. Get onto this curve
 
 ### Kick your success addiction
 
-- You're going to get worse so stop tying your satisifaction to that
-- Tie your satisfaction to stuff you can continue on - helping others, and getting spirtual
+- You're going to get worse so stop tying your satisfaction to that
+- Tie your satisfaction to stuff you can continue on - helping others, and getting spiritual
 
 ### Start chipping away
 
 - Figure out what makes you happy and focus on that
 - Pro tip: Start with nothing and add vs throwing away
 
-{%include summarize-page.html src="/7h-c2" %}
+{% include summarize-page.html src="/7h-c2" %}
 
 ---
 
-{%include summarize-page.html src="/essential" %}
+{% include summarize-page.html src="/essential" %}
 
 ### Ponder your death
 
@@ -75,11 +78,11 @@ _Huh, this is true for all who moved my cheese situations_
 
 ### Start your vanaprastha
 
-- Find spirtuallity, helps you avoid thinking about yourself (todo add notes about this)
+- Find spirituality, helps you avoid thinking about yourself (todo add notes about this)
 
 ### Make your weakness your strength
 
-- Share that your in decline, being vulnerable is a strength
+- Share that you're in decline, being vulnerable is a strength
 
 ### Cast into the falling tide
 
@@ -91,7 +94,7 @@ Book: Learning to love in midlife
 
 - U-shaped happiness curve - dip at 47, comes back up the other side
 - What is good about the other side of life
-- Midelessence
+- Middlessence
 
   - Adolescence - invented in 1900s before that, just children and adults
   - Sets expectations
@@ -158,7 +161,7 @@ _Loving well, and feeling well-loved, are the two qualities that people cherish 
 
 - **Connecting**. Modern elders are intentional about connecting with people, and joining communities. “Building rapport, laughing, playing, and socializing form a deep part of human thriving and impact our ability to collaborate.
 
-- **Serving**. Modern elders serve others. Modern elders ask, “How can I best serve this person? They Move from from attaining — where they seek to win — to attuning - where they seek to understand the environment, be in tune with it, and make it better.
+- **Serving**. Modern elders serve others. Modern elders ask, “How can I best serve this person? They move from attaining — where they seek to win — to attuning - where they seek to understand the environment, be in tune with it, and make it better.
 
 Book: Wisdom at work - modern elder [Wisdom at Work: The Making of a Modern Elder](https://www.amazon.com/Wisdom-Work-Making-Modern-Elder/dp/0525572902)
 
@@ -169,12 +172,49 @@ Idea:
 3. Collaborative leadership - guiding, not commanding
 4. Counselor - sharing insights and fostering a culture of mutual learning
 
+## All Fours - A novel.
+
+OK, be warned - this sucker gets a bit pornographic. But when I told my buddy I was studying midlife, he was like how are you getting a woman's perspective, go read all fours.
+
+I don't read a lot of books from a woman's perspective, it's fascinating, but I'll share that for another post. For now, let me start with the topics
+
+The name - I think it comes from a line in the book: people think doggy style is the most vulnerable position because you can't see what's happening. But it's not, with 4 limbs on the ground you're actually the most stable, best able to respond.
+
+### The advantages of menopause
+
+- Copy this out of the sound bites
+
+### To file
+
+- Gotta invest in physical health
+- Settling vs doing what you want
+- Parenting vs spousing
+- Gender fluidity
+- Mind vs Body sexuality
+- Gender Unfairness
+  - The mom vs dad expectations
+  - The man vs woman's drop in hormones
+  - The point where women stop being attractive, but remain sexual beings
+- Affairs
+- The desire to be wanted
+- Suicide (Barely)
+- The relativeness of success
+- The "peaking early"
+- Drivers vs Passengers ( I need to understand that better)
+- The Salute between husband and wife
+- The callousness of repetition (nurse in the NICU)
+- Loss, even when it wasn't
+  - The whole thing about the baby that could have died
+- Trauma to bring us together
+  - The dog dying scene
+- The guilt of doing stuff for yourself
+
 ## Related posts
 
 **Are there 40 year old programmers?**
 
-{%include summarize-page.html src="/40yo" %}
+{% include summarize-page.html src="/40yo" %}
 
 **Post midlife, you're going to die**
 
-{%include summarize-page.html src="/death" %}
+{% include summarize-page.html src="/death" %}
