@@ -196,6 +196,10 @@ The name - I think it comes from a line in the book: people think doggy style is
   - The man vs woman's drop in hormones
   - The point where women stop being attractive, but remain sexual beings
 - Affairs
+  - Saving something only for th wife
+  - Not wanting to say I love you
+  - Non sexual intimacy
+  - The impact of eye contact
 - The desire to be wanted
 - Suicide (Barely)
 - The relativeness of success
