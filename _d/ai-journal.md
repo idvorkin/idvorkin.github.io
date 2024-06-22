@@ -16,6 +16,9 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+    - [2024-06-22](#2024-06-22)
+        - [Next Gen Models](#next-gen-models)
+        - [Lots of progression on Evals](#lots-of-progression-on-evals)
     - [2024-04-06](#2024-04-06)
     - [2024-03-24](#2024-03-24)
     - [2024-02-03](#2024-02-03)
@@ -104,6 +107,18 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2024-06-22
+
+#### Next Gen Models
+
+Claude 3.5 Sonnet just came out. Sonnet is Anthropics Medium model. It has the same performacne envelope as GPT-4o, making me assume GPT-4o is also the medium model. What's interesting, it initially OpenAI marketted GPT-4o as a 4x faster 2x cheaper GPT-4 Large model, but honeslty I think it' sjust the medium. That means either the medium Gpt 4.5 large is coming, or it's performance envelope isn't worth it.
+
+Model classes: - Price/Latency/Performance
+
+#### Lots of progression on Evals
+
+Check out the great documentation at promptfoo, including redteaming I thgues sthat'll be a big thing soon. - https://promptfoo.dev/docs/guides/llm-redteaming
 
 ### 2024-04-06
 
