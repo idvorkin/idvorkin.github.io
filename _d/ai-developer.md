@@ -24,7 +24,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
     - [Tools + Libraries](#tools--libraries)
     - [Commercial vs Open Source Models](#commercial-vs-open-source-models)
 - [Data Access](#data-access)
-- [Related Posts](#related-posts)
+- [External Posts:](#external-posts)
 - [Several posts on this topic:](#several-posts-on-this-topic)
 
 <!-- vim-markdown-toc -->
@@ -129,7 +129,10 @@ Currently more complex, figuring it out.
 - Raptor
 - DSpy
 
-## Related Posts
+## External Posts:
+
+- [What we've learn in a year of building LLMS](https://applied-llms.org/)
+- [How to Prompting](https://eugeneyan.com/writing/prompting/)
 
 ## Several posts on this topic:
 
