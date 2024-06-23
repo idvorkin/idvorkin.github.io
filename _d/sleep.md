@@ -22,11 +22,15 @@ Ok, I used to use a mattress pad warmer, it was glorious. The Sleep 8 is like th
 
 ### Consistent bedtime
 
+I try my best, I prioritze consistent wake up, even if I miss consistent bed time. Not gonan lie, sometimes I'll be beat and go into bed at 6pm. Which is still like a 7pm bed time.
+
 ### Caffeine
+
+For a while I was down to none, but now I have 2-3 cups before 9am.
 
 ### Alcohol
 
-For more on how to manage insomnia, check out my post on [insomnia management](/insomnia).
+No, not because of the calories, though I don't need those, but because they mess up my sleep.
 
 Sleep well.
 
