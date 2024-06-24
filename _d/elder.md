@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From midlife crisis to modern elder - Sharpening and Embrace your new skills
+title: "Wrinkles and Wisdom: A Guide to Aging Like Fine Wine (Not Milk)"
 tags:
 permalink: /elder
 redirect_from:
@@ -8,7 +8,9 @@ redirect_from:
   - /midlife
 ---
 
-Midlife has a marketing problem, the next word is always crisis. Honestly, for good reason: Midlife is a new chapter of your life where the things you and society value are in decline. E.g. you're getting weaker and dumber. Embrace and optimize for that or suffer. Luckily there is a good formula here: both to embrace it, and to find new strengths to focus on.
+Midlife has a marketing problem, it's always followed by the word crisis. Honestly, for good reason: Midlife is the chapter of your life where the things you and society value decline. E.g. you're getting weaker and dumber. Embrace and optimize for this reality or suffer. Luckily there is a good formula here: both to embrace it, and to find new strengths to focus on.
+
+This post covers several books on the topic.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
