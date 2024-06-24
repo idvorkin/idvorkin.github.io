@@ -5,6 +5,7 @@ imagefeature: https://github.com/idvorkin/blob/raw/master/idvorkin-manager-book-
 permalink: /manager-book-appendix
 tags:
   - manager-book
+  - manager
 ---
 
 A hodgepodge of additional resources for the manager book.
