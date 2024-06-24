@@ -5,6 +5,7 @@ imagefeature: https://github.com/idvorkin/blob/raw/master/idvorkin-manager-book-
 tags:
   - manager
   - search-featured
+  - manager-book
 permalink: /manager-book
 redirect_from:
   - /the-manager-book
@@ -1827,6 +1828,8 @@ As an IC, it's almost backwards, the day to day is fun. Coding, design, debuggin
 So, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day to day joy of being an engineer.
 
 At each stage of road productions things go wrong and we learn new stuff. TODO Come up with more examples
+
+An excellent articulation of the trade off is [here](https://jamie.ideasasylum.com/2024/06/21/the-manager-s-unbearable-lack-of-endorphins)
 
 ## Questions managers get
 
