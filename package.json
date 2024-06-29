@@ -51,6 +51,7 @@
   },
   "homepage": "https://github.com/idvorkin/idvorkin.github.io#readme",
   "dependencies": {
+    "force-graph": "^1.43.5",
     "typescript": "^4.5.2"
   },
   "lint-staged": {
