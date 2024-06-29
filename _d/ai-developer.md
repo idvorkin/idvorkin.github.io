@@ -16,6 +16,8 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
     - [Provide context to your model for Ground your model](#provide-context-to-your-model-for-ground-your-model)
     - [Use multiple AIs to maximize the value.](#use-multiple-ais-to-maximize-the-value)
     - [Human in the loop](#human-in-the-loop)
+    - [World model vs context model](#world-model-vs-context-model)
+    - [AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)](#ai-maximalist-chatgpt-vs-ai-enabled-features-apple-intelligence)
 - [Use Cases and Applications](#use-cases-and-applications)
 - [Tech Deep Dive - Models](#tech-deep-dive---models)
     - [Model and Service Dashboards](#model-and-service-dashboards)
@@ -24,6 +26,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
     - [Tools + Libraries](#tools--libraries)
     - [Commercial vs Open Source Models](#commercial-vs-open-source-models)
 - [Data Access](#data-access)
+    - [Use LLMs for reasoning not for data retrieval](#use-llms-for-reasoning-not-for-data-retrieval)
 - [External Posts:](#external-posts)
 - [Several posts on this topic:](#several-posts-on-this-topic)
 
@@ -91,6 +94,28 @@ Currently more complex, figuring it out.
 
 - AI can still be wrong. Put a human in the loop
 
+### World model vs context model
+
+AI can perform a strict operation, vs undersatnding everything.
+
+Obviously world models need to be much bigger, and data will go stale.
+
+### AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)
+
+Today ‘summarise this document’ is AI, and you need a cloud LLM that costs $20/month, but tomorrow the OS will do that for free. ‘AI is whatever doesn’t work yet.’
+
+From [Ben Evans](https://www.ben-evans.com/benedictevans/2024/06/20/apple-intelligence):
+
+The ‘AI Maximalist’ view is that general-purpose chatbots, with multimodal and ‘multi-agentic’ capabilities, will be able to take over broad classes of complex multi-stage tasks and problems that today need lots of different specially-written software, and will also be able to automate whole new class of complex tasks that could never be done in software before, again in one single general-purpose interface. The chatbot might replace all software with a prompt - ‘software is dead’. I’m skeptical about this, as I’ve written here, but Apple is proposing the opposite: that generative AI is a technology, not a product.
+
+Apple is, I think, signalling a view that generative AI, and ChatGPT itself, is a commodity technology that is most useful when it is:
+
+1. Embedded in a system that gives it broader context about the user (which might be search, social, a device OS, or a vertical application) and
+
+1. Unbundled into individual features (ditto), which are inherently easier to run as small power-efficient models on small power-efficient devices on the edge (paid for by users, not your capex budget) - which is just as well, because…
+
+1. This stuff will never work for the mass-market if we have marginal cost every time the user presses ‘OK’ and we need a fleet of new nuclear power-stations to run it all.
+
 ## Use Cases and Applications
 
 - [Writing git commit messages](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/commit.py?plain=1#L19)
@@ -125,6 +150,10 @@ Currently more complex, figuring it out.
 
 ## Data Access
 
+### Use LLMs for reasoning not for data retrieval
+
+Great line from Altman, we're currently using them for data retreival, but their super power is reasoning. If we just focus on reasoning, let other tools do the retreiuval that can be better
+
 - RAG
 - Raptor
 - DSpy
@@ -133,6 +162,7 @@ Currently more complex, figuring it out.
 
 - [What we've learn in a year of building LLMS](https://applied-llms.org/)
 - [How to Prompting](https://eugeneyan.com/writing/prompting/)
+- [Apple Intelligence](https://www.ben-evans.com/benedictevans/2024/06/20/apple-intelligence)
 
 ## Several posts on this topic:
 
