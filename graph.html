@@ -5,16 +5,30 @@ permalink: /graph
 description: "An archive of posts sorted by tag."
 ---
 
-heading
+<script src="//unpkg.com/force-graph"></script>
+<div id="graph"></div>
 
-<script src="assets/arbor/arbor.js"></script>
-<script src="assets/arbor/graphics.js"></script>
-<script src="assets/arbor/arbor-tween.js"></script>
+<script>
+  // Random tree
+  const N = 300;
+  const gData = {
+    nodes: [...Array(N).keys()].map(i => ({ id: i })),
+    links: [...Array(N).keys()]
+      .filter(id => id)
+      .map(id => ({
+        source: id,
+        target: Math.round(Math.random() * (id - 1)),
+      })),
+  };
 
-<script src="src/graph.js"></script>
+  const Graph = ForceGraph()(document.getElementById("graph"))
+    .linkDirectionalParticles(2)
+    .graphData(gData);
+</script>
 
-<canvas id="viewport" style="width: 100%; height: 100%">
-  Replaced by graph
-</canvas>
+<script type="module">
+  import { load_globals } from "/assets/js/graph.js";
+  defer(load_globals);
+</script>
 
-Not sure what will end up here
+heading Not sure what will end up here
