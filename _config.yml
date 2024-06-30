@@ -69,6 +69,7 @@ include: [".htaccess", "__init__.py"]
 exclude:
   [
     "scripts/*",
+    ".parcel-cache",
     "lib",
     "config.rb",
     "Gemfile",

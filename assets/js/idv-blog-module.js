@@ -271,35 +271,44 @@ function $b013a5dd6d18443e$export$38653e1d7f0b5689() {
 // Random tree
 // Tree copied from: https://github.com/vasturiano/force-graph
 
-console.log("Load force graph in TS");
+console.log("Load force graph in TS v 0.5");
 // import ForceGraph from "force-graph";
-const $0ae4da76013e664e$var$N = 300;
-const $0ae4da76013e664e$var$gDataExample = {
-    nodes: [
-        ...Array($0ae4da76013e664e$var$N).keys()
-    ].map((i)=>({
-            id: i
-        })),
-    links: [
-        ...Array($0ae4da76013e664e$var$N).keys()
-    ].filter((id)=>id).map((id)=>({
-            source: id,
-            target: Math.round(Math.random() * (id - 1))
-        }))
-};
-// Create gData from get_link_info
-const $0ae4da76013e664e$var$pages = Object.values(await (0, $b013a5dd6d18443e$export$46c928bda6aa7b36)());
+// Pages are the link_infos
+// Set id to be the URL.
+const $0ae4da76013e664e$var$pages = Object.values(await (0, $b013a5dd6d18443e$export$46c928bda6aa7b36)()).map((p)=>({
+        ...p,
+        id: p.url
+    }));
+function $0ae4da76013e664e$var$is_valid_url(url) {
+    // check if the url is in the list of pages
+    return $0ae4da76013e664e$var$pages.map((p)=>p.url).includes(url);
+}
+// build links
+const $0ae4da76013e664e$var$links = [];
+$0ae4da76013e664e$var$pages.forEach((page)=>{
+    page.outgoing_links.filter($0ae4da76013e664e$var$is_valid_url) // We have lots of dead links, go fix them in the source material
+    .forEach((target)=>{
+        $0ae4da76013e664e$var$links.push({
+            source: page,
+            target: target,
+            value: 1
+        });
+    });
+//page.incoming_links.forEach(target => {
+//links.push({ source: target, target: source, value: 1 });
+//});
+});
+// log first 20 pages
+console.log("Originals");
+console.log($0ae4da76013e664e$var$pages.slice(0, 20).map((p)=>p));
+console.log($0ae4da76013e664e$var$links.slice(0, 20).map((o)=>o));
 console.log($0ae4da76013e664e$var$pages.map((p)=>p.url));
 const $0ae4da76013e664e$var$gData = {
-    nodes: $0ae4da76013e664e$var$pages.map((p)=>({
-            id: p.url
-        })),
-    links: $0ae4da76013e664e$var$pages.map((p)=>({
-            id: p.url
-        }))
+    nodes: $0ae4da76013e664e$var$pages,
+    links: $0ae4da76013e664e$var$links
 };
 console.log("HEllo From Typescript");
-ForceGraph()(document.getElementById("graph")).linkDirectionalParticles(2).graphData($0ae4da76013e664e$var$gData).nodeLabel("id");
+ForceGraph()(document.getElementById("graph")).graphData($0ae4da76013e664e$var$gData).nodeLabel("id");
 console.log("Post Graph");
 
 
