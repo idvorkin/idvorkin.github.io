@@ -4,9 +4,15 @@
 // Random tree
 // Tree copied from: https://github.com/vasturiano/force-graph
 console.log("Load force graph in TS");
+import { warn } from "console";
+import { get_link_info } from "./main";
+
+const m = get_link_info();
+console.log(await m);
+
 // import ForceGraph from "force-graph";
 const N = 300;
-const gData = {
+const gDataExample = {
   nodes: [...Array(N).keys()].map(i => ({ id: i })),
   links: [...Array(N).keys()]
     .filter(id => id)
@@ -16,9 +22,17 @@ const gData = {
     })),
 };
 
+// Create gData from get_link_info
+
+const gData = {
+  nodes: await get_link_info().map(e => {
+    id: e.url;
+  }),
+};
+
 console.log("HEllo From Typescript");
 
-const Graph = ForceGraph()(document.getElementById("graph"))
+ForceGraph()(document.getElementById("graph"))
   .linkDirectionalParticles(2)
   .graphData(gData);
 
