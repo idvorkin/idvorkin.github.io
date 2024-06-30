@@ -272,8 +272,6 @@ function $b013a5dd6d18443e$export$38653e1d7f0b5689() {
 // Tree copied from: https://github.com/vasturiano/force-graph
 
 console.log("Load force graph in TS");
-const $0ae4da76013e664e$var$m = (0, $b013a5dd6d18443e$export$46c928bda6aa7b36)();
-console.log(await $0ae4da76013e664e$var$m);
 // import ForceGraph from "force-graph";
 const $0ae4da76013e664e$var$N = 300;
 const $0ae4da76013e664e$var$gDataExample = {
@@ -290,13 +288,18 @@ const $0ae4da76013e664e$var$gDataExample = {
         }))
 };
 // Create gData from get_link_info
+const $0ae4da76013e664e$var$pages = Object.values(await (0, $b013a5dd6d18443e$export$46c928bda6aa7b36)());
+console.log($0ae4da76013e664e$var$pages.map((p)=>p.url));
 const $0ae4da76013e664e$var$gData = {
-    nodes: await (0, $b013a5dd6d18443e$export$46c928bda6aa7b36)().map((e)=>{
-        id: e.url;
-    })
+    nodes: $0ae4da76013e664e$var$pages.map((p)=>({
+            id: p.url
+        })),
+    links: $0ae4da76013e664e$var$pages.map((p)=>({
+            id: p.url
+        }))
 };
 console.log("HEllo From Typescript");
-ForceGraph()(document.getElementById("graph")).linkDirectionalParticles(2).graphData($0ae4da76013e664e$var$gData);
+ForceGraph()(document.getElementById("graph")).linkDirectionalParticles(2).graphData($0ae4da76013e664e$var$gData).nodeLabel("id");
 console.log("Post Graph");
 
 

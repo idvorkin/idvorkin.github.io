@@ -7,9 +7,6 @@ console.log("Load force graph in TS");
 import { warn } from "console";
 import { get_link_info } from "./main";
 
-const m = get_link_info();
-console.log(await m);
-
 // import ForceGraph from "force-graph";
 const N = 300;
 const gDataExample = {
@@ -24,16 +21,20 @@ const gDataExample = {
 
 // Create gData from get_link_info
 
+const pages = Object.values(await get_link_info());
+
+console.log(pages.map(p => p.url));
+
 const gData = {
-  nodes: await get_link_info().map(e => {
-    id: e.url;
-  }),
+  nodes: pages.map(p => ({ id: p.url })),
+  links: pages.map(p => ({ id: p.url })),
 };
 
 console.log("HEllo From Typescript");
 
 ForceGraph()(document.getElementById("graph"))
   .linkDirectionalParticles(2)
-  .graphData(gData);
+  .graphData(gData)
+  .nodeLabel("id");
 
 console.log("Post Graph");
