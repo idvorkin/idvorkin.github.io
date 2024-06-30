@@ -2,7 +2,9 @@
 //  main.js
 //
 // Random tree
-import ForceGraph from "force-graph";
+// Tree copied from: https://github.com/vasturiano/force-graph
+console.log("Load force graph in TS");
+// import ForceGraph from "force-graph";
 const N = 300;
 const gData = {
   nodes: [...Array(N).keys()].map(i => ({ id: i })),
@@ -14,6 +16,10 @@ const gData = {
     })),
 };
 
+console.log("HEllo From Typescript");
+
 const Graph = ForceGraph()(document.getElementById("graph"))
   .linkDirectionalParticles(2)
   .graphData(gData);
+
+console.log("Post Graph");

@@ -6,29 +6,7 @@ description: "An archive of posts sorted by tag."
 ---
 
 <script src="//unpkg.com/force-graph"></script>
+<script type="module" src="/assets/js/idv-blog-module.js"></script>
 <div id="graph"></div>
-
-<script>
-  // Random tree
-  const N = 300;
-  const gData = {
-    nodes: [...Array(N).keys()].map(i => ({ id: i })),
-    links: [...Array(N).keys()]
-      .filter(id => id)
-      .map(id => ({
-        source: id,
-        target: Math.round(Math.random() * (id - 1)),
-      })),
-  };
-
-  const Graph = ForceGraph()(document.getElementById("graph"))
-    .linkDirectionalParticles(2)
-    .graphData(gData);
-</script>
-
-<script type="module">
-  import { load_globals } from "/assets/js/graph.js";
-  defer(load_globals);
-</script>
 
 heading Not sure what will end up here
