@@ -15,7 +15,6 @@
   "name": "idvorkin.github.io",
   "description": "This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), and an [enabling environment](https://notes.andymatuschak.org/z3DaBP4vN1dutjUgrk3jbEeNxScccvDCxDgXe) to interact with them. These are currently intermingled, but",
   "version": "1.0.0",
-  "main": "index.js",
   "module": "assets/js/idv-blog-module.js",
   "scripts": {
     "coverage:instrument": "npx nyc instrument --compact=false _site/assets/js instrumented",
