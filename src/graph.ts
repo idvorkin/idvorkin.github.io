@@ -47,7 +47,7 @@ const gData = {
 
 console.log("HEllo From Typescript");
 
-ForceGraph()(document.getElementById("graph"))
+const Graph = ForceGraph()(document.getElementById("graph"))
   .graphData(gData)
   .nodeLabel("id")
   .nodeAutoColorBy("group")
@@ -81,5 +81,11 @@ ForceGraph()(document.getElementById("graph"))
         node.y - bckgDimensions[1] / 2,
         ...bckgDimensions
       );
+  })
+  .onNodeClick(node => {
+    // Center/zoom on node
+    Graph.centerAt(node.x, node.y, 1000);
+    Graph.zoom(8, 2000);
   });
+
 console.log("Post Graph");
