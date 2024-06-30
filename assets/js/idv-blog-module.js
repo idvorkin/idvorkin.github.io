@@ -271,7 +271,7 @@ function $b013a5dd6d18443e$export$38653e1d7f0b5689() {
 // Random tree
 // Tree copied from: https://github.com/vasturiano/force-graph
 
-console.log("Load force graph in TS v 0.5");
+console.log("Load force graph in TS v 0.6");
 // import ForceGraph from "force-graph";
 // Pages are the link_infos
 // Set id to be the URL.
@@ -308,7 +308,7 @@ const $0ae4da76013e664e$var$gData = {
     links: $0ae4da76013e664e$var$links
 };
 console.log("HEllo From Typescript");
-const $0ae4da76013e664e$var$Graph = ForceGraph()(document.getElementById("graph")).graphData($0ae4da76013e664e$var$gData).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject((node, ctx, globalScale)=>{
+function $0ae4da76013e664e$var$TextLabelNodeCanvas(node, ctx, globalScale) {
     const label = node.id;
     const fontSize = 12 / globalScale;
     ctx.font = `${fontSize}px Sans-Serif`;
@@ -324,11 +324,13 @@ const $0ae4da76013e664e$var$Graph = ForceGraph()(document.getElementById("graph"
     ctx.fillStyle = node.color;
     ctx.fillText(label, node.x, node.y);
     node.__bckgDimensions = bckgDimensions; // to re-use in nodePointerAreaPaint
-}).nodePointerAreaPaint((node, color, ctx)=>{
+}
+function $0ae4da76013e664e$var$TextLabelNodePointerAreaPaint(node, color, ctx) {
     ctx.fillStyle = color;
     const bckgDimensions = node.__bckgDimensions;
     bckgDimensions && ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
-}).onNodeClick((node)=>{
+}
+const $0ae4da76013e664e$var$Graph = ForceGraph()(document.getElementById("graph")).graphData($0ae4da76013e664e$var$gData).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject($0ae4da76013e664e$var$TextLabelNodeCanvas).nodePointerAreaPaint($0ae4da76013e664e$var$TextLabelNodePointerAreaPaint).onNodeClick((node)=>{
     // Center/zoom on node
     $0ae4da76013e664e$var$Graph.centerAt(node.x, node.y, 1000);
     $0ae4da76013e664e$var$Graph.zoom(8, 2000);
