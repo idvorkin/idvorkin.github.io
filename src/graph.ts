@@ -3,7 +3,7 @@
 //
 // Random tree
 // Tree copied from: https://github.com/vasturiano/force-graph
-console.log("Load force graph in TS v 0.6");
+console.log("Load force graph in TS v 0.8");
 import { get_link_info } from "./main";
 
 // import ForceGraph from "force-graph";
@@ -14,41 +14,71 @@ import { get_link_info } from "./main";
 // Example to make collapsable tree:
 // https://github.com/vasturiano/force-graph/blob/master/example/expandable-nodes/index.html
 
+// Uncollapse any page wtih the url == eulogy
+function is_expanded(node) {
+  if (node.url == "/eulogy") {
+    return true;
+  } else {
+    return false;
+  }
+}
 const pages = Object.values(await get_link_info()).map(p => ({
   ...p,
   id: p.url,
+  expanded: is_expanded(p),
 }));
+
 function is_valid_url(url) {
   // check if the url is in the list of pages
   return pages.map(p => p.url).includes(url);
 }
 
-// build links
-const links = [];
-pages.forEach(page => {
-  page.outgoing_links
-    .filter(is_valid_url) // We have lots of dead links, go fix them in the source material
-    .forEach(target => {
-      links.push({ source: page, target, value: 1 });
-    });
+function build_links(pages) {
+  // build links
+  const links = [];
+  pages.forEach(page => {
+    page.outgoing_links
+      .filter(is_valid_url) // We have lots of dead links, go fix them in the source material
+      .forEach(target => {
+        links.push({ source: page, target, value: 1 });
+      });
 
-  //page.incoming_links.forEach(target => {
-  //links.push({ source: target, target: source, value: 1 });
-  //});
-});
+    //page.incoming_links.forEach(target => {
+    //links.push({ source: target, target: source, value: 1 });
+    //});
+  });
+  return links;
+}
+
+function node_for_url(pages, url) {
+  return pages.filter(p => p.url == url)[0];
+}
+
+function build_graph_data(pages) {
+  const visible_pages = pages.filter(page => page.expanded);
+  console.log(visible_pages);
+  const visible_links = build_links(visible_pages);
+  console.log(visible_links);
+  const newly_visible_pages = visible_links.map(l =>
+    node_for_url(pages, l.target)
+  );
+  console.log(newly_visible_pages);
+  // update visable pages with newly visible ones
+  const combined_pages = visible_pages.concat(newly_visible_pages);
+
+  console.log(combined_pages);
+  return {
+    nodes: combined_pages,
+    links: visible_links,
+  };
+}
 
 // log first 20 pages
 console.log("Originals");
 console.log(pages.slice(0, 20).map(p => p));
-console.log(links.slice(0, 20).map(o => o));
 console.log(pages.map(p => p.url));
 
-const gData = {
-  nodes: pages,
-  links: links,
-};
-
-console.log("HEllo From Typescript");
+// Make tree collapasable
 
 function TextLabelNodeCanvas(node, ctx, globalScale: number) {
   const label = node.id;
@@ -84,15 +114,18 @@ function TextLabelNodePointerAreaPaint(node, color, ctx) {
 }
 
 const Graph = ForceGraph()(document.getElementById("graph"))
-  .graphData(gData)
+  .graphData(build_graph_data(pages))
   .nodeLabel("id")
   .nodeAutoColorBy("group")
   .nodeCanvasObject(TextLabelNodeCanvas)
   .nodePointerAreaPaint(TextLabelNodePointerAreaPaint)
   .onNodeClick(node => {
     // Center/zoom on node
-    Graph.centerAt(node.x, node.y, 1000);
-    Graph.zoom(8, 2000);
+    // Graph.centerAt(node.x, node.y, 1000);
+    // Graph.zoom(8, 2000);
+    console.log(node);
+    node.expanded = !node.expanded;
+    Graph.graphData(build_graph_data(pages));
   });
 
 console.log("Post Graph");
