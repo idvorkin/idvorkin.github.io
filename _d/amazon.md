@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My thoughts on  amazon"
+title: "My thoughts on Amazon"
 permalink: /amazon
 ---
 
@@ -12,7 +12,7 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
 - [The Good](#the-good)
     - [Willingness to change](#willingness-to-change)
     - [Federation of startups](#federation-of-startups)
-    - [The value placed on continous improvement](#the-value-placed-on-continous-improvement)
+    - [The value placed on continuous improvement](#the-value-placed-on-continuous-improvement)
     - [The comfort with failure](#the-comfort-with-failure)
     - [Day 1 culture](#day-1-culture)
     - [Embracing change](#embracing-change)
@@ -22,7 +22,7 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
     - [Business Metrics focus - QBR/MBR/WBR](#business-metrics-focus---qbrmbrwbr)
     - [PR/FAQs](#prfaqs)
     - [Fulfillment and Customer Days](#fulfillment-and-customer-days)
-    - [Tenants](#tenants)
+    - [Tenets](#tenets)
     - [Hiring Process](#hiring-process)
     - [Bar Raisers](#bar-raisers)
     - [The Mechanism Fly Wheel](#the-mechanism-fly-wheel)
@@ -51,13 +51,13 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
     - [The lost essence of "right a lot"](#the-lost-essence-of-right-a-lot)
     - [Not enough slack](#not-enough-slack)
     - [Too much intensity](#too-much-intensity)
-    - [No one knows how to use Word.](#no-one-knows-how-to-use-word)
+    - [No one knows how to use Word](#no-one-knows-how-to-use-word)
     - [Frupidity](#frupidity)
     - [Not rescuing a team](#not-rescuing-a-team)
     - [So hard to hire](#so-hard-to-hire)
-- [Leadership Principles (LPs): The beating hart of Amazon.](#leadership-principles-lps-the-beating-hart-of-amazon)
+- [Leadership Principles (LPs): The beating heart of Amazon](#leadership-principles-lps-the-beating-heart-of-amazon)
     - [Design principles for Leadership](#design-principles-for-leadership)
-    - [The dirty secret of LPs - You can justify anything.](#the-dirty-secret-of-lps---you-can-justify-anything)
+    - [The dirty secret of LPs - You can justify anything](#the-dirty-secret-of-lps---you-can-justify-anything)
 - [LP Set: Ownership](#lp-set-ownership)
     - [Ownership](#ownership)
     - [Customer Obsession](#customer-obsession)
@@ -73,12 +73,12 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
     - [Deliver Results](#deliver-results)
     - [Invent and Simplify](#invent-and-simplify)
     - [Frugality](#frugality)
-- [LP Set: Good partners:](#lp-set-good-partners)
-    - [Earn Trust.](#earn-trust)
+- [LP Set: Good partners](#lp-set-good-partners)
+    - [Earn Trust](#earn-trust)
     - [Have backbone, disagree and commit](#have-backbone-disagree-and-commit)
-    - [vocally self critical](#vocally-self-critical)
+    - [Vocally self-critical](#vocally-self-critical)
 - [The curious](#the-curious)
-    - [Building twice is faster then building once](#building-twice-is-faster-then-building-once)
+    - [Building twice is faster than building once](#building-twice-is-faster-than-building-once)
     - [Discourage interdependence between teams](#discourage-interdependence-between-teams)
     - [Amazon as natural selection](#amazon-as-natural-selection)
     - [Letting teams implode](#letting-teams-implode)
@@ -86,12 +86,12 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
     - [Sounds like good intentions](#sounds-like-good-intentions)
     - [Work hard have fun change the world](#work-hard-have-fun-change-the-world)
 - [My Experience at Amazon](#my-experience-at-amazon)
-    - [My time at Amazon.](#my-time-at-amazon)
+    - [My time at Amazon](#my-time-at-amazon)
     - [What I wanted to learn at Amazon](#what-i-wanted-to-learn-at-amazon)
     - [Bonus learnings at Amazon](#bonus-learnings-at-amazon)
     - [Live Video](#live-video)
     - [Video Shopping](#video-shopping)
-    - [Chariting Giving: Toys for Tots](#chariting-giving-toys-for-tots)
+    - [Charity Giving: Toys for Tots](#charity-giving-toys-for-tots)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -102,7 +102,7 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
 
 ### Federation of startups
 
-### The value placed on continous improvement
+### The value placed on continuous improvement
 
 ### The comfort with failure
 
@@ -112,7 +112,7 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
 
 ### Frugality and Resourcefulness
 
-Frugality, done correclty is resourcefulness. It says, if you need 10 people, have 8, and you'll do better work. If you have 12 people, you'll start making up work, and bad stuff happens.
+Frugality, done correctly is resourcefulness. It says, if you need 10 people, have 8, and you'll do better work. If you have 12 people, you'll start making up work, and bad stuff happens.
 
 ### Begin with the end in mind - Working Backwards
 
@@ -134,7 +134,7 @@ Here was me during my tour, loading a truck
 
 {%include blob_image_float_right.html src="blog/igor-pack-truck.jpg" %}
 
-### Tenants
+### Tenets
 
 ### Hiring Process
 
@@ -200,17 +200,17 @@ A thing I saw at Amazon that made me really sad, was signs on the wall describin
 
 ### Frupidity
 
-Frugality, done correclty is resourcefulness. It says, if you need 10 people, have 8, and you'll do better work.
+Frugality, done correctly is resourcefulness. It says, if you need 10 people, have 8, and you'll do better work.
 
-Some people used frugality to focus on not the high order bit. For example, I had a frequent battle to over hardware which cost less then 15\$/month.
+Some people used frugality to focus on not the high order bit. For example, I had a frequent battle over hardware which cost less than 15\$/month.
 
 ### Not rescuing a team
 
 ### So hard to hire
 
-## Leadership Principles (LPs): The beating hart of Amazon
+## Leadership Principles (LPs): The beating heart of Amazon
 
-At Amazon training the first thing they tell you is "Everywhere else, you see the leadership principles on the wall, and no one knows what they are", at Amazon, they are no on the walls, but instead we speak to them every day.
+At Amazon training the first thing they tell you is "Everywhere else, you see the leadership principles on the wall, and no one knows what they are", at Amazon, they are not on the walls, but instead we speak to them every day.
 
 You don't just speak to them daily, you speak to the leadership principles multiple times a day.
 
@@ -263,11 +263,11 @@ Humorously, each LP has an opposite cancelling force.
 
 ### Have backbone, disagree and commit
 
-### vocally self critical
+### Vocally self-critical
 
 ## The curious
 
-### Building twice is faster then building once
+### Building twice is faster than building once
 
 ### Discourage interdependence between teams
 
@@ -298,7 +298,7 @@ I care deeply about the teams I work with, and [my goodbye mail says it well](ht
 
 [Manager Skills](/the-manager-book):
 
-_Managing is hard. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement._
+_Managing is hard. Lessons are hard-earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds us how to behave, and encourages continuous improvement._
 
 As a new manager at Amazon, my top priorities:
 
@@ -313,7 +313,7 @@ As a new manager at Amazon, my top priorities:
 - How much ownership a college hire can take
 - How much autonomy I can have
 - How quickly you can build the impossible.
-- Better ways for hiring, firing (Pivot), surveys(Connections), and feedback(Forte)
+- Better ways for hiring, firing (Pivot), surveys (Connections), and feedback (Forte)
 
 ### Live Video
 
@@ -325,8 +325,8 @@ Funny stories:
 ### Video Shopping
 
 - The video that made me realize we need moderation
-- Launching and manual moderation watching all the videos oursleves
+- Launching and manual moderation watching all the videos ourselves
 
-### Chariting Giving: Toys for Tots
+### Charity Giving: Toys for Tots
 
 [Toys for tots](/tft)

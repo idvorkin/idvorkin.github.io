@@ -11,6 +11,9 @@ import { get_link_info } from "./main";
 // Pages are the link_infos
 // Set id to be the URL.
 
+// Example to make collapsable tree:
+// https://github.com/vasturiano/force-graph/blob/master/example/expandable-nodes/index.html
+
 const pages = Object.values(await get_link_info()).map(p => ({
   ...p,
   id: p.url,
