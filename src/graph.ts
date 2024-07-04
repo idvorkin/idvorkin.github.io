@@ -3,9 +3,8 @@
 //
 // Random tree
 // Tree copied from: https://github.com/vasturiano/force-graph
-console.log("Load force graph in TS v 0.8");
+console.log("Load force graph in TS v 0.9");
 import { get_link_info } from "./main";
-
 // import ForceGraph from "force-graph";
 
 // Pages are the link_infos
@@ -15,17 +14,22 @@ import { get_link_info } from "./main";
 // https://github.com/vasturiano/force-graph/blob/master/example/expandable-nodes/index.html
 
 // Uncollapse any page wtih the url == eulogy
-function is_expanded(node) {
+function is_initial_expanded(node) {
   if (node.url == "/eulogy") {
     return true;
-  } else {
-    return false;
   }
+
+  // The page of graph after the graph#blah, checks if path is blah. If so expand that oto
+  if (node.url == "/" + window.location.href.split("#")[1]) {
+    return true;
+  }
+
+  return false;
 }
 const pages = Object.values(await get_link_info()).map(p => ({
   ...p,
   id: p.url,
-  expanded: is_expanded(p),
+  expanded: is_initial_expanded(p),
 }));
 
 function is_valid_url(url) {
@@ -56,27 +60,17 @@ function node_for_url(pages, url) {
 
 function build_graph_data(pages) {
   const visible_pages = pages.filter(page => page.expanded);
-  console.log(visible_pages);
   const visible_links = build_links(visible_pages);
-  console.log(visible_links);
   const newly_visible_pages = visible_links.map(l =>
     node_for_url(pages, l.target)
   );
-  console.log(newly_visible_pages);
   // update visable pages with newly visible ones
   const combined_pages = visible_pages.concat(newly_visible_pages);
-
-  console.log(combined_pages);
   return {
     nodes: combined_pages,
     links: visible_links,
   };
 }
-
-// log first 20 pages
-console.log("Originals");
-console.log(pages.slice(0, 20).map(p => p));
-console.log(pages.map(p => p.url));
 
 // Make tree collapasable
 
@@ -119,6 +113,10 @@ const Graph = ForceGraph()(document.getElementById("graph"))
   .nodeAutoColorBy("group")
   .nodeCanvasObject(TextLabelNodeCanvas)
   .nodePointerAreaPaint(TextLabelNodePointerAreaPaint)
+  .onNodeRightClick(node => {
+    // Open tne node in a new tab
+    window.open(node.url, "_blank");
+  })
   .onNodeClick(node => {
     // Center/zoom on node
     // Graph.centerAt(node.x, node.y, 1000);
