@@ -197,6 +197,8 @@ async function AddLinksToPage(allUrls: IURLInfoMap) {
       outgoing_location.append(MakeBackLinkHTML(url_info));
     }
   }
+  console.log("Added Graph");
+  outgoing_location.append("<a href='/graph#joy'>View Graph</a>");
 }
 function make_html_summary_link(link, url_info: IURLInfo) {
   const attribution = `(From:<a href='${url_info.url}'> ${url_info.title}</a>)`;

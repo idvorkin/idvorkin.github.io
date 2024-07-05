@@ -146,6 +146,8 @@ async function $b013a5dd6d18443e$var$AddLinksToPage(allUrls) {
         const url_info = allUrls[link];
         outgoing_location.append($b013a5dd6d18443e$export$fc303307c4ed1d41(url_info));
     }
+    console.log("Added Graph");
+    outgoing_location.append("<a href='/graph#joy'>View Graph</a>");
 }
 function $b013a5dd6d18443e$var$make_html_summary_link(link, url_info) {
     const attribution = `(From:<a href='${url_info.url}'> ${url_info.title}</a>)`;
@@ -279,17 +281,19 @@ console.log("Load force graph in TS v 0.9");
 // https://github.com/vasturiano/force-graph/blob/master/example/expandable-nodes/index.html
 // Uncollapse any page wtih the url == eulogy
 function $0ae4da76013e664e$var$is_initial_expanded(node) {
-    if (node.url == "/eulogy") return true;
-    const slug = window.location.href.split("#")[1];
-    console.log("Slug:", slug);
-    if (node.url == "/" + slug) return true;
+    if (node.url == first_expanded) return true;
     return false;
 }
 const $0ae4da76013e664e$var$pages = Object.values(await (0, $b013a5dd6d18443e$export$46c928bda6aa7b36)()).map((p)=>({
         ...p,
         id: p.url,
-        expanded: $0ae4da76013e664e$var$is_initial_expanded(p)
+        expanded: false
     }));
+const $0ae4da76013e664e$var$slug = "/" + window.location.href.split("#")[1];
+const $0ae4da76013e664e$var$initial_expanded_url = $0ae4da76013e664e$var$pages.map((p)=>p.url).includes($0ae4da76013e664e$var$slug) ? $0ae4da76013e664e$var$slug : "/eulogy";
+$0ae4da76013e664e$var$pages.forEach((p)=>{
+    p.expanded = p.url == $0ae4da76013e664e$var$initial_expanded_url;
+});
 function $0ae4da76013e664e$var$is_valid_url(url) {
     // check if the url is in the list of pages
     return $0ae4da76013e664e$var$pages.map((p)=>p.url).includes(url);
@@ -356,16 +360,28 @@ const $0ae4da76013e664e$var$Graph = ForceGraph()(document.getElementById("graph"
 }).onNodeClick((node)=>{
     // Center/zoom on node
     console.log(node);
+    // count expanded nodes
     node.expanded = !node.expanded;
+    const expanded_nodes = $0ae4da76013e664e$var$pages.filter((p)=>p.expanded).length;
+    if (expanded_nodes == 0) // re-expand me.
+    node.expanded = true;
     $0ae4da76013e664e$var$Graph.graphData($0ae4da76013e664e$var$build_graph_data($0ae4da76013e664e$var$pages));
     // center on node in 300 ms, post graph update
     setTimeout(()=>{
         $0ae4da76013e664e$var$center_on_node(node);
     }, 300);
 });
+$0ae4da76013e664e$var$center_on_node($0ae4da76013e664e$var$node_for_url($0ae4da76013e664e$var$pages, $0ae4da76013e664e$var$initial_expanded_url));
 function $0ae4da76013e664e$var$center_on_node(node) {
     $0ae4da76013e664e$var$Graph.centerAt(node.x, node.y, 500);
     $0ae4da76013e664e$var$Graph.zoom(8, 500);
+    $0ae4da76013e664e$var$update_detail(node);
+}
+function $0ae4da76013e664e$var$update_detail(page) {
+    // replace html of element of id above with the page
+    const html = (0, $b013a5dd6d18443e$export$fc303307c4ed1d41)(page);
+    const detail = document.getElementById("detail");
+    detail.innerHTML = html;
 }
 console.log("Post Graph");
 
