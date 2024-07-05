@@ -271,43 +271,61 @@ function $b013a5dd6d18443e$export$38653e1d7f0b5689() {
 // Random tree
 // Tree copied from: https://github.com/vasturiano/force-graph
 
-console.log("Load force graph in TS v 0.6");
+console.log("Load force graph in TS v 0.9");
 // import ForceGraph from "force-graph";
 // Pages are the link_infos
 // Set id to be the URL.
+// Example to make collapsable tree:
+// https://github.com/vasturiano/force-graph/blob/master/example/expandable-nodes/index.html
+// Uncollapse any page wtih the url == eulogy
+function $0ae4da76013e664e$var$is_initial_expanded(node) {
+    if (node.url == "/eulogy") return true;
+    // The page of graph after the graph#blah, checks if path is blah. If so expand that oto
+    if (node.url == "/" + window.location.href.split("#")[1]) return true;
+    return false;
+}
 const $0ae4da76013e664e$var$pages = Object.values(await (0, $b013a5dd6d18443e$export$46c928bda6aa7b36)()).map((p)=>({
         ...p,
-        id: p.url
+        id: p.url,
+        expanded: $0ae4da76013e664e$var$is_initial_expanded(p)
     }));
 function $0ae4da76013e664e$var$is_valid_url(url) {
     // check if the url is in the list of pages
     return $0ae4da76013e664e$var$pages.map((p)=>p.url).includes(url);
 }
-// build links
-const $0ae4da76013e664e$var$links = [];
-$0ae4da76013e664e$var$pages.forEach((page)=>{
-    page.outgoing_links.filter($0ae4da76013e664e$var$is_valid_url) // We have lots of dead links, go fix them in the source material
-    .forEach((target)=>{
-        $0ae4da76013e664e$var$links.push({
-            source: page,
-            target: target,
-            value: 1
+function $0ae4da76013e664e$var$build_links(pages) {
+    // build links
+    const links = [];
+    pages.forEach((page)=>{
+        page.outgoing_links.filter($0ae4da76013e664e$var$is_valid_url) // We have lots of dead links, go fix them in the source material
+        .forEach((target)=>{
+            links.push({
+                source: page,
+                target: target,
+                value: 1
+            });
         });
+    //page.incoming_links.forEach(target => {
+    //links.push({ source: target, target: source, value: 1 });
+    //});
     });
-//page.incoming_links.forEach(target => {
-//links.push({ source: target, target: source, value: 1 });
-//});
-});
-// log first 20 pages
-console.log("Originals");
-console.log($0ae4da76013e664e$var$pages.slice(0, 20).map((p)=>p));
-console.log($0ae4da76013e664e$var$links.slice(0, 20).map((o)=>o));
-console.log($0ae4da76013e664e$var$pages.map((p)=>p.url));
-const $0ae4da76013e664e$var$gData = {
-    nodes: $0ae4da76013e664e$var$pages,
-    links: $0ae4da76013e664e$var$links
-};
-console.log("HEllo From Typescript");
+    return links;
+}
+function $0ae4da76013e664e$var$node_for_url(pages, url) {
+    return pages.filter((p)=>p.url == url)[0];
+}
+function $0ae4da76013e664e$var$build_graph_data(pages) {
+    const visible_pages = pages.filter((page)=>page.expanded);
+    const visible_links = $0ae4da76013e664e$var$build_links(visible_pages);
+    const newly_visible_pages = visible_links.map((l)=>$0ae4da76013e664e$var$node_for_url(pages, l.target));
+    // update visable pages with newly visible ones
+    const combined_pages = visible_pages.concat(newly_visible_pages);
+    return {
+        nodes: combined_pages,
+        links: visible_links
+    };
+}
+// Make tree collapasable
 function $0ae4da76013e664e$var$TextLabelNodeCanvas(node, ctx, globalScale) {
     const label = node.id;
     const fontSize = 12 / globalScale;
@@ -330,10 +348,16 @@ function $0ae4da76013e664e$var$TextLabelNodePointerAreaPaint(node, color, ctx) {
     const bckgDimensions = node.__bckgDimensions;
     bckgDimensions && ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
 }
-const $0ae4da76013e664e$var$Graph = ForceGraph()(document.getElementById("graph")).graphData($0ae4da76013e664e$var$gData).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject($0ae4da76013e664e$var$TextLabelNodeCanvas).nodePointerAreaPaint($0ae4da76013e664e$var$TextLabelNodePointerAreaPaint).onNodeClick((node)=>{
+const $0ae4da76013e664e$var$Graph = ForceGraph()(document.getElementById("graph")).graphData($0ae4da76013e664e$var$build_graph_data($0ae4da76013e664e$var$pages)).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject($0ae4da76013e664e$var$TextLabelNodeCanvas).nodePointerAreaPaint($0ae4da76013e664e$var$TextLabelNodePointerAreaPaint).onNodeRightClick((node)=>{
+    // Open tne node in a new tab
+    window.open(node.url, "_blank");
+}).onNodeClick((node)=>{
     // Center/zoom on node
-    $0ae4da76013e664e$var$Graph.centerAt(node.x, node.y, 1000);
-    $0ae4da76013e664e$var$Graph.zoom(8, 2000);
+    // Graph.centerAt(node.x, node.y, 1000);
+    // Graph.zoom(8, 2000);
+    console.log(node);
+    node.expanded = !node.expanded;
+    $0ae4da76013e664e$var$Graph.graphData($0ae4da76013e664e$var$build_graph_data($0ae4da76013e664e$var$pages));
 });
 console.log("Post Graph");
 
