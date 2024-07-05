@@ -272,7 +272,7 @@ function $b013a5dd6d18443e$export$38653e1d7f0b5689() {
 // Tree copied from: https://github.com/vasturiano/force-graph
 
 console.log("Load force graph in TS v 0.9");
-// import ForceGraph from "force-graph";
+//import ForceGraph from "force-graph";
 // Pages are the link_infos
 // Set id to be the URL.
 // Example to make collapsable tree:
@@ -280,8 +280,9 @@ console.log("Load force graph in TS v 0.9");
 // Uncollapse any page wtih the url == eulogy
 function $0ae4da76013e664e$var$is_initial_expanded(node) {
     if (node.url == "/eulogy") return true;
-    // The page of graph after the graph#blah, checks if path is blah. If so expand that oto
-    if (node.url == "/" + window.location.href.split("#")[1]) return true;
+    const slug = window.location.href.split("#")[1];
+    console.log("Slug:", slug);
+    if (node.url == "/" + slug) return true;
     return false;
 }
 const $0ae4da76013e664e$var$pages = Object.values(await (0, $b013a5dd6d18443e$export$46c928bda6aa7b36)()).map((p)=>({
@@ -327,7 +328,8 @@ function $0ae4da76013e664e$var$build_graph_data(pages) {
 }
 // Make tree collapasable
 function $0ae4da76013e664e$var$TextLabelNodeCanvas(node, ctx, globalScale) {
-    const label = node.id;
+    const exapnded_text = node.expanded ? "[-]" : "[+]";
+    const label = node.id + " " + exapnded_text;
     const fontSize = 12 / globalScale;
     ctx.font = `${fontSize}px Sans-Serif`;
     const textWidth = ctx.measureText(label).width;
@@ -353,12 +355,18 @@ const $0ae4da76013e664e$var$Graph = ForceGraph()(document.getElementById("graph"
     window.open(node.url, "_blank");
 }).onNodeClick((node)=>{
     // Center/zoom on node
-    // Graph.centerAt(node.x, node.y, 1000);
-    // Graph.zoom(8, 2000);
     console.log(node);
     node.expanded = !node.expanded;
     $0ae4da76013e664e$var$Graph.graphData($0ae4da76013e664e$var$build_graph_data($0ae4da76013e664e$var$pages));
+    // center on node in 300 ms, post graph update
+    setTimeout(()=>{
+        $0ae4da76013e664e$var$center_on_node(node);
+    }, 300);
 });
+function $0ae4da76013e664e$var$center_on_node(node) {
+    $0ae4da76013e664e$var$Graph.centerAt(node.x, node.y, 500);
+    $0ae4da76013e664e$var$Graph.zoom(8, 500);
+}
 console.log("Post Graph");
 
 

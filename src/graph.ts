@@ -5,7 +5,7 @@
 // Tree copied from: https://github.com/vasturiano/force-graph
 console.log("Load force graph in TS v 0.9");
 import { get_link_info } from "./main";
-// import ForceGraph from "force-graph";
+//import ForceGraph from "force-graph";
 
 // Pages are the link_infos
 // Set id to be the URL.
@@ -19,8 +19,9 @@ function is_initial_expanded(node) {
     return true;
   }
 
-  // The page of graph after the graph#blah, checks if path is blah. If so expand that oto
-  if (node.url == "/" + window.location.href.split("#")[1]) {
+  const slug = window.location.href.split("#")[1];
+  console.log("Slug:", slug);
+  if (node.url == "/" + slug) {
     return true;
   }
 
@@ -75,7 +76,8 @@ function build_graph_data(pages) {
 // Make tree collapasable
 
 function TextLabelNodeCanvas(node, ctx, globalScale: number) {
-  const label = node.id;
+  const exapnded_text = node.expanded ? "[-]" : "[+]";
+  const label = node.id + " " + exapnded_text;
   const fontSize = 12 / globalScale;
   ctx.font = `${fontSize}px Sans-Serif`;
   const textWidth = ctx.measureText(label).width;
@@ -119,11 +121,19 @@ const Graph = ForceGraph()(document.getElementById("graph"))
   })
   .onNodeClick(node => {
     // Center/zoom on node
-    // Graph.centerAt(node.x, node.y, 1000);
-    // Graph.zoom(8, 2000);
     console.log(node);
     node.expanded = !node.expanded;
     Graph.graphData(build_graph_data(pages));
+
+    // center on node in 300 ms, post graph update
+    setTimeout(() => {
+      center_on_node(node);
+    }, 300);
   });
+
+function center_on_node(node) {
+  Graph.centerAt(node.x, node.y, 500);
+  Graph.zoom(8, 500);
+}
 
 console.log("Post Graph");
