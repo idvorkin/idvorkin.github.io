@@ -4,7 +4,7 @@
 // Random tree
 // Tree copied from: https://github.com/vasturiano/force-graph
 console.log("Load force graph in TS v 0.9");
-import { get_link_info } from "./main";
+import { get_link_info, MakeBackLinkHTML } from "./main";
 //import ForceGraph from "force-graph";
 
 // Pages are the link_infos
@@ -15,29 +15,32 @@ import { get_link_info } from "./main";
 
 // Uncollapse any page wtih the url == eulogy
 function is_initial_expanded(node) {
-  if (node.url == "/eulogy") {
-    return true;
-  }
-
-  const slug = window.location.href.split("#")[1];
-  console.log("Slug:", slug);
-  if (node.url == "/" + slug) {
+  if (node.url == first_expanded) {
     return true;
   }
 
   return false;
 }
+
 const pages = Object.values(await get_link_info()).map(p => ({
   ...p,
   id: p.url,
-  expanded: is_initial_expanded(p),
+  expanded: false,
 }));
+
+const slug = "/" + window.location.href.split("#")[1];
+const initial_expanded_url = pages.map(p => p.url).includes(slug)
+  ? slug
+  : "/eulogy";
+
+pages.forEach(p => {
+  p.expanded = p.url == initial_expanded_url;
+});
 
 function is_valid_url(url) {
   // check if the url is in the list of pages
   return pages.map(p => p.url).includes(url);
 }
-
 function build_links(pages) {
   // build links
   const links = [];
@@ -123,7 +126,14 @@ const Graph = ForceGraph()(document.getElementById("graph"))
   .onNodeClick(node => {
     // Center/zoom on node
     console.log(node);
+
+    // count expanded nodes
     node.expanded = !node.expanded;
+    const expanded_nodes = pages.filter(p => p.expanded).length;
+    if (expanded_nodes == 0) {
+      // re-expand me.
+      node.expanded = true;
+    }
     Graph.graphData(build_graph_data(pages));
 
     // center on node in 300 ms, post graph update
@@ -132,9 +142,19 @@ const Graph = ForceGraph()(document.getElementById("graph"))
     }, 300);
   });
 
+center_on_node(node_for_url(pages, initial_expanded_url));
+
 function center_on_node(node) {
   Graph.centerAt(node.x, node.y, 500);
   Graph.zoom(8, 500);
+  update_detail(node);
+}
+
+function update_detail(page) {
+  // replace html of element of id above with the page
+  const html = MakeBackLinkHTML(page);
+  const detail = document.getElementById("detail");
+  detail.innerHTML = html;
 }
 
 console.log("Post Graph");
