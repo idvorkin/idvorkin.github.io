@@ -298,7 +298,7 @@ function $0ae4da76013e664e$var$build_links(pages) {
     // build links
     const links = [];
     pages.forEach((page)=>{
-        page.outgoing_links.filter($0ae4da76013e664e$var$is_valid_url) // We have lots of dead links, go fix them in the source material
+        page.outgoing_links.concat(page.incoming_links).filter($0ae4da76013e664e$var$is_valid_url) // We have lots of dead links, go fix them in the source material
         .forEach((target)=>{
             links.push({
                 source: page,

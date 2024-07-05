@@ -35,7 +35,7 @@
     "docker:build": "docker build -t devdocker devdocker",
     "parcel:start": "parcel src/index.html",
     "parcel:build": "parcel build src/index.ts",
-    "parcel:watch": "parcel watch src/index.ts",
+    "parcel:watch": "rm -rf .parcel-cache dist && parcel watch src/index.ts",
     "parcel:clean": "rm -rf .parcel-cache dist",
     "docker:run2": "docker run -v ~/blog:/root/blog -p 35729:35729 -p 4000:4000 -it devdocker  ",
     "docker:run": "docker run -v ~/blog:/root/blog -it -p 35729:35729 -p 4000:4000 devdocker npm run jekyll:container",

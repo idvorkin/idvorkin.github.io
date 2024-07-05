@@ -43,6 +43,7 @@ function build_links(pages) {
   const links = [];
   pages.forEach(page => {
     page.outgoing_links
+      .concat(page.incoming_links)
       .filter(is_valid_url) // We have lots of dead links, go fix them in the source material
       .forEach(target => {
         links.push({ source: page, target, value: 1 });
