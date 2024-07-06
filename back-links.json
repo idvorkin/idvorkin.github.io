@@ -129,6 +129,7 @@
         "/objective": "/goals",
         "/okr": "/goals",
         "/on-being-mortal": "/death",
+        "/pain": "/mental-pain",
         "/parkinson-law": "/parkinson",
         "/parkinsons-law": "/parkinson",
         "/pay": "/comp",
@@ -380,7 +381,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/adblocker_trojan.md",
-            "doc_size": 15000
+            "doc_size": 14000
         },
         "/addiction": {
             "py/object": "__main__.Page",
@@ -391,7 +392,8 @@
             "outgoing_links": [
                 "/covid",
                 "/elder",
-                "/mental-pain"
+                "/mental-pain",
+                "/mind-at-work"
             ],
             "incoming_links": [
                 "/activation",
@@ -483,7 +485,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai-developer.md",
-            "doc_size": 17000
+            "doc_size": 20000
         },
         "/ai-journal": {
             "py/object": "__main__.Page",
@@ -501,7 +503,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-journal.md",
-            "doc_size": 21000
+            "doc_size": 22000
         },
         "/ai-paper": {
             "py/object": "__main__.Page",
@@ -536,7 +538,7 @@
         "/amazon": {
             "py/object": "__main__.Page",
             "url": "/amazon",
-            "title": "My thoughts on  amazon",
+            "title": "My thoughts on Amazon",
             "description": "I spent 4 years working at Amazon, some things I loved, some not so much. Amazon is a huge company and the variation of behavior within a company exceeds the variation between the “median” behavior between companies. Even within the two teams I was on at Amazon I saw the exact opposite behaviors. When I talk about the good, I’ll talk about the ideal good, and when I talk about the bad, I’ll talk to some issues I saw that were systemically bad. As a result you’ll often see me describing something as both good and bad, as it’s done differently in different parts of the company.\n\n",
             "file_path": "_site/amazon.html",
             "outgoing_links": [
@@ -602,7 +604,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/anxiety.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/anxiety-management": {
             "py/object": "__main__.Page",
@@ -640,7 +642,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/appreciate2.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/ar": {
             "py/object": "__main__.Page",
@@ -1007,7 +1009,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/coaching.md",
-            "doc_size": 27000
+            "doc_size": 26000
         },
         "/coe": {
             "py/object": "__main__.Page",
@@ -1406,7 +1408,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2021-12.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/d/time-off-2022-02": {
             "py/object": "__main__.Page",
@@ -1611,6 +1613,7 @@
             ],
             "incoming_links": [
                 "/covid",
+                "/elder",
                 "/last-year",
                 "/mortality-software",
                 "/psychic-weight"
@@ -1629,7 +1632,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "debug.html",
-            "doc_size": 21000
+            "doc_size": 20000
         },
         "/decisive": {
             "py/object": "__main__.Page",
@@ -1817,11 +1820,14 @@
         "/elder": {
             "py/object": "__main__.Page",
             "url": "/elder",
-            "title": "The Modern Elder and middle age",
-            "description": "Midlife has a marketing problem, the next word is always crisis. Chip Conley has lots of good insights here.\n\n",
+            "title": "Wrinkles and Wisdom: A Guide to Aging Like Fine Wine (Not Milk)",
+            "description": "Midlife has a marketing problem, it’s always followed by the word crisis. Honestly, for good reason: Midlife is the chapter of your life where the things you and society value decline. E.g. you’re getting weaker and dumber. Embrace and optimize for this reality or suffer. Luckily there is a good formula here: both to embrace it, and to find new strengths to focus on.\n\n",
             "file_path": "_site/elder.html",
             "outgoing_links": [
-                "/40yo"
+                "/40yo",
+                "/death",
+                "/end-in-mind",
+                "/essentialism"
             ],
             "incoming_links": [
                 "/40yo",
@@ -1829,7 +1835,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/elder.md",
-            "doc_size": 17000
+            "doc_size": 21000
         },
         "/emotional-health": {
             "py/object": "__main__.Page",
@@ -1892,6 +1898,7 @@
                 "/7-habits",
                 "/affirmations",
                 "/d/resistance",
+                "/elder",
                 "/productive",
                 "/siy"
             ],
@@ -1961,6 +1968,7 @@
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/d/time-off-2022-07",
+                "/elder",
                 "/end-in-mind",
                 "/first-things-first",
                 "/frog",
@@ -1969,7 +1977,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-11-28-essentialism.md",
-            "doc_size": 37000
+            "doc_size": 36000
         },
         "/eulogy": {
             "py/object": "__main__.Page",
@@ -2409,7 +2417,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-12-humans-are-underrated.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/husband": {
             "py/object": "__main__.Page",
@@ -2794,7 +2802,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/manager-book-appendix.md",
-            "doc_size": 27000
+            "doc_size": 28000
         },
         "/mania": {
             "py/object": "__main__.Page",
@@ -2818,7 +2826,7 @@
             "py/object": "__main__.Page",
             "url": "/mental-pain",
             "title": "The thoughts that pain us",
-            "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.\n\n",
+            "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.\n\n",
             "file_path": "_site/mental-pain.html",
             "outgoing_links": [
                 "/anxiety",
@@ -2845,7 +2853,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/mental-pain.md",
-            "doc_size": 18000
+            "doc_size": 20000
         },
         "/mermaid": {
             "py/object": "__main__.Page",
@@ -2869,7 +2877,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/micro-economics.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/mind-at-work": {
             "py/object": "__main__.Page",
@@ -2884,12 +2892,13 @@
                 "/timeoff"
             ],
             "incoming_links": [
+                "/addiction",
                 "/d/time-off-2022-11",
                 "/timeoff"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2016-2-10-body-at-home-mind-at-work.md",
-            "doc_size": 14000
+            "doc_size": 16000
         },
         "/mind-monsters": {
             "py/object": "__main__.Page",
@@ -3211,15 +3220,17 @@
         "/physical-health": {
             "py/object": "__main__.Page",
             "url": "/physical-health",
-            "title": "Physical Health",
-            "description": "Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health is about weight, fitness, and sleep.\n\n",
+            "title": "Physical Health Lets you look good in your jeans, and wrestle bears",
+            "description": "Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health requires weight, fitness, and sleep.\n\n",
             "file_path": "_site/physical-health.html",
             "outgoing_links": [
                 "/diet",
                 "/insomnia",
                 "/irl",
                 "/sharpen-the-saw",
-                "/tech-health-toys"
+                "/sleep",
+                "/tech-health-toys",
+                "/terzepatide"
             ],
             "incoming_links": [
                 "/42",
@@ -3234,7 +3245,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/pride": {
             "py/object": "__main__.Page",
@@ -3602,7 +3613,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/siy.md",
-            "doc_size": 56000
+            "doc_size": 55000
         },
         "/sleep": {
             "py/object": "__main__.Page",
@@ -3612,15 +3623,17 @@
             "file_path": "_site/sleep.html",
             "outgoing_links": [
                 "/blueprint",
-                "/insomnia"
+                "/insomnia",
+                "/tech-health-toys"
             ],
             "incoming_links": [
                 "/energy",
-                "/insomnia"
+                "/insomnia",
+                "/physical-health"
             ],
             "redirect_url": "",
             "markdown_path": "_d/sleep.md",
-            "doc_size": 11000
+            "doc_size": 13000
         },
         "/sleeping-bag-sacrifies": {
             "py/object": "__main__.Page",
@@ -3709,7 +3722,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2015-11-18-what-is-strategy.md",
-            "doc_size": 22000
+            "doc_size": 24000
         },
         "/strengths": {
             "py/object": "__main__.Page",
@@ -3853,7 +3866,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 79000
+            "doc_size": 80000
         },
         "/td/advertising": {
             "py/object": "__main__.Page",
@@ -3935,7 +3948,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/data-systems.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
@@ -4101,7 +4114,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/streaks.md",
-            "doc_size": 11000
+            "doc_size": 10000
         },
         "/td/usbtech": {
             "py/object": "__main__.Page",
@@ -4163,7 +4176,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/windbg.md",
-            "doc_size": 10000
+            "doc_size": 9000
         },
         "/tech-health-toys": {
             "py/object": "__main__.Page",
@@ -4176,7 +4189,8 @@
             ],
             "incoming_links": [
                 "/d/2016-02-03-positive-computing-survey",
-                "/physical-health"
+                "/physical-health",
+                "/sleep"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-06-tech-health-toys.md",
@@ -4192,6 +4206,7 @@
             "incoming_links": [
                 "/d/time-off-2024-04",
                 "/diet",
+                "/physical-health",
                 "/voices"
             ],
             "redirect_url": "",
