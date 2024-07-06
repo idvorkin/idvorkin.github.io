@@ -36,11 +36,7 @@ Pain is in the brain as they say, which is especially true for mental pains. Pai
 - [Fueling the fire, adding meaning](#fueling-the-fire-adding-meaning)
     - [Meaning: From Pain to Suffering](#meaning-from-pain-to-suffering)
     - [Meaning squared: From Suffering to Misery](#meaning-squared-from-suffering-to-misery)
-        - [Victim: Nothing I can do](#victim-nothing-i-can-do)
-        - [Unique: The world is not fair to me](#unique-the-world-is-not-fair-to-me)
-- [The positive analogs](#the-positive-analogs)
-    - [Pain to pleasure](#pain-to-pleasure)
-    - [Suffering to satisfaction](#suffering-to-satisfaction)
+- [The positive analogs of pain: Pleasure, Satisification, Hubris](#the-positive-analogs-of-pain-pleasure-satisification-hubris)
     - [Misery to Hubris](#misery-to-hubris)
 - [Loneliness](#loneliness)
 - [Physical Pain, Injury, Recovery](#physical-pain-injury-recovery)
@@ -125,17 +121,29 @@ But some crib notes:
 
 ### Meaning: From Pain to Suffering
 
+Humans need to apply meaning, in the case of pain, suffering is the meaning we apply. We should examine the meaning carefully, it drastically changes our experience.
+
+Suffering of labor - 1 woman, 5 months in , 1 woman 9 months in.
+Suffering of hitting thumb with hammer: Carpenter, Convert Violinist, concert next day.
+
 ### Meaning squared: From Suffering to Misery
 
-#### Victim: Nothing I can do
+Meaning is mandatory, bt we can mess up and apply meaning to our suffering. This is comletely unnecassary.
 
-#### Unique: The world is not fair to me
+**Victim: Nothing I can do**
 
-## The positive analogs
+You can always have an impact - there is always hope. Even if the impact is just how you experience it. For example, you are influencing it, makiing it worse by investing in this victim mentality.
 
-### Pain to pleasure
+Note, this is infact the definition of depression. Learned helplessness.
 
-### Suffering to satisfaction
+**Screwed over: It wasn't fair**
+
+Fairness is an illusion. Life provided you no such gaurantee, so this is always a false thought.
+
+## The positive analogs of pain: Pleasure, Satisification, Hubris
+
+Pain to pleasure - Pleasure, often of consumption, a sweet treat. But meaningless.
+Satis
 
 ### Misery to Hubris
 
