@@ -376,9 +376,14 @@ function $0ae4da76013e664e$var$center_on_node(node) {
     $0ae4da76013e664e$var$Graph.centerAt(node.x, node.y, 500);
     $0ae4da76013e664e$var$Graph.zoom(8, 500);
     $0ae4da76013e664e$var$update_detail(node);
+    console.log("zooming to", node);
 }
+var $0ae4da76013e664e$var$g_last_detail_node = null;
+// set click handler for zoom in
+$("#zoom_control").on("click", ()=>$0ae4da76013e664e$var$center_on_node($0ae4da76013e664e$var$g_last_detail_node));
 function $0ae4da76013e664e$var$update_detail(page) {
     // replace html of element of id above with the page
+    $0ae4da76013e664e$var$g_last_detail_node = page;
     const html = (0, $b013a5dd6d18443e$export$fc303307c4ed1d41)(page);
     const detail = document.getElementById("detail");
     detail.innerHTML = html;

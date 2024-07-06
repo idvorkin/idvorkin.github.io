@@ -148,10 +148,17 @@ function center_on_node(node) {
   Graph.centerAt(node.x, node.y, 500);
   Graph.zoom(8, 500);
   update_detail(node);
+  console.log("zooming to", node);
 }
+
+var g_last_detail_node = null;
+
+// set click handler for zoom in
+$("#zoom_control").on("click", () => center_on_node(g_last_detail_node));
 
 function update_detail(page) {
   // replace html of element of id above with the page
+  g_last_detail_node = page;
   const html = MakeBackLinkHTML(page);
   const detail = document.getElementById("detail");
   detail.innerHTML = html;
