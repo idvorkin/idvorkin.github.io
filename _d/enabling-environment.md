@@ -34,6 +34,7 @@ Imagine the place you do your best work. Andy Matuschak defined this, and as som
     - [Connected Graphs](#connected-graphs)
 - [AI Augmentation](#ai-augmentation)
     - [Critical Thinking](#critical-thinking)
+    - [Other folks work here:](#other-folks-work-here)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -128,4 +129,8 @@ gist.github.com/idvorkin/25eadce2222a09d9dca620679afd59d6
 
 github.com/idvorkin/nlp/blob/main/think.py
 
-https://gist.github.com/idvorkin/25eadce2222a09d9dca620679afd59d6
+<https://gist.github.com/idvorkin/25eadce2222a09d9dca620679afd59d6>
+
+### Other folks work here
+
+- A different version of think.py, from [danielmiessler](https://github.com/danielmiessler/fabric?tab=readme-ov-file#what-and-why) lots of much better prompts
