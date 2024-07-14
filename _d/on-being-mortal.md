@@ -120,7 +120,7 @@ Get the raw data from:
 
 ## When I get old
 
-{%include summarize-page.html src='/igors-last-year' %}
+{%include summarize-page.html src='/last-year' %}
 
 ## Quotes
 

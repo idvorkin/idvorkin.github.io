@@ -129,7 +129,6 @@
         "/objective": "/goals",
         "/okr": "/goals",
         "/on-being-mortal": "/death",
-        "/pain": "/mental-pain",
         "/parkinson-law": "/parkinson",
         "/parkinsons-law": "/parkinson",
         "/pay": "/comp",
@@ -164,8 +163,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -2826,7 +2823,7 @@
             "py/object": "__main__.Page",
             "url": "/mental-pain",
             "title": "The thoughts that pain us",
-            "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.\n\n",
+            "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.\n\n",
             "file_path": "_site/mental-pain.html",
             "outgoing_links": [
                 "/anxiety",
@@ -2853,7 +2850,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/mental-pain.md",
-            "doc_size": 20000
+            "doc_size": 18000
         },
         "/mermaid": {
             "py/object": "__main__.Page",
