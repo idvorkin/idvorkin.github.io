@@ -7,7 +7,7 @@ tags:
   - search-featured
 ---
 
-I've learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I've learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.
+I've learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I've learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency. Super important: You don't raise to the level of your goals, you fall to the level of your systems
 
 <!-- prettier-ignore-start -->
 
