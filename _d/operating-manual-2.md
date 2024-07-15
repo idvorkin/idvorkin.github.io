@@ -13,9 +13,8 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- vim-markdown-toc GFM -->
 
-- [Calendar](#calendar)
-    - [Calendar - 2023 Q3](#calendar---2023-q3)
-    - [Calendar - 2022](#calendar---2022)
+- [A note on goals, aspiration an  systems.](#a-note-on-goals-aspiration-an--systems)
+- [Calendar - 2024 H2](#calendar---2024-h2)
 - [Morning Routine](#morning-routine)
     - [Weekend morning routine](#weekend-morning-routine)
     - [Weekday morning routine](#weekday-morning-routine)
@@ -61,69 +60,45 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
         - [What would I do for less money](#what-would-i-do-for-less-money)
         - [Making more vs spending more](#making-more-vs-spending-more)
 - [Career](#career)
-    - [Joining Facebook](#joining-facebook)
-    - [Joining Amazon](#joining-amazon)
-    - [Dream Job](#dream-job)
-    - [Being a Great Manager](#being-a-great-manager)
+- [Archive](#archive)
+    - [Calendar - 2023 Q3](#calendar---2023-q3)
+    - [Calendar - 2022](#calendar---2022)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Calendar
+TODO: Split this post into How Igor Ticks, and igor
 
-As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
+## A note on goals, aspiration an systems.
 
-### Calendar - 2023 Q3
+- You don't raise to the level of your goals, you fall to the level of your systems.
+- Goals without systems are just good intentions.
+- Do you want Planning/High Discipline Igor making decisions, or evening Igor making the decisions (See [Brian Johnson](/blueprint).
 
-My new calendar
-
-| Day | Early AM  | Evening       |
-| --- | --------- | ------------- |
-| M   | 2H Swings | Free          |
-| T   | Trainer   | Zach Date     |
-| W   | 1H Swings | Improv        |
-| Th  | 2H Swings | Magic w/Clive |
-| F   | 1H Swings | Movie Night   |
-| Sa  | [l1](l1)  | Free          |
-| Su  | [l2](l2)  | Free          |
-
-<div/>
-
-- l1
-- Trainer
-- Coffee Shop Writing
-
-<div/>
-- l2
-- Stretching/Free Gym
-- Coffee Shop
-- Weekly Journal
-- Family Blog Post
-
-### Calendar - 2022
+## Calendar - 2024 H2
 
 As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
 
 My new calendar
 
-| Day | Early AM         | Evening       |
-| --- | ---------------- | ------------- |
-| M   | Crazy Early Work | Free          |
-| T   | Trainer          | Zach Date     |
-| W   | Stair Climber    | Amelia Date   |
-| Th  | Self Gym         | Magic w/Clive |
-| F   | Run              | Movie Night   |
-| Sa  | [l21](21)        | Free          |
-| Su  | [l22](22)        | Free          |
+| Day | Early AM    | Evening       |
+| --- | ----------- | ------------- |
+| M   | 5am Trainer | Free          |
+| T   | Off         | Free          |
+| W   | 6am Trainer | Free          |
+| Th  | Self Gym    | Magic w/Clive |
+| F   | 1H Swings   | Movie Night   |
+| Sa  | [l31](21)   | Free          |
+| Su  | [l32](22)   | Free          |
 
 <div/>
 
-- l21
-- Trainer
+- l31
+- 2H Swings
 - Coffee Shop Writing
 
 <div/>
-- l22
+- l32
 - Stretching/Free Gym
 - Coffee Shop
 - Weekly Journal
@@ -265,7 +240,7 @@ The words you use influence how you think.
 - I'm under water --> I'm fully booked this week
 - I'm not doing a good job --> When I'm at my best I do
 - I manage the XYZ team -> I support the XYZ team
-- This is crap --> Help me understand (/compassion)
+- This is crap --> [Help me understand](/compassion)
 
 {%include summarize-page.html src="/som" %}
 
@@ -339,24 +314,62 @@ See [Parkinson's law](/parkinson), applies to both time and Money.
 
 ## Career
 
-### Joining Facebook
+See the [manager book appendix](/manager-book-appendix#igors-career)
 
-In mid 2020, I joined [Facebook](/facebook) and it has been an absolute pleasure. Facebook is very aligned with my desired culture: Top shelf people, top notch management, a genuine caring about people, and a move fast and iterate culture.
+## Archive
 
-{%include summarize-page.html src="/facebook" %}
+### Calendar - 2023 Q3
 
-### [Joining Amazon](/amazon)
+My new calendar
 
-At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years and it was a tough transition.
+| Day | Early AM  | Evening       |
+| --- | --------- | ------------- |
+| M   | 2H Swings | Free          |
+| T   | Trainer   | Zach Date     |
+| W   | 1H Swings | Improv        |
+| Th  | 2H Swings | Magic w/Clive |
+| F   | 1H Swings | Movie Night   |
+| Sa  | [l1](l1)  | Free          |
+| Su  | [l2](l2)  | Free          |
 
-{%include summarize-page.html src="/amazon" %}
+<div/>
 
-### [Dream Job](/dream-job)
+- l1
+- Trainer
+- Coffee Shop Writing
 
-{%include summarize-page.html src="/dream-job" %}
+<div/>
+- l2
+- Stretching/Free Gym
+- Coffee Shop
+- Weekly Journal
+- Family Blog Post
 
-### [Being a Great Manager](/manager-book)
+### Calendar - 2022
 
-I spent a lot of time learning to be a manager, and am [writing a book, or really notes to myself](/manager-book).
+As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
 
-{%include summarize-page.html src="/manager-book" %}
+My new calendar
+
+| Day | Early AM         | Evening       |
+| --- | ---------------- | ------------- |
+| M   | Crazy Early Work | Free          |
+| T   | Trainer          | Zach Date     |
+| W   | Stair Climber    | Amelia Date   |
+| Th  | Self Gym         | Magic w/Clive |
+| F   | Run              | Movie Night   |
+| Sa  | [l21](21)        | Free          |
+| Su  | [l22](22)        | Free          |
+
+<div/>
+
+- l21
+- Trainer
+- Coffee Shop Writing
+
+<div/>
+- l22
+- Stretching/Free Gym
+- Coffee Shop
+- Weekly Journal
+- Family Blog Post
