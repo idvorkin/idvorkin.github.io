@@ -22,6 +22,10 @@ A hodgepodge of additional resources for the manager book.
     - [Zillow](#zillow)
 - [Misc Topics](#misc-topics)
     - [A few Igorisms](#a-few-igorisms)
+    - [Igor's career](#igors-career)
+        - [Joining Facebook](#joining-facebook)
+        - [Joining Amazon](#joining-amazon)
+        - [Dream Job](#dream-job)
     - [Laws to remember](#laws-to-remember)
     - [How you need to communicate differently](#how-you-need-to-communicate-differently)
 - [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
@@ -171,6 +175,24 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 - Organization - I have the least process ever (except for Facebook)
 - UX - I'm inexperienced at UI - I need to get better, but a place I need to lean on others
 - Dramatizing - It's emotionally engaging and helps knock us into high trust mode, but it can cause people to be defensive
+
+### Igor's career
+
+#### Joining Facebook
+
+In mid 2020, I joined [Facebook](/facebook) and it has been an absolute pleasure. Facebook is very aligned with my desired culture: Top shelf people, top notch management, a genuine caring about people, and a move fast and iterate culture.
+
+{%include summarize-page.html src="/facebook" %}
+
+#### [Joining Amazon](/amazon)
+
+At the end of 2016, I joined [Amazon](/amazon) to learn the business of software, to learn to [write](/writing) and to live by the leadership principles. It was my first job outside of Microsoft where I'd worked for 15 years and it was a tough transition.
+
+{%include summarize-page.html src="/amazon" %}
+
+#### [Dream Job](/dream-job)
+
+{%include summarize-page.html src="/dream-job" %}
 
 ### Laws to remember
 
