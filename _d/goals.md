@@ -1,8 +1,6 @@
 ---
 layout: post
 title: "Goals - How to define and ensure success"
-comments: true
-inprogress: true
 tags:
   - manager
 permalink: /goals
@@ -19,13 +17,14 @@ Goal are critcal, there are multiple goal systems and they have consequences. Th
 <!-- vim-markdown-toc GFM -->
 
 - [Why goals](#why-goals)
+    - [Goals vs Systems](#goals-vs-systems)
 - [Mission, Vision, Tenants, Goals](#mission-vision-tenants-goals)
 - [What vs How](#what-vs-how)
 - [Goal systems OKR vs SMART](#goal-systems-okr-vs-smart)
     - [SMART Goals](#smart-goals)
     - [OKR](#okr)
-    - [Measuring goals](#measuring-goals)
-    - [Extrinsic vs Intrinsic Motivations.](#extrinsic-vs-intrinsic-motivations)
+- [Measuring goals](#measuring-goals)
+    - [Extrinsic vs Intrinsic Motivations](#extrinsic-vs-intrinsic-motivations)
     - [Transparent Goals](#transparent-goals)
     - [Philosphy](#philosphy)
 - [Metrics Anti-Patterns](#metrics-anti-patterns)
@@ -40,6 +39,10 @@ Goal are critcal, there are multiple goal systems and they have consequences. Th
 ## Why goals
 
 Answer what, why, and how do we know there.
+
+### Goals vs Systems
+
+We don't rise to the level of our goals, we fall to the level of our systems. The value of goals is to help us to build and assess our systems.
 
 ## Mission, Vision, Tenants, Goals
 
@@ -65,7 +68,7 @@ Philisophical Difference
 
 [Example OKRs](https://www.whatmatters.com/get-examples)
 
-### Measuring goals
+## Measuring goals
 
 You have to decide if metrics should be used for visiblity vs for evaluation and sticks.
 
