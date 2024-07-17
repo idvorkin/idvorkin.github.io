@@ -10,6 +10,51 @@ It's a special year since Zach will be going into high school, and Amelia into G
 
 To get the most out of my time off, I'm going to follow my best practice of pre-writing what I want to get done, and adjust it as I go. This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc GFM -->
+
+- [Topic](#topic)
+    - [Divide and Conquer - By Person](#divide-and-conquer---by-person)
+    - [Bulk Discount - Staying at the beach house](#bulk-discount---staying-at-the-beach-house)
+    - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
+- [By Week](#by-week)
+- [My top priorities](#my-top-priorities)
+    - [I have memories that last a lifetime](#i-have-memories-that-last-a-lifetime)
+    - [Back to generating artificats](#back-to-generating-artificats)
+    - [Health and Habits](#health-and-habits)
+- [Moments](#moments)
+- [Success Stories](#success-stories)
+- [Top Learnings](#top-learnings)
+- [Relationships (3/5)](#relationships-35)
+    - [Friends](#friends)
+    - [Tori](#tori)
+    - [Zach](#zach)
+    - [Amelia](#amelia)
+- [Identity Health (x/5)](#identity-health-x5)
+    - [Biking](#biking)
+    - [Ballooning](#ballooning)
+    - [Joy Activities](#joy-activities)
+    - [Magic](#magic)
+- [Tech Guru (X/5)](#tech-guru-x5)
+- [Cognitive Health (X/5)](#cognitive-health-x5)
+    - [Blog posts](#blog-posts)
+- [Emotional Health (4/5)](#emotional-health-45)
+    - [Meditation](#meditation)
+    - [750 words/Gratefulness](#750-wordsgratefulness)
+- [Motivation (X/5)](#motivation-x5)
+- [Physical Habits (4/5)](#physical-habits-45)
+    - [Statistics](#statistics)
+    - [Diet](#diet)
+    - [Sleep](#sleep)
+- [House and goods](#house-and-goods)
+- [Inner Peace (X/5)](#inner-peace-x5)
+    - [General Inner Peace](#general-inner-peace)
+    - [Work](#work)
+    - [Family](#family)
+
+<!-- vim-markdown-toc -->
+<!-- prettier-ignore-end -->
+
 ## Topic
 
 ### Divide and Conquer - By Person
