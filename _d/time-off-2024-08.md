@@ -55,6 +55,12 @@ Stuff happening:
 
 ## My top priorities
 
+### I have memories that last a lifetime
+
+- Photos, documentation
+- Peak End Rule
+- [Moments](/moments)
+
 ### Back to generating artificats
 
 - Bang out a daily blog post
