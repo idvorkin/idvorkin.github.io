@@ -299,7 +299,11 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 ### Other learnings
 
-- Remember the peak end rule. Make the last day amazing!
+- Remember the peak-end rule. Make the last day amazing!
+- Have a hotel booked Friday and Saturday nights
+- If you forget something, buy it at Walmart
+- Set an end-of-day location that's only 4 hours of driving, otherwise, you'll end up spending not enough time smelling the roses.
+- Keep kettlebells in the car
 
 ## Other Thoughts
 
