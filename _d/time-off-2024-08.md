@@ -99,38 +99,38 @@ Stuff happening:
 
   - 3 hours away, camp and telescope
 
-  ### Zach Week - San Fransico
+### Zach Week - San Fransico
 
-* ~Alcatraz~ - Sigh sold out
-* Walk the Golden Gate Bridge
-* Go through thre presadio
-* Fisherman's Wharf
-* Trolley up giant staircase
+- ~Alcatraz~ - Sigh sold out
+- Walk the Golden Gate Bridge
+- Go through thre presadio
+- Fisherman's Wharf
+- Trolley up giant staircase
   - Find out how
-* Check out golden gate park
-* Meta HQ:
+- Check out golden gate park
+- Meta HQ:
   - Eat BBQ for lunch
   - Walk the giant park
-* Foods of SF
+- Foods of SF
 
   - Dim Sum
   - Chopino
   - Sourdough clam chowder bowl
 
-* Monday - Go Down most of Coast
-* Tu
+- Monday - Go Down most of Coast
+- Tu
   - Noon - Arrive in SF
   - Putz
-* We
+- We
   - SF Stuff
-* Th
+- Th
   - MPK
   - Maureen and Brian
-* Fri
+- Fri
   - Back to coast
-* Sat
+- Sat
   - Sea Side
-* Sun
+- Sun
   - Home
 
 ## My top priorities
