@@ -47,6 +47,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Emotional Health](#emotional-health)
     - [Identity Health](#identity-health)
     - [Travel Tips - Before you go](#travel-tips---before-you-go)
+    - [Road Trip Tips](#road-trip-tips)
     - [Other learnings](#other-learnings)
 - [Other Thoughts](#other-thoughts)
     - [Optimize for energy, not time](#optimize-for-energy-not-time)
@@ -254,6 +255,7 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 - Do magic for folks
   - Find some guy by himself, practice him as he won't be threatened
 - Do balloons for kids, they love them.
+- Kettlebells are a blast! Keep them in the car.
 
 ### Travel Tips - Before you go
 
@@ -296,6 +298,13 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 - Have a good packing of keys wallet so don't worry about losing (Fanny pack)
 - Force Captive Portal to appear - <http://captive.apple.com/hotspot-detect.html>
 - For the stuff I forget - Just go to Walmart/target and buy it. It's basically disposable.
+
+### Road Trip Tips
+
+- Bring Kettlebells
+- Lots of audiobooks
+- Stop at walmart
+- Don't let yourself drive too far
 
 ### Other learnings
 
