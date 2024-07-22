@@ -96,7 +96,42 @@ Stuff happening:
 - Mid week camping
 - Hang with Baltasar and Family
 - Table Mountain star party - July 30 - August 3, 2024
+
   - 3 hours away, camp and telescope
+
+  ### Zach Week - San Fransico
+
+* ~Alcatraz~ - Sigh sold out
+* Walk the Golden Gate Bridge
+* Go through thre presadio
+* Fisherman's Wharf
+* Trolley up giant staircase
+  - Find out how
+* Check out golden gate park
+* Meta HQ:
+  - Eat BBQ for lunch
+  - Walk the giant park
+* Foods of SF
+
+  - Dim Sum
+  - Chopino
+  - Sourdough clam chowder bowl
+
+* Monday - Go Down most of Coast
+* Tu
+  - Noon - Arrive in SF
+  - Putz
+* We
+  - SF Stuff
+* Th
+  - MPK
+  - Maureen and Brian
+* Fri
+  - Back to coast
+* Sat
+  - Sea Side
+* Sun
+  - Home
 
 ## My top priorities
 
