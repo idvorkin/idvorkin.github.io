@@ -62,6 +62,8 @@ See [Happy](/happy)
 
 ### The heuristic is bi-directional
 
+If you came here to have fun you will. If not, you won't.
+
 ## Theory and model
 
 TODO: Move this to its own page
