@@ -3,7 +3,7 @@ layout: post
 title: Slow ZSH prompts
 ---
 
-All of the sudden, hititng enter in zsh took seconds - took me a while, but I realized if I kiled tmux (not just a window), then it would be fast again (well, that's better then a reboot I guess.
+All of the sudden, hititng enter in zsh took seconds - took me a while, but I realized if I kiled tmux (not just a window), then it would be fast again (well, that's better then a reboot I guess. **Sigh, this drove me nuts and I just switched to Atuin instead**
 
 Profiling Zsh
 
