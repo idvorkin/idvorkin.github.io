@@ -16,6 +16,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+    - [2024-07-31](#2024-07-31)
+        - [Auto code editting (via Aider) - TOO Soon](#auto-code-editting-via-aider---too-soon)
     - [2024-06-22](#2024-06-22)
         - [Next Gen Models](#next-gen-models)
         - [Lots of progression on Evals](#lots-of-progression-on-evals)
@@ -107,6 +109,12 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2024-07-31
+
+#### Auto code editting (via Aider) - TOO Soon
+
+OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally it could do more complex changes, like find code that would be good to refactor then make those changes. [aider](https://aider.chat/) is supposed to that, but in my expereince, it just made stuff wrose and was slower then me making the cahnges myself. I guess I'll try again in a while.
 
 ### 2024-06-22
 
