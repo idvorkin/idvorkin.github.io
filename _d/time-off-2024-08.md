@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time off August 2024
-imagefeaturelocal: raccoon-vaccation.png
+imagefeaturelocal: raccoon-vacation.png
 permalink: /time-off-2024-08
 redirect_from:
   - /time-off-next
@@ -23,10 +23,12 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
     - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
     - [Tech updates by Repo](#tech-updates-by-repo)
 - [By Week](#by-week)
-    - [Light house passsport](#light-house-passsport)
+- [Stuff happening](#stuff-happening)
+    - [Candidates](#candidates)
+    - [Lighthouse passport](#lighthouse-passport)
 - [My top priorities](#my-top-priorities)
     - [I have memories that last a lifetime](#i-have-memories-that-last-a-lifetime)
-    - [Back to generating artificats](#back-to-generating-artificats)
+    - [Back to generating artifacts](#back-to-generating-artifacts)
     - [Health and Habits](#health-and-habits)
 - [Moments](#moments)
 - [Success Stories](#success-stories)
@@ -76,7 +78,7 @@ Family time is great, but so is time together so I think I'll split the time up,
 
 ### From 12 months to 6 weeks
 
-Four years ago, I dreamed of taking a year off of work. A few things have changed, Meta doesn't do unpaid leaves, and the software industry has gone through some employment turbulance (e.g. layoffs), so I've replanned and am take a 6 weeks of vaction
+Four years ago, I dreamed of taking a year off of work. A few things have changed, Meta doesn't do unpaid leaves, and the software industry has gone through some employment turbulence (e.g. layoffs), so I've replanned and am taking 6 weeks of vacation
 
 ### Tech updates by Repo
 
@@ -91,48 +93,48 @@ As of 8/1/2024
 
 | Week Dates - People         | Activities                 | Notes                    |
 | --------------------------- | -------------------------- | ------------------------ |
-| 1: July 21 - Zach           | [l1](l1)                   |                          |
-| 2: July 28 - Family         | [l2](l2)                   |                          |
-| 3: August 4 - Alone         | [l3](l3)                   | A at Farm; Z rowing      |
-| 4: August 11 - Alone        | TBD                        | A at Film Camp; Z Rowing |
-| 5: August 18 - Amelia       | TBD                        | Z Rowing                 |
-| 6: August 25 - Family       | TBD                        |                          |
+| 1) July 21 - Zach           | [l1](l1)                   |                          |
+| 2) July 28 - Family         | [l2](l2)                   |                          |
+| 3) August 4 - Alone         | [l3](l3)                   | A at Farm; Z rowing      |
+| 4) August 11 - Alone        | TBD                        | A at Film Camp; Z Rowing |
+| 5) August 18 - Amelia       | TBD                        | Z Rowing                 |
+| 6) August 25 - Family       | TBD                        |                          |
 | DONE: Sept 4 - Back to Work | Back to Work/School Starts |                          |
 
   <span>
 * l1
 * Astoria
     * Super nice beach town
-    * **LEARN:** Didn't get  a hotel room, super busy Saturday night, spent 300$ for crappy motel 6, many hours away
+    * **LEARN:** Didn't get a hotel room, super busy Saturday night, spent 300$ for crappy motel 6, many hours away
 * Coast
   * Trees of Mystery
   * Long nature walk
-  * Light houses
-* San Fransico
+  * Lighthouses
+* San Francisco
   * City Hall - Zach LOVED it.
   - ~Alcatraz~ - Sigh sold out
   - Fisherman's Wharf - Mechano Museum
   * Ride Trolleys
   * Coit Tower
 * Foods of SF
-  - Chopino
+  - Cioppino
   - Sourdough clam chowder bowl
 * MPK
     * Lunches at 4 different cafeterias
     * Crazy cool to see just how big it is
-    * Describing the org chage in fuedual structures
+    * Describing the org change in feudal structures
     * E.g. Is VP of Messenger a Protectorate, or a Grand Duke
 
 <div></div>
 
 - l2
 - Long Beach
-  - Cheap Apartment like hotel, get 2 or 3 bedroom suite - [Costal Inn](https://coastalinnhotel.com/accommodations)
-    - **LEARN:** Hotels can be better then AirBNB
+  - Cheap Apartment like hotel, get 2 or 3 bedroom suite - [Coastal Inn](https://coastalinnhotel.com/accommodations)
+    - **LEARN:** Hotels can be better than AirBNB
     - **LEARN:** Long Beach has car chargers at Adrift Hotel
   - Beach Kettlebells
     - Sad messed up adjustable mechanism
-    - Needed to dig diteches for my feet so they wouldn't slide of
+    - Needed to dig ditches for my feet so they wouldn't slide off
 
 <div></div>
 
@@ -141,12 +143,14 @@ As of 8/1/2024
   - Folks want to know if they got Promos
   - BUT: I don't find out till today. So coming in to give back results
 
-Stuff happening:
+## Stuff happening
 
-- [Medival Fair](https://washingtonfaire.com/) -
+### Candidates
+
+- [Medieval Fair](https://washingtonfaire.com/) -
   - Knights, July 19
   - Pirates, July 26
-  - Heroes and Villans, Aug 2
+  - Heroes and Villains, Aug 2
   - Warriors (Vikings?), Aug 9
   - Fantasy, Aug 16 (Best One?)
 - Tesla car camping
@@ -155,11 +159,11 @@ Stuff happening:
   - Aug 20th to 23 (Whistler)
   - Aug 24th (Seattle)
 
-### Light house passsport
+### Lighthouse passport
 
-I found a lighthouse passport thing! I assumed it was a stamp book (A book with all listed light houses, and you needed to collect all the stamps), however it was just a passport (blank pages), but turns out there are lots I can callect, and I will!
+I found a lighthouse passport thing! I assumed it was a stamp book (A book with all listed lighthouses, and you needed to collect all the stamps), however it was just a passport (blank pages), but turns out there are lots I can collect, and I will!
 
-- [Light houses of WA](https://stateofwatourism.com/scenic-washington-lighthouses/)
+- [Lighthouses of WA](https://stateofwatourism.com/scenic-washington-lighthouses/)
 
 ## My top priorities
 
@@ -169,7 +173,7 @@ I found a lighthouse passport thing! I assumed it was a stamp book (A book with 
 - Peak End Rule
 - [Moments](/moments)
 
-### Back to generating artificats
+### Back to generating artifacts
 
 - Bang out a daily blog post
 - Write 4 family journal entries (!!)
@@ -177,19 +181,19 @@ I found a lighthouse passport thing! I assumed it was a stamp book (A book with 
 
 ### Health and Habits
 
-- **Diet** - I should be pretty close to steady state goal (165 ish). I guess don't go up more then 5 lbs
+- **Diet** - I should be pretty close to steady state goal (165 ish). I guess don't go up more than 5 lbs
 
   - Start of: May 180; June 175; July 170; August 165;
-  - Go to grocery store and load up on healhty food
+  - Go to grocery store and load up on healthy food
   - Bring my travel scale
 
 - **Sleep** - Up every day at 5.
 
-  - When drifting cut caffiene
+  - When drifting cut caffeine
   - Bring earplugs and sleep mask
-  - Nap while charing the Tesla
+  - Nap while charging the Tesla
 
-- **Exercise** - This will probably the hardest.
+- **Exercise** - This will probably be the hardest.
   - When out of town, bring a portable kit
   - Figure out an outdoor setup
 
@@ -263,7 +267,7 @@ Things to do:
 
 ### Amelia
 
-- Daily Activity ( Brain storm this with her)
+- Daily Activity ( Brainstorm this with her)
 
 ## Identity Health (x/5)
 
@@ -287,7 +291,7 @@ Things to do:
 
 ## Tech Guru (X/5)
 
-- Outline my talk for GPT, likley based on on Langchain tools
+- Outline my talk for GPT, likely based on Langchain tools
 
 ## Cognitive Health (X/5)
 
