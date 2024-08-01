@@ -22,7 +22,6 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
     - [Bulk Discount - Stay at the same place the whole time](#bulk-discount---stay-at-the-same-place-the-whole-time)
     - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
 - [By Week](#by-week)
-    - [Zach Week - San Fransico](#zach-week---san-fransico)
     - [Light house passsport](#light-house-passsport)
 - [My top priorities](#my-top-priorities)
     - [I have memories that last a lifetime](#i-have-memories-that-last-a-lifetime)
@@ -80,15 +79,15 @@ Four years ago, I dreamed of taking a year off of work. A few things have change
 
 ## By Week
 
-| Week | Dates       | People       | Activities                 | Notes                    |
-| ---- | ----------- | ------------ | -------------------------- | ------------------------ |
-| 1    | July 21     | Zach         | [l1](l1)                   |                          |
-| 2    | July 28     | Family       | [l2](l2)                   |                          |
-| 3    | August 4    | Alone        | [l3](l3)                   | A at Farm; Z rowing      |
-| 4    | August 11   | Alone        | TBD                        | A at Film Camp; Z Rowing |
-| 5    | August 18   | Amelia       | TBD                        | Z Rowing                 |
-| 6    | August 25   | Family       | TBD                        |                          |
-| DONE | September 4 | Back to Work | Back to Work/School Starts |                          |
+| Week Dates - People         | Activities                 | Notes                    |
+| --------------------------- | -------------------------- | ------------------------ |
+| 1: July 21 - Zach           | [l1](l1)                   |                          |
+| 2: July 28 - Family         | [l2](l2)                   |                          |
+| 3: August 4 - Alone         | [l3](l3)                   | A at Farm; Z rowing      |
+| 4: August 11 - Alone        | TBD                        | A at Film Camp; Z Rowing |
+| 5: August 18 - Amelia       | TBD                        | Z Rowing                 |
+| 6: August 25 - Family       | TBD                        |                          |
+| DONE: Sept 4 - Back to Work | Back to Work/School Starts |                          |
 
   <span>
 * l1
@@ -119,6 +118,8 @@ Four years ago, I dreamed of taking a year off of work. A few things have change
 - l2
 - Long Beach
   - Cheap Apartment like hotel, get 2 or 3 bedroom suite - [Costal Inn](https://coastalinnhotel.com/accommodations)
+    - **LEARN:** Hotels can be better then AirBNB
+    - **LEARN:** Long Beach has car chargers at Adrift Hotel
   - Beach Kettlebells
     - Sad messed up adjustable mechanism
     - Needed to dig diteches for my feet so they wouldn't slide of
@@ -126,7 +127,7 @@ Four years ago, I dreamed of taking a year off of work. A few things have change
 <div></div>
 
 - l3
-- Work
+- Work - Give back Review
   - Folks want to know if they got Promos
   - BUT: I don't find out till today. So coming in to give back results
 
@@ -141,15 +142,8 @@ Stuff happening:
 - Tesla car camping
 - Mid week camping
 - Hang with Baltasar and Family
-
   - Aug 20th to 23 (Whistler)
   - Aug 24th (Seattle)
-
-- Table Mountain star party - July 30 - August 3, 2024
-
-  - 3 hours away, camp and telescope
-
-### Zach Week - San Fransico
 
 ### Light house passsport
 
