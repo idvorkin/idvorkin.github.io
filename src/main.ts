@@ -102,12 +102,12 @@ function MakeBackLinkHTML(url_info: IURLInfo) {
 
 async function AddLinksToPage(allUrls: IURLInfoMap) {
   // TODO handle redirects
-  var my_path = new URL(document.URL).pathname;
-  const backlinks = allUrls[my_path]?.incoming_links;
-  const frontlinks = allUrls[my_path]?.outgoing_links;
+  const page_path = new URL(document.URL).pathname;
+  const backlinks = allUrls[page_path]?.incoming_links;
+  const frontlinks = allUrls[page_path]?.outgoing_links;
 
   if (!backlinks && !frontlinks) {
-    console.log(`No backlinks for the page ${my_path}`);
+    console.log(`No backlinks for the page ${page_path}`);
     return;
   }
 
@@ -126,10 +126,16 @@ async function AddLinksToPage(allUrls: IURLInfoMap) {
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#outgoing" type="button" role="tab" aria-controls="outgoing" aria-selected="false">Link from here</button>
   </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#graph" type="button" role="tab" aria-controls="outgoing" aria-selected="false">Graph</button>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active " id="incoming" role="tabpanel" aria-labelledby="incoming-tab"></div>
   <div class="tab-pane fade" id="outgoing" role="tabpanel" aria-labelledby="outgoing-tab"></div>
+  <div class="tab-pane fade" id="graph" role="tabpanel" aria-labelledby="outgoing-tab">
+    <span> View the graph for: </span>
+  </div>
 </div>
 `
   );
@@ -161,7 +167,11 @@ async function AddLinksToPage(allUrls: IURLInfoMap) {
     }
   }
   console.log("Added Graph");
-  outgoing_location.append("<a href='/graph#joy'>View Graph</a>");
+  const graph_location = link_parent_location.find("#graph");
+  const stripped_page_path = page_path.replace(/\//g, "");
+  graph_location.append(
+    `<a href='/graph#${stripped_page_path}'>${page_path} (${stripped_page_path}) </a>`
+  );
 }
 function make_html_summary_link(link, url_info: IURLInfo) {
   const attribution = `(From:<a href='${url_info.url}'> ${url_info.title}</a>)`;

@@ -96,11 +96,11 @@ function MakeBackLinkHTML(url_info) {
 async function AddLinksToPage(allUrls) {
     var _a, _b;
     // TODO handle redirects
-    var my_path = new URL(document.URL).pathname;
-    const backlinks = (_a = allUrls[my_path]) === null || _a === void 0 ? void 0 : _a.incoming_links;
-    const frontlinks = (_b = allUrls[my_path]) === null || _b === void 0 ? void 0 : _b.outgoing_links;
+    const page_path = new URL(document.URL).pathname;
+    const backlinks = (_a = allUrls[page_path]) === null || _a === void 0 ? void 0 : _a.incoming_links;
+    const frontlinks = (_b = allUrls[page_path]) === null || _b === void 0 ? void 0 : _b.outgoing_links;
     if (!backlinks && !frontlinks) {
-        console.log(`No backlinks for the page ${my_path}`);
+        console.log(`No backlinks for the page ${page_path}`);
         return;
     }
     let link_parent_location = $("#links-to-page");
@@ -116,10 +116,16 @@ async function AddLinksToPage(allUrls) {
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#outgoing" type="button" role="tab" aria-controls="outgoing" aria-selected="false">Link from here</button>
   </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#graph" type="button" role="tab" aria-controls="outgoing" aria-selected="false">Graph</button>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active " id="incoming" role="tabpanel" aria-labelledby="incoming-tab"></div>
   <div class="tab-pane fade" id="outgoing" role="tabpanel" aria-labelledby="outgoing-tab"></div>
+  <div class="tab-pane fade" id="graph" role="tabpanel" aria-labelledby="outgoing-tab">
+    <span> View the graph for: </span>
+  </div>
 </div>
 `);
     let incoming_location = link_parent_location.find("#incoming");
@@ -145,7 +151,9 @@ async function AddLinksToPage(allUrls) {
         }
     }
     console.log("Added Graph");
-    outgoing_location.append("<a href='/graph#joy'>View Graph</a>");
+    const graph_location = link_parent_location.find("#graph");
+    const stripped_page_path = page_path.replace(/\//g, "");
+    graph_location.append(`<a href='/graph#${stripped_page_path}'>${page_path} (${stripped_page_path}) </a>`);
 }
 function make_html_summary_link(link, url_info) {
     const attribution = `(From:<a href='${url_info.url}'> ${url_info.title}</a>)`;
