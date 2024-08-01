@@ -1,10 +1,3 @@
-import {
-  createSemanticDiagnosticsBuilderProgram,
-  isRegularExpressionLiteral,
-  JSDocUnknownTag,
-} from "../node_modules/typescript/lib/typescript";
-import { CreateSearch } from "./search";
-
 let tocExpand = true;
 
 function checkExpandToggle() {
@@ -90,41 +83,11 @@ function generateToc(id, showPinToc) {
     window.scrollTo(0, document.body.scrollHeight);
   });
   forceSideBar.click(e => ForceShowRightSideBar());
-  tocMenu
-    .append(toggle)
-    .append(backToTop)
-    .append(gotoBottom);
+  tocMenu.append(toggle).append(backToTop).append(gotoBottom);
   if (showPinToc) {
     tocMenu.append(forceSideBar);
   }
   target.append(tocMenu);
-}
-
-// Yuk: Markdown Table Syntax makes nesting lists in tables hard. Adding JS based macro
-// Replacement
-//  NOTE: replace [](lX) with a list where X is a number
-//  List must start with *lX
-//  Markdown does not seperate lists, so stick divs between them.
-
-function JsTemplateReplace() {
-  // Build a cache of replacement candidates to avoid multiple iterations over the tables
-  let replaces = {};
-  for (var list of $("ul")) {
-    if (!list.firstElementChild) continue;
-    let firstLIText = list.firstElementChild.textContent;
-    if (!firstLIText.startsWith("l")) continue;
-    let number = parseInt(firstLIText.substring(1));
-    if (Number.isNaN(number)) continue;
-    replaces[firstLIText] = list;
-  }
-
-  for (var replaceText in replaces) {
-    let aToReplace = _($(`a[href=${replaceText}]`)).head();
-    if (!aToReplace) continue; // Non-replaced targets will be left in place
-    const replace = replaces[replaceText];
-    replace.removeChild(replace.firstElementChild); // remove the 'lookup id' from the list
-    $(aToReplace).replaceWith(replace);
-  }
 }
 
 function MakeBackLinkHTML(url_info: IURLInfo) {
@@ -349,7 +312,7 @@ async function append_randomizer_div(
 
   // Clicking on the element should result in a reload, unless you're
   // Clicking on a link
-  $parent.click(async function(event) {
+  $parent.click(async function (event) {
     if (event.target.tagName != "A") {
       const new_element = $(await random_html_factory());
       $parent.empty().append(new_element);
@@ -359,7 +322,6 @@ async function append_randomizer_div(
 
 function load_globals() {
   $(add_link_loader);
-  $(JsTemplateReplace);
   $(keyboard_shortcut_loader);
   $(() => {
     // TOC Generation should go to posts.

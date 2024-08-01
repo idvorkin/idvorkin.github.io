@@ -78,42 +78,11 @@ function generateToc(id, showPinToc) {
         window.scrollTo(0, document.body.scrollHeight);
     });
     forceSideBar.click(e => ForceShowRightSideBar());
-    tocMenu
-        .append(toggle)
-        .append(backToTop)
-        .append(gotoBottom);
+    tocMenu.append(toggle).append(backToTop).append(gotoBottom);
     if (showPinToc) {
         tocMenu.append(forceSideBar);
     }
     target.append(tocMenu);
-}
-// Yuk: Markdown Table Syntax makes nesting lists in tables hard. Adding JS based macro
-// Replacement
-//  NOTE: replace [](lX) with a list where X is a number
-//  List must start with *lX
-//  Markdown does not seperate lists, so stick divs between them.
-function JsTemplateReplace() {
-    // Build a cache of replacement candidates to avoid multiple iterations over the tables
-    let replaces = {};
-    for (var list of $("ul")) {
-        if (!list.firstElementChild)
-            continue;
-        let firstLIText = list.firstElementChild.textContent;
-        if (!firstLIText.startsWith("l"))
-            continue;
-        let number = parseInt(firstLIText.substring(1));
-        if (Number.isNaN(number))
-            continue;
-        replaces[firstLIText] = list;
-    }
-    for (var replaceText in replaces) {
-        let aToReplace = _($(`a[href=${replaceText}]`)).head();
-        if (!aToReplace)
-            continue; // Non-replaced targets will be left in place
-        const replace = replaces[replaceText];
-        replace.removeChild(replace.firstElementChild); // remove the 'lookup id' from the list
-        $(aToReplace).replaceWith(replace);
-    }
 }
 function MakeBackLinkHTML(url_info) {
     const title_href = `<a href=${url_info.url}>${url_info.title}</a>`;
@@ -175,6 +144,8 @@ async function AddLinksToPage(allUrls) {
             outgoing_location.append(MakeBackLinkHTML(url_info));
         }
     }
+    console.log("Added Graph");
+    outgoing_location.append("<a href='/graph#joy'>View Graph</a>");
 }
 function make_html_summary_link(link, url_info) {
     const attribution = `(From:<a href='${url_info.url}'> ${url_info.title}</a>)`;
@@ -294,7 +265,6 @@ async function append_randomizer_div(parent_id, random_html_factory) {
 }
 function load_globals() {
     $(add_link_loader);
-    $(JsTemplateReplace);
     $(keyboard_shortcut_loader);
     $(() => {
         // TOC Generation should go to posts.

@@ -1,16 +1,11 @@
 {
   "compilerOptions": {
     "outDir": "./assets/js",
-    "outFile": "./assets/js/bundle.js",
     "allowJs": true,
     "target": "es2019",
     "sourceMap": true,
-    "moduleResolution": "node",
-    "lib": ["es2019", "dom"], // Include DOM library for browser support
-    "module": "esnext", // Use ESNext module system for modern browsers
-    // "strict": true, // Enable all strict type-checking options
-    "esModuleInterop": true, // For better compatibility with CommonJS modules
-    "skipLibCheck": true // Skip type checking of all declaration files
+    "moduleResolution": "node"
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/main.ts*"],
+  "exclude": ["*graph.ts*", "*idv-blog*"]
 }
