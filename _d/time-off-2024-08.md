@@ -2,6 +2,10 @@
 layout: post
 title: Time off August 2024
 imagefeaturelocal: raccoon-vaccation.png
+permalink: /time-off-2024-08
+redirect_from:
+  - /time-off-next
+  - /time-off-now
 ---
 
 I'm incredibly fortunate to be able to take 6 weeks off this summer! From when performance reviews finish to when the kids go back to school, it'll be summer vacation.
@@ -18,6 +22,8 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
     - [Bulk Discount - Staying at the beach house](#bulk-discount---staying-at-the-beach-house)
     - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
 - [By Week](#by-week)
+    - [Zach Week - San Fransico](#zach-week---san-fransico)
+    - [Light house passsport](#light-house-passsport)
 - [My top priorities](#my-top-priorities)
     - [I have memories that last a lifetime](#i-have-memories-that-last-a-lifetime)
     - [Back to generating artificats](#back-to-generating-artificats)
@@ -76,13 +82,22 @@ Four years ago, I dreamed of taking a year off of work. A few things have change
 
 | Week | Dates       | People       | Activities                 | Notes                    |
 | ---- | ----------- | ------------ | -------------------------- | ------------------------ |
-| 1    | July 21     | Zach         | TBD                        |                          |
+| 1    | July 21     | Zach         | [l1](/l1)                  |                          |
 | 2    | July 28     | Family       | TBD                        |                          |
 | 3    | August 4    | Alone        | TBD                        | A at Farm; Z rowing      |
 | 4    | August 11   | Alone        | TBD                        | A at Film Camp; Z Rowing |
 | 5    | August 18   | Amelia       | TBD                        | Z Rowing                 |
 | 6    | August 25   | Family       | TBD                        |                          |
 | DONE | September 4 | Back to Work | Back to Work/School Starts |                          |
+
+  <span>
+  * l1
+  * Coast
+  * Trees of Mystery
+  * San Fransico
+    * Ride Ferries
+    * San Fransico City Hall
+  <span>
 
 Stuff happening:
 
@@ -95,6 +110,10 @@ Stuff happening:
 - Tesla car camping
 - Mid week camping
 - Hang with Baltasar and Family
+
+  - Aug 20th to 23 (Whistler)
+  - Aug 24th (Seattle)
+
 - Table Mountain star party - July 30 - August 3, 2024
 
   - 3 hours away, camp and telescope
@@ -132,6 +151,12 @@ Stuff happening:
   - Sea Side
 - Sun
   - Home
+
+### Light house passsport
+
+I found a lighthouse passport thing! I assumed it was a stamp book (A book with all listed light houses, and you needed to collect all the stamps), however it was just a passport (blank pages), but turns out there are lots I can callect, and I will!
+
+- [Light houses of WA](https://stateofwatourism.com/scenic-washington-lighthouses/)
 
 ## My top priorities
 
