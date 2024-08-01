@@ -1,5 +1,5 @@
 console.log("++ -blog-module:success!");
-import "./main";
+import "./main_module";
 import "./graph";
 
 console.log("-- -blog-module:success!");

@@ -1,3 +1,44 @@
+/**
+ * Replaces placeholder links in the document with their corresponding list content.
+ * @param listReplacements - An object mapping placeholder texts to list elements.
+ */ function $baa5cd42515c3a0f$export$edbf5dc6590fcd01(listReplacements) {
+    Object.entries(listReplacements).forEach(([placeholderText, list])=>{
+        const placeholderLink = $(`a[href=${placeholderText}]`).first();
+        if (!placeholderLink.length) return; // Placeholder not found, skip
+        const listClone = $(list).clone();
+        listClone.children().first().remove(); // Remove the 'lookup id' from the list
+        placeholderLink.replaceWith(listClone);
+    });
+}
+function $baa5cd42515c3a0f$export$87fc814c53cfbd54() {
+    console.log("Replacing List Placeholders in Tables");
+    const listReplacements = $baa5cd42515c3a0f$var$buildListReplacementMap();
+    $baa5cd42515c3a0f$export$edbf5dc6590fcd01(listReplacements);
+}
+/**
+ * Builds a map of list replacements by scanning the document for specially formatted lists.
+ * @returns An object where keys are placeholder texts and values are the corresponding list elements.
+ */ function $baa5cd42515c3a0f$var$buildListReplacementMap() {
+    const replacements = {};
+    $("ul").each((_, list)=>{
+        const firstListItem = list.firstElementChild;
+        if (!firstListItem) return;
+        const firstItemText = firstListItem.textContent;
+        if (!firstItemText.startsWith("l")) return;
+        const listId = parseInt(firstItemText.substring(1));
+        if (isNaN(listId)) return;
+        replacements[firstItemText] = list;
+    });
+    return replacements;
+}
+$($baa5cd42515c3a0f$export$87fc814c53cfbd54);
+
+
+//
+//  main.js
+//
+// Random tree
+// Tree copied from: https://github.com/vasturiano/force-graph
 let $b013a5dd6d18443e$var$tocExpand = true;
 function $b013a5dd6d18443e$var$checkExpandToggle() {
     const toc = $(".ui-toc-dropdown .toc");
@@ -267,12 +308,6 @@ function $b013a5dd6d18443e$export$38653e1d7f0b5689() {
 }
 
 
-//
-//  main.js
-//
-// Random tree
-// Tree copied from: https://github.com/vasturiano/force-graph
-
 console.log("Load force graph in TS v 0.9");
 //import ForceGraph from "force-graph";
 // Pages are the link_infos
@@ -354,39 +389,43 @@ function $0ae4da76013e664e$var$TextLabelNodePointerAreaPaint(node, color, ctx) {
     const bckgDimensions = node.__bckgDimensions;
     bckgDimensions && ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
 }
-const $0ae4da76013e664e$var$Graph = ForceGraph()(document.getElementById("graph")).graphData($0ae4da76013e664e$var$build_graph_data($0ae4da76013e664e$var$pages)).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject($0ae4da76013e664e$var$TextLabelNodeCanvas).nodePointerAreaPaint($0ae4da76013e664e$var$TextLabelNodePointerAreaPaint).onNodeRightClick((node)=>{
-    // Open tne node in a new tab
-    window.open(node.url, "_blank");
-}).onNodeClick((node)=>{
-    // Center/zoom on node
-    console.log(node);
-    // count expanded nodes
-    node.expanded = !node.expanded;
-    const expanded_nodes = $0ae4da76013e664e$var$pages.filter((p)=>p.expanded).length;
-    if (expanded_nodes == 0) // re-expand me.
-    node.expanded = true;
-    $0ae4da76013e664e$var$Graph.graphData($0ae4da76013e664e$var$build_graph_data($0ae4da76013e664e$var$pages));
-    // center on node in 300 ms, post graph update
-    setTimeout(()=>{
-        $0ae4da76013e664e$var$center_on_node(node);
-    }, 300);
-});
-$0ae4da76013e664e$var$center_on_node($0ae4da76013e664e$var$node_for_url($0ae4da76013e664e$var$pages, $0ae4da76013e664e$var$initial_expanded_url));
-function $0ae4da76013e664e$var$center_on_node(node) {
-    $0ae4da76013e664e$var$Graph.centerAt(node.x, node.y, 500);
-    $0ae4da76013e664e$var$Graph.zoom(8, 500);
-    $0ae4da76013e664e$var$update_detail(node);
-    console.log("zooming to", node);
-}
-var $0ae4da76013e664e$var$g_last_detail_node = null;
-// set click handler for zoom in
-$("#zoom_control").on("click", ()=>$0ae4da76013e664e$var$center_on_node($0ae4da76013e664e$var$g_last_detail_node));
-function $0ae4da76013e664e$var$update_detail(page) {
-    // replace html of element of id above with the page
-    $0ae4da76013e664e$var$g_last_detail_node = page;
-    const html = (0, $b013a5dd6d18443e$export$fc303307c4ed1d41)(page);
-    const detail = document.getElementById("detail");
-    detail.innerHTML = html;
+// If ForceGraph isn't defined, return
+if (typeof ForceGraph === "undefined") console.log("Force Graph not defined");
+else {
+    const Graph = ForceGraph()(document.getElementById("graph")).graphData($0ae4da76013e664e$var$build_graph_data($0ae4da76013e664e$var$pages)).nodeLabel("id").nodeAutoColorBy("group").nodeCanvasObject($0ae4da76013e664e$var$TextLabelNodeCanvas).nodePointerAreaPaint($0ae4da76013e664e$var$TextLabelNodePointerAreaPaint).onNodeRightClick((node)=>{
+        // Open tne node in a new tab
+        window.open(node.url, "_blank");
+    }).onNodeClick((node)=>{
+        // Center/zoom on node
+        console.log(node);
+        // count expanded nodes
+        node.expanded = !node.expanded;
+        const expanded_nodes = $0ae4da76013e664e$var$pages.filter((p)=>p.expanded).length;
+        if (expanded_nodes == 0) // re-expand me.
+        node.expanded = true;
+        Graph.graphData($0ae4da76013e664e$var$build_graph_data($0ae4da76013e664e$var$pages));
+        // center on node in 300 ms, post graph update
+        setTimeout(()=>{
+            center_on_node(node);
+        }, 300);
+    });
+    center_on_node($0ae4da76013e664e$var$node_for_url($0ae4da76013e664e$var$pages, $0ae4da76013e664e$var$initial_expanded_url));
+    function center_on_node(node) {
+        Graph.centerAt(node.x, node.y, 500);
+        Graph.zoom(8, 500);
+        update_detail(node);
+        console.log("zooming to", node);
+    }
+    var $0ae4da76013e664e$var$g_last_detail_node = null;
+    // set click handler for zoom in
+    $("#zoom_control").on("click", ()=>center_on_node($0ae4da76013e664e$var$g_last_detail_node));
+    function update_detail(page) {
+        // replace html of element of id above with the page
+        $0ae4da76013e664e$var$g_last_detail_node = page;
+        const html = (0, $b013a5dd6d18443e$export$fc303307c4ed1d41)(page);
+        const detail = document.getElementById("detail");
+        detail.innerHTML = html;
+    }
 }
 console.log("Post Graph");
 

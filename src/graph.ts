@@ -112,56 +112,61 @@ function TextLabelNodePointerAreaPaint(node, color, ctx) {
       ...bckgDimensions
     );
 }
+// If ForceGraph isn't defined, return
 
-const Graph = ForceGraph()(document.getElementById("graph"))
-  .graphData(build_graph_data(pages))
-  .nodeLabel("id")
-  .nodeAutoColorBy("group")
-  .nodeCanvasObject(TextLabelNodeCanvas)
-  .nodePointerAreaPaint(TextLabelNodePointerAreaPaint)
-  .onNodeRightClick(node => {
-    // Open tne node in a new tab
-    window.open(node.url, "_blank");
-  })
-  .onNodeClick(node => {
-    // Center/zoom on node
-    console.log(node);
+if (typeof ForceGraph === "undefined") {
+  console.log("Force Graph not defined");
+} else {
+  const Graph = ForceGraph()(document.getElementById("graph"))
+    .graphData(build_graph_data(pages))
+    .nodeLabel("id")
+    .nodeAutoColorBy("group")
+    .nodeCanvasObject(TextLabelNodeCanvas)
+    .nodePointerAreaPaint(TextLabelNodePointerAreaPaint)
+    .onNodeRightClick(node => {
+      // Open tne node in a new tab
+      window.open(node.url, "_blank");
+    })
+    .onNodeClick(node => {
+      // Center/zoom on node
+      console.log(node);
 
-    // count expanded nodes
-    node.expanded = !node.expanded;
-    const expanded_nodes = pages.filter(p => p.expanded).length;
-    if (expanded_nodes == 0) {
-      // re-expand me.
-      node.expanded = true;
-    }
-    Graph.graphData(build_graph_data(pages));
+      // count expanded nodes
+      node.expanded = !node.expanded;
+      const expanded_nodes = pages.filter(p => p.expanded).length;
+      if (expanded_nodes == 0) {
+        // re-expand me.
+        node.expanded = true;
+      }
+      Graph.graphData(build_graph_data(pages));
 
-    // center on node in 300 ms, post graph update
-    setTimeout(() => {
-      center_on_node(node);
-    }, 300);
-  });
+      // center on node in 300 ms, post graph update
+      setTimeout(() => {
+        center_on_node(node);
+      }, 300);
+    });
 
-center_on_node(node_for_url(pages, initial_expanded_url));
+  center_on_node(node_for_url(pages, initial_expanded_url));
 
-function center_on_node(node) {
-  Graph.centerAt(node.x, node.y, 500);
-  Graph.zoom(8, 500);
-  update_detail(node);
-  console.log("zooming to", node);
-}
+  function center_on_node(node) {
+    Graph.centerAt(node.x, node.y, 500);
+    Graph.zoom(8, 500);
+    update_detail(node);
+    console.log("zooming to", node);
+  }
 
-var g_last_detail_node = null;
+  var g_last_detail_node = null;
 
-// set click handler for zoom in
-$("#zoom_control").on("click", () => center_on_node(g_last_detail_node));
+  // set click handler for zoom in
+  $("#zoom_control").on("click", () => center_on_node(g_last_detail_node));
 
-function update_detail(page) {
-  // replace html of element of id above with the page
-  g_last_detail_node = page;
-  const html = MakeBackLinkHTML(page);
-  const detail = document.getElementById("detail");
-  detail.innerHTML = html;
+  function update_detail(page) {
+    // replace html of element of id above with the page
+    g_last_detail_node = page;
+    const html = MakeBackLinkHTML(page);
+    const detail = document.getElementById("detail");
+    detail.innerHTML = html;
+  }
 }
 
 console.log("Post Graph");
