@@ -56,7 +56,7 @@ else %}
 
 {% elsif page.imagefeaturelocal %}
 
-    {% capture image_url%}/images/{{page.imagefeaturelocal}}{%endcapture%}
+{% capture image_url%}{{site.url}}/images/{{page.imagefeaturelocal}}{%endcapture%}
 
 {% elsif page.week %}
 
