@@ -19,7 +19,7 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
 
 - [Topic](#topic)
     - [Divide and Conquer - By Person](#divide-and-conquer---by-person)
-    - [Bulk Discount - Staying at the beach house](#bulk-discount---staying-at-the-beach-house)
+    - [Bulk Discount - Stay at the same place the whole time](#bulk-discount---stay-at-the-same-place-the-whole-time)
     - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
 - [By Week](#by-week)
     - [Zach Week - San Fransico](#zach-week---san-fransico)
@@ -70,9 +70,9 @@ Family time is great, but so is time together so I think I'll split the time up,
 - A week with each kid, a week for myself, and a week for the family.
 - All in one place, or travel the world.
 
-### Bulk Discount - Staying at the beach house
+### Bulk Discount - Stay at the same place the whole time
 
-Ma
+- I thought about it, but honestly, why, variety is the spice of life
 
 ### From 12 months to 6 weeks
 
@@ -82,22 +82,53 @@ Four years ago, I dreamed of taking a year off of work. A few things have change
 
 | Week | Dates       | People       | Activities                 | Notes                    |
 | ---- | ----------- | ------------ | -------------------------- | ------------------------ |
-| 1    | July 21     | Zach         | [l1](/l1)                  |                          |
-| 2    | July 28     | Family       | TBD                        |                          |
-| 3    | August 4    | Alone        | TBD                        | A at Farm; Z rowing      |
+| 1    | July 21     | Zach         | [l1](l1)                   |                          |
+| 2    | July 28     | Family       | [l2](l2)                   |                          |
+| 3    | August 4    | Alone        | [l3](l3)                   | A at Farm; Z rowing      |
 | 4    | August 11   | Alone        | TBD                        | A at Film Camp; Z Rowing |
 | 5    | August 18   | Amelia       | TBD                        | Z Rowing                 |
 | 6    | August 25   | Family       | TBD                        |                          |
 | DONE | September 4 | Back to Work | Back to Work/School Starts |                          |
 
   <span>
-  * l1
-  * Coast
+* l1
+* Astoria
+    * Super nice beach town
+    * **LEARN:** Didn't get  a hotel room, super busy Saturday night, spent 300$ for crappy motel 6, many hours away
+* Coast
   * Trees of Mystery
-  * San Fransico
-    * Ride Ferries
-    * San Fransico City Hall
-  <span>
+  * Long nature walk
+  * Light houses
+* San Fransico
+  * City Hall - Zach LOVED it.
+  - ~Alcatraz~ - Sigh sold out
+  - Fisherman's Wharf - Mechano Museum
+  * Ride Trolleys
+  * Coit Tower
+* Foods of SF
+  - Chopino
+  - Sourdough clam chowder bowl
+* MPK
+    * Lunches at 4 different cafeterias
+    * Crazy cool to see just how big it is
+    * Describing the org chage in fuedual structures
+    * E.g. Is VP of Messenger a Protectorate, or a Grand Duke
+
+<div></div>
+
+- l2
+- Long Beach
+  - Cheap Apartment like hotel, get 2 or 3 bedroom suite - [Costal Inn](https://coastalinnhotel.com/accommodations)
+  - Beach Kettlebells
+    - Sad messed up adjustable mechanism
+    - Needed to dig diteches for my feet so they wouldn't slide of
+
+<div></div>
+
+- l3
+- Work
+  - Folks want to know if they got Promos
+  - BUT: I don't find out till today. So coming in to give back results
 
 Stuff happening:
 
@@ -119,38 +150,6 @@ Stuff happening:
   - 3 hours away, camp and telescope
 
 ### Zach Week - San Fransico
-
-- ~Alcatraz~ - Sigh sold out
-- Walk the Golden Gate Bridge
-- Go through thre presadio
-- Fisherman's Wharf
-- Trolley up giant staircase
-  - Find out how
-- Check out golden gate park
-- Meta HQ:
-  - Eat BBQ for lunch
-  - Walk the giant park
-- Foods of SF
-
-  - Dim Sum
-  - Chopino
-  - Sourdough clam chowder bowl
-
-- Monday - Go Down most of Coast
-- Tu
-  - Noon - Arrive in SF
-  - Putz
-- We
-  - SF Stuff
-- Th
-  - MPK
-  - Maureen and Brian
-- Fri
-  - Back to coast
-- Sat
-  - Sea Side
-- Sun
-  - Home
 
 ### Light house passsport
 
