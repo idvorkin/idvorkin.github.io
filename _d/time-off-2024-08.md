@@ -21,6 +21,7 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
     - [Divide and Conquer - By Person](#divide-and-conquer---by-person)
     - [Bulk Discount - Stay at the same place the whole time](#bulk-discount---stay-at-the-same-place-the-whole-time)
     - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
+    - [Tech updates by Repo](#tech-updates-by-repo)
 - [By Week](#by-week)
     - [Light house passsport](#light-house-passsport)
 - [My top priorities](#my-top-priorities)
@@ -76,6 +77,15 @@ Family time is great, but so is time together so I think I'll split the time up,
 ### From 12 months to 6 weeks
 
 Four years ago, I dreamed of taking a year off of work. A few things have changed, Meta doesn't do unpaid leaves, and the software industry has gone through some employment turbulance (e.g. layoffs), so I've replanned and am take a 6 weeks of vaction
+
+### Tech updates by Repo
+
+As of 8/1/2024
+
+- [Tony](https://gist.github.com/idvorkin/8e088c881b82e194d6efefc545d1c7ec)
+- [Nlp](https://gist.github.com/idvorkin/e3e3d28c19198645833a19f50fef7bb5)
+- [Blog](https://gist.github.com/idvorkin/19b4fdf377a79de82809b0f8f5ebab57)
+- [Settings](https://gist.github.com/idvorkin/d2039a76c30f722dbe682e6455eb47ef)
 
 ## By Week
 
