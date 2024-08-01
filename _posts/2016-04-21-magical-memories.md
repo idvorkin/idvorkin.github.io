@@ -30,7 +30,7 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
     - [Purple Intern Magic](#purple-intern-magic)
     - [Freedom Magic](#freedom-magic)
 - [Training](#training)
-- [Philosphical Questions](#philosphical-questions)
+- [Philosophical Questions](#philosophical-questions)
     - [Wonder vs Joy vs Meaning vs Reactions](#wonder-vs-joy-vs-meaning-vs-reactions)
     - [The theory of joy](#the-theory-of-joy)
 - [Favorite Acts](#favorite-acts)
@@ -44,16 +44,16 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 
 ### Early magic memories
 
-- Never really saw magic as a kid, but love to be "amazed". At a french bistro in Fremont, there was a roving magician. His finally was card to ceiling. Looked up and saw cards all over the ceiling.
+- Never really saw magic as a kid, but loved to be "amazed". At a French bistro in Fremont, there was a roving magician. His finale was card to ceiling. Looked up and saw cards all over the ceiling.
 - At the table when Hannibal did [Roadhouse](https://www.youtube.com/watch?v=G1iaCcL9UDw) and his perfect classic force.
 
 ### How I started
 
 {%include local_image_float_right.html src="raccoon-magic.png" %}
 
-- Carl Bystrom's class at magic with a french drop jacket routine (great intro Carl - thanks!)
+- Carl Bystrom's class at magic with a French drop jacket routine (great intro Carl - thanks!)
 - Not knowing how to shuffle and thus having to learn to shuffle till my fingers bled.
-- Meeting the emerald city wizards, and the first night with professional magicians.
+- Meeting the Emerald City Wizards, and the first night with professional magicians.
 - Meeting Felix, and then Jarrod.
 - Meeting Clive
 
@@ -65,14 +65,14 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 ### Highlights
 
 - Card to ceiling and the card:
-  - Still being on the ceiling at Microsoft a year later, someone asked, Hey Taft, why is your name on that card stuck to the ceiling
+  - Still being on the ceiling at Microsoft a year later, someone asked, "Hey Taft, why is your name on that card stuck to the ceiling?"
   - Still being on the ceiling at the gym locker room
 - Girl on the bus that loved my magic trick.
-- Girl at ice cream store who loved the trick, and jump up and down in a circle because it was so awesome.
-- Failure at park where 10 year old told me I got in wrong, but in fact I had done it correctly.
-- Ben's son who carried the card around in his back pack for years.
+- Girl at ice cream store who loved the trick, and jumped up and down in a circle because it was so awesome.
+- Failure at park where 10-year-old told me I got it wrong, but in fact I had done it correctly.
+- Ben's son who carried the card around in his backpack for years.
 - Card to blouse for intern
-- Card across where thought I messed up with audience, but card stuck to guys ass
+- Card across where thought I messed up with audience, but card stuck to guy's ass
 - Giving out unicorn coins
 - Performing at Pike Place
 
@@ -82,9 +82,9 @@ This young man kept this coin for over 18 months, through a pandemic and through
 
 {%include blob_image.html src="magic/2_year_old_unicorn.jpeg" %}
 
-Did a magic trick for a kid, kid kept the card in his back pack for a year, and always showed it to folks.
+Did a magic trick for a kid, kid kept the card in his backpack for a year, and always showed it to folks.
 
-Anniversary card, a waitress saw me and some magicians at the bar, and said, 20 years ago, a magician did this trick, and I've carried this card in my wallet ever since.
+Anniversary card, a waitress saw me and some magicians at the bar, and said, "20 years ago, a magician did this trick, and I've carried this card in my wallet ever since."
 
 #### Bar Magic
 
@@ -92,7 +92,7 @@ Usually I just get to watch Clive perform, but I'll get my own videos here event
 
 #### School magic
 
-Amelia's always proud I do magic. I was at her Kindergarden party, and suddenly they let the kids out and I was surrounded by 15 Kindergardeners who wanted to see magic. It was awesome! I did tricks for lots to them, had them write their names on cards, gave out rubber bands -- was a wonderful experience.
+Amelia's always proud I do magic. I was at her Kindergarten party, and suddenly they let the kids out and I was surrounded by 15 Kindergarteners who wanted to see magic. It was awesome! I did tricks for lots of them, had them write their names on cards, gave out rubber bands -- was a wonderful experience.
 
 #### Interview magic
 
@@ -104,7 +104,7 @@ Amelia's always proud I do magic. I was at her Kindergarden party, and suddenly 
   - Jaw drops.
   - Hard to beat that
 - Guy doing Full-CD said snap your fingers find the bug
-- Recruiters - Dream candidate and linked in
+- Recruiters - Dream candidate and LinkedIn
 - Good candidate - Dream Job
 - TODO something with distraction, or setup card to ceiling
 
@@ -132,7 +132,7 @@ As usual, I was doing magic. On that day, I was doing my "I want you to imagine 
 
 After warming up by doing the magic for a few interns, I went to the bathroom (I do that a lot). As I came out the bathroom door, the waitress gestured me over and said _"my boyfriend is a magician and does a way better version of that ... wanna try it?"_
 
-"Always" I said, and she told me what to do. I went back to the table and Jeff, a cocky intern, told me he was gonna "catch me doing the magic". (If you're wondering, magicians hate that, it ruins it for everyone). _"Sounds great"_ I replied, and got the attention the other interns to see the magic.
+"Always" I said, and she told me what to do. I went back to the table and Jeff, a cocky intern, told me he was gonna "catch me doing the magic". (If you're wondering, magicians hate that, it ruins it for everyone). _"Sounds great"_ I replied, and got the attention of the other interns to see the magic.
 
 I asked Jeff to sign the card and place it in the deck. I then asked Jeff to concentrate on my right pocket, and when he did, the card appeared in the right pocket. Next I asked Jeff to concentrate on my left pocket. But the card wasn't there.
 
@@ -144,9 +144,9 @@ Magic is core to my identity. At my best, I practice 20 hours a week. I walk up 
 
 My fate changed three weeks ago. I saw a woman that looked beaten down by life. Like instinct, I patted the side of my bag, and pulled out a deck of cards that was untouched for months. I asked her to pick a card and write down what she wanted on it. She wrote down freedom. I was a bit disappointed, I like it when magic is personal, and I figured freedom was some political cause. I was wrong.
 
-She placed the freedom card it in the middle of the deck. I told her to focus on her freedom, and her card jumped to the top of the deck. She was suprised. The second time the freedom card jumped to the top, some wonder began creeping into her expression. The third time she was smiling. I told her _"Take this card, and remember whenever you concentrate on what you want, you'll get it."_ Surprised, she looked up, and said quitely _"I really needed that - thank you"._
+She placed the freedom card it in the middle of the deck. I told her to focus on her freedom, and her card jumped to the top of the deck. She was surprised. The second time the freedom card jumped to the top, some wonder began creeping into her expression. The third time she was smiling. I told her _"Take this card, and remember whenever you concentrate on what you want, you'll get it."_ Surprised, she looked up, and said quietly _"I really needed that - thank you"_.
 
-The next day the woman caught my attention while I was going by and said _That magic thing you did was life changing thank you_. I figured she wanted to say something nice so was lying. _"Glad you enjoyed it"_ I said without really stopping. But a lie can be enough, and I restarted my daily magic practice.
+The next day the woman caught my attention while I was going by and said _That magic thing you did was life-changing thank you_. I figured she wanted to say something nice so was lying. _"Glad you enjoyed it"_ I said without really stopping. But a lie can be enough, and I restarted my daily magic practice.
 
 Yesterday I ran into the woman and thanked her - _"When you told me the magic mattered to you, it inspired me to get back into magic"._ She was like, _"oh it was mutually beneficial then"._ She went on _" Literally 2 hours before you did that magic, I'd finalized my divorce of 15 years, and was lost._ She paused for a second, looked me in the eye and said - _"When you gave me that card, you literally handed me my freedom"._
 
@@ -154,7 +154,7 @@ She got her freedom, I got my magic. What will you write on your card?
 
 ### Training
 
-### Philosphical Questions
+### Philosophical Questions
 
 #### Wonder vs Joy vs Meaning vs Reactions
 
@@ -183,17 +183,17 @@ I like lots of his stuff. Roadhouse is racy, but fantastic. Elph boots is great,
 - Carl: That's great, except for the part you're flailing.
 - Felix: Uhm, that's OK, just practice another 9,997 times.
 - Felix, Oh, are you new at magic, maybe try a double lift.
-- Hannibal: Faiure is not an option, it's a requirement. Failure is not a person, it's an event
+- Hannibal: Failure is not an option, it's a requirement. Failure is not a person, it's an event
 
 ### FISM 2022
 
-The olympics of magic. Every 3 years. Amazing time.
+The Olympics of magic. Every 3 years. Amazing time.
 
 10 hours a day of magic
 Amazing magicians
 Dani D'Ortiz - best card magician I've ever seen.
 Class acts:
 _ Jay Sankey, looking at you deeply and finding something positive
-_ Eric Jones, walking through audiance and thanking folks from coming \* Tetro walking around saying surveying what are the best tricks to learn.
+_ Eric Jones, walking through audience and thanking folks from coming \* Tetro walking around saying surveying what are the best tricks to learn.
 
 TODO: link to your FISM Post.
