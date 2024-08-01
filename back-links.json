@@ -25,6 +25,7 @@
         "/alexa-charity": "/toysfortots",
         "/anxious": "/anxiety",
         "/architecture": "/design",
+        "/atomic-habits": "/d/habits",
         "/augmentedreality": "/ar",
         "/ballooning": "/balloon",
         "/bbb": "/build-bubble-bike",
@@ -1298,6 +1299,7 @@
                 "/operating-manual",
                 "/productive",
                 "/psychic-weight",
+                "/sharpen-the-saw",
                 "/switch"
             ],
             "redirect_url": "",
@@ -3548,7 +3550,7 @@
             "file_path": "_site/sharpen-the-saw.html",
             "outgoing_links": [
                 "/7-habits",
-                "/atomic-habits",
+                "/d/habits",
                 "/diet",
                 "/emotional-health",
                 "/physical-health",
@@ -4315,7 +4317,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-08.md",
-            "doc_size": 23000
+            "doc_size": 24000
         },
         "/timeoff": {
             "py/object": "__main__.Page",
