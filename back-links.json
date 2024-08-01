@@ -25,7 +25,6 @@
         "/alexa-charity": "/toysfortots",
         "/anxious": "/anxiety",
         "/architecture": "/design",
-        "/atomic-habits": "/d/habits",
         "/augmentedreality": "/ar",
         "/ballooning": "/balloon",
         "/bbb": "/build-bubble-bike",
@@ -129,6 +128,7 @@
         "/objective": "/goals",
         "/okr": "/goals",
         "/on-being-mortal": "/death",
+        "/pain": "/mental-pain",
         "/parkinson-law": "/parkinson",
         "/parkinsons-law": "/parkinson",
         "/pay": "/comp",
@@ -180,6 +180,8 @@
         "/time-off": "/timeoff",
         "/time-off-2024-02": "/d/time-off-2024-02",
         "/time-off-2024-04": "/d/time-off-2024-04",
+        "/time-off-next": "/time-off-2024-08",
+        "/time-off-now": "/time-off-2024-08",
         "/todo": "/todo_enjoy",
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
@@ -378,7 +380,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/adblocker_trojan.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/addiction": {
             "py/object": "__main__.Page",
@@ -500,7 +502,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-journal.md",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/ai-paper": {
             "py/object": "__main__.Page",
@@ -549,7 +551,7 @@
             ],
             "incoming_links": [
                 "/90days",
-                "/operating-manual",
+                "/manager-book-appendix",
                 "/parkinson",
                 "/writing"
             ],
@@ -601,7 +603,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/anxiety.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/anxiety-management": {
             "py/object": "__main__.Page",
@@ -639,7 +641,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/appreciate2.md",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/ar": {
             "py/object": "__main__.Page",
@@ -799,6 +801,7 @@
             "incoming_links": [
                 "/activation",
                 "/d/time-off-2024-02",
+                "/operating-manual",
                 "/sleep"
             ],
             "redirect_url": "",
@@ -961,6 +964,20 @@
             "markdown_path": "_d/chapters.md",
             "doc_size": 15000
         },
+        "/chasing-daylight": {
+            "py/object": "__main__.Page",
+            "url": "/chasing-daylight",
+            "title": "Chasing Daylight: Imagine you're gonna die in less then 100 days",
+            "description": "Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did. Book is Chasing Daylight. Hi stop advice, what ever you plan to do before you die, move it up.\n\n",
+            "file_path": "_site/chasing-daylight.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/last-year"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/chasing-daylight.md",
+            "doc_size": 11000
+        },
         "/class-act": {
             "py/object": "__main__.Page",
             "url": "/class-act",
@@ -1006,7 +1023,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/coaching.md",
-            "doc_size": 26000
+            "doc_size": 27000
         },
         "/coe": {
             "py/object": "__main__.Page",
@@ -1088,6 +1105,7 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/negotiate",
+                "/operating-manual",
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
@@ -1280,7 +1298,6 @@
                 "/operating-manual",
                 "/productive",
                 "/psychic-weight",
-                "/sharpen-the-saw",
                 "/switch"
             ],
             "redirect_url": "",
@@ -1405,7 +1422,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2021-12.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/d/time-off-2022-02": {
             "py/object": "__main__.Page",
@@ -1557,23 +1574,6 @@
             "markdown_path": "_d/time-off-2024-04.md",
             "doc_size": 16000
         },
-        "/d/time-off-2024-08": {
-            "py/object": "__main__.Page",
-            "url": "/d/time-off-2024-08",
-            "title": "Time off August 2024",
-            "description": "I’m incredibly fortunate to be able to take 6 weeks off this summer! From when performance reviews finish to when the kids go back to school, it’ll be summer vacation.\n\n",
-            "file_path": "_site/d/time-off-2024-08.html",
-            "outgoing_links": [
-                "/happy",
-                "/moments",
-                "/mood",
-                "/timeoff"
-            ],
-            "incoming_links": [],
-            "redirect_url": "",
-            "markdown_path": "_d/time-off-2024-08.md",
-            "doc_size": 18000
-        },
         "/d/where-have-all-the-bugs-gone": {
             "py/object": "__main__.Page",
             "url": "/d/where-have-all-the-bugs-gone",
@@ -1605,7 +1605,6 @@
             "description": "Bad news, you’re dying, so is everyone else. Good news, if we didn’t die we’d run out of resources, and our kids would be screwed. Bad news, our health care system is optimized for keeping you alive, not for maximizing the enjoyable time you have on earth. Good news, knowing is half the battle - armed with this knowledge you can decide how you want to die, which is ultimately how you want to live.\n\n",
             "file_path": "_site/death.html",
             "outgoing_links": [
-                "/igors-last-year",
                 "/last-year"
             ],
             "incoming_links": [
@@ -1629,7 +1628,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "debug.html",
-            "doc_size": 20000
+            "doc_size": 21000
         },
         "/decisive": {
             "py/object": "__main__.Page",
@@ -1974,7 +1973,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-11-28-essentialism.md",
-            "doc_size": 36000
+            "doc_size": 37000
         },
         "/eulogy": {
             "py/object": "__main__.Page",
@@ -2027,7 +2026,7 @@
                 "/covid"
             ],
             "incoming_links": [
-                "/operating-manual"
+                "/manager-book-appendix"
             ],
             "redirect_url": "",
             "markdown_path": "_d/facebook.md",
@@ -2344,16 +2343,16 @@
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
                 "/d/time-off-2023-11",
-                "/d/time-off-2024-08",
                 "/hobby",
                 "/joy",
                 "/mood",
                 "/siy",
+                "/time-off-2024-08",
                 "/timeoff"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-04-12-happy.md",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/heath-class-act": {
             "py/object": "__main__.Page",
@@ -2414,7 +2413,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-12-humans-are-underrated.md",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/husband": {
             "py/object": "__main__.Page",
@@ -2578,7 +2577,7 @@
                 "/eulogy",
                 "/job-hunt-stress",
                 "/manager-book",
-                "/operating-manual"
+                "/manager-book-appendix"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
@@ -2647,6 +2646,7 @@
             "description": "Bad news, you’ve got a last year on earth. Good news, if you’re lucky you’ll accept that “grand father dies, father dies, son dies” is the best blessing you can have (imagine a different ordering). If you’re luckier, you’ll have age appropriate health right up till that last year, or even better that last few months. If you’re even luckier you’ll have the strength to do what you want in your personal “centenarian Olympics”.\n\n",
             "file_path": "_site/last-year.html",
             "outgoing_links": [
+                "/chasing-daylight",
                 "/death"
             ],
             "incoming_links": [
@@ -2656,7 +2656,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/last-year.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/laws-of-power": {
             "py/object": "__main__.Page",
@@ -2775,7 +2775,6 @@
                 "/dsat",
                 "/job",
                 "/manager-book-appendix",
-                "/operating-manual",
                 "/software-leadership-roles",
                 "/y24"
             ],
@@ -2790,16 +2789,21 @@
             "description": "A hodgepodge of additional resources for the manager book.\n\n",
             "file_path": "_site/manager-book-appendix.html",
             "outgoing_links": [
+                "/amazon",
                 "/books-that-defined-me",
+                "/facebook",
+                "/job",
                 "/manager-book",
-                "/parkinson"
+                "/parkinson",
+                "/writing"
             ],
             "incoming_links": [
-                "/manager-book"
+                "/manager-book",
+                "/operating-manual"
             ],
             "redirect_url": "",
             "markdown_path": "_d/manager-book-appendix.md",
-            "doc_size": 28000
+            "doc_size": 29000
         },
         "/mania": {
             "py/object": "__main__.Page",
@@ -2823,7 +2827,7 @@
             "py/object": "__main__.Page",
             "url": "/mental-pain",
             "title": "The thoughts that pain us",
-            "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flairs up even though it is no longer providing value.\n\n",
+            "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.\n\n",
             "file_path": "_site/mental-pain.html",
             "outgoing_links": [
                 "/anxiety",
@@ -2850,7 +2854,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/mental-pain.md",
-            "doc_size": 18000
+            "doc_size": 20000
         },
         "/mermaid": {
             "py/object": "__main__.Page",
@@ -2874,7 +2878,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/micro-economics.md",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/mind-at-work": {
             "py/object": "__main__.Page",
@@ -2968,10 +2972,10 @@
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
                 "/d/time-off-2023-11",
-                "/d/time-off-2024-08",
                 "/happy",
                 "/moments-at-work",
-                "/random-idea"
+                "/random-idea",
+                "/time-off-2024-08"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2018-04-03-moments.md",
@@ -3032,9 +3036,9 @@
                 "/regrets"
             ],
             "incoming_links": [
-                "/d/time-off-2024-08",
                 "/energy",
-                "/happy"
+                "/happy",
+                "/time-off-2024-08"
             ],
             "redirect_url": "",
             "markdown_path": "_d/mood.md",
@@ -3127,25 +3131,24 @@
             "py/object": "__main__.Page",
             "url": "/operating-manual",
             "title": "Igor the operating manual",
-            "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency.\n\n",
+            "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency. Super important: You don’t raise to the level of your goals, you fall to the level of your systems\n\n",
             "file_path": "_site/operating-manual.html",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
-                "/amazon",
                 "/anxiety",
                 "/bike",
+                "/blueprint",
                 "/covid",
+                "/curious",
                 "/d/habits",
                 "/d/timeoff-07-2022",
                 "/diet",
                 "/emotional-health",
                 "/eulogy",
-                "/facebook",
                 "/hobby",
                 "/ig66/587",
-                "/job",
                 "/magic",
-                "/manager-book",
+                "/manager-book-appendix",
                 "/money",
                 "/parkinson",
                 "/physical-health",
@@ -3545,7 +3548,7 @@
             "file_path": "_site/sharpen-the-saw.html",
             "outgoing_links": [
                 "/7-habits",
-                "/d/habits",
+                "/atomic-habits",
                 "/diet",
                 "/emotional-health",
                 "/physical-health",
@@ -3610,7 +3613,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/siy.md",
-            "doc_size": 55000
+            "doc_size": 56000
         },
         "/sleep": {
             "py/object": "__main__.Page",
@@ -3661,6 +3664,18 @@
             "redirect_url": "",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
             "doc_size": 23000
+        },
+        "/slow": {
+            "py/object": "__main__.Page",
+            "url": "/slow",
+            "title": "Rest and Digest - Sometimes you'd rather go slow ",
+            "description": "Igor's Blog",
+            "file_path": "_site/slow.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "slow.md",
+            "doc_size": 11000
         },
         "/smilebox": {
             "py/object": "__main__.Page",
@@ -3945,7 +3960,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/data-systems.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/td/dump_imessage_history": {
             "py/object": "__main__.Page",
@@ -4075,6 +4090,18 @@
             "markdown_path": "_td/ring-video-download.md",
             "doc_size": 11000
         },
+        "/td/slow_zsh": {
+            "py/object": "__main__.Page",
+            "url": "/td/slow_zsh",
+            "title": "Slow ZSH prompts",
+            "description": "All of the sudden, hititng enter in zsh took seconds - took me a while, but I realized if I kiled tmux (not just a window), then it would be fast again (well, that’s better then a reboot I guess. Sigh, this drove me nuts and I just switched to Atuin instead\n\n",
+            "file_path": "_site/td/slow_zsh.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_td/slow_zsh.md",
+            "doc_size": 13000
+        },
         "/td/sqlalchemy-redshift": {
             "py/object": "__main__.Page",
             "url": "/td/sqlalchemy-redshift",
@@ -4111,7 +4138,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/streaks.md",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/td/usbtech": {
             "py/object": "__main__.Page",
@@ -4173,7 +4200,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/windbg.md",
-            "doc_size": 9000
+            "doc_size": 10000
         },
         "/tech-health-toys": {
             "py/object": "__main__.Page",
@@ -4273,6 +4300,23 @@
             "markdown_path": "_posts/2020-01-01-the-recruiter-does-not-think-you-are-hot.md",
             "doc_size": 12000
         },
+        "/time-off-2024-08": {
+            "py/object": "__main__.Page",
+            "url": "/time-off-2024-08",
+            "title": "Time off August 2024",
+            "description": "I’m incredibly fortunate to be able to take 6 weeks off this summer! From when performance reviews finish to when the kids go back to school, it’ll be summer vacation.\n\n",
+            "file_path": "_site/time-off-2024-08.html",
+            "outgoing_links": [
+                "/happy",
+                "/moments",
+                "/mood",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-off-2024-08.md",
+            "doc_size": 23000
+        },
         "/timeoff": {
             "py/object": "__main__.Page",
             "url": "/timeoff",
@@ -4306,14 +4350,14 @@
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
                 "/d/time-off-2023-11",
-                "/d/time-off-2024-08",
                 "/energy",
                 "/mind-at-work",
-                "/parkinson"
+                "/parkinson",
+                "/time-off-2024-08"
             ],
             "redirect_url": "",
             "markdown_path": "_d/time_off.md",
-            "doc_size": 31000
+            "doc_size": 32000
         },
         "/todo_enjoy": {
             "py/object": "__main__.Page",
@@ -4561,6 +4605,7 @@
                 "/amazon",
                 "/enable",
                 "/manager-book",
+                "/manager-book-appendix",
                 "/operating-manual"
             ],
             "redirect_url": "",
