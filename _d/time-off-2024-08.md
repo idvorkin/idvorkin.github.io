@@ -82,13 +82,6 @@ Four years ago, I dreamed of taking a year off of work. A few things have change
 
 ### Tech updates by Repo
 
-As of 8/1/2024
-
-- [Tony](https://gist.github.com/idvorkin/8e088c881b82e194d6efefc545d1c7ec)
-- [Nlp](https://gist.github.com/idvorkin/e3e3d28c19198645833a19f50fef7bb5)
-- [Blog](https://gist.github.com/idvorkin/19b4fdf377a79de82809b0f8f5ebab57)
-- [Settings](https://gist.github.com/idvorkin/d2039a76c30f722dbe682e6455eb47ef)
-
 ## By Week
 
 | Week Dates - People         | Activities                 | Notes                    |
@@ -291,7 +284,25 @@ Things to do:
 
 ## Tech Guru (X/5)
 
-- Outline my talk for GPT, likely based on Langchain tools
+Major Finds:
+
+- ☑ Fixed my slow zsh thing (was pomodoro) [/td/sow](/td/slow_zsh)
+- ☐ Figured out uv (replaces pip), and pipxu (replaces global pip install)
+- ☐ Switch to Atuin from Mcly (no diff)
+- ☐ Found Aider - still too crappy
+
+Per repo finds
+
+- [Tony](https://gist.github.com/idvorkin/8e088c881b82e194d6efefc545d1c7ec)
+- [Nlp](https://gist.github.com/idvorkin/e3e3d28c19198645833a19f50fef7bb5)
+- [Blog](https://gist.github.com/idvorkin/19b4fdf377a79de82809b0f8f5ebab57)
+- [Settings](https://gist.github.com/idvorkin/d2039a76c30f722dbe682e6455eb47ef)
+
+Hopeful todos
+
+- ☐ Update bestie to use more of toni's stuf
+- ☐ Update toni to include todo support
+- ☐ Give Tony Bestie support
 
 ## Cognitive Health (X/5)
 
