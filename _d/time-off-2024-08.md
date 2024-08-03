@@ -32,11 +32,19 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
 - [Moments](#moments)
 - [Success Stories](#success-stories)
 - [Top Learnings](#top-learnings)
+- [Relationships](#relationships)
+    - [Friends](#friends)
+    - [Tori](#tori)
+    - [Zach](#zach)
+    - [Amelia](#amelia)
+- [Identity Health](#identity-health)
+    - [Magic](#magic)
+    - [Biking](#biking)
 - [Tech Guru (X/5)](#tech-guru-x5)
     - [Enabling Environment](#enabling-environment)
     - [Tony](#tony)
     - [Other AI](#other-ai)
-    - [CUT:](#cut)
+    - [CUT](#cut)
 - [Cognitive Health (X/5)](#cognitive-health-x5)
     - [Blog posts](#blog-posts)
 - [Emotional Health (4/5)](#emotional-health-45)
@@ -198,6 +206,36 @@ Things to do:
 - Got dinner before unpacking
 
 ## Top Learnings
+
+## Relationships
+
+### Friends
+
+- ☑ Walk with Bob
+
+### Tori
+
+### Zach
+
+- ☐ Take him somewhere to go for a bike ride on the car
+
+### Amelia
+
+- ☐ Take her somewhere to go for a bike ride on the car
+
+## Identity Health
+
+### Magic
+
+- ☐ Practice Daily
+- ☐ Find a place to practice card to ceiling
+- ☐ Find a place to work on Tamiriz
+
+### Biking
+
+- ☐ Repair my cargo bike computer
+- ☐ Look at bubble bike setup
+- ☑ Setup my Tesla bike carrier
 
 ## Tech Guru (X/5)
 
