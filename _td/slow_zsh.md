@@ -5,7 +5,20 @@ title: Slow ZSH prompts
 
 All of the sudden, hititng enter in zsh took seconds - took me a while, but I realized if I kiled tmux (not just a window), then it would be fast again (well, that's better then a reboot I guess. **Sigh, this drove me nuts and I just switched to Atuin instead**
 
+Groan, looks like Atuin is hitting the same problem, but has an error message about it being slow to write to disk:
+
+[https://github.com/atuinsh/atuin/issues/2328](https://github.com/atuinsh/atuin/issues/2328)
+
+Hymn, looks a lot like this tmux slow issue:
+
+[https://github.com/tmux/tmux/issues/2551](https://github.com/tmux/tmux/issues/2551)
+
+Ah, looks like my tmux plugins where still getting loaded (and pomodoro was still in memory - lets see if he was the culprit)
+
 Profiling Zsh
+
+    zmodload zsh/zprof
+    zprof
 
 Looks like the issue is mcfly's input
 

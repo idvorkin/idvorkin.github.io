@@ -21,7 +21,6 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
     - [Divide and Conquer - By Person](#divide-and-conquer---by-person)
     - [Bulk Discount - Stay at the same place the whole time](#bulk-discount---stay-at-the-same-place-the-whole-time)
     - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
-    - [Tech updates by Repo](#tech-updates-by-repo)
 - [By Week](#by-week)
 - [Stuff happening](#stuff-happening)
     - [Candidates](#candidates)
@@ -33,17 +32,11 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
 - [Moments](#moments)
 - [Success Stories](#success-stories)
 - [Top Learnings](#top-learnings)
-- [Relationships (3/5)](#relationships-35)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
-- [Identity Health (x/5)](#identity-health-x5)
-    - [Biking](#biking)
-    - [Ballooning](#ballooning)
-    - [Joy Activities](#joy-activities)
-    - [Magic](#magic)
 - [Tech Guru (X/5)](#tech-guru-x5)
+    - [Enabling Environment](#enabling-environment)
+    - [Tony](#tony)
+    - [Other AI](#other-ai)
+    - [CUT:](#cut)
 - [Cognitive Health (X/5)](#cognitive-health-x5)
     - [Blog posts](#blog-posts)
 - [Emotional Health (4/5)](#emotional-health-45)
@@ -54,11 +47,12 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
     - [Statistics](#statistics)
     - [Diet](#diet)
     - [Sleep](#sleep)
-- [House and goods](#house-and-goods)
+    - [Exercise](#exercise)
 - [Inner Peace (X/5)](#inner-peace-x5)
     - [General Inner Peace](#general-inner-peace)
     - [Work](#work)
     - [Family](#family)
+- [House and goods](#house-and-goods)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -79,8 +73,6 @@ Family time is great, but so is time together so I think I'll split the time up,
 ### From 12 months to 6 weeks
 
 Four years ago, I dreamed of taking a year off of work. A few things have changed, Meta doesn't do unpaid leaves, and the software industry has gone through some employment turbulence (e.g. layoffs), so I've replanned and am taking 6 weeks of vacation
-
-### Tech updates by Repo
 
 ## By Week
 
@@ -176,7 +168,6 @@ I found a lighthouse passport thing! I assumed it was a stamp book (A book with 
 
 - **Diet** - I should be pretty close to steady state goal (165 ish). I guess don't go up more than 5 lbs
 
-  - Start of: May 180; June 175; July 170; August 165;
   - Go to grocery store and load up on healthy food
   - Bring my travel scale
 
@@ -208,101 +199,40 @@ Things to do:
 
 ## Top Learnings
 
-<!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
-
-- [Relationships (3/5)](#relationships-35)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
-- [Identity Health (x/5)](#identity-health-x5)
-    - [Biking](#biking)
-    - [Ballooning](#ballooning)
-    - [Joy Activities](#joy-activities)
-    - [Magic](#magic)
-- [Tech Guru (X/5)](#tech-guru-x5)
-- [Cognitive Health (X/5)](#cognitive-health-x5)
-    - [Blog posts](#blog-posts)
-- [Emotional Health (4/5)](#emotional-health-45)
-    - [Meditation](#meditation)
-    - [750 words/Gratefulness](#750-wordsgratefulness)
-- [Motivation (X/5)](#motivation-x5)
-- [Physical Habits (4/5)](#physical-habits-45)
-    - [Statistics](#statistics)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
-- [House and goods](#house-and-goods)
-- [Inner Peace (X/5)](#inner-peace-x5)
-    - [General Inner Peace](#general-inner-peace)
-    - [Work](#work)
-    - [Family](#family)
-
-<!-- vim-markdown-toc -->
-<!-- prettier-ignore-end -->
-
-## Relationships (3/5)
-
-- Did much of the cooking and groceries myself. Really enjoyed it!
-- Zach and kids enjoyed it too!
-
-### Friends
-
-- Nada, just me and the family
-
-### Tori
-
-- Private
-
-### Zach
-
-- Daily walk
-
-### Amelia
-
-- Daily Activity ( Brainstorm this with her)
-
-## Identity Health (x/5)
-
-### Biking
-
-- ☐ Rent a bike for a day
-
-### Ballooning
-
-- ☐ Give out at least 2 balloons a day
-- ☐ Practice gun and teddy bear daily
-
-### Joy Activities
-
-- Nothing
-
-### Magic
-
-- ☐ Daily practice -
-- ☐ Every day - perform for someone
-
 ## Tech Guru (X/5)
 
-Major Finds:
+### Enabling Environment
 
-- ☑ Fixed my slow zsh thing (was pomodoro) [/td/sow](/td/slow_zsh)
-- ☐ Figured out uv (replaces pip), and pipxu (replaces global pip install)
-- ☐ Switch to Atuin from Mcly (no diff)
-- ☐ Found Aider - still too crappy
+- ☐ STRETCH: See if I can connect typer to carapace
+- ☐ STRETCH: Consider caching the autocompletion commands in zsh
+- ☑ Quickly setup mason, need to review all those damn tools
+- ☑ Fixed my slow zsh thing (was pomodoro) [/td/slow](/td/slow_zsh). Still didn't get to the bottom of it, curious
+- ☑ Figured out uv (replaces pip), and pipxu (replaces global pip install)
+- ☑ Switch to Atuin from Mcly (no diff)
 
-Per repo finds
+### Tony
+
+- ☐ Update toni to include memory/todo tracking
+- ☑ Implement Search via Perplexity
+- ☑ Callable on cli via bestie
+
+### Other AI
+
+- ☑ Retrained AmmontGPT on GPT-o mini, so far seems worse
+- ☑ Upgraded to newer langchain things (look up model)
+- ☑ Play with AI Coding helpers (aider) - crap!
+- ☐ CUT: Look at more Agent Tools (Crew, and AgentZero)
+
+Per repo changes
 
 - [Tony](https://gist.github.com/idvorkin/8e088c881b82e194d6efefc545d1c7ec)
 - [Nlp](https://gist.github.com/idvorkin/e3e3d28c19198645833a19f50fef7bb5)
 - [Blog](https://gist.github.com/idvorkin/19b4fdf377a79de82809b0f8f5ebab57)
 - [Settings](https://gist.github.com/idvorkin/d2039a76c30f722dbe682e6455eb47ef)
 
-Hopeful todos
+### CUT
 
-- ☐ Update bestie to use more of toni's stuf
-- ☐ Update toni to include todo support
-- ☐ Give Tony Bestie support
+- Outline my talk for GPT, likley based on on Langchain tools
 
 ## Cognitive Health (X/5)
 
@@ -328,21 +258,30 @@ Hopeful todos
 
 ### Statistics
 
-Weight Start: 165
+Weight Start: 178
 Weight End:
 Gym Days: -
 
 ### Diet
 
-- tbd
+- Bring a cooler
+- I really like cauliflower rice
+- Feel free to skip meals
+- Be happy going to bakery and looking at the tasty things and not eating them.
+- Be happy throwing away junk food - nothing wrong with that.
 
 ### Sleep
 
-- tbd
+- Hard to get up early doing long driving days, but recovering it.
+- Real key here is to get to bed early, and not get stuck on the phone.
 
-## House and goods
+### Exercise
 
-- NONE!
+- Tried bringing KBs in the car with me. Adjustable KB broke. Worried about them rolling around
+- Kettleback rack 1 sided squats feel good, and don't need to flip into the goblet position
+- Got 5lbs indian clubs - super heavy
+- 1 arm swings work well
+- Need to be happy with partial work out.
 
 ## Inner Peace (X/5)
 
@@ -353,8 +292,13 @@ Gym Days: -
 
 ### Work
 
-- I should be spending 0 time on this
+- I should be spending 0 time on this, except giving back reviews for 2 days
 
 ### Family
 
 - Lets focus on compassion and the sublime states
+
+## House and goods
+
+- ☐ Move office to upstairs
+- ☐ Seal up AC to be more effective
