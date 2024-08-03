@@ -8,8 +8,14 @@ export function replacePlaceholdersWithLists(listReplacements) {
     if (!placeholderLink.length) return; // Placeholder not found, skip
 
     const listClone = $(list).clone();
-    listClone.children().first().remove(); // Remove the 'lookup id' from the list
+    listClone
+      .children()
+      .first()
+      .remove(); // Remove the 'lookup id' from the list
     placeholderLink.replaceWith(listClone);
+
+    // remove the list from the document
+    $(list).remove();
   });
 }
 

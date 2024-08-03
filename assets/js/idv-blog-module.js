@@ -8,6 +8,8 @@
         const listClone = $(list).clone();
         listClone.children().first().remove(); // Remove the 'lookup id' from the list
         placeholderLink.replaceWith(listClone);
+        // remove the list from the document
+        $(list).remove();
     });
 }
 function $baa5cd42515c3a0f$export$87fc814c53cfbd54() {
@@ -112,30 +114,6 @@ function $b013a5dd6d18443e$var$generateToc(id, showPinToc) {
     if (showPinToc) tocMenu.append(forceSideBar);
     target.append(tocMenu);
 }
-// Yuk: Markdown Table Syntax makes nesting lists in tables hard. Adding JS based macro
-// Replacement
-//  NOTE: replace [](lX) with a list where X is a number
-//  List must start with *lX
-//  Markdown does not seperate lists, so stick divs between them.
-function $b013a5dd6d18443e$var$JsTemplateReplace() {
-    // Build a cache of replacement candidates to avoid multiple iterations over the tables
-    let replaces = {};
-    for (var list of $("ul")){
-        if (!list.firstElementChild) continue;
-        let firstLIText = list.firstElementChild.textContent;
-        if (!firstLIText.startsWith("l")) continue;
-        let number = parseInt(firstLIText.substring(1));
-        if (Number.isNaN(number)) continue;
-        replaces[firstLIText] = list;
-    }
-    for(var replaceText in replaces){
-        let aToReplace = _($(`a[href=${replaceText}]`)).head();
-        if (!aToReplace) continue; // Non-replaced targets will be left in place
-        const replace = replaces[replaceText];
-        replace.removeChild(replace.firstElementChild); // remove the 'lookup id' from the list
-        $(aToReplace).replaceWith(replace);
-    }
-}
 function $b013a5dd6d18443e$export$fc303307c4ed1d41(url_info) {
     const title_href = `<a href=${url_info.url}>${url_info.title}</a>`;
     const class_link = `link-box description truncate-css`;
@@ -147,11 +125,11 @@ function $b013a5dd6d18443e$export$fc303307c4ed1d41(url_info) {
 }
 async function $b013a5dd6d18443e$var$AddLinksToPage(allUrls) {
     // TODO handle redirects
-    var my_path = new URL(document.URL).pathname;
-    const backlinks = allUrls[my_path]?.incoming_links;
-    const frontlinks = allUrls[my_path]?.outgoing_links;
+    const page_path = new URL(document.URL).pathname;
+    const backlinks = allUrls[page_path]?.incoming_links;
+    const frontlinks = allUrls[page_path]?.outgoing_links;
     if (!backlinks && !frontlinks) {
-        console.log(`No backlinks for the page ${my_path}`);
+        console.log(`No backlinks for the page ${page_path}`);
         return;
     }
     let link_parent_location = $("#links-to-page");
@@ -167,10 +145,16 @@ async function $b013a5dd6d18443e$var$AddLinksToPage(allUrls) {
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#outgoing" type="button" role="tab" aria-controls="outgoing" aria-selected="false">Link from here</button>
   </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#graph" type="button" role="tab" aria-controls="outgoing" aria-selected="false">Graph</button>
+  </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active " id="incoming" role="tabpanel" aria-labelledby="incoming-tab"></div>
   <div class="tab-pane fade" id="outgoing" role="tabpanel" aria-labelledby="outgoing-tab"></div>
+  <div class="tab-pane fade" id="graph" role="tabpanel" aria-labelledby="outgoing-tab">
+    <span> View the graph for: </span>
+  </div>
 </div>
 `);
     let incoming_location = link_parent_location.find("#incoming");
@@ -188,7 +172,9 @@ async function $b013a5dd6d18443e$var$AddLinksToPage(allUrls) {
         outgoing_location.append($b013a5dd6d18443e$export$fc303307c4ed1d41(url_info));
     }
     console.log("Added Graph");
-    outgoing_location.append("<a href='/graph#joy'>View Graph</a>");
+    const graph_location = link_parent_location.find("#graph");
+    const stripped_page_path = page_path.replace(/\//g, "");
+    graph_location.append(`<a href='/graph#${stripped_page_path}'>${page_path} (${stripped_page_path}) </a>`);
 }
 function $b013a5dd6d18443e$var$make_html_summary_link(link, url_info) {
     const attribution = `(From:<a href='${url_info.url}'> ${url_info.title}</a>)`;
@@ -298,7 +284,6 @@ async function $b013a5dd6d18443e$export$7691c4557333f2d2(parent_id, random_html_
 }
 function $b013a5dd6d18443e$export$38653e1d7f0b5689() {
     $($b013a5dd6d18443e$var$add_link_loader);
-    $($b013a5dd6d18443e$var$JsTemplateReplace);
     $($b013a5dd6d18443e$var$keyboard_shortcut_loader);
     $(()=>{
         // TOC Generation should go to posts.
