@@ -12,6 +12,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 - [AI Developer, vs a Software Engineer using AI](#ai-developer-vs-a-software-engineer-using-ai)
 - [Programs, Human Code, AI.](#programs-human-code-ai)
 - [Design Patterns](#design-patterns)
+    - [Levels of Cognative Architecture](#levels-of-cognative-architecture)
     - [Maximize the workflow and computation in your programs.](#maximize-the-workflow-and-computation-in-your-programs)
     - [Provide context to your model for Ground your model](#provide-context-to-your-model-for-ground-your-model)
     - [Use multiple AIs to maximize the value.](#use-multiple-ais-to-maximize-the-value)
@@ -43,7 +44,7 @@ An AI developer would instead do:
 - Figure out how much of it AI can do.
 - Close the gap.
 
-## Programs, Human Code, AI.
+## Programs, Human Code, AI
 
 At the hand-wavy, programs are workflow and computation, where computation is defined recursively.
 
@@ -69,7 +70,27 @@ The AI developer thrives to get the AI to the highest level possible
 
 ## Design Patterns
 
-### Maximize the workflow and computation in your programs.
+### Levels of Cognative Architecture
+
+This content nicely copied from [langchain](https://blog.langchain.dev/what-is-a-cognitive-architecture/):
+
+![Picture of cognative arch](https://blog.langchain.dev/content/images/size/w1600/2024/07/Screenshot-2024-06-28-at-7.33.10-PM.png)
+
+**First:** If we refer back to this slide (originally from my TED Talk) on the different levels of autonomy in LLM applications, we can see examples of different cognitive architectures.
+
+**Code:** First is just code - everything is hard coded. Not even really a cognitive architecture.
+
+**Single LLM Call:** Next is just a single LLM call. Some data preprocessing before and/or after, but a single LLM call makes up the majority of the application. Simple chatbots likely fall into this category.
+
+**Chain of LLM Calls:** Next is a chain of LLM calls. This sequence can be either breaking the problem down into different steps, or just serve different purposes. More complex RAG pipelines fall into this category: use a first LLM call to generate a search query, then a second LLM call to generate an answer.
+
+**Router:** After that, a router. Prior to this, you knew all the steps the application would take ahead of time. Now, you no longer do. The LLM decides which actions to take. This adds in a bit more randomness and unpredictability.
+
+**State Machine:** The next level is what I call a state machine. This is combining an LLM doing some routing with a loop. This is even more unpredictable, as by combining the router with a loop, the system could (in theory) invoke an unlimited number of LLM calls.
+
+**Agent (Autonomous Agent):** The final level of autonomy is the level I call an agent, or really an “autonomous agent”. With state machines, there are still constraints on which actions can be taken and what flows are executed after that action is taken. With autonomous agents, those guardrails are removed. The system itself starts to decide which steps are available to take and what the instructions are: this can be done by updating the prompts, tools, or code used to power the system.
+
+### Maximize the workflow and computation in your programs
 
 1. Understand use case
 2. Make crappy prompt
@@ -83,7 +104,7 @@ The AI developer thrives to get the AI to the highest level possible
 
 Currently more complex, figuring it out.
 
-### Use multiple AIs to maximize the value.
+### Use multiple AIs to maximize the value
 
 - Run same prompt through multiple AIs
 - Show user multiple outputs
@@ -102,7 +123,7 @@ Obviously world models need to be much bigger, and data will go stale.
 
 ### AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)
 
-Today ‘summarise this document’ is AI, and you need a cloud LLM that costs $20/month, but tomorrow the OS will do that for free. ‘AI is whatever doesn’t work yet.’
+Today ‘summarise this document’ is AI, and you need a cloud LLM that costs \$20/month, but tomorrow the OS will do that for free. ‘AI is whatever doesn’t work yet.’
 
 From [Ben Evans](https://www.ben-evans.com/benedictevans/2024/06/20/apple-intelligence):
 
@@ -158,13 +179,13 @@ Great line from Altman, we're currently using them for data retreival, but their
 - Raptor
 - DSpy
 
-## External Posts:
+## External Posts
 
 - [What we've learn in a year of building LLMS](https://applied-llms.org/)
 - [How to Prompting](https://eugeneyan.com/writing/prompting/)
 - [Apple Intelligence](https://www.ben-evans.com/benedictevans/2024/06/20/apple-intelligence)
 
-## Several posts on this topic:
+## Several posts on this topic
 
 {% include summarize-page.html src="/ai-testing" %}
 
