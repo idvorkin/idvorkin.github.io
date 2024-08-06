@@ -14,9 +14,6 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 
 <!-- vim-markdown-toc GFM -->
 
-- [NEEDS UPDATE: The Good - Hiring and Onboarding](#needs-update-the-good---hiring-and-onboarding)
-    - [Unallocated hires](#unallocated-hires)
-    - [Bootcamp](#bootcamp)
 - [The Good - Engineering Systems](#the-good---engineering-systems)
     - [Why they're so good](#why-theyre-so-good)
     - [A Trust Driven Social Company](#a-trust-driven-social-company)
@@ -32,6 +29,9 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
     - [Employees First](#employees-first)
     - [Facebook Groups instead of e-mail](#facebook-groups-instead-of-e-mail)
     - [The Trio: Engineering, Product Management and Data Science](#the-trio-engineering-product-management-and-data-science)
+- [TO UPDATE: The Good - Hiring and Onboarding](#to-update-the-good---hiring-and-onboarding)
+    - [Unallocated hires](#unallocated-hires)
+    - [Bootcamp](#bootcamp)
 - [The peculiar](#the-peculiar)
     - [Monorepo](#monorepo)
     - [Mercurial instead of git](#mercurial-instead-of-git)
@@ -40,7 +40,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
     - [Anxiety around reviews](#anxiety-around-reviews)
 - [My projects at Facebook](#my-projects-at-facebook)
     - [Messenger:](#messenger)
-    - [Everything Together: Shareplay for  Messenger](#everything-together-shareplay-for--messenger)
+    - [Everything Together: Shareplay for Messenger](#everything-together-shareplay-for-messenger)
     - [CO-Ex: Creating a virtual living](#co-ex-creating-a-virtual-living)
     - [AR: Having fun and reducing the burden of attention](#ar-having-fun-and-reducing-the-burden-of-attention)
     - [Bonus learnings at Facebook](#bonus-learnings-at-facebook)
@@ -63,28 +63,6 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
-
-## NEEDS UPDATE: The Good - Hiring and Onboarding
-
-**Post hyper growth (~2023), Meta adjusted this process, and it's currently in flux**
-
-FB has an exceptionally good and unique hiring and onboarding process.
-
-### Unallocated hires
-
-Many big companies say they hire for the company, not the team, at which point they assign you to a team you know almost nothing about. Your chance to learn about the team is usually a few minutes at the end of 5-6 grueling interviews and a 30-minute "sales pitch" from a hiring manager.
-
-At FB, they really mean you're hired for the company, so you join without picking a team. Then you get 6-10 weeks (boot camp) to find a team you like. This process includes "sitting" with various teams for a week or so. When sitting with a team, you work on a task with the team, which lets you see if you like the team, tech, and enjoy your time with them. As a result, you have a lot more data before signing up to where you'll work for the next few years of your career.
-
-### Bootcamp
-
-Ramping up is hard, so at FB, you get 6-10 weeks dedicated to learning about Facebook and picking a team. Managers also go through boot camp and code, which lets them better understand the FB culture and empathize with the engineers they support. A major part of boot camp is doing tasks, which is hands-on learning, and a way to understand if you like the team you'll be working with.
-
-FB takes boot camp very seriously, and you're assigned an experienced mentor to guide you through the process, who guides you very closely at the start, and then advises you more generally as you get farther into boot camp.
-
-As a techie, nothing gives you the confidence like knowing you've shipped, so FB makes it super easy for all boot campers to deploy a 'hello world' to FB on their first few days, and fix their first production bug in the first week. The reason this is possible is FB has fantastic engineering systems, and curates super easy tasks so this is so easy even managers can do it :)
-
-NOTE: I did boot camp through Pandemic 1, so my experience might be a bit different, and I'm happy to talk through it.
 
 ## The Good - Engineering Systems
 
@@ -192,6 +170,28 @@ I was very skeptical of this at first, and always concerned I'd miss something, 
   - I can't articulate why this is good, but it really is.
 
 ### The Trio: Engineering, Product Management and Data Science
+
+## TO UPDATE: The Good - Hiring and Onboarding
+
+**Post hyper growth (~2023), Meta adjusted this process, and it's currently in flux**
+
+FB has an exceptionally good and unique hiring and onboarding process.
+
+### Unallocated hires
+
+Many big companies say they hire for the company, not the team, at which point they assign you to a team you know almost nothing about. Your chance to learn about the team is usually a few minutes at the end of 5-6 grueling interviews and a 30-minute "sales pitch" from a hiring manager.
+
+At FB, they really mean you're hired for the company, so you join without picking a team. Then you get 6-10 weeks (boot camp) to find a team you like. This process includes "sitting" with various teams for a week or so. When sitting with a team, you work on a task with the team, which lets you see if you like the team, tech, and enjoy your time with them. As a result, you have a lot more data before signing up to where you'll work for the next few years of your career.
+
+### Bootcamp
+
+Ramping up is hard, so at FB, you get 6-10 weeks dedicated to learning about Facebook and picking a team. Managers also go through boot camp and code, which lets them better understand the FB culture and empathize with the engineers they support. A major part of boot camp is doing tasks, which is hands-on learning, and a way to understand if you like the team you'll be working with.
+
+FB takes boot camp very seriously, and you're assigned an experienced mentor to guide you through the process, who guides you very closely at the start, and then advises you more generally as you get farther into boot camp.
+
+As a techie, nothing gives you the confidence like knowing you've shipped, so FB makes it super easy for all boot campers to deploy a 'hello world' to FB on their first few days, and fix their first production bug in the first week. The reason this is possible is FB has fantastic engineering systems, and curates super easy tasks so this is so easy even managers can do it :)
+
+NOTE: I did boot camp through Pandemic 1, so my experience might be a bit different, and I'm happy to talk through it.
 
 ## The peculiar
 
