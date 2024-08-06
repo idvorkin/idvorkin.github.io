@@ -14,7 +14,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 
 <!-- vim-markdown-toc GFM -->
 
-- [The Good - Hiring and Onboarding](#the-good---hiring-and-onboarding)
+- [NEEDS UPDATE: The Good - Hiring and Onboarding](#needs-update-the-good---hiring-and-onboarding)
     - [Unallocated hires](#unallocated-hires)
     - [Bootcamp](#bootcamp)
 - [The Good - Engineering Systems](#the-good---engineering-systems)
@@ -39,9 +39,11 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 - [The Bad - Still learning](#the-bad---still-learning)
     - [Anxiety around reviews](#anxiety-around-reviews)
 - [My projects at Facebook](#my-projects-at-facebook)
+    - [Messenger:](#messenger)
+    - [Everything Together: Shareplay for  Messenger](#everything-together-shareplay-for--messenger)
     - [CO-Ex: Creating a virtual living](#co-ex-creating-a-virtual-living)
     - [AR: Having fun and reducing the burden of attention](#ar-having-fun-and-reducing-the-burden-of-attention)
-    - [Bonus leanings at Facebook](#bonus-leanings-at-facebook)
+    - [Bonus learnings at Facebook](#bonus-learnings-at-facebook)
 - [From Facebook to Meta and the metaverse](#from-facebook-to-meta-and-the-metaverse)
     - [Why is the metaverse taking so long](#why-is-the-metaverse-taking-so-long)
 - [Core Values (LP's)](#core-values-lps)
@@ -53,6 +55,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 - [How Engineers and EMs are evaluated](#how-engineers-and-ems-are-evaluated)
     - [Engineers](#engineers)
     - [Engineering Manager](#engineering-manager)
+    - [Interviews](#interviews)
 - [Lingo and Culture](#lingo-and-culture)
     - [Show up with grace](#show-up-with-grace)
     - [TL;DR](#tldr)
@@ -61,29 +64,31 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## The Good - Hiring and Onboarding
+## NEEDS UPDATE: The Good - Hiring and Onboarding
+
+**Post hyper growth (~2023), Meta adjusted this process, and it's currently in flux**
 
 FB has an exceptionally good and unique hiring and onboarding process.
 
 ### Unallocated hires
 
-Many big companies say they hire for the company not the team, at which point they assign you to a team you know almost nothing about. Your chance to learn about the team is usually a few minutes at the end of 5-6 grueling interviews and a 30 minutes "sales pitch" from a hiring manager.
+Many big companies say they hire for the company, not the team, at which point they assign you to a team you know almost nothing about. Your chance to learn about the team is usually a few minutes at the end of 5-6 grueling interviews and a 30-minute "sales pitch" from a hiring manager.
 
-At FB, they really mean you're hired for the company, so you join without picking a team. Then you get 6-10 weeks (boot camp) to find a team you like. This process includes "sitting" with various teams for a week or so. When sitting with a team you work on a task with the team which lets you see if you like the team, tech and enjoy your time with them. As a result you have a lot more data before signing up to where you'll work for the next few years of your career.
+At FB, they really mean you're hired for the company, so you join without picking a team. Then you get 6-10 weeks (boot camp) to find a team you like. This process includes "sitting" with various teams for a week or so. When sitting with a team, you work on a task with the team, which lets you see if you like the team, tech, and enjoy your time with them. As a result, you have a lot more data before signing up to where you'll work for the next few years of your career.
 
 ### Bootcamp
 
-Ramping up is hard, so at FB you get 6-10 weeks dedicated to learning about Facebook and picking a team. Managers also go through bootcamp and code, this lets them better understand the FB culture and empathize with the engineers they support. A major part of bootcamp is doing tasks, which is hands on learning, and a way to understand if you like the team you'll be working with.
+Ramping up is hard, so at FB, you get 6-10 weeks dedicated to learning about Facebook and picking a team. Managers also go through boot camp and code, which lets them better understand the FB culture and empathize with the engineers they support. A major part of boot camp is doing tasks, which is hands-on learning, and a way to understand if you like the team you'll be working with.
 
-FB takes bootcamp very seriously, and you're assigned an experienced mentor to guide you through the process, who guides you very closely at the start, and then advises you more generally as you get farther into bootcamp.
+FB takes boot camp very seriously, and you're assigned an experienced mentor to guide you through the process, who guides you very closely at the start, and then advises you more generally as you get farther into boot camp.
 
 As a techie, nothing gives you the confidence like knowing you've shipped, so FB makes it super easy for all boot campers to deploy a 'hello world' to FB on their first few days, and fix their first production bug in the first week. The reason this is possible is FB has fantastic engineering systems, and curates super easy tasks so this is so easy even managers can do it :)
 
-NOTE: I did bootcamp through Pandemic 1 so my experience might be a bit different, and I'm happy to talk through it.
+NOTE: I did boot camp through Pandemic 1, so my experience might be a bit different, and I'm happy to talk through it.
 
 ## The Good - Engineering Systems
 
-The best I've ever used. As I learn what is public and private I'll share more details.
+The best I've ever used. As I learn what is public and private, I'll share more details.
 
 ### Why they're so good
 
@@ -93,7 +98,7 @@ I don't know for sure, but I suspect a few things:
 - The company values engineering systems and has several teams whose role is to make things great
 - Employees get hack-months to fix stuff they're passionate about
 - Employees can choose what they work on, and if an engineer wants to fix the system that annoys them, they do.
-- Because it's a single code base (See mono-repo) engineers easily see and can build all the code, so there's a low barrier to entry to fix issues.
+- Because it's a single code base (See monorepo), engineers easily see and can build all the code, so there's a low barrier to entry to fix issues.
 
 ### A Trust Driven Social Company
 
@@ -103,7 +108,7 @@ From a FB Manager
 
 ### Open source lots
 
-Many FB tools get open sourced, tupperware, mercurial improvements, flow, even data center hardware designs -- what a pleasant contrast to most other places
+Many FB tools get open sourced, Tupperware, Mercurial improvements, Flow, even data center hardware designs -- what a pleasant contrast to most other places
 
 ### Top-notch data tools
 
@@ -126,7 +131,7 @@ This will be an area I write lots as it's this is some of Facebook's unique valu
 
 ### Managers don't tell employees what to work on
 
-Instead, they help employees evaluate what projects they should use. They clarify the needs of the team and larger org, and help employees evaluate which projects are a good fit for their interests, the business, and their growth needs. It is the employee's choice though, and regardless of their choice the manager will help the employee be successful.
+Instead, they help employees evaluate what projects they should use. They clarify the needs of the team and larger org, and help employees evaluate which projects are a good fit for their interests, the business, and their growth needs. It is the employee's choice though, and regardless of their choice, the manager will help the employee be successful.
 
 ### Inclusion and Diversity
 
@@ -134,7 +139,7 @@ At AMZN, I was in the inclusion bar raiser program, which was in its infancy, so
 
 The first lecture I saw at FB started with an explanation of using pronouns, and then many folks talking openly about their gender and identity. Super cool, and I loved the talk from the D&I officer.
 
-At the core you want D&I because:
+At the core, you want D&I because:
 
 - Being authentic brings your all to the job.
 - We need the cognitive diversity to make our product the best.
@@ -165,7 +170,7 @@ Wow!!!
 
 Facebook has an enterprise product called Workspace, which is essentially FB. FB uses this instead of email.
 
-I was very skeptical of this at first, and always concerned I'd miss something, but after a few months of use I acclimatized, and now I love it, and would hate going back to email. Here are some translations/great things about it.
+I was very skeptical of this at first, and always concerned I'd miss something, but after a few months of use, I acclimatized, and now I love it, and would hate going back to email. Here are some translations/great things about it.
 
 - Stuff that translates to email.
 
@@ -196,15 +201,15 @@ Peculiar when you come from large companies other than Google.
 
 ### Mercurial instead of git
 
-Partially because of the choice of Monorepo, FB needed to push changes back to the community, git didn't want to take them so they pushed them to Mercurial. Sadly, mercurial lost (which is a shame, as I think Mercurial was better).
+Partially because of the choice of Monorepo, FB needed to push changes back to the community, git didn't want to take them, so they pushed them to Mercurial. Sadly, Mercurial lost (which is a shame, as I think Mercurial was better).
 
 ### No job title bias
 
 _This probably upgrades to the good section - but definitely peculiar right now coming from AMZN/MSFT_
 
-FB is bottom up, which means they do not believe in positional authority (e.g. you don't get authority due to position high in the org, you get it because people want to listen to you).
+FB is bottom up, which means they do not believe in positional authority (e.g., you don't get authority due to position high in the org, you get it because people want to listen to you).
 
-To facilitate this, FB does not have job titles, (e.g. SDE-I, SDE-II) and levels are confidential information.
+To facilitate this, FB does not have job titles, (e.g., SDE-I, SDE-II) and levels are confidential information.
 
 Job titles bias you into having a preconceived notion of how much authority you should give the person talking. In a perfect world, you'd grant this authority based on the merit of a person's statement and work, which is what FB optimizes for.
 
@@ -218,17 +223,27 @@ _I'm new, will add my thoughts as I know them_
 
 **UPDATE**: Facebook responded to this and has updated their policy to only have reviews annually (ps - I'd prefer addressing these problems but having evaluations every 6 months)
 
-Relative to MSFT and AMZN folks are very concerned about reviews. I've debugged this a bit and here's my thinking
+Relative to MSFT and AMZN folks are very concerned about reviews. I've debugged this a bit, and here's my thinking
 
 1. Everyone else is concerned about it.
 1. It happens twice a year
 1. The impact on salary is formulaic and transparent
-1. In theory, the ratings are relative to other employees each half (vs absolute) so you can't know what a rating is. In practice though, ratings seem very stable, and consistent even with the other companies I've worked it.
+1. In theory, the ratings are relative to other employees each half (vs absolute) so you can't know what a rating is. In practice, though, ratings seem very stable, and consistent even with the other companies I've worked at.
 1. Everyone around you is a high achiever
 1. There are [7 rating buckets](https://www.cnbc.com/2019/01/08/facebook-culture-cult-performance-review-process-blamed.html) though the majority of folks land in 2 buckets.
 1. Until you're senior (E5), you need to be promoted in a fixed amount of time.
 
 ## My projects at Facebook
+
+### Messenger:
+
+- Shared Albums
+- Memories
+
+### Everything Together: Shareplay for Messenger
+
+- Beta Integrated with Tubi
+- Crazy fun project
 
 ### CO-Ex: Creating a virtual living
 
@@ -240,18 +255,18 @@ Relative to MSFT and AMZN folks are very concerned about reviews. I've debugged 
 - Augmented Reality in Messenger
 - Operational Excellence
 
-### Bonus leanings at Facebook
+### Bonus learnings at Facebook
 
 ## From Facebook to Meta and the metaverse
 
-There are lots of jokes about the metaverse, but I'm a big fan, I'll I'll tell you why.
+There are lots of jokes about the metaverse, but I'm a big fan, I'll tell you why.
 
 In 2020, had a college hire wanted to do a 1:1 in VR instead of in person.
-Annoyed, buy hey that's why we hire college hires, to get new ideas. Took 20 minutes to set up, virtual conference room. Cartoony, but then ... He sits beside me, right in the chair beside me. Shoulder to shoulder, very uncomfortable. Told him he had to move, and he said in relief, oh you felt that too, yeah - that was awkward.
+Annoyed, but hey that's why we hire college hires, to get new ideas. Took 20 minutes to set up, virtual conference room. Cartoony, but then ... He sits beside me, right in the chair beside me. Shoulder to shoulder, very uncomfortable. Told him he had to move, and he said in relief, oh you felt that too, yeah - that was awkward.
 
-Next, open of horizon worlds ... creator ... showed me how to configure correctly, told me about art ...
+Next, open of Horizon Worlds ... creator ... showed me how to configure correctly, told me about art ...
 
-In 2022, lord of the rings. How do we solve this sim the real world? Identity and social norms. Group chats are like this.
+In 2022, Lord of the Rings. How do we solve this sim the real world? Identity and social norms. Group chats are like this.
 
 ### Why is the metaverse taking so long
 
@@ -301,6 +316,10 @@ Used to be move fast and break stuff, but that's not good at this size. Now it's
 - People - Team Growth/Hiring/Team Happiness (via feedback and surveys)
 - Organizational Impact - Your social work, mine are own EM growth, mentoring, PSCs and recruiting
 - Collaboration - How well you worked with other teams to deliver.
+
+### Interviews
+
+- Meta does both [System Design and Product System Design](https://www.hellointerview.com/blog/meta-system-vs-product-design) - I really, really enjoy both.
 
 ## Lingo and Culture
 

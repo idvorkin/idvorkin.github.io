@@ -243,6 +243,7 @@ Things to do:
 
 - ☐ STRETCH: See if I can connect typer to carapace
 - ☐ STRETCH: Consider caching the autocompletion commands in zsh
+- ☑ Manage issues in github via [Octo](https://github.com/pwntester/octo.nvim)
 - ☑ Quickly setup mason, need to review all those damn tools
 - ☑ Fixed my slow zsh thing (was pomodoro) [/td/slow](/td/slow_zsh). Still didn't get to the bottom of it, curious
 - ☑ Figured out uv (replaces pip), and pipxu (replaces global pip install)
