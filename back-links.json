@@ -939,6 +939,22 @@
             "markdown_path": "_posts/2017-01-10-Canadian-Spotting.md",
             "doc_size": 12000
         },
+        "/caring": {
+            "py/object": "__main__.Page",
+            "url": "/caring",
+            "title": "Caring - The story of emotional intensity",
+            "description": "Lets define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don’t control), brings us down. Much of this post is based on the work of Dr. Raph, and a book on stoicism The practicing stoic.\n\n",
+            "file_path": "_site/caring.html",
+            "outgoing_links": [
+                "/depression"
+            ],
+            "incoming_links": [
+                "/depression"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/caring.md",
+            "doc_size": 19000
+        },
         "/cert-error": {
             "py/object": "__main__.Page",
             "url": "/cert-error",
@@ -1707,6 +1723,7 @@
             ],
             "incoming_links": [
                 "/anger",
+                "/caring",
                 "/mood"
             ],
             "redirect_url": "",
