@@ -18,6 +18,8 @@ Unless you've experienced depression, you can't understand it. Even having exper
 
 {% include youtube.html src="-eBUcBfkVCo" %}
 
+An excellent post on depression from [Dr Raph](https://whatilearnedsofar.com/theory/depression/)
+
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc GFM -->
@@ -75,6 +77,7 @@ I've tried lots of things, being consistent is hard, especially when you get dep
 - [Impostor Syndrome ](/imposter)
 - [Psychic Weight](/psychic-weight)
 - [Your Idle loop](/idle-loop)
+- [Caring](/care)
 
 ### Books On Depression
 
