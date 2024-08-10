@@ -5,6 +5,7 @@ permalink: /caring
 redirect_from:
   - /care
   - /passion
+imagefeaturelocal: raccoon-caring.webp
 ---
 
 Lets define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don't control), brings us down. Much of this post is based on the work of [Dr. Raph](https://whatilearnedsofar.com/), and a book on stoicism [The practicing stoic](https://www.amazon.com/dp/B0954XFJ4R).
@@ -13,7 +14,7 @@ Lets define caring, as the intensity of our emotions, critical given a lack of e
 <!-- vim-markdown-toc GFM -->
 
 - [Why do I care so much?](#why-do-i-care-so-much)
-        - [The dark path from not caring to depression.](#the-dark-path-from-not-caring-to-depression)
+    - [The dark path from not caring to depression.](#the-dark-path-from-not-caring-to-depression)
 - [Good Caring](#good-caring)
     - [Nurturing curiosity](#nurturing-curiosity)
     - [Caring vs Mattering](#caring-vs-mattering)
@@ -26,7 +27,7 @@ Lets define caring, as the intensity of our emotions, critical given a lack of e
     - [Caring and isolation](#caring-and-isolation)
     - [False caring?](#false-caring)
     - [Caring and Vegetation](#caring-and-vegetation)
-    - [Caring vs  Action](#caring-vs--action)
+    - [Caring vs Action](#caring-vs-action)
 - [From Dr. Raph](#from-dr-raph)
     - [What are we talking about?](#what-are-we-talking-about)
         - [Q for DR. Raph](#q-for-dr-raph)
@@ -38,11 +39,13 @@ Lets define caring, as the intensity of our emotions, critical given a lack of e
 
 I've been depressed before. It's awful. Clinically, the loss of passion is the main symptom of major-depression. This hallmark depressive symptom, known as ‘anhedonia’, is defined in the psychiatric diagnostic manual as “a markedly diminished interest or pleasure, in all or almost all, activities most of the day,
 
+{% include local_image_float_right.html src="raccoon-caring.webp" %}
+
 If you want to know more feel free to watch the video on my depression post:
 
 {%include summarize-page.html src="/depression" %}
 
-#### The dark path from not caring to depression.
+### The dark path from not caring to depression.
 
 I imagine my passions as a healthy fire with many logs fueling it. With depression that fire is out, and boy restarting it is hard.
 
