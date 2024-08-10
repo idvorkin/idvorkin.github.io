@@ -40,6 +40,7 @@
         "/breathing": "/breath",
         "/bryan-johnson": "/blueprint",
         "/Business-Model-You": "/bmy",
+        "/care": "/caring",
         "/centenarian": "/last-year",
         "/classact": "/class-act",
         "/coach": "/coaching",
@@ -132,6 +133,7 @@
         "/pain": "/mental-pain",
         "/parkinson-law": "/parkinson",
         "/parkinsons-law": "/parkinson",
+        "/passion": "/caring",
         "/pay": "/comp",
         "/pd": "/timeoff",
         "/perfect-job": "/job",
@@ -485,7 +487,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai-developer.md",
-            "doc_size": 20000
+            "doc_size": 23000
         },
         "/ai-journal": {
             "py/object": "__main__.Page",
@@ -1689,6 +1691,7 @@
             "outgoing_links": [
                 "/7-habits",
                 "/anxiety",
+                "/caring",
                 "/eulogy",
                 "/getting-to-yes-with-yourself",
                 "/gtd",
@@ -1708,7 +1711,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/depression.md",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/design": {
             "py/object": "__main__.Page",
@@ -2032,7 +2035,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/facebook.md",
-            "doc_size": 27000
+            "doc_size": 28000
         },
         "/fail": {
             "py/object": "__main__.Page",
@@ -4099,10 +4102,12 @@
             "description": "All of the sudden, hititng enter in zsh took seconds - took me a while, but I realized if I kiled tmux (not just a window), then it would be fast again (well, that’s better then a reboot I guess. Sigh, this drove me nuts and I just switched to Atuin instead\n\n",
             "file_path": "_site/td/slow_zsh.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/time-off-2024-08"
+            ],
             "redirect_url": "",
             "markdown_path": "_td/slow_zsh.md",
-            "doc_size": 13000
+            "doc_size": 15000
         },
         "/td/sqlalchemy-redshift": {
             "py/object": "__main__.Page",
@@ -4312,6 +4317,7 @@
                 "/happy",
                 "/moments",
                 "/mood",
+                "/td/slow_zsh",
                 "/timeoff"
             ],
             "incoming_links": [],
