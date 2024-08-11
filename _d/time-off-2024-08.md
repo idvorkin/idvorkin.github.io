@@ -44,6 +44,7 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
     - [Enabling Environment](#enabling-environment)
     - [Tony](#tony)
     - [Other AI](#other-ai)
+    - [Video publishing](#video-publishing)
     - [CUT](#cut)
 - [Cognitive Health (X/5)](#cognitive-health-x5)
     - [Blog posts](#blog-posts)
@@ -248,6 +249,8 @@ Things to do:
 - ☑ Fixed my slow zsh thing (was pomodoro) [/td/slow](/td/slow_zsh). Still didn't get to the bottom of it, curious
 - ☑ Figured out uv (replaces pip), and pipxu (replaces global pip install)
 - ☑ Switch to Atuin from Mcly (no diff)
+- ☑ Add third and half to yabi
+- ☑ HOORAY - Got Caps-><space> mapping to alfred in iterm (OMG - this has been a huge paper cut for months)
 
 ### Tony
 
@@ -268,6 +271,18 @@ Per repo changes
 - [Nlp](https://gist.github.com/idvorkin/e3e3d28c19198645833a19f50fef7bb5)
 - [Blog](https://gist.github.com/idvorkin/19b4fdf377a79de82809b0f8f5ebab57)
 - [Settings](https://gist.github.com/idvorkin/d2039a76c30f722dbe682e6455eb47ef)
+
+### Video publishing
+
+- Using Loom to Record Videos (FaceCam) and then edit via text (Super cool)
+
+Using alfred and yabai:
+
+{%include youtube.html src="_isNIAuHnEg" %}
+
+Using think.py:
+
+{%include youtube.html src="DuluVSnJGqg" %}
 
 ### CUT
 
