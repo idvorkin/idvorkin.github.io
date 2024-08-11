@@ -251,6 +251,7 @@ Things to do:
 - ☑ Switch to Atuin from Mcly (no diff)
 - ☑ Add third and half to yabi
 - ☑ HOORAY - Got Caps-><space> mapping to alfred in iterm (OMG - this has been a huge paper cut for months)
+- ☑ Started using url shortner via [tinyurl and web link](https://chromewebstore.google.com/detail/url-shortener/godoifjoiadanijplaghmhgfeffnblib)
 
 ### Tony
 
