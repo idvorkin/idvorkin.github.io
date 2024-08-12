@@ -127,6 +127,7 @@
         "/mr": "/ar",
         "/negotiation": "/negotiate",
         "/nonjudgment": "/curious",
+        "/nvim": "/vim",
         "/objective": "/goals",
         "/okr": "/goals",
         "/on-being-mortal": "/death",
@@ -1889,6 +1890,8 @@
             "file_path": "_site/enable.html",
             "outgoing_links": [
                 "/switch",
+                "/vim",
+                "/vim-for-writing",
                 "/writing"
             ],
             "incoming_links": [
@@ -1896,7 +1899,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/enabling-environment.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/end-in-mind": {
             "py/object": "__main__.Page",
@@ -4340,7 +4343,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-08.md",
-            "doc_size": 24000
+            "doc_size": 25000
         },
         "/timeoff": {
             "py/object": "__main__.Page",
@@ -4465,6 +4468,20 @@
             "markdown_path": "_d/upstream.md",
             "doc_size": 14000
         },
+        "/vim": {
+            "py/object": "__main__.Page",
+            "url": "/vim",
+            "title": "Igors Vim Tips",
+            "description": "I use nvim lots, but constantly forget what I want to practice. Here’s a list to remind me.\n\n",
+            "file_path": "_site/vim.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/enable"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/vim_tips.md",
+            "doc_size": 10000
+        },
         "/vim-for-writing": {
             "py/object": "__main__.Page",
             "url": "/vim-for-writing",
@@ -4473,6 +4490,7 @@
             "file_path": "_site/vim-for-writing.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/enable",
                 "/writing"
             ],
             "redirect_url": "",
