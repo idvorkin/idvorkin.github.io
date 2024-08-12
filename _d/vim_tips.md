@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Igors Vim Tips
+title: "Igors Vim Tips"
 permalink: /vim
 redirect_from:
-    - /nvim
+  - /nvim
 ---
 
 I use nvim lots, but constantly forget what I want to practice. Here's a list to remind me.
