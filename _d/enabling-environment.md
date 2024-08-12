@@ -34,7 +34,7 @@ Imagine the place you do your best work. Andy Matuschak defined this, and as som
     - [Connected Graphs](#connected-graphs)
 - [AI Augmentation](#ai-augmentation)
     - [Critical Thinking](#critical-thinking)
-    - [Other folks work here:](#other-folks-work-here)
+    - [Other folks work here](#other-folks-work-here)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -53,6 +53,13 @@ There's so much to say here. Pulling in some content from Andy:
 - Igor's [about page](/about)
 - Some of the [features](https://github.com/idvorkin/idvorkin.github.io) in the readme.
 - Tons of [VIM/CLI stuff](https://github.com/idvorkin/settings)
+- My general vim notes
+
+{%include summarize-page.html src="/vim" %}
+
+- Vim specifically for writing
+
+{%include summarize-page.html src="/vim-for-writing" %}
 
 At its core, is writing:
 
