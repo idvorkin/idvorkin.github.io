@@ -106,6 +106,7 @@
         "/life-stages": "/chapters",
         "/lisp": "/sicp",
         "/llm-intern": "/genai-talk",
+        "/llm-security": "/ai-security",
         "/llm-talk": "/genai-talk",
         "/llm-training": "/ai-training",
         "/loneliness": "/lonely",
@@ -211,7 +212,6 @@
     },
     "url_info": {
         "/22": {
-            "py/object": "__main__.Page",
             "url": "/22",
             "title": "What I wish I knew at 22 and so might you!",
             "description": "In 2019 I created a program for 15 fantastic interns! A program highlight was my talk titled “What I wish I knew at 22, and so might you”. The talk received a 94% overall rating from over 15 interns, 10 SDE-IIs, and 1 senior developer. Even though the talk focuses on how to live the good life, a big chunk of life is work, so there’s good coverage on how to optimize your career.\n\n",
@@ -226,7 +226,6 @@
             "doc_size": 13000
         },
         "/40yo": {
-            "py/object": "__main__.Page",
             "url": "/40yo",
             "title": "Age Before Beauty: The Vanishing Act of Older Coders",
             "description": "In 2002, I started programming at MSFT with lots of other 20-year-olds. I don’t recall the age distributions, but maybe 90% of the programmers I knew were under 40. In 2020, at 41, I’m no longer a programmer, and the majority of programmers are much younger than me. This begs the question, where do all the programmers go as they get older? I’m very curious about the answer. Here are some of my theories….\n\n",
@@ -242,7 +241,6 @@
             "doc_size": 15000
         },
         "/42": {
-            "py/object": "__main__.Page",
             "url": "/42",
             "title": "What I wish I knew at 42",
             "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember , a healthy person has a thousand wishes, a sick person just one - things i wish I knew at 42\n\n",
@@ -261,7 +259,6 @@
             "doc_size": 14000
         },
         "/7-habits": {
-            "py/object": "__main__.Page",
             "url": "/7-habits",
             "title": "Seven Habits: A manual for life",
             "description": "Need a user manual for life? For me, that’s The 7 Habits of Highly Effective People. From dependant, to independent to interdependant, and then rinse and repeat for the the different roles in your life. Like other self-helf books? Excellent chance it’s a reframe or deep dive into these concepts.\n\n",
@@ -299,7 +296,6 @@
             "doc_size": 15000
         },
         "/7h-concepts": {
-            "py/object": "__main__.Page",
             "url": "/7h-concepts",
             "title": "7 habits concepts",
             "description": "To discuss the 7 habits we need some foundational ideas, P/PC, paradigms, etc. These are my insights based on the 7 habits Chapter 0.\n\n",
@@ -318,7 +314,6 @@
             "doc_size": 15000
         },
         "/90days": {
-            "py/object": "__main__.Page",
             "url": "/90days",
             "title": "The first 90 days",
             "description": "A how to guide for starting your next job.\n\n",
@@ -340,7 +335,6 @@
             "doc_size": 43000
         },
         "/about": {
-            "py/object": "__main__.Page",
             "url": "/about",
             "title": "Where am I?",
             "description": "Igor's Blog",
@@ -352,7 +346,6 @@
             "doc_size": 16000
         },
         "/activation": {
-            "py/object": "__main__.Page",
             "url": "/activation",
             "title": "Activation Energy",
             "description": "Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here’s a model for these things.\n\n",
@@ -373,7 +366,6 @@
             "doc_size": 16000
         },
         "/adblocker-trojan": {
-            "py/object": "__main__.Page",
             "url": "/adblocker-trojan",
             "title": "The Mystery of the google ads",
             "description": "Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a back background. It was caused by a trojan running in my chrome extension, which I suspect was installed by a name-jacked NPM plugin.\n\n",
@@ -387,7 +379,6 @@
             "doc_size": 15000
         },
         "/addiction": {
-            "py/object": "__main__.Page",
             "url": "/addiction",
             "title": "Escape Artists: The True Face of Addiction",
             "description": "Addiction is not about drugs or alcohol - it is about escape. Quoting “Do the Work”: When we can’t stand the fear, the shame, and the self-reproach that we feel, we obliterate it with an addiction. The addiction becomes the shadow version, the evil twin of our calling to service or to art. That’s why addicts are so interesting and so boring at the same time. They’re interesting because they’re called to something — something new, something unique, something that we, watching, can’t wait to see them bring forth into manifestation. At the same time, they’re boring because they never do the work. The addiction becomes his purpose, his novel, his adventure, his great love. The work of art or service that might have been produced is replaced by the drama, conflict, and suffering of the addict’s crazy, haunted, shattered life.\n\n",
@@ -415,7 +406,6 @@
             "doc_size": 16000
         },
         "/affirmations": {
-            "py/object": "__main__.Page",
             "url": "/affirmations",
             "title": "Affirmations",
             "description": "Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You’ll want to find the ones that speak best to you.\n\n",
@@ -440,7 +430,6 @@
             "doc_size": 14000
         },
         "/ai-art": {
-            "py/object": "__main__.Page",
             "url": "/ai-art",
             "title": "AI and art",
             "description": "Creativity is a criticial aspect of art, and that’s something which I think AI can be really good at. Some very random ideas\n\n",
@@ -457,7 +446,6 @@
             "doc_size": 14000
         },
         "/ai-bestie": {
-            "py/object": "__main__.Page",
             "url": "/ai-bestie",
             "title": "Igor's AI Bestie Simulator",
             "description": "My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75, P95). I have years of chat history, and so this seemed like a super fun way to get deeper into ML. This is created and shared with his permission.\n\n",
@@ -472,7 +460,6 @@
             "doc_size": 18000
         },
         "/ai-developer": {
-            "py/object": "__main__.Page",
             "url": "/ai-developer",
             "title": "AI Developer",
             "description": "ML Engineer is a hot new job. It’s the boys and girls who train and deploy models. I heard the word AI developer the other day, and I’ll refer to it as AI application engineers. People who use AI to solve use cases. NOTE: This is not what most developers do today. What most developers do today is ask how can AI do the things I would have done (e.g. write the function).\n\n",
@@ -491,13 +478,13 @@
             "doc_size": 23000
         },
         "/ai-journal": {
-            "py/object": "__main__.Page",
             "url": "/ai-journal",
             "title": "Igor's AI Journal",
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
             "file_path": "_site/ai-journal.html",
             "outgoing_links": [
                 "/ai-art",
+                "/ai-security",
                 "/genai-talk",
                 "/gpt"
             ],
@@ -506,22 +493,33 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-journal.md",
-            "doc_size": 23000
+            "doc_size": 24000
         },
         "/ai-paper": {
-            "py/object": "__main__.Page",
             "url": "/ai-paper",
             "title": "Seminal AI Papers",
-            "description": "The original AI papers were all about training, super technical, and not that usable as a practioner. Now a days papers are less “mathy” and more applicable to practioners. Here are some worth reading\n\n",
+            "description": "The original AI papers were all about training, super technical, and not that usable as a practitioner. Nowadays papers are less “mathy” and more applicable to practitioners. Here are some worth reading\n\n",
             "file_path": "_site/ai-paper.html",
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai_papers.md",
-            "doc_size": 13000
+            "doc_size": 11000
+        },
+        "/ai-security": {
+            "url": "/ai-security",
+            "title": "AI Security",
+            "description": "Security is super interesting, AI is super interesting, the combination, is super-duper interesting!\n\n",
+            "file_path": "_site/ai-security.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/ai-journal"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/ai-security.md",
+            "doc_size": 12000
         },
         "/ai-testing": {
-            "py/object": "__main__.Page",
             "url": "/ai-testing",
             "title": "Testing AI",
             "description": "Testing math is easy, it’s right or wrong. Test spelling is easy too, but testing if a joke is funny - now that’s tough. Let’s talk about how to test AI\n\n",
@@ -539,7 +537,6 @@
             "doc_size": 18000
         },
         "/amazon": {
-            "py/object": "__main__.Page",
             "url": "/amazon",
             "title": "My thoughts on Amazon",
             "description": "I spent 4 years working at Amazon, some things I loved, some not so much. Amazon is a huge company and the variation of behavior within a company exceeds the variation between the “median” behavior between companies. Even within the two teams I was on at Amazon I saw the exact opposite behaviors. When I talk about the good, I’ll talk about the ideal good, and when I talk about the bad, I’ll talk to some issues I saw that were systemically bad. As a result you’ll often see me describing something as both good and bad, as it’s done differently in different parts of the company.\n\n",
@@ -564,7 +561,6 @@
             "doc_size": 26000
         },
         "/anger": {
-            "py/object": "__main__.Page",
             "url": "/anger",
             "title": "Anger is the enemy",
             "description": "It’s 8am; The normal rush, the kids are late to school, we’re yelling at them to eat their breakfast, pack their lunch, brush their teeth, get ready for school. 30 minutes earlier, I’d decided I’d bike Amelia, my 7 year old daughter, to school. I told Tori, my wife, who normally drives the kids to school. Tori didn’t acknowledge me. As I got my bike helmet Tori put the kids in the car. I ran out and tried to get her attention, waving frantically and running the car. (In my head), Tori ignored me, wouldn’t look at me, even as I ran to the car and gesticulated wildly. I really had my heart set on biking Amelia to school, and I went into a rage, as Tori pulled off, I flipped her off. Adulting fail - not my best moment.\n\n",
@@ -581,7 +577,6 @@
             "doc_size": 14000
         },
         "/anxiety": {
-            "py/object": "__main__.Page",
             "url": "/anxiety",
             "title": "Anxiety, the gap between reality and expectations",
             "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.\n\n",
@@ -610,7 +605,6 @@
             "doc_size": 20000
         },
         "/anxiety-management": {
-            "py/object": "__main__.Page",
             "url": "/anxiety-management",
             "title": "Anxiety Management",
             "description": "When your emotions aren’t serving you well, it’s helpful to have a solid protocol. First you need to rebuild perspective, and then you need to focus on maximizing your influence.\n\n",
@@ -631,7 +625,6 @@
             "doc_size": 18000
         },
         "/appreciate": {
-            "py/object": "__main__.Page",
             "url": "/appreciate",
             "title": "Appreciate",
             "description": "Think of the last time you were appreciated: How did you feel? Think about the last hour: How many things could you have appreciated? It takes 7 positive experiences to make up for 1 negative experience - what can you appreciate?\n\n",
@@ -648,7 +641,6 @@
             "doc_size": 11000
         },
         "/ar": {
-            "py/object": "__main__.Page",
             "url": "/ar",
             "title": "Augmented Reality",
             "description": "My notes on AR\n\n",
@@ -660,7 +652,6 @@
             "doc_size": 15000
         },
         "/asciinema": {
-            "py/object": "__main__.Page",
             "url": "/asciinema",
             "title": "asciinema",
             "description": "Lets clean this up and see what it looks like …\n\n",
@@ -672,7 +663,6 @@
             "doc_size": 10000
         },
         "/balance": {
-            "py/object": "__main__.Page",
             "url": "/balance",
             "title": "Balance - The Holy Grail",
             "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from mortality software. Todo, decide if this post should fork into energy and balance\n\n",
@@ -702,7 +692,6 @@
             "doc_size": 18000
         },
         "/balloon": {
-            "py/object": "__main__.Page",
             "url": "/balloon",
             "title": "Being a Ballooner",
             "description": "Want to plaster a huge smile on someone’s face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.\n\n",
@@ -719,7 +708,6 @@
             "doc_size": 18000
         },
         "/be-proactive": {
-            "py/object": "__main__.Page",
             "url": "/be-proactive",
             "title": "Be Proactive",
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
@@ -745,7 +733,6 @@
             "doc_size": 15000
         },
         "/being-a-great-manager": {
-            "py/object": "__main__.Page",
             "url": "/being-a-great-manager",
             "title": "Being the best manager I can be",
             "description": "I aspire to be the best manager I can be. I’ll often fall short of my goal, but through continuous practice I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best. Few things make me prouder then this public feedback on LinkedIn from people who worked with me over several years. I’m also writing a manager guidebook, which goes into much more depth on management.\n\n",
@@ -774,7 +761,6 @@
             "doc_size": 19000
         },
         "/bike": {
-            "py/object": "__main__.Page",
             "url": "/bike",
             "title": "Biking",
             "description": "Biking, is something that make my very happy. I have multiple bikes, here are my notes.\n\n",
@@ -793,7 +779,6 @@
             "doc_size": 19000
         },
         "/blueprint": {
-            "py/object": "__main__.Page",
             "url": "/blueprint",
             "title": "Bryan Johnson - A 50 year old 18 year old",
             "description": "So there’s this guy who measures his nightly erections, doesn’t go out into the sun, and strives to delegate all his decision making to an algorithm called blue print. Certainly a nut job, but a nut job who has explored many of the thoughts I’m very interested in. Depression, purpose, sleep, exercise. Here are my notes.\n\n",
@@ -813,7 +798,6 @@
             "doc_size": 13000
         },
         "/bmy": {
-            "py/object": "__main__.Page",
             "url": "/bmy",
             "title": "Business Model You",
             "description": "The business model canvas is a tool for understanding how a company makes money. This same model can be applied to a person’s career. While job hunting this was helpful figuring out my dream job. I suppose it should also prioritize my work energy, and probably how to prioritize my life energy. But that’s to come.\n\n",
@@ -832,7 +816,6 @@
             "doc_size": 19000
         },
         "/books-that-defined-me": {
-            "py/object": "__main__.Page",
             "url": "/books-that-defined-me",
             "title": "Books that defined me",
             "description": "Books allow great thoughts to enter our mind and mold us into who we want to become. These are the books that are molding me.\n\n",
@@ -856,7 +839,6 @@
             "doc_size": 13000
         },
         "/breath": {
-            "py/object": "__main__.Page",
             "url": "/breath",
             "title": "Breathing as if your life depends on it",
             "description": "Breathing, an act so simple yet so crucial, harbors the potential to transform our health, mind, and life. This blog post is a deep dive into the world of breathing techniques, exploring a range of practices from Box Breathing and Victory Breath to Sitali Breath and the Breath Focus Technique. Each technique is detailed with its benefits and step-by-step instructions. In addition, the scientific perspective on breathing is explored. Whether you’re seeking to reduce stress, improve focus, or simply understand the science of breathing, this post is your comprehensive guide. Join us as we explore the art of breathing, its techniques, and the science behind it.\n\n",
@@ -868,7 +850,6 @@
             "doc_size": 18000
         },
         "/brompton-toys": {
-            "py/object": "__main__.Page",
             "url": "/brompton-toys",
             "title": "My Brompton and its accoutrements",
             "description": "I LOVE my Brompton, and have spent much time researching accessories for it. Here are the accoutraments I’ve bought for my Brompton, and hopefully it’ll save other Brompton owners time, and/or make them aware of accessories they don’t known about.\n\n",
@@ -882,7 +863,6 @@
             "doc_size": 13000
         },
         "/brython": {
-            "py/object": "__main__.Page",
             "url": "/brython",
             "title": "A playground for brython and pystory",
             "description": "This page is built with brython, a python running in browser via WASM. This is my playground to try interesting things with brython.\n\n",
@@ -896,7 +876,6 @@
             "doc_size": 11000
         },
         "/build-bubble-bike": {
-            "py/object": "__main__.Page",
             "url": "/build-bubble-bike",
             "title": "Building a bubble bike",
             "description": "What the heck is a bubble bike? Ah, you see, bringing joy for others is my thing. As they say in Buddhism there are many vehicles to bring joy, and my vehicle is the bubble bike.\n\n",
@@ -912,7 +891,6 @@
             "doc_size": 12000
         },
         "/cache": {
-            "py/object": "__main__.Page",
             "url": "/cache",
             "title": "Shipping incubations: Cache",
             "description": "Internal incubations are fun, but I love shipping products. In the case of Microsoft Cache, before I joined, the team had been incubating OneClip, and needed help bringing it to market. My self and a top tier product manager joined the team to help them ship. We immediately got to work, recruiting senior talent, and closing the gaps. We tackled the technical, product market fit, and logistical issues required to bring the product to market.\n\n",
@@ -927,7 +905,6 @@
             "doc_size": 12000
         },
         "/Canadian-Spotting": {
-            "py/object": "__main__.Page",
             "url": "/Canadian-Spotting",
             "title": "Canadian Spotting",
             "description": "“I bet you the bill that dude by the window is Canadian,” I challenged.\n\n",
@@ -941,7 +918,6 @@
             "doc_size": 12000
         },
         "/caring": {
-            "py/object": "__main__.Page",
             "url": "/caring",
             "title": "Caring - The story of emotional intensity",
             "description": "Lets define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don’t control), brings us down. Much of this post is based on the work of Dr. Raph, and a book on stoicism The practicing stoic.\n\n",
@@ -957,7 +933,6 @@
             "doc_size": 19000
         },
         "/cert-error": {
-            "py/object": "__main__.Page",
             "url": "/cert-error",
             "title": "The case of the cert validation error",
             "description": "Dad the website isn’t secure! You’re the security expert fix it! Zach, my 10 year old at the time son, runs a web site, and it got an occasional this website is not secure message. I tried to debug, but couldn’t get a consistent enough repro to debug, so had to move on. It stayed in this state for 6 months, at which point Zach told me the certificate had expired. Now i had a 100% repro so went to work.\n\n",
@@ -969,7 +944,6 @@
             "doc_size": 17000
         },
         "/chapters": {
-            "py/object": "__main__.Page",
             "url": "/chapters",
             "title": "The chapters of our lives",
             "description": "Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22-year-old, and what you need as a 42-year-old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.\n\n",
@@ -985,7 +959,6 @@
             "doc_size": 15000
         },
         "/chasing-daylight": {
-            "py/object": "__main__.Page",
             "url": "/chasing-daylight",
             "title": "Chasing Daylight: Imagine you're gonna die in less then 100 days",
             "description": "Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did. Book is Chasing Daylight. Hi stop advice, what ever you plan to do before you die, move it up.\n\n",
@@ -999,7 +972,6 @@
             "doc_size": 11000
         },
         "/class-act": {
-            "py/object": "__main__.Page",
             "url": "/class-act",
             "title": "Be a class act",
             "description": "Be a class act. Fantatic advice.\n\n",
@@ -1018,7 +990,6 @@
             "doc_size": 12000
         },
         "/coaching": {
-            "py/object": "__main__.Page",
             "url": "/coaching",
             "title": "Coaching - How to help others find insight",
             "description": "Coaching is like midwifery. A midwife can not give birth to the baby, she facilitates the birth. Similarly, a coach can not give a solution, she must give birth to the insight from within the coachee. Coaching is asking questions, guiding, and facilitating understanding, and this post collects my studies on the topic.\n\n",
@@ -1046,7 +1017,6 @@
             "doc_size": 27000
         },
         "/coe": {
-            "py/object": "__main__.Page",
             "url": "/coe",
             "title": "Learning from mistakes",
             "description": "Everyone can make a mistake once, that’s totally fine. Repeating mistakes is unacceptable. Correction of Errors (COE) is the name Amazon gives it’s mechanism for correcting errors. Microsoft uses the term Root cause analysis (RCA), it’s the same concept. This mechanism originated with service outages but can be applied for any “error”, like missing your sons kindergarden graduation, or getting fired.\n\n",
@@ -1064,7 +1034,6 @@
             "doc_size": 13000
         },
         "/comp": {
-            "py/object": "__main__.Page",
             "url": "/comp",
             "title": "Care about Total Compensation",
             "description": "Different companies use different compensation models. To compare models use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon clips salary at 160K$/yr, and doesn’t have bonuses. Google vests stocks Monthly. Facebook bonuses have a company performance multiplier. At some companies signing bonuses can be over 100% of salary!\n\n",
@@ -1083,7 +1052,6 @@
             "doc_size": 22000
         },
         "/covid": {
-            "py/object": "__main__.Page",
             "url": "/covid",
             "title": "Notes from Covid 19",
             "description": "Corona Virus (CV) may be the defining moment in our lives. In such times, lets remember three things 1) Keep your circle of concern within your circle of influence 2) Don’t feed mind monsters - see the positive 3) In crisis, you see both the best and worse. Focus on the best.\n\n",
@@ -1101,7 +1069,6 @@
             "doc_size": 24000
         },
         "/curious": {
-            "py/object": "__main__.Page",
             "url": "/curious",
             "title": "Isn't that curious",
             "description": "Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached.She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.\n\n",
@@ -1136,7 +1103,6 @@
             "doc_size": 16000
         },
         "/d/2015-11-18-Outsourcing": {
-            "py/object": "__main__.Page",
             "url": "/d/2015-11-18-Outsourcing",
             "title": "On outsourcing",
             "description": "Time is my precious resource - I have a limited number of hours in my life, and once I’ve used them, I never get them back. However, I can preserve my time by outsourcing activities that don’t have high enough return on investment. This post reminds me to outsource by enumerating my position on outsourcing, and the things I have outsourced.\n\n",
@@ -1148,7 +1114,6 @@
             "doc_size": 12000
         },
         "/d/2016-02-03-positive-computing-survey": {
-            "py/object": "__main__.Page",
             "url": "/d/2016-02-03-positive-computing-survey",
             "title": "Positive computing a whirlwind tour",
             "description": "Positive computing is the software branch focused on increasing human well being. Similar to positive psychology, it is a brand new field and our industry has barely begun. I’ll use this post to gather my half baked thoughts on the various applications I’ve seen. For now it’ll be confusing as I’m brain dumping to various audiences with various knowledge.\n\n",
@@ -1162,7 +1127,6 @@
             "doc_size": 14000
         },
         "/d/2016-05-09-lost-interview": {
-            "py/object": "__main__.Page",
             "url": "/d/2016-05-09-lost-interview",
             "title": "Steve Jobs -- The Lost Interview",
             "description": "Uneditted notes on a Q+A with Steve Jobs.\n\n",
@@ -1174,7 +1138,6 @@
             "doc_size": 14000
         },
         "/d/2016-2-14-Health-In-The-Head": {
-            "py/object": "__main__.Page",
             "url": "/d/2016-2-14-Health-In-The-Head",
             "title": "Emotional Health In My Head",
             "description": "Fit in my head, isn’t fit in reality. In the last few years I’ve learned this lesson for physical health, and now I’m learning it for emotional health.\n\n",
@@ -1186,7 +1149,6 @@
             "doc_size": 11000
         },
         "/d/2016-2-15-Seth-Godin-Notes": {
-            "py/object": "__main__.Page",
             "url": "/d/2016-2-15-Seth-Godin-Notes",
             "title": "Seth Godin- Ideas",
             "description": "Seth godin has many ideas that are critical in the new world. Ideas include: Choosing yourself, Tribes, The limited value of cogs, connection, and the dip.\n\n",
@@ -1200,7 +1162,6 @@
             "doc_size": 15000
         },
         "/d/2016-7-14-Customer-Service": {
-            "py/object": "__main__.Page",
             "url": "/d/2016-7-14-Customer-Service",
             "title": "Companies with customer obsession",
             "description": "Customer obsession, manifest in customer service, can be a key differentiator. This post explores the benefits, and business model impact of a customer obsessed organization.\n\n",
@@ -1212,7 +1173,6 @@
             "doc_size": 11000
         },
         "/d/2016-8-1-Twelve-Tech-Forces": {
-            "py/object": "__main__.Page",
             "url": "/d/2016-8-1-Twelve-Tech-Forces",
             "title": "12 Tech forces that will shape our future",
             "description": "The digital revolution has gone through 3 changes: the copy of the industrial age, the link age, and the streaming age. This is a summary of the concepts representing the new age.\n\n",
@@ -1224,7 +1184,6 @@
             "doc_size": 21000
         },
         "/d/2017-07-22-vacationphotos": {
-            "py/object": "__main__.Page",
             "url": "/d/2017-07-22-vacationphotos",
             "title": "Vacation Photos",
             "description": "Vacation photos are great, they remind you of the good times you’ve had, the people you’ve had them with and the places you’ve had them at. Here are my tips for vacation photos, and “reminiscing” type photos in general.\n\n",
@@ -1236,7 +1195,6 @@
             "doc_size": 13000
         },
         "/d/2017-09-10-software-rot": {
-            "py/object": "__main__.Page",
             "url": "/d/2017-09-10-software-rot",
             "title": "software-rot",
             "description": "After a year of not working on one of my hobby software projects, I decided it’d be fun to make a minor change - should only be few lines of code. Should be easier still since I followed all the project best practices: I had full unit tests, and a fully automated command line build but boy was I wrong.\n\n",
@@ -1248,7 +1206,6 @@
             "doc_size": 11000
         },
         "/d/2017-11-04-clean-architecture": {
-            "py/object": "__main__.Page",
             "url": "/d/2017-11-04-clean-architecture",
             "title": "Clean Architecture",
             "description": "Architecture is the highest level of abstraction that models a software system. The architecture is composed from modules, which are composed of objects, which are composed of functions. Design is applied to each of these layers, and when executed successfully results in a system that is easy to build and maintain. Clean architecture discusses designs at a high level, which like architecture is highly useful. On the topic of architecture, the software industry’s use of the word architect is confusing. The construction analog of a “software architect” is a “structural engineer” and the software equivalent of a “construction architect” is a product manager.\n\n",
@@ -1264,7 +1221,6 @@
             "doc_size": 47000
         },
         "/d/2018-02-10-you-do-want-your-favorite-app-to-be-a-service": {
-            "py/object": "__main__.Page",
             "url": "/d/2018-02-10-you-do-want-your-favorite-app-to-be-a-service",
             "title": "Software as a service is good for users",
             "description": "When selling subscription software, a publisher needs to continue to prove the value of thier software, or users will not renew their contracts. This is very beneficial to the users and to the publisher.\n\n",
@@ -1276,7 +1232,6 @@
             "doc_size": 10000
         },
         "/d/2018-09-23-mind-lines": {
-            "py/object": "__main__.Page",
             "url": "/d/2018-09-23-mind-lines",
             "title": "mind-lines",
             "description": "Mind Lines\n\n",
@@ -1288,7 +1243,6 @@
             "doc_size": 10000
         },
         "/d/apollo": {
-            "py/object": "__main__.Page",
             "url": "/d/apollo",
             "title": "Quality",
             "description": "The original Kenedy speech\n\n",
@@ -1300,7 +1254,6 @@
             "doc_size": 13000
         },
         "/d/habits": {
-            "py/object": "__main__.Page",
             "url": "/d/habits",
             "title": "Atomic habits - How to add and remove habits",
             "description": "Habits are the automatic actions, both positive and negative, you take through your life. Atomic Habits describes how to change habits, it’s the how-to manual for “Sharpening the Saw”.\n\n",
@@ -1326,7 +1279,6 @@
             "doc_size": 16000
         },
         "/d/management_interviews": {
-            "py/object": "__main__.Page",
             "url": "/d/management_interviews",
             "title": "Types of interviews ",
             "description": "FACEBOOK MANAGEMENT INTERVIEWING 101\n\n",
@@ -1338,7 +1290,6 @@
             "doc_size": 31000
         },
         "/d/resistance": {
-            "py/object": "__main__.Page",
             "url": "/d/resistance",
             "title": "Resistance: Why you can't make yourself take an ice cold shower",
             "description": "Stop. Take an ice cold shower right now. You didn’t, did you? Trust me, even if you tried, you wouldn’t. Before you turned on the water, you’d have this irrational fear of stepping in and you wouldn’t do it. The force that stops you is the resistance. The resistance is the personification of the force that stops you from doing the important. The resistance lies, telling us things are hard when they are not. The resistance adds suffering when there is minimal pain and that confuses us, stopping us from doing things which give us the most value, joy and positive identity. The resistance is the enemy of progress.\n\n",
@@ -1368,7 +1319,6 @@
             "doc_size": 18000
         },
         "/d/time-off-2020-03": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2020-03",
             "title": "Adventures March and April 2020",
             "description": "In March 2020, I took a 2 month sabatical between leaving Amazon and joining Facebook. Given it was a substantial amount of time, I came up with some big plans, and wrote them down. It was a great plan, BUT my time off correlated perfectly to the Corona Virus and as a result I wasted lots of my mental energy thinking about the Corona Virus, and adjusting to being in pseudo-quarantine. Took me a while, but I finally realized I should ignore corona virus, or at least minimize my time thinking about it.\n\n",
@@ -1385,7 +1335,6 @@
             "doc_size": 27000
         },
         "/d/time-off-2020-12": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2020-12",
             "title": "Time off X-mas 2020",
             "description": "It’s Corona virus X-mas, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my timeoff, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
@@ -1405,7 +1354,6 @@
             "doc_size": 19000
         },
         "/d/time-off-2021-11": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2021-11",
             "title": "Time off Turkey Day 2021",
             "description": "I should have written up a plan before this time off so I’d have been more deliberate. As it stands, I did what I wanted, got a tonne done, but missed some things that bring me a lot of energy.\n\n",
@@ -1425,7 +1373,6 @@
             "doc_size": 16000
         },
         "/d/time-off-2021-12": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2021-12",
             "title": "Time off X-mas 2021",
             "description": "It’s Corona virus X-mas 2021, the not so bad edition, and I’ve got 2 weeks off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
@@ -1446,7 +1393,6 @@
             "doc_size": 20000
         },
         "/d/time-off-2022-02": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2022-02",
             "title": "Time off Mid winter break 2022",
             "description": "It’mid winter break and I’ve got a week off. In an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
@@ -1464,7 +1410,6 @@
             "doc_size": 17000
         },
         "/d/time-off-2022-07": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2022-07",
             "title": "Time off July 2022 - FISM and Canada.",
             "description": "It’s FISM (olympics of magic), and I’m going to Quebec city to reenergize my love of magic, since I’m already in Canada I’ll also spend time with My Mom, Sister, and college room mate.\n\n",
@@ -1481,7 +1426,6 @@
             "doc_size": 24000
         },
         "/d/time-off-2022-11": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2022-11",
             "title": "Time off November 2022 - New York with Ammon, and Then Maureen and Brian for Thanksgiving",
             "description": "It’s just about thanksgiving 2022, and after 2 years of not being able to go to Oregon, we’re on our away! Through unexpected timing, before going to Oregon, I’m going to New York City with Ammon, and through even more unexpected timing, we just had lay offs at work, and have a major re-organization. Instead of being able to fully take the time off, I’ll be working several days, so having clarity on my priorities is critical.\n\n",
@@ -1497,7 +1441,6 @@
             "doc_size": 23000
         },
         "/d/time-off-2022-12": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2022-12",
             "title": "Time off X-mas 2022",
             "description": "It’s X-mas 2022, quite the fall excitement edition! and I’ve got 1 and change weeks off in an attempt to maximize my personal development and satisfaction during my time off, by staying balanced, and minimizing my vegetation. I’m going to pre-write what I want to get done, and adjust it as I go.\n\n",
@@ -1514,7 +1457,6 @@
             "doc_size": 21000
         },
         "/d/time-off-2023-04": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2023-04",
             "title": "Time off April Break 2023",
             "description": "It’s spring break 2023! The kids and I are going to Canada to see Baba, Yelena, Justin, Sam and Baltasar and Rada’s Famliy. Unfortunately Tori can’t come as she’s critical to her play opening and it’ll be opening that week.\n\n",
@@ -1530,7 +1472,6 @@
             "doc_size": 16000
         },
         "/d/time-off-2023-08": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2023-08",
             "title": "Time off August 2023",
             "description": "It’s summer break 2023! It’s late August and our last chance to get a vacation before the kids go back to school. We were going to go to Chilliwack to try a deli run by a small jewish cult, but alas it’s like 100 degrees so we’re going to to coast instead!\n\n",
@@ -1546,7 +1487,6 @@
             "doc_size": 15000
         },
         "/d/time-off-2023-11": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2023-11",
             "title": "Ashland T-Day 2023",
             "description": "It’s time for our annual thanksgiving 2023 trip to Oregon!\n\n",
@@ -1562,7 +1502,6 @@
             "doc_size": 14000
         },
         "/d/time-off-2024-02": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2024-02",
             "title": "Time off Midwinter break 2024 - Divide and conquer",
             "description": "It’s midwinter break and I’ve got a week off. Most of these I try to do as a big family adventure. Finding something everyone wants to do is super challenging, so this time we tried something new, divide and conquer: I had a 1-2 day mini-vacations with Amelia, Zach, and even Tori. It worked out very well, the time-off was packed, Stanley Park with Amelia, Yellow Deli with Zach, and a crazy hotel on the Peninsula with Tori. On top of that restarting magic, balloons, and kettlebells and meditation in between.\n\n",
@@ -1581,7 +1520,6 @@
             "doc_size": 19000
         },
         "/d/time-off-2024-04": {
-            "py/object": "__main__.Page",
             "url": "/d/time-off-2024-04",
             "title": "Time off Spring break 2024 - Chillin",
             "description": "It’s spring break 2024 and I’ve got a week off. The last few weeks have been a bit crazy at work trying to get some big features launched and into public testing, so very excited for the time off. I usually try to avoid too much tech, but I’m looking forward to making some tech investments as it’s been a while.\n\n",
@@ -1596,7 +1534,6 @@
             "doc_size": 16000
         },
         "/d/where-have-all-the-bugs-gone": {
-            "py/object": "__main__.Page",
             "url": "/d/where-have-all-the-bugs-gone",
             "title": "Where have all the bugs gone",
             "description": "I’ve been a software developer since 2001, and back then we used to have lots of bugs. Nowadays, it seems we don’t have bugs, and I’ve wondered why. Now we have tickets which we get from our systems running in production, but that’s quite different. What’s going on?\n\n",
@@ -1608,7 +1545,6 @@
             "doc_size": 11000
         },
         "/dad": {
-            "py/object": "__main__.Page",
             "url": "/dad",
             "title": "Being a Good Dad - A Guide to Fatherhood",
             "description": "\n\n\n",
@@ -1620,7 +1556,6 @@
             "doc_size": 18000
         },
         "/death": {
-            "py/object": "__main__.Page",
             "url": "/death",
             "title": "On being Mortal - Guess what? You're dying",
             "description": "Bad news, you’re dying, so is everyone else. Good news, if we didn’t die we’d run out of resources, and our kids would be screwed. Bad news, our health care system is optimized for keeping you alive, not for maximizing the enjoyable time you have on earth. Good news, knowing is half the battle - armed with this knowledge you can decide how you want to die, which is ultimately how you want to live.\n\n",
@@ -1640,7 +1575,6 @@
             "doc_size": 17000
         },
         "/debug": {
-            "py/object": "__main__.Page",
             "url": "/debug",
             "title": "Debug the page",
             "description": "Igor's Blog",
@@ -1652,7 +1586,6 @@
             "doc_size": 21000
         },
         "/decisive": {
-            "py/object": "__main__.Page",
             "url": "/decisive",
             "title": "Decision making 201",
             "description": "Decisions are hard because we have Narrow Framing, Confirmation Bias, Short Term Emotion and Overconfidence. We can overcome this by Widening our Options, Reality-Testing our Assumptions, Attaining Distance before Deciding and Preparing to Be Wrong.\n\n",
@@ -1672,7 +1605,6 @@
             "doc_size": 40000
         },
         "/defi": {
-            "py/object": "__main__.Page",
             "url": "/defi",
             "title": "Decentralized Finance",
             "description": "Finance has existed for as long as civilization. And like most things before the Internet age was based on the trust of centralized law and authority (like banks and governments). Decentralized Finance (DeFi) is the movement that asks could we perform our financial transaction with out centralized trust. Finance has evolved many instruments to meet the needs of civilization, all of which are based on trust (store of value, currency, loans), de-fi will search for equivalences of each of these.\n\n",
@@ -1684,7 +1616,6 @@
             "doc_size": 28000
         },
         "/delegate": {
-            "py/object": "__main__.Page",
             "url": "/delegate",
             "title": "Stewardship Delegation 101",
             "description": "At some point you need to scale out, and that’s called delegation! Stewardship delegation is the form of delegation where the responsibility for the delegated task is transferred to the delegatee. Stewardship delegation requires upfront effort, but results in long-term effectiveness. For stewardship delegation, you need agreement on the following 5 things: The desired results, the operating parameters, the available resources, the measurement system, and the consequences of their stewardship.\n\n",
@@ -1700,7 +1631,6 @@
             "doc_size": 15000
         },
         "/depression": {
-            "py/object": "__main__.Page",
             "url": "/depression",
             "title": "Depression is the opposite of vitality",
             "description": "When you’re depressed you don’t think you’ve put on a gray veil - seeing the world through the haze of a bad mood. You think that a veil has been taken away. The veil of happiness, and you believe you’re seeing the world as it truly is: alone, petrifying, and painful. But the truth lies. The depressed say “No one loves me.” And you say, “I love you, your wife loves you, your mother loves you.” and the depressed ignore you. The depressed will continue, “None of this matters, we’re just going to die in the end.” To which you have to say, “That’s true, but I think right now should focus on what to have for breakfast.”\n\n",
@@ -1732,7 +1662,6 @@
             "doc_size": 19000
         },
         "/design": {
-            "py/object": "__main__.Page",
             "url": "/design",
             "title": "Software Design And Architecture",
             "description": "Software is measured in two dimensions: use cases (end user behavior) and malleability. End user behavior is the delivery of use cases, while malleability is the ease with which the software can modify the existing use cases, or add new ones. Software malleability is the evaluation function for an architecture. Malleability is the more important of these dimensions because over time there will be far more changes to the software then the original use case (e.g. the cost of maintenance far exceeds the software writing cost). A key property of software architecture is it’s obvious there is one place to make changes, and where that place is.\n\n",
@@ -1752,7 +1681,6 @@
             "doc_size": 18000
         },
         "/diet": {
-            "py/object": "__main__.Page",
             "url": "/diet",
             "title": "Diet",
             "description": "Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. Weight is essential because it reduces the effort required to do physical activities, and because it reduces the risk of many diseases. Exercise, while critical to energy, is mostly a red herring for weight loss. A great way to see this is comparing what you eat to physical Activity. A side of fries adds 500 calories to your day, but running for 30 minutes only burns 300 calories.\n\n",
@@ -1772,7 +1700,6 @@
             "doc_size": 14000
         },
         "/dip": {
-            "py/object": "__main__.Page",
             "url": "/dip",
             "title": "The Dip - Should you fold or double down",
             "description": "New things start fun, but once the new wears off they are hard because of the Dip. The Dip is the long slog between starting and mastery. Unlike Dips, cul-de-sacs are places you can put in a lot of energy and nothing will come of it. You need to quit cul-de-sacs and lean into dips. Much of our failure comes from being distracted by tasks we don’t have the guts to quit. Winners quit all the time. They quit the right stuff, so their energy can be saved to cross the Dip.\n\n",
@@ -1790,7 +1717,6 @@
             "doc_size": 25000
         },
         "/docker": {
-            "py/object": "__main__.Page",
             "url": "/docker",
             "title": "Docker tools",
             "description": "Docker has 2 values, isolation and repeatable setup. Here are my notes\n\n",
@@ -1802,7 +1728,6 @@
             "doc_size": 10000
         },
         "/dsat": {
-            "py/object": "__main__.Page",
             "url": "/dsat",
             "title": "Satisfaction is not the lack of dissatisfaction",
             "description": "Love your work, and you’ll never work a day in your life. Sounds great, but work ain’t no Caribbean cruise - one you pay for, and the other pays you. Work should be satisfying (SAT). You should be enjoying solving hard problems, getting opportunities to talk with like minded people, and even being forced to stretch and grow. Work should also cause you dissatisfaction (DSAT). Some days your boss will piss you off, your co-workers will misunderstand you, and you will be forced to do something you don’t want to. Satisfaction is not a lack of dissatisfaction they are orthogonal experiences. DSAT is what makes you sleep poorly, and SAT is what makes you set your alarm early Monday morning so you can get back to your favorite project, and to hang out with your awesome team.  By understand our SAT and DSAT, we can change them, and transform hours slogging into time at the fantasy cruise bar.\n\n",
@@ -1825,7 +1750,6 @@
             "doc_size": 21000
         },
         "/e1": {
-            "py/object": "__main__.Page",
             "url": "/e1",
             "title": "Igor's Identity",
             "description": "\n\n",
@@ -1837,7 +1761,6 @@
             "doc_size": 10000
         },
         "/elder": {
-            "py/object": "__main__.Page",
             "url": "/elder",
             "title": "Wrinkles and Wisdom: A Guide to Aging Like Fine Wine (Not Milk)",
             "description": "Midlife has a marketing problem, it’s always followed by the word crisis. Honestly, for good reason: Midlife is the chapter of your life where the things you and society value decline. E.g. you’re getting weaker and dumber. Embrace and optimize for this reality or suffer. Luckily there is a good formula here: both to embrace it, and to find new strengths to focus on.\n\n",
@@ -1857,7 +1780,6 @@
             "doc_size": 21000
         },
         "/emotional-health": {
-            "py/object": "__main__.Page",
             "url": "/emotional-health",
             "title": "Emotional Health Practices",
             "description": "Emotionally healthy folks can let it go, empathize with others, and most importantly, sleep well at night. Just like physically healthy folks do physical practices, like walking daily, stretching, biking, there are also emotional practices. Here are the ones I’ve been exploring.\n\n",
@@ -1883,7 +1805,6 @@
             "doc_size": 18000
         },
         "/enable": {
-            "py/object": "__main__.Page",
             "url": "/enable",
             "title": "Enabling Environment",
             "description": "Imagine the place you do your best work. Andy Matuschak defined this, and as someone who aspires to effectiveness, I fell in love with the concept. As a techie who loves efficiency, I also set about building my own. From Andy: An enabling environment significantly expands its participants’ capacity to do things they find meaningful and important. This blog is the consumption environment for mine.\n\n",
@@ -1902,7 +1823,6 @@
             "doc_size": 16000
         },
         "/end-in-mind": {
-            "py/object": "__main__.Page",
             "url": "/end-in-mind",
             "title": "Begin with the end in mind",
             "description": "All things are created twice, once in the design phase, and then again in the implementation phase. If you don’t perform the first creation, someone else will. At the extreme, imagine your eulogy, that’s the end too.\n\n",
@@ -1928,7 +1848,6 @@
             "doc_size": 11000
         },
         "/enemy": {
-            "py/object": "__main__.Page",
             "url": "/enemy",
             "title": "Four enemies",
             "description": "Fear, Arrogance, Authority, and Apathy are the four enemies of satisfaction as described in Don Juan’s teachings.\n\n",
@@ -1945,7 +1864,6 @@
             "doc_size": 13000
         },
         "/energy": {
-            "py/object": "__main__.Page",
             "url": "/energy",
             "title": "Control your Energy",
             "description": "We often say we don’t have time, but usually we mean we don’t have energy. That’s great news because time is finite, and monotonically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy. What’s amazing to me is how going to the gym can be energy positive.\n\n",
@@ -1972,7 +1890,6 @@
             "doc_size": 15000
         },
         "/essentialism": {
-            "py/object": "__main__.Page",
             "url": "/essentialism",
             "title": "Essentialisim",
             "description": "Essentialism is deciding what goes on your todo list, not how many things you can cross off. Being an essentialist means you say ‘I choose to’ not ‘I have to’, ‘Only a few things matter’, not ‘all things matter’ and ‘I will do one thing’, not ‘I will do both’. The essential questions are ‘How do I know when I’m done?’, ‘If I didn’t own this, would I buy it?’, ‘If I didn’t have this opportunity what would I do to acquire it?’\n\n",
@@ -2001,7 +1918,6 @@
             "doc_size": 37000
         },
         "/eulogy": {
-            "py/object": "__main__.Page",
             "url": "/eulogy",
             "title": "Igor's Eulogy - How I want to live",
             "description": "Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor “Began with the end in mind” with the “important but not urgent” task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.\n\n",
@@ -2042,7 +1958,6 @@
             "doc_size": 29000
         },
         "/facebook": {
-            "py/object": "__main__.Page",
             "url": "/facebook",
             "title": "My thoughts on Facebook",
             "description": "Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven relationships, and providing skip-level escalations and support. Here are my notes on Facebook\n\n",
@@ -2058,7 +1973,6 @@
             "doc_size": 28000
         },
         "/fail": {
-            "py/object": "__main__.Page",
             "url": "/fail",
             "title": "Failure is not an option it is a necassity",
             "description": "Failure is not an option; it’s a necessity. Here are some thoughts on failures.\n\n",
@@ -2075,7 +1989,6 @@
             "doc_size": 16000
         },
         "/first-things-first": {
-            "py/object": "__main__.Page",
             "url": "/first-things-first",
             "title": "First things first",
             "description": "The key to effective management, is allocating energy through the lens of importance rather than urgency. E.g, ask yourself what one thing could you do that if you did on a regular basis, would make a tremendous positive difference in your life? Lemme guess, it’s important, but not urgent so you’re not doing it. These are my insights based on the 7 habits Chapter 3.\n\n",
@@ -2102,7 +2015,6 @@
             "doc_size": 20000
         },
         "/first-understand": {
-            "py/object": "__main__.Page",
             "url": "/first-understand",
             "title": "Seek first to understand, then to be understood",
             "description": "Imagine going to the eye doctor. After hearing your complaint he takes off his glasses and hands them to you.\n“Put these on,” he says. “I’ve worn this pair of glasses for ten years now and they’ve really helped me. I have an extra pair at home; you can wear these.” So you put them on, but it only makes the problem worse. “This is terrible!” you exclaim. “I can’t see a thing!” “Well, what’s wrong?” he asks. “They work great for me. Try harder.” “I am trying,” you insist. “Everything is a blur.” “Well, what’s the matter with you? Think positively.” “Okay. I positively can’t see a thing.” “Boy, are you ungrateful!” he chides. “And after all I’ve done to help you!”\n\n",
@@ -2128,7 +2040,6 @@
             "doc_size": 15000
         },
         "/frog": {
-            "py/object": "__main__.Page",
             "url": "/frog",
             "title": "Eat that frog",
             "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.\n\n",
@@ -2159,7 +2070,6 @@
             "doc_size": 19000
         },
         "/genai-talk": {
-            "py/object": "__main__.Page",
             "url": "/genai-talk",
             "title": "Your new interns - GenAI for fun and profit",
             "description": "Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!\n\n",
@@ -2176,7 +2086,6 @@
             "doc_size": 35000
         },
         "/getting-to-yes-with-yourself": {
-            "py/object": "__main__.Page",
             "url": "/getting-to-yes-with-yourself",
             "title": "Getting to yes with yourself",
             "description": "Before you can negotiate with others, you need to be in sync with yourself. This book applies the negotiating principles to yourself. It’s an awkward application of the model, but this book is filled with good concepts regardless.\n\n",
@@ -2195,7 +2104,6 @@
             "doc_size": 20000
         },
         "/goals": {
-            "py/object": "__main__.Page",
             "url": "/goals",
             "title": "Goals - How to define and ensure success",
             "description": "Goal are critcal, there are multiple goal systems and they have consequences. They are mechansims to deliver without micro managements.\n\n",
@@ -2207,7 +2115,6 @@
             "doc_size": 13000
         },
         "/google-photos": {
-            "py/object": "__main__.Page",
             "url": "/google-photos",
             "title": "Accessing Google Photos",
             "description": "I like having a blog, but honestly it’s faster to write it in google photos as that has a better WYSWIG viewer. But, I don’t get features like search, or previews, which matters to me. I also don’t trust Google not to break photos in the future. Of course exporting is a PITA, here are some hacks to export and make it into my blog format. NOTE: There is an API to extrat photos, but it doesn’t include the text (which I like to have, as recall WYSWIG editor)\n\n",
@@ -2219,7 +2126,6 @@
             "doc_size": 13000
         },
         "/gpt": {
-            "py/object": "__main__.Page",
             "url": "/gpt",
             "title": "GPT3 and language models",
             "description": "Just like the search bar in google fills in what you’re typing when you say “Where can I ge .. “ GPT3 complete strings as well. Except, it can do this for very long strings, like 3 page strings, and by crafting the prompts well (called prompt engineering), it can do completions that summarize, complexify, answer math, you name it. But there’s a catch, GPT3 doesn’t do the same thing twice (non-deterministic), it’s like coaching a super intelligent cat into learning a new trick: you can ask it, and it will do the trick perfectly sometimes, which makes it all the more frustrating when it rolls over to lick its butt instead. You know the problem is not that it can’t but that it won’t(From Gwern).\n\n",
@@ -2239,7 +2145,6 @@
             "doc_size": 22000
         },
         "/gpt-7h": {
-            "py/object": "__main__.Page",
             "url": "/gpt-7h",
             "title": "LEADER: Another take on the 7 habts",
             "description": "\n\n\n",
@@ -2251,7 +2156,6 @@
             "doc_size": 29000
         },
         "/gpt-system-design": {
-            "py/object": "__main__.Page",
             "url": "/gpt-system-design",
             "title": "System Design Interviews- The SHINE Method",
             "description": "\n\n\n",
@@ -2263,7 +2167,6 @@
             "doc_size": 25000
         },
         "/grammerly": {
-            "py/object": "__main__.Page",
             "url": "/grammerly",
             "title": "Grammerly",
             "description": "\n\n",
@@ -2275,7 +2178,6 @@
             "doc_size": 9000
         },
         "/graph": {
-            "py/object": "__main__.Page",
             "url": "/graph",
             "title": "Graph",
             "description": "Igor's Blog",
@@ -2287,7 +2189,6 @@
             "doc_size": 9000
         },
         "/grateful": {
-            "py/object": "__main__.Page",
             "url": "/grateful",
             "title": "Gratefulnes",
             "description": "Gratefulness exercises work - here’s somethings to help.\n\n",
@@ -2301,7 +2202,6 @@
             "doc_size": 11000
         },
         "/groupchat": {
-            "py/object": "__main__.Page",
             "url": "/groupchat",
             "title": "My favorite group chats - the forever dinner party",
             "description": "Imagine a group chat as the bustling kitchen of a high-end restaurant. In place of culinary masterpieces, it’s ideas, gossip, and insights that are cooked up, seasoned, and served. Just as a great dinner party brings together eclectic personalities for a memorable evening, a stellar group chat assembles diverse voices for ongoing, vibrant conversations. Basically Sriram’s awesome post on great group chats.\n\n",
@@ -2313,7 +2213,6 @@
             "doc_size": 21000
         },
         "/gtd": {
-            "py/object": "__main__.Page",
             "url": "/gtd",
             "title": "Getting things done",
             "description": "Getting Things Done (GTD) is a model based on David Allen’s book of the same name. It’s a deep dive into Habit 3 - first things first, with some lite weight Habit 2 - begin with the end in mind, mixed in for good measure. By using GTD religiously you can have a drastic reduction in stress and procrastination.\n\n",
@@ -2341,7 +2240,6 @@
             "doc_size": 13000
         },
         "/happy": {
-            "py/object": "__main__.Page",
             "url": "/happy",
             "title": "Happy",
             "description": "Happy is a 5 letter word that many use as the answer to what is the point of life. The follow up question of “How can you be happy” is usually followed by a blank stare, so here’s my study of the subject.\n\n",
@@ -2380,7 +2278,6 @@
             "doc_size": 23000
         },
         "/heath-class-act": {
-            "py/object": "__main__.Page",
             "url": "/heath-class-act",
             "title": "Being a Class Act - How to Stand Out with Grace and Dignity in Any Situation",
             "description": "\n\n\n",
@@ -2392,7 +2289,6 @@
             "doc_size": 29000
         },
         "/hobby": {
-            "py/object": "__main__.Page",
             "url": "/hobby",
             "title": "Why a Engineering Manager masquerades as a magician on the weekends",
             "description": "Some days thinking about work makes me stressed, thinking of my family makes me resentful, and I don’t want to feel like a sloth feeding my addictions to TikTok, and doom scrolling. Those days, I’m grateful for my hobbies. This post gives you reasons to find a hobby and teaches you the attributes in an ideal hobby: Being accessible, Supporting mastery, Reinforcing your identity, and building relationships.\n\n",
@@ -2412,7 +2308,6 @@
             "doc_size": 16000
         },
         "/human-meetings": {
-            "py/object": "__main__.Page",
             "url": "/human-meetings",
             "title": "Feelings/Human Meetings",
             "description": "Having our emotions heard is a fundamental human need. The modern world denies this need, but that doesn’t make the need go away. More than denying the need, society gives, and encourages, us to suppress our emotions. Feelings meetings stand in opposition. They exist to allow us, no, encourage us, to fulfill our fundamental need of expressing emotion.\n\n",
@@ -2427,7 +2322,6 @@
             "doc_size": 12000
         },
         "/humans-are-underrated": {
-            "py/object": "__main__.Page",
             "url": "/humans-are-underrated",
             "title": "Humans are underrated",
             "description": "As robots become better then humans at most things, what roles will be left for humans? What skills are required for those roles? Empathizing, collaborating, leading,and building relationships.\n\n",
@@ -2441,7 +2335,6 @@
             "doc_size": 11000
         },
         "/husband": {
-            "py/object": "__main__.Page",
             "url": "/husband",
             "title": "Being a GOOD Husband",
             "description": "\n\n\n",
@@ -2453,7 +2346,6 @@
             "doc_size": 20000
         },
         "/idle": {
-            "py/object": "__main__.Page",
             "url": "/idle",
             "title": "Your idle loop",
             "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifiying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
@@ -2480,7 +2372,6 @@
             "doc_size": 13000
         },
         "/Immutable-Laws-Of-Hard": {
-            "py/object": "__main__.Page",
             "url": "/Immutable-Laws-Of-Hard",
             "title": "The Immutable Laws of Hard Things",
             "description": "Exercise, Diet, Personal Development, each of these is governed by the immutable laws of hard things. It’s possible these laws don’t apply to you, but I doubt it.\n\n",
@@ -2495,7 +2386,6 @@
             "doc_size": 10000
         },
         "/insecure": {
-            "py/object": "__main__.Page",
             "url": "/insecure",
             "title": "Insecurity and Imposter Syndrome",
             "description": "We all get it. imposter syndrome, which include shame\n\n",
@@ -2514,7 +2404,6 @@
             "doc_size": 12000
         },
         "/insomnia": {
-            "py/object": "__main__.Page",
             "url": "/insomnia",
             "title": "What I should do when I can't sleep",
             "description": "Insomnia controls you, instead of you controlling your sleep. If you want advice on how to deal with insomnia, do NOT ask a person who hasn’t slept in two nights. Instead, ask someone who’s had insomnia several times, and has a checklist on how to respond when insomnia flares up. By the way, I’ve never actually taken this advice, but maybe writing it down will make it more likely that I’ll take it in the future.\n\n",
@@ -2534,7 +2423,6 @@
             "doc_size": 12000
         },
         "/interviewsarehard": {
-            "py/object": "__main__.Page",
             "url": "/interviewsarehard",
             "title": "Be easy on yourself, job hunts are hard",
             "description": "I’ve been hard on myself these last few months as I haven’t made a lot of progress on my habits or goals. Reflecting, that shouldn’t be a surprise as I’ve been putting a tonne of energy into my job hunt. Here is a reminder of the effort required, which will aid setting realistic expectations during the job hunt.\n\n",
@@ -2548,7 +2436,6 @@
             "doc_size": 12000
         },
         "/ios-accessibility": {
-            "py/object": "__main__.Page",
             "url": "/ios-accessibility",
             "title": "iOS Accessibility",
             "description": "iOS has some great accessibility features which allow hands-free and eye-less control of the device. Here they are.\n\n",
@@ -2560,7 +2447,6 @@
             "doc_size": 11000
         },
         "/irl": {
-            "py/object": "__main__.Page",
             "url": "/irl",
             "title": "In Real Life Diary",
             "description": "I started writing a technical blog to help me remember the many things I explore. One day, I realized I’ve got a real life too. Here’s a place I can remember the many things I explore IRL (In real Life)\n\n",
@@ -2582,7 +2468,6 @@
             "doc_size": 49000
         },
         "/job": {
-            "py/object": "__main__.Page",
             "url": "/job",
             "title": "My Dream job",
             "description": "In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.\n\n",
@@ -2609,7 +2494,6 @@
             "doc_size": 19000
         },
         "/job-hunt-stress": {
-            "py/object": "__main__.Page",
             "url": "/job-hunt-stress",
             "title": "Reducing job hunt stress",
             "description": "Job hunts are stressful, and my goal for job hunts is getting the job I want while minimizing my stress. The stress comes from: lack of confidence, being rushed, not having options, disappointing others and the pressure from current job responsibilities. By expecting and mitigating each of these stressors I greatly reduce stress during my job hunt.\n\n",
@@ -2633,7 +2517,6 @@
             "doc_size": 19000
         },
         "/joy": {
-            "py/object": "__main__.Page",
             "url": "/joy",
             "title": "Smiles, Joy and Wonder",
             "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
@@ -2665,7 +2548,6 @@
             "doc_size": 20000
         },
         "/last-year": {
-            "py/object": "__main__.Page",
             "url": "/last-year",
             "title": "Kick the Bucket List: Your Guide to an Epic Last Year on Earth",
             "description": "Bad news, you’ve got a last year on earth. Good news, if you’re lucky you’ll accept that “grand father dies, father dies, son dies” is the best blessing you can have (imagine a different ordering). If you’re luckier, you’ll have age appropriate health right up till that last year, or even better that last few months. If you’re even luckier you’ll have the strength to do what you want in your personal “centenarian Olympics”.\n\n",
@@ -2684,7 +2566,6 @@
             "doc_size": 14000
         },
         "/laws-of-power": {
-            "py/object": "__main__.Page",
             "url": "/laws-of-power",
             "title": "The 48 laws of power",
             "description": "A very cynical book about the laws of power. Probably worth a read in case you want to better understand the dark side.\n\n",
@@ -2696,7 +2577,6 @@
             "doc_size": 44000
         },
         "/learn-code": {
-            "py/object": "__main__.Page",
             "url": "/learn-code",
             "title": "Learn to Code",
             "description": "Coding is way easier then people think. Here’s some pointers.\n\n",
@@ -2710,7 +2590,6 @@
             "doc_size": 10000
         },
         "/like-switch": {
-            "py/object": "__main__.Page",
             "url": "/like-switch",
             "title": "How to build rapport and set people at ease",
             "description": "The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form\n\n",
@@ -2724,7 +2603,6 @@
             "doc_size": 15000
         },
         "/lonely": {
-            "py/object": "__main__.Page",
             "url": "/lonely",
             "title": "Loneliness",
             "description": "In a study of 1,000 Americans, 36% of respondents reported feeling lonely “frequently”, “almost all the time” or “all the time” in the prior four weeks. 61% of young people aged 18-25 and 51% of mothers with young children reported these miserable degrees of loneliness. The cost of loneliness is high. Loneliness is linked to early mortality and a wide array of seriousphysical and emotional problems, including depression, anxiety, heart disease, substance abuse,and domestic abuse.\n\n",
@@ -2736,7 +2614,6 @@
             "doc_size": 30000
         },
         "/magic": {
-            "py/object": "__main__.Page",
             "url": "/magic",
             "title": "Magical memories",
             "description": "Being a dealer of smiles and wonder is a priority in my life, and magic is my instrument. This post details my history and some highlights\n\n",
@@ -2758,7 +2635,6 @@
             "doc_size": 22000
         },
         "/manager-book": {
-            "py/object": "__main__.Page",
             "url": "/manager-book",
             "title": "How to EM: Be the manager everyone wants",
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
@@ -2808,7 +2684,6 @@
             "doc_size": 140000
         },
         "/manager-book-appendix": {
-            "py/object": "__main__.Page",
             "url": "/manager-book-appendix",
             "title": "Manager Book Appendix",
             "description": "A hodgepodge of additional resources for the manager book.\n\n",
@@ -2831,7 +2706,6 @@
             "doc_size": 29000
         },
         "/mania": {
-            "py/object": "__main__.Page",
             "url": "/mania",
             "title": "Mania: It's like a free cocaine drip",
             "description": "The words that follow, I pray will never be my own – What pains me most is I see how crystal clear my illness was in the beginning and how I was surrounded by so much love. So, so many family and friends were desperately trying to intervene, and I spurned them and then reacted despicably. I am so, so sorry. I failed as a husband, a father, a brother, friend, and as a kind human being. It is a hard pill to swallow that I was the Evil one. Why did I fail? Me. My brain. My manic self. I wanted more than anything to prove them wrong. That I could do this. But I couldn’t. You can learn a lot, but you can’t unlearn bipolar disorder. I desperately wanted to believe that bipolar disorder wasn’t real and that I could stop living in fear of it. That all the doubters were wrong (from a friend with bipolar).\n\n",
@@ -2849,7 +2723,6 @@
             "doc_size": 19000
         },
         "/mental-pain": {
-            "py/object": "__main__.Page",
             "url": "/mental-pain",
             "title": "The thoughts that pain us",
             "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.\n\n",
@@ -2882,7 +2755,6 @@
             "doc_size": 20000
         },
         "/mermaid": {
-            "py/object": "__main__.Page",
             "url": "/mermaid",
             "title": "Playing w/Mermaid",
             "description": "Lets try d2\n\n",
@@ -2894,7 +2766,6 @@
             "doc_size": 11000
         },
         "/micro-economics": {
-            "py/object": "__main__.Page",
             "url": "/micro-economics",
             "title": "Micro Economics",
             "description": "Supply, demands and markets, oh my!\n\n",
@@ -2906,7 +2777,6 @@
             "doc_size": 11000
         },
         "/mind-at-work": {
-            "py/object": "__main__.Page",
             "url": "/mind-at-work",
             "title": "Body at home, mind at work",
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
@@ -2927,7 +2797,6 @@
             "doc_size": 16000
         },
         "/mind-monsters": {
-            "py/object": "__main__.Page",
             "url": "/mind-monsters",
             "title": "Mind monsters",
             "description": "Last night I was having trouble sleeping so I plopped down on the couch to watch infomercials. The infomercial I picked was religious in nature, and was talking about mind monsters.\n\n",
@@ -2949,7 +2818,6 @@
             "doc_size": 12000
         },
         "/ml": {
-            "py/object": "__main__.Page",
             "url": "/ml",
             "title": "Machine learning for regular programmers.",
             "description": "It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).\n\n",
@@ -2971,7 +2839,6 @@
             "doc_size": 47000
         },
         "/modal": {
-            "py/object": "__main__.Page",
             "url": "/modal",
             "title": "Modal - A tool to play with ML",
             "description": "Modal seems like a system custom built for ML, giving it a shot\n\n",
@@ -2983,7 +2850,6 @@
             "doc_size": 9000
         },
         "/moments": {
-            "py/object": "__main__.Page",
             "url": "/moments",
             "title": "Engineering Moments",
             "description": "Take a few seconds to close your eyes and think back on an important memory. In that moment, did you feel a sense of elevation? Did you experience insight? Have a sense of pride? Make a connection? In the power of moments, the attributes of powerful moments are understood so that they can be better engineered.\n\n",
@@ -3007,7 +2873,6 @@
             "doc_size": 21000
         },
         "/moments-at-work": {
-            "py/object": "__main__.Page",
             "url": "/moments-at-work",
             "title": "Moments at work",
             "description": "Of all the places we spend our time, work is the one that dominates. However, when we look back on our lives, work is often the thing we remember least. Why? Because we remember our lives through peak moments, and there are few of those, especially positive peak moments, at work. Luckily, peak moments can be created and managers can be taught how to create them. This post explores opportunities and techniques to create these moments.\n\n",
@@ -3028,7 +2893,6 @@
             "doc_size": 15000
         },
         "/money": {
-            "py/object": "__main__.Page",
             "url": "/money",
             "title": "Tax and Saving",
             "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
@@ -3046,7 +2910,6 @@
             "doc_size": 31000
         },
         "/mood": {
-            "py/object": "__main__.Page",
             "url": "/mood",
             "title": "Mood - Our blazing fast heuristic for subjective experience",
             "description": "Let me ask an easy question: “How are you feeling?”. How long did it take you to answer? Less then a second? Impressive. Now a harder question “What makes you say that?”, or even harder “How do you ‘compute’ how are you feeling?” What is going on? Human’s have a super fast heuristic called mood giving them an insant assessement of their sujective reality. Mood is critical to understand as it drives our behaviors, has an outsized influence on our subjective experience, can be in conflict to our pursuit of happiness, and most importantly has several bugs which can be exploited by the resistance and other bad actors.\n\n",
@@ -3070,7 +2933,6 @@
             "doc_size": 24000
         },
         "/mortality-software": {
-            "py/object": "__main__.Page",
             "url": "/mortality-software",
             "title": "Time.ltd - Mortality Software",
             "description": "Mortality is a word most people try to avoid. But, earlier or later, it’s something we all face. Our life is finite and our time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past.\n\n",
@@ -3086,7 +2948,6 @@
             "doc_size": 19000
         },
         "/negotiate": {
-            "py/object": "__main__.Page",
             "url": "/negotiate",
             "title": "Getting to yes",
             "description": "Negotiation is the heart of collaboration. It is what makes conflict potentially meaningful and productive for all parties. Getting To Yes is the seminal book on negotiation. It’s the deep dive into win win or no deal and seek first to understand. The formal, be hard on problems and soft on people, then focus on the desired outcomes not the positions, next get more options on the table, and make sure you measure by objective criteria - lastly know your BATNA.Several years later a new book came out by a hostage negotiator. Instead of being analytic focus, it’s all about influencing the elephant.\n\n",
@@ -3110,7 +2971,6 @@
             "doc_size": 17000
         },
         "/neovim": {
-            "py/object": "__main__.Page",
             "url": "/neovim",
             "title": "Neovim",
             "description": "Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when Bram (the inventor of vim) died, I decided it was time to switch. Now that I’ve sucked up the 20-40 hours in the conversion, I’m thrilled I did. Turns out all the “kids” have been using and developing on neovim. This results in 1, good tools, and nice best practices.\n\n",
@@ -3122,7 +2982,6 @@
             "doc_size": 13000
         },
         "/nlp": {
-            "py/object": "__main__.Page",
             "url": "/nlp",
             "title": "Sentiment Analysis and NLP",
             "description": "My explorations of NLP, mostly using my corpus of journal entries and other writing. My intent is twofold: 1) learning about NLP and sentiment analysis 2) finding latent meaning in my writing, ideally to help me better understand my own psychological processes. I’ve had much more success with the former than the latter.\n\n",
@@ -3139,7 +2998,6 @@
             "doc_size": 17000
         },
         "/nurture": {
-            "py/object": "__main__.Page",
             "url": "/nurture",
             "title": "NURTURE: The Gottman Method",
             "description": "In “Nurturing Love,” the Heath Brothers distill the wisdom of renowned relationship experts Drs. John and Julie Gottman into a concise and actionable guide for couples seeking to strengthen their relationships. Using their signature storytelling approach and evidence-based insights, the Heath Brothers create an engaging and accessible roadmap to the Gottman Method.\n\n",
@@ -3153,7 +3011,6 @@
             "doc_size": 38000
         },
         "/operating-manual": {
-            "py/object": "__main__.Page",
             "url": "/operating-manual",
             "title": "Igor the operating manual",
             "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency. Super important: You don’t raise to the level of your goals, you fall to the level of your systems\n\n",
@@ -3192,7 +3049,6 @@
             "doc_size": 30000
         },
         "/osx": {
-            "py/object": "__main__.Page",
             "url": "/osx",
             "title": "Igor's OSX Tools",
             "description": "Igor's Blog",
@@ -3206,7 +3062,6 @@
             "doc_size": 10000
         },
         "/pandas": {
-            "py/object": "__main__.Page",
             "url": "/pandas",
             "title": "Pandas + IPython + Jupyter Incantations",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -3221,7 +3076,6 @@
             "doc_size": 20000
         },
         "/parkinson": {
-            "py/object": "__main__.Page",
             "url": "/parkinson",
             "title": "Parkinson's Law: The Paradox of Plenty",
             "description": "Work expands to fill the resources available. The more you make, the more you spend. Stuff expands to fill the space available for storage. If you want something done, give it to a busy person, etc.\n\n",
@@ -3243,7 +3097,6 @@
             "doc_size": 15000
         },
         "/physical-health": {
-            "py/object": "__main__.Page",
             "url": "/physical-health",
             "title": "Physical Health Lets you look good in your jeans, and wrestle bears",
             "description": "Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health requires weight, fitness, and sleep.\n\n",
@@ -3273,7 +3126,6 @@
             "doc_size": 23000
         },
         "/pride": {
-            "py/object": "__main__.Page",
             "url": "/pride",
             "title": "That is pride fucking with you",
             "description": "“That is Pride Fucking With You” is the only scene I can quote from any movie. It’s a powerful scene, and the advice is timeless. Two thousand years ago when a Roman emperor had a victory parade, he was required to have a slave standing behind him holding his helmet high in the air and whispering continuously: “You are mortal. You are mortal”. Pride and ego are serious foes that must be kept in check.\n\n",
@@ -3296,7 +3148,6 @@
             "doc_size": 18000
         },
         "/productive": {
-            "py/object": "__main__.Page",
             "url": "/productive",
             "title": "Productive",
             "description": "At the core of balance, energy, wlb, habits is being productive.\n\n",
@@ -3323,7 +3174,6 @@
             "doc_size": 13000
         },
         "/prompts": {
-            "py/object": "__main__.Page",
             "url": "/prompts",
             "title": "Prompts, your guide to starting a conversation",
             "description": "A prompt will kick start a great conversation, a great insight, and a great relationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.\n\n",
@@ -3341,7 +3191,6 @@
             "doc_size": 26000
         },
         "/psychic-weight": {
-            "py/object": "__main__.Page",
             "url": "/psychic-weight",
             "title": "Psychic Weight",
             "description": "Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it of, and getting now relief regardless of when you sit or sleep. Now imagine that’s not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.\n\n",
@@ -3372,7 +3221,6 @@
             "doc_size": 17000
         },
         "/quip": {
-            "py/object": "__main__.Page",
             "url": "/quip",
             "title": "Quip tips and tricks",
             "description": "My group lives in QUIP. Here are some tips for my quip usage.\n\n",
@@ -3384,7 +3232,6 @@
             "doc_size": 10000
         },
         "/random-idea": {
-            "py/object": "__main__.Page",
             "url": "/random-idea",
             "title": "random un categorized notes",
             "description": "There are lots of rough ideas I have that are not yet categorized, or good enough to be a thought. This will be a\nplace to store them.\n\n",
@@ -3401,7 +3248,6 @@
             "doc_size": 25000
         },
         "/rapport": {
-            "py/object": "__main__.Page",
             "url": "/rapport",
             "title": "How to build rapport",
             "description": "In today’s fast-paced and interconnected world, building and maintaining strong relationships is essential for personal and professional success. POWER is a five-step process that will help you establish rapport and create meaningful connections with people from all walks of life. The POWER acronym stands for: Proximity Observation, Warmth, Empathy, Revelation\n\n",
@@ -3415,7 +3261,6 @@
             "doc_size": 30000
         },
         "/recommend": {
-            "py/object": "__main__.Page",
             "url": "/recommend",
             "title": "Recommender Systems",
             "description": "My explorations of recommender and ranking systems, heavly based on the superb book Practical Recommender Systems\n\n",
@@ -3430,7 +3275,6 @@
             "doc_size": 30000
         },
         "/reflect-tool": {
-            "py/object": "__main__.Page",
             "url": "/reflect-tool",
             "title": "Self Reflection Tool",
             "description": "Igor's Blog",
@@ -3442,7 +3286,6 @@
             "doc_size": 9000
         },
         "/regrets": {
-            "py/object": "__main__.Page",
             "url": "/regrets",
             "title": "Regrets",
             "description": "Regrets, both ours and others, are a powerful tools to shape our present and future. four main types: foundation regrets related to not laying a proper base for life; boldness regrets stemming from missed opportunities and risks; moral regrets from not doing the right thing; and connection regrets from neglecting or damaging relationships. May you fin dinsights into how we can better navigate our choices to minimize regret and enhance our sense of fulfillment.\n\n",
@@ -3462,7 +3305,6 @@
             "doc_size": 17000
         },
         "/remote-work": {
-            "py/object": "__main__.Page",
             "url": "/remote-work",
             "title": "Remote Work",
             "description": "In March 2020, the world shut down from Covid-19. In May 2020, I started a new job as a remote manager at FB. Here are my thoughts.\n\n",
@@ -3476,7 +3318,6 @@
             "doc_size": 21000
         },
         "/roblox-dev": {
-            "py/object": "__main__.Page",
             "url": "/roblox-dev",
             "title": "Developing on roblox",
             "description": "Zach and Amelia are roblox fans, so it’s fun to be able to create things in there playgrounds. With Zach (and maybe Amelia in a while) it’s even more fun to get to program. Here’s some stuff I’ve learned about programming robolox.\n\n",
@@ -3488,7 +3329,6 @@
             "doc_size": 12000
         },
         "/save-the-soup": {
-            "py/object": "__main__.Page",
             "url": "/save-the-soup",
             "title": "Save the Soup",
             "description": "“Are you insane?” I half shouted at Biff, my college roommate. We had just finished our Operating Systems midterm and were lounging at “The Bomber,” our college pub. Biff suggested we both do our last internship at Microsoft.\n\n",
@@ -3502,7 +3342,6 @@
             "doc_size": 13000
         },
         "/save-the-souse": {
-            "py/object": "__main__.Page",
             "url": "/save-the-souse",
             "title": "Save the Souse",
             "description": "Internships are best approached as a long-term field trip. You should plan to be exposed to new things, spend some time out of your comfort zone, and, by all means – use the buddy system.\n\n",
@@ -3516,7 +3355,6 @@
             "doc_size": 13000
         },
         "/seattle": {
-            "py/object": "__main__.Page",
             "url": "/seattle",
             "title": "Seattle",
             "description": "Seattle is my home, I want to die here, though not soon. If you’re visiting, here’s a list of fun things you can try. But here’s the deal, give me feedback on stuff to add/remove from this list\n\n",
@@ -3528,7 +3366,6 @@
             "doc_size": 13000
         },
         "/sell": {
-            "py/object": "__main__.Page",
             "url": "/sell",
             "title": "To Sell Is Human",
             "description": "Selling matters - it’s pitching, convincing, negotiating, hiring. Selling has a bad rap, because the seller often puts their needs ahead of the buyer - a win/lose paradigm. You should make selling win/win or no deal by needing to answer yes to these questions. 1/ If the buyer agrees, will their life improve? 2/ When the deal is done, will the world be a better place than when you began?\n\n",
@@ -3544,7 +3381,6 @@
             "doc_size": 16000
         },
         "/shame": {
-            "py/object": "__main__.Page",
             "url": "/shame",
             "title": "Shame",
             "description": "Shame and guilt are often confused emotions caused by self judgements that lead to contrasting behaviors. Shame drives people to hide or deny their wrongdoings while guilt, properly applied drives people to the correct behaviors. These are both examples of mental-pain and when the pain is phantom or cronic, are often well served by grandmother mind.\n\n",
@@ -3566,7 +3402,6 @@
             "doc_size": 12000
         },
         "/sharpen-the-saw": {
-            "py/object": "__main__.Page",
             "url": "/sharpen-the-saw",
             "title": "Sharpen the saw",
             "description": "A young man saw a woodcutter cutting down a tree and asked “What are you doing?” “Are you blind?” the woodcutter replied. “I’m cutting down this tree.” The young man continued. “You look exhausted! Take a break. Sharpen your saw.” The woodcutter explained he’d been sawing for hours and did not have time to take a break. The young man pushed back… “If you sharpen the saw, you would cut down the tree much faster.” The woodcutter said “I don’t have time to sharpen the saw. Don’t you see I’m too busy. These are my insights based on the 7 habits Chapter 7.\n\n",
@@ -3589,7 +3424,6 @@
             "doc_size": 11000
         },
         "/sicp": {
-            "py/object": "__main__.Page",
             "url": "/sicp",
             "title": "Structure And Design of Computer Programs",
             "description": "LISP, and SICP\n\n",
@@ -3603,7 +3437,6 @@
             "doc_size": 30000
         },
         "/siy": {
-            "py/object": "__main__.Page",
             "url": "/siy",
             "title": "Search inside yourself",
             "description": "Training Emotional Intelligence through mindfulness. Search inside yourself is a meditation training manual for engineers. It’s also a pun as the author works at google, and built the program internally at Google. Joy on demand by the same author, is less engineer focused, and uses joy as a path to medatitive bliss.\n\n",
@@ -3641,7 +3474,6 @@
             "doc_size": 56000
         },
         "/sleep": {
-            "py/object": "__main__.Page",
             "url": "/sleep",
             "title": "Keep life on easy mode - Prioritize Sleep",
             "description": "Bryan Johnson says sleep is like life on easy mode. He has lots to say on this, and it gets technical, and I think I agree:\n\n",
@@ -3661,7 +3493,6 @@
             "doc_size": 13000
         },
         "/sleeping-bag-sacrifies": {
-            "py/object": "__main__.Page",
             "url": "/sleeping-bag-sacrifies",
             "title": "Sleeping bag sacrifices",
             "description": "I started in Windows Azure in 2007. Back then, the name “Azure” wasn’t invented, and Azure was still called “Reddog.” I started on the OS team, drawn in by my dream of changing the world, and getting to be Dave Cutler’s lackey. I didn’t get to work with Cutler, but I still may change the world - now that I’ve learned it’s OK to wake sleeping giants. My giant was named Jay.\n\n",
@@ -3675,7 +3506,6 @@
             "doc_size": 12000
         },
         "/sleight-of-mouth": {
-            "py/object": "__main__.Page",
             "url": "/sleight-of-mouth",
             "title": "Sleight Of Mouth",
             "description": "Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a ‘problem frame’ to a ‘desired outcome frame’ , a ‘failure frame’, to a ‘feedback frame’ and an ‘impossible frame ‘ to an ‘as if’ frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you’ve given it a name, see how perceive it, and become aware of it.\n\n",
@@ -3691,7 +3521,6 @@
             "doc_size": 23000
         },
         "/slow": {
-            "py/object": "__main__.Page",
             "url": "/slow",
             "title": "Rest and Digest - Sometimes you'd rather go slow ",
             "description": "Igor's Blog",
@@ -3703,7 +3532,6 @@
             "doc_size": 11000
         },
         "/smilebox": {
-            "py/object": "__main__.Page",
             "url": "/smilebox",
             "title": "Smilebox",
             "description": "Way back in 2012 I had this idea to make a Smilebox. The tech wasn’t good enough, but in 2023 tech is right ready. Here’s quoting the original blog post … Nothing makes me happier then seeing someone smile. In fact, seeing others smile makes me smile. As a result, I’m creating a box that captures smiles, which I’m calling a smile box. If you look at the smile box, you’ll see the smiles that are already captured . If you smile at the box, it’ll capture your smile and add it to the box.\n\n",
@@ -3717,7 +3545,6 @@
             "doc_size": 17000
         },
         "/snjb": {
-            "py/object": "__main__.Page",
             "url": "/snjb",
             "title": "Welcome to Steve's jungle and bar!",
             "description": "Zach built Steve’s Night Jungle and Bar in twee, here’s our port to python!\n\n",
@@ -3731,7 +3558,6 @@
             "doc_size": 10000
         },
         "/software-leadership-roles": {
-            "py/object": "__main__.Page",
             "url": "/software-leadership-roles",
             "title": "Tech leads, software architects and engineering managers - oh my!",
             "description": "The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of the difference I’ve found is inlined Quora. In this classification I like to run a team small enough that I can be the engineering manager and step in as the software architect as required.\n\n",
@@ -3748,7 +3574,6 @@
             "doc_size": 14000
         },
         "/strategy": {
-            "py/object": "__main__.Page",
             "url": "/strategy",
             "title": "On strategy",
             "description": "As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyers money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it’s all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!\n\n",
@@ -3762,7 +3587,6 @@
             "doc_size": 24000
         },
         "/strengths": {
-            "py/object": "__main__.Page",
             "url": "/strengths",
             "title": "My Strengths from  Strength Finder",
             "description": "Developing you strengths is 3 times as effective as improving your weakness, so find your strengths and double down. To bootstrap the discovery of my strengths, I used a tool called StrengthFinder and it discovered my strengths are Activator, Communication, Problem Solving (Resolver in StrengthFinder speak) Adaptability, and Ideation.\n\n",
@@ -3779,7 +3603,6 @@
             "doc_size": 18000
         },
         "/sublime": {
-            "py/object": "__main__.Page",
             "url": "/sublime",
             "title": "Training the sublime states",
             "description": "Emotional health is pretty important. Western folks don’t have a lot of words to support this. Luckily, the Buddhists have the sublime states: Loving-kindness, Compassion, Altruistic Joy, and Equanimity. Give ‘em a try. Most of this post is based on “The Joy of Happiness”.\n\n",
@@ -3800,7 +3623,6 @@
             "doc_size": 16000
         },
         "/sustainable-work": {
-            "py/object": "__main__.Page",
             "url": "/sustainable-work",
             "title": "I don't want to die knowing I spent too much time at work, and I bet you don't either",
             "description": "<!–\nWho is the audience?\n    - People I’m looking to recruit to my team.\n    - People on my team who can hold me accountable to my aspirations\n    - Igor\n    - My future employers who want to build this culture\n    - My current boss who is trying to figure out what is going on.\n    - PART 2: My future employers that want to know why I’m doing this, and my strategies.\n\n",
@@ -3818,7 +3640,6 @@
             "doc_size": 26000
         },
         "/switch": {
-            "py/object": "__main__.Page",
             "url": "/switch",
             "title": "Switch",
             "description": "Human action can be modeled by an elephant, a rider, and the path. Our emotional side is the Elephant and our rational side is the Rider. Perched atop the Elephant, the Rider holds the reins and seems to be the leader. But the Rider’s control is precarious because the Rider is so small relative to the Elephant. Anytime the six-ton Elephant and the Rider disagree about which direction to go, the Rider is going to lose. He’s completely overmatched. Lastly, the path is the structural elements that nudge your elephant and your rider in a direction, without effort.\n\n",
@@ -3840,7 +3661,6 @@
             "doc_size": 18000
         },
         "/synergize": {
-            "py/object": "__main__.Page",
             "url": "/synergize",
             "title": "Synergize",
             "description": "We’ve all got stuff we’re good at, and stuff we’re bad at. We can combine these in ways that make the system greater then the sum of its parts.\n\n",
@@ -3856,7 +3676,6 @@
             "doc_size": 10000
         },
         "/system-design": {
-            "py/object": "__main__.Page",
             "url": "/system-design",
             "title": "System Design Questions",
             "description": "As a technologist I love system designs. I like to tell interview candidates you don’t need to practice them, it’s what you do every day. In fact, it’s one of the favorite parts of my technical role. I never liked crossword puzzles, but I could totally do system design problems instead. Here’s a great list ..\n\n",
@@ -3875,7 +3694,6 @@
             "doc_size": 20000
         },
         "/taas": {
-            "py/object": "__main__.Page",
             "url": "/taas",
             "title": "Transportation as a Service",
             "description": "Transportation as a service is the third transportation revolution. The first revolution was the addition of 20,000 miles of track which led to the emergence of cities. The second revolution was the assembly line which mass produced cars. The third revolution is ride sharing which is a different transport option. The Fourth transportation revolution will be the human to autonomous transition. The fifth revolution will be the redefining of our cities.\n\n",
@@ -3887,7 +3705,6 @@
             "doc_size": 14000
         },
         "/tags": {
-            "py/object": "__main__.Page",
             "url": "/tags",
             "title": "Tags",
             "description": "Igor's Blog",
@@ -3906,7 +3723,6 @@
             "doc_size": 80000
         },
         "/td/advertising": {
-            "py/object": "__main__.Page",
             "url": "/td/advertising",
             "title": "Advertising",
             "description": "Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.\n\n",
@@ -3918,7 +3734,6 @@
             "doc_size": 22000
         },
         "/td/alexa-skill": {
-            "py/object": "__main__.Page",
             "url": "/td/alexa-skill",
             "title": "Make an Alexa Skill",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -3930,7 +3745,6 @@
             "doc_size": 10000
         },
         "/td/back_ref": {
-            "py/object": "__main__.Page",
             "url": "/td/back_ref",
             "title": "Adding back references to my blog",
             "description": "This blog is my collection of evergreen notes, a place to have my thinking accrue. The blog is densely linked, in the forward direction, but jekyll does not create back links. I think back links would be great. Here’s my strategy to create them.\n\n",
@@ -3942,7 +3756,6 @@
             "doc_size": 10000
         },
         "/td/better-security-design": {
-            "py/object": "__main__.Page",
             "url": "/td/better-security-design",
             "title": "Security Notes",
             "description": "I used to do security in a former life, and here are some musings on the topic, which will eventually be dissected into various essays. For now it’ll be confusing as I’m brain dumping to various audiences with various knowledge (end users, architects, CEOs, designers)\n\n",
@@ -3956,7 +3769,6 @@
             "doc_size": 21000
         },
         "/td/cloud-first-applications": {
-            "py/object": "__main__.Page",
             "url": "/td/cloud-first-applications",
             "title": "Cloud First Applications",
             "description": "The world is now on the cloud, here are my random notes on the topic.\n\n",
@@ -3973,7 +3785,6 @@
             "doc_size": 22000
         },
         "/td/data-systems": {
-            "py/object": "__main__.Page",
             "url": "/td/data-systems",
             "title": "Data Systems",
             "description": "This page contains my knowledge of data systems. Mostly just a summary of Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems\n\n",
@@ -3988,7 +3799,6 @@
             "doc_size": 20000
         },
         "/td/dump_imessage_history": {
-            "py/object": "__main__.Page",
             "url": "/td/dump_imessage_history",
             "title": "Accessing iMessage history",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4000,7 +3810,6 @@
             "doc_size": 12000
         },
         "/td/fix_ssh": {
-            "py/object": "__main__.Page",
             "url": "/td/fix_ssh",
             "title": "ssh client commands timing out from some clients some times",
             "description": "For some reason, SSH is just hanging out of no where. To debug on the server, be sure to open your firewall\n\n",
@@ -4012,7 +3821,6 @@
             "doc_size": 17000
         },
         "/td/hack-web": {
-            "py/object": "__main__.Page",
             "url": "/td/hack-web",
             "title": "Hacking the web for fun and profit",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4024,7 +3832,6 @@
             "doc_size": 25000
         },
         "/td/ios": {
-            "py/object": "__main__.Page",
             "url": "/td/ios",
             "title": "iOS and iPadOS tips",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4039,7 +3846,6 @@
             "doc_size": 17000
         },
         "/td/ios-nomad": {
-            "py/object": "__main__.Page",
             "url": "/td/ios-nomad",
             "title": "iOS Software engineer nomad howto",
             "description": "So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I’m not sure why you’d want to be such a character, in fact, I’m not sure why I want to be such a character, but I do, and here’s how I do it. To be a developer nomad, you better already be a command line wiz. If you’re not at an expert at the terminal, vim or Emacs and TMUX - don’t even try.\n\n",
@@ -4056,7 +3862,6 @@
             "doc_size": 21000
         },
         "/td/linqpad_from_redshift": {
-            "py/object": "__main__.Page",
             "url": "/td/linqpad_from_redshift",
             "title": "Make linqpad work with redshift.",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4068,7 +3873,6 @@
             "doc_size": 13000
         },
         "/td/minecraft": {
-            "py/object": "__main__.Page",
             "url": "/td/minecraft",
             "title": "Minecraft Notes",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4080,7 +3884,6 @@
             "doc_size": 14000
         },
         "/td/mosh": {
-            "py/object": "__main__.Page",
             "url": "/td/mosh",
             "title": "Mosh",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4092,7 +3895,6 @@
             "doc_size": 11000
         },
         "/td/private_web_site": {
-            "py/object": "__main__.Page",
             "url": "/td/private_web_site",
             "title": "Private Web Site",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4104,7 +3906,6 @@
             "doc_size": 10000
         },
         "/td/ring-video-download": {
-            "py/object": "__main__.Page",
             "url": "/td/ring-video-download",
             "title": "Ring Video Doorbell",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4116,7 +3917,6 @@
             "doc_size": 11000
         },
         "/td/slow_zsh": {
-            "py/object": "__main__.Page",
             "url": "/td/slow_zsh",
             "title": "Slow ZSH prompts",
             "description": "All of the sudden, hititng enter in zsh took seconds - took me a while, but I realized if I kiled tmux (not just a window), then it would be fast again (well, that’s better then a reboot I guess. Sigh, this drove me nuts and I just switched to Atuin instead\n\n",
@@ -4130,7 +3930,6 @@
             "doc_size": 15000
         },
         "/td/sqlalchemy-redshift": {
-            "py/object": "__main__.Page",
             "url": "/td/sqlalchemy-redshift",
             "title": "SQL Alchemy with Redshift",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4142,7 +3941,6 @@
             "doc_size": 11000
         },
         "/td/stats": {
-            "py/object": "__main__.Page",
             "url": "/td/stats",
             "title": "Statistics",
             "description": "Statistics is a tool which lets us summarize data, and make inferences from it.\n\n",
@@ -4156,7 +3954,6 @@
             "doc_size": 17000
         },
         "/td/streaks": {
-            "py/object": "__main__.Page",
             "url": "/td/streaks",
             "title": "Habit tracking app",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4168,7 +3965,6 @@
             "doc_size": 11000
         },
         "/td/usbtech": {
-            "py/object": "__main__.Page",
             "url": "/td/usbtech",
             "title": "Usb Tech",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4180,7 +3976,6 @@
             "doc_size": 12000
         },
         "/td/virtual-desktops": {
-            "py/object": "__main__.Page",
             "url": "/td/virtual-desktops",
             "title": "Virtual desktops in Wox",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4192,7 +3987,6 @@
             "doc_size": 10000
         },
         "/td/visual-vocabulary": {
-            "py/object": "__main__.Page",
             "url": "/td/visual-vocabulary",
             "title": "Visual Thinking Notes",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4206,7 +4000,6 @@
             "doc_size": 11000
         },
         "/td/vlc_player": {
-            "py/object": "__main__.Page",
             "url": "/td/vlc_player",
             "title": "VLC Play Notes",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4218,7 +4011,6 @@
             "doc_size": 10000
         },
         "/td/windbg": {
-            "py/object": "__main__.Page",
             "url": "/td/windbg",
             "title": "WinDBG notes",
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4230,7 +4022,6 @@
             "doc_size": 10000
         },
         "/tech-health-toys": {
-            "py/object": "__main__.Page",
             "url": "/tech-health-toys",
             "title": "Tech for health",
             "description": "Physical health is the basis of my energy, so it’s a place I’m happy spending money and energy. I’ve been buying lots of technology to help me understand and measure my health and fitness and this post will track my favorite toys.\n\n",
@@ -4248,7 +4039,6 @@
             "doc_size": 13000
         },
         "/terzepatide": {
-            "py/object": "__main__.Page",
             "url": "/terzepatide",
             "title": "Terzepatide: The magic weight loss shot",
             "description": "“You know Igor, weight loss is a solved problem” - my bestie, texted me when I complained about my pants no longer fitting. Remember - Diet dominates weight, as weight is simple arithemtic -“calories in” minus “calories out”. For me, will power dominates diet, and terzepatide dominates will power when stuffing things in my mouth. I started Terzepatide in February 2024, and so far it’s been great.\n\n",
@@ -4265,7 +4055,6 @@
             "doc_size": 15000
         },
         "/tesla": {
-            "py/object": "__main__.Page",
             "url": "/tesla",
             "title": "Tony (Tessie) the Tesla",
             "description": "I don’t like to drive. I don’t like to drive so much that I have it in my eulogy. Luckily, this fellow made a car that’s optimized to driving you. In August 2023 I treated myself to a Tesla Model Y. It has lots of trade-offs, but the key for me is Autopilot (e.g. it driving me)\n\n",
@@ -4282,7 +4071,6 @@
             "doc_size": 14000
         },
         "/testing": {
-            "py/object": "__main__.Page",
             "url": "/testing",
             "title": "Testing and Quality",
             "description": "If it’s not tested, it doesn’t work. When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise, you’ve got more work to do.\n\n",
@@ -4300,7 +4088,6 @@
             "doc_size": 21000
         },
         "/The-Genesis-Node": {
-            "py/object": "__main__.Page",
             "url": "/The-Genesis-Node",
             "title": "Microsoft Azure - The Genesis Node",
             "description": "Igor, you know the odds of shipping Azure on time are slim to none.”\n\n",
@@ -4316,7 +4103,6 @@
             "doc_size": 13000
         },
         "/the-recruiter-does-not-think-you-are-hot": {
-            "py/object": "__main__.Page",
             "url": "/the-recruiter-does-not-think-you-are-hot",
             "title": "The recruiter does not think you're hot",
             "description": "I’ve only had one truly unbearable job. It was awful - The code base sucked, the boss had pointed hair, and to top it off I got a terrible review.\n\n",
@@ -4328,7 +4114,6 @@
             "doc_size": 12000
         },
         "/time-off-2024-08": {
-            "py/object": "__main__.Page",
             "url": "/time-off-2024-08",
             "title": "Time off August 2024",
             "description": "I’m incredibly fortunate to be able to take 6 weeks off this summer! From when performance reviews finish to when the kids go back to school, it’ll be summer vacation.\n\n",
@@ -4346,7 +4131,6 @@
             "doc_size": 25000
         },
         "/timeoff": {
-            "py/object": "__main__.Page",
             "url": "/timeoff",
             "title": "Getting the most out of time off",
             "description": "Time off is critical, it’s how we renew our energy, find our creativity, etc. Many people think of time off as synonymous with turning your 1 week off into an action-packed tour of Disneyland. But, there are other kinds of time off that we’ll discuss too. Like most things, time off is a skill that can be improved by studying and applying your learnings. This post includes mine - note to self - read them!!\n\n",
@@ -4388,7 +4172,6 @@
             "doc_size": 32000
         },
         "/todo_enjoy": {
-            "py/object": "__main__.Page",
             "url": "/todo_enjoy",
             "title": "Things I enjoy",
             "description": "It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:\n\n",
@@ -4404,7 +4187,6 @@
             "doc_size": 14000
         },
         "/tools": {
-            "py/object": "__main__.Page",
             "url": "/tools",
             "title": "Igor's Tech, Tricks, and Tools",
             "description": "A collection of tips, tricks and pointers of the various tools i use\n\n",
@@ -4421,7 +4203,6 @@
             "doc_size": 47000
         },
         "/touching": {
-            "py/object": "__main__.Page",
             "url": "/touching",
             "title": "Things that make me cry",
             "description": "It’s pretty easy to be overwhelmed by humanity sucking, but there is so much good in the world. Here are some great examples\n\n",
@@ -4440,7 +4221,6 @@
             "doc_size": 12000
         },
         "/toysfortots": {
-            "py/object": "__main__.Page",
             "url": "/toysfortots",
             "title": "Donating to charity",
             "description": "One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations. What is most amazing about this project is we were able to go from zero to announcing our MVP live on Good Morning America in under 4 months which included all sorts of complexities, negotiations, and good luck.\n\n",
@@ -4455,7 +4235,6 @@
             "doc_size": 14000
         },
         "/upstream": {
-            "py/object": "__main__.Page",
             "url": "/upstream",
             "title": "Upstream - How to solve problems before they happen",
             "description": "Imagine sitting enjoying a picnic with a friend at the side of a river. Suddenly you see a kid drowning, you and your friend dive in and save him. A few minutes later the same thing happens. When the third kid comes down river, your friend runs away. You scream at him - why the hell aren’t you helping. He replies, I’m running upstream to stop the bastard who’s throwing kids into the river. Upstream is the idea of solving problems before they start. It’s the basis of habit 3, First Things First, where we tackle the important not urgent.\n\n",
@@ -4469,7 +4248,6 @@
             "doc_size": 14000
         },
         "/vim": {
-            "py/object": "__main__.Page",
             "url": "/vim",
             "title": "Igors Vim Tips",
             "description": "I use nvim lots, but constantly forget what I want to practice. Here’s a list to remind me.\n\n",
@@ -4483,7 +4261,6 @@
             "doc_size": 10000
         },
         "/vim-for-writing": {
-            "py/object": "__main__.Page",
             "url": "/vim-for-writing",
             "title": "Vim For Writing",
             "description": "VIM is great at lots of things, but free form writing has a few gaps in ‘line wrapping’ and ‘distraction free visual beauty’. These gaps can be closed with the plugins Pencil, Goyo and LimeLight.\n\n",
@@ -4498,7 +4275,6 @@
             "doc_size": 14000
         },
         "/voices": {
-            "py/object": "__main__.Page",
             "url": "/voices",
             "title": "Voices in my head - A survey of my personalities",
             "description": "The person that most frequently blocks your success is, wait for it, you! Often it’s your subconscious, and often your subconscious is a bunch of independent voices. It’s hard to deal with this hidden opposition because it’s so opaque. To help understand your feelings, you can name the voices in your head, and imagine asking each of them their positions and desired outcomes.\n\n",
@@ -4522,7 +4298,6 @@
             "doc_size": 15000
         },
         "/warm": {
-            "py/object": "__main__.Page",
             "url": "/warm",
             "title": "Staying warm",
             "description": "Staying warm is important, here’s the gear I use on and off the bike\n\n",
@@ -4536,7 +4311,6 @@
             "doc_size": 16000
         },
         "/weeks": {
-            "py/object": "__main__.Page",
             "url": "/weeks",
             "title": "Life in Weeks",
             "description": "\n\n",
@@ -4550,7 +4324,6 @@
             "doc_size": 4300000
         },
         "/welcome-to-holland": {
-            "py/object": "__main__.Page",
             "url": "/welcome-to-holland",
             "title": "Welcome to Holland",
             "description": "“Welcome to Holland” articulates expectation, blame, and acceptance in a heart warming easy to read story.\n\n",
@@ -4564,7 +4337,6 @@
             "doc_size": 12000
         },
         "/what-makes-a-leader": {
-            "py/object": "__main__.Page",
             "url": "/what-makes-a-leader",
             "title": "What makes a leader",
             "description": "Emotional intelligence (EI) is the crux of leadership. EI is comprised of Self-Awareness, Self-Regulation, Motivation, Empathy and Social Skills. This is a summary of Dan Goleman’s What makes a leader. Before we begin, here’s a consulting 2x2 grid:\n\n",
@@ -4579,7 +4351,6 @@
             "doc_size": 12000
         },
         "/why-is-no-one-referring": {
-            "py/object": "__main__.Page",
             "url": "/why-is-no-one-referring",
             "title": "Why is noone referring my project",
             "description": "Your customers don’t provide referrals because it’s a risk to their credibility. Remove the credibility risk, and your referrals will follow.\n\n",
@@ -4591,7 +4362,6 @@
             "doc_size": 11000
         },
         "/win-win": {
-            "py/object": "__main__.Page",
             "url": "/win-win",
             "title": "Win/win or no deal",
             "description": "Win/Win is a constantly seeking mutual benefit in all interactions. Win/Win means that agreements or solutions are mutually beneficial, mutually satisfying. With a Win/Win solution, all parties feel good about the decision and feel committed to the action plan. Win/Win sees life as a cooperative, not a competitive arena. Most people tend to think in terms of dichotomies: strong or weak, hardball or softball, win or lose. But that kind of thinking is fundamentally flawed. It’s based on power and position rather than on principle. Win/Win is based on the paradigm that there is plenty for everybody, that one person’s success is not achieved at the expense or exclusion of the success of others.\n\n",
@@ -4611,7 +4381,6 @@
             "doc_size": 15000
         },
         "/write-book": {
-            "py/object": "__main__.Page",
             "url": "/write-book",
             "title": "How to write a book",
             "description": "My notes on writing books, mostly from Write Useful Books\n\n",
@@ -4625,7 +4394,6 @@
             "doc_size": 13000
         },
         "/writing": {
-            "py/object": "__main__.Page",
             "url": "/writing",
             "title": "Writing is Thinking",
             "description": "Useful writing tells people something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart “If you’re thinking without writing, you’re only thinking about thinking”.\n\n",
@@ -4656,7 +4424,6 @@
             "doc_size": 34000
         },
         "/y24": {
-            "py/object": "__main__.Page",
             "url": "/y24",
             "title": "Igor's plan for 2024",
             "description": "I like to begin in mind, so let’s write a report for 2024. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
