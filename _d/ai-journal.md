@@ -16,6 +16,9 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+    - [2024-08-13](#2024-08-13)
+        - [Aider take #12!](#aider-take-12)
+        - [Awesome talks](#awesome-talks)
     - [2024-07-31](#2024-07-31)
         - [Auto code editting (via Aider) - TOO Soon](#auto-code-editting-via-aider---too-soon)
     - [2024-07-30](#2024-07-30)
@@ -111,6 +114,21 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2024-08-13
+
+#### Aider take #12
+
+OK, so Aider tries to make every change its own commit, which is super noisy and error-prone, a few learnings:
+
+1. Do the changes on a branch then squash up the final branch
+2. You need to have unit tests, let Aider create them (I've got to figure out how to let it name them)
+
+Here's [a change almost totally done with Aider](https://github.com/idvorkin/Settings/commit/234bdca31c4c44b2916de13c5fa858d83cbfe5cf)
+
+#### Awesome talks
+
+OK, so turns out [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) Has amazing talks, I watched several, including his great talk on security. Which insipired me to create [AI Security](/ai-security)
 
 ### 2024-07-31
 
