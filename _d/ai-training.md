@@ -57,4 +57,4 @@ Generally, I don't deal with training or deeper tech, but might as well keep som
 
 Not quite training but need to stuff this somewhere...
 
-https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html
+<https://mlabonne.github.io/blog/posts/Introduction_to_Weight_Quantization.html>
