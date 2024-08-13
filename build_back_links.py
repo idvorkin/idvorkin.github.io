@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from collections import defaultdict
 from typing import NewType, List
 import os
-import jsonpickle  # json encoder doesn't encode dataclasses nicely, jsonpickle does the trick
+import json
 from dataclasses import dataclass
 import copy
 import typer
@@ -238,13 +238,23 @@ class LinkBuilder:
         }
 
         # don't mangle the unicode
-        jsonpickle.set_encoder_options("json", ensure_ascii=False)
+        # Custom encoder to handle Page objects
+        def page_encoder(obj):
+            if isinstance(obj, Page):
+                return {
+                    "url": obj.url,
+                    "title": obj.title,
+                    "description": obj.description,
+                    "file_path": obj.file_path,
+                    "outgoing_links": obj.outgoing_links,
+                    "incoming_links": obj.incoming_links,
+                    "redirect_url": obj.redirect_url,
+                    "markdown_path": obj.markdown_path,
+                    "doc_size": obj.doc_size,
+                }
+            return obj
 
-        # can't prettier ignore to avoid it getting re-written by git checkin scripts
-        # because it will no longer be json -- grr
-        # print ('<!-- prettier-ignore-start -->')
-        # print ('<!-- prettier-ignore-end -->')
-        print(jsonpickle.encode(out, indent=4))
+        print(json.dumps(out, indent=4, ensure_ascii=False, default=page_encoder))
 
 
 def build_links_for_dir(lb, dir):
