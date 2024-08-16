@@ -17,8 +17,9 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
     - [2024-08-13](#2024-08-13)
-        - [Aider take #12!](#aider-take-12)
+        - [Aider take #12](#aider-take-12)
         - [Awesome talks](#awesome-talks)
+        - [Working through making Neural Nets](#working-through-making-neural-nets)
     - [2024-07-31](#2024-07-31)
         - [Auto code editting (via Aider) - TOO Soon](#auto-code-editting-via-aider---too-soon)
     - [2024-07-30](#2024-07-30)
@@ -129,6 +130,10 @@ Here's [a change almost totally done with Aider](https://github.com/idvorkin/Set
 #### Awesome talks
 
 OK, so turns out [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) Has amazing talks, I watched several, including his great talk on security. Which insipired me to create [AI Security](/ai-security)
+
+#### Working through making Neural Nets
+
+See: <https://karpathy.ai/zero-to-hero.html>
 
 ### 2024-07-31
 
