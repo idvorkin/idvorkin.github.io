@@ -29,6 +29,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [Back door Roth](#back-door-roth)
     - [The pro-Rata rule](#the-pro-rata-rule)
     - [529s](#529s)
+- [Tracking](#tracking)
 - [Rates Taxes and Savings](#rates-taxes-and-savings)
     - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
     - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
@@ -131,6 +132,18 @@ Even though you are using after tax dollars to transfer money to the Roth IRA, y
 ### 529s
 
 An education only after tax savings account. You put in money after tax, get tax free growth, and can use distributions for your kid or grand kids education.
+
+## Tracking
+
+Back in the day mint was great, but now, I use [Monarch Money](https://www.monarchmoney.com/). Took me a couple days to setup, and so far it's been great!
+
+I use:
+
+- Monarch Money
+- It can sync to my apple card
+- I use an [amazon spending importer](https://www.reddit.com/r/MonarchMoney/comments/18w9r22/python_script_to_import_amazon_purchases_as/) (to get me a breakdown of Amazon Spend)
+
+I also pay all my credit cards and mortgages from a single account - so that's my source of truth to make sure I'm not missing major stuff (and boy I often am).
 
 ## Rates Taxes and Savings
 
