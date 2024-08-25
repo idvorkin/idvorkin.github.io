@@ -30,7 +30,8 @@ Lets define caring, as the intensity of our emotions, critical given a lack of e
     - [Caring vs Action](#caring-vs-action)
 - [From Dr. Raph](#from-dr-raph)
     - [What are we talking about?](#what-are-we-talking-about)
-        - [Q for DR. Raph](#q-for-dr-raph)
+- [Stoicism](#stoicism)
+    - [Q for DR. Raph](#q-for-dr-raph)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -45,7 +46,7 @@ If you want to know more feel free to watch the video on my depression post:
 
 {%include summarize-page.html src="/depression" %}
 
-### The dark path from not caring to depression.
+### The dark path from not caring to depression
 
 I imagine my passions as a healthy fire with many logs fueling it. With depression that fire is out, and boy restarting it is hard.
 
@@ -122,6 +123,12 @@ Dr. Raph - The experience of possessing a passion. The intensity level of one’
 
 The intensity level of the emotional response (either positive or negative) to something in one’s perceived reality. The subjective experience of passion (i.e., feeling passionate) is synonymous with the experience of caring (the intensity of which is proportional to the value automatically attributed to that which the passion, or caring, is centered on).
 
-#### Q for DR. Raph
+## Stoicism
+
+OK, this may end up in it's own section
+
+- Cool render of aristle's [What makes a good life](https://ralphammer.com/aristotle-how-to-live-a-good-life/)
+
+### Q for DR. Raph
 
 - If caring is defined as the intensity of an emotion - what term refers to caring about someone?
