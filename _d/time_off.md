@@ -56,7 +56,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## Time on, time rich, time poor.
+## Time on, time rich, time poor
 
 Yeah, I've never thought about that either. Let's define "Time On" as the period when you're actively engaged in work or other mandatory activities that require your full attention and energy.
 
@@ -302,16 +302,16 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 ### Road Trip Tips
 
 - Bring Kettlebells
+- Bring a cooler - Buy fruits/vegtables and put them in there cooler and hotel fridge.
 - Lots of audiobooks
 - Stop at walmart
-- Don't let yourself drive too far
+- Set an end-of-day location that's only 4 hours of driving, otherwise, you'll end up spending not enough time smelling the roses.
 
 ### Other learnings
 
 - Remember the peak-end rule. Make the last day amazing!
 - Have a hotel booked Friday and Saturday nights
 - If you forget something, buy it at Walmart
-- Set an end-of-day location that's only 4 hours of driving, otherwise, you'll end up spending not enough time smelling the roses.
 - Keep kettlebells in the car
 
 ## Other Thoughts
