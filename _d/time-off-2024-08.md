@@ -268,10 +268,10 @@ Things to do:
 
 Per repo changes
 
-- [Tony](https://gist.github.com/idvorkin/12cb3335c89d9331927b65581cb4f8f8)
-- [Nlp](https://gist.github.com/idvorkin/d0428bf83fd6448b55768d8e66bcd92c)
-- [Blog](https://gist.github.com/idvorkin/354235629e93d5b266bfed8962f4d4ca)
-- [Settings](https://gist.github.com/idvorkin/dc22f6aa58c9694b3cd3705076a86610)
+- [Tony](https://gist.github.com/idvorkin/909330a36720be6700afe5b18d4cd796)
+- [Nlp](https://gist.github.com/idvorkin/320d2e75cbc8032c728a1ab0646e0a5c)
+- [Blog](https://gist.github.com/idvorkin/916e543eee016ca9fc49dac80d909a27)
+- [Settings](https://gist.github.com/idvorkin/8c67a31507b76d40b0bf8bb5bb40ef62)
 
 ### Video publishing
 
