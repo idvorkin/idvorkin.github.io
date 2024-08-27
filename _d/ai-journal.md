@@ -16,6 +16,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+    - [2024-08-26](#2024-08-26)
     - [2024-08-13](#2024-08-13)
         - [Aider take #12](#aider-take-12)
         - [Awesome talks](#awesome-talks)
@@ -115,6 +116,27 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2024-08-26
+
+Playing with Flux.1
+
+<https://replicate.com/ostris/flux-dev-lora-trainer/train>
+
+The model I trained:
+
+The [model](https://replicate.com/idvorkin/idvorkin-flux-lora-1)
+
+![Igor doing something](https://replicate.delivery/yhqm/CRLshgbk5ZomNp7GxHSISkMrtynHNufLEZJpFHCa7lcGvXrJA/out-0.webp)
+Prompt:
+
+Hyperrealistic photograph of a bald, middle-aged man named Idvorkin, wearing single-colored yellow glasses. He has a slightly heavier build, standing at 5'8" and weighing around 175 lbs, with a sturdy, solid frame. Idvorkin is in the middle of performing a kettlebell swing with perfect form. He is holding a heavy kettlebell with both hands, swinging it up to chest height, with his muscles engaged and a look of concentration on his face. The background is a beach at sunrise, and the lighting is bright and focused, highlighting his effort. The mood is intense and determined. Idvorkin is dressed in athletic wear, including a fitted "cat in the hat Dr. Seuss" t-shirt and shorts. Shot with a normal 35mm camera lens, rendered in high resolution. Realistic skin texture, detailed muscle definition, and a dynamic, energetic atmosphere
+
+Image:
+
+Models to try:
+
+- [XKCD](https://replicate.com/pellmellism/xkcd?prediction=cgj9dyad6srm00chj5pbgjm4cw)
 
 ### 2024-08-13
 
