@@ -17,6 +17,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
     - [2024-08-26](#2024-08-26)
+    - [Playing with Flux.1](#playing-with-flux1)
     - [2024-08-13](#2024-08-13)
         - [Aider take #12](#aider-take-12)
         - [Awesome talks](#awesome-talks)
@@ -119,18 +120,26 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ### 2024-08-26
 
-Playing with Flux.1
+### Playing with Flux.1
 
 <https://replicate.com/ostris/flux-dev-lora-trainer/train>
 
+[Model Merge](https://replicate.com/lucataco/flux-dev-multi-lora?prediction=ajkd29fje9rj40chjk58gztxy8)
+
+Loras we can mege:
+
+- idvorkin/idvorkin-flux-lora-1
+- Merge Real and Boring - [kudzueye/Boreal](https://huggingface.co/kudzueye/Boreal) - Keyword is photo
+
+- We can also mege with just the name of the other Lora. [Me and Sue Johnanson](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=v7wyfv05c1rm20chjkrb7c9w9m)
+
 The model I trained:
 
-The [model](https://replicate.com/idvorkin/idvorkin-flux-lora-1)
+The [model](https://replicate.com/idvorkin/idvorkin-flux-lora-1) on [hugging face](/idvorkin/idvorkin-flux-lora-1) - idvorkin/idvorkin-flux-lora-1
 
 ![Igor doing something](https://replicate.delivery/yhqm/CRLshgbk5ZomNp7GxHSISkMrtynHNufLEZJpFHCa7lcGvXrJA/out-0.webp)
-Prompt:
 
-Hyperrealistic photograph of a bald, middle-aged man named Idvorkin, wearing single-colored yellow glasses. He has a slightly heavier build, standing at 5'8" and weighing around 175 lbs, with a sturdy, solid frame. Idvorkin is in the middle of performing a kettlebell swing with perfect form. He is holding a heavy kettlebell with both hands, swinging it up to chest height, with his muscles engaged and a look of concentration on his face. The background is a beach at sunrise, and the lighting is bright and focused, highlighting his effort. The mood is intense and determined. Idvorkin is dressed in athletic wear, including a fitted "cat in the hat Dr. Seuss" t-shirt and shorts. Shot with a normal 35mm camera lens, rendered in high resolution. Realistic skin texture, detailed muscle definition, and a dynamic, energetic atmosphere
+Prompt: _Hyperrealistic photograph of a bald, middle-aged man named Idvorkin, wearing single-colored yellow glasses. He has a slightly heavier build, standing at 5'8" and weighing around 175 lbs, with a sturdy, solid frame. Idvorkin is in the middle of performing a kettlebell swing with perfect form. He is holding a heavy kettlebell with both hands, swinging it up to chest height, with his muscles engaged and a look of concentration on his face. The background is a beach at sunrise, and the lighting is bright and focused, highlighting his effort. The mood is intense and determined. Idvorkin is dressed in athletic wear, including a fitted "cat in the hat Dr. Seuss" t-shirt and shorts. Shot with a normal 35mm camera lens, rendered in high resolution. Realistic skin texture, detailed muscle definition, and a dynamic, energetic atmosphere_
 
 Image:
 
