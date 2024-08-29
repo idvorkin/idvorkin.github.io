@@ -1,10 +1,12 @@
 ---
 layout: post
 title: AI Image Generation
-permalink: /ai-coder
+permalink: /ai-image
+redirect-from:
+  - /ai-imagegen
 ---
 
-We ta
+Everyone talks about GPT, but you can also generate images. Lately I've been playing with Flux.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -25,7 +27,10 @@ We ta
 
 In the prompt, I'm idvorkin,
 
+- [Igor with Mona Lisa](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=ax1m29vk19rm20chk68rkah1y0) on a sail boat.
 - https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=ax1m29vk19rm20chk68rkah1y0
+
+![Igor doing something](https://replicate.delivery/yhqm/CRLshgbk5ZomNp7GxHSISkMrtynHNufLEZJpFHCa7lcGvXrJA/out-0.webp)
 
 You can blend in:
 
