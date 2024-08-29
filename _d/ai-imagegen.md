@@ -6,7 +6,7 @@ redirect-from:
   - /ai-imagegen
 ---
 
-Everyone talks about GPT, but you can also generate images. Lately I've been playing with Flux.
+Everyone talks about GPT, but you can also generate images. Lately I've been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -19,6 +19,8 @@ Everyone talks about GPT, but you can also generate images. Lately I've been pla
     - [Diffusion](#diffusion)
     - [LoRAs](#loras)
     - [Blending LoRAs](#blending-loras)
+- [Providing Inputs](#providing-inputs)
+    - [Text 2 Image; Control Nets; In Painting](#text-2-image-control-nets-in-painting)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -37,7 +39,7 @@ You can blend in:
 - mona lisa: huggingface.co/fofr/flux-mona-lisa
 - scarlett johansson:
 
-* Merge Real and Boring - [kudzueye/Boreal](https://huggingface.co/kudzueye/Boreal) - Keyword is photo
+* Real and Boring - [kudzueye/Boreal](https://huggingface.co/kudzueye/Boreal) - Keyword is photo
 
 Blend multi loras (equal weights)
 
@@ -56,3 +58,7 @@ As of April '24, Flux.Dev is the new open source hotness. You can train a LoRA o
 ### LoRAs
 
 ### Blending LoRAs
+
+## Providing Inputs
+
+### Text 2 Image; Control Nets; In Painting
