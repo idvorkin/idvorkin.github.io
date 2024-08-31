@@ -15,3 +15,8 @@ Lets play with media editting. So far I've liked luma fusion for post:
 ### Keyboard shortcuts
 
 - Split - M-B
+
+## Screen casting tools
+
+Keyboard Capture - Keycastr
+Mouse Capture - hyper mouse
