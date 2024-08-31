@@ -252,6 +252,9 @@ Things to do:
 - ☑ Add third and half to yabi
 - ☑ HOORAY - Got Caps-><space> mapping to alfred in iterm (OMG - this has been a huge paper cut for months)
 - ☑ Started using url shortner via [tinyurl and web link](https://chromewebstore.google.com/detail/url-shortener/godoifjoiadanijplaghmhgfeffnblib)
+- Figured out how to include pasting (Inspired by imgclip). [Code](https://github.com/idvorkin/settings/blob/237111421f313df54c48f31b4d8697237e3787c8/py/y.py?plain=1#L258)
+
+![Demo the paste](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_102419.webp)
 
 ### Tony
 
