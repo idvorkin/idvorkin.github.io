@@ -290,6 +290,10 @@ Using think.py:
 
 {%include youtube.html src="DuluVSnJGqg" %}
 
+- Using the desktop within VR
+
+{%include youtube.html src="asjUiUBjrZI" %}
+
 ### CUT
 
 - Outline my talk for GPT, likley based on on Langchain tools
