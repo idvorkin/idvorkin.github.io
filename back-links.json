@@ -429,6 +429,21 @@
             "markdown_path": "_d/affirmations2.md",
             "doc_size": 14000
         },
+        "/ai": {
+            "url": "/ai",
+            "title": "All Igor's AI think",
+            "description": "A landing page for all my ai pages -  a nice jumping off point\n\n",
+            "file_path": "_site/ai.html",
+            "outgoing_links": [
+                "/ai-coder",
+                "/ai-imagegen",
+                "/ai_art"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/ai.md",
+            "doc_size": 9000
+        },
         "/ai-art": {
             "url": "/ai-art",
             "title": "AI and art",
@@ -459,6 +474,19 @@
             "markdown_path": "_d/ai-bestie.md",
             "doc_size": 18000
         },
+        "/ai-coder": {
+            "url": "/ai-coder",
+            "title": "AI code writer",
+            "description": "AI code writing has had a few iterations: Code Completion; Out of Band Chat; Full Code Writing\n\n",
+            "file_path": "_site/ai-coder.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/ai"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/ai-coder.md",
+            "doc_size": 11000
+        },
         "/ai-developer": {
             "url": "/ai-developer",
             "title": "AI Developer",
@@ -477,6 +505,17 @@
             "markdown_path": "_d/ai-developer.md",
             "doc_size": 23000
         },
+        "/ai-image": {
+            "url": "/ai-image",
+            "title": "AI Image Generation",
+            "description": "Everyone talks about GPT, but you can also generate images. Lately, I’ve been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.\n\n",
+            "file_path": "_site/ai-image.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/ai-imagegen.md",
+            "doc_size": 13000
+        },
         "/ai-journal": {
             "url": "/ai-journal",
             "title": "Igor's AI Journal",
@@ -486,14 +525,15 @@
                 "/ai-art",
                 "/ai-security",
                 "/genai-talk",
-                "/gpt"
+                "/gpt",
+                "/idvorkin/idvorkin-flux-lora-1"
             ],
             "incoming_links": [
                 "/ai-developer"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-journal.md",
-            "doc_size": 24000
+            "doc_size": 27000
         },
         "/ai-paper": {
             "url": "/ai-paper",
@@ -503,7 +543,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "markdown_path": "_d/ai_papers.md",
+            "markdown_path": "_d/ai-paper.md",
             "doc_size": 11000
         },
         "/ai-security": {
@@ -2722,6 +2762,17 @@
             "markdown_path": "_d/mania.md",
             "doc_size": 19000
         },
+        "/media-edit": {
+            "url": "/media-edit",
+            "title": "Media Editting",
+            "description": "Lets play with media editting. So far I’ve liked luma fusion for post:\n\n",
+            "file_path": "_site/media-edit.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/media-edit.md",
+            "doc_size": 10000
+        },
         "/mental-pain": {
             "url": "/mental-pain",
             "title": "The thoughts that pain us",
@@ -2907,7 +2958,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/taxes.md",
-            "doc_size": 31000
+            "doc_size": 32000
         },
         "/mood": {
             "url": "/mood",
@@ -3228,7 +3279,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "markdown_path": "_td/quip.md",
+            "markdown_path": "_d/video-edit.md",
             "doc_size": 10000
         },
         "/random-idea": {
