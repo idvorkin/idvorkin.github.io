@@ -432,7 +432,7 @@
         "/ai": {
             "url": "/ai",
             "title": "All posts on AI",
-            "description": "A landing page for all my ai pages - a nice jumping off point\n\n",
+            "description": "A landing page for all my ai pages - a nice jumping off point (especially from the graph)\n\n",
             "file_path": "_site/ai.html",
             "outgoing_links": [
                 "/ai-art",
@@ -443,12 +443,14 @@
                 "/ai-journal",
                 "/ai-paper",
                 "/ai-security",
-                "/ai-testing"
+                "/ai-testing",
+                "/ml",
+                "/recommend"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai.md",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/ai-art": {
             "url": "/ai-art",
@@ -2898,6 +2900,7 @@
                 "/recommend"
             ],
             "incoming_links": [
+                "/ai",
                 "/ai-developer",
                 "/manager-book",
                 "/td/stats"
@@ -3335,6 +3338,7 @@
             "file_path": "_site/recommend.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/ai",
                 "/d/time-off-2022-07",
                 "/ml"
             ],

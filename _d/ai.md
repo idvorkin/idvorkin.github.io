@@ -4,7 +4,7 @@ title: All posts on AI
 permalink: /ai
 ---
 
-A landing page for all my ai pages - a nice jumping off point
+A landing page for all my ai pages - a nice jumping off point (especially from the graph)
 
 {%include summarize-page.html src="/ai-art" %}
 
@@ -39,3 +39,13 @@ A landing page for all my ai pages - a nice jumping off point
 ---
 
 {%include summarize-page.html src="/ai-testing" %}
+
+Older stuf
+
+---
+
+{%include summarize-page.html src="/ml" %}
+
+---
+
+{%include summarize-page.html src="/recommend" %}
