@@ -431,18 +431,24 @@
         },
         "/ai": {
             "url": "/ai",
-            "title": "All Igor's AI think",
-            "description": "A landing page for all my ai pages -  a nice jumping off point\n\n",
+            "title": "All posts on AI",
+            "description": "A landing page for all my ai pages - a nice jumping off point\n\n",
             "file_path": "_site/ai.html",
             "outgoing_links": [
+                "/ai-art",
+                "/ai-bestie",
                 "/ai-coder",
-                "/ai-imagegen",
-                "/ai_art"
+                "/ai-developer",
+                "/ai-image",
+                "/ai-journal",
+                "/ai-paper",
+                "/ai-security",
+                "/ai-testing"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai.md",
-            "doc_size": 9000
+            "doc_size": 10000
         },
         "/ai-art": {
             "url": "/ai-art",
@@ -453,6 +459,7 @@
                 "/gpt"
             ],
             "incoming_links": [
+                "/ai",
                 "/ai-developer",
                 "/ai-journal"
             ],
@@ -467,6 +474,7 @@
             "file_path": "_site/ai-bestie.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/ai",
                 "/ai-developer",
                 "/y24"
             ],
@@ -500,7 +508,9 @@
                 "/genai-talk",
                 "/ml"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/ai"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/ai-developer.md",
             "doc_size": 23000
@@ -511,7 +521,9 @@
             "description": "Everyone talks about GPT, but you can also generate images. Lately, I’ve been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.\n\n",
             "file_path": "_site/ai-image.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/ai"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/ai-imagegen.md",
             "doc_size": 13000
@@ -529,6 +541,7 @@
                 "/idvorkin/idvorkin-flux-lora-1"
             ],
             "incoming_links": [
+                "/ai",
                 "/ai-developer"
             ],
             "redirect_url": "",
@@ -541,7 +554,9 @@
             "description": "The original AI papers were all about training, super technical, and not that usable as a practitioner. Nowadays papers are less “mathy” and more applicable to practitioners. Here are some worth reading\n\n",
             "file_path": "_site/ai-paper.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/ai"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/ai-paper.md",
             "doc_size": 11000
@@ -553,6 +568,7 @@
             "file_path": "_site/ai-security.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/ai",
                 "/ai-journal"
             ],
             "redirect_url": "",
@@ -566,6 +582,7 @@
             "file_path": "_site/ai-testing.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/ai",
                 "/ai-developer",
                 "/d/time-off-2024-04",
                 "/genai-talk",
