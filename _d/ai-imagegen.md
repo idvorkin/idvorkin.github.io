@@ -6,11 +6,12 @@ redirect-from:
   - /ai-imagegen
 ---
 
-Everyone talks about GPT, but you can also generate images. Lately I've been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.
+Everyone talks about GPT, but you can also generate images. Lately, I've been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+- [Fun Demo](#fun-demo)
 - [Igor Image Generation](#igor-image-generation)
 - [Flux](#flux)
 - [History Lessons](#history-lessons)
@@ -25,21 +26,40 @@ Everyone talks about GPT, but you can also generate images. Lately I've been pla
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
+![montage of the sequence](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_123538.webp)
+
+## Fun Demo
+
+Let's start with the Mona Lisa for ChatGPT
+
+_"A portrait of a woman with an enigmatic smile, seated in front of a distant landscape. She has dark, flowing hair and is wearing a modest dark dress with a translucent veil. The background features a winding path and a bridge, with a serene and dreamy landscape under a soft, diffused light. The overall mood is mysterious and timeless."_
+
+![The Mona Lisa from chat gpt](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_124739.webp)
+
+Let's try that with a lora of [the Mona Lisa](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=fbws5428h1rm00chn7srq9ykw0)
+
+![ChatGPT drawing mona lisa](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_123746.webp)
+
+Now, let's add [me to that scene](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=a2g5p4az7nrm60chn7ts0pdd0c)
+_"A portrait of MNALSA with an enigmatic smile, seated in front of a distant landscape. She has dark, flowing hair and is wearing a modest dark dress with a translucent veil. She is sitting beside her boyfriend, a middle-aged bald man, idvorkin. The background features a winding path and a bridge, with a serene and dreamy landscape under a soft, diffused light. The overall mood is mysterious and timeless."_
+
+![Igor and Mona Lisa](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_124546.webp)
+
 ## Igor Image Generation
 
 In the prompt, I'm idvorkin,
 
-- [Igor with Mona Lisa](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=ax1m29vk19rm20chk68rkah1y0) on a sail boat.
-- https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=ax1m29vk19rm20chk68rkah1y0
+- [Igor with Mona Lisa](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=ax1m29vk19rm20chk68rkah1y0) on a sailboat.
+- <https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=ax1m29vk19rm20chk68rkah1y0>
 
 ![Igor doing something](https://replicate.delivery/yhqm/CRLshgbk5ZomNp7GxHSISkMrtynHNufLEZJpFHCa7lcGvXrJA/out-0.webp)
 
 You can blend in:
 
-- mona lisa: huggingface.co/fofr/flux-mona-lisa
-- scarlett johansson:
+- Mona Lisa: huggingface.co/fofr/flux-mona-lisa
+- Scarlett Johansson:
 
-* Real and Boring - [kudzueye/Boreal](https://huggingface.co/kudzueye/Boreal) - Keyword is photo
+- Real and Boring - [kudzueye/Boreal](https://huggingface.co/kudzueye/Boreal) - Keyword is photo
 
 Blend multi loras (equal weights)
 
@@ -56,6 +76,9 @@ As of April '24, Flux.Dev is the new open source hotness. You can train a LoRA o
 ### Diffusion
 
 ### LoRAs
+
+Interesting -
+So the original model is like 23GB, a Lora seems to be 200MB, or 1/100th the size. You can load any concepts you want.
 
 ### Blending LoRAs
 
