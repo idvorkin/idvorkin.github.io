@@ -4,20 +4,21 @@ title: AI code writer
 permalink: /ai-coder
 ---
 
-AI code writing has had a few iterations: Code Completion; Out of Band Chat; Full Code Writing
+Buckle up, code warriors! AI's grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like a eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we've hit the jackpot with full-blown code writing! It's like having a tireless robot assistant who can churn out entire functions faster than you can say "Hello, World!" This AI-powered journey has turned coding from a solo trek into a wild party where everyone's invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it's got AI written all over it!
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Completion](#completion)
-    - [Co-pilot](#co-pilot)
+  - [Co-pilot](#co-pilot)
 - [Coder](#coder)
-    - [Aider](#aider)
-    - [Avante](#avante)
+  - [Cursor](#cursor)
+  - [Aider](#aider)
+  - [Avante](#avante)
 - [Use Cases](#use-cases)
-    - [Diff Summarization](#diff-summarization)
-    - [Review changes between dates](#review-changes-between-dates)
-    - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
+  - [Diff Summarization](#diff-summarization)
+  - [Review changes between dates](#review-changes-between-dates)
+  - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -29,6 +30,21 @@ AI code writing has had a few iterations: Code Completion; Out of Band Chat; Ful
 The original
 
 ## Coder
+
+### Cursor
+
+- [Cursor Changelog](https://changelog.cursor.com/)
+- [Cursor Features](https://www.cursor.com/features)
+
+WOW - Just started playing with that, it was fantastic, super smooth, looking forward to seeing if Avante can catch up.
+
+It basically made this whole change via [chat/apply](https://github.com/idvorkin/idvorkin.github.io/commit/3fa1726f179c7270c5add3264b7087613039ad9e), with me making minimal suggestions
+
+Interesting:
+
+- They forked VS.Code so could keep most of what it has.
+- They use Claude, which seems to be better then co-pilot
+- I used it mostly in chat/apply mode, looking forward to using it on a project hwere I'm writing more of the code (probably will try when I look at the transformer code in jupyter again)
 
 ### Aider
 
@@ -47,9 +63,15 @@ Here's [a change almost totally done with Aider](https://github.com/idvorkin/Set
 
 Just starting to play with [this](https://github.com/yetone/avante.nvim). It's a VIM plugin, looks solid.
 
-What's nice: - It does a good job of inline changes/merging (like co-pilot propose diffs) - It uses many best practices so I discovered render and other nice libraries - Fun to see what the [coding prompts are](https://github.com/yetone/avante.nvim/blob/main/lua/avante/llm.lua)
+What's nice:
+
+- It does a good job of inline changes/merging (like co-pilot propose diffs)
+- It uses many best practices so I discovered render and other nice libraries
+- Fun to see what the [coding prompts are](https://github.com/yetone/avante.nvim/blob/main/lua/avante/llm.lua)
 
 ## Use Cases
+
+Not sure if this should be a separate post, but I'm going to start looking at this from the perspective of use cases.
 
 ### Diff Summarization
 
