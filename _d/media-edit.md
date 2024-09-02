@@ -20,3 +20,4 @@ Lets play with media editting. So far I've liked luma fusion for post:
 
 Keyboard Capture - Keycastr
 Mouse Capture - hyper mouse
+Facecam sofwtare - Hand Mirror (can also use tricks in OBS)

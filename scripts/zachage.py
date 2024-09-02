@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 from datetime import datetime
-from pyfiglet import Figlet
 from typing import Optional
 import typer
 
@@ -17,11 +16,10 @@ def printZachAge(dateoffset: Optional[datetime] = typer.Argument(None)) -> None:
     if not dateoffset:
         dateoffset = datetime.now()
 
-    figlet = Figlet(font="big")
     zachBirthday = datetime(2010, 4, 22)
     age = dateoffset - zachBirthday
-    print(figlet.renderText("Zach Age"))
-    print(figlet.renderText(f"{int(round(age.days/7))} weeks"))
+    print("Zach Age")
+    print(f"{int(round(age.days/7))} weeks")
 
     print(f"Age in weeks:{round(age.days/7):d}")
     print(f"Age in years:{round(age.days/365):d}")

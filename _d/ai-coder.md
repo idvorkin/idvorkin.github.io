@@ -32,6 +32,8 @@ The original
 
 ### Aider
 
+[Aider Release Notes on GitHub](https://github.com/paul-gauthier/aider/releases)
+
 OK, so Aider tries to make every change its own commit, which is super noisy and error-prone, a few learnings:
 
 1. Do the changes on a branch then squash up the final branch
@@ -41,7 +43,11 @@ Here's [a change almost totally done with Aider](https://github.com/idvorkin/Set
 
 ### Avante
 
+[Avante on GitHub](https://github.com/yetone/avante.nvim?tab=readme-ov-file)
+
 Just starting to play with [this](https://github.com/yetone/avante.nvim). It's a VIM plugin, looks solid.
+
+What's nice: - It does a good job of inline changes/merging (like co-pilot propose diffs) - It uses many best practices so I discovered render and other nice libraries - Fun to see what the [coding prompts are](https://github.com/yetone/avante.nvim/blob/main/lua/avante/llm.lua)
 
 ## Use Cases
 
