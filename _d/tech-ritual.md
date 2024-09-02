@@ -13,10 +13,10 @@ There is so much change in tech it's important to check in on what has changed t
 <!-- vim-markdown-toc GFM -->
 
 - [Monthly](#monthly)
-    - [AI Coding tools](#ai-coding-tools)
+  - [AI Coding tools](#ai-coding-tools)
 - [Quarterly](#quarterly)
-    - [Jupyter - Health Metrics](#jupyter---health-metrics)
-    - [Linters/Formatters/Pre-Commit Hooks](#lintersformatterspre-commit-hooks)
+  - [Jupyter - Health Metrics](#jupyter---health-metrics)
+  - [Linters/Formatters/Pre-Commit Hooks](#lintersformatterspre-commit-hooks)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -43,9 +43,14 @@ Next Update: 2025-01-01
 Previous Update:
 
 - [2024-09-02](https://gist.github.com/idvorkin/50c3e17720482110efee3104daebbb05)
+  - Woah, most important thing, is Jupyter works very well in vs.code now, renders very pretty, totally usuable.
 
 Task: Go in and update my health tracking jupyter notebooks.
-Goals: - Make sure my health is still trending good :) - Good chance to see what's new in Jupyter/Pandas/Python world.
+
+Goals:
+
+- Make sure my health is still trending good :)
+- Good chance to see what's new in Jupyter/Pandas/Python world.
 
 ### Linters/Formatters/Pre-Commit Hooks
 
