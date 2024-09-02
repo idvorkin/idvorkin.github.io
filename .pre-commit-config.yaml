@@ -15,3 +15,8 @@ repos:
     rev: "v3.1.0"
     hooks:
       - id: prettier
+
+  - repo: https://github.com/TomWright/dasel
+    rev: v2.8.1
+    hooks:
+      - id: dasel-validate
