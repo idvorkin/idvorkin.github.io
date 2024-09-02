@@ -9,7 +9,7 @@ redirect_from:
 imagefeaturelocal: raccoon-lifting-weights.png
 ---
 
-Physical health is the basis of energy, and thus the source of success, and a key [saw to sharpen](/sharpen-the-saw). Physical health requires weight, fitness, and sleep.
+Physical health is not bought, it’s rented and it’s due every day. Physical health is the basis of energy, and thus the source of success, and a key [saw to sharpen](/sharpen-the-saw). Physical health requires weight, fitness, and sleep.
 
 ### Why? So you can look good in your jeans? So you can wrestle bears?
 
