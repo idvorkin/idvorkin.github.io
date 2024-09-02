@@ -12,6 +12,14 @@
   font-size: 1.375rem;
 }
 
+/* If there are two consequetive summary links, add a line between them */
+
+.summary-link + .summary-link {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
 .pretty-first-para > p:first-of-type:first-letter {
   font-family: Georgia;
   font-size: 2.4em;
