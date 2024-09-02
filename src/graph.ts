@@ -80,8 +80,9 @@ function build_graph_data(pages) {
 // Make tree collapasable
 
 function TextLabelNodeCanvas(node, ctx, globalScale: number) {
-  const exapnded_text = node.expanded ? "[-]" : "[+]";
-  const label = node.id + " " + exapnded_text;
+  const outgoingCount = node.outgoing_links.length;
+  const expandedText = node.expanded ? "-" : `+${outgoingCount}`;
+  const label = node.id + " [" + expandedText + "]";
   const fontSize = 12 / globalScale;
   ctx.font = `${fontSize}px Sans-Serif`;
   const textWidth = ctx.measureText(label).width;
@@ -124,7 +125,7 @@ if (typeof ForceGraph === "undefined") {
     .nodeCanvasObject(TextLabelNodeCanvas)
     .nodePointerAreaPaint(TextLabelNodePointerAreaPaint)
     .onNodeRightClick(node => {
-      // Open tne node in a new tab
+      // Open the node in a new tab
       window.open(node.url, "_blank");
     })
     .onNodeClick(node => {
@@ -152,13 +153,50 @@ if (typeof ForceGraph === "undefined") {
     Graph.centerAt(node.x, node.y, 500);
     Graph.zoom(8, 500);
     update_detail(node);
-    console.log("zooming to", node);
+    console.log("centering on", node);
   }
 
   var g_last_detail_node = null;
 
-  // set click handler for zoom in
-  $("#zoom_control").on("click", () => center_on_node(g_last_detail_node));
+  // set click handler for center control
+  $("#center_control").on("click", () => center_on_node(g_last_detail_node));
+
+  // set click handler for goto control
+  $("#goto_control").on("click", open_goto_control);
+
+  // set click handler for collapse control
+  $("#collapse_control").on("click", collapse_all_except_active);
+
+  function open_goto_control() {
+    console.log("Goto control clicked");
+    if (g_last_detail_node) {
+      if (g_last_detail_node.url) {
+        window.open(g_last_detail_node.url, "_blank");
+      } else {
+        console.log("Active node has no URL");
+      }
+    } else {
+      console.log("No active node to go to");
+    }
+  }
+
+  function collapse_all_except_active() {
+    console.log("Collapse control clicked");
+    pages.forEach(p => {
+      p.expanded = false;
+    });
+    if (g_last_detail_node) {
+      g_last_detail_node.expanded = true;
+    }
+    Graph.graphData(build_graph_data(pages));
+
+    // Center on the active node after collapsing
+    if (g_last_detail_node) {
+      setTimeout(() => {
+        center_on_node(g_last_detail_node);
+      }, 300);
+    }
+  }
 
   function update_detail(page) {
     // replace html of element of id above with the page
