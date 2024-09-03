@@ -58,6 +58,7 @@ Human action can be modeled by an elephant, a rider, and the path. Our emotional
 - [Other models](#other-models)
     - [Behavior Change - Prompt, Ability, Motivation](#behavior-change---prompt-ability-motivation)
     - [Influencer 2.0](#influencer-20)
+    - [The Greeks - Pathos, Ethos, Logos](#the-greeks---pathos-ethos-logos)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -148,3 +149,16 @@ quadrantChart
 ```
 
 {% include amazon.html asin="0385528752;B07D23CFGR;B00BPO7710" %}
+
+## The Greeks - Pathos, Ethos, Logos
+
+Pathos - Emotional appeal
+Ethos - Credibility
+Logos - Logic
+
+| Aspect                               | Switch Model (Heath Brothers) | Influencer 2.0                            | Greek Rhetoric            |
+| ------------------------------------ | ----------------------------- | ----------------------------------------- | ------------------------- |
+| **Emotional Engagement**             | Motivate the Elephant         | Personal Motivation, Social Motivation    | Pathos (Emotional Appeal) |
+| **Rational/Logical Engagement**      | Direct the Rider              | Personal Ability                          | Logos (Logical Appeal)    |
+| **Credibility and Social Influence** |                               | Social Motivation, Social Ability         | Ethos (Ethical Appeal)    |
+| **Environmental/Structural Support** | Shape the Path                | Structural Motivation, Structural Ability | -                         |
