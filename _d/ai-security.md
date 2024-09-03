@@ -17,6 +17,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
 - [Awesome Video](#awesome-video)
 - [Random papers](#random-papers)
     - [Adverserial Attacks on Aligned Models](#adverserial-attacks-on-aligned-models)
+    - [Bijection Learning](#bijection-learning)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -51,3 +52,7 @@ Researchers have developed a method to make language models generate objectionab
 - What are the ethical implications of language models being able to generate objectionable information?
 - Do you think it is possible to completely prevent language models from producing objectionable content? Why or why not?
 - How can the findings of this research be used to improve the safety and reliability of language models?
+
+### Bijection Learning
+
+<https://blog.haizelabs.com/posts/bijection/>
