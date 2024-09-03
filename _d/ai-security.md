@@ -56,3 +56,26 @@ Researchers have developed a method to make language models generate objectionab
 ### Bijection Learning
 
 <https://blog.haizelabs.com/posts/bijection/>
+
+Thinking about it: <https://gist.github.com/idvorkin/b3f22c4d89e20d5841cc8e0a43e7df2a/>
+
+Attack Methodology:
+
+- Generate mapping from English alphabet to other characters/strings
+- Teach model the custom "bijection language" through multi-turn prompting
+- Encode harmful intent in bijection language and decode model's response
+- Automate with best-of-n approach, randomly generating mappings
+
+Key Findings:
+
+- Achieves high ASRs (Attack Success Rate) on frontier models (e.g. 86.3% on Claude 3.5 Sonnet for HarmBench) on benchmarks like AdvBench-50 and HarmBench.
+- Can be used as an effective universal attack
+- Attack efficacy increases with model scale/capability
+- Degrades overall model capabilities (e.g. MMLU performance) while enabling jailbreaks
+
+- Bijection learning involves creating an encoded language by mapping English characters to other tokens.
+- These mappings can range from simple alphabetical permutations to complex combinations like n-digit numbers or random tokens.
+- The complexity of the bijection language can be controlled by the 'bijection type' and 'fixed size' (number of letters mapping to themselves).
+
+- The attack can be universal, meaning it works without instruction-specific modifications.
+- It is scale-agnostic, affecting models of different capabilities and becoming stronger with larger models.
