@@ -49,6 +49,8 @@ A landing page for all my ai pages - a nice jumping off point (especially from t
 ### Examples of Alchamey
 
 - Doing worst job in dec, (and July for European models) - [crappy source](https://www.techradar.com/computing/artificial-intelligence/ai-might-take-a-winter-break-as-gpt-4-turbo-apparently-learns-from-us-to-wind-down-for-the-holidays)
+- Doing a better job if you say you are stressed
+- Telling the LLM not to hallucinate (fasicnating, this only works now, not in early models as early training data didn't talk about hallucinations)
 
 ### How do LLMs think?
 
