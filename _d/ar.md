@@ -28,10 +28,10 @@ My notes on AR
     - [Point Clouds](#point-clouds)
     - [Visual vs Auditory](#visual-vs-auditory)
 - [Hardware](#hardware)
-        - [Holo Lens](#holo-lens)
-        - [Occolus Go](#occolus-go)
-        - [Occulus Rift](#occulus-rift)
-        - [iPad Pro 2020 Depth Sensors](#ipad-pro-2020-depth-sensors)
+    - [Holo Lens](#holo-lens)
+    - [Occolus Go](#occolus-go)
+    - [Occulus Rift](#occulus-rift)
+    - [iPad Pro 2020 Depth Sensors](#ipad-pro-2020-depth-sensors)
 - [Video call use cases](#video-call-use-cases)
     - [Virtual Backgrounds](#virtual-backgrounds)
     - [Rabit Ears](#rabit-ears)
@@ -46,6 +46,7 @@ My notes on AR
     - [Virtual Tennis](#virtual-tennis)
     - [Training](#training)
     - [Tele medicine](#tele-medicine)
+    - [Working in VR](#working-in-vr)
 - [Philosophy](#philosophy)
     - [The Matrix - Simulation](#the-matrix---simulation)
     - [Why is IRL better then VR](#why-is-irl-better-then-vr)
@@ -97,13 +98,13 @@ Google vs Apple.
 
 ## Hardware
 
-#### Holo Lens
+### Holo Lens
 
-#### Occolus Go
+### Occolus Go
 
-#### Occulus Rift
+### Occulus Rift
 
-#### iPad Pro 2020 Depth Sensors
+### iPad Pro 2020 Depth Sensors
 
 ## Video call use cases
 
@@ -134,6 +135,10 @@ I accidently punched a hole in my TV.
 ### Training
 
 ### Tele medicine
+
+### Working in VR
+
+{%include youtube.html src="asjUiUBjrZI" %}
 
 ## Philosophy
 
