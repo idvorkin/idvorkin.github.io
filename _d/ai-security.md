@@ -57,17 +57,6 @@ Researchers have developed a method to make language models generate objectionab
 - Do you think it is possible to completely prevent language models from producing objectionable content? Why or why not?
 - How can the findings of this research be used to improve the safety and reliability of language models?
 
-<!-- vim-markdown-toc GFM -->
-
-    - [Bijection Learning](#bijection-learning)
-
-- [To Process](#to-process)
-  - [Representation Engineering](#representation-engineering)
-  - [Smart guy doing Anti Censorship](#smart-guy-doing-anti-censorship)
-  - [Anti-censored models](#anti-censored-models)
-
-<!-- vim-markdown-toc -->
-
 ### Bijection Learning
 
 <https://blog.haizelabs.com/posts/bijection/>
