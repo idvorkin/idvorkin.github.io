@@ -56,6 +56,7 @@ A landing page for all my ai pages - a nice jumping off point (especially from t
 
 - "Complete the next word" is super hard. Imagine a big long mystery novel, and then the next sentence is - And the killer was .... That requires a very deep understanding
 - LLMs currently are very "fast thinking" from the thinking fast and slow book.
+- [AI Mental Breakdown and getting help from another LLM](https://x.com/AISafetyMemes/status/1829059756818084059)
 
 ### LLM training efficiency
 
