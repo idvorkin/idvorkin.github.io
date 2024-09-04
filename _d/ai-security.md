@@ -18,6 +18,10 @@ Security is super interesting, AI is super interesting, the combination, is supe
 - [Random papers](#random-papers)
     - [Adverserial Attacks on Aligned Models](#adverserial-attacks-on-aligned-models)
     - [Bijection Learning](#bijection-learning)
+- [To Process](#to-process)
+    - [Representation Engineering](#representation-engineering)
+    - [Smart guy doing Anti Censorship](#smart-guy-doing-anti-censorship)
+    - [Anti-censored models](#anti-censored-models)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -53,6 +57,17 @@ Researchers have developed a method to make language models generate objectionab
 - Do you think it is possible to completely prevent language models from producing objectionable content? Why or why not?
 - How can the findings of this research be used to improve the safety and reliability of language models?
 
+<!-- vim-markdown-toc GFM -->
+
+    - [Bijection Learning](#bijection-learning)
+
+- [To Process](#to-process)
+  - [Representation Engineering](#representation-engineering)
+  - [Smart guy doing Anti Censorship](#smart-guy-doing-anti-censorship)
+  - [Anti-censored models](#anti-censored-models)
+
+<!-- vim-markdown-toc -->
+
 ### Bijection Learning
 
 <https://blog.haizelabs.com/posts/bijection/>
@@ -79,3 +94,18 @@ Key Findings:
 
 - The attack can be universal, meaning it works without instruction-specific modifications.
 - It is scale-agnostic, affecting models of different capabilities and becoming stronger with larger models.
+
+## To Process
+
+### Representation Engineering
+
+- <https://vgel.me/posts/representation-engineering/>
+- Strait inject weights
+
+### Smart guy doing Anti Censorship
+
+- <https://huggingface.co/SicariusSicariiStuff/Blog_And_Updates>
+
+### Anti-censored models
+
+- <https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2-GGUF>
