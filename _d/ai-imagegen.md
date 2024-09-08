@@ -12,6 +12,7 @@ Everyone talks about GPT, but you can also generate images. Lately, I've been pl
 <!-- vim-markdown-toc GFM -->
 
 - [Fun Demo](#fun-demo)
+- [Talking Head Videos From your Heard](#talking-head-videos-from-your-heard)
 - [Igor Image Generation](#igor-image-generation)
 - [Flux](#flux)
 - [History Lessons](#history-lessons)
@@ -30,20 +31,23 @@ Everyone talks about GPT, but you can also generate images. Lately, I've been pl
 
 ## Fun Demo
 
-Let's start with the Mona Lisa for ChatGPT
+- Let's start with the Mona Lisa for ChatGPT
 
 _"A portrait of a woman with an enigmatic smile, seated in front of a distant landscape. She has dark, flowing hair and is wearing a modest dark dress with a translucent veil. The background features a winding path and a bridge, with a serene and dreamy landscape under a soft, diffused light. The overall mood is mysterious and timeless."_
 
-![The Mona Lisa from chat gpt](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_124739.webp)
+- Let's try that with a lora of [the Mona Lisa](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=fbws5428h1rm00chn7srq9ykw0)
 
-Let's try that with a lora of [the Mona Lisa](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=fbws5428h1rm00chn7srq9ykw0)
+- Now, let's add [me to that scene](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=a2g5p4az7nrm60chn7ts0pdd0c)
+  _"A portrait of MNALSA with an enigmatic smile, seated in front of a distant landscape. She has dark, flowing hair and is wearing a modest dark dress with a translucent veil. She is sitting beside her boyfriend, a middle-aged bald man, idvorkin. The background features a winding path and a bridge, with a serene and dreamy landscape under a soft, diffused light. The overall mood is mysterious and timeless."_
 
-![ChatGPT drawing mona lisa](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_123746.webp)
+## Talking Head Videos From your Heard
 
-Now, let's add [me to that scene](https://replicate.com/idvorkin/idvorkin-flux-lora-1?prediction=a2g5p4az7nrm60chn7ts0pdd0c)
-_"A portrait of MNALSA with an enigmatic smile, seated in front of a distant landscape. She has dark, flowing hair and is wearing a modest dark dress with a translucent veil. She is sitting beside her boyfriend, a middle-aged bald man, idvorkin. The background features a winding path and a bridge, with a serene and dreamy landscape under a soft, diffused light. The overall mood is mysterious and timeless."_
+Woah, this works surprisingly well:
 
-![Igor and Mona Lisa](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_124546.webp)
+- <https://studio.infinity.ai>
+
+https://youtube.com/shorts/Y_YxRPC46-E?feature=share
+{%include youtube.html src="Y_YxRPC46-E" %}
 
 ## Igor Image Generation
 
