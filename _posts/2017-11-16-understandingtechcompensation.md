@@ -29,6 +29,8 @@ Different companies use different compensation models. To compare models, use to
     - [I read on the internet company Foo pays Bar. Is that true?](#i-read-on-the-internet-company-foo-pays-bar-is-that-true)
     - [Is it fair that promotions pay at the bottom of the pay scale, and new hires tend to be at the top?](#is-it-fair-that-promotions-pay-at-the-bottom-of-the-pay-scale-and-new-hires-tend-to-be-at-the-top)
     - [What is the four-year cliff?](#what-is-the-four-year-cliff)
+    - [Example of Four-Year Cliff at Meta](#example-of-four-year-cliff-at-meta)
+    - [Explanation](#explanation)
     - [Should I negotiate?](#should-i-negotiate)
 
 <!-- vim-markdown-toc -->
@@ -133,6 +135,40 @@ You hire people who tend to be high in the band because it ensures they'll be su
 ### What is the four-year cliff?
 
 Often, if you don't get a promotion in the 4 years after you've been hired, your pay will drop. This is because many tech companies give an initial stock grant over four years. This grant is often really good at the 4-year mark because 1) the job market was competitive and you were at your best when you were hired, so you got a great offer 2) your stock has had 4 years to appreciate!
+
+### Example of Four-Year Cliff at Meta
+
+The four-year cliff is larger at Meta because Meta is **incredibly generous**, in that you start receiving your annual stock refreshers while you are vesting your initial stock grant. While compensation is arbitrary, of course, it's arguable this is double pay, and as a Meta employee, I have no qualms with it :)
+
+| Year | Salary + Bonus | Initial Stock Vesting | Stock Refreshers Vesting | Total Compensation | Comments                                                     |
+| ---- | -------------- | --------------------- | ------------------------ | ------------------ | ------------------------------------------------------------ |
+| 1    | $100           | $100                  | $0                       | $200               | $400 initial grant, vesting $100 annually.                   |
+| 2    | $100           | $100                  | $25                      | $225               | Refreshers granted at $100, vesting $25 annually.            |
+| 3    | $100           | $100                  | $50                      | $250               | Increasing vesting from initial and refreshers.              |
+| 4    | $100           | $100                  | $75                      | $275               | Peak compensation; both grants contributing.                 |
+| 5    | $100           | $0                    | $100                     | $200               | Initial grant fully vested; refreshers continue at $25/year. |
+| 6    | $100           | $0                    | $100                     | $200               | Sustained compensation with refreshers at $25/year.          |
+
+Zooming in on the stock compensation by contribution:
+
+| Year | Total Stock Compensation | Initial Grant | Year 1 Refresher | Year 2 Refresher | Year 3 Refresher | Year 4 Refresher | Year 5 Refresher | Comments                                          |
+| ---- | ------------------------ | ------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ------------------------------------------------- |
+| 1    | $100                     | $100          | $0               | $0               | $0               | $0               | $0               | $400 initial grant, vesting $100 annually.        |
+| 2    | $125                     | $100          | $25              | $0               | $0               | $0               | $0               | Refreshers granted at $100, vesting $25 annually. |
+| 3    | $150                     | $100          | $25              | $25              | $0               | $0               | $0               | Increasing vesting from initial and refreshers.   |
+| 4    | $175                     | $100          | $25              | $25              | $25              | $0               | $0               | Peak compensation; both grants contributing.      |
+| 5    | $100                     | $0            | $25              | $25              | $25              | $25              | $0               | Initial grant fully vested; refreshers continue.  |
+| 6    | $100                     | $0            | $0               | $25              | $25              | $25              | $25              | Sustained compensation with refreshers.           |
+
+### Explanation
+
+- **Year 1:** You receive a salary and bonus of $100, and the initial stock grant contributes an additional $100, totaling $200.
+
+- **Years 2-4:** The initial stock grant continues to vest at $100 annually. Refreshers, granted each year at $100 and vesting at $25 annually, add to your total compensation, peaking at $275 in Year 4.
+
+- **Years 5-6:** With the initial stock grant fully vested, the refreshers continue, each contributing $25 annually. This maintains your total compensation at $200, demonstrating the effectiveness of Meta's overlapping vesting strategy.
+
+This expanded table highlights how Meta’s approach to stock compensation strategically supports higher total compensation, providing a strong incentive for employees to stay with the company over the long term.
 
 ### Should I negotiate?
 
