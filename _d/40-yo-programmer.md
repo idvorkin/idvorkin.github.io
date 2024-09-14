@@ -23,7 +23,7 @@ _TODO: Picture of pyramid of age distributions_
     - [Moved to management](#moved-to-management)
     - [Switched to other industries](#switched-to-other-industries)
 - [Is age discrimination a thing?](#is-age-discrimination-a-thing)
-- [Negative Frame of Minds](#negative-frame-of-minds)
+- [Negative Mindsets](#negative-mindsets)
     - [I don't care about this new stuff, it's all BS, I'm just gonna do what I want](#i-dont-care-about-this-new-stuff-its-all-bs-im-just-gonna-do-what-i-want)
     - [Who moved my cheese?](#who-moved-my-cheese)
     - [I just want to coast till I have enough to retire](#i-just-want-to-coast-till-i-have-enough-to-retire)
@@ -61,9 +61,9 @@ I don't see a lot of this in my peer group, curious.
 
 ## Is age discrimination a thing?
 
-Many people have told me there is. I can honestly say, having performed 100s of interviews in my career, I have never seen anything that looked like age discrimination.
+Many people have told me there is. I can honestly say, having performed 100s of interviews in my career, I have never seen discrimination on age. However, I have seen older folks sharing negative mindsets that can be stereotypes.
 
-## Negative Frame of Minds
+## Negative Mindsets
 
 While I haven't seen age discrimination due to age, I've seen some attributes that tend to be attributed to older folks.
 
@@ -104,4 +104,29 @@ I don't know when it kicks in, but I think the science is clear, and I certainly
 
 ### AI as an equalizer
 
-Oh this is a very interesting section
+[AI tools](/ai-coder) and assistants could potentially level the playing field between younger and older programmers.
+
+1. Focusing on strengths:
+
+   - With AI handling more routine coding tasks, older programmers can focus on areas where their experience shines, such as system design and problem-solving.
+
+2. Leveraging experience:
+
+   - Older programmers can use their experience to better prompt and direct AI tools.
+   - AI can help translate experienced programmers' high-level ideas into modern code syntax.
+
+3. Continuous learning:
+
+   - AI-powered learning tools can help older programmers stay up-to-date with new technologies more easily.
+
+4. Compensating for cognitive declines:
+
+   - AI can assist with memory tasks, reducing the impact of age-related memory issues.
+   - Large language models can help with code completion and generation, lessening the need for rapid recall.
+
+5. Enhancing productivity:
+   - AI coding assistants can help maintain high productivity levels, potentially offsetting age-related slowdowns.
+
+This evolving synergy between human experience and AI capabilities might create a more inclusive and balanced tech industry, where the strengths of both younger and older programmers are valued and amplified.
+
+While AI benefits everyone, as of 2024, it benefits you the more experience you have.
