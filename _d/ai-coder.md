@@ -10,15 +10,15 @@ Buckle up, code warriors! AI's grand adventure in the coding realm has been noth
 <!-- vim-markdown-toc GFM -->
 
 - [Completion](#completion)
-  - [Co-pilot](#co-pilot)
+    - [Co-pilot](#co-pilot)
 - [Coder](#coder)
-  - [Cursor](#cursor)
-  - [Aider](#aider)
-  - [Avante](#avante)
+    - [Cursor](#cursor)
+    - [Aider](#aider)
+    - [Avante](#avante)
 - [Use Cases](#use-cases)
-  - [Diff Summarization](#diff-summarization)
-  - [Review changes between dates](#review-changes-between-dates)
-  - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
+    - [Diff Summarization](#diff-summarization)
+    - [Review changes between dates](#review-changes-between-dates)
+    - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -40,11 +40,13 @@ WOW - Just started playing with that, it was fantastic, super smooth, looking fo
 
 It basically made this whole change via [chat/apply](https://github.com/idvorkin/idvorkin.github.io/commit/3fa1726f179c7270c5add3264b7087613039ad9e), with me making minimal suggestions
 
-Interesting:
+- Tab completion
+  - includes the code before what you typed (huge improvement)
+  - Finds the next line you likely want to change (great for sensing refactor)
 
-- They forked VS.Code so could keep most of what it has.
-- They use Claude, which seems to be better then co-pilot
-- I used it mostly in chat/apply mode, looking forward to using it on a project hwere I'm writing more of the code (probably will try when I look at the transformer code in jupyter again)
+* They forked VS.Code so could keep most of what it has.
+* They use Claude, which seems to be better then co-pilot
+* I used it mostly in chat/apply mode, looking forward to using it on a project hwere I'm writing more of the code (probably will try when I look at the transformer code in jupyter again)
 
 ### Aider
 
