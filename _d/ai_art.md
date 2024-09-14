@@ -17,6 +17,7 @@ Creativity is a criticial aspect of art, and that's something which I think AI c
     - [Emotional Impact](#emotional-impact)
     - [Surprise](#surprise)
 - [Tech](#tech)
+    - [Image Generators - Flux, stable diffusion](#image-generators---flux-stable-diffusion)
     - [TTS (Text to Speech) Read the content back with a different voice](#tts-text-to-speech-read-the-content-back-with-a-different-voice)
     - [Lipsync a video/audio](#lipsync-a-videoaudio)
     - [NLP: GPT-3](#nlp-gpt-3)
@@ -54,6 +55,12 @@ We often need inspiration.
 ### Surprise
 
 ## Tech
+
+### Image Generators - Flux, stable diffusion
+
+Check out
+
+{%include summarize-page.html src="/ai-image" %}
 
 ### TTS (Text to Speech) Read the content back with a different voice
 
