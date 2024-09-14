@@ -8,13 +8,13 @@ redirect_from:
 imagefeaturelocal: raccoon-caring.webp
 ---
 
-Lets define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don't control), brings us down. Much of this post is based on the work of [Dr. Raph](https://whatilearnedsofar.com/), and a book on stoicism [The practicing stoic](https://www.amazon.com/dp/B0954XFJ4R).
+Let's define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don't control), brings us down. Much of this post is based on the work of [Dr. Raph](https://whatilearnedsofar.com/), and a book on stoicism [The practicing stoic](https://www.amazon.com/dp/B0954XFJ4R).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [Why do I care so much?](#why-do-i-care-so-much)
-    - [The dark path from not caring to depression.](#the-dark-path-from-not-caring-to-depression)
+    - [The dark path from not caring to depression](#the-dark-path-from-not-caring-to-depression)
 - [Good Caring](#good-caring)
     - [Nurturing curiosity](#nurturing-curiosity)
     - [Caring vs Mattering](#caring-vs-mattering)
@@ -127,7 +127,7 @@ The intensity level of the emotional response (either positive or negative) to s
 
 OK, this may end up in it's own section
 
-- Cool render of aristle's [What makes a good life](https://ralphammer.com/aristotle-how-to-live-a-good-life/)
+- Cool render of Aristotle's [What makes a good life](https://ralphammer.com/aristotle-how-to-live-a-good-life/)
 
 ### Q for DR. Raph
 
