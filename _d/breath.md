@@ -22,7 +22,7 @@ Breathing, an act so simple yet so crucial, harbors the potential to transform o
     - [Full Yogic Breath](#full-yogic-breath)
     - [Straw Breath](#straw-breath)
     - [Bellows Breath/Hyper Ventilating](#bellows-breathhyper-ventilating)
-    - [Alternate Nostil Breathing](#alternate-nostil-breathing)
+    - [Alternate Nostril Breathing](#alternate-nostril-breathing)
     - [4-7-8 Breathing](#4-7-8-breathing)
     - [Psychological Sigh](#psychological-sigh)
     - [Diaphragmatic Breathing](#diaphragmatic-breathing)
@@ -31,7 +31,7 @@ Breathing, an act so simple yet so crucial, harbors the potential to transform o
     - [Breath Focus Technique](#breath-focus-technique)
 - [Science](#science)
     - [Huberman](#huberman)
-    - [Using the different parts of breathign cycle to get impact](#using-the-different-parts-of-breathign-cycle-to-get-impact)
+    - [Using the different parts of breathing cycle to get impact](#using-the-different-parts-of-breathing-cycle-to-get-impact)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -80,7 +80,7 @@ Good training available in the art of living breathing class
 - How to do it: Take a deep breath in and then exhale quickly and forcefully through your nose, like a bellows.
 - How to do it details: The inhalation and exhalation should be of equal duration, and you should feel the abdominal muscles moving in and out as you breathe.
 
-#### Alternate Nostil Breathing
+#### Alternate Nostril Breathing
 
 - Yoga name: Nadi Shodhana Pranayama
 - Why it helps: This technique can calm the mind, reduce stress, and balance left and right hemispheres of the brain.
@@ -108,7 +108,7 @@ Good training available in the art of living breathing class
 #### Resonant or Coherent Breathing
 
 - Yoga name: Not associated with a specific yoga name
-- Why it helps: This technique can increase heart rate variability, reduce stress, and promote calm and wellbeing.
+- Why it helps: This technique can increase heart rate variability, reduce stress, and promote calm and well-being.
 - How to do it: Inhale for a count of five, then exhale for a count of five.
 - How to do it details: This technique is best done in a seated position, with the back straight.
 
@@ -138,4 +138,4 @@ Breathing for endurance
 All about breathing
 {%include youtube.html src="x4m_PdFbu-s" %}
 
-#### Using the different parts of breathign cycle to get impact
+#### Using the different parts of breathing cycle to get impact
