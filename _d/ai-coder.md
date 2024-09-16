@@ -16,6 +16,7 @@ Buckle up, code warriors! AI's grand adventure in the coding realm has been noth
     - [Aider](#aider)
     - [Avante](#avante)
 - [Use Cases](#use-cases)
+    - [Using latest docs](#using-latest-docs)
     - [Diff Summarization](#diff-summarization)
     - [Review changes between dates](#review-changes-between-dates)
     - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
@@ -44,9 +45,10 @@ It basically made this whole change via [chat/apply](https://github.com/idvorkin
   - includes the code before what you typed (huge improvement)
   - Finds the next line you likely want to change (great for sensing refactor)
 
-* They forked VS.Code so could keep most of what it has.
-* They use Claude, which seems to be better then co-pilot
-* I used it mostly in chat/apply mode, looking forward to using it on a project hwere I'm writing more of the code (probably will try when I look at the transformer code in jupyter again)
+- They forked VS.Code so could keep most of what it has.
+- They use Claude, which seems to be better then co-pilot
+- I used it mostly in chat/apply mode, looking forward to using it on a project hwere I'm writing more of the code (probably will try when I look at the transformer code in jupyter again)
+- You put in documentation tags to bring it, and it also does embeddings for it.
 
 ### Aider
 
@@ -74,6 +76,10 @@ What's nice:
 ## Use Cases
 
 Not sure if this should be a separate post, but I'm going to start looking at this from the perspective of use cases.
+
+### Using latest docs
+
+Cursor has native support for indexing docs, some projects even have llm.txt to teach the LLM what it needs to know. [Fasthmtml is an example](https://www.answer.ai/posts/2024-09-03-llmstxt)
 
 ### Diff Summarization
 
