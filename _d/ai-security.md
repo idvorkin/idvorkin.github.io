@@ -22,6 +22,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
     - [Representation Engineering](#representation-engineering)
     - [Smart guy doing Anti Censorship](#smart-guy-doing-anti-censorship)
     - [Anti-censored models](#anti-censored-models)
+    - [Laundry Lists](#laundry-lists)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -98,3 +99,9 @@ Key Findings:
 ### Anti-censored models
 
 - <https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2-GGUF>
+
+### Laundry Lists
+
+- <https://llmsecurity.net/>
+- <https://github.com/mlabonne/llm-course?tab=readme-ov-file>
+- <https://rentry.org/llm-training>
