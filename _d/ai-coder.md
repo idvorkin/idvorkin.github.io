@@ -20,6 +20,7 @@ Buckle up, code warriors! AI's grand adventure in the coding realm has been noth
     - [Diff Summarization](#diff-summarization)
     - [Review changes between dates](#review-changes-between-dates)
     - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
+    - [Interesting thought about coding in the age of AI](#interesting-thought-about-coding-in-the-age-of-ai)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -87,3 +88,19 @@ Cursor has native support for indexing docs, some projects even have llm.txt to 
 ### Review changes between dates
 
 ### Dream: Re-write commit history to break things into orthogonal changes
+
+### Interesting thought about coding in the age of AI
+
+Two use cases:
+
+1. Getting help - Replaces stack overflow/docs/reddit. This is like an evolution of the old days of before the internet, which sucked.
+2. It writes the code - This is the fun part, that we'd do for a hobby, do we want to give that up? Using nvim Key Combos is like doing joystick combos in Street Fighter II - why would you want to give that up.
+
+Similar, there are two reasons to program:
+
+1. Cuz coding is just fun good for it's own sake mastery
+1. To get something done and shipped
+
+There's a natural tension here
+
+{%include youtube.html src="mTa2d3OLXhg?start=5160" %}
