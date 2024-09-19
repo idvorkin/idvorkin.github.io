@@ -16,7 +16,7 @@ Screencasting has become an essential tool for content creators, educators, and 
 
 ### Facecam
 
-- Built into QuickRecorder, but I've been using Hand Mirror, and like it.
+- Built into QuickRecorder, but I've been using [Hand Mirror](https://handmirror.app/), and like it.
 - I use scripts to position it.
 
 ### Microphone cleanup
@@ -24,6 +24,8 @@ Screencasting has become an essential tool for content creators, educators, and 
 TBD if I need this.
 
 ### Hosting - YouTube!
+
+- Check out auto uploading via [youtubeuploader](https://github.com/porjo/youtubeuploader/)
 
 ### Video trimming
 
