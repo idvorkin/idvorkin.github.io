@@ -4,7 +4,7 @@ title: AI code writer
 permalink: /ai-coder
 ---
 
-Buckle up, code warriors! AI's grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like a eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we've hit the jackpot with full-blown code writing! It's like having a tireless robot assistant who can churn out entire functions faster than you can say "Hello, World!" This AI-powered journey has turned coding from a solo trek into a wild party where everyone's invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it's got AI written all over it!
+Buckle up, code warriors! AI's grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we've hit the jackpot with full-blown code writing! It's like having a tireless robot assistant who can churn out entire functions faster than you can say "Hello, World!" This AI-powered journey has turned coding from a solo trek into a wild party where everyone's invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it's got AI written all over it!
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -42,12 +42,13 @@ WOW - Just started playing with that, it was fantastic, super smooth, looking fo
 It basically made this whole change via [chat/apply](https://github.com/idvorkin/idvorkin.github.io/commit/3fa1726f179c7270c5add3264b7087613039ad9e), with me making minimal suggestions
 
 - Tab completion
+
   - includes the code before what you typed (huge improvement)
   - Finds the next line you likely want to change (great for sensing refactor)
 
 - They forked VS.Code so could keep most of what it has.
-- They use Claude, which seems to be better then co-pilot
-- I used it mostly in chat/apply mode, looking forward to using it on a project hwere I'm writing more of the code (probably will try when I look at the transformer code in jupyter again)
+- They use Claude, which seems to be better than co-pilot
+- I used it mostly in chat/apply mode, looking forward to using it on a project where I'm writing more of the code (probably will try when I look at the transformer code in Jupyter again)
 - You put in documentation tags to bring it, and it also does embeddings for it.
 
 ### Aider
@@ -79,7 +80,7 @@ Not sure if this should be a separate post, but I'm going to start looking at th
 
 ### Using latest docs
 
-Cursor has native support for indexing docs, some projects even have llm.txt to teach the LLM what it needs to know. [Fasthmtml is an example](https://www.answer.ai/posts/2024-09-03-llmstxt)
+Cursor has native support for indexing docs, some projects even have llm.txt to teach the LLM what it needs to know. [Fasthtml is an example](https://www.answer.ai/posts/2024-09-03-llmstxt)
 
 ### Diff Summarization
 
