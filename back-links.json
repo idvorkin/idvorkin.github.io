@@ -168,6 +168,8 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
+        "/SoM": "/sleight-of-mouth",
+        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -175,6 +177,7 @@
         "/sublime-states": "/sublime",
         "/taxes": "/money",
         "/td/machine-learning": "/ml",
+        "/tech-ritual": "/tech-rituals",
         "/tft": "/toysfortots",
         "/the-dip": "/dip",
         "/the-manager-book": "/manager-book",
@@ -231,6 +234,7 @@
             "description": "In 2002, I started programming at MSFT with lots of other 20-year-olds. I don’t recall the age distributions, but maybe 90% of the programmers I knew were under 40. In 2020, at 41, I’m no longer a programmer, and the majority of programmers are much younger than me. This begs the question, where do all the programmers go as they get older? I’m very curious about the answer. Here are some of my theories….\n\n",
             "file_path": "_site/40yo.html",
             "outgoing_links": [
+                "/ai-coder",
                 "/elder"
             ],
             "incoming_links": [
@@ -238,7 +242,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/40-yo-programmer.md",
-            "doc_size": 15000
+            "doc_size": 17000
         },
         "/42": {
             "url": "/42",
@@ -450,7 +454,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ai.md",
-            "doc_size": 11000
+            "doc_size": 14000
         },
         "/ai-art": {
             "url": "/ai-art",
@@ -458,6 +462,7 @@
             "description": "Creativity is a criticial aspect of art, and that’s something which I think AI can be really good at. Some very random ideas\n\n",
             "file_path": "_site/ai-art.html",
             "outgoing_links": [
+                "/ai-image",
                 "/gpt"
             ],
             "incoming_links": [
@@ -487,15 +492,17 @@
         "/ai-coder": {
             "url": "/ai-coder",
             "title": "AI code writer",
-            "description": "AI code writing has had a few iterations: Code Completion; Out of Band Chat; Full Code Writing\n\n",
+            "description": "Buckle up, code warriors! AI’s grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we’ve hit the jackpot with full-blown code writing! It’s like having a tireless robot assistant who can churn out entire functions faster than you can say “Hello, World!” This AI-powered journey has turned coding from a solo trek into a wild party where everyone’s invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it’s got AI written all over it!\n\n",
             "file_path": "_site/ai-coder.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/ai"
+                "/40yo",
+                "/ai",
+                "/tech-rituals"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 11000
+            "doc_size": 16000
         },
         "/ai-developer": {
             "url": "/ai-developer",
@@ -524,11 +531,12 @@
             "file_path": "_site/ai-image.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/ai-art"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-imagegen.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/ai-journal": {
             "url": "/ai-journal",
@@ -561,7 +569,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-paper.md",
-            "doc_size": 11000
+            "doc_size": 14000
         },
         "/ai-security": {
             "url": "/ai-security",
@@ -575,7 +583,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-security.md",
-            "doc_size": 12000
+            "doc_size": 15000
         },
         "/ai-testing": {
             "url": "/ai-testing",
@@ -720,6 +728,17 @@
             "redirect_url": "",
             "markdown_path": "_td/asciinema.md",
             "doc_size": 10000
+        },
+        "/ast-grep": {
+            "url": "/ast-grep",
+            "title": "AST Grep",
+            "description": "Sometimes you need to search/replace but on code, so let’s use ASTs for that. The tool is called ast-grep (which you invoke with sg).\n\n",
+            "file_path": "_site/ast-grep.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_td/ast-grep.md",
+            "doc_size": 13000
         },
         "/balance": {
             "url": "/balance",
@@ -979,7 +998,7 @@
         "/caring": {
             "url": "/caring",
             "title": "Caring - The story of emotional intensity",
-            "description": "Lets define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don’t control), brings us down. Much of this post is based on the work of Dr. Raph, and a book on stoicism The practicing stoic.\n\n",
+            "description": "Let’s define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don’t control), brings us down. Much of this post is based on the work of Dr. Raph, and a book on stoicism The practicing stoic.\n\n",
             "file_path": "_site/caring.html",
             "outgoing_links": [
                 "/depression"
@@ -1095,7 +1114,7 @@
         "/comp": {
             "url": "/comp",
             "title": "Care about Total Compensation",
-            "description": "Different companies use different compensation models. To compare models use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon clips salary at 160K$/yr, and doesn’t have bonuses. Google vests stocks Monthly. Facebook bonuses have a company performance multiplier. At some companies signing bonuses can be over 100% of salary!\n\n",
+            "description": "Different companies use different compensation models. To compare models, use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon caps salary at 160K$/yr and doesn’t have bonuses. Google vests stocks monthly. Facebook bonuses have a company performance multiplier. At some companies, signing bonuses can be over 100% of salary!\n\n",
             "file_path": "_site/comp.html",
             "outgoing_links": [
                 "/job-hunt-stress",
@@ -1108,7 +1127,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-11-16-understandingtechcompensation.md",
-            "doc_size": 22000
+            "doc_size": 26000
         },
         "/covid": {
             "url": "/covid",
@@ -2447,7 +2466,7 @@
         "/insecure": {
             "url": "/insecure",
             "title": "Insecurity and Imposter Syndrome",
-            "description": "We all get it. imposter syndrome, which include shame\n\n",
+            "description": "We all get it. Imposter syndrome, which includes shame\n\n",
             "file_path": "_site/insecure.html",
             "outgoing_links": [
                 "/coaching",
@@ -3170,7 +3189,7 @@
         "/physical-health": {
             "url": "/physical-health",
             "title": "Physical Health Lets you look good in your jeans, and wrestle bears",
-            "description": "Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health requires weight, fitness, and sleep.\n\n",
+            "description": "Physical health is not bought, it’s rented and rent is due every day. Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health requires weight, fitness, and sleep.\n\n",
             "file_path": "_site/physical-health.html",
             "outgoing_links": [
                 "/diet",
@@ -3299,7 +3318,7 @@
             "outgoing_links": [],
             "incoming_links": [],
             "redirect_url": "",
-            "markdown_path": "_d/video-edit.md",
+            "markdown_path": "_td/quip.md",
             "doc_size": 10000
         },
         "/random-idea": {
@@ -3425,6 +3444,17 @@
             "redirect_url": "",
             "markdown_path": "_posts/2018-11-05-save-the-souse.md",
             "doc_size": 13000
+        },
+        "/screencast": {
+            "url": "/screencast",
+            "title": "Screencasting on OSX",
+            "description": "Screencasting has become an essential tool for content creators, educators, and professionals alike. In this post, I’ll share my experiences and insights on screencasting on macOS, covering various tools, techniques, and tips I’ve discovered along the way. From recording software to post-production enhancements, this guide aims to help you navigate the world of screencasting on your Mac.\n\n",
+            "file_path": "_site/screencast.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_td/screencast.md",
+            "doc_size": 12000
         },
         "/seattle": {
             "url": "/seattle",
@@ -3730,7 +3760,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/switch.md",
-            "doc_size": 18000
+            "doc_size": 20000
         },
         "/synergize": {
             "url": "/synergize",
@@ -4109,6 +4139,19 @@
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-06-tech-health-toys.md",
             "doc_size": 13000
+        },
+        "/tech-rituals": {
+            "url": "/tech-rituals",
+            "title": "Tech Rituals",
+            "description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an ad-hoc basis, but you’re probably better off having it on a calendar.\n\n",
+            "file_path": "_site/tech-rituals.html",
+            "outgoing_links": [
+                "/ai-coder"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/tech-ritual.md",
+            "doc_size": 11000
         },
         "/terzepatide": {
             "url": "/terzepatide",
