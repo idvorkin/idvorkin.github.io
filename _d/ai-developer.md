@@ -10,12 +10,12 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 <!-- vim-markdown-toc GFM -->
 
 - [AI Developer, vs a Software Engineer using AI](#ai-developer-vs-a-software-engineer-using-ai)
-- [Programs, Human Code, AI.](#programs-human-code-ai)
+- [Programs, Human Code, AI](#programs-human-code-ai)
 - [Design Patterns](#design-patterns)
-    - [Levels of Cognative Architecture](#levels-of-cognative-architecture)
-    - [Maximize the workflow and computation in your programs.](#maximize-the-workflow-and-computation-in-your-programs)
+    - [Levels of Cognitive Architecture](#levels-of-cognitive-architecture)
+    - [Maximize the workflow and computation in your programs](#maximize-the-workflow-and-computation-in-your-programs)
     - [Provide context to your model for Ground your model](#provide-context-to-your-model-for-ground-your-model)
-    - [Use multiple AIs to maximize the value.](#use-multiple-ais-to-maximize-the-value)
+    - [Use multiple AIs to maximize the value](#use-multiple-ais-to-maximize-the-value)
     - [Human in the loop](#human-in-the-loop)
     - [World model vs context model](#world-model-vs-context-model)
     - [AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)](#ai-maximalist-chatgpt-vs-ai-enabled-features-apple-intelligence)
@@ -25,11 +25,12 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
     - [Quality vs Speed vs Prices](#quality-vs-speed-vs-prices)
     - [Llama 3](#llama-3)
     - [Tools + Libraries](#tools--libraries)
+    - [Ell](#ell)
     - [Commercial vs Open Source Models](#commercial-vs-open-source-models)
 - [Data Access](#data-access)
     - [Use LLMs for reasoning not for data retrieval](#use-llms-for-reasoning-not-for-data-retrieval)
-- [External Posts:](#external-posts)
-- [Several posts on this topic:](#several-posts-on-this-topic)
+- [External Posts](#external-posts)
+- [Several posts on this topic](#several-posts-on-this-topic)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -66,19 +67,19 @@ Just like there are autonomous driving levels:
 6. AI does higher level workflow
 7. AI does everything
 
-The AI developer thrives to get the AI to the highest level possible
+The AI developer strives to get the AI to the highest level possible
 
 ## Design Patterns
 
-### Levels of Cognative Architecture
+### Levels of Cognitive Architecture
 
 This content nicely copied from [langchain](https://blog.langchain.dev/what-is-a-cognitive-architecture/):
 
-![Picture of cognative arch](https://blog.langchain.dev/content/images/size/w1600/2024/07/Screenshot-2024-06-28-at-7.33.10-PM.png)
+![Picture of cognitive arch](https://blog.langchain.dev/content/images/size/w1600/2024/07/Screenshot-2024-06-28-at-7.33.10-PM.png)
 
 **First:** If we refer back to this slide (originally from my TED Talk) on the different levels of autonomy in LLM applications, we can see examples of different cognitive architectures.
 
-**Code:** First is just code - everything is hard coded. Not even really a cognitive architecture.
+**Code:** First is just code - everything is hard-coded. Not even really a cognitive architecture.
 
 **Single LLM Call:** Next is just a single LLM call. Some data preprocessing before and/or after, but a single LLM call makes up the majority of the application. Simple chatbots likely fall into this category.
 
@@ -117,19 +118,19 @@ Currently more complex, figuring it out.
 
 ### World model vs context model
 
-AI can perform a strict operation, vs undersatnding everything.
+AI can perform a strict operation, vs understanding everything.
 
 Obviously world models need to be much bigger, and data will go stale.
 
 ### AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)
 
-Today ‘summarise this document’ is AI, and you need a cloud LLM that costs \$20/month, but tomorrow the OS will do that for free. ‘AI is whatever doesn’t work yet.’
+Today ‘summarize this document’ is AI, and you need a cloud LLM that costs \$20/month, but tomorrow the OS will do that for free. ‘AI is whatever doesn’t work yet.’
 
 From [Ben Evans](https://www.ben-evans.com/benedictevans/2024/06/20/apple-intelligence):
 
 The ‘AI Maximalist’ view is that general-purpose chatbots, with multimodal and ‘multi-agentic’ capabilities, will be able to take over broad classes of complex multi-stage tasks and problems that today need lots of different specially-written software, and will also be able to automate whole new class of complex tasks that could never be done in software before, again in one single general-purpose interface. The chatbot might replace all software with a prompt - ‘software is dead’. I’m skeptical about this, as I’ve written here, but Apple is proposing the opposite: that generative AI is a technology, not a product.
 
-Apple is, I think, signalling a view that generative AI, and ChatGPT itself, is a commodity technology that is most useful when it is:
+Apple is, I think, signaling a view that generative AI, and ChatGPT itself, is a commodity technology that is most useful when it is:
 
 1. Embedded in a system that gives it broader context about the user (which might be search, social, a device OS, or a vertical application) and
 
@@ -167,13 +168,38 @@ Apple is, I think, signalling a view that generative AI, and ChatGPT itself, is 
 - Langchain
   - Gives you a unified API to use multiple models
 
+### Ell
+
+[Ell](https://github.com/MadcowD/ell) believes prompts are programs not strings, and acts accordingly. I predict it will replace langchain, certainly will for me. It's value prop
+
+- The model calling interface is super simple (exactly what I want in fact!)
+
+E.g ([full file](https://github.com/idvorkin/nlp/blob/ee8acccf1e54aa36687a8785775125faaeedec46/pell.py?plain=1#L21)).
+
+```python
+
+@ell.simple(model="gpt-4o-mini")
+def hello(world: str):
+    """You are a unhelpful assistant, make your answers spicy"""  # System prompt
+    name = world.capitalize()
+    return f"Say hello to {name}!"  # User prompt
+
+def scratch():
+    response = hello("Igor", lm_params=dict(n=2)) # get 2 response
+    ic(response)
+```
+
+- It versions and tracks your prompt and prompt usage (like LangTrace), and it does it with gpt-4o. Very clever. Check out their view of my code. I'm looking forward to having this hosted somewhere.
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240922_112926.webp)
+
 ### Commercial vs Open Source Models
 
 ## Data Access
 
 ### Use LLMs for reasoning not for data retrieval
 
-Great line from Altman, we're currently using them for data retreival, but their super power is reasoning. If we just focus on reasoning, let other tools do the retreiuval that can be better
+Great line from Altman, we're currently using them for data retrieval, but their super power is reasoning. If we just focus on reasoning, let other tools do the retrieval that can be better
 
 - RAG
 - Raptor
@@ -181,7 +207,7 @@ Great line from Altman, we're currently using them for data retreival, but their
 
 ## External Posts
 
-- [What we've learn in a year of building LLMS](https://applied-llms.org/)
+- [What we've learned in a year of building LLMS](https://applied-llms.org/)
 - [How to Prompting](https://eugeneyan.com/writing/prompting/)
 - [Apple Intelligence](https://www.ben-evans.com/benedictevans/2024/06/20/apple-intelligence)
 
