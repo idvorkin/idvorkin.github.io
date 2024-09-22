@@ -213,24 +213,4 @@ Great line from Altman, we're currently using them for data retrieval, but their
 
 ## Several posts on this topic
 
-{% include summarize-page.html src="/ai-testing" %}
-
----
-
-{% include summarize-page.html src="/ai-bestie" %}
-
----
-
-{% include summarize-page.html src="/ai-talk" %}
-
----
-
-{% include summarize-page.html src="/ai-journal" %}
-
----
-
-{% include summarize-page.html src="/ai-art" %}
-
----
-
-{% include summarize-page.html src="/ml" %}
+{% include summarize-page.html src="/ai" %}
