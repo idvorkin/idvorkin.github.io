@@ -449,6 +449,8 @@ See my explorations of [video editting](https://github.com/idvorkin/video-edit) 
 
 - [Introduction to word embeddings](http://jalammar.github.io/illustrated-word2vec)
 
+- [Great Laymen's intro to embeddings](https://investigate.ai/text-analysis/word-embeddings/)
+
 ## AI Misbehaving
 
 We often delegate decisions to AI, but they are as biased as their training data. Examples of what can go wrong at the site AI Misbehaving:
