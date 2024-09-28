@@ -20,7 +20,9 @@ Buckle up, code warriors! AI's grand adventure in the coding realm has been noth
     - [Diff Summarization](#diff-summarization)
     - [Review changes between dates](#review-changes-between-dates)
     - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
-    - [Interesting thought about coding in the age of AI](#interesting-thought-about-coding-in-the-age-of-ai)
+    - [Should I code once we have AI?](#should-i-code-once-we-have-ai)
+        - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
+        - [How can you use AI  - Research Assistant vs Code Writer](#how-can-you-use-ai----research-assistant-vs-code-writer)
 
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
@@ -89,18 +91,31 @@ Cursor has native support for indexing docs, some projects even have llm.txt to 
 
 ### Dream: Re-write commit history to break things into orthogonal changes
 
-### Interesting thought about coding in the age of AI
+### Should I code once we have AI?
 
-Two use cases:
+_It occurs to me this applies to all vocations, not just programming_
 
-1. Getting help - Replaces stack overflow/docs/reddit. This is like an evolution of the old days of before the internet, which sucked.
-2. It writes the code - This is the fun part, that we'd do for a hobby, do we want to give that up? Using nvim Key Combos is like doing joystick combos in Street Fighter II - why would you want to give that up.
+#### Reasons to Program - Mastery vs Getting Shit Done
 
-Similar, there are two reasons to program:
+1. **For the Love of Coding: Mastery and Joy**
 
-1. Cuz coding is just fun good for it's own sake mastery
-1. To get something done and shipped
+   - Programming can be intrinsically rewarding. The process of solving problems, creating something from nothing, and continuously improving one's skills offers satisfaction and joy. Mastery of coding, like any craft, provides a sense of accomplishment.
+   - Using VIM key combos is especially fun, like doing joystick combos in Street Fighter II - it's a fun challenge that keeps you engaged and sharpens your skills.
+   - My pleasure is coding, but I'm guessing this applies simarly to cooking, woodworking, and stampcollecting
 
-There's a natural tension here
+2. **To Achieve Practical Goals: Shipping Products**
+   - On the other hand, programming is a means to an end. It's a tool for building and shipping products, for solving real-world problems, and for getting tangible results. Efficiency and productivity are key, and AI can help streamline these processes.
+
+#### How can you use AI - Research Assistant vs Code Writer
+
+1. **Getting Help: Replacing Traditional Resources**
+
+   - AI as a resource for programming assistance is becoming increasingly popular. It provides a more interactive and immediate alternative to traditional platforms like Stack Overflow, documentation, or Reddit.
+   - In the past, before the internet, finding solutions to programming problems was a cumbersome process. AI represents an evolution of these resources, offering instant, personalized help that can significantly speed up the problem-solving process.
+
+2. **AI Writing Code: The Fun vs. Automation Dilemma**
+   - While AI can write code efficiently, this raises the question: should we let it take over tasks we enjoy? For many, coding is a hobby, a passion akin to the thrill of executing perfect joystick combos in Street Fighter II using specific nvim key combinations. The challenge and mastery involved are part of the joy; should we willingly give that up?
+
+Mostly lifted from this guy:
 
 {%include youtube.html src="mTa2d3OLXhg?start=5160" %}
