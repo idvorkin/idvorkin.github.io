@@ -63,6 +63,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [How do you handle communication problems](#how-do-you-handle-communication-problems)
     - [How do you handle promotion preparation (and fever)](#how-do-you-handle-promotion-preparation-and-fever)
     - [How do you identify and grow potential managers](#how-do-you-identify-and-grow-potential-managers)
+    - [How do you grow new EMs](#how-do-you-grow-new-ems)
     - [How do you grow top talent](#how-do-you-grow-top-talent)
     - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
     - [How do you have a difficult conversation](#how-do-you-have-a-difficult-conversation)
@@ -699,6 +700,22 @@ Make sure you're a senior enough engineer before becoming a manager (AMZN - L6; 
 Read this:
 
 [90 days as a manager](https://review.firstround.com/this-90-day-plan-turns-engineers-into-remarkable-managers) - Great insights to what's different and how to assess if it's right for you.
+
+### How do you grow new EMs
+
+_Personal note: I've never managed EMs, but I find mentoring them especially satisfying_
+
+I've done this a fair number of times now, here are some topics that are usually surprising that they need to get on top of instantly:
+
+- Calibrations: Do you have any promos or low performers, what is your plan for them.
+- Job Shifting: Read the first [90 days](/90-days)
+- Recruiting: As soon as they can hire.
+- Strategic vs Tactical thinking, Shifting the time horizon
+- Low performers: How to deal with them.
+- Setup a new hire mentoring ring
+
+* Mentoring Rings
+* Good HBR articles [1](https://hbr.org/2002/04/saving-your-rookie-managers-from-themselves),
 
 ### How do you grow top talent
 
