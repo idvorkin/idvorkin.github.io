@@ -8,7 +8,7 @@ redirect_from:
   - /90-days
 ---
 
-A how to guide for starting your next job.
+The first 90 days is a how to manual for starting a new job. While it's focused on executive roles, it's applicable to lower levels as well. It's also the best written business book from a structural perspective. I highly recommend it.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
@@ -19,10 +19,11 @@ A how to guide for starting your next job.
     - [Assimilating yourself](#assimilating-yourself)
     - [Be Curious](#be-curious)
     - [My personal learnings joining Amazon](#my-personal-learnings-joining-amazon)
+    - [My personal learnings joining Facebook](#my-personal-learnings-joining-facebook)
 - [2. Accelerate Your Learning](#2-accelerate-your-learning)
     - [What keeps you from learning](#what-keeps-you-from-learning)
     - [What you need to ship - the proven hypothesis](#what-you-need-to-ship---the-proven-hypothesis)
-    - [How did you get here?](#how-did-you-get-here)
+    - [How did your team/org get to where they are](#how-did-your-teamorg-get-to-where-they-are)
     - [Where is here?](#where-is-here)
     - [Where are you going?](#where-are-you-going)
     - [Structured 1 on 1s](#structured-1-on-1s)
@@ -99,6 +100,23 @@ Here are some mantras I needed to remind myself while working through my [insecu
 - Learning new skills and cultures is slow, be gentle on yourself.
 - Amazon is a very different culture from Microsoft. Sometimes I don't even realize I'm swimming against the current.
 
+#### My personal learnings joining Facebook
+
+_Sadly I didn't write them down at the time, so this is from fuzzy memory_
+
+My transition to Meta was much easier, because I now understood that culture and physics are different, and that problems had many solutions.
+
+Some things i wisely came in doing differently:
+
+- Instead of asking for the solution I'd seen in Amazon or Microsoft, I described the problem I was seeing and asked what word we used to describe it, and how we solved it.
+
+Some feedback I got:
+
+- "Igor - if your team wanted to work at Amazon, they'd have joined Amazon"
+  - E.g. I tended to say "This is a solved problem, At Amazon this is how it worked and was better", I switched to "Do we think this is a problem? Great some things I've seen successful in previous lives where XYZ".
+- "Igor - relax about planning, this will change, and we'll adapt"
+  - E.g. you're expecting the rigor and conseqeunces of the AMZN planning process, that's not how it works here.
+
 ### 2. Accelerate Your Learning
 
 You need to plan to learn. Just like planning a project, This means in advance figuring out what the important questions are, and how you can best answer them. It's rare to think systematically about your learning, and to approach it systematically. It's also rare to do this in projects, and that's a good cause for mistakes.
@@ -133,7 +151,7 @@ Ramping up is the same as delivering any project. You need to start with a delib
 - Make specific hypothesis
 - Attempt to prove and disprove them.
 
-#### How did you get here?
+#### How did your team/org get to where they are
 
 **Performance**
 
