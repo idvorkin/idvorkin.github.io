@@ -727,31 +727,29 @@ From Simon Sinek, a great script:
 
 Tough question. I need to put more thinking and polish into this.
 
-Culture has 3 components: The team, The execution model, and the growth mindset
+Culture has 3 components: The team, The execution model, and the Growth mindset
 
-- Team: Coming to work is fun, team gelled, and ahead of individuals
+Part 1: The Team: Enjoy the Ride
 
-  - Team gelled, and always helping and growing each other
-  - People put team ahead of themselves, to support each other.
-  - Folks have high trust, so can be vulnerable, knowing others want to grow and support them.
-  - Hanging out with your friends
-  - Work filled with moments
-  - Team first, whole greater then the sum of its parts
-  - Everyone provides kuddos to others
+- We spend 80% of our waking hours together—let's make it fun.
+- We trust each other—feel safe, be vulnerable, support each other.
+- We put the team first, always—greater than the sum of our parts.
+- We celebrate wins, share kudos, create memorable moments.
 
-- Execution Model: Imagination Executed Sustainably
+Part 2: The Execution Model: Imagination Executed Sustainably
 
-  - Ship as frequently as possible.
-  - Test cheaply, early and often.
-  - Always paying down technical debt
-  - Never be blocked
-  - I hate the term "bring solutions not problems", it encourages people to freeze. Instead -
-    - "bring ideas, even terrible ones, with your problems", caring and lead time to fix is most important
+- We ship fast—speed without sacrificing quality.
+- We test early, test cheap, test often.
+- We pay down tech debt—keep moving forward.
+- We never get stuck—find creative ways forward.
+- We bring ideas, even half-baked ones—care, collaborate, solve together.
 
-- Growth Mindset: Continuous improvement, with very open feedback, and desire to improve.
-  - Career Growth
-  - Technical Growth
-  - Retros, but also action item tracking.
+Part 3: The Growth Mindset: Relentless Improvement
+
+- We see feedback as a gift—continuous improvement at our core.
+- We view mistakes as opportunities—always better tomorrow than today.
+- We commit to growth—career, technical, personal.
+- We believe retros are great—but action is everything.
 
 ### How do you help a team gel
 
