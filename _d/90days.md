@@ -5,6 +5,7 @@ permalink: /90days
 redirect_from:
   - /first90days
   - /90
+  - /90-days
 ---
 
 A how to guide for starting your next job.
