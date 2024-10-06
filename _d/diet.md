@@ -33,7 +33,7 @@ Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calo
 - [Making it a habit](#making-it-a-habit)
     - [Breakfast Miso](#breakfast-miso)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## My journey

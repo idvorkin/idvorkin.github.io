@@ -23,7 +23,7 @@ Be a class act. Fantatic advice.
     - [Not taking the bait.](#not-taking-the-bait)
     - [Being a leader](#being-a-leader)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The practices

@@ -26,7 +26,7 @@ Bad news, you've got a last year on earth. Good news, if you're lucky you'll acc
     - [Anaerobic (Zone 5)](#anaerobic-zone-5)
 - [Spirtual Health](#spirtual-health)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## You're going to die

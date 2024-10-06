@@ -31,7 +31,7 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 - [Getting things done](#getting-things-done)
 - [ABCDE prioritization and Important Not Urgent](#abcde-prioritization-and-important-not-urgent)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### A word from our sponsor, the resistance

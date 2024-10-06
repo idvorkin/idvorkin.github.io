@@ -40,7 +40,7 @@ FACEBOOK MANAGEMENT INTERVIEWING 101
     - [Cross Functional](#cross-functional)
     - [Technical Discussion](#technical-discussion)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 # OVERVIEW

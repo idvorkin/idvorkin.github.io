@@ -17,7 +17,7 @@ Out of the blue I started seeing ads in my google search. They were especially p
 - [Mitigation](#mitigation)
 - [Root Causing and hypothesis](#root-causing-and-hypothesis)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Impact and blast radius

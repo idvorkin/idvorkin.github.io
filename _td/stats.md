@@ -35,7 +35,7 @@ Statistics is a tool which lets us summarize data, and make inferences from it.
     - [PDF and CDF](#pdf-and-cdf)
 - [Other Resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Inferencing vs Analyzing

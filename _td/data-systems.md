@@ -43,7 +43,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [E2E asyncronous verification with apology workflow](#e2e-asyncronous-verification-with-apology-workflow)
 - [Related Reading](#related-reading)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Success criteria For this post

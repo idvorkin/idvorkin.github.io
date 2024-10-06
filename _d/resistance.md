@@ -37,7 +37,7 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
         - [Getting things done](#getting-things-done)
         - [Eat that frog](#eat-that-frog)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The resistance is what stops us from doing the important things

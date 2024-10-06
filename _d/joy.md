@@ -46,7 +46,7 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
     - [Become an executive producer for shows](#become-an-executive-producer-for-shows)
     - [Own a vaudiville theatre](#own-a-vaudiville-theatre)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Completed Projects

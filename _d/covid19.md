@@ -56,7 +56,7 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
   - [Other good data sources](#other-good-data-sources)
 - [The best news of all - a dry run of something fatal for the human race.](#the-best-news-of-all---a-dry-run-of-something-fatal-for-the-human-race)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 
 ## Don't feed mind monsters, focus on the positive.
 

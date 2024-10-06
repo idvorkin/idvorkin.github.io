@@ -100,7 +100,7 @@ Two days before the start of the trip we had layoffs (including my partners who 
     - [Other](#other)
     - [Priorities](#priorities)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Friends (5/5)

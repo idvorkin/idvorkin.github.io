@@ -24,7 +24,7 @@ Before you can negotiate with others, you need to be in sync with yourself. This
 - [6) Give and Recieve &#x2610;](#6-give-and-recieve-x2610)
 - [7) The 3 wins &#x2611;](#7-the-3-wins-x2611)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### 1) Put yourself in your shoes &#x2611;

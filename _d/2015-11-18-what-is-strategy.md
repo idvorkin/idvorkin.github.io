@@ -35,7 +35,7 @@ As competition in the market intensifies, companies must find ways to differenti
     - [By company](#by-company)
 - [Strategy vs Execution](#strategy-vs-execution)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### I. How to compete?

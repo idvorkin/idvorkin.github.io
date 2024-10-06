@@ -32,7 +32,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 - [External Posts](#external-posts)
 - [Several posts on this topic](#several-posts-on-this-topic)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## AI Developer, vs a Software Engineer using AI

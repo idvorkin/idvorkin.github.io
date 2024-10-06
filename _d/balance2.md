@@ -29,7 +29,7 @@ I'm good at a lot of things, but balance is really hard for me. Hard for everyon
     - [Recharging with Time off](#recharging-with-time-off)
 - [More resources](#more-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 <script type=module>

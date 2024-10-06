@@ -31,7 +31,7 @@ Just like the search bar in google fills in what you're typing when you say "Whe
     - [Spelling and grammar fixing](#spelling-and-grammar-fixing)
 - [Related ideas](#related-ideas)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 Step #1 - check out some [demos here](https://herbertlui.net/9-examples-of-writing-with-openais-gpt-3-language-model/)

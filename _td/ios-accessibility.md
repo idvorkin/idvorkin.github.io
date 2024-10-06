@@ -13,7 +13,7 @@ iOS has some great accessibility features which allow hands-free and eye-less co
 - [Speech Controller/Read aloud](#speech-controllerread-aloud)
 - [Background noises](#background-noises)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Voice Control

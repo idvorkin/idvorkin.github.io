@@ -63,7 +63,7 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
     - [Spending vacation days when it's "fun time at work"](#spending-vacation-days-when-its-fun-time-at-work)
     - [January is going to be a tough month at work.](#january-is-going-to-be-a-tough-month-at-work)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Top Learnings

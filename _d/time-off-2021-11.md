@@ -37,7 +37,7 @@ I should have written up a plan before this [time off](/time-off) so I'd have be
 - [Mental quicksand](#mental-quicksand)
     - [Hot tub](#hot-tub)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Moments and success stories

@@ -66,7 +66,7 @@ Generative AI (GenAI) is taking the world by storm, and it takes a new mindset t
     - [Disclaimer](#disclaimer)
     - [What is a prompt engineer?](#what-is-a-prompt-engineer)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## A New Computational Model - Interns

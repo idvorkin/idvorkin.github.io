@@ -18,7 +18,7 @@ There is so much change in tech it's important to check in on what has changed t
   - [Jupyter - Health Metrics](#jupyter---health-metrics)
   - [Linters/Formatters/Pre-Commit Hooks](#lintersformatterspre-commit-hooks)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Monthly

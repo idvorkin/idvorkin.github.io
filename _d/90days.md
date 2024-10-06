@@ -72,7 +72,7 @@ The first 90 days is a how to manual for starting a new job. While it's focused 
     - [Succession planning](#succession-planning)
 - [Notes on the book](#notes-on-the-book)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Introduction: The First 90 Days

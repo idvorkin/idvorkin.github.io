@@ -43,7 +43,7 @@ To help me remember places where pride has fucked with me, I'll write out some o
 - [Other examples](#other-examples)
 - [HEAD FAKE: This note is really about arrogance and hubris, not pride.](#head-fake-this-note-is-really-about-arrogance-and-hubris-not-pride)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 #### Judging my career relative to my peers

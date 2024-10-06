@@ -38,7 +38,7 @@ If it's not tested, it doesn't work. When your tests passing lets you deploy wit
     - [AI Testing](#ai-testing)
 - [Great books](#great-books)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Why test?

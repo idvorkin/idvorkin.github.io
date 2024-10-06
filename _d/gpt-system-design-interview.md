@@ -17,7 +17,7 @@ permalink: /gpt-system-design
 - [Chapter 5: E - Evaluation and Optimization](#chapter-5-e---evaluation-and-optimization)
 - [Conclusion](#conclusion)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 System design interviews are a crucial part of the hiring process for software engineers. It's a test of an engineer's ability to design scalable, efficient, and robust systems. However, preparing for these interviews can be overwhelming. That's why we created the SHINE method - a comprehensive guide to help you ace your system design interviews.

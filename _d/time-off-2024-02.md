@@ -68,7 +68,7 @@ My top priorities:
     - [Got grumpy about some stuff](#got-grumpy-about-some-stuff)
     - [Angry that wasting my vacation, and sacred time with family](#angry-that-wasting-my-vacation-and-sacred-time-with-family)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Top Learnings

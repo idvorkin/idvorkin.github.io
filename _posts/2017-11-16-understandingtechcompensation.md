@@ -33,7 +33,7 @@ Different companies use different compensation models. To compare models, use to
     - [Explanation](#explanation)
     - [Should I negotiate?](#should-i-negotiate)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Total Compensation - It gets complicated

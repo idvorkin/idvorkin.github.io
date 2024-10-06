@@ -22,7 +22,7 @@ So there's this guy who measures his nightly erections, doesn't go out into the 
 - [Changes he's made me consider](#changes-hes-made-me-consider)
 - [Changes he's made me implement](#changes-hes-made-me-implement)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Stuff i love

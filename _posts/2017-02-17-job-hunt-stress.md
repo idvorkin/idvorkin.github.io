@@ -21,7 +21,7 @@ Job hunts are stressful, and my goal for job hunts is getting the job I want whi
 - [Stressors and Mitigations](#stressors-and-mitigations)
 - [Learnings from my last job hunts](#learnings-from-my-last-job-hunts)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Before you start

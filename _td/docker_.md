@@ -14,7 +14,7 @@ Docker has 2 values, isolation and repeatable setup. Here are my notes
 - [Real applications, my blog](#real-applications-my-blog)
     - [Requirements](#requirements)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Useful commands and notes

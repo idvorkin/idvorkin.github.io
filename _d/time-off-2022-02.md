@@ -56,7 +56,7 @@ My top priorities:
 - [Mental quicksand](#mental-quicksand)
     - [Staycations aren't vacations](#staycations-arent-vacations)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Top Learnings

@@ -24,7 +24,7 @@ When your emotions aren't serving you well, it's helpful to have a solid protoco
         - [Examine your confidence and hope](#examine-your-confidence-and-hope)
     - [Bonus - some breathing exercises](#bonus---some-breathing-exercises)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 My original notes on anxiety:

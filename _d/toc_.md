@@ -48,7 +48,7 @@ One of my dreams is to guide others navigate through this, which I'll do through
   - [Mental Breakdowns](#mental-breakdowns)
   - [Cancer](#cancer)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 This series of guides is the basis of mortality software helps you understand who you want to be, and supports you in being that person. In a nutshell, making your satisfied.

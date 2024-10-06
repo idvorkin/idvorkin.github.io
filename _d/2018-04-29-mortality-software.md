@@ -43,7 +43,7 @@ Mortality is a word most people try to avoid. But, earlier or later, it's someth
 - [FAQ](#faq)
     - [Why call it Time.Ltd](#why-call-it-timeltd)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 In a poem

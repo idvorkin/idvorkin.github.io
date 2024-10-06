@@ -39,7 +39,7 @@ I spent a **LOT** of time on my iPhone/iPad - here are some of the tools/tips I 
 - [Keyboard Shortcuts](#keyboard-shortcuts)
 - [Doing development including markdown](#doing-development-including-markdown)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## General

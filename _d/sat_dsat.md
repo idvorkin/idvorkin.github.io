@@ -64,7 +64,7 @@ Embrace the greatest parts of your work , mull over them, whether its the bike r
     - [Insecurity](#insecurity)
     - [WLB](#wlb)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 
 <!-- prettier-ignore-end -->
 

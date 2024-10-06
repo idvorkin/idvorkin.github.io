@@ -39,7 +39,7 @@ The business model canvas is a tool for understanding how a company makes money.
     - [Costs - What you give up](#costs---what-you-give-up)
 - [More resources](#more-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The "you" global boxes:

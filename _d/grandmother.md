@@ -32,7 +32,7 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 - [Cutting ourselves slack vs slacking off](#cutting-ourselves-slack-vs-slacking-off)
 - [Curious questions for mental pain and its antidotes](#curious-questions-for-mental-pain-and-its-antidotes)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Why be compassionate

@@ -21,7 +21,7 @@ Generally, I don't deal with training or deeper tech, but might as well keep som
     - [Awesome blog](#awesome-blog)
 - [Quantization](#quantization)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Training

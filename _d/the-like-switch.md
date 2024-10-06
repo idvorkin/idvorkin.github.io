@@ -45,7 +45,7 @@ The like switch, written by an ex-FBI agent, goes into detail on how to make fri
     - [Favors](#favors)
 - [The book](#the-book)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The friendship formula: Proximity, Frequency, Duration, Intensity

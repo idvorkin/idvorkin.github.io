@@ -61,7 +61,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
     - [How much is 1%](#how-much-is-1)
 - [Other Resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Assumptions and Hannah

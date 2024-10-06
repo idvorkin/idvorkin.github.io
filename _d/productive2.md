@@ -28,7 +28,7 @@ At the core of balance, energy, wlb, habits is being productive.
     - [Procrastination](#procrastination)
     - [Sayings](#sayings)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Concepts

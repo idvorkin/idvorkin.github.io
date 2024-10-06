@@ -93,7 +93,7 @@ I spent 4 years working at Amazon, some things I loved, some not so much. Amazon
     - [Video Shopping](#video-shopping)
     - [Charity Giving: Toys for Tots](#charity-giving-toys-for-tots)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The Good

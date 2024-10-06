@@ -42,7 +42,7 @@ Now a days javascript and HTML are the assembly language of the web (I first [sa
 - [Bootstrap - A higher level abstraction over css.](#bootstrap---a-higher-level-abstraction-over-css)
 - [Other resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 
 ## Script Injection
 

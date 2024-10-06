@@ -15,7 +15,7 @@ The original AI papers were all about training, super technical, and not that us
 - [Security](#security)
 - [Situational Awareness](#situational-awareness)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## LLM Agents

@@ -17,7 +17,7 @@ permalink: /husband
 - [Chapter 5: Hold Space](#chapter-5-hold-space)
 - [Conclusion](#conclusion)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 As a man, being a good husband is not only a responsibility but a privilege. It is the foundation of a happy home and a happy life. However, being a good husband is not as easy as it may seem. It requires effort, time, and commitment. In this book, we will take you through the acronym GOOD HUSBAND, where we will provide you with the top five theories, top five takeaways, five exercises to try, and five journaling prompts to self-reflect on how you're doing.

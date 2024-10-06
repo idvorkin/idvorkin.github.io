@@ -24,7 +24,7 @@ Software is measured in two dimensions: use cases (end user behavior) and mallea
     - [OO Patterns](#oo-patterns)
 - [Other Resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Design and architecture

@@ -40,7 +40,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
     - [2023-07-04](#2023-07-04)
     - [Related posts](#related-posts)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Visualization

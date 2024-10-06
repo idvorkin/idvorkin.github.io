@@ -33,7 +33,7 @@ Anger is the enemy. It is an intoxicant, it causes poor judgement and makes ever
     - [To Anger](#to-anger)
     - [To Rage - not sure](#to-rage---not-sure)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Your enemies trick - control

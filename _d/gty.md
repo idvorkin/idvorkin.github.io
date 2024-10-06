@@ -25,7 +25,7 @@ Negotiation is the heart of collaboration. It is what makes conflict potentially
     - [Mirroring](#mirroring)
     - [Labelling](#labelling)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Getting To Yes

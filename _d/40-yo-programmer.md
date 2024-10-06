@@ -32,7 +32,7 @@ _TODO: Picture of pyramid of age distributions_
     - [Age Based Cognitive Declines](#age-based-cognitive-declines)
     - [AI as an equalizer](#ai-as-an-equalizer)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## BIG DISCLAIMER

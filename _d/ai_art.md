@@ -25,7 +25,7 @@ Creativity is a criticial aspect of art, and that's something which I think AI c
     - [Word to Image Generator: DALL-E and Stable Diffusion](#word-to-image-generator-dall-e-and-stable-diffusion)
     - [Not a X](#not-a-x)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Philosophy

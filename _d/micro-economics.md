@@ -26,7 +26,7 @@ Supply, demands and markets, oh my!
     - [Auctions (e-bay, election!?)](#auctions-e-bay-election)
     - [Other resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Consumers - Demand

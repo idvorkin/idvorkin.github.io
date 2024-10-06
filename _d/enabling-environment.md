@@ -36,7 +36,7 @@ Imagine the place you do your best work. Andy Matuschak defined this, and as som
     - [Critical Thinking](#critical-thinking)
     - [Other folks work here](#other-folks-work-here)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 There's so much to say here. Pulling in some content from Andy:

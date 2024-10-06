@@ -17,7 +17,7 @@ In today's fast-paced and interconnected world, building and maintaining strong 
 - [Chapter 5: Revelation](#chapter-5-revelation)
 - [Conclusion](#conclusion)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Overview

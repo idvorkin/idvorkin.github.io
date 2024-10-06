@@ -32,7 +32,7 @@ Let me ask an easy question: "How are you feeling?". How long did it take you to
     - [Regret](#regret)
 - [Quotes](#quotes)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 {%include blob_image_float_right.html src="blog/raccoon-shrink-couch.webp" %}

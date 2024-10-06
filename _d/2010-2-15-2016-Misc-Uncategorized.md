@@ -51,7 +51,7 @@ place to store them.
     - [Decisive](#decisive)
     - [Yak Shaving](#yak-shaving)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Igor as a business model

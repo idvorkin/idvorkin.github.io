@@ -76,7 +76,7 @@ In March 2020, I took a 2 month sabatical between leaving Amazon and joining Fac
 - [Cut](#cut)
     - [Trip to Canada](#trip-to-canada)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Priorities

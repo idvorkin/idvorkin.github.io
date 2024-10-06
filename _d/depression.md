@@ -33,7 +33,7 @@ An excellent post on depression from [Dr Raph](https://whatilearnedsofar.com/the
 - [Videos](#videos)
 - [Stats](#stats)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 
 ### Depression, Grief and Sadness
 

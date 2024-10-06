@@ -33,7 +33,7 @@ Goal are critcal, there are multiple goal systems and they have consequences. Th
 - [Culture vs Strategy](#culture-vs-strategy)
 - [Process and Power](#process-and-power)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Why goals

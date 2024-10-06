@@ -60,7 +60,7 @@ Human action can be modeled by an elephant, a rider, and the path. Our emotional
     - [Influencer 2.0](#influencer-20)
     - [The Greeks - Pathos, Ethos, Logos](#the-greeks---pathos-ethos-logos)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 # About Change

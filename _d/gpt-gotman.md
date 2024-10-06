@@ -21,7 +21,7 @@ The Gottman Method is a research-based approach to couples therapy developed by 
 - [Chapter 7: Embracing Shared Meaning](#chapter-7-embracing-shared-meaning)
 - [Conclusion](#conclusion)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Chapter 1: Navigating Love Maps

@@ -21,7 +21,7 @@ Dad the website isn't secure! You're the security expert fix it! Zach, my 10 yea
     - [Why did the 100% repro help?](#why-did-the-100-repro-help)
     - [What was the actual setup.](#what-was-the-actual-setup)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Explain like I'm 10.

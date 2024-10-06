@@ -32,7 +32,7 @@ My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75
     - [Tooling learnings](#tooling-learnings)
     - [Upstream fixes](#upstream-fixes)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Simulation

@@ -26,7 +26,7 @@ Failure is not an option; it's a necessity. Here are some thoughts on failures.
 - [FAQ](#faq)
 - [Related Reading](#related-reading)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## General

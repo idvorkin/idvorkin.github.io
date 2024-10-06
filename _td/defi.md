@@ -75,7 +75,7 @@ Finance has existed for as long as civilization. And like most things before the
 - [To be categorized](#to-be-categorized)
     - [Identity Providers - Certificate Authority to Web Of Trust](#identity-providers---certificate-authority-to-web-of-trust)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The jobs of finance

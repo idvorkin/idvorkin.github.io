@@ -78,7 +78,7 @@ A collection of tips, tricks and pointers of the various tools i use
 - [Obsidian](#obsidian)
 - [Other Resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Major Research and Project List

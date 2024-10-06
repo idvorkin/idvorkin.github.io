@@ -61,7 +61,7 @@ A very cynical book about the laws of power. Probably worth a read in case you w
 - [47. Don’t Go Past the Mark You Aimed For: In Victory, Learn When to Stop](#47-dont-go-past-the-mark-you-aimed-for-in-victory-learn-when-to-stop)
 - [48. Assume Formlessness](#48-assume-formlessness)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### 1. Never Outshine the Master

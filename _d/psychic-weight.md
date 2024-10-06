@@ -44,7 +44,7 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
     - [Examples of Pride](#examples-of-pride)
 - [Useful thoughts.](#useful-thoughts)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Types of psychic weight

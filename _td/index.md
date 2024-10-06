@@ -36,7 +36,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
     - [On Deck](#on-deck)
     - [Mothballed](#mothballed)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Engineering

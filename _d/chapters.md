@@ -33,7 +33,7 @@ Our lives are stories, containing many different chapters. However, regardless o
     - [Coming of age ceremonies](#coming-of-age-ceremonies)
     - [Every article I've written evolves over time](#every-article-ive-written-evolves-over-time)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The western model

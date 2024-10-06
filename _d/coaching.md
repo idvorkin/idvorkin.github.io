@@ -45,7 +45,7 @@ Coaching is like midwifery. A midwife can not give birth to the baby, she facili
 - [Other coaching tools](#other-coaching-tools)
 - [Fantastic video on coaching, improvement, and discomfort](#fantastic-video-on-coaching-improvement-and-discomfort)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### The coaching mindset

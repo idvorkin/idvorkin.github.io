@@ -34,7 +34,7 @@ _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 - [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
 - [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 _Currently the purpose of my eulogy is to guide me in living my life. As death gets closer, the purpose of this eulogy will transform into entertaining others at my funeral_

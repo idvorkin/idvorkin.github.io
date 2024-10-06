@@ -34,7 +34,7 @@ Want to plaster a huge smile on someone's face with 10 cents of material and 20 
     - [Portable Electric](#portable-electric)
 - [Some of my creations](#some-of-my-creations)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### It's all about joy

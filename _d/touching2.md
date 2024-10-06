@@ -24,7 +24,7 @@ It's pretty easy to be overwhelmed by humanity sucking, but there is so much goo
 - [Stuff from my own life](#stuff-from-my-own-life)
 - [Related Reading](#related-reading)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Commercials

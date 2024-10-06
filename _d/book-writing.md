@@ -17,7 +17,7 @@ My notes on writing books, mostly from Write Useful Books
     - [Book sources](#book-sources)
     - [Conversation on the manager book title](#conversation-on-the-manager-book-title)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Appendix

@@ -84,7 +84,7 @@ My habits and balance have been strong, just keep my streaks running!
     - [Work](#work)
     - [Family](#family)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Relationships (3/5)

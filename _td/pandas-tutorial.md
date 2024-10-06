@@ -44,7 +44,7 @@ A place to store my hard earned pandas learnings.
     - [Plotly with cufflinks](#plotly-with-cufflinks)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Misc

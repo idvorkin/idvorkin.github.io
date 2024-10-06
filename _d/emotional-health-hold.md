@@ -33,7 +33,7 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 - [Inconsistent/Future practices](#inconsistentfuture-practices)
     - [Discontinued Practices](#discontinued-practices)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Active Practices

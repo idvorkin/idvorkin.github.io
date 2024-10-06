@@ -65,7 +65,7 @@ My top priorities:
 - [House and goods](#house-and-goods)
 - [Mental quicksand](#mental-quicksand)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Top Learnings

@@ -14,7 +14,7 @@ I use nvim lots, but constantly forget what I want to practice. Here's a list to
 - [Code Changes](#code-changes)
 - [Git integration](#git-integration)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Code Changes

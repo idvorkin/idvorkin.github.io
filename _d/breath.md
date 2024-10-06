@@ -33,7 +33,7 @@ Breathing, an act so simple yet so crucial, harbors the potential to transform o
     - [Huberman](#huberman)
     - [Using the different parts of breathing cycle to get impact](#using-the-different-parts-of-breathing-cycle-to-get-impact)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 I do a form of meditation with cyclic breathing called Sky Breathing. Pretty cool...

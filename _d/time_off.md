@@ -53,7 +53,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
     - [Optimize for energy, not time](#optimize-for-energy-not-time)
     - [Can you have too much time off?](#can-you-have-too-much-time-off)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Time on, time rich, time poor

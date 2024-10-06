@@ -32,7 +32,7 @@ This page is built with [brython](https://brython.info/gallery/gallery_en.html),
 - [Python code](#python-code)
     - [Brython loader, and Python include](#brython-loader-and-python-include)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Brython DOM Manipulation

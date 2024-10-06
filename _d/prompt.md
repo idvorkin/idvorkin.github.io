@@ -34,7 +34,7 @@ A prompt will kick start a great conversation, a great insight, and a great rela
   - [Fun](#fun)
 - [Coaching Prompts](#coaching-prompts)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 <script type=module>

@@ -80,7 +80,7 @@ Things to do:
     - [Work](#work)
     - [Family](#family)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Relationships (3/5)

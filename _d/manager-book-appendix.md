@@ -39,7 +39,7 @@ A hodgepodge of additional resources for the manager book.
     - [Great Posts and Blogs](#great-posts-and-blogs)
     - [Great books](#great-books)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The Whole Manager Book

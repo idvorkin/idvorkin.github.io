@@ -24,7 +24,7 @@ Everyone talks about GPT, but you can also generate images. Lately, I've been pl
 - [Providing Inputs](#providing-inputs)
     - [Text 2 Image; Control Nets; In Painting](#text-2-image-control-nets-in-painting)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ![montage of the sequence](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_123538.webp)

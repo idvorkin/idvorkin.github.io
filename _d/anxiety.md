@@ -28,7 +28,7 @@ Anxiety is the difference between reality and expectations. It is the pain, whil
 - [Anxiety Protocol from What I learned so Far](#anxiety-protocol-from-what-i-learned-so-far)
 - [Personal Examples](#personal-examples)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Anxiety

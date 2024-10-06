@@ -24,7 +24,7 @@ permalink: /terzepatide
 - [FAQ](#faq)
     - [Did you get a 'script, isn't there a shortage? Is this some grey market \$hit?](#did-you-get-a-script-isnt-there-a-shortage-is-this-some-grey-market-hit)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## What's it like?

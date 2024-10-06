@@ -24,7 +24,7 @@ Zach and Amelia are roblox fans, so it's fun to be able to create things in ther
 - [My games](#my-games)
 - [Philosophy](#philosophy)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Roblox Environment

@@ -37,7 +37,7 @@ This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medi
 - [Quotes](#quotes)
 - [Other resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## My last year

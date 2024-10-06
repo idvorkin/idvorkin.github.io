@@ -55,7 +55,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
     - [Source Materials, The book and google course:](#source-materials-the-book-and-google-course)
     - [Netflix Prize](#netflix-prize)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Intro to Recommmendation Systems

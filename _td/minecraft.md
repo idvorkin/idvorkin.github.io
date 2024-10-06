@@ -34,7 +34,7 @@ Kids love Minecraft, dad loves tech. Here's my experiences in the world of Minec
     - [Fany worlds](#fany-worlds)
 - [Other Resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Bedrock not Java

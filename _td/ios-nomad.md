@@ -29,7 +29,7 @@ There are three paths - remote development, local development, and hybrid. For a
     - [Carrying bags](#carrying-bags)
 - [Related links](#related-links)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Remote Development - Blink

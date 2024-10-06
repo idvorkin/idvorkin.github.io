@@ -35,7 +35,7 @@ This post covers several books on the topic.
     - [To file](#to-file)
 - [Related posts](#related-posts)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## From Strength To Strength

@@ -36,7 +36,7 @@ Everyone can make a mistake once, that's totally fine. Repeating mistakes is una
     - [Should I use this beyond service outages?](#should-i-use-this-beyond-service-outages)
 - [Related Reading](#related-reading)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Why COEs

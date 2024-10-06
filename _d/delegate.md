@@ -17,7 +17,7 @@ At some point you need to scale out, and that's called delegation! Stewardship d
 - [Stewardship Delegation](#stewardship-delegation)
 - [Gopher Delegation](#gopher-delegation)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Stewardship Delegation

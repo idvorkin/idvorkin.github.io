@@ -13,7 +13,7 @@ Gratefulness exercises work - here's somethings to help.
 - [Quick Simple Prompts](#quick-simple-prompts)
 - [Longer prompts](#longer-prompts)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Quick Simple Prompts

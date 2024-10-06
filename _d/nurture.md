@@ -28,7 +28,7 @@ BTW - OMG this was all created by GPT-4
 - [Chapter 8: Conclusion - Nurturing Love for a Lifetime](#chapter-8-conclusion---nurturing-love-for-a-lifetime)
 - [Worksheets](#worksheets)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Overview

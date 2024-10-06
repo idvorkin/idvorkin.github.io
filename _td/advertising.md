@@ -56,7 +56,7 @@ Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and
     - [Bootstraping - Crowd funding](#bootstraping---crowd-funding)
     - [Ads and sponsored spots](#ads-and-sponsored-spots)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Why Advertise

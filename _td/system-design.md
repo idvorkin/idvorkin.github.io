@@ -66,7 +66,7 @@ Most of these are copied from the system design interview books/tutorials.
 - [Resources](#resources)
     - [System design resources](#system-design-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Theory

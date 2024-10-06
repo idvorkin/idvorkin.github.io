@@ -51,7 +51,7 @@ In March 2020, the world shut down from Covid-19. In May 2020, I started a new j
     - [The good and bad of public communication](#the-good-and-bad-of-public-communication)
 - [Other Resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The Good

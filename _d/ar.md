@@ -53,7 +53,7 @@ My notes on AR
 - [Tactile Hardware](#tactile-hardware)
 - [Other Resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Concepts

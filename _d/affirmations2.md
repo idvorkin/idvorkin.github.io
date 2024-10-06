@@ -19,7 +19,7 @@ Every day I write out my affirmations. These positive statements help me challen
 - [Be a class act: First Understand. Appreciate](#be-a-class-act-first-understand-appreciate)
 - [Calm like water: Be Present. This too shall pass. Work the problem](#calm-like-water-be-present-this-too-shall-pass-work-the-problem)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Pay myself first: Deliberate. Disciplined. Daily

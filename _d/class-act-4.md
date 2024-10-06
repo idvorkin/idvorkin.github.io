@@ -18,7 +18,7 @@ permalink: /heath-class-act
 - [Chapter 5: Style](#chapter-5-style)
 - [Conclusion](#conclusion)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 Being a class act means embodying a set of qualities that make you stand out from the crowd. It means having grace, dignity, and a certain je ne sais quoi that makes people admire and respect you. Being a class act is not about being perfect or always winning, but about showing up as your best self, no matter what. In this book, we will explore the principles and practices of being a class act, and how you can apply them in your own life to become a more confident, respected, and successful person.

@@ -27,7 +27,7 @@ I've always described my hypomanic episode in a positive light (but that's a tra
 - [Mania vs Cocaine](#mania-vs-cocaine)
 - [Stats](#stats)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 {% include blob_image_float_right.html src="blog/raccoon-manic.webp" %}

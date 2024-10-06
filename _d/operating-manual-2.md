@@ -64,7 +64,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Calendar - 2023 Q3](#calendar---2023-q3)
     - [Calendar - 2022](#calendar---2022)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 TODO: Split this post into How Igor Ticks, and igor

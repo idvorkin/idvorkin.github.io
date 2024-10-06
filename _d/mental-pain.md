@@ -44,7 +44,7 @@ Pain is in the brain as they say, which is especially true for mental pains. Pai
     - [Pride vs Self Confidence vs Hubris/Arrogance](#pride-vs-self-confidence-vs-hubrisarrogance)
 - [For more info](#for-more-info)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## The point of pain

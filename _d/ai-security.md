@@ -24,7 +24,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
     - [Anti-censored models](#anti-censored-models)
     - [Laundry Lists](#laundry-lists)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Awesome Video

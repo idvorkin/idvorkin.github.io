@@ -34,7 +34,7 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 - [Addiction to flow/production/productivity](#addiction-to-flowproductionproductivity)
 - [Other Resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Current Addictions

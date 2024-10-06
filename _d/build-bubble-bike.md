@@ -20,7 +20,7 @@ What the heck is a bubble bike? Ah, you see, bringing joy for others is my thing
 - [Custom Bubble machine](#custom-bubble-machine)
 - [Many of the steps and challenges](#many-of-the-steps-and-challenges)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Why

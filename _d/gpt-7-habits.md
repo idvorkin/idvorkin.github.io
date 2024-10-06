@@ -18,7 +18,7 @@ permalink: /gpt-7h
 - [R - Renew Yourself Regularly](#r---renew-yourself-regularly)
 - [Conclusion](#conclusion)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 The 7 Habits of Highly Effective People is a book written by Stephen Covey that has become a staple in the field of personal development. In this book, Covey outlines seven habits that highly effective people possess, which can be applied to both personal and professional life. In this book, we will explore these habits in-depth and provide practical exercises and journaling prompts to help you apply them to your life. Using the acronym LEADER, each chapter will focus on a different habit and provide actionable steps to help you become a more effective leader in your life.

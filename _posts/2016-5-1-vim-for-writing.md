@@ -27,7 +27,7 @@ VIM is great at lots of things, but free form writing has a few gaps in 'line wr
     - [Tags and tagbar while writing, better then Toc](#tags-and-tagbar-while-writing-better-then-toc)
     - [Installation](#installation)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## General
@@ -78,7 +78,7 @@ Use prettier to make your markdown consistent. I execute it as a git [precommit 
 
 ### Table of Contents
 
-Use vim-markdown-toc and prettier gaurds as prettier messes with it. See the markdown headers. I also do a ToC sidebar on the viewer (make this page).
+Use vim-markdown-toc-end and prettier gaurds as prettier messes with it. See the markdown headers. I also do a ToC sidebar on the viewer (make this page).
 
 ### Quick switchting via FZF on files, tags and history
 

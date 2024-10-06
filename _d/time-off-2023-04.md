@@ -57,33 +57,33 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 <!-- vim-markdown-toc-start -->
 
 - [Relationships (3/5)](#relationships-35)
-    - [Friends](#friends)
-    - [Tori](#tori)
-    - [Zach](#zach)
-    - [Amelia](#amelia)
+  - [Friends](#friends)
+  - [Tori1](#tori1)
+  - [Zach](#zach)
+  - [Amelia](#amelia)
 - [Identity Health (0/5)](#identity-health-05)
-    - [Biking](#biking)
-    - [Ballooning](#ballooning)
-    - [Joy Activities](#joy-activities)
-    - [Magic](#magic)
+  - [Biking](#biking)
+  - [Ballooning](#ballooning)
+  - [Joy Activities](#joy-activities)
+  - [Magic](#magic)
 - [Tech Guru (X/5)](#tech-guru-x5)
 - [Cognitive Health (X/5)](#cognitive-health-x5)
-    - [Blog posts](#blog-posts)
+  - [Blog posts](#blog-posts)
 - [Emotional Health (4/5)](#emotional-health-45)
-    - [Meditation](#meditation)
-    - [750 words/Gratefulness](#750-wordsgratefulness)
+  - [Meditation](#meditation)
+  - [750 words/Gratefulness](#750-wordsgratefulness)
 - [Motivation (4/5)](#motivation-45)
 - [Physical Habits (4/5)](#physical-habits-45)
-    - [Statistics](#statistics)
-    - [Diet](#diet)
-    - [Sleep](#sleep)
+  - [Statistics](#statistics)
+  - [Diet](#diet)
+  - [Sleep](#sleep)
 - [House and goods](#house-and-goods)
 - [Inner Peace (5/5)](#inner-peace-55)
-    - [General Inner Peace](#general-inner-peace)
-    - [Work](#work)
-    - [Family](#family)
+  - [General Inner Peace](#general-inner-peace)
+  - [Work](#work)
+  - [Family](#family)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Relationships (3/5)
@@ -93,7 +93,7 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 - ☑ Catch up with Baltasar
 - ☑ Really enjoy Mom and Sister
 
-### Tori
+### Tori1
 
 - She's staying home, and having her crazy busy week, hoping she does well.
 

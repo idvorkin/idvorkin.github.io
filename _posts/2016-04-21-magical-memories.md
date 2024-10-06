@@ -39,7 +39,7 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
     - [Hannibal](#hannibal)
 - [FISM 2022](#fism-2022)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Early magic memories

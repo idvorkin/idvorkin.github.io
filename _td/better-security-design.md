@@ -52,7 +52,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [RSA Secure ID](#rsa-secure-id)
     - [Secure Boot](#secure-boot)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### Good Security

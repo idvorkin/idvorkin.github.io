@@ -45,7 +45,7 @@ I've used this time to restart the flywheel on magic, and diet, re-inforce my di
     - [Spending vacation days when it's "fun time at work"](#spending-vacation-days-when-its-fun-time-at-work)
     - [January is going to be a tough month at work.](#january-is-going-to-be-a-tough-month-at-work)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Top Learnings

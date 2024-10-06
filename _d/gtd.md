@@ -27,7 +27,7 @@ Getting Things Done (GTD) is a model based on David Allen's book of the same nam
     - [OmniFocus](#omnifocus)
     - [Nozbe](#nozbe)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Theory

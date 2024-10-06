@@ -43,7 +43,7 @@ FYI, I now do a different practice; See my experience with [SKY](/ig66/685)
 - [Working with suffering](#working-with-suffering)
 - [What meditation mastery looks like](#what-meditation-mastery-looks-like)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ### 1) What is Emotional Intelligence (EI)? How to train it?

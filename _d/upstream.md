@@ -41,7 +41,7 @@ This is my summary of [upstream](https://www.amazon.com/Upstream-Quest-Problems-
     - [The need for slack](#the-need-for-slack)
 - [Further reading](#further-reading)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## What's blocking us from operating upstream?

@@ -25,7 +25,7 @@ Testing math is easy, it's right or wrong. Test spelling is easy too, but testin
     - [Wrinkle - No Known Answer](#wrinkle---no-known-answer)
     - [Wrinkle - No clear questions](#wrinkle---no-clear-questions)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Concepts

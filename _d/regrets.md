@@ -25,7 +25,7 @@ Regrets, both ours and others, are a powerful tools to shape our present and fut
     - [Connection - If only I'd reached out](#connection---if-only-id-reached-out)
     - [Regrets over time](#regrets-over-time)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Regrets, for the future, not the past

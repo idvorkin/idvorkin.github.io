@@ -39,7 +39,7 @@ I aspire to be the best manager I can be. I'll often fall short of my goal, but 
     - [What is Igor's Management Philosopy](#what-is-igors-management-philosopy)
     - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Igor's book of manager

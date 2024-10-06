@@ -55,7 +55,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Propane Fire Pit](#propane-fire-pit)
     - [Canopies](#canopies)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Physical Health

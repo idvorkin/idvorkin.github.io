@@ -49,7 +49,7 @@ Useful writing tells people something true and important that they didn't alread
     - [Writing is better with an enabling environment](#writing-is-better-with-an-enabling-environment)
     - [Other resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Why

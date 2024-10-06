@@ -33,7 +33,7 @@ Let's define caring, as the intensity of our emotions, critical given a lack of 
 - [Stoicism](#stoicism)
     - [Q for DR. Raph](#q-for-dr-raph)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Why do I care so much?

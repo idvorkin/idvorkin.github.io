@@ -45,7 +45,7 @@ LISP, and SICP
 - [Paul graham on the roots of list](#paul-graham-on-the-roots-of-list)
     - [Lecture 3B Differentiation](#lecture-3b-differentiation)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## SICP

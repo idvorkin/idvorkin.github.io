@@ -21,7 +21,7 @@ One of the most satisfying (and fun) projects I worked on in my career was givin
 - [Cool stories - Launch Day](#cool-stories---launch-day)
 - [The team that made it happen](#the-team-that-made-it-happen)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Marketing and PR the big guns.

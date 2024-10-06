@@ -15,7 +15,7 @@ permalink: /dad
 - [Chapter 3: Development (D)](#chapter-3-development-d)
 - [Conclusion](#conclusion)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 As a father, you have an important role to play in your child's life. Being a good dad requires patience, dedication, and a willingness to learn. In this book, we'll explore the top theories and takeaways for being the best dad you can be. Using the acronym DAD, we'll cover topics such as Discipline, Affection, and Development.

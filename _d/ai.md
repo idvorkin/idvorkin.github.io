@@ -17,7 +17,7 @@ A landing page for all my ai pages - a nice jumping off point (especially from t
     - [It's not good enough today](#its-not-good-enough-today)
     - [Where will we get the OOMs - Order Of Magnitude Improvements](#where-will-we-get-the-ooms---order-of-magnitude-improvements)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Posts

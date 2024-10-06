@@ -104,7 +104,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [GAN: Generate Associative Networs](#gan-generate-associative-networs)
 - [What should I read to learn more](#what-should-i-read-to-learn-more)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Hierarchy of Abstraction in the ML space

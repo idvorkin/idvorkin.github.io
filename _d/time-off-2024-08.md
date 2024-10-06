@@ -63,7 +63,7 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
     - [Family](#family)
 - [House and goods](#house-and-goods)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Topic

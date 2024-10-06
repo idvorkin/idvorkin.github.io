@@ -51,7 +51,7 @@ To better understand all this, check out this course: <https://www.nlpdemystifie
     - [Word Embedding, and semantic search, (useful for RAG)](#word-embedding-and-semantic-search-useful-for-rag)
     - [Bag of words analysis](#bag-of-words-analysis)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Abstract

@@ -38,7 +38,7 @@ Work expands to fill the resources available. The more you make, the more you sp
     - [The art of tidying up](#the-art-of-tidying-up)
 - [Funny other variants](#funny-other-variants)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Why

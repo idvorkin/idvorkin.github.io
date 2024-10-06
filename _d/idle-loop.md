@@ -31,7 +31,7 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
     - [Mind monsters is a perfect articulation for negative emotions](#mind-monsters-is-a-perfect-articulation-for-negative-emotions)
 - [Other Resources](#other-resources)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Why: Parasitic energy drain or regenerative braking

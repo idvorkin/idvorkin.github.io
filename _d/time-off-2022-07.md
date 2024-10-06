@@ -104,7 +104,7 @@ Last morning
         - [Mario Lecture](#mario-lecture)
     - [Priorities](#priorities)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Friends (5/5)
