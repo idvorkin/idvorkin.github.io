@@ -7,24 +7,24 @@ permalink: /ai-coder
 Buckle up, code warriors! AI's grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we've hit the jackpot with full-blown code writing! It's like having a tireless robot assistant who can churn out entire functions faster than you can say "Hello, World!" This AI-powered journey has turned coding from a solo trek into a wild party where everyone's invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it's got AI written all over it!
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc -->
 
 - [Completion](#completion)
-    - [Co-pilot](#co-pilot)
+  - [Co-pilot](#co-pilot)
 - [Coder](#coder)
-    - [Cursor](#cursor)
-    - [Aider](#aider)
-    - [Avante](#avante)
+  - [Cursor](#cursor)
+  - [Aider](#aider)
+  - [Avante](#avante)
 - [Use Cases](#use-cases)
-    - [Using latest docs](#using-latest-docs)
-    - [Diff Summarization](#diff-summarization)
-    - [Review changes between dates](#review-changes-between-dates)
-    - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
-    - [Should I code once we have AI?](#should-i-code-once-we-have-ai)
-        - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
-        - [How can you use AI  - Research Assistant vs Code Writer](#how-can-you-use-ai----research-assistant-vs-code-writer)
+  - [Using latest docs](#using-latest-docs)
+  - [Diff Summarization](#diff-summarization)
+  - [Review changes between dates](#review-changes-between-dates)
+  - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
+  - [Should I code once we have AI?](#should-i-code-once-we-have-ai)
+    - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
+    - [How can you use AI - Research Assistant vs Code Writer](#how-can-you-use-ai---research-assistant-vs-code-writer)
 
-<!-- vim-markdown-toc -->
+<!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 ## Completion
