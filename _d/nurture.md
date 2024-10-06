@@ -15,7 +15,7 @@ The book breaks down the Gottman Method into an easy-to-remember acronym: NURTUR
 BTW - OMG this was all created by GPT-4
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Overview](#overview)
 - [Chapter 1: Navigating Love Maps (N)](#chapter-1-navigating-love-maps-n)

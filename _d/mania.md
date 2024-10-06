@@ -16,7 +16,7 @@ The words that follow, I pray will never be my own -- What pains me most is I se
 I've always described my hypomanic episode in a positive light (but that's a trap) - I've never taken cocaine, but I did go hypomanic in 2012, and it was glorious. Infinite energy, sharp as a whip, maximum creativity. Well, that's my subjective reality, but external observers said I was talking fast, jittery, etc. And of course, such high energy can go out of control, and it must be paid back with some future depression.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Don't fool yourself, this is as serious as depression](#dont-fool-yourself-this-is-as-serious-as-depression)
 - [The failure modes: Crash your car, spend all your money, have an affair.](#the-failure-modes-crash-your-car-spend-all-your-money-have-an-affair)

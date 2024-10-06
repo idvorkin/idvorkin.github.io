@@ -11,7 +11,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [A note on goals, aspiration an  systems.](#a-note-on-goals-aspiration-an--systems)
 - [Calendar - 2024 H2](#calendar---2024-h2)

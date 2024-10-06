@@ -14,7 +14,7 @@ imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.w
 Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22-year-old, and what you need as a 42-year-old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The western model](#the-western-model)
     - [20s - Try everything you can](#20s---try-everything-you-can)

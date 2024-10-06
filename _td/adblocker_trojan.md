@@ -7,7 +7,7 @@ permalink: /adblocker-trojan
 Out of the blue I started seeing ads in my google search. They were especially prominent due to the fact they were white, and I use a back background. It was caused by a trojan running in my chrome extension, which I suspect was installed by a name-jacked NPM plugin.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Impact and blast radius](#impact-and-blast-radius)
     - [Did happen when ...](#did-happen-when-)

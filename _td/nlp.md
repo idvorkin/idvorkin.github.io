@@ -20,7 +20,7 @@ To better understand all this, check out this course: <https://www.nlpdemystifie
 - Topic/mood over time visualization.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Abstract](#abstract)
 - [Corpus](#corpus)

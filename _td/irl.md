@@ -13,7 +13,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Physical Health](#physical-health)
     - [Personal Trainer](#personal-trainer)

@@ -13,7 +13,7 @@ Satisfaction is our most sustainable source of happiness. To find satisfaction, 
 One of my dreams is to guide others navigate through this, which I'll do through [mortality software](/mortality-software).
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [You are dying](#you-are-dying)
   - [So strive for happiness](#so-strive-for-happiness)

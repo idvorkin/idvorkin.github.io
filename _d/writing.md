@@ -14,7 +14,7 @@ Useful writing tells people something true and important that they didn't alread
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Why](#why)
     - [Writing to understand, writing to be understood](#writing-to-understand-writing-to-be-understood)

@@ -13,7 +13,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 Kids love Minecraft, dad loves tech. Here's my experiences in the world of Minecraft
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Bedrock not Java](#bedrock-not-java)
     - [Bedrock Server](#bedrock-server)

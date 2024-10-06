@@ -22,7 +22,7 @@ Anger is the enemy. It is an intoxicant, it causes poor judgement and makes ever
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Your enemies trick - control](#your-enemies-trick---control)
 - [The anger dial frustration and rage](#the-anger-dial-frustration-and-rage)

@@ -54,7 +54,7 @@ Humorously, I can just copy much of my todo from last year as it's pretty simila
 - Even if you think the store is closed, it might be open go for it!
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Relationships (3/5)](#relationships-35)
     - [Friends](#friends)

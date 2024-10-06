@@ -9,7 +9,7 @@ A collection of my research and technical explorations. Hopefully you find it us
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/)_
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Engineering](#engineering)
     - [Design and Architecture](#design-and-architecture)

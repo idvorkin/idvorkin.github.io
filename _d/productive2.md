@@ -9,7 +9,7 @@ redirect_from:
 At the core of balance, energy, wlb, habits is being productive.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Concepts](#concepts)
     - [The fuel of productivity, is energy.](#the-fuel-of-productivity-is-energy)

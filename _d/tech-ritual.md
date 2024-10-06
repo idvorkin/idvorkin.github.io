@@ -10,7 +10,7 @@ redirect_from:
 There is so much change in tech it's important to check in on what has changed to make sure you're still using the latest. You can do this at an ad-hoc basis, but you're probably better off having it on a calendar.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Monthly](#monthly)
   - [AI Coding tools](#ai-coding-tools)

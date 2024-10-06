@@ -9,7 +9,7 @@ redirect_from:
 I use nvim lots, but constantly forget what I want to practice. Here's a list to remind me.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Code Changes](#code-changes)
 - [Git integration](#git-integration)

@@ -9,7 +9,7 @@ This page contains my knowledge of data systems. Mostly just a summary of [Desig
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/data-systems.md)_
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Success criteria For this post](#success-criteria-for-this-post)
 - [Comparisons](#comparisons)

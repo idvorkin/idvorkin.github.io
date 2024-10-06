@@ -7,7 +7,7 @@ permalink: /ai
 A landing page for all my ai pages - a nice jumping off point (especially from the graph)
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Posts](#posts)
 - [Ideas/Thoughts/Tidbits](#ideasthoughtstidbits)

@@ -8,7 +8,7 @@ permalink: /husband
 ---
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Chapter 1: Give your time and attention](#chapter-1-give-your-time-and-attention)
 - [Chapter 2: Open Communication](#chapter-2-open-communication)

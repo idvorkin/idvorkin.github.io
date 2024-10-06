@@ -18,7 +18,7 @@ Imagine sitting enjoying a picnic with a friend at the side of a river. Suddenly
 This is my summary of [upstream](https://www.amazon.com/Upstream-Quest-Problems-Before-Happen/dp/1982134720)
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [What's blocking us from operating upstream?](#whats-blocking-us-from-operating-upstream)
     - [I don't know about the problem](#i-dont-know-about-the-problem)

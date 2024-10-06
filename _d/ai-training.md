@@ -11,7 +11,7 @@ redirect_from:
 Generally, I don't deal with training or deeper tech, but might as well keep some onotes on it.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Training](#training)
     - [RAG Grounding](#rag-grounding)

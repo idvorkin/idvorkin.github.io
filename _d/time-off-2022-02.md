@@ -25,7 +25,7 @@ My top priorities:
 - Learning a new coin trick that is awesome!
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)

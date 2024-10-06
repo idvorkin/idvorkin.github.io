@@ -13,7 +13,7 @@ Let me ask an easy question: "How are you feeling?". How long did it take you to
 
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Why mood matters so much](#why-mood-matters-so-much)
     - [Mood does not equal quality of the present](#mood-does-not-equal-quality-of-the-present)

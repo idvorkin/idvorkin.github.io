@@ -19,7 +19,7 @@ I aspire to be the best manager I can be. I'll often fall short of my goal, but 
 {%include summarize-page.html src="/manager-book" %}
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Igor's book of manager](#igors-book-of-manager)
 - [How will I measure my success?](#how-will-i-measure-my-success)

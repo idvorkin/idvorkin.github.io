@@ -14,7 +14,7 @@ redirect_from:
 Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [A New Computational Model - Interns](#a-new-computational-model---interns)
     - [The Perfect Intern](#the-perfect-intern)

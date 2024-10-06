@@ -16,7 +16,7 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Completed Projects](#completed-projects)
     - [Magic](#magic)

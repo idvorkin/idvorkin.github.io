@@ -22,7 +22,7 @@ An excellent post on depression from [Dr Raph](https://whatilearnedsofar.com/the
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Depression, Grief and Sadness](#depression-grief-and-sadness)
 - [Anxiety, Depression's cruel enforcer](#anxiety-depressions-cruel-enforcer)

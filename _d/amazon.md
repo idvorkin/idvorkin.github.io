@@ -7,7 +7,7 @@ permalink: /amazon
 I spent 4 years working at Amazon, some things I loved, some not so much. Amazon is a huge company and the variation of behavior within a company exceeds the variation between the "median" behavior between companies. Even within the two teams I was on at Amazon I saw the exact opposite behaviors. When I talk about the good, I'll talk about the ideal good, and when I talk about the bad, I'll talk to some issues I saw that were systemically bad. As a result you'll often see me describing something as both good and bad, as it's done differently in different parts of the company.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The Good](#the-good)
     - [Willingness to change](#willingness-to-change)

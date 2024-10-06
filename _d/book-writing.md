@@ -11,7 +11,7 @@ tags:
 My notes on writing books, mostly from Write Useful Books
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Appendix](#appendix)
     - [Book sources](#book-sources)

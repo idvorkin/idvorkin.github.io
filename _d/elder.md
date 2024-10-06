@@ -13,7 +13,7 @@ Midlife has a marketing problem, it's always followed by the word crisis. Honest
 This post covers several books on the topic.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [From Strength To Strength](#from-strength-to-strength)
     - [Your professional decline is coming (much) sooner than you think](#your-professional-decline-is-coming-much-sooner-than-you-think)

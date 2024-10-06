@@ -11,7 +11,7 @@ My explorations of recommender and ranking systems, heavly based on the superb b
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Intro to Recommmendation Systems](#intro-to-recommmendation-systems)
     - [Concepts](#concepts)

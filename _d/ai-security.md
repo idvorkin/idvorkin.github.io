@@ -12,7 +12,7 @@ tags:
 Security is super interesting, AI is super interesting, the combination, is super-duper interesting!
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Awesome Video](#awesome-video)
 - [Random papers](#random-papers)

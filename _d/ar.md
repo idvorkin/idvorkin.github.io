@@ -13,7 +13,7 @@ My notes on AR
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Concepts](#concepts)
     - [AR vs VR vs MR vs IRL](#ar-vs-vr-vs-mr-vs-irl)

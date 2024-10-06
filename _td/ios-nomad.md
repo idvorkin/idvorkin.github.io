@@ -9,7 +9,7 @@ So you want to be an iPad Developer Nomad. A person who can do all their develop
 There are three paths - remote development, local development, and hybrid. For all of these you'll need an external keyboard, which I'll also discuss.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Remote Development - Blink](#remote-development---blink)
     - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)

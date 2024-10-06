@@ -15,7 +15,7 @@ Being a dealer of smiles and wonder is a priority in my life, and magic is my in
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Early magic memories](#early-magic-memories)
 - [How I started](#how-i-started)

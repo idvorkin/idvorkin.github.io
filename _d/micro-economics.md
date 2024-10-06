@@ -12,7 +12,7 @@ redirect_from: /microeconomics
 Supply, demands and markets, oh my!
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Consumers - Demand](#consumers---demand)
     - [Elastic vs In-Elastic](#elastic-vs-in-elastic)

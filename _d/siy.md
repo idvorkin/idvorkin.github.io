@@ -27,7 +27,7 @@ FYI, I now do a different practice; See my experience with [SKY](/ig66/685)
 {%include amazon.html asin="B0070XF474;0062378872" %}
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [1) What is Emotional Intelligence (EI)? How to train it?](#1-what-is-emotional-intelligence-ei-how-to-train-it)
 - [2) Theory and practice of mindfulness](#2-theory-and-practice-of-mindfulness)

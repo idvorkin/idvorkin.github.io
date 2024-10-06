@@ -8,7 +8,7 @@ permalink: /cert-error
 Dad the website isn't secure! You're the security expert fix it! Zach, my 10 year old at the time son, runs a web site, and it got an occasional this website is not secure message. I tried to debug, but couldn't get a consistent enough repro to debug, so had to move on. It stayed in this state for 6 months, at which point Zach told me the certificate had expired. Now i had a 100% repro so went to work.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Explain like I'm 10.](#explain-like-im-10)
     - [Phone numbers and phone books (IP and DNS)](#phone-numbers-and-phone-books-ip-and-dns)

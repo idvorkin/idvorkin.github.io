@@ -68,7 +68,7 @@ Two days before the start of the trip we had layoffs (including my partners who 
 ## Top Learnings
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Friends (5/5)](#friends-55)
 - [Family (Y/5)](#family-y5)

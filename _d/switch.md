@@ -38,7 +38,7 @@ Human action can be modeled by an elephant, a rider, and the path. Our emotional
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [About Change](#about-change)
 - [Direct the rider](#direct-the-rider)

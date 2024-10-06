@@ -13,7 +13,7 @@ Imagine a weight tied around your body, imagine it dragging behind you, slowing 
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Types of psychic weight](#types-of-psychic-weight)
     - [Aversion and the resistance](#aversion-and-the-resistance)

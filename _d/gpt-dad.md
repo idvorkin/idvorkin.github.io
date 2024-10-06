@@ -8,7 +8,7 @@ permalink: /dad
 ---
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Chapter 1: Discipline (D)](#chapter-1-discipline-d)
 - [Chapter 2: Affection (A)](#chapter-2-affection-a)

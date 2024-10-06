@@ -17,7 +17,7 @@ I took the first 2 days to vegitate, which wasn't a conscious decision, it was j
 I've used this time to restart the flywheel on magic, and diet, re-inforce my discipline, and keep a balance with my family.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)

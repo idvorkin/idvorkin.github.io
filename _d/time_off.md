@@ -21,7 +21,7 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Time on, time rich, time poor.](#time-on-time-rich-time-poor)
 - [The phases of time off](#the-phases-of-time-off)

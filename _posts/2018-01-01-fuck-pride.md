@@ -34,7 +34,7 @@ To help me remember places where pride has fucked with me, I'll write out some o
 ---
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Judging my career relative to my peers](#judging-my-career-relative-to-my-peers)
 - [Feeling cheated because I was treated unfairly, and not appreciated](#feeling-cheated-because-i-was-treated-unfairly-and-not-appreciated)

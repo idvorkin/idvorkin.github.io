@@ -45,7 +45,7 @@ My habits and balance have been strong, just keep my streaks running!
 - I need to plan more moments, instead of relying on "good intentions", I didn't pre-write many moments, and none happened.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Relationships (3/5)](#relationships-35)
     - [Friends](#friends)

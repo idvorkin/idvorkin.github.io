@@ -11,7 +11,7 @@ tags:
 A hodgepodge of additional resources for the manager book.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The Whole Manager Book](#the-whole-manager-book)
 - [Leadership Principles by Company](#leadership-principles-by-company)

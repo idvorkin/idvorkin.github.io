@@ -10,7 +10,7 @@ redirect-from:
 A collection of tips, tricks and pointers of the various tools i use
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Major Research and Project List](#major-research-and-project-list)
 - [Modern Unix](#modern-unix)

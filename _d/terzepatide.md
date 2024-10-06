@@ -13,7 +13,7 @@ permalink: /terzepatide
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [What's it like?](#whats-it-like)
 - [Differences from calorie restriction](#differences-from-calorie-restriction)

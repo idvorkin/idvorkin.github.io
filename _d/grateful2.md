@@ -8,7 +8,7 @@ alias: /grateful
 Gratefulness exercises work - here's somethings to help.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Quick Simple Prompts](#quick-simple-prompts)
 - [Longer prompts](#longer-prompts)

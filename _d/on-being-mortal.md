@@ -16,7 +16,7 @@ Bad news, you're dying, so is everyone else. Good news, if we didn't die we'd ru
 This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medicine-What-Matters-ebook/dp/B00JCW0BCY) by Atul Gawande, also author of the Checklist manifesto.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [My last year](#my-last-year)
 - [The book](#the-book)

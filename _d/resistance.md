@@ -16,7 +16,7 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The resistance is what stops us from doing the important things](#the-resistance-is-what-stops-us-from-doing-the-important-things)
     - [Pain vs Suffering](#pain-vs-suffering)

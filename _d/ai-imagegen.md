@@ -9,7 +9,7 @@ redirect-from:
 Everyone talks about GPT, but you can also generate images. Lately, I've been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Fun Demo](#fun-demo)
 - [Talking Head Videos From your Heard](#talking-head-videos-from-your-heard)

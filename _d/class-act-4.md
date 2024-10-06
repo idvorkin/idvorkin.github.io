@@ -8,7 +8,7 @@ permalink: /heath-class-act
 ---
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The CLASS Act: An Acronym for Success](#the-class-act-an-acronym-for-success)
 - [Chapter 1: Composure](#chapter-1-composure)

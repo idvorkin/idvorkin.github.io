@@ -10,7 +10,7 @@ tags:
 FACEBOOK MANAGEMENT INTERVIEWING 101
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [OVERVIEW](#overview)
 - [MANAGEMENT INTERVIEW](#management-interview)

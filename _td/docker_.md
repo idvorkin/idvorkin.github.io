@@ -7,7 +7,7 @@ permalink: /docker
 Docker has 2 values, isolation and repeatable setup. Here are my notes
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Useful commands and notes](#useful-commands-and-notes)
 - [TUI](#tui)

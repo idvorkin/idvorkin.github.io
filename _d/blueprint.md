@@ -10,7 +10,7 @@ redirect_from:
 So there's this guy who measures his nightly erections, doesn't go out into the sun, and strives to delegate all his decision making to an algorithm called blue print. Certainly a nut job, but a nut job who has explored many of the thoughts I'm very interested in. Depression, purpose, sleep, exercise. Here are my notes.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Stuff i love](#stuff-i-love)
 - [Goofy stuff](#goofy-stuff)

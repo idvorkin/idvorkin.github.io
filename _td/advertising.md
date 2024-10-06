@@ -8,7 +8,7 @@ Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Why Advertise](#why-advertise)
     - [What is a brand?](#what-is-a-brand)

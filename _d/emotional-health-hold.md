@@ -19,7 +19,7 @@ Emotionally healthy folks can let it go, empathize with others, and most importa
 I picked up, and also execute, these habits semi-randomly today. However, as I do with physical health, I'll try to build up a more deliberate system. If you're interested in building up your emotional intelligence, my "bible" for emotional health practices is currently [SIY](/search-inside-yourself). This is also a key [saw to be sharpened](/sharpen-the-saw).
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Active Practices](#active-practices)
     - [Daily Stream of Consciousness Journaling](#daily-stream-of-consciousness-journaling)

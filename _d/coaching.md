@@ -21,7 +21,7 @@ Coaching is like midwifery. A midwife can not give birth to the baby, she facili
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The coaching mindset](#the-coaching-mindset)
 - [Frequent coaching situations](#frequent-coaching-situations)

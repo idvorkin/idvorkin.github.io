@@ -13,7 +13,7 @@ Regrets, both ours and others, are a powerful tools to shape our present and fut
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Regrets, for the future, not the past](#regrets-for-the-future-not-the-past)
     - [Concerns, Control and Influence](#concerns-control-and-influence)

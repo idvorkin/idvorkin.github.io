@@ -8,7 +8,7 @@ permalink: /anxiety-management
 When your emotions aren't serving you well, it's helpful to have a solid protocol. First you need to rebuild perspective, and then you need to focus on maximizing your influence.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Don't make stuff worse in the moment.](#dont-make-stuff-worse-in-the-moment)
 - [Anxiety Management](#anxiety-management)

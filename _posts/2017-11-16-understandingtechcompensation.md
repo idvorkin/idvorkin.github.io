@@ -14,7 +14,7 @@ redirect_from:
 Different companies use different compensation models. To compare models, use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon caps salary at 160K\$/yr and doesn't have bonuses. Google vests stocks monthly. Facebook bonuses have a company performance multiplier. At some companies, signing bonuses can be over 100% of salary!
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Total Compensation - It gets complicated](#total-compensation---it-gets-complicated)
     - [Initial Grant Models - By Company](#initial-grant-models---by-company)

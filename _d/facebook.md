@@ -12,7 +12,7 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The Good - Engineering Systems](#the-good---engineering-systems)
     - [Why they're so good](#why-theyre-so-good)

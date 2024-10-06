@@ -7,7 +7,7 @@ permalink: /ai-art
 Creativity is a criticial aspect of art, and that's something which I think AI can be really good at. Some very random ideas
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Philosophy](#philosophy)
     - [Sandwich Model of Creativity](#sandwich-model-of-creativity)

@@ -7,7 +7,7 @@ permalink: /ios-accessibility
 iOS has some great accessibility features which allow hands-free and eye-less control of the device. Here they are.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Voice Control](#voice-control)
 - [Speech Controller/Read aloud](#speech-controllerread-aloud)

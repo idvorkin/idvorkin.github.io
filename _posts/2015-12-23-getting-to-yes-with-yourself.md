@@ -14,7 +14,7 @@ tags:
 Before you can negotiate with others, you need to be in sync with yourself. This book applies the [negotiating principles](/gty) to yourself. It's an awkward application of the model, but this book is filled with good concepts regardless.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [1) Put yourself in your shoes &#x2611;](#1-put-yourself-in-your-shoes-x2611)
 - [2) Develop your inner BATNA &#x2611;](#2-develop-your-inner-batna-x2611)

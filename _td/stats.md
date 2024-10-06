@@ -7,7 +7,7 @@ title: Statistics
 Statistics is a tool which lets us summarize data, and make inferences from it.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Inferencing vs Analyzing](#inferencing-vs-analyzing)
 - [Philosophy](#philosophy)

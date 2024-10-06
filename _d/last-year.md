@@ -12,7 +12,7 @@ redirect_from:
 Bad news, you've got a last year on earth. Good news, if you're lucky you'll accept that "grand father dies, father dies, son dies" is the best blessing you can have (imagine a different ordering). If you're luckier, you'll have age appropriate health right up till that last year, or even better that last few months. If you're even luckier you'll have the strength to do what you want in your personal "centenarian Olympics".
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [You're going to die](#youre-going-to-die)
 - [Centarian Olympics](#centarian-olympics)

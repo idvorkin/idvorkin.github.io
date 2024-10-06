@@ -14,7 +14,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 A place to store my hard earned pandas learnings.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Misc](#misc)
     - [Jupyter set to window width](#jupyter-set-to-window-width)

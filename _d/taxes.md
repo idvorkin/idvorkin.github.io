@@ -16,7 +16,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Assumptions and Hannah](#assumptions-and-hannah)
 - [IRAs Non-Taxable Saving Accounts](#iras-non-taxable-saving-accounts)

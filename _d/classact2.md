@@ -11,7 +11,7 @@ redirect_from:
 Be a class act. Fantatic advice.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The practices](#the-practices)
     - [Seek first to understand](#seek-first-to-understand)

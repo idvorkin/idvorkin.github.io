@@ -12,7 +12,7 @@ redirect_from:
 At some point you need to scale out, and that's called delegation! Stewardship delegation is the form of delegation where the responsibility for the delegated task is transferred to the delegatee. Stewardship delegation requires upfront effort, but results in long-term effectiveness. For stewardship delegation, you need agreement on the following 5 things: The desired results, the operating parameters, the available resources, the measurement system, and the consequences of their stewardship.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Stewardship Delegation](#stewardship-delegation)
 - [Gopher Delegation](#gopher-delegation)

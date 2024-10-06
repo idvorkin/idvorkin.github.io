@@ -10,7 +10,7 @@ redirect_from:
 LISP, and SICP
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [SICP](#sicp)
 - [LISP](#lisp)

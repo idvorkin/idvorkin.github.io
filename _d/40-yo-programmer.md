@@ -14,7 +14,7 @@ _TODO: Picture of pyramid of age distributions_
 <https://insights.stackoverflow.com/survey/2020#developer-profile-age>
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [BIG DISCLAIMER](#big-disclaimer)
 - [Hypothesis](#hypothesis)

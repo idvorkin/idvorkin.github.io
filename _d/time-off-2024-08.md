@@ -15,7 +15,7 @@ It's a special year since Zach will be going into high school, and Amelia into G
 To get the most out of my time off, I'm going to follow my best practice of pre-writing what I want to get done, and adjust it as I go. This is a combination of [time off](/time-off), and all the stuff for [happiness](/happy), which I guess gets tangled up with half of my evergreen notes.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Topic](#topic)
     - [Divide and Conquer - By Person](#divide-and-conquer---by-person)

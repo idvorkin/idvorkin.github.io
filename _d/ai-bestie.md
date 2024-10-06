@@ -10,7 +10,7 @@ redirect_from:
 My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75, P95). I have years of chat history, and so this seemed like a super fun way to get deeper into ML. This is created and shared with his permission.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Simulation](#simulation)
     - [Idea: Inject Recent chat history](#idea-inject-recent-chat-history)

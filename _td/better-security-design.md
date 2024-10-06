@@ -9,7 +9,7 @@ I used to do security in a former life, and here are some musings on the topic, 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/better-security-design.md)_
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Good Security](#good-security)
     - [Single Sign On: One account to rule them all.](#single-sign-on-one-account-to-rule-them-all)

@@ -10,7 +10,7 @@ Finance has existed for as long as civilization. And like most things before the
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The jobs of finance](#the-jobs-of-finance)
     - [Representing and storing value](#representing-and-storing-value)

@@ -13,7 +13,7 @@ Most of these are copied from the system design interview books/tutorials.
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Theory](#theory)
     - [Why do these?](#why-do-these)

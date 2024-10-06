@@ -11,7 +11,7 @@ redirect_from:
 Want to plaster a huge smile on someone's face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [It's all about joy](#its-all-about-joy)
 - [How I started](#how-i-started)

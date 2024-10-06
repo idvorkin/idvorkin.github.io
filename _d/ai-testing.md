@@ -7,7 +7,7 @@ permalink: /ai-testing
 Testing math is easy, it's right or wrong. Test spelling is easy too, but testing if a joke is funny - now that's tough. Let's talk about how to test AI
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Concepts](#concepts)
     - [Tracing](#tracing)

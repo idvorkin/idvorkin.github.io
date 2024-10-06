@@ -7,7 +7,7 @@ permalink: /ai-developer
 ML Engineer is a hot new job. It's the boys and girls who train and deploy models. I heard the word AI developer the other day, and I'll refer to it as AI application engineers. People who use AI to solve use cases. NOTE: This is not what most developers do today. What most developers do today is ask how can AI do the things I would have done (e.g. write the function).
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [AI Developer, vs a Software Engineer using AI](#ai-developer-vs-a-software-engineer-using-ai)
 - [Programs, Human Code, AI](#programs-human-code-ai)

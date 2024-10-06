@@ -7,7 +7,7 @@ permalink: /ai-journal
 A journal of random explorations in AI. Keeping track of them so I don't get super lost
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Visualization](#visualization)
 - [Blog to bot](#blog-to-bot)

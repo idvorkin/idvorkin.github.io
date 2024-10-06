@@ -14,7 +14,7 @@ redirect_from:
 It's pretty easy to be overwhelmed by humanity sucking, but there is so much good in the world. Here are some great examples
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Commercials](#commercials)
 - [Speeches](#speeches)

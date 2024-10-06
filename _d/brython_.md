@@ -24,7 +24,7 @@ This page is built with [brython](https://brython.info/gallery/gallery_en.html),
 </script>
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Brython DOM Manipulation](#brython-dom-manipulation)
     - [Steve's jungle and Bar](#steves-jungle-and-bar)

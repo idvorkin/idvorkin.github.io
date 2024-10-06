@@ -61,7 +61,7 @@ Last morning
 ## Top Learnings
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Friends (5/5)](#friends-55)
 - [Family (Y/5)](#family-y5)

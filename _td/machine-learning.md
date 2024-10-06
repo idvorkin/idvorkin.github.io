@@ -24,7 +24,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 I highly recommend: [Machine learning is like sex in high school](https://vas3k.com/blog/machine_learning/)
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Hierarchy of Abstraction in the ML space](#hierarchy-of-abstraction-in-the-ml-space)
     - [Disambiguating the word Model](#disambiguating-the-word-model)

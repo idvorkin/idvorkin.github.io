@@ -7,7 +7,7 @@ The world is now on the cloud, here are my random notes on the topic.
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Micro services](#micro-services)
 - [Containers](#containers)

@@ -17,7 +17,7 @@ The business model canvas is a tool for understanding how a company makes money.
 {%include blob_image.html src="business-model-you-canvas.jpeg" %}
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The "you" global boxes:](#the-you-global-boxes)
     - [Key Activities - What you do](#key-activities---what-you-do)

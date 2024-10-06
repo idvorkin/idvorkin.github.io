@@ -17,7 +17,7 @@ Corona Virus (CV) may be the defining moment in our lives. In such times, lets r
 <!-- prettier-ignore-start -->
 <!-- prettier-ignore-end -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Don't feed mind monsters, focus on the positive.](#dont-feed-mind-monsters-focus-on-the-positive)
   - [Leave quarantine better then when you startd](#leave-quarantine-better-then-when-you-startd)

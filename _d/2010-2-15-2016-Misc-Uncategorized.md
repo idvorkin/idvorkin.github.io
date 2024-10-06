@@ -18,7 +18,7 @@ There are lots of rough ideas I have that are not yet categorized, or good enoug
 place to store them.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Igor as a business model](#igor-as-a-business-model)
     - [Igor's UVP](#igors-uvp)

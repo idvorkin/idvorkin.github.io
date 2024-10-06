@@ -11,7 +11,7 @@ redirect_from:
 The first 90 days is a how to manual for starting a new job. While it's focused on executive roles, it's applicable to lower levels as well. It's also the best written business book from a structural perspective. I highly recommend it.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Introduction: The First 90 Days](#introduction-the-first-90-days)
 - [1. Prepare Yourself](#1-prepare-yourself)

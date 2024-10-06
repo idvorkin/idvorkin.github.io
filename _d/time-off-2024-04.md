@@ -41,7 +41,7 @@ My top priorities:
 - Drone worked great at taking videos
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)

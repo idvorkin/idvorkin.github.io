@@ -10,7 +10,7 @@ redirect_from:
 A very cynical book about the laws of power. Probably worth a read in case you want to better understand the dark side.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [1. Never Outshine the Master](#1-never-outshine-the-master)
 - [2. Never Put Too Much Trust in Friends, Learn How to Use Enemies](#2-never-put-too-much-trust-in-friends-learn-how-to-use-enemies)

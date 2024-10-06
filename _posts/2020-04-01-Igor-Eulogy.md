@@ -20,7 +20,7 @@ Wearing a silly hat, his trusty folding bike at his feet, and using a purple fou
 _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Dealer of smiles and wonder](#dealer-of-smiles-and-wonder)
 - [Mostly car free spirit](#mostly-car-free-spirit)

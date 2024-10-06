@@ -18,7 +18,7 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [A word from our sponsor, the resistance](#a-word-from-our-sponsor-the-resistance)
 - [The immutable laws of hard things](#the-immutable-laws-of-hard-things)

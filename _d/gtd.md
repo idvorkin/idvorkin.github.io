@@ -12,7 +12,7 @@ redirect_from:
 Getting Things Done (GTD) is a model based on David Allen's book of the same name. It's a deep dive into Habit 3 - first things first, with some lite weight Habit 2 - begin with the end in mind, mixed in for good measure. By using GTD religiously you can have a drastic reduction in stress and procrastination.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Theory](#theory)
     - [Open loops and Psychic Weight](#open-loops-and-psychic-weight)

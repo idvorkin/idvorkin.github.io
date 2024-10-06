@@ -8,7 +8,7 @@ permalink: /gpt-7h
 ---
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [L - Begin with the End in Mind](#l---begin-with-the-end-in-mind)
 - [E - Embrace Change](#e---embrace-change)

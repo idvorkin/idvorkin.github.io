@@ -9,7 +9,7 @@ Zach and Amelia are roblox fans, so it's fun to be able to create things in ther
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Roblox Environment](#roblox-environment)
 - [Tool Chain](#tool-chain)

@@ -8,7 +8,7 @@ permalink: /gpt-system-design
 ---
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Chapter 1: S - System Design Fundamentals](#chapter-1-s---system-design-fundamentals)
 - [Chapter 2: H - Handling Constraints](#chapter-2-h---handling-constraints)

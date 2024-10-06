@@ -12,7 +12,7 @@ A prompt will kick start a great conversation, a great insight, and a great rela
 </div>
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Work Prompts](#work-prompts)
   - [Give extra honest feedback](#give-extra-honest-feedback)

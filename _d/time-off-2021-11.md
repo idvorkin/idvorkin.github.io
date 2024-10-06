@@ -7,7 +7,7 @@ imagefeaturelocal: raccoon-vacation.png
 I should have written up a plan before this [time off](/time-off) so I'd have been more deliberate. As it stands, I did what I wanted, got a tonne done, but missed some things that bring me a lot of energy.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Moments and success stories](#moments-and-success-stories)
 - [Success Stories](#success-stories)

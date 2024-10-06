@@ -42,7 +42,7 @@ My top priorities:
 - Discovered [Bryan Johnson](/blueprint) and his blueprint idea. I'm definitely with him in spirit, though not his exact path.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)

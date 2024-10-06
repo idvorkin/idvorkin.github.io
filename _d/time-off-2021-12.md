@@ -31,7 +31,7 @@ My top priorities: - Restart my morning habit routine, cardio and magic. - Figur
 - Thought pretty deeply about balance and activation energy.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Top Learnings](#top-learnings)
 - [Relationships](#relationships)

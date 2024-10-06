@@ -13,7 +13,7 @@ Anxiety is the difference between reality and expectations. It is the pain, whil
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Anxiety](#anxiety)
     - [Reality](#reality)

@@ -13,7 +13,7 @@ What the heck is a bubble bike? Ah, you see, bringing joy for others is my thing
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Why](#why)
 - [The Genesis of the Bubble Bike](#the-genesis-of-the-bubble-bike)

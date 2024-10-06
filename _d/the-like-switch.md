@@ -9,7 +9,7 @@ The like switch, written by an ex-FBI agent, goes into detail on how to make fri
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [The friendship formula: Proximity, Frequency, Duration, Intensity](#the-friendship-formula-proximity-frequency-duration-intensity)
 - [Friend Signals](#friend-signals)

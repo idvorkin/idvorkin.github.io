@@ -11,7 +11,7 @@ redirect_from:
 Failure is not an option; it's a necessity. Here are some thoughts on failures.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [General](#general)
     - [COEs](#coes)

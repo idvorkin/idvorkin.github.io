@@ -9,7 +9,7 @@ redirect_from:
 I'm good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from [mortality software](/mortality-software). Todo, decide if this post should fork into energy and balance
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [On Balance](#on-balance)
     - [Balance vs Productivity](#balance-vs-productivity)

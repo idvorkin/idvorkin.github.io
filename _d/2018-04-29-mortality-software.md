@@ -13,7 +13,7 @@ redirect-from:
 Mortality is a word most people try to avoid. But, earlier or later, it's something we all face. Our life is finite and our time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Why](#why)
     - [Why mortality software?](#why-mortality-software)

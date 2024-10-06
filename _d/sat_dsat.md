@@ -40,7 +40,7 @@ Embrace the greatest parts of your work , mull over them, whether its the bike r
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [General](#general)
     - [What's keeping you awake?](#whats-keeping-you-awake)

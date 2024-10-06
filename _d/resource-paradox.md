@@ -13,7 +13,7 @@ redirect_from:
 Work expands to fill the resources available. The more you make, the more you spend. Stuff expands to fill the space available for storage. If you want something done, give it to a busy person, etc.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Why](#why)
     - [Relation to Procrastination](#relation-to-procrastination)

@@ -11,7 +11,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 I spent a **LOT** of time on my iPhone/iPad - here are some of the tools/tips I use.
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [General](#general)
     - [Global Controls (For iPhone X)](#global-controls-for-iphone-x)

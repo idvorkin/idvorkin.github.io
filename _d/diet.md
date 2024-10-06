@@ -15,7 +15,7 @@ Diet dominates weight, as weight is simple arithemtic -"calories in" minus "calo
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [My journey](#my-journey)
     - [Mating weight](#mating-weight)

@@ -14,7 +14,7 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
 <!-- prettier-ignore-start -->
 
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Current Addictions](#current-addictions)
     - [Crisis Porn - Covid 19](#crisis-porn---covid-19)

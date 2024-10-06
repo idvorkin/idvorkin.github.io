@@ -14,7 +14,7 @@ Goal are critcal, there are multiple goal systems and they have consequences. Th
 
 <!-- prettier-ignore-start -->
 
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Why goals](#why-goals)
     - [Goals vs Systems](#goals-vs-systems)

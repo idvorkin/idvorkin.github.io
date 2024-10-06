@@ -9,7 +9,7 @@ redirect_from:
 The original AI papers were all about training, super technical, and not that usable as a practitioner. Nowadays papers are less "mathy" and more applicable to practitioners. Here are some worth reading
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [LLM Agents](#llm-agents)
 - [Security](#security)

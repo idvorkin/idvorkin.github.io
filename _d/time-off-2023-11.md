@@ -48,7 +48,7 @@ Things to do:
 ## Top Learnings
 
 <!-- prettier-ignore-start -->
-<!-- vim-markdown-toc GFM -->
+<!-- vim-markdown-toc-start -->
 
 - [Relationships (3/5)](#relationships-35)
     - [Friends](#friends)
