@@ -14,14 +14,15 @@ Failure is not an option; it's a necessity. Here are some thoughts on failures.
 <!-- vim-markdown-toc-start -->
 
 - [General](#general)
-    - [COEs](#coes)
-    - [Good sayings](#good-sayings)
+  - [COEs](#coes)
+  - [Good sayings](#good-sayings)
 - [Smart people talking about fear of failure](#smart-people-talking-about-fear-of-failure)
-    - [James Webb Telescope guy](#james-webb-telescope-guy)
-    - [Elon on launching man to space](#elon-on-launching-man-to-space)
-    - [Elon on engineering responsibility](#elon-on-engineering-responsibility)
-    - [My \$500M Mars rover mistake](#my-500m-mars-rover-mistake)
-    - [Seth Godin on Fear](#seth-godin-on-fear)
+  - [James Webb Telescope guy](#james-webb-telescope-guy)
+  - [Elon on launching man to space](#elon-on-launching-man-to-space)
+  - [Elon on engineering responsibility](#elon-on-engineering-responsibility)
+  - [My \$500M Mars rover mistake](#my-500m-mars-rover-mistake)
+  - [DHH on being happy making mistakes - and how you should be sad if you don't.](#dhh-on-being-happy-making-mistakes---and-how-you-should-be-sad-if-you-dont)
+  - [Seth Godin on Fear](#seth-godin-on-fear)
 - [Out of our control, vs in our control failures](#out-of-our-control-vs-in-our-control-failures)
 - [FAQ](#faq)
 - [Related Reading](#related-reading)
@@ -63,6 +64,12 @@ Failures are a great opportunity to learn. Use [COEs](/coe)
 Great story on the empathy that failure can bring.
 
 [My \$500M Mars rover mistake](https://www.chrislewicki.com/articles/failurestory)
+
+### DHH on being happy making mistakes - and how you should be sad if you don't.
+
+[Twitter Link](https://x.com/dhh/status/1842262092365324293?s=12)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">You can&#39;t look at every bet in business that doesn&#39;t pan out with regret. Invariably many of them won&#39;t. Some for reasons outside of your control, some for reasons inside. Learn to love being at the table, getting better at the game. Not just winning. <a href="https://t.co/c857X6wgjb">pic.twitter.com/c857X6wgjb</a></p>&mdash; DHH (@dhh) <a href="https://twitter.com/dhh/status/1842262092365324293?ref_src=twsrc%5Etfw">October 4, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Seth Godin on Fear
 
