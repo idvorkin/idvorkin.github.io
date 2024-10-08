@@ -1,14 +1,17 @@
 ---
+
 layout: post
 title: "How to EM: Be the manager everyone wants"
 imagefeature: https://github.com/idvorkin/blob/raw/master/idvorkin-manager-book-1200-628.png
 tags:
-  - manager
-  - search-featured
-  - manager-book
-permalink: /manager-book
-redirect_from:
-  - /the-manager-book
+
+- manager
+- search-featured
+- manager-book
+  permalink: /manager-book
+  redirect_from:
+- /the-manager-book
+
 ---
 
 Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.
@@ -16,21 +19,6 @@ Being an engineering manager is hard. Supporting people well is harder. Lessons 
 This post uses the word manager, but many topics apply to all job functions, regardless of seniority or number of direct reports, zero direct reports included.
 
 <!-- prettier-ignore-start -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- vim-markdown-toc-start -->
 
 - [What does a manager do](#what-does-a-manager-do)
@@ -53,6 +41,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [What do you recommend for folks who just joined the team](#what-do-you-recommend-for-folks-who-just-joined-the-team)
   - [How do you think about situational leadership](#how-do-you-think-about-situational-leadership)
   - [What are the level specific career expectations and growth strategies](#what-are-the-level-specific-career-expectations-and-growth-strategies)
+  - [How do you get engineers promoted, and to understand their path to promo?](#how-do-you-get-engineers-promoted-and-to-understand-their-path-to-promo)
   - [How do you help people switch jobs](#how-do-you-help-people-switch-jobs)
   - [How do you keep people motivated](#how-do-you-keep-people-motivated)
   - [How to motivate through personal experience](#how-to-motivate-through-personal-experience)
@@ -61,7 +50,6 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [What's the point of 1:1s](#whats-the-point-of-11s)
   - [What do you do in 1:1s](#what-do-you-do-in-11s)
   - [How do you handle communication problems](#how-do-you-handle-communication-problems)
-  - [How do you handle promotion preparation (and fever)](#how-do-you-handle-promotion-preparation-and-fever)
   - [How do you identify and grow potential managers](#how-do-you-identify-and-grow-potential-managers)
   - [How do you grow new EMs](#how-do-you-grow-new-ems)
   - [How do you grow top talent](#how-do-you-grow-top-talent)
@@ -481,6 +469,51 @@ My approach, and frequent peep questions.
 - How are you maximizing our benefit?
 - How do we make sure we compliment each other?
 
+### How do you get engineers promoted, and to understand their path to promo?
+
+Most engineers care deeply about being promoted, and I care deeply about engineer growth, so our motivations are aligned.
+
+Before going into the process, remember that surprises are **BAD** - especially with promotions. Surprises usually mean I haven't set clear expectations, requiring me to do a mini-RCA.
+
+For promotions, my goals are:
+
+- Engineer aspires to promotion and feels on track
+- Engineer gets new opportunities/support needed
+- Shared understanding of promo gaps and plan
+- Engineer feels they reached conclusions themselves
+- Engineer doesn't want to be over-leveled
+
+How I approach this:
+
+1. Assume engineer's self-assessment is right - review criteria together:
+
+- Skim level expectations, deep dive in next 1:1
+- Ask for self-evaluation
+- Align on assessment, noting any differences
+- Review examples together
+- Ask "How would you compare your behavior to others?"
+- Ask "What gaps do you see?"
+
+2. Create shared plan to close gaps:
+
+- Identify stretch projects/opportunites
+- Find mentors to help in key areas
+- Review Quarterly
+
+3. As we get closer, pre-write the promotion document:
+
+- Write the document we'll present at the promotion
+- Include projects/behaviors that are completed/demonstrated already, and also those that need to be done to be eligible for promo
+- Review the promotion document with other managers to align that it's sufficient.
+
+Promotion fever sometimes occurs when engineers fixate on promotions. Common cases:
+
+- Not ready
+- New hire who feels under-leveled
+- Ready but missed promotion due to circumstances
+
+In each of these cases, we go through the promotion preparation process above.
+
 ### How do you help people switch jobs
 
 My goal is to find people the right job, not the job on my team. I coach a lot of people through this, and here are my most popular posts:
@@ -650,37 +683,6 @@ There are different types of communication problems each needing a different str
   - Use pictures
   - Say not great on my feet, follow up with a document
 - Uncomfortable in group settings
-
-### How do you handle promotion preparation (and fever)
-
-- Surprises are **BAD**:
-
-  - Haven't set clear expectations.
-  - Requires mini RCA
-
-- Goal:
-
-  - Engineer and Manager shared understanding of promo gaps and plan.
-  - Engineer feels they came to conclusion himself
-  - Engineer aspires to get to that level, and feels on track
-  - Engineer gets new opportunities/support required.
-  - Engineer doesn't want to be over leveled
-
-- How: Start w assume engineer right - lets look at the criteria together.
-
-  - Skim now and deep dive in next 1:1
-  - Ask for self evaluation
-  - Review and get on same page, sometimes manager thinks below and above what engineer does.
-  - Go over with examples together
-  - Ask "How would you describe your behavior vs someone else's"
-  - Ask "What gaps do you see"
-
-- How: Create a shared plan create plan to close the gaps
-  - Projects that stretch in those areas
-  - Mentors that can help close the gap on those areas
-  - Training/etc
-
-Promotion fever is my word for engineers that are completely focused on promotions above all else. In general they fall into a few categories: 1) Not Ready, 2) Just hired, and believe under levelled 3) Ready, but didn't get promo due to bad luck. Regardless, we go through the promotion preparation process.
 
 ### How do you identify and grow potential managers
 
