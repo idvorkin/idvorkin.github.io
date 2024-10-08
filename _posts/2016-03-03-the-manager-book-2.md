@@ -47,7 +47,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [What's the point of 1:1s](#whats-the-point-of-11s)
   - [What do you do in 1:1s](#what-do-you-do-in-11s)
   - [How do you handle communication problems](#how-do-you-handle-communication-problems)
-  - [How do you identify and grow potential managers](#how-do-you-identify-and-grow-potential-managers)
+  - [How do you identify and help eng decide if management is right for them](#how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them)
   - [How do you grow new EMs](#how-do-you-grow-new-ems)
   - [How do you grow top talent](#how-do-you-grow-top-talent)
   - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
@@ -493,7 +493,7 @@ How I approach this:
 
 2. Create shared plan to close gaps:
 
-- Identify stretch projects/opportunites
+- Identify stretch projects/opportunities
 - Find mentors to help in key areas
 - Review Quarterly
 
@@ -681,7 +681,7 @@ There are different types of communication problems each needing a different str
   - Say not great on my feet, follow up with a document
 - Uncomfortable in group settings
 
-### How do you identify and grow potential managers
+### How do you identify and help eng decide if management is right for them
 
 Engineers that are interested in reading this post make good manager candidates. The path usually start with getting an intern, then being a tech lead with heavy mentoring. Then having them take over as many as people issues as people are comfortable with them tracking.
 
