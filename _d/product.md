@@ -1,14 +1,12 @@
-[---](---.md)
+---
 layout: post
 title: Building products
+permalink: /product
 tags:
-
-- emotional intelligence
-  permalink: /product
-  redirect_from:
-- /product-manager
-- /pm
-
+  - emotional intelligence
+redirect_from:
+  - /product-manager
+  - /pm
 ---
 
 From creating a vision that inspires to laying out the strategies to get there, product work requires a range of skills—and a good dose of creativity. Putting the puzzle pieces together is essential to creating a product that appeals to its customers. With the right combination of vision, strategy, product design and execution, anyone can create something truly remarkable. With this in mind, let's start building the future we want to create!
