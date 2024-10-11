@@ -15,9 +15,9 @@ From creating a vision that inspires to laying out the strategies to get there, 
 
 ### Product Vision - The future you want to create
 
-Vision should be inspiring! Strategy should should be focused.
+Vision should be inspiring! Strategy should be focused.
 
-Top recruiting tools, motivates folks to come to work daily. Everyone wants to work on something meaningful. Don't know if, or how, you'll deliver the vision, but you should believe it's worth doing!
+Top recruiting tools, motivate folks to come to work daily. Everyone wants to work on something meaningful. Don't know if, or how, you'll deliver the vision, but you should believe it's worth doing!
 
 - Start with why
 - Focus on the problem, not the solution
@@ -28,24 +28,24 @@ Top recruiting tools, motivates folks to come to work daily. Everyone wants to w
 - Skate to where the puck is heading
 - Stubborn on vision, flexible on details
 - Realize it always is a leap of faith
-- Evangalize continously
+- Evangelize continuously
 
 ### Sharing your thinking/approach
 
 - Connect work to goals
 - Don't hide constraints (no designer/no eng/xyz)
 - Show decisions by laying out your insights and reasoning
-- Partner with designer other stakeholders
+- Partner with designer and other stakeholders
 
 ### Product Strategy - Path to get to the future
 
-Vision should be inspiring! Strategy should should be focused.
+Vision should be inspiring! Strategy should be focused.
 
 Pleasing everyone pleases no one. So this is where we decide what we're going to do next. It's the sequence of products or releases to get to our vision.
 
 - One target market or persona at a time
 - Needs to align with business strategy
-- Align with sales and go-to market strategy
+- Align with sales and go-to-market strategy
 - Obsess on customers not competitors
 - Make sure all partners know your strategy
 
@@ -67,7 +67,7 @@ The key of product discovery framing is:
    - Feasibility Risk - Can we build it?
    - Business Risk - Does this work for our business?
 
-NOTE: The goal is to focus on the customers problem that is constant, the solution varies with the iterations
+NOTE: The goal is to focus on the customer's problem that is constant; the solution varies with the iterations
 
 Some things as you try to eliminate these risks
 
@@ -85,7 +85,7 @@ Some things as you try to eliminate these risks
 
 Product design is critical. Common Failure modes:
 
-- PM tries to draw prodcuts themselves. Eng needs product design, you draw wireframes, eng builds, and makes up the design themselves
+- PM tries to draw products themselves. Eng needs product design, you draw wireframes, eng builds, and makes up the design themselves
 - PM doesn't provide designs, just stories, again eng makes up product design themselves
 - You create interactive design, then hire a contractor to draw themselves
 
@@ -94,24 +94,24 @@ Optimal, having a designer:
 - Do what is required to have them sit with you
 - Include design from start of all ideas
 - Include design in as many customer and user interactions as possible
-- Don't give the desiner your ideas, let them sole the problems themselves.
+- Don't give the designer your ideas, let them solve the problems themselves.
 - Let designer iterate as much as possible.
 
 ### How to prioritize your market
 
 - Market Size - TAM
-- The go to market plan for the segment (sales channel, advertising method, CAC)
+- The go-to-market plan for the segment (sales channel, advertising method, CAC)
 - How long to build - Time to market
 
-### Evangilism - How to sell the dream
+### Evangelism - How to sell the dream
 
 - Use a prototype
 - Show customer pain
-- Repeate the product vision and the strategy
+- Repeat the product vision and the strategy
 - Give lots of credit to all
 - Give a great demo
 - Be an expert on the domain (competitors, customers)
-- Be excited - Enthusiasm is contaigous
+- Be excited - Enthusiasm is contagious
 - Spend time with the team - Every single person, makes a very big deal.
 
 ## Roadmapping and User Story Mapping
@@ -122,12 +122,12 @@ Optimal, having a designer:
 
 ### Engagement vs Growth
 
-- Growth is getting new users - New entrypoints, advertising, etc - DAU/WAU/MAU
+- Growth is getting new users - New entry points, advertising, etc - DAU/WAU/MAU
 - Engagement - Getting existing users to have more value - Usage Time
 
 ### DAU is retention and new users
 
-- Recall DAU needs new users returning users. New users vs retention likely matters in a
+- Recall DAU needs new users and returning users. New users vs retention likely matters in a
 
 ## Flywheels
 
@@ -146,19 +146,19 @@ A Content Consumption Flywheel is a type of content marketing strategy in which 
 ### Notes from the goal
 
 The goal is a book that was mandatory reading for amazon executives...
-_Might be worth it's own page_
+_Might be worth its own page_
 
 3 Areas:
 
-1. Making Money - What ever your output goal is. Though usuall you move an input goal.
+1. Making Money - Whatever your output goal is. Though usually, you move an input goal.
 2. Inventory - Stuff that's required to meet your goal, but isn't sufficient.
 3. Operating Expense - Any costs.
 
-Note, inventory is output. Not inherintly useful. Outcomes is goal!
+Note, inventory is output. Not inherently useful. Outcomes is goal!
 
-### Differneces from an EM
+### Differences from an EM
 
-### How to inteview for customer need - the Mom Test
+### How to interview for customer need - the Mom Test
 
 1. Talk about their life instead of your idea.
 2. Ask about specifics in the past instead of generics or opinions about the future.
@@ -178,7 +178,7 @@ Note, inventory is output. Not inherintly useful. Outcomes is goal!
 
 10. **Avoid Bad Data**: Be wary of the bad data that comes from questions about hypothetical situations, flattery, and future intentions.
 
-Examples of turning accusatry "why questions" into less threatening data gathering questions:
+Examples of turning accusatory "why questions" into less threatening data gathering questions:
 
 - **Bad**: "Why didn't you like our product?"
 
