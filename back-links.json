@@ -15,6 +15,7 @@
         "/7h-c7": "/sharpen-the-saw",
         "/7habits": "/7-habits",
         "/90": "/90days",
+        "/90-days": "/90days",
         "/activation-energy": "/activation",
         "/addictions": "/addiction",
         "/affirm": "/affirmations",
@@ -141,11 +142,13 @@
         "/perfect-job": "/job",
         "/personal-development": "/timeoff",
         "/phoney": "/insecure",
+        "/pm": "/product",
         "/poh": "/happy",
         "/proactive": "/be-proactive",
         "/process": "/upstream",
         "/procrastinate": "/frog",
         "/procrastination": "/frog",
+        "/product-manager": "/product",
         "/productivity": "/productive",
         "/psych-safety": "/insecure",
         "/psychological-safety": "/insecure",
@@ -168,8 +171,6 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -320,7 +321,7 @@
         "/90days": {
             "url": "/90days",
             "title": "The first 90 days",
-            "description": "A how to guide for starting your next job.\n\n",
+            "description": "The first 90 days is a how to manual for starting a new job. While it’s focused on executive roles, it’s applicable to lower levels as well. It’s also the best written business book from a structural perspective. I highly recommend it.\n\n",
             "file_path": "_site/90days.html",
             "outgoing_links": [
                 "/amazon",
@@ -336,7 +337,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/90days.md",
-            "doc_size": 43000
+            "doc_size": 45000
         },
         "/about": {
             "url": "/about",
@@ -451,7 +452,9 @@
                 "/ml",
                 "/recommend"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/ai-developer"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/ai.md",
             "doc_size": 14000
@@ -467,7 +470,6 @@
             ],
             "incoming_links": [
                 "/ai",
-                "/ai-developer",
                 "/ai-journal"
             ],
             "redirect_url": "",
@@ -482,7 +484,6 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/ai",
-                "/ai-developer",
                 "/y24"
             ],
             "redirect_url": "",
@@ -502,7 +503,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 16000
+            "doc_size": 18000
         },
         "/ai-developer": {
             "url": "/ai-developer",
@@ -510,19 +511,14 @@
             "description": "ML Engineer is a hot new job. It’s the boys and girls who train and deploy models. I heard the word AI developer the other day, and I’ll refer to it as AI application engineers. People who use AI to solve use cases. NOTE: This is not what most developers do today. What most developers do today is ask how can AI do the things I would have done (e.g. write the function).\n\n",
             "file_path": "_site/ai-developer.html",
             "outgoing_links": [
-                "/ai-art",
-                "/ai-bestie",
-                "/ai-journal",
-                "/ai-testing",
-                "/genai-talk",
-                "/ml"
+                "/ai"
             ],
             "incoming_links": [
                 "/ai"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-developer.md",
-            "doc_size": 23000
+            "doc_size": 24000
         },
         "/ai-image": {
             "url": "/ai-image",
@@ -551,8 +547,7 @@
                 "/idvorkin/idvorkin-flux-lora-1"
             ],
             "incoming_links": [
-                "/ai",
-                "/ai-developer"
+                "/ai"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-journal.md",
@@ -593,7 +588,6 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/ai",
-                "/ai-developer",
                 "/d/time-off-2024-04",
                 "/genai-talk",
                 "/ml",
@@ -1429,7 +1423,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2020-12.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/d/time-off-2021-11": {
             "url": "/d/time-off-2021-11",
@@ -2064,7 +2058,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/fail2.md",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/first-things-first": {
             "url": "/first-things-first",
@@ -2156,7 +2150,6 @@
                 "/ai-testing"
             ],
             "incoming_links": [
-                "/ai-developer",
                 "/ai-journal"
             ],
             "redirect_url": "",
@@ -2759,7 +2752,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 140000
+            "doc_size": 142000
         },
         "/manager-book-appendix": {
             "url": "/manager-book-appendix",
@@ -2920,7 +2913,6 @@
             ],
             "incoming_links": [
                 "/ai",
-                "/ai-developer",
                 "/manager-book",
                 "/td/stats"
             ],
@@ -3236,6 +3228,19 @@
             "redirect_url": "",
             "markdown_path": "_posts/2018-01-01-fuck-pride.md",
             "doc_size": 18000
+        },
+        "/product": {
+            "url": "/product",
+            "title": "Building products",
+            "description": "From creating a vision that inspires to laying out the strategies to get there, product work requires a range of skills—and a good dose of creativity. Putting the puzzle pieces together is essential to creating a product that appeals to its customers. With the right combination of vision, strategy, product design and execution, anyone can create something truly remarkable. With this in mind, let’s start building the future we want to create!\n\n",
+            "file_path": "_site/product.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/manager-book"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/product.md",
+            "doc_size": 24000
         },
         "/productive": {
             "url": "/productive",
@@ -3822,7 +3827,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 80000
+            "doc_size": 83000
         },
         "/td/advertising": {
             "url": "/td/advertising",
@@ -4493,7 +4498,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c4.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/write-book": {
             "url": "/write-book",
