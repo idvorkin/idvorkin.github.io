@@ -128,7 +128,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [Why do you think you're a good coach](#why-do-you-think-youre-a-good-coach)
   - [Why do you prefer being a manager to an IC](#why-do-you-prefer-being-a-manager-to-an-ic)
 - [Questions managers get](#questions-managers-get)
-  - [What do you do all day](#what-do-you-do-all-day)
+  - [What does a manager do in a day](#what-does-a-manager-do-in-a-day)
   - [What's the best/worst part of your job](#whats-the-bestworst-part-of-your-job)
   - [How do you get anything done with all of those meetings](#how-do-you-get-anything-done-with-all-of-those-meetings)
   - [What do you think developers do](#what-do-you-think-developers-do)
@@ -460,6 +460,7 @@ My approach, and frequent peep questions.
 
 <div> </div>
 - l12
+- [Fantastic Video on Being a Staff Eng](https://youtube.com/watch?v=l-oCDQGH3EU&si=SDZXgQJgmUzV1aJQ)
 - Great post on being a [staff + level engineer](https://lethain.com//staff-plus-eng-resources/)
 - Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
 - What are you driving for our larger organization?
@@ -482,7 +483,7 @@ For promotions, my goals are:
 
 How I approach this:
 
-1. Assume engineer's self-assessment is right - review criteria together:
+Assume engineer's self-assessment is right - review criteria together:
 
 - Skim level expectations, deep dive in next 1:1
 - Ask for self-evaluation
@@ -491,13 +492,13 @@ How I approach this:
 - Ask "How would you compare your behavior to others?"
 - Ask "What gaps do you see?"
 
-2. Create shared plan to close gaps:
+Create shared plan to close gaps:
 
 - Identify stretch projects/opportunities
 - Find mentors to help in key areas
 - Review Quarterly
 
-3. As we get closer, pre-write the promotion document:
+As we get closer, pre-write the promotion document:
 
 - Write the document we'll present at the promotion
 - Include projects/behaviors that are completed/demonstrated already, and also those that need to be done to be eligible for promo
@@ -713,8 +714,8 @@ I've done this a fair number of times now, here are some topics that are usually
 - Low performers: How to deal with them.
 - Setup a new hire mentoring ring
 
-* Mentoring Rings
-* Good HBR articles [1](https://hbr.org/2002/04/saving-your-rookie-managers-from-themselves),
+- Mentoring Rings
+- Good HBR articles [1](https://hbr.org/2002/04/saving-your-rookie-managers-from-themselves),
 
 ### How do you grow top talent
 
@@ -1847,9 +1848,9 @@ An excellent articulation of the trade off is [here](https://jamie.ideasasylum.c
 
 ## Questions managers get
 
-### What do you do all day
+### What does a manager do in a day
 
-See [the manager's schedule](#l-what-manager's-schedule) section.
+See [the manager's schedule](#l-what-managers-schedule) section.
 
 ### What's the best/worst part of your job
 
