@@ -124,7 +124,9 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 #### Instead of watching a huberman, process with LLM
 
-- Pull down the transcript with yt-dlp
+- Finally the [output of exercises](https://gist.github.com/idvorkin/2e3111a07531fefb11e789144e1c372f)
+
+* Pull down the transcript with yt-dlp
 
 ```bash
 yt-dlp --write-auto-sub   --skip-download https://www.youtube.com/watch\?v\=kgr22uMsJ5o
@@ -149,6 +151,12 @@ cat ~/tmp/t/show.vtt | ./captions.py to-human | tee show.md
 ❯ cat show.md | gpt tokens
 25313
 ```
+
+- Interesting, tryign to get the chatgpt website to read the file fails, even though it fits into the context window.
+  - ChatGPT:
+  - I could work around this by working with the API, but for chat I prefer using UX, and its cheaper with these big files
+- Back to [google vertex](https://console.cloud.google.com/vertex-ai/studio/), which is working well at this file size
+- Finally the [output of exercises](https://gist.github.com/idvorkin/2e3111a07531fefb11e789144e1c372f)
 
 ### 2024-08-26
 
