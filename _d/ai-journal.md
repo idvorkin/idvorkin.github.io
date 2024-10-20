@@ -11,34 +11,35 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 
 - [Visualization](#visualization)
 - [Blog to bot](#blog-to-bot)
-    - [RAG Challenges](#rag-challenges)
+  - [RAG Challenges](#rag-challenges)
 - [Text to speech our friends](#text-to-speech-our-friends)
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
-    - [2024-08-26](#2024-08-26)
-    - [Playing with Flux.1](#playing-with-flux1)
-    - [2024-08-13](#2024-08-13)
-        - [Aider take #12](#aider-take-12)
-        - [Awesome talks](#awesome-talks)
-        - [Working through making Neural Nets](#working-through-making-neural-nets)
-    - [2024-07-31](#2024-07-31)
-        - [Auto code editting (via Aider) - TOO Soon](#auto-code-editting-via-aider---too-soon)
-    - [2024-07-30](#2024-07-30)
-        - [Agenic Frameworks](#agenic-frameworks)
-    - [2024-06-22](#2024-06-22)
-        - [Next Gen Models](#next-gen-models)
-        - [Lots of progression on Evals](#lots-of-progression-on-evals)
-    - [2024-04-06](#2024-04-06)
-    - [2024-03-24](#2024-03-24)
-    - [2024-02-03](#2024-02-03)
-    - [2024-01-27](#2024-01-27)
-    - [2023-11-26](#2023-11-26)
-    - [2023-08-17](#2023-08-17)
-    - [2023-07-16](#2023-07-16)
-    - [2023-07-15](#2023-07-15)
-    - [2023-07-04](#2023-07-04)
-    - [Related posts](#related-posts)
+  - [2024-10-20](#2024-10-20)
+  - [2024-08-26](#2024-08-26)
+  - [Playing with Flux.1](#playing-with-flux1)
+  - [2024-08-13](#2024-08-13)
+    - [Aider take #12](#aider-take-12)
+    - [Awesome talks](#awesome-talks)
+    - [Working through making Neural Nets](#working-through-making-neural-nets)
+  - [2024-07-31](#2024-07-31)
+    - [Auto code editting (via Aider) - TOO Soon](#auto-code-editting-via-aider---too-soon)
+  - [2024-07-30](#2024-07-30)
+    - [Agenic Frameworks](#agenic-frameworks)
+  - [2024-06-22](#2024-06-22)
+    - [Next Gen Models](#next-gen-models)
+    - [Lots of progression on Evals](#lots-of-progression-on-evals)
+  - [2024-04-06](#2024-04-06)
+  - [2024-03-24](#2024-03-24)
+  - [2024-02-03](#2024-02-03)
+  - [2024-01-27](#2024-01-27)
+  - [2023-11-26](#2023-11-26)
+  - [2023-08-17](#2023-08-17)
+  - [2023-07-16](#2023-07-16)
+  - [2023-07-15](#2023-07-15)
+  - [2023-07-04](#2023-07-04)
+  - [Related posts](#related-posts)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -117,6 +118,16 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2024-10-20
+
+- Lets summarize a huberman:
+  - Pull down the transcript with yt-dlp
+  - But it's too big, ~ 1M tokens thanks to the VTT format.
+  - Good enough to stick into google gemini - GROAN, of course that doesn't work since output limit.
+  - Sigh, lets upgrade our captions processing - luckily, I've played with this before:
+    - [Captions](https://github.com/idvorkin/nlp/blob/c050626b4f88ffb09622938d1bb5c55c2e05618a/captions.py?plain=1#L21)
+    - What's great is I basically wrote this code using Aider.
 
 ### 2024-08-26
 
