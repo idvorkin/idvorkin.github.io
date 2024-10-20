@@ -12,23 +12,26 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 - [AI Developer, vs a Software Engineer using AI](#ai-developer-vs-a-software-engineer-using-ai)
 - [Programs, Human Code, AI](#programs-human-code-ai)
 - [Design Patterns](#design-patterns)
-    - [Levels of Cognitive Architecture](#levels-of-cognitive-architecture)
-    - [Maximize the workflow and computation in your programs](#maximize-the-workflow-and-computation-in-your-programs)
-    - [Provide context to your model for Ground your model](#provide-context-to-your-model-for-ground-your-model)
-    - [Use multiple AIs to maximize the value](#use-multiple-ais-to-maximize-the-value)
-    - [Human in the loop](#human-in-the-loop)
-    - [World model vs context model](#world-model-vs-context-model)
-    - [AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)](#ai-maximalist-chatgpt-vs-ai-enabled-features-apple-intelligence)
+  - [Levels of Cognitive Architecture](#levels-of-cognitive-architecture)
+  - [Maximize the workflow and computation in your programs](#maximize-the-workflow-and-computation-in-your-programs)
+  - [Provide context to your model for Ground your model](#provide-context-to-your-model-for-ground-your-model)
+  - [Use multiple AIs to maximize the value](#use-multiple-ais-to-maximize-the-value)
+  - [Human in the loop](#human-in-the-loop)
+  - [World model vs context model](#world-model-vs-context-model)
+  - [AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)](#ai-maximalist-chatgpt-vs-ai-enabled-features-apple-intelligence)
 - [Use Cases and Applications](#use-cases-and-applications)
+- [Mapping the AI Landscape](#mapping-the-ai-landscape)
+  - [Capabilities: Large Context/Structured Output/Real Time](#capabilities-large-contextstructured-outputreal-time)
+  - [AI Engagement Model: Tools/Co-Pilots/Chat/Agents](#ai-engagement-model-toolsco-pilotschatagents)
 - [Tech Deep Dive - Models](#tech-deep-dive---models)
-    - [Model and Service Dashboards](#model-and-service-dashboards)
-    - [Quality vs Speed vs Prices](#quality-vs-speed-vs-prices)
-    - [Llama 3](#llama-3)
-    - [Tools + Libraries](#tools--libraries)
-    - [Ell](#ell)
-    - [Commercial vs Open Source Models](#commercial-vs-open-source-models)
+  - [Model and Service Dashboards](#model-and-service-dashboards)
+  - [Quality vs Speed vs Prices](#quality-vs-speed-vs-prices)
+  - [Llama 3](#llama-3)
+  - [Tools + Libraries](#tools--libraries)
+  - [Ell](#ell)
+  - [Commercial vs Open Source Models](#commercial-vs-open-source-models)
 - [Data Access](#data-access)
-    - [Use LLMs for reasoning not for data retrieval](#use-llms-for-reasoning-not-for-data-retrieval)
+  - [Use LLMs for reasoning not for data retrieval](#use-llms-for-reasoning-not-for-data-retrieval)
 - [External Posts](#external-posts)
 - [Several posts on this topic](#several-posts-on-this-topic)
 
@@ -143,6 +146,55 @@ Apple is, I think, signaling a view that generative AI, and ChatGPT itself, is a
 - [Writing git commit messages](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/commit.py?plain=1#L19)
 - [Spellchecking a file at a time](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/gpt3.py#L748)
 - [Summarize changes in a repo over a period of time](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/commit.py#L19). E.g. [What I wrote some random week](https://gist.github.com/idvorkin/a701075a10d98dc41768765bc5b567ca)
+
+## Mapping the AI Landscape
+
+If you want to understand apps, and how they should evolve, it's helpful to have a strategic map of the space. This [article](https://interconnected.org/home/2024/07/19/ai-landscape):
+
+### Capabilities: Large Context/Structured Output/Real Time
+
+[![AI Product Map 1st Gen](https://interconnected.org/more/2024/07/19/ai-product-map-1st-gen-matt-webb.png)](https://interconnected.org/more/2024/07/19/ai-product-map-1st-gen-matt-webb.png)
+
+### AI Engagement Model: Tools/Co-Pilots/Chat/Agents
+
+- Tools: Users control AI to generate something.
+
+  - Use case: Image generation, Text-to-speech conversion, 3D model creation
+  - Example product: DALL-E, Midjourney, Stable Diffusion
+  - Value prop: On-demand creative assets, Rapid prototyping, Customized content generation
+  - Challenge: Ensuring output quality and relevance, Managing copyright concerns, Avoiding biased or inappropriate results
+
+- Copilots: The AI works alongside the user in an app in multiple ways.
+
+  - Use case: Code assistance, Writing enhancement, Design suggestions
+  - Example product: GitHub Copilot, Grammarly, Adobe Sensei
+  - Value prop: Increased developer productivity, Improved writing quality, Faster design iterations
+  - Challenge: Integrating seamlessly into existing workflows, Maintaining user agency, Ensuring accuracy of suggestions
+
+- Agents: The AI has some autonomy over how it approaches a task.
+
+  - Use case: Task automation, Personal assistance, Data analysis
+  - Example product: AutoGPT, GPT-Agent, AI-powered virtual assistants
+  - Value prop: Handling complex, multi-step processes, Autonomous problem-solving, Continuous learning and adaptation
+  - Challenge: Maintaining user trust and control, Ensuring ethical decision-making, Managing unexpected outcomes
+
+- Chat: The user talks to the AI as a peer in real-time.
+  - Use case: Customer support, Language learning, Mental health support
+  - Example product: ChatGPT, Duolingo AI, Woebot
+  - Value prop: 24/7 instant responses, Personalized interactions, Scalable conversation capabilities
+  - Challenge: Handling complex queries and maintaining context, Ensuring empathy and emotional intelligence, Protecting user privacy
+
+With generative tools, it's about reliability and connecting to existing workflows. Live tools are about having the right high-level "brushes," being able to explore latent space, and finding the balance between steering and helpful hallucination.
+
+With copilots, it's about integrating the AI into apps that already work, acknowledging the different phases of work. Also helping the user make use of all the functionality… which might mean clear names for things in menus, or it might mean ways for the AI to be proactive.
+
+Agents are about interacting with long-running processes: directing them, having visibility over them, correcting them, and trusting them.
+
+Chat has an affordances problem. As Simon Willison says, tools like ChatGPT reward power users.
+
+[![AI Product Map Groups](https://interconnected.org/more/2024/07/19/ai-product-map-groups-matt-webb.png)](https://interconnected.org/more/2024/07/19/ai-product-map-groups-matt-webb.png)
+
+[![AI Product Map Archetypes](https://interconnected.org/more/2024/07/19/ai-product-map-archetypes-matt-webb.png)](https://interconnected.org/more/2024/07/19/ai-product-map-archetypes-matt-webb.png)
 
 ## Tech Deep Dive - Models
 
