@@ -17,6 +17,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
   - [2024-10-20](#2024-10-20)
+    - [Instead of watching a huberman, process with LLM](#instead-of-watching-a-huberman-process-with-llm)
   - [2024-08-26](#2024-08-26)
   - [Playing with Flux.1](#playing-with-flux1)
   - [2024-08-13](#2024-08-13)
@@ -121,13 +122,33 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ### 2024-10-20
 
-- Lets summarize a huberman:
-  - Pull down the transcript with yt-dlp
-  - But it's too big, ~ 1M tokens thanks to the VTT format.
-  - Good enough to stick into google gemini - GROAN, of course that doesn't work since output limit.
-  - Sigh, lets upgrade our captions processing - luckily, I've played with this before:
-    - [Captions](https://github.com/idvorkin/nlp/blob/c050626b4f88ffb09622938d1bb5c55c2e05618a/captions.py?plain=1#L21)
-    - What's great is I basically wrote this code using Aider.
+#### Instead of watching a huberman, process with LLM
+
+- Pull down the transcript with yt-dlp
+
+```bash
+yt-dlp --write-auto-sub   --skip-download https://www.youtube.com/watch\?v\=kgr22uMsJ5o
+```
+
+- But it's too big, ~ 1M tokens thanks to the VTT format.
+  - Good enough to stick into google gemini
+  - GROAN, of course that doesn't work since output limit.
+- Sigh, lets upgrade our captions processing - luckily, I've played with this before:
+  - [Captions](https://github.com/idvorkin/nlp/blob/c050626b4f88ffb09622938d1bb5c55c2e05618a/captions.py?plain=1#L21)
+  - What's great is I basically wrote this code using Aider.
+- OK Lets run it:
+
+```bash
+cat ~/tmp/t/show.vtt | ./captions.py to-human | tee show.md
+```
+
+- Tada here it is on [gist](https://gist.github.com/idvorkin/1e8571c2f8f4de612a9671a301cfad5a)
+- And it's small enough I can process it in fewer shots
+
+```bash
+❯ cat show.md | gpt tokens
+25313
+```
 
 ### 2024-08-26
 
