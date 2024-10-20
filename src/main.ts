@@ -270,7 +270,6 @@ function search() {
 
 function keyboard_shortcut_loader() {
   const mouseTrap: any = Mousetrap();
-  mouseTrap.bind("/", e => search());
   mouseTrap.bind("s", e => search());
   mouseTrap.bind("t", e => ForceShowRightSideBar());
   mouseTrap.bind("p", e => SwapProdAndTest());
@@ -281,7 +280,7 @@ function keyboard_shortcut_loader() {
   let shortcutHelp = `
 Try these shortcuts:
   s - search
-  / - search
+  / - start chatting with others
   t - force sidebar
   p - swap prod and test
   z - surprise me

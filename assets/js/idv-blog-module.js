@@ -230,7 +230,6 @@ function $b013a5dd6d18443e$var$search() {
 }
 function $b013a5dd6d18443e$var$keyboard_shortcut_loader() {
     const mouseTrap = Mousetrap();
-    mouseTrap.bind("/", (e)=>$b013a5dd6d18443e$var$search());
     mouseTrap.bind("s", (e)=>$b013a5dd6d18443e$var$search());
     mouseTrap.bind("t", (e)=>$b013a5dd6d18443e$var$ForceShowRightSideBar());
     mouseTrap.bind("p", (e)=>$b013a5dd6d18443e$var$SwapProdAndTest());
@@ -240,7 +239,7 @@ function $b013a5dd6d18443e$var$keyboard_shortcut_loader() {
     let shortcutHelp = `
 Try these shortcuts:
   s - search
-  / - search
+  / - start chatting with others
   t - force sidebar
   p - swap prod and test
   z - surprise me
