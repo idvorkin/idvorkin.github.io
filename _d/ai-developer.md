@@ -19,6 +19,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
   - [Human in the loop](#human-in-the-loop)
   - [World model vs context model](#world-model-vs-context-model)
   - [AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)](#ai-maximalist-chatgpt-vs-ai-enabled-features-apple-intelligence)
+  - [Memory](#memory)
 - [Use Cases and Applications](#use-cases-and-applications)
 - [Mapping the AI Landscape](#mapping-the-ai-landscape)
   - [Capabilities: Large Context/Structured Output/Real Time](#capabilities-large-contextstructured-outputreal-time)
@@ -140,6 +141,10 @@ Apple is, I think, signaling a view that generative AI, and ChatGPT itself, is a
 1. Unbundled into individual features (ditto), which are inherently easier to run as small power-efficient models on small power-efficient devices on the edge (paid for by users, not your capex budget) - which is just as well, because…
 
 1. This stuff will never work for the mass-market if we have marginal cost every time the user presses ‘OK’ and we need a fleet of new nuclear power-stations to run it all.
+
+### Memory
+
+Pretty important topic - here's some notes on it from [langchain](https://blog.langchain.dev/memory-for-agents/)
 
 ## Use Cases and Applications
 
