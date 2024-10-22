@@ -21,6 +21,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
   - [AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)](#ai-maximalist-chatgpt-vs-ai-enabled-features-apple-intelligence)
   - [Memory](#memory)
 - [Use Cases and Applications](#use-cases-and-applications)
+  - [Insights from OpenAI CPO:](#insights-from-openai-cpo)
 - [Mapping the AI Landscape](#mapping-the-ai-landscape)
   - [Capabilities: Large Context/Structured Output/Real Time](#capabilities-large-contextstructured-outputreal-time)
   - [AI Engagement Model: Tools/Co-Pilots/Chat/Agents](#ai-engagement-model-toolsco-pilotschatagents)
@@ -151,6 +152,23 @@ Pretty important topic - here's some notes on it from [langchain](https://blog.l
 - [Writing git commit messages](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/commit.py?plain=1#L19)
 - [Spellchecking a file at a time](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/gpt3.py#L748)
 - [Summarize changes in a repo over a period of time](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/commit.py#L19). E.g. [What I wrote some random week](https://gist.github.com/idvorkin/a701075a10d98dc41768765bc5b567ca)
+
+### Insights from OpenAI CPO:
+
+- https://youtu.be/VsmEMUiPXIs?si=TqhP1gFd2pk1dDxb
+- https://gist.github.com/idvorkin/2f0888b678f17b4c39295e77643fc2d5
+
+**Top ideas:**
+
+TODO: Use ML to analyze the above ^
+
+- Very interesting to develop when there is no clear technology floor - it keeps raising
+- As a new business, build stuff that's on the edge of what tech can do, tech will close the gap, you'll have an edge
+- How hard to cost products - look at o1 (reasoning model)
+  - Did 8 hours of lawyer work, valued at 8K. In 5 minutes, for $2
+  - If you want to charge 7K, you can't as competitors will release for less money.
+- OpenAI isn't compute bound, it's eval bound.
+  - You provide value by creating evals, and doing RAG.
 
 ## Mapping the AI Landscape
 
