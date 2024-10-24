@@ -16,6 +16,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+  - [2024-10-24](#2024-10-24)
   - [2024-10-20](#2024-10-20)
     - [Instead of watching a huberman, process with LLM](#instead-of-watching-a-huberman-process-with-llm)
   - [2024-08-26](#2024-08-26)
@@ -120,7 +121,20 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## Diary
 
+### 2024-10-24
+
 ### 2024-10-20
+
+Instead of having to write the code myself, I can have aider upgrade my code to use the latest claude models:
+
+[Aider code upgrade example](https://gist.github.com/idvorkin/2f30c4f7ca2c45ab8fa534ebaeedc1e5)
+
+![Aider code upgrade example](https://private-user-images.githubusercontent.com/280981/379853492-dad3d891-15cd-4cae-b4c2-955696409002.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk3ODcwNjIsIm5iZiI6MTcyOTc4Njc2MiwicGF0aCI6Ii8yODA5ODEvMzc5ODUzNDkyLWRhZDNkODkxLTE1Y2QtNGNhZS1iNGMyLTk1NTY5NjQwOTAwMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMDI0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTAyNFQxNjE5MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YjBkYjA2NTVjOWJjNjcxYWNmMjIzYTI1Y2I2ZGI2YjM4NWI4NGM4YmQ2MjE2NzA3MjMzZWYzNDhjNDYxMWY0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.o2ZieBjjVVuYkP3vUgLPk8aEKT4LILmFyipVefHmUlU)
+
+Which makes these links:
+
+- [Commit 1](https://github.com/idvorkin/nlp/commit/e28a62cdc30f74d4344bc05229d6cc6debe610dd)
+- [Commit 2](https://github.com/idvorkin/nlp/commit/5f8c1fdd145514210c701269643febc115b2de5c)
 
 #### Instead of watching a huberman, process with LLM
 
