@@ -143,6 +143,8 @@
         "/personal-development": "/timeoff",
         "/phoney": "/insecure",
         "/pm": "/product",
+        "/podcasting": "/podcast",
+        "/podcasts": "/podcast",
         "/poh": "/happy",
         "/proactive": "/be-proactive",
         "/process": "/upstream",
@@ -163,7 +165,6 @@
         "/responsible": "/be-proactive",
         "/root-cause-analysis": "/coe",
         "/sat": "/dsat",
-        "/satisfaction": "/happy",
         "/satisfied": "/happy",
         "/saving": "/money",
         "/savings": "/money",
@@ -195,6 +196,7 @@
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
         "/training": "/ai-training",
+        "/tribes": "/tribe",
         "/twenty-two": "/22",
         "/twentytwo": "/22",
         "/uncategorized": "/random-idea",
@@ -227,7 +229,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/22.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/40yo": {
             "url": "/40yo",
@@ -457,7 +459,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/ai-art": {
             "url": "/ai-art",
@@ -518,7 +520,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-developer.md",
-            "doc_size": 24000
+            "doc_size": 30000
         },
         "/ai-image": {
             "url": "/ai-image",
@@ -551,7 +553,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-journal.md",
-            "doc_size": 27000
+            "doc_size": 31000
         },
         "/ai-paper": {
             "url": "/ai-paper",
@@ -564,7 +566,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-paper.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/ai-security": {
             "url": "/ai-security",
@@ -662,7 +664,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/anxiety.md",
+            "markdown_path": "_d/tribe.md",
             "doc_size": 20000
         },
         "/anxiety-management": {
@@ -710,7 +712,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/ar.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/asciinema": {
             "url": "/asciinema",
@@ -732,7 +734,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/ast-grep.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/balance": {
             "url": "/balance",
@@ -761,7 +763,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/balance2.md",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/balloon": {
             "url": "/balloon",
@@ -908,7 +910,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/breath": {
             "url": "/breath",
@@ -919,7 +921,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/breath.md",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/brompton-toys": {
             "url": "/brompton-toys",
@@ -945,7 +947,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/brython_.md",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/build-bubble-bike": {
             "url": "/build-bubble-bike",
@@ -1404,7 +1406,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2020-03.md",
-            "doc_size": 27000
+            "doc_size": 28000
         },
         "/d/time-off-2020-12": {
             "url": "/d/time-off-2020-12",
@@ -1571,7 +1573,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2023-11.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/d/time-off-2024-02": {
             "url": "/d/time-off-2024-02",
@@ -1589,7 +1591,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-02.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/d/time-off-2024-04": {
             "url": "/d/time-off-2024-04",
@@ -1603,7 +1605,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-04.md",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/d/where-have-all-the-bugs-gone": {
             "url": "/d/where-have-all-the-bugs-gone",
@@ -1750,7 +1752,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/design.md",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/diet": {
             "url": "/diet",
@@ -1786,7 +1788,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2017-11-12-thedip.md",
-            "doc_size": 25000
+            "doc_size": 26000
         },
         "/docker": {
             "url": "/docker",
@@ -1797,7 +1799,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/docker_.md",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/dsat": {
             "url": "/dsat",
@@ -1959,7 +1961,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/energy.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/essentialism": {
             "url": "/essentialism",
@@ -2027,7 +2029,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
-            "doc_size": 29000
+            "doc_size": 30000
         },
         "/facebook": {
             "url": "/facebook",
@@ -2042,7 +2044,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/facebook.md",
-            "doc_size": 28000
+            "doc_size": 29000
         },
         "/fail": {
             "url": "/fail",
@@ -2213,7 +2215,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/gpt2.md",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/gpt-7h": {
             "url": "/gpt-7h",
@@ -2246,7 +2248,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/grammerly.md",
-            "doc_size": 9000
+            "doc_size": 10000
         },
         "/graph": {
             "url": "/graph",
@@ -2308,7 +2310,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/gtd.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/happy": {
             "url": "/happy",
@@ -2440,7 +2442,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/idle-loop.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/Immutable-Laws-Of-Hard": {
             "url": "/Immutable-Laws-Of-Hard",
@@ -2491,7 +2493,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2016-2-11-Insomnia.md",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/interviewsarehard": {
             "url": "/interviewsarehard",
@@ -2585,7 +2587,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-02-17-job-hunt-stress.md",
-            "doc_size": 19000
+            "doc_size": 20000
         },
         "/joy": {
             "url": "/joy",
@@ -2748,11 +2750,12 @@
                 "/job",
                 "/manager-book-appendix",
                 "/software-leadership-roles",
+                "/tribe",
                 "/y24"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 142000
+            "doc_size": 143000
         },
         "/manager-book-appendix": {
             "url": "/manager-book-appendix",
@@ -2918,7 +2921,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/machine-learning.md",
-            "doc_size": 47000
+            "doc_size": 48000
         },
         "/modal": {
             "url": "/modal",
@@ -3061,7 +3064,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/nvim.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/nlp": {
             "url": "/nlp",
@@ -3090,7 +3093,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/nurture.md",
-            "doc_size": 38000
+            "doc_size": 39000
         },
         "/operating-manual": {
             "url": "/operating-manual",
@@ -3207,6 +3210,17 @@
             "markdown_path": "_posts/2017-10-07-physical-health.md",
             "doc_size": 23000
         },
+        "/podcast": {
+            "url": "/podcast",
+            "title": "Podcasting",
+            "description": "To my amazement, I listen to podcasts. I think they’re pretty interesting, here are my notes on them.\n\n",
+            "file_path": "_site/podcast.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/podcast.md",
+            "doc_size": 13000
+        },
         "/pride": {
             "url": "/pride",
             "title": "That is pride fucking with you",
@@ -3240,7 +3254,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/product.md",
-            "doc_size": 24000
+            "doc_size": 29000
         },
         "/productive": {
             "url": "/productive",
@@ -3528,7 +3542,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c7.md",
-            "doc_size": 11000
+            "doc_size": 12000
         },
         "/sicp": {
             "url": "/sicp",
@@ -3610,7 +3624,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_posts/2018-11-06-sleeping-bag-sacrifies.md",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/sleight-of-mouth": {
             "url": "/sleight-of-mouth",
@@ -3678,7 +3692,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-01-14-software-leadership-roles.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/strategy": {
             "url": "/strategy",
@@ -3798,7 +3812,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/system-design.md",
-            "doc_size": 20000
+            "doc_size": 21000
         },
         "/taas": {
             "url": "/taas",
@@ -3827,7 +3841,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 83000
+            "doc_size": 84000
         },
         "/td/advertising": {
             "url": "/td/advertising",
@@ -3838,7 +3852,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/advertising.md",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/td/alexa-skill": {
             "url": "/td/alexa-skill",
@@ -3860,7 +3874,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/back_ref.md",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/td/better-security-design": {
             "url": "/td/better-security-design",
@@ -3936,7 +3950,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/hack-web.md",
-            "doc_size": 25000
+            "doc_size": 26000
         },
         "/td/ios": {
             "url": "/td/ios",
@@ -4080,7 +4094,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/usbtech.md",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/td/virtual-desktops": {
             "url": "/td/virtual-desktops",
@@ -4091,7 +4105,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/virtual-desktops.md",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/td/visual-vocabulary": {
             "url": "/td/visual-vocabulary",
@@ -4320,7 +4334,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_td/tool.md",
-            "doc_size": 47000
+            "doc_size": 48000
         },
         "/touching": {
             "url": "/touching",
@@ -4353,6 +4367,19 @@
             "redirect_url": "",
             "markdown_path": "_d/alexa-charity.md",
             "doc_size": 14000
+        },
+        "/tribe": {
+            "url": "/tribe",
+            "title": "My Tribe",
+            "description": "Finding your tribe is important - calling it a tribe makes it sound like I’m a contributing member of the community, perhaps this is more like things I’m a fanboy of.\n\n",
+            "file_path": "_site/tribe.html",
+            "outgoing_links": [
+                "/manager-book"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/tribe.md",
+            "doc_size": 12000
         },
         "/upstream": {
             "url": "/upstream",
@@ -4541,7 +4568,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/writing.md",
-            "doc_size": 34000
+            "doc_size": 35000
         },
         "/y24": {
             "url": "/y24",
