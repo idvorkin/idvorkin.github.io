@@ -49,6 +49,16 @@ These folks have never heard of me, but I really enjoy following them.
 
 #### How to get a feed from a medium sub
 
+https://www.perplexity.ai/page/can-i-get-substack-to-rss-ipB5NhfrSVSzuoywtaExEA
+
+Regular substrack feed:
+
+- https://example.substack.com/feed
+
+Custom domain:
+
+- http://newsletter.deverman.org/feed
+
 #### Tribes in the context of re-orgs
 
 See the [manager-book](/manager-book#what-is-a-tribe)
