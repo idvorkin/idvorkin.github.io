@@ -11,6 +11,35 @@ redirect_from:
 
 From creating a vision that inspires to laying out the strategies to get there, product work requires a range of skills—and a good dose of creativity. Putting the puzzle pieces together is essential to creating a product that appeals to its customers. With the right combination of vision, strategy, product design and execution, anyone can create something truly remarkable. With this in mind, let's start building the future we want to create!
 
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+
+- [Product Work](#product-work)
+  - [Product Vision - The future you want to create](#product-vision---the-future-you-want-to-create)
+  - [Sharing your thinking/approach](#sharing-your-thinkingapproach)
+  - [Product Strategy - Path to get to the future](#product-strategy---path-to-get-to-the-future)
+  - [Product Discovery (Solving the big risks)](#product-discovery-solving-the-big-risks)
+  - [Working with Product Design](#working-with-product-design)
+  - [How to prioritize your market](#how-to-prioritize-your-market)
+  - [Evangelism - How to sell the dream](#evangelism---how-to-sell-the-dream)
+- [Roadmapping and User Story Mapping](#roadmapping-and-user-story-mapping)
+  - [What's a story map](#whats-a-story-map)
+- [Concepts](#concepts)
+  - [Engagement vs Growth](#engagement-vs-growth)
+  - [DAU is retention and new users](#dau-is-retention-and-new-users)
+  - [Gamification - Duo  Playbook](#gamification---duo--playbook)
+- [Flywheels](#flywheels)
+  - [Sharing Flywheel](#sharing-flywheel)
+  - [Content Consumption Flywheel](#content-consumption-flywheel)
+- [Misc](#misc)
+  - [Notes from the goal](#notes-from-the-goal)
+  - [Differences from an EM](#differences-from-an-em)
+  - [How to interview for customer need - the Mom Test](#how-to-interview-for-customer-need---the-mom-test)
+  - [Books](#books)
+
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
+
 ## Product Work
 
 ### Product Vision - The future you want to create
@@ -123,11 +152,37 @@ Optimal, having a designer:
 ### Engagement vs Growth
 
 - Growth is getting new users - New entry points, advertising, etc - DAU/WAU/MAU
-- Engagement - Getting existing users to have more value - Usage Time
+- Engagement - Getting existing users to have more value - Sessions/Usage/Time
 
 ### DAU is retention and new users
 
 - Recall DAU needs new users and returning users. New users vs retention likely matters in a
+
+### Gamification - Duo Playbook
+
+_From Duolingo: $12B gamification design playbook_
+
+1. Streaks as Motivation: Duolingo uses streaks to encourage daily practice. Users are motivated to maintain their streaks, which reinforces consistent learning habits. This feature has significantly boosted user retention, with a 14% increase in day 14 retention rates.
+
+2. Leaderboards for Competition: By incorporating leaderboards, Duolingo taps into users' competitive nature. This feature not only motivates users to improve their language skills but also fosters social interaction and community engagement.
+
+3. Badges for Achievement: The badge system rewards users for reaching milestones, enhancing their sense of accomplishment. This has led to a 116% increase in user referrals, as users are eager to share their achievements with friends.
+
+4. Instant Feedback for Growth: Duolingo provides immediate feedback on exercises, allowing users to learn from mistakes and progress quickly. Positive reinforcement through sounds and tips enhances the learning experience and keeps users engaged.
+
+5. The Mascot's Personal Touch: Duo, the green owl mascot, adds a personal touch to notifications, making them feel friendly rather than intrusive. This approach has resulted in a 5% rise in daily active users.
+
+6. Progress Bars for Visual Motivation: Progress bars show users how much they have learned and what remains, motivating them to complete lessons and advance through levels.
+
+7. Gamified Challenges and Events: Duolingo regularly hosts challenges like the "XP Ramp Up Challenge," creating urgency and excitement among users to participate and earn rewards.
+
+8. Social Features for Community Building: Features like the Friends Quest encourage teamwork and shared goals, fostering a sense of community and collaboration among users.
+
+9. Theme-Based Learning for Engagement: Courses are grouped by themes (e.g., greetings), providing context and making learning more relatable and enjoyable.
+
+10. A/B Testing for Continuous Improvement: Duolingo employs extensive A/B testing to refine its gamification strategies, ensuring that features effectively enhance user engagement and retention.
+
+11. Scarcity and Exclusivity: Features like exclusive clubs create a sense of scarcity, making users feel special when they unlock certain achievements or levels.
 
 ## Flywheels
 
