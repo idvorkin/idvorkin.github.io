@@ -17,6 +17,9 @@ Finding your tribe is important - calling it a tribe makes it sound like I'm a c
 - [My Tribes](#my-tribes)
   - [People who are sharing lots that they learn publicly.](#people-who-are-sharing-lots-that-they-learn-publicly)
   - [Interesting technical/management writing:](#interesting-technicalmanagement-writing)
+  - [Misc](#misc)
+    - [How to get a feed from a medium sub](#how-to-get-a-feed-from-a-medium-sub)
+    - [Tribes in the context of re-orgs](#tribes-in-the-context-of-re-orgs)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -39,5 +42,13 @@ These folks have never heard of me, but I really enjoy following them.
 
 ### Interesting technical/management writing:
 
-- [Andy G's]
+- [Andy G's](https://gieseanw.wordpress.com/)
   - Wonderful advice for cynical programmers
+
+### Misc
+
+#### How to get a feed from a medium sub
+
+#### Tribes in the context of re-orgs
+
+See the [manager-book](/manager-book#what-is-a-tribe)
