@@ -52,6 +52,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [How do you grow top talent](#how-do-you-grow-top-talent)
   - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
   - [How do you have a difficult conversation](#how-do-you-have-a-difficult-conversation)
+  - [Should employees game the system to optimize for the review process?](#should-employees-game-the-system-to-optimize-for-the-review-process)
 - [Culture](#culture)
   - [What is your ideal culture](#what-is-your-ideal-culture)
   - [How do you help a team gel](#how-do-you-help-a-team-gel)
@@ -735,6 +736,18 @@ From Simon Sinek, a great script:
 - I know having this conversation is more important than my fears against it
 - Please work with me to struggle through this.
 - Because want us to tackle this subject
+
+### Should employees game the system to optimize for the review process?
+
+The point of the review process is to reward the highest impact behaviors, so if the review process is designed properly, optimizing for it should align with maximizing your impact and value to the company.
+
+On the management side, there's an art and science to designing a review process that accurately measures and rewards impactful work. For employees, many of the things you might do to "game" the review system - like documenting your accomplishments, quantifying your impact, and taking on highly visible projects - are actually valuable behaviors that increase your contributions.
+
+For the cynically-minded, this article humorously argues that optimizing for reviews often means doing genuinely impactful work:
+
+[A fun article that comes to that conclusion](https://gieseanw.wordpress.com/2024/10/24/why-that-one-coworker-got-fired-for-no-reason/)
+
+The key is to focus on maximizing your real impact and value, not just appearances. A well-designed review process should recognize and reward that genuine impact.
 
 ## Culture
 
