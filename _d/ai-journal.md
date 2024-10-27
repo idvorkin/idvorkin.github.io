@@ -16,6 +16,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+  - [2024-10-27](#2024-10-27)
+  - [2024-10-26](#2024-10-26)
   - [2024-10-24](#2024-10-24)
   - [2024-10-20](#2024-10-20)
     - [Instead of watching a huberman, process with LLM](#instead-of-watching-a-huberman-process-with-llm)
@@ -120,6 +122,15 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2024-10-27
+
+- Use AI to help and [evaluate performance reviews](https://github.com/idvorkin/nlp/blob/55a2e50d2f02f7660dbbf101d12c7a1e3368e947/eval/eng-feedback/promptfooconfig.yaml?plain=1#L80)
+
+### 2024-10-26
+
+- Use Semantic Search for similar websites to what im [thinking about](https://github.com/idvorkin/nlp/blob/55a2e50d2f02f7660dbbf101d12c7a1e3368e947/think.py?plain=1#L296) e.g. thinks like [this page](https://gist.github.com/idvorkin/94fb8420a973e61ee5f1b61be926ecaf#---exaai-related-search-results---)
+  ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20241027_093056.webp)
 
 ### 2024-10-24
 
