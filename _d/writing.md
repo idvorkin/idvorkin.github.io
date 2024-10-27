@@ -9,7 +9,7 @@ redirect_from:
   - think
 ---
 
-Useful writing tells people something true and important that they didn't already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart "If you're thinking without writing, you're only thinking about thinking".
+Useful writing tells people (including, possibly most importantly you) something true and important that they didn't already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart "If you're thinking without writing, you're only thinking about thinking".
 
 <!-- prettier-ignore-start -->
 
@@ -17,37 +17,38 @@ Useful writing tells people something true and important that they didn't alread
 <!-- vim-markdown-toc-start -->
 
 - [Why](#why)
-    - [Writing to understand, writing to be understood](#writing-to-understand-writing-to-be-understood)
-    - [Amazon's Writing Culture](#amazons-writing-culture)
-    - [Sucking till you don't](#sucking-till-you-dont)
-    - [Building Knowledge - Evergreen notes](#building-knowledge---evergreen-notes)
+  - [Writing to understand, writing to be understood](#writing-to-understand-writing-to-be-understood)
+  - [Amazon's Writing Culture](#amazons-writing-culture)
+  - [Sucking till you don't](#sucking-till-you-dont)
+  - [Building Knowledge - Evergreen notes](#building-knowledge---evergreen-notes)
 - [Writing to understand](#writing-to-understand)
-    - [All Mental models are wrong](#all-mental-models-are-wrong)
-    - [SWOT and SOAR - Exploring the space](#swot-and-soar---exploring-the-space)
-    - [MECE - How you know you're done](#mece---how-you-know-youre-done)
-    - [Minto's Pyramid Principle](#mintos-pyramid-principle)
-    - [Elon's First Principles](#elons-first-principles)
-    - [Five Whys](#five-whys)
-    - [Diagrams](#diagrams)
-    - [Stories and actions not just data](#stories-and-actions-not-just-data)
+  - [All Mental models are wrong](#all-mental-models-are-wrong)
+  - [SWOT and SOAR - Exploring the space](#swot-and-soar---exploring-the-space)
+  - [MECE - How you know you're done](#mece---how-you-know-youre-done)
+  - [Minto's Pyramid Principle](#mintos-pyramid-principle)
+  - [Elon's First Principles](#elons-first-principles)
+  - [Five Whys](#five-whys)
+  - [Diagrams](#diagrams)
+  - [Stories and actions not just data](#stories-and-actions-not-just-data)
 - [Writing to be Understood](#writing-to-be-understood)
-    - [Know your audience](#know-your-audience)
-    - [The journey or the recommendation](#the-journey-or-the-recommendation)
-    - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
-    - [The Pixar Formula](#the-pixar-formula)
-    - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
-    - [The crappy modern business book](#the-crappy-modern-business-book)
-    - [The Hero's Journey - For very long form](#the-heros-journey---for-very-long-form)
+  - [Know your audience](#know-your-audience)
+  - [The journey or the recommendation](#the-journey-or-the-recommendation)
+  - [The detective formula: Situation, Complication, Resolution](#the-detective-formula-situation-complication-resolution)
+  - [The Pixar Formula](#the-pixar-formula)
+  - [The feedback formula: Situation, Behavior, Impact](#the-feedback-formula-situation-behavior-impact)
+  - [The crappy modern business book](#the-crappy-modern-business-book)
+  - [The Hero's Journey - For very long form](#the-heros-journey---for-very-long-form)
 - [Pen to paper](#pen-to-paper)
-    - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
-    - [On essay's and writing](#on-essays-and-writing)
-    - [How to write effectively](#how-to-write-effectively)
-    - [How to tell a great story](#how-to-tell-a-great-story)
-    - [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
-    - [My 80 hours on an outage document](#my-80-hours-on-an-outage-document)
-    - [Writing Software and Tools](#writing-software-and-tools)
-    - [Writing is better with an enabling environment](#writing-is-better-with-an-enabling-environment)
-    - [Other resources](#other-resources)
+  - [Madman, Architect, Carpenter, Judge](#madman-architect-carpenter-judge)
+  - [On essay's and writing](#on-essays-and-writing)
+  - [How to write effectively](#how-to-write-effectively)
+  - [How to tell a great story](#how-to-tell-a-great-story)
+  - [Writers head to readers head, like an army through a choke point](#writers-head-to-readers-head-like-an-army-through-a-choke-point)
+  - [My 80 hours on an outage document](#my-80-hours-on-an-outage-document)
+  - [Writing in the age of AI](#writing-in-the-age-of-ai)
+  - [Writing Software and Tools](#writing-software-and-tools)
+  - [Writing is better with an enabling environment](#writing-is-better-with-an-enabling-environment)
+  - [Other resources](#other-resources)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -359,6 +360,12 @@ Some people might be appled. 80 hours is 2 strait weeks of work, (which I stretc
 First, I was muscle building. I'm pretty sure if my writing muscle was fully matured, and I had already understood the ASR and NLU space, I could have written this document in 20 hours, meaning 60 hours was just training, which is always worth it.
 
 Second, outage is expensive, as is incorrect action,
+
+### Writing in the age of AI
+
+Fascinating idea from [Paul Graham](https://gist.github.com/idvorkin/68c59484cb8f18ced9d197abae907848/) that AI will make writing easy. That part is easy, the novel idea is that the consequence of this will be critical thought (the real value prop of writing) will atrophy. He notes this has a a historical precidence, we used to all have to be physically strong, there are currently people who are physically strong, but they are rare and have to work out to maintain that strength, as in our society it's mostly optional.
+
+This begs the question how to use AI to help you think, not help you write.
 
 ### Writing Software and Tools
 

@@ -16,25 +16,26 @@ Imagine the place you do your best work. Andy Matuschak defined this, and as som
 - [Igor's Computing Setup](#igors-computing-setup)
 - [Igor's Physical Setup](#igors-physical-setup)
 - [By Task](#by-task)
-    - [Production](#production)
-    - [Consumption](#consumption)
-    - [Reflection](#reflection)
-    - [Discovery](#discovery)
-    - [Recall](#recall)
+  - [Production](#production)
+  - [Consumption](#consumption)
+  - [Reflection](#reflection)
+  - [Discovery](#discovery)
+  - [Recall](#recall)
 - [The rider, the elephant, and the path](#the-rider-the-elephant-and-the-path)
-    - [Inspire and Motivate](#inspire-and-motivate)
+  - [Inspire and Motivate](#inspire-and-motivate)
 - [By Scope](#by-scope)
-    - [Individual Artifacts](#individual-artifacts)
-    - [Entire corpus](#entire-corpus)
-    - [Comparing Artifcats or Corpus](#comparing-artifcats-or-corpus)
+  - [Individual Artifacts](#individual-artifacts)
+  - [Entire corpus](#entire-corpus)
+  - [Comparing Artifcats or Corpus](#comparing-artifcats-or-corpus)
 - [Visualizations](#visualizations)
-    - [Word clouds](#word-clouds)
-    - [Comic illustrations](#comic-illustrations)
-    - [Dimension Reduced Vector Embeddings](#dimension-reduced-vector-embeddings)
-    - [Connected Graphs](#connected-graphs)
+  - [Word clouds](#word-clouds)
+  - [Comic illustrations](#comic-illustrations)
+  - [Dimension Reduced Vector Embeddings](#dimension-reduced-vector-embeddings)
+  - [Connected Graphs](#connected-graphs)
 - [AI Augmentation](#ai-augmentation)
-    - [Critical Thinking](#critical-thinking)
-    - [Other folks work here](#other-folks-work-here)
+  - [Completing tasks vs getting smarter/stronger](#completing-tasks-vs-getting-smarterstronger)
+  - [Critical Thinking](#critical-thinking)
+  - [Other folks work here](#other-folks-work-here)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -74,6 +75,8 @@ At its core, is writing:
 ### Production
 
 ### Consumption
+
+- Having custom made [podcasts](/podcasts) can be better then books.
 
 ### Reflection
 
@@ -128,11 +131,33 @@ What I'm most excited about is how to expand this with AI. My thinking program i
 
 Spell check and summary/eli5/TLDR are the obvious ones, but what if we extended to reflection questions, implicit assumptions, etc....
 
+### Completing tasks vs getting smarter/stronger
+
+There's an analogy to physical strength. You can have a robot lift something for you, which may not be what you're looking for. What you're often looking for is how to get stronger.
+
+To get stronger, you need progressive overload, which has different models from physical health:
+
+- Increasing weight or resistance
+- Increasing repetitions
+- Increasing frequency of training
+- Decreasing rest periods between sets
+- Changing exercise variations
+
+Similarly, for cognitive tasks, you can progressively overload by:
+
+- Increasing complexity of problems
+- Tackling more abstract concepts
+- Expanding the scope of your knowledge
+- Reducing reliance on external aids
+- Applying knowledge in novel contexts
+
+The goal is to challenge yourself just beyond your current capabilities, promoting growth and adaptation.
+
 ### Critical Thinking
 
-Running over Andy's enabling environment page ...
+Running [Think](https://gist.github.com/idvorkin/ea35c3f08e696578bc104c8b2bba7981) over Andy's enabling environment page ...
 
-gist.github.com/idvorkin/25eadce2222a09d9dca620679afd59d6
+Historical note - original run on the model took like [60s and was dumber](https://gist.github.com/idvorkin/25eadce2222a09d9dca620679afd59d6)
 
 github.com/idvorkin/nlp/blob/main/think.py
 
