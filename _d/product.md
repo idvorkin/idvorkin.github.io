@@ -27,7 +27,19 @@ From creating a vision that inspires to laying out the strategies to get there, 
 - [Concepts](#concepts)
   - [Engagement vs Growth](#engagement-vs-growth)
   - [DAU is retention and new users](#dau-is-retention-and-new-users)
-  - [Gamification - Duo  Playbook](#gamification---duo--playbook)
+  - [Gamification - Duo Playbook](#gamification---duo-playbook)
+- [Business and Funding Models and their impacts](#business-and-funding-models-and-their-impacts)
+  - [Venture Capital = Growth Models](#venture-capital--growth-models)
+  - [Lifestyele Business](#lifestyele-business)
+- [Business and Funding Models and their impacts](#business-and-funding-models-and-their-impacts-1)
+  - [Venture Capital = Growth Models](#venture-capital--growth-models-1)
+  - [Lifestyele Business](#lifestyele-business-1)
+- [Revenue Models](#revenue-models)
+  - [Advertising Model](#advertising-model)
+  - [Merch](#merch)
+  - [Affiliate Model](#affiliate-model)
+  - [Consumption/Pay Per Use](#consumptionpay-per-use)
+  - [Subscription Model = Recurring Revenue Model](#subscription-model--recurring-revenue-model)
 - [Flywheels](#flywheels)
   - [Sharing Flywheel](#sharing-flywheel)
   - [Content Consumption Flywheel](#content-consumption-flywheel)
@@ -183,6 +195,56 @@ _From Duolingo: $12B gamification design playbook_
 10. A/B Testing for Continuous Improvement: Duolingo employs extensive A/B testing to refine its gamification strategies, ensuring that features effectively enhance user engagement and retention.
 
 11. Scarcity and Exclusivity: Features like exclusive clubs create a sense of scarcity, making users feel special when they unlock certain achievements or levels.
+
+## Business and Funding Models and their impacts
+
+### Venture Capital = Growth Models
+
+- Only suitable when you are in a winner take all market like social networking
+- Growth above all else
+
+### Lifestyele Business
+
+Primary Objective: To create a sustainable income that supports the owner’s desired lifestyle rather than pursuing aggressive growth or scaling.
+
+A lifestyle business is an ideal choice for entrepreneurs who prioritize autonomy, sustainability, and alignment with personal passions, rather than maximizing growth or preparing for an exit.
+
+## Business and Funding Models and their impacts
+
+### Venture Capital = Growth Models
+
+- Only suitable when you are in a winner take all market like social networking
+- Growth above all else
+
+### Lifestyele Business
+
+Primary Objective: To create a sustainable income that supports the owner’s desired lifestyle rather than pursuing aggressive growth or scaling.
+
+A lifestyle business is an ideal choice for entrepreneurs who prioritize autonomy, sustainability, and alignment with personal passions, rather than maximizing growth or preparing for an exit.
+
+## Revenue Models
+
+### Advertising Model
+
+### Merch
+
+### Affiliate Model
+
+### Consumption/Pay Per Use
+
+### Subscription Model = Recurring Revenue Model
+
+Primary Objective: To establish recurring revenue through subscriptions, where customers pay regularly for access to products, services, or content.
+
+Key Characteristics:
+
+Customer Retention: Focus on building long-term customer relationships and retention, reducing the need for continuous new customer acquisition.
+Predictable Revenue: Provides a stable cash flow, allowing businesses to plan and grow more consistently.
+Value-Based Pricing: Often includes multiple pricing tiers, with features that increase customer engagement and perceived value.
+Potential Impacts:
+
+Pros: Ensures a steady revenue stream, high customer lifetime value (LTV), and better cash flow management.
+Cons: Requires continuous innovation and value delivery to retain customers, high initial acquisition costs, and potential churn if engagement declines.
 
 ## Flywheels
 
