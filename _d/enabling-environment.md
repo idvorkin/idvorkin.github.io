@@ -7,7 +7,7 @@ redirect_from:
   - /enabling-environment
 ---
 
-Imagine the place you do your best work. Andy Matuschak defined this, and as someone who aspires to effectiveness, I fell in love with the concept. As a techie who loves efficiency, I also set about building my own. From Andy: An enabling environment significantly expands its participants’ capacity to do things they find meaningful and important. This blog is the consumption environment for mine.
+Imagine the place you do your best work. Andy Matuschak defined this, and as someone who aspires to effectiveness, I fell in love with the concept. As a techie who loves efficiency, I also set about building my own. From Andy: An enabling environment significantly expands its participants’ capacity to do things they find meaningful and important. This blog is the consumption environment for mine. When we talk about an AI enabling environment the key is not to figure out how you can prompt the AI, but how the AI can prompt you.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -33,6 +33,7 @@ Imagine the place you do your best work. Andy Matuschak defined this, and as som
   - [Dimension Reduced Vector Embeddings](#dimension-reduced-vector-embeddings)
   - [Connected Graphs](#connected-graphs)
 - [AI Augmentation](#ai-augmentation)
+  - [The Danger of AI](#the-danger-of-ai)
   - [Completing tasks vs getting smarter/stronger](#completing-tasks-vs-getting-smarterstronger)
   - [Critical Thinking](#critical-thinking)
   - [Other folks work here](#other-folks-work-here)
@@ -130,6 +131,10 @@ Ala - obsidians graph view
 What I'm most excited about is how to expand this with AI. My thinking program is my first cut.
 
 Spell check and summary/eli5/TLDR are the obvious ones, but what if we extended to reflection questions, implicit assumptions, etc....
+
+### The Danger of AI
+
+The danger is of course you stop thinking. Learning requires active engagement with content, passive consumption, or even worse skimming makes things much worse. So it's very important that you think about how to have the AI prompt you to be active in your thinking, not passive in your consumption.
 
 ### Completing tasks vs getting smarter/stronger
 
