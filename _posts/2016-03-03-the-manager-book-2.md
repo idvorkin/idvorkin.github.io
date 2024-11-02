@@ -24,6 +24,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [What is a manager accountable for](#what-is-a-manager-accountable-for)
   - [How do you describe your job to people outside the industry](#how-do-you-describe-your-job-to-people-outside-the-industry)
   - [Hardest part about being a manager](#hardest-part-about-being-a-manager)
+  - [The Impact Pyramid](#the-impact-pyramid)
   - [What do you do in the first 90 days](#what-do-you-do-in-the-first-90-days)
   - [What do managers do all day](#what-do-managers-do-all-day)
   - [Should managers be technical](#should-managers-be-technical)
@@ -216,6 +217,41 @@ I run a factory which produces widgets and has employees. For those in the indus
 - Personally: Telling team I'm quitting, tears, ride bike, etc.
 - Actual: When need to surprise folks, abrupt direction change or killing projects.
 - Likely, but I haven't done it: Layoffs, when know and can't tell.
+
+### The Impact Pyramid
+
+Thanks to [Andrew Wilkin](https://www.linkedin.com/in/andywilkin/) for this great model!
+
+As an EM, your impact grows as you move from focusing on your immediate team to influencing the broader organization. This growth can be visualized as a pyramid, with each level building upon the foundation below it.
+
+**1. Team Health: The Foundation**
+
+The base of the pyramid is **Team Health**. A healthy team is a productive team. Focus on these key areas:
+
+- **Core Skills:** Ensure the team possesses the necessary skills and expertise. Provide opportunities for professional development, mentorship, and knowledge sharing. Address skill gaps through targeted training or hiring.
+- **Attrition:** Aim for low, manageable attrition. Understand the reasons behind departures and address any systemic issues contributing to turnover. Support departing team members in their transitions.
+- **Morale and Culture:** Foster a positive and supportive team environment. Celebrate successes, acknowledge challenges, and address concerns promptly. Encourage open communication and psychological safety.
+- **Hiring:** Continuously build a strong team through effective hiring practices. Focus on attracting and retaining top talent.
+
+**2. Team Impact: Delivering Value**
+
+The second level is **Team Impact**. A healthy team is positioned to deliver value, but it requires focused execution. Key aspects include:
+
+- **Clear Goals and Priorities:** Ensure the team understands the "why" behind their work and has clear, measurable objectives. Align team goals with business priorities.
+- **Efficient Processes:** Implement processes that streamline development, reduce bottlenecks, and promote quality. Encourage automation and continuous improvement.
+- **Effective Collaboration:** Facilitate smooth communication and collaboration within the team and with external partners. Remove roadblocks and foster a collaborative spirit.
+- **Consistent Delivery:** Establish a track record of delivering high-quality work on time and within budget. Build trust and credibility through consistent performance.
+
+**3. Organizational Impact: Expanding Influence**
+
+The top of the pyramid is **Organizational Impact**. Once your team is healthy and delivering consistent value, you can leverage your experience and insights to contribute to the broader organization. This might involve:
+
+- **IC Team (Internal Consulting):** Since your team is running smoothly, dedicate some of your time to addressing organizational challenges outside your immediate team. This could include process improvements, mentorship programs, or cross-functional initiatives.
+- **Mentorship and Coaching:** Share your knowledge and experience with other managers and individual contributors. Help others grow and develop their skills.
+- **Cross-Functional Collaboration:** Build strong relationships with teams in other departments. Identify opportunities for collaboration and synergy.
+- **Strategic Initiatives:** Contribute to the development and execution of organizational strategies. Provide insights and recommendations based on your team's experience and expertise.
+
+By focusing on building a strong foundation of Team Health, driving Team Impact through efficient execution, and expanding your influence through Organizational Impact, you can maximize your effectiveness as an Engineering Manager and contribute significantly to the success of your team and the wider organization.
 
 ### What do you do in the first 90 days
 
