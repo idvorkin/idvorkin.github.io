@@ -49,7 +49,10 @@ Getting good at hard stuff takes LOTS of practice and LOTS of feedback, during w
 
 This is my implementation of [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), which is a very interesting concept that was "discovered" in 2020, where I started in 2013 :) Read more about the notes, especially the idea of knowledge work getting better and better.
 
-A [great articulation](https://www.alexmolas.com/2023/07/15/nobody-cares-about-your-blog.html) of why it's OK if my notes don't make sense to you
+A few great posts on why it's OK if posts are not great:
+
+- [Please publish and share more](https://micro.webology.dev/2024/11/02/please-publish-and.html)
+- [Nobody cares about your blog](https://www.alexmolas.com/2023/07/15/nobody-cares-about-your-blog.html)
 
 ### Why is there such an odd ensemble of tech here?
 
