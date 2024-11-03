@@ -4,7 +4,7 @@ title: Testing AI
 permalink: /ai-testing
 ---
 
-Testing math is easy, it's right or wrong. Test spelling is easy too, but testing if a joke is funny - now that's tough. Let's talk about how to test AI
+Testing math is easy, it's right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that's tough. Let's talk about how to test AI.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -37,9 +37,9 @@ I started by using LangSmith, but now I use ell, which has it built in.
 
 ### LLM as Judge
 
-Fantastic post on using an [LLM as a judge](https://hamel.dev/blog/posts/llm-judge/)
+Fantastic post on using an [LLM as a judge](https://hamel.dev/blog/posts/llm-judge/).
 
-This is the future, also [promptfoo supports this well](https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/llm-rubric/)
+This is the future, also [promptfoo supports this well](https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/llm-rubric/).
 
 ### Testing across prompts
 
@@ -53,7 +53,7 @@ I use PromptFoo, but haven't really done this.
 
 Here's an example, where I use multiple LLMs to generate output and just keep both.
 
-For example here's the explanation of [My commit that does this](https://github.com/idvorkin/nlp/commit/674e73c6729cedc9a07cdad326c67ef8976601db)
+For example, here's the explanation of [My commit that does this](https://github.com/idvorkin/nlp/commit/674e73c6729cedc9a07cdad326c67ef8976601db).
 
 Notice that Claude does a better job getting the gist of it.
 
@@ -76,9 +76,9 @@ instruction formatting
 
 ### Who is the funnier LLM
 
-One of my AI creations is an improv coach. A key requirement of said coach is that it is funny. How the heck can I tell if GPT3.5, GPT4, or Claude is funnier?
+One of my AI creations is an improv coach. A key requirement of said coach is that it is funny. How the heck can I tell if GPT-3.5, GPT-4, or Claude is funnier?
 
-I found a package called PromptFoo, which is most of what I want
+I found a package called PromptFoo, which is most of what I want.
 
 See the [code here](https://github.com/idvorkin/nlp/commit/9b5af637477099c6562c80f46ad2a3cec65d6c27), and you can interact with a [live file here](https://app.promptfoo.dev/eval/f:e66b7a20-67b1-4e78-a0bd-63a3f7f30f96/).
 
@@ -88,7 +88,7 @@ See the [code here](https://github.com/idvorkin/nlp/commit/9b5af637477099c6562c8
 
 You can see my PromptFoo test cases [here](https://github.com/idvorkin/nlp/blob/1ca6b3f85895b2684596c8957f0a0bd5a7a5d4f1/eval/commit/diff_commit.json?plain=1#L2f).
 
-How to get the test case? I'd recommend recording a trace with LangSmith, then copy/export them from a LangChain trace and write to JSON (todo add a script for this)
+How to get the test case? I'd recommend recording a trace with LangSmith, then copy/export them from a LangChain trace and write to JSON (todo add a script for this).
 
 And the output of the run [in PromptFoo](https://app.promptfoo.dev/eval/f:442e0857-efc0-408b-9a6d-c064ee7ae306).
 
@@ -129,11 +129,11 @@ Before testing:
 
 - Come up with a list of tasks (questions) and answers
 
-Test Time
+Test Time:
 
 - Have the system perform those tasks and write down the answer
 
-Eval Time
+Eval Time:
 
 - Check tasks against answers
 - Print score
@@ -142,13 +142,13 @@ Eval Time
 
 Sometimes we want to see what
 
-At test time
+At test time:
 
 - Have both A and B attempt the task
 
 Eval Time:
 
-- See how did better A or B
+- See who did better, A or B
 
 ### Wrinkle - No Known Answer
 
@@ -158,7 +158,7 @@ Eval Time:
 
 Have a judge give a subjective score.
 
-Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews
+Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews.
 
 ### Wrinkle - No clear questions
 
