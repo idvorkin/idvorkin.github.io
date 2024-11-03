@@ -10,20 +10,21 @@ Testing math is easy, it's right or wrong. Test spelling is easy too, but testin
 <!-- vim-markdown-toc-start -->
 
 - [Concepts](#concepts)
-    - [Tracing](#tracing)
-    - [Testing across prompts](#testing-across-prompts)
-    - [Testing across models](#testing-across-models)
+  - [Tracing](#tracing)
+  - [LLM as Judge](#llm-as-judge)
+  - [Testing across prompts](#testing-across-prompts)
+  - [Testing across models](#testing-across-models)
 - [Examples](#examples)
-    - [Who is the funnier LLM](#who-is-the-funnier-llm)
-    - [Who is the better git summarizer](#who-is-the-better-git-summarizer)
+  - [Who is the funnier LLM](#who-is-the-funnier-llm)
+  - [Who is the better git summarizer](#who-is-the-better-git-summarizer)
 - [Eval Systems](#eval-systems)
-    - [Human-based blind taste tests Chatbot arena](#human-based-blind-taste-tests-chatbot-arena)
-    - [Eval Data Sets](#eval-data-sets)
+  - [Human-based blind taste tests Chatbot arena](#human-based-blind-taste-tests-chatbot-arena)
+  - [Eval Data Sets](#eval-data-sets)
 - [Testing Theory](#testing-theory)
-    - [Simplest form of testing](#simplest-form-of-testing)
-    - [Wrinkle - A/B Testing](#wrinkle---ab-testing)
-    - [Wrinkle - No Known Answer](#wrinkle---no-known-answer)
-    - [Wrinkle - No clear questions](#wrinkle---no-clear-questions)
+  - [Simplest form of testing](#simplest-form-of-testing)
+  - [Wrinkle - A/B Testing](#wrinkle---ab-testing)
+  - [Wrinkle - No Known Answer](#wrinkle---no-known-answer)
+  - [Wrinkle - No clear questions](#wrinkle---no-clear-questions)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -32,7 +33,13 @@ Testing math is easy, it's right or wrong. Test spelling is easy too, but testin
 
 ### Tracing
 
-I use LangSmith
+I started by using LangSmith, but now I use ell, which has it built in.
+
+### LLM as Judge
+
+Fantastic post on using an [LLM as a judge](https://hamel.dev/blog/posts/llm-judge/)
+
+This is the future, also [promptfoo supports this well](https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/llm-rubric/)
 
 ### Testing across prompts
 
