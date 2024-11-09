@@ -37,6 +37,8 @@
         "/bmu": "/bmy",
         "/books": "/books-that-defined-me",
         "/boss": "/being-a-great-manager",
+        "/brain-attack": "/suicide",
+        "/brainattack": "/suicide",
         "/breathe": "/breath",
         "/breathing": "/breath",
         "/bryan-johnson": "/blueprint",
@@ -165,6 +167,7 @@
         "/responsible": "/be-proactive",
         "/root-cause-analysis": "/coe",
         "/sat": "/dsat",
+        "/satisfaction": "/happy",
         "/satisfied": "/happy",
         "/saving": "/money",
         "/savings": "/money",
@@ -172,6 +175,8 @@
         "/search-inside-yourself": "/siy",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
+        "/SoM": "/sleight-of-mouth",
+        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -553,7 +558,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-journal.md",
-            "doc_size": 31000
+            "doc_size": 32000
         },
         "/ai-paper": {
             "url": "/ai-paper",
@@ -580,12 +585,12 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-security.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/ai-testing": {
             "url": "/ai-testing",
             "title": "Testing AI",
-            "description": "Testing math is easy, it’s right or wrong. Test spelling is easy too, but testing if a joke is funny - now that’s tough. Let’s talk about how to test AI\n\n",
+            "description": "Testing math is easy, it’s right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that’s tough. Let’s talk about how to test AI.\n\n",
             "file_path": "_site/ai-testing.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -664,7 +669,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/tribe.md",
+            "markdown_path": "_d/anxiety.md",
             "doc_size": 20000
         },
         "/anxiety-management": {
@@ -1881,9 +1886,10 @@
         "/enable": {
             "url": "/enable",
             "title": "Enabling Environment",
-            "description": "Imagine the place you do your best work. Andy Matuschak defined this, and as someone who aspires to effectiveness, I fell in love with the concept. As a techie who loves efficiency, I also set about building my own. From Andy: An enabling environment significantly expands its participants’ capacity to do things they find meaningful and important. This blog is the consumption environment for mine.\n\n",
+            "description": "Imagine the place you do your best work. Andy Matuschak defined this, and as someone who aspires to effectiveness, I fell in love with the concept. As a techie who loves efficiency, I also set about building my own. From Andy: An enabling environment significantly expands its participants’ capacity to do things they find meaningful and important. This blog is the consumption environment for mine. When we talk about an AI enabling environment the key is not to figure out how you can prompt the AI, but how the AI can prompt you.\n\n",
             "file_path": "_site/enable.html",
             "outgoing_links": [
+                "/podcast",
                 "/switch",
                 "/vim",
                 "/vim-for-writing",
@@ -1894,7 +1900,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/enabling-environment.md",
-            "doc_size": 16000
+            "doc_size": 18000
         },
         "/end-in-mind": {
             "url": "/end-in-mind",
@@ -2755,7 +2761,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 143000
+            "doc_size": 147000
         },
         "/manager-book-appendix": {
             "url": "/manager-book-appendix",
@@ -3216,7 +3222,9 @@
             "description": "To my amazement, I listen to podcasts. I think they’re pretty interesting, here are my notes on them.\n\n",
             "file_path": "_site/podcast.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/enable"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/podcast.md",
             "doc_size": 13000
@@ -3254,7 +3262,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/product.md",
-            "doc_size": 29000
+            "doc_size": 33000
         },
         "/productive": {
             "url": "/productive",
@@ -3743,6 +3751,17 @@
             "markdown_path": "_d/sublime.md",
             "doc_size": 16000
         },
+        "/suicide": {
+            "url": "/suicide",
+            "title": "Brain Attacks: A Better Model for Suicide",
+            "description": "“Igor, what advice would you give a 20-year-old that just found out their dad killed themselves?” Sadly, when I was 20, I got a call from a family friend saying “Igor, you want to sit down, this isn’t going to be fun to hear.” My dad had taken his own life.\n\n",
+            "file_path": "_site/suicide.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/suicide.md",
+            "doc_size": 12000
+        },
         "/sustainable-work": {
             "url": "/sustainable-work",
             "title": "I don't want to die knowing I spent too much time at work, and I bet you don't either",
@@ -3841,7 +3860,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 84000
+            "doc_size": 83000
         },
         "/td/advertising": {
             "url": "/td/advertising",
@@ -4543,7 +4562,7 @@
         "/writing": {
             "url": "/writing",
             "title": "Writing is Thinking",
-            "description": "Useful writing tells people something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart “If you’re thinking without writing, you’re only thinking about thinking”.\n\n",
+            "description": "Useful writing tells people (including, possibly most importantly you) something true and important that they didn’t already know in a way that leaves no doubt. Most writing is bad. Not due to spelling, punctuation or grammer, but due to lack of critical thinking. Critical thinking like analysis, synthesis, simplification, and presentation. To quote someone smart “If you’re thinking without writing, you’re only thinking about thinking”.\n\n",
             "file_path": "_site/writing.html",
             "outgoing_links": [
                 "/7h-concepts",
