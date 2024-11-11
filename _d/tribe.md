@@ -39,6 +39,7 @@ These folks have never heard of me, but I really enjoy following them.
   - She also shares TILs, and does really cool comics.
 - [Register Spill](https://registerspill.thorstenball.com/p/joy-and-curiosity-12)
   - Does a really cool Joy & Curiosity Posts
+- Someone who is proud of the [microfeatures they put into their blog](https://www.jonashietala.se/blog/2024/07/09/microfeatures_in_my_blog/)
 
 ### Interesting technical/management writing:
 
