@@ -21,6 +21,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
 - [Random papers](#random-papers)
   - [Adverserial Attacks on Aligned Models](#adverserial-attacks-on-aligned-models)
   - [Bijection Learning](#bijection-learning)
+- [OWASP Top 10 for LLMs](#owasp-top-10-for-llms)
 - [To Process](#to-process)
   - [Representation Engineering](#representation-engineering)
   - [Smart guy doing Anti Censorship](#smart-guy-doing-anti-censorship)
@@ -100,6 +101,21 @@ Key Findings:
 
 - The attack can be universal, meaning it works without instruction-specific modifications.
 - It is scale-agnostic, affecting models of different capabilities and becoming stronger with larger models.
+
+## OWASP Top 10 for LLMs
+
+As mapped to chapters in :qa
+
+- LLM01: Prompt injection | Attackers craft inputs to manipulate LLMs into executing unintended actions, leading to data exfiltration or misleading outputs. | Chapters 1 and 4
+- LLM02: Insecure output handling | Inadequate validation of LLM outputs before passing to other systems leads to security issues like XSS and SQL injection. | Chapter 7
+- LLM03: Training data poisoning | Malicious manipulation of training data to introduce vulnerabilities or biases into LLMs. | Chapters 1 and 8
+- LLM04: Model denial of service | Overloading LLM systems with complex requests to degrade performance or cause unresponsiveness. | Chapter 8
+- LLM05: Supply chain vulnerabilities | Vulnerabilities at any point in the LLM supply chain can lead to security breaches or biased outputs. | Chapter 9
+- LLM06: Sensitive information disclosure | Risks of including sensitive or proprietary information in LLM training sets, leading to potential disclosure. | Chapter 5
+- LLM07: Insecure plug-in design | Plug-in vulnerabilities can lead to manipulation of LLM behavior or access to sensitive data. | Chapter 9
+- LLM08: Excessive agency | Overextending capabilities or autonomy to LLMs can enable damaging actions from ambiguous LLM responses. | Chapter 7
+- LLM09: Overreliance | Trusting erroneous or misleading outputs can result in security breaches and misinformation. | Chapter 6
+- LLM10: Model theft | Unauthorized access and extraction of LLM models can lead to economic losses and data breaches. | Chapter 8 (discussed as model cloning)
 
 ## To Process
 
