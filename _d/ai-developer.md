@@ -21,6 +21,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
   - [AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)](#ai-maximalist-chatgpt-vs-ai-enabled-features-apple-intelligence)
   - [Memory](#memory)
 - [Use Cases and Applications](#use-cases-and-applications)
+  - [Prompt writing helpers:](#prompt-writing-helpers)
   - [Insights from OpenAI CPO:](#insights-from-openai-cpo)
 - [Mapping the AI Landscape](#mapping-the-ai-landscape)
   - [Capabilities: Large Context/Structured Output/Real Time](#capabilities-large-contextstructured-outputreal-time)
@@ -152,6 +153,10 @@ Pretty important topic - here's some notes on it from [langchain](https://blog.l
 - [Writing git commit messages](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/commit.py?plain=1#L19)
 - [Spellchecking a file at a time](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/gpt3.py#L748)
 - [Summarize changes in a repo over a period of time](https://github.com/idvorkin/nlp/blob/312cee852d96173751c6eaf83dd8bb3299603f13/commit.py#L19). E.g. [What I wrote some random week](https://gist.github.com/idvorkin/a701075a10d98dc41768765bc5b567ca)
+
+### Prompt writing helpers:
+
+[Claude's is awesome](https://console.anthropic.com/dashboard)
 
 ### Insights from OpenAI CPO:
 
