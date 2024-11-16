@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Start small/stay small/Re-Work"
-permalink: /staysmall
+title: "Start small,stay small/Re-Work"
+permalink: /staysmallstaysmall
 redirect_from:
   - /rework
-  - /staysmall
+  - /startsmall
 ---
 
 There is a world where growth is put on a pedestal. And there's another world where you think more about operating sustainably.
@@ -13,15 +13,15 @@ There is a world where growth is put on a pedestal. And there's another world wh
 <!-- vim-markdown-toc-start -->
 
 - [RE:Work](#rework)
-  - [1. **Start Small and Stay Simple**](#1-start-small-and-stay-simple)
-    - [2. **Focus on Doing**](#2-focus-on-doing)
-    - [3. **Work Smarter, Not Harder**](#3-work-smarter-not-harder)
-    - [4. **Marketing by Teaching**](#4-marketing-by-teaching)
-    - [5. **Reframe Competition**](#5-reframe-competition)
-    - [6. **Customer-Centric Approach**](#6-customer-centric-approach)
-    - [7. **Embrace Constraints**](#7-embrace-constraints)
-    - [8. **Forget Growth for Growth’s Sake**](#8-forget-growth-for-growths-sake)
-    - [9. **Culture and Team**](#9-culture-and-team)
+  - [1. Start Small and Stay Simple](#1-start-small-and-stay-simple)
+    - [2. Focus on Doing](#2-focus-on-doing)
+    - [3. Work Smarter, Not Harder](#3-work-smarter-not-harder)
+    - [4. Marketing by Teaching](#4-marketing-by-teaching)
+    - [5. Reframe Competition](#5-reframe-competition)
+    - [6. Customer-Centric Approach](#6-customer-centric-approach)
+    - [7. Embrace Constraints](#7-embrace-constraints)
+    - [8. Forget Growth for Growth’s Sake](#8-forget-growth-for-growths-sake)
+    - [9. Culture and Team](#9-culture-and-team)
   - [Start smalls stay small](#start-smalls-stay-small)
 
 <!-- vim-markdown-toc-end -->
@@ -70,7 +70,7 @@ There is a world where growth is put on a pedestal. And there's another world wh
 - **Constraints Inspire Creativity**: Limited resources force you to think innovatively.
 - **Don’t Wait for Perfection**: Constraints help you prioritize what’s essential.
 
-#### 8. **Forget Growth for Growth’s Sake**
+#### 8. Forget Growth for Growth’s Sake
 
 - **Small is Fine**: A small, profitable business is better than a large, unsustainable one.
 - **Grow Organically**: Focus on steady improvement rather than explosive expansion.
