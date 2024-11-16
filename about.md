@@ -88,6 +88,10 @@ _The Neovim project is loosely organized and structured. We follow a “fun driv
 
 A non-obvious bonus of this approach is you're always operating with high motivation resulting in high efficiency.
 
+Other great post:
+
+- [Obsessive problem solving after random wandering](https://world.hey.com/dhh/obsessive-problem-solving-followed-by-aimless-wandering-b8e94e0a).
+
 ### How do I get in touch?
 
 I love knowing smart, resilient, positive people. Connect and message me on [LinkedIn](/linkedin).
