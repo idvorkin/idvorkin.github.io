@@ -63,6 +63,8 @@ Google made [NotebookLM](https://notebooklm.google.com/) as a sleeper hit. Basic
 - Get tech depth from Simon: https://simonwillison.net/tags/notebooklm/
 - There is magic in how the hosts do the non-human banter. I lost the word for what this is.
 
+w00t - you can call the model [youself now](https://github.com/idvorkin/nlp/blob/a756b866b0cc1b6fdd24d2eb50cef9f46c749ed6/tts.py?plain=1#L169)
+
 ### Podcast as GPT Output
 
 That's what I think is ultimately so compelling about the 2-person podcast format as a UIUX exploration. It lifts two major "barriers to enjoyment" of LLMs. 1 Chat is hard. You don't know what to say or ask. In the 2-person podcast format, the question asking is also delegated to an AI so you get a lot more chill experience instead of being a synchronous constraint in the generating process. 2 Reading is hard and it's much easier to just lean back and listen.
