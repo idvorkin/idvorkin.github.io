@@ -16,8 +16,9 @@ Security is super interesting, AI is super interesting, the combination, is supe
 
 - [Awesome Video](#awesome-video)
 - [Attack Vectors](#attack-vectors)
-  - [Obfuscation The Prompts](#obfuscation-the-prompts)
+  - [Prompt Obfuscation](#prompt-obfuscation)
   - [Exfiltration Attacks](#exfiltration-attacks)
+  - [Visual Prompt Injection](#visual-prompt-injection)
 - [Random papers](#random-papers)
   - [Adverserial Attacks on Aligned Models](#adverserial-attacks-on-aligned-models)
   - [Bijection Learning](#bijection-learning)
@@ -39,9 +40,10 @@ Security is super interesting, AI is super interesting, the combination, is supe
 
 ## Attack Vectors
 
-### Obfuscation The Prompts
+### Prompt Obfuscation
 
 You can obfusicate the prompts to get past system prompts, and trick users into pasting something safe. By using different languages etc.
+
 
 ### Exfiltration Attacks
 
@@ -49,6 +51,17 @@ Get the AI to Tell Data it shouldn't. There are a few ways:
 
 1. Tell the user the system prompt
 1. Send a 3rd party content of the conversation (by say having it retrieve an image with details in the chat). NOTE: This requires the obfuscation from above - [Example](https://simonwillison.net/2024/Oct/22/imprompter/)
+
+### Visual Prompt Injection
+
+Now that we have vision models, we can do visual attacks!
+
+[Based on Lakera's research](https://www.lakera.ai/blog/visual-prompt-injections), visual prompt injections are a new type of attack where malicious instructions are embedded within images to manipulate AI vision models. Key examples include:
+
+1. **The Invisibility Cloak**: Using specific image patterns to make the model ignore parts of an image
+2. **Robot Impersonation**: Tricking the model into believing it's a robot rather than an AI
+3. **Advertisement Manipulation**: Making the model ignore or misinterpret advertisements
+
 
 ## Random papers
 
