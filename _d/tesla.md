@@ -5,26 +5,45 @@ permalink: /tesla
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/tesla-juggle.jpg
 ---
 
-I don't like to drive. I don't like to drive so much that I have it in my eulogy. Luckily, this fellow made a car that's optimized to driving you. In August 2023 I treated myself to a Tesla Model Y. It has lots of trade-offs, but the key for me is Autopilot (e.g. it driving me)
+I don't like to drive. I don't like to drive so much that I have it in my eulogy. Luckily, Elon Musk made a car that's optimized for driving you. In August 2023, I treated myself to a Tesla Model Y. It has lots of trade-offs, but the key for me is its Autopilot (e.g., it driving me).
 
 {% include link-blog-montage.html week="687" %}
 
 {% include blob_image_float_right.html src="blog/tesla-juggle.jpg" %}
 
-### What's autopilot like
+### What's autopilot like?
 
-The Tesla drives you. It's more nuanced than that. The Tesla does great on the highway, not nearly as good in the city. The mental model I use is it's like sharing the wheel with a teenager when you can, and should take over the driving for more complex situations. This teen has mastered clearly marked highways, but it doesn't like carpool lanes and gets confused in old cities like Seattle where roads are a mess and construction is everywhere. A common question I get on the autopilot is "Do you really trust the Tesla to drive?" I'm always amazed by that, humans are incredibly unsafe drivers. The Tesla is way better than that.
+Late 2024:
 
-Places Autopilot has trouble: - When a car pulls out in front you and you need to brake. It slows down "after it happens" - Curvy roads where there are "just for the turn" speed limits. It doesn't slow down for these
+It's pretty awesome at everything!
 
-### Why is it constantly beeping while driving slow
+Mid 2024:
 
-Here's a real "Elon treat". Basically the standard way to do near object collision avoidance is ultrasonic sensors. Tesla had a plan to remove those and do it with vision instead. Turns out, order of operations failed for Elon. He started by removing the sensors, before vision was ready. First it didn't work at all for like 6 months. Now it just works really poorly. Worse than not working because since it's always beeping you need to ignore it most of the time, so when it matters you don't listen.
+- You don't have to hold the wheel, BUT you couldn't wear sunglasses.
+
+Places Autopilot still has trouble:
+
+- It clipped my back wheel making a traffic circle (kind of scary).
+- Traffic cones—it gets a bit sketchy around them.
+
+Early 2024:
+
+The Tesla drives you. It's more nuanced than that. The Tesla does great on the highway, not nearly as good in the city. The mental model I use is it's like sharing the wheel with a teenager when you can and should take over the driving for more complex situations. This teen has mastered clearly marked highways, but it doesn't like carpool lanes and gets confused in old cities like Seattle where roads are a mess and construction is everywhere. A common question I get about Autopilot is, "Do you really trust the Tesla to drive?" I'm always amazed by that. Humans are incredibly unsafe drivers. The Tesla is way better than that.
+
+Places Autopilot has trouble:
+
+- When a car pulls out in front of you and you need to brake. It slows down "after it happens."
+- Curvy roads where there are "just for the turn" speed limits.
+- It doesn't slow down for these.
+
+### Why is it constantly beeping while driving slow?
+
+Here's a real "Elon treat." Basically, the standard way to do near-object collision avoidance is ultrasonic sensors. Tesla had a plan to remove those and do it with vision instead. Turns out, order of operations failed for Elon. He started by removing the sensors before vision was ready. First, it didn't work at all for like six months. Now it just works really poorly. Worse than not working, because since it's always beeping, you need to ignore it most of the time. So when it matters, you don't listen.
 
 ### Accessories
 
-- Get the mobile charger
-- Get the Tessie app - lets you unlock from your phone and get some better features
+- Get the mobile charger.
+- Get the Tessie app—it lets you unlock from your phone and get some better features.
 
 ### Charging
 
@@ -32,24 +51,45 @@ Here's a real "Elon treat". Basically the standard way to do near object collisi
 
 **Igor at his best:** Charging = Pee + Juggle + (Sleep or Meditate)
 
-_(Protip: Get a pillow, ear plugs, and an eye mask so you can charge yourself while you're charging the Tesla)_
+_(Protip: Get a pillow, earplugs, and an eye mask so you can charge yourself while you're charging the Tesla.)_
 
-Now the downside. Range and charging. Range is 330 miles, but you probably want AC or Heating and the 330 rating is pretty wishful thinking, so let's take off 20%, now you've got 270 miles. Now you normally only charge to 90%, and never feel safe going under 20%, so your effective range is like 180. That's 3 hours of driving. Totally fine for a day as long as you can charge overnight/at work. You charge 20 real miles an hour, so "filling up" takes 13 hours!!! Hopefully, you're planning a long day at work.
+Now the downside: range and charging. Range is 330 miles, but you probably want AC or heating, and the 330 rating is pretty wishful thinking, so let's take off 20%. Now you've got 270 miles. Normally, you only charge to 90%, and never feel safe going under 20%, so your effective range is like 180. That's three hours of driving. Totally fine for a day as long as you can charge overnight/at work. You charge 20 real miles an hour, so "filling up" takes 13 hours!!! Hopefully, you're planning a long day at work.
 
-This would make road trips impossible, except there's supercharging. These are like "fast gas stations for Teslas". Fast is relative to 13 hours, not to gasoline cars though, you still need 30 minutes to go from 20%->80%. This is reasonable, I often stop and stretch out for a bit every 3-4 hours anyways. Get lunch or dinner, of course! Except, your restaurant now needs to be walking distance to the supercharging station. There's always something there, but it's nice having a choice.
+This would make road trips impossible, except there's supercharging. These are like "fast gas stations for Teslas." Fast is relative to 13 hours, not to gasoline cars, though—you still need 30 minutes to go from 20%->80%. This is reasonable; I often stop and stretch out for a bit every 3-4 hours anyway. Get lunch or dinner, of course! Except your restaurant now needs to be walking distance to the supercharging station. There's always something there, but it's nice having a choice.
 
-Superchargers have 2 larger failures though 1/ there isn't a supercharger where you need one, so you need to plan routes that can take them, and those routes don't always exist. 2/ If the supercharger is full, you need to wait. And you need to wait in your car since you can't charge until a slot opens up.
+Superchargers have two larger failures though:
+1/ There isn't a supercharger where you need one, so you need to plan routes that can take them, and those routes don't always exist.
+2/ If the supercharger is full, you need to wait. And you need to wait in your car since you can't charge until a slot opens up.
 
-Fuel cost is nice too. It's dirt cheap to drive. We put 10,000 miles on the RAV-4, at 20 miles/gallon and $5/gallon fuel that's $2,500 in fuel. Same 10,000 miles on the Tesla, $200, tops. I'm told maintenance is way lower since you don't have an engine, so no oil changes.
+Fuel cost is nice too. It's dirt cheap to drive. We put 10,000 miles on the RAV-4. At 20 miles/gallon and $5/gallon fuel, that's $2,500 in fuel. Same 10,000 miles on the Tesla? $200, tops. I'm told maintenance is way lower since you don't have an engine, so no oil changes.
 
 ### Camping/Sleeping
 
-Turns out the Tesla is perfect for sleeping 1 or 2 people. Lay flat seats, camping mode (Climate control on), and a glass roof to gaze at the stars. You buy an air mattress, and you're ready to go.
+Turns out the Tesla is perfect for sleeping, 1 or 2 people. Lay-flat seats, camping mode (climate control on), and a glass roof to gaze at the stars. You buy an air mattress, and you're ready to go.
 
-Why not just sleep in a tent? 3 reasons, 1/ climate control 2/see the stars 3/ 0 tear down time.
+Why not just sleep in a tent? Three reasons:
+1/ Climate control.
+2/ See the stars.
+3/ Zero tear-down time.
 
-And best of all, if you only have 2 people, you don't even need to tear down the air mattress.
+And best of all, if you only have two people, you don't even need to tear down the air mattress.
 
-Here's Zach and I's virgin adventure:
+Here's Zach and my virgin adventure:
 
 {% include link-blog-montage.html week="732" %}
+
+### Fun stuff I've done while charging
+
+#### Sleeping
+
+{% include blob_image.html src="blog/tesla_sleep.jpg" %}
+
+#### Kettlebell swings!
+
+{% include youtube.html src="Vtv_c2Fc2GM" %}
+
+#### Juggling
+
+#### Meditating
+
+I don't have a good setup for this yet.
