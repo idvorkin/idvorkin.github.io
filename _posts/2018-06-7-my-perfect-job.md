@@ -126,8 +126,10 @@ NOTE: Things that a boss can do **that do not feel like** a lack of autonomy for
   - Play with new AI models/paradigms
   - Play with new tools (now all AI-assist, Python/data libraries)
   - Contribute to open source
-- Growth as presenter - I need to give talks, make vertical short form videos! - I love mixing magic and tech presentations
-  - Complex people/collaboration issues
+- Growth as presenter
+  - I need to give talks, make vertical short form videos!
+  - I love mixing magic and tech presentations
+- Complex people/collaboration issues
   - I really value when my boss brings me opportunities for the above.
 
 ### Purpose
