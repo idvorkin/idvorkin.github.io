@@ -90,6 +90,8 @@ Here's Zach and my virgin adventure:
 
 #### Juggling
 
+{% include blob_image.html src="blog/tesla-juggle.jpg" %}
+
 #### Meditating
 
 I don't have a good setup for this yet.
