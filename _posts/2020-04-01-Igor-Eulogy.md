@@ -87,7 +87,7 @@ In 2022, Igor biked over 3,000 miles, but in 2023 that number dropped below 300,
 
 Zach named the [Tesla Tony](/tesla) (Soprano), and Igor deluded himself believing he was still car-free. After all, Tony did the driving, Igor was only along for the ride.
 
-Igor integrated his roles into the Tesla: Taking the kids on many adventures([manic meatballs](/ig66/687), california coast, ashland, [yellow deli](/ig66/717), [camping](/ig66/732) ), Igor decorated Tony with flowers and bunnies, set it to make fart sounds whenever he received a text, and even gave Tony an AI agent with the Tony Soprano accent. Charging was a drag, but Igor made the most of it: spending his charging time juggling, meditating, sleeping, and even doing [kettlebell swings](https://youtu.be/Vtv_c2Fc2GM?si=mjetHIzF34BdRfKm).
+Igor integrated his roles into the Tesla: Taking the kids on many adventures([manic meatballs](/ig66/687), california coast, ashland, [yellow deli](/ig66/717), [camping](/ig66/732) ), Igor decorated Tony with flowers and bunnies, set it to make fart sounds whenever he received a text, and even gave [Tony an AI agent](https://github.com/idvorkin/tony_tesla) with the Tony Soprano accent. Charging was a drag, but Igor made the most of it: spending his charging time juggling, meditating, sleeping, and even doing [kettlebell swings](https://youtu.be/Vtv_c2Fc2GM?si=mjetHIzF34BdRfKm).
 
 <!--
 * To File
