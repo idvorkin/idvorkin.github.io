@@ -5,6 +5,10 @@ title: "Kettlebells - A rock with a handle"
 permalink: /kettlebell
 redirect_from:
   - /kb
+  - /kettlebells
+  - /kettlebells
+  - /heavy-clubs
+  - /heavy-club
   - /simple-and-sinister
 ---
 
