@@ -83,6 +83,12 @@ Igor was especially fond of his folding bicycle (even wrote a [song](http://ig66
 
 During Covid-19, Amelias was in a homeschooling pod, and Igor got to ride her to school everyday up a [very big hill](https://ig66.blogspot.com/2020/11/family-journal-548az-amelia-you-can-do.html).
 
+In 2022, Igor biked over 3,000 miles, but in 2023 that number dropped below 300, which his bestie foreshadowed by telling him, "Buying a Tesla for someone who wants to be a car-free spirit is like buying an ice cream maker for someone trying to lose weight."
+
+Zach named the [Tesla Tony](/tesla) (Soprano), and Igor deluded himself believing he was still car-free. After all, Tony did the driving, Igor was only along for the ride.
+
+Igor integrated his roles into the Tesla: Taking the kids on many adventures([manic meatballs](/ig66/687), california coast, ashland, [yellow deli](/ig66/717), [camping](/ig66/732) ), Igor decorated Tony with flowers and bunnies, set it to make fart sounds whenever he received a text, and even gave Tony an AI agent with the Tony Soprano accent. Charging was a drag, but Igor made the most of it: spending his charging time juggling, meditating, sleeping, and even doing [kettlebell swings](https://youtu.be/Vtv_c2Fc2GM?si=mjetHIzF34BdRfKm).
+
 <!--
 * To File
     * Igor had a tendency not to lock his bikes, and till he was 37 all of his bikes were stolen.
