@@ -119,31 +119,7 @@ In summary, trainers are worth it.
 
 #### Should I do kettlebells?
 
-_TODO: Make kettlebells its own page_
-
-When I started working out with a trainer, they introduced me to kettlebells. Kettlebells are a rock with a handle. What could be cooler than that?
-
-I instantly liked Turkish Get Ups (TGUs) they have a nice flow and feel great. The trainer tried to get me to do swings, but I'm afraid of ballistic exercises so declined.
-
-A year later I decided to try them, and I love them! At 44 every day I woke up my back would be stiff till I stretched out. When I started doing swings, the next day my back was as loose as a 30-year-old's :)
-
-Swings:
-
-{% include youtube.html src="e-gsAvLdi68" %}
-
-I also wrote an [app](https://github.com/idvorkin/video-edit/blob/3676fd9d827ee881eb90a1914ee21ab37e417756/yolo.py?plain=1#L112) to make sure my swings were good:
-
-{% include youtube.html src="BD6Sys1GIuU?si=tVnJMGwbD34SPFw5" %}
-
-TGUs:
-
-- Video coming
-
-I'm applying a goal from a book called Kettlebell Simple and Sinister. Targets:
-
-- 10x10 @ 32 KG Two Arm Swings (100!) (Achieved November '23), but then regressed due to injury.
-- 10x10 @ 32 KG (50 per arm) One Arm Swings
-- 5x1 @ 32KG -(5 per arm) Achieved January '24
+{%include summarize-page.html src="/kettlebell" %}
 
 #### What's it like waking up at 5 am
 

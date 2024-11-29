@@ -105,6 +105,7 @@
         "/insecurity": "/insecure",
         "/intern-llm": "/genai-talk",
         "/jupyter": "/pandas",
+        "/kb": "/kettlebell",
         "/life-chapters": "/chapters",
         "/life-stages": "/chapters",
         "/lisp": "/sicp",
@@ -165,6 +166,7 @@
         "/remotework": "/remote-work",
         "/resistance": "/d/resistance",
         "/responsible": "/be-proactive",
+        "/rework": "/staysmallstaysmall",
         "/root-cause-analysis": "/coe",
         "/sat": "/dsat",
         "/satisfaction": "/happy",
@@ -173,10 +175,9 @@
         "/savings": "/money",
         "/savor": "/happy",
         "/search-inside-yourself": "/siy",
+        "/simple-and-sinister": "/kettlebell",
         "/sleepless": "/insomnia",
         "/som": "/sleight-of-mouth",
-        "/SoM": "/sleight-of-mouth",
-        "/SOM": "/sleight-of-mouth",
         "/stages": "/chapters",
         "/stewardship": "/delegate",
         "/strong": "/physical-health",
@@ -585,7 +586,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-security.md",
-            "doc_size": 16000
+            "doc_size": 20000
         },
         "/ai-testing": {
             "url": "/ai-testing",
@@ -641,7 +642,7 @@
                 "/mood"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/anger.md",
+            "markdown_path": "_d/bells.md",
             "doc_size": 14000
         },
         "/anxiety": {
@@ -669,7 +670,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/anxiety.md",
+            "markdown_path": "_d/tribe.md",
             "doc_size": 20000
         },
         "/anxiety-management": {
@@ -1855,7 +1856,7 @@
                 "/addiction"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/elder.md",
+            "markdown_path": "_d/suicide.md",
             "doc_size": 21000
         },
         "/emotional-health": {
@@ -2010,11 +2011,16 @@
                 "/being-a-great-manager",
                 "/bike",
                 "/cache",
+                "/ig66/687",
+                "/ig66/717",
+                "/ig66/732",
                 "/job",
                 "/magic",
                 "/physical-health",
                 "/siy",
                 "/tags",
+                "/terzepatide",
+                "/tesla",
                 "/toysfortots"
             ],
             "incoming_links": [
@@ -2035,7 +2041,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
-            "doc_size": 30000
+            "doc_size": 31000
         },
         "/facebook": {
             "url": "/facebook",
@@ -2548,8 +2554,8 @@
         },
         "/job": {
             "url": "/job",
-            "title": "My Dream job",
-            "description": "In my dream job I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break you might see me juggling, practicing magic, or riding my folding bike - often in the office.\n\n",
+            "title": "My Dream Job",
+            "description": "In my dream job, I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break, you might see me juggling, practicing magic, or riding my folding bike—often in the office.\n\n",
             "file_path": "_site/job.html",
             "outgoing_links": [
                 "/Human-Meetings",
@@ -2570,7 +2576,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
-            "doc_size": 19000
+            "doc_size": 22000
         },
         "/job-hunt-stress": {
             "url": "/job-hunt-stress",
@@ -2625,6 +2631,19 @@
             "redirect_url": "",
             "markdown_path": "_d/joy.md",
             "doc_size": 20000
+        },
+        "/kettlebell": {
+            "url": "/kettlebell",
+            "title": "Kettlebells - A rock with a handle",
+            "description": "There’s no way I’m swinging that thing between my legs, I’m going to kill my back. When I started working out with a trainer, they tried to get me to do a kettlebell swing, and I was like no way. Then they spend 3 weeks teaching me Turkish Getups, which I absolutely loved. Then I read simple and sinister, and now I’ve achieved timeless simple, and do heavy clubs instead of halos.\n\n",
+            "file_path": "_site/kettlebell.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/physical-health"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/bells.md",
+            "doc_size": 12000
         },
         "/last-year": {
             "url": "/last-year",
@@ -2998,7 +3017,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/taxes.md",
-            "doc_size": 32000
+            "doc_size": 34000
         },
         "/mood": {
             "url": "/mood",
@@ -3196,6 +3215,7 @@
                 "/diet",
                 "/insomnia",
                 "/irl",
+                "/kettlebell",
                 "/sharpen-the-saw",
                 "/sleep",
                 "/tech-health-toys",
@@ -3214,7 +3234,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
-            "doc_size": 23000
+            "doc_size": 22000
         },
         "/podcast": {
             "url": "/podcast",
@@ -3860,7 +3880,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 83000
+            "doc_size": 84000
         },
         "/td/advertising": {
             "url": "/td/advertising",
@@ -4200,6 +4220,7 @@
             "incoming_links": [
                 "/d/time-off-2024-04",
                 "/diet",
+                "/eulogy",
                 "/physical-health",
                 "/voices"
             ],
@@ -4210,18 +4231,19 @@
         "/tesla": {
             "url": "/tesla",
             "title": "Tony (Tessie) the Tesla",
-            "description": "I don’t like to drive. I don’t like to drive so much that I have it in my eulogy. Luckily, this fellow made a car that’s optimized to driving you. In August 2023 I treated myself to a Tesla Model Y. It has lots of trade-offs, but the key for me is Autopilot (e.g. it driving me)\n\n",
+            "description": "I don’t like to drive. I don’t like to drive so much that I have it in my eulogy. Luckily, Elon Musk made a car that’s optimized for driving you. In August 2023, I treated myself to a Tesla Model Y. It has lots of trade-offs, but the key for me is its Autopilot (e.g., it driving me).\n\n",
             "file_path": "_site/tesla.html",
             "outgoing_links": [],
             "incoming_links": [
                 "/d/time-off-2024-02",
+                "/eulogy",
                 "/irl",
                 "/mania",
                 "/operating-manual"
             ],
             "redirect_url": "",
             "markdown_path": "_d/tesla.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/testing": {
             "url": "/testing",
