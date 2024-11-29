@@ -335,8 +335,31 @@ _And what is fear of need by need itself? Is not dread of thirst when your well 
 
 ### How much is 1%
 
-- 1% of household AGI (gross household income) [475K](https://dqydj.com/average-median-top-household-income-percentiles/) amazingly up from 445K in 2018.
-- 1% of wages = [737K](https://www.investopedia.com/personal-finance/how-much-income-puts-you-top-1-5-10/)
+From [ChatGPT](https://gist.github.com/idvorkin/df0ec94f8bbadb26d99ebd54b55b6358)
+
+Absoulte
+
+| Year | Top 1% | Top 5% | Top 20% | Top 50% |
+| ---- | ------ | ------ | ------- | ------- |
+| 2000 | $280K  | $125K  | $65K    | $42K    |
+| 2004 | $300K  | $140K  | $72K    | $45K    |
+| 2008 | $345K  | $155K  | $78K    | $47K    |
+| 2012 | $394K  | $173K  | $91K    | $51K    |
+| 2016 | $450K  | $195K  | $100K   | $58K    |
+| 2020 | $531K  | $220K  | $110K   | $68K    |
+| 2024 | $632K  | $250K  | $120K   | $81K    |
+
+Relative
+
+| Year | % Gain 1%      | % Gain 5%     | % Gain 20%    | % Gain 50%    |
+| ---- | -------------- | ------------- | ------------- | ------------- |
+| 2000 | —              | —             | —             | —             |
+| 2004 | 7.1% (7.1%)    | 12.0% (12.0%) | 10.8% (10.8%) | 7.1% (7.1%)   |
+| 2008 | 15.0% (23.2%)  | 10.7% (24.7%) | 8.3% (20.1%)  | 4.4% (11.8%)  |
+| 2012 | 14.2% (41.0%)  | 11.9% (39.3%) | 16.9% (40.0%) | 8.5% (21.3%)  |
+| 2016 | 14.2% (62.5%)  | 12.4% (55.6%) | 9.7% (52.7%)  | 12.9% (37.7%) |
+| 2020 | 18.0% (94.8%)  | 12.8% (74.0%) | 10.0% (67.9%) | 17.2% (61.7%) |
+| 2024 | 18.9% (134.3%) | 13.6% (98.5%) | 9.1% (82.2%)  | 19.4% (91.1%) |
 
 ## Other Resources
 
