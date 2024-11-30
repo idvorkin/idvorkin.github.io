@@ -19,6 +19,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
   - [Prompt Obfuscation](#prompt-obfuscation)
   - [Exfiltration Attacks](#exfiltration-attacks)
   - [Visual Prompt Injection](#visual-prompt-injection)
+  - [Flow Jacking](#flow-jacking)
 - [Random papers](#random-papers)
   - [Adverserial Attacks on Aligned Models](#adverserial-attacks-on-aligned-models)
   - [Bijection Learning](#bijection-learning)
@@ -44,7 +45,6 @@ Security is super interesting, AI is super interesting, the combination, is supe
 
 You can obfusicate the prompts to get past system prompts, and trick users into pasting something safe. By using different languages etc.
 
-
 ### Exfiltration Attacks
 
 Get the AI to Tell Data it shouldn't. There are a few ways:
@@ -62,6 +62,55 @@ Now that we have vision models, we can do visual attacks!
 2. **Robot Impersonation**: Tricking the model into believing it's a robot rather than an AI
 3. **Advertisement Manipulation**: Making the model ignore or misinterpret advertisements
 
+### Flow Jacking
+
+[Original Research](https://gist.github.com/idvorkin/0fddad99910eb949da0b804ca1b5d2a6)
+
+**Flow Jacking** is a novel attack method targeting systems that integrate Large Language Models (LLMs). These systems often rely on a multi-layered architecture where a separate post-processing layer censors or modifies LLM outputs to ensure safety. Flow Jacking exploits the vulnerabilities inherent in this layered approach by targeting the interaction between the LLM, the censorship layer, and the user interface.
+
+Flow Jacking encompasses two main attack types: **Second Thoughts** and **Stop and Roll**.
+
+**How Multi-Layered LLM Systems Work**
+Many LLM-powered systems rely on a two-step safety mechanism:
+
+1. **LLM Output Generation**: The model generates a response based on the user query.
+2. **Post-Processing Layer**: A secondary system (e.g., a content filter or moderation tool) reviews, censors, or retracts unsafe or harmful outputs before presenting them to users.
+
+For example, Microsoft Copilot and Claude 2 employ such mechanisms, where outputs deemed harmful are displayed momentarily and then redacted by the system. This design assumes that post-processing layers can effectively mitigate harm after content is generated.
+
+**Attack Techniques**
+
+1. Second Thoughts Mechanism
+
+The **Second Thoughts** attack exploits systems that rely on retraction mechanisms to mitigate harmful content. These mechanisms delete or censor outputs after they have already been displayed. Key issues include:
+
+- **Exposure Window**: Even brief exposure allows users to capture the content using methods like copying, screen recording, or browser developer tools.
+- **Data Persistence**: Once harmful content is generated, it cannot be "unseen" or fully removed from a user's control.
+
+For instance, if an LLM generates sensitive or harmful content and displays it for a fraction of a second before retracting it, a malicious user could easily record their screen or intercept the output using automated tools.
+
+2. Stop and Roll Attack
+
+The **Stop and Roll** attack bypasses the retraction mechanism by exploiting timing vulnerabilities. By interrupting the LLM system mid-query—before the censorship layer can act—attackers can prevent unsafe outputs from being redacted. This is often achieved by:
+
+- **Pausing or Stopping Queries**: Manipulating the user interface (e.g., canceling a query or disconnecting from the server) at the right moment.
+- **Automation Tools**: Using scripts or bots to intercept outputs during their brief exposure.
+
+This method demonstrates how reliance on post-processing layers creates exploitable timing gaps.
+
+**Why Post-Processing Layers Fail**
+Retraction and post-processing mechanisms often provide the illusion of safety without addressing fundamental issues:
+
+1. **Content Accessibility**: Once generated, harmful content can always be captured, regardless of retraction.
+2. **Timing Exploits**: Post-generation censorship introduces timing gaps that skilled adversaries can exploit.
+3. **Safety Theatre**: These mechanisms serve more as a symbolic gesture to reassure users rather than a robust solution to mitigate harm.
+
+**Countermeasures Against Flow Jacking**
+To effectively mitigate Flow Jacking, system designers must move beyond reactive censorship and adopt proactive strategies, such as:
+
+- **Pre-Generation Safety**: Ensure that LLMs are trained and fine-tuned to avoid generating harmful content in the first place, reducing reliance on post-processing layers.
+- **Real-Time Moderation**: Implement inline moderation techniques that evaluate content during generation rather than after.
+- **Robust Timing Controls**: Close timing gaps by ensuring that outputs are only displayed after passing through the moderation layer.
 
 ## Random papers
 
