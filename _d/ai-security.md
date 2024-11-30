@@ -16,7 +16,8 @@ Security is super interesting, AI is super interesting, the combination, is supe
 
 - [Awesome Video](#awesome-video)
 - [Attack Vectors](#attack-vectors)
-  - [Prompt Obfuscation](#prompt-obfuscation)
+  - [Prompt Obfuscation for all attacks](#prompt-obfuscation-for-all-attacks)
+  - [Jail Breaking](#jail-breaking)
   - [Exfiltration Attacks](#exfiltration-attacks)
   - [Visual Prompt Injection](#visual-prompt-injection)
   - [Flow Jacking](#flow-jacking)
@@ -41,9 +42,13 @@ Security is super interesting, AI is super interesting, the combination, is supe
 
 ## Attack Vectors
 
-### Prompt Obfuscation
+### Prompt Obfuscation for all attacks
 
 You can obfusicate the prompts to get past system prompts, and trick users into pasting something safe. By using different languages etc.
+
+### Jail Breaking
+
+Any time you make the AI do something it isn't intended to do. Most attacks are some form of jail breaking.
 
 ### Exfiltration Attacks
 
