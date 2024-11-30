@@ -256,6 +256,19 @@ Igor also realized that writing about kids in an eulogy is hard as kids are cons
 
 ### Father to Amelia - an incredible girl
 
+Things I cherish with Amelia @ 10:
+
+- Seeing how she's unique and brave (Wearing a tail, and sometimes even a mask)
+- Seeing how emotionally mature she is (She wants to be a couples counselor)
+- Seeing how strong and physical she is (She'll do quadrupedics on the trampoline, she'll carry the kettlebells)
+- Taking her out to do photography
+- Long walks in the arboretum where we talk about her challenges, pride, and adventures
+- Seeing how independent she is
+- Seeing her love of sharks
+  - Knowing so many shark facts
+  - Making her own shark suit
+  - Having a bunch of shark stuffies
+
 Things I cherish with Amelia @ 9:
 
 - Seeing how kind and wise she is
@@ -266,28 +279,49 @@ Things I cherish with Amelia @ 6:
 
 - Roller Skating
 - Swimming
-- Taking for bike rides
-- Reading her Matilda
-- Helping her Spell
+- Taking her for bike rides
+- Reading her _Matilda_
+- Helping her spell
 
 When she was in 1st grade she was very behind in her reading. She barely knew the alphabet and hated reading, and Tori has some dyslexia in her family. In my head I diagnosed her as being dyslexic, and spent a bunch of time studying how to support a dyslexic child, and how best to equip her in a reading world. Luckily, I was introduced to special decodable reading books, and spent 30 minutes painfully reading with Amelia. She went from hating to read even simple words like cat, to volunteering to read to me, to wanting to know how the story ended, to volunteering to read to Yelena and Baba. Watching her pride in seeing how much of a story she'd read, and getting to start a new book - wowsers!
 
 ### Father to Zach - a wonderful boy
 
+Things I cherish with Zach @ 14:
+
+- Seeing him flourish in high school:
+  - Improv club
+  - Fighting for a fair high school election
+  - Comfort riding the bus
+- Seeing him become a rower:
+  - Leaning in when he fell out of the boat
+  - Getting strong with land days
+  - Excitement about his strength from rowing translating to other physical activities
+- Seeing him host his friends:
+  - Being a DM for D&D
+  - Tea parties, including the baking
+  - Helping his friends with their homework
+- Seeing him have close friends:
+  - Max, Tavi, and the twins
+  - The D&D kids
+- Healthy pride in being superior:
+  - Reading hard books
+  - Not wearing headphones to be present.
+
 Things I cherish with Zach @ 12.5:
 
-- Getting to program w/Zach. He's been taking the programming course from RICE university
-- Taking Zach Kayaking
-- Seeing Zach flourish
-- Making a movie with Zach
-- Seeing Zach wake up at 5am, and do an exercise bike daily.
+- Getting to program w/Zach. He's been taking the programming course from RICE University.
+- Taking Zach kayaking.
+- Seeing Zach flourish.
+- Making a movie with Zach.
+- Seeing Zach wake up at 5 a.m. and do an exercise bike daily.
 
 Things I cherish with Zach @ 10:
 
 - Working on his website together.
-- Setting up Patreon. Zach was the first to monetize, and makes more on Patreon then he does on his allowance.
-- Seeing how Zach would setup his discord services and stream
-- Seeing Zach use GitHub
+- Setting up Patreon. Zach was the first to monetize and makes more on Patreon than he does on his allowance.
+- Seeing how Zach would set up his Discord services and stream.
+- Seeing Zach use GitHub.
 
 <!--
 -### Friend, Mentee, and Mentor
