@@ -14,14 +14,14 @@ Be a class act. Fantatic advice.
 <!-- vim-markdown-toc-start -->
 
 - [The practices](#the-practices)
-    - [Seek first to understand](#seek-first-to-understand)
-    - [Be compassionate](#be-compassionate)
-    - [Appreciate](#appreciate)
-    - [Do something touching](#do-something-touching)
-    - [Other](#other)
+  - [Seek first to understand](#seek-first-to-understand)
+  - [Be compassionate](#be-compassionate)
+  - [Appreciate](#appreciate)
+  - [Do something touching](#do-something-touching)
+  - [Other](#other)
 - [Great Examples](#great-examples)
-    - [Not taking the bait.](#not-taking-the-bait)
-    - [Being a leader](#being-a-leader)
+  - [Not taking the bait.](#not-taking-the-bait)
+  - [Being a leader](#being-a-leader)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -49,6 +49,7 @@ Not quite the same, but pretty related
 ### Other
 
 - Never speak about someone behind their back what you wouldn't say to their face.
+- Why you want to [dismiss others](https://sive.rs/dis), feels good, feel superior, easy.
 
 ## Great Examples
 
