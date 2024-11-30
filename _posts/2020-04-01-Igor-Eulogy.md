@@ -230,6 +230,7 @@ Igor also realized that writing about kids in an eulogy is hard as kids are cons
 - Watching them do things together: There is no feeling better then seeing your kids do things together. When Amelia is scared and Zach lets her sleep in his bed, melts Igor's heart.
 - School: Walking the kids to school daily, going to all the field trips, doing magic for kids.
 - Enjoying them being proud of their dad: Greedy yes, but true none the less.
+  - Amazing when the kids encourage me to do exercise or magic
 
 <!--
 - To File
@@ -264,6 +265,8 @@ Things I cherish with Amelia @ 10:
 - Taking her out to do photography
 - Long walks in the arboretum where we talk about her challenges, pride, and adventures
 - Seeing how independent she is
+  - How she goes on long bike rides (story of Math Agency bike riding)
+  - How she does quadrobics at night bringing her string and mushroom knife
 - Seeing her love of sharks
   - Knowing so many shark facts
   - Making her own shark suit
@@ -296,6 +299,7 @@ Things I cherish with Zach @ 14:
 - Seeing him become a rower:
   - Leaning in when he fell out of the boat
   - Getting strong with land days
+  - Being able to do exercising with him.
   - Excitement about his strength from rowing translating to other physical activities
 - Seeing him host his friends:
   - Being a DM for D&D
@@ -307,6 +311,17 @@ Things I cherish with Zach @ 14:
 - Healthy pride in being superior:
   - Reading hard books
   - Not wearing headphones to be present.
+
+* Seeing how he's curious and with courage
+  - Always wants to try stuff (Yellow Deli, Stopping at new creamery; Stopping to enjoy Lookout point)
+* Getting to engage with him as a grown up
+  - Listening to podcasts together
+
+- Very much looking forward to him teaching me more and more
+  - Words
+  - Politics
+  - Social Sciences
+  - Evenntually, new tech
 
 Things I cherish with Zach @ 12.5:
 
