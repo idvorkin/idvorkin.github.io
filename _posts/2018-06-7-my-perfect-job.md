@@ -15,7 +15,7 @@ tags:
 
 In my dream job, I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break, you might see me juggling, practicing magic, or riding my folding bike—often in the office.
 
-## Through various axes
+## My Dream job via various lenses
 
 ### Engineering Manager or Tech Lead: Engineering Manager
 
@@ -66,7 +66,7 @@ _One of the things I’ve always found is that you’ve got to start with the cu
 
 Technology leaders need to divide their time among the business, experiences, and technology. While each of these is interesting, at this point in my career, my technology skill is well-developed, and now I want to focus on building my business and experiences muscles.
 
-### Regardless of my job, I will be successful when:
+### Regardless of my job, I will be successful when
 
 **My manager skills are continuously improving**
 
@@ -92,7 +92,7 @@ Technology leaders need to divide their time among the business, experiences, an
 
 **Going to work is like hanging out with friends.**
 
-## What motivates me (The Drive Model)
+## My dream job via a motivation lens
 
 ### Intrinsic vs Extrinsic Motivation
 
@@ -137,9 +137,9 @@ NOTE: Things that a boss can do **that do not feel like** a lack of autonomy for
 - People Axis: Grow team + Help org
 - Product Impact: Well-being, reduce loneliness, build relationships
 
----
+## <!--
 
-### Very entertaining references on engineering jobs in the industry.
+### Very entertaining references on engineering jobs in the industry
 
 _I'll need to create a separate post from this, but for now I'll just hold these references._
 
@@ -166,3 +166,4 @@ _After that, early employers will run away in horror, writing unveiling posts on
 ---
 
 _The ability to get things done has one unpleasant feature: it reduces with the growth of wisdom. And there's nothing you can do about it. "I'm too old for this shit" mode on._
+-->
