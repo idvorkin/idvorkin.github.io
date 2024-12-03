@@ -137,7 +137,7 @@ NOTE: Things that a boss can do **that do not feel like** a lack of autonomy for
 - People Axis: Grow team + Help org
 - Product Impact: Well-being, reduce loneliness, build relationships
 
-## <!--
+<!--
 
 ### Very entertaining references on engineering jobs in the industry
 
