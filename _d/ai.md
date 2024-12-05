@@ -11,11 +11,11 @@ A landing page for all my ai pages - a nice jumping off point (especially from t
 
 - [Posts](#posts)
 - [Ideas/Thoughts/Tidbits](#ideasthoughtstidbits)
-    - [Examples of Alchamey](#examples-of-alchamey)
-    - [How do LLMs think?](#how-do-llms-think)
-    - [LLM training efficiency](#llm-training-efficiency)
-    - [It's not good enough today](#its-not-good-enough-today)
-    - [Where will we get the OOMs - Order Of Magnitude Improvements](#where-will-we-get-the-ooms---order-of-magnitude-improvements)
+  - [Examples of Alchamey](#examples-of-alchamey)
+  - [How do LLMs think?](#how-do-llms-think)
+  - [LLM training efficiency](#llm-training-efficiency)
+  - [It's not good enough today](#its-not-good-enough-today)
+  - [Where will we get the OOMs - Order Of Magnitude Improvements](#where-will-we-get-the-ooms---order-of-magnitude-improvements)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -39,6 +39,8 @@ A landing page for all my ai pages - a nice jumping off point (especially from t
 {%include summarize-page.html src="/ai-journal" %}
 
 {%include summarize-page.html src="/ai-testing" %}
+
+{%include summarize-page.html src="/ai-bm" %}
 
 {%include summarize-page.html src="/ml" %}
 
