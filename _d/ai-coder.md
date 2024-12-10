@@ -23,6 +23,7 @@ Buckle up, code warriors! AI's grand adventure in the coding realm has been noth
   - [Should I code once we have AI?](#should-i-code-once-we-have-ai)
     - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
     - [How can you use AI - Research Assistant vs Code Writer](#how-can-you-use-ai---research-assistant-vs-code-writer)
+  - [AI for junior vs Senior Developers](#ai-for-junior-vs-senior-developers)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -119,3 +120,24 @@ _It occurs to me this applies to all vocations, not just programming_
 Mostly lifted from this guy:
 
 {%include youtube.html src="mTa2d3OLXhg?start=5160" %}
+
+### AI for junior vs Senior Developers
+
+Good article on this: [The 70% AI coding problem](https://gist.github.com/idvorkin/bf72b861c826e67ad460f06f1ccb9afc):
+
+Core Observations:
+- AI tools dramatically increase coding speed but don't necessarily improve software quality
+- There's a "70% problem" where getting the last 30% of functionality is disproportionately difficult
+- Experienced developers benefit more from AI tools than beginners
+- The tools are better at accelerating known patterns than teaching new concepts
+
+Key Usage Patterns:
+- "Bootstrappers" use AI to quickly generate MVPs and prototypes
+- "Iterators" use AI for daily development tasks like code completion
+- Senior developers constantly refactor and improve AI-generated code
+- Junior developers tend to accept AI output with less critical review
+
+
+
+
+
