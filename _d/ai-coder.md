@@ -24,6 +24,8 @@ Buckle up, code warriors! AI's grand adventure in the coding realm has been noth
     - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
     - [How can you use AI - Research Assistant vs Code Writer](#how-can-you-use-ai---research-assistant-vs-code-writer)
   - [AI for junior vs Senior Developers](#ai-for-junior-vs-senior-developers)
+    - [The 70% AI coding problem:](#the-70-ai-coding-problem)
+    - [The death of the stubborn programmer](#the-death-of-the-stubborn-programmer)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -123,21 +125,54 @@ Mostly lifted from this guy:
 
 ### AI for junior vs Senior Developers
 
-Good article on this: [The 70% AI coding problem](https://gist.github.com/idvorkin/bf72b861c826e67ad460f06f1ccb9afc):
+#### [The 70% AI coding problem](https://gist.github.com/idvorkin/bf72b861c826e67ad460f06f1ccb9afc):
 
 Core Observations:
+
 - AI tools dramatically increase coding speed but don't necessarily improve software quality
 - There's a "70% problem" where getting the last 30% of functionality is disproportionately difficult
 - Experienced developers benefit more from AI tools than beginners
 - The tools are better at accelerating known patterns than teaching new concepts
 
 Key Usage Patterns:
+
 - "Bootstrappers" use AI to quickly generate MVPs and prototypes
 - "Iterators" use AI for daily development tasks like code completion
 - Senior developers constantly refactor and improve AI-generated code
 - Junior developers tend to accept AI output with less critical review
 
+#### [The death of the stubborn programmer](https://gist.github.com/idvorkin/42f7441a2e9aa1171faa9c0579a7aa2d)
 
+The Evolution of Programming and Automation
 
+- The article discusses the changing landscape of software development due to the rise of AI tools, particularly Large Language Models (LLMs)
+- LLMs can now handle many repetitive "leaf-node" tasks like writing libraries or performing basic updates
+- Higher-level tasks, involving planning and coordination, remain for humans, but these are typically more complex and harder to learn
+- This shift threatens the traditional growth path of junior developers, who used to gain experience through simpler tasks
 
+Chat-Oriented Programming (CHOP)
 
+- Chat-Oriented Programming (CHOP) refers to using LLMs through chat interfaces to handle programming tasks
+- CHOP allows developers to "print" leaf tasks quickly by interacting with LLMs, thus boosting productivity by at least 30% in many cases
+- Despite its benefits, CHOP has challenges, including a steep learning curve, lack of established teaching methods, and reliance on human context integration
+
+The Debate Around CHOP and Autonomous Agents
+
+- Some believe CHOP is a transitional phase, arguing that fully autonomous agents will soon take over more of the task graph
+- Others, including the author, are skeptical, highlighting the slow and incremental nature of technological advancements
+- The author emphasizes the incremental growth of CHOP and its potential to remain relevant for years
+
+Impact on Junior Developers and Career Growth
+
+- Junior developers face difficulties as LLMs take over the simpler tasks they traditionally used to build their skills
+- The career pipeline from junior to senior developer roles is disrupted, raising questions about how new developers will acquire the necessary experience
+
+Industry Transformation and Productivity
+
+- CHOP is changing how programming is conducted, with significant productivity boosts for companies and individuals
+- Enterprises must adapt to these tools to remain competitive, but the transition requires investment in learning and tool integration
+
+Challenges in Measurement and Adoption
+
+- Measuring the effectiveness of CHOP and other AI coding tools remains a challenge for enterprises
+- The lack of standardized metrics or established best practices for CHOP adoption complicates its integration in professional environments
