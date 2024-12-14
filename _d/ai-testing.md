@@ -21,6 +21,7 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
   - [Human-based blind taste tests Chatbot arena](#human-based-blind-taste-tests-chatbot-arena)
   - [Eval Data Sets](#eval-data-sets)
 - [Testing Theory](#testing-theory)
+  - [Good books](#good-books)
   - [Simplest form of testing](#simplest-form-of-testing)
   - [Wrinkle - A/B Testing](#wrinkle---ab-testing)
   - [Wrinkle - No Known Answer](#wrinkle---no-known-answer)
@@ -122,6 +123,10 @@ Building good "generic" eval data sets is hard, here are some:
 - [Big Bench](https://github.com/suzgunmirac/BIG-Bench-Hard/tree/main) - a bunch of hard question prompts
 
 ## Testing Theory
+
+### Good books
+
+- [Taming LLMs on Evals](https://www.souzatharsis.com/tamingLLMs/notebooks/evals.html)
 
 ### Simplest form of testing
 
