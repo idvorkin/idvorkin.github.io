@@ -22,3 +22,11 @@ Prefer descriptive variable names over comments.
 # Blog Editting
 
 This project also contains a jekyll blog, you'll often be expected to edit the blog content
+
+- \_d is drafts, but default put stuff in drafts folder so it's a simpler filename.
+- Always include a markdown talbe of contents, and a nice permalink title
+
+# Writing style
+
+- Fun and quirky
+- Technical, but not boring
