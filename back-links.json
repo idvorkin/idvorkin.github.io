@@ -98,6 +98,8 @@
         "/happiness": "/happy",
         "/healthspan": "/last-year",
         "/heap - potporri - potpori": "/random-idea",
+        "/heavy-club": "/kettlebell",
+        "/heavy-clubs": "/kettlebell",
         "/humanity": "/touching",
         "/idle-loop": "/idle",
         "/imposter": "/insecure",
@@ -106,6 +108,7 @@
         "/intern-llm": "/genai-talk",
         "/jupyter": "/pandas",
         "/kb": "/kettlebell",
+        "/kettlebells": "/kettlebell",
         "/life-chapters": "/chapters",
         "/life-stages": "/chapters",
         "/lisp": "/sicp",
@@ -450,6 +453,7 @@
             "outgoing_links": [
                 "/ai-art",
                 "/ai-bestie",
+                "/ai-bm",
                 "/ai-coder",
                 "/ai-developer",
                 "/ai-image",
@@ -498,6 +502,19 @@
             "markdown_path": "_d/ai-bestie.md",
             "doc_size": 18000
         },
+        "/ai-bm": {
+            "url": "/ai-bm",
+            "title": "AI Security",
+            "description": "Business Models drive the world, and they’ll drive the world of AI too.\n\n",
+            "file_path": "_site/ai-bm.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/ai"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/ai-business-model.md",
+            "doc_size": 11000
+        },
         "/ai-coder": {
             "url": "/ai-coder",
             "title": "AI code writer",
@@ -511,7 +528,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/ai-developer": {
             "url": "/ai-developer",
@@ -585,8 +602,8 @@
                 "/ai-journal"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/ai-security.md",
-            "doc_size": 20000
+            "markdown_path": "_d/ai-business-model.md",
+            "doc_size": 24000
         },
         "/ai-testing": {
             "url": "/ai-testing",
@@ -603,7 +620,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-testing.md",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/amazon": {
             "url": "/amazon",
@@ -1130,6 +1147,17 @@
             "redirect_url": "",
             "markdown_path": "_posts/2017-11-16-understandingtechcompensation.md",
             "doc_size": 26000
+        },
+        "/content-creation": {
+            "url": "/content-creation",
+            "title": "Video Content Creation",
+            "description": "\n\n\n",
+            "file_path": "_site/content-creation.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/content-creation.md",
+            "doc_size": 11000
         },
         "/covid": {
             "url": "/covid",
@@ -2015,6 +2043,7 @@
                 "/ig66/717",
                 "/ig66/732",
                 "/job",
+                "/kettlebell",
                 "/magic",
                 "/physical-health",
                 "/siy",
@@ -2041,7 +2070,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
-            "doc_size": 31000
+            "doc_size": 34000
         },
         "/facebook": {
             "url": "/facebook",
@@ -2639,6 +2668,7 @@
             "file_path": "_site/kettlebell.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/eulogy",
                 "/physical-health"
             ],
             "redirect_url": "",
