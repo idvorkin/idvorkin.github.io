@@ -121,6 +121,12 @@ In summary, trainers are worth it.
 
 {%include summarize-page.html src="/kettlebell" %}
 
+#### How do you think about back pain?
+
+I like the Stuart McGill model. Keep the back stiff as a board, whihc requires your hips and shoulders to have the motion. I find the Heavy Clubs for shoulders and then deep squats/half lotus/pistol squats have me covered for both.
+
+Also, I feel MUCH better when I do bird dogs, but rarely do (oddly PT suggests dead bugs, which i do not enjoy).
+
 #### What's it like waking up at 5 am
 
 The Atlantic [summarized it perfectly](https://www.theatlantic.com/health/archive/2019/08/how-know-if-youre-morning-person/595990/?utm_campaign=the-atlantic&utm_medium=social)
