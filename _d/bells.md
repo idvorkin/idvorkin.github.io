@@ -6,13 +6,12 @@ permalink: /kettlebell
 redirect_from:
   - /kb
   - /kettlebells
-  - /kettlebells
   - /heavy-clubs
   - /heavy-club
   - /simple-and-sinister
 ---
 
-There's no way I'm swinging that thing between my legs, I'm going to kill my back. When I started working out with a trainer, they tried to get me to do a kettlebell swing, and I was like no way. Then they spend 3 weeks teaching me Turkish Getups, which I absolutely loved. Then I read simple and sinister, and now I've achieved timeless simple, and do heavy clubs instead of halos.
+There's no way I'm swinging that thing between my legs; I'm going to kill my back. When I started working out with a trainer in 2020, they tried to get me to do a kettlebell swing, and I was like, no way. Then they spent 3 weeks teaching me Turkish Get-Ups (TGUs), which I absolutely loved. Then I read _Simple and Sinister_, and now I've achieved _Timeless Simple_ and do heavy clubs instead of halos.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -26,9 +25,9 @@ There's no way I'm swinging that thing between my legs, I'm going to kill my bac
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-I instantly liked Turkish Get Ups (TGUs) they have a nice flow and feel great. The trainer tried to get me to do swings, but I'm afraid of ballistic exercises so declined.
+I instantly liked Turkish Get-Ups (TGUs); they have a nice flow and feel great. The trainer tried to get me to do swings, but I'm afraid of ballistic exercises, so I declined.
 
-A year later I decided to try them, and I love them! At 44 every day I woke up my back would be stiff till I stretched out. When I started doing swings, the next day my back was as loose as a 30-year-old's :)
+A year later, I decided to try them, and I love them! At 44, every day I woke up, my back would be stiff until I stretched out. When I started doing swings, the next day my back was as loose as a 30-year-old's. :)
 
 ### Swings:
 
@@ -44,16 +43,22 @@ I also wrote an [app](https://github.com/idvorkin/video-edit/blob/3676fd9d827ee8
 
 - Video coming
 
-I'm applying a goal from a book called Kettlebell Simple and Sinister.
+{% include youtube.html src="D_SYiBdeUEE" %}
 
 ### Goals
 
-- 10x10 @ 32 KG Two Arm Swings (100!) (Achieved November '23), but then regressed due to injury.
-- 10x10 @ 32 KG (50 per arm) One Arm Swings
-- 5x1 @ 32KG -(5 per arm) Achieved January '24, but the regressed due to not doing them for a long holiday.
+I'm applying a goal from a book called _Kettlebell Simple and Sinister_.
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20241214_102150.webp)
+
+- 10x10 @ 32 KG Two-Arm Swings (100!) (Achieved November '23), but then regressed due to injury.
+- 10x10 @ 32 KG (50 per arm) One-Arm Swings
+- 5x1 @ 32 KG (5 per arm) Achieved January '24, but then regressed due to not doing them for a long holiday.
 
 ### KB Squats
 
-Now I'm picking up 1 handled front rack squats, and
+Now I'm picking up one-handed front rack squats.
 
 ### Heavy Clubs
+
+I used to do KB halos, but they need a lighter weight. This required me to carry three kettlebells in the car, which was much too many, so I realized I could switch to heavy clubs instead. Turns out they are not only much lighter but also give you better mobility, grip strength, core strength, and arm strength. Upgrade! The only downside is finding the right ones; since you can't get them in person, you are ordering all over the internet, and you need to go up in weight. Oh well.
