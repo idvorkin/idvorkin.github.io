@@ -23,35 +23,35 @@ Time off is critical, it's how we renew our energy, find our creativity, etc. Ma
 
 <!-- vim-markdown-toc-start -->
 
-- [Time on, time rich, time poor.](#time-on-time-rich-time-poor)
+- [Time on, time rich, time poor](#time-on-time-rich-time-poor)
 - [The phases of time off](#the-phases-of-time-off)
-    - [Vegetation](#vegetation)
-    - [TODO list](#todo-list)
-    - [Personal Development (PD)](#personal-development-pd)
+  - [Vegetation](#vegetation)
+  - [TODO list](#todo-list)
+  - [Personal Development (PD)](#personal-development-pd)
 - [Very Vegetating](#very-vegetating)
 - [Powerful Personal Development](#powerful-personal-development)
-    - [Managing family expectations](#managing-family-expectations)
-    - [PD vs Life Balance](#pd-vs-life-balance)
-    - [Optimizing for happiness](#optimizing-for-happiness)
+  - [Managing family expectations](#managing-family-expectations)
+  - [PD vs Life Balance](#pd-vs-life-balance)
+  - [Optimizing for happiness](#optimizing-for-happiness)
 - [Get real what should I do?](#get-real-what-should-i-do)
-    - [Time box vegetation](#time-box-vegetation)
-    - [Strategize against the resistance](#strategize-against-the-resistance)
-    - [Begin with the end in mind](#begin-with-the-end-in-mind)
+  - [Time box vegetation](#time-box-vegetation)
+  - [Strategize against the resistance](#strategize-against-the-resistance)
+  - [Begin with the end in mind](#begin-with-the-end-in-mind)
 - [Examples of how I spent my time off](#examples-of-how-i-spent-my-time-off)
 - [Making the most out of staycation](#making-the-most-out-of-staycation)
 - [Should you do 1:1 time with the family](#should-you-do-11-time-with-the-family)
 - [Igor's Personal combined learnings](#igors-personal-combined-learnings)
-    - [Before you go](#before-you-go)
-    - [Every other day check-in](#every-other-day-check-in)
-    - [Physical Health](#physical-health)
-    - [Emotional Health](#emotional-health)
-    - [Identity Health](#identity-health)
-    - [Travel Tips - Before you go](#travel-tips---before-you-go)
-    - [Road Trip Tips](#road-trip-tips)
-    - [Other learnings](#other-learnings)
+  - [Before you go](#before-you-go)
+  - [Every other day check-in](#every-other-day-check-in)
+  - [Physical Health](#physical-health)
+  - [Emotional Health](#emotional-health)
+  - [Identity Health](#identity-health)
+  - [Travel Tips - Before you go](#travel-tips---before-you-go)
+  - [Road Trip Tips](#road-trip-tips)
+  - [Other learnings](#other-learnings)
 - [Other Thoughts](#other-thoughts)
-    - [Optimize for energy, not time](#optimize-for-energy-not-time)
-    - [Can you have too much time off?](#can-you-have-too-much-time-off)
+  - [Optimize for energy, not time](#optimize-for-energy-not-time)
+  - [Can you have too much time off?](#can-you-have-too-much-time-off)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -252,10 +252,10 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 ### Identity Health
 
 - Go to improv jams/dojos
-- Do magic for folks
+- Do [balloons](/balloon) for kids, they love them.
+- Do [magic](/magic) for folks
   - Find some guy by himself, practice him as he won't be threatened
-- Do balloons for kids, they love them.
-- Kettlebells are a blast! Keep them in the car.
+- [Kettlebells](/kettlebells) are a blast! Keep them in the car.
 
 ### Travel Tips - Before you go
 
