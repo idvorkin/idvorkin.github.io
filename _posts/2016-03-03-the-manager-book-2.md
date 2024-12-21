@@ -498,6 +498,7 @@ My approach, and frequent peep questions.
 <div> </div>
 - l12
 - [Fantastic Video on Being a Staff Eng](https://youtube.com/watch?v=l-oCDQGH3EU&si=SDZXgQJgmUzV1aJQ)
+- [Amazon's Principle Engineer Roles](https://www.linkedin.com/pulse/principal-engineer-roles-framework-mai-lan-tomsen-bukovec-142df/)
 - Great post on being a [staff + level engineer](https://lethain.com//staff-plus-eng-resources/)
 - Are you clear on [Tech Lead, Architects and Managers](/software-leadership-roles).
 - What are you driving for our larger organization?
