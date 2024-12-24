@@ -974,6 +974,8 @@ This can be especially true when process is created high in the org chart to sol
 
 **Toxic process** - Bad process will disenfranchise ownership and stifle passion. It'll slow down things that can be fast. There is nothing more powerful than a motivated engineer, don’t let process take that away.
 
+Funny article on [how good oranizations should be like slime mold](https://komoroske.com/slime-mold/)
+
 ### On Change
 
 There are a few kinds of changes.
