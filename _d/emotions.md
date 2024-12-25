@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Emotions"
+tags:
+  - emotional intelligence
+  - emotion
+permalink: /emotions
+redirect_from:
+  - /feelings
+  - /emotional-states
+---
+
+Ever notice how emotions are like that one friend who shows up uninvited and fucks up your perfectly planned party? Sometimes they bring cake and make everything awesome, other times they're drunk and knocking over your carefully arranged furniture while screaming "YOLO!" Well, here's your guide to that emotional party crasher living rent-free in your head, because let's face it - they're not moving out anytime soon.
+
+| Emotion        | Expression                                    |
+|----------------|-----------------------------------------------|
+| [Shame](/shame)          | I'm fucked up.                                |
+| [Guilt](/shame)          | I fucked up.                                  |
+| Blame          | You fucked up.                                |
+| [Acceptance](/curious)     | I fucked up.                                  |
+| Reframe        | We all fuck up sometimes-it's part of life.   |
+| Empowerment    | Fuckups are opportunities to grow and improve.|
+| Dialectic*     | I fucked up, and I'm learning how not to.     |
+| [Accountability](/be-proactive) | When I fuck up, I address it.                 |
+
+(*) Dialectic means holding two seemingly contradictory truths at once - like "I messed up" AND "I'm growing from it"
