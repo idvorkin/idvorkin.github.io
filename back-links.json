@@ -35,7 +35,7 @@
         "/bikes": "/bike",
         "/biking": "/bike",
         "/bmu": "/bmy",
-        "/books": "/books-that-defined-me",
+        "/books": "/all",
         "/boss": "/being-a-great-manager",
         "/brain-attack": "/suicide",
         "/brainattack": "/suicide",
@@ -67,6 +67,7 @@
         "/eat-that-frog": "/frog",
         "/effectiveness": "/balance",
         "/emotional-health-practices": "/emotional-health",
+        "/emotional-states": "/emotions",
         "/enabling-environment": "/enable",
         "/enemies": "/enemy",
         "/enjoy": "/happy",
@@ -75,6 +76,7 @@
         "/failure": "/fail",
         "/fatality": "/death",
         "/feeling-meetings": "/human-meetings",
+        "/feelings": "/emotions",
         "/first-thing-first": "/first-things-first",
         "/first90days": "/90days",
         "/forty-two": "/42",
@@ -528,7 +530,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 19000
+            "doc_size": 26000
         },
         "/ai-developer": {
             "url": "/ai-developer",
@@ -602,7 +604,7 @@
                 "/ai-journal"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/ai-business-model.md",
+            "markdown_path": "_d/ai-security.md",
             "doc_size": 24000
         },
         "/ai-testing": {
@@ -659,7 +661,7 @@
                 "/mood"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/bells.md",
+            "markdown_path": "_d/anger.md",
             "doc_size": 14000
         },
         "/anxiety": {
@@ -687,7 +689,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/tribe.md",
+            "markdown_path": "_d/anxiety.md",
             "doc_size": 20000
         },
         "/anxiety-management": {
@@ -798,7 +800,8 @@
             ],
             "incoming_links": [
                 "/eulogy",
-                "/joy"
+                "/joy",
+                "/timeoff"
             ],
             "redirect_url": "",
             "markdown_path": "_d/balloon.md",
@@ -820,6 +823,7 @@
                 "/affirmations",
                 "/anxiety",
                 "/d/habits",
+                "/emotions",
                 "/frog",
                 "/idle",
                 "/regrets",
@@ -835,7 +839,7 @@
             "description": "I aspire to be the best manager I can be. I’ll often fall short of my goal, but through continuous practice I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best. Few things make me prouder then this public feedback on LinkedIn from people who worked with me over several years. I’m also writing a manager guidebook, which goes into much more depth on management.\n\n",
             "file_path": "_site/being-a-great-manager.html",
             "outgoing_links": [
-                "/books-that-defined-me",
+                "/all",
                 "/coaching",
                 "/curious",
                 "/decisive",
@@ -926,11 +930,7 @@
                 "/humans-are-underrated",
                 "/siy"
             ],
-            "incoming_links": [
-                "/being-a-great-manager",
-                "/manager-book",
-                "/manager-book-appendix"
-            ],
+            "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
             "doc_size": 14000
@@ -1151,13 +1151,15 @@
         "/content-creation": {
             "url": "/content-creation",
             "title": "Video Content Creation",
-            "description": "\n\n\n",
+            "description": "I started by creating something complex, now\n\n",
             "file_path": "_site/content-creation.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/screencast"
+            ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/content-creation.md",
-            "doc_size": 11000
+            "doc_size": 13000
         },
         "/covid": {
             "url": "/covid",
@@ -1195,6 +1197,7 @@
                 "/being-a-great-manager",
                 "/class-act",
                 "/coaching",
+                "/emotions",
                 "/essentialism",
                 "/first-understand",
                 "/getting-to-yes-with-yourself",
@@ -1884,7 +1887,7 @@
                 "/addiction"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/suicide.md",
+            "markdown_path": "_d/elder.md",
             "doc_size": 21000
         },
         "/emotional-health": {
@@ -1911,6 +1914,21 @@
             "redirect_url": "",
             "markdown_path": "_d/emotional-health-hold.md",
             "doc_size": 18000
+        },
+        "/emotions": {
+            "url": "/emotions",
+            "title": "Emotions",
+            "description": "Ever notice how emotions are like that one friend who shows up uninvited and fucks up your perfectly planned party? Sometimes they bring cake and make everything awesome, other times they’re drunk and knocking over your carefully arranged furniture while screaming “YOLO!” Well, here’s your guide to that emotional party crasher living rent-free in your head, because let’s face it - they’re not moving out anytime soon.\n\n",
+            "file_path": "_site/emotions.html",
+            "outgoing_links": [
+                "/be-proactive",
+                "/curious",
+                "/shame"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/emotions.md",
+            "doc_size": 11000
         },
         "/enable": {
             "url": "/enable",
@@ -2664,16 +2682,17 @@
         "/kettlebell": {
             "url": "/kettlebell",
             "title": "Kettlebells - A rock with a handle",
-            "description": "There’s no way I’m swinging that thing between my legs, I’m going to kill my back. When I started working out with a trainer, they tried to get me to do a kettlebell swing, and I was like no way. Then they spend 3 weeks teaching me Turkish Getups, which I absolutely loved. Then I read simple and sinister, and now I’ve achieved timeless simple, and do heavy clubs instead of halos.\n\n",
+            "description": "There’s no way I’m swinging that thing between my legs; I’m going to kill my back. When I started working out with a trainer in 2020, they tried to get me to do a kettlebell swing, and I was like, no way. Then they spent 3 weeks teaching me Turkish Get-Ups (TGUs), which I absolutely loved. Then I read Simple and Sinister, and now I’ve achieved Timeless Simple and do heavy clubs instead of halos.\n\n",
             "file_path": "_site/kettlebell.html",
             "outgoing_links": [],
             "incoming_links": [
                 "/eulogy",
-                "/physical-health"
+                "/physical-health",
+                "/timeoff"
             ],
             "redirect_url": "",
             "markdown_path": "_d/bells.md",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/last-year": {
             "url": "/last-year",
@@ -2756,6 +2775,7 @@
                 "/idle",
                 "/joy",
                 "/operating-manual",
+                "/timeoff",
                 "/touching"
             ],
             "redirect_url": "",
@@ -2770,8 +2790,8 @@
             "outgoing_links": [
                 "/22",
                 "/90days",
+                "/all",
                 "/being-a-great-manager",
-                "/books-that-defined-me",
                 "/coaching",
                 "/coe",
                 "/comp",
@@ -2810,7 +2830,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 147000
+            "doc_size": 148000
         },
         "/manager-book-appendix": {
             "url": "/manager-book-appendix",
@@ -2818,8 +2838,8 @@
             "description": "A hodgepodge of additional resources for the manager book.\n\n",
             "file_path": "_site/manager-book-appendix.html",
             "outgoing_links": [
+                "/all",
                 "/amazon",
-                "/books-that-defined-me",
                 "/facebook",
                 "/job",
                 "/manager-book",
@@ -3528,7 +3548,9 @@
             "description": "Screencasting has become an essential tool for content creators, educators, and professionals alike. In this post, I’ll share my experiences and insights on screencasting on macOS, covering various tools, techniques, and tips I’ve discovered along the way. From recording software to post-production enhancements, this guide aims to help you navigate the world of screencasting on your Mac.\n\n",
             "file_path": "_site/screencast.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/content-creation"
+            ],
             "redirect_url": "",
             "markdown_path": "_td/screencast.md",
             "doc_size": 12000
@@ -3572,6 +3594,7 @@
                 "/90days",
                 "/curious",
                 "/depression",
+                "/emotions",
                 "/insecure",
                 "/mental-pain",
                 "/psychic-weight"
@@ -4342,6 +4365,7 @@
             "file_path": "_site/timeoff.html",
             "outgoing_links": [
                 "/addiction",
+                "/balloon",
                 "/d/resistance",
                 "/d/time-off-2024-02",
                 "/energy",
@@ -4349,6 +4373,8 @@
                 "/eulogy",
                 "/frog",
                 "/happy",
+                "/kettlebell",
+                "/magic",
                 "/mind-at-work",
                 "/parkinson",
                 "/siy",
