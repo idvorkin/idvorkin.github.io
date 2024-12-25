@@ -36,4 +36,11 @@ Ever notice how emotions are like that one friend who shows up uninvited and fuc
 | Wonder           | What the actual fuck! (in a good way)         |
 | Flow             | Too fucking focused to fuck up!               |
 
+| Sublime States     | Expression                                    |
+|--------------------|-----------------------------------------------|
+| [Loving-kindness](/sublime) | Fucking love everyone!               |
+| Compassion        | Fuck, I feel your pain.                       |
+| Altruistic Joy    | Fuck yeah, you did it!                        |
+| Equanimity        | No fucks to give, and that's perfect.         |
+
 (*) Dialectic means holding two seemingly contradictory truths at once - like "I messed up" AND "I'm growing from it"
