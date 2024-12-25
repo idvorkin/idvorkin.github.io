@@ -17,6 +17,7 @@ Ever notice how emotions are like that one friend who shows up uninvited and fuc
 | [Shame](/shame)          | I'm fucked up.                                |
 | [Guilt](/shame)          | I fucked up.                                  |
 | Blame          | You fucked up.                                |
+| [Anger](/anger)         | Fuck you for fucking up!                      |
 | [Pride](/pride)         | I don't fuck up.                              |
 | [Acceptance](/curious)     | I fucked up.                                  |
 | Reframe        | We all fuck up sometimes-it's part of life.   |
