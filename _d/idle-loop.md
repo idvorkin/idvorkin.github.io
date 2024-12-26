@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Your idle loop"
-tags:
 permalink: /idle
 redirect_from:
   - /idle-loop
@@ -13,22 +12,9 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 <!-- vim-markdown-toc-start -->
 
 - [Why: Parasitic energy drain or regenerative braking](#why-parasitic-energy-drain-or-regenerative-braking)
-    - [The first responder: boredom](#the-first-responder-boredom)
-- [Regenerative loops](#regenerative-loops)
-    - [Mindfulness](#mindfulness)
-    - [Positive thinking](#positive-thinking)
-    - [Reading something nurturing](#reading-something-nurturing)
-    - [Gratefulness thinking](#gratefulness-thinking)
-    - [Accessible Habits](#accessible-habits)
-- [Parasitic energy drains](#parasitic-energy-drains)
-    - [Psychic weight](#psychic-weight)
-    - [Addiction](#addiction)
-    - [Ruminating](#ruminating)
-    - [Doom scrolling](#doom-scrolling)
-    - [TikTok](#tiktok)
-    - [Social Media](#social-media)
-    - [Checking e-mail or notifications](#checking-e-mail-or-notifications)
-    - [Mind monsters is a perfect articulation for negative emotions](#mind-monsters-is-a-perfect-articulation-for-negative-emotions)
+  - [The first responder: boredom](#the-first-responder-boredom)
+  - [Regenerative loops](#regenerative-loops)
+  - [Parasitic energy drains](#parasitic-energy-drains)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc-end -->
@@ -38,49 +24,64 @@ Waiting in line at the grocery store, sitting in an Uber, pooping - in these inv
 
 ### The first responder: boredom
 
-With nothing to do, we experience the often phantom, [mental pain](/mental-pain) of boredom. If we aren't [proactive](/7h-c1), we resolve this via distracting parasitic loops. Parasitic loops take no energy, and are even occasionally satisfying, but they're a double wammy negative:
+With nothing to do, we experience the often phantom, [mental pain](/mental-pain) of boredom. To use an AI analogy, think of "not boredom" as the reward function in a re-inforcement learning system. The "design intent" of the reward function is to ensure we're doing something productive (avoid doing nothing), and that we're growing (avoid monontonous tasks).  However, just like ML models can do reward hacking by focusing on hacking the reward function, vs achieving the desired result, so can our brains.
 
-- Parasitic loops prevents us from working on our positive regenerative loops.
-- Parasitic loops likely erodes our pursuit of happiness, by blocking our inner peace, passion and compassion.
+When we aren't [proactive](/7h-c1), we hack boredom via distracting parasitic loops. Parasitic loops take no energy, and are even occasionally satisfying, and they're a double wammy negative. They:
+
+- prevents us from working on our positive regenerative loops.
+- Erode our pursuit of happiness, by blocking our inner peace, passion and compassion.
 
 This is very similar to the often phantom, physical pain of hunger. If we aren't proactive, we'll resolve it with junk food which has the physical double wammy.
 
 - Junk food prevents us from eating healthy food
 - Junk food erodes our health and diet.
 
-## Regenerative loops
 
-### [Mindfulness](/siy)
+### Regenerative loops
 
-### Positive thinking
+___
 
-### Reading something nurturing
+{%include summarize-page.html src="/siy"%}
 
-I have seen two categories 1) self help books, but they can be too charging up, or good content- the [Very Short Introductions](https://global.oup.com/academic/content/series/v/very-short-introductions-vsi/) series has been superb.
+___
 
-### Gratefulness thinking
+* Positive thinking
+* Reading something nurturing:
+    *  self help books, but they can be too charging up,
+    * good content- the [Very Short Introductions](https://global.oup.com/academic/content/series/v/very-short-introductions-vsi/) series has been superb.
+* Gratefulness thinking
+* [Habits](/habits)
+    - [Magic](/magic)
+    - [Meditating](/siy)
 
-### Accessible [Habits](/habits)
+### Parasitic energy drains
 
-- [Magic](/magic)
-- [Meditating](/siy)
+____
 
-## Parasitic energy drains
+{%include summarize-page.html src="/mental-pain" %}
 
-### [Psychic weight](/psychic-weight)
+___
 
-### [Addiction](/addiction)
 
-### Ruminating
+{%include summarize-page.html src="/addiction"%}
 
-### Doom scrolling
+___
 
-### TikTok
+{%include summarize-page.html src="/mind-monsters"%}
 
-### Social Media
+___
 
-### Checking e-mail or notifications
+{%include summarize-page.html src="/frog"%}
 
-### [Mind monsters](/mind-monsters) is a perfect articulation for negative emotions
+* Doom scrolling - news, twitter, social media
+    - Interesting, this has been pushed more to video
+* Ruminating - I don't do this near as much as I did.
+* TikTok / Reels/ YouTube Shorts
+    * Rant, this is so addictive, I put too much energy into this
+    * Oddly my common categories are
+        - 'strength training videos' - 2024
+* Checking e-mail or notifications
+    * Not a problem unless I'm chasing work
+
 
 ## Other Resources
