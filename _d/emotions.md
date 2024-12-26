@@ -38,7 +38,8 @@ Ever notice how emotions are like that one friend who shows up uninvited and fuc
 
 | Sublime States     | Expression                                    |
 |--------------------|-----------------------------------------------|
-| [Loving-kindness](/sublime) | Fucking love everyone!               |
+| [Sublime States](/sublime) | |
+| Loving-kindness    | Fucking love everyone!                        |
 | Compassion        | Fuck, I feel your pain.                       |
 | Altruistic Joy    | Fuck yeah, you did it!                        |
 | Equanimity        | No fucks to give, and that's perfect.         |
