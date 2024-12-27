@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Letters to My Time Travelling Self" 
+title: "Letters to My Time Travelling Self"
 ogtitle: "Letters Between Past and Future Igor"
 author: "Igor Dvorkin"
 inprogress: true
@@ -16,7 +16,7 @@ tags:
 <!-- vim-markdown-toc GFM -->
 
 - [Overview](#overview)
-- [Letters to Future Igor](#letters-to-future-igor) 
+- [Letters to Future Igor](#letters-to-future-igor)
 - [Letters from Future Igor](#letters-from-future-igor)
 - [Letters to Past Igor](#letters-to-past-igor)
 
