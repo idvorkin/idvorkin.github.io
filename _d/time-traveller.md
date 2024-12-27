@@ -14,7 +14,7 @@ tags:
   - emotional intelligence
 ---
 
-Ever wish you could high-five your past self for that brilliant decision, or maybe gently smack them for eating too many doughnuts? While we haven't cracked the physics of time travel yet, we're actually time traveling every day - through our memories, choices, and regrets. Think of it as a group chat between Past Igor (that sweet summer child), Present Igor (hello!), and Future Igor (hopefully with better fashion sense). Let's explore how these three versions of ourselves are constantly chatting, arguing, and occasionally giving each other virtual fist bumps across the space-time continuum.
+What would 25-year-old Igor say if he met today's Igor? Would he be impressed by the wisdom, disappointed by the waistline, or just confused by all the doughnuts? While we can't physically time travel, we can use mental time travel as a powerful tool - imagining conversations across our past, present, and future selves. Think of it as a group chat between Past Igor (that idealistic youngster), Present Igor (hello!), and Future Igor (who's probably shaking his head at both of us). Let's explore how these three versions of ourselves are constantly chatting, arguing, and occasionally giving each other virtual fist bumps across the space-time continuum.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
