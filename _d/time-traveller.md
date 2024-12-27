@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "How Yesterday's Igor Meets Tomorrow's Igor, Will He Be Happy?"
-ogtitle: "How Yesterday's Igor Meets Tomorrow's Igor, Will He Be Happy?"
+title: "When Yesterday's Igor Meets Tomorrow Igor"
+ogtitle: "When Yesterday's Igor Meets Tomorrow Igor"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
