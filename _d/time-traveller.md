@@ -14,7 +14,7 @@ tags:
   - emotional intelligence
 ---
 
-Ever wish you could high-five your past self for that brilliant decision, or maybe gently smack them for that questionable haircut? While we haven't cracked the physics of time travel yet, we're actually time traveling every day - through our memories, choices, and regrets. Think of it as a group chat between Past Igor (that sweet summer child), Present Igor (hello!), and Future Igor (hopefully with better fashion sense). Let's explore how these three versions of ourselves are constantly chatting, arguing, and occasionally giving each other virtual fist bumps across the space-time continuum.
+Ever wish you could high-five your past self for that brilliant decision, or maybe gently smack them for eating too many doughnuts? While we haven't cracked the physics of time travel yet, we're actually time traveling every day - through our memories, choices, and regrets. Think of it as a group chat between Past Igor (that sweet summer child), Present Igor (hello!), and Future Igor (hopefully with better fashion sense). Let's explore how these three versions of ourselves are constantly chatting, arguing, and occasionally giving each other virtual fist bumps across the space-time continuum.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
