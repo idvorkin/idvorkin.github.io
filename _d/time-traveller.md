@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Letters to My Time Travelling Self"
-ogtitle: "Letters Between Past and Future Igor"
+title: "How Yesterday's Igor Meets Tomorrow's Igor, Will He Be Happy?"
+ogtitle: "How Yesterday's Igor Meets Tomorrow's Igor, Will He Be Happy?"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
