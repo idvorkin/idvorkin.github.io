@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "When Yesterday's Igor Meets Tomorrow Igor"
-ogtitle: "When Yesterday's Igor Meets Tomorrow Igor"
+title: "When Yesterday's Igor Meets Tomorrow's Igor"
+ogtitle: "When Yesterday's Igor Meets Tomorrow's Igor"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
