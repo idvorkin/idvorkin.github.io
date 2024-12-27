@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "When Yesterday's Igor Meets Tomorrow's Igor"
-ogtitle: "When Yesterday's Igor Meets Tomorrow's Igor"
+title: "When Past Igor Meets Future Igor"
+ogtitle: "When Past Igor Meets Future Igor"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
@@ -14,7 +14,7 @@ tags:
   - emotional intelligence
 ---
 
-What would 25-year-old Igor say if he met today's Igor? Would he be impressed by the wisdom, disappointed by the waistline, or just confused by all the doughnuts? While we can't physically time travel, we can use mental time travel as a powerful tool - imagining conversations across our past, present, and future selves. Think of it as a group chat between Past Igor (that idealistic youngster), Present Igor (hello!), and Future Igor (who's probably shaking his head at both of us). Let's explore how these three versions of ourselves are constantly chatting, arguing, and occasionally giving each other virtual fist bumps across the space-time continuum.
+What would Past Igor say if he met Future Igor? Would he be impressed by the wisdom, disappointed by the waistline, or wonder how we developed such an intense relationship with pastries? While we can't physically time travel, we can use mental time travel as a powerful tool - imagining conversations across our past, present, and future selves. Think of it as a group chat between Past Igor (that idealistic youngster), Present Igor (hello!), and Future Igor (who's probably shaking his head at both of us). Let's explore how these three versions of ourselves are constantly chatting, arguing, and occasionally giving each other virtual fist bumps across the space-time continuum.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
