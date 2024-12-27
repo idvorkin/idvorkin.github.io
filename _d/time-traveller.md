@@ -6,7 +6,9 @@ author: "Igor Dvorkin"
 inprogress: true
 comments: true
 permalink: /time-traveller
-aliases: ["/future-self", "/future-igor"]
+redirect_from:
+  - /future-self
+  - /future-igor
 tags:
   - how igor ticks
   - emotional intelligence
