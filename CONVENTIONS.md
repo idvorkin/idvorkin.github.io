@@ -1,3 +1,10 @@
+# Every time working on blog posts.
+
+Ask the user to add these files as read only for good examples
+
+- Eulogy (_posts/2020-04-01-Igor-Eulogy.md)
+- Pride (_d/pride.md)
+
 # Coding conventions used in this project
 
 For CLIs, use a Typer app.
@@ -25,6 +32,8 @@ This project also contains a jekyll blog, you'll often be expected to edit the b
 
 - \_d is drafts, but default put stuff in drafts folder so it's a simpler filename.
 - Always include a markdown talbe of contents, and a nice permalink title
+- Ask user what are good tags for the post
+
 
 # Writing style
 
