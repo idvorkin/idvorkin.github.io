@@ -60,6 +60,8 @@ You can use an external mic, but I usually don't.
 
 ### DJI Pocket 3
 
+* Just got it looks like it's gonna be really fun.
+
 ### Never use it: Action Camera
 
 - Too much work.

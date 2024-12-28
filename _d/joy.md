@@ -11,7 +11,7 @@ redirect_from:
   - /makejoy
 ---
 
-Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles._
+If you could have one super power, what would it be? At 46, you think something would pop into my mind, but the usual answers failed me:  Flying, being invisble, stopping time - meh these all landed flat. I reached for my eulogy (where I often go when confused), and realized, I do have a super power I want - it's bringing others joy.   From my eulogy - _Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles._ And gotta say feels great knowing I'm investing heavily there!
 
 <!-- prettier-ignore-start -->
 
@@ -19,32 +19,35 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
 <!-- vim-markdown-toc-start -->
 
 - [Completed Projects](#completed-projects)
-    - [Magic](#magic)
-    - [Smile Startup](#smile-startup)
-    - [Juggling Fire](#juggling-fire)
-    - [Bubble Bike](#bubble-bike)
-    - [Ballooning](#ballooning)
-    - [Chocolate Balls and Bells](#chocolate-balls-and-bells)
+  - [Magic](#magic)
+  - [Smile Startup](#smile-startup)
+  - [Juggling Fire](#juggling-fire)
+  - [Bubble Bike](#bubble-bike)
+  - [Ballooning](#ballooning)
+  - [Chocolate Balls and Bells](#chocolate-balls-and-bells)
+  - [Mismatched shoes,  and crazy shirts from TEMU](#mismatched-shoes--and-crazy-shirts-from-temu)
+  - [Surprise birthday visit to my sister](#surprise-birthday-visit-to-my-sister)
 - [Theory](#theory)
-    - [Attributes of Joy](#attributes-of-joy)
-    - [Safety the precondition for Joy](#safety-the-precondition-for-joy)
-    - [Build rapport to make people feel safe](#build-rapport-to-make-people-feel-safe)
-    - [Why kids are more receptive to Joy](#why-kids-are-more-receptive-to-joy)
-    - [Other things to file](#other-things-to-file)
-    - [Joy and Wonder](#joy-and-wonder)
-    - [Joy and Overwhelming kindness from a stranger](#joy-and-overwhelming-kindness-from-a-stranger)
-    - [Joy versus pleasure](#joy-versus-pleasure)
-    - [Things that bring most people joy](#things-that-bring-most-people-joy)
-    - [Manipulation vs Augmenting Experiences](#manipulation-vs-augmenting-experiences)
-    - [Imbalance of Impact](#imbalance-of-impact)
+  - [Attributes of Joy](#attributes-of-joy)
+  - [Safety: the precondition for Joy](#safety-the-precondition-for-joy)
+  - [Joy is contagious](#joy-is-contagious)
+  - [Build rapport to make people feel safe](#build-rapport-to-make-people-feel-safe)
+  - [Why kids are more receptive to Joy](#why-kids-are-more-receptive-to-joy)
+  - [Other things to file](#other-things-to-file)
+  - [Novely,  Wonder and Surprise - Break the mundane](#novely--wonder-and-surprise---break-the-mundane)
+  - [Joy and Overwhelming kindness from a stranger](#joy-and-overwhelming-kindness-from-a-stranger)
+  - [Joy versus pleasure](#joy-versus-pleasure)
+  - [Things that bring most people joy](#things-that-bring-most-people-joy)
+  - [Manipulation vs Augmenting Experiences](#manipulation-vs-augmenting-experiences)
+  - [Imbalance of Impact](#imbalance-of-impact)
 - [Future Projects](#future-projects)
-    - [Smile box](#smile-box)
-    - [Bubble Show](#bubble-show)
-    - [Put on a magic show](#put-on-a-magic-show)
-    - [Put on a kids birthday party](#put-on-a-kids-birthday-party)
+  - [Smile box](#smile-box)
+  - [Bubble Show](#bubble-show)
+  - [Put on a magic show](#put-on-a-magic-show)
+  - [Put on a kids birthday party](#put-on-a-kids-birthday-party)
 - [Crazy Dream Projects](#crazy-dream-projects)
-    - [Become an executive producer for shows](#become-an-executive-producer-for-shows)
-    - [Own a vaudiville theatre](#own-a-vaudiville-theatre)
+  - [Become an executive producer for shows](#become-an-executive-producer-for-shows)
+  - [Own a vaudiville theatre](#own-a-vaudiville-theatre)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -54,6 +57,9 @@ Bringing joy for others is my thing. From my eulogy - _Igor lived to see eyes go
 ### Magic
 
 - Doing [magic for others](/magic)
+
+{%include summarize-page.html src="/magic"%}
+
 
 Straight from my [eulogy](/eulogy):
 
@@ -70,11 +76,11 @@ My well worn [Juggling fire](http://ig66.blogspot.com/2014/08/accomplishment-unl
 
 ### Bubble Bike
 
-See my family journal about the [Bubble Bike](<https://idvork.in/ig66/583>.:
-
-Also
+See my family journal about the [Bubble Bike](https://idvork.in/ig66/583):
 
 {%include summarize-page.html src="/bbb" %}
+
+And some fun videos
 
 {% include youtube.html src="g4CPmCKyXmI" %}
 {% include youtube.html src="1NWsE-P7_VA" %}
@@ -92,6 +98,15 @@ My early [ballooning](/ig66/621) adventures:
 - Giving out chocolate balls
 - Giving out bells
 
+### Mismatched shoes,  and crazy shirts from TEMU
+
+- First discoverd mismatched shoes, harder then it sounds, but crocks are great
+- Used to get fun shirts from thrift shops, but hard to find them. Then disovered TEMU had such shirts of ronly
+
+### Surprise birthday visit to my sister
+
+Link the YouTube Videos (merge the two together)
+
 ## Theory
 
 ### Attributes of Joy
@@ -100,13 +115,16 @@ Joy is an involuntary experience that acts on you. You can be more receptive to 
 
 Increasing the receptivity to Joy
 
+Joy is fleeting  - that seem to be in the definition
+Joy is in the present
+
 TODO Use Lens of Self/Other/Process
 
-### Safety the precondition for Joy
+### Safety: the precondition for Joy
 
 - Don't want to look stupid
   - Think about teenagers wanting to look cool
-  - This is why sing in the shower
+  - This is why folks only sing in the shower
 - Don't want to be ripped off
   - Is this a conn?
   - What's your angle for doing this?
@@ -117,9 +135,12 @@ TODO Use Lens of Self/Other/Process
   - Smile
   - Start with a small commitment
 
+### Joy is contagious
+
 - Performers spend lots of time building the first follower
 - The most important guy is [The First Follower](https://www.youtube.com/watch?v=)
-  {% include youtube.html src="fW8amMCVAJQ" %}
+
+{% include youtube.html src="fW8amMCVAJQ" %}
 
 ### Build rapport to make people feel safe
 
@@ -141,14 +162,19 @@ Also look at notes from Avner class - who was all about building rapport with a 
 - Christmas Carols
 - Can't help yourself but to sing along
 
-### Joy and Wonder
+### Novely,  Wonder and Surprise - Break the mundane
 
 - Some connection between joy and wonder
-- Some say when you clear your mind you feel joy (or bliss)
+- Some say when you clear your mind you feel joy (or bliss) (See the Joy of Happiness)
+- Wonder/Novelty snaps you out of the mundane and makes you feel important
+- Heaht brothers:
+    - Moments; EPIC; Elevate the script
+    - Made to Stick: SUCCESs; Unexpected
 
 ### Joy and Overwhelming kindness from a stranger
 
 If a stranger does something really kind for you unexpectantly, that's kind of like joy
+
 
 ### Joy versus pleasure
 
@@ -217,3 +243,8 @@ Who knows, maybe one day I'll actually get around to doing these.
 ### Become an executive producer for shows
 
 ### Own a vaudiville theatre
+
+
+Humoursly, I always said this, and one day when I was at the olymics of magic (FISM 2022), I went to talk titled: So you want to own a magic, theatre - you're probalby wrong. Snapped me out it.
+
+Luckily Tori works in the arts, and I can say I'm a patron of the arts instead
