@@ -62,3 +62,7 @@ Now I'm picking up one-handed front rack squats.
 ### Heavy Clubs
 
 I used to do KB halos, but they need a lighter weight. This required me to carry three kettlebells in the car, which was much too many, so I realized I could switch to heavy clubs instead. Turns out they are not only much lighter but also give you better mobility, grip strength, core strength, and arm strength. Upgrade! The only downside is finding the right ones; since you can't get them in person, you are ordering all over the internet, and you need to go up in weight. Oh well.
+
+And here's my latest form check video:
+
+{% include youtube.html src="pe_huqiNv6E" %}
