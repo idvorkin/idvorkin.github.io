@@ -54,7 +54,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include blob_image.html src="blog/racoon-dealer-smiles-and-wonder.webp" %}
+{% include blob_image_float_right.html src="blog/racoon-dealer-smiles-and-wonder.webp" %}
 
 ## Completed Projects
 
