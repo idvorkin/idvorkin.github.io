@@ -3,8 +3,7 @@ layout: post
 title: "The Immutable Laws of New Skills"
 author: "Igor Dvorkin"
 comments: true
-permalink: /laws-of-new-skills
-aliases: ["/new-skills"]
+permalink: /new-skills
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-learning.webp
 tags:
   - how igor ticks
@@ -15,9 +14,11 @@ Magic, Kettle Bells, Public Speaking - every skill I've acquired follows the sam
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
-* [Law 1: You'll Suck Until You Don't](#law-1-youll-suck-until-you-dont)
-* [Law 2: Practice Makes Permanent](#law-2-practice-makes-permanent)
-* [Law 3: Humans overestimate what can be done in a week, and underestimate what can be done in a year](#law-3-humans-overestimate-what-can-be-done-in-a-week-and-underestimate-what-can-be-done-in-a-year)
+
+- [Law 1: You'll Suck Until You Don't](#law-1-youll-suck-until-you-dont)
+  - [Law 2: Practice Makes Permanent](#law-2-practice-makes-permanent)
+  - [Law 3: Humans overestimate what can be done in a week, and underestimate what can be done in a year](#law-3-humans-overestimate-what-can-be-done-in-a-week-and-underestimate-what-can-be-done-in-a-year)
+
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
@@ -29,7 +30,7 @@ Everyone starts as a beginner - even Mozart had to learn his first notes. The fi
 
 Think of a baby learning to walk. They fall hundreds of times, but never think "maybe walking isn't for me." They get up, try again, and eventually run. That's how all skill acquisition works - you just have to be willing to be as persistent (and shameless) as a toddler.
 
-### Law 2: Practice Makes Permanent 
+### Law 2: Practice Makes Permanent
 
 "Practice makes perfect" is a lie - practice makes permanent. If you practice the wrong way, you'll perfectly execute the wrong technique. This is why quality practice matters more than quantity.
 

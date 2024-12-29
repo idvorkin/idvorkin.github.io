@@ -361,12 +361,12 @@
             "description": "Igor's Blog",
             "file_path": "_site/about.html",
             "outgoing_links": [
-                "/laws-of-new-skills"
+                "/new-skills"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "about.md",
-            "doc_size": 17000
+            "doc_size": 16000
         },
         "/activation": {
             "url": "/activation",
@@ -2726,19 +2726,6 @@
             "markdown_path": "_d/last-year.md",
             "doc_size": 14000
         },
-        "/laws-of-new-skills": {
-            "url": "/laws-of-new-skills",
-            "title": "The Immutable Laws of New Skills",
-            "description": "Magic, Kettle Bells, Public Speaking - every skill I’ve acquired follows the same immutable laws. These laws govern how we learn, progress, and master new abilities. It’s possible these laws don’t apply to you, but I doubt it.\n\n",
-            "file_path": "_site/laws-of-new-skills.html",
-            "outgoing_links": [],
-            "incoming_links": [
-                "/about"
-            ],
-            "redirect_url": "",
-            "markdown_path": "_d/laws-of-new-skills.md",
-            "doc_size": 13000
-        },
         "/laws-of-power": {
             "url": "/laws-of-power",
             "title": "The 48 laws of power",
@@ -3167,6 +3154,19 @@
             "redirect_url": "",
             "markdown_path": "_td/nvim.md",
             "doc_size": 14000
+        },
+        "/new-skills": {
+            "url": "/new-skills",
+            "title": "The Immutable Laws of New Skills",
+            "description": "Magic, Kettle Bells, Public Speaking - every skill I’ve acquired follows the same immutable laws. These laws govern how we learn, progress, and master new abilities. It’s possible these laws don’t apply to you, but I doubt it.\n\n",
+            "file_path": "_site/new-skills.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/about"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/laws-of-new-skills.md",
+            "doc_size": 13000
         },
         "/nlp": {
             "url": "/nlp",
