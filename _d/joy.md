@@ -233,7 +233,7 @@ I need more thinking here but something like.
 
 ### Gayle - The Queen of Aggressive Kindness
 
-One of my favorite inspirations is Gayle, a 78-year-old retired engineer with over 50 patents to her name, who now dedicates her retirement to "aggressive kindness." Her story is documented by her daughter on Instagram (@gayle.tales).
+One of my favorite inspirations is Gayle, a 78-year-old retired engineer with over 50 patents to her name, who now dedicates her retirement to "aggressive kindness." Follow her story on Instagram [@gayle.tales](https://www.instagram.com/gayle.tales/).
 
 What makes Gayle remarkable:
 - She carries cookies everywhere to give to strangers
@@ -248,20 +248,23 @@ Her daughter's initial embarrassment turning into deep appreciation also highlig
 
 #### Steve Irwin
 
-Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn't just a catchphrase - it was an expression of authentic amazement that invited others to share in his joy.
+Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn't just a catchphrase - it was an expression of authentic amazement that invited others to share in his joy. His legacy continues through:
+- [Australia Zoo](https://www.instagram.com/australiazoo/)
+- [Robert Irwin](https://www.instagram.com/robertirwinphotography/)
+- [Bindi Irwin](https://www.instagram.com/bindisueirwin/)
 
 #### Mr. Rogers
 
-The master of gentle joy-bringing through authenticity. He showed that you don't need grand gestures - sometimes just truly seeing and valuing people is enough to bring joy.
+The master of gentle joy-bringing through authenticity. He showed that you don't need grand gestures - sometimes just truly seeing and valuing people is enough to bring joy. His legacy lives on through [@misterrogers_neighborhood](https://www.instagram.com/misterrogers_neighborhood/) and [The Fred Rogers Center](https://www.instagram.com/fredrogerscenter/).
 
 Different angle: I don't know if I'd use the word Joy, but an amazing Man, shows up in [makes me cry](/cry).
 
 #### Patch Adams
-A doctor who proved that medicine and joy aren't mutually exclusive. He showed how humor and unconventional approaches can bring light to even the darkest situations.
+A doctor who proved that medicine and joy aren't mutually exclusive. He showed how humor and unconventional approaches can bring light to even the darkest situations. Follow him [@patchadams.official](https://www.instagram.com/patchadams.official/).
 
 
 #### Jimmy Darts
-A modern joy-bringer who combines random acts of kindness with social media to create ripple effects of joy. Shows how even brief encounters can create lasting impact.
+A modern joy-bringer who combines random acts of kindness with social media to create ripple effects of joy. Shows how even brief encounters can create lasting impact. Follow his adventures on [Instagram](https://www.instagram.com/jimmydarts/) and [TikTok](https://www.tiktok.com/@jimmydarts).
 
 Different angle: Seems to be too much about giving money.
 
