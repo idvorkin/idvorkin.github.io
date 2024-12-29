@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Three Laws of New Skills"
+title: "The Immutable Laws of New Skills"
 author: "Igor Dvorkin"
 comments: true
 permalink: /laws-of-new-skills
@@ -11,7 +11,7 @@ tags:
   - emotional intelligence
 ---
 
-Learning new skills is hard, but it follows predictable patterns. Understanding these patterns helps us persist when learning gets tough. Here are the three immutable laws of acquiring new skills.
+Learning new skills is hard, but it follows predictable patterns. Understanding these patterns helps us persist when learning gets tough. Here are the immutable laws of acquiring new skills.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
