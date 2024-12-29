@@ -63,6 +63,6 @@ Now I'm picking up one-handed front rack squats.
 
 I used to do KB halos, but they need a lighter weight. This required me to carry three kettlebells in the car, which was much too many, so I realized I could switch to heavy clubs instead. Turns out they are not only much lighter but also give you better mobility, grip strength, core strength, and arm strength. Upgrade! The only downside is finding the right ones; since you can't get them in person, you are ordering all over the internet, and you need to go up in weight. Oh well.
 
-And here's my latest form check video:
+And here's my latest form check video (you can jump to [H2H swings](https://www.youtube.com/watch?v=pe_huqiNv6E&t=0s), [TGU](https://www.youtube.com/watch?v=pe_huqiNv6E&t=27s), [Slow Mo Swings](https://www.youtube.com/watch?v=pe_huqiNv6E&t=60s), [Front Rack](https://www.youtube.com/watch?v=pe_huqiNv6E&t=90s), [Pistols](https://www.youtube.com/watch?v=pe_huqiNv6E&t=120s), and [Pull Ups](https://www.youtube.com/watch?v=pe_huqiNv6E&t=150s)):
 
 {% include youtube.html src="pe_huqiNv6E" %}
