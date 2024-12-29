@@ -121,6 +121,19 @@ In summary, trainers are worth it.
 
 {%include summarize-page.html src="/kettlebell" %}
 
+#### Where's my strength at in 2024
+
+My current strength routine includes:
+- Kettlebell swings: 10x10 @ 32kg two-handed (achieved Nov '23, regressed after injury)
+- Turkish Get-Ups: 5x1 @ 32kg per side (achieved Jan '24, regressed after holiday break)
+- Working on one-handed front rack squats
+- Heavy clubs for mobility and grip strength
+- Pull-ups and pistol squats for bodyweight mastery
+
+Here's my latest form check video (you can jump to [Hand To Hand](https://www.youtube.com/watch?v=pe_huqiNv6E&t=1s), [TGU](https://www.youtube.com/watch?v=pe_huqiNv6E&t=35s), [Slow Mo Swings](https://www.youtube.com/watch?v=pe_huqiNv6E&t=83s), [Front Rack](https://www.youtube.com/watch?v=pe_huqiNv6E&t=210s), [Pistols](https://www.youtube.com/watch?v=pe_huqiNv6E&t=259s), and [Pull Ups](https://www.youtube.com/watch?v=pe_huqiNv6E&t=302s)):
+
+{% include youtube.html src="pe_huqiNv6E" %}
+
 #### How do you think about back pain?
 
 I like the Stuart McGill model. Keep the back stiff as a board, whihc requires your hips and shoulders to have the motion. I find the Heavy Clubs for shoulders and then deep squats/half lotus/pistol squats have me covered for both.
