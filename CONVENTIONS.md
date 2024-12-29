@@ -45,7 +45,28 @@ When a user wants to add an image to a blog post:
 
 
 
-# 3. Coding conventions used in this project
+# 4. IMPORTANT: Opening Blog Posts During Development
+
+When working on a blog post:
+
+1. Get the permalink from the post's front matter
+2. Use this command to open the post in the default browser:
+   ```bash
+   open http://localhost:4000{permalink}
+   ```
+
+3. If working on a specific section, append the anchor:
+   ```bash
+   open http://localhost:4000{permalink}#{anchor}
+   ```
+   
+   Example:
+   - Full post: `open http://localhost:4000/laws-of-new-skills`
+   - Specific section: `open http://localhost:4000/laws-of-new-skills#law-2-practice-makes-permanent`
+
+Note: Jekyll must be running locally (localhost:4000)
+
+# 5. Coding conventions used in this project
 
 For CLIs, use a Typer app.
 Use `ic` for logging.
