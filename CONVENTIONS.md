@@ -96,3 +96,24 @@ READ: _posts/2020-04-01-Igor-Eulogy.md  _d/pride.md  back-links.json
 
 - Fun and quirky
 - Technical, but not boring
+
+# Table of Contents Management
+
+When modifying markdown headings:
+1. Always update the Table of Contents (TOC)
+2. The TOC is managed by vim-markdown-toc
+3. Keep the special markers intact:
+   ```markdown
+   <!-- vim-markdown-toc-start -->
+   [TOC content here]
+   <!-- vim-markdown-toc-end -->
+   ```
+
+Note: Many posts use this format for the TOC section:
+```markdown
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+[TOC content]
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
+```
