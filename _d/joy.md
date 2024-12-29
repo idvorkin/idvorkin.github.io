@@ -11,7 +11,7 @@ redirect_from:
   - /makejoy
 ---
 
-If you could have one super power, what would it be? At 46, you think something would pop into my mind, but the usual answers failed me:  Flying, being invisble, stopping time - meh these all landed flat. I reached for my eulogy (where I often go when confused), and realized, I do have a super power I want - it's bringing others joy.   From my eulogy - _Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles._ And gotta say feels great knowing I'm investing heavily there!
+If you could have one superpower, what would it be? At 46, you'd think I'd have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.
 
 <!-- prettier-ignore-start -->
 
@@ -60,7 +60,6 @@ If you could have one super power, what would it be? At 46, you think something 
 
 {%include summarize-page.html src="/magic"%}
 
-
 Straight from my [eulogy](/eulogy):
 
 _Making cards change colors at a spectators command or passing coins through a spectator's hand -- Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. Once Igor learned [magic](/magic), that consumed his free time and became his favorite tool._
@@ -98,7 +97,7 @@ My early [ballooning](/ig66/621) adventures:
 - Giving out chocolate balls
 - Giving out bells
 
-### Mismatched shoes,  and crazy shirts from TEMU
+### Mismatched shoes, and crazy shirts from TEMU
 
 - First discoverd mismatched shoes, harder then it sounds, but crocks are great
 - Used to get fun shirts from thrift shops, but hard to find them. Then disovered TEMU had such shirts of ronly
@@ -115,7 +114,7 @@ Joy is an involuntary experience that acts on you. You can be more receptive to 
 
 Increasing the receptivity to Joy
 
-Joy is fleeting  - that seem to be in the definition
+Joy is fleeting - that seem to be in the definition
 Joy is in the present
 
 TODO Use Lens of Self/Other/Process
@@ -162,19 +161,18 @@ Also look at notes from Avner class - who was all about building rapport with a 
 - Christmas Carols
 - Can't help yourself but to sing along
 
-### Novely,  Wonder and Surprise - Break the mundane
+### Novely, Wonder and Surprise - Break the mundane
 
 - Some connection between joy and wonder
 - Some say when you clear your mind you feel joy (or bliss) (See the Joy of Happiness)
 - Wonder/Novelty snaps you out of the mundane and makes you feel important
 - Heaht brothers:
-    - Moments; EPIC; Elevate the script
-    - Made to Stick: SUCCESs; Unexpected
+  - Moments; EPIC; Elevate the script
+  - Made to Stick: SUCCESs; Unexpected
 
 ### Joy and Overwhelming kindness from a stranger
 
 If a stranger does something really kind for you unexpectantly, that's kind of like joy
-
 
 ### Joy versus pleasure
 
@@ -243,7 +241,6 @@ Who knows, maybe one day I'll actually get around to doing these.
 ### Become an executive producer for shows
 
 ### Own a vaudiville theatre
-
 
 Humoursly, I always said this, and one day when I was at the olymics of magic (FISM 2022), I went to talk titled: So you want to own a magic, theatre - you're probalby wrong. Snapped me out it.
 
