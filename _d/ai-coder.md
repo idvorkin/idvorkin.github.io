@@ -217,6 +217,22 @@ Hold onto your mechanical keyboards, folks! The future of AI coding is looking w
    - Keep track of prompt patterns that work well
    - Share successful AI interactions with your team
 
+### Making Your AI Learn: The CONVENTIONS.md Approach
+
+Think of your AI assistant as an eager junior developer who can learn and retain knowledge - but only if you teach them properly. Instead of repeating the same instructions in every prompt, establish a single source of truth through your CONVENTIONS.md file. This approach not only saves time but ensures consistency across all AI-generated code. The key is treating conventions as a living document that both teaches the AI and evolves with your project.
+
+1. **Let AI Own the Conventions**
+   - Have AI update CONVENTIONS.md after each significant interaction
+   - Ask AI to document patterns they notice in your feedback
+   - Let AI propose new conventions based on repeated guidance
+   - Use the conventions file as a learning record for the AI
+
+2. **Review Conventions More Carefully Than Code**
+   - Convention changes impact all future code generation
+   - One wrong convention can multiply mistakes across the project
+   - Treat CONVENTIONS.md updates as critical infrastructure changes
+   - Remember: Bad code affects one feature, bad conventions affect everything
+
 ## Real-World Success Stories
 
 ### Case Study: The 24-Hour MVP
