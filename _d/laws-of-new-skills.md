@@ -44,4 +44,4 @@ Just 20 minutes a day adds up to 121 hours in a year - that's three full work we
 
 Remember: The best time to plant a tree was 100 years ago. The second best time is now. The same applies to learning any new skill.
 
-ps. This [blog you're reading], started when I heard about law 1, and made clear law 2 and law 3.
+ps. This [blog you're reading](/about), started when I heard about law 1, and made clear law 2 and law 3.
