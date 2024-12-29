@@ -123,7 +123,9 @@ READ: _posts/2020-04-01-Igor-Eulogy.md  _d/pride.md  back-links.json
 When modifying markdown headings:
 1. Always update the Table of Contents (TOC)
 2. The TOC is managed by vim-markdown-toc
-3. Keep the special markers intact:
+3. For new posts: Place TOC immediately after the first paragraph
+4. For existing posts: Don't move the TOC location
+5. Keep the special markers intact:
    ```markdown
    <!-- vim-markdown-toc-start -->
    [TOC content here]
