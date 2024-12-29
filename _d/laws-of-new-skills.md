@@ -11,7 +11,7 @@ tags:
   - emotional intelligence
 ---
 
-Learning new skills is hard, but it follows predictable patterns. Understanding these patterns helps us persist when learning gets tough. Here are the immutable laws of acquiring new skills.
+Magic, Kettle Bells, Public Speaking - every skill I've acquired follows the same immutable laws. These laws govern how we learn, progress, and master new abilities. It's possible these laws don't apply to you, but I doubt it.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
