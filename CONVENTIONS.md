@@ -11,9 +11,16 @@ When a user wants to add an image to a blog post:
 2. If the image doesn't exist:
    - Ask user: "Would you like me to help you add a new image? If so, please provide the image and I'll help place it in ~/rare_gits/blob/blog/"
    - Images should use .webp format for best performance
-   - Follow naming convention: raccoon-{descriptive-name}.webp
+   - Use descriptive names that indicate the image content
 
-3. Once we confirm the image exists or after adding it, use one of these includes:
+3. Check if the post has an imagefeature in its front matter:
+   - If missing, add it using the first image:
+     ```yaml
+     imagefeature: https://github.com/idvorkin/blob/raw/master/blog/your-image-name.webp
+     ```
+   - If already present, leave it unchanged as it's the post's primary image
+
+4. Once we confirm the image exists or after adding it, use one of these includes:
    
    For right-floating images (preferred):
    ```markdown
@@ -25,12 +32,12 @@ When a user wants to add an image to a blog post:
    {% include blob_image.html src="blog/raccoon-your-image.webp" %}
    ```
 
-4. Place the include tag:
+5. Place the include tag:
    - For new posts: After the first paragraph
    - For existing posts: Near relevant content
    - Ensure there's a blank line before and after the include
 
-5. After adding the image:
+6. After adding the image:
    - If new image: Commit it to the blob repo
    - Commit the blog post changes
 
