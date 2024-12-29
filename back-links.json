@@ -84,6 +84,8 @@
         "/frugality": "/parkinson",
         "/frustration": "/anger",
         "/fuck-shame": "/shame",
+        "/future-igor": "/time-traveller",
+        "/future-self": "/time-traveller",
         "/genai-intern": "/genai-talk",
         "/getting-things-done": "/gtd",
         "/getting-to-yes": "/negotiate",
@@ -261,12 +263,13 @@
         "/42": {
             "url": "/42",
             "title": "What I wish I knew at 42",
-            "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember , a healthy person has a thousand wishes, a sick person just one - things i wish I knew at 42\n\n",
+            "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember , a healthy woman has a thousand wishes, a sick woman - just one: Things i wish I knew at 42\n\n",
             "file_path": "_site/42.html",
             "outgoing_links": [
                 "/diet",
                 "/last-year",
-                "/physical-health"
+                "/physical-health",
+                "/terzepatide"
             ],
             "incoming_links": [
                 "/chapters",
@@ -274,7 +277,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/42.md",
-            "doc_size": 14000
+            "doc_size": 16000
         },
         "/7-habits": {
             "url": "/7-habits",
@@ -658,6 +661,7 @@
                 "/mental-pain"
             ],
             "incoming_links": [
+                "/emotions",
                 "/mood"
             ],
             "redirect_url": "",
@@ -1053,7 +1057,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/chapters.md",
-            "doc_size": 15000
+            "doc_size": 18000
         },
         "/chasing-daylight": {
             "url": "/chasing-daylight",
@@ -1921,14 +1925,19 @@
             "description": "Ever notice how emotions are like that one friend who shows up uninvited and fucks up your perfectly planned party? Sometimes they bring cake and make everything awesome, other times they’re drunk and knocking over your carefully arranged furniture while screaming “YOLO!” Well, here’s your guide to that emotional party crasher living rent-free in your head, because let’s face it - they’re not moving out anytime soon.\n\n",
             "file_path": "_site/emotions.html",
             "outgoing_links": [
+                "/anger",
                 "/be-proactive",
                 "/curious",
-                "/shame"
+                "/happy",
+                "/joy",
+                "/regrets",
+                "/shame",
+                "/sublime"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/emotions.md",
-            "doc_size": 11000
+            "doc_size": 13000
         },
         "/enable": {
             "url": "/enable",
@@ -2193,6 +2202,7 @@
                 "/d/time-off-2020-03",
                 "/first-things-first",
                 "/gtd",
+                "/idle",
                 "/mental-pain",
                 "/productive",
                 "/psychic-weight",
@@ -2398,6 +2408,7 @@
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
                 "/d/time-off-2023-11",
+                "/emotions",
                 "/hobby",
                 "/joy",
                 "/mood",
@@ -2480,16 +2491,16 @@
         "/idle": {
             "url": "/idle",
             "title": "Your idle loop",
-            "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifiying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
+            "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
             "file_path": "_site/idle.html",
             "outgoing_links": [
                 "/addiction",
                 "/be-proactive",
                 "/d/habits",
+                "/frog",
                 "/magic",
                 "/mental-pain",
                 "/mind-monsters",
-                "/psychic-weight",
                 "/siy"
             ],
             "incoming_links": [
@@ -2651,7 +2662,7 @@
         "/joy": {
             "url": "/joy",
             "title": "Smiles, Joy and Wonder",
-            "description": "Bringing joy for others is my thing. From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles.\n\n",
+            "description": "If you could have one super power, what would it be? At 46, you think something would pop into my mind, but the usual answers failed me:  Flying, being invisble, stopping time - meh these all landed flat. I reached for my eulogy (where I often go when confused), and realized, I do have a super power I want - it’s bringing others joy.   From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. And gotta say feels great knowing I’m investing heavily there!\n\n",
             "file_path": "_site/joy.html",
             "outgoing_links": [
                 "/balloon",
@@ -2667,6 +2678,7 @@
                 "/affirmations",
                 "/balloon",
                 "/build-bubble-bike",
+                "/emotions",
                 "/end-in-mind",
                 "/energy",
                 "/happy",
@@ -2677,7 +2689,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/joy.md",
-            "doc_size": 20000
+            "doc_size": 23000
         },
         "/kettlebell": {
             "url": "/kettlebell",
@@ -3400,8 +3412,7 @@
             ],
             "incoming_links": [
                 "/depression",
-                "/gtd",
-                "/idle"
+                "/gtd"
             ],
             "redirect_url": "",
             "markdown_path": "_d/psychic-weight.md",
@@ -3486,6 +3497,7 @@
                 "/sustainable-work"
             ],
             "incoming_links": [
+                "/emotions",
                 "/mood"
             ],
             "redirect_url": "",
@@ -3818,6 +3830,7 @@
                 "/affirmations",
                 "/d/time-off-2024-02",
                 "/emotional-health",
+                "/emotions",
                 "/siy"
             ],
             "redirect_url": "",
@@ -4271,6 +4284,7 @@
             "file_path": "_site/terzepatide.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/42",
                 "/d/time-off-2024-04",
                 "/diet",
                 "/eulogy",
@@ -4357,6 +4371,17 @@
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-08.md",
             "doc_size": 25000
+        },
+        "/time-traveller": {
+            "url": "/time-traveller",
+            "title": "When Past Igor Meets Future Igor",
+            "description": "What would Past Igor say if he met Future Igor? Would he be impressed by the wisdom, disappointed by the waistline, or wonder how we developed such an intense relationship with pastries? While we can’t physically time travel, we can use mental time travel as a powerful tool - imagining conversations across our past, present, and future selves. Think of it as a group chat between Past Igor (that idealistic youngster), Present Igor (hello!), and Future Igor (who’s probably shaking his head at both of us). Let’s explore how these three versions of ourselves are constantly chatting, arguing, and occasionally giving each other virtual fist bumps across the space-time continuum.\n\n\n\n",
+            "file_path": "_site/time-traveller.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/time-traveller.md",
+            "doc_size": 13000
         },
         "/timeoff": {
             "url": "/timeoff",
