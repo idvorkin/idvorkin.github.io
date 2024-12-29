@@ -11,14 +11,6 @@ tags:
   - emotional intelligence
 ---
 
-<!-- prettier-ignore-start -->
-<!-- vim-markdown-toc-start -->
-* [Law 1: You'll Suck Until You Don't](#law-1-youll-suck-until-you-dont)
-* [Law 2: Practice Makes Permanent](#law-2-practice-makes-permanent)
-* [Law 3: The Time Paradox](#law-3-the-time-paradox)
-<!-- vim-markdown-toc-end -->
-<!-- prettier-ignore-end -->
-
 Learning new skills is hard, but it follows predictable patterns. Understanding these patterns helps us persist when learning gets tough. Here are the three immutable laws of acquiring new skills.
 
 <!-- prettier-ignore-start -->
