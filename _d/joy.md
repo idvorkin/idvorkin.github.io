@@ -41,6 +41,9 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Things that bring most people joy](#things-that-bring-most-people-joy)
   - [Manipulation vs Augmenting Experiences](#manipulation-vs-augmenting-experiences)
   - [Imbalance of Impact](#imbalance-of-impact)
+- [Role Models & Inspirations](#role-models--inspirations)
+  - [Gayle - The Queen of Aggressive Kindness](#gayle---the-queen-of-aggressive-kindness)
+  - [Other Inspirations](#other-inspirations)
 - [Future Projects](#future-projects)
   - [Smile box](#smile-box)
   - [Bubble Show](#bubble-show)
@@ -222,6 +225,13 @@ I need more thinking here but something like.
   - Before - Happiness = SP/2
   - After - Happiness = SP+K
   - Delta Happy = (SP+K) - (SP/2) = SP/2+K (!!!!)
+
+## Role Models & Inspirations
+
+### Gayle - The Queen of Aggressive Kindness
+
+### Other Inspirations
+More joy-bringing role models coming soon! If you know of someone who dedicates their life to bringing joy to others, please let me know.
 
 ## Future Projects
 
