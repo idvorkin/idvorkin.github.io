@@ -38,10 +38,10 @@ The key is deliberate practice: focused, intentional improvement with feedback. 
 
 ### Law 3: Humans overestimate what can be done in a week, and underestimate what can be done in a year
 
-We consistently overestimate what we can learn in a week and underestimate what we can master in a year. This paradox leads many to quit just before breakthrough moments.
-
-Progress in skill acquisition isn't linear - it follows an S-curve. You'll have plateaus where it feels like you're getting nowhere, followed by sudden jumps in ability. The trick is to keep showing up, especially during those plateaus, knowing that breakthroughs come to those who persist.
+You'll have plateaus where it feels like you're getting nowhere, followed by sudden jumps in ability. The trick is to keep showing up, especially during those plateaus, knowing that breakthroughs come to those who persist.
 
 Just 20 minutes a day adds up to 121 hours in a year - that's three full work weeks dedicated to your skill. Think about that: three weeks of focused practice, spread out in manageable daily chunks. With kettlebells, that took me from struggling with a 16kg bell to confidently swinging a 48kg one. In magic, it was the difference between fumbling basic card controls to smoothly performing complex routines.
 
 Remember: The best time to plant a tree was 100 years ago. The second best time is now. The same applies to learning any new skill.
+
+ps. This [blog you're reading], started when I heard about law 1, and made clear law 2 and law 3.
