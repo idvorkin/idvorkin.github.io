@@ -9,10 +9,10 @@ redirect_from:
   - /makesmile
   - /dealjoy
   - /makejoy
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-joy.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-dealer-smiles-and-wonder.webp
 ---
 
-{% include blob_image_float_right.html src="blog/raccoon-joy.webp" %}
+{% include blob_image.html src="blog/racoon-dealer-smiles-and-wonder.webp" %}
 
 If you could have one superpower, what would it be? At 46, you'd think I'd have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.
 
