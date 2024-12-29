@@ -17,7 +17,7 @@ Learning new skills is hard, but it follows predictable patterns. Understanding 
 <!-- vim-markdown-toc-start -->
 * [Law 1: You'll Suck Until You Don't](#law-1-youll-suck-until-you-dont)
 * [Law 2: Practice Makes Permanent](#law-2-practice-makes-permanent)
-* [Law 3: The Time Paradox](#law-3-the-time-paradox)
+* [Law 3: We overestimate what can be done in a week, and underestimate in a year](#law-3-we-overestimate-what-can-be-done-in-a-week-and-underestimate-in-a-year)
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
@@ -35,9 +35,9 @@ Think of a baby learning to walk. They fall hundreds of times, but never think "
 
 The key is deliberate practice: focused, intentional improvement with feedback. Whether it's from a teacher, a video of yourself, or careful self-reflection, you need to know what you're doing wrong to fix it. Otherwise, you're just reinforcing bad habits.
 
-### Law 3: The Time Paradox
+### Law 3: We overestimate what can be done in a week, and underestimate in a year
 
-We consistently overestimate what we can learn in a day and underestimate what we can master in a year. This paradox leads many to quit just before breakthrough moments.
+We consistently overestimate what we can learn in a week and underestimate what we can master in a year. This paradox leads many to quit just before breakthrough moments.
 
 Progress in skill acquisition isn't linear - it follows an S-curve. You'll have plateaus where it feels like you're getting nowhere, followed by sudden jumps in ability. The trick is to keep showing up, especially during those plateaus, knowing that breakthroughs come to those who persist.
 
