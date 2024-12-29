@@ -12,7 +12,6 @@ redirect_from:
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-dealer-smiles-and-wonder.webp
 ---
 
-{% include blob_image.html src="blog/racoon-dealer-smiles-and-wonder.webp" %}
 
 If you could have one superpower, what would it be? At 46, you'd think I'd have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.
 
@@ -28,7 +27,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Bubble Bike](#bubble-bike)
   - [Ballooning](#ballooning)
   - [Chocolate Balls and Bells](#chocolate-balls-and-bells)
-  - [Mismatched shoes,  and crazy shirts from TEMU](#mismatched-shoes--and-crazy-shirts-from-temu)
+  - [Mismatched shoes, and crazy shirts from TEMU](#mismatched-shoes-and-crazy-shirts-from-temu)
   - [Surprise birthday visit to my sister](#surprise-birthday-visit-to-my-sister)
 - [Theory](#theory)
   - [Attributes of Joy](#attributes-of-joy)
@@ -37,7 +36,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Build rapport to make people feel safe](#build-rapport-to-make-people-feel-safe)
   - [Why kids are more receptive to Joy](#why-kids-are-more-receptive-to-joy)
   - [Other things to file](#other-things-to-file)
-  - [Novely,  Wonder and Surprise - Break the mundane](#novely--wonder-and-surprise---break-the-mundane)
+  - [Novely, Wonder and Surprise - Break the mundane](#novely-wonder-and-surprise---break-the-mundane)
   - [Joy and Overwhelming kindness from a stranger](#joy-and-overwhelming-kindness-from-a-stranger)
   - [Joy versus pleasure](#joy-versus-pleasure)
   - [Things that bring most people joy](#things-that-bring-most-people-joy)
@@ -54,6 +53,8 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+{% include blob_image.html src="blog/racoon-dealer-smiles-and-wonder.webp" %}
 
 ## Completed Projects
 
