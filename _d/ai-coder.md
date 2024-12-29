@@ -26,6 +26,16 @@ Buckle up, code warriors! AI's grand adventure in the coding realm has been noth
   - [AI for junior vs Senior Developers](#ai-for-junior-vs-senior-developers)
     - [The 70% AI coding problem:](#the-70-ai-coding-problem)
     - [The death of the stubborn programmer](#the-death-of-the-stubborn-programmer)
+- [Future of AI Coding: Beyond the Basics](#future-of-ai-coding-beyond-the-basics)
+  - [Emerging Trends](#emerging-trends)
+- [Best Practices for AI-Assisted Development](#best-practices-for-ai-assisted-development)
+  - [The Art of Prompt Engineering](#the-art-of-prompt-engineering)
+  - [Integration Tips](#integration-tips)
+  - [Making Your AI Learn: The CONVENTIONS.md Approach](#making-your-ai-learn-the-conventionsmd-approach)
+- [Real-World Success Stories](#real-world-success-stories)
+  - [Case Study: The 24-Hour MVP](#case-study-the-24-hour-mvp)
+  - [The Legacy Code Whisperer](#the-legacy-code-whisperer)
+- [The Human Element](#the-human-element)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -184,6 +194,7 @@ Hold onto your mechanical keyboards, folks! The future of AI coding is looking w
 ### Emerging Trends
 
 1. **Multi-Modal AI Development**
+
    - Picture this: describing your UI in plain English while waving your hands around like a coding conductor, and BAM! Your AI assistant whips up a pixel-perfect interface. We're talking voice, gestures, and maybe even interpretive dance (okay, maybe not that last one... yet).
    - Visual programming is getting a serious upgrade - soon you'll be sketching wireframes on napkins and having AI turn them into production-ready code faster than you can say "responsive design."
 
@@ -196,6 +207,7 @@ Hold onto your mechanical keyboards, folks! The future of AI coding is looking w
 ### The Art of Prompt Engineering
 
 1. **Be Specific, But Not Too Specific**
+
    - Good: "Create a React component for a responsive navigation bar with dark/light theme support"
    - Better: Include your project's conventions and specific requirements
    - Best: Reference existing components and patterns in your codebase
@@ -208,6 +220,7 @@ Hold onto your mechanical keyboards, folks! The future of AI coding is looking w
 ### Integration Tips
 
 1. **Version Control Strategy**
+
    - Create separate branches for AI-generated code
    - Use meaningful commit messages that indicate AI assistance
    - Review AI-generated changes with extra scrutiny
@@ -222,6 +235,7 @@ Hold onto your mechanical keyboards, folks! The future of AI coding is looking w
 Think of your AI assistant as an eager junior developer who can learn and retain knowledge - but only if you teach them properly. Instead of repeating the same instructions in every prompt, establish a single source of truth through your CONVENTIONS.md file. This approach not only saves time but ensures consistency across all AI-generated code. The key is treating conventions as a living document that both teaches the AI and evolves with your project. You can see [an example of this evolution here](https://gist.github.com/idvorkin/6f506f47bf6c4c57a1ff5a2d24e345dd#conventionsmd).
 
 1. **Let AI Own the Conventions**
+
    - Have AI update CONVENTIONS.md after each significant interaction
    - Ask AI to document patterns they notice in your feedback
    - Let AI propose new conventions based on repeated guidance
