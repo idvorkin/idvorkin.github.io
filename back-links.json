@@ -360,11 +360,13 @@
             "title": "Where am I?",
             "description": "Igor's Blog",
             "file_path": "_site/about.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/laws-of-new-skills"
+            ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "about.md",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/activation": {
             "url": "/activation",
@@ -523,7 +525,7 @@
         "/ai-coder": {
             "url": "/ai-coder",
             "title": "AI code writer",
-            "description": "Buckle up, code warriors! AI’s grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we’ve hit the jackpot with full-blown code writing! It’s like having a tireless robot assistant who can churn out entire functions faster than you can say “Hello, World!” This AI-powered journey has turned coding from a solo trek into a wild party where everyone’s invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it’s got AI written all over it!\n\n",
+            "description": "Buckle up, code warriors! AI’s grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we’ve hit the jackpot with full-blown code writing! Welcome to the era of CHOP - Chat-Oriented Programming - where coding has transformed from a solo trek into a wild party where everyone’s invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it’s got AI written all over it!\n\n",
             "file_path": "_site/ai-coder.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -533,7 +535,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 26000
+            "doc_size": 28000
         },
         "/ai-developer": {
             "url": "/ai-developer",
@@ -2662,7 +2664,7 @@
         "/joy": {
             "url": "/joy",
             "title": "Smiles, Joy and Wonder",
-            "description": "If you could have one super power, what would it be? At 46, you think something would pop into my mind, but the usual answers failed me:  Flying, being invisble, stopping time - meh these all landed flat. I reached for my eulogy (where I often go when confused), and realized, I do have a super power I want - it’s bringing others joy.   From my eulogy - Igor lived to see eyes go wide and mouths gape with wonder. Igor especially loved it when strangers got drawn in against their inner objections, or when a kid having a meltdown, or a grown up looking miserable, forgot their troubles. And gotta say feels great knowing I’m investing heavily there!\n\n",
+            "description": "If you could have one superpower, what would it be? At 46, you’d think I’d have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.\n\n",
             "file_path": "_site/joy.html",
             "outgoing_links": [
                 "/balloon",
@@ -2723,6 +2725,19 @@
             "redirect_url": "",
             "markdown_path": "_d/last-year.md",
             "doc_size": 14000
+        },
+        "/laws-of-new-skills": {
+            "url": "/laws-of-new-skills",
+            "title": "The Immutable Laws of New Skills",
+            "description": "Magic, Kettle Bells, Public Speaking - every skill I’ve acquired follows the same immutable laws. These laws govern how we learn, progress, and master new abilities. It’s possible these laws don’t apply to you, but I doubt it.\n\n",
+            "file_path": "_site/laws-of-new-skills.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/about"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/laws-of-new-skills.md",
+            "doc_size": 13000
         },
         "/laws-of-power": {
             "url": "/laws-of-power",
@@ -2842,7 +2857,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 148000
+            "doc_size": 150000
         },
         "/manager-book-appendix": {
             "url": "/manager-book-appendix",
