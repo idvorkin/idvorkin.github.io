@@ -43,7 +43,10 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Imbalance of Impact](#imbalance-of-impact)
 - [Role Models & Inspirations](#role-models--inspirations)
   - [Gayle - The Queen of Aggressive Kindness](#gayle---the-queen-of-aggressive-kindness)
-  - [Other Inspirations](#other-inspirations)
+    - [Steve Irwin](#steve-irwin)
+    - [Mr. Rogers](#mr-rogers)
+    - [Patch Adams](#patch-adams)
+    - [Jimmy Darts](#jimmy-darts)
 - [Future Projects](#future-projects)
   - [Smile box](#smile-box)
   - [Bubble Show](#bubble-show)
@@ -243,26 +246,24 @@ What's particularly inspiring about Gayle is how she combines whimsy with intent
 
 Her daughter's initial embarrassment turning into deep appreciation also highlights an important lesson: sometimes what makes people remarkable is exactly what makes them seem odd at first glance.
 
-### Other Inspirations
+#### Steve Irwin
 
-Here are some other remarkable people who've dedicated their lives to bringing joy:
+Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn't just a catchphrase - it was an expression of authentic amazement that invited others to share in his joy.
 
 #### Mr. Rogers
+
 The master of gentle joy-bringing through authenticity. He showed that you don't need grand gestures - sometimes just truly seeing and valuing people is enough to bring joy.
+
+Different angle: I don't know if I'd use the word Joy, but an amazing Man, shows up in [makes me cry](/cry).
 
 #### Patch Adams
 A doctor who proved that medicine and joy aren't mutually exclusive. He showed how humor and unconventional approaches can bring light to even the darkest situations.
 
-#### Steve Irwin
-Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn't just a catchphrase - it was an expression of authentic amazement that invited others to share in his joy.
 
 #### Jimmy Darts
 A modern joy-bringer who combines random acts of kindness with social media to create ripple effects of joy. Shows how even brief encounters can create lasting impact.
 
-#### Bob Ross
-Brought joy through calm presence and "happy little trees," showing that joy doesn't always need to be loud or dramatic - sometimes it can be quiet and meditative.
-
-Know someone else who dedicates their life to bringing joy to others? Let me know!
+Different angle: Seems to be too much about giving money.
 
 ## Future Projects
 
