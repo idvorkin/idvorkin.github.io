@@ -17,7 +17,7 @@ Learning new skills is hard, but it follows predictable patterns. Understanding 
 <!-- vim-markdown-toc-start -->
 * [Law 1: You'll Suck Until You Don't](#law-1-youll-suck-until-you-dont)
 * [Law 2: Practice Makes Permanent](#law-2-practice-makes-permanent)
-* [Law 3: We overestimate what can be done in a week, and underestimate in a year](#law-3-we-overestimate-what-can-be-done-in-a-week-and-underestimate-in-a-year)
+* [Law 3: Humans overestimate what can be done in a week, and underestimate in a year](#law-3-humans-overestimate-what-can-be-done-in-a-week-and-underestimate-in-a-year)
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
@@ -35,10 +35,12 @@ Think of a baby learning to walk. They fall hundreds of times, but never think "
 
 The key is deliberate practice: focused, intentional improvement with feedback. Whether it's from a teacher, a video of yourself, or careful self-reflection, you need to know what you're doing wrong to fix it. Otherwise, you're just reinforcing bad habits.
 
-### Law 3: We overestimate what can be done in a week, and underestimate in a year
+### Law 3: Humans overestimate what can be done in a week, and underestimate in a year
 
 We consistently overestimate what we can learn in a week and underestimate what we can master in a year. This paradox leads many to quit just before breakthrough moments.
 
 Progress in skill acquisition isn't linear - it follows an S-curve. You'll have plateaus where it feels like you're getting nowhere, followed by sudden jumps in ability. The trick is to keep showing up, especially during those plateaus, knowing that breakthroughs come to those who persist.
 
-Remember: The best time to plant a tree was 20 years ago. The second best time is now. The same applies to learning any new skill.
+Just 20 minutes a day adds up to 121 hours in a year - that's three full work weeks dedicated to your skill. Think about that: three weeks of focused practice, spread out in manageable daily chunks. With kettlebells, that took me from struggling with a 16kg bell to confidently swinging a 48kg one. In magic, it was the difference between fumbling basic card controls to smoothly performing complex routines.
+
+Remember: The best time to plant a tree was 100 years ago. The second best time is now. The same applies to learning any new skill.
