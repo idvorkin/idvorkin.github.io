@@ -230,8 +230,39 @@ I need more thinking here but something like.
 
 ### Gayle - The Queen of Aggressive Kindness
 
+One of my favorite inspirations is Gayle, a 78-year-old retired engineer with over 50 patents to her name, who now dedicates her retirement to "aggressive kindness." Her story is documented by her daughter on Instagram (@gayle.tales).
+
+What makes Gayle remarkable:
+- She carries cookies everywhere to give to strangers
+- Wears silly fluffy hats because "people light up when they see the ears wiggle"
+- Brings weekly muffins to postal workers because "they have a hard job and deserve a treat"
+- Can't pass a construction site without handing out Oreos
+- Proves that being "different" or "weird" doesn't matter when your heart is full of love
+
+What's particularly inspiring about Gayle is how she combines whimsy with intentionality. She doesn't just do random acts of kindness - she does them systematically, reliably, and with full commitment. She shows that bringing joy doesn't require special skills or resources - just dedication and an open heart.
+
+Her daughter's initial embarrassment turning into deep appreciation also highlights an important lesson: sometimes what makes people remarkable is exactly what makes them seem odd at first glance.
+
 ### Other Inspirations
-More joy-bringing role models coming soon! If you know of someone who dedicates their life to bringing joy to others, please let me know.
+
+Here are some other remarkable people who've dedicated their lives to bringing joy:
+
+#### Mr. Rogers
+The master of gentle joy-bringing through authenticity. He showed that you don't need grand gestures - sometimes just truly seeing and valuing people is enough to bring joy.
+
+#### Patch Adams
+A doctor who proved that medicine and joy aren't mutually exclusive. He showed how humor and unconventional approaches can bring light to even the darkest situations.
+
+#### Steve Irwin
+Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn't just a catchphrase - it was an expression of authentic amazement that invited others to share in his joy.
+
+#### Jimmy Darts
+A modern joy-bringer who combines random acts of kindness with social media to create ripple effects of joy. Shows how even brief encounters can create lasting impact.
+
+#### Bob Ross
+Brought joy through calm presence and "happy little trees," showing that joy doesn't always need to be loud or dramatic - sometimes it can be quiet and meditative.
+
+Know someone else who dedicates their life to bringing joy to others? Let me know!
 
 ## Future Projects
 
