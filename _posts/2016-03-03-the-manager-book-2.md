@@ -1086,7 +1086,7 @@ When looking at code reviews as a teaching tool:
 
 ## Planning, Roadmaps and Resource Allocation
 
-### Who goes last: Start with why, then what, when, and lastly who
+### Start with why, end with who: The execution order framework
 
 When planning execution, follow this order:
 
@@ -1129,7 +1129,7 @@ This approach helps ensure:
 - Resource discussions happen after project viability is confirmed
 
 
-### Defining Success - How does goal setting work
+### Define success: Setting effective goals
 
 The goal is to maximize the impact of the team.
 
@@ -1145,7 +1145,7 @@ For major projects, a large EE project is required (like a technology migration)
 
 Technical Debt is often a bad thing, but like debt it is a good thing if there is a good chance a project will be abandoned and you won't need to pay the interest. Examples here are speculative projects which may be rolled back, and bridges to a future technology.
 
-### How do you do planning and come up with roadmaps
+### Build the roadmap: Planning and sequencing
 
 6 step process
 
@@ -1167,7 +1167,7 @@ The full process is expensive and the team should be shielded from some of it bu
 
 [TODO Picture]
 
-### What makes a great schedule
+### Create the schedule: Timeline and milestones
 
 NOTE: Even though plans tend to be reviewed at a half year cadence, it's important that the dates below are relative for the health of the team.
 
@@ -1183,7 +1183,7 @@ Great schedules and roadmaps can solve many problems, based on people's levels a
   - (The more senior folks help junior folks do this, and also build their coarse estimation muscles)
   - By having granular estimates down to he 1-2 weeks, and having someone help create and review the estimates
 
-### How does resource allocation work
+### Allocate resources: Matching people and projects
 
 Resource allocation is maximizing the intersection in the Venn diagram - "Personal Preference", "Business Need" and "Probability of Success" for the business, team and individuals.
 
@@ -1207,7 +1207,7 @@ There are some more concepts I need to flesh out:
 
 **Keeping slack in the system** Anxiety is the difference between reality and expectations. Slack is the tool that helps us better model reality, and keep stress under control.
 
-### The road building analogy to software development roles
+### Understand roles: The road building analogy
 
 Imagine we want to build a new road.
 
@@ -1217,11 +1217,11 @@ Imagine we want to build a new road.
 1. After: Intermediate dev's are assigned a chunk of the road and start building it.
 1. After: Junior devs are given very clear tasks, and start doing them.
 
-### Prioritize Ruthlessly
+### Prioritize work: Making tough trade-offs
 
 A great mantra for life, individual contributors, and especially folks supporting more junior folks. A great article that deep dives into the topic [here](https://alexturek.com/2022-03-07-How-to-do-less/).
 
-### How to provide coarse estimates SWAG/T-Shirt size
+### Estimate effort: Using SWAG and T-shirt sizing
 
 - **T-Shirt size** - This is a word for creating coarse cost estimates that use sizes (S, M, L, XL) to correspond with cost. T-Shirt sizes don't have a standardized map to time units so I recommend using actual time units. To avoid "false precision", limit yourself to a small set of coarse time units e.g. (1 quarter, 2 quarter, 4 quarter, 4+ quarter).
 
