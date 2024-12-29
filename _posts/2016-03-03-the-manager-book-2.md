@@ -82,6 +82,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [Quality and Technical Growth Design+Arch Reviews](#quality-and-technical-growth-designarch-reviews)
   - [Code reviews](#code-reviews)
 - [Planning, Roadmaps and Resource Allocation](#planning-roadmaps-and-resource-allocation)
+  - [Who goes last: Start with why, then what, when, and lastly who](#who-goes-last-start-with-why-then-what-when-and-lastly-who)
   - [Defining Success - How does goal setting work](#defining-success---how-does-goal-setting-work)
   - [How do you do planning and come up with roadmaps](#how-do-you-do-planning-and-come-up-with-roadmaps)
   - [What makes a great schedule](#what-makes-a-great-schedule)
@@ -1084,6 +1085,49 @@ When looking at code reviews as a teaching tool:
 - The emphasis should still be on discussing and explaining issues and concepts rather than just pointing out issues that need fixing. Other engineers not involved in the review process can also read through these discussions at a later stage to understand why certain changes were made and how they fit into the big picture.
 
 ## Planning, Roadmaps and Resource Allocation
+
+### Who goes last: Start with why, then what, when, and lastly who
+
+When planning execution, follow this order:
+
+1. **Why** - Start with the purpose and impact
+   - What problem are we solving?
+   - What's the business value?
+   - Why is this important now?
+
+2. **What** - Define Success
+   - What does success look like?
+   - What are we building?
+   - What are the key requirements?
+   - What are the constraints?
+
+3. **When** - Establish timeline and milestones
+   - When do we need this by?
+   - What are the key dependencies?
+   - What's the critical path?
+   - What are our checkpoints?
+
+4. **Who** - Assign people last
+   - Who has the right skills?
+   - Who needs growth in this area?
+   - Who is available?
+   - Who is interested?
+
+The order is important because:
+
+- Starting with "who" leads to solutions constrained by current team skills
+- People get attached to projects before viability is confirmed
+- Resource constraints can artificially limit thinking about solutions
+- Team members may feel personally rejected if project gets cancelled
+- Keeping "who" last maintains flexibility and objectivity
+
+This approach helps ensure:
+
+- Solutions are driven by business needs not current capabilities
+- Discussions stay objective longer
+- Team can think more creatively about solutions
+- Resource discussions happen after project viability is confirmed
+
 
 ### Defining Success - How does goal setting work
 
