@@ -4,7 +4,7 @@ title: AI code writer
 permalink: /ai-coder
 ---
 
-Buckle up, code warriors! AI's grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we've hit the jackpot with full-blown code writing! It's like having a tireless robot assistant who can churn out entire functions faster than you can say "Hello, World!" This AI-powered journey has turned coding from a solo trek into a wild party where everyone's invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it's got AI written all over it!
+Buckle up, code warriors! AI's grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we've hit the jackpot with full-blown code writing! Welcome to the era of CHOP - Chat-Oriented Programming - where coding has transformed from a solo trek into a wild party where everyone's invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it's got AI written all over it!
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -104,7 +104,7 @@ Cursor has native support for indexing docs, some projects even have llm.txt to 
 
 ### Dream: Re-write commit history to break things into orthogonal changes
 
-### Should I code once we have AI?
+### Should I code once we have CHOP?
 
 _It occurs to me this applies to all vocations, not just programming_
 
@@ -133,7 +133,7 @@ Mostly lifted from this guy:
 
 {%include youtube.html src="mTa2d3OLXhg?start=5160" %}
 
-### AI for junior vs Senior Developers
+### CHOP for junior vs Senior Developers
 
 #### [The 70% AI coding problem](https://gist.github.com/idvorkin/bf72b861c826e67ad460f06f1ccb9afc):
 
@@ -202,7 +202,7 @@ Hold onto your mechanical keyboards, folks! The future of AI coding is looking w
    - Your code will literally evolve like a digital Darwin experiment. AI will suggest optimizations in real-time, learning from your project's entire git history and your team's coding patterns.
    - Bug prediction? That's so 2023. We're moving towards "code healing" - AI that spots potential issues before they even become bugs. It's like having a time-traveling debugger!
 
-## Best Practices for AI-Assisted Development
+## Best Practices for CHOP Development
 
 ### The Art of Prompt Engineering
 
@@ -221,16 +221,16 @@ Hold onto your mechanical keyboards, folks! The future of AI coding is looking w
 
 1. **Version Control Strategy**
 
-   - Create separate branches for AI-generated code
-   - Use meaningful commit messages that indicate AI assistance
-   - Review AI-generated changes with extra scrutiny
+   - Create separate branches for CHOP-generated code
+   - Use meaningful commit messages that indicate CHOP assistance
+   - Review CHOP-generated changes with extra scrutiny
 
 2. **Documentation is Your Friend**
    - Document AI-assisted changes
    - Keep track of prompt patterns that work well
    - Share successful AI interactions with your team
 
-### Making Your AI Learn: The CONVENTIONS.md Approach
+### Making Your CHOP Assistant Learn: The CONVENTIONS.md Approach
 
 Think of your AI assistant as an eager junior developer who can learn and retain knowledge - but only if you teach them properly. Instead of repeating the same instructions in every prompt, establish a single source of truth through your CONVENTIONS.md file. This approach not only saves time but ensures consistency across all AI-generated code. The key is treating conventions as a living document that both teaches the AI and evolves with your project. You can see [an example of this evolution here](https://gist.github.com/idvorkin/6f506f47bf6c4c57a1ff5a2d24e345dd#conventionsmd).
 
