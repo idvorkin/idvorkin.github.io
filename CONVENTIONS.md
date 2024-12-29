@@ -1,4 +1,40 @@
-# 2. IMPORTANT: IF I want to add blog content, or a blog
+# 2. IMPORTANT: Adding Images to Blog Posts
+
+When a user wants to add an image to a blog post:
+
+1. First check if the image already exists:
+   ```bash
+   ls -R ~/rare_gits/blob/blog/
+   ```
+   Ask the user: "I see these existing images - is your image already there or do we need to add a new one?"
+
+2. If the image doesn't exist:
+   - Ask user: "Would you like me to help you add a new image? If so, please provide the image and I'll help place it in ~/rare_gits/blob/blog/"
+   - Images should use .webp format for best performance
+   - Follow naming convention: raccoon-{descriptive-name}.webp
+
+3. Once we confirm the image exists or after adding it, use one of these includes:
+   
+   For right-floating images (preferred):
+   ```markdown
+   {% include blob_image_float_right.html src="blog/raccoon-your-image.webp" %}
+   ```
+
+   For centered images:
+   ```markdown
+   {% include blob_image.html src="blog/raccoon-your-image.webp" %}
+   ```
+
+4. Place the include tag:
+   - For new posts: After the first paragraph
+   - For existing posts: Near relevant content
+   - Ensure there's a blank line before and after the include
+
+5. After adding the image:
+   - If new image: Commit it to the blob repo
+   - Commit the blog post changes
+
+# 3. IMPORTANT: IF I want to add blog content, or a blog
 
 
 
