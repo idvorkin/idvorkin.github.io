@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Kettlebells - A rock with a handle"
-
 permalink: /kettlebell
 redirect_from:
   - /kb
+  - /bells
   - /kettlebells
   - /heavy-clubs
   - /heavy-club
