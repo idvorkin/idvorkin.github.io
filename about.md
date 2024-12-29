@@ -7,6 +7,8 @@ tags:
 
 My blog! It's the place I sharpen my thinking, play with technology, and have a grand old time! I started the blog with a desire to get good at hard things, and over time it turned into my implementation of [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C).
 
+{%include summarize-page.html src="/laws-of-new-skills"%}
+
 To get good at hard things you need LOTS of practice and LOTS of feedback, and sadly for you, during that time the stuff you do will suck. Ira Glass, the host of This American Life, eloquently explains it elegantly.
 
 <div class="ratio ratio-16x9">
