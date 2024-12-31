@@ -93,6 +93,24 @@ This is done after API development is complete. Simply validate if the APIs are 
   - Network resilience
 - **Value**: Catches integration issues before end-to-end testing
 
+#### The Humble Object Pattern
+When dealing with external dependencies that are hard to test (like UI, hardware, etc.):
+
+1. Extract all logic from the hard-to-test component into a testable service
+2. Leave only the bare minimum code in the "humble" component that interfaces with the external dependency
+3. The humble component becomes a thin adapter that's so simple it may not need tests
+
+**Example**:
+- Instead of testing UI rendering directly, extract business logic into a testable view model
+- UI component becomes a simple "humble" translator between view model and screen
+
+**Common uses**:
+- UI rendering
+- Hardware interfaces
+- File system operations
+- Network calls
+- Database access
+
 
 ### Snapshot Tests - Validating UX
 
@@ -119,13 +137,6 @@ This is done after API development is complete. Simply validate if the APIs are 
   - Review diffs carefully
   - Update intentionally, not blindly
 
-### External Dependency Testing - The Humble Object
-
-Often people try to test external dependencies, like drawing on the screen, or opening the door, and think it's impossible. That is impossible, but you don't need to test the external dependency. You need to test everything else, all the business logic that does everything before the external dependency.
-
-To enable this, create a [humble object](http://xunitpatterns.com/Humble%20Object.html) that does only the screen operations and test all interactions to and from that.
-
-_Extract all the logic from the hard-to-test component into a component that is testable via synchronous tests. This component implements a service interface consisting of methods that expose all the logic of the untestable component; the only difference is that they are accessible via synchronous method calls. As a result, the Humble Object component becomes a very thin adapter layer that contains very little code. Each time the Humble Object is called by the framework, it delegates to the testable component. If the testable component needs any information from the context, the Humble Object is responsible for retrieving it and passing it to the testable component. The Humble Object code is typically so simple that we often don't bother writing tests for it because it can be quite difficult to set up the environment needed to run it._
 
 ### Unit Tests - The code does what the developer wants
 
