@@ -63,7 +63,12 @@ Very related to [design](/design)
 
 ### Smoke Testing
 
-This is done after API development is complete. Simply validate if the APIs are working and nothing breaks.
+- **Purpose**: Verify basic functionality works after deployment
+- **Scope**: Core system paths and critical features
+- **Written by**: Developers or QA team
+- **Maintenance**: Low - focuses on stable core paths
+- **Example**: Verifying login flow, basic API endpoints respond, database connections work
+- **Regression Role**: Quick detection of major system failures
 
 ### Acceptance Tests - Validation that requirements are met
 
