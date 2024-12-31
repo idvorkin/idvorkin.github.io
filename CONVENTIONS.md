@@ -92,12 +92,14 @@ Prefer descriptive variable names over comments.
 When changing a post's permalink:
 1. Use the redirect_from front matter to maintain compatibility 
 2. This ensures old links continue to work
-3. Example format:
+3. IMPORTANT: Do not use 'aliases' in front matter - it doesn't work. If you see 'aliases', convert it to redirect_from
+4. Example format:
    ```yaml
    ---
    permalink: /new-url
    redirect_from:
-     - /old-url
+     - /old-url   # ✅ correct way
+   aliases: ["/old-url"]  # ❌ wrong way - doesn't work
    ---
    ```
 4. Check existing links to the post in other content and update if needed
