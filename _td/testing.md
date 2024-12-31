@@ -44,6 +44,21 @@ If it's not tested, it doesn't work. When your tests passing lets you deploy wit
 
 Software needs to work, and if it's not tested, it doesn't work. In the rare event it works today, I assure you it'll stop working after you make a change. If you can't make a change safely, your system will go to shit instantly.
 
+Making code testable forces better design:
+- Small, focused functions with clear inputs and outputs
+- Separation of concerns - business logic separate from UI/database/external services
+- Dependency injection instead of global state
+- Clear interfaces between components
+- Reduced coupling between modules
+- Better documentation through tests as examples
+
+In other words, the same principles that make code testable also make it:
+- Easier to understand
+- Easier to maintain
+- Easier to modify
+- More reliable
+- Better documented
+
 Very related to [design](/design)
 
 - SOLID designs (OO joke there, haha!)
