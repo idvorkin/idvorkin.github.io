@@ -60,15 +60,39 @@ This is done after API development is complete. Simply validate if the APIs are 
 
 ### Acceptance Tests - Validation that requirements are met
 
-This creates a test plan based on the functional requirements and compares the results with the expected results.
+- **Purpose**: Validate that requirements are met
+- Creates a test plan based on functional requirements 
+- Compares actual results with expected results
+- Focuses on business value and user scenarios
+- Often written in collaboration with product/business stakeholders
 
 ### End To End Tests - Expensive but critical
 
-Include running in multiple configurations, like different devices, or different browsers, or different screen orientations.
+- **Purpose**: Validate entire system works together
+- **Scope**: Full system testing from user perspective
+- **Configurations**: Multiple environments and setups
+  - Different devices
+  - Different browsers
+  - Different screen orientations
+  - Different operating systems
+- **Cost**: Most expensive tests to maintain
+- **Value**: Critical for ensuring full system functionality
+- **Quantity**: Keep these minimal but strategic
 
 ### Integration Tests - Correct interactions with external world
 
-This test combines several API calls to perform end-to-end tests. The intra-service communications and data transmissions are tested.
+- **Purpose**: Verify correct interactions between components
+- **Scope**: 
+  - Service-to-service communication
+  - API interactions
+  - Data transmission between components
+  - Database interactions
+- **Focus Areas**:
+  - API contract testing
+  - Data consistency
+  - Error handling between services
+  - Network resilience
+- **Value**: Catches integration issues before end-to-end testing
 
 ### Regression Testing
 
