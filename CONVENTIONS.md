@@ -87,6 +87,24 @@ When using Typer, use the latest syntax for arguments and options.
 Prefer returning from a function vs nesting ifs.
 Prefer descriptive variable names over comments.
 
+# Changing Permalinks
+
+When changing a post's permalink:
+1. Use the redirect_from front matter to maintain compatibility 
+2. This ensures old links continue to work
+3. Example format:
+   ```yaml
+   ---
+   permalink: /new-url
+   redirect_from:
+     - /old-url
+   ---
+   ```
+4. Check existing links to the post in other content and update if needed
+5. The redirects are handled by Jekyll, no need to modify back-links.json
+
+Note: See _posts/2018-01-01-fuck-pride.md for a good example of permalink redirection
+
 # WHEN USER IS DOING BLOG CONTENT
 
 1. Get an overeview of the blog by making this read on
