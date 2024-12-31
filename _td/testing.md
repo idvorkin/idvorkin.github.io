@@ -86,6 +86,13 @@ _Extract all the logic from the hard-to-test component into a component that is 
 
 ### Unit Tests - The code does what the developer wants
 
+- **Purpose**: Verify individual components work as designed
+- **Scope**: Single functions/classes in isolation  
+- **Written by**: Developers
+- **Maintenance**: Changes with code implementation
+- **Example**: Testing a function that calculates tax on an order
+- **Regression Role**: Catches regressions in component logic
+
 Back in the 2000s, "amazing developers" walked through all their code in the debugger to make sure it was doing what was expected. But like all manual activities, this gets dreary, error-prone, and skipped. Instead, write unit tests to ensure your code works as you expect.
 
 ### Compiler and static analysis based testing
