@@ -11,31 +11,30 @@ If it's not tested, it doesn't work. When your tests passing lets you deploy wit
 
 - [Why test?](#why-test)
 - [Types of tests](#types-of-tests)
-    - [Smoke Testing](#smoke-testing)
-    - [Acceptance Tests - Validation that requirements are met](#acceptance-tests---validation-that-requirements-are-met)
-    - [End To End Tests - Expensive but critical](#end-to-end-tests---expensive-but-critical)
-    - [Integration Tests - Correct interactions with external world](#integration-tests---correct-interactions-with-external-world)
-    - [Regression Testing](#regression-testing)
-    - [Snapshot Tests - Validating UX](#snapshot-tests---validating-ux)
-    - [External Dependency Testing - The Humble Object](#external-dependency-testing---the-humble-object)
-    - [Unit Tests - The code does what the developer wants](#unit-tests---the-code-does-what-the-developer-wants)
-    - [Compiler and static analysis based testing](#compiler-and-static-analysis-based-testing)
+  - [Smoke Testing](#smoke-testing)
+  - [Acceptance Tests - Validation that requirements are met](#acceptance-tests---validation-that-requirements-are-met)
+  - [End To End Tests - Expensive but critical](#end-to-end-tests---expensive-but-critical)
+  - [Integration Tests - Correct interactions with external world](#integration-tests---correct-interactions-with-external-world)
+  - [Snapshot Tests - Validating UX](#snapshot-tests---validating-ux)
+  - [External Dependency Testing - The Humble Object](#external-dependency-testing---the-humble-object)
+  - [Unit Tests - The code does what the developer wants](#unit-tests---the-code-does-what-the-developer-wants)
+  - [Compiler and static analysis based testing](#compiler-and-static-analysis-based-testing)
 - [Non-functional testing](#non-functional-testing)
-    - [Load Testing](#load-testing)
-    - [Stress Testing](#stress-testing)
-    - [Security Testing](#security-testing)
-    - [Fuzz Testing](#fuzz-testing)
-    - [Performance](#performance)
-    - [Thread safety](#thread-safety)
+  - [Load Testing](#load-testing)
+  - [Stress Testing](#stress-testing)
+  - [Security Testing](#security-testing)
+  - [Fuzz Testing](#fuzz-testing)
+  - [Performance](#performance)
+  - [Thread safety](#thread-safety)
 - [Testing in production and monitoring](#testing-in-production-and-monitoring)
-    - [A/B Testing](#ab-testing)
-    - [Operational Monitoring](#operational-monitoring)
-    - [Inside out/Canary Testings](#inside-outcanary-testings)
+  - [A/B Testing](#ab-testing)
+  - [Operational Monitoring](#operational-monitoring)
+  - [Inside out/Canary Testings](#inside-outcanary-testings)
 - [To be categorized](#to-be-categorized)
-    - [The role of a QA team](#the-role-of-a-qa-team)
-    - [Cost of tests vs cost of development](#cost-of-tests-vs-cost-of-development)
-    - [Cost to change the tests](#cost-to-change-the-tests)
-    - [AI Testing](#ai-testing)
+  - [The role of a QA team](#the-role-of-a-qa-team)
+  - [Cost of tests vs cost of development](#cost-of-tests-vs-cost-of-development)
+  - [Cost to change the tests](#cost-to-change-the-tests)
+  - [AI Testing](#ai-testing)
 - [Great books](#great-books)
 
 <!-- vim-markdown-toc-end -->
@@ -61,7 +60,7 @@ This is done after API development is complete. Simply validate if the APIs are 
 ### Acceptance Tests - Validation that requirements are met
 
 - **Purpose**: Validate that requirements are met
-- Creates a test plan based on functional requirements 
+- Creates a test plan based on functional requirements
 - Compares actual results with expected results
 - Focuses on business value and user scenarios
 - Often written in collaboration with product/business stakeholders
@@ -82,7 +81,7 @@ This is done after API development is complete. Simply validate if the APIs are 
 ### Integration Tests - Correct interactions with external world
 
 - **Purpose**: Verify correct interactions between components
-- **Scope**: 
+- **Scope**:
   - Service-to-service communication
   - API interactions
   - Data transmission between components
@@ -94,9 +93,6 @@ This is done after API development is complete. Simply validate if the APIs are 
   - Network resilience
 - **Value**: Catches integration issues before end-to-end testing
 
-### Regression Testing
-
-This test ensures that bug fixes or new features shouldn’t break the existing behaviors of APIs.
 
 ### Snapshot Tests - Validating UX
 
@@ -111,7 +107,7 @@ _Extract all the logic from the hard-to-test component into a component that is 
 ### Unit Tests - The code does what the developer wants
 
 - **Purpose**: Verify individual components work as designed
-- **Scope**: Single functions/classes in isolation  
+- **Scope**: Single functions/classes in isolation
 - **Written by**: Developers
 - **Maintenance**: Changes with code implementation
 - **Example**: Testing a function that calculates tax on an order
