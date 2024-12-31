@@ -1,7 +1,9 @@
 ---
 layout: post
 title: AI code writer
-permalink: /ai-coder
+permalink: /chop
+redirect_from:
+  - /ai-coder
 ---
 
 Buckle up, code warriors! AI's grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we've hit the jackpot with full-blown code writing! Welcome to the era of CHOP - Chat-Oriented Programming - where coding has transformed from a solo trek into a wild party where everyone's invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it's got AI written all over it!
