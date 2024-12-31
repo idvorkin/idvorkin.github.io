@@ -249,6 +249,18 @@ Think of your AI assistant as an eager junior developer who can learn and retain
    - Treat CONVENTIONS.md updates as critical infrastructure changes
    - Remember: Bad code affects one feature, bad conventions affect everything
 
+Here's a recent example of this approach in action:
+
+1. [Permalink Management](https://github.com/idvorkin/idvorkin.github.io/commit/4c36f25adf3a0e99024aa7c925383e3321a66976)
+   - AI helped establish clear permalink change process
+   - Added guidance on maintaining compatibility 
+   - Standardized use of redirect_from in front matter
+
+This commit shows how AI can help:
+- Identify and fix inconsistencies
+- Document best practices
+- Maintain compatibility while improving standards
+
 ## Real-World Success Stories
 
 ### Case Study: The 24-Hour MVP
