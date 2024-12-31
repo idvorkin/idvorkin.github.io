@@ -72,11 +72,12 @@ Very related to [design](/design)
 
 ### Acceptance Tests - Validation that requirements are met
 
-- **Purpose**: Validate that requirements are met
-- Creates a test plan based on functional requirements
-- Compares actual results with expected results
-- Focuses on business value and user scenarios
-- Often written in collaboration with product/business stakeholders
+- **Purpose**: Validate software meets business requirements
+- **Scope**: End-to-end business scenarios and workflows
+- **Written by**: QA team with business stakeholders
+- **Maintenance**: Changes with business requirements
+- **Example**: Verifying a customer can complete an e-commerce purchase flow
+- **Regression Role**: Ensures core business functionality remains intact
 
 ### End To End Tests - Expensive but critical
 
@@ -93,18 +94,12 @@ Very related to [design](/design)
 
 ### Integration Tests - Correct interactions with external world
 
-- **Purpose**: Verify correct interactions between components
-- **Scope**:
-  - Service-to-service communication
-  - API interactions
-  - Data transmission between components
-  - Database interactions
-- **Focus Areas**:
-  - API contract testing
-  - Data consistency
-  - Error handling between services
-  - Network resilience
-- **Value**: Catches integration issues before end-to-end testing
+- **Purpose**: Verify components work together correctly
+- **Scope**: Interactions between multiple components/services
+- **Written by**: Developers with system architecture knowledge
+- **Maintenance**: Changes with interface/API changes
+- **Example**: Testing database operations through service layer
+- **Regression Role**: Catches integration breakages between components
 
 #### The Humble Object Pattern
 When dealing with external dependencies that are hard to test (like UI, hardware, etc.):
@@ -127,28 +122,12 @@ When dealing with external dependencies that are hard to test (like UI, hardware
 
 ### Snapshot Tests - Validating UX
 
-- **Purpose**: Validate UI/UX remains consistent
-- **How it works**: 
-  - Takes a "snapshot" of UI output (HTML, JSON, etc.)
-  - Compares future runs against saved snapshot
-  - Flags any unexpected changes
-- **Best for**:
-  - UI components
-  - API responses
-  - Configuration files
-  - Generated code
-- **Benefits**:
-  - Quick to write
-  - Catches unintended UI changes
-  - Documents expected behavior
-- **Challenges**:
-  - Can be brittle
-  - Need regular maintenance
-  - Must carefully review changes
-- **Best practices**:
-  - Keep snapshots focused and small
-  - Review diffs carefully
-  - Update intentionally, not blindly
+- **Purpose**: Detect unexpected changes in output
+- **Scope**: UI components, API responses, generated files
+- **Written by**: Developers during feature development
+- **Maintenance**: Updates needed when intentional changes occur
+- **Example**: Capturing rendered HTML of a React component
+- **Regression Role**: Catches unintended changes in output format
 
 
 ### Unit Tests - The code does what the developer wants
