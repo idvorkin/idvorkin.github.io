@@ -52,13 +52,6 @@ Making code testable forces better design:
 - Reduced coupling between modules
 - Better documentation through tests as examples
 
-In other words, the same principles that make code testable also make it:
-- Easier to understand
-- Easier to maintain
-- Easier to modify
-- More reliable
-- Better documented
-
 Very related to [design](/design)
 
 - SOLID designs (OO joke there, haha!)
