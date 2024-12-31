@@ -39,3 +39,6 @@ coverage/
 pysrc/__pycache__/
 .aider*
 .env
+
+# Ignore chroma database files
+blog.chroma.db/
