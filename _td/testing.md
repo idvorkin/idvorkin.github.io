@@ -96,6 +96,29 @@ This is done after API development is complete. Simply validate if the APIs are 
 
 ### Snapshot Tests - Validating UX
 
+- **Purpose**: Validate UI/UX remains consistent
+- **How it works**: 
+  - Takes a "snapshot" of UI output (HTML, JSON, etc.)
+  - Compares future runs against saved snapshot
+  - Flags any unexpected changes
+- **Best for**:
+  - UI components
+  - API responses
+  - Configuration files
+  - Generated code
+- **Benefits**:
+  - Quick to write
+  - Catches unintended UI changes
+  - Documents expected behavior
+- **Challenges**:
+  - Can be brittle
+  - Need regular maintenance
+  - Must carefully review changes
+- **Best practices**:
+  - Keep snapshots focused and small
+  - Review diffs carefully
+  - Update intentionally, not blindly
+
 ### External Dependency Testing - The Humble Object
 
 Often people try to test external dependencies, like drawing on the screen, or opening the door, and think it's impossible. That is impossible, but you don't need to test the external dependency. You need to test everything else, all the business logic that does everything before the external dependency.
