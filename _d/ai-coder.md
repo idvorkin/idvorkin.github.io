@@ -33,7 +33,7 @@ Buckle up, code warriors! AI's grand adventure in the coding realm has been noth
 - [Best Practices for AI-Assisted Development](#best-practices-for-ai-assisted-development)
   - [The Art of Prompt Engineering](#the-art-of-prompt-engineering)
   - [Integration Tips](#integration-tips)
-  - [DRY CHOP: Use CONVENTIONS.md](#dry-chop-use-conventionsmd)
+  - [DRY CHOP: Your AI's Cookbook 🧑‍🍳](#dry-chop-your-ai-s-cookbook)
 - [Real-World Success Stories](#real-world-success-stories)
   - [Case Study: The 24-Hour MVP](#case-study-the-24-hour-mvp)
   - [The Legacy Code Whisperer](#the-legacy-code-whisperer)
@@ -232,9 +232,11 @@ Hold onto your mechanical keyboards, folks! The future of AI coding is looking w
    - Keep track of prompt patterns that work well
    - Share successful AI interactions with your team
 
-### DRY CHOP: Use CONVENTIONS.md
+### DRY CHOP: Your AI's Cookbook 🧑‍🍳
 
 Think of your AI assistant as an eager junior developer who can learn and retain knowledge - but only if you teach them properly. Instead of repeating the same instructions in every prompt, establish a single source of truth through your CONVENTIONS.md file. This approach not only saves time but ensures consistency across all AI-generated code. The key is treating conventions as a living document that both teaches the AI and evolves with your project. You can see [an example of this evolution here](https://gist.github.com/idvorkin/6f506f47bf6c4c57a1ff5a2d24e345dd#conventionsmd).
+
+> **Note**: Cursor IDE implements this concept using a `.cursorrules` file that points to your CONVENTIONS.md. Simply create a `.cursorrules` file in your project root with the content `CONVENTIONS.md` to enable this feature ([see example](https://github.com/idvorkin/idvorkin.github.io/commit/332e43c7e211640f55da9be858164e6aa003ab9e)).
 
 1. **Let AI Own the Conventions**
 
@@ -244,16 +246,30 @@ Think of your AI assistant as an eager junior developer who can learn and retain
    - Use the conventions file as a learning record for the AI
 
 2. **Review Conventions More Carefully Than Code**
+
    - Convention changes impact all future code generation
    - One wrong convention can multiply mistakes across the project
    - Treat CONVENTIONS.md updates as critical infrastructure changes
    - Remember: Bad code affects one feature, bad conventions affect everything
 
+3. **Structure Conventions for AI Understanding**
+
+   - Break conventions into clear, focused sections (e.g., "Image Handling", "Blog Post Structure")
+   - Include concrete examples for each convention
+   - Use numbered steps for processes that must happen in order
+   - Add context about why each convention exists
+
+4. **Evolve Conventions Iteratively**
+   - Start simple with core conventions
+   - Let real usage guide what needs documentation
+   - Update conventions when you find yourself repeating instructions
+   - Remove or refine conventions that cause confusion
+
 Here's a recent example of this approach in action:
 
 1. [Permalink Management](https://github.com/idvorkin/idvorkin.github.io/commit/4c36f25adf3a0e99024aa7c925383e3321a66976)
    - AI helped establish clear permalink change process
-   - Added guidance on maintaining compatibility 
+   - Added guidance on maintaining compatibility
    - Standardized use of redirect_from in front matter
 
 ## Real-World Success Stories
