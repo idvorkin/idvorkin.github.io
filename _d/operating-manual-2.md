@@ -90,8 +90,8 @@ My new calendar
 | W   | 6am Trainer | Free          |
 | Th  | Self Gym    | Magic w/Clive |
 | F   | 1H Swings   | Movie Night   |
-| Sa  | [l31](21)   | Free          |
-| Su  | [l32](22)   | Free          |
+| Sa  | [l31](l31)  | Free          |
+| Su  | [l32](l32)  | Free          |
 
 <div/>
 
@@ -100,11 +100,14 @@ My new calendar
 - Coffee Shop Writing
 
 <div/>
+
 - l32
 - Stretching/Free Gym
 - Coffee Shop
 - Weekly Journal
 - Family Blog Post
+
+<div/>
 
 ## Morning Routine
 
@@ -378,8 +381,8 @@ My new calendar
 | W   | Stair Climber    | Amelia Date   |
 | Th  | Self Gym         | Magic w/Clive |
 | F   | Run              | Movie Night   |
-| Sa  | [l21](21)        | Free          |
-| Su  | [l22](22)        | Free          |
+| Sa  | [l21](l21)       | Free          |
+| Su  | [l22](l22)       | Free          |
 
 <div/>
 
@@ -388,6 +391,7 @@ My new calendar
 - Coffee Shop Writing
 
 <div/>
+
 - l22
 - Stretching/Free Gym
 - Coffee Shop
