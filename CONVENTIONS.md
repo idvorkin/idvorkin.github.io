@@ -221,3 +221,10 @@ When you want to include a summary of another page's content:
 
    {% include summarize-page.html src="/affirmations" %}
    ```
+
+# Writing Style and Formatting
+
+1. **No Emojis**
+   - Do not use emojis in blog posts or documentation
+   - This includes titles, headers, and content
+   - Keep the writing style clean and professional
