@@ -1,12 +1,12 @@
 ---
 layout: post
-title: AI code writer
+title: "The CHOP Shop: Where AI Meets Code"
 permalink: /chop
 redirect_from:
   - /ai-coder
 ---
 
-Buckle up, code warriors! AI's grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we've hit the jackpot with full-blown code writing! Welcome to the era of CHOP - Chat-Oriented Programming - where coding has transformed from a solo trek into a wild party where everyone's invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it's got AI written all over it!
+Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It's a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we'll explore how to make the most of this evolution.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -33,7 +33,7 @@ Buckle up, code warriors! AI's grand adventure in the coding realm has been noth
 - [Best Practices for AI-Assisted Development](#best-practices-for-ai-assisted-development)
   - [The Art of Prompt Engineering](#the-art-of-prompt-engineering)
   - [Integration Tips](#integration-tips)
-  - [DRY CHOP: Your AI's Cookbook 🧑‍🍳](#dry-chop-your-ai-s-cookbook)
+  - [DRY CHOP: Your AI's Cookbook](#dry-chop-your-ai-s-cookbook)
 - [Real-World Success Stories](#real-world-success-stories)
   - [Case Study: The 24-Hour MVP](#case-study-the-24-hour-mvp)
   - [The Legacy Code Whisperer](#the-legacy-code-whisperer)
@@ -232,7 +232,7 @@ Hold onto your mechanical keyboards, folks! The future of AI coding is looking w
    - Keep track of prompt patterns that work well
    - Share successful AI interactions with your team
 
-### DRY CHOP: Your AI's Cookbook 🧑‍🍳
+### DRY CHOP: Your AI's Cookbook
 
 Think of your AI assistant as an eager junior developer who can learn and retain knowledge - but only if you teach them properly. Instead of repeating the same instructions in every prompt, establish a single source of truth through your CONVENTIONS.md file. This approach not only saves time but ensures consistency across all AI-generated code. The key is treating conventions as a living document that both teaches the AI and evolves with your project. You can see [an example of this evolution here](https://gist.github.com/idvorkin/6f506f47bf6c4c57a1ff5a2d24e345dd#conventionsmd).
 
@@ -286,4 +286,4 @@ A team modernized a 15-year-old codebase using AI to help understand, document, 
 
 Remember, fellow code warriors, AI is like having a super-powered intern - incredibly fast and knowledgeable, but still needs your wisdom and experience to create truly outstanding software. The future isn't about AI replacing developers; it's about developers who use AI outperforming those who don't.
 
-Keep coding, keep learning, and most importantly, keep having fun with these amazing new tools. The future of coding is not just bright - it's absolutely dazzling! 🚀✨
+Keep coding, keep learning, and most importantly, keep having fun with these amazing new tools. The future of coding is not just bright - it's absolutely dazzling!
