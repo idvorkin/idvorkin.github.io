@@ -20,6 +20,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Weekday morning routine](#weekday-morning-routine)
     - [Morning Kryptonite](#morning-kryptonite)
     - [Morning Refreshers](#morning-refreshers)
+    - [Daily Journaling](#daily-journaling)
 - [After Work Routine](#after-work-routine)
     - [Post work routine](#post-work-routine)
     - [Post work Kryptonite](#post-work-kryptonite)
@@ -146,6 +147,12 @@ Instead of thinking about working out as a chore, I reframe it as a refresher - 
 - **Refresher Supreme**: The ultimate morning reset - coffee shop time, gym training, and [meditation](/siy) - nurturing body, mind, and spirit
 
 _Note: The coffee shop represents a mental state - focused, relaxed, and ready to think deeply. While I currently need the physical coffee shop to enter this state, I'm working on being able to deliberately enter this state anywhere._
+
+### Daily Journaling
+
+My morning coffee shop time is when I do my [daily journaling](/process-journal). This practice helps me process my thoughts, set intentions for the day, and maintain mental clarity.
+
+{%include summarize-page.html src="/process-journal" %}
 
 ## After Work Routine
 
