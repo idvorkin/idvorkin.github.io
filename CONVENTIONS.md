@@ -192,3 +192,32 @@ CHOP is the practice of using AI chat to assist with programming tasks. When mak
 # Chat Oriented Writing (CHOW)
 
 CHOW is the practice of using AI chat to assist with writing and content creation. Similar to CHOP but focused on prose and documentation rather than code.
+
+# Using summarize-page Includes
+
+When you want to include a summary of another page's content:
+
+1. Use the `summarize-page` include with the format:
+   ```markdown
+   {% include summarize-page.html src="/page-url" %}
+   ```
+2. Before adding the include:
+   - Always check `back-links.json` to confirm the correct permalink
+   - The src should match the permalink, not the filename
+   - Example: Use `/siy` for meditation content, not `/meditation`
+3. The include will automatically:
+   - Pull in the description from the target page
+   - Add a link attribution to the source
+   - Format it with proper styling
+4. Common usage patterns:
+   - After introducing a concept that's detailed elsewhere
+   - When listing related topics
+   - In sections that reference other content
+5. Example:
+
+   ```markdown
+   **Affirmations**  
+   Reinforcing positive beliefs and mindsets I want to cultivate.
+
+   {% include summarize-page.html src="/affirmations" %}
+   ```
