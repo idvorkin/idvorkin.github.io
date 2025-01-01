@@ -1,7 +1,9 @@
 {
     "redirects": {
         "/2024": "/y24",
+        "/2025": "/y25",
         "/24": "/y24",
+        "/25": "/y25",
         "/48-laws": "/laws-of-power",
         "/50yo": "/40yo",
         "/7h": "/7-habits",
@@ -228,6 +230,7 @@
         "/work-life-balance": "/sustainable-work",
         "/write": "/writing",
         "/y2024": "/y24",
+        "/y2025": "/y25",
         "/yellow-deli": "/ig66/717",
         "/zero": "/blueprint"
     },
@@ -275,7 +278,8 @@
             ],
             "incoming_links": [
                 "/chapters",
-                "/y24"
+                "/y24",
+                "/y25"
             ],
             "redirect_url": "",
             "markdown_path": "_d/42.md",
@@ -1046,7 +1050,9 @@
                 "/42",
                 "/enemy"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/y25"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/chapters.md",
             "doc_size": 18000
@@ -1066,18 +1072,20 @@
         },
         "/chop": {
             "url": "/chop",
-            "title": "AI code writer",
-            "description": "Buckle up, code warriors! AI’s grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we’ve hit the jackpot with full-blown code writing! Welcome to the era of CHOP - Chat-Oriented Programming - where coding has transformed from a solo trek into a wild party where everyone’s invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it’s got AI written all over it!\n\n",
+            "title": "The CHOP Shop: Where AI Meets Code",
+            "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
             "file_path": "_site/chop.html",
             "outgoing_links": [],
             "incoming_links": [
                 "/40yo",
                 "/ai",
-                "/tech-rituals"
+                "/tech-rituals",
+                "/y24",
+                "/y25"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 29000
+            "doc_size": 31000
         },
         "/class-act": {
             "url": "/class-act",
@@ -1161,16 +1169,18 @@
         },
         "/content-creation": {
             "url": "/content-creation",
-            "title": "Video Content Creation",
-            "description": "I started by creating something complex, now\n\n",
+            "title": "Content Creation: From Shaky Selfies to Social Superstar",
+            "description": "Ah, content creation! Remember when it meant awkwardly holding your phone at arm’s length, hoping your thumb wouldn’t photobomb your masterpiece? We’ve come a long way, baby! Whether you’re aiming to be the next TikTok sensation or just want to share your magic tricks without accidentally revealing them, this guide will help you level up from “my mom’s my only viewer” to “wait, is that video going viral?”\n\n",
             "file_path": "_site/content-creation.html",
             "outgoing_links": [
                 "/screencast"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/y25"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/content-creation.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/covid": {
             "url": "/covid",
@@ -2710,7 +2720,8 @@
             "incoming_links": [
                 "/eulogy",
                 "/physical-health",
-                "/timeoff"
+                "/timeoff",
+                "/y24"
             ],
             "redirect_url": "",
             "markdown_path": "_d/bells.md",
@@ -2728,7 +2739,8 @@
             "incoming_links": [
                 "/42",
                 "/death",
-                "/y24"
+                "/y24",
+                "/y25"
             ],
             "redirect_url": "",
             "markdown_path": "_d/last-year.md",
@@ -2848,7 +2860,8 @@
                 "/manager-book-appendix",
                 "/software-leadership-roles",
                 "/tribe",
-                "/y24"
+                "/y24",
+                "/y25"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
@@ -3229,6 +3242,7 @@
                 "/money",
                 "/parkinson",
                 "/physical-health",
+                "/process-journal",
                 "/siy",
                 "/sleight-of-mouth",
                 "/strengths",
@@ -3242,7 +3256,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/operating-manual-2.md",
-            "doc_size": 31000
+            "doc_size": 32000
         },
         "/osx": {
             "url": "/osx",
@@ -3359,8 +3373,8 @@
         },
         "/process-journal": {
             "url": "/process-journal",
-            "title": "Processing My Daily Journal - From Stream of Consciousness to Insights",
-            "description": "I’ve been doing daily stream of consciousness journaling since 2011, writing over a million words. Here’s how I think about processing and analyzing my journal entries.\n\n",
+            "title": "Daily Journaling: From Psychic Diarrhea to Polished Turds",
+            "description": "I’ve been doing daily stream of consciousness journaling since 2011, writing over a million words. Here’s how I think about processing and analyzing my journal entries. While I don’t always achieve this perfectly, this represents my aspirational process that I strive towards.\n\n",
             "file_path": "_site/process-journal.html",
             "outgoing_links": [
                 "/affirmations",
@@ -3369,10 +3383,14 @@
                 "/grateful",
                 "/psychic-weight"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/operating-manual",
+                "/y24",
+                "/y25"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/process-journal.md",
-            "doc_size": 14000
+            "doc_size": 15000
         },
         "/product": {
             "url": "/product",
@@ -4410,7 +4428,9 @@
                 "/td/slow_zsh",
                 "/timeoff"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/y24"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/time-off-2024-08.md",
             "doc_size": 25000
@@ -4744,14 +4764,37 @@
             "outgoing_links": [
                 "/42",
                 "/ai-bestie",
+                "/chop",
+                "/kettlebell",
                 "/last-year",
                 "/manager-book",
                 "/mental-pain",
+                "/process-journal",
+                "/time-off-2024-08",
                 "/write-book"
             ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/y2024.md",
+            "doc_size": 20000
+        },
+        "/y25": {
+            "url": "/y25",
+            "title": "Igor's plan for 2025",
+            "description": "I like to begin in mind, so let’s write a report for 2025. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
+            "file_path": "_site/y25.html",
+            "outgoing_links": [
+                "/42",
+                "/chapters",
+                "/chop",
+                "/content-creation",
+                "/last-year",
+                "/manager-book",
+                "/process-journal"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/y2025.md",
             "doc_size": 15000
         }
     }
