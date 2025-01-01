@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Video Content Creation
+title: "Content Creation: From Shaky Selfies to Social Superstar"
 permalink: /content-creation
 ---
 
-I started by creating something complex, now
+Ah, content creation! Remember when it meant awkwardly holding your phone at arm's length, hoping your thumb wouldn't photobomb your masterpiece? We've come a long way, baby! Whether you're aiming to be the next TikTok sensation or just want to share your magic tricks without accidentally revealing them, this guide will help you level up from "my mom's my only viewer" to "wait, is that video going viral?"
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -60,7 +60,7 @@ You can use an external mic, but I usually don't.
 
 ### DJI Pocket 3
 
-* Just got it looks like it's gonna be really fun.
+- Just got it looks like it's gonna be really fun.
 
 ### Never use it: Action Camera
 
