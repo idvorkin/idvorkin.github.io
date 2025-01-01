@@ -22,7 +22,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Diff Summarization](#diff-summarization)
   - [Review changes between dates](#review-changes-between-dates)
   - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
-  - [Should I code once we have AI?](#should-i-code-once-we-have-ai)
+  - [Will CHOP Kill the Joy of Coding?](#will-chop-kill-the-joy-of-coding)
     - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
     - [How can you use AI - Research Assistant vs Code Writer](#how-can-you-use-ai---research-assistant-vs-code-writer)
   - [AI for junior vs Senior Developers](#ai-for-junior-vs-senior-developers)
@@ -106,9 +106,11 @@ Cursor has native support for indexing docs, some projects even have llm.txt to 
 
 ### Dream: Re-write commit history to break things into orthogonal changes
 
-### Should I code once we have CHOP?
+### Will CHOP Kill the Joy of Coding?
 
 _It occurs to me this applies to all vocations, not just programming_
+
+Perhaps we're asking the wrong question. Instead of worrying if CHOP will kill the joy of coding, we should consider that mastering CHOP itself can become a new source of joy. Just as we once found satisfaction in perfecting our vim movements or writing elegant algorithms, there's deep satisfaction in becoming a CHOP virtuoso - crafting the perfect prompts, building sophisticated conventions, and orchestrating AI to create solutions that would be impractical to build alone.
 
 #### Reasons to Program - Mastery vs Getting Shit Done
 
