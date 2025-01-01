@@ -11,25 +11,21 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Completion](#completion)
-  - [Co-pilot](#co-pilot)
-- [Coder](#coder)
-  - [Cursor](#cursor)
-  - [Aider](#aider)
-  - [Avante](#avante)
+- [What is CHOP?](#what-is-chop)
+  - [The Evolution of AI Coding](#the-evolution-of-ai-coding)
+  - [Core Concepts](#core-concepts)
+  - [Key Tools](#key-tools)
 - [Use Cases](#use-cases)
   - [Using latest docs](#using-latest-docs)
   - [Diff Summarization](#diff-summarization)
   - [Review changes between dates](#review-changes-between-dates)
   - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
-  - [Will CHOP Kill the Joy of Coding?](#will-chop-kill-the-joy-of-coding)
-    - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
-    - [How can you use AI - Research Assistant vs Code Writer](#how-can-you-use-ai---research-assistant-vs-code-writer)
-  - [AI for junior vs Senior Developers](#ai-for-junior-vs-senior-developers)
-    - [The 70% AI coding problem:](#the-70-ai-coding-problem)
-    - [The death of the stubborn programmer](#the-death-of-the-stubborn-programmer)
-- [Future of AI Coding: Beyond the Basics](#future-of-ai-coding-beyond-the-basics)
-  - [Emerging Trends](#emerging-trends)
+- [Will CHOP Kill the Joy of Coding?](#will-chop-kill-the-joy-of-coding)
+  - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
+  - [How can you use AI - Research Assistant vs Code Writer](#how-can-you-use-ai---research-assistant-vs-code-writer)
+- [CHOP for junior vs Senior Developers](#chop-for-junior-vs-senior-developers)
+  - [The 70% AI coding problem](#the-70-ai-coding-problem)
+  - [The death of the stubborn programmer](#the-death-of-the-stubborn-programmer)
 - [Best Practices for AI-Assisted Development](#best-practices-for-ai-assisted-development)
   - [The Art of Prompt Engineering](#the-art-of-prompt-engineering)
   - [Integration Tips](#integration-tips)
@@ -42,55 +38,101 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## Completion
+## What is CHOP?
 
-### Co-pilot
+CHOP (Chat-Oriented Programming) represents a fundamental shift in how we write code. Instead of typing out every line of code ourselves, we engage in a high-level dialogue with AI about our programming goals. Think of it as pair programming with an AI partner that can read your entire codebase, understand your conventions, and help implement solutions through natural conversation.
 
-The original
+The concept emerged from [the death of the stubborn programmer](https://gist.github.com/idvorkin/fffce7fb3d03338662847e786808ac82) - a recognition that the traditional growth path of developers is fundamentally changing. As Large Language Models (LLMs) take over many repetitive "leaf-node" tasks like writing libraries or performing basic updates, the role of the developer shifts towards higher-level planning and coordination. This isn't just about AI replacing simple tasks - it's about a new way of working where developers who embrace CHOP can achieve at least 30% productivity boosts by focusing on orchestration rather than implementation.
 
-## Coder
+### The Evolution of AI Coding
 
-### Cursor
+The journey to CHOP has been fascinating:
+
+1. **Code Completion (The Tool Fetcher)**
+
+   - Simple autocomplete suggestions
+   - Syntax error detection
+   - Basic snippet generation
+
+2. **Interactive Chat (The Apprentice)**
+
+   - Contextual code suggestions
+   - Problem-solving assistance
+   - Documentation help
+   - Bug diagnosis
+
+3. **Full Code Generation (The Master Mechanic)**
+   - Complete feature implementation
+   - Codebase-aware changes
+   - Convention-driven development
+   - Architectural suggestions
+
+### Core Concepts
+
+1. **Natural Language Interface**
+
+   - Express programming goals in plain English
+   - Iterative refinement through dialogue
+   - Context-aware responses
+
+2. **Codebase Understanding**
+
+   - AI reads and understands your entire project
+   - Follows established patterns and conventions
+   - Maintains consistency with existing code
+
+3. **Convention-Driven Development**
+   - Uses CONVENTIONS.md as a knowledge base
+   - Learns from project-specific rules
+   - Maintains consistent coding standards
+
+### Key Tools
+
+Here are some of the leading tools that enable CHOP development:
+
+#### Cursor
 
 - [Cursor Changelog](https://changelog.cursor.com/)
 - [Cursor Features](https://www.cursor.com/features)
 
-WOW - Just started playing with that, it was fantastic, super smooth, looking forward to seeing if Avante can catch up.
+A standout IDE built on VS Code that deeply integrates AI capabilities. Interestingly, they started building a VSCode extension but found the extension model too limiting for their AI ambitions - so they just forked the entire VSCode codebase! This bold move lets them deeply integrate AI features that would be impossible as a mere extension.
 
-It basically made this whole change via [chat/apply](https://github.com/idvorkin/idvorkin.github.io/commit/3fa1726f179c7270c5add3264b7087613039ad9e), with me making minimal suggestions
+Their tab completion is a game-changer:
 
-- Tab completion
+- Includes the code before your cursor position (huge for context)
+- Intelligently predicts which line you'll want to change next
+- Feels more like pair programming than traditional autocomplete
+- Makes refactoring feel natural and intuitive
 
-  - includes the code before what you typed (huge improvement)
-  - Finds the next line you likely want to change (great for sensing refactor)
+Other key features:
 
-- They forked VS.Code so could keep most of what it has.
-- They use Claude, which seems to be better than co-pilot
-- I used it mostly in chat/apply mode, looking forward to using it on a project where I'm writing more of the code (probably will try when I look at the transformer code in Jupyter again)
-- You put in documentation tags to bring it, and it also does embeddings for it.
+- Uses Claude for enhanced understanding
+- Native documentation indexing support
+- Chat/apply mode for interactive development
+- Smart refactoring suggestions
 
-### Aider
+#### Aider
 
 [Aider Release Notes on GitHub](https://github.com/paul-gauthier/aider/releases)
 
-OK, so Aider tries to make every change its own commit, which is super noisy and error-prone, a few learnings:
+A command-line CHOP tool with some key learnings:
 
-1. Do the changes on a branch then squash up the final branch
-2. You need to have unit tests, let Aider create them (I've got to figure out how to let it name them)
+- Creates individual commits for each change (can be noisy)
+- Best practices:
+  1. Work on a separate branch and squash commits
+  2. Let it help create unit tests
+  3. Example: [See this Aider-driven change](https://github.com/idvorkin/Settings/commit/234bdca31c4c44b2916de13c5fa858d83cbfe5cf)
 
-Here's [a change almost totally done with Aider](https://github.com/idvorkin/Settings/commit/234bdca31c4c44b2916de13c5fa858d83cbfe5cf)
+#### Avante
 
-### Avante
+[Avante on GitHub](https://github.com/yetone/avante.nvim)
 
-[Avante on GitHub](https://github.com/yetone/avante.nvim?tab=readme-ov-file)
+A promising Vim plugin for CHOP:
 
-Just starting to play with [this](https://github.com/yetone/avante.nvim). It's a VIM plugin, looks solid.
-
-What's nice:
-
-- It does a good job of inline changes/merging (like co-pilot propose diffs)
-- It uses many best practices so I discovered render and other nice libraries
-- Fun to see what the [coding prompts are](https://github.com/yetone/avante.nvim/blob/main/lua/avante/llm.lua)
+- Excellent inline changes and merging
+- Follows best practices
+- Transparent [coding prompts](https://github.com/yetone/avante.nvim/blob/main/lua/avante/llm.lua)
+- Integrates well with the Vim workflow
 
 ## Use Cases
 
@@ -155,7 +197,7 @@ Key Usage Patterns:
 - Senior developers constantly refactor and improve AI-generated code
 - Junior developers tend to accept AI output with less critical review
 
-#### [The death of the stubborn programmer](https://gist.github.com/idvorkin/42f7441a2e9aa1171faa9c0579a7aa2d)
+#### [The death of the stubborn programmer](https://gist.github.com/idvorkin/fffce7fb3d03338662847e786808ac82)
 
 The Evolution of Programming and Automation
 
@@ -191,22 +233,7 @@ Challenges in Measurement and Adoption
 - Measuring the effectiveness of CHOP and other AI coding tools remains a challenge for enterprises
 - The lack of standardized metrics or established best practices for CHOP adoption complicates its integration in professional environments
 
-## Future of AI Coding: Beyond the Basics
-
-Hold onto your mechanical keyboards, folks! The future of AI coding is looking wilder than a Python script at a JavaScript convention. Let's dive into what's cooking in the AI kitchen:
-
-### Emerging Trends
-
-1. **Multi-Modal AI Development**
-
-   - Picture this: describing your UI in plain English while waving your hands around like a coding conductor, and BAM! Your AI assistant whips up a pixel-perfect interface. We're talking voice, gestures, and maybe even interpretive dance (okay, maybe not that last one... yet).
-   - Visual programming is getting a serious upgrade - soon you'll be sketching wireframes on napkins and having AI turn them into production-ready code faster than you can say "responsive design."
-
-2. **AI-Powered Code Evolution**
-   - Your code will literally evolve like a digital Darwin experiment. AI will suggest optimizations in real-time, learning from your project's entire git history and your team's coding patterns.
-   - Bug prediction? That's so 2023. We're moving towards "code healing" - AI that spots potential issues before they even become bugs. It's like having a time-traveling debugger!
-
-## Be the Best CHOPer: Best Practices
+## Best Practices for AI-Assisted Development
 
 ### The Art of Prompt Engineering
 
