@@ -173,6 +173,58 @@ Note: Many posts use this format for the TOC section:
 <!-- prettier-ignore-end -->
 ```
 
+# List Replacements in Tables
+
+When using lists that should be inserted into tables:
+
+1. In the table, use the format `[lXX](lXX)` where:
+
+   - The link text and href must both match exactly (e.g., `[l31](l31)`)
+   - XX is the list number (e.g., 31, 32, etc.)
+   - **IMPORTANT**: List numbers must be unique across the entire file
+   - If adding a new list, check existing lists in the file and use a new unique number
+
+2. Below the table, structure the lists like this:
+
+   ```markdown
+   <div/>
+
+   - lXX
+   - List item 1
+   - List item 2
+
+   <div/>
+   ```
+
+3. Important formatting rules:
+   - Each list must start with `<div/>`
+   - First list item must be the list identifier (e.g., `l31`)
+   - List must end with `<div/>`
+   - The list identifier in the table link must match exactly
+   - Never reuse list numbers within the same file
+
+Example:
+
+```markdown
+| Day | Activity   |
+| --- | ---------- |
+| Sa  | [l31](l31) |
+
+<div/>
+
+- l31
+- Item 1
+- Item 2
+
+<div/>
+```
+
+Note: If you have multiple tables in the same file, ensure each uses different list numbers. For example:
+
+- First table: `l31`, `l32`
+- Second table: `l33`, `l34`
+- Third table: `l35`, `l36`
+
 # Link Conventions
 
 When adding links in markdown documents:
