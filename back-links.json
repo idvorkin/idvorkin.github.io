@@ -20,6 +20,7 @@
         "/addictions": "/addiction",
         "/affirm": "/affirmations",
         "/aGPT": "/ai-bestie",
+        "/ai-coder": "/chop",
         "/ai-papers": "/ai-paper",
         "/ai-talk": "/genai-talk",
         "/ai-training": "/ai-training",
@@ -31,6 +32,7 @@
         "/ballooning": "/balloon",
         "/bbb": "/build-bubble-bike",
         "/begin-with-the-end-in-mind": "/end-in-mind",
+        "/bells": "/kettlebell",
         "/bestiegpt": "/ai-bestie",
         "/bikes": "/bike",
         "/biking": "/bike",
@@ -250,7 +252,7 @@
             "description": "In 2002, I started programming at MSFT with lots of other 20-year-olds. I don’t recall the age distributions, but maybe 90% of the programmers I knew were under 40. In 2020, at 41, I’m no longer a programmer, and the majority of programmers are much younger than me. This begs the question, where do all the programmers go as they get older? I’m very curious about the answer. Here are some of my theories….\n\n",
             "file_path": "_site/40yo.html",
             "outgoing_links": [
-                "/ai-coder",
+                "/chop",
                 "/elder"
             ],
             "incoming_links": [
@@ -447,7 +449,9 @@
                 "/sublime",
                 "/writing"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/process-journal"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/affirmations2.md",
             "doc_size": 14000
@@ -461,13 +465,13 @@
                 "/ai-art",
                 "/ai-bestie",
                 "/ai-bm",
-                "/ai-coder",
                 "/ai-developer",
                 "/ai-image",
                 "/ai-journal",
                 "/ai-paper",
                 "/ai-security",
                 "/ai-testing",
+                "/chop",
                 "/ml",
                 "/recommend"
             ],
@@ -521,21 +525,6 @@
             "redirect_url": "",
             "markdown_path": "_d/ai-business-model.md",
             "doc_size": 11000
-        },
-        "/ai-coder": {
-            "url": "/ai-coder",
-            "title": "AI code writer",
-            "description": "Buckle up, code warriors! AI’s grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we’ve hit the jackpot with full-blown code writing! Welcome to the era of CHOP - Chat-Oriented Programming - where coding has transformed from a solo trek into a wild party where everyone’s invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it’s got AI written all over it!\n\n",
-            "file_path": "_site/ai-coder.html",
-            "outgoing_links": [],
-            "incoming_links": [
-                "/40yo",
-                "/ai",
-                "/tech-rituals"
-            ],
-            "redirect_url": "",
-            "markdown_path": "_d/ai-coder.md",
-            "doc_size": 28000
         },
         "/ai-developer": {
             "url": "/ai-developer",
@@ -832,6 +821,7 @@
                 "/emotions",
                 "/frog",
                 "/idle",
+                "/process-journal",
                 "/regrets",
                 "/siy"
             ],
@@ -1073,6 +1063,21 @@
             "redirect_url": "",
             "markdown_path": "_d/chasing-daylight.md",
             "doc_size": 11000
+        },
+        "/chop": {
+            "url": "/chop",
+            "title": "AI code writer",
+            "description": "Buckle up, code warriors! AI’s grand adventure in the coding realm has been nothing short of a rollercoaster ride. Picture this: we started with humble code completion, like an eager puppy fetching snippets. Then, boom! We leveled up to out-of-band chat, where AI became our coding buddy, always ready for a brainstorming session. And now? Hold onto your keyboards, because we’ve hit the jackpot with full-blown code writing! Welcome to the era of CHOP - Chat-Oriented Programming - where coding has transformed from a solo trek into a wild party where everyone’s invited - from newbie coders to seasoned tech wizards. So, grab your favorite caffeinated beverage and join the fun - the future of coding is here, and it’s got AI written all over it!\n\n",
+            "file_path": "_site/chop.html",
+            "outgoing_links": [],
+            "incoming_links": [
+                "/40yo",
+                "/ai",
+                "/tech-rituals"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/ai-coder.md",
+            "doc_size": 29000
         },
         "/class-act": {
             "url": "/class-act",
@@ -1913,6 +1918,7 @@
                 "/mania",
                 "/mind-at-work",
                 "/operating-manual",
+                "/process-journal",
                 "/sharpen-the-saw",
                 "/siy",
                 "/sublime"
@@ -2339,7 +2345,8 @@
             "file_path": "_site/grateful.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/appreciate"
+                "/appreciate",
+                "/process-journal"
             ],
             "redirect_url": "",
             "markdown_path": "_d/grateful2.md",
@@ -2674,7 +2681,8 @@
                 "/ig66/621",
                 "/like-switch",
                 "/magic",
-                "/smilebox"
+                "/smilebox",
+                "/touching"
             ],
             "incoming_links": [
                 "/affirmations",
@@ -2691,7 +2699,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/joy.md",
-            "doc_size": 23000
+            "doc_size": 26000
         },
         "/kettlebell": {
             "url": "/kettlebell",
@@ -3221,6 +3229,7 @@
                 "/money",
                 "/parkinson",
                 "/physical-health",
+                "/siy",
                 "/sleight-of-mouth",
                 "/strengths",
                 "/tesla",
@@ -3233,7 +3242,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/operating-manual-2.md",
-            "doc_size": 30000
+            "doc_size": 31000
         },
         "/osx": {
             "url": "/osx",
@@ -3311,7 +3320,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/podcast": {
             "url": "/podcast",
@@ -3347,6 +3356,23 @@
             "redirect_url": "",
             "markdown_path": "_posts/2018-01-01-fuck-pride.md",
             "doc_size": 18000
+        },
+        "/process-journal": {
+            "url": "/process-journal",
+            "title": "Processing My Daily Journal - From Stream of Consciousness to Insights",
+            "description": "I’ve been doing daily stream of consciousness journaling since 2011, writing over a million words. Here’s how I think about processing and analyzing my journal entries.\n\n",
+            "file_path": "_site/process-journal.html",
+            "outgoing_links": [
+                "/affirmations",
+                "/be-proactive",
+                "/emotional-health",
+                "/grateful",
+                "/psychic-weight"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/process-journal.md",
+            "doc_size": 14000
         },
         "/product": {
             "url": "/product",
@@ -3427,7 +3453,8 @@
             ],
             "incoming_links": [
                 "/depression",
-                "/gtd"
+                "/gtd",
+                "/process-journal"
             ],
             "redirect_url": "",
             "markdown_path": "_d/psychic-weight.md",
@@ -3694,6 +3721,7 @@
                 "/idle",
                 "/irl",
                 "/mind-monsters",
+                "/operating-manual",
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/timeoff"
@@ -4285,7 +4313,7 @@
             "description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an ad-hoc basis, but you’re probably better off having it on a calendar.\n\n",
             "file_path": "_site/tech-rituals.html",
             "outgoing_links": [
-                "/ai-coder"
+                "/chop"
             ],
             "incoming_links": [],
             "redirect_url": "",
@@ -4342,7 +4370,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/testing.md",
-            "doc_size": 21000
+            "doc_size": 24000
         },
         "/The-Genesis-Node": {
             "url": "/The-Genesis-Node",
@@ -4485,6 +4513,7 @@
             "incoming_links": [
                 "/class-act",
                 "/end-in-mind",
+                "/joy",
                 "/sublime"
             ],
             "redirect_url": "",
