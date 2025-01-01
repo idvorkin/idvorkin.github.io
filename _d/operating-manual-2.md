@@ -19,6 +19,7 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
     - [Weekend morning routine](#weekend-morning-routine)
     - [Weekday morning routine](#weekday-morning-routine)
     - [Morning Kryptonite](#morning-kryptonite)
+    - [Morning Refreshers](#morning-refreshers)
 - [After Work Routine](#after-work-routine)
     - [Post work routine](#post-work-routine)
     - [Post work Kryptonite](#post-work-kryptonite)
@@ -122,9 +123,11 @@ At my best, I roll out of bed either when my eyes open or at 5am, whatever comes
 
 The gym opens at 5:30, and I try to be there by 6.
 
-**2022\*** After my workout, I go to work so I'm done at 4pm.
+**Walking kids to school** has been one of my most cherished morning activities. Whether it's a block away or to the bus stop, these 10-minute walks have consistently been a major quality of life improvement. The kids really appreciate it, and it's amazing how this small investment of time can have such an impact on my relationship with my family.
 
-**Pre - 2021:** After my workout, I often chillax with my next priority being walking the kids to school. Walking the kids to school has surprisingly been a major quality of life improvement for a very small impact to my day.
+**2022:** After my workout, I go to work so I'm done at 4pm.
+
+**Pre - 2021:** After my workout, I often chillax with my next priority being walking kids to school. Walking the kids to school has surprisingly been a major quality of life improvement for a very small impact to my day.
 
 ### Morning Kryptonite
 
@@ -133,6 +136,16 @@ I have two common failure modes to my morning routine.
 - Starting my day by sitting in my easy chair drinking my coffee. This mindless activity has me skipping those things that are important to me.
 - Hitting snooze when my alarm goes off. The worst of all worlds, not sleeping, and not being up and doing stuff.
 - Lying in bed awake when I wake up before 5. Sometimes I wake up and can't fall back asleep @ 3 or 4 (which isn't crazy cuz sometimes I go to bed @ 7 or 8). Similar to hitting snooze, I'm not sleeping, and I'm not accomplishing anything.
+
+### Morning Refreshers
+
+Instead of thinking about working out as a chore, I reframe it as a refresher - a way to energize and reset myself. I have different levels of refreshers:
+
+- **Refresher**: [Training at the gym](/physical-health) - the foundation of feeling energized and ready for the day
+- **Refresher Plus**: Training at the gym followed by quality time at the coffee shop - combining physical energy with mental space
+- **Refresher Supreme**: The ultimate morning reset - coffee shop time, gym training, and [meditation](/siy) - nurturing body, mind, and spirit
+
+_Note: The coffee shop represents a mental state - focused, relaxed, and ready to think deeply. While I currently need the physical coffee shop to enter this state, I'm working on being able to deliberately enter this state anywhere._
 
 ## After Work Routine
 
