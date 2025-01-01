@@ -74,6 +74,11 @@ When working on a blog post:
 
 Note: Jekyll must be running locally (localhost:4000)
 
+# Terminal Command Conventions
+
+1. For ANY commands that would use a pager or require user interaction, you should append ` | /bin/cat` to the command (NOT just `cat` as it's aliased to `bat`). Otherwise, the command will break. You MUST do this for: git, less, head, tail, more, etc.
+2. For commands that are long running/expected to run indefinitely until interruption, run them in the background.
+
 # 5. Coding conventions used in this project
 
 For CLIs, use a Typer app.
