@@ -31,7 +31,7 @@ _TODO: Picture of pyramid of age distributions_
   - [Age Based Advantages](#age-based-advantages)
   - [Age Based Cognitive Declines](#age-based-cognitive-declines)
   - [AI as an equalizer](#ai-as-an-equalizer)
-- [What does Hacher News Say?](#what-does-hacher-news-say)
+- [What does Hacker News Say?](#what-does-hacker-news-say)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -132,7 +132,7 @@ This evolving synergy between human experience and AI capabilities might create 
 
 While AI benefits everyone, as of 2024, it benefits you the more experience you have.
 
-## What does Hacher News Say?
+## What does Hacker News Say?
 
 - [Where to work after 40](https://news.ycombinator.com/item?id=42573875)?
 
