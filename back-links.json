@@ -217,6 +217,7 @@
         "/twenty-two": "/22",
         "/twentytwo": "/22",
         "/uncategorized": "/random-idea",
+        "/untangled-book": "/untangled",
         "/vacation": "/timeoff",
         "/virus": "/covid",
         "/voices-in-my-head": "/voices",
@@ -2721,6 +2722,7 @@
                 "/eulogy",
                 "/physical-health",
                 "/timeoff",
+                "/untangled",
                 "/y24"
             ],
             "redirect_url": "",
@@ -4567,6 +4569,19 @@
             "markdown_path": "_d/tribe.md",
             "doc_size": 12000
         },
+        "/untangled": {
+            "url": "/untangled",
+            "title": "Untangled: Guiding Teenage Girls Through the Seven Transitions into Adulthood",
+            "description": "Parenting a teenage girl is like mastering the Turkish Get-Up – one of the most technically challenging kettlebell movements that requires patience, balance, and careful progression through distinct phases. Just when you think you’ve got one position figured out, it’s time to transition to the next, all while maintaining your stability and form (and not dropping a heavy weight on your head!). Lisa Damour’s “Untangled” is like having a master coach by your side, breaking down these intricate transitions into seven fundamental movements that take your daughter from childhood to adulthood.\n\n",
+            "file_path": "_site/untangled.html",
+            "outgoing_links": [
+                "/kettlebell"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/untangled.md",
+            "doc_size": 15000
+        },
         "/upstream": {
             "url": "/upstream",
             "title": "Upstream - How to solve problems before they happen",
@@ -4776,7 +4791,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/y2024.md",
-            "doc_size": 20000
+            "doc_size": 22000
         },
         "/y25": {
             "url": "/y25",
@@ -4795,7 +4810,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/y2025.md",
-            "doc_size": 15000
+            "doc_size": 16000
         }
     }
 }
