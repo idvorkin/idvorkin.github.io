@@ -21,34 +21,6 @@ _(NOTE: While the Turkish Get-Up analogy works well for the complexity and care 
 
 _(NOTE FOR DADS: As fathers, we might feel less equipped to navigate some of these transitions with our daughters. That's normal. This book has helped me understand that being present, supportive, and willing to learn is more important than having all the answers. Sometimes the best thing we can do is acknowledge our discomfort while staying engaged.)_
 
-**Self-Reflection Questions for Dads:**
-Throughout these transitions, fathers often face some unique challenges:
-
-- Emotional Connection
-
-  - How comfortable am I showing my own emotions to my daughter?
-  - What messages did I receive growing up about men and emotional expression?
-  - How might my comfort with emotions affect my daughter's emotional development?
-
-- Physical Changes and Boundaries
-
-  - How do I navigate discussions about physical development respectfully?
-  - What role can I play in supporting my daughter through puberty?
-  - How do I balance being supportive while respecting privacy?
-
-- Being the Male Role Model
-
-  - What am I teaching my daughter about men through my actions?
-  - How do my relationships with women shape her expectations?
-  - What healthy masculine traits do I want to model?
-
-- Maintaining Connection
-  - How do I stay connected as she gravitates more toward her mother for certain issues?
-  - What unique perspectives or strengths can I bring as her father?
-  - How do I create safe spaces for difficult conversations?
-
-Remember: Your role as a father is irreplaceable. While some transitions might feel more natural for mothers to navigate, your presence, support, and perspective are crucial to your daughter's development.
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -63,12 +35,14 @@ Remember: Your role as a father is irreplaceable. While some transitions might f
 - [Key Insights](#key-insights)
   - [When to Worry](#when-to-worry)
   - [Common Patterns](#common-patterns)
+  - [Self-Reflection Questions for Dads:](#self-reflection-questions-for-dads)
 - [Practical Applications](#practical-applications)
   - [Communication Strategies](#communication-strategies)
   - [Setting Boundaries](#setting-boundaries)
   - [Building Trust](#building-trust)
 - [Resources](#resources)
-  <!-- vim-markdown-toc-end -->
+
+<!-- vim-markdown-toc-end -->
   <!-- prettier-ignore-end -->
 
 ## The Seven Developmental Strands
@@ -1137,6 +1111,35 @@ Remember: Your role as a father is irreplaceable. While some transitions might f
 ### When to Worry
 
 ### Common Patterns
+
+### Self-Reflection Questions for Dads:
+
+Throughout these transitions, fathers often face some unique challenges:
+
+- Emotional Connection
+
+  - How comfortable am I showing my own emotions to my daughter?
+  - What messages did I receive growing up about men and emotional expression?
+  - How might my comfort with emotions affect my daughter's emotional development?
+
+- Physical Changes and Boundaries
+
+  - How do I navigate discussions about physical development respectfully?
+  - What role can I play in supporting my daughter through puberty?
+  - How do I balance being supportive while respecting privacy?
+
+- Being the Male Role Model
+
+  - What am I teaching my daughter about men through my actions?
+  - How do my relationships with women shape her expectations?
+  - What healthy masculine traits do I want to model?
+
+- Maintaining Connection
+  - How do I stay connected as she gravitates more toward her mother for certain issues?
+  - What unique perspectives or strengths can I bring as her father?
+  - How do I create safe spaces for difficult conversations?
+
+Remember: Your role as a father is irreplaceable. While some transitions might feel more natural for mothers to navigate, your presence, support, and perspective are crucial to your daughter's development.
 
 ## Practical Applications
 
