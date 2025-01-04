@@ -10,9 +10,13 @@ redirect_from:
   - /untangled-book
 ---
 
-Parenting a teenage girl? It's like trying to solve a Rubik's cube that keeps changing colors! But fear not – Lisa Damour's "Untangled" is here to help decode this fascinating puzzle. As a father navigating these waters myself, I found this book to be a game-changer. It breaks down the journey from child to adult into seven distinct transitions, giving us a map for what often feels like uncharted territory.
+Parenting a teenage girl is like mastering the [Turkish Get-Up](/kettlebell#tgu) – one of the most technically challenging kettlebell movements that requires patience, balance, and careful progression through distinct phases. Just when you think you've got one position figured out, it's time to transition to the next, all while maintaining your stability and form (and not dropping a heavy weight on your head!). Lisa Damour's "Untangled" is like having a master coach by your side, breaking down these intricate transitions into seven fundamental movements that take your daughter from childhood to adulthood.
 
-Think of these transitions as chapters in an epic story – each one bringing its own plot twists, character development, and "aha!" moments. Whether you're a parent already in the thick of it, or seeing the teenage years approaching on the horizon, this guide will help you understand what's normal (spoiler: almost everything), what's concerning (less than you might think), and how to be the parent your daughter needs during each phase.
+As a father navigating this journey myself, I've found this book to be the perfect spotter – helping me understand when to provide support and when to step back, ensuring both safety and growth. Whether you're just starting this parenting progression or you're midway through the movement, this guide illuminates what's normal (spoiler: almost everything), what's concerning (less than you might think), and how to maintain your form through each phase of development.
+
+_(NOTE: ChatGPT came up with this [kettlebell](/kettlebell) analogy as it knew it was relevant to me, sorry for the normal humans reading this!)_
+
+_(NOTE: While the Turkish Get-Up analogy works well for the complexity and care needed, there's one key difference: unlike a Turkish Get-Up where you progress through movements in sequence, these developmental strands are more like juggling – all seven balls are in the air at once, each at its own height and speed. Your daughter might be soaring in emotional development while still finding her footing in social transitions, or vice versa.)_
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
