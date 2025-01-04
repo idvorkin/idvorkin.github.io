@@ -18,19 +18,20 @@ _TODO: Picture of pyramid of age distributions_
 
 - [BIG DISCLAIMER](#big-disclaimer)
 - [Hypothesis](#hypothesis)
-    - [Exponential growth of programmers](#exponential-growth-of-programmers)
-    - [Won the lottery and cashed out](#won-the-lottery-and-cashed-out)
-    - [Moved to management](#moved-to-management)
-    - [Switched to other industries](#switched-to-other-industries)
+  - [Exponential growth of programmers](#exponential-growth-of-programmers)
+  - [Won the lottery and cashed out](#won-the-lottery-and-cashed-out)
+  - [Moved to management](#moved-to-management)
+  - [Switched to other industries](#switched-to-other-industries)
 - [Is age discrimination a thing?](#is-age-discrimination-a-thing)
 - [Negative Mindsets](#negative-mindsets)
-    - [I don't care about this new stuff, it's all BS, I'm just gonna do what I want](#i-dont-care-about-this-new-stuff-its-all-bs-im-just-gonna-do-what-i-want)
-    - [Who moved my cheese?](#who-moved-my-cheese)
-    - [I just want to coast till I have enough to retire](#i-just-want-to-coast-till-i-have-enough-to-retire)
+  - [I don't care about this new stuff, it's all BS, I'm just gonna do what I want](#i-dont-care-about-this-new-stuff-its-all-bs-im-just-gonna-do-what-i-want)
+  - [Who moved my cheese?](#who-moved-my-cheese)
+  - [I just want to coast till I have enough to retire](#i-just-want-to-coast-till-i-have-enough-to-retire)
 - [Declines and Growth as you cross 50](#declines-and-growth-as-you-cross-50)
-    - [Age Based Advantages](#age-based-advantages)
-    - [Age Based Cognitive Declines](#age-based-cognitive-declines)
-    - [AI as an equalizer](#ai-as-an-equalizer)
+  - [Age Based Advantages](#age-based-advantages)
+  - [Age Based Cognitive Declines](#age-based-cognitive-declines)
+  - [AI as an equalizer](#ai-as-an-equalizer)
+- [What does Hacher News Say?](#what-does-hacher-news-say)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -130,3 +131,11 @@ I don't know when it kicks in, but I think the science is clear, and I certainly
 This evolving synergy between human experience and AI capabilities might create a more inclusive and balanced tech industry, where the strengths of both younger and older programmers are valued and amplified.
 
 While AI benefits everyone, as of 2024, it benefits you the more experience you have.
+
+## What does Hacher News Say?
+
+- [Where to work after 40](https://news.ycombinator.com/item?id=42573875)?
+
+  - There's about a bajillion C/D+ stage 100-500 person software companies in any B2B vertical you could mention who would fight hard for your type of experience.
+
+  - Go into consulting/professional services. Not Accenture or anything horrible like that, but dozens of boutique/smaller firms with decently inspiring leadership and a very high standard of colleague.
