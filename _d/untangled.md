@@ -68,9 +68,8 @@ Remember: Your role as a father is irreplaceable. While some transitions might f
   - [Setting Boundaries](#setting-boundaries)
   - [Building Trust](#building-trust)
 - [Resources](#resources)
-
-<!-- vim-markdown-toc-end -->
-<!-- prettier-ignore-end -->
+  <!-- vim-markdown-toc-end -->
+  <!-- prettier-ignore-end -->
 
 ## The Seven Developmental Strands
 
@@ -105,7 +104,7 @@ Remember: Your role as a father is irreplaceable. While some transitions might f
 
 - You're unsure about new boundaries and roles
 
-  - "I don't know when to step in anymore"
+  - "How do I step in anymore?"
   - "Am I being too strict? Too lenient?"
   - Hovering outside her room, unsure whether to knock
   - Which parts of my parenting role am I most afraid to let go?
