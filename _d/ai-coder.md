@@ -15,6 +15,11 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [The Evolution of AI Coding](#the-evolution-of-ai-coding)
   - [Core Concepts](#core-concepts)
   - [Key Tools](#key-tools)
+    - [Cursor](#cursor)
+      - [Cursor Tips](#cursor-tips)
+      - [Browsing Cursor Chats](#browsing-cursor-chats)
+    - [Aider](#aider)
+    - [Avante](#avante)
 - [Use Cases](#use-cases)
   - [Using latest docs](#using-latest-docs)
   - [Diff Summarization](#diff-summarization)
@@ -110,6 +115,38 @@ Other key features:
 - Native documentation indexing support
 - Chat/apply mode for interactive development
 - Smart refactoring suggestions
+
+##### Cursor Tips
+
+1. **YOLO Mode for Tests**
+
+   - Enable "run shell commands without confirmation" in settings
+   - Perfect for running tests frequently (`pytest`, `npm test`, etc.)
+   - Maintains flow without constant approval prompts
+   - Only enable for safe commands like tests
+
+2. **Composer-Agent Mode**
+   - Switch to "Composer-Agent" in chat settings
+   - More structured, task-focused interactions
+   - Better for complex, multi-step tasks
+   - Maintains context across conversation
+   - Great for refactoring and architecture discussions
+
+##### Browsing Cursor Chats
+
+The [Cursor Chat Browser](https://github.com/thomas-pedersen/cursor-chat-browser) is a fantastic tool for reviewing and learning from your AI interactions:
+
+- Browse and search through your chat history
+- Filter conversations by date and content
+- Learn from past successful prompts and interactions
+- Identify patterns in effective AI collaboration
+- Great for improving your CHOP skills by studying what works
+
+To get started:
+
+1. Install the browser: `npm install -g cursor-chat-browser`
+2. Run it: `cursor-chat-browser`
+3. Open in your browser to explore your chat history
 
 #### Aider
 
