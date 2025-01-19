@@ -264,7 +264,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/40-yo-programmer.md",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/42": {
             "url": "/42",
@@ -788,7 +788,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/balance2.md",
-            "doc_size": 19000
+            "doc_size": 18000
         },
         "/balloon": {
             "url": "/balloon",
@@ -1086,7 +1086,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 31000
+            "doc_size": 33000
         },
         "/class-act": {
             "url": "/class-act",
@@ -2438,7 +2438,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-04-12-happy.md",
-            "doc_size": 23000
+            "doc_size": 22000
         },
         "/heath-class-act": {
             "url": "/heath-class-act",
@@ -2628,7 +2628,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/irl.md",
-            "doc_size": 49000
+            "doc_size": 45000
         },
         "/job": {
             "url": "/job",
@@ -3033,7 +3033,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/machine-learning.md",
-            "doc_size": 48000
+            "doc_size": 47000
         },
         "/modal": {
             "url": "/modal",
@@ -3263,15 +3263,17 @@
         "/osx": {
             "url": "/osx",
             "title": "Igor's OSX Tools",
-            "description": "Igor's Blog",
+            "description": "My Mac is now my daily driver, here are my notes\n\n",
             "file_path": "_site/osx.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/screencast"
+            ],
             "incoming_links": [
                 "/tools"
             ],
             "redirect_url": "",
-            "markdown_path": "osx.md",
-            "doc_size": 10000
+            "markdown_path": "_d/osx.md",
+            "doc_size": 12000
         },
         "/pandas": {
             "url": "/pandas",
@@ -3405,7 +3407,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/product.md",
-            "doc_size": 33000
+            "doc_size": 32000
         },
         "/productive": {
             "url": "/productive",
@@ -3623,11 +3625,12 @@
             "file_path": "_site/screencast.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/content-creation"
+                "/content-creation",
+                "/osx"
             ],
             "redirect_url": "",
             "markdown_path": "_td/screencast.md",
-            "doc_size": 12000
+            "doc_size": 15000
         },
         "/seattle": {
             "url": "/seattle",
@@ -3748,7 +3751,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/siy.md",
-            "doc_size": 56000
+            "doc_size": 55000
         },
         "/sleep": {
             "url": "/sleep",
@@ -3947,7 +3950,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/switch.md",
-            "doc_size": 20000
+            "doc_size": 19000
         },
         "/synergize": {
             "url": "/synergize",
@@ -4390,7 +4393,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_td/testing.md",
-            "doc_size": 24000
+            "doc_size": 23000
         },
         "/The-Genesis-Node": {
             "url": "/The-Genesis-Node",
@@ -4580,7 +4583,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/untangled.md",
-            "doc_size": 15000
+            "doc_size": 60000
         },
         "/upstream": {
             "url": "/upstream",
