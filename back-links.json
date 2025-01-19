@@ -3263,7 +3263,7 @@
         "/osx": {
             "url": "/osx",
             "title": "Igor's OSX Tools",
-            "description": "My Mac is now my daily driver, here are my notes\n\n",
+            "description": "I pretty much use mac exclusively. I have 3 at work, and a mac mini at home, and I’m an automation nerd so I try to have everything auto install/syncronize across the machines. On the mac, I’m either in chrome/edge, Cursor (the new VS.code), the terminal (I use iterm), capcut (video editor), zoom, or the few super handy utilities I list below.\n\n",
             "file_path": "_site/osx.html",
             "outgoing_links": [
                 "/screencast"
@@ -3273,7 +3273,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/osx.md",
-            "doc_size": 12000
+            "doc_size": 13000
         },
         "/pandas": {
             "url": "/pandas",
