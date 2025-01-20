@@ -294,3 +294,7 @@ These statistics highlight the profound impact relationships and personal action
 
 - [Britain has a minster of loneliness](https://time.com/5248016/tracey-crouch-uk-loneliness-minister/)
 - [Britain government work on loneliness](https://www.gov.uk/government/collections/governments-work-on-tackling-loneliness)
+
+### Super cool viz on loneliness and it's impact:
+
+[The loneliness epidemic](https://pudding.cool/2023/09/invisible-epidemic/)
