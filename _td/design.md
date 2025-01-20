@@ -18,6 +18,7 @@ Software is measured in two dimensions: use cases (end user behavior) and mallea
     - [Picking the right level of abstraction for your business logic.](#picking-the-right-level-of-abstraction-for-your-business-logic)
     - [Is Fault Free possible](#is-fault-free-possible)
     - [Paradigms: Structured, Object Oriented, Functional](#paradigms-structured-object-oriented-functional)
+    - [DRY vs WET vs MOIST Programming](#dry-vs-wet-vs-moist-programming)
 - [Testing](#testing)
 - [Design Patterns](#design-patterns)
     - [Architecture Patterns](#architecture-patterns)
@@ -65,15 +66,52 @@ Structured program provide functional decomposition and constrained flow control
 
 Object oriented provides encapsulation (bundling data with functions - e.g. classes and objects), and polymorphism (interfaces which can be instantiated with various types).
 
-Polymorphism gives programmers the most power, decoupling the source code dependency from the flow of control dependency. E.g. main only depends on the plugin interfaces, where modules must implement those interfaces (often with a simple adapter or facade). This is such a powerful difference from structured programming that it’s called the dependency inversion principle (DIP). This power enables the programmer to understand much more complex programs at a high level without knowing all the details. These low level details can be developed and deployed independently.
+Polymorphism gives programmers the most power, decoupling the source code dependency from the flow of control dependency. E.g. main only depends on the plugin interfaces, where modules must implement those interfaces (often with a simple adapter or facade). This is such a powerful difference from structured programming that it's called the dependency inversion principle (DIP). This power enables the programmer to understand much more complex programs at a high level without knowing all the details. These low level details can be developed and deployed independently.
 
 Functional programming provides functions with no side effects, functional composition and currying. These tools reduce error, remove concurrency errors, and transform problems to be embarrassingly parallel. Some mutation is always required, but it should be isolated as much as possible. However, less mutation is required then you think. In [event sourcing](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing) use store transaction records instead of updates and compute current state from the sum of previous updates we can remove mutation even from storage (e.g. CRUD becomes CR). If this sounds crazy you already use it daily when using source control, and is becoming very popular in react-redux applications and time travel debugging.
+
+### DRY vs WET vs MOIST Programming
+
+DRY (Don't Repeat Yourself) and WET (Write Everything Twice or We Enjoy Typing) are contrasting principles in software design that guide code organization and maintenance.
+
+**DRY** emphasizes that "every piece of knowledge must have a single, unambiguous, authoritative representation within a system." This means:
+
+- Avoid duplicating code, data, or business logic
+- Extract common functionality into reusable components
+- Use inheritance, composition, and abstraction to share behavior
+- Maintain a single source of truth for any given piece of knowledge
+
+**WET** is sometimes the pragmatic choice when:
+
+- The duplicated code serves different purposes and may evolve differently
+- The abstraction cost outweighs the duplication cost
+- Early in development when the common patterns aren't yet clear
+- The code is more readable and maintainable with some controlled duplication
+
+**MOIST** ([Mitigate the Overuse of Illusory Shared Types](https://gist.github.com/idvorkin/137e47499b21b25e20ce590f1e5efc27)) originated in GraphQL schema design as a middle ground between DRY and WET:
+
+- Challenges the assumption that identical shapes imply shared domain concepts
+- Advocates for selective type sharing based on semantic meaning, not just structural similarity
+- Recognizes that API schema changes are more costly than code changes
+- Warns against premature type sharing that can lead to:
+  - Authorization complications
+  - Runtime problems
+  - Less descriptive schemas
+  - Difficult future changes
+
+The key is finding the right balance:
+
+- DRY within a bounded context or domain
+- MOIST when dealing with API schemas and shared types
+- Accept some WET code across different domains
+- Consider the maintenance cost of premature abstraction vs controlled duplication
+- Let the semantic meaning, not just structural similarity, guide your decisions
 
 ## Testing
 
 From [Testing and Quality](/testing)
 
-_If it’s not tested, it doesn’t work’.’ When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you’ve got more work to do_
+_If it's not tested, it doesn't work'.' When your tests passing lets you deploy without any concerns, your tests are good enough. Otherwise you've got more work to do_
 
 ## Design Patterns
 
