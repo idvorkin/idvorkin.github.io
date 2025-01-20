@@ -137,12 +137,12 @@ READ: \_posts/2020-04-01-Igor-Eulogy.md \_d/pride.md back-links.json
 
 3. This project also contains a jekyll blog, you'll often be expected to edit the blog content
 
-- \_d is drafts, but default put stuff in drafts folder so it's a simpler filename.
-- Always include a markdown talbe of contents, and a nice permalink title
+- `_d` is drafts, by default put stuff in drafts folder so it's a simpler filename
+- Always include a markdown table of contents, and a nice permalink title
 - Ask user what are good tags for the post
-- Before creating a new entry, see if an entryalread exists by running `qa_blog where`
-- Ask the users where they want to add the blog content. Do this by running:
-  qa_blog where {topic to add}
+- Before creating a new entry, see if an entry already exists by running `qa_blog where "your exact question in quotes"`
+- Ask the user where they want to add the blog content. Do this by running:
+  `qa_blog where "your exact question in quotes"`
 - Then inspect the output, and suggest what files to edit, and which should be readonly
 
 # Writing style
