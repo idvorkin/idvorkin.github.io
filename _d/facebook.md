@@ -60,6 +60,8 @@ Facebook is a ‘social’ company; we value 1-1 time, fostering trust-driven re
   - [Show up with grace](#show-up-with-grace)
   - [TL;DR](#tldr)
   - [Feedback is a gift](#feedback-is-a-gift)
+- [Random](#random)
+  - [Crossing the Rubicon - COVID and the year of efficiency](#crossing-the-rubicon---covid-and-the-year-of-efficiency)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -328,3 +330,19 @@ Used to be move fast and break stuff, but that's not good at this size. Now it's
 ### TL;DR
 
 ### Feedback is a gift
+
+## Random
+
+### Crossing the Rubicon - COVID and the year of efficiency
+
+**TODO**: Make a post on the bulls and bears of the tech labor market
+
+Many employees, myself included, bemoan how Meta used to be before COVID, and (then after COVID, but before the year(s) of efficiency).
+
+Sadly, I got my job offer while the gravy was flowing smoothly, but didn't start until mid-COVID.
+
+Interestingly, it turns out when I joined MSFT the year of efficiency was just happening, so I never got to see the other side.
+
+[Memories from MSFT in the 90s](https://www.linkedin.com/pulse/memories-from-working-microsoft-nineties-carlos-arguelles-sm1ac/)
+
+I'm also curious if there is currently a gravy train at the big AI companies?
