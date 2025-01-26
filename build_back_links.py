@@ -1,8 +1,10 @@
-#!/usr/bin/env python3
+#!uv run
+
+
 # /// script
-# requires-python = ">=3.8"
 # dependencies = [
 #   "beautifulsoup4",
+#   "bs4",
 #   "typer",
 #   "icecream",
 #   "pudb",
@@ -12,6 +14,7 @@
 # Remove line too long
 # pep8: disable=E501
 
+from icecream import ic
 from bs4 import BeautifulSoup
 from collections import defaultdict
 from typing import NewType, List
@@ -20,10 +23,7 @@ import json
 from dataclasses import dataclass
 import copy
 import typer
-from icecream import ic
-from pathlib import Path
 import pudb
-from typing_extensions import Annotated
 
 
 # Use type system (and mypy) to reduce error,
@@ -234,9 +234,7 @@ class LinkBuilder:
 
     def __init__(self):
         self.incoming_links = defaultdict(list)  # forward -> back
-        self.redirects = (
-            {}
-        )  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
+        self.redirects = {}  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
         self.pages = {}  # canonical->md
 
     def print_json(self):
