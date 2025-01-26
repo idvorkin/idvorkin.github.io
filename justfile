@@ -1,3 +1,6 @@
+default:
+    just list
+
 coverage-instrument:
     npx nyc instrument --compact=false _site/assets/js instrumented
 
@@ -50,7 +53,7 @@ docker-run:
     docker run -v ~/blog:/root/blog -it -p 35729:35729 -p 4000:4000 devdocker npm run jekyll:container
 
 update-backlinks:
-    python3 build_back_links.py build > back-links.json
+    /usr/bin/env uv run build_back_links.py build > back-links.json
 
 update-search:
     bundle exec jekyll algolia
@@ -65,7 +68,7 @@ update-fj:
     python3 old_blog/transform_blogger_export.py export-all > _ig66/ig66-export.json
 
 back-links:
-    python3 build_back_links.py > back-links.json
+    just update-backlinks
 
 tsc:
     tsc --watch --allowUmdGlobalAccess
