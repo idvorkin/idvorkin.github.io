@@ -1,4 +1,14 @@
-#!python3
+#!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.8"
+# dependencies = [
+#   "beautifulsoup4",
+#   "typer",
+#   "icecream",
+#   "pudb",
+#   "typing-extensions",
+# ]
+# ///
 # Remove line too long
 # pep8: disable=E501
 
