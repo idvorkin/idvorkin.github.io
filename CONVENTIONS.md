@@ -50,6 +50,26 @@ When a user wants to add an image to a blog post:
 
 # 3. IMPORTANT: IF I want to add blog content, or a blog
 
+# Blog Post File Naming Conventions
+
+1. **File Names**:
+   - Blog post files should have descriptive names without dates.
+   - Example: `advice.md`, `how-to-learn.md`, `productivity-tips.md`.
+
+2. **Drafts**:
+   - Place new blog posts in the `_d` directory for drafts.
+   - Example: `_d/advice.md`.
+
+3. **Published Posts**:
+   - Once finalized, move the file to the `_posts` directory.
+
+4. **Front Matter**:
+   - Ensure the `permalink` field in the front matter is unique and descriptive.
+   - Example:
+     ```yaml
+     permalink: /advice
+     ```
+
 # 4. IMPORTANT: Opening Blog Posts During Development
 
 When working on a blog post:
