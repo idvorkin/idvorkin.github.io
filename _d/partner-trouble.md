@@ -7,6 +7,8 @@ redirect_from:
   - /double-trouble
   - /couple-double-trouble
   - /couples
+tags:
+  - book-notes
 ---
 
 There are two types of couples in the world. Those who fight, and those you don't know.
