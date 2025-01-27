@@ -1,5 +1,5 @@
 default:
-    just list
+    @just --list
 
 coverage-instrument:
     npx nyc instrument --compact=false _site/assets/js instrumented
