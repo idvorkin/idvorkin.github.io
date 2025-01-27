@@ -53,17 +53,16 @@ When a user wants to add an image to a blog post:
 # Blog Post File Naming Conventions
 
 1. **File Names**:
+
    - Blog post files should have descriptive names without dates.
    - Example: `advice.md`, `how-to-learn.md`, `productivity-tips.md`.
 
 2. **Drafts**:
+
    - Place new blog posts in the `_d` directory for drafts.
    - Example: `_d/advice.md`.
 
-3. **Published Posts**:
-   - Once finalized, move the file to the `_posts` directory.
-
-4. **Front Matter**:
+3. **Front Matter**:
    - Ensure the `permalink` field in the front matter is unique and descriptive.
    - Example:
      ```yaml
@@ -98,24 +97,6 @@ Note: Jekyll must be running locally (localhost:4000)
 
 1. For ANY commands that would use a pager or require user interaction, you should append ` | /bin/cat` to the command (NOT just `cat` as it's aliased to `bat`). Otherwise, the command will break. You MUST do this for: git, less, head, tail, more, etc.
 2. For commands that are long running/expected to run indefinitely until interruption, run them in the background.
-
-# 5. Coding conventions used in this project
-
-For CLIs, use a Typer app.
-Use `ic` for logging.
-Use Rich for pretty printing.
-Use Loguru for logging.
-Use Typer for CLI apps.
-Use Pydantic for data validation.
-Use types; when using types, prefer using built-ins like `foo | None` vs `foo: Optional[str]`.
-When using Typer, use the latest syntax for arguments and options.
-
-```python
-    name: Annotated[Optional[str], typer.Argument()] = None
-    def main(name: Annotated[str, typer.Argument()] = "Wade Wilson"):
-    lastname: Annotated[str, typer.Option(help="Last name of person to greet.")] = "",
-    formal: Annotated[bool, typer.Option(help="Say hi formally.")] = False,
-```
 
 Prefer returning from a function vs nesting ifs.
 Prefer descriptive variable names over comments.
@@ -179,14 +160,6 @@ When modifying markdown headings:
 3. For new posts: Place TOC immediately after the first paragraph
 4. For existing posts: Don't move the TOC location
 5. Keep the special markers intact:
-
-   ```markdown
-   <!-- vim-markdown-toc-start -->
-
-   [TOC content here]
-
-   <!-- vim-markdown-toc-end -->
-   ```
 
 Note: Many posts use this format for the TOC section:
 
@@ -293,7 +266,7 @@ When you want to include a summary of another page's content:
 5. Example:
 
    ```markdown
-   **Affirmations**  
+   **Affirmations**
    Reinforcing positive beliefs and mindsets I want to cultivate.
 
    {% include summarize-page.html src="/affirmations" %}
