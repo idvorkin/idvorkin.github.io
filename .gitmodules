@@ -1,0 +1,3 @@
+[submodule "chop-conventions"]
+	path = chop-conventions
+	url = https://github.com/idvorkin/chop-conventions
