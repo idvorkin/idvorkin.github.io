@@ -1,69 +1,154 @@
 ---
-layout: post
-title: "Partner Trouble"
-ogtitle: "Double Trouble: Navigating Challenges in Relationships"
-author: "Your Name"
-inprogress: true
-comments: true
-permalink: /partner-trouble
-redirect_from:
-  - /double-trouble
-tags:
-  - couples
-  - relationships
-  - emotional intelligence
 ---
 
-Relationships: the ultimate co-op game. Sometimes you're in perfect sync, pulling off epic combos, and other times, you're stuck in a boss fight where the only weapon is passive-aggressiveness. Whether you're facing communication glitches, trust bugs, or the dreaded "silent treatment" debuff, this post is here to help you level up your relationship game.
+layout: post
+title: "Double Trouble: From Lust to Love to Lost"
+inprogress: true
+permalink: /partner-trouble
+redirect_from:
+
+- /double-trouble
+- /couple-double-trouble
+- /couples
+
+---
+
+There are two types of couples in the world. Those who fight, and those you don't know.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Understanding the Root Causes](#understanding-the-root-causes)
-- [Effective Communication](#effective-communication)
-- [Building Trust](#building-trust)
-- [Managing Conflict](#managing-conflict)
-- [Seeking Support](#seeking-support)
+- [Act With Love](#act-with-love)
+  - [Not in a great relationship. There are a few choices](#not-in-a-great-relationship-there-are-a-few-choices)
+    - [Drain](#drain)
+  - [Transitions](#transitions)
+  - [Love is a Verb, Not a Noun](#love-is-a-verb-not-a-noun)
+  - [Love Languages](#love-languages)
+  - [Act With Love](#act-with-love-1)
+    - [Not in a great - relationship. There are a few choices](#not-in-a-great---relationship-there-are-a-few-choices)
+    - [Drain](#drain-1)
+  - [Transitions](#transitions-1)
+  - [Love is a Verb, Not a Noun](#love-is-a-verb-not-a-noun-1)
+  - [Love Langauges](#love-langauges)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-### Understanding the Root Causes
+{% include amazon.html asin="B0CP52YY8F;B00OICLVBI;B07QGRGDKJ" %}
 
-Every relationship has its glitches. Maybe it's a miscommunication that spiraled out of control or an unresolved issue lurking in the background like a hidden boss. The first step to fixing any problem is identifying it. Think of it as debugging your relationship—find the root cause, and you're halfway to a patch.
+### Act With Love
 
-### Effective Communication
+#### Not in a great relationship. There are a few choices
 
-Communication is like the Wi-Fi of relationships: when it's strong, everything runs smoothly. When it's weak, chaos ensues. Here are some pro tips to boost your signal:
+- 1. Divorce - Sounds good, but excellent chance you'll end up in the same spot in your next relationship.
+- 2. Stay - Two Choices
+  - 2.a Stay and suffer in silence.
+  - 2.b Try to make it better. Two Outcomes
+    - 2.b.1 - Your partner reciprocates, your relationship improves.
+    - 2.b.2 - Your partner doesn't, you get a divorce, but now you'll have many more useful skills.
 
-- **Active Listening**: Put down your phone, make eye contact, and actually listen. Yes, even if they're talking about that coworker you can't stand.
-- **Clear Messaging**: Be direct but kind. "I feel like you're not listening" works better than "You never care about what I say!"
-- **Timing is Everything**: Don't start a serious conversation when they're hangry or mid-Netflix binge.
+#### Drain
 
-### Building Trust
+The things that are killing your relationship:
 
-Trust is the currency of relationships, and like any good economy, it takes time to build and seconds to crash. Here's how to keep your trust bank account in the green:
+- D - Distance, being apart, physically and emotionally.
+- R - Reactivity. Really, being triggered.
+- A - Avoidance. Trying not to think about it, often through escape.
+- I - Inside your head. Really ruminating on what is wrong, what was wasted, etc.
+- N - Not living your values.
+  N.1) Being a doormat/Being in a Lose/Win.
+  N.2) Not being the partner you know you can be.
 
-- **Transparency**: Be open about your feelings, even if it’s awkward. Honesty is the best policy, even when it’s uncomfortable.
-- **Consistency**: Follow through on your promises. If you say you’ll do the dishes, don’t let them sit there like a modern art installation.
-- **Forgiveness**: People mess up. Learn to forgive and move on, or you’ll both be stuck in a loop of resentment.
+### Transitions
 
-### Managing Conflict
+A common challenge in relationships is when a woman goes back to work when the kids are grown up.
 
-Conflict is inevitable, but it doesn’t have to be a game-ending boss fight. Here’s how to handle it like a pro:
+### Love is a Verb, Not a Noun
 
-- **Pause and Reflect**: Take a breather before you say something you’ll regret. Think of it as a cooldown period for your emotions.
-- **Attack the Problem, Not the Person**: Focus on the issue at hand, not on character assassination. "We need to figure out a better way to divide chores" beats "You’re so lazy!"
-- **Find Common Ground**: Remember, you’re on the same team. The goal is to win together, not to score points against each other.
+Love is not an emotion/noun; it's a verb, a verb meaning act of service.
 
-### Seeking Support
+### Love Languages
 
-Sometimes, you need a little help from your friends—or a professional. Whether it’s a heart-to-heart with your bestie or a session with a couples therapist, seeking support can be a game-changer.
+The way you want to be loved. Annoyingly, excellent chance your love language doesn't match your partner's. Even worse, you'll be confused because you think you're doing things that are worth a lot in your love language, but worthless in theirs. Ugh.
 
-- **Friends and Family**: They can offer perspective, but be careful not to turn them into your personal grievance board.
-- **Professional Help**: A good therapist is like a relationship coach, helping you both see the bigger picture and work through the tough stuff.
-- **Self-Help Resources**: Books, podcasts, and even blog posts like this one can provide valuable insights.
+- H - Hugs! Physical Touch.
+- E - Terms of Endearment. Saying I love you, leaving notes of affirmation of their importance.
+- A - Acts of Service. Take out the recycling, do the dishes.
+- R - Receiving Gifts. It's not the size/price that matters; it's the thought. Classics: flowers and chocolates.
+- T - Quality Time together.
+
+(My love languages are physical touch and quality time.)
+layout: post
+title: "Double Trouble: From Lust to Love to Lost"
+inprogress: true
+comments: true
+permalink: /partner-trouble
+redirect_from:
+
+- /double-trouble
+- /couple-double-trouble
+- /couples
+  tags:
+- couples
+- relationships
+- emotional intelligence
 
 ---
 
-_Add comments [here](https://hackmd.io/your-link)_
+There are two types of couples in the world. Those who fight, and those you don't know.
+
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+
+- [Act With Love](#act-with-love)
+  - [Not in a great - relationship. There are a few choices](#not-in-a-great---relationship-there-are-a-few-choices)
+    - [Drain](#drain)
+  - [Transitions](#transitions)
+  - [Love is a Verb, Not a Noun](#love-is-a-verb-not-a-noun)
+  - [Love Langauges](#love-langauges)
+
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
+
+{%include amazon.html asin="B0CP52YY8F;B00OICLVBI;B07QGRGDKJ" %}
+
+### Act With Love
+
+#### Not in a great - relationship. There are a few choices
+
+- 1. Divorce - Sounds good, but excellent chance you'll end up in the same spot in your next relationship.
+- 2. Stay - Two Choices
+  - 2.a Stay and Suffer in silence.
+  - 2.b Try to make it better. Too Outcomes
+    - 2.b.1 - Your partner reciprocates, your relationship improves
+    - 2.b.2 - Your partner doesn't, you get a divorce, but now you'll have many more useful skills.
+
+#### Drain
+
+The things that are killing your relationship
+
+- D - Distance, being apart, physically and emotionally.
+- R - Reactivity. Really, being triggered
+- A - Avoidance. Trying not to think about it, often through escape.
+- I - Inside your head. Really ruminating on what is wrong, what was wasted, etc.
+- N - Not living your values. N.1) Being a door mat/Being in a Lose/Win. N.2) Not being the partner you know you can be.
+
+### Transitions
+
+A common challenge in relationship is when a woman goes back to work when the kids are grown up.
+
+### Love is a Verb, Not a Noun
+
+Love is not an emotion/noun, it's a verb, a verb meaning act of service.
+
+### Love Langauges
+
+The way you want to be loved. Annoyingly, excellent chance your love language doesn't match your partners. Even worse, you'll be confused beacause you think you're doing things that are worht a lot in yoru love langauge, but worthless in theirs. Ugh.
+
+- H - Hugs! Physical Touch
+- E - Terms of Endearment. Saying I love, you leave notes of affirmation of their importance
+- A - Acts of Service. Take out the recycling, do the dishes.
+- R - Receiving Gifts. It's not the size/price that matters it's the thought. Classics flowers and chocolates
+- T - Quality Time together
+
+(My love languages are physical touch and quality time)
