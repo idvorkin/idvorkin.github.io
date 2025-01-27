@@ -1,16 +1,12 @@
 ---
----
-
 layout: post
 title: "Double Trouble: From Lust to Love to Lost"
 inprogress: true
 permalink: /partner-trouble
 redirect_from:
-
-- /double-trouble
-- /couple-double-trouble
-- /couples
-
+  - /double-trouble
+  - /couple-double-trouble
+  - /couples
 ---
 
 There are two types of couples in the world. Those who fight, and those you don't know.
