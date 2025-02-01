@@ -16,6 +16,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
 
 - [Awesome Video](#awesome-video)
 - [Attack Vectors](#attack-vectors)
+  - [Leaked System Prompts](#leaked-system-prompts)
   - [Prompt Obfuscation for all attacks](#prompt-obfuscation-for-all-attacks)
   - [Jail Breaking](#jail-breaking)
   - [Exfiltration Attacks](#exfiltration-attacks)
@@ -41,6 +42,10 @@ Security is super interesting, AI is super interesting, the combination, is supe
 {% include youtube.html src="zjkBMFhNj_g?start=2743" %}
 
 ## Attack Vectors
+
+### Leaked System Prompts
+
+A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see of the attack mitigations in them.
 
 ### Prompt Obfuscation for all attacks
 
