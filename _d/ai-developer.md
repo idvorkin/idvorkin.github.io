@@ -34,6 +34,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
   - [Ell](#ell)
   - [Commercial vs Open Source Models](#commercial-vs-open-source-models)
 - [Data Access](#data-access)
+  - [Leaked System Prompts](#leaked-system-prompts)
   - [Use LLMs for reasoning not for data retrieval](#use-llms-for-reasoning-not-for-data-retrieval)
 - [External Posts](#external-posts)
 - [Several posts on this topic](#several-posts-on-this-topic)
@@ -276,6 +277,10 @@ def scratch():
 ### Commercial vs Open Source Models
 
 ## Data Access
+
+### Leaked System Prompts
+
+A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see a bunch of the current alchamey in creating these.
 
 ### Use LLMs for reasoning not for data retrieval
 
