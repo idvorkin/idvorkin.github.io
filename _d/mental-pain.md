@@ -16,32 +16,32 @@ Pain is in the brain as they say, which is especially true for mental pains. Pai
 - [Pain vs Suffering](#pain-vs-suffering)
 - [Phantom vs Real Pain](#phantom-vs-real-pain)
 - [Types of pain](#types-of-pain)
-    - [Desire to control](#desire-to-control)
-    - [Doubt](#doubt)
-    - [Disappointment](#disappointment)
+  - [Desire to control](#desire-to-control)
+  - [Doubt](#doubt)
+  - [Disappointment](#disappointment)
 - [Where's the pain](#wheres-the-pain)
-    - [Self](#self)
-        - [Control: Anxiety](#control-anxiety)
-        - [Doubt: Self Doubt](#doubt-self-doubt)
-        - [Disappointment: Self disappointment](#disappointment-self-disappointment)
-    - [Other - From you, to you](#other---from-you-to-you)
-        - [Control: Controlling, loss of autonomy](#control-controlling-loss-of-autonomy)
-        - [Doubt: Abandonment, Taking for granted](#doubt-abandonment-taking-for-granted)
-        - [Disappointment: Guilt/shame/Embarrassed, Unfair, 2](#disappointment-guiltshameembarrassed-unfair-2)
-    - [Process - In your life](#process---in-your-life)
-        - [Control: Anxiety](#control-anxiety-1)
-        - [Doubt: Mistrust and Meaninglessness](#doubt-mistrust-and-meaninglessness)
-        - [Disappointment: Guilt/shame/Embarrassed, Unfair](#disappointment-guiltshameembarrassed-unfair)
+  - [Self](#self)
+    - [Control: Anxiety](#control-anxiety)
+    - [Doubt: Self Doubt](#doubt-self-doubt)
+    - [Disappointment: Self disappointment](#disappointment-self-disappointment)
+  - [Other - From you, to you](#other---from-you-to-you)
+    - [Control: Controlling, loss of autonomy](#control-controlling-loss-of-autonomy)
+    - [Doubt: Abandonment, Taking for granted](#doubt-abandonment-taking-for-granted)
+    - [Disappointment: Guilt/shame/Embarrassed, Unfair, 2](#disappointment-guiltshameembarrassed-unfair-2)
+  - [Process - In your life](#process---in-your-life)
+    - [Control: Anxiety](#control-anxiety-1)
+    - [Doubt: Mistrust and Meaninglessness](#doubt-mistrust-and-meaninglessness)
+    - [Disappointment: Guilt/shame/Embarrassed, Unfair](#disappointment-guiltshameembarrassed-unfair)
 - [Pain and Suffering without progress](#pain-and-suffering-without-progress)
 - [Fueling the fire, adding meaning](#fueling-the-fire-adding-meaning)
-    - [Meaning: From Pain to Suffering](#meaning-from-pain-to-suffering)
-    - [Meaning squared: From Suffering to Misery](#meaning-squared-from-suffering-to-misery)
+  - [Meaning: From Pain to Suffering](#meaning-from-pain-to-suffering)
+  - [Meaning squared: From Suffering to Misery](#meaning-squared-from-suffering-to-misery)
 - [The positive analogs of pain: Pleasure, Satisification, Hubris](#the-positive-analogs-of-pain-pleasure-satisification-hubris)
-    - [Misery to Hubris](#misery-to-hubris)
+  - [Misery to Hubris](#misery-to-hubris)
 - [Loneliness](#loneliness)
 - [Physical Pain, Injury, Recovery](#physical-pain-injury-recovery)
 - [Misc topics](#misc-topics)
-    - [Pride vs Self Confidence vs Hubris/Arrogance](#pride-vs-self-confidence-vs-hubrisarrogance)
+  - [Pride vs Self Confidence vs Hubris/Arrogance](#pride-vs-self-confidence-vs-hubrisarrogance)
 - [For more info](#for-more-info)
 
 <!-- vim-markdown-toc-end -->
@@ -157,6 +157,8 @@ Satis
 Perhaps back pain as an analog.
 
 Just like your back carries a physical load, so too does your "psyche" carry an emotional load. And like your back, at any given time you have a maximum load.
+
+{%include summarize-page.html src="/physical-pain"%}
 
 Your strength/Load Bearing Ability:
 
