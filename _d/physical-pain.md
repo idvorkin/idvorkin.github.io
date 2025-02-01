@@ -14,30 +14,37 @@ Physical pain is a universal experience, yet it remains one of the least underst
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Greak books for most injuries](#greak-books-for-most-injuries)
+- [Introduction](#introduction)
+- [Understanding Physical Pain](#understanding-physical-pain)
   - [The downside](#the-downside)
+- [Approaches to Managing Pain](#approaches-to-managing-pain)
   - [Physio Therapy](#physio-therapy)
     - [Putting up a tonne of effort to climb the wrong laddaer](#putting-up-a-tonne-of-effort-to-climb-the-wrong-laddaer)
     - [The source of pain is rarely the place you need to fix it.](#the-source-of-pain-is-rarely-the-place-you-need-to-fix-it)
     - [Massage, Stretch, Strengthen](#massage-stretch-strengthen)
     - [Self Release: Massage and Foam Roller, Tennis Ball](#self-release-massage-and-foam-roller-tennis-ball)
-    - [Tightness is the signal/symptom it is not the problem.](#tightness-is-the-signalsymptom-it-is-not-the-problem)
-    - [Negative Feedback loop - When you're tight.](#negative-feedback-loop---when-youre-tight)
-    - [Flexiblity vs Mobility](#flexiblity-vs-mobility)
-    - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
-  - [Back Pain](#back-pain)
-    - [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
+- [Key Concepts for Pain Management](#key-concepts-for-pain-management)
+  - [Tightness is the signal/symptom it is not the problem.](#tightness-is-the-signalsymptom-it-is-not-the-problem)
+  - [Negative Feedback loop - When you're tight.](#negative-feedback-loop---when-youre-tight)
+  - [Flexiblity vs Mobility](#flexiblity-vs-mobility)
+  - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
+- [Special Focus: Back Pain](#special-focus-back-pain)
+  - [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-### Greak books for most injuries
+### Introduction
 
-{% include amazon.html asin="B09PLKR2YT;1735728500;" %}
+Physical pain is a universal experience, yet it remains one of the least understood aspects of human health. Whether it's a stubbed toe or chronic back pain, understanding the nature of physical pain can empower us to manage it effectively and improve our quality of life.
 
-### The downside
+### Understanding Physical Pain
 
-### Physio Therapy
+#### The downside
+
+### Approaches to Managing Pain
+
+#### Physio Therapy
 
 Physio therapy is a great model for improvement. You go, they coach you, and then you have to do the work.
 
@@ -58,6 +65,8 @@ Inconvenially, masssage only last 20 minutes, stretching a day or 2, but strengt
 
 - Foam roller and Tennis ball are mostly self massage, which is mostly less effective then an expert nailing it.
 - Remember this is not fixing the problem, it's giving you a window to maximize your efficiency in fixing the problem.
+
+### Key Concepts for Pain Management
 
 #### Tightness is the signal/symptom it is not the problem.
 
@@ -84,7 +93,7 @@ Your body is designed to operate smoothly and symettrically. However, we can als
 
 Because while that tightness is a symptom, it's also limiting range of motion, and by loosening (even temporarily), we can be more effective at strengthing (again exactly the same as anxiety in mental pain).
 
-### Back Pain
+### Special Focus: Back Pain
 
 #### Stuart McGill And the Big 3
 
