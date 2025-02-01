@@ -29,7 +29,7 @@ Physical pain is a universal experience, yet it remains one of the least underst
     - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
   - [Special Focus: Back Pain](#special-focus-back-pain)
     - [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
-    - [Pain Mechanisim](#pain-mechanisim)
+    - [Using the 5 whys to understand pain](#using-the-5-whys-to-understand-pain)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -105,11 +105,17 @@ If you've heard of the McGill big three, that's this guy. Trivia tidbits:
 
 {% include amazon.html asin="B0BL3DFDS2;0973501839;B01BIB1PHQ" %}
 
-Back Mechanic - Laymans Guide
-Back Fitness and performance - Pretty complex, trainer/physo Therapist
-Low back Disorders - Super Technical Doctors/Physio Therapists
+| Book                         | Audience                                  |
+| ---------------------------- | ----------------------------------------- |
+| Back Mechanic                | Laymans Guide                             |
+| Back Fitness and Performance | Pretty complex, trainer/physio Therapist  |
+| Low Back Disorders           | Super Technical Doctors/Physio Therapists |
 
-#### Pain Mechanisim
+#### Using the 5 whys to understand pain
+
+From our favorite COE process - the 5 whys:
+
+{%include summarize-page.html src="/coe"%}
 
 - Why Pain?
   - Tightness
