@@ -72,7 +72,7 @@ When I am dieting heavily, I need less sleep. As I understand it there are two a
 
 ### What's it like waking up at 5am
 
-The Atlantic [summarized it perfectly](https://www.theatlantic.com/health/archive/2019/08/how-know-if-youre-morning-person/595990/?utm_campaign=the-atlantic&utm_medium=social):
+The AtLantic [summarized it perfectly](https://www.theatlantic.com/health/archive/2019/08/how-know-if-youre-morning-person/595990/?utm_campaign=the-atlantic&utm_medium=social):
 
 _They walk among us, endowed with a superpower invisible to the naked eye. Before an important early meeting, they never have to forgo a shower and settle for dry shampoo and a baby wipe. They rarely wake with a jolt at 10 in the morning and stare groggily at a phone screen with five missed calls and texts that say, "You on your way? ETA?"_
 
