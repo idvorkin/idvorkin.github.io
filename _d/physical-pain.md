@@ -15,21 +15,21 @@ Physical pain is a universal experience, yet it remains one of the least underst
 <!-- vim-markdown-toc-start -->
 
 - [Introduction](#introduction)
-- [Understanding Physical Pain](#understanding-physical-pain)
-  - [The downside](#the-downside)
-- [Approaches to Managing Pain](#approaches-to-managing-pain)
-  - [Physio Therapy](#physio-therapy)
+  - [Great Books For Across the Board Improvements](#great-books-for-across-the-board-improvements)
+  - [Approaches to Managing Pain](#approaches-to-managing-pain)
+    - [Physio Therapy](#physio-therapy)
     - [Putting up a tonne of effort to climb the wrong laddaer](#putting-up-a-tonne-of-effort-to-climb-the-wrong-laddaer)
     - [The source of pain is rarely the place you need to fix it.](#the-source-of-pain-is-rarely-the-place-you-need-to-fix-it)
     - [Massage, Stretch, Strengthen](#massage-stretch-strengthen)
     - [Self Release: Massage and Foam Roller, Tennis Ball](#self-release-massage-and-foam-roller-tennis-ball)
-- [Key Concepts for Pain Management](#key-concepts-for-pain-management)
-  - [Tightness is the signal/symptom it is not the problem.](#tightness-is-the-signalsymptom-it-is-not-the-problem)
-  - [Negative Feedback loop - When you're tight.](#negative-feedback-loop---when-youre-tight)
-  - [Flexiblity vs Mobility](#flexiblity-vs-mobility)
-  - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
-- [Special Focus: Back Pain](#special-focus-back-pain)
-  - [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
+  - [Key Concepts for Pain Management](#key-concepts-for-pain-management)
+    - [Tightness is the signal/symptom it is not the problem.](#tightness-is-the-signalsymptom-it-is-not-the-problem)
+    - [Negative Feedback loop - When you're tight.](#negative-feedback-loop---when-youre-tight)
+    - [Flexiblity vs Mobility](#flexiblity-vs-mobility)
+    - [So why do we do massage, and stretch](#so-why-do-we-do-massage-and-stretch)
+  - [Special Focus: Back Pain](#special-focus-back-pain)
+    - [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
+    - [Pain Mechanisim](#pain-mechanisim)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -38,9 +38,9 @@ Physical pain is a universal experience, yet it remains one of the least underst
 
 Physical pain is a universal experience, yet it remains one of the least understood aspects of human health. Whether it's a stubbed toe or chronic back pain, understanding the nature of physical pain can empower us to manage it effectively and improve our quality of life.
 
-### Understanding Physical Pain
+### Great Books For Across the Board Improvements
 
-#### The downside
+{% include amazon.html asin="B09PLKR2YT;1735728500;" %}
 
 ### Approaches to Managing Pain
 
@@ -103,4 +103,21 @@ If you've heard of the McGill big three, that's this guy. Trivia tidbits:
 1. He broke his cervical spine
 1. He is candian, and a professor of Waterloo (my Alama Matter)
 
-{% include amazon.html asin="B01FKSGJYC;0973501839;B01BIB1PHQ" %}
+{% include amazon.html asin="B0BL3DFDS2;0973501839;B01BIB1PHQ" %}
+
+Back Mechanic - Laymans Guide
+Back Fitness and performance - Pretty complex, trainer/physo Therapist
+Low back Disorders - Super Technical Doctors/Physio Therapists
+
+#### Pain Mechanisim
+
+- Why Pain?
+  - Tightness
+- Why Tightness?
+  - Body Protecting From Injury
+- Why Protecting From Injury
+  - Body feels unstability on joints
+- Why unstable?
+  - Lack of muscular Endurance
+
+This is what's great about the mcgill big 3, it's isometrics to build endurance, as opposed to strength. And it does so with the minimal amount of back load (which would worsen the injury)
