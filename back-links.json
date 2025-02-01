@@ -58,6 +58,8 @@
         "/compensation": "/comp",
         "/corona": "/covid",
         "/correct-of-errors": "/coe",
+        "/couple-double-trouble": "/partner-trouble",
+        "/couples": "/partner-trouble",
         "/covid19": "/covid",
         "/cry": "/touching",
         "/cv": "/covid",
@@ -66,6 +68,7 @@
         "/decision": "/decisive",
         "/delegation": "/delegate",
         "/don-juan": "/enemy",
+        "/double-trouble": "/partner-trouble",
         "/dream-job": "/job",
         "/duck-pride": "/pride",
         "/eat-that-frog": "/frog",
@@ -1162,6 +1165,7 @@
                 "/amazon",
                 "/fail",
                 "/manager-book",
+                "/physical-pain",
                 "/switch",
                 "/writing"
             ],
@@ -2948,6 +2952,7 @@
                 "/anxiety",
                 "/frog",
                 "/gtd",
+                "/physical-pain",
                 "/pride",
                 "/shame"
             ],
@@ -2962,6 +2967,7 @@
                 "/happy",
                 "/idle",
                 "/mind-monsters",
+                "/physical-pain",
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
@@ -3205,7 +3211,8 @@
             "file_path": "_site/new-skills.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/about"
+                "/about",
+                "/physical-pain"
             ],
             "redirect_url": "",
             "markdown_path": "_d/laws-of-new-skills.md",
@@ -3330,6 +3337,17 @@
             "markdown_path": "_d/resource-paradox.md",
             "doc_size": 15000
         },
+        "/partner-trouble": {
+            "url": "/partner-trouble",
+            "title": "Double Trouble: From Lust to Love to Lost",
+            "description": "There are two types of couples in the world. Those who fight, and those you don’t know.\n\n",
+            "file_path": "_site/partner-trouble.html",
+            "outgoing_links": [],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/partner-trouble.md",
+            "doc_size": 19000
+        },
         "/physical-health": {
             "url": "/physical-health",
             "title": "Physical Health Lets you look good in your jeans, and wrestle bears",
@@ -3359,6 +3377,23 @@
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
             "doc_size": 23000
+        },
+        "/physical-pain": {
+            "url": "/physical-pain",
+            "title": "Physical Pain: Understanding and Managing It",
+            "description": "Physical pain is a universal experience, yet it remains one of the least understood aspects of human health. Whether it’s a stubbed toe or chronic back pain, understanding the nature of physical pain can empower us to manage it effectively and improve our quality of life.\n\n",
+            "file_path": "_site/physical-pain.html",
+            "outgoing_links": [
+                "/coe",
+                "/mental-pain",
+                "/new-skills"
+            ],
+            "incoming_links": [
+                "/mental-pain"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/physical-pain.md",
+            "doc_size": 20000
         },
         "/podcast": {
             "url": "/podcast",
@@ -4032,7 +4067,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "tags.html",
-            "doc_size": 83000
+            "doc_size": 84000
         },
         "/td/advertising": {
             "url": "/td/advertising",
