@@ -14,15 +14,15 @@ Every day I write out my affirmations. These positive statements help me challen
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Pay myself first: Deliberate. Disciplined. Daily](#pay-myself-first-deliberate-disciplined-daily)
-- [Be an essentialist: Know Essential. Provide Context](#be-an-essentialist-know-essential-provide-context)
-- [Be a class act: First Understand. Appreciate](#be-a-class-act-first-understand-appreciate)
-- [Calm like water: Be Present. This too shall pass. Work the problem](#calm-like-water-be-present-this-too-shall-pass-work-the-problem)
+- [Always Improving: Deliberate. Disciplined. Daily](#always-improving-deliberate-disciplined-daily)
+  - [Be an essentialist: Know Essential. Provide Context. Prioritize Ruthlessly.](#be-an-essentialist-know-essential-provide-context-prioritize-ruthlessly)
+  - [Be a class act: First Understand. Appreciate. Isn't that Curious](#be-a-class-act-first-understand-appreciate-isnt-that-curious)
+  - [Calm like water: Be Present. This too shall pass. Work the problem](#calm-like-water-be-present-this-too-shall-pass-work-the-problem)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-### Pay myself first: Deliberate. Disciplined. Daily
+### Always Improving: Deliberate. Disciplined. Daily
 
 **Discipline is being proactive, it's the path to success.**
 
@@ -32,7 +32,15 @@ Every day I write out my affirmations. These positive statements help me challen
 
 {%include summarize-page.html src="/compassion" %}
 
-### Be an essentialist: Know Essential. Provide Context
+History:
+
+- 2025-02-01
+  - I used to call this pay myself first, but it wasn't what it was about.
+  - I really like Seth Godin's idea of Drip/Drip/Drip, every effort adds up.
+  - I also like growth mindset
+  - Playing with: Better Than Yesterday, Every Day, Always Growing, Always improving was my favorite.
+
+### Be an essentialist: Know Essential. Provide Context. Prioritize Ruthlessly.
 
 **There are so many choices, you need to choose, spend time finding the essential.**
 
@@ -46,7 +54,15 @@ Every day I write out my affirmations. These positive statements help me challen
 
 {%include summarize-page.html src="/writing" %}
 
-### Be a class act: First Understand. Appreciate
+Prioritize Ruthlessly is a core aspect of essentialism, but it's also rule #3.
+
+{%include summarize-page.html src="/7h-c3" %}
+
+- 2025-02-01
+  - I think what's missing here is the ruthless prioritization, or first things first.
+  - Adding Cut Ruthlessly, Prioritize Ruthlessly.
+
+### Be a class act: First Understand. Appreciate. Isn't that Curious
 
 **People want to do their best and are rational. Seek first to understand, and only then be understood.**
 
@@ -72,6 +88,10 @@ Every day I write out my affirmations. These positive statements help me challen
 **Think about the sublime states**
 
 {%include summarize-page.html src="/sublime" %}
+
+- 2025-02-01
+  - I think what's missing here is a word around compassion/grandmother mind/isn't that curious
+  - Perhaps isn't that curious is the best, as it's both applies to my triggers, and my interactions with others.
 
 ### Calm like water: Be Present. This too shall pass. Work the problem
 
