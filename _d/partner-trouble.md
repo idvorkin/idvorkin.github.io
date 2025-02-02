@@ -104,4 +104,4 @@ The way you want to be loved. Annoyingly, excellent chance your love language do
 - R - Receiving Gifts. It's not the size/price that matters; it's the thought. Classics: flowers and chocolates.
 - T - Quality Time together.
 
-(My love languages are physical touch and quality time.)
+ps. (My love languages are physical touch and quality time.)
