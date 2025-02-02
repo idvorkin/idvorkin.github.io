@@ -17,21 +17,22 @@ Goal are critcal, there are multiple goal systems and they have consequences. Th
 <!-- vim-markdown-toc-start -->
 
 - [Why goals](#why-goals)
-    - [Goals vs Systems](#goals-vs-systems)
+  - [Goals vs Systems](#goals-vs-systems)
 - [Mission, Vision, Tenants, Goals](#mission-vision-tenants-goals)
 - [What vs How](#what-vs-how)
 - [Goal systems OKR vs SMART](#goal-systems-okr-vs-smart)
-    - [SMART Goals](#smart-goals)
-    - [OKR](#okr)
+  - [SMART Goals](#smart-goals)
+  - [OKR](#okr)
 - [Measuring goals](#measuring-goals)
-    - [Extrinsic vs Intrinsic Motivations](#extrinsic-vs-intrinsic-motivations)
-    - [Transparent Goals](#transparent-goals)
-    - [Philosphy](#philosphy)
+  - [Extrinsic vs Intrinsic Motivations](#extrinsic-vs-intrinsic-motivations)
+  - [Transparent Goals](#transparent-goals)
+  - [Philosphy](#philosphy)
 - [Metrics Anti-Patterns](#metrics-anti-patterns)
 - [Wrong KPIs](#wrong-kpis)
 - [Input vs output metrics](#input-vs-output-metrics)
 - [Culture vs Strategy](#culture-vs-strategy)
 - [Process and Power](#process-and-power)
+- [Personal Goals](#personal-goals)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -112,3 +113,9 @@ asdf
 - Process shifts power from the individual in the momennt, to the collective understanding of the organization.
 - This shifts from maximizing upside to minimizing downside
 - Sounds negative, but imagine it for a nuclear missile rockateer. Isn't it great we ensure they the organization's will is resolved. That they have double launch keys, etc
+
+## Personal Goals
+
+See Mortality Software
+
+{%include summarize-page.html src="/mortality-software"%}
