@@ -19,6 +19,7 @@ There are two types of couples in the world. Those who fight, and those you don'
 - [Act With Love](#act-with-love)
   - [Not in a great relationship. There are a few choices](#not-in-a-great-relationship-there-are-a-few-choices)
     - [Drain](#drain)
+    - [Declining Requests and setting boundaries](#declining-requests-and-setting-boundaries)
     - [Advanced Assertions Skills](#advanced-assertions-skills)
 - [Table 2: Partner Does/Says / You Respond](#table-2-partner-doessays--you-respond)
   - [Transitions](#transitions)
@@ -52,6 +53,25 @@ The things that are killing your relationship:
 - N - Not living your values.
   N.1) Being a doormat/Being in a Lose/Win.
   N.2) Not being the partner you know you can be.
+
+#### Declining Requests and setting boundaries
+
+The two problems:
+
+- Those who struggle to decline requests
+- Those who struggle to decline requests while being fair and considerate.
+- See [essentialim](/essentialism) for lots of ways to say no kindly.
+
+Regardless, you need to have boundaries
+
+| **Boundary Type**  | **What to Say**                                                                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Time**           | "I'm happy to keep watching this show for another half hour, but then I'm going to bed."                                                         |
+| **Space**          | "Please leave me alone; I have to get this task completed for work."                                                                             |
+| **Social**         | "I can’t go to the movies with you on Saturday. I’ve arranged to go out with my friends."                                                        |
+| **Physical**       | "Please don’t touch me like that. I don’t like it."                                                                                              |
+| **Conversational** | "I’d prefer not to talk about this right now. I’m tired, and I just want to chill. Can we talk about this tomorrow, after dinner?"               |
+| **Mental**         | "Clearly, we have very different opinions about this. And your opinion is valid, but please don’t try to force it on me. Let’s agree to differ." |
 
 #### Advanced Assertions Skills
 
