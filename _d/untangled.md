@@ -13,15 +13,13 @@ redirect_from:
 
 Parenting a teenage girl is like mastering the [Turkish Get-Up](/kettlebell#tgus) – one of the most technically challenging kettlebell movements that requires patience, balance, and careful progression through distinct phases. Just when you think you've got one position figured out, it's time to transition to the next, all while maintaining your stability and form (and not dropping a heavy weight on your head!). Lisa Damour's "Untangled" is like having a master coach by your side, breaking down these intricate transitions into seven fundamental movements that take your daughter from childhood to adulthood.
 
+{% include amazon.html asin="0553393073" %}
+
 As a father navigating this journey myself, I've found this book to be the perfect spotter – helping me understand when to provide support and when to step back, ensuring both safety and growth. While the book speaks to all parents, I'm writing these notes specifically from a father's perspective, focusing on our unique challenges and opportunities in raising teenage daughters. Whether you're just starting this parenting progression or you're midway through the movement, this guide illuminates what's normal (spoiler: almost everything), what's concerning (less than you might think), and how to maintain your form through each phase of development.
 
-_(NOTE: ChatGPT came up with this [kettlebell](/kettlebell) analogy as it knew it was relevant to me, sorry for the normal humans reading this!)_
+_(NOTE: ChatGPT came up with this [kettlebell](/kettlebell) analogy as it knew it was relevant to me, sorry for the normal humans reading this! the Turkish Get-Up analogy works for the complexity and care needed, unlike a Turkish Get-Up where you progress through movements in sequence, these developmental strands are more like juggling – all seven balls are in the air at once, each at its own height and speed. Your daughter might be soaring in emotional development while still finding her footing in social transitions, or vice versa.)_
 
-_(NOTE: While the Turkish Get-Up analogy works well for the complexity and care needed, there's one key difference: unlike a Turkish Get-Up where you progress through movements in sequence, these developmental strands are more like juggling – all seven balls are in the air at once, each at its own height and speed. Your daughter might be soaring in emotional development while still finding her footing in social transitions, or vice versa.)_
-
-_(NOTE FOR DADS: As fathers, we might feel less equipped to navigate some of these transitions with our daughters. That's normal. This book has helped me understand that being present, supportive, and willing to learn is more important than having all the answers. Sometimes the best thing we can do is acknowledge our discomfort while staying engaged.)_
-
-{% include amazon.html asin="0553393073" %}
+_(NOTE FOR DADS: I find the book especially helpful as a father, while I don't empathize with the mother/daughter dynamic, many of the female specific concerns are very foreign to me! As fathers, we might feel less equipped to navigate some of these transitions with our daughters. That's normal. This book has helped me understand that being present, supportive, and willing to learn is more important than having all the answers. Sometimes the best thing we can do is acknowledge our discomfort while staying engaged.)_
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
