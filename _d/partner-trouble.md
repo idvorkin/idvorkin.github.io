@@ -18,11 +18,12 @@ There are two types of couples in the world. Those who fight, and those you don'
 
 - [Act With Love](#act-with-love)
   - [Not in a great relationship. There are a few choices](#not-in-a-great-relationship-there-are-a-few-choices)
-    - [Drain](#drain)
+    - [Drain - What's killing your relationship](#drain---whats-killing-your-relationship)
+  - [Being Assertive](#being-assertive)
+    - [Assertion vs Aggression](#assertion-vs-aggression)
     - [Declining Requests and setting boundaries](#declining-requests-and-setting-boundaries)
     - [Advanced Assertions Skills](#advanced-assertions-skills)
-- [Table 2: Partner Does/Says / You Respond](#table-2-partner-doessays--you-respond)
-  - [Transitions](#transitions)
+- [Transitions](#transitions)
   - [Love is a Verb, Not a Noun](#love-is-a-verb-not-a-noun)
   - [Love Languages](#love-languages)
 
@@ -31,9 +32,9 @@ There are two types of couples in the world. Those who fight, and those you don'
 
 {% include amazon.html asin="B0CP52YY8F;B00OICLVBI;B07QGRGDKJ" %}
 
-### Act With Love
+## Act With Love
 
-#### Not in a great relationship. There are a few choices
+### Not in a great relationship. There are a few choices
 
 - 1. Divorce - Sounds good, but excellent chance you'll end up in the same spot in your next relationship.
 - 2. Stay - Two Choices
@@ -42,7 +43,7 @@ There are two types of couples in the world. Those who fight, and those you don'
     - 2.b.1 - Your partner reciprocates, your relationship improves.
     - 2.b.2 - Your partner doesn't, you get a divorce, but now you'll have many more useful skills.
 
-#### Drain
+#### Drain - What's killing your relationship
 
 The things that are killing your relationship:
 
@@ -53,6 +54,10 @@ The things that are killing your relationship:
 - N - Not living your values.
   N.1) Being a doormat/Being in a Lose/Win.
   N.2) Not being the partner you know you can be.
+
+### Being Assertive
+
+#### Assertion vs Aggression
 
 #### Declining Requests and setting boundaries
 
@@ -90,8 +95,6 @@ Regardless, you need to have boundaries
 
 **Examples**
 
-## Table 2: Partner Does/Says / You Respond
-
 | **Partner ...**                                      | **You Respond (Skill Used)**                                                                                                                                                 |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Expresses frustration with your approach.            | "I totally get that you don’t like this way of doing things. And I’d appreciate it if you’d work with me on this, even though you have reservations." (_Empathic Assertion_) |
@@ -106,7 +109,7 @@ Regardless, you need to have boundaries
 | Repeatedly does something you've asked them to stop. | "If you continue doing this, then I’ll have to issue a formal warning." (_Consequence Assertion_)                                                                            |
 | Ignores multiple requests to change behavior.        | "I've asked you multiple times to stop ABC. If it happens again, I will have to take XYZ action." (_Consequence Assertion_)                                                  |
 
-### Transitions
+## Transitions
 
 A common challenge in relationships is when a woman goes back to work when the kids are grown up.
 
