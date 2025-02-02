@@ -21,6 +21,8 @@ _(NOTE: While the Turkish Get-Up analogy works well for the complexity and care 
 
 _(NOTE FOR DADS: As fathers, we might feel less equipped to navigate some of these transitions with our daughters. That's normal. This book has helped me understand that being present, supportive, and willing to learn is more important than having all the answers. Sometimes the best thing we can do is acknowledge our discomfort while staying engaged.)_
 
+{% include amazon.html asin="0553393073" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
