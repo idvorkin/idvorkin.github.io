@@ -15,25 +15,26 @@ As competition in the market intensifies, companies must find ways to differenti
 <!-- vim-markdown-toc-start -->
 
 - [I. How to compete?](#i-how-to-compete)
-- [II. What is a strategy?](#ii-what-is-a-strategy)
+  - [II. What is a strategy?](#ii-what-is-a-strategy)
     - [Variety based positioning](#variety-based-positioning)
     - [Needs based positioning](#needs-based-positioning)
     - [Access based positioning](#access-based-positioning)
-- [III. Why is strategy a sustainable competitive advantage?](#iii-why-is-strategy-a-sustainable-competitive-advantage)
-- [IV. Fit and sustainable competitive advantage](#iv-fit-and-sustainable-competitive-advantage)
+  - [III. Why is strategy a sustainable competitive advantage?](#iii-why-is-strategy-a-sustainable-competitive-advantage)
+  - [IV. Fit and sustainable competitive advantage](#iv-fit-and-sustainable-competitive-advantage)
     - [Types of Fit](#types-of-fit)
     - [Fit and sustainability](#fit-and-sustainability)
-- [V. How to Rediscover Strategy?](#v-how-to-rediscover-strategy)
+  - [V. How to Rediscover Strategy?](#v-how-to-rediscover-strategy)
     - [The failure to choose](#the-failure-to-choose)
     - [The Growth trap](#the-growth-trap)
     - [Profitable Growth](#profitable-growth)
     - [Role of leaders](#role-of-leaders)
-- [VI. Strategy in Tech](#vi-strategy-in-tech)
+  - [VI. Strategy in Tech](#vi-strategy-in-tech)
     - [The Four](#the-four)
     - [A humorous explanation of tech](#a-humorous-explanation-of-tech)
     - [Stratechary](#stratechary)
     - [By company](#by-company)
-- [Strategy vs Execution](#strategy-vs-execution)
+    - [Video Game Industry  State of the union](#video-game-industry--state-of-the-union)
+  - [Strategy vs Execution](#strategy-vs-execution)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -256,6 +257,12 @@ Apple:
 - Hardware or Services
 - The App Store
 - The Physical Store
+
+#### Video Game Industry State of the union
+
+An amazing talk on what's going on with the gaming industry (and really mobile attention)
+
+https://www.matthewball.co/all/stateofvideogaming2025
 
 ### Strategy vs Execution
 
