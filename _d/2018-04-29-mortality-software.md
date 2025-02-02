@@ -16,32 +16,32 @@ Mortality is a word most people try to avoid. But, earlier or later, it's someth
 <!-- vim-markdown-toc-start -->
 
 - [Why](#why)
-    - [Why mortality software?](#why-mortality-software)
-    - [How will it work?](#how-will-it-work)
-        - [Create your future](#create-your-future)
-        - [Learn from the past](#learn-from-the-past)
-    - [Creating your future - Tool overview](#creating-your-future---tool-overview)
-        - [Role and Value Finder, Eulogy Writer.](#role-and-value-finder-eulogy-writer)
-        - [Quarter Month Tools - Goal Setter](#quarter-month-tools---goal-setter)
-    - [Learning from your past - Tool Overview](#learning-from-your-past---tool-overview)
-        - [Annual Review](#annual-review)
-        - [Monthly Review](#monthly-review)
-        - [Weekly Review](#weekly-review)
-        - [Who are you?](#who-are-you)
-        - [What are the roles in your life.](#what-are-the-roles-in-your-life)
-        - [What are your values?](#what-are-your-values)
-        - [How do you want to balance your time between your roles?](#how-do-you-want-to-balance-your-time-between-your-roles)
-        - [For each role:](#for-each-role)
+  - [Why mortality software?](#why-mortality-software)
+  - [How will it work?](#how-will-it-work)
+    - [Create your future](#create-your-future)
+    - [Learn from the past](#learn-from-the-past)
+  - [Creating your future - Tool overview](#creating-your-future---tool-overview)
+    - [Role and Value Finder, Eulogy Writer](#role-and-value-finder-eulogy-writer)
+    - [Quarter Month Tools - Goal Setter](#quarter-month-tools---goal-setter)
+  - [Learning from your past - Tool Overview](#learning-from-your-past---tool-overview)
+    - [Annual Review](#annual-review)
+    - [Monthly Review](#monthly-review)
+    - [Weekly Review](#weekly-review)
+    - [Who are you?](#who-are-you)
+    - [What are the roles in your life.](#what-are-the-roles-in-your-life)
+    - [What are your values?](#what-are-your-values)
+    - [How do you want to balance your time between your roles?](#how-do-you-want-to-balance-your-time-between-your-roles)
+    - [For each role:](#for-each-role)
 - [Coaches](#coaches)
-    - [Habit Coach](#habit-coach)
-    - [Reflection Coach](#reflection-coach)
+  - [Habit Coach](#habit-coach)
+  - [Reflection Coach](#reflection-coach)
 - [Appendix: Product Market Fit](#appendix-product-market-fit)
-    - [When is this most appropriate?](#when-is-this-most-appropriate)
-    - [What is similar to this?](#what-is-similar-to-this)
-    - [Are there societal structures like this?](#are-there-societal-structures-like-this)
-    - [Why doesn't this exist?](#why-doesnt-this-exist)
+  - [When is this most appropriate?](#when-is-this-most-appropriate)
+  - [What is similar to this?](#what-is-similar-to-this)
+  - [Are there societal structures like this?](#are-there-societal-structures-like-this)
+  - [Why doesn't this exist?](#why-doesnt-this-exist)
 - [FAQ](#faq)
-    - [Why call it Time.Ltd](#why-call-it-timeltd)
+  - [Why call it Time.Ltd](#why-call-it-timeltd)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -105,6 +105,12 @@ Most people who have gone through the eulogy process have found it incredibly di
 Many people find this hard to imagine, so here's as a simple example. The eulogy module can start by presenting you different people and their values. Based on how much those people and values resonate with you, mortality software can suggest values that might appeal to you.
 
 #### Quarter Month Tools - Goal Setter
+
+Some people are allergic to goals, a few prompts that are less allergic
+
+1. If I woke up 5 years from now and everything was the same? Would I be proud?
+2. What area of my life do I want to grow, what is a small step?
+3. If future you, met current you, what would they recommend you change?
 
 ### Learning from your past - Tool Overview
 
