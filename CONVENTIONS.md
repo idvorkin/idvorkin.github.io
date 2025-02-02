@@ -238,6 +238,12 @@ When referencing books in blog posts:
 1. First, analyze the blog content:
 
    - Review the post's content and themes
+   - Check if there are any existing amazon.html includes
+   - If includes exist, ask user: "I see existing book references. Would you like to:
+     a) Keep them where they are
+     b) Move them to the standard location (after introduction)
+     c) Replace them with new books
+     d) Add additional books?"
    - Identify any books explicitly mentioned
    - Recommend relevant books based on the topics covered
    - Ask user: "Based on the content about [topics], I recommend including these books:
@@ -263,22 +269,24 @@ When referencing books in blog posts:
 
 4. The include will:
 
-   - Create a table with book covers
+   - Create a centered table with book covers
    - Each book gets a cell with:
      - Cover image (120px max width)
-     - "View on Amazon" link
-     - Affiliate tracking code (ighe-20)
+     - "View on Amazon" link with affiliate code (ighe-20)
+     - Images are styled with a light border and padding
+   - Books are arranged horizontally in a single row
 
 5. Multiple books:
 
    - Separate ASINs with semicolons
    - Books will display side-by-side in the table
    - Keep to 2-3 books per row for readability
+   - Each book gets equal spacing (10px padding)
 
 6. Place the include:
 
-   - After introducing the books in the text
-   - Before the detailed content about the books
+   - For new references: After introducing the books in the text
+   - For existing references: Ask user about preferred location
    - Ensure there's a blank line before and after the include
 
 7. Example:
@@ -290,6 +298,12 @@ When referencing books in blog posts:
 
    Let's explore the key concepts...
    ```
+
+The amazon.html include automatically handles:
+- Responsive image sizing
+- Consistent styling across all book references
+- Proper affiliate link formatting
+- Mobile-friendly layout
 
 # Chat Oriented Programming (CHOP)
 
