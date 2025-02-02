@@ -231,6 +231,66 @@ When adding links in markdown documents:
 2. Use the format `[visible text](/redirect-url)`
 3. Example: For meditation content, use `[meditation](/siy)` since meditation redirects to the Search Inside Yourself page
 
+# Adding Book References
+
+When referencing books in blog posts:
+
+1. First, analyze the blog content:
+
+   - Review the post's content and themes
+   - Identify any books explicitly mentioned
+   - Recommend relevant books based on the topics covered
+   - Ask user: "Based on the content about [topics], I recommend including these books:
+     - [Book 1] because [reason]
+     - [Book 2] because [reason]
+       Would you like to include these or different books?"
+
+2. After user confirms book selections:
+
+   - For each book, ask: "Would you like me to help find the ASIN for [book title]?"
+   - If yes, run:
+     ```
+     tony search "What is the ASIN for [book title]? Search Amazon too"
+     ```
+   - The ASIN will be in the Amazon URL after "/dp/"
+   - Example: amazon.com/dp/B0CP52YY8F -> ASIN is B0CP52YY8F
+
+3. Use the amazon.html include with ASINs:
+
+   ```markdown
+   {% include amazon.html asin="ASIN1;ASIN2;ASIN3" %}
+   ```
+
+4. The include will:
+
+   - Create a table with book covers
+   - Each book gets a cell with:
+     - Cover image (120px max width)
+     - "View on Amazon" link
+     - Affiliate tracking code (ighe-20)
+
+5. Multiple books:
+
+   - Separate ASINs with semicolons
+   - Books will display side-by-side in the table
+   - Keep to 2-3 books per row for readability
+
+6. Place the include:
+
+   - After introducing the books in the text
+   - Before the detailed content about the books
+   - Ensure there's a blank line before and after the include
+
+7. Example:
+
+   ```markdown
+   This post draws from three excellent books on relationships.
+
+   {% include amazon.html asin="B0CP52YY8F;B00OICLVBI;B07QGRGDKJ" %}
+
+   Let's explore the key concepts...
+   ```
+
 # Chat Oriented Programming (CHOP)
 
 CHOP is the practice of using AI chat to assist with programming tasks. When making CHOP changes:
