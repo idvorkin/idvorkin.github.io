@@ -9,14 +9,14 @@ tags:
   - wisdom
 ---
 
-Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You'll want to find the ones that speak best to you.
+Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You'll want to find the ones that speak best to you. Oh and bonus points if beyond just writing out your daily affirmations you reflect on how you can/will and have applied them.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Always Improving: Deliberate. Disciplined. Daily](#always-improving-deliberate-disciplined-daily)
-  - [Be an essentialist: Know Essential. Provide Context. Prioritize Ruthlessly.](#be-an-essentialist-know-essential-provide-context-prioritize-ruthlessly)
-  - [Be a class act: First Understand. Appreciate. Isn't that Curious](#be-a-class-act-first-understand-appreciate-isnt-that-curious)
+  - [An essentialist: Know Essential. Provide Context. Prioritize Ruthlessly.](#an-essentialist-know-essential-provide-context-prioritize-ruthlessly)
+  - [A class act: First Understand. Appreciate. Isn't that Curious](#a-class-act-first-understand-appreciate-isnt-that-curious)
   - [Calm like water: Be Present. This too shall pass. Work the problem](#calm-like-water-be-present-this-too-shall-pass-work-the-problem)
 
 <!-- vim-markdown-toc-end -->
@@ -40,7 +40,7 @@ History:
   - I also like growth mindset
   - Playing with: Better Than Yesterday, Every Day, Always Growing, Always improving was my favorite.
 
-### Be an essentialist: Know Essential. Provide Context. Prioritize Ruthlessly.
+### An essentialist: Know Essential. Provide Context. Prioritize Ruthlessly.
 
 **There are so many choices, you need to choose, spend time finding the essential.**
 
@@ -62,7 +62,7 @@ Prioritize Ruthlessly is a core aspect of essentialism, but it's also rule #3.
   - I think what's missing here is the ruthless prioritization, or first things first.
   - Adding Cut Ruthlessly, Prioritize Ruthlessly.
 
-### Be a class act: First Understand. Appreciate. Isn't that Curious
+### A class act: First Understand. Appreciate. Isn't that Curious
 
 **People want to do their best and are rational. Seek first to understand, and only then be understood.**
 
