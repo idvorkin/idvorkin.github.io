@@ -33,7 +33,7 @@ As competition in the market intensifies, companies must find ways to differenti
     - [A humorous explanation of tech](#a-humorous-explanation-of-tech)
     - [Stratechary](#stratechary)
     - [By company](#by-company)
-    - [Video Game Industry  State of the union](#video-game-industry--state-of-the-union)
+    - [Video Game Industry State of the union](#video-game-industry-state-of-the-union)
   - [Strategy vs Execution](#strategy-vs-execution)
 
 <!-- vim-markdown-toc-end -->
