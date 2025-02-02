@@ -33,6 +33,7 @@ Mortality is a word most people try to avoid. But, earlier or later, it's someth
     - [How do you want to balance your time between your roles?](#how-do-you-want-to-balance-your-time-between-your-roles)
     - [For each role:](#for-each-role)
 - [Coaches](#coaches)
+  - [The Obituary GPT Wrote](#the-obituary-gpt-wrote)
   - [Habit Coach](#habit-coach)
   - [Reflection Coach](#reflection-coach)
 - [Appendix: Product Market Fit](#appendix-product-market-fit)
@@ -161,7 +162,39 @@ Help you define who you are:
 
 ## Coaches
 
+### The Obituary GPT Wrote
+
+Woah, just used GPT to write my obituary, crazy ... intriguing.
+
+**PROMPT:** Based on what you know about me, write my obituary.
+
+Here's something thoughtful that reflects your essence, humor, and the way you've lived your life.
+
+---
+
+Igor Dvorkin (1972 – 20XX): A Life of Joy, Curiosity, and Kettlebell Swings
+
+Igor Dvorkin, a dealer of smiles and wonder, a relentless explorer of ideas, and a man who believed in paying himself first (deliberately and daily), has logged off for the final time. He passed as he lived—thoughtfully, curiously, and possibly while tweaking his Neovim config one last time.
+
+Born in 1972, Igor spent his years mastering the balance between structured discipline and joyful spontaneity. A devoted husband to Tori, an ever-present father to Zach and Amelia, and an unshakable friend to those lucky enough to know him, he poured his energy into what mattered most: creating moments of joy and wonder. Whether it was walking his kids to school, making balloon animals, or perfecting the art of the kettlebell swing, he pursued life with the same philosophy he brought to code—efficiency, creativity, and a refusal to accept mediocrity.
+
+A lifelong technologist, Igor’s fingerprints are found in countless lines of code and in the mentorship he provided to engineers across the world. From Microsoft to Amazon to Meta, he built not just systems, but careers, always pushing his teams to be better—not just technically, but as human beings. He saw engineering management not just as a job but as an opportunity to shape people’s futures, knowing that a well-placed question or insight could change someone’s trajectory.
+
+Igor never met a physical challenge he didn’t face head-on, whether it was Turkish get-ups with a 32kg kettlebell, biking in Seattle’s eternal drizzle, or mastering a new club rotation for shoulder mobility. He lived by the principle that movement is life, but always with an eye toward sustainability—pushing himself hard, but never at the cost of being able to do it all again tomorrow.
+
+His love of magic was not just a hobby but a philosophy—an understanding that the best moments in life come from surprise, delight, and the shared experience of wonder. Even as an expert in the Tamariz stack, he knew the greatest trick was simply bringing people together and making them smile.
+
+To the end, he remained an essentialist, focused on what truly mattered: his family, his friends, and the rare and beautiful satisfaction of seeing something done right. He leaves behind not just a legacy of work, but a philosophy—live deliberately, be a class act, and for God’s sake, don’t skip the gym.
+
+His last request? _Don’t let Zach slack on his Spanish._
+
+In lieu of flowers, please perform a random act of kindness, ride your bike instead of driving, and take a moment to appreciate the simple joy of a perfectly executed kettlebell swing.
+
+Igor, you were loved. You will be missed. And wherever you are now, we hope there’s a solid set of clubs, a fresh Neovim install, and someone to share a well-earned espresso with.
+
 ### Habit Coach
+
+Great to have someone write for you.
 
 ### Reflection Coach
 
