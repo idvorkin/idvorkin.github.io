@@ -13,7 +13,9 @@ imagefeature: https://github.com/idvorkin/blob/raw/master/icon_eulogy_1200_628.p
 
 Bad news, you're dying, so is everyone else. Good news, if we didn't die we'd run out of resources, and our kids would be screwed. Bad news, our health care system is optimized for keeping you alive, not for maximizing the enjoyable time you have on earth. Good news, knowing is half the battle - armed with this knowledge you can decide how you want to die, which is ultimately how you want to live.
 
-This is my summary of [on being mortal](https://www.amazon.com/Being-Mortal-Medicine-What-Matters-ebook/dp/B00JCW0BCY) by Atul Gawande, also author of the Checklist manifesto.
+This is my summary of Being Mortal by Atul Gawande (also author of The Checklist Manifesto). Along with Chasing Daylight, these books have shaped my thinking about mortality and how to live well.
+
+{% include amazon.html asin="B00JCW0BCY;B000RHIU8A" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -62,7 +64,7 @@ This is the most depressing chapter of any book I've ever read. It's the only at
 
 Old age is continuous series of losses. Old age is not a battle, it is a massacre.
 
-With luck and fastidiousness—eating well, exercising, keeping our blood pressure under control, getting medical help when we need it—people can often live and manage a very long time. But eventually the losses accumulate to the point where life’s daily requirements become more than we can physically or mentally manage on our own. As fewer of us are struck dead out of the blue, most of us will spend significant periods of our lives too reduced and debilitated to live independently. We do not like to think about this eventuality. As a result, most of us are unprepared for it. We rarely pay more than glancing attention to how we will live when we need help until it’s too late to do much about it.\*
+With luck and fastidiousness—eating well, exercising, keeping our blood pressure under control, getting medical help when we need it—people can often live and manage a very long time. But eventually the losses accumulate to the point where life's daily requirements become more than we can physically or mentally manage on our own. As fewer of us are struck dead out of the blue, most of us will spend significant periods of our lives too reduced and debilitated to live independently. We do not like to think about this eventuality. As a result, most of us are unprepared for it. We rarely pay more than glancing attention to how we will live when we need help until it's too late to do much about it.\*
 
 ### Assistance
 
@@ -76,7 +78,7 @@ With luck and fastidiousness—eating well, exercising, keeping our blood pressu
 
 ### Courage
 
-Courage is strength in the face of knowledge of what is to be feared or hoped. Wisdom is prudent strength. At least two kinds of courage are required in aging and sickness. The first is the courage to confront the reality of mortality—the courage to seek out the truth of what is to be feared and what is to be hoped. Such courage is difficult enough. We have many reasons to shrink from it. But even more daunting is the second kind of courage—the courage to act on the truth we find. The problem is that the wise course is so frequently unclear. For a long while, I thought that this was simply because of uncertainty. When it is hard to know what will happen, it is hard to know what to do. But the challenge, I’ve come to see, is more fundamental than that. One has to decide whether one’s fears or one’s hopes are what should matter most.
+Courage is strength in the face of knowledge of what is to be feared or hoped. Wisdom is prudent strength. At least two kinds of courage are required in aging and sickness. The first is the courage to confront the reality of mortality—the courage to seek out the truth of what is to be feared and what is to be hoped. Such courage is difficult enough. We have many reasons to shrink from it. But even more daunting is the second kind of courage—the courage to act on the truth we find. The problem is that the wise course is so frequently unclear. For a long while, I thought that this was simply because of uncertainty. When it is hard to know what will happen, it is hard to know what to do. But the challenge, I've come to see, is more fundamental than that. One has to decide whether one's fears or one's hopes are what should matter most.
 
 ## Statistics
 
@@ -131,3 +133,7 @@ Get the raw data from:
 
 - The prophet [on death](http://www.katsandogz.com/gibran/ondeath.php)
 - [Mortality Infographics](https://ourworldindata.org/births-and-deaths)
+
+## Spirtual Health
+
+Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did. His advice: whatever you plan to do before you die, move it up.

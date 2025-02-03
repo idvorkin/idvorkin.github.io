@@ -11,6 +11,10 @@ redirect_from:
 
 Bad news, you've got a last year on earth. Good news, if you're lucky you'll accept that "grand father dies, father dies, son dies" is the best blessing you can have (imagine a different ordering). If you're luckier, you'll have age appropriate health right up till that last year, or even better that last few months. If you're even luckier you'll have the strength to do what you want in your personal "centenarian Olympics".
 
+This post draws heavily from Peter Attia's work on longevity and healthspan, particularly his book Outlive, which explores how to live better and longer through the concept of the Centenarian Olympics.
+
+{% include amazon.html asin="B0B1BTJLJN" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
