@@ -78,6 +78,52 @@ My personal plugin:
   - Even does crazy stuff like let me use 2 keyboards at once, chording across keyboards!#$!
 - [Screencasting specific](/screencast)
 
+### Screen Resolutions and Display Settings
+
+OSX has several built-in ways to manage screen resolutions and displays:
+
+1. **Default Settings**: System Settings -> Displays
+
+   - Choose between Default or Scaled resolution
+   - In Scaled mode, you can select from several preset options
+
+2. **Advanced Resolution Options**:
+
+   - Hold Option key while clicking "Scaled" to see all available resolutions
+   - This reveals additional resolutions your display supports
+
+3. **Command Line Tools**:
+
+   ```bash
+   # List all available resolutions
+   system_profiler SPDisplaysDataType
+
+   # Get current resolution
+   system_profiler SPDisplaysDataType | grep Resolution
+   ```
+
+4. **Third-Party Tools**:
+
+   - [BetterDisplay](https://github.com/waydabber/BetterDisplay) - Force custom resolutions, manage display settings, and override system limitations
+     - Allows forcing any resolution your display can handle
+     - Supports HiDPI and scaled resolutions
+     - Can override system limitations for refresh rates
+     - Free and open source
+
+5. **Testing Your Display**:
+
+   - Use [TestUFO Refresh Rate Test](https://www.testufo.com/refreshrate) to verify your display's refresh rate and resolution
+   - For accurate results:
+     - Close other applications and browser tabs
+     - Run the test for at least 30 seconds
+     - Use full-screen mode
+   - TestUFO helps identify frame skipping and confirms if your custom resolution settings are working correctly
+
+6. **Tips**:
+   - For external displays, try "Default for display" first
+   - For Retina displays, "Looks like" resolutions scale content while maintaining sharpness
+   - Use Option key in Display settings to access HiDPI modes
+
 ## Philisophy
 
 ### Do not switch back and forth between windows and osx.
