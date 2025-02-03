@@ -456,7 +456,7 @@
         "/affirmations": {
             "url": "/affirmations",
             "title": "Affirmations",
-            "description": "Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You’ll want to find the ones that speak best to you.\n\n",
+            "description": "Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You’ll want to find the ones that speak best to you. Oh and bonus points if beyond just writing out your daily affirmations you reflect on how you can/will and have applied them.\n\n",
             "file_path": "_site/affirmations.html",
             "outgoing_links": [
                 "/anxiety",
@@ -466,6 +466,7 @@
                 "/curious",
                 "/end-in-mind",
                 "/essentialism",
+                "/first-things-first",
                 "/first-understand",
                 "/insecure",
                 "/joy",
@@ -477,7 +478,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/affirmations2.md",
-            "doc_size": 14000
+            "doc_size": 16000
         },
         "/ai": {
             "url": "/ai",
@@ -495,11 +496,13 @@
                 "/ai-security",
                 "/ai-testing",
                 "/chop",
+                "/chow",
                 "/ml",
                 "/recommend"
             ],
             "incoming_links": [
-                "/ai-developer"
+                "/ai-developer",
+                "/chow"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai.md",
@@ -558,11 +561,12 @@
                 "/ai"
             ],
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/chow"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-developer.md",
-            "doc_size": 30000
+            "doc_size": 31000
         },
         "/ai-image": {
             "url": "/ai-image",
@@ -572,7 +576,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/ai",
-                "/ai-art"
+                "/ai-art",
+                "/chow"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-imagegen.md",
@@ -591,7 +596,8 @@
                 "/idvorkin/idvorkin-flux-lora-1"
             ],
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/chow"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-journal.md",
@@ -618,7 +624,8 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/ai",
-                "/ai-journal"
+                "/ai-journal",
+                "/chow"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-security.md",
@@ -632,6 +639,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/ai",
+                "/chow",
                 "/d/time-off-2024-04",
                 "/genai-talk",
                 "/ml",
@@ -1102,13 +1110,36 @@
             "incoming_links": [
                 "/40yo",
                 "/ai",
+                "/chow",
                 "/tech-rituals",
                 "/y24",
                 "/y25"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 33000
+            "doc_size": 35000
+        },
+        "/chow": {
+            "url": "/chow",
+            "title": "The CHOW Kitchen: Where AI Meets Writing",
+            "description": "Welcome to The CHOW Kitchen! CHOW - or Chat-Oriented Writing - is transforming how we create content. Think of those bustling restaurant kitchens: AI started as the prep cook, chopping vegetables and measuring ingredients. Then it became a line cook, helping with recipes and plating. Now? It’s becoming a sous chef, capable of crafting entire dishes from your creative vision. Our AIs are getting more sophisticated daily, and we’ll explore how to make the most of this culinary revolution in writing.\n\n",
+            "file_path": "_site/chow.html",
+            "outgoing_links": [
+                "/ai",
+                "/ai-developer",
+                "/ai-image",
+                "/ai-journal",
+                "/ai-security",
+                "/ai-testing",
+                "/ai-training",
+                "/chop"
+            ],
+            "incoming_links": [
+                "/ai"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/chow.md",
+            "doc_size": 16000
         },
         "/class-act": {
             "url": "/class-act",
@@ -1728,7 +1759,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/on-being-mortal.md",
-            "doc_size": 17000
+            "doc_size": 18000
         },
         "/debug": {
             "url": "/debug",
@@ -2089,6 +2120,7 @@
                 "/first-things-first",
                 "/frog",
                 "/gtd",
+                "/partner-trouble",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -2191,6 +2223,7 @@
             "incoming_links": [
                 "/7-habits",
                 "/90days",
+                "/affirmations",
                 "/delegate",
                 "/frog"
             ],
@@ -2293,11 +2326,13 @@
             "title": "Goals - How to define and ensure success",
             "description": "Goal are critcal, there are multiple goal systems and they have consequences. They are mechansims to deliver without micro managements.\n\n",
             "file_path": "_site/goals.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/mortality-software"
+            ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/goals.md",
-            "doc_size": 13000
+            "doc_size": 14000
         },
         "/google-photos": {
             "url": "/google-photos",
@@ -3164,11 +3199,12 @@
                 "/death"
             ],
             "incoming_links": [
-                "/balance"
+                "/balance",
+                "/goals"
             ],
             "redirect_url": "",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
-            "doc_size": 19000
+            "doc_size": 22000
         },
         "/negotiate": {
             "url": "/negotiate",
@@ -3300,7 +3336,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/osx.md",
-            "doc_size": 13000
+            "doc_size": 16000
         },
         "/pandas": {
             "url": "/pandas",
@@ -3342,11 +3378,13 @@
             "title": "Double Trouble: From Lust to Love to Lost",
             "description": "There are two types of couples in the world. Those who fight, and those you don’t know.\n\n",
             "file_path": "_site/partner-trouble.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/essentialism"
+            ],
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/partner-trouble.md",
-            "doc_size": 19000
+            "doc_size": 22000
         },
         "/physical-health": {
             "url": "/physical-health",
@@ -3815,8 +3853,7 @@
             "file_path": "_site/sleep.html",
             "outgoing_links": [
                 "/blueprint",
-                "/insomnia",
-                "/tech-health-toys"
+                "/insomnia"
             ],
             "incoming_links": [
                 "/energy",
@@ -3825,7 +3862,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/sleep.md",
-            "doc_size": 13000
+            "doc_size": 15000
         },
         "/sleeping-bag-sacrifies": {
             "url": "/sleeping-bag-sacrifies",
@@ -3919,7 +3956,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2015-11-18-what-is-strategy.md",
-            "doc_size": 24000
+            "doc_size": 25000
         },
         "/strengths": {
             "url": "/strengths",
@@ -4378,8 +4415,7 @@
             ],
             "incoming_links": [
                 "/d/2016-02-03-positive-computing-survey",
-                "/physical-health",
-                "/sleep"
+                "/physical-health"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2017-10-06-tech-health-toys.md",
@@ -4638,7 +4674,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/untangled.md",
-            "doc_size": 60000
+            "doc_size": 61000
         },
         "/upstream": {
             "url": "/upstream",
