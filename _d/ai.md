@@ -28,6 +28,8 @@ A landing page for all my ai pages - a nice jumping off point (especially from t
 
 {%include summarize-page.html src="/ai-coder" %}
 
+{%include summarize-page.html src="/chow" %}
+
 {%include summarize-page.html src="/ai-paper" %}
 
 {%include summarize-page.html src="/ai-bestie" %}
