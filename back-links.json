@@ -501,8 +501,7 @@
                 "/recommend"
             ],
             "incoming_links": [
-                "/ai-developer",
-                "/chow"
+                "/ai-developer"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai.md",
@@ -561,8 +560,7 @@
                 "/ai"
             ],
             "incoming_links": [
-                "/ai",
-                "/chow"
+                "/ai"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-developer.md",
@@ -576,8 +574,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/ai",
-                "/ai-art",
-                "/chow"
+                "/ai-art"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-imagegen.md",
@@ -596,8 +593,7 @@
                 "/idvorkin/idvorkin-flux-lora-1"
             ],
             "incoming_links": [
-                "/ai",
-                "/chow"
+                "/ai"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-journal.md",
@@ -624,8 +620,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/ai",
-                "/ai-journal",
-                "/chow"
+                "/ai-journal"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-security.md",
@@ -639,7 +634,6 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/ai",
-                "/chow",
                 "/d/time-off-2024-04",
                 "/genai-talk",
                 "/ml",
@@ -687,7 +681,7 @@
                 "/mood"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/anger.md",
+            "markdown_path": "_d/bells.md",
             "doc_size": 14000
         },
         "/anxiety": {
@@ -715,7 +709,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/anxiety.md",
+            "markdown_path": "_d/tribe.md",
             "doc_size": 20000
         },
         "/anxiety-management": {
@@ -1110,7 +1104,6 @@
             "incoming_links": [
                 "/40yo",
                 "/ai",
-                "/chow",
                 "/tech-rituals",
                 "/y24",
                 "/y25"
@@ -1124,22 +1117,13 @@
             "title": "The CHOW Kitchen: Where AI Meets Writing",
             "description": "Welcome to The CHOW Kitchen! CHOW - or Chat-Oriented Writing - is transforming how we create content. Think of those bustling restaurant kitchens: AI started as the prep cook, chopping vegetables and measuring ingredients. Then it became a line cook, helping with recipes and plating. Now? It’s becoming a sous chef, capable of crafting entire dishes from your creative vision. Our AIs are getting more sophisticated daily, and we’ll explore how to make the most of this culinary revolution in writing.\n\n",
             "file_path": "_site/chow.html",
-            "outgoing_links": [
-                "/ai",
-                "/ai-developer",
-                "/ai-image",
-                "/ai-journal",
-                "/ai-security",
-                "/ai-testing",
-                "/ai-training",
-                "/chop"
-            ],
+            "outgoing_links": [],
             "incoming_links": [
                 "/ai"
             ],
             "redirect_url": "",
             "markdown_path": "_d/chow.md",
-            "doc_size": 16000
+            "doc_size": 15000
         },
         "/class-act": {
             "url": "/class-act",
@@ -1963,7 +1947,7 @@
                 "/addiction"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/elder.md",
+            "markdown_path": "_d/suicide.md",
             "doc_size": 21000
         },
         "/emotional-health": {
