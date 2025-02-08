@@ -4,7 +4,9 @@ no-render-title: true
 title: Data Systems
 ---
 
-This page contains my knowledge of data systems. Mostly just a summary of [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=AZ1QGMVFB2K45MWY14X0)
+This page contains my knowledge of data systems. Mostly just a summary of Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems
+
+{% include amazon.html asin="1449373321" %}
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/data-systems.md)_
 
