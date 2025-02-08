@@ -6,7 +6,9 @@ redirect_from:
   - /nvim
 ---
 
-I use nvim lots, but constantly forget what I want to practice. Here's a list to remind me.
+I used Vim for years, but have now transitioned to Neovim. While most of these tips work in both editors, some are Neovim-specific. Here's my collection of tips I want to practice and remember.
+
+{% include summarize-page.html src="/neovim" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

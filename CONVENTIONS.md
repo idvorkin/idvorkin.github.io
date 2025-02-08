@@ -300,6 +300,7 @@ When referencing books in blog posts:
    ```
 
 The amazon.html include automatically handles:
+
 - Responsive image sizing
 - Consistent styling across all book references
 - Proper affiliate link formatting
@@ -352,3 +353,41 @@ When you want to include a summary of another page's content:
    - Do not use emojis in blog posts or documentation
    - This includes titles, headers, and content
    - Keep the writing style clean and professional
+
+# Using Alert Includes
+
+When you want to add an alert box to your content:
+
+1. Use the `alert` include with the format:
+
+   ```markdown
+   {% include alert.html content="Your alert message here" style="info" %}
+   ```
+
+2. Available styles:
+
+   - `primary` - Blue, used for primary actions/information
+   - `secondary` - Gray, used for secondary information
+   - `success` - Green, used for success messages
+   - `danger` - Red, used for error messages or dangerous actions
+   - `warning` - Yellow, used for warning messages
+   - `info` - Light blue (default), used for informational messages
+   - `light` - Very light gray, used for subtle alerts
+   - `dark` - Dark gray, used for high-contrast alerts
+
+3. The style parameter is optional and defaults to "info"
+
+4. Example usage:
+
+   ```markdown
+   {% include alert.html content="This is an info alert" %}
+   {% include alert.html content="Warning! This action cannot be undone" style="warning" %}
+   {% include alert.html content="Success! Your changes have been saved" style="success" %}
+   {% include alert.html content="Error: Invalid input" style="danger" %}
+   ```
+
+5. Best practices:
+   - Use alerts sparingly to maintain their impact
+   - Choose appropriate styles for the message context
+   - Keep alert messages concise and clear
+   - Place alerts near the relevant content they reference

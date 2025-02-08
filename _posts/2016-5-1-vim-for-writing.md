@@ -12,6 +12,8 @@ tags:
 
 VIM is great at lots of things, but free form writing has a few gaps in 'line wrapping' and 'distraction free visual beauty'. These gaps can be closed with the plugins Pencil, Goyo and LimeLight.
 
+{% include alert.html content="Note: I've since switched to Neovim, but the concepts in this post still apply. For my latest Neovim setup, check out my nvim configuration notes." style="info" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 

@@ -1,0 +1,2 @@
+{% assign style = include.style | default: "info" %}
+<div class="alert alert-{{ style }}" role="alert">{{ include.content }}</div>
