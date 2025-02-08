@@ -46,6 +46,8 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
 
 ## What is CHOP?
 
+[**I can't see a world where the majority of software engineers are doing artisanal hand-crafted commits by as soon as the end of 2026**](https://gist.github.com/idvorkin/58f33c803cf933fb33b0a864b5558420#file-think-md)
+
 CHOP (Chat-Oriented Programming) represents a fundamental shift in how we write code. Instead of typing out every line of code ourselves, we engage in a high-level dialogue with AI about our programming goals. Think of it as pair programming with an AI partner that can read your entire codebase, understand your conventions, and help implement solutions through natural conversation.
 
 The concept emerged from [the death of the stubborn programmer](https://gist.github.com/idvorkin/694561bfe1fcc89a0e911255b5183e76) - a recognition that the traditional growth path of developers is fundamentally changing. As Large Language Models (LLMs) take over many repetitive "leaf-node" tasks like writing libraries or performing basic updates, the role of the developer shifts towards higher-level planning and coordination. This isn't just about AI replacing simple tasks - it's about a new way of working where developers who embrace CHOP can achieve at least 30% productivity boosts by focusing on orchestration rather than implementation.
