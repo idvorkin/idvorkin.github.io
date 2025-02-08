@@ -336,9 +336,11 @@ Read Jeff's [letters to shareholders](https://drive.google.com/file/d/1SpgDsIpC_
 ### How to write effectively
 
 {%include youtube.html src="vtIzMaLkCaM" %}
+[AI summary](https://gist.github.com/idvorkin/b7a9d47d29ad18c8f0e78dac84f6f6ca#file-think-md)
 
 Haven't watched this one yet ...
 
+[AI summary](https://gist.github.com/idvorkin/f2023b9aa66261a206c5f674414de94a#file-summary_o3-mini-2025-01-31-md)
 {%include youtube.html src="aFwVf5a3pZM" %}
 
 ### How to tell a great story
