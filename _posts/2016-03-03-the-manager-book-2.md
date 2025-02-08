@@ -82,14 +82,14 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [Quality and Technical Growth Design+Arch Reviews](#quality-and-technical-growth-designarch-reviews)
   - [Code reviews](#code-reviews)
 - [Planning, Roadmaps and Resource Allocation](#planning-roadmaps-and-resource-allocation)
-  - [Who goes last: Start with why, then what, when, and lastly who](#who-goes-last-start-with-why-then-what-when-and-lastly-who)
-  - [Defining Success - How does goal setting work](#defining-success---how-does-goal-setting-work)
-  - [How do you do planning and come up with roadmaps](#how-do-you-do-planning-and-come-up-with-roadmaps)
-  - [What makes a great schedule](#what-makes-a-great-schedule)
-  - [How does resource allocation work](#how-does-resource-allocation-work)
-  - [The road building analogy to software development roles](#the-road-building-analogy-to-software-development-roles)
-  - [Prioritize Ruthlessly](#prioritize-ruthlessly)
-  - [How to provide coarse estimates SWAG/T-Shirt size](#how-to-provide-coarse-estimates-swagt-shirt-size)
+  - [Start with why, end with who: The execution order framework](#start-with-why-end-with-who-the-execution-order-framework)
+  - [Define success: Setting effective goals](#define-success-setting-effective-goals)
+  - [Build the roadmap: Planning and sequencing](#build-the-roadmap-planning-and-sequencing)
+  - [Create the schedule: Timeline and milestones](#create-the-schedule-timeline-and-milestones)
+  - [Allocate resources: Matching people and projects](#allocate-resources-matching-people-and-projects)
+  - [Understand roles: The road building analogy](#understand-roles-the-road-building-analogy)
+  - [Prioritize work: Making tough trade-offs](#prioritize-work-making-tough-trade-offs)
+  - [Estimate effort: Using SWAG and T-shirt sizing](#estimate-effort-using-swag-and-t-shirt-sizing)
 - [Hiring](#hiring)
   - [What are you looking for when you recruit](#what-are-you-looking-for-when-you-recruit)
   - [Do they prefer to hire only experienced folks](#do-they-prefer-to-hire-only-experienced-folks)
@@ -107,6 +107,8 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [Some definitions for low performers](#some-definitions-for-low-performers)
   - [Performance Management for low performers](#performance-management-for-low-performers)
   - [The types of URA](#the-types-of-ura)
+  - [URA doesn't mean the person sucks - it means they are not comptabile.](#ura-doesnt-mean-the-person-sucks---it-means-they-are-not-comptabile)
+  - [What if a URA isn't "fair"?](#what-if-a-ura-isnt-fair)
   - [The who and how of performance management](#the-who-and-how-of-performance-management)
   - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
   - [How do handle poor communication, ESL, ineffective communication in some modalities](#how-do-handle-poor-communication-esl-ineffective-communication-in-some-modalities)
@@ -1091,17 +1093,20 @@ When looking at code reviews as a teaching tool:
 When planning execution, follow this order:
 
 1. **Why** - Start with the purpose and impact
+
    - What problem are we solving?
    - What's the business value?
    - Why is this important now?
 
 2. **What** - Define Success
+
    - What does success look like?
    - What are we building?
    - What are the key requirements?
    - What are the constraints?
 
 3. **When** - Establish timeline and milestones
+
    - When do we need this by?
    - What are the key dependencies?
    - What's the critical path?
@@ -1127,7 +1132,6 @@ This approach helps ensure:
 - Discussions stay objective longer
 - Team can think more creatively about solutions
 - Resource discussions happen after project viability is confirmed
-
 
 ### Define success: Setting effective goals
 
@@ -1542,6 +1546,22 @@ These problems usually show up quickly, and can be assessed looking at artifacts
 
 Consistency is the harder PIP for a few reasons. First, the employee will have periods of acceptable performance, sometimes above expectations, and then they'll have misses, so the PIP needs to capture a time period when there is a performance gap. Simultaneously, it can be difficult to root cause inconsistencies, is it really an employment consistency issue, or is it a structural/situational issue.
 
+### URA doesn't mean the person sucks - it means they are not comptabile.
+
+Being URA feels terrible, and likely illicits some shame. I know it's hard to believe, but it should not. At the end of the day, a URA just means you and the company were not comptible. I'm certain just because it didn't work out at your current company, the URA will be very successful elsewhere, and where ever that is, they'll probalby feel a lot better for it.
+
+### What if a URA isn't "fair"?
+
+I've seen a few variants:
+
+1. The person wasn't assessed fairly - pissed someone off, got unfair bad feedback.
+2. The person got contextually/structurally unlucky - cancelled projects, multi-reorgs.
+3. Distribution driven URA, a non-organic bottom of the stack.
+
+It's not comforting, but that's the way of large numbers. If you take a big enough sample, there will be a long tail that's unfair, on both sides of the fence - e.g. some people get unfair rewards, and others unfair punishments.
+
+This applies to work, and to life. You could buy a lemon of a car, get brain cancer. It sucks, but that's the way of large numbers. Same in the other direction for winning the lottery and having bought NVIDIA in 2022.
+
 ### The who and how of performance management
 
 Three "Players" in this situation:
@@ -1883,6 +1903,14 @@ General
 - There will be pain; people may say negative stuff from a place of deep emotions, and that's a function of pain.
 - Some people need to make jokes to relieve pressure (I'm one of them). Remind them, and yourself, to be respectful of others at the same time.
 - Everyone processes this differently; offer to meet folks and have 1:1s privately, some will want them, others will not, honor their wishes.
+
+I try to send this just before if date is known, or after if it's more of a surprise.
+
+I will never speak about the performance issues of others, so this is a completely context free message:
+
+On %DATE% there will be fewer people in the office than today. You don't know who will be impacted by this directly or indirectly, so please make an effort to be sensitive. Even if you personally use humor to diffuse situations, others might find this very hurtful (and likely won't say anything), so please be cautious.
+
+As always, supporting y'all is always my top priority, so if there's anything you want to talk about - reach out.
 
 ## Personal Motivations
 
