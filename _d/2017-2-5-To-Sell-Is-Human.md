@@ -15,7 +15,7 @@ Selling matters - it's pitching, convincing, negotiating, hiring. Selling has a 
 
 [To sell is human](https://www.amazon.com/Sell-Human-Surprising-Moving-Others-ebook/dp/B0087GJ8KM/) is a treatise on the modern form of sales. Part I describes why selling is important, and how it has evolved. Part II focuses on the how to be a salesman and Part III focuses on what you need to do to do sales.
 
-{%include amazon.html asin="B0087GJ8KM" %}
+{% include amazon.html asin="B0087GJ8KM" %}
 
 ### Buyer beware to seller beware
 
@@ -64,11 +64,11 @@ As you prepare your pitch, whichever variety you choose, clarify your purpose an
 | Pitch Tip    | How                                                                                                                                                                                                                                    |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | One Word     | Write a fifty-word pitch. Reduce it to twenty-five words. Then to six words. One of those remaining half-dozen is almost certainly your one-word pitch                                                                                 |
-| The Question | Use this if your arguments are strong. If they’re weak, make a statement. Or better yet, find some new arguments                                                                                                                       |
-| Rhyming      | Don’t rack your brain for rhymes. Go online and find a rhyming dictionary. I’m partial to [RhymeZone](http:// www.rhymezone.com)                                                                                                       |
-| Subject Line | Review the subject lines of the last twenty e-mail messages you’ve sent. Note how many of them appeal to either utility or curiosity. If that number is less than ten, rewrite each one that fails the test.                           |
+| The Question | Use this if your arguments are strong. If they're weak, make a statement. Or better yet, find some new arguments                                                                                                                       |
+| Rhyming      | Don't rack your brain for rhymes. Go online and find a rhyming dictionary. I'm partial to [RhymeZone](http:// www.rhymezone.com)                                                                                                       |
+| Subject Line | Review the subject lines of the last twenty e-mail messages you've sent. Note how many of them appeal to either utility or curiosity. If that number is less than ten, rewrite each one that fails the test.                           |
 | Twitter      | Even though Twitter allows 140 characters, limit your pitch to 120 characters so that others can pass it on. Remember: The best pitches are short, sweet, and easy to retweet                                                          |
-| Pixar        | Read all twenty-two of former [Pixar story artist Emma Coats’s story rules](http:// bit.ly/ jlVWrG) Your try: Once upon a time [..] . Every day, [..]. One day [..] . Because of that [..] . Because of that [..]. Until finally [..]. |
+| Pixar        | Read all twenty-two of former [Pixar story artist Emma Coats's story rules](http:// bit.ly/ jlVWrG) Your try: Once upon a time [..] . Every day, [..]. One day [..] . Because of that [..] . Because of that [..]. Until finally [..]. |
 
 ### Improvise
 

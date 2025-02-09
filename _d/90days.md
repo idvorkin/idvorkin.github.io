@@ -10,6 +10,8 @@ redirect_from:
 
 The first 90 days is a how to manual for starting a new job. While it's focused on executive roles, it's applicable to lower levels as well. It's also the best written business book from a structural perspective. I highly recommend it.
 
+{% include amazon.html asin="1422188612" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -121,7 +123,7 @@ Some feedback I got:
 
 You need to plan to learn. Just like planning a project, This means in advance figuring out what the important questions are, and how you can best answer them. It's rare to think systematically about your learning, and to approach it systematically. It's also rare to do this in projects, and that's a good cause for mistakes.
 
-Without learning, you risk the the equivalent of org organ rejection syndrome (you are the organ). You'll do things that trigger the org’s immune system and be under attack as a foreign body. Even in turnarounds and reorganizations when you've been brought in to import new ways of doing things, you still have to learn about the org's culture and politics to socialize and customize your approach.
+Without learning, you risk the the equivalent of org organ rejection syndrome (you are the organ). You'll do things that trigger the org's immune system and be under attack as a foreign body. Even in turnarounds and reorganizations when you've been brought in to import new ways of doing things, you still have to learn about the org's culture and politics to socialize and customize your approach.
 
 #### What keeps you from learning
 
@@ -250,9 +252,9 @@ TBD
 - Review detailed operating plans, performance data, and personnel data.
 - Meet one-on-one with your direct reports and ask them the questions you compiled.
   - You will learn about convergent and divergent views and about your reports as people.
-- Assess how things are going at key interfaces. You will hear how salespeople, purchasing agents, customer service representatives, and others perceive your organization’s dealings with external constituencies. You will also learn about problems they see that others do not.
-- Test strategic alignment from the top down. Ask people at the top what the company’s vision and strategy are. Then see how far down into the organizational hierarchy those beliefs penetrate. You will learn how well the previous leader drove vision and strategy down through the organization.
-- Test awareness of challenges and opportunities from the bottom up. Start by asking front line people how they view the company’s challenges and opportunities. Then work your way up. You will learn how well the people at the top check the pulse of the organization.
+- Assess how things are going at key interfaces. You will hear how salespeople, purchasing agents, customer service representatives, and others perceive your organization's dealings with external constituencies. You will also learn about problems they see that others do not.
+- Test strategic alignment from the top down. Ask people at the top what the company's vision and strategy are. Then see how far down into the organizational hierarchy those beliefs penetrate. You will learn how well the previous leader drove vision and strategy down through the organization.
+- Test awareness of challenges and opportunities from the bottom up. Start by asking front line people how they view the company's challenges and opportunities. Then work your way up. You will learn how well the people at the top check the pulse of the organization.
 - Update your questions and hypotheses.
 - Meet with your boss to discuss your questions, hypotheses, and findings.
 
@@ -268,7 +270,7 @@ TBD
 
 ### 3. Match Strategy to Situation
 
-The dangers of “one-best-way” thinking. Diagnosing the situation to develop the right strategy. The STARS model of types of transitions. Using the model to analyze portfolios, and lead change.
+The dangers of "one-best-way" thinking. Diagnosing the situation to develop the right strategy. The STARS model of types of transitions. Using the model to analyze portfolios, and lead change.
 
 #### STARS Model
 
