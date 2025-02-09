@@ -126,6 +126,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [The flip: When charter changes](#the-flip-when-charter-changes)
   - [Insufficient progress - Double down or pivot](#insufficient-progress---double-down-or-pivot)
   - [Layoffs](#layoffs)
+  - [What's the best configuration for layoff announcements?](#whats-the-best-configuration-for-layoff-announcements)
 - [Personal Motivations](#personal-motivations)
   - [Why do you find management attractive](#why-do-you-find-management-attractive)
   - [What is your dream job](#what-is-your-dream-job)
@@ -1911,6 +1912,12 @@ I will never speak about the performance issues of others, so this is a complete
 On %DATE% there will be fewer people in the office than today. You don't know who will be impacted by this directly or indirectly, so please make an effort to be sensitive. Even if you personally use humor to diffuse situations, others might find this very hurtful (and likely won't say anything), so please be cautious.
 
 As always, supporting y'all is always my top priority, so if there's anything you want to talk about - reach out.
+
+### What's the best configuration for layoff announcements?
+
+When Zuck did a particular round of layoffs, he set a date in 3 months, and said we'll do them on this day. A lot of people complained, and said this is an aweful way to do it.
+
+When asked about the mechanics, Zach said: Yes, this really sucks, I think regradless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
 
 ## Personal Motivations
 
