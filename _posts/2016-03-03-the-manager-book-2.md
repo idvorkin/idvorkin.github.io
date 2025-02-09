@@ -125,7 +125,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
   - [The flip: When charter changes](#the-flip-when-charter-changes)
   - [Insufficient progress - Double down or pivot](#insufficient-progress---double-down-or-pivot)
-  - [Layoffs](#layoffs)
+  - [How to handle Layoffs](#how-to-handle-layoffs)
   - [What's the best configuration for layoff announcements?](#whats-the-best-configuration-for-layoff-announcements)
 - [Personal Motivations](#personal-motivations)
   - [Why do you find management attractive](#why-do-you-find-management-attractive)
@@ -1868,7 +1868,7 @@ In a common case, the decision will be sudden, often with an edict from leadersh
 
 NOTES: - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
 
-### Layoffs
+### How to handle Layoffs
 
 (Some of this is copied from [Ashish](https://www.linkedin.com/pulse/being-leadermanager-hard-during-layoffs-ashish-singh?trk=public_post_feed-article-content) )
 
