@@ -17,7 +17,8 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Key Tools](#key-tools)
     - [Cursor](#cursor)
       - [Cursor Tips](#cursor-tips)
-      - [Browsing Cursor Chats](#browsing-cursor-chats)
+      - [Export Cursor Chats](#export-cursor-chats)
+      - [(OLD) Browsing Cursor Chats](#old-browsing-cursor-chats)
     - [Aider](#aider)
     - [Avante](#avante)
 - [Use Cases and Examples](#use-cases-and-examples)
@@ -137,7 +138,11 @@ Other key features:
    - Maintains context across conversation
    - Great for refactoring and architecture discussions
 
-##### Browsing Cursor Chats
+##### Export Cursor Chats
+
+Check out [SpecStory](https://docs.specstory.com/features)
+
+##### (OLD) Browsing Cursor Chats
 
 The [Cursor Chat Browser](https://github.com/thomas-pedersen/cursor-chat-browser) is a fantastic tool for reviewing and learning from your AI interactions:
 
