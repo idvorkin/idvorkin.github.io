@@ -20,11 +20,13 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
       - [Browsing Cursor Chats](#browsing-cursor-chats)
     - [Aider](#aider)
     - [Avante](#avante)
-- [Use Cases](#use-cases)
+- [Use Cases and Examples](#use-cases-and-examples)
   - [Using latest docs](#using-latest-docs)
+  - [Fixing an indentation handling bug in an nvim plugin](#fixing-an-indentation-handling-bug-in-an-nvim-plugin)
   - [Diff Summarization](#diff-summarization)
   - [Review changes between dates](#review-changes-between-dates)
   - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
+- [Articles](#articles)
   - [Will CHOP Kill the Joy of Coding?](#will-chop-kill-the-joy-of-coding)
     - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
     - [How can you use AI - Research Assistant vs Code Writer](#how-can-you-use-ai---research-assistant-vs-code-writer)
@@ -174,7 +176,7 @@ A promising Vim plugin for CHOP:
 - Transparent [coding prompts](https://github.com/yetone/avante.nvim/blob/main/lua/avante/llm.lua)
 - Integrates well with the Vim workflow
 
-## Use Cases
+## Use Cases and Examples
 
 Not sure if this should be a separate post, but I'm going to start looking at this from the perspective of use cases.
 
@@ -182,11 +184,20 @@ Not sure if this should be a separate post, but I'm going to start looking at th
 
 Cursor has native support for indexing docs, some projects even have llm.txt to teach the LLM what it needs to know. [Fasthtml is an example](https://www.answer.ai/posts/2024-09-03-llmstxt)
 
+### Fixing an indentation handling bug in an nvim plugin
+
+- This plugin had a bug, I started by creating an [issue](https://github.com/hedyhli/markdown-toc.nvim/issues/8)
+- Then I cloned the repo and asked cursor to [fix it](https://gist.github.com/idvorkin/f8d67556fca16d776133a7a7c949f16c)
+- What's craziest, is the repo didn't have a test system, so I had cursor create that too, see the
+- The final [PR](https://github.com/hedyhli/markdown-toc.nvim/pull/9)
+
 ### Diff Summarization
 
 ### Review changes between dates
 
 ### Dream: Re-write commit history to break things into orthogonal changes
+
+## Articles
 
 ### Will CHOP Kill the Joy of Coding?
 
