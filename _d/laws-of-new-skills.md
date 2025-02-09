@@ -22,7 +22,7 @@ Magic, Kettle Bells, Public Speaking - every skill I've acquired follows the sam
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include blob_image_float_right.html src="blog/raccoon-learning.webp" %}
+{% include instagram_reel.html src="DFmGuNPInBe" %}
 
 ### Law 1: You'll Suck Until You Don't
 
