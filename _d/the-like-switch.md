@@ -1,11 +1,12 @@
 ---
 layout: post
-title: How to build rapport and set people at ease
-comments: true
+title: "How to build rapport and set people at ease"
 permalink: /like-switch
 ---
 
-The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form
+The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form.
+
+{% include amazon.html asin="1476754489" %}
 
 <!-- prettier-ignore-start -->
 
