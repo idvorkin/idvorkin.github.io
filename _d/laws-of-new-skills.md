@@ -16,8 +16,8 @@ Magic, Kettle Bells, Public Speaking - every skill I've acquired follows the sam
 <!-- vim-markdown-toc-start -->
 
 - [Law 1: You'll Suck Until You Don't](#law-1-youll-suck-until-you-dont)
-  - [Law 2: Practice Makes Permanent](#law-2-practice-makes-permanent)
-  - [Law 3: Humans overestimate what can be done in a week, and underestimate what can be done in a year](#law-3-humans-overestimate-what-can-be-done-in-a-week-and-underestimate-what-can-be-done-in-a-year)
+- [Law 2: Practice Makes Permanent](#law-2-practice-makes-permanent)
+- [Law 3: Humans overestimate what can be done in a week, and underestimate what can be done in a year](#law-3-humans-overestimate-what-can-be-done-in-a-week-and-underestimate-what-can-be-done-in-a-year)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
