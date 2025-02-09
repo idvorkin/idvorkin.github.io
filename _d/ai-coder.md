@@ -28,6 +28,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Review changes between dates](#review-changes-between-dates)
   - [Dream: Re-write commit history to break things into orthogonal changes](#dream-re-write-commit-history-to-break-things-into-orthogonal-changes)
 - [Articles](#articles)
+  - [How might AI change programming?](#how-might-ai-change-programming)
   - [Will CHOP Kill the Joy of Coding?](#will-chop-kill-the-joy-of-coding)
     - [Reasons to Program - Mastery vs Getting Shit Done](#reasons-to-program---mastery-vs-getting-shit-done)
     - [How can you use AI - Research Assistant vs Code Writer](#how-can-you-use-ai---research-assistant-vs-code-writer)
@@ -38,11 +39,6 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [The Art of Prompt Engineering](#the-art-of-prompt-engineering)
   - [Integration Tips](#integration-tips)
   - [DRY CHOP: Your AI's Cookbook](#dry-chop-your-ais-cookbook)
-- [Real-World Success Stories](#real-world-success-stories)
-  - [Case Study: The 24-Hour MVP](#case-study-the-24-hour-mvp)
-  - [The Legacy Code Whisperer](#the-legacy-code-whisperer)
-- [The Human Element](#the-human-element)
-- [How might AI change programming?](#how-might-ai-change-programming)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -204,6 +200,35 @@ Cursor has native support for indexing docs, some projects even have llm.txt to 
 
 ## Articles
 
+### How might AI change programming?
+
+[Fascinating Essay](https://gist.github.com/idvorkin/f1a4f1ccd2c9c8496101de7633d5aafc)
+
+Worth reading the whole article but some interesting takes:
+
+- Read Path vs Write Path:
+
+  - So, [data systems](td/data-systems#write-path-vs-read-path) went through this.... You used to cache/materialize all your data writes to a DB on the write path, and then read from the DB
+  - So, programs are like that, you take instructions, write a program, save the program and run it. This can be at different levels, interpretted, JIT, Compiled
+  - But, what if (especially in a world where models are getting continuously better) you store the instructions, and write the code on the fly.
+  - :mindblown:
+
+- Short term
+
+  - Compilers/Linters designed to help LLMs with more context
+  - More smaller single file programs
+  - Better decoupling because LLMs can't keep everything in their head
+
+- What are the limitations of the volume of existing training data?
+  - Author Talks about this in the context of creating new programming languages, and ratio of corpus of old language to new language as a blocker.
+  - I think this is a red-herring. Models can generate their own synthetic data.
+- What about new programming lanuges?
+  - The reason existing corpus doesn't matter is the AI can generate synthetic data easily (see the recent term distillation/RL)
+  - But the new languages will be of two forms:
+    - New highlevel languages like english to instruct the AI
+    - New AI languages that are optimized for AI's to read/understand/write
+- New Forms of Technical Debt (Consensus): Technical debt could evolve, arising from code optimized for current AI models that may become problematic as models advance.
+
 ### Will CHOP Kill the Joy of Coding?
 
 _It occurs to me this applies to all vocations, not just programming_
@@ -356,48 +381,3 @@ Here's a recent example of this approach in action:
    - AI helped establish clear permalink change process
    - Added guidance on maintaining compatibility
    - Standardized use of redirect_from in front matter
-
-## Real-World Success Stories
-
-### Case Study: The 24-Hour MVP
-
-A solo developer built a fully functional e-commerce platform in 24 hours using AI assistance. The secret sauce? Breaking down the project into small, well-defined tasks and letting AI handle the boilerplate while focusing on business logic and user experience.
-
-### The Legacy Code Whisperer
-
-A team modernized a 15-year-old codebase using AI to help understand, document, and gradually refactor the legacy code. What would have taken months of archeological code diving was completed in weeks.
-
-## The Human Element
-
-Remember, fellow code warriors, AI is like having a super-powered intern - incredibly fast and knowledgeable, but still needs your wisdom and experience to create truly outstanding software. The future isn't about AI replacing developers; it's about developers who use AI outperforming those who don't.
-
-Keep coding, keep learning, and most importantly, keep having fun with these amazing new tools. The future of coding is not just bright - it's absolutely dazzling!
-
-## How might AI change programming?
-
-[Fascinating Essay](https://gist.github.com/idvorkin/f1a4f1ccd2c9c8496101de7633d5aafc)
-
-Worth reading the whole article but some interesting takes:
-
-- Read Path vs Write Path:
-
-  - So, [data systems](td/data-systems#write-path-vs-read-path) went through this.... You used to cache/materialize all your data writes to a DB on the write path, and then read from the DB
-  - So, programs are like that, you take instructions, write a program, save the program and run it. This can be at different levels, interpretted, JIT, Compiled
-  - But, what if (especially in a world where models are getting continuously better) you store the instructions, and write the code on the fly.
-  - :mindblown:
-
-- Short term
-
-  - Compilers/Linters designed to help LLMs with more context
-  - More smaller single file programs
-  - Better decoupling because LLMs can't keep everything in their head
-
-- What are the limitations of the volume of existing training data?
-  - Author Talks about this in the context of creating new programming languages, and ratio of corpus of old language to new language as a blocker.
-  - I think this is a red-herring. Models can generate their own synthetic data.
-- What about new programming lanuges?
-  - The reason existing corpus doesn't matter is the AI can generate synthetic data easily (see the recent term distillation/RL)
-  - But the new languages will be of two forms:
-    - New highlevel languages like english to instruct the AI
-    - New AI languages that are optimized for AI's to read/understand/write
-- New Forms of Technical Debt (Consensus): Technical debt could evolve, arising from code optimized for current AI models that may become problematic as models advance.
