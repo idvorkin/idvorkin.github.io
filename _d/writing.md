@@ -335,6 +335,10 @@ Read Jeff's [letters to shareholders](https://drive.google.com/file/d/1SpgDsIpC_
 
 ### How to write effectively
 
+The core message in these essays is the key is providing value to the reader. We were taught the value of our writing was showing our thinking (FALSE, only people for whom that is our teachers who are paid to assess our knowledge). Start by understanding what the value the reader wants, and then you can evaluate your writing against that criteria - which is exactly the criteria the reader is using.
+
+This means the first questions in assessing writing is: Is this writing good for who?
+
 {%include youtube.html src="vtIzMaLkCaM" %}
 [AI summary](https://gist.github.com/idvorkin/b7a9d47d29ad18c8f0e78dac84f6f6ca#file-think-md)
 
