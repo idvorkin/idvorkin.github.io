@@ -29,14 +29,15 @@ Let's explore retirement holistically - beyond the spreadsheets and financial ca
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-* [The Real Goal: AMP - Autonomy, Mastery, and Purpose](#the-real-goal-amp---autonomy-mastery-and-purpose)
-* [The Emotional Journey of Retirement](#the-emotional-journey-of-retirement)
-* [Identity Beyond Work](#identity-beyond-work)
-* [Financial Independence vs Retirement](#financial-independence-vs-retirement)
-* [Common Retirement Myths](#common-retirement-myths)
-* [Preparing for the Transition](#preparing-for-the-transition)
-* [Finding Purpose in Retirement](#finding-purpose-in-retirement)
-* [Resources and Further Reading](#resources-and-further-reading)
+- [The Real Goal: AMP - Autonomy, Mastery, and Purpose](#the-real-goal-amp---autonomy-mastery-and-purpose)
+- [The Emotional Journey of Retirement](#the-emotional-journey-of-retirement)
+- [Identity Beyond Work](#identity-beyond-work)
+- [Financial Independence vs Retirement](#financial-independence-vs-retirement)
+- [Saving More Than Money](#saving-more-than-money)
+- [Common Retirement Myths](#common-retirement-myths)
+- [Preparing for the Transition](#preparing-for-the-transition)
+- [Finding Purpose in Retirement](#finding-purpose-in-retirement)
+- [Resources and Further Reading](#resources-and-further-reading)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -85,6 +86,27 @@ Some key financial considerations:
 
 {% include summarize-page.html src="/money" %}
 
+## Saving More Than Money
+
+Just like we save money for retirement, we need to save our health. But unlike a 401(k), your health account has mandatory withdrawals that you can't control. Every day, whether you like it or not, you're spending from this account. And just like unexpected market crashes, you'll face major unexpected health withdrawals whether you're ready or not.
+
+Think of your physical health like compound interest - small, consistent investments early on yield massive returns later. But also like money, you can't wait until retirement to start saving. The "health debt" you accumulate in your working years will need to be paid back, often with steep interest.
+
+{% include summarize-page.html src="/last-year" %}
+
+{% include summarize-page.html src="/physical-health" %}
+
+{% include summarize-page.html src="/diet" %}
+
+The parallel goes deeper. Just as financial advisors recommend diversifying your portfolio, you need to diversify your health investments:
+
+- Cardiovascular health - your "emergency fund" for daily activities
+- Strength training - your "long-term investments" in bone density and muscle mass
+- Flexibility and mobility - your "insurance policy" against falls and injury
+- Sleep and recovery - your "dividend payments" that keep everything else running
+
+Remember: You can always earn more money, but you can't earn more health. Make those deposits while you can.
+
 ## Common Retirement Myths
 
 Let's debunk some common misconceptions about retirement and explore what modern retirement really looks like.
@@ -118,8 +140,8 @@ Exploring ways to maintain meaning and purpose in life after leaving the traditi
 
 {% include summarize-page.html src="/eulogy" %}
 
-{% include summarize-page.html src="/last-year" %}
-
 ## Resources and Further Reading
 
 The resources and related content have been integrated throughout this post as summaries above. Each section contains relevant links and summaries to help you explore these topics in more depth.
+
+The themes of self-motivation, creating structure, and maintaining purpose that we've explored here overlap significantly with other life transitions. For a related perspective on building routines and finding motivation without external structure, check out my post on [staying motivated as a solo creator](https://gist.github.com/idvorkin/0a7719e84f424c51d2ef9275a5b5c3ca#file-b_think-md).
