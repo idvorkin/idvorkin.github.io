@@ -3681,12 +3681,13 @@
         },
         "/retire": {
             "url": "/retire",
-            "title": "Retirement - Beyond the Financial Numbers",
-            "description": "Retirement is often viewed through the lens of financial planning, but it’s so much more than that. It’s a profound life transition that impacts our identity, purpose, relationships, and daily structure. Let’s explore retirement holistically - from the emotional and psychological aspects to the practical considerations that go beyond just money.\n\n",
+            "title": "Retirement: Stop Planning the Exit, Start Planning the Life",
+            "description": "When we ponder retirement - we’re masters at planning our exit, but surprisingly vague about what happens after. We’re so focused on what we’re retiring from rather than what we’re retiring to. The real goal isn’t the escape itself - it’s creating a life of genuine freedom, growth, and meaning on the other side. And here’s the plot twist - much of this post isn’t about retirement at all. It’s about what to do while you’re still working.\n\n",
             "file_path": "_site/retire.html",
             "outgoing_links": [
                 "/40yo",
                 "/42",
+                "/amp",
                 "/balance",
                 "/chapters",
                 "/emotional-health",
@@ -3700,7 +3701,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/retire.md",
-            "doc_size": 16000
+            "doc_size": 18000
         },
         "/roblox-dev": {
             "url": "/roblox-dev",
