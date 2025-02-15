@@ -30,9 +30,6 @@ jekyll-serve:
         bundle exec jekyll server --incremental --livereload --host 127.0.0.1
     fi
 
-jekyll-mac-serve:
-    ~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host 127.0.0.1
-
 jekyll-container:
     bundle exec jekyll server --incremental --livereload --host 0.0.0.0
 
