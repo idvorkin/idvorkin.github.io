@@ -16,17 +16,15 @@ The concept emerged from the realization that traditional writing processes are 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [What is CHOW?](#what-is-chow)
 - [The Foundations of CHOW](#the-foundations-of-chow)
   - [The Art of Writing](#the-art-of-writing)
   - [The Enabling Environment](#the-enabling-environment)
   - [Learning from CHOP](#learning-from-chop)
   - [The Evolution of AI Writing](#the-evolution-of-ai-writing)
-- [Core Concepts](#core-concepts)
-  - [Natural Language Collaboration](#natural-language-collaboration)
-  - [Content Understanding](#content-understanding)
-  - [Convention-Driven Writing](#convention-driven-writing)
-- [Key Tools](#key-tools)
+- [What is CHOW?](#what-is-chow)
+  - [The Evolution of AI Writing](#the-evolution-of-ai-writing-1)
+  - [Core Concepts](#core-concepts)
+  - [Key Tools](#key-tools)
 - [CHOW and the Four Writing Personas](#chow-and-the-four-writing-personas)
   - [The Madman and AI: Unleashing Creative Chaos](#the-madman-and-ai-unleashing-creative-chaos)
   - [The Architect and AI: Structuring Your Thoughts](#the-architect-and-ai-structuring-your-thoughts)
@@ -34,8 +32,8 @@ The concept emerged from the realization that traditional writing processes are 
   - [The Judge and AI: Polishing Your Work](#the-judge-and-ai-polishing-your-work)
   - [Key Principles for AI-Enhanced Writing](#key-principles-for-ai-enhanced-writing)
 - [Real-World Use Cases](#real-world-use-cases)
-  - [Updating Book References](#updating-book-references)
-  - [More Use Cases Coming Soon...](#more-use-cases-coming-soon)
+  - [Updating Book References On My Blog](#updating-book-references-on-my-blog)
+  - [Adding Security Considerations to Technical Documentation](#adding-security-considerations-to-technical-documentation)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -147,6 +145,7 @@ The Madman phase is all about uninhibited brainstorming and idea generation. Her
 
   - "Show me 10 different ways to approach this topic"
   - "What are some unconventional perspectives on this?"
+    o
   - "Help me explore the extreme edges of this idea"
 
 - **Idea Expansion**: Let AI help you go deeper into each thought
@@ -255,6 +254,26 @@ I added the link to that book [using AI](https://github.com/idvorkin/idvorkin.gi
 
 This is possible due to the [conventions](https://github.com/idvorkin/idvorkin.github.io/blob/e2322fb5e93943bf06c5cbefb6d56aa4462d69b8/CONVENTIONS.md?plain=1#L234). Note, I'll find another example where it uses search to find the right ASIN to include.
 
-### More Use Cases Coming Soon...
+### Adding Security Considerations to Technical Documentation
 
-_I'll add more examples as I use CHOW in my writing._
+A great example of CHOW in action is adding a security considerations section to the [CHOP documentation](https://github.com/idvorkin/idvorkin.github.io/commit/45241b48cde0b00af27f5e824f44c9c334d0e048).
+
+I told the AI ([full convo](https://github.com/idvorkin/idvorkin.github.io/blob/45241b48cde0b00af27f5e824f44c9c334d0e048/cursor-logs/updating-chop-post-avoiding-secret-uploads.md)): And then it made [this change](https://github.com/idvorkin/idvorkin.github.io/commit/45241b48cde0b00af27f5e824f44c9c334d0e048#diff-61c44102203643ae4e0a122c0cac217a54cc9ddaf421e06d5be6c417747ab1c9)
+
+```
+update chop post to talk about being careful to not upload secrets in your history. For example:
+
+I had to add verbose logging to my integration tests, and that showed a secret, which was in my cursor logs. Then I went to upload my cursor logs to have a historical record. Thankfully github detected it on push:
+
+See it here: @https://gist.github.com/idvorkin/ff8ac2d79a95330aa708a37809672e4e
+
+And maybe inline some relevant chunks of that.
+```
+
+A few things to notice:
+
+- It read the gist to understand the content I wanted to write about itsel
+- Placed the section logically in the document flow
+- Added appropriate table of contents entries
+- Maintained consistent voice and style
+- Maintained consistent formatting with existing content
