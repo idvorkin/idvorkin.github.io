@@ -15,9 +15,9 @@ Every day I write out my affirmations. These positive statements help me challen
 <!-- vim-markdown-toc-start -->
 
 - [Always Improving: Deliberate. Disciplined. Daily](#always-improving-deliberate-disciplined-daily)
-  - [An essentialist: Know Essential. Provide Context. Prioritize Ruthlessly.](#an-essentialist-know-essential-provide-context-prioritize-ruthlessly)
-  - [A class act: First Understand. Appreciate. Isn't that Curious](#a-class-act-first-understand-appreciate-isnt-that-curious)
-  - [Calm like water: Be Present. This too shall pass. Work the problem](#calm-like-water-be-present-this-too-shall-pass-work-the-problem)
+- [An essentialist: Know Essential. Provide Context. Prioritize Ruthlessly.](#an-essentialist-know-essential-provide-context-prioritize-ruthlessly)
+- [A class act: First Understand. Appreciate. Isn't that Curious](#a-class-act-first-understand-appreciate-isnt-that-curious)
+- [Calm like water: Be Present. This too shall pass. Work the problem](#calm-like-water-be-present-this-too-shall-pass-work-the-problem)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
