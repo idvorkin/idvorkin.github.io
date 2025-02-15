@@ -415,7 +415,7 @@ There are several advantages to pre-writing these documents:
 
 Good self assessments are concise, focus on impact, and then how you delivered the impact. More details at [I.M Wright](https://imwrightshardcode.com/2018/06/connects-with-impact/):
 
-- _[Clearly measurable impact]_ by _[work you’ve done yourself and/or with others]._
+- _[Clearly measurable impact]_ by _[work you've done yourself and/or with others]._
   - Relevant artifacts, or quote from others validating the claim.
 
 Here are some fictitious examples modelled on my own career:
@@ -572,7 +572,7 @@ Motivation has 2 dimensions, personal experience and team environment. Personal 
 
 Another lens of motivation is [satisfaction and dissatisfaction](/dsat):
 
-_Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can’t sleep well at night, and SAT is reason you set your alarm for 5am so you can get an early start tackling your favorite problems_
+_Satisfaction (SAT) is not a lack of dissatisfaction (DSAT). SAT and DSAT are orthogonal experiences. DSAT is the reason you can't sleep well at night, and SAT is reason you set your alarm for 5am so you can get an early start tackling your favorite problems_
 
 ### How to motivate through personal experience
 
@@ -976,7 +976,7 @@ This can be especially true when process is created high in the org chart to sol
 
 **The antidote** - A review of process is essential to ensure it's still getting the maximum value with minimum cost.
 
-**Toxic process** - Bad process will disenfranchise ownership and stifle passion. It'll slow down things that can be fast. There is nothing more powerful than a motivated engineer, don’t let process take that away.
+**Toxic process** - Bad process will disenfranchise ownership and stifle passion. It'll slow down things that can be fast. There is nothing more powerful than a motivated engineer, don't let process take that away.
 
 Funny article on [how good oranizations should be like slime mold](https://komoroske.com/slime-mold/)
 
@@ -1070,7 +1070,7 @@ Pro tip for surveys - use part of a meeting to complete a fast survey. This ensu
 
 Code reviews have evolved into a method to catch errors. I'm not a fan, I think instead they are a way to train and knowledge share. [This post](https://www.aviator.co/blog/how-not-to-do-code-reviews/) summarizes it well.
 
-> Code reviews should be done in a way to foster collaboration and continuous learning. This feedback and discussion are no longer mainly meant to improve the current code—it’s to grow a team that can build a healthy codebase in the long term.
+> Code reviews should be done in a way to foster collaboration and continuous learning. This feedback and discussion are no longer mainly meant to improve the current code—it's to grow a team that can build a healthy codebase in the long term.
 
 Quality still needs to be enforced but there are much better approaches:
 
@@ -1247,7 +1247,7 @@ Suppose it takes 1 quarter for backend, 1 for Android, and 3 for iOS, but the ta
 
 ### What are you looking for when you recruit
 
-Most companies have their “competencies” they test for. But I abstract it down to:
+Most companies have their "competencies" they test for. But I abstract it down to:
 
 - Smart (Can code, understands, sees critical paths)
   - Teach me something you deeply understand
@@ -1314,7 +1314,7 @@ Recruiting is ultimately product sales, where you're selling the team you suppor
 
 - Before even thinking of funnels
   - Strive to be a class act and do your best.
-  - It's a small world. [People will learn what you value, and how you work](/static/igor-feedback-linkedin.pdf)
+  - It's a small world. [People will learn what you value, and how you work](/static/idvorkin-linked-in-feedback-lastest.pdf)
   - Create [public artifacts](https://bitly.com/igor-wlb-manifesto)
 - Top of Funnel
   - Interview events
@@ -1925,7 +1925,7 @@ I guess the whole post is personal, as these are my opinions. The questions belo
 
 ### Why do you find management attractive
 
-Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years.
+Few things make me prouder then this [public feedback on LinkedIn](/static/idvorkin-linked-in-feedback-lastest.pdf) from people who worked with me over several years.
 
 On my deathbed, the product I will be most proud of is the people who I watched blossom and grow. It's cliche, but when you love your people they know it, they thrive, and do their best work. It's not just about the work, I want to make sure people think of their lives as well, because, well, that's even more important.
 

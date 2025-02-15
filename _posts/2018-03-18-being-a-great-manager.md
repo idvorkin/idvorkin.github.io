@@ -14,7 +14,7 @@ tags:
   - manager
 ---
 
-I aspire to be the best manager I can be. I'll often fall short of my goal, but through continuous practice I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best. Few things make me prouder then this [public feedback on LinkedIn](/static/igor-feedback-LinkedIn.pdf) from people who worked with me over several years. I'm also writing a [manager guidebook](/manager-book), which goes into much more depth on management.
+I aspire to be the best manager I can be. I'll often fall short of my goal, but through continuous practice I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best. Few things make me prouder then this [public feedback on LinkedIn](/static/idvorkin-linked-in-feedback-lastest.pdf) from people who worked with me over several years. I'm also writing a [manager guidebook](/manager-book), which goes into much more depth on management.
 
 {%include summarize-page.html src="/manager-book" %}
 
@@ -57,7 +57,7 @@ Acting is easy, but results are hard. Here are the results I measure.
 ### Coach, empower, build inclusive and supportive culture
 
 - Employee surveys (MS poll, Amazon connections, Amazon tech survey, Amazon Forte)
-- Employee referrals and [public feedback (from LinkedIn)](/static/igor-feedback-LinkedIn.pdf)
+- Employee referrals and [public feedback (from LinkedIn)](/static/idvorkin-linked-in-feedback-lastest.pdf)
 - Employee career velocity relative to median (you can ask me the ratio in person).
 
 ### Productive and results-oriented
