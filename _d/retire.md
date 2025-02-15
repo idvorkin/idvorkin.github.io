@@ -24,18 +24,15 @@ Let's explore retirement holistically - beyond the spreadsheets and financial ca
 
 {% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the energy to think about these topics. This post will resonate most with folks in a similar position - likely those whose kids are starting to push away and create their own lives, freeing up mental bandwidth to ponder what's next." style="info" %}
 
-{% include summarize-page.html src="/chapters" %}
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
 - [The Real Goal: AMP - Autonomy, Mastery, and Purpose](#the-real-goal-amp---autonomy-mastery-and-purpose)
-- [The Emotional Journey of Retirement](#the-emotional-journey-of-retirement)
-- [Identity Beyond Work](#identity-beyond-work)
+- [A New Chapter, A New Focus](#a-new-chapter-a-new-focus)
+- [Identity and Purpose Beyond Work](#identity-and-purpose-beyond-work)
 - [Financial Independence vs Retirement](#financial-independence-vs-retirement)
 - [Saving More Than Money: Your Health Account](#saving-more-than-money-your-health-account)
 - [Common Retirement Myths](#common-retirement-myths)
-- [Finding Purpose in Retirement](#finding-purpose-in-retirement)
 - [Resources and Further Reading](#resources-and-further-reading)
 
 <!-- vim-markdown-toc-end -->
@@ -49,25 +46,33 @@ When we talk about retirement, we're often focused on what we're retiring _from_
 - **Mastery**: The opportunity to continue growing and developing skills that matter to you. Retirement shouldn't mean stopping learning - it's about choosing what you want to master.
 - **Purpose**: A reason to get up in the morning that aligns with your values. Work often provides this by default - in retirement, you get to choose and craft your own purpose.
 
-{% include summarize-page.html src="/amp" %}
+Work naturally provides us with identity and purpose - through our roles, our impact, and our daily interactions. While we'll need to consciously rebuild these elements in retirement, that's not a bad thing. In fact, being intentional about where we get our AMP while still working can make the transition much smoother.
+
+I've seen the power of AMP both in my own career and in leading others. In my current role, I'd happily do about 70% of my job even if I didn't need the money - that portion aligns perfectly with my values, challenges me in the right ways, and gives me the autonomy I crave. The other 30%? That's why they call it work - and why they pay me. You can see how these principles play out in leadership in my [manager book](/manager-book#personal-motivations), and their impact in the [kind words shared by my teams on LinkedIn](/static/igor-feedback-LinkedIn.pdf). The catch is, you can't really find a job that's just the good parts. The key is maximizing the ratio of energizing work to draining work, both in your career and in retirement.
+
+{% include summarize-page.html src="/dsat" %}
 
 Financial independence is just a tool that enables AMP - it's not the end goal. The money provides the foundation, but AMP provides the fulfillment. As you plan for retirement, consider how each decision supports or detracts from these three core elements.
 
-## The Emotional Journey of Retirement
+## A New Chapter, A New Focus
 
 The decision to retire triggers a complex emotional journey. It's not just about leaving a job; it's about transitioning to a new phase of life that can bring up feelings of excitement, anxiety, loss, and liberation all at once.
+
+{% include summarize-page.html src="/chapters" %}
 
 {% include summarize-page.html src="/42" %}
 
 One often overlooked aspect is maintaining strong social connections. Studies show that doubling your number of real-life friends has the same effect on well-being as a 50% increase in income.
 
-## Identity Beyond Work
+## Identity and Purpose Beyond Work
 
 For many of us, especially in tech, our work forms a significant part of our identity. Who are we when we're no longer defined by our profession? This section explores building a multi-faceted identity that transcends our career.
 
 {% include summarize-page.html src="/40yo" %}
 
-As we transition from our professional identity, it's important to focus on what we're moving toward, not just what we're leaving behind.
+As we transition from our professional identity, it's important to focus on what we're moving toward, not just what we're leaving behind. The key is finding new sources of meaning and purpose that align with our values and aspirations.
+
+{% include summarize-page.html src="/eulogy" %}
 
 ## Financial Independence vs Retirement
 
@@ -125,12 +130,6 @@ Common myths include:
 - You won't experience a decline in social interaction
 - You automatically have enough meaning and structure
 - Retirement means stopping completely
-
-## Finding Purpose in Retirement
-
-Exploring ways to maintain meaning and purpose in life after leaving the traditional workforce.
-
-{% include summarize-page.html src="/eulogy" %}
 
 ## Resources and Further Reading
 
