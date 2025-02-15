@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Retirement - Beyond the Financial Numbers"
-ogtitle: "Retirement - Beyond the Financial Numbers"
+title: "Retirement: Stop Planning the Exit, Start Planning the Life"
+ogtitle: "Retirement: Stop Planning the Exit, Start Planning the Life"
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
@@ -16,7 +16,11 @@ tags:
   - life-planning
 ---
 
-Retirement is often viewed through the lens of financial planning, but it's so much more than that. It's a profound life transition that impacts our identity, purpose, relationships, and daily structure. Let's explore retirement holistically - from the emotional and psychological aspects to the practical considerations that go beyond just money.
+When we ponder retirement - we're masters at planning our exit, but surprisingly vague about what happens after. We're so focused on what we're retiring _from_ rather than what we're retiring _to_. The real goal isn't the escape itself - it's creating a life of genuine freedom, growth, and meaning on the other side. And here's the plot twist - the best time to practice retirement is before you retire.
+
+Sure, we all have those fantasies during rough meetings: "Finally, I'll write that novel!" "I'll learn to play jazz piano!" "I'll travel the world!" But how many retired folks do you know who are actually doing these things?
+
+Let's explore retirement holistically - beyond the spreadsheets and financial calculators - to understand what really makes for a fulfilling next chapter.
 
 {% include alert.html content="This post is part of a series on life transitions and aging. You might also be interested in my thoughts on life's chapters and transitions." style="info" %}
 
@@ -25,6 +29,7 @@ Retirement is often viewed through the lens of financial planning, but it's so m
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+* [The Real Goal: AMP - Autonomy, Mastery, and Purpose](#the-real-goal-amp---autonomy-mastery-and-purpose)
 * [The Emotional Journey of Retirement](#the-emotional-journey-of-retirement)
 * [Identity Beyond Work](#identity-beyond-work)
 * [Financial Independence vs Retirement](#financial-independence-vs-retirement)
@@ -35,6 +40,18 @@ Retirement is often viewed through the lens of financial planning, but it's so m
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## The Real Goal: AMP - Autonomy, Mastery, and Purpose
+
+When we talk about retirement, we're often focused on what we're retiring _from_ rather than what we're retiring _to_. The real goal isn't retirement itself - it's achieving AMP: Autonomy, Mastery, and Purpose.
+
+- **Autonomy**: The freedom to choose how you spend your time and energy. This goes beyond financial independence - it's about having control over your life's direction.
+- **Mastery**: The opportunity to continue growing and developing skills that matter to you. Retirement shouldn't mean stopping learning - it's about choosing what you want to master.
+- **Purpose**: A reason to get up in the morning that aligns with your values. Work often provides this by default - in retirement, you get to choose and craft your own purpose.
+
+{% include summarize-page.html src="/amp" %}
+
+Financial independence is just a tool that enables AMP - it's not the end goal. The money provides the foundation, but AMP provides the fulfillment. As you plan for retirement, consider how each decision supports or detracts from these three core elements.
 
 ## The Emotional Journey of Retirement
 
