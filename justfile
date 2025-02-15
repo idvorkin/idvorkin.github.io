@@ -25,10 +25,13 @@ cy-open:
 jekyll-serve:
     #!/usr/bin/env sh
     if [ "$(uname)" = "Darwin" ]; then
-        just jekyll-mac-serve
+        just internal-jekyll-mac-serve
     else
         bundle exec jekyll server --incremental --livereload --host 127.0.0.1
     fi
+
+internal-jekyll-mac-serve:
+    ~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host 127.0.0.1
 
 jekyll-container:
     bundle exec jekyll server --incremental --livereload --host 0.0.0.0
