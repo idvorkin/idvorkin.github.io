@@ -16,13 +16,13 @@ tags:
   - life-planning
 ---
 
-When we ponder retirement - we're masters at planning our exit, but surprisingly vague about what happens after. We're so focused on what we're retiring _from_ rather than what we're retiring _to_. The real goal isn't the escape itself - it's creating a life of genuine freedom, growth, and meaning on the other side. And here's the plot twist - the best time to practice retirement is before you retire.
+When we ponder retirement - we're masters at planning our exit, but surprisingly vague about what happens after. We're so focused on what we're retiring _from_ rather than what we're retiring _to_. The real goal isn't the escape itself - it's creating a life of genuine freedom, growth, and meaning on the other side. And here's the plot twist - much of this post isn't about retirement at all. It's about what to do while you're still working.
 
 Sure, we all have those fantasies during rough meetings: "Finally, I'll write that novel!" "I'll learn to play jazz piano!" "I'll travel the world!" But how many retired folks do you know who are actually doing these things?
 
 Let's explore retirement holistically - beyond the spreadsheets and financial calculators - to understand what really makes for a fulfilling next chapter.
 
-{% include alert.html content="This post is part of a series on life transitions and aging. You might also be interested in my thoughts on life's chapters and transitions." style="info" %}
+{% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the energy to think about these topics. This post will resonate most with folks in a similar position - likely those whose kids are starting to push away and create their own lives, freeing up mental bandwidth to ponder what's next." style="info" %}
 
 {% include summarize-page.html src="/chapters" %}
 
