@@ -144,4 +144,4 @@ Exploring ways to maintain meaning and purpose in life after leaving the traditi
 
 The resources and related content have been integrated throughout this post as summaries above. Each section contains relevant links and summaries to help you explore these topics in more depth.
 
-The themes of self-motivation, creating structure, and maintaining purpose that we've explored here overlap significantly with other life transitions. For a related perspective on building routines and finding motivation without external structure, check out my post on [staying motivated as a solo creator](https://gist.github.com/idvorkin/0a7719e84f424c51d2ef9275a5b5c3ca#file-b_think-md).
+The themes of self-motivation, creating structure, and maintaining purpose that we've explored here overlap significantly with other life transitions. For a related perspective on building routines and finding motivation without external structure, check out Herman's post on [staying motivated as a solo creator](https://gist.github.com/idvorkin/0a7719e84f424c51d2ef9275a5b5c3ca#file-b_think-md).
