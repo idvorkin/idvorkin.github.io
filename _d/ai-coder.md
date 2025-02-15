@@ -129,11 +129,17 @@ Other key features:
    - Only enable for safe commands like tests
 
 2. **Composer-Agent Mode**
+
    - Switch to "Composer-Agent" in chat settings
    - More structured, task-focused interactions
    - Better for complex, multi-step tasks
    - Maintains context across conversation
    - Great for refactoring and architecture discussions
+
+3. **Enable Large Context**
+   - Dramatically improves AI's ability to understand your entire codebase at once
+   - Go to Settings -> Features
+   - Enable "Large Context" option
 
 ##### Export Cursor Chats
 
