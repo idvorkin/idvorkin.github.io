@@ -34,6 +34,9 @@ The concept emerged from the realization that traditional writing processes are 
 - [Real-World Use Cases](#real-world-use-cases)
   - [Updating Book References On My Blog](#updating-book-references-on-my-blog)
   - [Adding Security Considerations to Technical Documentation](#adding-security-considerations-to-technical-documentation)
+- [Deep ideas](#deep-ideas)
+  - [Generating the content for the reader](#generating-the-content-for-the-reader)
+  - [New monetization strategies](#new-monetization-strategies)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -277,3 +280,22 @@ A few things to notice:
 - Added appropriate table of contents entries
 - Maintained consistent voice and style
 - Maintained consistent formatting with existing content
+
+## Deep ideas
+
+### Generating the content for the reader
+
+The author now provides the raw content, and it can create content on demand optimized for the reader, which can include pivots like:
+
+- Should it be interactive
+- What age level to write for
+- What interests does the read have.
+- What format (text, tweet, video, audio)
+
+Aerial talks about this nicely [here](https://gist.github.com/idvorkin/3cb3d50a175d3b2879ad537678704619#file-think-md)
+
+For computer folks this is like [write path vs read path in data systems](/td/data-systems#write-path-vs-read-path)
+
+### New monetization strategies
+
+Instead of selling static assets (book, video) - you provide the content and it is generated for the reader.
