@@ -38,6 +38,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
 - [Best Practices for AI-Assisted Development](#best-practices-for-ai-assisted-development)
   - [The Art of Prompt Engineering](#the-art-of-prompt-engineering)
   - [Integration Tips](#integration-tips)
+  - [Security Considerations](#security-considerations)
   - [DRY CHOP: Your AI's Cookbook](#dry-chop-your-ais-cookbook)
 
 <!-- vim-markdown-toc-end -->
@@ -341,6 +342,31 @@ Challenges in Measurement and Adoption
    - Document AI-assisted changes
    - Keep track of prompt patterns that work well
    - Share successful AI interactions with your team
+
+### Security Considerations
+
+1. **Watch Out for Secrets in Chat Logs**
+
+   - Be cautious when adding verbose logging or debugging output
+   - Chat logs can inadvertently capture secrets, tokens, or sensitive data
+   - Example: Adding detailed logging to integration tests might expose API keys or credentials
+   - While [GitHub's secret scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning) may catch some secrets, don't rely on it as your only defense
+   - Prevention is better than detection - use environment variables and secret management from the start
+
+2. **Best Practices for Chat History**
+   - Review chat logs before sharing or storing them
+   - Redact any sensitive information before uploading
+   - Consider using environment variables or secret management tools for sensitive data
+   - When debugging with AI, use mock data instead of real credentials
+
+Here's a real-world example of what can go wrong - [see the full error message here](https://gist.github.com/idvorkin/ff8ac2d79a95330aa708a37809672e4e):
+
+```text
+$ git push
+remote: error: GH013: Repository rule violations found for refs/heads/main.
+remote: Push cannot contain secrets
+remote: Resolve the following violations before pushing again
+```
 
 ### DRY CHOP: Your AI's Cookbook
 
