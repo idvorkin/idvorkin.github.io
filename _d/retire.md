@@ -62,13 +62,9 @@ The decision to retire triggers a complex emotional journey. It's not just about
 
 {% include summarize-page.html src="/42" %}
 
-One often overlooked aspect is maintaining strong social connections. Studies show that doubling your number of real-life friends has the same effect on well-being as a 50% increase in income.
-
 ## Identity and Purpose Beyond Work
 
 For many of us, especially in tech, our work forms a significant part of our identity. Who are we when we're no longer defined by our profession? This section explores building a multi-faceted identity that transcends our career.
-
-{% include summarize-page.html src="/40yo" %}
 
 As we transition from our professional identity, it's important to focus on what we're moving toward, not just what we're leaving behind. The key is finding new sources of meaning and purpose that align with our values and aspirations.
 
@@ -86,14 +82,6 @@ The FIRE (Financial Independence, Retire Early) community has evolved to recogni
 - Fat FIRE: Higher savings enabling a more luxurious retirement lifestyle
 - Obese FIRE: Substantial wealth allowing for significant discretionary spending
 
-Some key financial considerations:
-
-- Understanding your taxes and how they change in retirement
-- Building multiple income streams
-- Healthcare planning and Medicare considerations
-- Work-life balance considerations leading up to retirement
-- Finding balance between production and personal time
-
 {% include summarize-page.html src="/sustainable-work" %}
 
 {% include summarize-page.html src="/money" %}
@@ -109,13 +97,6 @@ Think of your physical health like compound interest - small, consistent investm
 {% include summarize-page.html src="/physical-health" %}
 
 {% include summarize-page.html src="/diet" %}
-
-The parallel goes deeper. Just as financial advisors recommend diversifying your portfolio, you need to diversify your health investments:
-
-- Cardiovascular health - your "emergency fund" for daily activities
-- Strength training - your "long-term investments" in bone density and muscle mass
-- Flexibility and mobility - your "insurance policy" against falls and injury
-- Sleep and recovery - your "dividend payments" that keep everything else running
 
 Remember: You can always earn more money, but you can't earn more health. Make those deposits while you can.
 
