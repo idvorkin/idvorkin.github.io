@@ -14,44 +14,6 @@ tags:
   - job-hunt
 ---
 
-<!--
-Who is the audience?
-    - People I'm looking to recruit to my team.
-    - People on my team who can hold me accountable to my aspirations
-    - Igor
-    - My future employers who want to build this culture
-    - My current boss who is trying to figure out what is going on.
-    - PART 2: My future employers that want to know why I'm doing this, and my strategies.
-
-What are the 3 thing they should remember
-    - Work life balance is crucial
-    - Work life balance takes work.
-    - Igor will prioritize and model good work life balance
-
-How do I prove it?
-    - Everyone says they do it - but how to prove?
-    - Give examples of people doing it.
-    - Show mechanisms of how.
-
-
-Why does Igor need a reminder?
-    - Work centered
-    - If don't put in mechanisms, will just work like a dog.
-    - If working in an unsustainable manner will burn out
-    - Need to set and remember my boundaries
-
-XXX: What is the call to action?
--->
-<!--
-
-Sean's alternate intro:
-
-Work life balance is a spectrum from working all of your waking hours to working the minimum you can get away with. You'll be happiest when you find a team who lands on the spectrum where you want to.  I love my job, but want to limit my work to 45 hours/week.  I don't want regrets like "X", "Y", "Z"
-
--->
-
-<!-- Why? On your death bed -->
-
 I don't want to die knowing I spent too much time at work and I bet you don't either. As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders needs to walk the talk, and I'll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance.
 
 _This is a re-post of my talk on [LinkedIn](http://bit.ly/igor-wlb-manifesto)_
@@ -143,3 +105,41 @@ I'm hiring, so if you're a principal developer, senior developer or SDE-II reach
 **Did you always do this?** No, when I was young and single, I wanted to build my tech muscles as fast as I could and often worked 50-60 hours a week. When I was employee number 50 in Azure, the entire team worked 60+ hours a week, and it was one of the most fun times of my career.
 
 _Thanks to the following peeps for all their input: Sarah (Rybarczyk) Nahmias, Sean Selitrennikoff, Kevin Frei, Ganeshan Jayaraman, David Driver and Vasu Devulapalli_
+
+<!--
+Who is the audience?
+    - People I'm looking to recruit to my team.
+    - People on my team who can hold me accountable to my aspirations
+    - Igor
+    - My future employers who want to build this culture
+    - My current boss who is trying to figure out what is going on.
+    - PART 2: My future employers that want to know why I'm doing this, and my strategies.
+
+What are the 3 thing they should remember
+    - Work life balance is crucial
+    - Work life balance takes work.
+    - Igor will prioritize and model good work life balance
+
+How do I prove it?
+    - Everyone says they do it - but how to prove?
+    - Give examples of people doing it.
+    - Show mechanisms of how.
+
+
+Why does Igor need a reminder?
+    - Work centered
+    - If don't put in mechanisms, will just work like a dog.
+    - If working in an unsustainable manner will burn out
+    - Need to set and remember my boundaries
+
+XXX: What is the call to action?
+-->
+<!--
+
+Sean's alternate intro:
+
+Work life balance is a spectrum from working all of your waking hours to working the minimum you can get away with. You'll be happiest when you find a team who lands on the spectrum where you want to.  I love my job, but want to limit my work to 45 hours/week.  I don't want regrets like "X", "Y", "Z"
+
+-->
+
+<!-- Why? On your death bed -->
