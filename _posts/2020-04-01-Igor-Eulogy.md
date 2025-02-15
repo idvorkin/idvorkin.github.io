@@ -23,16 +23,16 @@ _Add comments [here](https://hackmd.io/s90ojEpMTC-t51EFYnUuMw)_
 <!-- vim-markdown-toc-start -->
 
 - [Dealer of smiles and wonder](#dealer-of-smiles-and-wonder)
-  - [Mostly car free spirit](#mostly-car-free-spirit)
-  - [Disciple of the 7 habits of highly effective people](#disciple-of-the-7-habits-of-highly-effective-people)
-  - [Fit fellow](#fit-fellow)
-  - [Emotionally healthy human](#emotionally-healthy-human)
-  - [Husband to Tori - his life long partner](#husband-to-tori---his-life-long-partner)
-  - [Technologist](#technologist)
-  - [Professional](#professional)
-  - [Family man](#family-man)
-  - [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
-  - [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
+- [Mostly car free spirit](#mostly-car-free-spirit)
+- [Disciple of the 7 habits of highly effective people](#disciple-of-the-7-habits-of-highly-effective-people)
+- [Fit fellow](#fit-fellow)
+- [Emotionally healthy human](#emotionally-healthy-human)
+- [Husband to Tori - his life long partner](#husband-to-tori---his-life-long-partner)
+- [Technologist](#technologist)
+- [Professional](#professional)
+- [Family man](#family-man)
+- [Father to Amelia - an incredible girl](#father-to-amelia---an-incredible-girl)
+- [Father to Zach - a wonderful boy](#father-to-zach---a-wonderful-boy)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
