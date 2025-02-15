@@ -33,9 +33,8 @@ Let's explore retirement holistically - beyond the spreadsheets and financial ca
 - [The Emotional Journey of Retirement](#the-emotional-journey-of-retirement)
 - [Identity Beyond Work](#identity-beyond-work)
 - [Financial Independence vs Retirement](#financial-independence-vs-retirement)
-- [Saving More Than Money](#saving-more-than-money)
+- [Saving More Than Money: Your Health Account](#saving-more-than-money-your-health-account)
 - [Common Retirement Myths](#common-retirement-myths)
-- [Preparing for the Transition](#preparing-for-the-transition)
 - [Finding Purpose in Retirement](#finding-purpose-in-retirement)
 - [Resources and Further Reading](#resources-and-further-reading)
 
@@ -74,6 +73,14 @@ As we transition from our professional identity, it's important to focus on what
 
 These terms are often used interchangeably, but they represent different concepts and life choices. Financial independence gives you options, while retirement is just one of those options.
 
+As you approach financial independence - that "fuck you money" level of savings - something interesting happens: the anxiety about job security starts melting away. That nagging fear of losing your job (which is often more imagined than real) fades, freeing you to focus on the aspects of work you genuinely enjoy. It's like getting a new job without changing companies - suddenly you're doing it because you want to, not because you have to.
+
+The FIRE (Financial Independence, Retire Early) community has evolved to recognize different paths:
+
+- FIRE: The traditional approach of aggressive saving and modest retirement
+- Fat FIRE: Higher savings enabling a more luxurious retirement lifestyle
+- Obese FIRE: Substantial wealth allowing for significant discretionary spending
+
 Some key financial considerations:
 
 - Understanding your taxes and how they change in retirement
@@ -86,9 +93,9 @@ Some key financial considerations:
 
 {% include summarize-page.html src="/money" %}
 
-## Saving More Than Money
+## Saving More Than Money: Your Health Account
 
-Just like we save money for retirement, we need to save our health. But unlike a 401(k), your health account has mandatory withdrawals that you can't control. Every day, whether you like it or not, you're spending from this account. And just like unexpected market crashes, you'll face major unexpected health withdrawals whether you're ready or not.
+There's an old saying: "A healthy person has a thousand wishes, a sick person has only one." Just like we save money for retirement, we need to save our health. But unlike a 401(k), your health account has mandatory withdrawals that you can't control. Every day, whether you like it or not, you're spending from this account. And just like unexpected market crashes, you'll face major unexpected health withdrawals whether you're ready or not.
 
 Think of your physical health like compound interest - small, consistent investments early on yield massive returns later. But also like money, you can't wait until retirement to start saving. The "health debt" you accumulate in your working years will need to be paid back, often with steep interest.
 
@@ -118,21 +125,6 @@ Common myths include:
 - You won't experience a decline in social interaction
 - You automatically have enough meaning and structure
 - Retirement means stopping completely
-
-## Preparing for the Transition
-
-Practical steps and considerations for making the transition to retirement smooth and fulfilling.
-
-{% include summarize-page.html src="/emotional-health" %}
-
-Key preparation areas:
-
-- Physical health - maintaining strength and mobility
-- Emotional health - building resilience
-- Social connections - strengthening relationships
-- Identity development - who you want to be in this new chapter
-
-{% include summarize-page.html src="/balance" %}
 
 ## Finding Purpose in Retirement
 
