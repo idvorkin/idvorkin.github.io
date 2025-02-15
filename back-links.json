@@ -180,6 +180,8 @@
         "/remotework": "/remote-work",
         "/resistance": "/d/resistance",
         "/responsible": "/be-proactive",
+        "/retirement": "/retire",
+        "/retiring": "/retire",
         "/rework": "/staysmallstaysmall",
         "/root-cause-analysis": "/coe",
         "/sat": "/dsat",
@@ -263,7 +265,8 @@
                 "/elder"
             ],
             "incoming_links": [
-                "/elder"
+                "/elder",
+                "/retire"
             ],
             "redirect_url": "",
             "markdown_path": "_d/40-yo-programmer.md",
@@ -278,16 +281,19 @@
                 "/diet",
                 "/last-year",
                 "/physical-health",
+                "/retire",
+                "/sustainable-work",
                 "/terzepatide"
             ],
             "incoming_links": [
                 "/chapters",
+                "/retire",
                 "/y24",
                 "/y25"
             ],
             "redirect_url": "",
             "markdown_path": "_d/42.md",
-            "doc_size": 16000
+            "doc_size": 17000
         },
         "/7-habits": {
             "url": "/7-habits",
@@ -364,7 +370,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/90days.md",
-            "doc_size": 45000
+            "doc_size": 46000
         },
         "/about": {
             "url": "/about",
@@ -483,7 +489,7 @@
         "/ai": {
             "url": "/ai",
             "title": "All posts on AI",
-            "description": "A landing page for all my ai pages - a nice jumping off point (especially from the graph)\n\n",
+            "description": "AI becomes the\nThe transition from A landing page for all my ai pages - a nice jumping off point (especially from the graph).\n\n",
             "file_path": "_site/ai.html",
             "outgoing_links": [
                 "/ai-art",
@@ -505,7 +511,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai.md",
-            "doc_size": 15000
+            "doc_size": 23000
         },
         "/ai-art": {
             "url": "/ai-art",
@@ -804,7 +810,8 @@
                 "/7-habits",
                 "/7h-concepts",
                 "/d/time-off-2021-12",
-                "/productive"
+                "/productive",
+                "/retire"
             ],
             "redirect_url": "",
             "markdown_path": "_d/balance2.md",
@@ -1076,6 +1083,7 @@
                 "/enemy"
             ],
             "incoming_links": [
+                "/retire",
                 "/y25"
             ],
             "redirect_url": "",
@@ -1085,7 +1093,7 @@
         "/chasing-daylight": {
             "url": "/chasing-daylight",
             "title": "Chasing Daylight: Imagine you're gonna die in less then 100 days",
-            "description": "Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did. Book is Chasing Daylight. Hi stop advice, what ever you plan to do before you die, move it up.\n\n",
+            "description": "Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did.\n\n",
             "file_path": "_site/chasing-daylight.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -1104,26 +1112,32 @@
             "incoming_links": [
                 "/40yo",
                 "/ai",
+                "/chow",
                 "/tech-rituals",
                 "/y24",
                 "/y25"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 35000
+            "doc_size": 37000
         },
         "/chow": {
             "url": "/chow",
             "title": "The CHOW Kitchen: Where AI Meets Writing",
             "description": "Welcome to The CHOW Kitchen! CHOW - or Chat-Oriented Writing - is transforming how we create content. Think of those bustling restaurant kitchens: AI started as the prep cook, chopping vegetables and measuring ingredients. Then it became a line cook, helping with recipes and plating. Now? It’s becoming a sous chef, capable of crafting entire dishes from your creative vision. Our AIs are getting more sophisticated daily, and we’ll explore how to make the most of this culinary revolution in writing.\n\n",
             "file_path": "_site/chow.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/chop",
+                "/enable",
+                "/td/data-systems",
+                "/writing"
+            ],
             "incoming_links": [
                 "/ai"
             ],
             "redirect_url": "",
             "markdown_path": "_d/chow.md",
-            "doc_size": 15000
+            "doc_size": 27000
         },
         "/class-act": {
             "url": "/class-act",
@@ -1968,6 +1982,7 @@
                 "/mind-at-work",
                 "/operating-manual",
                 "/process-journal",
+                "/retire",
                 "/sharpen-the-saw",
                 "/siy",
                 "/sublime"
@@ -2009,6 +2024,7 @@
                 "/writing"
             ],
             "incoming_links": [
+                "/chow",
                 "/writing"
             ],
             "redirect_url": "",
@@ -2150,12 +2166,13 @@
                 "/irl",
                 "/joy",
                 "/operating-manual",
+                "/retire",
                 "/timeoff",
                 "/todo_enjoy"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
-            "doc_size": 34000
+            "doc_size": 33000
         },
         "/facebook": {
             "url": "/facebook",
@@ -2784,6 +2801,7 @@
             "incoming_links": [
                 "/42",
                 "/death",
+                "/retire",
                 "/y24",
                 "/y25"
             ],
@@ -2818,7 +2836,7 @@
         "/like-switch": {
             "url": "/like-switch",
             "title": "How to build rapport and set people at ease",
-            "description": "The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form\n\n",
+            "description": "The like switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form.\n\n",
             "file_path": "_site/like-switch.html",
             "outgoing_links": [],
             "incoming_links": [
@@ -2910,7 +2928,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 150000
+            "doc_size": 153000
         },
         "/manager-book-appendix": {
             "url": "/manager-book-appendix",
@@ -3145,7 +3163,8 @@
             "incoming_links": [
                 "/d/time-off-2020-03",
                 "/operating-manual",
-                "/parkinson"
+                "/parkinson",
+                "/retire"
             ],
             "redirect_url": "",
             "markdown_path": "_d/taxes.md",
@@ -3219,7 +3238,9 @@
             "description": "Long ago a fork from vim emerged. Neovim! I avoided it for a long time, but when Bram (the inventor of vim) died, I decided it was time to switch. Now that I’ve sucked up the 20-40 hours in the conversion, I’m thrilled I did. Turns out all the “kids” have been using and developing on neovim. This results in 1, good tools, and nice best practices.\n\n",
             "file_path": "_site/neovim.html",
             "outgoing_links": [],
-            "incoming_links": [],
+            "incoming_links": [
+                "/vim"
+            ],
             "redirect_url": "",
             "markdown_path": "_td/nvim.md",
             "doc_size": 14000
@@ -3658,6 +3679,29 @@
             "markdown_path": "_d/remotework.md",
             "doc_size": 21000
         },
+        "/retire": {
+            "url": "/retire",
+            "title": "Retirement - Beyond the Financial Numbers",
+            "description": "Retirement is often viewed through the lens of financial planning, but it’s so much more than that. It’s a profound life transition that impacts our identity, purpose, relationships, and daily structure. Let’s explore retirement holistically - from the emotional and psychological aspects to the practical considerations that go beyond just money.\n\n",
+            "file_path": "_site/retire.html",
+            "outgoing_links": [
+                "/40yo",
+                "/42",
+                "/balance",
+                "/chapters",
+                "/emotional-health",
+                "/eulogy",
+                "/last-year",
+                "/money",
+                "/sustainable-work"
+            ],
+            "incoming_links": [
+                "/42"
+            ],
+            "redirect_url": "",
+            "markdown_path": "_d/retire.md",
+            "doc_size": 16000
+        },
         "/roblox-dev": {
             "url": "/roblox-dev",
             "title": "Developing on roblox",
@@ -3993,15 +4037,17 @@
         "/sustainable-work": {
             "url": "/sustainable-work",
             "title": "I don't want to die knowing I spent too much time at work, and I bet you don't either",
-            "description": "<!–\nWho is the audience?\n    - People I’m looking to recruit to my team.\n    - People on my team who can hold me accountable to my aspirations\n    - Igor\n    - My future employers who want to build this culture\n    - My current boss who is trying to figure out what is going on.\n    - PART 2: My future employers that want to know why I’m doing this, and my strategies.\n\n",
+            "description": "I don’t want to die knowing I spent too much time at work and I bet you don’t either. As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders needs to walk the talk, and I’ll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance.\n\n",
             "file_path": "_site/sustainable-work.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/42",
                 "/balance",
                 "/being-a-great-manager",
                 "/depression",
                 "/dsat",
-                "/regrets"
+                "/regrets",
+                "/retire"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2020-01-04-sustainable-work.md",
@@ -4160,6 +4206,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/amazon",
+                "/chow",
                 "/system-design"
             ],
             "redirect_url": "",
@@ -4676,15 +4723,17 @@
         "/vim": {
             "url": "/vim",
             "title": "Igors Vim Tips",
-            "description": "I use nvim lots, but constantly forget what I want to practice. Here’s a list to remind me.\n\n",
+            "description": "I used Vim for years, but have now transitioned to Neovim. While most of these tips work in both editors, some are Neovim-specific. Here’s my collection of tips I want to practice and remember.\n\n",
             "file_path": "_site/vim.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/neovim"
+            ],
             "incoming_links": [
                 "/enable"
             ],
             "redirect_url": "",
             "markdown_path": "_d/vim_tips.md",
-            "doc_size": 10000
+            "doc_size": 11000
         },
         "/vim-for-writing": {
             "url": "/vim-for-writing",
@@ -4840,6 +4889,7 @@
                 "/90days",
                 "/affirmations",
                 "/amazon",
+                "/chow",
                 "/enable",
                 "/manager-book",
                 "/manager-book-appendix",
@@ -4847,7 +4897,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/writing.md",
-            "doc_size": 35000
+            "doc_size": 36000
         },
         "/y24": {
             "url": "/y24",
