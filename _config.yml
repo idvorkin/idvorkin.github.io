@@ -70,6 +70,7 @@ exclude:
   [
     "scripts/*",
     ".parcel-cache",
+    ".specstory",
     "lib",
     "config.rb",
     "Gemfile",
