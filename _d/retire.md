@@ -33,6 +33,7 @@ Let's explore retirement holistically - beyond the spreadsheets and financial ca
 - [Financial Independence vs Retirement](#financial-independence-vs-retirement)
 - [Saving More Than Money: Your Health Account](#saving-more-than-money-your-health-account)
 - [Common Retirement Myths](#common-retirement-myths)
+- [Hobbies: Your Bridge to a Fulfilling Retirement](#hobbies-your-bridge-to-a-fulfilling-retirement)
 - [Resources and Further Reading](#resources-and-further-reading)
 
 <!-- vim-markdown-toc-end -->
@@ -111,6 +112,12 @@ Common myths include:
 - You won't experience a decline in social interaction
 - You automatically have enough meaning and structure
 - Retirement means stopping completely
+
+## Hobbies: Your Bridge to a Fulfilling Retirement
+
+Retirement isn't about quitting work—it's a chance to transform your daily life. Don't wait until retirement to start your hobbies. Begin now to discover what sparks joy, fuels creativity, and builds meaningful connections. Whether it's art, sports, or learning new skills, integrating hobbies now lays the foundation for autonomy, mastery, and purpose in your future.
+
+{% include summarize-page.html src="/hobby" %}
 
 ## Resources and Further Reading
 
