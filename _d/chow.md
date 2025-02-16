@@ -31,9 +31,6 @@ The concept emerged from the realization that traditional writing processes are 
   - [The Carpenter and AI: Crafting Your Words](#the-carpenter-and-ai-crafting-your-words)
   - [The Judge and AI: Polishing Your Work](#the-judge-and-ai-polishing-your-work)
   - [Key Principles for AI-Enhanced Writing](#key-principles-for-ai-enhanced-writing)
-- [Real-World Use Cases](#real-world-use-cases)
-  - [Updating Book References On My Blog](#updating-book-references-on-my-blog)
-  - [Adding Security Considerations to Technical Documentation](#adding-security-considerations-to-technical-documentation)
 - [Deep ideas](#deep-ideas)
   - [Generating the content for the reader](#generating-the-content-for-the-reader)
   - [New monetization strategies](#new-monetization-strategies)
@@ -181,6 +178,7 @@ The Architect phase is about organizing your chaos into coherent structure. AI c
   - Identify gaps in your structure
   - **Examples**:
     - Restructured my retirement guide's TOC using AI to improve flow and consistency - see the [conversation](https://github.com/idvorkin/idvorkin.github.io/blob/c58c85a628220e585f3211ca2d16baaa110b7851/chop-logs/enhancing-toc-consistency-for-retirement-guide.md) and [changes](https://github.com/idvorkin/idvorkin.github.io/commit/c58c85a628220e585f3211ca2d16baaa110b7851#diff-6cee02582eaf62a323c5d25f3fb08b32b208d286ca3b62efc2d41356700a1e14)
+    - Organized book references using consistent conventions - see the [changes](https://github.com/idvorkin/idvorkin.github.io/commit/e2322fb5e93943bf06c5cbefb6d56aa4462d69b8) and [conversation](https://gist.github.com/idvorkin/0f8ae3ab7c6fb762820c08ced4b2cefa)
 
 - **Audience Analysis**: Use AI to consider:
   - How different readers might approach your content
@@ -196,6 +194,8 @@ In the Carpenter phase, you're building your first draft. AI can be your assista
   - Generate initial sections based on your outline
   - Suggest transitions between ideas
   - Offer alternative phrasings
+  - **Examples**:
+    - Added a security considerations section to CHOP documentation - see the [changes](https://github.com/idvorkin/idvorkin.github.io/commit/45241b48cde0b00af27f5e824f44c9c334d0e048#diff-61c44102203643ae4e0a122c0cac217a54cc9ddaf421e06d5be6c417747ab1c9) and [conversation](https://github.com/idvorkin/idvorkin.github.io/blob/45241b48cde0b00af27f5e824f44c9c334d0e048/cursor-logs/updating-chop-post-avoiding-secret-uploads.md)
 
 - **Style Consistency**:
 
@@ -247,41 +247,6 @@ The Judge phase is about critical review and refinement. AI can help by:
    - Use AI feedback to improve each phase
    - Don't get stuck in endless refinement
    - Know when to move forward
-
-## Real-World Use Cases
-
-Here are some examples of how I use CHOW in my daily writing:
-
-### Updating Book References On My Blog
-
-My blog has many posts that link to Amazon posts: For example [Designing Data Systems](/td/data-systems).
-I added the link to that book [using AI](https://github.com/idvorkin/idvorkin.github.io/commit/e2322fb5e93943bf06c5cbefb6d56aa4462d69b8). You can see the chat transcript [here](https://gist.github.com/idvorkin/0f8ae3ab7c6fb762820c08ced4b2cefa)
-
-This is possible due to the [conventions](https://github.com/idvorkin/idvorkin.github.io/blob/e2322fb5e93943bf06c5cbefb6d56aa4462d69b8/CONVENTIONS.md?plain=1#L234). Note, I'll find another example where it uses search to find the right ASIN to include.
-
-### Adding Security Considerations to Technical Documentation
-
-A great example of CHOW in action is adding a security considerations section to the [CHOP documentation](https://github.com/idvorkin/idvorkin.github.io/commit/45241b48cde0b00af27f5e824f44c9c334d0e048).
-
-I told the AI ([full convo](https://github.com/idvorkin/idvorkin.github.io/blob/45241b48cde0b00af27f5e824f44c9c334d0e048/cursor-logs/updating-chop-post-avoiding-secret-uploads.md)): And then it made [this change](https://github.com/idvorkin/idvorkin.github.io/commit/45241b48cde0b00af27f5e824f44c9c334d0e048#diff-61c44102203643ae4e0a122c0cac217a54cc9ddaf421e06d5be6c417747ab1c9)
-
-```
-update chop post to talk about being careful to not upload secrets in your history. For example:
-
-I had to add verbose logging to my integration tests, and that showed a secret, which was in my cursor logs. Then I went to upload my cursor logs to have a historical record. Thankfully github detected it on push:
-
-See it here: @https://gist.github.com/idvorkin/ff8ac2d79a95330aa708a37809672e4e
-
-And maybe inline some relevant chunks of that.
-```
-
-A few things to notice:
-
-- It read the gist to understand the content I wanted to write about itsel
-- Placed the section logically in the document flow
-- Added appropriate table of contents entries
-- Maintained consistent voice and style
-- Maintained consistent formatting with existing content
 
 ## Deep ideas
 
