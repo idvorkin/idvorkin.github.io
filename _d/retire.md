@@ -116,4 +116,12 @@ Common myths include:
 
 The resources and related content have been integrated throughout this post as summaries above. Each section contains relevant links and summaries to help you explore these topics in more depth.
 
+### The Four Enemies on Your Journey
+
+Just as every hero faces obstacles on their quest, the journey to a fulfilling retirement has its own adversaries.
+
+{%include summarize-page.html src="/enemy"%}
+
+### Parallels between retirement and being a solpreneur
+
 The themes of self-motivation, creating structure, and maintaining purpose that we've explored here overlap significantly with other life transitions. For a related perspective on building routines and finding motivation without external structure, check out Herman's post on [staying motivated as a solo creator](https://gist.github.com/idvorkin/0a7719e84f424c51d2ef9275a5b5c3ca#file-b_think-md).
