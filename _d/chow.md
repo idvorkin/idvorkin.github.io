@@ -179,6 +179,8 @@ The Architect phase is about organizing your chaos into coherent structure. AI c
   - Create multiple possible outlines
   - Test different organizational frameworks
   - Identify gaps in your structure
+  - **Examples**:
+    - Restructured my retirement guide's TOC using AI to improve flow and consistency - see the [conversation](https://github.com/idvorkin/idvorkin.github.io/blob/c58c85a628220e585f3211ca2d16baaa110b7851/chop-logs/enhancing-toc-consistency-for-retirement-guide.md) and [changes](https://github.com/idvorkin/idvorkin.github.io/commit/c58c85a628220e585f3211ca2d16baaa110b7851#diff-6cee02582eaf62a323c5d25f3fb08b32b208d286ca3b62efc2d41356700a1e14)
 
 - **Audience Analysis**: Use AI to consider:
   - How different readers might approach your content
