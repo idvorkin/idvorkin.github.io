@@ -27,19 +27,19 @@ Let's explore retirement holistically - beyond the spreadsheets and financial ca
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
-- [The Real Goal: AMP - Autonomy, Mastery, and Purpose](#the-real-goal-amp---autonomy-mastery-and-purpose)
-- [A New Chapter, A New Focus](#a-new-chapter-a-new-focus)
-- [Identity and Purpose Beyond Work](#identity-and-purpose-beyond-work)
-- [Financial Independence vs Retirement](#financial-independence-vs-retirement)
-- [Saving More Than Money: Your Health Account](#saving-more-than-money-your-health-account)
-- [Common Retirement Myths](#common-retirement-myths)
-- [Hobbies: Your Bridge to a Fulfilling Retirement](#hobbies-your-bridge-to-a-fulfilling-retirement)
-- [Resources and Further Reading](#resources-and-further-reading)
+- [The Map: Navigating by Autonomy, Mastery & Purpose](#the-map-navigating-by-autonomy-mastery--purpose)
+- [The Side Quests: Starting Adventures Before The End Game](#the-side-quests-starting-adventures-before-the-end-game)
+- [The Journey: Embracing Life's Next Phase](#the-journey-embracing-lifes-next-phase)
+- [The Hero: Crafting Your Post-Work Identity](#the-hero-crafting-your-post-work-identity)
+- [The Treasure: When F-You Money Sets You Free](#the-treasure-when-f-you-money-sets-you-free)
+- [The Health Bar: No Extra Lives in This Game](#the-health-bar-no-extra-lives-in-this-game)
+- [The Dragons: Five Myths That Keep You Chained](#the-dragons-five-myths-that-keep-you-chained)
+- [The Scrolls: Wisdom From Fellow Travelers](#the-scrolls-wisdom-from-fellow-travelers)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## The Real Goal: AMP - Autonomy, Mastery, and Purpose
+## The Map: Navigating by Autonomy, Mastery & Purpose
 
 When we talk about retirement, we're often focused on what we're retiring _from_ rather than what we're retiring _to_. The real goal isn't retirement itself - it's achieving AMP: Autonomy, Mastery, and Purpose.
 
@@ -55,7 +55,13 @@ I've seen the power of AMP both in my own career and in leading others. In my cu
 
 Financial independence is just a tool that enables AMP - it's not the end goal. The money provides the foundation, but AMP provides the fulfillment. As you plan for retirement, consider how each decision supports or detracts from these three core elements.
 
-## A New Chapter, A New Focus
+## The Side Quests: Starting Adventures Before The End Game
+
+Retirement isn't about quitting work—it's a chance to transform your daily life. Don't wait until retirement to start your hobbies. Begin now to discover what sparks joy, fuels creativity, and builds meaningful connections. Whether it's art, sports, or learning new skills, integrating hobbies now lays the foundation for autonomy, mastery, and purpose in your future.
+
+{% include summarize-page.html src="/hobby" %}
+
+## The Journey: Embracing Life's Next Phase
 
 The decision to retire triggers a complex emotional journey. It's not just about leaving a job; it's about transitioning to a new phase of life that can bring up feelings of excitement, anxiety, loss, and liberation all at once.
 
@@ -63,7 +69,7 @@ The decision to retire triggers a complex emotional journey. It's not just about
 
 {% include summarize-page.html src="/42" %}
 
-## Identity and Purpose Beyond Work
+## The Hero: Crafting Your Post-Work Identity
 
 For many of us, especially in tech, our work forms a significant part of our identity. Who are we when we're no longer defined by our profession? This section explores building a multi-faceted identity that transcends our career.
 
@@ -71,7 +77,7 @@ As we transition from our professional identity, it's important to focus on what
 
 {% include summarize-page.html src="/eulogy" %}
 
-## Financial Independence vs Retirement
+## The Treasure: When F-You Money Sets You Free
 
 These terms are often used interchangeably, but they represent different concepts and life choices. Financial independence gives you options, while retirement is just one of those options.
 
@@ -87,7 +93,7 @@ The FIRE (Financial Independence, Retire Early) community has evolved to recogni
 
 {% include summarize-page.html src="/money" %}
 
-## Saving More Than Money: Your Health Account
+## The Health Bar: No Extra Lives in This Game
 
 There's an old saying: "A healthy person has a thousand wishes, a sick person has only one." Just like we save money for retirement, we need to save our health. But unlike a 401(k), your health account has mandatory withdrawals that you can't control. Every day, whether you like it or not, you're spending from this account. And just like unexpected market crashes, you'll face major unexpected health withdrawals whether you're ready or not.
 
@@ -101,7 +107,7 @@ Think of your physical health like compound interest - small, consistent investm
 
 Remember: You can always earn more money, but you can't earn more health. Make those deposits while you can.
 
-## Common Retirement Myths
+## The Dragons: Five Myths That Keep You Chained
 
 Let's debunk some common misconceptions about retirement and explore what modern retirement really looks like.
 
@@ -113,13 +119,7 @@ Common myths include:
 - You automatically have enough meaning and structure
 - Retirement means stopping completely
 
-## Hobbies: Your Bridge to a Fulfilling Retirement
-
-Retirement isn't about quitting work—it's a chance to transform your daily life. Don't wait until retirement to start your hobbies. Begin now to discover what sparks joy, fuels creativity, and builds meaningful connections. Whether it's art, sports, or learning new skills, integrating hobbies now lays the foundation for autonomy, mastery, and purpose in your future.
-
-{% include summarize-page.html src="/hobby" %}
-
-## Resources and Further Reading
+## The Scrolls: Wisdom From Fellow Travelers
 
 The resources and related content have been integrated throughout this post as summaries above. Each section contains relevant links and summaries to help you explore these topics in more depth.
 
