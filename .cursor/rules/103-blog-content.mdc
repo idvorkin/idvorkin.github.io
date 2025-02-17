@@ -1,0 +1,91 @@
+---
+description: ALWAYS use when writing or editing blog content
+globs: ["_posts/*.md", "_d/*.md"]
+tags: [blog, content, writing]
+priority: 1
+version: 1.0.0
+---
+
+# Blog Content Writing Standards
+
+<version>1.0.0</version>
+
+## Context
+- When creating new blog content
+- When editing existing content
+- When adding references and citations
+
+## Requirements
+
+1. Content Preparation
+   - Review back-links.json for context
+   - Check for existing content:
+     ```bash
+     qa_blog where "your exact question in quotes"
+     ```
+   - Study example posts:
+     - _posts/2020-04-01-Igor-Eulogy.md
+     - _d/pride.md
+
+2. Book References
+   - Analyze blog themes for relevant books
+   - Check existing amazon.html includes
+   - Get ASIN for books:
+     ```bash
+     tony search "What is the ASIN for [book title]? Search Amazon too"
+     ```
+   - Use amazon.html include:
+     ```markdown
+     {% include amazon.html asin="ASIN1;ASIN2;ASIN3" %}
+     ```
+
+3. Content Summarization
+   - Use summarize-page include for related content:
+     ```markdown
+     {% include summarize-page.html src="/page-url" %}
+     ```
+   - Verify permalinks in back-links.json
+   - Place summaries strategically in content
+
+4. Alert Usage
+   - Use alert includes for important information:
+     ```markdown
+     {% include alert.html content="Message" style="style-name" %}
+     ```
+   - Available styles: primary, secondary, success, danger, warning, info, light, dark
+   - Place alerts near relevant content
+
+5. Writing Style Guidelines
+   - Fun and quirky tone
+   - Technical but accessible
+   - No emojis
+   - Professional formatting
+   - Clear section organization
+
+## Examples
+
+<example>
+# Good Practice: Book Reference Integration
+
+This post explores effective learning methods, drawing from several key resources.
+
+{% include amazon.html asin="B001ANYDAO;B00506CSDQ" %}
+
+The concepts from these books form the foundation of our discussion...
+
+{% include alert.html content="Remember: Practice makes permanent, not perfect!" style="warning" %}
+
+For more on deliberate practice, see our guide:
+{% include summarize-page.html src="/deliberate-practice" %}
+</example>
+
+<example type="invalid">
+# Anti-Pattern: Poor Content Integration
+
+Here are some good books 📚:
+- Book 1
+- Book 2 (no proper references)
+
+Related stuff:
+Just read the other post about practice (no proper link or summary)
+</example> 

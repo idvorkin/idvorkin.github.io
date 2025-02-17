@@ -1,0 +1,82 @@
+---
+description: ALWAYS use when adding or managing images in blog posts
+globs: ["_posts/*.md", "_d/*.md"]
+tags: [blog, images, jekyll]
+priority: 2
+version: 1.0.0
+---
+
+# Blog Image Management Standards
+
+<version>1.0.0</version>
+
+## Context
+- When adding images to blog posts
+- When managing existing blog images
+- When updating image references
+
+## Requirements
+
+1. Image Location Verification
+   - Check existing images in ~/rare_gits/blob/blog/
+   - Verify if image already exists before adding new ones
+
+2. Image Format Standards
+   - Use .webp format for optimal performance
+   - Use descriptive filenames indicating content
+   - Store in ~/rare_gits/blob/blog/ directory
+
+3. Front Matter Image Feature
+   - Check for existing imagefeature in front matter
+   - If missing, add using first image:
+     ```yaml
+     imagefeature: https://github.com/idvorkin/blob/raw/master/blog/your-image-name.webp
+     ```
+   - Preserve existing imagefeature if present
+
+4. Image Include Usage
+   - Use appropriate include based on layout needs:
+     ```markdown
+     {% include blob_image_float_right.html src="blog/image-name.webp" %}
+     {% include blob_image.html src="blog/image-name.webp" %}
+     ```
+   - Prefer right-floating images unless specific layout requires centered
+
+5. Image Placement
+   - New posts: After first paragraph
+   - Existing posts: Near relevant content
+   - Maintain blank lines before and after include
+
+6. Version Control
+   - Commit new images to blob repo
+   - Commit blog post changes
+   - Ensure both repos are synchronized
+
+## Examples
+
+<example>
+# Good Practice: Adding New Image
+
+---
+title: My Blog Post
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/meditation-garden.webp
+---
+
+First paragraph introducing the topic.
+
+{% include blob_image_float_right.html src="blog/meditation-garden.webp" %}
+
+Content continues with image properly placed...
+</example>
+
+<example type="invalid">
+# Anti-Pattern: Poor Image Management
+
+---
+title: My Blog Post
+---
+
+![image](random-url.jpg)
+
+No proper image management or includes used...
+</example> 

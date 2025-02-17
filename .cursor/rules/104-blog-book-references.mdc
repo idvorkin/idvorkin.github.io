@@ -1,0 +1,100 @@
+---
+description: ALWAYS use when adding book references to blog posts
+globs: ["_posts/*.md", "_d/*.md"]
+tags: [blog, books, amazon, references]
+priority: 2
+version: 1.0.0
+---
+
+# Blog Book Reference Standards
+
+<version>1.0.0</version>
+
+## Context
+- When adding book references to posts
+- When updating existing book references
+- When organizing book recommendations
+
+## Requirements
+
+1. Content Analysis
+   - Review post content and themes
+   - Check for existing amazon.html includes
+   - If includes exist, ask user:
+     ```
+     I see existing book references. Would you like to:
+     a) Keep them where they are
+     b) Move them to the standard location (after introduction)
+     c) Replace them with new books
+     d) Add additional books?
+     ```
+   - Identify explicitly mentioned books
+   - Recommend relevant books based on topics
+
+2. ASIN Retrieval
+   - For each book, verify ASIN:
+     ```bash
+     tony search "What is the ASIN for [book title]? Search Amazon too"
+     ```
+   - Extract ASIN from Amazon URL:
+     - Format: amazon.com/dp/B0CP52YY8F
+     - ASIN is the code after "/dp/"
+
+3. Include Format
+   - Use amazon.html include:
+     ```markdown
+     {% include amazon.html asin="ASIN1;ASIN2;ASIN3" %}
+     ```
+   - Multiple books:
+     - Separate ASINs with semicolons
+     - Keep to 2-3 books per row
+     - Each book gets equal spacing
+
+4. Include Features
+   - Creates centered table with book covers
+   - Each book cell contains:
+     - Cover image (120px max width)
+     - "View on Amazon" link
+     - Affiliate code (ighe-20)
+     - Light border and padding
+   - Books arranged horizontally
+
+5. Placement Guidelines
+   - New references: After introducing books
+   - Existing references: Based on user preference
+   - Maintain blank lines before and after include
+
+## Examples
+
+<example>
+# Good Practice: Book Integration
+
+This post explores leadership principles from several influential books.
+
+{% include amazon.html asin="B07LDSPRYM;B00506CSDQ;B07C66Z4M4" %}
+
+Let's examine how these authors approach leadership development...
+</example>
+
+<example type="invalid">
+# Anti-Pattern: Poor Book References
+
+Check out these great books:
+* Leadership Book - amazon.com/some-random-link
+* Another Book - no link provided
+* [Buy on Amazon](wrong-affiliate-link)
+</example>
+
+<example>
+# Good Practice: Multiple Book Sets
+
+This guide draws from two different areas:
+
+## Project Management
+{% include amazon.html asin="B07LDSPRYM;B00506CSDQ" %}
+
+## Personal Development
+{% include amazon.html asin="B07C66Z4M4;B001ANYDAO" %}
+
+Let's explore how these complement each other...
+</example> 

@@ -1,0 +1,116 @@
+---
+description: ALWAYS use when creating or editing blog posts
+globs: ["_posts/*.md", "_d/*.md"]
+tags: [blog, jekyll, markdown]
+priority: 1
+version: 1.0.0
+---
+
+# Blog Post Convention Standards
+
+<version>1.0.0</version>
+
+## Context
+- When creating new blog posts
+- When editing existing posts
+- When managing post metadata and structure
+
+## Requirements
+
+1. File Naming Conventions
+   - Use descriptive names without dates
+   - Examples: `advice.md`, `how-to-learn.md`
+   - Draft posts go in `_d` directory
+   - Published posts go in `_posts` directory
+
+2. Front Matter Requirements
+   - Unique and descriptive permalink
+   - Proper redirect handling:
+     ```yaml
+     permalink: /new-url
+     redirect_from:
+       - /old-url # ✅ correct way
+     ```
+   - Never use 'aliases' field (deprecated)
+
+3. Table of Contents
+   - Place TOC immediately after first paragraph (new posts)
+   - Maintain existing TOC location (existing posts)
+   - Use vim-markdown-toc markers:
+     ```markdown
+     <!-- prettier-ignore-start -->
+     <!-- vim-markdown-toc-start -->
+     [TOC content]
+     <!-- vim-markdown-toc-end -->
+     <!-- prettier-ignore-end -->
+     ```
+
+4. List Replacements in Tables
+   - Use `[lXX](lXX)` format in tables
+   - Ensure unique list numbers across file
+   - Structure lists with `<div/>` tags
+   - First item must be list identifier
+
+5. Link Management
+   - Check back-links.json for correct redirects
+   - Use format: `[visible text](/redirect-url)`
+   - Update all related content links
+
+6. Writing Style
+   - Fun and quirky tone
+   - Technical but not boring
+   - No emojis in any content
+   - Clean and professional formatting
+
+## Examples
+
+<example>
+# Good Practice: New Blog Post
+
+---
+title: Learning New Skills
+permalink: /learning
+redirect_from:
+  - /skills
+  - /new-skills
+---
+
+Introduction paragraph about learning methods.
+
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+* [Core Concepts](#core-concepts)
+* [Practice Methods](#practice-methods)
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
+
+## Core Concepts
+
+Content with proper formatting...
+
+| Day | Activities |
+|-----|------------|
+| Mon | [l31](l31) |
+
+<div/>
+
+- l31
+- Morning routine
+- Evening review
+
+<div/>
+</example>
+
+<example type="invalid">
+# Anti-Pattern: Poor Blog Structure
+
+---
+title: Random Thoughts 📝
+aliases: ["/old-url"]
+---
+
+No TOC, wrong metadata format, emojis used...
+
+* Random list without proper structure
+* No proper formatting
+</example> 

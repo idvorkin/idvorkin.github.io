@@ -1,0 +1,87 @@
+---
+description: ALWAYS use when developing and testing Jekyll blog posts
+globs: ["_posts/*.md", "_d/*.md"]
+tags: [jekyll, development, workflow]
+priority: 2
+version: 1.0.0
+---
+
+# Jekyll Development Standards
+
+<version>1.0.0</version>
+
+## Context
+- When developing blog posts locally
+- When testing changes
+- When managing includes and templates
+
+## Requirements
+
+1. Local Development Setup
+   - Jekyll must be running locally on port 4000
+   - Use localhost for all testing
+
+2. Post Preview
+   - Get permalink from post's front matter
+   - Use standard preview command:
+     ```bash
+     open http://localhost:4000{permalink}
+     ```
+
+3. Section Preview
+   - Append anchor to permalink for specific sections:
+     ```bash
+     open http://localhost:4000{permalink}#{anchor}
+     ```
+   - Anchors must match heading IDs
+
+4. Include Management
+   - Available includes:
+     - blob_image.html
+     - blob_image_float_right.html
+     - amazon.html
+     - alert.html
+     - summarize-page.html
+   - Verify includes work locally before committing
+
+5. Terminal Commands
+   - Append ` | /bin/cat` for pager commands
+   - Run long-running commands in background
+   - Use proper shell paths
+
+## Examples
+
+<example>
+# Good Practice: Local Development
+
+1. Start Jekyll server:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+2. Preview full post:
+   ```bash
+   open http://localhost:4000/learning
+   ```
+
+3. Preview specific section:
+   ```bash
+   open http://localhost:4000/learning#practice-methods
+   ```
+
+4. Test include:
+   ```markdown
+   {% include alert.html content="Test message" style="info" %}
+   ```
+</example>
+
+<example type="invalid">
+# Anti-Pattern: Poor Development Practice
+
+1. Direct file editing without preview
+2. Using production URLs for testing
+3. Not using proper command formatting:
+   ```bash
+   git log # Missing | /bin/cat
+   ```
+</example> 
