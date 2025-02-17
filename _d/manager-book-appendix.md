@@ -126,7 +126,7 @@ _You'll also notice the principles are deliberately not ranked, and have tension
 - Ethical (Earn Trust; Vocally Self Critical) - Be honorable and earn trust by doing the right thing even when no one is watching, every time.
 
 - Adaptable (Invent and Simplify) - Embrace change to evolve and succeed, with a positive, problem-solving attitude.
-- Grit - (Deliver Results/Bias For Action) Achieve with passion and perseverance for goals, by doing whatever it takes to get the job done, whenever it’s necessary.
+- Grit - (Deliver Results/Bias For Action) Achieve with passion and perseverance for goals, by doing whatever it takes to get the job done, whenever it's necessary.
 - Empathy (Earn Trust) - Treat others as they want to be treated to work well together, by actively listening to put yourself in their shoes and then responding accordingly.
 - Remarkable (Learn and Be Curious) - Always be learning to develop quickly and be exceptional yet humble, by continually seeking out mentors and learning opportunities.
 
@@ -262,6 +262,7 @@ Specific team members for engine, seat belts, etc
 - [Give away your legos](https://review.firstround.com/give-away-your-legos-and-other-commandments-for-scaling-startups) Dealing with org's scaling
 - [Sue's What does a manager Do, anyways](https://evilplantosavethe.world/2021/01/what-does-a-manager-do-anyway/)
 - [Sue's Manager vs IC](https://evilplantosavethe.world/2021/10/manager-vs-ic/)
+- [The Resilience of Alien Chess](https://www.markrabkin.com/the-resilience-of-alien-chess/) - Insights on managing through uncertainty and change
 
 ### Great books
 
