@@ -380,32 +380,21 @@ Think of your AI assistant as an eager junior developer who can learn and retain
 
 > **Note**: Cursor IDE implements this concept using a `.cursorrules` file that points to your CONVENTIONS.md. Simply create a `.cursorrules` file in your project root with the content `CONVENTIONS.md` to enable this feature ([see example](https://github.com/idvorkin/idvorkin.github.io/commit/332e43c7e211640f55da9be858164e6aa003ab9e)).
 
-1. **Let AI Own the Conventions**
+{% include alert.html content="For a more structured approach to managing Cursor rules, check out cursor-auto-rules-agile-workflow - a tool that provides automated rule generation and standardized documentation formats." style="info" %}
 
-   - Have AI update CONVENTIONS.md after each significant interaction
-   - Ask AI to document patterns they notice in your feedback
-   - Let AI propose new conventions based on repeated guidance
-   - Use the conventions file as a learning record for the AI
+Check out the [cursor-auto-rules-agile-workflow](https://github.com/bmadcode/cursor-auto-rules-agile-workflow) project.
+
+1. **Let AI Own the Conventions**
+   Have AI update CONVENTIONS.md, document patterns, propose new conventions, and maintain the learning record.
 
 2. **Review Conventions More Carefully Than Code**
-
-   - Convention changes impact all future code generation
-   - One wrong convention can multiply mistakes across the project
-   - Treat CONVENTIONS.md updates as critical infrastructure changes
-   - Remember: Bad code affects one feature, bad conventions affect everything
+   Convention changes affect all future code generation. Bad code affects one feature, bad conventions affect everything.
 
 3. **Structure Conventions for AI Understanding**
-
-   - Break conventions into clear, focused sections (e.g., "Image Handling", "Blog Post Structure")
-   - Include concrete examples for each convention
-   - Use numbered steps for processes that must happen in order
-   - Add context about why each convention exists
+   Use clear sections, concrete examples, numbered steps, and provide context.
 
 4. **Evolve Conventions Iteratively**
-   - Start simple with core conventions
-   - Let real usage guide what needs documentation
-   - Update conventions when you find yourself repeating instructions
-   - Remove or refine conventions that cause confusion
+   Start simple, let usage guide documentation, update as needed, remove what doesn't work.
 
 Here's a recent example of this approach in action:
 

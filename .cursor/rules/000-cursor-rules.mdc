@@ -90,7 +90,11 @@ PREFIX-name.mdc where PREFIX is:
 
 ## Version Control
 
-- Follow semantic versioning (MAJOR.MINOR.PATCH)
+- When creating a new rule file:
+  1. Add it to git immediately: `git add .cursor/rules/new-rule.mdc`
+  2. Do NOT commit the file yet
+  3. Let the user review and commit when ready
+- Follow semantic versioning for rule updates
 - Document changes in commit messages
 - Start at version 1.0.0
 
