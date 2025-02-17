@@ -14,6 +14,7 @@ version: 1.0.0
 - When developing blog posts locally
 - When testing changes
 - When managing includes and templates
+- When modifying specific sections of a post
 
 ## Requirements
 
@@ -27,6 +28,13 @@ version: 1.0.0
      ```bash
      open http://localhost:4000{permalink}
      ```
+   - When modifying a single section:
+     - Add section anchor to URL:
+       ```bash
+       open http://localhost:4000{permalink}#{section-anchor}
+       ```
+     - Section anchor is the lowercase, hyphenated version of the heading
+     - Example: "## My Section" becomes "#my-section"
 
 3. Section Preview
    - Append anchor to permalink for specific sections:
@@ -34,6 +42,8 @@ version: 1.0.0
      open http://localhost:4000{permalink}#{anchor}
      ```
    - Anchors must match heading IDs
+   - Always use section-specific preview when only modifying one section
+   - This helps maintain focus and reduces scrolling
 
 4. Include Management
    - Available includes:
@@ -84,4 +94,37 @@ version: 1.0.0
    ```bash
    git log # Missing | /bin/cat
    ```
+4. Opening full post when only modifying one section
+</example>
+
+# Opening Blog Posts After Edits
+
+## Context
+- After making edits to blog posts
+- When sections or anchors are modified
+- When content changes need to be verified
+
+## Requirements
+- After editing a blog post section:
+  1. Identify the relevant section anchor
+  2. Ask user if they want to view changes in browser
+  3. If yes, use format: `http://localhost:4000/{permalink}#{anchor}`
+  4. Provide command to open directly to section
+
+## Examples
+
+<example>
+After adding content to the "How to Start" section:
+
+"I've added the content to the 'How to Start' section. Would you like to view these changes? I can open it directly using:
+```
+http://localhost:4000/physical-health#how-to-start
+```
+Just let me know if you'd like me to open it."
+</example>
+
+<example type="invalid">
+"I've made the changes. You can view them in your browser."
+
+This is insufficient as it doesn't offer to open the specific section and requires manual navigation.
 </example> 

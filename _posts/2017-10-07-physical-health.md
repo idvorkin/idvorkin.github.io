@@ -9,7 +9,7 @@ redirect_from:
 imagefeaturelocal: raccoon-lifting-weights.png
 ---
 
-Physical health is not bought, it’s rented and rent is due every day. Physical health is the basis of energy, and thus the source of success, and a key [saw to sharpen](/sharpen-the-saw). Physical health requires weight, fitness, and sleep.
+Physical health is not bought, it's rented and rent is due every day. Physical health is the basis of energy, and thus the source of success, and a key [saw to sharpen](/sharpen-the-saw). Physical health requires weight, fitness, and sleep.
 
 ### Why? So you can look good in your jeans? So you can wrestle bears?
 
@@ -62,6 +62,10 @@ Personally, I set an alarm and always wake up at the same time, regardless of ho
 First good for you! Realizing you need to take action is a huge first step. Realizing you need to start small and deliberate is the next huge step.
 
 I'd start with cardio exercise (e.g. endurance fitness). That will give you the most energy, which you'll require to bootstrap the other disciplines. After you've been doing that for a month or so, I'd tackle sleep and when that feels stable I'd add weight loss.
+
+{% include summarize-page.html src="/new-skills" %}
+
+{% include summarize-page.html src="/habits" %}
 
 #### How long should I exercise?
 
@@ -124,6 +128,7 @@ In summary, trainers are worth it.
 #### Where's my strength at in 2024
 
 My current strength routine includes:
+
 - Kettlebell swings: 10x10 @ 32kg two-handed (achieved Nov '23, regressed after injury)
 - Turkish Get-Ups: 5x1 @ 32kg per side (achieved Jan '24, regressed after holiday break)
 - Working on one-handed front rack squats
@@ -144,7 +149,7 @@ Also, I feel MUCH better when I do bird dogs, but rarely do (oddly PT suggests d
 
 The Atlantic [summarized it perfectly](https://www.theatlantic.com/health/archive/2019/08/how-know-if-youre-morning-person/595990/?utm_campaign=the-atlantic&utm_medium=social)
 
-_They walk among us, endowed with a superpower invisible to the naked eye. Before an important early meeting, they never have to forgo a shower and settle for dry shampoo and a baby wipe. They rarely wake with a jolt at 10 in the morning and stare groggily at a phone screen with five missed calls and texts that say, “You on your way? ETA_
+_They walk among us, endowed with a superpower invisible to the naked eye. Before an important early meeting, they never have to forgo a shower and settle for dry shampoo and a baby wipe. They rarely wake with a jolt at 10 in the morning and stare groggily at a phone screen with five missed calls and texts that say, "You on your way? ETA_
 
 But a few points to add after you read the article:
 
