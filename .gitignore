@@ -43,3 +43,6 @@ pysrc/__pycache__/
 
 # Ignore chroma database files
 blog.chroma.db/
+
+# Private individual user cursor rules
+.cursor/rules/_*.mdc

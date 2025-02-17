@@ -1,0 +1,259 @@
+---
+description: Use ALWAYS when asked to CREATE A RULE for Cursor
+globs: .cursor/rules/*.mdc
+---
+# Cursor Rules Format
+---
+description: Use ALWAYS when asked to CREATE A RULE
+author: BMad
+date: 2025-02-16
+status: draft
+version: 2.0.0
+---
+## Core Structure
+
+```mdc
+---
+description: ACTION when TRIGGER to OUTCOME
+globs: pattern(s)
+tags: [tag1, tag2]  # New: For improved AI categorization
+priority: 1-5       # New: For conflict resolution
+version: Major.Minor.Patch
+---
+
+# Rule Title
+
+<version>X.Y.Z</version>
+
+## Context
+- When to apply this rule
+- Prerequisites or conditions
+
+## Requirements
+- Concise, actionable items
+- Each requirement must be testable
+
+## Examples
+<example>
+Good example with explanation
+</example>
+
+<example type="invalid">
+Anti-pattern with explanation
+</example>
+```
+
+## File Organization
+
+### Location
+- Path: `.cursor/rules/`
+- Extension: `.mdc`
+
+### Naming Convention
+PREFIX-name.mdc where PREFIX is:
+- 0XX: Core standards
+- 1XX: Tool configs
+- 3XX: Testing standards
+- 1XXX: Language rules
+- 2XXX: Framework rules
+- 8XX: Workflows
+- 9XX: Templates
+- _name.mdc: Private rules
+
+## Required Fields
+
+### Frontmatter
+- description: ACTION TRIGGER OUTCOME format
+- globs: File patterns or empty
+- tags: Categorization keywords
+- priority: 1 (highest) to 5 (lowest)
+- version: Semantic versioning
+
+### Body
+- context: Usage conditions
+- requirements: Actionable items
+- examples: Both valid and invalid
+
+## Formatting Guidelines
+
+- Use Markdown per [400-md-docs.mdc](mdc:.cursor/rules/400-md-docs.mdc)
+- XML tags limited to:
+  - <example>
+  - <danger>
+  - <required>
+- Always indent content within XML tags by 2 spaces
+- Close tags on their own line at the parent indentation level
+
+<danger>
+  NEVER include personality instructions in rules
+</danger>
+
+## Version Control
+
+- Follow semantic versioning (MAJOR.MINOR.PATCH)
+- Document changes in commit messages
+- Start at version 1.0.0
+
+## AI Optimization Tips
+
+1. Use precise, deterministic ACTION TRIGGER OUTCOME format in descriptions
+2. Include only essential tags that directly impact rule application
+3. Set clear priority levels to resolve conflicts efficiently
+4. Provide concise, testable requirements without redundancy
+5. Include minimal but effective examples for pattern matching
+6. Optimize for AI context window efficiency
+7. Remove any non-essential metadata or formatting
+
+## AI Context Efficiency
+
+1. Keep descriptions under 100 characters while maintaining clarity
+2. Limit examples to essential patterns only
+3. Use hierarchical structure for quick parsing
+4. Remove redundant information across sections
+5. Maintain high information density with minimal tokens
+6. Focus on machine-actionable instructions over human explanations
+
+<danger>
+  NEVER include verbose explanations or redundant context that increases AI token overhead
+</danger>
+
+## Examples
+
+<example>
+  ---
+  description: ALWAYS use TypeScript interfaces for data models
+  globs: **/*.ts
+  tags: [typescript, interfaces, models]
+  priority: 2
+  version: 1.0.0
+  ---
+
+  # TypeScript Interface Standards
+
+  <version>1.0.0</version>
+
+  ## Context
+  - When defining data structures
+  - For API responses
+
+  ## Requirements
+  - Use interfaces over types
+  - Include JSDoc comments
+  - Define readonly when immutable
+
+  ## Examples
+  <example>
+    interface User {
+      readonly id: string;
+      name: string;
+      email: string;
+    }
+  </example>
+</example>
+
+<example>
+  ---
+  description: ALWAYS follow TDD principles when implementing new TypeScript functions
+  globs: **/*.{ts,test.ts}
+  tags: [typescript, testing, tdd, jest, functions]
+  priority: 1
+  version: 1.0.0
+  ---
+
+  # Rule: TypeScript TDD Standards
+
+  <version>1.0.0</version>
+
+  ## Context
+  - When implementing any new TypeScript function
+  - When modifying existing function behavior
+  - When fixing bugs in functions
+
+  ## Requirements
+  - Write failing test before implementation
+  - Implement minimal code to make test pass
+  - Refactor while maintaining test coverage
+  - One function, one responsibility
+  - Tests must be descriptive and focused
+
+  ## Process Flow
+
+  ```mermaid
+  sequenceDiagram
+      participant D as Developer
+      participant T as Test File
+      participant I as Implementation File
+      
+      Note over D,I: Red Phase
+      D->>T: 1. Write test describing expected behavior
+      D->>T: 2. Run tests to verify failure
+      
+      Note over D,I: Green Phase
+      D->>I: 3. Write minimal implementation
+      D->>T: 4. Run tests to verify success
+      
+      Note over D,I: Refactor Phase
+      D->>I: 5. Improve code quality
+      D->>T: 6. Enhance test clarity if needed
+      D->>T: 7. Verify tests still pass
+  ```
+
+  ## Examples
+
+  <example>
+    # Good Practice: Following TDD Workflow
+
+    1. First, write the test (Red Phase):
+    ```typescript
+    // userService.test.ts
+    describe('UserService', () => {
+      describe('validateEmail', () => {
+        it('should return true for valid email', () => {
+          expect(UserService.validateEmail('picard@enterprise.com')).toBe(true);
+        });
+      });
+    });
+    ```
+
+    2. Then, implement minimal code (Green Phase):
+    ```typescript
+    // userService.ts
+    export class UserService {
+      static validateEmail(email: string): boolean {
+        return email.includes('@');
+      }
+    }
+    ```
+
+    3. Finally, refactor with proper validation (Refactor Phase):
+    ```typescript
+    // userService.ts
+    export class UserService {
+      static validateEmail(email: string): boolean {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+    }
+    ```
+  </example>
+
+  <example type="invalid">
+    # Anti-Pattern: Skipping TDD Steps
+
+    ```typescript
+    // BAD: Writing implementation first
+    export class UserService {
+      static validateEmail(email: string): boolean {
+        return email.includes('@');
+      }
+    }
+
+    // Tests added as afterthought
+    describe('UserService', () => {
+      it('validates email', () => {
+        expect(UserService.validateEmail('test@test.com')).toBe(true);
+      });
+    });
+    ```
+  </example>
+</example>
