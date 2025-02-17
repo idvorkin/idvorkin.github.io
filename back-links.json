@@ -265,8 +265,7 @@
                 "/elder"
             ],
             "incoming_links": [
-                "/elder",
-                "/retire"
+                "/elder"
             ],
             "redirect_url": "",
             "markdown_path": "_d/40-yo-programmer.md",
@@ -294,6 +293,23 @@
             "redirect_url": "",
             "markdown_path": "_d/42.md",
             "doc_size": 17000
+        },
+        "/4dx": {
+            "url": "/4dx",
+            "title": "The 4 Disciplines of Execution (4DX)",
+            "description": "The 4 Disciplines of Execution (4DX) is a proven framework for executing your most important strategic priorities in the midst of the whirlwind of day-to-day demands. This framework has been tested and refined by hundreds of organizations and thousands of teams over many years.\n\n",
+            "file_path": "_site/4dx.html",
+            "outgoing_links": [
+                "/end-in-mind",
+                "/essentialism",
+                "/first-things-first",
+                "/goals",
+                "/gtd"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/4dx.md",
+            "doc_size": 16000
         },
         "/7-habits": {
             "url": "/7-habits",
@@ -665,6 +681,7 @@
             ],
             "incoming_links": [
                 "/90days",
+                "/gtd",
                 "/manager-book-appendix",
                 "/parkinson",
                 "/writing"
@@ -687,7 +704,7 @@
                 "/mood"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/bells.md",
+            "markdown_path": "_d/anger.md",
             "doc_size": 14000
         },
         "/anxiety": {
@@ -706,7 +723,6 @@
                 "/anxiety-management",
                 "/depression",
                 "/fail",
-                "/gtd",
                 "/happy",
                 "/mental-pain",
                 "/operating-manual",
@@ -715,7 +731,7 @@
                 "/voices"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/tribe.md",
+            "markdown_path": "_d/anxiety.md",
             "doc_size": 20000
         },
         "/anxiety-management": {
@@ -810,8 +826,7 @@
                 "/7-habits",
                 "/7h-concepts",
                 "/d/time-off-2021-12",
-                "/productive",
-                "/retire"
+                "/productive"
             ],
             "redirect_url": "",
             "markdown_path": "_d/balance2.md",
@@ -876,7 +891,7 @@
                 "/mind-monsters",
                 "/moments-at-work",
                 "/pride",
-                "/static/igor-feedback-LinkedIn.pdf",
+                "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/sustainable-work"
             ],
             "incoming_links": [
@@ -1137,7 +1152,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/chow.md",
-            "doc_size": 27000
+            "doc_size": 25000
         },
         "/class-act": {
             "url": "/class-act",
@@ -1275,6 +1290,7 @@
                 "/essentialism",
                 "/first-understand",
                 "/getting-to-yes-with-yourself",
+                "/gtd",
                 "/happy",
                 "/negotiate",
                 "/operating-manual",
@@ -1454,6 +1470,7 @@
                 "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
+                "/physical-health",
                 "/productive",
                 "/psychic-weight",
                 "/sharpen-the-saw",
@@ -1878,6 +1895,7 @@
                 "/42",
                 "/operating-manual",
                 "/physical-health",
+                "/retire",
                 "/sharpen-the-saw"
             ],
             "redirect_url": "",
@@ -1894,7 +1912,6 @@
                 "/d/2016-2-15-Seth-Godin-Notes",
                 "/dsat",
                 "/end-in-mind",
-                "/gtd",
                 "/manager-book"
             ],
             "redirect_url": "",
@@ -1928,7 +1945,8 @@
                 "/sustainable-work"
             ],
             "incoming_links": [
-                "/manager-book"
+                "/manager-book",
+                "/retire"
             ],
             "redirect_url": "",
             "markdown_path": "_d/sat_dsat.md",
@@ -1961,7 +1979,7 @@
                 "/addiction"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/suicide.md",
+            "markdown_path": "_d/elder.md",
             "doc_size": 21000
         },
         "/emotional-health": {
@@ -1982,7 +2000,6 @@
                 "/mind-at-work",
                 "/operating-manual",
                 "/process-journal",
-                "/retire",
                 "/sharpen-the-saw",
                 "/siy",
                 "/sublime"
@@ -2045,6 +2062,7 @@
                 "/touching"
             ],
             "incoming_links": [
+                "/4dx",
                 "/7-habits",
                 "/affirmations",
                 "/d/resistance",
@@ -2066,7 +2084,8 @@
                 "/pride"
             ],
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/retire"
             ],
             "redirect_url": "",
             "markdown_path": "_d/don-juan2.md",
@@ -2110,6 +2129,7 @@
                 "/physical-health"
             ],
             "incoming_links": [
+                "/4dx",
                 "/affirmations",
                 "/balance",
                 "/be-proactive",
@@ -2119,7 +2139,6 @@
                 "/end-in-mind",
                 "/first-things-first",
                 "/frog",
-                "/gtd",
                 "/partner-trouble",
                 "/timeoff"
             ],
@@ -2222,11 +2241,13 @@
                 "/upstream"
             ],
             "incoming_links": [
+                "/4dx",
                 "/7-habits",
                 "/90days",
                 "/affirmations",
                 "/delegate",
-                "/frog"
+                "/frog",
+                "/gtd"
             ],
             "redirect_url": "",
             "markdown_path": "_d/7h-c3.md",
@@ -2278,7 +2299,6 @@
                 "/d/resistance",
                 "/d/time-off-2020-03",
                 "/first-things-first",
-                "/gtd",
                 "/idle",
                 "/mental-pain",
                 "/productive",
@@ -2330,7 +2350,9 @@
             "outgoing_links": [
                 "/mortality-software"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/4dx"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/goals.md",
             "doc_size": 14000
@@ -2436,19 +2458,19 @@
         },
         "/gtd": {
             "url": "/gtd",
-            "title": "Getting things done",
-            "description": "Getting Things Done (GTD) is a model based on David Allen’s book of the same name. It’s a deep dive into Habit 3 - first things first, with some lite weight Habit 2 - begin with the end in mind, mixed in for good measure. By using GTD religiously you can have a drastic reduction in stress and procrastination.\n\n",
+            "title": "The first 90 days",
+            "description": "The first 90 days is a how to manual for starting a new job. While it’s focused on executive roles, it’s applicable to lower levels as well. It’s also the best written business book from a structural perspective. I highly recommend it.\n\n",
             "file_path": "_site/gtd.html",
             "outgoing_links": [
-                "/anxiety",
-                "/dip",
-                "/essentialism",
-                "/frog",
-                "/idle",
-                "/outsourcing",
-                "/psychic-weight"
+                "/amazon",
+                "/curious",
+                "/first-things-first",
+                "/insecure",
+                "/shame",
+                "/writing"
             ],
             "incoming_links": [
+                "/4dx",
                 "/books-that-defined-me",
                 "/d/resistance",
                 "/depression",
@@ -2458,8 +2480,8 @@
                 "/psychic-weight"
             ],
             "redirect_url": "",
-            "markdown_path": "_d/gtd.md",
-            "doc_size": 14000
+            "markdown_path": "_d/90days.md",
+            "doc_size": 46000
         },
         "/happy": {
             "url": "/happy",
@@ -2524,7 +2546,8 @@
                 "/magic"
             ],
             "incoming_links": [
-                "/operating-manual"
+                "/operating-manual",
+                "/retire"
             ],
             "redirect_url": "",
             "markdown_path": "_d/hobby.md",
@@ -2586,7 +2609,6 @@
             "incoming_links": [
                 "/anxiety",
                 "/depression",
-                "/gtd",
                 "/happy",
                 "/psychic-weight"
             ],
@@ -2620,7 +2642,8 @@
             "incoming_links": [
                 "/90days",
                 "/affirmations",
-                "/depression"
+                "/depression",
+                "/gtd"
             ],
             "redirect_url": "",
             "markdown_path": "_d/imposter.md",
@@ -2906,8 +2929,7 @@
                 "/prompts",
                 "/remote-work",
                 "/software-leadership-roles",
-                "/static/igor-feedback-LinkedIn.pdf",
-                "/static/igor-feedback-linkedin.pdf",
+                "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
                 "/testing",
@@ -2921,6 +2943,7 @@
                 "/dsat",
                 "/job",
                 "/manager-book-appendix",
+                "/retire",
                 "/software-leadership-roles",
                 "/tribe",
                 "/y24",
@@ -3253,6 +3276,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/about",
+                "/physical-health",
                 "/physical-pain"
             ],
             "redirect_url": "",
@@ -3397,10 +3421,12 @@
             "description": "Physical health is not bought, it’s rented and rent is due every day. Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health requires weight, fitness, and sleep.\n\n",
             "file_path": "_site/physical-health.html",
             "outgoing_links": [
+                "/d/habits",
                 "/diet",
                 "/insomnia",
                 "/irl",
                 "/kettlebell",
+                "/new-skills",
                 "/sharpen-the-saw",
                 "/sleep",
                 "/tech-health-toys",
@@ -3414,6 +3440,7 @@
                 "/eulogy",
                 "/irl",
                 "/operating-manual",
+                "/retire",
                 "/sharpen-the-saw",
                 "/tech-health-toys"
             ],
@@ -3548,7 +3575,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/prompt.md",
-            "doc_size": 26000
+            "doc_size": 30000
         },
         "/psychic-weight": {
             "url": "/psychic-weight",
@@ -3573,7 +3600,6 @@
             ],
             "incoming_links": [
                 "/depression",
-                "/gtd",
                 "/process-journal"
             ],
             "redirect_url": "",
@@ -3685,15 +3711,18 @@
             "description": "When we ponder retirement - we’re masters at planning our exit, but surprisingly vague about what happens after. We’re so focused on what we’re retiring from rather than what we’re retiring to. The real goal isn’t the escape itself - it’s creating a life of genuine freedom, growth, and meaning on the other side. And here’s the plot twist - much of this post isn’t about retirement at all. It’s about what to do while you’re still working.\n\n",
             "file_path": "_site/retire.html",
             "outgoing_links": [
-                "/40yo",
                 "/42",
-                "/amp",
-                "/balance",
                 "/chapters",
-                "/emotional-health",
+                "/diet",
+                "/dsat",
+                "/enemy",
                 "/eulogy",
+                "/hobby",
                 "/last-year",
+                "/manager-book",
                 "/money",
+                "/physical-health",
+                "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/sustainable-work"
             ],
             "incoming_links": [
@@ -3701,7 +3730,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/retire.md",
-            "doc_size": 18000
+            "doc_size": 22000
         },
         "/roblox-dev": {
             "url": "/roblox-dev",
@@ -3794,6 +3823,7 @@
                 "/curious",
                 "/depression",
                 "/emotions",
+                "/gtd",
                 "/insecure",
                 "/mental-pain",
                 "/psychic-weight"
@@ -4892,6 +4922,7 @@
                 "/amazon",
                 "/chow",
                 "/enable",
+                "/gtd",
                 "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
