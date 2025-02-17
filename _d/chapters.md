@@ -40,6 +40,14 @@ Our lives are stories, containing many different chapters. However, regardless o
 
 ![](https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.webp)
 
+Each decade brings its own unique combination of resources and learnings:
+
+| Age  | What You Have                   | You've Learned                   | You Should                       |
+| ---- | ------------------------------- | -------------------------------- | -------------------------------- |
+| 20's | Time and health, but less money | The world is full of many things | Try everything you can!          |
+| 30's | Health and money, but less time | What you don't like              | Stop doing those things!         |
+| 40's | Time and money, but less health | What you like                    | Focus on doing those things most |
+
 ### 20s - Try everything you can
 
 And my advice to folks in their 20s - [Which I gave as a talk for the Amazon Interns](/22)
@@ -67,7 +75,7 @@ I'm working on this talk, give me content!
 Read the [prophet on children](https://www.amazon.com//dp/0394404289/):
 
 _Your children are not your children.
-They are the sons and daughters of Life’s longing for itself.
+They are the sons and daughters of Life's longing for itself.
 They come through you but not from you,
 And though they are with you yet they belong not to you._
 
@@ -84,7 +92,7 @@ _You are the bows from which your children as living arrows are sent forth._
 
 _The archer sees the mark upon the path of the infinite, and He bends you with His might that His arrows may go swift and far._
 
-_Let your bending in the archer’s hand be for gladness;
+_Let your bending in the archer's hand be for gladness;
 For even as He loves the arrow that flies, so He loves also the bow that is stable._
 
 ### were new
@@ -112,13 +120,12 @@ Hindu's have these kinds of ideas well codified in [the vedics](<https://en.wiki
 
 Their progression is student, householder, forest dweller and renoucned life. From Wikipedia
 
-| Āśrama or stage | Age (years)[10] | Description | Rituals of transition |
-|----------------|----------------|-------------|---------------------|
-| Student | Birth–25 | Brahmacharya represented the bachelor student stage of life. This stage focuses on education and included the practice of celibacy.[2] The student went to a Gurukul (family/clan of the guru) and typically would live with a Guru (mentor), acquiring knowledge of science, philosophy, scriptures and logic, practicing self-discipline, working to earn dakshina to be paid for the guru, learning to live a life of Dharma (righteousness, morals, duties). | Upanayana at entry.[11][12] Samavartana at exit.[13] |
-| House Holder | 25–50 | This stage referred to the individual's married life, with the duties of maintaining a household, raising a family, educating one's children, and leading a family-centred and a dharmic social life.[2][14][15] Grihastha stage was considered as the most important of all stages in sociological context, as human beings in this stage not only pursued a virtuous life, they produced food and wealth that sustained people in other stages of life, as well as the offsprings that continued mankind.[2][4] The stage also represented one where the most intense physical, sexual, emotional, occupational, social and material attachments exist in a human being's life.[16] | Hindu wedding at entry. |
-| Retired/ Forrest Dweller | 50–75 | The retirement stage, where a person handed over household responsibilities to the next generation, took an advisory role, and gradually withdrew from the world.[17][18] Vanaprastha stage was a transition phase from a householder's life with its greater emphasis on Artha and Kama (wealth, security, pleasure and desires) to one with greater emphasis on Moksha (spiritual liberation).[17][19] | |
-| Ascetic / Renounced Life  | 75+ (or anytime) | The stage was marked by renunciation of material desires and prejudices, represented by a state of disinterest and detachment from material life, generally without any meaningful property or home (ascetic), and focused on moksha, peace and simple spiritual life.[20][21] Anyone could enter this stage after completing the Brahmacharya stage of life.[1] | |
-
+| Āśrama or stage          | Age (years)[10]  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Rituals of transition                                |
+| ------------------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| Student                  | Birth–25         | Brahmacharya represented the bachelor student stage of life. This stage focuses on education and included the practice of celibacy.[2] The student went to a Gurukul (family/clan of the guru) and typically would live with a Guru (mentor), acquiring knowledge of science, philosophy, scriptures and logic, practicing self-discipline, working to earn dakshina to be paid for the guru, learning to live a life of Dharma (righteousness, morals, duties).                                                                                                                                                                                                                      | Upanayana at entry.[11][12] Samavartana at exit.[13] |
+| House Holder             | 25–50            | This stage referred to the individual's married life, with the duties of maintaining a household, raising a family, educating one's children, and leading a family-centred and a dharmic social life.[2][14][15] Grihastha stage was considered as the most important of all stages in sociological context, as human beings in this stage not only pursued a virtuous life, they produced food and wealth that sustained people in other stages of life, as well as the offsprings that continued mankind.[2][4] The stage also represented one where the most intense physical, sexual, emotional, occupational, social and material attachments exist in a human being's life.[16] | Hindu wedding at entry.                              |
+| Retired/ Forrest Dweller | 50–75            | The retirement stage, where a person handed over household responsibilities to the next generation, took an advisory role, and gradually withdrew from the world.[17][18] Vanaprastha stage was a transition phase from a householder's life with its greater emphasis on Artha and Kama (wealth, security, pleasure and desires) to one with greater emphasis on Moksha (spiritual liberation).[17][19]                                                                                                                                                                                                                                                                              |                                                      |
+| Ascetic / Renounced Life | 75+ (or anytime) | The stage was marked by renunciation of material desires and prejudices, represented by a state of disinterest and detachment from material life, generally without any meaningful property or home (ascetic), and focused on moksha, peace and simple spiritual life.[20][21] Anyone could enter this stage after completing the Brahmacharya stage of life.[1]                                                                                                                                                                                                                                                                                                                      |                                                      |
 
 ### Don Juan's Four Enemies
 
