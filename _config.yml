@@ -90,6 +90,18 @@ exclude:
     "package.json",
     "cypress",
     "node_modules",
+    "xnotes",
+    ".cursor",
+    "cursor-logs",
+    "chop-logs",
+    ".aider.tags.cache.v3",
+    ".husky",
+    ".vscode",
+    "blog.chroma.db",
+    "chop-conventions",
+    "devdocker",
+    "docs",
+    "tech_graveyard",
   ]
 
 permalink: /:title
