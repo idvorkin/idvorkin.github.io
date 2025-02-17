@@ -34,6 +34,9 @@ A prompt will kick start a great conversation, a great insight, and a great rela
   - [Fun](#fun)
   - [How Was Your Day](#how-was-your-day)
   - [When Feeling Disappointed](#when-feeling-disappointed)
+  - [Better Than Good Job](#better-than-good-job)
+- [Mental Health](#mental-health)
+  - [Feeling Anxious](#feeling-anxious)
 - [Coaching Prompts](#coaching-prompts)
 
 <!-- vim-markdown-toc-end -->
@@ -276,6 +279,33 @@ Better than "how was your day?" - try these specific questions:
 - It's okay to feel sad—it shows you care
 - This didn't go how I wanted, but I'll figure out what to do next
 - I'm proud of you for putting in so much effort, even though it didn't work out this time
+
+### Better Than Good Job
+
+Instead of just saying "good job", try these prompts to build mental strength and independence:
+
+- "You worked so hard on this—what do YOU think?" Encourage reflection and help them value their own thoughts.
+- "I love how you kept trying, even when it got tough." Acknowledge persistence and teach that effort matters more than instant results.
+- "Look how far you've come!" Celebrate progress and improvement, not just the end result.
+- "You solved that problem in such a creative way!" Call out specific traits they used, like creativity or courage.
+- "What was the hardest part, and how did you figure it out?" Build problem-solving skills and remind them of their capabilities.
+- "It's okay to feel frustrated. What could you try next?" Teach that discomfort is part of learning.
+- "I'm proud of how YOU feel about this." Help them find satisfaction in their own accomplishments.
+
+## Mental Health
+
+### Feeling Anxious
+
+- "It's understandable I feel that way right now." Feeling frustrated, nervous, or sad isn't weakness—it's human.
+- "What's one thing I can control right now?" Focus on taking small actions like deep breaths or clearing your desk.
+- "How else can I look at this situation?" Maybe a setback is a setup for something better.
+- "I don't have to do this alone." Asking for help shows courage, not weakness.
+- "I'm allowed to say no." Setting boundaries protects your mental health.
+- "What's the worst that could happen?" Often, it's not as bad as we imagine.
+- "I don't have to have all the answers right now." It's okay to sit with uncertainty.
+- "What would I say to a friend in this situation?" Be as kind to yourself as you would be to others.
+- "What small step can I take right now?" Start with one tiny action to build momentum.
+- "How have I gotten through hard times before?" You've overcome challenges before, and you can do it again.
 
 ## Coaching Prompts
 
