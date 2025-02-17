@@ -22,11 +22,12 @@ Sure, we all have those fantasies during rough meetings: "Finally, I'll write th
 
 Let's explore retirement holistically - beyond the spreadsheets and financial calculators - to understand what really makes for a fulfilling next chapter.
 
-{% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the energy to think about these topics. This post will resonate most with folks in a similar position - likely those whose kids are starting to push away and create their own lives, freeing up mental bandwidth to ponder what's next." style="info" %}
+{% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the energy to think about these topics. I'm also fortunate to achieve autonomy, mastery, and purpose from my work. This post will resonate most with folks in a similar position - likely those whose kids are starting to push away and create their own lives, freeing up mental bandwidth to ponder what's next." style="info" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
 
+- [The Great Fallacy: Work Isn't Your Prison](#the-great-fallacy-work-isnt-your-prison)
 - [The Map: Navigating by Autonomy, Mastery & Purpose](#the-map-navigating-by-autonomy-mastery--purpose)
 - [The Side Quests: Starting Adventures Before The End Game](#the-side-quests-starting-adventures-before-the-end-game)
 - [The Journey: Embracing Life's Next Phase](#the-journey-embracing-lifes-next-phase)
@@ -39,6 +40,15 @@ Let's explore retirement holistically - beyond the spreadsheets and financial ca
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
+## The Great Fallacy: Work Isn't Your Prison
+
+"If only I didn't have to work," we tell ourselves, "I could finally do all those meaningful things." But we tend to shorten this to just "not having to work," forgetting the crucial second half about doing meaningful things. This reveals the dangerous assumption: that work is what's keeping us from living our best lives.
+
+But work isn't a prison - it's often a structure that provides significant growth, connection, and purpose. This begs the question: If work truly prevents you from pursuing what matters, why wait for retirement? The same forces that hold us back now - procrastination, fear, inertia - don't vanish when we stop working. Without work's built-in structure, they often become more challenging.
+
+{% include summarize-page.html src="/dsat" %}
+{% include summarize-page.html src="/wlb" %}
+
 ## The Map: Navigating by Autonomy, Mastery & Purpose
 
 When we talk about retirement, we're often focused on what we're retiring _from_ rather than what we're retiring _to_. The real goal isn't retirement itself - it's achieving AMP: Autonomy, Mastery, and Purpose.
@@ -50,8 +60,6 @@ When we talk about retirement, we're often focused on what we're retiring _from_
 Work naturally provides us with identity and purpose - through our roles, our impact, and our daily interactions. While we'll need to consciously rebuild these elements in retirement, that's not a bad thing. In fact, being intentional about where we get our AMP while still working can make the transition much smoother.
 
 I've seen the power of AMP both in my own career and in leading others. In my current role, I'd happily do about 70% of my job even if I didn't need the money - that portion aligns perfectly with my values, challenges me in the right ways, and gives me the autonomy I crave. The other 30%? That's why they call it work - and why they pay me. You can see how these principles play out in leadership in my [manager book](/manager-book#personal-motivations), and their impact in the [kind words shared by my teams on LinkedIn](/static/idvorkin-linked-in-feedback-lastest.pdf). The catch is, you can't really find a job that's just the good parts. The key is maximizing the ratio of energizing work to draining work, both in your career and in retirement.
-
-{% include summarize-page.html src="/dsat" %}
 
 Financial independence is just a tool that enables AMP - it's not the end goal. The money provides the foundation, but AMP provides the fulfillment. As you plan for retirement, consider how each decision supports or detracts from these three core elements.
 
