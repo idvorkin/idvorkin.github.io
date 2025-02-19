@@ -1,9 +1,6 @@
 ---
 description: ALWAYS use when creating or editing blog posts
 globs: ["_posts/*.md", "_d/*.md"]
-tags: [blog, jekyll, markdown]
-priority: 1
-version: 1.0.0
 ---
 
 # Blog Post Convention Standards
@@ -49,18 +46,33 @@ version: 1.0.0
 - Ensure section titles in TOC match exactly with headings in content
 
 4. List Replacements in Tables
-   - Use `[lXX](lXX)` format in tables
+   - Use `[lXX](mdc:lXX)` format in tables
    - Ensure unique list numbers across file
    - Structure lists with `<div/>` tags
    - First item must be list identifier
 
 5. Link Management
    - Check back-links.json for correct redirects
-   - Use format: `[visible text](/redirect-url)`
+   - Use format: `[visible text](mdc:redirect-url)`
    - Update all related content links
 
-6. Writing Style
-   - Fun and quirky tone
+ 6. Cross-Linking Content
+- For regular blog posts (in `_posts` or `_d`):
+  ```markdown
+  {% include summarize-page.html src="/post-permalink" %}
+  ```
+- For family journal entries (in `_ig66`):
+  - Do NOT use summarize-page
+  - Use direct links instead:
+  ```markdown
+  [description](/ig66/week-number)
+  ```
+- For any content without a permalink:
+  - Do NOT use summarize-page
+  - Use direct links to the content
+
+7. Writing Style
+  - Fun and quirky tone
    - Technical but not boring
    - No emojis in any content
    - Clean and professional formatting
@@ -82,8 +94,8 @@ Introduction paragraph about learning methods.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
-* [Core Concepts](#core-concepts)
-* [Practice Methods](#practice-methods)
+* [Core Concepts](mdc:#core-concepts)
+* [Practice Methods](mdc:#practice-methods)
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
@@ -93,7 +105,7 @@ Content with proper formatting...
 
 | Day | Activities |
 |-----|------------|
-| Mon | [l31](l31) |
+| Mon | [l31](mdc:l31) |
 
 <div/>
 
