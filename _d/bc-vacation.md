@@ -78,6 +78,51 @@ Vancouver's food scene is incredible:
 - Fresh seafood
 - Food trucks
 
+Let me provide a detailed section about suspension bridges near Vancouver.
+
+### Hotels I like
+
+I love staying on the water. I think English Bay
+
+- The Sylvia - Weird eclectic Hotel
+- Best Western Sands - They have a dual queen suite - I'm a fan if I can get it booking early.
+
+### Suspension Bridges
+
+Vancouver area offers several spectacular suspension bridges:
+
+- Lynn Canyon Suspension Bridge
+  - Free alternative to Capilano
+  - Less crowded, more natural setting
+  - Great hiking trails nearby
+  - 50 meters high over rushing water
+  - Connected to ecological center
+
+I think I went to some of these pre-COVID, it's time to go again.
+
+- Capilano Suspension Bridge
+
+  - Most famous and touristy
+  - 140 meters long, 70 meters high
+  - Includes treetop adventure and cliff walk
+  - Beautifully lit during holidays
+  - Admission is pricey but worth it
+
+- Sea to Sky Gondola Suspension Bridge
+
+  - Located in Squamish (1 hour from Vancouver)
+  - Spectacular mountain and ocean views
+  - Combined with gondola experience
+  - Multiple viewing platforms
+  - Year-round accessibility
+
+- Cascade Falls Suspension Bridge
+  - Located in Mission (1.5 hours from Vancouver)
+  - Short hike to reach the bridge
+  - Beautiful waterfall views
+  - Less touristy experience
+  - Free admission
+
 ## Victoria
 
 Victoria, the capital of British Columbia, offers a perfect blend of British charm and Pacific Northwest beauty. Read about our [summer 2024 Victoria adventure](/ig66/749) for more details!
@@ -129,6 +174,32 @@ The Yellow Deli is more than just a restaurant - it's an experience. You can rea
 
 {% include alert.html content="The Yellow Deli is run by a religious organization known as The Twelve Tribes. While the food and ambiance are excellent, you can read more about the organization in [Zach's write-up](/ig66/718)." style="info" %}
 
+#### What I like to order there
+
+- They never have the cold Matte - I'm looking fowrad to getting it!
+- I like the Reuben, and the Deli Rose (Amelia prefers Deli Rose)
+- Tori Enjoys The yellow Submarine
+
+### Hotel: Hampton Inn
+
+Has a water slide, great gym, and a really "Happines" Theme
+
+### Waterfalls
+
+Let me search for waterfalls near Chilliwack to provide accurate information.
+
+I'll use the web_search tool to find the other major waterfalls in the area.
+
+There's a great water fall super easy to Drive+Walkt to:
+
+- Bridal Veil Falls
+
+There are 3 others, I've yet to go there though:
+
+- Bosumarne Falls
+- Cascade Falls
+- Flood Falls
+
 ### Nature and Outdoor Activities
 
 Chilliwack offers beautiful outdoor experiences:
@@ -146,6 +217,11 @@ Chilliwack offers beautiful outdoor experiences:
 - Be prepared for questions about your visit
 - Check border wait times before departing
 - Remember duty-free limits
+
+#### Notable BorderCrossings
+
+- What you're coming for a sandwidch?
+- Why are you coming (angry), then wait, are those flowers on your car? Yes. And bunnies. Suddenly smiling
 
 ### Getting Around
 
