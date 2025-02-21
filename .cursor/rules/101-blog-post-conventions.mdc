@@ -34,8 +34,9 @@ version: 1.0.0
    - Never use 'aliases' field (deprecated)
 
 3. Table of Contents
-   - Place TOC immediately after first paragraph (new posts)
+ - Place TOC immediately after first paragraph (new posts)
    - Maintain existing TOC location (existing posts)
+   - ALWAYS update TOC when adding, removing, or modifying sections
    - Use vim-markdown-toc markers:
      ```markdown
      <!-- prettier-ignore-start -->
@@ -43,7 +44,9 @@ version: 1.0.0
      [TOC content]
      <!-- vim-markdown-toc-end -->
      <!-- prettier-ignore-end -->
-     ```
+- Verify TOC links work after updates
+- Keep TOC hierarchy consistent with document structure
+- Ensure section titles in TOC match exactly with headings in content
 
 4. List Replacements in Tables
    - Use `[lXX](lXX)` format in tables
@@ -113,4 +116,4 @@ No TOC, wrong metadata format, emojis used...
 
 * Random list without proper structure
 * No proper formatting
-</example> 
+</example>
