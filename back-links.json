@@ -49,6 +49,7 @@
         "/Business-Model-You": "/bmy",
         "/care": "/caring",
         "/centenarian": "/last-year",
+        "/chilliwack": "/bc",
         "/classact": "/class-act",
         "/coach": "/coaching",
         "/Coaching-Questions": "/coaching",
@@ -224,6 +225,7 @@
         "/uncategorized": "/random-idea",
         "/untangled-book": "/untangled",
         "/vacation": "/timeoff",
+        "/vancouver": "/bc",
         "/virus": "/covid",
         "/voices-in-my-head": "/voices",
         "/vr": "/ar",
@@ -277,6 +279,7 @@
             "description": "You survived young kids, marriage, house, some easy crises, and now it’s time for remember , a healthy woman has a thousand wishes, a sick woman - just one: Things i wish I knew at 42\n\n",
             "file_path": "_site/42.html",
             "outgoing_links": [
+                "/chapters",
                 "/diet",
                 "/last-year",
                 "/physical-health",
@@ -306,7 +309,9 @@
                 "/goals",
                 "/gtd"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/goals"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/4dx.md",
             "doc_size": 16000
@@ -849,6 +854,21 @@
             "markdown_path": "_d/balloon.md",
             "doc_size": 18000
         },
+        "/bc": {
+            "url": "/bc",
+            "title": "BC Vacation Guide: Vancouver & Chilliwack Adventures",
+            "description": "A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you’re planning a quick weekend getaway or a longer adventure, here’s what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my summer 2024 adventures, Yellow Deli expedition, and various time off adventures:\n\n",
+            "file_path": "_site/bc.html",
+            "outgoing_links": [
+                "/d/time-off-2024-02",
+                "/ig66/718",
+                "/ig66/749"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/bc-vacation.md",
+            "doc_size": 20000
+        },
         "/be-proactive": {
             "url": "/be-proactive",
             "title": "Be Proactive",
@@ -1098,25 +1118,31 @@
                 "/enemy"
             ],
             "incoming_links": [
+                "/42",
                 "/retire",
                 "/y25"
             ],
             "redirect_url": "",
             "markdown_path": "_d/chapters.md",
-            "doc_size": 18000
+            "doc_size": 19000
         },
         "/chasing-daylight": {
             "url": "/chasing-daylight",
             "title": "Chasing Daylight: Imagine you're gonna die in less then 100 days",
-            "description": "Read a great book about a guy who found out he was gonna die in 100 days. Smart guy used to be CEO of KPMG, cool to see what he did.\n\n",
+            "description": "Monday morning: You’re Eugene O’Kelly, CEO of KPMG, reviewing next quarter’s strategy. Your calendar is packed with board meetings, your daughter’s college visits are scheduled for fall, and you’re planning that anniversary trip for next summer. Tuesday afternoon: You’re sitting in a doctor’s office, trying to process the words “terminal brain cancer” and “three months to live.” In an instant, your calendar becomes meaningless - all those carefully planned years collapse into a countdown of just 100 days. This was O’Kelly’s reality, and his response was remarkable: he chose to approach his death with the same clarity and purpose that had marked his life. This is what I learned from his story.\n\n",
             "file_path": "_site/chasing-daylight.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/death",
+                "/happy",
+                "/last-year",
+                "/moments"
+            ],
             "incoming_links": [
                 "/last-year"
             ],
             "redirect_url": "",
             "markdown_path": "_d/chasing-daylight.md",
-            "doc_size": 11000
+            "doc_size": 18000
         },
         "/chop": {
             "url": "/chop",
@@ -1715,6 +1741,7 @@
                 "/tesla"
             ],
             "incoming_links": [
+                "/bc",
                 "/timeoff"
             ],
             "redirect_url": "",
@@ -1766,6 +1793,7 @@
                 "/last-year"
             ],
             "incoming_links": [
+                "/chasing-daylight",
                 "/covid",
                 "/elder",
                 "/last-year",
@@ -1916,7 +1944,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/2017-11-12-thedip.md",
-            "doc_size": 26000
+            "doc_size": 27000
         },
         "/docker": {
             "url": "/docker",
@@ -2348,6 +2376,7 @@
             "description": "Goal are critcal, there are multiple goal systems and they have consequences. They are mechansims to deliver without micro managements.\n\n",
             "file_path": "_site/goals.html",
             "outgoing_links": [
+                "/4dx",
                 "/mortality-software"
             ],
             "incoming_links": [
@@ -2355,7 +2384,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/goals.md",
-            "doc_size": 14000
+            "doc_size": 17000
         },
         "/google-photos": {
             "url": "/google-photos",
@@ -2501,6 +2530,7 @@
                 "/negotiate"
             ],
             "incoming_links": [
+                "/chasing-daylight",
                 "/d/time-off-2020-12",
                 "/d/time-off-2021-12",
                 "/d/time-off-2022-02",
@@ -2823,6 +2853,7 @@
             ],
             "incoming_links": [
                 "/42",
+                "/chasing-daylight",
                 "/death",
                 "/retire",
                 "/y24",
@@ -2830,7 +2861,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/last-year.md",
-            "doc_size": 14000
+            "doc_size": 17000
         },
         "/laws-of-power": {
             "url": "/laws-of-power",
@@ -3142,6 +3173,7 @@
             ],
             "incoming_links": [
                 "/balance",
+                "/chasing-daylight",
                 "/d/time-off-2022-12",
                 "/d/time-off-2023-04",
                 "/d/time-off-2023-08",
@@ -3730,7 +3762,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/retire.md",
-            "doc_size": 22000
+            "doc_size": 23000
         },
         "/roblox-dev": {
             "url": "/roblox-dev",
