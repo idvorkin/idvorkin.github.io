@@ -73,22 +73,50 @@ You can't stop your decline but you can slow it down. Same as the plan to build 
 
 ## The Four Horsemen of Death
 
-While the Centenarian Olympics give us functional goals to strive for, we must understand what we're training against. Peter Attia describes four major threats to our longevity and health span - the Four Horsemen of Death:
+While the Centenarian Olympics give us functional goals to strive for, we must understand what we're training against. Peter Attia describes four major threats to our longevity and health span - the Four Horsemen of Death. Let's examine them from most to least influenceable through our actions, starting with the foundation we have the most control over:
 
-1. **Cardiovascular Disease** - Heart attacks, strokes, and other cardiovascular issues remain the leading cause of death. Prevention involves maintaining healthy blood pressure, cholesterol levels, and cardiovascular fitness.
+1. **Type 2 Diabetes and Metabolic Dysfunction**
 
-2. **Cancer** - The second leading cause of death, with prevention focusing on early detection, lifestyle factors, and maintaining a strong immune system.
+   - The foundation that influences all other horsemen
+   - Characterized by insulin resistance and blood sugar dysregulation
+   - Increases risk of cardiovascular disease, cancer, and neurodegeneration
+   - Prevention through diet, exercise, sleep, and stress management
+   - Regular monitoring of markers like HbA1c, fasting glucose, insulin
 
-3. **Neurodegenerative Disease** - Including Alzheimer's and dementia, these conditions severely impact quality of life. Prevention involves cognitive engagement, physical exercise, and metabolic health.
+2. **Cardiovascular Disease**
 
-4. **Accidents** - While less predictable, we can reduce risk through maintaining physical capability (strength, balance, coordination) and cognitive function.
+   - Heart attacks, strokes, and other cardiovascular issues remain the leading cause of death
+   - Risk factors include high blood pressure, high cholesterol, inflammation
+   - Prevention through cardiovascular fitness, diet, stress management
+   - Early detection through regular screening of markers like blood pressure, lipids
+   - Zone 2 cardio training is crucial for prevention
+
+3. **Neurodegenerative Disease**
+
+   - Including Alzheimer's, dementia, and cognitive decline
+   - Risk factors include genetics, cardiovascular health, metabolic health
+   - Prevention through cognitive engagement, physical exercise, sleep quality
+   - Both aerobic exercise and strength training protect brain function
+   - Social engagement and purpose help maintain cognitive health
+
+4. **Cancer**
+   - The second leading cause of death globally
+   - Risk influenced by genetics, environment, lifestyle choices
+   - Prevention through metabolic health, immune system strength, avoiding carcinogens
+   - Early detection through regular screening based on age/risk factors
+   - Strength training helps maintain muscle mass during treatment
+
+We start with metabolic health because it's our greatest point of leverage - the condition we can influence most through daily choices and habits. While we can't completely control any of these conditions, improving our metabolic health creates a strong foundation that helps protect against all other horsemen.
 
 These horsemen don't just threaten our life - they threaten our ability to compete in our personal Centenarian Olympics. Our training isn't just about being able to lift our grandkids or walk for an hour – it's about building resilience against these major threats:
 
-- **Cardiovascular Training** (Zone 2 and Zone 5) helps fight the first horseman by maintaining heart health and vascular function
-- **Strength Training** helps fight cancer through improved metabolic health and helps prevent accidents through better functional capacity
-- **Stability Work** reduces accident risk and supports brain health through complex movement patterns
+- **Metabolic Health** requires a comprehensive approach of exercise, nutrition, sleep, and stress management
+- **Cardiovascular Training** (Zone 2 and Zone 5) helps fight cardiovascular disease through improved heart health and vascular function
+- **Strength Training** helps fight cancer through improved metabolic health and helps prevent muscle wasting
+- **Stability Work** reduces fall risk and supports brain health through complex movement patterns
 - **Cognitive Training** combined with physical activity helps ward off neurodegenerative disease
+
+The key insight is that these horsemen are interconnected - metabolic health influences cardiovascular disease risk, which affects brain health, and so on. This is why we need a comprehensive approach to training that addresses all aspects of health.
 
 ## Physical Health Components
 
