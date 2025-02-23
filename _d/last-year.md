@@ -23,6 +23,7 @@ This post draws heavily from Peter Attia's work on longevity and healthspan, par
     - [The Inverted Parabola of Health](#the-inverted-parabola-of-health)
     - [Your peak health age](#your-peak-health-age)
     - [Your rate of decline](#your-rate-of-decline)
+- [The Four Horsemen of Death](#the-four-horsemen-of-death)
 - [Physical Health Components](#physical-health-components)
     - [Stability](#stability)
     - [Strength](#strength)
@@ -69,6 +70,25 @@ You want to train as hard as you can till you peak. The better your starting pos
 ### Your rate of decline
 
 You can't stop your decline but you can slow it down. Same as the plan to build your starting health
+
+## The Four Horsemen of Death
+
+While the Centenarian Olympics give us functional goals to strive for, we must understand what we're training against. Peter Attia describes four major threats to our longevity and health span - the Four Horsemen of Death:
+
+1. **Cardiovascular Disease** - Heart attacks, strokes, and other cardiovascular issues remain the leading cause of death. Prevention involves maintaining healthy blood pressure, cholesterol levels, and cardiovascular fitness.
+
+2. **Cancer** - The second leading cause of death, with prevention focusing on early detection, lifestyle factors, and maintaining a strong immune system.
+
+3. **Neurodegenerative Disease** - Including Alzheimer's and dementia, these conditions severely impact quality of life. Prevention involves cognitive engagement, physical exercise, and metabolic health.
+
+4. **Accidents** - While less predictable, we can reduce risk through maintaining physical capability (strength, balance, coordination) and cognitive function.
+
+These horsemen don't just threaten our life - they threaten our ability to compete in our personal Centenarian Olympics. Our training isn't just about being able to lift our grandkids or walk for an hour – it's about building resilience against these major threats:
+
+- **Cardiovascular Training** (Zone 2 and Zone 5) helps fight the first horseman by maintaining heart health and vascular function
+- **Strength Training** helps fight cancer through improved metabolic health and helps prevent accidents through better functional capacity
+- **Stability Work** reduces accident risk and supports brain health through complex movement patterns
+- **Cognitive Training** combined with physical activity helps ward off neurodegenerative disease
 
 ## Physical Health Components
 
