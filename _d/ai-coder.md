@@ -39,6 +39,17 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Integration Tips](#integration-tips)
   - [Security Considerations](#security-considerations)
   - [DRY CHOP: Your AI's Cookbook](#dry-chop-your-ais-cookbook)
+- [Igor's Predictions, Insights, and Mental Models](#igors-predictions-insights-and-mental-models)
+  - [Artisanal Hand Crafted Commits](#artisanal-hand-crafted-commits)
+  - [Bespoke tools](#bespoke-tools)
+  - [The Evolution of Junior Developers](#the-evolution-of-junior-developers)
+  - [The Evolution of programming languages](#the-evolution-of-programming-languages)
+  - [AI Rule Packs](#ai-rule-packs)
+  - [We'll give up on understanding AI's solution](#well-give-up-on-understanding-ais-solution)
+  - [Prompt Engineering not that important](#prompt-engineering-not-that-important)
+  - [Prioritizing Skills](#prioritizing-skills)
+  - [What will take AI longer to "Solve"](#what-will-take-ai-longer-to-solve)
+  - [From Cheap Computing to Cheap Intelligence](#from-cheap-computing-to-cheap-intelligence)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -412,3 +423,78 @@ Here's a recent example of this approach in action:
    - AI helped establish clear permalink change process
    - Added guidance on maintaining compatibility
    - Standardized use of redirect_from in front matter
+
+## Igor's Predictions, Insights, and Mental Models
+
+Most of this is picked up from others (there are no unique thoughts), but here's my framing
+
+### Artisanal Hand Crafted Commits
+
+- Two reasons to write code, for fun, and for getting stuff done.
+- Most code will be to get stuff done, and will be AI generated.
+- People will write code as a hobby, like wood working today.
+- I'm skeptical people will buy "Artisinal Code", but who knows, people like antiques
+
+### Bespoke tools
+
+- With coding so easy, might as well make a tool just for your use case.
+  - See my y.py
+- Probably a pendulum swings from every company needing own IT department -> SaaS -> Single Dev does all the required tooling
+
+### The Evolution of Junior Developers
+
+- You don't need to know how to do the the How Nearly as much.
+- Key skill will be spec/verify - which is closer to PM.
+- We have junior PMs
+
+### The Evolution of programming languages
+
+Two types:
+
+- Optimized for AI Reading
+
+  - Think is similar to evolution
+
+- Optimized for Conveying information to AIs
+  - Maybe goes back to UML
+  - Maybe multiple levels of AI languages Human -> AI High Level -> AI Low Level
+
+### AI Rule Packs
+
+- This will be super valuable, think about all the architecture/coding conventions
+- AI Code Pack above
+
+### We'll give up on understanding AI's solution
+
+- Already there with Ranking models and how LLMs work
+- Now having AI generated Antennas humans don't know how they work.
+
+### Prompt Engineering not that important
+
+- As models get better, the early precise prompt alchemy doesn't matter
+
+### Prioritizing Skills
+
+- Curiosity
+  - With things changing so fast, being curious
+  - Given the speed of evolution, the winners will be those that
+- Entrepreneur >> Technologist
+- Technical Breadth >> Technical Depth
+- Specification >> Specification Verification >> Implementation Verification >> Implementation >> Craft
+- Architecture >> Craft
+- Verification >> Craft
+- Why/What >> How/Who.
+  - NOTE: When = (Why, What, How, Who)
+- AI Usage >> AI Understanding
+
+### What will take AI longer to "Solve"
+
+Similar to humans: - Regulations - Legacy code bases - Hard To Verify - Debugging that requires Volume
+
+### From Cheap Computing to Cheap Intelligence
+
+That's the key:
+
+- From Kindergarten Student to PhD in very low years
+- From Moore's law at every 2 years, to like every 3-6 months
+- Not only smart agents, but as many as you want.
