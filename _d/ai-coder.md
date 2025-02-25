@@ -14,13 +14,12 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
 - [What is CHOP?](#what-is-chop)
   - [The Evolution of AI Coding](#the-evolution-of-ai-coding)
   - [Core Concepts](#core-concepts)
-  - [Key Tools](#key-tools)
-    - [Cursor](#cursor)
-      - [Cursor Tips](#cursor-tips)
-    - [Maintain Chat History with your commits.](#maintain-chat-history-with-your-commits)
-      - [(OLD) Browsing Cursor Chats](#old-browsing-cursor-chats)
-    - [Aider](#aider)
-    - [Avante](#avante)
+- [Key Tools](#key-tools)
+  - [Cursor: From Amazing Tab Completion to the best agent](#cursor-from-amazing-tab-completion-to-the-best-agent)
+    - [Cursor Tips](#cursor-tips)
+    - [Maintain Chat History with your commits](#maintain-chat-history-with-your-commits)
+  - [Aider](#aider)
+  - [Avante](#avante)
 - [Use Cases and Examples](#use-cases-and-examples)
   - [Using latest docs](#using-latest-docs)
   - [Fixing an indentation handling bug in an nvim plugin](#fixing-an-indentation-handling-bug-in-an-nvim-plugin)
@@ -94,32 +93,42 @@ The journey to CHOP has been fascinating:
    - Learns from project-specific rules
    - Maintains consistent coding standards
 
-### Key Tools
+## Key Tools
 
 Here are some of the leading tools that enable CHOP development:
 
-#### Cursor
+### Cursor: From Amazing Tab Completion to the best agent
 
 - [Cursor Changelog](https://changelog.cursor.com/)
 - [Cursor Features](https://www.cursor.com/features)
 
-A standout IDE built on VS Code that deeply integrates AI capabilities. Interestingly, they started building a VSCode extension but found the extension model too limiting for their AI ambitions - so they just forked the entire VSCode codebase! This bold move lets them deeply integrate AI features that would be impossible as a mere extension.
+**Tomorrow: The Coding State of the Art**
 
-Their tab completion is a game-changer:
+I don't know what they're going to do next, but they seem to be at the front of the pack. It felt like they slowed down their breakneck speed after their initial releases. Cynically, you'd think it was due to [60 Million in OpenAI funding](https://www.cursor.com/blog/series-a), but realistically the problem is probably just scaling.
 
-- Includes the code before your cursor position (huge for context)
-- Intelligently predicts which line you'll want to change next
-- Feels more like pair programming than traditional autocomplete
-- Makes refactoring feel natural and intuitive
+**Today: The Ultimate Agent**
 
-Other key features:
+Cursor has evolved into a comprehensive AI coding partner:
 
-- Uses Claude for enhanced understanding
-- Native documentation indexing support
-- Chat/apply mode for interactive development
-- Smart refactoring suggestions
+- Run commands like tests on its own (up to you if you want to review, or YOLO it)
+- It can even do amazing things like point it at a GitHub issue and repo, and have it fix it
+- Just copy in screenshots and say "fix it"
+- RAG in relevant parts of the codebase automatically
 
-##### Cursor Tips
+**Yesterday: Amazing Tab Completion**
+
+Their tab completion revolutionized how we interact with code:
+
+- Complete code before and after your cursor position
+- Complete natural language descriptions into working code
+- Jump to the next edit point (very awesome when doing rename refactoring, even across multiple variables)
+- Makes refactoring intuitive by understanding your codebase's patterns
+
+**Day 1: Beyond VS Code Extensions**
+
+Pretty funny - they wanted to do tab completion, but found the VS Code extension model was too limiting for their AI ambitions. Their solution? Fork the entire VS Code codebase! Now they can do whatever they want, maintain almost total compatibility with VS Code, AND implement whatever extensions they want.
+
+#### Cursor Tips
 
 1. **YOLO Mode for Tests**
 
@@ -141,7 +150,7 @@ Other key features:
    - Go to Settings -> Features
    - Enable "Large Context" option
 
-#### Maintain Chat History with your commits.
+#### Maintain Chat History with your commits
 
 Having the chat history for diffs is great. Here's my current workflow:
 
@@ -162,23 +171,7 @@ Having the chat history for diffs is great. Here's my current workflow:
 
    * Using CHOP to add a nice [tig configuration](https://github.com/idvorkin/Settings/commit/9b73588eb304addf6e1ae8257251d39c93f740c3?short_path=cac8bdd#diff-cac8bdd2c7d1bef00dddc15e01d81bbc2030f9ec8789d2307c7bde1ce0b2c58a)
 
-##### (OLD) Browsing Cursor Chats
-
-The [Cursor Chat Browser](https://github.com/thomas-pedersen/cursor-chat-browser) is a fantastic tool for reviewing and learning from your AI interactions:
-
-- Browse and search through your chat history
-- Filter conversations by date and content
-- Learn from past successful prompts and interactions
-- Identify patterns in effective AI collaboration
-- Great for improving your CHOP skills by studying what works
-
-To get started:
-
-1. Install the browser: `npm install -g cursor-chat-browser`
-2. Run it: `cursor-chat-browser`
-3. Open in your browser to explore your chat history
-
-#### Aider
+### Aider
 
 [Aider Release Notes on GitHub](https://github.com/paul-gauthier/aider/releases)
 
@@ -190,7 +183,7 @@ A command-line CHOP tool with some key learnings:
   2. Let it help create unit tests
   3. Example: [See this Aider-driven change](https://github.com/idvorkin/Settings/commit/234bdca31c4c44b2916de13c5fa858d83cbfe5cf)
 
-#### Avante
+### Avante
 
 [Avante on GitHub](https://github.com/yetone/avante.nvim)
 
