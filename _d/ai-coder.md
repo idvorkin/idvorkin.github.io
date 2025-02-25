@@ -17,7 +17,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Key Tools](#key-tools)
     - [Cursor](#cursor)
       - [Cursor Tips](#cursor-tips)
-      - [Export Cursor Chats](#export-cursor-chats)
+    - [Maintain Chat History with your commits.](#maintain-chat-history-with-your-commits)
       - [(OLD) Browsing Cursor Chats](#old-browsing-cursor-chats)
     - [Aider](#aider)
     - [Avante](#avante)
@@ -141,9 +141,26 @@ Other key features:
    - Go to Settings -> Features
    - Enable "Large Context" option
 
-##### Export Cursor Chats
+#### Maintain Chat History with your commits.
 
-Check out [SpecStory](https://docs.specstory.com/features)
+Having the chat history for diffs is great. Here's my current workflow:
+
+1. Install [SpecStory](https://docs.specstory.com/features), it will export your chat history
+
+2. Make a zsh function to copy the latest chat history to your repo:
+   Mine is called [chop-git-latest](https://github.com/idvorkin/settings/blob/7e9e90984dba2650b2cd4ee3a6c9511993ed73f4/shared/zsh_include.sh?plain=1#L708), and copies the latest chat history to zz-chop-logs, and add it to the commit.
+
+   - ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250225_093946.webp)
+
+3. Run commit, and have the AI write the commit message, but skip commenting on what's in the [zz-chop-logs](https://github.com/idvorkin/nlp/blob/2d804345426c211f34fd6990b61d9d550cbc1cd7/commit.py?plain=1#L23)
+
+4. This gives pretty github commits which include chat history like this:
+
+   - Because the log directory is zz-chop-logs, it shows up after the real commit
+   - Because the chat is linked to the commit it's easier to track
+   - PRO TIP: When your intent is showing the CHOP session, display the rich diff before sharing the URL. E.g.
+
+   * Using CHOP to add a nice [tig configuration](https://github.com/idvorkin/Settings/commit/9b73588eb304addf6e1ae8257251d39c93f740c3?short_path=cac8bdd#diff-cac8bdd2c7d1bef00dddc15e01d81bbc2030f9ec8789d2307c7bde1ce0b2c58a)
 
 ##### (OLD) Browsing Cursor Chats
 
