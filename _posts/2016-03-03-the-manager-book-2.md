@@ -102,6 +102,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [What is a tribe?](#what-is-a-tribe)
 - [Performance Management](#performance-management)
   - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
+  - [Translating Performance Ratings Between Companies](#translating-performance-ratings-between-companies)
   - [Best Practices For Performance Reviews](#best-practices-for-performance-reviews)
   - [The pain and the suffering of performance reviews](#the-pain-and-the-suffering-of-performance-reviews)
   - [Some definitions for low performers](#some-definitions-for-low-performers)
@@ -1401,6 +1402,30 @@ How to join a tribe: - TBD
 - Distribute compensation in accordance to impact
 - Validate growth plans and find opportunities across the organization
 - Assess bottom performers and ensure action is taken
+
+### Translating Performance Ratings Between Companies
+
+Different companies use different rating systems, making it challenging to compare performance across organizations. Here's how to translate ratings between major tech companies:
+
+| Company   | Top Rating  | Above Average    | Meeting Expectations | Below Expectations | Needs Improvement        |
+| --------- | ----------- | ---------------- | -------------------- | ------------------ | ------------------------ |
+| Meta      | Exceeds     | Exceeds-         | Meets All            | Meets Most         | Meets Some/Does Not Meet |
+| Amazon    | HV-1        | HV-2             | HV-3                 | LV-1               | LV-2                     |
+| Microsoft | Exceeded    | Achieved         | Partially Achieved   | Not Achieved       | -                        |
+| Google    | Superb      | Strongly Exceeds | Exceeds              | Consistently Meets | Partially Meets          |
+| Apple     | Outstanding | Excellent        | Very Good            | Good               | Needs Improvement        |
+
+**TL;DR: Use compensation increase % to translate**
+
+The most reliable way to translate between rating systems is to look at the typical compensation increase associated with each rating level. For example:
+
+- Top ratings (Exceeds, HV-1, etc.) typically result in 15-25% compensation increases
+- Above average ratings (Exceeds-, HV-2, etc.) typically result in 8-15% increases
+- Meeting expectations ratings typically result in 3-8% increases
+- Below expectations ratings typically result in 0-3% increases
+- Needs improvement ratings typically result in no increase and often trigger performance improvement plans
+
+Remember that ratings are relative to level and expectations, so a "Meets All" for a senior engineer might represent higher absolute performance than an "Exceeds" for a junior engineer.
 
 ### Best Practices For Performance Reviews
 
