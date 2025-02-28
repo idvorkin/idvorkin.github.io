@@ -1405,27 +1405,29 @@ How to join a tribe: - TBD
 
 ### Translating Performance Ratings Between Companies
 
-Different companies use different rating systems, making it challenging to compare performance across organizations. Here's how to translate ratings between major tech companies:
+Different companies use different rating systems/labels, making it challenging to compare ratings across organizations. However, the goal of these systems is to provided differentiated compensation based on performance, and the easiest way to do that is to group engineers into 3-7 buckets, with each bucket getting a different amount of compensation. So to compare, compare the % of target compensation received.
 
-| Company   | Top Rating  | Above Average    | Meeting Expectations | Below Expectations | Needs Improvement        |
-| --------- | ----------- | ---------------- | -------------------- | ------------------ | ------------------------ |
-| Meta      | Exceeds     | Exceeds-         | Meets All            | Meets Most         | Meets Some/Does Not Meet |
-| Amazon    | HV-1        | HV-2             | HV-3                 | LV-1               | LV-2                     |
-| Microsoft | Exceeded    | Achieved         | Partially Achieved   | Not Achieved       | -                        |
-| Google    | Superb      | Strongly Exceeds | Exceeds              | Consistently Meets | Partially Meets          |
-| Apple     | Outstanding | Excellent        | Very Good            | Good               | Needs Improvement        |
+Here's a likely wrong/outdated example (made up by GPT, please provide me updates if you know them) of those companies and buckets:
 
-**TL;DR: Use compensation increase % to translate**
+| Company   | Top Rating      | Above Average    | Meeting Expectations | Somewhat Below     | Very Concerning          |
+| --------- | --------------- | ---------------- | -------------------- | ------------------ | ------------------------ |
+| Meta      | Greatly Exceeds | Exceeds-         | Meets All            | Meets Most         | Meets Some/Does Not Meet |
+| Amazon    | Top Tier        | HV-2             | HV-3                 | HV-3/LV-1          | LV-2                     |
+| Microsoft | Exceeded        | Achieved         | Partially Achieved   | Not Achieved       | -                        |
+| Google    | Superb          | Strongly Exceeds | Exceeds              | Consistently Meets | Partially Meets          |
+| Apple     | Outstanding     | Excellent        | Very Good            | Good               | Needs Improvement        |
 
-The most reliable way to translate between rating systems is to look at the typical compensation increase associated with each rating level. For example:
-
-- Top ratings (Exceeds, HV-1, etc.) typically result in 15-25% compensation increases
-- Above average ratings (Exceeds-, HV-2, etc.) typically result in 8-15% increases
-- Meeting expectations ratings typically result in 3-8% increases
-- Below expectations ratings typically result in 0-3% increases
-- Needs improvement ratings typically result in no increase and often trigger performance improvement plans
+- Define meeting expectation label as 100% compensation
+- The Top ratings label (Greatly Exceeds, Top Tier, etc.) is typically significantly more, often in the 150-200% compensation
+- Above and below are usually somewhere in the 125%-75% of target.
+- Very concerning ratings typically result in no increase and often trigger performance improvement plans
+- There is usually a "super top rating", limited to 3-5% of the company
 
 Remember that ratings are relative to level and expectations, so a "Meets All" for a senior engineer might represent higher absolute performance than an "Exceeds" for a junior engineer.
+
+Also good to refresh yourself on total compensation vs salary. It's important to understand how total compensation works:
+
+{% include summarize-page.html src="/comp" %}
 
 ### Best Practices For Performance Reviews
 
