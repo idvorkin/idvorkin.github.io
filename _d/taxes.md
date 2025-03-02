@@ -5,7 +5,7 @@ author: "Igor Dvorkin"
 inprogress: true
 comments: true
 permalink: /money
-imagefeature: https://github.com/idvorkin/blob/raw/master/icon_taxes.png
+imagefeaturelocal: raccoon-money.webp
 redirect_from:
   - /taxes
   - /saving
@@ -13,6 +13,8 @@ redirect_from:
 ---
 
 Most of the tax information on the web is a mess. It's confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes
+
+{% include local_image_float_right.html src="raccoon-money.webp" %}
 
 <!-- prettier-ignore-start -->
 
