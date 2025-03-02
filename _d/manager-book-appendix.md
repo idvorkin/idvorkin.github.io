@@ -28,6 +28,7 @@ A hodgepodge of additional resources for the manager book.
     - [Dream Job](#dream-job)
   - [Laws to remember](#laws-to-remember)
   - [Who has the monkey - fanstic advice from 1974!](#who-has-the-monkey---fanstic-advice-from-1974)
+  - [The Resilience of Alien Chess](#the-resilience-of-alien-chess)
   - [How you need to communicate differently](#how-you-need-to-communicate-differently)
 - [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
   - [Piniata](#piniata)
@@ -208,6 +209,12 @@ At the end of 2016, I joined [Amazon](/amazon) to learn the business of software
 
 An absolute classic article - must read "Who has the monkey"(https://hbr.org/1999/11/management-time-whos-got-the-monkey)
 
+### The Resilience of Alien Chess
+
+The concept of "Alien Chess" is a powerful metaphor for managing through uncertainty and change. Imagine playing chess where the rules constantly shift - pieces move differently each turn, the board transforms, and victory conditions evolve. This mirrors the challenges of modern management, where market conditions, team dynamics, and business requirements are constantly in flux. [The Resilience of Alien Chess](https://www.markrabkin.com/the-resilience-of-alien-chess/) explores how successful leaders adapt their strategies, embrace uncertainty, and guide their teams through ever-changing landscapes while maintaining focus on core objectives. Key skills are 1/ detecting it happened 2/ Accepting it happened 3/ Adapting.
+
+[Thinking about it](https://gist.github.com/idvorkin/be72ac90ae28084be82e792f4ca29dd6)
+
 ### How you need to communicate differently
 
 From Ian Tien:
@@ -267,7 +274,6 @@ Specific team members for engine, seat belts, etc
 - [Give away your legos](https://review.firstround.com/give-away-your-legos-and-other-commandments-for-scaling-startups) Dealing with org's scaling
 - [Sue's What does a manager Do, anyways](https://evilplantosavethe.world/2021/01/what-does-a-manager-do-anyway/)
 - [Sue's Manager vs IC](https://evilplantosavethe.world/2021/10/manager-vs-ic/)
-- [The Resilience of Alien Chess](https://www.markrabkin.com/the-resilience-of-alien-chess/) - Insights on managing through uncertainty and change
 
 ### Great books
 
