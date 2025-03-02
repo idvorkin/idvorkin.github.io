@@ -12,6 +12,10 @@ redirect_from:
 
 Breathing, an act so simple yet so crucial, harbors the potential to transform our health, mind, and life. This blog post is a deep dive into the world of breathing techniques, exploring a range of practices from Box Breathing and Victory Breath to Sitali Breath and the Breath Focus Technique. Each technique is detailed with its benefits and step-by-step instructions. In addition, the scientific perspective on breathing is explored. Whether you're seeking to reduce stress, improve focus, or simply understand the science of breathing, this post is your comprehensive guide. Join us as we explore the art of breathing, its techniques, and the science behind it.
 
+For a deeper understanding of the science behind breathing and its profound impact on our health, I highly recommend James Nestor's groundbreaking book:
+
+{% include amazon.html asin="0735213615" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -60,7 +64,10 @@ Good training available in the art of living breathing class
 
 #### Brilliant Mind Breath
 
-- I don't know this technique.
+- Yoga name: Not associated with a specific yoga name
+- Why it helps: This technique enhances mental clarity, focus, and cognitive function. It's particularly beneficial before tasks requiring concentration or creative thinking.
+- How to do it: Sit comfortably with a straight spine. Inhale deeply through your nose for 4 counts, hold for 2 counts, then exhale through your mouth for 6 counts.
+- How to do it details: As you practice, visualize bright, clear light entering your mind with each inhale, and mental fog or distractions leaving with each exhale. Practice for 3-5 minutes.
 
 #### Full Yogic Breath
 
@@ -71,7 +78,10 @@ Good training available in the art of living breathing class
 
 #### Straw Breath
 
-- I don't know this technique.
+- Yoga name: Not associated with a specific yoga name
+- Why it helps: This technique strengthens respiratory muscles, increases lung capacity, and improves breath control. It's also useful for reducing anxiety and improving focus.
+- How to do it: Purse your lips as if sipping through a straw, then inhale slowly and deeply. Exhale normally through your nose.
+- How to do it details: The resistance created by the pursed lips strengthens breathing muscles and encourages deeper inhalation. Start with 5-10 breaths and gradually increase.
 
 #### Bellows Breath/Hyper Ventilating
 
@@ -96,7 +106,10 @@ Good training available in the art of living breathing class
 
 #### Psychological Sigh
 
-- I don't know this technique.
+- Yoga name: Not associated with a specific yoga name
+- Why it helps: This technique quickly relieves stress and anxiety by triggering the parasympathetic nervous system. It's particularly effective for moments of acute stress or when you need to calm down quickly.
+- How to do it: Take two quick inhales through your nose (double inhale), followed by one long exhale through your mouth.
+- How to do it details: The first inhale partially fills your lungs, the second inhale tops them off, and the extended exhale releases carbon dioxide and triggers relaxation. Repeat 2-3 times when feeling stressed or anxious.
 
 #### Diaphragmatic Breathing
 
@@ -139,3 +152,15 @@ All about breathing
 {%include youtube.html src="x4m_PdFbu-s" %}
 
 #### Using the different parts of breathing cycle to get impact
+
+Different phases of the breathing cycle can be emphasized to achieve specific physiological and psychological effects:
+
+- **Inhale emphasis**: Energizing and activating. Emphasizing the inhale by making it longer than the exhale (e.g., inhale for 6, exhale for 4) can increase alertness, energy, and focus. This is helpful when you need to wake up or prepare for physical activity.
+
+- **Exhale emphasis**: Calming and relaxing. Making the exhale longer than the inhale (e.g., inhale for 4, exhale for 8) activates the parasympathetic nervous system, reducing stress and anxiety. This pattern is ideal for relaxation and preparing for sleep.
+
+- **Hold after inhale**: Increases oxygen absorption and can help with breath retention capacity. This is useful in practices like box breathing and can help improve lung capacity over time.
+
+- **Hold after exhale**: Creates a slight air hunger that can reset breathing patterns and increase CO2 tolerance. This phase, when practiced safely, can help with conditions like over-breathing and anxiety.
+
+The key is to match your breathing pattern to your desired state: longer inhales for energy, longer exhales for calm, and strategic breath holds for specific physiological effects.
