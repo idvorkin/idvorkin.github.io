@@ -1149,7 +1149,9 @@
             "title": "The CHOP Shop: Where AI Meets Code",
             "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
             "file_path": "_site/chop.html",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/humans-are-underrated"
+            ],
             "incoming_links": [
                 "/40yo",
                 "/ai",
@@ -1160,7 +1162,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 37000
+            "doc_size": 43000
         },
         "/chow": {
             "url": "/chow",
@@ -2604,7 +2606,8 @@
             "file_path": "_site/humans-are-underrated.html",
             "outgoing_links": [],
             "incoming_links": [
-                "/books-that-defined-me"
+                "/books-that-defined-me",
+                "/chop"
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2015-12-12-humans-are-underrated.md",
@@ -2861,7 +2864,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/last-year.md",
-            "doc_size": 17000
+            "doc_size": 19000
         },
         "/laws-of-power": {
             "url": "/laws-of-power",
@@ -2982,7 +2985,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
-            "doc_size": 153000
+            "doc_size": 156000
         },
         "/manager-book-appendix": {
             "url": "/manager-book-appendix",
