@@ -58,6 +58,8 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [The 3 types of rich](#the-3-types-of-rich)
   - [How to trade money for happiness](#how-to-trade-money-for-happiness)
   - [The unquenchable thirst](#the-unquenchable-thirst)
+  - [Financial Diabetes: Managing Financial Health](#financial-diabetes-managing-financial-health)
+  - [Financial Diabetes Complications](#financial-diabetes-complications)
 - [Other questions](#other-questions)
   - [How much is 1%](#how-much-is-1)
 - [Other Resources](#other-resources)
@@ -325,6 +327,38 @@ _For what are your possessions but things you keep and guard for fear you may ne
 _And tomorrow, what shall tomorrow bring to the overprudent dog burying bones in the trackless sand?_
 
 _And what is fear of need by need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?_
+
+### Financial Diabetes: Managing Financial Health
+
+Diabetes is a huge problem in this country, but for kids who grow up privileged, there is another risky disease—**financial diabetes**. Imagine spending as your blood sugar: every extravagant purchase is a sugary spike. **Insulin** as your financial discipline—a built-in sense of the value of money. Those growing up with modest means develop this natural insulin early on, learning to budget and save, keeping their financial sugar levels in check.
+
+Unfortuantely, children born into wealth often miss out on this early training, leaving them prone to wild spending binges that spike their financial sugar without the natural regulatory mechanism.
+
+Over time, these unchecked spikes can lead to serious complications—a credit score crash, dwindling savings, and even a legacy of money mismanagement passed on to the next generation. Yet, unlike actual insulin-dependent diabetes, this financial condition can remain hidden as long as external cash keeps flowing, masking the underlying imbalance. In other words, while a lavish lifestyle may temporarily cover up the symptoms, the absence of a natural fiscal insulin means that when the cash flow stops, the financial consequences can be just as severe.
+
+### Financial Diabetes Complications
+
+Like medical diabetes, financial diabetes leads to numerous complications if left untreated:
+
+1. **Financial Neuropathy**: Just as diabetes can cause nerve damage, financial diabetes leads to a numbing of financial sensitivity. Big purchases no longer register as significant, making it harder to feel the impact of spending decisions.
+
+2. **Lifestyle Creep Hyperglycemia**: Similar to how untreated diabetes leads to chronically high blood sugar, financial diabetes causes "lifestyle creep" where baseline expenses continuously rise, requiring ever-increasing income to maintain.
+
+3. **Inheritance Insulin Resistance**: When wealth passes to the next generation without financial education, children develop resistance to financial discipline, requiring increasingly dramatic interventions to correct spending habits.
+
+4. **Emergency Fund Ketoacidosis**: Just as diabetic ketoacidosis is a dangerous complication of uncontrolled diabetes, the absence of emergency savings creates a dangerous vulnerability where any financial shock can lead to catastrophic consequences.
+
+5. **Delayed Diagnosis Syndrome**: Like undiagnosed diabetes, financial diabetes often remains hidden until a major life event (job loss, retirement) reveals the severity of the condition, when treatment becomes much more difficult.
+
+6. **Financial Retinopathy**: The inability to see long-term financial consequences clearly, similar to how diabetes can damage vision. This manifests as an inability to project how today's spending affects tomorrow's security.
+
+7. **Wealth Wound Healing**: Just as diabetics struggle with wound healing, those with financial diabetes struggle to recover from financial setbacks, taking much longer to rebuild savings after unexpected expenses.
+
+8. **Intergenerational Transmission**: Financial diabetes can be "hereditary" in the sense that parents who never developed financial discipline often fail to instill it in their children, creating a cycle that's difficult to break.
+
+9. **Hedonic Adaptation Hypoglycemia**: The financial equivalent of low blood sugar crashes - when spending no longer provides the same emotional high, leading to increasingly extravagant purchases to achieve the same feeling of satisfaction.
+
+10. **Financial Education Therapy**: Just as diabetes management requires education and lifestyle changes, overcoming financial diabetes requires intentional financial education and the development of new habits - essentially a form of "financial therapy."
 
 ## Other questions
 
