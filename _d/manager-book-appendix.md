@@ -15,29 +15,30 @@ A hodgepodge of additional resources for the manager book.
 
 - [The Whole Manager Book](#the-whole-manager-book)
 - [Leadership Principles by Company](#leadership-principles-by-company)
-    - [Google's Project Oxygen](#googles-project-oxygen)
-    - [Facebook's principles](#facebooks-principles)
-    - [Amazon's leadership principles](#amazons-leadership-principles)
-    - [Grammerly](#grammerly)
-    - [Zillow](#zillow)
+  - [Google's Project Oxygen](#googles-project-oxygen)
+  - [Facebook's principles](#facebooks-principles)
+  - [Amazon's leadership principles](#amazons-leadership-principles)
+  - [Grammerly](#grammerly)
+  - [Zillow](#zillow)
 - [Misc Topics](#misc-topics)
-    - [A few Igorisms](#a-few-igorisms)
-    - [Igor's career](#igors-career)
-        - [Joining Facebook](#joining-facebook)
-        - [Joining Amazon](#joining-amazon)
-        - [Dream Job](#dream-job)
-    - [Laws to remember](#laws-to-remember)
-    - [How you need to communicate differently](#how-you-need-to-communicate-differently)
+  - [A few Igorisms](#a-few-igorisms)
+  - [Igor's career](#igors-career)
+    - [Joining Facebook](#joining-facebook)
+    - [Joining Amazon](#joining-amazon)
+    - [Dream Job](#dream-job)
+  - [Laws to remember](#laws-to-remember)
+  - [Who has the monkey - fanstic advice from 1974!](#who-has-the-monkey---fanstic-advice-from-1974)
+  - [How you need to communicate differently](#how-you-need-to-communicate-differently)
 - [Analogies to be fleshed out](#analogies-to-be-fleshed-out)
-    - [Piniata](#piniata)
-    - [A project is car with a EM, PM and TL](#a-project-is-car-with-a-em-pm-and-tl)
-    - [Magic Tricks vs Balloon Animals (Effort vs Impact)](#magic-tricks-vs-balloon-animals-effort-vs-impact)
-    - [An engineering team as the parts of the car](#an-engineering-team-as-the-parts-of-the-car)
-    - [New hire perspective is like landing a plane](#new-hire-perspective-is-like-landing-a-plane)
+  - [Piniata](#piniata)
+  - [A project is car with a EM, PM and TL](#a-project-is-car-with-a-em-pm-and-tl)
+  - [Magic Tricks vs Balloon Animals (Effort vs Impact)](#magic-tricks-vs-balloon-animals-effort-vs-impact)
+  - [An engineering team as the parts of the car](#an-engineering-team-as-the-parts-of-the-car)
+  - [New hire perspective is like landing a plane](#new-hire-perspective-is-like-landing-a-plane)
 - [Other Resources](#other-resources)
-    - [Great Videos](#great-videos)
-    - [Great Posts and Blogs](#great-posts-and-blogs)
-    - [Great books](#great-books)
+  - [Great Videos](#great-videos)
+  - [Great Posts and Blogs](#great-posts-and-blogs)
+  - [Great books](#great-books)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -202,6 +203,10 @@ At the end of 2016, I joined [Amazon](/amazon) to learn the business of software
 - **Peter Principle** - People will rise till they become incompetent
 - **Parkinson's Law of Triviality - (Bike Shedding)** Members of an organization give disproportionate weight to trivial issues. A nuclear power plant funding committee focus most time on how to paint the bike shed since it's easy, and they feel they are providing value
 - **Yak Shaving** - Not a law but a great term for when you go down the [rabbit hole](https://americanexpress.io/yak-shaving/) going several steps away from the task at hand (a common cause for the delay in Parkinson's Law)
+
+### Who has the monkey - fanstic advice from 1974!
+
+An absolute classic article - must read "Who has the monkey"(https://hbr.org/1999/11/management-time-whos-got-the-monkey)
 
 ### How you need to communicate differently
 
