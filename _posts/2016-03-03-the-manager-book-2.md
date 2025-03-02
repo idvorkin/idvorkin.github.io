@@ -1944,7 +1944,9 @@ As always, supporting y'all is always my top priority, so if there's anything yo
 
 When Zuck did a particular round of layoffs, he set a date in 3 months, and said we'll do them on this day. A lot of people complained, and said this is an aweful way to do it.
 
-When asked about the mechanics, Zach said: Yes, this really sucks, I think regradless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
+When asked about the mechanics, Zuck said: Yes, this really sucks, I think regradless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
+
+I think Reed Hastings (of Nextfix) has an interesting take here. [You want to give people good severance](https://www.instagram.com/reel/DD7Z1ptT_w0/) so they feel great leaving at any time they want instead of hanging around to get paid.
 
 ## Personal Motivations
 
