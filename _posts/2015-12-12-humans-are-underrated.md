@@ -13,6 +13,10 @@ tags:
 
 As robots become better then humans at most things, what roles will be left for humans? What skills are required for those roles? Empathizing, collaborating, leading,and building relationships.
 
+{% include amazon.html asin="1591847206" %}
+
+{% include alert.html content="THIS BOOK WAS WRITTEN IN 2015, GPT-3 was released in June 2020. The AI landscape has evolved dramatically since publication, but the core insights about uniquely human skills remain remarkably relevant." style="info" %}
+
 The top roles for humans will be:
 
 - Places we want a human to be accountable (judge, lawyer, politician).

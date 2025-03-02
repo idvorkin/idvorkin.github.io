@@ -475,6 +475,10 @@ Two types:
 
 ### Prioritizing Skills
 
+As AI continues to transform programming, it's worth considering what skills will remain uniquely human.
+
+{% include summarize-page.html src="/humans-are-underrated" %}
+
 - Curiosity
   - With things changing so fast, being curious
   - Given the speed of evolution, the winners will be those that
@@ -489,7 +493,12 @@ Two types:
 
 ### What will take AI longer to "Solve"
 
-Similar to humans: - Regulations - Legacy code bases - Hard To Verify - Debugging that requires Volume
+Similar to humans:
+
+- Regulations - Complex regulatory environments with many edge cases
+- Legacy code bases - Understanding and refactoring large, poorly documented systems
+- Hard To Verify - Problems where correctness is difficult to validate
+- Debugging that requires Volume - Issues that only appear at scale or under specific conditions
 
 ### From Cheap Computing to Cheap Intelligence
 
