@@ -17,7 +17,7 @@ I've been doing [daily stream of consciousness journaling](/emotional-health#dai
 - [Automated Analysis](#automated-analysis)
 - [Weekly Report](#weekly-report)
 - [Journalling Workflow in 2025](#journalling-workflow-in-2025)
-  - [Journal Structure](#journal-structure)
+- [Journal Structure](#journal-structure)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -40,18 +40,21 @@ Now, thanks to AI transcription capabilities, I can have the best of both worlds
    - Check yesterday's TODOs in OmniFocus and yesterday's Habit Tracker in Streaks app to prime my daily journal
    - Create a new notebook in my Kindle Scribe, named with the current date
    - Spend 10 minutes handwriting my stream of consciousness
+     ![Me writing in my journal](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_191054.webp)
 2. **Export/Sync to desktop**
    - Kindle only supports e-mail to yourself
    - It sends an e-mail that is basically "Hey here's a link to your PDF"
+     ![Kindle Share Sheet](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_191410.webp)
 3. **AUTOMATED** Get PDF URL from Gmail
    - I [CHOP](/chop)ed a [bespoke tool for this](https://github.com/idvorkin/settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/py/gmail_reader.py?plain=1#L813), via these 2 chats: [1](https://github.com/idvorkin/Settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/zz-chop-logs/2025-03-02_09-47-building-a-python-gmail-reader-app.md), [2](https://github.com/idvorkin/Settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/zz-chop-logs/2025-03-02_10-37-gmail-app-development-discussion.md)
+     ![show gmail app](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250302_190312.webp)
 4. **AUTOMATED** Take PDF URL, and [convert the handwriting to text](https://github.com/idvorkin/nlp/blob/cbc8dd8094b3d4e3a7331846538e5e945745baef/journal.py#L34)
 5. Copy the transcribed text into my daily journal file
 6. **AUTOMATED** [Extract TODOs](https://github.com/idvorkin/settings/blob/6ce73103b714e5b08ba19dc19856fc5a8ea549fc/py/todo_to_omnifocus.py?plain=1#L28) and move them to OmniFocus
 
 This process preserves the benefits of handwriting (better thinking, more personal) while maintaining the ability to search, analyze, and process my journal entries digitally. It's a perfect blend of the analog and digital worlds.
 
-### Journal Structure
+## Journal Structure
 
 Each journal entry follows a consistent template with sections that help me reflect on different aspects of my life:
 
