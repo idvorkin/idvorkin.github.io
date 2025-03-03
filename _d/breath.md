@@ -19,23 +19,18 @@ For a deeper understanding of the science behind breathing and its profound impa
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [The patterns](#the-patterns)
+- [Patterns and Chemistry](#patterns-and-chemistry)
+  - [Inhale More vs. Exhale More](#inhale-more-vs-exhale-more)
+  - [Hold before or after](#hold-before-or-after)
 - [Techniques](#techniques)
-    - [Box Breathing](#box-breathing)
-    - [Victory breath](#victory-breath)
-    - [Brilliant Mind Breath](#brilliant-mind-breath)
-    - [Full Yogic Breath](#full-yogic-breath)
-    - [Straw Breath](#straw-breath)
-    - [Bellows Breath/Hyper Ventilating](#bellows-breathhyper-ventilating)
-    - [Alternate Nostril Breathing](#alternate-nostril-breathing)
-    - [4-7-8 Breathing](#4-7-8-breathing)
-    - [Psychological Sigh](#psychological-sigh)
-    - [Diaphragmatic Breathing](#diaphragmatic-breathing)
-    - [Resonant or Coherent Breathing](#resonant-or-coherent-breathing)
-    - [Sitali Breath](#sitali-breath)
-    - [Breath Focus Technique](#breath-focus-technique)
+  - [Box Breathing](#box-breathing)
+  - [Bellows Breath/Hyper Ventilating](#bellows-breathhyper-ventilating)
+  - [Alternate Nostril Breathing](#alternate-nostril-breathing)
+  - [Psychological Sigh](#psychological-sigh)
+  - [Resonant or Coherent Breathing](#resonant-or-coherent-breathing)
 - [Science](#science)
-    - [Huberman](#huberman)
-    - [Using the different parts of breathing cycle to get impact](#using-the-different-parts-of-breathing-cycle-to-get-impact)
+  - [Huberman](#huberman)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -46,6 +41,60 @@ Hyperventilating
 Good training available in the art of living breathing class
 {%include local_image_float_right.html src="raccoon-meditate.png" %}
 
+### The patterns
+
+| Desired State              | Breathing Pattern                                            | How It Works                                                                       |
+| -------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| **Energized & Alert**      | Inhale 6, Exhale 4                                           | Longer inhales ramp up oxygen and sympathetic activity for alertness and energy.   |
+| **Quick Energy Boost**     | Rapid Breathing: 30 sec fast inhales/exhales, hold exhale 15 | Hyperventilation spikes adrenaline and oxygen for an instant jolt.                 |
+| **Euphoria/Intense Focus** | Wim Hof-ish: 30 rapid breaths, hold exhale 30                | Fast breathing floods oxygen, long hold shifts CO2 for a buzz and clarity.         |
+| **Calm & Relaxed**         | Inhale 4, Exhale 8                                           | Extended exhales trigger parasympathetic response, lowering stress and heart rate. |
+| **Focused & Steady**       | Box Breathing: Inhale 4, Hold 4, Exhale 4, Hold 4            | Balances oxygen/CO2, steadies the mind, and sharpens concentration.                |
+| **Reset Breathing Rhythm** | Inhale 4, Exhale 6, Hold 6                                   | Post-exhale hold builds CO2 tolerance, calming erratic breathing.                  |
+| **Improved Lung Capacity** | Inhale 6, Hold 10, Exhale 6                                  | Post-inhale hold stretches lungs and boosts oxygen uptake over time.               |
+
+### Patterns and Chemistry
+
+#### Inhale More vs. Exhale More
+
+Breathing with a **longer inhale** (e.g., Inhale 6, Exhale 4) versus a **longer exhale** (e.g., Inhale 4, Exhale 8) shifts oxygen (O2), carbon dioxide (CO2), and nervous system responses differently. Here’s the comparison:
+
+| **Aspect**                | **Inhale More Than Exhale (e.g., Inhale 6, Exhale 4)** | **Exhale More Than Inhale (e.g., Inhale 4, Exhale 8)** |
+| ------------------------- | ------------------------------------------------------ | ------------------------------------------------------ |
+| **Lung State**            | More time full—frequent deep inhales                   | More time emptying—extended exhales                    |
+| **O2 Impact**             | Up—greater O2 intake from longer inhales               | Steady or slightly down—less O2 from shorter inhales   |
+| **CO2 Impact**            | Down—more CO2 exhaled, less retained                   | Up—less CO2 exhaled, more retained                     |
+| **Nervous System**        | Sympathetic dominant—activates fight-or-flight         | Parasympathetic dominant—triggers rest-and-digest      |
+| **Feel**                  | Energized, alert, “revved up”                          | Calm, relaxed, “wound down”                            |
+| **Short Hold (5-10 sec)** | Not typical here, but would amplify O2 boost           | Not typical here, but would deepen CO2 calm            |
+| **Long Hold (20+ sec)**   | Not common, but could shift to tension                 | Not common, but could build CO2 tolerance              |
+| **Best For**              | Energy, alertness, waking up                           | Relaxation, stress relief, sleep prep                  |
+
+**Key Takeaways**
+
+- **Inhale More**: Pumps O2, lowers CO2—energizes and sharpens focus.
+- **Exhale More**: Retains CO2, eases O2 intake—calms and soothes.
+
+#### Hold before or after
+
+A **hold after inhale** (lungs full) and a **hold after exhale** (lungs empty) affect oxygen (O2), carbon dioxide (CO2), and your nervous system differently. Here’s how they compare:
+
+| **Aspect**                | **Hold After Inhale (Full)**       | **Hold After Exhale (Empty)**           |
+| ------------------------- | ---------------------------------- | --------------------------------------- |
+| **Lung State**            | Full—expanded, stretched           | Empty—relaxed, minimal air              |
+| **O2 Impact**             | Up slightly—more absorption        | Down slightly—tissues use existing O2   |
+| **CO2 Impact**            | Rises slowly—mild buildup          | Rises faster—triggers air hunger sooner |
+| **Nervous System**        | Sympathetic + mild parasympathetic | Parasympathetic dominant                |
+| **Feel**                  | Energized, focused, “loaded”       | Calm, grounded, “unloaded”              |
+| **Short Hold (5-10 sec)** | Alertness, lung stretch            | Relaxation, CO2 reset                   |
+| **Long Hold (20+ sec)**   | Tension or meditative shift        | Mild stress, CO2 tolerance              |
+| **Best For**              | Energy, focus, lung capacity       | Calm, reset, tolerance                  |
+
+**Key Takeaways**
+
+- **Full Hold**: Boosts O2, stretches lungs, energizes with a focused vibe.
+- **Empty Hold**: Raises CO2, calms the system, resets breathing.
+
 ### Techniques
 
 #### Box Breathing
@@ -54,34 +103,6 @@ Good training available in the art of living breathing class
 - Why it helps: This technique can reduce stress and improve mood. It can also increase awareness and improve decision-making skills.
 - How to do it: Breathe in for a count of four, hold your breath for a count of four, exhale for a count of four, and hold the breath out for a count of four.
 - How to do it details: Maintain a straight posture and close your eyes if it feels comfortable. Keep your breath smooth and even throughout the cycle.
-
-#### Victory breath
-
-- Yoga name: Ujjayi Pranayama
-- Why it helps: This technique can increase concentration, release tension throughout the body, and regulate the heat of the body.
-- How to do it: Take a deep breath in through your nose, then exhale slowly through a small hole in your mouth, as if you are whistling.
-- How to do it details: The breath should be long and smooth. You should hear a soft sound like the waves of the ocean as you breathe in and out.
-
-#### Brilliant Mind Breath
-
-- Yoga name: Not associated with a specific yoga name
-- Why it helps: This technique enhances mental clarity, focus, and cognitive function. It's particularly beneficial before tasks requiring concentration or creative thinking.
-- How to do it: Sit comfortably with a straight spine. Inhale deeply through your nose for 4 counts, hold for 2 counts, then exhale through your mouth for 6 counts.
-- How to do it details: As you practice, visualize bright, clear light entering your mind with each inhale, and mental fog or distractions leaving with each exhale. Practice for 3-5 minutes.
-
-#### Full Yogic Breath
-
-- Yoga name: Dirgha Pranayama
-- Why it helps: This technique can slow down the heart rate and lower or stabilize blood pressure, promoting relaxation and stress relief.
-- How to do it: Breathe deeply into your belly, ribcage, and upper chest in a smooth flowing movement.
-- How to do it details: Exhale by reversing this movement, emptying the upper chest, ribcage, and finally the belly.
-
-#### Straw Breath
-
-- Yoga name: Not associated with a specific yoga name
-- Why it helps: This technique strengthens respiratory muscles, increases lung capacity, and improves breath control. It's also useful for reducing anxiety and improving focus.
-- How to do it: Purse your lips as if sipping through a straw, then inhale slowly and deeply. Exhale normally through your nose.
-- How to do it details: The resistance created by the pursed lips strengthens breathing muscles and encourages deeper inhalation. Start with 5-10 breaths and gradually increase.
 
 #### Bellows Breath/Hyper Ventilating
 
@@ -97,13 +118,6 @@ Good training available in the art of living breathing class
 - How to do it: Close off one nostril, inhale through the other, switch nostrils and exhale through the just opened nostril.
 - How to do it details: Continue this pattern, inhaling through the nostril you just exhaled out of.
 
-#### 4-7-8 Breathing
-
-- Yoga name: Not associated with a specific yoga name
-- Why it helps: This technique can act as a natural tranquilizer for the nervous system, reducing stress and anxiety.
-- How to do it: Inhale for 4 seconds, hold the breath for 7 seconds, and exhale for 8 seconds.
-- How to do it details: This pattern is repeated for 4 breath cycles.
-
 #### Psychological Sigh
 
 - Yoga name: Not associated with a specific yoga name
@@ -111,35 +125,12 @@ Good training available in the art of living breathing class
 - How to do it: Take two quick inhales through your nose (double inhale), followed by one long exhale through your mouth.
 - How to do it details: The first inhale partially fills your lungs, the second inhale tops them off, and the extended exhale releases carbon dioxide and triggers relaxation. Repeat 2-3 times when feeling stressed or anxious.
 
-#### Diaphragmatic Breathing
-
-- Yoga name: Not associated with a specific yoga name
-- Why it helps: This technique can slow your breathing rate and heart rate, reducing stress and lowering blood pressure.
-- How to do it: Breathe in deeply through your nose, letting your chest and lower belly rise as you fill your lungs. Let your abdomen expand fully. Exhale slowly through your mouth or nose.
-- How to do it details: This technique is best done lying on your back on a flat surface.
-
 #### Resonant or Coherent Breathing
 
 - Yoga name: Not associated with a specific yoga name
 - Why it helps: This technique can increase heart rate variability, reduce stress, and promote calm and well-being.
 - How to do it: Inhale for a count of five, then exhale for a count of five.
 - How to do it details: This technique is best done in a seated position, with the back straight.
-
-#### Sitali Breath
-
-- Yoga name: Sitali Pranayama
-- Why it helps: This technique can cool the body, add moisture to the system, and soothe a pitta imbalance.
-- How to do it: Curl your tongue and extend it out of your mouth, then inhale through the mouth. Exhale through the nose.
-- How to do it details: If you can't curl your tongue, inhale with a rounded mouth.
-
-#### Breath Focus Technique
-
-- Yoga name: Not associated with a specific yoga name
-- Why it helps: This technique can reduce anxiety, improve mental focus, and promote relaxation.
-- How to do it: This technique involves slow, deep breathing, and focusing on your breath as it moves in and out of your body.
-- How to do it details: As you breathe, visualize the air moving through your body, and imagine a sense of relaxation flowing with it.
-
----
 
 ### Science
 
@@ -150,17 +141,3 @@ Breathing for endurance
 
 All about breathing
 {%include youtube.html src="x4m_PdFbu-s" %}
-
-#### Using the different parts of breathing cycle to get impact
-
-Different phases of the breathing cycle can be emphasized to achieve specific physiological and psychological effects:
-
-- **Inhale emphasis**: Energizing and activating. Emphasizing the inhale by making it longer than the exhale (e.g., inhale for 6, exhale for 4) can increase alertness, energy, and focus. This is helpful when you need to wake up or prepare for physical activity.
-
-- **Exhale emphasis**: Calming and relaxing. Making the exhale longer than the inhale (e.g., inhale for 4, exhale for 8) activates the parasympathetic nervous system, reducing stress and anxiety. This pattern is ideal for relaxation and preparing for sleep.
-
-- **Hold after inhale**: Increases oxygen absorption and can help with breath retention capacity. This is useful in practices like box breathing and can help improve lung capacity over time.
-
-- **Hold after exhale**: Creates a slight air hunger that can reset breathing patterns and increase CO2 tolerance. This phase, when practiced safely, can help with conditions like over-breathing and anxiety.
-
-The key is to match your breathing pattern to your desired state: longer inhales for energy, longer exhales for calm, and strategic breath holds for specific physiological effects.
