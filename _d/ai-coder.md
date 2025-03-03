@@ -41,7 +41,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [DRY CHOP: Your AI's Cookbook](#dry-chop-your-ais-cookbook)
 - [Igor's Predictions, Insights, and Mental Models](#igors-predictions-insights-and-mental-models)
   - [Artisanal Hand Crafted Commits](#artisanal-hand-crafted-commits)
-  - [Bespoke tools](#bespoke-tools)
+  - [Bespoke tools and optimisim](#bespoke-tools-and-optimisim)
   - [The Evolution of Junior Developers](#the-evolution-of-junior-developers)
   - [The Evolution of programming languages](#the-evolution-of-programming-languages)
   - [AI Rule Packs](#ai-rule-packs)
@@ -435,11 +435,17 @@ Most of this is picked up from others (there are no unique thoughts), but here's
 - People will write code as a hobby, like wood working today.
 - I'm skeptical people will buy "Artisinal Code", but who knows, people like antiques
 
-### Bespoke tools
+### Bespoke tools and optimisim
 
 - With coding so easy, might as well make a tool just for your use case.
-  - See my y.py
-- Probably a pendulum swings from every company needing own IT department -> SaaS -> Single Dev does all the required tooling
+  - [Hand writing daily journal workflow](/process-journal#journalling-workflow-in-2025)
+  - A grab bag of randomness called y.py [upload clipboard to git, start a flow session, move windows around](https://github.com/idvorkin/settings/blob/db1ca0310d79c9db8b3cc7092cb14904a560eb6d/py/y.py?plain=1#L744)
+- Probably a pendulum swings from:
+  - in the 90's every company needing own IT department
+  - 2000's SaaS
+  - 2030 - Single Dev does all the required tooling
+
+My most optimistic view of this is that the cost of developing software goes down because an engineer like myself can be more ambitious, can take on more things. As a result, demand for software goes up—because if you’re a company that previously would never have dreamed of building a custom CRM for your industry because it would have taken 20 engineers a year before you got any results... If it now takes four engineers three months to get results, maybe you’re in the market for software engineers now that you weren’t before.
 
 ### The Evolution of Junior Developers
 
