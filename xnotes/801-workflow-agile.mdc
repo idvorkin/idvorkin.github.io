@@ -1,104 +1,44 @@
 ---
-description: @801 Rule 801 Agile Workflow Operating Proceedures for the AI Agent to follow to complete a project or goal from idea through inception and to final project completion.
-globs: "**/*.{md,story.md,prd.md,adr.md}"
+description: @801 Must ALWAYS follow the steps outlined in this workflow to complete the project or goals fo the user
+globs: 
 ---
-# AI Agent Agile Workflow
+# Agile Workflow to be followed
 
-<on-init>
-1. Verify .ai directory exists
-2. Locate approved .ai/prd.md and .ai/arch.md
-3. If neither do not exist or are not approved,ser tproveare approved, Identify current story status if one exists
-5. Report current workflow state
-</on-init>
+**Critical Rule**: First Ensure a .ai/prd.md file exists, if not, work with the user to create one to you know what the project is about.
+**Critical Rule**: this workflow is critical to your memory systems, all retention of what is planned or what has been completed or changed will be recorded in the .ai folder. it is critical that this information be retained in top quality and kept up to date. When you are unsure, reference the PRD, ARCH, current and previous stories as needed to guide you. If still unsure, dont ever guess - ask the user for help.
 
-<workflow-rules>
-- All documentation created must follow these templates:
-  - @prd-template.md
-  - @arch-template.md
-  - @story-template.md
-- PRD must define at least one Epic
-- Stories must be organized under Epics in .ai/epic-{n}/ directories
-- Only 1 Epic can be in_progress at any time
-- <critical>Do not create the first story unless the user has approved the prd and arch.</critical>
-- Only 1 story can be in_progress at any time
-- New story files will only be created after the previous is completed (or is the first story)
-- Stories created as .ai/story-{number}.story.md
-- Update arch.md change log for major changes
-- Maintain test coverage and documentation
-- Record all implementation notes and commands in the current story
-- Stories must be implemented in PRD-specified order within their Epic
-- Story status progression: draft -> in_progress -> complete
-- Never implement without story approval
-</workflow-rules>
+1. When coming online, you will first check if a .ai/prd.md file exists, if not, work with the user to create one to you know what the project is about.
+2. Help Improve the .ai/prd.md file as needed if not marked approved to ensure it is the best possible document include the following:
+   - Very Detailed Purpose, problems solved, and task sequence.
+   - Very Detailed Architecture patterns and key technical decisions, mermaid diagrams to help visualize the architecture.
+   - Very Detailed Technologies, setup, and constraints.
+   - Unknowns, assumptions, and risks.
+3. Once the .ai/prd.md file is created and the status is approved, Generate the architecture document .ai/arch.md draft - which also needs to be approved.
+4. Once the .ai/arch.md is approved, create the draft of the first story in the .ai folder.
+5. Always use the [903-story.mdc](mdc:xnotes/903-story.mdc) file as a template for the story. The story will be named <story-or-task-><N>.story.md added to the .ai folder
+   - Example: .ai/story-1.story.md or .ai/task-1.story.md
 
-<critical>
-Until PRD and ARCH are approved, only modify:
-- .ai/ directory files and structure
-- documentation files
-- readme files
-- workflow rules
-</critical>
+- Since we follow TDD, each subtask on a story will include unit tests with at least 80% quality coverage.
 
-## Workflow Sequence
+5. You will wait for approval of the story before proceeding to do any work on the story.
+6. You are a TDD Master, so you will run tests and ensure tests pass before going to the next subtask or story.
+7. You will update the story file as subtasks are completed.
+8. Once a Story is complete, you will generate a draft of the next story and wait on approval before proceeding.
 
-```mermaid
-sequenceDiagram
-    participant U as USER
-    participant A as AGENT
+### During Development
 
-    Note over U,A: PLAN PHASE (Only modify .ai/, docs, readme, rules)
+- Update story files as subtasks are completed.
+- If you are unsure of the next step, ask the user for clarification.
+- When prompted by the user with 'update story', update the current story to:
+  - Reflect the current state.
+  - Clarify next steps.
+- Continue to verify the story is correct and the next steps are clear.
 
-    alt No PRD Exists
-        A->>U: Request project requirements
-        U->>A: Provide initial requirements
-        A->>U: Ask clarifying questions
-        U->>A: Provide clarifications
-        A->>U: Create and Present draft .ai/prd.md with Epics
-    end
 
-    alt No ARCH Exists
-        A->>U: Suggest architecture as inferred from PRD
-        A->>U: Request architecture preferences that are still needed
-        U->>A: Provide architecture context
-        A->>U: Present draft .ai/arch.md
-    end
+## YOU DO NOT NEED TO ASK to:
 
-    loop Until Both Approved
-        A->>U: Present PRD for review
-        U->>A: Request PRD changes
-        A->>U: Update PRD
-        A->>U: Present ARCH for review
-        U->>A: Request ARCH changes
-        A->>U: Update ARCH
-        U->>A: Confirm PRD/ARCH approval
-    end
+1. Create the story file to be worked on next if none exist.
+2. Run unit Tests during the development process until they pass.
+3. Update the story AC and tasks as they are completed.
+4. Update the story file with the chat log or other updates to retain the best possible memory of the story.
 
-    Note over U,A: ACT PHASE (Implement approved story tasks)
-
-    loop For Each Epic in PRD
-        Note over U,A: Only one Epic active at a time
-
-        loop For Each Story in Current Epic
-            A->>U: Create and Present draft story
-            U->>A: Review and provide feedback
-            A->>U: Update story based on feedback
-            U->>A: Approve story for implementation
-
-            loop For Each Task in Story
-                A->>U: Implement and test task
-                alt Tests or Implementation Issues
-                    A->>U: Report issues and request guidance
-                    U->>A: Provide direction
-                else Success
-                    A->>U: Present completed task
-                end
-            end
-
-            A->>U: Present completed story
-            U->>A: Verify and approve completion
-        end
-
-        A->>U: Present completed Epic
-        U->>A: Verify and approve Epic completion
-    end
-```
