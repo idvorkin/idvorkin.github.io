@@ -183,3 +183,37 @@ These recovery protocols prevent temporary energy dips from becoming chronic ene
 TBD once I have the content better.
 
 What about you? Have you noticed patterns in your own energy levels? What activities drain you, and which ones leave you feeling energized? I'd love to hear your experiences in the comments.
+
+## Related Posts: Dive Deeper Into Energy Management
+
+If you found this post helpful, here are other resources on my blog that explore different aspects of energy management, productivity, and balance:
+
+### Energy Fundamentals
+
+{% include summarize-page.html src="/energy" %}
+
+### Balance and Effectiveness
+
+{% include summarize-page.html src="/balance" %}
+
+### Building Sustainable Habits
+
+{% include summarize-page.html src="/d/habits" %}
+
+### Overcoming Resistance
+
+{% include summarize-page.html src="/d/resistance" %}
+
+### Understanding Activation Energy
+
+{% include summarize-page.html src="/activation" %}
+
+### Recovery and Renewal
+
+{% include summarize-page.html src="/timeoff" %}
+
+### Personal Operating Manual
+
+{% include summarize-page.html src="/operating-manual" %}
+
+These posts complement each other to form a comprehensive framework for managing your energy, building productive habits, and creating a life of sustainable high performance.
