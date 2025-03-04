@@ -112,6 +112,7 @@
         "/heap - potporri - potpori": "/random-idea",
         "/heavy-club": "/kettlebell",
         "/heavy-clubs": "/kettlebell",
+        "/high-energy": "/energy-abundance",
         "/humanity": "/touching",
         "/idle-loop": "/idle",
         "/imposter": "/insecure",
@@ -420,7 +421,8 @@
             "incoming_links": [
                 "/balance",
                 "/d/time-off-2021-12",
-                "/energy"
+                "/energy",
+                "/energy-abundance"
             ],
             "redirect_url": "",
             "markdown_path": "_d/activation.md",
@@ -831,6 +833,7 @@
                 "/7-habits",
                 "/7h-concepts",
                 "/d/time-off-2021-12",
+                "/energy-abundance",
                 "/productive"
             ],
             "redirect_url": "",
@@ -1011,7 +1014,7 @@
             "incoming_links": [],
             "redirect_url": "",
             "markdown_path": "_d/breath.md",
-            "doc_size": 19000
+            "doc_size": 22000
         },
         "/brompton-toys": {
             "url": "/brompton-toys",
@@ -1150,19 +1153,21 @@
             "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
             "file_path": "_site/chop.html",
             "outgoing_links": [
-                "/humans-are-underrated"
+                "/humans-are-underrated",
+                "/process-journal"
             ],
             "incoming_links": [
                 "/40yo",
                 "/ai",
                 "/chow",
+                "/process-journal",
                 "/tech-rituals",
                 "/y24",
                 "/y25"
             ],
             "redirect_url": "",
             "markdown_path": "_d/ai-coder.md",
-            "doc_size": 43000
+            "doc_size": 44000
         },
         "/chow": {
             "url": "/chow",
@@ -1493,6 +1498,7 @@
             "incoming_links": [
                 "/activation",
                 "/d/resistance",
+                "/energy-abundance",
                 "/hobby",
                 "/idle",
                 "/manager-book",
@@ -1537,6 +1543,7 @@
                 "/books-that-defined-me",
                 "/enemy",
                 "/energy",
+                "/energy-abundance",
                 "/fail",
                 "/first-things-first",
                 "/frog",
@@ -2139,6 +2146,7 @@
             ],
             "incoming_links": [
                 "/balance",
+                "/energy-abundance",
                 "/mood",
                 "/productive",
                 "/timeoff"
@@ -2146,6 +2154,26 @@
             "redirect_url": "",
             "markdown_path": "_d/energy.md",
             "doc_size": 16000
+        },
+        "/energy-abundance": {
+            "url": "/energy-abundance",
+            "title": "Igor - how do you have the time to complete all the stuff on your blog?",
+            "description": "I got asked that the other day, and thought, boy, there is a lot here, I need to think this through. Here’s my thinking so far.\n\n",
+            "file_path": "_site/energy-abundance.html",
+            "outgoing_links": [
+                "/activation",
+                "/balance",
+                "/d/habits",
+                "/d/resistance",
+                "/energy",
+                "/operating-manual",
+                "/strategy",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/energy-abundance.md",
+            "doc_size": 24000
         },
         "/essentialism": {
             "url": "/essentialism",
@@ -3007,7 +3035,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/manager-book-appendix.md",
-            "doc_size": 29000
+            "doc_size": 31000
         },
         "/mania": {
             "url": "/mania",
@@ -3226,7 +3254,7 @@
             ],
             "redirect_url": "",
             "markdown_path": "_d/taxes.md",
-            "doc_size": 34000
+            "doc_size": 39000
         },
         "/mood": {
             "url": "/mood",
@@ -3381,7 +3409,8 @@
                 "/writing"
             ],
             "incoming_links": [
-                "/energy"
+                "/energy",
+                "/energy-abundance"
             ],
             "redirect_url": "",
             "markdown_path": "_d/operating-manual-2.md",
@@ -3543,18 +3572,20 @@
             "outgoing_links": [
                 "/affirmations",
                 "/be-proactive",
+                "/chop",
                 "/emotional-health",
                 "/grateful",
                 "/psychic-weight"
             ],
             "incoming_links": [
+                "/chop",
                 "/operating-manual",
                 "/y24",
                 "/y25"
             ],
             "redirect_url": "",
             "markdown_path": "_d/process-journal.md",
-            "doc_size": 15000
+            "doc_size": 16000
         },
         "/product": {
             "url": "/product",
@@ -4046,6 +4077,7 @@
             "file_path": "_site/strategy.html",
             "outgoing_links": [],
             "incoming_links": [
+                "/energy-abundance",
                 "/manager-book"
             ],
             "redirect_url": "",
@@ -4675,6 +4707,7 @@
                 "/d/time-off-2023-08",
                 "/d/time-off-2023-11",
                 "/energy",
+                "/energy-abundance",
                 "/mind-at-work",
                 "/parkinson",
                 "/time-off-2024-08"
