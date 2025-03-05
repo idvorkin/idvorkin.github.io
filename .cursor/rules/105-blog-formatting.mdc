@@ -1,0 +1,69 @@
+---
+description: ALWAYS use when formatting blog posts to ensure consistent bold text usage
+globs: ["_posts/*.md", "_d/*.md"]
+tags: [blog, markdown, formatting]
+priority: 2
+version: 1.0.0
+---
+
+# Blog Post Text Formatting Standards
+
+<version>1.0.0</version>
+
+## Context
+- When writing or editing blog posts
+- When reviewing markdown formatting
+- When ensuring consistent text emphasis
+
+## Requirements
+- Use bold text (**) only for:
+  1. Start of bullet points for emphasis
+  2. Initial terms before their explanations (e.g., "**Term** – explanation")
+- Never use bold text in:
+  1. Headers (h1-h6)
+  2. Table headers or content
+  3. Section titles
+  4. Table of contents entries
+- Keep bold text concise and meaningful
+- Use other formatting (italics, quotes) for different emphasis needs
+
+## Examples
+
+<example>
+Good bold usage:
+
+```markdown
+- **Key Point** – This shows proper bold at bullet start
+- **Important Note** – Another good example
+
+1. **Term (Definition)** – This is how to introduce a new term
+2. **Concept** – Following with its explanation
+```
+</example>
+
+<example type="invalid">
+Incorrect bold usage:
+
+```markdown
+## **Section Header**  # ❌ No bold in headers
+
+| **Column** | **Header** |  # ❌ No bold in table headers
+|------------|------------|
+
+A **random** word in **bold** # ❌ Avoid scattered bold
+```
+</example>
+
+## Rationale
+- Consistent formatting improves readability
+- Limited bold usage maintains its impact
+- Clear patterns help readers identify structure
+- Separates semantic structure (headers) from emphasis (bold)
+
+## Migration
+When updating existing posts:
+1. Remove bold from all headers
+2. Remove bold from table headers and content
+3. Keep or add bold at bullet points
+4. Keep or add bold for term definitions
+5. Remove any other bold text unless specifically needed for emphasis 

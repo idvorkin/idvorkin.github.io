@@ -1,5 +1,6 @@
 # prettier messes up the jekyll tags in head
 _includes/head.html
+zz-chop-logs/**
 
 # Prettier reformats my python json
 _ig66/ig66-export.json
