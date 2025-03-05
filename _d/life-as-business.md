@@ -32,6 +32,7 @@ With these insights from timeless thinkers, let's ensure this model serves, rath
 - [Building Assets: Effectiveness Over Efficiency](#building-assets-effectiveness-over-efficiency)
 - [How Assets Generate Energy \& Deep Satisfaction](#how-assets-generate-energy--deep-satisfaction)
 - [Reframing "Cost" and "ROI" in Life](#reframing-cost-and-roi-in-life)
+- [Life Positioning: Strategic Choices in How We Live](#life-positioning-strategic-choices-in-how-we-live)
 - [Conclusion: Running Life as a Mission, Not Just a Business](#conclusion-running-life-as-a-mission-not-just-a-business)
 - [Appendix](#appendix)
   - [Beware the Stock Market](#beware-the-stock-market)
@@ -122,6 +123,32 @@ It's essential to recognize that not all investments in life have an immediate o
 To live well, invest energy in what compounds over time—not just what provides instant satisfaction.
 
 {% include summarize-page.html src="/timeoff" %}
+
+## Life Positioning: Strategic Choices in How We Live
+
+Just as businesses adopt different strategic positions in the market, we make fundamental choices about how we position our lives. These choices reflect our values and determine how we allocate our limited energy and attention.
+
+{% include summarize-page.html src="/strategy" %}
+
+| Business Positioning    | Life Positioning Parallel     | Characteristics                                                                                                                                                               | Potential Tradeoffs                                                                                                                        |
+| ----------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Low-Cost Provider       | Immediate Gratification Focus | • Prioritizes short-term pleasure and convenience<br>• Minimal investment in long-term assets<br>• High volume of experiences<br>• Low barrier to entry                       | • Limited depth in relationships<br>• Minimal compound growth<br>• Vulnerability to "market" changes<br>• Potential for burnout            |
+| Premium/Luxury Brand    | Deep Investment Strategy      | • Focuses on quality over quantity<br>• Significant investment in fewer, deeper relationships<br>• Cultivates expertise and mastery<br>• Prioritizes meaning over convenience | • Slower initial "returns"<br>• Requires patience and discipline<br>• May appear less exciting initially<br>• Fewer but deeper connections |
+| Innovative Disruptor    | Authentic Self-Expression     | • Creates unique path rather than following norms<br>• Willing to take calculated risks<br>• Values creativity and originality<br>• Challenges conventional wisdom            | • May face social resistance<br>• Requires courage and resilience<br>• Less predictable outcomes<br>• Potential for greater impact         |
+| Customer Service Leader | Relationship-Centered Living  | • Prioritizes service to others<br>• Invests heavily in relationship quality<br>• Focuses on empathy and understanding<br>• Values consistency and reliability                | • May neglect self-care<br>• Requires emotional energy<br>• Slower path to visible "success"<br>• Deeper fulfillment over time             |
+
+The wisdom in life positioning comes from making conscious choices rather than defaulting to what society rewards most visibly. Just as a business cannot excel in every positioning strategy simultaneously, we must make intentional tradeoffs in how we live:
+
+- **Depth vs. Breadth** – Do you cultivate fewer, deeper relationships or maintain a wider network of connections?
+- **Immediate vs. Delayed Returns** – Are you willing to invest in assets that take years to mature?
+- **Conventional vs. Authentic** – Do you follow established paths or create your own, even when it's challenging?
+- **Self-Focus vs. Service** – How do you balance personal growth with contribution to others?
+
+Unlike businesses, however, our positioning isn't fixed. We can evolve our approach as we grow and learn. The key is consciousness—recognizing that how we position our lives reflects deeper values and priorities, not just preferences.
+
+{% include alert.html content="The most dangerous positioning strategy is the unconscious one—living by default rather than design." style="warning" %}
+
+The most successful life positioning strategies share one trait: alignment between stated values and actual energy allocation. Just as a business cannot claim to be customer-focused while cutting service quality, we cannot claim to value relationships while consistently prioritizing work over people.
 
 ## Conclusion: Running Life as a Mission, Not Just a Business
 
