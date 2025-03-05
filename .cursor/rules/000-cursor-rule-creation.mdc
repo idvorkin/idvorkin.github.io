@@ -1,0 +1,115 @@
+---
+description: ALWAYS use when creating or modifying Cursor rule files to ensure proper file creation and modification
+globs: .cursor/rules/*.mdc
+tags: [cursor, rules, workflow]
+priority: 2
+version: 1.0.0
+---
+
+# Cursor Rule Creation and Modification
+
+<version>1.0.0</version>
+
+## Context
+- Cursor prevents direct creation or modification of .mdc rule files
+- This rule provides a workaround to create and modify rule files
+- Use this process whenever you need to create or update Cursor rules
+
+## Rule Details
+
+### Creating New Rule Files
+
+Since Cursor prevents direct creation of .mdc files, follow this process:
+
+1. **Create a temporary markdown file** with the rule content:
+   ```bash
+   touch temp-rule-file.md
+   ```
+
+2. **Edit the temporary file** with your rule content following the standard format:
+   ```bash
+   # Edit the file with your preferred editor or through Cursor
+   ```
+
+3. **Copy the temporary file to .mdc extension**:
+   ```bash
+   cp temp-rule-file.md .cursor/rules/XXX-rule-name.mdc
+   ```
+   - Replace `XXX` with appropriate numbering (e.g., 000, 100, etc.)
+   - Use descriptive rule names with hyphens between words
+
+4. **Clean up the temporary file**:
+   ```bash
+   rm temp-rule-file.md
+   ```
+
+### Modifying Existing Rule Files
+
+To modify an existing rule file:
+
+1. **Copy the existing rule to a temporary file**:
+   ```bash
+   cp .cursor/rules/XXX-rule-name.mdc temp-edit-rule.md
+   ```
+
+2. **Edit the temporary file** with your changes:
+   ```bash
+   # Make your edits to the temporary file
+   ```
+
+3. **Copy the temporary file back to the original location**:
+   ```bash
+   cp temp-edit-rule.md .cursor/rules/XXX-rule-name.mdc
+   ```
+
+4. **Clean up the temporary file**:
+   ```bash
+   rm temp-edit-rule.md
+   ```
+
+## Rule Format Requirements
+
+Ensure your rule files follow this structure:
+
+```
+---
+description: ACTION when TRIGGER to OUTCOME
+globs: pattern(s)
+tags: [tag1, tag2]
+priority: 1-5
+version: Major.Minor.Patch
+---
+
+# Rule Title
+
+<version>X.Y.Z</version>
+
+## Context
+- When to apply this rule
+- Prerequisites or conditions
+
+## Rule Details
+- Specific instructions
+- Examples
+
+## Additional Sections
+- Any other relevant information
+```
+
+## Best Practices
+
+1. **Numbering Convention**:
+   - 000-099: Core system rules
+   - 100-399: Project-specific rules
+   - 400-699: Language/framework specific rules
+   - 900-999: Documentation and process rules
+
+2. **Version Management**:
+   - Update the version number when modifying rules
+   - Follow semantic versioning (Major.Minor.Patch)
+   - Ensure version in frontmatter matches version tag in content
+
+3. **Description Format**:
+   - Start with an action verb (USE, ENFORCE, FOLLOW)
+   - Include when to apply the rule
+   - End with the expected outcome 
