@@ -10,17 +10,17 @@ tags:
   - balance
 ---
 
-Businesses exist to generate profit. But what about life? Can we apply a similar framework to understand how we allocate effort, invest in growth, and measure success? The key insight: Life operates on two intertwined currencies—Life Value (the true worth of our existence) and energy (the operational fuel).
+Businesses exist to generate profit. But what about life? Can we manage our lives with the same intentionality and clarity businesses use to thrive? Viewing life through this lens helps prioritize what truly matters, sustain energy, and deepen relationships. Just as businesses carefully manage resources, we can intentionally allocate our energy, nurture meaningful assets, and measure success beyond mere productivity. Life operates on two intertwined currencies—Life Value (the true worth of our existence) and energy (the operational fuel). These currencies are generated and sustained by carefully nurturing life assets such as relationships, health, skills, and character.
 
-However, while this model provides structure, it must be approached with flexibility and wisdom. Influential thinkers like the Dalai Lama, Stephen Covey, and Fred Rogers offer valuable lessons, reminding us that:
+However, while this model provides structure, approach it with flexibility and wisdom. Remember:
 
-- **Life is not just about optimization or efficiency**—it's about presence, principles, and connection.
-- **Measuring everything** risks attachment and missing the true essence of fulfillment.
-- **Relationships and purpose** are not transactional assets but must be nurtured organically.
-- **Life Value** is not just personal gain but also legacy, service, and contribution.
-- **You cannot be efficient with people**—only effective. Love, trust, and relationships take time and must be built with patience.
+- **Life transcends optimization or efficiency**—it involves presence, principles, and connection.
+- **Measuring everything** risks attachment and overlooks true fulfillment.
+- **Relationships and purpose** grow organically, not transactionally.
+- **Life Value** encompasses legacy, service, and contribution, not just personal gain.
+- **Effectiveness, not efficiency, builds relationships**—love, trust, and connections require patience and time.
 
-With these insights from timeless thinkers, let's ensure this model serves, rather than controls, the way we live.
+With these insights, ensure this model serves rather than controls how we live.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc GFM -->
