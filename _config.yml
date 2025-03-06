@@ -94,6 +94,7 @@ exclude:
     ".cursor",
     "cursor-logs",
     "chop-logs",
+    "zz-chop-logs",
     ".aider.tags.cache.v3",
     ".husky",
     ".vscode",
