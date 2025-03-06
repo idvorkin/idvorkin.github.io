@@ -29,8 +29,10 @@ With these insights from timeless thinkers, let's ensure this model serves, rath
 - [The Life Balance Sheet \& Income Statement](#the-life-balance-sheet--income-statement)
     - [Life Balance Sheet (Snapshot of assets \& liabilities)](#life-balance-sheet-snapshot-of-assets--liabilities)
     - [Life Income Statement (Tracking energy flows)](#life-income-statement-tracking-energy-flows)
-- [Building Assets: Effectiveness Over Efficiency](#building-assets-effectiveness-over-efficiency)
-- [How Assets Generate Energy \& Deep Satisfaction](#how-assets-generate-energy--deep-satisfaction)
+- [Life Assets: Building, Maintaining, and Growing](#life-assets-building-maintaining-and-growing)
+    - [Building Assets: Effectiveness Over Efficiency](#building-assets-effectiveness-over-efficiency)
+    - [How Assets Generate Energy & Deep Satisfaction](#how-assets-generate-energy--deep-satisfaction)
+    - [Asset Depreciation: The Cost of Neglect](#asset-depreciation-the-cost-of-neglect)
 - [Reframing "Cost" and "ROI" in Life](#reframing-cost-and-roi-in-life)
 - [Life Positioning: Strategic Choices in How We Live](#life-positioning-strategic-choices-in-how-we-live)
 - [Conclusion: Running Life as a Mission, Not Just a Business](#conclusion-running-life-as-a-mission-not-just-a-business)
@@ -80,7 +82,11 @@ A well-managed balance sheet is not about accumulating the most assets but ensur
 | Energy Drains (Taxes) | Stress, Regret, Wasted Time, Unhealthy Habits, Emotional Attachments                                       |
 | Net Life Profit       | Life Value (Derived not just from personal success, but also from meaningful contribution and inner peace) |
 
-## Building Assets: Effectiveness Over Efficiency
+## Life Assets: Building, Maintaining, and Growing
+
+Just as businesses invest in assets that generate returns over time, we must strategically build life assets that create energy and satisfaction. However, unlike business assets, life assets require a different approach to building, maintaining, and measuring their value.
+
+### Building Assets: Effectiveness Over Efficiency
 
 It's critical to remember that we must remove the transactional mindset around building assets. Life should not be optimized like a financial portfolio but cultivated like a garden. Some investments yield quick results, while others take years to mature. Most importantly, you cannot be efficient with people—only effective.
 
@@ -96,13 +102,39 @@ Instead of merely tracking and maximizing assets, we should ask: Are these asset
 
 {% include summarize-page.html src="/balance" %}
 
-## How Assets Generate Energy & Deep Satisfaction
+### How Assets Generate Energy & Deep Satisfaction
 
 Unlike money, energy can be regenerated. The assets we build can, in turn, create more energy and fulfillment—but only when aligned with purpose and contribution.
 
 - **Relationships** – Healthy relationships provide emotional strength, reduce stress (energy drain), and create deep satisfaction.
 - **Character & Purpose** – Living with clarity of values prevents unnecessary energy drains caused by regret, guilt, or ego-driven pursuits.
 - **Health & Mindfulness** – The Dalai Lama reminds us that inner peace is the greatest energy generator—more valuable than external achievement.
+
+### Asset Depreciation: The Cost of Neglect
+
+In business accounting, assets depreciate over time without proper maintenance and reinvestment. The same principle applies to our life assets, though in more complex and sometimes irreversible ways:
+
+| Business Asset Depreciation             | Life Asset Depreciation                            |
+| --------------------------------------- | -------------------------------------------------- |
+| Equipment wears out without maintenance | Relationships wither without attention and care    |
+| Technology becomes obsolete             | Skills become outdated without continuous learning |
+| Buildings deteriorate                   | Health declines without consistent investment      |
+| Intellectual property loses relevance   | Knowledge becomes stale without application        |
+
+**It's essential to recognize** that unlike business assets that can often be replaced, some life assets—once significantly depreciated—may be difficult or impossible to restore:
+
+- **Relationships** – Trust, once broken, requires exponentially more energy to rebuild than to maintain.
+- **Health** – Some aspects of physical health, once lost, cannot be fully recovered.
+- **Reputation** – Character and integrity, once compromised, may leave permanent shadows.
+
+The wisdom in managing asset depreciation lies in:
+
+- **Preventative maintenance** – Regular, small investments prevent major depreciation
+- **Recognizing early warning signs** – Addressing small issues before they become critical
+- **Prioritizing irreplaceable assets** – Some assets (like deep relationships) deserve disproportionate attention
+- **Accepting natural lifecycles** – Some assets naturally evolve or conclude, requiring graceful transitions
+
+Just as a business must account for depreciation in its financial planning, we must build renewal and maintenance into our life systems—not as an afterthought, but as a core practice.
 
 ## Reframing "Cost" and "ROI" in Life
 
