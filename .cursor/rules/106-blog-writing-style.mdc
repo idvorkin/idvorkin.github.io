@@ -1,0 +1,71 @@
+---
+description: ALWAYS use when writing blog content to ensure consistent voice and style
+globs: _posts/*.md, _d/*.md
+tags: [writing, blog, style, content]
+priority: 2
+version: 1.0.0
+---
+
+# Blog Writing Style
+
+<version>1.0.0</version>
+
+## Context
+- When creating new blog posts
+- When editing existing blog content
+- When reviewing drafts before publication
+
+## Rule Details
+
+### Voice and Tone
+- Use active voice consistently ("Build relationships" instead of "Relationships should be built")
+- Maintain a thoughtful yet conversational tone that balances technical depth with accessibility
+- Write directly to the reader using "you" and "your" where appropriate
+- Use "we" to create shared understanding for universal experiences
+- Avoid excessive informality while preserving warmth and authenticity
+
+### Structure and Flow
+- Open with a clear, compelling hook that establishes relevance
+- Front-load key insights rather than burying them
+- Use concise paragraphs (3-5 sentences maximum)
+- Create logical transitions between sections and ideas
+- Balance abstract concepts with concrete examples
+
+### Language Choices
+- Prioritize strong, precise verbs over adverbs
+- Eliminate unnecessary qualifiers ("very," "really," "quite")
+- Choose specific, concrete terms over vague generalizations
+- Avoid jargon unless necessary and defined
+- Use metaphors and analogies to clarify complex ideas
+
+### Formatting Guidelines
+- Use bold text for key concepts and important points
+- Create section headers that are both informative and engaging
+- Include bullet points for scannable lists
+- Maintain consistent hierarchy in headings (H2 for main sections, H3 for subsections)
+- Use tables for clear comparisons or structured information
+
+### Writing Process
+- Draft without self-editing, then revise ruthlessly
+- Read content aloud to test flow and clarity
+- Review for unnecessary repetition of words or concepts
+- Check for consistency in terminology throughout
+- Get feedback on clarity before publishing
+
+## Examples
+
+<example>
+### Effective Writing (Strong)
+
+"Relationships generate energy when built on genuine connection rather than transaction. Invest in them daily through small, consistent actions—listening fully, expressing gratitude, and showing up reliably. The returns compound over time, creating resilience during challenges and amplifying joy during celebrations."
+
+**Why it works**: Uses active verbs, concrete actions, clear cause-effect relationships, and balances conceptual insights with practical application.
+</example>
+
+<example type="invalid">
+### Ineffective Writing (Weak)
+
+"It is important to remember that relationships should be considered as very valuable assets that can be cultivated over time through various means such as being present and communicative, which might eventually lead to positive outcomes in terms of your overall life satisfaction and emotional wellbeing."
+
+**Why it fails**: Passive voice, unnecessary qualifiers, vague recommendations, excessive wordiness, and lack of concrete examples or specificity.
+</example>
