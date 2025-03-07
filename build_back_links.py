@@ -9,6 +9,7 @@
 #   "icecream",
 #   "pudb",
 #   "typing-extensions",
+#   "gitpython",
 # ]
 # ///
 # Remove line too long
@@ -17,19 +18,98 @@
 from icecream import ic
 from bs4 import BeautifulSoup
 from collections import defaultdict
-from typing import NewType, List
+from typing import NewType, List, Dict
 import os
 import json
 from dataclasses import dataclass
 import copy
 import typer
 import pudb
+from datetime import datetime
+import git
+import time
+import asyncio
+import concurrent.futures
+from functools import lru_cache
 
 
 # Use type system (and mypy) to reduce error,
 # Even though both of these are strings, they should not be inter mixed
 FileType = NewType("FileType", str)
 PathType = NewType("PathType", str)
+
+
+@lru_cache(maxsize=1024)
+def get_last_modified_time(file_path: str) -> str:
+    """
+    Get the last modified time of a file from git.
+    Throws an exception if git is not available or fails.
+    Returns an ISO format date string.
+
+    This function is cached to avoid repeated git operations on the same file.
+    """
+    try:
+        # Try to get the last modified time from git
+        repo = git.Repo(search_parent_directories=True)
+        relative_path = os.path.relpath(file_path, repo.working_dir)
+
+        # Use git log to get the last commit date for the file
+        git_log = repo.git.log("-1", "--format=%cd", "--date=iso", "--", relative_path)
+        if git_log:
+            # Parse the git date format and convert to ISO format
+            dt = datetime.strptime(git_log.strip(), "%Y-%m-%d %H:%M:%S %z")
+            return dt.isoformat()
+        else:
+            raise ValueError(f"No git history found for {file_path}")
+    except (git.InvalidGitRepositoryError, git.GitCommandError, ValueError) as e:
+        # Raise a more descriptive error instead of falling back to file system
+        raise RuntimeError(
+            f"Failed to get last modified time from git for {file_path}: {e}"
+        )
+
+
+def get_last_modified_time_safe(file_path: str) -> str:
+    """
+    A wrapper around get_last_modified_time that returns an empty string on error.
+    This is used for parallel processing to avoid exceptions stopping the process.
+    """
+    try:
+        if not file_path:
+            return ""
+        return get_last_modified_time(file_path)
+    except Exception as e:
+        ic(f"Error getting last modified time for {file_path}: {e}")
+        return ""
+
+
+async def process_markdown_paths_in_parallel(
+    markdown_paths: List[str],
+) -> Dict[str, str]:
+    """
+    Process a list of markdown paths in parallel to get their last modified times.
+    Returns a dictionary mapping file paths to their last modified times.
+    """
+    result = {}
+
+    # Use a thread pool for I/O-bound operations
+    with concurrent.futures.ThreadPoolExecutor(
+        max_workers=os.cpu_count() * 4
+    ) as executor:
+        # Create a list of futures
+        loop = asyncio.get_event_loop()
+        futures = [
+            loop.run_in_executor(executor, get_last_modified_time_safe, path)
+            for path in markdown_paths
+            if path
+        ]
+
+        # Process the results as they complete
+        for i, future in enumerate(asyncio.as_completed(futures)):
+            last_modified = await future
+            if markdown_paths[i]:
+                result[markdown_paths[i]] = last_modified
+
+    return result
 
 
 @dataclass
@@ -43,6 +123,7 @@ class Page:
     redirect_url: PathType = PathType("")
     markdown_path: PathType = PathType("")
     doc_size: int = 0
+    last_modified: str = ""
 
     def has_redirect(self):
         return self.redirect_url != ""
@@ -57,6 +138,7 @@ class Page:
             file_path=FileType(""),
             outgoing_links=[],
             incoming_links=[],
+            last_modified="",
         )
 
 
@@ -154,6 +236,7 @@ class LinkBuilder:
             markdownPathTag = soup.find("meta", property="markdown-path")
             markdownPath = markdownPathTag["content"] if markdownPathTag else ""
 
+            # We'll set last_modified later in batch processing
             return Page(
                 title=pageTitle,
                 markdown_path=markdownPath,
@@ -163,6 +246,7 @@ class LinkBuilder:
                 outgoing_links=links,
                 incoming_links=[],
                 doc_size=rounded_len,
+                last_modified="",
             )
 
         assert "should never get here"
@@ -186,6 +270,28 @@ class LinkBuilder:
             self.incoming_links[clean_link].append(page.url)
 
         self.pages[page.url] = page
+
+    async def update_last_modified_times(self):
+        """
+        Update the last_modified field for all pages in parallel.
+        This is much faster than doing it one by one during parsing.
+        """
+        # Collect all markdown paths
+        markdown_paths = [page.markdown_path for page in self.pages.values()]
+
+        # Process them in parallel
+        ic(f"Processing {len(markdown_paths)} markdown paths in parallel...")
+        start_time = time.time()
+        last_modified_map = await process_markdown_paths_in_parallel(markdown_paths)
+        end_time = time.time()
+        ic(
+            f"Processed {len(last_modified_map)} markdown paths in {end_time - start_time:.2f} seconds"
+        )
+
+        # Update the pages with the results
+        for page in self.pages.values():
+            if page.markdown_path in last_modified_map:
+                page.last_modified = last_modified_map[page.markdown_path]
 
     def canonicalize_outgoing_pages(self):
         for page in self.pages.values():
@@ -259,6 +365,7 @@ class LinkBuilder:
                     "redirect_url": obj.redirect_url,
                     "markdown_path": obj.markdown_path,
                     "doc_size": obj.doc_size,
+                    "last_modified": obj.last_modified,
                 }
             return obj
 
@@ -277,10 +384,25 @@ app = typer.Typer()
 
 @app.command()
 def build():
+    start_time = time.time()
+
     lb = LinkBuilder()
     for d in jekyll_config.collection_dirs():
         build_links_for_dir(lb, d)
+
+    # Update last modified times in parallel
+    parsing_time = time.time()
+    ic(f"Parsed all pages in {parsing_time - start_time:.2f} seconds")
+
+    asyncio.run(lb.update_last_modified_times())
+
+    git_time = time.time()
+    ic(f"Updated last modified times in {git_time - parsing_time:.2f} seconds")
+
     lb.print_json()
+
+    end_time = time.time()
+    ic(f"Total time: {end_time - start_time:.2f} seconds")
 
 
 @app.command()
