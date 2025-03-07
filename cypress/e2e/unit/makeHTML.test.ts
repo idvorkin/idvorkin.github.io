@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 // import { UT as UTMain } from "../../../_site/assets/js/main.js";
-import { IURLInfo, MakeBackLinkHTML } from "../../../src/main";
+import { IURLInfo, MakeBackLinkHTML } from "../../../src/index";
 
 // Sigh can't improt as nested dependency, super sigh.
 // import { makePostPreviewHTML } from "../../../src/page-loader";

@@ -1,3 +1,13 @@
+// Import shared functions
+import {
+  random_from_list,
+  shuffle,
+  append_randomizer_div,
+  get_link_info,
+  IURLInfo,
+  IURLInfoMap,
+} from "./shared";
+
 let tocExpand = true;
 
 function checkExpandToggle() {
@@ -223,21 +233,6 @@ export interface IBacklinks {
   url_info: IURLInfoMap;
 }
 
-export interface IURLInfoMap {
-  [key: string]: IURLInfo;
-}
-
-export interface IURLInfo {
-  url: string;
-  title: string;
-  description: string;
-  file_path: string;
-  outgoing_links: string[];
-  incoming_links: string[];
-  redirect_url: string;
-  doc_size: number;
-}
-
 let cached_back_links: IBacklinks = null;
 async function get_back_links(): Promise<IBacklinks> {
   if (cached_back_links != null) {
@@ -258,10 +253,6 @@ async function get_back_links(): Promise<IBacklinks> {
   const backlinksJson = (await ($.getJSON(backlinks_url) as any)) as IBacklinks;
   cached_back_links = backlinksJson;
   return cached_back_links;
-}
-
-async function get_link_info(): Promise<IURLInfoMap> {
-  return (await get_back_links()).url_info;
 }
 
 function search() {
@@ -289,44 +280,6 @@ Try these shortcuts:
   6 - family journal
   `;
   mouseTrap.bind("?", e => alert(shortcutHelp));
-}
-
-// Export and share with others.
-// https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
-function shuffle(list) {
-  return list
-    .map(value => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value);
-}
-function random_from_list(list) {
-  return shuffle(list)[0];
-}
-
-// This div gets content from the random_html_factory
-// and clicking does a re-randomize
-async function append_randomizer_div(
-  parent_id: string | JQuery<HTMLElement>,
-  random_html_factory: () => string
-) {
-  // as string to queit type checker.
-  // Will be a noop if parent_id is already a jquery object
-  const $parent = $(parent_id as string);
-  if ($parent.length != 1) {
-    console.log(`append_randomizer_div ${parent_id} not present`);
-    return;
-  }
-  const new_element = $(await random_html_factory());
-  $parent.empty().append(new_element);
-
-  // Clicking on the element should result in a reload, unless you're
-  // Clicking on a link
-  $parent.click(async function (event) {
-    if (event.target.tagName != "A") {
-      const new_element = $(await random_html_factory());
-      $parent.empty().append(new_element);
-    }
-  });
 }
 
 function load_globals() {

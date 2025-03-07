@@ -1,6 +1,6 @@
 // For autocomplete
 const { autocomplete, getAlgoliaResults } = window["@algolia/autocomplete-js"];
-import { get_link_info, random_from_list } from "./main.js";
+import { get_link_info, random_from_list } from "./shared";
 
 // Adding a query paramater.
 // import instantsearch from "algoliasearch";
@@ -251,7 +251,12 @@ async function CreateAutoComplete(
     }
     return results;
   }
-  if (!$(autocomplete_id).length) {
+  // Make sure we have the element
+  // autocomplete_id can be either '#id' or just 'id'
+  const elementId = autocomplete_id.startsWith("#")
+    ? autocomplete_id
+    : `#${autocomplete_id}`;
+  if ($(elementId).length === 0) {
     console.log(
       "No autocomplete element found",
       "autocomplete_id",
@@ -261,7 +266,7 @@ async function CreateAutoComplete(
   }
   // Setup Auto Complete Stuff
   return autocomplete({
-    container: "#autocomplete-search-box",
+    container: elementId,
     placeholder: search_placeholder_text,
     getSources: GetSources,
     debug: false,

@@ -6,9 +6,9 @@ import {
   TreeNode,
   shuffle,
 } from "./random-prompter.js";
-import { get_link_info } from "./main.js";
+import { get_link_info } from "./index";
 import { get } from "lodash-es";
-import { append_randomizer_div, random_from_list } from "./main.js";
+import { append_randomizer_div, random_from_list } from "./index";
 import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";
 
 class SevenHabits {

@@ -33,7 +33,7 @@ I'm good at a lot of things, but balance is really hard for me. Hard for everyon
 <!-- prettier-ignore-end -->
 
 <script type=module>
-    import { load_balance } from '/assets/js/page-loader.js'
+    import { load_balance } from '/assets/js/index.js'
     defer(load_balance)
 </script>
 

@@ -4,8 +4,16 @@
     "allowJs": true,
     "target": "es2019",
     "sourceMap": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "module": "esnext",
+    "esModuleInterop": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "lib": ["dom", "es2019"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["./src/**/main.ts*"],
-  "exclude": ["*graph.ts*", "*idv-blog*"]
+  "include": ["./src/**/*.ts", "./src/**/*.js"],
+  "exclude": ["node_modules", "dist", "_site"]
 }

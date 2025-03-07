@@ -1,4 +1,4 @@
-import { random_from_list, append_randomizer_div } from "./main.js";
+import { random_from_list, append_randomizer_div } from "./index";
 function html_for_blogpost(post) {
   const item = $("<div/>");
   // TODO: HACK: Strip to the right of Week number

@@ -1,6 +1,81 @@
 default:
     @just --list
 
+# ===== JavaScript/TypeScript Build System =====
+# For JavaScript/TypeScript development, use these commands:
+# - js-build: Build all JavaScript/TypeScript files for production
+# - js-watch: Watch for changes during development
+# - js-typecheck: Run TypeScript type checking without emitting files
+# - js-test: Run Jest tests
+# - js-lint: Check code formatting
+# - js-format: Format code with Prettier
+# - js-clean: Clean build artifacts
+
+# Build all JavaScript/TypeScript files for production
+js-build:
+    # Using Parcel for bundling (handles TypeScript transpilation)
+    rm -rf .parcel-cache dist assets/js/*.js assets/js/*.map
+    # Build the single entry point with optimization
+    npx parcel build --no-cache --no-source-maps --no-content-hash --detailed-report
+
+# Watch for changes during development
+js-watch:
+    # Using Parcel for bundling with watch mode
+    rm -rf .parcel-cache dist assets/js/*.js assets/js/*.map
+    # Watch the single entry point
+    npx parcel watch --no-cache
+
+# Run TypeScript type checking without emitting files
+js-typecheck:
+    # Using TypeScript for type checking only (no transpilation)
+    npx tsc --noEmit
+
+# Run Jest tests
+js-test:
+    npx jest
+
+# Check code formatting
+js-lint:
+    npx prettier --check 'src/**/*.{ts,js}'
+
+# Format code with Prettier
+js-format:
+    npx prettier --write 'src/**/*.{ts,js}'
+
+# Clean build artifacts
+js-clean:
+    rm -rf .parcel-cache dist
+
+# Validate code (typecheck + lint)
+js-validate: js-typecheck js-lint
+
+# Legacy commands (kept for backward compatibility)
+parcel-start:
+    @echo "⚠️ This command is deprecated. Use 'just js-watch' instead."
+    npx parcel src/index.html
+
+parcel-build:
+    @echo "⚠️ This command is deprecated. Use 'just js-build' instead."
+    npx parcel build --dist-dir assets/js --no-cache --no-source-maps
+
+parcel-build-search:
+    @echo "⚠️ This command is deprecated. Use 'just js-build' instead."
+    npx parcel build --dist-dir assets/js --no-cache --no-source-maps
+
+parcel-watch:
+    @echo "⚠️ This command is deprecated. Use 'just js-watch' instead."
+    rm -rf .parcel-cache dist assets/js/*.js assets/js/*.map && npx parcel watch --no-cache
+
+parcel-clean:
+    @echo "⚠️ This command is deprecated. Use 'just js-clean' instead."
+    rm -rf .parcel-cache dist
+
+tsc:
+    @echo "⚠️ This command is deprecated. Use 'just js-typecheck' instead."
+    tsc --watch --allowUmdGlobalAccess
+
+# ===== Jekyll Commands =====
+
 coverage-instrument:
     npx nyc instrument --compact=false _site/assets/js instrumented
 
@@ -39,21 +114,6 @@ jekyll-container:
 docker-build:
     docker build -t devdocker devdocker
 
-parcel-start:
-    npx parcel src/index.html
-
-parcel-build:
-    npx parcel build src/main.ts --dist-dir assets/js
-
-parcel-build-search:
-    npx parcel build src/search.ts --dist-dir assets/js
-
-parcel-watch:
-    rm -rf .parcel-cache dist && npx parcel watch src/main.ts src/search.ts --dist-dir assets/js
-
-parcel-clean:
-    rm -rf .parcel-cache dist
-
 docker-run2:
     docker run -v ~/blog:/root/blog -p 35729:35729 -p 4000:4000 -it devdocker
 
@@ -77,9 +137,6 @@ update-fj:
 
 back-links:
     just update-backlinks
-
-tsc:
-    tsc --watch --allowUmdGlobalAccess
 
 broken-links:
     scrapy runspider linkchecker.py -O ~/tmp/brokenlinks.csv && cat ~/tmp/brokenlinks.csv

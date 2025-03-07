@@ -6,7 +6,7 @@ no-render-title: true
 ---
 
 <script type=module>
-    import { load_ig66 } from '/assets/js/page-loader.js'
+    import { load_ig66 } from '/assets/js/index.js'
     defer(load_ig66)
 </script>
 

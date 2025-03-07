@@ -7,7 +7,7 @@ redirect_from:
   - /todo
 ---
 
-It’s easy to forget the many, often tiny things that makes me happy. For when that happens, here’s some reminders:
+It's easy to forget the many, often tiny things that makes me happy. For when that happens, here's some reminders:
 
 <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
 <div class="alert alert-primary" id="sunburst_text">
@@ -18,7 +18,7 @@ It’s easy to forget the many, often tiny things that makes me happy. For when 
 </div>
 
 <script type=module>
-    import { load_enjoy2} from '/assets/js/page-loader.js'
+    import { load_enjoy2} from '/assets/js/index.js'
     defer(load_enjoy2)
 </script>
 
@@ -35,7 +35,7 @@ function toggle_play_pause(id) {
 </script>
 
 <div class= 'alert alert-warning' id="random-eulogy-role">
-Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor “Began with the end in mind” with the “important but not urgent” task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
+Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor "Began with the end in mind" with the "important but not urgent" task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.
 </div>
 <div class= 'alert alert-info' id="random-blog-posts">
     Will be replaced by  a random blog post
@@ -58,7 +58,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 
 - Take a selfie with Friends
 - Take a selfie with Goofie Hats
-- Take a selife with a funny face
+- Take a selfie with a funny face
 - Make a goofie TikTok
 
 ### Tech

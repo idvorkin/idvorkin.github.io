@@ -1,7 +1,7 @@
 // One of the imports is goofy
 // @ts-ignore:TS2792
 import { SunburstClickEvent } from "plotly.js";
-import { shuffle, random_from_list, append_randomizer_div } from "./main.js";
+import { shuffle, random_from_list, append_randomizer_div } from "./index";
 import {
   isNullishCoalesce,
   isTypeAliasDeclaration,
@@ -108,9 +108,9 @@ function tree_to_plotly_data_format(root) {
   // values
 
   // JScript Experts: Is there a desctructing for this?
-  const names_parent_names = Array.from(
-    breadth_first_walk(root)
-  ).map(([n, p]) => [n.name, p?.name]);
+  const names_parent_names = Array.from(breadth_first_walk(root)).map(
+    ([n, p]) => [n.name, p?.name]
+  );
 
   return {
     ids: names_parent_names.map(([n, p]) => n),
