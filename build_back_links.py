@@ -145,7 +145,7 @@ class Page:
 # Place to store allow and deny lists
 class idvorkin_github_io_config:
     def is_allow_incoming(self, file_path: FileType):
-        deny_list = "404.html;all.html;toc.html;index.html".split(";")
+        deny_list = "404.html;all.html;toc.html;index.html;tags.html".split(";")
         for deny in deny_list:
             if file_path.endswith(deny):
                 return False
@@ -228,6 +228,12 @@ class LinkBuilder:
                 if "href" in tag.attrs and (not is_site_nav(tag))
             ]
             links = [link for link in links if jekyll_config.is_allow_outgoing(link)]
+            # Explicitly remove any "/tags" links that might have slipped through
+            links = [
+                link
+                for link in links
+                if link != "/tags" and not link.startswith("/tags#")
+            ]
             links = [link.split("#")[0] for link in links]
 
             # cut down on small changes to backlinks when minor file changes
@@ -318,6 +324,16 @@ class LinkBuilder:
             self.incoming_links[canonical_link].extend(self.incoming_links[link])
             # erase duplicate link from dict
             self.incoming_links.pop(link)
+
+        # Remove "/tags" from incoming_links if it somehow got included
+        if "/tags" in self.incoming_links:
+            self.incoming_links.pop("/tags")
+
+        # Remove any references to "/tags" as an incoming link
+        for link in self.incoming_links.keys():
+            self.incoming_links[link] = [
+                url for url in self.incoming_links[link] if url != "/tags"
+            ]
 
         # dedup all elements
         for link in self.incoming_links.keys():
