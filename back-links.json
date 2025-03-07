@@ -834,6 +834,7 @@
                 "/7h-concepts",
                 "/d/time-off-2021-12",
                 "/energy-abundance",
+                "/life-as-business",
                 "/productive"
             ],
             "redirect_url": "",
@@ -1501,6 +1502,7 @@
                 "/energy-abundance",
                 "/hobby",
                 "/idle",
+                "/life-as-business",
                 "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
@@ -2170,7 +2172,9 @@
                 "/strategy",
                 "/timeoff"
             ],
-            "incoming_links": [],
+            "incoming_links": [
+                "/life-as-business"
+            ],
             "redirect_url": "",
             "markdown_path": "_d/energy-abundance.md",
             "doc_size": 24000
@@ -2918,6 +2922,24 @@
             "markdown_path": "_d/learn-to-code.md",
             "doc_size": 10000
         },
+        "/life-as-business": {
+            "url": "/life-as-business",
+            "title": "Life as a Business: Managing Energy, Assets, and Satisfaction",
+            "description": "Businesses exist to generate profit. But what about life? Can we manage our lives with the same intentionality and clarity businesses use to thrive? Viewing life through this lens helps prioritize what truly matters, sustain energy, and deepen relationships. Just as businesses carefully manage resources, we can intentionally allocate our energy, nurture meaningful assets, and measure success beyond mere productivity. Life operates on two intertwined currencies—Life Value (the true worth of our existence) and energy (the operational fuel). These currencies are generated and sustained by carefully nurturing life assets such as relationships, health, skills, and character.\n\n",
+            "file_path": "_site/life-as-business.html",
+            "outgoing_links": [
+                "/balance",
+                "/d/habits",
+                "/energy-abundance",
+                "/operating-manual",
+                "/strategy",
+                "/timeoff"
+            ],
+            "incoming_links": [],
+            "redirect_url": "",
+            "markdown_path": "_d/life-as-business.md",
+            "doc_size": 33000
+        },
         "/like-switch": {
             "url": "/like-switch",
             "title": "How to build rapport and set people at ease",
@@ -3410,7 +3432,8 @@
             ],
             "incoming_links": [
                 "/energy",
-                "/energy-abundance"
+                "/energy-abundance",
+                "/life-as-business"
             ],
             "redirect_url": "",
             "markdown_path": "_d/operating-manual-2.md",
@@ -4078,6 +4101,7 @@
             "outgoing_links": [],
             "incoming_links": [
                 "/energy-abundance",
+                "/life-as-business",
                 "/manager-book"
             ],
             "redirect_url": "",
@@ -4708,6 +4732,7 @@
                 "/d/time-off-2023-11",
                 "/energy",
                 "/energy-abundance",
+                "/life-as-business",
                 "/mind-at-work",
                 "/parkinson",
                 "/time-off-2024-08"
