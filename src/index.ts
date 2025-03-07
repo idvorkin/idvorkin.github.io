@@ -21,6 +21,9 @@ import { load_globals, MakeBackLinkHTML } from "./main";
 // Import search functionality
 import { CreateAutoComplete } from "./search";
 
+// Import recent posts functionality
+import { initRecentAllPosts } from "./recent";
+
 // Import page-loader functionality
 import {
   load_enjoy2,
@@ -114,6 +117,8 @@ export {
   load_globals,
   MakeBackLinkHTML,
   CreateAutoComplete,
+  // Recent posts export
+  initRecentAllPosts,
   // Page loader exports
   load_enjoy2,
   load_7_habits,

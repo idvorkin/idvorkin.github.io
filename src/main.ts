@@ -9,6 +9,7 @@ import {
 } from "./shared";
 
 import { initRecentPosts } from "./recent-posts";
+import { initRecentAllPosts } from "./recent";
 
 let tocExpand = true;
 
@@ -287,12 +288,19 @@ Try these shortcuts:
 function load_globals() {
   $(add_link_loader);
   $(keyboard_shortcut_loader);
-  // Initialize the recent posts component
+
   console.log("🚀 About to call initRecentPosts from main.ts");
   initRecentPosts();
   console.log("✅ Called initRecentPosts from main.ts");
-  $(() => {
-    // TOC Generation should go to posts.
+
+  // Initialize recent posts if the container exists
+  if (document.getElementById("last-modified-posts")) {
+    console.log("🚀 About to call initRecentAllPosts from main.ts");
+    initRecentAllPosts();
+    console.log("✅ Called initRecentAllPosts from main.ts");
+  }
+
+  $(function () {
     generateToc("ui-toc", true);
     generateToc("ui-toc-affix", false);
   });

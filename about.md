@@ -29,6 +29,10 @@ Finally, the metaphorical small print: These are my personal opinions, not those
   <p>Loading recently changed posts...</p>
 </div>
 
+<p>
+  <a href="/recent">View all recently modified content</a>
+</p>
+
 ### What does this have to do with writer's block?
 
 From Seth:
