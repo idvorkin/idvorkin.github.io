@@ -40,13 +40,16 @@ docker-build:
     docker build -t devdocker devdocker
 
 parcel-start:
-    parcel src/index.html
+    npx parcel src/index.html
 
 parcel-build:
-    parcel build src/index.ts
+    npx parcel build src/main.ts --dist-dir assets/js
+
+parcel-build-search:
+    npx parcel build src/search.ts --dist-dir assets/js
 
 parcel-watch:
-    rm -rf .parcel-cache dist && parcel watch src/index.ts
+    rm -rf .parcel-cache dist && npx parcel watch src/main.ts src/search.ts --dist-dir assets/js
 
 parcel-clean:
     rm -rf .parcel-cache dist
