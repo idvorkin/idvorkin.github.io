@@ -23,25 +23,31 @@ As such, a few of the posts will be finished, most posts will be incomplete, and
 
 Finally, the metaphorical small print: These are my personal opinions, not those of my employer.
 
+### Recently Changed Posts
+
+<div id="recent-posts">
+  <p>Loading recently changed posts...</p>
+</div>
+
 ### What does this have to do with writer's block?
 
 From Seth:
 
-One reason that successful and prolific singer-songwriters are prolific is that as soon as they’ve written a song, they can record it and publish it. And a huge advantage of having a daily blog is that the software is always open, waiting for you to write something.
+One reason that successful and prolific singer-songwriters are prolific is that as soon as they've written a song, they can record it and publish it. And a huge advantage of having a daily blog is that the software is always open, waiting for you to write something.
 
-Your story doesn’t have to be a book, it is simply your chance to make a difference. “Here’s what I see, here’s how you can be part of it.”
+Your story doesn't have to be a book, it is simply your chance to make a difference. "Here's what I see, here's how you can be part of it."
 
 When we remove the pre (finding the pen, the paper, the notebook, the software) and the post (finding a way to publish it), it turns out that we write more often, and writing more often leads to writing better.
 
-It doesn’t have to be perfect, it can simply be the next thing you do\*
+It doesn't have to be perfect, it can simply be the next thing you do\*
 
 ### What about writer's block?
 
 _From Seth Godin_
 
-People with writer’s block don’t have a problem typing. They have a problem living with bad writing, imperfect writing, writing that might expose something that they fear.
+People with writer's block don't have a problem typing. They have a problem living with bad writing, imperfect writing, writing that might expose something that they fear.
 
-The best way to address this isn’t to wait to be perfect. Because if you wait, you’ll never get there. The best way to deal with it is to write, and to realize that your bad writing isn’t fatal. Like all skills, we improve with practice and with feedback.
+The best way to address this isn't to wait to be perfect. Because if you wait, you'll never get there. The best way to deal with it is to write, and to realize that your bad writing isn't fatal. Like all skills, we improve with practice and with feedback.
 
 ### Why does this stuff suck?
 
@@ -74,19 +80,19 @@ The monkey button selects a random page. It's the solution to Seth Godin's ancho
 
 \*Cleaning out the fridge after a power failure, I found three half-empty containers of anchovies. Because they magically migrate to the back of the fridge, every time I had needed some, I ended up opening a new jar, because the old ones were invisible. Not just invisible if I had looked for them, but so invisible that it never even occurred to me to look for them.
 
-Even more true with your thoughts. If you don’t know to look for it, if you don’t believe it’s there, it might as well be deleted. It’s worth putting in regular effort to remind ourselves of what we’ve already known and how it has served us in the past.\*
+Even more true with your thoughts. If you don't know to look for it, if you don't believe it's there, it might as well be deleted. It's worth putting in regular effort to remind ourselves of what we've already known and how it has served us in the past.\*
 
 ### Are you doing this outside of work? How do you have time.
 
 From "Clean Craftsmanship" on being a professional ...
 
-“If your employer provides you the time and space to do this kind of learning, then take as much advantage of it as you can. If your employer is not so helpful, then you’ll have to learn on your own time. Be prepared to spend several hours per month on it. Make sure you have the personal time set aside for it. Yes, I know, you have family obligations, there are bills to pay and planes to catch, and you’ve got a life. Okay, but you also have a profession. And professions need care and maintenance. I expect us all to be continuous aggressive learners.”
+"If your employer provides you the time and space to do this kind of learning, then take as much advantage of it as you can. If your employer is not so helpful, then you'll have to learn on your own time. Be prepared to spend several hours per month on it. Make sure you have the personal time set aside for it. Yes, I know, you have family obligations, there are bills to pay and planes to catch, and you've got a life. Okay, but you also have a profession. And professions need care and maintenance. I expect us all to be continuous aggressive learners."
 
 ### How do you decide what you work on?
 
 From a post on nvim - which speaks to my approach:
 
-_The Neovim project is loosely organized and structured. We follow a “fun driven development” paradigm: for the most part, contributors and maintainers work on things that are personally interesting to them. Because of this, it can be difficult to predict what will happen in future releases. If there is a feature you want to see implemented, the best way to do it is to take a crack at it yourself: many of the features mentioned in this very blog post were contributed by users that are not part of the “core” maintenance team!_
+_The Neovim project is loosely organized and structured. We follow a "fun driven development" paradigm: for the most part, contributors and maintainers work on things that are personally interesting to them. Because of this, it can be difficult to predict what will happen in future releases. If there is a feature you want to see implemented, the best way to do it is to take a crack at it yourself: many of the features mentioned in this very blog post were contributed by users that are not part of the "core" maintenance team!_
 
 A non-obvious bonus of this approach is you're always operating with high motivation resulting in high efficiency.
 

@@ -8,6 +8,8 @@ import {
   IURLInfoMap,
 } from "./shared";
 
+import { initRecentPosts } from "./recent-posts";
+
 let tocExpand = true;
 
 function checkExpandToggle() {
@@ -285,6 +287,10 @@ Try these shortcuts:
 function load_globals() {
   $(add_link_loader);
   $(keyboard_shortcut_loader);
+  // Initialize the recent posts component
+  console.log("🚀 About to call initRecentPosts from main.ts");
+  initRecentPosts();
+  console.log("✅ Called initRecentPosts from main.ts");
   $(() => {
     // TOC Generation should go to posts.
     generateToc("ui-toc", true);

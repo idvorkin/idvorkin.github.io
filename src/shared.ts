@@ -77,6 +77,7 @@ export interface IURLInfo {
   incoming_links: string[];
   redirect_url: string;
   doc_size: number;
+  last_modified: string;
 }
 
 let cached_link_info: IURLInfoMap = null;
