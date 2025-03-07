@@ -24,7 +24,8 @@
       "distDir": "assets/js",
       "outputFormat": "esmodule",
       "isLibrary": true,
-      "optimize": true
+      "optimize": true,
+      "sourceMap": true
     }
   },
   "repository": {

@@ -12,16 +12,16 @@ default:
 # - js-clean: Clean build artifacts
 
 # Build all JavaScript/TypeScript files for production
-js-build:
+js-build: js-clean
     # Using Parcel for bundling (handles TypeScript transpilation)
-    rm -rf .parcel-cache dist assets/js/*.js assets/js/*.map
     # Build the single entry point with optimization
-    npx parcel build --no-cache --no-source-maps --no-content-hash --detailed-report
+    npx parcel build --no-cache --no-content-hash --detailed-report
 
 # Watch for changes during development
-js-watch:
+js-watch: js-clean
     # Using Parcel for bundling with watch mode
-    rm -rf .parcel-cache dist assets/js/*.js assets/js/*.map
+    rm -rf .parcel-cache dist
+    rm -f assets/js/*.js assets/js/*.map 2>/dev/null || true
     # Watch the single entry point
     npx parcel watch --no-cache
 
@@ -48,23 +48,6 @@ js-clean:
 
 # Validate code (typecheck + lint)
 js-validate: js-typecheck js-lint
-
-# Legacy commands (kept for backward compatibility)
-parcel-start:
-    @echo "⚠️ This command is deprecated. Use 'just js-watch' instead."
-    npx parcel src/index.html
-
-parcel-build:
-    @echo "⚠️ This command is deprecated. Use 'just js-build' instead."
-    npx parcel build --dist-dir assets/js --no-cache --no-source-maps
-
-parcel-build-search:
-    @echo "⚠️ This command is deprecated. Use 'just js-build' instead."
-    npx parcel build --dist-dir assets/js --no-cache --no-source-maps
-
-parcel-watch:
-    @echo "⚠️ This command is deprecated. Use 'just js-watch' instead."
-    rm -rf .parcel-cache dist assets/js/*.js assets/js/*.map && npx parcel watch --no-cache
 
 parcel-clean:
     @echo "⚠️ This command is deprecated. Use 'just js-clean' instead."
