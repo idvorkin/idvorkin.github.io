@@ -123,23 +123,68 @@ async function get_random_post() {
   return ret;
 }
 
-const count_random_posts_to_show = 10;
-async function GetDefaultSearchResults() {
+/**
+ * Gets recent posts from the back-links.json file
+ * Returns the specified number of most recently modified posts
+ */
+async function get_recent_posts(count: number = 4) {
+  try {
+    const all_url_info = await get_link_info();
+
+    // Convert to array of pages for easier processing
+    const pages = Object.entries(all_url_info).map(([url, metadata]) => ({
+      url,
+      title: metadata.title || url,
+      description: metadata.description || "",
+      doc_size: metadata.doc_size || 0,
+      last_modified: metadata.last_modified || "",
+    }));
+
+    // Filter out pages that are likely redirects (these have empty descriptions and titles)
+    const realPages = pages.filter(
+      page =>
+        page.description &&
+        page.description.trim() !== "" &&
+        page.title &&
+        page.title.trim() !== ""
+    );
+
+    // Sort by last_modified date (newest first)
+    const sortedPages = realPages.sort((a, b) => {
+      if (a.last_modified && b.last_modified) {
+        return (
+          new Date(b.last_modified).getTime() -
+          new Date(a.last_modified).getTime()
+        );
+      }
+      // Fallback to doc_size if last_modified is not available
+      return b.doc_size - a.doc_size;
+    });
+
+    // Take the top N most recent posts
+    return sortedPages.slice(0, count);
+  } catch (error) {
+    console.error("❌ Error loading recent posts:", error);
+    return [];
+  }
+}
+
+/**
+ * Gets random posts for search results
+ * @param count Number of random posts to return (default: 3)
+ */
+async function GetRandomSearchResults(count: number = 3) {
   return {
-    sourceId: "links",
+    sourceId: "random_posts",
     async getItems() {
-      const sized_array = new Array(count_random_posts_to_show)
-        .join("_")
-        .split("_");
+      const sized_array = new Array(count).join("_").split("_");
       const random_posts = await Promise.all(
         sized_array.map(async e => get_random_post())
       );
       return random_posts;
     },
     getItemUrl({ item }) {
-      // console.log("getItemUrl ", item);
       const ret = item.url;
-      // console.log("ret", ret);
       return ret;
     },
     templates: {
@@ -163,15 +208,61 @@ async function GetDefaultSearchResults() {
         });
       },
     },
-    // ...
   };
 }
 
+/**
+ * Gets recent posts for search results
+ * @param count Number of recent posts to return (default: 4)
+ */
+async function GetRecentSearchResults(count: number = 4) {
+  return {
+    sourceId: "recent_posts",
+    async getItems() {
+      const recentPosts = await get_recent_posts(count);
+      return recentPosts;
+    },
+    getItemUrl({ item }) {
+      const ret = item.url;
+      return ret;
+    },
+    templates: {
+      item({ item, createElement }) {
+        return createElement("div", {
+          dangerouslySetInnerHTML: {
+            __html: `
+            <span onClick="window.location='${item.url}';" >
+           <b> <a href="${item.url}">${item.title}</a></b>
+            <span>${item.description}</span>
+            </span>
+            `,
+          },
+        });
+      },
+      header({ createElement }) {
+        return createElement("div", {
+          dangerouslySetInnerHTML: {
+            __html: "<i style='color:grey'>Recent posts ...</i>",
+          },
+        });
+      },
+    },
+  };
+}
+
+/**
+ * Gets featured posts from Algolia search
+ * @param searchClient Algolia search client
+ * @param index_name Index name to search
+ * @param query Search query
+ * @param hitsPerPage Number of results to return (default: 3)
+ * @param includeFamilyJournal Whether to include family journal posts
+ */
 function GetAlgoliaResults(
   searchClient,
   index_name,
   query,
-  hitsPerPage: number,
+  hitsPerPage: number = 3,
   includeFamilyJournal = false
 ) {
   // By default don't include family journal.
@@ -181,7 +272,7 @@ function GetAlgoliaResults(
   }
 
   return {
-    sourceId: "from_search",
+    sourceId: "featured_posts",
     getItems() {
       return getAlgoliaResults({
         searchClient,
@@ -215,42 +306,61 @@ function GetAlgoliaResults(
         url += `#${item.anchor}`;
       }
       const ret = url;
-      // console.log("getItemUrl ", item);
-      // console.log("ret", ret);
       return ret;
     },
   };
 }
+
+/**
+ * Creates an autocomplete search component
+ * @param appid Algolia app ID
+ * @param search_api_key Algolia search API key
+ * @param index_name Algolia index name
+ * @param autocomplete_id ID of the autocomplete element
+ * @param includeFamilyJournal Whether to include family journal posts
+ * @param featuredCount Number of featured posts to show (default: 3)
+ * @param recentCount Number of recent posts to show (default: 4)
+ * @param randomCount Number of random posts to show (default: 3)
+ */
 async function CreateAutoComplete(
   appid,
   search_api_key,
   index_name,
   autocomplete_id,
-  includeFamilyJournal
+  includeFamilyJournal,
+  featuredCount: number = 3,
+  recentCount: number = 4,
+  randomCount: number = 3
 ) {
   const searchClient = algoliasearch(appid, search_api_key);
-  const defaultSearchResults = await GetDefaultSearchResults();
+  const randomSearchResults = await GetRandomSearchResults(randomCount);
+  const recentSearchResults = await GetRecentSearchResults(recentCount);
+
   function GetSources({ query }) {
     const isEmptySearch = query.length === 0;
     if (isEmptySearch) {
       // Searching for a space gives nice default results, so when no results search for that ...
-      // TODO: Consider including the recent search history as well
       query = " ";
     }
-    const algoliaResults = GetAlgoliaResults(
+
+    // Get featured posts (from Algolia search)
+    const featuredPosts = GetAlgoliaResults(
       searchClient,
       index_name,
       query,
-      isEmptySearch ? 4 : 10,
+      isEmptySearch ? featuredCount : 10, // Show N featured posts when empty, more when searching
       includeFamilyJournal
     );
-    const results = [algoliaResults];
+
+    // For empty search, show featured, recent, and random posts
+    // For actual search, just show search results
     if (isEmptySearch) {
-      results.push(defaultSearchResults);
-      // results = [GetDefaultSearchResults];
+      return [featuredPosts, recentSearchResults, randomSearchResults];
+    } else {
+      return [featuredPosts];
     }
-    return results;
   }
+
   // Make sure we have the element
   // autocomplete_id can be either '#id' or just 'id'
   const elementId = autocomplete_id.startsWith("#")
@@ -264,6 +374,7 @@ async function CreateAutoComplete(
     );
     return;
   }
+
   // Setup Auto Complete Stuff
   return autocomplete({
     container: elementId,
