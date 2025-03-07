@@ -1,0 +1,200 @@
+---
+description: ENFORCE blog code standards when developing the blog codebase to ensure consistency and maintainability
+globs: ["*.{ts,js,scss,css}"]
+tags: [typescript, javascript, jekyll, blog, development]
+priority: 2
+version: 1.0.0
+---
+
+# Blog Code Development Guidelines
+
+<version>1.0.0</version>
+
+## Context
+- When working on the blog's frontend code
+- When adding new TypeScript/JavaScript functionality 
+- When modifying existing code components
+- When implementing UI changes that require code
+
+## Requirements
+
+### TypeScript/JavaScript Development
+
+1. **Use TypeScript for all new code**
+   - Enforce type definitions for all functions and variables
+   - Prefer interfaces for data structure definitions
+
+2. **Respect interface definitions**
+   - Check existing interfaces in `shared.ts` before implementing new features
+   - Update interfaces properly when extending functionality
+
+3. **Export functions deliberately**
+   - Only export functions needed by other modules
+   - Keep internal module helpers private
+
+4. **Debug with source maps**
+   - Use Parcel without the `--no-source-maps` flag
+   - Enable proper TypeScript debugging in browser tools
+
+5. **Use the load_globals pattern**
+   - Add site-wide functionality to `load_globals` function in `main.ts`
+   - Avoid separate script tags for global behavior
+
+6. **Check document.readyState**
+   - Follow proper DOM-ready pattern for manipulation:
+   ```typescript
+   if (document.readyState === "loading") {
+     document.addEventListener("DOMContentLoaded", initFunction);
+   } else {
+     initFunction();
+   }
+   ```
+
+7. **Use the just build system**
+   - Run build tasks through just command runner
+   - Maintain consistency across development environments
+
+### Content Structure
+
+1. **Respect backlinks.json**
+   - Update `backlinks.json` when adding new content
+   - Run `just update-backlinks` after content changes
+
+2. **Keep UI components isolated**
+   - Ensure components handle their own lifecycle
+   - Implement proper error handling in all components
+
+3. **Use consistent HTML element IDs**
+   - Maintain predictable element targeting
+   - Document all IDs used for dynamic content
+
+4. **Minimize inline JavaScript**
+   - Create TypeScript modules instead of inline scripts
+   - Separate code from content/markup
+
+### Jekyll Integration
+
+1. **Test components in isolation**
+   - Create minimal test cases for complex components
+   - Avoid full Jekyll site dependency for testing
+
+2. **Always rebuild after TypeScript changes**
+   - Run `just js-build` to update compiled output
+   - Verify changes take effect in the browser
+
+3. **Use jQuery carefully**
+   - Maintain consistency with existing jQuery patterns
+   - Be mindful of jQuery dependencies
+
+4. **Include script references consistently**
+   - Follow patterns in `_includes/scripts.html`
+   - Avoid adding inline scripts
+
+5. **Jekyll development environment**
+   - Check if Jekyll is already running before starting a new server
+   - Use existing instance at http://localhost:4000 when available
+   - Only use `just jekyll-serve` for new development sessions
+   - Refresh browser to test changes
+
+### Debugging
+
+1. **Use console.log strategically**
+   - Add descriptive messages with emoji prefixes
+   - Make logs scannable and meaningful
+
+2. **Check the Network tab**
+   - Verify resources load properly
+   - Inspect response data for correctness
+
+3. **Use source maps for debugging**
+   - Set breakpoints in original TypeScript
+   - Trace execution flow directly
+
+4. **Create isolated test pages**
+   - Separate component testing from main site
+   - Isolate problems from other dependencies
+
+### Performance
+
+1. **Minimize asset sizes**
+   - Compress web assets appropriately
+   - Prefer WebP format for images
+
+2. **Lazy load when appropriate**
+   - Defer non-critical component loading
+   - Improve initial page performance
+
+3. **Profile before optimizing**
+   - Use browser performance tools
+   - Focus on measured bottlenecks
+
+## Examples
+
+<example>
+// Good: Properly checking document readiness
+function initRecentPosts() {
+  const container = document.getElementById('recent-posts');
+  if (!container) return;
+  
+  // Implementation details...
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initRecentPosts);
+} else {
+  initRecentPosts();
+}
+</example>
+
+<example type="invalid">
+// Bad: Not checking document readiness
+function initRecentPosts() {
+  const container = document.getElementById('recent-posts');
+  // This might fail if the DOM isn't loaded yet
+  container.innerHTML = 'Loading...';
+  
+  // Implementation details...
+}
+
+// Directly calling without checking document state
+initRecentPosts();
+</example>
+
+<example>
+// Good: Proper error handling
+function fetchRecentPosts() {
+  fetch('/api/recent-posts')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Failed to fetch posts: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      renderPosts(data);
+    })
+    .catch(error => {
+      console.error('🔴 Error loading recent posts:', error);
+      showFallbackContent();
+    });
+}
+</example>
+
+<example>
+// Good: TypeScript interface usage
+interface Post {
+  title: string;
+  url: string;
+  date: string;
+  excerpt?: string;
+}
+
+function renderPosts(posts: Post[]) {
+  const container = document.getElementById('posts-container');
+  if (!container) return;
+  
+  posts.forEach(post => {
+    // Render post with proper type safety
+  });
+}
+</example>
