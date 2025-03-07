@@ -121,7 +121,7 @@ docker-run:
     docker run -v ~/blog:/root/blog -it -p 35729:35729 -p 4000:4000 devdocker npm run jekyll:container
 
 update-backlinks:
-    /usr/bin/env uv run build_back_links.py build > back-links.json
+    /usr/bin/env uv run build_back_links.py build
 
 update-search:
     bundle exec jekyll algolia

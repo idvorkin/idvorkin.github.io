@@ -29,7 +29,6 @@ from datetime import datetime
 import git
 import time
 import asyncio
-import concurrent.futures
 from functools import lru_cache
 
 
@@ -75,10 +74,32 @@ def get_last_modified_time_safe(file_path: str) -> str:
     """
     try:
         if not file_path:
+            ic("Empty file path provided to get_last_modified_time_safe")
             return ""
-        return get_last_modified_time(file_path)
+
+        # First check if the file actually exists
+        if not os.path.exists(file_path):
+            ic(f"File does not exist: {file_path}")
+            return ""
+
+        # Log before calling the function
+        ic(f"Getting last modified time for: {file_path}")
+
+        # Get the last modified time
+        result = get_last_modified_time(file_path)
+
+        # Log the result
+        ic(f"Last modified time for {file_path}: {result}")
+
+        return result
     except Exception as e:
         ic(f"Error getting last modified time for {file_path}: {e}")
+
+        # Print stack trace for debugging
+        import traceback
+
+        ic(traceback.format_exc())
+
         return ""
 
 
@@ -88,26 +109,96 @@ async def process_markdown_paths_in_parallel(
     """
     Process a list of markdown paths in parallel to get their last modified times.
     Returns a dictionary mapping file paths to their last modified times.
+    Uses direct git calls instead of GitPython for better reliability.
     """
     result = {}
 
-    # Use a thread pool for I/O-bound operations
-    with concurrent.futures.ThreadPoolExecutor(
-        max_workers=os.cpu_count() * 4
-    ) as executor:
-        # Create a list of futures
-        loop = asyncio.get_event_loop()
-        futures = [
-            loop.run_in_executor(executor, get_last_modified_time_safe, path)
-            for path in markdown_paths
-            if path
-        ]
+    async def get_last_modified_time_async(path):
+        """Async function to get last modified time using direct git command"""
+        if not path:
+            ic("NULL PATH: Empty path provided to get_last_modified_time_async")
+            return path, ""
 
-        # Process the results as they complete
-        for i, future in enumerate(asyncio.as_completed(futures)):
-            last_modified = await future
-            if markdown_paths[i]:
-                result[markdown_paths[i]] = last_modified
+        if not os.path.exists(path):
+            ic(f"FILE NOT FOUND: {path} does not exist on the filesystem")
+            return path, ""
+
+        try:
+            # Use asyncio to run git command directly
+            repo = git.Repo(search_parent_directories=True)
+            relative_path = os.path.relpath(path, repo.working_dir)
+
+            # Check if file is tracked by git
+            is_tracked = False
+            try:
+                repo.git.ls_files("--error-unmatch", relative_path)
+                is_tracked = True
+            except git.GitCommandError:
+                ic(f"UNTRACKED FILE: {path} is not tracked by git")
+                return path, ""
+
+            if not is_tracked:
+                ic(f"UNTRACKED FILE: {path} is not tracked by git")
+                return path, ""
+
+            # Create the git command
+            cmd = [
+                "git",
+                "log",
+                "-1",
+                "--format=%cd",
+                "--date=iso",
+                "--",
+                relative_path,
+            ]
+            ic(f"RUNNING GIT COMMAND: {' '.join(cmd)}")
+
+            # Run the git command as a subprocess
+            proc = await asyncio.create_subprocess_exec(
+                *cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
+            )
+
+            stdout, stderr = await proc.communicate()
+
+            if proc.returncode == 0 and stdout:
+                # Parse the date output
+                git_log = stdout.decode().strip()
+                ic(f"GIT OUTPUT: {git_log} for {path}")
+
+                if not git_log:
+                    ic(f"EMPTY GIT OUTPUT: Git returned empty output for {path}")
+                    return path, ""
+
+                try:
+                    dt = datetime.strptime(git_log, "%Y-%m-%d %H:%M:%S %z")
+                    iso_date = dt.isoformat()
+                    ic(f"PARSED DATE: {iso_date} for {path}")
+                    return path, iso_date
+                except ValueError as e:
+                    ic(
+                        f"DATE PARSING ERROR: Could not parse date '{git_log}' for {path}: {e}"
+                    )
+                    return path, ""
+            else:
+                stderr_output = stderr.decode() if stderr else "No stderr output"
+                ic(f"GIT COMMAND FAILED: Return code {proc.returncode} for {path}")
+                ic(f"STDERR: {stderr_output}")
+                return path, ""
+        except Exception as e:
+            ic(f"EXCEPTION: Error in get_last_modified_time_async for {path}: {e}")
+            import traceback
+
+            ic(f"TRACEBACK: {traceback.format_exc()}")
+            return path, ""
+
+    # Create tasks for all paths
+    tasks = [get_last_modified_time_async(path) for path in markdown_paths if path]
+
+    # Run all tasks concurrently
+    for path_result in await asyncio.gather(*tasks):
+        path, last_modified = path_result
+        if path and last_modified:
+            result[path] = last_modified
 
     return result
 
@@ -285,19 +376,47 @@ class LinkBuilder:
         # Collect all markdown paths
         markdown_paths = [page.markdown_path for page in self.pages.values()]
 
+        # Count how many paths are empty
+        empty_paths = sum(1 for path in markdown_paths if not path)
+        if empty_paths > 0:
+            ic(f"WARNING: {empty_paths} pages have empty markdown_path values")
+
         # Process them in parallel
         ic(f"Processing {len(markdown_paths)} markdown paths in parallel...")
         start_time = time.time()
         last_modified_map = await process_markdown_paths_in_parallel(markdown_paths)
         end_time = time.time()
+
+        # Check how many paths got dates
+        paths_with_dates = sum(1 for date in last_modified_map.values() if date)
+        ic(f"Got dates for {paths_with_dates} out of {len(markdown_paths)} paths")
+
+        if paths_with_dates < len(markdown_paths):
+            ic(
+                f"WARNING: {len(markdown_paths) - paths_with_dates} paths did not get dates"
+            )
+
         ic(
             f"Processed {len(last_modified_map)} markdown paths in {end_time - start_time:.2f} seconds"
         )
+
+        # Track which pages end up with null last_modified values
+        null_last_modified = []
 
         # Update the pages with the results
         for page in self.pages.values():
             if page.markdown_path in last_modified_map:
                 page.last_modified = last_modified_map[page.markdown_path]
+                if not page.last_modified:
+                    null_last_modified.append((page.url, page.markdown_path))
+
+        # Report on pages with null last_modified values
+        if null_last_modified:
+            ic(
+                f"WARNING: {len(null_last_modified)} pages have null last_modified values"
+            )
+            for url, path in null_last_modified[:10]:  # Show first 10
+                ic(f"  Null last_modified for URL: {url}, Path: {path}")
 
     def canonicalize_outgoing_pages(self):
         for page in self.pages.values():
@@ -385,7 +504,12 @@ class LinkBuilder:
                 }
             return obj
 
-        print(json.dumps(out, indent=4, ensure_ascii=False, default=page_encoder))
+        # Write directly to the file instead of printing to stdout
+        with open("back-links.json", "w", encoding="utf-8") as f:
+            json.dump(out, f, default=page_encoder, ensure_ascii=False, indent=4)
+
+        # Print a message to stdout for logging
+        print("Successfully wrote back-links.json")
 
 
 def build_links_for_dir(lb, dir):
@@ -406,15 +530,18 @@ def build():
     for d in jekyll_config.collection_dirs():
         build_links_for_dir(lb, d)
 
-    # Update last modified times in parallel
+    # Update last modified times
     parsing_time = time.time()
     ic(f"Parsed all pages in {parsing_time - start_time:.2f} seconds")
 
+    # Use our improved parallel processing with direct git calls
+    ic("Processing last_modified dates in parallel using direct git calls")
     asyncio.run(lb.update_last_modified_times())
 
     git_time = time.time()
-    ic(f"Updated last modified times in {git_time - parsing_time:.2f} seconds")
+    ic(f"Updated last modified dates in {git_time - parsing_time:.2f} seconds")
 
+    # Print JSON to file instead of stdout
     lb.print_json()
 
     end_time = time.time()
@@ -428,6 +555,332 @@ def debug():
     for d in jekyll_config.collection_dirs():
         build_links_for_dir(lb, d)
     lb.print_json()
+
+
+@app.command()
+def test_dates():
+    """Test the date retrieval functionality for specific files."""
+    ic("Testing date retrieval")
+
+    test_files = [
+        "_d/2015-11-11-mind-monsters.md",
+        "_d/40-yo-programmer.md",
+        "build_back_links.py",
+    ]
+
+    for file_path in test_files:
+        ic(f"Testing file: {file_path}")
+        # Direct git command
+        try:
+            repo = git.Repo(search_parent_directories=True)
+            relative_path = os.path.relpath(file_path, repo.working_dir)
+            ic(f"Relative path: {relative_path}")
+
+            # Use git log to get the last commit date for the file
+            git_log = repo.git.log(
+                "-1", "--format=%cd", "--date=iso", "--", relative_path
+            )
+            ic(f"Raw git log output: {git_log}")
+
+            # Parse the date with the function
+            if git_log:
+                dt = datetime.strptime(git_log.strip(), "%Y-%m-%d %H:%M:%S %z")
+                iso_date = dt.isoformat()
+                ic(f"Parsed ISO date: {iso_date}")
+            else:
+                ic(f"No git history found for {file_path}")
+        except Exception as e:
+            ic(f"Error getting git info: {e}")
+
+        # Also test the function from the script
+        try:
+            last_modified = get_last_modified_time(file_path)
+            ic(f"Last modified from function: {last_modified}")
+        except Exception as e:
+            ic(f"Error from function: {e}")
+
+        # Also check file system timestamp
+        try:
+            stat_info = os.stat(file_path)
+            file_mtime = datetime.fromtimestamp(stat_info.st_mtime).isoformat()
+            ic(f"File system mtime: {file_mtime}")
+        except Exception as e:
+            ic(f"Error getting file system time: {e}")
+
+        ic("-------------------")
+
+
+@app.command()
+def verbose_test():
+    """Run a verbose test on a specific file to diagnose last_modified date issues."""
+    ic("Running verbose test")
+
+    # Test the mind-monsters file specifically
+    test_file = "_d/2015-11-11-mind-monsters.md"
+    test_url = "/mind-monsters"
+
+    # Step 1: Check if the file exists
+    ic(f"Checking if file exists: {test_file}")
+    file_exists = os.path.exists(test_file)
+    ic(f"File exists: {file_exists}")
+
+    # Step 2: Get the git last modified time directly (not cached)
+    ic("Getting git last modified time directly")
+    try:
+        repo = git.Repo(search_parent_directories=True)
+        relative_path = os.path.relpath(test_file, repo.working_dir)
+        git_log = repo.git.log("-1", "--format=%cd", "--date=iso", "--", relative_path)
+        ic(f"Git log raw output: {git_log}")
+
+        dt = datetime.strptime(git_log.strip(), "%Y-%m-%d %H:%M:%S %z")
+        git_date_iso = dt.isoformat()
+        ic(f"Git date (ISO): {git_date_iso}")
+    except Exception as e:
+        ic(f"Error getting git date: {e}")
+
+    # Step 3: Get the time using the cached function
+    ic("Getting time using cached function")
+    cached_time = get_last_modified_time(test_file)
+    ic(f"Cached time: {cached_time}")
+
+    # Step 4: Check the existing back-links.json
+    ic("Checking existing back-links.json")
+    try:
+        with open("back-links.json", "r") as f:
+            data = json.load(f)
+            if test_url in data.get("url_info", {}):
+                stored_date = data["url_info"][test_url].get("last_modified", "")
+                ic(f"Stored date in back-links.json: {stored_date}")
+
+                # Compare with git date
+                if stored_date != git_date_iso:
+                    ic(
+                        f"MISMATCH: Git date {git_date_iso} != Stored date {stored_date}"
+                    )
+    except Exception as e:
+        ic(f"Error reading back-links.json: {e}")
+
+    # Step 5: Check if the file is correctly referenced in HTML
+    ic("Checking HTML markdown-path reference")
+    html_file = f"_site{test_url}.html"
+    if os.path.exists(html_file):
+        try:
+            with open(html_file, "r") as f:
+                html_content = f.read()
+                soup = BeautifulSoup(html_content, features="html.parser")
+                markdown_meta = soup.find("meta", property="markdown-path")
+                if markdown_meta:
+                    meta_path = markdown_meta.get("content", "")
+                    ic(f"HTML meta markdown-path: {meta_path}")
+                    if meta_path != test_file:
+                        ic(f"MISMATCH: Expected {test_file} but found {meta_path}")
+                else:
+                    ic("No markdown-path meta tag found in HTML")
+        except Exception as e:
+            ic(f"Error reading HTML file: {e}")
+    else:
+        ic(f"HTML file not found: {html_file}")
+
+    # Step 6: Run a manual full update for this file only
+    ic("Running manual update for this file")
+    lb = LinkBuilder()
+    test_html_path = f"_site{test_url}.html"
+    if os.path.exists(test_html_path):
+        lb.update(test_html_path)
+        ic("Update completed")
+
+        # Check the page info
+        for url, page in lb.pages.items():
+            if url == test_url:
+                ic(f"Page info after update: {url}")
+                ic(f"  markdown_path: {page.markdown_path}")
+                ic(f"  last_modified before parallel update: {page.last_modified}")
+
+                # Manually update last modified time
+                if page.markdown_path:
+                    manual_time = get_last_modified_time_safe(page.markdown_path)
+                    ic(f"  manually calculated last_modified: {manual_time}")
+
+                    # Update page
+                    page.last_modified = manual_time
+                    ic(f"  last_modified after manual update: {page.last_modified}")
+    else:
+        ic(f"HTML file not found for update: {test_html_path}")
+
+
+@app.command()
+def check_dates():
+    """Build back-links.json with extra date validation to fix the issue."""
+    start_time = time.time()
+
+    # Normal build process
+    lb = LinkBuilder()
+    for d in jekyll_config.collection_dirs():
+        build_links_for_dir(lb, d)
+
+    # Update last modified times WITH VALIDATION
+    parsing_time = time.time()
+    ic(f"Parsed all pages in {parsing_time - start_time:.2f} seconds")
+
+    # Instead of using parallel processing, manually process each file
+    # This is slower but more reliable for debugging
+    ic("Manually processing last_modified dates (with validation)")
+
+    # Files that had mismatches
+    mismatches = []
+
+    # Process each file's date manually
+    for url, page in lb.pages.items():
+        if not page.markdown_path:
+            continue
+
+        # Get date using git
+        try:
+            if not os.path.exists(page.markdown_path):
+                ic(f"File doesn't exist: {page.markdown_path} for URL {url}")
+                continue
+
+            # Use the git command directly
+            repo = git.Repo(search_parent_directories=True)
+            relative_path = os.path.relpath(page.markdown_path, repo.working_dir)
+            git_log = repo.git.log(
+                "-1", "--format=%cd", "--date=iso", "--", relative_path
+            )
+
+            if git_log:
+                dt = datetime.strptime(git_log.strip(), "%Y-%m-%d %H:%M:%S %z")
+                git_date = dt.isoformat()
+
+                # Check if stored date is different
+                if page.last_modified and page.last_modified != git_date:
+                    ic(f"DATE MISMATCH for {url} - {page.markdown_path}")
+                    ic(f"  Existing: {page.last_modified}")
+                    ic(f"  Git date: {git_date}")
+                    mismatches.append(
+                        (url, page.markdown_path, page.last_modified, git_date)
+                    )
+
+                # Update with correct date
+                page.last_modified = git_date
+            else:
+                ic(f"No git history found for {page.markdown_path}")
+        except Exception as e:
+            ic(f"Error processing date for {url} - {page.markdown_path}: {e}")
+
+    # Report issues
+    if mismatches:
+        ic(f"Found {len(mismatches)} date mismatches")
+        # Show first 5 mismatches
+        for i, (url, path, old, new) in enumerate(mismatches[:5]):
+            ic(f"Mismatch {i+1}: {url} - {path}")
+            ic(f"  Old: {old}")
+            ic(f"  New: {new}")
+    else:
+        ic("No date mismatches found")
+
+    # Output the corrected JSON
+    lb.compress()
+    git_time = time.time()
+    ic(f"Processed dates in {git_time - parsing_time:.2f} seconds")
+
+    lb.print_json()
+
+    end_time = time.time()
+    ic(f"Total time: {end_time - start_time:.2f} seconds")
+
+
+@app.command()
+def debug_null_dates():
+    """Debug command to specifically check for pages with null last_modified values."""
+    ic("Debugging null last_modified values")
+
+    # First check the existing back-links.json
+    null_dates_in_json = []
+    try:
+        with open("back-links.json", "r") as f:
+            data = json.load(f)
+            for url, info in data.get("url_info", {}).items():
+                if "last_modified" not in info or not info["last_modified"]:
+                    markdown_path = info.get("markdown_path", "")
+                    null_dates_in_json.append((url, markdown_path))
+
+        if null_dates_in_json:
+            ic(
+                f"Found {len(null_dates_in_json)} pages with null last_modified in back-links.json"
+            )
+            for url, path in null_dates_in_json[:10]:  # Show first 10
+                ic(f"  Null last_modified in JSON for URL: {url}, Path: {path}")
+        else:
+            ic("No pages with null last_modified found in back-links.json")
+    except Exception as e:
+        ic(f"Error reading back-links.json: {e}")
+
+    # Now check each of these files directly
+    for url, path in null_dates_in_json:
+        if not path:
+            ic(f"  No markdown_path for URL: {url}")
+            continue
+
+        ic(f"Checking file directly: {path}")
+
+        # Check if file exists
+        if not os.path.exists(path):
+            ic(f"  FILE NOT FOUND: {path} does not exist")
+            continue
+
+        # Check if file is tracked by git
+        try:
+            repo = git.Repo(search_parent_directories=True)
+            relative_path = os.path.relpath(path, repo.working_dir)
+
+            try:
+                repo.git.ls_files("--error-unmatch", relative_path)
+                ic(f"  File is tracked by git: {path}")
+            except git.GitCommandError:
+                ic(f"  UNTRACKED FILE: {path} is not tracked by git")
+                continue
+
+            # Try to get git log
+            try:
+                git_log = repo.git.log(
+                    "-1", "--format=%cd", "--date=iso", "--", relative_path
+                )
+                if git_log:
+                    ic(f"  Git log found: {git_log}")
+                    try:
+                        dt = datetime.strptime(git_log.strip(), "%Y-%m-%d %H:%M:%S %z")
+                        iso_date = dt.isoformat()
+                        ic(f"  Parsed date: {iso_date}")
+                    except ValueError as e:
+                        ic(f"  DATE PARSING ERROR: {e}")
+                else:
+                    ic("  No git log found for file")
+            except git.GitCommandError as e:
+                ic(f"  Git log command failed: {e}")
+        except Exception as e:
+            ic(f"  Error checking file: {e}")
+
+    # Also check HTML files to see if markdown-path meta tags are correct
+    ic("Checking HTML files for markdown-path meta tags")
+    for url, path in null_dates_in_json:
+        html_file = f"_site{url}.html"
+        if os.path.exists(html_file):
+            try:
+                with open(html_file, "r") as f:
+                    html_content = f.read()
+                    soup = BeautifulSoup(html_content, features="html.parser")
+                    markdown_meta = soup.find("meta", property="markdown-path")
+                    if markdown_meta:
+                        meta_path = markdown_meta.get("content", "")
+                        ic(f"  HTML meta markdown-path for {url}: {meta_path}")
+                        if meta_path != path:
+                            ic(f"  MISMATCH: JSON has {path} but HTML has {meta_path}")
+                    else:
+                        ic(f"  No markdown-path meta tag found in HTML for {url}")
+            except Exception as e:
+                ic(f"  Error reading HTML file {html_file}: {e}")
+        else:
+            ic(f"  HTML file not found: {html_file}")
 
 
 if __name__ == "__main__":
