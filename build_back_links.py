@@ -31,11 +31,16 @@ import time
 import asyncio
 from functools import lru_cache
 
+# Configure icecream to be less verbose but still use it
+ic.configureOutput(prefix="", includeContext=False)
 
 # Use type system (and mypy) to reduce error,
 # Even though both of these are strings, they should not be inter mixed
 FileType = NewType("FileType", str)
 PathType = NewType("PathType", str)
+
+# Set a maximum number of concurrent operations to prevent "too many files open" error
+MAX_CONCURRENT_OPERATIONS = 50  # Adjust this value based on system limits
 
 
 @lru_cache(maxsize=1024)
@@ -74,32 +79,17 @@ def get_last_modified_time_safe(file_path: str) -> str:
     """
     try:
         if not file_path:
-            ic("Empty file path provided to get_last_modified_time_safe")
             return ""
 
         # First check if the file actually exists
         if not os.path.exists(file_path):
-            ic(f"File does not exist: {file_path}")
             return ""
-
-        # Log before calling the function
-        ic(f"Getting last modified time for: {file_path}")
 
         # Get the last modified time
         result = get_last_modified_time(file_path)
 
-        # Log the result
-        ic(f"Last modified time for {file_path}: {result}")
-
         return result
-    except Exception as e:
-        ic(f"Error getting last modified time for {file_path}: {e}")
-
-        # Print stack trace for debugging
-        import traceback
-
-        ic(traceback.format_exc())
-
+    except Exception:
         return ""
 
 
@@ -110,86 +100,73 @@ async def process_markdown_paths_in_parallel(
     Process a list of markdown paths in parallel to get their last modified times.
     Returns a dictionary mapping file paths to their last modified times.
     Uses direct git calls instead of GitPython for better reliability.
+    Uses a semaphore to limit concurrent operations.
     """
     result = {}
+    # Create a semaphore to limit concurrent operations
+    semaphore = asyncio.Semaphore(MAX_CONCURRENT_OPERATIONS)
 
     async def get_last_modified_time_async(path):
-        """Async function to get last modified time using direct git command"""
+        """Async function to get last modified time using direct git command with semaphore"""
         if not path:
-            ic("NULL PATH: Empty path provided to get_last_modified_time_async")
             return path, ""
 
         if not os.path.exists(path):
-            ic(f"FILE NOT FOUND: {path} does not exist on the filesystem")
             return path, ""
 
-        try:
-            # Use asyncio to run git command directly
-            repo = git.Repo(search_parent_directories=True)
-            relative_path = os.path.relpath(path, repo.working_dir)
-
-            # Check if file is tracked by git
-            is_tracked = False
+        # Use semaphore to limit concurrent operations
+        async with semaphore:
             try:
-                repo.git.ls_files("--error-unmatch", relative_path)
-                is_tracked = True
-            except git.GitCommandError:
-                ic(f"UNTRACKED FILE: {path} is not tracked by git")
-                return path, ""
+                # Use asyncio to run git command directly
+                repo = git.Repo(search_parent_directories=True)
+                relative_path = os.path.relpath(path, repo.working_dir)
 
-            if not is_tracked:
-                ic(f"UNTRACKED FILE: {path} is not tracked by git")
-                return path, ""
-
-            # Create the git command
-            cmd = [
-                "git",
-                "log",
-                "-1",
-                "--format=%cd",
-                "--date=iso",
-                "--",
-                relative_path,
-            ]
-            ic(f"RUNNING GIT COMMAND: {' '.join(cmd)}")
-
-            # Run the git command as a subprocess
-            proc = await asyncio.create_subprocess_exec(
-                *cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
-            )
-
-            stdout, stderr = await proc.communicate()
-
-            if proc.returncode == 0 and stdout:
-                # Parse the date output
-                git_log = stdout.decode().strip()
-                ic(f"GIT OUTPUT: {git_log} for {path}")
-
-                if not git_log:
-                    ic(f"EMPTY GIT OUTPUT: Git returned empty output for {path}")
-                    return path, ""
-
+                # Check if file is tracked by git
+                is_tracked = False
                 try:
-                    dt = datetime.strptime(git_log, "%Y-%m-%d %H:%M:%S %z")
-                    iso_date = dt.isoformat()
-                    ic(f"PARSED DATE: {iso_date} for {path}")
-                    return path, iso_date
-                except ValueError as e:
-                    ic(
-                        f"DATE PARSING ERROR: Could not parse date '{git_log}' for {path}: {e}"
-                    )
+                    repo.git.ls_files("--error-unmatch", relative_path)
+                    is_tracked = True
+                except git.GitCommandError:
                     return path, ""
-            else:
-                stderr_output = stderr.decode() if stderr else "No stderr output"
-                ic(f"GIT COMMAND FAILED: Return code {proc.returncode} for {path}")
-                ic(f"STDERR: {stderr_output}")
-                return path, ""
-        except Exception as e:
-            ic(f"EXCEPTION: Error in get_last_modified_time_async for {path}: {e}")
-            import traceback
 
-            ic(f"TRACEBACK: {traceback.format_exc()}")
-            return path, ""
+                if not is_tracked:
+                    return path, ""
+
+                # Create the git command
+                cmd = [
+                    "git",
+                    "log",
+                    "-1",
+                    "--format=%cd",
+                    "--date=iso",
+                    "--",
+                    relative_path,
+                ]
+
+                # Run the git command as a subprocess
+                proc = await asyncio.create_subprocess_exec(
+                    *cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
+                )
+
+                stdout, stderr = await proc.communicate()
+
+                if proc.returncode == 0 and stdout:
+                    # Parse the date output
+                    git_log = stdout.decode().strip()
+
+                    if not git_log:
+                        return path, ""
+
+                    try:
+                        dt = datetime.strptime(git_log, "%Y-%m-%d %H:%M:%S %z")
+                        iso_date = dt.isoformat()
+                        return path, iso_date
+                    except ValueError:
+                        return path, ""
+                else:
+                    return path, ""
+            except Exception:
+                return path, ""
 
     # Create tasks for all paths
     tasks = [get_last_modified_time_async(path) for path in markdown_paths if path]
@@ -509,7 +486,7 @@ class LinkBuilder:
             json.dump(out, f, default=page_encoder, ensure_ascii=False, indent=4)
 
         # Print a message to stdout for logging
-        print("Successfully wrote back-links.json")
+        ic("Successfully wrote back-links.json")
 
 
 def build_links_for_dir(lb, dir):

@@ -104,8 +104,7 @@ docker-run:
     docker run -v ~/blog:/root/blog -it -p 35729:35729 -p 4000:4000 devdocker npm run jekyll:container
 
 update-backlinks:
-    # Run directly since the script has a uv shebang (#!uv run) and dependencies defined in the script header
-    ./build_back_links.py build
+    uv run ./build_back_links.py build
 
 update-search:
     bundle exec jekyll algolia
@@ -119,8 +118,11 @@ update-eulogy:
 update-fj:
     python3 old_blog/transform_blogger_export.py export-all > _ig66/ig66-export.json
 
-back-links:
-    just update-backlinks
+back-links: update-backlinks
+    # alias
+bbl:  back-links
+    # alias
+
 
 broken-links:
     scrapy runspider linkchecker.py -O ~/tmp/brokenlinks.csv && cat ~/tmp/brokenlinks.csv
