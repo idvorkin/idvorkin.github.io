@@ -82,92 +82,92 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L236 | `// TODO: Consider including the recent search history as well` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/blogger_import.ts` | L55 | `function get_recent_posts(imported_posts: Array<any>) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/blogger_import.ts` | L70 | `const random_recent = "#random-recent";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/blogger_import.ts` | L80 | `append_randomizer_div(random_recent, () =>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/blogger_import.ts` | L81 | `html_for_blogpost(random_from_list(get_recent_posts(posts)))` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L34 | `⟪ 1013 characters skipped ⟫,m.integrator);j.start()}return j},graphChanged:function(m){if(a){i.postMessage({type:"changes",changes:m})}else{i._update(m)}j.start()},particleModified:function(n,m){if(a){i.postMessage({type:"modify",id:n,mods:m})}else{i.modifyNode(n,m)}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L36 | `⟪ 7995 characters skipped ⟫function(){if(k.length>0){d.kernel.graphChanged(k);k=[];i=null}},};d.kernel=Kernel(h);d.tween=d.kernel.tween||null;Node.prototype.__defineGetter__("p",function(){var x=this;var w={};w.__defineGetter__("x",function(){return x._p.x});w.__defi` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox.min.js` | L13 | `⟪ 6291 characters skipped ⟫mageFadeDuration),this.updateNav(),this.updateDetails(),this.preloadNeighboringImages(),this.enableKeyboardNav()},b.prototype.updateNav=function(){var a=!1;try{document.createEvent("TouchEvent"),a=!!this.options.alwaysShowNavOnTouchDevices}⟪ 445 characters skipped ⟫xt").css("opacity","1"))))},b.prototype.updateDetails=function(){var b=this;if(void 0!==this.album[this.currentImageIndex].title&&""!==this.album[this.currentImageIndex].title){var c=this.$lightbox.find(".lb-caption");this.options.sanitizeT` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox.js` | L380 | `this.updateDetails();` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox.js` | L422 | `Lightbox.prototype.updateDetails = function() {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.min.map` | Lundefined | `⟪ 9620 characters skipped ⟫ation","altKey","bubbles","cancelable","changedTouches","ctrlKey","detail","eventPhase","metaKey","pageX","pageY","shiftKey","view","char","charCode","keyCode","buttons","clientX","clientY","offsetX","offsetY","pointerId","pointerType","scr⟪ 4681 characters skipped ⟫,"oldHeight","outerHeight","updateNav","updateDetails","preloadNeighboringImages","enableKeyboardNav","alwaysShowNav","createEvent","$caption","labelText","keyboardAction","keycode"],"mappings":";;;;;;;;;;;;;CAaA,SAAYA,EAAQC,GAEnB,YAEuB,iBA` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox.min.map` | Lundefined | `⟪ 1364 characters skipped ⟫erHeight","animate","stop","updateNav","updateDetails","preloadNeighboringImages","enableKeyboardNav","alwaysShowNav","createEvent","e","show","$caption","text","html","undefined","open","location","href","labelText","removeClass","keyboard` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/index.js` | L51 | `⟪ 234 characters skipped ⟫.includes("achievement"))))),a("#random-recent",()=>j(e(t.filter(e=>e.tags.includes("family-journal")))))}function S(){$.getJSON("/ig66/ig66-export.json",A)}function z(t){$.getJSON("/eulogy.json",n=>(function(t,n){if(!n){console.log("No rol` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.min.js` | L23 | `⟪ 37368 characters skipped ⟫ach({altKey:!0,bubbles:!0,cancelable:!0,changedTouches:!0,ctrlKey:!0,detail:!0,eventPhase:!0,metaKey:!0,pageX:!0,pageY:!0,shiftKey:!0,view:!0,char:!0,charCode:!0,key:!0,keyCode:!0,button:!0,buttons:!0,clientX:!0,clientY:!0,offsetX:!0,offset` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.min.js` | L36 | `⟪ 6290 characters skipped ⟫mageFadeDuration),this.updateNav(),this.updateDetails(),this.preloadNeighboringImages(),this.enableKeyboardNav()},b.prototype.updateNav=function(){var a=!1;try{document.createEvent("TouchEvent"),a=!!this.options.alwaysShowNavOnTouchDevices}⟪ 445 characters skipped ⟫xt").css("opacity","1"))))},b.prototype.updateDetails=function(){var b=this;if(void 0!==this.album[this.currentImageIndex].title&&""!==this.album[this.currentImageIndex].title){var c=this.$lightbox.find(".lb-caption");this.options.sanitizeT` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L898 | `// Only keep the most recent entries` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4236 | `// Make sure we set the data so it isn't changed later` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4567 | `// Use string for doubling so we don't accidentally see scale as unchanged below` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4575 | `// Break the loop if scale is unchanged or perfect, or if we've just had enough.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5030 | `// If event changes its type, use the special event handlers for the changed type` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5474 | `changedTouches: true,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L6202 | `// Revert the changed values` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L6548 | `// getBoundingClientRect().width unless display is changed.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L10634 | `this.updateDetails();` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L10676 | `Lightbox.prototype.updateDetails = function() {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/old_blog/transform_blogger_export.py` | L222 | `<updated>2020-11-29T08:26:44.611-08:00</updated>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L163 | `⟪ 107 characters skipped ⟫r = this.getAttribute(e); this.attributeChangedCallback && r !== o && this.attributeChangedCallback(e, o, r); } function r(e) { for (var t = 0; t < _.length; t++)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L1430 | `⟪ 107 characters skipped ⟫rent || E.setAttributeForRoot(f), this._updateDOMProperties(null, i, e);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L1490 | `} switch (o(this, a), this._updateDOMProperties(i, a, e), this._updateDOMChildren(i, a, e, r), this._tag) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L1498 | `} }, _updateDOMProperties: function (e, t, n) { var r, o, a; for (r in e)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L1527 | `} a && y.setValueForStyles(U(this), a, this); }, _updateDOMChildren: function (e, t, n, r) { var o = V[typeof e.children] ? e.children : null, i = V[typeof t.children] ? t.children : null, a = e.dangerouslySetInnerHTML && e.dangerouslySetInnerHTML.__` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L2265 | `var o = e(87), i = e(101), a = { touches: null, targetTouches: null, changedTouches: null, altKey: null, metaKey: null, ctrlKey: null, shiftKey: null, getModifierState: i };` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L10280 | `var c = this.type = a.type, d = a.changedTouches ? a.changedTouches[0] : null;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/adding-content-on-financial-diabetes.md` | L128 | `⟪ 144 characters skipped ⟫ategory. The Table of Contents has been updated accordingly. If there's anything else you'd like to adjust or add, feel free to let me know!` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L67 | `⟪ 824 characters skipped ⟫,m.integrator);j.start()}return j},graphChanged:function(m){if(a){i.postMessage({type:"changes",change` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L111 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/recently-updated.js` | Lundefined | `// Function to get recently updated files from back-links.json` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L112 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/recently-updated.js` | L3 | `// Fetch the back-links.json file` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L113 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/recently-updated.js` | L4 | `const response = await fetch('/back-links.json');` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L114 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/recently-updated.js` | L5 | `const data = await response.json();` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L944 | `- **Improved TypeScript Config**: Updated tsconfig.json with modern settings and better module support` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L955 | `- **Jest Configuration**: Updated jest.config.js for browser-based testing` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1320 | `### 3. Updated Documentation` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1322 | `I've updated the README to:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1426 | `Now let's try running the updated js-build command:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L2790 | `⟪ 123 characters skipped ⟫om the first build (notice how the size changed from 12.34 kB to 11.04 kB). Let's fix this by giving each build a unique name for the shared module:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L3557 | `Now let's run the updated build command:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L3699 | `3. **Updated Package.json and Justfile**:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L3704 | `4. **Updated Documentation**:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L4120 | `Now let's look at any other direct references to main.js or search.js that might need to be updated:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L232 | `I've successfully updated the terminology throughout the document, replacing "Satisfaction" with "Life Value" while keeping satisfaction as part of its definition. Here's a summary of the changes:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L234 | `1. Changed the key currency from "satisfaction (the value of life)" to "Life Value (the true worth of our existence)"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L236 | `2. Updated the first currency definition to:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L241 | `4. Updated the Life Balance Sheet table to show "Life Value" as Owner's Equity, with the definition including "short-term satisfaction and joy"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L243 | `5. Changed "Net Life Profit" in the Income Statement table to "Life Value"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L245 | `6. Updated the conclusion to state "Life Value is Found in Contribution, Not Just Personal Gain"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L286 | `I've updated the definition of long-term fulfillment in two places in the document:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L289 | `- Changed from: "long-term fulfillment (purpose, legacy, meaning)"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L293 | `- Changed from: "such as inner peace, legacy, and service"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L536 | `I've successfully updated the language throughout the document to replace terms like "refinement" with more direct, action-oriented phrasing. Here are the specific changes:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L538 | `1. Changed "let's refine the model" to "let's ensure this model" in the introduction` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L539 | `2. Changed "we refine this into" to "we need" in the Life Balance Sheet section` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L540 | `3. Changed "One key refinement to this model" to "**It's critical to remember**" in the Building Assets section` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L541 | `4. Changed "A major flaw in the business analogy" to "**It's essential to recognize**" in the Reframing "Cost" and "ROI" section` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L542 | `5. Changed "With these refinements" to "With these insights" in the Conclusion section` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L612 | `1. Changed the table of contents to show:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L617 | `- Changed "## Appendix: Redefining ROI in Life" to "## Appendix"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L720 | `1. Updated the table of contents to include the new subsection "The Danger of Extrinsic Measurements" under Appendix` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L779 | `1. Updated the table of contents to include "Final Lessons from Timeless Thinkers" as a third subsection under Appendix, at the same level as "Redefining ROI in Life" and "The Danger of Extrinsic Measure` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L781 | `2. Changed the heading from:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L837 | `- Changed `* [The Danger of Extrinsic Measurements](#the-danger-of-extrinsic-measurements)` to `* [Beware the Stock Market](#beware-the-stock-market)`` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L840 | `- Changed `### The Danger of Extrinsic Measurements` to `### Beware the Stock Market`` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L906 | `1. Updated the table of contents:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L1142 | `The table of contents has been updated to reflect this new structure, maintaining the proper hierarchy and navigation.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L300 | `Traceback (most recent call last):` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L846 | `"description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an a` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1419 | `5. Updated the `ForRedirect` static method to include the last_modified field` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1420 | `6. Updated the `parse_page` method to set the last_modified field using the `get_last_modified_time` function` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1421 | `7. Updated the `page_encoder` function to include the last_modified field in the JSON output` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1978 | `"description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an a` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L3128 | `"description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an a` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4470 | `"description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an a` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5054 | `+     ic(f"Updated last modified times in {git_time - parsing_time:.2f} seconds")` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5538 | `"description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an a` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-02-25_09-37-chop-post-collaboration.md` | L199 | `I've successfully updated the heading structure in your CHOP blog post:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-02-25_09-37-chop-post-collaboration.md` | L201 | `1. Changed "Key Tools" from an H3 to an H2 heading` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-02-25_09-37-chop-post-collaboration.md` | L202 | `2. Updated all the subheadings accordingly:` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L236 | `// TODO: Consider including the recent search history as well` |
+| `file://$HOME/gits/idvorkin.github.io/src/blogger_import.ts` | L55 | `function get_recent_posts(imported_posts: Array<any>) {` |
+| `file://$HOME/gits/idvorkin.github.io/src/blogger_import.ts` | L70 | `const random_recent = "#random-recent";` |
+| `file://$HOME/gits/idvorkin.github.io/src/blogger_import.ts` | L80 | `append_randomizer_div(random_recent, () =>` |
+| `file://$HOME/gits/idvorkin.github.io/src/blogger_import.ts` | L81 | `html_for_blogpost(random_from_list(get_recent_posts(posts)))` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L34 | `⟪ 1013 characters skipped ⟫,m.integrator);j.start()}return j},graphChanged:function(m){if(a){i.postMessage({type:"changes",changes:m})}else{i._update(m)}j.start()},particleModified:function(n,m){if(a){i.postMessage({type:"modify",id:n,mods:m})}else{i.modifyNode(n,m)}` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L36 | `⟪ 7995 characters skipped ⟫function(){if(k.length>0){d.kernel.graphChanged(k);k=[];i=null}},};d.kernel=Kernel(h);d.tween=d.kernel.tween||null;Node.prototype.__defineGetter__("p",function(){var x=this;var w={};w.__defineGetter__("x",function(){return x._p.x});w.__defi` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox.min.js` | L13 | `⟪ 6291 characters skipped ⟫mageFadeDuration),this.updateNav(),this.updateDetails(),this.preloadNeighboringImages(),this.enableKeyboardNav()},b.prototype.updateNav=function(){var a=!1;try{document.createEvent("TouchEvent"),a=!!this.options.alwaysShowNavOnTouchDevices}⟪ 445 characters skipped ⟫xt").css("opacity","1"))))},b.prototype.updateDetails=function(){var b=this;if(void 0!==this.album[this.currentImageIndex].title&&""!==this.album[this.currentImageIndex].title){var c=this.$lightbox.find(".lb-caption");this.options.sanitizeT` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox.js` | L380 | `this.updateDetails();` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox.js` | L422 | `Lightbox.prototype.updateDetails = function() {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.min.map` | Lundefined | `⟪ 9620 characters skipped ⟫ation","altKey","bubbles","cancelable","changedTouches","ctrlKey","detail","eventPhase","metaKey","pageX","pageY","shiftKey","view","char","charCode","keyCode","buttons","clientX","clientY","offsetX","offsetY","pointerId","pointerType","scr⟪ 4681 characters skipped ⟫,"oldHeight","outerHeight","updateNav","updateDetails","preloadNeighboringImages","enableKeyboardNav","alwaysShowNav","createEvent","$caption","labelText","keyboardAction","keycode"],"mappings":";;;;;;;;;;;;;CAaA,SAAYA,EAAQC,GAEnB,YAEuB,iBA` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox.min.map` | Lundefined | `⟪ 1364 characters skipped ⟫erHeight","animate","stop","updateNav","updateDetails","preloadNeighboringImages","enableKeyboardNav","alwaysShowNav","createEvent","e","show","$caption","text","html","undefined","open","location","href","labelText","removeClass","keyboard` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/index.js` | L51 | `⟪ 234 characters skipped ⟫.includes("achievement"))))),a("#random-recent",()=>j(e(t.filter(e=>e.tags.includes("family-journal")))))}function S(){$.getJSON("/ig66/ig66-export.json",A)}function z(t){$.getJSON("/eulogy.json",n=>(function(t,n){if(!n){console.log("No rol` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.min.js` | L23 | `⟪ 37368 characters skipped ⟫ach({altKey:!0,bubbles:!0,cancelable:!0,changedTouches:!0,ctrlKey:!0,detail:!0,eventPhase:!0,metaKey:!0,pageX:!0,pageY:!0,shiftKey:!0,view:!0,char:!0,charCode:!0,key:!0,keyCode:!0,button:!0,buttons:!0,clientX:!0,clientY:!0,offsetX:!0,offset` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.min.js` | L36 | `⟪ 6290 characters skipped ⟫mageFadeDuration),this.updateNav(),this.updateDetails(),this.preloadNeighboringImages(),this.enableKeyboardNav()},b.prototype.updateNav=function(){var a=!1;try{document.createEvent("TouchEvent"),a=!!this.options.alwaysShowNavOnTouchDevices}⟪ 445 characters skipped ⟫xt").css("opacity","1"))))},b.prototype.updateDetails=function(){var b=this;if(void 0!==this.album[this.currentImageIndex].title&&""!==this.album[this.currentImageIndex].title){var c=this.$lightbox.find(".lb-caption");this.options.sanitizeT` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L898 | `// Only keep the most recent entries` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4236 | `// Make sure we set the data so it isn't changed later` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4567 | `// Use string for doubling so we don't accidentally see scale as unchanged below` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4575 | `// Break the loop if scale is unchanged or perfect, or if we've just had enough.` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5030 | `// If event changes its type, use the special event handlers for the changed type` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5474 | `changedTouches: true,` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L6202 | `// Revert the changed values` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L6548 | `// getBoundingClientRect().width unless display is changed.` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L10634 | `this.updateDetails();` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L10676 | `Lightbox.prototype.updateDetails = function() {` |
+| `file://$HOME/gits/idvorkin.github.io/old_blog/transform_blogger_export.py` | L222 | `<updated>2020-11-29T08:26:44.611-08:00</updated>` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L163 | `⟪ 107 characters skipped ⟫r = this.getAttribute(e); this.attributeChangedCallback && r !== o && this.attributeChangedCallback(e, o, r); } function r(e) { for (var t = 0; t < _.length; t++)` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L1430 | `⟪ 107 characters skipped ⟫rent || E.setAttributeForRoot(f), this._updateDOMProperties(null, i, e);` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L1490 | `} switch (o(this, a), this._updateDOMProperties(i, a, e), this._updateDOMChildren(i, a, e, r), this._tag) {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L1498 | `} }, _updateDOMProperties: function (e, t, n) { var r, o, a; for (r in e)` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L1527 | `} a && y.setValueForStyles(U(this), a, this); }, _updateDOMChildren: function (e, t, n, r) { var o = V[typeof e.children] ? e.children : null, i = V[typeof t.children] ? t.children : null, a = e.dangerouslySetInnerHTML && e.dangerouslySetInnerHTML.__` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L2265 | `var o = e(87), i = e(101), a = { touches: null, targetTouches: null, changedTouches: null, altKey: null, metaKey: null, ctrlKey: null, shiftKey: null, getModifierState: i };` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L10280 | `var c = this.type = a.type, d = a.changedTouches ? a.changedTouches[0] : null;` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/adding-content-on-financial-diabetes.md` | L128 | `⟪ 144 characters skipped ⟫ategory. The Table of Contents has been updated accordingly. If there's anything else you'd like to adjust or add, feel free to let me know!` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L67 | `⟪ 824 characters skipped ⟫,m.integrator);j.start()}return j},graphChanged:function(m){if(a){i.postMessage({type:"changes",change` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L111 | `| `file://$HOME/gits/idvorkin.github.io/assets/js/recently-updated.js` | Lundefined | `// Function to get recently updated files from back-links.json` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L112 | `| `file://$HOME/gits/idvorkin.github.io/assets/js/recently-updated.js` | L3 | `// Fetch the back-links.json file` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L113 | `| `file://$HOME/gits/idvorkin.github.io/assets/js/recently-updated.js` | L4 | `const response = await fetch('/back-links.json');` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L114 | `| `file://$HOME/gits/idvorkin.github.io/assets/js/recently-updated.js` | L5 | `const data = await response.json();` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L944 | `- **Improved TypeScript Config**: Updated tsconfig.json with modern settings and better module support` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L955 | `- **Jest Configuration**: Updated jest.config.js for browser-based testing` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1320 | `### 3. Updated Documentation` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1322 | `I've updated the README to:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1426 | `Now let's try running the updated js-build command:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L2790 | `⟪ 123 characters skipped ⟫om the first build (notice how the size changed from 12.34 kB to 11.04 kB). Let's fix this by giving each build a unique name for the shared module:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L3557 | `Now let's run the updated build command:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L3699 | `3. **Updated Package.json and Justfile**:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L3704 | `4. **Updated Documentation**:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L4120 | `Now let's look at any other direct references to main.js or search.js that might need to be updated:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L232 | `I've successfully updated the terminology throughout the document, replacing "Satisfaction" with "Life Value" while keeping satisfaction as part of its definition. Here's a summary of the changes:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L234 | `1. Changed the key currency from "satisfaction (the value of life)" to "Life Value (the true worth of our existence)"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L236 | `2. Updated the first currency definition to:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L241 | `4. Updated the Life Balance Sheet table to show "Life Value" as Owner's Equity, with the definition including "short-term satisfaction and joy"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L243 | `5. Changed "Net Life Profit" in the Income Statement table to "Life Value"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L245 | `6. Updated the conclusion to state "Life Value is Found in Contribution, Not Just Personal Gain"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L286 | `I've updated the definition of long-term fulfillment in two places in the document:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L289 | `- Changed from: "long-term fulfillment (purpose, legacy, meaning)"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L293 | `- Changed from: "such as inner peace, legacy, and service"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L536 | `I've successfully updated the language throughout the document to replace terms like "refinement" with more direct, action-oriented phrasing. Here are the specific changes:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L538 | `1. Changed "let's refine the model" to "let's ensure this model" in the introduction` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L539 | `2. Changed "we refine this into" to "we need" in the Life Balance Sheet section` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L540 | `3. Changed "One key refinement to this model" to "**It's critical to remember**" in the Building Assets section` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L541 | `4. Changed "A major flaw in the business analogy" to "**It's essential to recognize**" in the Reframing "Cost" and "ROI" section` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L542 | `5. Changed "With these refinements" to "With these insights" in the Conclusion section` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L612 | `1. Changed the table of contents to show:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L617 | `- Changed "## Appendix: Redefining ROI in Life" to "## Appendix"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L720 | `1. Updated the table of contents to include the new subsection "The Danger of Extrinsic Measurements" under Appendix` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L779 | `1. Updated the table of contents to include "Final Lessons from Timeless Thinkers" as a third subsection under Appendix, at the same level as "Redefining ROI in Life" and "The Danger of Extrinsic Measure` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L781 | `2. Changed the heading from:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L837 | `- Changed `* [The Danger of Extrinsic Measurements](#the-danger-of-extrinsic-measurements)` to `* [Beware the Stock Market](#beware-the-stock-market)`` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L840 | `- Changed `### The Danger of Extrinsic Measurements` to `### Beware the Stock Market`` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L906 | `1. Updated the table of contents:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-05_05-06-editing-blog-post-structure.md` | L1142 | `The table of contents has been updated to reflect this new structure, maintaining the proper hierarchy and navigation.` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L300 | `Traceback (most recent call last):` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L846 | `"description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an a` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1419 | `5. Updated the `ForRedirect` static method to include the last_modified field` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1420 | `6. Updated the `parse_page` method to set the last_modified field using the `get_last_modified_time` function` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1421 | `7. Updated the `page_encoder` function to include the last_modified field in the JSON output` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1978 | `"description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an a` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L3128 | `"description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an a` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4470 | `"description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an a` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5054 | `+     ic(f"Updated last modified times in {git_time - parsing_time:.2f} seconds")` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5538 | `"description": "There is so much change in tech it’s important to check in on what has changed to make sure you’re still using the latest. You can do this at an a` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-02-25_09-37-chop-post-collaboration.md` | L199 | `I've successfully updated the heading structure in your CHOP blog post:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-02-25_09-37-chop-post-collaboration.md` | L201 | `1. Changed "Key Tools" from an H3 to an H2 heading` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-02-25_09-37-chop-post-collaboration.md` | L202 | `2. Updated all the subheadings accordingly:` |
 | `untitled:Untitled-2` | L368 | `2. You've adapted this routine as circumstances changed (from walking to school to walking to bus stop)` |
 | `untitled:Untitled-2` | L436 | `I've updated the section to only have the walking kids to school part in bold. The year markers (2022* and Pre-2021) are now in regular text. Let me know if you'd like any other adjustments!` |
 | `untitled:Untitled-2` | L677 | `I've updated the formatting to:` |
@@ -192,7 +192,7 @@ _****_
 | `untitled:Untitled-2` | L2718 | `I've updated the Grateful for and Affirmations sections to:` |
 | `untitled:Untitled-2` | L2952 | `I've updated the summarize-page section to:` |
 | `untitled:Untitled-2` | L3168 | `I've updated both sections to be more precise about their distinct purposes:` |
-| `untitled:Untitled-2` | L3514 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/.aider.chat.history.md` | L15527 | `Based on the recent commits to CONVENTIONS.md, I'll add examples to the CHOP section. Here's what I'll add:` |` |
+| `untitled:Untitled-2` | L3514 | `| `file://$HOME/gits/idvorkin.github.io/.aider.chat.history.md` | L15527 | `Based on the recent commits to CONVENTIONS.md, I'll add examples to the CHOP section. Here's what I'll add:` |` |
 | `untitled:Untitled-2` | L3615 | `⟪ 137 characters skipped ⟫fficient. Let me check if there are any recent updates to CONVENTIONS.md that we should incorporate:` |
 | `untitled:Untitled-2` | L3662 | `Here's a recent example of this approach in action:` |
 | `untitled:Untitled-2` | L3930 | `1 file changed, 19 insertions(+), 3 deletions(-)` |
@@ -301,101 +301,101 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L100 | `1. Add a `last_modified` field to the Page class` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L130 | `Now, let's update the Page class to include the last_modified field:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L139 | `+     last_modified: str = ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L158 | `+ def get_last_modified_time(file_path: str) -> str:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L192 | `Now, let's update the ForRedirect static method to include the last_modified field:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L228 | `Now, let's update the ForRedirect static method to include the last_modified field:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L237 | `+             last_modified="",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L246 | `Now, let's update the parse_page method to set the last_modified field:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L257 | `+             last_modified = get_last_modified_time(file_path)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L262 | `+                 last_modified=last_modified,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L271 | `Finally, let's update the page_encoder function to include the last_modified field in the JSON output:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L280 | `+                     "last_modified": obj.last_modified,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L396 | `"last_modified": "2025-02-15T16:18:26.260608"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L421 | `"last_modified": "2025-01-04T06:02:19.383959"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L438 | `"last_modified": "2024-11-18T08:51:08.888737"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L458 | `"last_modified": "2024-11-18T08:51:08.903191"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L472 | `"last_modified": "2024-11-18T08:51:08.887486"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L491 | `"last_modified": "2024-11-18T08:51:08.806591"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L504 | `"last_modified": "2024-11-18T08:51:08.900004"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L516 | `"last_modified": "2024-11-18T08:51:08.900085"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L529 | `"last_modified": "2024-11-18T08:51:08.900303"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L544 | `"last_modified": "2024-11-18T08:51:08.900445"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L561 | `"last_modified": "2024-11-18T08:51:08.900506"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L578 | `"last_modified": "2025-02-08T05:47:57.292488"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L590 | `"last_modified": "2024-11-18T08:51:08.900834"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L602 | `"last_modified": "2024-11-18T08:51:08.900959"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L614 | `"last_modified": "2024-11-18T08:51:08.901098"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L629 | `"last_modified": "2024-11-18T08:51:08.901380"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L648 | `"last_modified": "2024-11-18T08:51:08.901316"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L660 | `"last_modified": "2024-11-18T08:51:08.901520"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L672 | `"last_modified": "2024-11-18T08:51:08.901675"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L684 | `"last_modified": "2024-11-18T08:51:08.901847"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L696 | `"last_modified": "2024-11-18T08:51:08.902172"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L708 | `"last_modified": "2024-11-18T08:51:08.902429"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L723 | `"last_modified": "2024-11-18T08:51:08.902790"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L735 | `"last_modified": "2024-11-18T08:51:08.902953"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L749 | `"last_modified": "2024-11-18T08:51:08.903025"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L761 | `"last_modified": "2024-11-18T08:51:08.903113"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L773 | `"last_modified": "2024-11-18T08:51:08.903419"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L785 | `"last_modified": "2024-11-18T08:51:08.903511"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L799 | `"last_modified": "2024-11-18T08:51:08.903594"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L811 | `"last_modified": "2024-11-18T08:51:08.903682"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L823 | `"last_modified": "2024-11-18T08:51:08.903779"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L841 | `"last_modified": "2024-11-18T08:51:08.885232"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L856 | `"last_modified": "2024-11-18T08:51:08.897149"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L877 | `"last_modified": "2024-11-18T08:51:08.897215"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L896 | `"last_modified": "2024-12-10T07:24:31.498941"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L915 | `"last_modified": "2025-01-04T06:02:19.391563"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L931 | `"last_modified": "2024-11-18T08:51:08.886107"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L944 | `"last_modified": "2024-11-18T08:51:08.886291"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L965 | `"last_modified": "2024-11-18T08:51:08.898370"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L981 | `"last_modified": "2024-12-27T15:59:40.566952"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1030 | `"last_modified": "2024-12-25T08:39:30.205436"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1046 | `"last_modified": "2024-11-18T08:51:08.893282"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1063 | `"last_modified": "2024-11-18T08:51:08.903351"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1083 | `"last_modified": "2024-11-18T08:51:08.898562"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1100 | `"last_modified": "2024-11-18T08:51:08.890225"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1115 | `"last_modified": "2024-11-18T08:51:08.898622"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1132 | `"last_modified": "2025-02-02T17:49:34.885810"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1149 | `"last_modified": "2024-11-18T08:51:08.898675"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1166 | `"last_modified": "2025-02-09T05:00:35.818138"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1182 | `"last_modified": "2025-02-09T05:00:35.811735"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1208 | `"last_modified": "2024-11-18T08:51:08.884939"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1222 | `"last_modified": "2025-01-04T06:02:19.376853"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1236 | `"last_modified": "2024-11-18T08:51:08.899317"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1250 | `"last_modified": "2024-11-18T08:51:08.884485"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1266 | `"last_modified": "2024-11-18T08:51:08.886049"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1279 | `"last_modified": "2024-11-18T08:51:08.884089"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1303 | `"last_modified": "2025-01-04T06:02:19.378956"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1317 | `"last_modified": "2025-01-04T06:02:19.380286"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1352 | `"last_modified": "2025-02-15T06:51:49.737919"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1376 | `"last_modified": "2025-01-01T17:48:23.429061"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1397 | `"last_modified": "2025-01-03T17:19:46.275664"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1408 | `Great! The script ran successfully and we can see that the `last_modified` field is now included in the JSON output for each page. The implementation is working as expected.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1414 | `3. Created a `get_last_modified_time` function that:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1418 | `4. Added a `last_modified` field to the Page class` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1419 | `5. Updated the `ForRedirect` static method to include the last_modified field` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1420 | `6. Updated the `parse_page` method to set the last_modified field using the `get_last_modified_time` function` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1421 | `7. Updated the `page_encoder` function to include the last_modified field in the JSON output` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1441 | `Let's modify the `get_last_modified_time` function to throw an error if it can't use git. This way, you'll be explicitly notified when git isn't available rather than silently falling back to the file system.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1448 | `def get_last_modified_time(file_path: str) -> str:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1478 | `Now let's update the `parse_page` method to handle the potential error from `get_last_modified_time`:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1487 | `+             last_modified = ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1489 | `last_modified = get_last_modified_time(file_path)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1492 | `+                 # Leave last_modified as empty string` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1528 | `"last_modified": ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1553 | `"last_modified": ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1570 | `"last_modified": ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1590 | `"last_modified": ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1604 | `"last_modified": ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1623 | `"last_modified": ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1636 | `"last_modified": ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1648 | `"last_modified": ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1661 | `"last_modified": ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1676 | `"last_modified": ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L100 | `1. Add a `last_modified` field to the Page class` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L130 | `Now, let's update the Page class to include the last_modified field:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L139 | `+     last_modified: str = ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L158 | `+ def get_last_modified_time(file_path: str) -> str:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L192 | `Now, let's update the ForRedirect static method to include the last_modified field:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L228 | `Now, let's update the ForRedirect static method to include the last_modified field:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L237 | `+             last_modified="",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L246 | `Now, let's update the parse_page method to set the last_modified field:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L257 | `+             last_modified = get_last_modified_time(file_path)` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L262 | `+                 last_modified=last_modified,` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L271 | `Finally, let's update the page_encoder function to include the last_modified field in the JSON output:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L280 | `+                     "last_modified": obj.last_modified,` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L396 | `"last_modified": "2025-02-15T16:18:26.260608"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L421 | `"last_modified": "2025-01-04T06:02:19.383959"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L438 | `"last_modified": "2024-11-18T08:51:08.888737"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L458 | `"last_modified": "2024-11-18T08:51:08.903191"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L472 | `"last_modified": "2024-11-18T08:51:08.887486"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L491 | `"last_modified": "2024-11-18T08:51:08.806591"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L504 | `"last_modified": "2024-11-18T08:51:08.900004"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L516 | `"last_modified": "2024-11-18T08:51:08.900085"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L529 | `"last_modified": "2024-11-18T08:51:08.900303"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L544 | `"last_modified": "2024-11-18T08:51:08.900445"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L561 | `"last_modified": "2024-11-18T08:51:08.900506"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L578 | `"last_modified": "2025-02-08T05:47:57.292488"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L590 | `"last_modified": "2024-11-18T08:51:08.900834"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L602 | `"last_modified": "2024-11-18T08:51:08.900959"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L614 | `"last_modified": "2024-11-18T08:51:08.901098"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L629 | `"last_modified": "2024-11-18T08:51:08.901380"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L648 | `"last_modified": "2024-11-18T08:51:08.901316"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L660 | `"last_modified": "2024-11-18T08:51:08.901520"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L672 | `"last_modified": "2024-11-18T08:51:08.901675"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L684 | `"last_modified": "2024-11-18T08:51:08.901847"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L696 | `"last_modified": "2024-11-18T08:51:08.902172"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L708 | `"last_modified": "2024-11-18T08:51:08.902429"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L723 | `"last_modified": "2024-11-18T08:51:08.902790"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L735 | `"last_modified": "2024-11-18T08:51:08.902953"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L749 | `"last_modified": "2024-11-18T08:51:08.903025"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L761 | `"last_modified": "2024-11-18T08:51:08.903113"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L773 | `"last_modified": "2024-11-18T08:51:08.903419"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L785 | `"last_modified": "2024-11-18T08:51:08.903511"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L799 | `"last_modified": "2024-11-18T08:51:08.903594"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L811 | `"last_modified": "2024-11-18T08:51:08.903682"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L823 | `"last_modified": "2024-11-18T08:51:08.903779"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L841 | `"last_modified": "2024-11-18T08:51:08.885232"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L856 | `"last_modified": "2024-11-18T08:51:08.897149"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L877 | `"last_modified": "2024-11-18T08:51:08.897215"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L896 | `"last_modified": "2024-12-10T07:24:31.498941"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L915 | `"last_modified": "2025-01-04T06:02:19.391563"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L931 | `"last_modified": "2024-11-18T08:51:08.886107"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L944 | `"last_modified": "2024-11-18T08:51:08.886291"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L965 | `"last_modified": "2024-11-18T08:51:08.898370"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L981 | `"last_modified": "2024-12-27T15:59:40.566952"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1030 | `"last_modified": "2024-12-25T08:39:30.205436"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1046 | `"last_modified": "2024-11-18T08:51:08.893282"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1063 | `"last_modified": "2024-11-18T08:51:08.903351"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1083 | `"last_modified": "2024-11-18T08:51:08.898562"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1100 | `"last_modified": "2024-11-18T08:51:08.890225"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1115 | `"last_modified": "2024-11-18T08:51:08.898622"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1132 | `"last_modified": "2025-02-02T17:49:34.885810"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1149 | `"last_modified": "2024-11-18T08:51:08.898675"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1166 | `"last_modified": "2025-02-09T05:00:35.818138"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1182 | `"last_modified": "2025-02-09T05:00:35.811735"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1208 | `"last_modified": "2024-11-18T08:51:08.884939"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1222 | `"last_modified": "2025-01-04T06:02:19.376853"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1236 | `"last_modified": "2024-11-18T08:51:08.899317"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1250 | `"last_modified": "2024-11-18T08:51:08.884485"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1266 | `"last_modified": "2024-11-18T08:51:08.886049"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1279 | `"last_modified": "2024-11-18T08:51:08.884089"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1303 | `"last_modified": "2025-01-04T06:02:19.378956"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1317 | `"last_modified": "2025-01-04T06:02:19.380286"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1352 | `"last_modified": "2025-02-15T06:51:49.737919"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1376 | `"last_modified": "2025-01-01T17:48:23.429061"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1397 | `"last_modified": "2025-01-03T17:19:46.275664"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1408 | `Great! The script ran successfully and we can see that the `last_modified` field is now included in the JSON output for each page. The implementation is working as expected.` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1414 | `3. Created a `get_last_modified_time` function that:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1418 | `4. Added a `last_modified` field to the Page class` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1419 | `5. Updated the `ForRedirect` static method to include the last_modified field` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1420 | `6. Updated the `parse_page` method to set the last_modified field using the `get_last_modified_time` function` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1421 | `7. Updated the `page_encoder` function to include the last_modified field in the JSON output` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1441 | `Let's modify the `get_last_modified_time` function to throw an error if it can't use git. This way, you'll be explicitly notified when git isn't available rather than silently falling back to the file system.` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1448 | `def get_last_modified_time(file_path: str) -> str:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1478 | `Now let's update the `parse_page` method to handle the potential error from `get_last_modified_time`:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1487 | `+             last_modified = ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1489 | `last_modified = get_last_modified_time(file_path)` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1492 | `+                 # Leave last_modified as empty string` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1528 | `"last_modified": ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1553 | `"last_modified": ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1570 | `"last_modified": ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1590 | `"last_modified": ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1604 | `"last_modified": ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1623 | `"last_modified": ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1636 | `"last_modified": ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1648 | `"last_modified": ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1661 | `"last_modified": ""` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1676 | `"last_modified": ""` |
 
 </details>
 
@@ -1095,104 +1095,104 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L247 | `"https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L249 | `backlinks_url = "/back-links.json";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/about.md` | L34 | `const response = await fetch('/back-links.json');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/shared.ts` | L84 | `* Gets link information from the back-links.json file` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/shared.ts` | L95 | `"https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/shared.ts` | L98 | `backlinks_url = "/back-links.json";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/index.js` | Lundefined | `⟪ 576 characters skipped ⟫.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";t||(a="/back-links.json");try{let e=await fetch(a);return n=(await e.json()).url_info}catch(e){return console.error("Error fetching link info",e),{}}}let l=!0;function r(){let e=$(".ui-toc-dropdown .toc"),t=$` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/index.js` | L24 | `⟪ 215 characters skipped ⟫.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True":"/back-links.json",m=await $.getJSON(t)}function g(){let e=Mousetrap();e.bind("s",e=>void $("#autocomplete-search-box-button").click()),e.bind("t",e=>i()),e.bind("p",e=>(function(){let e=window.location` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L55 | `⟪ 103 characters skipped ⟫.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L56 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L254 | `backlinks_url = "/back-links.json";` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L111 | `⟪ 104 characters skipped ⟫tion to get recently updated files from back-links.json` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L112 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/recently-updated.js` | L3 | `// Fetch the back-links.json file` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L113 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/recently-updated.js` | L4 | `const response = await fetch('/back-links.json');` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L116 | `⟪ 109 characters skipped ⟫.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L117 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/main.js` | L207 | `backlinks_url = "/back-links.json";` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L121 | `| `untitled:Untitled-2` | L133 | `| `back-links.json` | L3203-3222 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L122 | `| `untitled:Untitled-2` | L134 | `| `back-links.json` | L3190-3202 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L123 | `| `untitled:Untitled-2` | L140 | `| `back-links.json` | L1811-1832 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L131 | `| `untitled:Untitled-2` | L269 | `| `back-links.json` | L3203-3222 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L137 | `| `untitled:Untitled-2` | L1226 | `| `back-links.json` | L3288-3316 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L138 | `| `untitled:Untitled-2` | L1227 | `| `back-links.json` | L3837-3857 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L139 | `| `untitled:Untitled-2` | L1230 | `| `back-links.json` | L103-134 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L140 | `| `untitled:Untitled-2` | L1231 | `| `back-links.json` | L1884-1912 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L141 | `| `untitled:Untitled-2` | L1232 | `| `back-links.json` | L2398-2431 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L142 | `| `untitled:Untitled-2` | L1233 | `| `back-links.json` | L3410-3435 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L143 | `| `untitled:Untitled-2` | L1234 | `| `back-links.json` | L418-444 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L144 | `| `untitled:Untitled-2` | L1235 | `| `back-links.json` | L4273-4297 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L145 | `| `untitled:Untitled-2` | L1237 | `| `back-links.json` | L2684-2708 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L146 | `| `untitled:Untitled-2` | L1238 | `| `back-links.json` | L36-69 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L147 | `| `untitled:Untitled-2` | L1239 | `| `back-links.json` | L3259-3287 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L148 | `| `untitled:Untitled-2` | L1240 | `| `back-links.json` | L1753-1770 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L149 | `| `untitled:Untitled-2` | L1242 | `| `back-links.json` | L932-946 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L150 | `| `untitled:Untitled-2` | L1244 | `| `back-links.json` | L3682-3714 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L151 | `| `untitled:Untitled-2` | L1247 | `| `back-links.json` | L2970-2996 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L152 | `| `untitled:Untitled-2` | L1248 | `| `back-links.json` | L1859-1883 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L153 | `| `untitled:Untitled-2` | L1250 | `| `back-links.json` | L135-169 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L154 | `| `untitled:Untitled-2` | L1342 | `+ 1. Always check `back-links.json` to find the correct redirect URL` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L155 | `| `untitled:Untitled-2` | L1450 | `+ 1. Always check `back-links.json` to find the correct redirect URL` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L156 | `| `untitled:Untitled-2` | L1478 | `1. Link Conventions - explaining how to properly add links using back-links.json` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L157 | `| `untitled:Untitled-2` | L2535 | `| `back-links.json` | L70-102 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L158 | `| `untitled:Untitled-2` | L2536 | `| `back-links.json` | L3837-3857 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L159 | `| `untitled:Untitled-2` | L2537 | `| `back-links.json` | L1190-1209 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L160 | `| `untitled:Untitled-2` | L2538 | `| `back-links.json` | L170-202 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L161 | `| `untitled:Untitled-2` | L2539 | `| `back-links.json` | L418-444 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L162 | `| `untitled:Untitled-2` | L2541 | `| `back-links.json` | L135-169 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L163 | `| `untitled:Untitled-2` | L2542 | `| `back-links.json` | L1753-1770 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L164 | `| `untitled:Untitled-2` | L2544 | `| `back-links.json` | L2398-2431 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L165 | `| `untitled:Untitled-2` | L2545 | `| `back-links.json` | L36-69 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L166 | `| `untitled:Untitled-2` | L2548 | `| `back-links.json` | L1913-1938 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L167 | `| `untitled:Untitled-2` | L2549 | `| `back-links.json` | L103-134 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L168 | `| `untitled:Untitled-2` | L2550 | `| `back-links.json` | L1884-1912 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L169 | `| `untitled:Untitled-2` | L2554 | `| `back-links.json` | L2365-2397 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L170 | `| `untitled:Untitled-2` | L2555 | `| `back-links.json` | L3614-3635 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L171 | `| `untitled:Untitled-2` | L2557 | `| `back-links.json` | L808-839 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L172 | `| `untitled:Untitled-2` | L2558 | `| `back-links.json` | L3089-3107 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L173 | `| `untitled:Untitled-2` | L2581 | `| `back-links.json` | L418-444 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L174 | `| `untitled:Untitled-2` | L2582 | `| `back-links.json` | L170-202 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L175 | `| `untitled:Untitled-2` | L2583 | `| `back-links.json` | L70-102 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L176 | `| `untitled:Untitled-2` | L2584 | `| `back-links.json` | L1190-1209 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L177 | `| `untitled:Untitled-2` | L2585 | `| `back-links.json` | L135-169 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L178 | `| `untitled:Untitled-2` | L2586 | `| `back-links.json` | L3837-3857 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L179 | `| `untitled:Untitled-2` | L2587 | `| `back-links.json` | L2684-2708 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L180 | `| `untitled:Untitled-2` | L2588 | `| `back-links.json` | L2162-2176 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L181 | `| `untitled:Untitled-2` | L2589 | `| `back-links.json` | L1913-1938 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L182 | `| `untitled:Untitled-2` | L2591 | `| `back-links.json` | L297-328 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L183 | `| `untitled:Untitled-2` | L2592 | `| `back-links.json` | L808-839 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L184 | `| `untitled:Untitled-2` | L2593 | `| `back-links.json` | L3410-3435 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L185 | `| `untitled:Untitled-2` | L2594 | `| `back-links.json` | L1412-1429 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L186 | `| `untitled:Untitled-2` | L2595 | `| `back-links.json` | L36-69 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L187 | `| `untitled:Untitled-2` | L2596 | `| `back-links.json` | L103-134 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L188 | `| `untitled:Untitled-2` | L2597 | `| `back-links.json` | L2907-2944 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L189 | `| `untitled:Untitled-2` | L2598 | `| `back-links.json` | L776-807 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L190 | `| `untitled:Untitled-2` | L2599 | `| `back-links.json` | L2398-2431 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L191 | `| `untitled:Untitled-2` | L2600 | `| `back-links.json` | L932-946 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L192 | `| `untitled:Untitled-2` | L2601 | `| `back-links.json` | L4404-4427 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L193 | `| `untitled:Untitled-2` | L2603 | `| `back-links.json` | L1960-1990 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L194 | `| `untitled:Untitled-2` | L2604 | `| `back-links.json` | L1753-1770 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L199 | `| `untitled:Untitled-2` | L2928 | `+    - Always check `back-links.json` to confirm the correct permalink` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L200 | `| `untitled:Untitled-2` | L2953 | `1. Add a new step about checking `back-links.json` before using the include` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L201 | `| `untitled:Untitled-2` | L2989 | `| `back-links.json` | L3410-3435 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L202 | `| `untitled:Untitled-2` | L2996 | `| `back-links.json` | L3393-3409 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L203 | `| `untitled:Untitled-2` | L3251 | `| `back-links.json` | L3203-3222 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L204 | `| `untitled:Untitled-2` | L3252 | `| `back-links.json` | L3190-3202 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L205 | `| `untitled:Untitled-2` | L3253 | `| `back-links.json` | L1811-1832 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L206 | `| `untitled:Untitled-2` | L3254 | `| `back-links.json` | L1913-1938 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L207 | `| `untitled:Untitled-2` | L3255 | `| `back-links.json` | L862-890 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L208 | `| `untitled:Untitled-2` | L3256 | `| `back-links.json` | L3223-3258 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L209 | `| `untitled:Untitled-2` | L3258 | `| `back-links.json` | L2840-2873 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L210 | `| `untitled:Untitled-2` | L3259 | `| `back-links.json` | L4428-4460 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L211 | `| `untitled:Untitled-2` | L3260 | `| `back-links.json` | L1210-1233 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L212 | `| `untitled:Untitled-2` | L3261 | `| `back-links.json` | L2779-2802 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L213 | `| `untitled:Untitled-2` | L3262 | `| `back-links.json` | L3039-3061 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L214 | `| `untitled:Untitled-2` | L3263 | `| `back-links.json` | L3016-3038 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L215 | `| `untitled:Untitled-2` | L3264 | `| `back-links.json` | L4531-4557 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L216 | `| `untitled:Untitled-2` | L3266 | `| `back-links.json` | L3986-4003 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L217 | `| `untitled:Untitled-2` | L3267 | `| `back-links.json` | L3795-3813 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L218 | `| `untitled:Untitled-2` | L3268 | `| `back-links.json` | L3657-3681 |` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L219 | `| `untitled:Untitled-2` | L3269 | `| `back-links.json` | L4316-4338 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L247 | `"https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L249 | `backlinks_url = "/back-links.json";` |
+| `file://$HOME/gits/idvorkin.github.io/about.md` | L34 | `const response = await fetch('/back-links.json');` |
+| `file://$HOME/gits/idvorkin.github.io/src/shared.ts` | L84 | `* Gets link information from the back-links.json file` |
+| `file://$HOME/gits/idvorkin.github.io/src/shared.ts` | L95 | `"https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |
+| `file://$HOME/gits/idvorkin.github.io/src/shared.ts` | L98 | `backlinks_url = "/back-links.json";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/index.js` | Lundefined | `⟪ 576 characters skipped ⟫.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";t||(a="/back-links.json");try{let e=await fetch(a);return n=(await e.json()).url_info}catch(e){return console.error("Error fetching link info",e),{}}}let l=!0;function r(){let e=$(".ui-toc-dropdown .toc"),t=$` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/index.js` | L24 | `⟪ 215 characters skipped ⟫.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True":"/back-links.json",m=await $.getJSON(t)}function g(){let e=Mousetrap();e.bind("s",e=>void $("#autocomplete-search-box-button").click()),e.bind("t",e=>i()),e.bind("p",e=>(function(){let e=window.location` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L55 | `⟪ 103 characters skipped ⟫.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L56 | `| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L254 | `backlinks_url = "/back-links.json";` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L111 | `⟪ 104 characters skipped ⟫tion to get recently updated files from back-links.json` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L112 | `| `file://$HOME/gits/idvorkin.github.io/assets/js/recently-updated.js` | L3 | `// Fetch the back-links.json file` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L113 | `| `file://$HOME/gits/idvorkin.github.io/assets/js/recently-updated.js` | L4 | `const response = await fetch('/back-links.json');` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L116 | `⟪ 109 characters skipped ⟫.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L117 | `| `file://$HOME/gits/idvorkin.github.io/assets/js/main.js` | L207 | `backlinks_url = "/back-links.json";` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L121 | `| `untitled:Untitled-2` | L133 | `| `back-links.json` | L3203-3222 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L122 | `| `untitled:Untitled-2` | L134 | `| `back-links.json` | L3190-3202 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L123 | `| `untitled:Untitled-2` | L140 | `| `back-links.json` | L1811-1832 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L131 | `| `untitled:Untitled-2` | L269 | `| `back-links.json` | L3203-3222 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L137 | `| `untitled:Untitled-2` | L1226 | `| `back-links.json` | L3288-3316 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L138 | `| `untitled:Untitled-2` | L1227 | `| `back-links.json` | L3837-3857 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L139 | `| `untitled:Untitled-2` | L1230 | `| `back-links.json` | L103-134 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L140 | `| `untitled:Untitled-2` | L1231 | `| `back-links.json` | L1884-1912 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L141 | `| `untitled:Untitled-2` | L1232 | `| `back-links.json` | L2398-2431 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L142 | `| `untitled:Untitled-2` | L1233 | `| `back-links.json` | L3410-3435 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L143 | `| `untitled:Untitled-2` | L1234 | `| `back-links.json` | L418-444 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L144 | `| `untitled:Untitled-2` | L1235 | `| `back-links.json` | L4273-4297 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L145 | `| `untitled:Untitled-2` | L1237 | `| `back-links.json` | L2684-2708 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L146 | `| `untitled:Untitled-2` | L1238 | `| `back-links.json` | L36-69 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L147 | `| `untitled:Untitled-2` | L1239 | `| `back-links.json` | L3259-3287 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L148 | `| `untitled:Untitled-2` | L1240 | `| `back-links.json` | L1753-1770 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L149 | `| `untitled:Untitled-2` | L1242 | `| `back-links.json` | L932-946 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L150 | `| `untitled:Untitled-2` | L1244 | `| `back-links.json` | L3682-3714 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L151 | `| `untitled:Untitled-2` | L1247 | `| `back-links.json` | L2970-2996 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L152 | `| `untitled:Untitled-2` | L1248 | `| `back-links.json` | L1859-1883 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L153 | `| `untitled:Untitled-2` | L1250 | `| `back-links.json` | L135-169 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L154 | `| `untitled:Untitled-2` | L1342 | `+ 1. Always check `back-links.json` to find the correct redirect URL` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L155 | `| `untitled:Untitled-2` | L1450 | `+ 1. Always check `back-links.json` to find the correct redirect URL` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L156 | `| `untitled:Untitled-2` | L1478 | `1. Link Conventions - explaining how to properly add links using back-links.json` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L157 | `| `untitled:Untitled-2` | L2535 | `| `back-links.json` | L70-102 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L158 | `| `untitled:Untitled-2` | L2536 | `| `back-links.json` | L3837-3857 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L159 | `| `untitled:Untitled-2` | L2537 | `| `back-links.json` | L1190-1209 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L160 | `| `untitled:Untitled-2` | L2538 | `| `back-links.json` | L170-202 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L161 | `| `untitled:Untitled-2` | L2539 | `| `back-links.json` | L418-444 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L162 | `| `untitled:Untitled-2` | L2541 | `| `back-links.json` | L135-169 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L163 | `| `untitled:Untitled-2` | L2542 | `| `back-links.json` | L1753-1770 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L164 | `| `untitled:Untitled-2` | L2544 | `| `back-links.json` | L2398-2431 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L165 | `| `untitled:Untitled-2` | L2545 | `| `back-links.json` | L36-69 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L166 | `| `untitled:Untitled-2` | L2548 | `| `back-links.json` | L1913-1938 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L167 | `| `untitled:Untitled-2` | L2549 | `| `back-links.json` | L103-134 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L168 | `| `untitled:Untitled-2` | L2550 | `| `back-links.json` | L1884-1912 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L169 | `| `untitled:Untitled-2` | L2554 | `| `back-links.json` | L2365-2397 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L170 | `| `untitled:Untitled-2` | L2555 | `| `back-links.json` | L3614-3635 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L171 | `| `untitled:Untitled-2` | L2557 | `| `back-links.json` | L808-839 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L172 | `| `untitled:Untitled-2` | L2558 | `| `back-links.json` | L3089-3107 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L173 | `| `untitled:Untitled-2` | L2581 | `| `back-links.json` | L418-444 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L174 | `| `untitled:Untitled-2` | L2582 | `| `back-links.json` | L170-202 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L175 | `| `untitled:Untitled-2` | L2583 | `| `back-links.json` | L70-102 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L176 | `| `untitled:Untitled-2` | L2584 | `| `back-links.json` | L1190-1209 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L177 | `| `untitled:Untitled-2` | L2585 | `| `back-links.json` | L135-169 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L178 | `| `untitled:Untitled-2` | L2586 | `| `back-links.json` | L3837-3857 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L179 | `| `untitled:Untitled-2` | L2587 | `| `back-links.json` | L2684-2708 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L180 | `| `untitled:Untitled-2` | L2588 | `| `back-links.json` | L2162-2176 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L181 | `| `untitled:Untitled-2` | L2589 | `| `back-links.json` | L1913-1938 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L182 | `| `untitled:Untitled-2` | L2591 | `| `back-links.json` | L297-328 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L183 | `| `untitled:Untitled-2` | L2592 | `| `back-links.json` | L808-839 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L184 | `| `untitled:Untitled-2` | L2593 | `| `back-links.json` | L3410-3435 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L185 | `| `untitled:Untitled-2` | L2594 | `| `back-links.json` | L1412-1429 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L186 | `| `untitled:Untitled-2` | L2595 | `| `back-links.json` | L36-69 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L187 | `| `untitled:Untitled-2` | L2596 | `| `back-links.json` | L103-134 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L188 | `| `untitled:Untitled-2` | L2597 | `| `back-links.json` | L2907-2944 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L189 | `| `untitled:Untitled-2` | L2598 | `| `back-links.json` | L776-807 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L190 | `| `untitled:Untitled-2` | L2599 | `| `back-links.json` | L2398-2431 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L191 | `| `untitled:Untitled-2` | L2600 | `| `back-links.json` | L932-946 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L192 | `| `untitled:Untitled-2` | L2601 | `| `back-links.json` | L4404-4427 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L193 | `| `untitled:Untitled-2` | L2603 | `| `back-links.json` | L1960-1990 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L194 | `| `untitled:Untitled-2` | L2604 | `| `back-links.json` | L1753-1770 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L199 | `| `untitled:Untitled-2` | L2928 | `+    - Always check `back-links.json` to confirm the correct permalink` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L200 | `| `untitled:Untitled-2` | L2953 | `1. Add a new step about checking `back-links.json` before using the include` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L201 | `| `untitled:Untitled-2` | L2989 | `| `back-links.json` | L3410-3435 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L202 | `| `untitled:Untitled-2` | L2996 | `| `back-links.json` | L3393-3409 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L203 | `| `untitled:Untitled-2` | L3251 | `| `back-links.json` | L3203-3222 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L204 | `| `untitled:Untitled-2` | L3252 | `| `back-links.json` | L3190-3202 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L205 | `| `untitled:Untitled-2` | L3253 | `| `back-links.json` | L1811-1832 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L206 | `| `untitled:Untitled-2` | L3254 | `| `back-links.json` | L1913-1938 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L207 | `| `untitled:Untitled-2` | L3255 | `| `back-links.json` | L862-890 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L208 | `| `untitled:Untitled-2` | L3256 | `| `back-links.json` | L3223-3258 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L209 | `| `untitled:Untitled-2` | L3258 | `| `back-links.json` | L2840-2873 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L210 | `| `untitled:Untitled-2` | L3259 | `| `back-links.json` | L4428-4460 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L211 | `| `untitled:Untitled-2` | L3260 | `| `back-links.json` | L1210-1233 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L212 | `| `untitled:Untitled-2` | L3261 | `| `back-links.json` | L2779-2802 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L213 | `| `untitled:Untitled-2` | L3262 | `| `back-links.json` | L3039-3061 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L214 | `| `untitled:Untitled-2` | L3263 | `| `back-links.json` | L3016-3038 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L215 | `| `untitled:Untitled-2` | L3264 | `| `back-links.json` | L4531-4557 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L216 | `| `untitled:Untitled-2` | L3266 | `| `back-links.json` | L3986-4003 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L217 | `| `untitled:Untitled-2` | L3267 | `| `back-links.json` | L3795-3813 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L218 | `| `untitled:Untitled-2` | L3268 | `| `back-links.json` | L3657-3681 |` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L219 | `| `untitled:Untitled-2` | L3269 | `| `back-links.json` | L4316-4338 |` |` |
 | `untitled:Untitled-2` | L133 | `| `back-links.json` | L3203-3222 |` |
 | `untitled:Untitled-2` | L134 | `| `back-links.json` | L3190-3202 |` |
 | `untitled:Untitled-2` | L140 | `| `back-links.json` | L1811-1832 |` |
@@ -1484,12 +1484,12 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/shared.ts` | L66 | `export interface IURLInfoMap {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/shared.ts` | L70 | `export interface IURLInfo {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L2289 | `+ export interface IURLInfoMap {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L2293 | `+ export interface IURLInfo {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L2478 | `- export interface IURLInfoMap {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L2482 | `- export interface IURLInfo {` |
+| `file://$HOME/gits/idvorkin.github.io/src/shared.ts` | L66 | `export interface IURLInfoMap {` |
+| `file://$HOME/gits/idvorkin.github.io/src/shared.ts` | L70 | `export interface IURLInfo {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L2289 | `+ export interface IURLInfoMap {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L2293 | `+ export interface IURLInfo {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L2478 | `- export interface IURLInfoMap {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L2482 | `- export interface IURLInfo {` |
 
 </details>
 
@@ -1508,25 +1508,25 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L42 | `def get_last_modified_time(file_path: str) -> str:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L70 | `def get_last_modified_time_safe(file_path: str) -> str:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L72 | `A wrapper around get_last_modified_time that returns an empty string on error.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L78 | `return get_last_modified_time(file_path)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L100 | `loop.run_in_executor(executor, get_last_modified_time_safe, path)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L107 | `last_modified = await future` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L109 | `result[markdown_paths[i]] = last_modified` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L125 | `last_modified: str = ""` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L140 | `last_modified="",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L238 | `# We'll set last_modified later in batch processing` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L248 | `last_modified="",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L273 | `async def update_last_modified_times(self):` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L275 | `Update the last_modified field for all pages in parallel.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L284 | `last_modified_map = await process_markdown_paths_in_parallel(markdown_paths)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L287 | `f"Processed {len(last_modified_map)} markdown paths in {end_time - start_time:.2f} seconds"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L292 | `if page.markdown_path in last_modified_map:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L293 | `page.last_modified = last_modified_map[page.markdown_path]` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L367 | `"last_modified": obj.last_modified,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L396 | `asyncio.run(lb.update_last_modified_times())` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L42 | `def get_last_modified_time(file_path: str) -> str:` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L70 | `def get_last_modified_time_safe(file_path: str) -> str:` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L72 | `A wrapper around get_last_modified_time that returns an empty string on error.` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L78 | `return get_last_modified_time(file_path)` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L100 | `loop.run_in_executor(executor, get_last_modified_time_safe, path)` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L107 | `last_modified = await future` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L109 | `result[markdown_paths[i]] = last_modified` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L125 | `last_modified: str = ""` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L140 | `last_modified="",` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L238 | `# We'll set last_modified later in batch processing` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L248 | `last_modified="",` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L273 | `async def update_last_modified_times(self):` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L275 | `Update the last_modified field for all pages in parallel.` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L284 | `last_modified_map = await process_markdown_paths_in_parallel(markdown_paths)` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L287 | `f"Processed {len(last_modified_map)} markdown paths in {end_time - start_time:.2f} seconds"` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L292 | `if page.markdown_path in last_modified_map:` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L293 | `page.last_modified = last_modified_map[page.markdown_path]` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L367 | `"last_modified": obj.last_modified,` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L396 | `asyncio.run(lb.update_last_modified_times())` |
 
 </details>
 
@@ -1545,7 +1545,7 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L115 | `class Page:` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L115 | `class Page:` |
 
 </details>
 
@@ -2327,7 +2327,7 @@ Let me run the build using the "just" command instead of npm:</think>Let's use t
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && just js-build
+cd $HOME/gits/idvorkin.github.io && just js-build
 ```
 
 ```
@@ -2536,11 +2536,11 @@ Let's build the project again with our debug logging:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && just js-build
+cd $HOME/gits/idvorkin.github.io && just js-build
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && just js-build
+❯ cd $HOME/gits/idvorkin.github.io && just js-build
 # Using Parcel for bundling (handles TypeScript transpilation)
 rm -rf .parcel-cache dist assets/js/*.js assets/js/*.map
 # Build the single entry point with optimization
@@ -2762,13 +2762,13 @@ Let's try directly with the terminal command instead of modifying the file:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && npx parcel build --no-cache --no-content-hash --detailed-report src/index.ts
+cd $HOME/gits/idvorkin.github.io && npx parcel build --no-cache --no-content-hash --detailed-report src/index.ts
 ```
 
 ```
 
 igors-Mac-mini in idvorkin.github.io on  master [$!?] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 on ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && npx parcel build --no-cache --no-content-hash --detailed-report src/index.ts
+❯ cd $HOME/gits/idvorkin.github.io && npx parcel build --no-cache --no-content-hash --detailed-report src/index.ts
 (node:80791) ExperimentalWarning: CommonJS module /opt/homebrew/lib/node_modules/npm/node_modules/debug/src/node.js is loading ES Module /opt/homebrew/lib/node_modules/npm/no
 de_modules/supports-color/index.js using require().
 Support for loading ES Module in require() is an experimental feature and might change at any time
@@ -2790,11 +2790,11 @@ Let's fix the command:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && npx parcel build src/index.ts --no-cache --no-content-hash --detailed-report
+cd $HOME/gits/idvorkin.github.io && npx parcel build src/index.ts --no-cache --no-content-hash --detailed-report
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && npx parcel build src/index.ts --no-cache --no-content-hash --detailed-report
+❯ cd $HOME/gits/idvorkin.github.io && npx parcel build src/index.ts --no-cache --no-content-hash --detailed-report
 (node:80912) ExperimentalWarning: CommonJS module /opt/homebrew/lib/node_modules/npm/node_modules/debug/src/node.js is loading ES Module /opt/homebrew/lib/node_modules/npm/no
 de_modules/supports-color/index.js using require().
 Support for loading ES Module in require() is an experimental feature and might change at any time

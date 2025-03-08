@@ -122,48 +122,48 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L7254 | `⟪ 4754 characters skipped ⟫ttps://secure.flickr.com/photos/idvorkin/tags/zachtookphotorenfair842013/"&gt;taking his own pictures&lt;/a&gt;, he seems to shares a few tastes with his father, which is to be expected.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;Actually,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L10058 | `⟪ 1790 characters skipped ⟫f="http://www.flickr.com/photos/idvorkin/tags/tdayranch2011/"&gt;Flickr &lt;/a&gt;say it all. &lt;br /&gt;&lt;br /&gt;On the Zach skills front - Zach is a total sponge. After watching me floss, Zach decided he needed to &lt;a href="http://w` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L474 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L475 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L478 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L923 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1606 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1607 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1610 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2055 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2756 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2757 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2760 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L3205 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4098 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4099 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4102 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4547 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5166 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5167 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5170 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5615 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L357 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/tags.html` | L4 | `description: "An archive of posts sorted by tag."` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L169 | `### [Changing Jobs](https://idvork.in/tags/#job-hunt)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/podcast.md` | L62 | `- Get tech depth from Simon: https://simonwillison.net/tags/notebooklm/` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L157 | `if path in "/ig66;/random;/tags;/about;/linkedin;/td".split(";"):` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1080 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2231 | `"/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3840 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3853 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4020 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4242 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4243 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4246 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4647 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2018-1-1-cache.md` | L26 | `Instead of simply keeping all its eggs in its own Window 10 or Windows 10 Mobile basket, [Microsoft](https://www.slashgear.com/tags/microsoft/), either officially or through its Garage skunkworks arm, has been steadily putting out mobile apps that cross the platform divide into iOS and Android territory, ranging from the use` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2020-04-01-Igor-Eulogy.md` | L204 | `[Software as a Story](/tags#Software as a Story),` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/cypress/e2e/idvork.in/sitenav.ts` | L35 | `cy.location("pathname").should("equal", "/tags");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/tags.html` | L3 | `permalink: /tags` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/this_is_part_of_saas.md` | Lundefined | `_This is part of the [SaaS series](/tags#Software%20as%20a%20Story). Any connection to reality will be strictly denied_` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L43 | `<a class="nav-link nav-item nav-fa-icon" href="/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/tags.html` | L3 | `href="{{ site.url }}/tags#{{ tag | cgi_encode }}"` |
+| `file://$HOME/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L7254 | `⟪ 4754 characters skipped ⟫ttps://secure.flickr.com/photos/idvorkin/tags/zachtookphotorenfair842013/"&gt;taking his own pictures&lt;/a&gt;, he seems to shares a few tastes with his father, which is to be expected.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;Actually,` |
+| `file://$HOME/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L10058 | `⟪ 1790 characters skipped ⟫f="http://www.flickr.com/photos/idvorkin/tags/tdayranch2011/"&gt;Flickr &lt;/a&gt;say it all. &lt;br /&gt;&lt;br /&gt;On the Zach skills front - Zach is a total sponge. After watching me floss, Zach decided he needed to &lt;a href="http://w` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L474 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L475 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L478 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L923 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1606 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1607 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1610 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2055 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2756 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2757 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2760 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L3205 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4098 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4099 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4102 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4547 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5166 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5167 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5170 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5615 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L357 | `| `file://$HOME/gits/idvorkin.github.io/tags.html` | L4 | `description: "An archive of posts sorted by tag."` |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L169 | `### [Changing Jobs](https://idvork.in/tags/#job-hunt)` |
+| `file://$HOME/gits/idvorkin.github.io/_d/podcast.md` | L62 | `- Get tech depth from Simon: https://simonwillison.net/tags/notebooklm/` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L157 | `if path in "/ig66;/random;/tags;/about;/linkedin;/td".split(";"):` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1080 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2231 | `"/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3840 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3853 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4020 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4242 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4243 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4246 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4647 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2018-1-1-cache.md` | L26 | `Instead of simply keeping all its eggs in its own Window 10 or Windows 10 Mobile basket, [Microsoft](https://www.slashgear.com/tags/microsoft/), either officially or through its Garage skunkworks arm, has been steadily putting out mobile apps that cross the platform divide into iOS and Android territory, ranging from the use` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2020-04-01-Igor-Eulogy.md` | L204 | `[Software as a Story](/tags#Software as a Story),` |
+| `file://$HOME/gits/idvorkin.github.io/cypress/e2e/idvork.in/sitenav.ts` | L35 | `cy.location("pathname").should("equal", "/tags");` |
+| `file://$HOME/gits/idvorkin.github.io/tags.html` | L3 | `permalink: /tags` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/this_is_part_of_saas.md` | Lundefined | `_This is part of the [SaaS series](/tags#Software%20as%20a%20Story). Any connection to reality will be strictly denied_` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L43 | `<a class="nav-link nav-item nav-fa-icon" href="/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/tags.html` | L3 | `href="{{ site.url }}/tags#{{ tag | cgi_encode }}"` |
 | `untitled:Untitled-2` | L2799 | `| `_includes/tags.html` | L1-11 |` |
 
 </details>
@@ -214,12 +214,12 @@ Let's now rebuild the backlinks to verify the change:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && python build_back_links.py build > back-links.json
+cd $HOME/gits/idvorkin.github.io && python build_back_links.py build > back-links.json
 ```
 
 ```
 Traceback (most recent call last):
-  File "/Users/idvorkin/gits/idvorkin.github.io/build_back_links.py", line 27, i
+  File "$HOME/gits/idvorkin.github.io/build_back_links.py", line 27, i
 n <module>
     import pudb
 ModuleNotFoundError: No module named 'pudb'
@@ -291,11 +291,11 @@ Instead of trying to install the dependencies manually, I should just run the sc
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build > back-links.json
+cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build > back-links.json
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build > back-links.json
+❯ cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build > back-links.json
 Reading inline script metadata from `./build_back_links.py`
 ic| f"Parsed all pages in {parsing_time - start_time:.2f} seconds": 'Parsed all pages in 1.11 seconds'
 ic| f"Processing {len(markdown_paths)} markdown paths in parallel...": 'Processing 277 markdown paths in parallel...'
@@ -322,45 +322,45 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L474 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L475 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L478 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L923 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1606 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1607 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1610 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2055 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2756 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2757 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2760 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L3205 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4098 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4099 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4102 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4547 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5166 | `"/tags": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5167 | `"url": "/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5170 | `"file_path": "_site/tags.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5615 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L357 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/tags.html` | L4 | `description: "An archive of posts sorted by tag."` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L169 | `### [Changing Jobs](https://idvork.in/tags/#job-hunt)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/podcast.md` | L62 | `- Get tech depth from Simon: https://simonwillison.net/tags/notebooklm/` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L157 | `if path in "/ig66;/random;/tags;/about;/linkedin;/td".split(";"):` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1125 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2343 | `"/tags",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4040 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4054 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4229 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4883 | `"/tags"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L7254 | `⟪ 4754 characters skipped ⟫ttps://secure.flickr.com/photos/idvorkin/tags/zachtookphotorenfair842013/"&gt;taking his own pictures&lt;/a&gt;, he seems to shares a few tastes with his father, which is to be expected.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;Actually,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L10058 | `⟪ 1790 characters skipped ⟫f="http://www.flickr.com/photos/idvorkin/tags/tdayranch2011/"&gt;Flickr &lt;/a&gt;say it all. &lt;br /&gt;&lt;br /&gt;On the Zach skills front - Zach is a total sponge. After watching me floss, Zach decided he needed to &lt;a href="http://w` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2020-04-01-Igor-Eulogy.md` | L204 | `[Software as a Story](/tags#Software as a Story),` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2018-1-1-cache.md` | L26 | `Instead of simply keeping all its eggs in its own Window 10 or Windows 10 Mobile basket, [Microsoft](https://www.slashgear.com/tags/microsoft/), either officially or through its Garage skunkworks arm, has been steadily putting out mobile apps that cross the platform divide into iOS and Android territory, ranging from the use` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/tags.html` | L3 | `permalink: /tags` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/cypress/e2e/idvork.in/sitenav.ts` | L35 | `cy.location("pathname").should("equal", "/tags");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/this_is_part_of_saas.md` | Lundefined | `_This is part of the [SaaS series](/tags#Software%20as%20a%20Story). Any connection to reality will be strictly denied_` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/tags.html` | L3 | `href="{{ site.url }}/tags#{{ tag | cgi_encode }}"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L43 | `<a class="nav-link nav-item nav-fa-icon" href="/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L474 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L475 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L478 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L923 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1606 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1607 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L1610 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2055 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2756 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2757 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L2760 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L3205 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4098 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4099 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4102 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L4547 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5166 | `"/tags": {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5167 | `"url": "/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5170 | `"file_path": "_site/tags.html",` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_06-51-adding-last-modified-time-in-code.md` | L5615 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L357 | `| `file://$HOME/gits/idvorkin.github.io/tags.html` | L4 | `description: "An archive of posts sorted by tag."` |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L169 | `### [Changing Jobs](https://idvork.in/tags/#job-hunt)` |
+| `file://$HOME/gits/idvorkin.github.io/_d/podcast.md` | L62 | `- Get tech depth from Simon: https://simonwillison.net/tags/notebooklm/` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L157 | `if path in "/ig66;/random;/tags;/about;/linkedin;/td".split(";"):` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1125 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2343 | `"/tags",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4040 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4054 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4229 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4883 | `"/tags"` |
+| `file://$HOME/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L7254 | `⟪ 4754 characters skipped ⟫ttps://secure.flickr.com/photos/idvorkin/tags/zachtookphotorenfair842013/"&gt;taking his own pictures&lt;/a&gt;, he seems to shares a few tastes with his father, which is to be expected.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;Actually,` |
+| `file://$HOME/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L10058 | `⟪ 1790 characters skipped ⟫f="http://www.flickr.com/photos/idvorkin/tags/tdayranch2011/"&gt;Flickr &lt;/a&gt;say it all. &lt;br /&gt;&lt;br /&gt;On the Zach skills front - Zach is a total sponge. After watching me floss, Zach decided he needed to &lt;a href="http://w` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2020-04-01-Igor-Eulogy.md` | L204 | `[Software as a Story](/tags#Software as a Story),` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2018-1-1-cache.md` | L26 | `Instead of simply keeping all its eggs in its own Window 10 or Windows 10 Mobile basket, [Microsoft](https://www.slashgear.com/tags/microsoft/), either officially or through its Garage skunkworks arm, has been steadily putting out mobile apps that cross the platform divide into iOS and Android territory, ranging from the use` |
+| `file://$HOME/gits/idvorkin.github.io/tags.html` | L3 | `permalink: /tags` |
+| `file://$HOME/gits/idvorkin.github.io/cypress/e2e/idvork.in/sitenav.ts` | L35 | `cy.location("pathname").should("equal", "/tags");` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/this_is_part_of_saas.md` | Lundefined | `_This is part of the [SaaS series](/tags#Software%20as%20a%20Story). Any connection to reality will be strictly denied_` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/tags.html` | L3 | `href="{{ site.url }}/tags#{{ tag | cgi_encode }}"` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L43 | `<a class="nav-link nav-item nav-fa-icon" href="/tags"` |
 | `untitled:Untitled-2` | L2799 | `| `_includes/tags.html` | L1-11 |` |
 
 </details>

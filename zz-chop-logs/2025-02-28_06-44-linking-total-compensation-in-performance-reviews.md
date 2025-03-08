@@ -23,24 +23,24 @@ _\*\*\*\*_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/sat_dsat.md` | L169 | `- [Only Care About Total Compensation](/comp)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1247 | `"title": "Care about Total Compensation",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1248 | `"description": "Different companies use different compensation models. To compare models, use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon caps salary at 160K$/yr and doesn’t have bonuses. Google vests stocks monthly. Facebook bonus` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L562 | `- [Only care about total compensation](/comp)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L2 | `title: "Care about Total Compensation"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L13 | `Different companies use different compensation models. To compare models, use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon caps salary at 160K\$/yr and doesn't have bonuses. Google vests stocks monthly. Facebook bonu` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L18 | `- [Total Compensation - It gets complicated](#total-compensation---it-gets-complicated)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L26 | `- [Should you include stock appreciation in total compensation?](#should-you-include-stock-appreciation-in-total-compensation)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L38 | `## Total Compensation - It gets complicated` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L40 | `Understand your total compensation, which is a combination of salary, cash bonus, and equity. For example, imagine making a steady-state total compensation of 200\$/year (see assumptions below). For this example, imagine this breakdown (each company has a different model):` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L48 | `Imagine you switch companies right after the cash and equity have been rewarded and negotiate a total compensation of 200\$/year, with the same salary/cash/stock ratio.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L108 | `### Should you include stock appreciation in total compensation?` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L142 | `| Year | Salary + Bonus | Initial Stock Vesting | Stock Refreshers Vesting | Total Compensation | Comments                                                     |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L166 | `⟪ 116 characters skipped ⟫nd vesting at $25 annually, add to your total compensation, peaking at $275 in Year 4.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L168 | `⟪ 97 characters skipped ⟫uting $25 annually. This maintains your total compensation at $200, demonstrating the effectiveness of Meta's overlapping vesting strategy.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L170 | `This expanded table highlights how Meta’s approach to stock compensation strategically supports higher total compensation, providing a strong incentive for employees to stay with the company over the long term.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-02-17-job-hunt-stress.md` | L132 | `- For apples to apples compensation comparisons, look at [Total compensation](/comp)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L562 | `- [Only care about total compensation](/comp)` |
+| `file://$HOME/gits/idvorkin.github.io/_d/sat_dsat.md` | L169 | `- [Only Care About Total Compensation](/comp)` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1247 | `"title": "Care about Total Compensation",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1248 | `"description": "Different companies use different compensation models. To compare models, use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon caps salary at 160K$/yr and doesn’t have bonuses. Google vests stocks monthly. Facebook bonus` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L562 | `- [Only care about total compensation](/comp)` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L2 | `title: "Care about Total Compensation"` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L13 | `Different companies use different compensation models. To compare models, use total compensation, not salary. The compensation models are arbitrary and complicated. For example, Amazon caps salary at 160K\$/yr and doesn't have bonuses. Google vests stocks monthly. Facebook bonu` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L18 | `- [Total Compensation - It gets complicated](#total-compensation---it-gets-complicated)` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L26 | `- [Should you include stock appreciation in total compensation?](#should-you-include-stock-appreciation-in-total-compensation)` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L38 | `## Total Compensation - It gets complicated` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L40 | `Understand your total compensation, which is a combination of salary, cash bonus, and equity. For example, imagine making a steady-state total compensation of 200\$/year (see assumptions below). For this example, imagine this breakdown (each company has a different model):` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L48 | `Imagine you switch companies right after the cash and equity have been rewarded and negotiate a total compensation of 200\$/year, with the same salary/cash/stock ratio.` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L108 | `### Should you include stock appreciation in total compensation?` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L142 | `| Year | Salary + Bonus | Initial Stock Vesting | Stock Refreshers Vesting | Total Compensation | Comments                                                     |` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L166 | `⟪ 116 characters skipped ⟫nd vesting at $25 annually, add to your total compensation, peaking at $275 in Year 4.` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L168 | `⟪ 97 characters skipped ⟫uting $25 annually. This maintains your total compensation at $200, demonstrating the effectiveness of Meta's overlapping vesting strategy.` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-11-16-understandingtechcompensation.md` | L170 | `This expanded table highlights how Meta’s approach to stock compensation strategically supports higher total compensation, providing a strong incentive for employees to stay with the company over the long term.` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-02-17-job-hunt-stress.md` | L132 | `- For apples to apples compensation comparisons, look at [Total compensation](/comp)` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L562 | `- [Only care about total compensation](/comp)` |
 
 </details>
 

@@ -299,7 +299,7 @@ python build_back_links.py --help
 
 ```
 Traceback (most recent call last):
-  File "/Users/idvorkin/gits/idvorkin.github.io/build_back_links.py", line 27, i
+  File "$HOME/gits/idvorkin.github.io/build_back_links.py", line 27, i
 n <module>
     import pudb
 ModuleNotFoundError: No module named 'pudb'

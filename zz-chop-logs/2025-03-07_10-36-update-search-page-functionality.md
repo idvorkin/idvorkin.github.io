@@ -223,7 +223,7 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_config.yml` | L56 | `- "search.html"` |
+| `file://$HOME/gits/idvorkin.github.io/_config.yml` | L56 | `- "search.html"` |
 
 </details>
 
@@ -258,18 +258,18 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/linkedin.html` | L88 | `var query = window.location.search.substring(1);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/linkedin.html` | L122 | `window.location.pathname + window.location.search` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L40 | `src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L5 | `id="autocomplete-search-box-button"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L52 | `<div id="autocomplete-search-box" style="display: none">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L53 | `<!-- Keep search box hidden, and only access the detached state -->` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L61 | `"{{ site.algolia.search_only_api_key }}",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L63 | `"#autocomplete-search-box",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L68 | `$("#autocomplete-search-box-button").click(function () {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L69 | `$("#autocomplete-search-box > div > button").click();` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/static/die_die_die.html` | L34 | `⟪ 7148 characters skipped ⟫writable:!1,value:t}),t};if(!Y.symbol(B.search)){var ie=re("search"),oe=String.prototype.search;g(RegExp.prototype,ie,function(e){return ne.Call(oe,e,[this])});var ae=function(e){var t=ne.RequireObjectCoercible(this);if(null!==e&&"undefined"!=typeof e){var n=ne.GetMethod(e,ie);if("undefined"!=typeof n)return ne.Call(n,e,[t])}return ne.Call(oe,t,[ne.ToString(e)])};Z(String.prototype,"search",ae)}if(!Y.symbol(B.replace)){var se=re("replace"),ue=String.prototype.replace;g(RegExp.prototype,se,function(e,t){return ne.Call(ue,e,[this,t])});var ce=function(e,t){var n=ne.RequireObjectCoe` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/static/die_die_die.html` | L40 | `⟪ 273 characters skipped ⟫t[0]||e&&e.textContent&&!(e.textContent.search(/\s$/)>-1)||(t.textContent=t.textContent.slice(1)),t):document.createTextNode("A")},r),[].concat(_toConsumableArray(o)).reverse().every(function(e){return n(e)?e.textContent.match(/^\s*$/)?(a+=` |
+| `file://$HOME/gits/idvorkin.github.io/linkedin.html` | L88 | `var query = window.location.search.substring(1);` |
+| `file://$HOME/gits/idvorkin.github.io/linkedin.html` | L122 | `window.location.pathname + window.location.search` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L40 | `src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L5 | `id="autocomplete-search-box-button"` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L52 | `<div id="autocomplete-search-box" style="display: none">` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L53 | `<!-- Keep search box hidden, and only access the detached state -->` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L61 | `"{{ site.algolia.search_only_api_key }}",` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L63 | `"#autocomplete-search-box",` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L68 | `$("#autocomplete-search-box-button").click(function () {` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L69 | `$("#autocomplete-search-box > div > button").click();` |
+| `file://$HOME/gits/idvorkin.github.io/static/die_die_die.html` | L34 | `⟪ 7148 characters skipped ⟫writable:!1,value:t}),t};if(!Y.symbol(B.search)){var ie=re("search"),oe=String.prototype.search;g(RegExp.prototype,ie,function(e){return ne.Call(oe,e,[this])});var ae=function(e){var t=ne.RequireObjectCoercible(this);if(null!==e&&"undefined"!=typeof e){var n=ne.GetMethod(e,ie);if("undefined"!=typeof n)return ne.Call(n,e,[t])}return ne.Call(oe,t,[ne.ToString(e)])};Z(String.prototype,"search",ae)}if(!Y.symbol(B.replace)){var se=re("replace"),ue=String.prototype.replace;g(RegExp.prototype,se,function(e,t){return ne.Call(ue,e,[this,t])});var ce=function(e,t){var n=ne.RequireObjectCoe` |
+| `file://$HOME/gits/idvorkin.github.io/static/die_die_die.html` | L40 | `⟪ 273 characters skipped ⟫t[0]||e&&e.textContent&&!(e.textContent.search(/\s$/)>-1)||(t.textContent=t.textContent.slice(1)),t):document.createTextNode("A")},r),[].concat(_toConsumableArray(o)).reverse().every(function(e){return n(e)?e.textContent.match(/^\s*$/)?(a+=` |
 
 </details>
 
@@ -405,66 +405,66 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L20 | `// Import search functionality` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L21 | `import { CreateAutoComplete } from "./search";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L55 | `Mousetrap.bind("s", () => focusSearch());` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L60 | `const focusSearch = () => {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L61 | `const searchInput = $("#search-box");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L62 | `if (searchInput.length > 0) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L63 | `searchInput.focus();` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L70 | `initializeSearch();` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L95 | `// Initialize search` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L96 | `function initializeSearch() {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L97 | `const searchElement = $("#search-box");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L98 | `if (searchElement.length > 0) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L99 | `// Search initialization code` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L100 | `console.log("Search initialized");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/random-prompter.ts` | L136 | `// recall bread first search returns a parent as well.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L259 | `function search() {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L260 | `$("#autocomplete-search-box-button").click();` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L265 | `mouseTrap.bind("s", e => search());` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L274 | `s - search` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L5 | `// import instantsearch from "algoliasearch";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L7 | `const search_placeholder_text = "Search Igor's Musings ...";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L18 | `function InstantSearchHitTemplate(hit) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L46 | `declare function instantsearch(l: any): any;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L47 | `declare function algoliasearch(l: any, l2: any): any;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L49 | `function CreateSearch(appid, search_api_key, index_name, initial_query) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L50 | `// Instanciating InstantSearch.js with Algolia credentials` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L51 | `const searchClient = algoliasearch(appid, search_api_key);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L52 | `const search = instantsearch({` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L53 | `searchClient: searchClient,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L55 | `searchParameters: {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L60 | `// Adding searchbar and results widgets` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L61 | `search.addWidget(` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L63 | `instantsearch.widgets.searchBox({` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L64 | `container: "#search-box",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L65 | `placeholder: search_placeholder_text,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L73 | `search.addWidget(` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L75 | `instantsearch.widgets.infiniteHits({` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L76 | `container: "#search-hits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L78 | `item: InstantSearchHitTemplate,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L86 | `return search;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L106 | `__html: InstantSearchHitTemplate(item),` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L126 | `async function GetDefaultSearchResults() {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L170 | `searchClient,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L183 | `sourceId: "from_search",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L186 | `searchClient,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L225 | `search_api_key,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L230 | `const searchClient = algoliasearch(appid, search_api_key);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L231 | `const defaultSearchResults = await GetDefaultSearchResults();` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L233 | `const isEmptySearch = query.length === 0;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L234 | `if (isEmptySearch) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L235 | `// Searching for a space gives nice default results, so when no results search for that ...` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L236 | `// TODO: Consider including the recent search history as well` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L240 | `searchClient,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L243 | `isEmptySearch ? 4 : 10,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L247 | `if (isEmptySearch) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L248 | `results.push(defaultSearchResults);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L249 | `// results = [GetDefaultSearchResults];` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L269 | `placeholder: search_placeholder_text,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L277 | `export { CreateSearch, getParameterByName, CreateAutoComplete };` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/cypress/e2e/idvork.in/search.ts` | L13 | `describe("Search works", () => {` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L20 | `// Import search functionality` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L21 | `import { CreateAutoComplete } from "./search";` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L55 | `Mousetrap.bind("s", () => focusSearch());` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L60 | `const focusSearch = () => {` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L61 | `const searchInput = $("#search-box");` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L62 | `if (searchInput.length > 0) {` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L63 | `searchInput.focus();` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L70 | `initializeSearch();` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L95 | `// Initialize search` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L96 | `function initializeSearch() {` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L97 | `const searchElement = $("#search-box");` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L98 | `if (searchElement.length > 0) {` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L99 | `// Search initialization code` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L100 | `console.log("Search initialized");` |
+| `file://$HOME/gits/idvorkin.github.io/src/random-prompter.ts` | L136 | `// recall bread first search returns a parent as well.` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L259 | `function search() {` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L260 | `$("#autocomplete-search-box-button").click();` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L265 | `mouseTrap.bind("s", e => search());` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L274 | `s - search` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L5 | `// import instantsearch from "algoliasearch";` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L7 | `const search_placeholder_text = "Search Igor's Musings ...";` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L18 | `function InstantSearchHitTemplate(hit) {` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L46 | `declare function instantsearch(l: any): any;` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L47 | `declare function algoliasearch(l: any, l2: any): any;` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L49 | `function CreateSearch(appid, search_api_key, index_name, initial_query) {` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L50 | `// Instanciating InstantSearch.js with Algolia credentials` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L51 | `const searchClient = algoliasearch(appid, search_api_key);` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L52 | `const search = instantsearch({` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L53 | `searchClient: searchClient,` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L55 | `searchParameters: {` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L60 | `// Adding searchbar and results widgets` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L61 | `search.addWidget(` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L63 | `instantsearch.widgets.searchBox({` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L64 | `container: "#search-box",` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L65 | `placeholder: search_placeholder_text,` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L73 | `search.addWidget(` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L75 | `instantsearch.widgets.infiniteHits({` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L76 | `container: "#search-hits",` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L78 | `item: InstantSearchHitTemplate,` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L86 | `return search;` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L106 | `__html: InstantSearchHitTemplate(item),` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L126 | `async function GetDefaultSearchResults() {` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L170 | `searchClient,` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L183 | `sourceId: "from_search",` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L186 | `searchClient,` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L225 | `search_api_key,` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L230 | `const searchClient = algoliasearch(appid, search_api_key);` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L231 | `const defaultSearchResults = await GetDefaultSearchResults();` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L233 | `const isEmptySearch = query.length === 0;` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L234 | `if (isEmptySearch) {` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L235 | `// Searching for a space gives nice default results, so when no results search for that ...` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L236 | `// TODO: Consider including the recent search history as well` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L240 | `searchClient,` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L243 | `isEmptySearch ? 4 : 10,` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L247 | `if (isEmptySearch) {` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L248 | `results.push(defaultSearchResults);` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L249 | `// results = [GetDefaultSearchResults];` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L269 | `placeholder: search_placeholder_text,` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L277 | `export { CreateSearch, getParameterByName, CreateAutoComplete };` |
+| `file://$HOME/gits/idvorkin.github.io/cypress/e2e/idvork.in/search.ts` | L13 | `describe("Search works", () => {` |
 
 </details>
 

@@ -699,7 +699,7 @@ Let's run Jekyll locally to see how the post looks:
 _\*\*\*\*_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && bundle exec jekyll serve
+cd $HOME/gits/idvorkin.github.io && bundle exec jekyll serve
 ```
 
 ---
@@ -971,10 +971,10 @@ _\*\*\*\*_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/enhancing-outlive-post-with-four-horsemen.md` | L61 | `| 📄 `2015-11-18-what-is-strategy.md` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L38 | `{% include summarize-page.html src="/what-is-strategy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4051 | `"markdown_path": "_d/2015-11-18-what-is-strategy.md",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L38 | `{% include summarize-page.html src="/what-is-strategy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/enhancing-outlive-post-with-four-horsemen.md` | L61 | `| 📄 `2015-11-18-what-is-strategy.md` |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L38 | `{% include summarize-page.html src="/what-is-strategy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4051 | `"markdown_path": "_d/2015-11-18-what-is-strategy.md",` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L38 | `{% include summarize-page.html src="/what-is-strategy" %}` |
 
 </details>
 
@@ -993,7 +993,7 @@ _\*\*\*\*_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/2015-11-18-what-is-strategy.md` | L8 | `permalink: /strategy` |
+| `file://$HOME/gits/idvorkin.github.io/_d/2015-11-18-what-is-strategy.md` | L8 | `permalink: /strategy` |
 
 </details>
 
@@ -1031,114 +1031,114 @@ _\*\*\*\*_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/about.md` | L9 | `{%include summarize-page.html src="/new-skills"%}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-02-28_06-44-linking-total-compensation-in-performance-reviews.md` | L74 | `+ {% include summarize-page.html src="/comp" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-01_18-17-adding-amazon-link-for-book-reference.md` | L366 | `+ {% include summarize-page.html src="/humans-are-underrated" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-01_18-17-adding-amazon-link-for-book-reference.md` | L583 | `- {% include summarize-page.html src="/humans-are-underrated" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-01_18-17-adding-amazon-link-for-book-reference.md` | L591 | `+ {% include summarize-page.html src="/humans-are-underrated" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-01_18-17-adding-amazon-link-for-book-reference.md` | L607 | `4. Maintaining the same summarize-page include: `{% include summarize-page.html src="/humans-are-underrated" %}`` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/machine-learning.md` | L158 | `{%include summarize-page.html src="/nlp" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/machine-learning.md` | L162 | `{%include summarize-page.html src="/gpt" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/machine-learning.md` | L170 | `{%include summarize-page.html src="/recommend" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/machine-learning.md` | L223 | `{%include summarize-page.html src="/ai-testing" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/machine-learning.md` | L437 | `{%include summarize-page.html src="/ranking" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/machine-learning.md` | L445 | `{%include summarize-page.html src="/nlp" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/chasing-daylight-post-cleanup.md` | L95 | `{%include summarize-page.html src="/chasing-daylight" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/chasing-daylight-post-cleanup.md` | L829 | `+ {% include summarize-page.html src="/death" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/chasing-daylight-post-cleanup.md` | L833 | `+ {% include summarize-page.html src="/last-year" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/chasing-daylight-post-cleanup.md` | L1013 | `+ {% include summarize-page.html src="/moments" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/ios-nomad.md` | L149 | `{%include summarize-page.html src="/irl" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L45 | `{%include summarize-page.html src="/design" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L49 | `{%include summarize-page.html src="/td/cloud-first-applications" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L53 | `{%include summarize-page.html src="/td/data-systems" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L57 | `{%include summarize-page.html src="/td/better-security-design" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L61 | `{%include summarize-page.html src="/tools" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L65 | `{%include summarize-page.html src="/testing" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L72 | `{%include summarize-page.html src="/nlp" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L76 | `{%include summarize-page.html src="/gpt" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L84 | `{%include summarize-page.html src="/recommend" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L88 | `{%include summarize-page.html src="/td/machine-learning" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L92 | `{%include summarize-page.html src="/td/stats" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L98 | `{%include summarize-page.html src="/td/advertising" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/index.md` | L102 | `{%include summarize-page.html src="/defi" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/system-design.md` | L155 | `{%include summarize-page.html src="/design" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/system-design.md` | L159 | `{%include summarize-page.html src="/td/cloud-first-applications" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/system-design.md` | L163 | `{%include summarize-page.html src="/td/data-systems" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/system-design.md` | L167 | `{%include summarize-page.html src="/td/better-security-design" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/testing.md` | L206 | `{% include summarize-page.html src="/ai-testing" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/irl.md` | L64 | `{%include summarize-page.html src="/physical-health" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/irl.md` | L139 | `{%include summarize-page.html src="/siy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/irl.md` | L222 | `{%include summarize-page.html src="/tesla" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/tool.md` | L743 | `{%include summarize-page.html src="/osx" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_td/nlp.md` | L90 | `{% include summarize-page.html src="/gpt" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L48 | `{% include summarize-page.html src="/dsat" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L49 | `{% include summarize-page.html src="/wlb" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L69 | `{% include summarize-page.html src="/hobby" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L75 | `{% include summarize-page.html src="/chapters" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L77 | `{% include summarize-page.html src="/42" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L85 | `{% include summarize-page.html src="/eulogy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L99 | `{% include summarize-page.html src="/sustainable-work" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L101 | `{% include summarize-page.html src="/money" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L109 | `{% include summarize-page.html src="/last-year" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L111 | `{% include summarize-page.html src="/physical-health" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L113 | `{% include summarize-page.html src="/diet" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/retire.md` | L137 | `{%include summarize-page.html src="/enemy"%}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai-coder.md` | L485 | `{% include summarize-page.html src="/humans-are-underrated" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/time-off-2024-08.md` | L194 | `{%include summarize-page.html src="/moments" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/on-being-mortal.md` | L48 | `{%include summarize-page.html src='/last-year' %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/on-being-mortal.md` | L124 | `{%include summarize-page.html src='/last-year' %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L26 | `{%include summarize-page.html src="/ai-art" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L28 | `{%include summarize-page.html src="/ai-image" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L30 | `{%include summarize-page.html src="/ai-coder" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L32 | `{%include summarize-page.html src="/chow" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L34 | `{%include summarize-page.html src="/ai-paper" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L36 | `{%include summarize-page.html src="/ai-bestie" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L38 | `{%include summarize-page.html src="/ai-developer" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L40 | `{%include summarize-page.html src="/ai-security" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L42 | `{%include summarize-page.html src="/ai-journal" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L44 | `{%include summarize-page.html src="/ai-testing" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L46 | `{%include summarize-page.html src="/ai-bm" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L48 | `{%include summarize-page.html src="/ml" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/ai.md` | L50 | `{%include summarize-page.html src="/recommend" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/goals.md` | L47 | `{% include summarize-page.html src="/4dx" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/goals.md` | L129 | `{%include summarize-page.html src="/mortality-software"%}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L59 | `{%include summarize-page.html src="/death" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L61 | `{%include summarize-page.html src="/last-year" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L65 | `{%include summarize-page.html src="/happy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L69 | `{%include summarize-page.html src="/resistance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L71 | `{%include summarize-page.html src="/frog" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L75 | `{%include summarize-page.html src="/addiction" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L85 | `{%include summarize-page.html src="/eulogy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L89 | `{%include summarize-page.html src="/goals" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L93 | `{%include summarize-page.html src="/hobby" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L94 | `{%include summarize-page.html src="/magic" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L95 | `{%include summarize-page.html src="/biking" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L101 | `{%include summarize-page.html src="/pride" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L105 | `{%include summarize-page.html src="/idle-loop" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L109 | `{%include summarize-page.html src="/monsters" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L115 | `{%include summarize-page.html src="/psychic-weight" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L125 | `{%include summarize-page.html src="/search-inside-yourself" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L129 | `{%include summarize-page.html src="/timeoff" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L137 | `{%include summarize-page.html src="/physical-health" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L138 | `{%include summarize-page.html src="/tech-health-toys" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L139 | `{%include summarize-page.html src="/irl" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L143 | `{%include summarize-page.html src="/money" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L151 | `{%include summarize-page.html src="/about" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L155 | `{%include summarize-page.html src="/decide" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L159 | `{%include summarize-page.html src="/coach" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L177 | `{%include summarize-page.html src="/depression" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L178 | `{%include summarize-page.html src="/anxiety" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L179 | `{%include summarize-page.html src="/mental-pain" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/anxiety.md` | L144 | `{%include summarize-page.html src="/anxiety-management" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/addiction.md` | L77 | `{%include summarize-page.html src="/mind-at-work" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L38 | `{% include summarize-page.html src="/strategy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L63 | `{% include summarize-page.html src="/operating-manual" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L79 | `{% include summarize-page.html src="/energy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L115 | `{% include summarize-page.html src="/balance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L139 | `{% include summarize-page.html src="/habits" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L152 | `{% include summarize-page.html src="/activation" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L165 | `{% include summarize-page.html src="/resistance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L178 | `{% include summarize-page.html src="/time-off" %}` |
+| `file://$HOME/gits/idvorkin.github.io/about.md` | L9 | `{%include summarize-page.html src="/new-skills"%}` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-02-28_06-44-linking-total-compensation-in-performance-reviews.md` | L74 | `+ {% include summarize-page.html src="/comp" %}` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-01_18-17-adding-amazon-link-for-book-reference.md` | L366 | `+ {% include summarize-page.html src="/humans-are-underrated" %}` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-01_18-17-adding-amazon-link-for-book-reference.md` | L583 | `- {% include summarize-page.html src="/humans-are-underrated" %}` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-01_18-17-adding-amazon-link-for-book-reference.md` | L591 | `+ {% include summarize-page.html src="/humans-are-underrated" %}` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-01_18-17-adding-amazon-link-for-book-reference.md` | L607 | `4. Maintaining the same summarize-page include: `{% include summarize-page.html src="/humans-are-underrated" %}`` |
+| `file://$HOME/gits/idvorkin.github.io/_td/machine-learning.md` | L158 | `{%include summarize-page.html src="/nlp" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/machine-learning.md` | L162 | `{%include summarize-page.html src="/gpt" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/machine-learning.md` | L170 | `{%include summarize-page.html src="/recommend" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/machine-learning.md` | L223 | `{%include summarize-page.html src="/ai-testing" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/machine-learning.md` | L437 | `{%include summarize-page.html src="/ranking" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/machine-learning.md` | L445 | `{%include summarize-page.html src="/nlp" %}` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/chasing-daylight-post-cleanup.md` | L95 | `{%include summarize-page.html src="/chasing-daylight" %}` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/chasing-daylight-post-cleanup.md` | L829 | `+ {% include summarize-page.html src="/death" %}` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/chasing-daylight-post-cleanup.md` | L833 | `+ {% include summarize-page.html src="/last-year" %}` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/chasing-daylight-post-cleanup.md` | L1013 | `+ {% include summarize-page.html src="/moments" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/ios-nomad.md` | L149 | `{%include summarize-page.html src="/irl" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L45 | `{%include summarize-page.html src="/design" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L49 | `{%include summarize-page.html src="/td/cloud-first-applications" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L53 | `{%include summarize-page.html src="/td/data-systems" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L57 | `{%include summarize-page.html src="/td/better-security-design" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L61 | `{%include summarize-page.html src="/tools" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L65 | `{%include summarize-page.html src="/testing" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L72 | `{%include summarize-page.html src="/nlp" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L76 | `{%include summarize-page.html src="/gpt" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L84 | `{%include summarize-page.html src="/recommend" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L88 | `{%include summarize-page.html src="/td/machine-learning" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L92 | `{%include summarize-page.html src="/td/stats" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L98 | `{%include summarize-page.html src="/td/advertising" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/index.md` | L102 | `{%include summarize-page.html src="/defi" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/system-design.md` | L155 | `{%include summarize-page.html src="/design" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/system-design.md` | L159 | `{%include summarize-page.html src="/td/cloud-first-applications" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/system-design.md` | L163 | `{%include summarize-page.html src="/td/data-systems" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/system-design.md` | L167 | `{%include summarize-page.html src="/td/better-security-design" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/testing.md` | L206 | `{% include summarize-page.html src="/ai-testing" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/irl.md` | L64 | `{%include summarize-page.html src="/physical-health" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/irl.md` | L139 | `{%include summarize-page.html src="/siy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/irl.md` | L222 | `{%include summarize-page.html src="/tesla" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/tool.md` | L743 | `{%include summarize-page.html src="/osx" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_td/nlp.md` | L90 | `{% include summarize-page.html src="/gpt" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L48 | `{% include summarize-page.html src="/dsat" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L49 | `{% include summarize-page.html src="/wlb" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L69 | `{% include summarize-page.html src="/hobby" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L75 | `{% include summarize-page.html src="/chapters" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L77 | `{% include summarize-page.html src="/42" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L85 | `{% include summarize-page.html src="/eulogy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L99 | `{% include summarize-page.html src="/sustainable-work" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L101 | `{% include summarize-page.html src="/money" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L109 | `{% include summarize-page.html src="/last-year" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L111 | `{% include summarize-page.html src="/physical-health" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L113 | `{% include summarize-page.html src="/diet" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/retire.md` | L137 | `{%include summarize-page.html src="/enemy"%}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai-coder.md` | L485 | `{% include summarize-page.html src="/humans-are-underrated" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/time-off-2024-08.md` | L194 | `{%include summarize-page.html src="/moments" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/on-being-mortal.md` | L48 | `{%include summarize-page.html src='/last-year' %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/on-being-mortal.md` | L124 | `{%include summarize-page.html src='/last-year' %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L26 | `{%include summarize-page.html src="/ai-art" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L28 | `{%include summarize-page.html src="/ai-image" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L30 | `{%include summarize-page.html src="/ai-coder" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L32 | `{%include summarize-page.html src="/chow" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L34 | `{%include summarize-page.html src="/ai-paper" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L36 | `{%include summarize-page.html src="/ai-bestie" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L38 | `{%include summarize-page.html src="/ai-developer" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L40 | `{%include summarize-page.html src="/ai-security" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L42 | `{%include summarize-page.html src="/ai-journal" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L44 | `{%include summarize-page.html src="/ai-testing" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L46 | `{%include summarize-page.html src="/ai-bm" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L48 | `{%include summarize-page.html src="/ml" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/ai.md` | L50 | `{%include summarize-page.html src="/recommend" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/goals.md` | L47 | `{% include summarize-page.html src="/4dx" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/goals.md` | L129 | `{%include summarize-page.html src="/mortality-software"%}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L59 | `{%include summarize-page.html src="/death" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L61 | `{%include summarize-page.html src="/last-year" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L65 | `{%include summarize-page.html src="/happy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L69 | `{%include summarize-page.html src="/resistance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L71 | `{%include summarize-page.html src="/frog" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L75 | `{%include summarize-page.html src="/addiction" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L85 | `{%include summarize-page.html src="/eulogy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L89 | `{%include summarize-page.html src="/goals" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L93 | `{%include summarize-page.html src="/hobby" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L94 | `{%include summarize-page.html src="/magic" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L95 | `{%include summarize-page.html src="/biking" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L101 | `{%include summarize-page.html src="/pride" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L105 | `{%include summarize-page.html src="/idle-loop" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L109 | `{%include summarize-page.html src="/monsters" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L115 | `{%include summarize-page.html src="/psychic-weight" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L125 | `{%include summarize-page.html src="/search-inside-yourself" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L129 | `{%include summarize-page.html src="/timeoff" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L137 | `{%include summarize-page.html src="/physical-health" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L138 | `{%include summarize-page.html src="/tech-health-toys" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L139 | `{%include summarize-page.html src="/irl" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L143 | `{%include summarize-page.html src="/money" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L151 | `{%include summarize-page.html src="/about" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L155 | `{%include summarize-page.html src="/decide" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L159 | `{%include summarize-page.html src="/coach" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L177 | `{%include summarize-page.html src="/depression" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L178 | `{%include summarize-page.html src="/anxiety" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L179 | `{%include summarize-page.html src="/mental-pain" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/anxiety.md` | L144 | `{%include summarize-page.html src="/anxiety-management" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/addiction.md` | L77 | `{%include summarize-page.html src="/mind-at-work" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L38 | `{% include summarize-page.html src="/strategy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L63 | `{% include summarize-page.html src="/operating-manual" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L79 | `{% include summarize-page.html src="/energy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L115 | `{% include summarize-page.html src="/balance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L139 | `{% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L152 | `{% include summarize-page.html src="/activation" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L165 | `{% include summarize-page.html src="/resistance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L178 | `{% include summarize-page.html src="/time-off" %}` |
 
 </details>
 
@@ -1157,113 +1157,113 @@ _\*\*\*\*_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L63 | `{% include summarize-page.html src="/operating-manual" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L79 | `{% include summarize-page.html src="/energy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L115 | `{% include summarize-page.html src="/balance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L139 | `{% include summarize-page.html src="/habits" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L152 | `{% include summarize-page.html src="/activation" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L165 | `{% include summarize-page.html src="/resistance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L178 | `{% include summarize-page.html src="/time-off" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/toc_.md` | L69 | `{%include summarize-page.html src="/resistance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/productive2.md` | L37 | `{%include summarize-page.html src="/energy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/productive2.md` | L45 | `{%include summarize-page.html src="/balance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/mood.md` | L98 | `{%include summarize-page.html src="/energy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/2016-2-10-body-at-home-mind-at-work.md` | L29 | `{% include summarize-page.html src="/habits" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/balance2.md` | L46 | `{%include summarize-page.html src="/energy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/balance2.md` | L143 | `{%include summarize-page.html src="/activation" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/balance2.md` | L147 | `{%include summarize-page.html src="/time-off" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy.md` | L15 | `{% include summarize-page.html src="/operating-manual" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy.md` | L31 | `{% include summarize-page.html src="/resistance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy.md` | L39 | `{% include summarize-page.html src="/activation" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy.md` | L113 | `{% include summarize-page.html src="/time-off" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/frog.md` | L38 | `{%include summarize-page.html src="/resistance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/time_off.md` | L320 | `{%include summarize-page.html src="/energy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/chop-logs/bc-vacation-blog-post-ideas.md` | L560 | `{% include summarize-page.html src="/time-off" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/chop-logs/physical-health-and-skill-development.md` | L207 | `+ {% include summarize-page.html src="/habits" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L20 | `"/activation-energy": "/activation",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L75 | `"/effectiveness": "/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L108 | `"/habits": "/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L181 | `"/resistance": "/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L212 | `"/time-off": "/timeoff",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L325 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L337 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L362 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L408 | `"/activation": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L409 | `"url": "/activation",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L420 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L422 | `"/energy"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L453 | `"/activation",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L732 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L810 | `"/balance": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L811 | `"url": "/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L817 | `"/activation",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L818 | `"/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L938 | `"/operating-manual"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L954 | `"/activation",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L956 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1291 | `"/operating-manual"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1323 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1493 | `"/activation",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1499 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1538 | `"/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1610 | `"/activation",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1611 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1925 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2030 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2123 | `"/energy": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2124 | `"url": "/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2129 | `"/activation",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2134 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2140 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2163 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2206 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2216 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2580 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2659 | `"/operating-manual"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2693 | `"/activation",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2819 | `"/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2930 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3005 | `"/operating-manual"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3021 | `"/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3177 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3222 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3238 | `"/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3245 | `"/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3262 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3349 | `"/operating-manual": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3350 | `"url": "/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3383 | `"/energy"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3429 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3432 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3476 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3550 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3579 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3583 | `"/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3589 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3591 | `"/energy"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3933 | `"/operating-manual",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3952 | `"/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3982 | `"/operating-manual"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4064 | `"/operating-manual"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4110 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4562 | `"/operating-manual"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4651 | `"/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4664 | `"/balance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4676 | `"/energy",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4694 | `"/operating-manual"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4834 | `"/operating-manual"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4860 | `"/balance"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4962 | `"/operating-manual"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-10-07-physical-health.md` | L67 | `{% include summarize-page.html src="/habits" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/cursor-logs/opening-retirement-post-discussion.md` | L97 | `+ {% include summarize-page.html src="/balance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/cursor-logs/opening-retirement-post-discussion.md` | L122 | `+ {% include summarize-page.html src="/balance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L63 | `{% include summarize-page.html src="/operating-manual" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L79 | `{% include summarize-page.html src="/energy" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L115 | `{% include summarize-page.html src="/balance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L139 | `{% include summarize-page.html src="/habits" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L152 | `{% include summarize-page.html src="/activation" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L165 | `{% include summarize-page.html src="/resistance" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L178 | `{% include summarize-page.html src="/time-off" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L63 | `{% include summarize-page.html src="/operating-manual" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L79 | `{% include summarize-page.html src="/energy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L115 | `{% include summarize-page.html src="/balance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L139 | `{% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L152 | `{% include summarize-page.html src="/activation" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L165 | `{% include summarize-page.html src="/resistance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L178 | `{% include summarize-page.html src="/time-off" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/toc_.md` | L69 | `{%include summarize-page.html src="/resistance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/productive2.md` | L37 | `{%include summarize-page.html src="/energy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/productive2.md` | L45 | `{%include summarize-page.html src="/balance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/mood.md` | L98 | `{%include summarize-page.html src="/energy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/2016-2-10-body-at-home-mind-at-work.md` | L29 | `{% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/balance2.md` | L46 | `{%include summarize-page.html src="/energy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/balance2.md` | L143 | `{%include summarize-page.html src="/activation" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/balance2.md` | L147 | `{%include summarize-page.html src="/time-off" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy.md` | L15 | `{% include summarize-page.html src="/operating-manual" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy.md` | L31 | `{% include summarize-page.html src="/resistance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy.md` | L39 | `{% include summarize-page.html src="/activation" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy.md` | L113 | `{% include summarize-page.html src="/time-off" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/frog.md` | L38 | `{%include summarize-page.html src="/resistance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/time_off.md` | L320 | `{%include summarize-page.html src="/energy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/chop-logs/bc-vacation-blog-post-ideas.md` | L560 | `{% include summarize-page.html src="/time-off" %}` |
+| `file://$HOME/gits/idvorkin.github.io/chop-logs/physical-health-and-skill-development.md` | L207 | `+ {% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L20 | `"/activation-energy": "/activation",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L75 | `"/effectiveness": "/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L108 | `"/habits": "/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L181 | `"/resistance": "/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L212 | `"/time-off": "/timeoff",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L325 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L337 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L362 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L408 | `"/activation": {` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L409 | `"url": "/activation",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L420 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L422 | `"/energy"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L453 | `"/activation",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L732 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L810 | `"/balance": {` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L811 | `"url": "/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L817 | `"/activation",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L818 | `"/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L938 | `"/operating-manual"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L954 | `"/activation",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L956 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1291 | `"/operating-manual"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1323 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1493 | `"/activation",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1499 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1538 | `"/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1610 | `"/activation",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1611 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1925 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2030 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2123 | `"/energy": {` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2124 | `"url": "/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2129 | `"/activation",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2134 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2140 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2163 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2206 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2216 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2580 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2659 | `"/operating-manual"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2693 | `"/activation",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2819 | `"/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2930 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3005 | `"/operating-manual"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3021 | `"/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3177 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3222 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3238 | `"/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3245 | `"/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3262 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3349 | `"/operating-manual": {` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3350 | `"url": "/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3383 | `"/energy"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3429 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3432 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3476 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3550 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3579 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3583 | `"/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3589 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3591 | `"/energy"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3933 | `"/operating-manual",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3952 | `"/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3982 | `"/operating-manual"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4064 | `"/operating-manual"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4110 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4562 | `"/operating-manual"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4651 | `"/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4664 | `"/balance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4676 | `"/energy",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4694 | `"/operating-manual"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4834 | `"/operating-manual"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4860 | `"/balance"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4962 | `"/operating-manual"` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-10-07-physical-health.md` | L67 | `{% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/cursor-logs/opening-retirement-post-discussion.md` | L97 | `+ {% include summarize-page.html src="/balance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/cursor-logs/opening-retirement-post-discussion.md` | L122 | `+ {% include summarize-page.html src="/balance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L63 | `{% include summarize-page.html src="/operating-manual" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L79 | `{% include summarize-page.html src="/energy" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L115 | `{% include summarize-page.html src="/balance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L139 | `{% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L152 | `{% include summarize-page.html src="/activation" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L165 | `{% include summarize-page.html src="/resistance" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L178 | `{% include summarize-page.html src="/time-off" %}` |
 
 </details>
 
@@ -1350,44 +1350,44 @@ _\*\*\*\*_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/chop-logs/physical-health-and-skill-development.md` | L207 | `+ {% include summarize-page.html src="/habits" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/chop-logs/physical-health-and-skill-development.md` | L222 | `I've added the summary includes for both `/new-skills` and `/habits` in the section where you discuss starting new habits. This will provide readers with important context about:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-02_09-18-blog-posts-on-breathing.md` | L290 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/habits.md` | L119 | `{%include amazon.html asin="B07LC9KDP5;B07D23CFGR" %}` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/switch.md` | L118 | `## 9. Build [Habits](/habits)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/switch.md` | L130 | `See [Habits](/habits)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L139 | `{% include summarize-page.html src="/habits" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/productive2.md` | L63 | `- [Habits](/habits)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/resistance.md` | L94 | `### Positive [Habits](/habits) and Routine` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/habits.md` | L10 | `- /habits` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/operating-manual-2.md` | L210 | `⟪ 102 characters skipped ⟫strategy to maintain health is [habits](/habits), but thanks to the [immutable laws of hard things](/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/2016-2-10-body-at-home-mind-at-work.md` | L29 | `{% include summarize-page.html src="/habits" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/psychic-weight.md` | L147 | `- [Habits](/habits) keep psychic weight get handled.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/activation.md` | L228 | `[Habits](/habits) are tools to help us reduce the starting energy for things we want to do, and increase the starting energy (and decrease the stopping energy) for our [addictions](/addiction).` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/idle-loop.md` | L51 | `* [Habits](/habits)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/hobby.md` | L59 | `This gets into nomenclature. In my model, hobbies are things that make you happy while [habits](/habits) (the positive ones) make you healthy. Practicing your hobby can become a habit.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L31 | `"/atomic-habits": "/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L107 | `"/habit": "/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L108 | `"/habits": "/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L416 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L886 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1484 | `"/d/habits": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1485 | `"url": "/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1488 | `"file_path": "_site/d/habits.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1507 | `"markdown_path": "_d/habits.md",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1528 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2573 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2634 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2951 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3102 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3361 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3458 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3580 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3623 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3876 | `"/d/habits",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4128 | `"/d/habits"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L968 | `- The organizational equivalent of [habits](/habits)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2017-10-07-physical-health.md` | L67 | `{% include summarize-page.html src="/habits" %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/energy-abundance.md` | L139 | `{% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/chop-logs/physical-health-and-skill-development.md` | L207 | `+ {% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/chop-logs/physical-health-and-skill-development.md` | L222 | `I've added the summary includes for both `/new-skills` and `/habits` in the section where you discuss starting new habits. This will provide readers with important context about:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-02_09-18-blog-posts-on-breathing.md` | L290 | `| `file://$HOME/gits/idvorkin.github.io/_d/habits.md` | L119 | `{%include amazon.html asin="B07LC9KDP5;B07D23CFGR" %}` |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/switch.md` | L118 | `## 9. Build [Habits](/habits)` |
+| `file://$HOME/gits/idvorkin.github.io/_d/switch.md` | L130 | `See [Habits](/habits)` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L139 | `{% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/productive2.md` | L63 | `- [Habits](/habits)` |
+| `file://$HOME/gits/idvorkin.github.io/_d/resistance.md` | L94 | `### Positive [Habits](/habits) and Routine` |
+| `file://$HOME/gits/idvorkin.github.io/_d/habits.md` | L10 | `- /habits` |
+| `file://$HOME/gits/idvorkin.github.io/_d/operating-manual-2.md` | L210 | `⟪ 102 characters skipped ⟫strategy to maintain health is [habits](/habits), but thanks to the [immutable laws of hard things](/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.` |
+| `file://$HOME/gits/idvorkin.github.io/_d/2016-2-10-body-at-home-mind-at-work.md` | L29 | `{% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/psychic-weight.md` | L147 | `- [Habits](/habits) keep psychic weight get handled.` |
+| `file://$HOME/gits/idvorkin.github.io/_d/activation.md` | L228 | `[Habits](/habits) are tools to help us reduce the starting energy for things we want to do, and increase the starting energy (and decrease the stopping energy) for our [addictions](/addiction).` |
+| `file://$HOME/gits/idvorkin.github.io/_d/idle-loop.md` | L51 | `* [Habits](/habits)` |
+| `file://$HOME/gits/idvorkin.github.io/_d/hobby.md` | L59 | `This gets into nomenclature. In my model, hobbies are things that make you happy while [habits](/habits) (the positive ones) make you healthy. Practicing your hobby can become a habit.` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L31 | `"/atomic-habits": "/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L107 | `"/habit": "/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L108 | `"/habits": "/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L416 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L886 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1484 | `"/d/habits": {` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1485 | `"url": "/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1488 | `"file_path": "_site/d/habits.html",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1507 | `"markdown_path": "_d/habits.md",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1528 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2573 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2634 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2951 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3102 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3361 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3458 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3580 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3623 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3876 | `"/d/habits",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4128 | `"/d/habits"` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L968 | `- The organizational equivalent of [habits](/habits)` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2017-10-07-physical-health.md` | L67 | `{% include summarize-page.html src="/habits" %}` |
+| `file://$HOME/gits/idvorkin.github.io/_d/energy-abundance.md` | L139 | `{% include summarize-page.html src="/habits" %}` |
 
 </details>
 
@@ -1425,7 +1425,7 @@ _\*\*\*\*_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/activation.md` | L4 | `permalink: /activation` |
+| `file://$HOME/gits/idvorkin.github.io/_d/activation.md` | L4 | `permalink: /activation` |
 
 </details>
 
@@ -1471,26 +1471,26 @@ _\*\*\*\*_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L181 | `"/resistance": "/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L455 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L988 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1494 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1521 | `"/d/resistance": {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1522 | `"url": "/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L1525 | `"file_path": "_site/d/resistance.html",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2097 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2112 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2130 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2249 | `"/d/resistance"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2264 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2319 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2328 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2505 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L2925 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3057 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3581 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L3624 | `"/d/resistance",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/back-links.json` | L4649 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L181 | `"/resistance": "/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L455 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L988 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1494 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1521 | `"/d/resistance": {` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1522 | `"url": "/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L1525 | `"file_path": "_site/d/resistance.html",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2097 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2112 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2130 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2249 | `"/d/resistance"` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2264 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2319 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2328 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2505 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L2925 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3057 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3581 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L3624 | `"/d/resistance",` |
+| `file://$HOME/gits/idvorkin.github.io/back-links.json` | L4649 | `"/d/resistance",` |
 
 </details>
 

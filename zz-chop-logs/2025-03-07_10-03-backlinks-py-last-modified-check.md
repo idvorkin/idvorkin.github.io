@@ -80,7 +80,7 @@ Let's examine this JavaScript file that may be responsible for displaying the re
 
 _****_
 
-Could not find file '/Users/idvorkin/gits/idvorkin.github.io/assets/js/recent-posts.js'. Did you mean one of:
+Could not find file '$HOME/gits/idvorkin.github.io/assets/js/recent-posts.js'. Did you mean one of:
 - assets/js/recent-posts.js
 
 ---
@@ -132,71 +132,71 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L10 | `import { initRecentPosts } from "./recent-posts";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/about.md` | L27 | `<div id="recent-posts">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/recent-posts.ts` | L15 | `const recentPostsContainer = document.getElementById("recent-posts");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/recent-posts.ts` | L16 | `console.log("🔍 recent-posts container element:", recentPostsContainer);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/recent-posts.ts` | L19 | `console.error("❌ recent-posts container not found in DOM");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/recent-posts.ts` | L122 | `"🔍 Updating recent-posts content with HTML",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/index.js` | Lundefined | `⟪ 872 characters skipped ⟫called");let e=document.getElementById("recent-posts");if(console.log("\uD83D\uDD0D recent-posts container element:",e),!e){console.error("❌ recent-posts container not found in DOM");return}try{console.log("\uD83D\uDD0D Fetching back-links.json...");let t=await fetch("/back-links.json"),n=await t.json();if(console.log("\uD83D\uDD0D Receive` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/index.js` | L9 | ``;console.log("\uD83D\uDD0D Updating recent-posts content with HTML",s.substring(0,100)+"..."),e.innerHTML=s,console.log("✅ Recent posts updated successfully")}catch(t){console.error("❌ Error loading recent posts:",t),e.innerHTML="<p>Err` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/index.js.map` | Lundefined | `⟪ 18646 characters skipped ⟫.ts","src/shared.ts","src/main.ts","src/recent-posts.ts","src/search.ts","src/page-loader.ts","src/random-prompter.ts","src/blogger_import.ts"],"sourcesContent":["/**\n * Main JavaScript Entry Point\n *\n * This file serves as the single en⟪ 3089 characters skipped ⟫stsContainer = document.getElementById('recent-posts');\n    console.log(\"\\uD83D\\uDD0D recent-posts container element:\", recentPostsContainer);\n    if (!recentPostsContainer) {\n        console.error(\"\\u274C recent-posts container not found in DOM\");\n        return;\n    }\n    try {\n        console.log(\"\\uD83D\\uDD0D Fetching back-links.json...\");\n        // Fetch the backlinks data\n        const⟪ 3062 characters skipped ⟫  console.log(\"\\uD83D\\uDD0D Updating recent-posts content with HTML\", html.substring(0, 100) + \"...\");\n        recentPostsContainer.innerHTML = html;\n        console.log(\"\\u2705 Recent posts updated successfully\");\n    } catch (⟪ 53505 characters skipped ⟫\n\nimport { initRecentPosts } from \"./recent-posts\";\n\nlet tocExpand = true;\n\nfunction checkExpandToggle() {\n  const toc = $(\".ui-toc-dropdown .toc\");\n  const toggle = $(\".expand-toggle\");\n  if (!tocExpand) {\n    toc.removeCla⟪ 9546 characters skipped ⟫stsContainer = document.getElementById('recent-posts');\n  console.log(\"🔍 recent-posts container element:\", recentPostsContainer);\n  \n  if (!recentPostsContainer) {\n    console.error(\"❌ recent-posts container not found in DOM\");\n    return;\n  }\n\n  try {\n    console.log(\"🔍 Fetching back-links.json...\");\n    // Fetch the backlinks data\n    const response = await fetch('/back⟪ 2706 characters skipped ⟫`;\n    \n    console.log(\"🔍 Updating recent-posts content with HTML\", html.substring(0, 100) + \"...\");\n    recentPostsContainer.innerHTML = html;\n    console.log(\"✅ Recent posts updated successfully\");\n    \n  } catch (error) {\n` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L25 | `Use consistent HTML element IDs - When adding new components that target specific elements (like "recent-posts"), ensure the IDs are consistent and well-documented.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L128 | `+    - When adding new components that target specific elements (like "recent-posts")` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L611 | `-    - When adding new components that target specific elements (like "recent-posts")` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L746 | `+   const container = document.getElementById('recent-posts');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L762 | `+   const container = document.getElementById('recent-posts');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L776 | `+   fetch('/api/recent-posts')` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L453 | `+ <div id="recent-posts">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L496 | `+     document.getElementById('recent-posts').innerHTML = recentPostsHtml;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L499 | `+     document.getElementById('recent-posts').innerHTML = '<p>Error loading recent posts. Please try again later.</p>';` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L792 | `-     document.getElementById('recent-posts').innerHTML = recentPostsHtml;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L793 | `+     document.getElementById('recent-posts').innerHTML = recentPostsHtml + debugOutput;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L796 | `-     document.getElementById('recent-posts').innerHTML = '<p>Error loading recent posts. Please try again later.</p>';` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L797 | `+     document.getElementById('recent-posts').innerHTML = `` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1006 | `+     document.getElementById('recent-posts').innerHTML += `` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1057 | `-     document.getElementById('recent-posts').innerHTML = recentPostsHtml + debugOutput;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1059 | `+     document.getElementById('recent-posts').innerHTML = recentPostsHtml;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1062 | `document.getElementById('recent-posts').innerHTML = `` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1396 | `+       document.getElementById('recent-posts').innerHTML = `` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1411 | `-     document.getElementById('recent-posts').innerHTML += `` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1427 | `document.getElementById('recent-posts').innerHTML = recentPostsHtml;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1430 | `+     document.getElementById('recent-posts').innerHTML += `` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1611 | `<div id="recent-posts">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1691 | `+   const recentPostsContainer = document.getElementById('recent-posts');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1876 | `+     const recentPostsContainer = document.getElementById('recent-posts');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2064 | `+ import { initRecentPosts } from "./recent-posts";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2194 | `-       document.getElementById('recent-posts').innerHTML = `` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2232 | `-     document.getElementById('recent-posts').innerHTML = recentPostsHtml;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2235 | `-     document.getElementById('recent-posts').innerHTML += `` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2248 | `-     document.getElementById('recent-posts').innerHTML = `` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2289 | `<div id="recent-posts">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2353 | `├── src/recent-posts.ts        2.76 kB      8ms` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2363 | `Perfect! The build completed successfully, and our new `recent-posts.ts` file was included in the build (2.76 kB).` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2389 | `⟪ 129 characters skipped ⟫ose the issue. We'll need to modify our recent-posts.ts file to include more console logging to understand what's happening and why it's not working.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2391 | `Let's add extensive logging to track the execution flow and data at key points.</think>Let's add more debugging to the recent-posts.ts file to help us understand why it's not working:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2403 | `+     console.log("🔍 DOMContentLoaded event fired in recent-posts.ts");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2405 | `const recentPostsContainer = document.getElementById('recent-posts');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2407 | `+     console.log("🔍 recent-posts container element:", recentPostsContainer);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2410 | `+       console.error("❌ recent-posts container not found in DOM");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2462 | `+       console.log("🔍 Updating recent-posts content with HTML", html.substring(0, 100) + "...");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2473 | `+   console.log("🔍 DOMContentLoaded event listener added in recent-posts.ts");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2558 | `├── src/recent-posts.ts        4.55 kB      8ms` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2606 | `But there's a problem with our recent-posts.ts file: the DOM content loaded event listener. We're adding a second DOMContentLoaded listener, but if the main script already runs after the DOM is loaded, our event might never fire.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2608 | `Let's modify our recent-posts.ts file to handle both cases:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2624 | `-     console.log("🔍 DOMContentLoaded event fired in recent-posts.ts");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2628 | `const recentPostsContainer = document.getElementById('recent-posts');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2633 | `-   console.log("🔍 DOMContentLoaded event listener added in recent-posts.ts");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2806 | `├── src/recent-posts.ts               2.71 kB      9ms` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2847 | `+         #recent-posts {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2871 | `+     <div id="recent-posts">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L135 | `const container = document.getElementById('recent-posts');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L151 | `const container = document.getElementById('recent-posts');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L165 | `fetch('/api/recent-posts')` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/about.md` | L27 | `<div id="recent-posts">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L135 | `const container = document.getElementById('recent-posts');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L151 | `const container = document.getElementById('recent-posts');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L165 | `fetch('/api/recent-posts')` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L10 | `import { initRecentPosts } from "./recent-posts";` |
+| `file://$HOME/gits/idvorkin.github.io/about.md` | L27 | `<div id="recent-posts">` |
+| `file://$HOME/gits/idvorkin.github.io/src/recent-posts.ts` | L15 | `const recentPostsContainer = document.getElementById("recent-posts");` |
+| `file://$HOME/gits/idvorkin.github.io/src/recent-posts.ts` | L16 | `console.log("🔍 recent-posts container element:", recentPostsContainer);` |
+| `file://$HOME/gits/idvorkin.github.io/src/recent-posts.ts` | L19 | `console.error("❌ recent-posts container not found in DOM");` |
+| `file://$HOME/gits/idvorkin.github.io/src/recent-posts.ts` | L122 | `"🔍 Updating recent-posts content with HTML",` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/index.js` | Lundefined | `⟪ 872 characters skipped ⟫called");let e=document.getElementById("recent-posts");if(console.log("\uD83D\uDD0D recent-posts container element:",e),!e){console.error("❌ recent-posts container not found in DOM");return}try{console.log("\uD83D\uDD0D Fetching back-links.json...");let t=await fetch("/back-links.json"),n=await t.json();if(console.log("\uD83D\uDD0D Receive` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/index.js` | L9 | ``;console.log("\uD83D\uDD0D Updating recent-posts content with HTML",s.substring(0,100)+"..."),e.innerHTML=s,console.log("✅ Recent posts updated successfully")}catch(t){console.error("❌ Error loading recent posts:",t),e.innerHTML="<p>Err` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/index.js.map` | Lundefined | `⟪ 18646 characters skipped ⟫.ts","src/shared.ts","src/main.ts","src/recent-posts.ts","src/search.ts","src/page-loader.ts","src/random-prompter.ts","src/blogger_import.ts"],"sourcesContent":["/**\n * Main JavaScript Entry Point\n *\n * This file serves as the single en⟪ 3089 characters skipped ⟫stsContainer = document.getElementById('recent-posts');\n    console.log(\"\\uD83D\\uDD0D recent-posts container element:\", recentPostsContainer);\n    if (!recentPostsContainer) {\n        console.error(\"\\u274C recent-posts container not found in DOM\");\n        return;\n    }\n    try {\n        console.log(\"\\uD83D\\uDD0D Fetching back-links.json...\");\n        // Fetch the backlinks data\n        const⟪ 3062 characters skipped ⟫  console.log(\"\\uD83D\\uDD0D Updating recent-posts content with HTML\", html.substring(0, 100) + \"...\");\n        recentPostsContainer.innerHTML = html;\n        console.log(\"\\u2705 Recent posts updated successfully\");\n    } catch (⟪ 53505 characters skipped ⟫\n\nimport { initRecentPosts } from \"./recent-posts\";\n\nlet tocExpand = true;\n\nfunction checkExpandToggle() {\n  const toc = $(\".ui-toc-dropdown .toc\");\n  const toggle = $(\".expand-toggle\");\n  if (!tocExpand) {\n    toc.removeCla⟪ 9546 characters skipped ⟫stsContainer = document.getElementById('recent-posts');\n  console.log(\"🔍 recent-posts container element:\", recentPostsContainer);\n  \n  if (!recentPostsContainer) {\n    console.error(\"❌ recent-posts container not found in DOM\");\n    return;\n  }\n\n  try {\n    console.log(\"🔍 Fetching back-links.json...\");\n    // Fetch the backlinks data\n    const response = await fetch('/back⟪ 2706 characters skipped ⟫`;\n    \n    console.log(\"🔍 Updating recent-posts content with HTML\", html.substring(0, 100) + \"...\");\n    recentPostsContainer.innerHTML = html;\n    console.log(\"✅ Recent posts updated successfully\");\n    \n  } catch (error) {\n` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L25 | `Use consistent HTML element IDs - When adding new components that target specific elements (like "recent-posts"), ensure the IDs are consistent and well-documented.` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L128 | `+    - When adding new components that target specific elements (like "recent-posts")` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L611 | `-    - When adding new components that target specific elements (like "recent-posts")` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L746 | `+   const container = document.getElementById('recent-posts');` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L762 | `+   const container = document.getElementById('recent-posts');` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-32-blog-code-editing-guidelines.md` | L776 | `+   fetch('/api/recent-posts')` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L453 | `+ <div id="recent-posts">` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L496 | `+     document.getElementById('recent-posts').innerHTML = recentPostsHtml;` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L499 | `+     document.getElementById('recent-posts').innerHTML = '<p>Error loading recent posts. Please try again later.</p>';` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L792 | `-     document.getElementById('recent-posts').innerHTML = recentPostsHtml;` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L793 | `+     document.getElementById('recent-posts').innerHTML = recentPostsHtml + debugOutput;` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L796 | `-     document.getElementById('recent-posts').innerHTML = '<p>Error loading recent posts. Please try again later.</p>';` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L797 | `+     document.getElementById('recent-posts').innerHTML = `` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1006 | `+     document.getElementById('recent-posts').innerHTML += `` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1057 | `-     document.getElementById('recent-posts').innerHTML = recentPostsHtml + debugOutput;` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1059 | `+     document.getElementById('recent-posts').innerHTML = recentPostsHtml;` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1062 | `document.getElementById('recent-posts').innerHTML = `` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1396 | `+       document.getElementById('recent-posts').innerHTML = `` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1411 | `-     document.getElementById('recent-posts').innerHTML += `` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1427 | `document.getElementById('recent-posts').innerHTML = recentPostsHtml;` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1430 | `+     document.getElementById('recent-posts').innerHTML += `` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1611 | `<div id="recent-posts">` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1691 | `+   const recentPostsContainer = document.getElementById('recent-posts');` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L1876 | `+     const recentPostsContainer = document.getElementById('recent-posts');` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2064 | `+ import { initRecentPosts } from "./recent-posts";` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2194 | `-       document.getElementById('recent-posts').innerHTML = `` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2232 | `-     document.getElementById('recent-posts').innerHTML = recentPostsHtml;` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2235 | `-     document.getElementById('recent-posts').innerHTML += `` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2248 | `-     document.getElementById('recent-posts').innerHTML = `` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2289 | `<div id="recent-posts">` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2353 | `├── src/recent-posts.ts        2.76 kB      8ms` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2363 | `Perfect! The build completed successfully, and our new `recent-posts.ts` file was included in the build (2.76 kB).` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2389 | `⟪ 129 characters skipped ⟫ose the issue. We'll need to modify our recent-posts.ts file to include more console logging to understand what's happening and why it's not working.` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2391 | `Let's add extensive logging to track the execution flow and data at key points.</think>Let's add more debugging to the recent-posts.ts file to help us understand why it's not working:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2403 | `+     console.log("🔍 DOMContentLoaded event fired in recent-posts.ts");` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2405 | `const recentPostsContainer = document.getElementById('recent-posts');` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2407 | `+     console.log("🔍 recent-posts container element:", recentPostsContainer);` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2410 | `+       console.error("❌ recent-posts container not found in DOM");` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2462 | `+       console.log("🔍 Updating recent-posts content with HTML", html.substring(0, 100) + "...");` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2473 | `+   console.log("🔍 DOMContentLoaded event listener added in recent-posts.ts");` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2558 | `├── src/recent-posts.ts        4.55 kB      8ms` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2606 | `But there's a problem with our recent-posts.ts file: the DOM content loaded event listener. We're adding a second DOMContentLoaded listener, but if the main script already runs after the DOM is loaded, our event might never fire.` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2608 | `Let's modify our recent-posts.ts file to handle both cases:` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2624 | `-     console.log("🔍 DOMContentLoaded event fired in recent-posts.ts");` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2628 | `const recentPostsContainer = document.getElementById('recent-posts');` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2633 | `-   console.log("🔍 DOMContentLoaded event listener added in recent-posts.ts");` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2806 | `├── src/recent-posts.ts               2.71 kB      9ms` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2847 | `+         #recent-posts {` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L2871 | `+     <div id="recent-posts">` |
+| `file://$HOME/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L135 | `const container = document.getElementById('recent-posts');` |
+| `file://$HOME/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L151 | `const container = document.getElementById('recent-posts');` |
+| `file://$HOME/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L165 | `fetch('/api/recent-posts')` |
+| `file://$HOME/gits/idvorkin.github.io/about.md` | L27 | `<div id="recent-posts">` |
+| `file://$HOME/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L135 | `const container = document.getElementById('recent-posts');` |
+| `file://$HOME/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L151 | `const container = document.getElementById('recent-posts');` |
+| `file://$HOME/gits/idvorkin.github.io/.cursor/rules/107-blog-code.mdc` | L165 | `fetch('/api/recent-posts')` |
 
 </details>
 
@@ -223,11 +223,11 @@ Now let's check the back-links.json file to see if it's properly including the l
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && head -n 20 back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && head -n 20 back-links.json | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && head -n 20 back-links.json | /bin/cd /Users/idvorkin/gits/idvorkin
+❯ cd $HOME/gits/idvorkin.github.io && head -n 20 back-links.json | /bin/cd $HOME/gits/idvorkin
 .github.io && head -n 20 back-links.json | /bin/cat
 {
     "redirects": {
@@ -285,14 +285,14 @@ Let's run a similar command directly to see what's happening:</think>I'll check 
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && grep -A 2 "last_modified" back-links.json | head -n 10 | /bin/cat
+cd $HOME/gits/idvorkin.github.io && grep -A 2 "last_modified" back-links.json | head -n 10 | /bin/cat
 ```
 
 ```
 
 igors-Mac-mini in idvorkin.github.io on  master [$] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 o
 n ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && grep -A 2 "last_modified" back-links.json | head -n 10 | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && grep -A 2 "last_modified" back-links.json | head -n 10 | /bin/cat
             "last_modified": "2024-10-05T21:35:59-07:00"
         },
         "/40yo": {
@@ -322,14 +322,14 @@ Let's run the git command that is used in the build_back_links.py script directl
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && grep -B 10 -A 2 "\"/40yo\"" back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && grep -B 10 -A 2 "\"/40yo\"" back-links.json | /bin/cat
 ```
 
 ```
 
 igors-Mac-mini in idvorkin.github.io on  master [$] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 o
 n ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && grep -B 10 -A 2 "\"/40yo\"" back-links.json | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && grep -B 10 -A 2 "\"/40yo\"" back-links.json | /bin/cat
 {
     "redirects": {
         "/2024": "/y24",
@@ -416,13 +416,13 @@ Let me find more complete information for the /40yo entry:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/40yo"]' back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/40yo"]' back-links.json | /bin/cat
 ```
 
 ```
 igors-Mac-mini in idvorkin.github.io on  master [$] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 o
 n ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/40yo"]' back-links.json | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && jq '.url_info["/40yo"]' back-links.json | /bin/cat
 {
   "url": "/40yo",
   "title": "Age Before Beauty: The Vanishing Act of Older Coders",
@@ -460,11 +460,11 @@ Now I have the markdown path: `_d/40-yo-programmer.md`. Let's run the git comman
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "_d/40-yo-programmer.md" | /bin/cat
+cd $HOME/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "_d/40-yo-programmer.md" | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "_d/40-yo-programmer.md" | /
+❯ cd $HOME/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "_d/40-yo-programmer.md" | /
 bin/cat
 2025-01-04 06:21:54 -0800
 
@@ -484,13 +484,13 @@ This confirms there is indeed a problem - the git commit date for this file is s
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && grep -A 2 "2025" back-links.json | head -n 10 | /bin/cat
+cd $HOME/gits/idvorkin.github.io && grep -A 2 "2025" back-links.json | head -n 10 | /bin/cat
 ```
 
 ```
 igors-Mac-mini in idvorkin.github.io on  master [$] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 o
 n ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && grep -A 2 "2025" back-links.json | head -n 10 | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && grep -A 2 "2025" back-links.json | head -n 10 | /bin/cat
         "/2025": "/y25",
         "/24": "/y24",
         "/25": "/y25",
@@ -543,13 +543,13 @@ Let's check another file with the git log command to confirm that this is consis
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "build_back_links.py" | /bin/cat
+cd $HOME/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "build_back_links.py" | /bin/cat
 ```
 
 ```
 igors-Mac-mini in idvorkin.github.io on  master [$] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 o
 n ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "build_back_links.py" | /bin
+❯ cd $HOME/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "build_back_links.py" | /bin
 /cat
 2025-03-07 09:49:27 -0800
 
@@ -673,11 +673,11 @@ Now I'll check the git log for this file to see when it was last modified:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "_d/2015-11-11-mind-monsters.md" | /bin/cat
+cd $HOME/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "_d/2015-11-11-mind-monsters.md" | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "_d/2015-11-11-mind-monsters
+❯ cd $HOME/gits/idvorkin.github.io && git log -1 --format=%cd --date=iso -- "_d/2015-11-11-mind-monsters
 .md" | /bin/cat
 2020-12-22 17:13:28 +0000
 
@@ -697,11 +697,11 @@ Now let's check what date is stored in the back-links.json file for this entry:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"]' back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"]' back-links.json | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"]' back-links.json | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"]' back-links.json | /bin/cat
 {
   "url": "/mind-monsters",
   "title": "Mind monsters",
@@ -763,19 +763,19 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L84 | `async def process_markdown_paths_in_parallel(` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L85 | `markdown_paths: List[str],` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L101 | `for path in markdown_paths` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L108 | `if markdown_paths[i]:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L109 | `result[markdown_paths[i]] = last_modified` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L123 | `markdown_path: PathType = PathType("")` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L247 | `markdown_path=markdownPath,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L285 | `markdown_paths = [page.markdown_path for page in self.pages.values()]` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L288 | `ic(f"Processing {len(markdown_paths)} markdown paths in parallel...")` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L290 | `last_modified_map = await process_markdown_paths_in_parallel(markdown_paths)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L298 | `if page.markdown_path in last_modified_map:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L299 | `page.last_modified = last_modified_map[page.markdown_path]` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L381 | `"markdown_path": obj.markdown_path,` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L84 | `async def process_markdown_paths_in_parallel(` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L85 | `markdown_paths: List[str],` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L101 | `for path in markdown_paths` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L108 | `if markdown_paths[i]:` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L109 | `result[markdown_paths[i]] = last_modified` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L123 | `markdown_path: PathType = PathType("")` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L247 | `markdown_path=markdownPath,` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L285 | `markdown_paths = [page.markdown_path for page in self.pages.values()]` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L288 | `ic(f"Processing {len(markdown_paths)} markdown paths in parallel...")` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L290 | `last_modified_map = await process_markdown_paths_in_parallel(markdown_paths)` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L298 | `if page.markdown_path in last_modified_map:` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L299 | `page.last_modified = last_modified_map[page.markdown_path]` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L381 | `"markdown_path": obj.markdown_path,` |
 
 </details>
 
@@ -794,8 +794,8 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L241 | `markdownPathTag = soup.find("meta", property="markdown-path")` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L242 | `markdownPath = markdownPathTag["content"] if markdownPathTag else ""` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L241 | `markdownPathTag = soup.find("meta", property="markdown-path")` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L242 | `markdownPath = markdownPathTag["content"] if markdownPathTag else ""` |
 
 </details>
 
@@ -810,11 +810,11 @@ The issue appears to be in how the last modified times are being determined. Let
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ls -la _d/ | head -n 10 | /bin/cat
+cd $HOME/gits/idvorkin.github.io && ls -la _d/ | head -n 10 | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && ls -la _d/ | head -n 10 | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && ls -la _d/ | head -n 10 | /bin/cat
 .rw-r--r--@ 4.2k idvorkin 17 Feb 10:16 4dx.md
 .rw-r--r--@ 4.7k idvorkin 15 Nov  2024 7h-c0.md
 .rw-r--r--@ 3.5k idvorkin 15 Nov  2024 7h-c1.md
@@ -842,11 +842,11 @@ Let's check the file system timestamp of the mind-monsters file:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ls -la _d/2015-11-11-mind-monsters.md | /bin/cat
+cd $HOME/gits/idvorkin.github.io && ls -la _d/2015-11-11-mind-monsters.md | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && ls -la _d/2015-11-11-mind-monsters.md | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && ls -la _d/2015-11-11-mind-monsters.md | /bin/cat
 .rw-r--r--@ 2.7k idvorkin 15 Nov  2024 _d/2015-11-11-mind-monsters.md
 
 igors-Mac-mini in idvorkin.github.io on  master [$] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 o
@@ -865,11 +865,11 @@ Let's use a more detailed command to check the file timestamps:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && stat _d/2015-11-11-mind-monsters.md | /bin/cat
+cd $HOME/gits/idvorkin.github.io && stat _d/2015-11-11-mind-monsters.md | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && stat _d/2015-11-11-mind-monsters.md | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && stat _d/2015-11-11-mind-monsters.md | /bin/cat
 16777233 1221003 -rw-r--r-- 1 idvorkin staff 0 2659 "Nov 15 16:26:55 2024" "Nov 15 16:26:54 2024" "Nov 15 16:26:54
  2024" "Nov 15 16:26:54 2024" 4096 8 0 _d/2015-11-11-mind-monsters.md
 
@@ -889,7 +889,7 @@ Now let's manually trace how a file's last modified date is determined by testin
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && python -c "import git; repo = git.Repo(search_parent_directories=True); print(repo.git.log('-1', '--format=%cd', '--date=iso', '--', '_d/2015-11-11-mind-monsters.md'))" | /bin/cat
+cd $HOME/gits/idvorkin.github.io && python -c "import git; repo = git.Repo(search_parent_directories=True); print(repo.git.log('-1', '--format=%cd', '--date=iso', '--', '_d/2015-11-11-mind-monsters.md'))" | /bin/cat
 ```
 
 ```
@@ -917,7 +917,7 @@ Let's try with a specific python environment that has GitPython installed:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && uv run -- python -c "import git; import os; repo = git.Repo(search_parent_directories=True); path = '_d/2015-11-11-mind-monsters.md'; relative_path = os.path.relpath(path, repo.working_dir); print(f'Relative path: {relative_path}'); print(f'Git log: {repo.git.log(\"-1\", \"--format=%cd\", \"--date=iso\", \"--\", relative_path)}')" | /bin/cat
+cd $HOME/gits/idvorkin.github.io && uv run -- python -c "import git; import os; repo = git.Repo(search_parent_directories=True); path = '_d/2015-11-11-mind-monsters.md'; relative_path = os.path.relpath(path, repo.working_dir); print(f'Relative path: {relative_path}'); print(f'Git log: {repo.git.log(\"-1\", \"--format=%cd\", \"--date=iso\", \"--\", relative_path)}')" | /bin/cat
 ```
 
 ```
@@ -957,12 +957,12 @@ _**Assistant**_
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && python -m uv env | /bin/cat
+cd $HOME/gits/idvorkin.github.io && python -m uv env | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && python -m uv env | /bin/cat
-/Users/idvorkin/gits/omnifocus_cli/.venv/bin/python: No module named uv
+❯ cd $HOME/gits/idvorkin.github.io && python -m uv env | /bin/cat
+$HOME/gits/omnifocus_cli/.venv/bin/python: No module named uv
 
 igors-Mac-mini in idvorkin.github.io on  master [$] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 o
 n ☁️   
@@ -1056,8 +1056,8 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L400 | `@app.command()` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L423 | `@app.command()` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L400 | `@app.command()` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L423 | `@app.command()` |
 
 </details>
 
@@ -1152,13 +1152,13 @@ Now let's run our new test-dates command to check how the dates are being retrie
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && uv run -- python build_back_links.py test-dates | /bin/cat
+cd $HOME/gits/idvorkin.github.io && uv run -- python build_back_links.py test-dates | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && uv run -- python build_back_links.py test-dates | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && uv run -- python build_back_links.py test-dates | /bin/cat
 Traceback (most recent call last):
-  File "/Users/idvorkin/gits/idvorkin.github.io/build_back_links.py", line 27, in <module>
+  File "$HOME/gits/idvorkin.github.io/build_back_links.py", line 27, in <module>
     import pudb
 ModuleNotFoundError: No module named 'pudb'
 
@@ -1211,14 +1211,14 @@ However, I need to make sure the file is executable first. In Unix-based systems
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && chmod +x build_back_links.py && ./build_back_links.py test-dates | /bin/cat
+cd $HOME/gits/idvorkin.github.io && chmod +x build_back_links.py && ./build_back_links.py test-dates | /bin/cat
 ```
 
 ```
 
 igors-Mac-mini in idvorkin.github.io on  master [$!] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 
 on ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && chmod +x build_back_links.py && ./build_back_links.py test-dates |
+❯ cd $HOME/gits/idvorkin.github.io && chmod +x build_back_links.py && ./build_back_links.py test-dates |
  /bin/cat
 Reading inline script metadata from `./build_back_links.py`
 ic| 'Testing date retrieval'
@@ -1260,14 +1260,14 @@ Now let's also check what dates are showing up in the back-links.json file for t
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' back-links.json | /bin/cat
 ```
 
 ```
 
 igors-Mac-mini in idvorkin.github.io on  master [$!] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 
 on ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' back-links.json | /
+❯ cd $HOME/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' back-links.json | /
 bin/cat
 "2025-03-07T09:31:13-08:00"
 
@@ -1319,14 +1319,14 @@ Let's also check if there's an issue with how the markdown paths are being extra
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && grep -r "markdown-path" _site/mind-monsters.html | /bin/cat
+cd $HOME/gits/idvorkin.github.io && grep -r "markdown-path" _site/mind-monsters.html | /bin/cat
 ```
 
 ```
 
 igors-Mac-mini in idvorkin.github.io on  master [$!] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 
 on ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && grep -r "markdown-path" _site/mind-monsters.html | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && grep -r "markdown-path" _site/mind-monsters.html | /bin/cat
 _site/mind-monsters.html:<meta property="markdown-path" content="_d/2015-11-11-mind-monsters.md" />
 
 igors-Mac-mini in idvorkin.github.io on  master [$!] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 
@@ -1522,11 +1522,11 @@ Now let's run our verbose test to diagnose the issue:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py verbose-test | /bin/cat
+cd $HOME/gits/idvorkin.github.io && ./build_back_links.py verbose-test | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py verbose-test | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && ./build_back_links.py verbose-test | /bin/cat
 Reading inline script metadata from `./build_back_links.py`
 ic| 'Running verbose test'
 ic| f"Checking if file exists: {test_file}": 'Checking if file exists: _d/2015-11-11-mind-monsters.md'
@@ -1690,11 +1690,11 @@ Now let's run our check-dates command to generate a fixed back-links.json file:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py check-dates > new-back-links.json
+cd $HOME/gits/idvorkin.github.io && ./build_back_links.py check-dates > new-back-links.json
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py check-dates > new-back-links.json
+❯ cd $HOME/gits/idvorkin.github.io && ./build_back_links.py check-dates > new-back-links.json
 Reading inline script metadata from `./build_back_links.py`
 ic| f"Parsed all pages in {parsing_time - start_time:.2f} seconds": 'Parsed all pages in 1.11 seconds'
 ic| 'Manually processing last_modified dates (with validation)'
@@ -1742,11 +1742,11 @@ _**Assistant**_
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' new-back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' new-back-links.json | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' new-back-links.json
+❯ cd $HOME/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' new-back-links.json
  | /bin/cat
 "2020-12-22T17:13:28+00:00"
 
@@ -1771,11 +1771,11 @@ Let's also check the date for 40yo:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' new-back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' new-back-links.json | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' new-back-links.json | /bin/c
+❯ cd $HOME/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' new-back-links.json | /bin/c
 at
 "2025-01-04T06:21:54-08:00"
 
@@ -1795,11 +1795,11 @@ Now let's replace the original back-links.json with our corrected one and check 
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && cp new-back-links.json back-links.json && echo "Fixed back-links.json file"
+cd $HOME/gits/idvorkin.github.io && cp new-back-links.json back-links.json && echo "Fixed back-links.json file"
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && cp new-back-links.json back-links.json && echo "Fixed back-links.j
+❯ cd $HOME/gits/idvorkin.github.io && cp new-back-links.json back-links.json && echo "Fixed back-links.j
 son file"
 Fixed back-links.json file
 
@@ -1878,11 +1878,11 @@ Perfect! Now let's run the build with our fixed code to make sure it works corre
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build > rebuild-back-links.json
+cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build > rebuild-back-links.json
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build > rebuild-back-links.json
+❯ cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build > rebuild-back-links.json
 Reading inline script metadata from `./build_back_links.py`
 ic| f"Parsed all pages in {parsing_time - start_time:.2f} seconds": 'Parsed all pages in 1.31 seconds'
 ic| 'Processing last_modified dates sequentially for reliability'
@@ -1906,11 +1906,11 @@ Let's check one of our test files to make sure it's using the correct git date:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' rebuild-back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' rebuild-back-links.json | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' rebuild-back-links.
+❯ cd $HOME/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' rebuild-back-links.
 json | /bin/cat
 "2020-12-22T17:13:28+00:00"
 
@@ -2101,11 +2101,11 @@ Let's run the build with our improved async implementation:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build > async-back-links.json
+cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build > async-back-links.json
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build > async-back-links.json
+❯ cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build > async-back-links.json
 Reading inline script metadata from `./build_back_links.py`
 ic| f"Parsed all pages in {parsing_time - start_time:.2f} seconds": 'Parsed all pages in 1.16 seconds'
 ic| "Processing last_modified dates in parallel using direct git calls": 'Processing last_modified dates in parall
@@ -2134,11 +2134,11 @@ Great! The async implementation is much faster - only 3.08 seconds to update all
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' async-back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' async-back-links.json | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' async-back-links.js
+❯ cd $HOME/gits/idvorkin.github.io && jq '.url_info["/mind-monsters"].last_modified' async-back-links.js
 on | /bin/cat
 "2020-12-22T17:13:28+00:00"
 
@@ -2158,11 +2158,11 @@ Perfect! Let's also check 40yo to make sure it's also correct:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' async-back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' async-back-links.json | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' async-back-links.json | /bin
+❯ cd $HOME/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' async-back-links.json | /bin
 /cat
 "2025-01-04T06:21:54-08:00"
 
@@ -2182,11 +2182,11 @@ The dates are looking good! Let's finalize this solution by making the async-bac
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && cp async-back-links.json back-links.json && echo "Completed! The back-links.json now has accurate date information, generated using the faster async implementation."
+cd $HOME/gits/idvorkin.github.io && cp async-back-links.json back-links.json && echo "Completed! The back-links.json now has accurate date information, generated using the faster async implementation."
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && cp async-back-links.json back-links.json && echo "Completed! The b
+❯ cd $HOME/gits/idvorkin.github.io && cp async-back-links.json back-links.json && echo "Completed! The b
 ack-links.json now has accurate date information, generated using the faster async implementation."
 Completed! The back-links.json now has accurate date information, generated using the faster async implementation.
 
@@ -2503,13 +2503,13 @@ Now let's run our debug command to check for pages with null last_modified value
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py debug_null_dates | /bin/cat
+cd $HOME/gits/idvorkin.github.io && ./build_back_links.py debug_null_dates | /bin/cat
 ```
 
 ```
 igors-Mac-mini in idvorkin.github.io on  master [$!?] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10
  on ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py debug_null_dates | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && ./build_back_links.py debug_null_dates | /bin/cat
 Reading inline script metadata from `./build_back_links.py`
 Usage: build_back_links.py [OPTIONS] COMMAND [ARGS]...
 Try 'build_back_links.py --help' for help.
@@ -2545,7 +2545,7 @@ Let's try running the build command with our enhanced debugging to see if it ide
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build > debug-build.log 2>&1 && grep -i "null\|warning\|error" debug-build.log | /bin/cat
+cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build > debug-build.log 2>&1 && grep -i "null\|warning\|error" debug-build.log | /bin/cat
 ```
 
 ```
@@ -2580,11 +2580,11 @@ Let's check the full debug log to see if there are any warnings about null last_
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && grep -i "warning" debug-build.log | /bin/cat
+cd $HOME/gits/idvorkin.github.io && grep -i "warning" debug-build.log | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && grep -i "warning" debug-build.log | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && grep -i "warning" debug-build.log | /bin/cat
 
 igors-Mac-mini in idvorkin.github.io on  master [$!?] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10
  on ☁️   
@@ -2602,7 +2602,7 @@ Let's check for empty paths or null last_modified values in the current back-lin
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info | to_entries[] | select(.value.last_modified == null or .value.last_modified == "") | .key' back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info | to_entries[] | select(.value.last_modified == null or .value.last_modified == "") | .key' back-links.json | /bin/cat
 ```
 
 ```
@@ -2781,11 +2781,11 @@ There are quite a few entries with null last_modified values. Let's check a few 
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/40yo"]' back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/40yo"]' back-links.json | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/40yo"]' back-links.json | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && jq '.url_info["/40yo"]' back-links.json | /bin/cat
 {
   "url": "/40yo",
   "title": "Age Before Beauty: The Vanishing Act of Older Coders",
@@ -2823,7 +2823,7 @@ Let's check if the file exists and is tracked by git:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ls -la _d/40-yo-programmer.md && git ls-files --error-unmatch _d/40-yo-programmer.md || echo "Not tracked by git"
+cd $HOME/gits/idvorkin.github.io && ls -la _d/40-yo-programmer.md && git ls-files --error-unmatch _d/40-yo-programmer.md || echo "Not tracked by git"
 ```
 
 ```
@@ -2850,12 +2850,12 @@ The file exists and is tracked by git. Let's check its git history:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && git log -1 --format="%cd" --date=iso -- _d/40-yo-programmer.md | /bin/cat
+cd $HOME/gits/idvorkin.github.io && git log -1 --format="%cd" --date=iso -- _d/40-yo-programmer.md | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && git log -1 --format="%cd" --date=iso -- _d/40-yo-programmer.md | /
-bicd /Users/idvorkin/gits/idvorkin.github.io && git log -1 --format="%cd" --date=iso -- _d/40-yo-programmer.md | /
+❯ cd $HOME/gits/idvorkin.github.io && git log -1 --format="%cd" --date=iso -- _d/40-yo-programmer.md | /
+bicd $HOME/gits/idvorkin.github.io && git log -1 --format="%cd" --date=iso -- _d/40-yo-programmer.md | /
 bin/cat
 2025-01-04 06:21:54 -0800
 
@@ -2875,7 +2875,7 @@ Let's run our build command with more verbose output to see what's happening wit
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build > verbose-build.log 2>&1 && grep -A 5 -B 5 "40-yo-programmer.md" verbose-build.log | /bin/cat
+cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build > verbose-build.log 2>&1 && grep -A 5 -B 5 "40-yo-programmer.md" verbose-build.log | /bin/cat
 ```
 
 ```
@@ -2957,7 +2957,7 @@ But when we checked the current back-links.json, it showed an empty string for l
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' verbose-build.log | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' verbose-build.log | /bin/cat
 ```
 
 ```
@@ -2983,14 +2983,14 @@ Let's extract the JSON from the verbose-build.log and check it:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && grep -A 20 -B 1 '"url": "/40yo"' verbose-build.log | /bin/cat
+cd $HOME/gits/idvorkin.github.io && grep -A 20 -B 1 '"url": "/40yo"' verbose-build.log | /bin/cat
 ```
 
 ```
 
 igors-Mac-mini in idvorkin.github.io on  master [$!?] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10
  on ☁️   
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && grep -A 20 -B 1 '"url": "/40yo"' verbose-build.log | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && grep -A 20 -B 1 '"url": "/40yo"' verbose-build.log | /bin/cat
         "/40yo": {
             "url": "/40yo",
             "title": "Age Before Beauty: The Vanishing Act of Older Coders",
@@ -3040,7 +3040,7 @@ Let's save this new build as our back-links.json:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && grep -v "^ic|" verbose-build.log > fixed-back-links.json && cp fixed-back-links.json back-links.json && echo "Fixed back-links.json with correct last_modified values"
+cd $HOME/gits/idvorkin.github.io && grep -v "^ic|" verbose-build.log > fixed-back-links.json && cp fixed-back-links.json back-links.json && echo "Fixed back-links.json with correct last_modified values"
 ```
 
 ```
@@ -3066,7 +3066,7 @@ Now let's check if there are still any null last_modified values in our fixed ba
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info | to_entries[] | select(.value.last_modified == null or .value.last_modified == "") | .key' back-links.json | wc -l
+cd $HOME/gits/idvorkin.github.io && jq '.url_info | to_entries[] | select(.value.last_modified == null or .value.last_modified == "") | .key' back-links.json | wc -l
 ```
 
 ```
@@ -3093,11 +3093,11 @@ There seems to be an issue with the JSON format. Let's check the first few lines
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && head -n 20 fixed-back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && head -n 20 fixed-back-links.json | /bin/cat
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && head -n 20 fixed-back-links.json | /bin/cat
+❯ cd $HOME/gits/idvorkin.github.io && head -n 20 fixed-back-links.json | /bin/cat
 Reading inline script metadata from `./build_back_links.py`
                                               '_d/2016-09-18-transportation-as-a-service.md')
                                               '_posts/2015-12-12-humans-are-underrated.md')
@@ -3135,7 +3135,7 @@ The fixed-back-links.json file contains debug output, not just the JSON. Let's r
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build | grep -v "^ic|" > fixed-back-links.json && cp fixed-back-links.json back-links.json && echo "Fixed back-links.json with correct last_modified values"
+cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build | grep -v "^ic|" > fixed-back-links.json && cp fixed-back-links.json back-links.json && echo "Fixed back-links.json with correct last_modified values"
 ```
 
 ```
@@ -4174,7 +4174,7 @@ Now let's check if our fixed back-links.json has the correct dates:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' back-links.json | /bin/cat
+cd $HOME/gits/idvorkin.github.io && jq '.url_info["/40yo"].last_modified' back-links.json | /bin/cat
 ```
 
 ```
@@ -4260,7 +4260,7 @@ I'll use the "just" command to run the backlinks script:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && just backlinks | /bin/cat
+cd $HOME/gits/idvorkin.github.io && just backlinks | /bin/cat
 ```
 
 ```
@@ -4280,7 +4280,7 @@ It looks like the recipe is called `back-links` instead of `backlinks`. Let me t
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && just back-links | /bin/cat
+cd $HOME/gits/idvorkin.github.io && just back-links | /bin/cat
 ```
 
 ```

@@ -37,88 +37,88 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/cypress.config.ts` | L12 | `return require("./cypress/plugins/index.js")(on, config);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L7 | `} from "./random-prompter.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L8 | `import { get_link_info } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L10 | `import { append_randomizer_div, random_from_list } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L11 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/vendor/md-toc.js` | L2 | `* md-toc.js v1.0.2` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/vendor/md-toc.js` | L3 | `* https://github.com/yijian166/md-toc.js` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/graph.ts` | L1 | `//  main.js` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/random-prompter.ts` | L2 | `import { SunburstClickEvent } from "plotly.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/random-prompter.ts` | L3 | `import { shuffle, random_from_list, append_randomizer_div } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/blogger_import.ts` | Lundefined | `import { random_from_list, append_randomizer_div } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/blogger_import.ts` | L86 | `const imported_posts_url = "/ig66/ig66-export.json";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/blogger_import.ts` | L131 | `const imported_posts_url = "/eulogy.json";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L2 | `import { get_link_info, random_from_list } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L50 | `// Instanciating InstantSearch.js with Algolia credentials` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L45 | `// <!-- Copied from hackmd-extras.js -->` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L252 | `"https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L254 | `backlinks_url = "/back-links.json";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/about.md` | L102 | `⟪ 149 characters skipped ⟫c6.patreon.com/becomePatronButton.bundle.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L1 | `//  arbor-tween.js` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L28 | `//  Easing Equations in easing.js:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L60 | `/*    etc.js */  var trace=function(msg){if(typeof(window)=="undefined"||!window.console){return}var len=arguments.length;var args=[];for(var i=0;i<len;i++){args.push("arguments["+i+"]")}eval("console.log("+ar⟪ 2079 characters skipped ⟫;if(!c){return}if(c.match(/arbor[^\/\.]*.js|dev.js/)){return c.match(/.*\//)||"/"}});if(a.length>0){return a[0]}else{return null}};` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L61 | `/* colors.js */  var Colors=(function(){var f=/#[0-9a-f]{6}/i;var b=/#(..)(..)(..)/;var c=function(h){var g=h.toString(16);return(g.length==2)?g:"0"+g};var a=function(g){return parseInt(g,16)};var d=function(g` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L62 | `/* easing.js */  var Easing=(function(){var a={linear:function(f,e,h,g){return h*(f/g)+e},quadin:function(f,e,h,g){return h*(f/=g)*f+e},quadout:function(f,e,h,g){return -h*(f/=g)*(f-2)+e},quadinout:function(f,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L63 | `/*  tween.js */  var Tween=function(){var a={};var c=true;var b={init:function(){return b},busy:function(){var e=false;for(var d in a){e=true;break}return e},to:function(g,e,p){var f=new Date().valueOf();var d` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L1 | `//  arbor.js - version 0.91` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L5 | `//  Physics code derived from springy.js, copyright (c) 2010 Dennis Hotson` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L33 | `/*        etc.js */  var trace=function(msg){if(typeof(window)=="undefined"||!window.console){return}var len=arguments.length;var args=[];for(var i=0;i<len;i++){args.push("arguments["+i+"]")}eval("console.log("+ar⟪ 2079 characters skipped ⟫;if(!c){return}if(c.match(/arbor[^\/\.]*.js|dev.js/)){return c.match(/.*\//)||"/"}});if(a.length>0){return a[0]}else{return null}};` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L34 | `/*     kernel.js */  var Kernel=function(b){var k=window.location.protocol=="file:"&&navigator.userAgent.toLowerCase().indexOf("chrome")>-1;var a=(window.Worker!==undefined&&!k);var i=null;var c=null;var f=[];f.la⟪ 295 characters skipped ⟫tion(){trace("Please include arbor-tween.js to enable tweens");c.to=function(){};return}}}}j.tween=c;var m=b.parameters();if(a){trace("arbor.js/web-workers",m);l=setInterval(j.screenUpdate,m.timeout);i=new Worker(arbor_path()+"arbor.js");i.onmessage=j.workerMsg;i.onerror=function(n){trace("physics:",n)};i.postMessage({type:"physics",physics:objmerge(m,{timeout:Math.ceil(m.timeout)})})}else{trace("arbor.js/single-threaded",m);i=Physics(m.dt,m.stiffness,m.repulsion,m.friction,j.system._updateGeometry,m.integrator);j.start()}return j},graphChanged:function(m){if(a){i.postMessage({type:"changes",change` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L35 | `/*      atoms.js */  var Node=function(a){this._id=_nextNodeId++;this.data=a||{};this._mass=(a.mass!==undefined)?a.mass:1;this._fixed=(a.fixed===true)?true:false;this._p=new Point((typeof(a.x)=="number")?a.x:null,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L36 | `/*     system.js */  var ParticleSystem=function(e,r,f,g,u,m,s,a){var k=[];var i=null;var l=0;var v=null;var n=0.04;var j=[20,20,20,20];var o=null;var p=null;if(typeof e=="object"){var t=e;f=t.friction;e=t.repulsi` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L37 | `/* barnes-hut.js */  var BarnesHutTree=function(){var b=[];var a=0;var e=null;var d=0.5;var c={init:function(g,h,f){d=f;a=0;e=c._newBranch();e.origin=g;e.size=h.subtract(g)},insert:function(j){var f=e;var g=[j];wh` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L38 | `/*    physics.js */  var Physics=function(a,m,n,e,h,o){var f=BarnesHutTree();var c={particles:{},springs:{}};var l={particles:{}};var p=[];var k=[];var d=0;var b={sum:0,max:0,mean:0};var g={topleft:new Point(-1,-1` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L42 | `/* hermetic.js */  $={each:function(d,e){if($.isArray(d)){for(var c=0,b=d.length;c<b;c++){e(c,d[c])}}else{for(var a in d){e(a,d[a])}}},map:function(a,c){var b=[];$.each(a,function(f,e){var d=c(e);if(d!==undefine` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor.js` | L43 | `/*     worker.js */  var PhysicsWorker=function(){var b=20;var a=null;var d=null;var c=null;var g=[];var f=new Date().valueOf();var e={init:function(h){e.timeout(h.timeout);a=Physics(h.dt,h.stiffness,h.repulsion,h` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/graphics.js` | L1 | `//  arbor-graphics.js` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/graphics.js` | L30 | `/*        etc.js */  var trace=function(msg){if(typeof(window)=="undefined"||!window.console){return}var len=arguments.length;var args=[];for(var i=0;i<len;i++){args.push("arguments["+i+"]")}eval("console.log("+ar⟪ 2079 characters skipped ⟫;if(!c){return}if(c.match(/arbor[^\/\.]*.js|dev.js/)){return c.match(/.*\//)||"/"}});if(a.length>0){return a[0]}else{return null}};` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/graphics.js` | L31 | `/*     colors.js */  var Colors=(function(){var f=/#[0-9a-f]{6}/i;var b=/#(..)(..)(..)/;var c=function(h){var g=h.toString(16);return(g.length==2)?g:"0"+g};var a=function(g){return parseInt(g,16)};var d=function(g` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/graphics.js` | L32 | `/* primitives.js */  var Primitives=function(c,f,g){var b=function(i,m,j,l,k){this.x=i;this.y=m;this.w=j;this.h=l;this.style=(k!==undefined)?k:{}};b.prototype={draw:function(h){this._draw(h)},_draw:function(i,n,j,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/graphics.js` | L33 | `/*   graphics.js */  var Graphics=function(c){var h=$(c);var q=$(h).get(0).getContext("2d");var i=null;var l="rgb";var e="origin";var m={};var p={background:null,fill:null,stroke:null,width:0};var b={};var g={font` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/live-photo-image.js` | L27 | `//# sourceMappingURL=live-photo-image.js.map` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/search.js` | L2 | `import { get_link_info, random_from_list } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/search.js` | L45 | `// Instanciating InstantSearch.js with Algolia credentials` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/search.js` | L227 | `//# sourceMappingURL=search.js.map` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/page-loader.js` | L2 | `import { add_sunburst, add_random_prompts, TreeNode, } from "./random-prompter.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/page-loader.js` | L3 | `import { get_link_info } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/page-loader.js` | L4 | `import { append_randomizer_div, random_from_list } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/page-loader.js` | L5 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/page-loader.js` | L274 | `//# sourceMappingURL=page-loader.js.map` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/live-photo-element.js.map` | Lundefined | `{"version":3,"file":"live-photo-element.js","sourceRoot":"","sources":["../../src/live-photo-element.js"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAEb,IAAI,yBAAyB,GAAG,MAAM,CAAC,MAAM,CAAC,WAAW,CAAC,SAAS,CAAC,CAAC;AAErE,yBAAyB,CAAC,KAAK,GAAG,UAAS,GAAG;IAC5C,IAAI,CAAC,KAAK,CAAC,KAAK,CAAC,OAAO,GAAG,QAAQ,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/live-photo-element.js` | L42 | `//# sourceMappingURL=live-photo-element.js.map` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/blogger_import.js` | Lundefined | `import { random_from_list, append_randomizer_div } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/blogger_import.js` | L68 | `const imported_posts_url = "/ig66/ig66-export.json";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/blogger_import.js` | L96 | `const imported_posts_url = "/eulogy.json";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/blogger_import.js` | L100 | `//# sourceMappingURL=blogger_import.js.map` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/md-toc.js.map` | Lundefined | `{"version":3,"file":"md-toc.js","sourceRoot":"","sources":["../../../src/vendor/md-toc.js"],"names":[],"mappings":"AAAA,gCAAgC;AAChC;;;GAGG;AAEH,CAAC,UAAS,MAAM;IACd,SAAS,GAAG,CAAC,EAAE,EAAE,OAAO;QACtB,IAAI,CAAC,EAAE,GAAG,QAAQ,CAAC,cAAc,CAAC,EAAE,CAAC,CAAC;QACtC,IAAI,CAAC,IAAI,CAAC,EAAE` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/md-toc.js` | L2 | `* md-toc.js v1.0.2` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/md-toc.js` | L3 | `* https://github.com/yijian166/md-toc.js` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/md-toc.js` | L143 | `//# sourceMappingURL=md-toc.js.map` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/blogger_import.js.map` | Lundefined | `{"version":3,"file":"blogger_import.js","sourceRoot":"","sources":["../../src/blogger_import.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,qBAAqB,EAAE,MAAM,WAAW,CAAC;AACpE,SAAS,iBAAiB,CAAC,IAAI;IAC7B,MAAM,IAAI,GAAG,CAAC,CAAC,Q` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js.map` | Lundefined | `{"version":3,"file":"asciinema-player.js","sourceRoot":"","sources":["../../../src/vendor/asciinema-player.js"],"names":[],"mappings":"AAAA;;;;;GAKG;AAEH,2GAA2G;AAE3G,CAAC;IACC,IAAI,OAAO,MAAM,CAAC,WAAW,KAAK,UAAU;QAAE,OAAO,KAAK,CAAC;IAE3D,SAAS,WAAW,CAAG,KAAK,EAAE,MAAM;QAClC,MAAM,GAAG,MAAM,IAAI,EAAE,OAAO,EA` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/page-loader.js.map` | Lundefined | `{"version":3,"file":"page-loader.js","sourceRoot":"","sources":["../../src/page-loader.ts"],"names":[],"mappings":"AAAA,oDAAoD;AACpD,8CAA8C;AAC9C,OAAO,EACL,YAAY,EACZ,kBAAkB,EAClB,QAAQ,GAET,MAAM,sBAAsB,CAAC;AAC9B,OAAO,EAAE,aAAa,EAAE,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L39 | `⟪ 974 characters skipped ⟫is.transientObservedNodes = []; } if (!e.JsMutationObserver) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L97 | `} l(); } }, e.JsMutationObserver = a, e.MutationObserver || (e.MutationObserver = a, a._isPolyfilled = !0);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L3047 | `this.player = asciinema.player.js.CreatePlayer(this, this.getAttribute('src'), opts);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L3056 | `asciinema.player.js.UnmountPlayer(this);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L13191 | `da("asciinema.player.js.CreatePlayer", $A);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L13207 | `da("asciinema.player.js.UnmountPlayer", function (a) { a = "string" === typeof a ? document.getElementById(a) : a; gg.l(lq, le, a); return kq().unmountComponentAtNode(a); });` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L13210 | `//# sourceMappingURL=asciinema-player.js.map` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L13211 | `//# sourceMappingURL=asciinema-player.js.map` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/live-photo-image.js.map` | Lundefined | `{"version":3,"file":"live-photo-image.js","sourceRoot":"","sources":["../../src/live-photo-image.js"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAEb,IAAI,uBAAuB,GAAG,MAAM,CAAC,MAAM,CAAC,gBAAgB,CAAC,SAAS,CAAC,CAAC;AAExE,uBAAuB,CAAC,KAAK,GAAG,UAAS,GAAG;IAC1C,IAAI,IAAI,CAAC,GAAG,IAAI,CAAC,IAAI,CAAC,WAA` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/random-prompter.js.map` | Lundefined | `{"version":3,"file":"random-prompter.js","sourceRoot":"","sources":["../../src/random-prompter.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,OAAO,EAAE,gBAAgB,EAAE,qBAAqB,EAAE,MAAM,WAAW,CAAC;AAK7E,MAAM,QAAQ;IAIZ,YAAY,EACV,IAAI,EACJ,KAAK,GAA` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/recently-updated.js` | Lundefined | `// Function to get recently updated files from back-links.json` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/recently-updated.js` | L3 | `// Fetch the back-links.json file` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/recently-updated.js` | L4 | `const response = await fetch('/back-links.json');` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/recently-updated.js` | L5 | `const data = await response.json();` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/main.js` | L40 | `// <!-- Copied from hackmd-extras.js -->` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/main.js` | L204 | `"https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/main.js` | L207 | `backlinks_url = "/back-links.json";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/main.js` | L282 | `//# sourceMappingURL=main.js.map` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/main.js.map` | Lundefined | `{"version":3,"file":"main.js","sourceRoot":"","sources":["../../src/main.ts"],"names":[],"mappings":"AAAA,IAAI,SAAS,GAAG,IAAI,CAAC;AAErB,SAAS,iBAAiB;IACxB,MAAM,GAAG,GAAG,CAAC,CAAC,uBAAuB,CAAC,CAAC;IACvC,MAAM,MAAM,GAAG,CAAC,CA` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/face-api.js` | L22 | `⟪ 67491 characters skipped ⟫GS_ENABLED",!1),console.warn("TensorFlow.js deprecation warnings have been disabled.");}function Xe(t){i().getBool("DEPRECATION_WARNINGS_ENABLED")&&console.warn(t+" You can disable deprecation warnings with tf.disableDeprecationWarnings()."⟪ 369708 characters skipped ⟫�. Looks like you are running TensorFlow.js in Node.js. To speed things up dramatically, install our node backend, which binds to TensorFlow C++, by running npm i @tensorflow/tfjs-node, or npm i @tensorflow/tfjs-node-gpu if you have CUDA. Then call re⟪ 70837 characters skipped ⟫E,new Wf);}catch(t){}var Uf="model",Vf=".json",zf=".weights.bin";function Gf(t){return new Promise((function(t){return setTimeout(t)})).then(t)}var Hf=function(){function t(e){if(!i().getBool("IS_BROWSER"))throw new Error("browserDownloads(⟪ 1013 characters skipped ⟫type:"application/json"})),(i=null==this.jsonAnchor?document.createElement("a"):this.jsonAnchor).download=this.modelTopologyFileName,i.href=a,[4,Gf((function(){return i.dispatchEvent(new MouseEvent("click"))}))];case 2:return r.sent(),null=` |
+| `file://$HOME/gits/idvorkin.github.io/cypress.config.ts` | L12 | `return require("./cypress/plugins/index.js")(on, config);` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L7 | `} from "./random-prompter.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L8 | `import { get_link_info } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L10 | `import { append_randomizer_div, random_from_list } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L11 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/vendor/md-toc.js` | L2 | `* md-toc.js v1.0.2` |
+| `file://$HOME/gits/idvorkin.github.io/src/vendor/md-toc.js` | L3 | `* https://github.com/yijian166/md-toc.js` |
+| `file://$HOME/gits/idvorkin.github.io/src/graph.ts` | L1 | `//  main.js` |
+| `file://$HOME/gits/idvorkin.github.io/src/random-prompter.ts` | L2 | `import { SunburstClickEvent } from "plotly.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/random-prompter.ts` | L3 | `import { shuffle, random_from_list, append_randomizer_div } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/blogger_import.ts` | Lundefined | `import { random_from_list, append_randomizer_div } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/blogger_import.ts` | L86 | `const imported_posts_url = "/ig66/ig66-export.json";` |
+| `file://$HOME/gits/idvorkin.github.io/src/blogger_import.ts` | L131 | `const imported_posts_url = "/eulogy.json";` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L2 | `import { get_link_info, random_from_list } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L50 | `// Instanciating InstantSearch.js with Algolia credentials` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L45 | `// <!-- Copied from hackmd-extras.js -->` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L252 | `"https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L254 | `backlinks_url = "/back-links.json";` |
+| `file://$HOME/gits/idvorkin.github.io/about.md` | L102 | `⟪ 149 characters skipped ⟫c6.patreon.com/becomePatronButton.bundle.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L1 | `//  arbor-tween.js` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L28 | `//  Easing Equations in easing.js:` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L60 | `/*    etc.js */  var trace=function(msg){if(typeof(window)=="undefined"||!window.console){return}var len=arguments.length;var args=[];for(var i=0;i<len;i++){args.push("arguments["+i+"]")}eval("console.log("+ar⟪ 2079 characters skipped ⟫;if(!c){return}if(c.match(/arbor[^\/\.]*.js|dev.js/)){return c.match(/.*\//)||"/"}});if(a.length>0){return a[0]}else{return null}};` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L61 | `/* colors.js */  var Colors=(function(){var f=/#[0-9a-f]{6}/i;var b=/#(..)(..)(..)/;var c=function(h){var g=h.toString(16);return(g.length==2)?g:"0"+g};var a=function(g){return parseInt(g,16)};var d=function(g` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L62 | `/* easing.js */  var Easing=(function(){var a={linear:function(f,e,h,g){return h*(f/g)+e},quadin:function(f,e,h,g){return h*(f/=g)*f+e},quadout:function(f,e,h,g){return -h*(f/=g)*(f-2)+e},quadinout:function(f,` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L63 | `/*  tween.js */  var Tween=function(){var a={};var c=true;var b={init:function(){return b},busy:function(){var e=false;for(var d in a){e=true;break}return e},to:function(g,e,p){var f=new Date().valueOf();var d` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L1 | `//  arbor.js - version 0.91` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L5 | `//  Physics code derived from springy.js, copyright (c) 2010 Dennis Hotson` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L33 | `/*        etc.js */  var trace=function(msg){if(typeof(window)=="undefined"||!window.console){return}var len=arguments.length;var args=[];for(var i=0;i<len;i++){args.push("arguments["+i+"]")}eval("console.log("+ar⟪ 2079 characters skipped ⟫;if(!c){return}if(c.match(/arbor[^\/\.]*.js|dev.js/)){return c.match(/.*\//)||"/"}});if(a.length>0){return a[0]}else{return null}};` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L34 | `/*     kernel.js */  var Kernel=function(b){var k=window.location.protocol=="file:"&&navigator.userAgent.toLowerCase().indexOf("chrome")>-1;var a=(window.Worker!==undefined&&!k);var i=null;var c=null;var f=[];f.la⟪ 295 characters skipped ⟫tion(){trace("Please include arbor-tween.js to enable tweens");c.to=function(){};return}}}}j.tween=c;var m=b.parameters();if(a){trace("arbor.js/web-workers",m);l=setInterval(j.screenUpdate,m.timeout);i=new Worker(arbor_path()+"arbor.js");i.onmessage=j.workerMsg;i.onerror=function(n){trace("physics:",n)};i.postMessage({type:"physics",physics:objmerge(m,{timeout:Math.ceil(m.timeout)})})}else{trace("arbor.js/single-threaded",m);i=Physics(m.dt,m.stiffness,m.repulsion,m.friction,j.system._updateGeometry,m.integrator);j.start()}return j},graphChanged:function(m){if(a){i.postMessage({type:"changes",change` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L35 | `/*      atoms.js */  var Node=function(a){this._id=_nextNodeId++;this.data=a||{};this._mass=(a.mass!==undefined)?a.mass:1;this._fixed=(a.fixed===true)?true:false;this._p=new Point((typeof(a.x)=="number")?a.x:null,` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L36 | `/*     system.js */  var ParticleSystem=function(e,r,f,g,u,m,s,a){var k=[];var i=null;var l=0;var v=null;var n=0.04;var j=[20,20,20,20];var o=null;var p=null;if(typeof e=="object"){var t=e;f=t.friction;e=t.repulsi` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L37 | `/* barnes-hut.js */  var BarnesHutTree=function(){var b=[];var a=0;var e=null;var d=0.5;var c={init:function(g,h,f){d=f;a=0;e=c._newBranch();e.origin=g;e.size=h.subtract(g)},insert:function(j){var f=e;var g=[j];wh` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L38 | `/*    physics.js */  var Physics=function(a,m,n,e,h,o){var f=BarnesHutTree();var c={particles:{},springs:{}};var l={particles:{}};var p=[];var k=[];var d=0;var b={sum:0,max:0,mean:0};var g={topleft:new Point(-1,-1` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L42 | `/* hermetic.js */  $={each:function(d,e){if($.isArray(d)){for(var c=0,b=d.length;c<b;c++){e(c,d[c])}}else{for(var a in d){e(a,d[a])}}},map:function(a,c){var b=[];$.each(a,function(f,e){var d=c(e);if(d!==undefine` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor.js` | L43 | `/*     worker.js */  var PhysicsWorker=function(){var b=20;var a=null;var d=null;var c=null;var g=[];var f=new Date().valueOf();var e={init:function(h){e.timeout(h.timeout);a=Physics(h.dt,h.stiffness,h.repulsion,h` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/graphics.js` | L1 | `//  arbor-graphics.js` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/graphics.js` | L30 | `/*        etc.js */  var trace=function(msg){if(typeof(window)=="undefined"||!window.console){return}var len=arguments.length;var args=[];for(var i=0;i<len;i++){args.push("arguments["+i+"]")}eval("console.log("+ar⟪ 2079 characters skipped ⟫;if(!c){return}if(c.match(/arbor[^\/\.]*.js|dev.js/)){return c.match(/.*\//)||"/"}});if(a.length>0){return a[0]}else{return null}};` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/graphics.js` | L31 | `/*     colors.js */  var Colors=(function(){var f=/#[0-9a-f]{6}/i;var b=/#(..)(..)(..)/;var c=function(h){var g=h.toString(16);return(g.length==2)?g:"0"+g};var a=function(g){return parseInt(g,16)};var d=function(g` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/graphics.js` | L32 | `/* primitives.js */  var Primitives=function(c,f,g){var b=function(i,m,j,l,k){this.x=i;this.y=m;this.w=j;this.h=l;this.style=(k!==undefined)?k:{}};b.prototype={draw:function(h){this._draw(h)},_draw:function(i,n,j,` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/graphics.js` | L33 | `/*   graphics.js */  var Graphics=function(c){var h=$(c);var q=$(h).get(0).getContext("2d");var i=null;var l="rgb";var e="origin";var m={};var p={background:null,fill:null,stroke:null,width:0};var b={};var g={font` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/live-photo-image.js` | L27 | `//# sourceMappingURL=live-photo-image.js.map` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/search.js` | L2 | `import { get_link_info, random_from_list } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/search.js` | L45 | `// Instanciating InstantSearch.js with Algolia credentials` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/search.js` | L227 | `//# sourceMappingURL=search.js.map` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/page-loader.js` | L2 | `import { add_sunburst, add_random_prompts, TreeNode, } from "./random-prompter.js";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/page-loader.js` | L3 | `import { get_link_info } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/page-loader.js` | L4 | `import { append_randomizer_div, random_from_list } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/page-loader.js` | L5 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/page-loader.js` | L274 | `//# sourceMappingURL=page-loader.js.map` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/live-photo-element.js.map` | Lundefined | `{"version":3,"file":"live-photo-element.js","sourceRoot":"","sources":["../../src/live-photo-element.js"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAEb,IAAI,yBAAyB,GAAG,MAAM,CAAC,MAAM,CAAC,WAAW,CAAC,SAAS,CAAC,CAAC;AAErE,yBAAyB,CAAC,KAAK,GAAG,UAAS,GAAG;IAC5C,IAAI,CAAC,KAAK,CAAC,KAAK,CAAC,OAAO,GAAG,QAAQ,` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/live-photo-element.js` | L42 | `//# sourceMappingURL=live-photo-element.js.map` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/blogger_import.js` | Lundefined | `import { random_from_list, append_randomizer_div } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/blogger_import.js` | L68 | `const imported_posts_url = "/ig66/ig66-export.json";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/blogger_import.js` | L96 | `const imported_posts_url = "/eulogy.json";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/blogger_import.js` | L100 | `//# sourceMappingURL=blogger_import.js.map` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/md-toc.js.map` | Lundefined | `{"version":3,"file":"md-toc.js","sourceRoot":"","sources":["../../../src/vendor/md-toc.js"],"names":[],"mappings":"AAAA,gCAAgC;AAChC;;;GAGG;AAEH,CAAC,UAAS,MAAM;IACd,SAAS,GAAG,CAAC,EAAE,EAAE,OAAO;QACtB,IAAI,CAAC,EAAE,GAAG,QAAQ,CAAC,cAAc,CAAC,EAAE,CAAC,CAAC;QACtC,IAAI,CAAC,IAAI,CAAC,EAAE` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/md-toc.js` | L2 | `* md-toc.js v1.0.2` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/md-toc.js` | L3 | `* https://github.com/yijian166/md-toc.js` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/md-toc.js` | L143 | `//# sourceMappingURL=md-toc.js.map` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/blogger_import.js.map` | Lundefined | `{"version":3,"file":"blogger_import.js","sourceRoot":"","sources":["../../src/blogger_import.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,qBAAqB,EAAE,MAAM,WAAW,CAAC;AACpE,SAAS,iBAAiB,CAAC,IAAI;IAC7B,MAAM,IAAI,GAAG,CAAC,CAAC,Q` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js.map` | Lundefined | `{"version":3,"file":"asciinema-player.js","sourceRoot":"","sources":["../../../src/vendor/asciinema-player.js"],"names":[],"mappings":"AAAA;;;;;GAKG;AAEH,2GAA2G;AAE3G,CAAC;IACC,IAAI,OAAO,MAAM,CAAC,WAAW,KAAK,UAAU;QAAE,OAAO,KAAK,CAAC;IAE3D,SAAS,WAAW,CAAG,KAAK,EAAE,MAAM;QAClC,MAAM,GAAG,MAAM,IAAI,EAAE,OAAO,EA` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/page-loader.js.map` | Lundefined | `{"version":3,"file":"page-loader.js","sourceRoot":"","sources":["../../src/page-loader.ts"],"names":[],"mappings":"AAAA,oDAAoD;AACpD,8CAA8C;AAC9C,OAAO,EACL,YAAY,EACZ,kBAAkB,EAClB,QAAQ,GAET,MAAM,sBAAsB,CAAC;AAC9B,OAAO,EAAE,aAAa,EAAE,` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L39 | `⟪ 974 characters skipped ⟫is.transientObservedNodes = []; } if (!e.JsMutationObserver) {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L97 | `} l(); } }, e.JsMutationObserver = a, e.MutationObserver || (e.MutationObserver = a, a._isPolyfilled = !0);` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L3047 | `this.player = asciinema.player.js.CreatePlayer(this, this.getAttribute('src'), opts);` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L3056 | `asciinema.player.js.UnmountPlayer(this);` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L13191 | `da("asciinema.player.js.CreatePlayer", $A);` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L13207 | `da("asciinema.player.js.UnmountPlayer", function (a) { a = "string" === typeof a ? document.getElementById(a) : a; gg.l(lq, le, a); return kq().unmountComponentAtNode(a); });` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L13210 | `//# sourceMappingURL=asciinema-player.js.map` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L13211 | `//# sourceMappingURL=asciinema-player.js.map` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/live-photo-image.js.map` | Lundefined | `{"version":3,"file":"live-photo-image.js","sourceRoot":"","sources":["../../src/live-photo-image.js"],"names":[],"mappings":"AAAA,YAAY,CAAC;AAEb,IAAI,uBAAuB,GAAG,MAAM,CAAC,MAAM,CAAC,gBAAgB,CAAC,SAAS,CAAC,CAAC;AAExE,uBAAuB,CAAC,KAAK,GAAG,UAAS,GAAG;IAC1C,IAAI,IAAI,CAAC,GAAG,IAAI,CAAC,IAAI,CAAC,WAA` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/random-prompter.js.map` | Lundefined | `{"version":3,"file":"random-prompter.js","sourceRoot":"","sources":["../../src/random-prompter.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,OAAO,EAAE,gBAAgB,EAAE,qBAAqB,EAAE,MAAM,WAAW,CAAC;AAK7E,MAAM,QAAQ;IAIZ,YAAY,EACV,IAAI,EACJ,KAAK,GAA` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/recently-updated.js` | Lundefined | `// Function to get recently updated files from back-links.json` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/recently-updated.js` | L3 | `// Fetch the back-links.json file` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/recently-updated.js` | L4 | `const response = await fetch('/back-links.json');` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/recently-updated.js` | L5 | `const data = await response.json();` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/main.js` | L40 | `// <!-- Copied from hackmd-extras.js -->` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/main.js` | L204 | `"https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/main.js` | L207 | `backlinks_url = "/back-links.json";` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/main.js` | L282 | `//# sourceMappingURL=main.js.map` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/main.js.map` | Lundefined | `{"version":3,"file":"main.js","sourceRoot":"","sources":["../../src/main.ts"],"names":[],"mappings":"AAAA,IAAI,SAAS,GAAG,IAAI,CAAC;AAErB,SAAS,iBAAiB;IACxB,MAAM,GAAG,GAAG,CAAC,CAAC,uBAAuB,CAAC,CAAC;IACvC,MAAM,MAAM,GAAG,CAAC,CA` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/face-api.js` | L22 | `⟪ 67491 characters skipped ⟫GS_ENABLED",!1),console.warn("TensorFlow.js deprecation warnings have been disabled.");}function Xe(t){i().getBool("DEPRECATION_WARNINGS_ENABLED")&&console.warn(t+" You can disable deprecation warnings with tf.disableDeprecationWarnings()."⟪ 369708 characters skipped ⟫�. Looks like you are running TensorFlow.js in Node.js. To speed things up dramatically, install our node backend, which binds to TensorFlow C++, by running npm i @tensorflow/tfjs-node, or npm i @tensorflow/tfjs-node-gpu if you have CUDA. Then call re⟪ 70837 characters skipped ⟫E,new Wf);}catch(t){}var Uf="model",Vf=".json",zf=".weights.bin";function Gf(t){return new Promise((function(t){return setTimeout(t)})).then(t)}var Hf=function(){function t(e){if(!i().getBool("IS_BROWSER"))throw new Error("browserDownloads(⟪ 1013 characters skipped ⟫type:"application/json"})),(i=null==this.jsonAnchor?document.createElement("a"):this.jsonAnchor).download=this.modelTopologyFileName,i.href=a,[4,Gf((function(){return i.dispatchEvent(new MouseEvent("click"))}))];case 2:return r.sent(),null=` |
 | `untitled:Untitled-2` | L133 | `| `back-links.json` | L3203-3222 |` |
 | `untitled:Untitled-2` | L134 | `| `back-links.json` | L3190-3202 |` |
 | `untitled:Untitled-2` | L140 | `| `back-links.json` | L1811-1832 |` |
@@ -133,8 +133,8 @@ _****_
 | `untitled:Untitled-2` | L953 | `| `assets/lightbox/js/lightbox-plus-jquery.js` | L8496-8564 |` |
 | `untitled:Untitled-2` | L957 | `| `assets/lightbox/js/lightbox-plus-jquery.js` | L6830-6885 |` |
 | `untitled:Untitled-2` | L965 | `| `assets/lightbox/js/lightbox-plus-jquery.js` | L7326-7377 |` |
-| `untitled:Untitled-2` | L1072 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/_ig66/ig66-export.json` | L3286 | `"excerpt": "Sunday mornings we have a baby sitter so Tori and I normally walk over to the local coffee shop where Tori does school work, and I do work work, or blog work. The last fe` |
-| `untitled:Untitled-2` | L1073 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/_ig66/ig66-export.json` | L6747 | `⟪ 164 characters skipped ⟫d a turn and drove past my old favorite coffee shop by accident. It was my old favorite because it had closed during the pandemic. To my excitement it was o` |
+| `untitled:Untitled-2` | L1072 | `| `file://$HOME/gits/idvorkin.github.io/_ig66/ig66-export.json` | L3286 | `"excerpt": "Sunday mornings we have a baby sitter so Tori and I normally walk over to the local coffee shop where Tori does school work, and I do work work, or blog work. The last fe` |
+| `untitled:Untitled-2` | L1073 | `| `file://$HOME/gits/idvorkin.github.io/_ig66/ig66-export.json` | L6747 | `⟪ 164 characters skipped ⟫d a turn and drove past my old favorite coffee shop by accident. It was my old favorite because it had closed during the pandemic. To my excitement it was o` |
 | `untitled:Untitled-2` | L1226 | `| `back-links.json` | L3288-3316 |` |
 | `untitled:Untitled-2` | L1227 | `| `back-links.json` | L3837-3857 |` |
 | `untitled:Untitled-2` | L1230 | `| `back-links.json` | L103-134 |` |
@@ -1373,25 +1373,25 @@ Error: Bundles must have unique name. Conflicting names:
 
   AssertionError [ERR_ASSERTION]: Bundles must have unique name. Conflicting nam
 es: 
-      at BundlerRunner.validateBundles (/Users/idvorkin/gits/idvorkin.github.io/
+      at BundlerRunner.validateBundles ($HOME/gits/idvorkin.github.io/
 node_modules/@parcel/core/lib/requests/BundleGraphRequest.js:374:23)
-      at BundlerRunner.bundle (/Users/idvorkin/gits/idvorkin.github.io/node_modu
+      at BundlerRunner.bundle ($HOME/gits/idvorkin.github.io/node_modu
 les/@parcel/core/lib/requests/BundleGraphRequest.js:352:12)
       at process.processTicksAndRejections (node:internal/process/task_queues:10
 5:5)
-      at async Object.run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/
+      at async Object.run ($HOME/gits/idvorkin.github.io/node_modules/
 @parcel/core/lib/requests/BundleGraphRequest.js:130:17)
-      at async RequestTracker.runRequest (/Users/idvorkin/gits/idvorkin.github.i
+      at async RequestTracker.runRequest ($HOME/gits/idvorkin.github.i
 o/node_modules/@parcel/core/lib/RequestTracker.js:758:20)
-      at async Object.run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/
+      at async Object.run ($HOME/gits/idvorkin.github.io/node_modules/
 @parcel/core/lib/requests/ParcelBuildRequest.js:52:7)
-      at async RequestTracker.runRequest (/Users/idvorkin/gits/idvorkin.github.i
+      at async RequestTracker.runRequest ($HOME/gits/idvorkin.github.i
 o/node_modules/@parcel/core/lib/RequestTracker.js:758:20)
-      at async Parcel._build (/Users/idvorkin/gits/idvorkin.github.io/node_modul
+      at async Parcel._build ($HOME/gits/idvorkin.github.io/node_modul
 es/@parcel/core/lib/Parcel.js:320:11)
-      at async Parcel.run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/
+      at async Parcel.run ($HOME/gits/idvorkin.github.io/node_modules/
 @parcel/core/lib/Parcel.js:210:18)
-      at async run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/parcel/
+      at async run ($HOME/gits/idvorkin.github.io/node_modules/parcel/
 lib/cli.js:356:7)
 
 error: Recipe `js-build` failed on line 18 with exit code 1
@@ -1733,25 +1733,25 @@ Error: Bundles must have unique name. Conflicting names:
 
   AssertionError [ERR_ASSERTION]: Bundles must have unique name. Conflicting nam
 es: 
-      at BundlerRunner.validateBundles (/Users/idvorkin/gits/idvorkin.github.io/
+      at BundlerRunner.validateBundles ($HOME/gits/idvorkin.github.io/
 node_modules/@parcel/core/lib/requests/BundleGraphRequest.js:374:23)
-      at BundlerRunner.bundle (/Users/idvorkin/gits/idvorkin.github.io/node_modu
+      at BundlerRunner.bundle ($HOME/gits/idvorkin.github.io/node_modu
 les/@parcel/core/lib/requests/BundleGraphRequest.js:352:12)
       at process.processTicksAndRejections (node:internal/process/task_queues:10
 5:5)
-      at async Object.run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/
+      at async Object.run ($HOME/gits/idvorkin.github.io/node_modules/
 @parcel/core/lib/requests/BundleGraphRequest.js:130:17)
-      at async RequestTracker.runRequest (/Users/idvorkin/gits/idvorkin.github.i
+      at async RequestTracker.runRequest ($HOME/gits/idvorkin.github.i
 o/node_modules/@parcel/core/lib/RequestTracker.js:758:20)
-      at async Object.run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/
+      at async Object.run ($HOME/gits/idvorkin.github.io/node_modules/
 @parcel/core/lib/requests/ParcelBuildRequest.js:52:7)
-      at async RequestTracker.runRequest (/Users/idvorkin/gits/idvorkin.github.i
+      at async RequestTracker.runRequest ($HOME/gits/idvorkin.github.i
 o/node_modules/@parcel/core/lib/RequestTracker.js:758:20)
-      at async Parcel._build (/Users/idvorkin/gits/idvorkin.github.io/node_modul
+      at async Parcel._build ($HOME/gits/idvorkin.github.io/node_modul
 es/@parcel/core/lib/Parcel.js:320:11)
-      at async Parcel.run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/
+      at async Parcel.run ($HOME/gits/idvorkin.github.io/node_modules/
 @parcel/core/lib/Parcel.js:210:18)
-      at async run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/parcel/
+      at async run ($HOME/gits/idvorkin.github.io/node_modules/parcel/
 lib/cli.js:356:7)
 
 error: Recipe `js-build` failed on line 19 with exit code 1
@@ -2598,16 +2598,16 @@ Support for loading ES Module in require() is an experimental feature and might 
 Error: Bundles must have unique name. Conflicting names: 
 
   AssertionError [ERR_ASSERTION]: Bundles must have unique name. Conflicting names: 
-      at BundlerRunner.validateBundles (/Users/idvorkin/gits/idvorkin.github.io/node_modules/@parcel/core/lib/requests/BundleGraphRequest.js:374:23)
-      at BundlerRunner.bundle (/Users/idvorkin/gits/idvorkin.github.io/node_modules/@parcel/core/lib/requests/BundleGraphRequest.js:352:12)
+      at BundlerRunner.validateBundles ($HOME/gits/idvorkin.github.io/node_modules/@parcel/core/lib/requests/BundleGraphRequest.js:374:23)
+      at BundlerRunner.bundle ($HOME/gits/idvorkin.github.io/node_modules/@parcel/core/lib/requests/BundleGraphRequest.js:352:12)
       at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-      at async Object.run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/@parcel/core/lib/requests/BundleGraphRequest.js:130:17)
-      at async RequestTracker.runRequest (/Users/idvorkin/gits/idvorkin.github.io/node_modules/@parcel/core/lib/RequestTracker.js:758:20)
-      at async Object.run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/@parcel/core/lib/requests/ParcelBuildRequest.js:52:7)
-      at async RequestTracker.runRequest (/Users/idvorkin/gits/idvorkin.github.io/node_modules/@parcel/core/lib/RequestTracker.js:758:20)
-      at async Parcel._build (/Users/idvorkin/gits/idvorkin.github.io/node_modules/@parcel/core/lib/Parcel.js:320:11)
-      at async Parcel.run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/@parcel/core/lib/Parcel.js:210:18)
-      at async run (/Users/idvorkin/gits/idvorkin.github.io/node_modules/parcel/lib/cli.js:356:7)
+      at async Object.run ($HOME/gits/idvorkin.github.io/node_modules/@parcel/core/lib/requests/BundleGraphRequest.js:130:17)
+      at async RequestTracker.runRequest ($HOME/gits/idvorkin.github.io/node_modules/@parcel/core/lib/RequestTracker.js:758:20)
+      at async Object.run ($HOME/gits/idvorkin.github.io/node_modules/@parcel/core/lib/requests/ParcelBuildRequest.js:52:7)
+      at async RequestTracker.runRequest ($HOME/gits/idvorkin.github.io/node_modules/@parcel/core/lib/RequestTracker.js:758:20)
+      at async Parcel._build ($HOME/gits/idvorkin.github.io/node_modules/@parcel/core/lib/Parcel.js:320:11)
+      at async Parcel.run ($HOME/gits/idvorkin.github.io/node_modules/@parcel/core/lib/Parcel.js:210:18)
+      at async run ($HOME/gits/idvorkin.github.io/node_modules/parcel/lib/cli.js:356:7)
 
 error: Recipe `js-build` failed on line 19 with exit code 1
 
@@ -4129,21 +4129,21 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L18 | `import { load_globals, MakeBackLinkHTML } from './main';` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/random-prompter.ts` | L3 | `import { shuffle, random_from_list, append_randomizer_div } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L5 | `// import instantsearch from "algoliasearch";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/blogger_import.ts` | Lundefined | `import { random_from_list, append_randomizer_div } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L8 | `import { get_link_info } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L10 | `import { append_randomizer_div, random_from_list } from "./main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/__tests__/main.test.ts` | Lundefined | `import { random_from_list, shuffle } from '../main';` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L2502 | `⟪ 955 characters skipped ⟫imageanchor="1" style="display: inline !important; padding: 1em 0px;"&gt;&lt;img border="0" data-original-height="724" data-original-width="1086" src="https://1.bp.blogspot.com/-iiLVlzxWDNo/XzAYJtgQEAI/AAAAAAAESRs/LCQmJrdthwMRSKm5_ydPa0NSIL` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L2700 | `<content type="html">Amelia, Zach I am so proud of you. &amp;nbsp;There is nothing in life that is more importance then resilience and&amp;nbsp;perserverance&amp;nbsp; (maybe discipline) and you two have it in spades. &lt;br /&gt;&lt;br /&gt;Zach - You’re a pleasure. You are an entrepreneur and hacker.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L4574 | `⟪ 1503 characters skipped ⟫ssage of Mr. Plumbean - do what it most important to you, even if there's lots of peer pressure. I'm so glad that Tori and I have instilled this into Zach, it's such an important lesson. &lt;br /&gt;&lt;h3 id="toc_1"&gt;In other news&lt;/h3` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/cypress/e2e/unit/makeHTML.test.ts` | L1 | `// import { UT as UTMain } from "../../../_site/assets/js/main.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/cypress/e2e/unit/makeHTML.test.ts` | L2 | `import { IURLInfo, MakeBackLinkHTML } from "../../../src/main";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_ig66/ig66-export.json` | L196 | `"excerpt": "Amelia, Zach I am so proud of you. There is nothing in life that is more importance then resilience and perserverance (maybe discipline) and you two have it in spades.\n\nZach - You’re a pleasure. You are an entrepreneur and hacker. You will grind through. You have a web s` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L57 | `import { CreateAutoComplete } from "/assets/js/search.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L18 | `import { load_globals, MakeBackLinkHTML } from './main';` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L18 | `import { load_globals, MakeBackLinkHTML } from './main';` |
+| `file://$HOME/gits/idvorkin.github.io/src/random-prompter.ts` | L3 | `import { shuffle, random_from_list, append_randomizer_div } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L5 | `// import instantsearch from "algoliasearch";` |
+| `file://$HOME/gits/idvorkin.github.io/src/blogger_import.ts` | Lundefined | `import { random_from_list, append_randomizer_div } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L8 | `import { get_link_info } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L10 | `import { append_randomizer_div, random_from_list } from "./main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/__tests__/main.test.ts` | Lundefined | `import { random_from_list, shuffle } from '../main';` |
+| `file://$HOME/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L2502 | `⟪ 955 characters skipped ⟫imageanchor="1" style="display: inline !important; padding: 1em 0px;"&gt;&lt;img border="0" data-original-height="724" data-original-width="1086" src="https://1.bp.blogspot.com/-iiLVlzxWDNo/XzAYJtgQEAI/AAAAAAAESRs/LCQmJrdthwMRSKm5_ydPa0NSIL` |
+| `file://$HOME/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L2700 | `<content type="html">Amelia, Zach I am so proud of you. &amp;nbsp;There is nothing in life that is more importance then resilience and&amp;nbsp;perserverance&amp;nbsp; (maybe discipline) and you two have it in spades. &lt;br /&gt;&lt;br /&gt;Zach - You’re a pleasure. You are an entrepreneur and hacker.` |
+| `file://$HOME/gits/idvorkin.github.io/old_blog/ig66-export-02-22-2021.xml` | L4574 | `⟪ 1503 characters skipped ⟫ssage of Mr. Plumbean - do what it most important to you, even if there's lots of peer pressure. I'm so glad that Tori and I have instilled this into Zach, it's such an important lesson. &lt;br /&gt;&lt;h3 id="toc_1"&gt;In other news&lt;/h3` |
+| `file://$HOME/gits/idvorkin.github.io/cypress/e2e/unit/makeHTML.test.ts` | L1 | `// import { UT as UTMain } from "../../../_site/assets/js/main.js";` |
+| `file://$HOME/gits/idvorkin.github.io/cypress/e2e/unit/makeHTML.test.ts` | L2 | `import { IURLInfo, MakeBackLinkHTML } from "../../../src/main";` |
+| `file://$HOME/gits/idvorkin.github.io/_ig66/ig66-export.json` | L196 | `"excerpt": "Amelia, Zach I am so proud of you. There is nothing in life that is more importance then resilience and perserverance (maybe discipline) and you two have it in spades.\n\nZach - You’re a pleasure. You are an entrepreneur and hacker. You will grind through. You have a web s` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L57 | `import { CreateAutoComplete } from "/assets/js/search.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L18 | `import { load_globals, MakeBackLinkHTML } from './main';` |
 
 </details>
 

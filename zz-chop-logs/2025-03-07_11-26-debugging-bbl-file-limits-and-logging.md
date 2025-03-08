@@ -178,7 +178,7 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/build_back_links.py` | L567 | `"build_back_links.py",` |
+| `file://$HOME/gits/idvorkin.github.io/build_back_links.py` | L567 | `"build_back_links.py",` |
 
 </details>
 
@@ -573,11 +573,11 @@ Let's test our changes by running the script:
 _****_
 
 ```bash
-cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build
+cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build
 ```
 
 ```
-❯ cd /Users/idvorkin/gits/idvorkin.github.io && ./build_back_links.py build
+❯ cd $HOME/gits/idvorkin.github.io && ./build_back_links.py build
 Reading inline script metadata from `./build_back_links.py`
 Parsed all pages in 0.98 seconds
 Processing last_modified dates in parallel using direct git calls

@@ -128,75 +128,75 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L1 | `* Main JavaScript Entry Point` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L3 | `* This file serves as the single entry point for all JavaScript functionality` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L83 | `console.log("Blog JavaScript initialized");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/random-prompter.ts` | L7 | `} from "../node_modules/typescript/lib/typescript";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/random-prompter.ts` | L109 | `// JScript Experts: Is there a desctructing for this?` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L85 | `function makePostPreviewHTML({ url, title, description }) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L98 | `${title_href}:  <b><a class='lead' onclick="toggle_play_pause('${id}')">🔈</a></b> ${description}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L112 | `description: random_post["description"],` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/shared.ts` | L16 | `* https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/shared.ts` | L73 | `description: string;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/README.md` | Lundefined | `# JavaScript Development Guide` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/README.md` | L2 | `This document outlines the JavaScript/TypeScript development practices for the blog.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/README.md` | L34 | `We use Parcel for bundling and TypeScript for type checking. The build process is configured in the project's `justfile`, `package.json`, and `tsconfig.json`.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/README.md` | L38 | `All JavaScript/TypeScript commands are managed through the justfile. **Do not use npm scripts** - look in the justfile instead.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/README.md` | L42 | `just js-build` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/README.md` | L66 | `## Why Parcel and TypeScript?` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/README.md` | L71 | `2. **TypeScript** provides type checking for code quality` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/README.md` | L81 | ````typescript` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/README.md` | L105 | `- Use descriptive names` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L120 | `description: random_post["description"],` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L151 | `<span>${item.description}</span>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/categories.html` | L6 | `description: "An archive of posts sorted by categories."` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L104 | `const class_link = `link-box description truncate-css`;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L107 | `<div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info.description} <span></div>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main.ts` | L189 | `<i> ${url_info.description}</i> ${attribution}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L60 | `⟪ 2200 characters skipped ⟫(d)};var arbor_path=function(){var a=$("script").map(function(b){var c=$(this).attr("src");if(!c){return}if(c.match(/arbor[^\/\.]*.js|dev.js/)){return c.match(/.*\//)||"/"}});if(a.length>0){return a[0]}else{return null}};` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox.js` | L40 | `// Descriptions of all options available on the demo site:` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.min.map` | Lundefined | `⟪ 132 characters skipped ⟫his","noGlobal","DOMEval","code","doc","script","createElement","text","head","appendChild","parentNode","removeChild","isArrayLike","obj","length","type","jQuery","isWindow","nodeName","elem","name","toLowerCase","winnow","elements","quali⟪ 954 characters skipped ⟫ems","refElements","l","buildFragment","scripts","selection","ignored","tmp","wrap","contains","j","fragment","createDocumentFragment","nodes","rhtml","rtagName","wrapMap","_default","innerHTML","htmlPrefilter","lastChild","childNodes","firstChild","textContent","push","createTextNode","inArray","rscriptType","returnTrue","returnFalse","safeActiveElement","activeElement","err","on","types","selector","fn","one","origFn","event","off","arguments","guid","add","manipulationTarget","content","disableScript","restoreScript","rscriptTypeMasked","removeAttribute","cloneCopyEvent","src","dest","pdataOld","pdataCur","udataOld","udataCur","events","hasData","access","handle","extend","fixInput","rcheckableType","checked","defaultValue","domManip","collection","args","callback","concat","first","hasScripts","node","iNoClone","support","checkClone","rchecked","self","eq","html","map","clone","_evalUrl","rcleanScript","remove","keepData","cleanData","curCSS","computed","width","minWidth","maxWidth","getStyles","getPropertyValue","pixelMarginRight","rnumnonpx","rmargin","addGetHookIf","conditionFn","hookFn",⟪ 10280 characters skipped ⟫tent","beforeSend","send","getJSON","getScript","wrapAll","firstElementChild","wrapInner","unwrap","visible","offsetWidth","offsetHeight","xhr","XMLHttpRequest","xhrSuccessStatus","0","1223","xhrSupported","cors","errorCallback","open","username","xhrFields","onload","onerror","onabort","onreadystatechange","responseType","responseText","binary","text script","charset","scriptCharset","evt","oldCallbacks","rjsonp","jsonp","jsonpCallback","originalSettings","callbackName","overwritten","responseContainer","jsonProp","createHTMLDocument","implementation","keepScripts","parsed","params","animated","offset","setOffset","curPosition","curLeft","curCSSTop","curTop","curOffset","curCSSLeft","calculatePosition","curElem","using","rect","win","pageYOffset","clien` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/index.js` | L2 | `<div class="link-box description truncate-css"> ${e}:<span class="link-description"> ${t.description} <span></div>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/index.js` | L23 | `<i> ${e.description}</i> ${o}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/index.js` | L34 | `⟪ 813 characters skipped ⟫keys(t).length)}),console.log("Blog JavaScript initialized")})})();` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L1 | `* jQuery JavaScript Library v3.2.1` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L78 | `var script = doc.createElement( "script" );` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L80 | `script.text = code;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L81 | `doc.head.appendChild( script ).parentNode.removeChild( script );` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L343 | `// Evaluates a script in a global context` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L1010 | `// https://html.spec.whatwg.org/multipage/scripting.html#selector-enabled` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L1011 | `// https://html.spec.whatwg.org/multipage/scripting.html#selector-disabled` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L2991 | `// Option to run scripts is true for back-compat` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L3939 | `// Handle it asynchronously to allow scripts the opportunity to delay ready` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4696 | `var rscriptType = ( /^$|\/(?:java|ecma)script/i );` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4748 | `// Mark scripts as having already been evaluated` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4765 | `function buildFragment( elems, context, scripts, selection, ignored ) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4833 | `tmp = getAll( fragment.appendChild( elem ), "script" );` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4835 | `// Preserve script evaluation history` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4841 | `if ( scripts ) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4844 | `if ( rscriptType.test( elem.type || "" ) ) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4845 | `scripts.push( elem );` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5429 | `// jQuery.Event is based on DOM3 Events as specified by the ECMAScript Language Binding` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5430 | `// https://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5537 | `// for the description of the bug (it existed in older Chrome versions as well).` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5625 | `rnoInnerhtml = /<script|<style|<link/i,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5629 | `rscriptTypeMasked = /^true\/(.*)/,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5630 | `rcleanScript = /^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5643 | `// Replace/restore the type attribute of script elements for safe DOM manipulation` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5644 | `function disableScript( elem ) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5648 | `function restoreScript( elem ) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5649 | `var match = rscriptTypeMasked.exec( elem.type );` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5713 | `var fragment, first, scripts, hasScripts, node, doc,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5743 | `scripts = jQuery.map( getAll( fragment, "script" ), disableScript );` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5744 | `hasScripts = scripts.length;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5755 | `// Keep references to cloned scripts for later restoration` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5756 | `if ( hasScripts ) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5760 | `jQuery.merge( scripts, getAll( node, "script" ) );` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5767 | `if ( hasScripts ) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5768 | `doc = scripts[ scripts.length - 1 ].ownerDocument;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5770 | `// Reenable scripts` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5771 | `jQuery.map( scripts, restoreScript );` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5773 | `// Evaluate executable scripts on first document insertion` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L1 | `* Main JavaScript Entry Point` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L3 | `* This file serves as the single entry point for all JavaScript functionality` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L83 | `console.log("Blog JavaScript initialized");` |
+| `file://$HOME/gits/idvorkin.github.io/src/random-prompter.ts` | L7 | `} from "../node_modules/typescript/lib/typescript";` |
+| `file://$HOME/gits/idvorkin.github.io/src/random-prompter.ts` | L109 | `// JScript Experts: Is there a desctructing for this?` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L85 | `function makePostPreviewHTML({ url, title, description }) {` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L98 | `${title_href}:  <b><a class='lead' onclick="toggle_play_pause('${id}')">🔈</a></b> ${description}` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L112 | `description: random_post["description"],` |
+| `file://$HOME/gits/idvorkin.github.io/src/shared.ts` | L16 | `* https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array` |
+| `file://$HOME/gits/idvorkin.github.io/src/shared.ts` | L73 | `description: string;` |
+| `file://$HOME/gits/idvorkin.github.io/src/README.md` | Lundefined | `# JavaScript Development Guide` |
+| `file://$HOME/gits/idvorkin.github.io/src/README.md` | L2 | `This document outlines the JavaScript/TypeScript development practices for the blog.` |
+| `file://$HOME/gits/idvorkin.github.io/src/README.md` | L34 | `We use Parcel for bundling and TypeScript for type checking. The build process is configured in the project's `justfile`, `package.json`, and `tsconfig.json`.` |
+| `file://$HOME/gits/idvorkin.github.io/src/README.md` | L38 | `All JavaScript/TypeScript commands are managed through the justfile. **Do not use npm scripts** - look in the justfile instead.` |
+| `file://$HOME/gits/idvorkin.github.io/src/README.md` | L42 | `just js-build` |
+| `file://$HOME/gits/idvorkin.github.io/src/README.md` | L66 | `## Why Parcel and TypeScript?` |
+| `file://$HOME/gits/idvorkin.github.io/src/README.md` | L71 | `2. **TypeScript** provides type checking for code quality` |
+| `file://$HOME/gits/idvorkin.github.io/src/README.md` | L81 | ````typescript` |
+| `file://$HOME/gits/idvorkin.github.io/src/README.md` | L105 | `- Use descriptive names` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L120 | `description: random_post["description"],` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L151 | `<span>${item.description}</span>` |
+| `file://$HOME/gits/idvorkin.github.io/categories.html` | L6 | `description: "An archive of posts sorted by categories."` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L104 | `const class_link = `link-box description truncate-css`;` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L107 | `<div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info.description} <span></div>` |
+| `file://$HOME/gits/idvorkin.github.io/src/main.ts` | L189 | `<i> ${url_info.description}</i> ${attribution}` |
+| `file://$HOME/gits/idvorkin.github.io/assets/arbor/arbor-tween.js` | L60 | `⟪ 2200 characters skipped ⟫(d)};var arbor_path=function(){var a=$("script").map(function(b){var c=$(this).attr("src");if(!c){return}if(c.match(/arbor[^\/\.]*.js|dev.js/)){return c.match(/.*\//)||"/"}});if(a.length>0){return a[0]}else{return null}};` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox.js` | L40 | `// Descriptions of all options available on the demo site:` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.min.map` | Lundefined | `⟪ 132 characters skipped ⟫his","noGlobal","DOMEval","code","doc","script","createElement","text","head","appendChild","parentNode","removeChild","isArrayLike","obj","length","type","jQuery","isWindow","nodeName","elem","name","toLowerCase","winnow","elements","quali⟪ 954 characters skipped ⟫ems","refElements","l","buildFragment","scripts","selection","ignored","tmp","wrap","contains","j","fragment","createDocumentFragment","nodes","rhtml","rtagName","wrapMap","_default","innerHTML","htmlPrefilter","lastChild","childNodes","firstChild","textContent","push","createTextNode","inArray","rscriptType","returnTrue","returnFalse","safeActiveElement","activeElement","err","on","types","selector","fn","one","origFn","event","off","arguments","guid","add","manipulationTarget","content","disableScript","restoreScript","rscriptTypeMasked","removeAttribute","cloneCopyEvent","src","dest","pdataOld","pdataCur","udataOld","udataCur","events","hasData","access","handle","extend","fixInput","rcheckableType","checked","defaultValue","domManip","collection","args","callback","concat","first","hasScripts","node","iNoClone","support","checkClone","rchecked","self","eq","html","map","clone","_evalUrl","rcleanScript","remove","keepData","cleanData","curCSS","computed","width","minWidth","maxWidth","getStyles","getPropertyValue","pixelMarginRight","rnumnonpx","rmargin","addGetHookIf","conditionFn","hookFn",⟪ 10280 characters skipped ⟫tent","beforeSend","send","getJSON","getScript","wrapAll","firstElementChild","wrapInner","unwrap","visible","offsetWidth","offsetHeight","xhr","XMLHttpRequest","xhrSuccessStatus","0","1223","xhrSupported","cors","errorCallback","open","username","xhrFields","onload","onerror","onabort","onreadystatechange","responseType","responseText","binary","text script","charset","scriptCharset","evt","oldCallbacks","rjsonp","jsonp","jsonpCallback","originalSettings","callbackName","overwritten","responseContainer","jsonProp","createHTMLDocument","implementation","keepScripts","parsed","params","animated","offset","setOffset","curPosition","curLeft","curCSSTop","curTop","curOffset","curCSSLeft","calculatePosition","curElem","using","rect","win","pageYOffset","clien` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/index.js` | L2 | `<div class="link-box description truncate-css"> ${e}:<span class="link-description"> ${t.description} <span></div>` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/index.js` | L23 | `<i> ${e.description}</i> ${o}` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/index.js` | L34 | `⟪ 813 characters skipped ⟫keys(t).length)}),console.log("Blog JavaScript initialized")})})();` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L1 | `* jQuery JavaScript Library v3.2.1` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L78 | `var script = doc.createElement( "script" );` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L80 | `script.text = code;` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L81 | `doc.head.appendChild( script ).parentNode.removeChild( script );` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L343 | `// Evaluates a script in a global context` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L1010 | `// https://html.spec.whatwg.org/multipage/scripting.html#selector-enabled` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L1011 | `// https://html.spec.whatwg.org/multipage/scripting.html#selector-disabled` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L2991 | `// Option to run scripts is true for back-compat` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L3939 | `// Handle it asynchronously to allow scripts the opportunity to delay ready` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4696 | `var rscriptType = ( /^$|\/(?:java|ecma)script/i );` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4748 | `// Mark scripts as having already been evaluated` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4765 | `function buildFragment( elems, context, scripts, selection, ignored ) {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4833 | `tmp = getAll( fragment.appendChild( elem ), "script" );` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4835 | `// Preserve script evaluation history` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4841 | `if ( scripts ) {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4844 | `if ( rscriptType.test( elem.type || "" ) ) {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4845 | `scripts.push( elem );` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5429 | `// jQuery.Event is based on DOM3 Events as specified by the ECMAScript Language Binding` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5430 | `// https://www.w3.org/TR/2003/WD-DOM-Level-3-Events-20030331/ecma-script-binding.html` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5537 | `// for the description of the bug (it existed in older Chrome versions as well).` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5625 | `rnoInnerhtml = /<script|<style|<link/i,` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5629 | `rscriptTypeMasked = /^true\/(.*)/,` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5630 | `rcleanScript = /^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g;` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5643 | `// Replace/restore the type attribute of script elements for safe DOM manipulation` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5644 | `function disableScript( elem ) {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5648 | `function restoreScript( elem ) {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5649 | `var match = rscriptTypeMasked.exec( elem.type );` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5713 | `var fragment, first, scripts, hasScripts, node, doc,` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5743 | `scripts = jQuery.map( getAll( fragment, "script" ), disableScript );` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5744 | `hasScripts = scripts.length;` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5755 | `// Keep references to cloned scripts for later restoration` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5756 | `if ( hasScripts ) {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5760 | `jQuery.merge( scripts, getAll( node, "script" ) );` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5767 | `if ( hasScripts ) {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5768 | `doc = scripts[ scripts.length - 1 ].ownerDocument;` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5770 | `// Reenable scripts` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5771 | `jQuery.map( scripts, restoreScript );` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L5773 | `// Evaluate executable scripts on first document insertion` |
 | `untitled:Untitled-2` | L26 | `description: "Learn about visual prompt injections in AI systems, including real-world examples and defense strategies. Discover how simple visual tricks can manipulate AI models like GPT-4V."` |
 | `untitled:Untitled-2` | L1781 | `Yes, you have several mentions of daily journaling and 750 words in your blog content. The most detailed description appears in `_d/emotional-health-hold.md` under "Daily Stream of Consciousness Journaling":` |
 | `untitled:Untitled-2` | L1937 | `1. Links back to your original journaling practice description` |
@@ -348,75 +348,75 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/categories.html` | L6 | `description: "An archive of posts sorted by categories."` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/debug.html` | L83 | `<span id="hold-scripts-so-looks-nice-debugging">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/debug.html` | L84 | `{% include scripts.html %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/debug.html` | L85 | `<script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/debug.html` | L90 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/graph.html` | L4 | `description: "An archive of posts sorted by tag."` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/graph.html` | L7 | `<script type="module" src="//unpkg.com/force-graph"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/tags.html` | L4 | `description: "An archive of posts sorted by tag."` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/featured.html` | L4 | `description: "An archive of posts sorted by date."` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_layouts/post.html` | L56 | `<span id="hold-scripts-so-looks-nice-debugging">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_layouts/post.html` | L57 | `{% include scripts.html %} {% if page.mermaid %} {% include mermaid.html` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_layouts/post.html` | L59 | `<script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_layouts/post.html` | L66 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_layouts/post.html` | L68 | `<script src="https://cursor-party.idvorkin.partykit.dev/cursors.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/linkedin.html` | L13 | `Consider merging with scripts.html` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/linkedin.html` | L17 | `<script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/linkedin.html` | L33 | `"script",` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/linkedin.html` | L41 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/linkedin.html` | L43 | `<script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/linkedin.html` | L86 | `// copied from:  https://stackoverflow.com/questions/2090551/parse-query-string-in-javascript` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/linkedin.html` | L144 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_layouts/page.html` | L14 | `Description: Awesome dude, awesome life` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_layouts/page.html` | L40 | `{% include scripts.html %}` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/mermaid.html` | Lundefined | `<script src=" https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.8.0/mermaid.min.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/mermaid.html` | L1 | `<script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/mermaid.html` | L20 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/head.html` | L9 | `<script src="https://kit.fontawesome.com/fb4c0562ec.js" crossorigin="anonymous"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/head.html` | L33 | `<meta property="og:description" content="{{ page.excerpt | strip_html }}" /> {%` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/head.html` | L40 | `<meta property="og:description" content="Igor's Blog" />` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/head.html` | L41 | `<meta name="description" content="Igor's Blog" />` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/head.html` | L105 | `<script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/head.html` | L115 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/collapse.html` | Lundefined | `<script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/collapse.html` | L22 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/asciicinema.html` | Lundefined | `<script` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/asciicinema.html` | L6 | `></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | Lundefined | `<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L1 | `<script` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L4 | `></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L6 | `<!-- Latest compiled and minified JavaScript for bootstrap-->` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L7 | `<script` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L11 | `></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L18 | `<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L21 | `<script type="text/javascript">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L23 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L26 | `<script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L27 | `<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L28 | `<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L30 | `<script src="/assets/js/vendor/md-toc.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L32 | `<!-- Main JavaScript bundle that includes all site functionality -->` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L33 | `<script type="module" src="/assets/js/index.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L35 | `<!-- Get rid of mathjax, it's too slow, and not very important` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L36 | `<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" ></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L39 | `<script` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L43 | `></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L44 | `<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L53 | `<script` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L56 | `></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L57 | `<script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L65 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L71 | `<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L74 | `<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L76 | `<script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/scripts.html` | L78 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L56 | `<script type="module">` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L57 | `import { CreateAutoComplete } from "/assets/js/index.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_includes/site-menu.html` | L71 | `</script>` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/static/die_die_die.html` | L5 | `⟪ 3608 characters skipped ⟫]{background-color:rgba(0,170,255,0.1) !important}.debug-mode tw-expression[type=macro][name="if"],.debug-mode tw-expression[type=macro][name="if"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="unless"],.debug-mode tw-expr⟪ 298 characters skipped ⟫e]){background-color:rgba(0,255,0,0.1) !important}.debug-mode tw-expression[type=macro].false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro].false+tw-hook:not([name]){display:none}.debug-mode tw-expression[type=macro][name="a"],.debug-mode tw-expression[type=macro][name="array"],.debug-mode t⟪ 404 characters skipped ⟫]{background-color:rgba(255,255,0,0.2) !important}.debug-mode tw-expression[type=macro][name="put"],.debug-mode tw-expression[type=macro][name="set"]{background-color:rgba(255,128,0,0.2) !important}.debug-mode tw-expression[type=macro][name="script"]{background-color:rgba(255,191,0,0.2) !important}.debug-mode tw-expression[type=macro][name="style"]{background-color:rgba(185,198,198,0.2) !important}.debug-mode tw-expression[type=macro][name^="link"],.debug-mode tw-expression[type=macro][name^="click"],.debug-mode tw-expression[type=macro][name^="mouseover"],.debug-mode tw-expression[type=macro][name^="mouseout"]{background-color:rgba(128,223,32,0.2) !important}.debug-mode tw-expression[type=macro][name^="replace"],.debug-mode tw-expression[type=macro][name^="prepend"],.debug-mode tw-expression[type=macro][name^="append"],.debug-mode tw-expression[type=macro][name^="remove"]{background-color:rgba(223,96,32,0.2) !important}.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(32,96,223,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-r⟪ 206 characters skipped ⟫k{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/static/die_die_die.html` | L13 | `⟪ 239 characters skipped ⟫lesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="2377.5,176" size="100,100">Do you want to` |
+| `file://$HOME/gits/idvorkin.github.io/categories.html` | L6 | `description: "An archive of posts sorted by categories."` |
+| `file://$HOME/gits/idvorkin.github.io/debug.html` | L83 | `<span id="hold-scripts-so-looks-nice-debugging">` |
+| `file://$HOME/gits/idvorkin.github.io/debug.html` | L84 | `{% include scripts.html %}` |
+| `file://$HOME/gits/idvorkin.github.io/debug.html` | L85 | `<script>` |
+| `file://$HOME/gits/idvorkin.github.io/debug.html` | L90 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/graph.html` | L4 | `description: "An archive of posts sorted by tag."` |
+| `file://$HOME/gits/idvorkin.github.io/graph.html` | L7 | `<script type="module" src="//unpkg.com/force-graph"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/tags.html` | L4 | `description: "An archive of posts sorted by tag."` |
+| `file://$HOME/gits/idvorkin.github.io/featured.html` | L4 | `description: "An archive of posts sorted by date."` |
+| `file://$HOME/gits/idvorkin.github.io/_layouts/post.html` | L56 | `<span id="hold-scripts-so-looks-nice-debugging">` |
+| `file://$HOME/gits/idvorkin.github.io/_layouts/post.html` | L57 | `{% include scripts.html %} {% if page.mermaid %} {% include mermaid.html` |
+| `file://$HOME/gits/idvorkin.github.io/_layouts/post.html` | L59 | `<script>` |
+| `file://$HOME/gits/idvorkin.github.io/_layouts/post.html` | L66 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/_layouts/post.html` | L68 | `<script src="https://cursor-party.idvorkin.partykit.dev/cursors.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/linkedin.html` | L13 | `Consider merging with scripts.html` |
+| `file://$HOME/gits/idvorkin.github.io/linkedin.html` | L17 | `<script>` |
+| `file://$HOME/gits/idvorkin.github.io/linkedin.html` | L33 | `"script",` |
+| `file://$HOME/gits/idvorkin.github.io/linkedin.html` | L41 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/linkedin.html` | L43 | `<script>` |
+| `file://$HOME/gits/idvorkin.github.io/linkedin.html` | L86 | `// copied from:  https://stackoverflow.com/questions/2090551/parse-query-string-in-javascript` |
+| `file://$HOME/gits/idvorkin.github.io/linkedin.html` | L144 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/_layouts/page.html` | L14 | `Description: Awesome dude, awesome life` |
+| `file://$HOME/gits/idvorkin.github.io/_layouts/page.html` | L40 | `{% include scripts.html %}` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/mermaid.html` | Lundefined | `<script src=" https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.8.0/mermaid.min.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/mermaid.html` | L1 | `<script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/mermaid.html` | L20 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/head.html` | L9 | `<script src="https://kit.fontawesome.com/fb4c0562ec.js" crossorigin="anonymous"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/head.html` | L33 | `<meta property="og:description" content="{{ page.excerpt | strip_html }}" /> {%` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/head.html` | L40 | `<meta property="og:description" content="Igor's Blog" />` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/head.html` | L41 | `<meta name="description" content="Igor's Blog" />` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/head.html` | L105 | `<script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/head.html` | L115 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/collapse.html` | Lundefined | `<script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/collapse.html` | L22 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/asciicinema.html` | Lundefined | `<script` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/asciicinema.html` | L6 | `></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | Lundefined | `<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L1 | `<script` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L4 | `></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L6 | `<!-- Latest compiled and minified JavaScript for bootstrap-->` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L7 | `<script` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L11 | `></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L18 | `<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L21 | `<script type="text/javascript">` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L23 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L26 | `<script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.3/mousetrap.min.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L27 | `<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L28 | `<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L30 | `<script src="/assets/js/vendor/md-toc.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L32 | `<!-- Main JavaScript bundle that includes all site functionality -->` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L33 | `<script type="module" src="/assets/js/index.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L35 | `<!-- Get rid of mathjax, it's too slow, and not very important` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L36 | `<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" ></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L39 | `<script` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L43 | `></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L44 | `<script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L53 | `<script` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L56 | `></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L57 | `<script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L65 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L71 | `<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L74 | `<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L76 | `<script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/scripts.html` | L78 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L56 | `<script type="module">` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L57 | `import { CreateAutoComplete } from "/assets/js/index.js";` |
+| `file://$HOME/gits/idvorkin.github.io/_includes/site-menu.html` | L71 | `</script>` |
+| `file://$HOME/gits/idvorkin.github.io/static/die_die_die.html` | L5 | `⟪ 3608 characters skipped ⟫]{background-color:rgba(0,170,255,0.1) !important}.debug-mode tw-expression[type=macro][name="if"],.debug-mode tw-expression[type=macro][name="if"]+tw-hook:not([name]),.debug-mode tw-expression[type=macro][name="unless"],.debug-mode tw-expr⟪ 298 characters skipped ⟫e]){background-color:rgba(0,255,0,0.1) !important}.debug-mode tw-expression[type=macro].false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro].false+tw-hook:not([name]){display:none}.debug-mode tw-expression[type=macro][name="a"],.debug-mode tw-expression[type=macro][name="array"],.debug-mode t⟪ 404 characters skipped ⟫]{background-color:rgba(255,255,0,0.2) !important}.debug-mode tw-expression[type=macro][name="put"],.debug-mode tw-expression[type=macro][name="set"]{background-color:rgba(255,128,0,0.2) !important}.debug-mode tw-expression[type=macro][name="script"]{background-color:rgba(255,191,0,0.2) !important}.debug-mode tw-expression[type=macro][name="style"]{background-color:rgba(185,198,198,0.2) !important}.debug-mode tw-expression[type=macro][name^="link"],.debug-mode tw-expression[type=macro][name^="click"],.debug-mode tw-expression[type=macro][name^="mouseover"],.debug-mode tw-expression[type=macro][name^="mouseout"]{background-color:rgba(128,223,32,0.2) !important}.debug-mode tw-expression[type=macro][name^="replace"],.debug-mode tw-expression[type=macro][name^="prepend"],.debug-mode tw-expression[type=macro][name^="append"],.debug-mode tw-expression[type=macro][name^="remove"]{background-color:rgba(223,96,32,0.2) !important}.debug-mode tw-expression[type=macro][name="live"]{background-color:rgba(32,96,223,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-r⟪ 206 characters skipped ⟫k{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem` |
+| `file://$HOME/gits/idvorkin.github.io/static/die_die_die.html` | L13 | `⟪ 239 characters skipped ⟫lesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="2377.5,176" size="100,100">Do you want to` |
 
 </details>
 
@@ -536,7 +536,7 @@ Support for loading ES Module in require() is an experimental feature and might 
 
 @parcel/core: src/shared.ts does not export 'IURLInfo'
 
-  /Users/idvorkin/gits/idvorkin.github.io/src/index.ts:111:3
+  $HOME/gits/idvorkin.github.io/src/index.ts:111:3
     110 |   get_link_info,
   > 111 |   IURLInfo,
   >     |   ^^^^^^^^
@@ -545,7 +545,7 @@ Support for loading ES Module in require() is an experimental feature and might 
 
 @parcel/core: src/shared.ts does not export 'IURLInfoMap'
 
-  /Users/idvorkin/gits/idvorkin.github.io/src/index.ts:112:3
+  $HOME/gits/idvorkin.github.io/src/index.ts:112:3
     111 |   IURLInfo,
   > 112 |   IURLInfoMap,
   >     |   ^^^^^^^^^^^
@@ -959,13 +959,13 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L30 | `load_random_eulogy` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/index.ts` | L122 | `load_random_eulogy` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L116 | `function load_random_eulogy() {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L305 | `load_random_eulogy,` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/index.js` | L65 | `⟪ 2427 characters skipped ⟫L,R as load_ig66,W as load_balance,J as load_random_eulogy};` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/e1.md` | L11 | `import { load_random_eulogy } from '/assets/js/index.js'` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/e1.md` | L12 | `defer(load_random_eulogy)` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L30 | `load_random_eulogy` |
+| `file://$HOME/gits/idvorkin.github.io/src/index.ts` | L122 | `load_random_eulogy` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L116 | `function load_random_eulogy() {` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L305 | `load_random_eulogy,` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/index.js` | L65 | `⟪ 2427 characters skipped ⟫L,R as load_ig66,W as load_balance,J as load_random_eulogy};` |
+| `file://$HOME/gits/idvorkin.github.io/_d/e1.md` | L11 | `import { load_random_eulogy } from '/assets/js/index.js'` |
+| `file://$HOME/gits/idvorkin.github.io/_d/e1.md` | L12 | `defer(load_random_eulogy)` |
 
 </details>
 
@@ -1008,16 +1008,16 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L11 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L117 | `add_eulogy_roles("#e1");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L118 | `add_eulogy_roles("#e2");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L119 | `add_eulogy_roles("#e3");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L126 | `add_eulogy_roles("#random-eulogy-role");` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/blogger_import.ts` | L130 | `function add_eulogy_roles(div: string) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/blogger_import.ts` | L135 | `export { add_imported_blog_posts, add_eulogy_roles, html_for_role };` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L43 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/src/page-loader.ts` | L11 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L86 | `| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/page-loader.js` | L5 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L4191 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L11 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L117 | `add_eulogy_roles("#e1");` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L118 | `add_eulogy_roles("#e2");` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L119 | `add_eulogy_roles("#e3");` |
+| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L126 | `add_eulogy_roles("#random-eulogy-role");` |
+| `file://$HOME/gits/idvorkin.github.io/src/blogger_import.ts` | L130 | `function add_eulogy_roles(div: string) {` |
+| `file://$HOME/gits/idvorkin.github.io/src/blogger_import.ts` | L135 | `export { add_imported_blog_posts, add_eulogy_roles, html_for_role };` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L43 | `| `file://$HOME/gits/idvorkin.github.io/src/page-loader.ts` | L11 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L86 | `| `file://$HOME/gits/idvorkin.github.io/assets/js/page-loader.js` | L5 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L4191 | `import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";` |
 
 </details>
 
@@ -1183,7 +1183,7 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2020-04-01-Igor-Eulogy.md` | L8 | `permalink: /eulogy` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2020-04-01-Igor-Eulogy.md` | L8 | `permalink: /eulogy` |
 
 </details>
 

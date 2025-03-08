@@ -21,9 +21,9 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/search.ts` | L47 | `declare function algoliasearch(l: any, l2: any): any;` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/cypress/e2e/unit/prompts.test.ts` | L68 | `const l2 = UT_Prompts.shuffle(l);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/cypress/e2e/unit/prompts.test.ts` | L69 | `assert.notDeepEqual(l, l2);` |
+| `file://$HOME/gits/idvorkin.github.io/src/search.ts` | L47 | `declare function algoliasearch(l: any, l2: any): any;` |
+| `file://$HOME/gits/idvorkin.github.io/cypress/e2e/unit/prompts.test.ts` | L68 | `const l2 = UT_Prompts.shuffle(l);` |
+| `file://$HOME/gits/idvorkin.github.io/cypress/e2e/unit/prompts.test.ts` | L69 | `assert.notDeepEqual(l, l2);` |
 
 </details>
 
@@ -42,14 +42,14 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L2103 | `// New HTML5 attribute values (e.g., "search") appear with elem.type === "text"` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4226 | `// data from the HTML5 data-* attribute` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4326 | `// HTML5 custom data-* attrs` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L10509 | `for (var b = ["MSXML2.XMLHTTP.6.0", "MSXML2.XMLHTTP.3.0", "MSXML2.XMLHTTP", "Microsoft.XMLHTTP"], c = 0; c < b.length; c++) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L12895 | `⟪ 129 characters skipped ⟫2, 5, T, [Fj, new r(null, 1, [pn, "M1,0 L11,6 L1,12 Z"], null)], null)], null); }` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L12896 | `⟪ 129 characters skipped ⟫2, 5, T, [Fj, new r(null, 1, [pn, "M1,0 L4,0 L4,12 L1,12 Z"], null)], null), new R(null, 2, 5, T, [Fj, new r(null, 1, [pn, "M8,0 L11,0 L11,12 L8,12 Z"], null)], null)], null); }` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L12897 | `⟪ 130 characters skipped ⟫, 5, T, [Fj, new r(null, 1, [pn, "M12,0 L7,0 L9,2 L7,4 L8,5 L10,3 L12,5 Z"], null)], null), new R(null, 2, 5, T, [Fj, new r(null, 1, [pn, "M0,12 L0,7 L2,9 L4,7 L5,8 L3,10 L5,12 Z"], null)], null)], null); }` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L12898 | `⟪ 129 characters skipped ⟫2, 5, T, [Fj, new r(null, 1, [pn, "M7,5 L7,0 L9,2 L11,0 L12,1 L10,3 L12,5 Z"], null)], null), new R(null, 2, 5, T, [Fj, new r(null, 1, [pn, "M5,7 L0,7 L2,9 L0,11 L1,12 L3,10 L5,12 Z"], null)], null)], null); }` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L2103 | `// New HTML5 attribute values (e.g., "search") appear with elem.type === "text"` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4226 | `// data from the HTML5 data-* attribute` |
+| `file://$HOME/gits/idvorkin.github.io/assets/lightbox/js/lightbox-plus-jquery.js` | L4326 | `// HTML5 custom data-* attrs` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L10509 | `for (var b = ["MSXML2.XMLHTTP.6.0", "MSXML2.XMLHTTP.3.0", "MSXML2.XMLHTTP", "Microsoft.XMLHTTP"], c = 0; c < b.length; c++) {` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L12895 | `⟪ 129 characters skipped ⟫2, 5, T, [Fj, new r(null, 1, [pn, "M1,0 L11,6 L1,12 Z"], null)], null)], null); }` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L12896 | `⟪ 129 characters skipped ⟫2, 5, T, [Fj, new r(null, 1, [pn, "M1,0 L4,0 L4,12 L1,12 Z"], null)], null), new R(null, 2, 5, T, [Fj, new r(null, 1, [pn, "M8,0 L11,0 L11,12 L8,12 Z"], null)], null)], null); }` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L12897 | `⟪ 130 characters skipped ⟫, 5, T, [Fj, new r(null, 1, [pn, "M12,0 L7,0 L9,2 L7,4 L8,5 L10,3 L12,5 Z"], null)], null), new R(null, 2, 5, T, [Fj, new r(null, 1, [pn, "M0,12 L0,7 L2,9 L4,7 L5,8 L3,10 L5,12 Z"], null)], null)], null); }` |
+| `file://$HOME/gits/idvorkin.github.io/assets/js/vendor/asciinema-player.js` | L12898 | `⟪ 129 characters skipped ⟫2, 5, T, [Fj, new r(null, 1, [pn, "M7,5 L7,0 L9,2 L11,0 L12,1 L10,3 L12,5 Z"], null)], null), new R(null, 2, 5, T, [Fj, new r(null, 1, [pn, "M5,7 L0,7 L2,9 L0,11 L1,12 L3,10 L5,12 Z"], null)], null)], null); }` |
 
 </details>
 
@@ -68,54 +68,54 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L213 | `| `untitled:Untitled-2` | L5943 | `1. Changed `[l31](21)` to `[l31](/l31)`` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L214 | `| `untitled:Untitled-2` | L5944 | `2. Changed `[l32](22)` to `[l32](/l32)`` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L215 | `| `untitled:Untitled-2` | L6246 | `1. Changed `[l31](/l31)` back to `[l31](21)`` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L216 | `| `untitled:Untitled-2` | L6247 | `2. Changed `[l32](/l32)` back to `[l32](22)`` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/2018-04-03-moments.md` | L18 | `| Elevation  | Creates experiences that rise above the routine. We are engaged, joyful, amazed, motivated. | [l1](l1) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/2018-04-03-moments.md` | L19 | `| Pride      | Commemorates achievement. We puff out our chest and lift up our chin                        | [l2](l2) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/2018-04-03-moments.md` | L20 | `| Insight    | Delivers realizations and transformations. We grow                                          | [l3](l3) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/2018-04-03-moments.md` | L21 | `| Connection | Bond us with others. We feel warmth, unity, empathy, validation.                            | [l4](l4) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/time-off-2024-08.md` | L89 | `| 1) July 21 - Zach           | [l1](l1)                   |                          |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/time-off-2024-08.md` | L90 | `| 2) July 28 - Family         | [l2](l2)                   |                          |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/time-off-2024-08.md` | L91 | `| 3) August 4 - Alone         | [l3](l3)                   | A at Farm; Z rowing      |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/7h-c3.md` | L44 | `| **Important**     | [l11](l11) | [l12](l12) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/7h-c3.md` | L45 | `| **Not Important** | [l13](l13) | [l14](l14) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/switch.md` | L14 | `| Direct the Rider      | [l1](l1) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/switch.md` | L15 | `| Motivate the Elephant | [l2](l2) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/switch.md` | L16 | `| Shape the Path        | [l3](l3) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/sublime.md` | L29 | `| Loving-kindness | [l20](l20)        |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/sublime.md` | L30 | `| Compassion      | [l21](l21)        |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/sublime.md` | L31 | `| Altruistic Joy  | [l22](l22)        |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/sublime.md` | L32 | `| Equanimity      | [l23](l23)        |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/sublime.md` | L63 | `| Loving-kindness | [l10](l10)     |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/sublime.md` | L64 | `| Compassion      | [l11](l11)     |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/sublime.md` | L65 | `| Altruistic Joy  | [l12](l12)     |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/sublime.md` | L66 | `| Equanimity      | [l13](l13)     |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/operating-manual-2.md` | L92 | `| Sa  | [l31](l31)  | Free          |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/operating-manual-2.md` | L93 | `| Su  | [l32](l32)  | Free          |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/operating-manual-2.md` | L354 | `| Sa  | [l1](l1)  | Free          |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/operating-manual-2.md` | L355 | `| Su  | [l2](l2)  | Free          |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/operating-manual-2.md` | L383 | `| Sa  | [l21](l21)       | Free          |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/operating-manual-2.md` | L384 | `| Su  | [l22](l22)       | Free          |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_d/coaching.md` | L248 | `| [l10](l10)     | [l11](l11)     |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/.cursorrules` | L179 | `- The link text and href must both match exactly (e.g., `[l31](l31)`)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/.cursorrules` | L208 | `| Sa  | [l31](l31) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/chop-logs/exploring-different-rules.md` | L283 | `+ | Mon | [l31](l31) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/CONVENTIONS.md` | L179 | `- The link text and href must both match exactly (e.g., `[l31](l31)`)` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/CONVENTIONS.md` | L208 | `| Sa  | [l31](l31) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L182 | `| Business Results                   | Produced Widgets     | [l20](l20)           | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy and explaining how our factory runs.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L183 | `| High performance people and teams  | Factory Workers      | [l21](l21)           | Workers in the factory are healthy, learning, want to come to work every day, and getting along with co-workers.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L184 | `| Engineering Efficiency and Process | Operating procedures | [l22](l22)           | The factory is efficient: Production is good and improving. Widgets come out consistently and on schedule. New employees know what to do. Everyone knows what to do during emerge` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L185 | `| Technical Assets                   | Factory machines     | [l23](l23)           | Machines in the factory adjust quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency.` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L485 | `| Junior       | [l10](l10)                 |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L486 | `| Intermediate | [l11](l11)                 |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L487 | `| Senior/Staff | [l12](l12)                 |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2018-01-04-7-habits.md` | L24 | `| Dependant (**Them**)    | [l1](l1) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2018-01-04-7-habits.md` | L25 | `| Independent (**Me**)    | [l2](l2) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2018-01-04-7-habits.md` | L26 | `| Interdependant (**We**) | [l3](l3) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/_posts/2018-01-04-7-habits.md` | L27 | `| Renewal                 | [l4](l4) |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/.cursor/rules/101-blog-post-conventions.mdc` | L107 | `| Mon | [l31](mdc:l31) |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L213 | `| `untitled:Untitled-2` | L5943 | `1. Changed `[l31](21)` to `[l31](/l31)`` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L214 | `| `untitled:Untitled-2` | L5944 | `2. Changed `[l32](22)` to `[l32](/l32)`` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L215 | `| `untitled:Untitled-2` | L6246 | `1. Changed `[l31](/l31)` back to `[l31](21)`` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_09-07-adding-recently-changed-posts-section.md` | L216 | `| `untitled:Untitled-2` | L6247 | `2. Changed `[l32](/l32)` back to `[l32](22)`` |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/2018-04-03-moments.md` | L18 | `| Elevation  | Creates experiences that rise above the routine. We are engaged, joyful, amazed, motivated. | [l1](l1) |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/2018-04-03-moments.md` | L19 | `| Pride      | Commemorates achievement. We puff out our chest and lift up our chin                        | [l2](l2) |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/2018-04-03-moments.md` | L20 | `| Insight    | Delivers realizations and transformations. We grow                                          | [l3](l3) |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/2018-04-03-moments.md` | L21 | `| Connection | Bond us with others. We feel warmth, unity, empathy, validation.                            | [l4](l4) |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/time-off-2024-08.md` | L89 | `| 1) July 21 - Zach           | [l1](l1)                   |                          |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/time-off-2024-08.md` | L90 | `| 2) July 28 - Family         | [l2](l2)                   |                          |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/time-off-2024-08.md` | L91 | `| 3) August 4 - Alone         | [l3](l3)                   | A at Farm; Z rowing      |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/7h-c3.md` | L44 | `| **Important**     | [l11](l11) | [l12](l12) |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/7h-c3.md` | L45 | `| **Not Important** | [l13](l13) | [l14](l14) |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/switch.md` | L14 | `| Direct the Rider      | [l1](l1) |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/switch.md` | L15 | `| Motivate the Elephant | [l2](l2) |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/switch.md` | L16 | `| Shape the Path        | [l3](l3) |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/sublime.md` | L29 | `| Loving-kindness | [l20](l20)        |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/sublime.md` | L30 | `| Compassion      | [l21](l21)        |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/sublime.md` | L31 | `| Altruistic Joy  | [l22](l22)        |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/sublime.md` | L32 | `| Equanimity      | [l23](l23)        |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/sublime.md` | L63 | `| Loving-kindness | [l10](l10)     |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/sublime.md` | L64 | `| Compassion      | [l11](l11)     |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/sublime.md` | L65 | `| Altruistic Joy  | [l12](l12)     |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/sublime.md` | L66 | `| Equanimity      | [l13](l13)     |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/operating-manual-2.md` | L92 | `| Sa  | [l31](l31)  | Free          |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/operating-manual-2.md` | L93 | `| Su  | [l32](l32)  | Free          |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/operating-manual-2.md` | L354 | `| Sa  | [l1](l1)  | Free          |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/operating-manual-2.md` | L355 | `| Su  | [l2](l2)  | Free          |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/operating-manual-2.md` | L383 | `| Sa  | [l21](l21)       | Free          |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/operating-manual-2.md` | L384 | `| Su  | [l22](l22)       | Free          |` |
+| `file://$HOME/gits/idvorkin.github.io/_d/coaching.md` | L248 | `| [l10](l10)     | [l11](l11)     |` |
+| `file://$HOME/gits/idvorkin.github.io/.cursorrules` | L179 | `- The link text and href must both match exactly (e.g., `[l31](l31)`)` |
+| `file://$HOME/gits/idvorkin.github.io/.cursorrules` | L208 | `| Sa  | [l31](l31) |` |
+| `file://$HOME/gits/idvorkin.github.io/chop-logs/exploring-different-rules.md` | L283 | `+ | Mon | [l31](l31) |` |
+| `file://$HOME/gits/idvorkin.github.io/CONVENTIONS.md` | L179 | `- The link text and href must both match exactly (e.g., `[l31](l31)`)` |
+| `file://$HOME/gits/idvorkin.github.io/CONVENTIONS.md` | L208 | `| Sa  | [l31](l31) |` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L182 | `| Business Results                   | Produced Widgets     | [l20](l20)           | I work with the business to help figure out the best "widgets we can make", by understanding what people want to buy and explaining how our factory runs.` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L183 | `| High performance people and teams  | Factory Workers      | [l21](l21)           | Workers in the factory are healthy, learning, want to come to work every day, and getting along with co-workers.` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L184 | `| Engineering Efficiency and Process | Operating procedures | [l22](l22)           | The factory is efficient: Production is good and improving. Widgets come out consistently and on schedule. New employees know what to do. Everyone knows what to do during emerge` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L185 | `| Technical Assets                   | Factory machines     | [l23](l23)           | Machines in the factory adjust quickly for the different types of widgets we build. Machines require minimal maintenance and have high efficiency.` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L485 | `| Junior       | [l10](l10)                 |` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L486 | `| Intermediate | [l11](l11)                 |` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2016-03-03-the-manager-book-2.md` | L487 | `| Senior/Staff | [l12](l12)                 |` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2018-01-04-7-habits.md` | L24 | `| Dependant (**Them**)    | [l1](l1) |` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2018-01-04-7-habits.md` | L25 | `| Independent (**Me**)    | [l2](l2) |` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2018-01-04-7-habits.md` | L26 | `| Interdependant (**We**) | [l3](l3) |` |
+| `file://$HOME/gits/idvorkin.github.io/_posts/2018-01-04-7-habits.md` | L27 | `| Renewal                 | [l4](l4) |` |
+| `file://$HOME/gits/idvorkin.github.io/.cursor/rules/101-blog-post-conventions.mdc` | L107 | `| Mon | [l31](mdc:l31) |` |
 
 </details>
 
@@ -188,8 +188,8 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main_module.ts` | L25 | `export function replaceListPlaceholdersInTables() {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main_module.ts` | L52 | `$(replaceListPlaceholdersInTables);` |
+| `file://$HOME/gits/idvorkin.github.io/src/main_module.ts` | L25 | `export function replaceListPlaceholdersInTables() {` |
+| `file://$HOME/gits/idvorkin.github.io/src/main_module.ts` | L52 | `$(replaceListPlaceholdersInTables);` |
 
 </details>
 
@@ -208,9 +208,9 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main_module.ts` | L4 | `export function replacePlaceholdersWithLists(listReplacements) {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main_module.ts` | L28 | `replacePlaceholdersWithLists(listReplacements);` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L229 | `⟪ 178 characters skipped ⟫art with 'l' followed by a number, and `replacePlaceholdersWithLists()` replaces the links in the table` |` |
+| `file://$HOME/gits/idvorkin.github.io/src/main_module.ts` | L4 | `export function replacePlaceholdersWithLists(listReplacements) {` |
+| `file://$HOME/gits/idvorkin.github.io/src/main_module.ts` | L28 | `replacePlaceholdersWithLists(listReplacements);` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L229 | `⟪ 178 characters skipped ⟫art with 'l' followed by a number, and `replacePlaceholdersWithLists()` replaces the links in the table` |` |
 
 </details>
 
@@ -229,14 +229,14 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_10-36-update-search-page-functionality.md` | L498 | `| 📄 `main_module.ts` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L318 | `| 📄 `main_module.ts` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1617 | `- import "./main_module";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1637 | `+ export * from './main_module';` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L3078 | `- export * from './main_module';` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L75 | `| 📄 `main_module.ts` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L229 | `| `untitled:Untitled-2` | L6339 | `The format matches what's expected by the TypeScript code in `main_module.ts`. The function `buildListReplacementMap()` looks for lists that start with 'l' followed by a number, and `replacePlaceholdersWithLists()` replaces the links in the table` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_11-42-last-modified-files-page-creation.md` | L408 | `| 📄 `main_module.ts` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_10-36-update-search-page-functionality.md` | L498 | `| 📄 `main_module.ts` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L318 | `| 📄 `main_module.ts` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1617 | `- import "./main_module";` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1637 | `+ export * from './main_module';` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L3078 | `- export * from './main_module';` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L75 | `| 📄 `main_module.ts` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L229 | `| `untitled:Untitled-2` | L6339 | `The format matches what's expected by the TypeScript code in `main_module.ts`. The function `buildListReplacementMap()` looks for lists that start with 'l' followed by a number, and `replacePlaceholdersWithLists()` replaces the links in the table` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_11-42-last-modified-files-page-creation.md` | L408 | `| 📄 `main_module.ts` |` |
 
 </details>
 
@@ -313,7 +313,7 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1617 | `- import "./main_module";` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1617 | `- import "./main_module";` |
 
 </details>
 
@@ -551,8 +551,8 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main_module.ts` | L25 | `export function replaceListPlaceholdersInTables() {` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/src/main_module.ts` | L52 | `$(replaceListPlaceholdersInTables);` |
+| `file://$HOME/gits/idvorkin.github.io/src/main_module.ts` | L25 | `export function replaceListPlaceholdersInTables() {` |
+| `file://$HOME/gits/idvorkin.github.io/src/main_module.ts` | L52 | `$(replaceListPlaceholdersInTables);` |
 
 </details>
 
@@ -583,7 +583,7 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1617 | `- import "./main_module";` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1617 | `- import "./main_module";` |
 
 </details>
 
@@ -672,14 +672,14 @@ _****_
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L318 | `| 📄 `main_module.ts` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1617 | `- import "./main_module";` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1637 | `+ export * from './main_module';` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L3078 | `- export * from './main_module';` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_10-36-update-search-page-functionality.md` | L498 | `| 📄 `main_module.ts` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L75 | `| 📄 `main_module.ts` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L229 | `| `untitled:Untitled-2` | L6339 | `The format matches what's expected by the TypeScript code in `main_module.ts`. The function `buildListReplacementMap()` looks for lists that start with 'l' followed by a number, and `replacePlaceholdersWithLists()` replaces the links in the table` |` |
-| `file:///Users/idvorkin/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_11-42-last-modified-files-page-creation.md` | L408 | `| 📄 `main_module.ts` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L318 | `| 📄 `main_module.ts` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1617 | `- import "./main_module";` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L1637 | `+ export * from './main_module';` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-22-javascript-build-system-simplification.md` | L3078 | `- export * from './main_module';` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_10-36-update-search-page-functionality.md` | L498 | `| 📄 `main_module.ts` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L75 | `| 📄 `main_module.ts` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_08-50-parcel-module-export-error-troubleshooting.md` | L229 | `| `untitled:Untitled-2` | L6339 | `The format matches what's expected by the TypeScript code in `main_module.ts`. The function `buildListReplacementMap()` looks for lists that start with 'l' followed by a number, and `replacePlaceholdersWithLists()` replaces the links in the table` |` |
+| `file://$HOME/gits/idvorkin.github.io/zz-chop-logs/2025-03-07_11-42-last-modified-files-page-creation.md` | L408 | `| 📄 `main_module.ts` |` |
 
 </details>
 
