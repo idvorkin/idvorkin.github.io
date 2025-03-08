@@ -450,7 +450,8 @@
             "last_modified": "2025-03-07T11:51:39-08:00",
             "markdown_path": "about.md",
             "outgoing_links": [
-                "/new-skills"
+                "/new-skills",
+                "/recent"
             ],
             "redirect_url": "",
             "title": "Where am I?",
@@ -2300,7 +2301,7 @@
             "incoming_links": [
                 "/life-as-business"
             ],
-            "last_modified": "2025-03-04T07:55:07-08:00",
+            "last_modified": "2025-03-08T09:45:30-08:00",
             "markdown_path": "_d/energy-abundance.md",
             "outgoing_links": [
                 "/activation",
@@ -3631,12 +3632,12 @@
         },
         "/osx": {
             "description": "I pretty much use mac exclusively. I have 3 at work, and a mac mini at home, and I’m an automation nerd so I try to have everything auto install/syncronize across the machines. On the mac, I’m either in chrome/edge, Cursor (the new VS.code), the terminal (I use iterm), capcut (video editor), zoom, or the few super handy utilities I list below.\n\n",
-            "doc_size": 16000,
+            "doc_size": 18000,
             "file_path": "_site/osx.html",
             "incoming_links": [
                 "/tools"
             ],
-            "last_modified": "2025-02-03T05:56:51-08:00",
+            "last_modified": "2025-03-08T12:47:23-08:00",
             "markdown_path": "_d/osx.md",
             "outgoing_links": [
                 "/screencast"
@@ -3946,7 +3947,9 @@
             "description": "This page shows the most recently modified content across the site, helping you discover what’s been updated lately.\n\n",
             "doc_size": 12000,
             "file_path": "_site/recent.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/about"
+            ],
             "last_modified": "2025-03-07T11:51:39-08:00",
             "markdown_path": "_d/recent.md",
             "outgoing_links": [
