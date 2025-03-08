@@ -4,9 +4,8 @@
  *  Clever idea from:
  *       https://www.silvabokis.com/squarespace-tips/how-to-create-hideshow-faqs-in-squarespace
  */
-#hide-end-collapse
-{
-    display:none
+#hide-end-collapse {
+  display: none;
 }
 /*
 Unicode in CSS
@@ -16,17 +15,17 @@ Nice unicode charectors
 */
 /* Let close be a Unicode plus with a circle */
 .ui-closed:before {
-  font-family:monospace;
-  content:"\2295         ";
-  font-size:1.5em;
-  color:darkgrey
+  font-family: monospace;
+  content: "\2295         ";
+  font-size: 1.5em;
+  color: darkgrey;
 }
 
 /* Let open be a Unicode plus with a circle */
 .ui-open:before {
-  font-family:monospace;
-  content:"\229D     ";
-  font-size:1.5em;
+  font-family: monospace;
+  content: "\229D     ";
+  font-size: 1.5em;
   font-weight: none;
-  color:darkgrey
+  color: darkgrey;
 }

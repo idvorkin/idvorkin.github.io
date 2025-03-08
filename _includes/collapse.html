@@ -1,23 +1,20 @@
 <script>
-    // End collapse by using a 
-    // #hide end collapse
-    // css in collapseHelper 
-    $(document).ready(function(){
-
-
+  // End collapse by using a
+  // #hide end collapse
+  // css in collapseHelper
+  $(document).ready(function () {
     // For, HN:  until we get a peer, or explicit end mark.
     // For LI/OL, if have children, till closed.
 
     // Force a collapse with an #hide end collapse
     var openingTags = "h3";
-    var closingTags = openingTags+",h3,h2,#hide-end-collapse"
+    var closingTags = openingTags + ",h3,h2,#hide-end-collapse";
 
-            
-    $(openingTags).addClass('ui-closed').css('cursor','pointer');
+    $(openingTags).addClass("ui-closed").css("cursor", "pointer");
     $(openingTags).nextUntil(closingTags).slideToggle();
-    $(openingTags).click(function() {
+    $(openingTags).click(function () {
       $(this).nextUntil(closingTags).slideToggle();
-      $(this).toggleClass('ui-closed ui-open');
-      });
+      $(this).toggleClass("ui-closed ui-open");
     });
+  });
 </script>
