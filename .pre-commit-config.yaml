@@ -20,3 +20,12 @@ repos:
     rev: v2.8.1
     hooks:
       - id: dasel-validate
+
+  - repo: local
+    hooks:
+      - id: vitest-related
+        name: Run Vitest on changed TypeScript files
+        entry: .pre-commit-hooks/vitest-ts-files.sh
+        language: script
+        types: [ts]
+        pass_filenames: false

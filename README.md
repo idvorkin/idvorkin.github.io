@@ -27,6 +27,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
 - [Technical Wizardry](#technical-wizardry)
     - [Typescript - Reduce the easy Javascript Errors](#typescript---reduce-the-easy-javascript-errors)
     - [Cypress - E2E and Unit Testing](#cypress---e2e-and-unit-testing)
+    - [Vitest - Unit Testing](#vitest---unit-testing)
     - [Useful scripts](#useful-scripts)
     - [Re-writing from scratch](#re-writing-from-scratch)
     - [Compilation workflow](#compilation-workflow)
@@ -104,18 +105,24 @@ This blog also serves as a home to let me experiment with fun tech. Here's some 
 
 ### Cypress - E2E and Unit Testing
 
-Install Dependancies for running on AWS VM's (And maybe CI packages):
+Cypress is used for end-to-end testing and some unit testing. The tests are located in the `cypress/e2e` directory.
 
-    yum install -y xorg-x11-server-Xvfb gtk2-devel gtk3-devel libnotify-devel GConf2 nss libXScrnSaver alsa-lib
+### Vitest - Unit Testing
 
-Need to do a coverage run
+Vitest is used for unit testing TypeScript code. The tests are located in the `src/__tests__` directory.
 
-    npm run coverage
+To run the tests:
 
-Note you can debug slow cypress tests via:
+```bash
+# Run all tests
+npm test
 
-    set DEBUG=cypress*
-    npm run cypress:run
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage
+npm run test:coverage
+```
 
 ### Useful scripts
 

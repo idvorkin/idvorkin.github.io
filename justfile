@@ -6,7 +6,11 @@ default:
 # - js-build: Build all JavaScript/TypeScript files for production
 # - js-watch: Watch for changes during development
 # - js-typecheck: Run TypeScript type checking without emitting files
-# - js-test: Run Jest tests
+# - js-test: Run Vitest tests
+# - js-test-watch: Run Vitest tests in watch mode
+# - js-test-coverage: Run Vitest tests with coverage
+# - js-test-coverage-html: Run Vitest tests with coverage and open HTML report
+# - js-test-ui: Run Vitest UI for interactive test viewing
 # - js-lint: Check code formatting
 # - js-format: Format code with Prettier
 # - js-clean: Clean build artifacts
@@ -30,9 +34,33 @@ js-typecheck:
     # Using TypeScript for type checking only (no transpilation)
     npx tsc --noEmit
 
-# Run Jest tests
+# Run Vitest tests
 js-test:
-    npx jest
+    npx vitest run
+
+# Run Vitest tests in watch mode
+js-test-watch:
+    npx vitest
+
+# Run Vitest tests with coverage
+js-test-coverage:
+    npx vitest run --coverage
+
+# Run Vitest tests with coverage and generate HTML report
+js-test-coverage-html:
+    #!/usr/bin/env sh
+    # Create the output directory if it doesn't exist
+    mkdir -p ~/tmp/idvorkin.github.io/vitest
+    # Run Vitest with coverage and generate HTML report
+    npx vitest run --coverage
+    # Copy the coverage report to the tmp directory
+    cp -r coverage ~/tmp/idvorkin.github.io/vitest/
+    # Open the report
+    open ~/tmp/idvorkin.github.io/vitest/coverage/index.html
+
+# Run Vitest UI for interactive test viewing
+js-test-ui:
+    npx vitest --ui
 
 # Check code formatting
 js-lint:

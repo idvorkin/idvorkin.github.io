@@ -66,3 +66,25 @@ export function createElement<T extends HTMLElement>(
 
   return element;
 }
+
+/**
+ * Finds the closest parent element matching a selector
+ * @param element The starting element
+ * @param selector The CSS selector to match
+ * @returns The matching parent element or null if not found
+ */
+export function findClosestParent(
+  element: HTMLElement,
+  selector: string
+): HTMLElement | null {
+  let currentElement = element.parentElement;
+
+  while (currentElement) {
+    if (currentElement.matches(selector)) {
+      return currentElement;
+    }
+    currentElement = currentElement.parentElement;
+  }
+
+  return null;
+}
