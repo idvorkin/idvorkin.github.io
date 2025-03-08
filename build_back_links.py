@@ -133,10 +133,20 @@ async def process_markdown_paths_in_parallel(
                     repo.git.ls_files("--error-unmatch", relative_path)
                     is_tracked = True
                 except git.GitCommandError:
-                    return path, ""
+                    # File is not tracked by git, use current time
+                    current_time = datetime.now().isoformat()
+                    console.print(
+                        f"[yellow]File not tracked by git, using current time for:[/] {path}"
+                    )
+                    return path, current_time
 
                 if not is_tracked:
-                    return path, ""
+                    # File is not tracked by git, use current time
+                    current_time = datetime.now().isoformat()
+                    console.print(
+                        f"[yellow]File not tracked by git, using current time for:[/] {path}"
+                    )
+                    return path, current_time
 
                 # Create the git command
                 cmd = [
@@ -161,18 +171,38 @@ async def process_markdown_paths_in_parallel(
                     git_log = stdout.decode().strip()
 
                     if not git_log:
-                        return path, ""
+                        # No git history, use current time
+                        current_time = datetime.now().isoformat()
+                        console.print(
+                            f"[yellow]No git history, using current time for:[/] {path}"
+                        )
+                        return path, current_time
 
                     try:
                         dt = datetime.strptime(git_log, "%Y-%m-%d %H:%M:%S %z")
                         iso_date = dt.isoformat()
                         return path, iso_date
                     except ValueError:
-                        return path, ""
+                        # Invalid date format, use current time
+                        current_time = datetime.now().isoformat()
+                        console.print(
+                            f"[yellow]Invalid git date format, using current time for:[/] {path}"
+                        )
+                        return path, current_time
                 else:
-                    return path, ""
-            except Exception:
-                return path, ""
+                    # Git command failed, use current time
+                    current_time = datetime.now().isoformat()
+                    console.print(
+                        f"[yellow]Git command failed, using current time for:[/] {path}"
+                    )
+                    return path, current_time
+            except Exception as e:
+                # Any other exception, use current time
+                current_time = datetime.now().isoformat()
+                console.print(
+                    f"[yellow]Exception ({str(e)}), using current time for:[/] {path}"
+                )
+                return path, current_time
 
     # Create tasks for all paths
     tasks = [get_last_modified_time_async(path) for path in markdown_paths if path]
@@ -975,19 +1005,18 @@ def delta(
         console.print("[yellow]No markdown files to process[/]")
         return
 
-    # Process last modified times in parallel
-    console.print(
-        f"[blue]Updating last_modified dates for {len(markdown_paths)} files[/]"
-    )
-    last_modified_times = asyncio.run(
-        process_markdown_paths_in_parallel(markdown_paths)
-    )
+    # Use current time for all files instead of git history
+    current_time = datetime.now().isoformat()
+    console.print(f"[blue]Using current time ({current_time}) for all files[/]")
+
+    # Create a mapping of file paths to the current time
+    last_modified_times = {path: current_time for path in markdown_paths}
 
     # Create a mapping of basenames to last modified times for easier matching
     basename_to_time = {}
-    for path, time_value in last_modified_times.items():
+    for path in markdown_paths:
         basename = os.path.basename(path)
-        basename_to_time[basename] = time_value
+        basename_to_time[basename] = current_time
 
     # Update the last modified times in the existing data
     updated_count = 0
@@ -998,21 +1027,21 @@ def delta(
 
         # Try direct match first
         if markdown_path in last_modified_times:
-            page_data["last_modified"] = last_modified_times[markdown_path]
+            page_data["last_modified"] = current_time
             updated_count += 1
             continue
 
         # Try matching by basename
         basename = os.path.basename(markdown_path)
         if basename in basename_to_time:
-            page_data["last_modified"] = basename_to_time[basename]
+            page_data["last_modified"] = current_time
             updated_count += 1
             continue
 
         # Try matching by relative path
-        for path in last_modified_times:
+        for path in markdown_paths:
             if path.endswith(markdown_path):
-                page_data["last_modified"] = last_modified_times[path]
+                page_data["last_modified"] = current_time
                 updated_count += 1
                 break
 
