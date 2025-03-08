@@ -110,7 +110,23 @@ OSX has several built-in ways to manage screen resolutions and displays:
      - Can override system limitations for refresh rates
      - Free and open source
 
-5. **Testing Your Display**:
+5. **EDID Override Method for 4K@120Hz**:
+
+   - Apple Silicon Macs can be tricked into supporting 4K@120Hz over HDMI using EDID overrides
+   - This method works with compatible USB-C to HDMI 2.1 adapters
+   - Steps to enable:
+     1. Install [BetterDisplay](https://github.com/waydabber/BetterDisplay) and [AW EDID Editor](https://www.analogway.com/americas/products/software-tools/aw-edid-editor/)
+     2. Export your display's EDID binary using BetterDisplay
+     3. Edit the EDID in AW EDID Editor:
+        - Change EDID format to V1.4 (change Revision from 3 to 4)
+        - Change Video Interface bits to DisplayPort (0101)
+     4. Upload and apply the modified EDID in BetterDisplay
+     5. Set your resolution to 4K@120Hz using BetterDisplay
+   - For some adapters, you may need to update firmware (e.g., [Cable Matters adapter](https://www.amazon.com/dp/B08MSWMXT4))
+   - I've saved a working EDID configuration in my [Settings repository](https://github.com/idvorkin/Settings/commit/e08bba550fa1523b6d099601e7a09146213587df)
+   - More details in this [MacRumors forum thread](https://forums.macrumors.com/threads/mac-mini-4k-120hz.2267035/page-31?post=31952813#post-31952813)
+
+6. **Testing Your Display**:
 
    - Use [TestUFO Refresh Rate Test](https://www.testufo.com/refreshrate) to verify your display's refresh rate and resolution
    - For accurate results:
@@ -119,10 +135,12 @@ OSX has several built-in ways to manage screen resolutions and displays:
      - Use full-screen mode
    - TestUFO helps identify frame skipping and confirms if your custom resolution settings are working correctly
 
-6. **Tips**:
+7. **Tips**:
    - For external displays, try "Default for display" first
    - For Retina displays, "Looks like" resolutions scale content while maintaining sharpness
    - Use Option key in Display settings to access HiDPI modes
+   - Some USB-C to HDMI adapters work better than others for high refresh rates
+   - YCbCr422 color format is typically used for 4K@120Hz; RGB or YCbCr444 may require additional tweaking
 
 ## Philisophy
 
