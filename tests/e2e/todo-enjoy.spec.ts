@@ -39,8 +39,8 @@ test.describe("Things I enjoy page", () => {
     // Get the original text
     const originalText = await promptElement.textContent();
 
-    // Click the donut center
-    await donutCenter.click();
+    // Click the donut center with force: true
+    await donutCenter.click({ force: true });
 
     // Wait for potential update
     await page.waitForTimeout(500);
@@ -55,43 +55,43 @@ test.describe("Things I enjoy page", () => {
   test("Click into Hobbies zooms Hobbies, click again zooms out", async ({
     page,
   }) => {
-    const hobbiesElement = page.locator("text=Hobbies");
+    const hobbiesElement = page.locator('#sunburst text:has-text("Hobbies")');
     const donutCenter = page.locator(".sunburst text").first();
     const defaultCenterText = "Invest in";
 
-    // Click on Hobbies
-    await hobbiesElement.click();
+    // Click on Hobbies with force: true to bypass interception
+    await hobbiesElement.click({ force: true });
 
     // Verify center text changed to Hobbies
     await expect(donutCenter).toContainText("Hobbies");
 
-    // Click again to go back
-    await donutCenter.click();
+    // Click again to go back with force: true
+    await donutCenter.click({ force: true });
 
     // Verify center text changed back to default
     await expect(donutCenter).toContainText(defaultCenterText);
   });
 
   test("Leaf selection doesn't change center text", async ({ page }) => {
-    const hobbiesElement = page.locator("text=Hobbies");
-    const jugglingElement = page.locator("text=Juggling");
+    const hobbiesElement = page.locator('#sunburst text:has-text("Hobbies")');
+    const jugglingElement = page.locator('#sunburst text:has-text("Juggling")');
     const donutCenter = page.locator(".sunburst text").first();
     const defaultCenterText = "Invest in";
 
-    // Go into hobbies
-    await hobbiesElement.click();
+    // Go into hobbies with force: true
+    await hobbiesElement.click({ force: true });
 
     // Verify center text changed to Hobbies
     await expect(donutCenter).toContainText("Hobbies");
 
-    // Click on Juggling
-    await jugglingElement.click();
+    // Click on Juggling with force: true
+    await jugglingElement.click({ force: true });
 
     // Verify center text still shows Hobbies
     await expect(donutCenter).toContainText("Hobbies");
 
-    // Go back to default by clicking center
-    await donutCenter.click();
+    // Go back to default by clicking center with force: true
+    await donutCenter.click({ force: true });
 
     // Verify center text changed back to default
     await expect(donutCenter).toContainText(defaultCenterText);

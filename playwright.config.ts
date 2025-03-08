@@ -6,14 +6,15 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: 0,
   workers: 10,
-  reporter: "html",
+  reporter: [["html", { open: "never" }]],
   maxFailures: 1,
+  timeout: 30000,
   use: {
     baseURL: "http://localhost:4000",
     trace: "on-first-retry",
     // Balanced optimizations for speed and reliability
-    actionTimeout: 30000,
-    navigationTimeout: 45000,
+    actionTimeout: 5000,
+    navigationTimeout: 10000,
     // Standard viewport size
     viewport: { width: 1280, height: 800 },
     ignoreHTTPSErrors: true,
@@ -39,5 +40,6 @@ export default defineConfig({
     reuseExistingServer: !process.env.CI,
     stdout: "pipe",
     stderr: "pipe",
+    timeout: 60000,
   },
 });
