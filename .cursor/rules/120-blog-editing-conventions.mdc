@@ -1,0 +1,242 @@
+---
+description: ALWAYS follow these conventions when editing blog content to ensure consistency and maintainability
+globs: ["_posts/*.md", "_d/*.md", "**/*.md"]
+tags: [blog, editing, conventions, jekyll]
+priority: 2
+version: 1.0.0
+---
+
+# Blog Editing Conventions
+
+<version>1.0.0</version>
+
+## Context
+- When creating or editing blog posts
+- When managing permalinks and links between content
+- When adding images, includes, or other special elements
+- When formatting content for readability and consistency
+
+## Terminal Command Conventions
+
+### Pager Commands
+
+For ANY commands that would use a pager or require user interaction, you should append ` | /bin/cat` to the command (NOT just `cat` as it's aliased to `bat`). Otherwise, the command will break.
+
+This applies to the following commands:
+- git
+- less
+- head
+- tail
+- more
+- man
+- Any other command that would normally open a pager
+
+#### Examples
+
+<example>
+# Good: Appending | /bin/cat to commands with pagers
+git log | /bin/cat
+git diff | /bin/cat
+less file.txt | /bin/cat
+head -n 100 large_file.txt | /bin/cat
+</example>
+
+<example type="invalid">
+# Bad: Not appending | /bin/cat to commands with pagers
+git log
+git diff
+less file.txt
+head -n 100 large_file.txt
+</example>
+
+### Background Commands
+
+For commands that are long running or expected to run indefinitely until interruption, run them in the background by:
+1. Adding `&` at the end of the command
+2. Setting `is_background` to true when using the run_terminal_cmd tool
+
+## Permalink Management
+
+When changing a post's permalink:
+
+1. Use the `redirect_from` front matter to maintain compatibility
+2. This ensures old links continue to work
+3. IMPORTANT: Do not use 'aliases' in front matter - it doesn't work
+
+### Correct Format
+
+```yaml
+---
+permalink: /new-url
+redirect_from:
+  - /old-url # ✅ correct way
+---
+```
+
+### Incorrect Format
+
+```yaml
+---
+permalink: /new-url
+aliases: ["/old-url"] # ❌ wrong way - doesn't work
+---
+```
+
+### Additional Steps
+
+1. Check existing links to the post in other content and update if needed
+2. The redirects are handled by Jekyll, no need to modify back-links.json
+
+## Link Conventions
+
+When adding links in markdown documents:
+
+1. Always check `back-links.json` to find the correct redirect URL
+2. Use the format `[visible text](/redirect-url)`
+3. Never use relative paths for internal links
+
+### Steps to Find Correct URLs
+
+1. Check `back-links.json` for the correct permalink
+2. Use the permalink as the link URL, not the filename
+3. Ensure the URL starts with a forward slash
+
+### Common Redirects
+
+Some common redirects to be aware of:
+- Meditation content: use `/siy` instead of `/meditation`
+- Technical skills: use `/technical-skills` instead of `/tech`
+- Management: use `/management` instead of `/managing`
+
+## Using summarize-page Includes
+
+When you want to include a summary of another page's content:
+
+1. Use the `summarize-page` include with the format:
+   ```markdown
+   {% include summarize-page.html src="/page-url" %}
+   ```
+
+2. Before adding the include:
+   - Always check `back-links.json` to confirm the correct permalink
+   - The src should match the permalink, not the filename
+   - Example: Use `/siy` for meditation content, not `/meditation`
+
+3. The include will automatically:
+   - Pull in the description from the target page
+   - Add a link attribution to the source
+   - Format it with proper styling
+
+### Usage Patterns
+
+Common usage patterns:
+- After introducing a concept that's detailed elsewhere
+- When listing related topics
+- In sections that reference other content
+
+### Formatting
+
+- Ensure there's a blank line before and after the include
+- Place the include near relevant content
+- Use a brief introduction before the include to provide context
+
+## Table of Contents Management
+
+When modifying markdown headings:
+
+1. Always update the Table of Contents (TOC)
+2. The TOC is managed by vim-markdown-toc
+3. For new posts: Place TOC immediately after the first paragraph
+4. For existing posts: Don't move the TOC location
+5. Keep the special markers intact:
+
+```markdown
+<!-- prettier-ignore-start -->
+<!-- vim-markdown-toc-start -->
+[TOC content]
+<!-- vim-markdown-toc-end -->
+<!-- prettier-ignore-end -->
+```
+
+## List Replacements in Tables
+
+When using lists that should be inserted into tables:
+
+1. In the table, use the format `[lXX](lXX)` where:
+   - The link text and href must both match exactly (e.g., `[l31](l31)`)
+   - XX is the list number (e.g., 31, 32, etc.)
+   - **IMPORTANT**: List numbers must be unique across the entire file
+   - If adding a new list, check existing lists in the file and use a new unique number
+
+2. Below the table, structure the lists like this:
+   ```markdown
+   <div/>
+
+   - lXX
+   - List item 1
+   - List item 2
+
+   <div/>
+   ```
+
+3. Important formatting rules:
+   - Each list must start with `<div/>`
+   - First list item must be the list identifier (e.g., `l31`)
+   - List must end with `<div/>`
+   - The list identifier in the table link must match exactly
+   - Never reuse list numbers within the same file
+
+## Using Alert Includes
+
+When you want to add an alert box to your content:
+
+1. Use the `alert` include with the format:
+   ```markdown
+   {% include alert.html content="Your alert message here" style="info" %}
+   ```
+
+2. Available styles:
+   - `primary` - Blue, used for primary actions/information
+   - `secondary` - Gray, used for secondary information
+   - `success` - Green, used for success messages
+   - `danger` - Red, used for error messages or dangerous actions
+   - `warning` - Yellow, used for warning messages
+   - `info` - Light blue (default), used for informational messages
+   - `light` - Very light gray, used for subtle alerts
+   - `dark` - Dark gray, used for high-contrast alerts
+
+3. Best practices:
+   - Use alerts sparingly to maintain their impact
+   - Choose appropriate styles for the message context
+   - Keep alert messages concise and clear
+   - Place alerts near the relevant content they reference
+
+## Writing Style and Formatting
+
+1. **No Emojis**
+   - Do not use emojis in blog posts or documentation
+   - This includes titles, headers, and content
+   - Keep the writing style clean and professional
+
+2. **Style Guidelines**
+   - Fun and quirky
+   - Technical, but not boring
+   - Prefer descriptive variable names over comments
+   - Prefer returning from a function vs nesting ifs
+
+## Opening Blog Posts During Development
+
+When working on a blog post:
+
+1. Get the permalink from the post's front matter
+2. Use this command to open the post in the default browser:
+   ```bash
+   open http://localhost:4000{permalink}
+   ```
+
+3. If working on a specific section, append the anchor:
+   ```bash
+   open http://localhost:4000{permalink}#{anchor}
+   ```
+
+Note: Jekyll must be running locally (localhost:4000)

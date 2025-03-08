@@ -1,0 +1,78 @@
+---
+description: ALWAYS follow these practices when using AI chat for programming and writing tasks
+globs: ["**/*.md", "**/*.js", "**/*.ts", "**/*.py"]
+tags: [chat, ai, programming, writing]
+priority: 2
+version: 1.0.0
+---
+
+# Chat Oriented Programming and Writing
+
+<version>1.0.0</version>
+
+## Context
+- When using AI chat to assist with programming tasks
+- When using AI chat to assist with writing and content creation
+- When documenting changes made through AI assistance
+
+## Chat Oriented Programming (CHOP)
+
+CHOP is the practice of using AI chat to assist with programming tasks. When making CHOP changes:
+
+1. Document all changes in the appropriate conventions file
+2. Follow consistent patterns for similar types of changes
+3. Use the chat history to maintain context and consistency
+4. Ensure code quality and maintainability
+
+### Best Practices
+
+- Break complex tasks into smaller, manageable chunks
+- Provide clear context and requirements for each task
+- Review and test all generated code before committing
+- Document any limitations or edge cases discovered during implementation
+
+## Chat Oriented Writing (CHOW)
+
+CHOW is the practice of using AI chat to assist with writing and content creation. Similar to CHOP but focused on prose and documentation rather than code.
+
+### Best Practices
+
+- Maintain a consistent voice and style across content
+- Provide clear guidelines on tone, audience, and purpose
+- Review all generated content for accuracy and coherence
+- Ensure proper formatting and structure for the target platform
+
+## Documentation
+
+When using CHOP or CHOW for significant changes:
+
+1. Document the approach taken in comments or documentation
+2. Note any challenges or limitations encountered
+3. Include references to relevant chat sessions if applicable
+4. Ensure the documentation is accessible to other team members
+
+## Examples
+
+<example>
+# Good: Documenting CHOP changes
+// This function was refactored using CHOP to improve performance
+// Original implementation used a nested loop approach
+// New implementation uses a map-reduce pattern for O(n) complexity
+function processData(items) {
+  // Implementation details
+}
+</example>
+
+<example>
+# Good: Applying CHOW principles
+<!-- 
+This section was written using CHOW with the following guidelines:
+- Technical audience with intermediate knowledge
+- Focus on practical applications rather than theory
+- Include concrete examples for each concept
+-->
+
+## Advanced Techniques
+
+When implementing advanced techniques, consider these key factors...
+</example>

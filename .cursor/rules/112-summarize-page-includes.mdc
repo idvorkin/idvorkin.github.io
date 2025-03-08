@@ -1,0 +1,71 @@
+---
+description: ALWAYS check back-links.json to confirm the correct permalink when using summarize-page includes
+globs: ["_posts/*.md", "_d/*.md"]
+tags: [blog, includes, jekyll]
+priority: 2
+version: 1.0.0
+---
+
+# Using summarize-page Includes
+
+<version>1.0.0</version>
+
+## Context
+- When including a summary of another page's content
+- When referencing related topics
+- When creating cross-references between blog posts
+
+## Rule Details
+
+When you want to include a summary of another page's content:
+
+1. Use the `summarize-page` include with the format:
+   ```markdown
+   {% include summarize-page.html src="/page-url" %}
+   ```
+
+2. Before adding the include:
+   - Always check `back-links.json` to confirm the correct permalink
+   - The src should match the permalink, not the filename
+   - Example: Use `/siy` for meditation content, not `/meditation`
+
+3. The include will automatically:
+   - Pull in the description from the target page
+   - Add a link attribution to the source
+   - Format it with proper styling
+
+## Usage Patterns
+
+Common usage patterns:
+- After introducing a concept that's detailed elsewhere
+- When listing related topics
+- In sections that reference other content
+
+## Examples
+
+<example>
+# Good: Using summarize-page with correct permalinks
+**Affirmations**
+Reinforcing positive beliefs and mindsets I want to cultivate.
+
+{% include summarize-page.html src="/affirmations" %}
+
+**Meditation**
+My practice for mental clarity and focus.
+
+{% include summarize-page.html src="/siy" %}
+</example>
+
+<example type="invalid">
+# Bad: Using incorrect permalinks
+**Meditation**
+My practice for mental clarity and focus.
+
+{% include summarize-page.html src="/meditation" %}  # Wrong: should be /siy
+</example>
+
+## Formatting
+
+- Ensure there's a blank line before and after the include
+- Place the include near relevant content
+- Use a brief introduction before the include to provide context

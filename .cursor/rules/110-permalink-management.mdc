@@ -1,0 +1,74 @@
+---
+description: ALWAYS use redirect_from front matter when changing permalinks to maintain compatibility with existing links
+globs: ["_posts/*.md", "_d/*.md"]
+tags: [blog, permalinks, jekyll]
+priority: 2
+version: 1.0.0
+---
+
+# Permalink Management
+
+<version>1.0.0</version>
+
+## Context
+- When changing a post's permalink
+- When restructuring blog content
+- When moving content to a new URL
+
+## Rule Details
+
+When changing a post's permalink:
+
+1. Use the `redirect_from` front matter to maintain compatibility
+2. This ensures old links continue to work
+3. IMPORTANT: Do not use 'aliases' in front matter - it doesn't work
+
+### Correct Format
+
+```yaml
+---
+permalink: /new-url
+redirect_from:
+  - /old-url # ✅ correct way
+---
+```
+
+### Incorrect Format
+
+```yaml
+---
+permalink: /new-url
+aliases: ["/old-url"] # ❌ wrong way - doesn't work
+---
+```
+
+### Additional Steps
+
+1. Check existing links to the post in other content and update if needed
+2. The redirects are handled by Jekyll, no need to modify back-links.json
+
+## Examples
+
+<example>
+# Good: Using redirect_from for permalink changes
+---
+title: "My Blog Post"
+permalink: /new-post-url
+redirect_from:
+  - /old-post-url
+  - /another-old-url
+---
+</example>
+
+<example type="invalid">
+# Bad: Using aliases instead of redirect_from
+---
+title: "My Blog Post"
+permalink: /new-post-url
+aliases: ["/old-post-url", "/another-old-url"]
+---
+</example>
+
+## Reference Example
+
+See `_posts/2018-01-01-fuck-pride.md` for a good example of permalink redirection.

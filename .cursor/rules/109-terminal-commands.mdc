@@ -1,0 +1,68 @@
+---
+description: ALWAYS append | /bin/cat to commands that use pagers or require user interaction to prevent command breakage
+globs: ["*.sh", "justfile"]
+tags: [terminal, commands, workflow]
+priority: 2
+version: 1.0.0
+---
+
+# Terminal Command Conventions
+
+<version>1.0.0</version>
+
+## Context
+- When running terminal commands in scripts or through Cursor
+- When working with commands that use pagers or require user interaction
+- When running long-running commands that should continue in the background
+
+## Rule Details
+
+### Pager Commands
+
+For ANY commands that would use a pager or require user interaction, you should append ` | /bin/cat` to the command (NOT just `cat` as it's aliased to `bat`). Otherwise, the command will break.
+
+This applies to the following commands:
+- git
+- less
+- head
+- tail
+- more
+- man
+- Any other command that would normally open a pager
+
+#### Examples
+
+<example>
+# Good: Appending | /bin/cat to commands with pagers
+git log | /bin/cat
+git diff | /bin/cat
+less file.txt | /bin/cat
+head -n 100 large_file.txt | /bin/cat
+</example>
+
+<example type="invalid">
+# Bad: Not appending | /bin/cat to commands with pagers
+git log
+git diff
+less file.txt
+head -n 100 large_file.txt
+</example>
+
+### Background Commands
+
+For commands that are long running or expected to run indefinitely until interruption, run them in the background by:
+1. Adding `&` at the end of the command
+2. Setting `is_background` to true when using the run_terminal_cmd tool
+
+#### Examples
+
+<example>
+# Good: Running long-running commands in the background
+npm start &
+python server.py &
+</example>
+
+## Coding Style Preferences
+
+1. Prefer returning from a function vs nesting ifs
+2. Prefer descriptive variable names over comments
