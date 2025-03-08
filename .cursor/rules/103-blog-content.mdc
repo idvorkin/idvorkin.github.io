@@ -1,91 +1,387 @@
 ---
-description: ALWAYS use when writing or editing blog content
+description: ALWAYS use when creating, editing, or managing blog content to ensure consistency and quality
 globs: ["_posts/*.md", "_d/*.md"]
-tags: [blog, content, writing]
+tags: [blog, content, writing, conventions]
 priority: 1
 version: 1.0.0
 ---
 
-# Blog Content Writing Standards
+# Blog Content Management Conventions
 
 <version>1.0.0</version>
 
 ## Context
-- When creating new blog content
-- When editing existing content
-- When adding references and citations
+- When creating new blog posts
+- When editing existing blog content
+- When adding images, links, or references
+- When organizing or restructuring content
+- When developing and testing blog posts
 
-## Requirements
+## Content Placement Strategy
 
-1. Content Preparation
-   - Review back-links.json for context
-   - Check for existing content:
-     ```bash
-     qa_blog where "your exact question in quotes"
+### Always Use qa_blog Tool First
+
+Before adding new content to the blog, always use the `qa_blog where` tool to determine the optimal placement:
+
+```bash
+qa_blog where "your exact topic in quotes"
+```
+
+This tool will:
+1. Analyze the existing content structure
+2. Identify the most relevant locations for your topic
+3. Provide a primary recommended location
+4. Suggest alternative locations
+5. Offer structuring and organization tips
+
+### Interpreting qa_blog Results
+
+The tool will return several sections:
+
+1. **PRIMARY LOCATION**: The most appropriate file and section for your content
+2. **ALTERNATIVE LOCATIONS**: Other suitable places where the content could fit
+3. **STRUCTURING TIPS**: Guidance on how to organize the content
+4. **ORGANIZATION TIPS**: Broader suggestions for content categorization
+
+### After Using qa_blog
+
+Once you have the recommendations:
+
+1. Check the primary recommended location to see what's already there
+2. Determine if you should:
+   - Add to an existing section
+   - Create a new section
+   - Split content between multiple locations
+   - Create a new dedicated post with cross-references
+
+3. If adding to an existing section, ensure your content:
+   - Flows naturally with existing material
+   - Doesn't duplicate information
+   - Maintains the same style and tone
+
+## Blog Post Creation and Structure
+
+### File Naming and Organization
+
+1. **File Names**:
+   - Use descriptive names without dates
+   - Example: `advice.md`, `how-to-learn.md`, `productivity-tips.md`
+
+2. **Drafts**:
+   - Place new blog posts in the `_d` directory for drafts
+   - Example: `_d/advice.md`
+
+3. **Front Matter**:
+   - Ensure the `permalink` field is unique and descriptive
+   - Example:
+     ```yaml
+     permalink: /advice
      ```
-   - Study example posts:
-     - _posts/2020-04-01-Igor-Eulogy.md
-     - _d/pride.md
 
-2. Book References
-   - Analyze blog themes for relevant books
-   - Check existing amazon.html includes
-   - Get ASIN for books:
-     ```bash
+### Content Structure
+
+1. **Table of Contents**:
+   - Always include a markdown table of contents
+   - For new posts: Place TOC immediately after the first paragraph
+   - For existing posts: Don't move the TOC location
+   - Use this format:
+     ```markdown
+     <!-- prettier-ignore-start -->
+     <!-- vim-markdown-toc-start -->
+     [TOC content]
+     <!-- vim-markdown-toc-end -->
+     <!-- prettier-ignore-end -->
+     ```
+
+2. **Writing Style**:
+   - Fun and quirky
+   - Technical, but not boring
+   - Use active voice consistently
+   - Maintain a thoughtful yet conversational tone
+   - No emojis in any content
+
+3. **Formatting**:
+   - Use bold text for key concepts and important points
+   - Create section headers that are both informative and engaging
+   - Include bullet points for scannable lists
+   - Maintain consistent hierarchy in headings (H2 for main sections, H3 for subsections)
+
+## Image Management
+
+### Adding Images to Blog Posts
+
+1. **Check if the image already exists**:
+   ```bash
+   ls -R ~/rare_gits/blob/blog/
+   ```
+   Ask the user: "I see these existing images - is your image already there or do we need to add a new one?"
+
+2. **If the image doesn't exist**:
+   - Ask user: "Would you like me to help you add a new image? If so, please provide the image and I'll help place it in ~/rare_gits/blob/blog/"
+   - Images should use .webp format for best performance
+   - Use descriptive names that indicate the image content
+
+3. **Check front matter**:
+   - If the post has no imagefeature in its front matter, add it using the first image:
+     ```yaml
+     imagefeature: https://github.com/idvorkin/blob/raw/master/blog/your-image-name.webp
+     ```
+   - If already present, leave it unchanged as it's the post's primary image
+
+4. **Use the appropriate include**:
+   - For right-floating images (preferred):
+     ```markdown
+     {% include blob_image_float_right.html src="blog/raccoon-your-image.webp" %}
+     ```
+   - For centered images:
+     ```markdown
+     {% include blob_image.html src="blog/raccoon-your-image.webp" %}
+     ```
+
+5. **Place the include tag**:
+   - For new posts: After the first paragraph
+   - For existing posts: Near relevant content
+   - Ensure there's a blank line before and after the include
+
+6. **After adding the image**:
+   - If new image: Commit it to the blob repo
+   - Commit the blog post changes
+
+## Link Management
+
+### Link Conventions
+
+1. Always check `back-links.json` to find the correct redirect URL
+2. Use the format `[visible text](/redirect-url)`
+3. Example: For meditation content, use `[meditation](/siy)` since meditation redirects to the Search Inside Yourself page
+
+### Permalink Management
+
+1. Use the redirect_from front matter to maintain compatibility when changing permalinks
+2. This ensures old links continue to work
+3. IMPORTANT: Do not use 'aliases' in front matter - it doesn't work. If you see 'aliases', convert it to redirect_from
+4. Example format:
+   ```yaml
+   ---
+   permalink: /new-url
+   redirect_from:
+     - /old-url # ✅ correct way
+   aliases: ["/old-url"] # ❌ wrong way - doesn't work
+   ---
+   ```
+5. Check existing links to the post in other content and update if needed
+6. The redirects are handled by Jekyll, no need to modify back-links.json
+
+## Cross-Referencing Content
+
+### Cross-Linking Strategy
+
+When content relates to multiple topics:
+
+1. Place the primary content in the recommended location
+2. Add brief summaries or references in alternative locations
+3. Use the summarize-page include where appropriate:
+   ```markdown
+   {% include summarize-page.html src="/permalink" %}
+   ```
+4. Ensure back-links.json is updated if creating new permalinks
+
+### Using summarize-page Includes
+
+1. Use the `summarize-page` include with the format:
+   ```markdown
+   {% include summarize-page.html src="/page-url" %}
+   ```
+2. Before adding the include:
+   - Always check `back-links.json` to confirm the correct permalink
+   - The src should match the permalink, not the filename
+   - Example: Use `/siy` for meditation content, not `/meditation`
+3. Common usage patterns:
+   - After introducing a concept that's detailed elsewhere
+   - When listing related topics
+   - In sections that reference other content
+
+## Special Formatting
+
+### List Replacements in Tables
+
+1. In the table, use the format `[lXX](lXX)` where:
+   - The link text and href must both match exactly (e.g., `[l31](l31)`)
+   - XX is the list number (e.g., 31, 32, etc.)
+   - **IMPORTANT**: List numbers must be unique across the entire file
+   - If adding a new list, check existing lists in the file and use a new unique number
+
+2. Below the table, structure the lists like this:
+   ```markdown
+   <div/>
+
+   - lXX
+   - List item 1
+   - List item 2
+
+   <div/>
+   ```
+
+3. Important formatting rules:
+   - Each list must start with `<div/>`
+   - First list item must be the list identifier (e.g., `l31`)
+   - List must end with `<div/>`
+   - The list identifier in the table link must match exactly
+   - Never reuse list numbers within the same file
+
+### Using Alert Includes
+
+1. Use the `alert` include with the format:
+   ```markdown
+   {% include alert.html content="Your alert message here" style="info" %}
+   ```
+
+2. Available styles:
+   - `primary` - Blue, used for primary actions/information
+   - `secondary` - Gray, used for secondary information
+   - `success` - Green, used for success messages
+   - `danger` - Red, used for error messages or dangerous actions
+   - `warning` - Yellow, used for warning messages
+   - `info` - Light blue (default), used for informational messages
+   - `light` - Very light gray, used for subtle alerts
+   - `dark` - Dark gray, used for high-contrast alerts
+
+3. Best practices:
+   - Use alerts sparingly to maintain their impact
+   - Choose appropriate styles for the message context
+   - Keep alert messages concise and clear
+   - Place alerts near the relevant content they reference
+
+## Book References
+
+### Adding Book References
+
+1. First, analyze the blog content:
+   - Review the post's content and themes
+   - Check if there are any existing amazon.html includes
+   - If includes exist, ask user: "I see existing book references. Would you like to:
+     a) Keep them where they are
+     b) Move them to the standard location (after introduction)
+     c) Replace them with new books
+     d) Add additional books?"
+   - Identify any books explicitly mentioned
+   - Recommend relevant books based on the topics covered
+
+2. After user confirms book selections:
+   - For each book, ask: "Would you like me to help find the ASIN for [book title]?"
+   - If yes, run:
+     ```
      tony search "What is the ASIN for [book title]? Search Amazon too"
      ```
-   - Use amazon.html include:
-     ```markdown
-     {% include amazon.html asin="ASIN1;ASIN2;ASIN3" %}
-     ```
+   - The ASIN will be in the Amazon URL after "/dp/"
+   - Example: amazon.com/dp/B0CP52YY8F -> ASIN is B0CP52YY8F
 
-3. Content Summarization
-   - Use summarize-page include for related content:
-     ```markdown
-     {% include summarize-page.html src="/page-url" %}
-     ```
-   - Verify permalinks in back-links.json
-   - Place summaries strategically in content
+3. Use the amazon.html include with ASINs:
+   ```markdown
+   {% include amazon.html asin="ASIN1;ASIN2;ASIN3" %}
+   ```
 
-4. Alert Usage
-   - Use alert includes for important information:
-     ```markdown
-     {% include alert.html content="Message" style="style-name" %}
-     ```
-   - Available styles: primary, secondary, success, danger, warning, info, light, dark
-   - Place alerts near relevant content
+4. Multiple books:
+   - Separate ASINs with semicolons
+   - Books will display side-by-side in the table
+   - Keep to 2-3 books per row for readability
 
-5. Writing Style Guidelines
-   - Fun and quirky tone
-   - Technical but accessible
-   - No emojis
-   - Professional formatting
-   - Clear section organization
+5. Place the include:
+   - For new references: After introducing the books in the text
+   - For existing references: Ask user about preferred location
+   - Ensure there's a blank line before and after the include
+
+## Development and Testing
+
+### Opening Blog Posts During Development
+
+1. Get the permalink from the post's front matter
+2. Use this command to open the post in the default browser:
+   ```bash
+   open http://localhost:4000{permalink}
+   ```
+
+3. If working on a specific section, append the anchor:
+   ```bash
+   open http://localhost:4000{permalink}#{anchor}
+   ```
+   Example:
+   - Full post: `open http://localhost:4000/laws-of-new-skills`
+   - Specific section: `open http://localhost:4000/laws-of-new-skills#law-2-practice-makes-permanent`
+
+Note: Jekyll must be running locally (localhost:4000)
+
+### Terminal Command Conventions
+
+1. For ANY commands that would use a pager or require user interaction, append ` | /bin/cat` to the command (NOT just `cat` as it's aliased to `bat`). This applies to: git, less, head, tail, more, etc.
+2. For commands that are long running/expected to run indefinitely until interruption, run them in the background.
+
+## AI-Assisted Content Creation
+
+### Chat Oriented Writing (CHOW)
+
+CHOW is the practice of using AI chat to assist with writing and content creation:
+
+1. Document all changes in this conventions file
+2. Follow consistent patterns for similar types of changes
+3. Use the chat history to maintain context and consistency
+
+### Initial Research Process
+
+When starting work on blog content:
+
+1. Get an overview of the blog by reading:
+   ```
+   READ: back-links.json
+   ```
+
+2. Get good example blog posts to imitate:
+   ```
+   READ: _posts/2020-04-01-Igor-Eulogy.md _d/pride.md back-links.json
+   ```
+
+3. Before creating a new entry, check if an entry already exists:
+   ```
+   qa_blog where "your exact question in quotes"
+   ```
+
+4. Ask the user where they want to add the blog content using the same command, then inspect the output and suggest what files to edit
 
 ## Examples
 
 <example>
-# Good Practice: Book Reference Integration
+### Effective Content Management
 
-This post explores effective learning methods, drawing from several key resources.
+**Scenario:** Adding content about psychological safety
 
-{% include amazon.html asin="B001ANYDAO;B00506CSDQ" %}
+**Process:**
+1. Run `qa_blog where "psychological safety"`
+2. Review primary recommendation: `_d/coaching.md` in the "Keep people safe while coaching" section
+3. Check existing content in that section
+4. Add new content that builds on existing TERA and SCARF models
+5. Add brief references in alternative locations like `_d/imposter.md` and `_d/joy.md`
+6. Update tags to include "psychological safety" for better discovery
+7. Add relevant book references using the amazon.html include
+8. Include a right-floating image using blob_image_float_right.html
+9. Test the content by viewing it at localhost:4000/coaching
 
-The concepts from these books form the foundation of our discussion...
-
-{% include alert.html content="Remember: Practice makes permanent, not perfect!" style="warning" %}
-
-For more on deliberate practice, see our guide:
-{% include summarize-page.html src="/deliberate-practice" %}
+**Result:** Content is well-placed, cross-referenced, visually appealing, and easily discoverable.
 </example>
 
 <example type="invalid">
-# Anti-Pattern: Poor Content Integration
+### Ineffective Content Management
 
-Here are some good books 📚:
-- Book 1
-- Book 2 (no proper references)
+**Scenario:** Adding content about psychological safety
 
-Related stuff:
-Just read the other post about practice (no proper link or summary)
-</example> 
+**Process:**
+1. Create a new standalone post without checking existing content
+2. Use emojis in headers and content
+3. Skip adding a table of contents
+4. Add images without checking if they already exist
+5. Use direct image links instead of the proper includes
+6. Fail to cross-reference related content
+7. Use aliases instead of redirect_from for permalinks
+8. Add book references without using the amazon.html include
+
+**Result:** Content is isolated, inconsistently formatted, difficult to discover, and doesn't integrate with the existing blog structure.
+</example>
