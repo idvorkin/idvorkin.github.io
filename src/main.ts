@@ -285,9 +285,63 @@ Try these shortcuts:
   mouseTrap.bind("?", e => alert(shortcutHelp));
 }
 
+/**
+ * Replaces placeholder links in the document with their corresponding list content.
+ * @param listReplacements - An object mapping placeholder texts to list elements.
+ */
+function replacePlaceholdersWithLists(
+  listReplacements: Record<string, Element>
+) {
+  Object.entries(listReplacements).forEach(([placeholderText, list]) => {
+    const placeholderLink = $(`a[href=${placeholderText}]`).first();
+    if (!placeholderLink.length) return; // Placeholder not found, skip
+
+    const listClone = $(list).clone();
+    listClone.children().first().remove(); // Remove the 'lookup id' from the list
+    placeholderLink.replaceWith(listClone);
+
+    // remove the list from the document
+    $(list).remove();
+  });
+}
+
+/**
+ * Builds a map of list replacements by scanning the document for specially formatted lists.
+ * @returns An object where keys are placeholder texts and values are the corresponding list elements.
+ */
+function buildListReplacementMap(): Record<string, Element> {
+  const replacements: Record<string, Element> = {};
+  $("ul").each((_, list) => {
+    const firstListItem = list.firstElementChild;
+    if (!firstListItem) return;
+
+    const firstItemText = firstListItem.textContent;
+    if (!firstItemText || !firstItemText.startsWith("l")) return;
+
+    const listId = parseInt(firstItemText.substring(1));
+    if (isNaN(listId)) return;
+
+    replacements[firstItemText] = list;
+  });
+  return replacements;
+}
+
+/**
+ * Replaces list placeholders in tables with actual list content.
+ * This function orchestrates the process of finding and replacing placeholders.
+ */
+function replaceListPlaceholdersInTables() {
+  console.log("🔄 Replacing List Placeholders in Tables");
+  const listReplacements = buildListReplacementMap();
+  replacePlaceholdersWithLists(listReplacements);
+}
+
 function load_globals() {
   $(add_link_loader);
   $(keyboard_shortcut_loader);
+
+  // Replace list placeholders in tables
+  $(document).ready(replaceListPlaceholdersInTables);
 
   console.log("🚀 About to call initRecentPosts from main.ts");
   initRecentPosts();
