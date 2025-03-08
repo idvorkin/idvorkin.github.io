@@ -1,15 +1,14 @@
-#!uv run
-
-
 # /// script
+# requires-python = ">=3.8"
 # dependencies = [
 #   "beautifulsoup4",
 #   "bs4",
-#   "typer",
+#   "typer[all]",
 #   "icecream",
 #   "pudb",
 #   "typing-extensions",
 #   "gitpython",
+#   "rich",
 # ]
 # ///
 # Remove line too long
@@ -19,6 +18,7 @@ from icecream import ic
 from bs4 import BeautifulSoup
 from collections import defaultdict
 from typing import NewType, List, Dict
+from typing_extensions import Annotated
 import os
 import json
 from dataclasses import dataclass
@@ -30,9 +30,14 @@ import git
 import time
 import asyncio
 from functools import lru_cache
+from rich.console import Console
+from rich.panel import Panel
 
 # Configure icecream to be less verbose but still use it
 ic.configureOutput(prefix="", includeContext=False)
+
+# Initialize rich console
+console = Console()
 
 # Use type system (and mypy) to reduce error,
 # Even though both of these are strings, they should not be inter mixed
@@ -456,7 +461,20 @@ class LinkBuilder:
         self.pages = {}  # canonical->md
 
     def print_json(self, output_file="back-links.json"):
+        """
+        Write the backlinks data to a JSON file.
+
+        Args:
+            output_file: Path to the output JSON file
+        """
         self.compress()
+
+        console.print(f"[blue]Preparing JSON output to {output_file}[/]")
+
+        # Count some statistics for reporting
+        redirect_count = len(self.redirects)
+        page_count = len(self.pages)
+        total_links = sum(len(page.outgoing_links) for page in self.pages.values())
 
         out = {
             "redirects": self.redirects,  # Not needed for link building, but helpful for debugging.
@@ -483,10 +501,20 @@ class LinkBuilder:
 
         # Write directly to the file instead of printing to stdout
         with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(out, f, default=page_encoder, ensure_ascii=False, indent=4)
+            json.dump(
+                out,
+                f,
+                default=page_encoder,
+                ensure_ascii=False,
+                indent=4,
+                sort_keys=True,
+            )
 
         # Print a message to stdout for logging
-        ic(f"Successfully wrote {output_file}")
+        console.print(f"[green]Successfully wrote backlinks data to {output_file}[/]")
+        console.print(f"[dim]- Pages: {page_count}[/]")
+        console.print(f"[dim]- Redirects: {redirect_count}[/]")
+        console.print(f"[dim]- Total links: {total_links}[/]")
 
 
 def build_links_for_dir(lb, dir):
@@ -496,39 +524,66 @@ def build_links_for_dir(lb, dir):
         lb.update(f"{dir}/{f}")
 
 
-app = typer.Typer()
+app = typer.Typer(
+    help="Build and manage backlinks for Jekyll blog posts",
+    add_completion=False,
+    no_args_is_help=True,
+)
 
 
 @app.command()
-def build(output_file: str = "back-links.json"):
+def build(
+    output_file: Annotated[
+        str, typer.Option(help="Path to the output JSON file")
+    ] = "back-links.json",
+):
     """
     Build backlinks and write to the specified output file.
 
-    Args:
-        output_file: Path to the output JSON file. Defaults to back-links.json in the current directory.
+    This command scans all Jekyll collection directories, builds a backlinks database,
+    and updates last modified times for all pages.
     """
     start_time = time.time()
 
+    console.print("[bold blue]Starting backlinks build process...[/]")
+
     lb = LinkBuilder()
     for d in jekyll_config.collection_dirs():
+        console.print(f"Processing directory: [cyan]{d}[/]")
         build_links_for_dir(lb, d)
 
     # Update last modified times
     parsing_time = time.time()
-    ic(f"Parsed all pages in {parsing_time - start_time:.2f} seconds")
+    console.print(
+        f"[green]Parsed all pages in {parsing_time - start_time:.2f} seconds[/]"
+    )
 
     # Use our improved parallel processing with direct git calls
-    ic("Processing last_modified dates in parallel using direct git calls")
+    console.print(
+        "[blue]Processing last_modified dates in parallel using direct git calls[/]"
+    )
     asyncio.run(lb.update_last_modified_times())
 
     git_time = time.time()
-    ic(f"Updated last modified dates in {git_time - parsing_time:.2f} seconds")
+    console.print(
+        f"[green]Processed git dates in {git_time - parsing_time:.2f} seconds[/]"
+    )
 
-    # Print JSON to file instead of stdout
+    # Canonicalize outgoing pages
+    lb.canonicalize_outgoing_pages()
+    lb.compress()
     lb.print_json(output_file)
 
     end_time = time.time()
-    ic(f"Total time: {end_time - start_time:.2f} seconds")
+    console.print(
+        Panel(
+            f"Total processing time: {end_time - start_time:.2f} seconds\n"
+            f"Pages processed: {len(lb.pages)}\n"
+            f"Output file: {output_file}",
+            title="[bold green]Backlinks Build Complete[/]",
+            border_style="green",
+        )
+    )
 
 
 @app.command()
@@ -867,35 +922,44 @@ def debug_null_dates():
 
 
 @app.command()
-def delta(files: List[str], output_file: str = "back-links.json"):
+def delta(
+    files: Annotated[
+        List[str], typer.Argument(help="List of markdown files to update")
+    ],
+    output_file: Annotated[
+        str, typer.Option(help="Path to the output JSON file")
+    ] = "back-links.json",
+):
     """
     Update last modified times for the specified files in the existing backlinks file.
 
     This is much faster than rebuilding the entire backlinks database when only a few files have changed.
-
-    Args:
-        files: List of files to process
-        output_file: Path to the output JSON file. Defaults to back-links.json in the current directory.
     """
     start_time = time.time()
 
     # First, check if the backlinks file exists
     if not os.path.exists(output_file):
-        ic(f"Error: {output_file} does not exist. Run the full build first.")
+        console.print(
+            f"[bold red]Error:[/] {output_file} does not exist. Run the full build first."
+        )
         return
 
     # Load the existing backlinks data
     try:
         with open(output_file, "r", encoding="utf-8") as f:
             existing_data = json.load(f)
-            ic(f"Loaded existing backlinks data from {output_file}")
+            console.print(
+                f"[green]Loaded existing backlinks data from {output_file}[/]"
+            )
     except Exception as e:
-        ic(f"Error loading existing backlinks data: {e}")
+        console.print(f"[bold red]Error loading existing backlinks data:[/] {e}")
         return
 
     # Make sure we have the expected structure
-    if "pages" not in existing_data:
-        ic("Error: Invalid backlinks data structure. Run the full build first.")
+    if "url_info" not in existing_data:
+        console.print(
+            "[bold red]Error:[/] Invalid backlinks data structure. Run the full build first."
+        )
         return
 
     # Process only the specified markdown files
@@ -904,30 +968,19 @@ def delta(files: List[str], output_file: str = "back-links.json"):
         if file_path.endswith(".md"):
             # Keep the original path for processing
             markdown_paths.append(file_path)
-            ic(f"Added markdown path: {file_path}")
+            console.print(f"[dim]Added markdown path:[/] {file_path}")
 
     if not markdown_paths:
-        ic("No markdown files to process")
+        console.print("[yellow]No markdown files to process[/]")
         return
 
-    # Debug: Print all markdown paths in the existing data
-    ic("Markdown paths in existing data:")
-    markdown_paths_in_data = []
-    for url, page_data in existing_data["pages"].items():
-        if "markdown_path" in page_data and page_data["markdown_path"]:
-            markdown_paths_in_data.append(page_data["markdown_path"])
-            ic(f"  {page_data['markdown_path']} -> {url}")
-
     # Process last modified times in parallel
-    ic(f"Updating last_modified dates for {len(markdown_paths)} files")
+    console.print(
+        f"[blue]Updating last_modified dates for {len(markdown_paths)} files[/]"
+    )
     last_modified_times = asyncio.run(
         process_markdown_paths_in_parallel(markdown_paths)
     )
-
-    # Debug: Print the last modified times we got
-    ic("Last modified times:")
-    for path, time_value in last_modified_times.items():
-        ic(f"  {path} -> {time_value}")
 
     # Create a mapping of basenames to last modified times for easier matching
     basename_to_time = {}
@@ -937,7 +990,7 @@ def delta(files: List[str], output_file: str = "back-links.json"):
 
     # Update the last modified times in the existing data
     updated_count = 0
-    for url, page_data in existing_data["pages"].items():
+    for url, page_data in existing_data["url_info"].items():
         markdown_path = page_data.get("markdown_path", "")
         if not markdown_path:
             continue
@@ -946,9 +999,6 @@ def delta(files: List[str], output_file: str = "back-links.json"):
         if markdown_path in last_modified_times:
             page_data["last_modified"] = last_modified_times[markdown_path]
             updated_count += 1
-            ic(
-                f"Updated {url} with last_modified: {last_modified_times[markdown_path]} (direct match)"
-            )
             continue
 
         # Try matching by basename
@@ -956,9 +1006,6 @@ def delta(files: List[str], output_file: str = "back-links.json"):
         if basename in basename_to_time:
             page_data["last_modified"] = basename_to_time[basename]
             updated_count += 1
-            ic(
-                f"Updated {url} with last_modified: {basename_to_time[basename]} (basename match)"
-            )
             continue
 
         # Try matching by relative path
@@ -966,20 +1013,42 @@ def delta(files: List[str], output_file: str = "back-links.json"):
             if path.endswith(markdown_path):
                 page_data["last_modified"] = last_modified_times[path]
                 updated_count += 1
-                ic(
-                    f"Updated {url} with last_modified: {last_modified_times[path]} (relative path match)"
-                )
                 break
 
-    ic(f"Updated last_modified dates for {updated_count} pages")
+    console.print(f"[green]Updated last_modified dates for {updated_count} pages[/]")
 
     # Write the updated data back to the file
+    with open(output_file, "r", encoding="utf-8") as f:
+        original_content = f.read()
+
+    # Parse the original content
+    original_data = json.loads(original_content)
+
+    # Update only the last_modified fields
+    update_count = 0
+    if "url_info" in original_data:
+        for url, page_data in existing_data["url_info"].items():
+            if "last_modified" in page_data and url in original_data["url_info"]:
+                original_data["url_info"][url]["last_modified"] = page_data[
+                    "last_modified"
+                ]
+                update_count += 1
+
+    # Write the updated original data back to the file using the same parameters as print_json
     with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(existing_data, f, indent=4, sort_keys=True)
-        ic(f"Successfully wrote {output_file}")
+        # Use the exact same parameters as in the original print_json method
+        json.dump(original_data, f, ensure_ascii=False, indent=4, sort_keys=True)
+        console.print(f"[green]Successfully wrote {output_file}[/]")
 
     end_time = time.time()
-    ic(f"Total delta processing time: {end_time - start_time:.2f} seconds")
+    console.print(
+        Panel(
+            f"Total delta processing time: {end_time - start_time:.2f} seconds\n"
+            f"Updated {updated_count} pages",
+            title="[bold green]Backlinks Update Complete[/]",
+            border_style="green",
+        )
+    )
 
 
 if __name__ == "__main__":
