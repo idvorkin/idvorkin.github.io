@@ -35,7 +35,9 @@ function add_random_prompts() {
 function render_prompt_for_category(category, prompts_for_category) {
   //print one of the prompts
   let get_random_prompt_html = () =>
-    `<span>${random_from_list(prompts_for_category)}</span>`;
+    `<span>${random_from_list(
+      prompts_for_category
+    )}</span><span style="float: right; cursor: pointer;" title="Click for another prompt">🔄</span>`;
 
   // add a place holder for random div.
   const new_element = $(`<div class="alert alert-primary" role="alert"/>`);

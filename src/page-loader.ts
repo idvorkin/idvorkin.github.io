@@ -5,7 +5,7 @@ import {
   add_random_prompts,
   TreeNode,
   shuffle,
-} from "./random-prompter.js";
+} from "./random-prompter";
 import { get_link_info } from "./index";
 import { get } from "lodash-es";
 import { append_randomizer_div, random_from_list } from "./index";

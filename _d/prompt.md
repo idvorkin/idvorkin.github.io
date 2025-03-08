@@ -43,7 +43,7 @@ A prompt will kick start a great conversation, a great insight, and a great rela
 <!-- prettier-ignore-end -->
 
 <script type=module>
-    import { add_random_prompts} from '/assets/js/random-prompter.js'
+    import { add_random_prompts } from '/assets/js/index.js'
     defer(add_random_prompts)
 </script>
 

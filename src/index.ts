@@ -24,6 +24,9 @@ import { CreateAutoComplete } from "./search";
 // Import recent posts functionality
 import { initRecentAllPosts } from "./recent";
 
+// Import random-prompter functionality
+import { add_random_prompts, add_sunburst, TreeNode } from "./random-prompter";
+
 // Import page-loader functionality
 import {
   load_enjoy2,
@@ -119,6 +122,10 @@ export {
   CreateAutoComplete,
   // Recent posts export
   initRecentAllPosts,
+  // Random prompter exports
+  add_random_prompts,
+  add_sunburst,
+  TreeNode,
   // Page loader exports
   load_enjoy2,
   load_7_habits,
