@@ -37,7 +37,7 @@ repos:
 
       - id: update-backlinks-last-modified
         name: Update last modified times for changed markdown files
-        entry: bash -c "uv run build_back_links.py delta $@"
+        entry: uv run build_back_links.py delta
         language: system
         files: '\.(md|markdown)$'
         <<: *exclude_chop_logs

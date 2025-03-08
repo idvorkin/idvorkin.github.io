@@ -34,7 +34,7 @@ I got asked that the other day, and thought, boy, there is a lot here, I need to
 <!-- vim-markdown-toc -->
 <!-- prettier-ignore-end -->
 
-## PART I: STRATEGY - The Why and What of Energy Management
+## PART I: Strategy - The Why and What of Energy Management
 
 ### Strategic Understanding of Your Life and Energy
 
