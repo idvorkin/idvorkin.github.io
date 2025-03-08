@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@cypress/code-coverage": "^3.9.11",
+    "@playwright/test": "^1.51.0",
     "@types/d3": "^7.1.0",
     "@types/jquery": "^3.5.8",
     "@types/lodash-es": "^4.17.5",
