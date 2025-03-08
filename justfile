@@ -93,21 +93,6 @@ coverage-instrument:
 coverage-report:
     npx nyc report --reporter html --reporter text && open coverage/index.html
 
-cy-ut:
-    npx cypress run --config video=false --spec '**/unit/*ts'
-
-cy-run:
-    npx cypress run --config video=false --env coverage=false
-
-cy-prod-run:
-    npx cypress run --config video=false --env coverage=false --config baseUrl=https://idvork.in
-
-cy-record:
-    . ./_cypress_api_key && npx cypress run --record --env coverage=false
-
-cy-open:
-    npx cypress open --env coverage=false
-
 jekyll-serve:
     #!/usr/bin/env sh
     if [ "$(uname)" = "Darwin" ]; then
