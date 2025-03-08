@@ -455,7 +455,7 @@ class LinkBuilder:
         self.redirects = {}  # url->[back_links]; # I don't need to serialzie these, but helpful for debugging.
         self.pages = {}  # canonical->md
 
-    def print_json(self):
+    def print_json(self, output_file="back-links.json"):
         self.compress()
 
         out = {
@@ -482,11 +482,11 @@ class LinkBuilder:
             return obj
 
         # Write directly to the file instead of printing to stdout
-        with open("back-links.json", "w", encoding="utf-8") as f:
+        with open(output_file, "w", encoding="utf-8") as f:
             json.dump(out, f, default=page_encoder, ensure_ascii=False, indent=4)
 
         # Print a message to stdout for logging
-        ic("Successfully wrote back-links.json")
+        ic(f"Successfully wrote {output_file}")
 
 
 def build_links_for_dir(lb, dir):
@@ -500,7 +500,13 @@ app = typer.Typer()
 
 
 @app.command()
-def build():
+def build(output_file: str = "back-links.json"):
+    """
+    Build backlinks and write to the specified output file.
+
+    Args:
+        output_file: Path to the output JSON file. Defaults to back-links.json in the current directory.
+    """
     start_time = time.time()
 
     lb = LinkBuilder()
@@ -519,7 +525,7 @@ def build():
     ic(f"Updated last modified dates in {git_time - parsing_time:.2f} seconds")
 
     # Print JSON to file instead of stdout
-    lb.print_json()
+    lb.print_json(output_file)
 
     end_time = time.time()
     ic(f"Total time: {end_time - start_time:.2f} seconds")
