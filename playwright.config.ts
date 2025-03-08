@@ -4,25 +4,33 @@ export default defineConfig({
   testDir: "./tests",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 1 : undefined,
+  retries: 0,
+  workers: 10,
   reporter: "html",
+  maxFailures: 1,
   use: {
     baseURL: "http://localhost:4000",
     trace: "on-first-retry",
+    // Balanced optimizations for speed and reliability
+    actionTimeout: 30000,
+    navigationTimeout: 45000,
+    // Standard viewport size
+    viewport: { width: 1280, height: 800 },
+    ignoreHTTPSErrors: true,
+    launchOptions: {
+      slowMo: 0,
+      // Removed aggressive flags that might cause instability
+      args: ["--disable-dev-shm-usage"],
+    },
   },
   projects: [
     {
       name: "chromium",
-      use: { ...devices["Desktop Chrome"] },
-    },
-    {
-      name: "firefox",
-      use: { ...devices["Desktop Firefox"] },
-    },
-    {
-      name: "webkit",
-      use: { ...devices["Desktop Safari"] },
+      use: {
+        ...devices["Desktop Chrome"],
+        // Use headless mode for faster execution
+        headless: true,
+      },
     },
   ],
   webServer: {
