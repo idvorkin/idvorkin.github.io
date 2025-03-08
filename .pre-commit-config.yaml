@@ -29,3 +29,12 @@ repos:
         language: script
         types: [ts]
         pass_filenames: false
+
+      - id: update-backlinks-last-modified
+        name: Update last modified times for changed markdown files
+        entry: uv run build_back_links.py delta
+        language: system
+        files: '\.(md|markdown)$'
+        exclude: "^$" # Don't exclude any files
+        pass_filenames: true
+        verbose: true

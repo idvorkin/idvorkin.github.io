@@ -866,5 +866,121 @@ def debug_null_dates():
             ic(f"  HTML file not found: {html_file}")
 
 
+@app.command()
+def delta(files: List[str], output_file: str = "back-links.json"):
+    """
+    Update last modified times for the specified files in the existing backlinks file.
+
+    This is much faster than rebuilding the entire backlinks database when only a few files have changed.
+
+    Args:
+        files: List of files to process
+        output_file: Path to the output JSON file. Defaults to back-links.json in the current directory.
+    """
+    start_time = time.time()
+
+    # First, check if the backlinks file exists
+    if not os.path.exists(output_file):
+        ic(f"Error: {output_file} does not exist. Run the full build first.")
+        return
+
+    # Load the existing backlinks data
+    try:
+        with open(output_file, "r", encoding="utf-8") as f:
+            existing_data = json.load(f)
+            ic(f"Loaded existing backlinks data from {output_file}")
+    except Exception as e:
+        ic(f"Error loading existing backlinks data: {e}")
+        return
+
+    # Make sure we have the expected structure
+    if "pages" not in existing_data:
+        ic("Error: Invalid backlinks data structure. Run the full build first.")
+        return
+
+    # Process only the specified markdown files
+    markdown_paths = []
+    for file_path in files:
+        if file_path.endswith(".md"):
+            # Keep the original path for processing
+            markdown_paths.append(file_path)
+            ic(f"Added markdown path: {file_path}")
+
+    if not markdown_paths:
+        ic("No markdown files to process")
+        return
+
+    # Debug: Print all markdown paths in the existing data
+    ic("Markdown paths in existing data:")
+    markdown_paths_in_data = []
+    for url, page_data in existing_data["pages"].items():
+        if "markdown_path" in page_data and page_data["markdown_path"]:
+            markdown_paths_in_data.append(page_data["markdown_path"])
+            ic(f"  {page_data['markdown_path']} -> {url}")
+
+    # Process last modified times in parallel
+    ic(f"Updating last_modified dates for {len(markdown_paths)} files")
+    last_modified_times = asyncio.run(
+        process_markdown_paths_in_parallel(markdown_paths)
+    )
+
+    # Debug: Print the last modified times we got
+    ic("Last modified times:")
+    for path, time_value in last_modified_times.items():
+        ic(f"  {path} -> {time_value}")
+
+    # Create a mapping of basenames to last modified times for easier matching
+    basename_to_time = {}
+    for path, time_value in last_modified_times.items():
+        basename = os.path.basename(path)
+        basename_to_time[basename] = time_value
+
+    # Update the last modified times in the existing data
+    updated_count = 0
+    for url, page_data in existing_data["pages"].items():
+        markdown_path = page_data.get("markdown_path", "")
+        if not markdown_path:
+            continue
+
+        # Try direct match first
+        if markdown_path in last_modified_times:
+            page_data["last_modified"] = last_modified_times[markdown_path]
+            updated_count += 1
+            ic(
+                f"Updated {url} with last_modified: {last_modified_times[markdown_path]} (direct match)"
+            )
+            continue
+
+        # Try matching by basename
+        basename = os.path.basename(markdown_path)
+        if basename in basename_to_time:
+            page_data["last_modified"] = basename_to_time[basename]
+            updated_count += 1
+            ic(
+                f"Updated {url} with last_modified: {basename_to_time[basename]} (basename match)"
+            )
+            continue
+
+        # Try matching by relative path
+        for path in last_modified_times:
+            if path.endswith(markdown_path):
+                page_data["last_modified"] = last_modified_times[path]
+                updated_count += 1
+                ic(
+                    f"Updated {url} with last_modified: {last_modified_times[path]} (relative path match)"
+                )
+                break
+
+    ic(f"Updated last_modified dates for {updated_count} pages")
+
+    # Write the updated data back to the file
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(existing_data, f, indent=4, sort_keys=True)
+        ic(f"Successfully wrote {output_file}")
+
+    end_time = time.time()
+    ic(f"Total delta processing time: {end_time - start_time:.2f} seconds")
+
+
 if __name__ == "__main__":
     app()
