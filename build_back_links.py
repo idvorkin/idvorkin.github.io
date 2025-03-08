@@ -1020,32 +1020,60 @@ def delta(
 
     # Update the last modified times in the existing data
     updated_count = 0
+    skipped_count = 0
     for url, page_data in existing_data["url_info"].items():
         markdown_path = page_data.get("markdown_path", "")
         if not markdown_path:
             continue
 
+        # Check if we should update this file
+        should_update = False
+
         # Try direct match first
         if markdown_path in last_modified_times:
-            page_data["last_modified"] = current_time
-            updated_count += 1
-            continue
-
+            should_update = True
         # Try matching by basename
-        basename = os.path.basename(markdown_path)
-        if basename in basename_to_time:
+        elif os.path.basename(markdown_path) in basename_to_time:
+            should_update = True
+        # Try matching by relative path
+        else:
+            for path in markdown_paths:
+                if path.endswith(markdown_path):
+                    should_update = True
+                    break
+
+        if should_update:
+            # Check if the existing timestamp is within 10 minutes of current time
+            existing_time = page_data.get("last_modified", "")
+            if existing_time:
+                try:
+                    # Parse the existing timestamp
+                    existing_dt = datetime.fromisoformat(existing_time)
+                    current_dt = datetime.fromisoformat(current_time)
+
+                    # Calculate the time difference in minutes
+                    time_diff = abs((current_dt - existing_dt).total_seconds()) / 60
+
+                    # If the difference is less than 10 minutes, skip the update
+                    if time_diff < 10:
+                        console.print(
+                            f"[yellow]Skipping update for {url} - last modified {time_diff:.1f} minutes ago[/]"
+                        )
+                        skipped_count += 1
+                        continue
+                except (ValueError, TypeError):
+                    # If we can't parse the timestamp, update it anyway
+                    pass
+
+            # Update the timestamp
             page_data["last_modified"] = current_time
             updated_count += 1
-            continue
-
-        # Try matching by relative path
-        for path in markdown_paths:
-            if path.endswith(markdown_path):
-                page_data["last_modified"] = current_time
-                updated_count += 1
-                break
 
     console.print(f"[green]Updated last_modified dates for {updated_count} pages[/]")
+    if skipped_count > 0:
+        console.print(
+            f"[yellow]Skipped {skipped_count} pages (modified within last 10 minutes)[/]"
+        )
 
     # Write the updated data back to the file
     with open(output_file, "r", encoding="utf-8") as f:
@@ -1074,7 +1102,7 @@ def delta(
     console.print(
         Panel(
             f"Total delta processing time: {end_time - start_time:.2f} seconds\n"
-            f"Updated {updated_count} pages",
+            f"Updated {updated_count} pages, skipped {skipped_count} pages",
             title="[bold green]Backlinks Update Complete[/]",
             border_style="green",
         )

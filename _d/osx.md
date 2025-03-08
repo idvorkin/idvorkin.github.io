@@ -150,4 +150,4 @@ I used to try to use windows and mac, and move between them. Super hard on my br
 
 ### When you go all in on the appleverse, it's glorious
 
-iPhone/watch/iMessage/iPad, it all just works, syncs perfectly. it's a dream come true.
+iPhone/Watch/iMessage/iPad, it all just works, syncs perfectly. it's a dream come true.
