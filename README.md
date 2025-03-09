@@ -6,9 +6,8 @@ Badges below show the status of tests and integrations for this repository.
 -->
 
 [![Vitest](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml/badge.svg)](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml)
-[![Vitest Tests](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-count.json)](https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-count.json)
-[![Vitest Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-coverage.json)](https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-coverage.json)
-[![Vitest Output](https://img.shields.io/badge/Vitest-Test%20Output-blue)](https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/test-verbose-output.html)
+[![Vitest Tests](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-count.json)](https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/test-verbose-output.html)
+[![Vitest Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-coverage.json)](https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/coverage/index.html)
 
 This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), and an [enabling environment](https://notes.andymatuschak.org/z3DaBP4vN1dutjUgrk3jbEeNxScccvDCxDgXe) to interact with them. These are currently intermingled, but
 

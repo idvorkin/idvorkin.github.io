@@ -104,7 +104,7 @@ js-test-generate-badges test_output_json="test-output.json":
         fi
         
         # Create a badge JSON file in shields.io format
-        echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"$PASSED/$TOTAL tests\", \"color\": \"$COLOR\"}" > test-results/vitest/badge-count.json
+        echo "{\"schemaVersion\": 1, \"label\": \"Vitest Tests\", \"message\": \"$PASSED/$TOTAL tests\", \"color\": \"$COLOR\"}" > test-results/vitest/badge-count.json
         echo "Generated badge JSON for $PASSED/$TOTAL tests"
     fi
     
@@ -128,11 +128,11 @@ js-test-generate-badges test_output_json="test-output.json":
         fi
         
         # Create a badge JSON file for coverage
-        echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"${COVERAGE_PCT}%\", \"color\": \"$COV_COLOR\"}" > test-results/vitest/badge-coverage.json
+        echo "{\"schemaVersion\": 1, \"label\": \"Vitest Coverage\", \"message\": \"${COVERAGE_PCT}%\", \"color\": \"$COV_COLOR\"}" > test-results/vitest/badge-coverage.json
         echo "Generated coverage badge JSON for ${COVERAGE_PCT}% coverage"
     else
         # If we can't find the coverage info, create a fallback badge
-        echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-coverage.json
+        echo "{\"schemaVersion\": 1, \"label\": \"Vitest Coverage\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-coverage.json
         echo "No coverage data found, using fallback badge"
     fi
 
