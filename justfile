@@ -115,9 +115,17 @@ js-test-generate-badges test_output_json="test-output.json":
         fi
     else
         # Extract test counts using jq from the JSON output
-        TOTAL=$(jq '.numTotalTestSuites' {{test_output_json}})
-        PASSED=$(jq '.numPassedTestSuites' {{test_output_json}})
-        FAILED=$(jq '.numFailedTestSuites' {{test_output_json}})
+        echo "Debugging JSON extraction:"
+        echo "File content first 100 chars: $(head -c 100 {{test_output_json}})"
+        echo "numTotalTests value: $(jq '.numTotalTests' {{test_output_json}})"
+        echo "numPassedTests value: $(jq '.numPassedTests' {{test_output_json}})"
+        echo "numFailedTests value: $(jq '.numFailedTests' {{test_output_json}})"
+        
+        TOTAL=$(jq '.numTotalTests' {{test_output_json}})
+        PASSED=$(jq '.numPassedTests' {{test_output_json}})
+        FAILED=$(jq '.numFailedTests' {{test_output_json}})
+        
+        echo "Extracted values: TOTAL=$TOTAL, PASSED=$PASSED, FAILED=$FAILED"
         
         # Determine color based on failed tests (green for all passing, red otherwise)
         if [ "$FAILED" -eq 0 ]; then
