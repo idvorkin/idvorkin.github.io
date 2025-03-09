@@ -60,24 +60,21 @@ jobs:
           # Create directories for test results with a consistent structure
           mkdir -p test-results/vitest
 
-          # Run tests and capture output
-          # First run with verbose text output and save to file
+          # Run tests with GitHub Actions reporter to get integrated annotations
+          # This will also generate JSON output for badges
           set +e
-          just js-test-verbose-txt > test-results/vitest/test-verbose-output.txt 2>&1
-
-          # Generate HTML version of the test output using the justfile command
-          just js-test-output-to-html
-
-          # Then run with JSON reporter for badge generation
-          just js-test-json > test-output.json
+          just js-test-github-actions
           TEST_RESULT=$?
+          set -e
 
           # Run Vitest with HTML reporter and coverage using the justfile command
           just js-test-full-report
 
-          # Generate badges using the justfile command
-          just js-test-generate-badges test-output.json
-          set -e
+          # Also generate a verbose text output for reference
+          just js-test-verbose-txt > test-results/vitest/test-verbose-output.txt 2>&1
+
+          # Generate HTML version of the test output using the justfile command
+          just js-test-output-to-html
 
           # Ensure test-results directory exists and has content even if tests failed
           ls -la test-results/vitest
@@ -85,8 +82,6 @@ jobs:
             echo "Creating fallback badge file..."
             echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-count.json
           fi
-
-          # Note: HTML report and coverage files are now copied by the js-test-full-report command
 
           # Exit with the original test result to properly mark the workflow as passed/failed
           exit $TEST_RESULT

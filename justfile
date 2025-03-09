@@ -43,23 +43,46 @@ js-test:
 js-test-verbose-txt:
     npx vitest run --reporter=verbose
 
-# Run Vitest tests with HTML output (simple, no colors)
+# Run Vitest tests with GitHub Actions reporter
+js-test-github:
+    npx vitest run --reporter=github-actions --reporter=verbose
+
+# Run Vitest tests with HTML output (with colors)
 js-test-verbose-html:
     #!/usr/bin/env sh
     # Create the output directory
     mkdir -p test-results/vitest
     
-    # Generate HTML with basic formatting
-    echo "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>Vitest Test Results</title><style>body{font-family:monospace;line-height:1.5;padding:20px;}pre{background:#f8f8f8;padding:15px;border-radius:5px;overflow:auto;}</style></head><body><h1>Vitest Test Results</h1><pre>" > test-results/vitest/test-verbose-output.html
+    # If in GitHub Actions, use GitHub reporter
+    if [ -n "$GITHUB_ACTIONS" ]; then
+        npx vitest run --reporter=github-actions --reporter=verbose
+        exit 0
+    fi
     
-    # Run tests and capture plain output
-    npx vitest run --reporter=verbose >> test-results/vitest/test-verbose-output.html 2>&1
+    # For local development with colorized HTML report
+    echo "Running in local mode with HTML output"
     
-    # Close the HTML tags
-    echo "</pre></body></html>" >> test-results/vitest/test-verbose-output.html
+    # Generate HTML header
+    echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Vitest Test Results</title><style>body{font-family:monospace;line-height:1.5;padding:20px;background:#f5f5f5;color:#333;}pre{background:#1e1e1e;padding:15px;border-radius:5px;overflow:auto;color:#f8f8f8;}</style></head><body><h1>Vitest Test Results</h1>' > test-results/vitest/test-verbose-output.html
     
-    # Only open the report when running locally (not on CI)
-    if [ -z "$CI" ] && [ -f "test-results/vitest/test-verbose-output.html" ]; then
+    # Run tests with forced color output
+    node run-vitest-with-colors.js test-results/vitest/temp_output.txt
+    
+    # Convert to HTML
+    echo '<pre>' >> test-results/vitest/test-verbose-output.html
+    node ansi-to-html-converter.js test-results/vitest/temp_output.txt test-results/vitest/test-verbose-output.html
+    echo '</pre></body></html>' >> test-results/vitest/test-verbose-output.html
+    
+    # Create raw output copy for debugging
+    echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Raw Test Output</title><style>body{font-family:monospace;white-space:pre;}</style></head><body><pre>' > test-results/vitest/raw-output.html
+    cat test-results/vitest/temp_output.txt >> test-results/vitest/raw-output.html
+    echo '</pre></body></html>' >> test-results/vitest/raw-output.html
+    
+    # Clean up
+    rm -f test-results/vitest/temp_output.txt
+    
+    # Open the report
+    if [ -f "test-results/vitest/test-verbose-output.html" ]; then
         open test-results/vitest/test-verbose-output.html
     fi
 
@@ -366,3 +389,28 @@ pw-test-ui:
 # Install Playwright browsers
 pw-install:
     npx playwright install
+
+# Run Vitest tests with GitHub Actions reporter (for CI)
+js-test-github-actions:
+    #!/usr/bin/env sh
+    # This command is optimized for GitHub Actions workflows
+    # It uses the GitHub Actions reporter to create annotations in the PR/commit view
+    # Combined with verbose output for complete test information
+    
+    # Create the output directory
+    mkdir -p test-results/vitest
+    
+    # Run with both GitHub Actions reporter and verbose reporter
+    GITHUB_ACTIONS=true npx vitest run --reporter=github-actions --reporter=verbose
+    
+    # Save the exit code
+    TEST_EXIT_CODE=$?
+    
+    # Generate a JSON summary of test results for badges
+    npx vitest run --reporter=json --outputFile=test-results/vitest/test-output.json || true
+    
+    # Generate badges from test results
+    just js-test-generate-badges test-results/vitest/test-output.json
+    
+    # Exit with the original test exit code
+    exit $TEST_EXIT_CODE
