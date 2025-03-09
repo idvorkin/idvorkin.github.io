@@ -38,6 +38,10 @@ js-typecheck:
 js-test:
     npx vitest run
 
+# Run Vitest tests with JSON reporter
+js-test-json:
+    npx vitest run --reporter json
+
 # Run Vitest tests in watch mode
 js-test-watch:
     npx vitest

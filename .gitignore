@@ -1,4 +1,3 @@
-
 # Ignore the statically generated site.
 _site
 
@@ -23,8 +22,6 @@ _cypress_api_key
 
 # Ignore node stuff
 node_modules/
-package-lock.json
-yarn.lock
 
 # Cypress artificats
 

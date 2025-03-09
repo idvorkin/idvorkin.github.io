@@ -30,6 +30,14 @@ jobs:
           node-version: "20"
           cache: "npm"
 
+      - name: Verify lock file exists
+        run: |
+          if [ ! -f package-lock.json ]; then
+            echo "package-lock.json not found. Creating one..."
+            npm i --package-lock-only
+            git status
+          fi
+
       - name: Install dependencies
         run: npm ci
 
@@ -46,7 +54,7 @@ jobs:
           # --reporter json: outputs test results in JSON format for parsing
           # We use set +e to continue the workflow even if tests fail
           set +e
-          just js-test --reporter json > test-output.json
+          just js-test-json > test-output.json
           TEST_RESULT=$?
           set -e
 
@@ -78,8 +86,25 @@ jobs:
             echo "Generated badge JSON for $PASSED/$TOTAL tests for $WEBSITE_URL"
           fi
 
+          # Ensure test-results directory exists and has content even if tests failed
+          ls -la test-results
+          if [ ! -f test-results/vitest-count.json ]; then
+            echo "Creating fallback badge file..."
+            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest-count.json
+          fi
+
           # Exit with the original test result to properly mark the workflow as passed/failed
           exit $TEST_RESULT
+
+      - name: Ensure test-results directory exists before deploy
+        if: always() && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        run: |
+          if [ ! -d "test-results" ]; then
+            echo "Creating test-results directory"
+            mkdir -p test-results
+            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"no tests run\", \"color\": \"yellow\"}" > test-results/vitest-count.json
+          fi
+          ls -la test-results
 
       - name: Deploy test results to GitHub Pages
         if: always() && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
