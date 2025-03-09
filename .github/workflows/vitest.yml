@@ -1,0 +1,90 @@
+name: Vitest
+
+# This workflow runs Vitest tests and generates two badges:
+# 1. GitHub's built-in workflow status badge (pass/fail)
+# 2. Custom badge showing test counts deployed to GitHub Pages
+#
+# The badges can be displayed in the README with:
+# [![Vitest](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml/badge.svg)](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml)
+# [![Vitest Tests](https://img.shields.io/endpoint?url=https://idvorkin.github.io/test-results/vitest-count.json)](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml)
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+env:
+  WEBSITE_URL: idvork.in # The website URL for reference
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install just
+        uses: extractions/setup-just@v1
+
+      - name: Run Vitest tests and generate badge data
+        id: vitest
+        run: |
+          # Create a directory for test results
+          mkdir -p test-results
+
+          # Run tests and capture output
+          # --reporter json: outputs test results in JSON format for parsing
+          # We use set +e to continue the workflow even if tests fail
+          set +e
+          just js-test --reporter json > test-output.json
+          TEST_RESULT=$?
+          set -e
+
+          # Check if the output is valid JSON
+          if ! jq . test-output.json > /dev/null 2>&1; then
+            echo "Test output is not valid JSON. Using fallback values."
+            # Fallback to basic values if JSON parsing fails
+            if [ $TEST_RESULT -eq 0 ]; then
+              echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"tests passing\", \"color\": \"brightgreen\"}" > test-results/vitest-count.json
+            else
+              echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"tests failing\", \"color\": \"red\"}" > test-results/vitest-count.json
+            fi
+          else
+            # Extract test counts using jq from the JSON output
+            TOTAL=$(jq '.numTotalTestSuites' test-output.json)
+            PASSED=$(jq '.numPassedTestSuites' test-output.json)
+            FAILED=$(jq '.numFailedTestSuites' test-output.json)
+            
+            # Determine color based on failed tests (green for all passing, red otherwise)
+            if [ "$FAILED" -eq 0 ]; then
+              COLOR="brightgreen"
+            else
+              COLOR="red"
+            fi
+            
+            # Create a badge JSON file in shields.io format
+            # This will be used by the shields.io endpoint to generate a badge
+            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"$PASSED/$TOTAL tests\", \"color\": \"$COLOR\"}" > test-results/vitest-count.json
+            echo "Generated badge JSON for $PASSED/$TOTAL tests for $WEBSITE_URL"
+          fi
+
+          # Exit with the original test result to properly mark the workflow as passed/failed
+          exit $TEST_RESULT
+
+      - name: Deploy test results to GitHub Pages
+        if: always() && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: test-results
+          target-folder: test-results
+          clean: false

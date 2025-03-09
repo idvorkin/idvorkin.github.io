@@ -1,0 +1,49 @@
+name: Vitest Local Test
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+env:
+  WEBSITE_URL: idvork.in # The website URL for reference
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "16"
+
+      - name: Test Badge Generation
+        run: |
+          # Create a directory for test results
+          mkdir -p test-results
+
+          # Create a mock test result for demonstration
+          echo '{"numTotalTestSuites": 10, "numPassedTestSuites": 9, "numFailedTestSuites": 1}' > test-output.json
+
+          # Extract test counts using jq
+          TOTAL=$(jq '.numTotalTestSuites' test-output.json)
+          PASSED=$(jq '.numPassedTestSuites' test-output.json)
+          FAILED=$(jq '.numFailedTestSuites' test-output.json)
+
+          # Determine color based on failed tests
+          if [ "$FAILED" -eq 0 ]; then
+            COLOR="brightgreen"
+          else
+            COLOR="red"
+          fi
+
+          # Create a badge JSON file in shields.io format
+          echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"$PASSED/$TOTAL tests\", \"color\": \"$COLOR\"}" > test-results/vitest-count.json
+
+          # Print the created badge JSON
+          echo "Generated badge JSON:"
+          cat test-results/vitest-count.json
