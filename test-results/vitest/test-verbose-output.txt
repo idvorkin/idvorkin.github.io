@@ -1,0 +1,39 @@
+npx vitest run --reporter=verbose
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+[1m[7m[36m RUN [39m[27m[22m [36mv3.0.8 [39m[90m/home/runner/work/idvorkin.github.io/idvorkin.github.io[39m
+
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould remove a class when force parameter is false
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould return null when element is not found
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould create an element with the specified tag
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould set attributes on the created element
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould append text children to the element
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould append node children to the element
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mcreateElement[2m > [22mshould handle mixed text and node children
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find the immediate parent element matching a selector
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
+ [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
+[90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
+[22m[39mappend_randomizer_div #non-existent not present
+
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould have a roughly even distribution over many calls
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mshuffle[2m > [22mshould change the order of elements (most of the time)
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not append anything if parent is not found
+ [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
+ [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
+ [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
+ [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list
+
+[2m Test Files [22m [1m[32m3 passed[39m[22m[90m (3)[39m
+[2m      Tests [22m [1m[32m25 passed[39m[22m[90m (25)[39m
+[2m   Start at [22m 15:27:25
+[2m   Duration [22m 799ms[2m (transform 195ms, setup 70ms, collect 211ms, tests 51ms, environment 1.23s, prepare 278ms)[22m
+
