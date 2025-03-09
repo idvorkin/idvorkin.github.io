@@ -172,7 +172,7 @@ jobs:
 
       - name: Upload test coverage as artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: vitest-coverage
           path: coverage/
