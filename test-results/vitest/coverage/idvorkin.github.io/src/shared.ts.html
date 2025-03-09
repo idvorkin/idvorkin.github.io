@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.55% </span>
+                <span class="strong">84.48% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>27/58</span>
+                <span class='fraction'>49/58</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">87.5% </span>
+                <span class="strong">93.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>7/8</span>
+                <span class='fraction'>14/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.55% </span>
+                <span class="strong">84.48% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>27/58</span>
+                <span class='fraction'>49/58</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -262,31 +262,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
  * Shared utility functions
  *
@@ -374,31 +374,31 @@ let cached_link_info: IURLInfoMap = null;
 /**
  * Gets link information from the back-links.json file
  */
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >export async function get_link_info(url?: string): Promise&lt;IURLInfoMap&gt; {</span></span>
-<span class="cstat-no" title="statement not covered" >  if (cached_link_info != null) {</span>
-<span class="cstat-no" title="statement not covered" >    return cached_link_info;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >  const current_url = url || window.location.href;</span>
-<span class="cstat-no" title="statement not covered" >  const prodPrefix = "https://idvork.in";</span>
-<span class="cstat-no" title="statement not covered" >  const isProd = current_url.includes(prodPrefix);</span>
+export async function get_link_info(url?: string): Promise&lt;IURLInfoMap&gt; {
+  if (cached_link_info != null) {
+    return cached_link_info;
+  }
+  const current_url = url || window.location.href;
+  const prodPrefix = "https://idvork.in";
+  const isProd = current_url.includes(prodPrefix);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  var backlinks_url =</span>
-<span class="cstat-no" title="statement not covered" >    "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";</span>
+  var backlinks_url =
+    "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  if (!isProd) {</span>
-<span class="cstat-no" title="statement not covered" >    backlinks_url = "/back-links.json";</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+  if (!isProd) {
+    backlinks_url = "/back-links.json";
+  }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    const response = await fetch(backlinks_url);</span>
-<span class="cstat-no" title="statement not covered" >    const data = await response.json();</span>
-<span class="cstat-no" title="statement not covered" >    cached_link_info = data.url_info;</span>
-<span class="cstat-no" title="statement not covered" >    return cached_link_info;</span>
-<span class="cstat-no" title="statement not covered" >  } catch (e) {</span>
-<span class="cstat-no" title="statement not covered" >    console.error("Error fetching link info", e);</span>
-<span class="cstat-no" title="statement not covered" >    return {};</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+  try {
+    const response = await fetch(backlinks_url);
+    const data = await response.json();
+    cached_link_info = data.url_info;
+    return cached_link_info;
+  } catch (e) {
+    console.error("Error fetching link info", e);
+    return {};
+  }
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -406,7 +406,7 @@ let cached_link_info: IURLInfoMap = null;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-03-09T17:00:01.389Z
+                at 2025-03-09T17:10:47.536Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
