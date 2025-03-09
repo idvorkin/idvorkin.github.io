@@ -99,73 +99,7 @@ js-test-output-to-html:
 
 # Generate badge JSON files from test results
 js-test-generate-badges test_output_json="test-output.json":
-    #!/usr/bin/env sh
-    # Make sure the directory exists
-    mkdir -p test-results/vitest
-    
-    # Try to parse the JSON output
-    TEST_RESULT=0
-    if ! jq . {{test_output_json}} > /dev/null 2>&1; then
-        echo "Test output is not valid JSON. Using fallback values."
-        # Fallback to basic values if JSON parsing fails
-        if [ $TEST_RESULT -eq 0 ]; then
-            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"tests passing\", \"color\": \"brightgreen\"}" > test-results/vitest/badge-count.json
-        else
-            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"tests failing\", \"color\": \"red\"}" > test-results/vitest/badge-count.json
-        fi
-    else
-        # Extract test counts using jq from the JSON output
-        echo "Debugging JSON extraction:"
-        echo "File content first 100 chars: $(head -c 100 {{test_output_json}})"
-        echo "numTotalTests value: $(jq '.numTotalTests' {{test_output_json}})"
-        echo "numPassedTests value: $(jq '.numPassedTests' {{test_output_json}})"
-        echo "numFailedTests value: $(jq '.numFailedTests' {{test_output_json}})"
-        
-        TOTAL=$(jq '.numTotalTests' {{test_output_json}})
-        PASSED=$(jq '.numPassedTests' {{test_output_json}})
-        FAILED=$(jq '.numFailedTests' {{test_output_json}})
-        
-        echo "Extracted values: TOTAL=$TOTAL, PASSED=$PASSED, FAILED=$FAILED"
-        
-        # Determine color based on failed tests (green for all passing, red otherwise)
-        if [ "$FAILED" -eq 0 ]; then
-            COLOR="brightgreen"
-        else
-            COLOR="red"
-        fi
-        
-        # Create a badge JSON file in shields.io format
-        echo "{\"schemaVersion\": 1, \"label\": \"Vitest Tests\", \"message\": \"$PASSED/$TOTAL tests\", \"color\": \"$COLOR\"}" > test-results/vitest/badge-count.json
-        echo "Generated badge JSON for $PASSED/$TOTAL tests"
-    fi
-    
-    # Generate coverage badge if coverage data exists
-    if [ -f "coverage/coverage-summary.json" ]; then
-        COVERAGE_PCT=$(jq -r '.total.lines.pct' coverage/coverage-summary.json 2>/dev/null || echo "unknown")
-        
-        # Determine color based on coverage percentage
-        if [ "$COVERAGE_PCT" = "unknown" ]; then
-            COV_COLOR="gray"
-        elif [ $(echo "$COVERAGE_PCT >= 90" | bc -l) -eq 1 ]; then
-            COV_COLOR="brightgreen"
-        elif [ $(echo "$COVERAGE_PCT >= 80" | bc -l) -eq 1 ]; then
-            COV_COLOR="green"
-        elif [ $(echo "$COVERAGE_PCT >= 70" | bc -l) -eq 1 ]; then
-            COV_COLOR="yellowgreen"
-        elif [ $(echo "$COVERAGE_PCT >= 60" | bc -l) -eq 1 ]; then
-            COV_COLOR="yellow"
-        else
-            COV_COLOR="red"
-        fi
-        
-        # Create a badge JSON file for coverage
-        echo "{\"schemaVersion\": 1, \"label\": \"Vitest Coverage\", \"message\": \"${COVERAGE_PCT}%\", \"color\": \"$COV_COLOR\"}" > test-results/vitest/badge-coverage.json
-        echo "Generated coverage badge JSON for ${COVERAGE_PCT}% coverage"
-    else
-        # If we can't find the coverage info, create a fallback badge
-        echo "{\"schemaVersion\": 1, \"label\": \"Vitest Coverage\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-coverage.json
-        echo "No coverage data found, using fallback badge"
-    fi
+    ./deploy-scripts/generate-badges.sh {{test_output_json}}
 
 # Run Vitest tests with JSON reporter
 js-test-json:

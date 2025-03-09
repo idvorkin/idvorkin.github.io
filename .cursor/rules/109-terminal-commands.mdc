@@ -1,68 +1,90 @@
 ---
 description: ALWAYS append | /bin/cat to commands that use pagers or require user interaction to prevent command breakage
-globs: ["*.sh", "justfile"]
-tags: [terminal, commands, workflow]
+globs: ["**/*.yml", "**/*.sh", "justfile"]
+tags: [terminal, workflow, best-practice]
 priority: 2
 version: 1.0.0
 ---
 
-# Terminal Command Conventions
+# Terminal Command Pager Prevention
 
 <version>1.0.0</version>
 
 ## Context
-- When running terminal commands in scripts or through Cursor
-- When working with commands that use pagers or require user interaction
-- When running long-running commands that should continue in the background
+- When running terminal commands that might use pagers (like `git`, `less`, `head`, `tail`, `more`)
+- When executing commands in CI/CD environments or automated scripts
+- When running commands that might require user interaction
 
-## Rule Details
+## Purpose
+This rule exists to prevent commands from hanging or breaking due to pager interactions. Many commands like `git log`, `less`, or `more` will open an interactive pager by default, which can cause automation to hang indefinitely. By piping output to `/bin/cat`, we ensure the command runs non-interactively.
 
-### Pager Commands
+## Requirements
 
-For ANY commands that would use a pager or require user interaction, you should append ` | /bin/cat` to the command (NOT just `cat` as it's aliased to `bat`). Otherwise, the command will break.
+### Pager Prevention
+- ALWAYS append `| /bin/cat` to commands that might use pagers, including:
+  - `git` commands (especially `log`, `diff`, `show`)
+  - `less`, `more`, `head`, `tail`
+  - Any command that might open a pager or require user interaction
+- Example: `git log | /bin/cat` instead of just `git log`
 
-This applies to the following commands:
-- git
-- less
-- head
-- tail
-- more
-- man
-- Any other command that would normally open a pager
+### Workflow Command Structure
+- Use `just` commands from GitHub workflows instead of inline shell scripts
+- Create dedicated shell scripts in `deploy-scripts/` directory for complex logic
+- Move complex code from `justfile` to dedicated scripts in `deploy-scripts/`
 
-#### Examples
+### Script Organization
+- Place all complex shell scripts in the `deploy-scripts/` directory
+- Make scripts executable with `chmod +x deploy-scripts/script-name.sh`
+- Call these scripts from the `justfile` with appropriate arguments
+- Keep `justfile` recipes simple, primarily calling scripts rather than containing complex logic
+
+## Examples
+
+### Pager Prevention
 
 <example>
-# Good: Appending | /bin/cat to commands with pagers
+# Bad - might hang waiting for user input
+git log
+
+# Good - prevents pager from requiring interaction
 git log | /bin/cat
-git diff | /bin/cat
-less file.txt | /bin/cat
+</example>
+
+<example>
+# Bad - might hang in CI/CD environments
+head -n 100 large_file.txt
+
+# Good - ensures output is displayed without pager
 head -n 100 large_file.txt | /bin/cat
 </example>
 
-<example type="invalid">
-# Bad: Not appending | /bin/cat to commands with pagers
-git log
-git diff
-less file.txt
-head -n 100 large_file.txt
-</example>
-
-### Background Commands
-
-For commands that are long running or expected to run indefinitely until interruption, run them in the background by:
-1. Adding `&` at the end of the command
-2. Setting `is_background` to true when using the run_terminal_cmd tool
-
-#### Examples
+### Script Organization
 
 <example>
-# Good: Running long-running commands in the background
-npm start &
-python server.py &
+# Bad - complex logic in justfile
+generate-badges:
+    #!/bin/bash
+    mkdir -p test-results
+    # Many lines of complex logic here
+    jq -r '.coverage' test-output.json > coverage.txt
+    # More complex logic
+
+# Good - simple call to dedicated script
+generate-badges:
+    ./deploy-scripts/generate-badges.sh {{test_output_json}}
 </example>
 
-## Coding Style Preferences
+### GitHub Workflow Integration
 
-1. Prefer returning from a function vs nesting ifs
-2. Prefer descriptive variable names over comments
+<example>
+# Bad - inline shell script in GitHub workflow
+- name: Generate badges
+  run: |
+    mkdir -p test-results
+    # Complex multi-line script here
+    jq -r '.coverage' test-output.json > coverage.txt
+
+# Good - using just command that calls dedicated script
+- name: Generate badges
+  run: just generate-badges
+</example>

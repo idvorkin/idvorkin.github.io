@@ -13,8 +13,8 @@ name: Vitest
 #
 # The badges can be displayed in the README with:
 # [![Vitest](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml/badge.svg)](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml)
-# [![Vitest Tests](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-count.json)](https://idvorkin.github.io/test-results/vitest/html/index.html)
-# [![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-coverage.json)](https://idvorkin.github.io/test-results/vitest/coverage/index.html)
+# [![Vitest Tests](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-count.json)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/test-verbose-output.html)
+# [![Vitest Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-coverage.json)](https://htmlpreview.github.io/?https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/coverage/index.html)
 # [![Test Report](https://img.shields.io/badge/Test%20Report-View%20Details-informational)](https://idvorkin.github.io/test-results/vitest/html/index.html)
 # [![Verbose Output](https://img.shields.io/badge/Test%20Output-Verbose-blue)](https://github.com/idvorkin/idvorkin.github.io/blob/test-results/test-results/vitest/test-verbose-output.txt)
 
@@ -79,8 +79,8 @@ jobs:
           # Ensure test-results directory exists and has content even if tests failed
           ls -la test-results/vitest
           if [ ! -f test-results/vitest/badge-count.json ]; then
-            echo "Creating fallback badge file..."
-            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-count.json
+            echo "Creating fallback badge files using generate-badges.sh script..."
+            ./deploy-scripts/generate-badges.sh fallback.json
           fi
 
           # Exit with the original test result to properly mark the workflow as passed/failed
@@ -92,8 +92,10 @@ jobs:
           if [ ! -d "test-results/vitest" ]; then
             echo "Creating test-results directory"
             mkdir -p test-results/vitest
-            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"no tests run\", \"color\": \"yellow\"}" > test-results/vitest/badge-count.json
-            echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-coverage.json
+            
+            # Use the generate-badges.sh script to create fallback badges
+            ./deploy-scripts/generate-badges.sh fallback.json
+            
             # Create an empty verbose output file if it doesn't exist
             touch test-results/vitest/test-verbose-output.txt
           fi

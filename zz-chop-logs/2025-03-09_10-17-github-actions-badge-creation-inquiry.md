@@ -1422,6 +1422,87 @@ Would you like me to make any additional changes to the justfile or other files 
 
 ---
 
+_**User**_
+
+OK test just-file works
+
+---
+
+_**Assistant**_
+
+<think>The user wants to verify that the justfile works correctly. Let's run the justfile command directly to generate the badge and confirm it's working properly.</think>
+
+Let's verify that the justfile badge generation is working correctly:
+
+---
+
+_****_
+
+```bash
+just js-test-json > test-output.json && just js-test-generate-badges test-output.json
+```
+
+```
+❯ just js-test-json > test-output.json && just js-test-generate-badges test-output.json
+npx vitest run --reporter json
+(node:85910) ExperimentalWarning: CommonJS module /opt/homebrew/lib/node_modules/npm/node_modules/debug/src/node.js is loading ES Module /opt/homebrew/lib/node_modules/npm/node_modules/supports-color/index.js using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:85927) ExperimentalWarning: CommonJS module $HOME/gits/idvorkin.github.io/node_modules/vitest/dist/config.cjs is loading ES Module $HOME/gits/idvorkin.github.io/node_modules/vite/dist/node/index.js usin
+g require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Debugging JSON extraction:
+File content first 100 chars: {"numTotalTestSuites":16,"numPassedTestSuites":16,"numFailedTestSuites":0,"numPendingTestSuites":0,"
+numTotalTests value: 29
+numPassedTests value: 29
+numFailedTests value: 0
+Extracted values: TOTAL=29, PASSED=29, FAILED=0
+Generated badge JSON for 29/29 tests
+No coverage data found, using fallback badge
+
+igors-Mac-mini in idvorkin.github.io on  master [$!?] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 on ☁️   
+❯
+```
+
+---
+
+_****_
+
+Let's check the badge file to confirm it has the correct test count:
+
+---
+
+_****_
+
+```bash
+/bin/cat test-results/vitest/badge-count.json
+```
+
+```
+❯ /bin/cat test-results/vitest/badge-count.json
+{"schemaVersion": 1, "label": "Vitest Tests", "message": "29/29 tests", "color": "brightgreen"}
+
+igors-Mac-mini in idvorkin.github.io on  master [$!?] via  v23.2.0 via 🐍 v3.13.0 (omnifocus_cli) via 💎 v2.6.10 on ☁️   
+❯
+```
+
+---
+
+_****_
+
+Great! The justfile is now working correctly. The badge generation is properly:
+
+1. Extracting the test counts from the JSON output (29 total tests, 29 passed tests)
+2. Creating the badge JSON file with the correct format
+3. Showing the accurate test count (29/29 tests) in the badge
+
+The fix we made to the justfile has successfully resolved the issue. The badge now correctly shows the number of individual tests rather than the number of test suites.
+
+Is there anything else you'd like me to help with regarding the GitHub Actions workflow or badge generation?
+
+---
+
 
 
 ---

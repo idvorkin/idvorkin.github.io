@@ -81,11 +81,11 @@ js-test-generate-badges test_output_json="test-output.json":
         fi
         
         # Create a badge JSON file for coverage
-        echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"${COVERAGE_PCT}%\", \"color\": \"$COV_COLOR\"}" > test-results/vitest/badge-coverage.json
+        echo "{\"schemaVersion\": 1, \"label\": \"Vitest Coverage\", \"message\": \"${COVERAGE_PCT}%\", \"color\": \"$COV_COLOR\"}" > test-results/vitest/badge-coverage.json
         echo "Generated coverage badge JSON for ${COVERAGE_PCT}% coverage"
     else
         # If we can't find the coverage info, create a fallback badge
-        echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-coverage.json
+        echo "{\"schemaVersion\": 1, \"label\": \"Vitest Coverage\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-coverage.json
         echo "No coverage data found, using fallback badge"
     fi
 
