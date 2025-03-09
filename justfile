@@ -39,6 +39,10 @@ js-typecheck:
 js-test:
     npx vitest run
 
+# Run Vitest tests with verbose text output
+js-test-verbose-txt:
+    npx vitest run --reporter=verbose
+
 # Run Vitest tests with JSON reporter
 js-test-json:
     npx vitest run --reporter json
@@ -118,14 +122,6 @@ js-clean:
 # Validate code (typecheck + lint)
 js-validate: js-typecheck js-lint
 
-parcel-clean:
-    @echo "⚠️ This command is deprecated. Use 'just js-clean' instead."
-    rm -rf .parcel-cache dist
-
-tsc:
-    @echo "⚠️ This command is deprecated. Use 'just js-typecheck' instead."
-    tsc --watch --allowUmdGlobalAccess
-
 # ===== Jekyll Commands =====
 
 coverage-instrument:
@@ -188,7 +184,7 @@ write-backlinks-tmp:
     #!/usr/bin/env sh
     # Ensure ~/tmp directory exists
     mkdir -p ~/tmp
-    
+
     # Rebuild backlinks directly to ~/tmp
     uv run ./build_back_links.py build ~/tmp/back-links.json
     echo "Backlinks written to ~/tmp/back-links.json"
@@ -198,28 +194,28 @@ push-backlinks:
     #!/usr/bin/env sh
     # Ensure ~/tmp directory exists
     mkdir -p ~/tmp
-    
+
     # Save the current state of back-links.json to ~/tmp
     cp back-links.json ~/tmp/back-links.json.bak
-    
+
     # Rebuild backlinks using existing command
     just update-backlinks
-    
+
     # Also generate a copy in ~/tmp for reference
     just update-backlinks-to ~/tmp/back-links.json
-    
+
     # Check if there are changes
     if ! git diff --quiet back-links.json; then
         # Count the number of changed lines
         CHANGED_LINES=$(git diff --numstat back-links.json | awk '{print $1 + $2}')
         echo "Number of changed lines: $CHANGED_LINES"
-        
+
         # If too many lines changed, ask for confirmation
         if [ "$CHANGED_LINES" -gt 50 ]; then
             echo "WARNING: Large number of changes detected ($CHANGED_LINES lines)"
             echo "Showing diff summary:"
             git diff --stat back-links.json
-            
+
             # Ask for confirmation
             read -p "Do you want to continue with the push? (y/n) " CONFIRM
             if [ "$CONFIRM" != "y" ]; then
@@ -228,7 +224,7 @@ push-backlinks:
                 exit 1
             fi
         fi
-        
+
         # Commit and push changes
         git add back-links.json
         git commit -m "feat(back-links): update backlinks data $(date +%Y-%m-%d)"
@@ -269,4 +265,4 @@ pw-test-ui:
 
 # Install Playwright browsers
 pw-install:
-    npx playwright install 
+    npx playwright install

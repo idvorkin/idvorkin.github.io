@@ -17,7 +17,7 @@ export default defineConfig({
         "*.setup.ts",
       ],
     },
-    reporters: ["default"],
+    reporters: ["default", "verbose"],
     globals: true,
     setupFiles: ["./vitest.setup.ts"],
   },

@@ -5,9 +5,11 @@ This README showcases my blog at https://idvork.in
 Badges below show the status of tests and integrations for this repository.
 -->
 
+[![Vitest](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml/badge.svg)](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml)
 [![Vitest Tests](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-count.json)](https://idvorkin.github.io/test-results/vitest/html/index.html)
 [![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-coverage.json)](https://idvorkin.github.io/test-results/vitest/coverage/index.html)
 [![Test Report](https://img.shields.io/badge/Test%20Report-View%20Details-informational)](https://idvorkin.github.io/test-results/vitest/html/index.html)
+[![Verbose Output](https://img.shields.io/badge/Test%20Output-Verbose-blue)](https://github.com/idvorkin/idvorkin.github.io/blob/test-results/test-results/vitest/test-verbose-output.txt)
 
 This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andymatuschak.org/z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C), and an [enabling environment](https://notes.andymatuschak.org/z3DaBP4vN1dutjUgrk3jbEeNxScccvDCxDgXe) to interact with them. These are currently intermingled, but
 
@@ -122,14 +124,19 @@ To run the tests:
 
 ```bash
 # Run all tests
-npm test
+just js-test
 
-# Run tests in watch mode
-npm run test:watch
+# Run tests with verbose text output
+just js-test-verbose-txt
 
 # Run tests with coverage
-npm run test:coverage
+just js-test-coverage
+
+# Run tests with HTML report
+just js-test-html
 ```
+
+> **Note:** All test results from CI runs are published to the `test-results` branch. This includes HTML reports, coverage data, and the verbose text output. The badges above link directly to these results, making it easy to access detailed test information without having to re-run the tests locally.
 
 ### Useful scripts
 

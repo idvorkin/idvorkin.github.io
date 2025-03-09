@@ -5,12 +5,18 @@ name: Vitest
 # 2. Custom badge showing test counts deployed to GitHub Pages
 # 3. Coverage badge showing test coverage percentage
 # 4. Test output badge linking to full test results
+# 5. Verbose output badge linking to detailed test output file
+#
+# IMPORTANT: All test outputs (HTML reports, coverage, verbose text output) are published
+# to the 'test-results' branch under the 'test-results' directory. This ensures that all
+# test artifacts are accessible via consistent URLs without cluttering the main branch.
 #
 # The badges can be displayed in the README with:
 # [![Vitest](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml/badge.svg)](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml)
-# [![Vitest Tests](https://img.shields.io/endpoint?url=https://idvorkin.github.io/test-results/vitest/badge-count.json)](https://idvorkin.github.io/test-results/vitest/html/index.html)
-# [![Coverage](https://img.shields.io/endpoint?url=https://idvorkin.github.io/test-results/vitest/badge-coverage.json)](https://idvorkin.github.io/test-results/vitest/coverage/index.html)
+# [![Vitest Tests](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-count.json)](https://idvorkin.github.io/test-results/vitest/html/index.html)
+# [![Coverage](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/test-results/test-results/vitest/badge-coverage.json)](https://idvorkin.github.io/test-results/vitest/coverage/index.html)
 # [![Test Report](https://img.shields.io/badge/Test%20Report-View%20Details-informational)](https://idvorkin.github.io/test-results/vitest/html/index.html)
+# [![Verbose Output](https://img.shields.io/badge/Test%20Output-Verbose-blue)](https://github.com/idvorkin/idvorkin.github.io/blob/test-results/test-results/vitest/test-verbose-output.txt)
 
 on:
   push:
@@ -55,9 +61,11 @@ jobs:
           mkdir -p test-results/vitest
 
           # Run tests and capture output
-          # --reporter json: outputs test results in JSON format for parsing
-          # We use set +e to continue the workflow even if tests fail
+          # First run with verbose text output and save to file
           set +e
+          just js-test-verbose-txt > test-results/vitest/test-verbose-output.txt 2>&1
+
+          # Then run with JSON reporter for badge generation
           just js-test-json > test-output.json
           TEST_RESULT=$?
 
@@ -158,10 +166,28 @@ jobs:
             mkdir -p test-results/vitest
             echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"no tests run\", \"color\": \"yellow\"}" > test-results/vitest/badge-count.json
             echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-coverage.json
+            # Create an empty verbose output file if it doesn't exist
+            touch test-results/vitest/test-verbose-output.txt
           fi
+
+          # Check if verbose output file exists 
+          if [ ! -f "test-results/vitest/test-verbose-output.txt" ]; then
+            echo "No verbose test output found, creating empty file"
+            echo "No test output available" > test-results/vitest/test-verbose-output.txt
+          fi
+
           ls -la test-results/vitest
 
       - name: Deploy test results to GitHub Pages
+        if: always() && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        run: |
+          echo "Preparing to deploy test results to test-results branch"
+          echo "Files being deployed:"
+          find test-results -type f | sort
+          echo "All test artifacts will be available at: https://github.com/idvorkin/idvorkin.github.io/tree/test-results/test-results"
+          echo "Verbose test output is available at: https://github.com/idvorkin/idvorkin.github.io/blob/test-results/test-results/vitest/test-verbose-output.txt"
+
+      - name: Deploy test results to test-results branch
         if: always() && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         uses: JamesIves/github-pages-deploy-action@v4
         with:
@@ -176,4 +202,12 @@ jobs:
         with:
           name: vitest-coverage
           path: coverage/
+          retention-days: 30
+
+      - name: Upload verbose test output as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vitest-verbose-output
+          path: test-results/vitest/test-verbose-output.txt
           retention-days: 30
