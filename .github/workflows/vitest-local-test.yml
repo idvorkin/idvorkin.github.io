@@ -25,6 +25,9 @@ jobs:
         with:
           node-version: "16"
 
+      - name: Install just
+        uses: extractions/setup-just@v1
+
       - name: Test Badge Generation
         run: |
           # Create a directory for test results
@@ -44,20 +47,11 @@ jobs:
           echo "     Expected: true" >> test-results/vitest/test-verbose-output.txt
           echo "     Received: false" >> test-results/vitest/test-verbose-output.txt
 
-          # Extract test counts using jq
-          TOTAL=$(jq '.numTotalTestSuites' test-output.json)
-          PASSED=$(jq '.numPassedTestSuites' test-output.json)
-          FAILED=$(jq '.numFailedTestSuites' test-output.json)
+          # Generate HTML version of the test output using the justfile command
+          just js-test-output-to-html
 
-          # Determine color based on failed tests
-          if [ "$FAILED" -eq 0 ]; then
-            COLOR="brightgreen"
-          else
-            COLOR="red"
-          fi
-
-          # Create a badge JSON file in shields.io format consistent with main workflow
-          echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"$PASSED/$TOTAL tests\", \"color\": \"$COLOR\"}" > test-results/vitest/badge-count.json
+          # Generate badges using the justfile command
+          just js-test-generate-badges test-output.json
 
           # Print the created badge JSON
           echo "Generated badge JSON:"

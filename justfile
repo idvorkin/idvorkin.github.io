@@ -43,6 +43,99 @@ js-test:
 js-test-verbose-txt:
     npx vitest run --reporter=verbose
 
+# Run Vitest tests with HTML output (simple, no colors)
+js-test-verbose-html:
+    #!/usr/bin/env sh
+    # Create the output directory
+    mkdir -p test-results/vitest
+    
+    # Generate HTML with basic formatting
+    echo "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>Vitest Test Results</title><style>body{font-family:monospace;line-height:1.5;padding:20px;}pre{background:#f8f8f8;padding:15px;border-radius:5px;overflow:auto;}</style></head><body><h1>Vitest Test Results</h1><pre>" > test-results/vitest/test-verbose-output.html
+    
+    # Run tests and capture plain output
+    npx vitest run --reporter=verbose >> test-results/vitest/test-verbose-output.html 2>&1
+    
+    # Close the HTML tags
+    echo "</pre></body></html>" >> test-results/vitest/test-verbose-output.html
+    
+    # Only open the report when running locally (not on CI)
+    if [ -z "$CI" ] && [ -f "test-results/vitest/test-verbose-output.html" ]; then
+        open test-results/vitest/test-verbose-output.html
+    fi
+
+# Convert existing test output to HTML (for CI use)
+js-test-output-to-html:
+    #!/usr/bin/env sh
+    # Make sure the directory exists
+    mkdir -p test-results/vitest
+    
+    # Generate HTML wrapper around existing output
+    echo "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>Vitest Test Results</title><style>body{font-family:monospace;line-height:1.5;padding:20px;}pre{background:#f8f8f8;padding:15px;border-radius:5px;overflow:auto;}</style></head><body><h1>Vitest Test Results</h1><pre>" > test-results/vitest/test-verbose-output.html
+    cat test-results/vitest/test-verbose-output.txt >> test-results/vitest/test-verbose-output.html
+    echo "</pre></body></html>" >> test-results/vitest/test-verbose-output.html
+
+# Generate badge JSON files from test results
+js-test-generate-badges test_output_json="test-output.json":
+    #!/usr/bin/env sh
+    # Make sure the directory exists
+    mkdir -p test-results/vitest
+    
+    # Try to parse the JSON output
+    TEST_RESULT=0
+    if ! jq . {{test_output_json}} > /dev/null 2>&1; then
+        echo "Test output is not valid JSON. Using fallback values."
+        # Fallback to basic values if JSON parsing fails
+        if [ $TEST_RESULT -eq 0 ]; then
+            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"tests passing\", \"color\": \"brightgreen\"}" > test-results/vitest/badge-count.json
+        else
+            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"tests failing\", \"color\": \"red\"}" > test-results/vitest/badge-count.json
+        fi
+    else
+        # Extract test counts using jq from the JSON output
+        TOTAL=$(jq '.numTotalTestSuites' {{test_output_json}})
+        PASSED=$(jq '.numPassedTestSuites' {{test_output_json}})
+        FAILED=$(jq '.numFailedTestSuites' {{test_output_json}})
+        
+        # Determine color based on failed tests (green for all passing, red otherwise)
+        if [ "$FAILED" -eq 0 ]; then
+            COLOR="brightgreen"
+        else
+            COLOR="red"
+        fi
+        
+        # Create a badge JSON file in shields.io format
+        echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"$PASSED/$TOTAL tests\", \"color\": \"$COLOR\"}" > test-results/vitest/badge-count.json
+        echo "Generated badge JSON for $PASSED/$TOTAL tests"
+    fi
+    
+    # Generate coverage badge if coverage data exists
+    if [ -f "coverage/coverage-summary.json" ]; then
+        COVERAGE_PCT=$(jq -r '.total.lines.pct' coverage/coverage-summary.json 2>/dev/null || echo "unknown")
+        
+        # Determine color based on coverage percentage
+        if [ "$COVERAGE_PCT" = "unknown" ]; then
+            COV_COLOR="gray"
+        elif [ $(echo "$COVERAGE_PCT >= 90" | bc -l) -eq 1 ]; then
+            COV_COLOR="brightgreen"
+        elif [ $(echo "$COVERAGE_PCT >= 80" | bc -l) -eq 1 ]; then
+            COV_COLOR="green"
+        elif [ $(echo "$COVERAGE_PCT >= 70" | bc -l) -eq 1 ]; then
+            COV_COLOR="yellowgreen"
+        elif [ $(echo "$COVERAGE_PCT >= 60" | bc -l) -eq 1 ]; then
+            COV_COLOR="yellow"
+        else
+            COV_COLOR="red"
+        fi
+        
+        # Create a badge JSON file for coverage
+        echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"${COVERAGE_PCT}%\", \"color\": \"$COV_COLOR\"}" > test-results/vitest/badge-coverage.json
+        echo "Generated coverage badge JSON for ${COVERAGE_PCT}% coverage"
+    else
+        # If we can't find the coverage info, create a fallback badge
+        echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-coverage.json
+        echo "No coverage data found, using fallback badge"
+    fi
+
 # Run Vitest tests with JSON reporter
 js-test-json:
     npx vitest run --reporter json
@@ -68,8 +161,10 @@ js-test-coverage-html:
     cp -r coverage ~/tmp/idvorkin.github.io/vitest/
     # Copy to test-results for local preview
     cp -r coverage test-results/vitest/
-    # Open the report
-    open ~/tmp/idvorkin.github.io/vitest/coverage/index.html
+    # Only open the report when running locally (not on CI)
+    if [ -z "$CI" ] && [ -f "~/tmp/idvorkin.github.io/vitest/coverage/index.html" ]; then
+        open ~/tmp/idvorkin.github.io/vitest/coverage/index.html
+    fi
 
 # Run Vitest tests with HTML reporter
 js-test-html:
@@ -81,7 +176,10 @@ js-test-html:
     # If HTML report was generated, copy it to the test-results directory
     if [ -d "html" ]; then
         cp -r html test-results/vitest/
-        open test-results/vitest/html/index.html
+        # Only open the report when running locally (not on CI)
+        if [ -z "$CI" ] && [ -f "test-results/vitest/html/index.html" ]; then
+            open test-results/vitest/html/index.html
+        fi
     else
         echo "No HTML report was generated"
     fi
@@ -100,8 +198,10 @@ js-test-full-report:
     if [ -d "coverage" ]; then
         cp -r coverage test-results/vitest/
     fi
-    # Open the HTML report
-    open test-results/vitest/html/index.html
+    # Only open the HTML report when running locally (not on CI)
+    if [ -z "$CI" ] && [ -f "test-results/vitest/html/index.html" ]; then
+        open test-results/vitest/html/index.html
+    fi
 
 # Run Vitest UI for interactive test viewing
 js-test-ui:
