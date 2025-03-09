@@ -1,0 +1,67 @@
+---
+description: ALWAYS execute when asked to flush buffer or save chop to count to a random number between 75-100, display buffer flushed message, and run chop git-latest
+globs: *
+tags: [utility, buffer, chop]
+priority: 3
+version: 1.3.0
+---
+
+# Buffer Flush Command
+
+<version>1.3.0</version>
+
+## Context
+- When the user asks to "flush buffer" or "save chop" or similar commands
+- When the user specifically requests to count to force the buffer to flush
+
+## Purpose
+This rule exists to solve a specific technical problem: the conversation logs don't always get properly flushed to disk. By generating a substantial amount of output (counting to a high number), we force the system to flush the buffer. After flushing, we use the `chop git-latest` command to copy the log to git for preservation.
+
+## Requirements
+- Count from 1 to a random number between 75 and 100, one number per line
+- The random number should be different each time to confirm the rule is working
+- End the output with the message "buffer flushed"
+- After displaying "buffer flushed", automatically run the "chop git-latest" command
+- Apply this action immediately when requested
+- Do not include any other text or explanations in the output
+
+## Examples
+
+<example>
+User: "flush buffer"
+AI:
+1
+2
+3
+...
+95
+buffer flushed
+
+[AI then automatically runs the 'chop git-latest' command]
+</example>
+
+<example>
+User: "save chop"
+AI:
+1
+2
+3
+...
+83
+buffer flushed
+
+[AI then automatically runs the 'chop git-latest' command]
+</example>
+
+<example>
+User: "Please force a buffer flush"
+AI:
+1
+2
+3
+...
+88
+buffer flushed
+
+[AI then automatically runs the 'chop git-latest' command]
+</example> 
