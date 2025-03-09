@@ -10,6 +10,7 @@ default:
 # - js-test-watch: Run Vitest tests in watch mode
 # - js-test-coverage: Run Vitest tests with coverage
 # - js-test-coverage-html: Run Vitest tests with coverage and open HTML report
+# - js-test-html: Run Vitest tests with HTML reporter
 # - js-test-ui: Run Vitest UI for interactive test viewing
 # - js-lint: Check code formatting
 # - js-format: Format code with Prettier
@@ -55,12 +56,48 @@ js-test-coverage-html:
     #!/usr/bin/env sh
     # Create the output directory if it doesn't exist
     mkdir -p ~/tmp/idvorkin.github.io/vitest
+    # Create results directory with consistent structure
+    mkdir -p test-results/vitest/coverage
     # Run Vitest with coverage and generate HTML report
     npx vitest run --coverage
     # Copy the coverage report to the tmp directory
     cp -r coverage ~/tmp/idvorkin.github.io/vitest/
+    # Copy to test-results for local preview
+    cp -r coverage test-results/vitest/
     # Open the report
     open ~/tmp/idvorkin.github.io/vitest/coverage/index.html
+
+# Run Vitest tests with HTML reporter
+js-test-html:
+    #!/usr/bin/env sh
+    # Create results directory with consistent structure
+    mkdir -p test-results/vitest
+    # Run Vitest with HTML reporter
+    npx vitest run --reporter=html
+    # If HTML report was generated, copy it to the test-results directory
+    if [ -d "html" ]; then
+        cp -r html test-results/vitest/
+        open test-results/vitest/html/index.html
+    else
+        echo "No HTML report was generated"
+    fi
+
+# Run Vitest tests with both HTML reporter and coverage
+js-test-full-report:
+    #!/usr/bin/env sh
+    # Create results directory with consistent structure
+    mkdir -p test-results/vitest
+    # Run Vitest with HTML reporter and coverage
+    npx vitest run --reporter=html --coverage
+    # Copy the reports to test-results directory
+    if [ -d "html" ]; then
+        cp -r html test-results/vitest/
+    fi
+    if [ -d "coverage" ]; then
+        cp -r coverage test-results/vitest/
+    fi
+    # Open the HTML report
+    open test-results/vitest/html/index.html
 
 # Run Vitest UI for interactive test viewing
 js-test-ui:

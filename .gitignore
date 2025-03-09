@@ -32,6 +32,7 @@ cypress/screenshots
 instrumented/
 coverage/
 .nyc_output
+test-results/
 
 pysrc/__pycache__/
 .aider*

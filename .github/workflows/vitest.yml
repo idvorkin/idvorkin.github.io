@@ -1,12 +1,16 @@
 name: Vitest
 
-# This workflow runs Vitest tests and generates two badges:
+# This workflow runs Vitest tests and generates badges:
 # 1. GitHub's built-in workflow status badge (pass/fail)
 # 2. Custom badge showing test counts deployed to GitHub Pages
+# 3. Coverage badge showing test coverage percentage
+# 4. Test output badge linking to full test results
 #
 # The badges can be displayed in the README with:
 # [![Vitest](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml/badge.svg)](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml)
-# [![Vitest Tests](https://img.shields.io/endpoint?url=https://idvorkin.github.io/test-results/vitest-count.json)](https://github.com/idvorkin/idvorkin.github.io/actions/workflows/vitest.yml)
+# [![Vitest Tests](https://img.shields.io/endpoint?url=https://idvorkin.github.io/test-results/vitest/badge-count.json)](https://idvorkin.github.io/test-results/vitest/html/index.html)
+# [![Coverage](https://img.shields.io/endpoint?url=https://idvorkin.github.io/test-results/vitest/badge-coverage.json)](https://idvorkin.github.io/test-results/vitest/coverage/index.html)
+# [![Test Report](https://img.shields.io/badge/Test%20Report-View%20Details-informational)](https://idvorkin.github.io/test-results/vitest/html/index.html)
 
 on:
   push:
@@ -47,8 +51,8 @@ jobs:
       - name: Run Vitest tests and generate badge data
         id: vitest
         run: |
-          # Create a directory for test results
-          mkdir -p test-results
+          # Create directories for test results with a consistent structure
+          mkdir -p test-results/vitest
 
           # Run tests and capture output
           # --reporter json: outputs test results in JSON format for parsing
@@ -56,6 +60,9 @@ jobs:
           set +e
           just js-test-json > test-output.json
           TEST_RESULT=$?
+
+          # Also run Vitest with HTML reporter and coverage
+          npx vitest run --reporter=html --coverage
           set -e
 
           # Check if the output is valid JSON
@@ -63,9 +70,9 @@ jobs:
             echo "Test output is not valid JSON. Using fallback values."
             # Fallback to basic values if JSON parsing fails
             if [ $TEST_RESULT -eq 0 ]; then
-              echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"tests passing\", \"color\": \"brightgreen\"}" > test-results/vitest-count.json
+              echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"tests passing\", \"color\": \"brightgreen\"}" > test-results/vitest/badge-count.json
             else
-              echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"tests failing\", \"color\": \"red\"}" > test-results/vitest-count.json
+              echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"tests failing\", \"color\": \"red\"}" > test-results/vitest/badge-count.json
             fi
           else
             # Extract test counts using jq from the JSON output
@@ -82,15 +89,62 @@ jobs:
             
             # Create a badge JSON file in shields.io format
             # This will be used by the shields.io endpoint to generate a badge
-            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"$PASSED/$TOTAL tests\", \"color\": \"$COLOR\"}" > test-results/vitest-count.json
+            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"$PASSED/$TOTAL tests\", \"color\": \"$COLOR\"}" > test-results/vitest/badge-count.json
             echo "Generated badge JSON for $PASSED/$TOTAL tests for $WEBSITE_URL"
           fi
 
           # Ensure test-results directory exists and has content even if tests failed
-          ls -la test-results
-          if [ ! -f test-results/vitest-count.json ]; then
+          ls -la test-results/vitest
+          if [ ! -f test-results/vitest/badge-count.json ]; then
             echo "Creating fallback badge file..."
-            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest-count.json
+            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-count.json
+          fi
+
+          # Copy HTML report and coverage report to test-results directory
+          if [ -d "html" ]; then
+            echo "Copying HTML report to test-results directory"
+            cp -r html test-results/vitest/
+          else
+            echo "No HTML report directory found"
+          fi
+
+          # Copy HTML coverage report to test-results directory if it exists
+          if [ -d "coverage/html" ]; then
+            echo "Copying HTML coverage report to test-results directory"
+            cp -r coverage/html test-results/vitest/coverage
+          elif [ -d "coverage" ]; then
+            echo "Copying coverage directory to test-results"
+            cp -r coverage test-results/vitest/coverage
+          else
+            echo "No coverage directory found"
+          fi
+
+          # Extract coverage percentage and create a badge for it
+          if [ -f "coverage/coverage-summary.json" ]; then
+            COVERAGE_PCT=$(jq -r '.total.lines.pct' coverage/coverage-summary.json 2>/dev/null || echo "unknown")
+            
+            # Determine color based on coverage percentage
+            if [ "$COVERAGE_PCT" = "unknown" ]; then
+              COV_COLOR="gray"
+            elif [ $(echo "$COVERAGE_PCT >= 90" | bc -l) -eq 1 ]; then
+              COV_COLOR="brightgreen"
+            elif [ $(echo "$COVERAGE_PCT >= 80" | bc -l) -eq 1 ]; then
+              COV_COLOR="green"
+            elif [ $(echo "$COVERAGE_PCT >= 70" | bc -l) -eq 1 ]; then
+              COV_COLOR="yellowgreen"
+            elif [ $(echo "$COVERAGE_PCT >= 60" | bc -l) -eq 1 ]; then
+              COV_COLOR="yellow"
+            else
+              COV_COLOR="red"
+            fi
+            
+            # Create a badge JSON file for coverage
+            echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"${COVERAGE_PCT}%\", \"color\": \"$COV_COLOR\"}" > test-results/vitest/badge-coverage.json
+            echo "Generated coverage badge JSON for ${COVERAGE_PCT}% coverage"
+          else
+            # If we can't find the coverage info, create a fallback badge
+            echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-coverage.json
+            echo "No coverage data found, using fallback badge"
           fi
 
           # Exit with the original test result to properly mark the workflow as passed/failed
@@ -99,12 +153,13 @@ jobs:
       - name: Ensure test-results directory exists before deploy
         if: always() && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         run: |
-          if [ ! -d "test-results" ]; then
+          if [ ! -d "test-results/vitest" ]; then
             echo "Creating test-results directory"
-            mkdir -p test-results
-            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"no tests run\", \"color\": \"yellow\"}" > test-results/vitest-count.json
+            mkdir -p test-results/vitest
+            echo "{\"schemaVersion\": 1, \"label\": \"vitest\", \"message\": \"no tests run\", \"color\": \"yellow\"}" > test-results/vitest/badge-count.json
+            echo "{\"schemaVersion\": 1, \"label\": \"coverage\", \"message\": \"unknown\", \"color\": \"gray\"}" > test-results/vitest/badge-coverage.json
           fi
-          ls -la test-results
+          ls -la test-results/vitest
 
       - name: Deploy test results to GitHub Pages
         if: always() && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
@@ -114,3 +169,11 @@ jobs:
           target-folder: test-results
           branch: test-results
           clean: false
+
+      - name: Upload test coverage as artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: vitest-coverage
+          path: coverage/
+          retention-days: 30

@@ -103,6 +103,7 @@ exclude:
     "devdocker",
     "docs",
     "tech_graveyard",
+    "test-results",
   ]
 
 permalink: /:title
