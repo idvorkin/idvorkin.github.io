@@ -112,4 +112,5 @@ jobs:
         with:
           folder: test-results
           target-folder: test-results
+          branch: test-results
           clean: false
