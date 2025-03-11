@@ -28,6 +28,7 @@ Getting Things Done (GTD) is a model based on David Allen's book of the same nam
 - [Software](#software)
     - [OmniFocus](#omnifocus)
     - [Nozbe](#nozbe)
+    - [Flow](#flow)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -78,3 +79,29 @@ Primarily Apple, and incredibly complicated (aka powerful). The complexity is ea
 ### Nozbe
 
 Multiplatform was best in class in 2012 when it was created, but hasn't had many upgrades since. I used it for years.
+
+### Flow
+
+[Flow](https://www.flow.app/) is a minimalist focus timer that helps enforce timeboxing and single-tasking. It provides two key values:
+
+**Obvious**:
+
+- You force yourself to not get distracted by working on other stuff - by naming your current task, you stay focused on one thing
+- You force yourself to work the minimum time before stopping
+
+**Non-obvious**:
+
+- You force yourself to notice how long you are spending (which can be a long time when sucked into flow, both on things I'm doing [chop](/chop), but also on pointless tasks like re-writing a paragraph over and over)
+- You force yourself to decide what you are working on, causing prioritization
+
+**Cool Features**:
+
+- Stays synchronized between watch, phone and desktop
+- Writes flows to your calendar for future tracking
+
+**Cool Features I've Added**:
+
+- Integration with [tmux](https://github.com/idvorkin/settings/blob/4dbfa4720748053b9b6213dbc34ffe62e89fd015/shared/.tmux.conf?plain=1#L148)
+- Integration with Alfred and [CLI tools](https://github.com/idvorkin/settings/blob/4dbfa4720748053b9b6213dbc34ffe62e89fd015/py/y.py?plain=1#L683)
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250311_064458.webp)
