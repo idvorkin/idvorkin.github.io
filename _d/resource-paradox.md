@@ -10,7 +10,7 @@ redirect_from:
   - /frugality
 ---
 
-Work expands to fill the resources available. The more you make, the more you spend. Stuff expands to fill the space available for storage. If you want something done, give it to a busy person, etc.
+Work expands to fill the resources available. The more you make, the more you spend. Stuff accumulates to fill the available storage space. And if you want something done, give it to a busy person.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -43,7 +43,7 @@ Work expands to fill the resources available. The more you make, the more you sp
 
 ## Why
 
-I think this has to do with the long tail and the Pareto principle, which states you get 80% of the value with 20% of the work. Without resource constraints (or the deliberate focus on opportunity cost), you won't stop even though you are long past the point of diminishing returns. Slightly related concepts are 'sunk cost fallacy', 'bike shedding', 'IKEA effect', 'loss aversion'.
+This phenomenon relates to both the long tail and the Pareto principle, which states that you get 80% of the value from 20% of the work. Without resource constraints (or a deliberate focus on opportunity costs), you'll continue working long past the point of diminishing returns. Several related concepts help explain this behavior: the sunk cost fallacy, bike shedding, the IKEA effect, and loss aversion.
 
 ### Relation to Procrastination
 
@@ -61,9 +61,9 @@ I think this has to do with the long tail and the Pareto principle, which states
 
 ### Amazon's Leadership Principle - Frugality
 
-I think Frugality is Amazon's least understood [Leadership Principle](/amazon). Many people think it's about saving $100 by buying a door desk (by the way, door desks end up being more expensive as they are not reusable given they have been 'cut' to size), it is, in fact, about building something with 5 people when you think you have 8.
+Frugality is perhaps Amazon's most misunderstood [Leadership Principle](/amazon). While many people think it's about saving $100 by buying a door desk (which, ironically, ends up being more expensive since custom-cut desks aren't reusable), it's actually about accomplishing with five people what you thought would require eight.
 
-This prevents you from focusing on anything but the high order bit.
+This constraint forces you to focus solely on what matters most—the highest-impact work.
 
 ### Lean Startup
 
@@ -93,7 +93,7 @@ This applies during [time off](/time-off)
 
 ### The art of tidying up
 
-If you go into your closet and take out a few things, you end up in Zeno's paradox. You'll continue to take out half the stuff, but you'll never get there. In contrast, the way to clean your closet is to take everything out and only put back things you absolutely must have.
+When cleaning your closet, removing items one at a time leads to Zeno's paradox—you'll keep removing half of what remains but never reach the end. Instead, the effective approach is to empty your closet completely and only return the items you truly need. This method forces you to make intentional decisions about each item rather than falling into the trap of endless incremental decluttering.
 
 ## Funny other variants
 
