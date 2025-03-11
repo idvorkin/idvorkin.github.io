@@ -7,13 +7,13 @@ tags:
   - search-featured
 ---
 
-I've learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I've learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency. Super important: You don't raise to the level of your goals, you fall to the level of your systems
+I've learned what I like, how I want to spend my energy, and how I want to be thinking about my life. I've learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency. Super important: You don't rise to the level of your goals, you fall to the level of your systems.
 
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc-start -->
 
-- [A note on goals, aspiration an systems.](#a-note-on-goals-aspiration-an-systems)
+- [A note on goals, aspiration and systems](#a-note-on-goals-aspiration-and-systems)
 - [A note on rituals](#a-note-on-rituals)
 - [Calendar - 2024 H2](#calendar---2024-h2)
 - [Morning Routine](#morning-routine)
@@ -25,16 +25,16 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 - [After Work Routine](#after-work-routine)
   - [Post work routine](#post-work-routine)
   - [Post work Kryptonite](#post-work-kryptonite)
-- [My super powers](#my-super-powers)
+- [My Super Powers](#my-super-powers)
   - [Relationships](#relationships)
   - [Technical Depth and Breadth](#technical-depth-and-breadth)
   - [Technical Best Practice](#technical-best-practice)
   - [Ability to sanity test all tech stuff](#ability-to-sanity-test-all-tech-stuff)
-- [My kryptonite](#my-kryptonite)
+- [My Kryptonite](#my-kryptonite)
   - [Bean counting](#bean-counting)
   - [Committing and describing relative to ideal, not relative to reality](#committing-and-describing-relative-to-ideal-not-relative-to-reality)
-  - [Under estimating technical complexity](#under-estimating-technical-complexity)
-- [Health and habits](#health-and-habits)
+  - [Underestimating technical complexity](#underestimating-technical-complexity)
+- [Health and Habits](#health-and-habits)
   - [Physical](#physical)
   - [Emotional](#emotional)
   - [Cognitive](#cognitive)
@@ -51,9 +51,9 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 - [Bad Influences](#bad-influences)
   - [Luxury Car](#luxury-car)
   - [Sports cars](#sports-cars)
-- [Triggers and Mental Quick Sand](#triggers-and-mental-quick-sand)
+- [Triggers and Mental Quicksand](#triggers-and-mental-quicksand)
   - [Stress and Anxiety](#stress-and-anxiety)
-  - [Corona Virus](#corona-virus)
+  - [Coronavirus](#coronavirus)
   - [Raising kids](#raising-kids)
     - [Physical Health](#physical-health)
     - [Not spending enough time with them](#not-spending-enough-time-with-them)
@@ -72,11 +72,11 @@ I've learned what I like, how I want to spend my energy,and how I want to be thi
 
 TODO: Split this post into How Igor Ticks, and igor
 
-## A note on goals, aspiration an systems.
+## A note on goals, aspiration and systems
 
-- You don't raise to the level of your goals, you fall to the level of your systems.
+- You don't rise to the level of your goals, you fall to the level of your systems.
 - Goals without systems are just good intentions.
-- Do you want Planning/High Discipline Igor making decisions, or evening Igor making the decisions (See [Brian Johnson](/blueprint).
+- Do you want Planning/High Discipline Igor making decisions, or evening Igor making the decisions (See [Brian Johnson](/blueprint)).
 
 ## A note on rituals
 
@@ -88,7 +88,7 @@ Rituals create a virtuous cycle: by treating something as important, it becomes 
 
 ## Calendar - 2024 H2
 
-As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
+As a younger man I hated calendars and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR: figure out what you want, and schedule it. Then don't think about it.
 
 My new calendar
 
@@ -120,13 +120,13 @@ My new calendar
 
 ## Morning Routine
 
-At my best, I roll out of bed either when my eyes open or at 5am, whatever comes first. Then I sit in front of my [mood lamp](https://www.amazon.com/gp/product/B00PCN4UVU/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) and drink my cold brew nitro coffee
+At my best, I roll out of bed either when my eyes open or at 5am, whatever comes first. Then I sit in front of my [mood lamp](https://www.amazon.com/gp/product/B00PCN4UVU/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) and drink my cold brew nitro coffee.
 
-_Ah when the kids where younger - I also love getting my morning hug from my kids, but now that Zach's older (9), I'm down to just getting the hugs from Amelia - who is 5._
+_Ah when the kids were younger - I also loved getting my morning hug from my kids, but now that Zach's older (9), I'm down to just getting the hugs from Amelia - who is 5._
 
 ### Weekend morning routine
 
-On the weekends, the gym opens at 8, so it's essential I drink my coffee in my home office chair so I work on whatever is most important to me, often reading or writing. At 7:30 it's time to drag my butt to the gym.
+On the weekends, the gym opens at 8, so it's essential I drink my coffee in my home office chair so I can work on whatever is most important to me, often reading or writing. At 7:30 it's time to drag my butt to the gym.
 
 Post gym I'll either hit the coffee shop to do some more writing, or head home to spend the day with my family.
 
@@ -138,17 +138,21 @@ The gym opens at 5:30, and I try to be there by 6.
 
 **Walking kids to school** has been one of my most cherished morning activities. Whether it's a block away or to the bus stop, these 10-minute walks have consistently been a major quality of life improvement. The kids really appreciate it, and it's amazing how this small investment of time can have such an impact on my relationship with my family.
 
+**2025:** Now that Zach is in high school, I walk him to the bus stop. I used to also walk Amelia to the bus stop, but I realized I could actually drive her to school with [Tony](/tony) - it's zero stress on me, and I get an extra 10 minutes with Amelia.
+
+**2024:** Now that Zach and Amelia go to different schools, I walk Zach to the city bus stop and Amelia to the school bus stop. I'm very lucky the drops are staggered by an hour so I can do both drops, giving me dedicated one-on-one time with each kid.
+
 **2022:** After my workout, I go to work so I'm done at 4pm.
 
 **Pre - 2021:** After my workout, I often chillax with my next priority being walking kids to school. Walking the kids to school has surprisingly been a major quality of life improvement for a very small impact to my day.
 
 ### Morning Kryptonite
 
-I have two common failure modes to my morning routine.
+I have three common failure modes in my morning routine:
 
 - Starting my day by sitting in my easy chair drinking my coffee. This mindless activity has me skipping those things that are important to me.
 - Hitting snooze when my alarm goes off. The worst of all worlds, not sleeping, and not being up and doing stuff.
-- Lying in bed awake when I wake up before 5. Sometimes I wake up and can't fall back asleep @ 3 or 4 (which isn't crazy cuz sometimes I go to bed @ 7 or 8). Similar to hitting snooze, I'm not sleeping, and I'm not accomplishing anything.
+- Lying in bed awake when I wake up before 5. Sometimes I wake up and can't fall back asleep @ 3 or 4 (which isn't crazy because sometimes I go to bed @ 7 or 8). Similar to hitting snooze, I'm not sleeping, and I'm not accomplishing anything.
 
 ### Morning Refreshers
 
@@ -181,7 +185,7 @@ My discipline is strong in the morning, but by the time I get home from work, I'
 - Sitting in my easy chair, mindlessly on my phone
 - Eating continuously
 
-## My super powers
+## My Super Powers
 
 {%include summarize-page.html src="/strengths" %}
 
@@ -207,21 +211,21 @@ what is wrong and resolving it.
 
 ### Ability to sanity test all tech stuff
 
-## My kryptonite
+## My Kryptonite
 
 ### Bean counting
 
 ### Committing and describing relative to ideal, not relative to reality
 
-### Under estimating technical complexity
+### Underestimating technical complexity
 
-## Health and habits
+## Health and Habits
 
-Health - physical, emotional, cognitive and spiritual, is easy to understand but hard to maintain. My strategy to maintain health is [habits](/habits), but thanks to the [immutable laws of hard things](/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
+Health - physical, emotional, cognitive, and spiritual - is easy to understand but hard to maintain. My strategy to maintain health is through [habits](/habits), but thanks to the [immutable laws of hard things](/Immutable-Laws-Of-Hard), habits degrade without constant vigilance.
 
 {%include summarize-page.html src="/Immutable-Laws-Of-Hard" %}
 
-I spend lots of time thinking about how I should be working my habits, but often end up not doing them. In this case, the key is to stop moaning and restart 'em.
+I spend lots of time thinking about how I should be working my habits, but often end up not doing them. In this case, the key is to stop moaning and restart them.
 
 ### Physical
 
@@ -294,9 +298,9 @@ On my trip to [FISM](/d/timeoff-07-2022), the cheapest car to rent ended up bein
 
 I realized 1/ no value to me in this 2/ chance of getting into or causing an accident 3/ chance of me focusing on anger that someone else is playing peek-a-boo with me and winning.
 
-## Triggers and Mental Quick Sand
+## Triggers and Mental Quicksand
 
-Like most folks I have triggers and mental quick sand which I can get trapped in. Here's some of mine, and things I need to remember. This also reminds me of the:
+Like most folks, I have triggers and mental quicksand which I can get trapped in. Here are some of mine, and things I need to remember. This also reminds me of the:
 
 {%include summarize-page.html src="/voices" %}
 
@@ -304,9 +308,9 @@ Like most folks I have triggers and mental quick sand which I can get trapped in
 
 {%include summarize-page.html src="/anxiety" %}
 
-### Corona Virus
+### Coronavirus
 
-My gosh this is sucking up lots of brain power. I don't think I get value thinking about this. I have two choices, stop thinking about this,_OR_ write a post on all my thoughts on this.
+My gosh, this is sucking up lots of brain power. I don't think I get value thinking about this. I have two choices: stop thinking about this, _OR_ write a post on all my thoughts on this.
 
 {%include summarize-page.html src="/covid" %}
 
@@ -332,7 +336,7 @@ When it comes to family, like all things, it's easy to confuse hours for quality
 
 #### The point of [money](/money)
 
-Money isn't just to make piles, it's to enable you to do stuff. Stuff does not equal stuff you don't use, stuff is actually often experiences. And most of the best stuff you can't buy. Yup, it's doing and it's with whom you are doing it.
+Money isn't just to make piles; it's to enable you to do stuff. Stuff does not equal stuff you don't use; stuff is actually often experiences. And most of the best stuff you can't buy. Yup, it's doing and it's with whom you are doing it.
 
 #### What would I do for less money
 
@@ -340,7 +344,7 @@ If you wouldn't take a job for a pay cut, you probably shouldn't take the job.
 
 #### Making more vs spending more
 
-See [Parkinson's law](/parkinson), applies to both time and Money.
+See [Parkinson's law](/parkinson), which applies to both time and money.
 
 {%include summarize-page.html src="/parkinson" %}
 
@@ -371,6 +375,7 @@ My new calendar
 - Coffee Shop Writing
 
 <div/>
+
 - l2
 - Stretching/Free Gym
 - Coffee Shop
@@ -379,7 +384,7 @@ My new calendar
 
 ### Calendar - 2022
 
-As a younger man I hated calendars, and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR figure out what you want, and schedule it. Then don't think about ...
+As a younger man I hated calendars and structure. I still don't love them, but I have limited decision making/discipline energy/capability per day, and when I'm out of that energy, I just vegetate. So TL;DR: figure out what you want, and schedule it. Then don't think about it.
 
 My new calendar
 
