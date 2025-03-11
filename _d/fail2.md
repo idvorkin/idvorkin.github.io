@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Failure is not an option it is a necassity
+title: Failure is not an option, it is a necessity
 tags:
   - manager
 permalink: /fail
@@ -8,7 +8,7 @@ redirect_from:
   - /failure
 ---
 
-Failure is not an option; it's a necessity. Here are some thoughts on failures.
+Failure is not an option; it's a necessity. Failure is not a person but an event. You can't grow without failing, and you can't beat yourself up over it. The key is to analyze without judgment, understand why it failed, and learn to move on.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
