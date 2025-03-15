@@ -10,10 +10,8 @@
 - Test (specific): `npx vitest run src/path/to/file.test.ts`
 - Test (watch): `just js-test-watch` or `npx vitest`
 - E2E Tests: `just pw-test-e2e` (Playwright)
-- Local Jekyll: `just jekyll-serve` (runs at http://127.0.0.1:4000)
+- Local Jekyll: `just jekyll-serve`
 - Update Backlinks: `just update-backlinks`
-
-> **Note**: Jekyll server is often already running in the background at http://127.0.0.1:4000
 
 ## Code Style Guidelines
 
