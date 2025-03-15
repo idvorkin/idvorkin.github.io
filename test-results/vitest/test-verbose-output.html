@@ -4,6 +4,18 @@ npx vitest run --reporter=verbose
 
 [1m[7m[36m RUN [39m[27m[22m [36mv3.0.8 [39m[90m/home/runner/work/idvorkin.github.io/idvorkin.github.io[39m
 
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Building[2m > [22mURL Validation[2m > [22mshould correctly identify valid and invalid URLs
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Building[2m > [22mNode Lookup[2m > [22mshould find nodes by URL
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Building[2m > [22mGraph Data Structure[2m > [22mshould process nodes and links correctly with one expanded node
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Building[2m > [22mGraph Data Structure[2m > [22mshould process nodes and links correctly with multiple expanded nodes
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Building[2m > [22mGraph Data Structure[2m > [22mshould handle URL hash parameters for initial expansion
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Building[2m > [22mGraph Data Structure[2m > [22mshould handle empty or no expanded nodes
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts when DOM is already loaded
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add an event listener when DOM is still loading
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mshould handle missing url_info in data structure
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mshould handle fetch errors gracefully
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mshould sort pages by last_modified date
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mshould filter out pages with empty or url-matching titles
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
@@ -18,12 +30,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts when DOM is already loaded
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add an event listener when DOM is still loading
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mshould handle missing url_info in data structure
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mshould handle fetch errors gracefully
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mshould sort pages by last_modified date
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mshould filter out pages with empty or url-matching titles
  [32m✓[39m src/__tests__/link-utils.test.ts[2m > [22mLink Utilities[2m > [22mcreateLinkTabsHTML[2m > [22mshould return HTML with tabs structure
  [32m✓[39m src/__tests__/link-utils.test.ts[2m > [22mLink Utilities[2m > [22mcreateGraphLinkHTML[2m > [22mshould create a valid graph link with stripped path
  [32m✓[39m src/__tests__/link-utils.test.ts[2m > [22mLink Utilities[2m > [22mcreateGraphLinkHTML[2m > [22mshould handle root path correctly
@@ -52,17 +58,17 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/breadth-first-walk.test.ts[2m > [22mbreadth_first_walk[2m > [22mshould provide parent references during traversal
  [32m✓[39m src/__tests__/breadth-first-walk.test.ts[2m > [22mbreadth_first_walk[2m > [22mshould handle a single node tree
  [32m✓[39m src/__tests__/breadth-first-walk.test.ts[2m > [22mbreadth_first_walk[2m > [22mshould handle nodes with no children properly
- [32m✓[39m src/__tests__/tree-node.test.ts[2m > [22mTreeNode Class[2m > [22mshould create a node with default properties
- [32m✓[39m src/__tests__/tree-node.test.ts[2m > [22mTreeNode Class[2m > [22mshould create a node with provided properties
- [32m✓[39m src/__tests__/tree-node.test.ts[2m > [22mTreeNode Class[2m > [22mshould shuffle children during construction
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list
+ [32m✓[39m src/__tests__/tree-node.test.ts[2m > [22mTreeNode Class[2m > [22mshould create a node with default properties
+ [32m✓[39m src/__tests__/tree-node.test.ts[2m > [22mTreeNode Class[2m > [22mshould create a node with provided properties
+ [32m✓[39m src/__tests__/tree-node.test.ts[2m > [22mTreeNode Class[2m > [22mshould shuffle children during construction
 
-[2m Test Files [22m [1m[32m8 passed[39m[22m[90m (8)[39m
-[2m      Tests [22m [1m[32m52 passed[39m[22m[90m (52)[39m
-[2m   Start at [22m 15:34:47
-[2m   Duration [22m 1.87s[2m (transform 207ms, setup 118ms, collect 242ms, tests 108ms, environment 2.76s, prepare 662ms)[22m
+[2m Test Files [22m [1m[32m9 passed[39m[22m[90m (9)[39m
+[2m      Tests [22m [1m[32m58 passed[39m[22m[90m (58)[39m
+[2m   Start at [22m 15:57:44
+[2m   Duration [22m 2.10s[2m (transform 292ms, setup 147ms, collect 376ms, tests 128ms, environment 3.45s, prepare 801ms)[22m
 
 </pre></body></html>
