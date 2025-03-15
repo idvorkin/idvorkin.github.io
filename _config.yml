@@ -63,6 +63,7 @@ algolia:
     - "*.ruff_cache*"
     - "tags"
     - "scripts/*"
+    - "requirements/*"
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap", "jekyll-redirect-from"]
 include: [".htaccess", "__init__.py"]
@@ -102,6 +103,7 @@ exclude:
     "chop-conventions",
     "devdocker",
     "docs",
+    "requirements",
     "tech_graveyard",
     "test-results",
   ]
