@@ -27,6 +27,10 @@ import { initRecentAllPosts } from "./recent";
 // Import random-prompter functionality
 import { add_random_prompts, add_sunburst, TreeNode } from "./random-prompter";
 
+// Import graph functionality
+import "./graph";
+console.log("✅ Graph module loaded successfully");
+
 // Import page-loader functionality
 import {
   load_enjoy2,
