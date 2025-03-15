@@ -118,172 +118,97 @@ function TextLabelNodePointerAreaPaint(node, color, ctx) {
     );
 }
 // If ForceGraph isn't defined, return
-console.log("🔍 Checking if ForceGraph is defined:", typeof ForceGraph);
 
-// Wait for DOM to be fully loaded
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("🔄 DOM fully loaded, initializing graph");
-  initializeGraph();
-});
+if (typeof ForceGraph === "undefined") {
+  console.log("Force Graph not defined");
+} else {
+  const Graph = ForceGraph()(document.getElementById("graph"))
+    .graphData(build_graph_data(pages))
+    .nodeLabel("id")
+    .nodeAutoColorBy("group")
+    .nodeCanvasObject(TextLabelNodeCanvas)
+    .nodePointerAreaPaint(TextLabelNodePointerAreaPaint)
+    .onNodeRightClick(node => {
+      // Open the node in a new tab
+      window.open(node.url, "_blank");
+    })
+    .onNodeClick(node => {
+      // Center/zoom on node
+      console.log(node);
 
-// Also try to initialize if the script loads after DOMContentLoaded
-if (
-  document.readyState === "complete" ||
-  document.readyState === "interactive"
-) {
-  console.log("🔄 Document already loaded, initializing graph immediately");
-  setTimeout(initializeGraph, 500); // Short delay to ensure everything is ready
-}
-
-function initializeGraph() {
-  if (typeof ForceGraph === "undefined") {
-    console.error("❌ Force Graph library not defined - check script loading");
-    // Try loading it directly as a fallback
-    const script = document.createElement("script");
-    script.src = "https://unpkg.com/force-graph";
-    script.onload = () => {
-      console.log("✅ Force Graph library loaded as fallback");
-      initializeGraphWithLib();
-    };
-    document.head.appendChild(script);
-    return;
-  }
-
-  initializeGraphWithLib();
-}
-
-function initializeGraphWithLib() {
-  const graphElement = document.getElementById("graph");
-  if (!graphElement) {
-    console.error("❌ Graph element not found in DOM");
-    return;
-  }
-
-  console.log("🚀 Initializing Force Graph with element:", graphElement);
-
-  // Clear any loading indicators
-  const loadingElement = document.getElementById("graph-loading");
-  if (loadingElement) {
-    loadingElement.style.display = "none";
-  }
-
-  const graphData = build_graph_data(pages);
-  console.log("📊 Graph data prepared:", graphData);
-
-  try {
-    const Graph = ForceGraph()(graphElement)
-      .graphData(build_graph_data(pages))
-      .nodeLabel("id")
-      .nodeAutoColorBy("group")
-      .nodeCanvasObject(TextLabelNodeCanvas)
-      .nodePointerAreaPaint(TextLabelNodePointerAreaPaint)
-      .onNodeRightClick(node => {
-        // Open the node in a new tab
-        window.open(node.url, "_blank");
-      })
-      .onNodeClick(node => {
-        // Center/zoom on node
-        console.log(node);
-
-        // count expanded nodes
-        node.expanded = !node.expanded;
-        const expanded_nodes = pages.filter(p => p.expanded).length;
-        if (expanded_nodes == 0) {
-          // re-expand me.
-          node.expanded = true;
-        }
-        Graph.graphData(build_graph_data(pages));
-
-        // center on node in 300 ms, post graph update
-        setTimeout(() => {
-          center_on_node(node);
-        }, 300);
-      });
-
-    // Center on initial node
-    center_on_node(node_for_url(pages, initial_expanded_url));
-
-    function center_on_node(node) {
-      if (!node || !Graph) {
-        console.error("❌ Cannot center - node or graph is undefined");
-        return;
-      }
-      Graph.centerAt(node.x, node.y, 500);
-      Graph.zoom(8, 500);
-      update_detail(node);
-      console.log("📍 Centering on", node.url);
-    }
-
-    var g_last_detail_node = null;
-
-    // Setup control handlers when DOM is fully loaded
-    $(document).ready(function () {
-      console.log("🔧 Setting up control event handlers");
-
-      // Set click handler for center control
-      $("#center_control").on("click", function () {
-        console.log("🔍 Center control clicked");
-        if (g_last_detail_node) {
-          center_on_node(g_last_detail_node);
-        }
-      });
-
-      // Set click handler for goto control
-      $("#goto_control").on("click", open_goto_control);
-
-      // Set click handler for collapse control
-      $("#collapse_control").on("click", collapse_all_except_active);
-    });
-
-    function open_goto_control() {
-      console.log("🔗 Goto control clicked");
-      if (g_last_detail_node) {
-        if (g_last_detail_node.url) {
-          window.open(g_last_detail_node.url, "_blank");
-        } else {
-          console.log("⚠️ Active node has no URL");
-        }
-      } else {
-        console.log("⚠️ No active node to go to");
-      }
-    }
-
-    function collapse_all_except_active() {
-      console.log("📊 Collapse control clicked");
-      pages.forEach(p => {
-        p.expanded = false;
-      });
-      if (g_last_detail_node) {
-        g_last_detail_node.expanded = true;
+      // count expanded nodes
+      node.expanded = !node.expanded;
+      const expanded_nodes = pages.filter(p => p.expanded).length;
+      if (expanded_nodes == 0) {
+        // re-expand me.
+        node.expanded = true;
       }
       Graph.graphData(build_graph_data(pages));
 
-      // Center on the active node after collapsing
-      if (g_last_detail_node) {
-        setTimeout(() => {
-          center_on_node(g_last_detail_node);
-        }, 300);
-      }
-    }
+      // center on node in 300 ms, post graph update
+      setTimeout(() => {
+        center_on_node(node);
+      }, 300);
+    });
 
-    function update_detail(page) {
-      // Replace HTML of element of id above with the page
-      g_last_detail_node = page;
-      const html = MakeBackLinkHTML(page);
-      const detail = document.getElementById("detail");
-      if (detail) {
-        detail.innerHTML = html;
+  center_on_node(node_for_url(pages, initial_expanded_url));
+
+  function center_on_node(node) {
+    Graph.centerAt(node.x, node.y, 500);
+    Graph.zoom(8, 500);
+    update_detail(node);
+    console.log("centering on", node);
+  }
+
+  var g_last_detail_node = null;
+
+  // set click handler for center control
+  $("#center_control").on("click", () => center_on_node(g_last_detail_node));
+
+  // set click handler for goto control
+  $("#goto_control").on("click", open_goto_control);
+
+  // set click handler for collapse control
+  $("#collapse_control").on("click", collapse_all_except_active);
+
+  function open_goto_control() {
+    console.log("Goto control clicked");
+    if (g_last_detail_node) {
+      if (g_last_detail_node.url) {
+        window.open(g_last_detail_node.url, "_blank");
       } else {
-        console.error("❌ Detail element not found");
+        console.log("Active node has no URL");
       }
+    } else {
+      console.log("No active node to go to");
     }
+  }
 
-    return Graph; // Return the graph instance
-  } catch (error) {
-    console.error("❌ Error initializing Force Graph:", error);
+  function collapse_all_except_active() {
+    console.log("Collapse control clicked");
+    pages.forEach(p => {
+      p.expanded = false;
+    });
+    if (g_last_detail_node) {
+      g_last_detail_node.expanded = true;
+    }
+    Graph.graphData(build_graph_data(pages));
+
+    // Center on the active node after collapsing
+    if (g_last_detail_node) {
+      setTimeout(() => {
+        center_on_node(g_last_detail_node);
+      }, 300);
+    }
+  }
+
+  function update_detail(page) {
+    // replace html of element of id above with the page
+    g_last_detail_node = page;
+    const html = MakeBackLinkHTML(page);
+    const detail = document.getElementById("detail");
+    detail.innerHTML = html;
   }
 }
-
-console.log("📋 Graph script loaded");
 
 console.log("Post Graph");

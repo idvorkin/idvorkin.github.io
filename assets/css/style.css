@@ -97,10 +97,3 @@ https://css-tricks.com/line-clampin/
   font-size: 165%;
   color: white;
 }
-
-/* Graph visualization styles */
-#graph {
-  width: 100%;
-  height: 600px;
-  margin: 20px 0;
-}

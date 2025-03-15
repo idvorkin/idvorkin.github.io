@@ -113,12 +113,25 @@ function MakeBackLinkHTML(url_info: IURLInfo) {
   return output;
 }
 
-/**
- * Generates HTML for the link tabs structure
- * @returns The HTML string for tabs
- */
-export function createLinkTabsHTML(): string {
-  return `
+async function AddLinksToPage(allUrls: IURLInfoMap) {
+  // TODO handle redirects
+  const page_path = new URL(document.URL).pathname;
+  const backlinks = allUrls[page_path]?.incoming_links;
+  const frontlinks = allUrls[page_path]?.outgoing_links;
+
+  if (!backlinks && !frontlinks) {
+    console.log(`No backlinks for the page ${page_path}`);
+    return;
+  }
+
+  let link_parent_location = $("#links-to-page");
+  if (!link_parent_location) {
+    console.log("No back_link_location");
+    return;
+  }
+
+  link_parent_location.append(
+    `
 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#incoming" type="button" role="tab" aria-controls="incoming" aria-selected="true">Links to here</button>
@@ -137,90 +150,41 @@ export function createLinkTabsHTML(): string {
     <span> View the graph for: </span>
   </div>
 </div>
-`;
-}
-
-/**
- * Creates HTML for the graph link
- * @param pagePath The current page path
- * @returns HTML string for the graph link
- */
-export function createGraphLinkHTML(pagePath: string): string {
-  const strippedPagePath = pagePath.replace(/\//g, "");
-  return `<a href='/graph#${strippedPagePath}'>${pagePath} (${strippedPagePath}) </a>`;
-}
-
-/**
- * Filter and sort links by size
- * @param links Array of link paths
- * @param allUrls URL info map
- * @returns Filtered and sorted links
- */
-export function filterAndSortLinks(
-  links: string[] = [],
-  allUrls: IURLInfoMap
-): string[] {
-  // Filter out invalid links
-  const validLinks = links.filter(link => allUrls[link]);
-
-  // Sort by doc_size descending
-  return validLinks.sort(
-    (a, b) => Number(allUrls[b].doc_size) - Number(allUrls[a].doc_size)
+`
   );
-}
 
-/**
- * Adds links to the page
- * @param allUrls URL info map
- * @param currentURL Optional URL for testing (defaults to document.URL)
- * @param jQueryElement Optional jQuery element for testing
- */
-async function AddLinksToPage(
-  allUrls: IURLInfoMap,
-  currentURL: string = document.URL,
-  jQueryElement: any = $("#links-to-page")
-) {
-  // Extract page path from URL
-  const page_path = new URL(currentURL).pathname;
-  const backlinks = allUrls[page_path]?.incoming_links || [];
-  const frontlinks = allUrls[page_path]?.outgoing_links || [];
-
-  if (backlinks.length === 0 && frontlinks.length === 0) {
-    console.log(`No backlinks for the page ${page_path}`);
-    return;
-  }
-
-  let link_parent_location = jQueryElement;
-  if (!link_parent_location || link_parent_location.length === 0) {
-    console.log("No back_link_location");
-    return;
-  }
-
-  // Append tabs structure
-  link_parent_location.append(createLinkTabsHTML());
-
-  // Process incoming links
   let incoming_location = link_parent_location.find("#incoming");
-  const sortedBacklinks = filterAndSortLinks(backlinks, allUrls);
+  var sort_descending_by_size = (a, b) =>
+    Number(allUrls[b].doc_size) - Number(allUrls[a].doc_size);
 
-  for (const link of sortedBacklinks) {
-    const url_info = allUrls[link];
-    incoming_location.append(MakeBackLinkHTML(url_info));
+  if (backlinks) {
+    for (var link of backlinks.sort(sort_descending_by_size)) {
+      const url_info = allUrls[link];
+      incoming_location.append(MakeBackLinkHTML(url_info));
+    }
   }
 
-  // Process outgoing links
+  // remove front links not in
+  let clean_front_links = [];
+  for (var link of frontlinks) {
+    if (allUrls[link]) {
+      clean_front_links.push(link);
+    }
+  }
+
   let outgoing_location = link_parent_location.find("#outgoing");
-  const sortedFrontlinks = filterAndSortLinks(frontlinks, allUrls);
-
-  for (const link of sortedFrontlinks) {
-    const url_info = allUrls[link];
-    outgoing_location.append(MakeBackLinkHTML(url_info));
+  if (clean_front_links) {
+    for (let link of clean_front_links.sort(sort_descending_by_size)) {
+      const url_info = allUrls[link];
+      outgoing_location.append(MakeBackLinkHTML(url_info));
+    }
   }
-
-  // Add graph link
   console.log("Added Graph");
   const graph_location = link_parent_location.find("#graph");
-  graph_location.append(createGraphLinkHTML(page_path));
+  const stripped_page_path = page_path.replace(/\//g, "");
+  graph_location.append(
+    `<a href='/graph#${stripped_page_path}'>${page_path} (${stripped_page_path}) </a>`
+  );
 }
 function make_html_summary_link(link, url_info: IURLInfo) {
   const attribution = `(From:<a href='${url_info.url}'> ${url_info.title}</a>)`;
@@ -388,14 +352,6 @@ function load_globals() {
     console.log("🚀 About to call initRecentAllPosts from main.ts");
     initRecentAllPosts();
     console.log("✅ Called initRecentAllPosts from main.ts");
-  }
-
-  // Dynamically load the graph module only on the graph page
-  if (window.location.pathname === "/graph") {
-    console.log("📊 On graph page, importing graph module");
-    import("./graph")
-      .then(() => console.log("✅ Graph module loaded successfully"))
-      .catch(err => console.error("❌ Error loading graph module:", err));
   }
 
   $(function () {
