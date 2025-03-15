@@ -7,12 +7,6 @@ console.log("Load force graph in TS v 0.9");
 import { get_link_info, MakeBackLinkHTML } from "./index";
 //import ForceGraph from "force-graph";
 
-// Check if we're on the graph page
-const isGraphPage = window.location.pathname.includes("/graph");
-if (isGraphPage) {
-  console.log("📊 On graph page, importing graph module");
-}
-
 // Define variables that are used but not declared
 declare var ForceGraph: any;
 const first_expanded = window.location.hash.substr(1);
@@ -32,36 +26,20 @@ function is_initial_expanded(node) {
   return false;
 }
 
-// Initialize the pages array that will be populated once data is loaded
-let pages: any[] = [];
-// Store initial expanded URL globally
-let initial_expanded_url = "/eulogy"; // Default value
+const pages = Object.values(await get_link_info()).map(p => ({
+  ...p,
+  id: p.url,
+  expanded: false,
+}));
 
-// Load pages asynchronously
-async function loadPages() {
-  try {
-    const linkInfo = await get_link_info();
-    pages = Object.values(linkInfo).map(p => ({
-      ...p,
-      id: p.url,
-      expanded: false,
-    }));
+const slug = "/" + window.location.href.split("#")[1];
+const initial_expanded_url = pages.map(p => p.url).includes(slug)
+  ? slug
+  : "/eulogy";
 
-    const slug = "/" + window.location.href.split("#")[1];
-    initial_expanded_url = pages.map(p => p.url).includes(slug)
-      ? slug
-      : "/eulogy";
-
-    pages.forEach(p => {
-      p.expanded = p.url == initial_expanded_url;
-    });
-
-    // Initialize the graph after data is loaded
-    initializeGraphWhenReady();
-  } catch (error) {
-    console.error("Error loading page data:", error);
-  }
-}
+pages.forEach(p => {
+  p.expanded = p.url == initial_expanded_url;
+});
 
 function is_valid_url(url) {
   // check if the url is in the list of pages
@@ -158,12 +136,6 @@ if (
 }
 
 function initializeGraph() {
-  // Start loading page data
-  loadPages();
-}
-
-// This function is called after data is loaded
-function initializeGraphWhenReady() {
   if (typeof ForceGraph === "undefined") {
     console.error("❌ Force Graph library not defined - check script loading");
     // Try loading it directly as a fallback
