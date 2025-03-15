@@ -10,6 +10,7 @@ import {
 
 import { initRecentPosts } from "./recent-posts";
 import { initRecentAllPosts } from "./recent";
+import "./graph";
 
 let tocExpand = true;
 
@@ -103,15 +104,7 @@ function generateToc(id, showPinToc) {
   target.append(tocMenu);
 }
 
-function MakeBackLinkHTML(url_info: IURLInfo) {
-  const title_href = `<a href=${url_info.url}>${url_info.title}</a>`;
-  const class_link = `link-box description truncate-css`;
-  const output = `
-<div>
-    <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info.description} <span></div>
-</div>`;
-  return output;
-}
+// MakeBackLinkHTML moved to shared.ts
 
 async function AddLinksToPage(allUrls: IURLInfoMap) {
   // TODO handle redirects
@@ -363,7 +356,6 @@ function load_globals() {
 export {
   load_globals,
   get_link_info,
-  MakeBackLinkHTML,
   shuffle,
   random_from_list,
   append_randomizer_div,

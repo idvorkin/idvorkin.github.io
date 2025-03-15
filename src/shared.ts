@@ -5,6 +5,19 @@
  */
 
 /**
+ * Creates HTML for a backlink
+ */
+export function MakeBackLinkHTML(url_info: IURLInfo) {
+  const title_href = `<a href=${url_info.url}>${url_info.title}</a>`;
+  const class_link = `link-box description truncate-css`;
+  const output = `
+<div>
+    <div class="${class_link}"> ${title_href}:<span class="link-description"> ${url_info.description} <span></div>
+</div>`;
+  return output;
+}
+
+/**
  * Returns a random element from an array
  */
 export function random_from_list<T>(list: T[]): T {

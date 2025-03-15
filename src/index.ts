@@ -11,12 +11,13 @@ import {
   shuffle,
   append_randomizer_div,
   get_link_info,
+  MakeBackLinkHTML,
   type IURLInfo,
   type IURLInfoMap,
 } from "./shared";
 
 // Import main functionality
-import { load_globals, MakeBackLinkHTML } from "./main";
+import { load_globals } from "./main";
 
 // Import search functionality
 import { CreateAutoComplete } from "./search";
