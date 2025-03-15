@@ -59,7 +59,8 @@ async function updateRecentPosts(): Promise<void> {
         page.description &&
         page.description.trim() !== "" &&
         page.title &&
-        page.title.trim() !== ""
+        page.title.trim() !== "" &&
+        page.title !== page.url // Ensure title is not the same as URL (fallback case)
     );
     console.log("🔍 Filtered real pages, length:", realPages.length);
     console.log("🔍 First 3 real pages:", realPages.slice(0, 3));
