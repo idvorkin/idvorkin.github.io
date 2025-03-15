@@ -32,6 +32,51 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
+[90mstdout[2m | src/__tests__/main.test.ts
+[22m[39mLoad force graph in TS v 0.9
+
+[90mstderr[2m | src/__tests__/main.test.ts
+[22m[39mAggregateError: 
+[90m    at internalConnectMultiple (node:net:1122:18)[39m
+[90m    at afterConnectMultiple (node:net:1689:7)[39m {
+  code: [32m'ECONNREFUSED'[39m,
+  [errors]: [
+    Error: connect ECONNREFUSED ::1:3000
+    [90m    at createConnectionError (node:net:1652:14)[39m
+    [90m    at afterConnectMultiple (node:net:1682:16)[39m {
+      errno: [33m-111[39m,
+      code: [32m'ECONNREFUSED'[39m,
+      syscall: [32m'connect'[39m,
+      address: [32m'::1'[39m,
+      port: [33m3000[39m
+    },
+    Error: connect ECONNREFUSED 127.0.0.1:3000
+    [90m    at createConnectionError (node:net:1652:14)[39m
+    [90m    at afterConnectMultiple (node:net:1682:16)[39m {
+      errno: [33m-111[39m,
+      code: [32m'ECONNREFUSED'[39m,
+      syscall: [32m'connect'[39m,
+      address: [32m'127.0.0.1'[39m,
+      port: [33m3000[39m
+    }
+  ]
+}
+
+[90mstderr[2m | src/__tests__/main.test.ts
+[22m[39mError fetching link info DOMException [NetworkError]: Failed to execute "fetch()" on "Window" with URL "http://localhost:3000/back-links.json": 
+    at Fetch.onError [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4mhappy-dom[24m/src/fetch/Fetch.ts:670:4[90m)[39m
+[90m    at ClientRequest.emit (node:events:518:28)[39m
+[90m    at emitErrorEvent (node:_http_client:101:11)[39m
+[90m    at Socket.socketErrorListener (node:_http_client:504:5)[39m
+[90m    at Socket.emit (node:events:518:28)[39m
+[90m    at emitErrorNT (node:internal/streams/destroy:169:8)[39m
+[90m    at emitErrorCloseNT (node:internal/streams/destroy:128:3)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:82:21)[39m
+
+[90mstdout[2m | src/__tests__/main.test.ts
+[22m[39mForce Graph not defined
+Post Graph
+
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -39,7 +84,7 @@ npx vitest run --reporter=verbose
 
 [2m Test Files [22m [1m[32m4 passed[39m[22m[90m (4)[39m
 [2m      Tests [22m [1m[32m29 passed[39m[22m[90m (29)[39m
-[2m   Start at [22m 16:25:42
-[2m   Duration [22m 1.19s[2m (transform 179ms, setup 74ms, collect 205ms, tests 64ms, environment 1.32s, prepare 332ms)[22m
+[2m   Start at [22m 16:36:08
+[2m   Duration [22m 1.21s[2m (transform 167ms, setup 83ms, collect 194ms, tests 80ms, environment 1.33s, prepare 325ms)[22m
 
 </pre></body></html>
