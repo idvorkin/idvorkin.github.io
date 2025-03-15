@@ -4,6 +4,7 @@ import {
   shuffle,
   append_randomizer_div,
   get_link_info,
+  MakeBackLinkHTML,
   IURLInfo,
   IURLInfoMap,
 } from "./shared";
