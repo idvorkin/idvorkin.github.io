@@ -72,10 +72,59 @@ The graph can be initialized with a specific node expanded by using URL hash par
    - Clear separation of graph rendering and data handling
    - Proper error handling and debugging support
 
-4. **Testing**
+4. **Initialization & Data Flow**
+
+   - Load data from get_link_info() method that retrieves back-links.json
+   - Initialize graph with appropriate force-graph library parameters
+   - Implement fallback script loading if needed
+   - Check document.readyState to handle different page load states
+   - Handle force-graph library availability gracefully
+
+5. **Testing**
+
    - End-to-end tests for graph initialization and rendering
    - Unit tests for link utility functions
    - Visual verification via screenshots
+
+   ### Current Test Coverage
+
+   1. **Unit Tests (link-utils.test.ts)**:
+
+      - Tests for `createLinkTabsHTML`: Verifies HTML structure for tabs interface
+      - Tests for `createGraphLinkHTML`: Confirms correct link generation to graph view
+      - Tests for `filterAndSortLinks`: Validates link filtering and sorting logic
+      - Tests for `MakeBackLinkHTML`: Checks HTML generation for backlinks display
+
+   2. **End-to-End Tests (graph.spec.ts)**:
+      - Validates graph page loads correctly
+      - Confirms presence of key UI elements (container, controls, detail panel)
+      - Verifies graph dimensions are appropriate
+      - Checks loading indicator behavior
+
+   ### Recommended Additional Tests
+
+   1. **Graph Data Processing**:
+
+      - Unit tests for `build_graph_data`, `build_links`, `node_for_url` functions
+      - Tests for node expansion/collapse logic
+      - Tests for URL hash parameter handling
+
+   2. **User Interaction**:
+
+      - Tests for node click handlers (left-click for expand/collapse, right-click for navigation)
+      - Tests for control button functionality (center, open, collapse)
+      - Tests for zooming and panning behaviors
+
+   3. **Rendering and Visual Output**:
+
+      - Tests for node canvas rendering functions
+      - Tests for node label generation with proper expansion indicators
+      - Tests for proper centering and focusing on nodes
+
+   4. **Edge Cases and Error Handling**:
+      - Tests for ForceGraph library loading issues
+      - Tests for handling invalid or malformed link data
+      - Tests for recovery from rendering errors
 
 ## UI/UX Requirements
 
