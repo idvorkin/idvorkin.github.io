@@ -10,7 +10,7 @@
 - Check code formatting: `just js-lint`
 - Format code: `just js-format`
 - Validate code (typecheck + lint): `just js-validate`
-- Serve local Jekyll site: `just jekyll-serve`
+- Serve local Jekyll site: `just jekyll-serve` (usually already running at http://localhost:4000)
 - Update backlinks: `just update-backlinks`
 
 ## Code Style Guidelines
@@ -18,6 +18,7 @@
 - Use TypeScript for all new code with strict typing
 - Follow existing patterns in the codebase
 - Export functions deliberately, keep helpers private
+- Always explicitly import all functions needed from other modules
 - Check document.readyState before DOM manipulation
 - Prefix console.logs with emojis for easier debugging
 - Use interfaces for data structures in shared.ts
