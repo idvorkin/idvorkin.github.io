@@ -63,6 +63,8 @@ algolia:
     - "*.ruff_cache*"
     - "tags"
     - "scripts/*"
+    - "tests/*"
+    - "src/__tests__/*"
 
 plugins_dir: ["jekyll-paginate", "jekyll-sitemap", "jekyll-redirect-from"]
 include: [".htaccess", "__init__.py"]
@@ -104,6 +106,8 @@ exclude:
     "docs",
     "tech_graveyard",
     "test-results",
+    "tests",
+    "src/__tests__",
   ]
 
 permalink: /:title
