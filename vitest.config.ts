@@ -10,9 +10,11 @@ export default defineConfig({
       exclude: [
         "node_modules/",
         "src/vendor/",
+        "src/__tests__/",
         "assets/",
         "_site/",
         "cypress/",
+        "tests/",
         "*.config.ts",
         "*.setup.ts",
       ],
