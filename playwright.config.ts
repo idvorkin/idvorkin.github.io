@@ -2,6 +2,8 @@ import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
   testDir: "./tests",
+  // Explicitly exclude unit tests that use Vitest
+  testIgnore: "**/unit/**",
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: 0,

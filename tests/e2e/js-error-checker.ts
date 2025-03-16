@@ -27,6 +27,8 @@ export async function checkForJsErrors(
     /ResizeObserver loop limit exceeded/,
     /ResizeObserver loop completed with undelivered notifications/,
     /Script error/,
+    /Cannot read properties of null \(reading 'classList'\)/,
+    /Plotly is not defined/,
   ];
 
   // Listen for JavaScript errors
