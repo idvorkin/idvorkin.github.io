@@ -16,6 +16,21 @@ npx vitest run --reporter=verbose
 🔍 Document still loading, adding DOMContentLoaded listener
 🔍 initRecentPosts completed initial setup
 
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould handle missing properties with defaults
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfilterRealPages[2m > [22mshould filter out pages with empty titles or descriptions
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould sort pages by last_modified date, newest first
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould fallback to doc_size if last_modified dates are missing
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould not modify the original array
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould return the specified number of pages
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould handle array with fewer pages than requested count
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould generate correct HTML for recent pages
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould truncate descriptions longer than 100 characters
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould show message for empty pages array
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
@@ -43,21 +58,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould handle missing properties with defaults
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfilterRealPages[2m > [22mshould filter out pages with empty titles or descriptions
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould sort pages by last_modified date, newest first
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould fallback to doc_size if last_modified dates are missing
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould not modify the original array
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould return the specified number of pages
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould handle array with fewer pages than requested count
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould generate correct HTML for recent pages
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould truncate descriptions longer than 100 characters
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould show message for empty pages array
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
- [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
 [90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
 [22m[39mToggle element with ID missing-toggle not found
 
@@ -2343,16 +2343,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m802.245357[39m,
-        nodeStart: [33m0.312632000001031[39m,
-        v8Start: [33m2.4353770000016084[39m,
-        bootstrapComplete: [33m21.722976999997627[39m,
-        environment: [33m9.013331000009202[39m,
-        loopStart: [33m30.44770000000426[39m,
+        duration: [33m781.152271[39m,
+        nodeStart: [33m0.2926420000003418[39m,
+        v8Start: [33m2.4610309999989113[39m,
+        bootstrapComplete: [33m21.599442999999155[39m,
+        environment: [33m8.838971999997739[39m,
+        loopStart: [33m27.72222199999669[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m127.846982[39m
+        idleTime: [33m148.442195[39m
       },
-      timeOrigin: [33m1742141193748.597[39m
+      timeOrigin: [33m1742141787617.933[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -4948,16 +4948,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m855.040572[39m,
-        nodeStart: [33m0.312632000001031[39m,
-        v8Start: [33m2.4353770000016084[39m,
-        bootstrapComplete: [33m21.722976999997627[39m,
-        environment: [33m9.013331000009202[39m,
-        loopStart: [33m30.44770000000426[39m,
+        duration: [33m814.382653[39m,
+        nodeStart: [33m0.2926420000003418[39m,
+        v8Start: [33m2.4610309999989113[39m,
+        bootstrapComplete: [33m21.599442999999155[39m,
+        environment: [33m8.838971999997739[39m,
+        loopStart: [33m27.72222199999669[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m127.846982[39m
+        idleTime: [33m148.442195[39m
       },
-      timeOrigin: [33m1742141193748.597[39m
+      timeOrigin: [33m1742141787617.933[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7549,16 +7549,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m887.641158[39m,
-        nodeStart: [33m0.312632000001031[39m,
-        v8Start: [33m2.4353770000016084[39m,
-        bootstrapComplete: [33m21.722976999997627[39m,
-        environment: [33m9.013331000009202[39m,
-        loopStart: [33m30.44770000000426[39m,
+        duration: [33m848.390496[39m,
+        nodeStart: [33m0.2926420000003418[39m,
+        v8Start: [33m2.4610309999989113[39m,
+        bootstrapComplete: [33m21.599442999999155[39m,
+        environment: [33m8.838971999997739[39m,
+        loopStart: [33m27.72222199999669[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m127.846982[39m
+        idleTime: [33m148.442195[39m
       },
-      timeOrigin: [33m1742141193748.597[39m
+      timeOrigin: [33m1742141787617.933[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7972,7 +7972,7 @@ Toggle element with ID remaining-posts-toggle not found
 
 [2m Test Files [22m [1m[32m8 passed[39m[22m[90m (8)[39m
 [2m      Tests [22m [1m[32m107 passed[39m[22m[2m | [22m[33m4 skipped[39m[90m (111)[39m
-[2m   Start at [22m 16:06:33
-[2m   Duration [22m 2.04s[2m (transform 373ms, setup 185ms, collect 463ms, tests 320ms, environment 2.80s, prepare 707ms)[22m
+[2m   Start at [22m 16:16:27
+[2m   Duration [22m 2.07s[2m (transform 394ms, setup 160ms, collect 507ms, tests 292ms, environment 2.84s, prepare 675ms)[22m
 
 </pre></body></html>
