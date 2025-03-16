@@ -36,3 +36,4 @@
 - Create isolated test cases for complex components
 - Use the blog's existing structure for new features
 - Check Jekyll at http://localhost:4000 when developing
+- When running e2e tests, always use headless mode (the default) and NOT `--debug` mode
