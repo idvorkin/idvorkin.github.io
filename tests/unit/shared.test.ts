@@ -3,6 +3,8 @@ import {
   random_from_list,
   shuffle,
   append_randomizer_div,
+  MakeBackLinkHTML,
+  IURLInfo,
 } from "../../src/shared";
 
 // Add jQuery type declaration
@@ -16,6 +18,29 @@ declare global {
 }
 
 describe("Shared Utility Functions", () => {
+  describe("MakeBackLinkHTML", () => {
+    it("should generate correct HTML for a backlink", () => {
+      const urlInfo: IURLInfo = {
+        url: "https://example.com",
+        title: "Example Page",
+        description: "This is an example page",
+        file_path: "example.md",
+        outgoing_links: [],
+        incoming_links: [],
+        redirect_url: "",
+        doc_size: 1000,
+        last_modified: "2023-01-01",
+      };
+
+      const result = MakeBackLinkHTML(urlInfo);
+      expect(result).toContain("<a href=https://example.com>Example Page</a>");
+      expect(result).toContain('class="link-box description truncate-css"');
+      expect(result).toContain(
+        '<span class="link-description"> This is an example page <span>'
+      );
+    });
+  });
+
   describe("random_from_list", () => {
     it("should return an element from the list", () => {
       const list = [1, 2, 3, 4, 5];
@@ -82,27 +107,39 @@ describe("Shared Utility Functions", () => {
   });
 
   describe("append_randomizer_div", () => {
+    let clickCallback: Function;
+
     beforeEach(() => {
       // Set up the DOM
       document.body.innerHTML = '<div id="test-container"></div>';
 
+      // Create a mock for the jQuery function and track the click handler
+      clickCallback = null;
+
       // Mock jQuery
-      global.$ = vi.fn().mockImplementation((selector: string) => {
+      global.$ = vi.fn().mockImplementation((selector: any) => {
+        // Handle both the selector string case and the jQuery result case
         if (selector === "#test-container") {
+          // Mock for the parent element
           return {
             length: 1,
             html: vi.fn(),
-            click: vi.fn().mockImplementation(function (
-              this: any,
-              callback: Function
-            ) {
-              // Store the callback for testing
-              this.clickCallback = callback;
+            empty: vi.fn().mockReturnThis(),
+            click: vi.fn().mockImplementation(function (callback) {
+              clickCallback = callback;
               return this;
             }),
             append: vi.fn().mockReturnThis(),
           };
+        } else if (typeof selector === "string" && selector.startsWith("<")) {
+          // Mock for the jQuery result of HTML content
+          return {
+            length: 1,
+            html: vi.fn(),
+          };
         }
+
+        // Default case for non-matching selectors
         return { length: 0 };
       });
     });
@@ -114,6 +151,63 @@ describe("Shared Utility Functions", () => {
       expect(htmlFactory).not.toHaveBeenCalled();
     });
 
-    // Add more tests for append_randomizer_div as needed
+    it("should append content from the factory when parent is found", async () => {
+      // Setup
+      const htmlContent = "<p>Test content</p>";
+      const htmlFactory = vi.fn().mockResolvedValue(htmlContent);
+
+      // Act
+      await append_randomizer_div("#test-container", htmlFactory);
+
+      // Assert
+      expect(htmlFactory).toHaveBeenCalled();
+
+      // Verify the parent was queried
+      expect($).toHaveBeenCalledWith("#test-container");
+
+      // Verify event handler was registered
+      expect(clickCallback).not.toBeNull();
+    });
+
+    it("should handle click events on non-link elements", async () => {
+      // Setup
+      const htmlContent = "<p>Test content</p>";
+      const htmlFactory = vi.fn().mockResolvedValue(htmlContent);
+
+      // Act
+      await append_randomizer_div("#test-container", htmlFactory);
+
+      // Reset the factory mock to test the click handler
+      htmlFactory.mockClear();
+
+      // Get the jQuery mock for the parent
+      const $parent = $("#test-container");
+
+      // Test the click handler with a DIV event target
+      const mockEvent = { target: { tagName: "DIV" } };
+      await clickCallback(mockEvent);
+
+      // Verify new content was generated
+      expect(htmlFactory).toHaveBeenCalled();
+    });
+
+    it("should not regenerate content when clicking on a link", async () => {
+      // Setup
+      const htmlContent = "<a href='#'>Test Link</a>";
+      const htmlFactory = vi.fn().mockResolvedValue(htmlContent);
+
+      // Act
+      await append_randomizer_div("#test-container", htmlFactory);
+
+      // Reset the factory mock to test the click handler
+      htmlFactory.mockClear();
+
+      // Test the click handler with an A (link) event target
+      const mockEvent = { target: { tagName: "A" } };
+      await clickCallback(mockEvent);
+
+      // Verify no new content was generated
+      expect(htmlFactory).not.toHaveBeenCalled();
+    });
   });
 });
