@@ -206,7 +206,11 @@ async function make_radar_map(div) {
     displayModeBar: false,
   };
 
-  Plotly.newPlot(div, data as any, layout, config);
+  if (typeof Plotly !== "undefined") {
+    Plotly.newPlot(div, data as any, layout, config);
+  } else {
+    console.warn("Plotly is not defined, skipping chart rendering");
+  }
 }
 
 const row_height = 20;
@@ -248,7 +252,11 @@ async function make_balance_chart_by_work(div) {
     displayModeBar: false,
   };
 
-  await (Plotly as any).newPlot(div, data, layout, config);
+  if (typeof Plotly !== "undefined") {
+    await (Plotly as any).newPlot(div, data, layout, config);
+  } else {
+    console.warn("Plotly is not defined, skipping chart rendering");
+  }
 }
 
 // Could be over or under
@@ -293,7 +301,11 @@ async function make_balance_chart_by_desired_time_rest(div) {
     pad: 0,
   };
 
-  await (Plotly as any).newPlot(div, data, layout, config);
+  if (typeof Plotly !== "undefined") {
+    await (Plotly as any).newPlot(div, data, layout, config);
+  } else {
+    console.warn("Plotly is not defined, skipping chart rendering");
+  }
 }
 
 export {

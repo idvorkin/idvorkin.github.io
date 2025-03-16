@@ -18,6 +18,12 @@ let tocExpand = true;
 function checkExpandToggle() {
   const toc = $(".ui-toc-dropdown .toc");
   const toggle = $(".expand-toggle");
+
+  if (toc.length === 0 || toggle.length === 0) {
+    console.warn("TOC or toggle elements not found for expand/collapse");
+    return;
+  }
+
   if (!tocExpand) {
     toc.removeClass("expand");
     toggle.text("Expand all");
@@ -46,22 +52,41 @@ function SwapProdAndTest() {
 function ForceShowRightSideBar() {
   let toc = $("#right-sidebar");
   let mainContent = $("#main-content");
-  toc.removeClass();
-  toc.addClass("col-4 pl-0");
 
-  mainContent.removeClass();
-  mainContent.addClass("col-8 pr-0");
+  if (toc.length > 0) {
+    toc.removeClass();
+    toc.addClass("col-4 pl-0");
+  }
+
+  if (mainContent.length > 0) {
+    mainContent.removeClass();
+    mainContent.addClass("col-8 pr-0");
+  }
 
   // Hide DropUp
   const tocDropUp = $("#id-ui-toc-dropdown");
-  tocDropUp.removeClass();
-  tocDropUp.addClass("d-none");
+  if (tocDropUp.length > 0) {
+    tocDropUp.removeClass();
+    tocDropUp.addClass("d-none");
+  }
 }
 
 // <!-- Copied from hackmd-extras.js -->
 function generateToc(id, showPinToc) {
   const target = $(`#${id}`);
+  if (target.length === 0) {
+    console.warn(`Target element #${id} not found for TOC generation`);
+    return;
+  }
+
   target.html("");
+
+  // Check if content-holder exists
+  if ($("#content-holder").length === 0) {
+    console.warn("Content holder not found for TOC generation");
+    return;
+  }
+
   /* eslint-disable no-unused-vars */
   /* @ts-ignore:TS2339*/
   const toc = new window.Toc("content-holder", {
@@ -119,7 +144,7 @@ async function AddLinksToPage(allUrls: IURLInfoMap) {
   }
 
   let link_parent_location = $("#links-to-page");
-  if (!link_parent_location) {
+  if (!link_parent_location || link_parent_location.length === 0) {
     console.log("No back_link_location");
     return;
   }
@@ -291,7 +316,9 @@ function replacePlaceholdersWithLists(
     if (!placeholderLink.length) return; // Placeholder not found, skip
 
     const listClone = $(list).clone();
-    listClone.children().first().remove(); // Remove the 'lookup id' from the list
+    if (listClone.children().length > 0) {
+      listClone.children().first().remove(); // Remove the 'lookup id' from the list
+    }
     placeholderLink.replaceWith(listClone);
 
     // remove the list from the document

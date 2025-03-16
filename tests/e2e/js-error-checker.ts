@@ -20,13 +20,13 @@ export async function checkForJsErrors(
 
   // Define error patterns to treat as warnings (non-critical errors)
   // These errors will be logged but won't fail the test
+  // Note: We've fixed most of these errors with proper null checks,
+  // but we're keeping the patterns to ensure tests don't break
+  // if some edge cases are still present
   const warningPatterns = [
-    /Cannot read properties of null \(reading 'classList'\)/,
-    /Cannot read properties of null \(reading 'appendChild'\)/,
     /ResizeObserver loop limit exceeded/,
     /ResizeObserver loop completed with undelivered notifications/,
     /Script error/,
-    /Plotly is not defined/,
   ];
 
   // Listen for JavaScript errors
