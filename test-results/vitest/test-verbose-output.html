@@ -4,12 +4,54 @@ npx vitest run --reporter=verbose
 
 [1m[7m[36m RUN [39m[27m[22m [36mv3.0.8 [39m[90m/home/runner/work/idvorkin.github.io/idvorkin.github.io[39m
 
- [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production
- [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
- [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
- [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests
+[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
+[22m[39m🔍 updateRecentPosts function called
+🔍 recent-posts container element: found
+🔍 Fetching back-links.json...
+
+[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
+[22m[39m🔍 Number of entries in urlInfoMap: [33m2[39m
+🔍 Transformed pages array, length: [33m2[39m
+🔍 Filtered real pages, length: [33m2[39m
+🔍 Sorted pages, first 5: [
+  { url: [32m'/page2'[39m, title: [32m'Page 2'[39m, last_modified: [32m'2023-01-02'[39m },
+  { url: [32m'/page1'[39m, title: [32m'Page 1'[39m, last_modified: [32m'2023-01-01'[39m }
+]
+🔍 Updating recent-posts content with HTML 
+    <ul>
+      
+        <li>
+          <a href="/page2">Page 2</a> - 
+          Description for pag...
+✅ Recent posts updated successfully
+
 [90mstdout[2m | tests/unit/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
 [22m[39mappend_randomizer_div #non-existent not present
+
+[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when fetch fails
+[22m[39m🔍 updateRecentPosts function called
+🔍 recent-posts container element: found
+🔍 Fetching back-links.json...
+
+[90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when fetch fails
+[22m[39m❌ Error loading recent posts: Error: Network error
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mtests/unit/recent-posts.test.ts:541:51
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
+    at new Promise (<anonymous>)
+    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
+    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+
+[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
+[22m[39m🔍 updateRecentPosts function called
+🔍 recent-posts container element: not found
+
+[90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
+[22m[39m❌ non-existent-container container not found in DOM
 
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mMakeBackLinkHTML[2m > [22mshould generate correct HTML for a backlink
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -22,6 +64,11 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould append content from the factory when parent is found
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould handle click events on non-link elements
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not regenerate content when clicking on a link
+[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2minitRecentPosts[2m > [22m[2mshould add event listener if document is still loading
+[22m[39m🔍 initRecentPosts called
+🔍 Document still loading, adding DOMContentLoaded listener
+🔍 initRecentPosts completed initial setup
+
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
@@ -36,6 +83,27 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould handle missing properties with defaults
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfilterRealPages[2m > [22mshould filter out pages with empty titles or descriptions
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould sort pages by last_modified date, newest first
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould fallback to doc_size if last_modified dates are missing
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould not modify the original array
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould return the specified number of pages
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould handle array with fewer pages than requested count
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould generate correct HTML for recent pages
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould truncate descriptions longer than 100 characters
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould show message for empty pages array
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould update the container with recent posts HTML
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould show error message when fetch fails
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
+ [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
+ [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production
+ [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
+ [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
+ [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
@@ -47,9 +115,9 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list
 
-[2m Test Files [22m [1m[32m6 passed[39m[22m[90m (6)[39m
-[2m      Tests [22m [1m[32m36 passed[39m[22m[90m (36)[39m
-[2m   Start at [22m 01:43:51
-[2m   Duration [22m 1.43s[2m (transform 234ms, setup 112ms, collect 314ms, tests 77ms, environment 2.22s, prepare 530ms)[22m
+[2m Test Files [22m [1m[32m7 passed[39m[22m[90m (7)[39m
+[2m      Tests [22m [1m[32m53 passed[39m[22m[2m | [22m[33m1 skipped[39m[90m (54)[39m
+[2m   Start at [22m 02:02:20
+[2m   Duration [22m 1.86s[2m (transform 228ms, setup 148ms, collect 284ms, tests 119ms, environment 2.51s, prepare 588ms)[22m
 
 </pre></body></html>
