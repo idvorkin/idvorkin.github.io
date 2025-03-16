@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">10.96% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/155</span>
+                <span class='fraction'>17/155</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">11.11% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>1/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">10.96% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/155</span>
+                <span class='fraction'>17/155</span>
             </div>
         
             
@@ -297,36 +297,36 @@
 <a name='L232'></a><a href='#L232'>232</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -517,10 +517,10 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -528,38 +528,38 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// One of the imports is goofy
 // @ts-ignore:TS2792
 import { SunburstClickEvent } from "plotly.js";
-<span class="cstat-no" title="statement not covered" >import { shuffle, random_from_list, append_randomizer_div } from "./index";</span>
+import { shuffle, random_from_list, append_randomizer_div } from "./index";
 import {
   isNullishCoalesce,
   isTypeAliasDeclaration,
 } from "../node_modules/typescript/lib/typescript";
-<span class="cstat-no" title="statement not covered" >class TreeNode {</span>
+class TreeNode {
   name: string;
   children: [TreeNode];
   value: number;
-<span class="cstat-no" title="statement not covered" >  constructor({</span>
-<span class="cstat-no" title="statement not covered" >    name,</span>
-<span class="cstat-no" title="statement not covered" >    value = 25,</span>
-<span class="cstat-no" title="statement not covered" >    children = [],</span>
-<span class="cstat-no" title="statement not covered" >  }: {</span>
+  constructor({
+    name,
+    value = 25,
+    children = [],
+  }: {
     name;
     value?;
     children?;
-<span class="cstat-no" title="statement not covered" >  }) {</span>
-<span class="cstat-no" title="statement not covered" >    this.name = name;</span>
+  }) {
+    this.name = name;
     // Keep it interesting
-<span class="cstat-no" title="statement not covered" >    this.children = shuffle(children);</span>
-<span class="cstat-no" title="statement not covered" >    this.value = value;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >}</span>
-<span class="cstat-no" title="statement not covered" >function add_random_prompts() {</span>
+    this.children = shuffle(children);
+    this.value = value;
+  }
+}
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function add_random_prompts() {</span></span>
 <span class="cstat-no" title="statement not covered" >  const map_category_to_prompts = category_to_prompts();</span>
 <span class="cstat-no" title="statement not covered" >  for (const category of map_category_to_prompts.keys()) {</span>
 <span class="cstat-no" title="statement not covered" >    render_prompt_for_category(category, map_category_to_prompts.get(category));</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function render_prompt_for_category(category, prompts_for_category) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function render_prompt_for_category(category, prompts_for_category) {</span></span>
   //print one of the prompts
 <span class="cstat-no" title="statement not covered" >  let get_random_prompt_html = () =&gt;</span>
 <span class="cstat-no" title="statement not covered" >    `&lt;span&gt;${random_from_list(</span>
@@ -577,7 +577,7 @@ import {
 // So can add a box at the top with a random prompt on top
 // And a random per section prompt
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function category_to_prompts() {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function category_to_prompts() {</span></span>
   // prompt_categories are H3s with a UL under them, and the li's under there are the prompt.
 <span class="cstat-no" title="statement not covered" >  const starting_node = $("h3").first();</span>
 <span class="cstat-no" title="statement not covered" >  let current_category = starting_node;</span>
@@ -614,7 +614,7 @@ import {
 // sunburst format is an inorder traversal of the tree.
 // good thing to unit test
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function* breadth_first_walk(node: TreeNode) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function* breadth_first_walk(node: TreeNode) {</span></span>
 <span class="cstat-no" title="statement not covered" >  if (!node) {</span>
 <span class="cstat-no" title="statement not covered" >    return;</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
@@ -629,7 +629,7 @@ import {
 <span class="cstat-no" title="statement not covered" >  }</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function tree_to_plotly_data_format(root) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function tree_to_plotly_data_format(root) {</span></span>
   // Plotly needs a tree to be flattened into a set of lists
   // ids
   // labels
@@ -648,7 +648,7 @@ import {
 <span class="cstat-no" title="statement not covered" >  };</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function category_to_prompts_text() {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function category_to_prompts_text() {</span></span>
 <span class="cstat-no" title="statement not covered" >  const map = category_to_prompts();</span>
 <span class="cstat-no" title="statement not covered" >  const list = Array.from(map.entries()).map(([k, v], _index) =&gt; [</span>
 <span class="cstat-no" title="statement not covered" >    (k as any).text(),</span>
@@ -661,7 +661,7 @@ import {
 // and prompts stored in a map[category, prompt]
 // Join and walk
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function random_prompt_for_label(label, tree_node, map_node_to_prompts) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function random_prompt_for_label(label, tree_node, map_node_to_prompts) {</span></span>
   // Find the label in the tree
   // recall bread first search returns a parent as well.
 <span class="cstat-no" title="statement not covered" >  const [clicked_node, _parent] = Array.from(</span>
@@ -687,7 +687,7 @@ import {
 <span class="cstat-no" title="statement not covered" >  return random_from_list(all_prompts);</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >async function add_sunburst(</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >async function add_sunburst(</span></span>
 <span class="cstat-no" title="statement not covered" >  plot_element_id,</span>
 <span class="cstat-no" title="statement not covered" >  random_text_div_id,</span>
 <span class="cstat-no" title="statement not covered" >  root: TreeNode</span>
@@ -748,10 +748,10 @@ import {
 <span class="cstat-no" title="statement not covered" >  });</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >const UT = {</span>
-<span class="cstat-no" title="statement not covered" >  breadth_first_walk: breadth_first_walk, // for UT</span>
-<span class="cstat-no" title="statement not covered" >  shuffle: shuffle,</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+const UT = {
+  breadth_first_walk: breadth_first_walk, // for UT
+  shuffle: shuffle,
+};
 &nbsp;
 // How do I export things only for testing?
 // I guess they should be in their own module
@@ -763,7 +763,7 @@ export { add_random_prompts, add_sunburst, TreeNode, UT, shuffle };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-03-16T01:16:23.947Z
+                at 2025-03-16T01:43:50.605Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

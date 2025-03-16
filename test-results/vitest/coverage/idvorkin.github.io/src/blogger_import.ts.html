@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">1.09% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/91</span>
+                <span class='fraction'>1/91</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">1.09% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/91</span>
+                <span class='fraction'>1/91</span>
             </div>
         
             
@@ -199,7 +199,7 @@
 <a name='L134'></a><a href='#L134'>134</a>
 <a name='L135'></a><a href='#L135'>135</a>
 <a name='L136'></a><a href='#L136'>136</a>
-<a name='L137'></a><a href='#L137'>137</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L137'></a><a href='#L137'>137</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -335,8 +335,8 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { random_from_list, append_randomizer_div } from "./index";<span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" ></span></span></span>
-<span class="cstat-no" title="statement not covered" >function html_for_blogpost(post) {</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { random_from_list, append_randomizer_div } from "./index";
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function html_for_blogpost(post) {</span></span>
 <span class="cstat-no" title="statement not covered" >  const item = $("&lt;div/&gt;");</span>
   // TODO: HACK: Strip to the right of Week number
 <span class="cstat-no" title="statement not covered" >  const title_href = `&lt;h4&gt; &lt;a href='${post.url}'}&gt;${post.title}&lt;/a&gt;&lt;/h4&gt;`;</span>
@@ -385,16 +385,16 @@
 <span class="cstat-no" title="statement not covered" >  return ret;</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function get_achievement_posts(imported_posts: Array&lt;any&gt;) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function get_achievement_posts(imported_posts: Array&lt;any&gt;) {</span></span>
 <span class="cstat-no" title="statement not covered" >  return imported_posts.filter(post =&gt;</span>
 <span class="cstat-no" title="statement not covered" >    post.title.toLowerCase().includes("achievement")</span>
 <span class="cstat-no" title="statement not covered" >  );</span>
 <span class="cstat-no" title="statement not covered" >}</span>
-<span class="cstat-no" title="statement not covered" >function get_recent_posts(imported_posts: Array&lt;any&gt;) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function get_recent_posts(imported_posts: Array&lt;any&gt;) {</span></span>
 <span class="cstat-no" title="statement not covered" >  return imported_posts.filter(post =&gt; post.tags.includes("family-journal"));</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function ProcessImports(posts: Array&lt;any&gt;) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function ProcessImports(posts: Array&lt;any&gt;) {</span></span>
 <span class="cstat-no" title="statement not covered" >  console.log("Processing", posts.length, "posts");</span>
 <span class="cstat-no" title="statement not covered" >  if (!posts) {</span>
 <span class="cstat-no" title="statement not covered" >    console.log(`No posts being imported`);</span>
@@ -420,7 +420,7 @@
 <span class="cstat-no" title="statement not covered" >  );</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function add_imported_blog_posts() {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function add_imported_blog_posts() {</span></span>
 <span class="cstat-no" title="statement not covered" >  const imported_posts_url = "/ig66/ig66-export.json";</span>
 <span class="cstat-no" title="statement not covered" >  $.getJSON(imported_posts_url, ProcessImports);</span>
 <span class="cstat-no" title="statement not covered" >}</span>
@@ -436,7 +436,7 @@ interface Roles {
   roles: Role[];
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function html_for_role(role: Role) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function html_for_role(role: Role) {</span></span>
   // url encode the role title
 <span class="cstat-no" title="statement not covered" >  const role_file_name = role.title.replace(/ /g, "%20");</span>
 <span class="cstat-no" title="statement not covered" >  const voices = ["igor", "ammon"];</span>
@@ -452,7 +452,7 @@ interface Roles {
   `;
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function ProcessEulogy(div: string, roles: Roles) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function ProcessEulogy(div: string, roles: Roles) {</span></span>
 <span class="cstat-no" title="statement not covered" >  if (!roles) {</span>
 <span class="cstat-no" title="statement not covered" >    console.log(`No roles being imported`);</span>
 <span class="cstat-no" title="statement not covered" >    return;</span>
@@ -465,7 +465,7 @@ interface Roles {
 <span class="cstat-no" title="statement not covered" >  );</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >function add_eulogy_roles(div: string) {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function add_eulogy_roles(div: string) {</span></span>
 <span class="cstat-no" title="statement not covered" >  const imported_posts_url = "/eulogy.json";</span>
 <span class="cstat-no" title="statement not covered" >  $.getJSON(imported_posts_url, (roles: Roles) =&gt; ProcessEulogy(div, roles));</span>
 <span class="cstat-no" title="statement not covered" >}</span>
@@ -478,7 +478,7 @@ export { add_imported_blog_posts, add_eulogy_roles, html_for_role };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-03-16T01:16:23.947Z
+                at 2025-03-16T01:43:50.605Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

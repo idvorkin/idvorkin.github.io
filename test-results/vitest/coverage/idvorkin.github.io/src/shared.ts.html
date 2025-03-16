@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.92% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>50/65</span>
+                <span class='fraction'>65/65</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">93.33% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>14/15</span>
+                <span class='fraction'>19/19</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.92% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>50/65</span>
+                <span class='fraction'>65/65</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -198,14 +198,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -243,29 +243,29 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -322,15 +322,15 @@
 /**
  * Creates HTML for a backlink
  */
-export <span class="fstat-no" title="function not covered" >function MakeBackLinkHTML(url_info: IURLInfo) {</span>
-<span class="cstat-no" title="statement not covered" >  const title_href = `&lt;a href=${url_info.url}&gt;${url_info.title}&lt;/a&gt;`;</span>
-<span class="cstat-no" title="statement not covered" >  const class_link = `link-box description truncate-css`;</span>
-<span class="cstat-no" title="statement not covered" >  const output = `</span>
+export function MakeBackLinkHTML(url_info: IURLInfo) {
+  const title_href = `&lt;a href=${url_info.url}&gt;${url_info.title}&lt;/a&gt;`;
+  const class_link = `link-box description truncate-css`;
+  const output = `
 &lt;div&gt;
-<span class="cstat-no" title="statement not covered" >    &lt;div class="${class_link}"&gt; ${title_href}:&lt;span class="link-description"&gt; ${url_info.description} &lt;span&gt;&lt;/div&gt;</span>
+    &lt;div class="${class_link}"&gt; ${title_href}:&lt;span class="link-description"&gt; ${url_info.description} &lt;span&gt;&lt;/div&gt;
 &lt;/div&gt;`;
-<span class="cstat-no" title="statement not covered" >  return output;</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+  return output;
+}
 &nbsp;
 /**
  * Returns a random element from an array
@@ -378,19 +378,19 @@ export async function append_randomizer_div(
   if ($parent.length != 1) {
     console.log(`append_randomizer_div ${parent_id} not present`);
     return;
-<span class="branch-0 cbranch-no" title="branch not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >  const new_element = $(await random_html_factory());</span>
-<span class="cstat-no" title="statement not covered" >  $parent.empty().append(new_element);</span>
+  }
+  const new_element = $(await random_html_factory());
+  $parent.empty().append(new_element);
 &nbsp;
   // Clicking on the element should result in a reload, unless you're
   // Clicking on a link
-<span class="cstat-no" title="statement not covered" >  $parent.click(async function (event) {</span>
-<span class="cstat-no" title="statement not covered" >    if (event.target.tagName != "A") {</span>
-<span class="cstat-no" title="statement not covered" >      const new_element = $(await random_html_factory());</span>
-<span class="cstat-no" title="statement not covered" >      $parent.empty().append(new_element);</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >  });</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+  $parent.click(async function (event) {
+    if (event.target.tagName != "A") {
+      const new_element = $(await random_html_factory());
+      $parent.empty().append(new_element);
+    }
+  });
+}
 &nbsp;
 export interface IURLInfoMap {
   [key: string]: IURLInfo;
@@ -445,7 +445,7 @@ export async function get_link_info(url?: string): Promise&lt;IURLInfoMap&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-03-16T01:16:23.947Z
+                at 2025-03-16T01:43:50.605Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
