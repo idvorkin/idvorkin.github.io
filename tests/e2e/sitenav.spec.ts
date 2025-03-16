@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Site Navigation", () => {
   test.beforeEach(async ({ page }) => {
@@ -49,5 +50,11 @@ test.describe("Site Navigation", () => {
     await expect(page).toHaveURL(/.*\/categories/);
     await expect(page.locator("h1")).toContainText("Category");
     */
+  });
+
+  test("Navigation links have no JavaScript errors", async ({ page }) => {
+    await checkForJsErrors(page, "/");
+    await checkForJsErrors(page, "/tags");
+    await checkForJsErrors(page, "/categories");
   });
 });

@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { checkForJsErrors } from "./js-error-checker";
 
 test("About page loads correctly", async ({ page }) => {
   // Navigate to the About page
@@ -9,4 +10,8 @@ test("About page loads correctly", async ({ page }) => {
 
   // Verify some content on the page to ensure it loaded properly
   await expect(page.locator("body")).toContainText("Igor");
+});
+
+test("About page has no JavaScript errors", async ({ page }) => {
+  await checkForJsErrors(page, "/about");
 });

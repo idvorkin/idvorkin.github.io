@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Keyboard shortcuts", () => {
   const startPage = "/save-the-soup";
@@ -33,5 +34,9 @@ test.describe("Keyboard shortcuts", () => {
 
     // Check that we navigated to ig66
     await expect(page).toHaveURL(/ig66/);
+  });
+
+  test("Shortcuts page has no JavaScript errors", async ({ page }) => {
+    await checkForJsErrors(page, startPage);
   });
 });

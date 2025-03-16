@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Blog post functionality", () => {
   test("Blog index page loads correctly", async ({ page }) => {
@@ -37,5 +38,14 @@ test.describe("Blog post functionality", () => {
   test("Blog post search works", async ({ page }) => {
     // Skip this test as we're handling search in the search.spec.ts file
     test.skip();
+  });
+
+  test("Home page has no JavaScript errors", async ({ page }) => {
+    await checkForJsErrors(page, "/");
+  });
+
+  test("Blog post page has no JavaScript errors", async ({ page }) => {
+    // Testing a specific blog post
+    await checkForJsErrors(page, "/_posts/2018-01-04-7-habits.md");
   });
 });

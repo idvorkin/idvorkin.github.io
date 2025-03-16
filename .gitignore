@@ -44,3 +44,5 @@ blog.chroma.db/
 
 # Private individual user cursor rules
 .cursor/rules/_*.mdc
+playwright-report/
+prompt-page.png

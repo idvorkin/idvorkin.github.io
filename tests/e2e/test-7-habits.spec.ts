@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("7 habits", () => {
   const known_category_on_sunburst = "Be Proactive";
@@ -33,5 +34,9 @@ test.describe("7 habits", () => {
     // Check that the text has changed
     await expect(defaultPromptElement).not.toHaveText(originalText);
     */
+  });
+
+  test("7 habits page has no JavaScript errors", async ({ page }) => {
+    await checkForJsErrors(page, "/7-habits");
   });
 });

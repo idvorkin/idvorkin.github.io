@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Search functionality", () => {
   test.beforeEach(async ({ page }) => {
@@ -33,5 +34,9 @@ test.describe("Search functionality", () => {
 
     // Skip the actual search test since we don't know the exact structure
     // of the search dialog that appears after clicking
+  });
+
+  test("Search page has no JavaScript errors", async ({ page }) => {
+    await checkForJsErrors(page, "/search");
   });
 });

@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Things I enjoy page", () => {
   test.beforeEach(async ({ page }) => {
@@ -129,5 +130,9 @@ test.describe("Things I enjoy page", () => {
 
     // Verify the text changed again
     expect(thirdText).not.toEqual(secondText);
+  });
+
+  test("Todo enjoy page has no JavaScript errors", async ({ page }) => {
+    await checkForJsErrors(page, "/todo_enjoy");
   });
 });
