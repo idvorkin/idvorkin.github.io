@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { IURLInfoMap } from "../shared";
+import { IURLInfoMap } from "../../src/shared";
 
 describe("get_link_info", () => {
   // Setup mock data
@@ -47,7 +47,7 @@ describe("get_link_info", () => {
     });
 
     // Import the function fresh to avoid cached state
-    const { get_link_info } = await import("../shared");
+    const { get_link_info } = await import("../../src/shared");
 
     // Call the function
     const result = await get_link_info();
@@ -72,7 +72,7 @@ describe("get_link_info", () => {
     });
 
     // Import the function fresh to avoid cached state
-    const { get_link_info } = await import("../shared");
+    const { get_link_info } = await import("../../src/shared");
 
     // Call the function
     const result = await get_link_info();
@@ -97,7 +97,7 @@ describe("get_link_info", () => {
     window.fetch = vi.fn().mockRejectedValue(new Error("Network error"));
 
     // Import the function fresh to avoid cached state
-    const { get_link_info } = await import("../shared");
+    const { get_link_info } = await import("../../src/shared");
 
     // Call the function
     const result = await get_link_info();
@@ -123,7 +123,7 @@ describe("get_link_info", () => {
     window.fetch = fetchMock;
 
     // Import the function fresh to avoid cached state
-    const { get_link_info } = await import("../shared");
+    const { get_link_info } = await import("../../src/shared");
 
     // First call should make a fetch request
     await get_link_info();

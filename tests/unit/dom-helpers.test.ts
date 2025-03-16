@@ -3,7 +3,7 @@ import {
   toggleClass,
   createElement,
   findClosestParent,
-} from "../utils/dom-helpers";
+} from "../../src/utils/dom-helpers";
 
 describe("DOM Helper Functions", () => {
   // Setup and teardown

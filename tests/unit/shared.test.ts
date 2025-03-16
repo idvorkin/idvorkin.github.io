@@ -1,5 +1,9 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { random_from_list, shuffle, append_randomizer_div } from "../shared";
+import {
+  random_from_list,
+  shuffle,
+  append_randomizer_div,
+} from "../../src/shared";
 
 // Add jQuery type declaration
 declare global {

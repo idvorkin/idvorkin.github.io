@@ -1,4 +1,4 @@
-import { random_from_list, shuffle } from "../main";
+import { random_from_list, shuffle } from "../../src/main";
 
 describe("Main module functions", () => {
   describe("shuffle", () => {
