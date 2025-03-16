@@ -21,60 +21,59 @@ function e(e){let t=`<a href=${e.url}>${e.title}</a>`;return`
           </li>
         `}).join("")}
       </ul>
-    `}),t}async function u(){console.log("\uD83D\uDD0D updateRecentPosts function called");let e=document.getElementById("last-modified-posts");if(console.log("\uD83D\uDD0D recent-posts container element:",e),!e){console.error("❌ recent-posts container not found in DOM");return}try{console.log("\uD83D\uDD0D Fetching back-links.json...");let t=await r();if(0===t.length){console.warn("⚠️ No pages found after filtering and sorting"),e.innerHTML="<p>No modified posts found.</p>";return}let n=t.slice(15),o=c(t.slice(0,15)),a=d(o);if(n.length>0){let e=c(n),t=d(e);a+=`
-        <div class="remaining-posts-section">
-          <h2 id="remaining-posts-toggle" class="remaining-toggle">
-            <span class="toggle-icon">\u{25B6}</span> Remaining Modified Files (${n.length} more)
-          </h2>
-          <div id="remaining-posts-content" class="remaining-content" style="display: none;">
-            ${t}
-          </div>
-        </div>
-      `}a=`
-      <style>
-        .last-modified-list {
-          list-style-type: none;
-          padding-left: 0;
-        }
-        .last-modified-list li {
-          margin-bottom: 1.5rem;
-          position: relative;
-        }
-        .date-badge {
-          display: inline-block;
-          background-color: #f8f9fa;
-          border: 1px solid #dee2e6;
-          border-radius: 4px;
-          padding: 0.2rem 0.5rem;
-          margin-right: 0.5rem;
-          font-size: 0.8rem;
-        }
-        .description {
-          margin-top: 0.5rem;
-          margin-bottom: 0;
-          color: #6c757d;
-        }
-        .remaining-toggle {
-          cursor: pointer;
-          padding: 10px;
-          background-color: #f8f9fa;
-          border-radius: 4px;
-          margin-top: 2rem;
-          transition: background-color 0.3s;
-        }
-        .remaining-toggle:hover {
-          background-color: #e9ecef;
-        }
-        .toggle-icon {
-          display: inline-block;
-          transition: transform 0.3s;
-        }
-        .toggle-icon.open {
-          transform: rotate(90deg);
-        }
-      </style>
-      ${a}
-    `,console.log("\uD83D\uDD0D Updating recent-posts content with HTML",a.substring(0,100)+"..."),e.innerHTML=a;let i=document.getElementById("remaining-posts-toggle");i&&i.addEventListener("click",function(){let e=document.getElementById("remaining-posts-content"),t=this.querySelector(".toggle-icon");"none"===e.style.display?(e.style.display="block",t.classList.add("open")):(e.style.display="none",t.classList.remove("open"))}),console.log("✅ Recent posts updated successfully")}catch(t){console.error("❌ Error loading recent posts:",t),e.innerHTML="<p>Error loading modified posts. Please try again later.</p>"}}function p(){console.log("\uD83D\uDD0D initRecentAllPosts called"),"loading"===document.readyState?(console.log("\uD83D\uDD0D Document still loading, adding DOMContentLoaded listener"),document.addEventListener("DOMContentLoaded",()=>{console.log("\uD83D\uDD0D DOMContentLoaded event fired, calling updateRecentPosts()"),u()})):(console.log("\uD83D\uDD0D Document already loaded, calling updateRecentPosts() immediately"),u()),console.log("\uD83D\uDD0D initRecentAllPosts completed initial setup")}console.log("Load force graph in TS v 0.9");let g=!0;function f(){let e=$(".ui-toc-dropdown .toc"),t=$(".expand-toggle");if(0===e.length||0===t.length){console.warn("TOC or toggle elements not found for expand/collapse");return}g?(e.addClass("expand"),t.text("Collapse all")):(e.removeClass("expand"),t.text("Expand all"))}function m(){let e=$("#right-sidebar"),t=$("#main-content");e.length>0&&(e.removeClass(),e.addClass("col-4 pl-0")),t.length>0&&(t.removeClass(),t.addClass("col-8 pr-0"));let n=$("#id-ui-toc-dropdown");n.length>0&&(n.removeClass(),n.addClass("d-none"))}function h(e,t){let n=$(`#${e}`);if(0===n.length){console.warn(`Target element #${e} not found for TOC generation`);return}if(n.html(""),0===$("#content-holder").length){console.warn("Content holder not found for TOC generation");return}new window.Toc("content-holder",{level:3,top:-1,class:"toc",ulClass:"nav",targetId:e}),"undefined"===n.text()&&n.html("");let o=$('<div class="toc-menu"></div'),a=$('<a class="expand-toggle" href="#">Collapse all</a>'),i=$('<a class="back-to-top" href="#">Top of page</a>'),l=$('<a class="go-to-bottom" href="#">Bottom of page</a>'),r=$('<a class="go-to-bottom" href="#">Pin ToC</a>');f(),a.click(e=>{e.preventDefault(),e.stopPropagation(),g=!g,f()}),i.click(e=>{e.preventDefault(),e.stopPropagation(),window.scrollTo(0,0)}),l.click(e=>{e.preventDefault(),e.stopPropagation(),window.scrollTo(0,document.body.scrollHeight)}),r.click(e=>m()),o.append(a).append(i).append(l),t&&o.append(r),n.append(o)}async function b(t){let n=new URL(document.URL).pathname,o=t[n]?.incoming_links,a=t[n]?.outgoing_links;if(!o&&!a){console.log(`No backlinks for the page ${n}`);return}let i=$("#links-to-page");if(!i||0===i.length){console.log("No back_link_location");return}i.append(`
+    `}),t}async function u(e="last-modified-posts",t=15,n=document){console.log("\uD83D\uDD0D updateRecentPosts function called");let o=n.getElementById(e);if(console.log("\uD83D\uDD0D recent-posts container element:",o),!o){console.error(`\u{274C} ${e} container not found in DOM`);return}try{console.log("\uD83D\uDD0D Fetching back-links.json...");let e=await r(),a=function(e,t=15){if(0===e.length)return"<p>No modified posts found.</p>";let n=e.slice(0,t),o=e.slice(t),a=d(c(n));if(o.length>0){var i,l;a+=(i=d(c(o)),l=o.length,`
+    <div class="remaining-posts-section">
+      <h2 id="remaining-posts-toggle" class="remaining-toggle">
+        <span class="toggle-icon">\u{25B6}</span> Remaining Modified Files (${l} more)
+      </h2>
+      <div id="remaining-posts-content" class="remaining-content" style="display: none;">
+        ${i}
+      </div>
+    </div>
+  `)}return`
+    <style>
+      .last-modified-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .last-modified-list li {
+        margin-bottom: 1.5rem;
+        position: relative;
+      }
+      .date-badge {
+        display: inline-block;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        padding: 0.2rem 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 0.8rem;
+      }
+      .description {
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        color: #6c757d;
+      }
+      .remaining-toggle {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        margin-top: 2rem;
+        transition: background-color 0.3s;
+      }
+      .remaining-toggle:hover {
+        background-color: #e9ecef;
+      }
+      .toggle-icon {
+        display: inline-block;
+        transition: transform 0.3s;
+      }
+      .toggle-icon.open {
+        transform: rotate(90deg);
+      }
+    </style>
+  `+a}(e,t);console.log("\uD83D\uDD0D Updating recent-posts content with HTML",a.substring(0,100)+"..."),o.innerHTML=a,function(e="remaining-posts-toggle",t="remaining-posts-content",n=document){let o=n.getElementById(e);if(!o){console.log(`Toggle element with ID ${e} not found`);return}o.addEventListener("click",function(){let e=n.getElementById(t);if(!e){console.log(`Content element with ID ${t} not found`);return}let o=this.querySelector(".toggle-icon");"none"===e.style.display?(e.style.display="block",o?.classList.add("open")):(e.style.display="none",o?.classList.remove("open"))})}("remaining-posts-toggle","remaining-posts-content",n),console.log("✅ Recent posts updated successfully")}catch(e){console.error("❌ Error loading recent posts:",e),o.innerHTML="<p>Error loading modified posts. Please try again later.</p>"}}function p(e="last-modified-posts",t=document){console.log("\uD83D\uDD0D initRecentAllPosts called"),"loading"===t.readyState?(console.log("\uD83D\uDD0D Document still loading, adding DOMContentLoaded listener"),t.addEventListener("DOMContentLoaded",()=>{console.log("\uD83D\uDD0D DOMContentLoaded event fired, calling updateRecentPosts()"),u(e,15,t)})):(console.log("\uD83D\uDD0D Document already loaded, calling updateRecentPosts() immediately"),u(e,15,t)),console.log("\uD83D\uDD0D initRecentAllPosts completed initial setup")}console.log("Load force graph in TS v 0.9");let g=!0;function f(){let e=$(".ui-toc-dropdown .toc"),t=$(".expand-toggle");if(0===e.length||0===t.length){console.warn("TOC or toggle elements not found for expand/collapse");return}g?(e.addClass("expand"),t.text("Collapse all")):(e.removeClass("expand"),t.text("Expand all"))}function m(){let e=$("#right-sidebar"),t=$("#main-content");e.length>0&&(e.removeClass(),e.addClass("col-4 pl-0")),t.length>0&&(t.removeClass(),t.addClass("col-8 pr-0"));let n=$("#id-ui-toc-dropdown");n.length>0&&(n.removeClass(),n.addClass("d-none"))}function h(e,t){let n=$(`#${e}`);if(0===n.length){console.warn(`Target element #${e} not found for TOC generation`);return}if(n.html(""),0===$("#content-holder").length){console.warn("Content holder not found for TOC generation");return}new window.Toc("content-holder",{level:3,top:-1,class:"toc",ulClass:"nav",targetId:e}),"undefined"===n.text()&&n.html("");let o=$('<div class="toc-menu"></div'),a=$('<a class="expand-toggle" href="#">Collapse all</a>'),i=$('<a class="back-to-top" href="#">Top of page</a>'),l=$('<a class="go-to-bottom" href="#">Bottom of page</a>'),r=$('<a class="go-to-bottom" href="#">Pin ToC</a>');f(),a.click(e=>{e.preventDefault(),e.stopPropagation(),g=!g,f()}),i.click(e=>{e.preventDefault(),e.stopPropagation(),window.scrollTo(0,0)}),l.click(e=>{e.preventDefault(),e.stopPropagation(),window.scrollTo(0,document.body.scrollHeight)}),r.click(e=>m()),o.append(a).append(i).append(l),t&&o.append(r),n.append(o)}async function b(t){let n=new URL(document.URL).pathname,o=t[n]?.incoming_links,a=t[n]?.outgoing_links;if(!o&&!a){console.log(`No backlinks for the page ${n}`);return}let i=$("#links-to-page");if(!i||0===i.length){console.log("No back_link_location");return}i.append(`
 <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#incoming" type="button" role="tab" aria-controls="incoming" aria-selected="true">Links to here</button>
@@ -119,7 +118,7 @@ Try these shortcuts:
            <b> <a href="${e.url}">${e.title}</a></b>
             <span>${e.description}</span>
             </span>
-            `}}),header:({createElement:e})=>e("div",{dangerouslySetInnerHTML:{__html:"<i style='color:grey'>Recent posts ...</i>"}})}}}async function H(e,t,n,o,a,i=3,l=4,r=3){let s=algoliasearch(e,t),c=await E(r),d=await R(l),u=o.startsWith("#")?o:`#${o}`;if(0===$(u).length){console.log("No autocomplete element found","autocomplete_id",o);return}return x({container:u,placeholder:"Search Igor's Musings ...",getSources:function({query:e}){let t=0===e.length;t&&(e=" ");let o=function(e,t,n,o=3,a=!1){let i="NOT tags:family-journal";return a&&(i=""),{sourceId:"featured_posts",getItems:()=>T({searchClient:e,queries:[{indexName:t,query:n,filters:i,params:{hitsPerPage:o,highlightPreTag:"<span style='background:yellow'>",highlightPostTag:"</span>"}}]}),templates:{item:P,header:({createElement:e})=>e("div",{dangerouslySetInnerHTML:{__html:"<i style='color:grey'>Featured posts ...</i>"}})},getItemUrl({item:e}){let t=e.url;return e.anchor&&(t+=`#${e.anchor}`),t}}}(s,n,e,t?i:10,a);return t?[o,d,c]:[o]},debug:!1,openOnFocus:!0,detachedMediaQuery:""})}class O{constructor({name:e,value:t=25,children:o=[]}){this.name=e,this.children=n(o),this.value=t}}function S(){let e=j();for(let n of e.keys())!function(e,n){let a=$('<div class="alert alert-primary" role="alert"/>');$(e).after(a),o(a,()=>`<span>${t(n)}</span><span style="float: right; cursor: pointer;" title="Click for another prompt">\u{1F504}</span>`)}(n,e.get(n))}function j(){let e=$("h3").first(),t=e,n=[],o=new Map;for(let a=e;0!=a.length;a=$(a).next()){if("H3"==a.prop("tagName")){o.set(t,n),t=a,n=[];continue}"UL"==a.prop("tagName")&&(n=Array.from($(a).find("li")).map(e=>$(e).text()))}return o.set(t,n),o}function*z(e){if(!e)return;let t=[];for(t.push([e,null]);t.length>0;){let[e,n]=t.shift();for(let n of e.children??[])t.push([n,e]);yield[e,n]}}function I(){return new Map(Array.from(j().entries()).map(([e,t],n)=>[e.text(),t]))}function A(e,n,o){let[a,i]=Array.from(z(n)).find(([t,n])=>t.name==e);return t(Array.from(z(a)).map(([e,t])=>e).filter(e=>o.has(e.name)).map(e=>o.get(e.name).map(t=>`${e.name}: ${t}`)).flat())}async function N(e,t,n){let o=function(e){let t=Array.from(z(e)).map(([e,t])=>[e.name,t?.name]);return{ids:t.map(([e,t])=>e),labels:t.map(([e,t])=>e),parents:t.map(([e,t])=>t)}}(n);var a={type:"sunburst",outsidetextfont:{size:20,color:"#377eb8"},hoverinfo:"none",marker:{line:{width:2}},maxdepth:2,displayModeBar:!1};Object.assign(a,o),delete a.values;let i=await Plotly.newPlot(e,[a],{margin:{l:0,r:0,b:0,t:0},sunburstcolorway:["#636efa","#ef553b","#00cc96"]},{displayModeBar:!1}),l=e=>{console.log("set_random_prompt_text",e),$(`#${t}`).text(e)};$(`#${t}`).first().click(()=>{l(A($("#sunburst text:first").text(),n,I()))}),i.on("plotly_sunburstclick",e=>{l(A(e.points[0].label,n,I()))})}function B(e){let t=$("<div/>"),n=`<h4> <a href='${e.url}'}>${e.title}</a></h4>`;t.append(n);let o=e.thumbnail.replace("s72-c","s320"),a=new Date(e.published),i=`
+            `}}),header:({createElement:e})=>e("div",{dangerouslySetInnerHTML:{__html:"<i style='color:grey'>Recent posts ...</i>"}})}}}async function O(e,t,n,o,a,i=3,l=4,r=3){let s=algoliasearch(e,t),c=await E(r),d=await R(l),u=o.startsWith("#")?o:`#${o}`;if(0===$(u).length){console.log("No autocomplete element found","autocomplete_id",o);return}return x({container:u,placeholder:"Search Igor's Musings ...",getSources:function({query:e}){let t=0===e.length;t&&(e=" ");let o=function(e,t,n,o=3,a=!1){let i="NOT tags:family-journal";return a&&(i=""),{sourceId:"featured_posts",getItems:()=>T({searchClient:e,queries:[{indexName:t,query:n,filters:i,params:{hitsPerPage:o,highlightPreTag:"<span style='background:yellow'>",highlightPostTag:"</span>"}}]}),templates:{item:P,header:({createElement:e})=>e("div",{dangerouslySetInnerHTML:{__html:"<i style='color:grey'>Featured posts ...</i>"}})},getItemUrl({item:e}){let t=e.url;return e.anchor&&(t+=`#${e.anchor}`),t}}}(s,n,e,t?i:10,a);return t?[o,d,c]:[o]},debug:!1,openOnFocus:!0,detachedMediaQuery:""})}class H{constructor({name:e,value:t=25,children:o=[]}){this.name=e,this.children=n(o),this.value=t}}function I(){let e=S();for(let n of e.keys())!function(e,n){let a=$('<div class="alert alert-primary" role="alert"/>');$(e).after(a),o(a,()=>`<span>${t(n)}</span><span style="float: right; cursor: pointer;" title="Click for another prompt">\u{1F504}</span>`)}(n,e.get(n))}function S(){let e=$("h3").first(),t=e,n=[],o=new Map;for(let a=e;0!=a.length;a=$(a).next()){if("H3"==a.prop("tagName")){o.set(t,n),t=a,n=[];continue}"UL"==a.prop("tagName")&&(n=Array.from($(a).find("li")).map(e=>$(e).text()))}return o.set(t,n),o}function*j(e){if(!e)return;let t=[];for(t.push([e,null]);t.length>0;){let[e,n]=t.shift();for(let n of e.children??[])t.push([n,e]);yield[e,n]}}function z(){return new Map(Array.from(S().entries()).map(([e,t],n)=>[e.text(),t]))}function A(e,n,o){let[a,i]=Array.from(j(n)).find(([t,n])=>t.name==e);return t(Array.from(j(a)).map(([e,t])=>e).filter(e=>o.has(e.name)).map(e=>o.get(e.name).map(t=>`${e.name}: ${t}`)).flat())}async function N(e,t,n){let o=function(e){let t=Array.from(j(e)).map(([e,t])=>[e.name,t?.name]);return{ids:t.map(([e,t])=>e),labels:t.map(([e,t])=>e),parents:t.map(([e,t])=>t)}}(n);var a={type:"sunburst",outsidetextfont:{size:20,color:"#377eb8"},hoverinfo:"none",marker:{line:{width:2}},maxdepth:2,displayModeBar:!1};Object.assign(a,o),delete a.values;let i=await Plotly.newPlot(e,[a],{margin:{l:0,r:0,b:0,t:0},sunburstcolorway:["#636efa","#ef553b","#00cc96"]},{displayModeBar:!1}),l=e=>{console.log("set_random_prompt_text",e),$(`#${t}`).text(e)};$(`#${t}`).first().click(()=>{l(A($("#sunburst text:first").text(),n,z()))}),i.on("plotly_sunburstclick",e=>{l(A(e.points[0].label,n,z()))})}function B(e){let t=$("<div/>"),n=`<h4> <a href='${e.url}'}>${e.title}</a></h4>`;t.append(n);let o=e.thumbnail.replace("s72-c","s320"),a=new Date(e.published),i=`
     <div> ${["January","February","March","April","May","June","July","August","September","October","November","December"][a.getMonth()]} ${a.getFullYear()} - ${e.excerpt}
     </div>
    `;return""!=e.thumbnail?(console.log(e.title),console.log(a),t.append(`
@@ -134,12 +133,12 @@ Try these shortcuts:
     </audio>
   <b>${e.title} <a class='lead' onclick="toggle_play_pause('eulogy-player')">\u{1F508}</a></b> - ${e.summary}
   </div>
-  `})(t(n.roles)))})(e,n))}class W{get_tree(){return new O({name:"7H ",children:[new O({name:""}),new O({name:"Be Proactive"}),new O({name:"Begin with the end in mind"}),new O({name:"First things First"}),new O({name:"Think Win/Win"}),new O({name:"First Understand"}),new O({name:"Synergize"}),new O({name:"Sharpen the Saw"})]})}}class q{get_tree(){let e=new O({name:"Health",children:[{name:"Physical"},{name:"Emotional"},{name:"Cognative"}],value:31}),t=new O({name:"Magic",children:[new O({name:"Card Magic"}),new O({name:"Coin Magic"}),new O({name:"Band Magic"})]}),n=new O({name:"Hobbies",children:[new O({name:"Biking"}),new O({name:"Tech"}),new O({name:"Juggling"})]}),o=new O({name:"Relationships",children:[new O({name:"Zach"}),new O({name:"Amelia"}),new O({name:"Tori"}),new O({name:"Friends"})]}),a=new O({name:"Joy",children:[new O({name:"Balloons"}),new O({name:"Joy to Others"})]});return new O({name:"Invest in",children:[e,t,n,o,a]})}}function G({url:e,title:t,description:n}){let o=`<a href='${e}'}>${t}</a>`,a="audio_player_"+Math.floor(1e10*Math.random()),i=e.replace(/\//g,"_");return`
+  `})(t(n.roles)))})(e,n))}class W{get_tree(){return new H({name:"7H ",children:[new H({name:""}),new H({name:"Be Proactive"}),new H({name:"Begin with the end in mind"}),new H({name:"First things First"}),new H({name:"Think Win/Win"}),new H({name:"First Understand"}),new H({name:"Synergize"}),new H({name:"Sharpen the Saw"})]})}}class q{get_tree(){let e=new H({name:"Health",children:[{name:"Physical"},{name:"Emotional"},{name:"Cognative"}],value:31}),t=new H({name:"Magic",children:[new H({name:"Card Magic"}),new H({name:"Coin Magic"}),new H({name:"Band Magic"})]}),n=new H({name:"Hobbies",children:[new H({name:"Biking"}),new H({name:"Tech"}),new H({name:"Juggling"})]}),o=new H({name:"Relationships",children:[new H({name:"Zach"}),new H({name:"Amelia"}),new H({name:"Tori"}),new H({name:"Friends"})]}),a=new H({name:"Joy",children:[new H({name:"Balloons"}),new H({name:"Joy to Others"})]});return new H({name:"Invest in",children:[e,t,n,o,a]})}}function G({url:e,title:t,description:n}){let o=`<a href='${e}'}>${t}</a>`,a="audio_player_"+Math.floor(1e10*Math.random()),i=e.replace(/\//g,"_");return`
     <div>
         <audio id='${a}'>
           <source src="https://github.com/idvorkin/blob/raw/master/url_info_voices/igor/${i}.mp3" type="audio/mp3">
         </audio>
       ${o}:  <b><a class='lead' onclick="toggle_play_pause('${a}')">\u{1F508}</a></b> ${n}
     </div>
-  `}async function Y(){let e=t(Object.entries(await i()).map(e=>e[1]));return G({url:e.url,title:e.title,description:e.description})}function Q(){U("#e1"),U("#e2"),U("#e3")}function V(){N("sunburst","sunburst_text",new q().get_tree()),S(),J(),U("#random-eulogy-role"),o("#random-blog-posts",Y)}function Z(){N("sunburst","sunburst_text",new W().get_tree()),S()}function K(){J()}function X(){ea("balance-heatmap-rest"),eo("balance-heatmap-work"),et("balance-radar-map-ideal")}let ee=["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];async function et(e){"undefined"!=typeof Plotly?Plotly.newPlot(e,[{type:"scatterpolar",r:[8,8,8,5,8,8,8],theta:["Work","Tech","Health","Hobbies","Relationships","Magic","Work"],name:"2020 Goal",fill:"toself"},{type:"scatterpolar",r:[7,7,5,5,5,9,7],theta:["Work","Tech","Health","Hobbies","Relationships","Magic","Work"],name:"2020 Actual",fill:"toself"}],{polar:{radialaxis:{visible:!0,range:[0,10]}},showlegend:!0},{displayModeBar:!1}):console.warn("Plotly is not defined, skipping chart rendering")}let en="#00BF00";async function eo(e){let t=["Tech","Work"],n={height:20*t.length+100,margin:{t:5},pad:0},o=[{colorscale:[[0,"darkblue"],[.4,"blue"],[.5,en],[.6,"darkred"],[1,"red"]],zmin:0,zmax:10,x:ee.slice(2,13),y:t,z:[[7,4,7,8,2,4,2,3,2,8],[10,7,5,5,3,5,6,6,7,5]],type:"heatmap"}];"undefined"!=typeof Plotly?await Plotly.newPlot(e,o,n,{displayModeBar:!1}):console.warn("Plotly is not defined, skipping chart rendering")}async function ea(e){let t=["Health","Hobbies","Family","Magic"],n=[{colorscale:[[0,"red"],[.4,"darkred"],[.5,en],[.6,"blue"],[1,"darkblue"]],zmin:0,zmax:10,x:ee.slice(2,13),y:t.reverse(),z:[[4,4,3,4,5,3,2,2,3,2],[4,4,3,4,5,4,4,2,4,5],[2,3,3,4,1,5,4,3,2,4],[5,5,5,4,5,5,4,5,4,5]].reverse(),type:"heatmap"}],o={height:20*t.length+100,margin:{t:5},pad:0};"undefined"!=typeof Plotly?await Plotly.newPlot(e,n,o,{displayModeBar:!1}):console.warn("Plotly is not defined, skipping chart rendering")}$(document).ready(function(){"function"==typeof defer?defer(M):M();let e=()=>{let e=$("#search-box");e.length>0&&e.focus()};"undefined"!=typeof Mousetrap&&Mousetrap.bind("s",()=>e()),$("#toc-content").length>0&&console.log("TOC initialized"),$("#search-box").length>0&&console.log("Search initialized");let o=["item1","item2","item3"];console.log("Random item:",t(o)),console.log("Shuffled items:",n([...o])),i().then(e=>{console.log("Links loaded, count:",Object.keys(e).length)}),console.log("Blog JavaScript initialized")});export{t as random_from_list,n as shuffle,o as append_randomizer_div,i as get_link_info,M as load_globals,e as MakeBackLinkHTML,H as CreateAutoComplete,p as initRecentAllPosts,S as add_random_prompts,N as add_sunburst,O as TreeNode,V as load_enjoy2,Z as load_7_habits,G as makePostPreviewHTML,K as load_ig66,X as load_balance,Q as load_random_eulogy};
+  `}async function Y(){let e=t(Object.entries(await i()).map(e=>e[1]));return G({url:e.url,title:e.title,description:e.description})}function Q(){U("#e1"),U("#e2"),U("#e3")}function V(){N("sunburst","sunburst_text",new q().get_tree()),I(),J(),U("#random-eulogy-role"),o("#random-blog-posts",Y)}function Z(){N("sunburst","sunburst_text",new W().get_tree()),I()}function K(){J()}function X(){ea("balance-heatmap-rest"),eo("balance-heatmap-work"),et("balance-radar-map-ideal")}let ee=["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];async function et(e){"undefined"!=typeof Plotly?Plotly.newPlot(e,[{type:"scatterpolar",r:[8,8,8,5,8,8,8],theta:["Work","Tech","Health","Hobbies","Relationships","Magic","Work"],name:"2020 Goal",fill:"toself"},{type:"scatterpolar",r:[7,7,5,5,5,9,7],theta:["Work","Tech","Health","Hobbies","Relationships","Magic","Work"],name:"2020 Actual",fill:"toself"}],{polar:{radialaxis:{visible:!0,range:[0,10]}},showlegend:!0},{displayModeBar:!1}):console.warn("Plotly is not defined, skipping chart rendering")}let en="#00BF00";async function eo(e){let t=["Tech","Work"],n={height:20*t.length+100,margin:{t:5},pad:0},o=[{colorscale:[[0,"darkblue"],[.4,"blue"],[.5,en],[.6,"darkred"],[1,"red"]],zmin:0,zmax:10,x:ee.slice(2,13),y:t,z:[[7,4,7,8,2,4,2,3,2,8],[10,7,5,5,3,5,6,6,7,5]],type:"heatmap"}];"undefined"!=typeof Plotly?await Plotly.newPlot(e,o,n,{displayModeBar:!1}):console.warn("Plotly is not defined, skipping chart rendering")}async function ea(e){let t=["Health","Hobbies","Family","Magic"],n=[{colorscale:[[0,"red"],[.4,"darkred"],[.5,en],[.6,"blue"],[1,"darkblue"]],zmin:0,zmax:10,x:ee.slice(2,13),y:t.reverse(),z:[[4,4,3,4,5,3,2,2,3,2],[4,4,3,4,5,4,4,2,4,5],[2,3,3,4,1,5,4,3,2,4],[5,5,5,4,5,5,4,5,4,5]].reverse(),type:"heatmap"}],o={height:20*t.length+100,margin:{t:5},pad:0};"undefined"!=typeof Plotly?await Plotly.newPlot(e,n,o,{displayModeBar:!1}):console.warn("Plotly is not defined, skipping chart rendering")}$(document).ready(function(){"function"==typeof defer?defer(M):M();let e=()=>{let e=$("#search-box");e.length>0&&e.focus()};"undefined"!=typeof Mousetrap&&Mousetrap.bind("s",()=>e()),$("#toc-content").length>0&&console.log("TOC initialized"),$("#search-box").length>0&&console.log("Search initialized");let o=["item1","item2","item3"];console.log("Random item:",t(o)),console.log("Shuffled items:",n([...o])),i().then(e=>{console.log("Links loaded, count:",Object.keys(e).length)}),console.log("Blog JavaScript initialized")});export{t as random_from_list,n as shuffle,o as append_randomizer_div,i as get_link_info,M as load_globals,e as MakeBackLinkHTML,O as CreateAutoComplete,p as initRecentAllPosts,I as add_random_prompts,N as add_sunburst,H as TreeNode,V as load_enjoy2,Z as load_7_habits,G as makePostPreviewHTML,K as load_ig66,X as load_balance,Q as load_random_eulogy};
 //# sourceMappingURL=index.js.map
