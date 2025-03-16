@@ -12,7 +12,9 @@ import { IPage, getProcessedPages } from "./recent-posts-shared";
  * @param pages Array of pages to group
  * @returns Object with month/year keys and arrays of pages
  */
-function groupPagesByMonthYear(pages: IPage[]): { [key: string]: IPage[] } {
+export function groupPagesByMonthYear(pages: IPage[]): {
+  [key: string]: IPage[];
+} {
   const groupedPages: { [key: string]: IPage[] } = {};
 
   pages.forEach(page => {
@@ -38,7 +40,7 @@ function groupPagesByMonthYear(pages: IPage[]): { [key: string]: IPage[] } {
  * @param groupedPages Object with month/year keys and arrays of pages
  * @returns HTML string
  */
-function generateGroupedPagesHTML(groupedPages: {
+export function generateGroupedPagesHTML(groupedPages: {
   [key: string]: IPage[];
 }): string {
   let html = "";
@@ -76,16 +78,163 @@ function generateGroupedPagesHTML(groupedPages: {
 }
 
 /**
- * Updates the recent posts container with post data
+ * Create toggle section HTML for hidden content
+ * @param remainingHtml HTML content to show/hide
+ * @param count Number of items in the hidden content
+ * @returns HTML string for the toggle section
  */
-async function updateRecentPosts(): Promise<void> {
+export function createToggleSection(
+  remainingHtml: string,
+  count: number
+): string {
+  return `
+    <div class="remaining-posts-section">
+      <h2 id="remaining-posts-toggle" class="remaining-toggle">
+        <span class="toggle-icon">▶</span> Remaining Modified Files (${count} more)
+      </h2>
+      <div id="remaining-posts-content" class="remaining-content" style="display: none;">
+        ${remainingHtml}
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * Generate CSS styles for the posts display
+ * @returns CSS styles as a string
+ */
+export function generateStyles(): string {
+  return `
+    <style>
+      .last-modified-list {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .last-modified-list li {
+        margin-bottom: 1.5rem;
+        position: relative;
+      }
+      .date-badge {
+        display: inline-block;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        padding: 0.2rem 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 0.8rem;
+      }
+      .description {
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        color: #6c757d;
+      }
+      .remaining-toggle {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        margin-top: 2rem;
+        transition: background-color 0.3s;
+      }
+      .remaining-toggle:hover {
+        background-color: #e9ecef;
+      }
+      .toggle-icon {
+        display: inline-block;
+        transition: transform 0.3s;
+      }
+      .toggle-icon.open {
+        transform: rotate(90deg);
+      }
+    </style>
+  `;
+}
+
+/**
+ * Setup toggle event listener for expandable content
+ * @param toggleId ID of the toggle element
+ * @param contentId ID of the content to toggle
+ * @param document Document instance (for testing)
+ */
+export function setupToggleEventListener(
+  toggleId: string = "remaining-posts-toggle",
+  contentId: string = "remaining-posts-content",
+  doc: Document = document
+): void {
+  const toggleElement = doc.getElementById(toggleId);
+  if (!toggleElement) {
+    console.log(`Toggle element with ID ${toggleId} not found`);
+    return;
+  }
+
+  toggleElement.addEventListener("click", function () {
+    const contentElement = doc.getElementById(contentId);
+    if (!contentElement) {
+      console.log(`Content element with ID ${contentId} not found`);
+      return;
+    }
+
+    const iconElement = this.querySelector(".toggle-icon");
+    if (contentElement.style.display === "none") {
+      contentElement.style.display = "block";
+      iconElement?.classList.add("open");
+    } else {
+      contentElement.style.display = "none";
+      iconElement?.classList.remove("open");
+    }
+  });
+}
+
+/**
+ * Generate complete HTML for recent posts display
+ * @param pages Array of pages to display
+ * @param initialPostsCount Number of posts to show initially (default: 15)
+ * @returns Complete HTML for the posts display
+ */
+export function generateRecentPostsHTML(
+  pages: IPage[],
+  initialPostsCount: number = 15
+): string {
+  if (pages.length === 0) {
+    return "<p>No modified posts found.</p>";
+  }
+
+  const initialPages = pages.slice(0, initialPostsCount);
+  const remainingPages = pages.slice(initialPostsCount);
+
+  // Group and generate HTML for initial posts
+  const groupedPages = groupPagesByMonthYear(initialPages);
+  let html = generateGroupedPagesHTML(groupedPages);
+
+  // Add toggle section for remaining posts if any
+  if (remainingPages.length > 0) {
+    const remainingGroupedPages = groupPagesByMonthYear(remainingPages);
+    const remainingHtml = generateGroupedPagesHTML(remainingGroupedPages);
+    html += createToggleSection(remainingHtml, remainingPages.length);
+  }
+
+  // Add styling
+  return generateStyles() + html;
+}
+
+/**
+ * Updates the recent posts container with post data
+ * @param containerId ID of the container element to update
+ * @param initialPostsCount Number of posts to show initially
+ * @param doc Document instance (for testing)
+ */
+export async function updateRecentPosts(
+  containerId: string = "last-modified-posts",
+  initialPostsCount: number = 15,
+  doc: Document = document
+): Promise<void> {
   console.log("🔍 updateRecentPosts function called");
 
-  const recentContainer = document.getElementById("last-modified-posts");
+  const recentContainer = doc.getElementById(containerId);
   console.log("🔍 recent-posts container element:", recentContainer);
 
   if (!recentContainer) {
-    console.error("❌ recent-posts container not found in DOM");
+    console.error(`❌ ${containerId} container not found in DOM`);
     return;
   }
 
@@ -95,117 +244,22 @@ async function updateRecentPosts(): Promise<void> {
     // Get fully processed pages from shared module
     const sortedPages = await getProcessedPages();
 
-    // Create the HTML
-    if (sortedPages.length === 0) {
-      console.warn("⚠️ No pages found after filtering and sorting");
-      recentContainer.innerHTML = "<p>No modified posts found.</p>";
-      return;
-    }
+    // Generate HTML
+    const html = generateRecentPostsHTML(sortedPages, initialPostsCount);
 
-    // Define how many posts to show initially and in the expanded section
-    const initialPostsCount = 15;
-    const remainingPosts = sortedPages.slice(initialPostsCount);
-
-    // Group initial posts by month/year for better organization
-    const groupedPages = groupPagesByMonthYear(
-      sortedPages.slice(0, initialPostsCount)
-    );
-
-    // Create HTML with grouped structure for initial posts
-    let html = generateGroupedPagesHTML(groupedPages);
-
-    // Add the "Remaining Modified Files" section if there are more posts
-    if (remainingPosts.length > 0) {
-      // Group remaining posts by month/year
-      const remainingGroupedPages = groupPagesByMonthYear(remainingPosts);
-
-      // Create the remaining posts HTML (initially hidden)
-      const remainingHtml = generateGroupedPagesHTML(remainingGroupedPages);
-
-      // Add the toggle section
-      html += `
-        <div class="remaining-posts-section">
-          <h2 id="remaining-posts-toggle" class="remaining-toggle">
-            <span class="toggle-icon">▶</span> Remaining Modified Files (${remainingPosts.length} more)
-          </h2>
-          <div id="remaining-posts-content" class="remaining-content" style="display: none;">
-            ${remainingHtml}
-          </div>
-        </div>
-      `;
-    }
-
-    // Add some CSS for styling
-    html = `
-      <style>
-        .last-modified-list {
-          list-style-type: none;
-          padding-left: 0;
-        }
-        .last-modified-list li {
-          margin-bottom: 1.5rem;
-          position: relative;
-        }
-        .date-badge {
-          display: inline-block;
-          background-color: #f8f9fa;
-          border: 1px solid #dee2e6;
-          border-radius: 4px;
-          padding: 0.2rem 0.5rem;
-          margin-right: 0.5rem;
-          font-size: 0.8rem;
-        }
-        .description {
-          margin-top: 0.5rem;
-          margin-bottom: 0;
-          color: #6c757d;
-        }
-        .remaining-toggle {
-          cursor: pointer;
-          padding: 10px;
-          background-color: #f8f9fa;
-          border-radius: 4px;
-          margin-top: 2rem;
-          transition: background-color 0.3s;
-        }
-        .remaining-toggle:hover {
-          background-color: #e9ecef;
-        }
-        .toggle-icon {
-          display: inline-block;
-          transition: transform 0.3s;
-        }
-        .toggle-icon.open {
-          transform: rotate(90deg);
-        }
-      </style>
-      ${html}
-    `;
-
+    // Update container
     console.log(
       "🔍 Updating recent-posts content with HTML",
       html.substring(0, 100) + "..."
     );
     recentContainer.innerHTML = html;
 
-    // Add event listener for the toggle
-    const toggleElement = document.getElementById("remaining-posts-toggle");
-    if (toggleElement) {
-      toggleElement.addEventListener("click", function () {
-        const contentElement = document.getElementById(
-          "remaining-posts-content"
-        );
-        const iconElement = this.querySelector(".toggle-icon");
-
-        if (contentElement.style.display === "none") {
-          contentElement.style.display = "block";
-          iconElement.classList.add("open");
-        } else {
-          contentElement.style.display = "none";
-          iconElement.classList.remove("open");
-        }
-      });
-    }
+    // Setup toggle functionality
+    setupToggleEventListener(
+      "remaining-posts-toggle",
+      "remaining-posts-content",
+      doc
+    );
 
     console.log("✅ Recent posts updated successfully");
   } catch (error) {
@@ -217,26 +271,31 @@ async function updateRecentPosts(): Promise<void> {
 
 /**
  * Initializes the recent posts component
+ * @param containerId ID of the container element
+ * @param doc Document instance (for testing)
  */
-export function initRecentAllPosts(): void {
+export function initRecentAllPosts(
+  containerId: string = "last-modified-posts",
+  doc: Document = document
+): void {
   console.log("🔍 initRecentAllPosts called");
 
   // Check if document is already loaded
-  if (document.readyState === "loading") {
+  if (doc.readyState === "loading") {
     // Document still loading, add event listener
     console.log("🔍 Document still loading, adding DOMContentLoaded listener");
-    document.addEventListener("DOMContentLoaded", () => {
+    doc.addEventListener("DOMContentLoaded", () => {
       console.log(
         "🔍 DOMContentLoaded event fired, calling updateRecentPosts()"
       );
-      updateRecentPosts();
+      updateRecentPosts(containerId, 15, doc);
     });
   } else {
     // Document already loaded, run immediately
     console.log(
       "🔍 Document already loaded, calling updateRecentPosts() immediately"
     );
-    updateRecentPosts();
+    updateRecentPosts(containerId, 15, doc);
   }
 
   console.log("🔍 initRecentAllPosts completed initial setup");
