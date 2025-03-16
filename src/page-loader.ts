@@ -11,7 +11,14 @@ import { get } from "lodash-es";
 import { append_randomizer_div, random_from_list } from "./index";
 import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";
 
-class SevenHabits {
+/**
+ * Class representing the Seven Habits tree structure
+ */
+export class SevenHabits {
+  /**
+   * Gets the tree structure for Seven Habits visualization
+   * @returns {TreeNode} The root node of the Seven Habits tree
+   */
   get_tree() {
     const root = new TreeNode({
       name: "7H ",
@@ -30,7 +37,14 @@ class SevenHabits {
   }
 }
 
-class ThingsIEnjoy {
+/**
+ * Class representing the Things I Enjoy tree structure
+ */
+export class ThingsIEnjoy {
+  /**
+   * Gets the tree structure for Things I Enjoy visualization
+   * @returns {TreeNode} The root node of the Things I Enjoy tree
+   */
   get_tree() {
     const health = new TreeNode({
       name: "Health",
@@ -81,16 +95,19 @@ class ThingsIEnjoy {
   }
 }
 
-// TODO: De-Dup from blogger_import.ts
-
-function makePostPreviewHTML({ url, title, description }) {
+/**
+ * Creates HTML for a post preview with audio player
+ * @param {Object} param0 Object containing url, title, and description
+ * @returns {string} HTML string for the post preview
+ */
+export function makePostPreviewHTML({ url, title, description }) {
   // TODO: HACK: Strip to the right of Week number
   const title_href = `<a href='${url}'}>${title}</a>`;
   // random id for audio player
   const id = "audio_player_" + Math.floor(Math.random() * 10000000000);
   // filename is URL with '/' turned to '_'
   const filename = url.replace(/\//g, "_");
-  // console.log(post)
+
   return `
     <div>
         <audio id='${id}'>
@@ -101,50 +118,132 @@ function makePostPreviewHTML({ url, title, description }) {
   `;
 }
 
-async function make_random_post_html() {
-  const all_url_info = await get_link_info();
-  //  Yuk, find a clearere way to do this
-  const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
-    .map(e => e[1]);
-  const random_post = random_from_list(all_pages);
-  return makePostPreviewHTML({
-    url: random_post["url"],
-    title: random_post["title"],
-    description: random_post["description"],
-  });
+/**
+ * Generates HTML for a random post
+ * @param {Function} linkInfoProvider Function to get link info (default: get_link_info)
+ * @param {Function} randomSelector Function to get a random item (default: random_from_list)
+ * @returns {Promise<string>} HTML string for the random post
+ */
+export async function make_random_post_html(
+  linkInfoProvider = get_link_info,
+  randomSelector = random_from_list
+) {
+  try {
+    const all_url_info = await linkInfoProvider();
+    //  Yuk, find a clearere way to do this
+    const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
+      .map(e => e[1]);
+    const random_post = randomSelector(all_pages);
+    return makePostPreviewHTML({
+      url: random_post["url"],
+      title: random_post["title"],
+      description: random_post["description"],
+    });
+  } catch (error) {
+    console.error("Error generating random post HTML:", error);
+    return "<div>Could not load random post</div>";
+  }
 }
 
-function load_random_eulogy() {
-  add_eulogy_roles("#e1");
-  add_eulogy_roles("#e2");
-  add_eulogy_roles("#e3");
+/**
+ * Loads random eulogy roles into specified elements
+ * @param {string} element1 ID of first element (default: "#e1")
+ * @param {string} element2 ID of second element (default: "#e2")
+ * @param {string} element3 ID of third element (default: "#e3")
+ * @param {Function} eulogyLoader Function to add eulogy roles (default: add_eulogy_roles)
+ */
+export function load_random_eulogy(
+  element1 = "#e1",
+  element2 = "#e2",
+  element3 = "#e3",
+  eulogyLoader = add_eulogy_roles
+) {
+  try {
+    eulogyLoader(element1);
+    eulogyLoader(element2);
+    eulogyLoader(element3);
+  } catch (error) {
+    console.error("Error loading random eulogy:", error);
+  }
 }
 
-function load_enjoy2() {
-  add_sunburst("sunburst", "sunburst_text", new ThingsIEnjoy().get_tree());
-  add_random_prompts();
-  add_imported_blog_posts(); // has a random achievement post
-  add_eulogy_roles("#random-eulogy-role");
-  append_randomizer_div("#random-blog-posts", make_random_post_html as any);
+/**
+ * Loads content for the Enjoy page
+ * @param {Function} sunburstAdder Function to add sunburst (default: add_sunburst)
+ * @param {Function} promptsAdder Function to add random prompts (default: add_random_prompts)
+ * @param {Function} postsAdder Function to add blog posts (default: add_imported_blog_posts)
+ * @param {Function} eulogyAdder Function to add eulogy roles (default: add_eulogy_roles)
+ * @param {Function} randomizerAppender Function to append randomizer (default: append_randomizer_div)
+ */
+export function load_enjoy2(
+  sunburstAdder = add_sunburst,
+  promptsAdder = add_random_prompts,
+  postsAdder = add_imported_blog_posts,
+  eulogyAdder = add_eulogy_roles,
+  randomizerAppender = append_randomizer_div
+) {
+  try {
+    sunburstAdder("sunburst", "sunburst_text", new ThingsIEnjoy().get_tree());
+    promptsAdder();
+    postsAdder(); // has a random achievement post
+    eulogyAdder("#random-eulogy-role");
+    randomizerAppender("#random-blog-posts", make_random_post_html as any);
+  } catch (error) {
+    console.error("Error loading enjoy page:", error);
+  }
 }
-function load_7_habits() {
-  add_sunburst("sunburst", "sunburst_text", new SevenHabits().get_tree());
-  add_random_prompts();
-}
-function load_ig66() {
-  add_imported_blog_posts();
-}
-function load_balance() {
-  make_balance_chart_by_desired_time_rest("balance-heatmap-rest");
-  make_balance_chart_by_work("balance-heatmap-work");
-  make_radar_map("balance-radar-map-ideal");
-}
-const UT = {
-  SevenHabits,
-  ThingsIEnjoy,
-};
 
-const months = [
+/**
+ * Loads content for the 7 Habits page
+ * @param {Function} sunburstAdder Function to add sunburst (default: add_sunburst)
+ * @param {Function} promptsAdder Function to add random prompts (default: add_random_prompts)
+ */
+export function load_7_habits(
+  sunburstAdder = add_sunburst,
+  promptsAdder = add_random_prompts
+) {
+  try {
+    sunburstAdder("sunburst", "sunburst_text", new SevenHabits().get_tree());
+    promptsAdder();
+  } catch (error) {
+    console.error("Error loading 7 habits page:", error);
+  }
+}
+
+/**
+ * Loads content for the IG66 page
+ * @param {Function} postsAdder Function to add blog posts (default: add_imported_blog_posts)
+ */
+export function load_ig66(postsAdder = add_imported_blog_posts) {
+  try {
+    postsAdder();
+  } catch (error) {
+    console.error("Error loading IG66 page:", error);
+  }
+}
+
+/**
+ * Loads content for the Balance page
+ * @param {Function} restChartMaker Function to make rest chart (default: make_balance_chart_by_desired_time_rest)
+ * @param {Function} workChartMaker Function to make work chart (default: make_balance_chart_by_work)
+ * @param {Function} radarMapMaker Function to make radar map (default: make_radar_map)
+ */
+export function load_balance(
+  restChartMaker = make_balance_chart_by_desired_time_rest,
+  workChartMaker = make_balance_chart_by_work,
+  radarMapMaker = make_radar_map
+) {
+  try {
+    restChartMaker("balance-heatmap-rest");
+    workChartMaker("balance-heatmap-work");
+    radarMapMaker("balance-radar-map-ideal");
+  } catch (error) {
+    console.error("Error loading balance page:", error);
+  }
+}
+
+// Month names for charts
+export const months = [
   "Jan",
   "Feb",
   "Mar",
@@ -159,7 +258,17 @@ const months = [
   "Dec",
 ];
 
-async function make_radar_map(div) {
+// Constants for heatmap configuration
+export const row_height = 20;
+export const heatmap_base = 100;
+export const ideal_color = "#00BF00";
+
+/**
+ * Creates a radar map visualization
+ * @param {string} div ID of the element to render the map in
+ * @param {Object} plotly Plotly library (optional)
+ */
+export async function make_radar_map(div, plotly?) {
   const data = [
     {
       type: "scatterpolar",
@@ -206,17 +315,23 @@ async function make_radar_map(div) {
     displayModeBar: false,
   };
 
-  if (typeof Plotly !== "undefined") {
-    Plotly.newPlot(div, data as any, layout, config);
+  if (typeof plotly !== "undefined" && plotly) {
+    try {
+      await plotly.newPlot(div, data as any, layout, config);
+    } catch (error) {
+      console.error("Error creating radar map:", error);
+    }
   } else {
     console.warn("Plotly is not defined, skipping chart rendering");
   }
 }
 
-const row_height = 20;
-const heatmap_base = 100;
-const ideal_color = "#00BF00";
-async function make_balance_chart_by_work(div) {
+/**
+ * Creates a heatmap for work balance
+ * @param {string} div ID of the element to render the heatmap in
+ * @param {Object} plotly Plotly library (optional)
+ */
+export async function make_balance_chart_by_work(div, plotly?) {
   const roles = ["Tech", "Work"];
   const layout = {
     height: row_height * roles.length + heatmap_base,
@@ -252,17 +367,23 @@ async function make_balance_chart_by_work(div) {
     displayModeBar: false,
   };
 
-  if (typeof Plotly !== "undefined") {
-    await (Plotly as any).newPlot(div, data, layout, config);
+  if (typeof plotly !== "undefined" && plotly) {
+    try {
+      await plotly.newPlot(div, data as any, layout, config);
+    } catch (error) {
+      console.error("Error creating work balance chart:", error);
+    }
   } else {
     console.warn("Plotly is not defined, skipping chart rendering");
   }
 }
 
-// Could be over or under
-// GREEN be Good,
-// RED be Bad
-async function make_balance_chart_by_desired_time_rest(div) {
+/**
+ * Creates a heatmap for desired rest time
+ * @param {string} div ID of the element to render the heatmap in
+ * @param {Object} plotly Plotly library (optional)
+ */
+export async function make_balance_chart_by_desired_time_rest(div, plotly?) {
   const roles = ["Health", "Hobbies", "Family", "Magic"];
   const gap_desire_over_time = [
     // J, F, M, A, M, J, J, A, S, O, N, D
@@ -301,19 +422,19 @@ async function make_balance_chart_by_desired_time_rest(div) {
     pad: 0,
   };
 
-  if (typeof Plotly !== "undefined") {
-    await (Plotly as any).newPlot(div, data, layout, config);
+  if (typeof plotly !== "undefined" && plotly) {
+    try {
+      await plotly.newPlot(div, data as any, layout, config);
+    } catch (error) {
+      console.error("Error creating rest time chart:", error);
+    }
   } else {
     console.warn("Plotly is not defined, skipping chart rendering");
   }
 }
 
-export {
-  UT,
-  load_enjoy2,
-  load_7_habits,
-  makePostPreviewHTML,
-  load_ig66,
-  load_balance,
-  load_random_eulogy,
+// Export utility functions for testing
+export const UT = {
+  SevenHabits,
+  ThingsIEnjoy,
 };
