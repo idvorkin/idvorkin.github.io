@@ -5,14 +5,74 @@
  * from the backlinks.json file.
  */
 
-import { IURLInfoMap, get_link_info } from "./shared";
+import { IPage, getProcessedPages } from "./recent-posts-shared";
 
-interface PageInfo {
-  url: string;
-  title: string;
-  description: string;
-  doc_size: number;
-  last_modified: string;
+/**
+ * Group pages by month/year for better organization
+ * @param pages Array of pages to group
+ * @returns Object with month/year keys and arrays of pages
+ */
+function groupPagesByMonthYear(pages: IPage[]): { [key: string]: IPage[] } {
+  const groupedPages: { [key: string]: IPage[] } = {};
+
+  pages.forEach(page => {
+    if (!page.last_modified) return;
+
+    const date = new Date(page.last_modified);
+    const monthYear = `${date.toLocaleString("default", {
+      month: "long",
+    })} ${date.getFullYear()}`;
+
+    if (!groupedPages[monthYear]) {
+      groupedPages[monthYear] = [];
+    }
+
+    groupedPages[monthYear].push(page);
+  });
+
+  return groupedPages;
+}
+
+/**
+ * Generate HTML for a group of pages
+ * @param groupedPages Object with month/year keys and arrays of pages
+ * @returns HTML string
+ */
+function generateGroupedPagesHTML(groupedPages: {
+  [key: string]: IPage[];
+}): string {
+  let html = "";
+
+  Object.entries(groupedPages).forEach(([monthYear, pages]) => {
+    html += `
+      <h3>${monthYear}</h3>
+      <ul class="last-modified-list">
+        ${pages
+          .map(page => {
+            const date = new Date(page.last_modified);
+            const formattedDate = date.toLocaleDateString("en-US", {
+              day: "numeric",
+              month: "short",
+            });
+
+            return `
+          <li>
+            <span class="date-badge">${formattedDate}</span>
+            <a href="${page.url}">${page.title}</a>
+            <p class="description">${page.description
+              .split("\n")[0]
+              .substring(0, 150)}${
+              page.description.length > 150 ? "..." : ""
+            }</p>
+          </li>
+        `;
+          })
+          .join("")}
+      </ul>
+    `;
+  });
+
+  return html;
 }
 
 /**
@@ -31,46 +91,9 @@ async function updateRecentPosts(): Promise<void> {
 
   try {
     console.log("🔍 Fetching back-links.json...");
-    // Fetch the backlinks data using the shared function
-    const urlInfoMap = await get_link_info();
-    console.log(
-      "🔍 Number of entries in urlInfoMap:",
-      Object.keys(urlInfoMap).length
-    );
 
-    // Convert to array of pages for easier processing
-    const pages: PageInfo[] = Object.entries(urlInfoMap).map(
-      ([url, metadata]) => ({
-        url,
-        title: metadata.title || url,
-        description: metadata.description || "",
-        doc_size: metadata.doc_size || 0,
-        last_modified: metadata.last_modified || "",
-      })
-    );
-    console.log("🔍 Transformed pages array, length:", pages.length);
-
-    // Filter out pages that are likely redirects (these have empty descriptions and titles)
-    const realPages = pages.filter(
-      page =>
-        page.description &&
-        page.description.trim() !== "" &&
-        page.title &&
-        page.title.trim() !== ""
-    );
-    console.log("🔍 Filtered real pages, length:", realPages.length);
-
-    // Sort by last_modified date (newest first)
-    const sortedPages = realPages.sort((a, b) => {
-      if (a.last_modified && b.last_modified) {
-        return (
-          new Date(b.last_modified).getTime() -
-          new Date(a.last_modified).getTime()
-        );
-      }
-      // Fallback to doc_size if last_modified is not available
-      return b.doc_size - a.doc_size;
-    });
+    // Get fully processed pages from shared module
+    const sortedPages = await getProcessedPages();
 
     // Create the HTML
     if (sortedPages.length === 0) {
@@ -84,106 +107,20 @@ async function updateRecentPosts(): Promise<void> {
     const remainingPosts = sortedPages.slice(initialPostsCount);
 
     // Group initial posts by month/year for better organization
-    const groupedPages: { [key: string]: PageInfo[] } = {};
-
-    sortedPages.slice(0, initialPostsCount).forEach(page => {
-      if (!page.last_modified) return;
-
-      const date = new Date(page.last_modified);
-      const monthYear = `${date.toLocaleString("default", {
-        month: "long",
-      })} ${date.getFullYear()}`;
-
-      if (!groupedPages[monthYear]) {
-        groupedPages[monthYear] = [];
-      }
-
-      groupedPages[monthYear].push(page);
-    });
+    const groupedPages = groupPagesByMonthYear(
+      sortedPages.slice(0, initialPostsCount)
+    );
 
     // Create HTML with grouped structure for initial posts
-    let html = "";
-
-    Object.entries(groupedPages).forEach(([monthYear, pages]) => {
-      html += `
-        <h3>${monthYear}</h3>
-        <ul class="last-modified-list">
-          ${pages
-            .map(page => {
-              const date = new Date(page.last_modified);
-              const formattedDate = date.toLocaleDateString("en-US", {
-                day: "numeric",
-                month: "short",
-              });
-
-              return `
-            <li>
-              <span class="date-badge">${formattedDate}</span>
-              <a href="${page.url}">${page.title}</a>
-              <p class="description">${page.description
-                .split("\n")[0]
-                .substring(0, 150)}${
-                page.description.length > 150 ? "..." : ""
-              }</p>
-            </li>
-          `;
-            })
-            .join("")}
-        </ul>
-      `;
-    });
+    let html = generateGroupedPagesHTML(groupedPages);
 
     // Add the "Remaining Modified Files" section if there are more posts
     if (remainingPosts.length > 0) {
       // Group remaining posts by month/year
-      const remainingGroupedPages: { [key: string]: PageInfo[] } = {};
-
-      remainingPosts.forEach(page => {
-        if (!page.last_modified) return;
-
-        const date = new Date(page.last_modified);
-        const monthYear = `${date.toLocaleString("default", {
-          month: "long",
-        })} ${date.getFullYear()}`;
-
-        if (!remainingGroupedPages[monthYear]) {
-          remainingGroupedPages[monthYear] = [];
-        }
-
-        remainingGroupedPages[monthYear].push(page);
-      });
+      const remainingGroupedPages = groupPagesByMonthYear(remainingPosts);
 
       // Create the remaining posts HTML (initially hidden)
-      let remainingHtml = "";
-
-      Object.entries(remainingGroupedPages).forEach(([monthYear, pages]) => {
-        remainingHtml += `
-          <h3>${monthYear}</h3>
-          <ul class="last-modified-list">
-            ${pages
-              .map(page => {
-                const date = new Date(page.last_modified);
-                const formattedDate = date.toLocaleDateString("en-US", {
-                  day: "numeric",
-                  month: "short",
-                });
-
-                return `
-              <li>
-                <span class="date-badge">${formattedDate}</span>
-                <a href="${page.url}">${page.title}</a>
-                <p class="description">${page.description
-                  .split("\n")[0]
-                  .substring(0, 150)}${
-                  page.description.length > 150 ? "..." : ""
-                }</p>
-              </li>
-            `;
-              })
-              .join("")}
-          </ul>
-        `;
-      });
+      const remainingHtml = generateGroupedPagesHTML(remainingGroupedPages);
 
       // Add the toggle section
       html += `
