@@ -1,13 +1,27 @@
-// For autocomplete
-const { autocomplete, getAlgoliaResults } = window["@algolia/autocomplete-js"];
+// Import dependencies
 import { get_link_info, random_from_list } from "./shared";
 
-// Adding a query paramater.
+// For autocomplete, safely access the window properties
+// This makes it more testable
+let autocomplete, getAlgoliaResults;
+if (typeof window !== "undefined" && window["@algolia/autocomplete-js"]) {
+  const algoliaAutocomplete = window["@algolia/autocomplete-js"];
+  autocomplete = algoliaAutocomplete.autocomplete;
+  getAlgoliaResults = algoliaAutocomplete.getAlgoliaResults;
+}
+
+// Adding a query parameter.
 // import instantsearch from "algoliasearch";
 
-const search_placeholder_text = "Search Igor's Musings ...";
+export const search_placeholder_text = "Search Igor's Musings ...";
 
-function getParameterByName(name, url): string {
+/**
+ * Gets a query parameter value from a URL
+ * @param name Parameter name
+ * @param url URL to extract from (defaults to window.location.href)
+ * @returns Parameter value, empty string if parameter exists with no value, or null if parameter doesn't exist
+ */
+export function getParameterByName(name, url): string {
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, "\\$&");
   var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -16,7 +30,13 @@ function getParameterByName(name, url): string {
   if (!results[2]) return "";
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
-function InstantSearchHitTemplate(hit) {
+
+/**
+ * Generates HTML for an Algolia search hit
+ * @param hit Algolia search hit
+ * @returns HTML string
+ */
+export function InstantSearchHitTemplate(hit) {
   // https://www.algolia.com/doc/api-reference/widgets/infinite-hits/js/
   try {
     let url = hit.url;
@@ -47,7 +67,15 @@ function InstantSearchHitTemplate(hit) {
 declare function instantsearch(l: any): any;
 declare function algoliasearch(l: any, l2: any): any;
 
-function CreateSearch(appid, search_api_key, index_name, initial_query) {
+/**
+ * Creates an Algolia InstantSearch instance
+ * @param appid Algolia app ID
+ * @param search_api_key Algolia search API key
+ * @param index_name Algolia index name
+ * @param initial_query Initial search query
+ * @returns InstantSearch instance
+ */
+export function CreateSearch(appid, search_api_key, index_name, initial_query) {
   // Instanciating InstantSearch.js with Algolia credentials
   const searchClient = algoliasearch(appid, search_api_key);
   const search = instantsearch({
@@ -88,7 +116,7 @@ function CreateSearch(appid, search_api_key, index_name, initial_query) {
 }
 
 // Copied from the docs, but this isn't working for me.
-function AutoCompleteHitTemplateWithComponentDoesNotWork({
+export function AutoCompleteHitTemplateWithComponentDoesNotWork({
   item,
   components,
   createElement,
@@ -100,7 +128,7 @@ function AutoCompleteHitTemplateWithComponentDoesNotWork({
 
 // Algolia uses some PREACT thing, which this project does not support
 // Reach way into algolia and build the HTML manually
-function AutoCompleteHitTemplate({ item, createElement }) {
+export function AutoCompleteHitTemplate({ item, createElement }) {
   // https://www.algolia.com/doc/api-reference/widgets/infinite-hits/js/
   return createElement("div", {
     dangerouslySetInnerHTML: {
@@ -109,7 +137,11 @@ function AutoCompleteHitTemplate({ item, createElement }) {
   });
 }
 
-async function get_random_post() {
+/**
+ * Gets a random post from the backlinks
+ * @returns Random post with title, URL, and description
+ */
+export async function get_random_post() {
   const all_url_info = await get_link_info();
   //  Yuk, find a clearere way to do this
   const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
@@ -126,8 +158,9 @@ async function get_random_post() {
 /**
  * Gets recent posts from the back-links.json file
  * Returns the specified number of most recently modified posts
+ * @param count Number of posts to return
  */
-async function get_recent_posts(count: number = 4) {
+export async function get_recent_posts(count: number = 4) {
   try {
     const all_url_info = await get_link_info();
 
@@ -173,7 +206,7 @@ async function get_recent_posts(count: number = 4) {
  * Gets random posts for search results
  * @param count Number of random posts to return (default: 3)
  */
-async function GetRandomSearchResults(count: number = 3) {
+export async function GetRandomSearchResults(count: number = 3) {
   return {
     sourceId: "random_posts",
     async getItems() {
@@ -215,7 +248,7 @@ async function GetRandomSearchResults(count: number = 3) {
  * Gets recent posts for search results
  * @param count Number of recent posts to return (default: 4)
  */
-async function GetRecentSearchResults(count: number = 4) {
+export async function GetRecentSearchResults(count: number = 4) {
   return {
     sourceId: "recent_posts",
     async getItems() {
@@ -258,7 +291,7 @@ async function GetRecentSearchResults(count: number = 4) {
  * @param hitsPerPage Number of results to return (default: 3)
  * @param includeFamilyJournal Whether to include family journal posts
  */
-function GetAlgoliaResults(
+export function GetAlgoliaResults(
   searchClient,
   index_name,
   query,
@@ -274,6 +307,10 @@ function GetAlgoliaResults(
   return {
     sourceId: "featured_posts",
     getItems() {
+      if (!getAlgoliaResults) {
+        console.error("getAlgoliaResults is not defined");
+        return [];
+      }
       return getAlgoliaResults({
         searchClient,
         queries: [
@@ -322,7 +359,7 @@ function GetAlgoliaResults(
  * @param recentCount Number of recent posts to show (default: 4)
  * @param randomCount Number of random posts to show (default: 3)
  */
-async function CreateAutoComplete(
+export async function CreateAutoComplete(
   appid,
   search_api_key,
   index_name,
@@ -332,6 +369,11 @@ async function CreateAutoComplete(
   recentCount: number = 4,
   randomCount: number = 3
 ) {
+  if (!autocomplete) {
+    console.error("Autocomplete is not defined");
+    return;
+  }
+
   const searchClient = algoliasearch(appid, search_api_key);
   const randomSearchResults = await GetRandomSearchResults(randomCount);
   const recentSearchResults = await GetRecentSearchResults(recentCount);
@@ -385,5 +427,3 @@ async function CreateAutoComplete(
     detachedMediaQuery: "",
   });
 }
-
-export { CreateSearch, getParameterByName, CreateAutoComplete };
