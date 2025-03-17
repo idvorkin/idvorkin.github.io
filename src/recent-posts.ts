@@ -62,7 +62,7 @@ export async function updateRecentPosts(
 
   if (!recentPostsContainer) {
     console.error(`❌ ${containerId} container not found in DOM`);
-    return;
+    return; // Exit early if container not found
   }
 
   try {
@@ -101,15 +101,19 @@ export async function updateRecentPosts(
 /**
  * Initializes the recent posts component.
  * @param containerId The ID of the container element, defaults to "recent-posts"
+ * @param doc Document instance (for testing)
  */
-export function initRecentPosts(containerId = "recent-posts"): void {
+export function initRecentPosts(
+  containerId = "recent-posts",
+  doc: Document = document
+): void {
   console.log("🔍 initRecentPosts called");
 
   // Check if document is already loaded
-  if (document.readyState === "loading") {
+  if (doc.readyState === "loading") {
     // Document still loading, add event listener
     console.log("🔍 Document still loading, adding DOMContentLoaded listener");
-    document.addEventListener("DOMContentLoaded", () => {
+    doc.addEventListener("DOMContentLoaded", () => {
       console.log(
         "🔍 DOMContentLoaded event fired, calling updateRecentPosts()"
       );

@@ -1,10 +1,11 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import {
   getRecentPages,
   generateRecentPagesHTML,
   updateRecentPosts,
   initRecentPosts,
 } from "../../src/recent-posts";
+import * as sharedModule from "../../src/recent-posts-shared";
 import {
   fetchBacklinksData,
   convertToPages,
@@ -22,7 +23,10 @@ describe("Recent Posts Module", () => {
   beforeEach(() => {
     vi.resetAllMocks();
     global.fetch = vi.fn();
-    global.document.body.innerHTML = '<div id="test-recent-posts"></div>';
+    // Clear the document body and add test containers
+    document.body.innerHTML = "";
+    document.body.innerHTML =
+      '<div id="test-recent-posts"></div><div id="test-container"></div><div id="non-existent-container"></div>';
   });
 
   afterEach(() => {
@@ -479,25 +483,77 @@ describe("Recent Posts Module", () => {
   });
 
   describe("updateRecentPosts", () => {
-    it.skip("should update the container with recent posts HTML", async () => {
-      // Skipping this test due to difficulty mocking the getProcessedPages function correctly
-      // We're still testing the core functionality in integration tests and the components separately
+    it("should update the container with recent posts HTML", async () => {
+      // Mock getProcessedPages function
+      vi.spyOn(sharedModule, "getProcessedPages").mockResolvedValue([
+        {
+          url: "/page1",
+          title: "Page 1",
+          description: "Description for page 1",
+          doc_size: 1000,
+          last_modified: "2023-01-01",
+        },
+        {
+          url: "/page2",
+          title: "Page 2",
+          description: "Description for page 2",
+          doc_size: 500,
+          last_modified: "2023-01-02",
+        },
+      ]);
+
+      // We don't need to create a test container since it's already in the DOM from beforeEach
+      const container = document.getElementById("test-recent-posts");
+      expect(container).not.toBeNull();
+
+      // Call the function
+      await updateRecentPosts("test-recent-posts");
+
+      // Check that container was updated correctly
+      expect(container?.innerHTML).toContain("Page 1");
+      expect(container?.innerHTML).toContain("Page 2");
+      expect(container?.innerHTML).toContain("Description for page 1");
     });
 
-    it.skip("should show error message when fetch fails", async () => {
-      // Skipping this test due to difficulty mocking the getProcessedPages function correctly
-      // We're still testing the error handling separately
+    it("should show error message when getProcessedPages fails", async () => {
+      // Mock getProcessedPages to reject
+      vi.spyOn(sharedModule, "getProcessedPages").mockRejectedValue(
+        new Error("Test error")
+      );
+
+      // Get test container from the DOM
+      const container = document.getElementById("test-recent-posts");
+      expect(container).not.toBeNull();
+
+      // Call the function
+      await updateRecentPosts("test-recent-posts");
+
+      // Check error message
+      expect(container?.innerHTML).toContain("Error loading recent posts");
     });
 
     it("should do nothing if container is not found", async () => {
-      // Setup fetch mock (should not be called)
-      const fetchSpy = vi.spyOn(global, "fetch");
+      // Save original document.getElementById
+      const originalGetElementById = document.getElementById;
+
+      // Override document.getElementById to return null
+      document.getElementById = vi.fn().mockReturnValue(null);
+
+      // Setup spy for getProcessedPages (should not be called)
+      const processSpy = vi
+        .spyOn(sharedModule, "getProcessedPages")
+        .mockImplementation(() => {
+          throw new Error("This should not be called");
+        });
 
       // Call the function with non-existent container ID
       await updateRecentPosts("non-existent-container");
 
-      // Assertions
-      expect(fetchSpy).not.toHaveBeenCalled();
+      // Assertions - processSpy shouldn't be called because we should exit early
+      expect(processSpy).not.toHaveBeenCalled();
+
+      // Restore original getElementById
+      document.getElementById = originalGetElementById;
     });
   });
 
@@ -506,26 +562,46 @@ describe("Recent Posts Module", () => {
       vi.resetModules();
     });
 
-    it.skip("should call updateRecentPosts immediately if document is loaded", async () => {
-      // This test is skipped due to mocking issues
-      // TODO: Fix this test in the future
+    it("should call updateRecentPosts immediately if document is loaded", async () => {
+      // Create full mock Document with DOM methods
+      const mockDoc = {
+        readyState: "complete",
+        addEventListener: vi.fn(),
+        getElementById: (id: string) => document.getElementById(id),
+        body: document.body,
+      };
+
+      // Spy on updateRecentPosts to verify it's called
+      const updateSpy = vi
+        .spyOn(sharedModule, "getProcessedPages")
+        .mockResolvedValue([]);
+
+      // Spy on console.log to verify execution
+      const logSpy = vi.spyOn(console, "log");
+
+      // Call the function with mock document
+      initRecentPosts("test-container", mockDoc as any);
+
+      // Verify it tried to run immediately (via console logs)
+      expect(logSpy).toHaveBeenCalledWith(
+        expect.stringContaining("Document already loaded")
+      );
     });
 
     it("should add event listener if document is still loading", () => {
-      // Mock document.readyState
-      Object.defineProperty(document, "readyState", {
-        configurable: true,
-        get: () => "loading",
-      });
+      // Create mock Document object with minimum required properties
+      const mockDoc = {
+        readyState: "loading",
+        addEventListener: vi.fn(),
+        getElementById: (id: string) => document.getElementById(id),
+        body: document.body,
+      };
 
-      // Spy on addEventListener
-      const addEventListenerSpy = vi.spyOn(document, "addEventListener");
-
-      // Call the function
-      initRecentPosts("test-container");
+      // Call the function with mock document
+      initRecentPosts("test-container", mockDoc as any);
 
       // Assertions
-      expect(addEventListenerSpy).toHaveBeenCalledWith(
+      expect(mockDoc.addEventListener).toHaveBeenCalledWith(
         "DOMContentLoaded",
         expect.any(Function)
       );

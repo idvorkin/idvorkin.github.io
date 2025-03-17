@@ -95,11 +95,13 @@ describe("Recent Module", () => {
   ];
 
   beforeEach(() => {
-    // Set up a test DOM environment
-    document.body.innerHTML = '<div id="last-modified-posts"></div>';
-
     // Reset all mocks before each test
     vi.resetAllMocks();
+
+    // Set up a test DOM environment
+    document.body.innerHTML = "";
+    document.body.innerHTML =
+      '<div id="last-modified-posts"></div><div id="test-container"></div>';
   });
 
   describe("groupPagesByMonthYear", () => {
@@ -379,18 +381,17 @@ describe("Recent Module", () => {
         samplePages
       );
 
-      // Test container
-      const container = document.createElement("div");
-      container.id = "test-container";
-      document.body.appendChild(container);
+      // Get test container from DOM
+      const container = document.getElementById("test-container");
+      expect(container).not.toBeNull();
 
       // Call the function
-      await updateRecentPosts("test-container", 2);
+      await updateRecentPosts("test-container", 2, document);
 
       // Check container was updated
-      expect(container.innerHTML).toContain("January 2023");
-      expect(container.innerHTML).toContain("February 2023");
-      expect(container.innerHTML).toContain(
+      expect(container?.innerHTML).toContain("January 2023");
+      expect(container?.innerHTML).toContain("February 2023");
+      expect(container?.innerHTML).toContain(
         "Remaining Modified Files (1 more)"
       );
     });
@@ -399,16 +400,15 @@ describe("Recent Module", () => {
       // Mock getProcessedPages to return empty array
       vi.spyOn(sharedModule, "getProcessedPages").mockResolvedValue([]);
 
-      // Test container
-      const container = document.createElement("div");
-      container.id = "test-container";
-      document.body.appendChild(container);
+      // Get test container from DOM
+      const container = document.getElementById("test-container");
+      expect(container).not.toBeNull();
 
       // Call the function
-      await updateRecentPosts("test-container");
+      await updateRecentPosts("test-container", 15, document);
 
       // Check container shows appropriate message
-      expect(container.innerHTML).toBe("<p>No modified posts found.</p>");
+      expect(container?.innerHTML).toBe("<p>No modified posts found.</p>");
     });
 
     it("should handle errors", async () => {
@@ -417,23 +417,35 @@ describe("Recent Module", () => {
         new Error("Test error")
       );
 
-      // Test container
-      const container = document.createElement("div");
-      container.id = "test-container";
-      document.body.appendChild(container);
+      // Get test container from DOM
+      const container = document.getElementById("test-container");
+      expect(container).not.toBeNull();
 
       // Call the function
-      await updateRecentPosts("test-container");
+      await updateRecentPosts("test-container", 15, document);
 
       // Check container shows error message
-      expect(container.innerHTML).toContain("Error loading modified posts");
+      expect(container?.innerHTML).toContain("Error loading modified posts");
     });
 
     it("should do nothing if container is not found", async () => {
       const consoleSpy = vi.spyOn(console, "error");
 
+      // Save original document.getElementById
+      const originalGetElementById = document.getElementById;
+
+      // Override document.getElementById to return null
+      document.getElementById = vi.fn().mockReturnValue(null);
+
+      // Create spy for getProcessedPages
+      const processSpy = vi
+        .spyOn(sharedModule, "getProcessedPages")
+        .mockImplementation(() => {
+          throw new Error("This should not be called");
+        });
+
       // Call with non-existent container
-      await updateRecentPosts("non-existent-container");
+      await updateRecentPosts("non-existent-container", 15, document);
 
       // Should log error
       expect(consoleSpy).toHaveBeenCalledWith(
@@ -441,6 +453,12 @@ describe("Recent Module", () => {
           "non-existent-container container not found in DOM"
         )
       );
+
+      // Should not call getProcessedPages
+      expect(processSpy).not.toHaveBeenCalled();
+
+      // Restore original getElementById
+      document.getElementById = originalGetElementById;
     });
   });
 
@@ -450,11 +468,14 @@ describe("Recent Module", () => {
       const mockDoc = {
         readyState: "complete",
         addEventListener: vi.fn(),
-        getElementById: vi.fn(), // Add this to prevent errors
+        getElementById: (id: string) => document.getElementById(id),
+        body: document.body,
       };
 
-      // Mock updateRecentPosts to avoid actually calling it
-      const updateSpy = vi.spyOn(updateRecentPosts, "length", "get");
+      // Mock updateRecentPosts via shared module
+      const updateSpy = vi
+        .spyOn(sharedModule, "getProcessedPages")
+        .mockResolvedValue([]);
 
       // Spy on console.log
       const logSpy = vi.spyOn(console, "log");
@@ -476,7 +497,8 @@ describe("Recent Module", () => {
       const mockDoc = {
         readyState: "loading",
         addEventListener: vi.fn(),
-        getElementById: vi.fn(), // Add this to prevent errors
+        getElementById: (id: string) => document.getElementById(id),
+        body: document.body,
       };
 
       // Call the function

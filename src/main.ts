@@ -134,12 +134,33 @@ function generateToc(id, showPinToc) {
 
 async function AddLinksToPage(allUrls: IURLInfoMap) {
   // TODO handle redirects
-  const page_path = new URL(document.URL).pathname;
-  const backlinks = allUrls[page_path]?.incoming_links;
-  const frontlinks = allUrls[page_path]?.outgoing_links;
+  let page_path: string;
+  let backlinks: string[] | undefined;
+  let frontlinks: string[] | undefined;
 
-  if (!backlinks && !frontlinks) {
-    console.log(`No backlinks for the page ${page_path}`);
+  try {
+    if (!allUrls) {
+      console.log("No backlinks available");
+      return;
+    }
+
+    page_path = new URL(document.URL).pathname;
+
+    // Safe check for the URL in allUrls
+    if (!allUrls[page_path]) {
+      console.log(`Page ${page_path} not found in backlinks`);
+      return;
+    }
+
+    backlinks = allUrls[page_path]?.incoming_links;
+    frontlinks = allUrls[page_path]?.outgoing_links;
+
+    if (!backlinks && !frontlinks) {
+      console.log(`No backlinks for the page ${page_path}`);
+      return;
+    }
+  } catch (error) {
+    console.log(`Error processing links: ${error.message}`);
     return;
   }
 
@@ -206,43 +227,92 @@ async function AddLinksToPage(allUrls: IURLInfoMap) {
   );
 }
 function make_html_summary_link(link, url_info: IURLInfo) {
-  const attribution = `(From:<a href='${url_info.url}'> ${url_info.title}</a>)`;
+  if (!url_info) {
+    return make_html_summary_link_error(link, "URL info is undefined");
+  }
+
+  const url = url_info.url || "#";
+  const title = url_info.title || "Untitled";
+  const description = url_info.description || "No description available";
+
+  const attribution = `(From:<a href='${url}'> ${title}</a>)`;
 
   return `<div>
-        <i> ${url_info.description}</i> ${attribution}
+        <i> ${description}</i> ${attribution}
     </div>`;
 }
 
 function make_html_summary_link_error(link, error) {
-  return `<span class='text-danger'>Error: Invalid link for ${link.attr(
-    "href"
-  )} ${error} </span>`;
+  const href = link && link.attr ? link.attr("href") : "unknown";
+  return `<span class='text-danger'>Error: Invalid link for ${href} ${error} </span>`;
 }
 
 function AddSummarysToPage(backLinks: IBacklinks) {
-  const summary_links = $.makeArray($(".summary-link"));
-  summary_links.forEach(raw_link => {
-    const link = $(raw_link);
-    try {
-      console.log(link.attr("href"));
+  if (!backLinks) {
+    console.log("No backlinks data available");
+    return;
+  }
 
-      let ref = link.attr("href");
+  try {
+    const summary_links = $.makeArray($(".summary-link"));
 
-      // Resolve redirect
-      if (backLinks.redirects[ref] != undefined) {
-        ref = backLinks.redirects[ref];
-      }
-      // Look up in url info
-      if (backLinks.url_info[ref] == undefined) {
-        link.html(make_html_summary_link_error(link, "not found in url info"));
-        return;
-      }
-
-      link.html(make_html_summary_link(link, backLinks.url_info[ref]));
-    } catch (e) {
-      link.html(make_html_summary_link_error(link, e));
+    if (!summary_links || summary_links.length === 0) {
+      console.log("No summary links found");
+      return;
     }
-  });
+
+    summary_links.forEach(raw_link => {
+      const link = $(raw_link);
+      try {
+        if (!link || !link.attr) {
+          console.log("Invalid link element");
+          return;
+        }
+
+        console.log(link.attr("href"));
+
+        let ref = link.attr("href");
+        if (!ref) {
+          link.html(make_html_summary_link_error(link, "missing href"));
+          return;
+        }
+
+        // Check if backLinks has necessary properties
+        if (!backLinks.redirects || !backLinks.url_info) {
+          link.html(
+            make_html_summary_link_error(link, "incomplete backLinks data")
+          );
+          return;
+        }
+
+        // Resolve redirect
+        if (backLinks.redirects[ref] != undefined) {
+          ref = backLinks.redirects[ref];
+        }
+
+        // Look up in url info
+        if (backLinks.url_info[ref] == undefined) {
+          link.html(
+            make_html_summary_link_error(link, "not found in url info")
+          );
+          return;
+        }
+
+        link.html(make_html_summary_link(link, backLinks.url_info[ref]));
+      } catch (e) {
+        if (link && link.html) {
+          link.html(make_html_summary_link_error(link, e));
+        } else {
+          console.error(
+            "Error processing link and unable to display error:",
+            e
+          );
+        }
+      }
+    });
+  } catch (error) {
+    console.error("Error processing summary links:", error);
+  }
 }
 
 async function add_link_loader() {
@@ -257,24 +327,43 @@ export interface IBacklinks {
 
 let cached_back_links: IBacklinks = null;
 async function get_back_links(): Promise<IBacklinks> {
-  if (cached_back_links != null) {
-    return cached_back_links;
-  }
-  const url = window.location.href;
-  const prodPrefix = "https://idvork.in";
-  const isProd = url.includes(prodPrefix);
+  try {
+    if (cached_back_links != null) {
+      return cached_back_links;
+    }
 
-  var backlinks_url = "";
-  if (isProd) {
-    backlinks_url =
-      "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";
-  } else {
-    backlinks_url = "/back-links.json";
-  }
+    const url = window.location.href;
+    const prodPrefix = "https://idvork.in";
+    const isProd = url.includes(prodPrefix);
 
-  const backlinksJson = (await ($.getJSON(backlinks_url) as any)) as IBacklinks;
-  cached_back_links = backlinksJson;
-  return cached_back_links;
+    var backlinks_url = "";
+    if (isProd) {
+      backlinks_url =
+        "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True";
+    } else {
+      backlinks_url = "/back-links.json";
+    }
+
+    // Use a try/catch here in case $.getJSON fails
+    try {
+      const backlinksJson = (await ($.getJSON(
+        backlinks_url
+      ) as any)) as IBacklinks;
+
+      // Ensure we have the required properties
+      if (!backlinksJson.redirects) backlinksJson.redirects = {};
+      if (!backlinksJson.url_info) backlinksJson.url_info = {};
+
+      cached_back_links = backlinksJson;
+      return cached_back_links;
+    } catch (error) {
+      console.error("Error fetching backlinks JSON:", error);
+      return { redirects: {}, url_info: {} };
+    }
+  } catch (error) {
+    console.error("Error in get_back_links:", error);
+    return { redirects: {}, url_info: {} };
+  }
 }
 
 function search() {

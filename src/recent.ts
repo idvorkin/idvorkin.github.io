@@ -235,7 +235,7 @@ export async function updateRecentPosts(
 
   if (!recentContainer) {
     console.error(`❌ ${containerId} container not found in DOM`);
-    return;
+    return; // Exit early if container not found
   }
 
   try {
