@@ -8,5 +8,6 @@ gem 'csv'
 
 group :jekyll_plugins do
   gem 'jekyll-algolia', '~> 1.0'
+  gem 'mutex_m'
   gem 'jekyll-redirect-from'
 end
