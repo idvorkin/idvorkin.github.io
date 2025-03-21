@@ -567,6 +567,9 @@ def build(
     output_file: Annotated[
         str, typer.Option(help="Path to the output JSON file")
     ] = "back-links.json",
+    threshold_minutes: Annotated[
+        int, typer.Option(help="Minimum time difference in minutes to update a file")
+    ] = 5,
 ):
     """
     Build backlinks and write to the specified output file.
@@ -589,11 +592,65 @@ def build(
         f"[green]Parsed all pages in {parsing_time - start_time:.2f} seconds[/]"
     )
 
+    # Check if there's an existing file to compare against for threshold checking
+    existing_data = None
+    if os.path.exists(output_file):
+        try:
+            with open(output_file, "r", encoding="utf-8") as f:
+                existing_data = json.load(f)
+                console.print(
+                    f"[blue]Found existing file {output_file} for threshold comparison[/]"
+                )
+        except Exception as e:
+            console.print(
+                f"[yellow]Could not read existing file for comparison: {e}[/]"
+            )
+            existing_data = None
+
     # Use our improved parallel processing with direct git calls
     console.print(
         "[blue]Processing last_modified dates in parallel using direct git calls[/]"
     )
     asyncio.run(lb.update_last_modified_times())
+
+    # Apply threshold if we have existing data
+    if existing_data and "url_info" in existing_data:
+        console.print(
+            f"[blue]Applying {threshold_minutes} minute threshold for updates[/]"
+        )
+        update_count = 0
+        skip_count = 0
+
+        for url, page in lb.pages.items():
+            if url in existing_data["url_info"]:
+                old_date = existing_data["url_info"][url].get("last_modified", "")
+                new_date = page.last_modified
+
+                if old_date and new_date:
+                    try:
+                        old_dt = datetime.fromisoformat(old_date)
+                        new_dt = datetime.fromisoformat(new_date)
+
+                        # Calculate time difference in minutes
+                        time_diff = abs((new_dt - old_dt).total_seconds()) / 60
+
+                        # If difference is less than threshold, keep the old date
+                        if time_diff < threshold_minutes:
+                            page.last_modified = old_date
+                            skip_count += 1
+                            continue
+                    except (ValueError, TypeError):
+                        # If we can't parse the timestamps, continue with the update
+                        pass
+
+                update_count += 1
+
+        if skip_count > 0:
+            console.print(
+                f"[yellow]Skipped updates for {skip_count} pages (modified within last {threshold_minutes} minutes)[/]"
+            )
+        if update_count > 0:
+            console.print(f"[green]Updated timestamps for {update_count} pages[/]")
 
     git_time = time.time()
     console.print(
@@ -606,10 +663,14 @@ def build(
     lb.print_json(output_file)
 
     end_time = time.time()
+    threshold_info = (
+        f"Threshold: {threshold_minutes} minutes\n" if existing_data else ""
+    )
     console.print(
         Panel(
             f"Total processing time: {end_time - start_time:.2f} seconds\n"
             f"Pages processed: {len(lb.pages)}\n"
+            f"{threshold_info}"
             f"Output file: {output_file}",
             title="[bold green]Backlinks Build Complete[/]",
             border_style="green",
@@ -841,7 +902,7 @@ def check_dates():
         ic(f"Found {len(mismatches)} date mismatches")
         # Show first 5 mismatches
         for i, (url, path, old, new) in enumerate(mismatches[:5]):
-            ic(f"Mismatch {i+1}: {url} - {path}")
+            ic(f"Mismatch {i + 1}: {url} - {path}")
             ic(f"  Old: {old}")
             ic(f"  New: {new}")
     else:
@@ -960,6 +1021,9 @@ def delta(
     output_file: Annotated[
         str, typer.Option(help="Path to the output JSON file")
     ] = "back-links.json",
+    threshold_minutes: Annotated[
+        int, typer.Option(help="Minimum time difference in minutes to update a file")
+    ] = 5,
 ):
     """
     Update last modified times for the specified files in the existing backlinks file.
@@ -1043,7 +1107,7 @@ def delta(
                     break
 
         if should_update:
-            # Check if the existing timestamp is within 10 minutes of current time
+            # Check if the existing timestamp is within threshold_minutes of current time
             existing_time = page_data.get("last_modified", "")
             if existing_time:
                 try:
@@ -1054,10 +1118,10 @@ def delta(
                     # Calculate the time difference in minutes
                     time_diff = abs((current_dt - existing_dt).total_seconds()) / 60
 
-                    # If the difference is less than 10 minutes, skip the update
-                    if time_diff < 10:
+                    # If the difference is less than threshold_minutes, skip the update
+                    if time_diff < threshold_minutes:
                         console.print(
-                            f"[yellow]Skipping update for {url} - last modified {time_diff:.1f} minutes ago[/]"
+                            f"[yellow]Skipping update for {url} - last modified {time_diff:.1f} minutes ago (threshold: {threshold_minutes} minutes)[/]"
                         )
                         skipped_count += 1
                         continue
@@ -1072,7 +1136,7 @@ def delta(
     console.print(f"[green]Updated last_modified dates for {updated_count} pages[/]")
     if skipped_count > 0:
         console.print(
-            f"[yellow]Skipped {skipped_count} pages (modified within last 10 minutes)[/]"
+            f"[yellow]Skipped {skipped_count} pages (modified within last {threshold_minutes} minutes)[/]"
         )
 
     # Write the updated data back to the file
@@ -1102,7 +1166,8 @@ def delta(
     console.print(
         Panel(
             f"Total delta processing time: {end_time - start_time:.2f} seconds\n"
-            f"Updated {updated_count} pages, skipped {skipped_count} pages",
+            f"Updated {updated_count} pages, skipped {skipped_count} pages\n"
+            f"Threshold: {threshold_minutes} minutes",
             title="[bold green]Backlinks Update Complete[/]",
             border_style="green",
         )
