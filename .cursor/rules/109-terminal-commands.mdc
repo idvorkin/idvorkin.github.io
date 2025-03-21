@@ -1,6 +1,6 @@
 ---
 description: ALWAYS append | /bin/cat to commands that use pagers or require user interaction to prevent command breakage
-globs: ["**/*.yml", "**/*.sh", "justfile"]
+globs: ["**/*"]
 tags: [terminal, workflow, best-practice]
 priority: 2
 version: 1.0.0
