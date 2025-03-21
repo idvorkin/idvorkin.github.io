@@ -152,6 +152,7 @@
         "/objective": "/goals",
         "/okr": "/goals",
         "/on-being-mortal": "/death",
+        "/overwork": "/workload",
         "/pain": "/mental-pain",
         "/parkinson-law": "/parkinson",
         "/parkinsons-law": "/parkinson",
@@ -219,6 +220,7 @@
         "/todo": "/todo_enjoy",
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
+        "/too-busy": "/workload",
         "/training": "/ai-training",
         "/tribes": "/tribe",
         "/twenty-two": "/22",
@@ -795,7 +797,8 @@
                 "/operating-manual",
                 "/productive",
                 "/touching",
-                "/voices"
+                "/voices",
+                "/workload"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/anxiety.md",
@@ -1234,6 +1237,7 @@
                 "/40yo",
                 "/ai",
                 "/chow",
+                "/gtd",
                 "/process-journal",
                 "/tech-rituals",
                 "/y24",
@@ -1640,6 +1644,7 @@
                 "/fail",
                 "/first-things-first",
                 "/frog",
+                "/parkinson",
                 "/productive",
                 "/psychic-weight",
                 "/timeoff"
@@ -1938,7 +1943,7 @@
             "doc_size": 21000,
             "file_path": "_site/debug.html",
             "incoming_links": [],
-            "last_modified": "2023-12-17T18:51:48+00:00",
+            "last_modified": "2025-03-16T16:15:36+00:00",
             "markdown_path": "debug.html",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2075,7 +2080,8 @@
                 "/dsat",
                 "/end-in-mind",
                 "/gtd",
-                "/manager-book"
+                "/manager-book",
+                "/parkinson"
             ],
             "last_modified": "2025-02-21T11:05:49-08:00",
             "markdown_path": "_d/2017-11-12-thedip.md",
@@ -2333,8 +2339,10 @@
                 "/first-things-first",
                 "/frog",
                 "/gtd",
+                "/parkinson",
                 "/partner-trouble",
-                "/timeoff"
+                "/timeoff",
+                "/workload"
             ],
             "last_modified": "2022-07-30T05:37:54-07:00",
             "markdown_path": "_posts/2015-11-28-essentialism.md",
@@ -2412,11 +2420,11 @@
             "url": "/facebook"
         },
         "/fail": {
-            "description": "Failure is not an option; it’s a necessity. Here are some thoughts on failures.\n\n",
+            "description": "Failure is not an option; it’s a necessity. Failure is not a person but an event. You can’t grow without failing, and you can’t beat yourself up over it. The key is to analyze without judgment, understand why it failed, and learn to move on.\n\n",
             "doc_size": 17000,
             "file_path": "_site/fail.html",
             "incoming_links": [],
-            "last_modified": "2025-03-11T05:04:43.203339",
+            "last_modified": "2025-03-11T05:04:46-07:00",
             "markdown_path": "_d/fail2.md",
             "outgoing_links": [
                 "/anxiety",
@@ -2425,7 +2433,7 @@
                 "/d/resistance"
             ],
             "redirect_url": "",
-            "title": "Failure is not an option it is a necassity",
+            "title": "Failure is not an option, it is a necessity",
             "url": "/fail"
         },
         "/first-things-first": {
@@ -2497,6 +2505,7 @@
                 "/gtd",
                 "/idle",
                 "/mental-pain",
+                "/parkinson",
                 "/productive",
                 "/psychic-weight",
                 "/timeoff"
@@ -2556,7 +2565,8 @@
             "doc_size": 18000,
             "file_path": "_site/goals.html",
             "incoming_links": [
-                "/4dx"
+                "/4dx",
+                "/parkinson"
             ],
             "last_modified": "2025-02-17T12:18:29-08:00",
             "markdown_path": "_d/goals.md",
@@ -2677,7 +2687,7 @@
         },
         "/gtd": {
             "description": "Getting Things Done (GTD) is a model based on David Allen’s book of the same name. It’s a deep dive into Habit 3 - first things first, with some lite weight Habit 2 - begin with the end in mind, mixed in for good measure. By using GTD religiously you can have a drastic reduction in stress and procrastination.\n\n",
-            "doc_size": 14000,
+            "doc_size": 16000,
             "file_path": "_site/gtd.html",
             "incoming_links": [
                 "/4dx",
@@ -2687,12 +2697,14 @@
                 "/first-things-first",
                 "/frog",
                 "/mental-pain",
+                "/parkinson",
                 "/psychic-weight"
             ],
-            "last_modified": "2025-03-11T06:46:29.925652",
+            "last_modified": "2025-03-11T06:47:05-07:00",
             "markdown_path": "_d/gtd.md",
             "outgoing_links": [
                 "/anxiety",
+                "/chop",
                 "/dip",
                 "/essentialism",
                 "/frog",
@@ -3588,15 +3600,15 @@
             "url": "/nurture"
         },
         "/operating-manual": {
-            "description": "I’ve learned what I like, how I want to spend my energy,and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency. Super important: You don’t raise to the level of your goals, you fall to the level of your systems\n\n",
-            "doc_size": 32000,
+            "description": "I’ve learned what I like, how I want to spend my energy, and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency. Super important: You don’t rise to the level of your goals, you fall to the level of your systems.\n\n",
+            "doc_size": 33000,
             "file_path": "_site/operating-manual.html",
             "incoming_links": [
                 "/energy",
                 "/energy-abundance",
                 "/life-as-business"
             ],
-            "last_modified": "2025-03-11T05:47:17.771308",
+            "last_modified": "2025-03-11T05:47:20-07:00",
             "markdown_path": "_d/operating-manual-2.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
@@ -3623,6 +3635,7 @@
                 "/strengths",
                 "/tesla",
                 "/todo_enjoy",
+                "/tony",
                 "/voices",
                 "/writing"
             ],
@@ -3637,7 +3650,7 @@
             "incoming_links": [
                 "/tools"
             ],
-            "last_modified": "2025-03-08T12:59:25.147607",
+            "last_modified": "2025-03-08T13:00:52-08:00",
             "markdown_path": "_d/osx.md",
             "outgoing_links": [
                 "/screencast"
@@ -3662,8 +3675,8 @@
             "url": "/pandas"
         },
         "/parkinson": {
-            "description": "Work expands to fill the resources available. The more you make, the more you spend. Stuff expands to fill the space available for storage. If you want something done, give it to a busy person, etc.\n\n",
-            "doc_size": 15000,
+            "description": "Work expands to fill the resources available. The more you make, the more you spend. Stuff accumulates to fill the available storage space. And if you want something done, give it to a busy person.\n\n",
+            "doc_size": 19000,
             "file_path": "_site/parkinson.html",
             "incoming_links": [
                 "/balance",
@@ -3672,10 +3685,16 @@
                 "/operating-manual",
                 "/timeoff"
             ],
-            "last_modified": "2025-03-11T06:05:24.094263",
+            "last_modified": "2025-03-11T06:05:27-07:00",
             "markdown_path": "_d/resource-paradox.md",
             "outgoing_links": [
                 "/amazon",
+                "/d/resistance",
+                "/dip",
+                "/essentialism",
+                "/frog",
+                "/goals",
+                "/gtd",
                 "/money",
                 "/timeoff"
             ],
@@ -3860,7 +3879,7 @@
                 "/first-understand",
                 "/manager-book"
             ],
-            "last_modified": "2025-03-08T13:40:21.002641",
+            "last_modified": "2025-03-08T13:40:37-08:00",
             "markdown_path": "_d/prompt.md",
             "outgoing_links": [
                 "/coaching"
@@ -4410,7 +4429,8 @@
                 "/depression",
                 "/dsat",
                 "/regrets",
-                "/retire"
+                "/retire",
+                "/workload"
             ],
             "last_modified": "2025-02-15T10:13:03-08:00",
             "markdown_path": "_posts/2020-01-04-sustainable-work.md",
@@ -5246,6 +5266,22 @@
             "redirect_url": "",
             "title": "Win/win or no deal",
             "url": "/win-win"
+        },
+        "/workload": {
+            "description": "All of us get to a point where our boss (*) gives us more work than we can handle. With more work than we can handle one of three types of conversations will occur:\n\n",
+            "doc_size": 13000,
+            "file_path": "_site/workload.html",
+            "incoming_links": [],
+            "last_modified": "2025-03-21T04:56:19.527174",
+            "markdown_path": "_d/handling-overwork.md",
+            "outgoing_links": [
+                "/anxiety",
+                "/essentialism",
+                "/sustainable-work"
+            ],
+            "redirect_url": "",
+            "title": "Dealing with Task Overload",
+            "url": "/workload"
         },
         "/write-book": {
             "description": "My notes on writing books, mostly from Write Useful Books\n\n",
