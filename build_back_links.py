@@ -1023,24 +1023,74 @@ def delta(
         str, typer.Option(help="Path to the output JSON file")
     ] = "back-links.json",
     threshold_minutes: Annotated[
-        int, typer.Option(help="Minimum time difference in minutes to update a file")
+        int,
+        typer.Option(
+            help="Minimum time difference in minutes to update last_modified field"
+        ),
     ] = 5,
+    dry_run: Annotated[
+        bool, typer.Option(help="Show what would be updated without making changes")
+    ] = False,
 ):
     """
-    Update last modified times for the specified files in the existing backlinks file.
+    Update the backlinks data for the given markdown files in the existing backlinks file.
 
     This is much faster than rebuilding the entire backlinks database when only a few files have changed.
+    All fields will be updated, but the threshold only applies to the last_modified field - other fields
+    will always be updated if they've changed.
     """
     start_time = time.time()
 
-    # First, check if the backlinks file exists
+    # Load existing data
+    existing_data = load_existing_backlinks(output_file)
+    if not existing_data:
+        return
+
+    # Process markdown files
+    markdown_paths = filter_markdown_files(files)
+    if not markdown_paths:
+        return
+
+    # Define fields to update and set current time
+    fields_to_update = [
+        "title",
+        "description",
+        "outgoing_links",
+        "incoming_links",
+        "doc_size",
+        "last_modified",
+    ]
+    current_time = datetime.now().isoformat()
+    console.print("[blue]Will update all available fields[/]")
+    console.print(f"[blue]Using current time ({current_time}) for last_modified[/]")
+
+    # Find HTML files to process
+    html_files = find_html_files_to_process(existing_data, markdown_paths)
+
+    # Process HTML files to get updated information
+    lb = process_html_files(html_files, current_time)
+
+    # Update the data
+    updated_data, stats = update_backlinks_data(
+        existing_data, lb, threshold_minutes, current_time, dry_run
+    )
+
+    # Write updated data to file
+    if not dry_run and stats["updated_count"] > 0:
+        write_updated_data(updated_data, output_file)
+
+    # Print summary
+    print_delta_summary(stats, fields_to_update, threshold_minutes, dry_run, start_time)
+
+
+def load_existing_backlinks(output_file):
+    """Load existing backlinks data from file."""
     if not os.path.exists(output_file):
         console.print(
             f"[bold red]Error:[/] {output_file} does not exist. Run the full build first."
         )
-        return
+        return None
 
-    # Load the existing backlinks data
     try:
         with open(output_file, "r", encoding="utf-8") as f:
             existing_data = json.load(f)
@@ -1049,126 +1099,275 @@ def delta(
             )
     except Exception as e:
         console.print(f"[bold red]Error loading existing backlinks data:[/] {e}")
-        return
+        return None
 
     # Make sure we have the expected structure
     if "url_info" not in existing_data:
         console.print(
             "[bold red]Error:[/] Invalid backlinks data structure. Run the full build first."
         )
-        return
+        return None
 
-    # Process only the specified markdown files
+    return existing_data
+
+
+def filter_markdown_files(files):
+    """Filter and validate markdown files from input arguments."""
     markdown_paths = []
     for file_path in files:
         if file_path.endswith(".md"):
-            # Keep the original path for processing
             markdown_paths.append(file_path)
             console.print(f"[dim]Added markdown path:[/] {file_path}")
 
     if not markdown_paths:
         console.print("[yellow]No markdown files to process[/]")
-        return
 
-    # Use current time for all files instead of git history
-    current_time = datetime.now().isoformat()
-    console.print(f"[blue]Using current time ({current_time}) for all files[/]")
+    return markdown_paths
 
-    # Create a mapping of file paths to the current time
-    last_modified_times = {path: current_time for path in markdown_paths}
 
-    # Create a mapping of basenames to last modified times for easier matching
-    basename_to_time = {}
-    for path in markdown_paths:
-        basename = os.path.basename(path)
-        basename_to_time[basename] = current_time
-
-    # Update the last modified times in the existing data
-    updated_count = 0
-    skipped_count = 0
+def find_html_files_to_process(existing_data, markdown_paths):
+    """Find HTML files corresponding to the markdown files."""
+    # Create mappings between markdown and HTML paths
+    markdown_to_html = {}
     for url, page_data in existing_data["url_info"].items():
-        markdown_path = page_data.get("markdown_path", "")
-        if not markdown_path:
+        md_path = page_data.get("markdown_path", "")
+        if md_path:
+            html_path = f"_site{url}.html"
+            markdown_to_html[md_path] = html_path
+
+    # Find HTML files to process
+    files_to_process = set()
+    for md_path in markdown_paths:
+        # Try direct match
+        if md_path in markdown_to_html:
+            files_to_process.add(markdown_to_html[md_path])
             continue
 
-        # Check if we should update this file
-        should_update = False
+        # Try matching by basename or relative path
+        basename = os.path.basename(md_path)
+        for existing_md, html_path in markdown_to_html.items():
+            if os.path.basename(existing_md) == basename or existing_md.endswith(
+                md_path
+            ):
+                files_to_process.add(html_path)
+                break
 
-        # Try direct match first
-        if markdown_path in last_modified_times:
-            should_update = True
-        # Try matching by basename
-        elif os.path.basename(markdown_path) in basename_to_time:
-            should_update = True
-        # Try matching by relative path
+    console.print(f"[blue]Processing {len(files_to_process)} HTML files...[/]")
+    return files_to_process
+
+
+def process_html_files(html_files, current_time):
+    """Process HTML files to extract updated information."""
+    lb = LinkBuilder()
+
+    for html_path in html_files:
+        if os.path.exists(html_path):
+            lb.update(html_path)
         else:
-            for path in markdown_paths:
-                if path.endswith(markdown_path):
-                    should_update = True
-                    break
+            console.print(f"[yellow]Warning: HTML file not found: {html_path}[/]")
 
-        if should_update:
-            # Check if the existing timestamp is within threshold_minutes of current time
-            existing_time = page_data.get("last_modified", "")
-            if existing_time:
-                try:
-                    # Parse the existing timestamp
-                    existing_dt = datetime.fromisoformat(existing_time)
-                    current_dt = datetime.fromisoformat(current_time)
+    # Update last modified times for all processed pages
+    for url, page in lb.pages.items():
+        page.last_modified = current_time
 
-                    # Calculate the time difference in minutes
-                    time_diff = abs((current_dt - existing_dt).total_seconds()) / 60
+    # Compress the link builder data
+    lb.compress()
 
-                    # If the difference is less than threshold_minutes, skip the update
-                    if time_diff < threshold_minutes:
-                        console.print(
-                            f"[yellow]Skipping update for {url} - last modified {time_diff:.1f} minutes ago (threshold: {threshold_minutes} minutes)[/]"
-                        )
-                        skipped_count += 1
-                        continue
-                except (ValueError, TypeError):
-                    # If we can't parse the timestamp, update it anyway
-                    pass
+    return lb
 
-            # Update the timestamp
-            page_data["last_modified"] = current_time
-            updated_count += 1
 
-    console.print(f"[green]Updated last_modified dates for {updated_count} pages[/]")
-    if skipped_count > 0:
+def should_update_last_modified(
+    old_page, new_page, current_time, threshold_minutes, other_fields_updated
+):
+    """Determine if the last_modified field should be updated based on threshold."""
+    # Always update if other fields changed
+    if other_fields_updated:
+        return True
+
+    existing_time = old_page.get("last_modified", "")
+    if not existing_time:
+        return True  # No existing timestamp, so update
+
+    try:
+        # Parse timestamps and calculate time difference
+        existing_dt = datetime.fromisoformat(existing_time)
+        current_dt = datetime.fromisoformat(current_time)
+        time_diff = abs((current_dt - existing_dt).total_seconds()) / 60
+
+        # Update if difference exceeds threshold
+        if time_diff >= threshold_minutes:
+            return True
+
+        # Log skipping due to threshold
         console.print(
-            f"[yellow]Skipped {skipped_count} pages (modified within last {threshold_minutes} minutes)[/]"
+            f"[yellow]Skipping last_modified update for {old_page.get('url', 'unknown')} - "
+            f"modified {time_diff:.1f} minutes ago (threshold: {threshold_minutes} minutes)[/]"
+        )
+        return False
+    except (ValueError, TypeError):
+        # If we can't parse timestamps, update anyway
+        return True
+
+
+def update_page_fields(old_page, new_page, dry_run):
+    """Update fields in a page and track which fields were updated."""
+    field_updates = {
+        "title": False,
+        "description": False,
+        "outgoing_links": False,
+        "doc_size": False,
+        "last_modified": False,
+    }
+
+    # Check and update title
+    if old_page.get("title", "") != new_page.title and new_page.title:
+        if not dry_run:
+            old_page["title"] = new_page.title
+        field_updates["title"] = True
+
+    # Check and update description
+    if old_page.get("description", "") != new_page.description and new_page.description:
+        if not dry_run:
+            old_page["description"] = new_page.description
+        field_updates["description"] = True
+
+    # Check and update outgoing_links
+    if sorted(old_page.get("outgoing_links", [])) != sorted(new_page.outgoing_links):
+        if not dry_run:
+            old_page["outgoing_links"] = new_page.outgoing_links
+        field_updates["outgoing_links"] = True
+
+    # Check and update doc_size
+    if old_page.get("doc_size", 0) != new_page.doc_size:
+        if not dry_run:
+            old_page["doc_size"] = new_page.doc_size
+        field_updates["doc_size"] = True
+
+    # Return whether any non-last_modified field was updated
+    return field_updates
+
+
+def update_backlinks_data(existing_data, lb, threshold_minutes, current_time, dry_run):
+    """Update the backlinks data with new information."""
+    updated_data = copy.deepcopy(existing_data)
+
+    # Track statistics
+    stats = {
+        "updated_count": 0,
+        "skipped_count": 0,
+        "field_update_counts": {
+            "title": 0,
+            "description": 0,
+            "outgoing_links": 0,
+            "incoming_links": 0,
+            "doc_size": 0,
+            "last_modified": 0,
+        },
+    }
+
+    # Update fields for each page
+    for url, new_page in lb.pages.items():
+        if url not in updated_data["url_info"]:
+            continue
+
+        old_page = updated_data["url_info"][url]
+
+        # Update fields and track changes
+        field_updates = update_page_fields(old_page, new_page, dry_run)
+
+        # Check if any non-last_modified field was updated
+        other_fields_updated = any(
+            field_updates[field] for field in field_updates if field != "last_modified"
         )
 
-    # Write the updated data back to the file
-    with open(output_file, "r", encoding="utf-8") as f:
-        original_content = f.read()
+        # Update statistics for changed fields
+        for field, was_updated in field_updates.items():
+            if was_updated:
+                stats["field_update_counts"][field] += 1
 
-    # Parse the original content
-    original_data = json.loads(original_content)
+        # Handle last_modified field with threshold logic
+        update_last_modified = should_update_last_modified(
+            old_page, new_page, current_time, threshold_minutes, other_fields_updated
+        )
 
-    # Update only the last_modified fields
-    update_count = 0
-    if "url_info" in original_data:
-        for url, page_data in existing_data["url_info"].items():
-            if "last_modified" in page_data and url in original_data["url_info"]:
-                original_data["url_info"][url]["last_modified"] = page_data[
-                    "last_modified"
-                ]
-                update_count += 1
+        if update_last_modified:
+            if not dry_run:
+                old_page["last_modified"] = new_page.last_modified
+            stats["field_update_counts"]["last_modified"] += 1
 
-    # Write the updated original data back to the file using the same parameters as print_json
+        # Count as updated if any field was updated
+        if other_fields_updated or update_last_modified:
+            stats["updated_count"] += 1
+        else:
+            stats["skipped_count"] += 1
+
+    # Update incoming links if not a dry run
+    if not dry_run:
+        stats["field_update_counts"]["incoming_links"] = rebuild_incoming_links(
+            updated_data
+        )
+
+    return updated_data, stats
+
+
+def rebuild_incoming_links(data):
+    """Rebuild incoming links based on outgoing links."""
+    incoming_links = defaultdict(list)
+    updated_count = 0
+
+    # Collect all outgoing links
+    for url, page_data in data["url_info"].items():
+        outgoing = page_data.get("outgoing_links", [])
+        for link in outgoing:
+            incoming_links[link].append(url)
+
+    # Update incoming_links for each page
+    for url in data["url_info"]:
+        if url in incoming_links:
+            new_incoming = sorted(list(set(incoming_links[url])))
+            current_incoming = data["url_info"][url].get("incoming_links", [])
+
+            if sorted(current_incoming) != new_incoming:
+                data["url_info"][url]["incoming_links"] = new_incoming
+                updated_count += 1
+
+    return updated_count
+
+
+def write_updated_data(data, output_file):
+    """Write updated data to the output file."""
     with open(output_file, "w", encoding="utf-8") as f:
-        # Use the exact same parameters as in the original print_json method
-        json.dump(original_data, f, ensure_ascii=False, indent=4, sort_keys=True)
+        json.dump(data, f, ensure_ascii=False, indent=4, sort_keys=True)
         console.print(f"[green]Successfully wrote {output_file}[/]")
 
+
+def print_delta_summary(
+    stats, fields_to_update, threshold_minutes, dry_run, start_time
+):
+    """Print a summary of the delta update operation."""
+    # Report field updates
+    for field, count in stats["field_update_counts"].items():
+        if count > 0:
+            action = "Would update" if dry_run else "Updated"
+            console.print(f"[green]{action} {count} '{field}' fields[/]")
+
+    # Report total updates
+    action = "Would update" if dry_run else "Updated"
+    console.print(f"[green]{action} {stats['updated_count']} pages total[/]")
+
+    # Report skipped updates
+    if stats["skipped_count"] > 0:
+        console.print(f"[yellow]Skipped updates for {stats['skipped_count']} pages[/]")
+
+    # Print summary panel
     end_time = time.time()
     console.print(
         Panel(
             f"Total delta processing time: {end_time - start_time:.2f} seconds\n"
-            f"Updated {updated_count} pages, skipped {skipped_count} pages\n"
-            f"Threshold: {threshold_minutes} minutes",
+            f"{action} {stats['updated_count']} pages, skipped {stats['skipped_count']} pages\n"
+            f"Fields processed: {', '.join(fields_to_update)}\n"
+            f"Threshold: {threshold_minutes} minutes (for last_modified only)\n"
+            f"{'DRY RUN - No changes were made' if dry_run else ''}",
             title="[bold green]Backlinks Update Complete[/]",
             border_style="green",
         )
