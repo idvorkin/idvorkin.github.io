@@ -10,6 +10,7 @@
 #   "typing-extensions",
 #   "gitpython",
 #   "rich",
+#   "lxml",
 # ]
 # ///
 # Remove line too long
@@ -292,7 +293,7 @@ class LinkBuilder:
 
         with open(file_path, "r", encoding="utf-8") as f:
             contents = f.read()
-            soup = BeautifulSoup(contents, features="html.parser")
+            soup = BeautifulSoup(contents, features="lxml")
 
             # Skip pages that are not complete
             pageTitle = soup.title.string if soup.title else None
@@ -797,7 +798,7 @@ def verbose_test():
         try:
             with open(html_file, "r") as f:
                 html_content = f.read()
-                soup = BeautifulSoup(html_content, features="html.parser")
+                soup = BeautifulSoup(html_content, features="lxml")
                 markdown_meta = soup.find("meta", property="markdown-path")
                 if markdown_meta:
                     meta_path = markdown_meta.get("content", "")
@@ -998,7 +999,7 @@ def debug_null_dates():
             try:
                 with open(html_file, "r") as f:
                     html_content = f.read()
-                    soup = BeautifulSoup(html_content, features="html.parser")
+                    soup = BeautifulSoup(html_content, features="lxml")
                     markdown_meta = soup.find("meta", property="markdown-path")
                     if markdown_meta:
                         meta_path = markdown_meta.get("content", "")
