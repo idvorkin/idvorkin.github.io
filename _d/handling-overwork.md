@@ -12,7 +12,7 @@ redirect_from:
   - /workload
 ---
 
-We all get to a point where our boss (\*) gives us more work than we can handle. With more work than we can handle our anxiety kicks and and we'll end up in one ofthree types of conversations: 1) I've got too much on plate, 2) I can't this done; 3) I quit. Which do you think they'd rather have?
+We all get to a point where our boss (\*) gives us more work than we can handle. This spikes our anxiety and we'll end up in one of three conversations: 1) I've got too much on plate, 2) I can't this done; 3) I quit. Which do you think your boss would rather have?
 
 _(I wrote this post when I first became overloaded at work back in November 28, 2011. You can see it on my old blog at: [https://ig2600.blogspot.com/2011/11/dealing-with-task-overload.html](https://ig2600.blogspot.com/2011/11/dealing-with-task-overload.html))_
 
