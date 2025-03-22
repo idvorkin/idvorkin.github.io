@@ -3183,7 +3183,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-03-22T14:24:47.352302",
+            "last_modified": "2025-03-22T14:25:01+00:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
                 "/22",
@@ -3662,13 +3662,13 @@
             "url": "/osx"
         },
         "/overload": {
-            "description": "All of us get to a point where our boss (*) gives us more work than we can handle. With more work than we can handle one of three types of conversations will occur:\n\n",
+            "description": "We all get to a point where our boss (*) gives us more work than we can handle. With more work than we can handle our anxiety kicks and and we’ll end up in one ofthree types of conversations: 1) I’ve got too much on plate, 2) I can’t this done; 3) I quit. Which do you think they’d rather have?\n\n",
             "doc_size": 13000,
             "file_path": "_site/overload.html",
             "incoming_links": [
                 "/manager-book"
             ],
-            "last_modified": "2025-03-22T14:24:47.352302",
+            "last_modified": "2025-03-22T14:27:45+00:00",
             "markdown_path": "_d/handling-overwork.md",
             "outgoing_links": [
                 "/anxiety",
