@@ -152,7 +152,7 @@
         "/objective": "/goals",
         "/okr": "/goals",
         "/on-being-mortal": "/death",
-        "/overwork": "/workload",
+        "/overwork": "/overload",
         "/pain": "/mental-pain",
         "/parkinson-law": "/parkinson",
         "/parkinsons-law": "/parkinson",
@@ -220,7 +220,7 @@
         "/todo": "/todo_enjoy",
         "/todo-enjoy": "/todo_enjoy",
         "/tolerance": "/anger",
-        "/too-busy": "/workload",
+        "/too-busy": "/overload",
         "/training": "/ai-training",
         "/tribes": "/tribe",
         "/twenty-two": "/22",
@@ -239,6 +239,7 @@
         "/wlb": "/sustainable-work",
         "/wlb-manifesto": "/sustainable-work",
         "/work-life-balance": "/sustainable-work",
+        "/workload": "/overload",
         "/write": "/writing",
         "/y2024": "/y24",
         "/y2025": "/y25",
@@ -795,10 +796,10 @@
                 "/happy",
                 "/mental-pain",
                 "/operating-manual",
+                "/overload",
                 "/productive",
                 "/touching",
-                "/voices",
-                "/workload"
+                "/voices"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/anxiety.md",
@@ -2339,10 +2340,10 @@
                 "/first-things-first",
                 "/frog",
                 "/gtd",
+                "/overload",
                 "/parkinson",
                 "/partner-trouble",
-                "/timeoff",
-                "/workload"
+                "/timeoff"
             ],
             "last_modified": "2022-07-30T05:37:54-07:00",
             "markdown_path": "_posts/2015-11-28-essentialism.md",
@@ -3167,7 +3168,7 @@
         },
         "/manager-book": {
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
-            "doc_size": 156000,
+            "doc_size": 157000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
                 "/amazon",
@@ -3182,7 +3183,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-03-02T08:58:27-08:00",
+            "last_modified": "2025-03-22T14:24:47.352302",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
                 "/22",
@@ -3201,6 +3202,7 @@
                 "/manager-book-appendix",
                 "/ml",
                 "/moments-at-work",
+                "/overload",
                 "/pride",
                 "/product",
                 "/prompts",
@@ -3658,6 +3660,24 @@
             "redirect_url": "",
             "title": "Igor's OSX Tools",
             "url": "/osx"
+        },
+        "/overload": {
+            "description": "All of us get to a point where our boss (*) gives us more work than we can handle. With more work than we can handle one of three types of conversations will occur:\n\n",
+            "doc_size": 13000,
+            "file_path": "_site/overload.html",
+            "incoming_links": [
+                "/manager-book"
+            ],
+            "last_modified": "2025-03-22T14:24:47.352302",
+            "markdown_path": "_d/handling-overwork.md",
+            "outgoing_links": [
+                "/anxiety",
+                "/essentialism",
+                "/sustainable-work"
+            ],
+            "redirect_url": "",
+            "title": "Dealing with Task Overload",
+            "url": "/overload"
         },
         "/pandas": {
             "description": "Copied from my GitHub techdiary\n\n",
@@ -4428,9 +4448,9 @@
                 "/being-a-great-manager",
                 "/depression",
                 "/dsat",
+                "/overload",
                 "/regrets",
-                "/retire",
-                "/workload"
+                "/retire"
             ],
             "last_modified": "2025-02-15T10:13:03-08:00",
             "markdown_path": "_posts/2020-01-04-sustainable-work.md",
@@ -5266,22 +5286,6 @@
             "redirect_url": "",
             "title": "Win/win or no deal",
             "url": "/win-win"
-        },
-        "/workload": {
-            "description": "All of us get to a point where our boss (*) gives us more work than we can handle. With more work than we can handle one of three types of conversations will occur:\n\n",
-            "doc_size": 13000,
-            "file_path": "_site/workload.html",
-            "incoming_links": [],
-            "last_modified": "2025-03-21T04:56:19.527174",
-            "markdown_path": "_d/handling-overwork.md",
-            "outgoing_links": [
-                "/anxiety",
-                "/essentialism",
-                "/sustainable-work"
-            ],
-            "redirect_url": "",
-            "title": "Dealing with Task Overload",
-            "url": "/workload"
         },
         "/write-book": {
             "description": "My notes on writing books, mostly from Write Useful Books\n\n",

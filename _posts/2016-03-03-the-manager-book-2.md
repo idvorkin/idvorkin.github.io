@@ -44,6 +44,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [How do you keep people motivated](#how-do-you-keep-people-motivated)
   - [How to motivate through personal experience](#how-to-motivate-through-personal-experience)
   - [How to motivate through team environment](#how-to-motivate-through-team-environment)
+  - [How do you handle task overload](#how-do-you-handle-task-overload)
   - [How do you give challenging feedback](#how-do-you-give-challenging-feedback)
   - [What's the point of 1:1s](#whats-the-point-of-11s)
   - [What do you do in 1:1s](#what-do-you-do-in-11s)
@@ -633,6 +634,18 @@ Some moments like:
 - Playing cards for appreciation (Link: Playing cards for appreciation)
 - Managers making breakfast
 
+### How do you handle task overload
+
+First, I remind folks of our culture:
+
+- We trust each other—feel safe, be vulnerable, support each other.
+- We put the team first, always—greater than the sum of our parts.
+- We know we can't win if the team loses, and we can't lose if the team wins.
+
+Then I remind them when the going gets tough, more hours doesnt' fix it, prioritize does.
+
+{%include summarize-page.html src="/overload"%}
+
 ### How do you give challenging feedback
 
 Why is feedback challenging?
@@ -806,6 +819,7 @@ Part 1: The Team: Enjoy the Ride
 - We spend 80% of our waking hours together—let's make it fun.
 - We trust each other—feel safe, be vulnerable, support each other.
 - We put the team first, always—greater than the sum of our parts.
+- We know we can't win if the team loses, and we can't lose if the team wins.
 - We celebrate wins, share kudos, create memorable moments.
 
 Part 2: The Execution Model: Imagination Executed Sustainably
@@ -818,7 +832,7 @@ Part 2: The Execution Model: Imagination Executed Sustainably
 
 Part 3: The Growth Mindset: Relentless Improvement
 
-- We see feedback as a gift—continuous improvement at our core.
+- We see feedback as a gift—continuous improvement at our core - we give and receive it
 - We view mistakes as opportunities—always better tomorrow than today.
 - We commit to growth—career, technical, personal.
 - We believe retros are great—but action is everything.

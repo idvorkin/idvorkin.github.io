@@ -5,10 +5,11 @@ tags:
   - how igor ticks
   - emotional intelligence
   - job satisfaction
-permalink: /workload
+permalink: /overload
 redirect_from:
   - /overwork
   - /too-busy
+  - /workload
 ---
 
 All of us get to a point where our boss (\*) gives us more work than we can handle. With more work than we can handle one of three types of conversations will occur:
