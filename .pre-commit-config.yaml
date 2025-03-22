@@ -1,6 +1,6 @@
 # Common configuration values
 exclude_chop_logs: &exclude_chop_logs
-  exclude: "^zz-chop-logs/.*$" # Exclude the zz-chop-logs directory
+  exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
 
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
