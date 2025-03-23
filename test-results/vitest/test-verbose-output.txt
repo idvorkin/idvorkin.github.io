@@ -2391,16 +2391,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m826.715407[39m,
-        nodeStart: [33m0.308671000006143[39m,
-        v8Start: [33m3.749582999997074[39m,
-        bootstrapComplete: [33m22.274453999998514[39m,
-        environment: [33m10.918504000001121[39m,
-        loopStart: [33m28.615236000012374[39m,
+        duration: [33m785.28734[39m,
+        nodeStart: [33m0.4023219999799039[39m,
+        v8Start: [33m3.0857949999917764[39m,
+        bootstrapComplete: [33m23.51742699998431[39m,
+        environment: [33m9.822090999979991[39m,
+        loopStart: [33m32.183370999991894[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m143.475398[39m
+        idleTime: [33m107.723729[39m
       },
-      timeOrigin: [33m1742760706596.549[39m
+      timeOrigin: [33m1742761196240.035[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -4996,16 +4996,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m870.950089[39m,
-        nodeStart: [33m0.308671000006143[39m,
-        v8Start: [33m3.749582999997074[39m,
-        bootstrapComplete: [33m22.274453999998514[39m,
-        environment: [33m10.918504000001121[39m,
-        loopStart: [33m28.615236000012374[39m,
+        duration: [33m836.551098[39m,
+        nodeStart: [33m0.4023219999799039[39m,
+        v8Start: [33m3.0857949999917764[39m,
+        bootstrapComplete: [33m23.51742699998431[39m,
+        environment: [33m9.822090999979991[39m,
+        loopStart: [33m32.183370999991894[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m143.475398[39m
+        idleTime: [33m107.723729[39m
       },
-      timeOrigin: [33m1742760706596.549[39m
+      timeOrigin: [33m1742761196240.035[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7597,16 +7597,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m912.89354[39m,
-        nodeStart: [33m0.308671000006143[39m,
-        v8Start: [33m3.749582999997074[39m,
-        bootstrapComplete: [33m22.274453999998514[39m,
-        environment: [33m10.918504000001121[39m,
-        loopStart: [33m28.615236000012374[39m,
+        duration: [33m868.500689[39m,
+        nodeStart: [33m0.4023219999799039[39m,
+        v8Start: [33m3.0857949999917764[39m,
+        bootstrapComplete: [33m23.51742699998431[39m,
+        environment: [33m9.822090999979991[39m,
+        loopStart: [33m32.183370999991894[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m143.475398[39m
+        idleTime: [33m107.723729[39m
       },
-      timeOrigin: [33m1742760706596.549[39m
+      timeOrigin: [33m1742761196240.035[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10220,16 +10220,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m958.597844[39m,
-        nodeStart: [33m0.308671000006143[39m,
-        v8Start: [33m3.749582999997074[39m,
-        bootstrapComplete: [33m22.274453999998514[39m,
-        environment: [33m10.918504000001121[39m,
-        loopStart: [33m28.615236000012374[39m,
+        duration: [33m918.755707[39m,
+        nodeStart: [33m0.4023219999799039[39m,
+        v8Start: [33m3.0857949999917764[39m,
+        bootstrapComplete: [33m23.51742699998431[39m,
+        environment: [33m9.822090999979991[39m,
+        loopStart: [33m32.183370999991894[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m143.475398[39m
+        idleTime: [33m107.723729[39m
       },
-      timeOrigin: [33m1742760706596.549[39m
+      timeOrigin: [33m1742761196240.035[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10563,13 +10563,6 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value
@@ -10580,6 +10573,13 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
@@ -10641,6 +10641,6 @@ Toggle element with ID remaining-posts-toggle not found
 
 [2m Test Files [22m [1m[32m12 passed[39m[22m[90m (12)[39m
 [2m      Tests [22m [1m[32m137 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (142)[39m
-[2m   Start at [22m 20:11:46
-[2m   Duration [22m 3.20s[2m (transform 602ms, setup 178ms, collect 799ms, tests 555ms, environment 4.73s, prepare 1.07s)[22m
+[2m   Start at [22m 20:19:56
+[2m   Duration [22m 2.99s[2m (transform 511ms, setup 205ms, collect 677ms, tests 544ms, environment 4.46s, prepare 1.05s)[22m
 
