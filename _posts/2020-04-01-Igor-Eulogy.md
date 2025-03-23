@@ -146,7 +146,7 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 
 {%include local_image_float_right.html src="raccoon-meditate.png" %}
 
-Igor understood emotional health is the basis of his stability, and [invested](/siy) heavily. Igor started each day at 5am by recording his blessing in his gratefulness journal, followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
+Igor understood emotional health is the basis of his stability, and [invested](/siy) heavily. Igor started each day at 5am by recording his blessing in his [gratefulness journal](/process-jounral), followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 
 Igor strived for grand-mother mind, which he applied to [himself](https://www.amazon.com/dp/B00OP1FIUM/), and others. A grand mother doesn't judge, she believes people grow, listen whole heartily, encourages, and remains calm like water.
 
@@ -199,14 +199,14 @@ Programmer:
 
 ### Professional
 
-Igor didn't write this section - but he did describe his [dream job](/job) and his thoughts on being a good [manager](/manager). He also wrote up several cool things he's proud of at work:
+Igor didn't write this section - but he did describe his [dream job](/job) and his thoughts on being a [great manager](/manager). He also wrote up several cool things he's proud of at work:
 
-[Charity Gifting On Alexa](/alexa-charity),
-[Software as a Story](/tags#Software as a Story),
-[Staring Cloud Computing](/The-Genesis-Node),
-[Smile](http://igsmilebox.blogspot.com),
-[Cache](/cache), and
-[Human meetings](/Human-Meetings).
+- [Charity Gifting On Alexa](/toysfortots)
+- [Software as a Story](/tags#Software as a Story),
+- [Staring Cloud Computing](/The-Genesis-Node),
+- [Smile](http://igsmilebox.blogspot.com),
+- [Cache](/cache), and
+- [Human meetings](/Human-Meetings).
 
 <!--
 To file:
@@ -271,6 +271,8 @@ Things I cherish with Amelia @ 10:
   - Knowing so many shark facts
   - Making her own shark suit
   - Having a bunch of shark stuffies
+- Seeing her be strong:
+  - She used to complain about me giving her bear hugs, now she gives her friends bear hugs
 
 Things I cherish with Amelia @ 9:
 
@@ -301,6 +303,8 @@ Things I cherish with Zach @ 14:
   - Getting strong with land days
   - Being able to do exercising with him.
   - Excitement about his strength from rowing translating to other physical activities
+  - Seeing him focus on his relative improvement, not his absolute position.
+  - Winning a gallon of chocolate milk for winning the rowing fund raising event.
 - Seeing him host his friends:
   - Being a DM for D&D
   - Tea parties, including the baking
@@ -311,6 +315,7 @@ Things I cherish with Zach @ 14:
 - Healthy pride in being superior:
   - Reading hard books
   - Not wearing headphones to be present.
+  - Reading on the bus.
 
 * Seeing how he's curious and with courage
   - Always wants to try stuff (Yellow Deli, Stopping at new creamery; Stopping to enjoy Lookout point)
@@ -321,7 +326,7 @@ Things I cherish with Zach @ 14:
   - Words
   - Politics
   - Social Sciences
-  - Evenntually, new tech
+  - Eventually, new tech
 
 Things I cherish with Zach @ 12.5:
 

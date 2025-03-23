@@ -987,7 +987,6 @@
             "file_path": "_site/being-a-great-manager.html",
             "incoming_links": [
                 "/bmy",
-                "/eulogy",
                 "/job",
                 "/manager-book"
             ],
@@ -2378,14 +2377,14 @@
                 "/timeoff",
                 "/todo_enjoy"
             ],
-            "last_modified": "2025-02-15T07:10:45-08:00",
+            "last_modified": "2025-03-23T20:07:06.338214",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
                 "/Human-Meetings",
                 "/The-Genesis-Node",
+                "/alexa-charity",
                 "/balloon",
-                "/being-a-great-manager",
                 "/bike",
                 "/cache",
                 "/ig66/687",
@@ -2394,11 +2393,11 @@
                 "/job",
                 "/kettlebell",
                 "/magic",
+                "/manager",
                 "/physical-health",
                 "/siy",
                 "/terzepatide",
-                "/tesla",
-                "/toysfortots"
+                "/tesla"
             ],
             "redirect_url": "",
             "title": "Igor's Eulogy - How I want to live",
@@ -5090,8 +5089,7 @@
             "doc_size": 14000,
             "file_path": "_site/toysfortots.html",
             "incoming_links": [
-                "/amazon",
-                "/eulogy"
+                "/amazon"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/alexa-charity.md",
