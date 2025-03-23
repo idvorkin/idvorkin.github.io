@@ -987,6 +987,7 @@
             "file_path": "_site/being-a-great-manager.html",
             "incoming_links": [
                 "/bmy",
+                "/eulogy",
                 "/job",
                 "/manager-book"
             ],
@@ -1407,6 +1408,7 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/negotiate",
+                "/operating-manual",
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
@@ -1603,6 +1605,7 @@
                 "/life-as-business",
                 "/manager-book",
                 "/mind-at-work",
+                "/operating-manual",
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
@@ -2375,14 +2378,14 @@
                 "/timeoff",
                 "/todo_enjoy"
             ],
-            "last_modified": "2025-03-23T20:07:06.338214",
+            "last_modified": "2025-03-23T20:10:13+00:00",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
                 "/Human-Meetings",
                 "/The-Genesis-Node",
-                "/alexa-charity",
                 "/balloon",
+                "/being-a-great-manager",
                 "/bike",
                 "/cache",
                 "/ig66/687",
@@ -2391,11 +2394,11 @@
                 "/job",
                 "/kettlebell",
                 "/magic",
-                "/manager",
                 "/physical-health",
                 "/siy",
                 "/terzepatide",
-                "/tesla"
+                "/tesla",
+                "/toysfortots"
             ],
             "redirect_url": "",
             "title": "Igor's Eulogy - How I want to live",
@@ -3607,20 +3610,20 @@
                 "/energy-abundance",
                 "/life-as-business"
             ],
-            "last_modified": "2025-03-23T20:18:32.150582",
+            "last_modified": "2025-03-23T20:19:03+00:00",
             "markdown_path": "_d/operating-manual-2.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
                 "/anxiety",
                 "/bike",
                 "/blueprint",
-                "/compassion",
                 "/covid",
+                "/curious",
+                "/d/habits",
                 "/d/timeoff-07-2022",
                 "/diet",
                 "/emotional-health",
                 "/eulogy",
-                "/habits",
                 "/hobby",
                 "/ig66/587",
                 "/magic",
@@ -3630,10 +3633,10 @@
                 "/physical-health",
                 "/process-journal",
                 "/siy",
-                "/som",
+                "/sleight-of-mouth",
                 "/strengths",
                 "/tesla",
-                "/todo-enjoy",
+                "/todo_enjoy",
                 "/tony",
                 "/voices",
                 "/writing"
@@ -3665,7 +3668,7 @@
             "incoming_links": [
                 "/manager-book"
             ],
-            "last_modified": "2025-03-22T15:38:24.084193",
+            "last_modified": "2025-03-22T15:39:44+00:00",
             "markdown_path": "_d/handling-overwork.md",
             "outgoing_links": [
                 "/anxiety",
@@ -4301,7 +4304,8 @@
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
                 "/7h-concepts",
-                "/d/time-off-2022-02"
+                "/d/time-off-2022-02",
+                "/operating-manual"
             ],
             "last_modified": "2024-12-28T07:13:50-08:00",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
@@ -5086,7 +5090,8 @@
             "doc_size": 14000,
             "file_path": "_site/toysfortots.html",
             "incoming_links": [
-                "/amazon"
+                "/amazon",
+                "/eulogy"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/alexa-charity.md",
