@@ -17,6 +17,7 @@ I've learned what I like, how I want to spend my energy, and how I want to be th
 - [A note on rituals](#a-note-on-rituals)
 - [Calendar - 2024 H2](#calendar---2024-h2)
 - [Morning Routine](#morning-routine)
+  - [Daily Affirmations](#daily-affirmations)
   - [Weekend morning routine](#weekend-morning-routine)
   - [Weekday morning routine](#weekday-morning-routine)
   - [Morning Kryptonite](#morning-kryptonite)
@@ -123,6 +124,12 @@ My new calendar
 At my best, I roll out of bed either when my eyes open or at 5am, whatever comes first. Then I sit in front of my [mood lamp](https://www.amazon.com/gp/product/B00PCN4UVU/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) and drink my cold brew nitro coffee.
 
 _Ah when the kids were younger - I also loved getting my morning hug from my kids, but now that Zach's older (9), I'm down to just getting the hugs from Amelia - who is 5._
+
+### Daily Affirmations
+
+Every day I should start with my affirmations
+
+{%include summarize-page.html src="/affirmations"%}
 
 ### Weekend morning routine
 
@@ -277,6 +284,7 @@ The words you use influence how you think.
 - I'm not doing a good job --> When I'm at my best I do
 - I manage the XYZ team -> I support the XYZ team
 - This is crap --> [Help me understand](/compassion)
+- How could they -> I wish to remove their suffering
 
 {%include summarize-page.html src="/som" %}
 
