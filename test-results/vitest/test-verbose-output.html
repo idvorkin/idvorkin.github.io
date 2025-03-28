@@ -3,6 +3,9 @@ npx vitest run --reporter=verbose
 
 [1m[7m[36m RUN [39m[27m[22m [36mv3.0.8 [39m[90m/home/runner/work/idvorkin.github.io/idvorkin.github.io[39m
 
+[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
+
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
@@ -52,9 +55,6 @@ npx vitest run --reporter=verbose
 [22m[39m🔍 updateRecentPosts function called
 🔍 recent-posts container element: found
 🔍 Fetching back-links.json...
-
-[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
 
 [90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
 [22m[39m❌ Error loading recent posts: Error: Test error
@@ -2392,16 +2392,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m818.421816[39m,
-        nodeStart: [33m0.31201100000180304[39m,
-        v8Start: [33m3.222375999990618[39m,
-        bootstrapComplete: [33m24.51131999999052[39m,
-        environment: [33m10.132817999983672[39m,
-        loopStart: [33m33.180999999982305[39m,
+        duration: [33m787.751632[39m,
+        nodeStart: [33m0.3176469999598339[39m,
+        v8Start: [33m3.329446999996435[39m,
+        bootstrapComplete: [33m24.16901999997208[39m,
+        environment: [33m10.429774999967776[39m,
+        loopStart: [33m32.932724999962375[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m119.240571[39m
+        idleTime: [33m148.461565[39m
       },
-      timeOrigin: [33m1742761322376.917[39m
+      timeOrigin: [33m1743125888024.774[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -4997,16 +4997,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m869.119293[39m,
-        nodeStart: [33m0.31201100000180304[39m,
-        v8Start: [33m3.222375999990618[39m,
-        bootstrapComplete: [33m24.51131999999052[39m,
-        environment: [33m10.132817999983672[39m,
-        loopStart: [33m33.180999999982305[39m,
+        duration: [33m830.475009[39m,
+        nodeStart: [33m0.3176469999598339[39m,
+        v8Start: [33m3.329446999996435[39m,
+        bootstrapComplete: [33m24.16901999997208[39m,
+        environment: [33m10.429774999967776[39m,
+        loopStart: [33m32.932724999962375[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m119.240571[39m
+        idleTime: [33m148.461565[39m
       },
-      timeOrigin: [33m1742761322376.917[39m
+      timeOrigin: [33m1743125888024.774[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7598,16 +7598,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m906.427931[39m,
-        nodeStart: [33m0.31201100000180304[39m,
-        v8Start: [33m3.222375999990618[39m,
-        bootstrapComplete: [33m24.51131999999052[39m,
-        environment: [33m10.132817999983672[39m,
-        loopStart: [33m33.180999999982305[39m,
+        duration: [33m866.796177[39m,
+        nodeStart: [33m0.3176469999598339[39m,
+        v8Start: [33m3.329446999996435[39m,
+        bootstrapComplete: [33m24.16901999997208[39m,
+        environment: [33m10.429774999967776[39m,
+        loopStart: [33m32.932724999962375[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m119.240571[39m
+        idleTime: [33m148.461565[39m
       },
-      timeOrigin: [33m1742761322376.917[39m
+      timeOrigin: [33m1743125888024.774[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10221,16 +10221,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m949.862534[39m,
-        nodeStart: [33m0.31201100000180304[39m,
-        v8Start: [33m3.222375999990618[39m,
-        bootstrapComplete: [33m24.51131999999052[39m,
-        environment: [33m10.132817999983672[39m,
-        loopStart: [33m33.180999999982305[39m,
+        duration: [33m909.203942[39m,
+        nodeStart: [33m0.3176469999598339[39m,
+        v8Start: [33m3.329446999996435[39m,
+        bootstrapComplete: [33m24.16901999997208[39m,
+        environment: [33m10.429774999967776[39m,
+        loopStart: [33m32.932724999962375[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m119.240571[39m
+        idleTime: [33m148.461565[39m
       },
-      timeOrigin: [33m1742761322376.917[39m
+      timeOrigin: [33m1743125888024.774[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10631,18 +10631,18 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m tests/unit/index.test.ts[2m > [22mIndex Module[2m > [22mshould initialize when ready
 
 [2m Test Files [22m [1m[32m12 passed[39m[22m[90m (12)[39m
 [2m      Tests [22m [1m[32m137 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (142)[39m
-[2m   Start at [22m 20:22:02
-[2m   Duration [22m 3.05s[2m (transform 497ms, setup 212ms, collect 667ms, tests 561ms, environment 4.56s, prepare 1.07s)[22m
+[2m   Start at [22m 01:38:07
+[2m   Duration [22m 3.00s[2m (transform 545ms, setup 167ms, collect 724ms, tests 510ms, environment 4.51s, prepare 1.07s)[22m
 
 </pre></body></html>
