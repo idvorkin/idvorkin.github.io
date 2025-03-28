@@ -3133,12 +3133,14 @@
         },
         "/lonely": {
             "description": "In a study of 1,000 Americans, 36% of respondents reported feeling lonely “frequently”, “almost all the time” or “all the time” in the prior four weeks. 61% of young people aged 18-25 and 51% of mothers with young children reported these miserable degrees of loneliness. The cost of loneliness is high. Loneliness is linked to early mortality and a wide array of seriousphysical and emotional problems, including depression, anxiety, heart disease, substance abuse,and domestic abuse.\n\n",
-            "doc_size": 31000,
+            "doc_size": 34000,
             "file_path": "_site/lonely.html",
             "incoming_links": [],
-            "last_modified": "2025-01-20T12:36:10-08:00",
+            "last_modified": "2025-03-27T18:36:57.291670",
             "markdown_path": "_d/lonely.md",
-            "outgoing_links": [],
+            "outgoing_links": [
+                "/life-chapters"
+            ],
             "redirect_url": "",
             "title": "Loneliness",
             "url": "/lonely"
