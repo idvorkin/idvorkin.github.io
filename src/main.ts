@@ -11,6 +11,7 @@ import {
 
 import { initRecentPosts } from "./recent-posts";
 import { initRecentAllPosts } from "./recent";
+// Import graph but we'll only initialize it from the graph.html page
 import "./graph";
 
 let tocExpand = true;

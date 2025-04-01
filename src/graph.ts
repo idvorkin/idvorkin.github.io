@@ -17,8 +17,46 @@ declare var ForceGraph: any;
  * @returns true if URL exists in pages
  */
 export function is_valid_url(pages, url) {
-  // check if the url is in the list of pages
-  return pages.map(p => p.url).includes(url);
+  if (typeof url !== "string") {
+    console.log("Invalid URL type:", typeof url);
+    return false;
+  }
+
+  // Check if the exact URL exists in pages
+  if (pages.map(p => p.url).includes(url)) {
+    return true;
+  }
+
+  // Try more flexible matching for URLs that might have different formats
+  // e.g., with or without trailing slashes, or with different prefixes
+  const normalizedUrl = url.replace(/^\//, "").replace(/\/$/, "");
+  const normalizedPageUrls = pages.map(p =>
+    p.url.replace(/^\//, "").replace(/\/$/, "")
+  );
+
+  return normalizedPageUrls.includes(normalizedUrl);
+}
+
+/**
+ * Find a node in pages by URL
+ * @param pages Array of page objects
+ * @param url URL to find
+ * @returns Page object or undefined if not found
+ */
+export function node_for_url(pages, url) {
+  // First try exact match
+  const exactMatch = pages.filter(p => p.url === url)[0];
+  if (exactMatch) {
+    return exactMatch;
+  }
+
+  // Try normalized match (without leading/trailing slashes)
+  const normalizedUrl = url.replace(/^\//, "").replace(/\/$/, "");
+  const normalizedMatch = pages.filter(
+    p => p.url.replace(/^\//, "").replace(/\/$/, "") === normalizedUrl
+  )[0];
+
+  return normalizedMatch;
 }
 
 /**
@@ -29,25 +67,34 @@ export function is_valid_url(pages, url) {
 export function build_links(pages) {
   // build links
   const links = [];
-  pages.forEach(page => {
-    page.outgoing_links
-      .concat(page.incoming_links)
-      .filter(url => is_valid_url(pages, url)) // We have lots of dead links, go fix them in the source material
-      .forEach(target => {
-        links.push({ source: page, target, value: 1 });
-      });
-  });
-  return links;
-}
 
-/**
- * Find a node in pages by URL
- * @param pages Array of page objects
- * @param url URL to find
- * @returns Page object or undefined if not found
- */
-export function node_for_url(pages, url) {
-  return pages.filter(p => p.url == url)[0];
+  // Regular link building for multiple expanded pages
+  pages.forEach(page => {
+    // Ensure we have arrays even if they're undefined in the data
+    const outgoingLinks = page.outgoing_links || [];
+    const incomingLinks = page.incoming_links || [];
+
+    // Get all combined links
+    const combinedLinks = [...outgoingLinks, ...incomingLinks];
+
+    // Check if each link is valid and add it
+    combinedLinks.forEach(targetUrl => {
+      // Try to find the target node
+      const targetNode = node_for_url(g_pages, targetUrl);
+      if (targetNode) {
+        links.push({ source: page, target: targetUrl, value: 1 });
+      }
+    });
+
+    // Check if we added any links for this page
+    const pageLinks = links.filter(link => link.source === page);
+
+    if (pageLinks.length === 0 && page.url === "/eulogy") {
+      console.log(`No valid links found for ${page.url}`);
+    }
+  });
+
+  return links;
 }
 
 /**
@@ -57,12 +104,22 @@ export function node_for_url(pages, url) {
  */
 export function build_graph_data(pages) {
   const visible_pages = pages.filter(page => page.expanded);
+
+  // Find eulogy node and check its links
+  const eulogyNode = pages.find(p => p.url === "/eulogy");
+  if (!eulogyNode) {
+    console.log("Eulogy node not found in pages");
+  }
+
   const visible_links = build_links(visible_pages);
-  const newly_visible_pages = visible_links.map(l =>
-    node_for_url(pages, l.target)
-  );
-  // update visable pages with newly visible ones
+
+  const newly_visible_pages = visible_links
+    .map(l => node_for_url(pages, l.target))
+    .filter(node => node); // Filter out nulls/undefined
+
+  // update visible pages with newly visible ones
   const combined_pages = visible_pages.concat(newly_visible_pages);
+
   return {
     nodes: combined_pages,
     links: visible_links,
@@ -126,12 +183,18 @@ let Graph = null;
  * @param node Node to center on
  */
 export function center_on_node(node) {
-  if (!Graph) return;
+  if (!Graph) {
+    console.log("Cannot center: Graph not initialized");
+    return;
+  }
+  if (!node) {
+    console.log("Cannot center: Node is null or undefined");
+    return;
+  }
 
   Graph.centerAt(node.x, node.y, 500);
   Graph.zoom(8, 500);
   update_detail(node);
-  console.log("centering on", node);
 }
 
 /**
@@ -139,9 +202,14 @@ export function center_on_node(node) {
  * @param page Node to display details for
  */
 export function update_detail(page) {
+  if (!page) {
+    return;
+  }
+
   // replace html of element of id above with the page
   g_last_detail_node = page;
   const html = MakeBackLinkHTML(page);
+
   const detail = document.getElementById("detail");
   if (detail) {
     detail.innerHTML = html;
@@ -152,7 +220,6 @@ export function update_detail(page) {
  * Opens the current node in a new tab
  */
 export function open_goto_control() {
-  console.log("Goto control clicked");
   if (g_last_detail_node) {
     if (g_last_detail_node.url) {
       window.open(g_last_detail_node.url, "_blank");
@@ -168,7 +235,6 @@ export function open_goto_control() {
  * Collapses all nodes except the active node
  */
 export function collapse_all_except_active() {
-  console.log("Collapse control clicked");
   g_pages.forEach(p => {
     p.expanded = false;
   });
@@ -192,7 +258,9 @@ export function collapse_all_except_active() {
  */
 export async function initializeGraph() {
   // Exit early if we're not on a page with a graph
-  if (!document.getElementById("graph")) {
+  const graphElement = document.getElementById("graph");
+  if (!graphElement) {
+    console.log("Graph element not found, exiting initialization");
     return;
   }
 
@@ -203,7 +271,6 @@ export async function initializeGraph() {
     if (node.url == first_expanded) {
       return true;
     }
-
     return false;
   }
 
@@ -213,7 +280,9 @@ export async function initializeGraph() {
     expanded: false,
   }));
 
-  const slug = "/" + window.location.href.split("#")[1];
+  const slug =
+    "/" + (window.location.hash ? window.location.hash.substr(1) : "");
+
   const initial_expanded_url = g_pages.map(p => p.url).includes(slug)
     ? slug
     : "/eulogy";
@@ -224,7 +293,7 @@ export async function initializeGraph() {
 
   // If ForceGraph isn't defined, return
   if (typeof ForceGraph === "undefined") {
-    console.log("Force Graph not defined");
+    console.log("Force Graph not defined, exiting initialization");
     return;
   }
 
@@ -239,9 +308,6 @@ export async function initializeGraph() {
       window.open(node.url, "_blank");
     })
     .onNodeClick(node => {
-      // Center/zoom on node
-      console.log(node);
-
       // count expanded nodes
       node.expanded = !node.expanded;
       const expanded_nodes = g_pages.filter(p => p.expanded).length;
@@ -257,16 +323,41 @@ export async function initializeGraph() {
       }, 300);
     });
 
-  center_on_node(node_for_url(g_pages, initial_expanded_url));
+  const initialNode = node_for_url(g_pages, initial_expanded_url);
+  if (initialNode) {
+    center_on_node(initialNode);
+  } else {
+    console.log("Initial node not found, cannot center");
+  }
 
   // set click handler for center control
-  $("#center_control").on("click", () => center_on_node(g_last_detail_node));
+  const centerControl = document.getElementById("center_control");
+  if (centerControl) {
+    centerControl.addEventListener("click", () => {
+      if (g_last_detail_node) {
+        center_on_node(g_last_detail_node);
+      } else {
+        console.log("No last detail node to center on");
+      }
+    });
+  } else {
+    console.log("Center control element not found");
+  }
 
   // set click handler for goto control
-  $("#goto_control").on("click", open_goto_control);
+  const gotoControl = document.getElementById("goto_control");
+  if (gotoControl) {
+    gotoControl.addEventListener("click", open_goto_control);
+  }
 
   // set click handler for collapse control
-  $("#collapse_control").on("click", collapse_all_except_active);
+  const collapseControl = document.getElementById("collapse_control");
+  if (collapseControl) {
+    collapseControl.addEventListener("click", collapse_all_except_active);
+  }
+}
 
-  console.log("Post Graph");
+// Make initializeGraph available in the global scope if needed for testing
+if (typeof window !== "undefined") {
+  window["initializeGraph"] = initializeGraph;
 }

@@ -16,3 +16,29 @@ description: "An archive of posts sorted by tag."
 
 <div id="graph"></div>
 <div id="below">Below the Graph</div>
+
+<script type="module">
+  // Import the module and directly access the global function attached to window
+  // We import the module to ensure it's loaded, but access via window
+  import "/assets/js/index.js";
+
+  // Initialize the graph when DOM is loaded
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("Graph page: DOM content loaded, initializing graph...");
+      if (window.initializeGraph) {
+        window.initializeGraph();
+      } else {
+        console.error("initializeGraph function not found on window object");
+      }
+    });
+  } else {
+    // DOM already loaded
+    console.log("Graph page: DOM already loaded, initializing graph...");
+    if (window.initializeGraph) {
+      window.initializeGraph();
+    } else {
+      console.error("initializeGraph function not found on window object");
+    }
+  }
+</script>
