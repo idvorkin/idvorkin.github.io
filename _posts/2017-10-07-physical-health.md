@@ -135,9 +135,9 @@ My current strength routine includes:
 - Heavy clubs for mobility and grip strength
 - Pull-ups and pistol squats for bodyweight mastery
 
-Here's my latest form check video (you can jump to [Hand To Hand](https://www.youtube.com/watch?v=pe_huqiNv6E&t=1s), [TGU](https://www.youtube.com/watch?v=pe_huqiNv6E&t=35s), [Slow Mo Swings](https://www.youtube.com/watch?v=pe_huqiNv6E&t=83s), [Front Rack](https://www.youtube.com/watch?v=pe_huqiNv6E&t=210s), [Pistols](https://www.youtube.com/watch?v=pe_huqiNv6E&t=259s), and [Pull Ups](https://www.youtube.com/watch?v=pe_huqiNv6E&t=302s)):
+{% include instagram_reel.html src="DHhnAWKxFzw" %}
 
-{% include youtube.html src="pe_huqiNv6E" %}
+Here's my latest form check video (you can jump to [Hand To Hand](https://www.youtube.com/watch?v=pe_huqiNv6E&t=1s), [TGU](https://www.youtube.com/watch?v=pe_huqiNv6E&t=35s), [Slow Mo Swings](https://www.youtube.com/watch?v=pe_huqiNv6E&t=83s), [Front Rack](https://www.youtube.com/watch?v=pe_huqiNv6E&t=210s), [Pistols](https://www.youtube.com/watch?v=pe_huqiNv6E&t=259s), and [Pull Ups](https://www.youtube.com/watch?v=pe_huqiNv6E&t=302s)):
 
 #### How do you think about back pain?
 
