@@ -12,21 +12,25 @@ There are three paths - remote development, local development, and hybrid. For a
 <!-- vim-markdown-toc-start -->
 
 - [Remote Development - Blink](#remote-development---blink)
-    - [ssh super powers - port forwarding and TMUX auto-attach.](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
+- [ssh super powers - port forwarding and TMUX auto-attach](#ssh-super-powers---port-forwarding-and-tmux-auto-attach)
+- [Blink - Better and better](#blink---better-and-better)
+  - [Nested VIM](#nested-vim)
+  - [Access to other repositories](#access-to-other-repositories)
+  - [VS.Code](#vscode)
 - [Local Development - iSh, iVIM, Working Copy, etc](#local-development---ish-ivim-working-copy-etc)
-    - [Run Linux - iSH](#run-linux---ish)
-    - [Run git - Working copy](#run-git---working-copy)
-    - [Run Vim - iVIM](#run-vim---ivim)
-    - [Run python - Pyto](#run-python---pyto)
-    - [Run Jupyter - Carnets](#run-jupyter---carnets)
-    - [Edit markdown](#edit-markdown)
+  - [Run Linux - iSH](#run-linux---ish)
+  - [Run git - Working copy](#run-git---working-copy)
+  - [Run Vim - iVIM](#run-vim---ivim)
+  - [Run python - Pyto](#run-python---pyto)
+  - [Run Jupyter - Carnets](#run-jupyter---carnets)
+  - [Edit markdown](#edit-markdown)
 - [Hybrid development - Consistency](#hybrid-development---consistency)
-- [The external keyboard.](#the-external-keyboard)
-    - [The keyboard I use](#the-keyboard-i-use)
-    - [The iPad stand I use](#the-ipad-stand-i-use)
-    - [Caps to Control](#caps-to-control)
-    - [Back tick to escape.](#back-tick-to-escape)
-    - [Carrying bags](#carrying-bags)
+- [The external keyboard](#the-external-keyboard)
+  - [The keyboard I use](#the-keyboard-i-use)
+  - [The iPad stand I use](#the-ipad-stand-i-use)
+  - [Caps to Control](#caps-to-control)
+  - [Back tick to escape](#back-tick-to-escape)
+  - [Carrying bags](#carrying-bags)
 - [Related links](#related-links)
 
 <!-- vim-markdown-toc-end -->
@@ -63,11 +67,11 @@ My [dot files](https://github.com/idvorkin/settings) should provide some insight
 
 #### Nested VIM
 
-VIM is now bundled locally,  you need to use the Blink Plugin to load vim only packages, but cool that it works!
+VIM is now bundled locally, you need to use the Blink Plugin to load vim only packages, but cool that it works!
 
 #### Access to other repositories
 
-You can use bookmarks to access working copy,  which is your git client - can't wait till we get git for blink (doesn't seem to be that hard honestly), probably coming
+You can use bookmarks to access working copy, which is your git client - can't wait till we get git for blink (doesn't seem to be that hard honestly), probably coming
 
 #### VS.Code
 
@@ -131,7 +135,6 @@ For this you load your files into working copy and link them via idoc dir, and t
 - Ctags support wow!
 
   !ctags
-
 
 #### Run python - Pyto
 
