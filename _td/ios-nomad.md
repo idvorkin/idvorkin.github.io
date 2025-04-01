@@ -59,6 +59,20 @@ My [dot files](https://github.com/idvorkin/settings) should provide some insight
 
 (For folks that are considering [MOSH](https://mosh.org/), MOSH has great promise, but the project hasn't been updated in years, and still doesn't support true color. For my needs ssh+TMUX+auto-reconnect is perfect.)
 
+### Blink - Better and better
+
+#### Nested VIM
+
+VIM is now bundled locally,  you need to use the Blink Plugin to load vim only packages, but cool that it works!
+
+#### Access to other repositories
+
+You can use bookmarks to access working copy,  which is your git client - can't wait till we get git for blink (doesn't seem to be that hard honestly), probably coming
+
+#### VS.Code
+
+I don't use this, but looks cool.
+
 ### Local Development - iSh, iVIM, Working Copy, etc
 
 Remote development is perfect, except of course when you have no and or slow network. At this point you need to get creative. Luckily, there has been lots of improvement in this space.
@@ -117,6 +131,7 @@ For this you load your files into working copy and link them via idoc dir, and t
 - Ctags support wow!
 
   !ctags
+
 
 #### Run python - Pyto
 
