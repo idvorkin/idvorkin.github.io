@@ -29,13 +29,13 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
-[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
-
 [90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
 [22m[39m🔍 updateRecentPosts function called
 🔍 recent-posts container element: found
 🔍 Fetching back-links.json...
+
+[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
 
 [90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
 [22m[39m🔍 Sorted pages, first 5: [
@@ -2391,16 +2391,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m806.69594[39m,
-        nodeStart: [33m0.38664199999766424[39m,
-        v8Start: [33m3.1286109999928158[39m,
-        bootstrapComplete: [33m23.599829000013415[39m,
-        environment: [33m10.106719000003068[39m,
-        loopStart: [33m32.36245799998869[39m,
+        duration: [33m840.539275[39m,
+        nodeStart: [33m0.3014700000057928[39m,
+        v8Start: [33m3.2379599999985658[39m,
+        bootstrapComplete: [33m21.54988800000865[39m,
+        environment: [33m10.466836000006879[39m,
+        loopStart: [33m27.81180900000618[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m150.067692[39m
+        idleTime: [33m138.359631[39m
       },
-      timeOrigin: [33m1743656065664.115[39m
+      timeOrigin: [33m1743656957681.305[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -4996,16 +4996,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m857.638425[39m,
-        nodeStart: [33m0.38664199999766424[39m,
-        v8Start: [33m3.1286109999928158[39m,
-        bootstrapComplete: [33m23.599829000013415[39m,
-        environment: [33m10.106719000003068[39m,
-        loopStart: [33m32.36245799998869[39m,
+        duration: [33m885.104627[39m,
+        nodeStart: [33m0.3014700000057928[39m,
+        v8Start: [33m3.2379599999985658[39m,
+        bootstrapComplete: [33m21.54988800000865[39m,
+        environment: [33m10.466836000006879[39m,
+        loopStart: [33m27.81180900000618[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m150.067692[39m
+        idleTime: [33m138.359631[39m
       },
-      timeOrigin: [33m1743656065664.115[39m
+      timeOrigin: [33m1743656957681.305[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7597,16 +7597,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m888.165326[39m,
-        nodeStart: [33m0.38664199999766424[39m,
-        v8Start: [33m3.1286109999928158[39m,
-        bootstrapComplete: [33m23.599829000013415[39m,
-        environment: [33m10.106719000003068[39m,
-        loopStart: [33m32.36245799998869[39m,
+        duration: [33m921.026185[39m,
+        nodeStart: [33m0.3014700000057928[39m,
+        v8Start: [33m3.2379599999985658[39m,
+        bootstrapComplete: [33m21.54988800000865[39m,
+        environment: [33m10.466836000006879[39m,
+        loopStart: [33m27.81180900000618[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m150.067692[39m
+        idleTime: [33m138.359631[39m
       },
-      timeOrigin: [33m1743656065664.115[39m
+      timeOrigin: [33m1743656957681.305[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10220,16 +10220,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m932.047809[39m,
-        nodeStart: [33m0.38664199999766424[39m,
-        v8Start: [33m3.1286109999928158[39m,
-        bootstrapComplete: [33m23.599829000013415[39m,
-        environment: [33m10.106719000003068[39m,
-        loopStart: [33m32.36245799998869[39m,
+        duration: [33m969.487366[39m,
+        nodeStart: [33m0.3014700000057928[39m,
+        v8Start: [33m3.2379599999985658[39m,
+        bootstrapComplete: [33m21.54988800000865[39m,
+        environment: [33m10.466836000006879[39m,
+        loopStart: [33m27.81180900000618[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m150.067692[39m
+        idleTime: [33m138.359631[39m
       },
-      timeOrigin: [33m1743656065664.115[39m
+      timeOrigin: [33m1743656957681.305[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10641,6 +10641,6 @@ Toggle element with ID remaining-posts-toggle not found
 
 [2m Test Files [22m [1m[32m12 passed[39m[22m[90m (12)[39m
 [2m      Tests [22m [1m[32m137 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (142)[39m
-[2m   Start at [22m 04:54:25
-[2m   Duration [22m 3.13s[2m (transform 570ms, setup 162ms, collect 763ms, tests 541ms, environment 4.65s, prepare 1.09s)[22m
+[2m   Start at [22m 05:09:17
+[2m   Duration [22m 3.24s[2m (transform 541ms, setup 183ms, collect 774ms, tests 556ms, environment 4.72s, prepare 1.12s)[22m
 
