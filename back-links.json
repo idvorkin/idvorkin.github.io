@@ -331,7 +331,6 @@
             "incoming_links": [
                 "/7h-concepts",
                 "/balance",
-                "/be-proactive",
                 "/books-that-defined-me",
                 "/d/time-off-2020-12",
                 "/depression",
@@ -955,7 +954,7 @@
         },
         "/be-proactive": {
             "description": "I choose ‘.’ I am responsible for my own life ‘.’ My behavior is a function of my decisions, not my conditions ‘.’ I can subordinate feelings to values ‘.’ I have the initiative and the responsibility to make things happen. These are my insights from 7 habits Chapter 1.\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
@@ -968,10 +967,10 @@
                 "/regrets",
                 "/siy"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-04-02T22:07:51.681122",
             "markdown_path": "_d/7h-c1.md",
             "outgoing_links": [
-                "/7-habits",
+                "/7h",
                 "/essentialism",
                 "/frog",
                 "/siy"
