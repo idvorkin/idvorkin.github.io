@@ -115,6 +115,7 @@
         "/high-energy": "/energy-abundance",
         "/humanity": "/touching",
         "/idle-loop": "/idle",
+        "/iina": "/vlc",
         "/imposter": "/insecure",
         "/in-real-life": "/irl",
         "/insecurity": "/insecure",
@@ -229,6 +230,8 @@
         "/untangled-book": "/untangled",
         "/vacation": "/timeoff",
         "/vancouver": "/bc",
+        "/video-player": "/vlc",
+        "/videoplayer": "/vlc",
         "/virus": "/covid",
         "/voices-in-my-head": "/voices",
         "/vr": "/ar",
@@ -331,6 +334,7 @@
             "incoming_links": [
                 "/7h-concepts",
                 "/balance",
+                "/be-proactive",
                 "/books-that-defined-me",
                 "/d/time-off-2020-12",
                 "/depression",
@@ -543,6 +547,7 @@
             "doc_size": 16000,
             "file_path": "_site/affirmations.html",
             "incoming_links": [
+                "/operating-manual",
                 "/process-journal"
             ],
             "last_modified": "2025-02-15T08:08:25-08:00",
@@ -962,15 +967,16 @@
                 "/anxiety",
                 "/d/habits",
                 "/emotions",
+                "/frog",
                 "/idle",
                 "/process-journal",
                 "/regrets",
                 "/siy"
             ],
-            "last_modified": "2025-04-02T22:07:51.681122",
+            "last_modified": "2025-04-02T22:07:54-07:00",
             "markdown_path": "_d/7h-c1.md",
             "outgoing_links": [
-                "/7h",
+                "/7-habits",
                 "/essentialism",
                 "/frog",
                 "/siy"
@@ -1195,6 +1201,7 @@
             "file_path": "_site/chapters.html",
             "incoming_links": [
                 "/42",
+                "/lonely",
                 "/retire",
                 "/y25"
             ],
@@ -1642,6 +1649,7 @@
                 "/energy-abundance",
                 "/fail",
                 "/first-things-first",
+                "/frog",
                 "/parkinson",
                 "/productive",
                 "/psychic-weight",
@@ -2335,6 +2343,7 @@
                 "/elder",
                 "/end-in-mind",
                 "/first-things-first",
+                "/frog",
                 "/gtd",
                 "/overload",
                 "/parkinson",
@@ -2355,7 +2364,7 @@
         },
         "/eulogy": {
             "description": "Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor “Began with the end in mind” with the “important but not urgent” task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.\n\n",
-            "doc_size": 33000,
+            "doc_size": 34000,
             "file_path": "_site/eulogy.html",
             "incoming_links": [
                 "/7-habits",
@@ -2391,6 +2400,7 @@
                 "/kettlebell",
                 "/magic",
                 "/physical-health",
+                "/process-jounral",
                 "/siy",
                 "/terzepatide",
                 "/tesla",
@@ -2507,16 +2517,16 @@
                 "/psychic-weight",
                 "/timeoff"
             ],
-            "last_modified": "2025-04-02T21:52:06.556987",
+            "last_modified": "2025-04-02T21:53:46-07:00",
             "markdown_path": "_d/frog.md",
             "outgoing_links": [
-                "/7h-c1",
                 "/Immutable-Laws-Of-Hard",
-                "/essential",
+                "/be-proactive",
+                "/d/resistance",
+                "/essentialism",
                 "/eulogy",
                 "/first-things-first",
-                "/gtd",
-                "/resistance"
+                "/gtd"
             ],
             "redirect_url": "",
             "title": "Eat that frog",
@@ -2645,10 +2655,10 @@
         },
         "/graph": {
             "description": "Igor's Blog",
-            "doc_size": 9000,
+            "doc_size": 10000,
             "file_path": "_site/graph.html",
             "incoming_links": [],
-            "last_modified": "2024-09-02T09:07:57-07:00",
+            "last_modified": "2025-03-31T19:10:37-07:00",
             "markdown_path": "graph.html",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3030,7 +3040,7 @@
         },
         "/kettlebell": {
             "description": "There’s no way I’m swinging that thing between my legs; I’m going to kill my back. When I started working out with a trainer in 2020, they tried to get me to do a kettlebell swing, and I was like, no way. Then they spent 3 weeks teaching me Turkish Get-Ups (TGUs), which I absolutely loved. Then I read Simple and Sinister, and now I’ve achieved Timeless Simple and do heavy clubs instead of halos.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/kettlebell.html",
             "incoming_links": [
                 "/eulogy",
@@ -3039,7 +3049,7 @@
                 "/untangled",
                 "/y24"
             ],
-            "last_modified": "2024-12-29T08:15:55-08:00",
+            "last_modified": "2025-03-31T18:31:58-07:00",
             "markdown_path": "_d/bells.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3132,10 +3142,10 @@
             "doc_size": 34000,
             "file_path": "_site/lonely.html",
             "incoming_links": [],
-            "last_modified": "2025-03-27T18:36:57.291670",
+            "last_modified": "2025-03-27T18:37:04-07:00",
             "markdown_path": "_d/lonely.md",
             "outgoing_links": [
-                "/life-chapters"
+                "/chapters"
             ],
             "redirect_url": "",
             "title": "Loneliness",
@@ -3601,7 +3611,7 @@
         },
         "/operating-manual": {
             "description": "I’ve learned what I like, how I want to spend my energy, and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency. Super important: You don’t rise to the level of your goals, you fall to the level of your systems.\n\n",
-            "doc_size": 33000,
+            "doc_size": 34000,
             "file_path": "_site/operating-manual.html",
             "incoming_links": [
                 "/energy",
@@ -3612,6 +3622,7 @@
             "markdown_path": "_d/operating-manual-2.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
+                "/affirmations",
                 "/anxiety",
                 "/bike",
                 "/blueprint",
@@ -3736,7 +3747,7 @@
         },
         "/physical-health": {
             "description": "Physical health is not bought, it’s rented and rent is due every day. Physical health is the basis of energy, and thus the source of success, and a key saw to sharpen. Physical health requires weight, fitness, and sleep.\n\n",
-            "doc_size": 23000,
+            "doc_size": 24000,
             "file_path": "_site/physical-health.html",
             "incoming_links": [
                 "/42",
@@ -3750,7 +3761,7 @@
                 "/sharpen-the-saw",
                 "/tech-health-toys"
             ],
-            "last_modified": "2025-02-17T10:54:23-08:00",
+            "last_modified": "2025-03-31T18:31:58-07:00",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
             "outgoing_links": [
                 "/d/habits",
@@ -4664,13 +4675,13 @@
         },
         "/td/ios-nomad": {
             "description": "So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I’m not sure why you’d want to be such a character, in fact, I’m not sure why I want to be such a character, but I do, and here’s how I do it. To be a developer nomad, you better already be a command line wiz. If you’re not at an expert at the terminal, vim or Emacs and TMUX - don’t even try.\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/td/ios-nomad.html",
             "incoming_links": [
                 "/tools",
                 "/writing"
             ],
-            "last_modified": "2025-04-01T15:47:24.882285",
+            "last_modified": "2025-04-01T15:48:27+00:00",
             "markdown_path": "_td/ios-nomad.md",
             "outgoing_links": [
                 "/irl"
@@ -4828,18 +4839,6 @@
             "redirect_url": "",
             "title": "Visual Thinking Notes",
             "url": "/td/visual-vocabulary"
-        },
-        "/td/vlc_player": {
-            "description": "Copied from my GitHub techdiary\n\n",
-            "doc_size": 10000,
-            "file_path": "_site/td/vlc_player.html",
-            "incoming_links": [],
-            "last_modified": "2020-04-11T16:32:11+00:00",
-            "markdown_path": "_td/vlc_player.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "VLC Play Notes",
-            "url": "/td/vlc_player"
         },
         "/td/windbg": {
             "description": "Copied from my GitHub techdiary\n\n",
@@ -5170,6 +5169,18 @@
             "redirect_url": "",
             "title": "Vim For Writing",
             "url": "/vim-for-writing"
+        },
+        "/vlc": {
+            "description": "IINA Player Keyboard Shortcuts\n\n",
+            "doc_size": 13000,
+            "file_path": "_site/vlc.html",
+            "incoming_links": [],
+            "last_modified": "2025-04-03T06:50:06.684915",
+            "markdown_path": "_d/vlc_player.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "IINA Player Keyboard Shortcuts",
+            "url": "/vlc"
         },
         "/voices": {
             "description": "The person that most frequently blocks your success is, wait for it, you! Often it’s your subconscious, and often your subconscious is a bunch of independent voices. It’s hard to deal with this hidden opposition because it’s so opaque. To help understand your feelings, you can name the voices in your head, and imagine asking each of them their positions and desired outcomes.\n\n",

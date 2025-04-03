@@ -113,7 +113,7 @@ See my repository here: <https://github.com/idvorkin/video-edit>
 ### Minor Tips
 
 - [Time off 2020](time-off-3-2020)
-- [VLC Player](vlc_player)
+- [VLC Player](/vlc)
 - [Pandas](/pandas)
 - [iOS Usage](ios)
 - [Mosh](mosh)
