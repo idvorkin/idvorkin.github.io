@@ -16,6 +16,8 @@ tags:
 
 Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.
 
+{% include amazon.html asin="1583762027" %}
+
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc-start -->
@@ -84,7 +86,7 @@ Procrastination is the success killer, a powerful manifestations of the resistan
 
 **20.** **Develop a sense of urgency:** Make a habit of moving fast on your key tasks. Become known as a person who does things quickly and well.
 
-**5.** **Practice creative procrastination:** Since you can’t do everything, you must learn to deliberately put off those tasks that are of low value so that you have enough time to do the few things that really count.
+**5.** **Practice creative procrastination:** Since you can't do everything, you must learn to deliberately put off those tasks that are of low value so that you have enough time to do the few things that really count.
 
 ### Shape the path: Make it easy on yourself
 
@@ -110,13 +112,13 @@ I need to process how to merge the important and not urgent matrix with the ABCD
 
 {%include summarize-page.html src="/7h-c1" %}
 
-“A” items are important and urgent **I/U**, something that you must do. This is a task that will have serious consequences (positive or negative), finishing a calibration packets for upcoming calibration or dealing with a root canal. If you have more than one A task, prioritize, and execute in order “A-1,” “A-2,” “A-3,” Your A-1 task is your biggest, ugliest frog of all. Start there.
+"A" items are important and urgent **I/U**, something that you must do. This is a task that will have serious consequences (positive or negative), finishing a calibration packets for upcoming calibration or dealing with a root canal. If you have more than one A task, prioritize, and execute in order "A-1," "A-2," "A-3," Your A-1 task is your biggest, ugliest frog of all. Start there.
 
 **TBD: Where to work in Important and Not-Urgent**
 **TBD: Where to work in Positive Habits and Practices**
 
-“B” items are urgent and not important **U/NI** - something you should do. But it has only mild consequences. These are the tadpoles of your work life. This means that someone may be unhappy or inconvenienced if you don’t do one of these tasks, but it is nowhere as important as an A task. Returning an unimportant telephone message or reviewing your e-mail would be a B task.
+"B" items are urgent and not important **U/NI** - something you should do. But it has only mild consequences. These are the tadpoles of your work life. This means that someone may be unhappy or inconvenienced if you don't do one of these tasks, but it is nowhere as important as an A task. Returning an unimportant telephone message or reviewing your e-mail would be a B task.
 
-A “C” task is _nice_ to do but there are no consequences if you don't use it. C tasks include phoning a friend, having coffee or lunch with a coworker, and completing some personal business during work hours. These sorts of activities have no effect at all on your work life.
+A "C" task is _nice_ to do but there are no consequences if you don't use it. C tasks include phoning a friend, having coffee or lunch with a coworker, and completing some personal business during work hours. These sorts of activities have no effect at all on your work life.
 
-A “D” task is defined as something you can _delegate_ to someone else. The rule is that you should delegate everything that someone else can do so you can free up more time for the A tasks that only you can do.
+A "D" task is defined as something you can _delegate_ to someone else. The rule is that you should delegate everything that someone else can do so you can free up more time for the A tasks that only you can do.

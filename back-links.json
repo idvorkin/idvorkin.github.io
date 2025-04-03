@@ -963,7 +963,6 @@
                 "/anxiety",
                 "/d/habits",
                 "/emotions",
-                "/frog",
                 "/idle",
                 "/process-journal",
                 "/regrets",
@@ -1644,7 +1643,6 @@
                 "/energy-abundance",
                 "/fail",
                 "/first-things-first",
-                "/frog",
                 "/parkinson",
                 "/productive",
                 "/psychic-weight",
@@ -2338,7 +2336,6 @@
                 "/elder",
                 "/end-in-mind",
                 "/first-things-first",
-                "/frog",
                 "/gtd",
                 "/overload",
                 "/parkinson",
@@ -2495,7 +2492,7 @@
         },
         "/frog": {
             "description": "Procrastination is the success killer, a powerful manifestations of the resistance. Eat that frog gives 21 antidotes to procrastination. These are my re-framing of the concepts into my favorite mental models. Chapter titles come from the book.\n\n",
-            "doc_size": 19000,
+            "doc_size": 20000,
             "file_path": "_site/frog.html",
             "incoming_links": [
                 "/anxiety-management",
@@ -2511,16 +2508,16 @@
                 "/psychic-weight",
                 "/timeoff"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-04-02T21:52:06.556987",
             "markdown_path": "_d/frog.md",
             "outgoing_links": [
+                "/7h-c1",
                 "/Immutable-Laws-Of-Hard",
-                "/be-proactive",
-                "/d/resistance",
-                "/essentialism",
+                "/essential",
                 "/eulogy",
                 "/first-things-first",
-                "/gtd"
+                "/gtd",
+                "/resistance"
             ],
             "redirect_url": "",
             "title": "Eat that frog",
