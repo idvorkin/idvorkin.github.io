@@ -6,6 +6,7 @@ in progress: true
 permalink: /balloon
 redirect_from:
   - /ballooning
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-balloon.webp
 ---
 
 Want to plaster a huge smile on someone's face with 10 cents of material and 20 seconds of work? Make them a balloon! In 2022, I discovered ballooning, and have used it in my joy-delivering arsenal ever since.
@@ -36,6 +37,8 @@ Want to plaster a huge smile on someone's face with 10 cents of material and 20 
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+{%include blob_image_float_right.html src="blog/racoon-balloon.webp" %}
 
 ### It's all about joy
 
