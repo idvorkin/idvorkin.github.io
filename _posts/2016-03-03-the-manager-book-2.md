@@ -16,6 +16,8 @@ Being an engineering manager is hard. Supporting people well is harder. Lessons 
 
 This post uses the word manager, but many topics apply to all job functions, regardless of seniority or number of direct reports, zero direct reports included.
 
+{%include blob_image_float_right.html src="blog/racoon-manager.webp" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -149,8 +151,6 @@ This post uses the word manager, but many topics apply to all job functions, reg
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
-
-{%include blob_image_float_right.html src="blog/racoon-manager.webp" %}
 
 ## What does a manager do
 
