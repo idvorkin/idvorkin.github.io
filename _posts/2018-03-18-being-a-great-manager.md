@@ -4,6 +4,7 @@ title: "Being the best manager I can be"
 date: "2018-03-18 06:24:17 -0700"
 comments: true
 inprogress: true
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-manager.webp
 redirect_from:
   - /boss
   - /manager
@@ -23,21 +24,21 @@ I aspire to be the best manager I can be. I'll often fall short of my goal, but 
 
 - [Igor's book of manager](#igors-book-of-manager)
 - [How will I measure my success?](#how-will-i-measure-my-success)
-    - [Coach, empower, build inclusive and supportive culture](#coach-empower-build-inclusive-and-supportive-culture)
-    - [Productive and results-oriented](#productive-and-results-oriented)
-    - [Great partner to other teams and non-tech partners](#great-partner-to-other-teams-and-non-tech-partners)
+  - [Coach, empower, build inclusive and supportive culture](#coach-empower-build-inclusive-and-supportive-culture)
+  - [Productive and results-oriented](#productive-and-results-oriented)
+  - [Great partner to other teams and non-tech partners](#great-partner-to-other-teams-and-non-tech-partners)
 - [How will I behave to be successful?](#how-will-i-behave-to-be-successful)
-    - [Being a great coach](#being-a-great-coach)
-    - [Communicating clearly](#communicating-clearly)
-    - [Hiring](#hiring)
-    - [Working across teams](#working-across-teams)
-    - [Staying technical](#staying-technical)
-    - [Hack-a-thons](#hack-a-thons)
-    - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
-    - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
+  - [Being a great coach](#being-a-great-coach)
+  - [Communicating clearly](#communicating-clearly)
+  - [Hiring](#hiring)
+  - [Working across teams](#working-across-teams)
+  - [Staying technical](#staying-technical)
+  - [Hack-a-thons](#hack-a-thons)
+  - [Some behaviors I'm just starting, these include](#some-behaviors-im-just-starting-these-include)
+  - [Establishing Process, Project Lifecycle, and Artifacts](#establishing-process-project-lifecycle-and-artifacts)
 - [Igors Super Powers](#igors-super-powers)
-    - [What is Igor's Management Philosopy](#what-is-igors-management-philosopy)
-    - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
+  - [What is Igor's Management Philosopy](#what-is-igors-management-philosopy)
+  - [Why do people think Igor is a good coach?](#why-do-people-think-igor-is-a-good-coach)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->

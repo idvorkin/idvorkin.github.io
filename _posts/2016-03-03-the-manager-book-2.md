@@ -7,6 +7,7 @@ tags:
   - search-featured
   - manager-book
 permalink: /manager-book
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-manager.webp
 redirect_from:
   - /the-manager-book
 ---
@@ -148,6 +149,8 @@ This post uses the word manager, but many topics apply to all job functions, reg
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+{%include blob_image_float_right.html src="blog/racoon-manager.webp" %}
 
 ## What does a manager do
 

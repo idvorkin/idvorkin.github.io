@@ -255,8 +255,7 @@
             "doc_size": 14000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters",
-                "/manager-book"
+                "/chapters"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -995,20 +994,22 @@
                 "/job",
                 "/manager-book"
             ],
-            "last_modified": "2025-02-15T11:26:24-08:00",
+            "last_modified": "2025-04-04T21:35:14.794458",
             "markdown_path": "_posts/2018-03-18-being-a-great-manager.md",
             "outgoing_links": [
-                "/books-that-defined-me",
-                "/coaching",
-                "/curious",
-                "/decisive",
+                "/Coaching-Questions",
+                "/books",
+                "/coach",
+                "/decide",
+                "/grandmother-mind",
                 "/human-meetings",
                 "/manager-book",
                 "/mind-monsters",
                 "/moments-at-work",
                 "/pride",
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
-                "/sustainable-work"
+                "/sustainable-work",
+                "/the-manager-book"
             ],
             "redirect_url": "",
             "title": "Being the best manager I can be",
@@ -1077,8 +1078,6 @@
             "doc_size": 14000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
-                "/being-a-great-manager",
-                "/manager-book",
                 "/manager-book-appendix"
             ],
             "last_modified": "2021-02-13T08:15:36-08:00",
@@ -1302,7 +1301,6 @@
             "doc_size": 27000,
             "file_path": "_site/coaching.html",
             "incoming_links": [
-                "/being-a-great-manager",
                 "/first-understand",
                 "/insecure",
                 "/job",
@@ -1404,7 +1402,6 @@
             "incoming_links": [
                 "/90days",
                 "/affirmations",
-                "/being-a-great-manager",
                 "/class-act",
                 "/coaching",
                 "/emotions",
@@ -1608,7 +1605,6 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
-                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
@@ -1961,11 +1957,9 @@
             "doc_size": 40000,
             "file_path": "_site/decisive.html",
             "incoming_links": [
-                "/being-a-great-manager",
                 "/coaching",
                 "/dsat",
                 "/job-hunt-stress",
-                "/manager-book",
                 "/pride",
                 "/random-idea"
             ],
@@ -3191,24 +3185,24 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-03-22T14:25:01+00:00",
+            "last_modified": "2025-04-04T21:35:14.794458",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/22",
+                "/90-days",
                 "/90days",
                 "/being-a-great-manager",
-                "/books-that-defined-me",
+                "/books",
+                "/coach",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/d/habits",
-                "/decisive",
+                "/decide",
                 "/dip",
                 "/dsat",
+                "/habits",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
-                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3219,9 +3213,11 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
+                "/td/machine-learning",
                 "/testing",
+                "/twentytwo",
                 "/what-makes-a-leader",
-                "/writing"
+                "/write"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3388,7 +3384,6 @@
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
-                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -5320,7 +5315,6 @@
                 "/amazon",
                 "/chow",
                 "/enable",
-                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
