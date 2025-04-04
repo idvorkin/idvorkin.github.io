@@ -5172,10 +5172,10 @@
         },
         "/vlc": {
             "description": "IINA Player Keyboard Shortcuts\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/vlc.html",
             "incoming_links": [],
-            "last_modified": "2025-04-03T06:50:06.684915",
+            "last_modified": "2025-04-04T06:38:13.060037",
             "markdown_path": "_d/vlc_player.md",
             "outgoing_links": [],
             "redirect_url": "",

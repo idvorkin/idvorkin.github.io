@@ -15,63 +15,73 @@ We watch a tonne of videos now, so it's good to be efficient with them. Go learn
 
 **Note: We have switched to IINA Player from VLC. This reference documents IINA's keyboard shortcuts.**
 
+## Key Notation Reference
+
+| Notation | Key                  |
+| -------- | -------------------- |
+| M        | Meta/Command (⌘)     |
+| A        | Alt/Option (⌥)       |
+| C        | Control (^)          |
+| S        | Shift (⇧)            |
+| BS       | Backspace/Delete (⌫) |
+
 ## Playback Controls
 
 - Space - Cycle Pause
 - ⌫ - Stop
-- ⌥→ - Seek forward 5s
-- ⌥← - Seek backward 5s
+- → - Seek forward 5s
+- ← - Seek backward 5s
 - → - Next frame
 - ← - Previous frame
-- ⌥← - Seek to previous subtitle
-- ⌥→ - Seek to next subtitle
+- A-← - Seek to previous subtitle
+- A-→ - Seek to next subtitle
 
 ## Playback Speed
 
-- ⌘[ - Multiply Speed by 0.5x
-- ⌘] - Multiply Speed by 2.0x
-- ⌘⇧[ - Multiply Speed by 0.909x
-- ⌘⇧] - Multiply Speed by 1.1x
-- ⌘\ - Set Speed to 1.0
+- M-[ - Multiply Speed by 0.5x
+- M-] - Multiply Speed by 2.0x
+- M-A-[ - Multiply Speed by 0.9091x
+- M-A-] - Multiply Speed by 1.1x
+- M-\ - Set Speed to 1.0
 
 ## Chapter Navigation
 
-- ⌥⇧C - Chapter panel
-- ⌘↑ - Chapter +1
-- ⌘↓ - Chapter -1
+- A-S-C - Chapter panel
+- M-> - Chapter +1
+- M-< - Chapter -1
 
 ## Media Controls
 
-- ⇧S - Screenshot
-- ⇧L - A-B loop
-- ⌥⇧L - Cycle loop in ()
-- ⌥⇧P - Playlist panel
-- ⌘→ - Next media
-- ⌘← - Previous media
+- S-S - Screenshot
+- S-L - A-B loop
+- A-S-L - Cycle loop in ()
+- A-S-P - Playlist panel
+- M-→ - Next media
+- M-← - Previous media
 
 ## Window Size
 
-- ⌘0 - Set Window scale to 0.5
-- ⌘1 - Set Window scale to 1
-- ⌘2 - Set Window scale to 2
-- ⌘3 - Fit to Screen
-- ⌘- - Smaller Window
-- ⌘= - Bigger Window
+- M-0 - Set Window scale to 0.5
+- M-1 - Set Window scale to 1
+- M-2 - Set Window scale to 2
+- M-3 - Fit to Screen
+- M-- - Smaller Window
+- M-= - Bigger Window
 
 ## Display Controls
 
-- ^⇧P - Toggle Picture-in-Picture
-- ^⇧F - Cycle Fullscreen
-- ^⇧T - Cycle Float on top
-- ^⇧M - Toggle Music Mode
+- C-S-P - Toggle Picture-in-Picture
+- C-S-F - Cycle Fullscreen
+- C-S-T - Cycle Float on top
+- M-S-M - Toggle Music Mode
 
 ## Volume Controls
 
 - ↑ - Volume +5
 - ↓ - Volume -5
-- ⌥↑ - Volume +1
-- ⌥↓ - Volume -1
-- ⌘/ - Cycle Mute
+- A-↑ - Volume +1
+- A-↓ - Volume -1
+- M-/ - Cycle Mute
 
 ## Audio Delay
 
@@ -83,12 +93,12 @@ We watch a tonne of videos now, so it's good to be efficient with them. Go learn
 
 ## Subtitle Controls
 
-- ⌥⇧D - Find online subtitles
-- ⌥Z - Subtitle delay -0.5
-- ⌥X - Subtitle delay +0.5
-- ⌥⇧Z - Subtitle delay -0.1
-- ⌥⇧X - Subtitle delay +0.1
-- ⌥C - Set Subtitle delay to 0
+- A-S-D - Find online subtitles
+- A-Z - Subtitle delay -0.5
+- A-X - Subtitle delay +0.5
+- A-S-Z - Subtitle delay -0.1
+- A-S-X - Subtitle delay +0.1
+- A-C - Set Subtitle delay to 0
 - ↩ - Set Fullscreen to No
 - ⇥ - Set Fullscreen to Yes
 - Q - Quit
@@ -99,15 +109,15 @@ We watch a tonne of videos now, so it's good to be efficient with them. Go learn
 - . - Next frame
 - , - Previous frame
 - M - Cycle Mute
-- ⌥⇧F - Seek forward 600s
-- ⌥⇧B - Seek backward 600s
-- ⌥O - Subtitle scale +0.1
-- ⌥F - Subtitle scale -0.1
+- A-S-F - Seek forward 600s
+- A-S-B - Seek backward 600s
+- A-O - Subtitle scale +0.1
+- A-F - Subtitle scale -0.1
 - R - Subtitle position -1
-- ⌥R - Subtitle position +1
+- A-R - Subtitle position +1
 - T - Subtitle position +1
 - F - Cycle Fullscreen
-- ⌥E - Cycle edition
+- A-E - Cycle edition
 
 ## Remote-Style Controls
 
@@ -127,26 +137,12 @@ We watch a tonne of videos now, so it's good to be efficient with them. Go learn
 
 ## Panel Controls
 
-- ⌥⇧V - Video panel
-- ⌥⇧A - Audio panel
-- ⌥⇧S - Subtitle panel
-- ^⇧V - Cycle Video track
-- ^⇧S - Cycle Subtitle track
-- ^⇧A - Cycle Audio track
-
-## Key Legend
-
-- ⌘ = Command
-- ⌥ = Option/Alt
-- ⇧ = Shift
-- ^ = Control
-- ↑ = Up arrow
-- ↓ = Down arrow
-- → = Right arrow
-- ← = Left arrow
-- ⌫ = Delete/Backspace
-- ↩ = Return
-- ⇥ = Tab
+- A-S-V - Video panel
+- A-S-A - Audio panel
+- A-S-S - Subtitle panel
+- C-S-V - Cycle Video track
+- C-S-S - Cycle Subtitle track
+- C-S-A - Cycle Audio track
 
 _Note: These keybindings are for IINA Player. Key combinations may vary depending on your OS and IINA version._ 🎥
 
