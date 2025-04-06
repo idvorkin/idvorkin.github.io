@@ -16,11 +16,11 @@ There's no way I'm swinging that thing between my legs; I'm going to kill my bac
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Swings:](#swings)
-  - [TGUs:](#tgus)
-  - [Goals](#goals)
-  - [KB Squats](#kb-squats)
-  - [Heavy Clubs](#heavy-clubs)
+- [Swings](#swings)
+- [TGUs](#tgus)
+- [Goals](#goals)
+- [KB Squats](#kb-squats)
+- [Heavy Clubs](#heavy-clubs)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -29,7 +29,7 @@ I instantly liked Turkish Get-Ups (TGUs); they have a nice flow and feel great. 
 
 A year later, I decided to try them, and I love them! At 44, every day I woke up, my back would be stiff until I stretched out. When I started doing swings, the next day my back was as loose as a 30-year-old's. :)
 
-### Swings:
+### Swings
 
 {% include youtube.html src="e-gsAvLdi68" %}
 
@@ -39,9 +39,7 @@ I also wrote an [app](https://github.com/idvorkin/video-edit/blob/3676fd9d827ee8
 
 {% include youtube.html src="BD6Sys1GIuU?si=tVnJMGwbD34SPFw5" %}
 
-### TGUs:
-
-- Video coming
+### TGUs
 
 {% include youtube.html src="D_SYiBdeUEE" %}
 
