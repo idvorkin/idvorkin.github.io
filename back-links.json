@@ -3650,13 +3650,13 @@
             "url": "/operating-manual"
         },
         "/osx": {
-            "description": "I pretty much use mac exclusively. I have 3 at work, and a mac mini at home, and I’m an automation nerd so I try to have everything auto install/syncronize across the machines. On the mac, I’m either in chrome/edge, Cursor (the new VS.code), the terminal (I use iterm), capcut (video editor), zoom, or the few super handy utilities I list below.\n\n",
+            "description": "\nCheck out my [Mac install script](https://github.com/idvorkin/Settings/blob/master/mac/install.sh) for automated setup of my Mac environment.\n\n",
             "doc_size": 18000,
             "file_path": "_site/osx.html",
             "incoming_links": [
                 "/tools"
             ],
-            "last_modified": "2025-03-08T13:00:52-08:00",
+            "last_modified": "2025-04-09T06:15:20.305889",
             "markdown_path": "_d/osx.md",
             "outgoing_links": [
                 "/screencast"

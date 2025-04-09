@@ -6,6 +6,8 @@ redirect-from:
   - /mac
 ---
 
+{% include alert.html style="info" content="Check out my [Mac install script](https://github.com/idvorkin/Settings/blob/master/mac/install.sh) for automated setup of my Mac environment." %}
+
 I pretty much use mac exclusively. I have 3 at work, and a mac mini at home, and I'm an automation nerd so I try to have everything auto install/syncronize across the machines. On the mac, I'm either in chrome/edge, Cursor (the new VS.code), the terminal (I use iterm), capcut (video editor), zoom, or the few super handy utilities I list below.
 
 <!-- prettier-ignore-start -->
@@ -109,6 +111,12 @@ OSX has several built-in ways to manage screen resolutions and displays:
      - Supports HiDPI and scaled resolutions
      - Can override system limitations for refresh rates
      - Free and open source
+   - I use [my custom zsh aliases](https://github.com/idvorkin/Settings/blob/d1c2fa5148414f438ea7cdc871fc28f35822b78b/shared/zsh_include.sh#L599) to quickly fix and check display settings:
+     ```bash
+     # From my zsh_include.sh
+     alias lg-fix='betterdisplaycli set --resolution=3840x2160 --refreshRate=59.94Hz'
+     alias lg-show='betterdisplaycli get --resolution --refreshRate'
+     ```
 
 5. **EDID Override Method for 4K@120Hz**:
 
