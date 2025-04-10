@@ -118,6 +118,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
   - [How do handle poor communication, ESL, ineffective communication in some modalities](#how-do-handle-poor-communication-esl-ineffective-communication-in-some-modalities)
 - [Cross Org Influence](#cross-org-influence)
+  - [How do you think about escalations?](#how-do-you-think-about-escalations)
 - [Team Insecurity](#team-insecurity)
   - [Everyone wants to feel supported](#everyone-wants-to-feel-supported)
   - [Maintain perspective](#maintain-perspective)
@@ -1695,6 +1696,24 @@ For folks who can get flustered representing their work in standups, pre-write t
 - All plans change when you're punched in the face
   - Execution Tracking
   - Flex funding cross org
+
+### How do you think about escalations?
+
+I think they'd be a lot less stressful/dramatic if they were called by the more appropriate term — priority alignment!
+
+Escalations aren’t about someone being wrong—they’re about two teams or individuals pursuing locally correct goals that happen to conflict. In those moments, there isn’t a clear “right” answer at the current level. The solution is to align on which priority matters more, and that often requires bringing in the next level of leadership to make the call.
+
+Priority alignment is not a failure—it’s a sign of healthy systems working. The alternatives: stalemates, resentment, unresolved tension, flip flopping, those are the failures.
+
+Here's what healthy priority alignment looks like:
+
+Understand both perspectives clearly. What is each side trying to achieve? What goals are in tension?
+
+Lay out the trade-offs explicitly. How does each proposed solution affect each goal?
+
+Don't escalate the problem—escalate the decision. Come with options and context. Recommend a path forward,
+
+Pro tip: I always remind folks—if the priorities were obvious, they wouldn't be having this conversation.
 
 ## Team Insecurity
 
