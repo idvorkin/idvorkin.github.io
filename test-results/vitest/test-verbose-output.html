@@ -8,6 +8,9 @@ npx vitest run --reporter=verbose
 🔍 recent-posts container element: found
 🔍 Fetching back-links.json...
 
+[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
+
 [90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
 [22m[39m🔍 Sorted pages, first 5: [
   { url: [32m'/page1'[39m, title: [32m'Page 1'[39m, last_modified: [32m'2023-01-01'[39m },
@@ -25,36 +28,6 @@ npx vitest run --reporter=verbose
 [22m[39m🔍 updateRecentPosts function called
 🔍 recent-posts container element: found
 🔍 Fetching back-links.json...
-
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould load random eulogy roles
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould use default element IDs if not provided
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould load content for the Enjoy page
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould load content for the 7 Habits page
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould load content for the IG66 page
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould load content for the Balance page
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould create a radar map visualization
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle missing Plotly
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould create a work balance chart
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle missing Plotly
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould create a rest time chart
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle missing Plotly
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
-[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
 
 [90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
 [22m[39m❌ Error loading recent posts: Error: Test error
@@ -87,6 +60,33 @@ npx vitest run --reporter=verbose
 🔍 Updating recent-posts content with HTML <p>No recent posts found.</p>...
 ✅ Recent posts updated successfully
 
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould load random eulogy roles
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould use default element IDs if not provided
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould load content for the Enjoy page
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould load content for the 7 Habits page
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould load content for the IG66 page
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould load content for the Balance page
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould create a radar map visualization
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle missing Plotly
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould create a work balance chart
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle missing Plotly
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould create a rest time chart
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle missing Plotly
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
 [90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2minitRecentPosts[2m > [22m[2mshould add event listener if document is still loading
 [22m[39m🔍 initRecentPosts called
 🔍 Document still loading, adding DOMContentLoaded listener
@@ -2392,16 +2392,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m798.698083[39m,
-        nodeStart: [33m0.2839899999962654[39m,
-        v8Start: [33m2.938431999995373[39m,
-        bootstrapComplete: [33m21.065579999994952[39m,
-        environment: [33m9.946234999981243[39m,
-        loopStart: [33m27.0382990000071[39m,
+        duration: [33m795.748902[39m,
+        nodeStart: [33m0.3189449999772478[39m,
+        v8Start: [33m3.082890999998199[39m,
+        bootstrapComplete: [33m19.488761999993585[39m,
+        environment: [33m10.158956999977818[39m,
+        loopStart: [33m25.426553999976022[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m130.861455[39m
+        idleTime: [33m119.003426[39m
       },
-      timeOrigin: [33m1744307769269.469[39m
+      timeOrigin: [33m1744902039246.153[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -4997,16 +4997,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m845.481049[39m,
-        nodeStart: [33m0.2839899999962654[39m,
-        v8Start: [33m2.938431999995373[39m,
-        bootstrapComplete: [33m21.065579999994952[39m,
-        environment: [33m9.946234999981243[39m,
-        loopStart: [33m27.0382990000071[39m,
+        duration: [33m833.296377[39m,
+        nodeStart: [33m0.3189449999772478[39m,
+        v8Start: [33m3.082890999998199[39m,
+        bootstrapComplete: [33m19.488761999993585[39m,
+        environment: [33m10.158956999977818[39m,
+        loopStart: [33m25.426553999976022[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m130.861455[39m
+        idleTime: [33m119.003426[39m
       },
-      timeOrigin: [33m1744307769269.469[39m
+      timeOrigin: [33m1744902039246.153[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7598,16 +7598,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m885.820397[39m,
-        nodeStart: [33m0.2839899999962654[39m,
-        v8Start: [33m2.938431999995373[39m,
-        bootstrapComplete: [33m21.065579999994952[39m,
-        environment: [33m9.946234999981243[39m,
-        loopStart: [33m27.0382990000071[39m,
+        duration: [33m869.997202[39m,
+        nodeStart: [33m0.3189449999772478[39m,
+        v8Start: [33m3.082890999998199[39m,
+        bootstrapComplete: [33m19.488761999993585[39m,
+        environment: [33m10.158956999977818[39m,
+        loopStart: [33m25.426553999976022[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m130.861455[39m
+        idleTime: [33m119.003426[39m
       },
-      timeOrigin: [33m1744307769269.469[39m
+      timeOrigin: [33m1744902039246.153[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10221,16 +10221,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m930.277588[39m,
-        nodeStart: [33m0.2839899999962654[39m,
-        v8Start: [33m2.938431999995373[39m,
-        bootstrapComplete: [33m21.065579999994952[39m,
-        environment: [33m9.946234999981243[39m,
-        loopStart: [33m27.0382990000071[39m,
+        duration: [33m907.719703[39m,
+        nodeStart: [33m0.3189449999772478[39m,
+        v8Start: [33m3.082890999998199[39m,
+        bootstrapComplete: [33m19.488761999993585[39m,
+        environment: [33m10.158956999977818[39m,
+        loopStart: [33m25.426553999976022[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m130.861455[39m
+        idleTime: [33m119.003426[39m
       },
-      timeOrigin: [33m1744307769269.469[39m
+      timeOrigin: [33m1744902039246.153[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10631,18 +10631,18 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m tests/unit/index.test.ts[2m > [22mIndex Module[2m > [22mshould initialize when ready
 
 [2m Test Files [22m [1m[32m12 passed[39m[22m[90m (12)[39m
 [2m      Tests [22m [1m[32m137 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (142)[39m
-[2m   Start at [22m 17:56:09
-[2m   Duration [22m 3.08s[2m (transform 565ms, setup 203ms, collect 699ms, tests 517ms, environment 4.68s, prepare 1.08s)[22m
+[2m   Start at [22m 15:00:39
+[2m   Duration [22m 3.05s[2m (transform 451ms, setup 203ms, collect 624ms, tests 512ms, environment 4.52s, prepare 1.04s)[22m
 
 </pre></body></html>
