@@ -2,13 +2,40 @@ npx vitest run --reporter=verbose
 
 [1m[7m[36m RUN [39m[27m[22m [36mv3.0.8 [39m[90m/home/runner/work/idvorkin.github.io/idvorkin.github.io[39m
 
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould load random eulogy roles
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould use default element IDs if not provided
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould load content for the Enjoy page
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould load content for the 7 Habits page
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould load content for the IG66 page
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould load content for the Balance page
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould create a radar map visualization
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle missing Plotly
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould create a work balance chart
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle missing Plotly
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould create a rest time chart
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle missing Plotly
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle errors gracefully
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
+ [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
+[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
+
 [90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
 [22m[39m🔍 updateRecentPosts function called
 🔍 recent-posts container element: found
 🔍 Fetching back-links.json...
-
-[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
 
 [90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
 [22m[39m🔍 Sorted pages, first 5: [
@@ -59,33 +86,6 @@ npx vitest run --reporter=verbose
 🔍 Updating recent-posts content with HTML <p>No recent posts found.</p>...
 ✅ Recent posts updated successfully
 
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould load random eulogy roles
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould use default element IDs if not provided
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_random_eulogy[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould load content for the Enjoy page
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_enjoy2[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould load content for the 7 Habits page
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_7_habits[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould load content for the IG66 page
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_ig66[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould load content for the Balance page
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mload_balance[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould create a radar map visualization
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle missing Plotly
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_radar_map[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould create a work balance chart
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle missing Plotly
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_work[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould create a rest time chart
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle missing Plotly
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_balance_chart_by_desired_time_rest[2m > [22mshould handle errors gracefully
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
- [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
 [90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2minitRecentPosts[2m > [22m[2mshould add event listener if document is still loading
 [22m[39m🔍 initRecentPosts called
 🔍 Document still loading, adding DOMContentLoaded listener
@@ -2391,16 +2391,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m795.748902[39m,
-        nodeStart: [33m0.3189449999772478[39m,
-        v8Start: [33m3.082890999998199[39m,
-        bootstrapComplete: [33m19.488761999993585[39m,
-        environment: [33m10.158956999977818[39m,
-        loopStart: [33m25.426553999976022[39m,
+        duration: [33m777.642697[39m,
+        nodeStart: [33m0.2764559999923222[39m,
+        v8Start: [33m2.82353900000453[39m,
+        bootstrapComplete: [33m21.00599800000782[39m,
+        environment: [33m10.009137999993982[39m,
+        loopStart: [33m26.94813599999179[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m119.003426[39m
+        idleTime: [33m135.560403[39m
       },
-      timeOrigin: [33m1744902039246.153[39m
+      timeOrigin: [33m1745685755534.338[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -4996,16 +4996,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m833.296377[39m,
-        nodeStart: [33m0.3189449999772478[39m,
-        v8Start: [33m3.082890999998199[39m,
-        bootstrapComplete: [33m19.488761999993585[39m,
-        environment: [33m10.158956999977818[39m,
-        loopStart: [33m25.426553999976022[39m,
+        duration: [33m820.712684[39m,
+        nodeStart: [33m0.2764559999923222[39m,
+        v8Start: [33m2.82353900000453[39m,
+        bootstrapComplete: [33m21.00599800000782[39m,
+        environment: [33m10.009137999993982[39m,
+        loopStart: [33m26.94813599999179[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m119.003426[39m
+        idleTime: [33m135.560403[39m
       },
-      timeOrigin: [33m1744902039246.153[39m
+      timeOrigin: [33m1745685755534.338[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7597,16 +7597,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m869.997202[39m,
-        nodeStart: [33m0.3189449999772478[39m,
-        v8Start: [33m3.082890999998199[39m,
-        bootstrapComplete: [33m19.488761999993585[39m,
-        environment: [33m10.158956999977818[39m,
-        loopStart: [33m25.426553999976022[39m,
+        duration: [33m847.290249[39m,
+        nodeStart: [33m0.2764559999923222[39m,
+        v8Start: [33m2.82353900000453[39m,
+        bootstrapComplete: [33m21.00599800000782[39m,
+        environment: [33m10.009137999993982[39m,
+        loopStart: [33m26.94813599999179[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m119.003426[39m
+        idleTime: [33m135.560403[39m
       },
-      timeOrigin: [33m1744902039246.153[39m
+      timeOrigin: [33m1745685755534.338[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10220,16 +10220,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m907.719703[39m,
-        nodeStart: [33m0.3189449999772478[39m,
-        v8Start: [33m3.082890999998199[39m,
-        bootstrapComplete: [33m19.488761999993585[39m,
-        environment: [33m10.158956999977818[39m,
-        loopStart: [33m25.426553999976022[39m,
+        duration: [33m882.882889[39m,
+        nodeStart: [33m0.2764559999923222[39m,
+        v8Start: [33m2.82353900000453[39m,
+        bootstrapComplete: [33m21.00599800000782[39m,
+        environment: [33m10.009137999993982[39m,
+        loopStart: [33m26.94813599999179[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m119.003426[39m
+        idleTime: [33m135.560403[39m
       },
-      timeOrigin: [33m1744902039246.153[39m
+      timeOrigin: [33m1745685755534.338[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10592,6 +10592,16 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle errors during plot creation
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrandom_prompt_for_label[2m > [22mshould find a random prompt for a label
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mcategory_to_prompts_text[2m > [22mshould convert category elements to text with prompts
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent posts module
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent all posts if container exists
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould not initialize recent all posts if container doesn't exist
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping
 [90mstdout[2m | tests/unit/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
 [22m[39mappend_randomizer_div #non-existent not present
 
@@ -10606,16 +10616,6 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould append content from the factory when parent is found
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould handle click events on non-link elements
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not regenerate content when clicking on a link
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent posts module
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent all posts if container exists
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould not initialize recent all posts if container doesn't exist
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
@@ -10641,6 +10641,6 @@ Toggle element with ID remaining-posts-toggle not found
 
 [2m Test Files [22m [1m[32m12 passed[39m[22m[90m (12)[39m
 [2m      Tests [22m [1m[32m137 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (142)[39m
-[2m   Start at [22m 15:00:39
-[2m   Duration [22m 3.05s[2m (transform 451ms, setup 203ms, collect 624ms, tests 512ms, environment 4.52s, prepare 1.04s)[22m
+[2m   Start at [22m 16:42:35
+[2m   Duration [22m 3.07s[2m (transform 566ms, setup 140ms, collect 720ms, tests 533ms, environment 4.58s, prepare 1.06s)[22m
 
