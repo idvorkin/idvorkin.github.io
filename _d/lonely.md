@@ -7,11 +7,24 @@ redirect_from:
   - /loneliness
 ---
 
-In a study of 1,000 Americans, 36% of respondents reported feeling lonely "frequently", "almost all the time" or "all the time" in the prior four weeks. 61% of young people aged 18-25 and 51% of mothers with young children reported these miserable degrees of loneliness. The cost of loneliness is high. Loneliness is linked to early mortality and a wide array of seriousphysical and emotional problems, including depression, anxiety, heart disease, substance abuse,and domestic abuse.
+Loneliness is not just a personal feeling—it's a growing societal trend. In a study of 1,000 Americans, 36% of respondents reported feeling lonely "frequently", "almost all the time" or "all the time" in the prior four weeks. 61% of young people aged 18-25 and 51% of mothers with young children reported these miserable degrees of loneliness. The cost of loneliness is high: it is linked to early mortality and a wide array of serious physical and emotional problems, including depression, anxiety, heart disease, substance abuse, and domestic abuse.
+
+Recent data shows the problem is deepening. Since 1990, the percentage of U.S. adults with no close friends has quadrupled to 12%, while those with ten or more close friends has dropped nearly threefold. The average time Americans spend with friends has plummeted from 6.5 hours per week to just 4 hours (2014–2019). Nearly 40% of Americans now have online-only friendships, and among teenagers, daily in-person time with friends outside school has dropped from 140 minutes to just 40 minutes over the past two decades. These trends reflect a broader "Friendship Recession," where work, family, and digital life increasingly crowd out opportunities for real connection, making loneliness a default for many. ([source](https://www.happiness.hks.harvard.edu/february-2025-issue/the-friendship-recession-the-lost-art-of-connecting))
 
 ## General
 
-From [harvard](https://mcc.gse.harvard.edu/reports/loneliness-in-america)
+### The Friendship Recession
+
+**TL;DR: The Friendship Recession: The Lost Art of Connecting ([Harvard Happiness Lab, Feb 2025](https://www.happiness.hks.harvard.edu/february-2025-issue/the-friendship-recession-the-lost-art-of-connecting))**
+
+- Work and family have become dominant priorities, crowding out time for friendships and community involvement.
+- Digital-only friendships are on the rise, but they don't fully replace the benefits of in-person connection.
+- The decline in community activities, volunteering, and organized religion has eroded traditional spaces for forming friendships.
+- Reversing the "Friendship Recession" requires both individual effort (prioritizing social connection) and broader cultural change.
+- Forming new friendships often requires embracing discomfort and seeking out novel, shared experiences.
+- Sustaining friendships thrives on ritual and repetition—regular group activities and consistent meetups help deepen bonds.
+- The shift toward solitude and convenience can create a self-reinforcing cycle of isolation, making it harder to reconnect over time.
+- Small, daily choices to reach out, show up, and invest in relationships can help reshape both personal and societal culture.
 
 ### Loneliness
 

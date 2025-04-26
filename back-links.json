@@ -1200,7 +1200,6 @@
             "file_path": "_site/chapters.html",
             "incoming_links": [
                 "/42",
-                "/lonely",
                 "/retire",
                 "/y25"
             ],
@@ -3132,14 +3131,14 @@
             "url": "/like-switch"
         },
         "/lonely": {
-            "description": "In a study of 1,000 Americans, 36% of respondents reported feeling lonely “frequently”, “almost all the time” or “all the time” in the prior four weeks. 61% of young people aged 18-25 and 51% of mothers with young children reported these miserable degrees of loneliness. The cost of loneliness is high. Loneliness is linked to early mortality and a wide array of seriousphysical and emotional problems, including depression, anxiety, heart disease, substance abuse,and domestic abuse.\n\n",
-            "doc_size": 34000,
+            "description": "Loneliness is not just a personal feeling—it’s a growing societal trend. In a study of 1,000 Americans, 36% of respondents reported feeling lonely “frequently”, “almost all the time” or “all the time” in the prior four weeks. 61% of young people aged 18-25 and 51% of mothers with young children reported these miserable degrees of loneliness. The cost of loneliness is high: it is linked to early mortality and a wide array of serious physical and emotional problems, including depression, anxiety, heart disease, substance abuse, and domestic abuse.\n\n",
+            "doc_size": 36000,
             "file_path": "_site/lonely.html",
             "incoming_links": [],
-            "last_modified": "2025-03-27T18:37:04-07:00",
+            "last_modified": "2025-04-26T09:41:03.155520",
             "markdown_path": "_d/lonely.md",
             "outgoing_links": [
-                "/chapters"
+                "/life-chapters"
             ],
             "redirect_url": "",
             "title": "Loneliness",
