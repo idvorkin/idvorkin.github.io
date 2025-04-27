@@ -8,6 +8,7 @@ redirect-from:
   - time-ltd
   - life-ltd
   - mortality
+imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20250427_055824.webp
 ---
 
 Mortality is a word most people try to avoid. But, earlier or later, it's something we all face. Our life is finite and our time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past.
@@ -47,6 +48,8 @@ Mortality is a word most people try to avoid. But, earlier or later, it's someth
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
+<img src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250427_055824.webp" style="float:right;max-width:350px;width:50%;margin:0 0 1em 1em;" />
+
 In a poem
 
       Too many dreams, not enough sleep
@@ -55,15 +58,15 @@ In a poem
       The wanderer searches, near and far
       Everyone dreams for their north star
 
-      It moves and  it gleams, so hungry and restless
+      It moves and  it gleams, so hungry and restless
       Where am I going? When will I live this?
 
 In a Dr. Seuss Poem
 
     How did it get so late so soon?
-    It’s night before it’s afternoon.
+    It's night before it's afternoon.
 
-    December is here before it’s June.
+    December is here before it's June.
     My goodness how the time has flewn.
 
     How did it get so late so soon?
@@ -178,19 +181,19 @@ Igor Dvorkin, a dealer of smiles and wonder, a relentless explorer of ideas, and
 
 Born in 1972, Igor spent his years mastering the balance between structured discipline and joyful spontaneity. A devoted husband to Tori, an ever-present father to Zach and Amelia, and an unshakable friend to those lucky enough to know him, he poured his energy into what mattered most: creating moments of joy and wonder. Whether it was walking his kids to school, making balloon animals, or perfecting the art of the kettlebell swing, he pursued life with the same philosophy he brought to code—efficiency, creativity, and a refusal to accept mediocrity.
 
-A lifelong technologist, Igor’s fingerprints are found in countless lines of code and in the mentorship he provided to engineers across the world. From Microsoft to Amazon to Meta, he built not just systems, but careers, always pushing his teams to be better—not just technically, but as human beings. He saw engineering management not just as a job but as an opportunity to shape people’s futures, knowing that a well-placed question or insight could change someone’s trajectory.
+A lifelong technologist, Igor's fingerprints are found in countless lines of code and in the mentorship he provided to engineers across the world. From Microsoft to Amazon to Meta, he built not just systems, but careers, always pushing his teams to be better—not just technically, but as human beings. He saw engineering management not just as a job but as an opportunity to shape people's futures, knowing that a well-placed question or insight could change someone's trajectory.
 
-Igor never met a physical challenge he didn’t face head-on, whether it was Turkish get-ups with a 32kg kettlebell, biking in Seattle’s eternal drizzle, or mastering a new club rotation for shoulder mobility. He lived by the principle that movement is life, but always with an eye toward sustainability—pushing himself hard, but never at the cost of being able to do it all again tomorrow.
+Igor never met a physical challenge he didn't face head-on, whether it was Turkish get-ups with a 32kg kettlebell, biking in Seattle's eternal drizzle, or mastering a new club rotation for shoulder mobility. He lived by the principle that movement is life, but always with an eye toward sustainability—pushing himself hard, but never at the cost of being able to do it all again tomorrow.
 
 His love of magic was not just a hobby but a philosophy—an understanding that the best moments in life come from surprise, delight, and the shared experience of wonder. Even as an expert in the Tamariz stack, he knew the greatest trick was simply bringing people together and making them smile.
 
-To the end, he remained an essentialist, focused on what truly mattered: his family, his friends, and the rare and beautiful satisfaction of seeing something done right. He leaves behind not just a legacy of work, but a philosophy—live deliberately, be a class act, and for God’s sake, don’t skip the gym.
+To the end, he remained an essentialist, focused on what truly mattered: his family, his friends, and the rare and beautiful satisfaction of seeing something done right. He leaves behind not just a legacy of work, but a philosophy—live deliberately, be a class act, and for God's sake, don't skip the gym.
 
-His last request? _Don’t let Zach slack on his Spanish._
+His last request? _Don't let Zach slack on his Spanish._
 
 In lieu of flowers, please perform a random act of kindness, ride your bike instead of driving, and take a moment to appreciate the simple joy of a perfectly executed kettlebell swing.
 
-Igor, you were loved. You will be missed. And wherever you are now, we hope there’s a solid set of clubs, a fresh Neovim install, and someone to share a well-earned espresso with.
+Igor, you were loved. You will be missed. And wherever you are now, we hope there's a solid set of clubs, a fresh Neovim install, and someone to share a well-earned espresso with.
 
 ### Habit Coach
 
