@@ -8,7 +8,7 @@ redirect-from:
   - time-ltd
   - life-ltd
   - mortality
-imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20250427_055824.webp
+imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20250427_060414.webp
 ---
 
 Mortality is a word most people try to avoid. But, earlier or later, it's something we all face. Our life is finite and our time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past.
@@ -48,7 +48,7 @@ Mortality is a word most people try to avoid. But, earlier or later, it's someth
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-<img src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250427_055824.webp" style="float:right;max-width:350px;width:50%;margin:0 0 1em 1em;" />
+<img src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250427_060414.webp" style="float:right;max-width:350px;width:50%;margin:0 0 1em 1em;" />
 
 In a poem
 
