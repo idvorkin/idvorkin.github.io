@@ -25,14 +25,10 @@ Mortality is a word most people try to avoid. But, earlier or later, it's someth
     - [Role and Value Finder, Eulogy Writer](#role-and-value-finder-eulogy-writer)
     - [Quarter Month Tools - Goal Setter](#quarter-month-tools---goal-setter)
   - [Learning from your past - Tool Overview](#learning-from-your-past---tool-overview)
+    - [Why This Matters](#why-this-matters)
     - [Annual Review](#annual-review)
     - [Monthly Review](#monthly-review)
     - [Weekly Review](#weekly-review)
-    - [Who are you?](#who-are-you)
-    - [What are the roles in your life.](#what-are-the-roles-in-your-life)
-    - [What are your values?](#what-are-your-values)
-    - [How do you want to balance your time between your roles?](#how-do-you-want-to-balance-your-time-between-your-roles)
-    - [For each role:](#for-each-role)
 - [Coaches](#coaches)
   - [The Obituary GPT Wrote](#the-obituary-gpt-wrote)
   - [Habit Coach](#habit-coach)
@@ -121,50 +117,62 @@ Some people are allergic to goals, a few prompts that are less allergic
 
 ### Learning from your past - Tool Overview
 
+#### Why This Matters
+
+- **Brings Systematic Thinking to Life:**
+
+  - It's hard to consider all areas of life on the fly.
+  - This report helps ensure steady investment across key roles, such as father, husband, manager, magician, and athlete.
+
+- **Motivation Through Reflection:**
+
+  - When you notice value created, even in small ways, it highlights meaningful progress rather than just busywork.
+
+- **Gap Spotting and Growth:**
+
+  - By seeing where energy was spent or missing, you can reflect thoughtfully and adjust—without judgment.
+
+- **Memory Preservation:**
+
+  - It's difficult to remember the texture of a well-lived life week to week.
+  - These reports create a personal memory archive—a treasure to look back on later.
+
+- **Flexible, Human Coaching Feel:**
+
+  - The assistant lets you jump around as you wish, rather than forcing a rigid, section-by-section march.
+  - The goal is to flow with curiosity, not bureaucracy.
+
+- **Future Leverage:**
+
+  - Previous learnings can be incorporated dynamically to deepen future reflections.
+
+- **Plug Into Mortality Software Vision:**
+
+  - Every week is a transaction you can't undo.
+  - The report ensures your real capital—time, energy, emotion—is intentionally invested in what will matter at your eulogy, not just what was urgent or noisy.
+
+- **Blends Qualitative and Quantitative Reflection:**
+
+  - The weekly report combines stories and numbers, so growth is visible but not reduced to lifeless metrics.
+
+- **Amplifies Role and Goal Awareness:**
+
+  - When clear roles and goals are defined (for example, father, magician, athlete), the report becomes a real-time snapshot of how each investment is performing across life's portfolio.
+  - Without regular reflection, inertia and noise can quietly steal your time, and your days may be spent on what is urgent, not what is meaningful.
+
+- **Sharpens Intuition Over Time:**
+  - Weekly reflection isn't just about recording; it trains instinct.
+  - Small weekly reflections compound into sharper, faster, more values-aligned decisions over months and years—without needing brute force effort every time.
+
+---
+
+You don't need to track every breath—just enough to know you're spending your life where it matters.
+
 #### Annual Review
 
 #### Monthly Review
 
 #### Weekly Review
-
-<!-- >
-#### Who are you?
-#### What are the roles in your life.
-#### What are your values?
-#### How do you want to balance your time between your roles?
-
-#### For each role:
--  What does success look like?
- - What habits and skills can support this role.
-
-How should you act given a difficult situation.
-
-- Step 1: Eulogy Writer
-- Step 2: Mission Statement writer
-- Step 3: 5 Year Planner, 1 Year Planner, 1 Month Planner
-- Step 4: Day planner
-- Step 5: Mentoring
-- Step 6: Coaching
-
-- Hold you accountable to your goals.
-- Remind you when you're not living in congruance with your goals.
--->
-
-<!--
-What will mortality software do:
-
-- Help you figure out who you want to be.
-- Help you define the roles in your life.
-- Help you figure out your values.
-- Help you set goals for your roles
-- Habits for each role
-
-Help you define who you are:
-
-- Eulogy Writer
-- Mission Statement Writer
-- Habit Writer
--->
 
 ## Coaches
 
