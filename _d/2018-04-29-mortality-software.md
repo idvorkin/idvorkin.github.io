@@ -36,6 +36,7 @@ Mortality is a word most people try to avoid. But, earlier or later, it's someth
 - [Coaches](#coaches)
   - [The Obituary GPT Wrote](#the-obituary-gpt-wrote)
   - [Habit Coach](#habit-coach)
+  - [Affirmation Builder](#affirmation-builder)
   - [Reflection Coach](#reflection-coach)
 - [Appendix: Product Market Fit](#appendix-product-market-fit)
   - [When is this most appropriate?](#when-is-this-most-appropriate)
@@ -44,6 +45,8 @@ Mortality is a word most people try to avoid. But, earlier or later, it's someth
   - [Why doesn't this exist?](#why-doesnt-this-exist)
 - [FAQ](#faq)
   - [Why call it Time.Ltd](#why-call-it-timeltd)
+  - [Is this too rigid/static as my life changes?](#is-this-too-rigidstatic-as-my-life-changes)
+  - [Aren't checklists too rigid and mechanical?](#arent-checklists-too-rigid-and-mechanical)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -199,6 +202,27 @@ Igor, you were loved. You will be missed. And wherever you are now, we hope ther
 
 Great to have someone write for you.
 
+### Affirmation Builder
+
+The affirmation builder helps you create personalized daily affirmations based on your roles, values, and goals. Rather than generic affirmations, it crafts statements that resonate with who you want to be and what you want to achieve. For examples of powerful affirmations, see my [affirmations post](/affirmations).
+
+For example, if one of your roles is being a parent, and one of your values is patience, it might generate:
+"I choose to respond to my children with patience and understanding, seeing each interaction as an opportunity to model emotional intelligence."
+
+The key is that affirmations should be:
+
+- Aligned with your eulogy and values
+- Specific and actionable
+- Phrased in the present tense
+- Focused on what you can control
+- Written in your authentic voice
+
+The tool can also suggest times and ways to practice your affirmations, like during your morning routine or as part of meditation. The goal is to make the practice sustainable and meaningful rather than just another task.
+
+Learn more about affirmations and how they can transform your daily practice:
+
+{% include summarize-page.html src="/affirmations" %}
+
 ### Reflection Coach
 
 As we get older, we realize our time is finite, and th
@@ -245,3 +269,11 @@ Mitigations
 ### Why call it Time.Ltd
 
 I initially named my future mortality software package Life.ltd, but that, while funny, was too negative. Instead of thinking our life is limited, we should think our time is limited, and thus we should make sure we are using it well. Thus, I renamed my future mortality software Time.Ltd.
+
+### Is this too rigid/static as my life changes?
+
+No - the system is designed to be flexible and adapt with you. While it's recommended to only make major changes on a longer cycle (monthly/quarterly/yearly) to maintain consistency, you can and should adjust your goals, roles, and values as your life evolves. The key is finding the right balance between stability and adaptability.
+
+### Aren't checklists too rigid and mechanical?
+
+While checklists may seem overly rigid at first glance, they actually serve an important purpose. As explained in [The Checklist Manifesto](/checklist), having clear structure and clarity around your goals and values makes it easier to prioritize and make decisions. The framework isn't meant to be restrictive, but rather to provide helpful guideposts while still allowing for flexibility and spontaneity in how you achieve your goals.
