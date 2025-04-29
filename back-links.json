@@ -550,19 +550,19 @@
                 "/operating-manual",
                 "/process-journal"
             ],
-            "last_modified": "2025-02-15T08:08:25-08:00",
+            "last_modified": "2025-04-29T07:49:47.707009",
             "markdown_path": "_d/affirmations2.md",
             "outgoing_links": [
+                "/7h-c1",
+                "/7h-c2",
+                "/7h-c3",
+                "/7h-c5",
                 "/anxiety",
                 "/appreciate",
-                "/be-proactive",
                 "/class-act",
-                "/curious",
-                "/end-in-mind",
-                "/essentialism",
-                "/first-things-first",
-                "/first-understand",
-                "/insecure",
+                "/compassion",
+                "/essential",
+                "/imposter",
                 "/joy",
                 "/sublime",
                 "/writing"
@@ -963,7 +963,6 @@
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
-                "/affirmations",
                 "/anxiety",
                 "/d/habits",
                 "/emotions",
@@ -1401,7 +1400,6 @@
             "file_path": "_site/curious.html",
             "incoming_links": [
                 "/90days",
-                "/affirmations",
                 "/class-act",
                 "/coaching",
                 "/emotions",
@@ -2234,7 +2232,6 @@
             "incoming_links": [
                 "/4dx",
                 "/7-habits",
-                "/affirmations",
                 "/d/resistance",
                 "/elder",
                 "/productive",
@@ -2329,7 +2326,6 @@
             "file_path": "_site/essentialism.html",
             "incoming_links": [
                 "/4dx",
-                "/affirmations",
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
@@ -2445,7 +2441,6 @@
                 "/4dx",
                 "/7-habits",
                 "/90days",
-                "/affirmations",
                 "/delegate",
                 "/frog"
             ],
@@ -2473,7 +2468,6 @@
             "incoming_links": [
                 "/7-habits",
                 "/advice",
-                "/affirmations",
                 "/class-act",
                 "/curious",
                 "/negotiate",
@@ -2866,7 +2860,6 @@
             "file_path": "_site/insecure.html",
             "incoming_links": [
                 "/90days",
-                "/affirmations",
                 "/depression"
             ],
             "last_modified": "2024-09-14T14:16:00-07:00",
