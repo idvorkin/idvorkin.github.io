@@ -16,7 +16,7 @@ Every day I write out my affirmations. These positive statements help me challen
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Always Improving: Deliberate. Disciplined. Daily](#always-improving-deliberate-disciplined-daily)
+- [Do It Anyways: Deliberate. Disciplined. Daily](#do-it-anyways-deliberate-disciplined-daily)
 - [An essentialist: Know Essential. Provide Context. Prioritize Ruthlessly.](#an-essentialist-know-essential-provide-context-prioritize-ruthlessly)
 - [A class act: First Understand. Appreciate. Isn't that Curious](#a-class-act-first-understand-appreciate-isnt-that-curious)
 - [Calm like water: Be Present. This too shall pass. Work the problem](#calm-like-water-be-present-this-too-shall-pass-work-the-problem)
@@ -24,7 +24,7 @@ Every day I write out my affirmations. These positive statements help me challen
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-### Always Improving: Deliberate. Disciplined. Daily
+### Do It Anyways: Deliberate. Disciplined. Daily
 
 **Discipline is being proactive, it's the path to success.**
 
@@ -35,6 +35,12 @@ Every day I write out my affirmations. These positive statements help me challen
 {%include summarize-page.html src="/compassion" %}
 
 History:
+
+- 2025-05-03
+
+  - I had 'Always Improving', but it just didn't sound like me.
+  - 'Do It Anyways' better captures my grit and recommendation.
+  - Cracked this owrking on my TikTok for the video
 
 - 2025-02-01
   - I used to call this pay myself first, but it wasn't what it was about.
