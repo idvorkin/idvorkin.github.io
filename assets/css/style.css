@@ -94,6 +94,45 @@ https://css-tricks.com/line-clampin/
 }
 
 .nav-fa-icon {
-  font-size: 165%;
+  font-size: 32px;
   color: white;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Prevent navbar wrapping and ensure even spacing */
+.navbar > .navbar-nav,
+.navbar > .nav-link,
+.navbar > .nav-fa-icon,
+.navbar > button,
+.navbar > span {
+  flex-shrink: 0;
+}
+
+.navbar {
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+}
+
+.navbar .nav-link,
+.navbar .nav-fa-icon,
+.navbar button,
+.navbar span {
+  margin-right: 0.5rem;
+}
+
+#user-info {
+  display: flex;
+  align-items: center;
+  margin-right: 0 !important;
+}
+
+#user-pic {
+  width: 24px !important;
+  height: 24px !important;
+  margin-right: 0 !important;
+  object-fit: cover;
 }

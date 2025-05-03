@@ -79,3 +79,71 @@
 </script>
 
 {% endif %}
+
+<!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script>
+  // TODO: Replace with your Firebase project config
+  const firebaseConfig = {
+    apiKey: "AIzaSyAccYEOv0GTqvx4gvQvw_1DlAb4XVzS-jA",
+    authDomain: "webauth-4218b.firebaseapp.com",
+    projectId: "webauth-4218b",
+    storageBucket: "webauth-4218b.appspot.com",
+    messagingSenderId: "681434162649",
+    appId: "1:681434162649:web:1eb3706fc4045e831fe5c8",
+    measurementId: "G-QKTDF699C5",
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  // Auth UI logic
+  document.addEventListener("DOMContentLoaded", function () {
+    const loginBtn = document.getElementById("login-btn");
+    const logoutBtn = document.getElementById("logout-btn");
+    const userInfo = document.getElementById("user-info");
+    const userPic = document.getElementById("user-pic");
+
+    function showUser(user) {
+      let initials = "";
+      if (user.displayName) {
+        initials = user.displayName;
+      } else if (user.email) {
+        initials = user.email.split("@")[0];
+      } else {
+        initials = "User";
+      }
+      userPic.src =
+        user.photoURL ||
+        "https://ui-avatars.com/api/?name=" + encodeURIComponent(initials);
+      loginBtn.style.display = "none";
+      userInfo.style.display = "inline-block";
+    }
+    function showLogin() {
+      loginBtn.style.display = "inline-block";
+      userInfo.style.display = "none";
+    }
+
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        showUser(user);
+      } else {
+        showLogin();
+      }
+    });
+
+    if (loginBtn) {
+      loginBtn.onclick = function () {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().signInWithPopup(provider);
+      };
+    }
+    if (userPic) {
+      userPic.onclick = function () {
+        if (confirm("Do you want to logout?")) {
+          firebase.auth().signOut();
+        }
+      };
+    }
+  });
+</script>

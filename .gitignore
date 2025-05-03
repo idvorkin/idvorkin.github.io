@@ -46,3 +46,5 @@ blog.chroma.db/
 .cursor/rules/_*.mdc
 playwright-report/
 prompt-page.png
+# SpecStory explanation file
+.specstory/.what-is-this.md
