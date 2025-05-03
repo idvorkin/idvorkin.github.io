@@ -255,7 +255,8 @@
             "doc_size": 14000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/manager-book"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -291,7 +292,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-04-27T05:59:03.211718",
+            "last_modified": "2025-04-27T05:59:12-07:00",
             "markdown_path": "_d/42.md",
             "outgoing_links": [
                 "/chapters",
@@ -550,19 +551,19 @@
                 "/operating-manual",
                 "/process-journal"
             ],
-            "last_modified": "2025-05-03T07:38:24.667997",
+            "last_modified": "2025-05-03T07:40:30-07:00",
             "markdown_path": "_d/affirmations2.md",
             "outgoing_links": [
-                "/7h-c1",
-                "/7h-c2",
-                "/7h-c3",
-                "/7h-c5",
                 "/anxiety",
                 "/appreciate",
+                "/be-proactive",
                 "/class-act",
-                "/compassion",
-                "/essential",
-                "/imposter",
+                "/curious",
+                "/end-in-mind",
+                "/essentialism",
+                "/first-things-first",
+                "/first-understand",
+                "/insecure",
                 "/joy",
                 "/sublime",
                 "/writing"
@@ -932,7 +933,7 @@
                 "/joy",
                 "/timeoff"
             ],
-            "last_modified": "2025-04-04T06:53:06.092028",
+            "last_modified": "2025-04-04T06:53:08-07:00",
             "markdown_path": "_d/balloon.md",
             "outgoing_links": [
                 "/joy"
@@ -963,6 +964,7 @@
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
+                "/affirmations",
                 "/anxiety",
                 "/d/habits",
                 "/emotions",
@@ -994,22 +996,20 @@
                 "/job",
                 "/manager-book"
             ],
-            "last_modified": "2025-04-04T21:35:14.794458",
+            "last_modified": "2025-04-04T21:35:18+00:00",
             "markdown_path": "_posts/2018-03-18-being-a-great-manager.md",
             "outgoing_links": [
-                "/Coaching-Questions",
-                "/books",
-                "/coach",
-                "/decide",
-                "/grandmother-mind",
+                "/books-that-defined-me",
+                "/coaching",
+                "/curious",
+                "/decisive",
                 "/human-meetings",
                 "/manager-book",
                 "/mind-monsters",
                 "/moments-at-work",
                 "/pride",
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
-                "/sustainable-work",
-                "/the-manager-book"
+                "/sustainable-work"
             ],
             "redirect_url": "",
             "title": "Being the best manager I can be",
@@ -1078,6 +1078,8 @@
             "doc_size": 14000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
+                "/being-a-great-manager",
+                "/manager-book",
                 "/manager-book-appendix"
             ],
             "last_modified": "2021-02-13T08:15:36-08:00",
@@ -1200,6 +1202,7 @@
             "file_path": "_site/chapters.html",
             "incoming_links": [
                 "/42",
+                "/lonely",
                 "/retire",
                 "/y25"
             ],
@@ -1300,6 +1303,7 @@
             "doc_size": 27000,
             "file_path": "_site/coaching.html",
             "incoming_links": [
+                "/being-a-great-manager",
                 "/first-understand",
                 "/insecure",
                 "/job",
@@ -1400,6 +1404,8 @@
             "file_path": "_site/curious.html",
             "incoming_links": [
                 "/90days",
+                "/affirmations",
+                "/being-a-great-manager",
                 "/class-act",
                 "/coaching",
                 "/emotions",
@@ -1603,6 +1609,7 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
+                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
@@ -1955,9 +1962,11 @@
             "doc_size": 40000,
             "file_path": "_site/decisive.html",
             "incoming_links": [
+                "/being-a-great-manager",
                 "/coaching",
                 "/dsat",
                 "/job-hunt-stress",
+                "/manager-book",
                 "/pride",
                 "/random-idea"
             ],
@@ -2232,6 +2241,7 @@
             "incoming_links": [
                 "/4dx",
                 "/7-habits",
+                "/affirmations",
                 "/d/resistance",
                 "/elder",
                 "/productive",
@@ -2326,6 +2336,7 @@
             "file_path": "_site/essentialism.html",
             "incoming_links": [
                 "/4dx",
+                "/affirmations",
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
@@ -2441,6 +2452,7 @@
                 "/4dx",
                 "/7-habits",
                 "/90days",
+                "/affirmations",
                 "/delegate",
                 "/frog"
             ],
@@ -2468,6 +2480,7 @@
             "incoming_links": [
                 "/7-habits",
                 "/advice",
+                "/affirmations",
                 "/class-act",
                 "/curious",
                 "/negotiate",
@@ -2860,6 +2873,7 @@
             "file_path": "_site/insecure.html",
             "incoming_links": [
                 "/90days",
+                "/affirmations",
                 "/depression"
             ],
             "last_modified": "2024-09-14T14:16:00-07:00",
@@ -3027,7 +3041,7 @@
         },
         "/kettlebell": {
             "description": "There’s no way I’m swinging that thing between my legs; I’m going to kill my back. When I started working out with a trainer in 2020, they tried to get me to do a kettlebell swing, and I was like, no way. Then they spent 3 weeks teaching me Turkish Get-Ups (TGUs), which I absolutely loved. Then I read Simple and Sinister, and now I’ve achieved Timeless Simple and do heavy clubs instead of halos.\n\n",
-            "doc_size": 13000,
+            "doc_size": 14000,
             "file_path": "_site/kettlebell.html",
             "incoming_links": [
                 "/eulogy",
@@ -3036,7 +3050,7 @@
                 "/untangled",
                 "/y24"
             ],
-            "last_modified": "2025-04-06T17:31:27.658720",
+            "last_modified": "2025-04-06T17:32:01+00:00",
             "markdown_path": "_d/bells.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3129,10 +3143,10 @@
             "doc_size": 36000,
             "file_path": "_site/lonely.html",
             "incoming_links": [],
-            "last_modified": "2025-04-26T09:41:03.155520",
+            "last_modified": "2025-04-26T09:41:10-07:00",
             "markdown_path": "_d/lonely.md",
             "outgoing_links": [
-                "/life-chapters"
+                "/chapters"
             ],
             "redirect_url": "",
             "title": "Loneliness",
@@ -3178,24 +3192,24 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-04-10T10:54:59.478408",
+            "last_modified": "2025-04-10T10:55:18-07:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/90-days",
+                "/22",
                 "/90days",
                 "/being-a-great-manager",
-                "/books",
-                "/coach",
+                "/books-that-defined-me",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/decide",
+                "/d/habits",
+                "/decisive",
                 "/dip",
                 "/dsat",
-                "/habits",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
+                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3206,11 +3220,9 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
-                "/td/machine-learning",
                 "/testing",
-                "/twentytwo",
                 "/what-makes-a-leader",
-                "/write"
+                "/writing"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3377,6 +3389,7 @@
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
+                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -3501,7 +3514,7 @@
                 "/balance",
                 "/goals"
             ],
-            "last_modified": "2025-04-29T07:41:08.333902",
+            "last_modified": "2025-04-29T07:41:11-07:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
             "outgoing_links": [
                 "/affirmations",
@@ -3651,7 +3664,7 @@
             "incoming_links": [
                 "/tools"
             ],
-            "last_modified": "2025-04-09T06:15:20.305889",
+            "last_modified": "2025-04-09T06:15:22-07:00",
             "markdown_path": "_d/osx.md",
             "outgoing_links": [
                 "/screencast"
@@ -5165,7 +5178,7 @@
             "doc_size": 14000,
             "file_path": "_site/vlc.html",
             "incoming_links": [],
-            "last_modified": "2025-04-04T06:38:13.060037",
+            "last_modified": "2025-04-04T06:38:16-07:00",
             "markdown_path": "_d/vlc_player.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5212,7 +5225,7 @@
         },
         "/weeks": {
             "description": "\n\n",
-            "doc_size": 4300000,
+            "doc_size": 4301000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
                 "/balance"
@@ -5310,6 +5323,7 @@
                 "/amazon",
                 "/chow",
                 "/enable",
+                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
