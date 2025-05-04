@@ -3904,14 +3904,14 @@
         },
         "/prompts": {
             "description": "A prompt will kick start a great conversation, a great insight, and a great relationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.\n\n",
-            "doc_size": 30000,
+            "doc_size": 44000,
             "file_path": "_site/prompts.html",
             "incoming_links": [
                 "/coaching",
                 "/first-understand",
                 "/manager-book"
             ],
-            "last_modified": "2025-03-08T13:40:37-08:00",
+            "last_modified": "2025-05-04T09:57:49.749265",
             "markdown_path": "_d/prompt.md",
             "outgoing_links": [
                 "/coaching"

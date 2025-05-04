@@ -26,17 +26,33 @@ A prompt will kick start a great conversation, a great insight, and a great rela
   - [Conflict resolution](#conflict-resolution)
   - [Getting deeper](#getting-deeper)
   - [Meta & Feelings](#meta--feelings)
+  - [Building Self-Confidence](#building-self-confidence)
 - [Friendship Prompts (Not For Work)](#friendship-prompts-not-for-work)
   - [Safe](#safe)
   - [Deep](#deep)
   - [Vulnerable](#vulnerable)
+- [Couples Prompts (Meeting New Couples in Their 40s)](#couples-prompts-meeting-new-couples-in-their-40s)
+  - [Shared Experiences](#shared-experiences)
+  - [Life Lessons & Growth](#life-lessons--growth)
+  - [Fun & Hobbies](#fun--hobbies)
+  - [Family & Community](#family--community)
+  - [Looking Forward](#looking-forward)
+  - [Lighthearted & Fun](#lighthearted--fun)
+  - [Kids Easy](#kids-easy-couples)
+  - [Kids Hard](#kids-hard-couples)
 - [Kids](#kids)
   - [Fun](#fun)
   - [How Was Your Day](#how-was-your-day)
   - [When Feeling Disappointed](#when-feeling-disappointed)
   - [Better Than Good Job](#better-than-good-job)
+  - [Kids Easy](#kids-easy)
+  - [Kids Hard](#kids-hard)
 - [Mental Health](#mental-health)
   - [Feeling Anxious](#feeling-anxious)
+  - [Self-Compassion & Self-Care](#self-compassion--self-care)
+  - [Motivation & Purpose](#motivation--purpose)
+  - [Identity & Self-Discovery](#identity--self-discovery)
+  - [Gratitude & Positivity](#gratitude--positivity)
 - [Coaching Prompts](#coaching-prompts)
 
 <!-- vim-markdown-toc-end -->
@@ -165,6 +181,19 @@ Talk about emotions. Label one you're feeling, or what you sense from other pers
 - Ask for their fears. What are they afraid of (for their career, the project, an upcoming tough meeting)? Why? Share your own.
 - Trust check. How easy is it for both of you to share intimate things with each other? Why? What would make it easier? Discuss.
 
+### Building Self-Confidence
+
+- What's an accomplishment at work you're proud of?
+- When did you overcome a challenge you thought was too difficult?
+- What strengths do others see in you that you sometimes overlook?
+- How do you remind yourself of your value to the team?
+- What's a recent risk you took, and what did you learn from it?
+- Who is someone at work who inspires confidence, and what can you learn from them?
+- How do you handle setbacks or mistakes in a way that builds resilience?
+- What's a skill you've developed that you once doubted you could master?
+- How do you celebrate your progress, even on small goals?
+- What's one thing you can do this week to step outside your comfort zone at work?
+
 ## Friendship Prompts (Not For Work)
 
 From [berkley's building closeness](https://ggia.berkeley.edu/practice/36_questions_for_increasing_closeness#data-tab-how)
@@ -217,6 +246,112 @@ Spend 15 minutes on Safe, then Deep, and then on Vulnerable prompts
 - Your house, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item. What would it be? Why?
 - Of all the people in your family, whose death would you find most disturbing? Why?
 - Share a personal problem and ask your partner's advice on how he or she might handle it. Also, ask your partner to reflect back to you how you seem to be feeling about the problem you have chosen.
+
+## Couples Prompts (Meeting New Couples in Their 40s)
+
+### Shared Experiences
+
+- What's a favorite trip or adventure you've taken together?
+- Is there a tradition you've created as a couple that you look forward to each year?
+- What's something you both tried for the first time recently?
+- What's a memorable "first" you've shared (first home, first concert, etc.)?
+- Have you ever taken on a big project together? How did it go?
+- What's a challenge you've faced as a couple that brought you closer?
+- Is there a favorite restaurant or spot that's "yours" as a couple?
+- What's a funny or unexpected experience you've had together?
+- How do you like to celebrate special occasions?
+- What's a story you love to tell about your relationship?
+
+### Life Lessons & Growth
+
+- What's a lesson you've learned as a couple that you wish you'd known earlier?
+- How have your priorities changed over the years?
+- What's something you've each learned from the other?
+- How do you support each other during tough times?
+- What's a value you both share that's important in your relationship?
+- How do you handle disagreements or differences of opinion?
+- What's a habit or routine that's helped your relationship thrive?
+- How do you keep things fresh and exciting after years together?
+- What's a piece of advice you'd give to newlyweds?
+- How do you celebrate each other's individual growth and achievements?
+
+### Fun & Hobbies
+
+- Do you have any hobbies or activities you love doing together?
+- What's your go-to way to unwind after a busy week?
+- Is there a show, book, or podcast you both enjoy?
+- Have you ever taken a class or learned something new together?
+- What's your favorite way to spend a lazy Sunday?
+- Do you have a favorite game or sport you play together?
+- What's a creative project you've tackled as a team?
+- Is there a hobby one of you loves that the other has tried?
+- What's a "guilty pleasure" you both share?
+- If you could pick up a new hobby together, what would it be?
+
+### Family & Community
+
+- How do you like to spend time with family or friends?
+- Are there any causes or community activities you're passionate about?
+- What's your favorite way to celebrate milestones?
+- How do you balance time between family, friends, and each other?
+- Do you have any family traditions you've continued or started?
+- How do you stay connected with loved ones who live far away?
+- What's a favorite memory involving your extended family or friends?
+- How do you support your community as a couple?
+- What's a holiday or event you look forward to every year?
+- How do you handle busy seasons with lots of social commitments?
+
+### Looking Forward
+
+- Is there something new you'd like to try together in the next year?
+- What's on your shared bucket list?
+- If you could plan a dream weekend, what would it look like?
+- Are there any skills you want to learn together?
+- What's a goal you're working toward as a couple?
+- How do you envision your relationship evolving in the next decade?
+- Is there a place you've always wanted to visit together?
+- What's a tradition you hope to start in the future?
+- How do you keep dreaming and planning together?
+- What are you most excited about in the coming years?
+
+### Lighthearted & Fun
+
+- Who's the bigger risk-taker in your relationship?
+- What's a funny or unexpected thing that's happened to you as a couple?
+- If you could instantly become experts at something together, what would it be?
+- Who's more likely to plan a spontaneous adventure?
+- What's a silly disagreement you've had?
+- Who's the better cook (or takeout orderer)?
+- What's your go-to karaoke song as a couple?
+- If your relationship were a movie, what would the title be?
+- Who's more likely to forget an anniversary or birthday?
+- What's a quirky habit you love about each other?
+
+### Kids Easy (Couples)
+
+- What's your favorite thing to do as a family?
+- How do you make everyday moments fun for your kids?
+- What's a simple activity your kids always enjoy?
+- Do you have a go-to family meal or treat?
+- What's a favorite bedtime story or routine?
+- How do you help your kids make new friends?
+- What's a family tradition your kids look forward to?
+- How do you encourage your kids to try new things?
+- What's a favorite place you like to go together?
+- How do you celebrate small wins with your kids?
+
+### Kids Hard (Couples)
+
+- What's been the toughest parenting moment you've faced together?
+- How do you handle it when your kids are struggling emotionally?
+- What's a challenge you didn't expect as parents?
+- How do you support each other when parenting gets hard?
+- How do you talk to your kids about difficult topics?
+- What's a parenting value you sometimes disagree on?
+- How do you help your kids navigate friendships or social issues?
+- What's something you wish you'd known before becoming parents?
+- How do you balance discipline and empathy?
+- What's a big question you still have about parenting?
 
 ## Kids
 
@@ -292,6 +427,32 @@ Instead of just saying "good job", try these prompts to build mental strength an
 - "It's okay to feel frustrated. What could you try next?" Teach that discomfort is part of learning.
 - "I'm proud of how YOU feel about this." Help them find satisfaction in their own accomplishments.
 
+### Kids Easy
+
+- What's your favorite color?
+- What's your favorite thing to eat for lunch?
+- Do you have a favorite animal? Why do you like it?
+- What's the best thing you did today?
+- If you could be any superhero, who would you be?
+- What's your favorite game to play?
+- Who is your best friend?
+- What's something that always makes you laugh?
+- If you could have any pet, what would it be?
+- What's your favorite thing to do on the weekend?
+
+### Kids Hard
+
+- What's something that makes you feel worried or nervous?
+- Is there something you wish grown-ups understood about being a kid?
+- What's the hardest thing about school for you?
+- Have you ever felt left out? What happened?
+- What do you do when you feel sad?
+- Is there something you want to get better at?
+- What's a big question you have about the world?
+- Have you ever had to say sorry when it was hard?
+- What's something you wish you could change?
+- Who do you talk to when you need help?
+
 ## Mental Health
 
 ### Feeling Anxious
@@ -306,6 +467,58 @@ Instead of just saying "good job", try these prompts to build mental strength an
 - "What would I say to a friend in this situation?" Be as kind to yourself as you would be to others.
 - "What small step can I take right now?" Start with one tiny action to build momentum.
 - "How have I gotten through hard times before?" You've overcome challenges before, and you can do it again.
+
+### Self-Compassion & Self-Care
+
+- What's one kind thing you can do for yourself today?
+- How do you show yourself compassion when you make a mistake?
+- What helps you recharge when you're feeling drained?
+- What's a self-care habit you'd like to practice more often?
+- How do you talk to yourself when you're struggling?
+- What's something you love about yourself?
+- When was the last time you truly relaxed? What did you do?
+- How do you remind yourself that you're enough, just as you are?
+- What's a boundary you set to protect your well-being?
+- How do you celebrate small wins or progress?
+
+### Motivation & Purpose
+
+- What gets you out of bed in the morning?
+- What's a goal you're excited to work toward?
+- When do you feel most energized or alive?
+- Who or what inspires you to keep going?
+- What's something you're passionate about?
+- How do you stay motivated during tough times?
+- What does a meaningful life look like to you?
+- What's a dream you haven't given up on?
+- How do you remind yourself of your "why"?
+- What's a small step you can take toward your purpose this week?
+
+### Identity & Self-Discovery
+
+- What are three words you'd use to describe yourself?
+- What values are most important to you?
+- How have you changed in the past five years?
+- What makes you unique?
+- When do you feel most like yourself?
+- What's a belief you hold that shapes your life?
+- How do you express your true self?
+- What's something new you've learned about yourself recently?
+- Who are you when no one else is around?
+- What's a part of your identity you're proud of?
+
+### Gratitude & Positivity
+
+- What's something you're grateful for today?
+- Who is someone who made a positive impact on your life?
+- What's a small joy you experienced this week?
+- How do you remind yourself of good things during hard times?
+- What's a happy memory you like to revisit?
+- What's something beautiful you noticed recently?
+- How do you express gratitude to others?
+- What's a challenge that taught you something valuable?
+- Who or what makes you smile, no matter what?
+- What's a positive affirmation you can tell yourself right now?
 
 ## Coaching Prompts
 
