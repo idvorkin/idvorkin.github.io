@@ -3007,7 +3007,7 @@
         },
         "/joy": {
             "description": "If you could have one superpower, what would it be? At 46, you’d think I’d have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.\n\n",
-            "doc_size": 27000,
+            "doc_size": 30000,
             "file_path": "_site/joy.html",
             "incoming_links": [
                 "/affirmations",
@@ -3022,18 +3022,18 @@
                 "/mood",
                 "/sublime"
             ],
-            "last_modified": "2024-12-29T12:23:31-08:00",
+            "last_modified": "2025-05-05T07:03:35.597197",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
-                "/build-bubble-bike",
+                "/bbb",
+                "/cry",
                 "/eulogy",
                 "/happy",
                 "/ig66/621",
                 "/like-switch",
                 "/magic",
-                "/smilebox",
-                "/touching"
+                "/smilebox"
             ],
             "redirect_url": "",
             "title": "Smiles, Joy and Wonder",
@@ -5072,7 +5072,6 @@
             "incoming_links": [
                 "/class-act",
                 "/end-in-mind",
-                "/joy",
                 "/sublime"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",

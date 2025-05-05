@@ -27,6 +27,7 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Ballooning](#ballooning)
   - [Chocolate Balls and Bells](#chocolate-balls-and-bells)
   - [Mismatched shoes, and crazy shirts from TEMU](#mismatched-shoes-and-crazy-shirts-from-temu)
+  - [Handing out you are awesome cards](#handing-out-you-are-awesome-cards)
   - [Surprise birthday visit to my sister](#surprise-birthday-visit-to-my-sister)
 - [Theory](#theory)
   - [Attributes of Joy](#attributes-of-joy)
@@ -45,8 +46,6 @@ If you could have one superpower, what would it be? At 46, you'd think I'd have 
   - [Gayle - The Queen of Aggressive Kindness](#gayle---the-queen-of-aggressive-kindness)
     - [Steve Irwin](#steve-irwin)
     - [Mr. Rogers](#mr-rogers)
-    - [Patch Adams](#patch-adams)
-    - [Jimmy Darts](#jimmy-darts)
 - [Future Projects](#future-projects)
   - [Smile box](#smile-box)
   - [Bubble Show](#bubble-show)
@@ -111,9 +110,23 @@ My early [ballooning](/ig66/621) adventures:
 - First discoverd mismatched shoes, harder then it sounds, but crocks are great
 - Used to get fun shirts from thrift shops, but hard to find them. Then disovered TEMU had such shirts of ronly
 
+### Handing out you are awesome cards
+
+- I discovered these you are awesome cards on TEMU (add picture) they are great!
+- I wanted to push pocket them, but I can hand them out upside down and people just take them
+  - Zach observed the way I give them to people is I put it into their hand and say "Here you go", and they are stunned and take it. That didnt' work on a cop, he stepped away.
+- Usually by the time people read it I'm gone, but sometimes if I give them to someoen in a lobby they'll catch me on the way out and be like, hey thank you so much
+
+* Also considering printing on the back of business cards,
+  ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250505_065941.webp)
+
 ### Surprise birthday visit to my sister
 
 Link the YouTube Videos (merge the two together)
+
+{% include instagram_reel.html src="DEAMS6kJdRT" %}
+
+{% include instagram_reel.html src="DEALEilJjEw" %}
 
 ## Theory
 
@@ -232,7 +245,7 @@ I need more thinking here but something like.
 
 ## Role Models & Inspirations
 
-### Gayle - The Queen of Aggressive Kindness
+#### Gayle - The Queen of Aggressive Kindness
 
 One of my favorite inspirations is Gayle, a 78-year-old retired engineer with over 50 patents to her name, who now dedicates her retirement to "aggressive kindness." Follow her story on Instagram [@gayle.tales](https://www.instagram.com/gayle.tales/).
 
@@ -261,16 +274,6 @@ Brought joy through infectious enthusiasm and genuine wonder. His "Crikey!" wasn
 The master of gentle joy-bringing through authenticity. He showed that you don't need grand gestures - sometimes just truly seeing and valuing people is enough to bring joy. His legacy lives on through [@misterrogers_neighborhood](https://www.instagram.com/misterrogers_neighborhood/) and [The Fred Rogers Center](https://www.instagram.com/fredrogerscenter/).
 
 Different angle: I don't know if I'd use the word Joy, but an amazing Man, shows up in [makes me cry](/cry).
-
-#### Patch Adams
-
-A doctor who proved that medicine and joy aren't mutually exclusive. He showed how humor and unconventional approaches can bring light to even the darkest situations. Follow him [@patchadams.official](https://www.instagram.com/patchadams.official/).
-
-#### Jimmy Darts
-
-A modern joy-bringer who combines random acts of kindness with social media to create ripple effects of joy. Shows how even brief encounters can create lasting impact. Follow his adventures on [Instagram](https://www.instagram.com/jimmydarts/) and [TikTok](https://www.tiktok.com/@jimmydarts).
-
-Different angle: Seems to be too much about giving money.
 
 ## Future Projects
 
