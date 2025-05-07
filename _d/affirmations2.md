@@ -9,9 +9,9 @@ tags:
   - wisdom
 ---
 
-Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts. Repeating them often reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You'll want to find the ones that speak best to you. Oh and bonus points if beyond just writing out your daily affirmations you reflect on how you can/will and have applied them.
+Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts and behaviors. Repeating them reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You'll want to find the ones that speak best to you. Oh and bonus points if beyond just writing out your daily affirmations you reflect on how you can/will and have applied them.
 
-“Repetition births ritual. Rituals become sacred. The sacred commands power.”
+_Repetition births ritual. Rituals become Sacred. The sacred commands power_
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
