@@ -11,7 +11,7 @@ redirect-from:
 imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20250427_060414.webp
 ---
 
-Mortality is a word most people try to avoid. But, earlier or later, it's something we all face. Our life is finite and our time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past.
+Mortality is a word avoided. But, earlier or later, we all face it. Life is finite, time is limited. Mortality software helps us understand and then ensure we are using our precious time well. It helps us create our future and reflect on our past. Why must we do this? Because A)"first you've lost a day and the day becomes a week and a week becomes a month and before you know it you've lost a year" and B) "At the point change is obvious it's too late - it means the need for change is long since past"
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
