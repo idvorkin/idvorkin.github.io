@@ -1,11 +1,14 @@
 ---
 layout: post
 title: "Learn to Code"
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-learn-to-code.webp
 mermaid: true
 permalink: /learn-code
 ---
 
 Coding is way easier then people think. Here's some pointers.
+
+{% include blob_image_float_right.html src="blog/raccoon-learn-to-code.webp" %}
 
 First, use python, it's super easy. I highly recommend this online course which i would have called [programming for humans](https://www.coursera.org/learn/interactive-python-1)
 
