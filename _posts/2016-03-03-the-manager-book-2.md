@@ -94,6 +94,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [Understand roles: The road building analogy](#understand-roles-the-road-building-analogy)
   - [Prioritize work: Making tough trade-offs](#prioritize-work-making-tough-trade-offs)
   - [Estimate effort: Using SWAG and T-shirt sizing](#estimate-effort-using-swag-and-t-shirt-sizing)
+  - [Be wary the planning trap](#be-wary-the-planning-trap)
 - [Hiring](#hiring)
   - [What are you looking for when you recruit](#what-are-you-looking-for-when-you-recruit)
   - [Do they prefer to hire only experienced folks](#do-they-prefer-to-hire-only-experienced-folks)
@@ -1261,6 +1262,21 @@ For half-level planning, we'll estimate the cost in a coarse manner (in engineer
 For example:
 
 Suppose it takes 1 quarter for backend, 1 for Android, and 3 for iOS, but the tasks need to be completed n series (one after another). This would have a t-shirt size of 5 engineering quarters (a swag of 4+). With the critical path, or the longest sequence of tasks, being 3 quarters.
+
+### Be wary the planning trap
+
+- _xref: [Begin with the end in mind](/7h-c2)_
+- _Copied from this [tweet](https://x.com/Devon_Eriksen_/status/1910314718998192537)_
+
+This is a valuable lesson for our own lives. If there's something you want to do, something you want to try, some goal you have, it's easy to dip a toe in the water, test the temperature, and plan. A lot.
+
+Planning makes us feel good if we're afraid. Because it provides us with the illusion of security. Never mind that we don't know which scenarios are actually going to happen, never mind that we're planning for the wrong thing, planning makes us feel safe. And if we're nervous, we can plan forever.
+
+But the difference between the expert and the novice isn't theory or intelligence or plans. It's relevant domain knowledge. Gathered from empirical observation and experience.
+
+So the trick is to get into that feedback loop as soon as possible, and run it as fast as possible. Give yourself the most possible opportunities to learn, per unit time.
+
+We only learn while we are moving.
 
 ## Hiring
 

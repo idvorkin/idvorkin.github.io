@@ -255,8 +255,7 @@
             "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters",
-                "/manager-book"
+                "/chapters"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -338,7 +337,6 @@
                 "/books-that-defined-me",
                 "/d/time-off-2020-12",
                 "/depression",
-                "/end-in-mind",
                 "/eulogy",
                 "/first-things-first",
                 "/first-understand",
@@ -1079,7 +1077,6 @@
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
-                "/manager-book",
                 "/manager-book-appendix"
             ],
             "last_modified": "2021-02-13T08:15:36-08:00",
@@ -1609,7 +1606,6 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
-                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
@@ -1966,7 +1962,6 @@
                 "/coaching",
                 "/dsat",
                 "/job-hunt-stress",
-                "/manager-book",
                 "/pride",
                 "/random-idea"
             ],
@@ -2236,7 +2231,7 @@
         },
         "/end-in-mind": {
             "description": "All things are created twice, once in the design phase, and then again in the implementation phase. If you don’t perform the first creation, someone else will. At the extreme, imagine your eulogy, that’s the end too.\n\n",
-            "doc_size": 14000,
+            "doc_size": 17000,
             "file_path": "_site/end-in-mind.html",
             "incoming_links": [
                 "/4dx",
@@ -2247,10 +2242,10 @@
                 "/productive",
                 "/siy"
             ],
-            "last_modified": "2023-12-17T18:49:14+00:00",
+            "last_modified": "2025-05-12T09:24:26.401323",
             "markdown_path": "_d/7h-c2.md",
             "outgoing_links": [
-                "/7-habits",
+                "/7h",
                 "/dip",
                 "/essentialism",
                 "/eulogy",
@@ -3177,7 +3172,7 @@
         },
         "/manager-book": {
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
-            "doc_size": 161000,
+            "doc_size": 162000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
                 "/amazon",
@@ -3192,24 +3187,25 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-04-10T10:55:18-07:00",
+            "last_modified": "2025-05-12T09:24:26.401323",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/22",
+                "/7h-c2",
+                "/90-days",
                 "/90days",
                 "/being-a-great-manager",
-                "/books-that-defined-me",
+                "/books",
+                "/coach",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/d/habits",
-                "/decisive",
+                "/decide",
                 "/dip",
                 "/dsat",
+                "/habits",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
-                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3220,9 +3216,11 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
+                "/td/machine-learning",
                 "/testing",
+                "/twentytwo",
                 "/what-makes-a-leader",
-                "/writing"
+                "/write"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3389,7 +3387,6 @@
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
-                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -5323,7 +5320,6 @@
                 "/amazon",
                 "/chow",
                 "/enable",
-                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
