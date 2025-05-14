@@ -37,6 +37,8 @@ A hodgepodge of additional resources for the manager book.
   - [An engineering team as the parts of the car](#an-engineering-team-as-the-parts-of-the-car)
   - [New hire perspective is like landing a plane](#new-hire-perspective-is-like-landing-a-plane)
 - [Other Resources](#other-resources)
+  - [Fun Cartoons](#fun-cartoons)
+    - [Poor motivational choices](#poor-motivational-choices)
   - [Great Videos](#great-videos)
   - [Great Posts and Blogs](#great-posts-and-blogs)
   - [Great books](#great-books)
@@ -257,6 +259,12 @@ Specific team members for engine, seat belts, etc
 - Once landed, all you can see is the air port and a few streets
 
 ## Other Resources
+
+### Fun Cartoons
+
+#### Poor motivational choices
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250514_064737.webp)
 
 ### Great Videos
 

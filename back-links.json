@@ -1076,8 +1076,7 @@
             "doc_size": 16000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
-                "/being-a-great-manager",
-                "/manager-book-appendix"
+                "/being-a-great-manager"
             ],
             "last_modified": "2021-02-13T08:15:36-08:00",
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
@@ -2957,8 +2956,7 @@
                 "/bmy",
                 "/eulogy",
                 "/job-hunt-stress",
-                "/manager-book",
-                "/manager-book-appendix"
+                "/manager-book"
             ],
             "last_modified": "2024-12-02T16:30:31-08:00",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
@@ -3234,13 +3232,13 @@
                 "/manager-book",
                 "/operating-manual"
             ],
-            "last_modified": "2025-03-02T10:03:40-08:00",
+            "last_modified": "2025-05-14T08:15:59.963937",
             "markdown_path": "_d/manager-book-appendix.md",
             "outgoing_links": [
                 "/amazon",
-                "/books-that-defined-me",
+                "/books",
+                "/dream-job",
                 "/facebook",
-                "/job",
                 "/manager-book",
                 "/parkinson",
                 "/writing"
