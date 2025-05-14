@@ -258,7 +258,6 @@ A module to help you reflect onw hat you're thinking. Probably permeates everyth
 
 - You only control you
 - The suffering you add to them
--
 
 #### Love languages disconnects, DRAIN behaviors
 
