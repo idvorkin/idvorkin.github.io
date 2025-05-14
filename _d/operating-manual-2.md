@@ -13,8 +13,10 @@ I've learned what I like, how I want to spend my energy, and how I want to be th
 
 <!-- vim-markdown-toc-start -->
 
-- [A note on goals, aspiration and systems](#a-note-on-goals-aspiration-and-systems)
-- [A note on rituals](#a-note-on-rituals)
+- [Some philosphy and fortune cookies](#some-philosphy-and-fortune-cookies)
+  - [On goals, aspiration and systems](#on-goals-aspiration-and-systems)
+  - [On Rituals](#on-rituals)
+  - [Anchors and Clips: Why Climbers Don’t Plummet to Their Death](#anchors-and-clips-why-climbers-dont-plummet-to-their-death)
 - [Calendar - 2024 H2](#calendar---2024-h2)
 - [Morning Routine](#morning-routine)
   - [Daily Affirmations](#daily-affirmations)
@@ -73,19 +75,37 @@ I've learned what I like, how I want to spend my energy, and how I want to be th
 
 TODO: Split this post into How Igor Ticks, and igor
 
-## A note on goals, aspiration and systems
+## Some philosphy and fortune cookies
+
+### On goals, aspiration and systems
 
 - You don't rise to the level of your goals, you fall to the level of your systems.
 - Goals without systems are just good intentions.
 - Do you want Planning/High Discipline Igor making decisions, or evening Igor making the decisions (See [Brian Johnson](/blueprint)).
 
-## A note on rituals
+### On Rituals
 
 _Copied from someone smart_
 
 > I learned over time that ritualizing ordinary moments makes them sacred. And when something becomes sacred, you give it meaning, and things with meaning reflect meaning back to you.
 
 Rituals create a virtuous cycle: by treating something as important, it becomes important. By giving meaning to ordinary moments, those moments give meaning back to me. This transforms mundane activities into sources of energy, clarity, and purpose.
+
+### Anchors and Clips: Why Climbers Don’t Plummet to Their Death
+
+Climbers don’t just muscle their way up a rock face hoping for the best. They climb with a system designed to expect and absorb failure.
+
+As they climb, they clip their rope into anchors—strong points bolted into the rock or secured using gear like cams or nuts. These aren’t optional. They’re non-negotiable safety systems.
+
+When they slip—and they often do—the rope catches them. The fall might jolt, they might swing, but they don’t fall far. More importantly: they don’t fall all the way down.
+
+Why? Because they planned for the fall. No climber trusts themselves never to mess up. They trust their system to catch them when they do.
+
+And That’s Exactly How Habits Should Work
+
+Too many people build habits like free soloists—no backup, no safety. It’s “do it every day” or “fail completely.” But that’s not sustainable.
+
+Real habit-building is like climbing with anchors. Expect you’ll miss a few days, lose motivation, get busy. So you build in habit anchors—small, strategic commitments that keep you from falling all the way off the wall. What are you anchor and clips
 
 ## Calendar - 2024 H2
 

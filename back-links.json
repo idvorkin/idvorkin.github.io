@@ -1410,7 +1410,6 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/negotiate",
-                "/operating-manual",
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
@@ -1606,7 +1605,6 @@
                 "/idle",
                 "/life-as-business",
                 "/mind-at-work",
-                "/operating-manual",
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
@@ -3609,14 +3607,14 @@
         },
         "/operating-manual": {
             "description": "I’ve learned what I like, how I want to spend my energy, and how I want to be thinking about my life. I’ve learned my roles, reasonable expectations, and healthy ways to operate given my personality, behaviors, and frequently occurring situations. This post is a summary of those learnings - an operating manual if you will, reminding me how to think about, respond to and behave, so I can operate at maximum effectiveness and efficiency. Super important: You don’t rise to the level of your goals, you fall to the level of your systems.\n\n",
-            "doc_size": 36000,
+            "doc_size": 38000,
             "file_path": "_site/operating-manual.html",
             "incoming_links": [
                 "/energy",
                 "/energy-abundance",
                 "/life-as-business"
             ],
-            "last_modified": "2025-03-23T20:19:03+00:00",
+            "last_modified": "2025-05-14T08:39:51.824181",
             "markdown_path": "_d/operating-manual-2.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
@@ -3624,13 +3622,13 @@
                 "/anxiety",
                 "/bike",
                 "/blueprint",
+                "/compassion",
                 "/covid",
-                "/curious",
-                "/d/habits",
                 "/d/timeoff-07-2022",
                 "/diet",
                 "/emotional-health",
                 "/eulogy",
+                "/habits",
                 "/hobby",
                 "/ig66/587",
                 "/magic",
@@ -3640,10 +3638,10 @@
                 "/physical-health",
                 "/process-journal",
                 "/siy",
-                "/sleight-of-mouth",
+                "/som",
                 "/strengths",
                 "/tesla",
-                "/todo_enjoy",
+                "/todo-enjoy",
                 "/tony",
                 "/voices",
                 "/writing"
@@ -4311,8 +4309,7 @@
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
                 "/7h-concepts",
-                "/d/time-off-2022-02",
-                "/operating-manual"
+                "/d/time-off-2022-02"
             ],
             "last_modified": "2024-12-28T07:13:50-08:00",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
