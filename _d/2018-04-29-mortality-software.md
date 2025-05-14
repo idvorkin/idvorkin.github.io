@@ -24,6 +24,7 @@ Mortality is a word avoided. But, earlier or later, we all face it. Life is fini
   - [Creating your future - Tool overview](#creating-your-future---tool-overview)
     - [Role and Value Finder, Eulogy Writer](#role-and-value-finder-eulogy-writer)
     - [Quarter Month Tools - Goal Setter](#quarter-month-tools---goal-setter)
+  - [Define yourself: Affirmation Builder](#define-yourself-affirmation-builder)
   - [Learning from your past - Tool Overview](#learning-from-your-past---tool-overview)
     - [Why This Matters](#why-this-matters)
     - [Annual Review](#annual-review)
@@ -32,8 +33,12 @@ Mortality is a word avoided. But, earlier or later, we all face it. Life is fini
 - [Coaches](#coaches)
   - [The Obituary GPT Wrote](#the-obituary-gpt-wrote)
   - [Habit Coach](#habit-coach)
-  - [Affirmation Builder](#affirmation-builder)
   - [Reflection Coach](#reflection-coach)
+  - [Relationship Coach](#relationship-coach)
+    - [Conversation/Relationship Analyzer](#conversationrelationship-analyzer)
+    - [Why you value the relationship](#why-you-value-the-relationship)
+    - [Reminder of what you contribute to the relationship](#reminder-of-what-you-contribute-to-the-relationship)
+    - [Love languages disconnects, DRAIN behaviors](#love-languages-disconnects-drain-behaviors)
 - [Appendix: Product Market Fit](#appendix-product-market-fit)
   - [When is this most appropriate?](#when-is-this-most-appropriate)
   - [What is similar to this?](#what-is-similar-to-this)
@@ -43,6 +48,8 @@ Mortality is a word avoided. But, earlier or later, we all face it. Life is fini
   - [Why call it Time.Ltd](#why-call-it-timeltd)
   - [Is this too rigid/static as my life changes?](#is-this-too-rigidstatic-as-my-life-changes)
   - [Aren't checklists too rigid and mechanical?](#arent-checklists-too-rigid-and-mechanical)
+- [Other concepts to explore](#other-concepts-to-explore)
+  - [Ambient Coaches/An outer inner voice.](#ambient-coachesan-outer-inner-voice)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -114,6 +121,27 @@ Some people are allergic to goals, a few prompts that are less allergic
 1. If I woke up 5 years from now and everything was the same? Would I be proud?
 2. What area of my life do I want to grow, what is a small step?
 3. If future you, met current you, what would they recommend you change?
+
+### Define yourself: Affirmation Builder
+
+The affirmation builder helps you create personalized daily affirmations based on your roles, values, and goals. Rather than generic affirmations, it crafts statements that resonate with who you want to be and what you want to achieve. For examples of powerful affirmations, see my [affirmations post](/affirmations).
+
+For example, if one of your roles is being a parent, and one of your values is patience, it might generate:
+"I choose to respond to my children with patience and understanding, seeing each interaction as an opportunity to model emotional intelligence."
+
+The key is that affirmations should be:
+
+- Aligned with your eulogy and values
+- Specific and actionable
+- Phrased in the present tense
+- Focused on what you can control
+- Written in your authentic voice
+
+The tool can also suggest times and ways to practice your affirmations, like during your morning routine or as part of meditation. The goal is to make the practice sustainable and meaningful rather than just another task.
+
+Learn more about affirmations and how they can transform your daily practice:
+
+{% include summarize-page.html src="/affirmations" %}
 
 ### Learning from your past - Tool Overview
 
@@ -210,30 +238,32 @@ Igor, you were loved. You will be missed. And wherever you are now, we hope ther
 
 Great to have someone write for you.
 
-### Affirmation Builder
-
-The affirmation builder helps you create personalized daily affirmations based on your roles, values, and goals. Rather than generic affirmations, it crafts statements that resonate with who you want to be and what you want to achieve. For examples of powerful affirmations, see my [affirmations post](/affirmations).
-
-For example, if one of your roles is being a parent, and one of your values is patience, it might generate:
-"I choose to respond to my children with patience and understanding, seeing each interaction as an opportunity to model emotional intelligence."
-
-The key is that affirmations should be:
-
-- Aligned with your eulogy and values
-- Specific and actionable
-- Phrased in the present tense
-- Focused on what you can control
-- Written in your authentic voice
-
-The tool can also suggest times and ways to practice your affirmations, like during your morning routine or as part of meditation. The goal is to make the practice sustainable and meaningful rather than just another task.
-
-Learn more about affirmations and how they can transform your daily practice:
-
-{% include summarize-page.html src="/affirmations" %}
-
 ### Reflection Coach
 
-As we get older, we realize our time is finite, and th
+A module to help you reflect onw hat you're thinking. Probably permeates everything.
+
+### Relationship Coach
+
+#### Conversation/Relationship Analyzer
+
+- Catch what you have in common
+- Often you get stuck on positions, not desired outcomes
+- You often miss what you disagree on, so go in circles on the wrong topics
+- Draw Venn diagrams about agreement/disconnect
+- See how you can support each other's disconnects
+- Give questions to further the conversation
+
+#### Why you value the relationship
+
+- A common question when relationships fade is "Why did you start the relationship" in the first place. Helps you dig into that which matters
+
+#### Reminder of what you contribute to the relationship
+
+- You only control you
+- The suffering you add to them
+-
+
+#### Love languages disconnects, DRAIN behaviors
 
 ## Appendix: Product Market Fit
 
@@ -285,3 +315,10 @@ No - the system is designed to be flexible and adapt with you. While it's recomm
 ### Aren't checklists too rigid and mechanical?
 
 While checklists may seem overly rigid at first glance, they actually serve an important purpose. As explained in [The Checklist Manifesto](/checklist), having clear structure and clarity around your goals and values makes it easier to prioritize and make decisions. The framework isn't meant to be restrictive, but rather to provide helpful guideposts while still allowing for flexibility and spontaneity in how you achieve your goals.
+
+## Other concepts to explore
+
+### Ambient Coaches/An outer inner voice.
+
+- Nice to be heard/acknolwedged
+- Nice to have someone to remind you of what you want to do.
