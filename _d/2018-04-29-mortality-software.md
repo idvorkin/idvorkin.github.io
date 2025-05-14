@@ -18,20 +18,19 @@ Mortality is a word avoided. But, earlier or later, we all face it. Life is fini
 
 - [Why](#why)
   - [Why mortality software?](#why-mortality-software)
-  - [How will it work?](#how-will-it-work)
-    - [Create your future](#create-your-future)
-    - [Learn from the past](#learn-from-the-past)
+- [How will it work?](#how-will-it-work)
   - [Creating your future - Tool overview](#creating-your-future---tool-overview)
     - [Role and Value Finder, Eulogy Writer](#role-and-value-finder-eulogy-writer)
     - [Quarter Month Tools - Goal Setter](#quarter-month-tools---goal-setter)
-  - [Define yourself: Affirmation Builder](#define-yourself-affirmation-builder)
+    - [Define yourself: Affirmation Builder](#define-yourself-affirmation-builder)
   - [Learning from your past - Tool Overview](#learning-from-your-past---tool-overview)
     - [Why This Matters](#why-this-matters)
     - [Annual Review](#annual-review)
     - [Monthly Review](#monthly-review)
     - [Weekly Review](#weekly-review)
 - [Coaches](#coaches)
-  - [The Obituary GPT Wrote](#the-obituary-gpt-wrote)
+  - [Eulogy Writer](#eulogy-writer)
+    - [The obituary GPT wrote](#the-obituary-gpt-wrote)
   - [Habit Coach](#habit-coach)
   - [Reflection Coach](#reflection-coach)
   - [Relationship Coach](#relationship-coach)
@@ -83,13 +82,9 @@ In a Dr. Seuss Poem
 
 To be satisfied we need to live in accordance with the person we want to be. Mortality software helps you understand who you want to be, and supports you in being that person.
 
-### How will it work?
+## How will it work?
 
 Mortality software will be both forward and backwards facing. By this I mean it will help you plan what you need to do to achieve your eulogy, and also help evaluate how effectively you are achieving your goals. It will help you reflect, often helping you realize your initial eulogy requires change, or your behaviors require change.
-
-#### Create your future
-
-#### Learn from the past
 
 ### Creating your future - Tool overview
 
@@ -122,7 +117,7 @@ Some people are allergic to goals, a few prompts that are less allergic
 2. What area of my life do I want to grow, what is a small step?
 3. If future you, met current you, what would they recommend you change?
 
-### Define yourself: Affirmation Builder
+#### Define yourself: Affirmation Builder
 
 The affirmation builder helps you create personalized daily affirmations based on your roles, values, and goals. Rather than generic affirmations, it crafts statements that resonate with who you want to be and what you want to achieve. For examples of powerful affirmations, see my [affirmations post](/affirmations).
 
@@ -204,7 +199,9 @@ You don't need to track every breath—just enough to know you're spending your 
 
 ## Coaches
 
-### The Obituary GPT Wrote
+### Eulogy Writer
+
+#### The obituary GPT wrote
 
 Woah, just used GPT to write my obituary, crazy ... intriguing.
 
