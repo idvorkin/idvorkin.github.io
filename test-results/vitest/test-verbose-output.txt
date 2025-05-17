@@ -2391,16 +2391,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m805.266876[39m,
-        nodeStart: [33m0.29842200002167374[39m,
-        v8Start: [33m3.45369799999753[39m,
-        bootstrapComplete: [33m19.552625000011176[39m,
-        environment: [33m10.424209000018891[39m,
-        loopStart: [33m25.51268300000811[39m,
+        duration: [33m774.08065[39m,
+        nodeStart: [33m0.27864500001305714[39m,
+        v8Start: [33m2.7702160000044387[39m,
+        bootstrapComplete: [33m20.366508000006434[39m,
+        environment: [33m9.702893000008771[39m,
+        loopStart: [33m26.26365199999418[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m122.929814[39m
+        idleTime: [33m108.657687[39m
       },
-      timeOrigin: [33m1747501506462.789[39m
+      timeOrigin: [33m1747510481921.202[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -4996,16 +4996,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m858.068857[39m,
-        nodeStart: [33m0.29842200002167374[39m,
-        v8Start: [33m3.45369799999753[39m,
-        bootstrapComplete: [33m19.552625000011176[39m,
-        environment: [33m10.424209000018891[39m,
-        loopStart: [33m25.51268300000811[39m,
+        duration: [33m809.20629[39m,
+        nodeStart: [33m0.27864500001305714[39m,
+        v8Start: [33m2.7702160000044387[39m,
+        bootstrapComplete: [33m20.366508000006434[39m,
+        environment: [33m9.702893000008771[39m,
+        loopStart: [33m26.26365199999418[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m122.929814[39m
+        idleTime: [33m108.657687[39m
       },
-      timeOrigin: [33m1747501506462.789[39m
+      timeOrigin: [33m1747510481921.202[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7597,16 +7597,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m895.753583[39m,
-        nodeStart: [33m0.29842200002167374[39m,
-        v8Start: [33m3.45369799999753[39m,
-        bootstrapComplete: [33m19.552625000011176[39m,
-        environment: [33m10.424209000018891[39m,
-        loopStart: [33m25.51268300000811[39m,
+        duration: [33m844.205728[39m,
+        nodeStart: [33m0.27864500001305714[39m,
+        v8Start: [33m2.7702160000044387[39m,
+        bootstrapComplete: [33m20.366508000006434[39m,
+        environment: [33m9.702893000008771[39m,
+        loopStart: [33m26.26365199999418[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m122.929814[39m
+        idleTime: [33m108.657687[39m
       },
-      timeOrigin: [33m1747501506462.789[39m
+      timeOrigin: [33m1747510481921.202[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10220,16 +10220,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m944.846539[39m,
-        nodeStart: [33m0.29842200002167374[39m,
-        v8Start: [33m3.45369799999753[39m,
-        bootstrapComplete: [33m19.552625000011176[39m,
-        environment: [33m10.424209000018891[39m,
-        loopStart: [33m25.51268300000811[39m,
+        duration: [33m883.173939[39m,
+        nodeStart: [33m0.27864500001305714[39m,
+        v8Start: [33m2.7702160000044387[39m,
+        bootstrapComplete: [33m20.366508000006434[39m,
+        environment: [33m9.702893000008771[39m,
+        loopStart: [33m26.26365199999418[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m122.929814[39m
+        idleTime: [33m108.657687[39m
       },
-      timeOrigin: [33m1747501506462.789[39m
+      timeOrigin: [33m1747510481921.202[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10641,6 +10641,6 @@ Toggle element with ID remaining-posts-toggle not found
 
 [2m Test Files [22m [1m[32m12 passed[39m[22m[90m (12)[39m
 [2m      Tests [22m [1m[32m137 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (142)[39m
-[2m   Start at [22m 17:05:06
-[2m   Duration [22m 3.07s[2m (transform 590ms, setup 142ms, collect 757ms, tests 569ms, environment 4.55s, prepare 1.05s)[22m
+[2m   Start at [22m 19:34:41
+[2m   Duration [22m 3.03s[2m (transform 498ms, setup 189ms, collect 660ms, tests 529ms, environment 4.62s, prepare 1.05s)[22m
 
