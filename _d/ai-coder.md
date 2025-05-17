@@ -157,9 +157,18 @@ Pretty funny - they wanted to do tab completion, but found the VS Code extension
    - Great for refactoring and architecture discussions
 
 3. **Enable Large Context**
-   - Dramatically improves AI's ability to understand your entire codebase at once
+
    - Go to Settings -> Features
    - Enable "Large Context" option
+   - Dramatically improves AI's ability to understand your entire codebase at once
+
+4. **Using MCP Tools in Cursor**
+   - MCP (Model Control Protocol) lets AI interact with external systems, via the chat interface
+   - E.g browser control, file operations, API interactions, and more
+   - Great for automating repetitive tasks and research, but careful affects real system, no undos!
+   - My MCP [tool list](https://github.com/idvorkin/Settings/blob/master/config/cursor/mcp.json) for your specific needs
+   - Example:
+     - [Using MCP to manage GitHub issues](https://github.com/idvorkin/idvorkin.github.io/blob/583d3c07ea12c5f131d5e8e11aa561b56ee288c8/zz-chop-logs/2025-05-17_15-26-github-issues-inquiry.md)
 
 #### Maintain Chat History with your commits
 
@@ -445,7 +454,7 @@ Most of this is picked up from others (there are no unique thoughts), but here's
   - 2000's SaaS
   - 2030 - Single Dev does all the required tooling
 
-My most optimistic view of this is that the cost of developing software goes down because an engineer like myself can be more ambitious, can take on more things. As a result, demand for software goes up—because if you’re a company that previously would never have dreamed of building a custom CRM for your industry because it would have taken 20 engineers a year before you got any results... If it now takes four engineers three months to get results, maybe you’re in the market for software engineers now that you weren’t before.
+My most optimistic view of this is that the cost of developing software goes down because an engineer like myself can be more ambitious, can take on more things. As a result, demand for software goes up—because if you're a company that previously would never have dreamed of building a custom CRM for your industry because it would have taken 20 engineers a year before you got any results... If it now takes four engineers three months to get results, maybe you're in the market for software engineers now that you weren't before.
 
 ### The Evolution of Junior Developers
 
