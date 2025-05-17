@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swing Analyzer</title>
     <style>
@@ -25,7 +25,6 @@
           sans-serif;
         display: flex;
       }
-
       header {
         color: #fff;
         text-align: center;
@@ -33,14 +32,12 @@
         width: 100%;
         padding: 1rem 0;
       }
-
       main {
         box-sizing: border-box;
         width: 100%;
         max-width: 800px;
         padding: 20px;
       }
-
       .video-container {
         justify-content: center;
         align-items: center;
@@ -50,7 +47,6 @@
         display: flex;
         position: relative;
       }
-
       #video,
       #output-canvas {
         object-fit: contain;
@@ -59,7 +55,6 @@
         width: 100%;
         max-height: 70vh;
       }
-
       #output-canvas {
         pointer-events: none;
         object-fit: contain;
@@ -68,26 +63,65 @@
         top: 0;
         left: 0;
       }
-
+      .loading-spinner {
+        z-index: 10;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .loading-spinner.active {
+        display: block;
+      }
+      .spinner {
+        border: 5px solid #ffffff4d;
+        border-top-color: #0071e3;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: 1s ease-in-out infinite spin;
+      }
+      .progress-container {
+        background-color: #fff3;
+        border-radius: 10px;
+        width: 100%;
+        margin-top: 15px;
+        overflow: hidden;
+      }
+      .progress-bar {
+        background-color: #0071e3;
+        width: 0%;
+        height: 6px;
+        transition: width 0.3s;
+      }
+      .loading-text {
+        text-align: center;
+        color: #fff;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
       .video-portrait #video,
       .video-portrait #output-canvas {
         max-width: 100%;
         height: auto;
       }
-
       .video-landscape #video,
       .video-landscape #output-canvas {
         width: 100%;
         height: auto;
       }
-
       .controls {
         flex-wrap: wrap;
         gap: 10px;
         margin-bottom: 20px;
         display: flex;
       }
-
       button {
         color: #fff;
         cursor: pointer;
@@ -99,79 +133,64 @@
         font-weight: 600;
         transition: background-color 0.3s;
       }
-
       button:hover {
         background-color: #0077ed;
       }
-
       button:disabled {
         cursor: not-allowed;
         background-color: #999;
       }
-
       .metrics {
         background-color: #fff;
         border-radius: 8px;
         padding: 15px;
         box-shadow: 0 2px 10px #0000001a;
       }
-
       .metrics h2 {
         margin-top: 0;
       }
-
       #rep-counter {
         color: #0071e3;
         font-size: 24px;
-        font-weight: bold;
+        font-weight: 700;
       }
-
       #status {
         color: #777;
         margin-top: 10px;
       }
-
       .hide {
         display: none;
       }
-
       .file-input {
         margin-bottom: 20px;
       }
-
-      @media (width <= 600px) {
+      @media (width<=600px) {
         .controls {
           flex-direction: column;
         }
-
         button {
           width: 100%;
         }
       }
-
       .debug-controls {
         background-color: #f0f0f0;
         border-radius: 8px;
         margin-top: 10px;
         padding: 10px;
       }
-
       .debug-options {
         flex-wrap: wrap;
         gap: 15px;
         display: flex;
       }
-
       .debug-options label {
         align-items: center;
         gap: 5px;
         display: flex;
       }
-
       .toggle-button {
         min-width: 100px;
       }
-
       .keypoint-data {
         color: #fff;
         background-color: #000000b3;
@@ -183,7 +202,6 @@
         font-size: 12px;
         overflow-y: auto;
       }
-
       .keypoint-row {
         border-bottom: 1px solid #333;
         justify-content: space-between;
@@ -191,11 +209,9 @@
         padding-bottom: 3px;
         display: flex;
       }
-
       .keypoint-row span {
         margin-right: 10px;
       }
-
       .show-keypoints-btn {
         color: #fff;
         cursor: pointer;
@@ -208,29 +224,28 @@
     </style>
   </head>
   <body>
-    <header>
-      <h1>Swing Analyzer</h1>
-    </header>
-
+    <header><h1>Swing Analyzer</h1></header>
     <main>
       <div class="file-input">
         <input type="file" id="video-upload" accept="video/*" />
         <p>Or use your camera</p>
       </div>
-
       <div class="video-container">
-        <video id="video" playsinline=""></video>
+        <video id="video" playsinline></video>
         <canvas id="output-canvas"></canvas>
+        <div class="loading-spinner" id="loading-spinner">
+          <div class="spinner"></div>
+          <div class="loading-text" id="loading-text">Loading model...</div>
+          <div class="progress-container">
+            <div class="progress-bar" id="loading-progress"></div>
+          </div>
+        </div>
       </div>
-
       <div class="controls">
         <button id="camera-btn">Start Camera</button>
-        <button id="play-pause-btn" class="toggle-button" disabled="">
-          Play
-        </button>
-        <button id="stop-btn" disabled="">Stop</button>
+        <button id="play-pause-btn" class="toggle-button" disabled>Play</button>
+        <button id="stop-btn" disabled>Stop</button>
       </div>
-
       <div class="metrics">
         <h2>Swing Analysis</h2>
         <div>
@@ -245,30 +260,26 @@
           <div id="keypoint-container"></div>
         </div>
       </div>
-
       <div class="debug-controls">
         <h3>Debug Options</h3>
         <div class="debug-options">
           <label>
-            <input type="radio" name="display-mode" value="both" checked="" />
-            Show Video + Overlay
+            <input type="radio" name="display-mode" value="both" checked /> Show
+            Video + Overlay
           </label>
           <label>
-            <input type="radio" name="display-mode" value="video" />
-            Video Only
+            <input type="radio" name="display-mode" value="video" /> Video Only
           </label>
           <label>
-            <input type="radio" name="display-mode" value="overlay" />
-            Overlay Only
+            <input type="radio" name="display-mode" value="overlay" /> Overlay
+            Only
           </label>
           <label>
-            <input type="checkbox" id="debug-mode-toggle" />
-            Debug Mode
+            <input type="checkbox" id="debug-mode-toggle" /> Debug Mode
           </label>
         </div>
       </div>
     </main>
-
-    <script type="module" src="/public.34df32e0.js"></script>
+    <script type="module" src="/video-edit/public.dfb3baf4.js"></script>
   </body>
 </html>
