@@ -255,7 +255,8 @@
             "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/manager-book"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -337,6 +338,7 @@
                 "/books-that-defined-me",
                 "/d/time-off-2020-12",
                 "/depression",
+                "/end-in-mind",
                 "/eulogy",
                 "/first-things-first",
                 "/first-understand",
@@ -1076,7 +1078,9 @@
             "doc_size": 16000,
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
-                "/being-a-great-manager"
+                "/being-a-great-manager",
+                "/manager-book",
+                "/manager-book-appendix"
             ],
             "last_modified": "2021-02-13T08:15:36-08:00",
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
@@ -1246,7 +1250,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-05-17T08:41:10.706835",
+            "last_modified": "2025-05-17T08:41:16-07:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/humans-are-underrated",
@@ -1360,6 +1364,22 @@
             "title": "Care about Total Compensation",
             "url": "/comp"
         },
+        "/content-audience": {
+            "description": "This is my guiding document for how I approach content creation audience considerations - how I want to show up and what matters to me in this space.\n\n",
+            "doc_size": 16000,
+            "file_path": "_site/content-audience.html",
+            "incoming_links": [
+                "/content-creation"
+            ],
+            "last_modified": "2025-05-17T09:08:31.209480",
+            "markdown_path": "_d/content-audience.md",
+            "outgoing_links": [
+                "/end-in-mind"
+            ],
+            "redirect_url": "",
+            "title": "Content Audience",
+            "url": "/content-audience"
+        },
         "/content-creation": {
             "description": "Ah, content creation! Remember when it meant awkwardly holding your phone at arm’s length, hoping your thumb wouldn’t photobomb your masterpiece? We’ve come a long way, baby! Whether you’re aiming to be the next TikTok sensation or just want to share your magic tricks without accidentally revealing them, this guide will help you level up from “my mom’s my only viewer” to “wait, is that video going viral?”\n\n",
             "doc_size": 17000,
@@ -1367,9 +1387,10 @@
             "incoming_links": [
                 "/y25"
             ],
-            "last_modified": "2025-01-01T12:50:17-08:00",
+            "last_modified": "2025-05-17T09:11:39.281497",
             "markdown_path": "_d/content-creation.md",
             "outgoing_links": [
+                "/content-audience",
                 "/screencast"
             ],
             "redirect_url": "",
@@ -1410,6 +1431,7 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/negotiate",
+                "/operating-manual",
                 "/psychic-weight",
                 "/regrets",
                 "/shame",
@@ -1604,7 +1626,9 @@
                 "/hobby",
                 "/idle",
                 "/life-as-business",
+                "/manager-book",
                 "/mind-at-work",
+                "/operating-manual",
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
@@ -1959,6 +1983,7 @@
                 "/coaching",
                 "/dsat",
                 "/job-hunt-stress",
+                "/manager-book",
                 "/pride",
                 "/random-idea"
             ],
@@ -2234,15 +2259,17 @@
                 "/4dx",
                 "/7-habits",
                 "/affirmations",
+                "/content-audience",
                 "/d/resistance",
                 "/elder",
+                "/manager-book",
                 "/productive",
                 "/siy"
             ],
-            "last_modified": "2025-05-12T09:24:26.401323",
+            "last_modified": "2025-05-12T09:24:30-07:00",
             "markdown_path": "_d/7h-c2.md",
             "outgoing_links": [
-                "/7h",
+                "/7-habits",
                 "/dip",
                 "/essentialism",
                 "/eulogy",
@@ -2954,7 +2981,8 @@
                 "/bmy",
                 "/eulogy",
                 "/job-hunt-stress",
-                "/manager-book"
+                "/manager-book",
+                "/manager-book-appendix"
             ],
             "last_modified": "2024-12-02T16:30:31-08:00",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
@@ -3087,7 +3115,7 @@
             "doc_size": 13000,
             "file_path": "_site/learn-code.html",
             "incoming_links": [],
-            "last_modified": "2025-05-11T06:34:08.952076",
+            "last_modified": "2025-05-11T06:34:37-07:00",
             "markdown_path": "_d/learn-to-code.md",
             "outgoing_links": [
                 "/ig66/602"
@@ -3183,25 +3211,25 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-05-12T09:24:26.401323",
+            "last_modified": "2025-05-12T09:24:30-07:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/7h-c2",
-                "/90-days",
+                "/22",
                 "/90days",
                 "/being-a-great-manager",
-                "/books",
-                "/coach",
+                "/books-that-defined-me",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/decide",
+                "/d/habits",
+                "/decisive",
                 "/dip",
                 "/dsat",
-                "/habits",
+                "/end-in-mind",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
+                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3212,11 +3240,9 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
-                "/td/machine-learning",
                 "/testing",
-                "/twentytwo",
                 "/what-makes-a-leader",
-                "/write"
+                "/writing"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3230,13 +3256,13 @@
                 "/manager-book",
                 "/operating-manual"
             ],
-            "last_modified": "2025-05-14T08:15:59.963937",
+            "last_modified": "2025-05-14T08:16:08-07:00",
             "markdown_path": "_d/manager-book-appendix.md",
             "outgoing_links": [
                 "/amazon",
-                "/books",
-                "/dream-job",
+                "/books-that-defined-me",
                 "/facebook",
+                "/job",
                 "/manager-book",
                 "/parkinson",
                 "/writing"
@@ -3383,6 +3409,7 @@
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
+                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -3507,7 +3534,7 @@
                 "/balance",
                 "/goals"
             ],
-            "last_modified": "2025-05-14T08:24:46.887028",
+            "last_modified": "2025-05-14T08:25:58-07:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
             "outgoing_links": [
                 "/affirmations",
@@ -3614,7 +3641,7 @@
                 "/energy-abundance",
                 "/life-as-business"
             ],
-            "last_modified": "2025-05-14T08:39:51.824181",
+            "last_modified": "2025-05-14T08:41:10-07:00",
             "markdown_path": "_d/operating-manual-2.md",
             "outgoing_links": [
                 "/Immutable-Laws-Of-Hard",
@@ -3622,13 +3649,13 @@
                 "/anxiety",
                 "/bike",
                 "/blueprint",
-                "/compassion",
                 "/covid",
+                "/curious",
+                "/d/habits",
                 "/d/timeoff-07-2022",
                 "/diet",
                 "/emotional-health",
                 "/eulogy",
-                "/habits",
                 "/hobby",
                 "/ig66/587",
                 "/magic",
@@ -3638,10 +3665,10 @@
                 "/physical-health",
                 "/process-journal",
                 "/siy",
-                "/som",
+                "/sleight-of-mouth",
                 "/strengths",
                 "/tesla",
-                "/todo-enjoy",
+                "/todo_enjoy",
                 "/tony",
                 "/voices",
                 "/writing"
@@ -4309,7 +4336,8 @@
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
                 "/7h-concepts",
-                "/d/time-off-2022-02"
+                "/d/time-off-2022-02",
+                "/operating-manual"
             ],
             "last_modified": "2024-12-28T07:13:50-08:00",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
@@ -5315,6 +5343,7 @@
                 "/amazon",
                 "/chow",
                 "/enable",
+                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],

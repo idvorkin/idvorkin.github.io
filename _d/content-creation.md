@@ -40,6 +40,10 @@ Ah, content creation! Remember when it meant awkwardly holding your phone at arm
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
+## Who is my audience/what is my purpose?
+
+{%include summarize-page.html src="/content-audience" %}
+
 ## The Basics
 
 ## Hardware
