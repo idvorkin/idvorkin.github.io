@@ -1,0 +1,33 @@
+---
+description: 
+globs: *md
+alwaysApply: false
+---
+# Jekyll Server Always Running
+
+## Critical Rules
+
+- ALWAYS remember that the Jekyll server is already running for the idvorkin.github.io blog
+- NEVER suggest starting the Jekyll server with commands like `jekyll serve` or similar
+- When asked to view blog content, direct to `http://localhost:4000` followed by the appropriate permalink
+- For new blog posts, remind that they'll be visible at `http://localhost:4000/[permalink]` once changes are saved
+- Wait for Jekyll to rebuild the site (which happens automatically) before viewing changes
+
+## Examples
+
+<example>
+User: "Let's view the blog post on localhost"
+AI: You can view the blog post at http://localhost:4000/content-audience since your Jekyll server is already running.
+
+User: "I've made changes to my blog post, how can I see them?"
+AI: Your changes will be visible at http://localhost:4000/content-audience once Jekyll automatically rebuilds the site, which should happen momentarily after you save the file.
+</example>
+
+<example type="invalid">
+User: "Let's view the blog post on localhost"
+AI: Let me start the Jekyll server for you:
+```
+jekyll serve
+```
+Now you can access your blog at http://localhost:4000
+</example>
