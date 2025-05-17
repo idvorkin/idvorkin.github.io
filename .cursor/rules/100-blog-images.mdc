@@ -1,9 +1,7 @@
 ---
 description: ALWAYS use when adding or managing images in blog posts
-globs: ["_posts/*.md", "_d/*.md"]
-tags: [blog, images, jekyll]
-priority: 2
-version: 1.0.0
+globs: *md
+alwaysApply: false
 ---
 
 # Blog Image Management Standards
@@ -76,7 +74,7 @@ Content continues with image properly placed...
 title: My Blog Post
 ---
 
-![image](random-url.jpg)
+![image](mdc:random-url.jpg)
 
 No proper image management or includes used...
 </example> 
