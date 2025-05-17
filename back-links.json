@@ -1365,13 +1365,13 @@
             "url": "/comp"
         },
         "/content-audience": {
-            "description": "This is my guiding document for how I approach content creation audience considerations - how I want to show up and what matters to me in this space.\n\n",
-            "doc_size": 16000,
+            "description": "When I started creating content — okay, let’s be honest, when I started uploading random videos to YouTube and TikTok — I didn’t have a plan. I’d record something, maybe clean it up in post, and toss it online. No real story, no strategy, and usually… no good. Looking back, I realize I never stopped to ask the two questions that actually matter: Who is this for? And why am I doing it? This blog is me trying to answer those questions — and maybe help you ask them too.\n\n",
+            "doc_size": 21000,
             "file_path": "_site/content-audience.html",
             "incoming_links": [
                 "/content-creation"
             ],
-            "last_modified": "2025-05-17T09:08:31.209480",
+            "last_modified": "2025-05-17T09:50:45.324656",
             "markdown_path": "_d/content-audience.md",
             "outgoing_links": [
                 "/end-in-mind"
