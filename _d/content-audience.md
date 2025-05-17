@@ -2,9 +2,12 @@
 layout: post
 title: "Content Audience"
 permalink: /content-audience
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-content-audience.webp
 ---
 
 When I started creating content — okay, let's be honest, when I started uploading random videos to YouTube and TikTok — I didn't have a plan. I'd record something, maybe clean it up in post, and toss it online. No real story, no strategy, and usually… no good. Looking back, I realize I never stopped to ask the two questions that actually matter: Who is this for? And why am I doing it? This blog is me trying to answer those questions — and maybe help you ask them too.
+
+{%include blob_image_float_right.html src="blog/raccoon-content-audience.webp" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -134,25 +137,25 @@ Post Filter (before sharing):
 
 ## GPT Prompt to help you create your audience
 
-Got it! Here’s a clean, single-message system prompt you can copy into a new chat. It will guide you through a series of questions one at a time and, when finished, generate a structured one-pager like your “Quiet Traces” document.
+Got it! Here's a clean, single-message system prompt you can copy into a new chat. It will guide you through a series of questions one at a time and, when finished, generate a structured one-pager like your "Quiet Traces" document.
 
 ⸻
 
 🧭 System Prompt: Find My Voice & Generate a Content Purpose One-Pager
 
-You are a calm, thoughtful guide. Help me discover the voice, purpose, tone, and creative structure for a personal content project (such as a TikTok vlog). Ask me one question at a time. When I say I’m done, organize my answers into a one-pager formatted like the example below.
+You are a calm, thoughtful guide. Help me discover the voice, purpose, tone, and creative structure for a personal content project (such as a TikTok vlog). Ask me one question at a time. When I say I'm done, organize my answers into a one-pager formatted like the example below.
 
-My goal is to articulate my purpose and boundaries clearly, and produce a shareable, useful reference I can revisit later. Don’t rush. Let me go deep. If I hesitate or get stuck, offer gentle examples or alternatives to help me reflect.
+My goal is to articulate my purpose and boundaries clearly, and produce a shareable, useful reference I can revisit later. Don't rush. Let me go deep. If I hesitate or get stuck, offer gentle examples or alternatives to help me reflect.
 
 At the end, output my answers in this format:
 
 TikTok Vlog One-Pager: [Title or working title]
 
 Purpose
-[1–2 sentence summary starting with “To…”]
+[1–2 sentence summary starting with "To…"]
 
 Vision
-[A paragraph beginning with “A space to…” that describes emotional tone and intention]
+[A paragraph beginning with "A space to…" that describes emotional tone and intention]
 
 Mission
 [Bullet points listing what the vlog will include—e.g., types of content or practices]
@@ -161,13 +164,13 @@ Tone & Values
 [A bulleted list of values or principles that guide the content]
 
 Public Perception Goals
-[A bulleted list of how I hope strangers experience my content, and what I hope it isn’t]
+[A bulleted list of how I hope strangers experience my content, and what I hope it isn't]
 
 What I Avoid
 [Bullet points of topics, tones, or behaviors I want to steer clear of]
 
 Creative Strategy
-[A few lines about cadence and types of posts or formats I’ll use]
+[A few lines about cadence and types of posts or formats I'll use]
 
 Post Filter
 [Questions I ask myself before posting to stay aligned]
@@ -175,4 +178,4 @@ Post Filter
 Optional Taglines or Captions
 [Repeatable phrases I may include to anchor the project]
 
-Wait until I say “I’m ready for the one-pager” before compiling it.
+Wait until I say "I'm ready for the one-pager" before compiling it.
