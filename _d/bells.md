@@ -66,3 +66,11 @@ I used to do KB halos, but they need a lighter weight. This required me to carry
 And here's my latest form check video (you can jump to [Hand To Hand](https://www.youtube.com/watch?v=pe_huqiNv6E&t=1s), [TGU](https://www.youtube.com/watch?v=pe_huqiNv6E&t=35s), [Slow Mo Swings](https://www.youtube.com/watch?v=pe_huqiNv6E&t=83s), [Front Rack](https://www.youtube.com/watch?v=pe_huqiNv6E&t=210s), [Pistols](https://www.youtube.com/watch?v=pe_huqiNv6E&t=259s), and [Pull Ups](https://www.youtube.com/watch?v=pe_huqiNv6E&t=302s)):
 
 {% include youtube.html src="pe_huqiNv6E" %}
+
+### Swing Analyzer App
+
+I've created a web app to analyze kettlebell swing form. You can upload a video of your swing and get feedback on your technique:
+
+[Kettlebell Swing Analyzer](https://swing-analyzer.vercel.app)
+
+Using computer vision, the app tracks your body position throughout the swing and provides insights on hip hinge, arm position, and overall form. Give it a try with your swing videos!

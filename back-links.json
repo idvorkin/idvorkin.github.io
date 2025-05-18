@@ -3060,7 +3060,7 @@
         },
         "/kettlebell": {
             "description": "There’s no way I’m swinging that thing between my legs; I’m going to kill my back. When I started working out with a trainer in 2020, they tried to get me to do a kettlebell swing, and I was like, no way. Then they spent 3 weeks teaching me Turkish Get-Ups (TGUs), which I absolutely loved. Then I read Simple and Sinister, and now I’ve achieved Timeless Simple and do heavy clubs instead of halos.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/kettlebell.html",
             "incoming_links": [
                 "/eulogy",
@@ -3069,7 +3069,7 @@
                 "/untangled",
                 "/y24"
             ],
-            "last_modified": "2025-04-06T17:32:01+00:00",
+            "last_modified": "2025-05-18T15:54:41.752685",
             "markdown_path": "_d/bells.md",
             "outgoing_links": [],
             "redirect_url": "",
