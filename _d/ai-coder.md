@@ -14,6 +14,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
 - [What is CHOP?](#what-is-chop)
   - [The Evolution of AI Coding](#the-evolution-of-ai-coding)
   - [Core Concepts](#core-concepts)
+  - [Vibing: Vibe Coding Best Practices](#vibing-vibe-coding-best-practices)
 - [Key Tools](#key-tools)
   - [Cursor: From Amazing Tab Completion to the best agent](#cursor-from-amazing-tab-completion-to-the-best-agent)
     - [Cursor Tips](#cursor-tips)
@@ -50,9 +51,8 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Prioritizing Skills](#prioritizing-skills)
   - [What will take AI longer to "Solve"](#what-will-take-ai-longer-to-solve)
   - [From Cheap Computing to Cheap Intelligence](#from-cheap-computing-to-cheap-intelligence)
-
-<!-- vim-markdown-toc-end -->
-<!-- prettier-ignore-end -->
+    <!-- vim-markdown-toc-end -->
+    <!-- prettier-ignore-end -->
 
 ## What is CHOP?
 
@@ -103,6 +103,10 @@ The journey to CHOP has been fascinating:
    - Uses CONVENTIONS.md as a knowledge base
    - Learns from project-specific rules
    - Maintains consistent coding standards
+
+### Vibing: Vibe Coding Best Practices
+
+{% include summarize-page.html src="/vibe" %}
 
 ## Key Tools
 

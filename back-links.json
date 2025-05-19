@@ -579,22 +579,23 @@
             "incoming_links": [
                 "/ai-developer"
             ],
-            "last_modified": "2025-02-09T10:47:12-08:00",
+            "last_modified": "2025-05-19T09:09:20.274383",
             "markdown_path": "_d/ai.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-bestie",
                 "/ai-bm",
+                "/ai-coder",
                 "/ai-developer",
                 "/ai-image",
                 "/ai-journal",
                 "/ai-paper",
                 "/ai-security",
                 "/ai-testing",
-                "/chop",
                 "/chow",
                 "/ml",
-                "/recommend"
+                "/recommend",
+                "/vibe"
             ],
             "redirect_url": "",
             "title": "All posts on AI",
@@ -1242,7 +1243,6 @@
             "file_path": "_site/chop.html",
             "incoming_links": [
                 "/40yo",
-                "/ai",
                 "/chow",
                 "/gtd",
                 "/process-journal",
@@ -1251,11 +1251,12 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-05-17T08:41:16-07:00",
+            "last_modified": "2025-05-19T09:09:20.274383",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/humans-are-underrated",
-                "/process-journal"
+                "/process-journal",
+                "/vibe"
             ],
             "redirect_url": "",
             "title": "The CHOP Shop: Where AI Meets Code",
@@ -5167,7 +5168,10 @@
             "description": "Vibe coding is the name for letting the ai write your code. The magic lies in AI’s ability to infer intent from vague input—say almost nothing, and it often gives you something surprisingly right. This works because you’re granting it wide degrees of freedom; as long as you’re flexible on the outcome, the model can generate plausible results from minimal cues. But that magic is fragile: on follow-up turns, or when you have a much tighter definition of correct, the inferred intent often changes, and the model applies a different set of constraints then you wanted or what it did previously, causing a cliff, or misery. Turns out this is the same as junior developers.\n\n",
             "doc_size": 15000,
             "file_path": "_site/vibe.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/ai",
+                "/chop"
+            ],
             "last_modified": "2025-05-19T09:03:45-07:00",
             "markdown_path": "_d/vibe.md",
             "outgoing_links": [

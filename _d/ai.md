@@ -24,6 +24,8 @@ The transition from A landing page for all my ai pages - a nice jumping off poin
 
 ## Posts
 
+{%include summarize-page.html src="/vibe" %}
+
 {%include summarize-page.html src="/ai-art" %}
 
 {%include summarize-page.html src="/ai-image" %}
@@ -81,12 +83,12 @@ Revolution 7: Computing → Cheap Information Processing & Cheap Logic\*\*
 - **Data storage & retrieval** (databases replacing file cabinets).
 - **Repetitive logic-based tasks** (software replacing clerks).
   🔹 **What It Replaced?**
-- Bookkeepers, clerks, human “computers” (pre-electronic era math workers).
+- Bookkeepers, clerks, human "computers" (pre-electronic era math workers).
 - Manual data entry and processing jobs.
 - Logic-based human decision-making (e.g., tax software vs. accountants).
   🔹 **Limitations:**
-- Computers execute **strict rules**—if a situation isn’t pre-programmed, they fail.
-- They don’t “understand” problems—only process logic as instructed.
+- Computers execute **strict rules**—if a situation isn't pre-programmed, they fail.
+- They don't "understand" problems—only process logic as instructed.
 - They require **explicit programming** to function (if X, then Y).
 
 **Examples of Revolution 7 (Computing in Action)**
@@ -109,7 +111,7 @@ Revolution 7: Computing → Cheap Information Processing & Cheap Logic\*\*
 - Writers, artists, and software developers (for certain tasks).
 - Customer support agents (chatbots replacing tier-1 help desks).
   🔹 **Key Difference from Computing:**
-- AI **isn’t explicitly programmed** with rules—it learns from data.
+- AI **isn't explicitly programmed** with rules—it learns from data.
 - AI **generalizes** beyond its training data (unlike traditional computing).
 - AI can operate **without human supervision** in some cases (self-driving cars, trading bots).
 
@@ -134,21 +136,21 @@ Revolution 7: Computing → Cheap Information Processing & Cheap Logic\*\*
 **1. From Fixed Logic to Adaptive Learning**
 
 - **Computing (7)** → If you want a system to identify spam emails, you write rules like:
-  **“If email contains ‘Nigerian prince,’ mark as spam.”**
+  **"If email contains 'Nigerian prince,' mark as spam."**
 - **AI (8)** → AI **learns** by analyzing millions of spam emails, finding hidden patterns humans might miss.
 
 **2. From Simple Automation to Complex Decision-Making**
 
-- **Computing (7)** → An e-commerce site’s software follows fixed rules:
-  **“If order > $50, apply free shipping.”**
+- **Computing (7)** → An e-commerce site's software follows fixed rules:
+  **"If order > $50, apply free shipping."**
 - **AI (8)** → AI **optimizes** shipping costs dynamically, predicts demand, and personalizes discounts for individual customers.
 
 **3. From Human Input to Autonomous Systems**
 
-- **Computing (7)** → A self-driving car must follow **predefined rules** (“Stop at red light, Go at green”).
+- **Computing (7)** → A self-driving car must follow **predefined rules** ("Stop at red light, Go at green").
 - **AI (8)** → AI **interprets the environment** using neural networks, making real-time driving decisions.
 
-If **Computing made logic cheap** and **AI made expertise cheap**, what’s next?
+If **Computing made logic cheap** and **AI made expertise cheap**, what's next?
 
 1. **AI + Robotics → Cheap Skilled Physical Labor**
 
