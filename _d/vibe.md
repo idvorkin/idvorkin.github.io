@@ -1,5 +1,6 @@
 ---
 title: "Vibe Coding: Best Practices for Flow, Fun, and Results"
+layout: post
 permalink: /vibe
 ---
 
