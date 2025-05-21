@@ -6,6 +6,29 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
 [22m[39mToggle element with ID missing-toggle not found
 
+[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
+[22m[39m🔍 updateRecentPosts function called
+🔍 recent-posts container element: found
+🔍 Fetching back-links.json...
+
+[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
+[22m[39m🔍 Sorted pages, first 5: [
+  { url: [32m'/page1'[39m, title: [32m'Page 1'[39m, last_modified: [32m'2023-01-01'[39m },
+  { url: [32m'/page2'[39m, title: [32m'Page 2'[39m, last_modified: [32m'2023-01-02'[39m }
+]
+🔍 Updating recent-posts content with HTML 
+    <ul>
+      
+        <li>
+          <a href="/page1">Page 1</a> - 
+          Description for pag...
+✅ Recent posts updated successfully
+
+[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
+[22m[39m🔍 updateRecentPosts function called
+🔍 recent-posts container element: found
+🔍 Fetching back-links.json...
+
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
@@ -33,29 +56,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
-[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
-[22m[39m🔍 updateRecentPosts function called
-🔍 recent-posts container element: found
-🔍 Fetching back-links.json...
-
-[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
-[22m[39m🔍 Sorted pages, first 5: [
-  { url: [32m'/page1'[39m, title: [32m'Page 1'[39m, last_modified: [32m'2023-01-01'[39m },
-  { url: [32m'/page2'[39m, title: [32m'Page 2'[39m, last_modified: [32m'2023-01-02'[39m }
-]
-🔍 Updating recent-posts content with HTML 
-    <ul>
-      
-        <li>
-          <a href="/page1">Page 1</a> - 
-          Description for pag...
-✅ Recent posts updated successfully
-
-[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
-[22m[39m🔍 updateRecentPosts function called
-🔍 recent-posts container element: found
-🔍 Fetching back-links.json...
-
 [90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
 [22m[39m❌ Error loading recent posts: Error: Test error
     at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mtests/unit/recent-posts.test.ts:521:9
@@ -2392,16 +2392,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m795.514208[39m,
-        nodeStart: [33m0.283039000001736[39m,
-        v8Start: [33m3.18405999999959[39m,
-        bootstrapComplete: [33m19.397163000016008[39m,
-        environment: [33m10.287822000012966[39m,
-        loopStart: [33m25.29440099999192[39m,
+        duration: [33m838.139699[39m,
+        nodeStart: [33m0.2928740000061225[39m,
+        v8Start: [33m3.5892060000041965[39m,
+        bootstrapComplete: [33m20.941594000003533[39m,
+        environment: [33m11.16058100000373[39m,
+        loopStart: [33m27.159421000018483[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m174.771817[39m
+        idleTime: [33m170.435384[39m
       },
-      timeOrigin: [33m1747671300581.937[39m
+      timeOrigin: [33m1747854679843.86[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -4997,16 +4997,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m830.769019[39m,
-        nodeStart: [33m0.283039000001736[39m,
-        v8Start: [33m3.18405999999959[39m,
-        bootstrapComplete: [33m19.397163000016008[39m,
-        environment: [33m10.287822000012966[39m,
-        loopStart: [33m25.29440099999192[39m,
+        duration: [33m888.571285[39m,
+        nodeStart: [33m0.2928740000061225[39m,
+        v8Start: [33m3.5892060000041965[39m,
+        bootstrapComplete: [33m20.941594000003533[39m,
+        environment: [33m11.16058100000373[39m,
+        loopStart: [33m27.159421000018483[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m174.771817[39m
+        idleTime: [33m170.435384[39m
       },
-      timeOrigin: [33m1747671300581.937[39m
+      timeOrigin: [33m1747854679843.86[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7598,16 +7598,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m878.46028[39m,
-        nodeStart: [33m0.283039000001736[39m,
-        v8Start: [33m3.18405999999959[39m,
-        bootstrapComplete: [33m19.397163000016008[39m,
-        environment: [33m10.287822000012966[39m,
-        loopStart: [33m25.29440099999192[39m,
+        duration: [33m927.79218[39m,
+        nodeStart: [33m0.2928740000061225[39m,
+        v8Start: [33m3.5892060000041965[39m,
+        bootstrapComplete: [33m20.941594000003533[39m,
+        environment: [33m11.16058100000373[39m,
+        loopStart: [33m27.159421000018483[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m174.771817[39m
+        idleTime: [33m170.435384[39m
       },
-      timeOrigin: [33m1747671300581.937[39m
+      timeOrigin: [33m1747854679843.86[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10221,16 +10221,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m922.171684[39m,
-        nodeStart: [33m0.283039000001736[39m,
-        v8Start: [33m3.18405999999959[39m,
-        bootstrapComplete: [33m19.397163000016008[39m,
-        environment: [33m10.287822000012966[39m,
-        loopStart: [33m25.29440099999192[39m,
+        duration: [33m978.262415[39m,
+        nodeStart: [33m0.2928740000061225[39m,
+        v8Start: [33m3.5892060000041965[39m,
+        bootstrapComplete: [33m20.941594000003533[39m,
+        environment: [33m11.16058100000373[39m,
+        loopStart: [33m27.159421000018483[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m174.771817[39m
+        idleTime: [33m170.435384[39m
       },
-      timeOrigin: [33m1747671300581.937[39m
+      timeOrigin: [33m1747854679843.86[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10642,7 +10642,7 @@ Toggle element with ID remaining-posts-toggle not found
 
 [2m Test Files [22m [1m[32m12 passed[39m[22m[90m (12)[39m
 [2m      Tests [22m [1m[32m137 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (142)[39m
-[2m   Start at [22m 16:15:00
-[2m   Duration [22m 3.45s[2m (transform 547ms, setup 228ms, collect 735ms, tests 582ms, environment 5.09s, prepare 1.24s)[22m
+[2m   Start at [22m 19:11:19
+[2m   Duration [22m 3.19s[2m (transform 510ms, setup 235ms, collect 703ms, tests 598ms, environment 4.63s, prepare 1.12s)[22m
 
 </pre></body></html>
