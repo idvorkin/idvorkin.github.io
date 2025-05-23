@@ -1,5 +1,5 @@
 ---
-title: "The Gap Year Paradox: Why Taking a Year Off at 50 Beats Working Until 66"
+title: "The Gap Year Paradox: Why Taking a Year Off at 50 beats retiring at 65"
 layout: post
 permalink: /gap-year
 tags:
@@ -10,7 +10,7 @@ tags:
   - how igor ticks
 ---
 
-Here's a thought experiment that'll mess with your retirement timeline: Would you rather work until 66 and retire comfortably, or take a full year off at 50, return to work, and retire at 66? If you're like most people, you immediately think "that's crazy - I can't afford to lose a year's income!" But what if I told you that gap year might be the best investment you'll ever make?
+Here's a thought that'll pushback your retirement: Would you rather work until 65 and retire comfortably, or take a full year off at 50, return to work, and retire at 67 with less money? If you're like most people, you immediately think "that's crazy - I can't afford to lose a year's income!" But what if I told you that gap year might be the best investment you'll ever make?
 
 We've been conditioned to think of career breaks as financial suicide, but this binary thinking misses something crucial: the compound value of time, energy, and perspective when you're still in your prime.
 
@@ -18,7 +18,7 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 <!-- vim-markdown-toc-start -->
 
 - [The Traditional Math vs. The Real Math](#the-traditional-math-vs-the-real-math)
-  - [The OMY Trap: Why One More Year Costs You Three](#the-omy-trap-why-one-more-year-costs-you-three)
+  - [The OMY Trap: How working 1 year saves you 3, or does it.](#the-omy-trap-how-working-1-year-saves-you-3-or-does-it)
 - [The Energy Arbitrage](#the-energy-arbitrage)
 - [When 50-Year-Old You Meets 25-Year-Old Dreams](#when-50-year-old-you-meets-25-year-old-dreams)
 - [The Relationship Reset](#the-relationship-reset)
@@ -37,26 +37,26 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 
 **Real math** considers the full picture:
 
-- **Health arbitrage**: Your 50-year-old body can still handle that hiking trip through Patagonia. Your 66-year-old body? Maybe not.
-- **Energy arbitrage**: At 50, you have the energy to completely reinvent yourself. At 66, you're often too tired to read the novel you've been putting off.
-- **Relationship arbitrage**: Your kids might still want to spend time with you at 50. At 66, they're busy with their own families.
+- **Health arbitrage**: Your 50-year-old body can still handle that hiking trip through Patagonia. Your 65-year-old body? Maybe not.
+- **Energy arbitrage**: At 50, you have the energy to completely reinvent yourself. At 65, you're often too tired to read the novel you've been putting off.
+- **Relationship arbitrage**: Your kids might still want to spend time with you at 50. At 65, they're busy with their own families.
 - **Opportunity arbitrage**: A year to explore new directions at 50 could lead to a more fulfilling (and lucrative) career path.
 
 The traditional calculation treats money as the only variable, but money without the health, energy, and relationships to enjoy it isn't wealth - it's just numbers in an account.
 
-### The OMY Trap: Why One More Year Costs You Three
+### The OMY Trap: How working 1 year saves you 3, or does it.
 
-The retirement planning world has a term: **OMY** (One More Year). It's the seductive logic that keeps people working "just one more year" indefinitely. But here's the brutal math:
+The retirement planning world has a term: **OMY** (One More Year). It's the seductive logic that keeps people working "just one more year" indefinitely.
 
-**For every additional year you work, you lose three years of actual life:**
+For every extra year you work, you are 3 years closer to paying for retirement.
 
 1. **The Income Year**: You gain one year's worth of additional income and retirement contributions. This part is real and measurable.
 
 2. **The Mortality Year**: You move one year closer to death. Your remaining lifespan is now one year shorter. This is inevitable and non-negotiable.
 
-3. **The Stress Year**: Work stress jokingly (but maybe not) costs you approximately one year of life expectancy. The chronic stress, sleep deprivation, poor eating habits, lack of exercise, and constant pressure of high-performance careers take a measurable toll on your health and longevity.
+3. **The Stress Year**: Work stress jokingly (but maybe not) costs you one year of life expectancy. The chronic stress, sleep deprivation, poor eating habits, lack of exercise, and constant pressure of high-performance careers take a measurable toll on your health and longevity.
 
-**The OMY equation**: Work 1 more year = Gain 1 year of money - Lose 2-3 years of healthy life
+**The OMY equation**: Work 1 more year = Gain 1 year of money - Lose 3 years of healthy life
 
 This is why the gap year at 50 is so powerful - you're inverting this equation. Instead of trading your peak years for money you may not live to enjoy, you're investing in your health, relationships, and life satisfaction when you can still fully experience them.
 
