@@ -579,19 +579,19 @@
             "incoming_links": [
                 "/ai-developer"
             ],
-            "last_modified": "2025-05-19T09:09:20.274383",
+            "last_modified": "2025-05-19T09:09:26-07:00",
             "markdown_path": "_d/ai.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-bestie",
                 "/ai-bm",
-                "/ai-coder",
                 "/ai-developer",
                 "/ai-image",
                 "/ai-journal",
                 "/ai-paper",
                 "/ai-security",
                 "/ai-testing",
+                "/chop",
                 "/chow",
                 "/ml",
                 "/recommend",
@@ -1203,6 +1203,7 @@
             "file_path": "_site/chapters.html",
             "incoming_links": [
                 "/42",
+                "/gap-year",
                 "/lonely",
                 "/retire",
                 "/y25"
@@ -1243,6 +1244,7 @@
             "file_path": "_site/chop.html",
             "incoming_links": [
                 "/40yo",
+                "/ai",
                 "/chow",
                 "/gtd",
                 "/process-journal",
@@ -1251,7 +1253,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-05-19T09:09:20.274383",
+            "last_modified": "2025-05-19T09:09:26-07:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/humans-are-underrated",
@@ -1670,6 +1672,7 @@
                 "/fail",
                 "/first-things-first",
                 "/frog",
+                "/gap-year",
                 "/parkinson",
                 "/productive",
                 "/psychic-weight",
@@ -2554,6 +2557,25 @@
             "title": "Eat that frog",
             "url": "/frog"
         },
+        "/gap-year": {
+            "description": "Here’s a thought experiment that’ll mess with your retirement timeline: Would you rather work until 66 and retire comfortably, or take a full year off at 50, return to work, and retire at 66? If you’re like most people, you immediately think “that’s crazy - I can’t afford to lose a year’s income!” But what if I told you that gap year might be the best investment you’ll ever make?\n\n",
+            "doc_size": 29000,
+            "file_path": "_site/gap-year.html",
+            "incoming_links": [],
+            "last_modified": "2025-05-23T06:09:39-07:00",
+            "markdown_path": "_d/gap-year.md",
+            "outgoing_links": [
+                "/chapters",
+                "/d/resistance",
+                "/money",
+                "/physical-health",
+                "/retire",
+                "/timeoff"
+            ],
+            "redirect_url": "",
+            "title": "The Gap Year Paradox: Why Taking a Year Off at 50 Beats Working Until 66",
+            "url": "/gap-year"
+        },
         "/genai-talk": {
             "description": "Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!\n\n",
             "doc_size": 38000,
@@ -3213,7 +3235,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-05-12T09:24:30-07:00",
+            "last_modified": "2025-05-21T19:10:41+00:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
                 "/22",
@@ -3491,6 +3513,7 @@
             "file_path": "_site/money.html",
             "incoming_links": [
                 "/d/time-off-2020-03",
+                "/gap-year",
                 "/operating-manual",
                 "/parkinson",
                 "/retire"
@@ -3780,6 +3803,7 @@
                 "/diet",
                 "/essentialism",
                 "/eulogy",
+                "/gap-year",
                 "/irl",
                 "/operating-manual",
                 "/retire",
@@ -4100,7 +4124,8 @@
             "doc_size": 25000,
             "file_path": "_site/retire.html",
             "incoming_links": [
-                "/42"
+                "/42",
+                "/gap-year"
             ],
             "last_modified": "2025-02-17T12:40:53-08:00",
             "markdown_path": "_d/retire.md",
@@ -5026,6 +5051,7 @@
                 "/d/time-off-2023-11",
                 "/energy",
                 "/energy-abundance",
+                "/gap-year",
                 "/life-as-business",
                 "/mind-at-work",
                 "/parkinson",
