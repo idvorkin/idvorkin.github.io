@@ -28,6 +28,8 @@ The key to making vibe coding as productive as possible is having spefications, 
 
 The key to success is specifying your many implicit constraints. And just like in real life, you don't know them all up, so build up the rules gradually. But I bet the learnings apply across projects so wwrite them out explicitly and then you can pply them to many projects.
 
+For a comprehensive example of codified development practices and conventions, see [chop-conventions](https://github.com/idvorkin/chop-conventions), which demonstrates how to document and standardize development workflows.
+
 ### Business logic: PRD/User Stories
 
 ### Which changes go where: Architecture
@@ -37,6 +39,10 @@ The key to success is specifying your many implicit constraints. And just like i
 ### The "readablity" of code: Language specific best practices
 
 ### The "environment" - Tool chains, CI/CD, Commit Hooks, etc
+
+This includes your development environment setup, tooling configurations, and automated workflows. Having consistent, well-documented development environments is crucial for productive vibe coding.
+
+Check out the [dev-setup](https://github.com/idvorkin/chop-conventions/tree/main/dev-setup) practices for examples of how to standardize development environments and tooling across projects.
 
 ## The fix: Verification
 

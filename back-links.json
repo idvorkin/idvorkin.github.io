@@ -1249,7 +1249,6 @@
                 "/gtd",
                 "/process-journal",
                 "/tech-rituals",
-                "/vibe",
                 "/y24",
                 "/y25"
             ],
@@ -5192,16 +5191,16 @@
         },
         "/vibe": {
             "description": "Vibe coding is the name for letting the ai write your code. The magic lies in AI’s ability to infer intent from vague input—say almost nothing, and it often gives you something surprisingly right. This works because you’re granting it wide degrees of freedom; as long as you’re flexible on the outcome, the model can generate plausible results from minimal cues. But that magic is fragile: on follow-up turns, or when you have a much tighter definition of correct, the inferred intent often changes, and the model applies a different set of constraints then you wanted or what it did previously, causing a cliff, or misery. Turns out this is the same as junior developers.\n\n",
-            "doc_size": 15000,
+            "doc_size": 16000,
             "file_path": "_site/vibe.html",
             "incoming_links": [
                 "/ai",
                 "/chop"
             ],
-            "last_modified": "2025-05-19T09:03:45-07:00",
+            "last_modified": "2025-05-24T09:10:33.007804",
             "markdown_path": "_d/vibe.md",
             "outgoing_links": [
-                "/chop"
+                "/ai-coder"
             ],
             "redirect_url": "",
             "title": "Vibe Coding: Best Practices for Flow, Fun, and Results",
