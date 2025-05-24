@@ -52,35 +52,35 @@ js-test-verbose-html:
     #!/usr/bin/env sh
     # Create the output directory
     mkdir -p test-results/vitest
-    
+
     # If in GitHub Actions, use GitHub reporter
     if [ -n "$GITHUB_ACTIONS" ]; then
         npx vitest run --reporter=github-actions --reporter=verbose
         exit 0
     fi
-    
+
     # For local development with colorized HTML report
     echo "Running in local mode with HTML output"
-    
+
     # Generate HTML header
     echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Vitest Test Results</title><style>body{font-family:monospace;line-height:1.5;padding:20px;background:#f5f5f5;color:#333;}pre{background:#1e1e1e;padding:15px;border-radius:5px;overflow:auto;color:#f8f8f8;}</style></head><body><h1>Vitest Test Results</h1>' > test-results/vitest/test-verbose-output.html
-    
+
     # Run tests with forced color output
     node run-vitest-with-colors.js test-results/vitest/temp_output.txt
-    
+
     # Convert to HTML
     echo '<pre>' >> test-results/vitest/test-verbose-output.html
     node ansi-to-html-converter.js test-results/vitest/temp_output.txt test-results/vitest/test-verbose-output.html
     echo '</pre></body></html>' >> test-results/vitest/test-verbose-output.html
-    
+
     # Create raw output copy for debugging
     echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Raw Test Output</title><style>body{font-family:monospace;white-space:pre;}</style></head><body><pre>' > test-results/vitest/raw-output.html
     cat test-results/vitest/temp_output.txt >> test-results/vitest/raw-output.html
     echo '</pre></body></html>' >> test-results/vitest/raw-output.html
-    
+
     # Clean up
     rm -f test-results/vitest/temp_output.txt
-    
+
     # Open the report
     if [ -f "test-results/vitest/test-verbose-output.html" ]; then
         open test-results/vitest/test-verbose-output.html
@@ -91,7 +91,7 @@ js-test-output-to-html:
     #!/usr/bin/env sh
     # Make sure the directory exists
     mkdir -p test-results/vitest
-    
+
     # Generate HTML wrapper around existing output
     echo "<!DOCTYPE html><html><head><meta charset=\"UTF-8\"><title>Vitest Test Results</title><style>body{font-family:monospace;line-height:1.5;padding:20px;}pre{background:#f8f8f8;padding:15px;border-radius:5px;overflow:auto;}</style></head><body><h1>Vitest Test Results</h1><pre>" > test-results/vitest/test-verbose-output.html
     cat test-results/vitest/test-verbose-output.txt >> test-results/vitest/test-verbose-output.html
@@ -338,21 +338,37 @@ js-test-github-actions:
     # This command is optimized for GitHub Actions workflows
     # It uses the GitHub Actions reporter to create annotations in the PR/commit view
     # Combined with verbose output for complete test information
-    
+
     # Create the output directory
     mkdir -p test-results/vitest
-    
+
     # Run with both GitHub Actions reporter and verbose reporter
     GITHUB_ACTIONS=true npx vitest run --reporter=github-actions --reporter=verbose
-    
+
     # Save the exit code
     TEST_EXIT_CODE=$?
-    
+
     # Generate a JSON summary of test results for badges
     npx vitest run --reporter=json --outputFile=test-results/vitest/test-output.json || true
-    
+
     # Generate badges from test results
     just js-test-generate-badges test-results/vitest/test-output.json
-    
+
     # Exit with the original test exit code
     exit $TEST_EXIT_CODE
+
+# ===== Fast Tests (for pre-commit) =====
+# This is called by pre-commit hooks and should run quickly
+
+fast-test:
+    @echo "Running fast tests for pre-commit..."
+    # Run TypeScript type checking
+    # npx tsc --noEmit
+    # Run a subset of tests or lightweight checks
+    just js-test
+
+# Comprehensive test suite
+test:
+    @echo "Running comprehensive test suite..."
+    just js-test
+    just pw-test

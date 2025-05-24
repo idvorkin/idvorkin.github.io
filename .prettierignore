@@ -10,3 +10,7 @@ eulogy.json
 # Ignore JS Files created by TS
 **/*js
 
+# Chop logs exclusions following chop-conventions
+.specstory/**
+zz-chop-logs
+

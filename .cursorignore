@@ -1,2 +1,5 @@
 # Project notes and templates
 xnotes/
+# Chop logs exclusions following chop-conventions
+.specstory/**
+zz-chop-logs
