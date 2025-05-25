@@ -18,7 +18,6 @@ Gemfile.lock
 #aspell junk
 *.bak
 .parcel-cache
-zz-chop-conventions
 
 # don't check in algolia password
 _algolia_api_key
