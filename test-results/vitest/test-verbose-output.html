@@ -30,9 +30,6 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
 [22m[39m✅ Initialized copy links for 1 headers
 
-[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
-
 [90mstderr[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
 [22m[39mFailed to copy header link: Error: Clipboard failed
     at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mtests/unit/header-copy-link.test.ts:300:24
@@ -48,6 +45,9 @@ npx vitest run --reporter=verbose
 
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mIntegration[2m > [22m[2mshould initialize correctly when DOM is ready
 [22m[39m✅ Initialized copy links for 1 headers
+
+[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
 
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
 [22m[39m✅ Initialized copy links for 1 headers
@@ -2432,16 +2432,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m738.4793[39m,
-        nodeStart: [33m0.27484499999991385[39m,
-        v8Start: [33m3.003282000005129[39m,
-        bootstrapComplete: [33m19.03907099999924[39m,
-        environment: [33m10.0246660000048[39m,
-        loopStart: [33m24.857632999999623[39m,
+        duration: [33m753.190831[39m,
+        nodeStart: [33m0.2871869999944465[39m,
+        v8Start: [33m2.8565229999949224[39m,
+        bootstrapComplete: [33m22.97733100000187[39m,
+        environment: [33m10.17064599999867[39m,
+        loopStart: [33m31.583559000006062[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m112.057785[39m
+        idleTime: [33m114.679471[39m
       },
-      timeOrigin: [33m1748187902402.115[39m
+      timeOrigin: [33m1748188097480.981[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -5037,16 +5037,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m781.756944[39m,
-        nodeStart: [33m0.27484499999991385[39m,
-        v8Start: [33m3.003282000005129[39m,
-        bootstrapComplete: [33m19.03907099999924[39m,
-        environment: [33m10.0246660000048[39m,
-        loopStart: [33m24.857632999999623[39m,
+        duration: [33m799.239757[39m,
+        nodeStart: [33m0.2871869999944465[39m,
+        v8Start: [33m2.8565229999949224[39m,
+        bootstrapComplete: [33m22.97733100000187[39m,
+        environment: [33m10.17064599999867[39m,
+        loopStart: [33m31.583559000006062[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m112.057785[39m
+        idleTime: [33m114.679471[39m
       },
-      timeOrigin: [33m1748187902402.115[39m
+      timeOrigin: [33m1748188097480.981[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7638,16 +7638,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m809.200808[39m,
-        nodeStart: [33m0.27484499999991385[39m,
-        v8Start: [33m3.003282000005129[39m,
-        bootstrapComplete: [33m19.03907099999924[39m,
-        environment: [33m10.0246660000048[39m,
-        loopStart: [33m24.857632999999623[39m,
+        duration: [33m835.844888[39m,
+        nodeStart: [33m0.2871869999944465[39m,
+        v8Start: [33m2.8565229999949224[39m,
+        bootstrapComplete: [33m22.97733100000187[39m,
+        environment: [33m10.17064599999867[39m,
+        loopStart: [33m31.583559000006062[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m112.057785[39m
+        idleTime: [33m114.679471[39m
       },
-      timeOrigin: [33m1748187902402.115[39m
+      timeOrigin: [33m1748188097480.981[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10261,16 +10261,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m849.527928[39m,
-        nodeStart: [33m0.27484499999991385[39m,
-        v8Start: [33m3.003282000005129[39m,
-        bootstrapComplete: [33m19.03907099999924[39m,
-        environment: [33m10.0246660000048[39m,
-        loopStart: [33m24.857632999999623[39m,
+        duration: [33m877.612189[39m,
+        nodeStart: [33m0.2871869999944465[39m,
+        v8Start: [33m2.8565229999949224[39m,
+        bootstrapComplete: [33m22.97733100000187[39m,
+        environment: [33m10.17064599999867[39m,
+        loopStart: [33m31.583559000006062[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m112.057785[39m
+        idleTime: [33m114.679471[39m
       },
-      timeOrigin: [33m1748187902402.115[39m
+      timeOrigin: [33m1748188097480.981[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10648,6 +10648,12 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
+[90mstdout[2m | tests/unit/main.test.ts
+[22m[39m🔄 Replacing List Placeholders in Tables
+🚀 About to call initRecentPosts from main.ts
+✅ Called initRecentPosts from main.ts
+✅ Initialized copy links for 0 headers
+
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
@@ -10660,12 +10666,16 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle errors during plot creation
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrandom_prompt_for_label[2m > [22mshould find a random prompt for a label
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mcategory_to_prompts_text[2m > [22mshould convert category elements to text with prompts
-[90mstdout[2m | tests/unit/main.test.ts
-[22m[39m🔄 Replacing List Placeholders in Tables
-🚀 About to call initRecentPosts from main.ts
-✅ Called initRecentPosts from main.ts
-✅ Initialized copy links for 0 headers
-
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent posts module
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent all posts if container exists
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould not initialize recent all posts if container doesn't exist
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found
+ [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping
 [90mstdout[2m | tests/unit/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
 [22m[39mappend_randomizer_div #non-existent not present
 
@@ -10680,16 +10690,6 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould append content from the factory when parent is found
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould handle click events on non-link elements
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not regenerate content when clicking on a link
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent posts module
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould initialize recent all posts if container exists
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould not initialize recent all posts if container doesn't exist
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found
- [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
@@ -10715,7 +10715,7 @@ Toggle element with ID remaining-posts-toggle not found
 
 [2m Test Files [22m [1m[32m13 passed[39m[22m[90m (13)[39m
 [2m      Tests [22m [1m[32m152 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (157)[39m
-[2m   Start at [22m 15:45:02
-[2m   Duration [22m 3.32s[2m (transform 482ms, setup 203ms, collect 647ms, tests 505ms, environment 4.71s, prepare 1.14s)[22m
+[2m   Start at [22m 15:48:17
+[2m   Duration [22m 3.32s[2m (transform 541ms, setup 173ms, collect 757ms, tests 567ms, environment 4.61s, prepare 1.12s)[22m
 
 </pre></body></html>
