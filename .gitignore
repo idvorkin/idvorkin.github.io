@@ -361,3 +361,4 @@ ENV/
 .well-known/
 sitemap.xml
 robots.txt
+.aider*
