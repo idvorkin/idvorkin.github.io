@@ -30,6 +30,9 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
 [22m[39m✅ Initialized copy links for 1 headers
 
+[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
+
 [90mstderr[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
 [22m[39mFailed to copy header link: Error: Clipboard failed
     at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mtests/unit/header-copy-link.test.ts:300:24
@@ -43,11 +46,13 @@ npx vitest run --reporter=verbose
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
 
+[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
+[22m[39m🔍 updateRecentPosts function called
+🔍 recent-posts container element: found
+🔍 Fetching back-links.json...
+
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mIntegration[2m > [22m[2mshould initialize correctly when DOM is ready
 [22m[39m✅ Initialized copy links for 1 headers
-
-[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
 
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
 [22m[39m✅ Initialized copy links for 1 headers
@@ -57,6 +62,19 @@ npx vitest run --reporter=verbose
 
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
 [22m[39m✅ Initialized copy links for 1 headers
+
+[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
+[22m[39m🔍 Sorted pages, first 5: [
+  { url: [32m'/page1'[39m, title: [32m'Page 1'[39m, last_modified: [32m'2023-01-01'[39m },
+  { url: [32m'/page2'[39m, title: [32m'Page 2'[39m, last_modified: [32m'2023-01-02'[39m }
+]
+🔍 Updating recent-posts content with HTML 
+    <ul>
+      
+        <li>
+          <a href="/page1">Page 1</a> - 
+          Description for pag...
+✅ Recent posts updated successfully
 
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly
@@ -73,24 +91,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
-[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
-[22m[39m🔍 updateRecentPosts function called
-🔍 recent-posts container element: found
-🔍 Fetching back-links.json...
-
-[90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould update the container with recent posts HTML
-[22m[39m🔍 Sorted pages, first 5: [
-  { url: [32m'/page1'[39m, title: [32m'Page 1'[39m, last_modified: [32m'2023-01-01'[39m },
-  { url: [32m'/page2'[39m, title: [32m'Page 2'[39m, last_modified: [32m'2023-01-02'[39m }
-]
-🔍 Updating recent-posts content with HTML 
-    <ul>
-      
-        <li>
-          <a href="/page1">Page 1</a> - 
-          Description for pag...
-✅ Recent posts updated successfully
-
 [90mstdout[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
 [22m[39m🔍 updateRecentPosts function called
 🔍 recent-posts container element: found
@@ -2432,16 +2432,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m753.190831[39m,
-        nodeStart: [33m0.2871869999944465[39m,
-        v8Start: [33m2.8565229999949224[39m,
-        bootstrapComplete: [33m22.97733100000187[39m,
-        environment: [33m10.17064599999867[39m,
-        loopStart: [33m31.583559000006062[39m,
+        duration: [33m730.660821[39m,
+        nodeStart: [33m0.2972050000098534[39m,
+        v8Start: [33m2.982325999997556[39m,
+        bootstrapComplete: [33m19.02171100000851[39m,
+        environment: [33m10.011754999984987[39m,
+        loopStart: [33m24.859586999984458[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m114.679471[39m
+        idleTime: [33m95.63232[39m
       },
-      timeOrigin: [33m1748188097480.981[39m
+      timeOrigin: [33m1748188577779.899[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -5037,16 +5037,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m799.239757[39m,
-        nodeStart: [33m0.2871869999944465[39m,
-        v8Start: [33m2.8565229999949224[39m,
-        bootstrapComplete: [33m22.97733100000187[39m,
-        environment: [33m10.17064599999867[39m,
-        loopStart: [33m31.583559000006062[39m,
+        duration: [33m770.669051[39m,
+        nodeStart: [33m0.2972050000098534[39m,
+        v8Start: [33m2.982325999997556[39m,
+        bootstrapComplete: [33m19.02171100000851[39m,
+        environment: [33m10.011754999984987[39m,
+        loopStart: [33m24.859586999984458[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m114.679471[39m
+        idleTime: [33m95.63232[39m
       },
-      timeOrigin: [33m1748188097480.981[39m
+      timeOrigin: [33m1748188577779.899[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7638,16 +7638,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m835.844888[39m,
-        nodeStart: [33m0.2871869999944465[39m,
-        v8Start: [33m2.8565229999949224[39m,
-        bootstrapComplete: [33m22.97733100000187[39m,
-        environment: [33m10.17064599999867[39m,
-        loopStart: [33m31.583559000006062[39m,
+        duration: [33m795.390832[39m,
+        nodeStart: [33m0.2972050000098534[39m,
+        v8Start: [33m2.982325999997556[39m,
+        bootstrapComplete: [33m19.02171100000851[39m,
+        environment: [33m10.011754999984987[39m,
+        loopStart: [33m24.859586999984458[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m114.679471[39m
+        idleTime: [33m95.63232[39m
       },
-      timeOrigin: [33m1748188097480.981[39m
+      timeOrigin: [33m1748188577779.899[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10261,16 +10261,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m877.612189[39m,
-        nodeStart: [33m0.2871869999944465[39m,
-        v8Start: [33m2.8565229999949224[39m,
-        bootstrapComplete: [33m22.97733100000187[39m,
-        environment: [33m10.17064599999867[39m,
-        loopStart: [33m31.583559000006062[39m,
+        duration: [33m841.879035[39m,
+        nodeStart: [33m0.2972050000098534[39m,
+        v8Start: [33m2.982325999997556[39m,
+        bootstrapComplete: [33m19.02171100000851[39m,
+        environment: [33m10.011754999984987[39m,
+        loopStart: [33m24.859586999984458[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m114.679471[39m
+        idleTime: [33m95.63232[39m
       },
-      timeOrigin: [33m1748188097480.981[39m
+      timeOrigin: [33m1748188577779.899[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10648,12 +10648,6 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
-[90mstdout[2m | tests/unit/main.test.ts
-[22m[39m🔄 Replacing List Placeholders in Tables
-🚀 About to call initRecentPosts from main.ts
-✅ Called initRecentPosts from main.ts
-✅ Initialized copy links for 0 headers
-
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
@@ -10666,6 +10660,12 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle errors during plot creation
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrandom_prompt_for_label[2m > [22mshould find a random prompt for a label
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mcategory_to_prompts_text[2m > [22mshould convert category elements to text with prompts
+[90mstdout[2m | tests/unit/main.test.ts
+[22m[39m🔄 Replacing List Placeholders in Tables
+🚀 About to call initRecentPosts from main.ts
+✅ Called initRecentPosts from main.ts
+✅ Initialized copy links for 0 headers
+
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -10715,7 +10715,7 @@ Toggle element with ID remaining-posts-toggle not found
 
 [2m Test Files [22m [1m[32m13 passed[39m[22m[90m (13)[39m
 [2m      Tests [22m [1m[32m152 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (157)[39m
-[2m   Start at [22m 15:48:17
-[2m   Duration [22m 3.32s[2m (transform 541ms, setup 173ms, collect 757ms, tests 567ms, environment 4.61s, prepare 1.12s)[22m
+[2m   Start at [22m 15:56:17
+[2m   Duration [22m 3.34s[2m (transform 456ms, setup 171ms, collect 623ms, tests 547ms, environment 4.74s, prepare 1.17s)[22m
 
 </pre></body></html>
