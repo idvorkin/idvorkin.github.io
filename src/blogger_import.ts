@@ -1,5 +1,15 @@
 import { append_randomizer_div, random_from_list } from "./index";
-function html_for_blogpost(post) {
+
+interface BlogPost {
+  url: string;
+  title: string;
+  thumbnail: string;
+  published: string;
+  excerpt: string;
+  tags: string[];
+}
+
+function html_for_blogpost(post: BlogPost) {
   const item = $("<div/>");
   // TODO: HACK: Strip to the right of Week number
   const title_href = `<h4> <a href='${post.url}'}>${post.title}</a></h4>`;
@@ -46,14 +56,14 @@ function html_for_blogpost(post) {
   return ret;
 }
 
-function get_achievement_posts(imported_posts: Array<any>) {
+function get_achievement_posts(imported_posts: BlogPost[]) {
   return imported_posts.filter((post) => post.title.toLowerCase().includes("achievement"));
 }
-function get_recent_posts(imported_posts: Array<any>) {
+function get_recent_posts(imported_posts: BlogPost[]) {
   return imported_posts.filter((post) => post.tags.includes("family-journal"));
 }
 
-function ProcessImports(posts: Array<any>) {
+function ProcessImports(posts: BlogPost[]) {
   console.log("Processing", posts.length, "posts");
   if (!posts) {
     console.log("No posts being imported");

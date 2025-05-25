@@ -3,8 +3,8 @@ import { get_link_info, random_from_list } from "./shared";
 
 // For autocomplete, safely access the window properties
 // This makes it more testable
-let autocomplete;
-let getAlgoliaResults;
+let autocomplete: unknown;
+let getAlgoliaResults: unknown;
 if (typeof window !== "undefined" && window["@algolia/autocomplete-js"]) {
   const algoliaAutocomplete = window["@algolia/autocomplete-js"];
   autocomplete = algoliaAutocomplete.autocomplete;

@@ -39,10 +39,25 @@ import {
 } from "./page-loader";
 
 // Declare global variables from external libraries
-declare let $: any;
-declare let Mousetrap: any;
+declare let $: {
+  (
+    selector: string,
+  ): {
+    ready: (fn: () => void) => void;
+    length: number;
+    focus: () => void;
+  };
+  (
+    document: Document,
+  ): {
+    ready: (fn: () => void) => void;
+  };
+};
+declare let Mousetrap: {
+  bind: (key: string, callback: () => void) => void;
+};
 declare global {
-  function defer(fn: Function): void;
+  function defer(fn: () => void): void;
 }
 
 // Main initialization

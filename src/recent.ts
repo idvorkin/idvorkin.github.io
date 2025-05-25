@@ -17,8 +17,8 @@ export function groupPagesByMonthYear(pages: IPage[]): {
 } {
   const groupedPages: { [key: string]: IPage[] } = {};
 
-  pages.forEach((page) => {
-    if (!page.last_modified) return;
+  for (const page of pages) {
+    if (!page.last_modified) continue;
 
     const date = new Date(page.last_modified);
     const monthYear = `${date.toLocaleString("default", {
@@ -30,7 +30,7 @@ export function groupPagesByMonthYear(pages: IPage[]): {
     }
 
     groupedPages[monthYear].push(page);
-  });
+  }
 
   return groupedPages;
 }
@@ -45,7 +45,7 @@ export function generateGroupedPagesHTML(groupedPages: {
 }): string {
   let html = "";
 
-  Object.entries(groupedPages).forEach(([monthYear, pages]) => {
+  for (const [monthYear, pages] of Object.entries(groupedPages)) {
     html += `
       <h3>${monthYear}</h3>
       <ul class="last-modified-list">
@@ -70,7 +70,7 @@ export function generateGroupedPagesHTML(groupedPages: {
           .join("")}
       </ul>
     `;
-  });
+  }
 
   return html;
 }

@@ -4,7 +4,7 @@ import { get_link_info } from "./index";
 import { append_randomizer_div, random_from_list } from "./index";
 // Only include this in the html files, one per file
 // This allows code to seet things to refactor
-import { TreeNode, add_random_prompts, add_sunburst, shuffle } from "./random-prompter";
+import { TreeNode, add_random_prompts, add_sunburst } from "./random-prompter";
 
 /**
  * Class representing the Seven Habits tree structure
@@ -168,7 +168,7 @@ export function load_enjoy2(
     promptsAdder();
     postsAdder(); // has a random achievement post
     eulogyAdder("#random-eulogy-role");
-    randomizerAppender("#random-blog-posts", make_random_post_html as any);
+    randomizerAppender("#random-blog-posts", () => make_random_post_html().then((html) => html));
   } catch (error) {
     console.error("Error loading enjoy page:", error);
   }
@@ -266,7 +266,7 @@ export async function make_radar_map(div, plotly?) {
 
   if (typeof plotly !== "undefined" && plotly) {
     try {
-      await plotly.newPlot(div, data as any, layout, config);
+      await plotly.newPlot(div, data, layout, config);
     } catch (error) {
       console.error("Error creating radar map:", error);
     }
@@ -318,7 +318,7 @@ export async function make_balance_chart_by_work(div, plotly?) {
 
   if (typeof plotly !== "undefined" && plotly) {
     try {
-      await plotly.newPlot(div, data as any, layout, config);
+      await plotly.newPlot(div, data, layout, config);
     } catch (error) {
       console.error("Error creating work balance chart:", error);
     }
@@ -373,7 +373,7 @@ export async function make_balance_chart_by_desired_time_rest(div, plotly?) {
 
   if (typeof plotly !== "undefined" && plotly) {
     try {
-      await plotly.newPlot(div, data as any, layout, config);
+      await plotly.newPlot(div, data, layout, config);
     } catch (error) {
       console.error("Error creating rest time chart:", error);
     }

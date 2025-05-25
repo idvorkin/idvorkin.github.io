@@ -8,7 +8,14 @@ import { MakeBackLinkHTML, get_link_info } from "./shared";
 //import ForceGraph from "force-graph";
 
 // Define variables that are used but not declared
-declare let ForceGraph: any;
+declare let ForceGraph: (element: HTMLElement) => {
+  graphData: (data: { nodes: unknown[]; links: unknown[] }) => void;
+  centerAt: (x: number, y: number, duration: number) => void;
+  zoom: (scale: number, duration: number) => void;
+  onNodeClick: (callback: (node: unknown) => void) => void;
+  nodeCanvasObject: (callback: (node: unknown, ctx: CanvasRenderingContext2D, globalScale: number) => void) => void;
+  nodePointerAreaPaint: (callback: (node: unknown, color: string, ctx: CanvasRenderingContext2D) => void) => void;
+};
 
 /**
  * Checks if a URL is present in the list of pages
@@ -65,7 +72,7 @@ export function build_links(pages) {
   const links = [];
 
   // Regular link building for multiple expanded pages
-  pages.forEach((page) => {
+  for (const page of pages) {
     // Ensure we have arrays even if they're undefined in the data
     const outgoingLinks = page.outgoing_links || [];
     const incomingLinks = page.incoming_links || [];
@@ -74,13 +81,13 @@ export function build_links(pages) {
     const combinedLinks = [...outgoingLinks, ...incomingLinks];
 
     // Check if each link is valid and add it
-    combinedLinks.forEach((targetUrl) => {
+    for (const targetUrl of combinedLinks) {
       // Try to find the target node
       const targetNode = node_for_url(g_pages, targetUrl);
       if (targetNode) {
         links.push({ source: page, target: targetUrl, value: 1 });
       }
-    });
+    }
 
     // Check if we added any links for this page
     const pageLinks = links.filter((link) => link.source === page);
@@ -88,7 +95,7 @@ export function build_links(pages) {
     if (pageLinks.length === 0 && page.url === "/eulogy") {
       console.log(`No valid links found for ${page.url}`);
     }
-  });
+  }
 
   return links;
 }
@@ -220,9 +227,9 @@ export function open_goto_control() {
  * Collapses all nodes except the active node
  */
 export function collapse_all_except_active() {
-  g_pages.forEach((p) => {
+  for (const p of g_pages) {
     p.expanded = false;
-  });
+  }
   if (g_last_detail_node) {
     g_last_detail_node.expanded = true;
   }
@@ -269,9 +276,9 @@ export async function initializeGraph() {
 
   const initial_expanded_url = g_pages.map((p) => p.url).includes(slug) ? slug : "/eulogy";
 
-  g_pages.forEach((p) => {
+  for (const p of g_pages) {
     p.expanded = p.url === initial_expanded_url;
-  });
+  }
 
   // If ForceGraph isn't defined, return
   if (typeof ForceGraph === "undefined") {

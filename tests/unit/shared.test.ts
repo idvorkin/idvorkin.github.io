@@ -58,10 +58,10 @@ describe("Shared Utility Functions", () => {
 
       // Each item should be selected roughly 200 times (1000/5)
       // Allow for some statistical variation (150-250 is reasonable)
-      Object.values(counts).forEach((count) => {
+      for (const count of Object.values(counts)) {
         expect(count).toBeGreaterThan(150);
         expect(count).toBeLessThan(250);
-      });
+      }
     });
   });
 
@@ -99,7 +99,7 @@ describe("Shared Utility Functions", () => {
   });
 
   describe("append_randomizer_div", () => {
-    let clickCallback: Function;
+    let clickCallback: (() => void) | null;
 
     beforeEach(() => {
       // Set up the DOM

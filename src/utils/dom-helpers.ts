@@ -42,19 +42,19 @@ export function createElement<T extends HTMLElement>(
   const element = document.createElement(tag) as T;
 
   if (attributes) {
-    Object.entries(attributes).forEach(([key, value]) => {
+    for (const [key, value] of Object.entries(attributes)) {
       element.setAttribute(key, value);
-    });
+    }
   }
 
   if (children) {
-    children.forEach((child) => {
+    for (const child of children) {
       if (typeof child === "string") {
         element.appendChild(document.createTextNode(child));
       } else {
         element.appendChild(child);
       }
-    });
+    }
   }
 
   return element;

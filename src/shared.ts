@@ -31,7 +31,7 @@ export function random_from_list<T>(list: T[]): T {
  */
 export function shuffle<T>(array: T[]): T[] {
   let currentIndex = array.length;
-  let randomIndex;
+  let randomIndex: number;
 
   // While there remain elements to shuffle.
   while (currentIndex !== 0) {
