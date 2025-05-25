@@ -50,6 +50,13 @@ describe("Recent Module", () => {
       }
       return originalToLocaleDateString.call(this, locale, options);
     };
+
+    // Reset all mocks before each test
+    vi.resetAllMocks();
+
+    // Set up a test DOM environment
+    document.body.innerHTML = "";
+    document.body.innerHTML = '<div id="last-modified-posts"></div><div id="test-container"></div>';
   });
 
   afterEach(() => {
@@ -82,15 +89,6 @@ describe("Recent Module", () => {
       last_modified: "2023-02-05",
     },
   ];
-
-  beforeEach(() => {
-    // Reset all mocks before each test
-    vi.resetAllMocks();
-
-    // Set up a test DOM environment
-    document.body.innerHTML = "";
-    document.body.innerHTML = '<div id="last-modified-posts"></div><div id="test-container"></div>';
-  });
 
   describe("groupPagesByMonthYear", () => {
     it("should group pages by month and year", () => {
@@ -435,7 +433,7 @@ describe("Recent Module", () => {
   });
 
   describe("initRecentAllPosts", () => {
-    it("should call updateRecentPosts immediately if document is already loaded", () => {
+    it("should call updateRecentPosts immediately if document is already loaded", async () => {
       // Mock document with all required methods
       const mockDoc = {
         readyState: "complete",
@@ -447,17 +445,17 @@ describe("Recent Module", () => {
       // Mock updateRecentPosts via shared module
       const updateSpy = vi.spyOn(sharedModule, "getProcessedPages").mockResolvedValue([]);
 
-      // Spy on console.log
-      const logSpy = vi.spyOn(console, "log");
-
       // Call the function with mock document
       initRecentAllPosts("test-container", mockDoc as any);
 
       // Should not add event listener
       expect(mockDoc.addEventListener).not.toHaveBeenCalled();
 
-      // Should log the right message
-      expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("Document already loaded"));
+      // Wait a bit for async operations
+      await new Promise((resolve) => setTimeout(resolve, 0));
+
+      // Should call updateRecentPosts
+      expect(updateSpy).toHaveBeenCalled();
     });
 
     it("should add event listener if document is still loading", () => {

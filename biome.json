@@ -14,7 +14,8 @@
       "node_modules/**",
       "search.json",
       ".markdownlint.json",
-      "**/*.md"
+      "**/*.md",
+      "test-results/**"
     ]
   },
   "formatter": {

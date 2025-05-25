@@ -194,8 +194,6 @@ export function initHeaderCopyLinks(customOptions: Partial<CopyLinkOptions> = {}
   for (const header of Array.from(headers)) {
     addCopyLinkToHeader(header as HTMLElement, options);
   }
-
-  console.log(`✅ Initialized copy links for ${headers.length} headers`);
 }
 
 /**
@@ -261,12 +259,10 @@ export function resetHeaderCopyLinksInitialization(): void {
 export function enableHeaderCopyLinks(options: Partial<CopyLinkOptions> = {}): void {
   // Prevent multiple initializations
   if (isHeaderCopyLinksInitialized) {
-    console.log("⚠️ Header copy links already initialized, skipping...");
     return;
   }
 
   isHeaderCopyLinksInitialized = true;
-  console.log("🔗 Initializing header copy links...");
 
   // Add styles
   addHeaderCopyLinkStyles();

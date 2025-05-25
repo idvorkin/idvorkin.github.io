@@ -231,7 +231,6 @@ async function AddLinksToPage(allUrls: IURLInfoMap) {
       outgoing_location.append(MakeBackLinkHTML(url_info));
     }
   }
-  console.log("Added Graph");
   const graph_location = link_parent_location.find("#graph");
   const stripped_page_path = page_path.replace(/\//g, "");
   graph_location.append(`<a href='/graph#${stripped_page_path}'>${page_path} (${stripped_page_path}) </a>`);
@@ -279,8 +278,6 @@ function AddSummarysToPage(backLinks: IBacklinks) {
           return;
         }
 
-        console.log(link.attr("href"));
-
         let ref = link.attr("href");
         if (!ref) {
           link.html(make_html_summary_link_error(link, "missing href"));
@@ -319,6 +316,13 @@ function AddSummarysToPage(backLinks: IBacklinks) {
 }
 
 async function add_link_loader() {
+  // Prevent multiple initialization using global flag
+  const globalFlag = "__idvorkin_add_link_loader_initialized__";
+  if ((window as any)[globalFlag]) {
+    return;
+  }
+  (window as any)[globalFlag] = true;
+
   AddLinksToPage(await get_link_info());
   AddSummarysToPage(await get_back_links());
 }
@@ -455,12 +459,18 @@ function buildListReplacementMap(): Record<string, Element> {
  * This function orchestrates the process of finding and replacing placeholders.
  */
 function replaceListPlaceholdersInTables() {
-  console.log("🔄 Replacing List Placeholders in Tables");
   const listReplacements = buildListReplacementMap();
   replacePlaceholdersWithLists(listReplacements);
 }
 
 function load_globals() {
+  // Prevent multiple initialization using global flag
+  const globalFlag = "__idvorkin_load_globals_initialized__";
+  if ((window as any)[globalFlag]) {
+    return;
+  }
+  (window as any)[globalFlag] = true;
+
   $(add_link_loader);
   $(keyboard_shortcut_loader);
 
@@ -475,15 +485,11 @@ function load_globals() {
     }
   }
 
-  console.log("🚀 About to call initRecentPosts from main.ts");
   initRecentPosts();
-  console.log("✅ Called initRecentPosts from main.ts");
 
   // Initialize recent posts if the container exists
   if (document.getElementById("last-modified-posts")) {
-    console.log("🚀 About to call initRecentAllPosts from main.ts");
     initRecentAllPosts();
-    console.log("✅ Called initRecentAllPosts from main.ts");
   }
 
   $(() => {

@@ -48,10 +48,7 @@ export function generateRecentPagesHTML(recentPages: IPage[]): string {
  * @param containerId The ID of the container element, defaults to "recent-posts"
  */
 export async function updateRecentPosts(containerId = "recent-posts"): Promise<void> {
-  console.log("🔍 updateRecentPosts function called");
-
   const recentPostsContainer = document.getElementById(containerId);
-  console.log("🔍 recent-posts container element:", recentPostsContainer ? "found" : "not found");
 
   if (!recentPostsContainer) {
     console.error(`❌ ${containerId} container not found in DOM`);
@@ -59,28 +56,13 @@ export async function updateRecentPosts(containerId = "recent-posts"): Promise<v
   }
 
   try {
-    console.log("🔍 Fetching back-links.json...");
-
     // Get fully processed pages from shared module
     const sortedPages = await getProcessedPages();
-
-    console.log(
-      "🔍 Sorted pages, first 5:",
-      sortedPages.slice(0, 5).map((p) => ({
-        url: p.url,
-        title: p.title,
-        last_modified: p.last_modified,
-      })),
-    );
-
     const recentPages = getRecentPages(sortedPages);
 
     // Create and update the HTML
     const html = generateRecentPagesHTML(recentPages);
-
-    console.log("🔍 Updating recent-posts content with HTML", `${html.substring(0, 100)}...`);
     recentPostsContainer.innerHTML = html;
-    console.log("✅ Recent posts updated successfully");
   } catch (error) {
     console.error("❌ Error loading recent posts:", error);
     recentPostsContainer.innerHTML = "<p>Error loading recent posts. Please try again later.</p>";
@@ -93,21 +75,14 @@ export async function updateRecentPosts(containerId = "recent-posts"): Promise<v
  * @param doc Document instance (for testing)
  */
 export function initRecentPosts(containerId = "recent-posts", doc: Document = document): void {
-  console.log("🔍 initRecentPosts called");
-
   // Check if document is already loaded
   if (doc.readyState === "loading") {
     // Document still loading, add event listener
-    console.log("🔍 Document still loading, adding DOMContentLoaded listener");
     doc.addEventListener("DOMContentLoaded", () => {
-      console.log("🔍 DOMContentLoaded event fired, calling updateRecentPosts()");
       updateRecentPosts(containerId);
     });
   } else {
     // Document already loaded, run immediately
-    console.log("🔍 Document already loaded, calling updateRecentPosts() immediately");
     updateRecentPosts(containerId);
   }
-
-  console.log("🔍 initRecentPosts completed initial setup");
 }

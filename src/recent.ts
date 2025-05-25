@@ -220,10 +220,7 @@ export async function updateRecentPosts(
   initialPostsCount = 15,
   doc: Document = document,
 ): Promise<void> {
-  console.log("🔍 updateRecentPosts function called");
-
   const recentContainer = doc.getElementById(containerId);
-  console.log("🔍 recent-posts container element:", recentContainer);
 
   if (!recentContainer) {
     console.error(`❌ ${containerId} container not found in DOM`);
@@ -231,8 +228,6 @@ export async function updateRecentPosts(
   }
 
   try {
-    console.log("🔍 Fetching back-links.json...");
-
     // Get fully processed pages from shared module
     const sortedPages = await getProcessedPages();
 
@@ -240,13 +235,10 @@ export async function updateRecentPosts(
     const html = generateRecentPostsHTML(sortedPages, initialPostsCount);
 
     // Update container
-    console.log("🔍 Updating recent-posts content with HTML", `${html.substring(0, 100)}...`);
     recentContainer.innerHTML = html;
 
     // Setup toggle functionality
     setupToggleEventListener("remaining-posts-toggle", "remaining-posts-content", doc);
-
-    console.log("✅ Recent posts updated successfully");
   } catch (error) {
     console.error("❌ Error loading recent posts:", error);
     recentContainer.innerHTML = "<p>Error loading modified posts. Please try again later.</p>";
@@ -259,21 +251,14 @@ export async function updateRecentPosts(
  * @param doc Document instance (for testing)
  */
 export function initRecentAllPosts(containerId = "last-modified-posts", doc: Document = document): void {
-  console.log("🔍 initRecentAllPosts called");
-
   // Check if document is already loaded
   if (doc.readyState === "loading") {
     // Document still loading, add event listener
-    console.log("🔍 Document still loading, adding DOMContentLoaded listener");
     doc.addEventListener("DOMContentLoaded", () => {
-      console.log("🔍 DOMContentLoaded event fired, calling updateRecentPosts()");
       updateRecentPosts(containerId, 15, doc);
     });
   } else {
     // Document already loaded, run immediately
-    console.log("🔍 Document already loaded, calling updateRecentPosts() immediately");
     updateRecentPosts(containerId, 15, doc);
   }
-
-  console.log("🔍 initRecentAllPosts completed initial setup");
 }

@@ -553,14 +553,14 @@ describe("Recent Posts Module", () => {
       // Spy on updateRecentPosts to verify it's called
       const updateSpy = vi.spyOn(sharedModule, "getProcessedPages").mockResolvedValue([]);
 
-      // Spy on console.log to verify execution
-      const logSpy = vi.spyOn(console, "log");
-
       // Call the function with mock document
       initRecentPosts("test-container", mockDoc as any);
 
-      // Verify it tried to run immediately (via console logs)
-      expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("Document already loaded"));
+      // Wait a bit for async operations
+      await new Promise((resolve) => setTimeout(resolve, 0));
+
+      // Verify updateRecentPosts was called
+      expect(updateSpy).toHaveBeenCalled();
     });
 
     it("should add event listener if document is still loading", () => {
