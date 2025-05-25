@@ -30,6 +30,7 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [What Actually Happens During a Gap Year](#what-actually-happens-during-a-gap-year)
 - [The Dragons: Why We Don't Take Gap Years](#the-dragons-why-we-dont-take-gap-years)
 - [The Test: How to Know If You're Ready](#the-test-how-to-know-if-youre-ready)
+- [Making the Decision: A Framework for the Gap Year Choice](#making-the-decision-a-framework-for-the-gap-year-choice)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -99,6 +100,13 @@ Maybe it's:
 - Starting the business you always talked about (with the savings to survive the startup phase)
 - Learning a craft (with the patience and focus that comes with maturity)
 - Traveling meaningfully (with the perspective to appreciate what you're seeing)
+
+For Igor it's probably stuff on here:
+
+{% include summarize-page.html src="/y2025" %}
+{% include summarize-page.html src="/y2024" %}
+
+And maybe I should be making gap year goals
 
 ## The Relationship Reset
 
@@ -174,15 +182,17 @@ The final phase is about figuring out how to integrate what you've learned back 
 
 Despite the compelling case, most people don't take gap years. The dragons guarding this treasure are:
 
-**The Identity Dragon**: "I am my job." Taking time off threatens our sense of self and social standing.
+_In order for Igor_
 
 **The Security Dragon**: "What if I can't find work when I return?" This fear often exceeds the actual risk.
 
-**The Judgment Dragon**: "People will think I'm irresponsible/lazy/having a midlife crisis." Others' opinions become more important than our own well-being.
+**The Momentum Dragon**: "I can't stop now - I'm on a roll." But momentum in the wrong direction is just speed toward the wrong destination.
 
 **The Perfectionism Dragon**: "I need to have it all figured out before I take time off." This leads to endless planning and no action.
 
-**The Momentum Dragon**: "I can't stop now - I'm on a roll." But momentum in the wrong direction is just speed toward the wrong destination.
+**The Judgment Dragon**: "People will think I'm irresponsible/lazy/having a midlife crisis." Others' opinions become more important than our own well-being.
+
+**The Identity Dragon**: "I am my job." Taking time off threatens our sense of self and social standing.
 
 Each dragon is guarding something legitimate - security, identity, social standing are all important. But they're also holding you hostage from one of the most transformative opportunities of your life.
 
@@ -216,8 +226,12 @@ Each dragon is guarding something legitimate - security, identity, social standi
 
 If you can honestly answer yes to most of these, you might be one of the rare people positioned to make this unconventional choice.
 
-The gap year paradox challenges everything we've been taught about career progression and financial planning. But for those with the resources and courage to try it, it offers something priceless: the chance to live fully while you still can, rather than deferring life until you're too tired to truly live it.
+## Making the Decision: A Framework for the Gap Year Choice
 
-The question isn't whether you can afford to take a gap year at 50. The question is whether you can afford not to.
+The gap year decision forces you to stare down the risk of the unknowns. Will you be eaten by the dragons, or will you soar through the gap? Use the decision making tools in decision making 201, but perhaps the most important question to ask: **What does this decision say about who I am?** Use these frameworks to make a choice you can stand behind, regardless of how it unfolds.
+
+{% include summarize-page.html src="/decisive" %}
 
 {% include summarize-page.html src="/retire" %}
+
+The question isn't whether you can afford to take a gap year at 50. The question is whether you can afford not to.
