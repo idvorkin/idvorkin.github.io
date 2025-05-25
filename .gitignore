@@ -204,7 +204,7 @@ Session.vim
 .vim
 
 # Aider AI coding assistant
-.aider
+.aider.*
 
 # Emacs
 \#*\#
