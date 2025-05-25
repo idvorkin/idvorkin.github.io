@@ -1,8 +1,7 @@
-from collections import defaultdict
 from typing import Dict, Callable, List
 from dataclasses import dataclass
 import copy
-from passages import TP, Allow_Back, Passage, PassageFactory, GetHeader
+from passages import TP, Passage, PassageFactory, GetHeader
 
 
 @dataclass
@@ -26,7 +25,7 @@ class ConsoleRender:
             input_prompt = "   Enter a number:"
         while True:
             choice = input(input_prompt)
-            if not choice in choices:
+            if choice not in choices:
                 print(f"[{choice}] is not a valid choice try again")
                 continue
             return choice
@@ -78,7 +77,7 @@ def PassageToConsole(passage: Passage) -> ConsolePassage:
             continue
         if callable(element):
             function_name = element.__name__
-            text_link = f"{function_name.replace('_',' ')}"
+            text_link = f"{function_name.replace('_', ' ')}"
             if text_link.startswith(" "):
                 text_link = text_link[1:]
             output += f" [{text_link}({link_id})] "

@@ -1,7 +1,5 @@
-from collections import defaultdict
-from typing import Dict, Callable, List, NewType, Callable, TypeVar, Union
+from typing import List, Callable, Union
 from dataclasses import dataclass
-import copy
 
 
 # Twee has a Passage class, which represents a single passage.

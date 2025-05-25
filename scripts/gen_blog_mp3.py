@@ -18,7 +18,7 @@ def dump_blog(voice="igor"):
         text = url_info["description"]
         url = url_info["url"]
         # convert slashes to _
-        filename = Path(f"{url.replace('/','_')}.mp3")
+        filename = Path(f"{url.replace('/', '_')}.mp3")
         ic(filename)
         tts(voice, text, filename)
 
