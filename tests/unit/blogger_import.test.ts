@@ -1,14 +1,10 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
-import {
-  add_imported_blog_posts,
-  add_eulogy_roles,
-  html_for_role,
-} from "../../src/blogger_import";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { add_eulogy_roles, add_imported_blog_posts, html_for_role } from "../../src/blogger_import";
 import * as index from "../../src/index";
 
 // Mock dependencies
 vi.mock("../../src/index", () => ({
-  random_from_list: vi.fn(arr => arr[0]),
+  random_from_list: vi.fn((arr) => arr[0]),
   append_randomizer_div: vi.fn(),
 }));
 
@@ -81,27 +77,15 @@ describe("Blogger Import Module", () => {
       add_imported_blog_posts();
 
       // Check that $.getJSON was called with the correct URL
-      expect(global.$.getJSON).toHaveBeenCalledWith(
-        "/ig66/ig66-export.json",
-        expect.any(Function)
-      );
+      expect(global.$.getJSON).toHaveBeenCalledWith("/ig66/ig66-export.json", expect.any(Function));
 
       // Check that append_randomizer_div was called three times
       expect(index.append_randomizer_div).toHaveBeenCalledTimes(3);
 
       // Check that it was called with the correct selectors
-      expect(index.append_randomizer_div).toHaveBeenCalledWith(
-        "#random-post",
-        expect.any(Function)
-      );
-      expect(index.append_randomizer_div).toHaveBeenCalledWith(
-        "#achievment",
-        expect.any(Function)
-      );
-      expect(index.append_randomizer_div).toHaveBeenCalledWith(
-        "#random-recent",
-        expect.any(Function)
-      );
+      expect(index.append_randomizer_div).toHaveBeenCalledWith("#random-post", expect.any(Function));
+      expect(index.append_randomizer_div).toHaveBeenCalledWith("#achievment", expect.any(Function));
+      expect(index.append_randomizer_div).toHaveBeenCalledWith("#random-recent", expect.any(Function));
     });
   });
 
@@ -110,19 +94,13 @@ describe("Blogger Import Module", () => {
       add_eulogy_roles("#eulogy-div");
 
       // Check that $.getJSON was called with the correct URL
-      expect(global.$.getJSON).toHaveBeenCalledWith(
-        "/eulogy.json",
-        expect.any(Function)
-      );
+      expect(global.$.getJSON).toHaveBeenCalledWith("/eulogy.json", expect.any(Function));
 
       // Check that append_randomizer_div was called once
       expect(index.append_randomizer_div).toHaveBeenCalledTimes(1);
 
       // Check that it was called with the correct selector
-      expect(index.append_randomizer_div).toHaveBeenCalledWith(
-        "#eulogy-div",
-        expect.any(Function)
-      );
+      expect(index.append_randomizer_div).toHaveBeenCalledWith("#eulogy-div", expect.any(Function));
     });
   });
 

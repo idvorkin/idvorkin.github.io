@@ -1,15 +1,15 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
-  groupPagesByMonthYear,
-  generateGroupedPagesHTML,
   createToggleSection,
-  generateStyles,
-  setupToggleEventListener,
+  generateGroupedPagesHTML,
   generateRecentPostsHTML,
-  updateRecentPosts,
+  generateStyles,
+  groupPagesByMonthYear,
   initRecentAllPosts,
+  setupToggleEventListener,
+  updateRecentPosts,
 } from "../../src/recent";
-import { IPage } from "../../src/recent-posts-shared";
+import type { IPage } from "../../src/recent-posts-shared";
 import * as sharedModule from "../../src/recent-posts-shared";
 
 describe("Recent Module", () => {
@@ -20,7 +20,7 @@ describe("Recent Module", () => {
   beforeEach(() => {
     // Mock Date methods to return consistent values for tests
     Date.prototype.toLocaleString = function (locale, options) {
-      if (options && options.month) {
+      if (options?.month) {
         const month = new Date(this).getMonth();
         return [
           "January",
@@ -41,22 +41,11 @@ describe("Recent Module", () => {
     };
 
     Date.prototype.toLocaleDateString = function (locale, options) {
-      if (options && options.month && options.day) {
+      if (options?.month && options.day) {
         const day = new Date(this).getDate();
-        const month = [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec",
-        ][new Date(this).getMonth()];
+        const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][
+          new Date(this).getMonth()
+        ];
         return `${month} ${day}`;
       }
       return originalToLocaleDateString.call(this, locale, options);
@@ -100,8 +89,7 @@ describe("Recent Module", () => {
 
     // Set up a test DOM environment
     document.body.innerHTML = "";
-    document.body.innerHTML =
-      '<div id="last-modified-posts"></div><div id="test-container"></div>';
+    document.body.innerHTML = '<div id="last-modified-posts"></div><div id="test-container"></div>';
   });
 
   describe("groupPagesByMonthYear", () => {
@@ -120,8 +108,8 @@ describe("Recent Module", () => {
       expect(febGroup.length).toBeGreaterThan(0);
 
       // Check specific entries
-      const janUrls = janGroup.map(p => p.url);
-      const febUrls = febGroup.map(p => p.url);
+      const janUrls = janGroup.map((p) => p.url);
+      const febUrls = febGroup.map((p) => p.url);
 
       // Only check that each group has at least one expected item
       // The item distribution might vary by environment
@@ -223,7 +211,7 @@ describe("Recent Module", () => {
       const html = generateGroupedPagesHTML(groupedPages);
 
       // Should contain only the first 150 characters plus "..."
-      expect(html).toContain("A".repeat(150) + "...");
+      expect(html).toContain(`${"A".repeat(150)}...`);
       expect(html).not.toContain("A".repeat(151));
     });
   });
@@ -276,8 +264,7 @@ describe("Recent Module", () => {
       const mockDoc = {
         getElementById: (id: string) => {
           if (id === "test-toggle") return mockElement;
-          if (id === "test-content")
-            return document.getElementById("test-content");
+          if (id === "test-content") return document.getElementById("test-content");
           return null;
         },
       };
@@ -286,10 +273,7 @@ describe("Recent Module", () => {
       setupToggleEventListener("test-toggle", "test-content", mockDoc as any);
 
       // Verify the listener was added
-      expect(mockAddEventListener).toHaveBeenCalledWith(
-        "click",
-        expect.any(Function)
-      );
+      expect(mockAddEventListener).toHaveBeenCalledWith("click", expect.any(Function));
     });
 
     it("should handle missing toggle element", () => {
@@ -301,9 +285,7 @@ describe("Recent Module", () => {
       setupToggleEventListener("missing-toggle", "content", mockDoc as any);
 
       expect(consoleSpy).toHaveBeenCalledWith(
-        expect.stringContaining(
-          "Toggle element with ID missing-toggle not found"
-        )
+        expect.stringContaining("Toggle element with ID missing-toggle not found"),
       );
     });
 
@@ -377,9 +359,7 @@ describe("Recent Module", () => {
   describe("updateRecentPosts", () => {
     it("should update container with posts HTML", async () => {
       // Mock getProcessedPages
-      vi.spyOn(sharedModule, "getProcessedPages").mockResolvedValue(
-        samplePages
-      );
+      vi.spyOn(sharedModule, "getProcessedPages").mockResolvedValue(samplePages);
 
       // Get test container from DOM
       const container = document.getElementById("test-container");
@@ -391,9 +371,7 @@ describe("Recent Module", () => {
       // Check container was updated
       expect(container?.innerHTML).toContain("January 2023");
       expect(container?.innerHTML).toContain("February 2023");
-      expect(container?.innerHTML).toContain(
-        "Remaining Modified Files (1 more)"
-      );
+      expect(container?.innerHTML).toContain("Remaining Modified Files (1 more)");
     });
 
     it("should handle empty results", async () => {
@@ -413,9 +391,7 @@ describe("Recent Module", () => {
 
     it("should handle errors", async () => {
       // Mock getProcessedPages to throw error
-      vi.spyOn(sharedModule, "getProcessedPages").mockRejectedValue(
-        new Error("Test error")
-      );
+      vi.spyOn(sharedModule, "getProcessedPages").mockRejectedValue(new Error("Test error"));
 
       // Get test container from DOM
       const container = document.getElementById("test-container");
@@ -438,20 +414,16 @@ describe("Recent Module", () => {
       document.getElementById = vi.fn().mockReturnValue(null);
 
       // Create spy for getProcessedPages
-      const processSpy = vi
-        .spyOn(sharedModule, "getProcessedPages")
-        .mockImplementation(() => {
-          throw new Error("This should not be called");
-        });
+      const processSpy = vi.spyOn(sharedModule, "getProcessedPages").mockImplementation(() => {
+        throw new Error("This should not be called");
+      });
 
       // Call with non-existent container
       await updateRecentPosts("non-existent-container", 15, document);
 
       // Should log error
       expect(consoleSpy).toHaveBeenCalledWith(
-        expect.stringContaining(
-          "non-existent-container container not found in DOM"
-        )
+        expect.stringContaining("non-existent-container container not found in DOM"),
       );
 
       // Should not call getProcessedPages
@@ -473,9 +445,7 @@ describe("Recent Module", () => {
       };
 
       // Mock updateRecentPosts via shared module
-      const updateSpy = vi
-        .spyOn(sharedModule, "getProcessedPages")
-        .mockResolvedValue([]);
+      const updateSpy = vi.spyOn(sharedModule, "getProcessedPages").mockResolvedValue([]);
 
       // Spy on console.log
       const logSpy = vi.spyOn(console, "log");
@@ -487,9 +457,7 @@ describe("Recent Module", () => {
       expect(mockDoc.addEventListener).not.toHaveBeenCalled();
 
       // Should log the right message
-      expect(logSpy).toHaveBeenCalledWith(
-        expect.stringContaining("Document already loaded")
-      );
+      expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("Document already loaded"));
     });
 
     it("should add event listener if document is still loading", () => {
@@ -505,10 +473,7 @@ describe("Recent Module", () => {
       initRecentAllPosts("test-container", mockDoc as any);
 
       // Should add event listener for DOMContentLoaded
-      expect(mockDoc.addEventListener).toHaveBeenCalledWith(
-        "DOMContentLoaded",
-        expect.any(Function)
-      );
+      expect(mockDoc.addEventListener).toHaveBeenCalledWith("DOMContentLoaded", expect.any(Function));
     });
   });
 });

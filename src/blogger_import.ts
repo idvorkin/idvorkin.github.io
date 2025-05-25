@@ -1,4 +1,4 @@
-import { random_from_list, append_randomizer_div } from "./index";
+import { append_randomizer_div, random_from_list } from "./index";
 function html_for_blogpost(post) {
   const item = $("<div/>");
   // TODO: HACK: Strip to the right of Week number
@@ -24,12 +24,10 @@ function html_for_blogpost(post) {
 
   const published_date = new Date(post.published);
   const excerptDisplayText = `
-    <div> ${
-      monthNames[published_date.getMonth()]
-    } ${published_date.getFullYear()} - ${post.excerpt}
+    <div> ${monthNames[published_date.getMonth()]} ${published_date.getFullYear()} - ${post.excerpt}
     </div>
    `;
-  if (post.thumbnail != "") {
+  if (post.thumbnail !== "") {
     console.log(post.title);
     console.log(published_date);
     item.append(
@@ -39,7 +37,7 @@ function html_for_blogpost(post) {
 
       <a href='${post.url}'}><img class="img-fluid" style='float:left; margin-right:10px' src='${thumbnail_url}'/></a>
       ${excerptDisplayText}
-      </div>`
+      </div>`,
     );
   } else {
     item.append(excerptDisplayText);
@@ -49,18 +47,16 @@ function html_for_blogpost(post) {
 }
 
 function get_achievement_posts(imported_posts: Array<any>) {
-  return imported_posts.filter(post =>
-    post.title.toLowerCase().includes("achievement")
-  );
+  return imported_posts.filter((post) => post.title.toLowerCase().includes("achievement"));
 }
 function get_recent_posts(imported_posts: Array<any>) {
-  return imported_posts.filter(post => post.tags.includes("family-journal"));
+  return imported_posts.filter((post) => post.tags.includes("family-journal"));
 }
 
 function ProcessImports(posts: Array<any>) {
   console.log("Processing", posts.length, "posts");
   if (!posts) {
-    console.log(`No posts being imported`);
+    console.log("No posts being imported");
     return;
   }
 
@@ -70,17 +66,11 @@ function ProcessImports(posts: Array<any>) {
   const achievement_div = "#achievment";
   const random_recent = "#random-recent";
 
-  append_randomizer_div(random_div, () =>
-    html_for_blogpost(random_from_list(posts))
-  );
+  append_randomizer_div(random_div, () => html_for_blogpost(random_from_list(posts)));
 
   // Add a random achievement post
-  append_randomizer_div(achievement_div, () =>
-    html_for_blogpost(random_from_list(get_achievement_posts(posts)))
-  );
-  append_randomizer_div(random_recent, () =>
-    html_for_blogpost(random_from_list(get_recent_posts(posts)))
-  );
+  append_randomizer_div(achievement_div, () => html_for_blogpost(random_from_list(get_achievement_posts(posts))));
+  append_randomizer_div(random_recent, () => html_for_blogpost(random_from_list(get_recent_posts(posts))));
 }
 
 function add_imported_blog_posts() {
@@ -117,15 +107,13 @@ function html_for_role(role: Role) {
 
 function ProcessEulogy(div: string, roles: Roles) {
   if (!roles) {
-    console.log(`No roles being imported`);
+    console.log("No roles being imported");
     return;
   }
   console.log("Processing", roles.roles.length, "roles");
 
   // Import all history
-  append_randomizer_div(div, () =>
-    html_for_role(random_from_list(roles.roles))
-  );
+  append_randomizer_div(div, () => html_for_role(random_from_list(roles.roles)));
 }
 
 function add_eulogy_roles(div: string) {

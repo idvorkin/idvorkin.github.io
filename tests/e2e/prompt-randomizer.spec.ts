@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import { checkForJsErrors } from "./js-error-checker";
 
 // Skip tests if we're not actually running the Jekyll server
@@ -43,7 +43,7 @@ test.describe("Prompts page functionality", () => {
 
     // Create a promise that will capture any JS errors
     const errorLogs = [];
-    page.on("pageerror", error => {
+    page.on("pageerror", (error) => {
       errorLogs.push(error.message);
     });
 
@@ -58,10 +58,7 @@ test.describe("Prompts page functionality", () => {
       await page.waitForTimeout(1000);
 
       // Verify no JavaScript errors were logged
-      expect(errorLogs.length).toBe(
-        0,
-        `JavaScript errors found: ${errorLogs.join(", ")}`
-      );
+      expect(errorLogs.length).toBe(0, `JavaScript errors found: ${errorLogs.join(", ")}`);
     } catch (error) {
       console.log("Error accessing the page:", error.message);
       test.skip(true, "Could not access the prompts page - network error");

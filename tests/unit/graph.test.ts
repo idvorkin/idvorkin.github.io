@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import * as shared from "../../src/shared";
 
 // Mock imports and global objects
@@ -15,7 +15,7 @@ const mockForceGraphInstance = {
   nodeCanvasObject: vi.fn().mockReturnThis(),
   nodePointerAreaPaint: vi.fn().mockReturnThis(),
   onNodeRightClick: vi.fn().mockReturnThis(),
-  onNodeClick: vi.fn(callback => {
+  onNodeClick: vi.fn((callback) => {
     // Store the callback so we can trigger it in tests
     mockForceGraphInstance._nodeClickCallback = callback;
     return mockForceGraphInstance;
@@ -118,7 +118,7 @@ describe("Graph Module", () => {
       value: {
         href: "https://example.com#test-page",
         hash: "#test-page",
-        split: separator => ["https://example.com", "test-page"],
+        split: (separator) => ["https://example.com", "test-page"],
       },
       writable: true,
     });
@@ -127,21 +127,15 @@ describe("Graph Module", () => {
     vi.mocked(shared.get_link_info).mockResolvedValue(mockUrlInfo);
 
     // Mock shared.MakeBackLinkHTML
-    vi.mocked(shared.MakeBackLinkHTML).mockReturnValue(
-      "<div>Mock backlink HTML</div>"
-    );
+    vi.mocked(shared.MakeBackLinkHTML).mockReturnValue("<div>Mock backlink HTML</div>");
 
     // Mock window.open
     window.open = vi.fn();
 
     // Create a more complete jQuery mock
-    const jQueryMock = vi.fn().mockImplementation(selector => {
+    const jQueryMock = vi.fn().mockImplementation((selector) => {
       // Different behavior based on the selector
-      if (
-        selector === "#center_control" ||
-        selector === "#goto_control" ||
-        selector === "#collapse_control"
-      ) {
+      if (selector === "#center_control" || selector === "#goto_control" || selector === "#collapse_control") {
         return {
           on: vi.fn((event, handler) => {
             // Store the handler so we can trigger it in tests
@@ -149,15 +143,14 @@ describe("Graph Module", () => {
           }),
           length: 1,
         };
-      } else {
-        return {
-          on: vi.fn(),
-          click: vi.fn(),
-          empty: vi.fn().mockReturnThis(),
-          append: vi.fn().mockReturnThis(),
-          length: 1,
-        };
       }
+      return {
+        on: vi.fn(),
+        click: vi.fn(),
+        empty: vi.fn().mockReturnThis(),
+        append: vi.fn().mockReturnThis(),
+        length: 1,
+      };
     });
 
     // Add handlers storage
@@ -200,9 +193,7 @@ describe("Graph Module", () => {
 
     // Verify all the other method calls
     expect(mockForceGraphInstance.nodeLabel).toHaveBeenCalledWith("id");
-    expect(mockForceGraphInstance.nodeAutoColorBy).toHaveBeenCalledWith(
-      "group"
-    );
+    expect(mockForceGraphInstance.nodeAutoColorBy).toHaveBeenCalledWith("group");
     expect(mockForceGraphInstance.nodeCanvasObject).toHaveBeenCalled();
     expect(mockForceGraphInstance.nodePointerAreaPaint).toHaveBeenCalled();
     expect(mockForceGraphInstance.onNodeRightClick).toHaveBeenCalled();
@@ -233,9 +224,7 @@ describe("Graph Module", () => {
     await graphModule.initializeGraph();
 
     // Check that the console.log was called with the expected message
-    expect(console.log).toHaveBeenCalledWith(
-      "Force Graph not defined, exiting initialization"
-    );
+    expect(console.log).toHaveBeenCalledWith("Force Graph not defined, exiting initialization");
 
     // Restore the original ForceGraph
     global.ForceGraph = originalForceGraph;
@@ -292,18 +281,11 @@ describe("Graph Module", () => {
     const graphModule = await import("../../src/graph");
 
     // Test is_valid_url
-    expect(
-      graphModule.is_valid_url(Object.values(mockUrlInfo), "/test-page")
-    ).toBe(true);
-    expect(
-      graphModule.is_valid_url(Object.values(mockUrlInfo), "/nonexistent")
-    ).toBe(false);
+    expect(graphModule.is_valid_url(Object.values(mockUrlInfo), "/test-page")).toBe(true);
+    expect(graphModule.is_valid_url(Object.values(mockUrlInfo), "/nonexistent")).toBe(false);
 
     // Test node_for_url
-    const node = graphModule.node_for_url(
-      Object.values(mockUrlInfo),
-      "/test-page"
-    );
+    const node = graphModule.node_for_url(Object.values(mockUrlInfo), "/test-page");
     expect(node).toBeDefined();
     expect(node.url).toBe("/test-page");
 

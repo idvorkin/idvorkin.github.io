@@ -1,11 +1,5 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
-import {
-  random_from_list,
-  shuffle,
-  append_randomizer_div,
-  MakeBackLinkHTML,
-  IURLInfo,
-} from "../../src/shared";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { type IURLInfo, MakeBackLinkHTML, append_randomizer_div, random_from_list, shuffle } from "../../src/shared";
 
 // Add jQuery type declaration
 declare global {
@@ -35,9 +29,7 @@ describe("Shared Utility Functions", () => {
       const result = MakeBackLinkHTML(urlInfo);
       expect(result).toContain("<a href=https://example.com>Example Page</a>");
       expect(result).toContain('class="link-box description truncate-css"');
-      expect(result).toContain(
-        '<span class="link-description"> This is an example page <span>'
-      );
+      expect(result).toContain('<span class="link-description"> This is an example page <span>');
     });
   });
 
@@ -66,7 +58,7 @@ describe("Shared Utility Functions", () => {
 
       // Each item should be selected roughly 200 times (1000/5)
       // Allow for some statistical variation (150-250 is reasonable)
-      Object.values(counts).forEach(count => {
+      Object.values(counts).forEach((count) => {
         expect(count).toBeGreaterThan(150);
         expect(count).toBeLessThan(250);
       });
@@ -131,7 +123,8 @@ describe("Shared Utility Functions", () => {
             }),
             append: vi.fn().mockReturnThis(),
           };
-        } else if (typeof selector === "string" && selector.startsWith("<")) {
+        }
+        if (typeof selector === "string" && selector.startsWith("<")) {
           // Mock for the jQuery result of HTML content
           return {
             length: 1,

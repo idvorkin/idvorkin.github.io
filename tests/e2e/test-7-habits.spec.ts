@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("7 habits", () => {
@@ -11,7 +11,7 @@ test.describe("7 habits", () => {
   test("Has known category", async ({ page }) => {
     // Use a more specific selector to avoid matching multiple elements
     // Look for the heading element specifically
-    const categoryElement = page.locator(`h3#be-proactive`);
+    const categoryElement = page.locator("h3#be-proactive");
     await expect(categoryElement).toBeVisible();
     await expect(categoryElement).toHaveText(known_category_on_sunburst);
   });

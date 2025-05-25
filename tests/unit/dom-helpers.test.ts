@@ -1,9 +1,5 @@
-import { describe, it, expect, beforeEach, afterEach } from "vitest";
-import {
-  toggleClass,
-  createElement,
-  findClosestParent,
-} from "../../src/utils/dom-helpers";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { createElement, findClosestParent, toggleClass } from "../../src/utils/dom-helpers";
 
 describe("DOM Helper Functions", () => {
   // Setup and teardown

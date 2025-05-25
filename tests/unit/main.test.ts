@@ -1,13 +1,13 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { random_from_list, shuffle, load_globals } from "../../src/main";
-import * as shared from "../../src/shared";
-import * as recentPosts from "../../src/recent-posts";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { load_globals, random_from_list, shuffle } from "../../src/main";
 import * as recent from "../../src/recent";
+import * as recentPosts from "../../src/recent-posts";
+import * as shared from "../../src/shared";
 
 // Mock dependencies
 vi.mock("../../src/shared", () => ({
-  random_from_list: vi.fn(list => list[0]),
-  shuffle: vi.fn(list => [...list].reverse()),
+  random_from_list: vi.fn((list) => list[0]),
+  shuffle: vi.fn((list) => [...list].reverse()),
   append_randomizer_div: vi.fn(),
   get_link_info: vi.fn().mockResolvedValue({
     "/test-page": {
@@ -18,7 +18,7 @@ vi.mock("../../src/shared", () => ({
       incoming_links: ["/incoming-page"],
     },
   }),
-  MakeBackLinkHTML: vi.fn(info => `<div>${info?.title || "Untitled"}</div>`),
+  MakeBackLinkHTML: vi.fn((info) => `<div>${info?.title || "Untitled"}</div>`),
 }));
 
 vi.mock("../../src/recent-posts", () => ({
@@ -67,7 +67,7 @@ describe("Main module functions", () => {
   describe("load_globals function", () => {
     beforeEach(() => {
       // Setup jQuery mock
-      global.$ = vi.fn().mockImplementation(selector => {
+      global.$ = vi.fn().mockImplementation((selector) => {
         if (typeof selector === "function") {
           // Handle $(function) case
           selector();
@@ -75,8 +75,7 @@ describe("Main module functions", () => {
         }
 
         // Handle the case when selector is a string
-        const isMissingSelector =
-          typeof selector === "string" && selector.includes("non-existent");
+        const isMissingSelector = typeof selector === "string" && selector.includes("non-existent");
 
         return {
           append: vi.fn().mockReturnThis(),
@@ -84,11 +83,9 @@ describe("Main module functions", () => {
           length: isMissingSelector ? 0 : 1,
           each: vi.fn(),
           on: vi.fn(),
-          ready: vi.fn(cb => cb()), // Add the ready method
+          ready: vi.fn((cb) => cb()), // Add the ready method
           html: vi.fn(),
-          click: vi.fn(fn =>
-            fn({ preventDefault: vi.fn(), stopPropagation: vi.fn() })
-          ),
+          click: vi.fn((fn) => fn({ preventDefault: vi.fn(), stopPropagation: vi.fn() })),
           removeClass: vi.fn(),
           addClass: vi.fn(),
           text: vi.fn(),
@@ -102,7 +99,7 @@ describe("Main module functions", () => {
       });
 
       // Add the makeArray method to jQuery
-      global.$.makeArray = vi.fn().mockImplementation(arr => []);
+      global.$.makeArray = vi.fn().mockImplementation((arr) => []);
 
       // Mock $.getJSON
       global.$.getJSON = vi.fn().mockResolvedValue({
@@ -183,7 +180,7 @@ describe("Main module functions", () => {
       await load_globals();
       // Check that $ was called with a function (which would be the generateToc callback)
       const calls = vi.mocked(global.$).mock.calls;
-      const functionCalls = calls.filter(call => typeof call[0] === "function");
+      const functionCalls = calls.filter((call) => typeof call[0] === "function");
       expect(functionCalls.length).toBeGreaterThan(0);
     });
   });
@@ -191,7 +188,7 @@ describe("Main module functions", () => {
   describe("TOC functions", () => {
     beforeEach(() => {
       // Setup jQuery mock with TOC-specific behavior
-      global.$ = vi.fn().mockImplementation(selector => {
+      global.$ = vi.fn().mockImplementation((selector) => {
         if (selector === ".ui-toc-dropdown .toc") {
           return {
             removeClass: vi.fn(),

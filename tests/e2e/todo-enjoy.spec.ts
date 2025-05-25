@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Things I enjoy page", () => {
@@ -53,9 +53,7 @@ test.describe("Things I enjoy page", () => {
     expect(newText).not.toEqual(originalText);
   });
 
-  test("Click into Hobbies zooms Hobbies, click again zooms out", async ({
-    page,
-  }) => {
+  test("Click into Hobbies zooms Hobbies, click again zooms out", async ({ page }) => {
     const hobbiesElement = page.locator('#sunburst text:has-text("Hobbies")');
     const donutCenter = page.locator(".sunburst text").first();
     const defaultCenterText = "Invest in";

@@ -1,19 +1,14 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import {
-  getRecentPages,
-  generateRecentPagesHTML,
-  updateRecentPosts,
-  initRecentPosts,
-} from "../../src/recent-posts";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { generateRecentPagesHTML, getRecentPages, initRecentPosts, updateRecentPosts } from "../../src/recent-posts";
 import * as sharedModule from "../../src/recent-posts-shared";
 import {
-  fetchBacklinksData,
+  type IPage,
   convertToPages,
+  fetchBacklinksData,
   filterRealPages,
   sortPagesByDate,
-  IPage,
 } from "../../src/recent-posts-shared";
-import { IURLInfoMap, IURLInfo } from "../../src/shared";
+import { IURLInfo, type IURLInfoMap } from "../../src/shared";
 
 // Mock fetch globally
 const originalFetch = global.fetch;
@@ -69,9 +64,7 @@ describe("Recent Posts Module", () => {
 
     it("should throw error if url_info is missing", async () => {
       // Use special test URL that triggers the error
-      await expect(
-        fetchBacklinksData("/test-missing-url-info")
-      ).rejects.toThrow("Missing url_info in data structure");
+      await expect(fetchBacklinksData("/test-missing-url-info")).rejects.toThrow("Missing url_info in data structure");
     });
   });
 
@@ -250,7 +243,7 @@ describe("Recent Posts Module", () => {
       const result = sortPagesByDate(pages);
 
       // Assertions
-      expect(result.map(p => p.url)).toEqual(expectedOrder);
+      expect(result.map((p) => p.url)).toEqual(expectedOrder);
     });
 
     it("should fallback to doc_size if last_modified dates are missing", () => {
@@ -286,7 +279,7 @@ describe("Recent Posts Module", () => {
       const result = sortPagesByDate(pages);
 
       // Assertions
-      expect(result.map(p => p.url)).toEqual(expectedOrder);
+      expect(result.map((p) => p.url)).toEqual(expectedOrder);
     });
 
     it("should not modify the original array", () => {
@@ -370,22 +363,12 @@ describe("Recent Posts Module", () => {
       // Call the function with default count (5)
       const resultDefault = getRecentPages(pages);
       expect(resultDefault).toHaveLength(5);
-      expect(resultDefault.map(p => p.url)).toEqual([
-        "/page1",
-        "/page2",
-        "/page3",
-        "/page4",
-        "/page5",
-      ]);
+      expect(resultDefault.map((p) => p.url)).toEqual(["/page1", "/page2", "/page3", "/page4", "/page5"]);
 
       // Call the function with custom count
       const resultCustom = getRecentPages(pages, 3);
       expect(resultCustom).toHaveLength(3);
-      expect(resultCustom.map(p => p.url)).toEqual([
-        "/page1",
-        "/page2",
-        "/page3",
-      ]);
+      expect(resultCustom.map((p) => p.url)).toEqual(["/page1", "/page2", "/page3"]);
     });
 
     it("should handle array with fewer pages than requested count", () => {
@@ -517,9 +500,7 @@ describe("Recent Posts Module", () => {
 
     it("should show error message when getProcessedPages fails", async () => {
       // Mock getProcessedPages to reject
-      vi.spyOn(sharedModule, "getProcessedPages").mockRejectedValue(
-        new Error("Test error")
-      );
+      vi.spyOn(sharedModule, "getProcessedPages").mockRejectedValue(new Error("Test error"));
 
       // Get test container from the DOM
       const container = document.getElementById("test-recent-posts");
@@ -540,11 +521,9 @@ describe("Recent Posts Module", () => {
       document.getElementById = vi.fn().mockReturnValue(null);
 
       // Setup spy for getProcessedPages (should not be called)
-      const processSpy = vi
-        .spyOn(sharedModule, "getProcessedPages")
-        .mockImplementation(() => {
-          throw new Error("This should not be called");
-        });
+      const processSpy = vi.spyOn(sharedModule, "getProcessedPages").mockImplementation(() => {
+        throw new Error("This should not be called");
+      });
 
       // Call the function with non-existent container ID
       await updateRecentPosts("non-existent-container");
@@ -572,9 +551,7 @@ describe("Recent Posts Module", () => {
       };
 
       // Spy on updateRecentPosts to verify it's called
-      const updateSpy = vi
-        .spyOn(sharedModule, "getProcessedPages")
-        .mockResolvedValue([]);
+      const updateSpy = vi.spyOn(sharedModule, "getProcessedPages").mockResolvedValue([]);
 
       // Spy on console.log to verify execution
       const logSpy = vi.spyOn(console, "log");
@@ -583,9 +560,7 @@ describe("Recent Posts Module", () => {
       initRecentPosts("test-container", mockDoc as any);
 
       // Verify it tried to run immediately (via console logs)
-      expect(logSpy).toHaveBeenCalledWith(
-        expect.stringContaining("Document already loaded")
-      );
+      expect(logSpy).toHaveBeenCalledWith(expect.stringContaining("Document already loaded"));
     });
 
     it("should add event listener if document is still loading", () => {
@@ -601,10 +576,7 @@ describe("Recent Posts Module", () => {
       initRecentPosts("test-container", mockDoc as any);
 
       // Assertions
-      expect(mockDoc.addEventListener).toHaveBeenCalledWith(
-        "DOMContentLoaded",
-        expect.any(Function)
-      );
+      expect(mockDoc.addEventListener).toHaveBeenCalledWith("DOMContentLoaded", expect.any(Function));
     });
   });
 });

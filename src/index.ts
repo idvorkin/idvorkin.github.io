@@ -7,13 +7,13 @@
 
 // Import shared utilities
 import {
-  random_from_list,
-  shuffle,
-  append_randomizer_div,
-  get_link_info,
-  MakeBackLinkHTML,
   type IURLInfo,
   type IURLInfoMap,
+  MakeBackLinkHTML,
+  append_randomizer_div,
+  get_link_info,
+  random_from_list,
+  shuffle,
 } from "./shared";
 
 // Import main functionality
@@ -26,29 +26,29 @@ import { CreateAutoComplete } from "./search";
 import { initRecentAllPosts } from "./recent";
 
 // Import random-prompter functionality
-import { add_random_prompts, add_sunburst, TreeNode } from "./random-prompter";
+import { TreeNode, add_random_prompts, add_sunburst } from "./random-prompter";
 
 // Import page-loader functionality
 import {
-  load_enjoy2,
   load_7_habits,
-  makePostPreviewHTML,
-  load_ig66,
   load_balance,
+  load_enjoy2,
+  load_ig66,
   load_random_eulogy,
+  makePostPreviewHTML,
 } from "./page-loader";
 
 // Declare global variables from external libraries
-declare var $: any;
-declare var Mousetrap: any;
+declare let $: any;
+declare let Mousetrap: any;
 declare global {
   function defer(fn: Function): void;
 }
 
 // Main initialization
-$(document).ready(function () {
+$(document).ready(() => {
   // Initialize main functionality
-  let tocExpand = true;
+  const tocExpand = true;
 
   // Call the global initialization function from main.ts
   if (typeof defer === "function") {
@@ -83,7 +83,7 @@ $(document).ready(function () {
   console.log("Shuffled items:", shuffle([...items]));
 
   // Initialize link loading
-  get_link_info().then(links => {
+  get_link_info().then((links) => {
     console.log("Links loaded, count:", Object.keys(links).length);
   });
 

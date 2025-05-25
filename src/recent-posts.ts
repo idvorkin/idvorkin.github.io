@@ -5,7 +5,7 @@
  * from the backlinks.json file.
  */
 
-import { IPage, getProcessedPages } from "./recent-posts-shared";
+import { type IPage, getProcessedPages } from "./recent-posts-shared";
 
 /**
  * Takes a slice of the most recent pages.
@@ -31,14 +31,12 @@ export function generateRecentPagesHTML(recentPages: IPage[]): string {
     <ul>
       ${recentPages
         .map(
-          page => `
+          (page) => `
         <li>
           <a href="${page.url}">${page.title}</a> - 
-          ${page.description.split("\n")[0].substring(0, 100)}${
-            page.description.length > 100 ? "..." : ""
-          }
+          ${page.description.split("\n")[0].substring(0, 100)}${page.description.length > 100 ? "..." : ""}
         </li>
-      `
+      `,
         )
         .join("")}
     </ul>
@@ -49,16 +47,11 @@ export function generateRecentPagesHTML(recentPages: IPage[]): string {
  * Updates the recent posts container with post data.
  * @param containerId The ID of the container element, defaults to "recent-posts"
  */
-export async function updateRecentPosts(
-  containerId = "recent-posts"
-): Promise<void> {
+export async function updateRecentPosts(containerId = "recent-posts"): Promise<void> {
   console.log("🔍 updateRecentPosts function called");
 
   const recentPostsContainer = document.getElementById(containerId);
-  console.log(
-    "🔍 recent-posts container element:",
-    recentPostsContainer ? "found" : "not found"
-  );
+  console.log("🔍 recent-posts container element:", recentPostsContainer ? "found" : "not found");
 
   if (!recentPostsContainer) {
     console.error(`❌ ${containerId} container not found in DOM`);
@@ -73,11 +66,11 @@ export async function updateRecentPosts(
 
     console.log(
       "🔍 Sorted pages, first 5:",
-      sortedPages.slice(0, 5).map(p => ({
+      sortedPages.slice(0, 5).map((p) => ({
         url: p.url,
         title: p.title,
         last_modified: p.last_modified,
-      }))
+      })),
     );
 
     const recentPages = getRecentPages(sortedPages);
@@ -85,16 +78,12 @@ export async function updateRecentPosts(
     // Create and update the HTML
     const html = generateRecentPagesHTML(recentPages);
 
-    console.log(
-      "🔍 Updating recent-posts content with HTML",
-      html.substring(0, 100) + "..."
-    );
+    console.log("🔍 Updating recent-posts content with HTML", `${html.substring(0, 100)}...`);
     recentPostsContainer.innerHTML = html;
     console.log("✅ Recent posts updated successfully");
   } catch (error) {
     console.error("❌ Error loading recent posts:", error);
-    recentPostsContainer.innerHTML =
-      "<p>Error loading recent posts. Please try again later.</p>";
+    recentPostsContainer.innerHTML = "<p>Error loading recent posts. Please try again later.</p>";
   }
 }
 
@@ -103,10 +92,7 @@ export async function updateRecentPosts(
  * @param containerId The ID of the container element, defaults to "recent-posts"
  * @param doc Document instance (for testing)
  */
-export function initRecentPosts(
-  containerId = "recent-posts",
-  doc: Document = document
-): void {
+export function initRecentPosts(containerId = "recent-posts", doc: Document = document): void {
   console.log("🔍 initRecentPosts called");
 
   // Check if document is already loaded
@@ -114,16 +100,12 @@ export function initRecentPosts(
     // Document still loading, add event listener
     console.log("🔍 Document still loading, adding DOMContentLoaded listener");
     doc.addEventListener("DOMContentLoaded", () => {
-      console.log(
-        "🔍 DOMContentLoaded event fired, calling updateRecentPosts()"
-      );
+      console.log("🔍 DOMContentLoaded event fired, calling updateRecentPosts()");
       updateRecentPosts(containerId);
     });
   } else {
     // Document already loaded, run immediately
-    console.log(
-      "🔍 Document already loaded, calling updateRecentPosts() immediately"
-    );
+    console.log("🔍 Document already loaded, calling updateRecentPosts() immediately");
     updateRecentPosts(containerId);
   }
 

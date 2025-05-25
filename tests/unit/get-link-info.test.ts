@@ -1,5 +1,5 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
-import { IURLInfoMap } from "../../src/shared";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import type { IURLInfoMap } from "../../src/shared";
 
 describe("get_link_info", () => {
   // Setup mock data
@@ -79,7 +79,7 @@ describe("get_link_info", () => {
 
     // Verify fetch was called with the GitHub URL
     expect(window.fetch).toHaveBeenCalledWith(
-      "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True"
+      "https://raw.githubusercontent.com/idvorkin/idvorkin.github.io/master/back-links.json?flush_cache=True",
     );
 
     // Verify the returned data

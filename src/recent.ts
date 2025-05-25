@@ -5,7 +5,7 @@
  * from the backlinks.json file.
  */
 
-import { IPage, getProcessedPages } from "./recent-posts-shared";
+import { type IPage, getProcessedPages } from "./recent-posts-shared";
 
 /**
  * Group pages by month/year for better organization
@@ -17,7 +17,7 @@ export function groupPagesByMonthYear(pages: IPage[]): {
 } {
   const groupedPages: { [key: string]: IPage[] } = {};
 
-  pages.forEach(page => {
+  pages.forEach((page) => {
     if (!page.last_modified) return;
 
     const date = new Date(page.last_modified);
@@ -50,7 +50,7 @@ export function generateGroupedPagesHTML(groupedPages: {
       <h3>${monthYear}</h3>
       <ul class="last-modified-list">
         ${pages
-          .map(page => {
+          .map((page) => {
             const date = new Date(page.last_modified);
             const formattedDate = date.toLocaleDateString("en-US", {
               day: "numeric",
@@ -61,9 +61,7 @@ export function generateGroupedPagesHTML(groupedPages: {
           <li>
             <span class="date-badge">${formattedDate}</span>
             <a href="${page.url}">${page.title}</a>
-            <p class="description">${page.description
-              .split("\n")[0]
-              .substring(0, 150)}${
+            <p class="description">${page.description.split("\n")[0].substring(0, 150)}${
               page.description.length > 150 ? "..." : ""
             }</p>
           </li>
@@ -83,10 +81,7 @@ export function generateGroupedPagesHTML(groupedPages: {
  * @param count Number of items in the hidden content
  * @returns HTML string for the toggle section
  */
-export function createToggleSection(
-  remainingHtml: string,
-  count: number
-): string {
+export function createToggleSection(remainingHtml: string, count: number): string {
   return `
     <div class="remaining-posts-section">
       <h2 id="remaining-posts-toggle" class="remaining-toggle">
@@ -157,9 +152,9 @@ export function generateStyles(): string {
  * @param document Document instance (for testing)
  */
 export function setupToggleEventListener(
-  toggleId: string = "remaining-posts-toggle",
-  contentId: string = "remaining-posts-content",
-  doc: Document = document
+  toggleId = "remaining-posts-toggle",
+  contentId = "remaining-posts-content",
+  doc: Document = document,
 ): void {
   const toggleElement = doc.getElementById(toggleId);
   if (!toggleElement) {
@@ -191,10 +186,7 @@ export function setupToggleEventListener(
  * @param initialPostsCount Number of posts to show initially (default: 15)
  * @returns Complete HTML for the posts display
  */
-export function generateRecentPostsHTML(
-  pages: IPage[],
-  initialPostsCount: number = 15
-): string {
+export function generateRecentPostsHTML(pages: IPage[], initialPostsCount = 15): string {
   if (pages.length === 0) {
     return "<p>No modified posts found.</p>";
   }
@@ -224,9 +216,9 @@ export function generateRecentPostsHTML(
  * @param doc Document instance (for testing)
  */
 export async function updateRecentPosts(
-  containerId: string = "last-modified-posts",
-  initialPostsCount: number = 15,
-  doc: Document = document
+  containerId = "last-modified-posts",
+  initialPostsCount = 15,
+  doc: Document = document,
 ): Promise<void> {
   console.log("🔍 updateRecentPosts function called");
 
@@ -248,24 +240,16 @@ export async function updateRecentPosts(
     const html = generateRecentPostsHTML(sortedPages, initialPostsCount);
 
     // Update container
-    console.log(
-      "🔍 Updating recent-posts content with HTML",
-      html.substring(0, 100) + "..."
-    );
+    console.log("🔍 Updating recent-posts content with HTML", `${html.substring(0, 100)}...`);
     recentContainer.innerHTML = html;
 
     // Setup toggle functionality
-    setupToggleEventListener(
-      "remaining-posts-toggle",
-      "remaining-posts-content",
-      doc
-    );
+    setupToggleEventListener("remaining-posts-toggle", "remaining-posts-content", doc);
 
     console.log("✅ Recent posts updated successfully");
   } catch (error) {
     console.error("❌ Error loading recent posts:", error);
-    recentContainer.innerHTML =
-      "<p>Error loading modified posts. Please try again later.</p>";
+    recentContainer.innerHTML = "<p>Error loading modified posts. Please try again later.</p>";
   }
 }
 
@@ -274,10 +258,7 @@ export async function updateRecentPosts(
  * @param containerId ID of the container element
  * @param doc Document instance (for testing)
  */
-export function initRecentAllPosts(
-  containerId: string = "last-modified-posts",
-  doc: Document = document
-): void {
+export function initRecentAllPosts(containerId = "last-modified-posts", doc: Document = document): void {
   console.log("🔍 initRecentAllPosts called");
 
   // Check if document is already loaded
@@ -285,16 +266,12 @@ export function initRecentAllPosts(
     // Document still loading, add event listener
     console.log("🔍 Document still loading, adding DOMContentLoaded listener");
     doc.addEventListener("DOMContentLoaded", () => {
-      console.log(
-        "🔍 DOMContentLoaded event fired, calling updateRecentPosts()"
-      );
+      console.log("🔍 DOMContentLoaded event fired, calling updateRecentPosts()");
       updateRecentPosts(containerId, 15, doc);
     });
   } else {
     // Document already loaded, run immediately
-    console.log(
-      "🔍 Document already loaded, calling updateRecentPosts() immediately"
-    );
+    console.log("🔍 Document already loaded, calling updateRecentPosts() immediately");
     updateRecentPosts(containerId, 15, doc);
   }
 

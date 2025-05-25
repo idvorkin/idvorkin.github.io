@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import * as shared from "../../src/shared";
 
 // Create a proper mock for these functions before importing
@@ -26,12 +26,7 @@ vi.stubGlobal("instantsearch", vi.fn());
 vi.stubGlobal("$", vi.fn());
 
 // Now we can safely import from search
-import {
-  getParameterByName,
-  InstantSearchHitTemplate,
-  CreateSearch,
-  CreateAutoComplete,
-} from "../../src/search";
+import { CreateAutoComplete, CreateSearch, InstantSearchHitTemplate, getParameterByName } from "../../src/search";
 
 describe("Search Module", () => {
   let mockAlgoliaSearchClient;
@@ -79,7 +74,7 @@ describe("Search Module", () => {
     vi.mocked(shared.get_link_info).mockResolvedValue(mockUrlInfo);
 
     // Mock shared.random_from_list
-    vi.mocked(shared.random_from_list).mockImplementation(list => list[0]);
+    vi.mocked(shared.random_from_list).mockImplementation((list) => list[0]);
 
     // Mock algoliasearch
     mockAlgoliaSearchClient = {
@@ -108,12 +103,8 @@ describe("Search Module", () => {
     mockAutocompleteInstance = {
       // Add methods as needed
     };
-    vi.mocked(window)["@algolia/autocomplete-js"].autocomplete.mockReturnValue(
-      mockAutocompleteInstance
-    );
-    vi.mocked(window)[
-      "@algolia/autocomplete-js"
-    ].getAlgoliaResults.mockResolvedValue([
+    vi.mocked(window)["@algolia/autocomplete-js"].autocomplete.mockReturnValue(mockAutocompleteInstance);
+    vi.mocked(window)["@algolia/autocomplete-js"].getAlgoliaResults.mockResolvedValue([
       {
         url: "/test-page",
         title: "Test Page",
@@ -125,12 +116,12 @@ describe("Search Module", () => {
     ]);
 
     // Mock jQuery
-    vi.mocked($).mockImplementation(selector => {
+    vi.mocked($).mockImplementation((selector) => {
       return {
         length: selector === "#autocomplete" ? 1 : 0,
         empty: vi.fn().mockReturnThis(),
         append: vi.fn().mockReturnThis(),
-        click: vi.fn().mockImplementation(fn => fn),
+        click: vi.fn().mockImplementation((fn) => fn),
       };
     });
   });
@@ -222,11 +213,7 @@ describe("Search Module", () => {
 
       const result = InstantSearchHitTemplate(hit);
       expect(result).toBe("invalid HTML");
-      expect(console.log).toHaveBeenCalledWith(
-        "Error in hitTemplate",
-        expect.any(Error),
-        null
-      );
+      expect(console.log).toHaveBeenCalledWith("Error in hitTemplate", expect.any(Error), null);
     });
   });
 
@@ -290,25 +277,15 @@ describe("Search Module", () => {
       vi.mocked(algoliasearch).mockReturnValue(mockSearchClient);
 
       // Also need to mock the autocomplete function
-      vi.mocked(
-        window["@algolia/autocomplete-js"].autocomplete
-      ).mockReturnValue(mockAutocompleteInstance);
+      vi.mocked(window["@algolia/autocomplete-js"].autocomplete).mockReturnValue(mockAutocompleteInstance);
 
-      const result = await CreateAutoComplete(
-        appId,
-        apiKey,
-        indexName,
-        autocompleteId,
-        includeFamilyJournal
-      );
+      const result = await CreateAutoComplete(appId, apiKey, indexName, autocompleteId, includeFamilyJournal);
 
       // Check that algoliasearch was called with the correct parameters
       expect(algoliasearch).toHaveBeenCalledWith(appId, apiKey);
 
       // Check that autocomplete was called with the correct parameters
-      expect(
-        window["@algolia/autocomplete-js"].autocomplete
-      ).toHaveBeenCalledWith({
+      expect(window["@algolia/autocomplete-js"].autocomplete).toHaveBeenCalledWith({
         container: "#autocomplete",
         placeholder: expect.any(String),
         getSources: expect.any(Function),
@@ -329,7 +306,7 @@ describe("Search Module", () => {
       const includeFamilyJournal = false;
 
       // Override $ mock for this test only
-      vi.mocked($).mockImplementation(selector => {
+      vi.mocked($).mockImplementation((selector) => {
         return {
           length: 0, // Simulate element not found
         };
@@ -339,20 +316,10 @@ describe("Search Module", () => {
       console.log = vi.fn();
 
       // Call the function
-      const result = await CreateAutoComplete(
-        appId,
-        apiKey,
-        indexName,
-        autocompleteId,
-        includeFamilyJournal
-      );
+      const result = await CreateAutoComplete(appId, apiKey, indexName, autocompleteId, includeFamilyJournal);
 
       // Check that the function logged an error and returned undefined
-      expect(console.log).toHaveBeenCalledWith(
-        "No autocomplete element found",
-        "autocomplete_id",
-        "nonexistent"
-      );
+      expect(console.log).toHaveBeenCalledWith("No autocomplete element found", "autocomplete_id", "nonexistent");
       expect(result).toBeUndefined();
     });
 
@@ -360,33 +327,17 @@ describe("Search Module", () => {
       // Mock the implementation of CreateAutoComplete for this test
 
       // Test with # prefix
-      await CreateAutoComplete(
-        "app-id",
-        "api-key",
-        "index",
-        "#autocomplete",
-        false
-      );
-      expect(
-        window["@algolia/autocomplete-js"].autocomplete
-      ).toHaveBeenCalledWith(
-        expect.objectContaining({ container: "#autocomplete" })
+      await CreateAutoComplete("app-id", "api-key", "index", "#autocomplete", false);
+      expect(window["@algolia/autocomplete-js"].autocomplete).toHaveBeenCalledWith(
+        expect.objectContaining({ container: "#autocomplete" }),
       );
 
       vi.resetAllMocks();
 
       // Test without # prefix
-      await CreateAutoComplete(
-        "app-id",
-        "api-key",
-        "index",
-        "autocomplete",
-        false
-      );
-      expect(
-        window["@algolia/autocomplete-js"].autocomplete
-      ).toHaveBeenCalledWith(
-        expect.objectContaining({ container: "#autocomplete" })
+      await CreateAutoComplete("app-id", "api-key", "index", "autocomplete", false);
+      expect(window["@algolia/autocomplete-js"].autocomplete).toHaveBeenCalledWith(
+        expect.objectContaining({ container: "#autocomplete" }),
       );
     });
   });

@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import { checkForJsErrors } from "./js-error-checker";
 
 test("About page loads correctly", async ({ page }) => {

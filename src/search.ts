@@ -3,7 +3,8 @@ import { get_link_info, random_from_list } from "./shared";
 
 // For autocomplete, safely access the window properties
 // This makes it more testable
-let autocomplete, getAlgoliaResults;
+let autocomplete;
+let getAlgoliaResults;
 if (typeof window !== "undefined" && window["@algolia/autocomplete-js"]) {
   const algoliaAutocomplete = window["@algolia/autocomplete-js"];
   autocomplete = algoliaAutocomplete.autocomplete;
@@ -24,8 +25,8 @@ export const search_placeholder_text = "Search Igor's Musings ...";
 export function getParameterByName(name, url): string {
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, "\\$&");
-  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-    results = regex.exec(url);
+  const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
+  const results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return "";
   return decodeURIComponent(results[2].replace(/\+/g, " "));
@@ -96,7 +97,7 @@ export function CreateSearch(appid, search_api_key, index_name, initial_query) {
       showSubmit: false,
       showReset: false,
       showLoadingIndicator: false,
-    })
+    }),
   );
 
   search.addWidget(
@@ -109,19 +110,14 @@ export function CreateSearch(appid, search_api_key, index_name, initial_query) {
       item({ item }) {
         return `Result: ${item.name}`;
       },
-    })
+    }),
   );
 
   return search;
 }
 
 // Copied from the docs, but this isn't working for me.
-export function AutoCompleteHitTemplateWithComponentDoesNotWork({
-  item,
-  components,
-  createElement,
-  fragments,
-}) {
+export function AutoCompleteHitTemplateWithComponentDoesNotWork({ item, components, createElement, fragments }) {
   console.log(item);
   return components.Highlight({ hit: item });
 }
@@ -145,12 +141,12 @@ export async function get_random_post() {
   const all_url_info = await get_link_info();
   //  Yuk, find a clearere way to do this
   const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
-    .map(e => e[1]);
+    .map((e) => e[1]);
   const random_post = random_from_list(all_pages);
   const ret = {
-    title: random_post["title"],
-    url: random_post["url"],
-    description: random_post["description"],
+    title: random_post.title,
+    url: random_post.url,
+    description: random_post.description,
   };
   return ret;
 }
@@ -160,7 +156,7 @@ export async function get_random_post() {
  * Returns the specified number of most recently modified posts
  * @param count Number of posts to return
  */
-export async function get_recent_posts(count: number = 4) {
+export async function get_recent_posts(count = 4) {
   try {
     const all_url_info = await get_link_info();
 
@@ -175,20 +171,13 @@ export async function get_recent_posts(count: number = 4) {
 
     // Filter out pages that are likely redirects (these have empty descriptions and titles)
     const realPages = pages.filter(
-      page =>
-        page.description &&
-        page.description.trim() !== "" &&
-        page.title &&
-        page.title.trim() !== ""
+      (page) => page.description && page.description.trim() !== "" && page.title && page.title.trim() !== "",
     );
 
     // Sort by last_modified date (newest first)
     const sortedPages = realPages.sort((a, b) => {
       if (a.last_modified && b.last_modified) {
-        return (
-          new Date(b.last_modified).getTime() -
-          new Date(a.last_modified).getTime()
-        );
+        return new Date(b.last_modified).getTime() - new Date(a.last_modified).getTime();
       }
       // Fallback to doc_size if last_modified is not available
       return b.doc_size - a.doc_size;
@@ -206,14 +195,12 @@ export async function get_recent_posts(count: number = 4) {
  * Gets random posts for search results
  * @param count Number of random posts to return (default: 3)
  */
-export async function GetRandomSearchResults(count: number = 3) {
+export async function GetRandomSearchResults(count = 3) {
   return {
     sourceId: "random_posts",
     async getItems() {
       const sized_array = new Array(count).join("_").split("_");
-      const random_posts = await Promise.all(
-        sized_array.map(async e => get_random_post())
-      );
+      const random_posts = await Promise.all(sized_array.map(async (e) => get_random_post()));
       return random_posts;
     },
     getItemUrl({ item }) {
@@ -248,7 +235,7 @@ export async function GetRandomSearchResults(count: number = 3) {
  * Gets recent posts for search results
  * @param count Number of recent posts to return (default: 4)
  */
-export async function GetRecentSearchResults(count: number = 4) {
+export async function GetRecentSearchResults(count = 4) {
   return {
     sourceId: "recent_posts",
     async getItems() {
@@ -291,13 +278,7 @@ export async function GetRecentSearchResults(count: number = 4) {
  * @param hitsPerPage Number of results to return (default: 3)
  * @param includeFamilyJournal Whether to include family journal posts
  */
-export function GetAlgoliaResults(
-  searchClient,
-  index_name,
-  query,
-  hitsPerPage: number = 3,
-  includeFamilyJournal = false
-) {
+export function GetAlgoliaResults(searchClient, index_name, query, hitsPerPage = 3, includeFamilyJournal = false) {
   // By default don't include family journal.
   let filter = "NOT tags:family-journal";
   if (includeFamilyJournal) {
@@ -365,9 +346,9 @@ export async function CreateAutoComplete(
   index_name,
   autocomplete_id,
   includeFamilyJournal,
-  featuredCount: number = 3,
-  recentCount: number = 4,
-  randomCount: number = 3
+  featuredCount = 3,
+  recentCount = 4,
+  randomCount = 3,
 ) {
   if (!autocomplete) {
     console.error("Autocomplete is not defined");
@@ -391,29 +372,22 @@ export async function CreateAutoComplete(
       index_name,
       query,
       isEmptySearch ? featuredCount : 10, // Show N featured posts when empty, more when searching
-      includeFamilyJournal
+      includeFamilyJournal,
     );
 
     // For empty search, show featured, recent, and random posts
     // For actual search, just show search results
     if (isEmptySearch) {
       return [featuredPosts, recentSearchResults, randomSearchResults];
-    } else {
-      return [featuredPosts];
     }
+    return [featuredPosts];
   }
 
   // Make sure we have the element
   // autocomplete_id can be either '#id' or just 'id'
-  const elementId = autocomplete_id.startsWith("#")
-    ? autocomplete_id
-    : `#${autocomplete_id}`;
+  const elementId = autocomplete_id.startsWith("#") ? autocomplete_id : `#${autocomplete_id}`;
   if ($(elementId).length === 0) {
-    console.log(
-      "No autocomplete element found",
-      "autocomplete_id",
-      autocomplete_id
-    );
+    console.log("No autocomplete element found", "autocomplete_id", autocomplete_id);
     return;
   }
 

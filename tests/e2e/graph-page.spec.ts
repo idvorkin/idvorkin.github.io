@@ -1,10 +1,10 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Graph page functionality", () => {
   test.beforeEach(async ({ page }) => {
     // Set up console log capture for debugging
-    page.on("console", msg => {
+    page.on("console", (msg) => {
       console.log(`PAGE LOG: ${msg.text()}`);
     });
 
@@ -58,9 +58,7 @@ test.describe("Graph page functionality", () => {
     ];
 
     // Check if at least one of the patterns matches
-    const hasEulogyContent = eulogyPatterns.some(pattern =>
-      pattern.test(detailText)
-    );
+    const hasEulogyContent = eulogyPatterns.some((pattern) => pattern.test(detailText));
     expect(hasEulogyContent).toBeTruthy();
 
     // Also verify there are links in the eulogy content

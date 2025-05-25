@@ -2,7 +2,7 @@
 import { vi } from "vitest";
 
 // Define a simplified jQuery mock
-const jQueryMock = vi.fn().mockImplementation(selector => {
+const jQueryMock = vi.fn().mockImplementation((selector) => {
   return {
     length: selector ? 1 : 0,
     text: vi.fn().mockReturnThis(),

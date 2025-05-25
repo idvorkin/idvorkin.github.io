@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 
 // Mock window.@algolia/autocomplete-js
 vi.stubGlobal("window", {
@@ -12,8 +12,8 @@ vi.stubGlobal("window", {
 vi.mock("../../src/random-prompter", () => ({
   add_sunburst: vi.fn(),
   add_random_prompts: vi.fn(),
-  TreeNode: vi.fn(props => props),
-  shuffle: vi.fn(arr => arr),
+  TreeNode: vi.fn((props) => props),
+  shuffle: vi.fn((arr) => arr),
 }));
 
 vi.mock("../../src/index", () => ({
@@ -31,7 +31,7 @@ vi.mock("../../src/index", () => ({
     },
   }),
   append_randomizer_div: vi.fn(),
-  random_from_list: vi.fn(list => list[0]),
+  random_from_list: vi.fn((list) => list[0]),
 }));
 
 vi.mock("../../src/blogger_import.js", () => ({
@@ -44,35 +44,28 @@ global.$ = vi.fn();
 
 // Import the functions to test after mocking
 import {
-  makePostPreviewHTML,
-  make_random_post_html,
-  load_random_eulogy,
-  load_enjoy2,
-  load_7_habits,
-  load_ig66,
-  load_balance,
-  make_radar_map,
-  make_balance_chart_by_work,
-  make_balance_chart_by_desired_time_rest,
-  ThingsIEnjoy,
   SevenHabits,
-  months,
-  row_height,
+  ThingsIEnjoy,
   heatmap_base,
   ideal_color,
+  load_7_habits,
+  load_balance,
+  load_enjoy2,
+  load_ig66,
+  load_random_eulogy,
+  makePostPreviewHTML,
+  make_balance_chart_by_desired_time_rest,
+  make_balance_chart_by_work,
+  make_radar_map,
+  make_random_post_html,
+  months,
+  row_height,
 } from "../../src/page-loader";
 
+import { add_eulogy_roles, add_imported_blog_posts } from "../../src/blogger_import.js";
+import { append_randomizer_div, get_link_info, random_from_list } from "../../src/index";
 // Import mocked dependencies for assertions
-import { add_sunburst, add_random_prompts } from "../../src/random-prompter";
-import {
-  get_link_info,
-  random_from_list,
-  append_randomizer_div,
-} from "../../src/index";
-import {
-  add_imported_blog_posts,
-  add_eulogy_roles,
-} from "../../src/blogger_import.js";
+import { add_random_prompts, add_sunburst } from "../../src/random-prompter";
 
 describe("Page Loader", () => {
   beforeEach(() => {
@@ -111,9 +104,7 @@ describe("Page Loader", () => {
       const result = makePostPreviewHTML(post);
 
       // Check that '/' were replaced with '_' in the audio filename
-      expect(result).toContain(
-        "/path/with spaces/and&symbols.mp3".replace(/\//g, "_")
-      );
+      expect(result).toContain("/path/with spaces/and&symbols.mp3".replace(/\//g, "_"));
     });
   });
 
@@ -133,10 +124,7 @@ describe("Page Loader", () => {
         description: "This is an example page",
       });
 
-      const result = await make_random_post_html(
-        mockLinkInfoProvider,
-        mockRandomSelector
-      );
+      const result = await make_random_post_html(mockLinkInfoProvider, mockRandomSelector);
 
       expect(mockLinkInfoProvider).toHaveBeenCalled();
       expect(mockRandomSelector).toHaveBeenCalled();
@@ -145,12 +133,8 @@ describe("Page Loader", () => {
     });
 
     it("should handle errors gracefully", async () => {
-      const mockLinkInfoProvider = vi
-        .fn()
-        .mockRejectedValue(new Error("Test error"));
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const mockLinkInfoProvider = vi.fn().mockRejectedValue(new Error("Test error"));
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
       const result = await make_random_post_html(mockLinkInfoProvider);
 
@@ -165,12 +149,7 @@ describe("Page Loader", () => {
     it("should load random eulogy roles", () => {
       const mockEulogyLoader = vi.fn();
 
-      load_random_eulogy(
-        "#element1",
-        "#element2",
-        "#element3",
-        mockEulogyLoader
-      );
+      load_random_eulogy("#element1", "#element2", "#element3", mockEulogyLoader);
 
       expect(mockEulogyLoader).toHaveBeenCalledTimes(3);
       expect(mockEulogyLoader).toHaveBeenCalledWith("#element1");
@@ -192,9 +171,7 @@ describe("Page Loader", () => {
       const mockEulogyLoader = vi.fn().mockImplementation(() => {
         throw new Error("Test error");
       });
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
       load_random_eulogy("#e1", "#e2", "#e3", mockEulogyLoader);
 
@@ -212,35 +189,20 @@ describe("Page Loader", () => {
       const mockEulogyAdder = vi.fn();
       const mockRandomizerAppender = vi.fn();
 
-      load_enjoy2(
-        mockSunburstAdder,
-        mockPromptsAdder,
-        mockPostsAdder,
-        mockEulogyAdder,
-        mockRandomizerAppender
-      );
+      load_enjoy2(mockSunburstAdder, mockPromptsAdder, mockPostsAdder, mockEulogyAdder, mockRandomizerAppender);
 
-      expect(mockSunburstAdder).toHaveBeenCalledWith(
-        "sunburst",
-        "sunburst_text",
-        expect.any(Object)
-      );
+      expect(mockSunburstAdder).toHaveBeenCalledWith("sunburst", "sunburst_text", expect.any(Object));
       expect(mockPromptsAdder).toHaveBeenCalled();
       expect(mockPostsAdder).toHaveBeenCalled();
       expect(mockEulogyAdder).toHaveBeenCalledWith("#random-eulogy-role");
-      expect(mockRandomizerAppender).toHaveBeenCalledWith(
-        "#random-blog-posts",
-        expect.any(Function)
-      );
+      expect(mockRandomizerAppender).toHaveBeenCalledWith("#random-blog-posts", expect.any(Function));
     });
 
     it("should handle errors gracefully", () => {
       const mockSunburstAdder = vi.fn().mockImplementation(() => {
         throw new Error("Test error");
       });
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
       load_enjoy2(mockSunburstAdder);
 
@@ -257,11 +219,7 @@ describe("Page Loader", () => {
 
       load_7_habits(mockSunburstAdder, mockPromptsAdder);
 
-      expect(mockSunburstAdder).toHaveBeenCalledWith(
-        "sunburst",
-        "sunburst_text",
-        expect.any(Object)
-      );
+      expect(mockSunburstAdder).toHaveBeenCalledWith("sunburst", "sunburst_text", expect.any(Object));
       expect(mockPromptsAdder).toHaveBeenCalled();
     });
 
@@ -269,9 +227,7 @@ describe("Page Loader", () => {
       const mockSunburstAdder = vi.fn().mockImplementation(() => {
         throw new Error("Test error");
       });
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
       load_7_habits(mockSunburstAdder);
 
@@ -294,9 +250,7 @@ describe("Page Loader", () => {
       const mockPostsAdder = vi.fn().mockImplementation(() => {
         throw new Error("Test error");
       });
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
       load_ig66(mockPostsAdder);
 
@@ -323,9 +277,7 @@ describe("Page Loader", () => {
       const mockRestChartMaker = vi.fn().mockImplementation(() => {
         throw new Error("Test error");
       });
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
       load_balance(mockRestChartMaker);
 
@@ -347,7 +299,7 @@ describe("Page Loader", () => {
         "test-div",
         expect.any(Array),
         expect.any(Object),
-        expect.any(Object)
+        expect.any(Object),
       );
     });
 
@@ -355,7 +307,7 @@ describe("Page Loader", () => {
       const consoleSpy = vi.spyOn(console, "warn").mockImplementation(() => {});
 
       // Set Plotly to undefined for this test
-      delete global.Plotly;
+      global.Plotly = undefined;
 
       await make_radar_map("test-div");
 
@@ -368,9 +320,7 @@ describe("Page Loader", () => {
       const mockPlotly = {
         newPlot: vi.fn().mockRejectedValue(new Error("Test error")),
       };
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
       await make_radar_map("test-div", mockPlotly);
 
@@ -392,7 +342,7 @@ describe("Page Loader", () => {
         "test-div",
         expect.any(Array),
         expect.any(Object),
-        expect.any(Object)
+        expect.any(Object),
       );
     });
 
@@ -400,7 +350,7 @@ describe("Page Loader", () => {
       const consoleSpy = vi.spyOn(console, "warn").mockImplementation(() => {});
 
       // Set Plotly to undefined for this test
-      delete global.Plotly;
+      global.Plotly = undefined;
 
       await make_balance_chart_by_work("test-div");
 
@@ -413,9 +363,7 @@ describe("Page Loader", () => {
       const mockPlotly = {
         newPlot: vi.fn().mockRejectedValue(new Error("Test error")),
       };
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
       await make_balance_chart_by_work("test-div", mockPlotly);
 
@@ -437,7 +385,7 @@ describe("Page Loader", () => {
         "test-div",
         expect.any(Array),
         expect.any(Object),
-        expect.any(Object)
+        expect.any(Object),
       );
     });
 
@@ -445,7 +393,7 @@ describe("Page Loader", () => {
       const consoleSpy = vi.spyOn(console, "warn").mockImplementation(() => {});
 
       // Set Plotly to undefined for this test
-      delete global.Plotly;
+      global.Plotly = undefined;
 
       await make_balance_chart_by_desired_time_rest("test-div");
 
@@ -458,9 +406,7 @@ describe("Page Loader", () => {
       const mockPlotly = {
         newPlot: vi.fn().mockRejectedValue(new Error("Test error")),
       };
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
       await make_balance_chart_by_desired_time_rest("test-div", mockPlotly);
 
@@ -491,7 +437,7 @@ describe("Page Loader", () => {
       expect(tree.children.length).toBe(5);
 
       // Check that all expected categories exist
-      const categoryNames = tree.children.map(child => child.name);
+      const categoryNames = tree.children.map((child) => child.name);
       expect(categoryNames).toContain("Health");
       expect(categoryNames).toContain("Magic");
       expect(categoryNames).toContain("Hobbies");

@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Keyboard shortcuts", () => {
@@ -13,7 +13,7 @@ test.describe("Keyboard shortcuts", () => {
   test("Help dialog loads with ? key", async ({ page }) => {
     // Set up a dialog handler to capture the alert text
     let alertText = "";
-    page.on("dialog", async dialog => {
+    page.on("dialog", async (dialog) => {
       alertText = dialog.message();
       await dialog.accept();
     });

@@ -1,15 +1,10 @@
+import { get } from "lodash-es";
+import { add_eulogy_roles, add_imported_blog_posts } from "./blogger_import.js";
+import { get_link_info } from "./index";
+import { append_randomizer_div, random_from_list } from "./index";
 // Only include this in the html files, one per file
 // This allows code to seet things to refactor
-import {
-  add_sunburst,
-  add_random_prompts,
-  TreeNode,
-  shuffle,
-} from "./random-prompter";
-import { get_link_info } from "./index";
-import { get } from "lodash-es";
-import { append_randomizer_div, random_from_list } from "./index";
-import { add_imported_blog_posts, add_eulogy_roles } from "./blogger_import.js";
+import { TreeNode, add_random_prompts, add_sunburst, shuffle } from "./random-prompter";
 
 /**
  * Class representing the Seven Habits tree structure
@@ -48,11 +43,7 @@ export class ThingsIEnjoy {
   get_tree() {
     const health = new TreeNode({
       name: "Health",
-      children: [
-        { name: "Physical" },
-        { name: "Emotional" },
-        { name: "Cognative" },
-      ],
+      children: [{ name: "Physical" }, { name: "Emotional" }, { name: "Cognative" }],
       value: 31,
     });
     const magic = new TreeNode({
@@ -65,11 +56,7 @@ export class ThingsIEnjoy {
     });
     const hobbies = new TreeNode({
       name: "Hobbies",
-      children: [
-        new TreeNode({ name: "Biking" }),
-        new TreeNode({ name: "Tech" }),
-        new TreeNode({ name: "Juggling" }),
-      ],
+      children: [new TreeNode({ name: "Biking" }), new TreeNode({ name: "Tech" }), new TreeNode({ name: "Juggling" })],
     });
     const relationships = new TreeNode({
       name: "Relationships",
@@ -82,10 +69,7 @@ export class ThingsIEnjoy {
     });
     const joy = new TreeNode({
       name: "Joy",
-      children: [
-        new TreeNode({ name: "Balloons" }),
-        new TreeNode({ name: "Joy to Others" }),
-      ],
+      children: [new TreeNode({ name: "Balloons" }), new TreeNode({ name: "Joy to Others" })],
     });
 
     return new TreeNode({
@@ -104,7 +88,7 @@ export function makePostPreviewHTML({ url, title, description }) {
   // TODO: HACK: Strip to the right of Week number
   const title_href = `<a href='${url}'}>${title}</a>`;
   // random id for audio player
-  const id = "audio_player_" + Math.floor(Math.random() * 10000000000);
+  const id = `audio_player_${Math.floor(Math.random() * 10000000000)}`;
   // filename is URL with '/' turned to '_'
   const filename = url.replace(/\//g, "_");
 
@@ -124,20 +108,17 @@ export function makePostPreviewHTML({ url, title, description }) {
  * @param {Function} randomSelector Function to get a random item (default: random_from_list)
  * @returns {Promise<string>} HTML string for the random post
  */
-export async function make_random_post_html(
-  linkInfoProvider = get_link_info,
-  randomSelector = random_from_list
-) {
+export async function make_random_post_html(linkInfoProvider = get_link_info, randomSelector = random_from_list) {
   try {
     const all_url_info = await linkInfoProvider();
     //  Yuk, find a clearere way to do this
     const all_pages = Object.entries(all_url_info) // returns a list of [url, info]
-      .map(e => e[1]);
+      .map((e) => e[1]);
     const random_post = randomSelector(all_pages);
     return makePostPreviewHTML({
-      url: random_post["url"],
-      title: random_post["title"],
-      description: random_post["description"],
+      url: random_post.url,
+      title: random_post.title,
+      description: random_post.description,
     });
   } catch (error) {
     console.error("Error generating random post HTML:", error);
@@ -156,7 +137,7 @@ export function load_random_eulogy(
   element1 = "#e1",
   element2 = "#e2",
   element3 = "#e3",
-  eulogyLoader = add_eulogy_roles
+  eulogyLoader = add_eulogy_roles,
 ) {
   try {
     eulogyLoader(element1);
@@ -180,7 +161,7 @@ export function load_enjoy2(
   promptsAdder = add_random_prompts,
   postsAdder = add_imported_blog_posts,
   eulogyAdder = add_eulogy_roles,
-  randomizerAppender = append_randomizer_div
+  randomizerAppender = append_randomizer_div,
 ) {
   try {
     sunburstAdder("sunburst", "sunburst_text", new ThingsIEnjoy().get_tree());
@@ -198,10 +179,7 @@ export function load_enjoy2(
  * @param {Function} sunburstAdder Function to add sunburst (default: add_sunburst)
  * @param {Function} promptsAdder Function to add random prompts (default: add_random_prompts)
  */
-export function load_7_habits(
-  sunburstAdder = add_sunburst,
-  promptsAdder = add_random_prompts
-) {
+export function load_7_habits(sunburstAdder = add_sunburst, promptsAdder = add_random_prompts) {
   try {
     sunburstAdder("sunburst", "sunburst_text", new SevenHabits().get_tree());
     promptsAdder();
@@ -231,7 +209,7 @@ export function load_ig66(postsAdder = add_imported_blog_posts) {
 export function load_balance(
   restChartMaker = make_balance_chart_by_desired_time_rest,
   workChartMaker = make_balance_chart_by_work,
-  radarMapMaker = make_radar_map
+  radarMapMaker = make_radar_map,
 ) {
   try {
     restChartMaker("balance-heatmap-rest");
@@ -243,20 +221,7 @@ export function load_balance(
 }
 
 // Month names for charts
-export const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "June",
-  "July",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
+export const months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 // Constants for heatmap configuration
 export const row_height = 20;
@@ -273,30 +238,14 @@ export async function make_radar_map(div, plotly?) {
     {
       type: "scatterpolar",
       r: [8, 8, 8, 5, 8, 8, 8],
-      theta: [
-        "Work",
-        "Tech",
-        "Health",
-        "Hobbies",
-        "Relationships",
-        "Magic",
-        "Work",
-      ],
+      theta: ["Work", "Tech", "Health", "Hobbies", "Relationships", "Magic", "Work"],
       name: "2020 Goal",
       fill: "toself",
     },
     {
       type: "scatterpolar",
       r: [7, 7, 5, 5, 5, 9, 7],
-      theta: [
-        "Work",
-        "Tech",
-        "Health",
-        "Hobbies",
-        "Relationships",
-        "Magic",
-        "Work",
-      ],
+      theta: ["Work", "Tech", "Health", "Hobbies", "Relationships", "Magic", "Work"],
       name: "2020 Actual",
       fill: "toself",
     },

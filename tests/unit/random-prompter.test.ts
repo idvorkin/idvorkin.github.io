@@ -1,24 +1,24 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 
 // Mock shuffle from src/index
 vi.mock("../../src/index", () => ({
   get_link_info: vi.fn(),
-  random_from_list: vi.fn(arr => arr[0]),
+  random_from_list: vi.fn((arr) => arr[0]),
   append_randomizer_div: vi.fn(),
-  shuffle: vi.fn(arr => arr),
+  shuffle: vi.fn((arr) => arr),
 }));
 
 // Import after mocking
 import {
   TreeNode,
-  breadth_first_walk,
-  tree_to_plotly_data_format,
-  random_prompt_for_label,
-  category_to_prompts,
-  category_to_prompts_text,
-  render_prompt_for_category,
   add_random_prompts,
   add_sunburst,
+  breadth_first_walk,
+  category_to_prompts,
+  category_to_prompts_text,
+  random_prompt_for_label,
+  render_prompt_for_category,
+  tree_to_plotly_data_format,
 } from "../../src/random-prompter";
 
 // Setup types for global variables
@@ -28,10 +28,10 @@ declare global {
 }
 
 // Mock jQuery
-const mockJQuery = vi.fn().mockImplementation(selector => {
+const mockJQuery = vi.fn().mockImplementation((selector) => {
   const mockElement = {
     after: vi.fn(),
-    prop: vi.fn(prop => {
+    prop: vi.fn((prop) => {
       if (prop === "tagName") {
         return selector === "h3" ? "H3" : "UL";
       }
@@ -41,7 +41,7 @@ const mockJQuery = vi.fn().mockImplementation(selector => {
     next: vi.fn().mockReturnValue({ length: 0 }),
     first: vi.fn().mockReturnThis(),
     text: vi.fn().mockReturnValue("Test Category"),
-    click: vi.fn(cb => {
+    click: vi.fn((cb) => {
       // Store the callback for testing
       mockElement.clickCallback = cb;
       return mockElement;
@@ -113,18 +113,13 @@ describe("Random Prompter", () => {
     it("should walk the tree in breadth-first order", () => {
       const root = new TreeNode({
         name: "Root",
-        children: [
-          new TreeNode({ name: "Child 1" }),
-          new TreeNode({ name: "Child 2" }),
-        ],
+        children: [new TreeNode({ name: "Child 1" }), new TreeNode({ name: "Child 2" })],
       });
 
-      const result = Array.from(breadth_first_walk(root)).map(
-        ([node, parent]) => ({
-          name: node.name,
-          parentName: parent?.name,
-        })
-      );
+      const result = Array.from(breadth_first_walk(root)).map(([node, parent]) => ({
+        name: node.name,
+        parentName: parent?.name,
+      }));
 
       expect(result).toEqual([
         { name: "Root", parentName: undefined },
@@ -138,10 +133,7 @@ describe("Random Prompter", () => {
     it("should convert tree to plotly format", () => {
       const root = new TreeNode({
         name: "Root",
-        children: [
-          new TreeNode({ name: "Child 1" }),
-          new TreeNode({ name: "Child 2" }),
-        ],
+        children: [new TreeNode({ name: "Child 1" }), new TreeNode({ name: "Child 2" })],
       });
 
       const result = tree_to_plotly_data_format(root);
@@ -168,12 +160,7 @@ describe("Random Prompter", () => {
       const category = "test-category";
       const prompts = ["Prompt 1", "Prompt 2"];
 
-      render_prompt_for_category(
-        category,
-        prompts,
-        mockJQuery,
-        mockAppendRandomizer
-      );
+      render_prompt_for_category(category, prompts, mockJQuery, mockAppendRandomizer);
 
       // Check that jQuery was called with the right selector
       expect(mockJQuery).toHaveBeenCalledWith(category);
@@ -197,7 +184,7 @@ describe("Random Prompter", () => {
         new Map([
           ["Category 1", ["Prompt 1"]],
           ["Category 2", ["Prompt 2"]],
-        ])
+        ]),
       );
 
       const mockRenderer = vi.fn();
@@ -215,13 +202,7 @@ describe("Random Prompter", () => {
     it("should create a sunburst visualization", async () => {
       const root = new TreeNode({ name: "Root" });
 
-      await add_sunburst(
-        "plot-element",
-        "text-div",
-        root,
-        mockJQuery,
-        mockPlotly
-      );
+      await add_sunburst("plot-element", "text-div", root, mockJQuery, mockPlotly);
 
       // Check that Plotly.newPlot was called
       expect(mockPlotly.newPlot).toHaveBeenCalled();
@@ -232,9 +213,7 @@ describe("Random Prompter", () => {
 
     it("should handle missing Plotly", async () => {
       const root = new TreeNode({ name: "Root" });
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
       await add_sunburst("plot-element", "text-div", root, mockJQuery, null);
 
@@ -249,17 +228,9 @@ describe("Random Prompter", () => {
       const mockErrorPlotly = {
         newPlot: vi.fn().mockRejectedValue(new Error("Test error")),
       };
-      const consoleSpy = vi
-        .spyOn(console, "error")
-        .mockImplementation(() => {});
+      const consoleSpy = vi.spyOn(console, "error").mockImplementation(() => {});
 
-      const result = await add_sunburst(
-        "plot-element",
-        "text-div",
-        root,
-        mockJQuery,
-        mockErrorPlotly
-      );
+      const result = await add_sunburst("plot-element", "text-div", root, mockJQuery, mockErrorPlotly);
 
       // Check that an error was logged and null was returned
       expect(consoleSpy).toHaveBeenCalled();
@@ -273,10 +244,7 @@ describe("Random Prompter", () => {
     it("should find a random prompt for a label", () => {
       const root = new TreeNode({
         name: "Root",
-        children: [
-          new TreeNode({ name: "Category 1" }),
-          new TreeNode({ name: "Category 2" }),
-        ],
+        children: [new TreeNode({ name: "Category 1" }), new TreeNode({ name: "Category 2" })],
       });
 
       const prompts = new Map([
@@ -302,12 +270,12 @@ describe("Random Prompter", () => {
           [{ text: vi.fn().mockReturnValue("Category 2") }, ["Prompt 2"]],
         ],
         size: 2,
-        get: key => {
+        get: (key) => {
           if (key === "Category 1") return ["Prompt 1"];
           if (key === "Category 2") return ["Prompt 2"];
           return null;
         },
-        has: key => key === "Category 1" || key === "Category 2",
+        has: (key) => key === "Category 1" || key === "Category 2",
       });
 
       const result = category_to_prompts_text(mockMapProvider);

@@ -6,10 +6,15 @@
       "zz-chop-logs/**",
       "_ig66/ig66-export.json",
       "eulogy.json",
-      "assets/js/*",
+      "assets/**",
       "**/*.js",
       "**/*.jsx",
-      ".cursor/**"
+      ".cursor/**",
+      "_site/**",
+      "node_modules/**",
+      "search.json",
+      ".markdownlint.json",
+      "**/*.md"
     ]
   },
   "formatter": {

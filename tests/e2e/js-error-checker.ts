@@ -1,4 +1,4 @@
-import { Page, expect } from "@playwright/test";
+import { type Page, expect } from "@playwright/test";
 
 /**
  * Helper function to check for JavaScript errors on a page
@@ -8,10 +8,7 @@ import { Page, expect } from "@playwright/test";
  * NOTE: Always use headless browser when running tests (the default).
  * Do NOT use the --debug flag which launches a non-headless browser.
  */
-export async function checkForJsErrors(
-  page: Page,
-  path: string
-): Promise<void> {
+export async function checkForJsErrors(page: Page, path: string): Promise<void> {
   // Store all page errors for reporting
   const allErrors: string[] = [];
 
@@ -32,14 +29,12 @@ export async function checkForJsErrors(
   ];
 
   // Listen for JavaScript errors
-  page.on("pageerror", error => {
+  page.on("pageerror", (error) => {
     // Store all errors for logging
     allErrors.push(error.message);
 
     // Check if this is a warning or critical error
-    const isWarning = warningPatterns.some(pattern =>
-      pattern.test(error.message)
-    );
+    const isWarning = warningPatterns.some((pattern) => pattern.test(error.message));
 
     if (!isWarning) {
       criticalErrors.push(error.message);
@@ -58,8 +53,5 @@ export async function checkForJsErrors(
   }
 
   // Only fail the test for critical errors
-  expect(
-    criticalErrors,
-    `Critical JavaScript errors found on ${path}: ${criticalErrors.join(", ")}`
-  ).toEqual([]);
+  expect(criticalErrors, `Critical JavaScript errors found on ${path}: ${criticalErrors.join(", ")}`).toEqual([]);
 }

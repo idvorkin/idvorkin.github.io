@@ -11,15 +11,8 @@
  * @param force If provided, adds class when true and removes when false
  * @returns The element
  */
-export function toggleClass(
-  element: string | HTMLElement,
-  className: string,
-  force?: boolean
-): HTMLElement {
-  const el =
-    typeof element === "string"
-      ? (document.querySelector(element) as HTMLElement)
-      : element;
+export function toggleClass(element: string | HTMLElement, className: string, force?: boolean): HTMLElement {
+  const el = typeof element === "string" ? (document.querySelector(element) as HTMLElement) : element;
 
   if (!el) return null;
 
@@ -44,7 +37,7 @@ export function toggleClass(
 export function createElement<T extends HTMLElement>(
   tag: string,
   attributes?: Record<string, string>,
-  children?: (string | Node)[]
+  children?: (string | Node)[],
 ): T {
   const element = document.createElement(tag) as T;
 
@@ -55,7 +48,7 @@ export function createElement<T extends HTMLElement>(
   }
 
   if (children) {
-    children.forEach(child => {
+    children.forEach((child) => {
       if (typeof child === "string") {
         element.appendChild(document.createTextNode(child));
       } else {
@@ -73,10 +66,7 @@ export function createElement<T extends HTMLElement>(
  * @param selector The CSS selector to match
  * @returns The matching parent element or null if not found
  */
-export function findClosestParent(
-  element: HTMLElement,
-  selector: string
-): HTMLElement | null {
+export function findClosestParent(element: HTMLElement, selector: string): HTMLElement | null {
   let currentElement = element.parentElement;
 
   while (currentElement) {

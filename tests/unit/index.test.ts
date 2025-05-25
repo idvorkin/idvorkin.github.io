@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 
 // Set up the window object with necessary properties
 window["@algolia/autocomplete-js"] = {
@@ -59,7 +59,7 @@ describe("Index Module", () => {
 
     // Mock jQuery
     global.$ = vi.fn().mockReturnValue({
-      ready: vi.fn(cb => cb()),
+      ready: vi.fn((cb) => cb()),
       focus: vi.fn(),
       length: 1,
     });
@@ -70,7 +70,7 @@ describe("Index Module", () => {
     });
 
     // Mock defer function
-    global.defer = vi.fn(fn => fn());
+    global.defer = vi.fn((fn) => fn());
 
     // Set up DOM
     document.body.innerHTML = `

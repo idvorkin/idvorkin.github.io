@@ -4,11 +4,11 @@
 // Random tree
 // Tree copied from: https://github.com/vasturiano/force-graph
 console.log("Load force graph in TS v 0.9");
-import { get_link_info, MakeBackLinkHTML } from "./shared";
+import { MakeBackLinkHTML, get_link_info } from "./shared";
 //import ForceGraph from "force-graph";
 
 // Define variables that are used but not declared
-declare var ForceGraph: any;
+declare let ForceGraph: any;
 
 /**
  * Checks if a URL is present in the list of pages
@@ -23,16 +23,14 @@ export function is_valid_url(pages, url) {
   }
 
   // Check if the exact URL exists in pages
-  if (pages.map(p => p.url).includes(url)) {
+  if (pages.map((p) => p.url).includes(url)) {
     return true;
   }
 
   // Try more flexible matching for URLs that might have different formats
   // e.g., with or without trailing slashes, or with different prefixes
   const normalizedUrl = url.replace(/^\//, "").replace(/\/$/, "");
-  const normalizedPageUrls = pages.map(p =>
-    p.url.replace(/^\//, "").replace(/\/$/, "")
-  );
+  const normalizedPageUrls = pages.map((p) => p.url.replace(/^\//, "").replace(/\/$/, ""));
 
   return normalizedPageUrls.includes(normalizedUrl);
 }
@@ -45,16 +43,14 @@ export function is_valid_url(pages, url) {
  */
 export function node_for_url(pages, url) {
   // First try exact match
-  const exactMatch = pages.filter(p => p.url === url)[0];
+  const exactMatch = pages.filter((p) => p.url === url)[0];
   if (exactMatch) {
     return exactMatch;
   }
 
   // Try normalized match (without leading/trailing slashes)
   const normalizedUrl = url.replace(/^\//, "").replace(/\/$/, "");
-  const normalizedMatch = pages.filter(
-    p => p.url.replace(/^\//, "").replace(/\/$/, "") === normalizedUrl
-  )[0];
+  const normalizedMatch = pages.filter((p) => p.url.replace(/^\//, "").replace(/\/$/, "") === normalizedUrl)[0];
 
   return normalizedMatch;
 }
@@ -69,7 +65,7 @@ export function build_links(pages) {
   const links = [];
 
   // Regular link building for multiple expanded pages
-  pages.forEach(page => {
+  pages.forEach((page) => {
     // Ensure we have arrays even if they're undefined in the data
     const outgoingLinks = page.outgoing_links || [];
     const incomingLinks = page.incoming_links || [];
@@ -78,7 +74,7 @@ export function build_links(pages) {
     const combinedLinks = [...outgoingLinks, ...incomingLinks];
 
     // Check if each link is valid and add it
-    combinedLinks.forEach(targetUrl => {
+    combinedLinks.forEach((targetUrl) => {
       // Try to find the target node
       const targetNode = node_for_url(g_pages, targetUrl);
       if (targetNode) {
@@ -87,7 +83,7 @@ export function build_links(pages) {
     });
 
     // Check if we added any links for this page
-    const pageLinks = links.filter(link => link.source === page);
+    const pageLinks = links.filter((link) => link.source === page);
 
     if (pageLinks.length === 0 && page.url === "/eulogy") {
       console.log(`No valid links found for ${page.url}`);
@@ -103,19 +99,17 @@ export function build_links(pages) {
  * @returns Object with nodes and links arrays
  */
 export function build_graph_data(pages) {
-  const visible_pages = pages.filter(page => page.expanded);
+  const visible_pages = pages.filter((page) => page.expanded);
 
   // Find eulogy node and check its links
-  const eulogyNode = pages.find(p => p.url === "/eulogy");
+  const eulogyNode = pages.find((p) => p.url === "/eulogy");
   if (!eulogyNode) {
     console.log("Eulogy node not found in pages");
   }
 
   const visible_links = build_links(visible_pages);
 
-  const newly_visible_pages = visible_links
-    .map(l => node_for_url(pages, l.target))
-    .filter(node => node); // Filter out nulls/undefined
+  const newly_visible_pages = visible_links.map((l) => node_for_url(pages, l.target)).filter((node) => node); // Filter out nulls/undefined
 
   // update visible pages with newly visible ones
   const combined_pages = visible_pages.concat(newly_visible_pages);
@@ -135,18 +129,14 @@ export function build_graph_data(pages) {
 export function TextLabelNodeCanvas(node, ctx, globalScale: number) {
   const outgoingCount = node.outgoing_links.length;
   const expandedText = node.expanded ? "-" : `+${outgoingCount}`;
-  const label = node.id + " [" + expandedText + "]";
+  const label = `${node.id} [${expandedText}]`;
   const fontSize = 12 / globalScale;
   ctx.font = `${fontSize}px Sans-Serif`;
   const textWidth = ctx.measureText(label).width;
-  const bckgDimensions = [textWidth, fontSize].map(n => n + fontSize * 0.2); // some padding
+  const bckgDimensions = [textWidth, fontSize].map((n) => n + fontSize * 0.2); // some padding
 
   ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
-  ctx.fillRect(
-    node.x - bckgDimensions[0] / 2,
-    node.y - bckgDimensions[1] / 2,
-    ...bckgDimensions
-  );
+  ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
 
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
@@ -165,12 +155,7 @@ export function TextLabelNodeCanvas(node, ctx, globalScale: number) {
 export function TextLabelNodePointerAreaPaint(node, color, ctx) {
   ctx.fillStyle = color;
   const bckgDimensions = node.__bckgDimensions;
-  bckgDimensions &&
-    ctx.fillRect(
-      node.x - bckgDimensions[0] / 2,
-      node.y - bckgDimensions[1] / 2,
-      ...bckgDimensions
-    );
+  bckgDimensions && ctx.fillRect(node.x - bckgDimensions[0] / 2, node.y - bckgDimensions[1] / 2, ...bckgDimensions);
 }
 
 // Variables used in the graph module
@@ -235,7 +220,7 @@ export function open_goto_control() {
  * Collapses all nodes except the active node
  */
 export function collapse_all_except_active() {
-  g_pages.forEach(p => {
+  g_pages.forEach((p) => {
     p.expanded = false;
   });
   if (g_last_detail_node) {
@@ -268,27 +253,24 @@ export async function initializeGraph() {
 
   // Uncollapse any page wtih the url == eulogy
   function is_initial_expanded(node) {
-    if (node.url == first_expanded) {
+    if (node.url === first_expanded) {
       return true;
     }
     return false;
   }
 
-  g_pages = Object.values(await get_link_info()).map(p => ({
+  g_pages = Object.values(await get_link_info()).map((p) => ({
     ...p,
     id: p.url,
     expanded: false,
   }));
 
-  const slug =
-    "/" + (window.location.hash ? window.location.hash.substr(1) : "");
+  const slug = `/${window.location.hash ? window.location.hash.substr(1) : ""}`;
 
-  const initial_expanded_url = g_pages.map(p => p.url).includes(slug)
-    ? slug
-    : "/eulogy";
+  const initial_expanded_url = g_pages.map((p) => p.url).includes(slug) ? slug : "/eulogy";
 
-  g_pages.forEach(p => {
-    p.expanded = p.url == initial_expanded_url;
+  g_pages.forEach((p) => {
+    p.expanded = p.url === initial_expanded_url;
   });
 
   // If ForceGraph isn't defined, return
@@ -303,15 +285,15 @@ export async function initializeGraph() {
     .nodeAutoColorBy("group")
     .nodeCanvasObject(TextLabelNodeCanvas)
     .nodePointerAreaPaint(TextLabelNodePointerAreaPaint)
-    .onNodeRightClick(node => {
+    .onNodeRightClick((node) => {
       // Open the node in a new tab
       window.open(node.url, "_blank");
     })
-    .onNodeClick(node => {
+    .onNodeClick((node) => {
       // count expanded nodes
       node.expanded = !node.expanded;
-      const expanded_nodes = g_pages.filter(p => p.expanded).length;
-      if (expanded_nodes == 0) {
+      const expanded_nodes = g_pages.filter((p) => p.expanded).length;
+      if (expanded_nodes === 0) {
         // re-expand me.
         node.expanded = true;
       }
@@ -359,5 +341,5 @@ export async function initializeGraph() {
 
 // Make initializeGraph available in the global scope if needed for testing
 if (typeof window !== "undefined") {
-  window["initializeGraph"] = initializeGraph;
+  window.initializeGraph = initializeGraph;
 }

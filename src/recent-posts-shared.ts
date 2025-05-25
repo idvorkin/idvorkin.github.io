@@ -5,7 +5,7 @@
  * Shared between recent.ts and recent-posts.ts
  */
 
-import { IURLInfoMap } from "./shared";
+import type { IURLInfoMap } from "./shared";
 
 /**
  * Represents the simplified structure of a page for display.
@@ -28,9 +28,7 @@ import { get_link_info } from "./shared";
  * @param url The URL to fetch backlinks data from, defaults to "/back-links.json"
  * @returns The URL info map from the backlinks data
  */
-export async function fetchBacklinksData(
-  url = "/back-links.json"
-): Promise<IURLInfoMap> {
+export async function fetchBacklinksData(url = "/back-links.json"): Promise<IURLInfoMap> {
   // For test compatibility
   if (url === "/test-missing-url-info") {
     throw new Error("Missing url_info in data structure");
@@ -66,11 +64,7 @@ export function convertToPages(urlInfoMap: IURLInfoMap): IPage[] {
  */
 export function filterRealPages(pages: IPage[]): IPage[] {
   return pages.filter(
-    page =>
-      page.description &&
-      page.description.trim() !== "" &&
-      page.title &&
-      page.title.trim() !== ""
+    (page) => page.description && page.description.trim() !== "" && page.title && page.title.trim() !== "",
   );
 }
 
@@ -82,10 +76,7 @@ export function filterRealPages(pages: IPage[]): IPage[] {
 export function sortPagesByDate(pages: IPage[]): IPage[] {
   return [...pages].sort((a, b) => {
     if (a.last_modified && b.last_modified) {
-      return (
-        new Date(b.last_modified).getTime() -
-        new Date(a.last_modified).getTime()
-      );
+      return new Date(b.last_modified).getTime() - new Date(a.last_modified).getTime();
     }
     // Fallback to doc_size if last_modified is not available
     return b.doc_size - a.doc_size;
