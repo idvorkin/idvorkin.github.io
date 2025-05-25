@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>54/54</span>
+                <span class='fraction'>44/44</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>54/54</span>
+                <span class='fraction'>44/44</span>
             </div>
         
             
@@ -143,17 +143,7 @@
 <a name='L78'></a><a href='#L78'>78</a>
 <a name='L79'></a><a href='#L79'>79</a>
 <a name='L80'></a><a href='#L80'>80</a>
-<a name='L81'></a><a href='#L81'>81</a>
-<a name='L82'></a><a href='#L82'>82</a>
-<a name='L83'></a><a href='#L83'>83</a>
-<a name='L84'></a><a href='#L84'>84</a>
-<a name='L85'></a><a href='#L85'>85</a>
-<a name='L86'></a><a href='#L86'>86</a>
-<a name='L87'></a><a href='#L87'>87</a>
-<a name='L88'></a><a href='#L88'>88</a>
-<a name='L89'></a><a href='#L89'>89</a>
-<a name='L90'></a><a href='#L90'>90</a>
-<a name='L91'></a><a href='#L91'>91</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L81'></a><a href='#L81'>81</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -168,13 +158,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -206,7 +189,7 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
@@ -216,7 +199,7 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
@@ -229,9 +212,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
@@ -256,15 +236,8 @@
  * @param force If provided, adds class when true and removes when false
  * @returns The element
  */
-export function toggleClass(
-  element: string | HTMLElement,
-  className: string,
-  force?: boolean
-): HTMLElement {
-  const el =
-    typeof element === "string"
-      ? (document.querySelector(element) as HTMLElement)
-      : element;
+export function toggleClass(element: string | HTMLElement, className: string, force?: boolean): HTMLElement {
+  const el = typeof element === "string" ? (document.querySelector(element) as HTMLElement) : element;
 &nbsp;
   if (!el) return null;
 &nbsp;
@@ -289,24 +262,24 @@ export function toggleClass(
 export function createElement&lt;T extends HTMLElement&gt;(
   tag: string,
   attributes?: Record&lt;string, string&gt;,
-  children?: (string | Node)[]
+  children?: (string | Node)[],
 ): T {
   const element = document.createElement(tag) as T;
 &nbsp;
   if (attributes) {
-    Object.entries(attributes).forEach(([key, value]) =&gt; {
+    for (const [key, value] of Object.entries(attributes)) {
       element.setAttribute(key, value);
-    });
+    }
   }
 &nbsp;
   if (children) {
-    children.forEach(child =&gt; {
+    for (const child of children) {
       if (typeof child === "string") {
         element.appendChild(document.createTextNode(child));
       } else {
         element.appendChild(child);
       }
-    });
+    }
   }
 &nbsp;
   return element;
@@ -318,10 +291,7 @@ export function createElement&lt;T extends HTMLElement&gt;(
  * @param selector The CSS selector to match
  * @returns The matching parent element or null if not found
  */
-export function findClosestParent(
-  element: HTMLElement,
-  selector: string
-): HTMLElement | null {
+export function findClosestParent(element: HTMLElement, selector: string): HTMLElement | null {
   let currentElement = element.parentElement;
 &nbsp;
   while (currentElement) {
@@ -340,7 +310,7 @@ export function findClosestParent(
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-25T16:07:58.552Z
+                at 2025-05-25T16:30:22.427Z
             </div>
         <script src="../../../prettify.js"></script>
         <script>
