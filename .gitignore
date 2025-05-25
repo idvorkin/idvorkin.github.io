@@ -23,6 +23,9 @@ Gemfile.lock
 _algolia_api_key
 _cypress_api_key
 
+# CHOP conventions directory
+zz-chop-conventions
+
 # Cypress artificats
 cypress/videos
 cypress/screenshots
