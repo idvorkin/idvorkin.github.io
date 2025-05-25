@@ -2,6 +2,7 @@
 title: "The Gap Year Paradox: Why Taking a Year Off at 50 beats retiring at 65"
 layout: post
 permalink: /gap-year
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-gapyear.webp
 tags:
   - life-planning
   - retirement
@@ -13,6 +14,8 @@ tags:
 Here's a thought that'll pushback your retirement: Would you rather work until 65 and retire comfortably, or take a full year off at 50, return to work, and retire at 67 with less money? If you're like most people, you immediately think "that's crazy - I can't afford to lose a year's income!" But what if I told you that gap year might be the best investment you'll ever make?
 
 We've been conditioned to think of career breaks as financial suicide, but this binary thinking misses something crucial: the compound value of time, energy, and perspective when you're still in your prime.
+
+{% include blob_image_float_right.html src="blog/raccoon-gapyear.webp" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
