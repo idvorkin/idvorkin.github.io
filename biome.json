@@ -1,12 +1,29 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-	"files": {
-		"ignore": [
-			"back-links.json",
-			"zz-chop-logs/**",
-			"_ig66/ig66-export.json",
-			"eulogy.json",
-			"assets/js/index.*"
-		]
-	}
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "files": {
+    "ignore": [
+      "back-links.json",
+      "zz-chop-logs/**",
+      "_ig66/ig66-export.json",
+      "eulogy.json",
+      "assets/js/index.*",
+      "**/*.ts",
+      "**/*.tsx"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 120
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "always"
+    }
+  },
+  "linter": {
+    "enabled": true
+  }
 }
