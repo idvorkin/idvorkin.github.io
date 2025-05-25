@@ -150,6 +150,12 @@ function getOrCreateHeaderId(header: HTMLElement): string {
  * Adds copy link functionality to a single header
  */
 function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): void {
+  // Check if this header already has a copy link
+  const existingCopyLink = header.querySelector(`.${options.iconClass || DEFAULT_OPTIONS.iconClass}`);
+  if (existingCopyLink) {
+    return; // Skip if copy link already exists
+  }
+
   const headerId = getOrCreateHeaderId(header);
   const copyIcon = createCopyLinkIcon(options);
 
@@ -239,10 +245,29 @@ export function addHeaderCopyLinkStyles(): void {
   document.head.appendChild(style);
 }
 
+// Global flag to prevent multiple initializations
+let isHeaderCopyLinksInitialized = false;
+
+/**
+ * Reset the initialization flag (for testing purposes)
+ */
+export function resetHeaderCopyLinksInitialization(): void {
+  isHeaderCopyLinksInitialized = false;
+}
+
 /**
  * Main initialization function - call this to enable the feature
  */
 export function enableHeaderCopyLinks(options: Partial<CopyLinkOptions> = {}): void {
+  // Prevent multiple initializations
+  if (isHeaderCopyLinksInitialized) {
+    console.log("⚠️ Header copy links already initialized, skipping...");
+    return;
+  }
+
+  isHeaderCopyLinksInitialized = true;
+  console.log("🔗 Initializing header copy links...");
+
   // Add styles
   addHeaderCopyLinkStyles();
 

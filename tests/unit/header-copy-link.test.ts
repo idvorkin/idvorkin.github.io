@@ -32,10 +32,28 @@ const mockWindow = {
 (globalThis as unknown as { navigator: typeof mockWindow.navigator }).navigator = mockWindow.navigator;
 
 // Import the module after setting up mocks
-import { addHeaderCopyLinkStyles, enableHeaderCopyLinks, initHeaderCopyLinks } from "../../src/header-copy-link";
+import {
+  addHeaderCopyLinkStyles,
+  enableHeaderCopyLinks,
+  initHeaderCopyLinks,
+  resetHeaderCopyLinksInitialization,
+} from "../../src/header-copy-link";
+
+// Helper function to create mock header elements
+function createMockHeader(id: string, textContent: string) {
+  return {
+    id,
+    textContent,
+    appendChild: vi.fn(),
+    addEventListener: vi.fn(),
+    querySelector: vi.fn(() => null),
+  };
+}
 
 describe("Header Copy Link", () => {
   beforeEach(() => {
+    // Reset the global initialization flag before each test
+    resetHeaderCopyLinksInitialization();
     vi.clearAllMocks();
 
     // Reset document mock
@@ -50,6 +68,7 @@ describe("Header Copy Link", () => {
         addEventListener: vi.fn(),
         textContent: "",
         id: "",
+        querySelector: vi.fn(() => null),
         parentElement: {
           appendChild: vi.fn(),
         },
@@ -71,6 +90,7 @@ describe("Header Copy Link", () => {
         textContent: "Test Header",
         appendChild: vi.fn(),
         addEventListener: vi.fn(),
+        querySelector: vi.fn(() => null),
       };
 
       // Mock the content container
@@ -108,6 +128,7 @@ describe("Header Copy Link", () => {
         textContent: "Test Header",
         appendChild: vi.fn(),
         addEventListener: vi.fn(),
+        querySelector: vi.fn(() => null),
       };
 
       const mockContainer = {
@@ -124,12 +145,7 @@ describe("Header Copy Link", () => {
 
   describe("Header ID Generation", () => {
     it("should use existing header ID if present", () => {
-      const mockHeader = {
-        id: "existing-id",
-        textContent: "Test Header",
-        appendChild: vi.fn(),
-        addEventListener: vi.fn(),
-      };
+      const mockHeader = createMockHeader("existing-id", "Test Header");
 
       const mockContainer = {
         querySelectorAll: vi.fn(() => [mockHeader]),
@@ -144,12 +160,10 @@ describe("Header Copy Link", () => {
     });
 
     it("should generate ID from header text when no ID exists", () => {
-      const mockHeader = {
-        id: "",
-        textContent: "How do you identify and help eng decide if management is right for them",
-        appendChild: vi.fn(),
-        addEventListener: vi.fn(),
-      };
+      const mockHeader = createMockHeader(
+        "",
+        "How do you identify and help eng decide if management is right for them",
+      );
 
       const mockContainer = {
         querySelectorAll: vi.fn(() => [mockHeader]),
@@ -171,12 +185,7 @@ describe("Header Copy Link", () => {
     });
 
     it("should handle special characters in header text", () => {
-      const mockHeader = {
-        id: "",
-        textContent: "How to EM: Be the manager everyone wants!",
-        appendChild: vi.fn(),
-        addEventListener: vi.fn(),
-      };
+      const mockHeader = createMockHeader("", "How to EM: Be the manager everyone wants!");
 
       const mockContainer = {
         querySelectorAll: vi.fn(() => [mockHeader]),
@@ -195,19 +204,8 @@ describe("Header Copy Link", () => {
     });
 
     it("should ensure ID uniqueness", () => {
-      const mockHeader1 = {
-        id: "",
-        textContent: "Test Header",
-        appendChild: vi.fn(),
-        addEventListener: vi.fn(),
-      };
-
-      const mockHeader2 = {
-        id: "",
-        textContent: "Different Header",
-        appendChild: vi.fn(),
-        addEventListener: vi.fn(),
-      };
+      const mockHeader1 = createMockHeader("", "Test Header");
+      const mockHeader2 = createMockHeader("", "Different Header");
 
       const mockContainer = {
         querySelectorAll: vi.fn(() => [mockHeader1, mockHeader2]),
@@ -240,12 +238,7 @@ describe("Header Copy Link", () => {
 
       mockWindow.location.href = "http://localhost:4000/manager-book";
 
-      const mockHeader = {
-        id: "test-section",
-        textContent: "Test Section",
-        appendChild: vi.fn(),
-        addEventListener: vi.fn(),
-      };
+      const mockHeader = createMockHeader("test-section", "Test Section");
 
       const mockContainer = {
         querySelectorAll: vi.fn(() => [mockHeader]),
@@ -320,12 +313,7 @@ describe("Header Copy Link", () => {
 
       mockWindow.location.href = "http://localhost:4000/manager-book";
 
-      const mockHeader = {
-        id: "test-section",
-        textContent: "Test Section",
-        appendChild: vi.fn(),
-        addEventListener: vi.fn(),
-      };
+      const mockHeader = createMockHeader("test-section", "Test Section");
 
       const mockContainer = {
         querySelectorAll: vi.fn(() => [mockHeader]),
@@ -388,12 +376,7 @@ describe("Header Copy Link", () => {
     it("should initialize correctly when DOM is ready", () => {
       mockDocument.readyState = "complete";
 
-      const mockHeader = {
-        id: "test-header",
-        textContent: "Test Header",
-        appendChild: vi.fn(),
-        addEventListener: vi.fn(),
-      };
+      const mockHeader = createMockHeader("test-header", "Test Header");
 
       const mockContainer = {
         querySelectorAll: vi.fn(() => [mockHeader]),
@@ -421,11 +404,85 @@ describe("Header Copy Link", () => {
       // Should add event listener for DOMContentLoaded
       expect(mockDocument.addEventListener).toHaveBeenCalledWith("DOMContentLoaded", expect.any(Function));
     });
+
+    it("should not add duplicate copy links when called multiple times", () => {
+      const mockHeader = createMockHeader("test-header", "Test Header");
+      let copyLinkExists = false;
+
+      // Mock querySelector to return null first time, then return an existing element
+      mockHeader.querySelector = vi.fn(() => {
+        if (copyLinkExists) {
+          return { className: "header-copy-link" }; // Simulate existing copy link
+        }
+        return null;
+      });
+
+      const mockContainer = {
+        querySelectorAll: vi.fn(() => [mockHeader]),
+      };
+
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "header-copy-link-styles") return null;
+        if (id === "content-holder") return mockContainer;
+        return null;
+      });
+
+      // First call should add the copy link
+      initHeaderCopyLinks();
+      copyLinkExists = true; // Simulate that copy link now exists
+
+      // Second call should not add another copy link
+      initHeaderCopyLinks();
+
+      // Should only add one copy link icon per header
+      expect(mockHeader.appendChild).toHaveBeenCalledTimes(1);
+    });
+
+    it("should not add duplicate copy links when enableHeaderCopyLinks is called multiple times", () => {
+      mockDocument.readyState = "complete";
+
+      const mockHeader = createMockHeader("test-header", "Test Header");
+      let copyLinkExists = false;
+
+      // Mock querySelector to return null first time, then return an existing element
+      mockHeader.querySelector = vi.fn(() => {
+        if (copyLinkExists) {
+          return { className: "header-copy-link" }; // Simulate existing copy link
+        }
+        return null;
+      });
+
+      const mockContainer = {
+        querySelectorAll: vi.fn(() => [mockHeader]),
+      };
+
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "header-copy-link-styles") return null;
+        if (id === "content-holder") return mockContainer;
+        return null;
+      });
+
+      // First call should add the copy link
+      enableHeaderCopyLinks();
+      copyLinkExists = true; // Simulate that copy link now exists
+
+      // Second call should not add another copy link
+      enableHeaderCopyLinks();
+
+      // Should only add one copy link icon per header
+      expect(mockHeader.appendChild).toHaveBeenCalledTimes(1);
+    });
   });
 });
 
 // Test the URL transformation logic specifically
 describe("URL Transformation Logic", () => {
+  beforeEach(() => {
+    // Reset the global initialization flag before each test
+    resetHeaderCopyLinksInitialization();
+    vi.clearAllMocks();
+  });
+
   const testCases = [
     {
       input:
@@ -460,12 +517,7 @@ describe("URL Transformation Logic", () => {
       const [baseUrl, anchor] = input.split("#");
       mockWindow.location.href = baseUrl;
 
-      const mockHeader = {
-        id: anchor,
-        textContent: "Test Header",
-        appendChild: vi.fn(),
-        addEventListener: vi.fn(),
-      };
+      const mockHeader = createMockHeader(anchor, "Test Header");
 
       const mockContainer = {
         querySelectorAll: vi.fn(() => [mockHeader]),
