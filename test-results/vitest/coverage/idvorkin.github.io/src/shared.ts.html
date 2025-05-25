@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">84.41% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>62/62</span>
+                <span class='fraction'>65/77</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">83.33% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>5/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">84.41% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>62/62</span>
+                <span class='fraction'>65/77</span>
             </div>
         
             
@@ -185,7 +185,25 @@
 <a name='L120'></a><a href='#L120'>120</a>
 <a name='L121'></a><a href='#L121'>121</a>
 <a name='L122'></a><a href='#L122'>122</a>
-<a name='L123'></a><a href='#L123'>123</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -237,6 +255,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
@@ -248,6 +282,7 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -255,6 +290,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -359,9 +395,25 @@ export function shuffle&lt;T&gt;(array: T[]): T[] {
  * This div gets content from the random_html_factory
  * and clicking does a re-randomize
  */
+// Modern defer function that works with ES modules and includes logging
+export <span class="fstat-no" title="function not covered" >function defer(fn: () =&gt; void, functionName?: string) {</span>
+<span class="cstat-no" title="statement not covered" >  const name = functionName || fn.name || "anonymous function";</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  if (document.readyState === "loading") {</span>
+<span class="cstat-no" title="statement not covered" >    console.log(`🕐 Deferring ${name} until DOM is ready`);</span>
+<span class="cstat-no" title="statement not covered" >    document.addEventListener("DOMContentLoaded", () =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      console.log(`🚀 Executing deferred ${name}`);</span>
+<span class="cstat-no" title="statement not covered" >      fn();</span>
+<span class="cstat-no" title="statement not covered" >    });</span>
+<span class="cstat-no" title="statement not covered" >  } else {</span>
+<span class="cstat-no" title="statement not covered" >    console.log(`⚡ DOM already ready, executing ${name} immediately`);</span>
+<span class="cstat-no" title="statement not covered" >    fn();</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+&nbsp;
 export async function append_randomizer_div(
   parent_id: string | JQuery&lt;HTMLElement&gt;,
-  random_html_factory: () =&gt; string,
+  random_html_factory: () =&gt; string | Promise&lt;string&gt;,
 ) {
   // as string to queit type checker.
   // Will be a noop if parent_id is already a jquery object
@@ -370,14 +422,16 @@ export async function append_randomizer_div(
     console.log(`append_randomizer_div ${parent_id} not present`);
     return;
   }
-  const new_element = $(await random_html_factory());
+  const html = await random_html_factory();
+  const new_element = $(html);
   $parent.empty().append(new_element);
 &nbsp;
   // Clicking on the element should result in a reload, unless you're
   // Clicking on a link
   $parent.click(async (event) =&gt; {
     if (event.target.tagName !== "A") {
-      const new_element = $(await random_html_factory());
+      const html = await random_html_factory();
+      const new_element = $(html);
       $parent.empty().append(new_element);
     }
   });
@@ -436,7 +490,7 @@ export async function get_link_info(url?: string): Promise&lt;IURLInfoMap&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-25T16:30:22.427Z
+                at 2025-05-25T17:12:09.723Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
