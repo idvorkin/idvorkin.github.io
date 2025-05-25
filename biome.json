@@ -5,7 +5,8 @@
 			"back-links.json",
 			"zz-chop-logs/**",
 			"_ig66/ig66-export.json",
-			"eulogy.json"
+			"eulogy.json",
+			"assets/js/index.*"
 		]
 	}
 }
