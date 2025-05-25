@@ -538,7 +538,7 @@ class LinkBuilder:
                 f,
                 default=page_encoder,
                 ensure_ascii=False,
-                indent=4,
+                indent=2,
                 sort_keys=True,
             )
 

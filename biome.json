@@ -1,0 +1,11 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"files": {
+		"ignore": [
+			"back-links.json",
+			"zz-chop-logs/**",
+			"_ig66/ig66-export.json",
+			"eulogy.json"
+		]
+	}
+}
