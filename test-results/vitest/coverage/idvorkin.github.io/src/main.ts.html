@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.56% </span>
+                <span class="strong">61.03% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>213/346</span>
+                <span class='fraction'>213/349</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.44% </span>
+                <span class="strong">51.66% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>31/58</span>
+                <span class='fraction'>31/60</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.56% </span>
+                <span class="strong">61.03% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>213/346</span>
+                <span class='fraction'>213/349</span>
             </div>
         
             
@@ -572,7 +572,13 @@
 <a name='L507'></a><a href='#L507'>507</a>
 <a name='L508'></a><a href='#L508'>508</a>
 <a name='L509'></a><a href='#L509'>509</a>
-<a name='L510'></a><a href='#L510'>510</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L510'></a><a href='#L510'>510</a>
+<a name='L511'></a><a href='#L511'>511</a>
+<a name='L512'></a><a href='#L512'>512</a>
+<a name='L513'></a><a href='#L513'>513</a>
+<a name='L514'></a><a href='#L514'>514</a>
+<a name='L515'></a><a href='#L515'>515</a>
+<a name='L516'></a><a href='#L516'>516</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -809,7 +815,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -854,8 +859,6 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -893,6 +896,13 @@
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
@@ -1032,9 +1042,15 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1050,13 +1066,9 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1314,7 +1326,6 @@ async function AddLinksToPage(allUrls: IURLInfoMap) {
 <span class="cstat-no" title="statement not covered" >      outgoing_location.append(MakeBackLinkHTML(url_info));</span>
 <span class="cstat-no" title="statement not covered" >    }</span>
   }
-  console.log("Added Graph");
   const graph_location = link_parent_location.find("#graph");
   const stripped_page_path = page_path.replace(/\//g, "");
   graph_location.append(`&lt;a href='/graph#${stripped_page_path}'&gt;${page_path} (${stripped_page_path}) &lt;/a&gt;`);
@@ -1362,8 +1373,6 @@ function AddSummarysToPage(backLinks: IBacklinks) {
 <span class="cstat-no" title="statement not covered" >          return;</span>
 <span class="cstat-no" title="statement not covered" >        }</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        console.log(link.attr("href"));</span>
-&nbsp;
 <span class="cstat-no" title="statement not covered" >        let ref = link.attr("href");</span>
 <span class="cstat-no" title="statement not covered" >        if (!ref) {</span>
 <span class="cstat-no" title="statement not covered" >          link.html(make_html_summary_link_error(link, "missing href"));</span>
@@ -1402,6 +1411,13 @@ function AddSummarysToPage(backLinks: IBacklinks) {
 }
 &nbsp;
 async function add_link_loader() {
+  // Prevent multiple initialization using global flag
+  const globalFlag = "__idvorkin_add_link_loader_initialized__";
+  if ((window as any)[globalFlag]) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  (window as any)[globalFlag] = true;
+&nbsp;
   AddLinksToPage(await get_link_info());
   AddSummarysToPage(await get_back_links());
 }
@@ -1538,12 +1554,18 @@ function buildListReplacementMap(): Record&lt;string, Element&gt; {
  * This function orchestrates the process of finding and replacing placeholders.
  */
 function replaceListPlaceholdersInTables() {
-  console.log("🔄 Replacing List Placeholders in Tables");
   const listReplacements = buildListReplacementMap();
   replacePlaceholdersWithLists(listReplacements);
 }
 &nbsp;
 function load_globals() {
+  // Prevent multiple initialization using global flag
+  const globalFlag = "__idvorkin_load_globals_initialized__";
+  if ((window as any)[globalFlag]) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  (window as any)[globalFlag] = true;
+&nbsp;
   $(add_link_loader);
   $(keyboard_shortcut_loader);
 &nbsp;
@@ -1558,15 +1580,11 @@ function load_globals() {
     }
   }
 &nbsp;
-  console.log("🚀 About to call initRecentPosts from main.ts");
   initRecentPosts();
-  console.log("✅ Called initRecentPosts from main.ts");
 &nbsp;
   // Initialize recent posts if the container exists
   if (document.getElementById("last-modified-posts")) {
-    console.log("🚀 About to call initRecentAllPosts from main.ts");
     initRecentAllPosts();
-    console.log("✅ Called initRecentAllPosts from main.ts");
   }
 &nbsp;
   $(() =&gt; {
@@ -1597,7 +1615,7 @@ if (typeof $ !== "undefined" &amp;&amp; $.<span class="branch-0 cbranch-no" titl
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-25T17:29:32.471Z
+                at 2025-05-25T17:57:17.285Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

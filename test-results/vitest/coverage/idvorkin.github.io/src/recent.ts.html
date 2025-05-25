@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.12% </span>
+                <span class="strong">96.63% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>124/129</span>
+                <span class='fraction'>115/119</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">96.12% </span>
+                <span class="strong">96.63% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>124/129</span>
+                <span class='fraction'>115/119</span>
             </div>
         
             
@@ -327,22 +327,7 @@
 <a name='L262'></a><a href='#L262'>262</a>
 <a name='L263'></a><a href='#L263'>263</a>
 <a name='L264'></a><a href='#L264'>264</a>
-<a name='L265'></a><a href='#L265'>265</a>
-<a name='L266'></a><a href='#L266'>266</a>
-<a name='L267'></a><a href='#L267'>267</a>
-<a name='L268'></a><a href='#L268'>268</a>
-<a name='L269'></a><a href='#L269'>269</a>
-<a name='L270'></a><a href='#L270'>270</a>
-<a name='L271'></a><a href='#L271'>271</a>
-<a name='L272'></a><a href='#L272'>272</a>
-<a name='L273'></a><a href='#L273'>273</a>
-<a name='L274'></a><a href='#L274'>274</a>
-<a name='L275'></a><a href='#L275'>275</a>
-<a name='L276'></a><a href='#L276'>276</a>
-<a name='L277'></a><a href='#L277'>277</a>
-<a name='L278'></a><a href='#L278'>278</a>
-<a name='L279'></a><a href='#L279'>279</a>
-<a name='L280'></a><a href='#L280'>280</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L265'></a><a href='#L265'>265</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -567,16 +552,11 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -585,10 +565,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">5x</span>
@@ -603,23 +580,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/**
  * Recent Posts Display Module
@@ -843,10 +813,7 @@ export async function updateRecentPosts(
   initialPostsCount = 15,
   doc: Document = document,
 ): Promise&lt;void&gt; {
-  console.log("🔍 updateRecentPosts function called");
-&nbsp;
   const recentContainer = doc.getElementById(containerId);
-  console.log("🔍 recent-posts container element:", recentContainer);
 &nbsp;
   if (!recentContainer) {
     console.error(`❌ ${containerId} container not found in DOM`);
@@ -854,8 +821,6 @@ export async function updateRecentPosts(
   }
 &nbsp;
   try {
-    console.log("🔍 Fetching back-links.json...");
-&nbsp;
     // Get fully processed pages from shared module
     const sortedPages = await getProcessedPages();
 &nbsp;
@@ -863,13 +828,10 @@ export async function updateRecentPosts(
     const html = generateRecentPostsHTML(sortedPages, initialPostsCount);
 &nbsp;
     // Update container
-    console.log("🔍 Updating recent-posts content with HTML", `${html.substring(0, 100)}...`);
     recentContainer.innerHTML = html;
 &nbsp;
     // Setup toggle functionality
     setupToggleEventListener("remaining-posts-toggle", "remaining-posts-content", doc);
-&nbsp;
-    console.log("✅ Recent posts updated successfully");
   } catch (error) {
     console.error("❌ Error loading recent posts:", error);
     recentContainer.innerHTML = "&lt;p&gt;Error loading modified posts. Please try again later.&lt;/p&gt;";
@@ -882,23 +844,16 @@ export async function updateRecentPosts(
  * @param doc Document instance (for testing)
  */
 export function initRecentAllPosts(containerId = "last-modified-posts", doc: Document = document): void {
-  console.log("🔍 initRecentAllPosts called");
-&nbsp;
   // Check if document is already loaded
   if (doc.readyState === "loading") {
     // Document still loading, add event listener
-    console.log("🔍 Document still loading, adding DOMContentLoaded listener");
     doc.addEventListener("DOMContentLoaded", () =&gt; {
-<span class="cstat-no" title="statement not covered" >      console.log("🔍 DOMContentLoaded event fired, calling updateRecentPosts()");</span>
 <span class="cstat-no" title="statement not covered" >      updateRecentPosts(containerId, 15, doc);</span>
     });
   } else {
     // Document already loaded, run immediately
-    console.log("🔍 Document already loaded, calling updateRecentPosts() immediately");
     updateRecentPosts(containerId, 15, doc);
   }
-&nbsp;
-  console.log("🔍 initRecentAllPosts completed initial setup");
 }
 &nbsp;</pre></td></tr></table></pre>
 
@@ -907,7 +862,7 @@ export function initRecentAllPosts(containerId = "last-modified-posts", doc: Doc
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-05-25T17:29:32.471Z
+                at 2025-05-25T17:57:17.285Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
