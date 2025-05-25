@@ -203,6 +203,9 @@ fabric.properties
 Session.vim
 .vim
 
+# Aider AI coding assistant
+.aider
+
 # Emacs
 \#*\#
 /.emacs.desktop
