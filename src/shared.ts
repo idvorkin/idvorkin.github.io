@@ -50,9 +50,25 @@ export function shuffle<T>(array: T[]): T[] {
  * This div gets content from the random_html_factory
  * and clicking does a re-randomize
  */
+// Modern defer function that works with ES modules and includes logging
+export function defer(fn: () => void, functionName?: string) {
+  const name = functionName || fn.name || "anonymous function";
+
+  if (document.readyState === "loading") {
+    console.log(`🕐 Deferring ${name} until DOM is ready`);
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log(`🚀 Executing deferred ${name}`);
+      fn();
+    });
+  } else {
+    console.log(`⚡ DOM already ready, executing ${name} immediately`);
+    fn();
+  }
+}
+
 export async function append_randomizer_div(
   parent_id: string | JQuery<HTMLElement>,
-  random_html_factory: () => string,
+  random_html_factory: () => string | Promise<string>,
 ) {
   // as string to queit type checker.
   // Will be a noop if parent_id is already a jquery object
@@ -61,14 +77,16 @@ export async function append_randomizer_div(
     console.log(`append_randomizer_div ${parent_id} not present`);
     return;
   }
-  const new_element = $(await random_html_factory());
+  const html = await random_html_factory();
+  const new_element = $(html);
   $parent.empty().append(new_element);
 
   // Clicking on the element should result in a reload, unless you're
   // Clicking on a link
   $parent.click(async (event) => {
     if (event.target.tagName !== "A") {
-      const new_element = $(await random_html_factory());
+      const html = await random_html_factory();
+      const new_element = $(html);
       $parent.empty().append(new_element);
     }
   });

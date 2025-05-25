@@ -45,6 +45,7 @@ vi.mock("../../src/shared", () => ({
   random_from_list: vi.fn().mockReturnValue("item1"),
   shuffle: vi.fn().mockReturnValue(["item3", "item2", "item1"]),
   append_randomizer_div: vi.fn(),
+  defer: vi.fn((fn) => fn()),
   get_link_info: vi.fn().mockResolvedValue({}),
   MakeBackLinkHTML: vi.fn(),
 }));

@@ -224,7 +224,7 @@ describe("Graph Module", () => {
     await graphModule.initializeGraph();
 
     // Check that the console.log was called with the expected message
-    expect(console.log).toHaveBeenCalledWith("Force Graph not defined, exiting initialization");
+    expect(console.log).toHaveBeenCalledWith("Force Graph not defined, providing fallback functionality");
 
     // Restore the original ForceGraph
     global.ForceGraph = originalForceGraph;

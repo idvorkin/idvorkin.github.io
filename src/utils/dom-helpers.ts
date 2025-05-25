@@ -11,7 +11,7 @@
  * @param force If provided, adds class when true and removes when false
  * @returns The element
  */
-export function toggleClass(element: string | HTMLElement, className: string, force?: boolean): HTMLElement {
+export function toggleClass(element: string | HTMLElement, className: string, force?: boolean): HTMLElement | null {
   const el = typeof element === "string" ? (document.querySelector(element) as HTMLElement) : element;
 
   if (!el) return null;

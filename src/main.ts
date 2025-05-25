@@ -437,13 +437,13 @@ function buildListReplacementMap(): Record<string, Element> {
 
   for (const list of lists) {
     const firstListItem = list.firstElementChild;
-    if (!firstListItem) return;
+    if (!firstListItem) continue;
 
     const firstItemText = firstListItem.textContent;
-    if (!firstItemText || !firstItemText.startsWith("l")) return;
+    if (!firstItemText || !firstItemText.startsWith("l")) continue;
 
     const listId = Number.parseInt(firstItemText.substring(1));
-    if (Number.isNaN(listId)) return;
+    if (Number.isNaN(listId)) continue;
 
     replacements[firstItemText] = list;
   }

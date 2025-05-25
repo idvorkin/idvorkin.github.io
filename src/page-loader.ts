@@ -168,9 +168,9 @@ export function load_enjoy2(
     promptsAdder();
     postsAdder(); // has a random achievement post
     eulogyAdder("#random-eulogy-role");
-    randomizerAppender("#random-blog-posts", () => make_random_post_html().then((html) => html));
+    randomizerAppender("#random-blog-posts", async () => await make_random_post_html());
   } catch (error) {
-    console.error("Error loading enjoy page:", error);
+    console.error("❌ Error loading enjoy page:", error);
   }
 }
 

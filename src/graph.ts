@@ -8,14 +8,23 @@ import { MakeBackLinkHTML, get_link_info } from "./shared";
 //import ForceGraph from "force-graph";
 
 // Define variables that are used but not declared
-declare let ForceGraph: (element: HTMLElement) => {
-  graphData: (data: { nodes: unknown[]; links: unknown[] }) => void;
-  centerAt: (x: number, y: number, duration: number) => void;
-  zoom: (scale: number, duration: number) => void;
-  onNodeClick: (callback: (node: unknown) => void) => void;
-  nodeCanvasObject: (callback: (node: unknown, ctx: CanvasRenderingContext2D, globalScale: number) => void) => void;
-  nodePointerAreaPaint: (callback: (node: unknown, color: string, ctx: CanvasRenderingContext2D) => void) => void;
-};
+interface ForceGraphInstance {
+  graphData: (data: { nodes: unknown[]; links: unknown[] }) => ForceGraphInstance;
+  centerAt: (x: number, y: number, duration: number) => ForceGraphInstance;
+  zoom: (scale: number, duration: number) => ForceGraphInstance;
+  onNodeClick: (callback: (node: unknown) => void) => ForceGraphInstance;
+  nodeCanvasObject: (
+    callback: (node: unknown, ctx: CanvasRenderingContext2D, globalScale: number) => void,
+  ) => ForceGraphInstance;
+  nodePointerAreaPaint: (
+    callback: (node: unknown, color: string, ctx: CanvasRenderingContext2D) => void,
+  ) => ForceGraphInstance;
+  onNodeRightClick: (callback: (node: unknown) => void) => ForceGraphInstance;
+  nodeLabel: (label: string) => ForceGraphInstance;
+  nodeAutoColorBy: (property: string) => ForceGraphInstance;
+}
+
+declare let ForceGraph: () => (element: HTMLElement) => ForceGraphInstance;
 
 /**
  * Checks if a URL is present in the list of pages
@@ -280,9 +289,41 @@ export async function initializeGraph() {
     p.expanded = p.url === initial_expanded_url;
   }
 
-  // If ForceGraph isn't defined, return
+  // If ForceGraph isn't defined, provide fallback functionality
   if (typeof ForceGraph === "undefined") {
-    console.log("Force Graph not defined, exiting initialization");
+    console.log("Force Graph not defined, providing fallback functionality");
+
+    // Still initialize the detail panel with the initial node for testing
+    const initialNode = node_for_url(g_pages, initial_expanded_url);
+    if (initialNode) {
+      update_detail(initialNode);
+      g_last_detail_node = initialNode;
+    }
+
+    // Set up basic control handlers even without the graph
+    const centerControl = document.getElementById("center_control");
+    if (centerControl) {
+      centerControl.addEventListener("click", () => {
+        console.log("Center control clicked (fallback mode)");
+      });
+    }
+
+    const gotoControl = document.getElementById("goto_control");
+    if (gotoControl) {
+      gotoControl.addEventListener("click", () => {
+        if (g_last_detail_node?.url) {
+          window.open(g_last_detail_node.url, "_blank");
+        }
+      });
+    }
+
+    const collapseControl = document.getElementById("collapse_control");
+    if (collapseControl) {
+      collapseControl.addEventListener("click", () => {
+        console.log("Collapse control clicked (fallback mode)");
+      });
+    }
+
     return;
   }
 
@@ -292,11 +333,11 @@ export async function initializeGraph() {
     .nodeAutoColorBy("group")
     .nodeCanvasObject(TextLabelNodeCanvas)
     .nodePointerAreaPaint(TextLabelNodePointerAreaPaint)
-    .onNodeRightClick((node) => {
+    .onNodeRightClick((node: any) => {
       // Open the node in a new tab
       window.open(node.url, "_blank");
     })
-    .onNodeClick((node) => {
+    .onNodeClick((node: any) => {
       // count expanded nodes
       node.expanded = !node.expanded;
       const expanded_nodes = g_pages.filter((p) => p.expanded).length;
@@ -347,6 +388,12 @@ export async function initializeGraph() {
 }
 
 // Make initializeGraph available in the global scope if needed for testing
+declare global {
+  interface Window {
+    initializeGraph: () => Promise<void>;
+  }
+}
+
 if (typeof window !== "undefined") {
   window.initializeGraph = initializeGraph;
 }

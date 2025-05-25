@@ -11,6 +11,7 @@ import {
   type IURLInfoMap,
   MakeBackLinkHTML,
   append_randomizer_div,
+  defer,
   get_link_info,
   random_from_list,
   shuffle,
@@ -56,9 +57,6 @@ declare let $: {
 declare let Mousetrap: {
   bind: (key: string, callback: () => void) => void;
 };
-declare global {
-  function defer(fn: () => void): void;
-}
 
 // Main initialization
 $(document).ready(() => {
@@ -66,11 +64,7 @@ $(document).ready(() => {
   const tocExpand = true;
 
   // Call the global initialization function from main.ts
-  if (typeof defer === "function") {
-    defer(load_globals);
-  } else {
-    load_globals();
-  }
+  defer(load_globals);
 
   // Setup event handlers
   const setupKeyboardShortcuts = () => {
@@ -129,6 +123,7 @@ export {
   random_from_list,
   shuffle,
   append_randomizer_div,
+  defer,
   get_link_info,
   // Export the interface types
   type IURLInfo,
