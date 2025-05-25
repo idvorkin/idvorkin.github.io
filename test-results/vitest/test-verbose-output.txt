@@ -31,7 +31,7 @@ npx vitest run --reporter=verbose
 
 [90mstderr[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
 [22m[39mFailed to copy header link: Error: Clipboard failed
-    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mtests/unit/header-copy-link.test.ts:278:62
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mtests/unit/header-copy-link.test.ts:271:62
     at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
     at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
     at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
@@ -43,16 +43,38 @@ npx vitest run --reporter=verbose
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
 
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mIntegration[2m > [22m[2mshould initialize correctly when DOM is ready
+[22m[39m🔗 Initializing header copy links...
+✅ Initialized copy links for 1 headers
+
+[90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mIntegration[2m > [22m[2mshould wait for DOM ready when loading
+[22m[39m🔗 Initializing header copy links...
+
+[90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mIntegration[2m > [22m[2mshould not add duplicate copy links when called multiple times
 [22m[39m✅ Initialized copy links for 1 headers
+✅ Initialized copy links for 1 headers
+
+[90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mIntegration[2m > [22m[2mshould not add duplicate copy links when enableHeaderCopyLinks is called multiple times
+[22m[39m🔗 Initializing header copy links...
+✅ Initialized copy links for 1 headers
+⚠️ Header copy links already initialized, skipping...
 
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
 [22m[39m✅ Initialized copy links for 1 headers
 
+[90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
+[22m[39mCopied header link: http://idvorkin.azurewebsites.net/manager-book/how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them
+
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
 [22m[39m✅ Initialized copy links for 1 headers
 
+[90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
+[22m[39mCopied header link: https://idvorkin.azurewebsites.net/manager-book/test-section
+
 [90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
 [22m[39m✅ Initialized copy links for 1 headers
+
+[90mstdout[2m | tests/unit/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
+[22m[39mCopied header link: http://idvorkin.azurewebsites.net/simple-page/anchor
 
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly
@@ -66,6 +88,8 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCSS Styles[2m > [22mshould create style element with correct content
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould initialize correctly when DOM is ready
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould wait for DOM ready when loading
+ [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when called multiple times
+ [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when enableHeaderCopyLinks is called multiple times
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
  [32m✓[39m tests/unit/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
@@ -2431,16 +2455,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m773.413714[39m,
-        nodeStart: [33m0.3563110000031884[39m,
-        v8Start: [33m3.0099840000038967[39m,
-        bootstrapComplete: [33m19.79373399999895[39m,
-        environment: [33m10.301910000001953[39m,
-        loopStart: [33m25.7364430000016[39m,
+        duration: [33m764.244709[39m,
+        nodeStart: [33m0.392212999984622[39m,
+        v8Start: [33m3.5448900000192225[39m,
+        bootstrapComplete: [33m23.79265800002031[39m,
+        environment: [33m10.26447699998971[39m,
+        loopStart: [33m32.528856999997515[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m104.161045[39m
+        idleTime: [33m94.34355[39m
       },
-      timeOrigin: [33m1748193130377.147[39m
+      timeOrigin: [33m1748194173118.967[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -5036,16 +5060,16 @@ npx vitest run --reporter=verbose
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m807.615065[39m,
-        nodeStart: [33m0.3563110000031884[39m,
-        v8Start: [33m3.0099840000038967[39m,
-        bootstrapComplete: [33m19.79373399999895[39m,
-        environment: [33m10.301910000001953[39m,
-        loopStart: [33m25.7364430000016[39m,
+        duration: [33m811.623998[39m,
+        nodeStart: [33m0.392212999984622[39m,
+        v8Start: [33m3.5448900000192225[39m,
+        bootstrapComplete: [33m23.79265800002031[39m,
+        environment: [33m10.26447699998971[39m,
+        loopStart: [33m32.528856999997515[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m104.161045[39m
+        idleTime: [33m94.34355[39m
       },
-      timeOrigin: [33m1748193130377.147[39m
+      timeOrigin: [33m1748194173118.967[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -7637,16 +7661,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m852.07176[39m,
-        nodeStart: [33m0.3563110000031884[39m,
-        v8Start: [33m3.0099840000038967[39m,
-        bootstrapComplete: [33m19.79373399999895[39m,
-        environment: [33m10.301910000001953[39m,
-        loopStart: [33m25.7364430000016[39m,
+        duration: [33m836.45044[39m,
+        nodeStart: [33m0.392212999984622[39m,
+        v8Start: [33m3.5448900000192225[39m,
+        bootstrapComplete: [33m23.79265800002031[39m,
+        environment: [33m10.26447699998971[39m,
+        loopStart: [33m32.528856999997515[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m104.161045[39m
+        idleTime: [33m94.34355[39m
       },
-      timeOrigin: [33m1748193130377.147[39m
+      timeOrigin: [33m1748194173118.967[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10260,16 +10284,16 @@ Toggle element with ID remaining-posts-toggle not found
         name: [32m'node'[39m,
         entryType: [32m'node'[39m,
         startTime: [33m0[39m,
-        duration: [33m889.566089[39m,
-        nodeStart: [33m0.3563110000031884[39m,
-        v8Start: [33m3.0099840000038967[39m,
-        bootstrapComplete: [33m19.79373399999895[39m,
-        environment: [33m10.301910000001953[39m,
-        loopStart: [33m25.7364430000016[39m,
+        duration: [33m887.29375[39m,
+        nodeStart: [33m0.392212999984622[39m,
+        v8Start: [33m3.5448900000192225[39m,
+        bootstrapComplete: [33m23.79265800002031[39m,
+        environment: [33m10.26447699998971[39m,
+        loopStart: [33m32.528856999997515[39m,
         loopExit: [33m-1[39m,
-        idleTime: [33m104.161045[39m
+        idleTime: [33m94.34355[39m
       },
-      timeOrigin: [33m1748193130377.147[39m
+      timeOrigin: [33m1748194173118.967[39m
     },
     screenLeft: [33m0[39m,
     screenTop: [33m0[39m,
@@ -10647,12 +10671,6 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
-[90mstdout[2m | tests/unit/main.test.ts
-[22m[39m🔄 Replacing List Placeholders in Tables
-🚀 About to call initRecentPosts from main.ts
-✅ Called initRecentPosts from main.ts
-✅ Initialized copy links for 0 headers
-
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
@@ -10665,6 +10683,13 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle errors during plot creation
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrandom_prompt_for_label[2m > [22mshould find a random prompt for a label
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mcategory_to_prompts_text[2m > [22mshould convert category elements to text with prompts
+[90mstdout[2m | tests/unit/main.test.ts
+[22m[39m🔄 Replacing List Placeholders in Tables
+🚀 About to call initRecentPosts from main.ts
+✅ Called initRecentPosts from main.ts
+🔗 Initializing header copy links...
+✅ Initialized copy links for 0 headers
+
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -10713,7 +10738,7 @@ Toggle element with ID remaining-posts-toggle not found
  [32m✓[39m tests/unit/index.test.ts[2m > [22mIndex Module[2m > [22mshould initialize when ready
 
 [2m Test Files [22m [1m[32m13 passed[39m[22m[90m (13)[39m
-[2m      Tests [22m [1m[32m152 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (157)[39m
-[2m   Start at [22m 17:12:10
-[2m   Duration [22m 3.37s[2m (transform 550ms, setup 155ms, collect 724ms, tests 549ms, environment 4.75s, prepare 1.16s)[22m
+[2m      Tests [22m [1m[32m154 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (159)[39m
+[2m   Start at [22m 17:29:33
+[2m   Duration [22m 3.33s[2m (transform 500ms, setup 174ms, collect 658ms, tests 554ms, environment 4.82s, prepare 1.14s)[22m
 
