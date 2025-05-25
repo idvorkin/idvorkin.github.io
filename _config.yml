@@ -102,6 +102,7 @@ exclude:
     ".vscode",
     "blog.chroma.db",
     "chop-conventions",
+    "zz-chop-conventions",
     "devdocker",
     "docs",
     "tech_graveyard",
