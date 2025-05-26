@@ -15,6 +15,8 @@ Here's a thought that'll pushback your retirement: Would you rather work until 6
 
 We've been conditioned to think of career breaks as financial suicide, but this binary thinking misses something crucial: the compound value of time, energy, and perspective when you're still in your prime.
 
+{% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
+
 {% include blob_image_float_right.html src="blog/raccoon-gapyear.webp" %}
 
 <!-- prettier-ignore-start -->

@@ -333,6 +333,7 @@
             "file_path": "_site/7-habits.html",
             "incoming_links": [
                 "/7h-concepts",
+                "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/d/time-off-2020-12",
@@ -346,10 +347,10 @@
                 "/synergize",
                 "/win-win"
             ],
-            "last_modified": "2025-05-25T10:08:46.451299",
+            "last_modified": "2025-05-25T10:09:41-07:00",
             "markdown_path": "_posts/2018-01-04-7-habits.md",
             "outgoing_links": [
-                "/7h-c0",
+                "/7h-concepts",
                 "/balance",
                 "/be-proactive",
                 "/end-in-mind",
@@ -369,6 +370,7 @@
             "doc_size": 18000,
             "file_path": "_site/7h-concepts.html",
             "incoming_links": [
+                "/7-habits",
                 "/advice",
                 "/writing"
             ],
@@ -903,21 +905,21 @@
                 "/life-as-business",
                 "/productive"
             ],
-            "last_modified": "2025-05-25T10:08:46.451299",
+            "last_modified": "2025-05-25T10:09:41-07:00",
             "markdown_path": "_d/balance2.md",
             "outgoing_links": [
-                "/7h",
+                "/7-habits",
                 "/activation",
                 "/energy",
-                "/essential",
+                "/essentialism",
                 "/eulogy",
                 "/moments",
                 "/mortality-software",
                 "/parkinson",
                 "/productive",
-                "/time-off",
-                "/weeks",
-                "/wlb"
+                "/sustainable-work",
+                "/timeoff",
+                "/weeks"
             ],
             "redirect_url": "",
             "title": "Balance - The Holy Grail",
@@ -1247,6 +1249,7 @@
                 "/gtd",
                 "/process-journal",
                 "/tech-rituals",
+                "/vibe",
                 "/y24",
                 "/y25"
             ],
@@ -2157,7 +2160,7 @@
             "doc_size": 13000,
             "file_path": "_site/e1.html",
             "incoming_links": [],
-            "last_modified": "2025-05-25T10:08:46.451299",
+            "last_modified": "2025-05-25T10:09:41-07:00",
             "markdown_path": "_d/e1.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -2358,6 +2361,7 @@
             "incoming_links": [
                 "/4dx",
                 "/affirmations",
+                "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
                 "/d/time-off-2022-07",
@@ -2558,7 +2562,7 @@
             "doc_size": 30000,
             "file_path": "_site/gap-year.html",
             "incoming_links": [],
-            "last_modified": "2025-05-25T06:57:26.150901",
+            "last_modified": "2025-05-26T11:58:36.507274",
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/chapters",
@@ -3956,7 +3960,7 @@
                 "/first-understand",
                 "/manager-book"
             ],
-            "last_modified": "2025-05-25T10:08:56.299612",
+            "last_modified": "2025-05-25T10:09:41-07:00",
             "markdown_path": "_d/prompt.md",
             "outgoing_links": [
                 "/coaching"
@@ -4502,6 +4506,7 @@
             "file_path": "_site/sustainable-work.html",
             "incoming_links": [
                 "/42",
+                "/balance",
                 "/being-a-great-manager",
                 "/depression",
                 "/dsat",
@@ -5035,6 +5040,7 @@
             "doc_size": 34000,
             "file_path": "_site/timeoff.html",
             "incoming_links": [
+                "/balance",
                 "/d/time-off-2020-03",
                 "/d/time-off-2020-12",
                 "/d/time-off-2021-11",
@@ -5084,7 +5090,7 @@
             "incoming_links": [
                 "/operating-manual"
             ],
-            "last_modified": "2025-05-25T10:08:46.451299",
+            "last_modified": "2025-05-25T10:09:41-07:00",
             "markdown_path": "_d/enjoy2.md",
             "outgoing_links": [
                 "/eulogy"
@@ -5195,10 +5201,10 @@
                 "/ai",
                 "/chop"
             ],
-            "last_modified": "2025-05-24T09:10:33.007804",
+            "last_modified": "2025-05-24T09:10:48-07:00",
             "markdown_path": "_d/vibe.md",
             "outgoing_links": [
-                "/ai-coder"
+                "/chop"
             ],
             "redirect_url": "",
             "title": "Vibe Coding: Best Practices for Flow, Fun, and Results",
@@ -5411,7 +5417,9 @@
             "description": "I like to begin in mind, so let’s write a report for 2024. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
             "doc_size": 25000,
             "file_path": "_site/y24.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/gap-year"
+            ],
             "last_modified": "2025-01-01T17:48:26-08:00",
             "markdown_path": "_d/y2024.md",
             "outgoing_links": [
@@ -5434,7 +5442,9 @@
             "description": "I like to begin in mind, so let’s write a report for 2025. This hasn’t happened, but if I don’t write it out and focus on it, it certainly won’t.\n\n",
             "doc_size": 18000,
             "file_path": "_site/y25.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/gap-year"
+            ],
             "last_modified": "2025-01-01T17:50:51-08:00",
             "markdown_path": "_d/y2025.md",
             "outgoing_links": [
