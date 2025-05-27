@@ -4,8 +4,13 @@ import * as shared from "../../src/shared";
 // Mock imports and global objects
 vi.mock("../../src/shared", () => ({
   get_link_info: vi.fn(),
+  get_link_info: vi.fn(),
   MakeBackLinkHTML: vi.fn(),
 }));
+
+// Mock specific functions from graph.ts that are dependencies for randomPage and displayRecentPosts
+// We will spy on them or mock them as needed within test suites.
+// For instance, center_on_node will be handled this way.
 
 // Create ForceGraph mock function
 const mockForceGraphInstance = {
@@ -316,5 +321,213 @@ describe("Graph Module", () => {
     // Check that the detail element's innerHTML was set
     const detail = document.getElementById("detail");
     expect(detail.innerHTML).toBe("<div>Mock backlink HTML</div>");
+  });
+});
+
+describe("randomPage function", () => {
+  let graphModule;
+  let mockCenterOnNode;
+
+  beforeEach(async () => {
+    graphModule = await import("../../src/graph");
+    // Mock dependencies
+    mockCenterOnNode = vi.fn();
+    graphModule.center_on_node = mockCenterOnNode; // Assuming center_on_node can be mocked this way
+    console.error = vi.fn(); // Mock console.error
+  });
+
+  it("should not call center_on_node and log an error if g_pages is empty", () => {
+    graphModule.g_pages = []; // Set g_pages to empty
+    graphModule.randomPage();
+    expect(mockCenterOnNode).not.toHaveBeenCalled();
+    expect(console.error).toHaveBeenCalledWith("No pages available to select a random page.");
+  });
+
+  it("should call center_on_node with a random page if g_pages is not empty", () => {
+    const mockPages = [
+      { url: "/page1", title: "Page 1", id: "/page1" },
+      { url: "/page2", title: "Page 2", id: "/page2" },
+    ];
+    graphModule.g_pages = mockPages; // Set g_pages with mock data
+    graphModule.randomPage();
+    expect(mockCenterOnNode).toHaveBeenCalledTimes(1);
+    expect(mockPages).toContain(mockCenterOnNode.mock.calls[0][0]);
+  });
+});
+
+describe("displayRecentPosts function", () => {
+  let graphModule;
+  let mockRecentPostsDiv;
+
+  const mockPagesFull = [
+    { url: "/page1", title: "Page 1", last_modified: "2023-01-01T10:00:00Z", id: "/page1" },
+    { url: "/page2", title: "Page 2", last_modified: "2023-01-03T12:00:00Z", id: "/page2" },
+    { url: "/page3", title: "Page 3", last_modified: "2023-01-02T08:00:00Z", id: "/page3" },
+    { url: "/page4", title: "Page 4", last_modified: "2023-01-05T10:00:00Z", id: "/page4" },
+    { url: "/page5", title: "Page 5", last_modified: "2023-01-04T10:00:00Z", id: "/page5" },
+    { url: "/page6", title: "Page 6", last_modified: "2023-01-06T10:00:00Z", id: "/page6" },
+  ];
+
+  const mockPagesWithInvalidDates = [
+    { url: "/pageValid1", title: "Valid Page 1", last_modified: "2023-01-05T00:00:00Z", id: "/pageValid1" },
+    { url: "/pageInvalid1", title: "Invalid Date Page 1", last_modified: "invalid-date", id: "/pageInvalid1" },
+    { url: "/pageNullDate", title: "Null Date Page", last_modified: null, id: "/pageNullDate" },
+    { url: "/pageValid2", title: "Valid Page 2", last_modified: "2023-01-01T00:00:00Z", id: "/pageValid2" },
+    { url: "/pageUndefinedDate", title: "Undefined Date Page", last_modified: undefined, id: "/pageUndefinedDate" },
+  ];
+
+
+  beforeEach(async () => {
+    graphModule = await import("../../src/graph");
+    console.error = vi.fn(); // Mock console.error
+
+    // Mock document.getElementById for 'recent_posts'
+    mockRecentPostsDiv = {
+      innerHTML: "",
+      appendChild: vi.fn(),
+      children: [], // To simulate clearing
+    };
+    vi.spyOn(document, "getElementById").mockImplementation((id) => {
+      if (id === "recent_posts") {
+        return mockRecentPostsDiv;
+      }
+      // Fallback for other ids if any are used by the function indirectly
+      return document.querySelector(`#${id}`);
+    });
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks(); // Restore document.getElementById
+  });
+
+  it("should log an error if the recent_posts div does not exist", () => {
+    vi.spyOn(document, "getElementById").mockReturnValueOnce(null); // Simulate div not found
+    graphModule.g_pages = mockPagesFull;
+    graphModule.displayRecentPosts();
+    expect(console.error).toHaveBeenCalledWith("The 'recent_posts' div was not found.");
+    expect(mockRecentPostsDiv.appendChild).not.toHaveBeenCalled();
+  });
+
+  it("should log an error and not populate if g_pages is empty", () => {
+    graphModule.g_pages = [];
+    graphModule.displayRecentPosts();
+    expect(console.error).toHaveBeenCalledWith("No pages available to display recent posts.");
+    expect(mockRecentPostsDiv.innerHTML).toBe(""); // Should remain empty or be cleared
+    expect(mockRecentPostsDiv.appendChild).not.toHaveBeenCalled();
+  });
+
+  it("should display and sort recent posts correctly (max 5)", () => {
+    graphModule.g_pages = mockPagesFull;
+    graphModule.displayRecentPosts();
+
+    expect(mockRecentPostsDiv.innerHTML).toBe(""); // Check if cleared
+    expect(mockRecentPostsDiv.appendChild).toHaveBeenCalledTimes(1);
+
+    const ulElement = mockRecentPostsDiv.appendChild.mock.calls[0][0];
+    expect(ulElement.tagName).toBe("UL");
+    expect(ulElement.children.length).toBe(5); // Max 5 posts
+
+    // Check order and content
+    const expectedOrder = ["/page6", "/page4", "/page5", "/page2", "/page3"]; // Titles based on dates
+    const expectedTitles = ["Page 6", "Page 4", "Page 5", "Page 2", "Page 3"];
+    for (let i = 0; i < 5; i++) {
+      const li = ulElement.children[i];
+      expect(li.tagName).toBe("LI");
+      const a = li.children[0];
+      expect(a.tagName).toBe("A");
+      expect(a.href).toContain(expectedOrder[i]);
+      expect(a.textContent).toBe(expectedTitles[i]);
+    }
+  });
+
+  it("should handle pages with invalid or missing last_modified dates", () => {
+    graphModule.g_pages = mockPagesWithInvalidDates;
+    graphModule.displayRecentPosts();
+
+    expect(mockRecentPostsDiv.appendChild).toHaveBeenCalledTimes(1);
+    const ulElement = mockRecentPostsDiv.appendChild.mock.calls[0][0];
+
+    // Expected order: valid dates first, then invalid/null/undefined ones.
+    // The exact order of invalid ones might depend on sort stability or specific handling.
+    // Here, we primarily care that valid ones are sorted and invalid ones don't break it.
+    
+    // We expect 2 valid posts to be displayed, then potentially the others if less than 5 total.
+    // The provided code sorts invalid dates to the end.
+    expect(ulElement.children.length).toBe(mockPagesWithInvalidDates.length); // All pages should be processed
+
+    const links = Array.from(ulElement.children).map(li => li.children[0].href);
+    const texts = Array.from(ulElement.children).map(li => li.children[0].textContent);
+
+    // Valid pages should be first and sorted
+    expect(texts[0]).toBe("Valid Page 1"); // 2023-01-05
+    expect(texts[1]).toBe("Valid Page 2"); // 2023-01-01
+    
+    // Check that the invalid date pages are present
+    expect(texts).toContain("Invalid Date Page 1");
+    expect(texts).toContain("Null Date Page");
+    expect(texts).toContain("Undefined Date Page");
+  });
+});
+
+
+describe("initializeGraph event listeners", () => {
+  let graphModule;
+  let mockRandomPage;
+  let mockDisplayRecentPosts; // To ensure it's called
+
+  beforeEach(async () => {
+    graphModule = await import("../../src/graph");
+
+    // Mock dependencies called by initializeGraph or by the functions we're testing
+    mockRandomPage = vi.fn();
+    mockDisplayRecentPosts = vi.fn();
+
+    // Replace the actual functions with mocks for this test suite
+    graphModule.randomPage = mockRandomPage;
+    graphModule.displayRecentPosts = mockDisplayRecentPosts; // Also mock this to check if initializeGraph calls it
+
+    // Mock get_link_info as it's called in initializeGraph
+    vi.mocked(shared.get_link_info).mockResolvedValue({
+      "/eulogy": { url: "/eulogy", title: "Eulogy", last_modified: "2023-01-01", outgoing_links: [], expanded: false, id: "/eulogy" }
+    });
+    
+    // Mock ForceGraph, center_on_node etc. as they are called in initializeGraph
+    graphModule.center_on_node = vi.fn(); // Mock center_on_node
+    global.ForceGraph = ForceGraphMock; // Use the existing mock for ForceGraph
+
+    // Setup DOM elements required by initializeGraph
+    document.body.innerHTML = `
+      <div id="graph"></div>
+      <div id="detail"></div>
+      <button id="center_control">Center</button>
+      <button id="goto_control">Go To</button>
+      <button id="collapse_control">Collapse</button>
+      <button id="random_control">Random Page</button> 
+      <div id="recent_posts"></div>
+    `;
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+    document.body.innerHTML = ""; // Clean up DOM
+  });
+
+  it("should call displayRecentPosts and set up random_control listener", async () => {
+    await graphModule.initializeGraph();
+
+    // Check if displayRecentPosts was called
+    expect(mockDisplayRecentPosts).toHaveBeenCalled();
+
+    // Check event listener for random_control
+    const randomButton = document.getElementById("random_control");
+    expect(randomButton).not.toBeNull();
+    
+    // Simulate a click
+    // Note: Direct click simulation like randomButton.click() works for native elements
+    // if the event listener was added via addEventListener.
+    // If jQuery or another framework was used internally, that might need specific trigger methods.
+    // The current implementation in src/graph.ts uses addEventListener.
+    randomButton.click();
+    expect(mockRandomPage).toHaveBeenCalled();
   });
 });

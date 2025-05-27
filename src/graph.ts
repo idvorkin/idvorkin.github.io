@@ -175,7 +175,7 @@ export function TextLabelNodePointerAreaPaint(node, color, ctx) {
 }
 
 // Variables used in the graph module
-let g_pages = [];
+let g_pages: any[] = []; // Make sure g_pages is properly typed if possible, using any[] for now.
 let g_last_detail_node = null;
 let Graph = null;
 
@@ -196,6 +196,67 @@ export function center_on_node(node) {
   Graph.centerAt(node.x, node.y, 500);
   Graph.zoom(8, 500);
   update_detail(node);
+}
+
+/**
+ * Navigates to a random page in the graph.
+ */
+export function randomPage() {
+  if (!g_pages || g_pages.length === 0) {
+    console.error("No pages available to select a random page.");
+    return;
+  }
+  const randomIndex = Math.floor(Math.random() * g_pages.length);
+  const randomNode = g_pages[randomIndex];
+  if (randomNode) {
+    center_on_node(randomNode);
+  } else {
+    console.error("Failed to select a random node.");
+  }
+}
+
+/**
+ * Displays the 5 most recent posts in the 'recent_posts' div.
+ */
+export function displayRecentPosts() {
+  if (!g_pages || g_pages.length === 0) {
+    console.error("No pages available to display recent posts.");
+    return;
+  }
+
+  // Sort pages by last_modified date in descending order.
+  // Handle cases where last_modified might be missing or invalid.
+  const sortedPages = [...g_pages].sort((a, b) => {
+    const dateA = a.last_modified ? new Date(a.last_modified).getTime() : 0;
+    const dateB = b.last_modified ? new Date(b.last_modified).getTime() : 0;
+    if (isNaN(dateA) && isNaN(dateB)) return 0;
+    if (isNaN(dateA)) return 1; // Place items with invalid dates at the end
+    if (isNaN(dateB)) return -1; // Place items with invalid dates at the end
+    return dateB - dateA; // Sort descending
+  });
+
+  const recentPosts = sortedPages.slice(0, 5);
+
+  const recentPostsDiv = document.getElementById("recent_posts");
+  if (!recentPostsDiv) {
+    console.error("The 'recent_posts' div was not found.");
+    return;
+  }
+
+  // Clear any existing content
+  recentPostsDiv.innerHTML = "";
+
+  const ul = document.createElement("ul");
+  recentPosts.forEach(post => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = post.url;
+    a.textContent = post.title || post.url; // Use title, fallback to URL
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+
+  recentPostsDiv.appendChild(ul);
 }
 
 /**
@@ -360,6 +421,9 @@ export async function initializeGraph() {
     console.log("Initial node not found, cannot center");
   }
 
+  // Display recent posts
+  displayRecentPosts();
+
   // set click handler for center control
   const centerControl = document.getElementById("center_control");
   if (centerControl) {
@@ -385,15 +449,28 @@ export async function initializeGraph() {
   if (collapseControl) {
     collapseControl.addEventListener("click", collapse_all_except_active);
   }
+
+  // set click handler for random_control
+  const randomControl = document.getElementById("random_control");
+  if (randomControl) {
+    randomControl.addEventListener("click", randomPage);
+  } else {
+    console.log("Random control element not found");
+  }
 }
 
 // Make initializeGraph available in the global scope if needed for testing
 declare global {
   interface Window {
     initializeGraph: () => Promise<void>;
+    randomPage?: () => void; // Optional, for testing or direct calls
+    displayRecentPosts?: () => void; // Optional, for testing or direct calls
   }
 }
 
 if (typeof window !== "undefined") {
   window.initializeGraph = initializeGraph;
+  // Optionally expose other functions if needed for debugging or testing directly from console
+  // window.randomPage = randomPage;
+  // window.displayRecentPosts = displayRecentPosts;
 }
