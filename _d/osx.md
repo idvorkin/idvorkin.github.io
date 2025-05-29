@@ -39,7 +39,7 @@ I LOVE Alfred. I can do all sorts of stuff
 - System Settings
 - Screen Shots
   - clipls - View Clipboard Images
-- Window Manager
+- Window Navigator
 - Thumbnail navigation (use fnav)
 
 #### 2nd Party - E.g., Igor wrote it.
