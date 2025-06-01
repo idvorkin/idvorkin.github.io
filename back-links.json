@@ -3512,7 +3512,7 @@
         },
         "/money": {
             "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
-            "doc_size": 41000,
+            "doc_size": 43000,
             "file_path": "_site/money.html",
             "incoming_links": [
                 "/d/time-off-2020-03",
@@ -3521,7 +3521,7 @@
                 "/parkinson",
                 "/retire"
             ],
-            "last_modified": "2025-03-02T08:38:35-08:00",
+            "last_modified": "2025-05-31T18:40:54.659013",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
                 "/parkinson"

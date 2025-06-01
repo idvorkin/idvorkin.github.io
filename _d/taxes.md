@@ -26,15 +26,19 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
   - [My high risk investments are already in non-taxable, should I sell them and swap them with my taxable account?](#my-high-risk-investments-are-already-in-non-taxable-should-i-sell-them-and-swap-them-with-my-taxable-account)
   - [IRAs vs 401Ks](#iras-vs-401ks)
+  - [RMDs Required Minimum Distributions](#rmds-required-minimum-distributions)
   - [IRA vs Roth IRA](#ira-vs-roth-ira)
   - [IRA and Roth IRA contribution limits](#ira-and-roth-ira-contribution-limits)
   - [Back door Roth](#back-door-roth)
   - [The pro-Rata rule](#the-pro-rata-rule)
   - [529s](#529s)
 - [Tracking](#tracking)
+  - [Daily Expenses](#daily-expenses)
+  - [Retirment Planning](#retirment-planning)
 - [Rates Taxes and Savings](#rates-taxes-and-savings)
   - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
   - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
+  - [Washington State Capital Gains Tax](#washington-state-capital-gains-tax)
   - [Cash positions and high yield savings](#cash-positions-and-high-yield-savings)
   - [No load index funds and ETFs](#no-load-index-funds-and-etfs)
   - [Unexpected expenses](#unexpected-expenses)
@@ -113,6 +117,10 @@ When retired, you need to get money out of your savings, which you can do by tak
 
 A 401k is a special IRA that is setup by your employee that has matching (good thing) but usually less choices of what you can invest in (bad thing). Otherwise, its a regular IRA.
 
+### RMDs Required Minimum Distributions
+
+Once you turn 73, the IRS requires you to start taking Required Minimum Distributions (RMDs) each year from traditional retirement accounts like IRAs and 401(k)s. Your RMD is calculated by dividing your account balance at the end of the previous year by a life expectancy factor from IRS tables. For example, at age 73, the divisor is 26.5, so a $2 million balance would result in a required withdrawal of about $75,472. Failing to take your RMD on time can lead to steep penalties, so it's essential to plan ahead and integrate RMDs into your overall retirement income strategy.
+
 ### IRA vs Roth IRA
 
 IRA you pay no tax on the way in, but you pay tax on the way out. By contrast with Roth you pay tax before making a contribution, but then pay no tax on the way out.
@@ -140,15 +148,21 @@ An education only after tax savings account. You put in money after tax, get tax
 
 ## Tracking
 
+### Daily Expenses
+
 Back in the day mint was great, but now, I use [Monarch Money](https://www.monarchmoney.com/). Took me a couple days to setup, and so far it's been great!
 
 I use:
 
 - Monarch Money
 - It can sync to my apple card
-- I use an [amazon spending importer](https://www.reddit.com/r/MonarchMoney/comments/18w9r22/python_script_to_import_amazon_purchases_as/) (to get me a breakdown of Amazon Spend)
+- Monarch now has an Amazon Importer
 
 I also pay all my credit cards and mortgages from a single account - so that's my source of truth to make sure I'm not missing major stuff (and boy I often am).
+
+### Retirment Planning
+
+Check out Boldin
 
 ## Rates Taxes and Savings
 
@@ -168,6 +182,19 @@ Below is tax rate by income in 2020.
 | -------- | ------------------------ |
 | 15%      | Upto 488K                |
 | 20%      | Above 488K               |
+
+### Washington State Capital Gains Tax
+
+Annoyingly for me, WA has a state capital gains tax:
+
+- The first $270,000 of annual long-term capital gains is exempt from the tax.
+- Gains between $270,001 and $1,270,000 are taxed at 7%.
+- Gains exceeding $1,270,000 are taxed at 9.9%, which includes a new 2.9% surtax on gains over $1 million above the exemption.
+
+This tax applies to individuals, including those with ownership interests in pass-through or disregarded entities that sell or exchange long-term capital assets. However, several types of assets are exempt from this tax, including:
+
+- Real estate
+- Retirement accounts
 
 ### Cash positions and high yield savings
 
