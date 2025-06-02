@@ -2559,7 +2559,9 @@
             "description": "Here’s a thought that’ll pushback your retirement: Would you rather work until 65 and retire comfortably, or take a full year off at 50, return to work, and retire at 67 with less money? If you’re like most people, you immediately think “that’s crazy - I can’t afford to lose a year’s income!” But what if I told you that gap year might be the best investment you’ll ever make?\n\n",
             "doc_size": 30000,
             "file_path": "_site/gap-year.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/retire"
+            ],
             "last_modified": "2025-06-02T07:07:22.043526",
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
@@ -4135,7 +4137,7 @@
                 "/42",
                 "/gap-year"
             ],
-            "last_modified": "2025-02-17T12:40:53-08:00",
+            "last_modified": "2025-06-02T07:20:33.947197",
             "markdown_path": "_d/retire.md",
             "outgoing_links": [
                 "/42",
@@ -4144,13 +4146,15 @@
                 "/dsat",
                 "/enemy",
                 "/eulogy",
+                "/gap-year",
                 "/hobby",
                 "/last-year",
                 "/manager-book",
                 "/money",
                 "/physical-health",
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
-                "/sustainable-work"
+                "/sustainable-work",
+                "/wlb"
             ],
             "redirect_url": "",
             "title": "Retirement: Stop Planning the Exit, Start Planning the Life",

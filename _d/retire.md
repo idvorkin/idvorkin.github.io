@@ -140,3 +140,7 @@ Just as every hero faces obstacles on their quest, the journey to a fulfilling r
 ### Parallels between retirement and being a solpreneur
 
 The themes of self-motivation, creating structure, and maintaining purpose that we've explored here overlap significantly with other life transitions. For a related perspective on building routines and finding motivation without external structure, check out Herman's post on [staying motivated as a solo creator](https://gist.github.com/idvorkin/0a7719e84f424c51d2ef9275a5b5c3ca#file-b_think-md).
+
+### 1 Year free trial: Gap year?
+
+{%include summarize-page.html src="/gap-year"%}
