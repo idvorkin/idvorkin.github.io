@@ -91,6 +91,14 @@ _Copied from someone smart_
 
 Rituals create a virtuous cycle: by treating something as important, it becomes important. By giving meaning to ordinary moments, those moments give meaning back to me. This transforms mundane activities into sources of energy, clarity, and purpose.
 
+Regardless of your preferences, practice makes permanent, and ritual will be created. This will either be by your conscious design, or by the resistance. You choose explicitly, or implicitly by not thinking about it. By designing your rituals, you can maximize your life, with minimal energy.
+
+Rituals is an instantiation of practice makes permanent.
+
+{%include summarize-page.html src="/new-skills"%}
+
+Rituals can be not mindless drudgery, they are the invisible software that runs. Be it optimal, or be mal-adaptive, it'll be running, so think it through and make it great.
+
 ### Anchors and Clips: Why Climbers Don’t Plummet to Their Death
 
 Climbers don’t just muscle their way up a rock face hoping for the best. They climb with a system designed to expect and absorb failure.
