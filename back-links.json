@@ -3510,7 +3510,7 @@
         },
         "/money": {
             "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
-            "doc_size": 43000,
+            "doc_size": 44000,
             "file_path": "_site/money.html",
             "incoming_links": [
                 "/d/time-off-2020-03",
@@ -3519,10 +3519,11 @@
                 "/parkinson",
                 "/retire"
             ],
-            "last_modified": "2025-05-31T18:40:54.659013",
+            "last_modified": "2025-06-02T07:05:20.848744",
             "markdown_path": "_d/taxes.md",
             "outgoing_links": [
-                "/parkinson"
+                "/parkinson",
+                "/partner-trouble"
             ],
             "redirect_url": "",
             "title": "Tax and Saving",
@@ -3786,7 +3787,9 @@
             "description": "There are two types of couples in the world. Those who fight, and those you don’t know.\n\n",
             "doc_size": 24000,
             "file_path": "_site/partner-trouble.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/money"
+            ],
             "last_modified": "2025-02-01T20:44:24-08:00",
             "markdown_path": "_d/partner-trouble.md",
             "outgoing_links": [

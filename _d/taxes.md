@@ -21,6 +21,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
 <!-- vim-markdown-toc-start -->
 
 - [Assumptions and Hannah](#assumptions-and-hannah)
+- [This one small trick can save half your net worth.](#this-one-small-trick-can-save-half-your-net-worth)
 - [IRAs Non-Taxable Saving Accounts](#iras-non-taxable-saving-accounts)
   - [Taxable income, and capital gains](#taxable-income-and-capital-gains)
   - [Should I hold my high risk/high return investments in my taxable or non-taxable accounts?](#should-i-hold-my-high-riskhigh-return-investments-in-my-taxable-or-non-taxable-accounts)
@@ -83,6 +84,16 @@ You're in the same boat as Hannah. A normal software engineer at big companies w
 - Ineligible for Roth deductions
 - Marginal tax rate of 35%
 - Long Term Capital Gains Rates of 15%
+
+## This one small trick can save half your net worth.
+
+Marriage counseling. Let's be honest, a divorce can cost you half your net worth or more. Studies show that divorced individuals experience an average wealth decline of 77% compared to those who remain married. Beyond the direct division of assets, there are additional costs:
+
+Investing in quality marriage counseling ($150-250 per session) is a bargain compared to these costs. Even an expensive counseling program at $5,000 represents just a fraction of potential divorce expenses. More importantly, counseling can help preserve not just your wealth but the relationship that matters to you.
+
+The financial return on investment for successful marriage counseling might be the highest of any financial decision you'll ever make. And unlike other financial strategies, this one likley has the highest impact on your wellbeing.
+
+{%include summarize-page.html src="/partner-trouble"%}
 
 ## IRAs Non-Taxable Saving Accounts
 
