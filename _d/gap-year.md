@@ -116,6 +116,8 @@ Work has a way of hijacking our relationships. We promise ourselves we'll "make 
 
 **Your marriage** gets a chance to rediscover what you're like when you're not stressed, tired, and constantly checking your phone. Many couples find they've become roommates who coordinate logistics rather than partners who enjoy each other's company.
 
+{% include alert.html content="One of the biggest risks to your financial security is a weak marriage. Avoiding a divorce, saves you 50-70% of your net worth, and likely drastically improves your quality of life" style="info" %}
+
 {% include summarize-page.html src="/partner-trouble" %}
 
 **Your kids** see a version of you they may never have met - the one who has time for spontaneous adventures, deep conversations, and being present without mental multitasking.
