@@ -2560,12 +2560,13 @@
             "doc_size": 30000,
             "file_path": "_site/gap-year.html",
             "incoming_links": [],
-            "last_modified": "2025-05-26T11:58:36.507274",
+            "last_modified": "2025-06-02T07:07:22.043526",
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/chapters",
                 "/decisive",
                 "/money",
+                "/partner-trouble",
                 "/physical-health",
                 "/resistance",
                 "/retire",
@@ -3788,6 +3789,7 @@
             "doc_size": 24000,
             "file_path": "_site/partner-trouble.html",
             "incoming_links": [
+                "/gap-year",
                 "/money"
             ],
             "last_modified": "2025-02-01T20:44:24-08:00",

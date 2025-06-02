@@ -116,6 +116,8 @@ Work has a way of hijacking our relationships. We promise ourselves we'll "make 
 
 **Your marriage** gets a chance to rediscover what you're like when you're not stressed, tired, and constantly checking your phone. Many couples find they've become roommates who coordinate logistics rather than partners who enjoy each other's company.
 
+{% include summarize-page.html src="/partner-trouble" %}
+
 **Your kids** see a version of you they may never have met - the one who has time for spontaneous adventures, deep conversations, and being present without mental multitasking.
 
 **Your friendships** can move beyond occasional happy hours and status updates to meaningful shared experiences and real conversations.
