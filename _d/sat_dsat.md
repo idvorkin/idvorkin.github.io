@@ -14,7 +14,7 @@ Not all SAT and DSAT are created equal nor do they need to be correlated. You kn
 
 Slightly out of place, but critical commentary: If you're working with awesome people on a shitty problem, you'll do well, and soon the problems will be fun. If you're working with shitty people on an awesome problem, there will be much suffering, and very quickly you'll be working with shitty people on a shitty problem.
 
-<!--- Gold need to find something about the motivation ferry to sprinkle in.
+<!--- Good, need to find something about the motivation ferry to sprinkle in.
 ### The motivation ferry
 
 
@@ -25,7 +25,7 @@ There’s no motivation fairy who will sprinkle magic dust on you. Motivation is
 
 <!--
 
-This is a very powerful paragrah. If it was focused on understanding SAT and DSAT, vs work and life, it would pull up higher, which I like.
+This is a very powerful paragraph. If it was focused on understanding SAT and DSAT, vs work and life, it would pull up higher, which I like.
 
 But then the essay feels more about knowing yourself, vs improving your SAT and DSAT, which is probably a better essay, but maybe it can be a transition into this essay?
 
@@ -35,7 +35,7 @@ For these two orthogonal yet related vectors, the most important thing is to kno
 
 <!--- Not sure where to stick this
 
-Embrace the greatest parts of your work , mull over them, whether its the bike ride in the park, the water cooler chat with a fellow techie, and stop dwelling on the fact that you may not have given your best for an architecture design review, there will always be another one; and if there's anything in life you can learn to get better in, it's work.
+Embrace the greatest parts of your work, mull over them, whether it's the bike ride in the park, the water cooler chat with a fellow techie, and stop dwelling on the fact that you may not have given your best for an architecture design review, there will always be another one; and if there's anything in life you can learn to get better in, it's work.
 
 -->
 
@@ -87,11 +87,13 @@ As written, it's all about SAT, not SAT and DSAT
 
 -->
 
-[I wish I spent more time at work, is never uttered on a deathbed](/wlb). You have many [roles other than work](/eulogy), and balancing between them is the name of the game. While high work SAT is great for your career, it makes stopping work hard.
+"I wish I spent more time at work" is never uttered on a [deathbed](/wlb). You have many [roles other than work](/eulogy), and balancing between them is the name of the game. While high work SAT is great for your career, it makes stopping work hard.
 
 At the same time, where you work, what you work on, and how challenging it is, when going well, like a giant snowball gathering speed down a hill, is infectious. That SAT will bring energy and resilience to the other roles in your life.
 
 While it's easy to stop working when you have low work SAT, that low SAT can be parasitic. It can lower your overall willpower and suck energy from the other roles in your life.
+
+{% include summarize-page.html src="/mind-at-work" %}
 
 <!---
 I kind of like this paragraph, but not sure how much it adds.
@@ -130,7 +132,7 @@ There are two changes you'd like to make: increase your SAT, and decrease your D
 
 ### Making the perfect job: Raising SAT
 
-First, make nothing worse, you need to
+First, to make nothing worse, you need to:
 
 **Ring-fence your low SAT. Don't let it:**
 
@@ -161,7 +163,7 @@ Sometimes the right thing to do here is a re-roll.
 
 ### Re-rolling: Changing teams or companies
 
-When you have a structural problem and you can't influence the changes you need (see [The Dip](/dip)), the right thing to do may be finding a new team or company.
+When you have a structural problem and you can't influence the changes you need (see [The Dip](/the-dip)), the right thing to do may be finding a new team or company.
 
 While easy to think, it's very easy to misassess the situation. The grass is always greener on the other side of the fence, and sometimes the issue you think is your environment may be you. Before you go down this path, skim [Decisive](/decisive) and listen to [Switching Jobs or Staying Where You Are](https://heathbrothers.com/member-content/decisive-for-job-decisions/decisive-for-job-decisions-2/). It takes 30 minutes, but given how hard job changes are, I strongly recommend it.
 
@@ -180,10 +182,25 @@ If you're still committed, check out:
 
 ## DSAT Deep Dive
 
+Still fleshing out, but here are some relevant breadcrumbs ...
+
 ### Conflict
+
+{% include summarize-page.html src="/gty" %}
+{% include summarize-page.html src="/7h-c4" %}
+{% include summarize-page.html src="/7h-c5" %}
 
 ### Insufficient Resources
 
+{% include summarize-page.html src="/overload" %}
+
 ### Insecurity
 
+{% include summarize-page.html src="/insecure" %}
+{% include summarize-page.html src="/shame" %}
+
 ### WLB
+
+{% include summarize-page.html src="/sustainable-work" %}
+
+{% include summarize-page.html src="/mind-at-work" %}
