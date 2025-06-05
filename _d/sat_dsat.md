@@ -2,12 +2,13 @@
 layout: post
 title: "Satisfaction is not the lack of dissatisfaction"
 comments: true
-permalink: /dsat
+permalink: /work-satisfaction
 redirect_from:
   - /sat
+  - /dsat
 ---
 
-Love your work, and you'll never work a day in your life. Sounds great, but work ain't no Caribbean cruise - one you pay for, and the other pays you. Work should be satisfying (SAT). You should be enjoying solving hard problems, getting opportunities to talk with like minded people, and even being forced to stretch and grow. Work should also cause you dissatisfaction (DSAT). Some days your boss will piss you off, your co-workers will misunderstand you, and you will be forced to do something you don't want to. Satisfaction is not a lack of dissatisfaction they are orthogonal experiences. DSAT is what makes you sleep poorly, and SAT is what makes you set your alarm early Monday morning so you can get back to your favorite project, and to hang out with your awesome team. <!-- Need to make this wittier --> By understand our SAT and DSAT, we can change them, and transform hours slogging into time at the fantasy cruise bar.
+Love your work, and you'll never work a day in your life. Sounds great, but work ain't no Caribbean cruise - one you pay for, and the other pays you. Work should be satisfying (SAT). You should be enjoying solving hard problems, getting opportunities to talk with like-minded people, and even being forced to stretch and grow. Work should also cause you dissatisfaction (DSAT). Some days your boss will piss you off, your co-workers will misunderstand you, and you will be forced to do something you don't want to. Satisfaction is not a lack of dissatisfaction; they are orthogonal experiences. DSAT is what makes you sleep poorly, and SAT is what makes you set your alarm early Monday morning so you can get back to your favorite project, and to hang out with your awesome team. <!-- Need to make this wittier --> By understanding our SAT and DSAT, we can change them, and transform hours slogging into time at the fantasy cruise bar.
 
 Not all SAT and DSAT are created equal nor do they need to be correlated. You know you've got DSAT when you're dreading going into work on Monday all weekend, feeling relieved your workday is over at 5pm, and being in a generally bad mood when talking to friends and family, or being unable to sleep at night. You know you have SAT when you wake up excited to work on a hard or interesting problem, a positive energy comes naturally when speaking with your team and cross-functional partners (for the most part), and not feeling like you need to zone out with 4 hours of TikTok to block out work.
 
@@ -28,7 +29,7 @@ This is a very powerful paragrah. If it was focused on understanding SAT and DSA
 
 But then the essay feels more about knowing yourself, vs improving your SAT and DSAT, which is probably a better essay, but maybe it can be a transition into this essay?
 
-For these two orthogonal yet related vectors, the most important thing is to know what makes you tick. Can you pull out a piece of paper and write down what you want out of your work vs what you want out of life? Is it clear enough you can hand it to your bestie and they can see what "isn't quite right"? If you cant, good news, you're human. This is a journey and knowing yourself is much harder than getting promoted to a senior engineer.
+For these two orthogonal yet related vectors, the most important thing is to know what makes you tick. Can you pull out a piece of paper and write down what you want out of your work vs. what you want out of life? Is it clear enough you can hand it to your bestie and they can see what "isn't quite right"? If you can't, good news, you're human. This is a journey and knowing yourself is much harder than getting promoted to a senior engineer.
 
 -->
 
@@ -43,26 +44,26 @@ Embrace the greatest parts of your work , mull over them, whether its the bike r
 <!-- vim-markdown-toc-start -->
 
 - [General](#general)
-    - [What's keeping you awake?](#whats-keeping-you-awake)
-    - [What about the time you're not working?](#what-about-the-time-youre-not-working)
+  - [What's keeping you awake?](#whats-keeping-you-awake)
+  - [What about the time you're not working?](#what-about-the-time-youre-not-working)
 - [The situation's a 2x2 matrix](#the-situations-a-2x2-matrix)
-    - [High SAT Low DSAT](#high-sat-low-dsat)
-    - [High DSAT, Low SAT](#high-dsat-low-sat)
-    - [High SAT High DSAT](#high-sat-high-dsat)
-    - [Low DSAT, Low SAT](#low-dsat-low-sat)
+  - [High SAT Low DSAT](#high-sat-low-dsat)
+  - [High DSAT, Low SAT](#high-dsat-low-sat)
+  - [High SAT High DSAT](#high-sat-high-dsat)
+  - [Low DSAT, Low SAT](#low-dsat-low-sat)
 - [Influencing change](#influencing-change)
-    - [Making the perfect job: Raising SAT](#making-the-perfect-job-raising-sat)
-    - [Sleeping well at night: Lowering DSAT](#sleeping-well-at-night-lowering-dsat)
-    - [Re-rolling: Changing teams or companies](#re-rolling-changing-teams-or-companies)
+  - [Making the perfect job: Raising SAT](#making-the-perfect-job-raising-sat)
+  - [Sleeping well at night: Lowering DSAT](#sleeping-well-at-night-lowering-dsat)
+  - [Re-rolling: Changing teams or companies](#re-rolling-changing-teams-or-companies)
 - [Satisfaction - AMP](#satisfaction---amp)
-    - [Autonomy](#autonomy)
-    - [Mastery](#mastery)
-    - [Purpose](#purpose)
+  - [Autonomy](#autonomy)
+  - [Mastery](#mastery)
+  - [Purpose](#purpose)
 - [DSAT Deep Dive](#dsat-deep-dive)
-    - [Conflict](#conflict)
-    - [Insufficient Resources](#insufficient-resources)
-    - [Insecurity](#insecurity)
-    - [WLB](#wlb)
+  - [Conflict](#conflict)
+  - [Insufficient Resources](#insufficient-resources)
+  - [Insecurity](#insecurity)
+  - [WLB](#wlb)
 
 <!-- vim-markdown-toc-end -->
 
