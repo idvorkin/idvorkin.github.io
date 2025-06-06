@@ -3,6 +3,7 @@ layout: post
 title: "Satisfaction is not the lack of dissatisfaction"
 comments: true
 permalink: /work-satisfaction
+mermaid: true
 redirect_from:
   - /sat
   - /dsat
@@ -101,12 +102,62 @@ I kind of like this paragraph, but not sure how much it adds.
 
 We all want to make the most of our lives. While not every breathing moment should be about work, what's the point if what you do the majority of the time is mind-numbing or makes you grind a millimeter a month off your teeth.
 
-## The situation's a 2x2 matrix
+## Work Satisfaction Matrix
 
-| DSAT/SAT  | SAT High                                                                                                                                                                                                                                                                                                                                                                                                         | SAT Low                                                                                                                                                                                   |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DSAT High | **High SAT and High DSAT**<br><br>You are oscillating between stressed as hell and amazing. This situation tends to be unsustainable.<br><br>You need to understand if the DSAT is structural or temporal, e.g., just launched then everything calms down, or you're working with crappy people. If it's structural, there's an excellent chance the DSAT will grow into resentment, and you'll need to re-roll. | **Low SAT and High DSAT**<br><br>You are in a situation requiring urgent change.<br><br>You need to read [Decisive](/decide), [The Dip](/the-dip), and if required, re-roll.              |
-| DSAT Low  | **High SAT and Low DSAT**<br><br>You are in the ideal situation - you've arrived. But this will likely pass.<br><br>You need to learn what's working so you can replicate it later.                                                                                                                                                                                                                              | **Low SAT and Low DSAT**<br><br>You are in the hardest case - you've got a great gig, but something is missing.<br><br>You need to analyze what's lacking and make targeted improvements. |
+```mermaid
+%%{init: {'theme':'forest', 'themeVariables': { 'quadrant1Fill': '#fff2e6', 'quadrant2Fill': '#ffeeee', 'quadrant3Fill': '#fff9e6', 'quadrant4Fill': '#eef7ee', 'quadrant1TextFill': '#000000', 'quadrant2TextFill': '#000000', 'quadrant3TextFill': '#000000', 'quadrant4TextFill': '#000000'}}}%%
+quadrantChart
+    x-axis Low SAT --> High SAT
+    y-axis Low DSAT --> High DSAT
+    quadrant-1 Stressed & Amazing
+    quadrant-2 Time for Change
+    quadrant-3 Analysis Required
+    quadrant-4 You've Arrived
+
+    Startup Launch: [0.8, 0.9]
+    Product Crunch: [0.7, 0.8]
+    Promotion Pressure: [0.9, 0.7]
+    Team Conflict: [0.75, 0.85]
+
+    Toxic Boss: [0.2, 0.8]
+    Burnout Mode: [0.1, 0.9]
+    Skills Mismatch: [0.3, 0.7]
+    Company Dysfunction: [0.15, 0.75]
+
+    Comfortable Routine: [0.3, 0.2]
+    Stable but Bored: [0.2, 0.3]
+    Good Team Meh Work: [0.35, 0.15]
+    Golden Handcuffs: [0.25, 0.25]
+
+    Dream Job: [0.9, 0.1]
+    Flow State Daily: [0.85, 0.05]
+    Perfect Team Fit: [0.8, 0.2]
+    Growth Opportunity: [0.95, 0.15]
+```
+
+### High SAT and Low DSAT - You've Arrived
+
+You are in the ideal situation - you've arrived. But this will likely pass.
+
+You need to learn what's working so you can replicate it later.
+
+### Low SAT and Low DSAT - Analysis Required
+
+You are in the hardest case - you've got a great gig, but something is missing.
+
+You need to analyze what's lacking and make targeted improvements.
+
+### Low SAT and High DSAT - Time for Change
+
+You are in a situation requiring urgent change.
+
+You need to read [Decisive](/decide), [The Dip](/the-dip), and if required, re-roll.
+
+### High SAT and High DSAT - Stressed & Amazing
+
+You are oscillating between stressed as hell and amazing. This situation tends to be unsustainable.
+
+You need to understand if the DSAT is structural or temporal, e.g., just launched then everything calms down, or you're working with crappy people. If it's structural, there's an excellent chance the DSAT will grow into resentment, and you'll need to re-roll.
 
 ## Influencing change
 
