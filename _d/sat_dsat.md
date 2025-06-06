@@ -12,7 +12,7 @@ Love your work, and you'll never work a day in your life. Sounds great, but work
 
 Not all SAT and DSAT are created equal nor do they need to be correlated. You know you've got DSAT when you're dreading going into work on Monday all weekend, feeling relieved your workday is over at 5pm, and being in a generally bad mood when talking to friends and family, or being unable to sleep at night. You know you have SAT when you wake up excited to work on a hard or interesting problem, a positive energy comes naturally when speaking with your team and cross-functional partners (for the most part), and not feeling like you need to zone out with 4 hours of TikTok to block out work.
 
-Slightly out of place, but critical commentary: If you're working with awesome people on a shitty problem, you'll do well, and soon the problems will be fun. If you're working with shitty people on an awesome problem, there will be much suffering, and very quickly you'll be working with shitty people on a shitty problem.
+{% include alert.html style="success" content="If you're working with awesome people on a shitty problem, you'll do well, and soon the problems will be fun. If you're working with shitty people on an awesome problem, there will be much suffering, and very quickly you'll be working with shitty people on a shitty problem." %}
 
 <!--- Good, need to find something about the motivation ferry to sprinkle in.
 ### The motivation ferry
@@ -103,28 +103,10 @@ We all want to make the most of our lives. While not every breathing moment shou
 
 ## The situation's a 2x2 matrix
 
-| DSAT/SAT  | SAT High                         | SAT Low            |
-| --------- | -------------------------------- | ------------------ |
-| DSAT High | Analysis Required                | Time for a change  |
-| DSAT Low  | Unicorn, stay as long as you can | Analysis Required! |
-
-### High SAT Low DSAT
-
-You've arrived. But this will likely pass. Learn what's working so you can replicate it later.
-
-### High DSAT, Low SAT
-
-Urgent Change Required. Read [Decisive](/decide), [The Dip](/the-dip), and if required, re-roll.
-
-### High SAT High DSAT
-
-This often oscillates between stressed as hell and amazing. These situations tend to be unsustainable.
-
-Need to understand if the DSAT is structural or temporal, e.g., just launched then everything calms down, or you're working with crappy people. If it's structural, there's an excellent chance the DSAT will grow into resentment, and you'll need to re-roll.
-
-### Low DSAT, Low SAT
-
-The hardest case. You've got a great gig, but something is missing.
+| DSAT/SAT  | SAT High                                                                                                                                                                                                                                                                                                                                                                                                         | SAT Low                                                                                                                                                                                   |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DSAT High | **High SAT and High DSAT**<br><br>You are oscillating between stressed as hell and amazing. This situation tends to be unsustainable.<br><br>You need to understand if the DSAT is structural or temporal, e.g., just launched then everything calms down, or you're working with crappy people. If it's structural, there's an excellent chance the DSAT will grow into resentment, and you'll need to re-roll. | **Low SAT and High DSAT**<br><br>You are in a situation requiring urgent change.<br><br>You need to read [Decisive](/decide), [The Dip](/the-dip), and if required, re-roll.              |
+| DSAT Low  | **High SAT and Low DSAT**<br><br>You are in the ideal situation - you've arrived. But this will likely pass.<br><br>You need to learn what's working so you can replicate it later.                                                                                                                                                                                                                              | **Low SAT and Low DSAT**<br><br>You are in the hardest case - you've got a great gig, but something is missing.<br><br>You need to analyze what's lacking and make targeted improvements. |
 
 ## Influencing change
 
@@ -174,11 +156,9 @@ If you're still committed, check out:
 
 ## Satisfaction - AMP
 
-### Autonomy
+For a deeper dive into the psychology of motivation, see [Drive by Daniel Pink](/manager-book#l-motivation).
 
-### Mastery
-
-### Purpose
+**TODO**: This section is in progress.
 
 ## DSAT Deep Dive
 
