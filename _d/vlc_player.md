@@ -146,4 +146,13 @@ We watch a tonne of videos now, so it's good to be efficient with them. Go learn
 
 _Note: These keybindings are for IINA Player. Key combinations may vary depending on your OS and IINA version._ 🎥
 
+# MPV
+
+mpv is a cli tool that lets you using cli with keybindings, i even added custom chapters commands
+
+- c - show chapter list - i added myself [mpv config](https://github.com/idvorkin/settings/blob/0fc587aa33e5a92bcbca409e71447bc831fa7e3d/config/mpv/input.conf?plain=1#l8)
+- !/@ - next/prev chapter
+- [ / ] - decrease/increase playback speed
+- { / } - halve/double playback speed
+
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/vlc_player.md)_
