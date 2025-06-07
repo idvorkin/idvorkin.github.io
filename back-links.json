@@ -735,6 +735,7 @@
             "file_path": "_site/ai-testing.html",
             "incoming_links": [
                 "/ai",
+                "/chop",
                 "/d/time-off-2024-04",
                 "/genai-talk",
                 "/ml",
@@ -1241,7 +1242,7 @@
         },
         "/chop": {
             "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
-            "doc_size": 48000,
+            "doc_size": 51000,
             "file_path": "_site/chop.html",
             "incoming_links": [
                 "/40yo",
@@ -1254,11 +1255,13 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-05-19T09:09:26-07:00",
+            "last_modified": "2025-06-07T08:40:10.028777",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
+                "/ai-testing",
                 "/humans-are-underrated",
                 "/process-journal",
+                "/testing",
                 "/vibe"
             ],
             "redirect_url": "",
@@ -4969,6 +4972,7 @@
             "doc_size": 26000,
             "file_path": "_site/testing.html",
             "incoming_links": [
+                "/chop",
                 "/design",
                 "/manager-book"
             ],

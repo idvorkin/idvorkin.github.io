@@ -40,6 +40,11 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Integration Tips](#integration-tips)
   - [Security Considerations](#security-considerations)
   - [DRY CHOP: Your AI's Cookbook](#dry-chop-your-ais-cookbook)
+- [Congrats you've been promoted: AI Squad Manager](#congrats-youve-been-promoted-ai-squad-manager)
+  - [How to be fast when AI is slow](#how-to-be-fast-when-ai-is-slow)
+  - [Interventions per hour](#interventions-per-hour)
+  - [Don't be the junior developer](#dont-be-the-junior-developer)
+  - [What matters most is testing/evals](#what-matters-most-is-testingevals)
 - [Igor's Predictions, Insights, and Mental Models](#igors-predictions-insights-and-mental-models)
   - [Artisanal Hand Crafted Commits](#artisanal-hand-crafted-commits)
   - [Bespoke tools and optimisim](#bespoke-tools-and-optimisim)
@@ -51,7 +56,9 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
   - [Prioritizing Skills](#prioritizing-skills)
   - [What will take AI longer to "Solve"](#what-will-take-ai-longer-to-solve)
   - [From Cheap Computing to Cheap Intelligence](#from-cheap-computing-to-cheap-intelligence)
-    <!-- vim-markdown-toc-end -->
+
+<!-- vim-markdown-toc-end -->
+
     <!-- prettier-ignore-end -->
 
 ## What is CHOP?
@@ -413,8 +420,8 @@ remote: Resolve the following violations before pushing again
 Think of your AI assistant as an eager junior developer who can learn and retain knowledge - but only if you teach them properly. Instead of repeating the same instructions in every prompt, establish a single source of truth through your CONVENTIONS.md file. This approach not only saves time but ensures consistency across all AI-generated code. The key is treating conventions as a living document that both teaches the AI and evolves with your project. You can see [an example of this evolution here](https://gist.github.com/idvorkin/6f506f47bf6c4c57a1ff5a2d24e345dd#conventionsmd).
 
 > **Note**: Cursor IDE implements this concept using a `.cursorrules` file that points to your CONVENTIONS.md. Simply create a `.cursorrules` file in your project root with the content `CONVENTIONS.md` to enable this feature ([see example](https://github.com/idvorkin/idvorkin.github.io/commit/332e43c7e211640f55da9be858164e6aa003ab9e)).
-
-{% include alert.html content="For a more structured approach to managing Cursor rules, check out cursor-auto-rules-agile-workflow - a tool that provides automated rule generation and standardized documentation formats." style="info" %}
+> **2025-06-07: Now I have my own [conventions repo](https://github.com/idvorkin/chop-conventions) that i link in and reference:**
+> {% include alert.html content="For a more structured approach to managing Cursor rules, check out cursor-auto-rules-agile-workflow - a tool that provides automated rule generation and standardized documentation formats." style="info" %}
 
 Check out the [cursor-auto-rules-agile-workflow](https://github.com/bmadcode/cursor-auto-rules-agile-workflow) project.
 
@@ -436,6 +443,33 @@ Here's a recent example of this approach in action:
    - AI helped establish clear permalink change process
    - Added guidance on maintaining compatibility
    - Standardized use of redirect_from in front matter
+
+## Congrats you've been promoted: AI Squad Manager
+
+### How to be fast when AI is slow
+
+One you crack the interventions per hour, and that's coming more and more, your next issue is how you task swap between projects. Trying to figure out best practices here. I predict soruce control and multi windows are part of the solution
+
+### Interventions per hour
+
+On Tesla self driving the thing we talk about is "% drives with interventions". This is what really matters, how often you have to take over. Your job is to figure out how to reduce your interventions. Most things apply here.
+
+### Don't be the junior developer
+
+If you notice AI writing the code, and yourself doing the manual testing - you've outsourced the junior developer role, but hired yourself as the junior tester. Make the AI the junior tester too.
+
+### What matters most is testing/evals
+
+Far more important than the code is how you know the code is doing what you want. Software engineers have been working on that for a while, we call it testing.
+
+You need to figure out how to make sure your code continues to be correct over time.
+
+This is of course extra challenging because the code is probabilistic and "has vibes" all over it. This is an area I'm super interested in.
+
+NOTE: Code and essentially Vibed code is very hard to keep working as it's often correct by evolution not by deliberate design. So when you make out of contex changes, stuff breaks (I had an identical experience when I worked on the windows network stack in 2003 :) )
+
+{%include summarize-page.html src="/ai-testing"%}
+{%include summarize-page.html src="/testing"%}
 
 ## Igor's Predictions, Insights, and Mental Models
 
