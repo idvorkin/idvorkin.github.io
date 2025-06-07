@@ -23,6 +23,13 @@ Thus, I'm working hard to reduce symptoms of the disease -- in fact, I'm incredi
 
 Future posts will document my journey, and the [activities](/emotional-health) that support this.
 
+### It's not always concious, sometimes it's just phychic weight
+
+Sometimes when you find life less fun and you can't tell why it might be body at home, mind at work, subconcious edition
+
+{%include summarize-page.html src="/dsat" %}
+{%include summarize-page.html src="/psychic-weight" %}
+
 ### Thinking about work at home is a habit
 
 **Whoa, someone told me something that blew my mind** Thinking about work at home is just a habit! That means a few things, 1/ there was a time this brought me some value (need to introspect to see if it still does), 2/ I need to apply all my understanding/tools of habits.

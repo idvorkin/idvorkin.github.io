@@ -1635,7 +1635,6 @@
                 "/idle",
                 "/life-as-business",
                 "/manager-book",
-                "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
                 "/productive",
@@ -3373,7 +3372,7 @@
         },
         "/mind-at-work": {
             "description": "I have a problem, an addiction, an addiction so detrimental to quality of life, it should be described as a disease. This disease is not being present. There are many symptoms of the disease, but today I’m going to talk about my most frequent symptoms, my body at home, but my mind at work.\n\n",
-            "doc_size": 18000,
+            "doc_size": 19000,
             "file_path": "_site/mind-at-work.html",
             "incoming_links": [
                 "/addiction",
@@ -3381,13 +3380,15 @@
                 "/timeoff",
                 "/work-satisfaction"
             ],
-            "last_modified": "2024-06-15T08:58:21-07:00",
+            "last_modified": "2025-06-07T08:40:27.091877",
             "markdown_path": "_d/2016-2-10-body-at-home-mind-at-work.md",
             "outgoing_links": [
                 "/addiction",
-                "/d/habits",
+                "/dsat",
                 "/emotional-health",
-                "/timeoff"
+                "/habits",
+                "/psychic-weight",
+                "/time-off"
             ],
             "redirect_url": "",
             "title": "Body at home, mind at work",
@@ -3968,6 +3969,7 @@
             "incoming_links": [
                 "/depression",
                 "/gtd",
+                "/mind-at-work",
                 "/process-journal"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -5051,7 +5053,6 @@
                 "/energy-abundance",
                 "/gap-year",
                 "/life-as-business",
-                "/mind-at-work",
                 "/parkinson",
                 "/time-off-2024-08"
             ],
