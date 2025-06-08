@@ -33,6 +33,8 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Back door Roth](#back-door-roth)
   - [The pro-Rata rule](#the-pro-rata-rule)
   - [529s](#529s)
+- [Weird things](#weird-things)
+  - [Exchange Fund](#exchange-fund)
 - [Tracking](#tracking)
   - [Daily Expenses](#daily-expenses)
   - [Retirment Planning](#retirment-planning)
@@ -156,6 +158,16 @@ Even though you are using after tax dollars to transfer money to the Roth IRA, y
 ### 529s
 
 An education only after tax savings account. You put in money after tax, get tax free growth, and can use distributions for your kid or grand kids education.
+
+## Weird things
+
+### Exchange Fund
+
+- Min Investment: $1 million in a single stock
+- Min Hold Time: 7 years to avoid triggering taxes
+- Goal: Diversify a concentrated stock position without immediate capital gains
+- At 7 Years: You get a basket of stocks; your original cost basis is spread across them
+- When You Sell: You’ll owe capital gains tax, but you control the timing — taxes are deferred, not avoided
 
 ## Tracking
 
