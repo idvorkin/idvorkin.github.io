@@ -33,13 +33,17 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [The Dragons: Why We Don't Take Gap Years](#the-dragons-why-we-dont-take-gap-years)
 - [The Test: How to Know If You're Ready](#the-test-how-to-know-if-youre-ready)
 - [Making the Decision: A Framework for the Gap Year Choice](#making-the-decision-a-framework-for-the-gap-year-choice)
-- [What would Igor do on a gap year](#what-would-igor-do-on-a-gap-year)
+- [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
   - [Igor's Dragons](#igors-dragons)
     - [Financial Security](#financial-security)
     - [Vegetation, Mental Health](#vegetation-mental-health)
     - [Identity Health](#identity-health)
   - [Gap Year Triggers](#gap-year-triggers)
-  - [Reframe: PhD in AI, Content Creation, and MRR](#reframe-phd-in-ai-content-creation-and-mrr)
+    - [Financial Security](#financial-security-1)
+    - [Vegetation, Mental Health](#vegetation-mental-health-1)
+    - [Identity Health](#identity-health-1)
+  - [Slay the dragon: Gap Year Triggers](#slay-the-dragon-gap-year-triggers)
+  - [Reframe: Gap year? Maybe, PhD in AI, Content Creation, and MRR](#reframe-gap-year-maybe-phd-in-ai-content-creation-and-mrr)
     - [AI Goals](#ai-goals)
     - [Content Creation](#content-creation)
     - [MRR](#mrr)
@@ -345,12 +349,10 @@ Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igo
 
 Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igor to run on Automatic
 
-- Money: Net worth exceeds "X" Million.
-
+- **Money:** Net worth exceeds "X" Million.
   - See my buddy the "Financial Security Dragon"
   - Beyond this the risk is negligible
-
-- Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
+- **Date:** XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
   - See my buddy the "Financial Security Dragon"
   - What is the minimum value?
 
