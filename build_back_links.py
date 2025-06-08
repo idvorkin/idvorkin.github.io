@@ -1027,7 +1027,7 @@ def delta(
         typer.Option(
             help="Minimum time difference in minutes to update last_modified field"
         ),
-    ] = 5,
+    ] = 60,
     dry_run: Annotated[
         bool, typer.Option(help="Show what would be updated without making changes")
     ] = False,
