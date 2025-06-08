@@ -11,7 +11,7 @@ tags:
   - how igor ticks
 ---
 
-Here's a thought that'll pushback your retirement: Would you rather work until 65 and retire comfortably, or take a full year off at 50, return to work, and retire at 67 with less money? If you're like most people, you immediately think "that's crazy - I can't afford to lose a year's income!" But what if I told you that gap year might be the best investment you'll ever make?
+Here's a thought that'll push back your retirement: Would you rather work until 65 and retire comfortably, or take a full year off at 50, return to work, and retire at 67 with less money? If you're like most people, you immediately think "that's crazy - I can't afford to lose a year's income!" But what if I told you that gap year might be the best investment you'll ever make?
 
 We've been conditioned to think of career breaks as financial suicide, but this binary thinking misses something crucial: the compound value of time, energy, and perspective when you're still in your prime.
 
@@ -127,7 +127,7 @@ Work has a way of hijacking our relationships. We promise ourselves we'll "make 
 
 **Your marriage** gets a chance to rediscover what you're like when you're not stressed, tired, and constantly checking your phone. Many couples find they've become roommates who coordinate logistics rather than partners who enjoy each other's company.
 
-{% include alert.html content="One of the biggest risks to your financial security is a weak marriage. Avoiding a divorce, saves you 50-70% of your net worth, and likely drastically improves your quality of life" style="info" %}
+{% include alert.html content="One of the biggest risks to your financial security is a weak marriage. Avoiding a divorce saves you 50-70% of your net worth, and likely drastically improves your quality of life" style="info" %}
 
 {% include summarize-page.html src="/partner-trouble" %}
 
@@ -271,7 +271,7 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
 
   - Job market is MUCH worse than it was 4 years ago.
   - Lots of experienced folks in the market
-  - If applying to job I'm over qualified - they'll be like you'll leave as soon as you can. Ugh.
+  - If applying to a job I'm overqualified for - they'll be like you'll leave as soon as you can. Ugh.
   - Even though I have a network, doesn't matter if companies not hiring.
   - **But** I've got 25 years+ of experience at top tech companies on a ton of various projects
   - **But** I'll be heavily invested in professional development, so that makes me much more valuable.
@@ -282,21 +282,21 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
 
   - This is very probable.
   - **But** Meta lets you have a "short interview loop" if you boomerang in a year
-  - **But** I've always said if you won't take a job for a paycut, you shouldn't take it. I guess that could be cuz the job is less fun, or cuz it's the highest paid job you'll take :)
-  - **So** My retirement is not delayed by 1.5 year, It's delayed by 'N' years, that's OK, the year now is much more valuable
+  - **But** I've always said if you won't take a job for a pay cut, you shouldn't take it. I guess that could be cuz the job is less fun, or cuz it's the highest paid job you'll take :)
+  - **So** My retirement is not delayed by 1.5 years, It's delayed by 'N' years, that's OK, the year now is much more valuable
 
 - What if I'm wrong about my expenses?
-  - **So** Measure twice cut once :) And review with others
+  - **So** Measure twice, cut once :) And review with others
   - Monarch for expenses, Bodin for long term projections
   - Include non-obvious things like health insurance (40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over 270K) and major house repairs.
 
 #### Vegetation, Mental Health
 
-- What if I start vegetating, and death spiral into depression
+- What if I start vegetating and spiral into depression
 
 #### Identity Health
 
-- Am I really setting a good example for kids?
+- Am I really setting a good example for my kids?
 
 ### Slay the dragon: Gap Year Triggers
 
@@ -325,6 +325,6 @@ Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
 #### MRR
 
-Monthly recurring revenue? That would be pretty cool. Certianly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
+Monthly recurring revenue? That would be pretty cool. Certainly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
 
 ### Habit and Relationship Recharge
