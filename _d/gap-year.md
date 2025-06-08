@@ -276,7 +276,7 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
   - **But** I've got 25 years+ of experience at top tech companies on a ton of various projects
   - **But** I'll be heavily invested in professional development, so that makes me much more valuable.
   - **But** I'll be doing content production, so people can see my skills.
-  - **So** Worst case, takes me 2 years to get a job, so hold 2 \* "Total Annual Expenses"
+  - **So** Worst case: 1 year planned gap + 1 whole year to get a job = 2 years away from income, so hold 2 \* "Total Annual Expenses"
 
 - What if I end up with a lower income when I return (Meta pays at 90th+ percentile)?
 
@@ -286,9 +286,12 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
   - **So** My retirement is not delayed by 1.5 years, It's delayed by 'N' years, that's OK, the year now is much more valuable
 
 - What if I'm wrong about my expenses?
+  - It's critical you get this right.
+  - **But** I've been tracking expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/) retirement planning software and have good baseline data
+  - **But** I'm not forgetting the non-obvious things like health insurance ($40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over $270K) and major house repairs
+  - **But** I can adjust spending during the gap year if needed (not locked into fixed costs)
+  - **But** Being conservative with estimates builds in a buffer for surprises
   - **So** Measure twice, cut once :) And review with others
-  - Monarch for expenses, Bodin for long term projections
-  - Include non-obvious things like health insurance (40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over 270K) and major house repairs.
 
 #### Vegetation, Mental Health
 
