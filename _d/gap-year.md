@@ -34,8 +34,11 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [The Test: How to Know If You're Ready](#the-test-how-to-know-if-youre-ready)
 - [Making the Decision: A Framework for the Gap Year Choice](#making-the-decision-a-framework-for-the-gap-year-choice)
 - [What would Igor do on a gap year](#what-would-igor-do-on-a-gap-year)
-  - [Dragons](#dragons)
-  - [Triggers](#triggers)
+  - [Igor's Dragons](#igors-dragons)
+    - [Financial Security](#financial-security)
+    - [Vegetation, Mental Health](#vegetation-mental-health)
+    - [Identity Health](#identity-health)
+  - [Gap Year Triggers](#gap-year-triggers)
   - [Reframe: PhD in AI, Content Creation, and MRR](#reframe-phd-in-ai-content-creation-and-mrr)
     - [AI Goals](#ai-goals)
     - [Content Creation](#content-creation)
@@ -252,9 +255,52 @@ The question isn't whether you can afford to take a gap year at 50. The question
 
 ## What would Igor do on a gap year
 
-### Dragons
+### Igor's Dragons
 
-### Triggers
+#### Financial Security
+
+- What if the stock market tanks while I'm on my gap year?
+
+  - That would make me very uncomfortable to take money out of my stocks
+  - Take out "Total Annual Expenses" and put it in a liquid account, so can auto draw "guilt" free
+
+- **But** I have an accurate model of my expenses
+
+  - Monarch for expenses, Bodin for long term projections
+  - Include non-obvious things like health insurance (40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over 270K) and major house repairs.
+
+- What if I can't get a job after the gap year.
+  - Job market is MUCH worse than it was 4 years ago.
+  - Lots of experienced folks in the market
+  - If applying to job I'm over qualified - they'll be like you'll leave as soon as you can. Ugh.
+  - Even though I have a network, doesn't matter if companies not hiring.
+  - **But** I've got 25 years+ of experience at top tech companies on a ton of various projects
+  - **But** I'll be heavily invested in professional development, so that makes me much more valuable.
+  - **But** I'll be doing content production, so people can see my skills.
+- What if I end up with a lower income when I return (Meta pays at 90th+ percentile)
+  - This is very probable.
+  - But I've always said if you won't take a job for a paycut, you shouldn't take it. I guess that could be cuz the job is less fun, or cuz it's the highest paid job you'll take :)
+  - My retirement is not delayed by 1.5 year, It's delayed by 'N' years, that's OK, the year now is much more valuable
+
+#### Vegetation, Mental Health
+
+- What if I start vegetating, and death spiral into depression
+
+#### Identity Health
+
+- Am I really setting a good example for kids?
+
+### Gap Year Triggers
+
+Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igor to run on Automatic
+
+- Money: Net worth exceeds "X" Million.
+
+  - See Financial Security Dragon
+  - Beyond this the risk is negligible
+
+- Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
+  - What is the minimum value?
 
 ### Reframe: PhD in AI, Content Creation, and MRR
 
