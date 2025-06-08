@@ -36,13 +36,14 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
   - [Igor's Dragons](#igors-dragons)
     - [Financial Security](#financial-security)
-    - [Vegetation, Mental Health](#vegetation-mental-health)
+    - [Vegetation, Mental Health, Physical Health](#vegetation-mental-health-physical-health)
     - [Identity Health](#identity-health)
   - [Slay the dragon: Gap Year Triggers](#slay-the-dragon-gap-year-triggers)
   - [Reframe: Gap year? Maybe, PhD in AI, Content Creation, and MRR](#reframe-gap-year-maybe-phd-in-ai-content-creation-and-mrr)
-    - [AI Goals](#ai-goals)
-    - [Content Creation](#content-creation)
-    - [MRR](#mrr)
+    - [AI Goals/Artifacts](#ai-goalsartifacts)
+    - [Content Creation Goals/Artifacts](#content-creation-goalsartifacts)
+    - [MRR Goals/Artifacts](#mrr-goalsartifacts)
+    - [Physical Health Goals/Artifacts](#physical-health-goalsartifacts)
   - [Habit and Relationship Recharge](#habit-and-relationship-recharge)
 
 <!-- vim-markdown-toc-end -->
@@ -293,7 +294,7 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
   - **But** Being conservative with estimates builds in a buffer for surprises
   - **So** Measure twice, cut once :) And review with others
 
-#### Vegetation, Mental Health
+#### Vegetation, Mental Health, Physical Health
 
 - What if I lose structure and just drift without momentum?
 
@@ -342,9 +343,25 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
   - **But** I have mental health support systems (therapy, medication, practices) that would continue
   - **So** Keep existing mental health infrastructure in place throughout the gap year
 
+- What if I let my health routines slide and waste my physical prime?
+
+  - Without work structure, it's easy to skip workouts, eat poorly, stay up late - exactly when I have the time to prioritize health
+  - At 50, I still have peak physical capability, but this window closes fast - at 65, many opportunities are gone forever
+  - Health decline could undermine everything else the gap year is supposed to accomplish
+  - **But** Removing work stress eliminates a major barrier to consistent health habits
+  - **But** Having control over my schedule means I can exercise at optimal times, get proper sleep, and meal plan
+  - **But** I can take as long as I want at the gym - 90-minute workouts become easy without rushing back to meetings
+  - **But** Physical health is the foundation for mental clarity, project energy, and relationship engagement
+  - **So** I can build in "safety clips" - personal trainer sessions, gym membership, kettlebell classes - external structure to prevent health slides
+  - **So** Make health routines the cornerstone of gap year structure, capitalizing on both time AND physical capability
+
 #### Identity Health
 
+- Forget telling the future, what does taking a gap year say about me ?
 - Am I really setting a good example for my kids?
+- Lens 1: I'm putting myself ahead of the security of my family
+- Lens 2: I'm overcoming my fear and investing in myself and relationships
+- So: Reframe to be a PhD and Olympic Training for all your health
 
 ### Slay the dragon: Gap Year Triggers
 
@@ -359,20 +376,41 @@ Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igo
   - See my buddy the "Financial Security Dragon"
   - What is the minimum value?
 
+* What are the actual dates and numbers?
+  - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
+
 ### Reframe: Gap year? Maybe, PhD in AI, Content Creation, and MRR
 
 Instead of thinking about it as a gap year (for which I'd feel guilty), perhaps I'll think about it like focusing on my development, on the "professional side" I'd learn all about AI [TODO: link to AI posts], and I'd also be all about the content creation, and
 
-#### AI Goals
+Creating artifacts is crucial - tangible outputs that prove the gap year was productive and provide lasting value. These artifacts serve as both motivation during the year, long term deposits in your relationship and health bank accounts ,career capital when returning to work.
 
-AI, wow!
+#### AI Goals/Artifacts
 
-#### Content Creation
+- Learning artifacts: Comprehensive AI knowledge base, experiment logs, model implementations
+- Several Apps written via AI, starting with PRDs
+- Content artifacts: AI tutorial series, technical blog posts, open source contributions
+
+#### Content Creation Goals/Artifacts
 
 Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
-#### MRR
+- Blog artifacts: Regular posts, TBD
+- Video artifacts: YouTube channel, Reels, TBD
+
+#### MRR Goals/Artifacts
 
 Monthly recurring revenue? That would be pretty cool. Certainly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
+
+- Product artifacts: TBD
+- Revenue artifacts: Affliate links? Course? Ad Revenue from Content? Who knows
+
+#### Physical Health Goals/Artifacts
+
+This is mostly set on my y20205 goals.
+New goal saround flexibility and fixing all my problem - back mobility, hip extension, shoulder etc
+Also, don't' get injured
+
+- Fitness goals: Todo see my y2025 goals
 
 ### Habit and Relationship Recharge

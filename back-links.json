@@ -2537,12 +2537,12 @@
         },
         "/gap-year": {
             "description": "Here’s a thought that’ll push back your retirement: Would you rather work until 65 and retire comfortably, or take a full year off at 50, return to work, and retire at 67 with less money? If you’re like most people, you immediately think “that’s crazy - I can’t afford to lose a year’s income!” But what if I told you that gap year might be the best investment you’ll ever make?\n\n",
-            "doc_size": 41000,
+            "doc_size": 44000,
             "file_path": "_site/gap-year.html",
             "incoming_links": [
                 "/retire"
             ],
-            "last_modified": "2025-06-08T15:36:57.874514",
+            "last_modified": "2025-06-08T16:17:56.014819",
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/chapters",
