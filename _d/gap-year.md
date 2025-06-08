@@ -33,6 +33,11 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [The Dragons: Why We Don't Take Gap Years](#the-dragons-why-we-dont-take-gap-years)
 - [The Test: How to Know If You're Ready](#the-test-how-to-know-if-youre-ready)
 - [Making the Decision: A Framework for the Gap Year Choice](#making-the-decision-a-framework-for-the-gap-year-choice)
+- [What would Igor do on a gap year](#what-would-igor-do-on-a-gap-year)
+  - [Dragons](#dragons)
+  - [Triggers](#triggers)
+  - [Goals](#goals)
+  - [Reframes](#reframes)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -241,3 +246,13 @@ The gap year decision forces you to stare down the risk of the unknowns. Will yo
 {% include summarize-page.html src="/retire" %}
 
 The question isn't whether you can afford to take a gap year at 50. The question is whether you can afford not to.
+
+## What would Igor do on a gap year
+
+### Dragons
+
+### Triggers
+
+### Goals
+
+### Reframes
