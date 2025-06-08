@@ -43,7 +43,7 @@ We've been conditioned to think of career breaks as financial suicide, but this 
     - [AI Goals](#ai-goals)
     - [Content Creation](#content-creation)
     - [MRR](#mrr)
-  - [Goals](#goals)
+  - [Habit and Relationship Recharge](#habit-and-relationship-recharge)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -253,7 +253,7 @@ The gap year decision forces you to stare down the risk of the unknowns. Will yo
 
 The question isn't whether you can afford to take a gap year at 50. The question is whether you can afford not to.
 
-## What would Igor do on a gap year
+## Is Igor Gonna take a gap year?
 
 ### Igor's Dragons
 
@@ -302,14 +302,72 @@ Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igo
 - Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
   - What is the minimum value?
 
-### Reframe: PhD in AI, Content Creation, and MRR
+#### Financial Security
+
+- What if the stock market tanks while I'm on my gap year?
+
+  - That would make me very uncomfortable to take money out of my stocks
+  - **But** It'll probably recover in the long term
+  - **So** Take out "Total Annual Expenses" and put it in a liquid account, so can auto draw "guilt" free
+
+- What if I can't get a job after the gap year?
+
+  - Job market is MUCH worse than it was 4 years ago.
+  - Lots of experienced folks in the market
+  - If applying to job I'm over qualified - they'll be like you'll leave as soon as you can. Ugh.
+  - Even though I have a network, doesn't matter if companies not hiring.
+  - **But** I've got 25 years+ of experience at top tech companies on a ton of various projects
+  - **But** I'll be heavily invested in professional development, so that makes me much more valuable.
+  - **But** I'll be doing content production, so people can see my skills.
+  - **So** Worst case, takes me 2 years to get a job, so hold 2 \* "Total Annual Expenses"
+
+- What if I end up with a lower income when I return (Meta pays at 90th+ percentile)?
+
+  - This is very probable.
+  - **But** Meta lets you have a "short interview loop" if you boomerang in a year
+  - **But** I've always said if you won't take a job for a paycut, you shouldn't take it. I guess that could be cuz the job is less fun, or cuz it's the highest paid job you'll take :)
+  - **So** My retirement is not delayed by 1.5 year, It's delayed by 'N' years, that's OK, the year now is much more valuable
+
+- What if I'm wrong about my expenses?
+  - **So** Measure twice cut once :) And review with others
+  - Monarch for expenses, Bodin for long term projections
+  - Include non-obvious things like health insurance (40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over 270K) and major house repairs.
+
+#### Vegetation, Mental Health
+
+- What if I start vegetating, and death spiral into depression
+
+#### Identity Health
+
+- Am I really setting a good example for kids?
+
+### Slay the dragon: Gap Year Triggers
+
+Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igor to run on Automatic
+
+- Money: Net worth exceeds "X" Million.
+
+  - See my buddy the "Financial Security Dragon"
+  - Beyond this the risk is negligible
+
+- Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
+  - See my buddy the "Financial Security Dragon"
+  - What is the minimum value?
+
+### Reframe: Gap year? Maybe, PhD in AI, Content Creation, and MRR
 
 Instead of thinking about it as a gap year (for which I'd feel guilty), perhaps I'll think about it like focusing on my development, on the "professional side" I'd learn all about AI [TODO: link to AI posts], and I'd also be all about the content creation, and
 
 #### AI Goals
 
+AI, wow!
+
 #### Content Creation
+
+Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
 #### MRR
 
-### Goals
+Monthly recurring revenue? That would be pretty cool. Certianly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
+
+### Habit and Relationship Recharge
