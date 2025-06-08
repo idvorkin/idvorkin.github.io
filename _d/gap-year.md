@@ -36,8 +36,11 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [What would Igor do on a gap year](#what-would-igor-do-on-a-gap-year)
   - [Dragons](#dragons)
   - [Triggers](#triggers)
+  - [Reframe: PhD in AI, Content Creation, and MRR](#reframe-phd-in-ai-content-creation-and-mrr)
+    - [AI Goals](#ai-goals)
+    - [Content Creation](#content-creation)
+    - [MRR](#mrr)
   - [Goals](#goals)
-  - [Reframes](#reframes)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -253,6 +256,14 @@ The question isn't whether you can afford to take a gap year at 50. The question
 
 ### Triggers
 
-### Goals
+### Reframe: PhD in AI, Content Creation, and MRR
 
-### Reframes
+Instead of thinking about it as a gap year (for which I'd feel guilty), perhaps I'll think about it like focusing on my development, on the "professional side" I'd learn all about AI [TODO: link to AI posts], and I'd also be all about the content creation, and
+
+#### AI Goals
+
+#### Content Creation
+
+#### MRR
+
+### Goals
