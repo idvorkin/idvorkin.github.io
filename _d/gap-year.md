@@ -407,10 +407,10 @@ Monthly recurring revenue? That would be pretty cool. Certainly I get much highe
 
 #### Physical Health Goals/Artifacts
 
-This is mostly set on my y20205 goals.
-New goal saround flexibility and fixing all my problem - back mobility, hip extension, shoulder etc
-Also, don't' get injured
+- This is mostly set on my y20205 goals.
+- New goal saround flexibility and fixing all my problem - back mobility, hip extension, shoulder etc
+- Also, don't' get injured!
 
-- Fitness goals: Todo see my y2025 goals
+* Fitness goals: Todo see my y2025 goals
 
 ### Habit and Relationship Recharge
