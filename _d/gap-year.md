@@ -295,7 +295,52 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
 
 #### Vegetation, Mental Health
 
-- What if I start vegetating and spiral into depression
+- What if I lose structure and just drift without momentum?
+
+  - Without structure, it's very easy for me to drift and lose momentum
+  - **But** I know my mental health practices and can recognize the warning signs early
+  - **But** I can keep a weekly/monthly therapist schedule to maintain accountability and support
+  - **But** I can build structure into the gap year - it doesn't have to be completely unstructured
+  - **So** Create a "gap year structure" with daily routines, weekly goals, and regular check-ins with accountability partners
+
+- What if I get bored and start vegetating?
+
+  - I can get bored easily, which leads to vegetating (mindless scrolling, avoiding meaningful work)
+  - Vegetating leads to messing up my sleep schedule and general lack of purpose
+  - A day missed at the gym turns into a week, turns into a month - physical decline accelerates the mental decline
+  - **But** AI field is evolving so rapidly there's something genuinely new every 2 weeks - built-in novelty to prevent boredom
+  - **But** Using AI lets me focus on my mastery areas which is a blast - less time on tedious tasks, more on what I'm uniquely good at
+  - **But** AI gives me huge leverage on bespoke software projects like my Kettlebells and Mortality software - I can build things that would have taken months
+  - **So** AI provides both intellectual stimulation and productive outlets for creativity
+
+- What if I get lonely without daily work social interaction?
+
+  - Loneliness could be a major factor - work provides daily social interaction
+  - **But** I know retired/gap year folks who are available during the day
+  - **But** I have friends and flexibility to hang out more regularly
+  - **But** I can have deep conversations with Tony, my AI life coach ([tony_tesla project](https://github.com/idvorkin/tony_tesla))
+  - **But** AI can provide conversation and it's getting cooler every week
+  - **But** Lots of people on the internet to meet - I've already started and it's pretty cool
+  - **But** Lots of people would like some mentorship, and I've got the time and experience to help them, plus I can scale this up
+  - **So** Schedule regular time with retired friends and deepen existing relationships
+
+- What if I get resentful that my family won't spend time with me?
+
+  - I'll have lots of free time but family will still be busy with their schedules
+  - Could lead to resentment when they can't match my availability
+  - **But** Relationships deepen like lifting weights - start light and gradually get heavier
+  - **But** I'll have the flexibility to work around their schedules instead of forcing mine
+  - **But** Without work stress, I'll have inner peace that lets me be more compassionate and patient
+  - **But** Time isn't scarce anymore, so I have much more flexibility to accommodate their schedules
+  - **But** Abundance mindset with time means I'm not competing family time against "very limited" personal projects
+  - **But** Deepening family relationships is a huge part of what makes this gap year worthwhile
+  - **So** Schedule regular family dates and focus on quality over quantity, letting relationships develop naturally at their pace
+
+- What if I start vegetating and spiral into depression?
+
+  - Boredom → Vegetating → Skipping exercise → Depression is a well-established pattern for me
+  - **But** I have mental health support systems (therapy, medication, practices) that would continue
+  - **So** Keep existing mental health infrastructure in place throughout the gap year
 
 #### Identity Health
 
