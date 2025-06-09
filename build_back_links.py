@@ -1027,7 +1027,7 @@ def delta(
         typer.Option(
             help="Minimum time difference in minutes to update last_modified field"
         ),
-    ] = 60,
+    ] = 62,
     dry_run: Annotated[
         bool, typer.Option(help="Show what would be updated without making changes")
     ] = False,
@@ -1062,6 +1062,7 @@ def delta(
     ]
     current_time = datetime.now().isoformat()
     console.print("[blue]Will update all available fields[/]")
+    console.print("[bold green]Script Version: v2.1-threshold-fix[/]")
     console.print(f"[blue]Using current time ({current_time}) for last_modified[/]")
 
     # Find HTML files to process
@@ -1176,6 +1177,20 @@ def process_html_files(html_files, current_time):
     return lb
 
 
+def is_within_time_threshold(existing_time, current_time, threshold_minutes):
+    """Check if the time difference is within the threshold."""
+    if not existing_time:
+        return False  # No existing timestamp, so not within threshold
+
+    try:
+        existing_dt = datetime.fromisoformat(existing_time)
+        current_dt = datetime.fromisoformat(current_time)
+        time_diff = abs((current_dt - existing_dt).total_seconds()) / 60
+        return time_diff < threshold_minutes
+    except (ValueError, TypeError):
+        return False  # If we can't parse timestamps, not within threshold
+
+
 def should_update_last_modified(
     old_page, new_page, current_time, threshold_minutes, other_fields_updated
 ):
@@ -1188,28 +1203,24 @@ def should_update_last_modified(
     if not existing_time:
         return True  # No existing timestamp, so update
 
-    try:
-        # Parse timestamps and calculate time difference
-        existing_dt = datetime.fromisoformat(existing_time)
-        current_dt = datetime.fromisoformat(current_time)
-        time_diff = abs((current_dt - existing_dt).total_seconds()) / 60
-
-        # Update if difference exceeds threshold
-        if time_diff >= threshold_minutes:
-            return True
-
-        # Log skipping due to threshold
-        console.print(
-            f"[yellow]Skipping last_modified update for {old_page.get('url', 'unknown')} - "
-            f"modified {time_diff:.1f} minutes ago (threshold: {threshold_minutes} minutes)[/]"
-        )
+    # Check if within threshold
+    if is_within_time_threshold(existing_time, current_time, threshold_minutes):
+        try:
+            existing_dt = datetime.fromisoformat(existing_time)
+            current_dt = datetime.fromisoformat(current_time)
+            time_diff = abs((current_dt - existing_dt).total_seconds()) / 60
+            console.print(
+                f"[yellow]Skipping last_modified update for {old_page.get('url', 'unknown')} - "
+                f"modified {time_diff:.1f} minutes ago (threshold: {threshold_minutes} minutes)[/]"
+            )
+        except (ValueError, TypeError):
+            pass
         return False
-    except (ValueError, TypeError):
-        # If we can't parse timestamps, update anyway
-        return True
+
+    return True  # Outside threshold, so update
 
 
-def update_page_fields(old_page, new_page, dry_run):
+def update_page_fields(old_page, new_page, dry_run, threshold_minutes, current_time):
     """Update fields in a page and track which fields were updated."""
     field_updates = {
         "title": False,
@@ -1237,11 +1248,31 @@ def update_page_fields(old_page, new_page, dry_run):
             old_page["outgoing_links"] = new_page.outgoing_links
         field_updates["outgoing_links"] = True
 
-    # Check and update doc_size
-    if old_page.get("doc_size", 0) != new_page.doc_size:
-        if not dry_run:
-            old_page["doc_size"] = new_page.doc_size
-        field_updates["doc_size"] = True
+    # Check doc_size only if we're outside the threshold window
+    existing_time = old_page.get("last_modified", "")
+    within_threshold = is_within_time_threshold(
+        existing_time, current_time, threshold_minutes
+    )
+
+    if not within_threshold:
+        # Only check and update doc_size if outside threshold
+        old_doc_size = old_page.get("doc_size", 0)
+        new_doc_size = new_page.doc_size
+        if old_doc_size != new_doc_size:
+            console.print(
+                f"[blue]DEBUG: doc_size changed from {old_doc_size} to {new_doc_size} for {old_page.get('url', 'unknown')} - updating (outside threshold)[/]"
+            )
+            if not dry_run:
+                old_page["doc_size"] = new_page.doc_size
+            field_updates["doc_size"] = True
+        else:
+            console.print(
+                f"[dim]DEBUG: doc_size unchanged ({old_doc_size}) for {old_page.get('url', 'unknown')}[/]"
+            )
+    else:
+        console.print(
+            f"[yellow]DEBUG: within {threshold_minutes}min threshold - ignoring doc_size changes for {old_page.get('url', 'unknown')}[/]"
+        )
 
     # Return whether any non-last_modified field was updated
     return field_updates
@@ -1273,12 +1304,19 @@ def update_backlinks_data(existing_data, lb, threshold_minutes, current_time, dr
         old_page = updated_data["url_info"][url]
 
         # Update fields and track changes
-        field_updates = update_page_fields(old_page, new_page, dry_run)
+        field_updates = update_page_fields(
+            old_page, new_page, dry_run, threshold_minutes, current_time
+        )
 
         # Check if any non-last_modified field was updated
         other_fields_updated = any(
             field_updates[field] for field in field_updates if field != "last_modified"
         )
+
+        console.print(
+            f"[blue]DEBUG: Field updates for {old_page.get('url', 'unknown')}: {field_updates}[/]"
+        )
+        console.print(f"[blue]DEBUG: other_fields_updated = {other_fields_updated}[/]")
 
         # Update statistics for changed fields
         for field, was_updated in field_updates.items():
