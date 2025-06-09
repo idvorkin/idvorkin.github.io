@@ -40,14 +40,14 @@ We've been conditioned to think of career breaks as financial suicide, but this 
   - [Vegetation, Cognitive, Emotional and Relationship Health](#vegetation-cognitive-emotional-and-relationship-health)
   - [Identity Health](#identity-health)
 - [Slay the financial dragon: Gap Year Triggers](#slay-the-financial-dragon-gap-year-triggers)
-- [Slay the identity dragons: Reframe: PhD in AI, Content Creation, and MRR](#slay-the-identity-dragons-reframe-phd-in-ai-content-creation-and-mrr)
-  - [AI Goals/Artifacts](#ai-goalsartifacts)
-  - [Content Creation Goals/Artifacts](#content-creation-goalsartifacts)
-  - [MRR Goals/Artifacts](#mrr-goalsartifacts)
 - [Slay the decay dragons: Reframe as Health+Habits Capital Investment](#slay-the-decay-dragons-reframe-as-healthhabits-capital-investment)
   - [Physical Health Goals/Artifacts](#physical-health-goalsartifacts)
   - [Mental Health Goals/Artifacts](#mental-health-goalsartifacts)
   - [Relationship Health Goals/Artifacts](#relationship-health-goalsartifacts)
+- [Slay the identity dragons: Reframe: PhD in AI, Content Creation, and MRR](#slay-the-identity-dragons-reframe-phd-in-ai-content-creation-and-mrr)
+  - [AI Goals/Artifacts](#ai-goalsartifacts)
+  - [Content Creation Goals/Artifacts](#content-creation-goalsartifacts)
+  - [MRR Goals/Artifacts](#mrr-goalsartifacts)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -370,7 +370,7 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
 
 ## Slay the financial dragon: Gap Year Triggers
 
-Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igor to run on Automatic
+Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igor to run on Automatic. So here are some rules
 
 - Money: Net worth exceeds "X" Million.
 
@@ -383,6 +383,22 @@ Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igo
 
 * What are the actual dates and numbers?
   - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
+
+## Slay the decay dragons: Reframe as Health+Habits Capital Investment
+
+At 50, you have peak capital (time, energy, resources) to invest in your body, mind and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
+
+### Physical Health Goals/Artifacts
+
+- This is mostly set on my y20205 goals.
+- New goal saround flexibility and fixing all my problem - back mobility, hip extension, shoulder etc
+- Also, don't' get injured!
+
+* Fitness goals: Todo see my y2025 goals
+
+### Mental Health Goals/Artifacts
+
+### Relationship Health Goals/Artifacts
 
 ## Slay the identity dragons: Reframe: PhD in AI, Content Creation, and MRR
 
@@ -409,19 +425,3 @@ Monthly recurring revenue? That would be pretty cool. Certainly I get much highe
 
 - Product artifacts: TBD
 - Revenue artifacts: Affliate links? Course? Ad Revenue from Content? Who knows
-
-## Slay the decay dragons: Reframe as Health+Habits Capital Investment
-
-At 50, you have peak capital (time, energy, resources) to invest in your body, mind and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
-
-### Physical Health Goals/Artifacts
-
-- This is mostly set on my y20205 goals.
-- New goal saround flexibility and fixing all my problem - back mobility, hip extension, shoulder etc
-- Also, don't' get injured!
-
-* Fitness goals: Todo see my y2025 goals
-
-### Mental Health Goals/Artifacts
-
-### Relationship Health Goals/Artifacts
