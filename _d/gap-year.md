@@ -36,11 +36,10 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
 - [Igor's Dragons](#igors-dragons)
   - [Financial Security](#financial-security)
-  - [Vegetation, Physical Health](#vegetation-physical-health)
-  - [Vegetation, Cognitive, Emotional and Relationship Health](#vegetation-cognitive-emotional-and-relationship-health)
+  - [Decaying Health and Habits: Cognitive, Emotional, Relationship Health](#decaying-health-and-habits-cognitive-emotional-relationship-health)
   - [Identity Health](#identity-health)
 - [Slay the financial dragon: Gap Year Triggers](#slay-the-financial-dragon-gap-year-triggers)
-- [Slay the decay dragons: Reframe as Health+Habits Capital Investment](#slay-the-decay-dragons-reframe-as-healthhabits-capital-investment)
+- [Slay the decay dragon: Reframe as Health+Habits Capital Investment](#slay-the-decay-dragon-reframe-as-healthhabits-capital-investment)
   - [Physical Health Goals/Artifacts](#physical-health-goalsartifacts)
   - [Mental Health Goals/Artifacts](#mental-health-goalsartifacts)
   - [Relationship Health Goals/Artifacts](#relationship-health-goalsartifacts)
@@ -297,9 +296,7 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
   - **But** Being conservative with estimates builds in a buffer for surprises
   - **So** Measure twice, cut once :) And review with others
 
-### Vegetation, Physical Health
-
-### Vegetation, Cognitive, Emotional and Relationship Health
+### Decaying Health and Habits: Cognitive, Emotional, Relationship Health
 
 - What if I lose structure and just drift without momentum?
 
@@ -365,8 +362,8 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
 - Forget telling the future, what does taking a gap year say about me ?
 - Am I really setting a good example for my kids?
 - Lens 1: I'm putting myself ahead of the security of my family
-- Lens 2: I'm overcoming my fear and investing in myself and relationships
-- So: Reframe to be a PhD and Olympic Training for all your health
+- **But** It can be about overcoming my fear and investing in myself and relationships
+- **So:** Reframe to be a PhD and A Year of Health and Habits Capital Investments
 
 ## Slay the financial dragon: Gap Year Triggers
 
@@ -384,7 +381,7 @@ Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igo
 * What are the actual dates and numbers?
   - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
 
-## Slay the decay dragons: Reframe as Health+Habits Capital Investment
+## Slay the decay dragon: Reframe as Health+Habits Capital Investment
 
 At 50, you have peak capital (time, energy, resources) to invest in your body, mind and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
 
