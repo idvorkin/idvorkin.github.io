@@ -64,6 +64,9 @@ npx vitest run --reporter=verbose
 [90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
 [22m[39m❌ non-existent-container container not found in DOM
 
+[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
+[22m[39mToggle element with ID remaining-posts-toggle not found
+
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects
@@ -82,9 +85,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
-[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
-[22m[39mToggle element with ID remaining-posts-toggle not found
-
 [90mstderr[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle errors
 [22m[39m❌ Error loading recent posts: Error: Test error
     at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mtests/unit/recent.test.ts:392:69
@@ -204,6 +204,13 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
+ [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production
+ [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
+ [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
+ [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
@@ -218,13 +225,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
- [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production
- [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
- [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
- [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests
  [32m✓[39m tests/unit/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould not create duplicate entries when processing summary links
  [32m✓[39m tests/unit/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould handle redirects correctly without duplication
  [32m✓[39m tests/unit/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould identify the root cause of duplicate related posts
@@ -232,7 +232,7 @@ npx vitest run --reporter=verbose
 
 [2m Test Files [22m [1m[32m14 passed[39m[22m[90m (14)[39m
 [2m      Tests [22m [1m[32m157 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (162)[39m
-[2m   Start at [22m 00:38:35
-[2m   Duration [22m 3.49s[2m (transform 523ms, setup 220ms, collect 706ms, tests 413ms, environment 5.30s, prepare 1.26s)[22m
+[2m   Start at [22m 00:53:37
+[2m   Duration [22m 3.49s[2m (transform 555ms, setup 161ms, collect 730ms, tests 426ms, environment 5.35s, prepare 1.18s)[22m
 
 </pre></body></html>
