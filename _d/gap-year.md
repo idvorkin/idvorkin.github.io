@@ -15,8 +15,6 @@ Here's a thought that'll push back your retirement: Would you rather work until 
 
 We've been conditioned to think of career breaks as financial suicide, but this binary thinking misses something crucial: the compound value of time, energy, and perspective when you're still in your prime.
 
-{% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
-
 {% include blob_image_float_right.html src="blog/raccoon-gapyear.webp" %}
 
 <!-- prettier-ignore-start -->
@@ -36,17 +34,11 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
 - [Igor's Dragons](#igors-dragons)
   - [The Financial Security Dragon](#the-financial-security-dragon)
-    - [Slay the Financial Dragon: Gap Year Triggers](#slay-the-financial-dragon-gap-year-triggers)
+    - [Slaying Financial Security - Gap Year Triggers](#slaying-financial-security---gap-year-triggers)
   - [The Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#the-decay-dragon-health-and-habits-physical-emotional-relationship)
-    - [Slay the Decay Dragon: Reframe as Health+Habits Capital Investment](#slay-the-decay-dragon-reframe-as-healthhabits-capital-investment)
-    - [Physical Health Goals/Artifacts](#physical-health-goalsartifacts)
-    - [Mental Health Goals/Artifacts](#mental-health-goalsartifacts)
-    - [Relationship Health Goals/Artifacts](#relationship-health-goalsartifacts)
+    - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
   - [The Identity Dragon](#the-identity-dragon)
-    - [Slay the Identity Dragons: Reframe: PhD in AI, Content Creation, and MRR](#slay-the-identity-dragons-reframe-phd-in-ai-content-creation-and-mrr)
-    - [AI Goals/Artifacts](#ai-goalsartifacts)
-    - [Content Creation Goals/Artifacts](#content-creation-goalsartifacts)
-    - [MRR Goals/Artifacts](#mrr-goalsartifacts)
+    - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -258,7 +250,9 @@ The question isn't whether you can afford to take a gap year at 50. The question
 
 ## Is Igor Gonna take a gap year?
 
-When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers include competitive offers from Google, and several mid sized companies. But today is a very different job market from pre-COVID 2020.
+{% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
+
+When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers include competitive offers from Google, and several mid sized companies. But today's job market is much much scarier than pre-COVID 2020 - it's become downright dicey out there. But as we say in the [7 habits](/7-habits), [begin with the end in mind](/end-in-mind)!
 
 ## Igor's Dragons
 
@@ -296,9 +290,11 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
   - **But** Being conservative with estimates builds in a buffer for surprises
   - **So** Measure twice, cut once :) And review with others
 
-### Slay the Financial Dragon: Gap Year Triggers
+### Slaying Financial Security - Gap Year Triggers
 
-Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igor to run on Automatic. So here are some rules
+See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
+
+Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and sets up future Igor to run on Automatic. So here are some rules
 
 - Money: Net worth exceeds "X" Million.
 
@@ -314,13 +310,18 @@ Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igo
 
 ### The Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
-- What if I lose structure and just drift without momentum?
+- What if I get lazy and lose all direction and discipline?
 
-  - Without structure, it's very easy for me to drift and lose momentum
+  - Without work structure, it's easy for me to drift without momentum AND lose discipline around health habits
+  - At 50, I still have peak physical capability, but this window closes fast - health decline could undermine everything the gap year is supposed to accomplish
   - **But** I know my mental health practices and can recognize the warning signs early
-  - **But** I can keep a weekly/monthly therapist schedule to maintain accountability and support
+  - **But** Removing work stress eliminates a major barrier to consistent health habits
   - **But** I can build structure into the gap year - it doesn't have to be completely unstructured
-  - **So** Create a "gap year structure" with daily routines, weekly goals, and regular check-ins with accountability partners
+  - **But** Having control over my schedule means I can exercise at optimal times, get proper sleep, and meal plan
+  - **But** Physical health is the foundation for mental clarity, project energy, and relationship engagement
+  - **So** Create a "gap year structure" with daily routines, weekly goals, and regular accountability check-ins
+  - **So** Build in "safety clips" - personal trainer sessions, gym membership, kettlebell classes - external structure to prevent slides
+  - **So** Make health routines the cornerstone of gap year structure, capitalizing on both time AND physical capability
 
 - What if I get bored and start vegetating?
 
@@ -355,41 +356,25 @@ Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igo
   - **But** Deepening family relationships is a huge part of what makes this gap year worthwhile
   - **So** Schedule regular family dates and focus on quality over quantity, letting relationships develop naturally at their pace
 
-- What if I start vegetating and spiral into depression?
+- What if I get depressed and spiral into a dark place?
 
   - Boredom → Vegetating → Skipping exercise → Depression is a well-established pattern for me
   - **But** I have mental health support systems (therapy, medication, practices) that would continue
   - **So** Keep existing mental health infrastructure in place throughout the gap year
 
-- What if I let my health routines slide and waste my physical prime?
+### Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)
 
-  - Without work structure, it's easy to skip workouts, eat poorly, stay up late - exactly when I have the time to prioritize health
-  - At 50, I still have peak physical capability, but this window closes fast - at 65, many opportunities are gone forever
-  - Health decline could undermine everything else the gap year is supposed to accomplish
-  - **But** Removing work stress eliminates a major barrier to consistent health habits
-  - **But** Having control over my schedule means I can exercise at optimal times, get proper sleep, and meal plan
-  - **But** I can take as long as I want at the gym - 90-minute workouts become easy without rushing back to meetings
-  - **But** Physical health is the foundation for mental clarity, project energy, and relationship engagement
-  - **So** I can build in "safety clips" - personal trainer sessions, gym membership, kettlebell classes - external structure to prevent health slides
-  - **So** Make health routines the cornerstone of gap year structure, capitalizing on both time AND physical capability
+This connects to my broader thinking on [physical health](/physical-health), [mental health](/emotional-health), and [relationship health](/chapters).
 
-### Slay the Decay Dragon: Reframe as Health+Habits Capital Investment
-
-Instead of thinking about it as a gap year (for which I'd worry about being a sloth), I'll think about it as the optimal time to make capital investments in my health and habits infrastructure.
+Instead of thinking about it as a gap year (for which I'd worry about being a sloth), I'll think about it as the optimal time to make capital investments in my [health](/physical-health) and [habits](/d/habits) infrastructure.
 
 At 50, you have peak capital (time, energy, resources) to invest in your body, mind and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
 
-#### Physical Health Goals/Artifacts
+**Health Goals/Artifacts (Physical, Emotional, Relationship)**
 
-- This is mostly set on my y20205 goals.
-- New goal saround flexibility and fixing all my problem - back mobility, hip extension, shoulder etc
-- Also, don't' get injured!
+See my [kettlebell](/kettlebell) practice and broader [physical health](/physical-health) philosophy. For emotional health, check out my [emotional health practices](/emotional-health), [meditation](/siy) approach, and [affirmations](/affirmations).
 
-* Fitness goals: Todo see my y2025 goals
-
-#### Mental Health Goals/Artifacts
-
-#### Relationship Health Goals/Artifacts
+You can probably look at my [2025 goals](/y25), which sadly look a lot like my [2024 goals](/y24), and will probably look like my 2028 goals if that's when I actually get my gap year.
 
 ### The Identity Dragon
 
@@ -397,30 +382,34 @@ At 50, you have peak capital (time, energy, resources) to invest in your body, m
 - Am I really setting a good example for my kids?
 - Lens 1: I'm putting myself ahead of the security of my family
 - **But** It can be about overcoming my fear and investing in myself and relationships
-- **So:** Reframe to be a PhD and A Year of Health and Habits Capital Investments
+- **So:** Reframe to be a PhD and A Year of [Health](/physical-health) and [Habits](/d/habits) Capital Investments
 
-### Slay the Identity Dragons: Reframe: PhD in AI, Content Creation, and MRR
+### Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR
+
+This aligns with my approach to [continuous learning](/timeoff) and [overcoming resistance](/d/resistance) to change.
 
 Instead of thinking about it as a gap year (for which I'd feel guilty), I'll think about it as pursuing a "PhD in AI, Content Creation, and MRR" - focusing on my professional development. On the technical side, I'd become an AI expert by learning everything about the field [TODO: link to AI posts], while also mastering content creation and building monthly recurring revenue streams.
 
 Creating artifacts is crucial - tangible outputs that prove the gap year was productive and provide lasting value. These artifacts serve as both motivation during the year, long term deposits in your relationship and health bank accounts, and career capital when returning to work.
 
-#### AI Goals/Artifacts
+**AI Goals/Artifacts**
 
 - Learning artifacts: Comprehensive AI knowledge base, experiment logs, model implementations
 - Several Apps written via AI, starting with PRDs
 - Content artifacts: AI tutorial series, technical blog posts, open source contributions
 
-#### Content Creation Goals/Artifacts
+**Content Creation Goals/Artifacts**
 
 Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
 - Blog artifacts: Regular posts, TBD
 - Video artifacts: YouTube channel, Reels, TBD
 
-#### MRR Goals/Artifacts
+**MRR Goals/Artifacts**
 
 Monthly recurring revenue? That would be pretty cool. Certainly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
+
+Will this actually slay the Financial Security Dragon? Let's be real - we're talking about pocket change compared to a tech salary. But hey, a man can dream of becoming the next MrBeast of gap year content! 🎬💰
 
 - Product artifacts: TBD
 - Revenue artifacts: Affliate links? Course? Ad Revenue from Content? Who knows

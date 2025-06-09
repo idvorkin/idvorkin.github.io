@@ -343,6 +343,7 @@
                 "/eulogy",
                 "/first-things-first",
                 "/first-understand",
+                "/gap-year",
                 "/psychic-weight",
                 "/sharpen-the-saw",
                 "/synergize",
@@ -548,6 +549,7 @@
             "doc_size": 19000,
             "file_path": "_site/affirmations.html",
             "incoming_links": [
+                "/gap-year",
                 "/mortality-software",
                 "/operating-manual",
                 "/process-journal"
@@ -1631,6 +1633,7 @@
                 "/activation",
                 "/d/resistance",
                 "/energy-abundance",
+                "/gap-year",
                 "/hobby",
                 "/idle",
                 "/life-as-business",
@@ -1675,6 +1678,7 @@
                 "/fail",
                 "/first-things-first",
                 "/frog",
+                "/gap-year",
                 "/parkinson",
                 "/productive",
                 "/psychic-weight",
@@ -2171,6 +2175,7 @@
             "file_path": "_site/emotional-health.html",
             "incoming_links": [
                 "/essentialism",
+                "/gap-year",
                 "/irl",
                 "/mania",
                 "/mind-at-work",
@@ -2245,6 +2250,7 @@
                 "/content-audience",
                 "/d/resistance",
                 "/elder",
+                "/gap-year",
                 "/manager-book",
                 "/productive",
                 "/siy"
@@ -2537,24 +2543,34 @@
         },
         "/gap-year": {
             "description": "Here’s a thought that’ll push back your retirement: Would you rather work until 65 and retire comfortably, or take a full year off at 50, return to work, and retire at 67 with less money? If you’re like most people, you immediately think “that’s crazy - I can’t afford to lose a year’s income!” But what if I told you that gap year might be the best investment you’ll ever make?\n\n",
-            "doc_size": 45000,
+            "doc_size": 46000,
             "file_path": "_site/gap-year.html",
             "incoming_links": [
                 "/retire"
             ],
-            "last_modified": "2025-06-08T17:27:22.883794",
+            "last_modified": "2025-06-08T18:56:03.334871",
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
+                "/7-habits",
+                "/affirmations",
                 "/chapters",
+                "/d/habits",
+                "/d/resistance",
                 "/decisive",
+                "/emotional-health",
+                "/end-in-mind",
+                "/kettlebell",
                 "/money",
                 "/partner-trouble",
                 "/physical-health",
                 "/resistance",
                 "/retire",
+                "/siy",
                 "/timeoff",
                 "/y2024",
-                "/y2025"
+                "/y2025",
+                "/y24",
+                "/y25"
             ],
             "redirect_url": "",
             "title": "The Gap Year Paradox: Why Taking a Year Off at 50 beats retiring at 65",
@@ -3073,6 +3089,7 @@
             "file_path": "_site/kettlebell.html",
             "incoming_links": [
                 "/eulogy",
+                "/gap-year",
                 "/physical-health",
                 "/timeoff",
                 "/untangled",
@@ -4300,6 +4317,7 @@
                 "/emotional-health",
                 "/eulogy",
                 "/first-understand",
+                "/gap-year",
                 "/idle",
                 "/irl",
                 "/mind-monsters",
