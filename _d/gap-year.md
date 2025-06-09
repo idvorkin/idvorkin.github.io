@@ -42,8 +42,8 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Slay the financial dragon: Gap Year Triggers](#slay-the-financial-dragon-gap-year-triggers)
 - [Slay the identity dragons: Reframe: PhD in AI, Content Creation, and MRR](#slay-the-identity-dragons-reframe-phd-in-ai-content-creation-and-mrr)
   - [AI Goals/Artifacts](#ai-goalsartifacts)
-    - [Content Creation Goals/Artifacts](#content-creation-goalsartifacts)
-    - [MRR Goals/Artifacts](#mrr-goalsartifacts)
+  - [Content Creation Goals/Artifacts](#content-creation-goalsartifacts)
+  - [MRR Goals/Artifacts](#mrr-goalsartifacts)
 - [Slay the decay dragons: Reframe as Health+Habits Capital Investment](#slay-the-decay-dragons-reframe-as-healthhabits-capital-investment)
   - [Physical Health Goals/Artifacts](#physical-health-goalsartifacts)
   - [Mental Health Goals/Artifacts](#mental-health-goalsartifacts)
@@ -390,20 +390,20 @@ Instead of thinking about it as a gap year (for which I'd feel guilty), perhaps 
 
 Creating artifacts is crucial - tangible outputs that prove the gap year was productive and provide lasting value. These artifacts serve as both motivation during the year, long term deposits in your relationship and health bank accounts ,career capital when returning to work.
 
-#### AI Goals/Artifacts
+### AI Goals/Artifacts
 
 - Learning artifacts: Comprehensive AI knowledge base, experiment logs, model implementations
 - Several Apps written via AI, starting with PRDs
 - Content artifacts: AI tutorial series, technical blog posts, open source contributions
 
-#### Content Creation Goals/Artifacts
+### Content Creation Goals/Artifacts
 
 Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
 - Blog artifacts: Regular posts, TBD
 - Video artifacts: YouTube channel, Reels, TBD
 
-#### MRR Goals/Artifacts
+### MRR Goals/Artifacts
 
 Monthly recurring revenue? That would be pretty cool. Certainly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
 
