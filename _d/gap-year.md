@@ -34,17 +34,20 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [The Test: How to Know If You're Ready](#the-test-how-to-know-if-youre-ready)
 - [Making the Decision: A Framework for the Gap Year Choice](#making-the-decision-a-framework-for-the-gap-year-choice)
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
-  - [Igor's Dragons](#igors-dragons)
-    - [Financial Security](#financial-security)
-    - [Vegetation, Mental Health, Physical Health](#vegetation-mental-health-physical-health)
-    - [Identity Health](#identity-health)
-  - [Slay the dragon: Gap Year Triggers](#slay-the-dragon-gap-year-triggers)
-  - [Reframe: Gap year? Maybe, PhD in AI, Content Creation, and MRR](#reframe-gap-year-maybe-phd-in-ai-content-creation-and-mrr)
-    - [AI Goals/Artifacts](#ai-goalsartifacts)
+- [Igor's Dragons](#igors-dragons)
+  - [Financial Security](#financial-security)
+  - [Vegetation, Physical Health](#vegetation-physical-health)
+  - [Vegetation, Cognitive, Emotional and Relationship Health](#vegetation-cognitive-emotional-and-relationship-health)
+  - [Identity Health](#identity-health)
+- [Slay the financial dragon: Gap Year Triggers](#slay-the-financial-dragon-gap-year-triggers)
+- [Slay the identity dragons: Reframe: PhD in AI, Content Creation, and MRR](#slay-the-identity-dragons-reframe-phd-in-ai-content-creation-and-mrr)
+  - [AI Goals/Artifacts](#ai-goalsartifacts)
     - [Content Creation Goals/Artifacts](#content-creation-goalsartifacts)
     - [MRR Goals/Artifacts](#mrr-goalsartifacts)
-    - [Physical Health Goals/Artifacts](#physical-health-goalsartifacts)
-  - [Habit and Relationship Recharge](#habit-and-relationship-recharge)
+- [Slay the decay dragons: Reframe as Health+Habits Capital Investment](#slay-the-decay-dragons-reframe-as-healthhabits-capital-investment)
+  - [Physical Health Goals/Artifacts](#physical-health-goalsartifacts)
+  - [Mental Health Goals/Artifacts](#mental-health-goalsartifacts)
+  - [Relationship Health Goals/Artifacts](#relationship-health-goalsartifacts)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -258,9 +261,9 @@ The question isn't whether you can afford to take a gap year at 50. The question
 
 When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers include competitive offers from Google, and several mid sized companies. But today is a very different job market from pre-COVID 2020.
 
-### Igor's Dragons
+## Igor's Dragons
 
-#### Financial Security
+### Financial Security
 
 - What if the stock market tanks while I'm on my gap year?
 
@@ -294,7 +297,9 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
   - **But** Being conservative with estimates builds in a buffer for surprises
   - **So** Measure twice, cut once :) And review with others
 
-#### Vegetation, Mental Health, Physical Health
+### Vegetation, Physical Health
+
+### Vegetation, Cognitive, Emotional and Relationship Health
 
 - What if I lose structure and just drift without momentum?
 
@@ -355,7 +360,7 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
   - **So** I can build in "safety clips" - personal trainer sessions, gym membership, kettlebell classes - external structure to prevent health slides
   - **So** Make health routines the cornerstone of gap year structure, capitalizing on both time AND physical capability
 
-#### Identity Health
+### Identity Health
 
 - Forget telling the future, what does taking a gap year say about me ?
 - Am I really setting a good example for my kids?
@@ -363,7 +368,7 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
 - Lens 2: I'm overcoming my fear and investing in myself and relationships
 - So: Reframe to be a PhD and Olympic Training for all your health
 
-### Slay the dragon: Gap Year Triggers
+## Slay the financial dragon: Gap Year Triggers
 
 Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igor to run on Automatic
 
@@ -379,7 +384,7 @@ Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igo
 * What are the actual dates and numbers?
   - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
 
-### Reframe: Gap year? Maybe, PhD in AI, Content Creation, and MRR
+## Slay the identity dragons: Reframe: PhD in AI, Content Creation, and MRR
 
 Instead of thinking about it as a gap year (for which I'd feel guilty), perhaps I'll think about it like focusing on my development, on the "professional side" I'd learn all about AI [TODO: link to AI posts], and I'd also be all about the content creation, and
 
@@ -405,7 +410,11 @@ Monthly recurring revenue? That would be pretty cool. Certainly I get much highe
 - Product artifacts: TBD
 - Revenue artifacts: Affliate links? Course? Ad Revenue from Content? Who knows
 
-#### Physical Health Goals/Artifacts
+## Slay the decay dragons: Reframe as Health+Habits Capital Investment
+
+At 50, you have peak capital (time, energy, resources) to invest in your body, mind and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
+
+### Physical Health Goals/Artifacts
 
 - This is mostly set on my y20205 goals.
 - New goal saround flexibility and fixing all my problem - back mobility, hip extension, shoulder etc
@@ -413,4 +422,6 @@ Monthly recurring revenue? That would be pretty cool. Certainly I get much highe
 
 * Fitness goals: Todo see my y2025 goals
 
-### Habit and Relationship Recharge
+### Mental Health Goals/Artifacts
+
+### Relationship Health Goals/Artifacts
