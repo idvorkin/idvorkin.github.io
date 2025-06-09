@@ -35,18 +35,18 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Making the Decision: A Framework for the Gap Year Choice](#making-the-decision-a-framework-for-the-gap-year-choice)
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
 - [Igor's Dragons](#igors-dragons)
-  - [Financial Security](#financial-security)
-  - [Decaying Health and Habits: Cognitive, Emotional, Relationship Health](#decaying-health-and-habits-cognitive-emotional-relationship-health)
-  - [Identity Health](#identity-health)
-- [Slay the financial dragon: Gap Year Triggers](#slay-the-financial-dragon-gap-year-triggers)
-- [Slay the decay dragon: Reframe as Health+Habits Capital Investment](#slay-the-decay-dragon-reframe-as-healthhabits-capital-investment)
-  - [Physical Health Goals/Artifacts](#physical-health-goalsartifacts)
-  - [Mental Health Goals/Artifacts](#mental-health-goalsartifacts)
-  - [Relationship Health Goals/Artifacts](#relationship-health-goalsartifacts)
-- [Slay the identity dragons: Reframe: PhD in AI, Content Creation, and MRR](#slay-the-identity-dragons-reframe-phd-in-ai-content-creation-and-mrr)
-  - [AI Goals/Artifacts](#ai-goalsartifacts)
-  - [Content Creation Goals/Artifacts](#content-creation-goalsartifacts)
-  - [MRR Goals/Artifacts](#mrr-goalsartifacts)
+  - [The Financial Security Dragon](#the-financial-security-dragon)
+    - [Slay the Financial Dragon: Gap Year Triggers](#slay-the-financial-dragon-gap-year-triggers)
+  - [The Decay Dragon: Health and Habits](#the-decay-dragon-health-and-habits)
+    - [Slay the Decay Dragon: Reframe as Health+Habits Capital Investment](#slay-the-decay-dragon-reframe-as-healthhabits-capital-investment)
+    - [Physical Health Goals/Artifacts](#physical-health-goalsartifacts)
+    - [Mental Health Goals/Artifacts](#mental-health-goalsartifacts)
+    - [Relationship Health Goals/Artifacts](#relationship-health-goalsartifacts)
+  - [The Identity Dragon](#the-identity-dragon)
+    - [Slay the Identity Dragons: Reframe: PhD in AI, Content Creation, and MRR](#slay-the-identity-dragons-reframe-phd-in-ai-content-creation-and-mrr)
+    - [AI Goals/Artifacts](#ai-goalsartifacts)
+    - [Content Creation Goals/Artifacts](#content-creation-goalsartifacts)
+    - [MRR Goals/Artifacts](#mrr-goalsartifacts)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -262,7 +262,7 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
 
 ## Igor's Dragons
 
-### Financial Security
+### The Financial Security Dragon
 
 - What if the stock market tanks while I'm on my gap year?
 
@@ -296,7 +296,23 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
   - **But** Being conservative with estimates builds in a buffer for surprises
   - **So** Measure twice, cut once :) And review with others
 
-### Decaying Health and Habits: Cognitive, Emotional, Relationship Health
+### Slay the Financial Dragon: Gap Year Triggers
+
+Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igor to run on Automatic. So here are some rules
+
+- Money: Net worth exceeds "X" Million.
+
+  - See my buddy the "Financial Security Dragon"
+  - Beyond this the risk is negligible
+
+- Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
+  - See my buddy the "Financial Security Dragon"
+  - What is the minimum value?
+
+* What are the actual dates and numbers?
+  - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
+
+### The Decay Dragon: Health and Habits
 
 - What if I lose structure and just drift without momentum?
 
@@ -357,35 +373,13 @@ When I started at Meta in March 2020 my plan was to take a gap year after my Met
   - **So** I can build in "safety clips" - personal trainer sessions, gym membership, kettlebell classes - external structure to prevent health slides
   - **So** Make health routines the cornerstone of gap year structure, capitalizing on both time AND physical capability
 
-### Identity Health
+### Slay the Decay Dragon: Reframe as Health+Habits Capital Investment
 
-- Forget telling the future, what does taking a gap year say about me ?
-- Am I really setting a good example for my kids?
-- Lens 1: I'm putting myself ahead of the security of my family
-- **But** It can be about overcoming my fear and investing in myself and relationships
-- **So:** Reframe to be a PhD and A Year of Health and Habits Capital Investments
-
-## Slay the financial dragon: Gap Year Triggers
-
-Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igor to run on Automatic. So here are some rules
-
-- Money: Net worth exceeds "X" Million.
-
-  - See my buddy the "Financial Security Dragon"
-  - Beyond this the risk is negligible
-
-- Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
-  - See my buddy the "Financial Security Dragon"
-  - What is the minimum value?
-
-* What are the actual dates and numbers?
-  - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
-
-## Slay the decay dragon: Reframe as Health+Habits Capital Investment
+Instead of thinking about it as a gap year (for which I'd worry about being a sloth), I'll think about it as the optimal time to make capital investments in my health and habits infrastructure.
 
 At 50, you have peak capital (time, energy, resources) to invest in your body, mind and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
 
-### Physical Health Goals/Artifacts
+#### Physical Health Goals/Artifacts
 
 - This is mostly set on my y20205 goals.
 - New goal saround flexibility and fixing all my problem - back mobility, hip extension, shoulder etc
@@ -393,30 +387,38 @@ At 50, you have peak capital (time, energy, resources) to invest in your body, m
 
 * Fitness goals: Todo see my y2025 goals
 
-### Mental Health Goals/Artifacts
+#### Mental Health Goals/Artifacts
 
-### Relationship Health Goals/Artifacts
+#### Relationship Health Goals/Artifacts
 
-## Slay the identity dragons: Reframe: PhD in AI, Content Creation, and MRR
+### The Identity Dragon
 
-Instead of thinking about it as a gap year (for which I'd feel guilty), perhaps I'll think about it like focusing on my development, on the "professional side" I'd learn all about AI [TODO: link to AI posts], and I'd also be all about the content creation, and
+- Forget telling the future, what does taking a gap year say about me ?
+- Am I really setting a good example for my kids?
+- Lens 1: I'm putting myself ahead of the security of my family
+- **But** It can be about overcoming my fear and investing in myself and relationships
+- **So:** Reframe to be a PhD and A Year of Health and Habits Capital Investments
 
-Creating artifacts is crucial - tangible outputs that prove the gap year was productive and provide lasting value. These artifacts serve as both motivation during the year, long term deposits in your relationship and health bank accounts ,career capital when returning to work.
+### Slay the Identity Dragons: Reframe: PhD in AI, Content Creation, and MRR
 
-### AI Goals/Artifacts
+Instead of thinking about it as a gap year (for which I'd feel guilty), I'll think about it as pursuing a "PhD in AI, Content Creation, and MRR" - focusing on my professional development. On the technical side, I'd become an AI expert by learning everything about the field [TODO: link to AI posts], while also mastering content creation and building monthly recurring revenue streams.
+
+Creating artifacts is crucial - tangible outputs that prove the gap year was productive and provide lasting value. These artifacts serve as both motivation during the year, long term deposits in your relationship and health bank accounts, and career capital when returning to work.
+
+#### AI Goals/Artifacts
 
 - Learning artifacts: Comprehensive AI knowledge base, experiment logs, model implementations
 - Several Apps written via AI, starting with PRDs
 - Content artifacts: AI tutorial series, technical blog posts, open source contributions
 
-### Content Creation Goals/Artifacts
+#### Content Creation Goals/Artifacts
 
 Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
 - Blog artifacts: Regular posts, TBD
 - Video artifacts: YouTube channel, Reels, TBD
 
-### MRR Goals/Artifacts
+#### MRR Goals/Artifacts
 
 Monthly recurring revenue? That would be pretty cool. Certainly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
 
