@@ -32,13 +32,12 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [The Test: How to Know If You're Ready](#the-test-how-to-know-if-youre-ready)
 - [Making the Decision: A Framework for the Gap Year Choice](#making-the-decision-a-framework-for-the-gap-year-choice)
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
-- [Igor's Dragons](#igors-dragons)
-  - [The Financial Security Dragon](#the-financial-security-dragon)
-  - [Slaying Financial Security - Gap Year Triggers](#slaying-financial-security---gap-year-triggers)
-  - [The Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#the-decay-dragon-health-and-habits-physical-emotional-relationship)
-  - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
-  - [The Identity Dragon](#the-identity-dragon)
-  - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
+- [Igor's Financial Security Dragon](#igors-financial-security-dragon)
+- [Slaying Financial Security - Gap Year Triggers](#slaying-financial-security---gap-year-triggers)
+- [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
+- [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
+- [Igor's Identity Dragon](#igors-identity-dragon)
+- [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -260,9 +259,9 @@ But to balance that, some hypothical what ifs:
 - I'm only able bodied for N more years.
 - I'm only alive for N more years.
 
-## Igor's Dragons
+So what are the dragons guarding this treasure of time?
 
-### The Financial Security Dragon
+## Igor's Financial Security Dragon
 
 - What if the stock market tanks while I'm on my gap year?
 
@@ -296,7 +295,7 @@ But to balance that, some hypothical what ifs:
   - **But** Being conservative with estimates builds in a buffer for surprises
   - **So** Measure twice, cut once :) And review with others
 
-### Slaying Financial Security - Gap Year Triggers
+## Slaying Financial Security - Gap Year Triggers
 
 See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
 
@@ -314,7 +313,7 @@ Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and se
 * What are the actual dates and numbers?
   - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
 
-### The Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
+## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
 - What if I get lazy and lose all direction and discipline?
 
@@ -368,7 +367,7 @@ Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and se
   - **But** I have mental health support systems (therapy, medication, practices) that would continue
   - **So** Keep existing mental health infrastructure in place throughout the gap year
 
-### Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)
+## Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)
 
 This connects to my broader thinking on [physical health](/physical-health), [mental health](/emotional-health), and [relationship health](/chapters).
 
@@ -382,7 +381,7 @@ See my [kettlebell](/kettlebell) practice and broader [physical health](/physica
 
 You can probably look at my [2025 goals](/y25), which sadly look a lot like my [2024 goals](/y24), and will probably look like my 2028 goals if that's when I actually get my gap year.
 
-### The Identity Dragon
+## Igor's Identity Dragon
 
 - Forget telling the future, what does taking a gap year say about me ?
 - Am I really setting a good example for my kids?
@@ -390,7 +389,7 @@ You can probably look at my [2025 goals](/y25), which sadly look a lot like my [
 - **But** It can be about overcoming my fear and investing in myself and relationships
 - **So:** Reframe to be a PhD and A Year of [Health](/physical-health) and [Habits](/d/habits) Capital Investments
 
-### Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR
+## Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR
 
 This aligns with my approach to [continuous learning](/timeoff) and [overcoming resistance](/d/resistance) to change.
 
