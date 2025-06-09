@@ -37,7 +37,7 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Igor's Dragons](#igors-dragons)
   - [The Financial Security Dragon](#the-financial-security-dragon)
     - [Slay the Financial Dragon: Gap Year Triggers](#slay-the-financial-dragon-gap-year-triggers)
-  - [The Decay Dragon: Health and Habits](#the-decay-dragon-health-and-habits)
+  - [The Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#the-decay-dragon-health-and-habits-physical-emotional-relationship)
     - [Slay the Decay Dragon: Reframe as Health+Habits Capital Investment](#slay-the-decay-dragon-reframe-as-healthhabits-capital-investment)
     - [Physical Health Goals/Artifacts](#physical-health-goalsartifacts)
     - [Mental Health Goals/Artifacts](#mental-health-goalsartifacts)
@@ -312,7 +312,7 @@ Igor at his best when 5am Igor "Begins with end in Mind", and sets up future Igo
 * What are the actual dates and numbers?
   - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
 
-### The Decay Dragon: Health and Habits
+### The Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
 - What if I lose structure and just drift without momentum?
 
