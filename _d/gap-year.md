@@ -34,11 +34,11 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
 - [Igor's Dragons](#igors-dragons)
   - [The Financial Security Dragon](#the-financial-security-dragon)
-    - [Slaying Financial Security - Gap Year Triggers](#slaying-financial-security---gap-year-triggers)
+  - [Slaying Financial Security - Gap Year Triggers](#slaying-financial-security---gap-year-triggers)
   - [The Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#the-decay-dragon-health-and-habits-physical-emotional-relationship)
-    - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
+  - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
   - [The Identity Dragon](#the-identity-dragon)
-    - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
+  - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -253,6 +253,12 @@ The question isn't whether you can afford to take a gap year at 50. The question
 {% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 
 When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers include competitive offers from Google, and several mid sized companies. But today's job market is much much scarier than pre-COVID 2020 - it's become downright dicey out there. But as we say in the [7 habits](/7-habits), [begin with the end in mind](/end-in-mind)!
+
+But to balance that, some hypothical what ifs:
+
+- I can only see kid for N more year
+- I'm only able bodied for N more years.
+- I'm only alive for N more years.
 
 ## Igor's Dragons
 
