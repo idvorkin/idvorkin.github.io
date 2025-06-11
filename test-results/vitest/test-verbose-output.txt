@@ -50,6 +50,22 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
 [22m[39mToggle element with ID remaining-posts-toggle not found
 
+[90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
+[22m[39m❌ Error loading recent posts: Error: Test error
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mtests/unit/recent-posts.test.ts:503:69
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
+    at new Promise (<anonymous>)
+    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
+    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+
+[90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
+[22m[39m❌ non-existent-container container not found in DOM
+
 [90mstderr[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle errors
 [22m[39m❌ Error loading recent posts: Error: Test error
     at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mtests/unit/recent.test.ts:392:69
@@ -66,24 +82,8 @@ npx vitest run --reporter=verbose
 [90mstderr[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
 [22m[39m❌ non-existent-container container not found in DOM
 
-[90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
-[22m[39m❌ Error loading recent posts: Error: Test error
-    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mtests/unit/recent-posts.test.ts:503:69
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
-    at new Promise (<anonymous>)
-    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
-    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
-[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-
 [90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
 [22m[39mToggle element with ID remaining-posts-toggle not found
-
-[90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
-[22m[39m❌ non-existent-container container not found in DOM
 
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays
@@ -150,6 +150,13 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
+ [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value
@@ -160,13 +167,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
  [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
- [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
  [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
@@ -203,9 +203,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
- [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
  [32m✓[39m tests/unit/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
@@ -224,6 +221,9 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
  [32m✓[39m tests/unit/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
+ [32m✓[39m tests/unit/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m tests/unit/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould not create duplicate entries when processing summary links
  [32m✓[39m tests/unit/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould handle redirects correctly without duplication
  [32m✓[39m tests/unit/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould identify the root cause of duplicate related posts
@@ -231,6 +231,6 @@ npx vitest run --reporter=verbose
 
 [2m Test Files [22m [1m[32m14 passed[39m[22m[90m (14)[39m
 [2m      Tests [22m [1m[32m157 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (162)[39m
-[2m   Start at [22m 02:29:32
-[2m   Duration [22m 3.52s[2m (transform 517ms, setup 206ms, collect 697ms, tests 434ms, environment 5.33s, prepare 1.26s)[22m
+[2m   Start at [22m 03:39:23
+[2m   Duration [22m 3.41s[2m (transform 521ms, setup 166ms, collect 708ms, tests 422ms, environment 5.11s, prepare 1.21s)[22m
 
