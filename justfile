@@ -209,6 +209,39 @@ internal-jekyll-mac-serve:
 jekyll-container:
     bundle exec jekyll server --incremental --livereload --host 0.0.0.0
 
+jekyll-docker:
+    #!/usr/bin/env sh
+    # Auto-detect platform and use appropriate image
+    if [ "$(uname -m)" = "arm64" ]; then
+        PLATFORM="--platform linux/arm64"
+    else
+        PLATFORM="--platform linux/amd64"
+    fi
+    docker run --rm \
+      $PLATFORM \
+      -v "$PWD:/srv/jekyll" \
+      -v jekyll-gems:/usr/local/bundle \
+      -p 4001:4000 \
+      jekyll/jekyll:4 \
+      jekyll serve --watch --force_polling --host 0.0.0.0
+
+jekyll-docker-update-search:
+    #!/usr/bin/env sh
+    # Auto-detect platform and use appropriate image
+    if [ "$(uname -m)" = "arm64" ]; then
+        PLATFORM="--platform linux/arm64"
+    else
+        PLATFORM="--platform linux/amd64"
+    fi
+    docker run --rm \
+      $PLATFORM \
+      -v "$PWD:/srv/jekyll" \
+      -v jekyll-gems:/usr/local/bundle \
+      jekyll/jekyll:4 \
+      jekyll algolia
+
+
+
 docker-build:
     docker build -t devdocker devdocker
 
