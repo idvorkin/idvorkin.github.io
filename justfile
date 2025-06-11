@@ -400,6 +400,9 @@ fast-test:
     # Run a subset of tests or lightweight checks
     just js-test
 
+blog-combined:
+    cat _d/* _posts/* _td/* > blog.allcontent.md
+
 # Comprehensive test suite
 test:
     @echo "Running comprehensive test suite..."
