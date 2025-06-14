@@ -45,6 +45,10 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Cash positions and high yield savings](#cash-positions-and-high-yield-savings)
   - [No load index funds and ETFs](#no-load-index-funds-and-etfs)
   - [Unexpected expenses](#unexpected-expenses)
+  - [Health Insurance](#health-insurance)
+    - [ACA Marketplace](#aca-marketplace)
+    - [Cobra](#cobra)
+    - [Medicare](#medicare)
   - [Stock options](#stock-options)
     - [Sell a Put Option](#sell-a-put-option)
     - [Buy a Put Option](#buy-a-put-option)
@@ -167,7 +171,7 @@ An education only after tax savings account. You put in money after tax, get tax
 - Min Hold Time: 7 years to avoid triggering taxes
 - Goal: Diversify a concentrated stock position without immediate capital gains
 - At 7 Years: You get a basket of stocks; your original cost basis is spread across them
-- When You Sell: You’ll owe capital gains tax, but you control the timing — taxes are deferred, not avoided
+- When You Sell: You'll owe capital gains tax, but you control the timing — taxes are deferred, not avoided
 
 ## Tracking
 
@@ -238,7 +242,64 @@ Digging a bit deeper, it seems like there are Mutal Fund strategies to [avoid ca
 
 It seems both ETFs and MFs need to distribute dividends, which are often taxed as income. I don't understand why they can't directly re-invest it.
 
-### Unexpected expenses
+### Health Insurance
+
+TL;DR: If you're computing expenses for when you're not working, you probably skipped health care. Add $35k/year for your family of 4.
+
+At Meta, my health insurance is 40k (Meta puts up 35K, I put up 5k). I can probably get that lowered to mid 30s by switching to a silver plan - but this is still one of my top expenses
+
+Health insurance is one of those things you probably don't think much about—until you have to. If you've always had a job with benefits, it's easy to assume your coverage is just another line on your paycheck. But the reality is, health insurance is one of the biggest (and most invisible) expenses in your financial life. Lose your job, go independent, or retire early, and suddenly you're staring at the full sticker price—and it's a shocker.
+
+Most people underestimate how much their employer is actually paying for their coverage behind the scenes. Understanding the true cost of health insurance is crucial for anyone planning a career break, early retirement, or just wanting to get a handle on their real financial picture.
+
+#### ACA Marketplace
+
+The ACA Marketplace ("Obamacare") is where you go if you need to buy your own health insurance. Plans are grouped into metal tiers (Bronze, Silver, Gold, Platinum), with Silver being the benchmark for subsidies.
+
+**Example: Family of 4, both adults age 50, living in Washington (2025):**
+
+- Sticker price for a Silver plan: ~$28,000/year ($2,350/month)
+
+But most people pay much less, thanks to income-based subsidies:
+
+- **$150K income:** ~$8,500/year ($710/month)
+- **$250K income:** ~$17,000/year ($1,420/month)
+- **$350K income:** ~$25,000/year ($2,080/month)
+
+(These are estimates; actual costs vary by county and plan. Use the [KFF calculator](https://www.kff.org/interactive/subsidy-calculator/) for your situation.)
+
+- If your income is under 150% FPL, you may pay $0 for a Silver plan.
+- If your income is over $350K, you'll likely pay full price (no subsidy).
+
+**But it's not just about the premium.** ACA plans also have:
+
+- **Deductibles:** The amount you pay out-of-pocket before insurance starts covering most costs. For Silver plans, this can be $5,000–$10,000 per year for a family.
+- **Co-pays:** Fixed amounts you pay for certain services (e.g., $30 for a doctor visit, $50 for a specialist).
+- **Co-insurance:** A percentage you pay for care after the deductible (e.g., 20% of the bill).
+- **Out-of-pocket maximum:** The most you'll pay in a year (often $15,000–$18,000 for a family on a Silver plan). After you hit this, insurance covers 100% of covered services.
+
+If you have frequent care needs—like regular physiotherapy, psychiatry, or ongoing prescriptions—your total annual cost can be much higher than just the premium. It's important to look at all these numbers, not just the monthly payment, when budgeting for health care.
+
+#### COBRA
+
+COBRA lets you keep your employer's health plan for up to 18 months after you leave your job. The catch? You pay the full cost—your part plus your employer's—plus a 2% admin fee. For many tech jobs, this means $2,000–$3,500/month for a family plan. It's expensive, but it's the easiest way to avoid a coverage gap if you're between jobs or waiting for a new plan to start.
+
+- COBRA is usually best for short transitions (e.g., between jobs, or if you're in the middle of treatment and want to keep your doctors).
+- For longer gaps, compare COBRA to ACA Marketplace plans—Marketplace is often much cheaper, especially if your income drops.
+
+#### Medicare
+
+Medicare is the federal health insurance program for people 65+ (and some younger people with disabilities). It's not free, but it's much cheaper than private insurance at that age.
+
+**2025 Medicare costs:**
+
+- **Part A (hospital):** Free for most (if you or your spouse worked 10+ years). Otherwise, up to $518/month.
+- **Part B (doctor/outpatient):** $185/month standard premium (higher if your income is above $106K single/$212K married). Annual deductible: $257.
+- **Part D (prescription drugs):** Varies by plan, but most pay $30–$50/month. Higher-income folks pay a surcharge.
+- **Medicare Advantage (Part C):** Bundled plans with varying costs and coverage; you still pay Part B premium.
+- **Medigap:** Optional supplemental insurance to cover what Medicare doesn't; cost varies by plan and location.
+
+Medicare doesn't cover everything (e.g., dental, vision, long-term care), so most people buy a supplemental plan (Medigap or Advantage). If you're approaching 65, plan ahead for the transition—there are deadlines and penalties for late enrollment.
 
 ### Stock options
 
