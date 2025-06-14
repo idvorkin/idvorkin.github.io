@@ -42,6 +42,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
   - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
   - [Washington State Capital Gains Tax](#washington-state-capital-gains-tax)
+  - [Dealing with a Concentrated Meta Stock Position: Timing Your Capital Gains](#dealing-with-a-concentrated-meta-stock-position-timing-your-capital-gains)
   - [Cash positions and high yield savings](#cash-positions-and-high-yield-savings)
   - [No load index funds and ETFs](#no-load-index-funds-and-etfs)
   - [Health Insurance](#health-insurance)
@@ -221,6 +222,33 @@ This tax applies to individuals, including those with ownership interests in pas
 
 - Real estate
 - Retirement accounts
+
+### Dealing with a Concentrated Meta Stock Position: Timing Your Capital Gains
+
+Suppose you have a large amount of Meta stock, and nearly all of it is unrealized capital gains. This is a classic tech employee problem: you've accumulated a big position, but now you have to decide when to sell and realize those gains.
+
+The core dilemma:
+
+- **Sell now** while you're working, earning a high salary, and in the top tax bracket (federal + WA state capital gains)?
+- **Wait until you retire** (or take a break), when your ordinary income drops and you can control how much capital gains you realize each year?
+
+If long-term capital gains are your only income, you can use the standard deduction to further reduce your taxable income. For 2024, the standard deduction for married filing jointly is $29,200. The 0% federal long-term capital gains rate applies up to $94,050 of taxable income (after the standard deduction). This means you could sell over $120,000 of appreciated stock and pay no federal tax on those gains if you have no other income.
+
+However, in practice, most people will have at least some dividend or interest income from fixed income positions (like bonds, CDs, or high-yield savings). These count toward your taxable income and reduce the amount of capital gains that can be taxed at the 0% rate. Be sure to include all sources of income when planning your withdrawals and tax strategy.
+
+The raw numbers - total taxes paid
+
+| Income /Salary | Cap Gain Sales | Average Tax Rate on Cap Gains | Marginal Tax Rate on Cap Gains | Comments                                                                                                                              |
+| -------------: | -------------: | ----------------------------: | -----------------------------: | ------------------------------------------------------------------------------------------------------------------------------------- |
+|       $600,000 |       $200,000 |                         23.8% |   23.8% (20% LTCG + 3.8% NIIT) | High salary, gains are LTCG but taxed at top LTCG+NIIT rates due to income stacking                                                   |
+|        $50,000 |       $120,000 |                          8.8% |                            15% | $50K ordinary income uses up part of 0% LTCG bracket; only ~$70K of gains at 0%, rest at 15%                                          |
+|        $50,000 |       $200,000 |                         11.3% |                            15% | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $130K at 15% (federal), all below WA exemption         |
+|        $50,000 |       $300,000 |                         13.2% |      15% Fed, 7% WA over $270K | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $230K at 15% (federal), $30K above WA exemption at 7%  |
+|        $50,000 |       $400,000 |                         15.4% |      15% Fed, 7% WA over $270K | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $330K at 15% (federal), $130K above WA exemption at 7% |
+
+_Average Tax Rate on Cap Gains: Total tax paid (federal + WA) divided by cap gains sold. Marginal Tax Rate on Cap Gains: Highest rate applied to the last dollar of cap gains (federal and/or WA). All scenarios assume long-term capital gains (LTCG); however, with high salary, LTCG are taxed at the top LTCG rate (20%) plus 3.8% NIIT due to income stacking. The $50K income scenarios show how ordinary income reduces the amount of cap gains eligible for the 0% LTCG rate._
+
+_In the $600K salary scenario, the $200K of gains are LTCG, but are taxed at 20% plus 3.8% NIIT ($47,600). Adjust for your actual bracket and NIIT applicability._
 
 ### Cash positions and high yield savings
 
@@ -510,3 +538,7 @@ Relative
 ## Other Resources
 
 [Visualizing the worlds money](https://www.visualcapitalist.com/all-of-the-worlds-money-and-markets-in-one-visualization-2020/)
+
+If long-term capital gains are your only income, you can use the standard deduction to further reduce your taxable income. For 2024, the standard deduction for married filing jointly is $29,200. The 0% federal long-term capital gains rate applies up to $94,050 of taxable income (after the standard deduction). This means you could sell over $120,000 of appreciated stock and pay no federal tax on those gains if you have no other income.
+
+However, in practice, most people will have at least some dividend or interest income from fixed income positions (like bonds, CDs, or high-yield savings). These count toward your taxable income and reduce the amount of capital gains that can be taxed at the 0% rate. Be sure to include all sources of income when planning your withdrawals and tax strategy.
