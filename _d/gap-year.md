@@ -295,6 +295,10 @@ So what are the dragons guarding this treasure of time?
   - **But** Being conservative with estimates builds in a buffer for surprises
   - **So** Measure twice, cut once :) And review with others
 
+For the philisophicaly minded, from the [Prophet](https://poets.org/poem/giving-0):
+
+_What is fear of need by need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?_
+
 ## Slaying Financial Security - Gap Year Triggers
 
 See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
