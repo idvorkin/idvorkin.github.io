@@ -44,10 +44,9 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Washington State Capital Gains Tax](#washington-state-capital-gains-tax)
   - [Cash positions and high yield savings](#cash-positions-and-high-yield-savings)
   - [No load index funds and ETFs](#no-load-index-funds-and-etfs)
-  - [Unexpected expenses](#unexpected-expenses)
   - [Health Insurance](#health-insurance)
     - [ACA Marketplace](#aca-marketplace)
-    - [Cobra](#cobra)
+    - [COBRA](#cobra)
     - [Medicare](#medicare)
   - [Stock options](#stock-options)
     - [Sell a Put Option](#sell-a-put-option)
@@ -136,7 +135,7 @@ A 401k is a special IRA that is setup by your employee that has matching (good t
 
 ### RMDs Required Minimum Distributions
 
-Once you turn 73, the IRS requires you to start taking Required Minimum Distributions (RMDs) each year from traditional retirement accounts like IRAs and 401(k)s. Your RMD is calculated by dividing your account balance at the end of the previous year by a life expectancy factor from IRS tables. For example, at age 73, the divisor is 26.5, so a $2 million balance would result in a required withdrawal of about $75,472. Failing to take your RMD on time can lead to steep penalties, so it's essential to plan ahead and integrate RMDs into your overall retirement income strategy.
+Once you turn 73, the IRS requires you to start taking Required Minimum Distributions (RMDs) each year from traditional retirement accounts like IRAs and 401(k)s. Your RMD is calculated by dividing your account balance at the end of the previous year by a life expectancy factor from IRS tables. For example, at age 73, the divisor is 26.5, so a $5 million balance would result in a required withdrawal of about $188,679 ($5,000,000 / 26.5). Failing to take your RMD on time can lead to steep penalties, so it's essential to plan ahead and integrate RMDs into your overall retirement income strategy.
 
 ### IRA vs Roth IRA
 
