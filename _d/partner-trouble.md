@@ -9,9 +9,12 @@ redirect_from:
   - /couples
 tags:
   - book-notes
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-partner-trouble.webp
 ---
 
 There are two types of couples in the world. Those who fight, and those you don't know.
+
+{% include blob_image_float_right.html src="blog/raccoon-partner-trouble.webp" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
