@@ -546,7 +546,7 @@
         },
         "/affirmations": {
             "description": "Every day I write out my affirmations. These positive statements help me challenge and overcome my self-sabotaging and negative thoughts and behaviors. Repeating them reinforces them, helping me be the person I want to be. My affirmations have power to me and have evolved over time. You’ll want to find the ones that speak best to you. Oh and bonus points if beyond just writing out your daily affirmations you reflect on how you can/will and have applied them.\n\n",
-            "doc_size": 19000,
+            "doc_size": 22000,
             "file_path": "_site/affirmations.html",
             "incoming_links": [
                 "/gap-year",
@@ -554,19 +554,19 @@
                 "/operating-manual",
                 "/process-journal"
             ],
-            "last_modified": "2025-05-07T17:40:46-07:00",
+            "last_modified": "2025-06-17T07:28:43.497659",
             "markdown_path": "_d/affirmations2.md",
             "outgoing_links": [
+                "/7h-c1",
+                "/7h-c2",
+                "/7h-c3",
+                "/7h-c5",
                 "/anxiety",
                 "/appreciate",
-                "/be-proactive",
                 "/class-act",
-                "/curious",
-                "/end-in-mind",
-                "/essentialism",
-                "/first-things-first",
-                "/first-understand",
-                "/insecure",
+                "/compassion",
+                "/essential",
+                "/imposter",
                 "/joy",
                 "/sublime",
                 "/writing"
@@ -969,7 +969,6 @@
             "file_path": "_site/be-proactive.html",
             "incoming_links": [
                 "/7-habits",
-                "/affirmations",
                 "/anxiety",
                 "/d/habits",
                 "/emotions",
@@ -1431,7 +1430,6 @@
             "file_path": "_site/curious.html",
             "incoming_links": [
                 "/90days",
-                "/affirmations",
                 "/being-a-great-manager",
                 "/class-act",
                 "/coaching",
@@ -2246,7 +2244,6 @@
             "incoming_links": [
                 "/4dx",
                 "/7-habits",
-                "/affirmations",
                 "/content-audience",
                 "/d/resistance",
                 "/elder",
@@ -2344,7 +2341,6 @@
             "file_path": "_site/essentialism.html",
             "incoming_links": [
                 "/4dx",
-                "/affirmations",
                 "/balance",
                 "/be-proactive",
                 "/books-that-defined-me",
@@ -2460,7 +2456,6 @@
                 "/4dx",
                 "/7-habits",
                 "/90days",
-                "/affirmations",
                 "/delegate",
                 "/frog"
             ],
@@ -2488,7 +2483,6 @@
             "incoming_links": [
                 "/7-habits",
                 "/advice",
-                "/affirmations",
                 "/class-act",
                 "/curious",
                 "/negotiate",
@@ -2916,7 +2910,6 @@
             "file_path": "_site/insecure.html",
             "incoming_links": [
                 "/90days",
-                "/affirmations",
                 "/depression",
                 "/work-satisfaction"
             ],
