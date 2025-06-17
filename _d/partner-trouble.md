@@ -12,7 +12,7 @@ tags:
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-partner-trouble.webp
 ---
 
-There are two types of couples in the world. Those who fight, and those you don't know.
+There are two types of couples in the world. Those who fight, and those you don't know. Your life partnership is the most impactful relationship you have, are you investing sufficiently?
 
 {% include blob_image_float_right.html src="blog/raccoon-partner-trouble.webp" %}
 
@@ -20,16 +20,17 @@ There are two types of couples in the world. Those who fight, and those you don'
 <!-- vim-markdown-toc-start -->
 
 - [Act With Love](#act-with-love)
-  - [Not in a great relationship. There are a few choices](#not-in-a-great-relationship-there-are-a-few-choices)
-    - [Drain - What's killing your relationship](#drain---whats-killing-your-relationship)
+  - [Bad relationship? Two choices](#bad-relationship-two-choices)
+  - [Drain - What's killing your relationship](#drain---whats-killing-your-relationship)
   - [Being Assertive](#being-assertive)
     - [Assertion vs Aggression](#assertion-vs-aggression)
     - [Declining Requests and setting boundaries](#declining-requests-and-setting-boundaries)
     - [Advanced Assertions Skills](#advanced-assertions-skills)
+- [Love Languages](#love-languages)
+- [Random Topics](#random-topics)
   - [Transitions](#transitions)
   - [Kids: Are you doing the math right on shared interests?](#kids-are-you-doing-the-math-right-on-shared-interests)
-  - [Love is a Verb, Not a Noun](#love-is-a-verb-not-a-noun)
-- [Love Languages](#love-languages)
+  - [Love is a Verb, Not a Noun/Emotion](#love-is-a-verb-not-a-nounemotion)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -38,7 +39,7 @@ There are two types of couples in the world. Those who fight, and those you don'
 
 ## Act With Love
 
-### Not in a great relationship. There are a few choices
+### Bad relationship? Two choices
 
 - 1. Divorce - Sounds good, but excellent chance you'll end up in the same spot in your next relationship.
 - 2. Stay - Two Choices
@@ -47,7 +48,7 @@ There are two types of couples in the world. Those who fight, and those you don'
     - 2.b.1 - Your partner reciprocates, your relationship improves.
     - 2.b.2 - Your partner doesn't, you get a divorce, but now you'll have many more useful skills.
 
-#### Drain - What's killing your relationship
+### Drain - What's killing your relationship
 
 The things that are killing your relationship:
 
@@ -56,8 +57,8 @@ The things that are killing your relationship:
 - A - Avoidance. Trying not to think about it, often through escape.
 - I - Inside your head. Really ruminating on what is wrong, what was wasted, etc.
 - N - Not living your values.
-  N.1) Being a doormat/Being in a Lose/Win.
-  N.2) Not being the partner you know you can be.
+  - N.1) Being a doormat/Being in a Lose/Win.
+  - N.2) Not being the partner you know you can be.
 
 ### Being Assertive
 
@@ -113,6 +114,20 @@ Regardless, you need to have boundaries
 | Repeatedly does something you've asked them to stop. | "If you continue doing this, then I'll have to issue a formal warning." (_Consequence Assertion_)                                                                            |
 | Ignores multiple requests to change behavior.        | "I've asked you multiple times to stop ABC. If it happens again, I will have to take XYZ action." (_Consequence Assertion_)                                                  |
 
+## Love Languages
+
+The way you want to be loved. Annoyingly, excellent chance your love language doesn't match your partner's. Even worse, you'll be confused because you think you're doing things that are worth a lot in your love language, but worthless in theirs. Ugh.
+
+- H - Hugs! Physical Touch.
+- E - Terms of Endearment. Saying I love you, leaving notes of affirmation of their importance.
+- A - Acts of Service. Take out the recycling, do the dishes.
+- R - Receiving Gifts. It's not the size/price that matters; it's the thought. Classics: flowers and chocolates.
+- T - Quality Time together.
+
+ps. (My love languages are physical touch and quality time.)
+
+## Random Topics
+
 ### Transitions
 
 A common challenge in relationships is when a woman goes back to work when the kids are grown up.
@@ -138,18 +153,8 @@ Ask any parent what they care about most? Regardless of their "requested prefere
 
 **So yeah, dumb ass, you definitely share a very large shared interest**
 
-### Love is a Verb, Not a Noun
+### Love is a Verb, Not a Noun/Emotion
 
 Love is not an emotion/noun; it's a verb, a verb meaning act of service.
 
-## Love Languages
-
-The way you want to be loved. Annoyingly, excellent chance your love language doesn't match your partner's. Even worse, you'll be confused because you think you're doing things that are worth a lot in your love language, but worthless in theirs. Ugh.
-
-- H - Hugs! Physical Touch.
-- E - Terms of Endearment. Saying I love you, leaving notes of affirmation of their importance.
-- A - Acts of Service. Take out the recycling, do the dishes.
-- R - Receiving Gifts. It's not the size/price that matters; it's the thought. Classics: flowers and chocolates.
-- T - Quality Time together.
-
-ps. (My love languages are physical touch and quality time.)
+TODO: Add the anecodte from the 7 habits
