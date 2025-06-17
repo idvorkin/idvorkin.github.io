@@ -3790,13 +3790,13 @@
         },
         "/partner-trouble": {
             "description": "There are two types of couples in the world. Those who fight, and those you don’t know.\n\n",
-            "doc_size": 24000,
+            "doc_size": 26000,
             "file_path": "_site/partner-trouble.html",
             "incoming_links": [
                 "/gap-year",
                 "/money"
             ],
-            "last_modified": "2025-02-01T20:44:24-08:00",
+            "last_modified": "2025-06-17T06:18:35.732565",
             "markdown_path": "_d/partner-trouble.md",
             "outgoing_links": [
                 "/essentialism"
