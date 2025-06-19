@@ -1,5 +1,5 @@
 ---
-title: Humane Structure: A Gentle Framework for Wild Minds
+title: Humane Structure -  A Gentle Framework for Wild Minds
 permalink: /structure
 layout: post
 ---
@@ -17,10 +17,16 @@ What if structure could be kind? You already know what you want to do. You know 
   - [Use Language That Observes, Not Judges](#use-language-that-observes-not-judges)
   - [Build in Flexibility from the Start](#build-in-flexibility-from-the-start)
   - [Focus on Awareness Over Performance](#focus-on-awareness-over-performance)
-- [The Three Pillars of Humane Structure](#the-three-pillars-of-humane-structure)
+- [The Three Pillars of Humane Trackers](#the-three-pillars-of-humane-trackers)
   - [Awareness: Knowing Where You Are](#awareness-knowing-where-you-are)
   - [Recording: Capturing What Happened](#recording-capturing-what-happened)
+  - [Capture Implicitly When Possible](#capture-implicitly-when-possible)
   - [Learning: Finding Patterns and Insights](#learning-finding-patterns-and-insights)
+- [Other thoughts](#other-thoughts)
+  - [High performance mode vs humane mode](#high-performance-mode-vs-humane-mode)
+- [Humane Tracker Technical Architecture](#humane-tracker-technical-architecture)
+  - [Data Model](#data-model)
+- [Thoughts to merge](#thoughts-to-merge)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -122,9 +128,9 @@ The foundation of humane structure is a radically different set of assumptions a
 
 **The key principle:** Humane structure serves the human using it. It adapts to you, rather than demanding you adapt to it.
 
-## The Three Pillars of Humane Structure
+## The Three Pillars of Humane Trackers
 
-At its core, any structure needs three functions: awareness (knowing where you are), recording (capturing what happened), and learning (finding patterns and insights). The difference between harsh and humane structure lies in how these functions are implemented.
+At its core, any structure needs tracking, which needs three functions: awareness (knowing where you are), recording (capturing what happened), and learning (finding patterns and insights). The difference between harsh and humane structure lies in how these functions are implemented.
 
 ### Awareness: Knowing Where You Are
 
@@ -190,6 +196,35 @@ Even recording why you didn't do something becomes valuable:
 
 Your future self gets context, not just data. Recording becomes a supportive friend who remembers your struggles and helps you plan around them, not a disapproving parent keeping score.
 
+### Capture Implicitly When Possible
+
+The best recording happens automatically, without effort or remembering. Modern technology can capture much of what we care about without adding friction to our lives.
+
+**Physical health examples:**
+
+- Apple Watch automatically logs steps, heart rate, and workouts
+- Sleep trackers record sleep duration and quality
+- Fitness apps track runs, bike rides, and gym sessions
+- Smart scales log weight trends over time
+
+**Mental/emotional health examples:**
+
+- Calendar apps show how you actually spend time vs. how you think you spend it
+- Location data reveals patterns (gym visits, time outdoors, social activities)
+- Photo timestamps show what activities bring you joy
+- Screen time data tracks digital habits
+
+**Work and creativity examples:**
+
+- Writing apps track word counts and writing frequency
+- Code commits show programming consistency
+- Time tracking apps reveal where energy actually goes
+- Email and text patterns show communication rhythms
+
+**The goal:** Reduce the mental load of remembering to record. Let technology handle the data collection while you focus on the context and insights. When you do need to manually record something, make it as simple as possible—a quick voice note, a one-tap entry, or a brief text.
+
+Combine automatic data with occasional human context: "Apple Watch shows I walked 8,000 steps, but what it doesn't show is that I felt anxious and walking helped me think through the work problem."
+
 ### Learning: Finding Patterns and Insights
 
 Traditional learning from structure is performance evaluation: What did you accomplish? Where did you fall short? What's your success rate? It's designed to judge and optimize, treating you like a machine to be tuned.
@@ -217,3 +252,22 @@ Humane learning:
 - **Plans adjustments, not punishments** - "How can I make this easier?" vs "How can I force myself to do better?"
 
 Learning becomes a curious conversation with yourself about what you're discovering, not a stern lecture about what you're doing wrong.
+
+## Other thoughts
+
+### High performance mode vs humane mode
+
+Sometiems you go from I just want to get better to I want to hyper optimze, then you need different eviews
+
+## Humane Tracker Technical Architecture
+
+### Data Model
+
+Classicly this would be a rigid data model, with rows and columns, and trending over date. But since we have LLMs we can everything in a like with links from the "unstructured data" to strucutre, which is good for other stuff.
+
+## Thoughts to merge
+
+- You only track stuff on the way in the good direction (look at stocks when going up, weight when going down)
+- Every deposit is valuable and matters
+- Easy to forget all the progress you've made
+- Easy to lose confidence
