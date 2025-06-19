@@ -82,6 +82,9 @@ npx vitest run --reporter=verbose
 [90mstderr[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
 [22m[39m❌ non-existent-container container not found in DOM
 
+[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
+[22m[39mToggle element with ID remaining-posts-toggle not found
+
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects
@@ -100,9 +103,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
-[90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
-[22m[39mToggle element with ID remaining-posts-toggle not found
-
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould skip pages without last_modified dates
@@ -167,6 +167,18 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould walk the tree in breadth-first order
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mtree_to_plotly_data_format[2m > [22mshould convert tree to plotly format
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrender_prompt_for_category[2m > [22mshould render a prompt for a category
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_random_prompts[2m > [22mshould add random prompts for all categories
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould create a sunburst visualization
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle missing Plotly
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle errors during plot creation
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrandom_prompt_for_label[2m > [22mshould find a random prompt for a label
+ [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mcategory_to_prompts_text[2m > [22mshould convert category elements to text with prompts
 [90mstdout[2m | tests/unit/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
 [22m[39mappend_randomizer_div #non-existent not present
 
@@ -181,18 +193,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould append content from the factory when parent is found
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould handle click events on non-link elements
  [32m✓[39m tests/unit/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not regenerate content when clicking on a link
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould walk the tree in breadth-first order
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mtree_to_plotly_data_format[2m > [22mshould convert tree to plotly format
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrender_prompt_for_category[2m > [22mshould render a prompt for a category
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_random_prompts[2m > [22mshould add random prompts for all categories
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould create a sunburst visualization
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle missing Plotly
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle errors during plot creation
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrandom_prompt_for_label[2m > [22mshould find a random prompt for a label
- [32m✓[39m tests/unit/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mcategory_to_prompts_text[2m > [22mshould convert category elements to text with prompts
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m tests/unit/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -231,6 +231,6 @@ npx vitest run --reporter=verbose
 
 [2m Test Files [22m [1m[32m14 passed[39m[22m[90m (14)[39m
 [2m      Tests [22m [1m[32m157 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (162)[39m
-[2m   Start at [22m 14:54:02
-[2m   Duration [22m 3.43s[2m (transform 476ms, setup 232ms, collect 693ms, tests 415ms, environment 5.19s, prepare 1.21s)[22m
+[2m   Start at [22m 15:17:47
+[2m   Duration [22m 3.52s[2m (transform 492ms, setup 265ms, collect 669ms, tests 404ms, environment 5.31s, prepare 1.23s)[22m
 
