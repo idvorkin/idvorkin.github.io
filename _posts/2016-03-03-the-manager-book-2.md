@@ -55,6 +55,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [How do you identify and help eng decide if management is right for them](#how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them)
   - [How do you grow new EMs](#how-do-you-grow-new-ems)
   - [How do you grow top talent](#how-do-you-grow-top-talent)
+  - [How do I help people raise concerns/give constructive feedback?](#how-do-i-help-people-raise-concernsgive-constructive-feedback)
   - [Recall career is just one part of your life](#recall-career-is-just-one-part-of-your-life)
   - [How do you have a difficult conversation](#how-do-you-have-a-difficult-conversation)
   - [Should employees game the system to optimize for the review process?](#should-employees-game-the-system-to-optimize-for-the-review-process)
@@ -780,6 +781,29 @@ I've done this a fair number of times now, here are some topics that are usually
 
 ### How do you grow top talent
 
+### How do I help people raise concerns/give constructive feedback?
+
+There tend to be two things that hold people back:
+
+**1/ It feels like throwing someone under the bus**
+
+- **Concerns are an act of care.** Noticing something doesn’t mean someone messed up—it means you care enough to keep things running smoothly.
+- **You don’t have to be sure.** If something feels off or unclear, it’s still worth surfacing. I’ll help figure out if it needs action or just acknowledgment.
+- **It’s not about blame.** Raising concerns isn’t betrayal—it’s like pointing out a wobbly wheel so no one crashes.
+- **It’s a shared responsibility.** We all help each other see around corners.
+- **I’ll walk with you.** You don’t need a perfect story—just a gut feeling. I’ll help you sort out what matters and what to do next.
+
+**2/ It’s hard to get the words right**
+
+I remind folks not to waste time polishing every word or making sure their evidence is bulletproof—this isn’t a performance or a criminal trial.
+
+Just jot down a few rough thoughts and grab some face-to-face time with me. We’ll talk it through. Here’s what to expect:
+
+- **I keep it confidential.** Unless you say otherwise, your name doesn’t travel.
+- **I ask precise questions.** I’m trained to spot signal in fuzzy stories and I often have more context—I’ll help clarify what you saw and get the details I need to dig deeper.
+- **I seek other input.** If needed, I’ll check quietly with others to see if it’s a pattern or a one-off.
+- **I stay with you.** Sometimes I’ll tackle the concern myself; other times I’ll support you in giving feedback (if you'd like). Either way, you're putting the team first, and I’ve got your back.
+
 ### Recall career is just one part of your life
 
 Often, when folks think of career development, they fixate on their job title and compensation. Those aspects are important, but I encourage folks I support that career is only [one aspect of life](https://bit.ly/igor-wlb-manifesto), and they should look at their life holistically
@@ -1266,7 +1290,7 @@ Suppose it takes 1 quarter for backend, 1 for Android, and 3 for iOS, but the ta
 ### Be wary the planning trap
 
 - _xref: [Begin with the end in mind](/7h-c2)_
-- _Copied from this [tweet](https://x.com/Devon_Eriksen_/status/1910314718998192537)_
+- _Copied from this [tweet](https://x.com/Devon_Eriksen_/status/1910314718998192537)\_
 
 This is a valuable lesson for our own lives. If there's something you want to do, something you want to try, some goal you have, it's easy to dip a toe in the water, test the temperature, and plan. A lot.
 
