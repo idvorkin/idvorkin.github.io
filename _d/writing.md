@@ -28,8 +28,7 @@ Useful writing tells people (including, possibly most importantly you) something
   - [Minto's Pyramid Principle](#mintos-pyramid-principle)
   - [Elon's First Principles](#elons-first-principles)
   - [Five Whys](#five-whys)
-  - [Diagrams](#diagrams)
-  - [Stories and actions not just data](#stories-and-actions-not-just-data)
+  - [Visualizations and Diagrams](#visualizations-and-diagrams)
 - [Writing to be Understood](#writing-to-be-understood)
   - [Know your audience](#know-your-audience)
   - [The journey or the recommendation](#the-journey-or-the-recommendation)
@@ -201,29 +200,11 @@ You know you have your Five Why's right when you can reverse the answers joined 
 - Therefore it's a lot of effort.
 - Therefore I stopped exercising
 
-### Diagrams
+### Visualizations and Diagrams
 
-Diagrams are a vocabulary until themselves. My notes on [visual vocubulary](/td/visual-vocabulary). But a few notable links:
+Visual storytelling deserves its own deep dive. For comprehensive coverage of data visualization, chart selection, and visual communication principles:
 
-- [The noun project](http://thenounproject.com) - open source icons for everything.
-
-### Stories and actions not just data
-
-A fantastic diagram to explain the idea
-
-{%include blob_image.html src="blog/data-story.jpg" %}
-
-Cool visualization of user PINs
-
-![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250620_090408.webp)
-
-Cool visualization of survivorship bias
-
-![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250620_090627.webp)
-
-And a great primer on what to convery to graph
-
-- [Decide what you want to express - then pick the graph](https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f)
+{%include summarize-page.html src="/viz" %}
 
 ## Writing to be Understood
 
