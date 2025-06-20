@@ -1988,7 +1988,7 @@
         },
         "/decisive": {
             "description": "Decisions are hard because we have Narrow Framing, Confirmation Bias, Short Term Emotion and Overconfidence. We can overcome this by Widening our Options, Reality-Testing our Assumptions, Attaining Distance before Deciding and Preparing to Be Wrong.\n\n",
-            "doc_size": 43000,
+            "doc_size": 44000,
             "file_path": "_site/decisive.html",
             "incoming_links": [
                 "/being-a-great-manager",
@@ -2000,7 +2000,7 @@
                 "/random-idea",
                 "/work-satisfaction"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-06-20T08:54:53.163038",
             "markdown_path": "_posts/2019-09-21-decisive.md",
             "outgoing_links": [],
             "redirect_url": "",
