@@ -213,6 +213,14 @@ A fantastic diagram to explain the idea
 
 {%include blob_image.html src="blog/data-story.jpg" %}
 
+Cool visualization of user PINs
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250620_090408.webp)
+
+Cool visualization of survivorship bias
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250620_090627.webp)
+
 And a great primer on what to convery to graph
 
 - [Decide what you want to express - then pick the graph](https://towardsdatascience.com/5-quick-and-easy-data-visualizations-in-python-with-code-a2284bae952f)

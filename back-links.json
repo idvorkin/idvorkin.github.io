@@ -373,8 +373,7 @@
             "file_path": "_site/7h-concepts.html",
             "incoming_links": [
                 "/7-habits",
-                "/advice",
-                "/writing"
+                "/advice"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/7h-c0.md",
@@ -5443,10 +5442,10 @@
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
-            "last_modified": "2025-02-09T10:46:44-08:00",
+            "last_modified": "2025-06-20T09:07:38.553907",
             "markdown_path": "_d/writing.md",
             "outgoing_links": [
-                "/7h-concepts",
+                "/7h-c0",
                 "/90days",
                 "/amazon",
                 "/coaching",
