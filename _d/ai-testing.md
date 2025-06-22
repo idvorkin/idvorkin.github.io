@@ -17,6 +17,7 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
 - [Examples](#examples)
   - [Who is the funnier LLM](#who-is-the-funnier-llm)
   - [Who is the better git summarizer](#who-is-the-better-git-summarizer)
+  - [Git commit message for blog content avoid ToC updates](#git-commit-message-for-blog-content-avoid-toc-updates)
 - [Eval Systems](#eval-systems)
   - [Human-based blind taste tests Chatbot arena](#human-based-blind-taste-tests-chatbot-arena)
   - [Eval Data Sets](#eval-data-sets)
@@ -101,6 +102,22 @@ tests:
     - type: llm-rubric
       value: ensure the diff is described well
 ```
+
+### Git commit message for blog content avoid ToC updates
+
+I use a tool to write my git commit messages. It can get slow, so I like to run it with maverik when it's not that important. However, when summarizing changes to my blog there are always changes to the auto generated ToC, which I don't want to be included, I have trouble gettign Maverik to honor [this](https://github.com/idvorkin/nlp/blob/03fe037a2323f21dd1728862dbf598d8af541fec/commit.py?plain=1#L146).
+
+```
+- **Do not** mention discuss changes to the table of content.
+```
+
+Teting this is normally a PITA with me doing manual testing, lets see if I can make some evals to fix this. I think I have a few choices
+
+1. Prompt Foo
+2. DeepEval
+3. Giskard
+
+Ltes start with promptfoo
 
 ## Eval Systems
 
