@@ -60,11 +60,11 @@ npx vitest run --reporter=verbose
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
     at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
 
-[90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
-[22m[39m❌ non-existent-container container not found in DOM
-
 [90mstdout[2m | tests/unit/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
 [22m[39mToggle element with ID remaining-posts-toggle not found
+
+[90mstderr[2m | tests/unit/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
+[22m[39m❌ non-existent-container container not found in DOM
 
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
  [32m✓[39m tests/unit/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
@@ -123,16 +123,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
  [32m✓[39m tests/unit/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
- [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL
- [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist
- [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value
- [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould handle URL encoded values
- [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould use window.location.href when no URL is provided
- [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with title and content
- [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with anchor
- [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
- [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
- [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
@@ -160,6 +150,16 @@ npx vitest run --reporter=verbose
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
  [32m✓[39m tests/unit/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
+ [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL
+ [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist
+ [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value
+ [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould handle URL encoded values
+ [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould use window.location.href when no URL is provided
+ [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with title and content
+ [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with anchor
+ [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
+ [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
+ [32m✓[39m tests/unit/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
  [32m✓[39m tests/unit/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
@@ -231,6 +231,6 @@ npx vitest run --reporter=verbose
 
 [2m Test Files [22m [1m[32m14 passed[39m[22m[90m (14)[39m
 [2m      Tests [22m [1m[32m157 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (162)[39m
-[2m   Start at [22m 15:50:15
-[2m   Duration [22m 3.39s[2m (transform 453ms, setup 289ms, collect 641ms, tests 409ms, environment 5.11s, prepare 1.17s)[22m
+[2m   Start at [22m 16:23:34
+[2m   Duration [22m 3.41s[2m (transform 548ms, setup 237ms, collect 743ms, tests 394ms, environment 5.09s, prepare 1.22s)[22m
 
