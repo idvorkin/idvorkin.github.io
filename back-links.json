@@ -315,7 +315,7 @@
                 "/random-idea",
                 "http://0.0.0.0:4000/retire"
             ],
-            "last_modified": "2025-06-14T14:16:19-07:00",
+            "last_modified": "2025-06-22T09:25:20.279870",
             "markdown_path": "_d/gap-year.md",
             "outgoing_links": [
                 "/7-habits",
@@ -330,9 +330,12 @@
                 "/money",
                 "/partner-trouble",
                 "/physical-health",
+                "/resistance",
                 "/retire",
                 "/siy",
                 "/timeoff",
+                "/y2024",
+                "/y2025",
                 "/y24",
                 "/y25"
             ],

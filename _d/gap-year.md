@@ -38,6 +38,7 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
 - [Igor's Identity Dragon](#igors-identity-dragon)
 - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
+- [Igor's Gap Year Pre-Mortem](#igors-gap-year-pre-mortem)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -422,3 +423,11 @@ Will this actually slay the Financial Security Dragon? Let's be real - we're tal
 
 - Product artifacts: TBD
 - Revenue artifacts: Affliate links? Course? Ad Revenue from Content? Who knows
+
+## Igor's Gap Year Pre-Mortem
+
+In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I hthink this is another pivot on the dragons above
+
+- I'm lonely
+
+- I resent my family
