@@ -26,6 +26,13 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 - [Mapping the AI Landscape](#mapping-the-ai-landscape)
   - [Capabilities: Large Context/Structured Output/Real Time](#capabilities-large-contextstructured-outputreal-time)
   - [AI Engagement Model: Tools/Co-Pilots/Chat/Agents](#ai-engagement-model-toolsco-pilotschatagents)
+- [Tech Deep Dive - Use case to Model](#tech-deep-dive---use-case-to-model)
+  - [Fast Model](#fast-model)
+  - [Hand writing recognition](#hand-writing-recognition)
+  - [Coding - with Cursor](#coding---with-cursor)
+  - [Coding - with Aider](#coding---with-aider)
+  - [Coding - Make a PR for me](#coding---make-a-pr-for-me)
+  - [Default](#default)
 - [Tech Deep Dive - Models](#tech-deep-dive---models)
   - [Model and Service Dashboards](#model-and-service-dashboards)
   - [Quality vs Speed vs Prices](#quality-vs-speed-vs-prices)
@@ -224,6 +231,32 @@ Chat has an affordances problem. As Simon Willison says, tools like ChatGPT rewa
 [![AI Product Map Groups](https://interconnected.org/more/2024/07/19/ai-product-map-groups-matt-webb.png)](https://interconnected.org/more/2024/07/19/ai-product-map-groups-matt-webb.png)
 
 [![AI Product Map Archetypes](https://interconnected.org/more/2024/07/19/ai-product-map-archetypes-matt-webb.png)](https://interconnected.org/more/2024/07/19/ai-product-map-archetypes-matt-webb.png)
+
+## Tech Deep Dive - Use case to Model
+
+I saw an interview question about when do you use which model/tool - this section is changing all the time.
+
+### Fast Model
+
+Having a fast model just changes the game, you can do stuff in real time like spell checking, it's usually good enough for this.
+
+- Right now it's Llama 4 maverick hosted on Groq, [crazy fast speeds](https://artificialanalysis.ai/models/llama-4-maverick/providers) (600 tokens/second!!)
+
+### Hand writing recognition
+
+Right now I'm using Gemini Pro - it does a great job, and I can just inline the binary content.
+
+### Coding - with Cursor
+
+It's been Claude 4 sonnet thinking for a while, need to think about trying others.
+
+### Coding - with Aider
+
+### Coding - Make a PR for me
+
+- I'm not sure how to differentiate codex, google jules and anything else, I guess I will soon.
+
+### Default
 
 ## Tech Deep Dive - Models
 
