@@ -269,7 +269,9 @@ class idvorkin_github_io_config:
 
     def make_site_relative_url_from_url(self, url: PathType) -> PathType:
         # Jekyll generates URLs that include the host
-        return PathType(url.replace("http://localhost:4000", ""))
+        url = url.replace("http://localhost:4000", "")
+        url = url.replace("http://0.0.0.0:4000", "")
+        return PathType(url)
 
     def make_site_relative_url_from_path(self, path: FileType) -> PathType:
         # Given a path, make the path URL
