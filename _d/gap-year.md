@@ -38,10 +38,13 @@ We've been conditioned to think of career breaks as financial suicide, but this 
 - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
 - [Igor's Identity Dragon](#igors-identity-dragon)
 - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
-- [Igor's Gap Year Pre-Mortem](#igors-gap-year-pre-mortem)
+- [Gap Year Pre-Mortem](#gap-year-pre-mortem)
+- [Gap Year Voices in my head](#gap-year-voices-in-my-head)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+{% include summarize-page.html src="/igor-gap-year" %}
 
 ## The Traditional Math vs. The Real Math
 
@@ -248,186 +251,18 @@ The gap year decision forces you to stare down the risk of the unknowns. Will yo
 
 The question isn't whether you can afford to take a gap year at 50. The question is whether you can afford not to.
 
-## Is Igor Gonna take a gap year?
+## The Choice Is Yours
 
-{% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
+The gap year at 50 isn't for everyone. It requires privilege, planning, and the courage to step away from the safety of routine. But for those positioned to make this choice, it offers something increasingly rare in our optimization-obsessed culture: **the chance to prioritize being over doing, relationships over achievements, and experiences over accumulation**.
 
-When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers include competitive offers from Google, and several mid sized companies. But today's job market is much much scarier than pre-COVID 2020 - it's become downright dicey out there. But as we say in the [7 habits](/7-habits), [begin with the end in mind](/end-in-mind)!
+Your 50-year-old self has resources your 25-year-old self couldn't imagine and capabilities your 65-year-old self may not retain. The gap year is about the intersection of these advantages - using your hard-earned wisdom and financial stability to reclaim the dreams that work has crowded out.
 
-But to balance that, some hypothical what ifs:
+The traditional path promises security through endless accumulation. The gap year path promises meaning through strategic investment in the non-renewable resources of time, energy, and relationships.
 
-- I can only see kid for N more year
-- I'm only able bodied for N more years.
-- I'm only alive for N more years.
+**The dragons guarding this treasure are real**, but they're often smaller than they appear from a distance. Financial security, professional momentum, and social expectations are important considerations, but they shouldn't be the only considerations.
 
-So what are the dragons guarding this treasure of time?
+If you're reading this and feeling that familiar mixture of excitement and terror, you might be one of the few people positioned to make this unconventional choice. The gap year isn't about escaping your life - it's about designing a life worth living.
 
-## Igor's Financial Security Dragon
+For my own wrestling match with these dragons and the specific calculations of someone considering this path, see my companion piece: **[Will Igor Take a Gap Year?](/igor-gap-year)**
 
-- What if the stock market tanks while I'm on my gap year?
-
-  - That would make me very uncomfortable to take money out of my stocks
-  - **But** It'll probably recover in the long term
-  - **So** Take out "Total Annual Expenses" and put it in a liquid account, so can auto draw "guilt" free
-
-- What if I can't get a job after the gap year?
-
-  - Job market is MUCH worse than it was 4 years ago.
-  - Lots of experienced folks in the market
-  - If applying to a job I'm overqualified for - they'll be like you'll leave as soon as you can. Ugh.
-  - Even though I have a network, doesn't matter if companies not hiring.
-  - **But** I've got 25 years+ of experience at top tech companies on a ton of various projects
-  - **But** I'll be heavily invested in professional development, so that makes me much more valuable.
-  - **But** I'll be doing content production, so people can see my skills.
-  - **So** Worst case: 1 year planned gap + 1 whole year to get a job = 2 years away from income, so hold 2 \* "Total Annual Expenses"
-
-- What if I end up with a lower income when I return (Meta pays at 90th+ percentile)?
-
-  - This is very probable.
-  - **But** Meta lets you have a "short interview loop" if you boomerang in a year
-  - **But** I've always said if you won't take a job for a pay cut, you shouldn't take it. I guess that could be cuz the job is less fun, or cuz it's the highest paid job you'll take :)
-  - **So** My retirement is not delayed by 1.5 years, It's delayed by 'N' years, that's OK, the year now is much more valuable
-
-- What if I'm wrong about my expenses?
-  - It's critical you get this right.
-  - **But** I've been tracking expenses for years in [Monarch Money](https://www.monarchmoney.com/) and [Boldin](https://www.boldin.com/) retirement planning software and have good baseline data
-  - **But** I'm not forgetting the non-obvious things like health insurance ($40K/year - wow!) and taxes (even though drawing long term cap gains, it adds up, especially with WA 7% tax over $270K) and major house repairs
-  - **But** I can adjust spending during the gap year if needed (not locked into fixed costs)
-  - **But** Being conservative with estimates builds in a buffer for surprises
-  - **So** Measure twice, cut once :) And review with others
-
-For the philisophicaly minded, from the [Prophet](https://poets.org/poem/giving-0):
-
-_What is fear of need by need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?_
-
-## Slaying Financial Security - Gap Year Triggers
-
-See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
-
-Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and sets up future Igor to run on Automatic. So here are some rules
-
-- Money: Net worth exceeds "X" Million.
-
-  - See my buddy the "Financial Security Dragon"
-  - Beyond this the risk is negligible
-
-- Date: XX/YY if my net worth is still higher than "Y" million, where Y is much lower than X.
-  - See my buddy the "Financial Security Dragon"
-  - What is the minimum value?
-
-* What are the actual dates and numbers?
-  - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
-
-## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
-
-- What if I get lazy and lose all direction and discipline?
-
-  - Without work structure, it's easy for me to drift without momentum AND lose discipline around health habits
-  - At 50, I still have peak physical capability, but this window closes fast - health decline could undermine everything the gap year is supposed to accomplish
-  - **But** I know my mental health practices and can recognize the warning signs early
-  - **But** Removing work stress eliminates a major barrier to consistent health habits
-  - **But** I can build structure into the gap year - it doesn't have to be completely unstructured
-  - **But** Having control over my schedule means I can exercise at optimal times, get proper sleep, and meal plan
-  - **But** Physical health is the foundation for mental clarity, project energy, and relationship engagement
-  - **So** Create a "gap year structure" with daily routines, weekly goals, and regular accountability check-ins
-  - **So** Build in "safety clips" - personal trainer sessions, gym membership, kettlebell classes - external structure to prevent slides
-  - **So** Make health routines the cornerstone of gap year structure, capitalizing on both time AND physical capability
-
-- What if I get bored and start vegetating?
-
-  - I can get bored easily, which leads to vegetating (mindless scrolling, avoiding meaningful work)
-  - Vegetating leads to messing up my sleep schedule and general lack of purpose
-  - A day missed at the gym turns into a week, turns into a month - physical decline accelerates the mental decline
-  - **But** AI field is evolving so rapidly there's something genuinely new every 2 weeks - built-in novelty to prevent boredom
-  - **But** Using AI lets me focus on my mastery areas which is a blast - less time on tedious tasks, more on what I'm uniquely good at
-  - **But** AI gives me huge leverage on bespoke software projects like my Kettlebells and Mortality software - I can build things that would have taken months
-  - **So** AI provides both intellectual stimulation and productive outlets for creativity
-
-- What if I get lonely without daily work social interaction?
-
-  - Loneliness could be a major factor - work provides daily social interaction
-  - **But** I know retired/gap year folks who are available during the day
-  - **But** I have friends and flexibility to hang out more regularly
-  - **But** I can have deep conversations with Tony, my AI life coach ([tony_tesla project](https://github.com/idvorkin/tony_tesla))
-  - **But** AI can provide conversation and it's getting cooler every week
-  - **But** Lots of people on the internet to meet - I've already started and it's pretty cool
-  - **But** Lots of people would like some mentorship, and I've got the time and experience to help them, plus I can scale this up
-  - **So** Schedule regular time with retired friends and deepen existing relationships
-
-- What if I get resentful that my family won't spend time with me?
-
-  - I'll have lots of free time but family will still be busy with their schedules
-  - Could lead to resentment when they can't match my availability
-  - **But** Relationships deepen like lifting weights - start light and gradually get heavier
-  - **But** I'll have the flexibility to work around their schedules instead of forcing mine
-  - **But** Without work stress, I'll have inner peace that lets me be more compassionate and patient
-  - **But** Time isn't scarce anymore, so I have much more flexibility to accommodate their schedules
-  - **But** Abundance mindset with time means I'm not competing family time against "very limited" personal projects
-  - **But** Deepening family relationships is a huge part of what makes this gap year worthwhile
-  - **So** Schedule regular family dates and focus on quality over quantity, letting relationships develop naturally at their pace
-
-- What if I get depressed and spiral into a dark place?
-
-  - Boredom → Vegetating → Skipping exercise → Depression is a well-established pattern for me
-  - **But** I have mental health support systems (therapy, medication, practices) that would continue
-  - **So** Keep existing mental health infrastructure in place throughout the gap year
-
-## Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)
-
-This connects to my broader thinking on [physical health](/physical-health), [mental health](/emotional-health), and [relationship health](/chapters).
-
-Instead of thinking about it as a gap year (for which I'd worry about being a sloth), I'll think about it as the optimal time to make capital investments in my [health](/physical-health) and [habits](/d/habits) infrastructure.
-
-At 50, you have peak capital (time, energy, resources) to invest in your body, mind and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
-
-**Health Goals/Artifacts (Physical, Emotional, Relationship)**
-
-See my [kettlebell](/kettlebell) practice and broader [physical health](/physical-health) philosophy. For emotional health, check out my [emotional health practices](/emotional-health), [meditation](/siy) approach, and [affirmations](/affirmations).
-
-You can probably look at my [2025 goals](/y25), which sadly look a lot like my [2024 goals](/y24), and will probably look like my 2028 goals if that's when I actually get my gap year.
-
-## Igor's Identity Dragon
-
-- Forget telling the future, what does taking a gap year say about me ?
-- Am I really setting a good example for my kids?
-- Lens 1: I'm putting myself ahead of the security of my family
-- **But** It can be about overcoming my fear and investing in myself and relationships
-- **So:** Reframe to be a PhD and A Year of [Health](/physical-health) and [Habits](/d/habits) Capital Investments
-
-## Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR
-
-This aligns with my approach to [continuous learning](/timeoff) and [overcoming resistance](/d/resistance) to change.
-
-Instead of thinking about it as a gap year (for which I'd feel guilty), I'll think about it as pursuing a "PhD in AI, Content Creation, and MRR" - focusing on my professional development. On the technical side, I'd become an AI expert by learning everything about the field [TODO: link to AI posts], while also mastering content creation and building monthly recurring revenue streams.
-
-Creating artifacts is crucial - tangible outputs that prove the gap year was productive and provide lasting value. These artifacts serve as both motivation during the year, long term deposits in your relationship and health bank accounts, and career capital when returning to work.
-
-**AI Goals/Artifacts**
-
-- Learning artifacts: Comprehensive AI knowledge base, experiment logs, model implementations
-- Several Apps written via AI, starting with PRDs
-- Content artifacts: AI tutorial series, technical blog posts, open source contributions
-
-**Content Creation Goals/Artifacts**
-
-Maybe no one will read/watch it but me and my Mom, but good enough for me.
-
-- Blog artifacts: Regular posts, TBD
-- Video artifacts: YouTube channel, Reels, TBD
-
-**MRR Goals/Artifacts**
-
-Monthly recurring revenue? That would be pretty cool. Certainly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
-
-Will this actually slay the Financial Security Dragon? Let's be real - we're talking about pocket change compared to a tech salary. But hey, a man can dream of becoming the next MrBeast of gap year content! 🎬💰
-
-- Product artifacts: TBD
-- Revenue artifacts: Affliate links? Course? Ad Revenue from Content? Who knows
-
-## Igor's Gap Year Pre-Mortem
-
-In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I hthink this is another pivot on the dragons above
-
-- I'm lonely
-
-- I resent my family
+The time is now. The question is: will you take it? 🌟

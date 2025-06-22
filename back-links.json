@@ -259,7 +259,7 @@
             "doc_size": 22000,
             "file_path": "_site/affirmations.html",
             "incoming_links": [
-                "/gap-year",
+                "/igor-gap-year",
                 "/mortality-software",
                 "/random-idea",
                 "http://0.0.0.0:4000/operating-manual",
@@ -286,6 +286,43 @@
             "title": "Affirmations",
             "url": "/affirmations"
         },
+        "/ai-developer": {
+            "description": "ML Engineer is a hot new job. It’s the boys and girls who train and deploy models. I heard the word AI developer the other day, and I’ll refer to it as AI application engineers. People who use AI to solve use cases. NOTE: This is not what most developers do today. What most developers do today is ask how can AI do the things I would have done (e.g. write the function).\n\n",
+            "doc_size": 35000,
+            "file_path": "_site/ai-developer.html",
+            "incoming_links": [
+                "/random-idea",
+                "http://0.0.0.0:4000/ai"
+            ],
+            "last_modified": "2025-06-22T08:49:38-07:00",
+            "markdown_path": "_d/ai-developer.md",
+            "outgoing_links": [
+                "/ai"
+            ],
+            "redirect_url": "",
+            "title": "AI Developer",
+            "url": "/ai-developer"
+        },
+        "/ai-testing": {
+            "description": "Testing math is easy, it’s right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that’s tough. Let’s talk about how to test AI.\n\n",
+            "doc_size": 22000,
+            "file_path": "_site/ai-testing.html",
+            "incoming_links": [
+                "/random-idea",
+                "http://0.0.0.0:4000/ai",
+                "http://0.0.0.0:4000/chop",
+                "http://0.0.0.0:4000/d/time-off-2024-04",
+                "http://0.0.0.0:4000/genai-talk",
+                "http://0.0.0.0:4000/ml",
+                "http://0.0.0.0:4000/testing"
+            ],
+            "last_modified": "2025-06-22T09:22:45-07:00",
+            "markdown_path": "_d/ai-testing.md",
+            "outgoing_links": [],
+            "redirect_url": "",
+            "title": "Testing AI",
+            "url": "/ai-testing"
+        },
         "/decisive": {
             "description": "Decisions are hard because we have Narrow Framing, Confirmation Bias, Short Term Emotion and Overconfidence. We can overcome this by Widening our Options, Reality-Testing our Assumptions, Attaining Distance before Deciding and Preparing to Be Wrong.\n\n",
             "doc_size": 44000,
@@ -309,39 +346,63 @@
         },
         "/gap-year": {
             "description": "Here’s a thought that’ll push back your retirement: Would you rather work until 65 and retire comfortably, or take a full year off at 50, return to work, and retire at 67 with less money? If you’re like most people, you immediately think “that’s crazy - I can’t afford to lose a year’s income!” But what if I told you that gap year might be the best investment you’ll ever make?\n\n",
-            "doc_size": 46000,
+            "doc_size": 33000,
             "file_path": "_site/gap-year.html",
             "incoming_links": [
+                "/igor-gap-year",
                 "/random-idea",
                 "http://0.0.0.0:4000/retire"
             ],
-            "last_modified": "2025-06-22T09:25:20.279870",
+            "last_modified": "2025-06-22T09:39:30.090016",
             "markdown_path": "_d/gap-year.md",
+            "outgoing_links": [
+                "/chapters",
+                "/decisive",
+                "/igor-gap-year",
+                "/money",
+                "/partner-trouble",
+                "/physical-health",
+                "/resistance",
+                "/retire",
+                "/timeoff",
+                "/y2024",
+                "/y2025"
+            ],
+            "redirect_url": "",
+            "title": "The Gap Year Paradox: Why Taking a Year Off at 50 beats retiring at 65",
+            "url": "/gap-year"
+        },
+        "/igor-gap-year": {
+            "description": "The gap year concept is compelling in theory, but what does it look like when rubber meets road? Here’s my real-time wrestling match with the dragons guarding this treasure of time, complete with all the messy financial calculations, identity crises, and voice-in-head battles that come with considering a year off at 50.\n\n",
+            "doc_size": 30000,
+            "file_path": "_site/igor-gap-year.html",
+            "incoming_links": [
+                "/gap-year"
+            ],
+            "last_modified": "2025-06-22T09:37:36.217505",
+            "markdown_path": "_d/igor-gap-year.md",
             "outgoing_links": [
                 "/7-habits",
                 "/affirmations",
                 "/chapters",
                 "/d/habits",
                 "/d/resistance",
-                "/decisive",
                 "/emotional-health",
                 "/end-in-mind",
+                "/gap-year",
                 "/kettlebell",
                 "/money",
-                "/partner-trouble",
                 "/physical-health",
-                "/resistance",
                 "/retire",
                 "/siy",
                 "/timeoff",
-                "/y2024",
-                "/y2025",
+                "/voices",
                 "/y24",
                 "/y25"
             ],
             "redirect_url": "",
-            "title": "The Gap Year Paradox: Why Taking a Year Off at 50 beats retiring at 65",
-            "url": "/gap-year"
+            "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams at 50",
+            "url": "/igor-gap-year"
         },
         "/money": {
             "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
@@ -349,6 +410,7 @@
             "file_path": "_site/money.html",
             "incoming_links": [
                 "/gap-year",
+                "/igor-gap-year",
                 "/random-idea",
                 "http://0.0.0.0:4000/d/time-off-2020-03",
                 "http://0.0.0.0:4000/operating-manual",
@@ -408,7 +470,7 @@
             "doc_size": 2916000,
             "file_path": "_site/random-idea.html",
             "incoming_links": [],
-            "last_modified": "2025-06-20T09:15:10.699787",
+            "last_modified": "2025-06-22T09:37:35.493766",
             "markdown_path": "blog.allcontent.md",
             "outgoing_links": [
                 "/22",
@@ -652,7 +714,7 @@
             "incoming_links": [
                 "/writing"
             ],
-            "last_modified": "2025-06-20T09:15:10.452129",
+            "last_modified": "2025-06-20T09:16:26-07:00",
             "markdown_path": "_d/viz.md",
             "outgoing_links": [
                 "/td/visual-vocabulary"
@@ -676,10 +738,10 @@
                 "http://0.0.0.0:4000/manager-book-appendix",
                 "http://0.0.0.0:4000/operating-manual"
             ],
-            "last_modified": "2025-06-20T09:16:23.988640",
+            "last_modified": "2025-06-20T09:16:26-07:00",
             "markdown_path": "_d/writing.md",
             "outgoing_links": [
-                "/7h-c0",
+                "/7h-concepts",
                 "/90days",
                 "/amazon",
                 "/coaching",
@@ -699,7 +761,7 @@
             "doc_size": 19000,
             "file_path": "_site/y25.html",
             "incoming_links": [
-                "/gap-year",
+                "/igor-gap-year",
                 "/random-idea"
             ],
             "last_modified": "2025-06-19T08:16:44-07:00",
@@ -1018,20 +1080,6 @@
             "title": "AI Security",
             "url": "http://0.0.0.0:4000/ai-bm"
         },
-        "http://0.0.0.0:4000/ai-developer": {
-            "description": "ML Engineer is a hot new job. It’s the boys and girls who train and deploy models. I heard the word AI developer the other day, and I’ll refer to it as AI application engineers. People who use AI to solve use cases. NOTE: This is not what most developers do today. What most developers do today is ask how can AI do the things I would have done (e.g. write the function).\n\n",
-            "doc_size": 33000,
-            "file_path": "_site/ai-developer.html",
-            "incoming_links": [],
-            "last_modified": "2025-02-01T10:32:44-08:00",
-            "markdown_path": "_d/ai-developer.md",
-            "outgoing_links": [
-                "/ai"
-            ],
-            "redirect_url": "",
-            "title": "AI Developer",
-            "url": "http://0.0.0.0:4000/ai-developer"
-        },
         "http://0.0.0.0:4000/ai-image": {
             "description": "Everyone talks about GPT, but you can also generate images. Lately, I’ve been playing with Flux, which is an image generator. You can generate images of me using the idvorkin with this lora on replicate.\n\n",
             "doc_size": 16000,
@@ -1085,18 +1133,6 @@
             "redirect_url": "",
             "title": "AI Security",
             "url": "http://0.0.0.0:4000/ai-security"
-        },
-        "http://0.0.0.0:4000/ai-testing": {
-            "description": "Testing math is easy, it’s right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that’s tough. Let’s talk about how to test AI.\n\n",
-            "doc_size": 21000,
-            "file_path": "_site/ai-testing.html",
-            "incoming_links": [],
-            "last_modified": "2024-12-14T09:23:46-05:00",
-            "markdown_path": "_d/ai-testing.md",
-            "outgoing_links": [],
-            "redirect_url": "",
-            "title": "Testing AI",
-            "url": "http://0.0.0.0:4000/ai-testing"
         },
         "http://0.0.0.0:4000/amazon": {
             "description": "I spent 4 years working at Amazon, some things I loved, some not so much. Amazon is a huge company and the variation of behavior within a company exceeds the variation between the “median” behavior between companies. Even within the two teams I was on at Amazon I saw the exact opposite behaviors. When I talk about the good, I’ll talk about the ideal good, and when I talk about the bad, I’ll talk to some issues I saw that were systemically bad. As a result you’ll often see me describing something as both good and bad, as it’s done differently in different parts of the company.\n\n",
