@@ -21,10 +21,14 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 <!-- vim-markdown-toc-start -->
 
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
+- [Letting Your Dragons Out of the Box](#letting-your-dragons-out-of-the-box)
 - [Igor's Financial Security Dragon](#igors-financial-security-dragon)
 - [Slaying Financial Security - Gap Year Triggers](#slaying-financial-security---gap-year-triggers)
 - [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
 - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
+- [Battling Addiction](#battling-addiction)
+- [Battling Family Resentment](#battling-family-resentment)
+- [Battling Loneliness](#battling-loneliness)
 - [Igor's Identity Dragon](#igors-identity-dragon)
 - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
 - [Gap Year Pre-Mortem](#gap-year-pre-mortem)
@@ -39,15 +43,33 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 
 {% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 
-When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers include competitive offers from Google, and several mid sized companies. But today's job market is much much scarier than pre-COVID 2020 - it's become downright dicey out there. But as we say in the [7 habits](/7-habits), [begin with the end in mind](/end-in-mind)!
+When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers include competitive offers from Google, Meta, and several mid sized companies. But today's job market is much much scarier than pre-COVID 2020 - it's become downright dicey out there.
 
-But to balance that, some hypothical what ifs:
+But there's more to life than collecting money, here are some what ifs I need to remember:
 
-- I can only see kid for N more year
-- I'm only able bodied for N more years.
-- I'm only alive for N more years.
+What If ...
 
-So what are the dragons guarding this treasure of time?
+- I can only see my kid for N more years
+- I am only able bodied for N more years.
+- I am only alive for N more years.
+
+So what's holding me back? Dragons!
+
+## Letting Your Dragons Out of the Box
+
+The dragons (Financial Security, Decay, Loneliness) have always been there, but work kept them contained in a box. Not solved - just managed through a sophisticated system of legitimate cover.
+
+Work provided three critical pieces of dragon management infrastructure:
+
+- **Free excuses for neglecting yourself and your relationships**: "I'm too wiped out from that presentation to work out" or "I'll start eating better after this crazy project ends" or "I'll spend quality time with family once this deadline passes" - legitimate reasons to deprioritize personal growth and connection
+- **Free connection to others**: Colleagues, meetings, hallway conversations, lunch partners - built-in social infrastructure that kept loneliness at bay without you having to create or maintain it
+- **Free urgency and purpose**: Deadlines, projects, crises that gave your days automatic momentum and meaning without you having to generate it from within
+
+These weren't lies or rationalizations. Work really does make it harder to maintain perfect health habits, nurture relationships, or address deeper personal questions. The excuses were often completely valid.
+
+But the gap year opens the box. Suddenly there's no meeting schedule to explain away poor health habits, no work exhaustion to buffer loneliness, no legitimate crisis to postpone difficult conversations with family. You need to create your own social connections, generate your own sense of urgency and purpose, and face your habits without the comfortable excuse of being legitimately exhausted.
+
+The dragons are the same size they've always been. The difference is now you're face-to-face with them in an empty room, and the uncomfortable truth emerges: some of your struggles weren't actually about time or energy - they were about something deeper that work was helping you avoid.
 
 ## Igor's Financial Security Dragon
 
@@ -172,6 +194,53 @@ At 50, you have peak capital (time, energy, resources) to invest in your body, m
 See my [kettlebell](/kettlebell) practice and broader [physical health](/physical-health) philosophy. For emotional health, check out my [emotional health practices](/emotional-health), [meditation](/siy) approach, and [affirmations](/affirmations).
 
 You can probably look at my [2025 goals](/y25), which sadly look a lot like my [2024 goals](/y24), and will probably look like my 2028 goals if that's when I actually get my gap year.
+
+## Battling Addiction
+
+## Battling Family Resentment
+
+A big part of the gap year story is family is precious and you only get so much time with them and it's over. Well here's some fortune cookies:
+
+- You can't pick when your family will want to be with you, BUT you can be sure if you're not around it won't happen.
+
+- You need to know you are second choice, and you should feel happy with that, because their first choice is more important - their peers E.g.
+
+  - I can take the bus to school with Zach, but I need to get off before his friends get there
+
+- It's sad that your kids are growing up, that they'll never be small again, but imagine how much worse it would be if they never grew up.
+
+- Success is they know you are there if they need you, subtly in the background, support without pressure
+
+## Battling Loneliness
+
+When you're not working you have lots of time, but everyone you know still doesn't. They still have to work, and they still have family obligations, and when that is over they probably just want to relax and watch some TikTok but can't since they still have to burn down their honey-do list.
+
+Work isn't just work friends:
+
+- Meetings with co-workers
+- Seeing people in the hallways
+- Someone to eat lunch with
+
+You're going to need to find new friends to hang out with.
+
+Mitigations:
+
+- Find a bunch of folks who are already retired/gap-yearing
+
+- But these folks are probably unique:
+
+  - They had courage/interest in doing this
+  - They are unencumbered by society's expectations
+  - They have more time to think this stuff through deeply
+
+- Example nutty people
+  - Someone who wants to have odd experiments in our conversations
+    - Camera off every 7 minutes
+    - Minute of silence every 7 minutes
+    - Put the time to answer how that makes me feel
+    - Weird but pretty interesting
+
+{%include summarize-page.html src="/lonely"%}
 
 ## Igor's Identity Dragon
 
