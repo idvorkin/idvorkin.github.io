@@ -53,7 +53,7 @@ What If ...
 - I am only able bodied for N more years.
 - I am only alive for N more years.
 
-So what's holding me back? Dragons!
+So what's holding me back? Dragons! Early cartographers added dragons and other mythical beasts to regions that were unexplored or poorly understood, symbolizing danger, mystery, and the unknown. Thus early maps had "Here be dragons" ("HC SVNT DRACONES" in Latin) to mark uncharted territories.
 
 ## Letting Your Dragons Out of the Box
 
@@ -109,6 +109,10 @@ For the philisophicaly minded, from the [Prophet](https://poets.org/poem/giving-
 
 _What is fear of need by need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?_
 
+And from my Bestie:
+
+_If you're not gonna feel safe at 2 years _ your expenses, it's hard to imagine you'll feel safe at 3 years _ your expensives._
+
 ## Slaying Financial Security - Gap Year Triggers
 
 See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
@@ -125,7 +129,15 @@ Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and se
   - What is the minimum value?
 
 * What are the actual dates and numbers?
+
   - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
+
+* Come on, can you at least give a formula?
+  - Have 2 years of expenses in the bank, if at the one year mark the market at 5% can replace the next year of cash, feel safe taking another gap year, else start a job hunt immediately
+  - This makes for the following assumptions
+    - You can get a job (possibly making much less then you do now) in under a year
+    - You don't have any "large unexpected expenses" Ensure your model can handle that.
+    - You are very confident in your expenses calculations (taxes, insurance, major house repairs, college)
 
 ## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
