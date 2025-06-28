@@ -111,7 +111,7 @@ _What is fear of need by need itself? Is not dread of thirst when your well is f
 
 And from my Bestie:
 
-_If you're not gonna feel safe at 2 years _ your expenses, it's hard to imagine you'll feel safe at 3 years _ your expensives._
+_If you're not gonna feel safe at 2 years \* your expenses, it's hard to imagine you'll feel safe at 3 years \* your expenses._
 
 ## Slaying Financial Security - Gap Year Triggers
 
