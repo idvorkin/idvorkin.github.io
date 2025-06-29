@@ -28,6 +28,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
 - [Battling Addiction](#battling-addiction)
 - [Battling Family Resentment](#battling-family-resentment)
+  - [Additional Reflections:](#additional-reflections)
 - [Battling Loneliness](#battling-loneliness)
 - [Igor's Identity Dragon](#igors-identity-dragon)
 - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
@@ -211,17 +212,24 @@ You can probably look at my [2025 goals](/y25), which sadly look a lot like my [
 
 ## Battling Family Resentment
 
-A big part of the gap year story is family is precious and you only get so much time with them and it's over. Well here's some fortune cookies:
+A key motivation behind my gap year is the desire to **spend more meaningful time with my family**. Time together is precious and fleeting; once gone, it cannot be reclaimed.
 
-- You can't pick when your family will want to be with you, BUT you can be sure if you're not around it won't happen.
+However, it’s important to be realistic. Even though my gap year might give me an additional 50 hours per week, my family doesn't have any more availability. Practically speaking, I may only gain 5–10 extra hours with them each week. At first glance, this may not seem like a big win, but it’s crucial to recognize the deeper value here:
 
-- You need to know you are second choice, and you should feel happy with that, because their first choice is more important - their peers E.g.
+- **Nothing is more valuable** than family, and the time spent together will always hold the greatest meaning, both for me and for them.
+- During my gap year, when I'm with my family, I'll be able to **fully engage and be genuinely present**, free from the distractions and stress of work.
+- Family interactions often happen spontaneously, and **being available ensures I won't miss these unexpected moments**. Moreover, without conflicting commitments, **our precious family time won't be cut short**.
 
-  - I can take the bus to school with Zach, but I need to get off before his friends get there
+### Additional Reflections:
 
-- It's sad that your kids are growing up, that they'll never be small again, but imagine how much worse it would be if they never grew up.
+- Accepting that I’m rarely the family's first choice is important—and healthy. My children's relationships with their peers are essential for their growth, and respecting that enriches our relationship. For example:
 
-- Success is they know you are there if they need you, subtly in the background, support without pressure
+  - I can ride the bus with Zach but respectfully step back when his friends join him.
+  - I can drive my kids and their friends places, remaining nearby but giving them space to connect independently.
+
+- It's natural to feel bittersweet as my children grow and mature. But while it may feel sad that they'll never be small again, imagine how much harder it would be if they never had the chance to grow up.
+
+**Successful parenting** ultimately means my children know, deep down, that I'm always there for them—quietly in the background, offering steady support without pressure, ready whenever they need me.
 
 ## Battling Loneliness
 
