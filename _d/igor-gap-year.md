@@ -28,7 +28,6 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
 - [Battling Addiction](#battling-addiction)
 - [Battling Family Resentment](#battling-family-resentment)
-  - [Additional Reflections:](#additional-reflections)
 - [Battling Loneliness](#battling-loneliness)
 - [Igor's Identity Dragon](#igors-identity-dragon)
 - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
@@ -222,7 +221,7 @@ However, it’s important to be realistic. Even though my gap year might give me
 - During my gap year, when I'm with my family, I'll be able to **fully engage and be genuinely present**, free from the distractions and stress of work.
 - Family interactions often happen spontaneously, and **being available ensures I won't miss these unexpected moments**. Moreover, without conflicting commitments, **our precious family time won't be cut short**.
 
-### Additional Reflections:
+**Additional things to remember:**
 
 - Accepting that I’m rarely the family's first choice is important—and healthy. My children's relationships with their peers are essential for their growth, and respecting that enriches our relationship. For example:
 
