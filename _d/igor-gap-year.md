@@ -23,7 +23,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
 - [Letting Your Dragons Out of the Box](#letting-your-dragons-out-of-the-box)
 - [Igor's Financial Security Dragon](#igors-financial-security-dragon)
-- [Slaying Financial Security - Gap Year Triggers](#slaying-financial-security---gap-year-triggers)
+- [Slaying Financial Security](#slaying-financial-security)
 - [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
 - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
 - [Battling Addiction](#battling-addiction)
@@ -114,11 +114,13 @@ And from my Bestie:
 
 _If you're not gonna feel safe at 2 years \* your expenses, it's hard to imagine you'll feel safe at 3 years \* your expenses._
 
-## Slaying Financial Security - Gap Year Triggers
+## Slaying Financial Security
 
 See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
 
 Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and sets up future Igor to run on Automatic. So here are some rules
+
+Gap year is scary, here are some guard rails to make it happen:
 
 - Money: Net worth exceeds "X" Million.
 
