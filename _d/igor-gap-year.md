@@ -105,7 +105,7 @@ The dragons are the same size they've always been. The difference is now you're 
   - **But** Being conservative with estimates builds in a buffer for surprises
   - **So** Measure twice, cut once :) And review with others
 
-For the philisophicaly minded, from the [Prophet](https://poets.org/poem/giving-0):
+For the philosophically minded, from the [Prophet](https://poets.org/poem/giving-0):
 
 _What is fear of need by need itself? Is not dread of thirst when your well is full, the thirst that is unquenchable?_
 
@@ -137,7 +137,7 @@ Gap year is scary, here are some guard rails to make it happen:
 * Come on, can you at least give a formula?
   - Have 2 years of expenses in the bank, if at the one year mark the market at 5% can replace the next year of cash, feel safe taking another gap year, else start a job hunt immediately
   - This makes for the following assumptions
-    - You can get a job (possibly making much less then you do now) in under a year
+    - You can get a job (possibly making much less than you do now) in under a year
     - You don't have any "large unexpected expenses" Ensure your model can handle that.
     - You are very confident in your expenses calculations (taxes, insurance, major house repairs, college)
 
@@ -299,14 +299,14 @@ Monthly recurring revenue? That would be pretty cool. Certainly I get much highe
 Will this actually slay the Financial Security Dragon? Let's be real - we're talking about pocket change compared to a tech salary. But hey, a man can dream of becoming the next MrBeast of gap year content! 🎬💰
 
 - Product artifacts: TBD
-- Revenue artifacts: Affliate links? Course? Ad Revenue from Content? Who knows
+- Revenue artifacts: Affiliate links? Course? Ad Revenue from Content? Who knows
 
 ## Gap Year Pre-Mortem
 
-In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I hthink this is another pivot on the dragons above
+In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I think this is another pivot on the dragons above
 
 ## Gap Year Voices in my head
 
-In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I hthink this is another pivot on the dragons above
+In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I think this is another pivot on the dragons above
 
 {%include summarize-page.html src="/voices"%}
