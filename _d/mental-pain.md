@@ -16,22 +16,9 @@ Pain is in the brain as they say, which is especially true for mental pains. Pai
 - [Pain vs Suffering](#pain-vs-suffering)
 - [Phantom vs Real Pain](#phantom-vs-real-pain)
 - [Types of pain](#types-of-pain)
-  - [Desire to control](#desire-to-control)
-  - [Doubt](#doubt)
-  - [Disappointment](#disappointment)
-- [Where's the pain](#wheres-the-pain)
-  - [Self](#self)
-    - [Control: Anxiety](#control-anxiety)
-    - [Doubt: Self Doubt](#doubt-self-doubt)
-    - [Disappointment: Self disappointment](#disappointment-self-disappointment)
-  - [Other - From you, to you](#other---from-you-to-you)
-    - [Control: Controlling, loss of autonomy](#control-controlling-loss-of-autonomy)
-    - [Doubt: Abandonment, Taking for granted](#doubt-abandonment-taking-for-granted)
-    - [Disappointment: Guilt/shame/Embarrassed, Unfair, 2](#disappointment-guiltshameembarrassed-unfair-2)
-  - [Process - In your life](#process---in-your-life)
-    - [Control: Anxiety](#control-anxiety-1)
-    - [Doubt: Mistrust and Meaninglessness](#doubt-mistrust-and-meaninglessness)
-    - [Disappointment: Guilt/shame/Embarrassed, Unfair](#disappointment-guiltshameembarrassed-unfair)
+  - [Psychological Pain (Self-focused)](#psychological-pain-self-focused)
+  - [Interpersonal Pain (Relationship-focused)](#interpersonal-pain-relationship-focused)
+  - [Spiritual Pain (Life-journey focused)](#spiritual-pain-life-journey-focused)
 - [Pain and Suffering without progress](#pain-and-suffering-without-progress)
 - [Fueling the fire, adding meaning](#fueling-the-fire-adding-meaning)
   - [Meaning: From Pain to Suffering](#meaning-from-pain-to-suffering)
@@ -48,6 +35,53 @@ Pain is in the brain as they say, which is especially true for mental pains. Pai
 <!-- prettier-ignore-end -->
 
 ## The point of pain
+
+Pain is not the enemy - it's a **sophisticated alarm system** designed to protect us and drive action. Just like physical pain alerts us to injury and prevents further damage, **mental pain serves as an early warning system for our psychological and social wellbeing**.
+
+### The Evolutionary Design
+
+Pain exists because it **keeps us alive**. Our ancestors who couldn't feel the pain of social rejection died alone. Those who couldn't feel anxiety about real threats became prey. Those who couldn't feel guilt destroyed the cooperative relationships they depended on for survival.
+
+Pain is **inherently unpleasant by design** - if it felt good, we'd ignore it. Imagine if your car's warning lights played soothing music instead of flashing urgent colors. The unpleasantness isn't a bug, it's a feature that **forces our attention away from whatever we're doing** and onto what needs immediate care.
+
+### What Pain Actually Does
+
+Mental pain typically signals one of three core issues:
+
+- **Something needs our attention** (anxiety about an upcoming deadline)
+- **Something needs to change** (dissatisfaction with a relationship or situation)
+- **Something needs to be processed** (grief, disappointment, or loss)
+
+The pain system works brilliantly when it's functioning properly. It:
+
+- **Focuses our attention** like a spotlight on what matters most
+- **Motivates immediate action** to address problems before they worsen
+- **Protects us** from repeating harmful patterns
+- **Builds resilience** through experience and growth
+- **Creates urgency** proportional to the threat level
+
+### Real-World Examples
+
+**Anxiety before a presentation** → Forces you to prepare thoroughly
+**Guilt after breaking a promise** → Drives you to make amends and rebuild trust
+**Loneliness after moving** → Pushes you to build new social connections
+**Disappointment after failure** → Compels you to analyze and improve your approach
+
+### When Pain Systems Fail
+
+Consider people born with **congenital insensitivity to pain** - they frequently injure themselves severely because they can't feel warnings. Most don't survive childhood. Similarly, people who can't feel social pain (sociopaths) often end up isolated or imprisoned because they can't navigate relationships.
+
+The trouble comes when pain becomes **chronic** (continuing long after its protective purpose is served) or **phantom** (firing when there's no actual threat). This is when pain transforms from a helpful signal into unnecessary suffering.
+
+### The Paradox of Pain
+
+**The goal isn't to eliminate pain entirely** - that would be like removing smoke detectors from your house. A life without pain would be a life without protection, growth, or meaningful connection. The goal is to:
+
+1. **Listen to the signal** - What is this pain trying to tell me?
+2. **Take appropriate action** - Address the underlying issue
+3. **Let the pain resolve naturally** - Once you've responded, the alarm can turn off
+
+Pain that persists after you've addressed its message may be phantom pain that needs different treatment. But pain that you're ignoring while the problem remains will only intensify until you pay attention.
 
 ## Pain vs Suffering
 
@@ -110,38 +144,6 @@ These are about the meaning and direction of your existence:
 **Regret** - "I've wasted precious time and opportunities"
 
 **Why categorization matters**: The same surface emotion (like "I feel bad") could stem from any of these levels. A skilled approach requires identifying which type of pain you're actually experiencing, because the solutions are completely different.
-
-## Where's the pain
-
-### Self
-
-#### Control: Anxiety
-
-{%include summarize-page.html src="/anxiety" %}
-
-#### Doubt: Self Doubt
-
-#### Disappointment: Self disappointment
-
-### Other - From you, to you
-
-#### Control: Controlling, loss of autonomy
-
-#### Doubt: Abandonment, Taking for granted
-
-#### Disappointment: Guilt/[shame](/shame)/Embarrassed, Unfair, 2
-
-Remember, just because you can feel guilt/shame/embarrassed, doesn't mean you should.
-
-### Process - In your life
-
-#### Control: [Anxiety](/anxiety)
-
-{%include summarize-page.html src="/anxiety" %}
-
-#### Doubt: Mistrust and Meaninglessness
-
-#### Disappointment: Guilt/[shame](/shame)/Embarrassed, Unfair
 
 ## Pain and Suffering without progress
 

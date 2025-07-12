@@ -831,7 +831,6 @@
                 "/fail",
                 "/gtd",
                 "/happy",
-                "/mental-pain",
                 "/operating-manual",
                 "/overload",
                 "/productive",
@@ -3489,15 +3488,13 @@
                 "/work-satisfaction",
                 "/y24"
             ],
-            "last_modified": "2025-07-12T16:19:43.059533",
+            "last_modified": "2025-07-12T16:26:02.934746",
             "markdown_path": "_d/mental-pain.md",
             "outgoing_links": [
-                "/anxiety",
                 "/frog",
                 "/gtd",
                 "/physical-pain",
-                "/pride",
-                "/shame"
+                "/pride"
             ],
             "redirect_url": "",
             "title": "The thoughts that pain us",
@@ -4641,7 +4638,6 @@
                 "/depression",
                 "/emotions",
                 "/insecure",
-                "/mental-pain",
                 "/psychic-weight",
                 "/random-idea",
                 "/work-satisfaction"
