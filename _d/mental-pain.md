@@ -13,15 +13,27 @@ Pain is in the brain as they say, which is especially true for mental pains. Pai
 <!-- vim-markdown-toc-start -->
 
 - [The point of pain](#the-point-of-pain)
+  - [The Evolutionary Design](#the-evolutionary-design)
+  - [What Pain Actually Does](#what-pain-actually-does)
+  - [Real-World Examples](#real-world-examples)
+  - [When Pain Systems Fail](#when-pain-systems-fail)
+  - [The Paradox of Pain](#the-paradox-of-pain)
 - [Pain vs Suffering](#pain-vs-suffering)
+  - [The Same Pain, Different Suffering](#the-same-pain-different-suffering)
+  - [The Meaning-Making Machine](#the-meaning-making-machine)
+  - [The Attachment Trap](#the-attachment-trap)
+  - [You Can't Control Pain, But You Can Influence Suffering](#you-cant-control-pain-but-you-can-influence-suffering)
+  - [All Pain, No Gain](#all-pain-no-gain)
 - [Types of pain](#types-of-pain)
   - [Psychological Pain (Self-focused)](#psychological-pain-self-focused)
   - [Interpersonal Pain (Relationship-focused)](#interpersonal-pain-relationship-focused)
   - [Spiritual Pain (Life-journey focused)](#spiritual-pain-life-journey-focused)
-- [Pain and Suffering without progress](#pain-and-suffering-without-progress)
 - [Fueling the fire, adding meaning](#fueling-the-fire-adding-meaning)
   - [Meaning: From Pain to Suffering](#meaning-from-pain-to-suffering)
   - [Meaning squared: From Suffering to Misery](#meaning-squared-from-suffering-to-misery)
+  - [The Two Forms of Misery](#the-two-forms-of-misery)
+  - [How to Catch Yourself Adding Fuel](#how-to-catch-yourself-adding-fuel)
+  - [The Liberation](#the-liberation)
 - [The positive analogs of pain: Pleasure, Satisfaction, Hubris](#the-positive-analogs-of-pain-pleasure-satisfaction-hubris)
   - [Misery to Hubris](#misery-to-hubris)
 - [Loneliness](#loneliness)
@@ -150,7 +162,7 @@ Your brain **automatically** assigns meaning to pain. You can't stop this proces
 Suffering often comes from **attachment** - our desperate grip on how things "should" be:
 
 **Attachment to the past**: "This shouldn't have happened" → Resentment, bitterness
-**Attachment to the present**: "This pain shouldn't exist right now" → Resistance, amplified suffering  
+**Attachment to the present**: "This pain shouldn't exist right now" → Resistance, amplified suffering
 **Attachment to the future**: "My life is ruined forever" → Despair, hopelessness
 
 **The antidotes:**
@@ -165,6 +177,34 @@ Suffering often comes from **attachment** - our desperate grip on how things "sh
 
 **Suffering happens IN you.** The stories you tell yourself about what the pain means - that's where your power lies.
 
+### All Pain, No Gain
+
+Here's the cruelest irony: through procrastination and resistance, you can experience **all the pain and suffering** of a situation while making **zero progress** toward resolving it.
+
+Pain is often a signal to drive action - study for the interview, complete the performance review, have the difficult conversation. Once you take action and make progress, the pain (and suffering) naturally diminishes.
+
+But when you avoid taking action, you get the worst of both worlds:
+
+- **All the mental anguish** of knowing you need to do something
+- **None of the relief** that comes from actually doing it
+- **Bonus guilt and self-disappointment** for procrastinating
+
+{%include summarize-page.html src="/frog" %}
+
+The more you avoid progress, the more pain and suffering compound. Then guilt and self-disappointment pile on top. Getting things done is often the fastest path to pain relief:
+
+{%include summarize-page.html src="/gtd" %}
+
+**Key strategies for breaking the cycle:**
+
+**Allocate concrete time and goals** - "Best efforts" won't happen. Schedule specific blocks.
+
+**Give yourself large blocks of time** - Don't expect to solve painful problems in 30 minutes. If it was easy, it wouldn't be painful. Give yourself 2+ hour blocks to get into the groove.
+
+**Don't take a step forward and a step backward** - Like dieting for half a day then binging the other half. Either commit to the day or don't. If you study, write down your notes. "Just thinking about it" without completion is pure waste.
+
+**The liberation**: Once you take action, you transform pointless suffering into purposeful pain that actually leads somewhere.
+
 Pain is a good thing when it's working properly. Suffering is often the problem we need to solve.
 
 ## Types of pain
@@ -176,7 +216,7 @@ Mental pain falls into three categories, each requiring different approaches:
 These are pains you can experience even if you were alone in the universe:
 
 **Self-doubt** - "Am I capable of handling this?"
-**Self-disappointment** - "I failed to meet my own standards"  
+**Self-disappointment** - "I failed to meet my own standards"
 **Loss of control** - "I can't manage what's happening to me" (the root of most anxiety)
 
 ### Interpersonal Pain (Relationship-focused)
@@ -196,26 +236,6 @@ These are about the meaning and direction of your existence:
 **Regret** - "I've wasted precious time and opportunities"
 
 **Why categorization matters**: The same surface emotion (like "I feel bad") could stem from any of these levels. A skilled approach requires identifying which type of pain you're actually experiencing, because the solutions are completely different.
-
-## Pain and Suffering without progress
-
-Pain is often a signal to drive progress (like need to study for interviews, getting done performance reviews, etc). Once you've completed the progress, pain (and likely suffering) can go away.
-
-However, through the power of procrastination/resistance you can have the worst of all worlds: the pain and suffering without progress.
-
-{%include summarize-page.html src="/frog" %}
-
-The more lack of progress, the more pain and suffering, and then guilt and self-disappointment. Getting things done helps resolve this:
-
-{%include summarize-page.html src="/gtd" %}
-
-But some crib notes:
-
-**Allocate concrete time and goals** Best efforts to get stuff done won't happen.
-
-**Give yourself large blocks of time** Don't expect to grind through something painful in 30 minutes. This wouldn't be painful if it was easy to do, you'll often need time to get in the groove before you can make progress. Give yourself large blocks of time - like 2 hours at a time.
-
-**Don't take a step forward and a step backward** A great example of this is dieting. I'll often diet for half a day and then gorge the other half. As a result, a half day of pain with no gain. Either diet that day or don't. Similarly, if you're studying write down your notes. If you just "think about it", but don't do a partial completion - complete waste.
 
 ## Fueling the fire, adding meaning
 
