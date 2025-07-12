@@ -27,7 +27,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
     - [Awesome talks](#awesome-talks)
     - [Working through making Neural Nets](#working-through-making-neural-nets)
   - [2024-07-31](#2024-07-31)
-    - [Auto code editting (via Aider) - TOO Soon](#auto-code-editting-via-aider---too-soon)
+    - [Auto code editing (via Aider) - TOO Soon](#auto-code-editing-via-aider---too-soon)
   - [2024-07-30](#2024-07-30)
     - [Agenic Frameworks](#agenic-frameworks)
   - [2024-06-22](#2024-06-22)
@@ -230,7 +230,7 @@ See: <https://karpathy.ai/zero-to-hero.html>
 
 ### 2024-07-31
 
-#### Auto code editting (via Aider) - TOO Soon
+#### Auto code editing (via Aider) - TOO Soon
 
 OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally it could do more complex changes, like find code that would be good to refactor then make those changes. [aider](https://aider.chat/) is supposed to that, but in my expereince, it just made stuff wrose and was slower then me making the cahnges myself. I guess I'll try again in a while.
 

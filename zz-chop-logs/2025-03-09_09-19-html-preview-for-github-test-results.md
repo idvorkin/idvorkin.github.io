@@ -1012,7 +1012,7 @@ This falls within your requested range. Is there something specific you'd like t
 
 _**User**_
 
-Update the rule to dot hat instead of counting to 100. Explain teh reasson for hte rule:
+Update the rule to dot hat instead of counting to 100. Explain the reason for the rule:
 
 We want to save the log of the conversation, but it doesn't get flushed, but counting to a big number, it tends to flush. After flushing we copy it to git using the `chop git-latest` command.
 

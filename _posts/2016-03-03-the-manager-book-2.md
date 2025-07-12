@@ -958,7 +958,7 @@ I gave a talk on [lies we tell ourselves](https://docs.google.com/presentation/d
 
 Both helpful for a short period of time, and for a longer period of time, kuddos boards let the team get together and celebrate what they appreciate from their co-workers. This has many benefits:
 
-- People are appreciated for thier contributions
+- People are appreciated for their contributions
 - People are reminded how impactful their work is
 - Good behaviors are recognized and reinforced
 - The team bonds and grows
@@ -1558,7 +1558,7 @@ How to reduce pain and suffering. _Have no confusion, I rarely do these, but I w
   - Quickly course correct.
   - Include feedback you're getting.
   - Bonus point for including what you plan to do.
-- Block your calender at work, and tell your family you're working nights and weekends
+- Block your calendar at work, and tell your family you're working nights and weekends
   - Set expectation this will take 110% of your energy.
   - Ensure your family knows and can support you.
   - Remove all other stressors from your life at this time.

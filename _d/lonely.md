@@ -38,7 +38,7 @@ Recent data shows the problem is deepening. Since 1990, the percentage of U.S. a
 
 I wonder if there's someone in Meta working on changing this.
 
-### Happiness spreads upto 3 degrees of seperation
+### Happiness spreads up to 3 degrees of separation
 
 <https://www.bmj.com/content/bmj/337/bmj.a2338.full.pdf>
 

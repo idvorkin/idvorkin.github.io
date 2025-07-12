@@ -120,7 +120,7 @@ More complex then it sounds, need to do this per customer segment:
 - How will they decide whether to buy your product or services?
 - How will they buy it?
 - How will you deliver it?
-- How will you follow up ot make sure you are succesful?
+- How will you follow up to make sure you are successful?
 
 ### Customer Relationships - How do you interact?
 

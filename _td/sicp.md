@@ -137,7 +137,7 @@ Harder on brain, but more consistent
 
 ---
 
-LISP is prefix notion, (funciton args), the upside of this is you enver have to guess operator precedence. Everythign is consistent, makes self editting much easier.
+LISP is prefix notation (function args). The upside of this is you never have to guess operator precedence. Everything is consistent, making self editing much easier.
 
 Having everything in prefix notion makes it very consistent and easy to write code, just a bit tough on the brain.
 
@@ -264,9 +264,9 @@ p1.tail() # => 2
 
 (object class arg1 arg2)
 
-As long as that first object is a funciton you can do anything. What's the difference object.function, is really just (function.object) - yup that's interesting obseragion on on OO.
+As long as that first object is a function you can do anything. What's the difference? `object.function` is really just `(function object)` - yup that's an interesting observation on OO.
 
-So long as syntax is always (function arg1, arg2 arg3), if (method, object, arg arg) - isn't that interseting
+So long as syntax is always `(function arg1 arg2 arg3)`, if `(method object arg arg)` - isn't that interesting?
 
 ### Lazy vs Eager
 

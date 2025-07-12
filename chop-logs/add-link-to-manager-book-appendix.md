@@ -147,7 +147,7 @@ _\*\*\*\*_
 
 _**User**_
 
-No to the point we're editting
+No to the point we're editing
 
 ---
 

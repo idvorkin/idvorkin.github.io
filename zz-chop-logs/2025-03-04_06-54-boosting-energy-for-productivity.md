@@ -1939,7 +1939,7 @@ Would you like me to draft specific transitions between these sections to help t
 
 _**User**_
 
-I like that, lets make it the ToC, and get rid of all the bullet points for everythign but the first straegy section
+I like that. Let's make it the ToC and remove all the bullet points for everything but the first strategy section
 
 ---
 

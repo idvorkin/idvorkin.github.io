@@ -207,7 +207,7 @@ Below is tax rate by income in 2020.
 
 | Tax Rate | Married Filing Joiningly |
 | -------- | ------------------------ |
-| 15%      | Upto 488K                |
+| 15%      | Up to 488K               |
 | 20%      | Above 488K               |
 
 ### Washington State Capital Gains Tax

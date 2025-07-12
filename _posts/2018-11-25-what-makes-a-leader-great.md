@@ -41,7 +41,7 @@ quadrantChart
 
 - A passion for the work itself and for new challenges
 - Unflagging energy to improve
-- Resiliance - Optimism in the face of failure
+- Resilience - Optimism in the face of failure
 
 **Empathy:** Considering others’ feelings, especially when making decisions
 
