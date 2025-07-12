@@ -36,7 +36,7 @@ Pain is in the brain as they say, which is especially true for mental pains. Pai
 - [Fueling the fire, adding meaning](#fueling-the-fire-adding-meaning)
   - [Meaning: From Pain to Suffering](#meaning-from-pain-to-suffering)
   - [Meaning squared: From Suffering to Misery](#meaning-squared-from-suffering-to-misery)
-- [The positive analogs of pain: Pleasure, Satisification, Hubris](#the-positive-analogs-of-pain-pleasure-satisification-hubris)
+- [The positive analogs of pain: Pleasure, Satisfaction, Hubris](#the-positive-analogs-of-pain-pleasure-satisfaction-hubris)
   - [Misery to Hubris](#misery-to-hubris)
 - [Loneliness](#loneliness)
 - [Physical Pain, Injury, Recovery](#physical-pain-injury-recovery)
@@ -128,22 +128,22 @@ Suffering of hitting thumb with hammer: Carpenter, Convert Violinist, concert ne
 
 ### Meaning squared: From Suffering to Misery
 
-Meaning is mandatory, bt we can mess up and apply meaning to our suffering. This is comletely unnecassary.
+Meaning is mandatory, but we can mess up and apply meaning to our suffering. This is completely unnecessary.
 
 **Victim: Nothing I can do**
 
-You can always have an impact - there is always hope. Even if the impact is just how you experience it. For example, you are influencing it, makiing it worse by investing in this victim mentality.
+You can always have an impact - there is always hope. Even if the impact is just how you experience it. For example, you are influencing it, making it worse by investing in this victim mentality.
 
-Note, this is infact the definition of depression. Learned helplessness.
+Note, this is in fact the definition of depression. Learned helplessness.
 
 **Screwed over: It wasn't fair**
 
-Fairness is an illusion. Life provided you no such gaurantee, so this is always a false thought.
+Fairness is an illusion. Life provided you no such guarantee, so this is always a false thought.
 
-## The positive analogs of pain: Pleasure, Satisification, Hubris
+## The positive analogs of pain: Pleasure, Satisfaction, Hubris
 
 Pain to pleasure - Pleasure, often of consumption, a sweet treat. But meaningless.
-Satis
+Satisfaction - More meaningful than pleasure, often from accomplishment or connection.
 
 ### Misery to Hubris
 
