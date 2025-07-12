@@ -57,13 +57,59 @@ Pain is a good thing, suffering is the problem.
 
 ## Phantom vs Real Pain
 
+Just like a car's warning system can malfunction, our mental pain systems can be **under-active, over-active, or well-calibrated**.
+
+**Well-calibrated pain** serves its purpose perfectly:
+
+- **Anxiety before a job interview** → signals you to prepare
+- **Guilt after hurting someone** → signals you to make amends
+- **Disappointment after a failure** → signals you to reassess your approach
+
+**Under-active pain** is dangerous - like a broken smoke detector:
+
+- **No guilt when harming others** (sociopathy)
+- **No anxiety about real threats** (poor judgment)
+- **No disappointment when failing** (no learning)
+
+**Over-active pain** is exhausting - like a car alarm that won't stop:
+
+- **Phantom anxiety** when there's no actual threat (panic attacks)
+- **Phantom guilt** when you've done nothing wrong
+- **Phantom disappointment** that spirals into depression
+
+**The key question**: Is this pain pointing to something that actually needs my attention right now, or is it just noise from a faulty alarm system?
+
+**Real pain** has a clear message and suggests concrete action. **Phantom pain** is vague, repetitive, and offers no constructive path forward.
+
 ## Types of pain
 
-### Desire to control
+Mental pain falls into three categories, each requiring different approaches:
 
-### Doubt
+### Psychological Pain (Self-focused)
 
-### Disappointment
+These are pains you can experience even if you were alone in the universe:
+
+**Self-doubt** - "Am I capable of handling this?"
+**Self-disappointment** - "I failed to meet my own standards"  
+**Loss of control** - "I can't manage what's happening to me" (the root of most anxiety)
+
+### Interpersonal Pain (Relationship-focused)
+
+These require another person, even if only in memory or imagination:
+
+**Guilt/Unfairness** - Contract violations (you broke a promise vs. someone broke a promise to you)
+**Shame/Disappointment** - Exposure of inadequacy (you were revealed as incapable vs. someone else was)
+**Loss of autonomy/Abandonment** - Distance problems (too close/controlled vs. too far/disconnected)
+
+### Spiritual Pain (Life-journey focused)
+
+These are about the meaning and direction of your existence:
+
+**Hopelessness** - "Nothing will ever improve"
+**Meaninglessness** - "My life has no purpose or direction"
+**Regret** - "I've wasted precious time and opportunities"
+
+**Why categorization matters**: The same surface emotion (like "I feel bad") could stem from any of these levels. A skilled approach requires identifying which type of pain you're actually experiencing, because the solutions are completely different.
 
 ## Where's the pain
 

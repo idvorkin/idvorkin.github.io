@@ -3469,7 +3469,7 @@
         },
         "/mental-pain": {
             "description": "Pain is in the brain as they say, which is especially true for mental pains. Pain isn’t the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.\n\n",
-            "doc_size": 23000,
+            "doc_size": 26000,
             "file_path": "_site/mental-pain.html",
             "incoming_links": [
                 "/addiction",
@@ -3489,7 +3489,7 @@
                 "/work-satisfaction",
                 "/y24"
             ],
-            "last_modified": "2025-07-12T14:43:11.928514",
+            "last_modified": "2025-07-12T16:19:43.059533",
             "markdown_path": "_d/mental-pain.md",
             "outgoing_links": [
                 "/anxiety",
