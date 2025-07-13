@@ -3,11 +3,14 @@ layout: post
 no-render-title: true
 title: The thoughts that pain us
 permalink: mental-pain
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-mental-pain.webp
 redirect_from:
   - pain
 ---
 
 Pain is in the brain as they say, which is especially true for mental pains. Pain isn't the enemy though, pain is a signal. The pain system, when working properly draws our attention to a problem so that we can deal with it. However, our pain can evolve into unecassary suffering, be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.
+
+{% include blob_image_float_right.html src="blog/raccoon-mental-pain.webp" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
