@@ -178,7 +178,7 @@ the table
 
 | Type               | TPS | Notes          |
 | ------------------ | --- | -------------- |
-| Key Value (Dynamo) | 40K | Upto 5 Indexes |
+| Key Value (Dynamo) | 40K | Up to 5 Indexes |
 | SQL (Aurora)       | ??  |                |
 
 ## Use cases

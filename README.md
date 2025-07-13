@@ -55,7 +55,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
 
 ### No broken links
 
-- A script validates no broken links keeping everythign nice
+ - A script validates no broken links keeping everything nice
 
 ### Select a Random Page
 
@@ -141,7 +141,7 @@ just js-test-html
 - js.sh - Run the development server with live reload and excluding spurious Jekyll warnings
 - prettier - Opinionated consistent formatting, auto run on git commit
 - vim-toc-generator - Auto generate TOCs, auto run on save
-- checklinks.sh- Check for [broken links](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/checklinks.sh) - Runs manaully from other repro
+- checklinks.sh- Check for [broken links](https://github.com/idvorkin/LinqPadSnippets/blob/master/python/checklinks.sh) - Runs manually from other repo
 
 ### Re-writing from scratch
 

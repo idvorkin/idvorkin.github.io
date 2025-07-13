@@ -42,7 +42,7 @@ Sources:
 ### Your tribe:
 
 - Who is your tribe?
-- Chooses you because you earn thier trust, and are worthy of thier attention.
+- Chooses you because you earn their trust, and are worthy of their attention.
 - Provide attention because there is tension
 - Doesn't care about perfection,
 - When you find your thing, and your tribe finds you, you tune to appeal, so long as it still appeals to your thing.
@@ -51,13 +51,13 @@ Sources:
   - Friend - Wants to know you, and see your art to make YOU happy. If you change your art, they're there for you.
   - Tribe - Wants your art, doesn't care about you, unless grows appreciate of your art.
   - Change yourt art: lose your tribe, keep your friends.
-- Once you've found your tribe, give them art they'll tell thier friends/family about.
+- Once you've found your tribe, give them art they'll tell their friends/family about.
 - Wants personal attention - wants to feel special.
 
 ### Connection:
 
 - People prefer selfies to signed books
-- Make experiances people want to tell thier friends/families about.
+- Make experiences people want to tell their friends/families about.
 - Give people a story they can tell others [TBD:Link - why is noone referring my project]
 - Story/Context is how people connect.
 - Perfection blocks connection, as not accessible. Rough feels good, and accessible.

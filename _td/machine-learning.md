@@ -439,7 +439,7 @@ _Thanks Dan Massey for your recommendation to discuss these topics_
 
 ### Computer Vision
 
-See my explorations of [video editting](https://github.com/idvorkin/video-edit) and CV models.
+See my explorations of [video editing](https://github.com/idvorkin/video-edit) and CV models.
 
 ### Natural Language Processing (NLP)
 

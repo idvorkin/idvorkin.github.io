@@ -51,7 +51,7 @@ In March 2020, I took a 2 month sabatical between leaving Amazon and joining Fac
     - [☑ Kids biking](#-kids-biking)
 - [Inspirations](#inspirations)
 - [iOS](#ios)
-    - [☐ Video Editting - Luma Fusion](#-video-editting---luma-fusion)
+    - [☐ Video Editing - Luma Fusion](#-video-editing---luma-fusion)
 - [Books](#books)
     - [☐ How will you measure your life](#-how-will-you-measure-your-life)
     - [☑ StoryBrand](#-storybrand)
@@ -225,7 +225,7 @@ Too early, waiting for someone to make fine tuning easier/web service
 
 ### iOS
 
-#### ☐ Video Editting - Luma Fusion
+#### ☐ Video Editing - Luma Fusion
 
 ### Books
 
@@ -286,7 +286,7 @@ Chapter 9
 
 #### ☑ StoryBrand
 
-Using the hero's path to createa marketting plan. Also, helpful to clarify what your "business" really is.
+Using the hero's path to create a marketing plan. Also, helpful to clarify what your "business" really is.
 
 Superb book. Very well written, and really speaks to the many, many, websites you see now a days.
 

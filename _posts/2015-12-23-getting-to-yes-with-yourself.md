@@ -21,7 +21,7 @@ Before you can negotiate with others, you need to be in sync with yourself. This
 - [3) Reframe your picture &#x2610;](#3-reframe-your-picture-x2610)
 - [4) Stay in the zone &#x2610;](#4-stay-in-the-zone-x2610)
 - [5) Respect them even if &#x2610;](#5-respect-them-even-if-x2610)
-- [6) Give and Recieve &#x2610;](#6-give-and-recieve-x2610)
+- [6) Give and Receive &#x2610;](#6-give-and-receive-x2610)
 - [7) The 3 wins &#x2611;](#7-the-3-wins-x2611)
 
 <!-- vim-markdown-toc-end -->
@@ -127,12 +127,12 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
 
 ### 5) Respect them even if &#x2610;
 
-- Put yourself in thier shoes
+- Put yourself in their shoes
 - Expand your circle of respect
 - Respect them even if they reject you
 - From exclusion to inclusion
 
-### 6) Give and Recieve &#x2610;
+### 6) Give and Receive &#x2610;
 
 - Give for mutual gain
 - Give for pleasure and meaning

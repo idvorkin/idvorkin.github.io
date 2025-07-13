@@ -22,7 +22,7 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
 - Three critical questions:
   - How do I know when I'm done?
   - If I didn't own this, would I buy it?
-  - If I didn't have this opportunity what would I do to aquire it?
+  - If I didn't have this opportunity what would I do to acquire it?
 - Three key differences between essentialisim and most people.
   - I choose to **NOT** I have to
   - Only a few things matter **NOT** it's all important
@@ -278,8 +278,8 @@ The tricksters:
 ### 13) Edit: Invisible Art - Cut Early, Cut Often. &#x2611;
 
 - Making better is through subtracting
-- Best picture, usually nominited or wins best editting.
-- Editting is hard to see, since it's been removed.
+- Best picture, usually nominated or wins best editing.
+- Editing is hard to see, since it's been removed.
 - A great editor provides clarity by removing the non-essential.
 - Removes annoying distractions
 - Eliminate everything distracting (words/images/details)
@@ -334,7 +334,7 @@ The tricksters:
   - What is the worst case scenario
   - What would make the social effects of this be
   - What would the financial impacts be
-  - How can you invest to reduce risks or strengthen resilliance
+  - How can you invest to reduce risks or strengthen resilience
 
 ### 16) Subtract: Can only ship by cutting &#x2611;
 

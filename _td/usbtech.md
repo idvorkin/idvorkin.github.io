@@ -26,9 +26,9 @@ USB 2.0 (and 1.1 before it) are the ubiquitous legacy charging tech that just wo
 1. If you're obsessed you can measure using this USB A [multimeter](http://amzn.to/2C4ErcR).
 1. My multiport [USB car charger](http://amzn.to/2l9n3ZL)
 
-## It works fast USB charging (but rarely works - upto 100W)
+## It works fast USB charging (but rarely works - up to 100W)
 
-USB Power Delivery (PD) is the new charging standard on the block, and can charge at 10x faster then legacy chargers (upto 100W!!!). USB PD is delivered via the USB C connector. As is normally the case with new tech, the state of chargers and cables currently a mess.
+USB Power Delivery (PD) is the new charging standard on the block, and can charge at 10x faster than legacy chargers (up to 100W!!!). USB PD is delivered via the USB C connector. As is normally the case with new tech, the state of chargers and cables currently a mess.
 
 1. Not all USB-PD to USB-C connectors can carry USB-PD.
 1. Not all USB-C chargers support PD.
