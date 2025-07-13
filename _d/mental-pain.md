@@ -7,55 +7,56 @@ redirect_from:
   - pain
 ---
 
-Pain is in the brain as they say, which is especially true for mental pains. Pain isn't the enemy though, pain is a signal. The pain system, when working properly brings our perspective to a problem so that we can deal with it. However, pain can also be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.
+Pain is in the brain as they say, which is especially true for mental pains. Pain isn't the enemy though, pain is a signal. The pain system, when working properly draws our attention to a problem so that we can deal with it. However, our pain can evolve into unecassary suffering, be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [The point of pain](#the-point-of-pain)
-  - [The Evolutionary Design](#the-evolutionary-design)
-  - [What Pain Actually Does](#what-pain-actually-does)
+- [Pain is not the enemy](#pain-is-not-the-enemy)
+  - [Pain is protective](#pain-is-protective)
+  - [How pain protects us](#how-pain-protects-us)
   - [Real-World Examples](#real-world-examples)
   - [When Pain Systems Fail](#when-pain-systems-fail)
   - [The Paradox of Pain](#the-paradox-of-pain)
-- [Pain vs Suffering](#pain-vs-suffering)
+  - [All Pain, No Gain](#all-pain-no-gain)
+- [Suffering is the "meaning" we attribute to pain](#suffering-is-the-meaning-we-attribute-to-pain)
   - [The Same Pain, Different Suffering](#the-same-pain-different-suffering)
   - [The Meaning-Making Machine](#the-meaning-making-machine)
   - [The Attachment Trap](#the-attachment-trap)
   - [You Can't Control Pain, But You Can Influence Suffering](#you-cant-control-pain-but-you-can-influence-suffering)
-  - [All Pain, No Gain](#all-pain-no-gain)
-- [Types of pain](#types-of-pain)
-  - [Psychological Pain (Self-focused)](#psychological-pain-self-focused)
-  - [Interpersonal Pain (Relationship-focused)](#interpersonal-pain-relationship-focused)
-  - [Spiritual Pain (Life-journey focused)](#spiritual-pain-life-journey-focused)
-- [Fueling the fire, adding meaning](#fueling-the-fire-adding-meaning)
+- [Misery: The meaning we apply to suffering](#misery-the-meaning-we-apply-to-suffering)
   - [Meaning: From Pain to Suffering](#meaning-from-pain-to-suffering)
   - [Meaning squared: From Suffering to Misery](#meaning-squared-from-suffering-to-misery)
-  - [The Two Forms of Misery](#the-two-forms-of-misery)
-  - [How to Catch Yourself Adding Fuel](#how-to-catch-yourself-adding-fuel)
+  - [Some flavors of misery](#some-flavors-of-misery)
+  - [Battling Misery](#battling-misery)
   - [The Liberation](#the-liberation)
 - [The positive analogs of pain: Pleasure, Satisfaction, Hubris](#the-positive-analogs-of-pain-pleasure-satisfaction-hubris)
   - [Misery to Hubris](#misery-to-hubris)
-- [Loneliness](#loneliness)
 - [Physical Pain, Injury, Recovery](#physical-pain-injury-recovery)
 - [Misc topics](#misc-topics)
   - [Pride vs Self Confidence vs Hubris/Arrogance](#pride-vs-self-confidence-vs-hubrisarrogance)
+  - [Diagnosing your favorite pain](#diagnosing-your-favorite-pain)
+    - [Psychological Pain (Self-focused)](#psychological-pain-self-focused)
+    - [Interpersonal Pain (Relationship-focused)](#interpersonal-pain-relationship-focused)
+    - [Loneliness](#loneliness)
+    - [Boredom](#boredom)
+    - [Spiritual Pain (Life-journey focused)](#spiritual-pain-life-journey-focused)
 - [For more info](#for-more-info)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## The point of pain
+## Pain is not the enemy
 
 Pain is not the enemy - it's a **sophisticated alarm system** designed to protect us and drive action. Just like physical pain alerts us to injury and prevents further damage, **mental pain serves as an early warning system for our psychological and social wellbeing**.
 
-### The Evolutionary Design
+### Pain is protective
 
 Pain exists because it **keeps us alive**. Our ancestors who couldn't feel the pain of social rejection died alone. Those who couldn't feel anxiety about real threats became prey. Those who couldn't feel guilt destroyed the cooperative relationships they depended on for survival.
 
 Pain is **inherently unpleasant by design** - if it felt good, we'd ignore it. Imagine if your car's warning lights played soothing music instead of flashing urgent colors. The unpleasantness isn't a bug, it's a feature that **forces our attention away from whatever we're doing** and onto what needs immediate care.
 
-### What Pain Actually Does
+### How pain protects us
 
 Mental pain typically signals one of three core issues:
 
@@ -106,7 +107,9 @@ Just like a car's warning system can malfunction, our mental pain systems can be
 
 **Real pain** has a clear message and suggests concrete action. **Phantom pain** is vague, repetitive, and offers no constructive path forward.
 
-The trouble comes when pain becomes **chronic** (continuing long after its protective purpose is served) or **phantom** (firing when there's no actual threat). This is when pain transforms from a helpful signal into unnecessary suffering.
+The trouble comes when pain becomes
+
+- **chronic** (continuing long after its protective purpose is served) or \* **phantom** (firing when there's no actual threat). This is when pain transforms from a helpful signal into unnecessary suffering.
 
 ### The Paradox of Pain
 
@@ -118,11 +121,47 @@ The trouble comes when pain becomes **chronic** (continuing long after its prote
 
 Pain that persists after you've addressed its message may be phantom pain that needs different treatment. But pain that you're ignoring while the problem remains will only intensify until you pay attention.
 
-## Pain vs Suffering
+### All Pain, No Gain
 
-**Pain is inevitable. Suffering is optional.**
+Here's the cruelest irony: through procrastination and resistance, you can experience **all the pain and suffering** of a situation while making **zero progress** toward resolving it.
 
-Humans need things to have meaning. Our brains will either discover or manufacture a meaning for everything we experience. **Suffering is the meaning we give to pain** - the story we tell ourselves about what the pain means.
+Pain is often a signal to drive action - study for the interview, complete the performance review, have the difficult conversation. Once you take action and make progress, the pain (and suffering) naturally diminishes.
+
+But when you avoid taking action, you get the worst of both worlds:
+
+- **All the mental anguish** of knowing you need to do something
+- **None of the relief** that comes from actually doing it
+- **Bonus guilt and self-disappointment** for procrastinating
+
+Why does this happen? The Resistance!
+
+{%include summarize-page.html src="/resistance" %}
+
+The more you avoid progress, the more pain and suffering compound. Then guilt and self-disappointment pile on top. Getting things done is often the fastest path to pain relief:
+
+**Key strategies for breaking the cycle:**
+
+My post on breaking the cycle:
+
+{%include summarize-page.html src="/frog" %}
+
+But here's a short version:
+
+- **Allocate concrete time and goals** - "Best efforts" won't happen. Schedule specific blocks.
+
+- **Give yourself large blocks of time** - Don't expect to solve painful problems in 30 minutes. If it was easy, it wouldn't be painful. Give yourself 2+ hour blocks to get into the groove.
+
+- **Don't take a step forward and a step backward** - Like dieting for half a day then binging the other half. Either commit to the day or don't. If you study, write down your notes. "Just thinking about it" without completion is pure waste.
+
+Amazingly, and regardless of how often you experience the, resistance prevents you from remebering it --
+
+**Once you take action, you transform pointless suffering into purposeful pain that actually leads somewhere.**
+
+Pain is a good thing when it's working properly. Suffering is often the problem we need to solve.
+
+## Suffering is the "meaning" we attribute to pain
+
+Humans need meaning. Our brains will either discover or manufacture a meaning for everything we experience. **Suffering is the meaning we give to pain** - the story we tell ourselves about what the pain means.
 
 ### The Same Pain, Different Suffering
 
@@ -177,67 +216,7 @@ Suffering often comes from **attachment** - our desperate grip on how things "sh
 
 **Suffering happens IN you.** The stories you tell yourself about what the pain means - that's where your power lies.
 
-### All Pain, No Gain
-
-Here's the cruelest irony: through procrastination and resistance, you can experience **all the pain and suffering** of a situation while making **zero progress** toward resolving it.
-
-Pain is often a signal to drive action - study for the interview, complete the performance review, have the difficult conversation. Once you take action and make progress, the pain (and suffering) naturally diminishes.
-
-But when you avoid taking action, you get the worst of both worlds:
-
-- **All the mental anguish** of knowing you need to do something
-- **None of the relief** that comes from actually doing it
-- **Bonus guilt and self-disappointment** for procrastinating
-
-{%include summarize-page.html src="/frog" %}
-
-The more you avoid progress, the more pain and suffering compound. Then guilt and self-disappointment pile on top. Getting things done is often the fastest path to pain relief:
-
-{%include summarize-page.html src="/gtd" %}
-
-**Key strategies for breaking the cycle:**
-
-**Allocate concrete time and goals** - "Best efforts" won't happen. Schedule specific blocks.
-
-**Give yourself large blocks of time** - Don't expect to solve painful problems in 30 minutes. If it was easy, it wouldn't be painful. Give yourself 2+ hour blocks to get into the groove.
-
-**Don't take a step forward and a step backward** - Like dieting for half a day then binging the other half. Either commit to the day or don't. If you study, write down your notes. "Just thinking about it" without completion is pure waste.
-
-**The liberation**: Once you take action, you transform pointless suffering into purposeful pain that actually leads somewhere.
-
-Pain is a good thing when it's working properly. Suffering is often the problem we need to solve.
-
-## Types of pain
-
-Mental pain falls into three categories, each requiring different approaches:
-
-### Psychological Pain (Self-focused)
-
-These are pains you can experience even if you were alone in the universe:
-
-**Self-doubt** - "Am I capable of handling this?"
-**Self-disappointment** - "I failed to meet my own standards"
-**Loss of control** - "I can't manage what's happening to me" (the root of most anxiety)
-
-### Interpersonal Pain (Relationship-focused)
-
-These require another person, even if only in memory or imagination:
-
-**Guilt/Unfairness** - Contract violations (you broke a promise vs. someone broke a promise to you)
-**Shame/Disappointment** - Exposure of inadequacy (you were revealed as incapable vs. someone else was)
-**Loss of autonomy/Abandonment** - Distance problems (too close/controlled vs. too far/disconnected)
-
-### Spiritual Pain (Life-journey focused)
-
-These are about the meaning and direction of your existence:
-
-**Hopelessness** - "Nothing will ever improve"
-**Meaninglessness** - "My life has no purpose or direction"
-**Regret** - "I've wasted precious time and opportunities"
-
-**Why categorization matters**: The same surface emotion (like "I feel bad") could stem from any of these levels. A skilled approach requires identifying which type of pain you're actually experiencing, because the solutions are completely different.
-
-## Fueling the fire, adding meaning
+## Misery: The meaning we apply to suffering
 
 The human brain doesn't stop at creating one layer of meaning. We can add **meaning to our suffering** - essentially creating suffering about our suffering. This is where unnecessary misery lives.
 
@@ -259,7 +238,7 @@ This first layer of meaning is natural and often helpful. It helps us process wh
 
 This second layer is **always optional** and **always unhelpful**. It's a **self-centered meaning** that makes everything worse.
 
-### The Two Forms of Misery
+### Some flavors of misery
 
 **Victim Misery**: "There's nothing I can do"
 
@@ -267,7 +246,7 @@ This second layer is **always optional** and **always unhelpful**. It's a **self
 - "I have zero control over my situation"
 - "Nothing I do matters"
 
-**This is factually false.** You always have **some** influence, even if tiny. You can influence how you think about it, how you breathe through it, how you show up to it. The influence might be small, but it's never zero.
+**The victim fallacy** You always have **some** influence, even if tiny. You can influence how you think about it, how you breathe through it, how you show up to it. The influence might be small, but it's never zero.
 
 **Unfairness Misery**: "Life is unfair to me"
 
@@ -275,9 +254,13 @@ This second layer is **always optional** and **always unhelpful**. It's a **self
 - "Others have it so much easier"
 - "The universe is against me"
 
-**This is also factually false.** Life never promised you fairness. Fairness is a human concept that doesn't apply to natural processes. Rain doesn't "unfairly" ruin your picnic - it's just rain.
+**The faireness fallacy** Life never promised you fairness. Fairness is a human concept that doesn't apply to natural processes. Rain doesn't "unfairly" ruin your picnic - it's just rain.
 
-### How to Catch Yourself Adding Fuel
+When folks spiral into a black hole of misery it can be very challenging to escape
+
+{%include summarize-page.html src="/depression"%}
+
+### Battling Misery
 
 **Watch for these thought patterns:**
 
@@ -314,11 +297,6 @@ Pain to pleasure - Pleasure, often of consumption, a sweet treat. But meaningles
 Satisfaction - More meaningful than pleasure, often from accomplishment or connection.
 
 ### Misery to Hubris
-
-## Loneliness
-
-- Boredom is the loss of connection
-- [Loneliness is bad for your health](https://www.cdc.gov/aging/publications/features/lonely-older-adults.html)
 
 ## Physical Pain, Injury, Recovery
 
@@ -362,6 +340,72 @@ Final load-bearing ability:
 ### Pride vs Self Confidence vs Hubris/Arrogance
 
 Interesting - in Dr. Raph's model, pride is good, arrogance is bad. The test for the boundary is "how impressive is the achievement?" [Pride ducking with you](/pride) is my post on pride and arrogance.
+
+### Diagnosing your favorite pain
+
+Mental pain falls into three categories, each requiring different approaches:
+
+#### Psychological Pain (Self-focused)
+
+These are pains you can experience even if you were alone in the universe:
+
+**Self-doubt** - "Am I capable of handling this?"
+**Self-disappointment** - "I failed to meet my own standards"
+**Loss of control** - "I can't manage what's happening to me" (the root of most anxiety)
+
+#### Interpersonal Pain (Relationship-focused)
+
+These require another person, even if only in memory or imagination:
+
+**Guilt/Unfairness** - Contract violations (you broke a promise vs. someone broke a promise to you)
+**Shame/Disappointment** - Exposure of inadequacy (you were revealed as incapable vs. someone else was)
+**Loss of autonomy/Abandonment** - Distance problems (too close/controlled vs. too far/disconnected)
+
+#### Loneliness
+
+Loneliness is the suffering that results from a perceived or actual lack of meaningful connection.
+
+{%include summarize-page.html src="/lonely"%}
+
+NOTE: Loneliness is **not** solitude, and loneliness can exist even when surrounded by others
+
+- Solitude can be a choice, a positive experience of being alone with oneself, often leading to creativity or peace.
+
+- Loneliness is unwanted. It’s the distress that comes from perceiving yourself as isolated or disconnected, even if you are physically surrounded by people.
+
+#### Boredom
+
+Boredom is a perceived absence of meaningful stimulation, coupled with a lack of compelling internal or external targets for attention, which triggers discomfort and a craving for change.
+
+For example:
+
+- Low matterness: Nothing seems to “make a difference.”
+
+- Low meaning: The present moment lacks interpretable value or direction.
+
+- Weak choice: You may feel trapped or uninspired, which diminishes autonomy and the sense of influence.
+
+The correct responses to boredom:
+
+- “What would it take to make this moment matter?”
+- “What could I care about here?”
+- Is there a way I can serve, create, or connect?”
+
+Use boredom as a trigger for redirection—not suppression. It invites deliberate design: re-engaging attention, crafting purpose, or revisiting your aspirationsglossary.
+
+Be careful boredom is a breading ground for addiction
+
+{%include summarize-page.html src="/addiction"%}
+
+#### Spiritual Pain (Life-journey focused)
+
+These are about the meaning and direction of your existence:
+
+**Hopelessness** - "Nothing will ever improve"
+**Meaninglessness** - "My life has no purpose or direction"
+**Regret** - "I've wasted precious time and opportunities"
+
+**Why categorization matters**: The same surface emotion (like "I feel bad") could stem from any of these levels. A skilled approach requires identifying which type of pain you're actually experiencing, because the solutions are completely different.
 
 ## For more info
 
