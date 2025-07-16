@@ -121,7 +121,8 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [How do handle poor communication, ESL, ineffective communication in some modalities](#how-do-handle-poor-communication-esl-ineffective-communication-in-some-modalities)
 - [Cross Org Influence](#cross-org-influence)
   - [How do you think about escalations?](#how-do-you-think-about-escalations)
-- [Team Insecurity](#team-insecurity)
+  - [Team Insecurity](#team-insecurity)
+  - [How do you nudge engineers who won't ask you for help?](#how-do-you-nudge-engineers-who-wont-ask-you-for-help)
   - [Everyone wants to feel supported](#everyone-wants-to-feel-supported)
   - [Maintain perspective](#maintain-perspective)
 - [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
@@ -1759,6 +1760,10 @@ Pro tip: I always remind folks—if the priorities were obvious, they wouldn't b
 
 - Very common situation
 - Team feels nothing they/EM can do about - but that's completely wrong!
+### How do you nudge engineers who won't ask you for help?
+
+Too many engineers make the same mistake: working in silos instead of teaming up with their manager. Going dark on an enormously important, languishing problem is the worst thing you can do. Managers exist to pair with their team on the hardest challenges, bringing the resources and experience of the entire group. Engineers have the time and context to go deep, while managers can contribute breadth and unblock progress. Often folks hesitate out of fear that struggling will be noticed, but your peers and manager are usually already aware because the issue impacts others. Collaborating openly with your manager resolves problems faster and more effectively. If you're a manager, insist on that partnership.
+
 
 ### Everyone wants to feel supported
 
