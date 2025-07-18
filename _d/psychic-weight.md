@@ -55,7 +55,9 @@ Aversion is the desire to not face something. This often results in procrastinat
 
 Personifying emotions can be helpful, and aversion (and procrastination) are personified by [the resistance](/resistance).
 
-### [Mind monsters](/mind-monsters)
+### Mind monsters
+
+{%include summarize-page.html src="/mind-monsters" %}
 
 Say you have a prize horse that you're training to win the Kentucky derby. Do you feed this horse ketchup and peanut butter? Of course not - you need this horse to win so you feed it the highest quality oats you can find. Now, isn't your mind far more important than a race horse? Surely you shouldn't be focusing on silly things like anger and ego, these unhelpful thoughts are mind monsters. Make sure there are no mind monsters in your [Idle Loop](/idle-loop)
 
@@ -100,7 +102,9 @@ From the prophet:
 
 ## Antidotes
 
-### Separate [pain from suffering](/mental-pain)
+### Separate pain from suffering
+
+{%include summarize-page.html src="/mental-pain" %}
 
 ### Eat the frog
 
@@ -140,7 +144,9 @@ I used to be very insecure about money, I couldn't buy a 1/2 gallon of milk beca
 
 If you don't do small things, they get bigger and bigger and bigger.
 
-### Examples of [Pride](/pride)
+### Examples of Pride
+
+{%include summarize-page.html src="/pride" %}
 
 ## Useful thoughts.
 

@@ -4145,7 +4145,7 @@
             "url": "/prompts"
         },
         "/psychic-weight": {
-            "description": "Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it of, and getting now relief regardless of when you sit or sleep. Now imagine that’s not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.\n\n",
+            "description": "Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it off, and getting no relief regardless of when you sit or sleep. Now imagine that’s not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.\n\n",
             "doc_size": 20000,
             "file_path": "_site/psychic-weight.html",
             "incoming_links": [
@@ -4155,7 +4155,7 @@
                 "/process-journal",
                 "/random-idea"
             ],
-            "last_modified": "2025-07-18T07:08:30.850730",
+            "last_modified": "2025-07-18T07:14:09.866764",
             "markdown_path": "_d/psychic-weight.md",
             "outgoing_links": [
                 "/7-habits",
