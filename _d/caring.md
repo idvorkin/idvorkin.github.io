@@ -8,7 +8,11 @@ redirect_from:
 imagefeaturelocal: raccoon-caring.webp
 ---
 
-Let's define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don't control), brings us down. Much of this post is based on the work of [Dr. Raph](https://whatilearnedsofar.com/), and a book on stoicism [The practicing stoic](https://www.amazon.com/dp/B0954XFJ4R).
+Let's define caring, as the intensity of our emotions, critical given a lack of emotional intensity is depression. Intense emotions are synonymous with interest and mental energy, which is a double edged sword: Good caring (commitment to our identity, positive habits) charges us up, but bad caring (attachment, anger, anxiety, focus on things we don't control), brings us down. When bad caring manifests as repetitive, ruminating thought patterns, they become psychic shadows requiring specialized techniques:
+
+{%include summarize-page.html src="/psychic-shadows" %}
+
+Much of this post is based on the work of [Dr. Raph](https://whatilearnedsofar.com/), and a book on stoicism [The practicing stoic](https://www.amazon.com/dp/B0954XFJ4R).
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

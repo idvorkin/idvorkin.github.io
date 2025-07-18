@@ -66,6 +66,7 @@ I've tried lots of things, being consistent is hard, especially when you get dep
 - [7 Habits](/7-habits)
 - [Getting to yes with yourself](/getting-to-yes-with-yourself)
 - Talking to the [voices in my head](/voices)
+- Crafting spells to banish [psychic shadows](/psychic-shadows)
 - [Getting things done ([GTD](/gtd))
 - Fierce [Work life balance](/wlb)
 

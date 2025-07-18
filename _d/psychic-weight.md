@@ -87,6 +87,10 @@ Analogies:
 
 {%include summarize-page.html src="/idle-loop" %}
 
+When ruminating thoughts become specific, repetitive patterns that loop endlessly in your mind, they become psychic shadows that require specialized techniques to banish:
+
+{%include summarize-page.html src="/psychic-shadows" %}
+
 ### Beating yourself up
 
 ### Grasping

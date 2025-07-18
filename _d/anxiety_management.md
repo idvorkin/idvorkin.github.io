@@ -45,6 +45,10 @@ _(From [Anxiety Management](https://whatilearnedsofar.com/practice/anxiety-manag
 
 **First, observe you are experiencing anxiety** and label it **"This discomfort I'm experiencing is anxiety".** Just knowing what's going on will help calm the anxiety.
 
+When anxiety manifests as specific, repetitive thought patterns that loop endlessly ("What if the market crashes?" "What if I fail at this presentation?"), these become psychic shadows that require specialized banishment techniques:
+
+{%include summarize-page.html src="/psychic-shadows" %}
+
 Emotions, especially [pain](/mental-pain), are usually automatic habits, not deliberate or optimized. Because emotions are not reliable, we should apply cognition before our emotions lead us astray.
 
 Many pleasures feel good, but are not good for you - like too much chocolate. Some pains feel bad, but are not bad for you - like the source of anxiety.
