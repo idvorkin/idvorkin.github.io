@@ -7,12 +7,15 @@ tags:
   - mental health
   - how igor ticks
 permalink: /psychic-shadows
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-power-word.webp
 redirect_from:
   - /shadows
   - /thought-spells
 ---
 
 It's 3am and your brain is replaying that conversation from six months ago, calculating worst-case financial scenarios, or imagining all the ways you'll fail at that thing you haven't even started yet. These aren't just ordinary worries - they're psychic shadows, specific thought patterns that loop endlessly in your mind like restless spirits. If you're tired of being held hostage by these ruminating thoughts, this post will teach you how to craft personalized spells that banish each shadow the moment it appears, giving you a mystical toolkit for transforming persistent mental loops into single-word circuit breakers that actually work.
+
+{% include blob_image_float_right.html src="blog/racoon-power-word.webp" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

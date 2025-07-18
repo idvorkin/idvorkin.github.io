@@ -1688,7 +1688,6 @@
                 "/mental-pain",
                 "/parkinson",
                 "/productive",
-                "/psychic-shadows",
                 "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -4029,15 +4028,15 @@
                 "/psychic-weight",
                 "/siy"
             ],
-            "last_modified": "2025-07-18T07:50:05-07:00",
+            "last_modified": "2025-07-18T08:19:42.610392",
             "markdown_path": "_d/psychic-shadows.md",
             "outgoing_links": [
                 "/addiction",
                 "/anxiety-management",
-                "/d/resistance",
                 "/mental-pain",
                 "/mind-monsters",
                 "/psychic-weight",
+                "/resistance",
                 "/todo_enjoy"
             ],
             "redirect_url": "",
