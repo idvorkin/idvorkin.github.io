@@ -1496,7 +1496,6 @@
                 "/happy",
                 "/negotiate",
                 "/operating-manual",
-                "/psychic-weight",
                 "/random-idea",
                 "/regrets",
                 "/shame",
@@ -1698,7 +1697,6 @@
                 "/operating-manual",
                 "/physical-health",
                 "/productive",
-                "/psychic-weight",
                 "/random-idea",
                 "/sharpen-the-saw",
                 "/switch"
@@ -1740,7 +1738,6 @@
                 "/igor-gap-year",
                 "/parkinson",
                 "/productive",
-                "/psychic-weight",
                 "/random-idea",
                 "/timeoff"
             ],
@@ -2982,7 +2979,6 @@
                 "/depression",
                 "/gtd",
                 "/happy",
-                "/psychic-weight",
                 "/random-idea"
             ],
             "last_modified": "2024-12-26T09:00:03-08:00",
@@ -4159,21 +4155,21 @@
                 "/process-journal",
                 "/random-idea"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-18T07:08:30.850730",
             "markdown_path": "_d/psychic-weight.md",
             "outgoing_links": [
                 "/7-habits",
                 "/addiction",
-                "/curious",
-                "/d/habits",
-                "/d/resistance",
                 "/death",
                 "/frog",
+                "/grandmother",
                 "/gtd",
-                "/idle",
+                "/habits",
+                "/idle-loop",
                 "/mental-pain",
                 "/mind-monsters",
                 "/pride",
+                "/resistance",
                 "/shame",
                 "/siy"
             ],

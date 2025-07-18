@@ -9,7 +9,7 @@ permalink: psychic-weight
 author: "Igor Dvorkin"
 ---
 
-Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it of, and getting now relief regardless of when you sit or sleep. Now imagine that's not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.
+Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it off, and getting no relief regardless of when you sit or sleep. Now imagine that's not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.
 
 <!-- prettier-ignore-start -->
 
@@ -61,7 +61,7 @@ Say you have a prize horse that you're training to win the Kentucky derby. Do yo
 
 ### Triggers
 
-Like the trigger on a land mine, we have thoughts that have caused us damage and emotional scarring. These thoughts are triggers, and when they happen we have a "un realistic" response to them. o
+Like the trigger on a land mine, we have thoughts that have caused us damage and emotional scarring. These thoughts are triggers, and when they happen we have an "unrealistic" response to them.
 
 Analogies:
 
@@ -93,8 +93,8 @@ The desire to not lose something - make less money, have someone die. The antido
 
 From the prophet:
 
-- _For what are your possessions but things you keep and guard for fear you may need them to morrow?_
-- _And to-morrow, what shall to-morrow bring to the over-prudent dog burying bones in the trackless sand as he follows the pilgrims to the holy city?_
+- _For what are your possessions but things you keep and guard for fear you may need them tomorrow?_
+- _And tomorrow, what shall tomorrow bring to the over-prudent dog burying bones in the trackless sand as he follows the pilgrims to the holy city?_
 - _And what is fear of need but need itself?_
 - _Is not dread of thirst when your well is full, the thirst that is unquenchable?_
 
@@ -130,7 +130,7 @@ During our bathroom remodel, I felt the contractor was trying to f#\$ us over, a
 
 ### Insecurity around money
 
-I used to be very insecure about money, I couldn't buy a 1/2 gallon of milk because it was more expensive per ounce then buying a gallon of milk. And don't worry, this was happening well into the time I was buying 100\$ on my bar tabs.
+I used to be very insecure about money, I couldn't buy a 1/2 gallon of milk because it was more expensive per ounce than buying a gallon of milk. And don't worry, this was happening well into the time I was buying $100 on my bar tabs.
 
 ### Needing to finish a self evaluation
 
@@ -145,5 +145,5 @@ If you don't do small things, they get bigger and bigger and bigger.
 ## Useful thoughts.
 
 - As usual, the [7 habits](/7-habits) helps.
-- [Habits](/habits) keep psychic weight get handled.
+- [Habits](/habits) keep psychic weight handled.
 - [Grandmother mind](/grandmother)
