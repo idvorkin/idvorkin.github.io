@@ -63,9 +63,27 @@ The ancient practice of spell-crafting isn't about magic wands and cauldrons - i
 
 Before you can banish a shadow, you must first see it clearly. This requires developing what I call "shadow awareness" - the ability to notice when you've slipped into a rumination loop.
 
+But here's the crucial distinction: not all mental discomfort deserves banishment. Some thoughts are **functional mental pain** - friendly spirits that deserve attention because they're pointing to something that actually needs your focus. Others are **mental suffering** - the unhelpful meanings and stories we add on top, creating shadows that need banishment.
+
+{% include summarize-page.html src="/mental-pain" %}
+
+**Functional pain (friendly spirits to nurture)**:
+
+- "I feel anxious about this presentation" → Points to real preparation needed
+- "I feel guilty about breaking that promise" → Points to relationship repair needed
+- "I feel disappointed about my performance" → Points to skills that need development
+
+**Mental suffering (shadows to banish)**:
+
+- "I always mess everything up" → Unhelpful story about your identity
+- "Everyone will think I'm incompetent" → Catastrophic assumption about others
+- "I'll never be good enough" → Ruminating loop with no constructive action
+
 The signs are usually physical first: tension in your shoulders, a knot in your stomach, that familiar feeling of mental agitation. Then comes the recognition: "Oh, I'm doing that thing again where I imagine the worst-case scenario about..."
 
-Practice this meta-cognition. Label it: "This discomfort I'm experiencing is shadow rumination."
+But before crafting a spell, ask: **Is this pain pointing to something that actually needs my attention, or is this suffering I'm adding on top?** Functional pain deserves action. Mental suffering deserves banishment.
+
+Practice this meta-cognition. Label it: "This discomfort I'm experiencing is shadow rumination" - but only after confirming it's not a friendly spirit with a legitimate message.
 
 ### Step 2: Analyze Deeply
 
@@ -103,7 +121,17 @@ The key is that the word should immediately connect you back to your deeper anal
 
 When you catch the shadow starting its familiar dance, speak your spell word. Say it out loud if possible, or with clear intention in your mind.
 
-If the spell doesn't work - if the shadow keeps circling - that's feedback. Either you need to do more analysis (back to Step 2) or you need a different word that better captures your antidote.
+**Important limitation**: Spells can only be so powerful. You can't simply make yourself stop thinking about something - try not to think about a pink elephant on a giant ball right now, and you'll see what I mean. The mind doesn't work through suppression. Instead, spells work by **redirecting your attention to something else**. Your spell word should connect you to a different thought, feeling, or action.
+
+This is why it's crucial to pair spell-work with activities you genuinely enjoy. Be wary of using addictive distractions (endless scrolling, substances, compulsive behaviors) to avoid shadows - these create new problems.
+
+{% include summarize-page.html src="/addiction" %}
+
+Instead, redirect toward things that genuinely nourish you: calling a friend, taking a walk, working on a meaningful project, listening to music that moves you.
+
+{% include summarize-page.html src="/todo_enjoy" %}
+
+If the spell doesn't work - if the shadow keeps circling - that's feedback. Either you need to do more analysis (back to Step 2), you need a different word that better captures your antidote, or you need to pair the spell with concrete redirection activities.
 
 Good spells get stronger with practice. The neural pathway from shadow-recognition to spell-deployment becomes more automatic over time.
 
