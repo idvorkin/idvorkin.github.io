@@ -121,7 +121,7 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [How do handle poor communication, ESL, ineffective communication in some modalities](#how-do-handle-poor-communication-esl-ineffective-communication-in-some-modalities)
 - [Cross Org Influence](#cross-org-influence)
   - [How do you think about escalations?](#how-do-you-think-about-escalations)
-  - [Team Insecurity](#team-insecurity)
+- [Team Insecurity](#team-insecurity)
   - [How do you nudge engineers who won't ask you for help?](#how-do-you-nudge-engineers-who-wont-ask-you-for-help)
   - [Everyone wants to feel supported](#everyone-wants-to-feel-supported)
   - [Maintain perspective](#maintain-perspective)
@@ -134,6 +134,9 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
   - [The flip: When charter changes](#the-flip-when-charter-changes)
   - [Insufficient progress - Double down or pivot](#insufficient-progress---double-down-or-pivot)
+    - [Space can be successful, just hasn't yet - hold the course](#space-can-be-successful-just-hasnt-yet---hold-the-course)
+    - [Space can not be successful, or can't be successful in a reasonable time frame](#space-can-not-be-successful-or-cant-be-successful-in-a-reasonable-time-frame)
+    - [How long should you keep the old project running as you try to find new charter?](#how-long-should-you-keep-the-old-project-running-as-you-try-to-find-new-charter)
   - [How to handle Layoffs](#how-to-handle-layoffs)
   - [What's the best configuration for layoff announcements?](#whats-the-best-configuration-for-layoff-announcements)
 - [Personal Motivations](#personal-motivations)
@@ -1934,23 +1937,22 @@ A great way to do this is set the team up to do spikes on the major work items, 
 
 When progress is insufficient, there are two situations, both painful, with overlapping symptoms, and some shared requirements.
 
-1/ You believe the charter can still be successful, but needs more time due to execution gaps/insufficient progress/insufficient resources.
+1. You believe the charter can still be successful, but needs more time due to execution gaps/insufficient progress/insufficient resources.
+2. You no longer believe the space can be successful.
 
-2/ You no longer believe the space can be successful.
-
-Both 1/ and 2/ can be subjective, and there can be disagreement, but an objective criteria can help establish this.
+Both situations can be subjective. There will be disagreement, often passionate disagreement as so much of the teams identity can be invested in the prodcut. An objective criteria will help.
 
 **Symptoms:**
 
-1/ Progress towards goals is slower than expected.
-2/ Team is demotivated - the team knows the goals, and they know they aren't making progress.
+1. Progress towards goals is slower than expected.
+2. Team is demotivated - the team knows the goals, and they know they aren't making progress.
 
 **Communications:**
 
-1/ Surprises are bad - you need a plan, and to let your leadership and partners know what is going on, and time till you'll have a plan.
-2/ You need to let the team know what is going on, and that a plan of action is happening to make it right.
+1. Surprises are bad - you need a plan, and to let your leadership and partners know what is going on, and time till you'll have a plan.
+2. You need to let the team know what is going on, and that a plan of action is happening to make it right.
 
-**Space can be successful, just hasn't yet - hold the course**
+#### Space can be successful, just hasn't yet - hold the course
 
 This is often a result of execution difficulties, or underestimating the difficulties of progress in a space. Action depends on the situation.
 
@@ -1958,7 +1960,7 @@ If there are sufficient resources, and there is high probability success is like
 
 If there are insufficient resources, or resources are blocked - consider the space can not be successful playbook.
 
-**Space can not be successful, or can't be successful in a reasonable time frame**
+#### Space can not be successful, or can't be successful in a reasonable time frame
 
 This will be a painful situation. The team has invested significantly: emotionally and through their work and a drastic change is required. The team and the manager will have a desire for wishful thinking, but that must be avoided as additional investment is waste of resources, often the sunk cost fallacy.
 
@@ -1973,6 +1975,10 @@ In a common case, the decision will be sudden, often with an edict from leadersh
 - Figure out an interim roadmap till longer term work can be found
 - Figure out how to wrap up work, and ensure fair credit attributed to work in progress.
 - This is a highly emotional situation support the team, and yourself.
+
+#### How long should you keep the old project running as you try to find new charter?
+
+Finding a new charter is hard, it takes longer then you'd expect, and then once you "have it" it takes even more time to get it engineer ready. It's very tempting to let the "walking dead" project continue consuming resources as you are stalling to find new charter. This **is a mistake** you are wasting the business's resources, and the engineer's time. **Pick a pivot date, and hit that date even if there is no new charter** Use the date as leverage to influence the priority for your leadership and XFN partners. Also ensure you have a backup for the team, helping other teams, better engineering projects, hack-a-thon ideas, etc.
 
 NOTES: - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
 
