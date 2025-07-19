@@ -10,6 +10,12 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 <!-- vim-markdown-toc-start -->
 
 - [AI Developer, vs a Software Engineer using AI](#ai-developer-vs-a-software-engineer-using-ai)
+- [The 10 Commandments of the AI Developer](#the-10-commandments-of-the-ai-developer)
+  - [1. The Bitter Lesson: Scale beats clever algorithms](#1-the-bitter-lesson-scale-beats-clever-algorithms)
+  - [2. AI can replace a well-defined role, it cannot replace an unbounded problem](#2-ai-can-replace-a-well-defined-role-it-cannot-replace-an-unbounded-problem)
+  - [3. Your secret sauce is the evals, then the training data - your prompt has no economic value.](#3-your-secret-sauce-is-the-evals-then-the-training-data---your-prompt-has-no-economic-value)
+  - [4. Use the most expensive model you can as you prove you can solve the problem](#4-use-the-most-expensive-model-you-can-as-you-prove-you-can-solve-the-problem)
+  - [5. Additional Commandment Ideas](#5-additional-commandment-ideas)
 - [Programs, Human Code, AI](#programs-human-code-ai)
 - [Design Patterns](#design-patterns)
   - [Levels of Cognitive Architecture](#levels-of-cognitive-architecture)
@@ -58,6 +64,46 @@ An AI developer would instead do:
 - Be the PM, nail the use case.
 - Figure out how much of it AI can do.
 - Close the gap.
+
+## The 10 Commandments of the AI Developer
+
+### 1. The Bitter Lesson: Scale beats clever algorithms
+
+Historical attempts at building intelligence have shown that methods that leverage computation and scale ultimately win over human-designed features and clever algorithms. Plan for scale, not just initial implementation.
+
+### 2. AI can replace a well-defined role, it cannot replace an unbounded problem
+
+Focus on specific, bounded use cases with clear success criteria. AI excels at replacing discrete functions but struggles with open-ended, multi-domain problems that require indefinite scope.
+
+### 3. Your secret sauce is the evals, then the training data - your prompt has no economic value.
+
+Competitive advantage comes from rigorous evaluation frameworks and quality training data, not from hiding prompts. Invest heavily in building comprehensive test suites and data pipelines.
+
+### 4. Use the most expensive model you can as you prove you can solve the problem
+
+Start with the best available model (GPT-4o, Claude Sonnet, etc.) to validate your use case and establish a quality baseline. Don't optimize for cost until you've proven the problem is solvable. Once you have working evals and proven value, then optimize downward to cheaper/faster models while maintaining acceptable quality thresholds.
+
+### 5. Additional Commandment Ideas
+
+- **Design for failure modes explicitly** - AI will fail in unexpected ways. Build error handling, graceful degradation, and clear user feedback when things go wrong.
+
+- **Version your prompts like code** - Track prompt changes, A/B test variations, and maintain rollback capabilities. Prompt engineering is software engineering.
+
+- **Optimize the human-AI handoff** - The transition points where control passes between AI and humans are critical. Make them seamless and obvious.
+
+- **Build domain-specific evaluation datasets** - Generic benchmarks don't predict performance on your specific use case. Create custom test sets that mirror real user scenarios.
+
+- **Treat AI outputs as drafts, not final products** - Design workflows that assume AI output needs human review, editing, or validation before reaching end users.
+
+- **Cache aggressively, compute selectively** - AI inference is expensive. Cache common queries, precompute frequent operations, and only invoke models when truly necessary.
+
+- **Monitor model drift and data shift** - AI performance degrades over time as real-world data changes. Build monitoring to detect when retraining or prompt updates are needed.
+
+- **Design for explainability from day one** - Users need to understand why AI made specific decisions. Build in reasoning traces and confidence indicators.
+
+- **Start with narrow scope, expand gradually** - Begin with the smallest viable AI-powered feature, validate it thoroughly, then incrementally expand capabilities.
+
+- **Prioritize user agency over automation** - Give users control over AI actions. Suggest rather than execute, confirm before taking irreversible actions.
 
 ## Programs, Human Code, AI
 
