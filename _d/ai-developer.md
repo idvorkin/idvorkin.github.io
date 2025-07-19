@@ -13,25 +13,25 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 - [The 10 Commandments of the AI Developer](#the-10-commandments-of-the-ai-developer)
   - [1. The Bitter Lesson: Scale beats clever algorithms](#1-the-bitter-lesson-scale-beats-clever-algorithms)
   - [2. AI can replace a well-defined role, it cannot replace an unbounded problem](#2-ai-can-replace-a-well-defined-role-it-cannot-replace-an-unbounded-problem)
-  - [3. Your secret sauce is the evals, then the training data - your prompt has no economic value.](#3-your-secret-sauce-is-the-evals-then-the-training-data---your-prompt-has-no-economic-value)
+  - [3. Your secret sauce is the evals, then the training data - your prompt has no economic value](#3-your-secret-sauce-is-the-evals-then-the-training-data---your-prompt-has-no-economic-value)
   - [4. Use the most expensive model you can as you prove you can solve the problem](#4-use-the-most-expensive-model-you-can-as-you-prove-you-can-solve-the-problem)
   - [5. Additional Commandment Ideas](#5-additional-commandment-ideas)
 - [Programs, Human Code, AI](#programs-human-code-ai)
 - [Design Patterns](#design-patterns)
   - [Levels of Cognitive Architecture](#levels-of-cognitive-architecture)
   - [Maximize the workflow and computation in your programs](#maximize-the-workflow-and-computation-in-your-programs)
-  - [Provide context to your model for Ground your model](#provide-context-to-your-model-for-ground-your-model)
+  - [Ground your model with context](#ground-your-model-with-context)
   - [Use multiple AIs to maximize the value](#use-multiple-ais-to-maximize-the-value)
   - [Human in the loop](#human-in-the-loop)
   - [World model vs context model](#world-model-vs-context-model)
-  - [AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)](#ai-maximalist-chatgpt-vs-ai-enabled-features-apple-intelligence)
+  - [AI Maximalist (ChatGPT) vs AI-enabled features (Apple Intelligence)](#ai-maximalist-chatgpt-vs-ai-enabled-features-apple-intelligence)
   - [Memory](#memory)
 - [Use Cases and Applications](#use-cases-and-applications)
   - [Prompt writing helpers:](#prompt-writing-helpers)
   - [Insights from OpenAI CPO:](#insights-from-openai-cpo)
 - [Mapping the AI Landscape](#mapping-the-ai-landscape)
   - [Capabilities: Large Context/Structured Output/Real Time](#capabilities-large-contextstructured-outputreal-time)
-  - [AI Engagement Model: Tools/Co-Pilots/Chat/Agents](#ai-engagement-model-toolsco-pilotschatagents)
+  - [AI Engagement Model: Tools/Copilots/Chat/Agents](#ai-engagement-model-toolscopilotschatagents)
 - [Tech Deep Dive - Use case to Model](#tech-deep-dive---use-case-to-model)
   - [Fast Model](#fast-model)
   - [Hand writing recognition](#hand-writing-recognition)
@@ -107,7 +107,7 @@ Start with the best available model (GPT-4o, Claude Sonnet, etc.) to validate yo
 
 ## Programs, Human Code, AI
 
-At the hand-wavy, programs are workflow and computation, where computation is defined recursively.
+At the hand-wavy level, programs are workflow and computation, where computation is defined recursively.
 
 In the before times, all workflow and computation was defined in explicit code and the code was written by humans.
 
@@ -115,7 +115,7 @@ The first stage/category of AI evolves from having the AI help write the code, t
 
 The next stage/category of AI is having AI do leaf computation. This evolved from very specialized (digit recognition), spell checking, to more general - generate an image.
 
-The final stage/category of AI when AI does the higher level of workflow as well. Ask the user what they want, and do it.
+The final stage/category of AI is when AI does the higher level of workflow as well. Ask the user what they want, and do it.
 
 Just like there are autonomous driving levels:
 
@@ -161,7 +161,7 @@ This content nicely copied from [langchain](https://blog.langchain.dev/what-is-a
 6. Figure out gaps AI is doing with current generation of AI
 7. Gap fill
 
-### Provide context to your model for Ground your model
+### Ground your model with context
 
 Currently more complex, figuring it out.
 
@@ -182,7 +182,7 @@ AI can perform a strict operation, vs understanding everything.
 
 Obviously world models need to be much bigger, and data will go stale.
 
-### AI Maximalist (ChatGPT) vs AI enabled features (Apple Intelligence)
+### AI Maximalist (ChatGPT) vs AI-enabled features (Apple Intelligence)
 
 Today ‘summarize this document’ is AI, and you need a cloud LLM that costs \$20/month, but tomorrow the OS will do that for free. ‘AI is whatever doesn’t work yet.’
 
@@ -223,9 +223,9 @@ TODO: Use ML to analyze the above ^
 
 - Very interesting to develop when there is no clear technology floor - it keeps raising
 - As a new business, build stuff that's on the edge of what tech can do, tech will close the gap, you'll have an edge
-- How hard to cost products - look at o1 (reasoning model)
-  - Did 8 hours of lawyer work, valued at 8K. In 5 minutes, for $2
-  - If you want to charge 7K, you can't as competitors will release for less money.
+- How hard it is to price products - look at o1 (reasoning model)
+  - Did 8 hours of lawyer work, valued at $8K. In 5 minutes, for $2
+  - If you want to charge $7K, you can't as competitors will release for less money.
 - OpenAI isn't compute bound, it's eval bound.
   - You provide value by creating evals, and doing RAG.
 
@@ -237,7 +237,7 @@ If you want to understand apps, and how they should evolve, it's helpful to have
 
 [![AI Product Map 1st Gen](https://interconnected.org/more/2024/07/19/ai-product-map-1st-gen-matt-webb.png)](https://interconnected.org/more/2024/07/19/ai-product-map-1st-gen-matt-webb.png)
 
-### AI Engagement Model: Tools/Co-Pilots/Chat/Agents
+### AI Engagement Model: Tools/Copilots/Chat/Agents
 
 - Tools: Users control AI to generate something.
 
@@ -288,7 +288,7 @@ Having a fast model just changes the game, you can do stuff in real time like sp
 
 - Right now it's Llama 4 maverick hosted on Groq, [crazy fast speeds](https://artificialanalysis.ai/models/llama-4-maverick/providers) (600 tokens/second!!)
 
-### Hand writing recognition
+### Handwriting recognition
 
 Right now I'm using Gemini Pro - it does a great job, and I can just inline the binary content.
 
@@ -308,7 +308,7 @@ It's been Claude 4 sonnet thinking for a while, need to think about trying other
 
 ### Model and Service Dashboards
 
-- [Open AI Usage](https://platform.openai.com/usage)
+- [OpenAI Usage](https://platform.openai.com/usage)
 - [Claude Usage](https://console.anthropic.com/settings/usage)
 - Gemini Usage - Sheesh I can't even figure it out
 - [VAPI](https://dashboard.vapi.ai/billing) - for voice access
@@ -317,7 +317,7 @@ It's been Claude 4 sonnet thinking for a while, need to think about trying other
 ### Quality vs Speed vs Prices
 
 - See [performance dashboards](https://artificialanalysis.ai/models/gpt-4-turbo)
-- Groq is really exciting because it's crazy fast. Like 200 Tokens/S. But it can only run open source models, so much less useful. Looks like it can run
+- Groq is really exciting because it's crazy fast. Like 200 tokens/s. But it can only run open source models, so much less useful.
 
 ### Llama 3
 
@@ -330,7 +330,7 @@ It's been Claude 4 sonnet thinking for a while, need to think about trying other
 
 ### Ell
 
-[Ell](https://github.com/MadcowD/ell) believes prompts are programs not strings, and acts accordingly. I predict it will replace langchain, certainly will for me. It's value prop
+[Ell](https://github.com/MadcowD/ell) believes prompts are programs not strings, and acts accordingly. I predict it will replace langchain, certainly will for me. Its value prop
 
 - The model calling interface is super simple (exactly what I want in fact!)
 
@@ -345,7 +345,7 @@ def hello(world: str):
     return f"Say hello to {name}!"  # User prompt
 
 def scratch():
-    response = hello("Igor", lm_params=dict(n=2)) # get 2 response
+    response = hello("Igor", lm_params=dict(n=2)) # get 2 responses
     ic(response)
 ```
 
@@ -359,7 +359,7 @@ def scratch():
 
 ### Leaked System Prompts
 
-A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see a bunch of the current alchamey in creating these.
+A bunch of [leaked prompts](https://github.com/wunderwuzzi23/scratch/tree/master/system_prompts). You can see a bunch of the current alchemy in creating these.
 
 ### Use LLMs for reasoning not for data retrieval
 
