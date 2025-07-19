@@ -127,18 +127,18 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [Maintain perspective](#maintain-perspective)
 - [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
   - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
-  - [Telling the team](#telling-the-team)
-  - [The FAQ](#the-faq)
   - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
-  - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
-  - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
+    - [Horizontal vs Vertical Splitting](#horizontal-vs-vertical-splitting)
+  - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
   - [The flip: When charter changes](#the-flip-when-charter-changes)
-  - [Insufficient progress - Double down or pivot](#insufficient-progress---double-down-or-pivot)
+  - [The Double down vs Pivot: When there is insufficient progress](#the-double-down-vs-pivot-when-there-is-insufficient-progress)
     - [Space can be successful, just hasn't yet - hold the course](#space-can-be-successful-just-hasnt-yet---hold-the-course)
     - [Space can not be successful, or can't be successful in a reasonable time frame](#space-can-not-be-successful-or-cant-be-successful-in-a-reasonable-time-frame)
-    - [How long should you keep the old project running as you try to find new charter?](#how-long-should-you-keep-the-old-project-running-as-you-try-to-find-new-charter)
+    - [How long should you keep a "To Be Pivotted" project](#how-long-should-you-keep-a-to-be-pivotted-project)
   - [How to handle Layoffs](#how-to-handle-layoffs)
-  - [What's the best configuration for layoff announcements?](#whats-the-best-configuration-for-layoff-announcements)
+    - [What's the best configuration for layoff announcements?](#whats-the-best-configuration-for-layoff-announcements)
+  - [Telling the team about reorg/recharter](#telling-the-team-about-reorg-recharter)
+    - [The FAQ](#the-faq)
 - [Personal Motivations](#personal-motivations)
   - [Why do you find management attractive](#why-do-you-find-management-attractive)
   - [What is your dream job](#what-is-your-dream-job)
@@ -791,22 +791,22 @@ There tend to be two things that hold people back:
 
 **1/ It feels like throwing someone under the bus**
 
-- **Concerns are an act of care.** Noticing something doesn’t mean someone messed up—it means you care enough to keep things running smoothly.
-- **You don’t have to be sure.** If something feels off or unclear, it’s still worth surfacing. I’ll help figure out if it needs action or just acknowledgment.
-- **It’s not about blame.** Raising concerns isn’t betrayal—it’s like pointing out a wobbly wheel so no one crashes.
-- **It’s a shared responsibility.** We all help each other see around corners.
-- **I’ll walk with you.** You don’t need a perfect story—just a gut feeling. I’ll help you sort out what matters and what to do next.
+- **Concerns are an act of care.** Noticing something doesn't mean someone messed up—it means you care enough to keep things running smoothly.
+- **You don't have to be sure.** If something feels off or unclear, it's still worth surfacing. I'll help figure out if it needs action or just acknowledgment.
+- **It's not about blame.** Raising concerns isn't betrayal—it's like pointing out a wobbly wheel so no one crashes.
+- **It's a shared responsibility.** We all help each other see around corners.
+- **I'll walk with you.** You don't need a perfect story—just a gut feeling. I'll help you sort out what matters and what to do next.
 
-**2/ It’s hard to get the words right**
+**2/ It's hard to get the words right**
 
-I remind folks not to waste time polishing every word or making sure their evidence is bulletproof—this isn’t a performance or a criminal trial.
+I remind folks not to waste time polishing every word or making sure their evidence is bulletproof—this isn't a performance or a criminal trial.
 
-Just jot down a few rough thoughts and grab some face-to-face time with me. We’ll talk it through. Here’s what to expect:
+Just jot down a few rough thoughts and grab some face-to-face time with me. We'll talk it through. Here's what to expect:
 
-- **I keep it confidential.** Unless you say otherwise, your name doesn’t travel.
-- **I ask precise questions.** I’m trained to spot signal in fuzzy stories and I often have more context—I’ll help clarify what you saw and get the details I need to dig deeper.
-- **I seek other input.** If needed, I’ll check quietly with others to see if it’s a pattern or a one-off.
-- **I stay with you.** Sometimes I’ll tackle the concern myself; other times I’ll support you in giving feedback (if you'd like). Either way, you're putting the team first, and I’ve got your back.
+- **I keep it confidential.** Unless you say otherwise, your name doesn't travel.
+- **I ask precise questions.** I'm trained to spot signal in fuzzy stories and I often have more context—I'll help clarify what you saw and get the details I need to dig deeper.
+- **I seek other input.** If needed, I'll check quietly with others to see if it's a pattern or a one-off.
+- **I stay with you.** Sometimes I'll tackle the concern myself; other times I'll support you in giving feedback (if you'd like). Either way, you're putting the team first, and I've got your back.
 
 ### Recall career is just one part of your life
 
@@ -1602,7 +1602,7 @@ How to reduce pain and suffering. _Have no confusion, I rarely do these, but I w
 
 You'll often find the following words used in these discussions.
 
-- Performance Mangement - the general process of ensuring the team is high performing. Usually refers to having no low performers on the team.
+- Performance Management - the general process of ensuring the team is high performing. Usually refers to having no low performers on the team.
 - Managing out - Going through the PIP process with an employee.
 - Up or Out - The term indicating the employee either improves, or will be managed out.
 - URA - UnRegretted Attrition. A person who is no longer at the company, and that's not regrettable
@@ -1745,9 +1745,9 @@ For folks who can get flustered representing their work in standups, pre-write t
 
 I think they'd be a lot less stressful/dramatic if they were called by the more appropriate term — priority alignment!
 
-Escalations aren’t about someone being wrong—they’re about two teams or individuals pursuing locally correct goals that happen to conflict. In those moments, there isn’t a clear “right” answer at the current level. The solution is to align on which priority matters more, and that often requires bringing in the next level of leadership to make the call.
+Escalations aren't about someone being wrong—they're about two teams or individuals pursuing locally correct goals that happen to conflict. In those moments, there isn't a clear "right" answer at the current level. The solution is to align on which priority matters more, and that often requires bringing in the next level of leadership to make the call.
 
-Priority alignment is not a failure—it’s a sign of healthy systems working. The alternatives: stalemates, resentment, unresolved tension, flip flopping, those are the failures.
+Priority alignment is not a failure—it's a sign of healthy systems working. The alternatives: stalemates, resentment, unresolved tension, flip flopping, those are the failures.
 
 Here's what healthy priority alignment looks like:
 
@@ -1818,82 +1818,21 @@ Hopefully, early in your hiring process, you've been thinking about your charter
 - Build out an early roadmap and products.
 - Keep learning and improving as people join.
 
-### Telling the team
-
-Assume this will be very hard on the team. It's critical they hear it from you first. It shows respect, and lets you reduce the largest anxieties. This will be emotional for a lot of people, and the team will be deeply influenced by your emotions. While you should acknowledge the loss, and the potential uncertainty and upcoming bumpiness, you **must be positive about the future**.
-
-To ensure everyone hears from you first I recommend the following:
-
-The days before:
-
-1. Write an FAQ for the questions you expect.
-1. Practice your story the day before with people you trust, review and tune your FAQ
-
-The day of:
-
-1. Clear your day of all meetings.
-1. Schedule team meeting at the end of the day.
-1. Make a list of everyone on the team and when you'll be telling them:
-   - Check your timing to make sure you can get everyone done, taking into consideration when people come in.
-   - Write out what you think their top concerns will be, to ensure you focus on them
-   - After every meeting take notes about their concerns, and good talking points for future meetings.
-1. Meet folks ad-hoc first starting first thing in the morning to have enough time.
-1. Plan to grab people ad-hoc, and give them as much time as they need. This ensures - You'll be on time to this high impact meeting. - You'll not be in a rush, you can give people as much time as they need. - You have time to take notes after the meetings and tune your message, and re-charge your positivity
-1. When deciding the order, start with the folks that'll take it best.
-   - This will let you have some "easier sessions" to tune your message
-   - This will give you new talking points, and get new questions
-1. When talking to people
-   - Make sure you have high energy reserves, but keep your energy low and caring, talk slowly like this is the first time you've told anyone.
-   - Warn people it's gonna be a big surprise
-   - Remind people they matter and that's why you made sure they heard it from you first.
-   - Let them know who you've told and who they can talk to.
-   - Remind them it's essential not to talk to anyone else till the team meeting so everyone hears it from you.
-   - If they are in shock, and don't know what to talk about, ask them if they'd like you to tell them about your experience, and common questions others have
-   - Tell them they'll have lots more questions, you'll talk through them at the team meeting, and they'll have more questions in the coming days, and that you'll book time with them over the next few days.
-   - Make a note of how they took it, and if you get more talking points
-   - Tell the people that are more positive how they can help make it easier on the team, think about when they can jump in during the team meeting.
-   - Use silence to let people digest and come up with questions
-1. In the team meeting
-   - Tell people you'll recap what you talked about, and give a more complete story
-   - Hit all your FAQs, including the hard ones
-   - Prompt the people that can add positive ideas (who you already asked) to share the positive parts
-   - Be available after the meeting, and offer to talk to anyone
-   - Remind people you don't have all the answers yet but you'll figure them out together.
-   - Give people as much autonomy as possible, tell them they should tell you the best way to wrap up their projects.
-1. In the next few days:
-   - Be around a lot, offer to talk to anyone anytime.
-   - Schedule meetings with everyone in case they have more questions. If they don't, you can leave early.
-
-### The FAQ
-
-- How does this impact my review?
-- How long till we stabilize?
-- Why did this happen?
-- Did we do something wrong
-- What choices do we have? Can we follow the re-org
-- What happens to my existing/ongoing project
-- How is their existing work evidence of greatness
-- Is it just gonna happen again in 6 months
-- What are the exciting opportunities, and why are they better then the old ones
-- Why is this re-org designed the way it, why would you have done the re-org this way.
-- Will more people be hired
-- Answer how to motivate them:
-  - Autonomy - Let them recommend the transition plan.
-  - Mastery - Remind them how good they are and how the team will succeed on the next project
-  - Purpose - Remind them of the continuity of purpose and
-  - [Motivation Deep Dive](#l-motivation)
-- What am I working on next
-- How long till we have more clarity
-- Why is this a good thing (people, tech, purpose)
-- How long have you known
-- How long till you felt good about it
-- Domain specific questions
-
 ### The split: When a team outgrows a manager
 
-### The merge or you leaving the team: When a manager leaves
+_I need to add content here about the mechanics and process of splitting teams, but here's some theory:_
 
-### Splitting Horizontally vs Vertically
+**Theory: Team splitting happens for several reasons:**
+
+- **Span of control**: A manager can effectively support 6-8 people. Beyond that, individual attention and coaching quality degrades.
+- **Cognitive load**: Managers need to understand the technical and business complexity their team handles. Too much scope creates blind spots.
+- **Career growth**: Senior engineers need ownership opportunities that come with smaller, more focused teams.
+
+**Types of splits:**
+
+There are two fundamental ways to split teams when you have multiple products/features and multiple technical domains:
+
+#### Horizontal vs Vertical Splitting
 
 When you have multiple teams, and multiple user scenarios you decide to organize horizontally (each team owns tech solutions, spanning multiple user scenarios), or vertically (each team owns user scenarios, spanning tech solutions).
 
@@ -1906,7 +1845,21 @@ Deciding if you split horizontally vs vertically is at the highest level asking 
 
 Depending on how much tech needs to be build and how much specialization is required you will need horizontal teams. For example, the operating system, the networking stack, the hardware are all horizontals.
 
+**Horizontal Split (by technical domain):**
+
+- Team A: Backend services across all products
+- Team B: Frontend across all products
+- Team C: Mobile across all products
+
+**Vertical Split (by product/customer journey):**
+
+- Team A: User onboarding (full stack)
+- Team B: Core product experience (full stack)
+- Team C: Admin and billing (full stack)
+
 TODO: Table of pros and cons
+
+### The merge: When a manager leaves
 
 ### The flip: When charter changes
 
@@ -1933,14 +1886,14 @@ This is pretty similar to the whole team getting a new job, and [the first 90 da
 
 A great way to do this is set the team up to do spikes on the major work items, this will overcome the above concerns, building knowledge and motivating the early wins.
 
-### Insufficient progress - Double down or pivot
+### The Double down vs Pivot: When there is insufficient progress
 
 When progress is insufficient, there are two situations, both painful, with overlapping symptoms, and some shared requirements.
 
 1. You believe the charter can still be successful, but needs more time due to execution gaps/insufficient progress/insufficient resources.
 2. You no longer believe the space can be successful.
 
-Both situations can be subjective. There will be disagreement, often passionate disagreement as so much of the teams identity can be invested in the prodcut. An objective criteria will help.
+Both situations can be subjective. There will be disagreement, often passionate disagreement as so much of the teams identity can be invested in the product. An objective criteria will help.
 
 **Symptoms:**
 
@@ -1976,7 +1929,7 @@ In a common case, the decision will be sudden, often with an edict from leadersh
 - Figure out how to wrap up work, and ensure fair credit attributed to work in progress.
 - This is a highly emotional situation support the team, and yourself.
 
-#### How long should you keep the old project running as you try to find new charter?
+#### How long should you keep a "To Be Pivotted" project
 
 Finding a new charter is hard, it takes longer then you'd expect, and then once you "have it" it takes even more time to get it engineer ready. It's very tempting to let the "walking dead" project continue consuming resources as you are stalling to find new charter. This **is a mistake** you are wasting the business's resources, and the engineer's time. **Pick a pivot date, and hit that date even if there is no new charter** Use the date as leverage to influence the priority for your leadership and XFN partners. Also ensure you have a backup for the team, helping other teams, better engineering projects, hack-a-thon ideas, etc.
 
@@ -2027,13 +1980,84 @@ On %DATE% there will be fewer people in the office than today. You don't know wh
 
 As always, supporting y'all is always my top priority, so if there's anything you want to talk about - reach out.
 
-### What's the best configuration for layoff announcements?
+#### What's the best configuration for layoff announcements?
 
 When Zuck did a particular round of layoffs, he set a date in 3 months, and said we'll do them on this day. A lot of people complained, and said this is an aweful way to do it.
 
 When asked about the mechanics, Zuck said: Yes, this really sucks, I think regradless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
 
 I think Reed Hastings (of Nextfix) has an interesting take here. [You want to give people good severance](https://www.instagram.com/reel/DD7Z1ptT_w0/) so they feel great leaving at any time they want instead of hanging around to get paid.
+
+### Telling the team about reorg/recharter
+
+Assume this will be very hard on the team. It's critical they hear it from you first. It shows respect, and lets you reduce the largest anxieties. This will be emotional for a lot of people, and the team will be deeply influenced by your emotions. While you should acknowledge the loss, and the potential uncertainty and upcoming bumpiness, you **must be positive about the future**.
+
+To ensure everyone hears from you first I recommend the following:
+
+The days before:
+
+1. Write an FAQ for the questions you expect.
+1. Practice your story the day before with people you trust, review and tune your FAQ
+
+The day of:
+
+1. Clear your day of all meetings.
+1. Schedule team meeting at the end of the day.
+1. Make a list of everyone on the team and when you'll be telling them:
+   - Check your timing to make sure you can get everyone done, taking into consideration when people come in.
+   - Write out what you think their top concerns will be, to ensure you focus on them
+   - After every meeting take notes about their concerns, and good talking points for future meetings.
+1. Meet folks ad-hoc first starting first thing in the morning to have enough time.
+1. Plan to grab people ad-hoc, and give them as much time as they need. This ensures - You'll be on time to this high impact meeting. - You'll not be in a rush, you can give people as much time as they need. - You have time to take notes after the meetings and tune your message, and re-charge your positivity
+1. When deciding the order, start with the folks that'll take it best.
+   - This will let you have some "easier sessions" to tune your message
+   - This will give you new talking points, and get new questions
+1. When talking to people
+   - Make sure you have high energy reserves, but keep your energy low and caring, talk slowly like this is the first time you've told anyone.
+   - Warn people it's gonna be a big surprise
+   - Remind people they matter and that's why you made sure they heard it from you first.
+   - Let them know who you've told and who they can talk to.
+   - Remind them it's essential not to talk to anyone else till the team meeting so everyone hears it from you.
+   - If they are in shock, and don't know what to talk about, ask them if they'd like you to tell them about your experience, and common questions others have
+   - Tell them they'll have lots more questions, you'll talk through them at the team meeting, and they'll have more questions in the coming days, and that you'll book time with them over the next few days.
+   - Make a note of how they took it, and if you get more talking points
+   - Tell the people that are more positive how they can help make it easier on the team, think about when they can jump in during the team meeting.
+   - Use silence to let people digest and come up with questions
+1. In the team meeting
+   - Tell people you'll recap what you talked about, and give a more complete story
+   - Hit all your FAQs, including the hard ones
+   - Prompt the people that can add positive ideas (who you already asked) to share the positive parts
+   - Be available after the meeting, and offer to talk to anyone
+   - Remind people you don't have all the answers yet but you'll figure them out together.
+   - Give people as much autonomy as possible, tell them they should tell you the best way to wrap up their projects.
+1. In the next few days:
+   - Be around a lot, offer to talk to anyone anytime.
+   - Schedule meetings with everyone in case they have more questions. If they don't, you can leave early.
+
+#### The FAQ
+
+- How does this impact my review?
+- How long till we stabilize?
+- Why did this happen?
+- Did we do something wrong
+- What choices do we have? Can we follow the re-org
+- What happens to my existing/ongoing project
+- How is their existing work evidence of greatness
+- Is it just gonna happen again in 6 months
+- What are the exciting opportunities, and why are they better then the old ones
+- Why is this re-org designed the way it, why would you have done the re-org this way.
+- Will more people be hired
+- Answer how to motivate them:
+  - Autonomy - Let them recommend the transition plan.
+  - Mastery - Remind them how good they are and how the team will succeed on the next project
+  - Purpose - Remind them of the continuity of purpose and
+  - [Motivation Deep Dive](#l-motivation)
+- What am I working on next
+- How long till we have more clarity
+- Why is this a good thing (people, tech, purpose)
+- How long have you known
+- How long till you felt good about it
+- Domain specific questions
 
 ## Personal Motivations
 
@@ -2139,7 +2163,7 @@ Why do we assess manager's ability to code - no clue, but a few enlightened comp
 
 ## Product Development and Product Management
 
-My notes on [Product](/product), often the domain of the prodcut manager, but EMs wear many hats
+My notes on [Product](/product), often the domain of the product manager, but EMs wear many hats
 
 {%include summarize-page.html src="/product" %}
 
