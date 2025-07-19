@@ -107,14 +107,14 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [What do you do when someone says they are quitting](#what-do-you-do-when-someone-says-they-are-quitting)
   - [What is a tribe?](#what-is-a-tribe)
 - [Performance Management](#performance-management)
-  - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
+  - [Performance Reviews: Calibrations PSC, OLR, Connections](#performance-reviews-calibrations-psc-olr-connections)
   - [Translating Performance Ratings Between Companies](#translating-performance-ratings-between-companies)
   - [Best Practices For Performance Reviews](#best-practices-for-performance-reviews)
   - [The pain and the suffering of performance reviews](#the-pain-and-the-suffering-of-performance-reviews)
   - [Some definitions for low performers](#some-definitions-for-low-performers)
   - [Performance Management for low performers](#performance-management-for-low-performers)
   - [The types of URA](#the-types-of-ura)
-  - [URA doesn't mean the person sucks - it means they are not comptabile.](#ura-doesnt-mean-the-person-sucks---it-means-they-are-not-comptabile)
+  - [URA doesn't mean the person sucks - it means they are not compatible.](#ura-doesnt-mean-the-person-sucks---it-means-they-are-not-compatible)
   - [What if a URA isn't "fair"?](#what-if-a-ura-isnt-fair)
   - [The who and how of performance management](#the-who-and-how-of-performance-management)
   - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
@@ -429,13 +429,13 @@ Good self assessments are concise, focus on impact, and then how you delivered t
 
 Here are some fictitious examples modelled on my own career:
 
-- Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to estabilish budgets, and holding them accountable to delivering them.
+- Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to establish budgets, and holding them accountable to delivering them.
 
   - > At first my team was skeptical that the performance improvements could be achieved and were hesitant to invest, but once we saw the organizational support and monthly meetings of progress we found it inspiring and made sure we contributed to the goal.
 
 - Drove XXX\$ to charities, and increased Alexa Shopping DAU XXX % (XXX to YYY) to by proposing a charity giving feature and implementing it in 5 months. Complexity, 20 eng/months, supporting work from 5 teams, across multiple divisions
 
-- Delivered XYZ, required to deliver TLS support on windows phone at very high quality. Complexity 1 engineer, 4 months - however requried ramping up on complex error prone C++ code base, and no bugs found
+- Delivered XYZ, required to deliver TLS support on windows phone at very high quality. Complexity 1 engineer, 4 months - however required ramping up on complex error prone C++ code base, and no bugs found
 
   - > Igor's delivery was on time and of high quality. The feature had no bugs in production, due to high test coverage, which was impressive given the high complexity of the C++ code.
 
@@ -649,7 +649,7 @@ First, I remind folks of our culture:
 - We put the team first, always—greater than the sum of our parts.
 - We know we can't win if the team loses, and we can't lose if the team wins.
 
-Then I remind them when the going gets tough, more hours doesnt' fix it, prioritize does.
+Then I remind them when the going gets tough, more hours doesn't fix it, prioritize does.
 
 {%include summarize-page.html src="/overload"%}
 
@@ -899,7 +899,7 @@ Here's what I worked with the team to establish
 - Model myself
   - On All the Pages
   - If team is working I'm working
-  - When I make mistakes I apologies
+  - When I make mistakes I apologize
   - If I drop the ball I make it clear.
   - When someone does well I celebrate and call out.
 - Catch people doings things right
@@ -1452,7 +1452,7 @@ How to join a tribe: - TBD
 
 ## Performance Management
 
-### Performance Reveiws: Calibrations PSC, OLR, Connections
+### Performance Reviews: Calibrations PSC, OLR, Connections
 
 [Performance reviews](https://imwrightshardcode.com/2021/06/discussing-rewards-for-people/) exist at most companies (I've been through Connects at MSFT, OLR at AMZN and PSC at FB), and for good reason they:
 
@@ -1633,9 +1633,9 @@ These problems usually show up quickly, and can be assessed looking at artifacts
 
 Consistency is the harder PIP for a few reasons. First, the employee will have periods of acceptable performance, sometimes above expectations, and then they'll have misses, so the PIP needs to capture a time period when there is a performance gap. Simultaneously, it can be difficult to root cause inconsistencies, is it really an employment consistency issue, or is it a structural/situational issue.
 
-### URA doesn't mean the person sucks - it means they are not comptabile.
+### URA doesn't mean the person sucks - it means they are not compatible.
 
-Being URA feels terrible, and likely illicits some shame. I know it's hard to believe, but it should not. At the end of the day, a URA just means you and the company were not comptible. I'm certain just because it didn't work out at your current company, the URA will be very successful elsewhere, and where ever that is, they'll probalby feel a lot better for it.
+Being URA feels terrible, and likely elicits some shame. I know it's hard to believe, but it should not. At the end of the day, a URA just means you and the company were not compatible. I'm certain just because it didn't work out at your current company, the URA will be very successful elsewhere, and where ever that is, they'll probably feel a lot better for it.
 
 ### What if a URA isn't "fair"?
 
@@ -1760,10 +1760,10 @@ Pro tip: I always remind folks—if the priorities were obvious, they wouldn't b
 
 - Very common situation
 - Team feels nothing they/EM can do about - but that's completely wrong!
+
 ### How do you nudge engineers who won't ask you for help?
 
 Too many engineers make the same mistake: working in silos instead of teaming up with their manager. Going dark on an enormously important, languishing problem is the worst thing you can do. Managers exist to pair with their team on the hardest challenges, bringing the resources and experience of the entire group. Engineers have the time and context to go deep, while managers can contribute breadth and unblock progress. Often folks hesitate out of fear that struggling will be noticed, but your peers and manager are usually already aware because the issue impacts others. Collaborating openly with your manager resolves problems faster and more effectively. If you're a manager, insist on that partnership.
-
 
 ### Everyone wants to feel supported
 
@@ -2077,11 +2077,11 @@ When I explained to someone coaching it the most important aspect of management,
 
 ### Why do you prefer being a manager to an IC
 
-I think as a manager, the day to day sucks. People problems, managing by spreadsheet, fire fighting, policy violations, etc. But, those days when you look at the team, and see them helping each other, and growing, and when you catch people after a few years and they tell you how impactful you were to their career, and how working on the team was the most fun they ever had - it feels superb.
+I think as a manager, the day-to-day sucks. People problems, managing by spreadsheet, fire fighting, policy violations, etc. But, those days when you look at the team, and see them helping each other, and growing, and when you catch people after a few years and they tell you how impactful you were to their career, and how working on the team was the most fun they ever had - it feels superb.
 
-As an IC, it's almost backwards, the day to day is fun. Coding, design, debugging, even fire fighting an outage trying to get the site back up, it's very satisfying in the moment. But, as an IC, when you look at the software you built, and you realize it's long deprecated, and replaced by something better, it's a pretty meh feeling.
+As an IC, it's almost backwards, the day-to-day is fun. Coding, design, debugging, even fire fighting an outage trying to get the site back up, it's very satisfying in the moment. But, as an IC, when you look at the software you built, and you realize it's long deprecated, and replaced by something better, it's a pretty meh feeling.
 
-So, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day to day joy of being an engineer.
+So, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day-to-day joy of being an engineer.
 
 At each stage of road productions things go wrong and we learn new stuff. TODO Come up with more examples
 

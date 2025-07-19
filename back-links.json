@@ -261,8 +261,7 @@
             "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters",
-                "/manager-book"
+                "/chapters"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -1092,7 +1091,6 @@
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
-                "/manager-book",
                 "/manager-book-appendix"
             ],
             "last_modified": "2021-02-13T08:15:36-08:00",
@@ -1647,7 +1645,6 @@
                 "/idle",
                 "/igor-gap-year",
                 "/life-as-business",
-                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
@@ -2008,7 +2005,6 @@
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
-                "/manager-book",
                 "/pride",
                 "/random-idea",
                 "/work-satisfaction"
@@ -2268,7 +2264,6 @@
                 "/d/resistance",
                 "/elder",
                 "/igor-gap-year",
-                "/manager-book",
                 "/productive",
                 "/siy"
             ],
@@ -3282,24 +3277,25 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-07-16T12:41:48-07:00",
+            "last_modified": "2025-07-19T09:21:19.066841",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/22",
+                "/7h-c2",
+                "/90-days",
                 "/90days",
                 "/being-a-great-manager",
-                "/books-that-defined-me",
+                "/books",
+                "/coach",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/d/habits",
-                "/decisive",
+                "/decide",
                 "/dip",
-                "/end-in-mind",
+                "/dsat",
+                "/habits",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
-                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3310,10 +3306,11 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
+                "/td/machine-learning",
                 "/testing",
+                "/twentytwo",
                 "/what-makes-a-leader",
-                "/work-satisfaction",
-                "/writing"
+                "/write"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3487,7 +3484,6 @@
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
-                "/manager-book",
                 "/td/stats"
             ],
             "last_modified": "2025-07-12T16:50:19-07:00",
@@ -5500,7 +5496,6 @@
             "doc_size": 27000,
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
-                "/manager-book",
                 "/mind-at-work",
                 "/retire"
             ],
@@ -5551,7 +5546,6 @@
                 "/amazon",
                 "/chow",
                 "/enable",
-                "/manager-book",
                 "/manager-book-appendix",
                 "/operating-manual"
             ],
