@@ -16,6 +16,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+  - [2025-07-13](#2025-07-13)
   - [2024-10-27](#2024-10-27)
   - [2024-10-26](#2024-10-26)
   - [2024-10-20](#2024-10-20)
@@ -121,6 +122,29 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2025-07-13
+
+Wow - it's been a LONG while before I added journal entries
+
+- Yesterday my friend nerd swiped me with the optimum number of donuts to make problem:
+- I one shotted it (well maybe 10 shot) with gemini coding cli (just like the other ones)
+  ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250713_071230.webp)
+- You can see output on: [Donut Profit Calculator App](https://abrupt-carpenter.surge.sh/)
+- And Git Project: [GitHub Repository](https://github.com/idvorkin/donut-profit-calculator)
+
+I also used gpt to illustrated and partially write the updates to this blog based on content from "What I learned so far".
+
+{%include summarize-page.html src="/mental-pain"%}
+
+- Image generation takes a while - but I love it. Agent based apps is super "human input time" effecient, but the wall time is annoying, it's easy to forget what you're trying to do context. I'm guessing we'll need toolls to help us do the "N-slow" tasks at once as it's easy to forget the damn goals
+
+- Creating customGPTs from a bunch of content from my old pychiatrist
+- Using chatgpt to figure out what I should/how I should pack crap in my car
+
+- COOL LEARNING:
+  - You can use surge to deploy to static web sites - nicer then clogging up my blog
+  - gemini cli sandbox is mostly worthless
 
 ### 2024-10-27
 

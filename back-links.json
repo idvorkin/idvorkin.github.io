@@ -690,19 +690,20 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 34000,
+            "doc_size": 36000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai"
             ],
-            "last_modified": "2025-07-12T16:50:19-07:00",
+            "last_modified": "2025-07-19T07:38:31.901447",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
-                "/genai-talk",
+                "/ai-talk",
                 "/gpt",
-                "/idvorkin/idvorkin-flux-lora-1"
+                "/idvorkin/idvorkin-flux-lora-1",
+                "/mental-pain"
             ],
             "redirect_url": "",
             "title": "Igor's AI Journal",
@@ -837,7 +838,7 @@
                 "/fail",
                 "/psychic-shadows"
             ],
-            "last_modified": "2025-07-18T07:57:36.329041",
+            "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/anxiety_management.md",
             "outgoing_links": [
                 "/addiction",
@@ -981,8 +982,10 @@
                 "/d/habits",
                 "/emotions",
                 "/frog",
+                "/idle",
                 "/process-journal",
-                "/regrets"
+                "/regrets",
+                "/siy"
             ],
             "last_modified": "2025-04-02T22:07:54-07:00",
             "markdown_path": "_d/7h-c1.md",
@@ -1185,7 +1188,7 @@
             "incoming_links": [
                 "/depression"
             ],
-            "last_modified": "2025-07-18T07:57:36.329041",
+            "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/caring.md",
             "outgoing_links": [
                 "/depression",
@@ -1449,6 +1452,7 @@
                 "/happy",
                 "/negotiate",
                 "/operating-manual",
+                "/psychic-weight",
                 "/regrets",
                 "/shame",
                 "/voices"
@@ -1640,6 +1644,7 @@
                 "/d/resistance",
                 "/energy-abundance",
                 "/hobby",
+                "/idle",
                 "/igor-gap-year",
                 "/life-as-business",
                 "/manager-book",
@@ -1647,6 +1652,7 @@
                 "/operating-manual",
                 "/physical-health",
                 "/productive",
+                "/psychic-weight",
                 "/sharpen-the-saw",
                 "/switch"
             ],
@@ -1688,6 +1694,8 @@
                 "/mental-pain",
                 "/parkinson",
                 "/productive",
+                "/psychic-shadows",
+                "/psychic-weight",
                 "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -2050,25 +2058,25 @@
                 "/mental-pain",
                 "/mood"
             ],
-            "last_modified": "2025-07-18T07:57:36.329041",
+            "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/depression.md",
             "outgoing_links": [
                 "/7-habits",
                 "/anxiety",
-                "/care",
+                "/caring",
                 "/eulogy",
                 "/getting-to-yes-with-yourself",
                 "/gtd",
-                "/idle-loop",
-                "/imposter",
+                "/idle",
+                "/insecure",
                 "/insomnia",
                 "/physical-health",
                 "/psychic-shadows",
                 "/psychic-weight",
                 "/shame",
                 "/siy",
-                "/voices",
-                "/wlb"
+                "/sustainable-work",
+                "/voices"
             ],
             "redirect_url": "",
             "title": "Depression is the opposite of vitality",
@@ -2261,7 +2269,8 @@
                 "/elder",
                 "/igor-gap-year",
                 "/manager-book",
-                "/productive"
+                "/productive",
+                "/siy"
             ],
             "last_modified": "2025-05-12T09:24:30-07:00",
             "markdown_path": "_d/7h-c2.md",
@@ -2889,16 +2898,18 @@
             "file_path": "_site/idle.html",
             "incoming_links": [
                 "/anxiety",
+                "/depression",
                 "/gtd",
-                "/happy"
+                "/happy",
+                "/psychic-weight"
             ],
-            "last_modified": "2025-07-18T07:57:42.434996",
+            "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/idle-loop.md",
             "outgoing_links": [
-                "/7h-c1",
                 "/addiction",
+                "/be-proactive",
+                "/d/habits",
                 "/frog",
-                "/habits",
                 "/magic",
                 "/mental-pain",
                 "/mind-monsters",
@@ -2948,6 +2959,7 @@
             "incoming_links": [
                 "/90days",
                 "/affirmations",
+                "/depression",
                 "/work-satisfaction"
             ],
             "last_modified": "2024-09-14T14:16:00-07:00",
@@ -3366,6 +3378,7 @@
             "file_path": "_site/mental-pain.html",
             "incoming_links": [
                 "/addiction",
+                "/ai-journal",
                 "/anger",
                 "/anxiety-management",
                 "/curious",
@@ -3453,7 +3466,8 @@
                 "/being-a-great-manager",
                 "/idle",
                 "/psychic-shadows",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/siy"
             ],
             "last_modified": "2020-12-22T17:13:28+00:00",
             "markdown_path": "_d/2015-11-11-mind-monsters.md",
@@ -4028,15 +4042,15 @@
                 "/psychic-weight",
                 "/siy"
             ],
-            "last_modified": "2025-07-18T08:19:42.610392",
+            "last_modified": "2025-07-18T08:19:47-07:00",
             "markdown_path": "_d/psychic-shadows.md",
             "outgoing_links": [
                 "/addiction",
                 "/anxiety-management",
+                "/d/resistance",
                 "/mental-pain",
                 "/mind-monsters",
                 "/psychic-weight",
-                "/resistance",
                 "/todo_enjoy"
             ],
             "redirect_url": "",
@@ -4054,22 +4068,22 @@
                 "/process-journal",
                 "/psychic-shadows"
             ],
-            "last_modified": "2025-07-18T07:57:42.434996",
+            "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/psychic-weight.md",
             "outgoing_links": [
                 "/7-habits",
                 "/addiction",
+                "/curious",
+                "/d/habits",
+                "/d/resistance",
                 "/death",
                 "/frog",
-                "/grandmother",
                 "/gtd",
-                "/habits",
-                "/idle-loop",
+                "/idle",
                 "/mental-pain",
                 "/mind-monsters",
                 "/pride",
                 "/psychic-shadows",
-                "/resistance",
                 "/shame",
                 "/siy"
             ],
@@ -4393,15 +4407,15 @@
                 "/sharpen-the-saw",
                 "/timeoff"
             ],
-            "last_modified": "2025-07-18T07:57:36.329041",
+            "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/siy.md",
             "outgoing_links": [
-                "/7h-c1",
-                "/7h-c2",
+                "/be-proactive",
                 "/emotional-health",
+                "/end-in-mind",
                 "/happy",
                 "/ig66/685",
-                "/monsters",
+                "/mind-monsters",
                 "/psychic-shadows",
                 "/sublime",
                 "/what-makes-a-leader"
@@ -4601,6 +4615,7 @@
                 "/42",
                 "/balance",
                 "/being-a-great-manager",
+                "/depression",
                 "/overload",
                 "/regrets",
                 "/retire",
