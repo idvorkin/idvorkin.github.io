@@ -158,6 +158,9 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - [settings#3](https://github.com/idvorkin/Settings/pull/3) ✅ "Add Claude Code detection to tmux_helper window renaming"
   - [chop-conventions#2](https://github.com/idvorkin/chop-conventions/pull/2) ✅ "docs(dev-inner-loop): add PR workflow documentation for AI-assisted development"
   - All generated with Claude Code 🤖
+- Updated blog default image from bunny ears to raccoon-imagination-executed-sustainably.webp
+  - Simple one-line change in _includes/head.html
+  - Created PR with Claude Code assistance
 
 ### 2025-07-13
 
