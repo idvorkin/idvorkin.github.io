@@ -16,6 +16,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+  - [2025-07-20](#2025-07-20)
   - [2025-07-13](#2025-07-13)
   - [2024-10-27](#2024-10-27)
   - [2024-10-26](#2024-10-26)
@@ -122,6 +123,39 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2025-07-20
+
+- Read [Brute Squad](https://sourcegraph.com/blog/the-brute-squad) by Steve Yegge
+  - **The REAL Car-Cleaning Evolution:**
+    - Traditional coding = You personally licking your car clean (the old way)
+    - The AI Hype/Promise = "You'll have a car wash!" (what everyone's selling)
+    - Current Reality = Your "car wash" is actually just camels licking the car
+      - Weird, messy, unpredictable
+      - Sometimes they "delete your repo and send weenie pics to your grandma"
+      - BUT still somehow faster than human spit
+  - **Current Reality with Multiple Agents = You become "The Brute Squad" with 5-10 camels**
+    - Now you're juggling multiple camel-bird-baby-whatevers
+    - They're all squawking and hungry
+    - You can't leave because they need constant supervision
+    - But the collective licking power is undeniable
+    - You're addicted to the chaos because it's SO productive
+- Decided lots of agents need more horizontal space
+- Added another monitor
+
+![Dual monitor setup showing two large curved monitors on a desk with code/terminal windows open, against a bright green wall - the new monitor setup providing more horizontal space for AI agents](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_135228.webp)
+
+- Got Claude Code
+- Updated to $100/month subscription based on what bestie told me
+
+![Text conversation showing discussion about Claude Code usage and subscription pricing, with messages about upgrading from $20/month to $100/month plan after recommendation about LLMs being important for productivity](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_135628.webp)
+
+- Starting doing PRs - created 4 PRs today, 3 merged:
+  - [nlp#11](https://github.com/idvorkin/nlp/pull/11) ✅ "feat: add Kimi AI provider support with --kimi flag (default enabled)"
+  - [nlp#12](https://github.com/idvorkin/nlp/pull/12) 🔄 "feat: add comprehensive e2e tests for Kimi AI functionality" (open)
+  - [settings#3](https://github.com/idvorkin/Settings/pull/3) ✅ "Add Claude Code detection to tmux_helper window renaming"
+  - [chop-conventions#2](https://github.com/idvorkin/chop-conventions/pull/2) ✅ "docs(dev-inner-loop): add PR workflow documentation for AI-assisted development"
+  - All generated with Claude Code 🤖
 
 ### 2025-07-13
 

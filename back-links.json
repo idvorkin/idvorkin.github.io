@@ -689,12 +689,12 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 36000,
+            "doc_size": 39000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai"
             ],
-            "last_modified": "2025-07-19T07:38:31.901447",
+            "last_modified": "2025-07-20T14:12:37.887231",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
