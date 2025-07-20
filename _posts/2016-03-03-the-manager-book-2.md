@@ -135,9 +135,10 @@ This post uses the word manager, but many topics apply to all job functions, reg
     - [Space can be successful, just hasn't yet - hold the course](#space-can-be-successful-just-hasnt-yet---hold-the-course)
     - [Space can not be successful, or can't be successful in a reasonable time frame](#space-can-not-be-successful-or-cant-be-successful-in-a-reasonable-time-frame)
     - [How long should you keep a "To Be Pivotted" project](#how-long-should-you-keep-a-to-be-pivotted-project)
-  - [How to handle Layoffs](#how-to-handle-layoffs)
-    - [What's the best configuration for layoff announcements?](#whats-the-best-configuration-for-layoff-announcements)
   - [Telling the team about reorg/recharter](#telling-the-team-about-reorg-recharter)
+    - [The FAQ](#the-faq)
+  - [How to handle Layoffs](#how-to-handle-layoffs)
+    - [What's the best way to execute layoff announcements?](#whats-the-best-way-to-execute-layoff-announcements)
     - [The FAQ](#the-faq)
 - [Personal Motivations](#personal-motivations)
   - [Why do you find management attractive](#why-do-you-find-management-attractive)
@@ -1935,59 +1936,6 @@ Finding a new charter is hard, it takes longer then you'd expect, and then once 
 
 NOTES: - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
 
-### How to handle Layoffs
-
-(Some of this is copied from [Ashish](https://www.linkedin.com/pulse/being-leadermanager-hard-during-layoffs-ashish-singh?trk=public_post_feed-article-content) )
-
-Before:
-
-- Be careful about telling people you don't know anything; at some point, you will, and you can and will be trapped in a lie. (I don't know the best thing to do here).
-- Remind people if they can't control something, don't focus on it. Focus on what they can influence.
-- Do not tell people they will not be laid off. Unless you know, don't.
-
-Day Of:
-
-Life suddenly seems to have slapped you hard and slowed down the day you find out your team is impacted. These are folks you have worked with in some cases for years; they came over to your team because they believed in you and your vision. The news makes you feel so small and helpless. While your heart is sinking and you are still trying to convince yourself that this is really happening, you are still expected to run the show, business as usual.
-
-The folks you support still trust you and want you to help them navigate through the situation, get them the answers they are looking for, and you may not have any clue of what to do next.
-
-- Get up early and get ready.
-- This will be a very emotionally draining day.
-- Excellent chance you won't know what's going on.
-- Remind people it's a tough day and take care of themselves.
-- Discourage people from speculating what and why.
-
-Next days:
-
-- Mental health experts recommend against group meetings. Keep everything 1:1.
-- Reduced productivity for days.
-- Possible re-org, with potential for lots of uncertainty.
-- It's easy to "mourn" the people who were impacted. However, they are not dead.
-- Ask impacted folks if they'd like to get together; it probably means a lot to them to get closure.
-
-General
-
-- If your team/other people aren't directly impacted, remind them it can be a very hard day for others, so be empathetic.
-- There will be pain; people may say negative stuff from a place of deep emotions, and that's a function of pain.
-- Some people need to make jokes to relieve pressure (I'm one of them). Remind them, and yourself, to be respectful of others at the same time.
-- Everyone processes this differently; offer to meet folks and have 1:1s privately, some will want them, others will not, honor their wishes.
-
-I try to send this just before if date is known, or after if it's more of a surprise.
-
-I will never speak about the performance issues of others, so this is a completely context free message:
-
-On %DATE% there will be fewer people in the office than today. You don't know who will be impacted by this directly or indirectly, so please make an effort to be sensitive. Even if you personally use humor to diffuse situations, others might find this very hurtful (and likely won't say anything), so please be cautious.
-
-As always, supporting y'all is always my top priority, so if there's anything you want to talk about - reach out.
-
-#### What's the best configuration for layoff announcements?
-
-When Zuck did a particular round of layoffs, he set a date in 3 months, and said we'll do them on this day. A lot of people complained, and said this is an aweful way to do it.
-
-When asked about the mechanics, Zuck said: Yes, this really sucks, I think regradless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
-
-I think Reed Hastings (of Nextfix) has an interesting take here. [You want to give people good severance](https://www.instagram.com/reel/DD7Z1ptT_w0/) so they feel great leaving at any time they want instead of hanging around to get paid.
-
 ### Telling the team about reorg/recharter
 
 Assume this will be very hard on the team. It's critical they hear it from you first. It shows respect, and lets you reduce the largest anxieties. This will be emotional for a lot of people, and the team will be deeply influenced by your emotions. While you should acknowledge the loss, and the potential uncertainty and upcoming bumpiness, you **must be positive about the future**.
@@ -2058,6 +2006,59 @@ The day of:
 - How long have you known
 - How long till you felt good about it
 - Domain specific questions
+
+### How to handle Layoffs
+
+(Some of this is copied from [Ashish](https://www.linkedin.com/pulse/being-leadermanager-hard-during-layoffs-ashish-singh?trk=public_post_feed-article-content) )
+
+Before:
+
+- Be careful about telling people you don't know anything; at some point, you will, and you can and will be trapped in a lie. (I don't know the best thing to do here).
+- Remind people if they can't control something, don't focus on it. Focus on what they can influence.
+- Do not tell people they will not be laid off. Unless you know, don't.
+
+Day Of:
+
+Life suddenly seems to have slapped you hard and slowed down the day you find out your team is impacted. These are folks you have worked with in some cases for years; they came over to your team because they believed in you and your vision. The news makes you feel so small and helpless. While your heart is sinking and you are still trying to convince yourself that this is really happening, you are still expected to run the show, business as usual.
+
+The folks you support still trust you and want you to help them navigate through the situation, get them the answers they are looking for, and you may not have any clue of what to do next.
+
+- Get up early and get ready.
+- This will be a very emotionally draining day.
+- Excellent chance you won't know what's going on.
+- Remind people it's a tough day and take care of themselves.
+- Discourage people from speculating what and why.
+
+Next days:
+
+- Mental health experts recommend against group meetings. Keep everything 1:1.
+- Reduced productivity for days.
+- Possible re-org, with potential for lots of uncertainty.
+- It's easy to "mourn" the people who were impacted. However, they are not dead.
+- Ask impacted folks if they'd like to get together; it probably means a lot to them to get closure.
+
+General
+
+- If your team/other people aren't directly impacted, remind them it can be a very hard day for others, so be empathetic.
+- There will be pain; people may say negative stuff from a place of deep emotions, and that's a function of pain.
+- Some people need to make jokes to relieve pressure (I'm one of them). Remind them, and yourself, to be respectful of others at the same time.
+- Everyone processes this differently; offer to meet folks and have 1:1s privately, some will want them, others will not, honor their wishes.
+
+I try to send this just before if date is known, or after if it's more of a surprise.
+
+I will never speak about the performance issues of others, so this is a completely context free message:
+
+On %DATE% there will be fewer people in the office than today. You don't know who will be impacted by this directly or indirectly, so please make an effort to be sensitive. Even if you personally use humor to diffuse situations, others might find this very hurtful (and likely won't say anything), so please be cautious.
+
+As always, supporting y'all is always my top priority, so if there's anything you want to talk about - reach out.
+
+#### What's the best way to execute layoff announcements?
+
+When Zuck did a particular round of layoffs, he set a date in 3 months, and said we'll do them on this day. A lot of people complained, and said this is an aweful way to do it.
+
+When asked about the mechanics, Zuck said: Yes, this really sucks, I think regradless of how we setup the layoffs up they will suck: my only hope is this setup will sucks less.
+
+I think Reed Hastings (of Nextfix) has an interesting take here. [You want to give people good severance](https://www.instagram.com/reel/DD7Z1ptT_w0/) so they feel great leaving at any time they want instead of hanging around to get paid.
 
 ## Personal Motivations
 

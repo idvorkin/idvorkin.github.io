@@ -3262,7 +3262,7 @@
         },
         "/manager-book": {
             "description": "Being an engineering manager is hard. Supporting people well is harder. Lessons are hard earned and should be cherished. This post is designed to make explicit, and improve behaviors and practices. It reminds me how to behave and encourages my own continuous improvement.\n\n",
-            "doc_size": 165000,
+            "doc_size": 168000,
             "file_path": "_site/manager-book.html",
             "incoming_links": [
                 "/amazon",
@@ -3277,7 +3277,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-07-19T09:21:19.066841",
+            "last_modified": "2025-07-20T14:13:52.243606",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
                 "/7h-c2",
