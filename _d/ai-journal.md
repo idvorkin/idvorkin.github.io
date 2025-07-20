@@ -126,6 +126,8 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ### 2025-07-20
 
+- Logs which created this entry: [link](https://github.com/idvorkin/idvorkin.github.io/blob/d5d20a8a0652ca22f72bd96deae328eaca44f0b4/zz-chop-logs/2025-07-20_20-53Z-document-today-s-project-updates.md)
+
 - Read [Brute Squad](https://sourcegraph.com/blog/the-brute-squad) by Steve Yegge
   - **The REAL Car-Cleaning Evolution:**
     - Traditional coding = You personally licking your car clean (the old way)
