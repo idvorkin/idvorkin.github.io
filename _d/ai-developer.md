@@ -351,7 +351,7 @@ def scratch():
 
 - It versions and tracks your prompt and prompt usage (like LangTrace), and it does it with gpt-4o. Very clever. Check out their view of my code. I'm looking forward to having this hosted somewhere.
 
-![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240922_112926.webp)
+![Screenshot of Ell Studio development interface showing LMP system prompt editing with version history tracking, including system prompt updates like "make your answers spicy" and performance metrics display](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240922_112926.webp)
 
 ### Commercial vs Open Source Models
 

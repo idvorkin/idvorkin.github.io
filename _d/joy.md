@@ -118,7 +118,7 @@ My early [ballooning](/ig66/621) adventures:
 - Usually by the time people read it I'm gone, but sometimes if I give them to someoen in a lobby they'll catch me on the way out and be like, hey thank you so much
 
 * Also considering printing on the back of business cards,
-  ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250505_065941.webp)
+  ![Collection of business card-sized inspirational cards spread on a green surface, featuring positive messages like "YOU'RE AWESOME" with colorful text and rainbow graphics, packaged for distribution](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250505_065941.webp)
 
 ### Surprise birthday visit to my sister
 

@@ -38,7 +38,7 @@ Our lives are stories, containing many different chapters. However, regardless o
 
 ## The western model
 
-![](https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.webp)
+![Four raccoon characters representing different life stages: young raccoon in overalls and sneakers (youth), business casual raccoon with briefcase (young adult), professional raccoon in suit (career-focused adult), and elder raccoon with walking cane and coat (wisdom/retirement) - illustrating the progression through life's chapters](https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.webp)
 
 Each decade brings its own unique combination of resources and learnings:
 
