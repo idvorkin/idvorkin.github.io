@@ -45,3 +45,10 @@ Before starting any work, read and follow the instructions in:
 - Use the blog's existing structure for new features
 - Check Jekyll at http://localhost:4000 when developing
 - When running e2e tests, always use headless mode (the default) and NOT `--debug` mode
+
+## Git Commit Guidelines
+
+- **NEVER commit generated JS files** (assets/js/index.js, assets/js/index.js.map)
+- Only commit TypeScript source files (src/\*.ts) and tests
+- JS files are built automatically and should not be tracked in git
+- Use `git reset HEAD assets/js/index.js*` to unstage any accidentally added JS files
