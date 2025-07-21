@@ -20,7 +20,7 @@ Insomnia controls you, instead of you controlling your sleep. If you want advice
 
 {%include blob_image_float_right.html src="problem-size.png" %}
 
-A common pattern when I can't sleep is I wake up after sleeping for 4-6 hours (which for me tends to be around 1-2 am) feeling overwhelmed and dreading doing something, or thinking I won't be able to succeed. At that point, I'm half a sleep, half awake ruminating on whatever has me overwhelmed.
+A common pattern when I can't sleep is I wake up after sleeping for 4-6 hours (which for me tends to be around 1-2 am), feeling overwhelmed and dreading doing something, or thinking I won't be able to succeed. At that point, I'm half asleep, half awake ruminating on whatever has me overwhelmed.
 
 Since I'm not really sleeping, I'm just tossing and turning and as a result:
 
@@ -44,7 +44,7 @@ After a few days of inadequate sleep, I'll often be trying to deal with sleep de
 
 - The essential activity, is getting back on my natural sleep cycle. I do this best through sleep deprivation, not sleep catchup.
 - I take prescription sleeping pills (aka Ambien/Lunesta/Sonata).
-- I force myself out of bed at wake up time - even if I didn't get enough sleep.
+- I force myself out of bed at wake-up time - even if I didn't get enough sleep.
 - I do not drink caffeine or nap. The best path to fall asleep on time (or even early) is sleep exhaustion
 
 ## Sleep

@@ -13,11 +13,11 @@ tags:
   - emotion
 ---
 
-It's 8am; The normal rush, the kids are late to school, we're yelling at them to eat their breakfast, pack their lunch, brush their teeth, get ready for school. 30 minutes earlier, I'd decided I'd bike Amelia, my 7 year old daughter, to school. I told Tori, my wife, who normally drives the kids to school. Tori didn't acknowledge me. As I got my bike helmet Tori put the kids in the car. I ran out and tried to get her attention, waving frantically and running the car. (In my head), Tori ignored me, wouldn't look at me, even as I ran to the car and gesticulated wildly. I really had my heart set on biking Amelia to school, and I went into a rage, as Tori pulled off, I flipped her off. Adulting fail - not my best moment.
+It's 8 am; The normal rush, the kids are late to school, we're yelling at them to eat their breakfast, pack their lunch, brush their teeth, get ready for school. 30 minutes earlier, I'd decided I'd bike Amelia, my 7 year old daughter, to school. I told Tori, my wife, who normally drives the kids to school. Tori didn't acknowledge me. As I got my bike helmet Tori put the kids in the car. I ran out and tried to get her attention, waving frantically and running to the car. (In my head), Tori ignored me, wouldn't look at me, even as I ran to the car and gesticulated wildly. I really had my heart set on biking Amelia to school, and I went into a rage, as Tori pulled off, I flipped her off. Adulting fail - not my best moment.
 
 All morning I couldn't focus. My mind kept coming back to how Tori could ignore me, how could she not have seen me? Why did she ignore me - screw her. Again, adulting fail.
 
-Anger is the enemy. It is an intoxicant, it causes poor judgement and makes everything worse. Don't believe me, go in your mind and find a time you were angry, think about how it made your decisions better - came up with nothing, huh.
+Anger is the enemy. It is an intoxicant, it causes poor judgment and makes everything worse. Don't believe me? Go in your mind and find a time you were angry, think about how it made your decisions better - came up with nothing, huh.
 
 <!-- prettier-ignore-start -->
 
@@ -38,9 +38,9 @@ Anger is the enemy. It is an intoxicant, it causes poor judgement and makes ever
 
 ## Your enemies trick - control
 
-When animals are in pain for prolonged periods of time, they have two responses, learned helpness (aka [depression](/depression)) or anger. Anger gives the impression of control, and makes you feel like you're taking action on the pain.
+When animals are in pain for prolonged periods of time, they have two responses, learned helplessness (aka [depression](/depression)) or anger. Anger gives the impression of control, and makes you feel like you're taking action on the pain.
 
-But you're not in control, you're losing perspective and making bad decisions. Even after your anger passes you have a "hang over" where for a period of time your mind just keeps coming back to your anger and indignation. A huge detrement to your pursuit of happiness.
+But you're not in control, you're losing perspective and making bad decisions. Even after your anger passes you have a "hang over" where for a period of time your mind just keeps coming back to your anger and indignation. A huge detriment to your pursuit of happiness.
 
 ## The anger dial frustration and rage
 
@@ -60,7 +60,7 @@ Pain isn't the enemy, it's a signal. See more details at [mental pain](/mental-p
 
 ### To Frustration
 
-Tolerance - be willing to accept the state for a period of time. Exercises for tolerance: Look for the pain you want to eliminate, and decide how large a difference there will be if it's not resolved for a few hours, for a few days, for a few months. Seeing that lets you make the implicit explicit, and lets you address the emotions with your
+Tolerance - be willing to accept the state for a period of time. Exercises for tolerance: Look for the pain you want to eliminate, and decide how large a difference there will be if it's not resolved for a few hours, for a few days, for a few months. Seeing that lets you make the implicit explicit, and lets you address the emotions with your logic
 
 ### To Anger
 

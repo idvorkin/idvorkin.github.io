@@ -15,7 +15,7 @@ The world is now on the cloud, here are my random notes on the topic.
         - [The power of the Dockerfile and image repository.](#the-power-of-the-dockerfile-and-image-repository)
     - [Containers as execution hosts - vs Virtual and Physical Machines](#containers-as-execution-hosts---vs-virtual-and-physical-machines)
     - [Container Orchestration](#container-orchestration)
-        - [Kubertnetes](#kubertnetes)
+        - [Kubernetes](#kubertnetes)
         - [Everything else](#everything-else)
 - [Front Door - AWS API Gateway](#front-door---aws-api-gateway)
     - [Caching + Throttling](#caching--throttling)
@@ -42,7 +42,7 @@ The world is now on the cloud, here are my random notes on the topic.
     - [Debugging](#debugging)
 - [Data Systems](#data-systems)
 - [Challenges](#challenges)
-    - [Conways law - Four complier teams implies a four pass complier](#conways-law---four-complier-teams-implies-a-four-pass-complier)
+    - [Conway's law - Four compiler teams implies a four pass compiler](#conways-law---four-complier-teams-implies-a-four-pass-complier)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc-end -->
@@ -64,7 +64,7 @@ We often talk about containers being a light weight VM, which they are. However,
 
 ### Container Orchestration
 
-#### Kubertnetes
+#### Kubernetes
 
 #### Everything else
 
@@ -93,7 +93,7 @@ Can log everything to cloud watch to enable api access debugging and auto-scale 
 
 ### Routing + API Transformation
 
-Define a client callable REST api and map it to arbitrary backend services including paramater and representation re-mapping. Can use this implement stages and version upgrades.
+Define a client callable REST api and map it to arbitrary backend services including parameter and representation re-mapping. Can use this implement stages and version upgrades.
 
 ### Websocket transformation
 
@@ -184,7 +184,7 @@ Huge topic, see [Data Systems](data-systems).
 
 ## Challenges
 
-### Conways law - Four complier teams implies a four pass complier
+### Conway's law - Four compiler teams implies a four pass compiler
 
 Conway's law is an aphorism in IT that posits the idea that “organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.” This idea can be traced back to a programmer named Melvin Conway who developed this principle in the late 1960s.
 

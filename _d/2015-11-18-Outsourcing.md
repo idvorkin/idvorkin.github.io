@@ -23,9 +23,9 @@ Time is my precious resource - I have a limited number of hours in my life, and 
 
 ### Crowd sourcing Tools
 
-Thanks to the many outsourcing crowd sourcing tools, getting contractors is easier then ever. Below are the tools I use and the tasks I've outsourced.
+Thanks to the many outsourcing crowd sourcing tools, getting contractors is easier than ever. Below are the tools I use and the tasks I've outsourced.
 
-- [ODesk](http://www.ODesk.com) - Get a professional for a more elaborte project, often someone to build relationships with
+- [ODesk](http://www.ODesk.com) - Get a professional for a more elaborate project, often someone to build relationships with
 
   - Editor for my featured [posts](http://localhost:4000/software%20as%20a%20service/the-recruiter-does-not-think-you-are-hot/)
   - Musician, to help me produce a [song](https://soundcloud.com/igor-dvorkin/two-wheels-full-of-grace).

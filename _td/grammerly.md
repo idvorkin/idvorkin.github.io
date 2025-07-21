@@ -1,5 +1,5 @@
 ---
-title: Grammerly
+title: Grammarly
 permalink: /grammerly
 layout: post
 ---
@@ -10,8 +10,8 @@ layout: post
     Need OAuth tokens to support autocomplete (as only a pro feature)
 <grammarly-editor-plugin config.autocomplete="on" >
 -->
-<grammarly-editor-plugin config.activiation="immediate">
+<grammarly-editor-plugin config.activation="immediate">
 <div class="mb-3">
-    <textarea class="form-control" id="grammerlyinput" rows="10">Try some poorly written text. Theyre dog is blue</textarea>
+    <textarea class="form-control" id="grammarlyinput" rows="10">Try some poorly written text. Theyre dog is blue</textarea>
 </div>
 </grammarly-editor-plugin>

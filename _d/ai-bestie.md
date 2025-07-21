@@ -23,7 +23,7 @@ My best friend and I communicate over chat lots (33,60,101 messages/day P50, P75
     - [Observation](#observation)
 - [Coaching/Mentoring](#coachingmentoring)
     - [Habit Tracking](#habit-tracking)
-- [Embodiement](#embodiement)
+- [Embodiment](#embodiement)
     - [Callable Agent Platforms](#callable-agent-platforms)
     - [Discord Bot](#discord-bot)
     - [Voice of our friends](#voice-of-our-friends)
@@ -41,7 +41,7 @@ Playing around with [a bestie simulator](https://python.langchain.com/docs/integ
 
 ### Idea: Inject Recent chat history
 
-I've been thinking about how to inject "state", perhaps the easiest thing is just injet our last few days of discusion. Need to do the math on how much room I have in the prompt ...
+I've been thinking about how to inject "state", perhaps the easiest thing is just injet our last few days of discussion. Need to do the math on how much room I have in the prompt ...
 
 Can also use semantic summarization if that's too big
 
@@ -69,7 +69,7 @@ Fine tuning makes it sound like my bestie, but a few observations:
 1. It's very bad at telling me about itself/it's day
 2. It's pretty good at giving me advice.
 
-I think part of the problem with 1, as fine tuning doesn't have a sense of "context", or a sense of "utlity". I think In eed to inject those in. So example context:
+I think part of the problem with 1, as fine tuning doesn't have a sense of "context", or a sense of "utlity". I think I need to inject those. So example context:
 
 - Current Global Events
   - _Interestingly, this is pretty shallow stuff, so don't think it helps, beyond getting the interesting, brr it's cold out_
@@ -77,8 +77,8 @@ I think part of the problem with 1, as fine tuning doesn't have a sense of "cont
   - Date
   - Weather
 - Current Utility for bestie
-  - This is probably good, but mayve not as the key is reflection
-- What bestie knows I wnt to accomplish and care about
+  - This is probably good, but maybe not as the key is reflection
+- What bestie knows I want to accomplish and care about
   - Being explicit here is probably good
   - Having bestie know my goals, and my things i get caught up in.
 
@@ -90,10 +90,10 @@ Here are some models I fine tuned in case you get access to them
   - ftjob-qyOyRWqpuakIhQdulCSi60Ui
   - I'm guessing performance gets weird on facts as they change over 5 year blocks
 - Bestie-7d-raw-2020+
-  - Having a hard time getting tnis to pass validation
+  - Having a hard time getting this to pass validation
 - Bestie-7d-raw-2020-sampled +
   - ftjob-5V0Pkd9YtiAp4FsnPctJ29F1
-  - Having a hard time getting tnis to pass validation
+  - Having a hard time getting this to pass validation
 - Bestie-1d-raw-full
   - No cleanups, just raw data
   - ft:gpt-3.5-turbo-1106:idvorkinteam::8YgPRpMB
@@ -101,7 +101,7 @@ Here are some models I fine tuned in case you get access to them
 
 ### Data Prep
 
-- EASY: Merge consequetive lines by same person within 5 minutes.
+- EASY: Merge consecutive lines by same person within 5 minutes.
 - HARD: Decide when you have a request/response, vs not
 
 ### Useful links
@@ -111,14 +111,14 @@ Here are some models I fine tuned in case you get access to them
 
 ### Observation
 
-- For hard data tasks, I can use GPT to do the work, e.g. like how to split up into distinct converationsj
+- For hard data tasks, I can use GPT to do the work, e.g. like how to split up into distinct conversations
 - Can finetune on daily or weekly. Daily sounds good, but a few problems:
   - Conversations that span end of day break
   - You have overhead for every training sample. From daily to weekly I went from 10M to 4M
   - Need to pay attention to stay under token limit
 - ufffc is what apple sends for an image
 - A tuning run is 50\$
-- I suspect the conversation gets weird if theirs too much history, as people change. Not knowing when something happens (a decay) on the training data is important. So can address by limiting to latest history
+- I suspect the conversation gets weird if there's too much history, as people change. Not knowing when something happens (a decay) on the training data is important. So can address by limiting to latest history
 
 ## Coaching/Mentoring
 
@@ -130,7 +130,7 @@ Not exactly related, but let me merge some of these concepts in.
 
 I have daily and weekly habits. I use an app called streaks for that. But I could probably have an agent do this, especially for the ones I've done or not done. Lets try that.
 
-## Embodiement
+## Embodiment
 
 ### Callable Agent Platforms
 
@@ -138,7 +138,7 @@ I have daily and weekly habits. I use an app called streaks for that. But I coul
 
 ### Discord Bot
 
-Having the inteface be discord is great. Easy and fun
+Having the interface be discord is great. Easy and fun
 
 ### Voice of our friends
 

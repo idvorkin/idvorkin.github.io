@@ -74,7 +74,7 @@ positions. This may involve making a few harmless mistakes so that you
 can ask your master for help.
 
 If, however, you are more naturally charming than your master, it would
-be b; st to avoid working for them entirely.
+be best to avoid working for them entirely.
 
 ### 2. Never Put Too Much Trust in Friends, Learn How to Use Enemies
 

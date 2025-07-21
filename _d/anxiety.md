@@ -9,7 +9,7 @@ redirect_from:
   - /anxious
 ---
 
-Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.
+Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstances drawing your attention to a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over-triggered, and handled poorly without deliberate action.
 
 <!-- prettier-ignore-start -->
 
@@ -86,7 +86,7 @@ Therefore, perspective is the area of the graph being considered. This is likely
 
 Anxiety, being pain, reduces the perspective, and this leads to the suffering of stress
 
-1. Detection, as it's a sub concious process that happens
+1. Detection, as it's a subconscious process that happens
 2. Remind ourselves of the larger time dimension and then many aspects of our lives.
 
 #### Caring vs Mattering
@@ -103,7 +103,7 @@ For example, imagine your kid doesn't want to go to bed on time, and they push b
 
 **Caring and mattering for others**
 
-Speaking of the mind assuming caring and mattering are equivalent, think about a time someone you really trust and respect (spouses are a great example) tells you the thing that's causing you a deep emotional response doesn't matter. This usually makes it much worse not better.
+Speaking of the mind assuming caring and mattering are equivalent, think about a time someone you really trust and respect (spouses are a great example) tells you the thing that's causing you a deep emotional response doesn't matter. This usually makes it much worse, not better.
 
 **The gentle act of helping others assess how much things matter**
 
