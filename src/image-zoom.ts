@@ -9,7 +9,7 @@ declare global {
   }
 }
 
-export function enableImageZoom() {
+export function enableImageZoom(retryCount = 0) {
   // Skip if running in test environment without DOM
   if (typeof document === "undefined") {
     return;
@@ -17,10 +17,15 @@ export function enableImageZoom() {
 
   console.log("🖼️ Enabling image zoom functionality");
 
-  // Wait for GLightbox to be available
+  // Wait for GLightbox to be available with retry limit
   if (typeof window.GLightbox === "undefined") {
-    console.warn("⚠️ GLightbox not found, retrying in 100ms");
-    setTimeout(enableImageZoom, 100);
+    if (retryCount < 50) {
+      // Max 5 seconds of retries (50 * 100ms)
+      console.warn(`⚠️ GLightbox not found, retrying in 100ms (attempt ${retryCount + 1}/50)`);
+      setTimeout(() => enableImageZoom(retryCount + 1), 100);
+      return;
+    }
+    console.error("❌ GLightbox failed to load after 5 seconds, aborting image zoom initialization");
     return;
   }
 

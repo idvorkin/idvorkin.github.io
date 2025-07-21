@@ -48,7 +48,7 @@ Before starting any work, read and follow the instructions in:
 
 ## Git Commit Guidelines
 
-- **NEVER commit generated JS files** (assets/js/index.js, assets/js/index.js.map)
-- Only commit TypeScript source files (src/\*.ts) and tests
-- JS files are built automatically and should not be tracked in git
-- Use `git reset HEAD assets/js/index.js*` to unstage any accidentally added JS files
+- **Generated JS files ARE committed** (assets/js/index.js, assets/js/index.js.map)
+- Commit both TypeScript source files (src/\*.ts) and the generated JS bundle
+- JS files are built from TypeScript and should be tracked in git for Jekyll deployment
+- Always run `just js-build` before committing to ensure JS bundle is up to date
