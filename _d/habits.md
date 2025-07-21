@@ -21,7 +21,7 @@ Habits are the automatic actions, both positive and negative, you take through y
 
 ### Big Ideas
 
-#### Systems more important then goals
+#### Systems more important than goals
 
 Goals are point in time, systems are like the drip, drip, drip of daily improvement.
 Hi reps, low weight.
@@ -32,7 +32,7 @@ A easy way to say this is "Compensation lags competence"
 
 #### Habits in context
 
-Your identity re-enforces your habits, which intern creates your outcomes.
+Your identity re-enforces your habits, which in turn creates your outcomes.
 
 - Identity
 - Habits
@@ -63,7 +63,7 @@ Another habit I have is playing on the command line (both writing and updating m
 | State    | Adding                      | Removing             |
 | -------- | --------------------------- | -------------------- |
 | Cue      | Make it obvious and visible | Make it invisible    |
-| Craving  | Make it attractive          | Make it displeasing  |
+| Craving  | Make it attractive          | Make it unattractive |
 | Response | Make it easy                | Make it hard         |
 | Reward   | Make it satisfying          | Make it unsatisfying |
 
@@ -76,7 +76,7 @@ Another habit I have is playing on the command line (both writing and updating m
 | Response | Carry a fanny pack with everything in it  |
 | Reward   | Thinking how much people will enjoy magic |
 
-### Behavior change modelt map
+### Behavior change model map
 
 Tiny habits has a simpler behavior change model, mapping it
 
@@ -101,11 +101,11 @@ Think about the habits that the person you want to be. What habits will they hav
 
 ### Tiny Habits
 
-#### Desiging for behavior change
+#### Designing for behavior change
 
-You'll only act with a prompt (Cue), but your likely hood of taking action is dependant on your ability and motivation.
+You'll only act with a prompt (Cue), but your likely hood of taking action is dependent on your ability and motivation.
 
-When making change, motivation is hardest to change, and wanes the most, so tackle prompt first, and then ability, and lastly motivation.
+When making change, motivation is hardest to change, and wanes the most, so tackle prompt first, then ability, and lastly motivation.
 
 Add table, prompt, ability, motivation
 
@@ -115,6 +115,6 @@ TODO: Contrast this with the [Be Proactive](/7h-c1), which focus on motivation, 
 
 Start by Prompt,
 
-### Furthor resources
+### Further resources
 
 {%include amazon.html asin="B07LC9KDP5;B07D23CFGR" %}

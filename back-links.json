@@ -41,6 +41,7 @@
         "/bikes": "/bike",
         "/biking": "/bike",
         "/bmu": "/bmy",
+        "/book-writing": "/write-book",
         "/books": "/books-that-defined-me",
         "/boss": "/being-a-great-manager",
         "/brain-attack": "/suicide",
@@ -261,7 +262,9 @@
             "doc_size": 16000,
             "file_path": "_site/22.html",
             "incoming_links": [
-                "/chapters"
+                "/chapters",
+                "/manager-book",
+                "/random-idea"
             ],
             "last_modified": "2024-05-05T08:25:00-07:00",
             "markdown_path": "_d/22.md",
@@ -275,7 +278,8 @@
             "doc_size": 20000,
             "file_path": "_site/40yo.html",
             "incoming_links": [
-                "/elder"
+                "/elder",
+                "/random-idea"
             ],
             "last_modified": "2025-01-04T06:21:54-08:00",
             "markdown_path": "_d/40-yo-programmer.md",
@@ -293,11 +297,12 @@
             "file_path": "_site/42.html",
             "incoming_links": [
                 "/chapters",
+                "/random-idea",
                 "/retire",
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-04-27T05:59:12-07:00",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/42.md",
             "outgoing_links": [
                 "/chapters",
@@ -317,7 +322,8 @@
             "doc_size": 18000,
             "file_path": "_site/4dx.html",
             "incoming_links": [
-                "/goals"
+                "/goals",
+                "/random-idea"
             ],
             "last_modified": "2025-02-17T10:16:11-08:00",
             "markdown_path": "_d/4dx.md",
@@ -333,7 +339,7 @@
             "url": "/4dx"
         },
         "/7-habits": {
-            "description": "Need a user manual for life? For me, that’s The 7 Habits of Highly Effective People. From dependant, to independent to interdependant, and then rinse and repeat for the the different roles in your life. Like other self-helf books? Excellent chance it’s a reframe or deep dive into these concepts.\n\n",
+            "description": "Need a user manual for life? For me, that’s The 7 Habits of Highly Effective People. From dependent, to independent to interdependent, and then rinse and repeat for the different roles in your life. Like other self-help books? Excellent chance it’s a reframe or deep dive into these concepts.\n\n",
             "doc_size": 17000,
             "file_path": "_site/7-habits.html",
             "incoming_links": [
@@ -348,11 +354,12 @@
                 "/first-things-first",
                 "/first-understand",
                 "/psychic-weight",
+                "/random-idea",
                 "/sharpen-the-saw",
                 "/synergize",
                 "/win-win"
             ],
-            "last_modified": "2025-05-25T10:09:41-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2018-01-04-7-habits.md",
             "outgoing_links": [
                 "/7h-concepts",
@@ -377,6 +384,7 @@
             "incoming_links": [
                 "/7-habits",
                 "/advice",
+                "/random-idea",
                 "/writing"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -396,9 +404,10 @@
             "file_path": "_site/90days.html",
             "incoming_links": [
                 "/manager-book",
+                "/random-idea",
                 "/writing"
             ],
-            "last_modified": "2025-02-09T05:06:37-08:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/90days.md",
             "outgoing_links": [
                 "/amazon",
@@ -430,7 +439,8 @@
             "file_path": "_site/Immutable-Laws-Of-Hard.html",
             "incoming_links": [
                 "/frog",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "last_modified": "2018-12-25T15:32:00-08:00",
             "markdown_path": "_posts/2016-6-30-Immutable-Laws-Of-Hard.md",
@@ -444,7 +454,8 @@
             "doc_size": 16000,
             "file_path": "_site/The-Genesis-Node.html",
             "incoming_links": [
-                "/eulogy"
+                "/eulogy",
+                "/random-idea"
             ],
             "last_modified": "2020-05-06T21:46:45-07:00",
             "markdown_path": "_posts/2018-11-03-The-Genesis-Node.md",
@@ -476,9 +487,10 @@
                 "/balance",
                 "/d/time-off-2021-12",
                 "/energy",
-                "/energy-abundance"
+                "/energy-abundance",
+                "/random-idea"
             ],
-            "last_modified": "2024-04-09T09:09:21-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/activation.md",
             "outgoing_links": [
                 "/addiction",
@@ -495,7 +507,8 @@
             "doc_size": 17000,
             "file_path": "_site/adblocker-trojan.html",
             "incoming_links": [
-                "/d/time-off-2021-11"
+                "/d/time-off-2021-11",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_td/adblocker_trojan.md",
@@ -520,14 +533,15 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
+                "/random-idea",
                 "/timeoff"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:45:03.836352",
             "markdown_path": "_d/addiction.md",
             "outgoing_links": [
                 "/covid",
-                "/elder",
                 "/mental-pain",
+                "/midlife",
                 "/mind-at-work"
             ],
             "redirect_url": "",
@@ -557,7 +571,8 @@
                 "/igor-gap-year",
                 "/mortality-software",
                 "/operating-manual",
-                "/process-journal"
+                "/process-journal",
+                "/random-idea"
             ],
             "last_modified": "2025-06-17T07:29:01-07:00",
             "markdown_path": "_d/affirmations2.md",
@@ -585,7 +600,8 @@
             "doc_size": 26000,
             "file_path": "_site/ai.html",
             "incoming_links": [
-                "/ai-developer"
+                "/ai-developer",
+                "/random-idea"
             ],
             "last_modified": "2025-05-19T09:09:26-07:00",
             "markdown_path": "_d/ai.md",
@@ -615,7 +631,8 @@
             "file_path": "_site/ai-art.html",
             "incoming_links": [
                 "/ai",
-                "/ai-journal"
+                "/ai-journal",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/ai_art.md",
@@ -633,9 +650,10 @@
             "file_path": "_site/ai-bestie.html",
             "incoming_links": [
                 "/ai",
+                "/random-idea",
                 "/y24"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/ai-bestie.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -647,7 +665,8 @@
             "doc_size": 13000,
             "file_path": "_site/ai-bm.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/random-idea"
             ],
             "last_modified": "2024-12-05T09:18:22-08:00",
             "markdown_path": "_d/ai-business-model.md",
@@ -658,12 +677,13 @@
         },
         "/ai-developer": {
             "description": "ML Engineer is a hot new job. It’s the boys and girls who train and deploy models. I heard the word AI developer the other day, and I’ll refer to it as AI application engineers. People who use AI to solve use cases. NOTE: This is not what most developers do today. What most developers do today is ask how can AI do the things I would have done (e.g. write the function).\n\n",
-            "doc_size": 39000,
+            "doc_size": 40000,
             "file_path": "_site/ai-developer.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/random-idea"
             ],
-            "last_modified": "2025-07-19T09:20:41.906908",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/ai-developer.md",
             "outgoing_links": [
                 "/ai"
@@ -678,7 +698,8 @@
             "file_path": "_site/ai-image.html",
             "incoming_links": [
                 "/ai",
-                "/ai-art"
+                "/ai-art",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/ai-imagegen.md",
@@ -689,17 +710,18 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 39000,
+            "doc_size": 40000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/random-idea"
             ],
-            "last_modified": "2025-07-20T14:12:37.887231",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
-                "/ai-talk",
+                "/genai-talk",
                 "/gpt",
                 "/idvorkin/idvorkin-flux-lora-1",
                 "/mental-pain"
@@ -713,7 +735,8 @@
             "doc_size": 17000,
             "file_path": "_site/ai-paper.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/ai-paper.md",
@@ -728,7 +751,8 @@
             "file_path": "_site/ai-security.html",
             "incoming_links": [
                 "/ai",
-                "/ai-journal"
+                "/ai-journal",
+                "/random-idea"
             ],
             "last_modified": "2025-02-01T10:33:35-08:00",
             "markdown_path": "_d/ai-security.md",
@@ -747,6 +771,7 @@
                 "/d/time-off-2024-04",
                 "/genai-talk",
                 "/ml",
+                "/random-idea",
                 "/testing"
             ],
             "last_modified": "2025-06-22T09:22:45-07:00",
@@ -764,6 +789,7 @@
                 "/90days",
                 "/manager-book-appendix",
                 "/parkinson",
+                "/random-idea",
                 "/writing"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -782,14 +808,15 @@
             "url": "/amazon"
         },
         "/anger": {
-            "description": "It’s 8am; The normal rush, the kids are late to school, we’re yelling at them to eat their breakfast, pack their lunch, brush their teeth, get ready for school. 30 minutes earlier, I’d decided I’d bike Amelia, my 7 year old daughter, to school. I told Tori, my wife, who normally drives the kids to school. Tori didn’t acknowledge me. As I got my bike helmet Tori put the kids in the car. I ran out and tried to get her attention, waving frantically and running the car. (In my head), Tori ignored me, wouldn’t look at me, even as I ran to the car and gesticulated wildly. I really had my heart set on biking Amelia to school, and I went into a rage, as Tori pulled off, I flipped her off. Adulting fail - not my best moment.\n\n",
+            "description": "It’s 8 am; The normal rush, the kids are late to school, we’re yelling at them to eat their breakfast, pack their lunch, brush their teeth, get ready for school. 30 minutes earlier, I’d decided I’d bike Amelia, my 7 year old daughter, to school. I told Tori, my wife, who normally drives the kids to school. Tori didn’t acknowledge me. As I got my bike helmet Tori put the kids in the car. I ran out and tried to get her attention, waving frantically and running to the car. (In my head), Tori ignored me, wouldn’t look at me, even as I ran to the car and gesticulated wildly. I really had my heart set on biking Amelia to school, and I went into a rage, as Tori pulled off, I flipped her off. Adulting fail - not my best moment.\n\n",
             "doc_size": 17000,
             "file_path": "_site/anger.html",
             "incoming_links": [
                 "/emotions",
-                "/mood"
+                "/mood",
+                "/random-idea"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/anger.md",
             "outgoing_links": [
                 "/depression",
@@ -800,7 +827,7 @@
             "url": "/anger"
         },
         "/anxiety": {
-            "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstance drawing your attention for a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over triggered, and handled poorly without deliberate action.\n\n",
+            "description": "Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstances drawing your attention to a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over-triggered, and handled poorly without deliberate action.\n\n",
             "doc_size": 22000,
             "file_path": "_site/anxiety.html",
             "incoming_links": [
@@ -813,10 +840,11 @@
                 "/operating-manual",
                 "/overload",
                 "/productive",
+                "/random-idea",
                 "/touching",
                 "/voices"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/anxiety.md",
             "outgoing_links": [
                 "/anxiety-management",
@@ -835,7 +863,8 @@
             "incoming_links": [
                 "/anxiety",
                 "/fail",
-                "/psychic-shadows"
+                "/psychic-shadows",
+                "/random-idea"
             ],
             "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/anxiety_management.md",
@@ -857,7 +886,8 @@
             "file_path": "_site/appreciate.html",
             "incoming_links": [
                 "/affirmations",
-                "/class-act"
+                "/class-act",
+                "/random-idea"
             ],
             "last_modified": "2022-03-20T09:28:13-07:00",
             "markdown_path": "_d/appreciate2.md",
@@ -905,7 +935,7 @@
             "url": "/ast-grep"
         },
         "/balance": {
-            "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from mortality software. Todo, decide if this post should fork into energy and balance\n\n",
+            "description": "I’m good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from mortality software. TODO: decide if this post should fork into energy and balance\n\n",
             "doc_size": 21000,
             "file_path": "_site/balance.html",
             "incoming_links": [
@@ -914,9 +944,10 @@
                 "/d/time-off-2021-12",
                 "/energy-abundance",
                 "/life-as-business",
-                "/productive"
+                "/productive",
+                "/random-idea"
             ],
-            "last_modified": "2025-05-25T10:09:41-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/balance2.md",
             "outgoing_links": [
                 "/7-habits",
@@ -943,6 +974,7 @@
             "incoming_links": [
                 "/eulogy",
                 "/joy",
+                "/random-idea",
                 "/timeoff"
             ],
             "last_modified": "2025-04-04T06:53:08-07:00",
@@ -983,6 +1015,7 @@
                 "/frog",
                 "/idle",
                 "/process-journal",
+                "/random-idea",
                 "/regrets",
                 "/siy"
             ],
@@ -999,16 +1032,17 @@
             "url": "/be-proactive"
         },
         "/being-a-great-manager": {
-            "description": "I aspire to be the best manager I can be. I’ll often fall short of my goal, but through continuous practice I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best. Few things make me prouder then this public feedback on LinkedIn from people who worked with me over several years. I’m also writing a manager guidebook, which goes into much more depth on management.\n\n",
+            "description": "I aspire to be the best manager I can be. I’ll often fall short of my goal, but through continuous practice I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best. Few things make me prouder than this public feedback on LinkedIn from people who worked with me over several years. I’m also writing a manager guidebook, which goes into much more depth on management.\n\n",
             "doc_size": 22000,
             "file_path": "_site/being-a-great-manager.html",
             "incoming_links": [
                 "/bmy",
                 "/eulogy",
                 "/job",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
-            "last_modified": "2025-04-04T21:35:18+00:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2018-03-18-being-a-great-manager.md",
             "outgoing_links": [
                 "/books-that-defined-me",
@@ -1034,7 +1068,8 @@
             "incoming_links": [
                 "/eulogy",
                 "/irl",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_posts/2017-03-01-bike.md",
@@ -1054,6 +1089,7 @@
                 "/activation",
                 "/d/time-off-2024-02",
                 "/operating-manual",
+                "/random-idea",
                 "/sleep"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -1071,7 +1107,8 @@
             "doc_size": 22000,
             "file_path": "_site/bmy.html",
             "incoming_links": [
-                "/job-hunt-stress"
+                "/job-hunt-stress",
+                "/random-idea"
             ],
             "last_modified": "2025-07-12T16:50:19-07:00",
             "markdown_path": "_d/bmu.md",
@@ -1091,9 +1128,11 @@
             "file_path": "_site/books-that-defined-me.html",
             "incoming_links": [
                 "/being-a-great-manager",
-                "/manager-book-appendix"
+                "/manager-book",
+                "/manager-book-appendix",
+                "/random-idea"
             ],
-            "last_modified": "2021-02-13T08:15:36-08:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2015-11-02-books-that-defined-me.md",
             "outgoing_links": [
                 "/7-habits",
@@ -1125,7 +1164,8 @@
             "doc_size": 15000,
             "file_path": "_site/brompton-toys.html",
             "incoming_links": [
-                "/bike"
+                "/bike",
+                "/random-idea"
             ],
             "last_modified": "2018-12-25T15:32:00-08:00",
             "markdown_path": "_posts/2016-4-9-brompton-toys.md",
@@ -1139,7 +1179,8 @@
             "doc_size": 14000,
             "file_path": "_site/brython.html",
             "incoming_links": [
-                "/d/time-off-2021-11"
+                "/d/time-off-2021-11",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/brython_.md",
@@ -1153,7 +1194,8 @@
             "doc_size": 15000,
             "file_path": "_site/build-bubble-bike.html",
             "incoming_links": [
-                "/joy"
+                "/joy",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/build-bubble-bike.md",
@@ -1170,7 +1212,8 @@
             "file_path": "_site/cache.html",
             "incoming_links": [
                 "/eulogy",
-                "/job"
+                "/job",
+                "/random-idea"
             ],
             "last_modified": "2023-12-17T18:53:39+00:00",
             "markdown_path": "_posts/2018-1-1-cache.md",
@@ -1184,7 +1227,8 @@
             "doc_size": 22000,
             "file_path": "_site/caring.html",
             "incoming_links": [
-                "/depression"
+                "/depression",
+                "/random-idea"
             ],
             "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/caring.md",
@@ -1210,17 +1254,18 @@
         },
         "/chapters": {
             "description": "Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22-year-old, and what you need as a 42-year-old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.\n\n",
-            "doc_size": 21000,
+            "doc_size": 22000,
             "file_path": "_site/chapters.html",
             "incoming_links": [
                 "/42",
                 "/gap-year",
                 "/igor-gap-year",
                 "/lonely",
+                "/random-idea",
                 "/retire",
                 "/y25"
             ],
-            "last_modified": "2025-02-17T12:24:06-08:00",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/chapters.md",
             "outgoing_links": [
                 "/22",
@@ -1236,7 +1281,8 @@
             "doc_size": 21000,
             "file_path": "_site/chasing-daylight.html",
             "incoming_links": [
-                "/last-year"
+                "/last-year",
+                "/random-idea"
             ],
             "last_modified": "2025-02-23T06:32:12-08:00",
             "markdown_path": "_d/chasing-daylight.md",
@@ -1260,12 +1306,13 @@
                 "/chow",
                 "/gtd",
                 "/process-journal",
+                "/random-idea",
                 "/tech-rituals",
                 "/vibe",
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-06-07T08:40:12-07:00",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-testing",
@@ -1283,7 +1330,8 @@
             "doc_size": 27000,
             "file_path": "_site/chow.html",
             "incoming_links": [
-                "/ai"
+                "/ai",
+                "/random-idea"
             ],
             "last_modified": "2025-02-16T07:25:27-08:00",
             "markdown_path": "_d/chow.md",
@@ -1302,7 +1350,8 @@
             "doc_size": 15000,
             "file_path": "_site/class-act.html",
             "incoming_links": [
-                "/affirmations"
+                "/affirmations",
+                "/random-idea"
             ],
             "last_modified": "2024-11-30T08:42:37-08:00",
             "markdown_path": "_d/classact2.md",
@@ -1328,9 +1377,10 @@
                 "/manager-book",
                 "/moments-at-work",
                 "/prompts",
+                "/random-idea",
                 "/writing"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/coaching.md",
             "outgoing_links": [
                 "/curious",
@@ -1353,6 +1403,7 @@
                 "/fail",
                 "/manager-book",
                 "/physical-pain",
+                "/random-idea",
                 "/switch",
                 "/writing"
             ],
@@ -1370,6 +1421,7 @@
             "incoming_links": [
                 "/job-hunt-stress",
                 "/manager-book",
+                "/random-idea",
                 "/work-satisfaction"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -1387,7 +1439,8 @@
             "doc_size": 21000,
             "file_path": "_site/content-audience.html",
             "incoming_links": [
-                "/content-creation"
+                "/content-creation",
+                "/random-idea"
             ],
             "last_modified": "2025-05-17T11:04:42-07:00",
             "markdown_path": "_d/content-audience.md",
@@ -1403,6 +1456,7 @@
             "doc_size": 17000,
             "file_path": "_site/content-creation.html",
             "incoming_links": [
+                "/random-idea",
                 "/y25"
             ],
             "last_modified": "2025-05-17T09:11:42-07:00",
@@ -1422,7 +1476,8 @@
             "incoming_links": [
                 "/addiction",
                 "/facebook",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/covid19.md",
@@ -1451,6 +1506,7 @@
                 "/negotiate",
                 "/operating-manual",
                 "/psychic-weight",
+                "/random-idea",
                 "/regrets",
                 "/shame",
                 "/voices"
@@ -1474,7 +1530,7 @@
             "doc_size": 15000,
             "file_path": "_site/d/2015-11-18-Outsourcing.html",
             "incoming_links": [],
-            "last_modified": "2020-12-19T13:44:03+00:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/2015-11-18-Outsourcing.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1512,7 +1568,7 @@
             "doc_size": 14000,
             "file_path": "_site/d/2016-2-14-Health-In-The-Head.html",
             "incoming_links": [],
-            "last_modified": "2018-12-25T15:34:24-08:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/2016-2-14-Health-In-The-Head.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -1586,7 +1642,8 @@
             "doc_size": 49000,
             "file_path": "_site/d/2017-11-04-clean-architecture.html",
             "incoming_links": [
-                "/design"
+                "/design",
+                "/random-idea"
             ],
             "last_modified": "2022-02-20T20:01:29-08:00",
             "markdown_path": "_d/2017-11-04-clean-architecture.md",
@@ -1645,15 +1702,17 @@
                 "/idle",
                 "/igor-gap-year",
                 "/life-as-business",
+                "/manager-book",
                 "/mind-at-work",
                 "/operating-manual",
                 "/physical-health",
                 "/productive",
                 "/psychic-weight",
+                "/random-idea",
                 "/sharpen-the-saw",
                 "/switch"
             ],
-            "last_modified": "2022-03-20T09:28:13-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/habits.md",
             "outgoing_links": [
                 "/be-proactive"
@@ -1664,7 +1723,7 @@
         },
         "/d/management_interviews": {
             "description": "FACEBOOK MANAGEMENT INTERVIEWING 101\n\n",
-            "doc_size": 34000,
+            "doc_size": 33000,
             "file_path": "_site/d/management_interviews.html",
             "incoming_links": [],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -1693,6 +1752,7 @@
                 "/productive",
                 "/psychic-shadows",
                 "/psychic-weight",
+                "/random-idea",
                 "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -1732,7 +1792,8 @@
             "doc_size": 22000,
             "file_path": "_site/d/time-off-2020-12.html",
             "incoming_links": [
-                "/d/time-off-2021-12"
+                "/d/time-off-2021-12",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/time-off-2020-12.md",
@@ -1752,7 +1813,8 @@
             "doc_size": 19000,
             "file_path": "_site/d/time-off-2021-11.html",
             "incoming_links": [
-                "/d/time-off-2021-12"
+                "/d/time-off-2021-12",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/time-off-2021-11.md",
@@ -1772,7 +1834,8 @@
             "doc_size": 22000,
             "file_path": "_site/d/time-off-2021-12.html",
             "incoming_links": [
-                "/d/time-off-2022-12"
+                "/d/time-off-2022-12",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/time-off-2021-12.md",
@@ -1910,6 +1973,7 @@
             "file_path": "_site/d/time-off-2024-02.html",
             "incoming_links": [
                 "/bc",
+                "/random-idea",
                 "/timeoff"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -1973,7 +2037,8 @@
                 "/elder",
                 "/last-year",
                 "/mortality-software",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/random-idea"
             ],
             "last_modified": "2025-02-03T06:19:52-08:00",
             "markdown_path": "_d/on-being-mortal.md",
@@ -2005,6 +2070,7 @@
                 "/coaching",
                 "/gap-year",
                 "/job-hunt-stress",
+                "/manager-book",
                 "/pride",
                 "/random-idea",
                 "/work-satisfaction"
@@ -2020,7 +2086,9 @@
             "description": "Finance has existed for as long as civilization. And like most things before the Internet age was based on the trust of centralized law and authority (like banks and governments). Decentralized Finance (DeFi) is the movement that asks could we perform our financial transaction with out centralized trust. Finance has evolved many instruments to meet the needs of civilization, all of which are based on trust (store of value, currency, loans), de-fi will search for equivalences of each of these.\n\n",
             "doc_size": 31000,
             "file_path": "_site/defi.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_td/defi.md",
             "outgoing_links": [],
@@ -2033,7 +2101,8 @@
             "doc_size": 17000,
             "file_path": "_site/delegate.html",
             "incoming_links": [
-                "/first-things-first"
+                "/first-things-first",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/delegate.md",
@@ -2052,9 +2121,10 @@
                 "/anger",
                 "/caring",
                 "/mental-pain",
-                "/mood"
+                "/mood",
+                "/random-idea"
             ],
-            "last_modified": "2025-07-18T07:57:44-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/depression.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2084,6 +2154,7 @@
             "file_path": "_site/design.html",
             "incoming_links": [
                 "/d/2017-11-04-clean-architecture",
+                "/random-idea",
                 "/system-design",
                 "/testing"
             ],
@@ -2106,6 +2177,7 @@
                 "/42",
                 "/operating-manual",
                 "/physical-health",
+                "/random-idea",
                 "/retire",
                 "/sharpen-the-saw"
             ],
@@ -2129,6 +2201,7 @@
                 "/gtd",
                 "/manager-book",
                 "/parkinson",
+                "/random-idea",
                 "/work-satisfaction"
             ],
             "last_modified": "2025-02-21T11:05:49-08:00",
@@ -2168,7 +2241,7 @@
             "file_path": "_site/elder.html",
             "incoming_links": [
                 "/40yo",
-                "/addiction"
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/elder.md",
@@ -2194,11 +2267,12 @@
                 "/mind-at-work",
                 "/operating-manual",
                 "/process-journal",
+                "/random-idea",
                 "/sharpen-the-saw",
                 "/siy",
                 "/sublime"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/emotional-health-hold.md",
             "outgoing_links": [
                 "/sharpen-the-saw",
@@ -2237,6 +2311,7 @@
             "file_path": "_site/enable.html",
             "incoming_links": [
                 "/chow",
+                "/random-idea",
                 "/writing"
             ],
             "last_modified": "2024-11-02T12:44:04-07:00",
@@ -2264,7 +2339,9 @@
                 "/d/resistance",
                 "/elder",
                 "/igor-gap-year",
+                "/manager-book",
                 "/productive",
+                "/random-idea",
                 "/siy"
             ],
             "last_modified": "2025-05-12T09:24:30-07:00",
@@ -2287,6 +2364,7 @@
             "file_path": "_site/enemy.html",
             "incoming_links": [
                 "/chapters",
+                "/random-idea",
                 "/retire"
             ],
             "last_modified": "2023-12-30T11:50:51-08:00",
@@ -2308,9 +2386,10 @@
                 "/energy-abundance",
                 "/mood",
                 "/productive",
+                "/random-idea",
                 "/timeoff"
             ],
-            "last_modified": "2024-06-03T09:28:27-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/energy.md",
             "outgoing_links": [
                 "/activation",
@@ -2332,7 +2411,8 @@
             "doc_size": 27000,
             "file_path": "_site/energy-abundance.html",
             "incoming_links": [
-                "/life-as-business"
+                "/life-as-business",
+                "/random-idea"
             ],
             "last_modified": "2025-03-08T09:45:30-08:00",
             "markdown_path": "_d/energy-abundance.md",
@@ -2369,9 +2449,10 @@
                 "/overload",
                 "/parkinson",
                 "/partner-trouble",
+                "/random-idea",
                 "/timeoff"
             ],
-            "last_modified": "2025-07-12T16:50:19-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2015-11-28-essentialism.md",
             "outgoing_links": [
                 "/curious",
@@ -2380,7 +2461,7 @@
                 "/physical-health"
             ],
             "redirect_url": "",
-            "title": "Essentialisim",
+            "title": "Essentialism",
             "url": "/essentialism"
         },
         "/eulogy": {
@@ -2399,6 +2480,7 @@
                 "/irl",
                 "/joy",
                 "/operating-manual",
+                "/random-idea",
                 "/retire",
                 "/timeoff",
                 "/todo_enjoy",
@@ -2436,7 +2518,8 @@
             "doc_size": 32000,
             "file_path": "_site/facebook.html",
             "incoming_links": [
-                "/manager-book-appendix"
+                "/manager-book-appendix",
+                "/random-idea"
             ],
             "last_modified": "2025-01-20T07:00:02-08:00",
             "markdown_path": "_d/facebook.md",
@@ -2474,9 +2557,10 @@
                 "/90days",
                 "/affirmations",
                 "/delegate",
-                "/frog"
+                "/frog",
+                "/random-idea"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/7h-c3.md",
             "outgoing_links": [
                 "/7-habits",
@@ -2504,6 +2588,7 @@
                 "/class-act",
                 "/curious",
                 "/negotiate",
+                "/random-idea",
                 "/sell",
                 "/work-satisfaction"
             ],
@@ -2537,6 +2622,7 @@
                 "/parkinson",
                 "/productive",
                 "/psychic-weight",
+                "/random-idea",
                 "/timeoff"
             ],
             "last_modified": "2025-04-02T21:53:46-07:00",
@@ -2560,6 +2646,7 @@
             "file_path": "_site/gap-year.html",
             "incoming_links": [
                 "/igor-gap-year",
+                "/random-idea",
                 "/retire"
             ],
             "last_modified": "2025-06-22T09:39:35-07:00",
@@ -2586,7 +2673,8 @@
             "doc_size": 38000,
             "file_path": "_site/genai-talk.html",
             "incoming_links": [
-                "/ai-journal"
+                "/ai-journal",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/genai-talk.md",
@@ -2603,7 +2691,8 @@
             "file_path": "_site/getting-to-yes-with-yourself.html",
             "incoming_links": [
                 "/books-that-defined-me",
-                "/depression"
+                "/depression",
+                "/random-idea"
             ],
             "last_modified": "2025-07-12T16:50:19-07:00",
             "markdown_path": "_posts/2015-12-23-getting-to-yes-with-yourself.md",
@@ -2617,14 +2706,15 @@
             "url": "/getting-to-yes-with-yourself"
         },
         "/goals": {
-            "description": "Goal are critcal, there are multiple goal systems and they have consequences. They are mechansims to deliver without micro managements.\n\n",
+            "description": "Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.\n\n",
             "doc_size": 20000,
             "file_path": "_site/goals.html",
             "incoming_links": [
                 "/4dx",
-                "/parkinson"
+                "/parkinson",
+                "/random-idea"
             ],
-            "last_modified": "2025-02-17T12:18:29-08:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/goals.md",
             "outgoing_links": [
                 "/4dx",
@@ -2654,7 +2744,8 @@
                 "/ai-art",
                 "/ai-journal",
                 "/ml",
-                "/nlp"
+                "/nlp",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/gpt2.md",
@@ -2695,11 +2786,11 @@
             "doc_size": 12000,
             "file_path": "_site/grammerly.html",
             "incoming_links": [],
-            "last_modified": "2023-01-23T21:23:39+00:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_td/grammerly.md",
             "outgoing_links": [],
             "redirect_url": "",
-            "title": "Grammerly",
+            "title": "Grammarly",
             "url": "/grammerly"
         },
         "/graph": {
@@ -2720,7 +2811,8 @@
             "file_path": "_site/grateful.html",
             "incoming_links": [
                 "/appreciate",
-                "/process-journal"
+                "/process-journal",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/grateful2.md",
@@ -2753,9 +2845,10 @@
                 "/first-things-first",
                 "/frog",
                 "/parkinson",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/random-idea"
             ],
-            "last_modified": "2025-03-11T06:47:05-07:00",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/gtd.md",
             "outgoing_links": [
                 "/anxiety",
@@ -2790,11 +2883,12 @@
                 "/hobby",
                 "/joy",
                 "/mood",
+                "/random-idea",
                 "/siy",
                 "/time-off-2024-08",
                 "/timeoff"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2017-04-12-happy.md",
             "outgoing_links": [
                 "/addiction",
@@ -2830,6 +2924,7 @@
             "file_path": "_site/hobby.html",
             "incoming_links": [
                 "/operating-manual",
+                "/random-idea",
                 "/retire"
             ],
             "last_modified": "2022-05-09T07:53:36-07:00",
@@ -2851,7 +2946,8 @@
             "file_path": "_site/human-meetings.html",
             "incoming_links": [
                 "/being-a-great-manager",
-                "/job"
+                "/job",
+                "/random-idea"
             ],
             "last_modified": "2022-03-20T09:40:39-07:00",
             "markdown_path": "_d/human-meeting.md",
@@ -2866,7 +2962,8 @@
             "file_path": "_site/humans-are-underrated.html",
             "incoming_links": [
                 "/books-that-defined-me",
-                "/chop"
+                "/chop",
+                "/random-idea"
             ],
             "last_modified": "2025-03-01T18:25:15-08:00",
             "markdown_path": "_posts/2015-12-12-humans-are-underrated.md",
@@ -2896,7 +2993,8 @@
                 "/depression",
                 "/gtd",
                 "/happy",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/random-idea"
             ],
             "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/idle-loop.md",
@@ -2955,6 +3053,7 @@
                 "/90days",
                 "/affirmations",
                 "/depression",
+                "/random-idea",
                 "/work-satisfaction"
             ],
             "last_modified": "2024-09-14T14:16:00-07:00",
@@ -2976,9 +3075,10 @@
                 "/depression",
                 "/essentialism",
                 "/physical-health",
+                "/random-idea",
                 "/sleep"
             ],
-            "last_modified": "2024-06-01T08:25:50-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/2016-2-11-Insomnia.md",
             "outgoing_links": [
                 "/sleep"
@@ -2992,7 +3092,8 @@
             "doc_size": 15000,
             "file_path": "_site/interviewsarehard.html",
             "incoming_links": [
-                "/job-hunt-stress"
+                "/job-hunt-stress",
+                "/random-idea"
             ],
             "last_modified": "2023-12-17T18:53:39+00:00",
             "markdown_path": "_posts/2016-11-26-interviewsarehard.markdown",
@@ -3019,6 +3120,7 @@
             "file_path": "_site/irl.html",
             "incoming_links": [
                 "/physical-health",
+                "/random-idea",
                 "/td/ios-nomad"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -3044,7 +3146,8 @@
                 "/eulogy",
                 "/job-hunt-stress",
                 "/manager-book",
-                "/manager-book-appendix"
+                "/manager-book-appendix",
+                "/random-idea"
             ],
             "last_modified": "2024-12-02T16:30:31-08:00",
             "markdown_path": "_posts/2018-06-7-my-perfect-job.md",
@@ -3070,6 +3173,7 @@
                 "/bmy",
                 "/comp",
                 "/manager-book",
+                "/random-idea",
                 "/work-satisfaction"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -3101,9 +3205,10 @@
                 "/hobby",
                 "/magic",
                 "/mood",
+                "/random-idea",
                 "/sublime"
             ],
-            "last_modified": "2025-05-05T07:04:20-07:00",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
@@ -3128,11 +3233,12 @@
                 "/eulogy",
                 "/igor-gap-year",
                 "/physical-health",
+                "/random-idea",
                 "/timeoff",
                 "/untangled",
                 "/y24"
             ],
-            "last_modified": "2025-05-18T15:54:44-07:00",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/bells.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3147,6 +3253,7 @@
                 "/42",
                 "/chasing-daylight",
                 "/death",
+                "/random-idea",
                 "/retire",
                 "/y24",
                 "/y25"
@@ -3166,7 +3273,7 @@
             "doc_size": 47000,
             "file_path": "_site/laws-of-power.html",
             "incoming_links": [],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/48-laws-of-power.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -3211,7 +3318,8 @@
             "doc_size": 18000,
             "file_path": "_site/like-switch.html",
             "incoming_links": [
-                "/joy"
+                "/joy",
+                "/random-idea"
             ],
             "last_modified": "2025-02-09T05:05:40-08:00",
             "markdown_path": "_d/the-like-switch.md",
@@ -3248,6 +3356,7 @@
                 "/idle",
                 "/joy",
                 "/operating-manual",
+                "/random-idea",
                 "/timeoff",
                 "/touching"
             ],
@@ -3270,6 +3379,7 @@
                 "/coaching",
                 "/job",
                 "/manager-book-appendix",
+                "/random-idea",
                 "/retire",
                 "/software-leadership-roles",
                 "/tribe",
@@ -3277,25 +3387,24 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-07-20T14:13:52.243606",
+            "last_modified": "2025-07-20T14:13:54-07:00",
             "markdown_path": "_posts/2016-03-03-the-manager-book-2.md",
             "outgoing_links": [
-                "/7h-c2",
-                "/90-days",
+                "/22",
                 "/90days",
                 "/being-a-great-manager",
-                "/books",
-                "/coach",
+                "/books-that-defined-me",
                 "/coaching",
                 "/coe",
                 "/comp",
-                "/decide",
+                "/d/habits",
+                "/decisive",
                 "/dip",
-                "/dsat",
-                "/habits",
+                "/end-in-mind",
                 "/job",
                 "/job-hunt-stress",
                 "/manager-book-appendix",
+                "/ml",
                 "/moments-at-work",
                 "/overload",
                 "/pride",
@@ -3306,11 +3415,10 @@
                 "/static/idvorkin-linked-in-feedback-lastest.pdf",
                 "/strategy",
                 "/td/cloud-first-applications",
-                "/td/machine-learning",
                 "/testing",
-                "/twentytwo",
                 "/what-makes-a-leader",
-                "/write"
+                "/work-satisfaction",
+                "/writing"
             ],
             "redirect_url": "",
             "title": "How to EM: Be the manager everyone wants",
@@ -3318,13 +3426,14 @@
         },
         "/manager-book-appendix": {
             "description": "A hodgepodge of additional resources for the manager book.\n\n",
-            "doc_size": 33000,
+            "doc_size": 34000,
             "file_path": "_site/manager-book-appendix.html",
             "incoming_links": [
                 "/manager-book",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
-            "last_modified": "2025-05-14T08:16:08-07:00",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/manager-book-appendix.md",
             "outgoing_links": [
                 "/amazon",
@@ -3345,7 +3454,8 @@
             "file_path": "_site/mania.html",
             "incoming_links": [
                 "/energy",
-                "/mood"
+                "/mood",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/mania.md",
@@ -3387,6 +3497,7 @@
                 "/physical-pain",
                 "/psychic-shadows",
                 "/psychic-weight",
+                "/random-idea",
                 "/regrets",
                 "/shame",
                 "/work-satisfaction",
@@ -3438,6 +3549,7 @@
             "incoming_links": [
                 "/addiction",
                 "/d/time-off-2022-11",
+                "/random-idea",
                 "/timeoff",
                 "/work-satisfaction"
             ],
@@ -3464,9 +3576,10 @@
                 "/idle",
                 "/psychic-shadows",
                 "/psychic-weight",
+                "/random-idea",
                 "/siy"
             ],
-            "last_modified": "2020-12-22T17:13:28+00:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/2015-11-11-mind-monsters.md",
             "outgoing_links": [
                 "/mental-pain",
@@ -3479,14 +3592,16 @@
             "url": "/mind-monsters"
         },
         "/ml": {
-            "description": "It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).\n\n",
+            "description": "It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can’t articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a banana in your stirfry).\n\n",
             "doc_size": 50000,
             "file_path": "_site/ml.html",
             "incoming_links": [
                 "/ai",
+                "/manager-book",
+                "/random-idea",
                 "/td/stats"
             ],
-            "last_modified": "2025-07-12T16:50:19-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_td/machine-learning.md",
             "outgoing_links": [
                 "/ai-testing",
@@ -3567,6 +3682,7 @@
                 "/igor-gap-year",
                 "/operating-manual",
                 "/parkinson",
+                "/random-idea",
                 "/retire"
             ],
             "last_modified": "2025-07-12T16:50:19-07:00",
@@ -3586,6 +3702,7 @@
             "incoming_links": [
                 "/energy",
                 "/happy",
+                "/random-idea",
                 "/time-off-2024-08"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -3609,7 +3726,8 @@
             "file_path": "_site/mortality-software.html",
             "incoming_links": [
                 "/balance",
-                "/goals"
+                "/goals",
+                "/random-idea"
             ],
             "last_modified": "2025-05-14T08:25:58-07:00",
             "markdown_path": "_d/2018-04-29-mortality-software.md",
@@ -3631,6 +3749,7 @@
                 "/getting-to-yes-with-yourself",
                 "/happy",
                 "/productive",
+                "/random-idea",
                 "/regrets",
                 "/sell",
                 "/synergize",
@@ -3653,6 +3772,7 @@
             "doc_size": 16000,
             "file_path": "_site/neovim.html",
             "incoming_links": [
+                "/random-idea",
                 "/vim"
             ],
             "last_modified": "2023-12-17T18:55:54+00:00",
@@ -3671,6 +3791,7 @@
                 "/operating-manual",
                 "/physical-health",
                 "/physical-pain",
+                "/random-idea",
                 "/recent"
             ],
             "last_modified": "2025-02-09T09:50:07-08:00",
@@ -3686,6 +3807,7 @@
             "file_path": "_site/nlp.html",
             "incoming_links": [
                 "/ml",
+                "/random-idea",
                 "/tools"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -3702,7 +3824,8 @@
             "doc_size": 41000,
             "file_path": "_site/nurture.html",
             "incoming_links": [
-                "/gpt"
+                "/gpt",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/nurture.md",
@@ -3718,7 +3841,8 @@
             "incoming_links": [
                 "/energy",
                 "/energy-abundance",
-                "/life-as-business"
+                "/life-as-business",
+                "/random-idea"
             ],
             "last_modified": "2025-06-02T06:43:04-07:00",
             "markdown_path": "_d/operating-manual-2.md",
@@ -3762,6 +3886,7 @@
             "doc_size": 21000,
             "file_path": "_site/osx.html",
             "incoming_links": [
+                "/random-idea",
                 "/tools"
             ],
             "last_modified": "2025-05-29T08:39:15-07:00",
@@ -3774,14 +3899,15 @@
             "url": "/osx"
         },
         "/overload": {
-            "description": "We all get to a point where our boss (*) gives us more work than we can handle. This spikes our anxiety and we’ll end up in one of three conversations: 1) I’ve got too much on plate, 2) I can’t this done; 3) I quit. Which do you think your boss would rather have?\n\n",
+            "description": "We all get to a point where our boss (*) gives us more work than we can handle. This spikes our anxiety and we’ll end up in one of three conversations: 1) I’ve got too much on my plate, 2) I can’t get this done; 3) I quit. Which do you think your boss would rather have?\n\n",
             "doc_size": 15000,
             "file_path": "_site/overload.html",
             "incoming_links": [
                 "/manager-book",
+                "/random-idea",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-03-22T15:39:44+00:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/handling-overwork.md",
             "outgoing_links": [
                 "/anxiety",
@@ -3798,7 +3924,8 @@
             "file_path": "_site/pandas.html",
             "incoming_links": [
                 "/d/time-off-2020-12",
-                "/ml"
+                "/ml",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_td/pandas-tutorial.md",
@@ -3816,6 +3943,7 @@
                 "/manager-book-appendix",
                 "/money",
                 "/operating-manual",
+                "/random-idea",
                 "/timeoff"
             ],
             "last_modified": "2025-03-11T06:05:27-07:00",
@@ -3841,7 +3969,8 @@
             "file_path": "_site/partner-trouble.html",
             "incoming_links": [
                 "/gap-year",
-                "/money"
+                "/money",
+                "/random-idea"
             ],
             "last_modified": "2025-06-17T07:13:07-07:00",
             "markdown_path": "_d/partner-trouble.md",
@@ -3866,11 +3995,12 @@
                 "/igor-gap-year",
                 "/irl",
                 "/operating-manual",
+                "/random-idea",
                 "/retire",
                 "/sharpen-the-saw",
                 "/tech-health-toys"
             ],
-            "last_modified": "2025-03-31T18:31:58-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2017-10-07-physical-health.md",
             "outgoing_links": [
                 "/d/habits",
@@ -3893,7 +4023,8 @@
             "doc_size": 22000,
             "file_path": "_site/physical-pain.html",
             "incoming_links": [
-                "/mental-pain"
+                "/mental-pain",
+                "/random-idea"
             ],
             "last_modified": "2025-02-01T05:52:57-08:00",
             "markdown_path": "_d/physical-pain.md",
@@ -3911,7 +4042,8 @@
             "doc_size": 16000,
             "file_path": "_site/podcast.html",
             "incoming_links": [
-                "/enable"
+                "/enable",
+                "/random-idea"
             ],
             "last_modified": "2024-11-16T11:13:07-08:00",
             "markdown_path": "_d/podcast.md",
@@ -3932,7 +4064,8 @@
                 "/manager-book",
                 "/mental-pain",
                 "/mind-monsters",
-                "/psychic-weight"
+                "/psychic-weight",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_posts/2018-01-01-fuck-pride.md",
@@ -3950,6 +4083,7 @@
             "incoming_links": [
                 "/chop",
                 "/operating-manual",
+                "/random-idea",
                 "/y24",
                 "/y25"
             ],
@@ -3972,7 +4106,8 @@
             "doc_size": 35000,
             "file_path": "_site/product.html",
             "incoming_links": [
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "last_modified": "2024-10-27T17:27:54-07:00",
             "markdown_path": "_d/product.md",
@@ -3988,7 +4123,8 @@
             "incoming_links": [
                 "/balance",
                 "/d/time-off-2022-02",
-                "/energy"
+                "/energy",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/productive2.md",
@@ -4015,7 +4151,8 @@
             "incoming_links": [
                 "/coaching",
                 "/first-understand",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "last_modified": "2025-05-25T10:09:41-07:00",
             "markdown_path": "_d/prompt.md",
@@ -4062,7 +4199,8 @@
                 "/gtd",
                 "/mind-at-work",
                 "/process-journal",
-                "/psychic-shadows"
+                "/psychic-shadows",
+                "/random-idea"
             ],
             "last_modified": "2025-07-18T07:57:44-07:00",
             "markdown_path": "_d/psychic-weight.md",
@@ -4100,17 +4238,230 @@
             "url": "/quip"
         },
         "/random-idea": {
-            "description": "There are lots of rough ideas I have that are not yet categorized, or good enough to be a thought. This will be a\nplace to store them.\n\n",
-            "doc_size": 27000,
+            "description": "Igor's Blog",
+            "doc_size": 2909000,
             "file_path": "_site/random-idea.html",
             "incoming_links": [],
-            "last_modified": "2024-10-05T21:35:59-07:00",
-            "markdown_path": "_d/2010-2-15-2016-Misc-Uncategorized.md",
+            "last_modified": "",
+            "markdown_path": "blog.allcontent.md",
             "outgoing_links": [
+                "/22",
+                "/40yo",
+                "/42",
+                "/4dx",
+                "/7-habits",
+                "/7h-concepts",
+                "/90days",
+                "/Human-Meetings",
+                "/Immutable-Laws-Of-Hard",
+                "/The-Genesis-Node",
+                "/_d/addiction.md",
+                "/activation",
+                "/adblocker-trojan",
+                "/addiction",
+                "/affirmations",
+                "/ai",
+                "/ai-art",
+                "/ai-bestie",
+                "/ai-bm",
+                "/ai-developer",
+                "/ai-image",
+                "/ai-journal",
+                "/ai-paper",
+                "/ai-security",
+                "/ai-testing",
+                "/amazon",
+                "/anger",
+                "/anxiety",
+                "/anxiety-management",
+                "/appreciate",
+                "/balance",
+                "/balloon",
+                "/be-proactive",
+                "/being-a-great-manager",
+                "/bike",
+                "/blueprint",
+                "/bmy",
+                "/books-that-defined-me",
+                "/brompton-toys",
+                "/brython",
+                "/build-bubble-bike",
+                "/cache",
+                "/caring",
+                "/chapters",
+                "/chasing-daylight",
+                "/checklist",
+                "/chop",
+                "/chow",
+                "/class-act",
+                "/coaching",
+                "/coe",
+                "/comp",
+                "/content-audience",
+                "/content-creation",
+                "/covid",
+                "/curious",
+                "/d/2017-11-04-clean-architecture",
+                "/d/habits",
+                "/d/resistance",
+                "/d/time-off-2020-12",
+                "/d/time-off-2021-11",
+                "/d/time-off-2021-12",
+                "/d/time-off-2024-02",
+                "/d/timeoff-07-2022",
+                "/death",
                 "/decisive",
+                "/defi",
+                "/delegate",
+                "/depression",
+                "/design",
+                "/diet",
+                "/dip",
+                "/elder",
+                "/emotional-health",
+                "/enable",
+                "/end-in-mind",
+                "/enemy",
+                "/energy",
+                "/energy-abundance",
+                "/essentialism",
+                "/eulogy",
+                "/facebook",
+                "/first-things-first",
+                "/first-understand",
+                "/frog",
+                "/gap-year",
+                "/genai-talk",
+                "/getting-to-yes-with-yourself",
+                "/goals",
+                "/gpt",
+                "/grateful",
+                "/gtd",
+                "/happy",
+                "/hobby",
+                "/human-meetings",
+                "/humans-are-underrated",
+                "/idle",
+                "/idvorkin/idvorkin-flux-lora-1",
+                "/ig66/587",
+                "/ig66/591",
+                "/ig66/602",
+                "/ig66/621",
+                "/ig66/663",
+                "/ig66/685",
+                "/ig66/687",
+                "/ig66/717",
+                "/ig66/718",
+                "/ig66/732",
+                "/ig66/749",
+                "/insecure",
+                "/insomnia",
+                "/interviewsarehard",
+                "/irl",
+                "/job",
+                "/job-hunt-stress",
+                "/joy",
+                "/kettlebell",
+                "/last-year",
+                "/like-switch",
+                "/magic",
+                "/manager-book",
+                "/manager-book-appendix",
+                "/mania",
+                "/mental-pain",
+                "/mind-at-work",
+                "/mind-monsters",
+                "/ml",
                 "/moments",
                 "/moments-at-work",
-                "/switch"
+                "/money",
+                "/mood",
+                "/mortality-software",
+                "/negotiate",
+                "/neovim",
+                "/new-skills",
+                "/nlp",
+                "/nurture",
+                "/operating-manual",
+                "/osx",
+                "/outsourcing",
+                "/overload",
+                "/pandas",
+                "/parkinson",
+                "/partner-trouble",
+                "/physical-health",
+                "/physical-pain",
+                "/podcast",
+                "/pride",
+                "/process-jounral",
+                "/process-journal",
+                "/product",
+                "/productive",
+                "/prompts",
+                "/psychic-weight",
+                "/rapport",
+                "/recommend",
+                "/regrets",
+                "/remote-work",
+                "/retire",
+                "/screencast",
+                "/shame",
+                "/sharpen-the-saw",
+                "/siy",
+                "/sleep",
+                "/sleight-of-mouth",
+                "/smilebox",
+                "/snjb",
+                "/software-leadership-roles",
+                "/static/StrengthFinderIgor.pdf",
+                "/static/idvorkin-linked-in-feedback-lastest.pdf",
+                "/static/igor-enneagram.pdf",
+                "/static/roots_of_lisp.pdf",
+                "/strategy",
+                "/strengths",
+                "/sublime",
+                "/sustainable-work",
+                "/switch",
+                "/synergize",
+                "/system-design",
+                "/td/advertising",
+                "/td/better-security-design",
+                "/td/cloud-first-applications",
+                "/td/data-systems",
+                "/td/design",
+                "/td/ios",
+                "/td/ios-nomad",
+                "/td/slow_zsh",
+                "/td/stats",
+                "/td/visual-vocabulary",
+                "/tech-health-toys",
+                "/terzepatide",
+                "/tesla",
+                "/testing",
+                "/time-off-2020-03",
+                "/time-off-2024-08",
+                "/timeoff",
+                "/todo_enjoy",
+                "/tony",
+                "/tools",
+                "/touching",
+                "/toysfortots",
+                "/upstream",
+                "/vibe",
+                "/vim",
+                "/vim-for-writing",
+                "/vlc",
+                "/voices",
+                "/warm",
+                "/weeks",
+                "/welcome-to-holland",
+                "/what-makes-a-leader",
+                "/win-win",
+                "/work-satisfaction",
+                "/write-book",
+                "/writing",
+                "/y24",
+                "/y25"
             ],
             "redirect_url": "",
             "title": "random un categorized notes",
@@ -4121,7 +4472,8 @@
             "doc_size": 33000,
             "file_path": "_site/rapport.html",
             "incoming_links": [
-                "/gpt"
+                "/gpt",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/rapport.md",
@@ -4153,7 +4505,8 @@
             "incoming_links": [
                 "/ai",
                 "/d/time-off-2022-07",
-                "/ml"
+                "/ml",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_td/recommender.md",
@@ -4180,7 +4533,8 @@
             "file_path": "_site/regrets.html",
             "incoming_links": [
                 "/emotions",
-                "/mood"
+                "/mood",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/regrets.md",
@@ -4200,7 +4554,8 @@
             "doc_size": 24000,
             "file_path": "_site/remote-work.html",
             "incoming_links": [
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/remotework.md",
@@ -4216,7 +4571,8 @@
             "incoming_links": [
                 "/42",
                 "/gap-year",
-                "/igor-gap-year"
+                "/igor-gap-year",
+                "/random-idea"
             ],
             "last_modified": "2025-06-02T07:20:36-07:00",
             "markdown_path": "_d/retire.md",
@@ -4282,7 +4638,8 @@
             "file_path": "_site/screencast.html",
             "incoming_links": [
                 "/content-creation",
-                "/osx"
+                "/osx",
+                "/random-idea"
             ],
             "last_modified": "2025-01-04T12:24:44-08:00",
             "markdown_path": "_td/screencast.md",
@@ -4330,6 +4687,7 @@
                 "/emotions",
                 "/insecure",
                 "/psychic-weight",
+                "/random-idea",
                 "/work-satisfaction"
             ],
             "last_modified": "2024-03-16T04:40:20-07:00",
@@ -4349,7 +4707,8 @@
             "incoming_links": [
                 "/7-habits",
                 "/emotional-health",
-                "/physical-health"
+                "/physical-health",
+                "/random-idea"
             ],
             "last_modified": "2021-10-09T10:06:43-07:00",
             "markdown_path": "_d/7h-c7.md",
@@ -4400,6 +4759,7 @@
                 "/mind-monsters",
                 "/operating-manual",
                 "/psychic-weight",
+                "/random-idea",
                 "/sharpen-the-saw",
                 "/timeoff"
             ],
@@ -4427,7 +4787,8 @@
             "incoming_links": [
                 "/energy",
                 "/insomnia",
-                "/physical-health"
+                "/physical-health",
+                "/random-idea"
             ],
             "last_modified": "2025-02-01T14:00:48-08:00",
             "markdown_path": "_d/sleep.md",
@@ -4452,15 +4813,16 @@
             "url": "/sleeping-bag-sacrifies"
         },
         "/sleight-of-mouth": {
-            "description": "Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a ‘problem frame’ to a ‘desired outcome frame’ , a ‘failure frame’, to a ‘feedback frame’ and an ‘impossible frame ‘ to an ‘as if’ frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you’ve given it a name, see how perceive it, and become aware of it.\n\n",
+            "description": "Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a ‘problem frame’ to a ‘desired outcome frame’ , a ‘failure frame’, to a ‘feedback frame’ and an ‘impossible frame ‘ to an ‘as if’ frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you’ve given it a name, see how you perceive it, and become aware of it.\n\n",
             "doc_size": 26000,
             "file_path": "_site/sleight-of-mouth.html",
             "incoming_links": [
                 "/7h-concepts",
                 "/d/time-off-2022-02",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
-            "last_modified": "2024-12-28T07:13:50-08:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/2016-3-12-sleight-of-mouth.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4484,7 +4846,8 @@
             "doc_size": 19000,
             "file_path": "_site/smilebox.html",
             "incoming_links": [
-                "/joy"
+                "/joy",
+                "/random-idea"
             ],
             "last_modified": "2023-02-20T13:23:02-08:00",
             "markdown_path": "_td/smilebox.md",
@@ -4498,7 +4861,8 @@
             "doc_size": 13000,
             "file_path": "_site/snjb.html",
             "incoming_links": [
-                "/d/time-off-2021-11"
+                "/d/time-off-2021-11",
+                "/random-idea"
             ],
             "last_modified": "2021-11-25T22:54:03-08:00",
             "markdown_path": "_d/snjb_.md",
@@ -4508,14 +4872,15 @@
             "url": "/snjb"
         },
         "/software-leadership-roles": {
-            "description": "The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of the difference I’ve found is inlined Quora. In this classification I like to run a team small enough that I can be the engineering manager and step in as the software architect as required.\n\n",
+            "description": "The line between a technical lead and architect (and product manager and engineering manager) is fuzzy and subjective. The best articulation of the difference I’ve found is inline from Quora. In this classification I like to run a team small enough that I can be the engineering manager and step in as the software architect as required.\n\n",
             "doc_size": 17000,
             "file_path": "_site/software-leadership-roles.html",
             "incoming_links": [
                 "/job",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
-            "last_modified": "2021-08-15T21:21:33-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_posts/2018-01-14-software-leadership-roles.md",
             "outgoing_links": [
                 "/manager-book"
@@ -4531,7 +4896,8 @@
             "incoming_links": [
                 "/energy-abundance",
                 "/life-as-business",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "last_modified": "2025-02-01T18:47:48-08:00",
             "markdown_path": "_d/2015-11-18-what-is-strategy.md",
@@ -4545,7 +4911,8 @@
             "doc_size": 20000,
             "file_path": "_site/strengths.html",
             "incoming_links": [
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "last_modified": "2023-12-17T18:53:39+00:00",
             "markdown_path": "_posts/2018-05-25-strength-finder.md",
@@ -4578,6 +4945,7 @@
                 "/d/time-off-2024-02",
                 "/emotional-health",
                 "/emotions",
+                "/random-idea",
                 "/siy"
             ],
             "last_modified": "2024-05-22T16:40:30-07:00",
@@ -4613,6 +4981,7 @@
                 "/being-a-great-manager",
                 "/depression",
                 "/overload",
+                "/random-idea",
                 "/regrets",
                 "/retire",
                 "/work-satisfaction"
@@ -4651,7 +5020,8 @@
             "doc_size": 25000,
             "file_path": "_site/synergize.html",
             "incoming_links": [
-                "/7-habits"
+                "/7-habits",
+                "/random-idea"
             ],
             "last_modified": "2025-03-07T11:21:07-08:00",
             "markdown_path": "_d/7h-c6.md",
@@ -4669,9 +5039,10 @@
             "doc_size": 23000,
             "file_path": "_site/system-design.html",
             "incoming_links": [
-                "/job-hunt-stress"
+                "/job-hunt-stress",
+                "/random-idea"
             ],
-            "last_modified": "2025-07-12T16:50:19-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_td/system-design.md",
             "outgoing_links": [
                 "/design",
@@ -4699,7 +5070,9 @@
             "description": "Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.\n\n",
             "doc_size": 25000,
             "file_path": "_site/td/advertising.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_td/advertising.md",
             "outgoing_links": [],
@@ -4736,6 +5109,7 @@
             "doc_size": 24000,
             "file_path": "_site/td/better-security-design.html",
             "incoming_links": [
+                "/random-idea",
                 "/system-design"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -4753,9 +5127,10 @@
                 "/amazon",
                 "/design",
                 "/manager-book",
+                "/random-idea",
                 "/system-design"
             ],
-            "last_modified": "2025-07-12T16:50:19-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_td/cloud-first-applications.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4769,9 +5144,10 @@
             "incoming_links": [
                 "/amazon",
                 "/chow",
+                "/random-idea",
                 "/system-design"
             ],
-            "last_modified": "2025-02-08T05:47:58-08:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_td/data-systems.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -4819,6 +5195,7 @@
             "doc_size": 19000,
             "file_path": "_site/td/ios.html",
             "incoming_links": [
+                "/random-idea",
                 "/tools",
                 "/writing"
             ],
@@ -4834,6 +5211,7 @@
             "doc_size": 24000,
             "file_path": "_site/td/ios-nomad.html",
             "incoming_links": [
+                "/random-idea",
                 "/tools",
                 "/writing"
             ],
@@ -4911,6 +5289,7 @@
             "doc_size": 18000,
             "file_path": "_site/td/slow_zsh.html",
             "incoming_links": [
+                "/random-idea",
                 "/time-off-2024-08"
             ],
             "last_modified": "2024-08-03T07:33:40-07:00",
@@ -4936,7 +5315,9 @@
             "description": "Statistics is a tool which lets us summarize data, and make inferences from it.\n\n",
             "doc_size": 20000,
             "file_path": "_site/td/stats.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_td/stats.md",
             "outgoing_links": [
@@ -4987,6 +5368,7 @@
             "doc_size": 13000,
             "file_path": "_site/td/visual-vocabulary.html",
             "incoming_links": [
+                "/random-idea",
                 "/viz"
             ],
             "last_modified": "2020-04-11T16:32:11+00:00",
@@ -5014,7 +5396,8 @@
             "file_path": "_site/tech-health-toys.html",
             "incoming_links": [
                 "/d/2016-02-03-positive-computing-survey",
-                "/physical-health"
+                "/physical-health",
+                "/random-idea"
             ],
             "last_modified": "2020-02-15T17:30:47+00:00",
             "markdown_path": "_posts/2017-10-06-tech-health-toys.md",
@@ -5049,6 +5432,7 @@
                 "/diet",
                 "/eulogy",
                 "/physical-health",
+                "/random-idea",
                 "/voices"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -5067,7 +5451,8 @@
                 "/eulogy",
                 "/irl",
                 "/mania",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "last_modified": "2024-11-28T13:20:09-08:00",
             "markdown_path": "_d/tesla.md",
@@ -5083,7 +5468,8 @@
             "incoming_links": [
                 "/chop",
                 "/design",
-                "/manager-book"
+                "/manager-book",
+                "/random-idea"
             ],
             "last_modified": "2024-12-31T07:15:11-08:00",
             "markdown_path": "_td/testing.md",
@@ -5112,6 +5498,7 @@
             "doc_size": 28000,
             "file_path": "_site/time-off-2024-08.html",
             "incoming_links": [
+                "/random-idea",
                 "/y24"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -5163,6 +5550,7 @@
                 "/life-as-business",
                 "/mind-at-work",
                 "/parkinson",
+                "/random-idea",
                 "/time-off-2024-08"
             ],
             "last_modified": "2024-12-21T08:18:15-08:00",
@@ -5194,7 +5582,8 @@
             "file_path": "_site/todo_enjoy.html",
             "incoming_links": [
                 "/operating-manual",
-                "/psychic-shadows"
+                "/psychic-shadows",
+                "/random-idea"
             ],
             "last_modified": "2025-05-25T10:09:41-07:00",
             "markdown_path": "_d/enjoy2.md",
@@ -5209,7 +5598,9 @@
             "description": "A collection of tips, tricks and pointers of the various tools i use\n\n",
             "doc_size": 50000,
             "file_path": "_site/tools.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_td/tool.md",
             "outgoing_links": [
@@ -5230,6 +5621,7 @@
                 "/class-act",
                 "/end-in-mind",
                 "/joy",
+                "/random-idea",
                 "/sublime"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -5244,13 +5636,14 @@
         },
         "/toysfortots": {
             "description": "One of the most satisfying (and fun) projects I worked on in my career was giving Alexa customers the ability to donate to charity and then have Amazon match their donations. What is most amazing about this project is we were able to go from zero to announcing our MVP live on Good Morning America in under 4 months which included all sorts of complexities, negotiations, and good luck.\n\n",
-            "doc_size": 16000,
+            "doc_size": 17000,
             "file_path": "_site/toysfortots.html",
             "incoming_links": [
                 "/amazon",
-                "/eulogy"
+                "/eulogy",
+                "/random-idea"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/alexa-charity.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5290,7 +5683,8 @@
             "doc_size": 17000,
             "file_path": "_site/upstream.html",
             "incoming_links": [
-                "/first-things-first"
+                "/first-things-first",
+                "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
             "markdown_path": "_d/upstream.md",
@@ -5305,7 +5699,8 @@
             "file_path": "_site/vibe.html",
             "incoming_links": [
                 "/ai",
-                "/chop"
+                "/chop",
+                "/random-idea"
             ],
             "last_modified": "2025-05-24T09:10:48-07:00",
             "markdown_path": "_d/vibe.md",
@@ -5321,7 +5716,8 @@
             "doc_size": 13000,
             "file_path": "_site/vim.html",
             "incoming_links": [
-                "/enable"
+                "/enable",
+                "/random-idea"
             ],
             "last_modified": "2025-02-08T12:16:42-08:00",
             "markdown_path": "_d/vim_tips.md",
@@ -5338,6 +5734,7 @@
             "file_path": "_site/vim-for-writing.html",
             "incoming_links": [
                 "/enable",
+                "/random-idea",
                 "/writing"
             ],
             "last_modified": "2025-02-08T12:16:42-08:00",
@@ -5354,7 +5751,7 @@
             "incoming_links": [
                 "/writing"
             ],
-            "last_modified": "2025-06-20T09:16:26-07:00",
+            "last_modified": "2025-07-20T19:13:52-07:00",
             "markdown_path": "_d/viz.md",
             "outgoing_links": [
                 "/td/visual-vocabulary"
@@ -5367,7 +5764,9 @@
             "description": "IINA Player Keyboard Shortcuts\n\n",
             "doc_size": 17000,
             "file_path": "_site/vlc.html",
-            "incoming_links": [],
+            "incoming_links": [
+                "/random-idea"
+            ],
             "last_modified": "2025-06-07T09:22:10-07:00",
             "markdown_path": "_d/vlc_player.md",
             "outgoing_links": [],
@@ -5386,7 +5785,8 @@
                 "/emotional-health",
                 "/igor-gap-year",
                 "/mind-monsters",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "last_modified": "2024-04-14T19:24:46-07:00",
             "markdown_path": "_posts/2017-01-01-voices-in-my-head.md",
@@ -5405,7 +5805,8 @@
             "doc_size": 18000,
             "file_path": "_site/warm.html",
             "incoming_links": [
-                "/bike"
+                "/bike",
+                "/random-idea"
             ],
             "last_modified": "2023-02-17T15:52:23+00:00",
             "markdown_path": "_posts/2017-9-29-staying-warm-and-biking.md",
@@ -5419,7 +5820,8 @@
             "doc_size": 4303000,
             "file_path": "_site/weeks.html",
             "incoming_links": [
-                "/balance"
+                "/balance",
+                "/random-idea"
             ],
             "last_modified": "2024-04-09T09:09:21-07:00",
             "markdown_path": "_d/weeks.md",
@@ -5433,7 +5835,8 @@
             "doc_size": 14000,
             "file_path": "_site/welcome-to-holland.html",
             "incoming_links": [
-                "/getting-to-yes-with-yourself"
+                "/getting-to-yes-with-yourself",
+                "/random-idea"
             ],
             "last_modified": "2018-12-25T15:32:00-08:00",
             "markdown_path": "_posts/2015-12-26-welcome-to-holland.md",
@@ -5448,6 +5851,7 @@
             "file_path": "_site/what-makes-a-leader.html",
             "incoming_links": [
                 "/manager-book",
+                "/random-idea",
                 "/siy"
             ],
             "last_modified": "2025-07-12T16:50:19-07:00",
@@ -5477,6 +5881,7 @@
                 "/7-habits",
                 "/curious",
                 "/negotiate",
+                "/random-idea",
                 "/sell",
                 "/synergize",
                 "/voices",
@@ -5496,7 +5901,9 @@
             "doc_size": 27000,
             "file_path": "_site/work-satisfaction.html",
             "incoming_links": [
+                "/manager-book",
                 "/mind-at-work",
+                "/random-idea",
                 "/retire"
             ],
             "last_modified": "2025-06-06T07:26:11-07:00",
@@ -5527,9 +5934,10 @@
             "doc_size": 16000,
             "file_path": "_site/write-book.html",
             "incoming_links": [
+                "/random-idea",
                 "/y24"
             ],
-            "last_modified": "2024-10-05T21:35:59-07:00",
+            "last_modified": "2025-07-20T19:26:41-07:00",
             "markdown_path": "_d/book-writing.md",
             "outgoing_links": [],
             "redirect_url": "",
@@ -5546,8 +5954,10 @@
                 "/amazon",
                 "/chow",
                 "/enable",
+                "/manager-book",
                 "/manager-book-appendix",
-                "/operating-manual"
+                "/operating-manual",
+                "/random-idea"
             ],
             "last_modified": "2025-06-20T09:16:26-07:00",
             "markdown_path": "_d/writing.md",
@@ -5573,7 +5983,8 @@
             "file_path": "_site/y24.html",
             "incoming_links": [
                 "/gap-year",
-                "/igor-gap-year"
+                "/igor-gap-year",
+                "/random-idea"
             ],
             "last_modified": "2025-07-12T16:50:19-07:00",
             "markdown_path": "_d/y2024.md",
@@ -5599,7 +6010,8 @@
             "file_path": "_site/y25.html",
             "incoming_links": [
                 "/gap-year",
-                "/igor-gap-year"
+                "/igor-gap-year",
+                "/random-idea"
             ],
             "last_modified": "2025-06-19T08:16:44-07:00",
             "markdown_path": "_d/y2025.md",

@@ -9,11 +9,11 @@ redirect_from:
   - som
 ---
 
-Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a 'problem frame' to a 'desired outcome frame' , a 'failure frame', to a 'feedback frame' and an 'impossible frame ' to an 'as if' frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you've given it a name, see how perceive it, and become aware of it.
+Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth (SoM) is a series of techniques for changing our models, reality and meanings and thus our experiences. Our mental models are a frame, and we need help going from a 'problem frame' to a 'desired outcome frame' , a 'failure frame', to a 'feedback frame' and an 'impossible frame ' to an 'as if' frame. To experience the power of language, find anything that is invisible to you, and name it. Now as you've given it a name, see how you perceive it, and become aware of it.
 
 The techniques encourage us to:
 
-- 're punctuate' and 'rechunk our perceptions
+- 're-punctuate' and 'rechunk' our perceptions
 - Identify and appreciate different perspectives and alternative models of the world
 - Discover the internal process by which we assess ‘reality', and through which we form and update our beliefs
 - Explore how we build the mental maps by which we form expectations, determine cause, and give meaning to our experiences.
@@ -70,7 +70,7 @@ Frame is how we experience the world. Think about picture frames, it bounds how 
 
 #### Outcome frame instead of Problem frame:
 
-Not I have a problem, but I want this outcome. Outcome from more powerful and action oriented that is.
+Not I have a problem, but I want this outcome. Outcome frame is more powerful and action oriented.
 
 - Outcome frame
 

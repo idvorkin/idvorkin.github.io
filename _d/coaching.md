@@ -73,7 +73,7 @@ Some coaching situations are common, so I have deep dived into them.
 
 ### The 7 goto coaching questions
 
-When folks have questions or appear stuck, that's a great time to provide rapid in the moment coaching. These 7 questions are a great starting point to help coachee build the required insights for solving their own problem:
+When folks have questions or appear stuck, that's a great time to provide rapid in the moment coaching. These 7 questions are a great starting point to help the coachee build the required insights for solving their own problem:
 
 - Open: What's on your mind?
 - Expand: What Else?
@@ -209,8 +209,8 @@ Great question, I have some ideas, but first, how would you tackle this? What el
 - What you say urgent what do you mean?
 - What does done mean?
 - If I could only do one part, what part would you have me do?
-- What do you recommend I take off my plate to get this done?want done?
-- _If you still have to say no_ Make sure you're saying no to task, no to person.
+- What do you recommend I take off my plate to get this done?
+- _If you still have to say no_ Make sure you're saying no to the task, not to the person.
 
 #### Focus feedback on you, not them
 

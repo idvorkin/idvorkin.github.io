@@ -2,10 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(git checkout:*)",
+      "Bash(git stash:*)",
+      "Bash(git commit:*)",
+      "Bash(curl:*)",
+      "Bash(grep:*)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(curl:*)",
-      "Bash(grep:*)"
+      "mcp__omnifocus-enhanced__get_inbox_tasks",
+      "Bash(gh issue create:*)",
+      "Bash(gh pr edit:*)"
     ],
     "deny": []
   }

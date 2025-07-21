@@ -14,7 +14,7 @@ When you're depressed you don't think you've put on a gray veil - seeing the wor
 
 _(Quotes butchered from Andrew Solomon's superb TED talk, as are many parts of this post)_
 
-Unless you've experienced depression, you can't understand it. Even having experienced depression, I doubt you'll have the words to describe, let alone discuss depression. Andrew Solomon's TED talk is gripping, depressing, funny, hopeful, and insightful. If you' have a reason to read this post, you need to watch the video. It's worth the full 30 minutes.
+Unless you've experienced depression, you can't understand it. Even having experienced depression, I doubt you'll have the words to describe, let alone discuss depression. Andrew Solomon's TED talk is gripping, depressing, funny, hopeful, and insightful. If you have a reason to read this post, you need to watch the video. It's worth the full 30 minutes.
 
 {% include youtube.html src="-eBUcBfkVCo" %}
 
