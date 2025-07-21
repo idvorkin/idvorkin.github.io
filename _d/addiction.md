@@ -88,9 +88,9 @@ See midlife notes on from strength to strength.
 
 A few problems of course: 1. You change your definition of others 1. It gets hard and harder as you get into midlife
 
-Far better is to define satisfaction as:
+Far better is to define satisfaction as
 
-1. What you want / what you have
+1.  What you want / what you have
 
 ## Getting Rid of 'em
 
