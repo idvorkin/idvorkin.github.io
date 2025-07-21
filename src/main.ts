@@ -14,6 +14,7 @@ import { initRecentPosts } from "./recent-posts";
 // Import graph but we'll only initialize it from the graph.html page
 import "./graph";
 import { enableHeaderCopyLinks } from "./header-copy-link";
+import { enableImageZoom } from "./image-zoom";
 
 // Type declarations for external libraries
 declare global {
@@ -499,6 +500,9 @@ function load_globals() {
 
   // Initialize header copy links
   enableHeaderCopyLinks();
+
+  // Initialize image zoom functionality
+  enableImageZoom();
 }
 
 export { load_globals, get_link_info, shuffle, random_from_list, append_randomizer_div, enableHeaderCopyLinks };
