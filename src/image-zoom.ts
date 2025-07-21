@@ -10,14 +10,12 @@ declare global {
 }
 
 export function enableImageZoom() {
-  console.log("🖼️ Enabling image zoom functionality");
+  // Skip if running in test environment without DOM
+  if (typeof document === "undefined") {
+    return;
+  }
 
-  // Add visible indicator that function is called
-  const indicator = document.createElement("div");
-  indicator.style.cssText =
-    "position: fixed; top: 10px; right: 10px; background: yellow; padding: 10px; z-index: 9999;";
-  indicator.textContent = "Image zoom initializing...";
-  document.body.appendChild(indicator);
+  console.log("🖼️ Enabling image zoom functionality");
 
   // Wait for GLightbox to be available
   if (typeof window.GLightbox === "undefined") {
@@ -80,8 +78,8 @@ export function enableImageZoom() {
     );
   });
 
-  if (processedCount > 0) {
-    // Initialize or refresh GLightbox
+  // Initialize GLightbox for all .glightbox elements (including any existing ones)
+  try {
     const lightbox = window.GLightbox({
       selector: ".glightbox",
       touchNavigation: true,
@@ -89,17 +87,13 @@ export function enableImageZoom() {
       autoplayVideos: true,
     });
 
-    console.log(`🎉 Image zoom enabled for ${processedCount} images`);
-
-    // Update indicator
-    indicator.textContent = `✅ Image zoom enabled for ${processedCount} images`;
-    indicator.style.background = "#90EE90";
-    setTimeout(() => indicator.remove(), 3000);
-  } else {
-    console.log("ℹ️ No images needed processing");
-    indicator.textContent = "ℹ️ No images needed processing";
-    indicator.style.background = "#FFE4B5";
-    setTimeout(() => indicator.remove(), 3000);
+    if (processedCount > 0) {
+      console.log(`🎉 Image zoom enabled for ${processedCount} images`);
+    } else {
+      console.log("ℹ️ No images needed processing, but GLightbox initialized for existing elements");
+    }
+  } catch (error) {
+    console.error("Error initializing GLightbox:", error);
   }
 }
 

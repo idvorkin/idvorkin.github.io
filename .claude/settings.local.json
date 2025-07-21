@@ -10,7 +10,17 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "mcp__omnifocus-enhanced__get_inbox_tasks",
       "Bash(gh issue create:*)",
-      "Bash(gh pr edit:*)"
+      "Bash(gh pr edit:*)",
+      "Bash(gh pr list:*)",
+      "Bash(gh pr view:*)",
+      "Bash(git push:*)",
+      "Bash(just js-build:*)",
+      "Bash(just js-validate:*)",
+      "Bash(npx playwright test:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(git add:*)",
+      "Bash(gh pr create:*)"
     ],
     "deny": []
   }
