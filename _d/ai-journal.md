@@ -124,6 +124,39 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 
 ## Diary
 
+### 2025-07-21
+
+#### The Great Typo Fix Adventure: A Tale of AI, Automation, and Unexpected Consequences
+
+Today marked an interesting milestone in AI-assisted development. We asked Claude Code to fix typos across the entire blog, which led to [PR #54](https://github.com/idvorkin/idvorkin.github.io/pull/54) - a seemingly simple task that turned into a perfect case study of both the power and pitfalls of AI automation.
+
+**What Was Supposed to Happen:**
+
+- Claude Code would scan through `_d`, `_posts`, and `_td` directories
+- Fix only typos (spelling, grammar, technical terms)
+- Create a clean PR with "no functional changes"
+
+**What Actually Happened:**
+Claude Code did fix 772 lines of legitimate typos (critcal→critical, mechansims→mechanisms, Kubertnetes→Kubernetes, etc.), but it also made several semantic errors that were caught by Cursor's automated review bot:
+
+![Cursor bot flagging satisfaction formula semantic error - showing the formula was incorrectly reversed from "What you want / what you have" to "What you have / what you want", fundamentally changing the meaning of satisfaction calculation](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_195813.webp)
+
+**The Semantic Error:**
+Most notably, Claude accidentally reversed the satisfaction formula from `satisfaction = what you want / what you have` to `satisfaction = what you have / what you want`. This completely inverted the meaning - the original correctly shows satisfaction decreasing as wants increase, while the reversed version counterintuitively suggests satisfaction increases when wants exceed possessions.
+
+**The Self-Correction:**
+The beautiful part? Claude Code automatically detected and fixed its own error! After Cursor bot flagged the issue, Claude recognized the problem and responded:
+
+![Claude's response acknowledging the semantic error and confirming the revert - "You're absolutely right - this was a semantic change, not a typo. I've reverted it in commit b4c2e0b to keep the original formula 'What you want / what you have'"](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_195915.webp)
+
+Claude then:
+
+1. Recognized the semantic problem
+2. Reverted the satisfaction formula change
+3. Created a clean follow-up commit: "Revert satisfaction formula change"
+
+This story perfectly illustrates the current state of AI development: incredibly powerful for bulk tasks, but still requiring human oversight (or in this case, bot oversight) for semantic accuracy. The fact that Claude could self-correct when the error was identified shows the promise of AI-assisted development workflows.
+
 ### 2025-07-20
 
 - Logs which created this entry: [link](https://github.com/idvorkin/idvorkin.github.io/blob/d5d20a8a0652ca22f72bd96deae328eaca44f0b4/zz-chop-logs/2025-07-20_20-53Z-document-today-s-project-updates.md)
@@ -159,7 +192,7 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - [chop-conventions#2](https://github.com/idvorkin/chop-conventions/pull/2) ✅ "docs(dev-inner-loop): add PR workflow documentation for AI-assisted development"
   - All generated with Claude Code 🤖
 - Updated blog default image from bunny ears to raccoon-imagination-executed-sustainably.webp
-  - Simple one-line change in _includes/head.html
+  - Simple one-line change in \_includes/head.html
   - Created PR with Claude Code assistance
 
 ### 2025-07-13

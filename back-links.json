@@ -710,18 +710,18 @@
         },
         "/ai-journal": {
             "description": "A journal of random explorations in AI. Keeping track of them so I don’t get super lost\n\n",
-            "doc_size": 40000,
+            "doc_size": 43000,
             "file_path": "_site/ai-journal.html",
             "incoming_links": [
                 "/ai",
                 "/random-idea"
             ],
-            "last_modified": "2025-07-20T19:13:52-07:00",
+            "last_modified": "2025-07-20T20:16:58.142372",
             "markdown_path": "_d/ai-journal.md",
             "outgoing_links": [
                 "/ai-art",
                 "/ai-security",
-                "/genai-talk",
+                "/ai-talk",
                 "/gpt",
                 "/idvorkin/idvorkin-flux-lora-1",
                 "/mental-pain"
@@ -2673,7 +2673,6 @@
             "doc_size": 38000,
             "file_path": "_site/genai-talk.html",
             "incoming_links": [
-                "/ai-journal",
                 "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
