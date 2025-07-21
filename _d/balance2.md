@@ -6,7 +6,7 @@ redirect_from:
   - /effectiveness
 ---
 
-I'm good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from [mortality software](/mortality-software). Todo, decide if this post should fork into energy and balance
+I'm good at a lot of things, but balance is really hard for me. Hard for everyone I bet. I think this would be an area that can really benefit from [mortality software](/mortality-software). TODO: decide if this post should fork into energy and balance
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -50,7 +50,7 @@ This post is currently intertwined with productivity and energy, will spend time
 
 If you're lucky, you'll get 4160 weeks (80 years), and [I've already spent 2400 of mine](/weeks).
 
-_Todo inline photo, or auto-generate it._
+_TODO: inline photo, or auto-generate it._
 
 ### You need to decide how you'll spend it
 

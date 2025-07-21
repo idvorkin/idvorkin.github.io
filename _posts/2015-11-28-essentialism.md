@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Essentialisim"
+title: "Essentialism"
 author: "Igor Dvorkin"
 
 redirect_from:
@@ -13,7 +13,7 @@ tags:
 
 Essentialism is deciding what goes on your todo list, not how many things you can cross off. Being an essentialist means you say 'I choose to' not 'I have to', 'Only a few things matter', not 'all things matter' and 'I will do one thing', not 'I will do both'. The essential questions are 'How do I know when I'm done?', 'If I didn't own this, would I buy it?', 'If I didn't have this opportunity what would I do to acquire it?'
 
-This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
+This is a summary of [Essentialism](http://www.amazon.com/gp/product/B00G1J1D28/ref=dp-kindle-redirect?ie=UTF8&btkr=1)
 {%include amazon.html asin="B00G1J1D28" %}
 
 ## Essence
@@ -23,7 +23,7 @@ This is a summary of [Essentialisim](http://www.amazon.com/gp/product/B00G1J1D28
   - How do I know when I'm done?
   - If I didn't own this, would I buy it?
   - If I didn't have this opportunity what would I do to acquire it?
-- Three key differences between essentialisim and most people.
+- Three key differences between essentialism and most people.
   - I choose to **NOT** I have to
   - Only a few things matter **NOT** it's all important
   - I can do any one thing **NOT** I can do both.
@@ -139,7 +139,7 @@ tbd
 - Should I take an opportunity meditation?
   - Write down opportunity
   - 3 minimum criteria the opportunity MUST pass to be considered.
-  - 3 ideal/extreme criteria for opportunity for opportunity to be approved [Examples?].
+  - 3 ideal/extreme criteria for opportunity to be approved [Examples?].
   - 2 of 3 extreme criteria MUST pass
 - Explicit Validated Criteria:
   - Choosing criteria is hard, get reflection/coaching on it.
@@ -167,7 +167,7 @@ tbd
     - But it probably doesn't matter to you.
 - Ambiguity Pattern 2: It's all good (aka. bad)
   - TEAM: Everyone does what's best for them in the moment, but it doesn't add up to anything.
-  - Personal: Do what's best for you in the momember, but it doesn't add up to anything.
+  - Personal: Do what's best for you in the moment, but it doesn't add up to anything.
   - See picture of magnetic by poles.
 - Essential Intent:
 
@@ -186,7 +186,7 @@ tbd
 - Answer the question, do not wordsmith.
   - Stop rearranging words, only answer the questions ...
   - Answer: If we were great at one thing, what would it be?
-  - Answer: If we succeeded, how would our accomplishemnt be described?
+  - Answer: If we succeeded, how would our accomplishment be described?
   - Answer: How do we know if we're done?
 - Living with Intent
   - Apply to all aspects of your life.
@@ -261,7 +261,7 @@ The tricksters:
   - Do something just because you've always done it.
   - Antidote: Apply zero based budgetting
     - Don't re-evaluate from history.
-    - Re-evaluate from history
+    - Re-evaluate from scratch
     - What would you pay for TODAY, not delta from yesterday.
     - Hard, but worth it.
 - Stop making casual commitments
@@ -347,7 +347,7 @@ The tricksters:
   1.  **How do we know we're done?** Crisp, specific statement of done.
   2.  **What is holding that back?**
       - List+Rank: What is keeping me from completing this?
-      - List+Rank: What obstacle, if removed, would make the majority of other obstacles dissapear?
+      - List+Rank: What obstacle, if removed, would make the majority of other obstacles disappear?
       - Focus on top of list.
   3.  **Remove Top Problem**
       - Too high a quality? Change perspective - done is better then perfect.

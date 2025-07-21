@@ -10,7 +10,7 @@ redirect_from:
   - /objective
 ---
 
-Goal are critcal, there are multiple goal systems and they have consequences. They are mechansims to deliver without micro managements.
+Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.
 
 <!-- prettier-ignore-start -->
 
@@ -18,7 +18,7 @@ Goal are critcal, there are multiple goal systems and they have consequences. Th
 
 - [Why goals](#why-goals)
   - [Goals vs Systems](#goals-vs-systems)
-  - [Mission, Vision, Tenants, Goals](#mission-vision-tenants-goals)
+  - [Mission, Vision, Tenets, Goals](#mission-vision-tenants-goals)
   - [What vs How](#what-vs-how)
 - [Goal Measurement](#goal-measurement)
   - [Input vs Output Metrics](#input-vs-output-metrics)
@@ -51,7 +51,7 @@ For a deep dive into goal execution, see [4 Disciplines of Execution](/4dx).
 
 We don't rise to the level of our goals, we fall to the level of our systems. The value of goals is to help us to build and assess our systems.
 
-### Mission, Vision, Tenants, Goals
+### Mission, Vision, Tenets, Goals
 
 ### What vs How
 
@@ -147,7 +147,7 @@ The key is matching your input metrics to activities that will drive your desire
 - Key Results
   - Time bound is implicit in the OKR time range.
 
-Philisophical Difference
+Philosophical Difference
 
 [Example OKRs](https://www.whatmatters.com/get-examples)
 
@@ -168,9 +168,9 @@ Results in extrinsic, not intrinsic motivation.
 ### Metrics Anti-Patterns
 
 - Measuring what is easy vs what is important
-  - Looking for keys under steet light - but keys are over there, why looking here? Cuz that's where we have light
+  - Looking for keys under street light - but keys are over there, why looking here? Cuz that's where we have light
 - Using a metric to flog instead of to learn
-  - Sev's are bad, people won't create SEVs, will use alterate systems
+  - Sev's are bad, people won't create SEVs, will use alternate systems
 - Measuring a proxy, not intent
   - Goal, get rid of foxes. Solution, 5\$ per fox paid; People started breeding foxes to put them down.
 
@@ -186,6 +186,6 @@ Results in extrinsic, not intrinsic motivation.
 
 ### Process and Power
 
-- Process shifts power from the individual in the momennt, to the collective understanding of the organization.
+- Process shifts power from the individual in the moment, to the collective understanding of the organization.
 - This shifts from maximizing upside to minimizing downside
-- Sounds negative, but imagine it for a nuclear missile rockateer. Isn't it great we ensure they the organization's will is resolved. That they have double launch keys, etc
+- Sounds negative, but imagine it for a nuclear missile rocketeer. Isn't it great we ensure they the organization's will is resolved. That they have double launch keys, etc

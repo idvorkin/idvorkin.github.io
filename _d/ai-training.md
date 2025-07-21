@@ -8,7 +8,7 @@ redirect_from:
   - /llm-training
 ---
 
-Generally, I don't deal with training or deeper tech, but might as well keep some onotes on it.
+Generally, I don't deal with training or deeper tech, but might as well keep some notes on it.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -39,8 +39,8 @@ Generally, I don't deal with training or deeper tech, but might as well keep som
   - A [method to compress](https://www.reddit.com/r/LocalLLaMA/comments/1ba55rj/overview_of_gguf_quantization_methods/) the LLM from each node being 16 bits to maybe 4 bits, or less.
   - A [scorecard of quantization compression methods](https://huggingface.co/datasets/christopherthompson81/quant_exploration)
   - This is lossy compression, and you need to eval how well it works? A common approach is to compare the difference of the answers via embeddings.
-- RLHF - Reinformcement learning human feedback
-- RLAIF - Reinformcement learning AI feedback (aka LLM as judge)
+- RLHF - Reinforcement learning human feedback
+- RLAIF - Reinforcement learning AI feedback (aka LLM as judge)
 - DPO - [Direct Preference Optimization](https://arxiv.org/pdf/2305.18290.pdf?ref=hackernoon.com) - I don't quite understand but it seems like the RLHF v.Next with more simplicity. Phase still involves putting a human on the end who is given a choice of A/B and decides which they like better.
 - Alpaca - [A dataset](https://huggingface.co/datasets/yahma/alpaca-cleaned) for human preferences used in the early fine tuning efforts. What's clever is they used GPT-4 to generate the dataset to make it much cheaper. I'm assuming soon there will be even better sets.
 

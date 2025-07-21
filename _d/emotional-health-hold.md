@@ -40,7 +40,7 @@ I picked up, and also execute, these habits semi-randomly today. However, as I d
 
 ### Daily Stream of Consciousness Journaling
 
-**Why?** I'm a ruminator. Both positive and negative thoughts get stuck in a loop in my head, creating cognitive load, and distracting me from the present. By taking a few minutes to "drain" the ideas in my head, many of the ideas will go away, or at least be much less interrupting
+**Why?** I'm a ruminator. Both positive and negative thoughts get stuck in a loop in my head, creating cognitive load, and distracting me from the present. By taking a few minutes to "drain" the ideas in my head, many of the ideas will go away, or at least be much less interrupting.
 
 **How?** Every day I take 10 minutes to write about 750 words as quickly as I can on the ideas sloshing around in my head. I do it on [750words](http://www.750words.com) which is optimized for this practice.
 
@@ -74,7 +74,7 @@ I appreciate the sunrise:
 
 ### Formal 20 minute breathing meditation
 
-**Why?** It's easy for your mind to be lost, to keep it focused on the moment requires, practice lots of practice. Focusing on the breath is that practice of staying focused on the breath and noticing when your attention has wandered and returning it to the breath. Also an excellent practice for discipline, both in doing it daily, and in staying for the entire time.
+**Why?** It's easy for your mind to be lost, to keep it focused on the moment requires practice, lots of practice. Focusing on the breath is that practice of staying focused on the breath and noticing when your attention has wandered and returning it to the breath. Also an excellent practice for discipline, both in doing it daily, and in staying for the entire time.
 
 **How?** Once a day at any time, in any position, I'll set a timer for 20 minutes, close my eyes and focus on the breath. I used to try to sit in a fancy position, in a fancy spot, but that just increased the friction of meditation. It's better to just do it where you stand. More details in [search inside yourself](siy).
 

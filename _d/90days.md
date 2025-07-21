@@ -52,7 +52,7 @@ The first 90 days is a how to manual for starting a new job. While it's focused 
     - [Time to plan execution, or time for collective learning](#time-to-plan-execution-or-time-for-collective-learning)
     - [Avoid land mines](#avoid-land-mines)
 - [6. Set Strategy, Org Chart, Process, Skills](#6-set-strategy-org-chart-process-skills)
-    - [Anti Paterns](#anti-paterns)
+    - [Anti Patterns](#anti-patterns)
     - [Org goals and gaps](#org-goals-and-gaps)
     - [Execute the big changes](#execute-the-big-changes)
     - [Setting strategic direction](#setting-strategic-direction)
@@ -117,7 +117,7 @@ Some feedback I got:
 - "Igor - if your team wanted to work at Amazon, they'd have joined Amazon"
   - E.g. I tended to say "This is a solved problem, At Amazon this is how it worked and was better", I switched to "Do we think this is a problem? Great some things I've seen successful in previous lives where XYZ".
 - "Igor - relax about planning, this will change, and we'll adapt"
-  - E.g. you're expecting the rigor and conseqeunces of the AMZN planning process, that's not how it works here.
+  - E.g. you're expecting the rigor and consequences of the AMZN planning process, that's not how it works here.
 
 ### 2. Accelerate Your Learning
 
@@ -424,7 +424,7 @@ While you are executing, make sure you're not derailed by the following:
 
 The role of the leader as organizational architect. Identifying the root causes of poor performance. Aligning strategy, structure, systems, skills, and culture.
 
-#### Anti Paterns
+#### Anti Patterns
 
 - Making changes for change's sake
 - Not adjusting for the STARS situation.
@@ -566,7 +566,7 @@ Focus on your network
 
 - Need Technical, Cultural , Political Advisors
 - Need insiders, and external observers:
-- Insiders who are trustworthy with no personal agenda, or conflicting interest. Give you strait accurate advice.
+- Insiders who are trustworthy with no personal agenda, or conflicting interest. Give you straight accurate advice.
   External supporters - loyal to you, not to the org. Friends and colleagues
 - In partner groups, to help understand perspective, need to get several views
 

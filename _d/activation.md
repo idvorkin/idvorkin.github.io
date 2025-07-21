@@ -14,7 +14,7 @@ Doing activities requires will power, addictions and procrastination require neg
 
 ### Activation Energy
 
-To begin an activity, we need to stop the current activty, and start the new one.
+To begin an activity, we need to stop the current activity, and start the new one.
 
 <p>
 $$ Activation(New, Current) = $$
@@ -24,7 +24,7 @@ $$ StartingEnergy(NewActivity)$$
 
 ### Starting Energy
 
-The amount of energy required to being an activity. Addictions are negative, habits are neutral, and new positive habits are positive. Things you are avoiding, your mental quick sand, can be very high positive.
+The amount of energy required to begin an activity. Addictions are negative, habits are neutral, and new positive habits are positive. Things you are avoiding, your mental quick sand, can be very high positive.
 
 <canvas id="chart-starting-energy"></canvas>
 
@@ -236,4 +236,4 @@ The calendar is a simple tool to reduce stopping and starting energy. If you thi
 
 Sleep is something we need to activate every day, and has a huge impact on our mental health, so it's important to know how to [optimize for this](/insomnia). First, decrease the starting energy by making consistent bed time a habit, and reducing caffeine intake. Also, don't engage in high stopping energy activities before bed. TikTok will keep you up, but reading a boring book will get you down for the count.
 
-Quoting [Brian Johnson](/blueprint) a good nites sleep is like putting life into "easy mode".
+Quoting [Brian Johnson](/blueprint) a good night's sleep is like putting life into "easy mode".
