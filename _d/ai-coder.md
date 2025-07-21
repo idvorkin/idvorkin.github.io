@@ -190,7 +190,7 @@ Having the chat history for diffs is great. Here's my current workflow:
 2. Make a zsh function to copy the latest chat history to your repo:
    Mine is called [chop-git-latest](https://github.com/idvorkin/settings/blob/7e9e90984dba2650b2cd4ee3a6c9511993ed73f4/shared/zsh_include.sh?plain=1#L708), and copies the latest chat history to zz-chop-logs, and add it to the commit.
 
-   - ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250225_093946.webp)
+   - ![Terminal screenshot showing git workflow with chop-git-latest command that copies AI collaboration session files to staging area and tracks changes for version control](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250225_093946.webp)
 
 3. Run commit, and have the AI write the commit message, but skip commenting on what's in the [zz-chop-logs](https://github.com/idvorkin/nlp/blob/2d804345426c211f34fd6990b61d9d550cbc1cd7/commit.py?plain=1#L23)
 

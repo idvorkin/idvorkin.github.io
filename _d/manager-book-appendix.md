@@ -264,7 +264,7 @@ Specific team members for engine, seat belts, etc
 
 #### Poor motivational choices
 
-![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250514_064737.webp)
+![Comic strip titled "How to Put a Cat in a Box" showing 4 panels: 1. Person trying to put reluctant cat in box, 2. Person trying again with cat escaping, 3. Empty box after giving up, 4. Cat voluntarily sitting in the box - illustrating the paradox that cats prefer boxes when not forced into them](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250514_064737.webp)
 
 ### Great Videos
 

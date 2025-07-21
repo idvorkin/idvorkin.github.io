@@ -168,7 +168,7 @@ Wow - it's been a LONG while before I added journal entries
 
 - Yesterday my friend nerd swiped me with the optimum number of donuts to make problem:
 - I one shotted it (well maybe 10 shot) with gemini coding cli (just like the other ones)
-  ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250713_071230.webp)
+  ![AI agent interaction summary showing performance metrics: 27 tool calls with 96.3% success rate, 94.1% user agreement, 38m 29s total wall time with detailed breakdown of API vs tool usage time and model token consumption using gemini-2.5-pro](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250713_071230.webp)
 - You can see output on: [Donut Profit Calculator App](https://abrupt-carpenter.surge.sh/)
 - And Git Project: [GitHub Repository](https://github.com/idvorkin/donut-profit-calculator)
 

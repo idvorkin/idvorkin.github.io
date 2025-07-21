@@ -31,7 +31,7 @@ This was a marquee feature for Amazon and they put a lot of muscle behind it. He
 {% include youtube.html src="fe3OYc_2H64" %}
 {% include youtube.html src="inD9qdw0KGk?start=11" %}
 
-![](https://github.com/idvorkin/blob/raw/master/tft/shaq.gif)
+![Instructional infographic featuring Shaq showing 4 steps to donate to Happy School Year via Alexa: 1. Say the phrase "Alexa, donate to Happy School Year", 2. Confirm purchase by following prompts on device, 3. Amazon matches donation with school supplies, 4. Slam dunk - Amazon handles backpack and supply distribution](https://github.com/idvorkin/blob/raw/master/tft/shaq.gif)
 
 ## Customer Impact
 

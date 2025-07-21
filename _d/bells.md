@@ -47,7 +47,7 @@ I also wrote an [app](https://github.com/idvorkin/video-edit/blob/3676fd9d827ee8
 
 I'm applying a goal from a book called _Kettlebell Simple and Sinister_.
 
-![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20241214_102150.webp)
+![Cover of "Kettlebell Simple & Sinister Revised & Updated" by Pavel showing a man performing a kettlebell swing exercise - the authoritative guide to fundamental kettlebell movements](https://raw.githubusercontent.com/idvorkin/ipaste/main/20241214_102150.webp)
 
 - 10x10 @ 32 KG Two-Arm Swings (100!) (Achieved November '23), but then regressed due to injury.
 - 10x10 @ 32 KG (50 per arm) One-Arm Swings
