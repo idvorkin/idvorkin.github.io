@@ -24,7 +24,7 @@ _algolia_api_key
 _cypress_api_key
 
 # CHOP conventions directory
-zz-chop-conventions
+# zz-chop-conventions - now tracked in git but excluded from Jekyll build
 
 # Cypress artificats
 cypress/videos
