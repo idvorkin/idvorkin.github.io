@@ -33,7 +33,10 @@
       "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/59)",
       "Bash(git rm:*)",
       "Bash(gh pr comment:*)",
-      "mcp__github__get_pull_request"
+      "mcp__github__get_pull_request",
+      "Bash(gh run list:*)",
+      "mcp__github__search_repositories",
+      "Bash(just:*)"
     ],
     "deny": []
   }
