@@ -101,7 +101,6 @@ exclude:
     ".husky",
     ".vscode",
     "blog.chroma.db",
-    "zz-chop-conventions/*",
     "devdocker",
     "docs",
     "tech_graveyard",

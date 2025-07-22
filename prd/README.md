@@ -54,7 +54,7 @@ When creating new PRDs:
 
 ## Related Documentation
 
-- [Development Conventions](../zz-chop-conventions/dev-inner-loop/)
+- [Development Conventions](~/gits/chop-conventions/dev-inner-loop/)
 - [Build Commands](../justfile)
 - [Testing Strategy](../tests/)
 - [Technical Documentation](../docs/)

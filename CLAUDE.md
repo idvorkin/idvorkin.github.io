@@ -4,8 +4,8 @@
 
 Before starting any work, read and follow the instructions in:
 
-- `zz-chop-conventions/README.md` - Overview of development conventions
-- `zz-chop-conventions/dev-inner-loop/a_readme_first.md` - Core development guidelines
+- `~/gits/chop-conventions/README.md` - Overview of development conventions
+- `~/gits/chop-conventions/dev-inner-loop/a_readme_first.md` - Core development guidelines
 - Follow all instructions in these files, particularly clean-code.md and clean-commits.md
 
 ## Build/Test/Lint Commands
