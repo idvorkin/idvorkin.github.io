@@ -1,8 +1,14 @@
 // One of the imports is goofy
 // @ts-ignore:TS2792
 import { SunburstClickEvent } from "plotly.js";
-import { isNullishCoalesce, isTypeAliasDeclaration } from "../node_modules/typescript/lib/typescript";
+import {
+  isNullishCoalesce,
+  isTypeAliasDeclaration,
+} from "../node_modules/typescript/lib/typescript";
 import { append_randomizer_div, random_from_list, shuffle } from "./index";
+
+// Declare global Plotly
+declare const Plotly: any;
 
 /**
  * Represents a node in a tree structure used for visualization
@@ -23,7 +29,7 @@ export class TreeNode {
   }) {
     this.name = name;
     // Keep it interesting
-    this.children = shuffle(children);
+    this.children = shuffle(children) as [TreeNode];
     this.value = value;
   }
 }
@@ -35,7 +41,7 @@ export class TreeNode {
  */
 export function add_random_prompts(
   categoryToPromptsProvider = category_to_prompts,
-  renderer = render_prompt_for_category,
+  renderer = render_prompt_for_category
 ) {
   const map_category_to_prompts = categoryToPromptsProvider();
   for (const category of map_category_to_prompts.keys()) {
@@ -54,16 +60,18 @@ export function render_prompt_for_category(
   category,
   prompts_for_category,
   jQueryProvider = $,
-  randomizerAppender = append_randomizer_div,
+  randomizerAppender = append_randomizer_div
 ) {
   //print one of the prompts
   const get_random_prompt_html = () =>
     `<span>${random_from_list(
-      prompts_for_category,
+      prompts_for_category
     )}</span><span style="float: right; cursor: pointer;" title="Click for another prompt">🔄</span>`;
 
   // add a place holder for random div.
-  const new_element = jQueryProvider(`<div class="alert alert-primary" role="alert"/>`);
+  const new_element = jQueryProvider(
+    `<div class="alert alert-primary" role="alert"/>`
+  );
   jQueryProvider(category).after(new_element);
   randomizerAppender(new_element, get_random_prompt_html);
 }
@@ -80,7 +88,11 @@ export function category_to_prompts(jQueryProvider = $) {
   let prompts_for_category = [];
   const map_category_to_prompts = new Map();
 
-  for (let node = starting_node; node.length !== 0; node = jQueryProvider(node).next()) {
+  for (
+    let node = starting_node;
+    node.length !== 0;
+    node = jQueryProvider(node).next()
+  ) {
     if (node.prop("tagName") === "H3") {
       // Build prompt map
       map_category_to_prompts.set(current_category, prompts_for_category);
@@ -97,7 +109,9 @@ export function category_to_prompts(jQueryProvider = $) {
       continue;
     }
     // we should now be the first list in the category
-    prompts_for_category = Array.from(jQueryProvider(node).find("li")).map((li) => jQueryProvider(li).text());
+    prompts_for_category = Array.from(jQueryProvider(node).find("li")).map(li =>
+      jQueryProvider(li).text()
+    );
   }
 
   map_category_to_prompts.set(current_category, prompts_for_category);
@@ -137,7 +151,9 @@ export function tree_to_plotly_data_format(root) {
   // parents
   // values
 
-  const names_parent_names = Array.from(breadth_first_walk(root)).map(([n, p]) => [n.name, p?.name]);
+  const names_parent_names = Array.from(
+    breadth_first_walk(root)
+  ).map(([n, p]) => [n.name, p?.name]);
 
   return {
     ids: names_parent_names.map(([n, p]) => n),
@@ -153,7 +169,10 @@ export function tree_to_plotly_data_format(root) {
  */
 export function category_to_prompts_text(mapProvider = category_to_prompts) {
   const map = mapProvider();
-  const list = Array.from(map.entries()).map(([k, v], _index) => [(k as any).text(), v]);
+  const list = Array.from(map.entries()).map(([k, v], _index) => [
+    (k as any).text(),
+    v,
+  ]);
   return new Map(list as any);
 }
 
@@ -167,15 +186,37 @@ export function category_to_prompts_text(mapProvider = category_to_prompts) {
 export function random_prompt_for_label(label, tree_node, map_node_to_prompts) {
   // Find the label in the tree
   // recall bread first search returns a parent as well.
-  const [clicked_node, _parent] = Array.from(breadth_first_walk(tree_node)).find(
-    ([current, _parent]) => current.name === label,
+  const result = Array.from(breadth_first_walk(tree_node)).find(
+    ([current, _parent]) => current.name === label
   );
+
+  if (!result) {
+    return "Click in any box or circle";
+  }
+
+  const [clicked_node, _parent] = result;
 
   // Gather all the prompts for the children of the clicked node.
   const all_prompts = Array.from(breadth_first_walk(clicked_node))
     .map(([node, _parent]) => node) // returns node and parent
-    .filter((node) => map_node_to_prompts.has(node.name))
-    .flatMap((node) => map_node_to_prompts.get(node.name).map((prompt) => `${node.name}: ${prompt}`));
+    .filter(node => {
+      // Check both with and without the link emoji
+      const hasWithoutEmoji = map_node_to_prompts.has(node.name);
+      const hasWithEmoji = map_node_to_prompts.has(`${node.name}🔗`);
+      return hasWithoutEmoji || hasWithEmoji;
+    })
+    .flatMap(node => {
+      // Try to get prompts with and without emoji
+      const prompts =
+        map_node_to_prompts.get(node.name) ||
+        map_node_to_prompts.get(`${node.name}🔗`) ||
+        [];
+      return prompts.map(prompt => `${node.name}: ${prompt}`);
+    });
+
+  if (all_prompts.length === 0) {
+    return "Click in any box or circle";
+  }
 
   return random_from_list(all_prompts);
 }
@@ -193,7 +234,7 @@ export async function add_sunburst(
   random_text_div_id,
   root: TreeNode,
   jQueryProvider = $,
-  plotlyProvider = Plotly,
+  plotlyProvider = Plotly
 ) {
   if (!plotlyProvider) {
     console.error("Plotly is not available");
@@ -222,9 +263,14 @@ export async function add_sunburst(
   };
 
   try {
-    const sunburstPlot = await plotlyProvider.newPlot(plot_element_id, [sunburst_data] as any, sunburst_layout, config);
+    await plotlyProvider.newPlot(
+      plot_element_id,
+      [sunburst_data] as any,
+      sunburst_layout,
+      config
+    );
 
-    const set_random_prompt_text = (text) => {
+    const set_random_prompt_text = text => {
       jQueryProvider(`#${random_text_div_id}`).text(text);
     };
 
@@ -233,17 +279,31 @@ export async function add_sunburst(
       .first()
       .click(() => {
         const label = jQueryProvider("#sunburst text:first").text(); // Hack should use an API to find center text
-        const prompt = random_prompt_for_label(label, root, category_to_prompts_text());
+        const prompt = random_prompt_for_label(
+          label,
+          root,
+          category_to_prompts_text()
+        );
         set_random_prompt_text(prompt);
       });
 
-    sunburstPlot.on("plotly_sunburstclick", (event) => {
-      const label = event.points[0].label;
-      const prompt = random_prompt_for_label(label, root, category_to_prompts_text());
-      set_random_prompt_text(prompt);
-    });
+    // Attach the sunburst click event handler
+    const plotElement = document.getElementById(plot_element_id);
+    if (plotElement && typeof (plotElement as any).on === "function") {
+      (plotElement as any).on("plotly_click", (eventData: any) => {
+        if (eventData?.points?.[0]) {
+          const label = eventData.points[0].label;
+          const prompt = random_prompt_for_label(
+            label,
+            root,
+            category_to_prompts_text()
+          );
+          set_random_prompt_text(prompt);
+        }
+      });
+    }
 
-    return sunburstPlot;
+    return plotElement;
   } catch (error) {
     console.error("Failed to create sunburst plot:", error);
     return null;

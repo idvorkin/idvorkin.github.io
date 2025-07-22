@@ -20,7 +20,16 @@
       "Bash(mv:*)",
       "Bash(rm:*)",
       "Bash(git add:*)",
-      "Bash(gh pr create:*)"
+      "Bash(gh pr create:*)",
+      "Bash(git pull:*)",
+      "Bash(ls:*)",
+      "Bash(npx @biomejs/biome check:*)",
+      "Bash(npx biome check:*)",
+      "Bash(./node_modules/.bin/biome check:*)",
+      "WebFetch(domain:plotly.com)",
+      "Bash(git restore:*)",
+      "Bash(just js-lint:*)",
+      "Bash(npx prettier:*)"
     ],
     "deny": []
   }

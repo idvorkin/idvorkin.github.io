@@ -52,3 +52,8 @@ Before starting any work, read and follow the instructions in:
 - Commit both TypeScript source files (src/\*.ts) and the generated JS bundle
 - JS files are built from TypeScript and should be tracked in git for Jekyll deployment
 - Always run `just js-build` before committing to ensure JS bundle is up to date
+
+## Git Workflow Guidelines
+
+- Always start by creating a new PR for a task, don't update main directly
+- Before starting work, make sure you have the latest main branch
