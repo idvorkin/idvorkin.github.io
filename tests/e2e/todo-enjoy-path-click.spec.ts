@@ -63,8 +63,16 @@ test.describe("Sunburst path element clicks", () => {
     for (let i = 1; i <= 3 && i < (await pathElements.count()); i++) {
       await pathElements.nth(i).click({ force: true });
 
-      // Small delay between clicks
-      await page.waitForTimeout(200);
+      // Wait for any text change or a brief moment
+      await page
+        .waitForFunction(
+          () => {
+            const element = document.getElementById("sunburst_text");
+            return element?.textContent?.trim() !== "";
+          },
+          { timeout: 1000 },
+        )
+        .catch(() => {}); // Continue even if timeout
 
       const text = await promptElement.textContent();
       if (text && text.trim() !== "Click in any box or circle") {
