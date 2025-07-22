@@ -29,7 +29,9 @@
       "WebFetch(domain:plotly.com)",
       "Bash(git restore:*)",
       "Bash(just js-lint:*)",
-      "Bash(npx prettier:*)"
+      "Bash(npx prettier:*)",
+      "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/59)",
+      "Bash(git rm:*)"
     ],
     "deny": []
   }

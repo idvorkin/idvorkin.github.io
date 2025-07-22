@@ -57,3 +57,8 @@ Before starting any work, read and follow the instructions in:
 
 - Always start by creating a new PR for a task, don't update main directly
 - Before starting work, make sure you have the latest main branch
+
+## PR Management Guidelines
+
+- When updating a PR, prompt the user asking if they want you to open the PR for them
+- When starting work on an issue, update the issue with the linked PR

@@ -2,41 +2,40 @@ import { expect, test } from "@playwright/test";
 
 test.describe("Sunburst path element clicks", () => {
   test("Clicking sunburst path segments updates prompt text", async ({ page }) => {
-    // Enable console logging
-    page.on("console", (msg) => {
-      if (msg.text().includes("Sunburst click")) {
-        console.log(`Console: ${msg.text()}`);
-      }
-    });
-
     await page.goto("/todo_enjoy");
     await page.waitForLoadState("networkidle");
     await page.waitForSelector("#sunburst", { state: "visible" });
-    await page.waitForTimeout(2000);
+
+    // Wait for sunburst to be fully rendered
+    await page.waitForFunction(() => {
+      const sunburst = document.getElementById("sunburst");
+      return sunburst && (sunburst as any).data;
+    });
 
     const promptElement = page.locator("#sunburst_text");
     const initialText = await promptElement.textContent();
 
-    console.log("Initial prompt text:", initialText?.trim());
-
     // Click on a path element (not text)
     const pathElements = page.locator("#sunburst path");
     const pathCount = await pathElements.count();
-    console.log(`Found ${pathCount} path elements`);
 
     if (pathCount > 0) {
       // Click the second path element (first might be center)
       const targetPath = pathElements.nth(1);
 
-      // Get the fill color to identify which segment we're clicking
-      const fillColor = await targetPath.getAttribute("fill");
-      console.log(`Clicking path with fill color: ${fillColor}`);
-
       await targetPath.click({ force: true });
-      await page.waitForTimeout(1000);
+
+      // Wait for prompt text to update
+      await page.waitForFunction(
+        (oldText) => {
+          const element = document.getElementById("sunburst_text");
+          return element && element.textContent !== oldText;
+        },
+        initialText,
+        { timeout: 5000 },
+      );
 
       const newText = await promptElement.textContent();
-      console.log("New prompt text:", newText?.trim());
 
       // The text should have changed
       expect(newText?.trim()).not.toBe(initialText?.trim());
@@ -48,7 +47,12 @@ test.describe("Sunburst path element clicks", () => {
     await page.goto("/todo_enjoy");
     await page.waitForLoadState("networkidle");
     await page.waitForSelector("#sunburst", { state: "visible" });
-    await page.waitForTimeout(2000);
+
+    // Wait for sunburst to be fully rendered
+    await page.waitForFunction(() => {
+      const sunburst = document.getElementById("sunburst");
+      return sunburst && (sunburst as any).data;
+    });
 
     const promptElement = page.locator("#sunburst_text");
     const pathElements = page.locator("#sunburst path");
@@ -58,15 +62,15 @@ test.describe("Sunburst path element clicks", () => {
     // Click different path elements and collect prompts
     for (let i = 1; i <= 3 && i < (await pathElements.count()); i++) {
       await pathElements.nth(i).click({ force: true });
-      await page.waitForTimeout(500);
+
+      // Small delay between clicks
+      await page.waitForTimeout(200);
 
       const text = await promptElement.textContent();
       if (text && text.trim() !== "Click in any box or circle") {
         prompts.push(text.trim());
       }
     }
-
-    console.log("Collected prompts:", prompts);
 
     // We should have collected some prompts
     expect(prompts.length).toBeGreaterThan(0);
