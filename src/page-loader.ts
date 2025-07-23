@@ -387,15 +387,24 @@ export async function make_balance_chart_by_desired_time_rest(div, plotly?) {
  * @param rootName The name for the root node of the sunburst
  * @param sunburstAdder Function to add sunburst (default: add_sunburst_from_dom)
  * @param promptsAdder Function to add random prompts (default: add_random_prompts)
+ * @param postsAdder Function to add blog posts (default: add_imported_blog_posts)
+ * @param eulogyAdder Function to add eulogy roles (default: add_eulogy_roles)
+ * @param randomizerAppender Function to append randomizer (default: append_randomizer_div)
  */
 export function load_auto_sunburst(
   rootName = "Topics",
   sunburstAdder = add_sunburst_from_dom,
   promptsAdder = add_random_prompts,
+  postsAdder = add_imported_blog_posts,
+  eulogyAdder = add_eulogy_roles,
+  randomizerAppender = append_randomizer_div,
 ) {
   try {
     sunburstAdder("sunburst", "sunburst_text", rootName);
     promptsAdder();
+    postsAdder(); // has a random achievement post
+    eulogyAdder("#random-eulogy-role");
+    randomizerAppender("#random-blog-posts", async () => await make_random_post_html());
   } catch (error) {
     console.error("Error loading auto-generated sunburst:", error);
   }

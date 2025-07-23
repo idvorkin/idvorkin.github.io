@@ -10,8 +10,8 @@ test.describe("Things I enjoy page", () => {
     await expect(page).toHaveURL(/todo_enjoy/);
   });
 
-  test("Has hobbies in donut chart", async ({ page }) => {
-    await expect(page.locator("text=Hobbies")).toBeVisible();
+  test("Has entertaining in donut chart", async ({ page }) => {
+    await expect(page.locator('#sunburst text:has-text("Entertaining")')).toBeVisible();
   });
 
   test("Click random blog post randomizes", async ({ page }) => {
@@ -53,16 +53,16 @@ test.describe("Things I enjoy page", () => {
     expect(newText).not.toEqual(originalText);
   });
 
-  test("Click into Hobbies zooms Hobbies, click again zooms out", async ({ page }) => {
-    const hobbiesElement = page.locator('#sunburst text:has-text("Hobbies")');
+  test("Click into Entertaining zooms Entertaining, click again zooms out", async ({ page }) => {
+    const hobbiesElement = page.locator('#sunburst text:has-text("Entertaining")');
     const donutCenter = page.locator(".sunburst text").first();
     const defaultCenterText = "Invest in";
 
-    // Click on Hobbies with force: true to bypass interception
+    // Click on Entertaining with force: true to bypass interception
     await hobbiesElement.click({ force: true });
 
-    // Verify center text changed to Hobbies
-    await expect(donutCenter).toContainText("Hobbies");
+    // Verify center text changed to Entertaining
+    await expect(donutCenter).toContainText("Entertaining");
 
     // Click again to go back with force: true
     await donutCenter.click({ force: true });
@@ -72,7 +72,7 @@ test.describe("Things I enjoy page", () => {
   });
 
   test("Leaf selection doesn't change center text", async ({ page }) => {
-    const hobbiesElement = page.locator('#sunburst text:has-text("Hobbies")');
+    const hobbiesElement = page.locator('#sunburst text:has-text("Entertaining")');
     const jugglingElement = page.locator('#sunburst text:has-text("Juggling")');
     const donutCenter = page.locator(".sunburst text").first();
     const defaultCenterText = "Invest in";
@@ -80,14 +80,14 @@ test.describe("Things I enjoy page", () => {
     // Go into hobbies with force: true
     await hobbiesElement.click({ force: true });
 
-    // Verify center text changed to Hobbies
-    await expect(donutCenter).toContainText("Hobbies");
+    // Verify center text changed to Entertaining
+    await expect(donutCenter).toContainText("Entertaining");
 
     // Click on Juggling with force: true
     await jugglingElement.click({ force: true });
 
-    // Verify center text still shows Hobbies
-    await expect(donutCenter).toContainText("Hobbies");
+    // Verify center text still shows Entertaining
+    await expect(donutCenter).toContainText("Entertaining");
 
     // Go back to default by clicking center with force: true
     await donutCenter.click({ force: true });
