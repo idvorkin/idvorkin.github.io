@@ -27,11 +27,12 @@ import { CreateAutoComplete } from "./search";
 import { initRecentAllPosts } from "./recent";
 
 // Import random-prompter functionality
-import { TreeNode, add_random_prompts, add_sunburst } from "./random-prompter";
+import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } from "./random-prompter";
 
 // Import page-loader functionality
 import {
   load_7_habits,
+  load_auto_sunburst,
   load_balance,
   load_enjoy2,
   load_ig66,
@@ -136,10 +137,12 @@ export {
   // Random prompter exports
   add_random_prompts,
   add_sunburst,
+  add_sunburst_from_dom,
   TreeNode,
   // Page loader exports
   load_enjoy2,
   load_7_habits,
+  load_auto_sunburst,
   makePostPreviewHTML,
   load_ig66,
   load_balance,

@@ -18,8 +18,8 @@ It's easy to forget the many, often tiny things that makes me happy. For when th
 </div>
 
 <script type=module>
-    import { defer, load_enjoy2 } from '/assets/js/index.js'
-    defer(load_enjoy2)
+    import { defer, load_auto_sunburst } from '/assets/js/index.js'
+    defer(() => load_auto_sunburst("Invest in"))
 </script>
 
 <script>

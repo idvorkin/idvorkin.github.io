@@ -272,6 +272,72 @@ export async function add_sunburst(
   }
 }
 
+/**
+ * Extracts a tree structure from H2, H3, and LI elements on the page
+ * @param rootName The name for the root node of the tree
+ * @param jQueryProvider jQuery function (default: global $)
+ * @returns TreeNode representing the extracted hierarchy
+ */
+export function extract_tree_from_dom(rootName = "Root", jQueryProvider = $): TreeNode {
+  const h2Elements = jQueryProvider("h2");
+  const rootChildren: TreeNode[] = [];
+
+  h2Elements.each((_index, h2Element) => {
+    const h2 = jQueryProvider(h2Element);
+    const h2Text = h2.text().trim();
+
+    // Skip if empty
+    if (!h2Text) return;
+
+    const h2Children: TreeNode[] = [];
+    let currentElement = h2.next();
+
+    // Process elements until we hit another H2 or run out of elements
+    while (currentElement.length > 0 && currentElement.prop("tagName") !== "H2") {
+      if (currentElement.prop("tagName") === "H3") {
+        const h3Text = currentElement.text().trim();
+        if (h3Text) {
+          // Check if the next element is a UL with prompts
+          const nextElement = currentElement.next();
+          if (nextElement.length > 0 && nextElement.prop("tagName") === "UL") {
+            // This H3 has prompts, so it's a leaf node
+            h2Children.push(new TreeNode({ name: h3Text }));
+          } else {
+            // This H3 doesn't have prompts, so add it as a node
+            h2Children.push(new TreeNode({ name: h3Text }));
+          }
+        }
+      }
+      currentElement = currentElement.next();
+    }
+
+    if (h2Children.length > 0) {
+      rootChildren.push(new TreeNode({ name: h2Text, children: h2Children }));
+    }
+  });
+
+  return new TreeNode({ name: rootName, children: rootChildren });
+}
+
+/**
+ * Creates a sunburst visualization automatically from the page's H2/H3 structure
+ * @param plot_element_id ID of the element where the plot should be rendered
+ * @param random_text_div_id ID of the div where random text should be displayed
+ * @param rootName Optional name for the root node (default: "Root")
+ * @param jQueryProvider jQuery function (default: global $)
+ * @param plotlyProvider Plotly library (default: global Plotly)
+ */
+export async function add_sunburst_from_dom(
+  plot_element_id: string,
+  random_text_div_id: string,
+  rootName = "Root",
+  jQueryProvider = $,
+  plotlyProvider = Plotly,
+) {
+  const tree = extract_tree_from_dom(rootName, jQueryProvider);
+  return add_sunburst(plot_element_id, random_text_div_id, tree, jQueryProvider, plotlyProvider);
+}
+
 // Export testing utilities separately
 export const UT = {
   breadth_first_walk,

@@ -4,7 +4,7 @@ import { get_link_info } from "./index";
 import { append_randomizer_div, random_from_list } from "./index";
 // Only include this in the html files, one per file
 // This allows code to seet things to refactor
-import { TreeNode, add_random_prompts, add_sunburst } from "./random-prompter";
+import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } from "./random-prompter";
 
 /**
  * Class representing the Seven Habits tree structure
@@ -379,6 +379,25 @@ export async function make_balance_chart_by_desired_time_rest(div, plotly?) {
     }
   } else {
     console.warn("Plotly is not defined, skipping chart rendering");
+  }
+}
+
+/**
+ * Loads content for pages with auto-generated sunburst from DOM structure
+ * @param rootName The name for the root node of the sunburst
+ * @param sunburstAdder Function to add sunburst (default: add_sunburst_from_dom)
+ * @param promptsAdder Function to add random prompts (default: add_random_prompts)
+ */
+export function load_auto_sunburst(
+  rootName = "Topics",
+  sunburstAdder = add_sunburst_from_dom,
+  promptsAdder = add_random_prompts,
+) {
+  try {
+    sunburstAdder("sunburst", "sunburst_text", rootName);
+    promptsAdder();
+  } catch (error) {
+    console.error("Error loading auto-generated sunburst:", error);
   }
 }
 

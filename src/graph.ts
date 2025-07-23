@@ -9,7 +9,10 @@ import { MakeBackLinkHTML, get_link_info } from "./shared";
 
 // Define variables that are used but not declared
 interface ForceGraphInstance {
-  graphData: (data: { nodes: unknown[]; links: unknown[] }) => ForceGraphInstance;
+  graphData: (data: {
+    nodes: unknown[];
+    links: unknown[];
+  }) => ForceGraphInstance;
   centerAt: (x: number, y: number, duration: number) => ForceGraphInstance;
   zoom: (scale: number, duration: number) => ForceGraphInstance;
   onNodeClick: (callback: (node: unknown) => void) => ForceGraphInstance;
