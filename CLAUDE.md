@@ -62,6 +62,7 @@ Before starting any work, read and follow the instructions in:
 
 - When updating a PR, prompt the user asking if they want you to open the PR for them
 - When starting work on an issue, update the issue with the linked PR
+- All PR's should go to main please
 
 ## Commit Best Practices
 

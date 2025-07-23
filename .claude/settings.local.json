@@ -36,7 +36,9 @@
       "mcp__github__get_pull_request",
       "Bash(gh run list:*)",
       "mcp__github__search_repositories",
-      "Bash(just:*)"
+      "Bash(just:*)",
+      "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/61)",
+      "Bash(npx vitest run:*)"
     ],
     "deny": []
   }
