@@ -67,3 +67,7 @@ Before starting any work, read and follow the instructions in:
 ## Commit Best Practices
 
 - Before updating a file, start by linting it via pre-commit hooks and commit that, so that the file is clean before you edit so we can see just the relevant changes in the PR
+
+## Development Hints
+
+- You can always assume a server running on 4000

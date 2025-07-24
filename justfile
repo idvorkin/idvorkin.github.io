@@ -174,11 +174,11 @@ js-test-ui:
 
 # Check code formatting
 js-lint:
-    npx prettier --check 'src/**/*.{ts,js}'
+    npx @biomejs/biome check src/
 
-# Format code with Prettier
+# Format code with Biome
 js-format:
-    npx prettier --write 'src/**/*.{ts,js}'
+    npx @biomejs/biome check --write src/
 
 # Clean build artifacts
 js-clean:

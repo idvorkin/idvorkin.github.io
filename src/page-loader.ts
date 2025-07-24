@@ -1,7 +1,5 @@
-import { get } from "lodash-es";
 import { add_eulogy_roles, add_imported_blog_posts } from "./blogger_import.js";
-import { get_link_info } from "./index";
-import { append_randomizer_div, random_from_list } from "./index";
+import { append_randomizer_div, get_link_info, random_from_list } from "./index";
 // Only include this in the html files, one per file
 // This allows code to seet things to refactor
 import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } from "./random-prompter";

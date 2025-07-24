@@ -105,9 +105,9 @@ export function enableImageZoom(retryCount = 0) {
 // Auto-initialize when DOM is ready
 if (typeof document !== "undefined") {
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", enableImageZoom);
+    document.addEventListener("DOMContentLoaded", () => enableImageZoom());
   } else {
     // DOM already loaded, but wait a bit for dynamic content
-    setTimeout(enableImageZoom, 500);
+    setTimeout(() => enableImageZoom(), 500);
   }
 }

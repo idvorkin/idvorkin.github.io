@@ -4,15 +4,14 @@
 // Random tree
 // Tree copied from: https://github.com/vasturiano/force-graph
 console.log("Load force graph in TS v 0.9");
+
 import { MakeBackLinkHTML, get_link_info } from "./shared";
+
 //import ForceGraph from "force-graph";
 
 // Define variables that are used but not declared
 interface ForceGraphInstance {
-  graphData: (data: {
-    nodes: unknown[];
-    links: unknown[];
-  }) => ForceGraphInstance;
+  graphData: (data: { nodes: unknown[]; links: unknown[] }) => ForceGraphInstance;
   centerAt: (x: number, y: number, duration: number) => ForceGraphInstance;
   zoom: (scale: number, duration: number) => ForceGraphInstance;
   onNodeClick: (callback: (node: unknown) => void) => ForceGraphInstance;

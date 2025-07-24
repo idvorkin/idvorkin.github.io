@@ -5,6 +5,25 @@
  * on the blog. It imports and initializes all necessary modules.
  */
 
+// Import main functionality
+import { load_globals } from "./main";
+// Import page-loader functionality
+import {
+  load_7_habits,
+  load_auto_sunburst,
+  load_balance,
+  load_enjoy2,
+  load_ig66,
+  load_random_eulogy,
+  makePostPreviewHTML,
+} from "./page-loader";
+// Import random-prompter functionality
+import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } from "./random-prompter";
+
+// Import recent posts functionality
+import { initRecentAllPosts } from "./recent";
+// Import search functionality
+import { CreateAutoComplete } from "./search";
 // Import shared utilities
 import {
   type IURLInfo,
@@ -16,29 +35,6 @@ import {
   random_from_list,
   shuffle,
 } from "./shared";
-
-// Import main functionality
-import { load_globals } from "./main";
-
-// Import search functionality
-import { CreateAutoComplete } from "./search";
-
-// Import recent posts functionality
-import { initRecentAllPosts } from "./recent";
-
-// Import random-prompter functionality
-import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } from "./random-prompter";
-
-// Import page-loader functionality
-import {
-  load_7_habits,
-  load_auto_sunburst,
-  load_balance,
-  load_enjoy2,
-  load_ig66,
-  load_random_eulogy,
-  makePostPreviewHTML,
-} from "./page-loader";
 
 // Declare global variables from external libraries
 declare let $: {
