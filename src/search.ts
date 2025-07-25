@@ -3,8 +3,8 @@ import { get_link_info, random_from_list } from "./shared";
 
 // For autocomplete, safely access the window properties
 // This makes it more testable
-let autocomplete: unknown;
-let getAlgoliaResults: unknown;
+let autocomplete: any;
+let getAlgoliaResults: any;
 if (typeof window !== "undefined" && window["@algolia/autocomplete-js"]) {
   const algoliaAutocomplete = window["@algolia/autocomplete-js"];
   autocomplete = algoliaAutocomplete.autocomplete;
@@ -24,7 +24,7 @@ export const search_placeholder_text = "Search Igor's Musings ...";
  */
 export function getParameterByName(name, url): string {
   if (!url) url = window.location.href;
-  name = name.replace(/[\[\]]/g, "\\$&");
+  name = name.replace(/[[\]\\]/g, "\\$&");
   const regex = new RegExp(`[?&]${name}(=([^&#]*)|&|#|$)`);
   const results = regex.exec(url);
   if (!results) return null;

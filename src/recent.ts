@@ -40,9 +40,7 @@ export function groupPagesByMonthYear(pages: IPage[]): {
  * @param groupedPages Object with month/year keys and arrays of pages
  * @returns HTML string
  */
-export function generateGroupedPagesHTML(groupedPages: {
-  [key: string]: IPage[];
-}): string {
+export function generateGroupedPagesHTML(groupedPages: { [key: string]: IPage[] }): string {
   let html = "";
 
   for (const [monthYear, pages] of Object.entries(groupedPages)) {

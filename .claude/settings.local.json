@@ -36,7 +36,11 @@
       "mcp__github__get_pull_request",
       "Bash(gh run list:*)",
       "mcp__github__search_repositories",
-      "Bash(just:*)"
+      "Bash(just:*)",
+      "Bash(gh pr:*)",
+      "Bash(npm test:*)",
+      "mcp__github__get_pull_request_comments",
+      "Bash(npx vitest run:*)"
     ],
     "deny": []
   }

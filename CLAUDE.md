@@ -62,7 +62,12 @@ Before starting any work, read and follow the instructions in:
 
 - When updating a PR, prompt the user asking if they want you to open the PR for them
 - When starting work on an issue, update the issue with the linked PR
+- All PR's should go to main please
 
 ## Commit Best Practices
 
 - Before updating a file, start by linting it via pre-commit hooks and commit that, so that the file is clean before you edit so we can see just the relevant changes in the PR
+
+## Development Hints
+
+- You can always assume a server running on 4000

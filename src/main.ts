@@ -1,4 +1,7 @@
 // Import shared functions
+
+import { initRecentAllPosts } from "./recent";
+import { initRecentPosts } from "./recent-posts";
 import {
   type IURLInfo,
   type IURLInfoMap,
@@ -8,9 +11,6 @@ import {
   random_from_list,
   shuffle,
 } from "./shared";
-
-import { initRecentAllPosts } from "./recent";
-import { initRecentPosts } from "./recent-posts";
 // Import graph but we'll only initialize it from the graph.html page
 import "./graph";
 import { enableHeaderCopyLinks } from "./header-copy-link";
