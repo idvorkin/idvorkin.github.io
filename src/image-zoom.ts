@@ -3,6 +3,11 @@
  * Automatically wraps images in blog posts with GLightbox functionality
  */
 
+// Constants for retry logic
+const MAX_RETRY_ATTEMPTS = 50;
+const RETRY_DELAY_MS = 100;
+const MAX_RETRY_TIME_MS = MAX_RETRY_ATTEMPTS * RETRY_DELAY_MS;
+
 declare global {
   interface Window {
     GLightbox: any;
@@ -19,13 +24,17 @@ export function enableImageZoom(retryCount = 0) {
 
   // Wait for GLightbox to be available with retry limit
   if (typeof window.GLightbox === "undefined") {
-    if (retryCount < 50) {
+    if (retryCount < MAX_RETRY_ATTEMPTS) {
       // Max 5 seconds of retries (50 * 100ms)
-      console.warn(`⚠️ GLightbox not found, retrying in 100ms (attempt ${retryCount + 1}/50)`);
-      setTimeout(() => enableImageZoom(retryCount + 1), 100);
+      console.warn(
+        `⚠️ GLightbox not found, retrying in ${RETRY_DELAY_MS}ms (attempt ${retryCount + 1}/${MAX_RETRY_ATTEMPTS})`,
+      );
+      setTimeout(() => enableImageZoom(retryCount + 1), RETRY_DELAY_MS);
       return;
     }
-    console.error("❌ GLightbox failed to load after 5 seconds, aborting image zoom initialization");
+    console.error(
+      `❌ GLightbox failed to load after ${MAX_RETRY_TIME_MS / 1000} seconds, aborting image zoom initialization`,
+    );
     return;
   }
 

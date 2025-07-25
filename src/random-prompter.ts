@@ -275,11 +275,16 @@ export async function add_sunburst(
 /**
  * Extracts a tree structure from H2, H3, and LI elements on the page
  * @param rootName The name for the root node of the tree
+ * @param containerSelector Optional jQuery selector to scope the search (e.g., "article", "#content")
  * @param jQueryProvider jQuery function (default: global $)
  * @returns TreeNode representing the extracted hierarchy
  */
-export function extract_tree_from_dom(rootName = "Root", jQueryProvider: any = $): TreeNode {
-  const h2Elements = jQueryProvider("h2");
+export function extract_tree_from_dom(
+  rootName = "Root",
+  containerSelector: string | null = null,
+  jQueryProvider: any = $,
+): TreeNode {
+  const h2Elements = containerSelector ? jQueryProvider(containerSelector).find("h2") : jQueryProvider("h2");
   const rootChildren: TreeNode[] = [];
 
   h2Elements.each((_index, h2Element) => {
@@ -317,6 +322,7 @@ export function extract_tree_from_dom(rootName = "Root", jQueryProvider: any = $
  * @param plot_element_id ID of the element where the plot should be rendered
  * @param random_text_div_id ID of the div where random text should be displayed
  * @param rootName Optional name for the root node (default: "Root")
+ * @param containerSelector Optional jQuery selector to scope the search (e.g., "article", "#content")
  * @param jQueryProvider jQuery function (default: global $)
  * @param plotlyProvider Plotly library (default: global Plotly)
  */
@@ -324,10 +330,11 @@ export async function add_sunburst_from_dom(
   plot_element_id: string,
   random_text_div_id: string,
   rootName = "Root",
+  containerSelector: string | null = null,
   jQueryProvider = $,
   plotlyProvider = Plotly,
 ) {
-  const tree = extract_tree_from_dom(rootName, jQueryProvider);
+  const tree = extract_tree_from_dom(rootName, containerSelector, jQueryProvider);
   return add_sunburst(plot_element_id, random_text_div_id, tree, jQueryProvider, plotlyProvider);
 }
 
