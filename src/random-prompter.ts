@@ -278,7 +278,7 @@ export async function add_sunburst(
  * @param jQueryProvider jQuery function (default: global $)
  * @returns TreeNode representing the extracted hierarchy
  */
-export function extract_tree_from_dom(rootName = "Root", jQueryProvider = $): TreeNode {
+export function extract_tree_from_dom(rootName = "Root", jQueryProvider: any = $): TreeNode {
   const h2Elements = jQueryProvider("h2");
   const rootChildren: TreeNode[] = [];
 
@@ -297,15 +297,8 @@ export function extract_tree_from_dom(rootName = "Root", jQueryProvider = $): Tr
       if (currentElement.prop("tagName") === "H3") {
         const h3Text = currentElement.text().trim();
         if (h3Text) {
-          // Check if the next element is a UL with prompts
-          const nextElement = currentElement.next();
-          if (nextElement.length > 0 && nextElement.prop("tagName") === "UL") {
-            // This H3 has prompts, so it's a leaf node
-            h2Children.push(new TreeNode({ name: h3Text }));
-          } else {
-            // This H3 doesn't have prompts, so add it as a node
-            h2Children.push(new TreeNode({ name: h3Text }));
-          }
+          // Add H3 as a node regardless of whether it has a UL after it
+          h2Children.push(new TreeNode({ name: h3Text }));
         }
       }
       currentElement = currentElement.next();
