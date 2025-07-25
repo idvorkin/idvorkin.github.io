@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.66% </span>
+                <span class="strong">26.82% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>17/75</span>
+                <span class='fraction'>22/82</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">22.66% </span>
+                <span class="strong">26.82% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>17/75</span>
+                <span class='fraction'>22/82</span>
             </div>
         
             
@@ -176,10 +176,24 @@
 <a name='L111'></a><a href='#L111'>111</a>
 <a name='L112'></a><a href='#L112'>112</a>
 <a name='L113'></a><a href='#L113'>113</a>
-<a name='L114'></a><a href='#L114'>114</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -203,6 +217,10 @@
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -294,6 +312,11 @@
  * Automatically wraps images in blog posts with GLightbox functionality
  */
 &nbsp;
+// Constants for retry logic
+const MAX_RETRY_ATTEMPTS = 50;
+const RETRY_DELAY_MS = 100;
+const MAX_RETRY_TIME_MS = MAX_RETRY_ATTEMPTS * RETRY_DELAY_MS;
+&nbsp;
 declare global {
   interface Window {
     GLightbox: any;
@@ -310,13 +333,17 @@ export function enableImageZoom(retryCount = 0) {
 &nbsp;
   // Wait for GLightbox to be available with retry limit
   if (typeof window.GLightbox === "undefined") {
-    if (retryCount &lt; 50) {
+    if (retryCount &lt; MAX_RETRY_ATTEMPTS) {
       // Max 5 seconds of retries (50 * 100ms)
-      console.warn(`⚠️ GLightbox not found, retrying in 100ms (attempt ${retryCount + 1}/50)`);
-      setTimeout(() =&gt; enableImageZoom(retryCount + 1), 100);
+      console.warn(
+        `⚠️ GLightbox not found, retrying in ${RETRY_DELAY_MS}ms (attempt ${retryCount + 1}/${MAX_RETRY_ATTEMPTS})`,
+      );
+      setTimeout(() =&gt; enableImageZoom(retryCount + 1), RETRY_DELAY_MS);
       return;
 <span class="branch-0 cbranch-no" title="branch not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >    console.error("❌ GLightbox failed to load after 5 seconds, aborting image zoom initialization");</span>
+<span class="cstat-no" title="statement not covered" >    console.error(</span>
+<span class="cstat-no" title="statement not covered" >      `❌ GLightbox failed to load after ${MAX_RETRY_TIME_MS / 1000} seconds, aborting image zoom initialization`,</span>
+<span class="cstat-no" title="statement not covered" >    );</span>
 <span class="cstat-no" title="statement not covered" >    return;</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
@@ -396,10 +423,10 @@ export function enableImageZoom(retryCount = 0) {
 // Auto-initialize when DOM is ready
 if (typeof document !== "undefined") {
   if (document.readyState === "loading") <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >    document.addEventListener("DOMContentLoaded", enableImageZoom);</span>
+<span class="cstat-no" title="statement not covered" >    document.addEventListener("DOMContentLoaded", () =&gt; enableImageZoom());</span>
   } else {
     // DOM already loaded, but wait a bit for dynamic content
-    setTimeout(enableImageZoom, 500);
+    setTimeout(() =&gt; enableImageZoom(), 500);
   }
 }
 &nbsp;</pre></td></tr></table></pre>
@@ -409,7 +436,7 @@ if (typeof document !== "undefined") {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-07-22T18:31:10.231Z
+                at 2025-07-25T14:06:25.837Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
