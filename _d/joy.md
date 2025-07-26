@@ -107,8 +107,11 @@ My early [ballooning](/ig66/621) adventures:
 
 ### Mismatched shoes, and crazy shirts from TEMU
 
-- First discoverd mismatched shoes, harder then it sounds, but crocks are great
-- Used to get fun shirts from thrift shops, but hard to find them. Then disovered TEMU had such shirts of ronly
+- First discovered mismatched shoes, harder than it sounds, but crocs are great
+- Used to get fun shirts from thrift shops, but hard to find them. Then discovered TEMU had such shirts for only $8
+- These zany shirts bring instant smiles - from psychedelic patterns to ridiculous slogans
+- People often stop me and say "nice shirt," and that always makes me happy
+- The best part: they're so affordable I can wear a different crazy shirt every day
 
 ### Handing out you are awesome cards
 

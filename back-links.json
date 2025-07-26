@@ -1193,7 +1193,6 @@
             "doc_size": 15000,
             "file_path": "_site/build-bubble-bike.html",
             "incoming_links": [
-                "/joy",
                 "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -3206,18 +3205,18 @@
                 "/random-idea",
                 "/sublime"
             ],
-            "last_modified": "2025-07-20T19:13:52-07:00",
+            "last_modified": "2025-07-26T10:51:46.146308",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
-                "/build-bubble-bike",
+                "/bbb",
+                "/cry",
                 "/eulogy",
                 "/happy",
                 "/ig66/621",
                 "/like-switch",
                 "/magic",
-                "/smilebox",
-                "/touching"
+                "/smilebox"
             ],
             "redirect_url": "",
             "title": "Smiles, Joy and Wonder",
@@ -5583,7 +5582,7 @@
                 "/psychic-shadows",
                 "/random-idea"
             ],
-            "last_modified": "2025-07-22T21:26:26.148196",
+            "last_modified": "2025-07-26T10:51:46.146308",
             "markdown_path": "_d/enjoy2.md",
             "outgoing_links": [
                 "/eulogy"
@@ -5618,7 +5617,6 @@
             "incoming_links": [
                 "/class-act",
                 "/end-in-mind",
-                "/joy",
                 "/random-idea",
                 "/sublime"
             ],
