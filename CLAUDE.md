@@ -12,7 +12,8 @@ Before starting any work, read and follow the instructions in:
 
 - Build TypeScript: `just js-build`
 - Watch for changes: `just js-watch`
-- Run all tests: `just js-test`
+- Run unit tests (fast): `just fast-test`
+- Run E2E tests: `just e2e-test`
 - Run specific test: `npx vitest run src/__tests__/main.test.ts`
 - Run tests in watch mode: `just js-test-watch`
 - Check code formatting: `just js-lint`
@@ -37,6 +38,11 @@ Before starting any work, read and follow the instructions in:
 - Test components in isolation
 - Update backlinks.json after content changes
 - Minimize asset sizes and optimize performance
+
+## Test Structure
+
+- Unit tests (Vitest): Located in `src/__tests__/` - test individual functions and components
+- E2E tests (Playwright): Located in `tests/e2e/` - test full page interactions and user flows
 
 ## Development Workflow
 
