@@ -77,3 +77,8 @@ Before starting any work, read and follow the instructions in:
 ## Development Hints
 
 - You can always assume a server running on 4000
+- Always do work on a PR, never on main
+- Break commits into logical changes
+- Before editing a file run pre-commit to keep reformats separate from changes
+- After update pr, open in the webbrowser
+- We use main, not master. Always start with a fetch rebase to make sure we're starting with latest main
