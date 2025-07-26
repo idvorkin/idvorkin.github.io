@@ -44,7 +44,16 @@ function createCopyLinkIcon(options: CopyLinkOptions): HTMLElement {
  * Shows a temporary tooltip indicating the link was copied
  */
 function showCopiedTooltip(element: HTMLElement, duration = 2000): void {
+  // Remove any existing tooltip first
+  if (typeof document !== "undefined" && document.querySelector) {
+    const existingTooltip = document.querySelector(".copy-link-tooltip");
+    if (existingTooltip) {
+      existingTooltip.remove();
+    }
+  }
+
   const tooltip = document.createElement("span");
+  tooltip.className = "copy-link-tooltip";
   tooltip.textContent = "Copied!";
   tooltip.style.position = "absolute";
   tooltip.style.backgroundColor = "#333";

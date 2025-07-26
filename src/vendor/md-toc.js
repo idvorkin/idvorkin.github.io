@@ -144,7 +144,10 @@
     if (!this.options.targetId) {
       this.el.appendChild(this.toc);
     } else {
-      document.getElementById(this.options.targetId).appendChild(this.toc);
+      var targetElement = document.getElementById(this.options.targetId);
+      if (targetElement) {
+        targetElement.appendChild(this.toc);
+      }
     }
     var self = this;
     if (this.tocTop > -1) {

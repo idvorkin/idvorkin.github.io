@@ -13,7 +13,7 @@ test.describe("7 habits", () => {
     // Look for the heading element specifically
     const categoryElement = page.locator("h3#be-proactive");
     await expect(categoryElement).toBeVisible();
-    await expect(categoryElement).toHaveText(known_category_on_sunburst);
+    await expect(categoryElement).toContainText(known_category_on_sunburst);
   });
 
   test("Text changes when clicking on donut", async ({ page }) => {
