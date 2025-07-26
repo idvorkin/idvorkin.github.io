@@ -48,6 +48,10 @@ prompt-page.png
 # SpecStory project identity file
 .specstory/.project.json
 
+# Test output files
+test-output.txt
+html/
+
 # ================================================================================
 # SECURITY & CREDENTIALS
 # ================================================================================

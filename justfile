@@ -339,23 +339,13 @@ prepare:
     husky install
 # ===== Playwright Tests =====
 # For Playwright E2E testing, use these commands:
-# - pw-test: Run all Playwright tests
-# - pw-test-e2e: Run only E2E tests
-# - pw-test-unit: Run only unit tests
+# - pw-test: Run all Playwright E2E tests
 # - pw-test-ui: Run tests with UI
 # - pw-install: Install Playwright browsers
 
-# Run all Playwright tests
+# Run all Playwright E2E tests
 pw-test:
     npx playwright test
-
-# Run only E2E tests
-pw-test-e2e:
-    npx playwright test tests/e2e
-
-# Run only unit tests
-pw-test-unit:
-    npx playwright test tests/unit
 
 # Run tests with UI
 pw-test-ui:
@@ -390,21 +380,17 @@ js-test-github-actions:
     # Exit with the original test exit code
     exit $TEST_EXIT_CODE
 
-# ===== Fast Tests (for pre-commit) =====
-# This is called by pre-commit hooks and should run quickly
+# ===== Main Test Commands =====
 
+# Fast tests (unit tests only - for pre-commit hooks and quick checks)
 fast-test:
-    @echo "Running fast tests for pre-commit..."
-    # Run TypeScript type checking
-    # npx tsc --noEmit
-    # Run a subset of tests or lightweight checks
+    @echo "Running fast unit tests..."
     just js-test
+
+# E2E tests (Playwright E2E tests only)
+e2e-test:
+    @echo "Running E2E test suite..."
+    just pw-test
 
 blog-combined:
     cat _d/* _posts/* _td/* > blog.allcontent.md
-
-# Comprehensive test suite
-test:
-    @echo "Running comprehensive test suite..."
-    just js-test
-    just pw-test
