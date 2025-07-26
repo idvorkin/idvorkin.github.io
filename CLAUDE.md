@@ -81,3 +81,16 @@ This file will direct you to all other convention files you need to follow.
 - Before editing a file run pre-commit to keep reformats separate from changes
 - After update pr, open in the webbrowser
 - We use main, not master. Always start with a fetch rebase to make sure we're starting with latest main
+
+## Post-PR Merge Workflow
+
+After a PR is merged, always:
+
+1. First verify the PR is actually merged: `gh pr view <pr-number> --json state,merged`
+2. Switch to main: `git checkout main`
+3. Pull latest changes: `git pull`
+4. Delete local branch: `git branch -d <branch-name>`
+5. Delete remote branch: `git push origin --delete <branch-name>`
+
+This keeps the repository clean and ensures you're always working with the latest code.
+EOF < /dev/null
