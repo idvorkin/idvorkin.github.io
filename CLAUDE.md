@@ -2,12 +2,10 @@
 
 ## IMPORTANT: Read First
 
-Before starting any work, read and follow the development conventions:
+Before starting any work, read and follow the instructions in:
+`~/gits/chop-conventions/dev-inner-loop/a_readme_first.md`
 
-1. Use `find ~/gits/chop-conventions -name "README.md" -o -name "*readme*.md" | head -20` to find all readme files
-2. Read the main README.md and any readme files in subdirectories
-3. Pay special attention to files in the `dev-inner-loop` directory
-4. Follow all conventions and guidelines found in these files
+This file will direct you to all other convention files you need to follow.
 
 ## Build/Test/Lint Commands
 
