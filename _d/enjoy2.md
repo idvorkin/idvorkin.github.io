@@ -119,6 +119,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 ### Joy to Others
 
 - Give out chocolate balls
+- Hand out "you are awesome" cards
 - Ride a bubble bike!
 - Wear my rainbow suit
 - Wear my goat boy legs and horns
