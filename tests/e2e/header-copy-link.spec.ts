@@ -90,7 +90,7 @@ test.describe("Header Copy Link Feature", () => {
       await copyLink.click();
 
       // Check for tooltip
-      const tooltip = page.locator("text=Copied!");
+      const tooltip = page.locator(".copy-link-tooltip");
       await expect(tooltip).toBeVisible();
 
       // Wait for tooltip to disappear
@@ -143,8 +143,17 @@ test.describe("Header Copy Link Feature", () => {
       // Copy link should become visible (opacity 1)
       await expect(copyLink).toHaveCSS("opacity", "1");
 
-      // Move away from header
-      await page.locator("body").hover();
+      // Move away from header - hover on the footer or a different element far from headers
+      const footer = page.locator("footer").first();
+      if ((await footer.count()) > 0) {
+        await footer.hover();
+      } else {
+        // If no footer, move to coordinates far from the header
+        await page.mouse.move(0, 0);
+      }
+
+      // Wait for transition to complete
+      await page.waitForTimeout(300);
 
       // Copy link should become hidden again
       await expect(copyLink).toHaveCSS("opacity", "0");

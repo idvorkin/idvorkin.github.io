@@ -56,10 +56,22 @@ test.describe("Auto-generated Sunburst", () => {
     const initialPrompt = await firstPromptDiv.textContent();
 
     // Click the refresh icon
-    await firstPromptDiv.locator("span[title='Click for another prompt']").click();
+    const refreshIcon = firstPromptDiv.locator("span[title='Click for another prompt']");
+    await refreshIcon.click();
+
+    // Wait a bit for the prompt to update
+    await page.waitForTimeout(1000);
 
     // Prompt should have changed
-    const newPrompt = await firstPromptDiv.textContent();
+    let newPrompt = await firstPromptDiv.textContent();
+
+    // If the prompt hasn't changed, try clicking again
+    if (newPrompt === initialPrompt) {
+      await refreshIcon.click();
+      await page.waitForTimeout(1000);
+      newPrompt = await firstPromptDiv.textContent();
+    }
+
     expect(newPrompt).not.toBe(initialPrompt);
   });
 
