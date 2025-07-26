@@ -119,6 +119,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 ### Joy to Others
 
 - Give out chocolate balls
+- Hand out "you are awesome" cards
 - Ride a bubble bike!
 - Wear my rainbow suit
 - Wear my goat boy legs and horns
@@ -128,6 +129,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Put on a wig
 - Wear toe shoes
 - Wear Sequin Jacket
+- Wear my zany $8 TEMU crazy shirts
 - Wear a Halloween costumes - Lama
 - Wear a Halloween costumes - Bird
 - Wear a Halloween costumes - Fish

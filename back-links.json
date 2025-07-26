@@ -1037,7 +1037,6 @@
             "file_path": "_site/being-a-great-manager.html",
             "incoming_links": [
                 "/bmy",
-                "/eulogy",
                 "/job",
                 "/manager-book",
                 "/random-idea"
@@ -1194,7 +1193,6 @@
             "doc_size": 15000,
             "file_path": "_site/build-bubble-bike.html",
             "incoming_links": [
-                "/joy",
                 "/random-idea"
             ],
             "last_modified": "2024-10-05T21:35:59-07:00",
@@ -2465,8 +2463,8 @@
             "url": "/essentialism"
         },
         "/eulogy": {
-            "description": "Wearing a silly hat, his trusty folding bike at his feet, and using a purple fountain pen, Igor “Began with the end in mind” with the “important but not urgent” task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.\n\n",
-            "doc_size": 36000,
+            "description": "Wearing a silly hat or his zany $8 TEMU crazy shirt, his trusty folding bike at his feet, and using a purple fountain pen, Igor “Began with the end in mind” with the “important but not urgent” task of penning this eulogy, likely starting at 5am. Igor wanted this life, so he wrote it, he reviewed it, he lived it, and he worked with his family, friends, and multitude of mentors, to adjust and tweak it.\n\n",
+            "doc_size": 37000,
             "file_path": "_site/eulogy.html",
             "incoming_links": [
                 "/7-habits",
@@ -2486,14 +2484,13 @@
                 "/todo_enjoy",
                 "/work-satisfaction"
             ],
-            "last_modified": "2025-03-23T20:10:13+00:00",
+            "last_modified": "2025-07-26T10:48:01.980473",
             "markdown_path": "_posts/2020-04-01-Igor-Eulogy.md",
             "outgoing_links": [
                 "/7-habits",
                 "/Human-Meetings",
                 "/The-Genesis-Node",
                 "/balloon",
-                "/being-a-great-manager",
                 "/bike",
                 "/cache",
                 "/ig66/687",
@@ -2502,6 +2499,7 @@
                 "/job",
                 "/kettlebell",
                 "/magic",
+                "/manager",
                 "/physical-health",
                 "/process-jounral",
                 "/siy",
@@ -3207,18 +3205,18 @@
                 "/random-idea",
                 "/sublime"
             ],
-            "last_modified": "2025-07-20T19:13:52-07:00",
+            "last_modified": "2025-07-26T10:51:46.146308",
             "markdown_path": "_d/joy.md",
             "outgoing_links": [
                 "/balloon",
-                "/build-bubble-bike",
+                "/bbb",
+                "/cry",
                 "/eulogy",
                 "/happy",
                 "/ig66/621",
                 "/like-switch",
                 "/magic",
-                "/smilebox",
-                "/touching"
+                "/smilebox"
             ],
             "redirect_url": "",
             "title": "Smiles, Joy and Wonder",
@@ -5584,7 +5582,7 @@
                 "/psychic-shadows",
                 "/random-idea"
             ],
-            "last_modified": "2025-07-22T21:26:26.148196",
+            "last_modified": "2025-07-26T10:51:46.146308",
             "markdown_path": "_d/enjoy2.md",
             "outgoing_links": [
                 "/eulogy"
@@ -5619,7 +5617,6 @@
             "incoming_links": [
                 "/class-act",
                 "/end-in-mind",
-                "/joy",
                 "/random-idea",
                 "/sublime"
             ],
