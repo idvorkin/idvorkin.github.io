@@ -40,7 +40,8 @@
       "Bash(gh pr:*)",
       "Bash(npm test:*)",
       "mcp__github__get_pull_request_comments",
-      "Bash(npx vitest run:*)"
+      "Bash(npx vitest run:*)",
+      "Bash(find:*)"
     ],
     "deny": []
   }
