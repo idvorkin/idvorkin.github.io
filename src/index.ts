@@ -16,6 +16,7 @@ import {
   load_ig66,
   load_random_eulogy,
   makePostPreviewHTML,
+  make_random_post_html,
 } from "./page-loader";
 // Import random-prompter functionality
 import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } from "./random-prompter";
@@ -32,6 +33,7 @@ import {
   append_randomizer_div,
   defer,
   get_link_info,
+  get_random_page_url,
   random_from_list,
   shuffle,
 } from "./shared";
@@ -122,6 +124,7 @@ export {
   append_randomizer_div,
   defer,
   get_link_info,
+  get_random_page_url,
   // Export the interface types
   type IURLInfo,
   type IURLInfoMap,
@@ -140,6 +143,7 @@ export {
   load_7_habits,
   load_auto_sunburst,
   makePostPreviewHTML,
+  make_random_post_html,
   load_ig66,
   load_balance,
   load_random_eulogy,

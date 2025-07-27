@@ -469,7 +469,7 @@
             "doc_size": 19000,
             "file_path": "_site/about.html",
             "incoming_links": [],
-            "last_modified": "2025-03-07T11:51:39-08:00",
+            "last_modified": "2025-07-27T14:46:42.049473",
             "markdown_path": "about.md",
             "outgoing_links": [
                 "/new-skills",
@@ -1013,7 +1013,6 @@
                 "/d/habits",
                 "/emotions",
                 "/frog",
-                "/idle",
                 "/process-journal",
                 "/random-idea",
                 "/regrets",
@@ -1225,7 +1224,6 @@
             "doc_size": 22000,
             "file_path": "_site/caring.html",
             "incoming_links": [
-                "/depression",
                 "/random-idea"
             ],
             "last_modified": "2025-07-18T07:57:44-07:00",
@@ -1697,7 +1695,6 @@
                 "/d/resistance",
                 "/energy-abundance",
                 "/hobby",
-                "/idle",
                 "/igor-gap-year",
                 "/life-as-business",
                 "/manager-book",
@@ -2122,25 +2119,25 @@
                 "/mood",
                 "/random-idea"
             ],
-            "last_modified": "2025-07-20T19:26:41-07:00",
+            "last_modified": "2025-07-27T15:11:46.590096",
             "markdown_path": "_d/depression.md",
             "outgoing_links": [
                 "/7-habits",
                 "/anxiety",
-                "/caring",
+                "/care",
                 "/eulogy",
                 "/getting-to-yes-with-yourself",
                 "/gtd",
-                "/idle",
-                "/insecure",
+                "/idle-loop",
+                "/imposter",
                 "/insomnia",
                 "/physical-health",
                 "/psychic-shadows",
                 "/psychic-weight",
                 "/shame",
                 "/siy",
-                "/sustainable-work",
-                "/voices"
+                "/voices",
+                "/wlb"
             ],
             "redirect_url": "",
             "title": "Depression is the opposite of vitality",
@@ -2983,23 +2980,22 @@
         },
         "/idle": {
             "description": "Waiting in line at the grocery store, sitting in an Uber, pooping - in these invisible times, we execute our idle loop. We spend a lot of time in our idle loop, and it can either increase our energy or drain it. By being aware of and then modifying how we spend our idle loop we can improve our lives one poop at a time.\n\n",
-            "doc_size": 17000,
+            "doc_size": 16000,
             "file_path": "_site/idle.html",
             "incoming_links": [
                 "/anxiety",
-                "/depression",
                 "/gtd",
                 "/happy",
                 "/psychic-weight",
                 "/random-idea"
             ],
-            "last_modified": "2025-07-18T07:57:44-07:00",
+            "last_modified": "2025-07-27T15:18:21.762895",
             "markdown_path": "_d/idle-loop.md",
             "outgoing_links": [
+                "/7h-c1",
                 "/addiction",
-                "/be-proactive",
-                "/d/habits",
                 "/frog",
+                "/habits",
                 "/magic",
                 "/mental-pain",
                 "/mind-monsters",
@@ -3049,7 +3045,6 @@
             "incoming_links": [
                 "/90days",
                 "/affirmations",
-                "/depression",
                 "/random-idea",
                 "/work-satisfaction"
             ],
@@ -4486,7 +4481,7 @@
             "incoming_links": [
                 "/about"
             ],
-            "last_modified": "2025-03-07T11:51:39-08:00",
+            "last_modified": "2025-07-27T14:46:42.049473",
             "markdown_path": "_d/recent.md",
             "outgoing_links": [
                 "/new-skills"
@@ -4976,7 +4971,6 @@
                 "/42",
                 "/balance",
                 "/being-a-great-manager",
-                "/depression",
                 "/overload",
                 "/random-idea",
                 "/regrets",
