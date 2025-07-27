@@ -80,7 +80,7 @@ Of course! Press ? to see them. Mobile browsers don't support keyboard shortcuts
 
 ### What is the anchovy problem, and what is the monkey button:
 
-The monkey button selects a random page. It's the solution to Seth Godin's anchovy problem:
+The monkey button selects a random page. You can also <a href="/random">click here for a random page</a>. It's the solution to Seth Godin's anchovy problem:
 
 \*Cleaning out the fridge after a power failure, I found three half-empty containers of anchovies. Because they magically migrate to the back of the fridge, every time I had needed some, I ended up opening a new jar, because the old ones were invisible. Not just invisible if I had looked for them, but so invisible that it never even occurred to me to look for them.
 

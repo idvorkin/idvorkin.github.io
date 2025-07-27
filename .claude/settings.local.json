@@ -42,7 +42,8 @@
       "mcp__github__get_pull_request_comments",
       "Bash(npx vitest run:*)",
       "Bash(find:*)",
-      "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/65)"
+      "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/65)",
+      "Bash(gh issue:*)"
     ],
     "deny": []
   }

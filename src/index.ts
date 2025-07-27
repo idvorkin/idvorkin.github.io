@@ -32,6 +32,7 @@ import {
   append_randomizer_div,
   defer,
   get_link_info,
+  get_random_page_url,
   random_from_list,
   shuffle,
 } from "./shared";
@@ -122,6 +123,7 @@ export {
   append_randomizer_div,
   defer,
   get_link_info,
+  get_random_page_url,
   // Export the interface types
   type IURLInfo,
   type IURLInfoMap,

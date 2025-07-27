@@ -138,3 +138,27 @@ export async function get_link_info(url?: string): Promise<IURLInfoMap> {
     return {};
   }
 }
+
+export async function get_random_page_url(): Promise<string> {
+  const linkInfo = await get_link_info();
+  const urls = Object.keys(linkInfo).filter((url) => {
+    // Filter out non-content pages, but include /d/ and /td/
+    return (
+      !url.includes("/ig66/") &&
+      !url.includes("404") &&
+      !url.includes("search") &&
+      !url.includes("recent") &&
+      !url.includes("index.html") &&
+      !url.includes("graph") &&
+      !url.includes("about") &&
+      !url.includes("random")
+    );
+  });
+
+  if (urls.length === 0) {
+    // Fallback to home if no pages found
+    return "/";
+  }
+
+  return random_from_list(urls);
+}

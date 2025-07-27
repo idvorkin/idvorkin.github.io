@@ -469,7 +469,7 @@
             "doc_size": 19000,
             "file_path": "_site/about.html",
             "incoming_links": [],
-            "last_modified": "2025-03-07T11:51:39-08:00",
+            "last_modified": "2025-07-27T14:46:42.049473",
             "markdown_path": "about.md",
             "outgoing_links": [
                 "/new-skills",
@@ -4486,7 +4486,7 @@
             "incoming_links": [
                 "/about"
             ],
-            "last_modified": "2025-03-07T11:51:39-08:00",
+            "last_modified": "2025-07-27T14:46:42.049473",
             "markdown_path": "_d/recent.md",
             "outgoing_links": [
                 "/new-skills"

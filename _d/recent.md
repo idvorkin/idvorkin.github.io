@@ -35,6 +35,8 @@ Keeping track of recently modified content helps with several aspects of knowled
 3. **Track the evolution** of ideas and concepts over time
 4. **See what's new** without having to browse through everything
 
+Want to explore randomly instead? <a href="/random">Try a random page</a>!
+
 For more on how I approach knowledge management:
 
 {% include summarize-page.html src="/new-skills" %}
