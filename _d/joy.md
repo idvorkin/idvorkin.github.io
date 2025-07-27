@@ -113,6 +113,8 @@ My early [ballooning](/ig66/621) adventures:
 - People often stop me and say "nice shirt," and that always makes me happy
 - The best part: they're so affordable I can wear a different crazy shirt every day
 
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250726_110324.webp)
+
 ### Handing out you are awesome cards
 
 - I discovered these you are awesome cards on TEMU (add picture) they are great!
