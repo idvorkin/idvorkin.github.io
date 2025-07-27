@@ -20,7 +20,7 @@ export function MakeBackLinkHTML(url_info: IURLInfo) {
 /**
  * Returns a random element from an array
  */
-export function random_from_list<T>(list: T[]): T {
+export function random_from_list<T>(list: T[]): T | undefined {
   if (list.length === 0) return undefined;
   return list[Math.floor(Math.random() * list.length)];
 }
@@ -140,25 +140,34 @@ export async function get_link_info(url?: string): Promise<IURLInfoMap> {
 }
 
 export async function get_random_page_url(): Promise<string> {
-  const linkInfo = await get_link_info();
-  const urls = Object.keys(linkInfo).filter((url) => {
-    // Filter out non-content pages, but include /d/ and /td/
-    return (
-      !url.includes("/ig66/") &&
-      !url.includes("404") &&
-      !url.includes("search") &&
-      !url.includes("recent") &&
-      !url.includes("index.html") &&
-      !url.includes("graph") &&
-      !url.includes("about") &&
-      !url.includes("random")
-    );
-  });
+  try {
+    const linkInfo = await get_link_info();
+    const urls = Object.keys(linkInfo).filter((url) => {
+      // Filter out non-content pages using exact path matching
+      const excludedPaths = ["/404", "/404.html", "/search", "/recent", "/index.html", "/graph", "/about", "/random"];
 
-  if (urls.length === 0) {
-    // Fallback to home if no pages found
-    return "/";
+      // Check if URL ends with any excluded path
+      const isExcluded = excludedPaths.some((path) => url === path || url.endsWith(path));
+
+      // Also exclude specific patterns
+      const excludedPatterns = [
+        "/ig66/", // Exclude all ig66 subdirectory pages
+      ];
+
+      const hasExcludedPattern = excludedPatterns.some((pattern) => url.includes(pattern));
+
+      return !isExcluded && !hasExcludedPattern;
+    });
+
+    if (urls.length === 0) {
+      // Fallback to home if no pages found
+      return "/";
+    }
+
+    const randomUrl = random_from_list(urls);
+    return randomUrl || "/"; // Handle undefined case from random_from_list
+  } catch (error) {
+    console.error("🚨 Error getting random page URL:", error);
+    return "/"; // Fallback to home on error
   }
-
-  return random_from_list(urls);
 }

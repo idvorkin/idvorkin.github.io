@@ -43,7 +43,8 @@
       "Bash(npx vitest run:*)",
       "Bash(find:*)",
       "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/65)",
-      "Bash(gh issue:*)"
+      "Bash(gh issue:*)",
+      "Bash(gh api:*)"
     ],
     "deny": []
   }
