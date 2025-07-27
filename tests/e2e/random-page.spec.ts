@@ -115,4 +115,35 @@ test.describe("Random Page Navigation", () => {
     expect(linkHref).toBeTruthy();
     expect(linkHref).not.toBe("#");
   });
+
+  test("random post selector on /recent page works", async ({ page }) => {
+    // Navigate to recent page
+    await page.goto("/recent");
+
+    // Find the random post selector div
+    const randomPostDiv = page.locator("#random-blog-post");
+    await expect(randomPostDiv).toBeVisible();
+
+    // Get initial text
+    const initialText = await randomPostDiv.textContent();
+
+    // Click to load a random post
+    await randomPostDiv.click();
+
+    // Wait for content to change
+    await page.waitForTimeout(500);
+
+    // Verify content has changed
+    const newText = await randomPostDiv.textContent();
+    expect(newText).not.toBe(initialText);
+
+    // Verify it contains a link and description
+    await expect(randomPostDiv.locator("a").first()).toBeVisible();
+    expect(newText).toContain(":");
+
+    // Verify clicking the link navigates to a post
+    const linkHref = await randomPostDiv.locator("a").first().getAttribute("href");
+    expect(linkHref).toBeTruthy();
+    expect(linkHref).not.toBe("#");
+  });
 });

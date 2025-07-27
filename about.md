@@ -33,6 +33,17 @@ Finally, the metaphorical small print: These are my personal opinions, not those
   <a href="/recent">View all recently modified content</a>
 </p>
 
+### Try a random post right here
+
+<div class='alert alert-info' id="random-blog-post">
+    Loading a random blog post... (click anywhere in this box for a different one)
+</div>
+
+<script type="module">
+    import { append_randomizer_div, make_random_post_html } from '/assets/js/index.js';
+    append_randomizer_div("#random-blog-post", async () => await make_random_post_html());
+</script>
+
 ### What does this have to do with writer's block?
 
 From Seth:
@@ -87,17 +98,6 @@ The monkey button selects a random page. You can also <a href="/random">click he
 > Even more true with your thoughts. If you don't know to look for it, if you don't believe it's there, it might as well be deleted. It's worth putting in regular effort to remind ourselves of what we've already known and how it has served us in the past.
 
 The random page feature helps solve this problem by surfacing content you've written but might have forgotten about - just like those anchovies in the back of the fridge.
-
-### Try a random post right here
-
-<div class='alert alert-info' id="random-blog-post">
-    Click here to load a random blog post
-</div>
-
-<script type="module">
-    import { append_randomizer_div, make_random_post_html } from '/assets/js/index.js';
-    append_randomizer_div("#random-blog-post", async () => await make_random_post_html());
-</script>
 
 ### Are you doing this outside of work? How do you have time.
 
