@@ -1,29 +1,23 @@
 {% assign as = {{include.asin}} | split: ";" %}
 
-<table>
-  <tr>
-    {% for a in as %}
-    <td style="text-align: center; padding: 10px">
-      <a
-        href="https://www.amazon.com/dp/{{a}}?tag=ighe-20"
-        target="_blank"
-        rel="noopener"
-      >
-        <img
-          src="https://images-na.ssl-images-amazon.com/images/P/{{a}}.01._SCLZZZZZZZ__SL160_.jpg"
-          alt="Product Image"
-          onerror="this.onerror=null; this.src='https://via.placeholder.com/120x160?text=View+on+Amazon'"
-          style="
-            max-width: 120px;
-            height: auto;
-            border: 1px solid #ddd;
-            padding: 5px;
-          "
-        />
-        <br />
-        <span style="font-size: 0.9em">View on Amazon</span>
-      </a>
-    </td>
-    {% endfor %}
-  </tr>
-</table>
+<div style="margin: 20px 0">
+  {% for a in as %}
+  <a
+    href="https://www.amazon.com/dp/{{a}}?tag=ighe-20"
+    target="_blank"
+    rel="noopener"
+    style="
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #ff9900;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    "
+  >
+    View on Amazon →
+  </a>
+  {% endfor %}
+</div>
