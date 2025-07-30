@@ -102,7 +102,7 @@ I put air-tags on everything, and since the cases don't come with that, I stick 
 - 360-degree camera that captures everything around you
 - What's great is you just record it in 360, then use really nice AI features to find the best view.
 - Does a nice auto upload to web
-- Can put on table and record both sides of the converstion
+- Can put on table and record both sides of the conversation
 
 ### Never use it: Action Camera
 

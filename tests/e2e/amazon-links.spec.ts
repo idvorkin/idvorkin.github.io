@@ -100,10 +100,15 @@ test.describe("Amazon affiliate links", () => {
         }
 
         // Note which source is being used
-        if (src?.includes("m.media-amazon.com")) {
-          console.log("  → Using high-res image from ASIN database");
-        } else if (src?.includes("images-na.ssl-images-amazon.com")) {
-          console.log("  → Using standard Amazon image URL");
+        try {
+          const url = new URL(src || "");
+          if (url.hostname === "m.media-amazon.com") {
+            console.log("  → Using high-res image from ASIN database");
+          } else if (url.hostname === "images-na.ssl-images-amazon.com") {
+            console.log("  → Using standard Amazon image URL");
+          }
+        } catch {
+          // Invalid URL, skip logging
         }
       }
     }
