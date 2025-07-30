@@ -38,6 +38,7 @@ Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizi
 - [Best Practices for AI-Assisted Development](#best-practices-for-ai-assisted-development)
   - [The Art of Prompt Engineering](#the-art-of-prompt-engineering)
   - [Integration Tips](#integration-tips)
+  - [Worktree and PR Workflow](#worktree-and-pr-workflow)
   - [Security Considerations](#security-considerations)
   - [DRY CHOP: Your AI's Cookbook](#dry-chop-your-ais-cookbook)
 - [Congrats you've been promoted: AI Squad Manager](#congrats-youve-been-promoted-ai-squad-manager)
@@ -390,6 +391,66 @@ Challenges in Measurement and Adoption
    - Keep track of prompt patterns that work well
    - Share successful AI interactions with your team
 
+### Worktree and PR Workflow
+
+A structured approach to AI-assisted development using Git worktrees and pull requests:
+
+1. **Start with a Worktree**
+
+   ```bash
+   # Create a new worktree for your feature
+   git worktree add ../feature-branch feature-name
+   cd ../feature-branch
+   ```
+
+   - Keeps your main workspace clean
+   - Allows easy switching between features
+   - Isolates AI experiments from stable code
+
+2. **Create a Draft PR Early**
+
+   ```bash
+   # Push your branch and create a draft PR
+   git push -u origin feature-name
+   gh pr create --draft --title "WIP: Feature description" --body "AI-assisted development in progress"
+   ```
+
+   - Establishes clear scope and intent
+   - Provides a place to track progress and chat history
+   - Enables early feedback and collaboration
+
+3. **Use PR Description as AI Context**
+
+   - Include relevant background information
+   - Link to related issues or discussions
+   - Document the approach you want AI to take
+   - Update as the feature evolves
+
+4. **Structured AI Development**
+
+   - Start with high-level planning in the PR description
+   - Use AI to break down tasks into implementable chunks
+   - Commit frequently with descriptive messages
+   - Include CHOP session logs using tools like [chop-git-latest](https://github.com/idvorkin/settings/blob/7e9e90984dba2650b2cd4ee3a6c9511993ed73f4/shared/zsh_include.sh?plain=1#L708)
+
+5. **Convert to Ready for Review**
+   ```bash
+   # When ready, mark PR as ready for review
+   gh pr ready
+   gh pr edit --add-reviewer team-member
+   ```
+   - Clean up commit history if needed
+   - Ensure all AI-generated code is reviewed
+   - Include summary of AI assistance used
+
+**Benefits of This Workflow:**
+
+- **Isolation**: Worktrees prevent AI experiments from affecting your main development environment
+- **Transparency**: Draft PRs make AI development visible to the team from the start
+- **Traceability**: PR history captures the evolution of AI-assisted features
+- **Collaboration**: Team members can provide early input on AI-generated approaches
+- **Quality**: Structured review process ensures AI code meets team standards
+
 ### Security Considerations
 
 1. **Watch Out for Secrets in Chat Logs**
@@ -420,8 +481,7 @@ remote: Resolve the following violations before pushing again
 Think of your AI assistant as an eager junior developer who can learn and retain knowledge - but only if you teach them properly. Instead of repeating the same instructions in every prompt, establish a single source of truth through your CONVENTIONS.md file. This approach not only saves time but ensures consistency across all AI-generated code. The key is treating conventions as a living document that both teaches the AI and evolves with your project. You can see [an example of this evolution here](https://gist.github.com/idvorkin/6f506f47bf6c4c57a1ff5a2d24e345dd#conventionsmd).
 
 > **Note**: Cursor IDE implements this concept using a `.cursorrules` file that points to your CONVENTIONS.md. Simply create a `.cursorrules` file in your project root with the content `CONVENTIONS.md` to enable this feature ([see example](https://github.com/idvorkin/idvorkin.github.io/commit/332e43c7e211640f55da9be858164e6aa003ab9e)).
-> **2025-06-07: Now I have my own [conventions repo](https://github.com/idvorkin/chop-conventions) that i link in and reference:**
-> {% include alert.html content="For a more structured approach to managing Cursor rules, check out cursor-auto-rules-agile-workflow - a tool that provides automated rule generation and standardized documentation formats." style="info" %}
+> **2025-06-07: Now I have my own [conventions repo](https://github.com/idvorkin/chop-conventions) that i link in and reference:** > {% include alert.html content="For a more structured approach to managing Cursor rules, check out cursor-auto-rules-agile-workflow - a tool that provides automated rule generation and standardized documentation formats." style="info" %}
 
 Check out the [cursor-auto-rules-agile-workflow](https://github.com/bmadcode/cursor-auto-rules-agile-workflow) project.
 
