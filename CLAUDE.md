@@ -103,3 +103,8 @@ When resolving PR feedback:
 3. If uncommitted changes exist, ask the user before discarding them
 4. The pr-feedback-resolver agent should always push changes to remote
    EOF < /dev/null
+
+## Commit Memory Hints
+
+- Put changes to claude and agents into their own commit
+- Always commit after making changes to claude config (agents or claude config)
