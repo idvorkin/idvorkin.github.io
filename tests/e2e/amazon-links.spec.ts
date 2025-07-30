@@ -19,13 +19,21 @@ test.describe("Amazon affiliate links", () => {
     expect(airtagHref).toContain("tag=ighe-20");
     expect(airtagHref).toContain("B0D54JZTHY"); // AirTag ASIN
 
-    // Check image is present
+    // Check image is present and loaded
     const airtagImage = airtagTable.locator("img").first();
     await expect(airtagImage).toBeVisible();
 
     // Check image has proper alt text
     const airtagAlt = await airtagImage.getAttribute("alt");
     expect(airtagAlt).toBeTruthy();
+
+    // Verify image actually loaded (not broken)
+    const airtagImageSrc = await airtagImage.getAttribute("src");
+    expect(airtagImageSrc).toBeTruthy();
+
+    // Check natural width to ensure image loaded
+    const airtagNaturalWidth = await airtagImage.evaluate((img: HTMLImageElement) => img.naturalWidth);
+    expect(airtagNaturalWidth).toBeGreaterThan(0);
 
     // Check for Elevation Labs section
     const elevationSection = page.locator("h4:has-text('Elevation Labs')").first();
@@ -40,6 +48,14 @@ test.describe("Amazon affiliate links", () => {
     const elevationHref = await elevationLink.getAttribute("href");
     expect(elevationHref).toContain("tag=ighe-20");
     expect(elevationHref).toContain("B09ZVPWKK3"); // Elevation Labs ASIN
+
+    // Check Elevation Labs image loaded
+    const elevationImage = elevationTable.locator("img").first();
+    await expect(elevationImage).toBeVisible();
+
+    // Verify image actually loaded (could be placeholder if Amazon doesn't have image)
+    const elevationNaturalWidth = await elevationImage.evaluate((img: HTMLImageElement) => img.naturalWidth);
+    expect(elevationNaturalWidth).toBeGreaterThan(0);
 
     // Check both links open in new tab
     await expect(airtagLink).toHaveAttribute("target", "_blank");
