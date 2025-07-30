@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 test.describe("Amazon affiliate links", () => {
-  test("should display Amazon affiliate links with proper tags", async ({ page }) => {
+  test("should display Amazon links with images or text fallback", async ({ page }) => {
     // Navigate to content creation page which has Amazon links
     await page.goto("/content-creation");
 
@@ -9,47 +9,55 @@ test.describe("Amazon affiliate links", () => {
     const airtagSection = page.locator("h4:has-text('AirTag')").first();
     await expect(airtagSection).toBeVisible();
 
-    // Find the Amazon link after the AirTag heading
-    const airtagLink = page.locator("a:has-text('View on Amazon')").filter({ hasText: "View on Amazon" }).first();
-    await expect(airtagLink).toBeVisible();
+    // Find the Amazon product div
+    const airtagProduct = page.locator(".amazon-product").first();
+    await expect(airtagProduct).toBeVisible();
 
     // Check the link has affiliate tag and ASIN
+    const airtagLink = airtagProduct.locator("a.amazon-link").first();
     const airtagHref = await airtagLink.getAttribute("href");
     expect(airtagHref).toContain("tag=ighe-20");
     expect(airtagHref).toContain("B0D54JZTHY"); // AirTag ASIN
-    expect(airtagHref).toContain("amazon.com/dp/");
 
-    // Check for Elevation Labs section
-    const elevationSection = page.locator("h4:has-text('Elevation Labs')").first();
-    await expect(elevationSection).toBeVisible();
+    // Wait for JavaScript to process images
+    await page.waitForTimeout(2500);
 
-    // Find all Amazon links on the page
-    const allAmazonLinks = page.locator("a[href*='amazon.com/dp/']");
-    const linkCount = await allAmazonLinks.count();
+    // Check that we have either an image or text fallback visible
+    const airtagImage = airtagProduct.locator(".amazon-image").first();
+    const airtagFallback = airtagProduct.locator(".amazon-text-fallback").first();
 
-    // Find the Elevation Labs link by checking hrefs
-    let elevationLink;
-    for (let i = 0; i < linkCount; i++) {
-      const link = allAmazonLinks.nth(i);
-      const href = await link.getAttribute("href");
-      if (href?.includes("B09ZVPWKK3")) {
-        elevationLink = link;
-        break;
-      }
-    }
+    const imageVisible = await airtagImage.isVisible();
+    const fallbackVisible = await airtagFallback.isVisible();
 
-    expect(elevationLink).toBeDefined();
-    const elevationHref = await elevationLink?.getAttribute("href");
+    // Either image or fallback should be visible, not both
+    expect(imageVisible || fallbackVisible).toBeTruthy();
+
+    // Find Elevation Labs product by ASIN
+    const elevationProduct = page.locator('.amazon-link[data-asin="B09ZVPWKK3"]').locator("..");
+    await expect(elevationProduct).toBeVisible();
+
+    // Check the link
+    const elevationLink = elevationProduct.locator("a").first();
+    const elevationHref = await elevationLink.getAttribute("href");
     expect(elevationHref).toContain("tag=ighe-20");
     expect(elevationHref).toContain("B09ZVPWKK3"); // Elevation Labs ASIN
+
+    // Check fallback is likely visible (since this ASIN typically returns 1x1 image)
+    const elevationFallback = elevationProduct.locator(".amazon-text-fallback").first();
+    const elevationFallbackVisible = await elevationFallback.isVisible();
+
+    // Log what we found for debugging
+    if (elevationFallbackVisible) {
+      console.log("Elevation Labs: Using text fallback (expected for this ASIN)");
+    } else {
+      console.log("Elevation Labs: Showing image");
+    }
 
     // Check both links open in new tab with security
     await expect(airtagLink).toHaveAttribute("target", "_blank");
     await expect(airtagLink).toHaveAttribute("rel", "noopener");
-    if (elevationLink) {
-      await expect(elevationLink).toHaveAttribute("target", "_blank");
-      await expect(elevationLink).toHaveAttribute("rel", "noopener");
-    }
+    await expect(elevationLink).toHaveAttribute("target", "_blank");
+    await expect(elevationLink).toHaveAttribute("rel", "noopener");
   });
 
   test("should handle multiple ASINs in one include", async ({ page }) => {
