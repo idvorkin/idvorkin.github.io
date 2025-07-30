@@ -213,7 +213,9 @@ Pro tip for those 3 qualifying sales:
 
 Here's how a successful tech channel monetizes (from their [transparency video](https://www.youtube.com/watch?v=-zt57TWkTF4)):
 
+<!-- TODO: Add techtips2020-revenue.png image
 {%include blob_image_float_right.html src="techtips2020-revenue.png" %}
+-->
 
 [View their estimated YouTube earnings on Social Blade](https://socialblade.com/youtube/channel/UCXuqSBlHAE6Xw-yeJA0Tunw)
 
@@ -246,4 +248,6 @@ Most successful creators combine:
 
 The real money isn't in any single platform - it's in building a brand that transcends platforms. Create because you love it, and treat any money as a bonus.
 
-For more on content creation strategies, see our [content creation guide](/content-creation). For deeper advertising insights, check out our [advertising fundamentals](/advertising).
+{% include summarize-page.html src="/content-creation" %}
+
+{% include summarize-page.html src="/advertising" %}
