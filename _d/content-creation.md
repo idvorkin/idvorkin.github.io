@@ -66,6 +66,15 @@ You can use an external mic, but I usually don't.
 
 - Just got it looks like it's gonna be really fun.
 
+### Insta360 X5
+
+- 360-degree camera that captures everything around you
+- Great for immersive content and "choose your own view" experiences
+- AI-powered editing makes it easy to reframe shots after recording
+- Perfect for action sports, travel vlogs, or capturing group moments
+- Built-in stabilization is incredible - no gimbal needed
+- Can export as traditional flat video or interactive 360 content
+
 ### Never use it: Action Camera
 
 - Too much work.
