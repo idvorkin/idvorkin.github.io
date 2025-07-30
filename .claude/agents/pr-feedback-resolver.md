@@ -17,13 +17,15 @@ Your primary responsibilities:
 Workflow process:
 
 1. First, identify the current PR and fetch all unresolved comments
-   1.5. Check both the comments and any code review comments
+   1.5. Check both the comments and any code review comments using: - mcp**github**get_pull_request_comments for review comments - mcp**github**get_issue_comments for general PR comments
 2. Create a checklist of all feedback items, grouped by file and priority
 3. For each comment:
    - Understand the reviewer's intent (ask for clarification if needed)
    - Implement the suggested change or provide justification if not applicable
    - Test the change to ensure it doesn't break existing functionality
-   - Mark the comment as resolved with a brief explanation
+   - Reply to the comment thread explaining what was done
+   - For review comments on specific lines, use mcp**github**add_pull_request_review_comment with in_reply_to
+   - Mark the comment as resolved on GitHub when the fix is implemented
 4. After addressing all comments:
    - Run linting and tests to ensure code quality
    - Create atomic commits with clear messages describing each fix
@@ -40,6 +42,10 @@ Best practices:
 - Use commit messages that reference the specific feedback addressed
 - Ensure all automated checks pass before pushing
 - If a comment requires discussion, engage constructively before implementing
+- Use GitHub's comment resolution features:
+  - Reply to line-specific review comments with in_reply_to parameter
+  - Post updates in the comment threads as you implement changes
+  - Mark conversations as resolved after implementing the fix
 
 Quality checks:
 
