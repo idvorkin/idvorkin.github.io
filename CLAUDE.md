@@ -93,4 +93,13 @@ After a PR is merged, always:
 5. Delete remote branch: `git push origin --delete <branch-name>`
 
 This keeps the repository clean and ensures you're always working with the latest code.
-EOF < /dev/null
+
+## PR Feedback Resolution
+
+When resolving PR feedback:
+
+1. Always commit and push changes after implementing feedback
+2. Check for uncommitted changes before starting or finishing work
+3. If uncommitted changes exist, ask the user before discarding them
+4. The pr-feedback-resolver agent should always push changes to remote
+   EOF < /dev/null

@@ -213,15 +213,4 @@ Half of advertising spend is still on TV. Tech companies want to capture that sp
 
 ## How much can a creator make
 
-Creator monetization has become a significant part of the advertising ecosystem. For a comprehensive guide on all monetization methods, including detailed breakdowns and reality checks, see our [Creator Monetization Guide](/monetize).
-
-Key monetization methods include:
-
-- Affiliate Marketing (e.g., Amazon Associates, typically 1-4% commission)
-- Ad Revenue Sharing (YouTube ~$7.50 per 1000 views)
-- Brand Sponsorships (the most lucrative option)
-- Direct Fan Support (Patreon, tips)
-- Merchandise
-- Digital Products
-
-For case studies and detailed revenue breakdowns (including LinusTechTips), check out the [monetization guide](/monetize).
+This topic has moved to our comprehensive [Creator Monetization Guide](/monetize), which covers all monetization methods, platform strategies, and real earnings data.

@@ -161,7 +161,7 @@ Killer, just take video on your phone, then use CapCut to edit/auto-caption. It'
 
 ## Monetization: The Reality Check
 
-Creator monetization is complex and often disappointing. For a comprehensive guide covering all monetization methods, platform-specific strategies, and real earnings data, check out our dedicated [Creator Monetization Guide](/monetize).
+Creator monetization is complex and often disappointing. For a comprehensive guide covering all monetization methods, platform-specific strategies, and real earnings data:\n\n{% include summarize-page.html src="/monetize" %}
 
 ### Quick Summary
 

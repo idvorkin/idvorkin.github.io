@@ -41,41 +41,9 @@ Let's talk money. Whether you're a content creator dreaming of YouTube riches or
 
 ## The Advertising Landscape
 
-Advertising is a $155 billion business in the USA. Of that, $85B is digital and $70B is TV (with digital platforms investing heavily in video to capture TV spend).
+For a comprehensive understanding of the advertising industry, including market size, why brands advertise, and industry spending breakdowns, see our advertising guide:
 
-### Why Brands Advertise
-
-A brand is the perception that lives in customers' minds. Since many products are fungible, advertising serves two critical purposes:
-
-1. **Discovery** - Making customers think of your brand
-2. **Preference** - Convincing customers your brand is best
-
-The key metric is Customer Acquisition Cost (CAC) vs Customer Lifetime Value (CLTV). As long as CLTV > CAC, it's worth spending on advertising.
-
-{% include summarize-page.html src="/life-as-business" %}
-
-### How Much Do Companies Spend?
-
-Top US advertisers spend billions annually:
-
-| Brand          | Annual Ad Spend |
-| -------------- | --------------- |
-| Facebook       | $10B            |
-| Comcast        | $5.75B          |
-| Amazon         | $3.38B          |
-| General Motors | $3.25B          |
-
-### Advertising Spend by Industry
-
-Companies spend varying percentages of gross revenue on advertising:
-
-| Industry          | % of Revenue |
-| ----------------- | ------------ |
-| Consumer Products | 24%          |
-| Consumer Services | 15%          |
-| Tech              | 15%          |
-| Education         | 11%          |
-| Banking           | 8%           |
+{% include summarize-page.html src="/advertising" %}
 
 ### How Much Do Ad Platforms Make?
 
@@ -111,7 +79,7 @@ In 2019, major ad platforms generated:
 - **Ad Supply**: Number of eyeballs on your site
 - **Ad Inventory**: Sellable impressions (ad load × ad supply)
 
-Creators generate ad inventory; platforms sell it by matching with advertisers.
+Creators generate ad inventory; platforms sell it by matching with advertisers. For a comprehensive guide to content creation beyond just monetization:\n\n{% include summarize-page.html src="/content-creation" %}
 
 ## Creator Monetization Models
 
@@ -258,6 +226,37 @@ A good tongue-in-cheek take on the advertising landscape:
 
 {% include youtube.html src="qQiui9h71l8" %}
 
-{% include summarize-page.html src="/content-creation" %}
+## How Much Has Igor Made?
 
-{% include summarize-page.html src="/advertising" %}
+Let's get real with some actual numbers. After years of creating content, here's what I've earned:
+
+### Amazon Associates
+
+- **Total earnings**: $33.69 (shown above)
+- **Time invested**: Years of blog posts and reviews
+- **Reality**: Barely covers a nice lunch
+
+### YouTube Ad Revenue
+
+- **Total earnings**: $0 (not monetized)
+- **Reason**: Haven't hit the 1,000 subscriber / 4,000 watch hour threshold
+
+### Direct Sponsorships
+
+- **Total earnings**: $0
+- **Attempts**: Zero (focused on authentic content over monetization)
+
+### My Monetization Strategy
+
+Instead of chasing pennies from ads, I've focused on:
+
+1. **Building skills** that increase my market value
+2. **Creating authentic content** I'm proud of
+3. **Networking** with interesting people
+4. **Learning** from the creative process itself
+
+The ROI? Immeasurable in terms of personal growth, professional opportunities, and meaningful connections. The monetary ROI? Well, you've seen the numbers.
+
+For more on my approach to financial independence and why I don't chase creator revenue, check out my gap year reflections:
+
+{% include summarize-page.html src="/gap-year" %}
