@@ -171,6 +171,8 @@ Before we dive in, let's be clear: 99% of creators make less than $100/month. Th
 
 Remember when I thought I'd make bank from those product links? LOL. Here's what they don't tell you:
 
+![My Amazon Associates earnings - years of work for $33.69](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250729_210525.webp)
+
 **The 3 Sales Requirement (The Catch-22)**:
 
 - You need 3 qualifying sales in your first 180 days just to keep your account
