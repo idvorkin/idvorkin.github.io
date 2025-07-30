@@ -48,7 +48,8 @@
       "WebFetch(domain:www.amazon.com)",
       "Bash(wget:*)",
       "Bash(open http://localhost:4000/test-amazon.html)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(pre-commit run:*)"
     ],
     "deny": []
   }
