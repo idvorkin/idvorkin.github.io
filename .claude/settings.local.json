@@ -47,7 +47,8 @@
       "Bash(gh api:*)",
       "WebFetch(domain:www.amazon.com)",
       "Bash(wget:*)",
-      "Bash(open http://localhost:4000/test-amazon.html)"
+      "Bash(open http://localhost:4000/test-amazon.html)",
+      "Bash(python3:*)"
     ],
     "deny": []
   }

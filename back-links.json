@@ -1399,12 +1399,12 @@
         },
         "/content-creation": {
             "description": "Ah, content creation! Remember when it meant awkwardly holding your phone at arm’s length, hoping your thumb wouldn’t photobomb your masterpiece? We’ve come a long way, baby! Whether you’re aiming to be the next TikTok sensation or just want to share your magic tricks without accidentally revealing them, this guide will help you level up from “my mom’s my only viewer” to “wait, is that video going viral?”\n\n",
-            "doc_size": 17000,
+            "doc_size": 38000,
             "file_path": "_site/content-creation.html",
             "incoming_links": [
                 "/y25"
             ],
-            "last_modified": "2025-07-29T19:22:54.948095",
+            "last_modified": "2025-07-29T20:49:20.209217",
             "markdown_path": "_d/content-creation.md",
             "outgoing_links": [
                 "/content-audience",
