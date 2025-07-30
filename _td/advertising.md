@@ -211,6 +211,33 @@ https://blog.hubspot.com/marketing/guerilla-marketing-examples
 
 Half of advertising spend is still on TV. Tech companies want to capture that spending on digital advertising.
 
+## Key Advertising Terms
+
+Understanding these terms is crucial for navigating the advertising landscape:
+
+### Performance vs Display
+
+- **Performance Advertising**: Pay for action (clicks). Direct marketing approach using Cost Per Click (CPC).
+- **Display Advertising**: Pay for impressions. Brand marketing using CPM (Cost Per Thousand impressions).
+
+### CPM and CPC
+
+- **CPM**: Cost per thousand views/impressions
+- **eCPM**: Effective CPM (accounts for viewability)
+- **CPC**: Cost per click
+
+### ROAS and CTR
+
+- **ROAS**: Return on Ad Spend (Sales ÷ Campaign Price)
+- **CTR**: Click-through rate (Clicks ÷ Impressions)
+
+### Ad Inventory and Supply
+
+- **Ad Supply**: Number of eyeballs on your site
+- **Ad Inventory**: Sellable impressions (ad load × ad supply)
+
+Creators generate ad inventory; platforms sell it by matching with advertisers.
+
 ## How much can a creator make
 
 This topic has moved to our comprehensive [Creator Monetization Guide](/monetize), which covers all monetization methods, platform strategies, and real earnings data.

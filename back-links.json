@@ -4694,14 +4694,12 @@
         },
         "/td/advertising": {
             "description": "Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.\n\n",
-            "doc_size": 24000,
+            "doc_size": 25000,
             "file_path": "_site/td/advertising.html",
             "incoming_links": [],
-            "last_modified": "2025-07-30T06:03:04.116695",
+            "last_modified": "2025-07-30T10:44:22.493607",
             "markdown_path": "_td/advertising.md",
-            "outgoing_links": [
-                "/monetize"
-            ],
+            "outgoing_links": [],
             "redirect_url": "",
             "title": "Advertising",
             "url": "/td/advertising"

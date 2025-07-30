@@ -14,11 +14,6 @@ Let's talk money. Whether you're a content creator dreaming of YouTube riches or
   - [How Much Do Companies Spend?](#how-much-do-companies-spend)
   - [Advertising Spend by Industry](#advertising-spend-by-industry)
   - [How Much Do Ad Platforms Make?](#how-much-do-ad-platforms-make)
-- [Key Advertising Terms](#key-advertising-terms)
-  - [Performance vs Display](#performance-vs-display)
-  - [CPM and CPC](#cpm-and-cpc)
-  - [ROAS and CTR](#roas-and-ctr)
-  - [Ad Inventory and Supply](#ad-inventory-and-supply)
 - [Creator Monetization Models](#creator-monetization-models)
   - [The Hard Truth](#the-hard-truth)
   - [Ad Revenue Sharing](#ad-revenue-sharing)
@@ -56,30 +51,11 @@ In 2019, major ad platforms generated:
 | YouTube  | $15B    |
 | Amazon   | $14B    |
 
-## Key Advertising Terms
+For key advertising terms and concepts (CPM, CPC, ROAS, CTR, ad inventory), see the advertising guide above.
 
-### Performance vs Display
+For a comprehensive guide to content creation beyond just monetization:
 
-- **Performance Advertising**: Pay for action (clicks). Direct marketing approach using Cost Per Click (CPC).
-- **Display Advertising**: Pay for impressions. Brand marketing using CPM (Cost Per Thousand impressions).
-
-### CPM and CPC
-
-- **CPM**: Cost per thousand views/impressions
-- **eCPM**: Effective CPM (accounts for viewability)
-- **CPC**: Cost per click
-
-### ROAS and CTR
-
-- **ROAS**: Return on Ad Spend (Sales ÷ Campaign Price)
-- **CTR**: Click-through rate (Clicks ÷ Impressions)
-
-### Ad Inventory and Supply
-
-- **Ad Supply**: Number of eyeballs on your site
-- **Ad Inventory**: Sellable impressions (ad load × ad supply)
-
-Creators generate ad inventory; platforms sell it by matching with advertisers. For a comprehensive guide to content creation beyond just monetization:\n\n{% include summarize-page.html src="/content-creation" %}
+{% include summarize-page.html src="/content-creation" %}
 
 ## Creator Monetization Models
 
