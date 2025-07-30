@@ -55,7 +55,8 @@
       "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/69)",
       "mcp__github-server__get_pull_request_comments",
       "mcp__github-server__get_pull_request",
-      "mcp__github-server__add_issue_comment"
+      "mcp__github-server__add_issue_comment",
+      "mcp__github-server__list_pull_requests"
     ],
     "deny": []
   }
