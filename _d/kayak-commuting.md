@@ -4,6 +4,7 @@ title: "Kayak Commuting: From Parking Fees to Paddling Adventures"
 permalink: /kayak
 tags:
   - kayaking
+image: https://raw.githubusercontent.com/idvorkin/ipaste/main/20250729_191229.webp
 ---
 
 When Meta announced they'd start charging $15 a day for parking, my first thought was: "Are you kidding me? Fifteen dollars a DAY?" I couldn't believe they were suddenly gouging us employees for something that had been free for years. The math was infuriating - that's $75 a week, $300 a month, nearly $4,000 a year just to park my damn car at work!
@@ -11,6 +12,8 @@ When Meta announced they'd start charging $15 a day for parking, my first though
 Wait a second you ask - "I thought you said you hated driving and rode 3000 miles a year since you biked to work everyday?" Ah, well not exactly. See, since I got the [Tesla](/tesla), it drives me, and so my armada of bicycles has been relegated to the garage of forgotten hobbies.
 
 But, this $15 a day was a great excuse, I can restart my passion of biking to work. But then I thought, hey wait a second, why bike commute? I could totally Kayak commute!
+
+![Kayaking on Lake Union during commute](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250729_191229.webp)
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -34,7 +37,7 @@ I can close the last few blocks with a lime scooter, which is wonderful!
 
 Humorously my bike ride is actually 2 miles longer.
 
-![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250727_165911.webp)
+![Kayak commute route map through Lake Union](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250727_165911.webp)
 
 {% include instagram_reel.html src="DMVWnCRIzja" %}
 
