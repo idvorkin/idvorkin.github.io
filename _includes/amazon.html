@@ -1,10 +1,15 @@
 {% assign as = {{include.asin}} | split: ";" %}
 
 <div class="amazon-products" style="margin: 20px 0">
-  {% for a in as %}
+  {% for a in as %} {% assign product = site.data.asins[a] %}
   <div
     class="amazon-product"
-    style="display: inline-block; margin: 10px; vertical-align: top"
+    style="
+      display: inline-block;
+      margin: 10px;
+      vertical-align: top;
+      max-width: 200px;
+    "
   >
     <a
       href="https://www.amazon.com/dp/{{a}}?tag=ighe-20"
@@ -12,7 +17,31 @@
       rel="noopener"
       class="amazon-link"
       data-asin="{{a}}"
+      style="text-decoration: none; color: inherit"
     >
+      {% if product and product.image %}
+      <img
+        src="{{ product.image }}"
+        alt="{{ product.title | default: 'View on Amazon' }}"
+        class="amazon-image"
+        style="
+          max-width: 160px;
+          height: auto;
+          border: 1px solid #ddd;
+          padding: 5px;
+          display: block;
+          margin: 0 auto;
+        "
+      />
+      <div style="margin-top: 10px; font-size: 14px; line-height: 1.4">
+        <div style="font-weight: bold; margin-bottom: 5px">
+          {{ product.title | truncate: 50 }}
+        </div>
+        {% if product.price %}
+        <div style="color: #b12704; font-weight: bold">{{ product.price }}</div>
+        {% endif %}
+      </div>
+      {% else %}
       <img
         src="https://images-na.ssl-images-amazon.com/images/P/{{a}}.01._SCLZZZZZZZ__SL160_.jpg"
         alt="View on Amazon"
@@ -25,6 +54,7 @@
           display: block;
         "
       />
+      {% endif %}
       <span
         class="amazon-text-fallback"
         style="
