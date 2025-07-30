@@ -211,41 +211,33 @@ https://blog.hubspot.com/marketing/guerilla-marketing-examples
 
 Half of advertising spend is still on TV. Tech companies want to capture that spending on digital advertising.
 
+## Key Advertising Terms
+
+Understanding these terms is crucial for navigating the advertising landscape:
+
+### Performance vs Display
+
+- **Performance Advertising**: Pay for action (clicks). Direct marketing approach using Cost Per Click (CPC).
+- **Display Advertising**: Pay for impressions. Brand marketing using CPM (Cost Per Thousand impressions).
+
+### CPM and CPC
+
+- **CPM**: Cost per thousand views/impressions
+- **eCPM**: Effective CPM (accounts for viewability)
+- **CPC**: Cost per click
+
+### ROAS and CTR
+
+- **ROAS**: Return on Ad Spend (Sales ÷ Campaign Price)
+- **CTR**: Click-through rate (Clicks ÷ Impressions)
+
+### Ad Inventory and Supply
+
+- **Ad Supply**: Number of eyeballs on your site
+- **Ad Inventory**: Sellable impressions (ad load × ad supply)
+
+Creators generate ad inventory; platforms sell it by matching with advertisers.
+
 ## How much can a creator make
 
-Not quite related to advertising, but a related concept is how much can creators make. Here is the [breakdown for LinusTechTips](https://www.youtube.com/watch?v=-zt57TWkTF4) a tech channel. You see their estimated youtube usage using [social blade](https://socialblade.com/youtube/channel/UCXuqSBlHAE6Xw-yeJA0Tunw)
-{%include blob_image_float_right.html src="techtips2020-revenue.png" %}
-
-### Affiliate Marketing
-
-This is when creators say, use square space, it's because square space gives them a cut of people who sign up, for square space it's TK dollars per signup.
-
-This is also when creators say "when you click this link I'll get some money" Amazon used to pay north of 10% cut, but they did a major reduction during CV19.
-
-### Ad revenue sharing.
-
-Youtube gives revenue of ~ 7.50\$ per 1000 views. If you go viral and get a million videos that's 7500K views.
-
-Here's a tool to show how much people make estimated: https://influencermarketinghub.com/youtube-money-calculator/
-
-### Brand sponsorship.
-
-The better deal is to get sponsor ship. E.g. a brand pays you to show their content.
-
-### Consumer Payment + Tips
-
-Creators can skip the need for brand influence, and be paid by advertisers directly. Examples of doing this are patreon and tipping jars.
-
-### Merch
-
-That's what those t-shirts and hats are about.
-
-### Bootstraping - Crowd funding
-
-Examples here are kick starter.
-
-### Ads and sponsored spots
-
-A good tongue and cheeck shot at ads
-
-{% include youtube.html src="qQiui9h71l8" %}
+This topic has moved to our comprehensive [Creator Monetization Guide](/monetize), which covers all monetization methods, platform strategies, and real earnings data.

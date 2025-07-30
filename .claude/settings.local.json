@@ -50,7 +50,9 @@
       "Bash(open http://localhost:4000/test-amazon.html)",
       "Bash(python3:*)",
       "Bash(pre-commit run:*)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(git fetch:*)",
+      "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/69)"
     ],
     "deny": []
   }
