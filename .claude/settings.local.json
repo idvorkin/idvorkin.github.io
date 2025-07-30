@@ -44,7 +44,10 @@
       "Bash(find:*)",
       "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/65)",
       "Bash(gh issue:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "WebFetch(domain:www.amazon.com)",
+      "Bash(wget:*)",
+      "Bash(open http://localhost:4000/test-amazon.html)"
     ],
     "deny": []
   }
