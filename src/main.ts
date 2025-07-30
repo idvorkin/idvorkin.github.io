@@ -15,6 +15,7 @@ import {
 import "./graph";
 import { enableHeaderCopyLinks } from "./header-copy-link";
 import { enableImageZoom } from "./image-zoom";
+import { initDevInfo } from "./dev-info";
 
 // Type declarations for external libraries
 declare global {
@@ -503,9 +504,12 @@ function load_globals() {
 
   // Initialize image zoom functionality
   enableImageZoom();
+
+  // Initialize dev info display
+  initDevInfo();
 }
 
-export { load_globals, get_link_info, shuffle, random_from_list, append_randomizer_div, enableHeaderCopyLinks };
+export { load_globals, get_link_info, shuffle, random_from_list, append_randomizer_div, enableHeaderCopyLinks, initDevInfo };
 
 // Auto-initialize when the script loads
 if (typeof $ !== "undefined" && $.fn && $.fn.ready) {

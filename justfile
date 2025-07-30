@@ -197,6 +197,8 @@ coverage-report:
 
 jekyll-serve:
     #!/usr/bin/env sh
+    # Update git branch info for dev banner
+    echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
     if [ "$(uname)" = "Darwin" ]; then
         just internal-jekyll-mac-serve
     else

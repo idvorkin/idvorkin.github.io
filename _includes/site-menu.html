@@ -73,6 +73,11 @@
 <div id="autocomplete-search-box" style="display: none">
   <!-- Keep search box hidden, and only access the detached state -->
 </div>
+<!-- Branch info for dev server -->
+<script>
+  // Embed branch info directly for dev server
+  window.__GIT_BRANCH__ = "{{ site.data.git.branch }}";
+</script>
 
 <script type="module">
   import { CreateAutoComplete } from "/assets/js/index.js";
