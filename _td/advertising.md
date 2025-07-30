@@ -213,39 +213,21 @@ Half of advertising spend is still on TV. Tech companies want to capture that sp
 
 ## How much can a creator make
 
-Not quite related to advertising, but a related concept is how much can creators make. Here is the [breakdown for LinusTechTips](https://www.youtube.com/watch?v=-zt57TWkTF4) a tech channel. You see their estimated youtube usage using [social blade](https://socialblade.com/youtube/channel/UCXuqSBlHAE6Xw-yeJA0Tunw)
-{%include blob_image_float_right.html src="techtips2020-revenue.png" %}
+Creator monetization has become a significant part of the advertising ecosystem. For a comprehensive guide on all monetization methods, including detailed breakdowns and reality checks, see our [Creator Monetization Guide](/monetize).
 
-### Affiliate Marketing
+Key monetization methods include:
 
-This is when creators say, use square space, it's because square space gives them a cut of people who sign up, for square space it's TK dollars per signup.
+- Affiliate Marketing (e.g., Amazon Associates, typically 1-4% commission)
+- Ad Revenue Sharing (YouTube ~$7.50 per 1000 views)
+- Brand Sponsorships (the most lucrative option)
+- Direct Fan Support (Patreon, tips)
+- Merchandise
+- Digital Products
 
-This is also when creators say "when you click this link I'll get some money" Amazon used to pay north of 10% cut, but they did a major reduction during CV19.
+For case studies and detailed revenue breakdowns (including LinusTechTips), check out the [monetization guide](/monetize).
 
-### Ad revenue sharing.
+### Quick Reality Check
 
-Youtube gives revenue of ~ 7.50\$ per 1000 views. If you go viral and get a million videos that's 7500K views.
-
-Here's a tool to show how much people make estimated: https://influencermarketinghub.com/youtube-money-calculator/
-
-### Brand sponsorship.
-
-The better deal is to get sponsor ship. E.g. a brand pays you to show their content.
-
-### Consumer Payment + Tips
-
-Creators can skip the need for brand influence, and be paid by advertisers directly. Examples of doing this are patreon and tipping jars.
-
-### Merch
-
-That's what those t-shirts and hats are about.
-
-### Bootstraping - Crowd funding
-
-Examples here are kick starter.
-
-### Ads and sponsored spots
-
-A good tongue and cheeck shot at ads
+A good tongue-in-cheek take on ads:
 
 {% include youtube.html src="qQiui9h71l8" %}
