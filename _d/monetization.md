@@ -52,6 +52,8 @@ A brand is the perception that lives in customers' minds. Since many products ar
 
 The key metric is Customer Acquisition Cost (CAC) vs Customer Lifetime Value (CLTV). As long as CLTV > CAC, it's worth spending on advertising.
 
+{% include summarize-page.html src="/life-as-business" %}
+
 ### How Much Do Companies Spend?
 
 Top US advertisers spend billions annually:
@@ -116,6 +118,8 @@ Creators generate ad inventory; platforms sell it by matching with advertisers.
 ### The Hard Truth
 
 Before diving into specifics: **99% of creators make less than $100/month**. The top 1% make all the money, and even they hustle harder than you'd believe. Do this because you love it, not for the money.
+
+{% include summarize-page.html src="/retire" %}
 
 ### Ad Revenue Sharing
 
@@ -247,6 +251,12 @@ Most successful creators combine:
 - Speaking/consulting gigs
 
 The real money isn't in any single platform - it's in building a brand that transcends platforms. Create because you love it, and treat any money as a bonus.
+
+### A Reality Check on Ads
+
+A good tongue-in-cheek take on the advertising landscape:
+
+{% include youtube.html src="qQiui9h71l8" %}
 
 {% include summarize-page.html src="/content-creation" %}
 

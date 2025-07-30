@@ -225,9 +225,3 @@ Key monetization methods include:
 - Digital Products
 
 For case studies and detailed revenue breakdowns (including LinusTechTips), check out the [monetization guide](/monetize).
-
-### Quick Reality Check
-
-A good tongue-in-cheek take on ads:
-
-{% include youtube.html src="qQiui9h71l8" %}
