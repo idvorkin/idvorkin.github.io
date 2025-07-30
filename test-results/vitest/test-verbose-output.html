@@ -25,9 +25,6 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
 [22m[39mCopied header link: https://idvorkin.azurewebsites.net/manager-book/test-section
 
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
-
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
 [22m[39mCopied header link: http://idvorkin.azurewebsites.net/simple-page/anchor
 
@@ -48,9 +45,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
-[22m[39mToggle element with ID remaining-posts-toggle not found
-
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
 [22m[39m❌ Error loading recent posts: Error: Test error
     at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent-posts.test.ts:503:69
@@ -66,6 +60,30 @@ npx vitest run --reporter=verbose
 
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
 [22m[39m❌ non-existent-container container not found in DOM
+
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
+
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould handle missing properties with defaults
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfilterRealPages[2m > [22mshould filter out pages with empty titles or descriptions
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould sort pages by last_modified date, newest first
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould fallback to doc_size if last_modified dates are missing
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould not modify the original array
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould return the specified number of pages
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould handle array with fewer pages than requested count
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould generate correct HTML for recent pages
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould truncate descriptions longer than 100 characters
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould show message for empty pages array
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould update the container with recent posts HTML
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould show error message when getProcessedPages fails
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
+[22m[39mToggle element with ID remaining-posts-toggle not found
 
 [90mstderr[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle errors
 [22m[39m❌ Error loading recent posts: Error: Test error
@@ -106,24 +124,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould handle missing properties with defaults
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfilterRealPages[2m > [22mshould filter out pages with empty titles or descriptions
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould sort pages by last_modified date, newest first
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould fallback to doc_size if last_modified dates are missing
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould not modify the original array
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould return the specified number of pages
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould handle array with fewer pages than requested count
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould generate correct HTML for recent pages
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould truncate descriptions longer than 100 characters
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould show message for empty pages array
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould update the container with recent posts HTML
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould show error message when getProcessedPages fails
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
@@ -142,16 +142,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould use default parameters when not provided
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould handle mixed content between H2 elements
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould use container selector when provided
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould handle URL encoded values
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould use window.location.href when no URL is provided
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with title and content
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with anchor
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
@@ -179,6 +169,23 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould handle URL encoded values
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould use window.location.href when no URL is provided
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with title and content
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with anchor
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
 [90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
 [22m[39mappend_randomizer_div #non-existent not present
 
@@ -193,13 +200,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould append content from the factory when parent is found
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould handle click events on non-link elements
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not regenerate content when clicking on a link
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
 [90mstdout[2m | src/__tests__/main.test.ts
 [22m[39m🖼️ Enabling image zoom functionality
 
@@ -244,7 +244,7 @@ npx vitest run --reporter=verbose
 
 [2m Test Files [22m [1m[32m14 passed[39m[22m[90m (14)[39m
 [2m      Tests [22m [1m[32m163 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (168)[39m
-[2m   Start at [22m 17:51:13
-[2m   Duration [22m 3.52s[2m (transform 578ms, setup 217ms, collect 773ms, tests 437ms, environment 5.24s, prepare 1.26s)[22m
+[2m   Start at [22m 17:53:02
+[2m   Duration [22m 3.41s[2m (transform 528ms, setup 205ms, collect 684ms, tests 412ms, environment 5.11s, prepare 1.26s)[22m
 
 </pre></body></html>
