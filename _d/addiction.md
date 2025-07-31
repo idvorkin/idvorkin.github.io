@@ -28,7 +28,7 @@ Addiction is not about drugs or alcohol - it is about escape. Quoting "Do the Wo
     - [Covid 19 News](#covid-19-news)
     - [Alcohol](#alcohol)
     - [Thinking about work while at home](#thinking-about-work-while-at-home)
-    - [Work Addicition and Success Addicition](#work-addicition-and-success-addicition)
+    - [Work Addiction and Success Addiction](#work-addiction-and-success-addiction)
 - [Getting Rid of 'em](#getting-rid-of-em)
 - [Other thoughts on addiction](#other-thoughts-on-addiction)
 - [Addiction to flow/production/productivity](#addiction-to-flowproductionproductivity)
@@ -69,7 +69,7 @@ This platform sucked me in before I realized how much of my time I'd spent sucke
 
 ### Covid 19 News
 
-I was taking a break from working, and [Covid 19](/covid) happened, before I knew it I was sucked into the news, I think learned the word crisis porn, and realized I was wasting slews of my life on things outside of my Circle of Concern, so I let that go. Tough, but totally worth it.
+I was taking a break from working, and [Covid 19](/covid) happened, before I knew it I was sucked into the news, I think I learned the word crisis porn, and realized I was wasting slews of my life on things outside of my Circle of Concern, so I let that go. Tough, but totally worth it.
 
 ### Alcohol
 
@@ -77,18 +77,18 @@ I was taking a break from working, and [Covid 19](/covid) happened, before I kne
 
 {%include summarize-page.html src="/mind-at-work" %}
 
-### Work Addicition and Success Addicition
+### Work Addiction and Success Addiction
 
 See midlife notes on from strength to strength.
 
 {%include summarize-page.html src="/midlife" %}
 
-- Success => Having more then others
+- Success => Having more than others
 - Failure => Having Less
 
 A few problems of course: 1. You change your definition of others 1. It gets hard and harder as you get into midlife
 
-Far better is to define satifiscation as
+Far better is to define satisfaction as
 
 1.  What you want / what you have
 

@@ -39,11 +39,11 @@ I need to reflect - what is the difference between these concepts in my model? C
 
 {% include summarize-page.html src="/activation" %}
 
-There is an analogy here with physical devices, like cars have a starter motor which is only requiref or starting up after witch you switch to the steady state motor
+There is an analogy here with physical devices, like cars have a starter motor which is only required for starting up after which you switch to the steady state motor
 
 ### We can go into energy debt, but you need to always pay the piper
 
-Lets say I'd naturally have 4 hours of energy today. Lets say I drink a tonne of coffee and add an extra 1 hours. That gives me 1 hours of energy! w00t! But then, since I'm jacked up on caffeiene, I sleep poorly, and am slogging through tomorrow, and operating at 50% efficiency for most of the 4 hours the next day, basically losing 1 hour. So, now I'm actually down an hour over 2 days. Ugh. And worse, I'm in debt as that energy was probably allocated to something else.
+Let's say I'd naturally have 4 hours of energy today. Let's say I drink a ton of coffee and add an extra 1 hours. That gives me 5 hours of energy! w00t! But then, since I'm jacked up on caffeine, I sleep poorly, and am slogging through tomorrow, and operating at 50% efficiency for most of the 4 hours the next day, basically losing 1 hour. So, now I'm actually down an hour over 2 days. Ugh. And worse, I'm in debt as that energy was probably allocated to something else.
 
 ### You can reduce the energy required
 
@@ -105,7 +105,7 @@ Cocaine? Mania? Not good.
 
 ### Match task to energy
 
-You'd think there is no point spending "my high energy/will power time" on a low computational activity like goint to the gym. So you'd think I'd go to the gym after work.
+You'd think there is no point spending "my high energy/will power time" on a low computational activity like going to the gym. So you'd think I'd go to the gym after work.
 
 Except. Going to the gym charges me up, and it takes significant will power. So I take my high energy in the morning when my will power is high and spend it on going to the gym.
 

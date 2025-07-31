@@ -128,7 +128,7 @@ Google vs Apple.
 
 ### Virtual Boxing
 
-I accidently punched a hole in my TV.
+I accidentally punched a hole in my TV.
 
 ### Virtual Tennis
 

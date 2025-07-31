@@ -16,6 +16,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
 - [RAG a psychiatrist](#rag-a-psychiatrist)
 - [What I wrote summary](#what-i-wrote-summary)
 - [Diary](#diary)
+  - [2025-07-20](#2025-07-20)
+  - [2025-07-13](#2025-07-13)
   - [2024-10-27](#2024-10-27)
   - [2024-10-26](#2024-10-26)
   - [2024-10-20](#2024-10-20)
@@ -27,7 +29,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get sup
     - [Awesome talks](#awesome-talks)
     - [Working through making Neural Nets](#working-through-making-neural-nets)
   - [2024-07-31](#2024-07-31)
-    - [Auto code editting (via Aider) - TOO Soon](#auto-code-editting-via-aider---too-soon)
+    - [Auto code editing (via Aider) - TOO Soon](#auto-code-editing-via-aider---too-soon)
   - [2024-07-30](#2024-07-30)
     - [Agenic Frameworks](#agenic-frameworks)
   - [2024-06-22](#2024-06-22)
@@ -121,6 +123,100 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
   - Logging and debugging setup with Loguru and PuDB.
 
 ## Diary
+
+### 2025-07-21
+
+#### The Great Typo Fix Adventure: A Tale of AI, Automation, and Unexpected Consequences
+
+Today marked an interesting milestone in AI-assisted development. We asked Claude Code to fix typos across the entire blog, which led to [PR #54](https://github.com/idvorkin/idvorkin.github.io/pull/54) - a seemingly simple task that turned into a perfect case study of both the power and pitfalls of AI automation.
+
+**What Was Supposed to Happen:**
+
+- Claude Code would scan through `_d`, `_posts`, and `_td` directories
+- Fix only typos (spelling, grammar, technical terms)
+- Create a clean PR with "no functional changes"
+
+**What Actually Happened:**
+Claude Code did fix 772 lines of legitimate typos (critcal→critical, mechansims→mechanisms, Kubertnetes→Kubernetes, etc.), but it also made several semantic errors that were caught by Cursor's automated review bot:
+
+![Cursor bot flagging satisfaction formula semantic error - showing the formula was incorrectly reversed from "What you want / what you have" to "What you have / what you want", fundamentally changing the meaning of satisfaction calculation](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_195813.webp)
+
+**The Semantic Error:**
+Most notably, Claude accidentally reversed the satisfaction formula from `satisfaction = what you want / what you have` to `satisfaction = what you have / what you want`. This completely inverted the meaning - the original correctly shows satisfaction decreasing as wants increase, while the reversed version counterintuitively suggests satisfaction increases when wants exceed possessions.
+
+**The Self-Correction:**
+The beautiful part? Claude Code automatically detected and fixed its own error! After Cursor bot flagged the issue, Claude recognized the problem and responded:
+
+![Claude's response acknowledging the semantic error and confirming the revert - "You're absolutely right - this was a semantic change, not a typo. I've reverted it in commit b4c2e0b to keep the original formula 'What you want / what you have'"](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_195915.webp)
+
+Claude then:
+
+1. Recognized the semantic problem
+2. Reverted the satisfaction formula change
+3. Created a clean follow-up commit: "Revert satisfaction formula change"
+
+This story perfectly illustrates the current state of AI development: incredibly powerful for bulk tasks, but still requiring human oversight (or in this case, bot oversight) for semantic accuracy. The fact that Claude could self-correct when the error was identified shows the promise of AI-assisted development workflows.
+
+### 2025-07-20
+
+- Logs which created this entry: [link](https://github.com/idvorkin/idvorkin.github.io/blob/d5d20a8a0652ca22f72bd96deae328eaca44f0b4/zz-chop-logs/2025-07-20_20-53Z-document-today-s-project-updates.md)
+
+- Read [Brute Squad](https://sourcegraph.com/blog/the-brute-squad) by Steve Yegge
+  - **The REAL Car-Cleaning Evolution:**
+    - Traditional coding = You personally licking your car clean (the old way)
+    - The AI Hype/Promise = "You'll have a car wash!" (what everyone's selling)
+    - Current Reality = Your "car wash" is actually just camels licking the car
+      - Weird, messy, unpredictable
+      - Sometimes they "delete your repo and send weenie pics to your grandma"
+      - BUT still somehow faster than human spit
+  - **Current Reality with Multiple Agents = You become "The Brute Squad" with 5-10 camels**
+    - Now you're juggling multiple camel-bird-baby-whatevers
+    - They're all squawking and hungry
+    - You can't leave because they need constant supervision
+    - But the collective licking power is undeniable
+    - You're addicted to the chaos because it's SO productive
+- Decided lots of agents need more horizontal space
+- Added another monitor
+
+![Dual monitor setup showing two large curved monitors on a desk with code/terminal windows open, against a bright green wall - the new monitor setup providing more horizontal space for AI agents](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_135228.webp)
+
+- Got Claude Code
+- Updated to $100/month subscription based on what bestie told me
+
+![Text conversation showing discussion about Claude Code usage and subscription pricing, with messages about upgrading from $20/month to $100/month plan after recommendation about LLMs being important for productivity](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_135628.webp)
+
+- Starting doing PRs - created 4 PRs today, 3 merged:
+  - [nlp#11](https://github.com/idvorkin/nlp/pull/11) ✅ "feat: add Kimi AI provider support with --kimi flag (default enabled)"
+  - [nlp#12](https://github.com/idvorkin/nlp/pull/12) 🔄 "feat: add comprehensive e2e tests for Kimi AI functionality" (open)
+  - [settings#3](https://github.com/idvorkin/Settings/pull/3) ✅ "Add Claude Code detection to tmux_helper window renaming"
+  - [chop-conventions#2](https://github.com/idvorkin/chop-conventions/pull/2) ✅ "docs(dev-inner-loop): add PR workflow documentation for AI-assisted development"
+  - All generated with Claude Code 🤖
+- Updated blog default image from bunny ears to raccoon-imagination-executed-sustainably.webp
+  - Simple one-line change in \_includes/head.html
+  - Created PR with Claude Code assistance
+
+### 2025-07-13
+
+Wow - it's been a LONG while before I added journal entries
+
+- Yesterday my friend nerd swiped me with the optimum number of donuts to make problem:
+- I one shotted it (well maybe 10 shot) with gemini coding cli (just like the other ones)
+  ![AI agent interaction summary showing performance metrics: 27 tool calls with 96.3% success rate, 94.1% user agreement, 38m 29s total wall time with detailed breakdown of API vs tool usage time and model token consumption using gemini-2.5-pro](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250713_071230.webp)
+- You can see output on: [Donut Profit Calculator App](https://abrupt-carpenter.surge.sh/)
+- And Git Project: [GitHub Repository](https://github.com/idvorkin/donut-profit-calculator)
+
+I also used gpt to illustrated and partially write the updates to this blog based on content from "What I learned so far".
+
+{%include summarize-page.html src="/mental-pain"%}
+
+- Image generation takes a while - but I love it. Agent based apps is super "human input time" effecient, but the wall time is annoying, it's easy to forget what you're trying to do context. I'm guessing we'll need toolls to help us do the "N-slow" tasks at once as it's easy to forget the damn goals
+
+- Creating customGPTs from a bunch of content from my old pychiatrist
+- Using chatgpt to figure out what I should/how I should pack crap in my car
+
+- COOL LEARNING:
+  - You can use surge to deploy to static web sites - nicer then clogging up my blog
+  - gemini cli sandbox is mostly worthless
 
 ### 2024-10-27
 
@@ -230,7 +326,7 @@ See: <https://karpathy.ai/zero-to-hero.html>
 
 ### 2024-07-31
 
-#### Auto code editting (via Aider) - TOO Soon
+#### Auto code editing (via Aider) - TOO Soon
 
 OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally it could do more complex changes, like find code that would be good to refactor then make those changes. [aider](https://aider.chat/) is supposed to that, but in my expereince, it just made stuff wrose and was slower then me making the cahnges myself. I guess I'll try again in a while.
 

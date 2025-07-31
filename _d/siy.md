@@ -242,6 +242,7 @@ _Riding your emotions like a horse_
   - Do not feel bad about feeling bad - (Meta distress) is not helpful, have grandmother mind on distress.
   - Do not feed the [monsters](/monsters) - distress needs fuel, stop retelling the same story.
     - Personal story - freak out over screwed up basement.
+    - When the same story becomes a persistent, repetitive thought loop, it becomes a psychic shadow requiring specialized banishment techniques: {%include summarize-page.html src="/psychic-shadows" %}
   - Start every thought with kindness and humor - It's nicer that way, gives us reserve to deal with hardship.
 - Triggers - A small event results in an objectively too big response.
   - Often have a repeated 'emotional' injury.

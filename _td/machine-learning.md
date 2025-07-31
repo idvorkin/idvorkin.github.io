@@ -9,7 +9,7 @@ redirect_from:
   - /td/machine-learning
 ---
 
-It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithoms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can't articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a bananna in your stirfry).
+It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can't articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a banana in your stirfry).
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/machine-learning.md)_
 
@@ -46,10 +46,10 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Instance vs Model](#instance-vs-model)
 - [How to measure the effectiveness of ML by problem category](#how-to-measure-the-effectiveness-of-ml-by-problem-category)
     - [AI Testing](#ai-testing)
-    - [Regression - Distance from predication to actual](#regression---distance-from-predication-to-actual)
+    - [Regression - Distance from prediction to actual](#regression---distance-from-predication-to-actual)
     - [Classification - Precision and Recall](#classification---precision-and-recall)
-    - [Clustering - its complicated](#clustering---its-complicated)
-    - [PCA - its complicated](#pca---its-complicated)
+    - [Clustering - it's complicated](#clustering---its-complicated)
+    - [PCA - it's complicated](#pca---its-complicated)
 - [Why is ML hard?](#why-is-ml-hard)
 - [About ML errors](#about-ml-errors)
     - [The ML learning challenges](#the-ml-learning-challenges)
@@ -58,7 +58,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Google Photos recognizing black people as gorillas](#google-photos-recognizing-black-people-as-gorillas)
     - [HP face tracking doesn't recognize black people](#hp-face-tracking-doesnt-recognize-black-people)
     - [Clever Hans - the horse that could count](#clever-hans---the-horse-that-could-count)
-    - [Likely hood of death from Pneumonia given asthma](#likely-hood-of-death-from-pneumonia-given-asthma)
+    - [Likelihood of death from Pneumonia given asthma](#likely-hood-of-death-from-pneumonia-given-asthma)
 - [Computing Power, Hardware](#computing-power-hardware)
     - [Why can't a big computer do all the tuning](#why-cant-a-big-computer-do-all-the-tuning)
     - [Why GPU vs CPU](#why-gpu-vs-cpu)
@@ -74,7 +74,7 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
     - [Model Family Selection](#model-family-selection)
     - [Feature Section](#feature-section)
     - [Training](#training)
-    - [Evaluation and tuning of model family features and hyper paramaters](#evaluation-and-tuning-of-model-family-features-and-hyper-paramaters)
+    - [Evaluation and tuning of model family features and hyperparameters](#evaluation-and-tuning-of-model-family-features-and-hyper-paramaters)
     - [Validation](#validation)
     - [Present Results, Use it](#present-results-use-it)
 - [ML Algorithms](#ml-algorithms)
@@ -223,7 +223,7 @@ The class of problem being solved determines the effectiveness of ML. To measure
 
 {%include summarize-page.html src="/ai-testing" %}
 
-### Regression - Distance from predication to actual
+### Regression - Distance from prediction to actual
 
 ### Classification - Precision and Recall
 
@@ -267,9 +267,9 @@ Recall = true positives / (true positives + false negatives)
 
 So, from this "re-written" version of recall formula can pop-up one thing: this is the "rate of true positives". In other words, from all the red balls, what percentage of red balls were grabbed. You had 4 red balls but you got 2 and missed 2: means you could took 50% of the red balls!
 
-### Clustering - its complicated
+### Clustering - it's complicated
 
-### PCA - its complicated
+### PCA - it's complicated
 
 ## Why is ML hard?
 
@@ -346,7 +346,7 @@ Google attempted to fix the algorithm, but ultimately removed the gorilla label 
 
 Using opaque features isnt just a problem for ML systems. There was a horse that [could count](https://en.wikipedia.org/wiki/Clever_Hans), but it didn't work by counting, it worked by understanding human emotions. I guess that's one of our first fails of machine learnings.
 
-### Likely hood of death from Pneumonia given asthma
+### Likelihood of death from Pneumonia given asthma
 
 [Intelligible Models for HealthCare: Predicting Pneumonia Risk and Hospital 30-day Readmission](http://people.dbmi.columbia.edu/noemie/papers/15kdd.pdf)
 
@@ -401,7 +401,7 @@ Often pre-processing in SciKit
 
 ### Training
 
-### Evaluation and tuning of model family features and hyper paramaters
+### Evaluation and tuning of model family features and hyperparameters
 
 ### Validation
 
@@ -439,7 +439,7 @@ _Thanks Dan Massey for your recommendation to discuss these topics_
 
 ### Computer Vision
 
-See my explorations of [video editting](https://github.com/idvorkin/video-edit) and CV models.
+See my explorations of [video editing](https://github.com/idvorkin/video-edit) and CV models.
 
 ### Natural Language Processing (NLP)
 

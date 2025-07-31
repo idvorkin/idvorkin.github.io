@@ -15,7 +15,7 @@ tags:
   - manager
 ---
 
-I aspire to be the best manager I can be. I'll often fall short of my goal, but through continuous practice I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best. Few things make me prouder then this [public feedback on LinkedIn](/static/idvorkin-linked-in-feedback-lastest.pdf) from people who worked with me over several years. I'm also writing a [manager guidebook](/manager-book), which goes into much more depth on management.
+I aspire to be the best manager I can be. I'll often fall short of my goal, but through continuous practice I will get closer. This post will gather my research on being a great manager, enumerate some of my learnings, and inspire me to be my best. Few things make me prouder than this [public feedback on LinkedIn](/static/idvorkin-linked-in-feedback-lastest.pdf) from people who worked with me over several years. I'm also writing a [manager guidebook](/manager-book), which goes into much more depth on management.
 
 {%include summarize-page.html src="/manager-book" %}
 
@@ -49,7 +49,7 @@ Management is a very broad topic. So I'm creating "Igor's book of manager":
 
 {%include summarize-page.html src="/manager-book" %}
 
-There's a lot of duplication between this post and the manager book and content is slowly migrating to the book as I decide what shoud be in what post
+There's a lot of duplication between this post and the manager book and content is slowly migrating to the book as I decide what should be in what post
 
 ## How will I measure my success?
 
@@ -85,7 +85,7 @@ As I tell my teams, the what lags the how, here's my how.
 - [Human Meetings](/human-meetings)
 - Building intra-team cohesion
   - Encouraging team to eat lunch together
-  - Encouraging team to share their out side of work passions.
+  - Encouraging team to share their outside of work passions.
   - Building team ownership over individual ownership.
 - Team wide appreciation
   - Weekly linked in posts celebrating the team
@@ -129,7 +129,7 @@ _This is answered directly in Igor's [book of management](/the-manager-book)_
 
 ### Establishing Process, Project Lifecycle, and Artifacts
 
-Some teams have these things well defined and running smoothly, other teams (seems to be most) need help building out these mechanisims
+Some teams have these things well defined and running smoothly, other teams (seems to be most) need help building out these mechanisms
 
 - Design Meetings
 - Weekly Engineer Review (Status Reports)
@@ -145,7 +145,7 @@ Some teams have these things well defined and running smoothly, other teams (see
 
 ## Igors Super Powers
 
-### What is Igor's Management Philosopy
+### What is Igor's Management Philosophy
 
 For some reason this is a frequent question I get asked by people deciding if they should join the team. It's super vague, so I need to think through where I'd like to answer.
 

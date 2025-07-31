@@ -10,7 +10,7 @@ redirect_from:
 
 Last night I was having trouble sleeping so I plopped down on the couch to watch infomercials. The infomercial I picked was religious in nature, and was talking about mind monsters.
 
-At first I was laughing out load, laughing at how gullible people must be to believe in this stuff. Mind Monsters - what a silly idea - sheesh. Then I started listening. The mind monsters this evangelist was describing were the negative emotions we all have. Negative emotions like anger, and ego. This evangelist was preaching the same ideas any good book on Buddhism and Taoism often discusses.
+At first I was laughing out loud, laughing at how gullible people must be to believe in this stuff. Mind Monsters - what a silly idea - sheesh. Then I started listening. The mind monsters this evangelist was describing were the negative emotions we all have. Negative emotions like anger, and ego. This evangelist was preaching the same ideas any good book on Buddhism and Taoism often discusses.
 
 What the preacher said next sounded funny at first, but after some contemplation I realized I liked it. The preacher proceeded to tell this parable:
 

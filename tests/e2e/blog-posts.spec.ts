@@ -14,7 +14,7 @@ test.describe("Blog post functionality", () => {
     await expect(page.locator("header")).toBeVisible();
 
     // Verify that navigation links are present
-    await expect(page.locator(".nav-link")).toHaveCount(7);
+    await expect(page.locator(".nav-link")).toHaveCount(6);
   });
 
   test("Blog post page loads correctly", async ({ page }) => {

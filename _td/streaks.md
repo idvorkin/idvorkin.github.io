@@ -27,7 +27,7 @@ Turns out the apps streaks built this perfectly - and that's what i use. This co
 
 ### User can track mutiple streaks
 
-### User can say they did thier task to get a streak.
+### User can say they did their task to get a streak.
 
 ### User is prompted if they don't complete their streak by a certain time.
 

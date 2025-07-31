@@ -242,7 +242,7 @@ I guess if I do, I can take the time off.
 - Got a gym membership - cheaper then day passes
 - Tried a few. One had no showers,
 - Top metric is probably BP/sqft
-- Last one I went to had a saltwater pool and a cold plunge ,and everythign else. Was awesome. And massage chairs
+- Last one I went to had a saltwater pool and a cold plunge, and everything else. Was awesome. And massage chairs
 - Last day, found out pool was closed, grateful to have gotten to try it for several days.
 
 ### Rental Car

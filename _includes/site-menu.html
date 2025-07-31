@@ -27,7 +27,7 @@
     </button>
     <a
       class="nav-fa-icon"
-      href="https://github.com/idvorkin/idvorkin.github.io/blob/master/{{page.path}}"
+      href="https://github.com/idvorkin/idvorkin.github.io/blob/main/{{page.path}}"
     >
       <i class="fa fa-github"></i>
     </a>
@@ -73,6 +73,11 @@
 <div id="autocomplete-search-box" style="display: none">
   <!-- Keep search box hidden, and only access the detached state -->
 </div>
+<!-- Branch info for dev server -->
+<script>
+  // Embed branch info directly for dev server
+  window.__GIT_BRANCH__ = "{{ site.data.git.branch }}";
+</script>
 
 <script type="module">
   import { CreateAutoComplete } from "/assets/js/index.js";

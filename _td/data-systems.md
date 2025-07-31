@@ -42,7 +42,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
     - [Write path vs read path](#write-path-vs-read-path)
     - [Write path derived data system flows](#write-path-derived-data-system-flows)
     - [Event sourcing and event logs](#event-sourcing-and-event-logs)
-    - [E2E asyncronous verification with apology workflow](#e2e-asyncronous-verification-with-apology-workflow)
+    - [E2E asynchronous verification with apology workflow](#e2e-asynchronous-verification-with-apology-workflow)
 - [Related Reading](#related-reading)
 
 <!-- vim-markdown-toc-end -->
@@ -82,7 +82,7 @@ Analytics systems like column store are optimized for this type of analysis (lat
 
 ### Data lakes and Data warehouse
 
-The difference is schema on write vs scheme on read. In a warehouse, you figure out your schema upfront, which is expensive, and can result in data loss. In a lake, you store all your data with the assumption you'll need it eventually and you'll figure out how to use it after its been generated. Given the speed of new technology, I'd highly recommend a data lake.
+The difference is schema on write vs schema on read. In a warehouse, you figure out your schema upfront, which is expensive, and can result in data loss. In a lake, you store all your data with the assumption you'll need it eventually and you'll figure out how to use it after its been generated. Given the speed of new technology, I'd highly recommend a data lake.
 
 A data warehouse is a database optimized to analyze relational data coming from transactional systems and line of business applications. The data structure, and schema are defined in advance to optimize for fast SQL queries, where the results are typically used for operational reporting and analysis. Data is cleaned, enriched, and transformed so it can act as the “single source of truth” that users can trust.
 
@@ -130,7 +130,7 @@ This is similar to an asynchronous API call. Multiple publishers can write to a 
 
 ### Kinesis - Data Streams
 
-Base layer for Kinesis. A log based message broker with 100ms ish latency. Can use this with Fire Hose, Data Analaytics or your own Lambda. Data streams don't yet have elastic scaling and are somewhat expensive.
+Base layer for Kinesis. A log based message broker with 100ms ish latency. Can use this with Fire Hose, Data Analytics or your own Lambda. Data streams don't yet have elastic scaling and are somewhat expensive.
 
 ### Kinesis - Data Analytics
 
@@ -156,7 +156,7 @@ Global integration for common providers (like web hooks) to get remapped to even
 
 ### Event sourcing and event logs
 
-### E2E asyncronous verification with apology workflow
+### E2E asynchronous verification with apology workflow
 
 ## Related Reading
 

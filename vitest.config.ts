@@ -3,7 +3,7 @@ import { defineConfig } from "vitest/config";
 export default defineConfig({
   test: {
     environment: "happy-dom",
-    include: ["tests/unit/**/*.{test,spec}.{js,ts}"],
+    include: ["src/__tests__/**/*.{test,spec}.{js,ts}"],
     coverage: {
       provider: "v8",
       reporter: ["text", "json", "html"],

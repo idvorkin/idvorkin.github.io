@@ -35,6 +35,19 @@ Keeping track of recently modified content helps with several aspects of knowled
 3. **Track the evolution** of ideas and concepts over time
 4. **See what's new** without having to browse through everything
 
+Want to explore randomly instead? <a href="/random">Try a random page</a>!
+
+### Or try a random post right here
+
+<div class='alert alert-info' id="random-blog-post">
+    Loading a random blog post... (click anywhere in this box for a different one)
+</div>
+
+<script type="module">
+    import { append_randomizer_div, make_random_post_html } from '/assets/js/index.js';
+    append_randomizer_div("#random-blog-post", async () => await make_random_post_html());
+</script>
+
 For more on how I approach knowledge management:
 
 {% include summarize-page.html src="/new-skills" %}

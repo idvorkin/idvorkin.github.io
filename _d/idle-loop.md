@@ -38,51 +38,49 @@ This is very similar to the often phantom, physical pain of hunger. If we aren't
 
 ### Regenerative loops
 
-___
+---
 
 {% include summarize-page.html src="/siy" %}
 
-___
+---
 
-* Positive thinking
-* Reading something nurturing:
-    * self-help books, but they can be too charging up,
-    * good content - the [Very Short Introductions](https://global.oup.com/academic/content/series/v/very-short-introductions-vsi/) series has been superb.
-* Gratefulness thinking
-* [Habits](/habits)
-    - [Magic](/magic)
-    - [Meditating](/siy)
+- Positive thinking
+- Reading something nurturing:
+  - self-help books, but they can be too charging up,
+  - good content - the [Very Short Introductions](https://global.oup.com/academic/content/series/v/very-short-introductions-vsi/) series has been superb.
+- Gratefulness thinking
+- [Habits](/habits)
+  - [Magic](/magic)
+  - [Meditating](/siy)
 
 ### Parasitic energy drains
 
-___
+---
 
 {% include summarize-page.html src="/mental-pain" %}
 
-___
+---
 
 {% include summarize-page.html src="/addiction" %}
 
-___
+---
 
 {% include summarize-page.html src="/mind-monsters" %}
 
-___
+---
 
 {% include summarize-page.html src="/frog" %}
 
-___
+---
 
-
-* Doom scrolling - news, Twitter, social media
-    - Interestingly, this has been pushed more to video
-* Ruminating - I don't do this nearly as much as I did.
-* TikTok / Reels / YouTube Shorts
-    * Rant, this is so addictive, I put too much energy into this
-    * Oddly my common categories are
-        - 'strength training videos' - 2024
-* Checking e-mail or notifications
-    * Not a problem unless I'm chasing work
+- Doom scrolling - news, Twitter, social media
+  - Interestingly, this has been pushed more to video
+- Ruminating - I don't do this nearly as much as I did. When ruminating thoughts become specific, persistent patterns that haunt you, they become psychic shadows requiring specialized spell-crafting techniques: {%include summarize-page.html src="/psychic-shadows" %}
+- TikTok / Reels / YouTube Shorts
+  - Rant, this is so addictive, I put too much energy into this
+  - Oddly my common categories are
+    - 'strength training videos' - 2024
+- Checking e-mail or notifications
+  - Not a problem unless I'm chasing work
 
 ## Other Resources
-

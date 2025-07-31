@@ -4,7 +4,9 @@
 // Random tree
 // Tree copied from: https://github.com/vasturiano/force-graph
 console.log("Load force graph in TS v 0.9");
+
 import { MakeBackLinkHTML, get_link_info } from "./shared";
+
 //import ForceGraph from "force-graph";
 
 // Define variables that are used but not declared

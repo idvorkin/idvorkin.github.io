@@ -15,7 +15,7 @@ The world is now on the cloud, here are my random notes on the topic.
         - [The power of the Dockerfile and image repository.](#the-power-of-the-dockerfile-and-image-repository)
     - [Containers as execution hosts - vs Virtual and Physical Machines](#containers-as-execution-hosts---vs-virtual-and-physical-machines)
     - [Container Orchestration](#container-orchestration)
-        - [Kubertnetes](#kubertnetes)
+        - [Kubernetes](#kubertnetes)
         - [Everything else](#everything-else)
 - [Front Door - AWS API Gateway](#front-door---aws-api-gateway)
     - [Caching + Throttling](#caching--throttling)
@@ -32,7 +32,7 @@ The world is now on the cloud, here are my random notes on the topic.
     - [Communication buses: Envoy](#communication-buses-envoy)
 - [New patterns](#new-patterns)
     - [Side cars](#side-cars)
-    - [Resiliance Patterns - Retry, Circuit-Breaker, Timeout, Fallback, Bulkhead, Cache.](#resiliance-patterns---retry-circuit-breaker-timeout-fallback-bulkhead-cache)
+    - [Resilience Patterns - Retry, Circuit-Breaker, Timeout, Fallback, Bulkhead, Cache.](#resilience-patterns---retry-circuit-breaker-timeout-fallback-bulkhead-cache)
 - [Functions as a Service FaaS](#functions-as-a-service-faas)
     - [Introduction](#introduction)
     - [FaaS Orchestration](#faas-orchestration)
@@ -42,7 +42,7 @@ The world is now on the cloud, here are my random notes on the topic.
     - [Debugging](#debugging)
 - [Data Systems](#data-systems)
 - [Challenges](#challenges)
-    - [Conways law - Four complier teams implies a four pass complier](#conways-law---four-complier-teams-implies-a-four-pass-complier)
+    - [Conway's law - Four compiler teams implies a four pass compiler](#conways-law---four-complier-teams-implies-a-four-pass-complier)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc-end -->
@@ -64,7 +64,7 @@ We often talk about containers being a light weight VM, which they are. However,
 
 ### Container Orchestration
 
-#### Kubertnetes
+#### Kubernetes
 
 #### Everything else
 
@@ -93,7 +93,7 @@ Can log everything to cloud watch to enable api access debugging and auto-scale 
 
 ### Routing + API Transformation
 
-Define a client callable REST api and map it to arbitrary backend services including paramater and representation re-mapping. Can use this implement stages and version upgrades.
+Define a client callable REST api and map it to arbitrary backend services including parameter and representation re-mapping. Can use this implement stages and version upgrades.
 
 ### Websocket transformation
 
@@ -121,9 +121,9 @@ Websockets allow you to simply implement server initiated push notifications to 
 
 This isn’t an apples to apples comparison. But the ideas are usually compared with these concepts.
 
-REST is a frequently used request/response protocol with easy API semantic and many years of supporting goops (caches, routing, api semantics, debugging tools, etc).
+REST is a frequently used request/response protocol with easy API semantics and many years of supporting gobs (caches, routing, API semantics, debugging tools, etc).
 
-WebSockets are frequently used when push notification or high data volumes are required, essential raw socket access ( sockets were the default network access from user mode and represented a TCP connection before the web ate teh world). Websockets do not define a common interface, so it’s up to the app developer to define these and as a result there are few tools to support this.
+WebSockets are frequently used when push notification or high data volumes are required, essentially raw socket access (sockets were the default network access from user mode and represented a TCP connection before the web ate the world). WebSockets do not define a common interface, so it’s up to the app developer to define these and as a result there are few tools to support this.
 
 I suspect a common pattern will be using WebSockets for a server initiated push notification requesting the client to call for current state.
 
@@ -156,11 +156,11 @@ Similar to Nginx or HA Proxy, or AWS ELB, terminate the https and redirect to th
 
 ### Side cars
 
-Package functionality into a seperately injected application: https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar
+Package functionality into a separately injected application: https://docs.microsoft.com/en-us/azure/architecture/patterns/sidecar
 
-### Resiliance Patterns - Retry, Circuit-Breaker, Timeout, Fallback, Bulkhead, Cache.
+### Resilience Patterns - Retry, Circuit-Breaker, Timeout, Fallback, Bulkhead, Cache.
 
-Distributed services fail, and resilliance patterns like mentioned above are critical. See [Polly](https://docs.google.wbb://github.com/App-vNext/Polly) as an example library implementing these concepts.
+Distributed services fail, and resilience patterns like mentioned above are critical. See [Polly](https://github.com/App-vNext/Polly) as an example library implementing these concepts.
 
 [Azure cloud patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/) also has many good patterns.
 
@@ -184,7 +184,7 @@ Huge topic, see [Data Systems](data-systems).
 
 ## Challenges
 
-### Conways law - Four complier teams implies a four pass complier
+### Conway's law - Four compiler teams implies a four pass compiler
 
 Conway's law is an aphorism in IT that posits the idea that “organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.” This idea can be traced back to a programmer named Melvin Conway who developed this principle in the late 1960s.
 

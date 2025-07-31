@@ -104,4 +104,4 @@ Multiplatform was best in class in 2012 when it was created, but hasn't had many
 - Integration with [tmux](https://github.com/idvorkin/settings/blob/4dbfa4720748053b9b6213dbc34ffe62e89fd015/shared/.tmux.conf?plain=1#L148)
 - Integration with Alfred and [CLI tools](https://github.com/idvorkin/settings/blob/4dbfa4720748053b9b6213dbc34ffe62e89fd015/py/y.py?plain=1#L683)
 
-![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250311_064458.webp)
+![Terminal screenshot showing tmux session management with flow-rename command "Add Flow To Blog" - demonstrating integration between GTD workflow and command-line tools for productivity](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250311_064458.webp)

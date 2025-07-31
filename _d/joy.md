@@ -107,8 +107,13 @@ My early [ballooning](/ig66/621) adventures:
 
 ### Mismatched shoes, and crazy shirts from TEMU
 
-- First discoverd mismatched shoes, harder then it sounds, but crocks are great
-- Used to get fun shirts from thrift shops, but hard to find them. Then disovered TEMU had such shirts of ronly
+- First discovered mismatched shoes, harder than it sounds, but crocs are great
+- Used to get fun shirts from thrift shops, but hard to find them. Then discovered TEMU had such shirts for only $8
+- These zany shirts bring instant smiles - from psychedelic patterns to ridiculous slogans
+- People often stop me and say "nice shirt," and that always makes me happy
+- The best part: they're so affordable I can wear a different crazy shirt every day
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250726_110324.webp)
 
 ### Handing out you are awesome cards
 
@@ -118,7 +123,7 @@ My early [ballooning](/ig66/621) adventures:
 - Usually by the time people read it I'm gone, but sometimes if I give them to someoen in a lobby they'll catch me on the way out and be like, hey thank you so much
 
 * Also considering printing on the back of business cards,
-  ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250505_065941.webp)
+  ![Collection of business card-sized inspirational cards spread on a green surface, featuring positive messages like "YOU'RE AWESOME" with colorful text and rainbow graphics, packaged for distribution](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250505_065941.webp)
 
 ### Surprise birthday visit to my sister
 

@@ -6,7 +6,7 @@ _**User**_
 
 I have been messing with parcel modules, look in just files, and run js-build, but things are not exported correctly. Be sure to check for scripts
 
-For exmaple: I get this error now: 
+For example: I get this error now:
 
 Uncaught SyntaxError: The requested module '/assets/js/index.js' does not provide an export named 'CreateAutoComplete' (at 761:157:12)
 

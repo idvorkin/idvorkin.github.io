@@ -19,21 +19,21 @@ Just called him up (everything was ina phone book) and asked him for spare parts
 
 #### How did Xerox Park Die?
 
-When a product company like Pepsi gets big, for them a major change is changing a pepsi bottle, and they can only do that every few years. Thus success goes to the sales and marketting teams who become the leaders.
+When a product company like Pepsi gets big, for them a major change is changing a Pepsi bottle, and they can only do that every few years. Thus success goes to the sales and marketing teams who become the leaders.
 
 Thus in the decision making forums, product people are pushed out.
 
-Interestingly, in technology firms the same things happen when you get to be a monopoloy, like IBM Or Xerox, doesn't matter most of what you do, to move the neeedle it's sales and Marketting.
+Interestingly, in technology firms the same things happen when you get to be a monopoly, like IBM or Xerox; it doesn't matter most of what you do, to move the needle it's sales and marketing.
 
-So, at Xeros, all the decisiosn where made by sales and marketting people of copiers, adn thus Zeros park was killed.
+So, at Xerox, all the decisions were made by sales and marketing people of copiers, and thus Xerox PARC was killed.
 
 #### Value of the eco system?
 
-IBM product sucked, and if it was upto them it would have failed, but they had a brilliant approach, which was they had a bunch of people having a vested interest in thier success, and that network kept them succesful -- Think of the PC ecosystem or the wintel allience.
+IBM product sucked, and if it was up to them it would have failed, but they had a brilliant approach, which was they had a bunch of people having a vested interest in their success, and that network kept them successful -- think of the PC ecosystem or the Wintel alliance.
 
 #### Process vs Content
 
-When companies get biggger they want to replicate that sucess. The assume the 'magic' was the process so they instuitionalize the proecss in the hope that'll bring success. **People think the process is the content**
+When companies get bigger they want to replicate that success. They assume the 'magic' was the process, so they institutionalize the process in the hope that'll bring success. **People think the process is the content**
 
 Best people are the content, and are a pain in the but to manage, but it's worth it!
 
@@ -47,7 +47,7 @@ Old guy takes him out back to make a rock clean. A bunch of common rocks go in ,
 
 What does it mean when you say 'your work is shit'. Usually it means your work is shit. Sometimes it means 'I think you're work is shit, but I'm wrong', but most of the time it means your work isn't good enough.
 
-Good people, don't need their ego's babied. Most valuable thing you can do is tell them when they aren't living upto the teams need, but do it in a way that doesn't question their abilities. Very hard to do, and I do it in a very direct way.
+Good people don't need their egos babied. The most valuable thing you can do is tell them when they aren't living up to the team's need, but do it in a way that doesn't question their abilities. Very hard to do, and I do it in a very direct way.
 
 #### How adobe started
 

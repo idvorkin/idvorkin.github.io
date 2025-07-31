@@ -110,7 +110,7 @@ Often there's a useful object, that's only available in the closure. You can alw
 
 ### Chrome local overrides
 
-Allows you to save a local copy of the source files for editting. To Use
+Allows you to save a local copy of the source files for editing. To use
 
 How to use:
 

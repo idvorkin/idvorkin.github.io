@@ -107,14 +107,14 @@ This post uses the word manager, but many topics apply to all job functions, reg
   - [What do you do when someone says they are quitting](#what-do-you-do-when-someone-says-they-are-quitting)
   - [What is a tribe?](#what-is-a-tribe)
 - [Performance Management](#performance-management)
-  - [Performance Reveiws: Calibrations PSC, OLR, Connections](#performance-reveiws-calibrations-psc-olr-connections)
+  - [Performance Reviews: Calibrations PSC, OLR, Connections](#performance-reviews-calibrations-psc-olr-connections)
   - [Translating Performance Ratings Between Companies](#translating-performance-ratings-between-companies)
   - [Best Practices For Performance Reviews](#best-practices-for-performance-reviews)
   - [The pain and the suffering of performance reviews](#the-pain-and-the-suffering-of-performance-reviews)
   - [Some definitions for low performers](#some-definitions-for-low-performers)
   - [Performance Management for low performers](#performance-management-for-low-performers)
   - [The types of URA](#the-types-of-ura)
-  - [URA doesn't mean the person sucks - it means they are not comptabile.](#ura-doesnt-mean-the-person-sucks---it-means-they-are-not-comptabile)
+  - [URA doesn't mean the person sucks - it means they are not compatible.](#ura-doesnt-mean-the-person-sucks---it-means-they-are-not-compatible)
   - [What if a URA isn't "fair"?](#what-if-a-ura-isnt-fair)
   - [The who and how of performance management](#the-who-and-how-of-performance-management)
   - [How do you coach employee back to success](#how-do-you-coach-employee-back-to-success)
@@ -122,19 +122,24 @@ This post uses the word manager, but many topics apply to all job functions, reg
 - [Cross Org Influence](#cross-org-influence)
   - [How do you think about escalations?](#how-do-you-think-about-escalations)
 - [Team Insecurity](#team-insecurity)
+  - [How do you nudge engineers who won't ask you for help?](#how-do-you-nudge-engineers-who-wont-ask-you-for-help)
   - [Everyone wants to feel supported](#everyone-wants-to-feel-supported)
   - [Maintain perspective](#maintain-perspective)
 - [Charters, Re-orgs and Bootstrapping](#charters-re-orgs-and-bootstrapping)
   - [The genesis: When you start from scratch](#the-genesis-when-you-start-from-scratch)
-  - [Telling the team](#telling-the-team)
-  - [The FAQ](#the-faq)
   - [The split: When a team outgrows a manager](#the-split-when-a-team-outgrows-a-manager)
-  - [The merge or you leaving the team: When a manager leaves](#the-merge-or-you-leaving-the-team-when-a-manager-leaves)
-  - [Splitting Horizontally vs Vertically](#splitting-horizontally-vs-vertically)
+    - [Horizontal vs Vertical Splitting](#horizontal-vs-vertical-splitting)
+  - [The merge: When a manager leaves](#the-merge-when-a-manager-leaves)
   - [The flip: When charter changes](#the-flip-when-charter-changes)
-  - [Insufficient progress - Double down or pivot](#insufficient-progress---double-down-or-pivot)
+  - [The Double down vs Pivot: When there is insufficient progress](#the-double-down-vs-pivot-when-there-is-insufficient-progress)
+    - [Space can be successful, just hasn't yet - hold the course](#space-can-be-successful-just-hasnt-yet---hold-the-course)
+    - [Space can not be successful, or can't be successful in a reasonable time frame](#space-can-not-be-successful-or-cant-be-successful-in-a-reasonable-time-frame)
+    - [How long should you keep a "To Be Pivotted" project](#how-long-should-you-keep-a-to-be-pivotted-project)
+  - [Telling the team about reorg/recharter](#telling-the-team-about-reorg-recharter)
+    - [The FAQ](#the-faq)
   - [How to handle Layoffs](#how-to-handle-layoffs)
-  - [What's the best configuration for layoff announcements?](#whats-the-best-configuration-for-layoff-announcements)
+    - [What's the best way to execute layoff announcements?](#whats-the-best-way-to-execute-layoff-announcements)
+    - [The FAQ](#the-faq)
 - [Personal Motivations](#personal-motivations)
   - [Why do you find management attractive](#why-do-you-find-management-attractive)
   - [What is your dream job](#what-is-your-dream-job)
@@ -428,13 +433,13 @@ Good self assessments are concise, focus on impact, and then how you delivered t
 
 Here are some fictitious examples modelled on my own career:
 
-- Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to estabilish budgets, and holding them accountable to delivering them.
+- Improved Azure virtual machine boot time from 12 minutes to 2 minutes at P90 by investigating end to end system behavior, understanding end 2 end system operation, creating and driving agreement to all up goal, and then working with teams to establish budgets, and holding them accountable to delivering them.
 
   - > At first my team was skeptical that the performance improvements could be achieved and were hesitant to invest, but once we saw the organizational support and monthly meetings of progress we found it inspiring and made sure we contributed to the goal.
 
 - Drove XXX\$ to charities, and increased Alexa Shopping DAU XXX % (XXX to YYY) to by proposing a charity giving feature and implementing it in 5 months. Complexity, 20 eng/months, supporting work from 5 teams, across multiple divisions
 
-- Delivered XYZ, required to deliver TLS support on windows phone at very high quality. Complexity 1 engineer, 4 months - however requried ramping up on complex error prone C++ code base, and no bugs found
+- Delivered XYZ, required to deliver TLS support on windows phone at very high quality. Complexity 1 engineer, 4 months - however required ramping up on complex error prone C++ code base, and no bugs found
 
   - > Igor's delivery was on time and of high quality. The feature had no bugs in production, due to high test coverage, which was impressive given the high complexity of the C++ code.
 
@@ -648,7 +653,7 @@ First, I remind folks of our culture:
 - We put the team first, always—greater than the sum of our parts.
 - We know we can't win if the team loses, and we can't lose if the team wins.
 
-Then I remind them when the going gets tough, more hours doesnt' fix it, prioritize does.
+Then I remind them when the going gets tough, more hours doesn't fix it, prioritize does.
 
 {%include summarize-page.html src="/overload"%}
 
@@ -787,22 +792,22 @@ There tend to be two things that hold people back:
 
 **1/ It feels like throwing someone under the bus**
 
-- **Concerns are an act of care.** Noticing something doesn’t mean someone messed up—it means you care enough to keep things running smoothly.
-- **You don’t have to be sure.** If something feels off or unclear, it’s still worth surfacing. I’ll help figure out if it needs action or just acknowledgment.
-- **It’s not about blame.** Raising concerns isn’t betrayal—it’s like pointing out a wobbly wheel so no one crashes.
-- **It’s a shared responsibility.** We all help each other see around corners.
-- **I’ll walk with you.** You don’t need a perfect story—just a gut feeling. I’ll help you sort out what matters and what to do next.
+- **Concerns are an act of care.** Noticing something doesn't mean someone messed up—it means you care enough to keep things running smoothly.
+- **You don't have to be sure.** If something feels off or unclear, it's still worth surfacing. I'll help figure out if it needs action or just acknowledgment.
+- **It's not about blame.** Raising concerns isn't betrayal—it's like pointing out a wobbly wheel so no one crashes.
+- **It's a shared responsibility.** We all help each other see around corners.
+- **I'll walk with you.** You don't need a perfect story—just a gut feeling. I'll help you sort out what matters and what to do next.
 
-**2/ It’s hard to get the words right**
+**2/ It's hard to get the words right**
 
-I remind folks not to waste time polishing every word or making sure their evidence is bulletproof—this isn’t a performance or a criminal trial.
+I remind folks not to waste time polishing every word or making sure their evidence is bulletproof—this isn't a performance or a criminal trial.
 
-Just jot down a few rough thoughts and grab some face-to-face time with me. We’ll talk it through. Here’s what to expect:
+Just jot down a few rough thoughts and grab some face-to-face time with me. We'll talk it through. Here's what to expect:
 
-- **I keep it confidential.** Unless you say otherwise, your name doesn’t travel.
-- **I ask precise questions.** I’m trained to spot signal in fuzzy stories and I often have more context—I’ll help clarify what you saw and get the details I need to dig deeper.
-- **I seek other input.** If needed, I’ll check quietly with others to see if it’s a pattern or a one-off.
-- **I stay with you.** Sometimes I’ll tackle the concern myself; other times I’ll support you in giving feedback (if you'd like). Either way, you're putting the team first, and I’ve got your back.
+- **I keep it confidential.** Unless you say otherwise, your name doesn't travel.
+- **I ask precise questions.** I'm trained to spot signal in fuzzy stories and I often have more context—I'll help clarify what you saw and get the details I need to dig deeper.
+- **I seek other input.** If needed, I'll check quietly with others to see if it's a pattern or a one-off.
+- **I stay with you.** Sometimes I'll tackle the concern myself; other times I'll support you in giving feedback (if you'd like). Either way, you're putting the team first, and I've got your back.
 
 ### Recall career is just one part of your life
 
@@ -898,7 +903,7 @@ Here's what I worked with the team to establish
 - Model myself
   - On All the Pages
   - If team is working I'm working
-  - When I make mistakes I apologies
+  - When I make mistakes I apologize
   - If I drop the ball I make it clear.
   - When someone does well I celebrate and call out.
 - Catch people doings things right
@@ -958,7 +963,7 @@ I gave a talk on [lies we tell ourselves](https://docs.google.com/presentation/d
 
 Both helpful for a short period of time, and for a longer period of time, kuddos boards let the team get together and celebrate what they appreciate from their co-workers. This has many benefits:
 
-- People are appreciated for thier contributions
+- People are appreciated for their contributions
 - People are reminded how impactful their work is
 - Good behaviors are recognized and reinforced
 - The team bonds and grows
@@ -1451,7 +1456,7 @@ How to join a tribe: - TBD
 
 ## Performance Management
 
-### Performance Reveiws: Calibrations PSC, OLR, Connections
+### Performance Reviews: Calibrations PSC, OLR, Connections
 
 [Performance reviews](https://imwrightshardcode.com/2021/06/discussing-rewards-for-people/) exist at most companies (I've been through Connects at MSFT, OLR at AMZN and PSC at FB), and for good reason they:
 
@@ -1558,7 +1563,7 @@ How to reduce pain and suffering. _Have no confusion, I rarely do these, but I w
   - Quickly course correct.
   - Include feedback you're getting.
   - Bonus point for including what you plan to do.
-- Block your calender at work, and tell your family you're working nights and weekends
+- Block your calendar at work, and tell your family you're working nights and weekends
   - Set expectation this will take 110% of your energy.
   - Ensure your family knows and can support you.
   - Remove all other stressors from your life at this time.
@@ -1598,7 +1603,7 @@ How to reduce pain and suffering. _Have no confusion, I rarely do these, but I w
 
 You'll often find the following words used in these discussions.
 
-- Performance Mangement - the general process of ensuring the team is high performing. Usually refers to having no low performers on the team.
+- Performance Management - the general process of ensuring the team is high performing. Usually refers to having no low performers on the team.
 - Managing out - Going through the PIP process with an employee.
 - Up or Out - The term indicating the employee either improves, or will be managed out.
 - URA - UnRegretted Attrition. A person who is no longer at the company, and that's not regrettable
@@ -1632,9 +1637,9 @@ These problems usually show up quickly, and can be assessed looking at artifacts
 
 Consistency is the harder PIP for a few reasons. First, the employee will have periods of acceptable performance, sometimes above expectations, and then they'll have misses, so the PIP needs to capture a time period when there is a performance gap. Simultaneously, it can be difficult to root cause inconsistencies, is it really an employment consistency issue, or is it a structural/situational issue.
 
-### URA doesn't mean the person sucks - it means they are not comptabile.
+### URA doesn't mean the person sucks - it means they are not compatible.
 
-Being URA feels terrible, and likely illicits some shame. I know it's hard to believe, but it should not. At the end of the day, a URA just means you and the company were not comptible. I'm certain just because it didn't work out at your current company, the URA will be very successful elsewhere, and where ever that is, they'll probalby feel a lot better for it.
+Being URA feels terrible, and likely elicits some shame. I know it's hard to believe, but it should not. At the end of the day, a URA just means you and the company were not compatible. I'm certain just because it didn't work out at your current company, the URA will be very successful elsewhere, and where ever that is, they'll probably feel a lot better for it.
 
 ### What if a URA isn't "fair"?
 
@@ -1741,9 +1746,9 @@ For folks who can get flustered representing their work in standups, pre-write t
 
 I think they'd be a lot less stressful/dramatic if they were called by the more appropriate term — priority alignment!
 
-Escalations aren’t about someone being wrong—they’re about two teams or individuals pursuing locally correct goals that happen to conflict. In those moments, there isn’t a clear “right” answer at the current level. The solution is to align on which priority matters more, and that often requires bringing in the next level of leadership to make the call.
+Escalations aren't about someone being wrong—they're about two teams or individuals pursuing locally correct goals that happen to conflict. In those moments, there isn't a clear "right" answer at the current level. The solution is to align on which priority matters more, and that often requires bringing in the next level of leadership to make the call.
 
-Priority alignment is not a failure—it’s a sign of healthy systems working. The alternatives: stalemates, resentment, unresolved tension, flip flopping, those are the failures.
+Priority alignment is not a failure—it's a sign of healthy systems working. The alternatives: stalemates, resentment, unresolved tension, flip flopping, those are the failures.
 
 Here's what healthy priority alignment looks like:
 
@@ -1759,6 +1764,10 @@ Pro tip: I always remind folks—if the priorities were obvious, they wouldn't b
 
 - Very common situation
 - Team feels nothing they/EM can do about - but that's completely wrong!
+
+### How do you nudge engineers who won't ask you for help?
+
+Too many engineers make the same mistake: working in silos instead of teaming up with their manager. Going dark on an enormously important, languishing problem is the worst thing you can do. Managers exist to pair with their team on the hardest challenges, bringing the resources and experience of the entire group. Engineers have the time and context to go deep, while managers can contribute breadth and unblock progress. Often folks hesitate out of fear that struggling will be noticed, but your peers and manager are usually already aware because the issue impacts others. Collaborating openly with your manager resolves problems faster and more effectively. If you're a manager, insist on that partnership.
 
 ### Everyone wants to feel supported
 
@@ -1810,7 +1819,124 @@ Hopefully, early in your hiring process, you've been thinking about your charter
 - Build out an early roadmap and products.
 - Keep learning and improving as people join.
 
-### Telling the team
+### The split: When a team outgrows a manager
+
+_I need to add content here about the mechanics and process of splitting teams, but here's some theory:_
+
+**Theory: Team splitting happens for several reasons:**
+
+- **Span of control**: A manager can effectively support 6-8 people. Beyond that, individual attention and coaching quality degrades.
+- **Cognitive load**: Managers need to understand the technical and business complexity their team handles. Too much scope creates blind spots.
+- **Career growth**: Senior engineers need ownership opportunities that come with smaller, more focused teams.
+
+**Types of splits:**
+
+There are two fundamental ways to split teams when you have multiple products/features and multiple technical domains:
+
+#### Horizontal vs Vertical Splitting
+
+When you have multiple teams, and multiple user scenarios you decide to organize horizontally (each team owns tech solutions, spanning multiple user scenarios), or vertically (each team owns user scenarios, spanning tech solutions).
+
+This is hard, a few thoughts I've gathered:
+
+Deciding if you split horizontally vs vertically is at the highest level asking what you want care more about:
+
+- customer metrics vs engineering metrics and efficiency.
+- what's best for the customer vs what's best for the platform.
+
+Depending on how much tech needs to be build and how much specialization is required you will need horizontal teams. For example, the operating system, the networking stack, the hardware are all horizontals.
+
+**Horizontal Split (by technical domain):**
+
+- Team A: Backend services across all products
+- Team B: Frontend across all products
+- Team C: Mobile across all products
+
+**Vertical Split (by product/customer journey):**
+
+- Team A: User onboarding (full stack)
+- Team B: Core product experience (full stack)
+- Team C: Admin and billing (full stack)
+
+TODO: Table of pros and cons
+
+### The merge: When a manager leaves
+
+### The flip: When charter changes
+
+There are two categories of flips: A) Flip to new domain (genesis) or B) Flip to take over another teams space. Genesis is mostly covered above, so here we'll focus on taking over another teams, or another teams partial charter.
+
+In general when this happens there are a few common reactions
+
+**The new charter is too small**
+
+A common reason for this is the old team that had the charter, likely only planned out for 120% of there engineers. So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there's only work for 3 people, and be sad.
+
+**The new charter is much simpler then expected**
+**The new charter isn't as interesting**
+
+It's common to oversimplify from a distance. Once the team gets into the details, they'll either see it's true, and they'll find new good stuff to do, or, far more likely they'll find much more nuance, subtlety and ambiguity in the new space.
+
+**Playbook and antidotes**
+
+This is pretty similar to the whole team getting a new job, and [the first 90 days applies](/90days):
+
+- Early Win: Figure out the situation, and deliver a win.
+- Trust: Relationships with team, and peers, and partners.
+- Knowledge: Know critical parts of business, tech, org.
+
+A great way to do this is set the team up to do spikes on the major work items, this will overcome the above concerns, building knowledge and motivating the early wins.
+
+### The Double down vs Pivot: When there is insufficient progress
+
+When progress is insufficient, there are two situations, both painful, with overlapping symptoms, and some shared requirements.
+
+1. You believe the charter can still be successful, but needs more time due to execution gaps/insufficient progress/insufficient resources.
+2. You no longer believe the space can be successful.
+
+Both situations can be subjective. There will be disagreement, often passionate disagreement as so much of the teams identity can be invested in the product. An objective criteria will help.
+
+**Symptoms:**
+
+1. Progress towards goals is slower than expected.
+2. Team is demotivated - the team knows the goals, and they know they aren't making progress.
+
+**Communications:**
+
+1. Surprises are bad - you need a plan, and to let your leadership and partners know what is going on, and time till you'll have a plan.
+2. You need to let the team know what is going on, and that a plan of action is happening to make it right.
+
+#### Space can be successful, just hasn't yet - hold the course
+
+This is often a result of execution difficulties, or underestimating the difficulties of progress in a space. Action depends on the situation.
+
+If there are sufficient resources, and there is high probability success is likely - this section is in roadmapping and execution.
+
+If there are insufficient resources, or resources are blocked - consider the space can not be successful playbook.
+
+#### Space can not be successful, or can't be successful in a reasonable time frame
+
+This will be a painful situation. The team has invested significantly: emotionally and through their work and a drastic change is required. The team and the manager will have a desire for wishful thinking, but that must be avoided as additional investment is waste of resources, often the sunk cost fallacy.
+
+In these situations, you need to "declare success", wrap up the work and move on.
+
+In the best case, this decision will be made as part of the normal rhythm of business with sufficient lead time so a clear set of new projects to transition onto are found, and the team can wrap up their current work, and switch to the new work on their roadmap without any disruption except for feeling bad their previous work didn't work out as well as they had hoped.
+
+In a common case, the decision will be sudden, often with an edict from leadership to take immediate action. In this case, the priorities are:
+
+- Manage comms with the team - decide when to tell folks, see some of the re-org discussions
+- Negotiate a transition period with leadership.
+- Figure out an interim roadmap till longer term work can be found
+- Figure out how to wrap up work, and ensure fair credit attributed to work in progress.
+- This is a highly emotional situation support the team, and yourself.
+
+#### How long should you keep a "To Be Pivotted" project
+
+Finding a new charter is hard, it takes longer then you'd expect, and then once you "have it" it takes even more time to get it engineer ready. It's very tempting to let the "walking dead" project continue consuming resources as you are stalling to find new charter. This **is a mistake** you are wasting the business's resources, and the engineer's time. **Pick a pivot date, and hit that date even if there is no new charter** Use the date as leverage to influence the priority for your leadership and XFN partners. Also ensure you have a backup for the team, helping other teams, better engineering projects, hack-a-thon ideas, etc.
+
+NOTES: - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
+
+### Telling the team about reorg/recharter
 
 Assume this will be very hard on the team. It's critical they hear it from you first. It shows respect, and lets you reduce the largest anxieties. This will be emotional for a lot of people, and the team will be deeply influenced by your emotions. While you should acknowledge the loss, and the potential uncertainty and upcoming bumpiness, you **must be positive about the future**.
 
@@ -1856,7 +1982,7 @@ The day of:
    - Be around a lot, offer to talk to anyone anytime.
    - Schedule meetings with everyone in case they have more questions. If they don't, you can leave early.
 
-### The FAQ
+#### The FAQ
 
 - How does this impact my review?
 - How long till we stabilize?
@@ -1880,96 +2006,6 @@ The day of:
 - How long have you known
 - How long till you felt good about it
 - Domain specific questions
-
-### The split: When a team outgrows a manager
-
-### The merge or you leaving the team: When a manager leaves
-
-### Splitting Horizontally vs Vertically
-
-When you have multiple teams, and multiple user scenarios you decide to organize horizontally (each team owns tech solutions, spanning multiple user scenarios), or vertically (each team owns user scenarios, spanning tech solutions).
-
-This is hard, a few thoughts I've gathered:
-
-Deciding if you split horizontally vs vertically is at the highest level asking what you want care more about:
-
-- customer metrics vs engineering metrics and efficiency.
-- what's best for the customer vs what's best for the platform.
-
-Depending on how much tech needs to be build and how much specialization is required you will need horizontal teams. For example, the operating system, the networking stack, the hardware are all horizontals.
-
-TODO: Table of pros and cons
-
-### The flip: When charter changes
-
-There are two categories of flips: A) Flip to new domain (genesis) or B) Flip to take over another teams space. Genesis is mostly covered above, so here we'll focus on taking over another teams, or another teams partial charter.
-
-In general when this happens there are a few common reactions
-
-**The new charter is too small**
-
-A common reason for this is the old team that had the charter, likely only planned out for 120% of there engineers. So, if they had 2 engineers available, they planned for 3 engineers of work. A new incoming team having 10 people, will think there's only work for 3 people, and be sad.
-
-**The new charter is much simpler then expected**
-**The new charter isn't as interesting**
-
-It's common to oversimplify from a distance. Once the team gets into the details, they'll either see it's true, and they'll find new good stuff to do, or, far more likely they'll find much more nuance, subtlety and ambiguity in the new space.
-
-**Playbook and antidotes**
-
-This is pretty similar to the whole team getting a new job, and [the first 90 days applies](/90days):
-
-- Early Win: Figure out the situation, and deliver a win.
-- Trust: Relationships with team, and peers, and partners.
-- Knowledge: Know critical parts of business, tech, org.
-
-A great way to do this is set the team up to do spikes on the major work items, this will overcome the above concerns, building knowledge and motivating the early wins.
-
-### Insufficient progress - Double down or pivot
-
-When progress is insufficient, there are two situations, both painful, with overlapping symptoms, and some shared requirements.
-
-1/ You believe the charter can still be successful, but needs more time due to execution gaps/insufficient progress/insufficient resources.
-
-2/ You no longer believe the space can be successful.
-
-Both 1/ and 2/ can be subjective, and there can be disagreement, but an objective criteria can help establish this.
-
-**Symptoms:**
-
-1/ Progress towards goals is slower than expected.
-2/ Team is demotivated - the team knows the goals, and they know they aren't making progress.
-
-**Communications:**
-
-1/ Surprises are bad - you need a plan, and to let your leadership and partners know what is going on, and time till you'll have a plan.
-2/ You need to let the team know what is going on, and that a plan of action is happening to make it right.
-
-**Space can be successful, just hasn't yet - hold the course**
-
-This is often a result of execution difficulties, or underestimating the difficulties of progress in a space. Action depends on the situation.
-
-If there are sufficient resources, and there is high probability success is likely - this section is in roadmapping and execution.
-
-If there are insufficient resources, or resources are blocked - consider the space can not be successful playbook.
-
-**Space can not be successful, or can't be successful in a reasonable time frame**
-
-This will be a painful situation. The team has invested significantly: emotionally and through their work and a drastic change is required. The team and the manager will have a desire for wishful thinking, but that must be avoided as additional investment is waste of resources, often the sunk cost fallacy.
-
-In these situations, you need to "declare success", wrap up the work and move on.
-
-In the best case, this decision will be made as part of the normal rhythm of business with sufficient lead time so a clear set of new projects to transition onto are found, and the team can wrap up their current work, and switch to the new work on their roadmap without any disruption except for feeling bad their previous work didn't work out as well as they had hoped.
-
-In a common case, the decision will be sudden, often with an edict from leadership to take immediate action. In this case, the priorities are:
-
-- Manage comms with the team - decide when to tell folks, see some of the re-org discussions
-- Negotiate a transition period with leadership.
-- Figure out an interim roadmap till longer term work can be found
-- Figure out how to wrap up work, and ensure fair credit attributed to work in progress.
-- This is a highly emotional situation support the team, and yourself.
-
-NOTES: - How to know if you're in a [dip](/dip) or a cul-de-sac for the project.
 
 ### How to handle Layoffs
 
@@ -2016,7 +2052,7 @@ On %DATE% there will be fewer people in the office than today. You don't know wh
 
 As always, supporting y'all is always my top priority, so if there's anything you want to talk about - reach out.
 
-### What's the best configuration for layoff announcements?
+#### What's the best way to execute layoff announcements?
 
 When Zuck did a particular round of layoffs, he set a date in 3 months, and said we'll do them on this day. A lot of people complained, and said this is an aweful way to do it.
 
@@ -2072,11 +2108,11 @@ When I explained to someone coaching it the most important aspect of management,
 
 ### Why do you prefer being a manager to an IC
 
-I think as a manager, the day to day sucks. People problems, managing by spreadsheet, fire fighting, policy violations, etc. But, those days when you look at the team, and see them helping each other, and growing, and when you catch people after a few years and they tell you how impactful you were to their career, and how working on the team was the most fun they ever had - it feels superb.
+I think as a manager, the day-to-day sucks. People problems, managing by spreadsheet, fire fighting, policy violations, etc. But, those days when you look at the team, and see them helping each other, and growing, and when you catch people after a few years and they tell you how impactful you were to their career, and how working on the team was the most fun they ever had - it feels superb.
 
-As an IC, it's almost backwards, the day to day is fun. Coding, design, debugging, even fire fighting an outage trying to get the site back up, it's very satisfying in the moment. But, as an IC, when you look at the software you built, and you realize it's long deprecated, and replaced by something better, it's a pretty meh feeling.
+As an IC, it's almost backwards, the day-to-day is fun. Coding, design, debugging, even fire fighting an outage trying to get the site back up, it's very satisfying in the moment. But, as an IC, when you look at the software you built, and you realize it's long deprecated, and replaced by something better, it's a pretty meh feeling.
 
-So, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day to day joy of being an engineer.
+So, in a nutshell, for me those moments of intense satisfaction make it worth the loss of the day-to-day joy of being an engineer.
 
 At each stage of road productions things go wrong and we learn new stuff. TODO Come up with more examples
 
@@ -2128,7 +2164,7 @@ Why do we assess manager's ability to code - no clue, but a few enlightened comp
 
 ## Product Development and Product Management
 
-My notes on [Product](/product), often the domain of the prodcut manager, but EMs wear many hats
+My notes on [Product](/product), often the domain of the product manager, but EMs wear many hats
 
 {%include summarize-page.html src="/product" %}
 

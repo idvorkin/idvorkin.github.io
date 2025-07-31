@@ -9,7 +9,7 @@ redirect_from:
 
 It's easy to forget the many, often tiny things that makes me happy. For when that happens, here's some reminders:
 
-<script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
 <div class="alert alert-primary" id="sunburst_text">
     Click in any box or circle
 </div>
@@ -18,8 +18,8 @@ It's easy to forget the many, often tiny things that makes me happy. For when th
 </div>
 
 <script type=module>
-    import { defer, load_enjoy2 } from '/assets/js/index.js'
-    defer(load_enjoy2)
+    import { defer, load_auto_sunburst } from '/assets/js/index.js'
+    defer(() => load_auto_sunburst("Invest in"))
 </script>
 
 <script>
@@ -119,6 +119,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 ### Joy to Others
 
 - Give out chocolate balls
+- Hand out "you are awesome" cards
 - Ride a bubble bike!
 - Wear my rainbow suit
 - Wear my goat boy legs and horns
@@ -128,6 +129,7 @@ Read my **[Eulogy](/eulogy)**. See my **[Memories ](/ig66)**
 - Put on a wig
 - Wear toe shoes
 - Wear Sequin Jacket
+- Wear my zany $8 TEMU crazy shirts
 - Wear a Halloween costumes - Lama
 - Wear a Halloween costumes - Bird
 - Wear a Halloween costumes - Fish

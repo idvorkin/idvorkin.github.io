@@ -51,11 +51,11 @@ This progression from data to wisdom shows why visualization matters:
 
 Cool visualization of user PINs that reveals human behavior patterns:
 
-![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250620_090408.webp)
+![Heat map visualization showing the most to least common 4-digit PIN numbers from 3.4 million analyzed data breaches, with annotations highlighting patterns like people using birth years (19xx) and birth dates (MM/DD format), revealing predictable human behavior in password selection](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250620_090408.webp)
 
 This visualization of survivorship bias demonstrates how missing data tells its own story:
 
-![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250620_090627.webp)
+![Diagram of a World War II aircraft (likely a bomber) with red dots scattered across the wings and fuselage, illustrating survivorship bias - the dots represent bullet holes in planes that returned, while missing data from planes that didn't return tells the real story about where armor should be placed](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250620_090627.webp)
 
 ## Choosing the Right Chart Type
 

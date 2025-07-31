@@ -26,7 +26,7 @@ Most of these are copied from the system design interview books/tutorials.
     - [Throughput/Availability](#throughputavailability)
     - [Capacity/Constraints](#capacityconstraints)
     - [Regionalization I18N](#regionalization-i18n)
-    - [Non Functional requriemetns](#non-functional-requriemetns)
+    - [Non Functional requirements](#non-functional-requirements)
     - [Capacity Estimation](#capacity-estimation)
     - [Money: Monetization + COGS](#money-monetization--cogs)
 - [Specific Tech](#specific-tech)
@@ -120,7 +120,7 @@ WebSocket vs HTTP/2 + Server Side Events (SSE)
 - Geo-distributed
 - Edge/CDN
 
-### Non Functional requriemetns
+### Non Functional requirements
 
 - Latency
 - Scalability
@@ -176,10 +176,10 @@ Todo Link to Data Systems
 
 the table
 
-| Type               | TPS | Notes          |
-| ------------------ | --- | -------------- |
-| Key Value (Dynamo) | 40K | Upto 5 Indexes |
-| SQL (Aurora)       | ??  |                |
+| Type               | TPS | Notes           |
+| ------------------ | --- | --------------- |
+| Key Value (Dynamo) | 40K | Up to 5 Indexes |
+| SQL (Aurora)       | ??  |                 |
 
 ## Use cases
 
@@ -226,7 +226,7 @@ the table
 ### Chat system
 
 - 1:1 vs Group
-- Online vs Offlie
+- Online vs Offline
 - External Notification System
 - Presence
   - How to detect user is no longer online
@@ -258,7 +258,7 @@ sequenceDiagram
         U2 ->> W_PS: NewLocation(location)
         W_PS ->> FL_PS: NewLocation(U2,location)
         FL_PS ->>  W_PS: OnFriendLocationChange
-        NOTE over W_PS: Check Close Enough <br> Coalse and Debounce
+        NOTE over W_PS: Check Close Enough <br> Coalesce and Debounce
         W_PS ->>  U: OnFriendLocationChange
     end
 ```

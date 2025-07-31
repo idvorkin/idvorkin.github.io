@@ -1,7 +1,3 @@
-# Common configuration values
-exclude_chop_logs: &exclude_chop_logs
-  exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
-
 repos:
   # 🐍 Python: Linting and formatting
   - repo: https://github.com/astral-sh/ruff-pre-commit
@@ -34,7 +30,7 @@ repos:
       - id: prettier
         name: Prettier (Markdown & HTML only)
         files: \.(md|html)$
-        <<: *exclude_chop_logs
+        exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
 
   # 🧐 Dasel: YAML and JSON schema/structure validator
   - repo: https://github.com/TomWright/dasel
@@ -66,6 +62,6 @@ repos:
         entry: uv run build_back_links.py delta
         language: system
         files: '\.(md|markdown)$'
-        <<: *exclude_chop_logs
+        exclude: "^zz-chop-logs/.*$|back-links.json" # Exclude the zz-chop-logs directory
         pass_filenames: true
         verbose: true

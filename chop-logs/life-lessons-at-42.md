@@ -85,7 +85,7 @@ _\*\*\*\*_
 
 ```diff
 
-  ![](https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.webp)
+  ![Four raccoon characters representing different life stages: young raccoon in overalls and sneakers (youth), business casual raccoon with briefcase (young adult), professional raccoon in suit (career-focused adult), and elder raccoon with walking cane and coat (wisdom/retirement) - illustrating the progression through life's chapters](https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.webp)
 +
 + Each decade brings its own unique combination of resources and learnings:
 +
@@ -159,7 +159,7 @@ _\*\*\*\*_
   - [Good news](#good-news)
   - [Bad news](#bad-news)
 
-  ![](https://github.com/idvorkin/blob/raw/master/blog/racoon-health-struggle.png)
+  ![Four-panel illustration of a raccoon character doing different exercises: stretching in a yoga pose, doing a plank, sitting in a meditation position, and lifting weights - representing the health challenges and fitness focus needed in your 40s](https://github.com/idvorkin/blob/raw/master/blog/racoon-health-struggle.png)
 -
 - # The 42 in context:
 -
