@@ -91,6 +91,7 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
 - When updating a PR, prompt the user asking if they want you to open the PR for them
 - When starting work on an issue, update the issue with the linked PR
 - All PR's should go to main please
+- On startup, ask user if they want to continue a pr, list the PR's in the subdirectories (named after their pbranches)
 
 ## Commit Best Practices
 
@@ -162,3 +163,13 @@ When working with git worktrees, Claude must be run from the parent directory to
 - The `cd` command has issues in the shell environment
 - Configuration files must be in Claude's working directory
 - This allows working on multiple worktrees while maintaining consistent Claude settings
+
+## Server and Page Navigation
+
+- To run server: `just jekyll-serve`
+- Server typically runs at: http://localhost:4000
+- To open specific section, append the section anchor (e.g., http://localhost:4000#section-name)
+
+## Use builtin for 'cd' command
+
+- Use builtin commands for cd, since it's normally pointing to zoxide
