@@ -113,3 +113,25 @@ When resolving PR feedback:
 ## Development Setup
 
 - If NPM tools are not installed, install them
+
+## Parent Directory Workflow for Git Worktrees
+
+When working with git worktrees, Claude must be run from the parent directory to access both the main repository and worktrees:
+
+### Setup
+
+1. Run `./setup-claude-parent.sh` from the parent directory to create symlinks to Claude configuration
+2. This creates symlinks to CLAUDE.md and .claude directory from cc_main
+
+### Workflow
+
+- Always run Claude from the parent directory (not from cc_main or worktrees)
+- Reference files using relative paths: `cc_main/file.txt` or `cc_blog_worktree/file.txt`
+- Claude configurations remain centralized in cc_main
+- Create worktrees from cc_main: `cd cc_main && git worktree add ../feature-branch`
+
+### Why This Setup?
+
+- Claude cannot change to sibling directories (e.g., can't `cd ../other-dir`)
+- Configuration files must be in Claude's working directory
+- This allows working on multiple worktrees while maintaining consistent Claude settings
