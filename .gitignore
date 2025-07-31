@@ -5,6 +5,9 @@
 # Ignore the statically generated site.
 _site
 
+# Ignore git data file
+_data/git.json
+
 #Ignore vim junk
 *.swp
 *.swo
