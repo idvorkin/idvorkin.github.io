@@ -1251,7 +1251,7 @@
         },
         "/chop": {
             "description": "Welcome to The CHOP Shop! CHOP - or Chat-Oriented Programming - is revolutionizing how we write code. Think of those old-school auto shops: AI started as the shop hand, fetching tools and cleaning parts. Then it became an apprentice mechanic, helping diagnose problems and suggesting fixes. Now? It’s a master mechanic, capable of rebuilding entire engines from your high-level specs. Our AIs are getting smarter by the day, and we’ll explore how to make the most of this evolution.\n\n",
-            "doc_size": 51000,
+            "doc_size": 56000,
             "file_path": "_site/chop.html",
             "incoming_links": [
                 "/40yo",
@@ -1264,7 +1264,7 @@
                 "/y24",
                 "/y25"
             ],
-            "last_modified": "2025-07-20T19:13:52-07:00",
+            "last_modified": "2025-07-31T08:22:39.781001",
             "markdown_path": "_d/ai-coder.md",
             "outgoing_links": [
                 "/ai-testing",

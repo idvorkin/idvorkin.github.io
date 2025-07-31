@@ -175,12 +175,23 @@ Pretty funny - they wanted to do tab completion, but found the VS Code extension
    - Dramatically improves AI's ability to understand your entire codebase at once
 
 4. **Using MCP Tools in Cursor**
+
    - MCP (Model Control Protocol) lets AI interact with external systems, via the chat interface
    - E.g browser control, file operations, API interactions, and more
    - Great for automating repetitive tasks and research, but careful affects real system, no undos!
    - My MCP [tool list](https://github.com/idvorkin/Settings/blob/master/config/cursor/mcp.json) for your specific needs
    - Example:
      - [Using MCP to manage GitHub issues](https://github.com/idvorkin/idvorkin.github.io/blob/583d3c07ea12c5f131d5e8e11aa561b56ee288c8/zz-chop-logs/2025-05-17_15-26-github-issues-inquiry.md)
+
+5. **Claude Code MCP Servers**
+   - **GitHub MCP Server**: Provides GitHub API access for managing issues, PRs, repositories, and more
+     - Installation: `claude mcp add github ~/settings/mcp_servers/github-mcp-server.sh`
+     - Uses Docker container with GitHub Personal Access Token from secretBox.json
+     - Enables direct GitHub operations through Claude's chat interface
+   - **Context7 MCP Server**: Provides up-to-date documentation and code examples
+     - Installation: `claude mcp add --transport http context7 https://mcp.context7.com/mcp`
+     - Fetches current docs directly into your prompts - no outdated APIs or hallucinated functions
+     - Perfect for working with rapidly evolving frameworks and libraries
 
 #### Maintain Chat History with your commits
 
