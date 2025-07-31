@@ -1,5 +1,6 @@
 import { expect, test } from "@playwright/test";
 import { checkForJsErrors } from "./js-error-checker";
+import _ from "lodash";
 
 const SERVER_PORT = process.env.SERVER_PORT || "4000";
 const BASE_URL = `http://localhost:${SERVER_PORT}`;
@@ -55,7 +56,7 @@ test.describe("Keyboard shortcuts", () => {
     await page.keyboard.press("p");
 
     // Wait for navigation back to localhost with the correct port
-    await page.waitForURL(new RegExp(`http://localhost:${SERVER_PORT}`), { timeout: 10000 });
+    await page.waitForURL(new RegExp(`http://localhost:${_.escapeRegExp(SERVER_PORT)}`), { timeout: 10000 });
     expect(page.url()).toBe(`${BASE_URL}/happy`);
   });
 
@@ -75,7 +76,7 @@ test.describe("Keyboard shortcuts", () => {
 
       // Press 'p' to return - should preserve the original port
       await page.keyboard.press("p");
-      await page.waitForURL(new RegExp(`http://localhost:${SERVER_PORT}`), { timeout: 10000 });
+      await page.waitForURL(new RegExp(`http://localhost:${_.escapeRegExp(SERVER_PORT)}`), { timeout: 10000 });
 
       expect(page.url()).toBe(originalUrl);
     }
