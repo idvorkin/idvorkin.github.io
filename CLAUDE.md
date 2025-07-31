@@ -72,6 +72,7 @@ This file will direct you to all other convention files you need to follow.
 ## Commit Best Practices
 
 - Before updating a file, start by linting it via pre-commit hooks and commit that, so that the file is clean before you edit so we can see just the relevant changes in the PR
+- Never bypass commit hooks
 
 ## Development Hints
 
@@ -108,3 +109,7 @@ When resolving PR feedback:
 
 - Put changes to claude and agents into their own commit
 - Always commit after making changes to claude config (agents or claude config)
+
+## Development Setup
+
+- If NPM tools are not installed, install them
