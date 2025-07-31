@@ -43,6 +43,14 @@ This file will direct you to all other convention files you need to follow.
 - Unit tests (Vitest): Located in `src/__tests__/` - test individual functions and components
 - E2E tests (Playwright): Located in `tests/e2e/` - test full page interactions and user flows
 
+### Important: Always Add Both Test Types
+
+When adding new features or fixing bugs, **always add both unit tests and e2e tests**:
+
+- Unit tests verify the logic works correctly in isolation
+- E2E tests verify the feature works in the real browser environment
+- For features that use environment variables (like SERVER_PORT), ensure tests handle them properly
+
 ## Development Workflow
 
 - Run `just js-build` after TypeScript changes
@@ -50,6 +58,21 @@ This file will direct you to all other convention files you need to follow.
 - Use the blog's existing structure for new features
 - Check Jekyll at http://localhost:4000 when developing
 - When running e2e tests, always use headless mode (the default) and NOT `--debug` mode
+
+### Running Jekyll Server and Opening Pages
+
+- **Start Jekyll server**: `just jekyll-serve` (default port 4000) or `just jekyll-serve 4002` (custom port)
+- **Run in background**: `just jekyll-serve 4002 > /tmp/jekyll-worktree.log 2>&1 &`
+- **Open page in browser**: `open http://localhost:4002/page-name`
+- **Open specific section**: `open http://localhost:4002/page-name#section-anchor`
+- **Example for worktrees**: When working in a worktree, use a different port to avoid conflicts:
+  ```bash
+  # In worktree directory
+  just jekyll-serve 4002 > /tmp/jekyll-worktree.log 2>&1 &
+  open http://localhost:4002/igor-gap-year
+  # To jump to a specific section
+  open http://localhost:4002/igor-gap-year#battling-loneliness
+  ```
 
 ## Git Commit Guidelines
 
@@ -126,6 +149,9 @@ When working with git worktrees, Claude must be run from the parent directory to
 ### Workflow
 
 - Always run Claude from the parent directory (not from cc_main or worktrees)
+- When working in a specific worktree, use full paths for all operations since `cd` commands don't work properly
+- Example: `pre-commit run --files igor-gap-year-updates/_d/file.md` instead of `cd igor-gap-year-updates && pre-commit run --files _d/file.md`
+- For multi-command operations, use subshells: `(cd worktree && command1 && command2)`
 - Reference files using relative paths: `cc_main/file.txt` or `cc_blog_worktree/file.txt`
 - Claude configurations remain centralized in cc_main
 - Create worktrees from cc_main: `cd cc_main && git worktree add ../feature-branch`
@@ -133,5 +159,6 @@ When working with git worktrees, Claude must be run from the parent directory to
 ### Why This Setup?
 
 - Claude cannot change to sibling directories (e.g., can't `cd ../other-dir`)
+- The `cd` command has issues in the shell environment
 - Configuration files must be in Claude's working directory
 - This allows working on multiple worktrees while maintaining consistent Claude settings
