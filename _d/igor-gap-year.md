@@ -21,6 +21,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 <!-- vim-markdown-toc-start -->
 
 - [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
+- [Does Igor want to retire?](#does-igor-want-to-retire)
 - [Letting Your Dragons Out of the Box](#letting-your-dragons-out-of-the-box)
 - [Igor's Financial Security Dragon](#igors-financial-security-dragon)
 - [Slaying Financial Security](#slaying-financial-security)
@@ -54,6 +55,42 @@ What If ...
 - I am only alive for N more years.
 
 So what's holding me back? Dragons! Early cartographers added dragons and other mythical beasts to regions that were unexplored or poorly understood, symbolizing danger, mystery, and the unknown. Thus early maps had "Here be dragons" ("HC SVNT DRACONES" in Latin) to mark uncharted territories.
+
+## Does Igor want to retire?
+
+I like to say I'd do 80% of my job for free (and you don't get to do them without doing that 20% I don't enjoy). Retirement doesn't really interest me. However, as I like to say [no one ever said they wished they worked more on their deathbed](/wlb-manifesto).
+
+Family time is sacred, and work eats up a lot of energy. When there's no family time needed, I'm happy to (and probably prefer to) work.
+
+Looking ahead from 2025 (I'm 47 now), I see three distinct phases:
+
+**Phase 1: With Zach and Amelia Home (3 years, ages 47-50)**
+
+- Both kids still living at home
+- Maximum family time opportunity
+- Work flexibility most critical
+
+**Phase 2: With Amelia Home (4 years, ages 50-54)**
+
+- Zach off to college, Amelia still home
+- Transitional period with one child
+- Balancing independence and presence
+
+**Phase 3: Empty Nest (ages 54+)**
+
+- Both kids launched into their own lives
+- Time to work intensively again
+- Different kind of fulfillment and focus
+
+In Phase 3, I anticipate wanting to work extensively - but Phases 1 and 2 represent irreplaceable windows for deep family connection.
+
+**Hey you're not talking about Tori, doesn't time with her matter?**
+
+It certainly does, but Tori needs her own time, and our relationship is set up where we don't need a tonne of time together.
+
+**What about travel?**
+
+Not my thing.
 
 ## Letting Your Dragons Out of the Box
 
