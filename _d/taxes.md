@@ -33,8 +33,14 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Back door Roth](#back-door-roth)
   - [The pro-Rata rule](#the-pro-rata-rule)
   - [529s](#529s)
+- [Stock Concentration Risk and Strategies](#stock-concentration-risk-and-strategies)
+  - [The RSU Trap: How You Became Overweight on Company Stock](#the-rsu-trap-how-you-became-overweight-on-company-stock)
+  - [Dealing with a Concentrated Meta Stock Position: Timing Your Capital Gains](#dealing-with-a-concentrated-meta-stock-position-timing-your-capital-gains)
+  - [Risk Management Strategies](#risk-management-strategies)
+    - [Buying Put Options for Protection](#buying-put-options-for-protection)
+    - [Collars: Making Protection Affordable](#collars-making-protection-affordable)
+    - [Exchange Funds for Diversification](#exchange-funds-for-diversification)
 - [Weird things](#weird-things)
-  - [Exchange Fund](#exchange-fund)
 - [Tracking](#tracking)
   - [Daily Expenses](#daily-expenses)
   - [Retirment Planning](#retirment-planning)
@@ -42,7 +48,6 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
   - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
   - [Washington State Capital Gains Tax](#washington-state-capital-gains-tax)
-  - [Dealing with a Concentrated Meta Stock Position: Timing Your Capital Gains](#dealing-with-a-concentrated-meta-stock-position-timing-your-capital-gains)
   - [Cash positions and high yield savings](#cash-positions-and-high-yield-savings)
   - [No load index funds and ETFs](#no-load-index-funds-and-etfs)
   - [Health Insurance](#health-insurance)
@@ -163,15 +168,128 @@ Even though you are using after tax dollars to transfer money to the Roth IRA, y
 
 An education only after tax savings account. You put in money after tax, get tax free growth, and can use distributions for your kid or grand kids education.
 
-## Weird things
+## Stock Concentration Risk and Strategies
 
-### Exchange Fund
+### The RSU Trap: How You Became Overweight on Company Stock
 
+Here's how it happens: You join a tech company. Every quarter, you get RSUs that vest. The stock price goes up 2x, 3x, maybe 5x over a few years. You're sitting on a goldmine, so you hold. "Why sell a winner?" you think. Fast forward a few years, and suddenly 60-80% of your net worth is tied up in one company's stock.
+
+This is the **RSU trap** - a situation that feels great when the stock is rising but creates enormous concentration risk. You didn't intend to put all your eggs in one basket, but market appreciation made the decision for you.
+
+**Why this is dangerous:**
+
+- **Single point of failure**: Your job, your health insurance, your stock options, and your savings are all tied to one company
+- **Volatility amplification**: A 30% stock drop doesn't just hurt your portfolio - it devastates your net worth
+- **Career correlation**: If the company struggles, you might face both job cuts AND portfolio losses simultaneously
+- **Opportunity cost**: Money locked in one stock can't be diversified into other investments
+
+**The psychology working against you:**
+
+- **Loss aversion**: Selling feels like "locking in" gains and missing future upside
+- **Anchoring bias**: You anchor to the highest price you've seen ("It was $400, now it's only $350")
+- **Endowment effect**: You feel like you "own" this stock and it's special
+- **Tax avoidance**: The capital gains bill feels painful, so you delay
+
+**The math that matters:**
+
+Let's say you have $2M in company stock that cost you $200K (a 10x gain). The capital gains tax on $1.8M might be $400K. That sounds enormous, but consider:
+
+- **Diversified $1.6M** (after taxes) in a broad market portfolio has historically been less risky than **$2M concentrated** in one stock
+- You're trading a 20% tax hit for an 80% reduction in concentration risk
+- If the stock drops 50%, your $2M becomes $1M - worse than paying the $400K tax
+
+### Dealing with a Concentrated Meta Stock Position: Timing Your Capital Gains
+
+Suppose you have a large amount of Meta stock, and nearly all of it is unrealized capital gains. This is a classic tech employee problem: you've accumulated a big position, but now you have to decide when to sell and realize those gains.
+
+The core dilemma:
+
+- **Sell now** while you're working, earning a high salary, and in the top tax bracket (federal + WA state capital gains)?
+- **Wait until you retire** (or take a break), when your ordinary income drops and you can control how much capital gains you realize each year?
+
+If long-term capital gains are your only income, you can use the standard deduction to further reduce your taxable income. For 2024, the standard deduction for married filing jointly is $29,200. The 0% federal long-term capital gains rate applies up to $94,050 of taxable income (after the standard deduction). This means you could sell over $120,000 of appreciated stock and pay no federal tax on those gains if you have no other income.
+
+However, in practice, most people will have at least some dividend or interest income from fixed income positions (like bonds, CDs, or high-yield savings). These count toward your taxable income and reduce the amount of capital gains that can be taxed at the 0% rate. Be sure to include all sources of income when planning your withdrawals and tax strategy.
+
+The raw numbers - total taxes paid
+
+| Income /Salary | Cap Gain Sales | Average Tax Rate on Cap Gains | Marginal Tax Rate on Cap Gains | Comments                                                                                                                              |
+| -------------: | -------------: | ----------------------------: | -----------------------------: | ------------------------------------------------------------------------------------------------------------------------------------- |
+|       $600,000 |       $200,000 |                         23.8% |   23.8% (20% LTCG + 3.8% NIIT) | High salary, gains are LTCG but taxed at top LTCG+NIIT rates due to income stacking                                                   |
+|        $50,000 |       $120,000 |                          8.8% |                            15% | $50K ordinary income uses up part of 0% LTCG bracket; only ~$70K of gains at 0%, rest at 15%                                          |
+|        $50,000 |       $200,000 |                         11.3% |                            15% | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $130K at 15% (federal), all below WA exemption         |
+|        $50,000 |       $300,000 |                         13.2% |      15% Fed, 7% WA over $270K | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $230K at 15% (federal), $30K above WA exemption at 7%  |
+|        $50,000 |       $400,000 |                         15.4% |      15% Fed, 7% WA over $270K | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $330K at 15% (federal), $130K above WA exemption at 7% |
+
+_Average Tax Rate on Cap Gains: Total tax paid (federal + WA) divided by cap gains sold. Marginal Tax Rate on Cap Gains: Highest rate applied to the last dollar of cap gains (federal and/or WA). All scenarios assume long-term capital gains (LTCG); however, with high salary, LTCG are taxed at the top LTCG rate (20%) plus 3.8% NIIT due to income stacking. The $50K income scenarios show how ordinary income reduces the amount of cap gains eligible for the 0% LTCG rate._
+
+_In the $600K salary scenario, the $200K of gains are LTCG, but are taxed at 20% plus 3.8% NIIT ($47,600). Adjust for your actual bracket and NIIT applicability._
+
+### Risk Management Strategies
+
+When you're sitting on a concentrated position, you have several tools beyond just "sell it all and pay the taxes." Here are sophisticated strategies that can help manage risk while controlling tax timing:
+
+#### Buying Put Options for Protection
+
+**How it works**: Buy put options on your company stock to create a "floor" - a guaranteed minimum sale price even if the stock crashes.
+
+**Example**: You own $2M in company stock currently trading at $400/share. You buy put options with a $350 strike price expiring in 6 months for $15/share. If the stock drops to $300, you can exercise your put and sell at $350, limiting your loss to $50/share plus the $15 option cost.
+
+**Pros:**
+- Caps your downside risk while maintaining upside potential
+- No immediate tax consequences
+- Can be renewed or adjusted as needed
+
+**Cons:**
+- Costs money upfront (premium decay if stock doesn't drop)
+- Only provides protection for the option duration
+- May trigger "constructive sale" rules if strike is too close to current price
+
+#### Collars: Making Protection Affordable
+
+**How it works**: Combine buying a put (protection) with selling a call (give up some upside) to reduce or eliminate the net cost.
+
+**Example**: Same $400 stock. Buy a $350 put for $15, sell a $450 call for $16. Net cost: -$1 (you actually receive $1). You're now protected below $350 but give up gains above $450.
+
+**The sweet spot**: You keep gains between $350-$450 while being protected from major losses and paying almost nothing for the protection.
+
+**Variations:**
+- **Zero-cost collar**: Adjust strikes so call premium exactly pays for put premium
+- **Partial collar**: Only collar a portion of your holdings
+- **Rolling collar**: Renew with new strikes as stock price moves
+
+**Tax considerations**: Generally doesn't trigger immediate taxes, but complex rules apply for collars lasting more than 30 days.
+
+#### Exchange Funds for Diversification
+
+**How it works**: Pool your concentrated single stock with other investors' concentrated positions to create instant diversification without triggering capital gains.
+
+**Requirements:**
 - Min Investment: $1 million in a single stock
 - Min Hold Time: 7 years to avoid triggering taxes
-- Goal: Diversify a concentrated stock position without immediate capital gains
-- At 7 Years: You get a basket of stocks; your original cost basis is spread across them
-- When You Sell: You'll owe capital gains tax, but you control the timing — taxes are deferred, not avoided
+- Must be publicly traded stock with sufficient liquidity
+
+**The process:**
+1. Contribute your stock to the exchange fund
+2. Receive partnership units representing a diversified basket
+3. After 7 years, you can withdraw a diversified portfolio
+4. Your original cost basis is preserved and spread across the basket
+
+**Pros:**
+- Immediate diversification without tax hit
+- Professional management during the holding period
+- Maintains cost basis for future tax planning
+
+**Cons:**
+- Long 7-year lockup period
+- High minimum investment
+- Management fees (typically 1-2% annually)
+- Limited liquidity during holding period
+- Fund performance may lag concentrated position if your stock outperforms
+
+**When it makes sense**: Best for very large positions ($2M+) where the concentration risk outweighs the lockup constraints and fees.
+
+## Weird things
 
 ## Tracking
 
@@ -222,33 +340,6 @@ This tax applies to individuals, including those with ownership interests in pas
 
 - Real estate
 - Retirement accounts
-
-### Dealing with a Concentrated Meta Stock Position: Timing Your Capital Gains
-
-Suppose you have a large amount of Meta stock, and nearly all of it is unrealized capital gains. This is a classic tech employee problem: you've accumulated a big position, but now you have to decide when to sell and realize those gains.
-
-The core dilemma:
-
-- **Sell now** while you're working, earning a high salary, and in the top tax bracket (federal + WA state capital gains)?
-- **Wait until you retire** (or take a break), when your ordinary income drops and you can control how much capital gains you realize each year?
-
-If long-term capital gains are your only income, you can use the standard deduction to further reduce your taxable income. For 2024, the standard deduction for married filing jointly is $29,200. The 0% federal long-term capital gains rate applies up to $94,050 of taxable income (after the standard deduction). This means you could sell over $120,000 of appreciated stock and pay no federal tax on those gains if you have no other income.
-
-However, in practice, most people will have at least some dividend or interest income from fixed income positions (like bonds, CDs, or high-yield savings). These count toward your taxable income and reduce the amount of capital gains that can be taxed at the 0% rate. Be sure to include all sources of income when planning your withdrawals and tax strategy.
-
-The raw numbers - total taxes paid
-
-| Income /Salary | Cap Gain Sales | Average Tax Rate on Cap Gains | Marginal Tax Rate on Cap Gains | Comments                                                                                                                              |
-| -------------: | -------------: | ----------------------------: | -----------------------------: | ------------------------------------------------------------------------------------------------------------------------------------- |
-|       $600,000 |       $200,000 |                         23.8% |   23.8% (20% LTCG + 3.8% NIIT) | High salary, gains are LTCG but taxed at top LTCG+NIIT rates due to income stacking                                                   |
-|        $50,000 |       $120,000 |                          8.8% |                            15% | $50K ordinary income uses up part of 0% LTCG bracket; only ~$70K of gains at 0%, rest at 15%                                          |
-|        $50,000 |       $200,000 |                         11.3% |                            15% | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $130K at 15% (federal), all below WA exemption         |
-|        $50,000 |       $300,000 |                         13.2% |      15% Fed, 7% WA over $270K | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $230K at 15% (federal), $30K above WA exemption at 7%  |
-|        $50,000 |       $400,000 |                         15.4% |      15% Fed, 7% WA over $270K | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $330K at 15% (federal), $130K above WA exemption at 7% |
-
-_Average Tax Rate on Cap Gains: Total tax paid (federal + WA) divided by cap gains sold. Marginal Tax Rate on Cap Gains: Highest rate applied to the last dollar of cap gains (federal and/or WA). All scenarios assume long-term capital gains (LTCG); however, with high salary, LTCG are taxed at the top LTCG rate (20%) plus 3.8% NIIT due to income stacking. The $50K income scenarios show how ordinary income reduces the amount of cap gains eligible for the 0% LTCG rate._
-
-_In the $600K salary scenario, the $200K of gains are LTCG, but are taxed at 20% plus 3.8% NIIT ($47,600). Adjust for your actual bracket and NIIT applicability._
 
 ### Cash positions and high yield savings
 
