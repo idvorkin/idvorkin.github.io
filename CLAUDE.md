@@ -43,6 +43,14 @@ This file will direct you to all other convention files you need to follow.
 - Unit tests (Vitest): Located in `src/__tests__/` - test individual functions and components
 - E2E tests (Playwright): Located in `tests/e2e/` - test full page interactions and user flows
 
+### Important: Always Add Both Test Types
+
+When adding new features or fixing bugs, **always add both unit tests and e2e tests**:
+
+- Unit tests verify the logic works correctly in isolation
+- E2E tests verify the feature works in the real browser environment
+- For features that use environment variables (like SERVER_PORT), ensure tests handle them properly
+
 ## Development Workflow
 
 - Run `just js-build` after TypeScript changes

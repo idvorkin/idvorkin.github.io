@@ -1,5 +1,9 @@
 import { defineConfig, devices } from "@playwright/test";
 
+// Allow configuring the server port via environment variable
+const SERVER_PORT = process.env.SERVER_PORT || "4000";
+const BASE_URL = `http://localhost:${SERVER_PORT}`;
+
 export default defineConfig({
   testDir: "./tests",
   // Explicitly exclude unit tests that use Vitest
@@ -12,7 +16,7 @@ export default defineConfig({
   maxFailures: 1,
   timeout: 30000,
   use: {
-    baseURL: "http://localhost:4000",
+    baseURL: BASE_URL,
     trace: "on-first-retry",
     // Balanced optimizations for speed and reliability
     actionTimeout: 5000,
@@ -37,8 +41,8 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "just jekyll-serve",
-    url: "http://localhost:4000",
+    command: `just jekyll-serve ${SERVER_PORT}`,
+    url: BASE_URL,
     reuseExistingServer: !process.env.CI,
     stdout: "pipe",
     stderr: "pipe",
