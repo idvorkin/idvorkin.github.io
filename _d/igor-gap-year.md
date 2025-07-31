@@ -20,7 +20,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Is Igor Gonna take a gap year?](#is-igor-gonna-take-a-gap-year)
+- [Is Igor Gonna Take a Gap Year?](#is-igor-gonna-take-a-gap-year)
 - [Letting Your Dragons Out of the Box](#letting-your-dragons-out-of-the-box)
 - [Igor's Financial Security Dragon](#igors-financial-security-dragon)
 - [Slaying Financial Security](#slaying-financial-security)
@@ -32,24 +32,24 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [Igor's Identity Dragon](#igors-identity-dragon)
 - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
 - [Gap Year Pre-Mortem](#gap-year-pre-mortem)
-- [Gap Year Voices in my head](#gap-year-voices-in-my-head)
+- [Gap Year Voices in My Head](#gap-year-voices-in-my-head)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
 {% include summarize-page.html src="/gap-year" %}
 
-## Is Igor Gonna take a gap year?
+## Is Igor Gonna Take a Gap Year?
 
 {% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 
-When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers include competitive offers from Google, Meta, and several mid sized companies. But today's job market is much much scarier than pre-COVID 2020 - it's become downright dicey out there.
+When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers including competitive offers from Google, Meta, and several mid-sized companies. But today's job market is much much scarier than pre-COVID 2020 - it's become downright dicey out there.
 
 But there's more to life than collecting money, here are some what ifs I need to remember:
 
 What If ...
 
-- I can only see my kid for N more years
+- I can only see my kids for N more years
 - I am only able bodied for N more years.
 - I am only alive for N more years.
 
@@ -94,7 +94,7 @@ The dragons are the same size they've always been. The difference is now you're 
 
   - This is very probable.
   - **But** Meta lets you have a "short interview loop" if you boomerang in a year
-  - **But** I've always said if you won't take a job for a pay cut, you shouldn't take it. I guess that could be cuz the job is less fun, or cuz it's the highest paid job you'll take :)
+  - **But** I've always said if you won't take a job for a pay cut, you shouldn't take it. I guess that could be because the job is less fun, or because it's the highest paid job you'll take :)
   - **So** My retirement is not delayed by 1.5 years, It's delayed by 'N' years, that's OK, the year now is much more valuable
 
 - What if I'm wrong about my expenses?
@@ -117,11 +117,11 @@ _If you're not gonna feel safe at 2 years \* your expenses, it's hard to imagine
 
 See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
 
-Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and sets up future Igor to run on Automatic. So here are some rules
+Igor is at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and sets up future Igor to run on automatic. So here are some rules:
 
 Gap year is scary, here are some guard rails to make it happen:
 
-- Money: Net worth exceeds "X" Million.
+- Money: Net worth exceeds "X" million.
 
   - See my buddy the "Financial Security Dragon"
   - Beyond this the risk is negligible
@@ -201,7 +201,7 @@ This connects to my broader thinking on [physical health](/physical-health), [me
 
 Instead of thinking about it as a gap year (for which I'd worry about being a sloth), I'll think about it as the optimal time to make capital investments in my [health](/physical-health) and [habits](/d/habits) infrastructure.
 
-At 50, you have peak capital (time, energy, resources) to invest in your body, mind and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
+At 50, you have peak capital (time, energy, resources) to invest in your body, mind, and relationship infrastructure. Every dollar spent on prevention now saves $10 in treatment later. Habits are the "dividend-paying stocks" of personal development - they keep generating returns without additional input.
 
 **Health Goals/Artifacts (Physical, Emotional, Relationship)**
 
@@ -250,7 +250,7 @@ Mitigations:
 
 - But these folks are probably unique:
 
-  - They had courage/interest in doing this
+  - They had the courage/interest in doing this
   - They are unencumbered by society's expectations
   - They have more time to think this stuff through deeply
 
@@ -265,7 +265,7 @@ Mitigations:
 
 ## Igor's Identity Dragon
 
-- Forget telling the future, what does taking a gap year say about me ?
+- Forget telling the future, what does taking a gap year say about me?
 - Am I really setting a good example for my kids?
 - Lens 1: I'm putting myself ahead of the security of my family
 - **But** It can be about overcoming my fear and investing in myself and relationships
@@ -296,17 +296,17 @@ Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
 Monthly recurring revenue? That would be pretty cool. Certainly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
 
-Will this actually slay the Financial Security Dragon? Let's be real - we're talking about pocket change compared to a tech salary. But hey, a man can dream of becoming the next MrBeast of gap year content! 🎬💰
+Will this actually slay the Financial Security Dragon? Let's be real — we're talking about pocket change compared to a tech salary. But hey, a man can dream of becoming the next MrBeast of gap year content! 🎬💰
 
 - Product artifacts: TBD
 - Revenue artifacts: Affiliate links? Course? Ad Revenue from Content? Who knows
 
 ## Gap Year Pre-Mortem
 
-In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I think this is another pivot on the dragons above
+In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen — I guess I should do this for a gap year as well. I think this is another pivot on the dragons above
 
-## Gap Year Voices in my head
+## Gap Year Voices in My Head
 
-In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I think this is another pivot on the dragons above
+In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen — I guess I should do this for a gap year as well. I think this is another pivot on the dragons above
 
 {%include summarize-page.html src="/voices"%}

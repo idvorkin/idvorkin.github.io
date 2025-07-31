@@ -73,7 +73,6 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
   # To jump to a specific section
   open http://localhost:4002/igor-gap-year#battling-loneliness
   ```
-
 ## Git Commit Guidelines
 
 - **Generated JS files ARE committed** (assets/js/index.js, assets/js/index.js.map)
