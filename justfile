@@ -195,18 +195,15 @@ coverage-instrument:
 coverage-report:
     npx nyc report --reporter html --reporter text && open coverage/index.html
 
-jekyll-serve:
+jekyll-serve port="4000":
     #!/usr/bin/env sh
     # Update git branch info for dev banner
     echo '{"branch": "'$(git branch --show-current)'"}' > _data/git.json
     if [ "$(uname)" = "Darwin" ]; then
-        just internal-jekyll-mac-serve
+        ~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host 127.0.0.1 --port {{port}}
     else
-        bundle exec jekyll server --incremental --livereload --host 127.0.0.1
+        bundle exec jekyll server --incremental --livereload --host 127.0.0.1 --port {{port}}
     fi
-
-internal-jekyll-mac-serve:
-    ~/homebrew/opt/ruby/bin/bundle exec jekyll server --incremental --livereload --host 127.0.0.1
 
 jekyll-container:
     bundle exec jekyll server --incremental --livereload --host 0.0.0.0
