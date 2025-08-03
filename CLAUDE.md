@@ -142,6 +142,13 @@ When resolving PR feedback:
 
 When working with git worktrees, Claude must be run from the parent directory to access both the main repository and worktrees:
 
+### Important: Check Your Working Directory
+
+**If you're currently in `cc_blog/something` (a subdirectory), you're likely in a worktree.**
+- Run `pwd` to check your current location
+- If you see `/cc_blog/worktree-name`, you should run Claude from `/cc_blog` instead
+- This ensures Claude can access all worktrees and the main repository
+
 ### Setup
 
 1. Run `./setup-claude-parent.sh` from the parent directory to create symlinks to Claude configuration
