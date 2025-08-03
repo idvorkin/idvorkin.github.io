@@ -17,6 +17,10 @@ When you work at a tech company and receive RSUs, it's easy to accidentally beco
 <strong>Tax Assumptions:</strong> All tax calculations in this guide assume married filing jointly and Washington State residency. Your actual rates will vary based on filing status, state of residence, and individual circumstances. Consult a tax professional for personalized advice.
 </div>
 
+<div class="alert alert-warning" role="alert">
+<strong>Coming Soon:</strong> Apologies that these tables and examples are so assumption-ridden. When I have some free time, I'll update this with a live calculator so you can plug in your actual numbers and get personalized results!
+</div>
+
 <figure class="float-end w-50 ms-3 mb-3">
   <img
     src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250803_104012.webp"
