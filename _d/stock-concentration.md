@@ -280,3 +280,13 @@ Exchange funds charge management fees on your entire position, while taxes are o
 - The 7-year lockup aligns with your long-term holding plans anyway
 
 **Break-even analysis:** If your concentrated stock underperforms the diversified fund by more than 1% annually due to company-specific risk, the exchange fund fees are worth it. Given single-stock volatility, this is often a reasonable bet for risk reduction.
+
+## Related Articles
+
+Explore these related topics to build your complete financial independence strategy:
+
+- **[Planning Your Gap Year](/gap-year)** - How to structure time off between jobs or before retirement
+- **[Igor's Gap Year Journey](/igor-gap-year)** - Personal reflections and lessons from taking a career break  
+- **[Retirement Planning](/retire)** - Building towards financial independence and early retirement
+
+These resources complement your stock concentration strategy by addressing the bigger picture of financial planning, tax optimization, and lifestyle design.
