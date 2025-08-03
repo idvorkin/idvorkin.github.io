@@ -13,6 +13,10 @@ redirect_from:
 
 When you work at a tech company and receive RSUs, it's easy to accidentally become dangerously concentrated in your company's stock. You didn't mean to bet your entire future on one company, but here you are - watching every earnings call with your stomach in knots because a 30% drop would devastate your net worth. This guide explains the risks and strategies for managing concentrated stock positions - from tax-efficient selling strategies to protective options that cost you nothing, and exchange funds that diversify without triggering taxes.
 
+<div class="alert alert-info" role="alert">
+<strong>Tax Assumptions:</strong> All tax calculations in this guide assume married filing jointly and Washington State residency. Your actual rates will vary based on filing status, state of residence, and individual circumstances. Consult a tax professional for personalized advice.
+</div>
+
 <figure class="float-end w-50 ms-3 mb-3">
   <img
     src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250803_104012.webp"
@@ -134,17 +138,26 @@ However, in practice, most people will have at least some dividend or interest i
 
 The raw numbers - total taxes paid
 
-| Income /Salary | Cap Gain Sales | Average Tax Rate on Cap Gains | Marginal Tax Rate on Cap Gains | Comments                                                                                                                              |
-| -------------: | -------------: | ----------------------------: | -----------------------------: | ------------------------------------------------------------------------------------------------------------------------------------- |
-|       $600,000 |       $200,000 |                         23.8% |   23.8% (20% LTCG + 3.8% NIIT) | High salary, gains are LTCG but taxed at top LTCG+NIIT rates due to income stacking                                                   |
-|        $50,000 |       $120,000 |                          8.8% |                            15% | $50K ordinary income uses up part of 0% LTCG bracket; only ~$70K of gains at 0%, rest at 15%                                          |
-|        $50,000 |       $200,000 |                         11.3% |                            15% | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $130K at 15% (federal), all below WA exemption         |
-|        $50,000 |       $300,000 |                         13.2% |      15% Fed, 7% WA over $270K | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $230K at 15% (federal), $30K above WA exemption at 7%  |
-|        $50,000 |       $400,000 |                         15.4% |      15% Fed, 7% WA over $270K | $50K ordinary income uses up 0% LTCG bracket; first ~$70K of gains at 0%, next $330K at 15% (federal), $130K above WA exemption at 7% |
+**Tax impact on capital gains at different income levels (selling $200K in Washington State):**
 
-_Average Tax Rate on Cap Gains: Total tax paid (federal + WA) divided by cap gains sold. Marginal Tax Rate on Cap Gains: Highest rate applied to the last dollar of cap gains (federal and/or WA). All scenarios assume long-term capital gains (LTCG); however, with high salary, LTCG are taxed at the top LTCG rate (20%) plus 3.8% NIIT due to income stacking. The $50K income scenarios show how ordinary income reduces the amount of cap gains eligible for the 0% LTCG rate._
+| Your Income Level | Cap Gain Sales | Average Tax Rate | Tax Breakdown |
+|-------------------|----------------|------------------|---------------|
+| **Under $270K income** | $200,000 | 15.0% | 15% federal only |
+| **$270K-$553K income** | $200,000 | 18.8% | 15% fed + 3.8% NIIT (no WA tax on first $270K gains) |
+| **$553K-$600K income** | $200,000 | 18.8% | 15% fed + 3.8% NIIT (no WA tax on first $270K gains) |
+| **Over $600K income** | $200,000 | 23.8% | 20% fed + 3.8% NIIT (no WA tax on first $270K gains) |
 
-_In the $600K salary scenario, the $200K of gains are LTCG, but are taxed at 20% plus 3.8% NIIT ($47,600). Adjust for your actual bracket and NIIT applicability._
+**Tax impact when selling different amounts (assuming $50K ordinary income in Washington State):**
+
+| Capital Gains Sold | Average Tax Rate | Tax Breakdown |
+|---------------------|------------------|---------------|
+| **$100K** | 6.5% | First $70K at 0%, next $30K at 15% federal |
+| **$200K** | 10.8% | First $70K at 0%, next $130K at 15% federal |
+| **$300K** | 13.5% | 15% fed on most + 3.8% NIIT on portion over $270K total income + 7% WA on $30K over $270K |
+| **$400K** | 15.9% | 15% fed + 3.8% NIIT + 7% WA on $130K over $270K |
+| **$500K** | 17.3% | 15% fed + 3.8% NIIT + 7% WA on $230K over $270K |
+
+_Key thresholds: NIIT starts at $270K total income (married filing jointly). WA state tax applies to capital gains over $270K. Federal LTCG rate jumps from 15% to 20% at $553K taxable income._
 
 ## Risk Management Strategies
 
@@ -235,23 +248,23 @@ Exchange funds charge management fees on your entire position, while taxes are o
 | Your Income Level | Management Fees (7yr) | Capital Gains Tax | Tax Breakdown |
 |---------------------|----------------------|-------------------|---------------|
 | **Under $270K income** | $7,000 | $13,500 | 15% federal only |
-| **$270K-$553K income** | $7,000 | $19,800 | 15% fed + 3.8% NIIT + 7% WA |
-| **$553K-$600K income** | $7,000 | $19,800 | 15% fed + 3.8% NIIT + 7% WA |
-| **Over $600K income** | $7,000 | $27,720 | 20% fed + 3.8% NIIT + 7% WA |
+| **$270K-$553K income** | $7,000 | $16,920 | 15% fed + 3.8% NIIT |
+| **$553K-$600K income** | $7,000 | $16,920 | 15% fed + 3.8% NIIT |
+| **Over $600K income** | $7,000 | $21,420 | 20% fed + 3.8% NIIT |
 
-**Example 2: $1M position with $100K cost basis ($900K unrealized gain) - assumes no other income**
+**Example 2: $1M position with $100K cost basis ($900K unrealized gain) - assumes married filing jointly with no other income**
 
 | Capital Gains Amount | Management Fees (7yr) | Capital Gains Tax | Tax Breakdown |
 |---------------------|----------------------|-------------------|---------------|
-| **First $270K** | $70,000 | $40,500 | 15% federal only |
-| **$270K - $553K** | $70,000 | $95,600 | 15% fed + 3.8% NIIT + 7% WA |
-| **$553K - $900K** | $70,000 | $202,100 | 20% fed + 3.8% NIIT + 7% WA |
+| **First $270K** | $70,000 | $22,050 | 0% on first $123K, 15% on next $147K |
+| **$270K - $553K** | $70,000 | $75,254 | 15% fed + 3.8% NIIT |
+| **$553K - $900K** | $70,000 | $182,130 | 20% fed + 3.8% NIIT + 7% WA on gains over $270K |
 
 **Key insights:**
 - At $100K position: Cache allows entry at $100K (most others require $1M), making exchange funds accessible for smaller positions
-- Your income dramatically affects tax on gains: $90K gain costs $13.5K to $27.7K depending on income
-- High earners (>$600K) pay double the tax rate of low earners on the same gains
-- At $1M position with $900K gains: Exchange funds save ~$130K ($70K fees vs $202K tax)
+- Your income dramatically affects tax on gains: $90K gain costs $13.5K to $21.4K depending on income
+- High earners (>$600K) pay 58% more tax than low earners (<$270K) on the same gains
+- At $1M position with $900K gains: Exchange funds save ~$112K ($70K fees vs $182K tax)
 - Remember: You still owe capital gains tax eventually when exiting the exchange fund
 
 **Key differences:**
