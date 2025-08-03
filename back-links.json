@@ -2566,7 +2566,8 @@
       "incoming_links": [
         "/igor-gap-year",
         "/monetize",
-        "/retire"
+        "/retire",
+        "/stock-concentration"
       ],
       "last_modified": "2025-06-22T09:39:35-07:00",
       "markdown_path": "_d/gap-year.md",
@@ -2926,7 +2927,8 @@
       "doc_size": 39000,
       "file_path": "_site/igor-gap-year.html",
       "incoming_links": [
-        "/gap-year"
+        "/gap-year",
+        "/stock-concentration"
       ],
       "last_modified": "2025-07-31T11:03:05-07:00",
       "markdown_path": "_d/igor-gap-year.md",
@@ -3095,7 +3097,7 @@
     },
     "/joy": {
       "description": "If you could have one superpower, what would it be? At 46, you’d think I’d have a quick answer, but the usual ideas—flying, invisibility, stopping time—felt childish. Probably the setting: a circle of 9-17-year-olds, breaking the ice, sharing their wished-for superpowers. As my mind scrambled, a mild panic set in. Nothing surfaced—until a bit of my eulogy came to me: Igor lived to see eyes go wide and mouths gape with wonder. He loved when strangers were drawn in against their objections, when a kid in meltdown, or an adult weighed down by life, forgot their troubles. Relief washed over me, I knew my answer. The super power I wished for:  bringing joy to others.\n\n",
-      "doc_size": 30000,
+      "doc_size": 31000,
       "file_path": "_site/joy.html",
       "incoming_links": [
         "/affirmations",
@@ -3110,7 +3112,7 @@
         "/mood",
         "/sublime"
       ],
-      "last_modified": "2025-07-27T14:02:26-07:00",
+      "last_modified": "2025-08-03T12:27:27-07:00",
       "markdown_path": "_d/joy.md",
       "outgoing_links": [
         "/balloon",
@@ -3597,7 +3599,7 @@
     },
     "/money": {
       "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
-      "doc_size": 68000,
+      "doc_size": 54000,
       "file_path": "_site/money.html",
       "incoming_links": [
         "/d/time-off-2020-03",
@@ -3605,13 +3607,15 @@
         "/igor-gap-year",
         "/operating-manual",
         "/parkinson",
-        "/retire"
+        "/retire",
+        "/stock-concentration"
       ],
-      "last_modified": "2025-08-03T11:21:52-07:00",
+      "last_modified": "2025-08-03T12:13:56-07:00",
       "markdown_path": "_d/taxes.md",
       "outgoing_links": [
         "/parkinson",
-        "/partner-trouble"
+        "/partner-trouble",
+        "/stock-concentration"
       ],
       "redirect_url": "",
       "title": "Tax and Saving",
@@ -4239,7 +4243,8 @@
         "/42",
         "/gap-year",
         "/igor-gap-year",
-        "/monetize"
+        "/monetize",
+        "/stock-concentration"
       ],
       "last_modified": "2025-06-02T07:20:36-07:00",
       "markdown_path": "_d/retire.md",
@@ -4548,15 +4553,22 @@
       "url": "/software-leadership-roles"
     },
     "/stock-concentration": {
-      "description": "When you work at a tech company and receive RSUs, it’s easy to accidentally become dangerously concentrated in your company’s stock. This guide explains the risks and strategies for managing concentrated stock positions.\n\n",
-      "doc_size": 30000,
+      "description": "When you work at a tech company and receive RSUs, it’s easy to accidentally become dangerously concentrated in your company’s stock. You didn’t mean to bet your entire future on one company, but here you are - watching every earnings call with your stomach in knots because a 30% drop would devastate your net worth. This guide explains the risks and strategies for managing concentrated stock positions - from tax-efficient selling strategies to protective options that cost you nothing, and exchange funds that diversify without triggering taxes.\n\n",
+      "doc_size": 36000,
       "file_path": "_site/stock-concentration.html",
-      "incoming_links": [],
-      "last_modified": "2025-08-03T11:30:43.261499",
+      "incoming_links": [
+        "/money"
+      ],
+      "last_modified": "2025-08-03T12:40:53-07:00",
       "markdown_path": "_d/stock-concentration.md",
-      "outgoing_links": [],
+      "outgoing_links": [
+        "/gap-year",
+        "/igor-gap-year",
+        "/money",
+        "/retire"
+      ],
       "redirect_url": "",
-      "title": "Stock Concentration Risk: Managing Your Tech Wealth",
+      "title": "Stock Concentration: How I Learned to Stop Worrying and Love the Capital Gains Tax",
       "url": "/stock-concentration"
     },
     "/strategy": {
