@@ -250,6 +250,10 @@ I need more thinking here but something like.
 
 ## Role Models & Inspirations
 
+### My Inspiration
+
+![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250803_121832.webp)
+
 #### Gayle - The Queen of Aggressive Kindness
 
 One of my favorite inspirations is Gayle, a 78-year-old retired engineer with over 50 patents to her name, who now dedicates her retirement to "aggressive kindness." Follow her story on Instagram [@gayle.tales](https://www.instagram.com/gayle.tales/).
