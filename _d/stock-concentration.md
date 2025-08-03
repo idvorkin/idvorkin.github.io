@@ -204,7 +204,7 @@ When you're sitting on a concentrated position, you have several tools beyond ju
 
 ### Exchange Funds for Diversification
 
-**TL;DR**: Trade your single stock for a diversified portfolio without triggering taxes, but you're locked in for 7 years and pay 1% annually.
+**TL;DR**: Trade your single stock for a diversified portfolio without triggering taxes, but you're locked in for 7 years and pay 1% annually. You still pay capital gains tax when you eventually sell, but on the diversified portfolio's value!
 
 **How it works**: Pool your concentrated single stock with other investors' concentrated positions to create instant diversification without triggering capital gains.
 
