@@ -41,6 +41,7 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [Marginal vs Average Tax Rate](#marginal-vs-average-tax-rate)
   - [Short vs Long term capital gains](#short-vs-long-term-capital-gains)
   - [Washington State Capital Gains Tax](#washington-state-capital-gains-tax)
+  - [Step-Up in Basis at Death - The Ultimate Tax Escape](#step-up-in-basis-at-death---the-ultimate-tax-escape)
   - [Cash positions and high yield savings](#cash-positions-and-high-yield-savings)
   - [No load index funds and ETFs](#no-load-index-funds-and-etfs)
   - [Health Insurance](#health-insurance)
@@ -218,6 +219,47 @@ This tax applies to individuals, including those with ownership interests in pas
 
 - Real estate
 - Retirement accounts
+
+### Step-Up in Basis at Death - The Ultimate Tax Escape
+
+**TL;DR**: When you die, your heirs inherit assets at current market value with ZERO capital gains tax on all appreciation during your lifetime.
+
+This is one of the most powerful provisions in the U.S. tax code. Your beneficiaries receive a "stepped-up basis" - the tax basis resets to market value on your date of death, completely eliminating capital gains.
+
+**Example:**
+- You bought stock for $100K
+- Worth $5M at death
+- Heirs inherit with $5M basis
+- They sell for $5M = **$0 capital gains tax**
+- Tax savings: ~$1M vs. selling while alive
+
+**Special Benefits for Spouses in Washington State:**
+
+As a community property state, Washington provides a massive advantage - **BOTH halves** of community property get stepped up when one spouse dies. Your surviving spouse can immediately diversify the entire position tax-free.
+
+- Joint purchase: $200K
+- Current value: $2M  
+- First spouse dies: Entire $2M gets new basis
+- Surviving spouse sells: **$0 tax** (saves ~$400K)
+
+**When This Makes Sense:**
+- You're 65+ or have health issues
+- Have other assets for living expenses
+- Estate under $13.61M (2024 exemption)
+- Can manage concentration risk
+
+**The "Buy, Borrow, Die" Strategy:**
+1. Hold appreciated assets
+2. Borrow against them for expenses (loans aren't taxable)
+3. Die holding assets (heirs get step-up, sell to repay loans)
+
+**Important Caveats:**
+- Estate tax applies over $13.61M
+- Doesn't apply to retirement accounts (401k, IRA)
+- Stock could crash before death
+- Opportunity cost of holding vs. diversifying
+
+Remember: Balance tax optimization with actually living your life. Your heirs would prefer you alive and happy over any tax savings.
 
 ### Cash positions and high yield savings
 

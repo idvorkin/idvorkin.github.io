@@ -42,7 +42,7 @@ When you work at a tech company and receive RSUs, it's easy to accidentally beco
   - [Buying Put Options for Protection](#buying-put-options-for-protection)
   - [Collars: Making Protection Affordable](#collars-making-protection-affordable)
   - [Exchange Funds for Diversification](#exchange-funds-for-diversification)
-- [The Ultimate Tax Escape: Step-Up in Basis at Death](#the-ultimate-tax-escape-step-up-in-basis-at-death)
+- [The Ultimate Tax Escape: Step-Up in Basis](#the-ultimate-tax-escape-step-up-in-basis)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -286,80 +286,13 @@ Exchange funds charge management fees on your entire position, while taxes are o
 
 **Break-even analysis:** If your concentrated stock underperforms the diversified fund by more than 1% annually due to company-specific risk, the exchange fund fees are worth it. Given single-stock volatility, this is often a reasonable bet for risk reduction.
 
-## The Ultimate Tax Escape: Step-Up in Basis at Death
+## The Ultimate Tax Escape: Step-Up in Basis
 
-**TL;DR**: Die holding your appreciated stock and your heirs pay ZERO capital gains tax. Seriously.
+When you die, your heirs inherit your appreciated stock at current market value with **zero capital gains tax** on all the appreciation during your lifetime. This "stepped-up basis" can save hundreds of thousands or even millions in taxes.
 
-There's one way to completely eliminate capital gains tax on your concentrated position: hold it until death. This isn't morbid financial planning - it's understanding one of the most powerful provisions in the U.S. tax code.
+In Washington State (a community property state), it's even better - when one spouse dies, **both halves** of jointly-owned stock get stepped up, allowing the surviving spouse to immediately diversify tax-free.
 
-### How Step-Up in Basis Works
-
-When you die, your beneficiaries receive a "stepped-up basis" - the tax basis resets to the market value on your date of death. All those unrealized gains? They disappear for tax purposes.
-
-**Example:**
-- You bought $100K of company stock
-- It's worth $5M when you die
-- Your heirs inherit with a $5M basis
-- They sell immediately for $5M
-- Capital gains tax owed: **$0**
-- Tax savings: ~$1M (compared to you selling while alive)
-
-### Special Rules for Spouses
-
-**In Washington State (community property state):**
-- **BOTH halves** of community property get stepped up when one spouse dies
-- Your surviving spouse can immediately diversify the entire position tax-free
-- This "double step-up" is exclusive to the 9 community property states
-
-**Example for married couples in WA:**
-- Joint purchase: $200K of stock
-- Current value: $2M
-- First spouse dies: Entire $2M gets new basis
-- Surviving spouse sells: $0 capital gains tax
-- Tax savings: ~$400K
-
-**In non-community property states:**
-- Only the deceased spouse's half gets stepped up
-- Surviving spouse still owns their half with original low basis
-
-### When This Strategy Makes Sense
-
-**Consider holding until death if:**
-- You're older (65+) or have health issues
-- You have enough other assets for living expenses
-- Your heirs would inherit below the estate tax threshold ($13.61M per person in 2024)
-- You can manage the concentration risk
-- You want to maximize family wealth transfer
-
-**Don't wait for step-up if:**
-- You need the money for living expenses
-- The concentration risk threatens your financial security
-- You're young and healthy (could be decades of risk)
-- Your company faces serious headwinds
-- You'd sleep better diversified
-
-### The "Buy, Borrow, Die" Strategy
-
-Ultra-wealthy families often:
-1. **Buy/Hold** appreciated assets
-2. **Borrow** against them for living expenses (loans aren't taxable income)
-3. **Die** holding the assets (heirs get step-up and can sell to repay loans)
-
-This completely avoids capital gains tax across generations.
-
-### Important Caveats
-
-- **Estate tax** still applies to estates over $13.61M (2024)
-- **State inheritance taxes** may apply depending on your state
-- **Retirement accounts** (401k, IRA) don't get step-up in basis
-- **Risk remains** - your stock could crash before you die
-- **Opportunity cost** - missing decades of diversified growth
-
-### The Bottom Line
-
-The step-up in basis at death is the ultimate tax-free exit from concentrated positions. For older tech employees sitting on millions in appreciated stock, the math often favors holding - especially in community property states like Washington.
-
-But remember: **You can't take it with you, and your heirs would probably prefer you alive and poor rather than dead and rich.** Balance tax optimization with living your life and managing risk appropriately.
+For detailed information on step-up in basis, the "Buy, Borrow, Die" strategy, and when this approach makes sense, see the [Step-Up in Basis section in the Tax Guide](/money#step-up-in-basis-at-death---the-ultimate-tax-escape).
 
 ## Related Articles
 
