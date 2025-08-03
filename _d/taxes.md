@@ -35,12 +35,12 @@ Most of the tax information on the web is a mess. It's confusing as it tries to 
   - [529s](#529s)
 - [Stock Concentration Risk and Strategies](#stock-concentration-risk-and-strategies)
   - [The RSU Trap: How You Became Overweight on Company Stock](#the-rsu-trap-how-you-became-overweight-on-company-stock)
-  - [Dealing with a Concentrated Meta Stock Position: Timing Your Capital Gains](#dealing-with-a-concentrated-meta-stock-position-timing-your-capital-gains)
+  - [You're more concentrated then you think.](#youre-more-concentrated-then-you-think)
+  - [Watering down your concentration](#watering-down-your-concentration)
   - [Risk Management Strategies](#risk-management-strategies)
     - [Buying Put Options for Protection](#buying-put-options-for-protection)
     - [Collars: Making Protection Affordable](#collars-making-protection-affordable)
     - [Exchange Funds for Diversification](#exchange-funds-for-diversification)
-- [Weird things](#weird-things)
 - [Tracking](#tracking)
   - [Daily Expenses](#daily-expenses)
   - [Retirment Planning](#retirment-planning)
@@ -198,7 +198,35 @@ Let's say you have $2M in company stock that cost you $200K (a 10x gain). The ca
 - You're trading a 20% tax hit for an 80% reduction in concentration risk
 - If the stock drops 50%, your $2M becomes $1M - worse than paying the $400K tax
 
-### Dealing with a Concentrated Meta Stock Position: Timing Your Capital Gains
+### You're more concentrated then you think.
+
+If you work at a FANG company (Meta, Amazon, Apple, Netflix, Google/Alphabet) or other major tech firms, diversifying into index funds provides less diversification than you might think. Here's the uncomfortable truth:
+
+![Market concentration treemap showing the dominance of AAPL, NVDA, MSFT, AMZN, GOOG, META, and TSLA in the index, with these 7 stocks taking up nearly a third of the entire market capitalization while hundreds of other companies are relegated to tiny squares](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250803_104012.webp)
+
+**Example portfolio showing tech concentration:**
+
+| Ticker | Company | Portfolio % |
+|--------|---------|------------|
+| AAPL | Apple | 9.27% |
+| NVDA | Nvidia | 7.78% |
+| MSFT | Microsoft | 7.78% |
+| AMZN | Amazon | 5.83% |
+| AVGO | Broadcom | 4.86% |
+| GOOG | Alphabet Class C | 3.89% |
+| META | Meta Platforms | 3.89% |
+| **Total** | **Top 7 Tech Holdings** | **43.30%** |
+
+
+This portfolio shows how even a "diversified" portfolio can end up with nearly half its value (43.30%) concentrated in just 7 tech stocks, with the top 3 alone representing almost 25% of total portfolio value.
+
+**The NASDAQ is even worse:**
+- Top 10 stocks represent ~50% of the NASDAQ-100
+- Your FANG employer could be 5-15% of the index
+- Tech correlation approaches 80-90%
+
+
+### Watering down your concentration
 
 Suppose you have a large amount of Meta stock, and nearly all of it is unrealized capital gains. This is a classic tech employee problem: you've accumulated a big position, but now you have to decide when to sell and realize those gains.
 
@@ -231,6 +259,8 @@ When you're sitting on a concentrated position, you have several tools beyond ju
 
 #### Buying Put Options for Protection
 
+*NOTE: This will stil be a taxable event, but you'll feel better knowing you didn't  lose it all*
+
 **How it works**: Buy put options on your company stock to create a "floor" - a guaranteed minimum sale price even if the stock crashes.
 
 **Example**: You own $2M in company stock currently trading at $400/share. You buy put options with a $350 strike price expiring in 6 months for $15/share. If the stock drops to $300, you can exercise your put and sell at $350, limiting your loss to $50/share plus the $15 option cost.
@@ -246,6 +276,8 @@ When you're sitting on a concentrated position, you have several tools beyond ju
 - May trigger "constructive sale" rules if strike is too close to current price
 
 #### Collars: Making Protection Affordable
+
+*NOTE: This will stil be a taxable event, but you'll feel better knowing you didn't  lose it all*
 
 **How it works**: Combine buying a put (protection) with selling a call (give up some upside) to reduce or eliminate the net cost.
 
@@ -289,7 +321,53 @@ When you're sitting on a concentrated position, you have several tools beyond ju
 
 **When it makes sense**: Best for very large positions ($2M+) where the concentration risk outweighs the lockup constraints and fees.
 
-## Weird things
+**The cool new kid on the block**
+
+* [Cache Exchange Funds](https://usecache.com/product/exchange-funds) is one provider offering exchange funds for concentrated stock positions, with quarterly fund launches and professional diversification strategies. Note: 1% management fee + $100K minimum (most other providers require $1M+)
+
+**Management fees vs capital gains tax - the math:**
+
+Exchange funds charge management fees on your entire position, while taxes are only on gains. Here's how they compare:
+
+**Assumptions:** Married filing jointly, NIIT starts at $270K total income (simplified), 2024 tax rates
+
+**Example 1: $100K position with $10K cost basis ($90K unrealized gain) - assumes varying income levels**
+
+| Your Income Level | Management Fees (7yr) | Capital Gains Tax | Tax Breakdown |
+|---------------------|----------------------|-------------------|---------------|
+| **Under $270K income** | $7,000 | $13,500 | 15% federal only |
+| **$270K-$553K income** | $7,000 | $19,800 | 15% fed + 3.8% NIIT + 7% WA |
+| **$553K-$600K income** | $7,000 | $19,800 | 15% fed + 3.8% NIIT + 7% WA |
+| **Over $600K income** | $7,000 | $27,720 | 20% fed + 3.8% NIIT + 7% WA |
+
+**Example 2: $1M position with $100K cost basis ($900K unrealized gain) - assumes no other income**
+
+| Capital Gains Amount | Management Fees (7yr) | Capital Gains Tax | Tax Breakdown |
+|---------------------|----------------------|-------------------|---------------|
+| **First $270K** | $70,000 | $40,500 | 15% federal only |
+| **$270K - $553K** | $70,000 | $95,600 | 15% fed + 3.8% NIIT + 7% WA |
+| **$553K - $900K** | $70,000 | $202,100 | 20% fed + 3.8% NIIT + 7% WA |
+
+**Key insights:**
+- At $100K position: Cache allows entry at $100K (most others require $1M), making exchange funds accessible for smaller positions
+- Your income dramatically affects tax on gains: $90K gain costs $13.5K to $27.7K depending on income
+- High earners (>$600K) pay double the tax rate of low earners on the same gains
+- At $1M position with $900K gains: Exchange funds save ~$130K ($70K fees vs $202K tax)
+- Remember: You still owe capital gains tax eventually when exiting the exchange fund
+
+**Key differences:**
+- Management fees are paid annually on the **entire position**, not just gains
+- Capital gains tax is one-time and only on the **gain portion**
+- After 7 years in an exchange fund, you still owe capital gains tax when you eventually sell the diversified portfolio
+- Exchange funds preserve your cost basis, allowing continued tax deferral
+
+**When exchange funds make sense despite fees:**
+- Your position is so large that concentration risk outweighs the fee drag
+- You're in a very high tax bracket now but expect lower rates in retirement
+- You value the immediate diversification without triggering a taxable event
+- The 7-year lockup aligns with your long-term holding plans anyway
+
+**Break-even analysis:** If your concentrated stock underperforms the diversified fund by more than 1% annually due to company-specific risk, the exchange fund fees are worth it. Given single-stock volatility, this is often a reasonable bet for risk reduction.
 
 ## Tracking
 

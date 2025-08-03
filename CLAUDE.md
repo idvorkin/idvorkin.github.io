@@ -173,3 +173,13 @@ When working with git worktrees, Claude must be run from the parent directory to
 ## Use builtin for 'cd' command
 
 - Use builtin commands for cd, since it's normally pointing to zoxide
+
+## Clipboard Access
+
+- Use `osascript` instead of `pbpaste` for checking clipboard content as it can handle multiple content types (images, HTML, text)
+- First check what's on clipboard: `osascript -e 'clipboard info'`
+- For text content: `osascript -e 'the clipboard as text'`
+- For image content: Use the `image-content-analyzer` agent (Task tool) which handles clipboard images efficiently
+  - The agent will extract, convert to WebP, and analyze the image
+  - Example: "User has copied an image to clipboard and wants it analyzed"
+- Only extract images manually if the image-content-analyzer agent is not available

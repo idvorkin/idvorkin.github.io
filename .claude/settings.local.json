@@ -56,7 +56,9 @@
       "mcp__github-server__get_pull_request_comments",
       "mcp__github-server__get_pull_request",
       "mcp__github-server__add_issue_comment",
-      "Bash(claude mcp add:*)"
+      "Bash(claude mcp add:*)",
+      "Bash(git rebase:*)",
+      "Bash(osascript:*)"
     ],
     "deny": []
   }
