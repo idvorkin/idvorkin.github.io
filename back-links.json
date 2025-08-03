@@ -58,6 +58,7 @@
     "/cold": "/warm",
     "/compassion": "/curious",
     "/compensation": "/comp",
+    "/concentration-risk": "/stock-concentration",
     "/corona": "/covid",
     "/correct-of-errors": "/coe",
     "/couple-double-trouble": "/partner-trouble",
@@ -192,6 +193,7 @@
     "/retiring": "/retire",
     "/rework": "/staysmallstaysmall",
     "/root-cause-analysis": "/coe",
+    "/rsu-risk": "/stock-concentration",
     "/sat": "/work-satisfaction",
     "/satisfaction": "/happy",
     "/satisfied": "/happy",
@@ -3069,7 +3071,7 @@
     },
     "/job-hunt-stress": {
       "description": "Job hunts are stressful, and my goal for job hunts is getting the job I want while minimizing my stress. The stress comes from: lack of confidence, being rushed, not having options, disappointing others and the pressure from current job responsibilities. By expecting and mitigating each of these stressors I greatly reduce stress during my job hunt.\n\n",
-      "doc_size": 22000,
+      "doc_size": 25000,
       "file_path": "_site/job-hunt-stress.html",
       "incoming_links": [
         "/bmy",
@@ -3077,7 +3079,7 @@
         "/manager-book",
         "/work-satisfaction"
       ],
-      "last_modified": "2024-10-05T21:35:59-07:00",
+      "last_modified": "2025-08-01T14:43:13-07:00",
       "markdown_path": "_posts/2017-02-17-job-hunt-stress.md",
       "outgoing_links": [
         "/bmy",
@@ -3595,7 +3597,7 @@
     },
     "/money": {
       "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
-      "doc_size": 56000,
+      "doc_size": 68000,
       "file_path": "_site/money.html",
       "incoming_links": [
         "/d/time-off-2020-03",
@@ -3605,7 +3607,7 @@
         "/parkinson",
         "/retire"
       ],
-      "last_modified": "2025-07-12T16:50:19-07:00",
+      "last_modified": "2025-08-03T11:21:52-07:00",
       "markdown_path": "_d/taxes.md",
       "outgoing_links": [
         "/parkinson",
@@ -4544,6 +4546,18 @@
       "redirect_url": "",
       "title": "Tech leads, software architects and engineering managers - oh my!",
       "url": "/software-leadership-roles"
+    },
+    "/stock-concentration": {
+      "description": "When you work at a tech company and receive RSUs, it’s easy to accidentally become dangerously concentrated in your company’s stock. This guide explains the risks and strategies for managing concentrated stock positions.\n\n",
+      "doc_size": 30000,
+      "file_path": "_site/stock-concentration.html",
+      "incoming_links": [],
+      "last_modified": "2025-08-03T11:30:43.261499",
+      "markdown_path": "_d/stock-concentration.md",
+      "outgoing_links": [],
+      "redirect_url": "",
+      "title": "Stock Concentration Risk: Managing Your Tech Wealth",
+      "url": "/stock-concentration"
     },
     "/strategy": {
       "description": "As competition in the market intensifies, companies must find ways to differentiate themselves in order to have a successful business - and that means strategic positioning. If they want to get the buyers money they have to choose a strategy that works for them and make sure it has sustainable competitive advantages. From offering a different value, to providing the same value using different activities - the possibilities for positioning are endless. Ultimately, it’s all about creating trade offs and making sure those trade offs give a sustainable competitive advantage!\n\n",
