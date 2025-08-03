@@ -11,20 +11,24 @@ redirect_from:
   - /rsu-risk
 ---
 
-When you work at a tech company and receive RSUs, it's easy to accidentally become dangerously concentrated in your company's stock. This guide explains the risks and strategies for managing concentrated stock positions.
+When you work at a tech company and receive RSUs, it's easy to accidentally become dangerously concentrated in your company's stock. You didn't mean to bet your entire future on one company, but here you are - watching every earnings call with your stomach in knots because a 30% drop would devastate your net worth. This guide explains the risks and strategies for managing concentrated stock positions - from tax-efficient selling strategies to protective options that cost you nothing, and exchange funds that diversify without triggering taxes.
 
-<img
-  src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250803_104012.webp"
-  alt="Market concentration treemap showing the dominance of AAPL, NVDA, MSFT, AMZN, GOOG, META, and TSLA in the index"
-  class="img-fluid float-end w-50 ms-3 mb-3"
-/>
+<figure class="float-end w-50 ms-3 mb-3">
+  <img
+    src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20250803_104012.webp"
+    alt="Market concentration treemap showing the dominance of AAPL, NVDA, MSFT, AMZN, GOOG, META, and TSLA in the index"
+    class="img-fluid"
+  />
+  <figcaption class="text-center small text-muted">S&P 500 market cap allocation - 7 tech stocks dominate nearly 1/3 of the index</figcaption>
+</figure>
 
 <!-- prettier-ignore-start -->
 
 <!-- vim-markdown-toc-start -->
 
 - [The RSU Trap: How You Became Overweight on Company Stock](#the-rsu-trap-how-you-became-overweight-on-company-stock)
-- [You're more concentrated than you think](#youre-more-concentrated-than-you-think)
+- [Don't Confuse a Good Outcome with a Good Decision](#dont-confuse-a-good-outcome-with-a-good-decision)
+- [You're Already Concentrated Enough](#youre-already-concentrated-enough)
 - [Watering down your concentration](#watering-down-your-concentration)
 - [Risk Management Strategies](#risk-management-strategies)
   - [Buying Put Options for Protection](#buying-put-options-for-protection)
@@ -62,9 +66,38 @@ Let's say you have $2M in company stock that cost you $200K (a 10x gain). The ca
 - You're trading a 20% tax hit for an 80% reduction in concentration risk
 - If the stock drops 50%, your $2M becomes $1M - worse than paying the $400K tax
 
-## You're more concentrated than you think
+## Don't Confuse a Good Outcome with a Good Decision
 
-If you work at a FANG company (Meta, Amazon, Apple, Netflix, Google/Alphabet) or other major tech firms, diversifying into index funds provides less diversification than you might think. The market concentration treemap above shows the uncomfortable truth:
+**The most dangerous phrase in investing: "But it worked out great!"**
+
+Just because holding your RSUs made you rich doesn't mean it was a good decision. That's like saying drunk driving was smart because you made it home safely. The risk was always there - you just got lucky.
+
+**The right strategy: Sell RSUs automatically on vest date**
+
+Here's what most people don't understand about RSUs:
+
+1. **RSUs are taxed as ordinary income on vest** - The moment they vest, you owe income tax on the full value. The IRS treats it exactly like your company paid you cash and you immediately bought stock.
+
+2. **There are ZERO capital gains if you sell immediately** - Your cost basis is the vest-date price. Selling the same day means no additional tax beyond what you already owe.
+
+3. **The "one-year hold" confusion** - Many people think they need to hold RSUs for a year to get long-term capital gains treatment. This is wrong! The one-year clock for LTCG starts from the vest date, not the grant date. But more importantly, you've already been taxed at ordinary income rates on the full value at vesting.
+
+**Think of it this way**: 
+- Day 0 (vest): Stock worth $100K vests. You owe ~$35K in income tax regardless of what you do next.
+- Option A: Sell immediately for $100K. Total tax: $35K.
+- Option B: Hold for a year. Stock drops to $70K. You still owed $35K in tax on the original $100K. You lost $30K hoping to save on taxes you never would have owed anyway.
+
+**The rational approach**: Set up auto-sale on vest with your broker. Treat RSUs as cash compensation that happens to arrive as stock. If you wouldn't use your entire bonus to buy your company's stock, why would you hold all your RSUs?
+
+**Exception**: If you have insider information suggesting the stock is undervalued, or you're intentionally taking a concentrated bet with money you can afford to lose. But that's gambling, not investing.
+
+## You're Already Concentrated Enough
+
+Look, even if you just hold a broad market index fund, you're already heavily exposed to tech stocks. The S&P 500 and NASDAQ are increasingly dominated by the same companies you work for. The market concentration treemap above shows the uncomfortable truth:
+
+**The good news?** If you diversify and tech stocks crush it, your percentage allocation to tech naturally goes up as those stocks outperform. You'll still capture the upside through your index funds - you just won't be ruined if they crash.
+
+**The bad news?** Adding your company stock on top of an already tech-heavy index means you're doubling down on concentration risk, not diversifying.
 
 **Example portfolio showing tech concentration:**
 
