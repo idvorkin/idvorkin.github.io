@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Stock Concentration Risk: Managing Your Tech Wealth"
+title: "Stock Concentration: How I Learned to Stop Worrying and Love the Capital Gains Tax"
+
 author: "Igor Dvorkin"
 inprogress: true
 comments: true
@@ -43,6 +44,7 @@ When you work at a tech company and receive RSUs, it's easy to accidentally beco
   - [Collars: Making Protection Affordable](#collars-making-protection-affordable)
   - [Exchange Funds for Diversification](#exchange-funds-for-diversification)
 - [The Ultimate Tax Escape: Step-Up in Basis](#the-ultimate-tax-escape-step-up-in-basis)
+- [Related Articles](#related-articles)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -91,7 +93,7 @@ Here's what most people don't understand about RSUs:
 
 3. **The "one-year hold" confusion** - Many people think they need to hold RSUs for a year to get long-term capital gains treatment. This is wrong! The one-year clock for LTCG starts from the vest date, not the grant date. But more importantly, you've already been taxed at ordinary income rates on the full value at vesting.
 
-**Think of it this way**: 
+**Think of it this way**:
 - Day 0 (vest): Stock worth $100K vests. You owe ~$35K in income tax regardless of what you do next.
 - Option A: Sell immediately for $100K. Total tax: $35K.
 - Option B: Hold for a year. Stock drops to $70K. You still owed $35K in tax on the original $100K. You lost $30K hoping to save on taxes you never would have owed anyway.
@@ -299,7 +301,7 @@ For detailed information on step-up in basis, the "Buy, Borrow, Die" strategy, a
 Explore these related topics to build your complete financial independence strategy:
 
 - **[Planning Your Gap Year](/gap-year)** - How to structure time off between jobs or before retirement
-- **[Igor's Gap Year Journey](/igor-gap-year)** - Personal reflections and lessons from taking a career break  
+- **[Igor's Gap Year Journey](/igor-gap-year)** - Personal reflections and lessons from taking a career break
 - **[Retirement Planning](/retire)** - Building towards financial independence and early retirement
 
 These resources complement your stock concentration strategy by addressing the bigger picture of financial planning, tax optimization, and lifestyle design.
