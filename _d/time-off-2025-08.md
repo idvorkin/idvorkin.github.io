@@ -3,9 +3,6 @@ layout: post
 title: Time off August 2025 - Meta Recharge
 imagefeaturelocal: raccoon-vacation.png
 permalink: /time-off-2025-08
-redirect_from:
-  - /time-off-next
-  - /time-off-now
 ---
 
 I'm incredibly fortunate to be able to take 6 weeks off this summer! After 5 years of service at Meta, you get 30 days (about 5 week) off!
@@ -23,6 +20,7 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
 - [By Week](#by-week)
 - [Stuff happening](#stuff-happening)
   - [Candidates](#candidates)
+  - [Troll Hunt](#troll-hunt)
   - [Lighthouse passport](#lighthouse-passport)
 - [My top priorities](#my-top-priorities)
   - [I have memories that last a lifetime](#i-have-memories-that-last-a-lifetime)
@@ -39,19 +37,24 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
 - [Identity Health](#identity-health)
   - [Magic](#magic)
   - [Biking](#biking)
+  - [Bubbles](#bubbles)
+  - [Content Creator](#content-creator)
 - [Tech Guru (X/5)](#tech-guru-x5)
   - [Enabling Environment](#enabling-environment)
+  - [AI Coding](#ai-coding)
+  - [AI Writing/Thinking](#ai-writingthinking)
   - [Tony](#tony)
   - [Other AI](#other-ai)
   - [Video publishing](#video-publishing)
   - [CUT](#cut)
 - [Cognitive Health (X/5)](#cognitive-health-x5)
   - [Blog posts](#blog-posts)
+  - [Videos](#videos)
 - [Emotional Health (4/5)](#emotional-health-45)
   - [Meditation](#meditation)
   - [750 words/Gratefulness](#750-wordsgratefulness)
 - [Motivation (X/5)](#motivation-x5)
-- [Physical Habits (4/5)](#physical-habits-45)
+- [Physical Habits (X/5)](#physical-habits-x5)
   - [Statistics](#statistics)
   - [Diet](#diet)
   - [Sleep](#sleep)
@@ -61,6 +64,7 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
   - [Work](#work)
   - [Family](#family)
 - [House and goods](#house-and-goods)
+  - [Tesla](#tesla)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -135,17 +139,12 @@ Five years ago, I dreamed of taking a year off of work - [a gap year](/igor-gap-
 
 ### Candidates
 
-- [Medieval Fair](https://washingtonfaire.com/) -
-  - Knights, July 19
-  - Pirates, July 26
-  - Heroes and Villains, Aug 2
-  - Warriors (Vikings?), Aug 9
-  - Fantasy, Aug 16 (Best One?)
-- Tesla car camping
-- Mid week camping
-- Hang with Baltasar and Family
-  - Aug 20th to 23 (Whistler)
-  - Aug 24th (Seattle)
+- Japanese Garden Photo shoot
+- Navy ship in Bremerton
+
+### Troll Hunt
+
+- We can probably find them all
 
 ### Lighthouse passport
 
@@ -192,7 +191,7 @@ First night: - Arrived: Went to beach and did 30 minutes of meditation on the su
 
 Things to do:
 
-- Go to Seaside
+-
 - Go to Cranberry museum
 
 ## Success Stories
@@ -202,6 +201,8 @@ Things to do:
 
 ## Top Learnings
 
+- I started off with daily walks with folks, and doing stuff with kids. Honeslty I didn't do enough for myself and was getting stir crazy
+
 ## Relationships
 
 ### Friends
@@ -210,51 +211,68 @@ Things to do:
 
 ### Tori
 
+- ☑ ~~Private, nothing to say here~~ Tori is amazing, I'm incredibly lucky to have her.
+
 ### Zach
 
-- ☐ Take him somewhere to go for a bike ride on the car
+- ☑ Super fun getting to do an improv class together.
+- ☐ Take him driving in the tesla
+- ☐ Need to think through tech projects
 
 ### Amelia
 
 - ☐ Take her somewhere to go for a bike ride on the car
+- ☐ See if we can co-write a choose your own adventure
+- ☐ Use AI for illustrations
+- ☑ So nice to see her giving away beads.
 
 ## Identity Health
 
 ### Magic
 
 - ☐ Practice Daily
-- ☐ Find a place to practice card to ceiling
 - ☐ Find a place to work on Tamiriz
+- ☐ Find a place to practice card to ceiling
 
 ### Biking
 
-- ☐ Repair my cargo bike computer
 - ☐ Look at bubble bike setup
-- ☑ Setup my Tesla bike carrier
+- ☐ Figure out if can repair or dump my other ebike.
+
+### Bubbles
+
+- ☐ Figure out a portable setup
+- ☐ Bring one in the tesla
+
+### Content Creator
+
+- ☐ Monetization Post
+- ☑ Post on capital gains and diversification
+- ☐ Build more affirmation videos
+  - ☑ First one: Do it anyways
+  - ☐ Essentialist - TBD
+  - ☐ Class Act - Show photos of stuff I've posted, and cool responsed with images
+  - ☐ Calm like water - Me in half lotus
 
 ## Tech Guru (X/5)
 
 ### Enabling Environment
 
-- ☐ STRETCH: See if I can connect typer to carapace
-- ☐ STRETCH: Consider caching the autocompletion commands in zsh
-- ☑ Manage issues in github via [Octo](https://github.com/pwntester/octo.nvim)
-- ☑ Quickly setup mason, need to review all those damn tools
-- ☑ Fixed my slow zsh thing (was pomodoro) [/td/slow](/td/slow_zsh). Still didn't get to the bottom of it, curious
-- ☑ Figured out uv (replaces pip), and pipxu (replaces global pip install)
-- ☑ Switch to Atuin from Mcly (no diff)
-- ☑ Add third and half to yabi
-- ☑ HOORAY - Got Caps-><space> mapping to alfred in iterm (OMG - this has been a huge paper cut for months)
-- ☑ Started using url shortner via [tinyurl and web link](https://chromewebstore.google.com/detail/url-shortener/godoifjoiadanijplaghmhgfeffnblib)
-- Figured out how to include pasting (Inspired by imgclip). [Code](https://github.com/idvorkin/settings/blob/237111421f313df54c48f31b4d8697237e3787c8/py/y.py?plain=1#L258)
+- Figure out how to use more AI.
+- ☐ Figure out using voice more with super wisper.
 
-![Demo the paste](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_102419.webp)
+### AI Coding
+
+- Got 200$ claude code and using it.
+
+### AI Writing/Thinking
+
+- Blog work flow is different
 
 ### Tony
 
 - ☐ Update toni to include memory/todo tracking
-- ☑ Implement Search via Perplexity
-- ☑ Callable on cli via bestie
+- ☐ Think about what else to do here.
 
 ### Other AI
 
@@ -263,16 +281,14 @@ Things to do:
 - ☑ Play with AI Coding helpers (aider) - crap!
 - ☐ CUT: Look at more Agent Tools (Crew, and AgentZero)
 
-Per repo changes
-
-- [Tony](https://gist.github.com/idvorkin/909330a36720be6700afe5b18d4cd796)
-- [Nlp](https://gist.github.com/idvorkin/320d2e75cbc8032c728a1ab0646e0a5c)
-- [Blog](https://gist.github.com/idvorkin/916e543eee016ca9fc49dac80d909a27)
-- [Settings](https://gist.github.com/idvorkin/8c67a31507b76d40b0bf8bb5bb40ef62)
-
 ### Video publishing
 
-- Using Loom to Record Videos (FaceCam) and then edit via text (Super cool)
+- Got an insta360 and have been banging these out.
+- Learned how to do split shot
+- Learned how to do face blur
+- Learned how to do captions
+
+- So many might need it's own post.
 
 Using alfred and yabai:
 
@@ -298,6 +314,8 @@ Using think.py:
 
 - One per day!
 
+### Videos
+
 ## Emotional Health (4/5)
 
 ### Meditation
@@ -312,16 +330,18 @@ Using think.py:
 
 -
 
-## Physical Habits (4/5)
+## Physical Habits (X/5)
 
 ### Statistics
 
-Weight Start: 178
+Weight Start: 180
 Weight End:
 Gym Days: -
 
 ### Diet
 
+- Even though I'm on [Terzepatide](/terzepatie) weight has been sneaking up. Need to pay attention, or up dosage.
+- First time bringing terzepatide with me, I have a travel container
 - Bring a cooler
 - I really like cauliflower rice
 - Feel free to skip meals
@@ -335,11 +355,12 @@ Gym Days: -
 
 ### Exercise
 
-- Tried bringing KBs in the car with me. Adjustable KB broke. Worried about them rolling around
+- GROAN: I just tore open my callous right before. Lets see what i can do.
+- Focus on hip and back mobility
+- Bring 28KG KB in the car, and 20/25 lbs heavy club. Lets see how it goes
+- Workign on Pistols and pullups easy at the park.
 - Kettleback rack 1 sided squats feel good, and don't need to flip into the goblet position
 - Got 5lbs indian clubs - super heavy
-- 1 arm swings work well
-- Need to be happy with partial work out.
 
 ## Inner Peace (X/5)
 
@@ -350,7 +371,8 @@ Gym Days: -
 
 ### Work
 
-- I should be spending 0 time on this, except giving back reviews for 2 days
+- I should be spending 0 time on this
+- Except maybe doing EM training material is a bit like work, but it's work I enjoy so we don't count it.
 
 ### Family
 
@@ -360,4 +382,12 @@ Gym Days: -
 
 - ☐ Deal with AC recall
 - ☑ Return AC that was supposed to replace the recalled AC but was actually the same recalled model
+- Use CSScanner to scan all my old paper journals and chuck them.
+
+### Tesla
+
 - ☑ Fix chips in Tony's windsheild
+- ☐ Figure out all the stuff and organize it
+- ☐ Figure out bubble machine setup
+- ☑ Figure out sleeping bag setup
+- ☑ Solo camp night.
