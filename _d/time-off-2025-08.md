@@ -350,7 +350,7 @@ Gym Days: -
 
 ### Sleep
 
-- Hard to get up early doing long driving days, but recovering it.
+- It's been super hot latly, has made it hard
 - Real key here is to get to bed early, and not get stuck on the phone.
 
 ### Exercise
@@ -383,11 +383,13 @@ Gym Days: -
 - ☐ Deal with AC recall
 - ☑ Return AC that was supposed to replace the recalled AC but was actually the same recalled model
 - Use CSScanner to scan all my old paper journals and chuck them.
+    - ☑ First ones dones
+    - ☑ Mr. Plumbbean done
 
 ### Tesla
 
-- ☑ Fix chips in Tony's windsheild
 - ☐ Figure out all the stuff and organize it
 - ☐ Figure out bubble machine setup
+- ☐  Solo camp night.
 - ☑ Figure out sleeping bag setup
-- ☑ Solo camp night.
+- ☑ Fix chips in Tony's windsheild

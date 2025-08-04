@@ -28,8 +28,13 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
 - [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
 - [Battling Addiction](#battling-addiction)
+  - [Addiction Success](#addiction-success)
 - [Battling Family Resentment](#battling-family-resentment)
+  - [Seeing them in their natural state](#seeing-them-in-their-natural-state)
+  - [The time investment mismatch](#the-time-investment-mismatch)
+  - [Family Success](#family-success)
 - [Battling Loneliness](#battling-loneliness)
+  - [Loneliness Success](#loneliness-success)
 - [Igor's Identity Dragon](#igors-identity-dragon)
 - [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
 - [Gap Year Pre-Mortem](#gap-year-pre-mortem)
@@ -246,26 +251,52 @@ See my [kettlebell](/kettlebell) practice and broader [physical health](/physica
 
 You can probably look at my [2025 goals](/y25), which sadly look a lot like my [2024 goals](/y24), and will probably look like my 2028 goals if that's when I actually get my gap year.
 
+
 ## Battling Addiction
+
+For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
+
+{%include summarize-page.html src="/addiction"%}
+
+### Addiction Success
+
+- Limited screen time on social media
 
 ## Battling Family Resentment
 
 A key motivation behind my gap year is the desire to **spend more meaningful time with my family**. Time together is precious and fleeting; once gone, it cannot be reclaimed.
 
-However, it’s important to be realistic. Even though my gap year might give me an additional 50 hours per week, my family doesn't have any more availability. Practically speaking, I may only gain 5–10 extra hours with them each week. At first glance, this may not seem like a big win, but it’s crucial to recognize the deeper value here:
+However, it’s important to be realistic.  There are two sources of family resentment:
 
-- **Nothing is more valuable** than family, and the time spent together will always hold the greatest meaning, both for me and for them.
-- During my gap year, when I'm with my family, I'll be able to **fully engage and be genuinely present**, free from the distractions and stress of work.
-- Family interactions often happen spontaneously, and **being available ensures I won't miss these unexpected moments**. Moreover, without conflicting commitments, **our precious family time won't be cut short**.
+### Seeing them in their natural state
 
-**Additional things to remember:**
+When I'm working, I only see my family in short bursts - mornings, evenings, weekends. But during a gap year, I'll be around all the time to observe their natural rhythms. Parkinson's law is very real: for kids and folks who aren't working, many things take longer than they could. What's worse is when I'm judging myself for being inefficient during my gap year (see [addiction](/addiction)) seeing the same patterns in my family bothers me even more. It's a mirror I don't always want to look into.
 
-- Accepting that I’m rarely the family's first choice is important—and healthy. My children's relationships with their peers are essential for their growth, and respecting that enriches our relationship. For example:
+{%include summarize-page.html src="/parkinson"%}
 
-  - I can ride the bus with Zach but respectfully step back when his friends join him.
-  - I can drive my kids and their friends places, remaining nearby but giving them space to connect independently.
+### The time investment mismatch
 
-- It's natural to feel bittersweet as my children grow and mature. But while it may feel sad that they'll never be small again, imagine how much harder it would be if they never had the chance to grow up.
+There's an inherent asymmetry here: I'm giving up my career momentum to spend more time with family, but they can't reciprocate that availability. Even though my gap year might give me an additional 50 hours per week, my family doesn't have any more availability. Practically speaking, I may only gain 5–10 extra hours with them each week.
+
+The real challenge isn't the quantity of time but learning to appreciate the quality of whatever time we do have together - without the resentment that can poison even the most precious moments.
+
+### Family Success
+
+{% include alert.html content="This section needs more thinking, but gotta start somewhere" style="info" %}
+
+**Success looks like:**
+
+- **Nothing is more valuable than family** - the time spent together holds the greatest meaning
+- I'm **fully engaged and genuinely present**, free from work distractions and stress
+- **Being available for spontaneous moments** - not missing unexpected connections because of conflicting commitments
+- We spontaneously talk to each other
+- We hang out passively (e.g., we go to a coffee shop together and do our own thing)
+- We establish a consistent date night approach
+- I accept them as they are, but still strive to influence them respectfully
+- I gracefully accept that I'm rarely their first choice - their peer relationships are essential for growth
+- I find ways to be present without intruding (e.g., driving them and friends places, stepping back when peers join)
+- I embrace the bittersweet nature of watching them grow - sad they'll never be small again, but grateful they get to grow up
+- STRETCH: We pick up a multi-month project we do together
 
 **Successful parenting** ultimately means my children know, deep down, that I'm always there for them—quietly in the background, offering steady support without pressure, ready whenever they need me.
 
@@ -299,6 +330,17 @@ Mitigations:
     - Weird but pretty interesting
 
 {%include summarize-page.html src="/lonely"%}
+
+### Loneliness Success
+
+**Success looks like:**
+
+- **Deepened existing friendships** - Regular scheduled time with retired/gap year friends
+- **New connections with unique people** - Meeting others who chose unconventional paths and think deeply
+- **AI companionship** - Deep conversations with Tony (AI life coach) and evolving AI tools
+- STRETCH: **Appreciating solitude** - Finding peace in being alone without feeling lonely
+- STRETCH: **Mentorship at scale** - Helping others with my time and experience
+- STRETCH: **Online community building** - Meeting interesting people on the internet
 
 ## Igor's Identity Dragon
 
