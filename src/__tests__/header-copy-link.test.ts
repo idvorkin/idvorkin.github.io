@@ -704,8 +704,13 @@ describe("Header Copy Link", () => {
         
         const urlCall = mockOpen.mock.calls[0][0];
         const decodedUrl = decodeURIComponent(urlCall);
-        expect(decodedUrl).toContain("Custom issue title");
+        // Title should have format: page/section: custom title
+        expect(decodedUrl).toContain("manager-book/test-header: Custom issue title");
+        // Description should come first in body
+        expect(decodedUrl).toContain("## Description");
         expect(decodedUrl).toContain("This section has an error in the code example");
+        // Location should come after description
+        expect(decodedUrl.indexOf("## Description")).toBeLessThan(decodedUrl.indexOf("## Location"));
       }
     });
   });

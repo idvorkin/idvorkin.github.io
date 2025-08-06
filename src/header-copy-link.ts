@@ -76,7 +76,7 @@ function createIssuePopup(headerId: string, headerText: string): HTMLElement {
       <div class="github-issue-popup-body">
         <label for="issue-title-${headerId}">Issue Title:</label>
         <input type="text" id="issue-title-${headerId}" class="github-issue-title" 
-               value="Issue with section: ${headerText}" />
+               placeholder="Brief title for the issue" />
         
         <label for="issue-comment-${headerId}">Description:</label>
         <textarea id="issue-comment-${headerId}" class="github-issue-comment" 
@@ -86,6 +86,9 @@ function createIssuePopup(headerId: string, headerText: string): HTMLElement {
         <div class="github-issue-popup-buttons">
           <button class="github-issue-submit">Create Issue on GitHub</button>
           <button class="github-issue-cancel">Cancel</button>
+        </div>
+        <div class="github-issue-popup-hint">
+          <small>Tip: Press Ctrl+Enter (Cmd+Enter on Mac) to submit</small>
         </div>
       </div>
     </div>
@@ -270,18 +273,27 @@ function createGitHubIssueUrl(
   
   // Construct the GitHub issue URL
   const repoUrl = "https://github.com/idvorkin/idvorkin.github.io";
-  const issueTitle = encodeURIComponent(customTitle || `Issue with section: ${headerText}`);
   
-  const description = customDescription || "Please describe the issue with this section:";
+  // Format title as: page/section: custom title
+  const formattedTitle = customTitle 
+    ? `${pagePath || "index"}/${headerId}: ${customTitle}`
+    : `${pagePath || "index"}/${headerId}: Issue with ${headerText}`;
+  
+  const issueTitle = encodeURIComponent(formattedTitle);
+  
+  // Use description if provided, otherwise use title as description
+  const description = customDescription || customTitle || `Issue with section: ${headerText}`;
+  
+  // Format the issue body with description first, then location details with clickable links
   const issueBody = encodeURIComponent(
-    `## Issue Location\n\n` +
-    `- **Page**: ${pagePath || "index"}\n` +
-    `- **Section**: ${headerText}\n` +
-    `- **Section ID**: ${headerId}\n` +
-    `- **Live Link**: https://idvorkin.azurewebsites.net/${pagePath}/${headerId}\n` +
-    `- **GitHub Source**: ${repoUrl}/blob/main/${sourceFile}#${headerId}\n\n` +
     `## Description\n\n` +
-    `${description}\n\n`
+    `${description}\n\n` +
+    `## Location\n\n` +
+    `- **Page**: [${pagePath || "index"}](https://idvorkin.azurewebsites.net/${pagePath})\n` +
+    `- **Section**: ${headerText}\n` +
+    `- **Section ID**: \`${headerId}\`\n` +
+    `- **Live Link**: [View on site](https://idvorkin.azurewebsites.net/${pagePath}#${headerId})\n` +
+    `- **GitHub Source**: [View on GitHub](${repoUrl}/blob/main/${sourceFile}#${headerId})\n\n`
   );
   
   return `${repoUrl}/issues/new?title=${issueTitle}&body=${issueBody}`;
@@ -334,29 +346,58 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
     cancelBtn.addEventListener("click", () => hideIssuePopup(popup));
   }
   
+  // Function to submit the issue
+  const submitIssue = () => {
+    const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;
+    const commentTextarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;
+    
+    const customTitle = titleInput?.value || "";
+    const customDescription = commentTextarea?.value || "";
+    
+    const issueUrl = createGitHubIssueUrl(headerId, header.textContent || "", customTitle, customDescription);
+    window.open(issueUrl, "_blank");
+    
+    hideIssuePopup(popup);
+  };
+  
   // Handle submit button
   const submitBtn = popup.querySelector(".github-issue-submit");
   if (submitBtn) {
-    submitBtn.addEventListener("click", () => {
-      const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;
-      const commentTextarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;
-      
-      const customTitle = titleInput?.value || `Issue with section: ${header.textContent}`;
-      const customDescription = commentTextarea?.value || "";
-      
-      const issueUrl = createGitHubIssueUrl(headerId, header.textContent || "", customTitle, customDescription);
-      window.open(issueUrl, "_blank");
-      
-      hideIssuePopup(popup);
-    });
+    submitBtn.addEventListener("click", submitIssue);
   }
   
-  // Close popup when clicking outside
-  document.addEventListener("click", (event) => {
-    if (!popup.contains(event.target as Node) && event.target !== githubIcon && !githubIcon.contains(event.target as Node)) {
+  // Handle keyboard shortcuts (Ctrl/Cmd + Enter)
+  const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;
+  const commentTextarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;
+  
+  const handleKeydown = (event: KeyboardEvent) => {
+    if ((event.ctrlKey || event.metaKey) && event.key === "Enter") {
+      event.preventDefault();
+      submitIssue();
+    }
+  };
+  
+  if (titleInput) {
+    titleInput.addEventListener("keydown", handleKeydown);
+  }
+  if (commentTextarea) {
+    commentTextarea.addEventListener("keydown", handleKeydown);
+  }
+  
+  // Close popup when clicking outside (use capture phase to avoid conflicts)
+  const handleOutsideClick = (event: MouseEvent) => {
+    if (!popup.contains(event.target as Node) && 
+        event.target !== githubIcon && 
+        !githubIcon.contains(event.target as Node) &&
+        popup.style.display !== "none") {
       hideIssuePopup(popup);
     }
-  });
+  };
+  
+  // Add slight delay to avoid immediate closing
+  setTimeout(() => {
+    document.addEventListener("click", handleOutsideClick, true);
+  }, 100);
 
   // Append the icons to the header
   header.appendChild(copyIcon);
@@ -571,6 +612,12 @@ export function addHeaderCopyLinkStyles(): void {
     .github-issue-cancel:hover {
       background: #f3f4f6;
       border-color: #c9ced1;
+    }
+    
+    .github-issue-popup-hint {
+      margin-top: 8px;
+      text-align: center;
+      color: #586069;
     }
   `;
 

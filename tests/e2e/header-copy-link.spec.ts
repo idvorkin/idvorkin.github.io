@@ -170,7 +170,9 @@ test.describe("Header Copy Link Feature", () => {
       await expect(commentTextarea).toBeVisible();
       await expect(submitButton).toBeVisible();
 
-      // Fill in custom description
+      // Fill in custom title and description
+      await titleInput.clear();
+      await titleInput.fill("Outdated example code");
       await commentTextarea.fill("This section contains outdated information that needs updating.");
 
       // Listen for new page/tab
@@ -189,13 +191,23 @@ test.describe("Header Copy Link Feature", () => {
       expect(url).toContain("title=");
       expect(url).toContain("body=");
 
-      // Verify the issue body contains the custom description
+      // Verify the issue title and body
       const urlParams = new URL(url).searchParams;
+      const title = urlParams.get("title");
       const body = urlParams.get("body");
       
+      // Title should have format: page/section: custom title
+      expect(title).toContain("manager-book/");
+      expect(title).toContain("Outdated example code");
+      
+      // Body should have description first
+      expect(body).toContain("## Description");
       expect(body).toContain("This section contains outdated information that needs updating.");
-      expect(body).toContain("GitHub Source");
-      expect(body).toContain("blob/main/");
+      
+      // Then location details with links
+      expect(body).toContain("## Location");
+      expect(body).toContain("[View on site]");
+      expect(body).toContain("[View on GitHub]");
 
       // Close the new page
       await newPage.close();
