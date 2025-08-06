@@ -293,7 +293,7 @@ function createGitHubIssueUrl(
     `- **Section**: ${headerText}\n` +
     `- **Section ID**: \`${headerId}\`\n` +
     `- **Live Link**: [View on site](https://idvorkin.azurewebsites.net/${pagePath}#${headerId})\n` +
-    `- **GitHub Source**: [View on GitHub](${repoUrl}/blob/main/${sourceFile}#${headerId})\n\n`
+    `- **GitHub Source**: [View on GitHub](${repoUrl}/blob/main/${sourceFile})\n\n`
   );
   
   return `${repoUrl}/issues/new?title=${issueTitle}&body=${issueBody}`;
