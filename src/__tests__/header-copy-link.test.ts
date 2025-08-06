@@ -709,8 +709,8 @@ describe("Header Copy Link", () => {
         expect(decodedUrl).toContain("manager-book/test-header: Custom issue title");
         // Location should be at the top as a single line
         expect(decodedUrl).toContain("📍");
-        expect(decodedUrl).toContain("[[Live]]");
         expect(decodedUrl).toContain("[[GitHub]]");
+        expect(decodedUrl).not.toContain("[[Live]]");
         // Description should come after location
         expect(decodedUrl).toContain("## Description");
         expect(decodedUrl).toContain("This section has an error in the code example");

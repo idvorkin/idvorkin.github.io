@@ -202,8 +202,8 @@ test.describe("Header Copy Link Feature", () => {
       
       // Location should be at the top as a single line
       expect(body).toContain("📍");
-      expect(body).toContain("[[Live]]");
       expect(body).toContain("[[GitHub]]");
+      expect(body).not.toContain("[[Live]]");
       
       // Body should have description after location
       expect(body).toContain("## Description");

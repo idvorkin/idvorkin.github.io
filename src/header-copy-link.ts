@@ -314,7 +314,7 @@ function createGitHubIssueUrl(
   const firstParagraph = header ? getFirstParagraphAfterHeader(header) : '';
   
   // Format location as a single line with hyperlinks
-  const locationLine = `📍 [${pagePath || "index"}](https://idvorkin.azurewebsites.net/${pagePath})/[${headerId}](https://idvorkin.azurewebsites.net/${pagePath}#${headerId}) - [[Live]](https://idvorkin.azurewebsites.net/${pagePath}#${headerId}) [[GitHub]](${repoUrl}/blob/main/${sourceFile}#${headerId})`;
+  const locationLine = `📍 [${pagePath || "index"}](https://idvorkin.azurewebsites.net/${pagePath})/[${headerId}](https://idvorkin.azurewebsites.net/${pagePath}/${headerId}) - [[GitHub]](${repoUrl}/blob/main/${sourceFile}#${headerId})`;
   
   // Format the issue body with location at top, then description, then content excerpt
   let issueBodyContent = `${locationLine}\n\n` +
