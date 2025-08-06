@@ -4,6 +4,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 const mockDocument = {
   createElement: vi.fn(),
   getElementById: vi.fn(),
+  querySelector: vi.fn(),
   head: {
     appendChild: vi.fn(),
   },
@@ -506,13 +507,23 @@ describe("Header Copy Link", () => {
       // Check for the GitHub issue icon
       const githubIcon = createdElements.find(el => el.className === "header-github-issue");
       expect(githubIcon).toBeDefined();
-      expect(githubIcon?.innerHTML).toBe("🐛");
+      expect(githubIcon?.innerHTML).toBe('<i class="fab fa-github"></i>');
       expect(githubIcon?.title).toBe("Create GitHub issue for this section");
     });
 
     it("should open GitHub issue URL when GitHub icon is clicked", () => {
       const mockOpen = vi.fn();
       (globalThis as any).window.open = mockOpen;
+      
+      // Mock the meta tag for source file path
+      mockDocument.querySelector.mockImplementation((selector: string) => {
+        if (selector === 'meta[property="markdown-path"]') {
+          return {
+            getAttribute: (attr: string) => attr === "content" ? "_d/manager-book.md" : null
+          };
+        }
+        return null;
+      });
       
       const mockHeader = createMockHeader("test-header", "Test Header");
       mockHeader.querySelector = vi.fn(() => null);
@@ -568,6 +579,12 @@ describe("Header Copy Link", () => {
           expect.stringContaining("github.com/idvorkin/idvorkin.github.io/issues/new"),
           "_blank"
         );
+        
+        // Verify the URL contains the GitHub source link in the body
+        const urlCall = mockOpen.mock.calls[0][0];
+        const decodedUrl = decodeURIComponent(urlCall);
+        expect(decodedUrl).toContain("GitHub Source");
+        expect(decodedUrl).toContain("blob/main/_d/manager-book.md#test-header");
       }
     });
   });

@@ -184,6 +184,10 @@ test.describe("Header Copy Link Feature", () => {
       if (headerId) {
         expect(body).toContain(headerId);
       }
+      
+      // Verify GitHub source link is included
+      expect(body).toContain("GitHub Source");
+      expect(body).toContain("blob/main/");
 
       // Close the new page
       await newPage.close();

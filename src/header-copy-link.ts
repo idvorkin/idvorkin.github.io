@@ -46,7 +46,8 @@ function createCopyLinkIcon(options: CopyLinkOptions): HTMLElement {
 function createGitHubIssueIcon(): HTMLElement {
   const icon = document.createElement("span");
   icon.className = "header-github-issue";
-  icon.innerHTML = "🐛"; // Bug emoji for creating an issue
+  // Use Font Awesome GitHub icon (assuming Font Awesome is loaded)
+  icon.innerHTML = '<i class="fab fa-github"></i>';
   icon.title = "Create GitHub issue for this section";
   icon.style.cursor = "pointer";
   icon.style.marginLeft = "0.5rem";
@@ -182,6 +183,10 @@ function createGitHubIssueUrl(headerId: string, headerText: string): string {
   // Remove leading slash and .html extension if present
   const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "");
   
+  // Get the actual source file path from the meta tag (set by Jekyll)
+  const metaTag = document.querySelector('meta[property="markdown-path"]');
+  const sourceFile = metaTag ? metaTag.getAttribute("content") : `${pagePath || "index"}.md`;
+  
   // Construct the GitHub issue URL
   const repoUrl = "https://github.com/idvorkin/idvorkin.github.io";
   const issueTitle = encodeURIComponent(`Issue with section: ${headerText}`);
@@ -190,7 +195,8 @@ function createGitHubIssueUrl(headerId: string, headerText: string): string {
     `- **Page**: ${pagePath || "index"}\n` +
     `- **Section**: ${headerText}\n` +
     `- **Section ID**: ${headerId}\n` +
-    `- **Direct Link**: https://idvorkin.azurewebsites.net/${pagePath}/${headerId}\n\n` +
+    `- **Live Link**: https://idvorkin.azurewebsites.net/${pagePath}/${headerId}\n` +
+    `- **GitHub Source**: ${repoUrl}/blob/main/${sourceFile}#${headerId}\n\n` +
     `## Description\n\n` +
     `Please describe the issue with this section:\n\n`
   );
