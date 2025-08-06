@@ -41,13 +41,11 @@ function createCopyLinkIcon(options: CopyLinkOptions): HTMLElement {
 }
 
 /**
- * Creates the GitHub issue icon element
+ * Creates the GitHub issue icon element with Font Awesome fallback
  */
 function createGitHubIssueIcon(): HTMLElement {
   const icon = document.createElement("span");
   icon.className = "header-github-issue";
-  // Use Font Awesome GitHub icon (assuming Font Awesome is loaded)
-  icon.innerHTML = '<i class="fab fa-github"></i>';
   icon.title = "Create GitHub issue for this section";
   icon.style.cursor = "pointer";
   icon.style.marginLeft = "0.5rem";
@@ -55,44 +53,127 @@ function createGitHubIssueIcon(): HTMLElement {
   icon.style.transition = "opacity 0.2s ease";
   icon.style.fontSize = "0.8em";
   icon.style.userSelect = "none";
+  
+  // Add accessibility attributes
+  icon.setAttribute('role', 'button');
+  icon.setAttribute('tabindex', '0');
+  icon.setAttribute('aria-label', 'Create GitHub issue for this section');
+  
+  // Check if Font Awesome is available (more robust detection)
+  const hasFontAwesome = !!(
+    document.querySelector('link[href*="font-awesome"]') || 
+    document.querySelector('script[src*="font-awesome"]') ||
+    document.querySelector('.fa, .fab, .fas, .far') ||
+    // Check for inline styles that might include Font Awesome
+    Array.from(document.styleSheets).some(sheet => {
+      try {
+        return sheet.href && sheet.href.includes('font-awesome');
+      } catch (e) {
+        return false; // Cross-origin stylesheets may throw
+      }
+    })
+  );
+  
+  if (hasFontAwesome) {
+    const faIcon = document.createElement('i');
+    faIcon.className = 'fab fa-github';
+    icon.appendChild(faIcon);
+  } else {
+    // Fallback to text or emoji
+    icon.textContent = '⚠️';
+  }
 
   return icon;
 }
 
 /**
- * Creates an inline popup editor for adding comments
+ * Creates an inline popup editor for adding comments (safe from XSS)
  */
 function createIssuePopup(headerId: string, headerText: string): HTMLElement {
   const popup = document.createElement("div");
   popup.className = "github-issue-popup";
   popup.style.display = "none";
+  popup.id = `github-issue-popup-${headerId}`;
   
-  popup.innerHTML = `
-    <div class="github-issue-popup-content">
-      <div class="github-issue-popup-header">
-        <h4>Report Issue: ${headerText}</h4>
-        <button class="github-issue-popup-close" title="Close">×</button>
-      </div>
-      <div class="github-issue-popup-body">
-        <label for="issue-title-${headerId}">Issue Title:</label>
-        <input type="text" id="issue-title-${headerId}" class="github-issue-title" 
-               placeholder="Brief title for the issue" />
-        
-        <label for="issue-comment-${headerId}">Description:</label>
-        <textarea id="issue-comment-${headerId}" class="github-issue-comment" 
-                  placeholder="Describe the issue with this section..." 
-                  rows="4"></textarea>
-        
-        <div class="github-issue-popup-buttons">
-          <button class="github-issue-submit">Create Issue on GitHub</button>
-          <button class="github-issue-cancel">Cancel</button>
-        </div>
-        <div class="github-issue-popup-hint">
-          <small>Tip: Press Ctrl+Enter (Cmd+Enter on Mac) to submit</small>
-        </div>
-      </div>
-    </div>
-  `;
+  // Create structure safely without innerHTML to prevent XSS
+  const content = document.createElement("div");
+  content.className = "github-issue-popup-content";
+  
+  // Header
+  const header = document.createElement("div");
+  header.className = "github-issue-popup-header";
+  
+  const h4 = document.createElement("h4");
+  h4.textContent = `Report Issue: ${headerText}`; // Safe from XSS
+  
+  const closeBtn = document.createElement("button");
+  closeBtn.className = "github-issue-popup-close";
+  closeBtn.title = "Close";
+  closeBtn.textContent = "×";
+  
+  header.appendChild(h4);
+  header.appendChild(closeBtn);
+  
+  // Body
+  const body = document.createElement("div");
+  body.className = "github-issue-popup-body";
+  
+  // Title input
+  const titleLabel = document.createElement("label");
+  titleLabel.setAttribute("for", `issue-title-${headerId}`);
+  titleLabel.textContent = "Issue Title:";
+  
+  const titleInput = document.createElement("input");
+  titleInput.type = "text";
+  titleInput.id = `issue-title-${headerId}`;
+  titleInput.className = "github-issue-title";
+  titleInput.placeholder = "Brief title for the issue";
+  
+  // Description textarea
+  const descLabel = document.createElement("label");
+  descLabel.setAttribute("for", `issue-comment-${headerId}`);
+  descLabel.textContent = "Description:";
+  
+  const descTextarea = document.createElement("textarea");
+  descTextarea.id = `issue-comment-${headerId}`;
+  descTextarea.className = "github-issue-comment";
+  descTextarea.placeholder = "Describe the issue with this section...";
+  descTextarea.rows = 4;
+  
+  // Buttons
+  const buttonsDiv = document.createElement("div");
+  buttonsDiv.className = "github-issue-popup-buttons";
+  
+  const submitBtn = document.createElement("button");
+  submitBtn.className = "github-issue-submit";
+  submitBtn.textContent = "Create Issue on GitHub";
+  
+  const cancelBtn = document.createElement("button");
+  cancelBtn.className = "github-issue-cancel";
+  cancelBtn.textContent = "Cancel";
+  
+  buttonsDiv.appendChild(submitBtn);
+  buttonsDiv.appendChild(cancelBtn);
+  
+  // Hint
+  const hintDiv = document.createElement("div");
+  hintDiv.className = "github-issue-popup-hint";
+  const small = document.createElement("small");
+  small.textContent = "Tip: Press Ctrl+Enter (Cmd+Enter on Mac) to submit";
+  hintDiv.appendChild(small);
+  
+  // Assemble body
+  body.appendChild(titleLabel);
+  body.appendChild(titleInput);
+  body.appendChild(descLabel);
+  body.appendChild(descTextarea);
+  body.appendChild(buttonsDiv);
+  body.appendChild(hintDiv);
+  
+  // Assemble popup
+  content.appendChild(header);
+  content.appendChild(body);
+  popup.appendChild(content);
   
   return popup;
 }
@@ -336,51 +417,50 @@ function createGitHubIssueUrl(
   return `${repoUrl}/issues/new?title=${issueTitle}&body=${issueBody}`;
 }
 
+// Store cleanup functions for each header
+const headerCleanupFunctions = new WeakMap<HTMLElement, (() => void)[]>();
+
+// Store popup references for lazy loading
+const headerPopups = new WeakMap<HTMLElement, HTMLElement>();
+
 /**
- * Adds copy link functionality to a single header
+ * Creates and shows popup lazily when needed
  */
-function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): void {
-  // Check if this header already has a copy link
-  const existingCopyLink = header.querySelector(`.${options.iconClass || DEFAULT_OPTIONS.iconClass}`);
-  if (existingCopyLink) {
-    return; // Skip if copy link already exists
-  }
-
-  const headerId = getOrCreateHeaderId(header);
-  const copyIcon = createCopyLinkIcon(options);
-  const githubIcon = createGitHubIssueIcon();
-
-  // Add click handler for copy link
-  copyIcon.addEventListener("click", async (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-
-    await copyHeaderLink(headerId, options);
-    showCopiedTooltip(copyIcon, options.tooltipDuration);
-  });
-
-  // Create the popup for this header
-  const popup = createIssuePopup(headerId, header.textContent || "");
-  document.body.appendChild(popup);
+function getOrCreatePopup(header: HTMLElement, headerId: string): HTMLElement {
+  let popup = headerPopups.get(header);
   
-  // Add click handler for GitHub issue icon to show popup
-  githubIcon.addEventListener("click", (event) => {
-    event.preventDefault();
-    event.stopPropagation();
+  if (!popup) {
+    popup = createIssuePopup(headerId, header.textContent || "");
+    document.body.appendChild(popup);
+    headerPopups.set(header, popup);
     
-    showIssuePopup(popup, header);
-  });
+    // Setup popup event handlers
+    setupPopupEventHandlers(popup, header, headerId);
+  }
   
-  // Handle popup close button
+  return popup;
+}
+
+/**
+ * Sets up event handlers for a popup
+ */
+function setupPopupEventHandlers(popup: HTMLElement, header: HTMLElement, headerId: string): void {
+  const cleanupFunctions: (() => void)[] = [];
+  
+  // Handle close button
   const closeBtn = popup.querySelector(".github-issue-popup-close");
   if (closeBtn) {
-    closeBtn.addEventListener("click", () => hideIssuePopup(popup));
+    const closeHandler = () => hideIssuePopup(popup);
+    closeBtn.addEventListener("click", closeHandler);
+    cleanupFunctions.push(() => closeBtn.removeEventListener("click", closeHandler));
   }
   
   // Handle cancel button
   const cancelBtn = popup.querySelector(".github-issue-cancel");
   if (cancelBtn) {
-    cancelBtn.addEventListener("click", () => hideIssuePopup(popup));
+    const cancelHandler = () => hideIssuePopup(popup);
+    cancelBtn.addEventListener("click", cancelHandler);
+    cleanupFunctions.push(() => cancelBtn.removeEventListener("click", cancelHandler));
   }
   
   // Function to submit the issue
@@ -401,6 +481,7 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   const submitBtn = popup.querySelector(".github-issue-submit");
   if (submitBtn) {
     submitBtn.addEventListener("click", submitIssue);
+    cleanupFunctions.push(() => submitBtn.removeEventListener("click", submitIssue));
   }
   
   // Handle keyboard shortcuts (Ctrl/Cmd + Enter)
@@ -416,14 +497,59 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   
   if (titleInput) {
     titleInput.addEventListener("keydown", handleKeydown);
+    cleanupFunctions.push(() => titleInput.removeEventListener("keydown", handleKeydown));
   }
   if (commentTextarea) {
     commentTextarea.addEventListener("keydown", handleKeydown);
+    cleanupFunctions.push(() => commentTextarea.removeEventListener("keydown", handleKeydown));
   }
+  
+  // Store cleanup functions for this popup
+  const existingCleanup = headerCleanupFunctions.get(header) || [];
+  headerCleanupFunctions.set(header, [...existingCleanup, ...cleanupFunctions]);
+}
+
+/**
+ * Adds copy link functionality to a single header
+ */
+function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): void {
+  // Check if this header already has a copy link
+  const existingCopyLink = header.querySelector(`.${options.iconClass || DEFAULT_OPTIONS.iconClass}`);
+  if (existingCopyLink) {
+    return; // Skip if copy link already exists
+  }
+
+  const headerId = getOrCreateHeaderId(header);
+  const copyIcon = createCopyLinkIcon(options);
+  const githubIcon = createGitHubIssueIcon();
+  const cleanupFunctions: (() => void)[] = [];
+
+  // Add click handler for copy link
+  const copyClickHandler = async (event: Event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    await copyHeaderLink(headerId, options);
+    showCopiedTooltip(copyIcon, options.tooltipDuration);
+  };
+  copyIcon.addEventListener("click", copyClickHandler);
+  cleanupFunctions.push(() => copyIcon.removeEventListener("click", copyClickHandler));
+
+  // Add click handler for GitHub issue icon to show popup (lazy loading)
+  const githubClickHandler = (event: Event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    
+    const popup = getOrCreatePopup(header, headerId);
+    showIssuePopup(popup, header);
+  };
+  githubIcon.addEventListener("click", githubClickHandler);
+  cleanupFunctions.push(() => githubIcon.removeEventListener("click", githubClickHandler));
   
   // Close popup when clicking outside (use capture phase to avoid conflicts)
   const handleOutsideClick = (event: MouseEvent) => {
-    if (!popup.contains(event.target as Node) && 
+    const popup = headerPopups.get(header);
+    if (popup && !popup.contains(event.target as Node) && 
         event.target !== githubIcon && 
         !githubIcon.contains(event.target as Node) &&
         popup.style.display !== "none") {
@@ -432,24 +558,55 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   };
   
   // Add slight delay to avoid immediate closing
-  setTimeout(() => {
+  const timeoutId = setTimeout(() => {
     document.addEventListener("click", handleOutsideClick, true);
+    cleanupFunctions.push(() => document.removeEventListener("click", handleOutsideClick, true));
   }, 100);
+  cleanupFunctions.push(() => clearTimeout(timeoutId));
 
   // Append the icons to the header
   header.appendChild(copyIcon);
   header.appendChild(githubIcon);
 
   // Add hover effects to the header
-  header.addEventListener("mouseenter", () => {
+  const mouseEnterHandler = () => {
     copyIcon.style.opacity = "1";
     githubIcon.style.opacity = "1";
-  });
-
-  header.addEventListener("mouseleave", () => {
+  };
+  const mouseLeaveHandler = () => {
     copyIcon.style.opacity = "0";
     githubIcon.style.opacity = "0";
+  };
+  
+  header.addEventListener("mouseenter", mouseEnterHandler);
+  header.addEventListener("mouseleave", mouseLeaveHandler);
+  cleanupFunctions.push(() => {
+    header.removeEventListener("mouseenter", mouseEnterHandler);
+    header.removeEventListener("mouseleave", mouseLeaveHandler);
   });
+  
+  // Store cleanup functions for this header
+  headerCleanupFunctions.set(header, cleanupFunctions);
+}
+
+/**
+ * Cleans up all event listeners and popups
+ */
+export function cleanupHeaderCopyLinks(): void {
+  // Clean up all stored event listeners
+  headerCleanupFunctions.forEach((cleanupFns) => {
+    cleanupFns.forEach(fn => fn());
+  });
+  headerCleanupFunctions.clear();
+  
+  // Remove all popups
+  headerPopups.forEach((popup) => {
+    popup.remove();
+  });
+  headerPopups.clear();
+  
+  // Reset initialization flag
+  isHeaderCopyLinksInitialized = false;
 }
 
 /**
