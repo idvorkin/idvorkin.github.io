@@ -20,8 +20,6 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
 - [By Week](#by-week)
 - [Stuff happening](#stuff-happening)
   - [Candidates](#candidates)
-  - [Troll Hunt](#troll-hunt)
-  - [Lighthouse passport](#lighthouse-passport)
 - [My top priorities](#my-top-priorities)
   - [I have memories that last a lifetime](#i-have-memories-that-last-a-lifetime)
   - [Back to generating artifacts](#back-to-generating-artifacts)
@@ -46,7 +44,6 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
   - [Tony](#tony)
   - [Other AI](#other-ai)
   - [Video publishing](#video-publishing)
-  - [CUT](#cut)
 - [Cognitive Health (X/5)](#cognitive-health-x5)
   - [Blog posts](#blog-posts)
   - [Videos](#videos)
@@ -83,14 +80,14 @@ Five years ago, I dreamed of taking a year off of work - [a gap year](/igor-gap-
 
 ## By Week
 
-| Week Dates                 | Activities                 | Notes                    |
-| --------------------------- | -------------------------- | ------------------------ |
-| July 28-Aug 3               | [l1](l1)                   | Decompression week       |
-| Aug 4-10                    | [l2](l2)                   | Tahuyu house; Z with friends |
-| Aug 11-17                   | [l3](l3)                   | Crater Lake trip         |
-| Aug 18-24                   | [l4](l4)                   | Long Beach vacation      |
-| Aug 25-31                   | [l5](l5)                   | Yellowstone & Grand Teton|
-| Sept 1-7                    | [l6](l6)                   | Back to work/school prep |
+| Week Dates    | Activities | Notes                        |
+| ------------- | ---------- | ---------------------------- |
+| July 28-Aug 3 | [l1](l1)   | Decompression week           |
+| Aug 4-10      | [l2](l2)   | Home activities & adventures |
+| Aug 11-17     | [l3](l3)   | Crater Lake trip             |
+| Aug 18-24     | [l4](l4)   | Long Beach vacation          |
+| Aug 25-31     | [l5](l5)   | Yellowstone & Grand Teton    |
+| Sept 1-7      | [l6](l6)   | Back to work/school prep     |
 
   <span>
 - l1
@@ -108,23 +105,20 @@ Five years ago, I dreamed of taking a year off of work - [a gap year](/igor-gap-
 <div></div>
 
 - l2
-- Tahuyu house getaway
-  - Super nice house in Tahuyu
-  - **NOTE:** Zach was supposed to join but got invited to hang with his friends
-  - Solo relaxation and recharge time
-  - Explore the local area
-  - Reading and personal projects
+- Home activities and local adventures
+  - Played Frisbee with Amelia
+  - Went to Japanese Garden with Amelia
+  - Redid stickers on the Tesla
+  - **FUNNY STORY:** 100 point turn to get Tesla in garage to charge, then found out the car doesn't work since ungrounded plug
+  - Did TGU's outside!
 
 <div></div>
 
 - l3
 - Crater Lake National Park trip
   - Drive to Crater Lake
-  - Rim Drive scenic tour
-  - Hiking trails and viewpoints
-  - Photography of the lake
-  - Camping or lodge stay
-  - Solo nature immersion
+  - Day in Ashland (Maybe catch a play)
+  - Come back up the coast.
 
 <div></div>
 
@@ -157,24 +151,13 @@ Five years ago, I dreamed of taking a year off of work - [a gap year](/igor-gap-
   - Back-to-school preparation for kids
   - Work transition and planning
   - Final documentation of summer memories
-  - Photo organization and sharing
-  - Gradual return to routine
-  - School supply finalization
 
 ## Stuff happening
 
 ### Candidates
 
-- Japanese Garden Photo shoot
 - Navy ship in Bremerton
-
-### Troll Hunt
-
-- We can probably find them all
-
-### Lighthouse passport
-
-I found a lighthouse passport thing! I assumed it was a stamp book (A book with all listed lighthouses, and you needed to collect all the stamps), however it was just a passport (blank pages), but turns out there are lots I can collect, and I will!
+- Troll Hunt, maybe we can find them all
 
 - [Lighthouses of WA](https://stateofwatourism.com/scenic-washington-lighthouses/)
 
@@ -188,7 +171,7 @@ I found a lighthouse passport thing! I assumed it was a stamp book (A book with 
 
 ### Back to generating artifacts
 
-- Bang out a daily blog post
+- Bang out some blog posts
 - Write 4 family journal entries (!!)
 - Finish my talk on AI
 
@@ -213,17 +196,13 @@ I found a lighthouse passport thing! I assumed it was a stamp book (A book with 
 
 {%include summarize-page.html src="/moments" %}
 
-First night: - Arrived: Went to beach and did 30 minutes of meditation on the sunset. It was amazing - Maybe an hour today
+First night:
 
 Things to do:
 
--
 - Go to Cranberry museum
 
 ## Success Stories
-
-- Bought lots of peas and healthy things at grocery store
-- Got dinner before unpacking
 
 ## Top Learnings
 
@@ -316,29 +295,13 @@ Things to do:
 
 - So many might need it's own post.
 
-Using alfred and yabai:
-
-{%include youtube.html src="_isNIAuHnEg" %}
-
-OK, yabai is cool, I think aerospace will end up better, but I need to [support resizing splits](https://github.com/nikitabobko/AeroSpace/issues/266), which yabaio does very nicely as I like to switch from halfs to thirds.
-
-Using think.py:
-
-{%include youtube.html src="DuluVSnJGqg" %}
-
-- Using the desktop within VR
-
-{%include youtube.html src="asjUiUBjrZI" %}
-
-### CUT
-
-- Outline my talk for GPT, likley based on on Langchain tools
+- Find all the stuff I've posted on LinkedIn
 
 ## Cognitive Health (X/5)
 
 ### Blog posts
 
-- One per day!
+- 1 or 2 / week.
 
 ### Videos
 
@@ -373,11 +336,16 @@ Gym Days: -
 - Feel free to skip meals
 - Be happy going to bakery and looking at the tasty things and not eating them.
 - Be happy throwing away junk food - nothing wrong with that.
+- Success Stories:
+  - I split some meals with Tori.
+  - I got vegtables at the
 
 ### Sleep
 
 - It's been super hot latly, has made it hard
 - Real key here is to get to bed early, and not get stuck on the phone.
+- Bring and use a sleeping mask
+- Sometimes tape my mouth shut.
 
 ### Exercise
 
@@ -403,19 +371,25 @@ Gym Days: -
 ### Family
 
 - Lets focus on compassion and the sublime states
+- I can get angry, but I need to apologize after I'm done.
+- I get really triggered when kids copy parent behvior that I don't love.
 
 ## House and goods
 
 - ☐ Deal with AC recall
 - ☑ Return AC that was supposed to replace the recalled AC but was actually the same recalled model
 - Use CSScanner to scan all my old paper journals and chuck them.
-    - ☑ First ones dones
-    - ☑ Mr. Plumbbean done
+  - ☑ First ones dones
+  - ☑ Mr. Plumbbean done
+  - Do the rest of my 750 words
+  - Do my next journals
 
 ### Tesla
 
-- ☐ Figure out all the stuff and organize it
+- ☐ Solo camp night.
+- ☐ Figure out all the stuff and organize it (See my notes on 8/5)
 - ☐ Figure out bubble machine setup
-- ☐  Solo camp night.
+- ☐ Try Electrify America
+- ☐ Get Un grounded NC-30 needs to plug into house ground too (so weird)
 - ☑ Figure out sleeping bag setup
 - ☑ Fix chips in Tony's windsheild
