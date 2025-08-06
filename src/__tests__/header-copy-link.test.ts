@@ -64,6 +64,7 @@ function createMockHeader(id: string, textContent: string) {
       width: 150,
       height: 20,
     })),
+    nextElementSibling: null,
   };
 }
 
@@ -706,11 +707,13 @@ describe("Header Copy Link", () => {
         const decodedUrl = decodeURIComponent(urlCall);
         // Title should have format: page/section: custom title
         expect(decodedUrl).toContain("manager-book/test-header: Custom issue title");
-        // Description should come first in body
+        // Location should be at the top as a single line
+        expect(decodedUrl).toContain("📍");
+        expect(decodedUrl).toContain("[[Live]]");
+        expect(decodedUrl).toContain("[[GitHub]]");
+        // Description should come after location
         expect(decodedUrl).toContain("## Description");
         expect(decodedUrl).toContain("This section has an error in the code example");
-        // Location should come after description
-        expect(decodedUrl.indexOf("## Description")).toBeLessThan(decodedUrl.indexOf("## Location"));
       }
     });
   });

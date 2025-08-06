@@ -200,14 +200,14 @@ test.describe("Header Copy Link Feature", () => {
       expect(title).toContain("manager-book/");
       expect(title).toContain("Outdated example code");
       
-      // Body should have description first
+      // Location should be at the top as a single line
+      expect(body).toContain("📍");
+      expect(body).toContain("[[Live]]");
+      expect(body).toContain("[[GitHub]]");
+      
+      // Body should have description after location
       expect(body).toContain("## Description");
       expect(body).toContain("This section contains outdated information that needs updating.");
-      
-      // Then location details with links
-      expect(body).toContain("## Location");
-      expect(body).toContain("[View on site]");
-      expect(body).toContain("[View on GitHub]");
 
       // Close the new page
       await newPage.close();

@@ -254,13 +254,39 @@ function getOrCreateHeaderId(header: HTMLElement): string {
 }
 
 /**
+ * Gets the first paragraph of content after a header
+ */
+function getFirstParagraphAfterHeader(header: HTMLElement): string {
+  let nextElement = header.nextElementSibling;
+  
+  // Skip over any non-paragraph elements (like subheadings, lists, etc.)
+  while (nextElement && nextElement.tagName !== 'P') {
+    // Stop if we hit another header
+    if (nextElement.tagName.match(/^H[1-6]$/)) {
+      break;
+    }
+    nextElement = nextElement.nextElementSibling;
+  }
+  
+  // If we found a paragraph, return its text content (truncated if too long)
+  if (nextElement && nextElement.tagName === 'P') {
+    const text = nextElement.textContent || '';
+    // Truncate to reasonable length for GitHub issue
+    return text.length > 500 ? text.substring(0, 497) + '...' : text;
+  }
+  
+  return '';
+}
+
+/**
  * Creates a GitHub issue URL for a section with optional custom title and description
  */
 function createGitHubIssueUrl(
   headerId: string, 
   headerText: string, 
   customTitle?: string, 
-  customDescription?: string
+  customDescription?: string,
+  header?: HTMLElement
 ): string {
   // Get the current page path from the URL
   const pathname = window.location.pathname;
@@ -284,17 +310,24 @@ function createGitHubIssueUrl(
   // Use description if provided, otherwise use title as description
   const description = customDescription || customTitle || `Issue with section: ${headerText}`;
   
-  // Format the issue body with description first, then location details with clickable links
-  const issueBody = encodeURIComponent(
+  // Get first paragraph of content if header is provided
+  const firstParagraph = header ? getFirstParagraphAfterHeader(header) : '';
+  
+  // Format location as a single line with hyperlinks
+  const locationLine = `📍 [${pagePath || "index"}](https://idvorkin.azurewebsites.net/${pagePath})/[${headerId}](https://idvorkin.azurewebsites.net/${pagePath}#${headerId}) - [[Live]](https://idvorkin.azurewebsites.net/${pagePath}#${headerId}) [[GitHub]](${repoUrl}/blob/main/${sourceFile}#${headerId})`;
+  
+  // Format the issue body with location at top, then description, then content excerpt
+  let issueBodyContent = `${locationLine}\n\n` +
     `## Description\n\n` +
-    `${description}\n\n` +
-    `## Location\n\n` +
-    `- **Page**: [${pagePath || "index"}](https://idvorkin.azurewebsites.net/${pagePath})\n` +
-    `- **Section**: ${headerText}\n` +
-    `- **Section ID**: \`${headerId}\`\n` +
-    `- **Live Link**: [View on site](https://idvorkin.azurewebsites.net/${pagePath}#${headerId})\n` +
-    `- **GitHub Source**: [View on GitHub](${repoUrl}/blob/main/${sourceFile}#${headerId})\n\n`
-  );
+    `${description}\n\n`;
+  
+  // Add first paragraph if available
+  if (firstParagraph) {
+    issueBodyContent += `## Content Excerpt\n\n` +
+      `> ${firstParagraph}\n\n`;
+  }
+  
+  const issueBody = encodeURIComponent(issueBodyContent);
   
   return `${repoUrl}/issues/new?title=${issueTitle}&body=${issueBody}`;
 }
@@ -354,7 +387,7 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
     const customTitle = titleInput?.value || "";
     const customDescription = commentTextarea?.value || "";
     
-    const issueUrl = createGitHubIssueUrl(headerId, header.textContent || "", customTitle, customDescription);
+    const issueUrl = createGitHubIssueUrl(headerId, header.textContent || "", customTitle, customDescription, header);
     window.open(issueUrl, "_blank");
     
     hideIssuePopup(popup);
