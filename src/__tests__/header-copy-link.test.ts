@@ -17,6 +17,7 @@ const mockDocument = {
 const mockWindow = {
   location: {
     href: "http://localhost:4000/manager-book",
+    pathname: "/manager-book",
   },
   navigator: {
     clipboard: {
@@ -434,8 +435,8 @@ describe("Header Copy Link", () => {
       // Second call should not add another copy link
       initHeaderCopyLinks();
 
-      // Should only add one copy link icon per header
-      expect(mockHeader.appendChild).toHaveBeenCalledTimes(1);
+      // Should add two icons per header (copy link and GitHub issue)
+      expect(mockHeader.appendChild).toHaveBeenCalledTimes(2);
     });
 
     it("should not add duplicate copy links when enableHeaderCopyLinks is called multiple times", () => {
@@ -469,8 +470,105 @@ describe("Header Copy Link", () => {
       // Second call should not add another copy link
       enableHeaderCopyLinks();
 
-      // Should only add one copy link icon per header
-      expect(mockHeader.appendChild).toHaveBeenCalledTimes(1);
+      // Should add two icons per header (copy link and GitHub issue)
+      expect(mockHeader.appendChild).toHaveBeenCalledTimes(2);
+    });
+  });
+
+  describe("GitHub Issue Creation", () => {
+    it("should add GitHub issue icon alongside copy link icon", () => {
+      const mockHeader = createMockHeader("test-header", "Test Header");
+      mockHeader.querySelector = vi.fn(() => null);
+
+      const mockContainer = {
+        querySelectorAll: vi.fn(() => [mockHeader]),
+      };
+
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "header-copy-link-styles") return null;
+        if (id === "content-holder") return mockContainer;
+        return null;
+      });
+
+      initHeaderCopyLinks();
+
+      // Should add both copy link and GitHub issue icons
+      expect(mockHeader.appendChild).toHaveBeenCalledTimes(2);
+      
+      // Check that the created elements include both icons
+      const createdElements = mockDocument.createElement.mock.results
+        .filter(result => result.value.tagName === "SPAN")
+        .map(result => result.value);
+      
+      // Should have created at least 2 span elements (copy link and GitHub issue)
+      expect(createdElements.length).toBeGreaterThanOrEqual(2);
+      
+      // Check for the GitHub issue icon
+      const githubIcon = createdElements.find(el => el.className === "header-github-issue");
+      expect(githubIcon).toBeDefined();
+      expect(githubIcon?.innerHTML).toBe("🐛");
+      expect(githubIcon?.title).toBe("Create GitHub issue for this section");
+    });
+
+    it("should open GitHub issue URL when GitHub icon is clicked", () => {
+      const mockOpen = vi.fn();
+      (globalThis as any).window.open = mockOpen;
+      
+      const mockHeader = createMockHeader("test-header", "Test Header");
+      mockHeader.querySelector = vi.fn(() => null);
+      
+      let githubIconClickHandler: Function | null = null;
+
+      // Capture the GitHub icon when it's created
+      mockDocument.createElement.mockImplementation((tagName: string) => {
+        const element = {
+          tagName: tagName.toUpperCase(),
+          className: "",
+          innerHTML: "",
+          title: "",
+          style: {},
+          appendChild: vi.fn(),
+          addEventListener: vi.fn((event: string, handler: Function) => {
+            if (element.className === "header-github-issue" && event === "click") {
+              githubIconClickHandler = handler;
+            }
+          }),
+          textContent: "",
+          id: "",
+          querySelector: vi.fn(() => null),
+          parentElement: {
+            appendChild: vi.fn(),
+          },
+        };
+        return element;
+      });
+
+      const mockContainer = {
+        querySelectorAll: vi.fn(() => [mockHeader]),
+      };
+
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "header-copy-link-styles") return null;
+        if (id === "content-holder") return mockContainer;
+        return null;
+      });
+
+      initHeaderCopyLinks();
+
+      // Simulate clicking the GitHub issue icon
+      if (githubIconClickHandler) {
+        const mockEvent = {
+          preventDefault: vi.fn(),
+          stopPropagation: vi.fn(),
+        };
+        githubIconClickHandler(mockEvent);
+        
+        // Should open a new window with GitHub issue URL
+        expect(mockOpen).toHaveBeenCalledWith(
+          expect.stringContaining("github.com/idvorkin/idvorkin.github.io/issues/new"),
+          "_blank"
+        );
+      }
     });
   });
 });

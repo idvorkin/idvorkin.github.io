@@ -98,6 +98,98 @@ test.describe("Header Copy Link Feature", () => {
     }
   });
 
+  test("should add GitHub issue icons to headers", async ({ page }) => {
+    // Check that headers have GitHub issue icons
+    const headers = page.locator("h1, h2, h3, h4, h5, h6");
+    const headerCount = await headers.count();
+
+    if (headerCount > 0) {
+      // Check that at least one header has a GitHub issue icon
+      const githubIcons = page.locator(".header-github-issue");
+      const githubIconCount = await githubIcons.count();
+
+      expect(githubIconCount).toBeGreaterThan(0);
+      expect(githubIconCount).toBeLessThanOrEqual(headerCount);
+    }
+  });
+
+  test("should show both copy link and GitHub issue icons on hover", async ({ page }) => {
+    // Find a header
+    const header = page.locator("h1, h2, h3, h4, h5, h6").first();
+
+    if ((await header.count()) > 0) {
+      // Initially, icons should be hidden
+      const copyLink = header.locator(".header-copy-link");
+      const githubIcon = header.locator(".header-github-issue");
+
+      // Hover over the header
+      await header.hover();
+
+      // Both icons should be visible
+      await expect(copyLink).toBeVisible();
+      await expect(githubIcon).toBeVisible();
+
+      // Move away from header
+      await page.locator("body").hover({ position: { x: 0, y: 0 } });
+
+      // Icons should be hidden again
+      await expect(copyLink).not.toBeVisible();
+      await expect(githubIcon).not.toBeVisible();
+    }
+  });
+
+  test("should open GitHub issue page when GitHub icon is clicked", async ({ page, context }) => {
+    // Find a header with a GitHub issue icon
+    const headerWithGitHubIcon = page
+      .locator("h1, h2, h3, h4, h5, h6")
+      .filter({ has: page.locator(".header-github-issue") })
+      .first();
+
+    if ((await headerWithGitHubIcon.count()) > 0) {
+      // Get the header text and ID
+      const headerText = await headerWithGitHubIcon.textContent();
+      const headerId = await headerWithGitHubIcon.getAttribute("id");
+
+      // Hover over the header to make the GitHub icon visible
+      await headerWithGitHubIcon.hover();
+
+      // Listen for new page/tab
+      const newPagePromise = context.waitForEvent("page");
+
+      // Click the GitHub issue icon
+      const githubIcon = headerWithGitHubIcon.locator(".header-github-issue");
+      await githubIcon.click();
+
+      // Wait for the new page to open
+      const newPage = await newPagePromise;
+      await newPage.waitForLoadState();
+
+      // Verify the URL
+      const url = newPage.url();
+      expect(url).toContain("github.com/idvorkin/idvorkin.github.io/issues/new");
+      expect(url).toContain("title=");
+      expect(url).toContain("body=");
+
+      // Verify the issue title and body contain relevant information
+      const urlParams = new URL(url).searchParams;
+      const title = urlParams.get("title");
+      const body = urlParams.get("body");
+
+      expect(title).toContain("Issue with section:");
+      if (headerText) {
+        expect(title).toContain(headerText.trim());
+      }
+
+      expect(body).toContain("manager-book");
+      if (headerId) {
+        expect(body).toContain(headerId);
+      }
+
+      // Close the new page
+      await newPage.close();
+    }
+  });
+
   test("should handle multiple script loads without duplicating icons", async ({ page }) => {
     // This test simulates the scenario where the header copy link script
     // might be loaded multiple times (e.g., through dynamic content loading)

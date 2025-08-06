@@ -41,6 +41,24 @@ function createCopyLinkIcon(options: CopyLinkOptions): HTMLElement {
 }
 
 /**
+ * Creates the GitHub issue icon element
+ */
+function createGitHubIssueIcon(): HTMLElement {
+  const icon = document.createElement("span");
+  icon.className = "header-github-issue";
+  icon.innerHTML = "🐛"; // Bug emoji for creating an issue
+  icon.title = "Create GitHub issue for this section";
+  icon.style.cursor = "pointer";
+  icon.style.marginLeft = "0.5rem";
+  icon.style.opacity = "0";
+  icon.style.transition = "opacity 0.2s ease";
+  icon.style.fontSize = "0.8em";
+  icon.style.userSelect = "none";
+
+  return icon;
+}
+
+/**
  * Shows a temporary tooltip indicating the link was copied
  */
 function showCopiedTooltip(element: HTMLElement, duration = 2000): void {
@@ -156,6 +174,31 @@ function getOrCreateHeaderId(header: HTMLElement): string {
 }
 
 /**
+ * Creates a GitHub issue URL for a section
+ */
+function createGitHubIssueUrl(headerId: string, headerText: string): string {
+  // Get the current page path from the URL
+  const pathname = window.location.pathname;
+  // Remove leading slash and .html extension if present
+  const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "");
+  
+  // Construct the GitHub issue URL
+  const repoUrl = "https://github.com/idvorkin/idvorkin.github.io";
+  const issueTitle = encodeURIComponent(`Issue with section: ${headerText}`);
+  const issueBody = encodeURIComponent(
+    `## Issue Location\n\n` +
+    `- **Page**: ${pagePath || "index"}\n` +
+    `- **Section**: ${headerText}\n` +
+    `- **Section ID**: ${headerId}\n` +
+    `- **Direct Link**: https://idvorkin.azurewebsites.net/${pagePath}/${headerId}\n\n` +
+    `## Description\n\n` +
+    `Please describe the issue with this section:\n\n`
+  );
+  
+  return `${repoUrl}/issues/new?title=${issueTitle}&body=${issueBody}`;
+}
+
+/**
  * Adds copy link functionality to a single header
  */
 function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): void {
@@ -167,8 +210,9 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
 
   const headerId = getOrCreateHeaderId(header);
   const copyIcon = createCopyLinkIcon(options);
+  const githubIcon = createGitHubIssueIcon();
 
-  // Add click handler
+  // Add click handler for copy link
   copyIcon.addEventListener("click", async (event) => {
     event.preventDefault();
     event.stopPropagation();
@@ -177,16 +221,29 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
     showCopiedTooltip(copyIcon, options.tooltipDuration);
   });
 
-  // Append the icon to the header
+  // Add click handler for GitHub issue
+  githubIcon.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const headerText = header.textContent || "";
+    const issueUrl = createGitHubIssueUrl(headerId, headerText);
+    window.open(issueUrl, "_blank");
+  });
+
+  // Append the icons to the header
   header.appendChild(copyIcon);
+  header.appendChild(githubIcon);
 
   // Add hover effects to the header
   header.addEventListener("mouseenter", () => {
     copyIcon.style.opacity = "1";
+    githubIcon.style.opacity = "1";
   });
 
   header.addEventListener("mouseleave", () => {
     copyIcon.style.opacity = "0";
+    githubIcon.style.opacity = "0";
   });
 }
 
@@ -219,7 +276,8 @@ export function addHeaderCopyLinkStyles(): void {
   const style = document.createElement("style");
   style.id = styleId;
   style.textContent = `
-    .header-copy-link {
+    .header-copy-link,
+    .header-github-issue {
       opacity: 0;
       margin-left: 0.5rem;
       transition: opacity 0.2s ease;
@@ -234,12 +292,22 @@ export function addHeaderCopyLinkStyles(): void {
       color: #007bff;
     }
     
+    .header-github-issue:hover {
+      color: #dc3545;
+    }
+    
     h1:hover .header-copy-link,
     h2:hover .header-copy-link,
     h3:hover .header-copy-link,
     h4:hover .header-copy-link,
     h5:hover .header-copy-link,
-    h6:hover .header-copy-link {
+    h6:hover .header-copy-link,
+    h1:hover .header-github-issue,
+    h2:hover .header-github-issue,
+    h3:hover .header-github-issue,
+    h4:hover .header-github-issue,
+    h5:hover .header-github-issue,
+    h6:hover .header-github-issue {
       opacity: 1;
     }
     
