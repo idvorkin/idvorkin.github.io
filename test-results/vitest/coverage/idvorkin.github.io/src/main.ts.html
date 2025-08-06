@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.47% </span>
+                <span class="strong">61.29% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>217/353</span>
+                <span class='fraction'>217/354</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.47% </span>
+                <span class="strong">61.29% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>217/353</span>
+                <span class='fraction'>217/354</span>
             </div>
         
             
@@ -586,7 +586,18 @@
 <a name='L521'></a><a href='#L521'>521</a>
 <a name='L522'></a><a href='#L522'>522</a>
 <a name='L523'></a><a href='#L523'>523</a>
-<a name='L524'></a><a href='#L524'>524</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L524'></a><a href='#L524'>524</a>
+<a name='L525'></a><a href='#L525'>525</a>
+<a name='L526'></a><a href='#L526'>526</a>
+<a name='L527'></a><a href='#L527'>527</a>
+<a name='L528'></a><a href='#L528'>528</a>
+<a name='L529'></a><a href='#L529'>529</a>
+<a name='L530'></a><a href='#L530'>530</a>
+<a name='L531'></a><a href='#L531'>531</a>
+<a name='L532'></a><a href='#L532'>532</a>
+<a name='L533'></a><a href='#L533'>533</a>
+<a name='L534'></a><a href='#L534'>534</a>
+<a name='L535'></a><a href='#L535'>535</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -640,12 +651,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1096,6 +1110,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1124,9 +1146,9 @@ import {
 } from "./shared";
 // Import graph but we'll only initialize it from the graph.html page
 import "./graph";
+import { initDevInfo } from "./dev-info";
 import { enableHeaderCopyLinks } from "./header-copy-link";
 import { enableImageZoom } from "./image-zoom";
-import { initDevInfo } from "./dev-info";
 &nbsp;
 // Type declarations for external libraries
 declare global {
@@ -1163,13 +1185,16 @@ function checkExpandToggle() {
   /* Find page title. */
 <span class="cstat-no" title="statement not covered" >  const url = window.location.href;</span>
 <span class="cstat-no" title="statement not covered" >  const prodPrefix = "https://idvork.in";</span>
-<span class="cstat-no" title="statement not covered" >  const testPrefix = "http://localhost:4000";</span>
+  // Get the current port from the URL
+<span class="cstat-no" title="statement not covered" >  const currentPort = window.location.port || "4000";</span>
+<span class="cstat-no" title="statement not covered" >  const testPrefix = `http://localhost:${currentPort}`;</span>
 <span class="cstat-no" title="statement not covered" >  const isProd = url.includes(prodPrefix);</span>
 <span class="cstat-no" title="statement not covered" >  let newURL = url;</span>
 <span class="cstat-no" title="statement not covered" >  if (isProd) {</span>
 <span class="cstat-no" title="statement not covered" >    newURL = url.replace(prodPrefix, testPrefix);</span>
 <span class="cstat-no" title="statement not covered" >  } else {</span>
-<span class="cstat-no" title="statement not covered" >    newURL = url.replace(testPrefix, prodPrefix);</span>
+    // When swapping from test to prod, we need to handle any port number
+<span class="cstat-no" title="statement not covered" >    newURL = url.replace(/http:\/\/localhost:\d+/, prodPrefix);</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >  window.location.href = newURL;</span>
@@ -1620,7 +1645,15 @@ function load_globals() {
   initDevInfo();
 }
 &nbsp;
-export { load_globals, get_link_info, shuffle, random_from_list, append_randomizer_div, enableHeaderCopyLinks, initDevInfo };
+export {
+  load_globals,
+  get_link_info,
+  shuffle,
+  random_from_list,
+  append_randomizer_div,
+  enableHeaderCopyLinks,
+  initDevInfo,
+};
 &nbsp;
 // Auto-initialize when the script loads
 if (typeof $ !== "undefined" &amp;&amp; $.<span class="branch-0 cbranch-no" title="branch not covered" >fn &amp;&amp; $.fn.ready) <span class="branch-0 cbranch-no" title="branch not covered" >{</span></span>
@@ -1639,7 +1672,7 @@ if (typeof $ !== "undefined" &amp;&amp; $.<span class="branch-0 cbranch-no" titl
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-07-31T16:52:18.650Z
+                at 2025-08-06T17:10:34.044Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
