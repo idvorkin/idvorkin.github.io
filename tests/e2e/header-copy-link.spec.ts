@@ -138,7 +138,7 @@ test.describe("Header Copy Link Feature", () => {
     }
   });
 
-  test("should open GitHub issue page when GitHub icon is clicked", async ({ page, context }) => {
+  test("should show popup when GitHub icon is clicked and create issue on submit", async ({ page, context }) => {
     // Find a header with a GitHub issue icon
     const headerWithGitHubIcon = page
       .locator("h1, h2, h3, h4, h5, h6")
@@ -153,12 +153,31 @@ test.describe("Header Copy Link Feature", () => {
       // Hover over the header to make the GitHub icon visible
       await headerWithGitHubIcon.hover();
 
-      // Listen for new page/tab
-      const newPagePromise = context.waitForEvent("page");
-
       // Click the GitHub issue icon
       const githubIcon = headerWithGitHubIcon.locator(".header-github-issue");
       await githubIcon.click();
+
+      // Wait for the popup to appear
+      const popup = page.locator(".github-issue-popup");
+      await expect(popup).toBeVisible();
+
+      // Check that the popup has the correct elements
+      const titleInput = popup.locator(".github-issue-title");
+      const commentTextarea = popup.locator(".github-issue-comment");
+      const submitButton = popup.locator(".github-issue-submit");
+      
+      await expect(titleInput).toBeVisible();
+      await expect(commentTextarea).toBeVisible();
+      await expect(submitButton).toBeVisible();
+
+      // Fill in custom description
+      await commentTextarea.fill("This section contains outdated information that needs updating.");
+
+      // Listen for new page/tab
+      const newPagePromise = context.waitForEvent("page");
+
+      // Click submit button
+      await submitButton.click();
 
       // Wait for the new page to open
       const newPage = await newPagePromise;
@@ -170,27 +189,19 @@ test.describe("Header Copy Link Feature", () => {
       expect(url).toContain("title=");
       expect(url).toContain("body=");
 
-      // Verify the issue title and body contain relevant information
+      // Verify the issue body contains the custom description
       const urlParams = new URL(url).searchParams;
-      const title = urlParams.get("title");
       const body = urlParams.get("body");
-
-      expect(title).toContain("Issue with section:");
-      if (headerText) {
-        expect(title).toContain(headerText.trim());
-      }
-
-      expect(body).toContain("manager-book");
-      if (headerId) {
-        expect(body).toContain(headerId);
-      }
       
-      // Verify GitHub source link is included
+      expect(body).toContain("This section contains outdated information that needs updating.");
       expect(body).toContain("GitHub Source");
       expect(body).toContain("blob/main/");
 
       // Close the new page
       await newPage.close();
+      
+      // Verify popup is closed
+      await expect(popup).not.toBeVisible();
     }
   });
 

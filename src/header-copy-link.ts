@@ -60,6 +60,82 @@ function createGitHubIssueIcon(): HTMLElement {
 }
 
 /**
+ * Creates an inline popup editor for adding comments
+ */
+function createIssuePopup(headerId: string, headerText: string): HTMLElement {
+  const popup = document.createElement("div");
+  popup.className = "github-issue-popup";
+  popup.style.display = "none";
+  
+  popup.innerHTML = `
+    <div class="github-issue-popup-content">
+      <div class="github-issue-popup-header">
+        <h4>Report Issue: ${headerText}</h4>
+        <button class="github-issue-popup-close" title="Close">×</button>
+      </div>
+      <div class="github-issue-popup-body">
+        <label for="issue-title-${headerId}">Issue Title:</label>
+        <input type="text" id="issue-title-${headerId}" class="github-issue-title" 
+               value="Issue with section: ${headerText}" />
+        
+        <label for="issue-comment-${headerId}">Description:</label>
+        <textarea id="issue-comment-${headerId}" class="github-issue-comment" 
+                  placeholder="Describe the issue with this section..." 
+                  rows="4"></textarea>
+        
+        <div class="github-issue-popup-buttons">
+          <button class="github-issue-submit">Create Issue on GitHub</button>
+          <button class="github-issue-cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+  `;
+  
+  return popup;
+}
+
+/**
+ * Shows the issue popup near the header
+ */
+function showIssuePopup(popup: HTMLElement, header: HTMLElement): void {
+  // Hide any other open popups
+  document.querySelectorAll(".github-issue-popup").forEach(p => {
+    (p as HTMLElement).style.display = "none";
+  });
+  
+  // Position the popup near the header
+  popup.style.display = "block";
+  popup.style.position = "absolute";
+  popup.style.zIndex = "1000";
+  
+  // Get header position
+  const rect = header.getBoundingClientRect();
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+  
+  popup.style.top = (rect.bottom + scrollTop + 10) + "px";
+  popup.style.left = (rect.left + scrollLeft) + "px";
+  
+  // Focus on the textarea
+  const textarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;
+  if (textarea) {
+    textarea.focus();
+  }
+}
+
+/**
+ * Hides the issue popup
+ */
+function hideIssuePopup(popup: HTMLElement): void {
+  popup.style.display = "none";
+  // Clear the textarea
+  const textarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;
+  if (textarea) {
+    textarea.value = "";
+  }
+}
+
+/**
  * Shows a temporary tooltip indicating the link was copied
  */
 function showCopiedTooltip(element: HTMLElement, duration = 2000): void {
@@ -175,9 +251,14 @@ function getOrCreateHeaderId(header: HTMLElement): string {
 }
 
 /**
- * Creates a GitHub issue URL for a section
+ * Creates a GitHub issue URL for a section with optional custom title and description
  */
-function createGitHubIssueUrl(headerId: string, headerText: string): string {
+function createGitHubIssueUrl(
+  headerId: string, 
+  headerText: string, 
+  customTitle?: string, 
+  customDescription?: string
+): string {
   // Get the current page path from the URL
   const pathname = window.location.pathname;
   // Remove leading slash and .html extension if present
@@ -189,7 +270,9 @@ function createGitHubIssueUrl(headerId: string, headerText: string): string {
   
   // Construct the GitHub issue URL
   const repoUrl = "https://github.com/idvorkin/idvorkin.github.io";
-  const issueTitle = encodeURIComponent(`Issue with section: ${headerText}`);
+  const issueTitle = encodeURIComponent(customTitle || `Issue with section: ${headerText}`);
+  
+  const description = customDescription || "Please describe the issue with this section:";
   const issueBody = encodeURIComponent(
     `## Issue Location\n\n` +
     `- **Page**: ${pagePath || "index"}\n` +
@@ -198,7 +281,7 @@ function createGitHubIssueUrl(headerId: string, headerText: string): string {
     `- **Live Link**: https://idvorkin.azurewebsites.net/${pagePath}/${headerId}\n` +
     `- **GitHub Source**: ${repoUrl}/blob/main/${sourceFile}#${headerId}\n\n` +
     `## Description\n\n` +
-    `Please describe the issue with this section:\n\n`
+    `${description}\n\n`
   );
   
   return `${repoUrl}/issues/new?title=${issueTitle}&body=${issueBody}`;
@@ -227,14 +310,52 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
     showCopiedTooltip(copyIcon, options.tooltipDuration);
   });
 
-  // Add click handler for GitHub issue
+  // Create the popup for this header
+  const popup = createIssuePopup(headerId, header.textContent || "");
+  document.body.appendChild(popup);
+  
+  // Add click handler for GitHub issue icon to show popup
   githubIcon.addEventListener("click", (event) => {
     event.preventDefault();
     event.stopPropagation();
-
-    const headerText = header.textContent || "";
-    const issueUrl = createGitHubIssueUrl(headerId, headerText);
-    window.open(issueUrl, "_blank");
+    
+    showIssuePopup(popup, header);
+  });
+  
+  // Handle popup close button
+  const closeBtn = popup.querySelector(".github-issue-popup-close");
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => hideIssuePopup(popup));
+  }
+  
+  // Handle cancel button
+  const cancelBtn = popup.querySelector(".github-issue-cancel");
+  if (cancelBtn) {
+    cancelBtn.addEventListener("click", () => hideIssuePopup(popup));
+  }
+  
+  // Handle submit button
+  const submitBtn = popup.querySelector(".github-issue-submit");
+  if (submitBtn) {
+    submitBtn.addEventListener("click", () => {
+      const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;
+      const commentTextarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;
+      
+      const customTitle = titleInput?.value || `Issue with section: ${header.textContent}`;
+      const customDescription = commentTextarea?.value || "";
+      
+      const issueUrl = createGitHubIssueUrl(headerId, header.textContent || "", customTitle, customDescription);
+      window.open(issueUrl, "_blank");
+      
+      hideIssuePopup(popup);
+    });
+  }
+  
+  // Close popup when clicking outside
+  document.addEventListener("click", (event) => {
+    if (!popup.contains(event.target as Node) && event.target !== githubIcon && !githubIcon.contains(event.target as Node)) {
+      hideIssuePopup(popup);
+    }
   });
 
   // Append the icons to the header
@@ -320,6 +441,136 @@ export function addHeaderCopyLinkStyles(): void {
     /* Ensure headers have relative positioning for tooltip placement */
     h1, h2, h3, h4, h5, h6 {
       position: relative;
+    }
+    
+    /* GitHub Issue Popup Styles */
+    .github-issue-popup {
+      position: absolute;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      width: 400px;
+      max-width: 90vw;
+      z-index: 1000;
+    }
+    
+    .github-issue-popup-content {
+      padding: 0;
+    }
+    
+    .github-issue-popup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      background: #f6f8fa;
+      border-bottom: 1px solid #e1e4e8;
+      border-radius: 8px 8px 0 0;
+    }
+    
+    .github-issue-popup-header h4 {
+      margin: 0;
+      font-size: 14px;
+      color: #24292e;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 350px;
+    }
+    
+    .github-issue-popup-close {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #586069;
+      cursor: pointer;
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .github-issue-popup-close:hover {
+      color: #24292e;
+    }
+    
+    .github-issue-popup-body {
+      padding: 16px;
+    }
+    
+    .github-issue-popup-body label {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #24292e;
+    }
+    
+    .github-issue-title,
+    .github-issue-comment {
+      width: 100%;
+      padding: 8px 12px;
+      margin-bottom: 12px;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      box-sizing: border-box;
+    }
+    
+    .github-issue-title:focus,
+    .github-issue-comment:focus {
+      outline: none;
+      border-color: #0366d6;
+      box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+    }
+    
+    .github-issue-comment {
+      resize: vertical;
+      min-height: 80px;
+    }
+    
+    .github-issue-popup-buttons {
+      display: flex;
+      gap: 8px;
+      justify-content: flex-end;
+      margin-top: 12px;
+    }
+    
+    .github-issue-submit,
+    .github-issue-cancel {
+      padding: 6px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid;
+      transition: all 0.2s;
+    }
+    
+    .github-issue-submit {
+      background: #2ea44f;
+      color: white;
+      border-color: #2ea44f;
+    }
+    
+    .github-issue-submit:hover {
+      background: #2c974b;
+      border-color: #2c974b;
+    }
+    
+    .github-issue-cancel {
+      background: #fafbfc;
+      color: #24292e;
+      border-color: #e1e4e8;
+    }
+    
+    .github-issue-cancel:hover {
+      background: #f3f4f6;
+      border-color: #c9ced1;
     }
   `;
 

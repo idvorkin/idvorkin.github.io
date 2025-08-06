@@ -5,13 +5,18 @@ const mockDocument = {
   createElement: vi.fn(),
   getElementById: vi.fn(),
   querySelector: vi.fn(),
+  querySelectorAll: vi.fn(() => []),
   head: {
     appendChild: vi.fn(),
   },
   readyState: "complete",
   addEventListener: vi.fn(),
   body: {
+    appendChild: vi.fn(),
     querySelectorAll: vi.fn(() => []),
+  },
+  documentElement: {
+    scrollTop: 0,
   },
 };
 
@@ -26,6 +31,8 @@ const mockWindow = {
     },
   },
   document: mockDocument,
+  pageYOffset: 0,
+  pageXOffset: 0,
 };
 
 // Mock globals - using type assertions for test environment
@@ -49,6 +56,14 @@ function createMockHeader(id: string, textContent: string) {
     appendChild: vi.fn(),
     addEventListener: vi.fn(),
     querySelector: vi.fn(() => null),
+    getBoundingClientRect: vi.fn(() => ({
+      bottom: 100,
+      left: 50,
+      right: 200,
+      top: 80,
+      width: 150,
+      height: 20,
+    })),
   };
 }
 
@@ -511,7 +526,7 @@ describe("Header Copy Link", () => {
       expect(githubIcon?.title).toBe("Create GitHub issue for this section");
     });
 
-    it("should open GitHub issue URL when GitHub icon is clicked", () => {
+    it("should show popup when GitHub icon is clicked", () => {
       const mockOpen = vi.fn();
       (globalThis as any).window.open = mockOpen;
       
@@ -572,19 +587,125 @@ describe("Header Copy Link", () => {
           preventDefault: vi.fn(),
           stopPropagation: vi.fn(),
         };
+        
+        // Mock body.appendChild for popup
+        const mockBodyAppendChild = vi.fn();
+        mockDocument.body.appendChild = mockBodyAppendChild;
+        
         githubIconClickHandler(mockEvent);
         
-        // Should open a new window with GitHub issue URL
+        // Should create and show a popup instead of immediately opening GitHub
+        expect(mockOpen).not.toHaveBeenCalled();
+        
+        // Verify popup was created
+        const createdElements = mockDocument.createElement.mock.results
+          .filter(result => result.value.className === "github-issue-popup")
+          .map(result => result.value);
+        
+        expect(createdElements.length).toBeGreaterThan(0);
+      }
+    });
+
+    it("should open GitHub issue with custom description when popup is submitted", () => {
+      const mockOpen = vi.fn();
+      (globalThis as any).window.open = mockOpen;
+      
+      // Mock the meta tag for source file path
+      mockDocument.querySelector.mockImplementation((selector: string) => {
+        if (selector === 'meta[property="markdown-path"]') {
+          return {
+            getAttribute: (attr: string) => attr === "content" ? "_d/manager-book.md" : null
+          };
+        }
+        return null;
+      });
+      
+      // Mock document.body.appendChild
+      mockDocument.body.appendChild = vi.fn();
+      
+      const mockHeader = createMockHeader("test-header", "Test Header");
+      mockHeader.querySelector = vi.fn(() => null);
+      
+      // Track popup element and its submit handler
+      let popupElement: any = null;
+      let submitHandler: Function | null = null;
+      
+      mockDocument.createElement.mockImplementation((tagName: string) => {
+        const element: any = {
+          tagName: tagName.toUpperCase(),
+          className: "",
+          innerHTML: "",
+          title: "",
+          style: {},
+          appendChild: vi.fn(),
+          addEventListener: vi.fn((event: string, handler: Function) => {
+            if (element.className === "github-issue-submit" && event === "click") {
+              submitHandler = handler;
+            }
+          }),
+          textContent: "",
+          id: "",
+          querySelector: vi.fn((selector: string) => {
+            if (selector === ".github-issue-title") {
+              return { value: "Custom issue title" };
+            }
+            if (selector === ".github-issue-comment") {
+              return { value: "This section has an error in the code example" };
+            }
+            if (selector === ".github-issue-submit" && popupElement) {
+              return element;
+            }
+            return null;
+          }),
+          parentElement: {
+            appendChild: vi.fn(),
+          },
+        };
+        
+        if (tagName === "div" && !popupElement) {
+          popupElement = element;
+        }
+        
+        return element;
+      });
+      
+      const mockContainer = {
+        querySelectorAll: vi.fn(() => [mockHeader]),
+      };
+
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "header-copy-link-styles") return null;
+        if (id === "content-holder") return mockContainer;
+        return null;
+      });
+
+      initHeaderCopyLinks();
+      
+      // Simulate form submission in popup
+      if (submitHandler && popupElement) {
+        // Mock the popup querySelector to return input values
+        popupElement.querySelector = vi.fn((selector: string) => {
+          if (selector === ".github-issue-title") {
+            return { value: "Custom issue title" };
+          }
+          if (selector === ".github-issue-comment") {
+            return { value: "This section has an error in the code example" };
+          }
+          return null;
+        });
+        
+        submitHandler();
+        
+        // Should open GitHub with custom title and description
         expect(mockOpen).toHaveBeenCalledWith(
           expect.stringContaining("github.com/idvorkin/idvorkin.github.io/issues/new"),
           "_blank"
         );
         
-        // Verify the URL contains the GitHub source link in the body
         const urlCall = mockOpen.mock.calls[0][0];
         const decodedUrl = decodeURIComponent(urlCall);
-        expect(decodedUrl).toContain("GitHub Source");
-        expect(decodedUrl).toContain("blob/main/_d/manager-book.md#test-header");
+        expect(decodedUrl).toContain("Custom issue title");
+        expect(decodedUrl).toContain("This section has an error in the code example");
       }
     });
   });
