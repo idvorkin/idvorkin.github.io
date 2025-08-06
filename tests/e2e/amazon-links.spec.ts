@@ -116,7 +116,7 @@ test.describe("Amazon affiliate links", () => {
 
   test("should handle multiple ASINs in one include", async ({ page }) => {
     // Navigate to machine learning page which has multiple ASINs
-    await page.goto("/machine-learning");
+    await page.goto("/machine-learning", { waitUntil: "networkidle" });
 
     // Find Amazon links
     const amazonLinks = page.locator("a[href*='amazon.com/dp/']");

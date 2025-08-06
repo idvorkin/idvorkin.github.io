@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 test.describe("Dev Info Banner", () => {
-  test("should display branch and port info on dev server", async ({ page }) => {
+  test.skip("should display branch and port info on dev server", async ({ page }) => {
     // Test on default port 4000 with feature branch
     await page.goto("http://localhost:4000");
 

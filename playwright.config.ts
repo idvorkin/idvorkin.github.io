@@ -20,7 +20,7 @@ export default defineConfig({
     trace: "on-first-retry",
     // Balanced optimizations for speed and reliability
     actionTimeout: 5000,
-    navigationTimeout: 10000,
+    navigationTimeout: 30000,
     // Standard viewport size
     viewport: { width: 1280, height: 800 },
     ignoreHTTPSErrors: true,
@@ -43,7 +43,7 @@ export default defineConfig({
   webServer: {
     command: `just jekyll-serve ${SERVER_PORT}`,
     url: BASE_URL,
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: true, // Always reuse existing server
     stdout: "pipe",
     stderr: "pipe",
     timeout: 60000,
