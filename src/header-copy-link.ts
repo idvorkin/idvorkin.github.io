@@ -324,9 +324,10 @@ function createGitHubIssueUrl(
     `## Description\n\n` +
     `${description}\n\n`;
   
-  // Add first paragraph if available
+  // Add content excerpt with section heading if available
   if (firstParagraph) {
     issueBodyContent += `## Content Excerpt\n\n` +
+      `#### ${headerText}\n\n` +
       `> ${firstParagraph}\n\n`;
   }
   

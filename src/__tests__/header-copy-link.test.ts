@@ -819,8 +819,9 @@ describe("Header Copy Link", () => {
         const urlCall = mockOpen.mock.calls[0][0];
         const decodedUrl = decodeURIComponent(urlCall);
         
-        // Should still have content excerpt
+        // Should still have content excerpt with section heading
         expect(decodedUrl).toContain("## Content Excerpt");
+        expect(decodedUrl).toContain("#### Test Section");
         expect(decodedUrl).toContain("This is the first paragraph after the header");
       }
     });
@@ -912,8 +913,9 @@ describe("Header Copy Link", () => {
         const urlCall = mockOpen.mock.calls[0][0];
         const decodedUrl = decodeURIComponent(urlCall);
         
-        // Should have truncated content with ellipsis
+        // Should have truncated content with ellipsis and section heading
         expect(decodedUrl).toContain("## Content Excerpt");
+        expect(decodedUrl).toContain("#### Long Section");
         expect(decodedUrl).toContain("...");
         
         // Extract the content excerpt from the URL
@@ -1021,6 +1023,7 @@ describe("Header Copy Link", () => {
         
         // Should skip empty paragraph and use the one with content
         expect(decodedUrl).toContain("## Content Excerpt");
+        expect(decodedUrl).toContain("#### Test Section");
         expect(decodedUrl).toContain("This is the actual content paragraph");
         expect(decodedUrl).not.toContain("   "); // Should not include the empty paragraph
       }
