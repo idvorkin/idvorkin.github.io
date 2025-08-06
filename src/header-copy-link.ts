@@ -254,25 +254,28 @@ function getOrCreateHeaderId(header: HTMLElement): string {
 }
 
 /**
- * Gets the first paragraph of content after a header
+ * Gets the first non-empty paragraph of content after a header
  */
 function getFirstParagraphAfterHeader(header: HTMLElement): string {
   let nextElement = header.nextElementSibling;
   
-  // Skip over any non-paragraph elements (like subheadings, lists, etc.)
-  while (nextElement && nextElement.tagName !== 'P') {
+  // Look for the first non-empty paragraph before the next header
+  while (nextElement) {
     // Stop if we hit another header
     if (nextElement.tagName.match(/^H[1-6]$/)) {
       break;
     }
+    
+    // Check if it's a paragraph with actual content
+    if (nextElement.tagName === 'P') {
+      const text = (nextElement.textContent || '').trim();
+      if (text.length > 0) {
+        // Found non-empty paragraph - truncate if too long
+        return text.length > 500 ? text.substring(0, 497) + '...' : text;
+      }
+    }
+    
     nextElement = nextElement.nextElementSibling;
-  }
-  
-  // If we found a paragraph, return its text content (truncated if too long)
-  if (nextElement && nextElement.tagName === 'P') {
-    const text = nextElement.textContent || '';
-    // Truncate to reasonable length for GitHub issue
-    return text.length > 500 ? text.substring(0, 497) + '...' : text;
   }
   
   return '';

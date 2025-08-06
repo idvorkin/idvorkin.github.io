@@ -716,6 +716,315 @@ describe("Header Copy Link", () => {
         expect(decodedUrl).toContain("This section has an error in the code example");
       }
     });
+
+    it("should include content excerpt when no custom description provided", () => {
+      const mockOpen = vi.fn();
+      (globalThis as any).window.open = mockOpen;
+      
+      // Mock the meta tag for source file path
+      mockDocument.querySelector.mockImplementation((selector: string) => {
+        if (selector === 'meta[property="markdown-path"]') {
+          return {
+            getAttribute: (attr: string) => attr === "content" ? "_d/test-page.md" : null
+          };
+        }
+        return null;
+      });
+      
+      // Mock document.body.appendChild
+      mockDocument.body.appendChild = vi.fn();
+      
+      // Create header with next paragraph element
+      const mockParagraph = {
+        tagName: 'P',
+        textContent: 'This is the first paragraph after the header with important content.',
+        nextElementSibling: null,
+      };
+      
+      const mockHeader = createMockHeader("test-section", "Test Section");
+      mockHeader.querySelector = vi.fn(() => null);
+      mockHeader.nextElementSibling = mockParagraph;
+      
+      let submitHandler: Function | null = null;
+      let popupElement: any = null;
+      
+      mockDocument.createElement.mockImplementation((tagName: string) => {
+        const element: any = {
+          tagName: tagName.toUpperCase(),
+          className: "",
+          innerHTML: "",
+          title: "",
+          style: {},
+          appendChild: vi.fn(),
+          addEventListener: vi.fn((event: string, handler: Function) => {
+            if (element.className === "github-issue-submit" && event === "click") {
+              submitHandler = handler;
+            }
+          }),
+          textContent: "",
+          id: "",
+          querySelector: vi.fn((selector: string) => {
+            if (selector === ".github-issue-title") {
+              return { value: "" }; // No custom title
+            }
+            if (selector === ".github-issue-comment") {
+              return { value: "" }; // No custom description
+            }
+            if (selector === ".github-issue-submit" && popupElement) {
+              return element;
+            }
+            return null;
+          }),
+          parentElement: {
+            appendChild: vi.fn(),
+          },
+        };
+        
+        if (tagName === "div" && !popupElement) {
+          popupElement = element;
+        }
+        
+        return element;
+      });
+      
+      const mockContainer = {
+        querySelectorAll: vi.fn(() => [mockHeader]),
+      };
+
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "header-copy-link-styles") return null;
+        if (id === "content-holder") return mockContainer;
+        return null;
+      });
+
+      initHeaderCopyLinks();
+      
+      // Simulate form submission with no custom input
+      if (submitHandler && popupElement) {
+        popupElement.querySelector = vi.fn((selector: string) => {
+          if (selector === ".github-issue-title") {
+            return { value: "" };
+          }
+          if (selector === ".github-issue-comment") {
+            return { value: "" };
+          }
+          return null;
+        });
+        
+        submitHandler();
+        
+        // Should open GitHub with content excerpt even without custom description
+        expect(mockOpen).toHaveBeenCalled();
+        
+        const urlCall = mockOpen.mock.calls[0][0];
+        const decodedUrl = decodeURIComponent(urlCall);
+        
+        // Should still have content excerpt
+        expect(decodedUrl).toContain("## Content Excerpt");
+        expect(decodedUrl).toContain("This is the first paragraph after the header");
+      }
+    });
+
+    it("should truncate long content excerpts to 500 characters", () => {
+      const mockOpen = vi.fn();
+      (globalThis as any).window.open = mockOpen;
+      
+      // Mock the meta tag
+      mockDocument.querySelector.mockImplementation((selector: string) => {
+        if (selector === 'meta[property="markdown-path"]') {
+          return {
+            getAttribute: (attr: string) => attr === "content" ? "long-content.md" : null
+          };
+        }
+        return null;
+      });
+      
+      mockDocument.body.appendChild = vi.fn();
+      
+      // Create a very long paragraph
+      const longText = "Lorem ipsum ".repeat(100); // Creates text longer than 500 chars
+      const mockParagraph = {
+        tagName: 'P',
+        textContent: longText,
+        nextElementSibling: null,
+      };
+      
+      const mockHeader = createMockHeader("long-section", "Long Section");
+      mockHeader.querySelector = vi.fn(() => null);
+      mockHeader.nextElementSibling = mockParagraph;
+      
+      let submitHandler: Function | null = null;
+      let popupElement: any = null;
+      
+      mockDocument.createElement.mockImplementation((tagName: string) => {
+        const element: any = {
+          tagName: tagName.toUpperCase(),
+          className: "",
+          innerHTML: "",
+          title: "",
+          style: {},
+          appendChild: vi.fn(),
+          addEventListener: vi.fn((event: string, handler: Function) => {
+            if (element.className === "github-issue-submit" && event === "click") {
+              submitHandler = handler;
+            }
+          }),
+          textContent: "",
+          id: "",
+          querySelector: vi.fn(() => null),
+          parentElement: {
+            appendChild: vi.fn(),
+          },
+        };
+        
+        if (tagName === "div" && !popupElement) {
+          popupElement = element;
+        }
+        
+        return element;
+      });
+      
+      const mockContainer = {
+        querySelectorAll: vi.fn(() => [mockHeader]),
+      };
+
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "header-copy-link-styles") return null;
+        if (id === "content-holder") return mockContainer;
+        return null;
+      });
+
+      initHeaderCopyLinks();
+      
+      if (submitHandler && popupElement) {
+        popupElement.querySelector = vi.fn((selector: string) => {
+          if (selector === ".github-issue-title") {
+            return { value: "Test" };
+          }
+          if (selector === ".github-issue-comment") {
+            return { value: "" };
+          }
+          return null;
+        });
+        
+        submitHandler();
+        
+        const urlCall = mockOpen.mock.calls[0][0];
+        const decodedUrl = decodeURIComponent(urlCall);
+        
+        // Should have truncated content with ellipsis
+        expect(decodedUrl).toContain("## Content Excerpt");
+        expect(decodedUrl).toContain("...");
+        
+        // Extract the content excerpt from the URL
+        const excerptMatch = decodedUrl.match(/## Content Excerpt\n\n> ([^\n]+)/);
+        if (excerptMatch) {
+          const excerpt = excerptMatch[1];
+          expect(excerpt.length).toBeLessThanOrEqual(500);
+        }
+      }
+    });
+
+    it("should skip empty paragraphs and find first non-empty one", () => {
+      const mockOpen = vi.fn();
+      (globalThis as any).window.open = mockOpen;
+      
+      // Mock the meta tag
+      mockDocument.querySelector.mockImplementation((selector: string) => {
+        if (selector === 'meta[property="markdown-path"]') {
+          return {
+            getAttribute: (attr: string) => attr === "content" ? "test.md" : null
+          };
+        }
+        return null;
+      });
+      
+      mockDocument.body.appendChild = vi.fn();
+      
+      // Create chain: header -> empty paragraph -> paragraph with content
+      const emptyParagraph = {
+        tagName: 'P',
+        textContent: '   ', // Just whitespace
+        nextElementSibling: null,
+      };
+      
+      const contentParagraph = {
+        tagName: 'P',
+        textContent: 'This is the actual content paragraph.',
+        nextElementSibling: null,
+      };
+      
+      emptyParagraph.nextElementSibling = contentParagraph;
+      
+      const mockHeader = createMockHeader("test-section", "Test Section");
+      mockHeader.querySelector = vi.fn(() => null);
+      mockHeader.nextElementSibling = emptyParagraph;
+      
+      let submitHandler: Function | null = null;
+      let popupElement: any = null;
+      
+      mockDocument.createElement.mockImplementation((tagName: string) => {
+        const element: any = {
+          tagName: tagName.toUpperCase(),
+          className: "",
+          innerHTML: "",
+          title: "",
+          style: {},
+          appendChild: vi.fn(),
+          addEventListener: vi.fn((event: string, handler: Function) => {
+            if (element.className === "github-issue-submit" && event === "click") {
+              submitHandler = handler;
+            }
+          }),
+          textContent: "",
+          id: "",
+          querySelector: vi.fn(() => null),
+          parentElement: {
+            appendChild: vi.fn(),
+          },
+        };
+        
+        if (tagName === "div" && !popupElement) {
+          popupElement = element;
+        }
+        
+        return element;
+      });
+      
+      const mockContainer = {
+        querySelectorAll: vi.fn(() => [mockHeader]),
+      };
+
+      mockDocument.getElementById.mockImplementation((id: string) => {
+        if (id === "header-copy-link-styles") return null;
+        if (id === "content-holder") return mockContainer;
+        return null;
+      });
+
+      initHeaderCopyLinks();
+      
+      if (submitHandler && popupElement) {
+        popupElement.querySelector = vi.fn((selector: string) => {
+          if (selector === ".github-issue-title") {
+            return { value: "Test" };
+          }
+          if (selector === ".github-issue-comment") {
+            return { value: "" };
+          }
+          return null;
+        });
+        
+        submitHandler();
+        
+        const urlCall = mockOpen.mock.calls[0][0];
+        const decodedUrl = decodeURIComponent(urlCall);
+        
+        // Should skip empty paragraph and use the one with content
+        expect(decodedUrl).toContain("## Content Excerpt");
+        expect(decodedUrl).toContain("This is the actual content paragraph");
+        expect(decodedUrl).not.toContain("   "); // Should not include the empty paragraph
+      }
+    });
   });
 });
 
