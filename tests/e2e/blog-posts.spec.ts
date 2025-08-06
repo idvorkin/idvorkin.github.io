@@ -19,7 +19,7 @@ test.describe("Blog post functionality", () => {
 
   test("Blog post page loads correctly", async ({ page }) => {
     // Navigate to a specific page instead of a blog post
-    await page.goto("/about");
+    await page.goto("/about", { waitUntil: "domcontentloaded", timeout: 30000 });
 
     // Check that the page has loaded by verifying some content
     await expect(page.locator("body")).toContainText("Igor");

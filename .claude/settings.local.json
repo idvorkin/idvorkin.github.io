@@ -58,7 +58,9 @@
       "mcp__github-server__add_issue_comment",
       "Bash(claude mcp add:*)",
       "Bash(git rebase:*)",
-      "Bash(osascript:*)"
+      "Bash(osascript:*)",
+      "Bash(builtin cd cc_main)",
+      "Bash(npm install)"
     ],
     "deny": []
   }

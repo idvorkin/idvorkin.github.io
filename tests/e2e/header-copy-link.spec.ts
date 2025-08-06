@@ -98,6 +98,125 @@ test.describe("Header Copy Link Feature", () => {
     }
   });
 
+  test("should add GitHub issue icons to headers", async ({ page }) => {
+    // Check that headers have GitHub issue icons
+    const headers = page.locator("h1, h2, h3, h4, h5, h6");
+    const headerCount = await headers.count();
+
+    if (headerCount > 0) {
+      // Check that at least one header has a GitHub issue icon
+      const githubIcons = page.locator(".header-github-issue");
+      const githubIconCount = await githubIcons.count();
+
+      expect(githubIconCount).toBeGreaterThan(0);
+      expect(githubIconCount).toBeLessThanOrEqual(headerCount);
+    }
+  });
+
+  test("should show both copy link and GitHub issue icons on hover", async ({ page }) => {
+    // Find a header
+    const header = page.locator("h1, h2, h3, h4, h5, h6").first();
+
+    if ((await header.count()) > 0) {
+      // Initially, icons should be hidden
+      const copyLink = header.locator(".header-copy-link");
+      const githubIcon = header.locator(".header-github-issue");
+
+      // Hover over the header
+      await header.hover();
+
+      // Both icons should be visible
+      await expect(copyLink).toBeVisible();
+      await expect(githubIcon).toBeVisible();
+
+      // Move away from header
+      await page.locator("body").hover({ position: { x: 0, y: 0 } });
+
+      // Icons should be hidden again
+      await expect(copyLink).not.toBeVisible();
+      await expect(githubIcon).not.toBeVisible();
+    }
+  });
+
+  test("should show popup when GitHub icon is clicked and create issue on submit", async ({ page, context }) => {
+    // Find a header with a GitHub issue icon
+    const headerWithGitHubIcon = page
+      .locator("h1, h2, h3, h4, h5, h6")
+      .filter({ has: page.locator(".header-github-issue") })
+      .first();
+
+    if ((await headerWithGitHubIcon.count()) > 0) {
+      // Get the header text and ID
+      const headerText = await headerWithGitHubIcon.textContent();
+      const headerId = await headerWithGitHubIcon.getAttribute("id");
+
+      // Hover over the header to make the GitHub icon visible
+      await headerWithGitHubIcon.hover();
+
+      // Click the GitHub issue icon
+      const githubIcon = headerWithGitHubIcon.locator(".header-github-issue");
+      await githubIcon.click();
+
+      // Wait for the popup to appear
+      const popup = page.locator(".github-issue-popup");
+      await expect(popup).toBeVisible();
+
+      // Check that the popup has the correct elements
+      const titleInput = popup.locator(".github-issue-title");
+      const commentTextarea = popup.locator(".github-issue-comment");
+      const submitButton = popup.locator(".github-issue-submit");
+      
+      await expect(titleInput).toBeVisible();
+      await expect(commentTextarea).toBeVisible();
+      await expect(submitButton).toBeVisible();
+
+      // Fill in custom title and description
+      await titleInput.clear();
+      await titleInput.fill("Outdated example code");
+      await commentTextarea.fill("This section contains outdated information that needs updating.");
+
+      // Listen for new page/tab
+      const newPagePromise = context.waitForEvent("page");
+
+      // Click submit button
+      await submitButton.click();
+
+      // Wait for the new page to open
+      const newPage = await newPagePromise;
+      await newPage.waitForLoadState();
+
+      // Verify the URL
+      const url = newPage.url();
+      expect(url).toContain("github.com/idvorkin/idvorkin.github.io/issues/new");
+      expect(url).toContain("title=");
+      expect(url).toContain("body=");
+
+      // Verify the issue title and body
+      const urlParams = new URL(url).searchParams;
+      const title = urlParams.get("title");
+      const body = urlParams.get("body");
+      
+      // Title should have format: page/section: custom title
+      expect(title).toContain("manager-book/");
+      expect(title).toContain("Outdated example code");
+      
+      // Location should be at the top as a single line
+      expect(body).toContain("📍");
+      expect(body).toContain("[[GitHub]]");
+      expect(body).not.toContain("[[Live]]");
+      
+      // Body should have description after location
+      expect(body).toContain("## Description");
+      expect(body).toContain("This section contains outdated information that needs updating.");
+
+      // Close the new page
+      await newPage.close();
+      
+      // Verify popup is closed
+      await expect(popup).not.toBeVisible();
+    }
+  });
+
   test("should handle multiple script loads without duplicating icons", async ({ page }) => {
     // This test simulates the scenario where the header copy link script
     // might be loaded multiple times (e.g., through dynamic content loading)
