@@ -119,10 +119,10 @@ function showIssuePopup(popup: HTMLElement, header: HTMLElement): void {
   popup.style.top = (rect.bottom + scrollTop + 10) + "px";
   popup.style.left = (rect.left + scrollLeft) + "px";
   
-  // Focus on the textarea
-  const textarea = popup.querySelector(".github-issue-comment") as HTMLTextAreaElement;
-  if (textarea) {
-    textarea.focus();
+  // Focus on the title input
+  const titleInput = popup.querySelector(".github-issue-title") as HTMLInputElement;
+  if (titleInput) {
+    titleInput.focus();
   }
 }
 
