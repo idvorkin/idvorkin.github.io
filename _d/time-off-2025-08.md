@@ -83,57 +83,83 @@ Five years ago, I dreamed of taking a year off of work - [a gap year](/igor-gap-
 
 ## By Week
 
-| Week Dates - People         | Activities                 | Notes                    |
+| Week Dates                 | Activities                 | Notes                    |
 | --------------------------- | -------------------------- | ------------------------ |
-| 1) July 21 - Zach           | [l1](l1)                   |                          |
-| 2) July 28 - Family         | [l2](l2)                   |                          |
-| 3) August 4 - Alone         | [l3](l3)                   | A at Farm; Z rowing      |
-| 4) August 11 - Alone        | TBD                        | A at Film Camp; Z Rowing |
-| 5) August 18 - Amelia       | TBD                        | Z Rowing                 |
-| 6) August 25 - Family       | TBD                        |                          |
-| DONE: Sept 4 - Back to Work | Back to Work/School Starts |                          |
+| July 28-Aug 3               | [l1](l1)                   | Decompression week       |
+| Aug 4-10                    | [l2](l2)                   | Tahuyu house; Z with friends |
+| Aug 11-17                   | [l3](l3)                   | Crater Lake trip         |
+| Aug 18-24                   | [l4](l4)                   | Long Beach vacation      |
+| Aug 25-31                   | [l5](l5)                   | Yellowstone & Grand Teton|
+| Sept 1-7                    | [l6](l6)                   | Back to work/school prep |
 
   <span>
-* l1
-* Astoria
-    * Super nice beach town
-    * **LEARN:** Didn't get a hotel room, super busy Saturday night, spent 300$ for crappy motel 6, many hours away
-* Coast
-  * Trees of Mystery
-  * Long nature walk
-  * Lighthouses
-* San Francisco
-  * City Hall - Zach LOVED it.
-  - ~Alcatraz~ - Sigh sold out
-  - Fisherman's Wharf - Mechano Museum
-  * Ride Trolleys
-  * Coit Tower
-* Foods of SF
-  - Cioppino
-  - Sourdough clam chowder bowl
-* MPK
-    * Lunches at 4 different cafeterias
-    * Crazy cool to see just how big it is
-    * Describing the org change in feudal structures
-    * E.g. Is VP of Messenger a Protectorate, or a Grand Duke
+- l1
+- Decompression and transition to time off
+  - Working Monday/Tuesday to wrap up
+  - Social connections and catching up
+    - Meet lots of friends
+    - Zach + Amelia to lunch together
+  - Creative content exploration
+    - Found 360 camera
+    - Made LOTS of TikToks
+    - Experimenting with new video formats
+  - Gentle transition from work mode to vacation mode
 
 <div></div>
 
 - l2
-- Long Beach
-  - Cheap Apartment like hotel, get 2 or 3 bedroom suite - [Coastal Inn](https://coastalinnhotel.com/accommodations)
-    - **LEARN:** Hotels can be better than AirBNB
-    - **LEARN:** Long Beach has car chargers at Adrift Hotel
-  - Beach Kettlebells
-    - Sad messed up adjustable mechanism
-    - Needed to dig ditches for my feet so they wouldn't slide off
+- Tahuyu house getaway
+  - Super nice house in Tahuyu
+  - **NOTE:** Zach was supposed to join but got invited to hang with his friends
+  - Solo relaxation and recharge time
+  - Explore the local area
+  - Reading and personal projects
 
 <div></div>
 
 - l3
-- Work - Give back Review
-  - Folks want to know if they got Promos
-  - BUT: I don't find out till today. So coming in to give back results
+- Crater Lake National Park trip
+  - Drive to Crater Lake
+  - Rim Drive scenic tour
+  - Hiking trails and viewpoints
+  - Photography of the lake
+  - Camping or lodge stay
+  - Solo nature immersion
+
+<div></div>
+
+- l4
+- Long Beach vacation
+  - Beach relaxation and activities
+  - Coastal hotel or apartment stay
+  - Beach walks and ocean time
+  - Local dining and exploration
+  - Family time by the water
+  - Photography and content creation
+
+<div></div>
+
+- l5
+- Yellowstone and Grand Teton National Parks
+  - Drive to Wyoming/Montana region
+  - Yellowstone geysers and hot springs
+  - Old Faithful and geyser basins
+  - Grand Teton mountain views
+  - Wildlife watching (bison, elk, bears)
+  - Family hiking and photography
+  - Lodge or camping accommodations
+
+<div></div>
+
+- l6
+- Back to work and school transition
+  - Labor Day weekend relaxation
+  - Back-to-school preparation for kids
+  - Work transition and planning
+  - Final documentation of summer memories
+  - Photo organization and sharing
+  - Gradual return to routine
+  - School supply finalization
 
 ## Stuff happening
 
