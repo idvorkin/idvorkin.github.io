@@ -1,0 +1,18 @@
+# Layer 4: Node.js and npm packages (Fast version using NodeSource)
+FROM claude-code:layer-03-dev AS nodejs-layer
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install Node.js from NodeSource (much faster, fewer dependencies)
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get install -y nodejs && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Install global npm packages (skip the heavy ones for now)
+RUN npm install -g \
+    typescript \
+    prettier
+
+# Save this layer
+FROM nodejs-layer AS layer-04-nodejs
