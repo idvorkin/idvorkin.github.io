@@ -1,0 +1,43 @@
+# Minimal working image for PR creation
+FROM claude-code:layer-02-git AS minimal
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Just the essentials for Jekyll blog and PR creation
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        vim \
+        nodejs \
+        npm \
+        python3 \
+        python3-pip \
+        ruby-full \
+        ruby-bundler \
+        jq \
+        && apt-get clean && \
+        rm -rf /var/lib/apt/lists/*
+
+# Install Jekyll
+RUN gem install jekyll bundler
+
+# Install minimal Node packages
+RUN npm install -g typescript prettier
+
+# Install minimal Python tools
+RUN pip3 install --break-system-packages black ruff
+
+# Switch to claude user
+USER claude
+WORKDIR /home/claude
+
+# Create directories
+RUN mkdir -p ~/.config ~/.ssh ~/scripts ~/.cache
+
+# Copy scripts
+COPY --chown=claude:claude scripts/entrypoint.sh /home/claude/scripts/entrypoint.sh
+RUN chmod +x /home/claude/scripts/entrypoint.sh
+
+WORKDIR /workspace
+
+ENTRYPOINT ["/home/claude/scripts/entrypoint.sh"]
+CMD ["/bin/bash"]

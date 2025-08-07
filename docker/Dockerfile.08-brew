@@ -1,0 +1,65 @@
+# Layer 8: Homebrew and packages
+FROM claude-code:layer-07-settings AS brew-layer
+
+# Install Homebrew dependencies first
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+        build-essential \
+        procps \
+        curl \
+        file \
+        git && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Switch to claude user for Homebrew installation
+USER claude
+WORKDIR /home/claude
+
+# Install Homebrew
+RUN /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/claude/.bashrc && \
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/claude/.profile
+
+# Set PATH for brew in current build
+ENV PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
+
+# Install essential tools via brew
+RUN brew install \
+    gh \
+    git \
+    tmux \
+    neovim \
+    ripgrep \
+    fd \
+    bat \
+    eza \
+    fzf \
+    jq \
+    yq \
+    just \
+    pre-commit \
+    ruff \
+    black \
+    uv \
+    pipx \
+    node \
+    prettier \
+    typescript
+
+# Install additional developer tools
+RUN brew install \
+    tig \
+    htop \
+    btop \
+    tldr \
+    zoxide \
+    starship \
+    direnv \
+    asdf
+
+# Switch back to root
+USER root
+
+# Save this layer
+FROM brew-layer AS layer-08-brew
