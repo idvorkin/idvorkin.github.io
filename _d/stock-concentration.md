@@ -18,8 +18,8 @@ When you work at a tech company and receive RSUs, it's easy to accidentally beco
 <strong>Tax Assumptions:</strong> All tax calculations in this guide assume married filing jointly and Washington State residency. Your actual rates will vary based on filing status, state of residence, and individual circumstances. Consult a tax professional for personalized advice.
 </div>
 
-<div class="alert alert-warning" role="alert">
-<strong>Coming Soon:</strong> Apologies that these tables and examples are so assumption-ridden. When I have some free time, I'll update this with a live calculator so you can plug in your actual numbers and get personalized results!
+<div class="alert alert-info" role="alert">
+<strong>Interactive Calculator:</strong> Use the <a href="https://tax-calculator-mu-nine.vercel.app/" target="_blank">Tax Calculator</a> to plug in your actual numbers and get personalized tax estimates for your specific situation!
 </div>
 
 <figure class="float-end w-50 ms-3 mb-3">
@@ -144,6 +144,10 @@ If long-term capital gains are your only income, you can use the standard deduct
 However, in practice, most people will have at least some dividend or interest income from fixed income positions (like bonds, CDs, or high-yield savings). These count toward your taxable income and reduce the amount of capital gains that can be taxed at the 0% rate. Be sure to include all sources of income when planning your withdrawals and tax strategy.
 
 The raw numbers - total taxes paid
+
+<div class="alert alert-success" role="alert">
+💡 <strong>Calculate your own scenario:</strong> Use the <a href="https://tax-calculator-mu-nine.vercel.app/" target="_blank">Tax Calculator</a> to see exactly how much tax you'd owe based on your income, filing status, and capital gains amount.
+</div>
 
 **Tax impact on capital gains at different income levels (selling $200K in Washington State):**
 
