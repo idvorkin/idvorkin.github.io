@@ -515,9 +515,9 @@
         "/anxiety-management",
         "/d/resistance",
         "/first-things-first",
+        "/gap-year-igor",
         "/happy",
         "/idle",
-        "/igor-gap-year",
         "/mental-pain",
         "/mind-at-work",
         "/productive",
@@ -556,7 +556,7 @@
       "doc_size": 22000,
       "file_path": "_site/affirmations.html",
       "incoming_links": [
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/mortality-software",
         "/operating-manual",
         "/process-journal"
@@ -587,7 +587,8 @@
       "doc_size": 26000,
       "file_path": "_site/ai.html",
       "incoming_links": [
-        "/ai-developer"
+        "/ai-developer",
+        "/gap-year-igor"
       ],
       "last_modified": "2025-05-19T09:09:26-07:00",
       "markdown_path": "_d/ai.md",
@@ -1217,7 +1218,7 @@
       "incoming_links": [
         "/42",
         "/gap-year",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/lonely",
         "/retire",
         "/y25"
@@ -1645,9 +1646,9 @@
         "/activation",
         "/d/resistance",
         "/energy-abundance",
+        "/gap-year-igor",
         "/hobby",
         "/idle",
-        "/igor-gap-year",
         "/life-as-business",
         "/manager-book",
         "/mind-at-work",
@@ -1692,7 +1693,7 @@
         "/first-things-first",
         "/frog",
         "/gap-year",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/mental-pain",
         "/parkinson",
         "/productive",
@@ -2193,7 +2194,7 @@
       "file_path": "_site/emotional-health.html",
       "incoming_links": [
         "/essentialism",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/irl",
         "/mania",
         "/mind-at-work",
@@ -2268,7 +2269,7 @@
         "/content-audience",
         "/d/resistance",
         "/elder",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/manager-book",
         "/productive",
         "/siy"
@@ -2565,7 +2566,7 @@
       "doc_size": 33000,
       "file_path": "_site/gap-year.html",
       "incoming_links": [
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/monetize",
         "/retire",
         "/stock-concentration"
@@ -2576,7 +2577,7 @@
         "/chapters",
         "/d/resistance",
         "/decisive",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/money",
         "/partner-trouble",
         "/physical-health",
@@ -2588,6 +2589,46 @@
       "redirect_url": "",
       "title": "The Gap Year Paradox: Why Taking a Year Off at 50 beats retiring at 65",
       "url": "/gap-year"
+    },
+    "/gap-year-igor": {
+      "description": "The gap year concept is compelling in theory, but what does it look like when rubber meets road? Here’s my real-time wrestling match with the dragons guarding this treasure of time, complete with all the messy financial calculations, identity crises, and voice-in-head battles that come with considering a year off at 50.\n\n",
+      "doc_size": 45000,
+      "file_path": "_site/gap-year-igor.html",
+      "incoming_links": [
+        "/gap-year",
+        "/stock-concentration",
+        "/time-off-2025-08"
+      ],
+      "last_modified": "2025-08-07T21:09:09-07:00",
+      "markdown_path": "_d/igor-gap-year.md",
+      "outgoing_links": [
+        "/addiction",
+        "/affirmations",
+        "/ai",
+        "/chapters",
+        "/d/habits",
+        "/d/resistance",
+        "/emotional-health",
+        "/end-in-mind",
+        "/gap-year",
+        "/kettlebell",
+        "/lonely",
+        "/money",
+        "/parkinson",
+        "/physical-health",
+        "/retire",
+        "/siy",
+        "/sleep",
+        "/stock-concentration",
+        "/sustainable-work",
+        "/timeoff",
+        "/voices",
+        "/y24",
+        "/y25"
+      ],
+      "redirect_url": "",
+      "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams at 50",
+      "url": "/gap-year-igor"
     },
     "/genai-talk": {
       "description": "Generative AI (GenAI) is taking the world by storm, and it takes a new mindset to make use of it as a programmer. A good mental model of GenAI is interns!\n\n",
@@ -2924,44 +2965,6 @@
       "title": "Your idle loop",
       "url": "/idle"
     },
-    "/igor-gap-year": {
-      "description": "The gap year concept is compelling in theory, but what does it look like when rubber meets road? Here’s my real-time wrestling match with the dragons guarding this treasure of time, complete with all the messy financial calculations, identity crises, and voice-in-head battles that come with considering a year off at 50.\n\n",
-      "doc_size": 42000,
-      "file_path": "_site/igor-gap-year.html",
-      "incoming_links": [
-        "/gap-year",
-        "/stock-concentration",
-        "/time-off-2025-08"
-      ],
-      "last_modified": "2025-08-04T16:30:01-07:00",
-      "markdown_path": "_d/igor-gap-year.md",
-      "outgoing_links": [
-        "/addiction",
-        "/affirmations",
-        "/chapters",
-        "/d/habits",
-        "/d/resistance",
-        "/emotional-health",
-        "/end-in-mind",
-        "/gap-year",
-        "/kettlebell",
-        "/lonely",
-        "/money",
-        "/parkinson",
-        "/physical-health",
-        "/retire",
-        "/siy",
-        "/sleep",
-        "/sustainable-work",
-        "/timeoff",
-        "/voices",
-        "/y24",
-        "/y25"
-      ],
-      "redirect_url": "",
-      "title": "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams at 50",
-      "url": "/igor-gap-year"
-    },
     "/insecure": {
       "description": "We all get it. Imposter syndrome, which includes shame\n\n",
       "doc_size": 14000,
@@ -3155,7 +3158,7 @@
       "file_path": "_site/kettlebell.html",
       "incoming_links": [
         "/eulogy",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/physical-health",
         "/timeoff",
         "/untangled",
@@ -3254,7 +3257,7 @@
       "doc_size": 43000,
       "file_path": "_site/lonely.html",
       "incoming_links": [
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/mental-pain"
       ],
       "last_modified": "2025-07-13T06:56:50-07:00",
@@ -3611,7 +3614,7 @@
       "incoming_links": [
         "/d/time-off-2020-03",
         "/gap-year",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/operating-manual",
         "/parkinson",
         "/retire",
@@ -3863,7 +3866,7 @@
       "file_path": "_site/parkinson.html",
       "incoming_links": [
         "/balance",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/manager-book-appendix",
         "/money",
         "/operating-manual",
@@ -3914,7 +3917,7 @@
         "/essentialism",
         "/eulogy",
         "/gap-year",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/irl",
         "/operating-manual",
         "/retire",
@@ -4251,7 +4254,7 @@
       "incoming_links": [
         "/42",
         "/gap-year",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/monetize",
         "/stock-concentration"
       ],
@@ -4431,8 +4434,8 @@
         "/emotional-health",
         "/eulogy",
         "/first-understand",
+        "/gap-year-igor",
         "/idle",
-        "/igor-gap-year",
         "/irl",
         "/mind-monsters",
         "/operating-manual",
@@ -4463,7 +4466,7 @@
       "file_path": "_site/sleep.html",
       "incoming_links": [
         "/energy",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/insomnia",
         "/physical-health"
       ],
@@ -4567,13 +4570,14 @@
       "doc_size": 37000,
       "file_path": "_site/stock-concentration.html",
       "incoming_links": [
+        "/gap-year-igor",
         "/money"
       ],
       "last_modified": "2025-08-06T17:27:12-07:00",
       "markdown_path": "_d/stock-concentration.md",
       "outgoing_links": [
         "/gap-year",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/money",
         "/retire"
       ],
@@ -4669,7 +4673,7 @@
         "/balance",
         "/being-a-great-manager",
         "/depression",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/overload",
         "/regrets",
         "/retire",
@@ -5208,8 +5212,8 @@
       "last_modified": "2025-08-06T16:12:51-07:00",
       "markdown_path": "_d/time-off-2025-08.md",
       "outgoing_links": [
+        "/gap-year-igor",
         "/happy",
-        "/igor-gap-year",
         "/moments",
         "/mood",
         "/terzepatie",
@@ -5251,7 +5255,7 @@
         "/energy",
         "/energy-abundance",
         "/gap-year",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/life-as-business",
         "/mind-at-work",
         "/parkinson",
@@ -5476,7 +5480,7 @@
         "/blueprint",
         "/depression",
         "/emotional-health",
-        "/igor-gap-year",
+        "/gap-year-igor",
         "/mind-monsters",
         "/operating-manual"
       ],
@@ -5667,7 +5671,7 @@
       "file_path": "_site/y24.html",
       "incoming_links": [
         "/gap-year",
-        "/igor-gap-year"
+        "/gap-year-igor"
       ],
       "last_modified": "2025-07-12T16:50:19-07:00",
       "markdown_path": "_d/y2024.md",
@@ -5693,7 +5697,7 @@
       "file_path": "_site/y25.html",
       "incoming_links": [
         "/gap-year",
-        "/igor-gap-year"
+        "/gap-year-igor"
       ],
       "last_modified": "2025-06-19T08:16:44-07:00",
       "markdown_path": "_d/y2025.md",

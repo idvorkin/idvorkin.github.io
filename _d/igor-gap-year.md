@@ -1,7 +1,7 @@
 ---
 title: "Will Igor Take a Gap Year? Wrestling with Dragons and Dreams at 50"
 layout: post
-permalink: /igor-gap-year
+permalink: /gap-year-igor
 imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-gapyear.webp
 tags:
   - personal

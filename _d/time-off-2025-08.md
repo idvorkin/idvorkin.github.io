@@ -74,9 +74,9 @@ Tori and I spent a lot of time on our relationship this year, and she's organize
 
 ### From 12 months to 6 weeks
 
-Five years ago, I dreamed of taking a year off of work - [a gap year](/igor-gap-year) if you will. I spent a lot of time thinking through a gap year, and it's more important then ever now that the kids are running out of time. But that's a separate blog post
+Five years ago, I dreamed of taking a year off of work - [a gap year](/gap-year-igor) if you will. I spent a lot of time thinking through a gap year, and it's more important then ever now that the kids are running out of time. But that's a separate blog post
 
-{%include summarize-page.html src="/igor-gap-year"%}
+{%include summarize-page.html src="/gap-year-igor"%}
 
 ## By Week
 

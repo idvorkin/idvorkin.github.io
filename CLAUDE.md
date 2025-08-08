@@ -69,9 +69,9 @@ When adding new features or fixing bugs, **always add both unit tests and e2e te
   ```bash
   # In worktree directory
   just jekyll-serve 4002 > /tmp/jekyll-worktree.log 2>&1 &
-  open http://localhost:4002/igor-gap-year
+  open http://localhost:4002/gap-year-igor
   # To jump to a specific section
-  open http://localhost:4002/igor-gap-year#battling-loneliness
+  open http://localhost:4002/gap-year-igor#battling-loneliness
   ```
 
 ## Git Commit Guidelines
