@@ -188,7 +188,7 @@ Gap year is scary, here are some guard rails to make it happen:
     - You are very confident in your expenses calculations (taxes, insurance, major house repairs, college)
 
 Extend-to-Year-2 rule:
-- If at month 10: health adherence ≥ 80%, 6+ artifacts shipped, and the 2× expenses + 5% replenishment rule holds, continue into Year 2; otherwise begin job search at month 11.
+- If at month 10: health adherence ≥ 80%, 6+ artifacts shipped, and the 2× expenses + 5% replenishment rule holds (i.e., you have at least two years of expenses in the bank, and at the one-year mark, your investments at a 5% return can replenish the next year's cash—see explanation above), continue into Year 2; otherwise begin job search at month 11.
 
 ## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
