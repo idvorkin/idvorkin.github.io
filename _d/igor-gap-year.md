@@ -26,7 +26,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [Igor's Financial Security Dragon](#igors-financial-security-dragon)
 - [Slaying Financial Security](#slaying-financial-security)
 - [Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)](#igors-decay-dragon-health-and-habits-physical-emotional-relationship)
-- [Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)](#slaying-decay---reframe-health-and-habits-capital-investment-physical-emotional-relationship)
+- [Slaying Decay - Health and Habits Investment](#slaying-decay---health-and-habits-investment)
 - [Battling Addiction](#battling-addiction)
   - [Addiction Success](#addiction-success)
 - [Battling Family Resentment](#battling-family-resentment)
@@ -36,7 +36,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [Battling Loneliness](#battling-loneliness)
   - [Loneliness Success](#loneliness-success)
 - [Igor's Identity Dragon](#igors-identity-dragon)
-- [Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR](#slaying-identity---reframe-phd-in-ai-content-creation-and-mrr)
+- [Slaying Identity - PhD in AI, Content, and MRR](#slaying-identity---phd-in-ai-content-and-mrr)
 - [Gap Year Pre-Mortem](#gap-year-pre-mortem)
 - [Gap Year Voices in my head](#gap-year-voices-in-my-head)
 
@@ -49,7 +49,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 
 {% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 
-When I started at Meta in March 2020 my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had 5 job offers include competitive offers from Google, Meta, and several mid sized companies. But today's job market is much much scarier than pre-COVID 2020 - it's become downright dicey out there.
+When I started at Meta in March 2020, my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had five job offers, including competitive offers from Google, Meta, and several mid-sized companies. But today's job market is much scarier than pre-COVID 2020 — it's become downright dicey out there.
 
 But there's more to life than collecting money, here are some what ifs I need to remember:
 
@@ -91,7 +91,7 @@ In Phase 3, I anticipate wanting to work extensively - but Phases 1 and 2 repres
 
 **Hey you're not talking about Tori, doesn't time with her matter?**
 
-It certainly does, but Tori needs her own time, and our relationship is set up where we don't need a tonne of time together.
+It certainly does, but Tori needs her own time, and our relationship is set up where we don't need a ton of time together.
 
 **What about travel?**
 
@@ -137,7 +137,7 @@ The dragons are the same size they've always been. The difference is now you're 
   - This is very probable.
   - **But** Meta lets you have a "short interview loop" if you boomerang in a year
   - **But** I've always said if you won't take a job for a pay cut, you shouldn't take it. I guess that could be cuz the job is less fun, or cuz it's the highest paid job you'll take :)
-  - **So** My retirement is not delayed by 1.5 years, It's delayed by 'N' years, that's OK, the year now is much more valuable
+  - **So** My retirement isn't delayed by 1.5 years; it's delayed by N years. That's acceptable because the year now is more valuable
 
 - What if I'm wrong about my expenses?
   - It's critical you get this right.
@@ -174,7 +174,7 @@ Gap year is scary, here are some guard rails to make it happen:
 
 * What are the actual dates and numbers?
 
-  - Well, a magician never reveals his tricks, and Igor's gotta have some secrets 🎩✨
+  - Well, a magician never reveals his tricks, and Igor's gotta have some secrets.
 
 * Come on, can you at least give a formula?
   - Have 2 years of expenses in the bank, if at the one year mark the market at 5% can replace the next year of cash, feel safe taking another gap year, else start a job hunt immediately
@@ -237,7 +237,7 @@ Gap year is scary, here are some guard rails to make it happen:
   - **But** I have mental health support systems (therapy, medication, practices) that would continue
   - **So** Keep existing mental health infrastructure in place throughout the gap year
 
-## Slaying Decay - Reframe: Health and Habits Capital Investment (Physical, Emotional, Relationship)
+## Slaying Decay - Health and Habits Investment
 
 This connects to my broader thinking on [physical health](/physical-health), [mental health](/emotional-health), and [relationship health](/chapters).
 
@@ -298,7 +298,7 @@ The real challenge isn't the quantity of time but learning to appreciate the qua
 - I embrace the bittersweet nature of watching them grow - sad they'll never be small again, but grateful they get to grow up
 - STRETCH: We pick up a multi-month project we do together
 
-**Successful parenting** ultimately means my children know, deep down, that I'm always there for them—quietly in the background, offering steady support without pressure, ready whenever they need me.
+**Successful parenting** ultimately means my children know, deep down, that I'm always there for them — quietly in the background, offering steady support without pressure, ready whenever they need me.
 
 ## Battling Loneliness
 
@@ -350,11 +350,11 @@ Mitigations:
 - **But** It can be about overcoming my fear and investing in myself and relationships
 - **So:** Reframe to be a PhD and A Year of [Health](/physical-health) and [Habits](/d/habits) Capital Investments
 
-## Slaying Identity - Reframe: PhD in AI, Content Creation, and MRR
+## Slaying Identity - PhD in AI, Content, and MRR
 
 This aligns with my approach to [continuous learning](/timeoff) and [overcoming resistance](/d/resistance) to change.
 
-Instead of thinking about it as a gap year (for which I'd feel guilty), I'll think about it as pursuing a "PhD in AI, Content Creation, and MRR" - focusing on my professional development. On the technical side, I'd become an AI expert by learning everything about the field [TODO: link to AI posts], while also mastering content creation and building monthly recurring revenue streams.
+Instead of thinking about it as a gap year (for which I'd feel guilty), I'll think about it as pursuing a "PhD in AI, Content Creation, and MRR" - focusing on my professional development. On the technical side, I'd become an AI expert by learning everything about the field (see my posts on [AI](/ai)), while also mastering content creation and building monthly recurring revenue streams.
 
 Creating artifacts is crucial - tangible outputs that prove the gap year was productive and provide lasting value. These artifacts serve as both motivation during the year, long term deposits in your relationship and health bank accounts, and career capital when returning to work.
 
@@ -375,7 +375,7 @@ Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
 Monthly recurring revenue? That would be pretty cool. Certainly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
 
-Will this actually slay the Financial Security Dragon? Let's be real - we're talking about pocket change compared to a tech salary. But hey, a man can dream of becoming the next MrBeast of gap year content! 🎬💰
+Will this actually slay the Financial Security Dragon? Let's be real - we're talking about pocket change compared to a tech salary. But hey, a man can dream of becoming the next MrBeast of gap year content!
 
 - Product artifacts: TBD
 - Revenue artifacts: Affiliate links? Course? Ad Revenue from Content? Who knows
@@ -385,7 +385,5 @@ Will this actually slay the Financial Security Dragon? Let's be real - we're tal
 In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I think this is another pivot on the dragons above
 
 ## Gap Year Voices in my head
-
-In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I think this is another pivot on the dragons above
 
 {%include summarize-page.html src="/voices"%}
