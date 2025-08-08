@@ -37,6 +37,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
   - [Loneliness Success](#loneliness-success)
 - [Igor's Identity Dragon](#igors-identity-dragon)
 - [Slaying Identity - PhD in AI, Content, and MRR](#slaying-identity---phd-in-ai-content-and-mrr)
+- [First 90 Days Plan](#first-90-days-plan)
 - [Gap Year Pre-Mortem](#gap-year-pre-mortem)
 - [Gap Year Voices in my head](#gap-year-voices-in-my-head)
 
@@ -183,6 +184,9 @@ Gap year is scary, here are some guard rails to make it happen:
     - You don't have any "large unexpected expenses" Ensure your model can handle that.
     - You are very confident in your expenses calculations (taxes, insurance, major house repairs, college)
 
+Extend-to-Year-2 rule:
+- If at month 10: health adherence ≥ 80%, 6+ artifacts shipped, and the 2× expenses + 5% replenishment rule holds, continue into Year 2; otherwise begin job search at month 11.
+
 ## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
 - What if I get lazy and lose all direction and discipline?
@@ -260,7 +264,10 @@ For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)
 
 ### Addiction Success
 
-- Limited screen time on social media
+- Max 30 minutes/day on social apps
+- Phone set to grayscale; app timers enforced
+- One "no-screen" block after 8pm daily
+- Weekly screen-time audit and reset
 
 ## Battling Family Resentment
 
@@ -282,8 +289,6 @@ The real challenge isn't the quantity of time but learning to appreciate the qua
 
 ### Family Success
 
-{% include alert.html content="This section needs more thinking, but gotta start somewhere" style="info" %}
-
 **Success looks like:**
 
 - **Nothing is more valuable than family** - the time spent together holds the greatest meaning
@@ -297,6 +302,10 @@ The real challenge isn't the quantity of time but learning to appreciate the qua
 - I find ways to be present without intruding (e.g., driving them and friends places, stepping back when peers join)
 - I embrace the bittersweet nature of watching them grow - sad they'll never be small again, but grateful they get to grow up
 - STRETCH: We pick up a multi-month project we do together
+- Metrics:
+  - Monthly 1:1 with each kid; weekly spontaneous-time log
+  - Weekly date night; monthly day date
+  - One shared project per quarter
 
 **Successful parenting** ultimately means my children know, deep down, that I'm always there for them — quietly in the background, offering steady support without pressure, ready whenever they need me.
 
@@ -342,6 +351,30 @@ Mitigations:
 - STRETCH: **Mentorship at scale** - Helping others with my time and experience
 - STRETCH: **Online community building** - Meeting interesting people on the internet
 
+Metrics:
+- Two recurring daytime social blocks per week
+- One new person/group per month
+- One quarterly daylong/retreat with a friend
+
+## First 90 Days Plan
+
+Daily cadence:
+- Exercise (kettlebell/strength + walk)
+- Writing block (artifact-focused)
+- Learning block (AI/skills)
+- Family time window
+- Evening walk and shutdown
+
+Weekly cadence:
+- Two social blocks (daytime)
+- One long-form artifact or ship a micro-app
+- One deep work block (3–4 hours, no meetings)
+- One admin/finance review
+
+Accountability:
+- Weekly review and plan
+- Share an artifact publicly or with a small circle
+
 ## Igor's Identity Dragon
 
 - Forget telling the future, what does taking a gap year say about me ?
@@ -360,9 +393,9 @@ Creating artifacts is crucial - tangible outputs that prove the gap year was pro
 
 **AI Goals/Artifacts**
 
-- Learning artifacts: Comprehensive AI knowledge base, experiment logs, model implementations
-- Several Apps written via AI, starting with PRDs
-- Content artifacts: AI tutorial series, technical blog posts, open source contributions
+- 12 PRDs, 6 shipped micro-apps
+- 12 technical posts, 4 talks/videos
+- Working notes repo for experiments/implementations
 
 **Content Creation Goals/Artifacts**
 
@@ -373,16 +406,25 @@ Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
 **MRR Goals/Artifacts**
 
-Monthly recurring revenue? That would be pretty cool. Certainly I get much higher MRR at Meta, but MRR is hopefully forever due to evergreen, or mostly evergreen content.
+Monthly recurring revenue would be nice, but likely modest vs. a tech salary.
 
-Will this actually slay the Financial Security Dragon? Let's be real - we're talking about pocket change compared to a tech salary. But hey, a man can dream of becoming the next MrBeast of gap year content!
-
-- Product artifacts: TBD
-- Revenue artifacts: Affiliate links? Course? Ad Revenue from Content? Who knows
+- Product: 1 paid template; 1 cohort workshop pilot
+- Revenue: Affiliate links; ad revenue experiments; course outline
 
 ## Gap Year Pre-Mortem
 
-In tech one of the tools we have to avoid failure is to run a pre-mortem, an exercise where we imagine we've failed, and how did it happen - I guess I should do this for a gap-year as well. I think this is another pivot on the dragons above
+Top failure modes and mitigations:
+
+- Drift/vegetating
+  - Mitigation: Daily plan + weekly review; external structure (trainer/classes)
+- Isolation/loneliness
+  - Mitigation: Pre-scheduled social slots; join clubs/classes; mentorship calendar
+- Scope creep on projects
+  - Mitigation: WIP limit (max two active projects); define “done” for each artifact
+- Cash anxiety
+  - Mitigation: Pre-fund 2× annual expenses; monthly runway update; rules in “Slaying Financial Security”
+- Family resentment
+  - Mitigation: Align expectations; time-window reality check; weekly gratitude log
 
 ## Gap Year Voices in my head
 
