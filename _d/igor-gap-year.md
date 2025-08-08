@@ -160,6 +160,9 @@ _If you're not gonna feel safe at 2 years \* your expenses, it's hard to imagine
 
 See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
 
+{% include summarize-page.html src="/money" %}
+{% include summarize-page.html src="/retire" %}
+
 Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and sets up future Igor to run on Automatic. So here are some rules
 
 Gap year is scary, here are some guard rails to make it happen:
