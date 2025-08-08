@@ -192,8 +192,7 @@ Gap year is scary, here are some guard rails to make it happen:
     - Model accommodates large unexpected expenses
     - Expenses estimate includes taxes, insurance, repairs, college
 
-Extend-to-Year-2 rule:
-- At month 10, extend if: health adherence ≥ 80%, 6+ artifacts shipped, and the 2× expenses + 5% replenishment condition holds; else begin job search at month 11.
+- **Extend-to-Year-2 rule**: At month 10, extend if: health adherence ≥ 80%, 6+ artifacts shipped, and the 2× expenses + 5% replenishment condition holds (i.e., you have at least two years of expenses in the bank, and at the one-year mark, your investments at a 5% return can replenish the next year's cash draw); else begin job search at month 11.
 
 ## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
@@ -272,7 +271,7 @@ For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)
 
 ### Addiction Success
 
-{% include alert.html content="This section is a work in progress; tracking metrics will evolve" style="info" %}
+{% include alert.html content="This is progress" style="info" %}
 
 - Max 30 minutes/day on social apps
 - Phone set to grayscale; app timers enforced
@@ -351,7 +350,7 @@ Mitigations:
 
 ### Loneliness Success
 
-{% include alert.html content="This section is a work in progress; cadence and metrics may change" style="info" %}
+{% include alert.html content="Note in progress" style="info" %}
 
 **Success looks like:**
 
@@ -435,7 +434,7 @@ Maybe no one will read/watch it but me and my Mom, but good enough for me.
 Monthly recurring revenue would be miniscule vs. a tech salary.
 
 - Product: 1 paid template; 1 cohort workshop pilot
-- Revenue: Affiliate links; ad revenue experiments (goal: $100/month after 6 months); course outline
+- Revenue: Affiliate links; ad revenue experiments (goal: $100/month after 6 months); course outline; analysis of the voices in my head on the topic
 
 ## Gap Year Pre-Mortem
 
