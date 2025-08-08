@@ -9,6 +9,10 @@ tags:
   - decision-making
   - life-planning
   - how igor ticks
+  - family
+  - health
+  - ai
+  - work-life-balance
 ---
 
 The gap year concept is compelling in theory, but what does it look like when rubber meets road? Here's my real-time wrestling match with the dragons guarding this treasure of time, complete with all the messy financial calculations, identity crises, and voice-in-head battles that come with considering a year off at 50.
