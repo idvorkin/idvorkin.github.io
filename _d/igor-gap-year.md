@@ -15,6 +15,8 @@ The gap year concept is compelling in theory, but what does it look like when ru
 
 This is the personal companion to my broader piece on [the gap year paradox](/gap-year) - where theory meets Igor's very specific neuroses and circumstances.
 
+{% include summarize-page.html src="/gap-year" %}
+
 {% include blob_image_float_right.html src="blog/raccoon-gapyear.webp" %}
 
 <!-- prettier-ignore-start -->
@@ -44,13 +46,13 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-{% include summarize-page.html src="/gap-year" %}
+
 
 ## Is Igor Gonna take a gap year?
 
 {% include alert.html content="I'm incredibly privileged to have both line of sight on savings and the support of my family to even consider a gap year" style="info" %}
 
-When I started at Meta in March 2020, my plan was to take a gap year after my Meta stock cliffed in 2024. After all, I had five job offers, including competitive offers from Google, Meta, and several mid-sized companies. But today's job market is much scarier than pre-COVID 2020 — it's become downright dicey out there.
+When I started at Meta in March 2020, my plan was to take a gap year after my Meta stock vested in 2024. After all, I had five job offers, including competitive offers from Google, Meta, and several mid-sized companies. But today's job market is much scarier than pre-COVID 2020 — it's become downright dicey out there.
 
 But there's more to life than collecting money, here are some what ifs I need to remember:
 
@@ -161,6 +163,7 @@ _If you're not gonna feel safe at 2 years \* your expenses, it's hard to imagine
 See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
 
 {% include summarize-page.html src="/money" %}
+
 {% include summarize-page.html src="/retire" %}
 
 Igor at his best when 5am Igor "[Begins with end in Mind](/end-in-mind)", and sets up future Igor to run on Automatic. So here are some rules
@@ -181,14 +184,15 @@ Gap year is scary, here are some guard rails to make it happen:
   - Well, a magician never reveals his tricks, and Igor's gotta have some secrets.
 
 * Come on, can you at least give a formula?
-  - Have 2 years of expenses in the bank, if at the one year mark the market at 5% can replace the next year of cash, feel safe taking another gap year, else start a job hunt immediately
-  - This makes for the following assumptions
-    - You can get a job (possibly making much less than you do now) in under a year
-    - You don't have any "large unexpected expenses" Ensure your model can handle that.
-    - You are very confident in your expenses calculations (taxes, insurance, major house repairs, college)
+  - Baseline: Hold 2× annual expenses in cash-like accounts
+  - At month 12: If a 5% market return would replenish the next year’s cash draw, extend; otherwise begin job search
+  - Assumptions:
+    - Job search duration ≤ 12 months (possibly at lower comp)
+    - Model accommodates large unexpected expenses
+    - Expenses estimate includes taxes, insurance, repairs, college
 
 Extend-to-Year-2 rule:
-- If at month 10: health adherence ≥ 80%, 6+ artifacts shipped, and the 2× expenses + 5% replenishment rule holds, continue into Year 2; otherwise begin job search at month 11.
+- At month 10, extend if: health adherence ≥ 80%, 6+ artifacts shipped, and the 2× expenses + 5% replenishment condition holds; else begin job search at month 11.
 
 ## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
@@ -294,17 +298,16 @@ The real challenge isn't the quantity of time but learning to appreciate the qua
 
 **Success looks like:**
 
-- **Nothing is more valuable than family** - the time spent together holds the greatest meaning
-- I'm **fully engaged and genuinely present**, free from work distractions and stress
-- **Being available for spontaneous moments** - not missing unexpected connections because of conflicting commitments
-- We spontaneously talk to each other
-- We hang out passively (e.g., we go to a coffee shop together and do our own thing)
-- We establish a consistent date night approach
-- I accept them as they are, but still strive to influence them respectfully
-- I gracefully accept that I'm rarely their first choice - their peer relationships are essential for growth
-- I find ways to be present without intruding (e.g., driving them and friends places, stepping back when peers join)
-- I embrace the bittersweet nature of watching them grow - sad they'll never be small again, but grateful they get to grow up
-- STRETCH: We pick up a multi-month project we do together
+- **Nothing is more valuable than family** – the time together holds the greatest meaning
+- Fully engaged and present (free from work distractions and stress)
+- Available for spontaneous moments (no conflicts blocking connection)
+- Natural conversation happens regularly
+- Passive hangouts (e.g., coffee shop together doing our own thing)
+- Consistent date night approach
+- Acceptance with gentle influence where appropriate
+- Gracefully step back when peers join; facilitate logistics (driving, hosting)
+- Embrace the bittersweet nature of their growth
+- STRETCH: Multi-month project we do together
 - Metrics:
   - Monthly 1:1 with each kid; weekly spontaneous-time log
   - Weekly date night; monthly day date
