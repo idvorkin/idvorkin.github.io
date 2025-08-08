@@ -42,6 +42,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [First 90 Days Plan](#first-90-days-plan)
 - [Gap Year Pre-Mortem](#gap-year-pre-mortem)
 - [Gap Year Voices in my head](#gap-year-voices-in-my-head)
+ - [Can 1 Be 2? The Extend-to-Year-2 Rule](#can-1-be-2-the-extend-to-year-2-rule)
  
 
 <!-- vim-markdown-toc-end -->
@@ -196,7 +197,7 @@ Gap year is scary, here are some guard rails to make it happen:
     - Model accommodates large unexpected expenses
     - Expenses estimate includes taxes, insurance, repairs, college
 
-- **Extend-to-Year-2 rule**: At month 10, extend if: health adherence ≥ 80%, 6+ artifacts shipped, and the 2× expenses + 5% replenishment condition holds (i.e., you have at least two years of expenses in the bank, and at the one-year mark, your investments at a 5% return can replenish the next year's cash draw); else begin job search at month 11.
+
 
 ## Igor's Decay Dragon: Health and Habits (Physical, Emotional, Relationship)
 
@@ -458,5 +459,23 @@ Top failure modes and mitigations (mapped to the dragons above):
 ## Gap Year Voices in my head
 
 {% include summarize-page.html src="/voices" %}
+
+## Can 1 Be 2? The Extend-to-Year-2 Rule
+
+At month 10, ask one question: can one year become two?
+
+Extend to Year 2 if ALL are true:
+
+- Health adherence ≥ 80% (sleep, workouts, nutrition, mental health cadence)
+- 6+ meaningful artifacts shipped (posts, micro-apps, talks, or equivalent)
+- Money check passes:
+  - You hold ≥ 2× annual expenses in cash-like accounts, and
+  - At the 12-month mark, a 5% portfolio return can replenish the next year’s draw
+
+Otherwise, use Year 2 as the pre-funded job-search runway: plan in months 10–11 and start the search at month 12.
+
+Why month 10?
+
+- Two months preserves optionality for a targeted search without panic and lets you prep materials before month 12.
 
 Closing thought: A gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the energy to enjoy the returns.
