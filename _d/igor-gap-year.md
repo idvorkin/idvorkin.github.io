@@ -115,6 +115,10 @@ These weren't lies or rationalizations. Work really does make it harder to maint
 
 But the gap year opens the box. Suddenly there's no meeting schedule to explain away poor health habits, no work exhaustion to buffer loneliness, no legitimate crisis to postpone difficult conversations with family. You need to create your own social connections, generate your own sense of urgency and purpose, and face your habits without the comfortable excuse of being legitimately exhausted.
 
+**The Parkinson's Law Dragon** is particularly vicious. At work, deadlines create artificial scarcity that forces efficiency. Without external constraints, tasks expand to fill available time - what should take 2 hours somehow takes all morning. This dragon whispers: "You have all day, so why rush?" The result: a slow drift into inefficiency that makes you feel simultaneously busy and unproductive. It's the worst kind of dragon because it makes you complicit in your own time theft.
+
+**The Financial Security Dragon** reveals itself differently during a gap year. When you had a steady paycheck, market fluctuations were abstract background noise - you weren't drawing from investments, so volatility didn't matter day-to-day. But during a gap year, every market dip feels personal because you're actually living off those investments. The dragon transforms the market from a distant abstraction into a daily anxiety generator, making you hyperaware of every percentage point change in your portfolio.
+
 The dragons are the same size they've always been. The difference is now you're face-to-face with them in an empty room, and the uncomfortable truth emerges: some of your struggles weren't actually about time or energy - they were about something deeper that work was helping you avoid.
 
 ## Igor's Financial Security Dragon
