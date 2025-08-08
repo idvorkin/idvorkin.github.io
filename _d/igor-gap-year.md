@@ -42,6 +42,7 @@ This is the personal companion to my broader piece on [the gap year paradox](/ga
 - [First 90 Days Plan](#first-90-days-plan)
 - [Gap Year Pre-Mortem](#gap-year-pre-mortem)
 - [Gap Year Voices in my head](#gap-year-voices-in-my-head)
+ 
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -267,7 +268,7 @@ You can probably look at my [2025 goals](/y25), which sadly look a lot like my [
 
 For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)) - it's social media. The endless scroll, the dopamine hits from notifications, the fear of missing out. During a gap year, without the structure of work, these digital sirens could easily consume entire days.
 
-{%include summarize-page.html src="/addiction"%}
+{% include summarize-page.html src="/addiction" %}
 
 ### Addiction Success
 
@@ -286,7 +287,7 @@ However, it’s important to be realistic.  There are two sources of family rese
 
 When I'm working, I only see my family in short bursts - mornings, evenings, weekends. But during a gap year, I'll be around all the time to observe their natural rhythms. Parkinson's law is very real: for kids and folks who aren't working, many things take longer than they could. What's worse is when I'm judging myself for being inefficient during my gap year (see [addiction](/addiction)) seeing the same patterns in my family bothers me even more. It's a mirror I don't always want to look into.
 
-{%include summarize-page.html src="/parkinson"%}
+{% include summarize-page.html src="/parkinson" %}
 
 ### The time investment mismatch
 
@@ -344,7 +345,7 @@ Mitigations:
     - Put the time to answer how that makes me feel
     - Weird but pretty interesting
 
-{%include summarize-page.html src="/lonely"%}
+{% include summarize-page.html src="/lonely" %}
 
 ### Loneliness Success
 
@@ -434,4 +435,4 @@ Top failure modes and mitigations:
 
 ## Gap Year Voices in my head
 
-{%include summarize-page.html src="/voices"%}
+{% include summarize-page.html src="/voices" %}
