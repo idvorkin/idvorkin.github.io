@@ -161,7 +161,7 @@ _If you're not gonna feel safe at 2 years \* your expenses, it's hard to imagine
 
 ## Slaying Financial Security
 
-See my full [money philosophy](/money) and [retirement planning](/retire) for context on these financial triggers.
+See my full [money philosophy](/money), [retirement planning](/retire), and [stock concentration](/stock-concentration) for context on these financial triggers.
 
 {% include summarize-page.html src="/money" %}
 
@@ -272,6 +272,8 @@ For me, addiction isn't about alcohol (I gave that up for better [sleep](/sleep)
 
 ### Addiction Success
 
+{% include alert.html content="This section is a work in progress; tracking metrics will evolve" style="info" %}
+
 - Max 30 minutes/day on social apps
 - Phone set to grayscale; app timers enforced
 - One "no-screen" block after 8pm daily
@@ -349,6 +351,8 @@ Mitigations:
 
 ### Loneliness Success
 
+{% include alert.html content="This section is a work in progress; cadence and metrics may change" style="info" %}
+
 **Success looks like:**
 
 - **Deepened existing friendships** - Regular scheduled time with retired/gap year friends
@@ -382,6 +386,21 @@ Accountability:
 - Weekly review and plan
 - Share an artifact publicly or with a small circle
 
+{% include alert.html content="This plan is iterative; reassessment cadence below will adjust details" style="info" %}
+
+## Reassessment and Exit Triggers
+
+Cadence:
+- Monthly review: health adherence, artifact shipping, cash runway
+- Quarterly retro: adjust goals, social cadence, project WIP
+
+Early exit triggers:
+- Health adherence < 50% for 2 consecutive months
+- Family stress rising (qualitative check-ins indicate sustained strain)
+- Cash buffer < 1.25× annual expenses or large unexpected expense without coverage
+
+If any trigger persists after one month of mitigation, begin job search protocol.
+
 ## Igor's Identity Dragon
 
 - Forget telling the future, what does taking a gap year say about me ?
@@ -413,14 +432,14 @@ Maybe no one will read/watch it but me and my Mom, but good enough for me.
 
 **MRR Goals/Artifacts**
 
-Monthly recurring revenue would be nice, but likely modest vs. a tech salary.
+Monthly recurring revenue would be miniscule vs. a tech salary.
 
 - Product: 1 paid template; 1 cohort workshop pilot
-- Revenue: Affiliate links; ad revenue experiments; course outline
+- Revenue: Affiliate links; ad revenue experiments (goal: $100/month after 6 months); course outline
 
 ## Gap Year Pre-Mortem
 
-Top failure modes and mitigations:
+Top failure modes and mitigations (mapped to the dragons above):
 
 - Drift/vegetating
   - Mitigation: Daily plan + weekly review; external structure (trainer/classes)
@@ -436,3 +455,5 @@ Top failure modes and mitigations:
 ## Gap Year Voices in my head
 
 {% include summarize-page.html src="/voices" %}
+
+Closing thought: A gap year isn’t a year off; it’s a year on — intentional investment in health, relationships, and mastery while you still have the energy to enjoy the returns.
