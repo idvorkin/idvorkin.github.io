@@ -17,6 +17,7 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
 - [Topic](#topic)
   - [Tori is organizing again](#tori-is-organizing-again)
   - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
+  - [The Great Monday Cat Visitation Protocol (Or: How We Became Slaves to Our Feline Overlords)](#the-great-monday-cat-visitation-protocol-or-how-we-became-slaves-to-our-feline-overlords)
 - [By Week](#by-week)
 - [Stuff happening](#stuff-happening)
   - [Candidates](#candidates)
@@ -77,6 +78,16 @@ Tori and I spent a lot of time on our relationship this year, and she's organize
 Five years ago, I dreamed of taking a year off of work - [a gap year](/gap-year-igor) if you will. I spent a lot of time thinking through a gap year, and it's more important then ever now that the kids are running out of time. But that's a separate blog post
 
 {%include summarize-page.html src="/gap-year-igor"%}
+
+### The Great Monday Cat Visitation Protocol (Or: How We Became Slaves to Our Feline Overlords)
+
+Here's the thing about not needing to travel far for adventures - we've discovered the ultimate travel hack: the Monday Cat Check-In System™. While normal people worry about boarding their pets or finding cat sitters, we've mastered the art of the strategic Monday return. Every single Monday, like clockwork, we trek back home to make sure our cats haven't staged a coup or figured out how to order DoorDash with our credit cards.
+
+It's actually perfect timing because we booked Zach and me for improv classes every Monday! Our teacher is this incredible person who started the local Saturday Night Live scene in Seattle back in the '90s. So now we've got this routine where we come home to check on the cats, who give us the most judgmental looks like "Oh, you're back AGAIN? We were just starting to enjoy the peace and quiet," and then we head off to learn how to be funny on command. 
+
+The cats have definitely noticed this pattern. I swear they've started scheduling their most dramatic behaviors for Sunday nights, knowing full well we'll be back Monday to witness whatever chaos they've orchestrated. Last Monday, they had somehow moved every single shoe in the house to the kitchen. Not chewed, not destroyed - just relocated with the precision of a logistics company. I'm pretty sure they're testing our commitment to this whole "coming back every Monday" thing.
+
+But honestly, this setup is genius. We get to go on adventures knowing that every Monday is guaranteed cat therapy day AND improv practice. It's like the universe conspired to give us the perfect excuse to have our cake and eat it too - or in this case, have our road trips and pet our cats too.
 
 ## By Week
 
