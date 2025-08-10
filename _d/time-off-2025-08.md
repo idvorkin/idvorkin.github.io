@@ -81,13 +81,26 @@ Five years ago, I dreamed of taking a year off of work - [a gap year](/gap-year-
 
 ### The Great Monday Cat Visitation Protocol (Or: How We Became Slaves to Our Feline Overlords)
 
-Here's the thing about not needing to travel far for adventures - we've discovered the ultimate travel hack: the Monday Cat Check-In System™. While normal people worry about boarding their pets or finding cat sitters, we've mastered the art of the strategic Monday return. Every single Monday, like clockwork, we trek back home to make sure our cats haven't staged a coup or figured out how to order DoorDash with our credit cards.
+**CHOOSE YOUR PREFERRED VERSION:**
 
-It's actually perfect timing because we booked Zach and me for improv classes every Monday! Our teacher is this incredible person who started the local Saturday Night Live scene in Seattle back in the '90s. So now we've got this routine where we come home to check on the cats, who give us the most judgmental looks like "Oh, you're back AGAIN? We were just starting to enjoy the peace and quiet," and then we head off to learn how to be funny on command. 
+**Option 1: Concise Version**
+We've mastered the Monday Cat Check-In System™ - instead of pet sitters, we just come back every Monday to make sure our cats haven't staged a coup. Perfect timing too, since we booked improv classes every Monday with a teacher who started Seattle's SNL scene in the '90s. The cats give us judgmental looks like "Oh, you're back AGAIN?" then we head off to learn comedy. They've definitely noticed the pattern and now schedule their most dramatic behaviors for Sunday nights. Last Monday: every shoe relocated to the kitchen with logistics-company precision. But honestly, guaranteed cat therapy AND improv practice? Genius setup.
 
-The cats have definitely noticed this pattern. I swear they've started scheduling their most dramatic behaviors for Sunday nights, knowing full well we'll be back Monday to witness whatever chaos they've orchestrated. Last Monday, they had somehow moved every single shoe in the house to the kitchen. Not chewed, not destroyed - just relocated with the precision of a logistics company. I'm pretty sure they're testing our commitment to this whole "coming back every Monday" thing.
+**Option 2: Balanced Version**
+We've discovered the ultimate travel hack: the Monday Cat Check-In System™. While normal people worry about pet boarding, we just return every Monday to ensure our cats haven't figured out DoorDash ordering. 
 
-But honestly, this setup is genius. We get to go on adventures knowing that every Monday is guaranteed cat therapy day AND improv practice. It's like the universe conspired to give us the perfect excuse to have our cake and eat it too - or in this case, have our road trips and pet our cats too.
+It's perfect timing because we booked Zach and me for Monday improv classes! Our teacher started the local SNL scene back in the '90s. So we've got this routine: come home to judgmental cat stares ("We were enjoying the peace and quiet"), then head off to learn comedy.
+
+The cats have definitely noticed this pattern. They now schedule dramatic behaviors for Sunday nights, knowing we'll witness Monday's chaos. Last week: every shoe mysteriously relocated to the kitchen with surgical precision. But guaranteed weekly cat therapy plus improv practice? The universe conspired perfectly.
+
+**Option 3: Streamlined Version**
+Here's our travel hack: the Monday Cat Check-In System™. Instead of pet sitters, we return every Monday to prevent feline coups and unauthorized DoorDash orders.
+
+Perfect timing since we booked Monday improv classes with a teacher from Seattle's '90s SNL scene. Our routine: check on judgmental cats ("Oh, you're back AGAIN?"), then learn to be funny on command.
+
+The cats have caught on, scheduling Sunday night drama for maximum Monday impact. Last week's chaos: every household shoe relocated to the kitchen like a logistics operation. I'm pretty sure they're testing our commitment.
+
+But honestly? Weekly guaranteed cat therapy AND comedy training while road-tripping? Pure genius.
 
 ## By Week
 
