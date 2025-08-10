@@ -17,6 +17,7 @@ To get the most out of my time off, I'm going to follow my best practice of pre-
 - [Topic](#topic)
   - [Tori is organizing again](#tori-is-organizing-again)
   - [From 12 months to 6 weeks](#from-12-months-to-6-weeks)
+  - [Monday Cat Check-ins and SNL Training](#monday-cat-check-ins-and-snl-training)
 - [By Week](#by-week)
 - [Stuff happening](#stuff-happening)
   - [Candidates](#candidates)
@@ -77,6 +78,10 @@ Tori and I spent a lot of time on our relationship this year, and she's organize
 Five years ago, I dreamed of taking a year off of work - [a gap year](/gap-year-igor) if you will. I spent a lot of time thinking through a gap year, and it's more important then ever now that the kids are running out of time. But that's a separate blog post
 
 {%include summarize-page.html src="/gap-year-igor"%}
+
+### Monday Cat Check-ins and SNL Training
+
+Perfect excuse for road trips: the cats require weekly status reports. Every Monday we're back home for improv class with Zach - our teacher literally started Seattle's SNL in the '90s. The cats have somehow scheduled their most dramatic antics for our Monday arrivals. Coincidence? Unlikely.
 
 ## By Week
 
