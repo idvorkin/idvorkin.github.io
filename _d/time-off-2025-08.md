@@ -81,26 +81,13 @@ Five years ago, I dreamed of taking a year off of work - [a gap year](/gap-year-
 
 ### The Great Monday Cat Visitation Protocol (Or: How We Became Slaves to Our Feline Overlords)
 
-**CHOOSE YOUR PREFERRED VERSION:**
-
-**Option 1: Concise Version**
-We've mastered the Monday Cat Check-In System™ - instead of pet sitters, we just come back every Monday to make sure our cats haven't staged a coup. Perfect timing too, since we booked improv classes every Monday with a teacher who started Seattle's SNL scene in the '90s. The cats give us judgmental looks like "Oh, you're back AGAIN?" then we head off to learn comedy. They've definitely noticed the pattern and now schedule their most dramatic behaviors for Sunday nights. Last Monday: every shoe relocated to the kitchen with logistics-company precision. But honestly, guaranteed cat therapy AND improv practice? Genius setup.
-
-**Option 2: Balanced Version**
-We've discovered the ultimate travel hack: the Monday Cat Check-In System™. While normal people worry about pet boarding, we just return every Monday to ensure our cats haven't figured out DoorDash ordering. 
-
-It's perfect timing because we booked Zach and me for Monday improv classes! Our teacher started the local SNL scene back in the '90s. So we've got this routine: come home to judgmental cat stares ("We were enjoying the peace and quiet"), then head off to learn comedy.
-
-The cats have definitely noticed this pattern. They now schedule dramatic behaviors for Sunday nights, knowing we'll witness Monday's chaos. Last week: every shoe mysteriously relocated to the kitchen with surgical precision. But guaranteed weekly cat therapy plus improv practice? The universe conspired perfectly.
-
-**Option 3: Streamlined Version**
 Here's our travel hack: the Monday Cat Check-In System™. Instead of pet sitters, we return every Monday to prevent feline coups and unauthorized DoorDash orders.
 
-Perfect timing since we booked Monday improv classes with a teacher from Seattle's '90s SNL scene. Our routine: check on judgmental cats ("Oh, you're back AGAIN?"), then learn to be funny on command.
+Perfect timing since we booked Monday improv classes with [Matt Smith](https://www.mattsmithimprov.com/), who helped establish Seattle's comedy scene in the '90s. Our routine: check on judgmental cats ("Oh, you're back AGAIN?"), then learn to be funny on command.
 
-The cats have caught on, scheduling Sunday night drama for maximum Monday impact. Last week's chaos: every household shoe relocated to the kitchen like a logistics operation. I'm pretty sure they're testing our commitment.
+The cats have caught on, scheduling Sunday night drama for maximum Monday impact. But instead of shoe logistics operations, we're more likely to find nature's surprises: a desiccated hummingbird artfully displayed on the welcome mat, or a beheaded rabbit positioned like modern art in the hallway. I'm pretty sure they're testing our commitment to this arrangement.
 
-But honestly? Weekly guaranteed cat therapy AND comedy training while road-tripping? Pure genius.
+But honestly? Weekly guaranteed animal discovery AND comedy training while road-tripping? Pure genius.
 
 ## By Week
 
