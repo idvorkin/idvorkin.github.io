@@ -69,7 +69,9 @@
       "Bash(./build-minimal.sh:*)",
       "Bash(brew info:*)",
       "Bash(./build-claude-debug.sh:*)",
-      "Bash(docker images:*)"
+      "Bash(docker images:*)",
+      "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/96)",
+      "Bash(git reset:*)"
     ],
     "deny": []
   }

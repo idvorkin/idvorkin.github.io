@@ -79,17 +79,26 @@ The `run-docker.sh` script automatically finds free ports. If default ports are 
 ## Claude CLI Integration
 
 The container includes a Claude wrapper that:
-- Automatically detects and mounts your local Claude CLI
-- Provides helpful messages if Claude isn't available
-- Works seamlessly when Claude is mounted
+- Automatically mounts your host's Claude CLI binary
+- Mounts your Claude credentials/config from host
+- Works seamlessly with your existing Claude authentication
+
+The script automatically mounts:
+- Claude binary from your host system
+- Claude config/credentials from:
+  - `~/.config/claude` (Linux/default)
+  - `~/Library/Application Support/claude` (macOS)
 
 To use Claude in the container:
 ```bash
-# The run-docker.sh script automatically mounts Claude if found
+# Ensure Claude is installed and authenticated on your host first
+claude  # On host - authenticate if needed
+
+# Then run the container
 ./run-docker.sh
 
-# Inside container
-claude  # Will work if Claude was found on host
+# Inside container, Claude will use your host credentials
+claude  # Works with your existing auth
 ```
 
 ## Environment Details
