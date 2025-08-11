@@ -19,7 +19,7 @@ permissions:
 
 env:
   CONTENT_DIRS_PATTERN: '^(_d/|_td/|_ig66/)'
-  BACKLINKS_FILE: 'backlinks.json'
+  BACKLINKS_FILE: 'back-links.json'
 
 jobs:
   update-backlinks:
