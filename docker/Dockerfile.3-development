@@ -7,6 +7,9 @@ FROM claude-docker:minimal
 USER developer
 WORKDIR /home/developer
 
+# Use bash for commands (zsh is at different location)
+SHELL ["/bin/bash", "-c"]
+
 # Add any development tools or experimental features here
 # Examples:
 # - Additional language servers for neovim
