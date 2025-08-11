@@ -1,0 +1,20 @@
+# Layer 5: Python with uv (ultra-fast Python package manager)
+FROM claude-code:layer-04-nodejs AS python-layer
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Python3 is already installed from Node.js layer
+# Install uv directly (much faster than pip)
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Set PATH for current build to include uv
+ENV PATH="/root/.local/bin:$PATH"
+
+# Install Python tools using uv (much faster than pip)
+RUN uv tool install ruff && \
+    uv tool install black && \
+    uv tool install pre-commit && \
+    uv tool install pipx
+
+# Save this layer
+FROM python-layer AS layer-05-python
