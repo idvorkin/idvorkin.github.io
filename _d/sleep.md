@@ -12,7 +12,7 @@ inprogress: true
 imagefeature: https://github.com/idvorkin/blob/raw/master/problem-size.png
 ---
 
-[Bryan Johnson](/blueprint) says sleep is like life on easy mode. He has lots to say on this, and it gets technical, and I think I agree:
+[Bryan Johnson](/blueprint) says sleep is like life on easy mode. He has lots to say on this, and it gets technical, and I think I agree. Quality sleep is essential for managing [anxiety](/anxiety) and maintaining good [energy](/energy) levels:
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
