@@ -9,7 +9,7 @@ redirect_from:
   - /anxious
 ---
 
-Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstances drawing your attention to a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over-triggered, and handled poorly without deliberate action. Managing anxiety is closely related to building good [habits](/habits) and maintaining [emotional health](/emotions).
+Anxiety is the difference between reality and expectations. It is the pain, while stress is the suffering. The pain of anxiety is designed for threatening circumstances drawing your attention to a problem requiring urgent attention. This narrows your perspective allowing you to focus on a resolution. However, like many autonomous systems anxiety can be over-triggered, and handled poorly without deliberate action. Managing anxiety is closely related to building good [habits](/habits) and maintaining [emotional health](/emotions). Some insights from [Seth Godin](/d/2016-2-15-Seth-Godin-Notes) and thoughts on [delegation](/d/2015-11-18-Outsourcing) have helped me manage anxiety better.
 
 <!-- prettier-ignore-start -->
 
