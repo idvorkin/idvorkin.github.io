@@ -44,7 +44,7 @@ jobs:
 
       - name: Build Jekyll site
         run: |
-          bundle exec jekyll build
+          bundle exec jekyll build --config _config.yml,_config_ci.yml
           echo "✅ Jekyll site built successfully"
 
       - name: Set up Python with uv
