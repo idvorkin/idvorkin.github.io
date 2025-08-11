@@ -14,8 +14,21 @@ WORKDIR /home/developer
 # - Development databases
 # - Additional programming language runtimes
 
-# Placeholder for future additions
-RUN echo "Development layer ready for future enhancements"
+# Set up Claude YOLO config for container environment (experimental)
+# This allows Claude to run without permission checks in the container
+RUN mkdir -p ~/.config/claude && \
+    echo '{\
+  "permissions": {\
+    "yolo": true,\
+    "allow": ["*"],\
+    "deny": []\
+  },\
+  "env": {\
+    "CLAUDE_MODE": "container",\
+    "CLAUDE_CONTAINER": "true"\
+  }\
+}' > ~/.config/claude/settings.json && \
+    echo "Claude configured in YOLO mode for container development"
 
 WORKDIR /home/developer/gits
-LABEL description="Development layer for future work"
+LABEL description="Development layer with Claude YOLO mode"

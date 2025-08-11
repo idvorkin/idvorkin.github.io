@@ -86,16 +86,27 @@ run_container() {
     [ -d ~/.ssh ] && DOCKER_CMD="$DOCKER_CMD -v ~/.ssh:/home/developer/.ssh:ro"
     
     # Mount Claude credentials if available
-    # Try multiple possible locations
-    if [ -d ~/.config/claude ]; then
-        DOCKER_CMD="$DOCKER_CMD -v ~/.config/claude:/home/developer/.config/claude"
-        echo -e "${GREEN}✓ Claude credentials mounted from ~/.config/claude${NC}"
-    elif [ -d "$HOME/Library/Application Support/claude" ]; then
-        # macOS location - mount to where Claude expects it in Linux
-        DOCKER_CMD="$DOCKER_CMD -v \"$HOME/Library/Application Support/claude\":/home/developer/.config/claude"
-        echo -e "${GREEN}✓ Claude credentials mounted from macOS${NC}"
+    # For dev layer, we'll use the container's YOLO settings but still need auth
+    if [ "$IMAGE" = "claude-docker:dev" ]; then
+        # Dev layer uses YOLO mode - only mount auth file
+        if [ -f ~/.config/claude/auth.json ]; then
+            DOCKER_CMD="$DOCKER_CMD -v ~/.config/claude/auth.json:/home/developer/.config/claude/auth.json:ro"
+            echo -e "${GREEN}✓ Claude auth mounted (YOLO mode)${NC}"
+        elif [ -f "$HOME/Library/Application Support/claude/auth.json" ]; then
+            DOCKER_CMD="$DOCKER_CMD -v \"$HOME/Library/Application Support/claude/auth.json\":/home/developer/.config/claude/auth.json:ro"
+            echo -e "${GREEN}✓ Claude auth mounted from macOS (YOLO mode)${NC}"
+        fi
     else
-        echo -e "${YELLOW}⚠ Claude credentials not found - will need to authenticate${NC}"
+        # Standard layers - mount full config directory
+        if [ -d ~/.config/claude ]; then
+            DOCKER_CMD="$DOCKER_CMD -v ~/.config/claude:/home/developer/.config/claude"
+            echo -e "${GREEN}✓ Claude credentials mounted from ~/.config/claude${NC}"
+        elif [ -d "$HOME/Library/Application Support/claude" ]; then
+            DOCKER_CMD="$DOCKER_CMD -v \"$HOME/Library/Application Support/claude\":/home/developer/.config/claude"
+            echo -e "${GREEN}✓ Claude credentials mounted from macOS${NC}"
+        else
+            echo -e "${YELLOW}⚠ Claude credentials not found - will need to authenticate${NC}"
+        fi
     fi
     
     # Environment variables
