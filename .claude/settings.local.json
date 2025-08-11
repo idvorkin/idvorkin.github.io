@@ -60,7 +60,16 @@
       "Bash(git rebase:*)",
       "Bash(osascript:*)",
       "Bash(builtin cd cc_main)",
-      "Bash(npm install)"
+      "Bash(npm install)",
+      "Bash(docker run:*)",
+      "Bash(./build-simple.sh:*)",
+      "Bash(./run-docker.sh:*)",
+      "Bash(docker system:*)",
+      "Bash(./build.sh)",
+      "Bash(./build-minimal.sh:*)",
+      "Bash(brew info:*)",
+      "Bash(./build-claude-debug.sh:*)",
+      "Bash(docker images:*)"
     ],
     "deny": []
   }

@@ -1,226 +1,187 @@
-# Claude Code Fast PR Container
+# Docker Development Environment
 
-A Docker container optimized for quickly spinning up isolated Claude Code environments for PR creation.
-
-## Quick Start
-
-### 1. Build the Image (one-time)
-
-```bash
-cd docker
-make build
-# or
-docker build -f Dockerfile.fast -t claude-code:fast .
-```
-
-### 2. Set up Environment
-
-```bash
-cp .env.example .env
-# Edit .env with your tokens:
-# - GITHUB_TOKEN
-# - ANTHROPIC_API_KEY
-```
-
-### 3. Start Working on a PR
-
-```bash
-# Option 1: Using make
-make pr BRANCH=fix-login-bug TITLE="Fix login validation issue"
-
-# Option 2: Using docker-compose
-BRANCH=fix-login-bug PR_TITLE="Fix login validation issue" docker-compose run --rm quick-pr
-
-# Option 3: Using the quick-claude script
-./scripts/quick-claude.sh new fix-login-bug "Fix login validation issue"
-```
-
-## Common Workflows
-
-### Interactive Shell
-```bash
-make shell
-# or
-docker-compose run --rm claude-pr
-```
-
-### Run Tests
-```bash
-make test
-# or
-docker-compose run --rm test
-```
-
-### Start Jekyll Server
-```bash
-make jekyll
-# or
-docker-compose run --rm --service-ports jekyll
-```
-
-### Run Claude Directly
-```bash
-docker-compose run --rm claude --help
-```
+A streamlined 2-layer Docker setup for the blog with Jekyll, Playwright, and development tools pre-configured.
 
 ## Features
 
-- **Fast Startup**: 2-3 seconds with everything pre-installed
-- **Automatic Branch Creation**: Creates and switches to feature branch
-- **GitHub Integration**: Pre-configured with gh CLI
-- **Development Tools**: All essential tools included
-  - Git, GitHub CLI
-  - Node.js, TypeScript, ESLint, Prettier
-  - Python, Black, Ruff
-  - Rust tools (ripgrep, fd, bat, eza)
-  - Jekyll for blog development
-- **Persistent Caches**: npm and cargo caches persist between runs
-- **Settings Integration**: Mounts your ~/settings directory
+- 🚀 **Jekyll ready** - Works on first boot with `just jekyll-serve`
+- 🎭 **Playwright installed** - E2E tests ready with `just e2e-test`
+- 🛠️ **Development tools** - All tools from settings repo via Homebrew
+- 📦 **Pre-cloned repos** - idvorkin.github.io and nlp ready to use
+- 🤖 **Claude CLI support** - Automatically mounts local Claude if available
+- 🔍 **Smart port finding** - Automatically finds free ports starting from 4000
 
-## Advanced Usage
-
-### Multiple Parallel PRs
+## Quick Start
 
 ```bash
-# Terminal 1
-make pr BRANCH=feature-1 TITLE="Add feature 1"
+# Build the Docker images (one-time, ~5 min)
+./build-minimal.sh
 
-# Terminal 2  
-make pr BRANCH=feature-2 TITLE="Add feature 2"
+# Run interactive container
+./run-docker.sh
 
-# List running containers
-make list
+# Run E2E tests
+./run-e2e-tests.sh
 ```
 
-### Custom Settings
-
-Mount your settings directory for personalized configs:
-
-```bash
-docker run -it --rm \
-  -v ~/settings:/home/claude/settings:ro \
-  -v $(pwd):/workspace \
-  claude-code:fast
-```
-
-### Install System-Wide Launcher
-
-```bash
-# Install the quick launcher
-sudo cp scripts/quick-claude.sh /usr/local/bin/claude-docker
-sudo chmod +x /usr/local/bin/claude-docker
-
-# Now use from anywhere
-cd ~/my-project
-claude-docker new fix-bug "Fix the bug"
-```
-
-## Container Commands
+## Inside the Container
 
 Once inside the container:
 
 ```bash
-# Git operations
-git status
-git add .
-git commit -m "Fix: resolve login issue"
-git push -u origin fix-login-bug
+# Start Jekyll server
+cd idvorkin.github.io
+just jekyll-serve   # or bundle exec jekyll serve --host 0.0.0.0
 
-# Create PR
-gh pr create --title "Fix login validation issue" --body "Fixes #123"
+# Run E2E tests
+just e2e-test
 
-# Run project commands
-just js-build
-just js-validate
+# Run unit tests
 just fast-test
-just jekyll-serve
 
-# Use tools
-rg "search term"       # ripgrep for fast searching
-fd "*.ts"             # find files
-bat file.ts           # view with syntax highlighting
-eza -la               # better ls
+# Use Claude (if mounted from host)
+claude
+
+# Use your tools
+bat file.ts         # view with syntax highlighting
+eza -la            # better ls
+rg "search term"   # ripgrep for fast searching
+fd "*.ts"          # find files
 ```
+
+## Architecture
+
+The setup uses a 2-layer approach for fast rebuilds:
+
+1. **Base layer** (`Dockerfile.1-base`) - Ubuntu 22.04 with Homebrew
+2. **Main layer** (`Dockerfile.2-stable-minimal`) - Settings, tools, Jekyll, and Playwright
+
+```
+docker/
+├── Dockerfile.1-base          # Base Ubuntu + Homebrew
+├── Dockerfile.2-stable-minimal # Development environment
+├── build-minimal.sh           # Build script
+├── run-docker.sh             # Run with auto port finding
+├── run-e2e-tests.sh          # E2E test runner
+└── README.md                 # This file
+```
+
+## Port Configuration
+
+The `run-docker.sh` script automatically finds free ports. If default ports are busy:
+
+```
+⚠ Using alternate ports:
+  Jekyll: http://localhost:4003 (instead of 4000)
+  LiveReload: 35730 (instead of 35729)
+```
+
+## Claude CLI Integration
+
+The container includes a Claude wrapper that:
+- Automatically detects and mounts your local Claude CLI
+- Provides helpful messages if Claude isn't available
+- Works seamlessly when Claude is mounted
+
+To use Claude in the container:
+```bash
+# The run-docker.sh script automatically mounts Claude if found
+./run-docker.sh
+
+# Inside container
+claude  # Will work if Claude was found on host
+```
+
+## Environment Details
+
+### Installed via Homebrew
+- Core tools: git, tmux, zsh, neovim
+- Search tools: fzf, fd, ripgrep
+- Development: gh, just, python3, node, ruby
+- Better CLI: bat, eza, zoxide, starship
+- Package managers: uv (Python), bundler (Ruby)
+
+### Pre-configured
+- Oh My Zsh with plugins
+- Settings from github.com/idvorkin/settings
+- Jekyll with all blog dependencies
+- Playwright with Chromium for E2E tests
+- Node.js packages for the blog
+
+### Repositories
+- `/home/developer/gits/idvorkin.github.io` - Blog repository
+- `/home/developer/gits/nlp` - NLP repository
 
 ## Performance
 
 | Operation | Time |
 |-----------|------|
-| Image build (first time) | 5-10 min |
+| Image build (first time) | ~5 min |
 | Container start | 2-3s |
-| Branch creation | <1s |
-| PR creation | 2-3s |
-| Test run | Depends on tests |
+| Jekyll server start | 3-4s |
+| E2E test run | 10-20s |
 
 ## Troubleshooting
 
-### Container won't start
+### Port already in use
+The script automatically finds free ports. If you need specific ports:
 ```bash
-# Check image exists
-docker images | grep claude-code
-
-# Rebuild if needed
-make build
+docker run -it --rm -p 5000:4000 claude-docker:minimal /home/linuxbrew/.linuxbrew/bin/zsh
 ```
 
-### GitHub authentication fails
+### Claude not working
+Ensure Claude is installed on your host:
 ```bash
-# Ensure token is set
-echo $GITHUB_TOKEN
+which claude  # Should show path to Claude
+```
 
-# Test in container
-docker-compose run --rm shell
-gh auth status
+### Jekyll not starting
+```bash
+# Inside container
+cd idvorkin.github.io
+bundle install  # If dependencies need updating
+just jekyll-serve
 ```
 
 ### Permission issues
+The container runs as user `developer` with sudo access:
 ```bash
-# Fix SSH permissions
-chmod 600 ~/.ssh/id_*
-chmod 644 ~/.ssh/*.pub
+sudo apt-get update  # Works without password
 ```
 
-### Clean up
+## Advanced Usage
+
+### Mount additional directories
 ```bash
-# Remove stopped containers
-make clean
-
-# Remove image and rebuild
-docker rmi claude-code:fast
-make build
+docker run -it --rm \
+  -v ~/my-project:/home/developer/my-project \
+  -p 4000:4000 \
+  claude-docker:minimal /home/linuxbrew/.linuxbrew/bin/zsh
 ```
 
-## Architecture
-
+### Run with GitHub token
+```bash
+export GITHUB_TOKEN=ghp_your_token_here
+./run-docker.sh  # Automatically passes the token
 ```
-docker/
-├── Dockerfile.fast       # Monolithic fast-start image
-├── docker-compose.yml    # Service definitions
-├── Makefile             # Convenience commands
-├── .env.example         # Environment template
-├── scripts/
-│   ├── entrypoint.sh    # Container initialization
-│   ├── create-pr.sh     # PR creation helper
-│   └── quick-claude.sh  # System launcher script
-└── README.md            # This file
+
+### Rebuild from scratch
+```bash
+docker rmi claude-docker:minimal claude-docker:base
+./build-minimal.sh
 ```
 
 ## Tips
 
 1. **Pre-build the image** during downtime for instant availability
-2. **Use make commands** for common operations
-3. **Keep .env updated** with your tokens
-4. **Mount settings read-only** to prevent accidental changes
-5. **Use persistent volumes** for cargo/npm caches
-6. **Run multiple containers** for parallel work
-7. **Tag your images** when they're working well
+2. **Keep images updated** - Rebuild weekly for latest packages
+3. **Use the run script** - It handles port conflicts automatically
+4. **Mount your work** - Use volumes for active development
+5. **Export GITHUB_TOKEN** - Enables gh CLI features
 
-## Contributing
+## Requirements
 
-To add new tools to the image:
-
-1. Edit `Dockerfile.fast`
-2. Add tools in the appropriate RUN command
-3. Rebuild: `make build`
-4. Test: `make shell`
-5. Document in this README
+- Docker
+- Git
+- (Optional) Claude CLI for AI assistance
+- (Optional) GitHub token for gh CLI commands
