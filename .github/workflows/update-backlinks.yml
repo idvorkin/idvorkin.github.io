@@ -8,6 +8,7 @@ on:
   workflow_dispatch: # Allow manual trigger
 
 # Prevent race conditions when multiple PRs merge simultaneously
+# This workflow specifically handles merge commits created by GitHub PR merges
 concurrency:
   group: update-backlinks-${{ github.ref }}
   cancel-in-progress: false
@@ -27,6 +28,7 @@ jobs:
     
     # Only run if the PR was actually merged (not just closed)
     # Or if manually triggered
+    # This job handles merge commits by comparing HEAD (merge commit) with HEAD~1 (previous main)
     if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.merged == true)
     
     steps:
@@ -64,20 +66,35 @@ jobs:
           if [ "${{ github.event_name }}" == "pull_request" ]; then
             # When a PR is merged, we need to compare the merge commit with its first parent
             # The merge commit is HEAD, and HEAD~1 is the previous state of main
+            # This specifically handles merge commits created by GitHub when PRs are merged
             BASE_SHA="HEAD~1"
             HEAD_SHA="HEAD"
             echo "PR #${{ github.event.pull_request.number }} merged: Comparing $BASE_SHA..$HEAD_SHA"
-            
-            # Show the commits being compared for debugging
-            echo "Base commit (previous main):"
-            git log -1 --oneline "$BASE_SHA"
-            echo "Head commit (merged PR):"
-            git log -1 --oneline "$HEAD_SHA"
           else
             BASE_SHA="HEAD~1"
             HEAD_SHA="HEAD"
             echo "Manual trigger: Comparing last commit"
           fi
+          
+          # Error handling: Check if BASE_SHA exists (handle initial commit scenario)
+          if ! git rev-parse --verify "$BASE_SHA" >/dev/null 2>&1; then
+            echo "⚠️ Warning: $BASE_SHA does not exist (possibly initial commit)"
+            echo "Using root commit as base for comparison"
+            BASE_SHA=$(git rev-list --max-parents=0 HEAD)
+          fi
+          
+          # Enhanced logging: Show actual SHA values being compared
+          BASE_SHA_FULL=$(git rev-parse "$BASE_SHA")
+          HEAD_SHA_FULL=$(git rev-parse "$HEAD_SHA")
+          echo "🔍 Comparing commits:"
+          echo "  Base: $BASE_SHA ($BASE_SHA_FULL)"
+          echo "  Head: $HEAD_SHA ($HEAD_SHA_FULL)"
+          
+          # Show the commits being compared for debugging
+          echo "Base commit details:"
+          git log -1 --oneline "$BASE_SHA"
+          echo "Head commit details:"
+          git log -1 --oneline "$HEAD_SHA"
           
           # Get changed markdown files in content directories
           CHANGED_MD_FILES=$(git diff --name-only "$BASE_SHA..$HEAD_SHA" | \
