@@ -17,7 +17,7 @@ tags:
   - how igor ticks
 ---
 
-Habits are the automatic actions, both positive and negative, you take through your life. Atomic Habits describes how to change habits, it's the how-to manual for "Sharpening the Saw".
+Habits are the automatic actions, both positive and negative, you take through your life. Atomic Habits describes how to change habits, it's the how-to manual for "Sharpening the Saw". Building good habits is essential for managing [energy](/energy) and maintaining [emotional health](/emotions).
 
 ### Big Ideas
 
