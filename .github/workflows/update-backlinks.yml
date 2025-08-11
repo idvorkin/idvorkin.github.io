@@ -36,6 +36,17 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0 # Need full history to get accurate diff
 
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build
+          echo "✅ Jekyll site built successfully"
+
       - name: Set up Python with uv
         uses: astral-sh/setup-uv@v4
         with:
