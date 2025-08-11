@@ -72,7 +72,9 @@
       "Bash(docker images:*)",
       "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/96)",
       "Bash(git reset:*)",
-      "Bash(true)"
+      "Bash(true)",
+      "Bash(cat:*)",
+      "Bash(docker build:*)"
     ],
     "deny": []
   }
