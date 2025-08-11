@@ -62,9 +62,17 @@ jobs:
           
           # Determine the commit range based on trigger type
           if [ "${{ github.event_name }}" == "pull_request" ]; then
-            BASE_SHA="${{ github.event.pull_request.base.sha }}"
-            HEAD_SHA="${{ github.event.pull_request.head.sha }}"
-            echo "PR #${{ github.event.pull_request.number }}: Comparing $BASE_SHA..$HEAD_SHA"
+            # When a PR is merged, we need to compare the merge commit with its first parent
+            # The merge commit is HEAD, and HEAD~1 is the previous state of main
+            BASE_SHA="HEAD~1"
+            HEAD_SHA="HEAD"
+            echo "PR #${{ github.event.pull_request.number }} merged: Comparing $BASE_SHA..$HEAD_SHA"
+            
+            # Show the commits being compared for debugging
+            echo "Base commit (previous main):"
+            git log -1 --oneline "$BASE_SHA"
+            echo "Head commit (merged PR):"
+            git log -1 --oneline "$HEAD_SHA"
           else
             BASE_SHA="HEAD~1"
             HEAD_SHA="HEAD"

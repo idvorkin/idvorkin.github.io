@@ -1639,8 +1639,8 @@
       "url": "/d/apollo"
     },
     "/d/habits": {
-      "description": "Habits are the automatic actions, both positive and negative, you take through your life. Atomic Habits describes how to change habits, it’s the how-to manual for “Sharpening the Saw”.\n\n",
-      "doc_size": 20000,
+      "description": "Habits are the automatic actions, both positive and negative, you take through your life. Atomic Habits describes how to change habits, it’s the how-to manual for “Sharpening the Saw”. Building good habits is essential for managing energy and maintaining emotional health.\n\n",
+      "doc_size": 21000,
       "file_path": "_site/d/habits.html",
       "incoming_links": [
         "/activation",
@@ -1662,7 +1662,9 @@
       "last_modified": "2025-07-20T19:26:41-07:00",
       "markdown_path": "_d/habits.md",
       "outgoing_links": [
-        "/be-proactive"
+        "/be-proactive",
+        "/emotions",
+        "/energy"
       ],
       "redirect_url": "",
       "title": "Atomic habits - How to add and remove habits",
@@ -2220,7 +2222,9 @@
       "description": "Ever notice how emotions are like that one friend who shows up uninvited and fucks up your perfectly planned party? Sometimes they bring cake and make everything awesome, other times they’re drunk and knocking over your carefully arranged furniture while screaming “YOLO!” Well, here’s your guide to that emotional party crasher living rent-free in your head, because let’s face it - they’re not moving out anytime soon.\n\n",
       "doc_size": 15000,
       "file_path": "_site/emotions.html",
-      "incoming_links": [],
+      "incoming_links": [
+        "/d/habits"
+      ],
       "last_modified": "2024-12-25T17:59:13-08:00",
       "markdown_path": "_d/emotions.md",
       "outgoing_links": [
@@ -2312,6 +2316,7 @@
       "file_path": "_site/energy.html",
       "incoming_links": [
         "/balance",
+        "/d/habits",
         "/energy-abundance",
         "/mood",
         "/productive",
@@ -2571,7 +2576,7 @@
         "/retire",
         "/stock-concentration"
       ],
-      "last_modified": "2025-06-22T09:39:35-07:00",
+      "last_modified": "2025-08-07T22:02:28-07:00",
       "markdown_path": "_d/gap-year.md",
       "outgoing_links": [
         "/chapters",
@@ -2592,14 +2597,14 @@
     },
     "/gap-year-igor": {
       "description": "The gap year concept is compelling in theory, but what does it look like when rubber meets road? Here’s my real-time wrestling match with the dragons guarding this treasure of time, complete with all the messy financial calculations, identity crises, and voice-in-head battles that come with considering a year off at 50.\n\n",
-      "doc_size": 45000,
+      "doc_size": 46000,
       "file_path": "_site/gap-year-igor.html",
       "incoming_links": [
         "/gap-year",
         "/stock-concentration",
         "/time-off-2025-08"
       ],
-      "last_modified": "2025-08-07T21:09:09-07:00",
+      "last_modified": "2025-08-07T22:18:56-07:00",
       "markdown_path": "_d/igor-gap-year.md",
       "outgoing_links": [
         "/addiction",
@@ -3609,7 +3614,7 @@
     },
     "/money": {
       "description": "Most of the tax information on the web is a mess. It’s confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes\n\n",
-      "doc_size": 54000,
+      "doc_size": 55000,
       "file_path": "_site/money.html",
       "incoming_links": [
         "/d/time-off-2020-03",
@@ -3620,7 +3625,7 @@
         "/retire",
         "/stock-concentration"
       ],
-      "last_modified": "2025-08-03T12:13:56-07:00",
+      "last_modified": "2025-08-09T20:28:52-07:00",
       "markdown_path": "_d/taxes.md",
       "outgoing_links": [
         "/parkinson",
@@ -4573,7 +4578,7 @@
         "/gap-year-igor",
         "/money"
       ],
-      "last_modified": "2025-08-06T17:27:12-07:00",
+      "last_modified": "2025-08-07T22:02:28-07:00",
       "markdown_path": "_d/stock-concentration.md",
       "outgoing_links": [
         "/gap-year",
@@ -5206,10 +5211,10 @@
     },
     "/time-off-2025-08": {
       "description": "I’m incredibly fortunate to be able to take 6 weeks off this summer! After 5 years of service at Meta, you get 30 days (about 5 week) off!\n\n",
-      "doc_size": 28000,
+      "doc_size": 29000,
       "file_path": "_site/time-off-2025-08.html",
       "incoming_links": [],
-      "last_modified": "2025-08-06T16:12:51-07:00",
+      "last_modified": "2025-08-10T10:42:55-07:00",
       "markdown_path": "_d/time-off-2025-08.md",
       "outgoing_links": [
         "/gap-year-igor",
