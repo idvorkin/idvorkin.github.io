@@ -85,49 +85,23 @@ run_container() {
     [ -f ~/.gitconfig ] && DOCKER_CMD="$DOCKER_CMD -v ~/.gitconfig:/home/developer/.gitconfig:ro"
     [ -d ~/.ssh ] && DOCKER_CMD="$DOCKER_CMD -v ~/.ssh:/home/developer/.ssh:ro"
     
-    # Mount Claude credentials if available
-    # Claude CLI uses multiple possible locations for credentials
-    
-    # Check for .claude.json file (primary auth file)
-    if [ -f ~/.claude.json ]; then
-        DOCKER_CMD="$DOCKER_CMD -v ~/.claude.json:/home/developer/.claude.json:ro"
-        echo -e "${GREEN}✓ Claude auth file (.claude.json) mounted${NC}"
-    fi
-    
-    # Check for .claude directory
-    if [ -d ~/.claude ]; then
-        DOCKER_CMD="$DOCKER_CMD -v ~/.claude:/home/developer/.claude:ro"
-        echo -e "${GREEN}✓ Claude config directory (.claude) mounted${NC}"
-    fi
-    
-    # Also check macOS Application Support location (Claude Code uses this)
+    # Mount Claude credentials with write access (Claude needs to update session files)
     if [ -d "$HOME/Library/Application Support/claude" ]; then
-        # For dev layer with YOLO mode, we need to be selective
-        if [ "$IMAGE" = "claude-docker:dev" ]; then
-            # Mount auth but preserve YOLO settings
-            DOCKER_CMD="$DOCKER_CMD -v \"$HOME/Library/Application Support/claude\":/home/developer/.claude-auth:ro"
-            echo -e "${GREEN}✓ Claude auth mounted from macOS (YOLO mode active)${NC}"
-        else
-            # Standard mounting for non-dev layers
-            DOCKER_CMD="$DOCKER_CMD -v \"$HOME/Library/Application Support/claude\":/home/developer/.config/claude:ro"
-            echo -e "${GREEN}✓ Claude credentials mounted from macOS${NC}"
-        fi
+        # macOS location - mount with write access
+        DOCKER_CMD="$DOCKER_CMD -v \"$HOME/Library/Application Support/claude\":/home/developer/.config/claude"
+        echo -e "${GREEN}✓ Claude credentials mounted from macOS${NC}"
     elif [ -d ~/.config/claude ]; then
-        # Linux standard location
-        if [ "$IMAGE" = "claude-docker:dev" ]; then
-            DOCKER_CMD="$DOCKER_CMD -v ~/.config/claude:/home/developer/.claude-auth:ro"
-            echo -e "${GREEN}✓ Claude auth mounted (YOLO mode active)${NC}"
-        else
-            DOCKER_CMD="$DOCKER_CMD -v ~/.config/claude:/home/developer/.config/claude:ro"
-            echo -e "${GREEN}✓ Claude credentials mounted from ~/.config/claude${NC}"
-        fi
-    fi
-    
-    # If no credentials found, warn user
-    if [ ! -f ~/.claude.json ] && [ ! -d ~/.claude ] && [ ! -d "$HOME/Library/Application Support/claude" ] && [ ! -d ~/.config/claude ]; then
+        # Linux location
+        DOCKER_CMD="$DOCKER_CMD -v ~/.config/claude:/home/developer/.config/claude"
+        echo -e "${GREEN}✓ Claude credentials mounted from ~/.config/claude${NC}"
+    elif [ -d ~/.claude ]; then
+        # Alternative location
+        DOCKER_CMD="$DOCKER_CMD -v ~/.claude:/home/developer/.claude"
+        echo -e "${GREEN}✓ Claude credentials mounted from ~/.claude${NC}"
+    else
         echo -e "${YELLOW}⚠ Claude credentials not found${NC}"
         echo -e "  Run 'claude auth login' on host first"
-        echo -e "  Checked: ~/.claude.json, ~/.claude/, ~/Library/Application Support/claude/, ~/.config/claude/"
+        echo -e "  Checked: ~/Library/Application Support/claude/, ~/.config/claude/, ~/.claude/"
     fi
     
     # Environment variables

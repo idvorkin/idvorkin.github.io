@@ -33,11 +33,14 @@ RUN mkdir -p ~/.config/claude && \
 }' > ~/.config/claude/settings.json && \
     echo "Claude configured in YOLO mode for container development"
 
-# Create symlinks for auth files that might be mounted
-# This allows credentials to be mounted at various locations
-RUN mkdir -p ~/.claude-auth && \
-    ln -sf ~/.claude-auth/auth.json ~/.config/claude/auth.json 2>/dev/null || true && \
-    echo "Prepared auth mounting points"
+# Create directories where Claude expects config
+RUN mkdir -p ~/.claude ~/.config/claude /tmp/claude-config
+
+# Add claude to PATH properly
+ENV PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
+
+# Simple approach: just ensure directories exist for mounting
+# Auth will be mounted directly from host
 
 WORKDIR /home/developer/gits
 LABEL description="Development layer with Claude YOLO mode"
