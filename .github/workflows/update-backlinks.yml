@@ -8,6 +8,7 @@ on:
   workflow_dispatch: # Allow manual trigger
 
 # Prevent race conditions when multiple PRs merge simultaneously
+# This workflow specifically handles merge commits created by GitHub PR merges
 concurrency:
   group: update-backlinks-${{ github.ref }}
   cancel-in-progress: false
@@ -27,6 +28,7 @@ jobs:
     
     # Only run if the PR was actually merged (not just closed)
     # Or if manually triggered
+    # This job handles merge commits by comparing HEAD (merge commit) with HEAD~1 (previous main)
     if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.merged == true)
     
     steps:
@@ -62,14 +64,77 @@ jobs:
           
           # Determine the commit range based on trigger type
           if [ "${{ github.event_name }}" == "pull_request" ]; then
-            BASE_SHA="${{ github.event.pull_request.base.sha }}"
-            HEAD_SHA="${{ github.event.pull_request.head.sha }}"
-            echo "PR #${{ github.event.pull_request.number }}: Comparing $BASE_SHA..$HEAD_SHA"
+            # IMPORTANT: This workflow handles all GitHub merge strategies:
+            # 1. Merge commit: Creates a merge commit with 2 parents
+            # 2. Squash and merge: Creates a single commit
+            # 3. Rebase and merge: Applies multiple commits sequentially
+            
+            # For merge commits, we compare with the first parent (previous main)
+            # For squash/rebase, we need to find the actual base before the PR was merged
+            
+            # Check if HEAD is a merge commit (has 2 parents)
+            PARENT_COUNT=$(git rev-list --parents -n 1 HEAD | wc -w)
+            PARENT_COUNT=$((PARENT_COUNT - 1))  # Subtract 1 for the commit itself
+            
+            if [ "$PARENT_COUNT" -eq 2 ]; then
+              # It's a merge commit, use first parent (previous main)
+              BASE_SHA="HEAD^1"
+              echo "🔀 Detected merge commit strategy"
+            else
+              # It's a squash or rebase - need to find the actual base
+              # Use the PR base SHA from the event context
+              PR_BASE="${{ github.event.pull_request.base.sha }}"
+              
+              # Try to find a common ancestor with the PR base
+              if [ -n "$PR_BASE" ] && git rev-parse --verify "$PR_BASE" >/dev/null 2>&1; then
+                BASE_SHA="$PR_BASE"
+                echo "📦 Detected squash/rebase strategy using PR base"
+              else
+                # Fallback: Look for the most recent commit that's also on origin/main
+                # This handles rebase scenarios where multiple commits were added
+                BASE_SHA=$(git merge-base origin/main HEAD~1 2>/dev/null || echo "HEAD~1")
+                echo "🔄 Using merge-base to find actual base commit"
+              fi
+            fi
+            
+            HEAD_SHA="HEAD"
+            echo "PR #${{ github.event.pull_request.number }} merged: Comparing $BASE_SHA..$HEAD_SHA"
           else
             BASE_SHA="HEAD~1"
             HEAD_SHA="HEAD"
             echo "Manual trigger: Comparing last commit"
           fi
+          
+          # Error handling: Check if BASE_SHA exists (handle initial commit scenario)
+          if ! git rev-parse --verify "$BASE_SHA" >/dev/null 2>&1; then
+            echo "⚠️ Warning: $BASE_SHA does not exist (possibly initial commit)"
+            echo "Using root commit as base for comparison"
+            BASE_SHA=$(git rev-list --max-parents=0 HEAD)
+          fi
+          
+          # Enhanced logging: Show actual SHA values being compared
+          BASE_SHA_FULL=$(git rev-parse "$BASE_SHA")
+          HEAD_SHA_FULL=$(git rev-parse "$HEAD_SHA")
+          echo "🔍 Comparing commits:"
+          echo "  Base: $BASE_SHA ($BASE_SHA_FULL)"
+          echo "  Head: $HEAD_SHA ($HEAD_SHA_FULL)"
+          
+          # Show the range of commits being analyzed (important for rebase scenarios)
+          COMMIT_COUNT=$(git rev-list --count "$BASE_SHA..$HEAD_SHA" 2>/dev/null || echo "0")
+          echo "  Commits in range: $COMMIT_COUNT"
+          if [ "$COMMIT_COUNT" -gt "0" ] && [ "$COMMIT_COUNT" -le "10" ]; then
+            echo "  Commit range:"
+            git log --oneline "$BASE_SHA..$HEAD_SHA" | sed 's/^/    /'
+          elif [ "$COMMIT_COUNT" -gt "10" ]; then
+            echo "  Commit range (showing first 10 of $COMMIT_COUNT):"
+            git log --oneline "$BASE_SHA..$HEAD_SHA" | head -10 | sed 's/^/    /'
+          fi
+          
+          # Show the commits being compared for debugging
+          echo "Base commit details:"
+          git log -1 --oneline "$BASE_SHA"
+          echo "Head commit details:"
+          git log -1 --oneline "$HEAD_SHA"
           
           # Get changed markdown files in content directories
           CHANGED_MD_FILES=$(git diff --name-only "$BASE_SHA..$HEAD_SHA" | \

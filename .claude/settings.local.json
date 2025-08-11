@@ -60,7 +60,12 @@
       "Bash(git rebase:*)",
       "Bash(osascript:*)",
       "Bash(builtin cd cc_main)",
-      "Bash(npm install)"
+      "Bash(npm install)",
+      "Bash(act:*)",
+      "Bash(./test-backlinks-action.sh:*)",
+      "Bash(gh run view:*)",
+      "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/90)",
+      "Bash(uv run:*)"
     ],
     "deny": []
   }
