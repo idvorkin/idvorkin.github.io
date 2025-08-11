@@ -30,5 +30,11 @@ RUN mkdir -p ~/.config/claude && \
 }' > ~/.config/claude/settings.json && \
     echo "Claude configured in YOLO mode for container development"
 
+# Create symlinks for auth files that might be mounted
+# This allows credentials to be mounted at various locations
+RUN mkdir -p ~/.claude-auth && \
+    ln -sf ~/.claude-auth/auth.json ~/.config/claude/auth.json 2>/dev/null || true && \
+    echo "Prepared auth mounting points"
+
 WORKDIR /home/developer/gits
 LABEL description="Development layer with Claude YOLO mode"
