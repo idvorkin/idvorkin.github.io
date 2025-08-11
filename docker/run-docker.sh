@@ -85,24 +85,17 @@ run_container() {
     [ -f ~/.gitconfig ] && DOCKER_CMD="$DOCKER_CMD -v ~/.gitconfig:/home/developer/.gitconfig:ro"
     [ -d ~/.ssh ] && DOCKER_CMD="$DOCKER_CMD -v ~/.ssh:/home/developer/.ssh:ro"
     
-    # Mount Claude CLI and credentials if available
-    if command -v claude >/dev/null 2>&1; then
-        DOCKER_CMD="$DOCKER_CMD -v $(which claude):/usr/local/bin/claude.real:ro"
-        
-        # Mount Claude config directory for credentials
-        # Try multiple possible locations
-        if [ -d ~/.config/claude ]; then
-            DOCKER_CMD="$DOCKER_CMD -v ~/.config/claude:/home/developer/.config/claude"
-            echo -e "${GREEN}✓ Claude CLI and credentials mounted${NC}"
-        elif [ -d ~/Library/Application\ Support/claude ]; then
-            # macOS location
-            DOCKER_CMD="$DOCKER_CMD -v \"$HOME/Library/Application Support/claude\":/home/developer/.config/claude"
-            echo -e "${GREEN}✓ Claude CLI and credentials mounted (macOS)${NC}"
-        else
-            echo -e "${GREEN}✓ Claude CLI mounted (credentials needed)${NC}"
-        fi
+    # Mount Claude credentials if available
+    # Try multiple possible locations
+    if [ -d ~/.config/claude ]; then
+        DOCKER_CMD="$DOCKER_CMD -v ~/.config/claude:/home/developer/.config/claude"
+        echo -e "${GREEN}✓ Claude credentials mounted from ~/.config/claude${NC}"
+    elif [ -d "$HOME/Library/Application Support/claude" ]; then
+        # macOS location - mount to where Claude expects it in Linux
+        DOCKER_CMD="$DOCKER_CMD -v \"$HOME/Library/Application Support/claude\":/home/developer/.config/claude"
+        echo -e "${GREEN}✓ Claude credentials mounted from macOS${NC}"
     else
-        echo -e "${YELLOW}⚠ Claude CLI not found on host${NC}"
+        echo -e "${YELLOW}⚠ Claude credentials not found - will need to authenticate${NC}"
     fi
     
     # Environment variables

@@ -78,27 +78,23 @@ The `run-docker.sh` script automatically finds free ports. If default ports are 
 
 ## Claude CLI Integration
 
-The container includes a Claude wrapper that:
-- Automatically mounts your host's Claude CLI binary
-- Mounts your Claude credentials/config from host
-- Works seamlessly with your existing Claude authentication
+Claude CLI is installed in the container and can use your host's credentials:
 
-The script automatically mounts:
-- Claude binary from your host system
-- Claude config/credentials from:
+- Claude CLI (`@anthropic-ai/claude-code`) is pre-installed
+- Credentials are mounted from host automatically:
   - `~/.config/claude` (Linux/default)
   - `~/Library/Application Support/claude` (macOS)
 
 To use Claude in the container:
 ```bash
-# Ensure Claude is installed and authenticated on your host first
-claude  # On host - authenticate if needed
+# Authenticate on your host first (one-time)
+claude  # On host - login if needed
 
-# Then run the container
+# Run the container - credentials are automatically mounted
 ./run-docker.sh
 
-# Inside container, Claude will use your host credentials
-claude  # Works with your existing auth
+# Inside container, Claude uses your host's auth
+claude  # Ready to use!
 ```
 
 ## Environment Details
@@ -157,6 +153,29 @@ The container runs as user `developer` with sudo access:
 ```bash
 sudo apt-get update  # Works without password
 ```
+
+## Development Tips
+
+### Fast Iteration Strategy
+
+When experimenting with new tools or configurations:
+
+1. **Create a test layer** to avoid rebuilding everything:
+```dockerfile
+# Dockerfile.3-test
+FROM claude-docker:minimal
+RUN # your experimental changes
+```
+
+2. **Build and test quickly**:
+```bash
+docker build -f Dockerfile.3-test -t claude-docker:test .
+docker run --rm claude-docker:test # test your changes
+```
+
+3. **Once working**, merge changes back into the base layer (Dockerfile.2-stable-minimal)
+
+This approach saves time by avoiding full rebuilds during experimentation.
 
 ## Advanced Usage
 

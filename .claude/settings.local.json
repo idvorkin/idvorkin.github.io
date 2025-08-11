@@ -71,7 +71,8 @@
       "Bash(./build-claude-debug.sh:*)",
       "Bash(docker images:*)",
       "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/96)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(true)"
     ],
     "deny": []
   }

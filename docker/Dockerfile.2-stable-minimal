@@ -39,17 +39,9 @@ RUN brew install \
     jq \
     uv || true
 
-# Create Claude CLI wrapper (actual binary needs to be mounted)
-USER root
-RUN echo '#!/bin/bash' > /usr/local/bin/claude && \
-    echo 'if [ -f /usr/local/bin/claude.real ]; then' >> /usr/local/bin/claude && \
-    echo '    exec /usr/local/bin/claude.real "$@"' >> /usr/local/bin/claude && \
-    echo 'else' >> /usr/local/bin/claude && \
-    echo '    echo "Claude CLI not mounted. Mount with: -v \$(which claude):/usr/local/bin/claude.real:ro"' >> /usr/local/bin/claude && \
-    echo '    exit 1' >> /usr/local/bin/claude && \
-    echo 'fi' >> /usr/local/bin/claude && \
-    chmod +x /usr/local/bin/claude
-USER developer
+# Install Claude CLI inside the container
+RUN npm install -g @anthropic-ai/claude-code
+
 
 # Add cargo to PATH (if rust gets installed)
 ENV PATH="/home/developer/.cargo/bin:${PATH}"
