@@ -36,7 +36,14 @@ RUN brew install \
     zoxide \
     starship \
     jq \
-    uv || true
+    uv \
+    yazi \
+    duf \
+    bottom \
+    gdu \
+    dua-cli \
+    fastfetch \
+    procs || true
 
 # Install Claude CLI inside the container
 RUN npm install -g @anthropic-ai/claude-code

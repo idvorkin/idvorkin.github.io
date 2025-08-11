@@ -1,0 +1,21 @@
+# Layer 3: Development layer for future enhancements
+FROM claude-docker:minimal
+
+# This layer is for future development and experimental features
+# It builds on top of the stable minimal layer
+
+USER developer
+WORKDIR /home/developer
+
+# Add any development tools or experimental features here
+# Examples:
+# - Additional language servers for neovim
+# - Extra debugging tools
+# - Development databases
+# - Additional programming language runtimes
+
+# Placeholder for future additions
+RUN echo "Development layer ready for future enhancements"
+
+WORKDIR /home/developer/gits
+LABEL description="Development layer for future work"
