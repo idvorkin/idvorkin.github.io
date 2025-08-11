@@ -65,7 +65,10 @@
       "Bash(./test-backlinks-action.sh:*)",
       "Bash(gh run view:*)",
       "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/90)",
-      "Bash(uv run:*)"
+      "Bash(uv run:*)",
+      "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/95)",
+      "Bash(bundle exec:*)",
+      "Bash(/dev/null)"
     ],
     "deny": []
   }
