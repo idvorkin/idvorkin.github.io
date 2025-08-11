@@ -5,7 +5,7 @@ mermaid: true
 permalink: /energy
 ---
 
-We often say we don't have time, but usually we mean we don't have energy. That's great news because time is finite, and monotonically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy. What's amazing to me is how going to the gym can be energy positive.
+We often say we don't have time, but usually we mean we don't have energy. That's great news because time is finite, and monotonically decreasing. Energy, by contrast, is dynamic. Activities and experiences can create and destroy energy. What's amazing to me is how going to the gym can be energy positive. Understanding this concept changed how I approach [productivity](/2016-2-15-Seth-Godin-Notes) and [leadership](/2015-11-18-Outsourcing).
 
 ## Theory
 
