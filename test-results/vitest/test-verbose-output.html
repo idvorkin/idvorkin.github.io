@@ -22,6 +22,15 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
 [22m[39mToggle element with ID missing-toggle not found
 
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
+[22m[39mCopied header link: http://idvorkin.azurewebsites.net/manager-book/how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
+[22m[39mCopied header link: https://idvorkin.azurewebsites.net/manager-book/test-section
+
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
+[22m[39mCopied header link: http://idvorkin.azurewebsites.net/simple-page/anchor
+
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
 [22m[39m❌ Error loading recent posts: Error: Test error
     at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent-posts.test.ts:503:69
@@ -37,15 +46,6 @@ npx vitest run --reporter=verbose
 
 [90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
 [22m[39m❌ non-existent-container container not found in DOM
-
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
-[22m[39mCopied header link: http://idvorkin.azurewebsites.net/manager-book/how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them
-
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
-[22m[39mCopied header link: https://idvorkin.azurewebsites.net/manager-book/test-section
-
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
-[22m[39mCopied header link: http://idvorkin.azurewebsites.net/simple-page/anchor
 
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
 [22m[39mToggle element with ID remaining-posts-toggle not found
@@ -185,9 +185,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
-[90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
-[22m[39mappend_randomizer_div #non-existent not present
-
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
@@ -195,6 +192,9 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
  [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
+[90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
+[22m[39mappend_randomizer_div #non-existent not present
+
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mMakeBackLinkHTML[2m > [22mshould generate correct HTML for a backlink
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return undefined for empty list
@@ -246,14 +246,14 @@ Dev info - Branch: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould not create duplicate entries when processing summary links
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould handle redirects correctly without duplication
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould identify the root cause of duplicate related posts
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from production to test[2m > [22mshould swap from production to localhost with default port 4000
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from production to test[2m > [22mshould preserve the current port when available
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould swap from localhost:4000 to production
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould swap from localhost:4002 to production
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould handle any port number
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould not create duplicate entries when processing summary links
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould handle redirects correctly without duplication
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould identify the root cause of duplicate related posts
  [32m✓[39m src/__tests__/index.test.ts[2m > [22mIndex Module[2m > [22mshould initialize when ready
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22misDevServer[2m > [22mshould return true for localhost
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22misDevServer[2m > [22mshould return true for 127.0.0.1
@@ -264,7 +264,7 @@ Dev info - Branch: [1mnull[22m Port: 4000
 
 [2m Test Files [22m [1m[32m16 passed[39m[22m[90m (16)[39m
 [2m      Tests [22m [1m[32m180 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (185)[39m
-[2m   Start at [22m 14:43:56
-[2m   Duration [22m 4.01s[2m (transform 637ms, setup 208ms, collect 946ms, tests 464ms, environment 5.93s, prepare 1.38s)[22m
+[2m   Start at [22m 14:52:19
+[2m   Duration [22m 4.00s[2m (transform 634ms, setup 192ms, collect 902ms, tests 476ms, environment 5.98s, prepare 1.39s)[22m
 
 </pre></body></html>
