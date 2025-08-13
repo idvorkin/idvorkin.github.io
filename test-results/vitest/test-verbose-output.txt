@@ -2,58 +2,8 @@ npx vitest run --reporter=verbose
 
 [1m[7m[36m RUN [39m[27m[22m [36mv3.0.8 [39m[90m/home/runner/work/idvorkin.github.io/idvorkin.github.io[39m
 
-[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould copy correct URL format
-[22m[39mCopied header link: http://idvorkin.azurewebsites.net/manager-book/test-section
-
-[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
-[22m[39m❌ Error loading recent posts: Error: Test error
-    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent-posts.test.ts:503:69
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
-    at new Promise (<anonymous>)
-    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
-    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
-[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-
-[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
-[22m[39m❌ non-existent-container container not found in DOM
-
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
 [22m[39mToggle element with ID missing-toggle not found
-
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould handle missing properties with defaults
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfilterRealPages[2m > [22mshould filter out pages with empty titles or descriptions
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould sort pages by last_modified date, newest first
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould fallback to doc_size if last_modified dates are missing
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould not modify the original array
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould return the specified number of pages
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould handle array with fewer pages than requested count
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould generate correct HTML for recent pages
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould truncate descriptions longer than 100 characters
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould show message for empty pages array
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould update the container with recent posts HTML
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould show error message when getProcessedPages fails
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded
- [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
-[90mstderr[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
-[22m[39mFailed to copy header link: Error: Clipboard failed
-    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/header-copy-link.test.ts:305:62
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
-    at new Promise (<anonymous>)
-    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
-    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
-[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
 
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
 [22m[39mToggle element with ID remaining-posts-toggle not found
@@ -77,14 +27,84 @@ npx vitest run --reporter=verbose
 [90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
 [22m[39mToggle element with ID remaining-posts-toggle not found
 
+[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
+[22m[39m❌ Error loading recent posts: Error: Test error
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent-posts.test.ts:503:69
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
+    at new Promise (<anonymous>)
+    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
+    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould skip pages without last_modified dates
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould generate correct HTML for grouped pages
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould format dates in the expected format
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould truncate descriptions longer than 150 characters
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mcreateToggleSection[2m > [22mshould create toggle section with correct content
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateStyles[2m > [22mshould generate CSS styles as a string
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould add click event listener to toggle element
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould handle missing toggle element
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould toggle content visibility when clicked
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould generate complete HTML for posts display
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould return message when no pages are provided
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould use default initialPostsCount of 15
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould update container with posts HTML
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle empty results
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle errors
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
+ [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
+[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
+[22m[39m❌ non-existent-container container not found in DOM
+
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould throw error if url_info is missing
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould convert URL info map to array of page objects
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mconvertToPages[2m > [22mshould handle missing properties with defaults
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfilterRealPages[2m > [22mshould filter out pages with empty titles or descriptions
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould sort pages by last_modified date, newest first
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould fallback to doc_size if last_modified dates are missing
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22msortPagesByDate[2m > [22mshould not modify the original array
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould return the specified number of pages
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgetRecentPages[2m > [22mshould handle array with fewer pages than requested count
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould generate correct HTML for recent pages
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould truncate descriptions longer than 100 characters
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mgenerateRecentPagesHTML[2m > [22mshould show message for empty pages array
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould update the container with recent posts HTML
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould show error message when getProcessedPages fails
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded
+ [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
+[90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould copy correct URL format
+[22m[39mCopied header link: https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23test-section&text_only=true
+
+[90mstderr[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mHeader Copy Link[2m > [22m[2mCopy Functionality[2m > [22m[2mshould handle clipboard API failure gracefully
+[22m[39mFailed to copy header link: Error: Clipboard failed
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/header-copy-link.test.ts:305:62
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
+    at new Promise (<anonymous>)
+    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
+    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: localhost to production with long anchor
-[22m[39mCopied header link: http://idvorkin.azurewebsites.net/manager-book/how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them
+[22m[39mCopied header link: https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them&text_only=true
 
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: production domain mapping
-[22m[39mCopied header link: https://idvorkin.azurewebsites.net/manager-book/test-section
+[22m[39mCopied header link: https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23test-section&text_only=true
 
 [90mstdout[2m | src/__tests__/header-copy-link.test.ts[2m > [22m[2mURL Transformation Logic[2m > [22m[2mshould transform URL correctly: simple case
-[22m[39mCopied header link: http://idvorkin.azurewebsites.net/simple-page/anchor
+[22m[39mCopied header link: https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23anchor&text_only=true
 
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly
@@ -106,39 +126,51 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould include content excerpt when no custom description provided
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould truncate long content excerpts to 500 characters
  [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould skip empty paragraphs and find first non-empty one
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
- [32m✓[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould skip pages without last_modified dates
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould generate correct HTML for grouped pages
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould format dates in the expected format
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateGroupedPagesHTML[2m > [22mshould truncate descriptions longer than 150 characters
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mcreateToggleSection[2m > [22mshould create toggle section with correct content
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateStyles[2m > [22mshould generate CSS styles as a string
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould add click event listener to toggle element
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould handle missing toggle element
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22msetupToggleEventListener[2m > [22mshould toggle content visibility when clicked
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould generate complete HTML for posts display
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould return message when no pages are provided
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgenerateRecentPostsHTML[2m > [22mshould use default initialPostsCount of 15
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould update container with posts HTML
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle empty results
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould handle errors
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
- [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould handle URL encoded values
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould use window.location.href when no URL is provided
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with title and content
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with anchor
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
+ [31m×[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor
+[31m   → expected "spy" to be called with arguments: [ Array(1) ][90m
+
+Received: 
+
+[1m  1st spy call:
+
+[22m[2m  [[22m
+[32m-   "http://idvorkin.azurewebsites.net/manager-book/how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",[90m
+[31m+   "https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them&text_only=true",[90m
+[2m  ][22m
+[31m[90m
+
+Number of calls: [1m1[22m
+[31m[39m
+ [31m×[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
+[31m   → expected "spy" to be called with arguments: [ Array(1) ][90m
+
+Received: 
+
+[1m  1st spy call:
+
+[22m[2m  [[22m
+[32m-   "https://idvorkin.azurewebsites.net/manager-book/test-section",[90m
+[31m+   "https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23test-section&text_only=true",[90m
+[2m  ][22m
+[31m[90m
+
+Number of calls: [1m1[22m
+[31m[39m
+ [31m×[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
+[31m   → expected "spy" to be called with arguments: [ Array(1) ][90m
+
+Received: 
+
+[1m  1st spy call:
+
+[22m[2m  [[22m
+[32m-   "http://idvorkin.azurewebsites.net/simple-page/anchor",[90m
+[31m+   "https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23anchor&text_only=true",[90m
+[2m  ][22m
+[31m[90m
+
+Number of calls: [1m1[22m
+[31m[39m
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
@@ -166,6 +198,16 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould handle URL encoded values
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould use window.location.href when no URL is provided
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with title and content
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with anchor
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
  [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
@@ -198,6 +240,20 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould append content from the factory when parent is found
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould handle click events on non-link elements
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mappend_randomizer_div[2m > [22mshould not regenerate content when clicking on a link
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould generate correct URL with path only and text_only=true by default
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould generate correct URL with path and anchor
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould generate correct URL without text_only when set to false
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould generate correct URL with anchor and text_only=false
+ [31m×[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle special characters in path
+[31m   → expected 'https://idvorkin--igor-blog-fastapi-a…' to be 'https://idvorkin--igor-blog-fastapi-a…' // Object.is equality[39m
+ [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle empty anchor gracefully
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
+ [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
 [90mstdout[2m | src/__tests__/main.test.ts
 [22m[39m🖼️ Enabling image zoom functionality
 Dev server detected, initializing dev info...
@@ -207,13 +263,6 @@ Dev info - Branch: [1mnull[22m Port: 4000
 [90mstderr[2m | src/__tests__/main.test.ts
 [22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
 
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould log that Force Graph is loaded
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould not initialize the graph when the DOM element doesn't exist
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle ForceGraph not being defined
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle node canvas object rendering
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould handle goto control click
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould build graph data correctly
- [32m✓[39m src/__tests__/graph.test.ts[2m > [22mGraph Module[2m > [22mshould update detail with node information
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould return an array of the same length
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mshuffle[2m > [22mshould contain all the same elements
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -261,8 +310,103 @@ Dev info - Branch: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22mgetCurrentPort[2m > [22mshould return 80 when no port specified
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22mgetCurrentPort[2m > [22mshould return 4000 for Jekyll default
 
-[2m Test Files [22m [1m[32m16 passed[39m[22m[90m (16)[39m
-[2m      Tests [22m [1m[32m180 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (185)[39m
-[2m   Start at [22m 16:10:23
-[2m   Duration [22m 3.93s[2m (transform 542ms, setup 262ms, collect 838ms, tests 437ms, environment 5.81s, prepare 1.35s)[22m
+[31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 4 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
 
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: localhost to production with long anchor
+[31m[1mAssertionError[22m: expected "spy" to be called with arguments: [ Array(1) ][90m
+
+Received: 
+
+[1m  1st spy call:
+
+[22m[2m  [[22m
+[32m-   "http://idvorkin.azurewebsites.net/manager-book/how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",[90m
+[31m+   "https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them&text_only=true",[90m
+[2m  ][22m
+[31m[90m
+
+Number of calls: [1m1[22m
+[31m[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m1148:31[22m[39m
+    [90m1146| [39m        [34mclickHandler[39m(mockEvent)[33m;[39m
+    [90m1147| [39m
+    [90m1148| [39m        [34mexpect[39m(mockClipboard)[33m.[39m[34mtoHaveBeenCalledWith[39m(expected)[33m;[39m
+    [90m   | [39m                              [31m^[39m
+    [90m1149| [39m      }
+    [90m1150| [39m    })[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
+[31m[1mAssertionError[22m: expected "spy" to be called with arguments: [ Array(1) ][90m
+
+Received: 
+
+[1m  1st spy call:
+
+[22m[2m  [[22m
+[32m-   "https://idvorkin.azurewebsites.net/manager-book/test-section",[90m
+[31m+   "https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23test-section&text_only=true",[90m
+[2m  ][22m
+[31m[90m
+
+Number of calls: [1m1[22m
+[31m[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m1148:31[22m[39m
+    [90m1146| [39m        [34mclickHandler[39m(mockEvent)[33m;[39m
+    [90m1147| [39m
+    [90m1148| [39m        [34mexpect[39m(mockClipboard)[33m.[39m[34mtoHaveBeenCalledWith[39m(expected)[33m;[39m
+    [90m   | [39m                              [31m^[39m
+    [90m1149| [39m      }
+    [90m1150| [39m    })[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
+[31m[1mAssertionError[22m: expected "spy" to be called with arguments: [ Array(1) ][90m
+
+Received: 
+
+[1m  1st spy call:
+
+[22m[2m  [[22m
+[32m-   "http://idvorkin.azurewebsites.net/simple-page/anchor",[90m
+[31m+   "https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23anchor&text_only=true",[90m
+[2m  ][22m
+[31m[90m
+
+Number of calls: [1m1[22m
+[31m[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m1148:31[22m[39m
+    [90m1146| [39m        [34mclickHandler[39m(mockEvent)[33m;[39m
+    [90m1147| [39m
+    [90m1148| [39m        [34mexpect[39m(mockClipboard)[33m.[39m[34mtoHaveBeenCalledWith[39m(expected)[33m;[39m
+    [90m   | [39m                              [31m^[39m
+    [90m1149| [39m      }
+    [90m1150| [39m    })[33m;[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mmakeRedirectUrl[2m > [22mshould handle special characters in path
+[31m[1mAssertionError[22m: expected 'https://idvorkin--igor-blog-fastapi-a…' to be 'https://idvorkin--igor-blog-fastapi-a…' // Object.is equality[39m
+
+Expected: [32m"https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=time[7m%20[27moff%2Ftest%23anchor[7m%20[27mname&text_only=true"[39m
+Received: [31m"https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=time[7m+[27moff%2Ftest%23anchor[7m+[27mname&text_only=true"[39m
+
+[36m [2m❯[22m src/__tests__/shared.test.ts:[2m230:19[22m[39m
+    [90m228| [39m    [34mit[39m([32m"should handle special characters in path"[39m[33m,[39m () [33m=>[39m {
+    [90m229| [39m      [35mconst[39m url [33m=[39m [34mmakeRedirectUrl[39m([32m"time off/test"[39m[33m,[39m [32m"anchor name"[39m)[33m;[39m
+    [90m230| [39m      expect(url).toBe("https://idvorkin--igor-blog-fastapi-app.modal.…
+    [90m   | [39m                  [31m^[39m
+    [90m231| [39m    })[33m;[39m
+    [90m232| [39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[2m | [22m[1m[32m14 passed[39m[22m[90m (16)[39m
+[2m      Tests [22m [1m[31m4 failed[39m[22m[2m | [22m[1m[32m182 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (191)[39m
+[2m   Start at [22m 17:00:28
+[2m   Duration [22m 3.99s[2m (transform 576ms, setup 265ms, collect 780ms, tests 507ms, environment 5.88s, prepare 1.38s)[22m
+
+error: Recipe `js-test-verbose-txt` failed on line 44 with exit code 1
