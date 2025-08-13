@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { type IURLInfo, MakeBackLinkHTML, append_randomizer_div, random_from_list, shuffle } from "../../src/shared";
+import { type IURLInfo, MakeBackLinkHTML, append_randomizer_div, random_from_list, shuffle, makeRedirectUrl } from "../../src/shared";
 
 // Add jQuery type declaration
 declare global {
@@ -201,6 +201,38 @@ describe("Shared Utility Functions", () => {
 
       // Verify no new content was generated
       expect(htmlFactory).not.toHaveBeenCalled();
+    });
+  });
+
+  describe("makeRedirectUrl", () => {
+    it("should generate correct URL with path only and text_only=true by default", () => {
+      const url = makeRedirectUrl("timeoff");
+      expect(url).toBe("https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=timeoff&text_only=true");
+    });
+
+    it("should generate correct URL with path and anchor", () => {
+      const url = makeRedirectUrl("timeoff", "very-vegetating");
+      expect(url).toBe("https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=timeoff%23very-vegetating&text_only=true");
+    });
+
+    it("should generate correct URL without text_only when set to false", () => {
+      const url = makeRedirectUrl("timeoff", undefined, false);
+      expect(url).toBe("https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=timeoff");
+    });
+
+    it("should generate correct URL with anchor and text_only=false", () => {
+      const url = makeRedirectUrl("timeoff", "section-name", false);
+      expect(url).toBe("https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=timeoff%23section-name");
+    });
+
+    it("should handle special characters in path", () => {
+      const url = makeRedirectUrl("time off/test", "anchor name");
+      expect(url).toBe("https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=time%20off%2Ftest%23anchor%20name&text_only=true");
+    });
+
+    it("should handle empty anchor gracefully", () => {
+      const url = makeRedirectUrl("page", "");
+      expect(url).toBe("https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=page&text_only=true");
     });
   });
 });
