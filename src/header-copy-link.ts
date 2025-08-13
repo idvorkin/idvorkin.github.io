@@ -4,6 +4,8 @@
  * Handles domain remapping from idvork.in to idvorkin.azurewebsites.net
  */
 
+import { makeRedirectUrl } from "./shared";
+
 interface CopyLinkOptions {
   iconClass?: string;
   tooltipDuration?: number;
@@ -277,27 +279,31 @@ function transformUrl(url: string, options: CopyLinkOptions): string {
  */
 async function copyHeaderLink(headerId: string, options: CopyLinkOptions): Promise<void> {
   try {
-    // Get the current URL without any existing hash
-    const baseUrl = window.location.href.split("#")[0];
-    const fullUrl = `${baseUrl}#${headerId}`;
-
-    // Apply URL transformation
-    const transformedUrl = transformUrl(fullUrl, options);
+    // Get the current page path
+    const pathname = window.location.pathname;
+    const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
+    
+    // Generate the modal.run redirect URL
+    const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
 
     // Copy to clipboard
-    await navigator.clipboard.writeText(transformedUrl);
+    await navigator.clipboard.writeText(redirectUrl);
 
-    console.log(`Copied header link: ${transformedUrl}`);
+    console.log(`Copied header link: ${redirectUrl}`);
   } catch (error) {
     console.error("Failed to copy header link:", error);
 
     // Fallback for older browsers
     const textArea = document.createElement("textarea");
-    const baseUrl = window.location.href.split("#")[0];
-    const fullUrl = `${baseUrl}#${headerId}`;
-    const transformedUrl = transformUrl(fullUrl, options);
+    
+    // Get the current page path
+    const pathname = window.location.pathname;
+    const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
+    
+    // Generate the modal.run redirect URL
+    const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
 
-    textArea.value = transformedUrl;
+    textArea.value = redirectUrl;
     document.body.appendChild(textArea);
     textArea.select();
     document.execCommand("copy");

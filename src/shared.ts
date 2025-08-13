@@ -111,6 +111,35 @@ export interface IURLInfo {
 let cached_link_info: IURLInfoMap = null;
 
 /**
+ * Creates a modal.run redirect URL for preview
+ * @param path - The page path (e.g., "timeoff")
+ * @param anchor - Optional anchor/section (e.g., "very-vegetating")
+ * @param textOnly - Whether to use text-only preview mode
+ * @returns The formatted modal.run URL with query parameters
+ */
+export function makeRedirectUrl(path: string, anchor?: string, textOnly: boolean = true): string {
+  const baseUrl = "https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/";
+  
+  // Combine path and anchor with # if anchor exists
+  let fullPath = path;
+  if (anchor) {
+    fullPath = `${path}#${anchor}`;
+  }
+  
+  // URL encode the path parameter
+  const encodedPath = encodeURIComponent(fullPath);
+  
+  // Build the query string
+  const params = new URLSearchParams();
+  params.append("path", fullPath);
+  if (textOnly) {
+    params.append("text_only", "true");
+  }
+  
+  return `${baseUrl}?${params.toString()}`;
+}
+
+/**
  * Gets link information from the back-links.json file
  */
 export async function get_link_info(url?: string): Promise<IURLInfoMap> {
