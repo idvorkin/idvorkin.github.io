@@ -222,8 +222,6 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 
 ### Physical Health
 
-- **Nothing tastes as good as skinny feels** - So true, regardless of the metric: feeling great, looking great.
-- **No booze** - Those days are over for me. Messes up my sleep and I Feel worse. Go take a cold shower instead.
 - **GET A GYM MEMBERSHIP** - Gym is a fantastic place to focus on strength and renewal and anchor the day. I got a gym membership with GoodLife, let me do my top priorities daily, even had a massage chair.
 
 - **Bring bands, light gym equipment** - Have everything to stretch and self-massage, and light workouts
@@ -235,11 +233,32 @@ Here are the combined learnings from my time offs. Igor needs to read and intern
 - **Bring kettlebells and a heavy club** - Portable strength tools for short, high-value sessions.
 - **Morning movement daily** - 10–20 minutes of mobility/strength to anchor the day. On driving days, do 5–10 minute micro-sessions at rest stops.
 
-- **Bring stuff to help you eat healthy**
-  - Bring the microwavable popcorn popper and instant soup. These are some of my favorite low-calorie foods.
-  - Bring a travel scale - that mindfulness around weight is great.
 
 ### Diet
+
+#### Mindset
+
+- **Nothing tastes as good as skinny feels** - So true, regardless of the metric: feeling great, looking great.
+
+#### Alcohol
+
+- **No booze** - Those days are over for me. Messes up my sleep and I Feel worse. Go take a cold shower instead.
+- Airports and trips: Don't drink too much.
+
+#### Tools and Prep
+
+- Bring the microwavable popcorn popper and instant soup. These are some of my favorite low-calorie foods.
+- Bring a travel scale - that mindfulness around weight is great.
+
+#### Travel Nutrition
+
+##### Airports
+
+- Bring power bars as reliable low-effort snacks.
+
+##### Road trips
+
+- Bring a cooler. Buy fruits/vegetables and keep them in the cooler and hotel fridge.
 
 #### Breakfast
 
@@ -297,8 +316,8 @@ Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead 
   - Lost my popcorn popper and my balloon pump and my laptop. Turns out in the extra pocket, I forgot.
 - Airport
   - Hanging at the airport early is totally fine - don't worry it's better than being there late.
-  - Bring power bars
-  - Don't drink too much
+  - Airport snacks: see Diet → Travel Nutrition → Airports
+  - Alcohol: see Diet → Alcohol
   - Take Sudafed
   - Get AirPlugs
   - Get Nexus/Frequent Traveler card (well worth the 100 bucks)
@@ -329,7 +348,7 @@ Ensure I don't run out of terzepatide during trips/time off. Plan refills ahead 
 ### Road Trip Tips
 
 - Bring Kettlebells
-- Bring a cooler - Buy fruits/vegtables and put them in there cooler and hotel fridge.
+ - Road-trip food plan: see Diet → Travel Nutrition → Road trips
 - Lots of audiobooks
 - Stop at walmart
 - Set an end-of-day location that's only 4 hours of driving, otherwise, you'll end up spending not enough time smelling the roses.
