@@ -168,3 +168,17 @@ brew link libffi
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"                                                                                                                                             1 ↵
 rbenv install  2.7.3
 ```
+
+### Tech issues
+
+#### Jekyll downloading instead of rendering page
+
+- Symptom: Visiting pages triggers a file download instead of rendering HTML.
+- Likely cause: A stray root-level file without an extension (e.g., `1`) with YAML front matter causes incorrect content-type handling. See the cleanup in this commit: [Remove junk file causing downloads](https://github.com/idvorkin/idvorkin.github.io/commit/65e940e2cfa83ab0e6fd084380bfc3ee094138f5).
+- Fix:
+  - Remove any root-level files without proper extensions (`.md`, `.html`) or misplaced pages. Keep content under `_posts`, `_d`, etc.
+  - Clear Jekyll build artifacts, then let the running server rebuild:
+    ```bash
+    rm -rf _site .jekyll-cache .sass-cache
+    ```
+  - Reload `http://localhost:4000` after the rebuild completes.
