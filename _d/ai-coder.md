@@ -525,6 +525,16 @@ One you crack the interventions per hour, and that's coming more and more, your 
 
 On Tesla self driving the thing we talk about is "% drives with interventions". This is what really matters, how often you have to take over. Your job is to figure out how to reduce your interventions. Most things apply here.
 
+### Multi-agent orchestration stress
+
+- Don't feel the need to run four agents. More agents increase cognitive load and coordination overhead.
+- When interventions per hour are high, adding agents makes confusion worse: parallel edits, re-explanations, and merge pain.
+- Default to one strong agent with clear specs and tests; let it run longer between interventions.
+- Scale cautiously to two agents only when ownership is cleanly separated and a single "conductor" coordinates.
+- Prefer sequential pipelines and handoffs (spec → tests → implementation → review) over a concurrent free‑for‑all.
+- Signs you have too many agents: constant context switching, merging conflicting changes, or feeling stressed.
+- Rule of thumb: reduce agents until stress drops and throughput rises.
+
 ### Don't be the junior developer
 
 If you notice AI writing the code, and yourself doing the manual testing - you've outsourced the junior developer role, but hired yourself as the junior tester. Make the AI the junior tester too.
