@@ -285,29 +285,55 @@ async function copyHeaderLink(headerId: string, options: CopyLinkOptions): Promi
     
     // Generate the modal.run redirect URL
     const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
+    
+    // Fetch the content from the modal.run URL
+    console.log(`Fetching content from: ${redirectUrl}`);
+    const response = await fetch(redirectUrl);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch content: ${response.status}`);
+    }
+    
+    const textContent = await response.text();
 
-    // Copy to clipboard
-    await navigator.clipboard.writeText(redirectUrl);
+    // Copy the fetched text content to clipboard
+    await navigator.clipboard.writeText(textContent);
 
-    console.log(`Copied header link: ${redirectUrl}`);
+    console.log(`Copied content from: ${redirectUrl}`);
   } catch (error) {
-    console.error("Failed to copy header link:", error);
+    console.error("Failed to copy header content:", error);
 
-    // Fallback for older browsers
-    const textArea = document.createElement("textarea");
-    
-    // Get the current page path
-    const pathname = window.location.pathname;
-    const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
-    
-    // Generate the modal.run redirect URL
-    const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
-
-    textArea.value = redirectUrl;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textArea);
+    // Fallback: try to fetch and copy, or copy the URL if fetch fails
+    try {
+      const pathname = window.location.pathname;
+      const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
+      const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
+      
+      // Try to fetch content even in fallback
+      const response = await fetch(redirectUrl);
+      const textContent = await response.text();
+      
+      // Use textarea fallback for copying
+      const textArea = document.createElement("textarea");
+      textArea.value = textContent;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+    } catch (fallbackError) {
+      // If all else fails, copy the URL itself
+      console.error("Fallback also failed, copying URL instead:", fallbackError);
+      const pathname = window.location.pathname;
+      const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
+      const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
+      
+      const textArea = document.createElement("textarea");
+      textArea.value = redirectUrl;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+    }
   }
 }
 
