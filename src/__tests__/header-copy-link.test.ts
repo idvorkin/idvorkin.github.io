@@ -295,8 +295,8 @@ describe("Header Copy Link", () => {
 
         await clickHandler(mockEvent);
 
-        // Should copy the transformed URL with domain mapping and slash instead of hash
-        expect(mockClipboard).toHaveBeenCalledWith("http://idvorkin.azurewebsites.net/manager-book/test-section");
+        // Should copy the modal.run redirect URL with query parameters
+        expect(mockClipboard).toHaveBeenCalledWith("https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23test-section&text_only=true");
       }
     });
 
