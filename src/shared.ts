@@ -117,7 +117,7 @@ let cached_link_info: IURLInfoMap = null;
  * @returns The formatted modal.run redirect URL with query parameters
  */
 export function makeRedirectUrl(path: string, anchor?: string): string {
-  const baseUrl = "https://idvorkin--igor-blog-fastapi-app.modal.run/redirect/";
+  const baseUrl = "https://tinyurl.com/igor-blog/";
   
   // Combine path and anchor with # if anchor exists
   let fullPath = path;

@@ -296,7 +296,7 @@ describe("Header Copy Link", () => {
         await clickHandler(mockEvent);
 
         // Should copy the modal.run redirect URL with query parameters
-        expect(mockClipboard).toHaveBeenCalledWith("https://idvorkin--igor-blog-fastapi-app.modal.run/redirect/?path=manager-book%23test-section");
+        expect(mockClipboard).toHaveBeenCalledWith("https://tinyurl.com/igor-blog/?path=manager-book%23test-section");
       }
     });
 
@@ -1094,17 +1094,17 @@ describe("URL Transformation Logic", () => {
       input:
         "http://localhost:4000/manager-book#how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",
       expected:
-        "https://idvorkin--igor-blog-fastapi-app.modal.run/redirect/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",
+        "https://tinyurl.com/igor-blog/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",
       description: "localhost to production with long anchor",
     },
     {
       input: "https://idvork.in/manager-book#test-section",
-      expected: "https://idvorkin--igor-blog-fastapi-app.modal.run/redirect/?path=manager-book%23test-section",
+      expected: "https://tinyurl.com/igor-blog/?path=manager-book%23test-section",
       description: "production domain mapping",
     },
     {
       input: "http://localhost:4000/simple-page#anchor",
-      expected: "https://idvorkin--igor-blog-fastapi-app.modal.run/redirect/?path=simple-page%23anchor",
+      expected: "https://tinyurl.com/igor-blog/?path=simple-page%23anchor",
       description: "simple case",
     },
   ];
