@@ -1094,17 +1094,17 @@ describe("URL Transformation Logic", () => {
       input:
         "http://localhost:4000/manager-book#how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",
       expected:
-        "http://idvorkin.azurewebsites.net/manager-book/how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",
+        "https://idvorkin--igor-blog-fastapi-app.modal.run/redirect/?path=manager-book%23how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them",
       description: "localhost to production with long anchor",
     },
     {
       input: "https://idvork.in/manager-book#test-section",
-      expected: "https://idvorkin.azurewebsites.net/manager-book/test-section",
+      expected: "https://idvorkin--igor-blog-fastapi-app.modal.run/redirect/?path=manager-book%23test-section",
       description: "production domain mapping",
     },
     {
       input: "http://localhost:4000/simple-page#anchor",
-      expected: "http://idvorkin.azurewebsites.net/simple-page/anchor",
+      expected: "https://idvorkin--igor-blog-fastapi-app.modal.run/redirect/?path=simple-page%23anchor",
       description: "simple case",
     },
   ];
@@ -1122,6 +1122,9 @@ describe("URL Transformation Logic", () => {
       // Extract the base URL and anchor from input
       const [baseUrl, anchor] = input.split("#");
       mockWindow.location.href = baseUrl;
+      // Also update pathname for the test
+      const url = new URL(baseUrl);
+      mockWindow.location.pathname = url.pathname;
 
       const mockHeader = createMockHeader(anchor, "Test Header");
 
