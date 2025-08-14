@@ -284,55 +284,32 @@ async function copyHeaderLink(headerId: string, options: CopyLinkOptions): Promi
     const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
     
     // Generate the modal.run redirect URL
-    const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
+    const redirectUrl = makeRedirectUrl(pagePath, headerId);
     
-    // Fetch the content from the modal.run URL
-    console.log(`Fetching content from: ${redirectUrl}`);
-    const response = await fetch(redirectUrl);
-    
-    if (!response.ok) {
-      throw new Error(`Failed to fetch content: ${response.status}`);
-    }
-    
-    const textContent = await response.text();
+    // Copy the redirect URL to clipboard
+    await navigator.clipboard.writeText(redirectUrl);
 
-    // Copy the fetched text content to clipboard
-    await navigator.clipboard.writeText(textContent);
-
-    console.log(`Copied content from: ${redirectUrl}`);
+    console.log(`Copied redirect URL: ${redirectUrl}`);
   } catch (error) {
-    console.error("Failed to copy header content:", error);
+    console.error("Failed to copy header link:", error);
 
-    // Fallback: try to fetch and copy, or copy the URL if fetch fails
+    // Fallback: use textarea method if clipboard API fails
     try {
       const pathname = window.location.pathname;
       const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
-      const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
-      
-      // Try to fetch content even in fallback
-      const response = await fetch(redirectUrl);
-      const textContent = await response.text();
+      const redirectUrl = makeRedirectUrl(pagePath, headerId);
       
       // Use textarea fallback for copying
-      const textArea = document.createElement("textarea");
-      textArea.value = textContent;
-      document.body.appendChild(textArea);
-      textArea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textArea);
-    } catch (fallbackError) {
-      // If all else fails, copy the URL itself
-      console.error("Fallback also failed, copying URL instead:", fallbackError);
-      const pathname = window.location.pathname;
-      const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
-      const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
-      
       const textArea = document.createElement("textarea");
       textArea.value = redirectUrl;
       document.body.appendChild(textArea);
       textArea.select();
       document.execCommand("copy");
       document.body.removeChild(textArea);
+      
+      console.log(`Copied redirect URL (fallback): ${redirectUrl}`);
+    } catch (fallbackError) {
+      console.error("Failed to copy URL even with fallback:", fallbackError);
     }
   }
 }

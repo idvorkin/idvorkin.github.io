@@ -296,7 +296,7 @@ describe("Header Copy Link", () => {
         await clickHandler(mockEvent);
 
         // Should copy the modal.run redirect URL with query parameters
-        expect(mockClipboard).toHaveBeenCalledWith("https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/?path=manager-book%23test-section&text_only=true");
+        expect(mockClipboard).toHaveBeenCalledWith("https://idvorkin--igor-blog-fastapi-app.modal.run/redirect/?path=manager-book%23test-section");
       }
     });
 
