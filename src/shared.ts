@@ -111,14 +111,13 @@ export interface IURLInfo {
 let cached_link_info: IURLInfoMap = null;
 
 /**
- * Creates a modal.run redirect URL for preview
+ * Creates a modal.run redirect URL that will redirect to the proper blog page
  * @param path - The page path (e.g., "timeoff")
  * @param anchor - Optional anchor/section (e.g., "very-vegetating")
- * @param textOnly - Whether to use text-only preview mode
- * @returns The formatted modal.run URL with query parameters
+ * @returns The formatted modal.run redirect URL with query parameters
  */
-export function makeRedirectUrl(path: string, anchor?: string, textOnly: boolean = true): string {
-  const baseUrl = "https://idvorkin--igor-blog-fastapi-app.modal.run/preview_text/";
+export function makeRedirectUrl(path: string, anchor?: string): string {
+  const baseUrl = "https://tinyurl.com/igor-blog/";
   
   // Combine path and anchor with # if anchor exists
   let fullPath = path;
@@ -129,14 +128,10 @@ export function makeRedirectUrl(path: string, anchor?: string, textOnly: boolean
   // URL encode the path parameter
   const encodedPath = encodeURIComponent(fullPath);
   
-  // Build the query string
-  const params = new URLSearchParams();
-  params.append("path", fullPath);
-  if (textOnly) {
-    params.append("text_only", "true");
-  }
+  // Build the URL with query parameters
+  const url = `${baseUrl}?path=${encodedPath}`;
   
-  return `${baseUrl}?${params.toString()}`;
+  return url;
 }
 
 /**

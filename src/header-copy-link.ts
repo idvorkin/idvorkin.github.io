@@ -284,30 +284,33 @@ async function copyHeaderLink(headerId: string, options: CopyLinkOptions): Promi
     const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
     
     // Generate the modal.run redirect URL
-    const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
-
-    // Copy to clipboard
+    const redirectUrl = makeRedirectUrl(pagePath, headerId);
+    
+    // Copy the redirect URL to clipboard
     await navigator.clipboard.writeText(redirectUrl);
 
-    console.log(`Copied header link: ${redirectUrl}`);
+    console.log(`Copied redirect URL: ${redirectUrl}`);
   } catch (error) {
     console.error("Failed to copy header link:", error);
 
-    // Fallback for older browsers
-    const textArea = document.createElement("textarea");
-    
-    // Get the current page path
-    const pathname = window.location.pathname;
-    const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
-    
-    // Generate the modal.run redirect URL
-    const redirectUrl = makeRedirectUrl(pagePath, headerId, true);
-
-    textArea.value = redirectUrl;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textArea);
+    // Fallback: use textarea method if clipboard API fails
+    try {
+      const pathname = window.location.pathname;
+      const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
+      const redirectUrl = makeRedirectUrl(pagePath, headerId);
+      
+      // Use textarea fallback for copying
+      const textArea = document.createElement("textarea");
+      textArea.value = redirectUrl;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      
+      console.log(`Copied redirect URL (fallback): ${redirectUrl}`);
+    } catch (fallbackError) {
+      console.error("Failed to copy URL even with fallback:", fallbackError);
+    }
   }
 }
 
