@@ -16,6 +16,21 @@ WORKDIR /home/developer
 # Use bash for commands (zsh is at different location)
 SHELL ["/bin/bash", "-c"]
 
+# Update the repos
+# Clone the main repos
+
+RUN ln -s ~/settings ~/gits/settings
+
+RUN cd ~/gits && \
+    for repo in */; do \
+        if [ -d "$repo/.git" ]; then \
+            echo "Updating $repo"; \
+            cd "$repo" && git fetch && git rebase && cd ..; \
+        fi; \
+    done
+
+
+
 # Add any development tools or experimental features here
 # Examples:
 # - Additional language servers for neovim
@@ -53,6 +68,8 @@ RUN echo '# Docker container prompt setup' >> ~/.zshrc && \
     echo '[ -f /etc/profile.d/container-prompt.sh ] && source /etc/profile.d/container-prompt.sh' >> ~/.zshrc && \
     echo '# Docker container prompt setup' >> ~/.bashrc && \
     echo '[ -f /etc/profile.d/container-prompt.sh ] && source /etc/profile.d/container-prompt.sh' >> ~/.bashrc
+
+RUN brew install yazi tig
 
 WORKDIR /home/developer/gits
 LABEL description="Development layer with Claude YOLO mode and container prompt"

@@ -21,10 +21,17 @@ if ! docker images | grep -q "claude-docker.*minimal"; then
 fi
 
 # Build development layer
+DOCKER_BUILD_ARGS=""
+if [ "$DOCKER_BUILD_NO_CACHE" = "1" ]; then
+    echo "🚫 Building without cache..."
+    DOCKER_BUILD_ARGS="--no-cache"
+fi
+
 docker build \
     --platform linux/arm64 \
     -f Dockerfile.3-development \
     -t claude-docker:dev \
+    $DOCKER_BUILD_ARGS \
     .
 
 echo "✅ Development layer built successfully!"

@@ -86,8 +86,10 @@
       "Bash(bundle exec:*)",
       "Bash(/dev/null)",
       "Bash(git worktree:*)",
-      "Bash(git -C /Users/idvorkin/gits/cc_blog/fetch-modal-content-on-copy push)"
+      "Bash(git -C /Users/idvorkin/gits/cc_blog/fetch-modal-content-on-copy push)",
+      "Bash(env)"
     ],
-    "deny": []
+    "deny": [],
+    "defaultMode": "acceptEdits"
   }
 }

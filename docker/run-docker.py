@@ -54,11 +54,11 @@ CONTAINER_NAME_PATTERN = re.compile(r'^claude-dev-\d+$')
 
 class ContainerState:
     """Manages container state persistence"""
-    
+
     def __init__(self, state_file: Path = STATE_FILE):
         self.state_file = state_file
         self.state = self._load_state()
-    
+
     def _load_state(self) -> Dict:
         """Load state from file or create new"""
         if self.state_file.exists():
@@ -68,14 +68,14 @@ class ContainerState:
             except json.JSONDecodeError:
                 console.print("[yellow]⚠ Invalid state file, creating new one[/yellow]")
         return {"containers": []}
-    
+
     def save(self):
         """Save state to file with proper permissions"""
         with open(self.state_file, 'w') as f:
             json.dump(self.state, f, indent=2)
         # Set restrictive permissions (owner read/write only)
         self.state_file.chmod(stat.S_IRUSR | stat.S_IWUSR)
-    
+
     def add_container(self, name: str, image: str, jekyll_port: int, livereload_port: int):
         """Add a new container to state"""
         container = {
@@ -90,7 +90,7 @@ class ContainerState:
         }
         self.state["containers"].append(container)
         self.save()
-    
+
     def update_last_used(self, name: str):
         """Update last used timestamp for container"""
         for container in self.state["containers"]:
@@ -98,21 +98,21 @@ class ContainerState:
                 container["last_used"] = datetime.now().isoformat()
                 self.save()
                 break
-    
+
     def remove_container(self, name: str):
         """Remove container from state"""
         self.state["containers"] = [
             c for c in self.state["containers"] if c["name"] != name
         ]
         self.save()
-    
+
     def get_container(self, name: str) -> Optional[Dict]:
         """Get container info by name"""
         for container in self.state["containers"]:
             if container["name"] == name:
                 return container
         return None
-    
+
     def list_containers(self) -> List[Dict]:
         """Get all containers"""
         return self.state["containers"]
@@ -120,7 +120,7 @@ class ContainerState:
 
 class DockerManager:
     """Manages Docker operations"""
-    
+
     def __init__(self):
         try:
             self.client = docker.from_env()
@@ -128,7 +128,7 @@ class DockerManager:
             console.print(f"[red]❌ Docker not available: {e}[/red]")
             sys.exit(1)
         self.state = ContainerState()
-    
+
     def find_free_port(self, start_port: int) -> Optional[int]:
         """Find a free port starting from start_port"""
         for port in range(start_port, start_port + PORT_SEARCH_RANGE):
@@ -139,7 +139,7 @@ class DockerManager:
                 except OSError:
                     continue
         return None
-    
+
     def get_container_status(self, name: str) -> str:
         """Get container status (running/stopped/not found)"""
         try:
@@ -147,11 +147,11 @@ class DockerManager:
             return container.status
         except NotFound:
             return "not found"
-    
+
     def build_volume_mounts(self) -> Dict[str, Dict]:
         """Build volume mount configuration"""
         mounts = {}
-        
+
         # Git config
         gitconfig = (Path.home() / ".gitconfig").resolve()
         if gitconfig.exists() and gitconfig.is_file():
@@ -159,7 +159,7 @@ class DockerManager:
                 "bind": "/home/developer/.gitconfig",
                 "mode": "ro"
             }
-        
+
         # SSH config
         ssh_dir = (Path.home() / ".ssh").resolve()
         if ssh_dir.exists() and ssh_dir.is_dir():
@@ -167,13 +167,13 @@ class DockerManager:
                 "bind": "/home/developer/.ssh",
                 "mode": "ro"
             }
-        
+
         # Docker directory (read-only)
         mounts[str(DOCKER_DIR)] = {
             "bind": "/ro_host_docker",
             "mode": "ro"
         }
-        
+
         # Claude credentials
         claude_dirs = [
             Path.home() / ".claude",
@@ -186,71 +186,84 @@ class DockerManager:
                     "mode": "rw"
                 }
                 break
-        
+
         return mounts
-    
+
     def build_environment(self, container_name: str) -> Dict[str, str]:
         """Build environment variables"""
         env = {}
-        
+
         # Claude config
         claude_dirs = [Path.home() / ".claude", Path.home() / ".config" / "claude"]
         if any(d.exists() for d in claude_dirs):
             env["CLAUDE_CONFIG_DIR"] = "/claude"
-        
-        # GitHub token
-        if github_token := os.environ.get("GITHUB_TOKEN"):
-            # Basic validation for GitHub token format
-            if re.match(r'^(gh[ps]_[a-zA-Z0-9]{36,}|github_pat_[a-zA-Z0-9]{22}_[a-zA-Z0-9]{59})$', github_token):
-                env["GITHUB_TOKEN"] = github_token
-        
-        # Git config
-        try:
-            git_name = subprocess.run(
-                ["git", "config", "user.name"],
-                capture_output=True, text=True, check=False
-            ).stdout.strip() or "AI+idvorkin"
-            git_email = subprocess.run(
-                ["git", "config", "user.email"],
-                capture_output=True, text=True, check=False
-            ).stdout.strip() or "aitools-idvorkin@gmail.com"
-        except (subprocess.SubprocessError, OSError):
-            git_name = "AI+idvorkin"
-            git_email = "aitools-idvorkin@gmail.com"
-        
+
+        # Explicit allowlist of environment variables to pass through
+        env_allowlist = [
+            # API Keys
+            "ASSEMBLYAI_API_KEY",
+            "DEEPGRAM_API_KEY",
+            "ELEVEN_API_KEY",
+            "EXA_API_KEY",
+            "GITHUB_TOKEN",
+            "GITHUB_PERSONAL_ACCESS_TOKEN",
+            "GROQ_API_KEY",
+            "LANGCHAIN_API_KEY",
+            "ONEBUSAWAY_API_KEY",
+            "OPENAI_API_KEY",
+            "PPLX_API_KEY",
+            "REPLICATE_API_TOKEN",
+            "TONY_API_KEY",
+            "TONY_STORAGE_SERVER_API_KEY",
+            "VAPI_API_KEY",
+        ]
+
+        # Pass through allowlisted environment variables from host
+        for var_name in env_allowlist:
+            if value := os.environ.get(var_name):
+                # Only add if value is not empty
+                if value.strip():
+                    env[var_name] = value
+
+        # TODO: Get AI Tools git values
+
+        # Hard code Git config
+        git_name = "AI+idvorkin"
+        git_email = "aitools-idvorkin@gmail.com"
+
         env["GIT_AUTHOR_NAME"] = git_name
         env["GIT_AUTHOR_EMAIL"] = git_email
-        
+
         # Playwright
         env["PLAYWRIGHT_BROWSERS_PATH"] = "/home/developer/.cache/ms-playwright"
-        
+
         # Container name for prompt
         env["DOCKER_CONTAINER_NAME"] = container_name
-        
+
         # Terminal
         env["TERM"] = os.environ.get("TERM", "xterm-256color")
-        
+
         return env
-    
+
     def list_containers(self):
         """List all containers with their status"""
         containers = self.state.list_containers()
-        
+
         if not containers:
             console.print("[yellow]No containers found[/yellow]")
             return
-        
+
         # Clean up state for non-existent containers
         for container in containers[:]:
             status = self.get_container_status(container["name"])
             if status == "not found":
                 self.state.remove_container(container["name"])
                 containers.remove(container)
-        
+
         if not containers:
             console.print("[yellow]No containers found (cleaned up stale entries)[/yellow]")
             return
-        
+
         table = Table(title="Claude Docker Containers", show_header=True, header_style="bold cyan")
         table.add_column("#", style="green", width=3)
         table.add_column("Name", style="cyan")
@@ -258,16 +271,16 @@ class DockerManager:
         table.add_column("Jekyll Port", style="green")
         table.add_column("LiveReload Port", style="green")
         table.add_column("Last Used")
-        
+
         for i, container in enumerate(containers, 1):
             status = self.get_container_status(container["name"])
             status_style = "green" if status == "running" else "red" if status == "exited" else "yellow"
-            
+
             try:
                 last_used = datetime.fromisoformat(container["last_used"]).strftime("%Y-%m-%d %H:%M")
             except (ValueError, KeyError):
                 last_used = "Unknown"
-            
+
             table.add_row(
                 str(i),
                 container["name"],
@@ -276,46 +289,46 @@ class DockerManager:
                 str(container["ports"]["livereload"]),
                 last_used
             )
-        
+
         console.print(table)
-    
+
     def attach_container(self, container_name: str):
         """Attach to an existing container"""
         # Validate container name format
         if not CONTAINER_NAME_PATTERN.match(container_name):
             console.print(f"[red]❌ Invalid container name format: {container_name}[/red]")
             return
-        
+
         container_info = self.state.get_container(container_name)
         if not container_info:
             console.print(f"[red]❌ Container {container_name} not found in state[/red]")
             return
-        
+
         try:
             container = self.client.containers.get(container_name)
-            
+
             # Start if stopped
             if container.status != "running":
                 console.print(f"[yellow]⚠ Container is stopped, starting it...[/yellow]")
                 container.start()
-            
+
             # Update last used
             self.state.update_last_used(container_name)
-            
+
             # Display port info
             jekyll_port = container_info["ports"]["jekyll"]
             livereload_port = container_info["ports"]["livereload"]
-            
+
             console.print(Panel(
                 f"[green]Jekyll:[/green] http://localhost:{jekyll_port}\n"
                 f"[green]LiveReload:[/green] {livereload_port}",
                 title="Container Ports",
                 border_style="green"
             ))
-            
+
             # Attach to container
             console.print(f"\n[green]🐳 Attaching to container: {container_name}[/green]\n")
-            
+
             # Use subprocess for interactive shell
             subprocess.run([
                 "docker", "exec", "-it",
@@ -324,25 +337,25 @@ class DockerManager:
                 container_name,
                 "/home/linuxbrew/.linuxbrew/bin/zsh"
             ])
-            
+
         except NotFound:
             console.print(f"[red]❌ Container {container_name} not found[/red]")
             self.state.remove_container(container_name)
         except APIError as e:
             console.print(f"[red]❌ Docker API error: {e}[/red]")
-    
+
     def create_container(self, image: str = DEFAULT_IMAGE):
         """Create and run a new container"""
         console.print(f"[green]🐳 Creating new Docker container with image: {image}[/green]\n")
-        
+
         # Find free ports
         jekyll_port = self.find_free_port(DEFAULT_JEKYLL_PORT)
         livereload_port = self.find_free_port(DEFAULT_LIVERELOAD_PORT)
-        
+
         if not jekyll_port or not livereload_port:
             console.print("[red]❌ Failed to find free ports[/red]")
             return
-        
+
         if jekyll_port != DEFAULT_JEKYLL_PORT or livereload_port != DEFAULT_LIVERELOAD_PORT:
             console.print(Panel(
                 f"[yellow]Using alternate ports:[/yellow]\n"
@@ -350,66 +363,73 @@ class DockerManager:
                 f"LiveReload: [green]{livereload_port}[/green] (instead of 35729)",
                 border_style="yellow"
             ))
-        
+
         # Generate container name
         container_name = f"claude-dev-{int(datetime.now().timestamp())}"
-        
+
         # Build configuration
         volumes = self.build_volume_mounts()
         environment = self.build_environment(container_name)
-        
+
         # Display mount status
         mount_info = []
         if str(DOCKER_DIR) in volumes:
             mount_info.append("[green]✓[/green] Docker directory mounted at /ro_host_docker")
-        
+
         claude_mounted = False
         for path in volumes:
             if "/claude" in volumes[path]["bind"]:
                 mount_info.append(f"[green]✓[/green] Claude credentials mounted from {path}")
                 claude_mounted = True
                 break
-        
+
         if not claude_mounted:
             mount_info.append("[yellow]⚠[/yellow] Claude credentials not found")
             mount_info.append("  Run 'claude auth login' on host first")
-        
+
         if "GITHUB_TOKEN" in environment:
             mount_info.append("[green]✓[/green] GitHub token configured")
-        
+
+        # Count API keys being passed through
+        api_key_count = sum(1 for key in environment.keys()
+                           if any(pattern in key for pattern in
+                                 ["_KEY", "_TOKEN", "_API", "_SID", "_WEBHOOK"]))
+        if api_key_count > 0:
+            mount_info.append(f"[green]✓[/green] {api_key_count} API keys/tokens passed through")
+
         console.print(Panel("\n".join(mount_info), title="Configuration", border_style="green"))
-        
+
         # Save container state
         self.state.add_container(container_name, image, jekyll_port, livereload_port)
-        
+
         console.print(f"\n[green]✓ Container name: {container_name}[/green]\n")
-        
+
         # Run container using subprocess for interactive shell
         cmd = [
             "docker", "run", "-it",
             "--name", container_name
         ]
-        
+
         # Add volumes
         for host_path, mount_config in volumes.items():
             cmd.extend(["-v", f"{host_path}:{mount_config['bind']}:{mount_config['mode']}"])
-        
+
         # Add environment variables
         for key, value in environment.items():
             cmd.extend(["-e", f"{key}={value}"])
-        
+
         # Add port mappings
         cmd.extend([
             "-p", f"{jekyll_port}:4000",
             "-p", f"{livereload_port}:35729"
         ])
-        
+
         # Add image and command
         cmd.extend([image, "/home/linuxbrew/.linuxbrew/bin/zsh"])
-        
+
         # Run the container
         subprocess.run(cmd)
-    
+
     def delete_container(self, container_name: str):
         """Delete a container"""
         try:
@@ -428,27 +448,27 @@ class DockerManager:
 def interactive():
     """Interactive menu for container management (default)"""
     manager = DockerManager()
-    
+
     console.print(Panel(
         "[bold cyan]Claude Docker Container Manager[/bold cyan]",
         expand=False,
         border_style="cyan"
     ))
-    
+
     while True:
         console.print("\n")
         manager.list_containers()
         console.print("\n")
-        
+
         console.print("[green][N][/green] Create new container")
         console.print("[green][A][/green] Attach to container by number")
         console.print("[green][D][/green] Delete container")
         console.print("[green][R][/green] Refresh list")
         console.print("[green][Q][/green] Quit")
         console.print()
-        
+
         choice = Prompt.ask("Choose an option", default="q").lower()
-        
+
         if choice == 'n':
             manager.create_container()
             break
@@ -531,22 +551,69 @@ def clean():
     """Remove all Claude Docker containers"""
     if not Confirm.ask("Remove ALL Claude Docker containers?", default=False):
         return
-    
+
     manager = DockerManager()
     containers = manager.state.list_containers()
-    
+
     for container in containers:
         console.print(f"Deleting {container['name']}...")
         manager.delete_container(container["name"])
-    
+
     console.print("[green]✓ Cleanup complete[/green]")
+
+
+@app.command()
+def rebuild(
+    no_cache: bool = typer.Option(True, "--no-cache/--cache", help="Build without using cache"),
+    image_tag: str = typer.Option("dev", "--tag", "-t", help="Image tag to build (dev, minimal, claude)")
+):
+    """Force rebuild the Docker image"""
+    console.print(f"[bold cyan]🔨 Rebuilding Docker image: claude-docker:{image_tag}[/bold cyan]\n")
+    
+    # Map tag to build script
+    build_scripts = {
+        "dev": "build-dev.sh",
+        "minimal": "build-minimal.sh",
+        "claude": "build-claude.sh"
+    }
+    
+    if image_tag not in build_scripts:
+        console.print(f"[red]❌ Invalid image tag: {image_tag}[/red]")
+        console.print(f"Available tags: {', '.join(build_scripts.keys())}")
+        return
+    
+    build_script = DOCKER_DIR / build_scripts[image_tag]
+    
+    if not build_script.exists():
+        console.print(f"[red]❌ Build script not found: {build_script}[/red]")
+        return
+    
+    # Build the Docker image
+    cmd = ["bash", str(build_script)]
+    
+    if no_cache:
+        console.print("[yellow]Building without cache (this may take a while)...[/yellow]\n")
+        # For no-cache builds, we need to modify the docker build command
+        # Most build scripts use docker build, so we'll set an env var
+        env = os.environ.copy()
+        env["DOCKER_BUILD_NO_CACHE"] = "1"
+        result = subprocess.run(cmd, cwd=str(DOCKER_DIR), env=env)
+    else:
+        console.print("[yellow]Building with cache...[/yellow]\n")
+        result = subprocess.run(cmd, cwd=str(DOCKER_DIR))
+    
+    if result.returncode == 0:
+        console.print(f"\n[green]✓ Successfully rebuilt claude-docker:{image_tag}[/green]")
+        console.print(f"[dim]You can now create a container with: ./run-docker.py create claude-docker:{image_tag}[/dim]")
+    else:
+        console.print(f"\n[red]❌ Build failed with exit code {result.returncode}[/red]")
 
 
 @app.command()
 def test():
     """Run tests in a new container"""
     console.print("[green]🧪 Running tests in container[/green]\n")
-    
+
     cmd = [
         "docker", "run", "--rm",
         "-v", f"{Path.home() / '.gitconfig'}:/home/developer/.gitconfig:ro",
@@ -564,7 +631,7 @@ def test():
         npx playwright test --reporter=list
         """
     ]
-    
+
     subprocess.run(cmd)
 
 
@@ -575,7 +642,7 @@ def shell(
     """Start a bash shell in a new container"""
     manager = DockerManager()
     console.print(f"[green]🐚 Starting bash shell with image: {image}[/green]\n")
-    
+
     # Create container but override command to use bash
     manager.create_container(image)
 
@@ -584,26 +651,26 @@ def shell(
 def check():
     """Check prerequisites"""
     checks = []
-    
+
     # GitHub token
     if os.environ.get("GITHUB_TOKEN"):
         checks.append("[green]✓[/green] GitHub token is set")
     else:
         checks.append("[yellow]⚠[/yellow] GitHub token not set")
         checks.append("  Export GITHUB_TOKEN=ghp_your_token_here")
-    
+
     # Git config
     if (Path.home() / ".gitconfig").exists():
         checks.append("[green]✓[/green] Git config found")
     else:
         checks.append("[yellow]⚠[/yellow] No .gitconfig found")
-    
+
     # SSH
     if (Path.home() / ".ssh").exists():
         checks.append("[green]✓[/green] SSH config found")
     else:
         checks.append("[yellow]⚠[/yellow] No .ssh directory found")
-    
+
     # Claude credentials
     claude_dirs = [Path.home() / ".claude", Path.home() / ".config" / "claude"]
     if any(d.exists() for d in claude_dirs):
@@ -611,7 +678,7 @@ def check():
     else:
         checks.append("[yellow]⚠[/yellow] Claude credentials not found")
         checks.append("  Run 'claude auth login' first")
-    
+
     # Docker
     try:
         client = docker.from_env()
@@ -619,8 +686,32 @@ def check():
         checks.append(f"[green]✓[/green] Docker is running (version {version['Version']})")
     except:
         checks.append("[red]❌[/red] Docker is not running")
-    
+
     console.print(Panel("\n".join(checks), title="Prerequisites Check", border_style="cyan"))
+
+    # Check API keys that will be passed through
+    env_allowlist = [
+        "ANTHROPIC_API_KEY", "ASSEMBLYAI_API_KEY", "DEEPGRAM_API_KEY",
+        "ELEVEN_API_KEY", "EXA_API_KEY", "GITHUB_TOKEN", "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "GOOGLE_API_KEY", "GROQ_API_KEY", "LANGCHAIN_API_KEY", "ONEBUSAWAY_API_KEY",
+        "OPENAI_API_KEY", "PPLX_API_KEY", "REPLICATE_API_TOKEN", "TONY_API_KEY",
+        "TONY_STORAGE_SERVER_API_KEY", "VAPI_API_KEY", "ZEP_API_KEY",
+        "TWILIO_ACCOUNT_SID", "TWILIO_AUTH_TOKEN", "TWILIO_FROM_NUMBER",
+        "IFTTT_WEBHOOK_KEY", "IFTTT_WEBHOOK_SMS_EVENT", "BING_SEARCH_URL"
+    ]
+
+    api_keys = []
+    for var_name in sorted(env_allowlist):
+        if value := os.environ.get(var_name):
+            if value.strip():
+                # Show first few chars for security
+                display_value = value[:8] + "..." if len(value) > 12 else "***"
+                api_keys.append(f"[green]✓[/green] {var_name}: {display_value}")
+        else:
+            api_keys.append(f"[dim]○ {var_name}: not set[/dim]")
+
+    if api_keys:
+        console.print(Panel("\n".join(api_keys), title="API Keys & Tokens", border_style="cyan"))
 
 
 if __name__ == "__main__":
