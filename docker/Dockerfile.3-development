@@ -4,6 +4,12 @@ FROM claude-docker:minimal
 # This layer is for future development and experimental features
 # It builds on top of the stable minimal layer
 
+# Copy container prompt configuration first as root
+USER root
+SHELL ["/bin/bash", "-c"]
+COPY container-prompt.sh /etc/profile.d/container-prompt.sh
+RUN chmod +x /etc/profile.d/container-prompt.sh
+
 USER developer
 WORKDIR /home/developer
 
@@ -42,5 +48,11 @@ ENV PATH="/home/linuxbrew/.linuxbrew/bin:${PATH}"
 # Simple approach: just ensure directories exist for mounting
 # Auth will be mounted directly from host
 
+# Configure shell to use container prompt
+RUN echo '# Docker container prompt setup' >> ~/.zshrc && \
+    echo '[ -f /etc/profile.d/container-prompt.sh ] && source /etc/profile.d/container-prompt.sh' >> ~/.zshrc && \
+    echo '# Docker container prompt setup' >> ~/.bashrc && \
+    echo '[ -f /etc/profile.d/container-prompt.sh ] && source /etc/profile.d/container-prompt.sh' >> ~/.bashrc
+
 WORKDIR /home/developer/gits
-LABEL description="Development layer with Claude YOLO mode"
+LABEL description="Development layer with Claude YOLO mode and container prompt"
