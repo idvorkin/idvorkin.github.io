@@ -68,7 +68,9 @@
       "Bash(uv run:*)",
       "Bash(open https://github.com/idvorkin/idvorkin.github.io/pull/95)",
       "Bash(bundle exec:*)",
-      "Bash(/dev/null)"
+      "Bash(/dev/null)",
+      "Bash(git worktree:*)",
+      "Bash(git -C /Users/idvorkin/gits/cc_blog/fetch-modal-content-on-copy push)"
     ],
     "deny": []
   }
