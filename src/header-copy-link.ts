@@ -476,6 +476,9 @@ const headerCleanupFunctions = new WeakMap<HTMLElement, (() => void)[]>();
 // Store popup references for lazy loading
 const headerPopups = new WeakMap<HTMLElement, HTMLElement>();
 
+// Track all headers for cleanup purposes
+const trackedHeaders = new Set<HTMLElement>();
+
 /**
  * Creates and shows popup lazily when needed
  */
@@ -653,6 +656,7 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
   
   // Store cleanup functions for this header
   headerCleanupFunctions.set(header, cleanupFunctions);
+  trackedHeaders.add(header);
 }
 
 /**
@@ -660,16 +664,21 @@ function addCopyLinkToHeader(header: HTMLElement, options: CopyLinkOptions): voi
  */
 export function cleanupHeaderCopyLinks(): void {
   // Clean up all stored event listeners
-  headerCleanupFunctions.forEach((cleanupFns) => {
-    cleanupFns.forEach(fn => fn());
+  trackedHeaders.forEach((header) => {
+    const cleanupFns = headerCleanupFunctions.get(header);
+    if (cleanupFns) {
+      cleanupFns.forEach(fn => fn());
+    }
+    
+    // Remove popup if exists
+    const popup = headerPopups.get(header);
+    if (popup) {
+      popup.remove();
+    }
   });
-  headerCleanupFunctions.clear();
   
-  // Remove all popups
-  headerPopups.forEach((popup) => {
-    popup.remove();
-  });
-  headerPopups.clear();
+  // Clear the tracked headers set
+  trackedHeaders.clear();
   
   // Reset initialization flag
   isHeaderCopyLinksInitialized = false;
