@@ -24,7 +24,7 @@ import { TreeNode, add_random_prompts, add_sunburst, add_sunburst_from_dom } fro
 // Import recent posts functionality
 import { initRecentAllPosts } from "./recent";
 // Import search functionality
-import { CreateAutoComplete } from "./search";
+import { CreateAutoComplete, get_random_post, get_recent_posts } from "./search";
 // Import shared utilities
 import {
   type IURLInfo,
@@ -131,6 +131,8 @@ export {
   load_globals,
   MakeBackLinkHTML,
   CreateAutoComplete,
+  get_random_post,
+  get_recent_posts,
   // Recent posts export
   initRecentAllPosts,
   // Random prompter exports

@@ -172,7 +172,7 @@ no-render-title: true
         // Load featured posts from Algolia
         try {
             const { hits } = await index.search(' ', { 
-                hitsPerPage: 5,
+                hitsPerPage: 3,
                 filters: 'NOT tags:family-journal'
             });
             document.getElementById('featured-results').innerHTML = 
@@ -183,7 +183,7 @@ no-render-title: true
         
         // Load recent posts
         try {
-            const recentPosts = await get_recent_posts(6);
+            const recentPosts = await get_recent_posts(3);
             document.getElementById('recent-results').innerHTML = 
                 recentPosts.map(renderBasicItem).join('');
         } catch (error) {
@@ -193,7 +193,7 @@ no-render-title: true
         // Load random posts
         try {
             const randomPosts = await Promise.all(
-                [1, 2, 3, 4].map(() => get_random_post())
+                [1, 2, 3].map(() => get_random_post())
             );
             document.getElementById('random-results').innerHTML = 
                 randomPosts.map(renderBasicItem).join('');
