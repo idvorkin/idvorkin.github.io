@@ -198,3 +198,4 @@ When working with git worktrees, Claude must be run from the parent directory to
 - When updating a PR with significant changes, update the PR description to reflect all current changes
 - Include any fixes or improvements made during development in the PR description
 - When starting a jekyll server, check to see the port isn't already in use. If it is, pick a ranomd port between 5000 and 6000.
+- OK tell it when running jekyll pick a random live reload port everytime as well
