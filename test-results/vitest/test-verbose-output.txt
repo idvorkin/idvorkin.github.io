@@ -2,44 +2,6 @@ npx vitest run --reporter=verbose
 
 [1m[7m[36m RUN [39m[27m[22m [36mv3.0.8 [39m[90m/home/runner/work/idvorkin.github.io/idvorkin.github.io[39m
 
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
-[22m[39mToggle element with ID missing-toggle not found
-
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
-[22m[39mToggle element with ID remaining-posts-toggle not found
-
-[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
-[22m[39m❌ Error loading recent posts: Error: Test error
-    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent-posts.test.ts:503:69
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
-    at new Promise (<anonymous>)
-    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
-    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
-[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-
-[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
-[22m[39m❌ non-existent-container container not found in DOM
-
-[90mstderr[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle errors
-[22m[39m❌ Error loading recent posts: Error: Test error
-    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent.test.ts:392:69
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
-    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
-    at new Promise (<anonymous>)
-    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
-    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
-[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
-
-[90mstderr[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
-[22m[39m❌ non-existent-container container not found in DOM
-
  [31m×[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain
 [31m   → expected "spy" to be called at least once[39m
  [31m×[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly
@@ -79,7 +41,26 @@ npx vitest run --reporter=verbose
 [31m   → Cannot read properties of undefined (reading 'value')[39m
  [31m×[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
 [31m   → Cannot read properties of undefined (reading 'value')[39m
-[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2msetupToggleEventListener[2m > [22m[2mshould handle missing toggle element
+[22m[39mToggle element with ID missing-toggle not found
+
+[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould show error message when getProcessedPages fails
+[22m[39m❌ Error loading recent posts: Error: Test error
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent-posts.test.ts:503:69
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
+    at new Promise (<anonymous>)
+    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
+    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+
+[90mstderr[2m | src/__tests__/recent-posts.test.ts[2m > [22m[2mRecent Posts Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
+[22m[39m❌ non-existent-container container not found in DOM
+
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle empty results
 [22m[39mToggle element with ID remaining-posts-toggle not found
 
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mfetchBacklinksData[2m > [22mshould fetch and return URL info map
@@ -100,6 +81,25 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould call updateRecentPosts immediately if document is loaded
  [32m✓[39m src/__tests__/recent-posts.test.ts[2m > [22mRecent Posts Module[2m > [22minitRecentPosts[2m > [22mshould add event listener if document is still loading
+[90mstderr[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould handle errors
+[22m[39m❌ Error loading recent posts: Error: Test error
+    at [90m/home/runner/work/idvorkin.github.io/idvorkin.github.io/[39msrc/__tests__/recent.test.ts:392:69
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:174:14
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:563:28
+    at [90mfile:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:61:24
+    at new Promise (<anonymous>)
+    at runWithTimeout [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:41:12[90m)[39m
+    at runTest [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1149:17[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+    at runSuite [90m(file:///home/runner/work/idvorkin.github.io/idvorkin.github.io/[39mnode_modules/[4m@vitest[24m/runner/dist/index.js:1303:15[90m)[39m
+
+[90mstderr[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2mupdateRecentPosts[2m > [22m[2mshould do nothing if container is not found
+[22m[39m❌ non-existent-container container not found in DOM
+
+[90mstdout[2m | src/__tests__/recent.test.ts[2m > [22m[2mRecent Module[2m > [22m[2minitRecentAllPosts[2m > [22m[2mshould call updateRecentPosts immediately if document is already loaded
+[22m[39mToggle element with ID remaining-posts-toggle not found
+
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould group pages by month and year
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould handle empty arrays
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mgroupPagesByMonthYear[2m > [22mshould skip pages without last_modified dates
@@ -120,6 +120,34 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22mupdateRecentPosts[2m > [22mshould do nothing if container is not found
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould call updateRecentPosts immediately if document is already loaded
  [32m✓[39m src/__tests__/recent.test.ts[2m > [22mRecent Module[2m > [22minitRecentAllPosts[2m > [22mshould add event listener if document is still loading
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould walk the tree in breadth-first order
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mtree_to_plotly_data_format[2m > [22mshould convert tree to plotly format
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrender_prompt_for_category[2m > [22mshould render a prompt for a category
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_random_prompts[2m > [22mshould add random prompts for all categories
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould create a sunburst visualization
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle missing Plotly
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle errors during plot creation
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrandom_prompt_for_label[2m > [22mshould find a random prompt for a label
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mcategory_to_prompts_text[2m > [22mshould convert category elements to text with prompts
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould extract tree structure from H2 and H3 elements
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould handle H2 elements with multiple H3 children
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould handle malformed DOM with no elements
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould use default parameters when not provided
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould handle mixed content between H2 elements
+ [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould use container selector when provided
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould handle URL encoded values
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould use window.location.href when no URL is provided
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with title and content
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with anchor
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
+ [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould generate correct HTML for a post preview
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmakePostPreviewHTML[2m > [22mshould encode URLs correctly
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mmake_random_post_html[2m > [22mshould generate HTML for a random post
@@ -147,37 +175,6 @@ npx vitest run --reporter=verbose
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mSevenHabits[2m > [22mshould create a tree with the correct structure
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mThingsIEnjoy[2m > [22mshould create a tree with the correct structure
  [32m✓[39m src/__tests__/page-loader.test.ts[2m > [22mPage Loader[2m > [22mConstants[2m > [22mshould export the correct constants
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould extract a parameter from a URL
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return null when parameter doesn't exist
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould return empty string when parameter has no value
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould handle URL encoded values
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mgetParameterByName[2m > [22mshould use window.location.href when no URL is provided
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with title and content
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould generate HTML for a hit with anchor
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle hits without highlighted content
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mInstantSearchHitTemplate[2m > [22mshould handle errors and return 'invalid HTML'
- [32m✓[39m src/__tests__/search.test.ts[2m > [22mSearch Module[2m > [22mCreateSearch[2m > [22mshould create a search instance with the correct configuration
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould create a tree node with given properties
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mTreeNode[2m > [22mshould use default values when not provided
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould return empty if node is null
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mbreadth_first_walk[2m > [22mshould walk the tree in breadth-first order
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mtree_to_plotly_data_format[2m > [22mshould convert tree to plotly format
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrender_prompt_for_category[2m > [22mshould render a prompt for a category
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_random_prompts[2m > [22mshould add random prompts for all categories
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould create a sunburst visualization
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle missing Plotly
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22madd_sunburst[2m > [22mshould handle errors during plot creation
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mrandom_prompt_for_label[2m > [22mshould find a random prompt for a label
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mcategory_to_prompts_text[2m > [22mshould convert category elements to text with prompts
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould extract tree structure from H2 and H3 elements
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould handle H2 elements with multiple H3 children
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould handle malformed DOM with no elements
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould use default parameters when not provided
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould handle mixed content between H2 elements
- [32m✓[39m src/__tests__/random-prompter.test.ts[2m > [22mRandom Prompter[2m > [22mextract_tree_from_dom[2m > [22mshould use container selector when provided
-[90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
-[22m[39mappend_randomizer_div #non-existent not present
-
 [90mstdout[2m | src/__tests__/main.test.ts
 [22m[39m🖼️ Enabling image zoom functionality
 Dev server detected, initializing dev info...
@@ -186,6 +183,9 @@ Dev info - Branch: [1mnull[22m Port: 4000
 
 [90mstderr[2m | src/__tests__/main.test.ts
 [22m[39m⚠️ GLightbox not found, retrying in 100ms (attempt 1/50)
+
+[90mstdout[2m | src/__tests__/shared.test.ts[2m > [22m[2mShared Utility Functions[2m > [22m[2mappend_randomizer_div[2m > [22m[2mshould not append anything if parent is not found
+[22m[39mappend_randomizer_div #non-existent not present
 
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mMakeBackLinkHTML[2m > [22mshould generate correct HTML for a backlink
  [32m✓[39m src/__tests__/shared.test.ts[2m > [22mShared Utility Functions[2m > [22mrandom_from_list[2m > [22mshould return an element from the list
@@ -220,6 +220,9 @@ Dev info - Branch: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mload_globals function[2m > [22mshould call generateToc for both toc containers
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mTOC functions[2m > [22mshould warn when TOC elements are not found
  [32m✓[39m src/__tests__/main.test.ts[2m > [22mMain module functions[2m > [22mURL swapping function[2m > [22mshould handle production URL swapping
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
+ [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould toggle a class on an element when using an element reference
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mtoggleClass[2m > [22mshould add a class when force parameter is true
@@ -234,21 +237,18 @@ Dev info - Branch: [1mnull[22m Port: 4000
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a distant parent element matching a selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould find a parent element by class selector
  [32m✓[39m src/__tests__/dom-helpers.test.ts[2m > [22mDOM Helper Functions[2m > [22mfindClosestParent[2m > [22mshould return null when no matching parent is found
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_imported_blog_posts[2m > [22mshould fetch and process blog posts
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22madd_eulogy_roles[2m > [22mshould fetch and process eulogy roles
- [32m✓[39m src/__tests__/blogger_import.test.ts[2m > [22mBlogger Import Module[2m > [22mhtml_for_role[2m > [22mshould generate HTML for a role
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from local path when not in production
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould fetch link info from GitHub when in production
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould handle fetch errors gracefully
  [32m✓[39m src/__tests__/get-link-info.test.ts[2m > [22mget_link_info[2m > [22mshould cache responses and not make additional requests
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould not create duplicate entries when processing summary links
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould handle redirects correctly without duplication
- [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould identify the root cause of duplicate related posts
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from production to test[2m > [22mshould swap from production to localhost with default port 4000
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from production to test[2m > [22mshould preserve the current port when available
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould swap from localhost:4000 to production
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould swap from localhost:4002 to production
  [32m✓[39m src/__tests__/swap-prod-test.test.ts[2m > [22mSwapProdAndTest[2m > [22mwhen swapping from test to production[2m > [22mshould handle any port number
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould not create duplicate entries when processing summary links
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould handle redirects correctly without duplication
+ [32m✓[39m src/__tests__/summarize-page.test.ts[2m > [22mSummarize Page Functionality[2m > [22mshould identify the root cause of duplicate related posts
  [32m✓[39m src/__tests__/index.test.ts[2m > [22mIndex Module[2m > [22mshould initialize when ready
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22misDevServer[2m > [22mshould return true for localhost
  [32m✓[39m src/__tests__/dev-info.test.ts[2m > [22mdev-info[2m > [22misDevServer[2m > [22mshould return true for 127.0.0.1
@@ -261,25 +261,25 @@ Dev info - Branch: [1mnull[22m Port: 4000
 
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould transform localhost URL to production domain
 [31m[1mAssertionError[22m: expected "spy" to be called at least once[39m
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m151:38[22m[39m
-    [90m149| [39m
-    [90m150| [39m      [90m// Verify that the header got a copy link added[39m
-    [90m151| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalled[39m()[33m;[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m160:38[22m[39m
+    [90m158| [39m
+    [90m159| [39m      [90m// Verify that the header got a copy link added[39m
+    [90m160| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalled[39m()[33m;[39m
     [90m   | [39m                                     [31m^[39m
-    [90m152| [39m      expect(mockHeader.addEventListener).toHaveBeenCalledWith("mousee…
-    [90m153| [39m      expect(mockHeader.addEventListener).toHaveBeenCalledWith("mousel…
+    [90m161| [39m      expect(mockHeader.addEventListener).toHaveBeenCalledWith("mousee…
+    [90m162| [39m      expect(mockHeader.addEventListener).toHaveBeenCalledWith("mousel…
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/15]⎯[22m[39m
 
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mURL Transformation[2m > [22mshould handle production domain mapping correctly
 [31m[1mAssertionError[22m: expected "spy" to be called at least once[39m
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m176:38[22m[39m
-    [90m174| [39m      [34minitHeaderCopyLinks[39m()[33m;[39m
-    [90m175| [39m
-    [90m176| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalled[39m()[33m;[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m185:38[22m[39m
+    [90m183| [39m      [34minitHeaderCopyLinks[39m()[33m;[39m
+    [90m184| [39m
+    [90m185| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalled[39m()[33m;[39m
     [90m   | [39m                                     [31m^[39m
-    [90m177| [39m    })[33m;[39m
-    [90m178| [39m  })[33m;[39m
+    [90m186| [39m    })[33m;[39m
+    [90m187| [39m  })[33m;[39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/15]⎯[22m[39m
 
@@ -291,13 +291,13 @@ Dev info - Branch: [1mnull[22m Port: 4000
 
 [32m- how-do-you-identify-and-help-eng-decide-if-management-is-right-for-them[39m
 
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m218:29[22m[39m
-    [90m216| [39m
-    [90m217| [39m      [90m// The ID should be generated from the text[39m
-    [90m218| [39m      expect(mockHeader.id).toBe("how-do-you-identify-and-help-eng-dec…
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m227:29[22m[39m
+    [90m225| [39m
+    [90m226| [39m      [90m// The ID should be generated from the text[39m
+    [90m227| [39m      expect(mockHeader.id).toBe("how-do-you-identify-and-help-eng-dec…
     [90m   | [39m                            [31m^[39m
-    [90m219| [39m    })[33m;[39m
-    [90m220| [39m
+    [90m228| [39m    })[33m;[39m
+    [90m229| [39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/15]⎯[22m[39m
 
@@ -309,13 +309,13 @@ Dev info - Branch: [1mnull[22m Port: 4000
 
 [32m- how-to-em-be-the-manager-everyone-wants[39m
 
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m237:29[22m[39m
-    [90m235| [39m
-    [90m236| [39m      // Special characters should be removed, spaces converted to hyp…
-    [90m237| [39m      expect(mockHeader.id).toBe("how-to-em-be-the-manager-everyone-wa…
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m246:29[22m[39m
+    [90m244| [39m
+    [90m245| [39m      // Special characters should be removed, spaces converted to hyp…
+    [90m246| [39m      expect(mockHeader.id).toBe("how-to-em-be-the-manager-everyone-wa…
     [90m   | [39m                            [31m^[39m
-    [90m238| [39m    })[33m;[39m
-    [90m239| [39m
+    [90m247| [39m    })[33m;[39m
+    [90m248| [39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/15]⎯[22m[39m
 
@@ -327,97 +327,97 @@ Dev info - Branch: [1mnull[22m Port: 4000
 
 [32m- test-header[39m
 
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m258:30[22m[39m
-    [90m256| [39m
-    [90m257| [39m      [90m// Both headers should get IDs based on their text content[39m
-    [90m258| [39m      [34mexpect[39m(mockHeader1[33m.[39mid)[33m.[39m[34mtoBe[39m([32m"test-header"[39m)[33m;[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m267:30[22m[39m
+    [90m265| [39m
+    [90m266| [39m      [90m// Both headers should get IDs based on their text content[39m
+    [90m267| [39m      [34mexpect[39m(mockHeader1[33m.[39mid)[33m.[39m[34mtoBe[39m([32m"test-header"[39m)[33m;[39m
     [90m   | [39m                             [31m^[39m
-    [90m259| [39m      [34mexpect[39m(mockHeader2[33m.[39mid)[33m.[39m[34mtoBe[39m([32m"different-header"[39m)[33m;[39m
-    [90m260| [39m      [34mexpect[39m(mockHeader1[33m.[39mid)[33m.[39mnot[33m.[39m[34mtoBe[39m(mockHeader2[33m.[39mid)[33m;[39m
+    [90m268| [39m      [34mexpect[39m(mockHeader2[33m.[39mid)[33m.[39m[34mtoBe[39m([32m"different-header"[39m)[33m;[39m
+    [90m269| [39m      [34mexpect[39m(mockHeader1[33m.[39mid)[33m.[39mnot[33m.[39m[34mtoBe[39m(mockHeader2[33m.[39mid)[33m;[39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/15]⎯[22m[39m
 
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCopy Functionality[2m > [22mshould copy correct URL format
 [31m[1mTypeError[22m: Cannot read properties of undefined (reading 'value')[39m
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m287:67[22m[39m
-    [90m285| [39m
-    [90m286| [39m      [90m// Get the click handler that was added to the copy icon[39m
-    [90m287| [39m      const copyIcon = mockDocument.createElement.mock.results[0].valu…
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m296:67[22m[39m
+    [90m294| [39m
+    [90m295| [39m      [90m// Get the click handler that was added to the copy icon[39m
+    [90m296| [39m      const copyIcon = mockDocument.createElement.mock.results[0].valu…
     [90m   | [39m                                                                  [31m^[39m
-    [90m288| [39m      const clickHandler = copyIcon.addEventListener.mock.calls.find((…
-    [90m289| [39m
+    [90m297| [39m      const clickHandler = copyIcon.addEventListener.mock.calls.find((…
+    [90m298| [39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/15]⎯[22m[39m
 
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mCopy Functionality[2m > [22mshould handle clipboard API failure gracefully
 [31m[1mTypeError[22m: Cannot read properties of undefined (reading 'value')[39m
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m366:67[22m[39m
-    [90m364| [39m
-    [90m365| [39m      [90m// Get the click handler[39m
-    [90m366| [39m      const copyIcon = mockDocument.createElement.mock.results[0].valu…
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m375:67[22m[39m
+    [90m373| [39m
+    [90m374| [39m      [90m// Get the click handler[39m
+    [90m375| [39m      const copyIcon = mockDocument.createElement.mock.results[0].valu…
     [90m   | [39m                                                                  [31m^[39m
-    [90m367| [39m      const clickHandler = copyIcon.addEventListener.mock.calls.find((…
-    [90m368| [39m
+    [90m376| [39m      const clickHandler = copyIcon.addEventListener.mock.calls.find((…
+    [90m377| [39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/15]⎯[22m[39m
 
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould add share links to all header types including H1
 [31m[1mAssertionError[22m: expected "spy" to be called 2 times, but got 0 times[39m
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m444:34[22m[39m
-    [90m442| [39m
-    [90m443| [39m      [90m// Each header should have 2 icons appended (share and GitHub)[39m
-    [90m444| [39m      [34mexpect[39m(mockH1[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m453:34[22m[39m
+    [90m451| [39m
+    [90m452| [39m      [90m// Each header should have 2 icons appended (share and GitHub)[39m
+    [90m453| [39m      [34mexpect[39m(mockH1[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
     [90m   | [39m                                 [31m^[39m
-    [90m445| [39m      [34mexpect[39m(mockH2[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
-    [90m446| [39m      [34mexpect[39m(mockH3[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
+    [90m454| [39m      [34mexpect[39m(mockH2[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
+    [90m455| [39m      [34mexpect[39m(mockH3[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/15]⎯[22m[39m
 
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould initialize correctly when DOM is ready
 [31m[1mAssertionError[22m: expected "spy" to be called at least once[39m
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m469:38[22m[39m
-    [90m467| [39m      [90m// Should add styles and initialize headers[39m
-    [90m468| [39m      [34mexpect[39m(mockDocument[33m.[39mhead[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalled[39m()[33m;[39m
-    [90m469| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalled[39m()[33m;[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m478:38[22m[39m
+    [90m476| [39m      [90m// Should add styles and initialize headers[39m
+    [90m477| [39m      [34mexpect[39m(mockDocument[33m.[39mhead[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalled[39m()[33m;[39m
+    [90m478| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalled[39m()[33m;[39m
     [90m   | [39m                                     [31m^[39m
-    [90m470| [39m    })[33m;[39m
-    [90m471| [39m
+    [90m479| [39m    })[33m;[39m
+    [90m480| [39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/15]⎯[22m[39m
 
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when called multiple times
 [31m[1mAssertionError[22m: expected "spy" to be called 2 times, but got 0 times[39m
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m511:38[22m[39m
-    [90m509| [39m
-    [90m510| [39m      [90m// Should add two icons per header (copy link and GitHub issue)[39m
-    [90m511| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m520:38[22m[39m
+    [90m518| [39m
+    [90m519| [39m      [90m// Should add two icons per header (copy link and GitHub issue)[39m
+    [90m520| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
     [90m   | [39m                                     [31m^[39m
-    [90m512| [39m    })[33m;[39m
-    [90m513| [39m
+    [90m521| [39m    })[33m;[39m
+    [90m522| [39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/15]⎯[22m[39m
 
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mIntegration[2m > [22mshould not add duplicate copy links when enableHeaderCopyLinks is called multiple times
 [31m[1mAssertionError[22m: expected "spy" to be called 2 times, but got 0 times[39m
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m546:38[22m[39m
-    [90m544| [39m
-    [90m545| [39m      [90m// Should add two icons per header (copy link and GitHub issue)[39m
-    [90m546| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m555:38[22m[39m
+    [90m553| [39m
+    [90m554| [39m      [90m// Should add two icons per header (copy link and GitHub issue)[39m
+    [90m555| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
     [90m   | [39m                                     [31m^[39m
-    [90m547| [39m    })[33m;[39m
-    [90m548| [39m  })[33m;[39m
+    [90m556| [39m    })[33m;[39m
+    [90m557| [39m  })[33m;[39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/15]⎯[22m[39m
 
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mHeader Copy Link[2m > [22mGitHub Issue Creation[2m > [22mshould add GitHub issue icon alongside copy link icon
 [31m[1mAssertionError[22m: expected "spy" to be called 2 times, but got 0 times[39m
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m571:38[22m[39m
-    [90m569| [39m
-    [90m570| [39m      [90m// Should add both copy link and GitHub issue icons[39m
-    [90m571| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m580:38[22m[39m
+    [90m578| [39m
+    [90m579| [39m      [90m// Should add both copy link and GitHub issue icons[39m
+    [90m580| [39m      [34mexpect[39m(mockHeader[33m.[39mappendChild)[33m.[39m[34mtoHaveBeenCalledTimes[39m([34m2[39m)[33m;[39m
     [90m   | [39m                                     [31m^[39m
-    [90m572| [39m      
-    [90m573| [39m      [90m// Check that the created elements include both icons[39m
+    [90m581| [39m      
+    [90m582| [39m      [90m// Check that the created elements include both icons[39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/15]⎯[22m[39m
 
@@ -425,20 +425,20 @@ Dev info - Branch: [1mnull[22m Port: 4000
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: production domain mapping
 [31m[1m[7m FAIL [27m[22m[39m src/__tests__/header-copy-link.test.ts[2m > [22mURL Transformation Logic[2m > [22mshould transform URL correctly: simple case
 [31m[1mTypeError[22m: Cannot read properties of undefined (reading 'value')[39m
-[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m1174:67[22m[39m
-    [90m1172| [39m
-    [90m1173| [39m      [90m// Get the click handler[39m
-    [90m1174| [39m      const copyIcon = mockDocument.createElement.mock.results[0].valu…
+[36m [2m❯[22m src/__tests__/header-copy-link.test.ts:[2m1183:67[22m[39m
+    [90m1181| [39m
+    [90m1182| [39m      [90m// Get the click handler[39m
+    [90m1183| [39m      const copyIcon = mockDocument.createElement.mock.results[0].valu…
     [90m   | [39m                                                                  [31m^[39m
-    [90m1175| [39m      const clickHandler = copyIcon.addEventListener.mock.calls.find((…
-    [90m1176| [39m
+    [90m1184| [39m      const clickHandler = copyIcon.addEventListener.mock.calls.find((…
+    [90m1185| [39m
 
 [31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/15]⎯[22m[39m
 
 
 [2m Test Files [22m [1m[31m1 failed[39m[22m[2m | [22m[1m[32m15 passed[39m[22m[90m (16)[39m
 [2m      Tests [22m [1m[31m15 failed[39m[22m[2m | [22m[1m[32m171 passed[39m[22m[2m | [22m[33m5 skipped[39m[90m (191)[39m
-[2m   Start at [22m 03:04:09
-[2m   Duration [22m 3.99s[2m (transform 559ms, setup 240ms, collect 791ms, tests 420ms, environment 5.97s, prepare 1.35s)[22m
+[2m   Start at [22m 03:40:41
+[2m   Duration [22m 4.08s[2m (transform 581ms, setup 205ms, collect 929ms, tests 445ms, environment 6.09s, prepare 1.40s)[22m
 
 error: Recipe `js-test-verbose-txt` failed on line 44 with exit code 1
